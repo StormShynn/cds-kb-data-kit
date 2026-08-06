@@ -41,12 +41,27 @@ const indexData = JSON.parse(await fs.readFile(indexFile, 'utf-8'));
 const options = indexData.options;
 if (!options.fields.includes('synonyms')) options.fields.push('synonyms');
 if (!options.storeFields.includes('synonyms')) options.storeFields.push('synonyms');
+// usageCount isn't tokenized/searched (no place in `fields`) — it's only
+// ever read back via storedFields, for cds-kb-mcp-kit's boostDocument to
+// rank popular views higher in search_cds results.
+if (!options.storeFields.includes('usageCount')) options.storeFields.push('usageCount');
 
 let taxonomy = null;
 try {
   taxonomy = JSON.parse(await fs.readFile(path.join(dataRoot, 'index', 'taxonomy.json'), 'utf-8'));
   console.log('Loaded taxonomy with', Object.keys(taxonomy.tagToKeywords || {}).length, 'tag→keyword maps.');
 } catch { console.log('No taxonomy.json found, skipping taxonomy synonyms.'); }
+
+// usage-stats.json is written by scripts/pull-usage-stats.mjs, which is a
+// no-op until CDS_KB_USAGE_ENDPOINT is configured — so every view's
+// usageCount is just 0 (a no-op boost multiplier) until that pipeline has
+// pulled real data at least once.
+let usageCounts = {};
+try {
+  const usageStats = JSON.parse(await fs.readFile(path.join(dataRoot, 'index', 'usage-stats.json'), 'utf-8'));
+  usageCounts = usageStats.counts || {};
+  console.log(`Loaded usage stats for ${Object.keys(usageCounts).length} view(s).`);
+} catch { console.log('No usage-stats.json found, usageCount defaults to 0 for all views.'); }
 
 // ── Build one document per view file (source of truth) ──────────────────────
 console.log('Scanning view files...');
@@ -124,6 +139,7 @@ for (let i = 0; i < viewFiles.length; i++) {
     module,
     lob,
     bo,
+    usageCount: usageCounts[name] || 0,
   });
 }
 

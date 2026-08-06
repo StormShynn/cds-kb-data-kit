@@ -1,0 +1,55 @@
+# .github/workflows/pull-usage-stats.yml
+# Pull aggregated CDS-view usage counts from the usage-collector Worker
+# (cds-kb-mcp-kit's worker/ — every running MCP server instance pings it on
+# each get_cds_view call) and rebuild the search index so popular views
+# rank higher in search_cds (see scripts/pull-usage-stats.mjs and
+# enrich_index.mjs's usageCount field).
+#
+# No-op if the two secrets below aren't set — pull-usage-stats.mjs treats a
+# missing CDS_KB_USAGE_ENDPOINT as "telemetry not configured yet", not an
+# error, so this workflow is safe to merge before the Worker is deployed.
+
+name: Pull Usage Stats
+
+on:
+  schedule:
+    # Daily at 5:00 AM UTC (offset from the other bots' schedules)
+    - cron: '0 5 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  pull-usage-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Pull usage stats from the collector
+        env:
+          CDS_KB_USAGE_ENDPOINT: ${{ secrets.CDS_KB_USAGE_ENDPOINT }}
+          CDS_KB_USAGE_PULL_TOKEN: ${{ secrets.CDS_KB_USAGE_PULL_TOKEN }}
+        run: node scripts/pull-usage-stats.mjs
+
+      - name: Rebuild search index with fresh usage counts
+        run: npm run rebuild-index
+
+      - name: Commit and push if changed
+        uses: ./.github/actions/commit-and-push
+        with:
+          paths: index/usage-stats.json index/search_index.json index/version.json
+          commit-message: "Pull usage stats [skip ci]"
+          empty-message: Usage stats unchanged
+          success-message: Usage stats updated
