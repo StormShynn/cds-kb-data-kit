@@ -1,0 +1,104 @@
+---
+name: I_CAINTERESTCODE
+description: Cainterestcode
+app_component: FI-CA-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-CA
+  - interface-view
+  - component:FI-CA-2CL
+  - lob:Finance
+---
+# I_CAINTERESTCODE
+
+**Cainterestcode**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-CA-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CAInterestCode` | `ikey` |
+| `CAToleranceForIntrstCalc` | `todays` |
+| `CAToleranceUnitForIntrstCalc` | `irunito` |
+| `CATransferForIntrstCalc` | `trdays` |
+| `CATransferUnitForIntrstCalc` | `irunitr` |
+| `CAFrequencyForIntrstCalc` | `irhyth` |
+| `CAFrequencyUnitForIntrstCalc` | `irunit` |
+| `CAInterestCalculationRule` | `irule` |
+| `CAInterestCalcIsInAdvance` | `verzzp` |
+| `CAInterestConditionIsFixed` | `verzwe` |
+| `CASubitemsAreGroupedBeforeCalc` | `icond` |
+| `CAAllSubitemsAreEvaldForCalc` | `iallz` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_CAInterestCodeText` | [0..*] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@Analytics: { dataCategory: #DIMENSION,
+              dataExtraction: { enabled: true,
+                                delta.changeDataCapture.automatic: true } }
+                                                           
+@EndUserText.label: 'Interest Code'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: { modelingPattern: #ANALYTICAL_DIMENSION,
+                representativeKey: 'CAInterestCode',
+                sapObjectNodeType.name: 'ContrAcctgInterestCode',
+                supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                                         #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #CDS_MODELING_DATA_SOURCE,
+                                         #EXTRACTION_DATA_SOURCE,
+                                         #SQL_DATA_SOURCE ],
+                usageType: { dataClass: #CUSTOMIZING,
+                             serviceQuality: #A,
+                             sizeCategory: #S } }
+
+@VDM.viewType: #BASIC
+
+define view entity I_CAInterestCode
+  as select from tfk056a
+  
+  association [0..*] to I_CAInterestCodeText as _Text on $projection.CAInterestCode = _Text.CAInterestCode
+
+{
+      @ObjectModel.text.association: '_Text'
+  key ikey    as CAInterestCode,
+  
+      todays  as CAToleranceForIntrstCalc,
+      irunito as CAToleranceUnitForIntrstCalc,
+      trdays  as CATransferForIntrstCalc,
+      irunitr as CATransferUnitForIntrstCalc,
+      irhyth  as CAFrequencyForIntrstCalc,
+      irunit  as CAFrequencyUnitForIntrstCalc,
+      irule   as CAInterestCalculationRule,
+      @Semantics.booleanIndicator: true
+      verzzp  as CAInterestCalcIsInAdvance,
+      @Semantics.booleanIndicator: true
+      verzwe  as CAInterestConditionIsFixed,
+      icond   as CASubitemsAreGroupedBeforeCalc,
+      iallz   as CAAllSubitemsAreEvaldForCalc,
+
+      _Text
+}
+```

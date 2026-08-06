@@ -1,0 +1,21 @@
+{
+  "name": "cds-kb-data",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Data + fetch/tag/enrich automation for the SAP CDS knowledge base. Consumed read-only by cds-kb-mcp-kit's MCP server (local clone or remote GitHub Contents API).",
+  "type": "module",
+  "scripts": {
+    "check-coverage": "node scripts/check-coverage.mjs",
+    "add-hub-metadata": "node scripts/add_hub_metadata.mjs",
+    "backfill-source-links": "node scripts/backfill_source_links.mjs",
+    "generate-dashboard": "node scripts/generate-dashboard.mjs",
+    "rebuild-index": "node enrich_index.mjs .",
+    "resync-folders": "node scripts/migrate-to-module-folders.mjs . && node enrich_index.mjs ."
+  },
+  "dependencies": {
+    "minisearch": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

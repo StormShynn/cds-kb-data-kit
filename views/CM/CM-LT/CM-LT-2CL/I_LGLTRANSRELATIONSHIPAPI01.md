@@ -1,0 +1,95 @@
+---
+name: I_LGLTRANSRELATIONSHIPAPI01
+description: Lgltransrelationshipapi 01
+app_component: CM-LT-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CM
+  - CM-LT
+  - interface-view
+  - component:CM-LT-2CL
+  - lob:Other
+---
+# I_LGLTRANSRELATIONSHIPAPI01
+
+**Lgltransrelationshipapi 01**
+
+| Property | Value |
+|---|---|
+| App Component | `CM-LT-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `LegalTransactionRelshpUUID` | `LegalTransactionRelshpUUID` |
+| `LegalTransactionUUID` | `LegalTransactionUUID` |
+| `RelshpLegalTransaction` | `RelshpLegalTransaction` |
+| `RelshpLegalTransactionUUID` | `RelshpLegalTransactionUUID` |
+| `LglCntntMRelshpType` | `LglCntntMRelshpType` |
+| `LegalTransactionMandatoryFlag` | `LegalTransactionMandatoryFlag` |
+| `LglCntntMIsIntegRelevant` | `LglCntntMIsIntegRelevant` |
+| `LglCntntMIsAddedByIntegVarbl` | `LglCntntMIsAddedByIntegVarbl` |
+| `_LegalTransaction` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_LegalTransaction` | `I_LegalTransactionAPI01` | [1..1] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.sqlViewName: 'ILTRELSHIPAPI01'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #MANDATORY
+@VDM.viewType : #BASIC
+
+@ObjectModel: {
+  representativeKey: 'LegalTransactionRelshpUUID',
+  usageType.serviceQuality: #A,
+  usageType.sizeCategory: #L,
+  usageType.dataClass:  #TRANSACTIONAL
+}
+
+@Metadata.ignorePropagatedAnnotations:true
+@AccessControl.personalData.blocking: #REQUIRED
+
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+
+@ObjectModel.supportedCapabilities:[ #SQL_DATA_SOURCE,
+                                     #CDS_MODELING_DATA_SOURCE,
+                                     #CDS_MODELING_ASSOCIATION_TARGET ]
+
+@EndUserText.label: 'Relationships of Legal Transaction'
+define view I_LglTransRelationshipAPI01
+  as select from I_LegalTrRelationship
+  association [1..1] to I_LegalTransactionAPI01 as _LegalTransaction on $projection.LegalTransactionUUID = _LegalTransaction.LegalTransactionUUID
+
+{
+  key LegalTransactionRelshpUUID,
+      LegalTransactionUUID,
+      RelshpLegalTransaction,
+      RelshpLegalTransactionUUID,
+      LglCntntMRelshpType,
+      LegalTransactionMandatoryFlag,
+      LglCntntMIsIntegRelevant,
+      @Semantics.booleanIndicator: true
+      LglCntntMIsAddedByIntegVarbl,
+      /* Associations */
+      _LegalTransaction
+
+}
+
+where
+  _LegalTransaction.IsEndOfPurposeBlocked = ''
+```

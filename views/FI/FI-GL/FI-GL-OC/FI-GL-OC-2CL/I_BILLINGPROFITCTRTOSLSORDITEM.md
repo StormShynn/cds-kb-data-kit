@@ -1,0 +1,140 @@
+---
+name: I_BILLINGPROFITCTRTOSLSORDITEM
+description: Billingprofitctrtoslsorditem
+app_component: FI-GL-OC-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-GL
+  - FI-GL-OC
+  - interface-view
+  - billing
+  - item-level
+  - component:FI-GL-OC-2CL
+  - lob:Finance
+---
+# I_BILLINGPROFITCTRTOSLSORDITEM
+
+**Billingprofitctrtoslsorditem**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-GL-OC-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `SalesDocument` | `cast(kdauf as vbeln_va preserving type)` |
+| key `SalesDocumentItem` | `cast(kdpos as posnr_va preserving type)` |
+| key `ValidityStartDate` | `valid_from` |
+| `ValidityEndDate` | `valid_to` |
+| `ControllingArea` | `kokrs` |
+| `CompanyCode` | `bukrs` |
+| `ProfitCenterBeforeOrglChange` | `prctr_old` |
+| `ProfitCenter` | `prctr` |
+| `OrganizationalChange` | `orgl_change` |
+| `OrglChangeReassignmentStatus` | `reassgmt_status` |
+| `ProfitCenterDerivationSrceType` | `prctr_drvtn_source_type` |
+| `_OrglChgReassignmentStatus` | *Association* |
+| `_ProfitCtrDerivationSrceType` | *Association* |
+| `_SalesDocument` | *Association* |
+| `_SalesDocumentItem` | *Association* |
+| `_OrglChange` | *Association* |
+| `_CompanyCode` | *Association* |
+| `_ControllingArea` | *Association* |
+| `_ProfitCtr` | *Association* |
+| `_ProfitCenterBeforeOrglChange` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_OrglChgReassignmentStatus` | `I_OrglChangeReassignmentStatus` | [1] |
+| `_ProfitCtrDerivationSrceType` | `I_ProfitCtrDerivationSrceType` | [0..1] |
+| `_SalesDocument` | `I_SalesDocument` | [1] |
+| `_SalesDocumentItem` | `I_SalesDocumentItem` | [1] |
+| `_OrglChange` | `I_OrganizationalChange` | [0..1] |
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_ControllingArea` | `I_ControllingArea` | [1] |
+| `_ProfitCtr` | `I_ProfitCenter` | [0..1] |
+| `_ProfitCenterBeforeOrglChange` | `I_ProfitCenter` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IFINOCRTSOX'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@EndUserText.label: 'Assgmt of Billing PrftCtr to SlsOrd Item'
+@VDM.viewType: #BASIC
+@Analytics: {
+  dataCategory: #DIMENSION
+}
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel.representativeKey: 'SalesDocumentItem'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType: {
+  dataClass: #TRANSACTIONAL,
+  serviceQuality: #C,
+  sizeCategory: #L
+}
+@Analytics.internalName:#LOCAL
+
+@ObjectModel:{
+  supportedCapabilities: [ #ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ],
+  modelingPattern:  #ANALYTICAL_DIMENSION 
+}
+@Metadata.allowExtensions:true
+define view I_BillingProfitCtrToSlsOrdItem
+  as select from finoc_rt_sox
+  association [1]    to I_OrglChangeReassignmentStatus as _OrglChgReassignmentStatus    on  $projection.OrglChangeReassignmentStatus = _OrglChgReassignmentStatus.OrglChangeReassignmentStatus
+  association [0..1] to I_ProfitCtrDerivationSrceType  as _ProfitCtrDerivationSrceType  on  $projection.ProfitCenterDerivationSrceType = _ProfitCtrDerivationSrceType.ProfitCenterDerivationSrceType
+  association [1]    to I_SalesDocument                as _SalesDocument                on  $projection.SalesDocument = _SalesDocument.SalesDocument
+  association [1]    to I_SalesDocumentItem            as _SalesDocumentItem            on  $projection.SalesDocument     = _SalesDocumentItem.SalesDocument
+                                                                                        and $projection.SalesDocumentItem = _SalesDocumentItem.SalesDocumentItem
+  association [0..1] to I_OrganizationalChange         as _OrglChange                   on  $projection.OrganizationalChange = _OrglChange.OrganizationalChange
+  association [0..1] to I_CompanyCode                  as _CompanyCode                  on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [1]    to I_ControllingArea              as _ControllingArea              on  $projection.ControllingArea = _ControllingArea.ControllingArea
+  association [0..1] to I_ProfitCenter                 as _ProfitCtr                    on  $projection.ControllingArea   =  _ProfitCtr.ControllingArea
+                                                                                        and $projection.ProfitCenter      =  _ProfitCtr.ProfitCenter
+                                                                                        and $projection.ValidityStartDate >= _ProfitCtr.ValidityStartDate
+                                                                                        and $projection.ValidityStartDate <= _ProfitCtr.ValidityEndDate
+  association [0..1] to I_ProfitCenter                 as _ProfitCenterBeforeOrglChange on  $projection.ControllingArea              =  _ProfitCenterBeforeOrglChange.ControllingArea
+                                                                                        and $projection.ProfitCenterBeforeOrglChange =  _ProfitCenterBeforeOrglChange.ProfitCenter
+                                                                                        and $projection.ValidityStartDate            >= _ProfitCenterBeforeOrglChange.ValidityStartDate
+                                                                                        and $projection.ValidityStartDate            <= _ProfitCenterBeforeOrglChange.ValidityEndDate
+{
+         @ObjectModel.foreignKey.association: '_SalesDocument'
+  key    cast(kdauf as vbeln_va preserving type) as SalesDocument,
+  key    cast(kdpos as posnr_va preserving type) as SalesDocumentItem,
+         @Semantics.businessDate.from:true
+  key    valid_from                              as ValidityStartDate,
+         @Semantics.businessDate.to:true
+         valid_to                                as ValidityEndDate,
+         kokrs                                   as ControllingArea,
+         bukrs                                   as CompanyCode,
+         prctr_old                               as ProfitCenterBeforeOrglChange,
+         prctr                                   as ProfitCenter,
+         orgl_change                             as OrganizationalChange,
+         reassgmt_status                         as OrglChangeReassignmentStatus,
+         prctr_drvtn_source_type                 as ProfitCenterDerivationSrceType,
+         _OrglChgReassignmentStatus,
+         _ProfitCtrDerivationSrceType,
+         _SalesDocument,
+         _SalesDocumentItem,
+         _OrglChange,
+         _CompanyCode,
+         _ControllingArea,
+         _ProfitCtr,
+         _ProfitCenterBeforeOrglChange
+}
+```

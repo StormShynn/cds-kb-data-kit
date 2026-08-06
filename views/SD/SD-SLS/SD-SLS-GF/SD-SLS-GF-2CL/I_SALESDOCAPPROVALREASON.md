@@ -1,0 +1,107 @@
+---
+name: I_SALESDOCAPPROVALREASON
+description: Salesdocapprovalreason
+app_component: SD-SLS-GF-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-SLS
+  - SD-SLS-GF
+  - interface-view
+  - approval
+  - component:SD-SLS-GF-2CL
+  - lob:Sales & Distribution
+---
+# I_SALESDOCAPPROVALREASON
+
+**Salesdocapprovalreason**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-SLS-GF-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `SDDocumentCategory` | `sd_document_category` |
+| key `SalesDocApprovalReason` | `apm_approval_reason` |
+| `_SDDocumentCategory` | *Association* |
+| `_SDApprovalReason` | *Association* |
+| `_SDApprovalReasonT` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SDDocumentCategory` | `I_SDDocumentCategory` | [0..1] |
+| `_SDApprovalReason` | `I_SDApprovalReason` | [0..1] |
+| `_SDApprovalReasonT` | `I_SDApprovalReasonT` | [0..*] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@ObjectModel: {
+  representativeKey: 'SalesDocApprovalReason',
+  usageType: {
+    dataClass: #CUSTOMIZING,
+    serviceQuality: #A,
+    sizeCategory: #S
+  },
+  supportedCapabilities: [ #SQL_DATA_SOURCE,
+                           #CDS_MODELING_DATA_SOURCE,
+                           #CDS_MODELING_ASSOCIATION_TARGET]
+}
+
+@AbapCatalog: {
+  sqlViewName: 'ISDAPMAPRRCAT',
+  preserveKey:true,
+  compiler.compareFilter: true,
+  buffering: {
+    status: #ACTIVE,
+    type: #FULL
+  }
+}
+
+@Analytics.internalName: #LOCAL
+@Metadata.ignorePropagatedAnnotations:true
+@EndUserText.label: 'Approval Reason for Sales Document'
+
+define view I_SalesDocApprovalReason
+  as select from sdapmaprrcat
+
+  association [0..1] to I_SDDocumentCategory as _SDDocumentCategory on $projection.SDDocumentCategory     = _SDDocumentCategory.SDDocumentCategory
+  association [0..1] to I_SDApprovalReason   as _SDApprovalReason   on $projection.SalesDocApprovalReason = _SDApprovalReason.SDApprovalReason
+  association [0..*] to I_SDApprovalReasonT  as _SDApprovalReasonT  on $projection.SalesDocApprovalReason = _SDApprovalReasonT.SDApprovalReason
+
+{
+      @ObjectModel.foreignKey.association: '_SDDocumentCategory'
+  key sd_document_category         as SDDocumentCategory,
+
+      @ObjectModel.text.association: '_SDApprovalReasonT'
+  key apm_approval_reason          as SalesDocApprovalReason,
+
+      _SDDocumentCategory,     
+      _SDApprovalReason,    
+      @Analytics.hidden: true
+      _SDApprovalReasonT
+      
+} where sd_document_category = 'B' or
+        sd_document_category = 'K' or
+        sd_document_category = 'C' or 
+        sd_document_category = 'H' or
+        sd_document_category = 'G' or
+        sd_document_category = 'I' or
+        sd_document_category = 'L';
+```

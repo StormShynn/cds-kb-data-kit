@@ -1,0 +1,114 @@
+---
+name: I_BUSINESSPARTNERINDUSTRY
+description: Business PartnerINDUSTRY
+app_component: AP-MD-BP
+software_component: SAP_BASIS
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - AP
+  - AP-MD
+  - AP-MD-BP
+  - interface-view
+  - business-partner
+  - partner
+  - component:AP-MD-BP
+  - lob:Other
+  - bo:BusinessPartner
+---
+# I_BUSINESSPARTNERINDUSTRY
+
+**Business PartnerINDUSTRY**
+
+| Property | Value |
+|---|---|
+| App Component | `AP-MD-BP` |
+| Software Component | `SAP_BASIS` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `IndustrySector` | `ind_sector` |
+| key `IndustrySystemType` | `istype` |
+| key `BusinessPartner` | `partner` |
+| `IsStandardIndustry` | `isdef` |
+| `IndustryKeyDescription` | `_Text.IndustryKeyDescription` |
+| `_BusinessPartner` | *Association* |
+| `_Text` | *Association* |
+| `_BusPartIndustrySystem` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BusinessPartner` | `I_BusinessPartner` | [1..1] |
+| `_Text` | `I_Industrykeysystemtexts` | [1..1] |
+| `_BusPartIndustrySystem` | `I_BusPartIndustrySystem` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IBUPAIS'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.personalData.blocking: #BLOCKED_DATA_EXCLUDED
+@Analytics: {
+ dataCategory: #DIMENSION,
+ dataExtraction: {
+    enabled: true,
+   delta.changeDataCapture: {
+      mapping:[
+                {
+                    table: 'BUT0IS', role: #MAIN,
+                    viewElement: ['IndustrySector','IndustrySystemType' , 'BusinessPartner'],
+                    tableElement: ['ind_sector','istype','partner']
+                },
+                {
+                    table: 'TB038B', role: #LEFT_OUTER_TO_ONE_JOIN,
+                    viewElement: ['IndustrySector','IndustrySystemType'],
+                    tableElement: ['ind_sector','istype']
+                }           
+              
+                
+           ]
+   }
+ }
+}
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                                      #CDS_MODELING_ASSOCIATION_TARGET,
+                                      #EXTRACTION_DATA_SOURCE]                                  
+@EndUserText.label: 'Core View for BUT0IS'
+@VDM.viewType: #BASIC
+@ObjectModel.representativeKey:'IndustrySector'
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #MASTER
+@ObjectModel.sapObjectNodeType.name: 'BusinessPartnerIndustry'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Consumption.dbHints: [ 'USE_HEX_PLAN' ]
+define view I_BusinessPartnerIndustry
+  as select from but0is
+  
+    association [1..1] to I_BusinessPartner as _BusinessPartner    on _BusinessPartner.BusinessPartner  = $projection.BusinessPartner
+    association [1..1] to I_Industrykeysystemtexts as _Text on  $projection.IndustrySystemType = _Text.IndustrySystemType
+                                                            and $projection.IndustrySector = _Text.IndustrySector
+                                                            and _Text.Language = $session.system_language
+    association [0..1] to I_BusPartIndustrySystem  as _BusPartIndustrySystem on  $projection.IndustrySystemType = _BusPartIndustrySystem.IndustrySystemType
+{
+  key ind_sector as IndustrySector,
+  @ObjectModel.foreignKey.association:'_BusPartIndustrySystem'
+  key istype     as IndustrySystemType,
+  @ObjectModel.foreignKey.association: '_BusinessPartner'
+  key partner    as BusinessPartner,
+  isdef          as IsStandardIndustry,
+  _Text.IndustryKeyDescription,
+  _BusinessPartner,
+  _Text,
+  _BusPartIndustrySystem
+}
+```

@@ -1,0 +1,161 @@
+# .github/workflows/daily-fetch.yml
+# GitHub Actions: scheduled daily fetch of new CDS views from GitHub.
+#
+# This workflow runs batch_add.mjs on a schedule to discover new CDS views
+# from public GitHub repos and add them to this data repo.
+#
+# Migrated from cds-kb-mcp-kit — this repo now owns its own data +
+# automation; cds-kb-mcp-kit is pure MCP server code that reads this repo
+# read-only (local clone or authenticated GitHub Contents API).
+#
+# Setup:
+#   1. No manual token setup required — the "Run daily fetch" step below uses
+#      the auto-provided `secrets.GITHUB_TOKEN` to raise the Code Search API
+#      rate limit. (GitHub reserves the `GITHUB_` prefix, so you cannot create
+#      a custom repository secret literally named GITHUB_TOKEN.)
+#   2. Optional: to use your own classic PAT with 'public_repo' scope instead
+#      (e.g. for a rate limit independent of the auto token), add it as a
+#      repository secret under a different name (e.g. GH_PAT) and point the
+#      `env:` line in the "Run daily fetch" step at `${{ secrets.GH_PAT }}`.
+#   3. The workflow opens a Pull Request with any new/modified view files —
+#      it does NOT push straight to main. A filename match on public GitHub
+#      is not proof a view is a genuine SAP-released CDS view, so new entries
+#      are tagged `release_state: unverified` and need human review/merge.
+#   4. Check the "Actions" tab for daily run logs.
+
+name: Daily CDS View Fetch
+
+on:
+  schedule:
+    # Run daily at 6:00 AM UTC
+    - cron: '0 6 * * *'
+  # Allow manual trigger from Actions tab
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (preview only, no files written)'
+        type: boolean
+        default: false
+      force:
+        description: 'Force overwrite existing views'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  fetch-views:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch full history for changelog tracking
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Run daily fetch
+        id: fetch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ARGS=("--source" "github" "--track")
+
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS+=("--dry-run")
+          fi
+
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            ARGS+=("--force")
+          fi
+
+          echo "🚀 Running: node batch_add.mjs ${ARGS[*]}"
+
+          if node batch_add.mjs "${ARGS[@]}" 2>&1 | tee fetch_output.txt; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Show changelog summary
+        if: always()
+        run: |
+          echo "## 📊 Changelog Summary (github only)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          node add_view.mjs --changelog-summary --changelog-source github >> $GITHUB_STEP_SUMMARY 2>&1 || echo "No changelog data" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## 📊 Changelog Stats (github only)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          node add_view.mjs --changelog-stats --changelog-source github >> $GITHUB_STEP_SUMMARY 2>&1 || echo "No changelog data" >> $GITHUB_STEP_SUMMARY
+
+      - name: Generate dashboard
+        if: success()
+        run: |
+          echo "📊 Generating dashboard..."
+          node scripts/generate-dashboard.mjs
+
+      - name: Commit and open PR for review
+        if: github.event.inputs.dry_run != 'true' && steps.fetch.outputs.status == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "cds-kb-bot"
+          git config user.email "bot@cds-kb.local"
+
+          # Check if there are any changes to commit
+          if git diff --quiet HEAD -- views/ changelog.json; then
+            echo "ℹ️  No new views to commit"
+            exit 0
+          fi
+
+          DATE="$(date +'%Y-%m-%d')"
+          BRANCH="daily-cds-fetch/${DATE}-${{ github.run_id }}"
+
+          git checkout -b "$BRANCH"
+          git add views/ changelog.json dashboard.html
+          git commit -m "Daily CDS view fetch ($DATE)"
+          git push origin "$BRANCH"
+
+          cat > pr_body.md <<'EOF'
+          Automated discovery via GitHub Code Search (`--source github`).
+
+          **Review before merging.** A filename match on public GitHub is not proof a
+          view is a genuine SAP-released CDS view — it could be a custom/example view
+          from an unrelated repo. New entries from this run are tagged
+          `release_state: unverified`; verify each one against a trusted source
+          before merging, and update `release_state` once confirmed.
+          EOF
+
+          gh pr create \
+            --title "Daily CDS view fetch ($DATE)" \
+            --base main \
+            --head "$BRANCH" \
+            --body-file pr_body.md
+
+          echo "✅ PR opened for review: $BRANCH"
+
+      - name: Notify on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `⚠️ Daily CDS view fetch failed (${new Date().toISOString().slice(0, 10)})`,
+              body: `The daily CDS view fetch workflow failed.\n\nSee: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              labels: ['automation', 'bug'],
+            });

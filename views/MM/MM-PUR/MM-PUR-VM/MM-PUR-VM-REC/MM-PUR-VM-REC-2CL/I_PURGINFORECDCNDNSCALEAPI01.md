@@ -1,0 +1,110 @@
+---
+name: I_PURGINFORECDCNDNSCALEAPI01
+description: Purginforecdcndnscaleapi 01
+app_component: MM-PUR-VM-REC-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - MM
+  - MM-PUR
+  - MM-PUR-VM
+  - interface-view
+  - component:MM-PUR-VM-REC-2CL
+  - lob:Sourcing & Procurement
+---
+# I_PURGINFORECDCNDNSCALEAPI01
+
+**Purginforecdcndnscaleapi 01**
+
+| Property | Value |
+|---|---|
+| App Component | `MM-PUR-VM-REC-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `PurchasingInfoRecord` | `PurchasingInfoRecord` |
+| key `PurchasingOrganization` | `PurchasingOrganization` |
+| key `PurchasingInfoRecordCategory` | `PurchasingInfoRecordCategory` |
+| key `Plant` | `Plant` |
+| key `ConditionRecord` | `ConditionRecord` |
+| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
+| key `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
+| key `ConditionScaleLine` | `ConditionScaleLine` |
+| `ConditionType` | `ConditionType` |
+| `ConditionScaleQuantity` | `ConditionScaleQuantity` |
+| `ConditionScaleQuantityUnit` | `ConditionScaleQuantityUnit` |
+| `ConditionScaleAmount` | `ConditionScaleAmount` |
+| `ConditionScaleAmountCurrency` | `ConditionScaleAmountCurrency` |
+| `ConditionRateValue` | `ConditionRateValue` |
+| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
+| `ConditionRateRatio` | `ConditionRateRatio` |
+| `ConditionRateRatioUnit` | `ConditionRateRatioUnit` |
+| `ConditionRateAmount` | `cast ( ConditionRateAmount as vfprc_rate_amount )` |
+| `ConditionCurrency` | `cast ( ConditionCurrency as waers )` |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Purchasing Info Record Condition Scale'
+@VDM.viewType : #COMPOSITE
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
+@AccessControl.personalData.blocking: #BLOCKED_DATA_EXCLUDED
+@Metadata.ignorePropagatedAnnotations:true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+
+define view entity I_PurgInfoRecdCndnScaleAPI01
+  as select from I_PurgInfoRecdCndnScale
+{
+  key PurchasingInfoRecord,
+  key PurchasingOrganization,
+  key PurchasingInfoRecordCategory,
+  key Plant,
+      @EndUserText.label: 'Condition Group ID'
+  key ConditionRecord,
+      @Semantics.businessDate.to: true
+  key ConditionValidityEndDate,
+  key ConditionSequentialNumberShort,
+  key ConditionScaleLine,
+
+      ConditionType,
+
+      @Semantics.quantity.unitOfMeasure: 'ConditionScaleQuantityUnit'
+      ConditionScaleQuantity,
+
+      ConditionScaleQuantityUnit,
+
+      @Semantics.amount.currencyCode: 'ConditionScaleAmountCurrency'
+      ConditionScaleAmount,
+
+      ConditionScaleAmountCurrency,
+
+      @Semantics.amount.currencyCode: 'ConditionRateValueUnit'
+      ConditionRateValue,
+
+      ConditionRateValueUnit,
+
+      @Semantics.quantity.unitOfMeasure: 'ConditionRateRatioUnit'
+      ConditionRateRatio,
+
+      ConditionRateRatioUnit,
+
+      @Semantics.amount.currencyCode: 'ConditionCurrency'
+      @OData.v2.amount.noDecimalShift: true
+      cast ( ConditionRateAmount as vfprc_rate_amount ) as ConditionRateAmount,  //Condition Amount
+
+      cast ( ConditionCurrency as waers ) as ConditionCurrency   //Currency
+
+}
+```

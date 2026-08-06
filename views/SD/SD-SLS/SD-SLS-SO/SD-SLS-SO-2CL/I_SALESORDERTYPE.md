@@ -1,0 +1,85 @@
+---
+name: I_SALESORDERTYPE
+description: Sales OrderTYPE
+app_component: SD-SLS-SO-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-SLS
+  - SD-SLS-SO
+  - interface-view
+  - sales-order
+  - component:SD-SLS-SO-2CL
+  - lob:Sales & Distribution
+  - bo:SalesOrder
+---
+# I_SALESORDERTYPE
+
+**Sales OrderTYPE**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-SLS-SO-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `SalesOrderType` | `cast( SalesDocumentType as sales_order_type preserving type )` |
+| `SalesOrderProcessingType` | `SalesDocumentProcessingType` |
+| `OrderTypeForBillingRequest` | `OrderTypeForBillingRequest` |
+| `TradeComplianceIsActive` | `TradeComplianceIsActive` |
+| `_Text` | *Association* |
+| `_OrderTypeForBillingRequest` | *Association* |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel:{
+    representativeKey: 'SalesOrderType',
+    sapObjectNodeType.name: 'SalesOrderType',
+    usageType:{
+        dataClass: #CUSTOMIZING,
+        serviceQuality: #A,
+        sizeCategory: #S
+    },
+    supportedCapabilities: [ #ANALYTICAL_DIMENSION, #EXTRACTION_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ],
+    modelingPattern: [ #ANALYTICAL_DIMENSION ]
+}
+@EndUserText.label: 'Sales Order Types'
+@Analytics: {dataCategory: #DIMENSION,
+             dataExtraction.enabled: true }
+
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck:#NOT_REQUIRED
+@AbapCatalog.sqlViewName: 'ISDSALESORDERTP'
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations:true
+// @AbapCatalog.buffering.status: #ACTIVE
+// @AbapCatalog.buffering.type: #FULL
+
+define view I_SalesOrderType
+  as select from I_SalesDocumentType
+
+{
+      //key
+      @ObjectModel.text.association: '_Text'
+  key cast( SalesDocumentType as sales_order_type preserving type ) as SalesOrderType,
+      SalesDocumentProcessingType as SalesOrderProcessingType,
+      OrderTypeForBillingRequest,
+      TradeComplianceIsActive,
+      //association
+      _Text,
+      _OrderTypeForBillingRequest
+}
+where
+  SDDocumentCategory = 'C';
+```

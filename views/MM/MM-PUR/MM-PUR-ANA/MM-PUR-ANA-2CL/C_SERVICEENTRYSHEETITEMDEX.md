@@ -1,0 +1,265 @@
+---
+name: C_SERVICEENTRYSHEETITEMDEX
+description: Serviceentrysheetitemdex
+app_component: MM-PUR-ANA-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - MM
+  - MM-PUR
+  - MM-PUR-ANA
+  - consumption-view
+  - data-extraction
+  - service
+  - item-level
+  - component:MM-PUR-ANA-2CL
+  - lob:Sourcing & Procurement
+---
+# C_SERVICEENTRYSHEETITEMDEX
+
+**Serviceentrysheetitemdex**
+
+| Property | Value |
+|---|---|
+| App Component | `MM-PUR-ANA-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ServiceEntrySheet` | `ServiceEntrySheet` |
+| key `ServiceEntrySheetItem` | `ServiceEntrySheetItem` |
+| `PurchaseOrder` | `PurchaseOrder` |
+| `PurchaseOrderItem` | `PurchaseOrderItem` |
+| `IsDeleted` | `IsDeleted` |
+| `Service` | `Service` |
+| `ServiceEntrySheetItemDesc` | `ServiceEntrySheetItemDesc` |
+| `ServicePerformer` | `ServicePerformer` |
+| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
+| `MultipleAcctAssgmtDistribution` | `MultipleAcctAssgmtDistribution` |
+| `WorkItem` | `WorkItem` |
+| `ConfirmedQuantity` | `ConfirmedQuantity` |
+| `QuantityUnit` | `QuantityUnit` |
+| `ServicePerformanceDate` | `ServicePerformanceDate` |
+| `NetAmount` | `NetAmount` |
+| `NetPriceAmount` | `NetPriceAmount` |
+| `Currency` | `Currency` |
+| `PurgDocItemExternalReference` | `PurgDocItemExternalReference` |
+| `PurchaseContract` | `PurchaseContract` |
+| `PurchaseContractItem` | `PurchaseContractItem` |
+| `PurchasingOrganization` | `PurchasingOrganization` |
+| `PurchasingGroup` | `PurchasingGroup` |
+| `Plant` | `Plant` |
+| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
+| `CreationDateTime` | `CreationDateTime` |
+| `CreatedByUser` | `CreatedByUser` |
+| `LastChangeDateTime` | `LastChangeDateTime` |
+| `LastChangedByUser` | `LastChangedByUser` |
+| `_ServiceEntrySheetDEX` | *Association* |
+| `_Product` | *Association* |
+| `_AccountAssignmentCategory` | *Association* |
+| `_UnitOfMeasure` | *Association* |
+| `_DocumentCurrency` | *Association* |
+| `_PurchaseOrder` | *Association* |
+| `_PurchaseOrderItem` | *Association* |
+| `_PurchaseContract` | *Association* |
+| `_PurchaseContractItem` | *Association* |
+| `_PurchasingOrganization` | *Association* |
+| `_PurchasingGroup` | *Association* |
+| `_Plant` | *Association* |
+| `_ServiceEntrySheet` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ServiceEntrySheetDEX` | `C_ServiceEntrySheetDEX` | [1..1] |
+| `_Product` | `I_Product` | [0..1] |
+| `_AccountAssignmentCategory` | `I_AccountAssignmentCategory` | [0..1] |
+| `_UnitOfMeasure` | `I_UnitOfMeasure` | [0..1] |
+| `_DocumentCurrency` | `I_Currency` | [0..1] |
+| `_PurchaseOrder` | `C_PurchaseOrderDEX` | [1..1] |
+| `_PurchaseOrderItem` | `C_PurchaseOrderItemDEX` | [1..1] |
+| `_PurchaseContract` | `C_PurchaseContractDEX` | [0..1] |
+| `_PurchaseContractItem` | `C_PurchaseContractItemDEX` | [0..1] |
+| `_PurchasingOrganization` | `I_PurchasingOrganization` | [0..1] |
+| `_PurchasingGroup` | `I_PurchasingGroup` | [0..1] |
+| `_Plant` | `I_Plant` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'CMMSERVENTSHTITM'
+@EndUserText.label: 'Data Extraction for ServiceEntrySheetItem'
+@AbapCatalog.compiler.compareFilter     : true
+@AbapCatalog.preserveKey                : true
+@AccessControl:{ authorizationCheck     : #CHECK,
+                 personalData.blocking  : #REQUIRED
+               }
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel :{ usageType.dataClass     : #TRANSACTIONAL,
+                usageType.sizeCategory  : #L,
+                usageType.serviceQuality: #D,
+                supportedCapabilities   : [ #EXTRACTION_DATA_SOURCE ]
+              }
+
+//@ObjectModel.representativeKey          : [ 'ServiceEntrySheetItem' ]
+@VDM.viewType                           : #CONSUMPTION
+@Metadata.ignorePropagatedAnnotations   : true
+
+//@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+            mapping:[ {
+                        table           : 'mmpur_ses_item', role: #MAIN,
+                        viewElement     : [ 'ServiceEntrySheet', 'ServiceEntrySheetItem' ],
+                        tableElement    :   ['ServiceEntrySheet','ServiceEntrySheetItem']
+                      }
+                    ]
+        }
+    }
+}
+@ObjectModel.sapObjectNodeType.name: 'ServiceEntrySheetItem'
+@ObjectModel.modelingPattern: #ANALYTICAL_FACT
+define view C_ServiceEntrySheetItemDEX
+  as select from I_ServiceEntrySheetItemAPI01
+
+  association [1..1] to C_ServiceEntrySheetDEX      as _ServiceEntrySheetDEX      on $projection.ServiceEntrySheet = _ServiceEntrySheetDEX.ServiceEntrySheet
+  
+  association [0..1] to I_Product                   as _Product                   on $projection.Service = _Product.Product
+  
+  association [0..1] to I_AccountAssignmentCategory as _AccountAssignmentCategory on $projection.AccountAssignmentCategory = _AccountAssignmentCategory.AccountAssignmentCategory
+  
+  association [0..1] to I_UnitOfMeasure             as _UnitOfMeasure             on $projection.QuantityUnit = _UnitOfMeasure.UnitOfMeasure
+
+  association [0..1] to I_Currency                  as _DocumentCurrency          on $projection.Currency = _DocumentCurrency.Currency
+  
+  association [1..1] to C_PurchaseOrderDEX          as _PurchaseOrder             on $projection.PurchaseOrder = _PurchaseOrder.PurchaseOrder
+  
+  association [1..1] to C_PurchaseOrderItemDEX      as _PurchaseOrderItem         on $projection.PurchaseOrder = _PurchaseOrderItem.PurchaseOrder
+                                                                                  and $projection.PurchaseOrderItem = _PurchaseOrderItem.PurchaseOrderItem
+  
+  association [0..1] to C_PurchaseContractDEX       as _PurchaseContract          on $projection.PurchaseContract = _PurchaseContract.PurchaseContract
+  
+  association [0..1] to C_PurchaseContractItemDEX   as _PurchaseContractItem      on $projection.PurchaseContract = _PurchaseContractItem.PurchaseContract
+                                                                                  and $projection.PurchaseContractItem = _PurchaseContractItem.PurchaseContractItem
+
+  association [0..1] to I_PurchasingOrganization    as _PurchasingOrganization    on $projection.PurchasingOrganization = _PurchasingOrganization.PurchasingOrganization
+
+  association [0..1] to I_PurchasingGroup           as _PurchasingGroup           on $projection.PurchasingGroup = _PurchasingGroup.PurchasingGroup
+  
+  association [0..1] to I_Plant                     as _Plant                     on $projection.Plant = _Plant.Plant
+
+{
+
+  key ServiceEntrySheet              as ServiceEntrySheet,
+
+  key ServiceEntrySheetItem          as ServiceEntrySheetItem,
+      
+      @ObjectModel.sapObjectNodeTypeReference: 'PurchaseOrder'
+      PurchaseOrder                  as PurchaseOrder,
+      
+      @ObjectModel.sapObjectNodeTypeReference: 'PurchaseOrderItem'
+      PurchaseOrderItem              as PurchaseOrderItem,
+
+      @Semantics.booleanIndicator : true
+      IsDeleted                      as IsDeleted,
+      
+      @ObjectModel.foreignKey.association: '_Product'
+      Service                        as Service,
+
+      ServiceEntrySheetItemDesc      as ServiceEntrySheetItemDesc,
+
+      ServicePerformer               as ServicePerformer,
+      
+      @ObjectModel.foreignKey.association: '_AccountAssignmentCategory'
+      AccountAssignmentCategory      as AccountAssignmentCategory,
+
+      MultipleAcctAssgmtDistribution as MultipleAcctAssgmtDistribution,
+      
+      @Semantics.text: true
+      WorkItem                       as WorkItem,
+
+      @Semantics.quantity.unitOfMeasure: 'QuantityUnit'
+      ConfirmedQuantity              as ConfirmedQuantity,
+
+      @Semantics.unitOfMeasure: true
+      @ObjectModel.foreignKey.association: '_UnitOfMeasure'
+      QuantityUnit                   as QuantityUnit,
+      
+      ServicePerformanceDate         as ServicePerformanceDate,
+
+      //OriginObject                   as OriginObject,       // GFN ATC Error in underlying API IView.
+
+      @Semantics.amount.currencyCode: 'Currency'
+      NetAmount                      as NetAmount,
+
+      @Semantics.amount.currencyCode: 'Currency'
+      NetPriceAmount                 as NetPriceAmount,
+
+      @Semantics.currencyCode:true
+      @ObjectModel.foreignKey.association: '_DocumentCurrency'
+      Currency                       as Currency,
+
+      PurgDocItemExternalReference   as PurgDocItemExternalReference,
+      
+      @ObjectModel.sapObjectNodeTypeReference: 'PurchaseContract'
+      PurchaseContract               as PurchaseContract,
+      
+      @ObjectModel.sapObjectNodeTypeReference: 'PurchaseContractItem'
+      PurchaseContractItem           as PurchaseContractItem,
+      
+      @ObjectModel.foreignKey.association: '_PurchasingOrganization'
+      PurchasingOrganization         as PurchasingOrganization,
+      
+      @ObjectModel.foreignKey.association: '_PurchasingGroup'
+      PurchasingGroup                as PurchasingGroup,
+      
+      @ObjectModel.foreignKey.association: '_Plant'
+      Plant                          as Plant,
+
+      @Semantics.booleanIndicator : true
+      IsEndOfPurposeBlocked          as IsEndOfPurposeBlocked,
+      
+      @Semantics.systemDateTime.createdAt: true
+      CreationDateTime               as CreationDateTime,
+      
+      @Semantics.user.createdBy: true
+      CreatedByUser                  as CreatedByUser,
+      
+      @Semantics.systemDateTime.lastChangedAt: true
+      LastChangeDateTime             as LastChangeDateTime,
+      
+      @Semantics.user.lastChangedBy: true
+      LastChangedByUser              as LastChangedByUser,
+
+      /* Associations */
+      _Product,
+      _AccountAssignmentCategory,
+      _UnitOfMeasure,
+      _DocumentCurrency,
+      _PurchaseOrder,
+      _PurchaseOrderItem,
+      _PurchaseContract,
+      _PurchaseContractItem,
+      _PurchasingOrganization,
+      _PurchasingGroup,
+      _Plant,
+      
+      @ObjectModel.association.type: [#TO_COMPOSITION_PARENT,
+                                      #TO_COMPOSITION_ROOT]
+      _ServiceEntrySheetDEX,
+      
+      _ServiceEntrySheet
+
+}
+```

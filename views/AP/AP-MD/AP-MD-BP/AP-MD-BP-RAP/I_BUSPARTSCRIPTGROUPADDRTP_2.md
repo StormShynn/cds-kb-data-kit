@@ -1,0 +1,203 @@
+---
+name: I_BUSPARTSCRIPTGROUPADDRTP_2
+description: Business PartnerSCRIPTGROUPADDRTP 2
+app_component: AP-MD-BP-RAP
+software_component: SAP_BASIS
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - AP
+  - AP-MD
+  - AP-MD-BP
+  - interface-view
+  - transactional-processing
+  - business-partner
+  - component:AP-MD-BP-RAP
+  - lob:Other
+---
+# I_BUSPARTSCRIPTGROUPADDRTP_2
+
+**Business PartnerSCRIPTGROUPADDRTP 2**
+
+| Property | Value |
+|---|---|
+| App Component | `AP-MD-BP-RAP` |
+| Software Component | `SAP_BASIS` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `BusinessPartner` | `BusinessPartner` |
+| key `AddressNumber` | `AddressNumber` |
+| key `AddressRepresentationCode` | `AddressRepresentationCode` |
+| `AddrRepCodeForEditValue` | `AddrRepCodeForEditValue` |
+| `ValidityStartDate` | `ValidityStartDate` |
+| `ValidityEndDate` | `ValidityEndDate` |
+| `BusinessPartnerAddressUUID` | `BusinessPartnerAddressUUID` |
+| `CareOfName` | `CareOfName` |
+| `AdditionalStreetSuffixName` | `AdditionalStreetSuffixName` |
+| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
+| `PrfrdCommMediumType` | `PrfrdCommMediumType` |
+| `POBoxLobbyName` | `POBoxLobbyName` |
+| `AddressTimeZone` | `AddressTimeZone` |
+| `FullName` | `FullName` |
+| `CityName` | `CityName` |
+| `District` | `District` |
+| `DistrictName` | `DistrictName` |
+| `HomeCityName` | `HomeCityName` |
+| `StreetName` | `StreetName` |
+| `StreetPrefixName` | `StreetPrefixName` |
+| `AdditionalStreetPrefixName` | `AdditionalStreetPrefixName` |
+| `StreetSuffixName` | `StreetSuffixName` |
+| `HouseNumber` | `HouseNumber` |
+| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
+| `FormattedAddress` | `FormattedAddress` |
+| `FormOfAddress` | `FormOfAddress` |
+| `BusinessPartnerName1` | `BusinessPartnerName1` |
+| `BusinessPartnerName2` | `BusinessPartnerName2` |
+| `SearchTerm1` | `SearchTerm1` |
+| `SearchTerm2` | `SearchTerm2` |
+| `AuthorizationGroup` | `AuthorizationGroup` |
+| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
+| `BPAddressIsProtected` | `BPAddressIsProtected` |
+| `DataControllerSet` | `DataControllerSet` |
+| `DataController1` | `DataController1` |
+| `DataController2` | `DataController2` |
+| `DataController3` | `DataController3` |
+| `DataController4` | `DataController4` |
+| `DataController5` | `DataController5` |
+| `DataController6` | `DataController6` |
+| `DataController7` | `DataController7` |
+| `DataController8` | `DataController8` |
+| `DataController9` | `DataController9` |
+| `DataController10` | `DataController10` |
+| `_BusinessPartner` | *Association* |
+| `_BusinessPartnerAddress` | *Association* |
+| `_BPProtectedAddress` | *Association* |
+| `_AddressRepresentation` | *Association* |
+| `_FormOfAddress` | *Association* |
+| `_AuthorizationGroup` | *Association* |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'BP Scripted Group address'
+@VDM: {
+  viewType: #TRANSACTIONAL,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+
+@ObjectModel: {
+    usageType.serviceQuality: #D,
+    usageType.sizeCategory : #XXL,
+    usageType.dataClass: #MASTER,
+    supportedCapabilities: [#TRANSACTIONAL_PROVIDER],
+    modelingPattern: #TRANSACTIONAL_INTERFACE 
+}
+@Search.searchable: true
+@Metadata.ignorePropagatedAnnotations: true
+@Consumption.dbHints: [ 'USE_HEX_PLAN' ]
+
+define view entity I_BusPartScriptGroupAddrTP_2  
+as projection on I_BusPartScriptedGroupAddrTP
+{ 
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #HIGH
+  key BusinessPartner,
+      @Search.defaultSearchElement: true
+  key AddressNumber,
+      @ObjectModel.foreignKey.association: '_AddressRepresentation'
+  key AddressRepresentationCode,
+      AddrRepCodeForEditValue,
+      @EndUserText.label: 'Validity Start Date'
+      ValidityStartDate,
+      @EndUserText.label: 'Validity End Date'
+      ValidityEndDate,
+      @EndUserText.label: 'Business Partner Address'
+      BusinessPartnerAddressUUID,
+      CareOfName,
+      AdditionalStreetSuffixName,
+      CorrespondenceLanguage,
+      PrfrdCommMediumType,
+      POBoxLobbyName,
+      AddressTimeZone,
+      FullName,
+      CityName,
+      @API.element: { releaseState: #DEPRECATED, successor: 'DistrictName' } 
+      District,
+      DistrictName,
+      //      CityCode,
+      HomeCityName,
+      StreetName,
+      StreetPrefixName,
+      AdditionalStreetPrefixName,
+      StreetSuffixName,
+      HouseNumber,
+      HouseNumberSupplementText,
+       @EndUserText.label: 'Address'
+      FormattedAddress,
+      @ObjectModel.foreignKey.association: '_FormOfAddress'
+      FormOfAddress,
+      BusinessPartnerName1,
+      BusinessPartnerName2,
+      SearchTerm1,
+      SearchTerm2,
+      _BusinessPartner : redirected to I_BusinessPartnerTP_3,
+      _BusinessPartnerAddress : redirected to parent I_BusinessPartnerAddressTP_3,
+      _BPProtectedAddress,
+      _AddressRepresentation,
+      @ObjectModel.foreignKey.association: '_AuthorizationGroup'
+      AuthorizationGroup,
+      @Semantics.booleanIndicator
+      IsBusinessPurposeCompleted,
+      BPAddressIsProtected,
+      
+      ////////////// Start of Datacontroller 10+1 fields -  Not to be consumed by any other views//////////
+          @UI.hidden:true
+          @Consumption.hidden:true
+          DataControllerSet,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController1,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController2,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController3,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController4,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController5,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController6,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController7,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController8,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController9,
+          @Consumption.hidden:true
+          @UI.hidden:true
+          DataController10,
+
+          ////////////// End of Datacontroller 10+1 fields//////////
+      
+      _FormOfAddress,
+      _AuthorizationGroup
+      //_BPDataControllerUsage
+}
+```

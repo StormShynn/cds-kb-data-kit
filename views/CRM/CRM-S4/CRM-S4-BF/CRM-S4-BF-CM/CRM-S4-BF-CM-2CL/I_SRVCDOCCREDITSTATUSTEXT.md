@@ -1,0 +1,107 @@
+---
+name: I_SRVCDOCCREDITSTATUSTEXT
+description: Srvcdoccreditstatustext
+app_component: CRM-S4-BF-CM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CRM
+  - interface-view
+  - text-view
+  - text
+  - status
+  - credit
+  - component:CRM-S4-BF-CM-2CL
+  - lob:Other
+---
+# I_SRVCDOCCREDITSTATUSTEXT
+
+**Srvcdoccreditstatustext**
+
+| Property | Value |
+|---|---|
+| App Component | `CRM-S4-BF-CM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `SrvcDocCreditStatus` | `cast ( domvalue_l as crms4_stat_credit_h )` |
+| key `Language` | `cast( ddlanguage as spras preserving type )` |
+| `DomainValue` | `domvalue_l` |
+| `SrvcDocCreditStatusText` | `ddtext` |
+| `_SrvcDocCreditStatus` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SrvcDocCreditStatus` | `I_SrvcDocCreditStatus` | [1..1] |
+| `_Language` | `I_Language` | [1..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Credit Status of Service Trans - Text'
+@VDM: {
+    viewType: #BASIC,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@AccessControl: {
+    authorizationCheck: #NOT_REQUIRED
+}
+@ObjectModel: {
+    dataCategory: #TEXT,
+    representativeKey: 'SrvcDocCreditStatus',
+    usageType: {serviceQuality: #A, sizeCategory: #S, dataClass: #CUSTOMIZING},
+    supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT, #CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #SEARCHABLE_ENTITY ],
+    modelingPattern: #LANGUAGE_DEPENDENT_TEXT
+}
+@Search.searchable: true
+@Metadata: {
+    ignorePropagatedAnnotations: true
+}
+@ClientHandling: {
+    algorithm: #SESSION_VARIABLE
+}
+@AbapCatalog: {
+    sqlViewName: 'ISERVCRDTSTSTEXT',
+    compiler.compareFilter: true,
+    preserveKey: true
+}
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK"] }*/
+define view I_SrvcDocCreditStatusText
+  as select from dd07t
+
+  /*+[hideWarning] { "IDS" : [ "CALCULATED_FIELD_CHECK" ] }*/
+  association [1..1] to I_SrvcDocCreditStatus as _SrvcDocCreditStatus on $projection.SrvcDocCreditStatus = _SrvcDocCreditStatus.SrvcDocCreditStatus
+  association [1..1] to I_Language            as _Language            on $projection.Language = _Language.Language
+{
+      @ObjectModel.foreignKey.association: '_SrvcDocCreditStatus'
+  key cast ( domvalue_l as crms4_stat_credit_h )  as SrvcDocCreditStatus,
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_Language'
+  key cast( ddlanguage as spras preserving type ) as Language,
+      @Analytics.hidden: true
+      @Consumption.hidden: true
+      domvalue_l                                  as DomainValue,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #HIGH
+      @Semantics.text: true
+      ddtext                                      as SrvcDocCreditStatusText,
+      _SrvcDocCreditStatus,
+      _Language
+}
+where
+      domname  = 'CRMS4_STAT_CREDIT_H'
+  and as4local = 'A'
+```

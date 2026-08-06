@@ -1,0 +1,82 @@
+---
+name: I_ABAPTRANSPORTREQUESTTEXT
+description: Abaptransportrequesttext
+app_component: BC-CTS-ORG
+software_component: SAP_BASIS
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - BC
+  - BC-CTS
+  - BC-CTS-ORG
+  - interface-view
+  - text-view
+  - transport
+  - text
+  - component:BC-CTS-ORG
+  - lob:Basis Components
+---
+# I_ABAPTRANSPORTREQUESTTEXT
+
+**Abaptransportrequesttext**
+
+| Property | Value |
+|---|---|
+| App Component | `BC-CTS-ORG` |
+| Software Component | `SAP_BASIS` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `TransportRequestID` | `TransportRequestID` |
+| key `Language` | `Language` |
+| `TransportRequestDescription` | `cast( substring( RelevantText, 2, 60 ) as as4text preserving type )` |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'ABAP Transport Request Text Description'
+@Metadata.ignorePropagatedAnnotations: true
+@VDM.viewType: #BASIC
+
+@ObjectModel.usageType:{
+  serviceQuality: #B,
+  sizeCategory: #L,
+  dataClass: #MIXED
+}
+
+@ObjectModel.dataCategory:#TEXT
+@ObjectModel.representativeKey: 'TransportRequestID'
+
+define view entity I_ABAPTransportRequestText
+  as select from CTS_TR_TEXT_HLP2
+
+  //association [0..1] to I_RequestsHeader as _TransportRequestHeader on $projection.TransportRequestID = _TransportRequestHeader.TransportRequestID
+  association [0..1] to I_Language as _Language on $projection.Language = _Language.Language
+{
+      // @ObjectModel.foreignKey.association: '_TransportRequestHeader'
+  key TransportRequestID,
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key Language,
+      @Semantics.text: true
+      cast( substring( RelevantText, 2, 60 ) as as4text preserving type ) as TransportRequestDescription,
+      // @ObjectModel.association.type: [#TO_COMPOSITION_PARENT, #TO_COMPOSITION_ROOT] -- should no more necessary
+      // _TransportRequestHeader,
+      _Language
+}
+```

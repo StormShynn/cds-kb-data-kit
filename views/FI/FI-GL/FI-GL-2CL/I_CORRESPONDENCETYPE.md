@@ -1,0 +1,73 @@
+---
+name: I_CORRESPONDENCETYPE
+description: Correspondencetype
+app_component: FI-GL-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-GL
+  - interface-view
+  - component:FI-GL-2CL
+  - lob:Finance
+---
+# I_CORRESPONDENCETYPE
+
+**Correspondencetype**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-GL-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Correspondence` | `event` |
+| `IsAccountSpecificationRequired` | `xkont` |
+| `IsDocSpecificationNecessary` | `xbelg` |
+| `NmbrOfDateSpecificationsRqd` | `anzdt` |
+| `IsIndividualTextRequired` | `xspra` |
+| `CorrespncIsCrossCompanyCode` | `xbukr` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_CorrespondenceTypeText` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'ICRRSPNDNCTYPE'
+@VDM.viewType: #BASIC
+@AbapCatalog.buffering.status: #NOT_ALLOWED         
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.dataClass:  #MASTER
+@ObjectModel.usageType.serviceQuality: #A
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true  
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+@EndUserText.label: 'Correspondence Type'
+define view I_CorrespondenceType as select from t048 
+  association [0..1] to I_CorrespondenceTypeText as _Text on $projection.Correspondence = _Text.Correspondence  
+                                                         and _Text.Language = $session.system_language
+{
+  key event as Correspondence,
+      xkont as IsAccountSpecificationRequired,
+      xbelg as IsDocSpecificationNecessary,
+      anzdt as NmbrOfDateSpecificationsRqd,
+      xspra as IsIndividualTextRequired,
+      xbukr as CorrespncIsCrossCompanyCode,
+      _Text
+  
+}
+```

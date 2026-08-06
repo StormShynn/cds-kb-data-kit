@@ -1,0 +1,107 @@
+---
+name: I_CNSLDTNSUPPLIERHIERARCHY
+description: Cnsldtnsupplierhierarchy
+app_component: FIN-CS-MD-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-CS
+  - FIN-CS-MD
+  - interface-view
+  - supplier
+  - component:FIN-CS-MD-2CL
+  - lob:Other
+  - bo:Supplier
+---
+# I_CNSLDTNSUPPLIERHIERARCHY
+
+**Cnsldtnsupplierhierarchy**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-CS-MD-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ConsolidationSupplierHierarchy` | `cast(_Hierarchy.UniversalHierarchy as fincs_supplierhierarchy preserving type )` |
+| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
+| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
+| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
+| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_CnsldtnSupplierHierarchyT` | [0..*] |
+
+## Source Code
+
+```abap
+@Analytics: {
+  dataCategory: #DIMENSION,
+  internalName: #LOCAL,
+  dataExtraction.enabled: true
+}
+@AccessControl:{
+  authorizationCheck: #MANDATORY
+}
+@Metadata:{
+  allowExtensions:true,
+  ignorePropagatedAnnotations: true
+}
+@ObjectModel:{
+  usageType: {
+    dataClass: #MASTER,
+    serviceQuality: #B,
+    sizeCategory: #S
+  },
+  representativeKey: 'ConsolidationSupplierHierarchy',
+  modelingPattern: #ANALYTICAL_DIMENSION,
+  supportedCapabilities: [#CDS_MODELING_DATA_SOURCE,
+                          #CDS_MODELING_ASSOCIATION_TARGET,
+                          #SQL_DATA_SOURCE,
+                          #EXTRACTION_DATA_SOURCE,
+                          #ANALYTICAL_DIMENSION ],
+  sapObjectNodeType.name: 'CnsldtnSupplierHierarchy'
+}
+@VDM:{
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@EndUserText.label: 'Consolidation Supplier Hierarchy'
+
+define view entity I_CnsldtnSupplierHierarchy
+  as select from P_CnsldtnUnivHierarchy_3( P_HierarchyType: 'CS09', P_MasterDataType : 'LIFNR' ) as _Hierarchy
+
+  association [0..*] to I_CnsldtnSupplierHierarchyT as _Text on $projection.ConsolidationSupplierHierarchy = _Text.ConsolidationSupplierHierarchy
+  //                                                            and $projection.ValidityEndDate               = _Text.ValidityEndDate  due to defect in Analytic engine
+{
+      @ObjectModel.text.association: '_Text'
+  key cast(_Hierarchy.UniversalHierarchy as fincs_supplierhierarchy preserving type ) as ConsolidationSupplierHierarchy,
+
+      @Semantics.businessDate.to: true
+  key _Hierarchy.ValidityEndDate,
+
+      @Semantics.businessDate.from: true
+      _Hierarchy.ValidityStartDate,
+
+      @Semantics.user.lastChangedBy: true
+      _Hierarchy.LastChangedByUser,
+
+      @Semantics.systemDateTime.lastChangedAt: true
+      _Hierarchy.LastChangeDateTime,
+
+      _Text
+};
+```

@@ -1,0 +1,110 @@
+---
+name: I_CNSLDTNUNITPARTNERTEXT
+description: Cnsldtnunitpartnertext
+app_component: FIN-CS-MD-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-CS
+  - FIN-CS-MD
+  - interface-view
+  - text-view
+  - text
+  - partner
+  - component:FIN-CS-MD-2CL
+  - lob:Other
+---
+# I_CNSLDTNUNITPARTNERTEXT
+
+**Cnsldtnunitpartnertext**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-CS-MD-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Language` | `_UnitAttributeValueT.Language` |
+| key `ConsolidationUnitPartner` | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitpartner preserving type )` |
+| `ConsolidationUnitPartnerText` | `_UnitAttributeValueT.CnsldtnUnitAttribValText` |
+| `CnsldtnUnitPartnerLongText` | `_UnitAttributeValueT.CnsldtnUnitAttribValLongText` |
+| `_CnsldtnUnitPartner` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CnsldtnUnitPartner` | `I_CnsldtnUnitPartner` | [1..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog:{
+  sqlViewName: 'ICSCUPARTNERT',
+  compiler.compareFilter: true,
+  preserveKey: true
+}
+@Analytics: {
+  dataExtraction.enabled: true
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {
+    usageType: {
+        dataClass: #CUSTOMIZING,
+        serviceQuality: #A,
+        sizeCategory: #S
+    },
+    dataCategory: #TEXT,
+    representativeKey: 'ConsolidationUnitPartner',
+    modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+    supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT,
+                            #SQL_DATA_SOURCE,
+                            #EXTRACTION_DATA_SOURCE,
+                            #CDS_MODELING_DATA_SOURCE,
+                            #CDS_MODELING_ASSOCIATION_TARGET ]
+}
+@Search.searchable: true
+@VDM:{
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+  }
+@EndUserText.label: 'Cons Unit Partner Selection - Text'
+
+define view I_CnsldtnUnitPartnerText
+  as select from P_CnsldtnUnitAttributeValueT(P_CnsldtnUnitAttribute : 'S-PARTNER') as _UnitAttributeValueT
+
+  association [1..1] to I_CnsldtnUnitPartner as _CnsldtnUnitPartner on $projection.ConsolidationUnitPartner = _CnsldtnUnitPartner.ConsolidationUnitPartner
+{
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key _UnitAttributeValueT.Language,
+
+  key cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitpartner preserving type ) as ConsolidationUnitPartner,
+
+      @Semantics.text
+      @Search: {
+        defaultSearchElement: true,
+        ranking: #LOW,
+        fuzzinessThreshold: 0.7
+      }
+      _UnitAttributeValueT.CnsldtnUnitAttribValText                                               as ConsolidationUnitPartnerText,
+
+      @Semantics.text
+      _UnitAttributeValueT.CnsldtnUnitAttribValLongText                                           as CnsldtnUnitPartnerLongText,
+
+
+      _UnitAttributeValueT._Language,
+      _CnsldtnUnitPartner
+}
+```

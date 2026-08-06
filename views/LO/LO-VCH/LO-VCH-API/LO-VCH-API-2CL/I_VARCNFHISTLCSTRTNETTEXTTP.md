@@ -1,0 +1,82 @@
+---
+name: I_VARCNFHISTLCSTRTNETTEXTTP
+description: Varcnfhistlcstrtnettexttp
+app_component: LO-VCH-API-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - LO
+  - LO-VCH
+  - LO-VCH-API
+  - interface-view
+  - transactional-processing
+  - text
+  - component:LO-VCH-API-2CL
+  - lob:Logistics General
+---
+# I_VARCNFHISTLCSTRTNETTEXTTP
+
+**Varcnfhistlcstrtnettexttp**
+
+| Property | Value |
+|---|---|
+| App Component | `LO-VCH-API-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `VarCnfConstraintNetName` | `VarCnfConstraintNetName` |
+| key `LanguageCode` | `LanguageCode` |
+| key `ChangeNumber` | `ChangeNumber` |
+| `VarCnfConstraintNetDescription` | `VarCnfConstraintNetDescription` |
+| `ValidityStartDate` | `ValidityStartDate` |
+| `ValidityEndDate` | `ValidityEndDate` |
+| `IsDeleted` | `IsDeleted` |
+| `_Text` | *Association* |
+| `_ConstraintNet` | *Association* |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'VC Historical Constraint Net - Text TP'
+@AccessControl.authorizationCheck:#MANDATORY
+@VDM.viewType: #TRANSACTIONAL
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.supportedCapabilities: [#TRANSACTIONAL_PROVIDER]
+@ObjectModel.modelingPattern: #TRANSACTIONAL_INTERFACE
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: {
+  usageType: {
+    dataClass: #MASTER,
+    serviceQuality: #A,
+    sizeCategory: #L
+  },
+  dataCategory: #TEXT
+}
+define view entity I_VarCnfHistlCstrtNetTextTP
+  as projection on R_VarCnfHistlCstrtNetTextTP
+{
+  key VarCnfConstraintNetName,
+      @Semantics.language: true
+  key LanguageCode,
+  key ChangeNumber,
+
+      @Semantics.text: true
+      VarCnfConstraintNetDescription,
+      ValidityStartDate,
+      ValidityEndDate,
+      IsDeleted,
+
+      /* Associations */
+      _Text          : redirected to parent I_VarCnfConstraintNetTextTP,
+      _ConstraintNet : redirected to I_VarCnfConstraintNetTP
+}
+```

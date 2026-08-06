@@ -1,0 +1,97 @@
+---
+name: I_SLSPRICINGPROCEDURE
+description: Slspricingprocedure
+app_component: SD-BF-PR-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-BF
+  - SD-BF-PR
+  - interface-view
+  - pricing
+  - component:SD-BF-PR-2CL
+  - lob:Sales & Distribution
+---
+# I_SLSPRICINGPROCEDURE
+
+**Slspricingprocedure**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-BF-PR-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `PricingProcedure` | `PricingProcedure` |
+| `ConditionUsage` | `ConditionUsage` |
+| `ConditionApplication` | `ConditionApplication` |
+| `InclusionPoint` | `InclusionPoint` |
+| `_SlsPricingProcedureItem` | *Association* |
+| `_ConditionUsage` | *Association* |
+| `_ConditionApplication` | *Association* |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SlsPricingProcedureItem` | `I_SlsPricingProcedureItem` | [0..*] |
+| `_ConditionUsage` | `I_ConditionUsage` | [1..1] |
+| `_ConditionApplication` | `I_ConditionApplication` | [1..1] |
+| `_Text` | `I_SlsPricingProcedureText` | [0..*] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'ISLSPRCGPROCED'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Pricing Procedure in Sales'
+@AbapCatalog.preserveKey:true 
+@AbapCatalog.compiler.compareFilter:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.representativeKey: 'PricingProcedure'
+@ObjectModel.supportedCapabilities:
+    [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.sapObjectNodeType.name: 'SalesPricingProcedure'
+//P_PricingProcedure: get Pricing Procedure from t683
+define view I_SlsPricingProcedure
+  as select from P_PricingProcedure as _Procedure
+  association [0..*] to I_SlsPricingProcedureItem   as _SlsPricingProcedureItem on  $projection.PricingProcedure     = _SlsPricingProcedureItem.PricingProcedure
+                                                                            //$projection.ConditionUsage       = _SlsPricingProcedureItem.ConditionUsage
+                                                                            //and $projection.ConditionApplication = _SlsPricingProcedureItem.ConditionApplication
+  association [1..1] to I_ConditionUsage          as _ConditionUsage       on  $projection.ConditionUsage = _ConditionUsage.ConditionUsage
+  association [1..1] to I_ConditionApplication    as _ConditionApplication on  $projection.ConditionApplication = _ConditionApplication.ConditionApplication
+  association [0..*] to I_SlsPricingProcedureText as _Text                 on  $projection.PricingProcedure     = _Text.PricingProcedure 
+                                                                            //$projection.ConditionUsage       = _Text.ConditionUsage
+                                                                            //and $projection.ConditionApplication = _Text.ConditionApplication
+                                                                           
+{
+       @ObjectModel.text.association: '_Text'
+  key  PricingProcedure,
+       @ObjectModel.foreignKey.association: '_ConditionUsage'
+       ConditionUsage,
+       @ObjectModel.foreignKey.association: '_ConditionApplication'
+       ConditionApplication,
+       _ConditionUsage,
+       _ConditionApplication,
+       _Text,
+       _SlsPricingProcedureItem,
+       InclusionPoint
+}where ConditionUsage = 'A'
+ and   ConditionApplication = 'V'
+```

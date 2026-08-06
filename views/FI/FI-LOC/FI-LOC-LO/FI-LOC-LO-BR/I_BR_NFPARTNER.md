@@ -1,0 +1,156 @@
+---
+name: I_BR_NFPARTNER
+description: BR Nfpartner
+app_component: FI-LOC-LO-BR
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-LOC
+  - FI-LOC-LO
+  - interface-view
+  - partner
+  - component:FI-LOC-LO-BR
+  - lob:Finance
+---
+# I_BR_NFPARTNER
+
+**BR Nfpartner**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-LOC-LO-BR` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `BR_NotaFiscal` | `NFPartner.docnum` |
+| key `BR_NFPartnerFunction` | `cast(NFPartner.parvw as logbr_parvw preserving type)` |
+| `BR_NFPartner` | `NFPartner.parid` |
+| `BR_NFPartnerTitle` | `cast(NFPartner.anred as logbr_anred preserving type)` |
+| `BR_NFPartnerName1` | `NFPartner.name1` |
+| `BR_NFPartnerName2` | `NFPartner.name2` |
+| `BR_NFPartnerName3` | `NFPartner.name3` |
+| `BR_NFPartnerName4` | `NFPartner.name4` |
+| `BR_NFPartnerType` | `cast(NFPartner.partyp as logbr_nfpartnertype preserving type)` |
+| `BR_NFPartnerStreetName` | `NFPartner.stras` |
+| `BR_NFPartnerCityName` | `NFPartner.ort01` |
+| `BR_NFPartnerRegionCode` | `NFPartner.regio` |
+| `BR_NFPartnerDistrictName` | `NFPartner.ort02` |
+| `BR_NFPartnerCountryCode` | `NFPartner.land1` |
+| `BR_NFPartnerPostalCode` | `NFPartner.pstlz` |
+| `BR_NFPartnerCFOPCategory` | `cast(NFPartner.indust as logbr_indus1 preserving type)` |
+| `BR_NFPartnerIsNaturalPerson` | `NFPartner.stkzn` |
+| `BR_NFPartnerCNPJ` | `cast(case when NFPartner.cgc > '99999999999999' then '00000000000000' else NFPartner.cgc end as logbr_cnpj_numc )` |
+| `BR_NFPartnerCNPJ_2` | `cast(NFPartner.cgc as logbr_cnpj preserving type)` |
+| `BR_NFPartnerCPF` | `cast(NFPartner.cpf as logbr_cpf preserving type)` |
+| `PhoneNumber` | `NFPartner.telf1` |
+| `BR_NFPartnerStateTaxNumber` | `NFPartner.stains` |
+| `BR_NFPartnerMunicipalTaxNumber` | `cast(NFPartner.munins as logbr_munins preserving type)` |
+| `TaxJurisdiction` | `cast(NFPartner.txjcd as logbr_txjcd preserving type)` |
+| `BR_CTeFiscalDocumentPartner` | `NFPartner.cte_partner` |
+| `BR_NFPartnerPlaceType` | `cast(NFPartner.partner_role as logbr_part_role preserving type )` |
+| `IsBusinessPurposeCompleted` | `case when _Supplier.IsBusinessPurposeCompleted = 'X' or _Customer.IsBusinessPurposeCompleted = 'X' then 'X' else '' end` |
+| `CountryShortName` | `_CountryText.CountryShortName` |
+| `_BR_NFPartnerType` | *Association* |
+| `_BR_PartnerPlaceType` | *Association* |
+| `_BR_CTeFiscalDocPartner` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BR_NFPartnerType` | `I_BR_NFPartnerType` | [0..1] |
+| `_BR_PartnerPlaceType` | `I_BR_PartnerPlaceType` | [0..1] |
+| `_BR_CTeFiscalDocPartner` | `I_BR_CTeFiscalDocPartner` | [0..1] |
+| `_Supplier` | `I_Supplier` | [0..1] |
+| `_Customer` | `I_Customer` | [0..1] |
+| `_CountryText` | `I_CountryText` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IBRNFPARTNER'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Brazil Nota Fiscal Partner'
+@VDM.viewType: #BASIC
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE,#CDS_MODELING_DATA_SOURCE]
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AccessControl.personalData.blocking: #REQUIRED
+@AbapCatalog.preserveKey:true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations: true
+
+define view I_BR_NFPartner
+  as select from j_1bnfnad as NFPartner
+  association [0..1] to I_BR_NFPartnerType       as _BR_NFPartnerType       on _BR_NFPartnerType.BR_NFPartnerType = $projection.BR_NFPartnerType
+  association [0..1] to I_BR_PartnerPlaceType    as _BR_PartnerPlaceType       on _BR_PartnerPlaceType.BR_NFPartnerPlaceType = $projection.BR_NFPartnerPlaceType
+  association [0..1] to I_BR_CTeFiscalDocPartner as _BR_CTeFiscalDocPartner on _BR_CTeFiscalDocPartner.BR_CTeFiscalDocumentPartner = $projection.BR_CTeFiscalDocumentPartner
+  association [0..1] to I_Supplier               as _Supplier               on _Supplier.Supplier = $projection.BR_NFPartner
+  association [0..1] to I_Customer               as _Customer               on _Customer.Customer = $projection.BR_NFPartner
+  association [0..1] to I_CountryText            as _CountryText            on  _CountryText.Country = $projection.BR_NFPartnerCountryCode
+                                                                            and _CountryText.Language = $session.system_language
+{
+  key NFPartner.docnum                                                 as BR_NotaFiscal,
+  key cast(NFPartner.parvw as logbr_parvw preserving type)             as BR_NFPartnerFunction,
+      NFPartner.parid                                                  as BR_NFPartner,
+      cast(NFPartner.anred as logbr_anred preserving type)             as BR_NFPartnerTitle,
+      NFPartner.name1                                                  as BR_NFPartnerName1,
+      NFPartner.name2                                                  as BR_NFPartnerName2,
+      NFPartner.name3                                                  as BR_NFPartnerName3,
+      NFPartner.name4                                                  as BR_NFPartnerName4,
+      @ObjectModel.foreignKey.association: '_BR_NFPartnerType'
+      cast(NFPartner.partyp as logbr_nfpartnertype preserving type)    as BR_NFPartnerType,
+      NFPartner.stras                                                  as BR_NFPartnerStreetName,
+      NFPartner.ort01                                                  as BR_NFPartnerCityName,
+      NFPartner.regio                                                  as BR_NFPartnerRegionCode,
+      NFPartner.ort02                                                  as BR_NFPartnerDistrictName,
+      NFPartner.land1                                                  as BR_NFPartnerCountryCode,
+      NFPartner.pstlz                                                  as BR_NFPartnerPostalCode,
+      cast(NFPartner.indust as logbr_indus1 preserving type)           as BR_NFPartnerCFOPCategory,
+      @Semantics.booleanIndicator: true
+      NFPartner.stkzn                                                  as BR_NFPartnerIsNaturalPerson,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: 'BR_NFPartnerCNPJ_2'
+      @API.element.decommissioningPlannedForYearMonth: '2026-07'
+      cast(case
+        when NFPartner.cgc > '99999999999999'
+          then '00000000000000'
+        else NFPartner.cgc end as logbr_cnpj_numc )                    as BR_NFPartnerCNPJ,      
+      cast(NFPartner.cgc as logbr_cnpj preserving type)                as BR_NFPartnerCNPJ_2,
+      cast(NFPartner.cpf as logbr_cpf preserving type)                 as BR_NFPartnerCPF,
+      NFPartner.telf1                                                  as PhoneNumber,
+      NFPartner.stains                                                 as BR_NFPartnerStateTaxNumber,
+      cast(NFPartner.munins as logbr_munins preserving type)           as BR_NFPartnerMunicipalTaxNumber,
+      cast(NFPartner.txjcd as logbr_txjcd preserving type)             as TaxJurisdiction,
+      NFPartner.cte_partner                                            as BR_CTeFiscalDocumentPartner,
+      cast(NFPartner.partner_role as logbr_part_role preserving type ) as BR_NFPartnerPlaceType,
+
+      @Semantics.booleanIndicator: true
+      case
+        when _Supplier.IsBusinessPurposeCompleted = 'X' or
+             _Customer.IsBusinessPurposeCompleted = 'X'
+        then 'X'
+        else ''
+      end                                                              as IsBusinessPurposeCompleted,
+
+      _BR_NFPartnerType,
+      _BR_PartnerPlaceType,
+      _BR_CTeFiscalDocPartner,
+      _CountryText.CountryShortName
+
+
+
+}
+```

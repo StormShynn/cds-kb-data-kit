@@ -1,0 +1,71 @@
+---
+name: I_CONTROLLINGAREASTDVH
+description: Controllingareastdvh
+app_component: FI-GL-IS-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-GL
+  - FI-GL-IS
+  - interface-view
+  - value-help
+  - standard-value-help
+  - component:FI-GL-IS-2CL
+  - lob:Finance
+---
+# I_CONTROLLINGAREASTDVH
+
+**Controllingareastdvh**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-GL-IS-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ControllingArea` | `I_ControllingArea.ControllingArea` |
+| `ControllingAreaName` | `I_ControllingArea.ControllingAreaName` |
+
+## Source Code
+
+```abap
+@VDM.viewType: #COMPOSITE
+
+@ObjectModel.dataCategory: #VALUE_HELP
+@Analytics.technicalName: 'IFICA__VH'
+@ObjectModel.representativeKey: 'ControllingArea'
+
+@ObjectModel.modelingPattern: #VALUE_HELP_PROVIDER
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #VALUE_HELP_PROVIDER ]
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@Search.searchable: true
+@Consumption.ranked: true
+@Metadata.ignorePropagatedAnnotations: true
+
+@EndUserText.label: 'Controlling Area'
+define view entity I_ControllingAreaStdVH as select from I_ControllingArea as I_ControllingArea {
+  @Search.defaultSearchElement: true
+  @Search.ranking: #HIGH
+  @ObjectModel.text.element: ['ControllingAreaName']
+  key I_ControllingArea.ControllingArea,
+  @Search.defaultSearchElement: true
+  @Search.ranking: #LOW
+  @Semantics.text:true
+  I_ControllingArea.ControllingAreaName
+  
+}
+```

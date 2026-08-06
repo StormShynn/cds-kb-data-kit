@@ -1,0 +1,109 @@
+---
+name: I_SRVCDOCLIFECYCLESTATUS
+description: Srvcdoclifecyclestatus
+app_component: CRM-S4-REP-RFW
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CRM
+  - interface-view
+  - status
+  - component:CRM-S4-REP-RFW
+  - lob:Other
+---
+# I_SRVCDOCLIFECYCLESTATUS
+
+**Srvcdoclifecyclestatus**
+
+| Property | Value |
+|---|---|
+| App Component | `CRM-S4-REP-RFW` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ServiceDocumentStatus` | `cast(CustMgmtLifecycleUserStatus as crms4_stat_lifecycle preserving type )` |
+| `_ServiceDocumentStatusText` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ServiceDocumentStatusText` | `I_SrvcDocLifecycleStatusText` | [1..*] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Service Transaction Life Cycle Status'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog: {
+  sqlViewName: 'ISRVDOCLFCSTAT',
+  compiler.compareFilter: true,
+  preserveKey: true
+}
+@VDM: {
+  viewType: #COMPOSITE,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel.dataCategory: #VALUE_HELP
+@ObjectModel: {
+   representativeKey     : 'ServiceDocumentStatus',
+   sapObjectNodeType.name: 'ServiceDocumentStatus',
+   usageType: {
+     dataClass:      #CUSTOMIZING,
+     serviceQuality: #B,
+     sizeCategory:   #M
+   },
+   resultSet.sizeCategory:#XS,
+   supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, 
+                           #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #VALUE_HELP_PROVIDER, #EXTRACTION_DATA_SOURCE]
+}
+@Analytics: {
+      dataCategory: #DIMENSION,
+      internalName:#LOCAL,
+      dataExtraction.enabled: true
+}
+@Consumption.ranked: true
+@Search.searchable: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #NONE
+
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK", "CALCULATED_FIELD_CHECK" ] }*/
+
+define view I_SrvcDocLifecycleStatus
+  as select from I_CustMgmtLifecycleUserStatus
+
+  association [1..*] to I_SrvcDocLifecycleStatusText as _ServiceDocumentStatusText on $projection.ServiceDocumentStatus = _ServiceDocumentStatusText.ServiceDocumentStatus
+
+{
+      @ObjectModel.text.association: '_ServiceDocumentStatusText'
+      @Search: { ranking: #HIGH, fuzzinessThreshold: 0.8 }
+      @Search.defaultSearchElement: true
+  key cast(CustMgmtLifecycleUserStatus as crms4_stat_lifecycle preserving type ) as ServiceDocumentStatus,
+
+      _ServiceDocumentStatusText
+}
+
+union select from I_SrvcLifeCycleSystemStatus
+
+association [1..*] to I_SrvcDocLifecycleStatusText as _ServiceDocumentStatusText on $projection.ServiceDocumentStatus = _ServiceDocumentStatusText.ServiceDocumentStatus
+{
+      $session.client                                                           as mandt,
+      @ObjectModel.text.association: '_ServiceDocumentStatusText'
+      @Search: { ranking: #HIGH, fuzzinessThreshold: 0.8 }
+      @Search.defaultSearchElement: true
+  key cast(SrvcLifeCycleSystemStatus as  crms4_stat_lifecycle preserving type ) as ServiceDocumentStatus,
+
+      _ServiceDocumentStatusText
+
+}
+```

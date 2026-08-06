@@ -1,0 +1,94 @@
+---
+name: I_EXCHRATEQTANTYPERAWDATA
+description: Exchrateqtantyperawdata
+app_component: BC-SRV-BSF-CUR-2CL
+software_component: SAP_BASIS
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - BC
+  - BC-SRV
+  - BC-SRV-BSF
+  - interface-view
+  - component:BC-SRV-BSF-CUR-2CL
+  - lob:Basis Components
+---
+# I_EXCHRATEQTANTYPERAWDATA
+
+**Exchrateqtantyperawdata**
+
+| Property | Value |
+|---|---|
+| App Component | `BC-SRV-BSF-CUR-2CL` |
+| Software Component | `SAP_BASIS` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `SourceCurrency` | `fcurr` |
+| key `TargetCurrency` | `tcurr` |
+| key `ValidityStartDate` | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |
+| `CurrencyQuotationType` | `notation` |
+| `_SourceCurrency` | *Association* |
+| `_TargetCurrency` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SourceCurrency` | `I_Currency` | [0..1] |
+| `_TargetCurrency` | `I_Currency` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IFICURRQUOTRAW'
+@EndUserText.label: 'Exchange Rate Quotation Type'
+
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations: true 
+@ClientHandling.type: #INHERITED 
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #CUSTOMIZING 
+
+@AbapCatalog.buffering.status: #ACTIVE        
+@AbapCatalog.buffering.type: #FULL
+//@AbapCatalog.buffering.numberOfKeyFields: 4
+@Analytics.internalName: #LOCAL  
+
+//@ObjectModel.representativeKey: ['ValidityStartDate']
+@Analytics:{
+//    dataCategory: #DIMENSION,
+    dataExtraction: { enabled: true } }
+
+define view I_ExchRateQtanTypeRawData as select from tcurn 
+association [0..1] to I_Currency  as _SourceCurrency on $projection.SourceCurrency = _SourceCurrency.Currency
+association [0..1] to I_Currency  as _TargetCurrency on $projection.TargetCurrency = _TargetCurrency.Currency
+{
+    //TCURN 
+       @ObjectModel.foreignKey.association:'_SourceCurrency'
+    key fcurr as SourceCurrency, 
+       @ObjectModel.foreignKey.association:'_TargetCurrency'
+    key tcurr as TargetCurrency, 
+    //key cast ( gdatu as fis_datbi  ) as ValidityStartDate, 
+    key case gdatu
+    when '' then cast('00000000' as abap.dats) 
+    else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats)  
+    end as ValidityStartDate,     
+    notation as CurrencyQuotationType,
+    _SourceCurrency,
+    _TargetCurrency   
+}
+```

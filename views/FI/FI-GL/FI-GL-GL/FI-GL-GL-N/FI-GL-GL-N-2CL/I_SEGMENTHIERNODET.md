@@ -1,0 +1,96 @@
+---
+name: I_SEGMENTHIERNODET
+description: Segmenthiernodet
+app_component: FI-GL-GL-N-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-GL
+  - FI-GL-GL
+  - interface-view
+  - component:FI-GL-GL-N-2CL
+  - lob:Finance
+---
+# I_SEGMENTHIERNODET
+
+**Segmenthiernodet**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-GL-GL-N-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `SegmentHierarchy` | `cast(hrrp_nodet_n.hryid as fis_hryid_segment preserving type )` |
+| key `HierarchyNode` | `hrrp_nodet_n.hrynode` |
+| key `ValidityEndDate` | `cast (hrrp_nodet_n.hryvalto as fis_datbi preserving type )` |
+| key `Language` | `hrrp_nodet_n.spras` |
+| `HierarchyNodeText` | `hrrp_nodet_n.nodetxt` |
+| `ValidityStartDate` | `cast (hrrp_nodet_n.hryvalfrom as fis_datab preserving type )` |
+| `_Language` | *Association* |
+| `_Hierarchy` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_Hierarchy` | `I_SegmentHierarchy` | [1..*] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Segment Hierarchy Node - Text'
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'HierarchyNode'
+@Analytics: {dataExtraction.enabled: true}
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IFISEGMENTHNT'
+@AccessControl.authorizationCheck: #CHECK
+@Metadata.ignorePropagatedAnnotations:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #LANGUAGE_DEPENDENT_TEXT, #EXTRACTION_DATA_SOURCE]
+@AbapCatalog.compiler.compareFilter:true
+@AbapCatalog.preserveKey:true
+@ObjectModel.usageType: {
+  dataClass: #MASTER,
+  serviceQuality: #A,
+  sizeCategory: #XL
+}
+@ObjectModel.sapObjectNodeType.name:'SegmentHierarchyNodeText'
+
+define view I_SegmentHierNodeT
+  as select from hrrp_nodet_n
+
+  association [0..1] to I_Language         as _Language  on $projection.Language = _Language.Language
+
+  association [1..*] to I_SegmentHierarchy as _Hierarchy on $projection.SegmentHierarchy = _Hierarchy.SegmentHierarchy
+
+{
+      @ObjectModel.foreignKey.association: '_Hierarchy'
+  key cast(hrrp_nodet_n.hryid as fis_hryid_segment preserving type ) as SegmentHierarchy,
+  key hrrp_nodet_n.hrynode                                           as HierarchyNode,
+      @Semantics.businessDate.to: true
+  key cast (hrrp_nodet_n.hryvalto as fis_datbi preserving type )     as ValidityEndDate,
+      @Semantics.language: true
+  key hrrp_nodet_n.spras                                             as Language,
+      @Semantics.text: true
+      hrrp_nodet_n.nodetxt                                           as HierarchyNodeText,
+      @Semantics.businessDate.from: true
+      cast (hrrp_nodet_n.hryvalfrom as fis_datab preserving type )   as ValidityStartDate,
+      _Language,
+      _Hierarchy
+
+}
+where
+  hrrp_nodet_n.hrytyp = 'GL01';
+```

@@ -1,0 +1,97 @@
+---
+name: I_JVAINFORECORDATTACHLINK
+description: Jvainforecordattachlink
+app_component: CA-JVA-JVA
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CA
+  - CA-JVA
+  - CA-JVA-JVA
+  - interface-view
+  - component:CA-JVA-JVA
+  - lob:Cross-Application Components
+---
+# I_JVAINFORECORDATTACHLINK
+
+**Jvainforecordattachlink**
+
+| Property | Value |
+|---|---|
+| App Component | `CA-JVA-JVA` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| `}` | `entity: { name: 'I_JointVentureCompanyCodeVH', element: 'CompanyCode' }` |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IRECFILELNK'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #MANDATORY
+@VDM.viewType: #COMPOSITE
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@EndUserText.label: 'JVABILLING Attachment Service'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel: { sapObjectNodeType.name: 'JVABillingDocument',
+                usageType: { sizeCategory: #M,
+                             dataClass:  #MIXED,
+                             serviceQuality: #C },
+                supportedCapabilities: [#CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ] }
+define view I_JVAInfoRecordAttachLink
+  with parameters
+    @Consumption.valueHelpDefinition: [ 
+              { entity:  { name:    'I_JointVentureCompanyCodeVH',
+                           element: 'CompanyCode' }
+              }]
+    P_CompanyCode  : bukrs,
+    P_FiscalYear   : gjahr,
+    P_FiscalPeriod : poper
+  as select from I_JVABillingFileLink           as JVFile
+    join         I_DocumentInfoRecordObjectLink as _DirObjectLinks on JVFile.ObjectKey = _DirObjectLinks.LinkedSAPObjectKey
+    join         I_DocumentInfoRecordAttachment as _DirOriginals   on  _DirObjectLinks.DocumentInfoRecordDocType    = _DirOriginals.DocumentInfoRecordDocType
+                                                                   and _DirObjectLinks.DocumentInfoRecordDocNumber  = _DirOriginals.DocumentInfoRecordDocNumber
+                                                                   and _DirObjectLinks.DocumentInfoRecordDocPart    = _DirOriginals.DocumentInfoRecordDocPart
+                                                                   and _DirObjectLinks.DocumentInfoRecordDocVersion = _DirOriginals.DocumentInfoRecordDocVersion
+
+{
+  @Consumption.valueHelpDefinition: [ 
+             { entity:  { name:    'I_JointVentureCompanyCodeVH',
+                           element: 'CompanyCode' }
+              }]
+  key JVFile.CompanyCode         as CompanyCode,
+  key JVFile.FiscalYear          as FiscalYear,
+  key JVFile.FiscalPeriod        as FiscalPeriod,
+  @Consumption.valueHelpDefinition: [ 
+              { entity:  { name:    'I_JointVenturePartnerValueHelp',
+                           element: 'JointVenturePartner' }
+              }]  
+  key JVFile.JointVenturePartner as JointVenturePartner,
+  key JVFile.CreationDate        as CreationDate,
+  key JVFile.ObjectKey           as LinkedSAPObjectKey,
+  key JVFile.JVABillingFileType  as JVABillingFileType,
+      _DirObjectLinks.DocumentInfoRecordDocType,
+      _DirObjectLinks.DocumentInfoRecordDocNumber,
+      _DirObjectLinks.DocumentInfoRecordDocPart,
+      _DirObjectLinks.DocumentInfoRecordDocVersion,
+      _DirObjectLinks.LinkedSAPObject,
+      _DirOriginals.LogicalDocument,
+      _DirOriginals.PhysicalDocument,
+      _DirOriginals.WorkstationApplication
+}
+where
+      JVFile.CompanyCode              = $parameters.P_CompanyCode
+  and JVFile.FiscalYear               = $parameters.P_FiscalYear
+  and JVFile.FiscalPeriod             = $parameters.P_FiscalPeriod
+  and _DirObjectLinks.LinkedSAPObject = 'JVABILL'
+```

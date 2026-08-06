@@ -1,0 +1,96 @@
+---
+name: I_SERIALNOEXPLICITNESSLEVEL
+description: Serialnoexplicitnesslevel
+app_component: LO-MD-SN-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - LO
+  - LO-MD
+  - LO-MD-SN
+  - interface-view
+  - component:LO-MD-SN-2CL
+  - lob:Logistics General
+---
+# I_SERIALNOEXPLICITNESSLEVEL
+
+**Serialnoexplicitnesslevel**
+
+| Property | Value |
+|---|---|
+| App Component | `LO-MD-SN-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `SerialNoExplicitnessLevel` | `cast(substring(domvalue_l, 1, 1) as serialnoexplicitnesslevel preserving type )` |
+| `DomainValue` | `dd07l.domvalue_l` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_SerialNoExplicitnessLevelTxt` | [0..*] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Level of Explicitness for Serial Number'
+
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics: {
+              internalName: #LOCAL
+            }
+@Consumption.ranked: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: { 
+                dataCategory: #VALUE_HELP,
+                modelingPattern: #ANALYTICAL_DIMENSION,
+                representativeKey: 'SerialNoExplicitnessLevel',
+                resultSet.sizeCategory: #XS,
+                sapObjectNodeType.name: 'SerialNumberExplicitnessLevel', 
+                supportedCapabilities: [#ANALYTICAL_DIMENSION,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #SEARCHABLE_ENTITY,
+                                        #SQL_DATA_SOURCE,
+                                        #VALUE_HELP_PROVIDER],
+                usageType: { dataClass: #META, 
+                             serviceQuality: #A, 
+                             sizeCategory: #S }
+              }
+@Search.searchable: true
+@VDM: {
+        lifecycle.contract.type: #PUBLIC_LOCAL_API,
+        viewType: #BASIC 
+      }
+
+ /*+[hideWarning] { "IDS" : [ "CALCULATED_FIELD_CHECK" ] } */        
+define view entity I_SerialNoExplicitnessLevel 
+  as select from dd07l 
+  association [0..*] to I_SerialNoExplicitnessLevelTxt as _Text on $projection.SerialNoExplicitnessLevel = _Text.SerialNoExplicitnessLevel
+
+{
+  @ObjectModel.text.association: '_Text'
+  key cast(substring(domvalue_l, 1, 1) as serialnoexplicitnesslevel preserving type ) as SerialNoExplicitnessLevel,
+
+     @Analytics.hidden: true
+     @Consumption.hidden: true
+     @Search.defaultSearchElement: true
+     @Search.ranking: #HIGH
+      dd07l.domvalue_l as DomainValue,
+     _Text
+    
+}
+where domname  = 'SERLV'
+  and as4local = 'A'
+  and as4vers  = '0000';
+```

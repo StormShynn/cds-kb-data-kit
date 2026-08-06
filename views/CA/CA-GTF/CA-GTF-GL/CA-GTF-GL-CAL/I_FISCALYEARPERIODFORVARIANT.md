@@ -1,0 +1,134 @@
+---
+name: I_FISCALYEARPERIODFORVARIANT
+description: Fiscalyearperiodforvariant
+app_component: CA-GTF-GL-CAL
+software_component: SAP_BASIS
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CA
+  - CA-GTF
+  - CA-GTF-GL
+  - interface-view
+  - component:CA-GTF-GL-CAL
+  - lob:Cross-Application Components
+---
+# I_FISCALYEARPERIODFORVARIANT
+
+**Fiscalyearperiodforvariant**
+
+| Property | Value |
+|---|---|
+| App Component | `CA-GTF-GL-CAL` |
+| Software Component | `SAP_BASIS` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `FiscalYearVariant` | `P_FiscalYearPeriod.fiscal_year_variant` |
+| key `FiscalYearPeriod` | `P_FiscalYearPeriod.fiscal_year_period` |
+| `FiscalYear` | `P_FiscalYearPeriod.fiscal_year` |
+| `FiscalPeriod` | `P_FiscalYearPeriod.fiscal_period` |
+| `FiscalPeriodStartDate` | `P_FiscalYearPeriod.fiscal_period_start_date` |
+| `FiscalPeriodEndDate` | `P_FiscalYearPeriod.fiscal_period_end_date` |
+| `IsSpecialPeriod` | `P_FiscalYearPeriod.is_special_period` |
+| `FiscalYearStartDate` | `P_FiscalYearPeriod.fiscal_year_start_date` |
+| `FiscalYearEndDate` | `P_FiscalYearPeriod.fiscal_year_end_date` |
+| `NextFiscalPeriod` | `P_FiscalYearPeriod.next_fiscal_period` |
+| `NextFiscalPeriodFiscalYear` | `P_FiscalYearPeriod.next_fiscal_period_fiscal_year` |
+| `_FiscalYearVariant` | *Association* |
+| `_FiscalPeriodStartDate` | *Association* |
+| `_FiscalYear` | *Association* |
+| `_FiscalPeriod` | *Association* |
+| `_Text` | *Association* |
+| `_FiscalYearForVariant` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_FiscalYearVariant` | `I_FiscalYearVariant` | [0..1] |
+| `_FiscalPeriodStartDate` | `I_CalendarDate` | [0..1] |
+| `_FiscalYear` | `I_FiscalYearForVariant` | [0..1] |
+| `_FiscalPeriod` | `I_FiscalPeriodForVariant` | [0..1] |
+| `_Text` | `I_FiscalYearPeriodText` | [0..*] |
+| `_FiscalYearForVariant` | `I_FiscalYearForVariant` | [0..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Fiscal Year Period For Fiscal Year Variant'
+
+@Metadata.ignorePropagatedAnnotations: true
+@VDM.viewType: #BASIC
+
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #L
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@Analytics.dataExtraction.enabled:true
+
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel.representativeKey: 'FiscalYearPeriod'
+@Analytics.technicalName: 'IFIFYEARPERDFYV'
+@Analytics: { dataCategory: #DIMENSION }
+
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE]
+
+define view entity I_FiscalYearPeriodForVariant as select from P_FiscalYearPeriod 
+
+association [0..1] to I_FiscalYearVariant      as _FiscalYearVariant     on  $projection.FiscalYearVariant     = _FiscalYearVariant.FiscalYearVariant
+association [0..1] to I_CalendarDate           as _FiscalPeriodStartDate on  $projection.FiscalPeriodStartDate = _FiscalPeriodStartDate.CalendarDate
+association [0..1] to I_FiscalYearForVariant   as _FiscalYear            on  $projection.FiscalYearVariant     = _FiscalYear.FiscalYearVariant
+                                                                         and $projection.FiscalYear            = _FiscalYear.FiscalYear
+association [0..1] to I_FiscalPeriodForVariant as _FiscalPeriod          on  $projection.FiscalYearVariant     = _FiscalPeriod.FiscalYearVariant
+                                                                         and $projection.FiscalYear            = _FiscalPeriod.FiscalYear
+                                                                         and $projection.FiscalPeriod          = _FiscalPeriod.FiscalPeriod
+association [0..*] to I_FiscalYearPeriodText   as _Text                  on  $projection.FiscalYearVariant     = _Text.FiscalYearVariant
+                                                                         and $projection.FiscalYear            = _Text.FiscalYear
+                                                                         and $projection.FiscalPeriod          = _Text.FiscalPeriod
+
+association [0..1] to I_FiscalYearForVariant   as _FiscalYearForVariant  on  $projection.FiscalYearVariant     = _FiscalYearForVariant.FiscalYearVariant
+                                                                         and $projection.FiscalYear            = _FiscalYearForVariant.FiscalYear
+
+{
+ 
+@ObjectModel.foreignKey.association: '_FiscalYearVariant'     
+//@Semantics.fiscal.yearVariant: true     
+key P_FiscalYearPeriod.fiscal_year_variant            as FiscalYearVariant,
+key P_FiscalYearPeriod.fiscal_year_period             as FiscalYearPeriod,
+
+//@ObjectModel.foreignKey.association: '_FiscalYear'      
+@ObjectModel.foreignKey.association: '_FiscalYearForVariant'      
+    P_FiscalYearPeriod.fiscal_year                    as FiscalYear,
+@ObjectModel.text.association: '_Text'
+//@ObjectModel.foreignKey.association: '_FiscalPeriod'   
+    P_FiscalYearPeriod.fiscal_period                  as FiscalPeriod,
+
+//@ObjectModel.foreignKey.association: '_FiscalPeriodStartDate'      
+    P_FiscalYearPeriod.fiscal_period_start_date       as FiscalPeriodStartDate,
+    P_FiscalYearPeriod.fiscal_period_end_date         as FiscalPeriodEndDate,
+    
+    P_FiscalYearPeriod.is_special_period              as IsSpecialPeriod,
+    
+    P_FiscalYearPeriod.fiscal_year_start_date         as FiscalYearStartDate,
+    P_FiscalYearPeriod.fiscal_year_end_date           as FiscalYearEndDate,
+       
+    P_FiscalYearPeriod.next_fiscal_period             as NextFiscalPeriod,
+    P_FiscalYearPeriod.next_fiscal_period_fiscal_year as NextFiscalPeriodFiscalYear,
+    
+    
+    _FiscalYearVariant, 
+    _FiscalPeriodStartDate,
+    _FiscalYear,
+    _FiscalPeriod,
+    _Text, 
+    _FiscalYearForVariant
+           
+}
+```

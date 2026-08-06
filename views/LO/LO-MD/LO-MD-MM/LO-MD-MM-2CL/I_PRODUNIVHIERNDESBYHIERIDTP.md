@@ -1,0 +1,77 @@
+---
+name: I_PRODUNIVHIERNDESBYHIERIDTP
+description: Produnivhierndesbyhieridtp
+app_component: LO-MD-MM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - LO
+  - LO-MD
+  - LO-MD-MM
+  - interface-view
+  - transactional-processing
+  - component:LO-MD-MM-2CL
+  - lob:Logistics General
+---
+# I_PRODUNIVHIERNDESBYHIERIDTP
+
+**Produnivhierndesbyhieridtp**
+
+| Property | Value |
+|---|---|
+| App Component | `LO-MD-MM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ProdUnivHierarchy` | `ProdUnivHierarchy` |
+| key `HierarchyNode` | `HierarchyNode` |
+| key `ProdHierarchyValidityEndDate` | `ProdHierarchyValidityEndDate` |
+| `ProdHierarchyValidityStartDate` | `ProdHierarchyValidityStartDate` |
+| `ParentNode` | `ParentNode` |
+| `NodeType` | `NodeType` |
+| `ProdUnivHierarchyNode` | `ProdUnivHierarchyNode` |
+| `_ProdUniversalHierarchy` | *Association* |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Product Universal Hierarchy Nodes - TP'
+@VDM: {
+  viewType: #TRANSACTIONAL,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@ObjectModel: {
+    usageType.serviceQuality: #A,
+    usageType.sizeCategory : #XL,
+    usageType.dataClass: #MASTER,
+    supportedCapabilities: [#TRANSACTIONAL_PROVIDER],
+    modelingPattern: #TRANSACTIONAL_INTERFACE
+}
+@Metadata.ignorePropagatedAnnotations: true
+
+define view entity I_ProdUnivHierNdesByHierIDTP 
+  as projection on R_ProdUnivHierNodesByHierIDTP 
+  
+  {
+   key ProdUnivHierarchy,
+   key HierarchyNode,  
+       @Semantics.businessDate.to: true
+   key ProdHierarchyValidityEndDate,
+       @Semantics.businessDate.from: true
+       ProdHierarchyValidityStartDate,
+       ParentNode,
+       NodeType,
+       ProdUnivHierarchyNode,
+       _ProdUniversalHierarchy : redirected to parent I_ProdUniversalHierarchyTP
+      
+   }
+```

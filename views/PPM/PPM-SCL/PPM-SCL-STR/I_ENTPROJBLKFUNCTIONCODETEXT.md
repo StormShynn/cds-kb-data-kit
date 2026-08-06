@@ -1,0 +1,95 @@
+---
+name: I_ENTPROJBLKFUNCTIONCODETEXT
+description: Entprojblkfunctioncodetext
+app_component: PPM-SCL-STR
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PPM
+  - PPM-SCL
+  - PPM-SCL-STR
+  - interface-view
+  - text-view
+  - text
+  - component:PPM-SCL-STR
+  - lob:Other
+---
+# I_ENTPROJBLKFUNCTIONCODETEXT
+
+**Entprojblkfunctioncodetext**
+
+| Property | Value |
+|---|---|
+| App Component | `PPM-SCL-STR` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
+| key `EnterpriseProjectBlockFunction` | `cast( dd07t.domvalue_l as entobj_function_id )` |
+| `DomainValueLow` | `dd07t.domvalue_l` |
+| `EntProjectBlockFunctionText` | `dd07t.ddtext` |
+| `_Language` | *Association* |
+| `_EntProjectBlockFunction` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel:{ representativeKey: 'EnterpriseProjectBlockFunction', 
+               dataCategory: #TEXT,
+               usageType: {
+               serviceQuality: #A,
+               sizeCategory:   #S,
+               dataClass:      #CUSTOMIZING},
+               supportedCapabilities: [#SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET,  #EXTRACTION_DATA_SOURCE, #LANGUAGE_DEPENDENT_TEXT, #SEARCHABLE_ENTITY]}
+               
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics: {
+  dataExtraction: {
+    enabled: true
+  }
+}
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #BASIC
+@Search.searchable: true
+@EndUserText.label: 'Blockable Function for Ent Projects - Text'
+define view entity I_EntProjBlkFunctionCodeText as select from dd07t
+  association to parent I_EntProjBlkFunctionCode as _EntProjectBlockFunction
+    on $projection.EnterpriseProjectBlockFunction = _EntProjectBlockFunction.EnterpriseProjectBlockFunction 
+  association [0..1] to I_Language as _Language      
+    on $projection.Language = _Language.Language
+{
+  @ObjectModel.foreignKey.association: '_Language'
+  @Semantics.language: true
+  key cast( dd07t.ddlanguage as spras preserving type ) as Language, 
+//  @ObjectModel.foreignKey.association: '_EnterpriseProjectBlockFunction'
+  @ObjectModel.text.element: ['EntProjectBlockFunctionText']
+  key cast( dd07t.domvalue_l as entobj_function_id ) as EnterpriseProjectBlockFunction,
+   @Analytics.hidden: true
+   @Consumption.hidden: true
+   dd07t.domvalue_l as DomainValueLow,
+   @Search.defaultSearchElement: true
+   @Search.fuzzinessThreshold: 0.8
+   @Search.ranking: #LOW
+   @Semantics.text: true
+   dd07t.ddtext as EntProjectBlockFunctionText,
+  _Language,
+  _EntProjectBlockFunction
+  
+}
+where dd07t.domname = 'FCO_ACAS_BTTYPE_GROUP'
+```

@@ -1,0 +1,71 @@
+---
+name: I_TEXTOBJECTCATEGORY
+description: Textobjectcategory
+app_component: CA-GTF-VDM
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CA
+  - CA-GTF
+  - CA-GTF-VDM
+  - interface-view
+  - text
+  - component:CA-GTF-VDM
+  - lob:Cross-Application Components
+---
+# I_TEXTOBJECTCATEGORY
+
+**Textobjectcategory**
+
+| Property | Value |
+|---|---|
+| App Component | `CA-GTF-VDM` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `TextObjectCategory` | `ttxob.tdobject` |
+| `_TextObjectCategoryText` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TextObjectCategoryText` | `I_TextObjectCategoryText` | [0..*] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.representativeKey: 'TextObjectCategory'
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.sizeCategory: #M 
+@AbapCatalog.sqlViewName: 'ITEXTOBJECTCAT'
+@EndUserText.label: 'Text Object Category'
+@Analytics : {dataCategory: #DIMENSION, dataExtraction.enabled : true}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@Metadata.ignorePropagatedAnnotations:true
+@AbapCatalog.preserveKey:true
+@AbapCatalog.compiler.compareFilter:true
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+
+
+define view I_TextObjectCategory as select from ttxob  
+association [0..*] to I_TextObjectCategoryText as _TextObjectCategoryText on 
+    $projection.TextObjectCategory = _TextObjectCategoryText.TextObjectCategory
+{
+  @ObjectModel.text.association: '_TextObjectCategoryText'
+  key ttxob.tdobject as TextObjectCategory , 
+  
+  _TextObjectCategoryText 
+}
+```

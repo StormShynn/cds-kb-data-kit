@@ -1,0 +1,96 @@
+---
+name: I_CUSTMGMTBUSOBJTYPETEXT
+description: Custmgmtbusobjtypetext
+app_component: CRM-S4-REP-RFW
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CRM
+  - interface-view
+  - text-view
+  - text
+  - component:CRM-S4-REP-RFW
+  - lob:Other
+---
+# I_CUSTMGMTBUSOBJTYPETEXT
+
+**Custmgmtbusobjtypetext**
+
+| Property | Value |
+|---|---|
+| App Component | `CRM-S4-REP-RFW` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `BusinessObjectType` | `subobj_category` |
+| key `Language` | `langu` |
+| `BusinessObjectTypeName` | `s_description_20` |
+| `BusinessObjectTypeDescription` | `s_description` |
+| `_Language` | *Association* |
+| `_BusinessObjectType` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_BusinessObjectType` | `I_CustMgmtBusObjType` | [1..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Bus Obj Type of Srvc Transaction - Text'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog: {
+  sqlViewName: 'ICUSTMGTBOTYPTXT',
+  compiler.compareFilter: true,
+  preserveKey: true
+}
+@VDM: {
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+
+@ObjectModel: {
+   dataCategory: #TEXT,
+   representativeKey: 'BusinessObjectType',
+   usageType: {
+     dataClass:      #CUSTOMIZING,
+     serviceQuality: #D,
+     sizeCategory:   #S
+   },
+   supportedCapabilities: [#LANGUAGE_DEPENDENT_TEXT, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE],
+   modelingPattern: #LANGUAGE_DEPENDENT_TEXT
+}
+
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@Analytics.dataExtraction.enabled: true
+//@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations: true
+
+define view I_CustMgmtBusObjTypeText
+  as select from crmc_subob_cat_t
+  association [0..1] to I_Language           as _Language           on $projection.Language = _Language.Language
+  association [1..1] to I_CustMgmtBusObjType as _BusinessObjectType on $projection.BusinessObjectType = _BusinessObjectType.BusinessObjectType
+{
+      @ObjectModel.foreignKey.association: '_BusinessObjectType'
+  key subobj_category  as BusinessObjectType,
+      @Semantics.language: true
+  key langu            as Language,
+      @Semantics.text: true
+      s_description_20 as BusinessObjectTypeName,
+      @Semantics.text: true
+      s_description    as BusinessObjectTypeDescription,
+      _BusinessObjectType,
+      _Language
+}
+```

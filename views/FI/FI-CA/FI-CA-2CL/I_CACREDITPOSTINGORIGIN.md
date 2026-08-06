@@ -1,0 +1,77 @@
+---
+name: I_CACREDITPOSTINGORIGIN
+description: Cacreditpostingorigin
+app_component: FI-CA-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-CA
+  - interface-view
+  - credit
+  - component:FI-CA-2CL
+  - lob:Finance
+---
+# I_CACREDITPOSTINGORIGIN
+
+**Cacreditpostingorigin**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-CA-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `OriginalSourceOfCredit` | `cast( left( dd07l.domvalue_l, 1 ) as orig_credit_kk preserving type )` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_CACreditPostingOriginText` | [1..*] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@EndUserText.label: 'Credit Posting Origin'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: { modelingPattern: #NONE,
+                representativeKey: 'OriginalSourceOfCredit',
+                sapObjectNodeType.name: 'ContrAcctgCreditPostingOrigin',
+                supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #CDS_MODELING_DATA_SOURCE,
+                                         #SQL_DATA_SOURCE ],
+                usageType: { dataClass: #CUSTOMIZING,
+                             serviceQuality: #A,
+                             sizeCategory: #S } }
+
+@VDM.viewType: #BASIC
+
+define view entity I_CACreditPostingOrigin
+  as select from dd07l
+
+  association [1..*] to I_CACreditPostingOriginText as _Text on $projection.OriginalSourceOfCredit = _Text.OriginalSourceOfCredit
+
+{
+      @ObjectModel.text.association: '_Text'
+  key cast( left( dd07l.domvalue_l, 1 ) as orig_credit_kk preserving type ) as OriginalSourceOfCredit,
+
+      _Text
+}
+where
+      domname  = 'ORIG_CREDIT_KK'
+  and as4local = 'A'
+```

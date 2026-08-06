@@ -1,0 +1,129 @@
+---
+name: I_BSORDITMSUBSCRPNPRICEAGRMTTP
+description: Bsorditmsubscrpnpriceagrmttp
+app_component: CRM-S4-SOL-SLO
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CRM
+  - interface-view
+  - transactional-processing
+  - component:CRM-S4-SOL-SLO
+  - lob:Other
+---
+# I_BSORDITMSUBSCRPNPRICEAGRMTTP
+
+**Bsorditmsubscrpnpriceagrmttp**
+
+| Property | Value |
+|---|---|
+| App Component | `CRM-S4-SOL-SLO` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
+| key `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
+| key `SubscriptionRateElement` | `SubscriptionRateElement` |
+| key `SubscriptionRateSubElement` | `SubscriptionRateSubElement` |
+| key `SubscrpnBillgPrcElmntSpec` | `SubscrpnBillgPrcElmntSpec` |
+| key `SubscrpnBillgPricingField` | `SubscrpnBillgPricingField` |
+| key `SubscrpnBillgPrcAgreementLine` | `SubscrpnBillgPrcAgreementLine` |
+| `SubscrpnBillgPricingScaleType` | `SubscrpnBillgPricingScaleType` |
+| `SubscrpnBillgCndnCalcType` | `SubscrpnBillgCndnCalcType` |
+| `ConditionScaleAmount` | `ConditionScaleAmount` |
+| `ConditionScaleQuantity` | `ConditionScaleQuantity` |
+| `ConditionScaleQuantityUnit` | `ConditionScaleQuantityUnit` |
+| `ConditionScaleAmountCurrency` | `ConditionScaleAmountCurrency` |
+| `ConditionRateValue` | `ConditionRateValue` |
+| `ConditionCurrency` | `ConditionCurrency` |
+| `ConditionQuantity` | `ConditionQuantity` |
+| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
+| `ConditionRateRatio` | `ConditionRateRatio` |
+| `SbscrBilgCndnScaleLineIsUnlmtd` | `SbscrBilgCndnScaleLineIsUnlmtd` |
+| `_SubscriptionBillingItem` | *Association* |
+| `_SubscrpnBillgCndnCalcTypeTxt` | *Association* |
+| `_SubscrpnBillgPrcgScTypeText` | *Association* |
+| `_BusinessSolutionOrderItemTP` | *Association* |
+| `_BusinessSolutionOrderTP` | *Association* |
+
+## Source Code
+
+```abap
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #('TRANSACTIONAL_DATA')
+}
+
+@ObjectModel: {
+  usageType:{
+    dataClass:      #TRANSACTIONAL,
+    serviceQuality: #C,
+    sizeCategory:   #L
+  }
+}
+
+@VDM: {
+  viewType: #TRANSACTIONAL,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities: [#TRANSACTIONAL_PROVIDER]
+
+@EndUserText.label: 'Soln Ord Item Subscrpn Price Agrmnt - TP'
+
+define view entity I_BSOrdItmSubscrpnPriceAgrmtTP 
+    as projection on R_BSOrdItmSubscrpnPriceAgrmtTP {
+    
+  key BusinessSolutionOrder,
+  key BusinessSolutionOrderItem,
+  key SubscriptionRateElement, 
+  key SubscriptionRateSubElement, 
+  key SubscrpnBillgPrcElmntSpec, 
+  key SubscrpnBillgPricingField,  
+  key SubscrpnBillgPrcAgreementLine,
+  
+  @ObjectModel.text.association: '_SubscrpnBillgPrcgScTypeText'
+  @Consumption.valueHelpDefinition: [{ entity : { name: 'I_SubscrpnBillgPrcgScaleType' , element:'SubscrpnBillgPricingScaleType'}, useAsTemplate: true  }]
+      SubscrpnBillgPricingScaleType,
+  @Consumption.valueHelpDefinition: [{ entity : { name: 'I_SubscrpnBillgCndnCalcType' , element:'SubscrpnBillgCndnCalcType'}, useAsTemplate: true  }]
+  @ObjectModel.text.association:'_SubscrpnBillgCndnCalcTypeTxt'
+      SubscrpnBillgCndnCalcType,     
+     
+      @Semantics.amount.currencyCode: 'ConditionScaleAmountCurrency'     
+      ConditionScaleAmount,    
+      
+      @Semantics.quantity.unitOfMeasure: 'ConditionScaleQuantityUnit'
+      ConditionScaleQuantity, 
+      
+      ConditionScaleQuantityUnit,      
+       
+      ConditionScaleAmountCurrency,
+      
+      @Semantics.amount.currencyCode: 'ConditionScaleAmountCurrency' 
+      ConditionRateValue,
+      
+      ConditionCurrency, 
+      
+      @Semantics.quantity.unitOfMeasure: 'ConditionQuantityUnit'
+      ConditionQuantity,
+     
+      ConditionQuantityUnit,
+      ConditionRateRatio,
+      @Semantics.booleanIndicator: true
+      SbscrBilgCndnScaleLineIsUnlmtd,    
+      _SubscriptionBillingItem,
+      _SubscrpnBillgCndnCalcTypeTxt,
+      _SubscrpnBillgPrcgScTypeText,
+      _BusinessSolutionOrderItemTP : redirected to parent I_BusinessSolutionOrderItemTP,
+      _BusinessSolutionOrderTP : redirected to I_BusinessSolutionOrderTP    
+  
+}
+```

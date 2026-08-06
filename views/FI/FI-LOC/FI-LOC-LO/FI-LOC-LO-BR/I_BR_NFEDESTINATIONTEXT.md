@@ -1,0 +1,85 @@
+---
+name: I_BR_NFEDESTINATIONTEXT
+description: BR Nfedestinationtext
+app_component: FI-LOC-LO-BR
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-LOC
+  - FI-LOC-LO
+  - interface-view
+  - text-view
+  - text
+  - component:FI-LOC-LO-BR
+  - lob:Finance
+---
+# I_BR_NFEDESTINATIONTEXT
+
+**BR Nfedestinationtext**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-LOC-LO-BR` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Language` | `cast( ddlanguage as spras preserving type )` |
+| key `BR_NFeDestination` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_nfe_iddest preserving type )` |
+| `BR_NFeDestinationDesc` | `cast( ddtext as logbr_nfe_iddest_description preserving type )` |
+| `_BR_NFeDestination` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BR_NFeDestination` | `I_BR_NFeDestination` | [1..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Brazil NFe Destination - Text'
+@ObjectModel.dataCategory: #TEXT
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IBRNFEDESTT'
+@ObjectModel.representativeKey: 'BR_NFeDestination'
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE,#CDS_MODELING_DATA_SOURCE]
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AccessControl.authorizationCheck: #CHECK
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.compiler.compareFilter: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #A
+@AbapCatalog.preserveKey:true 
+
+define view I_BR_NFeDestinationText
+  as select from dd07t
+  association [1..1] to I_BR_NFeDestination as _BR_NFeDestination on $projection.BR_NFeDestination = _BR_NFeDestination.BR_NFeDestination
+  association [0..1] to I_Language          as _Language          on $projection.Language = _Language.Language
+{
+      @Semantics.language
+  key cast( ddlanguage as spras preserving type )                                as Language,
+      @ObjectModel.foreignKey.association: '_BR_NFeDestination'
+  key cast ( substring( domvalue_l, 1, 1 ) as logbr_nfe_iddest preserving type ) as BR_NFeDestination,
+      @Semantics.text
+      cast( ddtext as logbr_nfe_iddest_description preserving type )             as BR_NFeDestinationDesc,
+      @ObjectModel.association.type: [#TO_COMPOSITION_PARENT, #TO_COMPOSITION_ROOT]
+      _BR_NFeDestination,
+      _Language
+}
+where
+      domname  = 'J_1BNFE_IDDEST'
+  and as4local = 'A'
+```

@@ -1,0 +1,91 @@
+---
+name: I_MATLPROCUREMENTEXTERNALTYPE
+description: Matlprocurementexternaltype
+app_component: PP-VDM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PP
+  - PP-VDM
+  - interface-view
+  - text
+  - component:PP-VDM-2CL
+  - lob:Manufacturing
+---
+# I_MATLPROCUREMENTEXTERNALTYPE
+
+**Matlprocurementexternaltype**
+
+| Property | Value |
+|---|---|
+| App Component | `PP-VDM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `MaterialProcurementExtType` | `cast(typ.esobs as pph_esobs preserving type)` |
+| key `Language` | `cast(typ.spras as spras preserving type)` |
+| `MaterialProcurementType` | `cast(typ.sobes as pph_sobes preserving type)` |
+| `MaterialProcurementExtTypeName` | `typ.sotxt` |
+| `_Language` | *Association* |
+| `_MaterialProcurementType` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_MaterialProcurementType` | `I_MatlProcurementType` | [1..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IMATLPROCMEXTTYP'
+@AbapCatalog.buffering: {status: #ACTIVE, type: #GENERIC, numberOfKeyFields: 001}
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics.dataCategory: #DIMENSION
+@Analytics.internalName: #LOCAL
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Consumption.ranked: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities: [#CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #SEARCHABLE_ENTITY]
+@ObjectModel.representativeKey: 'MaterialProcurementExtType'
+@ObjectModel.usageType: {serviceQuality: #A, sizeCategory: #S, dataClass: #CUSTOMIZING}
+@Search.searchable: true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.lifecycle.status: #DEPRECATED  // TEXT data category missing
+@VDM.lifecycle.successor: 'I_MatlProcmtExternalTypeText'
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Material Procurement External Type'
+
+/*+[hideWarning] { "IDS" : [ "CALCULATED_FIELD_CHECK" ]  } */
+define view I_MatlProcurementExternalType
+  as select from t460b as typ
+  association [0..1] to I_Language            as _Language                on $projection.Language = _Language.Language
+  association [1..1] to I_MatlProcurementType as _MaterialProcurementType on $projection.MaterialProcurementType = _MaterialProcurementType.MaterialProcurementType
+{
+      // Key
+      @Search: {defaultSearchElement: true, ranking: #HIGH, fuzzinessThreshold: 0.8}
+      @ObjectModel.text.element: ['MaterialProcurementExtTypeName']
+  key cast(typ.esobs as pph_esobs preserving type) as MaterialProcurementExtType,
+      @Semantics.language: true
+  key cast(typ.spras as spras     preserving type) as Language,
+      @ObjectModel.foreignKey.association: '_MaterialProcurementType'
+      cast(typ.sobes as pph_sobes preserving type) as MaterialProcurementType,
+      @Search: {defaultSearchElement: true, ranking: #LOW, fuzzinessThreshold: 0.8}
+      @Semantics.text: true
+      typ.sotxt                                    as MaterialProcurementExtTypeName,
+
+      // Associations
+      _Language,
+      _MaterialProcurementType
+};
+```

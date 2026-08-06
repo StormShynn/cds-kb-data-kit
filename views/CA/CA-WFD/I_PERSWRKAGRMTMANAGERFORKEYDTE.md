@@ -1,0 +1,177 @@
+---
+name: I_PERSWRKAGRMTMANAGERFORKEYDTE
+description: Perswrkagrmtmanagerforkeydte
+app_component: CA-WFD
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CA
+  - CA-WFD
+  - interface-view
+  - component:CA-WFD
+  - lob:Cross-Application Components
+---
+# I_PERSWRKAGRMTMANAGERFORKEYDTE
+
+**Perswrkagrmtmanagerforkeydte**
+
+| Property | Value |
+|---|---|
+| App Component | `CA-WFD` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `PersonWorkAgreement` | `cast( PersonWorkAgreement as persno preserving type )` |
+| key `KeyDate` | `cast( $parameters.P_KeyDate as dats preserving type )` |
+| key `ManagerPersonWorkAgreement` | `cast( ManagerPersonWorkAgreement as mstbr preserving type )` |
+| `PersonWorkAgrmtAuthznGrpg` | `cast( PersonWorkAgrmtAuthznGrpg as vdsk1 preserving type )` |
+| `_ManagerPersonWorkAgreement` | *Association* |
+| `_ManagerPersonWorkAgreement_1` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ManagerPersonWorkAgreement` | `I_PersonWorkAgreement` | [1..1] |
+| `_ManagerPersonWorkAgreement_1` | `I_PersonWorkAgreement_1` | [1..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IPERSWRKAGRMTMGR'
+@VDM.viewType: #COMPOSITE
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.dataClass: #MASTER
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #L
+@AbapCatalog.compiler.compareFilter: true
+//@AccessControl.authorizationCheck: #CHECK
+@AccessControl.authorizationCheck: #MANDATORY
+@Analytics.dataCategory: #DIMENSION
+@Metadata.allowExtensions: true
+@ObjectModel.representativeKey: 'PersonWorkAgreement'
+@EndUserText.label: 'Retrieve manager for given date'
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION]
+
+define view I_PersWrkAgrmtManagerForKeyDte
+  with parameters
+    @Consumption.hidden     : true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate : vdm_v_key_date
+  as select from I_PersWrkAgrmtPosDet as perswrkagrmtposdet
+  //  as select from P_U_PersWrkAgrmtMgrForKeyDte (P_KeyDate: $parameters.P_KeyDate)
+  association [1..1] to I_PersonWorkAgreement   as _ManagerPersonWorkAgreement   on _ManagerPersonWorkAgreement.PersonWorkAgreement = $projection.ManagerPersonWorkAgreement
+  association [1..1] to I_PersonWorkAgreement_1 as _ManagerPersonWorkAgreement_1 on _ManagerPersonWorkAgreement_1.PersonWorkAgreement = $projection.ManagerPersonWorkAgreement
+{
+  key cast( PersonWorkAgreement as persno preserving type ) as PersonWorkAgreement,
+  key cast( $parameters.P_KeyDate as dats preserving type ) as KeyDate,
+      @ObjectModel.foreignKey.association: '_ManagerPersonWorkAgreement_1'
+  key cast( ManagerPersonWorkAgreement as mstbr preserving type ) as ManagerPersonWorkAgreement,
+      cast( PersonWorkAgrmtAuthznGrpg as vdsk1 preserving type ) as PersonWorkAgrmtAuthznGrpg,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_ManagerPersonWorkAgreement_1'
+      _ManagerPersonWorkAgreement,
+      _ManagerPersonWorkAgreement_1
+}
+where
+  (
+        perswrkagrmtposdet.StartDate                  <= $parameters.P_KeyDate
+    and perswrkagrmtposdet.EndDate                    >= $parameters.P_KeyDate
+  )
+  and(
+        perswrkagrmtposdet.ManagerPersonWorkAgreement is not null
+  )
+  and(
+        perswrkagrmtposdet.ManagerPersonWorkAgreement <> '00000000'
+  )
+
+/*  with parameters
+    @Consumption.hidden     : true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate : vdm_v_key_date
+  as select from wfd_tf_perwrkagrmtmgrforkeydte( p_client: $session.client, p_todaydate: $parameters.P_KeyDate )
+//  as select from P_U_PersWrkAgrmtMgrForKeyDte (P_KeyDate: $parameters.P_KeyDate)
+  association [1..1] to I_PersonWorkAgreement   as _ManagerPersonWorkAgreement   on _ManagerPersonWorkAgreement.PersonWorkAgreement = $projection.ManagerPersonWorkAgreement
+  association [1..1] to I_PersonWorkAgreement_1 as _ManagerPersonWorkAgreement_1 on _ManagerPersonWorkAgreement_1.PersonWorkAgreement = $projection.ManagerPersonWorkAgreement
+{
+  key  PersonWorkAgreement,
+  key  $parameters.P_KeyDate as KeyDate,
+       @ObjectModel.foreignKey.association: '_ManagerPersonWorkAgreement_1'
+  key  ManagerPersonWorkAgreement,
+       PersonWorkAgrmtAuthznGrpg,
+       @API.element.releaseState: #DEPRECATED
+       @API.element.successor: '_ManagerPersonWorkAgreement_1'
+       _ManagerPersonWorkAgreement,
+       _ManagerPersonWorkAgreement_1
+}
+*/
+
+//define view I_PersWrkAgrmtManagerForKeyDte
+//  with parameters
+//    @Consumption.hidden     : true
+//    @Environment.systemField: #SYSTEM_DATE
+//    P_KeyDate : vdm_v_key_date
+//  as select from P_U_PersWrkAgrmtMgrForKeyDte (P_KeyDate: $parameters.P_KeyDate)
+//  association [1..1] to I_PersonWorkAgreement   as _ManagerPersonWorkAgreement   on _ManagerPersonWorkAgreement.PersonWorkAgreement = $projection.ManagerPersonWorkAgreement
+//  association [1..1] to I_PersonWorkAgreement_1 as _ManagerPersonWorkAgreement_1 on _ManagerPersonWorkAgreement_1.PersonWorkAgreement = $projection.ManagerPersonWorkAgreement
+//{
+//  key  PersonWorkAgreement,
+//  key  $parameters.P_KeyDate as KeyDate,
+//       @ObjectModel.foreignKey.association: '_ManagerPersonWorkAgreement_1'
+//  key  ManagerPersonWorkAgreement,
+//       PersonWorkAgrmtAuthznGrpg,
+//       @API.element.releaseState: #DEPRECATED
+//       @API.element.successor: '_ManagerPersonWorkAgreement_1'
+//       _ManagerPersonWorkAgreement,
+//       _ManagerPersonWorkAgreement_1
+//}
+
+//  as select from    I_PersWrkAgrmtPosDet                                             as PersWrkAgrmtPosDet
+//    left outer join I_PersWrkAgrmtPosToMgrPosition(P_KeyDate: $parameters.P_KeyDate) as PersWrkAgrmtPosToMgrPosition on PersWrkAgrmtPosToMgrPosition.PersonWorkAgreement = PersWrkAgrmtPosDet.PersonWorkAgreement
+//
+//    left outer join I_PersWrkAgrmtPosDet                                             as PersonWrkAgrmtManager        on  PersonWrkAgrmtManager.PersonWrkAgrmtPosition = PersWrkAgrmtPosToMgrPosition.ManagerWrkAgrmtPosition // retrieve the corresponding workagreement of teh position
+//                                                                                                                     and PersonWrkAgrmtManager.StartDate              <= $parameters.P_KeyDate
+//                                                                                                                     and PersonWrkAgrmtManager.EndDate                >= $parameters.P_KeyDate
+//
+//  association [1..1] to I_PersonWorkAgreement   as _ManagerPersonWorkAgreement   on _ManagerPersonWorkAgreement.PersonWorkAgreement = $projection.ManagerPersonWorkAgreement
+//  association [1..1] to I_PersonWorkAgreement_1 as _ManagerPersonWorkAgreement_1 on _ManagerPersonWorkAgreement_1.PersonWorkAgreement = $projection.ManagerPersonWorkAgreement
+//
+//{
+//  key PersWrkAgrmtPosDet.PersonWorkAgreement as PersonWorkAgreement,
+//  key $parameters.P_KeyDate                  as KeyDate,
+//      @ObjectModel.foreignKey.association: '_ManagerPersonWorkAgreement_1'
+//  key case when PersWrkAgrmtPosToMgrPosition.ManagerWrkAgrmtPosition is not null
+//    then PersonWrkAgrmtManager.PersonWorkAgreement
+//   when PersWrkAgrmtPosDet.ManagerPersonWorkAgreement is not null
+//     then  PersWrkAgrmtPosDet.ManagerPersonWorkAgreement
+//   end                                       as ManagerPersonWorkAgreement,
+//      PersWrkAgrmtPosDet.PersonWorkAgrmtAuthznGrpg,
+//      @API.element.releaseState: #DEPRECATED
+//      @API.element.successor: '_ManagerPersonWorkAgreement_1'
+//      _ManagerPersonWorkAgreement,
+//      _ManagerPersonWorkAgreement_1
+//}
+//where
+//          PersWrkAgrmtPosDet.StartDate                         <= $parameters.P_KeyDate
+//  and     PersWrkAgrmtPosDet.EndDate                           >= $parameters.P_KeyDate
+//  and(
+//    (
+//          PersWrkAgrmtPosToMgrPosition.ManagerWrkAgrmtPosition is not null
+//      and PersWrkAgrmtPosToMgrPosition.ManagerWrkAgrmtPosition <> ''
+//      and PersonWrkAgrmtManager.PersonWorkAgreement            is not null
+//    )
+//    or(
+//          PersWrkAgrmtPosDet.ManagerPersonWorkAgreement        is not null
+//      and PersWrkAgrmtPosDet.ManagerPersonWorkAgreement        <> ''
+//    )
+//  )
+```

@@ -1,0 +1,97 @@
+---
+name: I_SECURITIESACCTCLPOSMSTRDATA
+description: Securitiesacctclposmstrdata
+app_component: FIN-FSCM-TRM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-FSCM
+  - FIN-FSCM-TRM
+  - interface-view
+  - component:FIN-FSCM-TRM-2CL
+  - lob:Other
+---
+# I_SECURITIESACCTCLPOSMSTRDATA
+
+**Securitiesacctclposmstrdata**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-FSCM-TRM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `SecurityClassPositionUUID` | `SecurityClassPos.os_guid` |
+| `CompanyCode` | `SecurityClassPos.company_code` |
+| `SecurityAccount` | `SecurityClassPos.security_account` |
+| `SecurityClass` | `SecurityClassPos.security_id` |
+| `Portfolio` | `SecurityClassPos.portfolio` |
+| `TreasuryFinancialObject` | `SecurityClassPos.objnr` |
+| `_SecurityClass` | *Association* |
+| `_SecurityAccount` | *Association* |
+| `_CompanyCode` | *Association* |
+| `_TreasuryPortfolio` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SecurityClass` | `I_SecurityClass` | [1..1] |
+| `_SecurityAccount` | `I_SecurityAccount` | [1..1] |
+| `_CompanyCode` | `I_CompanyCode` | [1..1] |
+| `_TreasuryPortfolio` | `I_TreasuryPortfolio` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.entityBuffer.definitionAllowed: false
+ @AccessControl: { authorizationCheck: #MANDATORY,
+                  personalData.blocking: #NOT_REQUIRED }
+
+@Metadata.ignorePropagatedAnnotations:true
+
+@ObjectModel: { usageType.dataClass:      #TRANSACTIONAL, 
+                usageType.serviceQuality: #D,
+                usageType.sizeCategory:   #M,
+                supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE  ] }
+@ObjectModel.sapObjectNodeType.name: 'SecuritiesAcctClPosMstrData'
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@EndUserText.label: 'Class Position in Securities Account'
+
+@Analytics.dataExtraction: { enabled: true,
+                             delta.changeDataCapture.automatic: true } 
+@Analytics.technicalName: 'ITRSECACCPOSMD'
+
+define view entity I_SecuritiesAcctClPosMstrData 
+  as select from trst_claspos as SecurityClassPos
+  association [1..1] to I_SecurityClass     as _SecurityClass     on  SecurityClassPos.security_id     = _SecurityClass.SecurityClass
+  association [1..1] to I_SecurityAccount   as _SecurityAccount   on  _SecurityAccount.CompanyCode     = SecurityClassPos.company_code
+                                                                  and _SecurityAccount.SecurityAccount = SecurityClassPos.security_account
+  association [1..1] to I_CompanyCode       as _CompanyCode       on  _CompanyCode.CompanyCode = SecurityClassPos.company_code
+  association [0..1] to I_TreasuryPortfolio as _TreasuryPortfolio on  _TreasuryPortfolio.Portfolio     = $projection.Portfolio
+                                                                  and _TreasuryPortfolio.CompanyCode   = $projection.CompanyCode
+{
+  key SecurityClassPos.os_guid          as SecurityClassPositionUUID,
+      SecurityClassPos.company_code     as CompanyCode,
+      SecurityClassPos.security_account as SecurityAccount,
+      SecurityClassPos.security_id      as SecurityClass,
+      SecurityClassPos.portfolio        as Portfolio,
+      SecurityClassPos.objnr            as TreasuryFinancialObject,
+
+      /* Associations */
+      _CompanyCode,
+      _SecurityAccount,
+      _SecurityClass,
+      _TreasuryPortfolio
+}
+```

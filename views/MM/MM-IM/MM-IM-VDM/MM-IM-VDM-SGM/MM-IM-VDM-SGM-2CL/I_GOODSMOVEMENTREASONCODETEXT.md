@@ -1,0 +1,113 @@
+---
+name: I_GOODSMOVEMENTREASONCODETEXT
+description: Goods MovementREASONCODETEXT
+app_component: MM-IM-VDM-SGM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - MM
+  - MM-IM
+  - MM-IM-VDM
+  - interface-view
+  - text-view
+  - text
+  - component:MM-IM-VDM-SGM-2CL
+  - lob:Sourcing & Procurement
+---
+# I_GOODSMOVEMENTREASONCODETEXT
+
+**Goods MovementREASONCODETEXT**
+
+| Property | Value |
+|---|---|
+| App Component | `MM-IM-VDM-SGM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Language` | `t157e.spras` |
+| key `GoodsMovementType` | `t157e.bwart` |
+| key `GoodsMovementReasonCode` | `t157e.grund` |
+| `GoodsMovementReasonName` | `t157e.grtxt` |
+| `_Language` | *Association* |
+| `_GoodsMovementType` | *Association* |
+| `_GoodsMovementReasonCode` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_GoodsMovementType` | `I_GoodsMovementType` | [0..1] |
+| `_GoodsMovementReasonCode` | `I_GoodsMovementReasonCode` | [0..1] |
+
+## Source Code
+
+```abap
+@Analytics: { technicalName: 'IGdsMvtRsnCdTxt',
+              dataExtraction.enabled:true }
+
+@EndUserText.label: 'Goods Movement Reason Code - Text'
+
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: { dataCategory: #TEXT,
+                modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+                representativeKey: 'GoodsMovementReasonCode',
+                usageType: { serviceQuality: #A,
+                             dataClass: #CUSTOMIZING,
+                             sizeCategory: #S },
+                sapObjectNodeType.name: 'GoodsMovementReasonText',
+                supportedCapabilities: [#CDS_MODELING_ASSOCIATION_TARGET,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #EXTRACTION_DATA_SOURCE,
+                                        #LANGUAGE_DEPENDENT_TEXT,
+                                        #SEARCHABLE_ENTITY,
+                                        #SQL_DATA_SOURCE] }
+
+@Search.searchable: true
+
+@VDM: { lifecycle.contract.type: #PUBLIC_LOCAL_API,
+        viewType: #BASIC }
+@AbapCatalog.entityBuffer.definitionAllowed: true
+define view entity I_GoodsMovementReasonCodeText
+  as select from t157e
+
+  association [0..1] to I_Language                as _Language                on  $projection.Language = _Language.Language
+  association [0..1] to I_GoodsMovementType       as _GoodsMovementType       on  $projection.GoodsMovementType = _GoodsMovementType.GoodsMovementType
+
+  association [0..1] to I_GoodsMovementReasonCode as _GoodsMovementReasonCode on  $projection.GoodsMovementType       = _GoodsMovementReasonCode.GoodsMovementType
+                                                                              and $projection.GoodsMovementReasonCode = _GoodsMovementReasonCode.GoodsMovementReasonCode
+{
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key t157e.spras as Language,
+      @ObjectModel.foreignKey.association: '_GoodsMovementType'
+      @ObjectModel.text.element: ['GoodsMovementType']
+  key t157e.bwart as GoodsMovementType,
+      @ObjectModel.foreignKey.association: '_GoodsMovementReasonCode'
+      @ObjectModel.text.element: ['GoodsMovementReasonName']
+      @UI.textArrangement: #TEXT_FIRST
+  key t157e.grund as GoodsMovementReasonCode,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @Semantics.text: true
+      @EndUserText.label: 'Goods Movement Reason Text'
+      t157e.grtxt as GoodsMovementReasonName,
+
+      //Associations
+      _Language,
+      _GoodsMovementType,
+      _GoodsMovementReasonCode
+}
+```

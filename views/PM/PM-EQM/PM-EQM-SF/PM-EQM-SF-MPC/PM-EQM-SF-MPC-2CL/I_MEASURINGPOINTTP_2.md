@@ -1,0 +1,162 @@
+---
+name: I_MEASURINGPOINTTP_2
+description: Measuringpointtp 2
+app_component: PM-EQM-SF-MPC-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PM
+  - PM-EQM
+  - PM-EQM-SF
+  - interface-view
+  - transactional-processing
+  - component:PM-EQM-SF-MPC-2CL
+  - lob:Plant Maintenance
+---
+# I_MEASURINGPOINTTP_2
+
+**Measuringpointtp 2**
+
+| Property | Value |
+|---|---|
+| App Component | `PM-EQM-SF-MPC-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `MeasuringPoint` | `MeasuringPoint` |
+| `MeasuringPointDescription` | `MeasuringPointDescription` |
+| `MeasuringPointObjectIdentifier` | `MeasuringPointObjectIdentifier` |
+| `TechnicalObjectType` | `TechnicalObjectType` |
+| `MeasuringPointPositionNumber` | `MeasuringPointPositionNumber` |
+| `MeasuringPointCategory` | `MeasuringPointCategory` |
+| `CreationDate` | `CreationDate` |
+| `LastChangeDate` | `LastChangeDate` |
+| `AuthorizationGroup` | `AuthorizationGroup` |
+| `MeasuringPointIsCounter` | `MeasuringPointIsCounter` |
+| `MsrgPtInternalCharacteristic` | `MsrgPtInternalCharacteristic` |
+| `CharcValueUnit` | `CharcValueUnit` |
+| `MeasuringPointDecimalPlaces` | `MeasuringPointDecimalPlaces` |
+| `MeasuringPointExponent` | `MeasuringPointExponent` |
+| `MeasuringPointCodeGroup` | `MeasuringPointCodeGroup` |
+| `ValuationCodeIsSufficient` | `ValuationCodeIsSufficient` |
+| `Assembly` | `Assembly` |
+| `MeasuringPointIsInactive` | `MeasuringPointIsInactive` |
+| `MeasuringPointShortText` | `MeasuringPointShortText` |
+| `MeasurementRangeUnit` | `MeasurementRangeUnit` |
+| `MsmtRdngSourceMeasuringPoint` | `MsmtRdngSourceMeasuringPoint` |
+| `MeasuringPointTargetValue` | `MeasuringPointTargetValue` |
+| `MeasuringPointMaximumThreshold` | `MeasuringPointMaximumThreshold` |
+| `MeasuringPointMinimumThreshold` | `MeasuringPointMinimumThreshold` |
+| `MeasuringPointAnnualEstimate` | `MeasuringPointAnnualEstimate` |
+| `CounterOverflowRdngThreshold` | `CounterOverflowRdngThreshold` |
+| `MsrgPtIsCountingBackwards` | `MsrgPtIsCountingBackwards` |
+| `MeasurementTransferIsSupported` | `MeasurementTransferIsSupported` |
+| `FunctionalLocation` | `FunctionalLocation` |
+| `Equipment` | `Equipment` |
+| `MsmtRdngTransferMode` | `MsmtRdngTransferMode` |
+| `_LongText` | *Association* |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Measuring Point'
+@AccessControl.authorizationCheck: #CHECK
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: {
+   modelingPattern:       #TRANSACTIONAL_INTERFACE,
+   supportedCapabilities: [#TRANSACTIONAL_PROVIDER],
+   usageType: {
+     serviceQuality: #C,
+     sizeCategory:   #L,
+     dataClass:      #MASTER
+   },
+   semanticKey: ['MeasuringPoint']
+ }
+
+@VDM: {
+  lifecycle.contract.type: #PUBLIC_LOCAL_API,
+  viewType: #TRANSACTIONAL
+}
+@ObjectModel.sapObjectNodeType.name: 'MeasuringPoint'
+define root view entity I_MeasuringPointTP_2
+provider contract transactional_interface
+  as projection on R_MeasuringPointTP as MeasuringPointTP
+{
+
+  key MeasuringPoint,
+
+      MeasuringPointDescription,
+
+      MeasuringPointObjectIdentifier,
+
+      TechnicalObjectType,
+
+      MeasuringPointPositionNumber,
+
+      MeasuringPointCategory,
+
+      CreationDate,
+
+      LastChangeDate,
+
+      @Consumption.hidden: true
+      AuthorizationGroup,
+
+      MeasuringPointIsCounter,
+
+      MsrgPtInternalCharacteristic,
+
+      CharcValueUnit,
+
+      MeasuringPointDecimalPlaces,
+
+      MeasuringPointExponent,
+
+      MeasuringPointCodeGroup,
+
+      ValuationCodeIsSufficient,
+
+      Assembly,
+
+      MeasuringPointIsInactive,
+
+      MeasuringPointShortText,
+
+      MeasurementRangeUnit,
+
+      MsmtRdngSourceMeasuringPoint,
+
+      MeasuringPointTargetValue,
+
+      MeasuringPointMaximumThreshold,
+
+      MeasuringPointMinimumThreshold,
+
+      MeasuringPointAnnualEstimate,
+
+      CounterOverflowRdngThreshold,
+
+      MsrgPtIsCountingBackwards,
+
+      MeasurementTransferIsSupported,
+
+      FunctionalLocation,
+
+      Equipment,
+
+      MsmtRdngTransferMode,
+      
+      _LongText : redirected to composition child I_MeasuringPointLongTextTP
+
+
+}
+```

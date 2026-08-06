@@ -1,0 +1,92 @@
+---
+name: I_PAYMENTAPPROVALRULELIMITTP
+description: Paymentapprovalrulelimittp
+app_component: FIN-FSCM-CLM-BAM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-FSCM
+  - FIN-FSCM-CLM
+  - interface-view
+  - transactional-processing
+  - payment
+  - approval
+  - component:FIN-FSCM-CLM-BAM-2CL
+  - lob:Other
+---
+# I_PAYMENTAPPROVALRULELIMITTP
+
+**Paymentapprovalrulelimittp**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-FSCM-CLM-BAM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `PaymentApprovalRule` | `PaymentApprovalRule` |
+| key `PaymentApprovalRuleItem` | `PaymentApprovalRuleItem` |
+| key `PaytApprvlLimitCurrency` | `PaytApprvlLimitCurrency` |
+| `PaytApprvlAmountInLmtCurrency` | `PaytApprvlAmountInLmtCurrency` |
+| `CreatedByUser` | `CreatedByUser` |
+| `CreationDateTime` | `CreationDateTime` |
+| `LastChangedByUser` | `LastChangedByUser` |
+| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
+| `_PaymentApprovalRule` | *Association* |
+| `_PaymentApprovalRuleItem` | *Association* |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Approver Limits of an Approval Item - TP'
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel:{ modelingPattern:  #TRANSACTIONAL_INTERFACE,
+               supportedCapabilities: [#TRANSACTIONAL_PROVIDER],
+               usageType: { serviceQuality: #B,
+                            sizeCategory: #S,
+                            dataClass: #MASTER },
+               sapObjectNodeType.name: 'PaymentApprovalRuleLimit'}
+@VDM: { lifecycle.contract.type: #PUBLIC_LOCAL_API,
+        viewType: #TRANSACTIONAL }
+
+@AbapCatalog.extensibility: {
+  extensible: true,
+  dataSources: [ 'PaymentApprovalRuleLimit' ],
+  elementSuffix: 'ARL',
+  quota: { maximumFields: 100, maximumBytes: 100000 }
+}
+@AbapCatalog.extensibility.allowNewCompositions
+
+define view entity I_PaymentApprovalRuleLimitTP
+  as projection on R_PaymentApprovalRuleLimitTP as PaymentApprovalRuleLimit
+
+{
+  key PaymentApprovalRule,
+  key PaymentApprovalRuleItem,
+  key PaytApprvlLimitCurrency,
+      @Semantics.amount.currencyCode: 'PaytApprvlLimitCurrency'
+      PaytApprvlAmountInLmtCurrency,
+      @Semantics.user.createdBy: true
+      CreatedByUser,
+      @Semantics.systemDateTime.createdAt: true
+      CreationDateTime,
+      @Semantics.user.lastChangedBy: true
+      LastChangedByUser,
+      @Semantics.systemDateTime.localInstanceLastChangedAt:true
+      LocalLastChangeDateTime,
+      /* Associations */
+      _PaymentApprovalRule     : redirected to I_PaymentApprovalRuleTP,
+      _PaymentApprovalRuleItem : redirected to parent I_PaymentApprovalRuleItemTP
+}
+```

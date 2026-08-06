@@ -1,0 +1,135 @@
+---
+name: I_PRODUCTPLANTSALES
+description: Productplantsales
+app_component: LO-MD-MM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - LO
+  - LO-MD
+  - LO-MD-MM
+  - interface-view
+  - product
+  - plant
+  - component:LO-MD-MM-2CL
+  - lob:Logistics General
+  - bo:Plant
+---
+# I_PRODUCTPLANTSALES
+
+**Productplantsales**
+
+| Property | Value |
+|---|---|
+| App Component | `LO-MD-MM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Product` | `PlantSales.Product` |
+| key `Plant` | `PlantSales.Plant` |
+| `LoadingGroup` | `PlantSales.LoadingGroup` |
+| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
+| `CapPlanningQuantityInBaseUoM` | `PlantSales.CapPlanningQuantityInBaseUoM` |
+| `ProductShippingProcessingTime` | `PlantSales.ProductShippingProcessingTime` |
+| `WrkCentersShipgSetupTimeInDays` | `PlantSales.WrkCentersShipgSetupTimeInDays` |
+| `ReplacementPartType` | `PlantSales.ReplacementPartType` |
+| `AvailabilityCheckType` | `PlantSales.AvailabilityCheckType` |
+| `BaseUnit` | `_Product.BaseUnit` |
+| `_Product` | *Association* |
+| `_LoadingGroupText` | *Association* |
+| `_AvailabilityCheckType` | *Association* |
+| `_AvailabilityCheckType_2` | *Association* |
+| `_ProductReplacementPartTypeT` | *Association* |
+| `_ProductDescription` | *Association* |
+| `_BaseUnitOfMeasureText` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Product` | `I_Product` | [1..1] |
+| `_ProdPlantSalesExt` | `E_Productplant` | [0..1] |
+| `_LoadingGroupText` | `I_LoadingGroupText` | [0..*] |
+| `_AvailabilityCheckType` | `I_ProdAvailabilityCheckGroup` | [0..1] |
+| `_AvailabilityCheckType_2` | `I_ATPCheckingGroup` | [0..1] |
+| `_ProductReplacementPartTypeT` | `I_ProductReplacementPartTypeT` | [0..*] |
+| `_ProductDescription` | `I_ProductDescription_2` | [0..*] |
+| `_BaseUnitOfMeasureText` | `I_UnitOfMeasureText` | [0..*] |
+
+## Source Code
+
+```abap
+@AbapCatalog: {
+  sqlViewName: 'IPRDPLANTSALES',
+  compiler.compareFilter: true,
+  preserveKey: true
+  }
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Product plant sales'
+
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory : #XL
+@ObjectModel.usageType.dataClass: #MASTER
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE,
+                                     #CDS_MODELING_DATA_SOURCE,
+                                     #CDS_MODELING_ASSOCIATION_TARGET
+]
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+define view I_Productplantsales
+  as select from P_ProductPlantBasic as PlantSales
+  association [1..1] to I_Product                    as _Product               on  $projection.Product = _Product.Product
+  association [0..1] to E_Productplant               as _ProdPlantSalesExt     on  $projection.Product = _ProdPlantSalesExt.Product
+                                                                               and $projection.Plant   = _ProdPlantSalesExt.Plant
+  association [0..*] to I_LoadingGroupText           as _LoadingGroupText      on  $projection.LoadingGroup = _LoadingGroupText.LoadingGroup
+
+  association [0..1] to I_ProdAvailabilityCheckGroup as _AvailabilityCheckType on  $projection.AvailabilityCheckType = _AvailabilityCheckType.ProdAvailabilityCheckGroup
+  association [0..1] to I_ATPCheckingGroup as _AvailabilityCheckType_2 on  $projection.AvailabilityCheckType = _AvailabilityCheckType_2.ATPCheckingGroup
+  
+
+  association [0..*] to I_ProductReplacementPartTypeT as _ProductReplacementPartTypeT on $projection.ReplacementPartType = _ProductReplacementPartTypeT.ReplacementPartType
+  association [0..*] to I_ProductDescription_2        as _ProductDescription    on  $projection.Product = _ProductDescription.Product
+  association [0..*] to I_UnitOfMeasureText           as _BaseUnitOfMeasureText on  $projection.BaseUnit = _BaseUnitOfMeasureText.UnitOfMeasure
+{
+
+  key PlantSales.Product,
+  key PlantSales.Plant,
+      @ObjectModel.text.association: '_LoadingGroupText'
+      @ObjectModel.sapObjectNodeTypeReference:'LoadingGroup'
+      PlantSales.LoadingGroup,
+      cast( 'X' as sdraft_is_active preserving type ) as IsActiveEntity, // to enbale extensibility in Draft 2.0
+
+      // New fields from MDG model, as part of unified API development
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      PlantSales.CapPlanningQuantityInBaseUoM,
+      PlantSales.ProductShippingProcessingTime,
+      PlantSales.WrkCentersShipgSetupTimeInDays,
+      @ObjectModel.sapObjectNodeTypeReference:'ProductReplacementPartType'
+      PlantSales.ReplacementPartType,
+      @ObjectModel.foreignKey.association: '_AvailabilityCheckType_2'
+      PlantSales.AvailabilityCheckType,
+      @Semantics.unitOfMeasure: true
+      @ObjectModel.foreignKey.association: '_BaseUnitOfMeasure'
+      _Product.BaseUnit                               as BaseUnit,
+      _Product,
+      _LoadingGroupText,
+      _Product._BaseUnitOfMeasure,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_AvailabilityCheckType_2'
+      _AvailabilityCheckType,
+      _AvailabilityCheckType_2,
+      _ProductReplacementPartTypeT,
+      _ProductDescription,
+      _BaseUnitOfMeasureText
+}
+```

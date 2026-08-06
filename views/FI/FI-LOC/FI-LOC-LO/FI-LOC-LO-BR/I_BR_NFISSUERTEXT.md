@@ -1,0 +1,84 @@
+---
+name: I_BR_NFISSUERTEXT
+description: BR Nfissuertext
+app_component: FI-LOC-LO-BR
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-LOC
+  - FI-LOC-LO
+  - interface-view
+  - text-view
+  - text
+  - component:FI-LOC-LO-BR
+  - lob:Finance
+---
+# I_BR_NFISSUERTEXT
+
+**BR Nfissuertext**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-LOC-LO-BR` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Language` | `cast( ddlanguage as spras preserving type )` |
+| key `BR_NFIssuedBy` | `cast( substring(domvalue_l, 1, 1 ) as logbr_nfissuer preserving type )` |
+| `BR_NFIssuerDesc` | `cast( ddtext as logbr_nfissuerdescription preserving type )` |
+| `_BR_NFIssuer` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BR_NFIssuer` | `I_BR_NFIssuer` | [1..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Brazil Nota Fiscal Issuer - Text'
+@ObjectModel.dataCategory: #TEXT
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IBRNFISSUERT'
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel.representativeKey: 'BR_NFIssuedBy'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE,#CDS_MODELING_DATA_SOURCE]
+
+define view I_BR_NFIssuerText
+  as select from dd07t
+  association [1..1] to I_BR_NFIssuer as _BR_NFIssuer on $projection.BR_NFIssuedBy = _BR_NFIssuer.BR_NFIssuedBy
+  association [0..1] to I_Language    as _Language    on $projection.Language = _Language.Language
+{
+  @Semantics.language
+  key cast( ddlanguage as spras preserving type ) as Language,
+  @ObjectModel.foreignKey.association: '_BR_NFIssuer'
+  key cast( substring(domvalue_l, 1, 1 ) as logbr_nfissuer preserving type ) as BR_NFIssuedBy,
+  @Semantics.text
+  cast( ddtext as logbr_nfissuerdescription preserving type ) as BR_NFIssuerDesc,
+  @ObjectModel.association.type: [#TO_COMPOSITION_PARENT, #TO_COMPOSITION_ROOT]
+  _BR_NFIssuer,
+  _Language
+}
+where domname  = 'J_1B_FISC_DOC_ISSUER'
+  and as4local = 'A'
+```

@@ -1,0 +1,113 @@
+---
+name: I_CONACCTPRTNINVCGCHRGANDDISC
+description: Conacctprtninvcgchrganddisc
+app_component: FI-CA-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-CA
+  - interface-view
+  - component:FI-CA-2CL
+  - lob:Finance
+---
+# I_CONACCTPRTNINVCGCHRGANDDISC
+
+**Conacctprtninvcgchrganddisc**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-CA-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ContractAccount` | `vkont` |
+| key `BusinessPartner` | `gpart` |
+| key `CAInvcgChargeAndDiscountKey` | `chgkey` |
+| key `CAInvcgChrgAndDiscKeyStartDate` | `date_from` |
+| `CAInvcgChrgAndDiscKeyEndDate` | `date_to` |
+| `CAApplicationArea` | `cast( 'C' as applk_kk preserving type )` |
+| `_BusinessPartner` | *Association* |
+| `_CAApplicationArea` | *Association* |
+| `_CAInvcgChrgAndDiscKey` | *Association* |
+| `_ContractAccount` | *Association* |
+| `_ContractAccountPartner` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BusinessPartner` | `I_BusinessPartner` | [1..1] |
+| `_CAApplicationArea` | `I_CAApplicationArea` | [1..1] |
+| `_CAInvcgChrgAndDiscKey` | `I_CAInvcgChrgAndDiscKey` | [1..1] |
+| `_ContractAccount` | `I_ContractAccountHeader` | [1..1] |
+| `_ContractAccountPartner` | `I_ContractAccountPartner` | [1..1] |
+
+## Source Code
+
+```abap
+@AccessControl: { authorizationCheck: #MANDATORY,
+                  personalData: { blocking: #REQUIRED,
+                                  blockingIndicator: ['_BusinessPartner.IsBusinessPurposeCompleted'] } }
+
+@Analytics.technicalName: 'ICONACCTPARTICD'
+
+@EndUserText.label: 'Contr Acct Partner Invcg Charge and Disc'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: { modelingPattern: #NONE,
+                representativeKey: 'CAInvcgChargeAndDiscountKey',
+                sapObjectNodeType.name: 'ContrAcctPrtnInvcgChrgAndDisc',
+                supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #CDS_MODELING_DATA_SOURCE,
+                                         #SQL_DATA_SOURCE ],
+                usageType: { dataClass: #MASTER,
+                             serviceQuality: #A,
+                             sizeCategory: #XL } }
+
+@VDM.viewType: #BASIC
+
+define view entity I_ConAcctPrtnInvcgChrgAndDisc
+  as select from fkkvkp_chgdisc
+
+  association [1..1] to I_BusinessPartner        as _BusinessPartner        on  $projection.BusinessPartner = _BusinessPartner.BusinessPartner
+  association [1..1] to I_CAApplicationArea      as _CAApplicationArea      on  $projection.CAApplicationArea = _CAApplicationArea.CAApplicationArea
+  association [1..1] to I_CAInvcgChrgAndDiscKey  as _CAInvcgChrgAndDiscKey  on  $projection.CAInvcgChargeAndDiscountKey = _CAInvcgChrgAndDiscKey.CAInvcgChargeAndDiscountKey
+                                                                            and _CAInvcgChrgAndDiscKey.CAApplicationArea = 'C'
+  association [1..1] to I_ContractAccountHeader  as _ContractAccount        on  $projection.ContractAccount = _ContractAccount.ContractAccount
+  association [1..1] to I_ContractAccountPartner as _ContractAccountPartner on  $projection.BusinessPartner = _ContractAccountPartner.BusinessPartner
+                                                                            and $projection.ContractAccount = _ContractAccountPartner.ContractAccount
+
+{
+      @ObjectModel.foreignKey.association: '_ContractAccount'
+  key vkont                                   as ContractAccount,
+      @ObjectModel.foreignKey.association: '_BusinessPartner'
+  key gpart                                   as BusinessPartner,
+      @ObjectModel.foreignKey.association: '_CAInvcgChrgAndDiscKey'
+  key chgkey                                  as CAInvcgChargeAndDiscountKey,
+      @Semantics.businessDate.from: true
+  key date_from                               as CAInvcgChrgAndDiscKeyStartDate,
+
+      @Semantics.businessDate.to: true
+      date_to                                 as CAInvcgChrgAndDiscKeyEndDate,
+
+      //needs to be kept due to be compatible (view is C1 released)
+      @ObjectModel.foreignKey.association: '_CAApplicationArea'
+      cast( 'C' as applk_kk preserving type ) as CAApplicationArea,
+
+      _BusinessPartner,
+      _CAApplicationArea,
+      _CAInvcgChrgAndDiscKey,
+      _ContractAccount,
+      _ContractAccountPartner
+}
+```

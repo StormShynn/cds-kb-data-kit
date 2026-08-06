@@ -1,0 +1,94 @@
+---
+name: I_REFERENCEENTITY
+description: Referenceentity
+app_component: FIN-FSCM-TRM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-FSCM
+  - FIN-FSCM-TRM
+  - interface-view
+  - component:FIN-FSCM-TRM-2CL
+  - lob:Other
+---
+# I_REFERENCEENTITY
+
+**Referenceentity**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-FSCM-TRM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `TreasuryReferenceEntity` | `RefEntity.ref_entity` |
+| `TextDescription` | `RefEntity.description` |
+| `BusinessPartner` | `RefEntityAttri.business_partner` |
+| `CompanyCode` | `RefEntityAttri.compcode` |
+| `_BusinessPartner` | *Association* |
+| `_CompanyCode` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BusinessPartner` | `I_BusinessPartner` | [1..1] |
+| `_CompanyCode` | `I_CompanyCode` | [1..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IREFERENCEENT'
+@AbapCatalog.compiler.compareFilter: true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@AbapCatalog.preserveKey:true
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #S
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics.internalName:#LOCAL
+@ObjectModel.usageType.dataClass:  #CUSTOMIZING
+@ObjectModel.representativeKey: 'TreasuryReferenceEntity'
+@Analytics : {dataCategory: #DIMENSION, dataExtraction.enabled:true}
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE ]
+@ObjectModel.modelingPattern: [ #ANALYTICAL_DIMENSION ]
+@EndUserText.label: 'ReferenceEntity Attribute'
+@ObjectModel.sapObjectNodeType.name: 'TreasuryReferenceEntity'
+define view I_ReferenceEntity
+  as select from    tyc_ref_ent_def as RefEntity
+    left outer join ftbb_yc_ref_ent as RefEntityAttri on RefEntity.ref_entity = RefEntityAttri.ref_entity
+  association [1..1] to I_BusinessPartner as _BusinessPartner on $projection.BusinessPartner = _BusinessPartner.BusinessPartner
+  association [1..1] to I_CompanyCode     as _CompanyCode     on $projection.CompanyCode = _CompanyCode.CompanyCode
+
+{
+      @ObjectModel.text.element:'TextDescription'
+      //   @Search: {
+      //      defaultSearchElement: true,
+      //      ranking: #HIGH,
+      //      fuzzinessThreshold: 0.7
+      //   }
+  key RefEntity.ref_entity            as TreasuryReferenceEntity,
+      @Semantics.text
+      //   @Search: {
+      //      ranking: #HIGH,
+      //      fuzzinessThreshold: 0.7
+      //   }
+      RefEntity.description           as TextDescription,
+      RefEntityAttri.business_partner as BusinessPartner,
+      RefEntityAttri.compcode         as CompanyCode,
+
+      _BusinessPartner,
+      _CompanyCode
+
+}
+```

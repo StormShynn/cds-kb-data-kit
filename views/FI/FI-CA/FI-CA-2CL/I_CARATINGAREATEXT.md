@@ -1,0 +1,83 @@
+---
+name: I_CARATINGAREATEXT
+description: Caratingareatext
+app_component: FI-CA-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-CA
+  - interface-view
+  - text-view
+  - text
+  - component:FI-CA-2CL
+  - lob:Finance
+---
+# I_CARATINGAREATEXT
+
+**Caratingareatext**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-CA-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CARatingArea` | `tfk_ra_def_t.rating_area` |
+| key `Language` | `tfk_ra_def_t.langu` |
+| `CARatingAreaDescription` | `tfk_ra_def_t.ra_txt` |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@EndUserText.label: 'Rating Area - Text'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: { dataCategory: #TEXT,
+                modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+                representativeKey: 'CARatingArea',
+                supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #CDS_MODELING_DATA_SOURCE,
+                                         #LANGUAGE_DEPENDENT_TEXT,
+                                         #SQL_DATA_SOURCE ],
+                usageType: { dataClass: #CUSTOMIZING,
+                             serviceQuality: #A,
+                             sizeCategory: #S } }
+
+@VDM.viewType: #BASIC
+
+define view entity I_CARatingAreaText
+  as select from tfk_ra_def_t
+
+  association [0..1] to I_Language as _Language on $projection.Language = _Language.Language
+
+{
+  key tfk_ra_def_t.rating_area as CARatingArea,
+      @Semantics.language
+      @ObjectModel.foreignKey.association: '_Language'
+  key tfk_ra_def_t.langu       as Language,
+
+      @Semantics.text
+      tfk_ra_def_t.ra_txt      as CARatingAreaDescription,
+
+      _Language
+}
+```

@@ -1,0 +1,338 @@
+---
+name: I_RECONTROBJECTCASHFLOW
+description: Recontrobjectcashflow
+app_component: RE-FX-CN-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - RE
+  - RE-FX
+  - RE-FX-CN
+  - interface-view
+  - component:RE-FX-CN-2CL
+  - lob:Other
+---
+# I_RECONTROBJECTCASHFLOW
+
+**Recontrobjectcashflow**
+
+| Property | Value |
+|---|---|
+| App Component | `RE-FX-CN-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `REObjectCashFlowRecordUUID` | `REObjectCashFlowRecordUUID` |
+| `REConditionUUID` | `REConditionUUID` |
+| `ValidityStartDate` | `ValidityStartDate` |
+| `REDocumentReferenceUUID` | `REDocumentReferenceUUID` |
+| `InternalRealEstateNumber` | `InternalRealEstateNumber` |
+| `CreationDate` | `CreationDate` |
+| `CreationTime` | `CreationTime` |
+| `RESourceOfCreation` | `RESourceOfCreation` |
+| `LastChangeDate` | `LastChangeDate` |
+| `LastChangeTime` | `LastChangeTime` |
+| `RESourceOfChange` | `RESourceOfChange` |
+| `CalculationPeriodStartDate` | `CalculationPeriodStartDate` |
+| `CalcPeriodStartDateIsExclusive` | `CalcPeriodStartDateIsExclusive` |
+| `CalcPeriodStartDateIsMonthEnd` | `CalcPeriodStartDateIsMonthEnd` |
+| `CalculationPeriodEndDate` | `CalculationPeriodEndDate` |
+| `CalcPeriodEndDateIsInclusive` | `CalcPeriodEndDateIsInclusive` |
+| `CalcPeriodEndDateIsMonthEnd` | `CalcPeriodEndDateIsMonthEnd` |
+| `CalculationDate` | `CalculationDate` |
+| `CalcDateIsAsEndDateInclusive` | `CalcDateIsAsEndDateInclusive` |
+| `CalculationDateIsMonthEnd` | `CalculationDateIsMonthEnd` |
+| `PaymentDueDate` | `PaymentDueDate` |
+| `DueDateIsMonthEnd` | `DueDateIsMonthEnd` |
+| `NextWorkingDateForPayDueDate` | `NextWorkingDateForPayDueDate` |
+| `NumberOfDays` | `NumberOfDays` |
+| `NumberOfCalculationDays` | `NumberOfCalculationDays` |
+| `InterestBaseDaysMethod` | `InterestBaseDaysMethod` |
+| `InterestCalculationMethod` | `InterestCalculationMethod` |
+| `REBeginOfPeriodDate` | `REBeginOfPeriodDate` |
+| `PeriodStartDateIsExclusive` | `PeriodStartDateIsExclusive` |
+| `PeriodStartDateIsMonthEnd` | `PeriodStartDateIsMonthEnd` |
+| `REEndOfPeriodDate` | `REEndOfPeriodDate` |
+| `PeriodEndDateIsInclusive` | `PeriodEndDateIsInclusive` |
+| `PeriodEndDateIsMonthEnd` | `PeriodEndDateIsMonthEnd` |
+| `REConditionCurrency` | `REConditionCurrency` |
+| `REUnitPrice` | `REUnitPrice` |
+| `REProRataMethod` | `REProRataMethod` |
+| `REPaymentStatus` | `REPaymentStatus` |
+| `CashFlowConditionGroup` | `CashFlowConditionGroup` |
+| `RETaxType` | `RETaxType` |
+| `RETaxGroup` | `TaxGroup` |
+| `TaxJurisdiction` | `TaxJurisdiction` |
+| `REIsConditionGrossAmount` | `REIsConditionGrossAmount` |
+| `TaxCountry` | `TaxCountry` |
+| `CashFlowItemOrigin` | `CashFlowItemOrigin` |
+| `REFlowType` | `REFlowType` |
+| `REOriginalFlowType` | `REOriginalFlowType` |
+| `RERelshpOriglToFlowType` | `RERelshpOriglToFlowType` |
+| `CashFlowPostingStatus` | `CashFlowPostingStatus` |
+| `PlanningLevel` | `PlanningLevel` |
+| `REHasEnteredCashMgmtForecast` | `REHasEnteredCashMgmtForecast` |
+| `IsToBeArchived` | `IsToBeArchived` |
+| `REOriglDueDate` | `REOriglDueDate` |
+| `REConditionType` | `REConditionType` |
+| `REPostingTerm` | `REPostingTerm` |
+| `RERhythmTerm` | `RERhythmTerm` |
+| `REAdjustmentNumber` | `REAdjustmentNumber` |
+| `REOrgAssignmentTerm` | `REOrgAssignmentTerm` |
+| `RESalesTerm` | `RESalesTerm` |
+| `REPeakSalesTerm` | `REPeakSalesTerm` |
+| `REWithholdingTaxTerm` | `REWithholdingTaxTerm` |
+| `REOriglExDueDate` | `REOriglExDueDate` |
+| `REAdvancePaymentRelevantStatus` | `REAdvancePaymentRelevantStatus` |
+| `PostingDate` | `PostingDate` |
+| `DocumentDate` | `DocumentDate` |
+| `ExchangeRateDate` | `ExchangeRateDate` |
+| `REReversalForUUID` | `REReversalForUUID` |
+| `REReversalByUUID` | `REReversalByUUID` |
+| `REFollowUpPostingUUID` | `REFollowUpPostingUUID` |
+| `REBookedFlowType` | `REBookedFlowType` |
+| `RERelshpBookedToFlowType` | `RERelshpBookedToFlowType` |
+| `RETaxCalcDate` | `RETaxCalcDate` |
+| `REModifiedDueDate` | `REModifiedDueDate` |
+| `RECalcDueDate` | `RECalcDueDate` |
+| `RECurrencyTranslationRule` | `RECurrencyTranslationRule` |
+| `REIsPostInConditionCurrency` | `REIsPostInConditionCurrency` |
+| `REPlndTranslationDate` | `REPlndTranslationDate` |
+| `REActlTranslationDate` | `REActlTranslationDate` |
+| `REOriglActlTranslationDate` | `REOriglActlTranslationDate` |
+| `REIsTranslationDateFrmCashFlow` | `REIsTranslationDateFrmCashFlow` |
+| `REStatusObject` | `REStatusObject` |
+| `RECashFlowPositionAmount` | `case when _REFlowType.DebitCreditCode = 'H' then RECashFlowPositionAmount * ( -1 ) else RECashFlowPositionAmount end` |
+| `_CostCenterCalculation` | *Association* |
+| `_WBSElementCalculation` | *Association* |
+| `_InternalOrderCalculation` | *Association* |
+| `_REContract` | *Association* |
+| `_RECondition` | *Association* |
+| `_REConditionType` | *Association* |
+| `_REDocumentHeader` | *Association* |
+| `_RERhythmTerm` | *Association* |
+| `_REPostingTerm` | *Association* |
+| `_RETaxType` | *Association* |
+| `_RETaxGroup` | *Association* |
+| `_TaxCountry` | *Association* |
+| `_REFlowType` | *Association* |
+| `_REOriglFlowType` | *Association* |
+| `_PlanningLevel` | *Association* |
+| `_REProRateMethod` | *Association* |
+| `_RECashFlowItemOrigin` | *Association* |
+| `_RERelshpOriglToFlowType` | *Association* |
+| `_RECashFlowPostingStatus` | *Association* |
+| `_REAdvancePaytRlvtStatus` | *Association* |
+| `_REBookedFlowType` | *Association* |
+| `_RERelshpBookedToFlowType` | *Association* |
+| `_REPaymentStatus` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CostCenterCalculation` | `I_CostCenter` | [0..1] |
+| `_WBSElementCalculation` | `I_WBSElementBasicData` | [0..1] |
+| `_InternalOrderCalculation` | `I_InternalOrder` | [0..1] |
+
+## Source Code
+
+```abap
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #REQUIRED
+}
+@EndUserText.label: 'Real Estate Contract Object Cashflow'
+@Analytics: {
+  dataCategory: #DIMENSION,
+  internalName: #LOCAL,
+  dataExtraction.enabled: true
+}
+@ObjectModel: {
+  representativeKey: 'REObjectCashFlowRecordUUID',
+  usageType: {
+    dataClass: #MIXED,
+    serviceQuality: #C,
+    sizeCategory: #XL
+  },
+  modelingPattern: #ANALYTICAL_DIMENSION,
+  supportedCapabilities: [
+    #ANALYTICAL_DIMENSION,
+    #CDS_MODELING_ASSOCIATION_TARGET,
+    #EXTRACTION_DATA_SOURCE
+  ],
+  sapObjectNodeType.name: 'REContractObjectCashFlow'
+}
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
+@VDM.viewType: #COMPOSITE
+define view entity I_REContrObjectCashFlow
+  as select from I_REObjectCashFlow
+  // Calc FI/CO objects
+  association [0..1] to I_CostCenter          as _CostCenterCalculation    on $projection.REStatusObject = _CostCenterCalculation.ObjectInternalID
+  association [0..1] to I_WBSElementBasicData as _WBSElementCalculation    on $projection.REStatusObject = _WBSElementCalculation.WBSElementObject
+  association [0..1] to I_InternalOrder       as _InternalOrderCalculation on $projection.REStatusObject = _InternalOrderCalculation.ControllingObject
+{
+  key REObjectCashFlowRecordUUID,
+      @ObjectModel.foreignKey.association: '_RECondition'
+      REConditionUUID,
+      ValidityStartDate,
+      @ObjectModel.foreignKey.association: '_REDocumentHeader'
+      REDocumentReferenceUUID,
+      @ObjectModel.foreignKey.association: '_REContract'
+      InternalRealEstateNumber,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      CreationTime,
+      RESourceOfCreation,
+      LastChangeDate,
+      LastChangeTime,
+      RESourceOfChange,
+      CalculationPeriodStartDate,
+      @Semantics.booleanIndicator: true
+      CalcPeriodStartDateIsExclusive,
+      @Semantics.booleanIndicator: true
+      CalcPeriodStartDateIsMonthEnd,
+      @Semantics.businessDate.at: true
+      CalculationPeriodEndDate,
+      @Semantics.booleanIndicator: true
+      CalcPeriodEndDateIsInclusive,
+      @Semantics.booleanIndicator: true
+      CalcPeriodEndDateIsMonthEnd,
+      @Semantics.businessDate.at: true
+      CalculationDate,
+      @Semantics.booleanIndicator: true
+      CalcDateIsAsEndDateInclusive,
+      @Semantics.booleanIndicator: true
+      CalculationDateIsMonthEnd,
+      PaymentDueDate,
+      @Semantics.booleanIndicator: true
+      DueDateIsMonthEnd,
+      NextWorkingDateForPayDueDate,
+      NumberOfDays,
+      NumberOfCalculationDays,
+      InterestBaseDaysMethod,
+      InterestCalculationMethod,
+      REBeginOfPeriodDate,
+      @Semantics.booleanIndicator: true
+      PeriodStartDateIsExclusive,
+      @Semantics.booleanIndicator: true
+      PeriodStartDateIsMonthEnd,
+      REEndOfPeriodDate,
+      @Semantics.booleanIndicator: true
+      PeriodEndDateIsInclusive,
+      @Semantics.booleanIndicator: true
+      PeriodEndDateIsMonthEnd,
+      REConditionCurrency,
+      @Semantics.amount.currencyCode: 'REConditionCurrency'
+      REUnitPrice,
+      @ObjectModel.foreignKey.association: '_REProRateMethod'
+      REProRataMethod,
+      REPaymentStatus,
+      CashFlowConditionGroup,
+      @ObjectModel.foreignKey.association: '_RETaxType'
+      RETaxType,
+      @ObjectModel.foreignKey.association: '_RETaxGroup'
+      TaxGroup as RETaxGroup,
+      TaxJurisdiction,
+      REIsConditionGrossAmount,
+      @ObjectModel.foreignKey.association: '_TaxCountry'
+      TaxCountry,
+      @ObjectModel.foreignKey.association: '_RECashFlowItemOrigin'
+      CashFlowItemOrigin,
+      @ObjectModel.foreignKey.association: '_REFlowType'
+      REFlowType,
+      @ObjectModel.foreignKey.association: '_REOriglFlowType'
+      REOriginalFlowType,
+      @ObjectModel.foreignKey.association: '_RERelshpOriglToFlowType'
+      RERelshpOriglToFlowType,
+      @ObjectModel.foreignKey.association: '_RECashFlowPostingStatus'
+      CashFlowPostingStatus,
+      @ObjectModel.foreignKey.association: '_PlanningLevel'
+      PlanningLevel,
+      @Semantics.booleanIndicator: true
+      REHasEnteredCashMgmtForecast,
+      IsToBeArchived,
+      REOriglDueDate,
+      @ObjectModel.foreignKey.association: '_REConditionType'
+      REConditionType,
+      REPostingTerm,
+      RERhythmTerm,
+      REAdjustmentNumber,
+      REOrgAssignmentTerm,
+      RESalesTerm,
+      REPeakSalesTerm,
+      REWithholdingTaxTerm,
+      REOriglExDueDate,
+      @ObjectModel.foreignKey.association: '_REAdvancePaytRlvtStatus'
+      REAdvancePaymentRelevantStatus,
+      @Semantics.businessDate.at: true
+      PostingDate,
+      @Semantics.businessDate.at: true
+      DocumentDate,
+      @Semantics.businessDate.at: true
+      ExchangeRateDate,
+      REReversalForUUID,
+      REReversalByUUID,
+      REFollowUpPostingUUID,
+      @ObjectModel.foreignKey.association: '_REBookedFlowType'
+      REBookedFlowType,
+      @ObjectModel.foreignKey.association: '_RERelshpBookedToFlowType'
+      RERelshpBookedToFlowType,
+      @Semantics.businessDate.at: true
+      RETaxCalcDate,
+      @Semantics.businessDate.at: true
+      REModifiedDueDate,
+      @Semantics.businessDate.at: true
+      RECalcDueDate,
+      RECurrencyTranslationRule,
+      REIsPostInConditionCurrency,
+      @Semantics.businessDate.at: true
+      REPlndTranslationDate,
+      @Semantics.businessDate.at: true
+      REActlTranslationDate,
+      @Semantics.businessDate.at: true
+      REOriglActlTranslationDate,
+      REIsTranslationDateFrmCashFlow,
+      REStatusObject,
+
+      @Semantics.amount.currencyCode: 'REConditionCurrency'
+      case when _REFlowType.DebitCreditCode = 'H'
+       then RECashFlowPositionAmount * ( -1 )
+       else RECashFlowPositionAmount
+      end      as RECashFlowPositionAmount,
+
+      _REContract,
+      _RECondition,
+      _REConditionType,
+      _REDocumentHeader,
+      _RERhythmTerm,
+      _REPostingTerm,
+      _RETaxType,
+      _RETaxGroup,
+      _TaxCountry,
+      _REFlowType,
+      _REOriglFlowType,
+      _PlanningLevel,
+      _REProRateMethod,
+      _RECashFlowItemOrigin,
+      _RERelshpOriglToFlowType,
+      _RECashFlowPostingStatus,
+      _REAdvancePaytRlvtStatus,
+      _REBookedFlowType,
+      _RERelshpBookedToFlowType,
+      _REPaymentStatus,
+
+      _CostCenterCalculation,
+      _WBSElementCalculation,
+      _InternalOrderCalculation
+}
+```

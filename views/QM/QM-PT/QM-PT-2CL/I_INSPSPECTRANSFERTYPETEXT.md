@@ -1,0 +1,93 @@
+---
+name: I_INSPSPECTRANSFERTYPETEXT
+description: Inspspectransfertypetext
+app_component: QM-PT-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - QM
+  - QM-PT
+  - interface-view
+  - text-view
+  - text
+  - component:QM-PT-2CL
+  - lob:Quality Management
+---
+# I_INSPSPECTRANSFERTYPETEXT
+
+**Inspspectransfertypetext**
+
+| Property | Value |
+|---|---|
+| App Component | `QM-PT-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `InspSpecTransferType` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qvollst preserving type )` |
+| key `Language` | `ddlanguage` |
+| `InspSpecTransferTypeText` | `cast( ddtext as vdm_qvollst_text preserving type )` |
+| `_Language` | *Association* |
+| `_InspSpecTransferType` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_InspSpecTransferType` | `I_InspSpecTransferType` | [1..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Transfer Type of Master Charc - Text' //same as DDL description
+@VDM: {
+    viewType: #BASIC,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel.supportedCapabilities:
+    [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #LANGUAGE_DEPENDENT_TEXT ]
+@ObjectModel: {
+    usageType: {
+        dataClass: #META,
+        sizeCategory: #S,
+        serviceQuality: #C // as function substring is used but #A and #B must not contain functions
+    },
+    dataCategory: #TEXT,
+    representativeKey: 'InspSpecTransferType'
+}
+@Analytics.technicalName: 'IINSPTRFRTYPT'
+@Metadata.ignorePropagatedAnnotations: true
+define view entity I_InspSpecTransferTypeText
+   as select from dd07t
+  
+   association [0..1] to I_Language as _Language 
+      on $projection.Language = _Language.Language
+      
+   association [1..1] to I_InspSpecTransferType as _InspSpecTransferType 
+      on $projection.InspSpecTransferType = _InspSpecTransferType.InspSpecTransferType
+
+{
+    key cast ( substring( domvalue_l, 1, 1 ) as vdm_qvollst preserving type ) as InspSpecTransferType,
+    @Semantics.language: true
+    @ObjectModel.foreignKey.association: '_Language'
+    key ddlanguage                                                            as Language,
+
+    @Semantics.text: true
+    cast( ddtext as vdm_qvollst_text preserving type )                        as InspSpecTransferTypeText
+    
+    /* Associations */ 
+    ,_InspSpecTransferType
+    ,_Language 
+
+}
+where domname = 'QVOLLST' and as4local = 'A'
+```

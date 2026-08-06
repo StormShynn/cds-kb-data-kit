@@ -1,0 +1,84 @@
+---
+name: I_BR_VEHICLERESTRICTIONTEXT
+description: BR Vehiclerestrictiontext
+app_component: FI-LOC-LO-BR
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-LOC
+  - FI-LOC-LO
+  - interface-view
+  - text-view
+  - text
+  - component:FI-LOC-LO-BR
+  - lob:Finance
+---
+# I_BR_VEHICLERESTRICTIONTEXT
+
+**BR Vehiclerestrictiontext**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-LOC-LO-BR` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Language` | `cast( ddlanguage as spras )` |
+| key `VehicleRestriction` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehiclerestriction preserving type )` |
+| `VehicleRestrictionDesc` | `cast( ddtext as logbr_vehiclerestrictiondesc preserving type )` |
+| `_VehicleRestriction` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_VehicleRestriction` | `I_BR_VehicleRestriction` | [1..1] |
+| `_Language` | `I_Language` | [1..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Brazil Vehicle Restriction - Text'
+@ObjectModel.dataCategory: #TEXT
+@AbapCatalog.compiler.compareFilter: true
+@VDM.viewType: #BASIC
+@AbapCatalog.sqlViewName: 'IBRVEHRSTRCNT'
+@AccessControl.authorizationCheck: #CHECK
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.representativeKey: 'VehicleRestriction'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE,#CDS_MODELING_DATA_SOURCE]
+@AbapCatalog.preserveKey:true
+@Metadata.ignorePropagatedAnnotations: true
+
+define view I_BR_VehicleRestrictionText
+  as select from dd07t
+  association [1..1] to I_BR_VehicleRestriction as _VehicleRestriction on $projection.VehicleRestriction = _VehicleRestriction.VehicleRestriction
+  association [1..1] to I_Language              as _Language           on $projection.Language = _Language.Language
+{
+    @Semantics.language
+    key cast( ddlanguage as spras ) as Language,
+    @ObjectModel.foreignKey.association: '_VehicleRestriction'
+    key cast ( substring( domvalue_l, 1, 1 ) as logbr_vehiclerestriction preserving type ) as VehicleRestriction,
+    @Semantics.text
+    cast( ddtext as logbr_vehiclerestrictiondesc preserving type ) as VehicleRestrictionDesc,
+    @ObjectModel.association.type: [#TO_COMPOSITION_PARENT, #TO_COMPOSITION_ROOT]
+    _VehicleRestriction, //Comment this association in order to hide it if this association causes issues in analytical consumption
+    _Language //Comment this association in order to hide it if this association causes issues in analytical consumption
+}
+where domname  = 'J_1B_VEH_RESTRICTION'
+  and as4local = 'A'
+```

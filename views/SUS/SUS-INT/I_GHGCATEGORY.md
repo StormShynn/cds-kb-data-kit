@@ -1,0 +1,90 @@
+---
+name: I_GHGCATEGORY
+description: Ghgcategory
+app_component: SUS-INT
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SUS
+  - SUS-INT
+  - interface-view
+  - component:SUS-INT
+  - lob:Other
+---
+# I_GHGCATEGORY
+
+**Ghgcategory**
+
+| Property | Value |
+|---|---|
+| App Component | `SUS-INT` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `GHGCategory` | `sufndd_ghg_cat.id` |
+| `GHGScope` | `sufndd_ghg_cat.scope` |
+| `_Text` | *Association* |
+| `_GHGScope` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_GHGCategoryText` | [0..*] |
+| `_GHGScope` | `I_GHGScope` | [1..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'GHG Category Codelist'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.ignorePropagatedAnnotations: true
+
+@Analytics.dataCategory: #DIMENSION
+@Analytics.internalName: #LOCAL
+
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.representativeKey: 'GHGCategory'
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION,
+                                     #CDS_MODELING_ASSOCIATION_TARGET,
+                                     #CDS_MODELING_DATA_SOURCE,
+                                     #SEARCHABLE_ENTITY,
+                                     #SQL_DATA_SOURCE,
+                                     #EXTRACTION_DATA_SOURCE]
+
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.dataClass:      #META
+@ObjectModel.usageType.sizeCategory:   #S
+@ObjectModel.sapObjectNodeType.name: 'GreenhouseGasCategory'
+
+@Search.searchable: true
+
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #BASIC
+
+@Analytics.dataExtraction.enabled: true
+define view entity I_GHGCategory
+  as select from sufndd_ghg_cat
+  association [0..*] to I_GHGCategoryText as _Text on $projection.GHGCategory = _Text.GHGCategory
+  association [1..1] to I_GHGScope        as _GHGScope on $projection.GHGScope = _GHGScope.GHGScope
+{
+      @Search.defaultSearchElement: true
+      @Search.ranking: #HIGH
+      @ObjectModel.text.association: '_Text'
+  key sufndd_ghg_cat.id    as GHGCategory,
+
+      @ObjectModel.foreignKey.association: '_GHGScope'
+      sufndd_ghg_cat.scope as GHGScope,
+
+      _Text,
+      _GHGScope
+}
+```

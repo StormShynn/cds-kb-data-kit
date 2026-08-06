@@ -1,0 +1,48 @@
+---
+name: D_RPTVMFGCONFIRMATIONCANCELP
+description: D Rptvmfgconfirmationcancelp
+app_component: PP-REM-ADE-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PP
+  - PP-REM
+  - PP-REM-ADE
+  - component:PP-REM-ADE-2CL
+  - lob:Manufacturing
+---
+# D_RPTVMFGCONFIRMATIONCANCELP
+
+**D Rptvmfgconfirmationcancelp**
+
+| Property | Value |
+|---|---|
+| App Component | `PP-REM-ADE-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| `PostingDate` | `budat` |
+| `PlantDataCollectionID` | `sa_bdenr` |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Input for Rptv Mfg Conf RAP BO Cancel Action'
+@VDM.usage.type: [#ACTION_PARAMETER_STRUCTURE]
+@ObjectModel.supportedCapabilities: [#DATA_STRUCTURE]
+@ObjectModel.modelingPattern: #DATA_STRUCTURE
+define abstract entity D_RptvMfgConfirmationCancelP
+{
+  PostingDate           : budat;
+  @Consumption.defaultValue: ''
+  PlantDataCollectionID : sa_bdenr;
+}
+```

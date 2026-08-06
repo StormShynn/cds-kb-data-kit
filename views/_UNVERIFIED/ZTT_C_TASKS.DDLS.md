@@ -1,0 +1,339 @@
+---
+name: ZTT_C_TASKS.DDLS
+description: Consumption: Tasks
+software_component: SAPSCORE
+release_state: unverified
+clean_core_level: A
+system_type: S/4HANA Cloud Public Edition
+source_available: true
+source_url: https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_c_tasks.ddls.asddls
+semantic_en: Consumption: Tasks — CDS view based on ZTT_I_TASKS.
+semantic_vi: Consumption: Tasks — CDS view dựa trên ZTT_I_TASKS.
+keywords:
+  - consumption:
+  - tasks
+  - project
+  - code
+  - description
+  - status
+  - progress
+  - criticality
+tags:
+  - CO
+  - component:CO
+  - lob:controlling
+  - task
+---
+# ZTT_C_TASKS.DDLS
+
+**Consumption: Tasks**
+
+| Property | Value |
+|---|---|
+| Software Component | `SAPSCORE` |
+| Release State | Unverified (auto-discovered, needs review) (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+| Source | [View source file](https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_c_tasks.ddls.asddls) |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| `projectCode` | `, {type: #FOR_ACTION, position: 3, dataAction: 'BOPF:CREATE_TR_CU', label: 'New Customizing TR'}, {type: #FOR_ACTION, position: 8, dataAction: 'BOPF:CANCEL', label: 'Cancel'}, {type: #FOR_ACTION, position: 8, dataAction: 'BOPF:BACK_PREVIOUS_VERSION', label: 'Restore status'}, {type: #FOR_ACTION, position: 9, dataAction: 'BOPF:END_TASK', label: 'End task'}, { position: 10, importance: #HIGH } ], lineItem: [ {type: #FOR_ACTION, position: 1, dataAction: 'BOPF:CANCEL', label: 'Cancel'}, {position: 10, importance: #HIGH } ], selectionField.position: 10, dataPoint.title: 'Project code' } key project_code` |
+| `code` | `, lineItem: { position: 20, importance: #HIGH }, selectionField.position: 20, dataPoint: { title: 'Task', criticality: 'endCritically' } } key code` |
+| `description` | `, lineItem: { position: 30, importance: #HIGH }, selectionField.position: 30 } description` |
+| `status` | `, lineItem: { position: 35, importance: #HIGH }, selectionField.position: 35 } status` |
+| `progressCriticality` | `case when progress < 33 then 1 when progress > 66 then 3 else 2 end` |
+| `progress` | `progress` |
+| `estimation` | `estimation` |
+| `totalHours` | `_totalHours.totalHours` |
+| `planEndDate` | `plan_end_date` |
+| `endDate` | `ended_on` |
+| `endCritically` | `, lineItem: {position: 66, importance: #MEDIUM, criticality: 'endCritically' }, textArrangement: #TEXT_ONLY } cast( case when plan_end_date <> '00000000' then case when secondsToDeadline <= 0 then 1 when secondsToDeadline between 0 and 86400 then 2 else 3 end else 0 end as abap.char(3) )` |
+| `functionalResponsible` | `, lineItem: { position: 70, importance: #HIGH, type: #AS_CONTACT, label: 'Functional Responsible', value: '_functionalUserInfo' }, selectionField.position: 70 } functional_responsible` |
+| `technicalResponsible` | `, lineItem: { position: 80, importance: #MEDIUM, type: #AS_CONTACT, label: 'Technical Responsible', value: '_technicalUserInfo' }, selectionField.position: 80 } technical_responsible` |
+| `_project` | *Association* |
+| `_status` | *Association* |
+| `_criticality` | *Association* |
+| `_comments` | *Association* |
+| `_transportRequests` | *Association* |
+| `_timeLog` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_project` | `ZTT_C_PROJECTS` | [1] |
+| `_functionalUserInfo` | `ZTT_VH_USER` | [0..1] |
+| `_technicalUserInfo` | `ZTT_VH_USER` | [0..1] |
+| `_status` | `ZTT_I_STATUS` | [0..1] |
+| `_criticality` | `ZTT_I_TASK_CRITICALITY` | [0..1] |
+| `_comments` | `ZTT_C_TASK_COMMENTS` | [0..*] |
+| `_transportRequests` | `ZTT_C_TASK_TRANSPORT_REQUEST` | [0..*] |
+| `_timeLog` | `ZTT_C_TASK_TIME_LOG` | [0..*] |
+
+## Source Code
+
+*Source: [https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_c_tasks.ddls.asddls](https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_c_tasks.ddls.asddls)*
+
+```abap
+@AbapCatalog.sqlViewName: 'ZTTC_TASKS'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Consumption: Tasks'
+
+@Search.searchable: true
+@OData.publish: true
+@Metadata.allowExtensions
+
+@ObjectModel: {
+    representativeKey: 'code',
+    semanticKey: [ 'projectCode', 'code' ],
+    createEnabled: true,
+    updateEnabled: 'EXTERNAL_CALCULATION',
+    deleteEnabled: 'EXTERNAL_CALCULATION',
+    transactionalProcessingDelegated: true
+}
+
+@UI: {
+    headerInfo: {
+        typeName: 'Task',
+        typeNamePlural: 'Tasks',
+        title.label: 'Description',
+        title.value: 'description',
+        title.criticality: 'endCritically',
+        description.label: 'Task code',
+        description.value: 'code',
+        description.criticality: 'endCritically'
+    },
+    lineItem:[{criticality:'endCritically'}]
+}
+
+define view ZTT_C_TASKS
+    as select from ZTT_I_TASKS as task
+    association [1] to ZTT_C_PROJECTS                  as _project            on $projection.projectCode = _project.projectCode
+    association [0..1] to ZTT_VH_USER                  as _functionalUserInfo on $projection.functionalResponsible = _functionalUserInfo.userName
+    association [0..1] to ZTT_VH_USER                  as _technicalUserInfo  on $projection.technicalResponsible = _technicalUserInfo.userName
+    association [0..1] to ZTT_I_STATUS                 as _status             on $projection.status      = _status.status
+    association [0..1] to ZTT_I_TASK_CRITICALITY       as _criticality        on $projection.endCritically = _criticality.criticality
+    association [0..*] to ZTT_C_TASK_COMMENTS          as _comments           on $projection.code        = _comments.taskCode
+                                                                             and $projection.projectCode = _comments.projectCode
+    association [0..*] to ZTT_C_TASK_TRANSPORT_REQUEST as _transportRequests  on $projection.code        = _transportRequests.taskCode
+                                                                             and $projection.projectCode = _transportRequests.projectCode
+    association [0..*] to ZTT_C_TASK_TIME_LOG          as _timeLog            on $projection.code        = _timeLog.taskCode
+                                                                             and $projection.projectCode = _timeLog.projectCode
+{
+
+        @Search: {
+            defaultSearchElement: true,
+            ranking: #HIGH,
+            fuzzinessThreshold: 1
+        }
+        @UI: {
+            identification: [
+                {type: #FOR_ACTION, position: 2, dataAction: 'BOPF:CREATE_TR_WB', label: 'New Workbench TR'},
+                {type: #FOR_ACTION, position: 3, dataAction: 'BOPF:CREATE_TR_CU', label: 'New Customizing TR'},
+                {type: #FOR_ACTION, position: 8, dataAction: 'BOPF:CANCEL', label: 'Cancel'},
+                {type: #FOR_ACTION, position: 8, dataAction: 'BOPF:BACK_PREVIOUS_VERSION', label: 'Restore status'},
+                {type: #FOR_ACTION, position: 9, dataAction: 'BOPF:END_TASK', label: 'End task'},
+                { position: 10, importance: #HIGH }
+            ],
+            lineItem: [
+                {type: #FOR_ACTION, position: 1, dataAction: 'BOPF:CANCEL', label: 'Cancel'},
+                {position: 10, importance: #HIGH }
+            ],
+            selectionField.position: 10,
+            dataPoint.title: 'Project code'
+        }
+        @Consumption.valueHelp:'_project'
+        @ObjectModel.foreignKey.association: '_project'
+    key project_code as projectCode,
+    
+        @Search: {
+            defaultSearchElement: true,
+            ranking: #HIGH,
+            fuzzinessThreshold: 1
+        }
+        @UI: {
+            identification: {
+                position: 20,
+                importance: #HIGH
+            },
+            lineItem: {
+                position: 20,
+                importance: #HIGH
+            },
+            selectionField.position: 20,
+            dataPoint: {
+                title: 'Task',
+                criticality: 'endCritically'
+            }
+        }
+    key code,
+    
+        @Search: {
+            defaultSearchElement: true,
+            ranking: #MEDIUM,
+            fuzzinessThreshold: 0.8
+        }
+        @UI: {
+            identification: {
+                position: 30,
+                importance: #HIGH
+            },
+            lineItem: {
+                position: 30,
+                importance: #HIGH
+            },
+            selectionField.position: 30
+        }
+        @ObjectModel.mandatory: true
+        @Semantics.text: true
+        description,
+        
+        @Search: {
+            defaultSearchElement: true,
+            ranking: #MEDIUM,
+            fuzzinessThreshold: 1
+        }
+        @UI: {
+            identification: {
+                position: 35,
+                importance: #HIGH
+            },
+            lineItem: {
+                position: 35,
+                importance: #HIGH
+            },
+            selectionField.position: 35
+        }
+        @ObjectModel.mandatory: true
+        @Consumption.valueHelp:'_status'
+        @Consumption.filter.defaultValue: ['OPEN']
+        @ObjectModel.foreignKey.association: '_status'
+        @UI.statusInfo: [ { position: 10 } ]
+        status,
+        
+        @ObjectModel.readOnly: true
+        case when progress < 33 then 1
+             when progress > 66 then 3
+                                else 2
+             end as progressCriticality,
+        
+        @UI.identification: {position: 38, importance: #MEDIUM }
+        @UI.lineItem: {position: 38, importance: #HIGH, type:#AS_DATAPOINT, criticality:'progressCriticality' }
+        @UI.dataPoint: {
+            title: 'Progress',
+            description: 'Progress percentage',
+            longDescription: 'Progress percentage',
+            minimumValue: 0,
+            maximumValue: 100,
+            responsible: 'functional_responsible',
+            targetValue: '100',
+            visualization: #PROGRESS
+        }
+        progress,
+        
+        @UI.identification: {position: 40, importance: #MEDIUM }
+        @UI.lineItem: {position: 40, importance: #HIGH }
+        estimation,
+        
+        @UI.identification: {position: 55, importance: #MEDIUM, label: 'Total Hours' }
+        @UI.lineItem: {position: 55, importance: #LOW, label: 'Total Hours' }
+        @ObjectModel.readOnly: true
+//        @DefaultAggregation: #SUM
+        _totalHours.totalHours as totalHours,
+
+        @Search.defaultSearchElement: true
+        @UI.identification: {position: 60, importance: #MEDIUM, criticality: 'endCritically' }
+        @UI.lineItem: {position: 60, importance: #MEDIUM, criticality: 'endCritically' }
+        plan_end_date as planEndDate,
+
+        @Search.defaultSearchElement: true
+        @UI.identification: {position: 63, importance: #MEDIUM }
+        @UI.lineItem: {position: 63, importance: #MEDIUM }
+        ended_on as endDate,
+        
+        @ObjectModel:{
+            readOnly: true,
+            foreignKey.association: '_criticality'
+        }
+        @UI:{
+            identification: {position: 66, importance: #MEDIUM, criticality: 'endCritically' },
+            lineItem: {position: 66, importance: #MEDIUM, criticality: 'endCritically' },
+            textArrangement: #TEXT_ONLY
+        }
+        @Consumption.valueHelp:'_criticality'
+        cast( case when plan_end_date <> '00000000'
+                      then case when secondsToDeadline <= 0 then 1
+                                when secondsToDeadline between 0 and 86400 then 2
+                                else 3
+                              end
+                      else 0 end as abap.char(3) )
+            as endCritically,
+        
+        @Search: {
+            defaultSearchElement: true,
+            ranking: #MEDIUM,
+            fuzzinessThreshold: 1
+        }
+        @UI: {
+            identification: {
+                position: 70,
+                importance: #HIGH
+            },
+            lineItem: {
+                position: 70,
+                importance: #HIGH,
+                type: #AS_CONTACT,
+                label: 'Functional Responsible',
+                value: '_functionalUserInfo'
+            },
+            selectionField.position: 70
+        }
+        @Consumption.valueHelp:'_functionalUserInfo'
+        @ObjectModel.foreignKey.association: '_functionalUserInfo'
+        functional_responsible as functionalResponsible,
+        
+        @Search: {
+            defaultSearchElement: true,
+            ranking: #MEDIUM,
+            fuzzinessThreshold: 1
+        }
+        @UI: {
+            identification: {
+                position: 80,
+                importance: #MEDIUM
+            },
+            lineItem: {
+                position: 80,
+                importance: #MEDIUM,
+                type: #AS_CONTACT,
+                label: 'Technical Responsible',
+                value: '_technicalUserInfo'
+            },
+            selectionField.position: 80
+        }
+        @Consumption.valueHelp:'_technicalUserInfo'
+        @ObjectModel.foreignKey.association: '_technicalUserInfo'
+        technical_responsible as technicalResponsible,
+        
+        /* Associations */
+        _project,
+        @ObjectModel.association.type: #TO_COMPOSITION_CHILD
+        _comments,
+        @ObjectModel.association.type: #TO_COMPOSITION_CHILD
+        _transportRequests,
+        @ObjectModel.association.type: #TO_COMPOSITION_CHILD
+        _timeLog,
+        _criticality,
+        @UI: { fieldGroup: [{ qualifier: 'Responsible', importance: #HIGH, position: 20, label: 'Functional Responsible Contact Details', type: #AS_CONTACT, value: '_functionalUserInfo'}],
+               identification: [{ importance: #HIGH, position: 71, label: 'Functional Responsible Contact Details', type: #AS_CONTACT, value: '_functionalUserInfo'}]}
+        _functionalUserInfo,
+        @UI: { fieldGroup: [{ qualifier: 'Responsible', importance: #MEDIUM, position: 21, label: 'Technical Responsible Contact Details', type: #AS_CONTACT, value: '_technicalUserInfo'}],
+               identification: [{ importance: #MEDIUM, position: 81, label: 'Technical Responsible Contact Details', type: #AS_CONTACT, value: '_technicalUserInfo'}]}
+        _technicalUserInfo,
+        _status
+}
+```

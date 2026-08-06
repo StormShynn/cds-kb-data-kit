@@ -1,0 +1,101 @@
+---
+name: I_CONTROLRECIPEDESTINATION
+description: Controlrecipedestination
+app_component: PP-VDM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PP
+  - PP-VDM
+  - interface-view
+  - component:PP-VDM-2CL
+  - lob:Manufacturing
+---
+# I_CONTROLRECIPEDESTINATION
+
+**Controlrecipedestination**
+
+| Property | Value |
+|---|---|
+| App Component | `PP-VDM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Plant` | `tc52.werks` |
+| key `ControlRecipeDestination` | `cast(tc52.phseq as vdm_phseq preserving type)` |
+| `ControlRecipeDestinationType` | `tc52.comty` |
+| `ControlRecipeDestinationName` | `tc52.sebez` |
+| `DigitalSignatureIsRequired` | `tc52.elec_sign` |
+| `NumberOfPhasesDisplayed` | `tc52.vis_phases` |
+| `_Plant` | *Association* |
+| `_Type` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Plant` | `I_Plant` | [1..1] |
+| `_Type` | `I_ControlRecipeDestinationType` | [1..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IPPCTRLRECDEST'
+@AbapCatalog.buffering: {status: #ACTIVE, type: #GENERIC, numberOfKeyFields: 002}
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics.dataCategory: #DIMENSION
+@Analytics.internalName: #LOCAL
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ClientHandling.type: #CLIENT_DEPENDENT
+@Consumption.ranked: true
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #SEARCHABLE_ENTITY]
+@ObjectModel.representativeKey: 'ControlRecipeDestination'
+@ObjectModel.sapObjectNodeType.name: 'ControlRecipeDestination'
+@ObjectModel.semanticKey: ['Plant', 'ControlRecipeDestination']
+@ObjectModel.usageType: {serviceQuality: #A, sizeCategory: #S, dataClass: #CUSTOMIZING}
+@Search.searchable: true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.lifecycle.status: #DEPRECATED  // not available in public cloud
+--@VDM.lifecycle.successor: #NONE
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Control Recipe Destination'
+
+/*+[hideWarning] { "IDS" : [ "CALCULATED_FIELD_CHECK" ]  } */
+define view I_ControlRecipeDestination
+  as select from tc52 as tc52
+
+  association [1..1] to I_Plant                        as _Plant on  $projection.Plant = _Plant.Plant
+  association [1..1] to I_ControlRecipeDestinationType as _Type  on  $projection.ControlRecipeDestinationType = _Type.ControlRecipeDestinationType
+{
+      // Key
+      @ObjectModel.foreignKey.association: '_Plant'
+      @Search: {defaultSearchElement: true, ranking: #MEDIUM, fuzzinessThreshold: 0.8}
+  key tc52.werks      as Plant,
+      @ObjectModel.text.element: ['ControlRecipeDestinationName']
+      @Search: {defaultSearchElement: true, ranking: #HIGH, fuzzinessThreshold: 0.8}
+  key cast(tc52.phseq as vdm_phseq preserving type) as ControlRecipeDestination,
+      @ObjectModel.foreignKey.association: '_Type'
+      tc52.comty      as ControlRecipeDestinationType,
+      @Search: {defaultSearchElement: true, ranking: #LOW, fuzzinessThreshold: 0.8}
+      @Semantics.text: true
+      tc52.sebez      as ControlRecipeDestinationName,
+      tc52.elec_sign  as DigitalSignatureIsRequired,
+      tc52.vis_phases as NumberOfPhasesDisplayed,
+
+      // Associations
+      _Plant,
+      _Type
+};
+```

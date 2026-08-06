@@ -1,0 +1,89 @@
+---
+name: I_LEGALDOCAGREEMENTTP
+description: Legaldocagreementtp
+app_component: CM-DOC-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CM
+  - CM-DOC
+  - interface-view
+  - transactional-processing
+  - component:CM-DOC-2CL
+  - lob:Other
+---
+# I_LEGALDOCAGREEMENTTP
+
+**Legaldocagreementtp**
+
+| Property | Value |
+|---|---|
+| App Component | `CM-DOC-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `LglCntntMAgreementUUID` | `LglCntntMAgreementUUID` |
+| `LglCntntMDocumentUUID` | `LglCntntMDocumentUUID` |
+| `LglCntntMContractTypeName` | `LglCntntMContractTypeName` |
+| `LglCntntMAgreementTemplateName` | `LglCntntMAgreementTemplateName` |
+| `LglCntntMAgreementSystemID` | `LglCntntMAgreementSystemID` |
+| `LglCntntMDocAgrmtVersion` | `LglCntntMDocAgrmtVersion` |
+| `LglCntntMDocAgrmtCoreStatus` | `LglCntntMDocAgrmtCoreStatus` |
+| `LglCntntMDocAgrmtBizStatus` | `LglCntntMDocAgrmtBizStatus` |
+| `LglCntntMCreatedUTCDateTime` | `LglCntntMCreatedUTCDateTime` |
+| `LglCntntMCreatedByUser` | `LglCntntMCreatedByUser` |
+| `LglCntntMChangedUTCDateTime` | `LglCntntMChangedUTCDateTime` |
+| `LglCntntMChangedByUser` | `LglCntntMChangedByUser` |
+| `_Document` | *Association* |
+
+## Source Code
+
+```abap
+@AccessControl:{    
+    authorizationCheck: #MANDATORY,
+    personalData.blocking: #BLOCKED_DATA_EXCLUDED 
+    }
+@EndUserText.label: 'Legal Document Agreement - TP'
+@ObjectModel: {
+    usageType: {
+        sizeCategory: #L,
+        serviceQuality: #C,
+        dataClass:#TRANSACTIONAL
+    },
+    modelingPattern: #TRANSACTIONAL_INTERFACE,
+    supportedCapabilities: [#TRANSACTIONAL_PROVIDER]
+}
+
+@VDM.viewType: #TRANSACTIONAL
+@VDM.usage.type:[#TRANSACTIONAL_PROCESSING_SERVICE]
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@Metadata.ignorePropagatedAnnotations:true
+
+define view entity I_LegalDocAgreementTP
+  as projection on R_LegalDocAgreementTP as LegalDocAgreement
+{
+  key LglCntntMAgreementUUID,
+      LglCntntMDocumentUUID,
+      LglCntntMContractTypeName,
+      LglCntntMAgreementTemplateName,
+      LglCntntMAgreementSystemID,
+      LglCntntMDocAgrmtVersion,
+      LglCntntMDocAgrmtCoreStatus,
+      LglCntntMDocAgrmtBizStatus,       
+      LglCntntMCreatedUTCDateTime,
+      LglCntntMCreatedByUser,
+      LglCntntMChangedUTCDateTime,
+      LglCntntMChangedByUser,
+
+      /* Associations */
+      _Document : redirected to parent I_LegalDocumentTP
+}
+```

@@ -1,0 +1,69 @@
+---
+name: C_MEASURINGPOINTDEX
+description: Measuring Point
+app_component: PM-EQM-SF-MPC-2CL
+software_component: SAPSCORE
+release_state: released
+system_type: S/4HANA Cloud Public Edition
+source_available: false
+source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASURINGPOINTDEX')/$value
+semantic_en: Measuring Point
+tags:
+  - PM
+  - bo:purchaseorder
+  - component:PM-EQM-SF-MPC-2CL
+  - consumption-view
+  - lob:plant maintenance
+  - lob:quality management
+  - PM-EQM
+  - PM-EQM-SF
+  - PM-EQM-SF-MPC
+  - PM-EQM-SF-MPC-2CL
+  - metadata-only
+---
+# C_MEASURINGPOINTDEX
+
+**Measuring Point**
+
+| Property | Value |
+|---|---|
+| App Component | `PM-EQM-SF-MPC-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released |
+| System Type | S/4HANA Cloud Public Edition |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASURINGPOINTDEX')/$value) |
+
+## Fields
+
+| Field | Type | Description |
+|---|---|---|
+| `MeasuringPoint` | `CHAR(12)` | Measuring Point |
+| `Language` | `LANG(1)` | Language Key |
+| `MeasuringPointDescription` | `CHAR(40)` | Description of Measuring Point |
+| `MeasuringPointShortText` | `CHAR(40)` | Aditional Short Text for Measuring Point |
+| `MeasuringPointObjectIdentifier` | `CHAR(22)` | Object Number for the Measuring Point Object |
+| `MeasuringPointPositionNumber` | `CHAR(20)` | Position Number of the Object Measuring Point (Sort Field) |
+| `MeasuringPointCategory` | `CHAR(1)` | Measuring Point Category |
+| `CreationDate` | `DATS(8)` | Date on which the object was created |
+| `LastChangeDate` | `DATS(8)` | Date on which the object was last changed |
+| `AuthorizationGroup` | `CHAR(4)` | Technical Object Authorization Group |
+| `MeasuringPointIsInactive` | `CHAR(1)` | Indicator: Measuring Point Inactive |
+| `MeasuringPointIsCounter` | `CHAR(1)` | Indicator to Show that Measuring Point Is a Counter |
+| `MultiLevelDeletionLogicStatus` | `CHAR(1)` | Deletion Flag for 2-Level Deletion Logic |
+| `Assembly` | `CHAR(40)` | Assembly for Localization of Measuring Point |
+| `ReferenceMeasuringPoint` | `CHAR(12)` | Reference Meas.Pt |
+| `MsrgPtInternalCharacteristic` | `NUMC(10)` | Characteristic Internal ID |
+| `MeasuringPointExponent` | `INT2(5)` | Power of Ten Exponent for Floating Point Display |
+| `MeasuringPointDecimalPlaces` | `INT2(5)` | Number of Decimal Places for Number Display |
+| `MeasuringPointMinimumThreshold` | `FLTP(16)` | Lower Measurement Range Limit/Minimum Total Counter Reading |
+| `MeasuringPointMaximumThreshold` | `FLTP(16)` | Upper Measurement Range Limit/Maximum Total Counter Reading |
+| `MeasurementRangeUnit` | `UNIT(3)` | Measurement Range Unit |
+| `MeasuringPointSIUnitOfMeasure` | `UNIT(3)` | SI Unit |
+| `MsrgPtIsCountingBackwards` | `CHAR(1)` | Indicator: Counter Runs Backwards |
+| `MsmtRdngSourceMeasuringPoint` | `CHAR(12)` | Measuring Point from Which Meas. Reading Was Transferred |
+| `CounterOverflowRdngThreshold` | `FLTP(16)` | Counter Overflow Reading in SI Unit |
+| `MeasuringPointAnnualEstimate` | `FLTP(16)` | Annual Estimate in SI Unit |
+| `MeasuringPointCatalogType` | `CHAR(1)` | Catalog Type - Measurement Reading Valuation Code |
+| `MeasuringPointCodeGroup` | `CHAR(8)` | Code Group - Measurement Reading Valuation Code |
+| `ValuationCodeIsSufficient` | `CHAR(1)` | Indicator: Valuation Code Sufficient for Measurmnt. Document |
+| `MeasuringPointHasLongText` | `CHAR(1)` | Long Text Exists |

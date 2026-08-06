@@ -1,0 +1,191 @@
+---
+name: I_BUSINESSPARTNERVH
+description: Business PartnerVH
+app_component: AP-MD-BP
+software_component: SAP_BASIS
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - AP
+  - AP-MD
+  - AP-MD-BP
+  - interface-view
+  - value-help
+  - business-partner
+  - partner
+  - component:AP-MD-BP
+  - lob:Other
+  - bo:BusinessPartner
+---
+# I_BUSINESSPARTNERVH
+
+**Business PartnerVH**
+
+| Property | Value |
+|---|---|
+| App Component | `AP-MD-BP` |
+| Software Component | `SAP_BASIS` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `BusinessPartner` | `BusinessPartner.BusinessPartner` |
+| `FormOfAddress` | `BusinessPartner.FormOfAddress` |
+| `FormOfAddressName` | `_FormOfAddressText.FormOfAddressName` |
+| `BusinessPartnerName` | `BusinessPartner.BusinessPartnerName` |
+| `BusinessPartnerCategory` | `BusinessPartner.BusinessPartnerCategory` |
+| `BusinessPartnerIDByExtSystem` | `BusinessPartner.BusinessPartnerIDByExtSystem` |
+| `FirstName` | `BusinessPartner.FirstName` |
+| `LastName` | `BusinessPartner.LastName` |
+| `OrganizationBPName1` | `BusinessPartner.OrganizationBPName1` |
+| `GroupBusinessPartnerName1` | `BusinessPartner.GroupBusinessPartnerName1` |
+| `BirthDate` | `BusinessPartner.BirthDate` |
+| `AuthorizationGroup` | `BusinessPartner.AuthorizationGroup` |
+| `IsBusinessPurposeCompleted` | `BusinessPartner.IsBusinessPurposeCompleted` |
+| `DataControllerSet` | `BusinessPartner.DataControllerSet` |
+| `DataController1` | `BusinessPartner.DataController1` |
+| `DataController2` | `BusinessPartner.DataController2` |
+| `DataController3` | `BusinessPartner.DataController3` |
+| `DataController4` | `BusinessPartner.DataController4` |
+| `DataController5` | `BusinessPartner.DataController5` |
+| `DataController6` | `BusinessPartner.DataController6` |
+| `DataController7` | `BusinessPartner.DataController7` |
+| `DataController8` | `BusinessPartner.DataController8` |
+| `DataController9` | `BusinessPartner.DataController9` |
+| `DataController10` | `BusinessPartner.DataController10` |
+| `_FormOfAddressText` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_FormOfAddressText` | `I_FormOfAddressText` | [1..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IBPVH'
+@AbapCatalog.compiler.compareFilter: true
+
+@VDM.viewType: #BASIC
+
+@ObjectModel.dataCategory: #VALUE_HELP
+@ObjectModel.representativeKey: 'BusinessPartner' 
+
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.dataClass: #MASTER
+@AccessControl.authorizationCheck: #CHECK
+//<TODO> Please double-check personal data blocking
+@AccessControl.personalData.blocking: #REQUIRED
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+
+@Search.searchable: true
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@EndUserText.label: 'Business Partner'
+@Consumption.ranked: true
+@Consumption.dbHints: [ 'USE_HEX_PLAN' ]
+define view I_BusinessPartnerVH as select from I_BusinessPartner as BusinessPartner 
+   association[1..1] to I_FormOfAddressText as _FormOfAddressText on $projection.FormOfAddress = _FormOfAddressText.FormOfAddress and
+                                                                          _FormOfAddressText.Language = $session.system_language                                                                        
+{  
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #HIGH
+      @ObjectModel.text.element: [ 'BusinessPartnerName' ]
+      @UI.lineItem.importance: #HIGH
+  key BusinessPartner.BusinessPartner,          
+      @UI.hidden: true       
+      BusinessPartner.FormOfAddress,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @EndUserText.label: 'Title'
+      @EndUserText.quickInfo: 'Title'
+      @UI.lineItem.importance: #HIGH      
+      _FormOfAddressText.FormOfAddressName,
+      //@Search.defaultSearchElement: true
+     // @Search.fuzzinessThreshold: 0.8
+      //@Search.ranking: #LOW
+      @EndUserText.label: 'Business Partner Name'
+      @Consumption.filter.hidden: true
+      @UI.lineItem.importance: #HIGH     
+      BusinessPartner.BusinessPartnerName,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @EndUserText.label: 'Business Partner Category'
+      @UI.lineItem.importance: #HIGH     
+      BusinessPartner.BusinessPartnerCategory,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @UI.lineItem.importance: #HIGH
+      BusinessPartner.BusinessPartnerIDByExtSystem,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @EndUserText.label: 'First Name'
+      @UI.lineItem.importance: #HIGH
+      BusinessPartner.FirstName,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @EndUserText.label: 'Last Name'
+      @UI.lineItem.importance: #HIGH
+      BusinessPartner.LastName,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @EndUserText.label: 'Organization Name 1'
+      @UI.lineItem.importance: #HIGH
+      BusinessPartner.OrganizationBPName1,
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @EndUserText.label: 'Group Name 1'
+      @UI.lineItem.importance: #HIGH
+      BusinessPartner.GroupBusinessPartnerName1,
+      @UI.lineItem.importance: #HIGH
+      BusinessPartner.BirthDate,
+      
+      @UI.hidden: true
+      BusinessPartner.AuthorizationGroup,
+      @UI.hidden: true
+      BusinessPartner.IsBusinessPurposeCompleted,
+      @UI.hidden: true
+      BusinessPartner.DataControllerSet                           as DataControllerSet,
+      @UI.hidden: true
+      BusinessPartner.DataController1                             as DataController1,
+      @UI.hidden: true
+      BusinessPartner.DataController2                             as DataController2,
+      @UI.hidden: true
+      BusinessPartner.DataController3                             as DataController3,
+      @UI.hidden: true
+      BusinessPartner.DataController4                             as DataController4,
+      @UI.hidden: true
+      BusinessPartner.DataController5                             as DataController5,
+      @UI.hidden: true
+      BusinessPartner.DataController6                             as DataController6,
+      @UI.hidden: true
+      BusinessPartner.DataController7                             as DataController7,
+      @UI.hidden: true
+      BusinessPartner.DataController8                             as DataController8,
+      @UI.hidden: true
+      BusinessPartner.DataController9                             as DataController9,
+      @UI.hidden: true
+      BusinessPartner.DataController10                            as DataController10,
+       @Consumption.filter.hidden: true
+      _FormOfAddressText
+      
+      
+}
+```

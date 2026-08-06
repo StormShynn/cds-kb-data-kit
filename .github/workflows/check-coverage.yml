@@ -1,0 +1,57 @@
+# .github/workflows/check-coverage.yml
+# Keep coverage-report.html in sync with the live SAP Business Accelerator
+# Hub CDS View catalog.
+#
+# This only compares data — it never writes to views/, so unlike
+# daily-fetch.yml it pushes the report straight to main without a PR.
+#
+# This repo is private, so there is deliberately no GitHub Pages deploy step
+# here (see update-dashboard.yml for why).
+
+name: Check Hub Coverage
+
+on:
+  schedule:
+    # Every 6 hours
+    - cron: '0 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'views/**'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check-coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Check coverage against the Hub catalog
+        env:
+          # Optional — every call this script makes already works unauthenticated
+          # (see scripts/check-coverage.mjs). Only takes effect if this repo has
+          # a SAP_API_HUB_KEY secret configured; a fallback, not a requirement.
+          SAP_API_HUB_KEY: ${{ secrets.SAP_API_HUB_KEY }}
+        run: node scripts/check-coverage.mjs
+
+      - name: Commit and push if changed
+        uses: ./.github/actions/commit-and-push
+        with:
+          paths: coverage.json coverage-report.html
+          commit-message: "Update Hub coverage report [skip ci]"
+          empty-message: Coverage unchanged
+          success-message: Coverage report updated

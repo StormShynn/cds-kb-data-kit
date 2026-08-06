@@ -1,0 +1,101 @@
+---
+name: I_MATERIALPRICINGGROUPTEXT
+description: Materialpricinggrouptext
+app_component: SD-MD-MM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-MD
+  - SD-MD-MM
+  - interface-view
+  - text-view
+  - material
+  - pricing
+  - text
+  - component:SD-MD-MM-2CL
+  - lob:Sales & Distribution
+  - bo:Material
+---
+# I_MATERIALPRICINGGROUPTEXT
+
+**Materialpricinggrouptext**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-MD-MM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `MaterialPricingGroup` | `kondm` |
+| key `Language` | `spras` |
+| `MaterialPricingGroupName` | `vtext` |
+| `_MaterialPricingGroup` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_MaterialPricingGroup` | `I_MaterialPricingGroup` | [0..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'MaterialPricingGroup'
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+@EndUserText.label: 'Material Pricing Group - Text' 
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck:#NOT_REQUIRED
+@AbapCatalog.sqlViewName: 'ISDMTRLPRCGRPT'
+@AbapCatalog.buffering.status: #ACTIVE
+@AbapCatalog.buffering.type: #FULL
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@Metadata.ignorePropagatedAnnotations: true
+@Search.searchable: true
+@Analytics.dataExtraction.enabled: true
+@ObjectModel.modelingPattern:           #LANGUAGE_DEPENDENT_TEXT
+@ObjectModel.supportedCapabilities:  [  #SQL_DATA_SOURCE,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #LANGUAGE_DEPENDENT_TEXT,
+                                        #EXTRACTION_DATA_SOURCE,
+                                        #SEARCHABLE_ENTITY   ]
+define view I_MaterialPricingGroupText
+as select from t178t
+
+association[0..1] to I_MaterialPricingGroup as _MaterialPricingGroup on $projection.MaterialPricingGroup = _MaterialPricingGroup.MaterialPricingGroup
+association[0..1] to I_Language as _Language on $projection.Language = _Language.Language
+{
+    @ObjectModel.foreignKey.association: '_MaterialPricingGroup'
+    key kondm as MaterialPricingGroup,
+    
+    @ObjectModel.foreignKey.association: '_Language'
+    @Semantics.language:true
+    key spras as Language,
+
+    @Search.defaultSearchElement: true
+    @Search.fuzzinessThreshold: 0.8
+    @Search.ranking: #HIGH
+    @Semantics.text:true
+    vtext as MaterialPricingGroupName,
+    
+    //Associations
+    _MaterialPricingGroup,
+    _Language
+};
+```

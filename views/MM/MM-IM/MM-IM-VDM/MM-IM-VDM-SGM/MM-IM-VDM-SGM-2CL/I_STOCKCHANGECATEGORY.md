@@ -1,0 +1,79 @@
+---
+name: I_STOCKCHANGECATEGORY
+description: Stockchangecategory
+app_component: MM-IM-VDM-SGM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - MM
+  - MM-IM
+  - MM-IM-VDM
+  - interface-view
+  - component:MM-IM-VDM-SGM-2CL
+  - lob:Sourcing & Procurement
+---
+# I_STOCKCHANGECATEGORY
+
+**Stockchangecategory**
+
+| Property | Value |
+|---|---|
+| App Component | `MM-IM-VDM-SGM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `StockChangeCategory` | `cast ( cast ( substring( domvalue_l, 1, 2 ) as abap.char( 2 ) ) as nsdm_stock_change_category )` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_StockChangeCategoryT` | [0..*] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Stock Change Category'
+@ObjectModel: {
+                usageType: {
+                             sizeCategory: #S,
+                             serviceQuality: #A,
+                             dataClass:#CUSTOMIZING
+                           },
+                representativeKey: 'StockChangeCategory',
+                modelingPattern: #ANALYTICAL_DIMENSION,
+                supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE]
+              }
+
+@VDM: {
+        viewType: #BASIC, 
+        lifecycle.contract.type: #PUBLIC_LOCAL_API
+      }
+@Analytics: { dataCategory: #DIMENSION,
+              technicalName: 'ISTOCKCHGCAT' } 
+@Metadata: {
+             allowExtensions: true,
+             ignorePropagatedAnnotations: true
+           }
+
+define view entity I_StockChangeCategory 
+as select from dd07l 
+association [0..*] to I_StockChangeCategoryT as _Text on $projection.StockChangeCategory = _Text.StockChangeCategory
+{
+  @ObjectModel.text.association: '_Text'
+  key cast ( cast ( substring( domvalue_l, 1, 2 ) as abap.char( 2 ) ) as nsdm_stock_change_category ) as StockChangeCategory, 
+
+   _Text
+}
+where domname = 'NSDM_STOCK_CHANGE_CATEGORY' and as4local = 'A'
+```

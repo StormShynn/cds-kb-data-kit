@@ -1,0 +1,107 @@
+---
+name: I_SLSPRCGPROCEDITEMTEXT
+description: Slsprcgproceditemtext
+app_component: SD-BF-PR-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-BF
+  - SD-BF-PR
+  - interface-view
+  - text-view
+  - text
+  - item-level
+  - component:SD-BF-PR-2CL
+  - lob:Sales & Distribution
+---
+# I_SLSPRCGPROCEDITEMTEXT
+
+**Slsprcgproceditemtext**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-BF-PR-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Language` | `Language` |
+| key `PricingProcedure` | `PricingProcedure` |
+| key `PricingProcedureStep` | `PricingProcedureStep` |
+| key `PricingProcedureCounter` | `PricingProcedureCounter` |
+| `ConditionUsage` | `ConditionUsage` |
+| `ConditionApplication` | `ConditionApplication` |
+| `ConditionTypeName` | `ConditionTypeName` |
+| `_ConditionApplication` | *Association* |
+| `_ConditionUsage` | *Association* |
+| `_SlsPricingProcedureItem` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ConditionApplication` | `I_ConditionApplication` | [1..1] |
+| `_ConditionUsage` | `I_ConditionUsage` | [1..1] |
+| `_SlsPricingProcedureItem` | `I_SlsPricingProcedureItem` | [1..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'ISLSPRCGPRCDITMT'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Pricing Procedure Item in Sales - Text'
+@AbapCatalog.preserveKey:true 
+@AbapCatalog.compiler.compareFilter:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.supportedCapabilities:
+    [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #LANGUAGE_DEPENDENT_TEXT ]
+@Metadata.ignorePropagatedAnnotations:true
+
+//P_PricingProcedureItemText: get Pricing Procedure Item text from t683t
+define view I_SlsPrcgProcedItemText
+  as select from P_PricingProcedureItemText
+  association [1..1] to I_ConditionApplication    as _ConditionApplication    on  $projection.ConditionApplication = _ConditionApplication.ConditionApplication
+  association [1..1] to I_ConditionUsage          as _ConditionUsage          on  $projection.ConditionUsage = _ConditionUsage.ConditionUsage
+  association [1..1] to I_SlsPricingProcedureItem as _SlsPricingProcedureItem on  $projection.PricingProcedure        = _SlsPricingProcedureItem.PricingProcedure
+                                                                              and $projection.PricingProcedureStep    = _SlsPricingProcedureItem.PricingProcedureStep
+                                                                              and $projection.PricingProcedureCounter = _SlsPricingProcedureItem.PricingProcedureCounter
+                                                                              //$projection.ConditionUsage          = _SlsPricingProcedureItem.ConditionUsage
+                                                                              //and $projection.ConditionApplication    = _SlsPricingProcedureItem.ConditionApplication
+  association [0..1] to I_Language                as _Language                on  $projection.Language = _Language.Language
+{
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key Language,
+  key PricingProcedure,
+  key PricingProcedureStep,
+  key PricingProcedureCounter,
+      @ObjectModel.foreignKey.association: '_ConditionUsage'
+      ConditionUsage,
+      @ObjectModel.foreignKey.association: '_ConditionApplication'
+      ConditionApplication,
+      @Semantics.text: true
+      ConditionTypeName,
+      _ConditionUsage,
+      _ConditionApplication,
+      _SlsPricingProcedureItem,
+      _Language
+
+}where ConditionUsage = 'A'
+ and   ConditionApplication = 'V'
+```

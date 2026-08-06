@@ -1,0 +1,75 @@
+---
+name: I_RPTVMFGCONFREVERSALTYPE
+description: Rptvmfgconfreversaltype
+app_component: PP-VDM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PP
+  - PP-VDM
+  - interface-view
+  - component:PP-VDM-2CL
+  - lob:Manufacturing
+---
+# I_RPTVMFGCONFREVERSALTYPE
+
+**Rptvmfgconfreversaltype**
+
+| Property | Value |
+|---|---|
+| App Component | `PP-VDM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `RptvMfgConfReversalType` | `cast(substring(l.domvalue_l, 1, 1) as pph_storn preserving type)` |
+| `DomainValue` | `l.domvalue_l` |
+| `_Text` | *Association* |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics.dataCategory: #DIMENSION
+@Analytics.technicalName: 'IREMCONFREVSLTYP'
+@Analytics.internalName: #LOCAL
+@Consumption.ranked: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.dataCategory: #VALUE_HELP
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #SEARCHABLE_ENTITY, #VALUE_HELP_PROVIDER]
+@ObjectModel.representativeKey: 'RptvMfgConfReversalType'
+@ObjectModel.resultSet.sizeCategory: #XS
+@ObjectModel.sapObjectNodeType.name: 'RptvMfgConfReversalType'
+@ObjectModel.usageType: {serviceQuality: #A, sizeCategory: #S, dataClass: #META}
+@Search.searchable: true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Reversal Type for Confirmation in Repetitive Manufacturing'
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK", "CALCULATED_FIELD_CHECK" ]  } */
+define root view entity I_RptvMfgConfReversalType
+  as select from dd07l as l
+    composition [0..*] of I_RptvMfgConfReversalTypeText as _Text
+{ 
+      @ObjectModel.text.association: '_Text'
+  key cast(substring(l.domvalue_l, 1, 1) as pph_storn preserving type) as RptvMfgConfReversalType,
+      @Analytics.hidden: true
+      @Consumption.hidden: true
+      @Search: {defaultSearchElement: true, ranking: #HIGH, fuzzinessThreshold: 0.8}
+      l.domvalue_l                                                     as DomainValue,
+  
+      // Composition
+      _Text
+  }
+  where l.domname = 'SA_STORN'
+    and l.as4local = 'A'
+    and l.as4vers  = '0000';
+```

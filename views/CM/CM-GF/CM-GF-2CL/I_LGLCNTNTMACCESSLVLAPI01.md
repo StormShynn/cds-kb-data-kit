@@ -1,0 +1,76 @@
+---
+name: I_LGLCNTNTMACCESSLVLAPI01
+description: Lglcntntmaccesslvlapi 01
+app_component: CM-GF-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CM
+  - CM-GF
+  - interface-view
+  - component:CM-GF-2CL
+  - lob:Other
+---
+# I_LGLCNTNTMACCESSLVLAPI01
+
+**Lglcntntmaccesslvlapi 01**
+
+| Property | Value |
+|---|---|
+| App Component | `CM-GF-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `LglCntntMAccessLvl` | `LglCntntMAccessLvl` |
+| `_LglCntntMAccessLvlTextAPI01` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_LglCntntMAccessLvlTextAPI01` | `I_LglCntntMAccessLvlTextAPI01` | [0..*] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.sqlViewName: 'ILCMACCLVL'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType : #BASIC
+@ObjectModel: {
+  representativeKey: 'LglCntntMAccessLvl',
+  sapObjectNodeType.name: 'LegalAccessLevel',
+  usageType.serviceQuality: #A,
+  usageType.sizeCategory: #S,
+  usageType.dataClass:  #CUSTOMIZING
+}
+
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.supportedCapabilities:[ #SQL_DATA_SOURCE,
+                                     #CDS_MODELING_DATA_SOURCE,
+                                     #CDS_MODELING_ASSOCIATION_TARGET ]
+
+@ObjectModel.modelingPattern: #NONE
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@EndUserText.label: 'Access Level'
+
+define view I_LglCntntMAccessLvlAPI01
+  as select from I_LglCntntMAccessLvl
+  association [0..*] to I_LglCntntMAccessLvlTextAPI01 as _LglCntntMAccessLvlTextAPI01 on $projection.LglCntntMAccessLvl = _LglCntntMAccessLvlTextAPI01.LglCntntMAccessLvl
+{
+      @ObjectModel.text.association: '_LglCntntMAccessLvlTextAPI01'
+  key LglCntntMAccessLvl,
+
+      _LglCntntMAccessLvlTextAPI01
+}
+```

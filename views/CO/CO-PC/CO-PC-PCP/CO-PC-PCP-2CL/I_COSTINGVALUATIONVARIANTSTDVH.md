@@ -1,0 +1,99 @@
+---
+name: I_COSTINGVALUATIONVARIANTSTDVH
+description: Costingvaluationvariantstdvh
+app_component: CO-PC-PCP-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CO
+  - CO-PC
+  - CO-PC-PCP
+  - interface-view
+  - value-help
+  - standard-value-help
+  - component:CO-PC-PCP-2CL
+  - lob:Controlling
+---
+# I_COSTINGVALUATIONVARIANTSTDVH
+
+**Costingvaluationvariantstdvh**
+
+| Property | Value |
+|---|---|
+| App Component | `CO-PC-PCP-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ValuationVariant` | `ValuationVariant` |
+| `ValuationVariantName` | `_CostingValuationVarText.ValuationVariantName` |
+| `OverheadCostingSheet` | `OverheadCostingSheet` |
+| `OverheadCostingSheetDesc` | `cast(_CostingSheetText.CostingSheetProcedureDesc as fpc_costing_sheet_description preserving type)` |
+| `ExtProcuredMatlOvhdCostingSht` | `ExtProcuredMatlOvhdCostingSht` |
+| `ExtProcMatlOvhdCostgShtDesc` | `cast(_CostingSheetExtText.CostingSheetProcedureDesc as fpc_costing_sheet_ext_desc preserving type)` |
+| `_CostingValuationVarText` | *Association* |
+| `_CostingSheetText` | *Association* |
+| `_CostingSheetExtText` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CostingValuationVarText` | `I_CostingValuationVarText` | [0..1] |
+
+## Source Code
+
+```abap
+@VDM.viewType: #COMPOSITE
+
+@ObjectModel: {
+  dataCategory: #VALUE_HELP,
+  supportedCapabilities: [ #VALUE_HELP_PROVIDER ],
+  representativeKey: 'ValuationVariant',
+  usageType: { dataClass: #CUSTOMIZING,
+               serviceQuality: #C,
+               sizeCategory: #S
+  }
+}
+@Metadata.ignorePropagatedAnnotations:true
+@Analytics.technicalName: 'ICSTVALVARVH'
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Valuation Variant'
+@Search.searchable: true
+@Consumption.ranked:true
+
+define view entity I_CostingValuationVariantStdVH
+  as select from I_CostingValuationVariant
+  association [0..1] to I_CostingValuationVarText as _CostingValuationVarText on  _CostingValuationVarText.ValuationVariant = $projection.ValuationVariant
+                                                                              and _CostingValuationVarText.Language         = $session.system_language
+
+{
+      @Search.defaultSearchElement: true
+      @Search.ranking:#HIGH
+  key ValuationVariant,
+      @Search.defaultSearchElement: true
+      _CostingValuationVarText.ValuationVariantName,
+      
+      @ObjectModel.text.element: [ 'OverheadCostingSheetDesc' ]
+      OverheadCostingSheet,
+      @Semantics.text: true
+      cast(_CostingSheetText.CostingSheetProcedureDesc as fpc_costing_sheet_description preserving type) as OverheadCostingSheetDesc,
+      
+      @ObjectModel.text.element: [ 'ExtProcMatlOvhdCostgShtDesc' ]
+      ExtProcuredMatlOvhdCostingSht,
+      @Semantics.text: true
+      cast(_CostingSheetExtText.CostingSheetProcedureDesc as fpc_costing_sheet_ext_desc preserving type) as ExtProcMatlOvhdCostgShtDesc,
+      
+      _CostingValuationVarText,
+      _CostingSheetText,
+      _CostingSheetExtText
+
+}
+```

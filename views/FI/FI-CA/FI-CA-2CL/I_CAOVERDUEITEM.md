@@ -1,0 +1,177 @@
+---
+name: I_CAOVERDUEITEM
+description: Caoverdueitem
+app_component: FI-CA-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-CA
+  - interface-view
+  - item-level
+  - component:FI-CA-2CL
+  - lob:Finance
+---
+# I_CAOVERDUEITEM
+
+**Caoverdueitem**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-CA-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CADocumentNumber` | `CADocumentNumber` |
+| key `CARepetitionItemNumber` | `CARepetitionItemNumber` |
+| key `CABPItemNumber` | `CABPItemNumber` |
+| key `CASubItemNumber` | `CASubItemNumber` |
+| key `CAPromiseToPay` | `CAPromiseToPay` |
+| key `CANetDueDate` | `CANetDueDate` |
+| `CAOverdueItemOrigin` | `CAOverdueItemOrigin` |
+| `CompanyCode` | `CompanyCode` |
+| `BusinessPartner` | `BusinessPartner` |
+| `ContractAccount` | `ContractAccount` |
+| `TransactionCurrency` | `TransactionCurrency` |
+| `CAAmountInTransactionCurrency` | `CAAmountInTransactionCurrency` |
+| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
+| `CAAmountInLocalCurrency` | `CAAmountInLocalCurrency` |
+| `_BusinessPartner` | *Association* |
+| `_CADocument_2` | *Association* |
+| `_CADocumentBPItem_2` | *Association* |
+| `_CAOverdueItemOrigin` | *Association* |
+| `_CompanyCode` | *Association* |
+| `_ContractAccount` | *Association* |
+| `_CompanyCodeCurrency` | *Association* |
+| `_TransactionCurrency` | *Association* |
+| `_CADocumentBPItem` | *Association* |
+| `_CADocument` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BusinessPartner` | `I_BusinessPartner` | [1..1] |
+| `_CADocument_2` | `I_CADocument` | [0..1] |
+| `_CADocumentBPItem_2` | `I_CADocumentBPItem` | [0..1] |
+| `_CAOverdueItemOrigin` | `I_CAOverdueItemOrigin` | [0..1] |
+| `_CompanyCode` | `I_CompanyCode` | [1..1] |
+| `_ContractAccount` | `I_ContractAccountHeader` | [0..1] |
+| `_CompanyCodeCurrency` | `I_Currency` | [1..1] |
+| `_TransactionCurrency` | `I_Currency` | [1..1] |
+| `_CADocumentBPItem` | `I_CADocumentBPItemPhysical` | [0..1] |
+| `_CADocument` | `I_CADocumentHeader` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+
+@AccessControl.authorizationCheck: #MANDATORY
+
+@Analytics: { dataCategory: #FACT,
+              internalName: #LOCAL }
+
+@EndUserText.label: 'Contract Accounting Overdue Item'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: { modelingPattern: #NONE,
+                supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #SQL_DATA_SOURCE,
+                                         #CDS_MODELING_DATA_SOURCE ],
+                usageType:{ dataClass: #MIXED,
+                            serviceQuality: #C,
+                            sizeCategory: #L } }
+
+@VDM.viewType: #COMPOSITE
+
+define view entity I_CAOverdueItem
+  as select from P_CAOverdueItemSelection
+
+  association [1..1] to I_BusinessPartner          as _BusinessPartner     on  $projection.BusinessPartner = _BusinessPartner.BusinessPartner
+  association [0..1] to I_CADocument               as _CADocument_2        on  $projection.CADocumentNumber = _CADocument_2.CADocumentNumber
+  association [0..1] to I_CADocumentBPItem         as _CADocumentBPItem_2  on  $projection.CADocumentNumber       = _CADocumentBPItem_2.CADocumentNumber
+                                                                           and $projection.CARepetitionItemNumber = _CADocumentBPItem_2.CARepetitionItemNumber
+                                                                           and $projection.CABPItemNumber         = _CADocumentBPItem_2.CABPItemNumber
+                                                                           and $projection.CASubItemNumber        = _CADocumentBPItem_2.CASubItemNumber
+  association [0..1] to I_CAOverdueItemOrigin      as _CAOverdueItemOrigin on  $projection.CAOverdueItemOrigin = _CAOverdueItemOrigin.CAOverdueItemOrigin
+  association [1..1] to I_CompanyCode              as _CompanyCode         on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..1] to I_ContractAccountHeader    as _ContractAccount     on  $projection.ContractAccount = _ContractAccount.ContractAccount
+  association [1..1] to I_Currency                 as _CompanyCodeCurrency on  $projection.CompanyCodeCurrency = _CompanyCodeCurrency.Currency
+  association [1..1] to I_Currency                 as _TransactionCurrency on  $projection.TransactionCurrency = _TransactionCurrency.Currency
+
+  /* deprecated associations */
+  association [0..1] to I_CADocumentBPItemPhysical as _CADocumentBPItem    on  $projection.CADocumentNumber       = _CADocumentBPItem.CADocumentNumber
+                                                                           and $projection.CARepetitionItemNumber = _CADocumentBPItem.CARepetitionItemNumber
+                                                                           and $projection.CABPItemNumber         = _CADocumentBPItem.CABPItemNumber
+                                                                           and $projection.CASubItemNumber        = _CADocumentBPItem.CASubItemNumber
+  association [0..1] to I_CADocumentHeader         as _CADocument          on  $projection.CADocumentNumber = _CADocument.CADocumentNumber
+  /* end deprecated associations */
+
+{
+      @ObjectModel.foreignKey.association: '_CADocument'
+  key CADocumentNumber,
+  key CARepetitionItemNumber,
+  key CABPItemNumber,
+  key CASubItemNumber,
+  key CAPromiseToPay,
+  key CANetDueDate,
+
+      @ObjectModel.foreignKey.association: '_CAOverdueItemOrigin'
+      CAOverdueItemOrigin,
+
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+      CompanyCode,
+
+      @ObjectModel.foreignKey.association: '_BusinessPartner'
+      BusinessPartner,
+      @ObjectModel.foreignKey.association: '_ContractAccount'
+      ContractAccount,
+
+      @ObjectModel.foreignKey.association: '_TransactionCurrency'
+      TransactionCurrency,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      CAAmountInTransactionCurrency,
+
+      @ObjectModel.foreignKey.association: '_CompanyCodeCurrency'
+      CompanyCodeCurrency,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      CAAmountInLocalCurrency,
+
+      /* associations */
+      _BusinessPartner,
+      _CADocument_2,
+      _CADocumentBPItem_2,
+      _CAOverdueItemOrigin,
+      _CompanyCode,
+      _CompanyCodeCurrency,
+      _ContractAccount,
+      _TransactionCurrency,
+
+      /* deprecated fields */
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_CADocument_2'
+      @VDM.lifecycle.status: #DEPRECATED
+      @VDM.lifecycle.successor: '_CADocument_2'
+      _CADocument,
+
+      /* deprecated fields */
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: '_CADocumentBPItem_2'
+      @VDM.lifecycle.status: #DEPRECATED
+      @VDM.lifecycle.successor: '_CADocumentBPItem_2'
+      _CADocumentBPItem
+
+}
+where
+  CANetDueDate < $session.system_date
+```

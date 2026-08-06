@@ -1,0 +1,74 @@
+# .github/actions/commit-and-push/action.yml
+#
+# Shared "commit whatever changed, push, retry with a rebase if another
+# workflow pushed first" step. Three workflows (check-coverage.yml,
+# resync-folders.yml, update-dashboard.yml) push straight to main after
+# regenerating a derived file, and can legitimately race each other since
+# none of them declare a `concurrency:` group against the others — this is
+# what makes that safe instead of each workflow hand-rolling its own copy of
+# the same retry loop (they used to; that's how this drifted into 3 almost-
+# identical blocks with a std deviation of a comment or two before this).
+#
+# Usage:
+#   - name: Commit and push if changed
+#     uses: ./.github/actions/commit-and-push
+#     with:
+#       paths: coverage.json coverage-report.html
+#       commit-message: "Update Hub coverage report [skip ci]"
+#       empty-message: Coverage unchanged
+#       success-message: Coverage report updated
+
+name: Commit and push if changed
+description: >
+  Stages the given paths if they changed, commits, and pushes — retrying with
+  a rebase onto origin/main up to 5 times if the push is rejected by a
+  concurrent push. No-ops (exit 0) if none of the given paths changed.
+
+inputs:
+  paths:
+    description: Space-separated list of paths/globs to check with `git diff --quiet` and stage with `git add`
+    required: true
+  commit-message:
+    description: Commit message for the change
+    required: true
+  empty-message:
+    description: Message to log when there's nothing to commit
+    default: Nothing to commit
+  success-message:
+    description: Message to log after a successful push
+    default: Pushed successfully
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      env:
+        PATHS: ${{ inputs.paths }}
+        COMMIT_MESSAGE: ${{ inputs.commit-message }}
+        EMPTY_MESSAGE: ${{ inputs.empty-message }}
+        SUCCESS_MESSAGE: ${{ inputs.success-message }}
+      run: |
+        git config user.name "cds-kb-bot"
+        git config user.email "bot@cds-kb.local"
+
+        if git diff --quiet -- $PATHS; then
+          echo "ℹ️  $EMPTY_MESSAGE"
+          exit 0
+        fi
+
+        git add $PATHS
+        git commit -m "$COMMIT_MESSAGE"
+
+        for attempt in 1 2 3 4 5; do
+          if git push; then
+            echo "✅ $SUCCESS_MESSAGE"
+            exit 0
+          fi
+          echo "⚠️  Push rejected (attempt $attempt/5) — rebasing onto origin/main and retrying"
+          git fetch origin main
+          git rebase origin/main
+          sleep $((RANDOM % 5 + 1))
+        done
+
+        echo "❌ Push failed after 5 attempts"
+        exit 1

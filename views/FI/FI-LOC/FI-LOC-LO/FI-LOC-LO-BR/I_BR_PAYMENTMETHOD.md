@@ -1,0 +1,70 @@
+---
+name: I_BR_PAYMENTMETHOD
+description: BR Paymentmethod
+app_component: FI-LOC-LO-BR
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-LOC
+  - FI-LOC-LO
+  - interface-view
+  - payment
+  - component:FI-LOC-LO-BR
+  - lob:Finance
+---
+# I_BR_PAYMENTMETHOD
+
+**BR Paymentmethod**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-LOC-LO-BR` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `PaymentMethod` | `cast ( t_pag as logbr_tpag preserving type )` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_BR_PaymentMethodText` | [0..*] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Brazil Payment Method'
+@AbapCatalog.compiler.compareFilter: true
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AbapCatalog.sqlViewName: 'IBRTPAG'
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel.representativeKey: 'PaymentMethod'
+@ObjectModel.compositionRoot: true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE,#CDS_MODELING_DATA_SOURCE]
+@AbapCatalog.preserveKey:true 
+@Metadata.ignorePropagatedAnnotations: true
+
+define view I_BR_PaymentMethod as select from j_1bpag
+  association [0..*] to I_BR_PaymentMethodText as _Text on $projection.PaymentMethod = _Text.PaymentMethod
+{  
+    @ObjectModel.text.association: '_Text'
+    key cast ( t_pag as logbr_tpag preserving type ) as PaymentMethod, 
+    @ObjectModel.association.type: [#TO_COMPOSITION_CHILD]
+    _Text
+}
+```

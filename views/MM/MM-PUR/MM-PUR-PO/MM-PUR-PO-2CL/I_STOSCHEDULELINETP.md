@@ -1,0 +1,148 @@
+---
+name: I_STOSCHEDULELINETP
+description: STOSchedule LineTP
+app_component: MM-PUR-PO-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - MM
+  - MM-PUR
+  - MM-PUR-PO
+  - interface-view
+  - transactional-processing
+  - schedule-line
+  - component:MM-PUR-PO-2CL
+  - lob:Sourcing & Procurement
+---
+# I_STOSCHEDULELINETP
+
+**STOSchedule LineTP**
+
+| Property | Value |
+|---|---|
+| App Component | `MM-PUR-PO-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `StockTransportOrder` | `StockTransportOrder` |
+| key `StockTransportOrderItem` | `StockTransportOrderItem` |
+| key `ScheduleLine` | `ScheduleLine` |
+| `DelivDateCategory` | `DelivDateCategory` |
+| `ScheduleLineDeliveryDate` | `ScheduleLineDeliveryDate` |
+| `ScheduleLineDeliveryTime` | `ScheduleLineDeliveryTime` |
+| `OrderQuantityUnit` | `OrderQuantityUnit` |
+| `ScheduleLineOrderQuantity` | `ScheduleLineOrderQuantity` |
+| `RoughGoodsReceiptQty` | `RoughGoodsReceiptQty` |
+| `PurchaseRequisition` | `PurchaseRequisition` |
+| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
+| `ScheduleLineIsFixed` | `ScheduleLineIsFixed` |
+| `ScheduleLineCommittedQuantity` | `ScheduleLineCommittedQuantity` |
+| `TransportationPlanningDate` | `TransportationPlanningDate` |
+| `TransportationPlanningTime` | `TransportationPlanningTime` |
+| `LoadingDate` | `LoadingDate` |
+| `LoadingTime` | `LoadingTime` |
+| `GoodsIssueDate` | `GoodsIssueDate` |
+| `GoodsIssueTime` | `GoodsIssueTime` |
+| `STOLatestPossibleGRDate` | `STOLatestPossibleGRDate` |
+| `STOLatestPossibleGRTime` | `STOLatestPossibleGRTime` |
+| `StockTransferDeliveredQuantity` | `StockTransferDeliveredQuantity` |
+| `StockTransportOrderType` | `StockTransportOrderType` |
+| `PurchasingOrganization` | `PurchasingOrganization` |
+| `PurchasingGroup` | `PurchasingGroup` |
+| `Plant` | `Plant` |
+| `_STOSubcontractingComponent` | *Association* |
+| `_StockTransportOrderItem` | *Association* |
+| `_StockTransportOrder` | *Association* |
+| `_OrderQuantityUnit` | *Association* |
+| `_PurchaseRequisition` | *Association* |
+| `_PurchaseRequisitionItem` | *Association* |
+| `_OrderQuantityUnitText` | *Association* |
+
+## Source Code
+
+```abap
+@VDM: {
+  lifecycle.contract.type: #PUBLIC_LOCAL_API,
+  viewType: #TRANSACTIONAL
+}
+
+@ObjectModel: {
+  usageType: {
+    dataClass:      #TRANSACTIONAL,
+    serviceQuality: #C,
+    sizeCategory:   #L
+  },
+
+  modelingPattern: #TRANSACTIONAL_INTERFACE,
+  semanticKey: ['StockTransportOrder', 'StockTransportOrderItem', 'ScheduleLine'],
+  supportedCapabilities: [#TRANSACTIONAL_PROVIDER]
+}
+
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #BLOCKED_DATA_EXCLUDED
+}
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@EndUserText.label: 'Schedule Line for STO - TP'
+
+define view entity I_STOScheduleLineTP
+  as projection on R_STOScheduleLineTP as _STOScheduleLineTP
+{
+  key StockTransportOrder,
+  key StockTransportOrderItem,
+  key ScheduleLine,
+      DelivDateCategory,
+      ScheduleLineDeliveryDate,
+      ScheduleLineDeliveryTime,
+      @ObjectModel.text.association: '_OrderQuantityUnitText'
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'I_UnitOfMeasureStdVH', element: 'UnitOfMeasure' }, useAsTemplate: true }]       //CustomUI
+      OrderQuantityUnit,
+      @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+      ScheduleLineOrderQuantity,
+      @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+      RoughGoodsReceiptQty,
+      PurchaseRequisition,
+      PurchaseRequisitionItem,
+      ScheduleLineIsFixed,
+      @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+      ScheduleLineCommittedQuantity,
+      TransportationPlanningDate,
+      TransportationPlanningTime,
+      LoadingDate,
+      LoadingTime,
+      GoodsIssueDate,
+      GoodsIssueTime,
+      STOLatestPossibleGRDate,
+      STOLatestPossibleGRTime,
+      @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+      StockTransferDeliveredQuantity,
+      StockTransportOrderType,
+      PurchasingOrganization,
+      PurchasingGroup,
+      @Consumption.valueHelpDefinition: [{ entity: { name: 'I_PlantStdVH', element: 'Plant' }, useAsTemplate: true }]       //CustomUI
+      Plant,
+
+      /* Composition */
+      _STOSubcontractingComponent : redirected to composition child I_STOSubcontractingComponentTP,
+      _StockTransportOrderItem    : redirected to parent I_StockTransportOrderItemTP,
+      _StockTransportOrder        : redirected to I_StockTransportOrderTP,
+
+      /* Associations */
+      _OrderQuantityUnit,
+      _PurchaseRequisition,
+      _PurchaseRequisitionItem,
+      
+      /* Text associations for CustomUI */
+      _OrderQuantityUnitText
+}
+```

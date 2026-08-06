@@ -1,0 +1,46 @@
+---
+name: D_ARDISPUTECASECHANGENOTEP
+description: D Ardisputecasechangenotep
+app_component: FIN-FIO-CCD-COL-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - note
+  - dispute
+  - component:FIN-FIO-CCD-COL-2CL
+  - lob:Other
+---
+# D_ARDISPUTECASECHANGENOTEP
+
+**D Ardisputecasechangenotep**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-FIO-CCD-COL-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| `NoteContent` | `nte_cont` |
+| `_ChildToParent` | *Association* |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Change Parameter for Notes'
+@VDM.usage.type: [#ACTION_PARAMETER_STRUCTURE]
+@ObjectModel.supportedCapabilities:[#DATA_STRUCTURE]
+define abstract entity D_ARDisputeCaseChangeNoteP 
+{
+    NoteContent    : nte_cont;
+    _ChildToParent : association to parent D_ARDisputeCaseChangeP;
+}
+```

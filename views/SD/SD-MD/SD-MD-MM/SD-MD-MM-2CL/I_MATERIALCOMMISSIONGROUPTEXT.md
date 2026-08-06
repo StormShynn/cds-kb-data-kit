@@ -1,0 +1,100 @@
+---
+name: I_MATERIALCOMMISSIONGROUPTEXT
+description: Materialcommissiongrouptext
+app_component: SD-MD-MM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-MD
+  - SD-MD-MM
+  - interface-view
+  - text-view
+  - material
+  - text
+  - component:SD-MD-MM-2CL
+  - lob:Sales & Distribution
+  - bo:Material
+---
+# I_MATERIALCOMMISSIONGROUPTEXT
+
+**Materialcommissiongrouptext**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-MD-MM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `MaterialCommissionGroup` | `provg` |
+| key `Language` | `spras` |
+| `MaterialCommissionGroupName` | `vtext` |
+| `_MaterialCommissionGroup` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_MaterialCommissionGroup` | `I_MaterialCommissionGroup` | [0..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'MaterialCommissionGroup'
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+@EndUserText.label: 'Material Commission Group - Text'
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AbapCatalog.sqlViewName: 'ISDMATLCMSNGRPT'
+@AbapCatalog.buffering.status: #ACTIVE
+@AbapCatalog.buffering.type: #FULL
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@Metadata.ignorePropagatedAnnotations: true
+@Search.searchable: true
+@Analytics.dataExtraction.enabled: true 
+@ObjectModel.modelingPattern:           #LANGUAGE_DEPENDENT_TEXT
+@ObjectModel.supportedCapabilities:  [  #SQL_DATA_SOURCE,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #LANGUAGE_DEPENDENT_TEXT,
+                                        #EXTRACTION_DATA_SOURCE,
+                                        #SEARCHABLE_ENTITY   ]
+define view I_MaterialCommissionGroupText as 
+select from tvprt
+
+association[0..1] to I_MaterialCommissionGroup as _MaterialCommissionGroup on $projection.MaterialCommissionGroup = _MaterialCommissionGroup.MaterialCommissionGroup
+association[0..1] to I_Language as _Language on $projection.Language = _Language.Language
+{
+    @ObjectModel.foreignKey.association: '_MaterialCommissionGroup'
+    key provg as MaterialCommissionGroup,
+
+    @Semantics.language: true
+    @ObjectModel.foreignKey.association: '_Language'
+    key spras as Language,
+
+    @Search.defaultSearchElement: true
+    @Search.fuzzinessThreshold: 0.8
+    @Semantics.text: true
+    @Search.ranking: #HIGH
+    vtext as MaterialCommissionGroupName,
+    
+    // Associations
+    _MaterialCommissionGroup,
+    _Language
+}
+```

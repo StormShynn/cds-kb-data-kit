@@ -1,0 +1,84 @@
+---
+name: I_JVAVALUATIONTYPE
+description: Jvavaluationtype
+app_component: CA-JVA
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CA
+  - CA-JVA
+  - interface-view
+  - component:CA-JVA
+  - lob:Cross-Application Components
+---
+# I_JVAVALUATIONTYPE
+
+**Jvavaluationtype**
+
+| Property | Value |
+|---|---|
+| App Component | `CA-JVA` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `InventoryValuationType` | `InventoryValuationType` |
+| `AcctCategoryRef` | `AcctCategoryRef` |
+| `InternalPurchasingRule` | `InternalPurchasingRule` |
+| `ExternalPurchasingRule` | `ExternalPurchasingRule` |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'JVA Valuation Type'
+@AbapCatalog: { sqlViewName: 'IJVAVALTYPE',                
+                preserveKey: true,
+                compiler.compareFilter: true,
+                dataMaintenance: #DISPLAY_ONLY }
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics: { dataCategory: #DIMENSION,
+              dataExtraction.enabled: true ,
+              internalName: #LOCAL }
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel: { representativeKey: 'InventoryValuationType',
+                usageType: { sizeCategory: #S,
+                             dataClass:  #MASTER,
+                             serviceQuality: #C },
+                supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE,
+                                        #EXTRACTION_DATA_SOURCE, #SEARCHABLE_ENTITY, #UI_PROVIDER_PROJECTION_SOURCE ],
+                modelingPattern: #ANALYTICAL_DIMENSION }
+@Metadata.ignorePropagatedAnnotations: true
+@VDM: { lifecycle.contract.type: #PUBLIC_LOCAL_API,
+        viewType: #COMPOSITE }
+
+define view I_JVAValuationType
+
+  as select from I_InventoryValuationType
+
+{
+  key InventoryValuationType,
+      AcctCategoryRef,
+      InternalPurchasingRule,
+      ExternalPurchasingRule
+}
+
+union
+
+select from I_JVAMaterialValuationType as mbew
+
+  left outer to one join I_InventoryValuationType as ValType on ValType.InventoryValuationType = mbew.InventoryValuationType
+
+{
+  key coalesce( ValType.InventoryValuationType, mbew.InventoryValuationType ) as InventoryValuationType,
+      coalesce( ValType.AcctCategoryRef, '')                 as AcctCategoryRef,
+      coalesce( ValType.InternalPurchasingRule, '')          as InternalPurchasingRule,
+      coalesce( ValType.ExternalPurchasingRule, '')          as ExternalPurchasingRule
+}
+```

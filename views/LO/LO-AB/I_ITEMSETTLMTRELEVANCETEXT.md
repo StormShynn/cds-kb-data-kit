@@ -1,0 +1,38 @@
+---
+name: I_ITEMSETTLMTRELEVANCETEXT
+description: Item Settlement Relevance - Text
+app_component: LO-AB
+software_component: SAPSCORE
+release_state: released
+system_type: S/4HANA Cloud Public Edition
+source_available: false
+source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ITEMSETTLMTRELEVANCETEXT')/$value
+semantic_en: Item Settlement Relevance - Text
+tags:
+  - LO
+  - component:LO-AB
+  - interface-view
+  - LO-AB
+  - lob:logistics general
+  - metadata-only
+---
+# I_ITEMSETTLMTRELEVANCETEXT
+
+**Item Settlement Relevance - Text**
+
+| Property | Value |
+|---|---|
+| App Component | `LO-AB` |
+| Software Component | `SAPSCORE` |
+| Release State | Released |
+| System Type | S/4HANA Cloud Public Edition |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ITEMSETTLMTRELEVANCETEXT')/$value) |
+
+## Fields
+
+| Field | Type | Description |
+|---|---|---|
+| `ItemSettlmtRelevance` | `CHAR(1)` | Item Settlement Relevance |
+| `Language` | `LANG(1)` | Language Key |
+| `ItemSettlmtRelevanceName` | `CHAR(60)` | Description of Settlement Relevance Item Category |
+| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

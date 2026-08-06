@@ -1,0 +1,94 @@
+---
+name: I_PRODUCTPLANNINGSTRATEGY
+description: Productplanningstrategy
+app_component: PP-VDM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PP
+  - PP-VDM
+  - interface-view
+  - product
+  - component:PP-VDM-2CL
+  - lob:Manufacturing
+---
+# I_PRODUCTPLANNINGSTRATEGY
+
+**Productplanningstrategy**
+
+| Property | Value |
+|---|---|
+| App Component | `PP-VDM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ProductPlanningStrategy` | `strat.stra1` |
+| `PlndIndepRqmtRqmtType` | `strat.bedvp` |
+| `CustomerRequirementRqmtType` | `strat.bedku` |
+| `_Text` | *Association* |
+| `_PlndIndepRqmtRqmtType` | *Association* |
+| `_CustomerRqmtRqmtType` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_ProductPlanningStrategyText` | [0..*] |
+| `_PlndIndepRqmtRqmtType` | `I_PlndIndepRqmtType` | [0..1] |
+| `_CustomerRqmtRqmtType` | `I_PlndIndepRqmtType` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IPLANNINGSTRATEG'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.buffering: {status: #ACTIVE, type: #GENERIC, numberOfKeyFields: 001}
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@Analytics.internalName: #LOCAL
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Consumption.ranked: true
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #CDS_MODELING_ASSOCIATION_TARGET, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE, #SQL_DATA_SOURCE, #SEARCHABLE_ENTITY]
+@ObjectModel.representativeKey: 'ProductPlanningStrategy'
+@ObjectModel.sapObjectNodeType.name: 'ProductPlanningStrategy'
+@ObjectModel.usageType: {serviceQuality: #A, sizeCategory: #S, dataClass: #CUSTOMIZING}
+@Search.searchable: true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Product Planning Strategy'
+
+define view I_ProductPlanningStrategy
+  as select from t461s as strat
+
+  association [0..*] to I_ProductPlanningStrategyText as _Text                  on $projection.ProductPlanningStrategy = _Text.ProductPlanningStrategy
+  association [0..1] to I_PlndIndepRqmtType           as _PlndIndepRqmtRqmtType on $projection.PlndIndepRqmtRqmtType = _PlndIndepRqmtRqmtType.PlndIndepRqmtType
+  association [0..1] to I_PlndIndepRqmtType           as _CustomerRqmtRqmtType  on $projection.CustomerRequirementRqmtType = _CustomerRqmtRqmtType.PlndIndepRqmtType
+{
+      // Key
+      @Search: {defaultSearchElement: true, ranking: #HIGH, fuzzinessThreshold: 0.8}
+      @ObjectModel.text.association: '_Text'
+  key strat.stra1 as ProductPlanningStrategy,
+
+      @ObjectModel.foreignKey.association: '_PlndIndepRqmtRqmtType'  
+      strat.bedvp as PlndIndepRqmtRqmtType,
+      @ObjectModel.foreignKey.association: '_CustomerRqmtRqmtType'        
+      strat.bedku as CustomerRequirementRqmtType,
+
+      // Associations
+      _CustomerRqmtRqmtType,
+      _PlndIndepRqmtRqmtType,
+      _Text
+};
+```

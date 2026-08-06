@@ -1,0 +1,196 @@
+---
+name: I_PCCEVTBSDWIPVARIANCECUBE
+description: Pccevtbsdwipvariancecube
+app_component: CO-PC-OBJ-PER-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CO
+  - CO-PC
+  - CO-PC-OBJ
+  - interface-view
+  - analytical
+  - component:CO-PC-OBJ-PER-2CL
+  - lob:Controlling
+---
+# I_PCCEVTBSDWIPVARIANCECUBE
+
+**Pccevtbsdwipvariancecube**
+
+| Property | Value |
+|---|---|
+| App Component | `CO-PC-OBJ-PER-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Ledger` | `Ledger` |
+| key `CompanyCode` | `CompanyCode` |
+| key `OrderID` | `OrderID` |
+| key `OrderType` | `OrderType` |
+| key `OrderCategory` | `OrderCategory` |
+| key `ChartOfAccounts` | `ChartOfAccounts` |
+| key `GLAccount` | `GLAccount` |
+| key `Plant` | `Plant` |
+| key `ProducedProduct` | `ProducedProduct` |
+| key `OriginProduct` | `OriginProduct` |
+| key `OriginCostCenter` | `OriginCostCenter` |
+| key `OriginCostCtrActivityType` | `OriginCostCtrActivityType` |
+| `DisplayCurrency` | `DisplayCurrency` |
+| `InptPrVarcAmtInDspCrcy` | `InptPrVarcAmtInDspCrcy` |
+| `InptQtyVarcAmtInDspCrcy` | `InptQtyVarcAmtInDspCrcy` |
+| `RsceUsgeVarcAmtInDspCrcy` | `RsceUsgeVarcAmtInDspCrcy` |
+| `OutpPrVarcAmtInDspCrcy` | `OutpPrVarcAmtInDspCrcy` |
+| `RmngVarcAmtInDspCrcy` | `RmngVarcAmtInDspCrcy` |
+| `CostVarianceInDspCrcy` | `CostVarianceInDspCrcy` |
+| `WIPCostInDspCrcy` | `WIPCostInDspCrcy` |
+| `_Ledger` | *Association* |
+| `_CompanyCode` | *Association* |
+| `_Order` | *Association* |
+| `_OrderType` | *Association* |
+| `_OrderCategory` | *Association* |
+| `_ChartOfAccounts` | *Association* |
+| `_GLAccountInChartOfAccounts` | *Association* |
+| `_Plant` | *Association* |
+| `_Product` | *Association* |
+| `_Currency` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Ledger` | `I_Ledger` | [0..1] |
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_Order` | `I_Order` | [0..1] |
+| `_OrderType` | `I_OrderType` | [0..1] |
+| `_OrderCategory` | `I_OrderCategory` | [0..1] |
+| `_ChartOfAccounts` | `I_ChartOfAccounts` | [0..1] |
+| `_GLAccountInChartOfAccounts` | `I_GLAccountInChartOfAccounts` | [0..1] |
+| `_Plant` | `I_Plant` | [0..1] |
+| `_Product` | `I_Product` | [0..1] |
+| `_Currency` | `I_Currency` | [0..1] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck:#MANDATORY
+@AccessControl.personalData.blocking: #BLOCKED_DATA_EXCLUDED
+@Analytics: { dataCategory: #CUBE,
+              internalName: #LOCAL }
+@Metadata: { allowExtensions:true,
+             ignorePropagatedAnnotations: true }
+@ObjectModel: { usageType.sizeCategory: #XL,
+                usageType.dataClass:  #MIXED,
+                usageType.serviceQuality: #D,
+                supportedCapabilities: [#ANALYTICAL_PROVIDER,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #SQL_DATA_SOURCE],
+                modelingPattern:#ANALYTICAL_CUBE}
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@VDM.viewType: #COMPOSITE
+@EndUserText.label: 'WIP and Variance for Event-Based PCC - Cube'
+
+define view entity I_PCCEvtBsdWIPVarianceCube 
+  with parameters
+    @Consumption.valueHelpDefinition: [{entity: {name: 'I_Ledger', element: 'Ledger'}}]
+    P_Ledger               : fins_ledger,
+    @Consumption.valueHelpDefinition: [{ entity:{name: 'I_FiscalYearPeriod', element :'FiscalYearPeriod'} }]
+    @Semantics.fiscal.yearPeriod: true
+    P_FromFiscalYearPeriod : fins_fyearperiod,
+    @Consumption.valueHelpDefinition: [{ entity:{name: 'I_FiscalYearPeriod', element :'FiscalYearPeriod'} }]
+    @Semantics.fiscal.yearPeriod: true
+    P_ToFiscalYearPeriod   : fins_fyearperiod,
+    @Consumption.valueHelpDefinition: [{ entity:{name: 'I_CurrencyRole', element :'CurrencyRole'} }]
+    P_CurrencyRole         : fac_crcyrole
+    as select from P_PCCEvtBsdWIPVarc(   P_Ledger               : $parameters.P_Ledger,
+                                         P_FromFiscalYearPeriod : $parameters.P_FromFiscalYearPeriod,
+                                         P_ToFiscalYearPeriod   : $parameters.P_ToFiscalYearPeriod,
+                                         P_CurrencyRole         : $parameters.P_CurrencyRole )
+                                                                                                           
+    association [0..1] to I_Ledger                     as _Ledger                     on  $projection.Ledger = _Ledger.Ledger
+    association [0..1] to I_CompanyCode                as _CompanyCode                on  $projection.CompanyCode = _CompanyCode.CompanyCode
+    association [0..1] to I_Order                      as _Order                      on  $projection.OrderID = _Order.OrderID
+    association [0..1] to I_OrderType                  as _OrderType                  on  $projection.OrderType = _OrderType.OrderType
+    association [0..1] to I_OrderCategory              as _OrderCategory              on  $projection.OrderCategory = _OrderCategory.OrderCategory
+    association [0..1] to I_ChartOfAccounts            as _ChartOfAccounts            on  $projection.ChartOfAccounts = _ChartOfAccounts.ChartOfAccounts
+    association [0..1] to I_GLAccountInChartOfAccounts as _GLAccountInChartOfAccounts on  $projection.ChartOfAccounts = _GLAccountInChartOfAccounts.ChartOfAccounts
+                                                                                      and $projection.GLAccount       = _GLAccountInChartOfAccounts.GLAccount
+    association [0..1] to I_Plant                      as _Plant                      on  $projection.Plant = _Plant.Plant
+    association [0..1] to I_Product                    as _Product                    on  $projection.ProducedProduct = _Product.Product
+    association [0..1] to I_Currency                   as _Currency                   on  $projection.DisplayCurrency = _Currency.Currency
+{
+      @ObjectModel.foreignKey.association: '_Ledger'
+  key Ledger,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key CompanyCode,
+      @ObjectModel.foreignKey.association: '_Order'
+  key OrderID,
+      @ObjectModel.foreignKey.association: '_OrderType'
+  key OrderType,
+      @ObjectModel.foreignKey.association: '_OrderCategory'
+  key OrderCategory,
+      @ObjectModel.foreignKey.association: '_ChartOfAccounts'
+  key ChartOfAccounts,
+      @ObjectModel.foreignKey.association: '_GLAccountInChartOfAccounts'
+  key GLAccount,
+      @ObjectModel.foreignKey.association: '_Plant'
+  key Plant,
+      @ObjectModel.foreignKey.association: '_Product'
+  key ProducedProduct,
+  key OriginProduct,
+  key OriginCostCenter,
+  key OriginCostCtrActivityType,
+
+      DisplayCurrency,
+      
+      /////////////////////////////////////////////////////////////////////////////////////
+      // Variances
+      /////////////////////////////////////////////////////////////////////////////////////
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      InptPrVarcAmtInDspCrcy,
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      InptQtyVarcAmtInDspCrcy,
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      RsceUsgeVarcAmtInDspCrcy,
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      OutpPrVarcAmtInDspCrcy,
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      RmngVarcAmtInDspCrcy,
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      CostVarianceInDspCrcy,
+
+      /////////////////////////////////////////////////////////////////////////////////////
+      // WIP
+      /////////////////////////////////////////////////////////////////////////////////////
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      WIPCostInDspCrcy,
+      /////////////////////////////////////////////////////////////////////////////////////
+      // Associations
+      /////////////////////////////////////////////////////////////////////////////////////
+      _Ledger,                    
+      _CompanyCode,               
+      _Order,                     
+      _OrderType,                 
+      _OrderCategory,             
+      _ChartOfAccounts,           
+      _GLAccountInChartOfAccounts,
+      _Plant,                     
+      _Product,                   
+      _Currency               
+}
+```

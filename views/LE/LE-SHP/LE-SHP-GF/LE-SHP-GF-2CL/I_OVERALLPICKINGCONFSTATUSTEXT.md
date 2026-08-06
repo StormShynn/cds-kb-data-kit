@@ -1,0 +1,95 @@
+---
+name: I_OVERALLPICKINGCONFSTATUSTEXT
+description: Overallpickingconfstatustext
+app_component: LE-SHP-GF-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - LE
+  - LE-SHP
+  - LE-SHP-GF
+  - interface-view
+  - text-view
+  - text
+  - status
+  - component:LE-SHP-GF-2CL
+  - lob:Logistics Execution
+---
+# I_OVERALLPICKINGCONFSTATUSTEXT
+
+**Overallpickingconfstatustext**
+
+| Property | Value |
+|---|---|
+| App Component | `LE-SHP-GF-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `OverallPickingConfStatus` | `statu` |
+| key `Language` | `spras` |
+| `OverallPickingConfStatusDesc` | `bezei` |
+| `_OverallPickingConfStatus` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_OverallPickingConfStatus` | `I_OverallPickingConfStatus` | [0..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@Analytics.dataExtraction.enabled: false
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.modelingPattern: #LANGUAGE_DEPENDENT_TEXT
+@ObjectModel.representativeKey: 'OverallPickingConfStatus'
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT, #SEARCHABLE_ENTITY ]
+@EndUserText.label: 'Ovrl Picking Confirmation Status - Text'
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck:#NOT_REQUIRED
+@AbapCatalog.sqlViewName: 'ISDOVRLPICKCSTST'
+@Metadata.ignorePropagatedAnnotations: true
+@Search.searchable: true
+
+/*+[hideWarning] { "IDS" : [ "CALCULATED_FIELD_CHECK" ]  } */
+define view I_OverallPickingConfStatusText
+  as select from tvbst
+
+  association [0..1] to I_OverallPickingConfStatus as _OverallPickingConfStatus on $projection.OverallPickingConfStatus = _OverallPickingConfStatus.OverallPickingConfStatus
+  association [0..1] to I_Language                 as _Language                 on $projection.Language = _Language.Language
+{
+      @ObjectModel.foreignKey.association: '_OverallPickingConfStatus'
+      @ObjectModel.text.element: ['OverallPickingConfStatusDesc']
+  key statu as OverallPickingConfStatus,
+
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_Language'
+  key spras as Language,
+
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #LOW
+      @Semantics.text: true
+      bezei as OverallPickingConfStatusDesc,
+
+      _OverallPickingConfStatus,
+      _Language
+}
+where
+      tvbst.tbnam = 'LIKP'
+  and tvbst.fdnam = 'KOQUK'
+```

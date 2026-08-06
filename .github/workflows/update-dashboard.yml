@@ -1,0 +1,55 @@
+# .github/workflows/update-dashboard.yml
+# Keep the dashboard in sync with whatever is already on main — no PR needed.
+#
+# Fires right after changelog.json or views/** change on main (e.g. the
+# moment a daily-fetch PR is merged). It only re-renders dashboard.html from
+# data that has ALREADY been reviewed/merged — it never adds or fetches new
+# views — so, unlike daily-fetch.yml, it pushes straight to main instead of
+# opening a PR.
+#
+# This repo is private, so there is deliberately no GitHub Pages deploy step
+# here (Pages publishing would defeat the point of keeping the data private).
+# dashboard.html/coverage-report.html are just regular files in the repo —
+# view them by cloning, or by having cds-kb-mcp-kit render them from the
+# authenticated API if that's ever wanted again.
+
+name: Update Dashboard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'changelog.json'
+      - 'views/**'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Regenerate dashboard
+        run: node scripts/generate-dashboard.mjs
+
+      - name: Commit and push if changed
+        uses: ./.github/actions/commit-and-push
+        with:
+          paths: dashboard.html
+          commit-message: "Update dashboard [skip ci]"
+          empty-message: Dashboard already up to date
+          success-message: Dashboard updated

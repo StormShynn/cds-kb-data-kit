@@ -1,0 +1,116 @@
+---
+name: I_KNBNSTKTRANSFREPLNMTSTRGY
+description: Knbnstktransfreplnmtstrgy
+app_component: PP-KAB-VDM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PP
+  - PP-KAB
+  - PP-KAB-VDM
+  - interface-view
+  - component:PP-KAB-VDM-2CL
+  - lob:Manufacturing
+---
+# I_KNBNSTKTRANSFREPLNMTSTRGY
+
+**Knbnstktransfreplnmtstrgy**
+
+| Property | Value |
+|---|---|
+| App Component | `PP-KAB-VDM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Plant` | `werks` |
+| key `StockTransferReplnmtStrategy` | `pkstu` |
+| `KnbnCtrlCycStkTransfCtrlType` | `pksau` |
+| `GoodsMovementType` | `bwart` |
+| `SignalLockingTimeInMinutes` | `aussp` |
+| `StockDeterminationRule` | `rules` |
+| `KnbnBatchDeterminationProced` | `kalsm` |
+| `KnbnStockTransferIsCrossPlant` | `pkwzw` |
+| `PostCnsmpnToCostCtrStkTransf` | `cnscc` |
+| `PostCnsmpnToCostCtrMvtType` | `bwacc` |
+| `SubDaySchedulingIsConsdrd` | `uttrm` |
+| `UsageOfPackingInstructions` | `vpack` |
+| `KanbanCtrlCycPrintFormTemplate` | `cc_print_form` |
+| `KanbanCtnPrintFormTemplate` | `kbform` |
+| `KnbnSDSchedgAgrmtDelivCrtnType` | `sddkz` |
+| `_Text` | *Association* |
+| `_Plant` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_KnbnStkTransfReplnmtStrgyTxt` | [0..*] |
+| `_Plant` | `I_Plant` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IPPKNBNTRANSTRAT'
+@AbapCatalog.preserveKey: true
+@EndUserText.label: 'Kanban Control Cycle Stock Transf Strat'
+@AbapCatalog.buffering.status: #ACTIVE
+@AbapCatalog.buffering.type: #FULL
+
+@AccessControl.authorizationCheck: #MANDATORY
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #EXTRACTION_DATA_SOURCE, #ANALYTICAL_DIMENSION ]
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.sapObjectNodeType.name: 'StockTransferReplnmtStrategy'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.representativeKey: 'StockTransferReplnmtStrategy'
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@AbapCatalog.compiler.compareFilter: true
+@Analytics.internalName: #LOCAL
+@Metadata.allowExtensions:true
+define view I_KnbnStkTransfReplnmtStrgy
+  as select from tpk03
+
+  association [0..*] to I_KnbnStkTransfReplnmtStrgyTxt as _Text  on  $projection.StockTransferReplnmtStrategy = _Text.StockTransferReplnmtStrategy
+                                                                 and $projection.Plant                        = _Text.Plant
+  association [0..1] to I_Plant                        as _Plant on  $projection.Plant = _Plant.Plant
+
+{
+      @ObjectModel.foreignKey.association: '_Plant'
+  key werks         as Plant,
+      @ObjectModel.text.association: '_Text'
+  key pkstu         as StockTransferReplnmtStrategy,
+      pksau         as KnbnCtrlCycStkTransfCtrlType,
+      bwart         as GoodsMovementType,
+      aussp         as SignalLockingTimeInMinutes,
+      rules         as StockDeterminationRule,
+      kalsm         as KnbnBatchDeterminationProced,
+      pkwzw         as KnbnStockTransferIsCrossPlant,
+      cnscc         as PostCnsmpnToCostCtrStkTransf,
+      bwacc         as PostCnsmpnToCostCtrMvtType,
+      uttrm         as SubDaySchedulingIsConsdrd,
+      vpack         as UsageOfPackingInstructions,
+      cc_print_form as KanbanCtrlCycPrintFormTemplate,
+      kbform        as KanbanCtnPrintFormTemplate,
+      sddkz         as KnbnSDSchedgAgrmtDelivCrtnType,      
+      
+      _Text,
+      _Plant
+}
+```

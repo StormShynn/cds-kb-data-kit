@@ -1,0 +1,139 @@
+---
+name: I_SERVICEDOCUMENTITEMPRDCSSR_3
+description: Service DocumentUMENTITEMPRDCSSR 3
+app_component: CRM-S4-REP-RFW
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CRM
+  - interface-view
+  - service
+  - document
+  - item-level
+  - component:CRM-S4-REP-RFW
+  - lob:Other
+---
+# I_SERVICEDOCUMENTITEMPRDCSSR_3
+
+**Service DocumentUMENTITEMPRDCSSR 3**
+
+| Property | Value |
+|---|---|
+| App Component | `CRM-S4-REP-RFW` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ServiceDocumentItmRelationUUID` | `relationid` |
+| key `ServiceDocItmRltnSqncNumber` | `posno` |
+| `ServiceDocumentItemPredecessor` | `objkey_a` |
+| `ServiceDocumentItemCharUUID` | `cast(objkey_b as crms4_object_charguid32 preserving type )` |
+| `ServiceDocumentItmRelationType` | `breltyp` |
+| `ServiceDocItmPrdcssrBusObjType` | `objtype_a` |
+| `ServiceDocumentItmRelationKind` | `vona_kind` |
+| `ServiceDocumentItemObjectType` | `objtype_b` |
+| `SrvcDocItmDocFlwCrtnDateTime` | `cast (date as crmt_doc_flow_datetime preserving type)` |
+| `_ServiceDocItm` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ServiceDocItm` | `I_ServiceDocumentItemEnhcd` | [1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Preceding Transaction of Srvc Trans Item'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+
+@VDM: {
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+            mapping:[
+                {
+//                   filter: [{operator: #EQ, tableElement: 'objtype_a', value: 'BUS2000%'}],
+                    table: 'crmd_brelvonai', role: #MAIN,
+                    viewElement: ['ServiceDocumentItmRelationUUID', 'ServiceDocItmRltnSqncNumber'],
+                    tableElement: ['relationid', 'posno']
+                }
+            ]
+        }
+    }
+ }
+
+@AccessControl: {
+  authorizationCheck: #CHECK,
+  personalData.blocking: #('TRANSACTIONAL_DATA')
+}
+
+@AbapCatalog: {
+  sqlViewName: 'ISRVCITMPRD3',
+  compiler.compareFilter: true ,
+  preserveKey: true
+}
+
+@ObjectModel: {
+//   representativeKey: 'ServiceDocumentItmRelationUUID',
+   usageType: {
+     dataClass:      #TRANSACTIONAL,
+     serviceQuality: #A,
+     sizeCategory:   #XL
+   },
+   supportedCapabilities: [#SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #EXTRACTION_DATA_SOURCE]
+}
+
+//@Analytics.dataCategory: #DIMENSION
+//@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations: true
+
+//! Business Object SONT for the Service Document Item Predecessor
+@ObjectModel.sapObjectNodeType.name: 'ServiceDocumentItemPredecessor'
+/*
+  1902CE: Data preview might give you an error because hextobin conversion may not work on properly on junk data. Hence dump occurs.
+  To view the data, you have to apply the condition "CharcLength = 32" to get the results for Service scenario only.
+
+  1911CE: DONOT use hextobin converted attribute.
+
+*/
+
+define view I_ServiceDocumentItemPrdcssr_3
+  as select from crmd_brelvonai
+  association [1] to I_ServiceDocumentItemEnhcd as _ServiceDocItm on $projection.ServiceDocumentItemPredecessor = _ServiceDocItm.ServiceDocumentItemCharUUID
+
+{
+  key relationid                                                 as ServiceDocumentItmRelationUUID,
+  key posno                                                      as ServiceDocItmRltnSqncNumber,
+
+      /* CRMT_BRELVONAI */
+      objkey_a                                                   as ServiceDocumentItemPredecessor,
+      //cast(objkey_a as crms4_object_charguid32 preserving type ) as ServiceDocItmPrdcssrCharUUID,
+      // objkey_b                                              as ServiceDocumentItemCharUUID,
+
+      cast(objkey_b as crms4_object_charguid32 preserving type ) as ServiceDocumentItemCharUUID,
+      breltyp                                                    as ServiceDocumentItmRelationType,
+
+      objtype_a                                                  as ServiceDocItmPrdcssrBusObjType,
+      vona_kind                                                  as ServiceDocumentItmRelationKind,
+      objtype_b                                                  as ServiceDocumentItemObjectType,
+      cast (date as crmt_doc_flow_datetime preserving type)      as SrvcDocItmDocFlwCrtnDateTime,
+
+      //Associations
+      _ServiceDocItm
+
+}
+```

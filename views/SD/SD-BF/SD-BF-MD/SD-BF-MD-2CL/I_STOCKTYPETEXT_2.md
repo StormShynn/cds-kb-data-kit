@@ -1,0 +1,92 @@
+---
+name: I_STOCKTYPETEXT_2
+description: Stocktypetext 2
+app_component: SD-BF-MD-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-BF
+  - SD-BF-MD
+  - interface-view
+  - text
+  - component:SD-BF-MD-2CL
+  - lob:Sales & Distribution
+---
+# I_STOCKTYPETEXT_2
+
+**Stocktypetext 2**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-BF-MD-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `StockType` | `SUBSTRING(domvalue_l, 1, 1)` |
+| key `Language` | `ddlanguage` |
+| `StockTypeName` | `ddtext` |
+| `_StockType` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_StockType` | `I_StockType_2` | [0..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE 
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'StockType'
+@ObjectModel.usageType.dataClass: #META 
+@ObjectModel.usageType.serviceQuality: #A 
+@ObjectModel.usageType.sizeCategory: #S 
+@EndUserText.label: 'Stock Type - Text'
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AbapCatalog.sqlViewName: 'ISDSTOCKTYPETEX2'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics.dataExtraction.enabled: true
+@ObjectModel.modelingPattern:           #LANGUAGE_DEPENDENT_TEXT
+@ObjectModel.supportedCapabilities:  [  #SQL_DATA_SOURCE,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #LANGUAGE_DEPENDENT_TEXT,
+                                        #EXTRACTION_DATA_SOURCE   ]
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK", "CALCULATED_FIELD_CHECK" ]  } */
+define view I_StockTypeText_2
+as select from dd07t
+
+association[0..1] to I_StockType_2 as _StockType on $projection.StockType = _StockType.StockType
+association[0..1] to I_Language as _Language on $projection.Language = _Language.Language
+{
+    @ObjectModel.foreignKey.association: '_StockType'
+    key SUBSTRING(domvalue_l, 1, 1) as StockType,
+    
+    @Semantics.language: true
+    @ObjectModel.foreignKey.association: '_Language'
+    key ddlanguage as Language,
+    
+    @Semantics.text: true
+    ddtext as StockTypeName,
+    
+    //Associations
+    _StockType,
+    _Language
+}
+where (dd07t.domname = 'MB_INSMK') and (dd07t.as4local = 'A');
+```

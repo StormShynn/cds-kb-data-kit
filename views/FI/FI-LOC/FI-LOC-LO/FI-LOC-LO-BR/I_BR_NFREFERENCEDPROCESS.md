@@ -1,0 +1,74 @@
+---
+name: I_BR_NFREFERENCEDPROCESS
+description: BR Nfreferencedprocess
+app_component: FI-LOC-LO-BR
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-LOC
+  - FI-LOC-LO
+  - interface-view
+  - component:FI-LOC-LO-BR
+  - lob:Finance
+---
+# I_BR_NFREFERENCEDPROCESS
+
+**BR Nfreferencedprocess**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-LOC-LO-BR` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `BR_NotaFiscal` | `NFReferencedProcess.docnum` |
+| key `BR_NFReferencedProcessSqncNmbr` | `NFReferencedProcess.counter` |
+| `BR_NFReferencedProcIdentifier` | `cast(NFReferencedProcess.nproc as logbr_nf_process_id)` |
+| `BR_NFReferencedProcessOrigin` | `NFReferencedProcess.indproc` |
+| `BR_NFTypeOfConcessionAct` | `cast(NFReferencedProcess.tpato as logbr_type_concession_act preserving type )` |
+| `_BR_NFReferencedProcOrign` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BR_NFReferencedProcOrign` | `I_BR_NFReferencedProcOrign` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'IBRNFREFPROCESS'
+@AbapCatalog.compiler.compareFilter: true
+@EndUserText.label: 'Brazil Nota Fiscal Referenced Process'
+@VDM.viewType: #BASIC
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE,#CDS_MODELING_DATA_SOURCE]
+@AbapCatalog.preserveKey:true 
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AccessControl.authorizationCheck: #CHECK
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+
+define view I_BR_NFReferencedProcess as select from j_1bnfrefproc as NFReferencedProcess 
+  association[0..1] to I_BR_NFReferencedProcOrign as _BR_NFReferencedProcOrign on $projection.BR_NFReferencedProcessOrigin = _BR_NFReferencedProcOrign.BR_NFReferencedProcessOrigin
+{
+  key NFReferencedProcess.docnum as BR_NotaFiscal,
+  key NFReferencedProcess.counter as BR_NFReferencedProcessSqncNmbr,  
+  cast(NFReferencedProcess.nproc as logbr_nf_process_id) as BR_NFReferencedProcIdentifier,
+  @ObjectModel.foreignKey.association: '_BR_NFReferencedProcOrign'
+  NFReferencedProcess.indproc as BR_NFReferencedProcessOrigin,
+  cast(NFReferencedProcess.tpato as logbr_type_concession_act preserving type ) as BR_NFTypeOfConcessionAct,
+  _BR_NFReferencedProcOrign
+}
+```

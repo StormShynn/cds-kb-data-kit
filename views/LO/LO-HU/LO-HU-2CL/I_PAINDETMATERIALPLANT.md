@@ -1,0 +1,136 @@
+---
+name: I_PAINDETMATERIALPLANT
+description: Paindetmaterialplant
+app_component: LO-HU-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - LO
+  - LO-HU
+  - interface-view
+  - material
+  - plant
+  - component:LO-HU-2CL
+  - lob:Logistics General
+  - bo:Material
+  - bo:Plant
+---
+# I_PAINDETMATERIALPLANT
+
+**Paindetmaterialplant**
+
+| Property | Value |
+|---|---|
+| App Component | `LO-HU-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ConditionType` | `PaInDetRec.kschl` |
+| key `Material` | `PaInDetRec.matnr` |
+| key `Plant` | `PaInDetRec.werks` |
+| key `ConditionValidityEndDate` | `PaInDetRec.datbi` |
+| `ConditionValidityStartDate` | `PaInDetRec.datab` |
+| `ConditionRecord` | `PaInDetRec.knumh` |
+| `PackingInstructionSystemUUID` | `cast( Conditions.packnr as pl_packinstnr preserving type )` |
+| `PackingInstructionAlt1SystUUID` | `cast( Conditions.packnr1 as pl_altpacknr1 preserving type )` |
+| `PackingInstructionAlt2SystUUID` | `cast( Conditions.packnr2 as pl_altpacknr2 preserving type )` |
+| `PackingInstructionAlt3SystUUID` | `cast( Conditions.packnr3 as pl_altpacknr3 preserving type )` |
+| `PackingInstructionAlt4SystUUID` | `cast( Conditions.packnr4 as pl_altpacknr4 preserving type )` |
+| `_ConditionType` | *Association* |
+| `_Material` | *Association* |
+| `_Plant` | *Association* |
+| `_PackingInstructionHeader` | *Association* |
+| `_PackingInstructionHeaderAlt1` | *Association* |
+| `_PackingInstructionHeaderAlt2` | *Association* |
+| `_PackingInstructionHeaderAlt3` | *Association* |
+| `_PackingInstructionHeaderAlt4` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ConditionType` | `I_ConditionType` | [1..1] |
+| `_Material` | `I_Material` | [0..1] |
+| `_Plant` | `I_Plant` | [0..1] |
+| `_PackingInstructionHeader` | `I_PackingInstructionHeader` | [0..1] |
+| `_PackingInstructionHeaderAlt1` | `I_PackingInstructionHeader` | [0..1] |
+| `_PackingInstructionHeaderAlt2` | `I_PackingInstructionHeader` | [0..1] |
+| `_PackingInstructionHeaderAlt3` | `I_PackingInstructionHeader` | [0..1] |
+| `_PackingInstructionHeaderAlt4` | `I_PackingInstructionHeader` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'PaInDet for Material/Plant'
+@Metadata.ignorePropagatedAnnotations: true
+
+@VDM.viewType: #BASIC
+
+@VDM.lifecycle.contract.type:  #PUBLIC_LOCAL_API
+
+@ObjectModel: {
+     usageType: {
+         serviceQuality: #A,
+         sizeCategory: #L,
+         dataClass: #TRANSACTIONAL
+     },
+     supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ],
+     modelingPattern: #NONE
+}
+
+define view entity I_PaInDetMaterialPlant
+  as select from kotp200 as PaInDetRec
+    join         kondp   as Conditions on PaInDetRec.knumh = Conditions.knumh
+  association [1..1] to I_ConditionType            as _ConditionType                on  $projection.ConditionType           = _ConditionType.ConditionType
+                                                                                    and _ConditionType.ConditionUsage       = 'P'
+                                                                                    and _ConditionType.ConditionApplication = 'PO'
+  association [0..1] to I_Material                 as _Material                     on  $projection.Material = _Material.Material
+  association [0..1] to I_Plant                    as _Plant                        on  $projection.Plant = _Plant.Plant
+  association [0..1] to I_PackingInstructionHeader as _PackingInstructionHeader     on  $projection.PackingInstructionSystemUUID = _PackingInstructionHeader.PackingInstructionSystemUUID
+  association [0..1] to I_PackingInstructionHeader as _PackingInstructionHeaderAlt1 on  $projection.PackingInstructionAlt1SystUUID = _PackingInstructionHeaderAlt1.PackingInstructionSystemUUID
+  association [0..1] to I_PackingInstructionHeader as _PackingInstructionHeaderAlt2 on  $projection.PackingInstructionAlt2SystUUID = _PackingInstructionHeaderAlt2.PackingInstructionSystemUUID
+  association [0..1] to I_PackingInstructionHeader as _PackingInstructionHeaderAlt3 on  $projection.PackingInstructionAlt3SystUUID = _PackingInstructionHeaderAlt3.PackingInstructionSystemUUID
+  association [0..1] to I_PackingInstructionHeader as _PackingInstructionHeaderAlt4 on  $projection.PackingInstructionAlt4SystUUID = _PackingInstructionHeaderAlt4.PackingInstructionSystemUUID
+
+
+{
+       @ObjectModel.foreignKey.association: '_ConditionType'
+  key  PaInDetRec.kschl                                            as ConditionType,
+       @ObjectModel.foreignKey.association: '_Material'
+  key  PaInDetRec.matnr                                            as Material,
+       @ObjectModel.foreignKey.association: '_Plant'
+  key  PaInDetRec.werks                                            as Plant,
+  key  PaInDetRec.datbi                                            as ConditionValidityEndDate,
+       PaInDetRec.datab                                            as ConditionValidityStartDate,
+       PaInDetRec.knumh                                            as ConditionRecord,
+
+       cast( Conditions.packnr  as pl_packinstnr preserving type ) as PackingInstructionSystemUUID,
+       cast( Conditions.packnr1 as pl_altpacknr1 preserving type ) as PackingInstructionAlt1SystUUID,
+       cast( Conditions.packnr2 as pl_altpacknr2 preserving type ) as PackingInstructionAlt2SystUUID,
+       cast( Conditions.packnr3 as pl_altpacknr3 preserving type ) as PackingInstructionAlt3SystUUID,
+       cast( Conditions.packnr4 as pl_altpacknr4 preserving type ) as PackingInstructionAlt4SystUUID,
+
+       /* Associations */
+       _ConditionType,
+       _Material,
+       _Plant,
+       _PackingInstructionHeader,
+       _PackingInstructionHeaderAlt1,
+       _PackingInstructionHeaderAlt2,
+       _PackingInstructionHeaderAlt3,
+       _PackingInstructionHeaderAlt4
+
+}
+where
+  PaInDetRec.kappl = 'PO'
+```

@@ -1,0 +1,107 @@
+---
+name: I_USERTOLERANCEGROUP
+description: Usertolerancegroup
+app_component: FI-AR-IS-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-AR
+  - FI-AR-IS
+  - interface-view
+  - component:FI-AR-IS-2CL
+  - lob:Finance
+---
+# I_USERTOLERANCEGROUP
+
+**Usertolerancegroup**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-AR-IS-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `UserToleranceGroup` | `cast( rfpro as fins_rfpro )` |
+| key `CompanyCode` | `bukrs` |
+| `MaxPaymentDiffRevenueAmount` | `betrs` |
+| `MaxPaymentDiffExpenseAmount` | `betrh` |
+| `MaxPaymentDiffRevenuePercent` | `prozs` |
+| `MaxPaymentDiffExpensePercent` | `prozh` |
+| `MaxPaytDiffDiscAdjmtGainAmount` | `sknts` |
+| `MaxPaytDiffDiscAdjmtLossAmount` | `sknth` |
+| `MaxJrnlEntrPostgAmtInCCCrcy` | `maxbt` |
+| `MaxJrnlEntrItmPostgAmtInCCCrcy` | `maxeb` |
+| `MaximumCashDiscountPercent` | `maxsk` |
+| `CompanyCodeCurrency` | `_CompanyCode.Currency` |
+| `_CompanyCode` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog:    { sqlViewName:                 'IFIUSERTOLGROUP',
+                   preserveKey:                 true,
+                   compiler.compareFilter:      true }
+
+@Analytics:      { dataCategory:                #DIMENSION,
+                   internalName:                #LOCAL }
+
+@Metadata:       { ignorePropagatedAnnotations: true,
+                   allowExtensions:             true }
+
+@ObjectModel:    { modelingPattern:  #ANALYTICAL_DIMENSION,
+                   usageType.serviceQuality:    #A,
+                   usageType.sizeCategory:      #M,
+                   usageType.dataClass:         #CUSTOMIZING,
+                   representativeKey: 'UserToleranceGroup',
+                   supportedCapabilities: [ #CDS_MODELING_DATA_SOURCE , #CDS_MODELING_ASSOCIATION_TARGET , #SQL_DATA_SOURCE, #ANALYTICAL_DIMENSION]
+                   }
+
+@AccessControl:  { authorizationCheck:          #NOT_REQUIRED }
+
+@EndUserText:    { label:                       'Tolerance Group for Group of Users' }
+@VDM:            { viewType:                    #BASIC }
+@ClientHandling: { algorithm:                   #SESSION_VARIABLE }
+@Search:         { searchable:                  false }
+
+define view I_UserToleranceGroup
+  as select from t043t
+  association [0..1] to I_CompanyCode as _CompanyCode on _CompanyCode.CompanyCode = $projection.CompanyCode
+{
+  key cast( rfpro as fins_rfpro ) as UserToleranceGroup,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key bukrs                       as CompanyCode,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      betrs                       as MaxPaymentDiffRevenueAmount,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      betrh                       as MaxPaymentDiffExpenseAmount,
+      prozs                       as MaxPaymentDiffRevenuePercent,
+      prozh                       as MaxPaymentDiffExpensePercent,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      sknts                       as MaxPaytDiffDiscAdjmtGainAmount,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      sknth                       as MaxPaytDiffDiscAdjmtLossAmount,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      maxbt                       as MaxJrnlEntrPostgAmtInCCCrcy,
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      maxeb                       as MaxJrnlEntrItmPostgAmtInCCCrcy,
+      maxsk                       as MaximumCashDiscountPercent,
+      @Semantics.currencyCode: true
+      _CompanyCode.Currency       as CompanyCodeCurrency,
+      _CompanyCode
+}
+```

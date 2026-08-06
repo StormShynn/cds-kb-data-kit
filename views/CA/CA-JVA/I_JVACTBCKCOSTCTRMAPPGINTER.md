@@ -1,0 +1,129 @@
+---
+name: I_JVACTBCKCOSTCTRMAPPGINTER
+description: Jvactbckcostctrmappginter
+app_component: CA-JVA
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CA
+  - CA-JVA
+  - interface-view
+  - component:CA-JVA
+  - lob:Cross-Application Components
+---
+# I_JVACTBCKCOSTCTRMAPPGINTER
+
+**Jvactbckcostctrmappginter**
+
+| Property | Value |
+|---|---|
+| App Component | `CA-JVA` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CompanyCode` | `JVACtbckCostCtrMappgInterBsc.CompanyCode` |
+| key `JntVntrIntcoCode` | `JVACtbckCostCtrMappgInterBsc.JntVntrIntcoCode` |
+| key `JVAFromCostCenter` | `JVACtbckCostCtrMappgInterBsc.JVAFromCostCenter` |
+| `JVAToCostCenter` | `JVACtbckCostCtrMappgInterBsc.JVAToCostCenter` |
+| `JVACutbackCostCenter` | `JVACtbckCostCtrMappgInterBsc.JVACutbackCostCenter` |
+| `JVACutbackOrder` | `JVACtbckCostCtrMappgInterBsc.JVACutbackOrder` |
+| `JVACutbackWBS` | `JVACtbckCostCtrMappgInterBsc.JVACutbackWBS` |
+| `JVACutbackWBSExt` | `_CutbackWBSElement.WBSElementExternalID` |
+| `ControllingArea` | `_CompanyCode.ControllingArea` |
+| `JVAInterCompanyControllingArea` | `_InterCompanyCompanyCode.ControllingArea` |
+| `_CompanyCode` | *Association* |
+| `_InterCompanyCompanyCode` | *Association* |
+| `_FromCostCenter` | *Association* |
+| `_ToCostCenter` | *Association* |
+| `_CutbackCostCenter` | *Association* |
+| `_CutbackOrder` | *Association* |
+| `_CutbackWBSElement` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_InterCompanyCompanyCode` | `I_CompanyCode` | [0..1] |
+| `_FromCostCenter` | `I_CostCenter` | [0..*] |
+| `_ToCostCenter` | `I_CostCenter` | [0..*] |
+| `_CutbackCostCenter` | `I_CostCenter` | [0..*] |
+| `_CutbackOrder` | `I_Order` | [0..1] |
+| `_CutbackWBSElement` | `I_WBSElementByInternalKey` | [0..1] |
+
+## Source Code
+
+```abap
+@VDM.viewType: #COMPOSITE
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Cutback Cost Center Mapping Intercompany'
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics: { dataCategory: #DIMENSION }
+@ObjectModel.representativeKey: 'JVAFromCostCenter'
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                                      #CDS_MODELING_ASSOCIATION_TARGET,
+                                      #SQL_DATA_SOURCE,
+                                      #CDS_MODELING_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #NONE
+@Analytics.internalName: #LOCAL
+@Metadata.allowExtensions: true
+@ObjectModel.usageType:{
+  serviceQuality: #C,
+  sizeCategory: #L,
+  dataClass: #MIXED
+}
+
+define view entity I_JVACtbckCostCtrMappgInter
+
+  as select from I_JVACtbckCostCtrMappgInterBsc as JVACtbckCostCtrMappgInterBsc
+
+  association [0..1] to I_CompanyCode             as _CompanyCode             on  _CompanyCode.CompanyCode = $projection.CompanyCode
+
+  association [0..1] to I_CompanyCode             as _InterCompanyCompanyCode on  _InterCompanyCompanyCode.CompanyCode = $projection.JntVntrIntcoCode
+
+  association [0..*] to I_CostCenter              as _FromCostCenter          on  _FromCostCenter.ControllingArea = $projection.ControllingArea
+                                                                              and _FromCostCenter.CostCenter      = $projection.JVAFromCostCenter
+
+  association [0..*] to I_CostCenter              as _ToCostCenter            on  _ToCostCenter.ControllingArea = $projection.ControllingArea
+                                                                              and _ToCostCenter.CostCenter      = $projection.JVAToCostCenter
+
+  association [0..*] to I_CostCenter              as _CutbackCostCenter       on  _CutbackCostCenter.ControllingArea = $projection.JVAInterCompanyControllingArea
+                                                                              and _CutbackCostCenter.CostCenter      = $projection.JVACutbackCostCenter
+
+  association [0..1] to I_Order                   as _CutbackOrder            on  _CutbackOrder.OrderID = $projection.JVACutbackOrder
+
+  association [0..1] to I_WBSElementByInternalKey as _CutbackWBSElement       on  _CutbackWBSElement.WBSElementInternalID = $projection.JVACutbackWBS
+
+{
+  @ObjectModel.foreignKey.association: '_CompanyCode'
+  key JVACtbckCostCtrMappgInterBsc.CompanyCode,
+  @ObjectModel.foreignKey.association: '_InterCompanyCompanyCode'
+  key JVACtbckCostCtrMappgInterBsc.JntVntrIntcoCode,
+  key JVACtbckCostCtrMappgInterBsc.JVAFromCostCenter,
+      JVACtbckCostCtrMappgInterBsc.JVAToCostCenter,
+      JVACtbckCostCtrMappgInterBsc.JVACutbackCostCenter,
+      JVACtbckCostCtrMappgInterBsc.JVACutbackOrder,
+      JVACtbckCostCtrMappgInterBsc.JVACutbackWBS,
+      _CutbackWBSElement.WBSElementExternalID  as JVACutbackWBSExt,
+      _CompanyCode.ControllingArea             as ControllingArea,
+      _InterCompanyCompanyCode.ControllingArea as JVAInterCompanyControllingArea,
+
+      _CompanyCode,
+      _InterCompanyCompanyCode,
+      _FromCostCenter,
+      _ToCostCenter,
+      _CutbackCostCenter,
+      _CutbackOrder,
+      _CutbackWBSElement
+
+}
+```

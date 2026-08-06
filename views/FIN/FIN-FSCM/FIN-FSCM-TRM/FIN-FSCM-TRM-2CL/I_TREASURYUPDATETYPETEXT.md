@@ -1,0 +1,86 @@
+---
+name: I_TREASURYUPDATETYPETEXT
+description: Treasuryupdatetypetext
+app_component: FIN-FSCM-TRM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-FSCM
+  - FIN-FSCM-TRM
+  - interface-view
+  - text-view
+  - text
+  - treasury
+  - component:FIN-FSCM-TRM-2CL
+  - lob:Other
+---
+# I_TREASURYUPDATETYPETEXT
+
+**Treasuryupdatetypetext**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-FSCM-TRM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `TreasuryUpdateType` | `TreasuryUpdateTypeText.dis_flowtype` |
+| key `Language` | `TreasuryUpdateTypeText.spras` |
+| `TreasuryUpdateTypeName` | `cast(TreasuryUpdateTypeText.dis_flowtypetext as ftr_gen_update_type_name preserving type )` |
+| `_TreasuryUpdateType` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TreasuryUpdateType` | `I_TreasuryUpdateType` | [0..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.entityBuffer.definitionAllowed: false
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.supportedCapabilities:[#EXTRACTION_DATA_SOURCE]
+@Analytics.dataExtraction.enabled: true
+@Analytics.technicalName: 'ITRUPDTPTXT'
+@ObjectModel.representativeKey: 'TreasuryUpdateType'
+@ObjectModel.usageType.dataClass: #ORGANIZATIONAL
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.sapObjectNodeType.name: 'TreasuryUpdateType'
+@ObjectModel.modelingPattern: #LANGUAGE_DEPENDENT_TEXT
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText.label: 'Treasury Update Type - Text'
+define view entity I_TreasuryUpdateTypeText
+  as select from trdc_dflowtype_t as TreasuryUpdateTypeText
+
+  association [0..1] to I_TreasuryUpdateType as _TreasuryUpdateType on $projection.TreasuryUpdateType = _TreasuryUpdateType.TreasuryUpdateType
+  association [0..1] to I_Language           as _Language           on $projection.Language = _Language.Language
+
+{
+      @ObjectModel.foreignKey.association: '_TreasuryUpdateType'
+      
+  key TreasuryUpdateTypeText.dis_flowtype                                        as TreasuryUpdateType,
+      @Semantics.language: true
+      @ObjectModel.foreignKey.association: '_Language'
+  key TreasuryUpdateTypeText.spras                                               as Language,
+      @Semantics.text: true
+      cast(TreasuryUpdateTypeText.dis_flowtypetext as ftr_gen_update_type_name preserving type )  as TreasuryUpdateTypeName,
+
+      _TreasuryUpdateType,
+      _Language
+}
+```

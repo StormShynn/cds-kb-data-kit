@@ -1,0 +1,86 @@
+---
+name: I_ADDRESSMAINWEBSITEURL
+description: Addressmainwebsiteurl
+app_component: BC-SRV-ADR
+software_component: SAP_BASIS
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - BC
+  - BC-SRV
+  - BC-SRV-ADR
+  - interface-view
+  - address
+  - component:BC-SRV-ADR
+  - lob:Basis Components
+---
+# I_ADDRESSMAINWEBSITEURL
+
+**Addressmainwebsiteurl**
+
+| Property | Value |
+|---|---|
+| App Component | `BC-SRV-ADR` |
+| Software Component | `SAP_BASIS` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `AddressID` | `AddresssMainWebsiteURL.AddressID` |
+| key `AddressPersonID` | `AddresssMainWebsiteURL.AddressPersonID` |
+| `CommMediumSequenceNumber` | `AddresssMainWebsiteURL.CommMediumSequenceNumber` |
+| `UniformResourceIdentifier` | `AddresssMainWebsiteURL.UniformResourceIdentifier` |
+| `_AddressCommunicationRemark` | *Association* |
+| `_AddressCommunicationUsage` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_AddressCommunicationRemark` | `I_AddressCommunicationRemark_2` | [0..*] |
+| `_AddressCommunicationUsage` | `I_AddressCommunicationUsage` | [0..*] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@AccessControl.privilegedAssociations: ['_AddressCommunicationRemark', '_AddressCommunicationUsage']
+@EndUserText.label: 'Website'
+//@Metadata.allowExtensions: true
+//@ObjectModel.representativeKey: 'AddressID'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities: [#CDS_MODELING_ASSOCIATION_TARGET, #CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE]
+@ObjectModel.usageType.serviceQuality: #C
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.dataClass: #MIXED
+@VDM.viewType: #COMPOSITE
+
+define view entity I_AddressMainWebsiteURL
+  as select from AddressMainWebsiteURL_TF( P_SAPClient : $session.client ) as AddresssMainWebsiteURL
+
+  association [0..*] to I_AddressCommunicationRemark_2 as _AddressCommunicationRemark on  $projection.AddressID                               = _AddressCommunicationRemark.AddressID
+                                                                                      and $projection.AddressPersonID                         = _AddressCommunicationRemark.AddressPersonID
+                                                                                      and $projection.CommMediumSequenceNumber                = _AddressCommunicationRemark.CommMediumSequenceNumber
+                                                                                      and _AddressCommunicationRemark.CommunicationMediumType = 'URI'
+
+  association [0..*] to I_AddressCommunicationUsage    as _AddressCommunicationUsage  on  $projection.AddressID                              = _AddressCommunicationUsage.AddressID
+                                                                                      and $projection.AddressPersonID                        = _AddressCommunicationUsage.AddressPersonID
+                                                                                      and $projection.CommMediumSequenceNumber               = _AddressCommunicationUsage.CommMediumSequenceNumber
+                                                                                      and _AddressCommunicationUsage.CommunicationMediumType = 'URI'
+{
+  key  AddresssMainWebsiteURL.AddressID,
+  key  AddresssMainWebsiteURL.AddressPersonID,
+       AddresssMainWebsiteURL.CommMediumSequenceNumber,
+       // AddresssMainWebsiteURL.AddressManagementURIType,
+       // AddresssMainWebsiteURL.URIFieldLengthInChar,
+       AddresssMainWebsiteURL.UniformResourceIdentifier,
+
+       _AddressCommunicationRemark,
+       _AddressCommunicationUsage
+}
+```

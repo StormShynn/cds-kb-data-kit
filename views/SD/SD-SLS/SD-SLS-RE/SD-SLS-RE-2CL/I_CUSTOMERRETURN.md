@@ -1,0 +1,629 @@
+---
+name: I_CUSTOMERRETURN
+description: Customerreturn
+app_component: SD-SLS-RE-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-SLS
+  - SD-SLS-RE
+  - interface-view
+  - customer
+  - component:SD-SLS-RE-2CL
+  - lob:Sales & Distribution
+  - bo:Customer
+---
+# I_CUSTOMERRETURN
+
+**Customerreturn**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-SLS-RE-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CustomerReturn` | `cast(SalesDocument as vdm_customer_return preserving type)` |
+| `CustomerReturnType` | `cast(SalesDocumentType as vdm_customer_return_type preserving type)` |
+| `CreatedByUser` | `CreatedByUser` |
+| `LastChangedByUser` | `LastChangedByUser` |
+| `CreationDate` | `CreationDate` |
+| `CreationTime` | `CreationTime` |
+| `LastChangeDate` | `LastChangeDate` |
+| `LastChangeDateTime` | `LastChangeDateTime` |
+| `SenderBusinessSystemName` | `SenderBusinessSystemName` |
+| `SalesOrganization` | `SalesOrganization` |
+| `DistributionChannel` | `DistributionChannel` |
+| `OrganizationDivision` | `OrganizationDivision` |
+| `SalesGroup` | `SalesGroup` |
+| `SalesOffice` | `SalesOffice` |
+| `SoldToParty` | `SoldToParty` |
+| `CustomerGroup` | `CustomerGroup` |
+| `AdditionalCustomerGroup1` | `AdditionalCustomerGroup1` |
+| `AdditionalCustomerGroup2` | `AdditionalCustomerGroup2` |
+| `AdditionalCustomerGroup3` | `AdditionalCustomerGroup3` |
+| `AdditionalCustomerGroup4` | `AdditionalCustomerGroup4` |
+| `AdditionalCustomerGroup5` | `AdditionalCustomerGroup5` |
+| `CreditControlArea` | `CreditControlArea` |
+| `CustomerReturnDate` | `SalesDocumentDate` |
+| `ServicesRenderedDate` | `ServicesRenderedDate` |
+| `SDDocumentReason` | `SDDocumentReason` |
+| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
+| `CustomerPurchaseOrderType` | `CustomerPurchaseOrderType` |
+| `CustPurOrdTypeByShipToParty` | `CustPurOrdTypeByShipToParty` |
+| `CustomerPurchaseOrderDate` | `CustomerPurchaseOrderDate` |
+| `CustomerPurchaseOrderSuplmnt` | `CustomerPurchaseOrderSuplmnt` |
+| `PurchaseOrderByShipToParty` | `PurchaseOrderByShipToParty` |
+| `CorrespncExternalReference` | `CorrespncExternalReference` |
+| `CorrespncExtRefByShipToParty` | `CorrespncExtRefByShipToParty` |
+| `BusinessSolutionOrder` | `BusinessSolutionOrder` |
+| `SalesDistrict` | `SalesDistrict` |
+| `RetsMgmtProcess` | `RetsMgmtProcess` |
+| `TotalNetAmount` | `TotalNetAmount` |
+| `TransactionCurrency` | `TransactionCurrency` |
+| `PricingDate` | `PricingDate` |
+| `PriceDetnExchangeRate` | `PriceDetnExchangeRate` |
+| `SDPricingProcedure` | `SDPricingProcedure` |
+| `CustomerReturnCondition` | `SalesDocumentCondition` |
+| `CustomerPriceGroup` | `CustomerPriceGroup` |
+| `PriceListType` | `PriceListType` |
+| `TaxDepartureCountry` | `TaxDepartureCountry` |
+| `VATRegistrationCountry` | `VATRegistrationCountry` |
+| `RequestedDeliveryDate` | `RequestedDeliveryDate` |
+| `IncotermsClassification` | `IncotermsClassification` |
+| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
+| `IncotermsLocation1` | `IncotermsLocation1` |
+| `IncotermsLocation2` | `IncotermsLocation2` |
+| `IncotermsVersion` | `IncotermsVersion` |
+| `DeliveryBlockReason` | `DeliveryBlockReason` |
+| `ShippingType` | `ShippingType` |
+| `ShippingCondition` | `ShippingCondition` |
+| `CustomerReturnApprovalReason` | `SalesDocApprovalReason` |
+| `BillingDocumentDate` | `BillingDocumentDate` |
+| `BillingCompanyCode` | `BillingCompanyCode` |
+| `HeaderBillingBlockReason` | `HeaderBillingBlockReason` |
+| `CustomerPaymentTerms` | `CustomerPaymentTerms` |
+| `PaymentMethod` | `PaymentMethod` |
+| `FixedValueDate` | `FixedValueDate` |
+| `CustomerTaxClassification1` | `CustomerTaxClassification1` |
+| `CustomerTaxClassification2` | `CustomerTaxClassification2` |
+| `CustomerTaxClassification3` | `CustomerTaxClassification3` |
+| `CustomerTaxClassification4` | `CustomerTaxClassification4` |
+| `CustomerTaxClassification5` | `CustomerTaxClassification5` |
+| `CustomerTaxClassification6` | `CustomerTaxClassification6` |
+| `CustomerTaxClassification7` | `CustomerTaxClassification7` |
+| `CustomerTaxClassification8` | `CustomerTaxClassification8` |
+| `CustomerTaxClassification9` | `CustomerTaxClassification9` |
+| `FiscalYear` | `FiscalYear` |
+| `FiscalPeriod` | `FiscalPeriod` |
+| `ExchangeRateDate` | `ExchangeRateDate` |
+| `ExchangeRateType` | `ExchangeRateType` |
+| `BusinessArea` | `BusinessArea` |
+| `CustomerAccountAssignmentGroup` | `CustomerAccountAssignmentGroup` |
+| `CostCenterBusinessArea` | `CostCenterBusinessArea` |
+| `CostCenter` | `CostCenter` |
+| `ControllingArea` | `ControllingArea` |
+| `OrderID` | `OrderID` |
+| `ControllingObject` | `ControllingObject` |
+| `ReferenceSDDocument` | `ReferenceSDDocument` |
+| `ReferenceSDDocumentCategory` | `ReferenceSDDocumentCategory` |
+| `AccountingDocExternalReference` | `AccountingDocExternalReference` |
+| `AssignmentReference` | `AssignmentReference` |
+| `OverallSDProcessStatus` | `OverallSDProcessStatus` |
+| `OverallSDDocumentRejectionSts` | `OverallSDDocumentRejectionSts` |
+| `TotalBlockStatus` | `TotalBlockStatus` |
+| `OverallTotalDeliveryStatus` | `OverallTotalDeliveryStatus` |
+| `OverallDeliveryStatus` | `OverallDeliveryStatus` |
+| `OverallDeliveryBlockStatus` | `OverallDeliveryBlockStatus` |
+| `OverallOrdReltdBillgStatus` | `OverallOrdReltdBillgStatus` |
+| `OverallBillingBlockStatus` | `OverallBillingBlockStatus` |
+| `OverallTotalSDDocRefStatus` | `OverallTotalSDDocRefStatus` |
+| `OverallSDDocReferenceStatus` | `OverallSDDocReferenceStatus` |
+| `TotalCreditCheckStatus` | `TotalCreditCheckStatus` |
+| `MaxDocValueCreditCheckStatus` | `MaxDocValueCreditCheckStatus` |
+| `PaymentTermCreditCheckStatus` | `PaymentTermCreditCheckStatus` |
+| `FinDocCreditCheckStatus` | `FinDocCreditCheckStatus` |
+| `ExprtInsurCreditCheckStatus` | `ExprtInsurCreditCheckStatus` |
+| `PaytAuthsnCreditCheckSts` | `PaytAuthsnCreditCheckSts` |
+| `CentralCreditCheckStatus` | `CentralCreditCheckStatus` |
+| `CentralCreditChkTechErrSts` | `CentralCreditChkTechErrSts` |
+| `HdrGeneralIncompletionStatus` | `HdrGeneralIncompletionStatus` |
+| `OverallPricingIncompletionSts` | `OverallPricingIncompletionSts` |
+| `HeaderDelivIncompletionStatus` | `HeaderDelivIncompletionStatus` |
+| `HeaderBillgIncompletionStatus` | `HeaderBillgIncompletionStatus` |
+| `OvrlItmGeneralIncompletionSts` | `OvrlItmGeneralIncompletionSts` |
+| `OvrlItmBillingIncompletionSts` | `OvrlItmBillingIncompletionSts` |
+| `OvrlItmDelivIncompletionSts` | `OvrlItmDelivIncompletionSts` |
+| `SalesDocApprovalStatus` | `SalesDocApprovalStatus` |
+| `_CustomerReturnType` | `_SalesDocumentType` |
+| `_Item` | *Association* |
+| `_RetsMgmtProcess` | *Association* |
+| `_CustRetApprovalReason` | *Association* |
+| `_Partner` | *Association* |
+| `_StandardPartner` | *Association* |
+| `_CreatedByUser` | *Association* |
+| `_LastChangedByUser` | *Association* |
+| `_SalesOrganization` | *Association* |
+| `_DistributionChannel` | *Association* |
+| `_OrganizationDivision` | *Association* |
+| `_SalesGroup` | *Association* |
+| `_SalesOffice` | *Association* |
+| `_SoldToParty` | *Association* |
+| `_CustomerGroup` | *Association* |
+| `_AdditionalCustomerGroup1` | *Association* |
+| `_AdditionalCustomerGroup2` | *Association* |
+| `_AdditionalCustomerGroup3` | *Association* |
+| `_AdditionalCustomerGroup4` | *Association* |
+| `_AdditionalCustomerGroup5` | *Association* |
+| `_CreditControlArea` | *Association* |
+| `_SDDocumentReason` | *Association* |
+| `_SDPricingProcedure` | *Association* |
+| `_ShippingType` | *Association* |
+| `_ShippingCondition` | *Association* |
+| `_SalesDistrict` | *Association* |
+| `_TransactionCurrency` | *Association* |
+| `_IncotermsClassification` | *Association* |
+| `_IncotermsVersion` | *Association* |
+| `_DeliveryBlockReason` | *Association* |
+| `_BillingCompanyCode` | *Association* |
+| `_HeaderBillingBlockReason` | *Association* |
+| `_CustomerPaymentTerms` | *Association* |
+| `_CustomerPurchaseOrderType` | *Association* |
+| `_CustPurOrdTypeByShipToParty` | *Association* |
+| `_ExchangeRateType` | *Association* |
+| `_BusinessArea` | *Association* |
+| `_CustomerAccountAssgmtGroup` | *Association* |
+| `_CostCenterBusinessArea` | *Association* |
+| `_CostCenter` | *Association* |
+| `_ControllingArea` | *Association* |
+| `_ControllingObject` | *Association* |
+| `_ReferenceSDDocumentCategory` | *Association* |
+| `_OverallSDProcessStatus` | *Association* |
+| `_OverallSDDocumentRejectionSts` | *Association* |
+| `_TotalBlockStatus` | *Association* |
+| `_OverallTotalDeliveryStatus` | *Association* |
+| `_OverallDeliveryStatus` | *Association* |
+| `_OverallDeliveryBlockStatus` | *Association* |
+| `_OverallOrdReltdBillgStatus` | *Association* |
+| `_OverallBillingBlockStatus` | *Association* |
+| `_OverallTotalSDDocRefStatus` | *Association* |
+| `_OverallSDDocReferenceStatus` | *Association* |
+| `_TotalCreditCheckStatus` | *Association* |
+| `_MaxDocValueCreditCheckStatus` | *Association* |
+| `_PaymentTermCreditCheckStatus` | *Association* |
+| `_FinDocCreditCheckStatus` | *Association* |
+| `_ExprtInsurCreditCheckStatus` | *Association* |
+| `_PaytAuthsnCreditCheckSts` | *Association* |
+| `_CentralCreditCheckStatus` | *Association* |
+| `_CentralCreditChkTechErrSts` | *Association* |
+| `_HdrGeneralIncompletionStatus` | *Association* |
+| `_OverallPricingIncompletionSts` | *Association* |
+| `_HeaderDelivIncompletionStatus` | *Association* |
+| `_HeaderBillgIncompletionStatus` | *Association* |
+| `_OvrlItmGeneralIncompletionSts` | *Association* |
+| `_OvrlItmBillingIncompletionSts` | *Association* |
+| `_OvrlItmDelivIncompletionSts` | *Association* |
+| `_SalesDocApprovalStatus` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Item` | `I_CustomerReturnItem` | [0..*] |
+| `_RetsMgmtProcess` | `I_RetsMgmtProcess` | [0..1] |
+| `_CustRetApprovalReason` | `I_CustomerReturnApprovalReason` | [0..1] |
+| `_Extension` | `E_SalesDocumentBasic` | [0..1] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Returns Order'
+@VDM: {
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@AccessControl: {
+  authorizationCheck: #CHECK,
+  personalData.blocking: #('TRANSACTIONAL_DATA'),
+  privilegedAssociations: [ '_CreatedByUser', '_LastChangedByUser' ]
+}
+@AbapCatalog: {
+  sqlViewName: 'ISDCUSTRETURN',
+  preserveKey: true,
+  compiler.compareFilter: true
+}
+@ObjectModel: {
+  compositionRoot: true,
+  representativeKey: 'CustomerReturn',
+  modelingPattern: #ANALYTICAL_DIMENSION,
+  supportedCapabilities: [#ANALYTICAL_DIMENSION, 
+                          #CDS_MODELING_ASSOCIATION_TARGET, 
+                          #CDS_MODELING_DATA_SOURCE,
+                          #SQL_DATA_SOURCE,
+                          #EXTRACTION_DATA_SOURCE],
+  usageType: {
+    dataClass:      #TRANSACTIONAL,
+    serviceQuality: #B,
+    sizeCategory:   #L
+  }
+}
+@Analytics.dataCategory: #DIMENSION
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
+@ObjectModel.sapObjectNodeType.name: 'CustomerReturn'   
+
+@Analytics: {
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+            mapping:[
+                {
+                    table: 'vbak', role: #MAIN,
+                    viewElement: ['CustomerReturn'],
+                    tableElement: ['vbeln']  },
+                    
+                {   filter: [{operator: #EQ, tableElement: 'posnr', value: '000000'}],
+                    table: 'vbkd', role: #LEFT_OUTER_TO_ONE_JOIN,
+                    viewElement: ['CustomerReturn'],
+                    tableElement: ['vbeln']
+                },   
+                
+                {   filter: [{operator: #EQ, tableElement: 'vposn', value: '000000'}],
+                    table: 'veda', role: #LEFT_OUTER_TO_ONE_JOIN,
+                    viewElement: ['CustomerReturn'],
+                    tableElement: ['vbeln']
+                }              
+            ]
+        }
+    }
+ }
+
+define view I_CustomerReturn
+  as select from I_SalesDocument as SalesDocument
+
+  //Associations
+  association [0..*] to I_CustomerReturnItem           as _Item                  on $projection.CustomerReturn = _Item.CustomerReturn
+  association [0..1] to I_RetsMgmtProcess              as _RetsMgmtProcess       on $projection.RetsMgmtProcess = _RetsMgmtProcess.RetsMgmtProcess
+  association [0..1] to I_CustomerReturnApprovalReason as _CustRetApprovalReason on $projection.CustomerReturnApprovalReason = _CustRetApprovalReason.CustomerReturnApprovalReason
+ 
+  //Extensibility
+  association [0..1] to E_SalesDocumentBasic           as _Extension             on SalesDocument.SalesDocument = _Extension.SalesDocument
+
+{
+      //Key
+  key cast(SalesDocument as vdm_customer_return preserving type)          as CustomerReturn,
+
+      //Category
+      @ObjectModel.foreignKey.association: '_CustomerReturnType'
+      cast(SalesDocumentType as vdm_customer_return_type preserving type) as CustomerReturnType,
+
+      //Admin
+      CreatedByUser,
+      LastChangedByUser,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      CreationTime,
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      @Semantics.systemDateTime.lastChangedAt: true
+      LastChangeDateTime,
+      SenderBusinessSystemName,
+      
+      //Org
+      @ObjectModel.foreignKey.association: '_SalesOrganization'
+      SalesOrganization,
+      @ObjectModel.foreignKey.association: '_DistributionChannel'
+      DistributionChannel,
+      @ObjectModel.foreignKey.association: '_OrganizationDivision'
+      OrganizationDivision,
+      @ObjectModel.foreignKey.association: '_SalesGroup'
+      SalesGroup,
+      @ObjectModel.foreignKey.association: '_SalesOffice'
+      SalesOffice,
+
+      //Sales
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_Customer_VH',
+                     element: 'Customer' }
+        }]
+      @ObjectModel.foreignKey.association: '_SoldToParty'
+      SoldToParty,
+      @ObjectModel.foreignKey.association: '_CustomerGroup'
+      CustomerGroup,
+      @ObjectModel.foreignKey.association: '_AdditionalCustomerGroup1'
+      AdditionalCustomerGroup1,
+      @ObjectModel.foreignKey.association: '_AdditionalCustomerGroup2'
+      AdditionalCustomerGroup2,
+      @ObjectModel.foreignKey.association: '_AdditionalCustomerGroup3'
+      AdditionalCustomerGroup3,
+      @ObjectModel.foreignKey.association: '_AdditionalCustomerGroup4'
+      AdditionalCustomerGroup4,
+      @ObjectModel.foreignKey.association: '_AdditionalCustomerGroup5'
+      AdditionalCustomerGroup5,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_CreditControlAreaStdVH',
+                     element: 'CreditControlArea' }
+        }]
+      @ObjectModel.foreignKey.association: '_CreditControlArea'
+      CreditControlArea,
+      SalesDocumentDate                                                   as CustomerReturnDate,
+      ServicesRenderedDate,
+      @ObjectModel.foreignKey.association: '_SDDocumentReason'
+      SDDocumentReason,
+      PurchaseOrderByCustomer,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_CustomerPurchaseOrderType'
+      CustomerPurchaseOrderType,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_CustPurOrdTypeByShipToParty'
+      CustPurOrdTypeByShipToParty,
+      CustomerPurchaseOrderDate,
+      CustomerPurchaseOrderSuplmnt,
+      PurchaseOrderByShipToParty,
+      CorrespncExternalReference,
+      CorrespncExtRefByShipToParty,
+      BusinessSolutionOrder,
+      @ObjectModel.foreignKey.association: '_SalesDistrict'
+      SalesDistrict,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_RetsMgmtProcessStdVH',
+                     element: 'RetsMgmtProcess' }
+        }]
+      @ObjectModel.foreignKey.association: '_RetsMgmtProcess'
+      RetsMgmtProcess,
+
+      //Pricing
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      TotalNetAmount,
+      @Semantics.currencyCode: true
+      @ObjectModel.foreignKey.association: '_TransactionCurrency'
+      TransactionCurrency,
+      PricingDate,
+      PriceDetnExchangeRate,
+      SDPricingProcedure,
+      SalesDocumentCondition                                              as CustomerReturnCondition,
+      CustomerPriceGroup,
+      PriceListType,
+      TaxDepartureCountry,
+      VATRegistrationCountry,
+      
+      //Shipping
+      RequestedDeliveryDate,
+      @ObjectModel.foreignKey.association: '_IncotermsClassification'
+      IncotermsClassification,
+      IncotermsTransferLocation,
+      IncotermsLocation1,
+      IncotermsLocation2,
+      @ObjectModel.foreignKey.association: '_IncotermsVersion'
+      IncotermsVersion,
+      @ObjectModel.foreignKey.association: '_DeliveryBlockReason'
+      DeliveryBlockReason,
+      @Analytics.internalName: #LOCAL  
+      @ObjectModel.foreignKey.association: '_ShippingType'
+      ShippingType,
+      
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ShippingCondition' 
+      ShippingCondition,
+      
+      //Approval Management
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_CustRetApprovalReason'
+      SalesDocApprovalReason                                              as CustomerReturnApprovalReason,
+      
+      //Billing
+      BillingDocumentDate,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_CompanyCodeStdVH',
+                      element: 'CompanyCode' }
+        }]
+      @ObjectModel.foreignKey.association: '_BillingCompanyCode'
+      BillingCompanyCode,
+      @ObjectModel.foreignKey.association: '_HeaderBillingBlockReason'
+      HeaderBillingBlockReason,
+
+      //Payment
+      @ObjectModel.foreignKey.association: '_CustomerPaymentTerms'
+      CustomerPaymentTerms,
+      PaymentMethod,
+      FixedValueDate,
+      
+      //Tax Classfication
+      CustomerTaxClassification1,
+      CustomerTaxClassification2,
+      CustomerTaxClassification3,
+      CustomerTaxClassification4,
+      CustomerTaxClassification5,
+      CustomerTaxClassification6,
+      CustomerTaxClassification7,
+      CustomerTaxClassification8,
+      CustomerTaxClassification9,
+      
+      //Accounting
+      FiscalYear,
+      FiscalPeriod,
+      ExchangeRateDate,
+      @ObjectModel.foreignKey.association: '_ExchangeRateType'
+      ExchangeRateType,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_BusinessAreaStdVH',
+                     element: 'BusinessArea' }
+        }]
+      @ObjectModel.foreignKey.association: '_BusinessArea'
+      BusinessArea,
+      @ObjectModel.foreignKey.association: '_CustomerAccountAssgmtGroup'
+      CustomerAccountAssignmentGroup,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_BusinessAreaStdVH',
+                     element: 'BusinessArea' }
+        }]
+      @ObjectModel.foreignKey.association: '_CostCenterBusinessArea'
+      CostCenterBusinessArea,
+      CostCenter,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_ControllingAreaStdVH',
+                     element: 'ControllingArea' }
+        }]
+      @ObjectModel.foreignKey.association: '_ControllingArea'
+      ControllingArea,
+      OrderID,
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_ControllingObjectStdVH',
+                     element: 'ControllingObject' }
+        }]
+      @ObjectModel.foreignKey.association: '_ControllingObject'
+      ControllingObject,
+
+      //Reference
+      ReferenceSDDocument,
+      @ObjectModel.foreignKey.association: '_ReferenceSDDocumentCategory'
+      ReferenceSDDocumentCategory,
+      
+      @Analytics.internalName: #LOCAL
+      AccountingDocExternalReference,
+      AssignmentReference,
+
+      //Status
+      @ObjectModel.foreignKey.association: '_OverallSDProcessStatus'
+      OverallSDProcessStatus,
+      @ObjectModel.foreignKey.association: '_OverallSDDocumentRejectionSts'
+      OverallSDDocumentRejectionSts,
+      @ObjectModel.foreignKey.association: '_TotalBlockStatus'
+      TotalBlockStatus,
+      @ObjectModel.foreignKey.association: '_OverallTotalDeliveryStatus'
+      OverallTotalDeliveryStatus,
+      @ObjectModel.foreignKey.association: '_OverallDeliveryStatus'
+      OverallDeliveryStatus,
+      @ObjectModel.foreignKey.association: '_OverallDeliveryBlockStatus'
+      OverallDeliveryBlockStatus,
+      @ObjectModel.foreignKey.association: '_OverallOrdReltdBillgStatus'
+      OverallOrdReltdBillgStatus,
+      @ObjectModel.foreignKey.association: '_OverallBillingBlockStatus'
+      OverallBillingBlockStatus,
+      @ObjectModel.foreignKey.association: '_OverallTotalSDDocRefStatus'
+      OverallTotalSDDocRefStatus,
+      @ObjectModel.foreignKey.association: '_OverallSDDocReferenceStatus'
+      OverallSDDocReferenceStatus,
+      @ObjectModel.foreignKey.association: '_TotalCreditCheckStatus'
+      TotalCreditCheckStatus,
+      @ObjectModel.foreignKey.association: '_MaxDocValueCreditCheckStatus'
+      MaxDocValueCreditCheckStatus,
+      @ObjectModel.foreignKey.association: '_PaymentTermCreditCheckStatus'
+      PaymentTermCreditCheckStatus,
+      @ObjectModel.foreignKey.association: '_FinDocCreditCheckStatus'
+      FinDocCreditCheckStatus,
+      @ObjectModel.foreignKey.association: '_ExprtInsurCreditCheckStatus'
+      ExprtInsurCreditCheckStatus,
+      @ObjectModel.foreignKey.association: '_PaytAuthsnCreditCheckSts'
+      PaytAuthsnCreditCheckSts,
+      @ObjectModel.foreignKey.association: '_CentralCreditCheckStatus'
+      CentralCreditCheckStatus,
+      @ObjectModel.foreignKey.association: '_CentralCreditChkTechErrSts'
+      CentralCreditChkTechErrSts,
+      @ObjectModel.foreignKey.association: '_HdrGeneralIncompletionStatus'
+      HdrGeneralIncompletionStatus,
+      @ObjectModel.foreignKey.association: '_OverallPricingIncompletionSts'
+      OverallPricingIncompletionSts,
+      @ObjectModel.foreignKey.association: '_HeaderDelivIncompletionStatus'
+      HeaderDelivIncompletionStatus,
+      @ObjectModel.foreignKey.association: '_HeaderBillgIncompletionStatus'
+      HeaderBillgIncompletionStatus,
+      @ObjectModel.foreignKey.association: '_OvrlItmGeneralIncompletionSts'
+      OvrlItmGeneralIncompletionSts,
+      @ObjectModel.foreignKey.association: '_OvrlItmBillingIncompletionSts'
+      OvrlItmBillingIncompletionSts,
+      @ObjectModel.foreignKey.association: '_OvrlItmDelivIncompletionSts'
+      OvrlItmDelivIncompletionSts,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_SalesDocApprovalStatus'
+      SalesDocApprovalStatus,
+      
+      @ObjectModel.association.type: [#TO_COMPOSITION_CHILD]
+      _Item,
+      _Partner,
+      _StandardPartner,
+      _SalesDocumentType                                                  as _CustomerReturnType,
+      _CreatedByUser,
+      _LastChangedByUser,
+      _SalesOrganization,
+      _DistributionChannel,
+      _OrganizationDivision,
+      _SalesGroup,
+      _SalesOffice,
+      _SoldToParty,
+      _CustomerGroup,
+      _AdditionalCustomerGroup1,
+      _AdditionalCustomerGroup2,
+      _AdditionalCustomerGroup3,
+      _AdditionalCustomerGroup4,
+      _AdditionalCustomerGroup5,
+      _CreditControlArea,
+      _SDDocumentReason,
+      _SDPricingProcedure,
+      _ShippingType,
+      _ShippingCondition,
+      //Todo: _CustomerPurchaseOrderType,
+      _SalesDistrict,
+      _RetsMgmtProcess,
+      _TransactionCurrency,
+      //Todo:CustomerReturnCondition,
+      _IncotermsClassification,
+      _IncotermsVersion,
+      _DeliveryBlockReason,
+      _CustRetApprovalReason,
+      _BillingCompanyCode,
+      _HeaderBillingBlockReason,
+      _CustomerPaymentTerms,
+      _CustomerPurchaseOrderType,
+      _CustPurOrdTypeByShipToParty,
+      //Todo: _PaymentMethod,
+      _ExchangeRateType,
+      _BusinessArea,
+      _CustomerAccountAssgmtGroup,
+      _CostCenterBusinessArea,
+      _CostCenter,
+      _ControllingArea,
+      _ControllingObject,
+      //Todo: ReferenceSDDocument,
+      _ReferenceSDDocumentCategory,
+      _OverallSDProcessStatus,
+      _OverallSDDocumentRejectionSts,
+      _TotalBlockStatus,
+      _OverallTotalDeliveryStatus,
+      _OverallDeliveryStatus,
+      _OverallDeliveryBlockStatus,
+      _OverallOrdReltdBillgStatus,
+      _OverallBillingBlockStatus,
+      _OverallTotalSDDocRefStatus,
+      _OverallSDDocReferenceStatus,
+      _TotalCreditCheckStatus,
+      _MaxDocValueCreditCheckStatus,
+      _PaymentTermCreditCheckStatus,
+      _FinDocCreditCheckStatus,
+      _ExprtInsurCreditCheckStatus,
+      _PaytAuthsnCreditCheckSts,
+      _CentralCreditCheckStatus,
+      _CentralCreditChkTechErrSts,
+      _HdrGeneralIncompletionStatus,
+      _OverallPricingIncompletionSts,
+      _HeaderDelivIncompletionStatus,
+      _HeaderBillgIncompletionStatus,
+      _OvrlItmGeneralIncompletionSts,
+      _OvrlItmBillingIncompletionSts,
+      _OvrlItmDelivIncompletionSts,
+      _SalesDocApprovalStatus
+}
+where
+  SalesDocument.SDDocumentCategory = 'H';
+```

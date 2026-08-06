@@ -1,0 +1,105 @@
+---
+name: I_CAPRELIMINARYINVCGDOCSTATUST
+description: Capreliminaryinvcgdocstatust
+app_component: FI-CA-INV-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-CA
+  - FI-CA-INV
+  - interface-view
+  - status
+  - component:FI-CA-INV-2CL
+  - lob:Finance
+---
+# I_CAPRELIMINARYINVCGDOCSTATUST
+
+**Capreliminaryinvcgdocstatust**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-CA-INV-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CAPreliminaryInvcgDocStatus` | `cast( dd07t.domvalue_l as prlinv_status_kk )` |
+| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `DomainValue` | `dd07t.domvalue_l` |
+| `CAPreliminaryInvcgDocStatusTxt` | `cast( dd07t.ddtext as prlinv_status_txt_gfn_kk preserving type )` |
+| `_Language` | *Association* |
+| `_CAPreliminaryInvcgDocStatus` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics.dataExtraction.enabled: true
+@Analytics.technicalName: 'ICAPRLINVSTATT'
+@EndUserText.label: 'Status der Vorl. Rechnung (Text)'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {
+  dataCategory: #TEXT,
+  modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+  representativeKey: 'CAPreliminaryInvcgDocStatus',
+  sapObjectNodeType.name: 'ContrAcctgPrelimInvcgDocStsTxt',
+  supportedCapabilities: [
+    #CDS_MODELING_ASSOCIATION_TARGET,
+    #CDS_MODELING_DATA_SOURCE,
+    #EXTRACTION_DATA_SOURCE,
+    #LANGUAGE_DEPENDENT_TEXT,
+    #SQL_DATA_SOURCE
+  ],
+  usageType: {
+    dataClass: #META,
+    serviceQuality: #A,
+    sizeCategory: #S
+  }
+}
+@Search.searchable: true
+@VDM.viewType: #BASIC
+
+define view entity I_CAPreliminaryInvcgDocStatusT
+  as select from dd07t
+  association        to parent I_CAPreliminaryInvcgDocStatus as _CAPreliminaryInvcgDocStatus on $projection.CAPreliminaryInvcgDocStatus = _CAPreliminaryInvcgDocStatus.CAPreliminaryInvcgDocStatus
+  association [0..1] to I_Language                           as _Language                    on $projection.Language = _Language.Language
+{
+      @ObjectModel.foreignKey.association: '_CAPreliminaryInvcgDocStatus'
+      @ObjectModel.text.element: ['CAPreliminaryInvcgDocStatusTxt']
+  key cast( dd07t.domvalue_l as prlinv_status_kk )                     as CAPreliminaryInvcgDocStatus,
+
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key cast( dd07t.ddlanguage as spras preserving type )                as Language,
+
+      @Consumption.hidden: true
+      dd07t.domvalue_l                                                 as DomainValue,
+
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.8
+      @Search.ranking: #HIGH
+      @Semantics.text: true
+      cast( dd07t.ddtext as prlinv_status_txt_gfn_kk preserving type ) as CAPreliminaryInvcgDocStatusTxt,
+
+      _CAPreliminaryInvcgDocStatus,
+      _Language
+}
+where
+      dd07t.domname  = 'PRLINV_STATUS_KK'
+  and dd07t.as4local = 'A'
+  and dd07t.as4vers  = '0000'
+```

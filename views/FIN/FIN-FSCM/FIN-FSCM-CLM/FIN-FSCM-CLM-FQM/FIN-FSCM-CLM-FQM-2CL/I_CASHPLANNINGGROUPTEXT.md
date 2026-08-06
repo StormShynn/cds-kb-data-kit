@@ -1,0 +1,79 @@
+---
+name: I_CASHPLANNINGGROUPTEXT
+description: Cashplanninggrouptext
+app_component: FIN-FSCM-CLM-FQM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-FSCM
+  - FIN-FSCM-CLM
+  - interface-view
+  - text-view
+  - text
+  - component:FIN-FSCM-CLM-FQM-2CL
+  - lob:Other
+---
+# I_CASHPLANNINGGROUPTEXT
+
+**Cashplanninggrouptext**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-FSCM-CLM-FQM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CashPlanningGroup` | `grupp` |
+| key `Language` | `spras` |
+| `CashPlanningGroupName` | `cast( textk as fclm_grupp_txtk )` |
+| `CashPlanningGroupDescription` | `cast( textl as fclm_grupp_txtl )` |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@EndUserText.label: 'Cash Planning Group - Text' //same as DDL description
+@ObjectModel.dataCategory:#TEXT
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED //or #CHECK
+@AbapCatalog.sqlViewName: 'ICSHPLNGGRPT'
+@ObjectModel.representativeKey: 'CashPlanningGroup'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.dataClass: #META
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities:[ #LANGUAGE_DEPENDENT_TEXT, #EXTRACTION_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #LANGUAGE_DEPENDENT_TEXT
+@ObjectModel.sapObjectNodeType.name: 'CashFlowPlanningGroupText'
+define view I_CashPlanningGroupText //must start with "I_"; same as DDL source name in upper-camelcase notation
+   as select from t035t
+association [0..1] to I_Language as _Language on $projection.Language = _Language.Language
+{
+    key grupp as CashPlanningGroup,
+    @Semantics.language: true
+    @ObjectModel.foreignKey.association: '_Language' //Inserted by VDM CDS Suite Plugin
+    key spras as Language,
+    @Semantics.text: true
+    cast( textk as fclm_grupp_txtk ) as CashPlanningGroupName,
+    @Semantics.text: true
+    cast( textl as fclm_grupp_txtl ) as CashPlanningGroupDescription,
+    _Language
+}
+```

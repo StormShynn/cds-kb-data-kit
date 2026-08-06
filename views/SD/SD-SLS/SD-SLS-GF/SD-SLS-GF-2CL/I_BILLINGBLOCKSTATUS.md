@@ -1,0 +1,93 @@
+---
+name: I_BILLINGBLOCKSTATUS
+description: Billingblockstatus
+app_component: SD-SLS-GF-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - SD
+  - SD-SLS
+  - SD-SLS-GF
+  - interface-view
+  - billing
+  - status
+  - component:SD-SLS-GF-2CL
+  - lob:Sales & Distribution
+---
+# I_BILLINGBLOCKSTATUS
+
+**Billingblockstatus**
+
+| Property | Value |
+|---|---|
+| App Component | `SD-SLS-GF-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `BillingBlockStatus` | `substring(dd07l.domvalue_l, 1, 1)` |
+| `DomainValue` | `domvalue_l` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_BillingBlockStatusText` | [0..*] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.representativeKey: 'BillingBlockStatus'
+@ObjectModel.usageType.dataClass: #META
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.resultSet.sizeCategory: #XS
+@EndUserText.label: 'Billing Block Status'
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction.enabled: true
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AbapCatalog.sqlViewName: 'ISDBILLGBLKSTS'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.dataCategory: #VALUE_HELP
+@ObjectModel.modelingPattern:           #ANALYTICAL_DIMENSION
+@ObjectModel.supportedCapabilities:  [  #SQL_DATA_SOURCE,
+                                        #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #EXTRACTION_DATA_SOURCE, 
+                                        #ANALYTICAL_DIMENSION,
+                                        #VALUE_HELP_PROVIDER  ]
+@ObjectModel.sapObjectNodeType.name:'SalesDocItemBillingBlockStatus' 
+@Search.searchable: true
+@Consumption.ranked: true                                       
+/*+[hideWarning] { "IDS" : [ "CALCULATED_FIELD_CHECK" ]  } */
+define view I_BillingBlockStatus
+as select from dd07l
+
+association [0..*] to I_BillingBlockStatusText as _Text on $projection.BillingBlockStatus = _Text.BillingBlockStatus
+{
+    @ObjectModel.text.association: '_Text'
+    key substring(dd07l.domvalue_l, 1, 1) as BillingBlockStatus,
+    @Analytics.hidden: true
+    @Consumption.hidden: true
+    @Search.defaultSearchElement: true
+    @Search.ranking: #HIGH
+    domvalue_l as DomainValue,    
+    
+    //Associations
+    _Text
+}
+where (dd07l.domname = 'STATV') and (dd07l.as4local = 'A')
+  and ((dd07l.domvalue_l = '') or (dd07l.domvalue_l = 'C'));
+```

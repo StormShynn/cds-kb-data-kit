@@ -1,0 +1,276 @@
+---
+name: I_FIXEDASSETASSGMT
+description: Fixed AssetASSGMT
+app_component: FI-FIO-AA-ANA-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - interface-view
+  - fixed-asset
+  - component:FI-FIO-AA-ANA-2CL
+  - lob:Finance
+  - bo:Asset
+---
+# I_FIXEDASSETASSGMT
+
+**Fixed AssetASSGMT**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-FIO-AA-ANA-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CompanyCode` | `faat_md_tdd.comp_code` |
+| key `MasterFixedAsset` | `faat_md_tdd.asset_no` |
+| key `FixedAsset` | `faat_md_tdd.asset_subno` |
+| key `ValidityEndDate` | `faat_md_tdd.valid_to_date` |
+| `ControllingArea` | `tka02.kokrs` |
+| `ValidityStartDate` | `faat_md_tdd.valid_from_date` |
+| `VehicleLicensePlateNumber` | `faat_md_tdd.car_license_plate` |
+| `CostCenter` | `faat_md_tdd.cost_center` |
+| `Plant` | `faat_md_tdd.plant` |
+| `BusinessArea` | `faat_md_tdd.business_area` |
+| `AssetLocation` | `faat_md_tdd.location` |
+| `Room` | `faat_md_tdd.room` |
+| `CostCtrActivityType` | `faat_md_tdd.activity_type` |
+| `InternalOrder` | `faat_md_tdd.internal_order` |
+| `IsShutDown` | `cast( '' as xstil )` |
+| `ResponsibleCostCenter` | `faat_md_tdd.responsible_cost_center` |
+| `PersonnelNumber` | `faat_md_tdd.personnel_number` |
+| `MaintenanceOrder` | `cast( '' as iaufn )` |
+| `TaxJurisdiction` | `faat_md_tdd.tax_jurisdiction` |
+| `Fund` | `faat_md_tdd.fund` |
+| `WBSElementInternalID_2` | `faat_md_tdd.wbs_element` |
+| `WBSElementInternalID` | `cast( faat_md_tdd.wbs_element as am_ipsnr preserving type )` |
+| `REInternalFinNumber` | `cast( faat_md_tdd.real_estate_key as recaimkeyfi preserving type )` |
+| `RealEstateObject` | `cast( faat_md_tdd.real_estate_key as faa_deprecated_real_estate_obj preserving type )` |
+| `ProfitCenter` | `faat_md_tdd.profit_center` |
+| `Segment` | `faat_md_tdd.segment` |
+| `FunctionalArea` | `faat_md_tdd.functional_area` |
+| `ShiftOperationFactor` | `cast( '0' as msfak )` |
+| `GrantID` | `faat_md_tdd.grant_id` |
+| `BudgetPeriod` | `faat_md_tdd.budget_period` |
+| `FundsCenter` | `faat_md_tdd.funds_center` |
+| `FunctionalLocation` | `cast( '' as tplnr )` |
+| `BusinessPlace` | `faat_md_tdd.business_place` |
+| `AssetAuthorizationContext` | `cast( 'NEW' as faa_authcntxt )` |
+| `ReferenceDocumentType` | `faat_md_tdd.awtyp` |
+| `LogicalSystem` | `faat_md_tdd.awsys` |
+| `ReferenceDocumentContext` | `faat_md_tdd.aworg` |
+| `ReferenceDocument` | `faat_md_tdd.awref` |
+| `_FixedAsset` | *Association* |
+| `_CompanyCode` | *Association* |
+| `_MasterFixedAsset` | *Association* |
+| `_CostCenter` | *Association* |
+| `_ResponsibleCostCenter` | *Association* |
+| `_CostCenterActivityType` | *Association* |
+| `_Plant` | *Association* |
+| `_BusinessArea` | *Association* |
+| `_WBSElement` | *Association* |
+| `_InternalOrder` | *Association* |
+| `_MaintenanceOrder` | *Association* |
+| `_ProfitCenter` | *Association* |
+| `_Segment` | *Association* |
+| `_FunctionalArea` | *Association* |
+| `_ControllingArea` | *Association* |
+| `_FunctionalLocation` | *Association* |
+| `_AssetLocation` | *Association* |
+| `_RealEstateObject` | *Association* |
+| `_Employment` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_FixedAsset` | `I_FixedAsset` | [1..1] |
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_MasterFixedAsset` | `I_MasterFixedAsset` | [0..1] |
+| `_CostCenter` | `I_CostCenter` | [0..*] |
+| `_ResponsibleCostCenter` | `I_CostCenter` | [0..*] |
+| `_CostCenterActivityType` | `I_CostCenterActivityType` | [0..*] |
+| `_Plant` | `I_Plant` | [0..1] |
+| `_BusinessArea` | `I_BusinessArea` | [0..1] |
+| `_WBSElement` | `I_WBSElementBasicData` | [0..1] |
+| `_InternalOrder` | `I_InternalOrder` | [0..1] |
+| `_MaintenanceOrder` | `I_MaintenanceOrder` | [0..1] |
+| `_ProfitCenter` | `I_ProfitCenter` | [0..*] |
+| `_Segment` | `I_Segment` | [0..1] |
+| `_FunctionalArea` | `I_FunctionalArea` | [0..1] |
+| `_ControllingArea` | `I_ControllingArea` | [0..1] |
+| `_FunctionalLocation` | `I_FunctionalLocation` | [0..1] |
+| `_AssetLocation` | `I_Location` | [0..1] |
+| `_RealEstateObject` | `I_REObjectByIntFinNumber` | [0..1] |
+| `_Employment` | `I_Employment` | [0..1] |
+| `_Extension` | `E_FixedAssetAssgmt` | [1..1] |
+
+## Source Code
+
+```abap
+@Analytics: { technicalName: 'IFASSETASSGMT',
+              dataCategory: #DIMENSION }
+@EndUserText.label: 'Fixed Asset Time Dependent Data'
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #CHECK
+@ObjectModel: { representativeKey: 'FixedAsset',
+                usageType.serviceQuality: #A,
+                usageType.sizeCategory: #XXL,
+                usageType.dataClass: #MIXED,
+                modelingPattern: #ANALYTICAL_DIMENSION,
+                supportedCapabilities: [#ANALYTICAL_DIMENSION, #ANALYTICAL_PROVIDER, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #SQL_DATA_SOURCE]
+              }
+@Metadata: {ignorePropagatedAnnotations: true, allowExtensions: true}
+
+define view entity I_FixedAssetAssgmt
+  as select from           faat_md_tdd
+    left outer to one join tka02 on  tka02.bukrs = faat_md_tdd.comp_code
+                                 and tka02.gsber = ''
+
+  //Association with Asset Master Reference
+  association [1..1] to I_FixedAsset             as _FixedAsset             on  $projection.CompanyCode      = _FixedAsset.CompanyCode
+                                                                            and $projection.MasterFixedAsset = _FixedAsset.MasterFixedAsset
+                                                                            and $projection.FixedAsset       = _FixedAsset.FixedAsset
+
+  association [0..1] to I_CompanyCode            as _CompanyCode            on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..1] to I_MasterFixedAsset       as _MasterFixedAsset       on  $projection.CompanyCode      = _MasterFixedAsset.CompanyCode
+                                                                            and $projection.MasterFixedAsset = _MasterFixedAsset.MasterFixedAsset
+  association [0..*] to I_CostCenter             as _CostCenter             on  $projection.CostCenter      = _CostCenter.CostCenter
+                                                                            and $projection.ControllingArea = _CostCenter.ControllingArea
+  association [0..*] to I_CostCenter             as _ResponsibleCostCenter  on  $projection.ResponsibleCostCenter = _ResponsibleCostCenter.CostCenter
+                                                                            and $projection.ControllingArea       = _ResponsibleCostCenter.ControllingArea
+  association [0..*] to I_CostCenterActivityType as _CostCenterActivityType on  $projection.CostCtrActivityType = _CostCenterActivityType.CostCtrActivityType
+                                                                            and $projection.ControllingArea     = _CostCenterActivityType.ControllingArea
+  association [0..1] to I_Plant                  as _Plant                  on  $projection.Plant = _Plant.Plant
+  association [0..1] to I_BusinessArea           as _BusinessArea           on  $projection.BusinessArea = _BusinessArea.BusinessArea
+  association [0..1] to I_WBSElementBasicData    as _WBSElement             on  $projection.WBSElementInternalID_2 = _WBSElement.WBSElementInternalID
+  association [0..1] to I_InternalOrder          as _InternalOrder          on  $projection.InternalOrder = _InternalOrder.InternalOrder
+  association [0..1] to I_MaintenanceOrder       as _MaintenanceOrder       on  $projection.MaintenanceOrder = _MaintenanceOrder.MaintenanceOrder
+  association [0..*] to I_ProfitCenter           as _ProfitCenter           on  $projection.ProfitCenter    = _ProfitCenter.ProfitCenter
+                                                                            and $projection.ControllingArea = _ProfitCenter.ControllingArea
+  association [0..1] to I_Segment                as _Segment                on  $projection.Segment = _Segment.Segment
+  association [0..1] to I_FunctionalArea         as _FunctionalArea         on  $projection.FunctionalArea = _FunctionalArea.FunctionalArea
+  association [0..1] to I_ControllingArea        as _ControllingArea        on  $projection.ControllingArea = _ControllingArea.ControllingArea
+  association [0..1] to I_FunctionalLocation     as _FunctionalLocation     on  $projection.FunctionalLocation = _FunctionalLocation.FunctionalLocation
+  association [0..1] to I_Location               as _AssetLocation          on  $projection.AssetLocation = _AssetLocation.Location
+                                                                            and $projection.Plant         = _AssetLocation.Plant
+  association [0..1] to I_REObjectByIntFinNumber as _RealEstateObject       on  $projection.REInternalFinNumber = _RealEstateObject.REInternalFinNumber
+  association [0..1] to I_Employment             as _Employment             on  $projection.PersonnelNumber = _Employment.EmploymentInternalID
+
+  // Association to Extension View
+  association [1..1] to E_FixedAssetAssgmt       as _Extension              on  $projection.CompanyCode      = _Extension.CompanyCode
+                                                                            and $projection.MasterFixedAsset = _Extension.MasterFixedAsset
+                                                                            and $projection.FixedAsset       = _Extension.FixedAsset
+                                                                            and $projection.ValidityEndDate  = _Extension.ValidityEndDate
+{
+      //Key Fields
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key faat_md_tdd.comp_code                                                                 as CompanyCode,
+      @ObjectModel.foreignKey.association: '_MasterFixedAsset'
+  key faat_md_tdd.asset_no                                                                  as MasterFixedAsset,
+
+  key faat_md_tdd.asset_subno                                                               as FixedAsset,
+      @Semantics.businessDate.to: true
+  key faat_md_tdd.valid_to_date                                                             as ValidityEndDate,
+
+      @ObjectModel.foreignKey.association: '_ControllingArea'
+      tka02.kokrs                                                                           as ControllingArea,
+
+      //Relevant Fields
+      @Semantics.businessDate.from: true
+      faat_md_tdd.valid_from_date                                                           as ValidityStartDate,
+      faat_md_tdd.car_license_plate                                                         as VehicleLicensePlateNumber,
+      @ObjectModel.foreignKey.association: '_CostCenter'
+      faat_md_tdd.cost_center                                                               as CostCenter,
+      @ObjectModel.foreignKey.association: '_Plant'
+      faat_md_tdd.plant                                                                     as Plant,
+      @ObjectModel.foreignKey.association: '_BusinessArea'
+      @VDM.lifecycle: {status: #DEPRECATED}
+      faat_md_tdd.business_area                                                             as BusinessArea,
+      @ObjectModel.foreignKey.association: '_AssetLocation'
+      faat_md_tdd.location                                                                  as AssetLocation,
+      faat_md_tdd.room                                                                      as Room,
+      @ObjectModel.foreignKey.association: '_CostCenterActivityType'
+      faat_md_tdd.activity_type                                                             as CostCtrActivityType,
+      @ObjectModel.foreignKey.association: '_InternalOrder'
+      faat_md_tdd.internal_order                                                            as InternalOrder,
+      @VDM.lifecycle: {status: #DEPRECATED}
+      cast( '' as xstil )                                                                   as IsShutDown, //Moved to I_AssetTimeBasedValuation.IsShutDown
+      @ObjectModel.foreignKey.association: '_ResponsibleCostCenter'
+      faat_md_tdd.responsible_cost_center                                                   as ResponsibleCostCenter,
+      @ObjectModel.foreignKey.association: '_Employment'
+      faat_md_tdd.personnel_number                                                          as PersonnelNumber,
+      @ObjectModel.foreignKey.association: '_MaintenanceOrder'
+      @VDM.lifecycle: {status: #DEPRECATED}
+      cast( '' as iaufn )                                                                   as MaintenanceOrder,
+      faat_md_tdd.tax_jurisdiction                                                          as TaxJurisdiction,
+      faat_md_tdd.fund                                                                      as Fund,
+      @ObjectModel.foreignKey.association: '_WBSElement'
+      faat_md_tdd.wbs_element                                                               as WBSElementInternalID_2,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    'WBSElementInternalID_2'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'WBSElementInternalID_2'
+      cast( faat_md_tdd.wbs_element as am_ipsnr preserving type )                           as WBSElementInternalID,
+      @ObjectModel.foreignKey.association: '_RealEstateObject'
+      cast( faat_md_tdd.real_estate_key  as recaimkeyfi preserving type )                   as REInternalFinNumber,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    'REInternalFinNumber'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'REInternalFinNumber'
+      cast( faat_md_tdd.real_estate_key as faa_deprecated_real_estate_obj preserving type ) as RealEstateObject,
+      @ObjectModel.foreignKey.association: '_ProfitCenter'
+      faat_md_tdd.profit_center                                                             as ProfitCenter,
+      @ObjectModel.foreignKey.association: '_Segment'
+      faat_md_tdd.segment                                                                   as Segment,
+      @ObjectModel.foreignKey.association: '_FunctionalArea'
+      faat_md_tdd.functional_area                                                           as FunctionalArea,
+      @VDM.lifecycle: {status: #DEPRECATED}
+      cast( '0' as msfak )                                                                  as ShiftOperationFactor, //Moved to I_AssetTimeBasedValuation.ShiftOperationFactor
+      faat_md_tdd.grant_id                                                                  as GrantID,
+      faat_md_tdd.budget_period                                                             as BudgetPeriod,
+      faat_md_tdd.funds_center                                                              as FundsCenter,
+      @ObjectModel.foreignKey.association: '_FunctionalLocation'
+      @VDM.lifecycle: {status: #DEPRECATED}
+      cast( '' as tplnr )                                                                   as FunctionalLocation, //Works in OP only, hence deprecated in cloud with CE1911, no longer available
+      faat_md_tdd.business_place                                                            as BusinessPlace,
+      @Consumption.hidden: true
+      @VDM.lifecycle.status: #DEPRECATED
+      cast( 'NEW' as faa_authcntxt )                                                        as AssetAuthorizationContext, //Needed for DCL
+      faat_md_tdd.awtyp                                                                     as ReferenceDocumentType,
+      faat_md_tdd.awsys                                                                     as LogicalSystem,
+      faat_md_tdd.aworg                                                                     as ReferenceDocumentContext,
+      faat_md_tdd.awref                                                                     as ReferenceDocument,
+
+      // Define association to parent
+      @ObjectModel.association.type: [ #TO_COMPOSITION_PARENT, #TO_COMPOSITION_ROOT ]
+      _FixedAsset,
+      _CompanyCode,
+      _MasterFixedAsset,
+      _CostCenter,
+      _ResponsibleCostCenter,
+      _CostCenterActivityType,
+      _Plant,
+      _BusinessArea,
+      _WBSElement,
+      _InternalOrder,
+      @VDM.lifecycle: {status: #DEPRECATED}
+      _MaintenanceOrder,
+      _ProfitCenter,
+      _Segment,
+      _FunctionalArea,
+      _ControllingArea,
+      _FunctionalLocation,
+      _AssetLocation,
+      _RealEstateObject,
+      _Employment
+}
+```

@@ -1,0 +1,89 @@
+---
+name: I_MEASURINGPOINTCATTEXT
+description: Measuringpointcattext
+app_component: PM-EQM-SF-MPC-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - PM
+  - PM-EQM
+  - PM-EQM-SF
+  - interface-view
+  - text-view
+  - text
+  - component:PM-EQM-SF-MPC-2CL
+  - lob:Plant Maintenance
+---
+# I_MEASURINGPOINTCATTEXT
+
+**Measuringpointcattext**
+
+| Property | Value |
+|---|---|
+| App Component | `PM-EQM-SF-MPC-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `MeasuringPointCategory` | `mptyp` |
+| key `Language` | `spras` |
+| `MeasuringPointCategoryDesc` | `mpttx` |
+| `_MeasuringPointCategory` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_MeasuringPointCategory` | `I_MeasuringPointCategory` | [0..1] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Measuring Point Category - Text'
+
+@VDM.viewType: #BASIC
+@ObjectModel.dataCategory: #TEXT
+@Analytics.technicalName: 'IMEASPOINTCATTXT'
+@ObjectModel.representativeKey: 'MeasuringPointCategory'
+
+@ObjectModel: {
+  usageType: {
+    dataClass: #CUSTOMIZING,
+    serviceQuality: #A,
+    sizeCategory: #S
+  }
+}
+@Metadata.ignorePropagatedAnnotations:true
+@Analytics: {dataExtraction.enabled: true }
+@ObjectModel.supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT , #EXTRACTION_DATA_SOURCE ]
+
+define view entity I_MeasuringPointCatText
+  as select from t370p_t
+  association [0..1] to I_MeasuringPointCategory as _MeasuringPointCategory on _MeasuringPointCategory.MeasuringPointCategory = $projection.MeasuringPointCategory
+  association [0..1] to I_Language               as _Language               on _Language.Language = $projection.Language
+{
+      @ObjectModel.foreignKey.association: '_MeasuringPointCategory'
+  key mptyp as MeasuringPointCategory,
+
+      @ObjectModel.foreignKey.association: '_Language'
+      @Semantics.language: true
+  key spras as Language,
+
+      @Semantics.text: true
+      mpttx as MeasuringPointCategoryDesc,
+
+      // Propagate association(s)
+      _MeasuringPointCategory,
+      _Language
+}
+```

@@ -1,0 +1,91 @@
+---
+name: I_CARETURNREASONTEXT
+description: Careturnreasontext
+app_component: FI-CA-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-CA
+  - interface-view
+  - text-view
+  - text
+  - component:FI-CA-2CL
+  - lob:Finance
+---
+# I_CARETURNREASONTEXT
+
+**Careturnreasontext**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-CA-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CAReturnReason` | `rlgrd` |
+| key `HouseBank` | `hbkid` |
+| key `Language` | `spras` |
+| `CAReturnReasonName` | `rtext` |
+| `_HouseBank` | *Association* |
+| `_Language` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_HouseBank` | `I_Housebank` | [1..*] |
+| `_Language` | `I_Language` | [0..1] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@EndUserText.label: 'Return Reason - Text'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: { dataCategory: #TEXT,
+                modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+                representativeKey: 'CAReturnReason',
+                supportedCapabilities: [ #LANGUAGE_DEPENDENT_TEXT,
+                                         #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #SQL_DATA_SOURCE,
+                                         #CDS_MODELING_DATA_SOURCE ],
+                usageType: { dataClass: #CUSTOMIZING,
+                             serviceQuality: #A,
+                             sizeCategory: #S } }
+
+@VDM.viewType: #BASIC
+
+define view entity I_CAReturnReasonText
+  as select from tfk045at
+
+  association [1..*] to I_Housebank as _HouseBank on  $projection.HouseBank  = _HouseBank.HouseBank
+                                                  and _HouseBank.CompanyCode is not initial
+  association [0..1] to I_Language  as _Language  on  $projection.Language = _Language.Language
+
+{
+  key rlgrd as CAReturnReason,
+      @ObjectModel.foreignKey.association: '_HouseBank'
+  key hbkid as HouseBank,
+      @Semantics.language
+      @ObjectModel.foreignKey.association: '_Language'
+  key spras as Language,
+
+      @Semantics.text
+      rtext as CAReturnReasonName,
+
+      _HouseBank,
+      _Language
+}
+```

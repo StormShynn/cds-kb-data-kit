@@ -1,0 +1,84 @@
+---
+name: I_TREASURYCOMPANYCODESETTING
+description: TREASURYCompany CodeSETTING
+app_component: FIN-FSCM-TRM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-FSCM
+  - FIN-FSCM-TRM
+  - interface-view
+  - company-code
+  - treasury
+  - component:FIN-FSCM-TRM-2CL
+  - lob:Other
+  - bo:CompanyCode
+---
+# I_TREASURYCOMPANYCODESETTING
+
+**TREASURYCompany CodeSETTING**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-FSCM-TRM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CompanyCode` | `bukrs` |
+| `CompanyCodeIsTreasuryCenter` | `is_trsy_center` |
+| `TreasuryCenterSortSequenceVal` | `trsy_ctr_sort_order` |
+| `_CompanyCode` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'ITRSYCCSET'
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@AbapCatalog.compiler.compareFilter: true 
+@AbapCatalog.preserveKey: true // only if required by ATC check 
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@Analytics.dataCategory: #DIMENSION 
+@Analytics.dataExtraction.enabled: true // use only if view is customizing or small master data 
+@Analytics.internalName: #LOCAL 
+@ClientHandling.algorithm: #SESSION_VARIABLE 
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_DIMENSION, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #EXTRACTION_DATA_SOURCE]
+@ObjectModel.representativeKey: 'CompanyCode'
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.sizeCategory: #M
+
+@Metadata.allowExtensions:true   
+@Metadata.ignorePropagatedAnnotations: true // For C1-Release 
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Treasury Company Code Additional Data'
+
+define view I_TreasuryCompanyCodeSetting 
+  as select from tzbz as CompanyCodeAddData 
+   
+  association [0..1] to I_CompanyCode as _CompanyCode on $projection.CompanyCode=_CompanyCode.CompanyCode
+ 
+  
+{ 
+  key bukrs as CompanyCode,
+  is_trsy_center as CompanyCodeIsTreasuryCenter,
+  trsy_ctr_sort_order as TreasuryCenterSortSequenceVal,
+  
+  _CompanyCode
+}
+```

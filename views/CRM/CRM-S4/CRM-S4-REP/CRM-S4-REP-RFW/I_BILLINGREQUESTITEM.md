@@ -1,0 +1,171 @@
+---
+name: I_BILLINGREQUESTITEM
+description: Billingrequestitem
+app_component: CRM-S4-REP-RFW
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CRM
+  - interface-view
+  - billing
+  - item-level
+  - component:CRM-S4-REP-RFW
+  - lob:Other
+---
+# I_BILLINGREQUESTITEM
+
+**Billingrequestitem**
+
+| Property | Value |
+|---|---|
+| App Component | `CRM-S4-REP-RFW` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ServiceObjectType` | `objtype_h` |
+| key `ServiceDocument` | `object_id` |
+| key `ServiceDocumentItem` | `number_int` |
+| key `BillingRequestItem` | `record_no` |
+| `BillgReqItemBillingDateTime` | `bill_date` |
+| `BillgReqItemBillingStatus` | `bill_settl_stat` |
+| `SettlementStartDateTime` | `settl_from` |
+| `SettlementEndDateTime` | `settl_to` |
+| `BillingPlanTimeZone` | `_ServiceDocItem.BillingPlanTimeZone` |
+| `TransactionCurrency` | `_ServiceDocItem.TransactionCurrency` |
+| `BillgReqItemNetAmount` | `} net_value` |
+| `BillingBlockReason` | `billing_block` |
+| `BillgReqItemDescription` | `description` |
+| `ServicesRenderedDateTime` | `servicesrendereddatetime` |
+| `BillgReqItemPricingDate` | `price_date` |
+| `BillgReqItemTaxAmount` | `tax_amount` |
+| `BillgReqItemGrossAmount` | `gross_value` |
+| `BillgReqItemIsCreditItem` | `credit_indicator` |
+| `BillgReqItemUsageType` | `billreq_i_usage_type` |
+| `BillgReqItemDeletionStatus` | `bill_del_stat` |
+| `_ServiceDocItem` | *Association* |
+| `_BillgReqItmSettlmtStatus` | *Association* |
+| `_TransactionCurrency` | *Association* |
+| `_BillingBlockReason` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ServiceDocItem` | `I_ServiceDocumentItem` | [1] |
+| `_BillgReqItmSettlmtStatus` | `I_BillgReqItmSettlmtStatus` | [0..1] |
+| `_TransactionCurrency` | `I_Currency` | [0..1] |
+| `_BillingBlockReason` | `I_BillingBlockReason` | [1] |
+
+## Source Code
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Billg Request Line for Srvc Transaction'
+
+@VDM:{
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+
+/* Enhancement Solution Order */
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+            mapping:[
+                {
+                    table: 'crms4d_billreq_i', role: #MAIN,
+                    viewElement: ['ServiceObjectType', 'ServiceDocument', 'ServiceDocumentItem', 'BillingRequestItem'],
+                    tableElement: ['objtype_h', 'object_id', 'number_int', 'record_no']
+                }
+            ]
+        }
+    }
+ }
+
+@AccessControl: {
+  authorizationCheck: #CHECK,
+  personalData.blocking: #('TRANSACTIONAL_DATA')
+}
+@AbapCatalog: {
+  sqlViewName: 'IBILLGREQITEM',
+  preserveKey:true,
+  compiler.compareFilter: true
+}
+@ObjectModel: {
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XXL
+   },
+   supportedCapabilities: [ #CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET,#EXTRACTION_DATA_SOURCE ]
+}
+
+/* Enhancement Solution Order */
+//! Business Object SONT for the Service Doc Item BillingRequestItem
+@ObjectModel.sapObjectNodeType.name: 'SrvcDocItemBillingRequestItem'
+@Metadata.ignorePropagatedAnnotations: true
+//@Metadata.allowExtensions:true
+//@Analytics.dataCategory: #DIMENSION
+
+define view I_BillingRequestItem
+  as select from crms4d_billreq_i
+  association [1]    to I_ServiceDocumentItem      as _ServiceDocItem           on  $projection.ServiceObjectType   = _ServiceDocItem.ServiceObjectType
+                                                                                and $projection.ServiceDocument     = _ServiceDocItem.ServiceDocument
+                                                                                and $projection.ServiceDocumentItem = _ServiceDocItem.ServiceDocumentItem
+
+  association [0..1] to I_BillgReqItmSettlmtStatus as _BillgReqItmSettlmtStatus on  $projection.BillgReqItemBillingStatus = _BillgReqItmSettlmtStatus.BillgReqItemBillingStatus
+
+  association [0..1] to I_Currency                 as _TransactionCurrency      on  $projection.transactioncurrency = _TransactionCurrency.Currency
+  association [1]    to I_BillingBlockReason       as _BillingBlockReason       on  $projection.BillingBlockReason = _BillingBlockReason.BillingBlockReason
+{
+
+  key objtype_h                as ServiceObjectType,
+  key object_id                as ServiceDocument,
+  key number_int               as ServiceDocumentItem,
+  key record_no                as BillingRequestItem,
+
+      bill_date                as BillgReqItemBillingDateTime,
+      bill_settl_stat          as BillgReqItemBillingStatus,
+      settl_from               as SettlementStartDateTime,
+      settl_to                 as SettlementEndDateTime,
+
+      _ServiceDocItem.BillingPlanTimeZone,
+
+      @ObjectModel.foreignKey.association: '_TransactionCurrency'
+      @Semantics.currencyCode:true
+      _ServiceDocItem.TransactionCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      net_value                as BillgReqItemNetAmount,
+      @ObjectModel.foreignKey.association: '_BillingBlockReason'
+      billing_block            as BillingBlockReason,
+
+      description              as BillgReqItemDescription,
+      servicesrendereddatetime as ServicesRenderedDateTime,
+      price_date               as BillgReqItemPricingDate,
+      /* Enhancement Solution Order */
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      tax_amount               as BillgReqItemTaxAmount,
+      @Semantics.amount.currencyCode: 'TransactionCurrency'
+      gross_value              as BillgReqItemGrossAmount,
+      @Semantics.booleanIndicator: true
+      credit_indicator         as BillgReqItemIsCreditItem,
+      billreq_i_usage_type     as BillgReqItemUsageType,
+      bill_del_stat            as BillgReqItemDeletionStatus,
+      
+      _ServiceDocItem,
+      _BillgReqItmSettlmtStatus,
+      _TransactionCurrency,
+      _BillingBlockReason
+}
+```

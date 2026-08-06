@@ -1,0 +1,193 @@
+---
+name: I_TRANSBSDMATLVALUECHAINITEM
+description: Transbsdmatlvaluechainitem
+app_component: CO-PC-ACT-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CO
+  - CO-PC
+  - CO-PC-ACT
+  - interface-view
+  - item-level
+  - component:CO-PC-ACT-2CL
+  - lob:Controlling
+---
+# I_TRANSBSDMATLVALUECHAINITEM
+
+**Transbsdmatlvaluechainitem**
+
+| Property | Value |
+|---|---|
+| App Component | `CO-PC-ACT-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CostEstimate` | `CostEstimate` |
+| key `CurrencyRole` | `CurrencyRole` |
+| key `Ledger` | `Ledger` |
+| key `FiscalYearPeriod` | `cast( FiscalYearPeriod as fins_fyearperiod )` |
+| key `MaterialLedgerCategory` | `MaterialLedgerCategory` |
+| key `ProcessCategory` | `ProcessCategory` |
+| key `MatlLdgrDocIsCostingRelevant` | `MatlLdgrDocIsCostingRelevant` |
+| key `ProcurementAlternative` | `ProcurementAlternative` |
+| key `ProductionProcess` | `ProductionProcess` |
+| key `MovementType` | `MovementType` |
+| key `GLAccount` | `GLAccount` |
+| `PriceDeterminationControl` | `PriceDeterminationControl` |
+| `ValuationArea` | `ValuationArea` |
+| `Material` | `Material` |
+| `InventoryValuationType` | `InventoryValuationType` |
+| `SalesOrder` | `SalesOrder` |
+| `SalesOrderItem` | `SalesOrderItem` |
+| `InventorySpecialStockType` | `InventorySpecialStockType` |
+| `Supplier` | `Supplier` |
+| `WBSElementExternalID` | `WBSElementExternalID` |
+| `MaterialLedgerCategoryText` | `MaterialLedgerCategoryText` |
+| `ProcessCategoryName` | `ProcessCategoryName` |
+| `GoodsMovementTypeName` | `GoodsMovementTypeName` |
+| `GLAccountName` | `GLAccountName` |
+| `InventorySpecialStockTypeName` | `InventorySpecialStockTypeName` |
+| `TotalVltdStockQuantity` | `TotalVltdStockQuantity` |
+| `ValuationQuantityUnit` | `ValuationQuantityUnit` |
+| `InventoryAmtInDspCrcy` | `InventoryAmtInDspCrcy` |
+| `InvtryTransacAmtInDisplayCrcy` | `InvtryTransacAmtInDisplayCrcy` |
+| `PriceDiffAmtInDisplayCrcy` | `PriceDiffAmtInDisplayCrcy` |
+| `ExchRateDiffAmtInDspCurrency` | `ExchRateDiffAmtInDspCurrency` |
+| `Currency` | `Currency` |
+| `ControllingArea` | `ControllingArea` |
+| `ControllingValuationType` | `ControllingValuationType` |
+| `_Product` | *Association* |
+| `_Plant` | *Association* |
+| `_Ledger` | *Association* |
+| `_Currency` | *Association* |
+| `_QuantityUnit` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Product` | `I_Product` | [1..1] |
+| `_Plant` | `I_Plant` | [0..1] |
+| `_Ledger` | `I_Ledger` | [1..1] |
+| `_Currency` | `I_Currency` | [1..1] |
+| `_QuantityUnit` | `I_UnitOfMeasure` | [1..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl: {
+                  authorizationCheck: #MANDATORY,
+                  personalData.blocking: #REQUIRED
+                }
+@ObjectModel: {
+                usageType: {
+                             serviceQuality: #D,
+                             sizeCategory: #XXL,
+                             dataClass: #MIXED
+                           },
+                supportedCapabilities: [#SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE],
+                modelingPattern: #ANALYTICAL_CUBE,
+                sapObjectNodeType.name: 'MaterialValuation'
+              }
+@Analytics: {
+              dataExtraction.enabled: true,
+              dataCategory: #FACT
+            }
+@VDM: {
+        viewType: #COMPOSITE,
+        lifecycle.contract.type: #PUBLIC_LOCAL_API
+      }
+@Metadata: {
+             ignorePropagatedAnnotations: true
+           }
+@EndUserText.label: 'Transaction-Based Material Value Chain Item'
+
+define view entity I_TransBsdMatlValueChainItem
+  with parameters
+    P_FromFiscalYearPeriod :fml_fyearperiod_from,
+    P_ToFiscalYearPeriod   :fml_fyearperiod_to
+  as select from P_TransacBsdMatlInvtry(P_FromFiscalYearPeriod : $parameters.P_FromFiscalYearPeriod,
+                                      P_ToFiscalYearPeriod   : $parameters.P_ToFiscalYearPeriod)
+
+  association [1..1] to I_Product       as _Product      on $projection.Material = _Product.Product
+  association [0..1] to I_Plant         as _Plant        on $projection.ValuationArea = _Plant.Plant
+  association [1..1] to I_Ledger        as _Ledger       on $projection.Ledger = _Ledger.Ledger
+  association [1..1] to I_Currency      as _Currency     on $projection.Currency = _Currency.Currency
+  association [1..1] to I_UnitOfMeasure as _QuantityUnit on $projection.ValuationQuantityUnit = _QuantityUnit.UnitOfMeasure
+{
+  key   CostEstimate,
+  key   CurrencyRole,
+        @ObjectModel.foreignKey.association: '_Ledger'
+  key   Ledger,
+  key   cast( FiscalYearPeriod as fins_fyearperiod ) as FiscalYearPeriod,
+        @ObjectModel.text.element: ['MaterialLedgerCategoryText']
+  key   MaterialLedgerCategory,
+        @ObjectModel.text.element: ['ProcessCategoryName']
+  key   ProcessCategory,
+  key   MatlLdgrDocIsCostingRelevant,
+  key   ProcurementAlternative,
+  key   ProductionProcess,
+        @ObjectModel.text.element: ['GoodsMovementTypeName']
+  key   MovementType,
+        @ObjectModel.text.element: ['GLAccountName']
+  key   GLAccount,
+        PriceDeterminationControl,
+        @ObjectModel.foreignKey.association: '_Plant'
+        ValuationArea,
+        @ObjectModel.foreignKey.association: '_Product'
+        Material,
+        InventoryValuationType,
+        SalesOrder,
+        SalesOrderItem,
+        @ObjectModel.text.element: ['InventorySpecialStockTypeName']
+        InventorySpecialStockType,
+        Supplier,
+        WBSElementExternalID,
+        @Semantics.text: true
+        MaterialLedgerCategoryText,
+        @Semantics.text: true
+        ProcessCategoryName,
+        @Semantics.text: true
+        GoodsMovementTypeName,
+        @Semantics.text: true
+        GLAccountName,
+        @Semantics.text: true
+        InventorySpecialStockTypeName,
+
+        @Semantics.quantity.unitOfMeasure: 'ValuationQuantityUnit'
+        TotalVltdStockQuantity,
+        @ObjectModel.foreignKey.association: '_QuantityUnit'
+        ValuationQuantityUnit,
+        @Semantics.amount.currencyCode: 'Currency'
+        InventoryAmtInDspCrcy,
+        @Semantics.amount.currencyCode: 'Currency'
+        InvtryTransacAmtInDisplayCrcy,
+        @Semantics.amount.currencyCode: 'Currency'
+        PriceDiffAmtInDisplayCrcy,
+        @Semantics.amount.currencyCode: 'Currency'
+        ExchRateDiffAmtInDspCurrency,
+        @ObjectModel.foreignKey.association: '_Currency'
+        Currency,
+
+        @Consumption.hidden: true
+        ControllingArea,
+        @Consumption.hidden: true
+        ControllingValuationType,
+
+        _Product,
+        _Plant,
+        _Ledger,
+        _Currency,
+        _QuantityUnit
+}
+```

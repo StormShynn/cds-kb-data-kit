@@ -1,0 +1,99 @@
+---
+name: I_CONFIGURABLECODESCODETEXT
+description: Configurablecodescodetext
+app_component: QM-PT-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - QM
+  - QM-PT
+  - interface-view
+  - text-view
+  - text
+  - component:QM-PT-2CL
+  - lob:Quality Management
+---
+# I_CONFIGURABLECODESCODETEXT
+
+**Configurablecodescodetext**
+
+| Property | Value |
+|---|---|
+| App Component | `QM-PT-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `ConfigurableCodesCatalog` | `katalogart` |
+| key `ConfigurableCodesCodeGroup` | `codegruppe` |
+| key `ConfigurableCodesCode` | `code` |
+| key `Language` | `sprache` |
+| `ConfigurableCodesCodeText` | `cast( kurztext as vdm_qtxt_code preserving type )` |
+| `_ConfigurableCodesCatalog` | *Association* |
+| `_ConfigurableCodesCodeGroup` | *Association* |
+| `_ConfigurableCodesCode` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ConfigurableCodesCatalog` | `I_ConfigurableCodesCatalog` | [1..1] |
+| `_ConfigurableCodesCodeGroup` | `I_ConfigurableCodesCodeGroup` | [1..1] |
+| `_ConfigurableCodesCode` | `I_ConfigurableCodesCode` | [1..1] |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Code of Configurable Codes - Text'
+@ObjectModel.dataCategory: #TEXT
+@VDM: {
+    viewType: #BASIC,
+    lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@ObjectModel:{
+  supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #LANGUAGE_DEPENDENT_TEXT, #EXTRACTION_DATA_SOURCE ],
+  modelingPattern: #LANGUAGE_DEPENDENT_TEXT,
+  usageType: { serviceQuality: #A, sizeCategory: #M, dataClass: #CUSTOMIZING } }
+@Analytics: {
+  dataExtraction.enabled: true,
+  dataExtraction.delta.changeDataCapture.automatic: true
+}
+@ObjectModel.representativeKey: 'ConfigurableCodesCode'
+@Metadata.ignorePropagatedAnnotations: true
+define view entity I_ConfigurableCodesCodeText
+  as select from qpct
+  association [1..1] to I_ConfigurableCodesCatalog   as _ConfigurableCodesCatalog   on  $projection.ConfigurableCodesCatalog = _ConfigurableCodesCatalog.ConfigurableCodesCatalog
+  association [1..1] to I_ConfigurableCodesCodeGroup as _ConfigurableCodesCodeGroup on  $projection.ConfigurableCodesCatalog   = _ConfigurableCodesCodeGroup.ConfigurableCodesCatalog
+                                                                                    and $projection.ConfigurableCodesCodeGroup = _ConfigurableCodesCodeGroup.ConfigurableCodesCodeGroup
+  association [1..1] to I_ConfigurableCodesCode      as _ConfigurableCodesCode      on  $projection.ConfigurableCodesCatalog   = _ConfigurableCodesCode.ConfigurableCodesCatalog
+                                                                                    and $projection.ConfigurableCodesCodeGroup = _ConfigurableCodesCode.ConfigurableCodesCodeGroup
+                                                                                    and $projection.ConfigurableCodesCode      = _ConfigurableCodesCode.ConfigurableCodesCode
+{
+      @ObjectModel.foreignKey.association: '_ConfigurableCodesCatalog'
+  key katalogart                                        as ConfigurableCodesCatalog,
+      @ObjectModel.foreignKey.association: '_ConfigurableCodesCodeGroup'
+  key codegruppe                                        as ConfigurableCodesCodeGroup,
+      @ObjectModel.foreignKey.association: '_ConfigurableCodesCode'
+  key code                                              as ConfigurableCodesCode,
+      @Semantics.language: true
+  key sprache                                           as Language,
+      @Semantics.text: true
+      cast( kurztext as vdm_qtxt_code preserving type ) as ConfigurableCodesCodeText,
+
+      // Associations
+      _ConfigurableCodesCatalog,
+      _ConfigurableCodesCodeGroup,
+      _ConfigurableCodesCode
+
+}
+where
+  qpct.version = '000001'
+```

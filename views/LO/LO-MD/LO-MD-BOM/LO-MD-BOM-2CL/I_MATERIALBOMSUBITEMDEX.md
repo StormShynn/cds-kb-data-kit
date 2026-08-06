@@ -1,0 +1,102 @@
+---
+name: I_MATERIALBOMSUBITEMDEX
+description: Materialbomsubitemdex
+app_component: LO-MD-BOM-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - LO
+  - LO-MD
+  - LO-MD-BOM
+  - interface-view
+  - data-extraction
+  - material
+  - bom
+  - item-level
+  - component:LO-MD-BOM-2CL
+  - lob:Logistics General
+  - bo:Material
+---
+# I_MATERIALBOMSUBITEMDEX
+
+**Materialbomsubitemdex**
+
+| Property | Value |
+|---|---|
+| App Component | `LO-MD-BOM-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `BillOfMaterial` | `BillOfMaterial` |
+| key `BillOfMaterialCategory` | `BillOfMaterialCategory` |
+| key `BillOfMaterialItemNodeNumber` | `BillOfMaterialItemNodeNumber` |
+| key `BOMItemInternalChangeCount` | `BOMItemInternalChangeCount` |
+| key `BOMSubItemNumberValue` | `BOMSubItemNumberValue` |
+| `BillOfMaterialItemUnit` | `BillOfMaterialItemUnit` |
+| `BillOfMaterialSubItemQuantity` | `BillOfMaterialSubItemQuantity` |
+| `BOMSubItemInstallationPoint` | `BOMSubItemInstallationPoint` |
+| `BillOfMaterialSubItemText` | `BillOfMaterialSubItemText` |
+
+## Source Code
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Data Extraction For BOM Subitem'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+  serviceQuality: #A,
+  sizeCategory: #XL,
+  dataClass: #MASTER
+}
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE,
+                                     #CDS_MODELING_DATA_SOURCE,
+                                     #CDS_MODELING_ASSOCIATION_TARGET,
+                                     #EXTRACTION_DATA_SOURCE]
+@ObjectModel.sapObjectNodeType.name : 'BillOfMaterialSubItem'
+@Analytics:{
+     dataCategory: #FACT,
+     dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+            mapping:[
+                          {
+                    table: 'stpo', role: #LEFT_OUTER_TO_ONE_JOIN,
+                    viewElement: ['BillOfMaterialCategory', 'BillOfMaterial', 'BillOfMaterialItemNodeNumber'],
+                    tableElement: ['stlty', 'stlnr', 'stlkn']
+                }
+,
+                {
+                    table: 'stpu', role: #MAIN,
+                    viewElement: ['BillOfMaterialCategory', 'BillOfMaterial', 'BillOfMaterialItemNodeNumber', 'BOMItemInternalChangeCount', 'BOMSubItemNumberValue'],
+                    tableElement: ['stlty', 'stlnr', 'stlkn', 'stpoz', 'uposz']
+                }
+            ]
+        }
+    }
+}
+define view entity I_MaterialBOMSubitemDEX as select from P_MaterialBOMSubitemDEX
+{
+ 
+  key BillOfMaterial,
+  key BillOfMaterialCategory,
+  key BillOfMaterialItemNodeNumber,
+  key BOMItemInternalChangeCount,
+  
+  key BOMSubItemNumberValue,
+      BillOfMaterialItemUnit,
+      @Semantics.quantity.unitOfMeasure: 'BillOfMaterialItemUnit'
+      BillOfMaterialSubItemQuantity,
+      BOMSubItemInstallationPoint,
+      BillOfMaterialSubItemText
+}
+```

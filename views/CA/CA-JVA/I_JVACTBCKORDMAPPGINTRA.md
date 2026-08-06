@@ -1,0 +1,118 @@
+---
+name: I_JVACTBCKORDMAPPGINTRA
+description: Jvactbckordmappgintra
+app_component: CA-JVA
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CA
+  - CA-JVA
+  - interface-view
+  - component:CA-JVA
+  - lob:Cross-Application Components
+---
+# I_JVACTBCKORDMAPPGINTRA
+
+**Jvactbckordmappgintra**
+
+| Property | Value |
+|---|---|
+| App Component | `CA-JVA` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CompanyCode` | `JVACtbckOrdMappgIntraBsc.CompanyCode` |
+| key `JVAFromOrder` | `JVACtbckOrdMappgIntraBsc.JVAFromOrder` |
+| `JVARangeToOrder` | `JVACtbckOrdMappgIntraBsc.JVARangeToOrder` |
+| `JVACutbackCostCenter` | `JVACtbckOrdMappgIntraBsc.JVACutbackCostCenter` |
+| `JVACutbackOrder` | `JVACtbckOrdMappgIntraBsc.JVACutbackOrder` |
+| `JVACutbackWBS` | `JVACtbckOrdMappgIntraBsc.JVACutbackWBS` |
+| `JVACutbackWBSExt` | `_CutbackWBSElement.WBSElementExternalID` |
+| `ControllingArea` | `_CompanyCode.ControllingArea` |
+| `_CompanyCode` | *Association* |
+| `_JVAFromOrder` | *Association* |
+| `_JVARangeToOrder` | *Association* |
+| `_CutbackCostCenter` | *Association* |
+| `_JVACutbackOrder` | *Association* |
+| `_CutbackWBSElement` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_JVAFromOrder` | `I_Order` | [0..1] |
+| `_JVARangeToOrder` | `I_Order` | [0..1] |
+| `_CutbackCostCenter` | `I_CostCenter` | [0..*] |
+| `_JVACutbackOrder` | `I_Order` | [0..1] |
+| `_CutbackWBSElement` | `I_WBSElementByInternalKey` | [0..1] |
+
+## Source Code
+
+```abap
+@VDM.viewType: #COMPOSITE
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Cutback Order Mapping Intracompany'
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics: { dataCategory: #DIMENSION }
+@ObjectModel.representativeKey: 'JVAFromOrder'
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                                      #CDS_MODELING_ASSOCIATION_TARGET,
+                                      #SQL_DATA_SOURCE,
+                                      #CDS_MODELING_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #NONE
+@Analytics.internalName: #LOCAL
+@Metadata.allowExtensions: true
+@ObjectModel.usageType:{
+  serviceQuality: #C,
+  sizeCategory: #L,
+  dataClass: #MIXED
+}
+
+define view entity I_JVACtbckOrdMappgIntra
+
+  as select from I_JVACtbckOrdMappgIntraBsc as JVACtbckOrdMappgIntraBsc
+
+  association [0..1] to I_CompanyCode             as _CompanyCode       on  _CompanyCode.CompanyCode = $projection.CompanyCode
+
+  association [0..1] to I_Order                   as _JVAFromOrder      on  _JVAFromOrder.OrderID = $projection.JVAFromOrder
+
+  association [0..1] to I_Order                   as _JVARangeToOrder   on  _JVARangeToOrder.OrderID = $projection.JVARangeToOrder
+
+  association [0..*] to I_CostCenter              as _CutbackCostCenter on  _CutbackCostCenter.ControllingArea = $projection.controllingarea
+                                                                        and _CutbackCostCenter.CostCenter      = $projection.JVACutbackCostCenter
+
+  association [0..1] to I_Order                   as _JVACutbackOrder   on  _JVACutbackOrder.OrderID = $projection.JVACutbackOrder
+
+  association [0..1] to I_WBSElementByInternalKey as _CutbackWBSElement on  _CutbackWBSElement.WBSElementInternalID = $projection.JVACutbackWBS
+
+{
+
+  @ObjectModel.foreignKey.association: '_CompanyCode'
+  key JVACtbckOrdMappgIntraBsc.CompanyCode,
+  key JVACtbckOrdMappgIntraBsc.JVAFromOrder,
+      JVACtbckOrdMappgIntraBsc.JVARangeToOrder,
+      JVACtbckOrdMappgIntraBsc.JVACutbackCostCenter,
+      JVACtbckOrdMappgIntraBsc.JVACutbackOrder,
+      JVACtbckOrdMappgIntraBsc.JVACutbackWBS,
+      _CutbackWBSElement.WBSElementExternalID as JVACutbackWBSExt,
+      _CompanyCode.ControllingArea,
+
+      _CompanyCode,
+      _JVAFromOrder,
+      _JVARangeToOrder,
+      _CutbackCostCenter,
+      _JVACutbackOrder,
+      _CutbackWBSElement
+
+}
+```

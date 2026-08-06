@@ -1,0 +1,102 @@
+---
+name: I_CNSLDTNSUBITEMCATEGORY_2
+description: Cnsldtnsubitemcategory 2
+app_component: FIN-CS-MD-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FIN
+  - FIN-CS
+  - FIN-CS-MD
+  - interface-view
+  - item-level
+  - component:FIN-CS-MD-2CL
+  - lob:Other
+---
+# I_CNSLDTNSUBITEMCATEGORY_2
+
+**Cnsldtnsubitemcategory 2**
+
+| Property | Value |
+|---|---|
+| App Component | `FIN-CS-MD-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CnsldtnSubitemCategory` | `cast(_Source.sityp as fincs_subitemcategory preserving type )` |
+| `_Text` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_CnsldtnSubitemCategoryText_2` | [0..*] |
+
+## Source Code
+
+```abap
+@Analytics: {
+  dataCategory: #DIMENSION,
+  internalName: #LOCAL,
+  dataExtraction.enabled: true
+}
+@AccessControl:{
+  authorizationCheck: #NOT_REQUIRED
+}
+@Metadata:{
+  allowExtensions:true,
+  ignorePropagatedAnnotations: true
+}
+@ObjectModel:{
+  usageType: {
+    dataClass: #CUSTOMIZING,
+    serviceQuality: #A,
+    sizeCategory: #S
+  },
+  representativeKey: 'CnsldtnSubitemCategory',
+  modelingPattern: #ANALYTICAL_DIMENSION,
+  supportedCapabilities: [#CDS_MODELING_DATA_SOURCE,
+                          #CDS_MODELING_ASSOCIATION_TARGET,
+                          #SQL_DATA_SOURCE,
+                          #EXTRACTION_DATA_SOURCE,
+                          #ANALYTICAL_DIMENSION],
+  sapObjectNodeType.name: 'ConsolidationSubitemCategory'
+}
+@Search.searchable: true
+@VDM:{
+  viewType: #BASIC,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@EndUserText.label: 'Consolidation Subitem Category'
+define view entity I_CnsldtnSubitemCategory_2
+  as select from tf110 as _Source
+
+  association [0..*] to I_CnsldtnSubitemCategoryText_2 as _Text on $projection.CnsldtnSubitemCategory = _Text.CnsldtnSubitemCategory
+
+{
+
+      @ObjectModel.text.association: '_Text'
+      @Consumption.valueHelpDefinition: [{
+        entity: {
+          name: 'I_CnsldtnSubitemCategoryVH_2',
+          element: 'CnsldtnSubitemCategory'
+        }
+      }]
+      @Search: {
+        defaultSearchElement: true,
+        fuzzinessThreshold: 0.8,
+        ranking: #HIGH
+      }
+  key cast(_Source.sityp as fincs_subitemcategory preserving type ) as CnsldtnSubitemCategory,
+
+      _Text
+}
+```

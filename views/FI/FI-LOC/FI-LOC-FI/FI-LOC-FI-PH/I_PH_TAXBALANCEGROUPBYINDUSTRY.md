@@ -1,0 +1,74 @@
+---
+name: I_PH_TAXBALANCEGROUPBYINDUSTRY
+description: PH Taxbalancegroupbyindustry
+app_component: FI-LOC-FI-PH
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - FI
+  - FI-LOC
+  - FI-LOC-FI
+  - interface-view
+  - tax
+  - component:FI-LOC-FI-PH
+  - lob:Finance
+---
+# I_PH_TAXBALANCEGROUPBYINDUSTRY
+
+**PH Taxbalancegroupbyindustry**
+
+| Property | Value |
+|---|---|
+| App Component | `FI-LOC-FI-PH` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `Country` | `country` |
+| key `TaxItemGroupingVersion` | `version` |
+| key `CompanyCode` | `companycode` |
+| key `BusinessPlace` | `businessplace` |
+| key `TaxCode` | `taxcode` |
+| `AlphanumericTaxCode` | `atc_code` |
+| `_AlphanumericTxCodeText` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_AlphanumericTxCodeText` | `I_PH_AlphanumericTaxCodeText` | [0..*] |
+
+## Source Code
+
+```abap
+@VDM.viewType: #BASIC
+@AccessControl:{authorizationCheck: #CHECK, personalData.blocking: #BLOCKED_DATA_EXCLUDED}
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+@VDM.lifecycle.contract.type:#PUBLIC_LOCAL_API 
+@AbapCatalog:{sqlViewName: 'IPHINDUSTRYGRP', compiler.compareFilter: true, preserveKey: true}
+@ObjectModel:{usageType.sizeCategory: #L, usageType.serviceQuality: #B, 
+              usageType.dataClass: #CUSTOMIZING, supportedCapabilities: [#SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE]}
+@EndUserText.label: 'Philippines Industries Covered by VAT'
+define view I_PH_TaxBalanceGroupByIndustry
+  as select from idty_code_ph
+  association [0..*] to I_PH_AlphanumericTaxCodeText as _AlphanumericTxCodeText on  $projection.Country  = _AlphanumericTxCodeText.Country
+                                                                                and $projection.AlphanumericTaxCode = _AlphanumericTxCodeText.AlphanumericTaxCode
+{
+  key country       as Country,
+  key version       as TaxItemGroupingVersion,
+  key companycode   as CompanyCode,
+  key businessplace as BusinessPlace,
+  key taxcode       as TaxCode,
+      @ObjectModel.text.association: '_AlphanumericTxCodeText'
+      atc_code      as AlphanumericTaxCode,
+      _AlphanumericTxCodeText
+}
+```

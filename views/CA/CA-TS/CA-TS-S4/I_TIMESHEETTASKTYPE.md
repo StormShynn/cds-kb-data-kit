@@ -1,0 +1,77 @@
+---
+name: I_TIMESHEETTASKTYPE
+description: Timesheettasktype
+app_component: CA-TS-S4
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CA
+  - CA-TS
+  - interface-view
+  - component:CA-TS-S4
+  - lob:Cross-Application Components
+---
+# I_TIMESHEETTASKTYPE
+
+**Timesheettasktype**
+
+| Property | Value |
+|---|---|
+| App Component | `CA-TS-S4` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `TimeSheetTaskType` | `tasktype` |
+| `TimeSheetTaskTypeRelevanceCode` | `tasktype_relevance` |
+| `_TimeSheetTaskTypeText` | *Association* |
+| `_TimeSheetTaskTypeRelevance` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_TimeSheetTaskTypeText` | `I_TimeSheetTaskTypeText` | [0..*] |
+| `_TimeSheetTaskTypeRelevance` | `I_TimeSheetTaskTypeRelevance` | [0..1] |
+
+## Source Code
+
+```abap
+@AbapCatalog: { sqlViewName: 'ITIMSHTTASKTYP', compiler.compareFilter: true, preserveKey: true }
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@EndUserText.label: 'Task Type for Timesheet'
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType: { serviceQuality : #A, sizeCategory : #S, dataClass: #CUSTOMIZING }
+@ObjectModel: { representativeKey: 'TimeSheetTaskType', semanticKey: 'TimeSheetTaskType' }
+@AbapCatalog.buffering: { status: #ACTIVE, type: #FULL }
+@Search.searchable: true
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #SEARCHABLE_ENTITY ]
+
+define view I_TimeSheetTaskType
+  as select from tcatx_tasktypes
+  association [0..*] to I_TimeSheetTaskTypeText      as _TimeSheetTaskTypeText      on $projection.TimeSheetTaskType = _TimeSheetTaskTypeText.TimeSheetTaskType
+  association [0..1] to I_TimeSheetTaskTypeRelevance as _TimeSheetTaskTypeRelevance on $projection.TimeSheetTaskTypeRelevanceCode = _TimeSheetTaskTypeRelevance.TimeSheetTaskTypeRelevanceCode
+{
+      @Search: { defaultSearchElement: true, ranking: #HIGH }
+      @ObjectModel.text.association: '_TimeSheetTaskTypeText'
+  key tasktype           as TimeSheetTaskType,
+  
+      @ObjectModel.foreignKey.association: '_TimeSheetTaskTypeRelevance'
+      tasktype_relevance as TimeSheetTaskTypeRelevanceCode,
+      
+      _TimeSheetTaskTypeText,
+      _TimeSheetTaskTypeRelevance
+}
+where
+  datab = '00010101'
+```

@@ -1,0 +1,75 @@
+---
+name: I_LGLCNTNTMCNTNTTYPETXTAPI01
+description: Lglcntntmcntnttypetxtapi 01
+app_component: CM-DOC-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - CM
+  - CM-DOC
+  - interface-view
+  - component:CM-DOC-2CL
+  - lob:Other
+---
+# I_LGLCNTNTMCNTNTTYPETXTAPI01
+
+**Lglcntntmcntnttypetxtapi 01**
+
+| Property | Value |
+|---|---|
+| App Component | `CM-DOC-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `LglCntntMDocContentType` | `LglCntntMDocContentType` |
+| key `Language` | `Language` |
+| `LglCntntMDocContentTypeName` | `LglCntntMDocContentTypeName` |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'ILCMCNTTYPTAPI01'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey:true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #BASIC
+@ObjectModel.dataCategory: #TEXT
+@ObjectModel.representativeKey: 'LglCntntMDocContentType'
+
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+
+@Metadata.ignorePropagatedAnnotations:true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+
+@ObjectModel.supportedCapabilities:[ #SQL_DATA_SOURCE, 
+                                     #CDS_MODELING_DATA_SOURCE, 
+                                     #CDS_MODELING_ASSOCIATION_TARGET,
+                                     #LANGUAGE_DEPENDENT_TEXT ]
+@ObjectModel.modelingPattern: #LANGUAGE_DEPENDENT_TEXT
+
+@EndUserText.label: 'Document Content Type - Text'
+define view I_LglCntntMCntntTypeTxtAPI01
+  as select from I_LglCntntMDocContentTypeText
+{
+
+  key LglCntntMDocContentType,
+
+      @Semantics.language: true
+  key Language,
+
+      @Semantics.text: true
+      LglCntntMDocContentTypeName
+}
+```

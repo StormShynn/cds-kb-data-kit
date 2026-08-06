@@ -1,0 +1,267 @@
+---
+name: I_CNTRLSUPPLIERQUOTATIONITEM
+description: Cntrlsupplierquotationitem
+app_component: MM-PUR-HUB-RFQ-2CL
+software_component: SAPSCORE
+release_state: released
+clean_core_level: A
+system_type: public_cloud
+source_available: true
+tags:
+  - MM
+  - MM-PUR
+  - MM-PUR-HUB
+  - interface-view
+  - supplier
+  - item-level
+  - component:MM-PUR-HUB-RFQ-2CL
+  - lob:Sourcing & Procurement
+  - bo:Supplier
+---
+# I_CNTRLSUPPLIERQUOTATIONITEM
+
+**Cntrlsupplierquotationitem**
+
+| Property | Value |
+|---|---|
+| App Component | `MM-PUR-HUB-RFQ-2CL` |
+| Software Component | `SAPSCORE` |
+| Release State | Released (Level A) |
+| System Type | S/4HANA Cloud Public Edition |
+
+## Fields
+
+| Field | Data Source |
+|---|---|
+| key `CentralSupplierQuotation` | `R_CntrlSupplierQuotationItem.CentralSupplierQuotation` |
+| key `CentralSupplierQuotationItem` | `R_CntrlSupplierQuotationItem.CentralSupplierQuotationItem` |
+| `PurchasingDocumentCategory` | `R_CntrlSupplierQuotationItem.PurchasingDocumentCategory` |
+| `PurchasingDocumentItemText` | `R_CntrlSupplierQuotationItem.PurchasingDocumentItemText` |
+| `Material` | `R_CntrlSupplierQuotationItem.Material` |
+| `PurchasingCentralMaterial` | `R_CntrlSupplierQuotationItem.PurchasingCentralMaterial` |
+| `ProductType` | `ProductType` |
+| `ProductTypeCode` | `R_CntrlSupplierQuotationItem.ProductTypeCode` |
+| `ManufacturerMaterial` | `R_CntrlSupplierQuotationItem.ManufacturerMaterial` |
+| `SupplierMaterialNumber` | `R_CntrlSupplierQuotationItem.SupplierMaterialNumber` |
+| `ManufacturerPartNmbr` | `R_CntrlSupplierQuotationItem.ManufacturerPartNmbr` |
+| `Manufacturer` | `R_CntrlSupplierQuotationItem.Manufacturer` |
+| `MaterialGroup` | `R_CntrlSupplierQuotationItem.MaterialGroup` |
+| `Plant` | `R_CntrlSupplierQuotationItem.Plant` |
+| `ManualDeliveryAddressID` | `R_CntrlSupplierQuotationItem.ManualDeliveryAddressID` |
+| `ReferenceDeliveryAddressID` | `R_CntrlSupplierQuotationItem.ReferenceDeliveryAddressID` |
+| `IncotermsClassification` | `R_CntrlSupplierQuotationItem.IncotermsClassification` |
+| `IncotermsTransferLocation` | `R_CntrlSupplierQuotationItem.IncotermsTransferLocation` |
+| `IncotermsLocation1` | `R_CntrlSupplierQuotationItem.IncotermsLocation1` |
+| `IncotermsLocation2` | `R_CntrlSupplierQuotationItem.IncotermsLocation2` |
+| `RequirementTracking` | `R_CntrlSupplierQuotationItem.RequirementTracking` |
+| `OrderPriceUnit` | `OrderPriceUnit` |
+| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
+| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
+| `OrderQuantityUnit` | `OrderQuantityUnit` |
+| `OrderItemQtyToBaseQtyNmrtr` | `OrderItemQtyToBaseQtyNmrtr` |
+| `OrderItemQtyToBaseQtyDnmntr` | `OrderItemQtyToBaseQtyDnmntr` |
+| `OrderQuantity` | `OrderQuantity` |
+| `PurgDocPriceDate` | `PurgDocPriceDate` |
+| `BaseUnit` | `BaseUnit` |
+| `NetAmount` | `NetAmount` |
+| `GrossAmount` | `GrossAmount` |
+| `EffectiveAmount` | `EffectiveAmount` |
+| `NetPriceAmount` | `NetPriceAmount` |
+| `NetPriceQuantity` | `NetPriceQuantity` |
+| `AddressID` | `AddressID` |
+| `ItemDeliveryAddressID` | `R_CntrlSupplierQuotationItem.ItemDeliveryAddressID` |
+| `DocumentCurrency` | `R_CntrlSupplierQuotationItem.DocumentCurrency` |
+| `PurchaseRequisition` | `R_CntrlSupplierQuotationItem.PurchaseRequisition` |
+| `PurchaseRequisitionItem` | `R_CntrlSupplierQuotationItem.PurchaseRequisitionItem` |
+| `CentralRequestForQuotation` | `R_CntrlSupplierQuotationItem.CentralRequestForQuotation` |
+| `CentralRequestForQuotationItem` | `R_CntrlSupplierQuotationItem.CentralRequestForQuotationItem` |
+| `PurchasingInfoRecord` | `R_CntrlSupplierQuotationItem.PurchasingInfoRecord` |
+| `PurchasingDocumentItemCategory` | `R_CntrlSupplierQuotationItem.PurchasingDocumentItemCategory` |
+| `_CentralSupplierQuotation` | *Association* |
+| `_CentralReqForQuotationItem` | *Association* |
+| `_CntrlSuplrQtanScheduleLine` | *Association* |
+| `_CntrlSupplierQtanItemPricing` | *Association* |
+| `_CntrlSuplrQuotationItemDistr` | *Association* |
+| `_ProductType` | *Association* |
+| `_Plant` | *Association* |
+| `_PurgDocumentCategory` | *Association* |
+| `_BaseUnit` | *Association* |
+| `_OrderQuantityUnit` | *Association* |
+| `_OrderPriceUnit` | *Association* |
+| `_DocumentCurrency` | *Association* |
+| `_PurgDocumentItemCategory` | *Association* |
+| `_IncotermsClassification` | *Association* |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_CentralSupplierQuotation` | `I_CentralSupplierQuotation` | [1..1] |
+| `_CentralReqForQuotationItem` | `I_CentralReqForQuotationItem` | [1..1] |
+| `_CntrlSuplrQtanScheduleLine` | `I_CntrlSuplrQtanScheduleLine` | [0..1] |
+| `_CntrlSupplierQtanItemPricing` | `I_CntrlSupplierQtanItemPricing` | [1..*] |
+| `_CntrlSuplrQuotationItemDistr` | `I_CntrlSuplrQuotationItemDistr` | [0..*] |
+
+## Source Code
+
+```abap
+@AbapCatalog.sqlViewName: 'ICNTRLQTNITM'
+@VDM.viewType: #BASIC
+@EndUserText.label: 'Central Supplier Quotation Item'
+@AbapCatalog.preserveKey: true
+
+@AbapCatalog.compiler.compareFilter: true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.personalData.blocking: #REQUIRED
+
+@ObjectModel:{ representativeKey: 'CentralSupplierQuotationItem',
+               semanticKey: 'CentralSupplierQuotationItem',
+               usageType.dataClass: #TRANSACTIONAL,
+               usageType.serviceQuality: #A,
+               usageType.sizeCategory: #L }
+
+@Metadata.ignorePropagatedAnnotations: true
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.supportedCapabilities:[ #SQL_DATA_SOURCE,
+                                     #CDS_MODELING_DATA_SOURCE,
+                                     #CDS_MODELING_ASSOCIATION_TARGET ]
+define view I_CntrlSupplierQuotationItem
+  as select from R_CntrlSupplierQuotationItem
+
+  association [1..1] to I_CentralSupplierQuotation     as _CentralSupplierQuotation     on  $projection.CentralSupplierQuotation = _CentralSupplierQuotation.CentralSupplierQuotation
+
+
+  association [1..1] to I_CentralReqForQuotationItem   as _CentralReqForQuotationItem   on  $projection.CentralRequestForQuotation     = _CentralReqForQuotationItem.CentralRequestForQuotation
+                                                                                        and $projection.CentralRequestForQuotationItem = _CentralReqForQuotationItem.CentralRequestForQuotationItem
+
+  association [0..1] to I_CntrlSuplrQtanScheduleLine   as _CntrlSuplrQtanScheduleLine   on  $projection.CentralSupplierQuotation     = _CntrlSuplrQtanScheduleLine.CentralSupplierQuotation
+                                                                                        and $projection.CentralSupplierQuotationItem = _CntrlSuplrQtanScheduleLine.CentralSupplierQuotationItem
+                                                                                        and _CntrlSuplrQtanScheduleLine.ScheduleLine = '0001'
+
+  association [1..*] to I_CntrlSupplierQtanItemPricing as _CntrlSupplierQtanItemPricing on  $projection.CentralSupplierQuotation     = _CntrlSupplierQtanItemPricing.CentralSupplierQuotation
+                                                                                        and $projection.CentralSupplierQuotationItem = _CntrlSupplierQtanItemPricing.CentralSupplierQuotationItem
+
+  association [0..*] to I_CntrlSuplrQuotationItemDistr as _CntrlSuplrQuotationItemDistr on  $projection.CentralSupplierQuotation     = _CntrlSuplrQuotationItemDistr.CentralSupplierQuotation
+                                                                                        and $projection.CentralSupplierQuotationItem = _CntrlSuplrQuotationItemDistr.CentralSupplierQuotationItem
+
+{
+      @ObjectModel: { foreignKey.association: '_CentralSupplierQuotation' }
+  key R_CntrlSupplierQuotationItem.CentralSupplierQuotation,
+
+  key R_CntrlSupplierQuotationItem.CentralSupplierQuotationItem,
+
+      @ObjectModel: { foreignKey.association: '_PurgDocumentCategory' }
+      R_CntrlSupplierQuotationItem.PurchasingDocumentCategory,
+      R_CntrlSupplierQuotationItem.PurchasingDocumentItemText,
+
+      //      @ObjectModel: { foreignKey.association: '_Material' }
+      R_CntrlSupplierQuotationItem.Material,
+      R_CntrlSupplierQuotationItem.PurchasingCentralMaterial,
+
+      @ObjectModel.foreignKey.association: '_ProductType'
+      @VDM.lifecycle.status: #DEPRECATED
+      @VDM.lifecycle.successor: 'ProductTypeCode'
+      ProductType,
+      R_CntrlSupplierQuotationItem.ProductTypeCode,
+
+      //      @ObjectModel: { foreignKey.association: '_ManufacturerMaterial' }
+      R_CntrlSupplierQuotationItem.ManufacturerMaterial,
+      R_CntrlSupplierQuotationItem.SupplierMaterialNumber,
+      R_CntrlSupplierQuotationItem.ManufacturerPartNmbr,
+      R_CntrlSupplierQuotationItem.Manufacturer,
+
+      //      @ObjectModel: { foreignKey.association: '_MaterialGroup' }
+      R_CntrlSupplierQuotationItem.MaterialGroup,
+
+      @ObjectModel: { foreignKey.association: '_Plant'}
+      R_CntrlSupplierQuotationItem.Plant,
+      R_CntrlSupplierQuotationItem.ManualDeliveryAddressID,
+      R_CntrlSupplierQuotationItem.ReferenceDeliveryAddressID,
+
+      @ObjectModel: { foreignKey.association: '_IncotermsClassification' }
+      R_CntrlSupplierQuotationItem.IncotermsClassification,
+      R_CntrlSupplierQuotationItem.IncotermsTransferLocation,
+      R_CntrlSupplierQuotationItem.IncotermsLocation1,
+      R_CntrlSupplierQuotationItem.IncotermsLocation2,
+      R_CntrlSupplierQuotationItem.RequirementTracking,
+      @Semantics.unitOfMeasure: true
+      OrderPriceUnit,
+      OrderPriceUnitToOrderUnitNmrtr,
+      OrdPriceUnitToOrderUnitDnmntr,
+
+      @Semantics.unitOfMeasure: true
+      OrderQuantityUnit,
+      OrderItemQtyToBaseQtyNmrtr,
+      OrderItemQtyToBaseQtyDnmntr,
+
+      @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+      @DefaultAggregation: #NONE
+      OrderQuantity,
+
+      PurgDocPriceDate,
+
+      @Semantics.unitOfMeasure: true
+      BaseUnit,
+
+      @Semantics.amount.currencyCode: 'DocumentCurrency'
+      @DefaultAggregation: #NONE
+      NetAmount,
+
+      @Semantics.amount.currencyCode: 'DocumentCurrency'
+      @DefaultAggregation: #NONE
+      GrossAmount,
+
+      @Semantics.amount.currencyCode: 'DocumentCurrency'
+      @DefaultAggregation: #NONE
+      EffectiveAmount,
+
+      @Semantics.amount.currencyCode: 'DocumentCurrency'
+      @DefaultAggregation: #NONE
+      NetPriceAmount,
+
+      @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+      NetPriceQuantity,
+
+      AddressID,
+      R_CntrlSupplierQuotationItem.ItemDeliveryAddressID,
+
+      @Semantics.currencyCode: true
+      @ObjectModel: { foreignKey.association: '_DocumentCurrency' }
+      R_CntrlSupplierQuotationItem.DocumentCurrency,
+      R_CntrlSupplierQuotationItem.PurchaseRequisition,
+      R_CntrlSupplierQuotationItem.PurchaseRequisitionItem,
+      R_CntrlSupplierQuotationItem.CentralRequestForQuotation,
+      R_CntrlSupplierQuotationItem.CentralRequestForQuotationItem,
+      R_CntrlSupplierQuotationItem.PurchasingInfoRecord,
+      R_CntrlSupplierQuotationItem.PurchasingDocumentItemCategory,
+
+      //associations
+      //@ObjectModel.association.type: [#TO_COMPOSITION_ROOT ,#TO_COMPOSITION_PARENT]
+      _CentralSupplierQuotation,
+      //      _Material,
+      _ProductType,
+      //      _MaterialGroup,
+      //      _ManufacturerMaterial,
+      _Plant,
+      //_ManualDeliveryAddress,
+      //_ReferenceDeliveryAddress,
+      _PurgDocumentCategory,
+      _BaseUnit,
+      _OrderQuantityUnit,
+      _OrderPriceUnit,
+      _DocumentCurrency,
+      _CentralReqForQuotationItem,
+      _PurgDocumentItemCategory,
+      _IncotermsClassification,
+      _CntrlSuplrQtanScheduleLine,
+
+      @ObjectModel.association.type: [#TO_COMPOSITION_CHILD]
+      _CntrlSupplierQtanItemPricing,
+
+      @ObjectModel.association.type: [ #TO_COMPOSITION_CHILD ]
+      _CntrlSuplrQuotationItemDistr
+}
+where
+  R_CntrlSupplierQuotationItem.PurchasingDocumentCategory = 'T'
+```

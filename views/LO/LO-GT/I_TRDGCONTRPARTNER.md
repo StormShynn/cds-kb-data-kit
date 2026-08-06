@@ -1,0 +1,62 @@
+---
+name: I_TRDGCONTRPARTNER
+description: Partner of Trading Contract
+app_component: LO-GT
+software_component: SAPSCORE
+release_state: released
+system_type: S/4HANA Cloud Public Edition
+source_available: false
+source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPARTNER')/$value
+semantic_en: Partner of Trading Contract
+tags:
+  - LO
+  - component:LO-GT
+  - contract
+  - interface-view
+  - LO-GT
+  - lob:logistics general
+  - metadata-only
+---
+# I_TRDGCONTRPARTNER
+
+**Partner of Trading Contract**
+
+| Property | Value |
+|---|---|
+| App Component | `LO-GT` |
+| Software Component | `SAPSCORE` |
+| Release State | Released |
+| System Type | S/4HANA Cloud Public Edition |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPARTNER')/$value) |
+
+## Fields
+
+| Field | Type | Description |
+|---|---|---|
+| `TradingContract` | `CHAR(10)` | Trading Contract |
+| `PartnerFunction` | `CHAR(2)` | Partner Function |
+| `PartnerCounter` | `NUMC(3)` | Partner counter |
+| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` | `DATS(8)` | Record Creation Date |
+| `Supplier` | `CHAR(10)` | Account Number of Supplier |
+| `SoldToParty` | `CHAR(10)` | Sold-to Party |
+| `DefaultPartner` | `CHAR(1)` | Default Partner |
+| `ContactPerson` | `NUMC(10)` | Number of Contact Person |
+| `Personnel` | `NUMC(8)` | Personnel Number |
+| `AddressID` | `CHAR(10)` | Address |
+| `TrdgContrPartAddrRefType` | `CHAR(1)` | Address indicator |
+| `ReferenceBusinessPartner` | `CHAR(10)` | Business Partner Number |
+| `BPAddrDeterminationTransaction` | `CHAR(6)` | Business Partner Address Determination |
+| `AddressObjectType` | `CHAR(1)` | Address type (1=Organization, 2=Person, 3=Contact person) |
+| `AddressPersonID` | `CHAR(10)` | Person Number |
+| `BPRefAddressIDForDocSpcfcAddr` | `CHAR(10)` | BP Reference Address Number |
+| `TrdgContrPrtnHierLvlVal` | `NUMC(2)` | Level number within the hierarchy of a Trdg Doc Partner |
+| `NFPartnerIsNaturalPerson` | `CHAR(1)` | Natural Person |
+| `TaxNumberType` | `CHAR(2)` | Tax Number Type |
+| `TrdgContrDelivSchedUnldgPt` | `CHAR(25)` | Unloading Point |
+| `TrdgContrCustHierCat` | `CHAR(1)` | Sales Hierarchy Category |
+| `TrdgContrSuplrHierCat` | `CHAR(1)` | Purchasing Hierarchy Category |
+| `TrdgContrIsHierPrDetnRlvt` | `CHAR(1)` | Relevant for price determination ID |
+| `TrdgContrCustIsRbteRlvt` | `CHAR(1)` | Indicator: Customer Is Rebate-Relevant |
+| `TrdgContrPurgIsSubjToSettlmt` | `CHAR(1)` | Indicator: supplier subject to subseq. settlement accounting |
+| `TrdgContrPartAddrIsDocSpcfc` | `CHAR(1)` | Document-Specific Address Indicator |
