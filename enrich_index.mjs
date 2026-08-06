@@ -24,6 +24,7 @@ import path from 'node:path';
 import { execSync } from 'node:child_process';
 import { listViewFiles, toPathMap } from './scripts/lib/view-files.mjs';
 import { extractFrontmatter, scalar, listBlock } from './scripts/lib/frontmatter.mjs';
+import { parseMdTable } from './scripts/lib/md-table.mjs';
 
 const dataRoot = process.argv[2];
 if (!dataRoot) {
@@ -47,38 +48,13 @@ try {
   console.log('Loaded taxonomy with', Object.keys(taxonomy.tagToKeywords || {}).length, 'tag→keyword maps.');
 } catch { console.log('No taxonomy.json found, skipping taxonomy synonyms.'); }
 
-// Reads the "## Fields" / "## Associations" markdown table under a view's
-// body, if any — used to power coverage-report.html's expandable field list
-// (see view-fields.js below) without re-parsing the .md on every page view.
-// Line-scanned rather than regex-matched across the whole body: a single
-// regex trying to bound "everything up to the next heading" is easy to get
-// wrong across the two different table shapes template.mjs can emit (see
-// its renderFieldsTable) plus the trailing ```abap block some views have
-// right after Associations.
-function parseMdTable(content, heading) {
-  const lines = content.split(/\r?\n/);
-  const headingIdx = lines.findIndex((l) => l.trim() === `## ${heading}`);
-  if (headingIdx === -1) return null;
-
-  const tableLines = [];
-  for (let i = headingIdx + 1; i < lines.length; i++) {
-    const line = lines[i];
-    if (line.trim().startsWith('|')) tableLines.push(line.trim());
-    else if (tableLines.length > 0) break;
-    else if (line.trim() !== '') break;
-  }
-  if (tableLines.length < 2) return null;
-
-  const cells = (line) => line.split('|').slice(1, -1).map((s) => s.trim().replace(/`/g, ''));
-  return { header: cells(tableLines[0]), rows: tableLines.slice(2).map(cells) };
-}
-
 // ── Build one document per view file (source of truth) ──────────────────────
 console.log('Scanning view files...');
 const viewFiles = await listViewFiles(viewsDir);
 
 const docs = [];
 const fieldsMap = {};
+const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo }]
 let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
 
 for (let i = 0; i < viewFiles.length; i++) {
@@ -95,6 +71,26 @@ for (let i = 0; i < viewFiles.length; i++) {
   const bo = (tags.find((t) => t.startsWith('bo:')) || '').slice(3);
   const appComponent = scalar(fm, 'app_component');
   const module = appComponent ? appComponent.split('-')[0] : '';
+
+  // field-index.json: FIELD_NAME -> which views expose it, so a lookup like
+  // "which views have a material code field" resolves straight to a
+  // short list of views instead of scanning all of them. Built from the
+  // same fieldsTable already parsed above — a row is a real field ("Field |
+  // Data Source" or "Field | Type | Description" depending on which shape
+  // renderFieldsTable used), except when its last cell is "*Association*",
+  // which means the row is actually one of the view's associations
+  // (appended to the same table) rather than a data field.
+  if (fieldsTable) {
+    for (const row of fieldsTable.rows) {
+      if (row[row.length - 1] === '*Association*') continue;
+      let fieldName = row[0];
+      const isKey = fieldName.startsWith('key ');
+      if (isKey) fieldName = fieldName.slice(4).trim();
+      if (!fieldName) continue;
+      const key = fieldName.toUpperCase();
+      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo });
+    }
+  }
 
   const label = (content.match(/@EndUserText\.label\s*:\s*'([^']+)'/) || [])[1]?.trim() || '';
   let description = scalar(fm, 'description') || label;
@@ -189,3 +185,23 @@ const fieldsFile = path.join(dataRoot, 'index', 'view-fields.js');
 const fieldsJson = JSON.stringify(fieldsMap);
 await fs.writeFile(fieldsFile, `window.__VIEW_FIELDS__ = ${fieldsJson};\n`, 'utf-8');
 console.log(`Wrote ${fieldsFile} (${(Buffer.byteLength(fieldsJson) / 1024 / 1024).toFixed(1)} MB, ${Object.keys(fieldsMap).length} entries)`);
+
+// ── field-index.json — FIELD_NAME -> [{view, isKey, appComponent, lob, bo}] ─
+// The reverse of view-fields.js: given a field name (e.g. "MATNR" / a
+// business term already resolved to it), look up which views expose it
+// instead of scanning every view's Fields table. Consumers (e.g. an MCP
+// server) needing fuzzy/business-language lookup ("material code" ->
+// MATNR) should resolve the term to a field name themselves (e.g. via
+// taxonomy.json's keyword maps) before querying this index — it's an exact,
+// case-insensitive map, not a search index.
+for (const key of Object.keys(fieldIndex)) {
+  fieldIndex[key].sort((a, b) => a.view.localeCompare(b.view));
+}
+const fieldIndexFile = path.join(dataRoot, 'index', 'field-index.json');
+const fieldIndexOutput = {
+  builtAt: output.builtAt,
+  fieldCount: Object.keys(fieldIndex).length,
+  fields: fieldIndex,
+};
+await fs.writeFile(fieldIndexFile, JSON.stringify(fieldIndexOutput), 'utf-8');
+console.log(`Wrote ${fieldIndexFile} (${Object.keys(fieldIndex).length} distinct field name(s))`);
