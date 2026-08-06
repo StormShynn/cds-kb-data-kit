@@ -11646,5 +11646,205 @@
   "I_WSTSTMRGTYCODEVALDIMN": {
     "modifiedAt": 1781175923740,
     "fetchedAt": "2026-07-06T10:07:43.586Z"
+  },
+  "_DCO_I_ACCOUNTCLASSIFICATION": {
+    "modifiedAt": 1784095924542,
+    "fetchedAt": "2026-08-06T09:40:12.300Z"
+  },
+  "_DCO_I_ACCOUNTACTIVITY": {
+    "modifiedAt": 1784095926865,
+    "fetchedAt": "2026-08-06T09:40:12.300Z"
+  },
+  "_DCO_I_ACCOUNT": {
+    "modifiedAt": 1784095925466,
+    "fetchedAt": "2026-08-06T09:40:12.334Z"
+  },
+  "_DCO_I_ACCOUNTDISPUTE": {
+    "modifiedAt": 1784095926917,
+    "fetchedAt": "2026-08-06T09:40:12.905Z"
+  },
+  "_DCO_I_ACCOUNTDISPUTEVH": {
+    "modifiedAt": 1784095927918,
+    "fetchedAt": "2026-08-06T09:40:12.921Z"
+  },
+  "_DCO_I_ACCOUNTINGDOCUMENT": {
+    "modifiedAt": 1784095927734,
+    "fetchedAt": "2026-08-06T09:40:12.924Z"
+  },
+  "_DCO_I_ACCOUNTPROMISETOPAY": {
+    "modifiedAt": 1784095927236,
+    "fetchedAt": "2026-08-06T09:40:13.521Z"
+  },
+  "_DCO_I_ACCOUNTPROMISETOPAYVH": {
+    "modifiedAt": 1784095925005,
+    "fetchedAt": "2026-08-06T09:40:13.527Z"
+  },
+  "_DCO_I_ACCOUNTTASK": {
+    "modifiedAt": 1784095925520,
+    "fetchedAt": "2026-08-06T09:40:13.569Z"
+  },
+  "_DCO_I_ACCTACCOUNTINGDOCUMENT": {
+    "modifiedAt": 1784095927546,
+    "fetchedAt": "2026-08-06T09:40:14.185Z"
+  },
+  "_DCO_I_ACCTCLASSIFICATIONTEXT": {
+    "modifiedAt": 1784095926664,
+    "fetchedAt": "2026-08-06T09:40:14.216Z"
+  },
+  "_DCO_I_ACCTGDOCUMENTORIGIN": {
+    "modifiedAt": 1784095926739,
+    "fetchedAt": "2026-08-06T09:40:14.239Z"
+  },
+  "_DCO_I_ACTIVITY": {
+    "modifiedAt": 1784095927813,
+    "fetchedAt": "2026-08-06T09:40:14.815Z"
+  },
+  "_DCO_I_ACTIVITYDIRECTION": {
+    "modifiedAt": 1784095926715,
+    "fetchedAt": "2026-08-06T09:40:14.824Z"
+  },
+  "_DCO_I_ACTIVITYDIRECTIONTEXT": {
+    "modifiedAt": 1784095925971,
+    "fetchedAt": "2026-08-06T09:40:14.836Z"
+  },
+  "_DCO_I_ACTIVITYRELATEDDISPUTE": {
+    "modifiedAt": 1784095926412,
+    "fetchedAt": "2026-08-06T09:40:15.369Z"
+  },
+  "_DCO_I_ACTIVITYRESULT": {
+    "modifiedAt": 1784095928222,
+    "fetchedAt": "2026-08-06T09:40:15.399Z"
+  },
+  "_DCO_I_ACTIVITYRESULTTEXT": {
+    "modifiedAt": 1784095927521,
+    "fetchedAt": "2026-08-06T09:40:15.431Z"
+  },
+  "_DCO_I_ACTIVITYTYPETEXT": {
+    "modifiedAt": 1784095925822,
+    "fetchedAt": "2026-08-06T09:40:15.961Z"
+  },
+  "_DCO_I_ACTIVITYTYPE": {
+    "modifiedAt": 1784095925416,
+    "fetchedAt": "2026-08-06T09:40:16.009Z"
+  },
+  "_DCO_I_ACTYRELATEDPROMISETOPAY": {
+    "modifiedAt": 1784095926468,
+    "fetchedAt": "2026-08-06T09:40:16.069Z"
+  },
+  "_DCO_I_ARACCOUNTANTGROUP": {
+    "modifiedAt": 1784095925547,
+    "fetchedAt": "2026-08-06T09:40:16.580Z"
+  },
+  "_DCO_I_BASICRULE": {
+    "modifiedAt": 1784095925086,
+    "fetchedAt": "2026-08-06T09:40:16.615Z"
+  },
+  "_DCO_I_BASICRULENODEASSIGNMENT": {
+    "modifiedAt": 1784095925055,
+    "fetchedAt": "2026-08-06T09:40:16.650Z"
+  },
+  "_DCO_I_BASICRULEVH": {
+    "modifiedAt": 1784095925713,
+    "fetchedAt": "2026-08-06T09:40:17.161Z"
+  },
+  "_DCO_I_BASICRULETEXT": {
+    "modifiedAt": 1784095925291,
+    "fetchedAt": "2026-08-06T09:40:17.178Z"
+  },
+  "_DCO_I_BIZPRTNCATEGORYTEXT": {
+    "modifiedAt": 1784095928325,
+    "fetchedAt": "2026-08-06T09:40:17.248Z"
+  },
+  "_DCO_I_BIZPRTNDUPLICATE": {
+    "modifiedAt": 1784095924567,
+    "fetchedAt": "2026-08-06T09:40:17.768Z"
+  },
+  "_DCO_I_BIZPRTNCOMPANYCODE": {
+    "modifiedAt": 1784095926999,
+    "fetchedAt": "2026-08-06T09:40:17.795Z"
+  },
+  "_DCO_I_BIZPRTNHEADOFFICEVH": {
+    "modifiedAt": 1784095924981,
+    "fetchedAt": "2026-08-06T09:40:17.849Z"
+  },
+  "_DCO_I_BIZPRTNSEGMENTVH": {
+    "modifiedAt": 1784095927415,
+    "fetchedAt": "2026-08-06T09:40:18.372Z"
+  },
+  "_DCO_I_BUSINESSPARTNERBRANCH": {
+    "modifiedAt": 1784095927945,
+    "fetchedAt": "2026-08-06T09:40:18.375Z"
+  },
+  "_DCO_I_BUSINESSPARTNERCATEGORY": {
+    "modifiedAt": 1784095927080,
+    "fetchedAt": "2026-08-06T09:40:18.393Z"
+  },
+  "_DCO_I_BUSINESSPARTNERTYPE": {
+    "modifiedAt": 1784095924769,
+    "fetchedAt": "2026-08-06T09:40:18.945Z"
+  },
+  "_DCO_I_BUSINESSPARTNERSEGMENT": {
+    "modifiedAt": 1784095927762,
+    "fetchedAt": "2026-08-06T09:40:18.949Z"
+  },
+  "_DCO_I_BUSINESSPARTNERTYPETEXT": {
+    "modifiedAt": 1784095925030,
+    "fetchedAt": "2026-08-06T09:40:18.992Z"
+  },
+  "_DCO_I_COLLECTORTEAM": {
+    "modifiedAt": 1784095924795,
+    "fetchedAt": "2026-08-06T09:40:19.519Z"
+  },
+  "_DCO_I_BUSINESSUSERVH": {
+    "modifiedAt": 1784095926973,
+    "fetchedAt": "2026-08-06T09:40:19.567Z"
+  },
+  "_DCO_I_COLLECTORTEAMVH": {
+    "modifiedAt": 1784095927334,
+    "fetchedAt": "2026-08-06T09:40:19.598Z"
+  },
+  "_DCO_I_COMPANYCODE": {
+    "modifiedAt": 1784095926096,
+    "fetchedAt": "2026-08-06T09:40:20.130Z"
+  },
+  "_DCO_I_COMPANYCODETEXT": {
+    "modifiedAt": 1784095927029,
+    "fetchedAt": "2026-08-06T09:40:20.204Z"
+  },
+  "_DCO_I_COMPANYCODEMAPPING": {
+    "modifiedAt": 1784095924877,
+    "fetchedAt": "2026-08-06T09:40:20.341Z"
+  },
+  "_DCO_I_COMPANYCODEVH": {
+    "modifiedAt": 1784095925769,
+    "fetchedAt": "2026-08-06T09:40:20.685Z"
+  },
+  "_DCO_I_DBTCOLLSSEGMENTTEXT": {
+    "modifiedAt": 1784095924692,
+    "fetchedAt": "2026-08-06T09:40:20.883Z"
+  },
+  "_DCO_I_DBTCOLLSBUSINESSPARTNER": {
+    "modifiedAt": 1784095926356,
+    "fetchedAt": "2026-08-06T09:40:20.916Z"
+  },
+  "_DCO_I_DBTCOLLSSEGMENTVH": {
+    "modifiedAt": 1784095927625,
+    "fetchedAt": "2026-08-06T09:40:21.270Z"
+  },
+  "_DCO_I_DCOBPCOCODEASSGMTVH": {
+    "modifiedAt": 1784095925743,
+    "fetchedAt": "2026-08-06T09:40:21.455Z"
+  },
+  "_DCO_I_DEBTCOLLECTIONSSEGMENT": {
+    "modifiedAt": 1784095925687,
+    "fetchedAt": "2026-08-06T09:40:21.467Z"
+  },
+  "_DCO_I_DISPUTE": {
+    "modifiedAt": 1784095927127,
+    "fetchedAt": "2026-08-06T09:40:21.930Z"
+  },
+  "_DCO_I_DISPUTEALLPROCESSSTEP": {
+    "modifiedAt": 1784095924902,
+    "fetchedAt": "2026-08-06T09:40:22.040Z"
   }
 }
