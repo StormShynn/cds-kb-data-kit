@@ -32,29 +32,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WBSElementInternalID` | ✓ | |  | `cast (ps_psp_pnr as fis_wbsint_no_conv preserving type)` |
-| `ValidityStartDate` | ✓ | |  | `valid_from` |
-| `ValidityEndDate` |  | |  | `valid_to` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `OrganizationalChange` |  | |  | `orgl_change` |
-| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |
-| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |
-| `SourceWBSElementInternalID` |  | |  | `srce_ps_psp_pnr` |
-| `SourceProjectInternalID` |  | |  | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |
-| `SourceWBSElementExternalID` |  | | `_SourceWBSElement` | `WBSElementExternalID` |
-| `_OrglChgReassignmentStatus` | | ✓ | | |
-| `_ProfitCtrDerivationSrceType` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_OrglChange` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ProfitCtr` | | ✓ | | |
-| `_ProfitCenterBeforeOrglChange` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WBSElementInternalID` | ✓ | |  | `cast (ps_psp_pnr as fis_wbsint_no_conv preserving type)` |  |  |
+| `ValidityStartDate` | ✓ | |  | `valid_from` |  |  |
+| `ValidityEndDate` |  | |  | `valid_to` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `OrganizationalChange` |  | |  | `orgl_change` |  |  |
+| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |  |  |
+| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |  |  |
+| `SourceWBSElementInternalID` |  | |  | `srce_ps_psp_pnr` |  |  |
+| `SourceProjectInternalID` |  | |  | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |  |  |
+| `SourceWBSElementExternalID` |  | | `_SourceWBSElement` | `WBSElementExternalID` |  |  |
+| `_OrglChgReassignmentStatus` | | ✓ | | | | |
+| `_ProfitCtrDerivationSrceType` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_OrglChange` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ProfitCtr` | | ✓ | | | | |
+| `_ProfitCenterBeforeOrglChange` | | ✓ | | | | |
 
 ## Associations
 

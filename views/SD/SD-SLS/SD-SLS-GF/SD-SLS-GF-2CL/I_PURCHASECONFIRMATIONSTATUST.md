@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseConfirmationStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `PurchaseConfirmationStatusDesc` |  | |  | `bezei` |
-| `_PurchaseConfirmationStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseConfirmationStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PurchaseConfirmationStatusDesc` |  | |  | `bezei` |  |  |
+| `_PurchaseConfirmationStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

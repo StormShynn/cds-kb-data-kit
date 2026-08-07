@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionResourceType` | ✓ | |  |  |
-| `ProductionResourceInternalID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ProductionResourceToolDesc` |  | |  | `cast( case PRT.ProdnRsceToolCategory when 'M' then I_MaterialText.MaterialName when 'E' then I_EquipmentText.EquipmentName when 'S' then I_MiscProdnRsceToolText.MiscProductionResourceToolDesc when 'D' then I_DocumentInfoRecordDesc.DocumentDescription when 'P' then I_MeasuringPoint.MeasuringPointDescription else ' ' end as fhktx preserving type)` |
-| `ProductionResourceTool` |  | |  | `cast( case PRT.ProdnRsceToolCategory when 'M' then PRT.Material when 'E' then PRT.Equipment when 'S' then PRT.MiscProductionResourceTool when 'D' then concat_with_space(concat_with_space(concat_with_space( PRT.DocumentInfoRecord, PRT.DocumentType, 1), PRT.DocumentPart, 1), PRT.DocumentVersion, 1) when 'P' then PRT.MeasuringPoint else ' ' end as pph_fhmnr preserving type)` |
-| `ProdnRsceToolCategory` |  | |  | `cast(PRT.ProdnRsceToolCategory as mpe_fhmar preserving type)` |
-| `DocumentType` |  | |  |  |
-| `DocumentInfoRecord` |  | |  |  |
-| `DocumentVersion` |  | |  |  |
-| `DocumentPart` |  | |  |  |
-| `_ProductionResourceType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionResourceType` | ✓ | |  |  |  |  |
+| `ProductionResourceInternalID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ProductionResourceToolDesc` |  | |  | `cast( case PRT.ProdnRsceToolCategory when 'M' then I_MaterialText.MaterialName when 'E' then I_EquipmentText.EquipmentName when 'S' then I_MiscProdnRsceToolText.MiscProductionResourceToolDesc when 'D' then I_DocumentInfoRecordDesc.DocumentDescription when 'P' then I_MeasuringPoint.MeasuringPointDescription else ' ' end as fhktx preserving type)` |  |  |
+| `ProductionResourceTool` |  | |  | `cast( case PRT.ProdnRsceToolCategory when 'M' then PRT.Material when 'E' then PRT.Equipment when 'S' then PRT.MiscProductionResourceTool when 'D' then concat_with_space(concat_with_space(concat_with_space( PRT.DocumentInfoRecord, PRT.DocumentType, 1), PRT.DocumentPart, 1), PRT.DocumentVersion, 1) when 'P' then PRT.MeasuringPoint else ' ' end as pph_fhmnr preserving type)` |  |  |
+| `ProdnRsceToolCategory` |  | |  | `cast(PRT.ProdnRsceToolCategory as mpe_fhmar preserving type)` |  |  |
+| `DocumentType` |  | |  |  |  |  |
+| `DocumentInfoRecord` |  | |  |  |  |  |
+| `DocumentVersion` |  | |  |  |  |  |
+| `DocumentPart` |  | |  |  |  |  |
+| `_ProductionResourceType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

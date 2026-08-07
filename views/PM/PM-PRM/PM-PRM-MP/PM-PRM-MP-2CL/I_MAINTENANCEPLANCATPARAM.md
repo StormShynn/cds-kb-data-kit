@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenancePlanCategory` | ✓ | |  | `mptyp` |
-| `MaintenancePlanCallObject` |  | |  | `call_type` |
-| `MaintPlanExternalRangeCode` |  | |  | `wpext` |
-| `MaintPlanInternalRangeCode` |  | |  | `wpint` |
-| `MaintPlanIncludeScreenCatCode` |  | |  | `dynnr` |
-| `OrderCategoryScreenTypeCode` |  | |  | `screenty` |
-| `MaintPlanHasContract` |  | |  | `mpcontract` |
-| `MaintCallDteHasSeparateCompltn` |  | |  | `mpconfdate` |
-| `ChangeDocumentCreationIsActive` |  | |  | `mpchanged` |
-| `MaintPlnSchedgRelIsToBeChgDocd` |  | |  | `chdoc_rcal` |
-| `MaintItemCausesAreDisplayed` |  | |  | `show_urkat` |
-| `MaintItemReasonsAreDisplayed` |  | |  | `show_rekat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlanCategory` | ✓ | |  | `mptyp` |  |  |
+| `MaintenancePlanCallObject` |  | |  | `call_type` |  |  |
+| `MaintPlanExternalRangeCode` |  | |  | `wpext` |  |  |
+| `MaintPlanInternalRangeCode` |  | |  | `wpint` |  |  |
+| `MaintPlanIncludeScreenCatCode` |  | |  | `dynnr` |  |  |
+| `OrderCategoryScreenTypeCode` |  | |  | `screenty` |  |  |
+| `MaintPlanHasContract` |  | |  | `mpcontract` |  |  |
+| `MaintCallDteHasSeparateCompltn` |  | |  | `mpconfdate` |  |  |
+| `ChangeDocumentCreationIsActive` |  | |  | `mpchanged` |  |  |
+| `MaintPlnSchedgRelIsToBeChgDocd` |  | |  | `chdoc_rcal` |  |  |
+| `MaintItemCausesAreDisplayed` |  | |  | `show_urkat` |  |  |
+| `MaintItemReasonsAreDisplayed` |  | |  | `show_rekat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

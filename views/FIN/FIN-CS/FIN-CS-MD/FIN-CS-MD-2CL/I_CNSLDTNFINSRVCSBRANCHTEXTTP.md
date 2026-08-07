@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `FinancialServicesBranch` | ✓ | | `_Text` | `FinancialServicesBranch` |
-| `FinancialServicesBranchName` |  | | `_Text` | `FinancialServicesBranchName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinServicesBranchTP` |  | |  | `_FinancialServicesBranch as _FinancialServicesBranch : redirected to parent I_CnsldtnFinServicesBranchTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `FinancialServicesBranch` | ✓ | | `_Text` | `FinancialServicesBranch` |  |  |
+| `FinancialServicesBranchName` |  | | `_Text` | `FinancialServicesBranchName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFinServicesBranchTP` |  | |  | `_FinancialServicesBranch as _FinancialServicesBranch : redirected to parent I_CnsldtnFinServicesBranchTP` |  |  |
 
 ## Source Code
 

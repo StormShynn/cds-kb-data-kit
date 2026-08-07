@@ -32,27 +32,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandMaterialUUID` | ✓ | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `MaterialPlannedDeliveryDurn` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_MaterialSupply` | | ✓ | | |
-| `_RootTP` | | ✓ | | |
-| `_MaterialNumber` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandMaterialUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_MaterialSupply` | | ✓ | | | | |
+| `_RootTP` | | ✓ | | | | |
+| `_MaterialNumber` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

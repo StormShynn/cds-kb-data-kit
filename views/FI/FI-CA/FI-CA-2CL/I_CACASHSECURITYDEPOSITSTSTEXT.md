@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACashSecurityDepositStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l,2 ) as c_status_kk )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CACashSecurityDepositStatusTxt` |  | |  | `cast( ddtext as c_status_text_kk )` |
-| `_CashSecurityDepositStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACashSecurityDepositStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l,2 ) as c_status_kk )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CACashSecurityDepositStatusTxt` |  | |  | `cast( ddtext as c_status_text_kk )` |  |  |
+| `_CashSecurityDepositStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FiscalYear` | ✓ | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYear` | ✓ | |  |  |  |  |
 
 ## Source Code
 

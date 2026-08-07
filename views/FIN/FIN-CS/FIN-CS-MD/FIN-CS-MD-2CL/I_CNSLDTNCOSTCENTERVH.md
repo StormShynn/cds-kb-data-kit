@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |
-| `CostCenter` | ✓ | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `CostCenter` | ✓ | |  |  |  |  |
 
 ## Source Code
 

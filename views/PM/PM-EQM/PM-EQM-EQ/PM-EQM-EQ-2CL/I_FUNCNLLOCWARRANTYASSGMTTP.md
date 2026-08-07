@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalLocation` | ✓ | |  |  |
-| `WarrantyType` | ✓ | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `MasterWarranty` |  | |  |  |
-| `WarrantyStartDate` |  | |  |  |
-| `WarrantyEndDate` |  | |  |  |
-| `WrntyIsInhtdFromSuperiorObject` |  | |  |  |
-| `WrntyIsPassedOnToChildObject` |  | |  |  |
-| `_FunctionalLocation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |  |  |
+| `WarrantyType` | ✓ | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `MasterWarranty` |  | |  |  |  |  |
+| `WarrantyStartDate` |  | |  |  |  |  |
+| `WarrantyEndDate` |  | |  |  |  |  |
+| `WrntyIsInhtdFromSuperiorObject` |  | |  |  |  |  |
+| `WrntyIsPassedOnToChildObject` |  | |  |  |  |  |
+| `_FunctionalLocation` | | ✓ | | | | |
 
 ## Source Code
 

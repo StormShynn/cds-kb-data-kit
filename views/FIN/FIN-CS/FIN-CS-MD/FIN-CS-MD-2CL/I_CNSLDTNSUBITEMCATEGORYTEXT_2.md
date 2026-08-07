@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(_Source.langu as spras preserving type )` |
-| `CnsldtnSubitemCategory` | ✓ | |  | `cast(_Source.sityp as fincs_subitemcategory preserving type )` |
-| `CnsldtnSubitemCategoryText` |  | |  | `cast(_Source.txt as fincs_subitemcategorytext preserving type )` |
-| `_Language` | | ✓ | | |
-| `_SubitemCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_Source.langu as spras preserving type )` |  |  |
+| `CnsldtnSubitemCategory` | ✓ | |  | `cast(_Source.sityp as fincs_subitemcategory preserving type )` |  |  |
+| `CnsldtnSubitemCategoryText` |  | |  | `cast(_Source.txt as fincs_subitemcategorytext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SubitemCategory` | | ✓ | | | | |
 
 ## Associations
 

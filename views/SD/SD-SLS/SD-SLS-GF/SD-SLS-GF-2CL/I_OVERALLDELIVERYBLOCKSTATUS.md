@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OverallDeliveryBlockStatus` | ✓ | |  | `cast ( substring(dd07l.domvalue_l, 1, 1) as lsstk_g preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverallDeliveryBlockStatus` | ✓ | |  | `cast ( substring(dd07l.domvalue_l, 1, 1) as lsstk_g preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

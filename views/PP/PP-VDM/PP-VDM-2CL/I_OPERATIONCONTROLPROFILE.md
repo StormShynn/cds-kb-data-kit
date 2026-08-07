@@ -27,26 +27,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OperationControlProfile` | ✓ | |  | `cast(prof.steus as pph_steus preserving type)` |
-| `OperationExternalProcessing` |  | |  | `cast(prof.lief as pph_lief preserving type)` |
-| `OperationIsProcessedExternally` |  | |  | `cast( case prof.lief when '+' then 'X' when 'X' then 'X' else '' end as flg_frd preserving type)` |
-| `OperationIsProcessedInternally` |  | |  | `cast( case prof.lief when ' ' then 'X' when 'X' then 'X' else '' end as ps_workact preserving type)` |
-| `OperationIsMilestone` |  | |  | `cast( case prof.ruek when '1' then 'X' else '' end as flg_mst preserving type)` |
-| `ConfirmationIsRequired` |  | |  | `cast( case prof.ruek when '2' then 'X' else '' end as pph_confisrequired preserving type)` |
-| `ConfirmationIsNotPossible` |  | |  | `cast( case prof.ruek when '3' then 'X' else '' end as pph_confisnotpossible preserving type)` |
-| `ConfirmationIsOptional` |  | |  | `cast( case prof.ruek when '' then 'X' else '' end as pph_confisoptional preserving type)` |
-| `OperationIsScheduled` |  | |  | `term` |
-| `OperationIsPrinted` |  | |  | `vrgd` |
-| `OperationIsIncludedInCosting` |  | |  | `kalkz` |
-| `OperationIsReworkOperation` |  | |  | `rework` |
-| `GRIsPostedAutomatically` |  | |  | `autwe` |
-| `CapacityRequirementsAreDtmnd` |  | |  | `kapa` |
-| `InspCharacteristicIsRequired` |  | |  | `mrkkz` |
-| `OperationIsNotMESRelevant` |  | |  | `not_mes_rel` |
-| `_Text` | | ✓ | | |
-| `_OperationExternalProcessing` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OperationControlProfile` | ✓ | |  | `cast(prof.steus as pph_steus preserving type)` |  |  |
+| `OperationExternalProcessing` |  | |  | `cast(prof.lief as pph_lief preserving type)` |  |  |
+| `OperationIsProcessedExternally` |  | |  | `cast( case prof.lief when '+' then 'X' when 'X' then 'X' else '' end as flg_frd preserving type)` |  |  |
+| `OperationIsProcessedInternally` |  | |  | `cast( case prof.lief when ' ' then 'X' when 'X' then 'X' else '' end as ps_workact preserving type)` |  |  |
+| `OperationIsMilestone` |  | |  | `cast( case prof.ruek when '1' then 'X' else '' end as flg_mst preserving type)` |  |  |
+| `ConfirmationIsRequired` |  | |  | `cast( case prof.ruek when '2' then 'X' else '' end as pph_confisrequired preserving type)` |  |  |
+| `ConfirmationIsNotPossible` |  | |  | `cast( case prof.ruek when '3' then 'X' else '' end as pph_confisnotpossible preserving type)` |  |  |
+| `ConfirmationIsOptional` |  | |  | `cast( case prof.ruek when '' then 'X' else '' end as pph_confisoptional preserving type)` |  |  |
+| `OperationIsScheduled` |  | |  | `term` |  |  |
+| `OperationIsPrinted` |  | |  | `vrgd` |  |  |
+| `OperationIsIncludedInCosting` |  | |  | `kalkz` |  |  |
+| `OperationIsReworkOperation` |  | |  | `rework` |  |  |
+| `GRIsPostedAutomatically` |  | |  | `autwe` |  |  |
+| `CapacityRequirementsAreDtmnd` |  | |  | `kapa` |  |  |
+| `InspCharacteristicIsRequired` |  | |  | `mrkkz` |  |  |
+| `OperationIsNotMESRelevant` |  | |  | `not_mes_rel` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_OperationExternalProcessing` | | ✓ | | | | |
 
 ## Associations
 

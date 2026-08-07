@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryValuationArea` | ✓ | |  | `valuation_area` |
-| `TreasuryValuationClass` | ✓ | |  | `cast(TreasuryValuationClassText.valuation_class as ftr_gen_valuation_class preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `TreasuryValuationClassName` |  | |  | `cast(TreasuryValuationClassText.val_class_name as ftr_gen_valuation_class_name preserving type )` |
-| `_TreasuryValuationClass` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_TreasuryValuationArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryValuationArea` | ✓ | |  | `valuation_area` |  |  |
+| `TreasuryValuationClass` | ✓ | |  | `cast(TreasuryValuationClassText.valuation_class as ftr_gen_valuation_class preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TreasuryValuationClassName` |  | |  | `cast(TreasuryValuationClassText.val_class_name as ftr_gen_valuation_class_name preserving type )` |  |  |
+| `_TreasuryValuationClass` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_TreasuryValuationArea` | | ✓ | | | | |
 
 ## Associations
 

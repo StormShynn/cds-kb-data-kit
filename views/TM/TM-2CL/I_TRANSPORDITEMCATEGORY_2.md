@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdItemCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 3) as /scmtms/item_category preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 3) as /scmtms/item_category preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

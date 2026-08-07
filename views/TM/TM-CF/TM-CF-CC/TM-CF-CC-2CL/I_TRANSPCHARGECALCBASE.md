@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChrgCalcBaseUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tcc_calc_base_uuid preserving type )` |
-| `TranspChrgCalcBaseNodeUUID` |  | |  | `cast(node_key as /scmtms/vdm_tcc_cb_node_uuid preserving type )` |
-| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type)` |
-| `TranspChargeElementUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_element_uuid preserving type)` |
-| `TransportationCalculationBase` |  | |  | `clcbas_cd025_i` |
-| `TranspScaleItemQuantityUnit` |  | |  | `sitm1_qty_unit_c` |
-| `TranspScaleItemQuantity` |  | |  | `cast(sitm1_qty_value as /scmtms/vdm_tcc_scale_qty preserving type)` |
-| `TranspScaleItemCurrency` |  | |  | `sitm1_currcode016` |
-| `TranspScaleItemAmount` |  | |  | `cast( cast( sitm1_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_sc_item_amount )` |
-| `TranspScaleItemQtyChar` |  | |  | `cast(sitm1_qty_value_chr as /scmtms/vdm_tcc_scale_qty_char preserving type )` |
-| `TranspScaleItemQtyIsNumeric` |  | |  | `cast(sitm1_qty_is_num as /scmtms/vdm_sc_itm_qty_is_num preserving type )` |
-| `TranspScaleItemQtyIsCurrency` |  | |  | `cast(sitm1_qty_is_curr as /scmtms/vdm_sc_itm_qty_is_curr preserving type )` |
-| `TranspDataSourceQtyUnit` |  | |  | `cast(dsrc_qty_unit_c as /scmtms/vdm_tcc_dsrc_qty_unit preserving type )` |
-| `TranspDataSourceQuantity` |  | |  | `cast(dsrc_qty_value as /scmtms/vdm_tcc_dsrc_qty preserving type)` |
-| `TranspDataSourceCurrency` |  | |  | `cast(dsrc_currcode016 as /scmtms/vdm_tcc_dsrc_currency preserving type )` |
-| `TranspDataSourceAmount` |  | |  | `cast( cast( dsrc_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tcc_dsrc_amount )` |
-| `TranspDataSourceQtyChar` |  | |  | `cast(dsrc_qty_value_chr as /scmtms/vdm_tcc_dsrc_qty_char preserving type )` |
-| `TranspDataSourceQtyIsNumeric` |  | |  | `cast(dsrc_qty_is_num as /scmtms/vdm_dsrc_qty_is_num preserving type )` |
-| `TranspDataSourceQtyIsCurrency` |  | |  | `cast(dsrc_qty_is_curr as /scmtms/vdm_dsrc_qty_is_curr preserving type )` |
-| `_TransportationCharge` | | ✓ | | |
-| `_TranspCalculationBase` | | ✓ | | |
-| `_TranspScaleItemQuantityUnit` | | ✓ | | |
-| `_TranspDataSourceQtyUnit` | | ✓ | | |
-| `_TranspScaleItemCurrency` | | ✓ | | |
-| `_TranspDataSourceCurrency` | | ✓ | | |
-| `_TransportationChargeElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChrgCalcBaseUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tcc_calc_base_uuid preserving type )` |  |  |
+| `TranspChrgCalcBaseNodeUUID` |  | |  | `cast(node_key as /scmtms/vdm_tcc_cb_node_uuid preserving type )` |  |  |
+| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type)` |  |  |
+| `TranspChargeElementUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_element_uuid preserving type)` |  |  |
+| `TransportationCalculationBase` |  | |  | `clcbas_cd025_i` |  |  |
+| `TranspScaleItemQuantityUnit` |  | |  | `sitm1_qty_unit_c` |  |  |
+| `TranspScaleItemQuantity` |  | |  | `cast(sitm1_qty_value as /scmtms/vdm_tcc_scale_qty preserving type)` |  |  |
+| `TranspScaleItemCurrency` |  | |  | `sitm1_currcode016` |  |  |
+| `TranspScaleItemAmount` |  | |  | `cast( cast( sitm1_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_sc_item_amount )` |  |  |
+| `TranspScaleItemQtyChar` |  | |  | `cast(sitm1_qty_value_chr as /scmtms/vdm_tcc_scale_qty_char preserving type )` |  |  |
+| `TranspScaleItemQtyIsNumeric` |  | |  | `cast(sitm1_qty_is_num as /scmtms/vdm_sc_itm_qty_is_num preserving type )` |  |  |
+| `TranspScaleItemQtyIsCurrency` |  | |  | `cast(sitm1_qty_is_curr as /scmtms/vdm_sc_itm_qty_is_curr preserving type )` |  |  |
+| `TranspDataSourceQtyUnit` |  | |  | `cast(dsrc_qty_unit_c as /scmtms/vdm_tcc_dsrc_qty_unit preserving type )` |  |  |
+| `TranspDataSourceQuantity` |  | |  | `cast(dsrc_qty_value as /scmtms/vdm_tcc_dsrc_qty preserving type)` |  |  |
+| `TranspDataSourceCurrency` |  | |  | `cast(dsrc_currcode016 as /scmtms/vdm_tcc_dsrc_currency preserving type )` |  |  |
+| `TranspDataSourceAmount` |  | |  | `cast( cast( dsrc_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tcc_dsrc_amount )` |  |  |
+| `TranspDataSourceQtyChar` |  | |  | `cast(dsrc_qty_value_chr as /scmtms/vdm_tcc_dsrc_qty_char preserving type )` |  |  |
+| `TranspDataSourceQtyIsNumeric` |  | |  | `cast(dsrc_qty_is_num as /scmtms/vdm_dsrc_qty_is_num preserving type )` |  |  |
+| `TranspDataSourceQtyIsCurrency` |  | |  | `cast(dsrc_qty_is_curr as /scmtms/vdm_dsrc_qty_is_curr preserving type )` |  |  |
+| `_TransportationCharge` | | ✓ | | | | |
+| `_TranspCalculationBase` | | ✓ | | | | |
+| `_TranspScaleItemQuantityUnit` | | ✓ | | | | |
+| `_TranspDataSourceQtyUnit` | | ✓ | | | | |
+| `_TranspScaleItemCurrency` | | ✓ | | | | |
+| `_TranspDataSourceCurrency` | | ✓ | | | | |
+| `_TransportationChargeElement` | | ✓ | | | | |
 
 ## Associations
 

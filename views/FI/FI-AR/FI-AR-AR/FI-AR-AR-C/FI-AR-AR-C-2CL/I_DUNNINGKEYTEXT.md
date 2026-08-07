@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DunningKey` | ✓ | |  | `cast( mschl as farp_mschl )` |
-| `Language` | ✓ | |  | `spras` |
-| `MaximumDunningLevelDescription` |  | |  | `cast( text1 as farp_text1_040a )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DunningKey` | ✓ | |  | `cast( mschl as farp_mschl )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaximumDunningLevelDescription` |  | |  | `cast( text1 as farp_text1_040a )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

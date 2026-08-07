@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostBreakdownStructure` | ✓ | |  |  |
-| `CostBreakdownComponent` | ✓ | |  |  |
-| `CostBreakdownComponentSequence` |  | |  |  |
-| `IncludeInInventory` |  | |  |  |
-| `IncludeInCOGS` |  | |  |  |
-| `_Structure` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_CostBreakdownStructureText` | | ✓ | | |
-| `_CostComponentHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostBreakdownStructure` | ✓ | |  |  |  |  |
+| `CostBreakdownComponent` | ✓ | |  |  |  |  |
+| `CostBreakdownComponentSequence` |  | |  |  |  |  |
+| `IncludeInInventory` |  | |  |  |  |  |
+| `IncludeInCOGS` |  | |  |  |  |  |
+| `_Structure` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_CostBreakdownStructureText` | | ✓ | | | | |
+| `_CostComponentHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

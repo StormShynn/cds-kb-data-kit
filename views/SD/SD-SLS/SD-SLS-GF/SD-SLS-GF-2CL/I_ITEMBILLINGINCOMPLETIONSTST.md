@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ItemBillingIncompletionStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `ItemBillingIncompletionStsDesc` |  | |  | `bezei` |
-| `_ItemBillingIncompletionStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ItemBillingIncompletionStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ItemBillingIncompletionStsDesc` |  | |  | `bezei` |  |  |
+| `_ItemBillingIncompletionStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

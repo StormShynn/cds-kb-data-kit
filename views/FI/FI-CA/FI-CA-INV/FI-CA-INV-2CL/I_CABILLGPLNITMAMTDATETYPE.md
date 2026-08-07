@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnItemAmountDateType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_amount_date_type_kk preserving type )` |
-| `_CABillgPlnItmAmtDateTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnItemAmountDateType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_amount_date_type_kk preserving type )` |  |  |
+| `_CABillgPlnItmAmtDateTypeText` | | ✓ | | | | |
 
 ## Associations
 

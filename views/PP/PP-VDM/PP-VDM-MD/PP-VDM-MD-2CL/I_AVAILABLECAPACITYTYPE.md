@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AvailableCapacityType` | ✓ | |  | `cast(typ.versn as availablecapacitytype preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AvailableCapacityType` | ✓ | |  | `cast(typ.versn as availablecapacitytype preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

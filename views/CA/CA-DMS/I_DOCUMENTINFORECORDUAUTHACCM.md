@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LogAccMObjectID` |  | |  |  |
-| `LogAccMActivitySecureID` |  | |  |  |
-| `LogAccMActivityRoleID` |  | |  |  |
-| `LogAccMUserAuthznObject` |  | |  |  |
-| `LogAccMUserAuthznField` |  | |  |  |
-| `LogAccMUserAuthznFrom` |  | |  |  |
-| `LogAccMUserEntityType` |  | |  |  |
-| `LogAccMUserEntityID` |  | |  |  |
-| `LogAccMObjectType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `UserID` |  | |  |  |
-| `LogAccMReadActivityIsEnabled` |  | |  |  |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_LogAccMActvActyGrpProfile` | | ✓ | | |
-| `_LogAccMObjSecureIDAssgmt` | | ✓ | | |
-| `_LogAccMUsrGroupUsrAssgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LogAccMObjectID` |  | |  |  |  |  |
+| `LogAccMActivitySecureID` |  | |  |  |  |  |
+| `LogAccMActivityRoleID` |  | |  |  |  |  |
+| `LogAccMUserAuthznObject` |  | |  |  |  |  |
+| `LogAccMUserAuthznField` |  | |  |  |  |  |
+| `LogAccMUserAuthznFrom` |  | |  |  |  |  |
+| `LogAccMUserEntityType` |  | |  |  |  |  |
+| `LogAccMUserEntityID` |  | |  |  |  |  |
+| `LogAccMObjectType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `UserID` |  | |  |  |  |  |
+| `LogAccMReadActivityIsEnabled` |  | |  |  |  |  |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_LogAccMActvActyGrpProfile` | | ✓ | | | | |
+| `_LogAccMObjSecureIDAssgmt` | | ✓ | | | | |
+| `_LogAccMUsrGroupUsrAssgmt` | | ✓ | | | | |
 
 ## Source Code
 

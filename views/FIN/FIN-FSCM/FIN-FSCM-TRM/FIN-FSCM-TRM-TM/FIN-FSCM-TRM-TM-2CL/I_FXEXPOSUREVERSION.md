@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FXExposureVersionUUID` | ✓ | |  | `fx_exposure_v_uuid` |
-| `ForeignExchangeExposureVersion` |  | |  | `fx_exposure_version_nr` |
-| `FXExposureUUID` |  | |  | `fx_exposure_uuid` |
-| `ForeignExchangeExposure` |  | |  | `fx_exposure_id` |
-| `FXExposureType` |  | |  | `fx_exposure_type` |
-| `CompanyCode` |  | |  | `company_code` |
-| `Portfolio` |  | |  | `portfolio` |
-| `CostCenter` |  | |  | `cost_center` |
-| `ProfitCenter` |  | |  | `profit_center` |
-| `Country` |  | |  | `country` |
-| `WBSElementInternalID` |  | |  | `wbs_element` |
-| `OnBehalfOfCompany` |  | |  | `on_behalf_of_comp_code` |
-| `Segment` |  | |  | `segment` |
-| `FXExposureValidFromDate` |  | |  | `valid_from` |
-| `FXExposureDueDate` |  | |  | `due_date` |
-| `FXExposureAmountInRiskCurrency` |  | |  | `amount` |
-| `FXExposureRiskCurrency` |  | |  | `risk_currency` |
-| `FXExposureTargetCurrency` |  | |  | `target_currency` |
-| `FXExposureDirection` |  | |  | `direction` |
-| `FXExposureStatus` |  | |  | `status` |
-| `FXExposureExternalID` |  | |  | `external_id` |
-| `FXExposureCreationMode` |  | |  | `fx_exposure_creation_mode` |
-| `FXExposureCreatedBy` |  | |  | `createdby` |
-| `FXExposureCreatedAtDteTme` |  | |  | `createdat` |
-| `FXExposureLastChangedBy` |  | |  | `lastchangedby` |
-| `FXExposureLastChangedAtDteTme` |  | |  | `lastchangedat` |
-| `LocalLastChangeDateTime` |  | |  | `local_last_change_datetime` |
-| `ChangeDocObject` |  | |  | `changedoc_object_id` |
-| `FXExposureStsChgReasonText` |  | |  | `exp_status_change_reason` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FXExposureVersionUUID` | ✓ | |  | `fx_exposure_v_uuid` |  |  |
+| `ForeignExchangeExposureVersion` |  | |  | `fx_exposure_version_nr` |  |  |
+| `FXExposureUUID` |  | |  | `fx_exposure_uuid` |  |  |
+| `ForeignExchangeExposure` |  | |  | `fx_exposure_id` |  |  |
+| `FXExposureType` |  | |  | `fx_exposure_type` |  |  |
+| `CompanyCode` |  | |  | `company_code` |  |  |
+| `Portfolio` |  | |  | `portfolio` |  |  |
+| `CostCenter` |  | |  | `cost_center` |  |  |
+| `ProfitCenter` |  | |  | `profit_center` |  |  |
+| `Country` |  | |  | `country` |  |  |
+| `WBSElementInternalID` |  | |  | `wbs_element` |  |  |
+| `OnBehalfOfCompany` |  | |  | `on_behalf_of_comp_code` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `FXExposureValidFromDate` |  | |  | `valid_from` |  |  |
+| `FXExposureDueDate` |  | |  | `due_date` |  |  |
+| `FXExposureAmountInRiskCurrency` |  | |  | `amount` |  |  |
+| `FXExposureRiskCurrency` |  | |  | `risk_currency` |  |  |
+| `FXExposureTargetCurrency` |  | |  | `target_currency` |  |  |
+| `FXExposureDirection` |  | |  | `direction` |  |  |
+| `FXExposureStatus` |  | |  | `status` |  |  |
+| `FXExposureExternalID` |  | |  | `external_id` |  |  |
+| `FXExposureCreationMode` |  | |  | `fx_exposure_creation_mode` |  |  |
+| `FXExposureCreatedBy` |  | |  | `createdby` |  |  |
+| `FXExposureCreatedAtDteTme` |  | |  | `createdat` |  |  |
+| `FXExposureLastChangedBy` |  | |  | `lastchangedby` |  |  |
+| `FXExposureLastChangedAtDteTme` |  | |  | `lastchangedat` |  |  |
+| `LocalLastChangeDateTime` |  | |  | `local_last_change_datetime` |  |  |
+| `ChangeDocObject` |  | |  | `changedoc_object_id` |  |  |
+| `FXExposureStsChgReasonText` |  | |  | `exp_status_change_reason` |  |  |
 
 ## Source Code
 

@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `ChartOfAccounts` | ✓ | | `_Text` | `ChartOfAccounts` |
-| `GLAccount` | ✓ | | `_Text` | `GLAccount` |
-| `GLAccountName` |  | | `_Text` | `GLAccountName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnGLAccountTP` |  | |  | `_GLAccount as _GLAccount : redirected to parent I_CnsldtnGLAccountTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `ChartOfAccounts` | ✓ | | `_Text` | `ChartOfAccounts` |  |  |
+| `GLAccount` | ✓ | | `_Text` | `GLAccount` |  |  |
+| `GLAccountName` |  | | `_Text` | `GLAccountName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnGLAccountTP` |  | |  | `_GLAccount as _GLAccount : redirected to parent I_CnsldtnGLAccountTP` |  |  |
 
 ## Source Code
 

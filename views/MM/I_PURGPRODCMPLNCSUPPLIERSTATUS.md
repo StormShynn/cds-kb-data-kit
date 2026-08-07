@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgProdCmplncSupplierStatus` | ✓ | |  | `cast( dd07l.domvalue_l as mmpur_pc_status_pcs )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgProdCmplncSupplierStatus` | ✓ | |  | `cast( dd07l.domvalue_l as mmpur_pc_status_pcs )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DebitMemoRequest` | ✓ | |  |  |
-| `DebitMemoRequestItem` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionBaseAmount` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionBaseQuantity` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `DebitMemoRequestType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_DebitMemoRequest` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |  |  |
+| `DebitMemoRequestItem` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionBaseAmount` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionBaseQuantity` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `DebitMemoRequestType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_DebitMemoRequest` | | ✓ | | | | |
 
 ## Source Code
 

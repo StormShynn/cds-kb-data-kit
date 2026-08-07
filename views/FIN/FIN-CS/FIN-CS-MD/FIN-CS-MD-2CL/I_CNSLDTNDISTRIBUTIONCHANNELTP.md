@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DistributionChannel` | ✓ | | `_CnsldtnDistributionChannel` | `DistributionChannel` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnDistributionChannel` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnDistrChannelTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnDistrChannelTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DistributionChannel` | ✓ | | `_CnsldtnDistributionChannel` | `DistributionChannel` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnDistributionChannel` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnDistrChannelTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnDistrChannelTextTP` |  |  |
 
 ## Source Code
 

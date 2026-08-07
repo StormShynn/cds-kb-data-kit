@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `LegalForm` | ✓ | |  | `legal_enty` |
-| `LegalFormShortName` |  | |  | `textshort` |
-| `LegalFormDescription` |  | |  | `textlong` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `LegalForm` | ✓ | |  | `legal_enty` | `CHAR(2)` | BP: Legal form of organization |
+| `LegalFormShortName` |  | |  | `textshort` | `CHAR(15)` | Short name |
+| `LegalFormDescription` |  | |  | `textlong` | `CHAR(40)` | Description |
 
 ## Source Code
 

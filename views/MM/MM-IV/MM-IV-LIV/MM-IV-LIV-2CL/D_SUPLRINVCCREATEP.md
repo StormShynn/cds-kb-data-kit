@@ -27,81 +27,81 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoiceIsCreditMemo` |  | |  | `mmiv_is_credit_memo` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `DocumentDate` |  | |  | `bldat` |
-| `PostingDate` |  | |  | `budat` |
-| `SupplierInvoiceIDByInvcgParty` |  | |  | `xblnr1` |
-| `InvoicingParty` |  | |  | `lifre` |
-| `DocumentCurrency` |  | |  | `waers` |
-| `rmwwr` |  | |  | `} InvoiceGrossAmount : rmwwr` |
-| `AccountingDocumentType` |  | |  | `blart` |
-| `InvoiceReceiptDate` |  | |  | `reindat` |
-| `ExchangeRate` |  | |  | `fis_exchange_rate` |
-| `AssignmentReference` |  | |  | `dzuonr` |
-| `InvoiceReference` |  | |  | `awref_reb` |
-| `InvoiceReferenceFiscalYear` |  | |  | `rebzj` |
-| `BusinessArea` |  | |  | `gsber` |
-| `SuplrInvcDebitCrdtCodeDelivery` |  | |  | `xrechl` |
-| `SuplrInvcDebitCrdtCodeReturns` |  | |  | `xrechr` |
-| `SupplierInvoiceStatus` |  | |  | `rbstat` |
-| `ReconciliationAccount` |  | |  | `hkont` |
-| `TaxIsCalculatedAutomatically` |  | |  | `xmwst` |
-| `TaxDeterminationDate` |  | |  | `txdat` |
-| `TaxReportingDate` |  | |  | `vatdate` |
-| `TaxFulfillmentDate` |  | |  | `fot_fulfilldate` |
-| `PaymentTerms` |  | |  | `dzterm` |
-| `DueCalculationBaseDate` |  | |  | `dzfbdt` |
-| `CashDiscount1Days` |  | |  | `dzbd1t` |
-| `CashDiscount1Percent` |  | |  | `dzbd1p` |
-| `CashDiscount2Days` |  | |  | `dzbd2t` |
-| `CashDiscount2Percent` |  | |  | `dzbd2p` |
-| `NetPaymentDays` |  | |  | `dzbd3t` |
-| `PaymentBlockingReason` |  | |  | `dzlspr` |
-| `wskto_cs` |  | |  | `} ManualCashDiscount : wskto_cs` |
-| `PaymentMethod` |  | |  | `dzlsch` |
-| `PaymentMethodSupplement` |  | |  | `uzawe` |
-| `StateCentralBankPaymentReason` |  | |  | `lzbkz` |
-| `SupplyingCountry` |  | |  | `landl` |
-| `PaymentReference` |  | |  | `kidno` |
-| `FixedCashDiscount` |  | |  | `dzbfix` |
-| `PaytSlipWthRefSubscriber` |  | |  | `esrnr` |
-| `PaytSlipWthRefCheckDigit` |  | |  | `esrpz` |
-| `PaytSlipWthRefReference` |  | |  | `esrre` |
-| `BPBankAccountInternalID` |  | |  | `bvtyp` |
-| `HouseBank` |  | |  | `hbkid` |
-| `HouseBankAccount` |  | |  | `hktid` |
-| `IBAN` |  | |  | `iban` |
-| `OneTimeAcctCntrySpecificRef1` |  | |  | `glo_log_ref1_ot` |
-| `PaymentReason` |  | |  | `farp_payt_rsn` |
-| `DocumentHeaderText` |  | |  | `bktxt` |
-| `SupplierPostingLineItemText` |  | |  | `sgtxt` |
-| `beznk` |  | |  | `} UnplannedDeliveryCost : beznk` |
-| `UnplannedDeliveryCostTaxCode` |  | |  | `mwskz_mrm1` |
-| `UnplndDelivCostTaxJurisdiction` |  | |  | `txjcd` |
-| `UnplndDeliveryCostTaxCountry` |  | |  | `fot_tax_country` |
-| `IsEUTriangularDeal` |  | |  | `xegdr` |
-| `DeliveryOfGoodsReportingCntry` |  | |  | `egmld_bsez` |
-| `BusinessPlace` |  | |  | `bupla` |
-| `BusinessSectionCode` |  | |  | `secco` |
-| `JrnlEntryCntrySpecificRef1` |  | |  | `fac_glo_ref1_hd` |
-| `JrnlEntryCntrySpecificDate1` |  | |  | `fac_glo_dat1_hd` |
-| `JrnlEntryCntrySpecificRef2` |  | |  | `fac_glo_ref2_hd` |
-| `JrnlEntryCntrySpecificDate2` |  | |  | `fac_glo_dat2_hd` |
-| `JrnlEntryCntrySpecificRef3` |  | |  | `fac_glo_ref3_hd` |
-| `JrnlEntryCntrySpecificDate3` |  | |  | `fac_glo_dat3_hd` |
-| `JrnlEntryCntrySpecificRef4` |  | |  | `fac_glo_ref4_hd` |
-| `JrnlEntryCntrySpecificDate4` |  | |  | `fac_glo_dat4_hd` |
-| `JrnlEntryCntrySpecificRef5` |  | |  | `fac_glo_ref5_hd` |
-| `JrnlEntryCntrySpecificDate5` |  | |  | `fac_glo_dat5_hd` |
-| `JrnlEntryCntrySpecificBP1` |  | |  | `fac_glo_bp1_hd` |
-| `JrnlEntryCntrySpecificBP2` |  | |  | `fac_glo_bp2_hd` |
-| `D_SuplrInvcCreatePOItemP` |  | |  | `_ItemsWithPOReference : composition [0..*] of D_SuplrInvcCreatePOItemP` |
-| `D_SuplrInvcCreateGLItemP` |  | |  | `_GLItems : composition [0..*] of D_SuplrInvcCreateGLItemP` |
-| `D_SuplrInvcCreateTaxP` |  | |  | `_Taxes : composition [0..*] of D_SuplrInvcCreateTaxP` |
-| `D_SuplrInvcCreateWithTaxP` |  | |  | `_WithholdingTaxes : composition [0..*] of D_SuplrInvcCreateWithTaxP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoiceIsCreditMemo` |  | |  | `mmiv_is_credit_memo` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `DocumentDate` |  | |  | `bldat` |  |  |
+| `PostingDate` |  | |  | `budat` |  |  |
+| `SupplierInvoiceIDByInvcgParty` |  | |  | `xblnr1` |  |  |
+| `InvoicingParty` |  | |  | `lifre` |  |  |
+| `DocumentCurrency` |  | |  | `waers` |  |  |
+| `InvoiceGrossAmount` |  | |  | `rmwwr` |  |  |
+| `AccountingDocumentType` |  | |  | `blart` |  |  |
+| `InvoiceReceiptDate` |  | |  | `reindat` |  |  |
+| `ExchangeRate` |  | |  | `fis_exchange_rate` |  |  |
+| `AssignmentReference` |  | |  | `dzuonr` |  |  |
+| `InvoiceReference` |  | |  | `awref_reb` |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  | `rebzj` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `SuplrInvcDebitCrdtCodeDelivery` |  | |  | `xrechl` |  |  |
+| `SuplrInvcDebitCrdtCodeReturns` |  | |  | `xrechr` |  |  |
+| `SupplierInvoiceStatus` |  | |  | `rbstat` |  |  |
+| `ReconciliationAccount` |  | |  | `hkont` |  |  |
+| `TaxIsCalculatedAutomatically` |  | |  | `xmwst` |  |  |
+| `TaxDeterminationDate` |  | |  | `txdat` |  |  |
+| `TaxReportingDate` |  | |  | `vatdate` |  |  |
+| `TaxFulfillmentDate` |  | |  | `fot_fulfilldate` |  |  |
+| `PaymentTerms` |  | |  | `dzterm` |  |  |
+| `DueCalculationBaseDate` |  | |  | `dzfbdt` |  |  |
+| `CashDiscount1Days` |  | |  | `dzbd1t` |  |  |
+| `CashDiscount1Percent` |  | |  | `dzbd1p` |  |  |
+| `CashDiscount2Days` |  | |  | `dzbd2t` |  |  |
+| `CashDiscount2Percent` |  | |  | `dzbd2p` |  |  |
+| `NetPaymentDays` |  | |  | `dzbd3t` |  |  |
+| `PaymentBlockingReason` |  | |  | `dzlspr` |  |  |
+| `ManualCashDiscount` |  | |  | `wskto_cs` |  |  |
+| `PaymentMethod` |  | |  | `dzlsch` |  |  |
+| `PaymentMethodSupplement` |  | |  | `uzawe` |  |  |
+| `StateCentralBankPaymentReason` |  | |  | `lzbkz` |  |  |
+| `SupplyingCountry` |  | |  | `landl` |  |  |
+| `PaymentReference` |  | |  | `kidno` |  |  |
+| `FixedCashDiscount` |  | |  | `dzbfix` |  |  |
+| `PaytSlipWthRefSubscriber` |  | |  | `esrnr` |  |  |
+| `PaytSlipWthRefCheckDigit` |  | |  | `esrpz` |  |  |
+| `PaytSlipWthRefReference` |  | |  | `esrre` |  |  |
+| `BPBankAccountInternalID` |  | |  | `bvtyp` |  |  |
+| `HouseBank` |  | |  | `hbkid` |  |  |
+| `HouseBankAccount` |  | |  | `hktid` |  |  |
+| `IBAN` |  | |  | `iban` |  |  |
+| `OneTimeAcctCntrySpecificRef1` |  | |  | `glo_log_ref1_ot` |  |  |
+| `PaymentReason` |  | |  | `farp_payt_rsn` |  |  |
+| `DocumentHeaderText` |  | |  | `bktxt` |  |  |
+| `SupplierPostingLineItemText` |  | |  | `sgtxt` |  |  |
+| `UnplannedDeliveryCost` |  | |  | `beznk` |  |  |
+| `UnplannedDeliveryCostTaxCode` |  | |  | `mwskz_mrm1` |  |  |
+| `UnplndDelivCostTaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `UnplndDeliveryCostTaxCountry` |  | |  | `fot_tax_country` |  |  |
+| `IsEUTriangularDeal` |  | |  | `xegdr` |  |  |
+| `DeliveryOfGoodsReportingCntry` |  | |  | `egmld_bsez` |  |  |
+| `BusinessPlace` |  | |  | `bupla` |  |  |
+| `BusinessSectionCode` |  | |  | `secco` |  |  |
+| `JrnlEntryCntrySpecificRef1` |  | |  | `fac_glo_ref1_hd` |  |  |
+| `JrnlEntryCntrySpecificDate1` |  | |  | `fac_glo_dat1_hd` |  |  |
+| `JrnlEntryCntrySpecificRef2` |  | |  | `fac_glo_ref2_hd` |  |  |
+| `JrnlEntryCntrySpecificDate2` |  | |  | `fac_glo_dat2_hd` |  |  |
+| `JrnlEntryCntrySpecificRef3` |  | |  | `fac_glo_ref3_hd` |  |  |
+| `JrnlEntryCntrySpecificDate3` |  | |  | `fac_glo_dat3_hd` |  |  |
+| `JrnlEntryCntrySpecificRef4` |  | |  | `fac_glo_ref4_hd` |  |  |
+| `JrnlEntryCntrySpecificDate4` |  | |  | `fac_glo_dat4_hd` |  |  |
+| `JrnlEntryCntrySpecificRef5` |  | |  | `fac_glo_ref5_hd` |  |  |
+| `JrnlEntryCntrySpecificDate5` |  | |  | `fac_glo_dat5_hd` |  |  |
+| `JrnlEntryCntrySpecificBP1` |  | |  | `fac_glo_bp1_hd` |  |  |
+| `JrnlEntryCntrySpecificBP2` |  | |  | `fac_glo_bp2_hd` |  |  |
+| `D_SuplrInvcCreatePOItemP` |  | |  | `_ItemsWithPOReference : composition [0..*] of D_SuplrInvcCreatePOItemP` |  |  |
+| `D_SuplrInvcCreateGLItemP` |  | |  | `_GLItems : composition [0..*] of D_SuplrInvcCreateGLItemP` |  |  |
+| `D_SuplrInvcCreateTaxP` |  | |  | `_Taxes : composition [0..*] of D_SuplrInvcCreateTaxP` |  |  |
+| `D_SuplrInvcCreateWithTaxP` |  | |  | `_WithholdingTaxes : composition [0..*] of D_SuplrInvcCreateWithTaxP` |  |  |
 
 ## Source Code
 

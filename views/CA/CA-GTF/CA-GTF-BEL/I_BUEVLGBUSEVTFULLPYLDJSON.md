@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessEventUUID` | ✓ | |  |  |
-| `SAPObjectType` | ✓ | |  |  |
-| `BusEvtLogPayloadJSONString` |  | |  |  |
-| `BusEvtLogLastChangedDateTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessEventUUID` | ✓ | |  |  |  |  |
+| `SAPObjectType` | ✓ | |  |  |  |  |
+| `BusEvtLogPayloadJSONString` |  | |  |  |  |  |
+| `BusEvtLogLastChangedDateTime` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPeriodCode` | ✓ | |  | `persl` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPeriodCode` | ✓ | |  | `persl` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

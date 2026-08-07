@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionOrder` | ✓ | |  |  |
-| `ProductionOrderItem` | ✓ | |  |  |
-| `SerialNumber` | ✓ | |  |  |
-| `Product` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `ManufacturingOrderCategory` |  | |  |  |
-| `ProductionOrderType` |  | |  |  |
-| `SerialNumberProfile` |  | |  |  |
-| `_ProductionOrderItem` | | ✓ | | |
-| `_ProductionOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionOrder` | ✓ | |  |  |  |  |
+| `ProductionOrderItem` | ✓ | |  |  |  |  |
+| `SerialNumber` | ✓ | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |  |  |
+| `ProductionOrderType` |  | |  |  |  |  |
+| `SerialNumberProfile` |  | |  |  |  |  |
+| `_ProductionOrderItem` | | ✓ | | | | |
+| `_ProductionOrder` | | ✓ | | | | |
 
 ## Source Code
 

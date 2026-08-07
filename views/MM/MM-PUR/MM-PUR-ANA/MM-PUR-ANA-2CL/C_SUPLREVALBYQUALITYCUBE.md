@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `PurgDocMigrtnIsCmpltdForAnlyts` | ✓ | |  |  |
-| `SuplrEvalRelevantDocCategory` | ✓ | |  |  |
-| `PurchaseOrder` |  | |  | `cast( QualityVariance.PurchasingDocument as vdm_purchaseorder )` |
-| `PurchaseOrderItem` |  | |  | `cast( QualityVariance.PurchasingDocumentItem as vdm_purchaseorderitem )` |
-| `Supplier` |  | |  |  |
-| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |
-| `Region` |  | | `_Supplier` | `Region` |
-| `PurchasingGroup` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `CalendarYear` |  | | `_Date` | `CalendarYear` |
-| `CalendarQuarter` |  | | `_Date` | `CalendarQuarter` |
-| `CalendarMonth` |  | | `_Date` | `CalendarMonth` |
-| `CalendarWeek` |  | | `_Date` | `CalendarWeek` |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingCategory` |  | |  |  |
-| `PurgCatName` |  | |  |  |
-| `InspectionLotQualityScore` |  | |  | `cast( case when UpdatedScore.IsScoreChanged = 'X' then UpdatedScore.InspectionLotQualityScore else QualityVariance.InspectionLotQualityScore end as mm_a_variance_score )` |
-| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |
-| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
-| `NumberOfInspectionLots` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
-| `PurchaseOrderItemUniqueID` |  | |  |  |
-| `_Material` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_SupplierRegion` | | ✓ | | |
-| `_CalendarMonth` | | ✓ | | |
-| `_PurchasingDocumentCatName` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `PurgDocMigrtnIsCmpltdForAnlyts` | ✓ | |  |  |  |  |
+| `SuplrEvalRelevantDocCategory` | ✓ | |  |  |  |  |
+| `PurchaseOrder` |  | |  | `cast( QualityVariance.PurchasingDocument as vdm_purchaseorder )` |  |  |
+| `PurchaseOrderItem` |  | |  | `cast( QualityVariance.PurchasingDocumentItem as vdm_purchaseorderitem )` |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |  |  |
+| `Region` |  | | `_Supplier` | `Region` |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_Date` | `CalendarYear` |  |  |
+| `CalendarQuarter` |  | | `_Date` | `CalendarQuarter` |  |  |
+| `CalendarMonth` |  | | `_Date` | `CalendarMonth` |  |  |
+| `CalendarWeek` |  | | `_Date` | `CalendarWeek` |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingCategory` |  | |  |  |  |  |
+| `PurgCatName` |  | |  |  |  |  |
+| `InspectionLotQualityScore` |  | |  | `cast( case when UpdatedScore.IsScoreChanged = 'X' then UpdatedScore.InspectionLotQualityScore else QualityVariance.InspectionLotQualityScore end as mm_a_variance_score )` |  |  |
+| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |  |  |
+| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `NumberOfInspectionLots` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `PurchaseOrderItemUniqueID` |  | |  |  |  |  |
+| `_Material` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_SupplierRegion` | | ✓ | | | | |
+| `_CalendarMonth` | | ✓ | | | | |
+| `_PurchasingDocumentCatName` | | ✓ | | | | |
 
 ## Associations
 

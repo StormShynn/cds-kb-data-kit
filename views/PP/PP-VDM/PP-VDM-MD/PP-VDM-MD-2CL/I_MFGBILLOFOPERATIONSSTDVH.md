@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsType` | ✓ | |  |  |
-| `BillOfOperationsGroup` | ✓ | |  |  |
-| `BillOfOperationsVariant` | ✓ | |  |  |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |  |  |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
 
 ## Source Code
 

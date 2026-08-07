@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StatusProfile` | ✓ | |  | `stsma` |
-| `Language` | ✓ | |  | `spras` |
-| `StatusProfileName` |  | |  | `txt` |
-| `_StatusProfile` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatusProfile` | ✓ | |  | `stsma` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `StatusProfileName` |  | |  | `txt` |  |  |
+| `_StatusProfile` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

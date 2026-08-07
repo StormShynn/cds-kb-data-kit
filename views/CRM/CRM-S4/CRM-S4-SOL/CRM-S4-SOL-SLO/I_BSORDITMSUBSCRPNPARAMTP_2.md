@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `SubscrpnBillgParamSqncNumber` | ✓ | |  |  |
-| `SubscriptionParameter` |  | |  |  |
-| `SubscrpnParameterIntegerValue` |  | |  |  |
-| `_SubscriptionBillingItem` | | ✓ | | |
-| `_BusinessSolutionOrderItemTP` | | ✓ | | |
-| `_BusinessSolutionOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `SubscrpnBillgParamSqncNumber` | ✓ | |  |  |  |  |
+| `SubscriptionParameter` |  | |  |  |  |  |
+| `SubscrpnParameterIntegerValue` |  | |  |  |  |  |
+| `_SubscriptionBillingItem` | | ✓ | | | | |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

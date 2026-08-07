@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  |  |
-| `TaskListGroup` | ✓ | |  |  |
-| `TaskListGroupCounter` | ✓ | |  |  |
-| `TaskListSequence` | ✓ | |  |  |
-| `TaskListOperationInternalId` | ✓ | |  |  |
-| `_Header` | | ✓ | | |
-| `_Operation` | | ✓ | | |
-| `_OpMaterial` | | ✓ | | |
-| `_OpRelation` | | ✓ | | |
-| `_SubOp` | | ✓ | | |
-| `_OpLongText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |  |  |
+| `TaskListGroup` | ✓ | |  |  |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |  |  |
+| `TaskListSequence` | ✓ | |  |  |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
+| `_Operation` | | ✓ | | | | |
+| `_OpMaterial` | | ✓ | | | | |
+| `_OpRelation` | | ✓ | | | | |
+| `_SubOp` | | ✓ | | | | |
+| `_OpLongText` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |
-| `ConsolidationPrftCtrHierarchy` | ✓ | |  | `cast(_Hierarchy.CnsldtnUniversalHierarchy as fincs_profitcenterhierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
-| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
-| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
-| `_ControllingArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `ConsolidationPrftCtrHierarchy` | ✓ | |  | `cast(_Hierarchy.CnsldtnUniversalHierarchy as fincs_profitcenterhierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |  |  |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |  |  |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |  |  |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

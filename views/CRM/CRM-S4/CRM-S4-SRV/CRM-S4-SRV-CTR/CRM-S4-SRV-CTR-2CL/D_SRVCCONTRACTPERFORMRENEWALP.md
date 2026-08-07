@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NewServiceContractIsCreated` |  | |  | `crmt_boolean` |
-| `SrvcTransChgReqRcvdOnDateTime` |  | |  | `timestamp` |
-| `SrvcContrDuration` |  | |  | `timedura` |
-| `SrvcContrDurationUnit` |  | |  | `timeunitdu` |
-| `PurchaseOrderByCustomer` |  | |  | `crmt_po_number_sold` |
-| `ServiceContractIsReleased` |  | |  | `crms4_stat_released` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NewServiceContractIsCreated` |  | |  | `crmt_boolean` |  |  |
+| `SrvcTransChgReqRcvdOnDateTime` |  | |  | `timestamp` |  |  |
+| `SrvcContrDuration` |  | |  | `timedura` |  |  |
+| `SrvcContrDurationUnit` |  | |  | `timeunitdu` |  |  |
+| `PurchaseOrderByCustomer` |  | |  | `crmt_po_number_sold` |  |  |
+| `ServiceContractIsReleased` |  | |  | `crms4_stat_released` |  |  |
 
 ## Source Code
 

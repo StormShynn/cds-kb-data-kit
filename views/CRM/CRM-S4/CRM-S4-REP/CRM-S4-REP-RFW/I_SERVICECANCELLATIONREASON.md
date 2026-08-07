@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContrCancellationReason` | ✓ | |  | `canc_reason` |
-| `ServiceContractCanclnParty` |  | |  | `cancparty` |
-| `_ServiceCanclnReasonText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContrCancellationReason` | ✓ | |  | `canc_reason` |  |  |
+| `ServiceContractCanclnParty` |  | |  | `cancparty` |  |  |
+| `_ServiceCanclnReasonText` | | ✓ | | | | |
 
 ## Associations
 

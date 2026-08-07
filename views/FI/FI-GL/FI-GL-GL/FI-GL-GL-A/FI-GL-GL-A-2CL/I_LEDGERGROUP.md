@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LedgerGroup` | ✓ | |  | `ldgrp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LedgerGroup` | ✓ | |  | `ldgrp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

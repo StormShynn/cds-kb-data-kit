@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `cast (tax.matnr as productnumber preserving type )` |
-| `Country` | ✓ | |  | `aland` |
-| `TaxClassification1` |  | |  | `taxm1` |
-| `TaxClassification2` |  | |  | `taxm2` |
-| `TaxClassification3` |  | |  | `taxm3` |
-| `TaxClassification4` |  | |  | `taxm4` |
-| `TaxClassification5` |  | |  | `taxm5` |
-| `TaxClassification6` |  | |  | `taxm6` |
-| `TaxClassification7` |  | |  | `taxm7` |
-| `TaxClassification8` |  | |  | `taxm8` |
-| `TaxClassification9` |  | |  | `taxm9` |
-| `_Product` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_CountryName` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast (tax.matnr as productnumber preserving type )` |  |  |
+| `Country` | ✓ | |  | `aland` |  |  |
+| `TaxClassification1` |  | |  | `taxm1` |  |  |
+| `TaxClassification2` |  | |  | `taxm2` |  |  |
+| `TaxClassification3` |  | |  | `taxm3` |  |  |
+| `TaxClassification4` |  | |  | `taxm4` |  |  |
+| `TaxClassification5` |  | |  | `taxm5` |  |  |
+| `TaxClassification6` |  | |  | `taxm6` |  |  |
+| `TaxClassification7` |  | |  | `taxm7` |  |  |
+| `TaxClassification8` |  | |  | `taxm8` |  |  |
+| `TaxClassification9` |  | |  | `taxm9` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_CountryName` | | ✓ | | | | |
 
 ## Associations
 

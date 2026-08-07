@@ -31,66 +31,66 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralSupplierQuotation` | ✓ | |  |  |
-| `CentralSupplierQuotationItem` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentItemText` |  | |  |  |
-| `Material` |  | |  |  |
-| `PurchasingCentralMaterial` |  | |  |  |
-| `ProductType` |  | |  |  |
-| `ProductTypeCode` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `ManufacturerPartNmbr` |  | |  |  |
-| `Manufacturer` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ManualDeliveryAddressID` |  | |  |  |
-| `ReferenceDeliveryAddressID` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `RequirementTracking` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
-| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
-| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
-| `OrderQuantity` |  | |  |  |
-| `PurgDocPriceDate` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `GrossAmount` |  | |  |  |
-| `EffectiveAmount` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `ItemDeliveryAddressID` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `CentralRequestForQuotation` |  | |  |  |
-| `CentralRequestForQuotationItem` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchasingDocumentItemCategory` |  | |  |  |
-| `_CentralSupplierQuotation` | | ✓ | | |
-| `_CentralReqForQuotationItem` | | ✓ | | |
-| `_CntrlSuplrQtanScheduleLine` | | ✓ | | |
-| `_CntrlSupplierQtanItemPricing` | | ✓ | | |
-| `_CntrlSuplrQuotationItemDistr` | | ✓ | | |
-| `_ProductType` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurgDocumentCategory` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_OrderPriceUnit` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_PurgDocumentItemCategory` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralSupplierQuotation` | ✓ | |  |  |  |  |
+| `CentralSupplierQuotationItem` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `PurchasingCentralMaterial` |  | |  |  |  |  |
+| `ProductType` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |  |  |
+| `Manufacturer` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `RequirementTracking` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `OrderQuantity` |  | |  |  |  |  |
+| `PurgDocPriceDate` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `GrossAmount` |  | |  |  |  |  |
+| `EffectiveAmount` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `CentralRequestForQuotation` |  | |  |  |  |  |
+| `CentralRequestForQuotationItem` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |  |  |
+| `_CentralSupplierQuotation` | | ✓ | | | | |
+| `_CentralReqForQuotationItem` | | ✓ | | | | |
+| `_CntrlSuplrQtanScheduleLine` | | ✓ | | | | |
+| `_CntrlSupplierQtanItemPricing` | | ✓ | | | | |
+| `_CntrlSuplrQuotationItemDistr` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurgDocumentCategory` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_OrderPriceUnit` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_PurgDocumentItemCategory` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
 
 ## Associations
 

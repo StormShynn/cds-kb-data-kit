@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `TreasuryContractType` | ✓ | |  | `cast( dd07t.domvalue_l as rantyp )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `TreasuryContractTypeName` |  | |  | `cast( dd07t.ddtext as rantyp_name preserving type )` |
-| `_ContractType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `TreasuryContractType` | ✓ | |  | `cast( dd07t.domvalue_l as rantyp )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `TreasuryContractTypeName` |  | |  | `cast( dd07t.ddtext as rantyp_name preserving type )` |  |  |
+| `_ContractType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

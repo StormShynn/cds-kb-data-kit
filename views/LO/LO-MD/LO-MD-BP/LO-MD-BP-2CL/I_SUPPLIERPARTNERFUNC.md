@@ -31,28 +31,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  | `lifnr` |
-| `PurchasingOrganization` | ✓ | |  | `ekorg` |
-| `SupplierSubrange` | ✓ | |  | `ltsnr` |
-| `Plant` | ✓ | |  | `werks` |
-| `PartnerFunction` | ✓ | |  | `parvw` |
-| `PartnerCounter` | ✓ | |  | `parza` |
-| `DefaultPartner` |  | |  | `defpa` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `PartnerFunctionType` |  | |  | `nrart` |
-| `ReferenceSupplier` |  | |  | `case when tpar.nrart = 'LI' then wyt3.lifn2 when tpar.nrart = 'WK' then wyt3.werks when tpar.nrart = 'AP' then wyt3.parnr when tpar.nrart = 'PE' then wyt3.pernr else '' end` |
-| `ContactPerson` |  | |  | `parnr` |
-| `PersonnelNumber` |  | |  | `pernr` |
-| `AuthorizationGroup` |  | | `_SupplierPurchasing` | `AuthorizationGroup` |
-| `_SupplierPurchasing` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_SupplierSubrange` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_SupplierPartnerCounter` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |  |  |
+| `PurchasingOrganization` | ✓ | |  | `ekorg` |  |  |
+| `SupplierSubrange` | ✓ | |  | `ltsnr` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `PartnerFunction` | ✓ | |  | `parvw` |  |  |
+| `PartnerCounter` | ✓ | |  | `parza` |  |  |
+| `DefaultPartner` |  | |  | `defpa` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `PartnerFunctionType` |  | |  | `nrart` |  |  |
+| `ReferenceSupplier` |  | |  | `case when tpar.nrart = 'LI' then wyt3.lifn2 when tpar.nrart = 'WK' then wyt3.werks when tpar.nrart = 'AP' then wyt3.parnr when tpar.nrart = 'PE' then wyt3.pernr else '' end` |  |  |
+| `ContactPerson` |  | |  | `parnr` |  |  |
+| `PersonnelNumber` |  | |  | `pernr` |  |  |
+| `AuthorizationGroup` |  | | `_SupplierPurchasing` | `AuthorizationGroup` |  |  |
+| `_SupplierPurchasing` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_SupplierSubrange` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_SupplierPartnerCounter` | | ✓ | | | | |
 
 ## Associations
 

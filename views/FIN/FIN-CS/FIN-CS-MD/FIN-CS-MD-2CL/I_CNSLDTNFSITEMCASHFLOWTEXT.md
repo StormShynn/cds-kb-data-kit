@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( _FSItemAttribValueTxt.Language as spras preserving type )` |
-| `CnsldtnFSItemCashFlow` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemcashflow preserving type )` |
-| `CnsldtnFSItemCashFlowText` |  | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttribValueText as fincs_short_text_30 preserving type )` |
-| `CnsldtnFSItemCashFlowLongText` |  | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttribValLongText as fincs_long_text_60 preserving type )` |
-| `_CnsldtnFSItemCashFlow` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _FSItemAttribValueTxt.Language as spras preserving type )` |  |  |
+| `CnsldtnFSItemCashFlow` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemcashflow preserving type )` |  |  |
+| `CnsldtnFSItemCashFlowText` |  | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttribValueText as fincs_short_text_30 preserving type )` |  |  |
+| `CnsldtnFSItemCashFlowLongText` |  | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttribValLongText as fincs_long_text_60 preserving type )` |  |  |
+| `_CnsldtnFSItemCashFlow` | | ✓ | | | | |
 
 ## Associations
 

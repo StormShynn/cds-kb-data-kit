@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BondClassification` | ✓ | |  | `swpklass` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BondClassification` | ✓ | |  | `swpklass` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

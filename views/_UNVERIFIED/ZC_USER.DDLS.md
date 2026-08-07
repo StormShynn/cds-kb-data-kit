@@ -29,23 +29,23 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EmpId` | ✓ | |  |  |
-| `DevId` | ✓ | |  |  |
-| `DevDescription` |  | |  |  |
-| `Attachment` |  | |  |  |
-| `Mimetype` |  | |  |  |
-| `Filename` |  | |  |  |
-| `FileStatus` |  | |  |  |
-| `Criticality` |  | |  |  |
-| `TemplateStatus` |  | |  |  |
-| `TemplateCriticality` |  | |  |  |
-| `LocalCreatedBy` |  | |  |  |
-| `LocalCreatedAt` |  | |  |  |
-| `LocalLastChangedBy` |  | |  |  |
-| `LocalLastChangedAt` |  | |  |  |
-| `_UserDev` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EmpId` | ✓ | |  |  |  |  |
+| `DevId` | ✓ | |  |  |  |  |
+| `DevDescription` |  | |  |  |  |  |
+| `Attachment` |  | |  |  |  |  |
+| `Mimetype` |  | |  |  |  |  |
+| `Filename` |  | |  |  |  |  |
+| `FileStatus` |  | |  |  |  |  |
+| `Criticality` |  | |  |  |  |  |
+| `TemplateStatus` |  | |  |  |  |  |
+| `TemplateCriticality` |  | |  |  |  |  |
+| `LocalCreatedBy` |  | |  |  |  |  |
+| `LocalCreatedAt` |  | |  |  |  |  |
+| `LocalLastChangedBy` |  | |  |  |  |  |
+| `LocalLastChangedAt` |  | |  |  |  |  |
+| `_UserDev` | | ✓ | | | | |
 
 ## Source Code
 

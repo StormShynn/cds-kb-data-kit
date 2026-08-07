@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLotType` | ✓ | |  | `art` |
-| `BillOfOperationsUsage` |  | |  | `pplverw` |
-| `SelectedCodeSet` |  | |  | `vemenge` |
-| `SelectedCodeSetHasSamePlant` |  | |  | `kzvewerks` |
-| `_Text` | | ✓ | | |
-| `_SelectedCodeSetHasSamePlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLotType` | ✓ | |  | `art` |  |  |
+| `BillOfOperationsUsage` |  | |  | `pplverw` |  |  |
+| `SelectedCodeSet` |  | |  | `vemenge` |  |  |
+| `SelectedCodeSetHasSamePlant` |  | |  | `kzvewerks` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SelectedCodeSetHasSamePlant` | | ✓ | | | | |
 
 ## Associations
 

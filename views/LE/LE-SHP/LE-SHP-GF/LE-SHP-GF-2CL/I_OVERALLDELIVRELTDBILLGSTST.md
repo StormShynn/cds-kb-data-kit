@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OverallDelivReltdBillgStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OverallDelivReltdBillgStsDesc` |  | |  | `bezei` |
-| `_OverallDelivReltdBillgStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverallDelivReltdBillgStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OverallDelivReltdBillgStsDesc` |  | |  | `bezei` |  |  |
+| `_OverallDelivReltdBillgStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

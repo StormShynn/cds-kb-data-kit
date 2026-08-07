@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |
-| `ConfigurableCodesCodeGroup` | ✓ | |  | `codegruppe` |
-| `Language` | ✓ | |  | `sprache` |
-| `ConfigblCodesCodeGrpTxt` |  | |  | `cast( qpgt.kurztext as vdm_qktextgr preserving type )` |
-| `_ConfigurableCodesCatalog` | | ✓ | | |
-| `_ConfigurableCodesCodeGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |  |  |
+| `ConfigurableCodesCodeGroup` | ✓ | |  | `codegruppe` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `ConfigblCodesCodeGrpTxt` |  | |  | `cast( qpgt.kurztext as vdm_qktextgr preserving type )` |  |  |
+| `_ConfigurableCodesCatalog` | | ✓ | | | | |
+| `_ConfigurableCodesCodeGroup` | | ✓ | | | | |
 
 ## Associations
 

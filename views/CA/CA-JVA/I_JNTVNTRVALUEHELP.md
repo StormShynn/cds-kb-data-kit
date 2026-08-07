@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( jv.bukrs as fis_bukrs preserving type )` |
-| `JointVenture` | ✓ | |  | `cast(vname as jv_name_cds preserving type )` |
-| `JointVentureType` |  | |  | `vtype` |
-| `JointVentureClass` |  | |  | `vclass` |
-| `JntOpgAgrmt` |  | |  | `joa` |
-| `_CompanyCode` | | ✓ | | |
-| `_JntOpgAgrmt` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( jv.bukrs as fis_bukrs preserving type )` |  |  |
+| `JointVenture` | ✓ | |  | `cast(vname as jv_name_cds preserving type )` |  |  |
+| `JointVentureType` |  | |  | `vtype` |  |  |
+| `JointVentureClass` |  | |  | `vclass` |  |  |
+| `JntOpgAgrmt` |  | |  | `joa` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntOpgAgrmt` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceQuotation` | ✓ | |  |  |
-| `ServiceQuotationItem` | ✓ | |  |  |
-| `SrvcDocDurationType` | ✓ | |  |  |
-| `SrvcDocDurationValue` |  | |  |  |
-| `SrvcDocDurationUnit` |  | |  |  |
-| `_ServiceQuotationItemTP` | | ✓ | | |
-| `_ServiceQuotationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |  |  |
+| `ServiceQuotationItem` | ✓ | |  |  |  |  |
+| `SrvcDocDurationType` | ✓ | |  |  |  |  |
+| `SrvcDocDurationValue` |  | |  |  |  |  |
+| `SrvcDocDurationUnit` |  | |  |  |  |  |
+| `_ServiceQuotationItemTP` | | ✓ | | | | |
+| `_ServiceQuotationTP` | | ✓ | | | | |
 
 ## Source Code
 

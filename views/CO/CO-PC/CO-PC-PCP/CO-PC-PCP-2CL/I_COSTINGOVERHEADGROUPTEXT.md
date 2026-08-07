@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ValuationArea` | ✓ | |  | `bwkey` |
-| `CostingOverheadGroup` | ✓ | |  | `kosgr` |
-| `CostingOverheadGroupName` |  | |  | `txzschl` |
-| `_Language` | | ✓ | | |
-| `_ValuationArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValuationArea` | ✓ | |  | `bwkey` |  |  |
+| `CostingOverheadGroup` | ✓ | |  | `kosgr` |  |  |
+| `CostingOverheadGroupName` |  | |  | `txzschl` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ValuationArea` | | ✓ | | | | |
 
 ## Associations
 

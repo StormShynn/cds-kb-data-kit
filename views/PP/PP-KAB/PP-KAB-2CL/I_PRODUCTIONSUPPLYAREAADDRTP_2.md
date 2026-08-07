@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionSupplyArea` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `AddressRepresentationCode` | ✓ | |  |  |
-| `ProductionSupplyAreaAddressID` |  | |  |  |
-| `AddresseeName1` |  | |  |  |
-| `AddresseeName2` |  | |  |  |
-| `Building` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `CityName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `Region` |  | |  |  |
-| `Country` |  | |  |  |
-| `_ProductionSupplyArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionSupplyArea` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  |  |  |
+| `ProductionSupplyAreaAddressID` |  | |  |  |  |  |
+| `AddresseeName1` |  | |  |  |  |  |
+| `AddresseeName2` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `_ProductionSupplyArea` | | ✓ | | | | |
 
 ## Source Code
 

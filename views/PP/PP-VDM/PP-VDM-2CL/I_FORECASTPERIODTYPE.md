@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ForecastPeriodType` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as periotype preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ForecastPeriodType` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as periotype preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

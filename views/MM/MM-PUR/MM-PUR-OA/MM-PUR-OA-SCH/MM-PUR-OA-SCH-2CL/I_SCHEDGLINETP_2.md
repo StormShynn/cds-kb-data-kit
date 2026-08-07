@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `SchedLineStscDeliveryDate` |  | |  |  |
-| `ScheduleLineDeliveryTime` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `RoughGoodsReceiptQty` |  | |  |  |
-| `ScheduleLineIsFixed` |  | |  |  |
-| `PrevDelivQtyOfScheduleLine` |  | |  |  |
-| `SourceOfCreation` |  | |  |  |
-| `ScheduleLineOpenQuantity` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_SchedgAgrmtItm` | | ✓ | | |
-| `_SchedgAgrmtSubcontrgComp` | | ✓ | | |
-| `_PurSchedgAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |  |  |
+| `ScheduleLineIsFixed` |  | |  |  |  |  |
+| `PrevDelivQtyOfScheduleLine` |  | |  |  |  |  |
+| `SourceOfCreation` |  | |  |  |  |  |
+| `ScheduleLineOpenQuantity` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_SchedgAgrmtItm` | | ✓ | | | | |
+| `_SchedgAgrmtSubcontrgComp` | | ✓ | | | | |
+| `_PurSchedgAgrmt` | | ✓ | | | | |
 
 ## Source Code
 

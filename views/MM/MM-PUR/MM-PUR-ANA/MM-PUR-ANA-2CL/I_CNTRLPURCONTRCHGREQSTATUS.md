@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgDocChangeRequestStatus` | ✓ | |  | `cast( dd07l.domvalue_l as abap.char( 2 ) )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgDocChangeRequestStatus` | ✓ | |  | `cast( dd07l.domvalue_l as abap.char( 2 ) )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

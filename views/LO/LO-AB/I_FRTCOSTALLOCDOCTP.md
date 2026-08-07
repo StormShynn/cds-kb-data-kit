@@ -28,51 +28,51 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FreightCostAllocationDocument` |  | |  | `, useAsTemplate: true }] } key FreightCostAllocationDocument` |
-| `SettlmtDocType` |  | |  | `, useAsTemplate: true }] } SettlmtDocType` |
-| `SettlmtDocCat` |  | |  |  |
-| `SettlmtProcessType` |  | |  | `, useAsTemplate: true }] } SettlmtProcessType` |
-| `SettlmtProcessCat` |  | |  | `, useAsTemplate: true }] } SettlmtProcessCat` |
-| `PostingDate` |  | |  |  |
-| `FrtCostAllocAcctgTransfSts` |  | |  | `, useAsTemplate: true }] } FrtCostAllocAcctgTransfSts` |
-| `DocumentDate` |  | |  |  |
-| `DocumentReferenceID` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `SettlmtApplSts` |  | |  | `, useAsTemplate: true }] } SettlmtApplSts` |
-| `SettlmtApplStsGrp` |  | |  |  |
-| `PricingProcedure` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `CompanyCode` |  | |  | `, useAsTemplate: true }] } CompanyCode` |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `FrtCostAllocDocCurrency` |  | |  | `, useAsTemplate: true }] } FrtCostAllocDocCurrency` |
-| `ExchangeRate` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `FrtCostAllocDocTotGrossAmount` |  | |  |  |
-| `FrtCostAllocDocTotalNetAmount` |  | |  |  |
-| `FrtCostAllocDocIsReversed` |  | |  |  |
-| `RvsdFrtCostAllocDoc` |  | |  | `, useAsTemplate: true }] } RvsdFrtCostAllocDoc` |
-| `FrtCostAllocDocActivityReason` |  | |  |  |
-| `SettlmtClassificationCat` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FrtCostAllocDocIncmpltnsRsn` |  | |  |  |
-| `FrtCostAllocBusProcCat` |  | |  | `, useAsTemplate: true }] } FrtCostAllocBusProcCat` |
-| `JournalEntryCreationDate` |  | |  |  |
-| `JournalEntryCreationTime` |  | |  |  |
-| `_FrtCostAllocItm` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FreightCostAllocationDocument` | ✓ | |  |  |  |  |
+| `SettlmtDocType` |  | |  |  |  |  |
+| `SettlmtDocCat` |  | |  |  |  |  |
+| `SettlmtProcessType` |  | |  |  |  |  |
+| `SettlmtProcessCat` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `FrtCostAllocAcctgTransfSts` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `DocumentReferenceID` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `SettlmtApplSts` |  | |  |  |  |  |
+| `SettlmtApplStsGrp` |  | |  |  |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `FrtCostAllocDocCurrency` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `FrtCostAllocDocTotGrossAmount` |  | |  |  |  |  |
+| `FrtCostAllocDocTotalNetAmount` |  | |  |  |  |  |
+| `FrtCostAllocDocIsReversed` |  | |  |  |  |  |
+| `RvsdFrtCostAllocDoc` |  | |  |  |  |  |
+| `FrtCostAllocDocActivityReason` |  | |  |  |  |  |
+| `SettlmtClassificationCat` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FrtCostAllocDocIncmpltnsRsn` |  | |  |  |  |  |
+| `FrtCostAllocBusProcCat` |  | |  |  |  |  |
+| `JournalEntryCreationDate` |  | |  |  |  |  |
+| `JournalEntryCreationTime` |  | |  |  |  |  |
+| `_FrtCostAllocItm` | | ✓ | | | | |
 
 ## Source Code
 

@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CourseId` | ✓ | |  | `course_id` |
-| `Title` |  | |  | `title` |
-| `Level` |  | |  | `level` |
-| `Instructor` |  | |  | `instructor` |
-| `CreatedBy` |  | |  | `created_by` |
-| `CreatedAt` |  | |  | `created_at` |
-| `LastChangedBy` |  | |  | `last_changed_by` |
-| `LastChangedAt` |  | |  | `last_changed_at` |
-| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CourseId` | ✓ | |  | `course_id` |  |  |
+| `Title` |  | |  | `title` |  |  |
+| `Level` |  | |  | `level` |  |  |
+| `Instructor` |  | |  | `instructor` |  |  |
+| `CreatedBy` |  | |  | `created_by` |  |  |
+| `CreatedAt` |  | |  | `created_at` |  |  |
+| `LastChangedBy` |  | |  | `last_changed_by` |  |  |
+| `LastChangedAt` |  | |  | `last_changed_at` |  |  |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |  |  |
 
 ## Source Code
 

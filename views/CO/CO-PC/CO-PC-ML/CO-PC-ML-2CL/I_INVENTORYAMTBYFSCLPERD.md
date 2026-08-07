@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `CostEstimate` | ✓ | |  |  |
-| `Material` |  | |  |  |
-| `ValuationType` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `InvtryValnSpecialStockType` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `FiscalPeriod` |  | |  | `$parameters.P_FiscalPeriod` |
-| `FiscalYear` |  | |  | `$parameters.P_FiscalYear` |
-| `ValuationQuantity` |  | |  |  |
-| `UnitOfMeasure` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  | `} AmountInCompanyCodeCurrency` |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AmountInGlobalCurrency` |  | |  | `} AmountInGlobalCurrency` |
-| `GlobalCurrency` |  | |  |  |
-| `AmountInFreeDefinedCurrency1` |  | |  | `} AmountInFreeDefinedCurrency1` |
-| `FreeDefinedCurrency1` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `CostEstimate` | ✓ | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `InvtryValnSpecialStockType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  | `$parameters.P_FiscalPeriod` |  |  |
+| `FiscalYear` |  | |  | `$parameters.P_FiscalYear` |  |  |
+| `ValuationQuantity` |  | |  |  |  |  |
+| `UnitOfMeasure` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInGlobalCurrency` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |  |  |
 
 ## Source Code
 

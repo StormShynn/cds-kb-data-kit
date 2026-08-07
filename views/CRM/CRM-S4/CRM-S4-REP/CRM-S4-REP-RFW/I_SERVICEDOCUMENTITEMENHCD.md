@@ -29,417 +29,417 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |
-| `ServiceDocument` | ✓ | |  |  |
-| `ServiceDocumentItem` | ✓ | |  |  |
-| `ServiceDocumentDescription` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocumentItemPriority` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SrvcDocItmPostingDateTime` |  | |  |  |
-| `SrvcDocItmValdtyStartDateTime` |  | |  |  |
-| `SrvcDocItmValdtyEndDateTime` |  | |  |  |
-| `ServiceDocumentItemUUID` |  | |  |  |
-| `ServiceDocumentItemCharUUID` |  | |  |  |
-| `ServiceDocumentItemObjectType` |  | |  |  |
-| `ServiceDocumentUUID` |  | |  |  |
-| `ParentServiceDocumentItemUUID` |  | |  |  |
-| `ServiceDocumentItemDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `ServiceDocumentTemplateType` |  | |  |  |
-| `ServiceDocItemCreationDateTime` |  | |  |  |
-| `ServiceDocItemChangedDateTime` |  | |  |  |
-| `ServiceDocItemCreationDate` |  | |  | `cast( tstmp_to_dats( ServiceDocItemCreationDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |
-| `ServiceDocItemChangedDate` |  | |  | `cast( tstmp_to_dats( ServiceDocItemChangedDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |
-| `ServiceDocItemCreatedByUser` |  | |  |  |
-| `ServiceDocItemChangedByUser` |  | |  |  |
-| `OriginallyRequestedProduct` |  | |  |  |
-| `Product` |  | |  |  |
-| `ServiceDocItemCategory` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ResponsibleCostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenterDeterminationDate` |  | |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |
-| `RefBusinessSolutionOrderItem` |  | |  |  |
-| `BusSolnOrdItemBundleProduct` |  | |  |  |
-| `BusSolnOrdItemBundleItem` |  | |  |  |
-| `SrvcDocItmRequestedQuantity` |  | |  | `} SrvcDocItmRequestedQuantity` |
-| `InvoiceAmountInInvoiceDocCrcy` |  | |  | `} InvoiceAmountInInvoiceDocCrcy` |
-| `InvoiceQuantity` |  | |  | `} InvoiceQuantity` |
-| `SrvcDocItmDeliveredQuantity` |  | |  | `} SrvcDocItmDeliveredQuantity` |
-| `SrvcDocItmReleasedQuantity` |  | |  | `} SrvcDocItmReleasedQuantity` |
-| `CumulativeConfirmedQuantity` |  | |  | `} CumulativeConfirmedQuantity` |
-| `SrvcDocItmReldAmtInTransCrcy` |  | |  | `} SrvcDocItmReldAmtInTransCrcy` |
-| `SrvcDocItemCumulatedNetAmount` |  | |  | `} SrvcDocItemCumulatedNetAmount` |
-| `SrvcDocItmOrdToBaseQtyNmrtr` |  | |  |  |
-| `SrvcDocItmOrdToBaseQtyDnmntr` |  | |  |  |
-| `OrderToBaseQuantityExponent` |  | |  |  |
-| `ServiceDocItemQuantityUnit` |  | |  |  |
-| `SrvcDocItemBaseQuantityUnit` |  | |  |  |
-| `BillingDateTime` |  | |  |  |
-| `BillingDocCreationDateTime` |  | |  |  |
-| `BillingPlanTimeZone` |  | |  |  |
-| `BillingPriceSourceName` |  | |  |  |
-| `DocumentDescription` |  | |  | `cast( '' as abap.char( 16 ) )` |
-| `SoldToPartyCountry` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ServiceTeam` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `ServiceEmployee` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `ServiceDocumentItemStatus` |  | |  |  |
-| `ServiceDocumentItemHasError` |  | |  |  |
-| `SrvcDocItmIsReleasedForBilling` |  | |  |  |
-| `ServiceDocItemBillingStatus` |  | |  |  |
-| `ServiceDocumentItemIsOpen` |  | |  |  |
-| `SrvcDocItmDeliveryStatus` |  | |  |  |
-| `SrvcDocItmGoodsIssueStatus` |  | |  |  |
-| `ServiceDocumentItemIsReleased` |  | |  |  |
-| `ServiceDocumentItemIsRejected` |  | |  |  |
-| `SrvcDocItemIsWithdrawn` |  | |  |  |
-| `SrvcDocItemConcurStatus` |  | |  |  |
-| `ServiceDocumentItemIsQuotation` |  | |  |  |
-| `SrvcDocItemTransferStatus` |  | |  |  |
-| `MaintSrvcOrdExecutionStatus` |  | |  |  |
-| `SrvcDocItemExecutionStatus` |  | |  |  |
-| `ServiceDocumentItemQuantity` |  | |  | `} ServiceDocumentItemQuantity` |
-| `TransactionCurrency` |  | |  |  |
-| `StatisticsCurrency` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `AccountingExchangeRate` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `BillableControl` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `ProductTaxClassification1` |  | |  |  |
-| `ProductTaxClassification2` |  | |  |  |
-| `ProductTaxClassification3` |  | |  |  |
-| `ProductTaxClassification4` |  | |  |  |
-| `ProductTaxClassification5` |  | |  |  |
-| `ProductTaxClassification6` |  | |  |  |
-| `ProductTaxClassification7` |  | |  |  |
-| `ProductTaxClassification8` |  | |  |  |
-| `ProductTaxClassification9` |  | |  |  |
-| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceDocumentItemNetAmount` |
-| `ServiceDocumentItemTaxAmount` |  | |  | `} ServiceDocumentItemTaxAmount` |
-| `ServiceDocItemGrossAmount` |  | |  | `} ServiceDocItemGrossAmount` |
-| `ServiceDocumentItemNetPrice` |  | |  | `} ServiceDocumentItemNetPrice` |
-| `BillingBlockReason` |  | |  |  |
-| `SrvcDocItmBillingRelevance` |  | |  |  |
-| `DynItemProcessorPrfl` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `SrvcMaterialPricingGroup` |  | |  |  |
-| `MaterialPricingGroup_2` |  | |  |  |
-| `ProductGroup1` |  | |  |  |
-| `ProductGroup2` |  | |  |  |
-| `ProductGroup3` |  | |  |  |
-| `ProductGroup4` |  | |  |  |
-| `ProductGroup5` |  | |  |  |
-| `ProductHierarchy` |  | |  |  |
-| `Industry` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `PurchaseOrderByShipToParty` |  | |  |  |
-| `ServiceDocItemRejectionReason` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ServiceSchema1Category1UUID` |  | |  |  |
-| `ServiceSchema1Category2UUID` |  | |  |  |
-| `ServiceSchema1Category3UUID` |  | |  |  |
-| `ServiceSchema1Category4UUID` |  | |  |  |
-| `ServiceSchema1Category5UUID` |  | |  |  |
-| `ServiceSchema1Category6UUID` |  | |  |  |
-| `ServiceSchema1Category7UUID` |  | |  |  |
-| `ServiceSchema1Category8UUID` |  | |  |  |
-| `ServiceSchema1Category9UUID` |  | |  |  |
-| `ServiceSchema1Category10UUID` |  | |  |  |
-| `SrvcCatztnSchema1` |  | |  |  |
-| `SrvcCatztnSchemaCategory1` |  | |  |  |
-| `ServiceSchema2Category1UUID` |  | |  |  |
-| `ServiceSchema2Category2UUID` |  | |  |  |
-| `ServiceSchema2Category3UUID` |  | |  |  |
-| `ServiceSchema2Category4UUID` |  | |  |  |
-| `ServiceSchema2Category5UUID` |  | |  |  |
-| `ServiceSchema2Category6UUID` |  | |  |  |
-| `ServiceSchema2Category7UUID` |  | |  |  |
-| `ServiceSchema2Category8UUID` |  | |  |  |
-| `ServiceSchema2Category9UUID` |  | |  |  |
-| `ServiceSchema2Category10UUID` |  | |  |  |
-| `SrvcCatztnSchema2` |  | |  |  |
-| `SrvcCatztnSchemaCategory2` |  | |  |  |
-| `SettlementPeriodRuleUUID` |  | |  |  |
-| `BillingPlanBillingDateRuleUUID` |  | |  |  |
-| `BillingPlanPriceDateRule` |  | |  |  |
-| `BillingPlanIsFinalized` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `ResponsibleSalesOrganization` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `ResponsibleServiceOrganization` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `RespyMgmtServiceTeam` |  | |  |  |
-| `EnterpriseServiceOrganization` |  | |  |  |
-| `EnterpriseProjectServiceOrg` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `ServiceContrItemStartDateTime` |  | |  |  |
-| `ServiceContrItemEndDateTime` |  | |  |  |
-| `RequestedServiceStartDate` |  | |  | `tstmp_to_dats( RequestedServiceStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `RequestedServiceEndDate` |  | |  | `tstmp_to_dats( RequestedServiceEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `ServiceContractItemStartDate` |  | |  | `tstmp_to_dats( ServiceContrItemStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `ServiceContractItemEndDate` |  | |  | `tstmp_to_dats( ServiceContrItemEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `ServiceFirstResponseByDateTime` |  | |  |  |
-| `ServiceFirstResponseByDate` |  | |  | `tstmp_to_dats( ServiceFirstResponseByDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `SrvcDocItemSLADueByDateTime` |  | |  |  |
-| `SrvcDocItemSLADueByDate` |  | |  | `tstmp_to_dats( SrvcDocItemSLADueByDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `ActualServiceStartDateTime` |  | |  |  |
-| `ActualServiceEndDateTime` |  | |  |  |
-| `SrvcContrItemRnwlDuration` |  | |  | `} SrvcContrItemRnwlDuration` |
-| `SrvcContrItemRnwlDurationUnit` |  | |  |  |
-| `SrvcContrItemExtensionDuration` |  | |  | `} SrvcContrItemExtensionDuration` |
-| `SrvcContrItemExtnDurationUnit` |  | |  |  |
-| `PlannedServiceStartDateTime` |  | |  |  |
-| `PlannedServiceEndDateTime` |  | |  |  |
-| `PlannedServiceStartDate` |  | |  | `tstmp_to_dats( PlannedServiceStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `PlannedServiceEndDate` |  | |  | `tstmp_to_dats( PlannedServiceEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `SrvcDocItmTmeSliceStrtDteTme` |  | |  |  |
-| `SrvcDocItmTmeSliceEndDteTme` |  | |  |  |
-| `SrvcContrItemRenewalDateTime` |  | |  |  |
-| `ActualServiceDuration` |  | |  | `} ActualServiceDuration` |
-| `ActualServiceDurationUnit` |  | |  |  |
-| `ServiceWorkDuration` |  | |  |  |
-| `ServiceWorkDuration_2` |  | |  |  |
-| `ServiceWorkDurationUnit` |  | |  |  |
-| `SrvcOrderConfirmationRelevance` |  | |  |  |
-| `ServiceTransactionChargeType` |  | |  |  |
-| `SrvcTransactionValuationType` |  | |  |  |
-| `ResponseProfile` |  | |  |  |
-| `ServiceProfile` |  | |  |  |
-| `ServiceDuration` |  | |  | `} ServiceDuration` |
-| `ServiceDurationUnit` |  | |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |
-| `MasterWarranty` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `ItemOrderProbabilityInPercent` |  | |  |  |
-| `QuotationIsAccepted` |  | |  |  |
-| `ConfigurationNumber` |  | |  |  |
-| `IncotermsPart1` |  | |  |  |
-| `IncotermsPart2` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `OrderCombinationIsAllowed` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `CABillgCycle` |  | |  |  |
-| `RevenueAccountingReference` |  | |  |  |
-| `RevenueAccountingRefType` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `DeliveryGroup` |  | |  |  |
-| `DeliveryBlockReason` |  | |  |  |
-| `RequestedDeliveryUTCDateTime` |  | |  | `RequestedDeliveryDateTime` |
-| `ErlstConfirmedDeliveryDateTime` |  | |  |  |
-| `LtstConfirmedDeliveryDateTime` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  | `tstmp_to_dats( RequestedDeliveryDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `SubscrpnOrdProdSelType` |  | |  |  |
-| `SubscriptionContract` |  | |  |  |
-| `SrvcTransChangeProcess` |  | |  |  |
-| `SrvcTransChangeProcessType` |  | |  |  |
-| `SrvcTransChgProcSourceItemUUID` |  | |  |  |
-| `CustMgmtMasterAgreement` |  | |  |  |
-| `CustMgmtMstrAgrmtItem` |  | |  |  |
-| `SubscrpnContrActivationStatus` |  | |  |  |
-| `SubscrpnContrTimeSliceStatus` |  | |  |  |
-| `SharingContractID` |  | |  |  |
-| `CrsCatalogMappingVersionNumber` |  | |  |  |
-| `CustMgmtMstrAgrmtParentItem` |  | |  |  |
-| `SubscrpnContractSharingGroupID` |  | |  |  |
-| `CAPartnerSettlementRule` |  | |  |  |
-| `ChangeProcessGroup` |  | |  |  |
-| `BusSolutionQtnItemIsPhased` |  | |  |  |
-| `BusSolnQtnItmPhasedPrdcssrItem` |  | |  |  |
-| `SubscriptionContractItem` |  | |  |  |
-| `SrvcDocItemWithdrawalReason` |  | |  |  |
-| `SrvcDocItemRefundType` |  | |  |  |
-| `SrvcDocItmRecrrgChrgNetAmount` |  | |  | `} SrvcDocItmRecrrgChrgNetAmount` |
-| `SubscrpnContrTrmsAreSpecified` |  | |  |  |
-| `MidBillgCycExprtnIsAllowed` |  | |  |  |
-| `SrvcDocItmRecrrgChrgTaxAmount` |  | |  | `} SrvcDocItmRecrrgChrgTaxAmount` |
-| `SrvcDocItmRecrrgChrgGrossAmt` |  | |  | `} SrvcDocItmRecrrgChrgGrossAmt` |
-| `SrvcDocItmRecrrgChrgDuration` |  | |  |  |
-| `SrvcDocItmRecrrgChrgDurnUnit` |  | |  |  |
-| `SubscriptionContractReference` |  | |  |  |
-| `SubscriptionBillingCycle` |  | |  |  |
-| `SubscrpnBillgRatePlanCharUUID` |  | |  |  |
-| `SubscriptionContractExternalID` |  | |  |  |
-| `SbscrShContrSvTrMtAgrItmUUID` |  | |  |  |
-| `SbscrShContrSvTrMtAgrItmCstPrd` |  | |  |  |
-| `SvTrMtAgrItmIsFxdConfign` |  | |  |  |
-| `SubscrpnContrItmBillgPlnCyc` |  | |  |  |
-| `SubscrpnOrdIsPending` |  | |  |  |
-| `NrOfBillgCyclesBilledTogether` |  | |  |  |
-| `ServiceDocumentItemCanclnParty` |  | |  |  |
-| `ServiceDocumentItmCanclnReason` |  | |  |  |
-| `SrvcDocItmCanclnProcedure` |  | |  |  |
-| `ServiceDocumentRnwlDuration` |  | |  | `} ServiceDocumentRnwlDuration` |
-| `ServiceDocRnwlDurationUnit` |  | |  |  |
-| `ServiceDocExtensionDuration` |  | |  | `} ServiceDocExtensionDuration` |
-| `ServiceDocExtnDurationUnit` |  | |  |  |
-| `SrvcDocItemGracePeriod` |  | |  |  |
-| `SrvcDocItemGracePeriodUnit` |  | |  |  |
-| `SrvcDocItmGrcePerdEndDateTime` |  | |  |  |
-| `SbscrContrItmBizValdStrtDteTme` |  | |  |  |
-| `SbscrContrItmBizValdEndDteTme` |  | |  |  |
-| `SubscrpnContrAutoRnwlIsActv` |  | |  |  |
-| `ReferenceInHouseRepair` |  | |  |  |
-| `ReferenceInHouseRepairItem` |  | |  |  |
-| `RefInHouseRepairIsExisting` |  | |  |  |
-| `SrvcDocItemCreditStatus` |  | |  |  |
-| `SrvcDocItmBslnCostPostgStatus` |  | |  |  |
-| `SrvcDocItmContinuousCostStatus` |  | |  |  |
-| `SrvcDocItemIsUnplanned` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `SrvcDocSubitemOrigin` |  | |  |  |
-| `SrvcDocItmAcctAssgmtObjectType` |  | |  |  |
-| `SrvcDocItmAcctAssgmtObject` |  | |  |  |
-| `SrvcDocItmGoodsIssueQuantity` |  | |  | `} SrvcDocItmGoodsIssueQuantity` |
-| `Batch` |  | |  |  |
-| `SrvcDocItmPartReferenceItem` |  | |  |  |
-| `SrvcDocItmApptRefObjectUUID` |  | |  |  |
-| `SrvcDocItmApptReferenceItem` |  | |  |  |
-| `SrvcDocItmRefObjReferenceItem` |  | |  |  |
-| `_ServiceDocument` | | ✓ | | |
-| `_ParentServiceDocItem` | | ✓ | | |
-| `_ParentServiceDocItem_2` | | ✓ | | |
-| `_ServiceDocItemRefObj` | | ✓ | | |
-| `_ServiceDocItemMainRefObj` | | ✓ | | |
-| `_ServiceDocLongText` | | ✓ | | |
-| `_ServiceDocItemNote` | | ✓ | | |
-| `_ServiceDocItemTypeSlsSttg` | | ✓ | | |
-| `_ServiceDocItmPredecessor` | | ✓ | | |
-| `_ServiceDocItmSuccessor` | | ✓ | | |
-| `_ServiceDocItmPrdcssr_2` | | ✓ | | |
-| `_ServiceDocItmSuccssr_2` | | ✓ | | |
-| `_ServiceDocumentItemPrdcssr_3` | | ✓ | | |
-| `_ServiceDocumentItemSuccssr_3` | | ✓ | | |
-| `_SrvcMaterialPricingGroup` | | ✓ | | |
-| `_CustMgmtPartner` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceDocItemPriority` | | ✓ | | |
-| `_ServiceDocItemCategory` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_SrvcMgmtProductHierarchy` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ServiceTeam` | | ✓ | | |
-| `_ServiceEmployee` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_ServiceDocItemStatus` | | ✓ | | |
-| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
-| `_ServiceDocItemHasError` | | ✓ | | |
-| `_ServiceDocItemBillingStatus` | | ✓ | | |
-| `_SrvcDocItemIsRelForBillgSts` | | ✓ | | |
-| `_ServiceDocumentIsOpen` | | ✓ | | |
-| `_SrvcDocItemTransferStatus` | | ✓ | | |
-| `_BillingBlockReason` | | ✓ | | |
-| `_SrvcDocItemBillgRlvnce` | | ✓ | | |
-| `_BillingRequestItem` | | ✓ | | |
-| `_ServiceProductList` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_BaseUnit_2` | | ✓ | | |
-| `_SalesUnit` | | ✓ | | |
-| `_WeightUnit` | | ✓ | | |
-| `_VolumeUnit` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_SrvcSEPAMandateRelevance` | | ✓ | | |
-| `_FixedPrice` | | ✓ | | |
-| `_StatusObjItemStatus` | | ✓ | | |
-| `_SalesOrganizationOrgUnit` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_ServiceTeamHeader` | | ✓ | | |
-| `_EnterpriseServiceOrg` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
-| `_RespSrvcOrganizationOrgUnit` | | ✓ | | |
-| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | |
-| `_ServiceDocOvertimeCat` | | ✓ | | |
-| `_Industry` | | ✓ | | |
-| `_ServiceDocItemRejectionReason` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SettlementDateRule` | | ✓ | | |
-| `_BillPlanDateRule` | | ✓ | | |
-| `_ResponseProfile` | | ✓ | | |
-| `_ServiceProfile` | | ✓ | | |
-| `_TechResource` | | ✓ | | |
-| `_MasterAgrmtItem` | | ✓ | | |
-| `_BillableControl` | | ✓ | | |
-| `_DeliveryBlockReason` | | ✓ | | |
-| `_VATRegistrationCountry` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_MaterialPricingGroup_2` | | ✓ | | |
-| `_AdditionalMaterialGroup1` | | ✓ | | |
-| `_AdditionalMaterialGroup2` | | ✓ | | |
-| `_AdditionalMaterialGroup3` | | ✓ | | |
-| `_AdditionalMaterialGroup4` | | ✓ | | |
-| `_AdditionalMaterialGroup5` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_ActualServiceDurationUnit` | | ✓ | | |
-| `_ServiceDurationUnit` | | ✓ | | |
-| `_SrvcContrItemRnwlDurationUnit` | | ✓ | | |
-| `_SrvcContrItemExtnDurationUnit` | | ✓ | | |
-| `_SrvcDocItemCreditStatus` | | ✓ | | |
-| `_SrvcDocItmBslnCostPostgStat` | | ✓ | | |
-| `_SrvcDocItmContinuousCostStat` | | ✓ | | |
-| `_SrvcDocExecutionStatus` | | ✓ | | |
-| `_SrvcDocIsQuotation` | | ✓ | | |
-| `_SrvcDocIsQuotation_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |  |  |
+| `ServiceDocument` | ✓ | |  |  |  |  |
+| `ServiceDocumentItem` | ✓ | |  |  |  |  |
+| `ServiceDocumentDescription` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocumentItemPriority` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SrvcDocItmPostingDateTime` |  | |  |  |  |  |
+| `SrvcDocItmValdtyStartDateTime` |  | |  |  |  |  |
+| `SrvcDocItmValdtyEndDateTime` |  | |  |  |  |  |
+| `ServiceDocumentItemUUID` |  | |  |  |  |  |
+| `ServiceDocumentItemCharUUID` |  | |  |  |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
+| `ServiceDocumentUUID` |  | |  |  |  |  |
+| `ParentServiceDocumentItemUUID` |  | |  |  |  |  |
+| `ServiceDocumentItemDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `ServiceDocumentTemplateType` |  | |  |  |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreationDate` |  | |  | `cast( tstmp_to_dats( ServiceDocItemCreationDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |  |  |
+| `ServiceDocItemChangedDate` |  | |  | `cast( tstmp_to_dats( ServiceDocItemChangedDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |  |  |
+| `OriginallyRequestedProduct` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ServiceDocItemCategory` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ResponsibleCostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenterDeterminationDate` |  | |  |  |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |  |  |
+| `RefBusinessSolutionOrderItem` |  | |  |  |  |  |
+| `BusSolnOrdItemBundleProduct` |  | |  |  |  |  |
+| `BusSolnOrdItemBundleItem` |  | |  |  |  |  |
+| `SrvcDocItmRequestedQuantity` |  | |  |  |  |  |
+| `InvoiceAmountInInvoiceDocCrcy` |  | |  |  |  |  |
+| `InvoiceQuantity` |  | |  |  |  |  |
+| `SrvcDocItmDeliveredQuantity` |  | |  |  |  |  |
+| `SrvcDocItmReleasedQuantity` |  | |  |  |  |  |
+| `CumulativeConfirmedQuantity` |  | |  |  |  |  |
+| `SrvcDocItmReldAmtInTransCrcy` |  | |  |  |  |  |
+| `SrvcDocItemCumulatedNetAmount` |  | |  |  |  |  |
+| `SrvcDocItmOrdToBaseQtyNmrtr` |  | |  |  |  |  |
+| `SrvcDocItmOrdToBaseQtyDnmntr` |  | |  |  |  |  |
+| `OrderToBaseQuantityExponent` |  | |  |  |  |  |
+| `ServiceDocItemQuantityUnit` |  | |  |  |  |  |
+| `SrvcDocItemBaseQuantityUnit` |  | |  |  |  |  |
+| `BillingDateTime` |  | |  |  |  |  |
+| `BillingDocCreationDateTime` |  | |  |  |  |  |
+| `BillingPlanTimeZone` |  | |  |  |  |  |
+| `BillingPriceSourceName` |  | |  |  |  |  |
+| `DocumentDescription` |  | |  | `cast( '' as abap.char( 16 ) )` |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ServiceTeam` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `ServiceEmployee` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `ServiceDocumentItemStatus` |  | |  |  |  |  |
+| `ServiceDocumentItemHasError` |  | |  |  |  |  |
+| `SrvcDocItmIsReleasedForBilling` |  | |  |  |  |  |
+| `ServiceDocItemBillingStatus` |  | |  |  |  |  |
+| `ServiceDocumentItemIsOpen` |  | |  |  |  |  |
+| `SrvcDocItmDeliveryStatus` |  | |  |  |  |  |
+| `SrvcDocItmGoodsIssueStatus` |  | |  |  |  |  |
+| `ServiceDocumentItemIsReleased` |  | |  |  |  |  |
+| `ServiceDocumentItemIsRejected` |  | |  |  |  |  |
+| `SrvcDocItemIsWithdrawn` |  | |  |  |  |  |
+| `SrvcDocItemConcurStatus` |  | |  |  |  |  |
+| `ServiceDocumentItemIsQuotation` |  | |  |  |  |  |
+| `SrvcDocItemTransferStatus` |  | |  |  |  |  |
+| `MaintSrvcOrdExecutionStatus` |  | |  |  |  |  |
+| `SrvcDocItemExecutionStatus` |  | |  |  |  |  |
+| `ServiceDocumentItemQuantity` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `StatisticsCurrency` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `AccountingExchangeRate` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `BillableControl` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `ProductTaxClassification1` |  | |  |  |  |  |
+| `ProductTaxClassification2` |  | |  |  |  |  |
+| `ProductTaxClassification3` |  | |  |  |  |  |
+| `ProductTaxClassification4` |  | |  |  |  |  |
+| `ProductTaxClassification5` |  | |  |  |  |  |
+| `ProductTaxClassification6` |  | |  |  |  |  |
+| `ProductTaxClassification7` |  | |  |  |  |  |
+| `ProductTaxClassification8` |  | |  |  |  |  |
+| `ProductTaxClassification9` |  | |  |  |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
+| `ServiceDocItemGrossAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemNetPrice` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `SrvcDocItmBillingRelevance` |  | |  |  |  |  |
+| `DynItemProcessorPrfl` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `SrvcMaterialPricingGroup` |  | |  |  |  |  |
+| `MaterialPricingGroup_2` |  | |  |  |  |  |
+| `ProductGroup1` |  | |  |  |  |  |
+| `ProductGroup2` |  | |  |  |  |  |
+| `ProductGroup3` |  | |  |  |  |  |
+| `ProductGroup4` |  | |  |  |  |  |
+| `ProductGroup5` |  | |  |  |  |  |
+| `ProductHierarchy` |  | |  |  |  |  |
+| `Industry` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `PurchaseOrderByShipToParty` |  | |  |  |  |  |
+| `ServiceDocItemRejectionReason` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ServiceSchema1Category1UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category2UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category3UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category4UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category5UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category6UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category7UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category8UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category9UUID` |  | |  |  |  |  |
+| `ServiceSchema1Category10UUID` |  | |  |  |  |  |
+| `SrvcCatztnSchema1` |  | |  |  |  |  |
+| `SrvcCatztnSchemaCategory1` |  | |  |  |  |  |
+| `ServiceSchema2Category1UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category2UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category3UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category4UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category5UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category6UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category7UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category8UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category9UUID` |  | |  |  |  |  |
+| `ServiceSchema2Category10UUID` |  | |  |  |  |  |
+| `SrvcCatztnSchema2` |  | |  |  |  |  |
+| `SrvcCatztnSchemaCategory2` |  | |  |  |  |  |
+| `SettlementPeriodRuleUUID` |  | |  |  |  |  |
+| `BillingPlanBillingDateRuleUUID` |  | |  |  |  |  |
+| `BillingPlanPriceDateRule` |  | |  |  |  |  |
+| `BillingPlanIsFinalized` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `ResponsibleSalesOrganization` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `ResponsibleServiceOrganization` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |  |  |
+| `EnterpriseServiceOrganization` |  | |  |  |  |  |
+| `EnterpriseProjectServiceOrg` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `ServiceContrItemStartDateTime` |  | |  |  |  |  |
+| `ServiceContrItemEndDateTime` |  | |  |  |  |  |
+| `RequestedServiceStartDate` |  | |  | `tstmp_to_dats( RequestedServiceStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `RequestedServiceEndDate` |  | |  | `tstmp_to_dats( RequestedServiceEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `ServiceContractItemStartDate` |  | |  | `tstmp_to_dats( ServiceContrItemStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `ServiceContractItemEndDate` |  | |  | `tstmp_to_dats( ServiceContrItemEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `ServiceFirstResponseByDateTime` |  | |  |  |  |  |
+| `ServiceFirstResponseByDate` |  | |  | `tstmp_to_dats( ServiceFirstResponseByDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `SrvcDocItemSLADueByDateTime` |  | |  |  |  |  |
+| `SrvcDocItemSLADueByDate` |  | |  | `tstmp_to_dats( SrvcDocItemSLADueByDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `ActualServiceStartDateTime` |  | |  |  |  |  |
+| `ActualServiceEndDateTime` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDuration` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDurationUnit` |  | |  |  |  |  |
+| `SrvcContrItemExtensionDuration` |  | |  |  |  |  |
+| `SrvcContrItemExtnDurationUnit` |  | |  |  |  |  |
+| `PlannedServiceStartDateTime` |  | |  |  |  |  |
+| `PlannedServiceEndDateTime` |  | |  |  |  |  |
+| `PlannedServiceStartDate` |  | |  | `tstmp_to_dats( PlannedServiceStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `PlannedServiceEndDate` |  | |  | `tstmp_to_dats( PlannedServiceEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `SrvcDocItmTmeSliceStrtDteTme` |  | |  |  |  |  |
+| `SrvcDocItmTmeSliceEndDteTme` |  | |  |  |  |  |
+| `SrvcContrItemRenewalDateTime` |  | |  |  |  |  |
+| `ActualServiceDuration` |  | |  |  |  |  |
+| `ActualServiceDurationUnit` |  | |  |  |  |  |
+| `ServiceWorkDuration` |  | |  |  |  |  |
+| `ServiceWorkDuration_2` |  | |  |  |  |  |
+| `ServiceWorkDurationUnit` |  | |  |  |  |  |
+| `SrvcOrderConfirmationRelevance` |  | |  |  |  |  |
+| `ServiceTransactionChargeType` |  | |  |  |  |  |
+| `SrvcTransactionValuationType` |  | |  |  |  |  |
+| `ResponseProfile` |  | |  |  |  |  |
+| `ServiceProfile` |  | |  |  |  |  |
+| `ServiceDuration` |  | |  |  |  |  |
+| `ServiceDurationUnit` |  | |  |  |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
+| `MasterWarranty` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `ItemOrderProbabilityInPercent` |  | |  |  |  |  |
+| `QuotationIsAccepted` |  | |  |  |  |  |
+| `ConfigurationNumber` |  | |  |  |  |  |
+| `IncotermsPart1` |  | |  |  |  |  |
+| `IncotermsPart2` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `OrderCombinationIsAllowed` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `CABillgCycle` |  | |  |  |  |  |
+| `RevenueAccountingReference` |  | |  |  |  |  |
+| `RevenueAccountingRefType` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `DeliveryGroup` |  | |  |  |  |  |
+| `DeliveryBlockReason` |  | |  |  |  |  |
+| `RequestedDeliveryUTCDateTime` |  | |  | `RequestedDeliveryDateTime` |  |  |
+| `ErlstConfirmedDeliveryDateTime` |  | |  |  |  |  |
+| `LtstConfirmedDeliveryDateTime` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  | `tstmp_to_dats( RequestedDeliveryDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |  |  |
+| `SubscrpnOrdProdSelType` |  | |  |  |  |  |
+| `SubscriptionContract` |  | |  |  |  |  |
+| `SrvcTransChangeProcess` |  | |  |  |  |  |
+| `SrvcTransChangeProcessType` |  | |  |  |  |  |
+| `SrvcTransChgProcSourceItemUUID` |  | |  |  |  |  |
+| `CustMgmtMasterAgreement` |  | |  |  |  |  |
+| `CustMgmtMstrAgrmtItem` |  | |  |  |  |  |
+| `SubscrpnContrActivationStatus` |  | |  |  |  |  |
+| `SubscrpnContrTimeSliceStatus` |  | |  |  |  |  |
+| `SharingContractID` |  | |  |  |  |  |
+| `CrsCatalogMappingVersionNumber` |  | |  |  |  |  |
+| `CustMgmtMstrAgrmtParentItem` |  | |  |  |  |  |
+| `SubscrpnContractSharingGroupID` |  | |  |  |  |  |
+| `CAPartnerSettlementRule` |  | |  |  |  |  |
+| `ChangeProcessGroup` |  | |  |  |  |  |
+| `BusSolutionQtnItemIsPhased` |  | |  |  |  |  |
+| `BusSolnQtnItmPhasedPrdcssrItem` |  | |  |  |  |  |
+| `SubscriptionContractItem` |  | |  |  |  |  |
+| `SrvcDocItemWithdrawalReason` |  | |  |  |  |  |
+| `SrvcDocItemRefundType` |  | |  |  |  |  |
+| `SrvcDocItmRecrrgChrgNetAmount` |  | |  |  |  |  |
+| `SubscrpnContrTrmsAreSpecified` |  | |  |  |  |  |
+| `MidBillgCycExprtnIsAllowed` |  | |  |  |  |  |
+| `SrvcDocItmRecrrgChrgTaxAmount` |  | |  |  |  |  |
+| `SrvcDocItmRecrrgChrgGrossAmt` |  | |  |  |  |  |
+| `SrvcDocItmRecrrgChrgDuration` |  | |  |  |  |  |
+| `SrvcDocItmRecrrgChrgDurnUnit` |  | |  |  |  |  |
+| `SubscriptionContractReference` |  | |  |  |  |  |
+| `SubscriptionBillingCycle` |  | |  |  |  |  |
+| `SubscrpnBillgRatePlanCharUUID` |  | |  |  |  |  |
+| `SubscriptionContractExternalID` |  | |  |  |  |  |
+| `SbscrShContrSvTrMtAgrItmUUID` |  | |  |  |  |  |
+| `SbscrShContrSvTrMtAgrItmCstPrd` |  | |  |  |  |  |
+| `SvTrMtAgrItmIsFxdConfign` |  | |  |  |  |  |
+| `SubscrpnContrItmBillgPlnCyc` |  | |  |  |  |  |
+| `SubscrpnOrdIsPending` |  | |  |  |  |  |
+| `NrOfBillgCyclesBilledTogether` |  | |  |  |  |  |
+| `ServiceDocumentItemCanclnParty` |  | |  |  |  |  |
+| `ServiceDocumentItmCanclnReason` |  | |  |  |  |  |
+| `SrvcDocItmCanclnProcedure` |  | |  |  |  |  |
+| `ServiceDocumentRnwlDuration` |  | |  |  |  |  |
+| `ServiceDocRnwlDurationUnit` |  | |  |  |  |  |
+| `ServiceDocExtensionDuration` |  | |  |  |  |  |
+| `ServiceDocExtnDurationUnit` |  | |  |  |  |  |
+| `SrvcDocItemGracePeriod` |  | |  |  |  |  |
+| `SrvcDocItemGracePeriodUnit` |  | |  |  |  |  |
+| `SrvcDocItmGrcePerdEndDateTime` |  | |  |  |  |  |
+| `SbscrContrItmBizValdStrtDteTme` |  | |  |  |  |  |
+| `SbscrContrItmBizValdEndDteTme` |  | |  |  |  |  |
+| `SubscrpnContrAutoRnwlIsActv` |  | |  |  |  |  |
+| `ReferenceInHouseRepair` |  | |  |  |  |  |
+| `ReferenceInHouseRepairItem` |  | |  |  |  |  |
+| `RefInHouseRepairIsExisting` |  | |  |  |  |  |
+| `SrvcDocItemCreditStatus` |  | |  |  |  |  |
+| `SrvcDocItmBslnCostPostgStatus` |  | |  |  |  |  |
+| `SrvcDocItmContinuousCostStatus` |  | |  |  |  |  |
+| `SrvcDocItemIsUnplanned` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `SrvcDocSubitemOrigin` |  | |  |  |  |  |
+| `SrvcDocItmAcctAssgmtObjectType` |  | |  |  |  |  |
+| `SrvcDocItmAcctAssgmtObject` |  | |  |  |  |  |
+| `SrvcDocItmGoodsIssueQuantity` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `SrvcDocItmPartReferenceItem` |  | |  |  |  |  |
+| `SrvcDocItmApptRefObjectUUID` |  | |  |  |  |  |
+| `SrvcDocItmApptReferenceItem` |  | |  |  |  |  |
+| `SrvcDocItmRefObjReferenceItem` |  | |  |  |  |  |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_ParentServiceDocItem` | | ✓ | | | | |
+| `_ParentServiceDocItem_2` | | ✓ | | | | |
+| `_ServiceDocItemRefObj` | | ✓ | | | | |
+| `_ServiceDocItemMainRefObj` | | ✓ | | | | |
+| `_ServiceDocLongText` | | ✓ | | | | |
+| `_ServiceDocItemNote` | | ✓ | | | | |
+| `_ServiceDocItemTypeSlsSttg` | | ✓ | | | | |
+| `_ServiceDocItmPredecessor` | | ✓ | | | | |
+| `_ServiceDocItmSuccessor` | | ✓ | | | | |
+| `_ServiceDocItmPrdcssr_2` | | ✓ | | | | |
+| `_ServiceDocItmSuccssr_2` | | ✓ | | | | |
+| `_ServiceDocumentItemPrdcssr_3` | | ✓ | | | | |
+| `_ServiceDocumentItemSuccssr_3` | | ✓ | | | | |
+| `_SrvcMaterialPricingGroup` | | ✓ | | | | |
+| `_CustMgmtPartner` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocItemPriority` | | ✓ | | | | |
+| `_ServiceDocItemCategory` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_SrvcMgmtProductHierarchy` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ServiceTeam` | | ✓ | | | | |
+| `_ServiceEmployee` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_ServiceDocItemStatus` | | ✓ | | | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | | | |
+| `_ServiceDocItemHasError` | | ✓ | | | | |
+| `_ServiceDocItemBillingStatus` | | ✓ | | | | |
+| `_SrvcDocItemIsRelForBillgSts` | | ✓ | | | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | | | |
+| `_SrvcDocItemTransferStatus` | | ✓ | | | | |
+| `_BillingBlockReason` | | ✓ | | | | |
+| `_SrvcDocItemBillgRlvnce` | | ✓ | | | | |
+| `_BillingRequestItem` | | ✓ | | | | |
+| `_ServiceProductList` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_BaseUnit_2` | | ✓ | | | | |
+| `_SalesUnit` | | ✓ | | | | |
+| `_WeightUnit` | | ✓ | | | | |
+| `_VolumeUnit` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | | | |
+| `_FixedPrice` | | ✓ | | | | |
+| `_StatusObjItemStatus` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_ServiceTeamHeader` | | ✓ | | | | |
+| `_EnterpriseServiceOrg` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_RespSrvcOrganizationOrgUnit` | | ✓ | | | | |
+| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_ServiceDocOvertimeCat` | | ✓ | | | | |
+| `_Industry` | | ✓ | | | | |
+| `_ServiceDocItemRejectionReason` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SettlementDateRule` | | ✓ | | | | |
+| `_BillPlanDateRule` | | ✓ | | | | |
+| `_ResponseProfile` | | ✓ | | | | |
+| `_ServiceProfile` | | ✓ | | | | |
+| `_TechResource` | | ✓ | | | | |
+| `_MasterAgrmtItem` | | ✓ | | | | |
+| `_BillableControl` | | ✓ | | | | |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_VATRegistrationCountry` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_MaterialPricingGroup_2` | | ✓ | | | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_ActualServiceDurationUnit` | | ✓ | | | | |
+| `_ServiceDurationUnit` | | ✓ | | | | |
+| `_SrvcContrItemRnwlDurationUnit` | | ✓ | | | | |
+| `_SrvcContrItemExtnDurationUnit` | | ✓ | | | | |
+| `_SrvcDocItemCreditStatus` | | ✓ | | | | |
+| `_SrvcDocItmBslnCostPostgStat` | | ✓ | | | | |
+| `_SrvcDocItmContinuousCostStat` | | ✓ | | | | |
+| `_SrvcDocExecutionStatus` | | ✓ | | | | |
+| `_SrvcDocIsQuotation` | | ✓ | | | | |
+| `_SrvcDocIsQuotation_2` | | ✓ | | | | |
 
 ## Associations
 

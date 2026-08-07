@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PhysicalInventoryCountStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as pi_hdr_count_status_code )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhysicalInventoryCountStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as pi_hdr_count_status_code )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

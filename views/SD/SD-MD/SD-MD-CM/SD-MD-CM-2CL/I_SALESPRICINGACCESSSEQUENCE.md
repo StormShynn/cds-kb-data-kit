@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccessSequence` | ✓ | |  | `kozgf` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccessSequence` | ✓ | |  | `kozgf` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

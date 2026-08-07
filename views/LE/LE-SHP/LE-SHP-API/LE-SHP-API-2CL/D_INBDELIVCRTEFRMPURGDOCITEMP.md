@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReferenceSDDocument` |  | |  | `vgbel` |
-| `ReferenceSDDocumentItem` |  | |  | `vgpos` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReferenceSDDocument` |  | |  | `vgbel` |  |  |
+| `ReferenceSDDocumentItem` |  | |  | `vgpos` |  |  |
 
 ## Source Code
 

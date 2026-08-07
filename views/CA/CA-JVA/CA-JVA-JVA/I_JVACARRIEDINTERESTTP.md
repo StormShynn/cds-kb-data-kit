@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JointVenture` | ✓ | |  |  |
-| `JointVentureEquityGroup` | ✓ | |  |  |
-| `JointVentureCarriedPartner` | ✓ | |  |  |
-| `JointVentureCarryingPartner` | ✓ | |  |  |
-| `JVACarriedSharePercent` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_JointVentureMasterFld` | | ✓ | | |
-| `_JntVntrEquityGrp` | | ✓ | | |
-| `_JVACarriedPartner` | | ✓ | | |
-| `_JVACarryOwner` | | ✓ | | |
-| `_JointVenturePartnerShare` | | ✓ | | |
-| `_JointVentureEquityGroup` | | ✓ | | |
-| `_JointVenture` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JointVenture` | ✓ | |  |  |  |  |
+| `JointVentureEquityGroup` | ✓ | |  |  |  |  |
+| `JointVentureCarriedPartner` | ✓ | |  |  |  |  |
+| `JointVentureCarryingPartner` | ✓ | |  |  |  |  |
+| `JVACarriedSharePercent` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JointVentureMasterFld` | | ✓ | | | | |
+| `_JntVntrEquityGrp` | | ✓ | | | | |
+| `_JVACarriedPartner` | | ✓ | | | | |
+| `_JVACarryOwner` | | ✓ | | | | |
+| `_JointVenturePartnerShare` | | ✓ | | | | |
+| `_JointVentureEquityGroup` | | ✓ | | | | |
+| `_JointVenture` | | ✓ | | | | |
 
 ## Source Code
 

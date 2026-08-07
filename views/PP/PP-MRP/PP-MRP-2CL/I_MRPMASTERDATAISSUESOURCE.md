@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPMasterDataIssueSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as pph_source_of_issue preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPMasterDataIssueSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as pph_source_of_issue preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

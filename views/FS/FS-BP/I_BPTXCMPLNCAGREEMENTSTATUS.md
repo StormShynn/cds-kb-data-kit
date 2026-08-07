@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BPTaxComplianceAgreementStatus` | ✓ | |  | `cast ( dd07l.domvalue_l as fsbp_taxc_agree_status )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPTaxComplianceAgreementStatus` | ✓ | |  | `cast ( dd07l.domvalue_l as fsbp_taxc_agree_status )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

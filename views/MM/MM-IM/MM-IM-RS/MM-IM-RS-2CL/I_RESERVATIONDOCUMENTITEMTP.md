@@ -31,39 +31,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Reservation` | ✓ | |  |  |
-| `ReservationItem` | ✓ | |  |  |
-| `RecordType` | ✓ | |  |  |
-| `Product` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Batch` |  | |  | `, useAsTemplate: true } ] Batch` |
-| `ValuationType` |  | |  |  |
-| `EntryUnit` |  | |  |  |
-| `ResvnItmRequiredQtyInEntryUnit` |  | |  |  |
-| `MatlCompRequirementDate` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `ResvnAccountIsEnteredManually` |  | |  |  |
-| `ReservationItemText` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `GoodsMovementIsAllowed` |  | |  |  |
-| `ReservationItmIsMarkedForDeltn` |  | |  |  |
-| `ReservationItemIsFinallyIssued` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ResvnItmRequiredQtyInBaseUnit` |  | |  |  |
-| `ResvnItmWithdrawnQtyInBaseUnit` |  | |  |  |
-| `ConfdQtyForATPInBaseUoM` |  | |  |  |
-| `RecipientLocationCode` |  | |  |  |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_GoodsMovementType` | | ✓ | | |
-| `_RecipientLocationCode` | | ✓ | | |
-| `_ReservationDocumentHeaderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Reservation` | ✓ | |  |  |  |  |
+| `ReservationItem` | ✓ | |  |  |  |  |
+| `RecordType` | ✓ | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `EntryUnit` |  | |  |  |  |  |
+| `ResvnItmRequiredQtyInEntryUnit` |  | |  |  |  |  |
+| `MatlCompRequirementDate` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `ResvnAccountIsEnteredManually` |  | |  |  |  |  |
+| `ReservationItemText` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `GoodsMovementIsAllowed` |  | |  |  |  |  |
+| `ReservationItmIsMarkedForDeltn` |  | |  |  |  |  |
+| `ReservationItemIsFinallyIssued` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ResvnItmRequiredQtyInBaseUnit` |  | |  |  |  |  |
+| `ResvnItmWithdrawnQtyInBaseUnit` |  | |  |  |  |  |
+| `ConfdQtyForATPInBaseUoM` |  | |  |  |  |  |
+| `RecipientLocationCode` |  | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_RecipientLocationCode` | | ✓ | | | | |
+| `_ReservationDocumentHeaderTP` | | ✓ | | | | |
 
 ## Source Code
 

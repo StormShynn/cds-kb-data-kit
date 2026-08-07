@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnFSItemElimination` | ✓ | | `_CnsldtnFSItemElimination` | `CnsldtnFSItemElimination` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnFSItemElimination` | ✓ | | `_CnsldtnFSItemElimination` | `CnsldtnFSItemElimination` |  |  |
 
 ## Source Code
 

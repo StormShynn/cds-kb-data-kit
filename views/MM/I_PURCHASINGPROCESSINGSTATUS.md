@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingProcessingStatus` | ✓ | |  | `cast ( domvalue_l as meprocstate )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingProcessingStatus` | ✓ | |  | `cast ( domvalue_l as meprocstate )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

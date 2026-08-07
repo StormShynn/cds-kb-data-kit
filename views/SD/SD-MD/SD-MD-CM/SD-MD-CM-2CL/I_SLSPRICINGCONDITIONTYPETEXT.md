@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `ConditionType` | ✓ | |  |  |
-| `ConditionTypeName` |  | |  |  |
-| `_SlsPricingConditionType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `ConditionType` | ✓ | |  |  |  |  |
+| `ConditionTypeName` |  | |  |  |  |  |
+| `_SlsPricingConditionType` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LabelType` | ✓ | |  | `cast( etiar as labeltype preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LabelType` | ✓ | |  | `cast( etiar as labeltype preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `BillingDocumentTypeName` |  | |  | `cast ( Text.BillingProcessDocumentTypeName as billingdocumenttypename preserving type )` |
-| `_BillingDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `BillingDocumentTypeName` |  | |  | `cast ( Text.BillingProcessDocumentTypeName as billingdocumenttypename preserving type )` |  |  |
+| `_BillingDocumentType` | | ✓ | | | | |
 
 ## Source Code
 

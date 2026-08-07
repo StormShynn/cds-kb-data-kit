@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerRatingTrend` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerRatingTrend` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

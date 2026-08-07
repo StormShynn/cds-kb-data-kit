@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralSupplierQuotation` | ✓ | |  |  |
-| `CentralSupplierQuotationItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `SchedLineStscDeliveryDate` |  | |  |  |
-| `ScheduleLineDeliveryTime` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `RoughGoodsReceiptQty` |  | |  |  |
-| `AwardedQuantity` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `PerformancePeriodStartDate` |  | |  |  |
-| `PerformancePeriodEndDate` |  | |  |  |
-| `_CentralSupplierQuotation` | | ✓ | | |
-| `_CntrlSupplierQuotationItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralSupplierQuotation` | ✓ | |  |  |  |  |
+| `CentralSupplierQuotationItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |  |  |
+| `AwardedQuantity` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |  |  |
+| `_CentralSupplierQuotation` | | ✓ | | | | |
+| `_CntrlSupplierQuotationItem` | | ✓ | | | | |
 
 ## Associations
 

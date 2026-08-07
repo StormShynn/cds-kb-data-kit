@@ -29,52 +29,52 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryLedgerTransaction` | ✓ | |  |  |
-| `TreasuryLedgerFlow` | ✓ | |  |  |
-| `TreasuryTransactionFlow` |  | |  |  |
-| `TrsyPosTransfSourceTargetCode` |  | |  |  |
-| `TreasuryPositionTransferGroup` |  | |  |  |
-| `TreasuryUpdateType` |  | |  |  |
-| `TreasuryPositionTransferFactor` |  | |  |  |
-| `TrsyPosQuantityChangeCategory` |  | |  |  |
-| `TrsyPosAmountChangeCategory` |  | |  |  |
-| `QuantityInPieces` |  | |  |  |
-| `NominalAmountInNominalCurrency` |  | |  |  |
-| `OriglNominalAmtInNominalCrcy` |  | |  |  |
-| `NominalCurrency` |  | |  |  |
-| `IndexCleanRpaytAmtInPosCrcy` |  | |  |  |
-| `AmountInPositionCurrency` |  | |  |  |
-| `PositionCurrency` |  | |  |  |
-| `AmountInValuationCurrency` |  | |  |  |
-| `ValuationCurrency` |  | |  |  |
-| `CalculationDate` |  | |  |  |
-| `CalcDateIsAsEndDateInclusive` |  | |  |  |
-| `DueDate` |  | |  |  |
-| `CalculationPeriodStartDate` |  | |  |  |
-| `CalculationPeriodEndDate` |  | |  |  |
-| `EffectiveInterestRate` |  | |  |  |
-| `EffctvIntrstRateRdmptnSched` |  | |  |  |
-| `NextEffectiveInterestRate` |  | |  |  |
-| `FixedRedemptionSchedule` |  | |  |  |
-| `CalculationBasis` |  | |  |  |
-| `TreasuryPosition` |  | |  |  |
-| `TreasuryPositionLedgerDate` |  | |  |  |
-| `TrsySubPosition` |  | |  |  |
-| `TreasuryBusinessTransCategory` |  | |  |  |
-| `TreasuryBusinessTransaction` |  | |  |  |
-| `TrsyBusTransactionCreationDate` |  | |  |  |
-| `TrsyBusTransactionCreationTime` |  | |  |  |
-| `TrsyDerivedBusinessTransStatus` |  | |  |  |
-| `TreasuryBusinessTransStatus` |  | |  |  |
-| `TreasuryValuationArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `OriglTrsyBusinessTransaction` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PostingReversalDate` |  | |  |  |
-| `TrsyIntragroupTransacStatus` |  | |  |  |
-| `TreasuryUserStatisticsUUID` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryLedgerTransaction` | ✓ | |  |  |  |  |
+| `TreasuryLedgerFlow` | ✓ | |  |  |  |  |
+| `TreasuryTransactionFlow` |  | |  |  |  |  |
+| `TrsyPosTransfSourceTargetCode` |  | |  |  |  |  |
+| `TreasuryPositionTransferGroup` |  | |  |  |  |  |
+| `TreasuryUpdateType` |  | |  |  |  |  |
+| `TreasuryPositionTransferFactor` |  | |  |  |  |  |
+| `TrsyPosQuantityChangeCategory` |  | |  |  |  |  |
+| `TrsyPosAmountChangeCategory` |  | |  |  |  |  |
+| `QuantityInPieces` |  | |  |  |  |  |
+| `NominalAmountInNominalCurrency` |  | |  |  |  |  |
+| `OriglNominalAmtInNominalCrcy` |  | |  |  |  |  |
+| `NominalCurrency` |  | |  |  |  |  |
+| `IndexCleanRpaytAmtInPosCrcy` |  | |  |  |  |  |
+| `AmountInPositionCurrency` |  | |  |  |  |  |
+| `PositionCurrency` |  | |  |  |  |  |
+| `AmountInValuationCurrency` |  | |  |  |  |  |
+| `ValuationCurrency` |  | |  |  |  |  |
+| `CalculationDate` |  | |  |  |  |  |
+| `CalcDateIsAsEndDateInclusive` |  | |  |  |  |  |
+| `DueDate` |  | |  |  |  |  |
+| `CalculationPeriodStartDate` |  | |  |  |  |  |
+| `CalculationPeriodEndDate` |  | |  |  |  |  |
+| `EffectiveInterestRate` |  | |  |  |  |  |
+| `EffctvIntrstRateRdmptnSched` |  | |  |  |  |  |
+| `NextEffectiveInterestRate` |  | |  |  |  |  |
+| `FixedRedemptionSchedule` |  | |  |  |  |  |
+| `CalculationBasis` |  | |  |  |  |  |
+| `TreasuryPosition` |  | |  |  |  |  |
+| `TreasuryPositionLedgerDate` |  | |  |  |  |  |
+| `TrsySubPosition` |  | |  |  |  |  |
+| `TreasuryBusinessTransCategory` |  | |  |  |  |  |
+| `TreasuryBusinessTransaction` |  | |  |  |  |  |
+| `TrsyBusTransactionCreationDate` |  | |  |  |  |  |
+| `TrsyBusTransactionCreationTime` |  | |  |  |  |  |
+| `TrsyDerivedBusinessTransStatus` |  | |  |  |  |  |
+| `TreasuryBusinessTransStatus` |  | |  |  |  |  |
+| `TreasuryValuationArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `OriglTrsyBusinessTransaction` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PostingReversalDate` |  | |  |  |  |  |
+| `TrsyIntragroupTransacStatus` |  | |  |  |  |  |
+| `TreasuryUserStatisticsUUID` |  | |  |  |  |  |
 
 ## Source Code
 

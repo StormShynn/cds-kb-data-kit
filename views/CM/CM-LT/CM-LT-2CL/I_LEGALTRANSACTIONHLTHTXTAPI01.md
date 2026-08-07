@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LegalTransactionHealth` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LegalTransactionHealthName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionHealth` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LegalTransactionHealthName` |  | |  |  |  |  |
 
 ## Source Code
 

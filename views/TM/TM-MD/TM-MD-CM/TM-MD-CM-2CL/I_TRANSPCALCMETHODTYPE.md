@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspCalculationMethodType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tcm_calc_mthd_type preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspCalculationMethodType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tcm_calc_mthd_type preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

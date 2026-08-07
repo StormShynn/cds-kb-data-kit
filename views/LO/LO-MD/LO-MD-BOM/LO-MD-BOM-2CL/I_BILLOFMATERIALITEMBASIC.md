@@ -32,105 +32,105 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterialCategory` | ✓ | |  | `stlty` |
-| `BillOfMaterial` | ✓ | |  | `stlnr` |
-| `BillOfMaterialItemNodeNumber` | ✓ | |  | `stlkn` |
-| `BOMItemInternalChangeCount` | ✓ | |  | `stpoz` |
-| `BillOfMaterialItemUUID` |  | |  | `guidx` |
-| `InheritedNodeNumberForBOMItem` |  | |  | `stvkn` |
-| `InheritedNodeNumberVersionBOM` |  | |  | `stvkn_versn` |
-| `ValidityStartDate` |  | |  | `datuv` |
-| `ValidityEndDate` |  | |  | `case when stpo.datuv != '00000000' and stpo.valid_to = '00000000' then cast('99991231' as datub ) else cast( stpo.valid_to as datub preserving type ) end` |
-| `EngineeringChangeDocument` |  | |  | `aennr` |
-| `ChgToEngineeringChgDocument` |  | |  | `ecn_to` |
-| `BOMItemRecordCreationDate` |  | |  | `andat` |
-| `BOMItemCreatedByUser` |  | |  | `annam` |
-| `BOMItemLastChangeDate` |  | |  | `aedat` |
-| `BOMItemLastChangedByUser` |  | |  | `aenam` |
-| `BillOfMaterialComponent` |  | |  | `idnrk` |
-| `BillOfMaterialItemCategory` |  | |  | `postp` |
-| `BillOfMaterialItemNumber` |  | |  | `posnr` |
-| `BillOfMaterialItemUnit` |  | |  | `meins` |
-| `BillOfMaterialItemQuantity` |  | |  | `menge` |
-| `IsSubItem` |  | |  | `upskz` |
-| `BOMItemSorter` |  | |  | `sortf` |
-| `FixedQuantity` |  | |  | `fmeng` |
-| `PurchasingGroup` |  | |  | `ekgrp` |
-| `Currency` |  | |  | `waers` |
-| `MaterialComponentPrice` |  | |  | `preis` |
-| `IdentifierBOMItem` |  | |  | `itmid` |
-| `MaterialPriceUnitQty` |  | |  | `peinh` |
-| `ComponentScrapInPercent` |  | |  | `ausch` |
-| `OperationScrapInPercent` |  | |  | `avoau` |
-| `IsNetScrap` |  | |  | `netau` |
-| `NumberOfVariableSizeItem` |  | |  | `roanz` |
-| `QuantityVariableSizeItem` |  | |  | `romen` |
-| `FormulaKey` |  | |  | `rform` |
-| `BOMItemText1` |  | |  | `potx1` |
-| `BOMItemText2` |  | |  | `potx2` |
-| `MaterialGroup` |  | |  | `matkl` |
-| `DocumentType` |  | |  | `dokar` |
-| `DocNumber` |  | |  | `doknr` |
-| `DocumentVersion` |  | |  | `dokvr` |
-| `DocumentPart` |  | |  | `doktl` |
-| `ClassNumber` |  | |  | `class` |
-| `ClassType` |  | |  | `klart` |
-| `ResultingItemCategory` |  | |  | `potpr` |
-| `DependencyObjectNumber` |  | |  | `knobj` |
-| `ObjectType` |  | |  | `objty` |
-| `IsClassificationRelevant` |  | |  | `kzclb` |
-| `IsBulkMaterial` |  | |  | `schgt` |
-| `BOMItemIsSparePart` |  | |  | `erskz` |
-| `BOMItemIsSalesRelevant` |  | |  | `rvrel` |
-| `IsProductionRelevant` |  | |  | `sanfe` |
-| `BOMItemIsPlantMaintRelevant` |  | |  | `sanin` |
-| `BOMItemIsCostingRelevant` |  | |  | `sanka` |
-| `IsEngineeringRelevant` |  | |  | `sanko` |
-| `SpecialProcurementType` |  | |  | `itsob` |
-| `IsBOMRecursiveAllowed` |  | |  | `rekrs` |
-| `OperationLeadTimeOffset` |  | |  | `nlfzv` |
-| `OpsLeadTimeOffsetUnit` |  | |  | `nlfmv` |
-| `IsMaterialProvision` |  | |  | `beikz` |
-| `BOMIsRecursive` |  | |  | `rekri` |
-| `DocumentIsCreatedByCAD` |  | |  | `cadpo` |
-| `DistrKeyCompConsumption` |  | |  | `verti` |
-| `DeliveryDurationInDays` |  | |  | `lifzt` |
-| `Creditor` |  | |  | `lifnr` |
-| `CostElement` |  | |  | `sakto` |
-| `Size1` |  | |  | `roms1` |
-| `Size2` |  | |  | `roms2` |
-| `Size3` |  | |  | `roms3` |
-| `UnitOfMeasureForSize1To3` |  | |  | `romei` |
-| `GoodsReceiptDuration` |  | |  | `webaz` |
-| `PurchasingOrganization` |  | |  | `ekorg` |
-| `RequiredComponent` |  | |  | `clobk` |
-| `MultipleSelectionAllowed` |  | |  | `clmul` |
-| `ProdOrderIssueLocation` |  | |  | `lgort` |
-| `MaterialIsCoProduct` |  | |  | `kzkup` |
-| `ExplosionType` |  | |  | `dspst` |
-| `FollowUpGroup` |  | |  | `nfgrp` |
-| `DiscontinuationGroup` |  | |  | `nfeag` |
-| `ReinsurContrOrgUnit` |  | |  | `cview` |
-| `IsConfigurableBOM` |  | |  | `awakz` |
-| `ReferencePoint` |  | |  | `rfpnt` |
-| `LeadTimeOffset` |  | |  | `nlfzt` |
-| `IsSoftwareComponent` |  | |  | `sfwind` |
-| `ProductionSupplyArea` |  | |  | `prvbe` |
-| `IsDeleted` |  | |  | `lkenz` |
-| `IsALE` |  | |  | `alekz` |
-| `AlternativeItemGroup` |  | |  | `alpgr` |
-| `AlternativeItemPriority` |  | |  | `alprf` |
-| `AlternativeItemStrategy` |  | |  | `alpst` |
-| `UsageProbabilityPercent` |  | |  | `ewahr` |
-| `_BOMItemCategory` | | ✓ | | |
-| `_BOMItemCategoryText` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_DocumentText` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_Currency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterialCategory` | ✓ | |  | `stlty` |  |  |
+| `BillOfMaterial` | ✓ | |  | `stlnr` |  |  |
+| `BillOfMaterialItemNodeNumber` | ✓ | |  | `stlkn` |  |  |
+| `BOMItemInternalChangeCount` | ✓ | |  | `stpoz` |  |  |
+| `BillOfMaterialItemUUID` |  | |  | `guidx` |  |  |
+| `InheritedNodeNumberForBOMItem` |  | |  | `stvkn` |  |  |
+| `InheritedNodeNumberVersionBOM` |  | |  | `stvkn_versn` |  |  |
+| `ValidityStartDate` |  | |  | `datuv` |  |  |
+| `ValidityEndDate` |  | |  | `case when stpo.datuv != '00000000' and stpo.valid_to = '00000000' then cast('99991231' as datub ) else cast( stpo.valid_to as datub preserving type ) end` |  |  |
+| `EngineeringChangeDocument` |  | |  | `aennr` |  |  |
+| `ChgToEngineeringChgDocument` |  | |  | `ecn_to` |  |  |
+| `BOMItemRecordCreationDate` |  | |  | `andat` |  |  |
+| `BOMItemCreatedByUser` |  | |  | `annam` |  |  |
+| `BOMItemLastChangeDate` |  | |  | `aedat` |  |  |
+| `BOMItemLastChangedByUser` |  | |  | `aenam` |  |  |
+| `BillOfMaterialComponent` |  | |  | `idnrk` |  |  |
+| `BillOfMaterialItemCategory` |  | |  | `postp` |  |  |
+| `BillOfMaterialItemNumber` |  | |  | `posnr` |  |  |
+| `BillOfMaterialItemUnit` |  | |  | `meins` |  |  |
+| `BillOfMaterialItemQuantity` |  | |  | `menge` |  |  |
+| `IsSubItem` |  | |  | `upskz` |  |  |
+| `BOMItemSorter` |  | |  | `sortf` |  |  |
+| `FixedQuantity` |  | |  | `fmeng` |  |  |
+| `PurchasingGroup` |  | |  | `ekgrp` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `MaterialComponentPrice` |  | |  | `preis` |  |  |
+| `IdentifierBOMItem` |  | |  | `itmid` |  |  |
+| `MaterialPriceUnitQty` |  | |  | `peinh` |  |  |
+| `ComponentScrapInPercent` |  | |  | `ausch` |  |  |
+| `OperationScrapInPercent` |  | |  | `avoau` |  |  |
+| `IsNetScrap` |  | |  | `netau` |  |  |
+| `NumberOfVariableSizeItem` |  | |  | `roanz` |  |  |
+| `QuantityVariableSizeItem` |  | |  | `romen` |  |  |
+| `FormulaKey` |  | |  | `rform` |  |  |
+| `BOMItemText1` |  | |  | `potx1` |  |  |
+| `BOMItemText2` |  | |  | `potx2` |  |  |
+| `MaterialGroup` |  | |  | `matkl` |  |  |
+| `DocumentType` |  | |  | `dokar` |  |  |
+| `DocNumber` |  | |  | `doknr` |  |  |
+| `DocumentVersion` |  | |  | `dokvr` |  |  |
+| `DocumentPart` |  | |  | `doktl` |  |  |
+| `ClassNumber` |  | |  | `class` |  |  |
+| `ClassType` |  | |  | `klart` |  |  |
+| `ResultingItemCategory` |  | |  | `potpr` |  |  |
+| `DependencyObjectNumber` |  | |  | `knobj` |  |  |
+| `ObjectType` |  | |  | `objty` |  |  |
+| `IsClassificationRelevant` |  | |  | `kzclb` |  |  |
+| `IsBulkMaterial` |  | |  | `schgt` |  |  |
+| `BOMItemIsSparePart` |  | |  | `erskz` |  |  |
+| `BOMItemIsSalesRelevant` |  | |  | `rvrel` |  |  |
+| `IsProductionRelevant` |  | |  | `sanfe` |  |  |
+| `BOMItemIsPlantMaintRelevant` |  | |  | `sanin` |  |  |
+| `BOMItemIsCostingRelevant` |  | |  | `sanka` |  |  |
+| `IsEngineeringRelevant` |  | |  | `sanko` |  |  |
+| `SpecialProcurementType` |  | |  | `itsob` |  |  |
+| `IsBOMRecursiveAllowed` |  | |  | `rekrs` |  |  |
+| `OperationLeadTimeOffset` |  | |  | `nlfzv` |  |  |
+| `OpsLeadTimeOffsetUnit` |  | |  | `nlfmv` |  |  |
+| `IsMaterialProvision` |  | |  | `beikz` |  |  |
+| `BOMIsRecursive` |  | |  | `rekri` |  |  |
+| `DocumentIsCreatedByCAD` |  | |  | `cadpo` |  |  |
+| `DistrKeyCompConsumption` |  | |  | `verti` |  |  |
+| `DeliveryDurationInDays` |  | |  | `lifzt` |  |  |
+| `Creditor` |  | |  | `lifnr` |  |  |
+| `CostElement` |  | |  | `sakto` |  |  |
+| `Size1` |  | |  | `roms1` |  |  |
+| `Size2` |  | |  | `roms2` |  |  |
+| `Size3` |  | |  | `roms3` |  |  |
+| `UnitOfMeasureForSize1To3` |  | |  | `romei` |  |  |
+| `GoodsReceiptDuration` |  | |  | `webaz` |  |  |
+| `PurchasingOrganization` |  | |  | `ekorg` |  |  |
+| `RequiredComponent` |  | |  | `clobk` |  |  |
+| `MultipleSelectionAllowed` |  | |  | `clmul` |  |  |
+| `ProdOrderIssueLocation` |  | |  | `lgort` |  |  |
+| `MaterialIsCoProduct` |  | |  | `kzkup` |  |  |
+| `ExplosionType` |  | |  | `dspst` |  |  |
+| `FollowUpGroup` |  | |  | `nfgrp` |  |  |
+| `DiscontinuationGroup` |  | |  | `nfeag` |  |  |
+| `ReinsurContrOrgUnit` |  | |  | `cview` |  |  |
+| `IsConfigurableBOM` |  | |  | `awakz` |  |  |
+| `ReferencePoint` |  | |  | `rfpnt` |  |  |
+| `LeadTimeOffset` |  | |  | `nlfzt` |  |  |
+| `IsSoftwareComponent` |  | |  | `sfwind` |  |  |
+| `ProductionSupplyArea` |  | |  | `prvbe` |  |  |
+| `IsDeleted` |  | |  | `lkenz` |  |  |
+| `IsALE` |  | |  | `alekz` |  |  |
+| `AlternativeItemGroup` |  | |  | `alpgr` |  |  |
+| `AlternativeItemPriority` |  | |  | `alprf` |  |  |
+| `AlternativeItemStrategy` |  | |  | `alpst` |  |  |
+| `UsageProbabilityPercent` |  | |  | `ewahr` |  |  |
+| `_BOMItemCategory` | | ✓ | | | | |
+| `_BOMItemCategoryText` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_DocumentText` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
 
 ## Associations
 

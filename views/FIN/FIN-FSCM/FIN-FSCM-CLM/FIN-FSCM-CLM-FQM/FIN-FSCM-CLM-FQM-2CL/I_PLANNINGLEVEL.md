@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlanningLevel` | ✓ | |  | `ebene` |
-| `PlanningLevelSourceSymbol` |  | |  | `orign` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanningLevel` | ✓ | |  | `ebene` |  |  |
+| `PlanningLevelSourceSymbol` |  | |  | `orign` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

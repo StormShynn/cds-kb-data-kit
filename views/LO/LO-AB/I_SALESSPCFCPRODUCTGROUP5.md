@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesSpcfcProductGroup5` | ✓ | |  | `AdditionalMaterialGroup5` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesSpcfcProductGroup5` | ✓ | |  | `AdditionalMaterialGroup5` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

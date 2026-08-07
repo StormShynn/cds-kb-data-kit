@@ -29,44 +29,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `cast ( marm.matnr as productnumber preserving type )` |
-| `AlternativeUnit` | ✓ | |  | `meinh` |
-| `QuantityNumerator` |  | |  | `cast(marm.umrez as cmd_base_uom_cnvrsn_fctr preserving type)` |
-| `QuantityDenominator` |  | |  | `cast(marm.umren as cmd_alt_uom_cnvrsn_fctr preserving type )` |
-| `MaterialVolume` |  | |  | `volum` |
-| `VolumeUnit` |  | |  | `voleh` |
-| `GrossWeight` |  | |  | `brgew` |
-| `WeightUnit` |  | |  | `gewei` |
-| `GlobalTradeItemNumber` |  | |  | `ean11` |
-| `GlobalTradeItemNumberCategory` |  | |  | `cast(marm.numtp as internationalarticlenumbercat preserving type )` |
-| `UnitSpecificProductLength` |  | |  | `laeng` |
-| `UnitSpecificProductWidth` |  | |  | `breit` |
-| `UnitSpecificProductHeight` |  | |  | `hoehe` |
-| `ProductMeasurementUnit` |  | |  | `meabm` |
-| `LowerLevelPackagingUnit` |  | |  | `mesub` |
-| `RemainingVolumeAfterNesting` |  | |  | `nest_ftr` |
-| `MaximumStackingFactor` |  | |  | `max_stack` |
-| `CapacityUsage` |  | |  | `capause` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `UnitOfMeasureCategory` |  | |  | `ty2tq` |
-| `ProductGTINVariant` |  | |  | `gtin_variant` |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `_Product` | | ✓ | | |
-| `_ProductMeasurementUnit` | | ✓ | | |
-| `_ProductMeasurementUnitText` | | ✓ | | |
-| `_AlternativeUnit` | | ✓ | | |
-| `_AlternativeUnitText` | | ✓ | | |
-| `_GlobalTradeItemNumber` | | ✓ | | |
-| `_GlobalTradeItemNumberText` | | ✓ | | |
-| `_WeightUnitValueHelp` | | ✓ | | |
-| `_WeightUnitText` | | ✓ | | |
-| `_QuantityUnitValueHelp` | | ✓ | | |
-| `_VolumeUnitText` | | ✓ | | |
-| `_LowerLevelPackagingUnit` | | ✓ | | |
-| `_LowerLevelPackagingUnitText` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast ( marm.matnr as productnumber preserving type )` |  |  |
+| `AlternativeUnit` | ✓ | |  | `meinh` |  |  |
+| `QuantityNumerator` |  | |  | `cast(marm.umrez as cmd_base_uom_cnvrsn_fctr preserving type)` |  |  |
+| `QuantityDenominator` |  | |  | `cast(marm.umren as cmd_alt_uom_cnvrsn_fctr preserving type )` |  |  |
+| `MaterialVolume` |  | |  | `volum` |  |  |
+| `VolumeUnit` |  | |  | `voleh` |  |  |
+| `GrossWeight` |  | |  | `brgew` |  |  |
+| `WeightUnit` |  | |  | `gewei` |  |  |
+| `GlobalTradeItemNumber` |  | |  | `ean11` |  |  |
+| `GlobalTradeItemNumberCategory` |  | |  | `cast(marm.numtp as internationalarticlenumbercat preserving type )` |  |  |
+| `UnitSpecificProductLength` |  | |  | `laeng` |  |  |
+| `UnitSpecificProductWidth` |  | |  | `breit` |  |  |
+| `UnitSpecificProductHeight` |  | |  | `hoehe` |  |  |
+| `ProductMeasurementUnit` |  | |  | `meabm` |  |  |
+| `LowerLevelPackagingUnit` |  | |  | `mesub` |  |  |
+| `RemainingVolumeAfterNesting` |  | |  | `nest_ftr` |  |  |
+| `MaximumStackingFactor` |  | |  | `max_stack` |  |  |
+| `CapacityUsage` |  | |  | `capause` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `UnitOfMeasureCategory` |  | |  | `ty2tq` |  |  |
+| `ProductGTINVariant` |  | |  | `gtin_variant` |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductMeasurementUnit` | | ✓ | | | | |
+| `_ProductMeasurementUnitText` | | ✓ | | | | |
+| `_AlternativeUnit` | | ✓ | | | | |
+| `_AlternativeUnitText` | | ✓ | | | | |
+| `_GlobalTradeItemNumber` | | ✓ | | | | |
+| `_GlobalTradeItemNumberText` | | ✓ | | | | |
+| `_WeightUnitValueHelp` | | ✓ | | | | |
+| `_WeightUnitText` | | ✓ | | | | |
+| `_QuantityUnitValueHelp` | | ✓ | | | | |
+| `_VolumeUnitText` | | ✓ | | | | |
+| `_LowerLevelPackagingUnit` | | ✓ | | | | |
+| `_LowerLevelPackagingUnitText` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
 
 ## Associations
 

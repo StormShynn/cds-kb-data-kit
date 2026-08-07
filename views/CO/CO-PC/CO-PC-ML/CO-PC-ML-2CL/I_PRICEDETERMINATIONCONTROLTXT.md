@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras )` |
-| `PriceDeterminationControl` | ✓ | |  | `cast( dd07t.domvalue_l as fml_abst )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PriceDeterminationControlName` |  | |  | `cast( dd07t.ddtext as fml_abst_text_vh preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PriceDeterminationControl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras )` |  |  |
+| `PriceDeterminationControl` | ✓ | |  | `cast( dd07t.domvalue_l as fml_abst )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PriceDeterminationControlName` |  | |  | `cast( dd07t.ddtext as fml_abst_text_vh preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PriceDeterminationControl` | | ✓ | | | | |
 
 ## Associations
 

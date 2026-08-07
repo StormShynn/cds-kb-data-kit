@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesProductHierarchyPurpose` | ✓ | |  | `salesproducthierarchypurpose` |
-| `SalesOrganization` | ✓ | |  | `salesorganization` |
-| `DistributionChannel` | ✓ | |  | `distributionchannel` |
-| `UniversalHierVersValidTo` | ✓ | |  | `universalhierversvalidto` |
-| `UniversalHierVersValidFrom` |  | |  | `universalhierversvalidfrom` |
-| `ProductHierarchy` |  | |  | `producthierarchy` |
-| `LastChangeDateTime` |  | |  | `cast( lastchangedatetime as last_changed_date_time preserving type )` |
-| `_SalesProductHierarchyPurpose` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesProductHierarchyPurpose` | ✓ | |  | `salesproducthierarchypurpose` |  |  |
+| `SalesOrganization` | ✓ | |  | `salesorganization` |  |  |
+| `DistributionChannel` | ✓ | |  | `distributionchannel` |  |  |
+| `UniversalHierVersValidTo` | ✓ | |  | `universalhierversvalidto` |  |  |
+| `UniversalHierVersValidFrom` |  | |  | `universalhierversvalidfrom` |  |  |
+| `ProductHierarchy` |  | |  | `producthierarchy` |  |  |
+| `LastChangeDateTime` |  | |  | `cast( lastchangedatetime as last_changed_date_time preserving type )` |  |  |
+| `_SalesProductHierarchyPurpose` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
 
 ## Associations
 

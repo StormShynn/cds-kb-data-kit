@@ -38,24 +38,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Uuid` | ✓ | |  |  |
-| `Carrid` |  | |  |  |
-| `Connid` |  | |  |  |
-| `AirportFrom` |  | |  |  |
-| `CityFrom` |  | |  |  |
-| `CountryFrom` |  | |  |  |
-| `AirportTo` |  | |  |  |
-| `CityTo` |  | |  |  |
-| `CountryTo` |  | |  |  |
-| `Price` |  | |  |  |
-| `CurrencyCode` |  | |  |  |
-| `LocalCreatedBy` |  | |  |  |
-| `LocalCreatedAt` |  | |  |  |
-| `LocalLastChangedBy` |  | |  |  |
-| `LocalLastChangedAt` |  | |  |  |
-| `LastChangedAt` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Uuid` | ✓ | |  |  |  |  |
+| `Carrid` |  | |  | `[ { entity:{ element: 'CarrierId' , name: 'ZSH_01_CARRIER_VH' } }] Carrid` |  |  |
+| `Connid` |  | |  |  |  |  |
+| `AirportFrom` |  | |  |  |  |  |
+| `CityFrom` |  | |  |  |  |  |
+| `CountryFrom` |  | |  |  |  |  |
+| `AirportTo` |  | |  |  |  |  |
+| `CityTo` |  | |  |  |  |  |
+| `CountryTo` |  | |  |  |  |  |
+| `Price` |  | |  |  |  |  |
+| `CurrencyCode` |  | |  |  |  |  |
+| `LocalCreatedBy` |  | |  |  |  |  |
+| `LocalCreatedAt` |  | |  |  |  |  |
+| `LocalLastChangedBy` |  | |  |  |  |  |
+| `LocalLastChangedAt` |  | |  |  |  |  |
+| `LastChangedAt` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GrantID` | ✓ | |  | `cast( _Source.GrantID as fincs_grant preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `CreationDateTime` |  | |  | `cast( min ( _Source.CreationDateTime ) as fincs_creationdatetime preserving type )` |
-| `_Text` | | ✓ | | |
-| `_HierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` | ✓ | |  | `cast( _Source.GrantID as fincs_grant preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `CreationDateTime` |  | |  | `cast( min ( _Source.CreationDateTime ) as fincs_creationdatetime preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_HierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

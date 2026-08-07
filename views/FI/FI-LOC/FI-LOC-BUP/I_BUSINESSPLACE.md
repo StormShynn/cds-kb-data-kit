@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `BusinessPlace` | ✓ | |  | `branch` |
-| `AddressID` |  | |  | `adrnr` |
-| `BusinessPlaceStartDate` |  | |  | `validfrom` |
-| `BusinessPlaceEndDate` |  | |  | `validto` |
-| `TaxNumber1` |  | |  | `stcd1` |
-| `TaxNumber2` |  | |  | `stcd2` |
-| `TaxNumber5` |  | |  | `stcd5` |
-| `BusinessPlaceDescription` |  | |  | `name` |
-| `_Text` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Address` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `BusinessPlace` | ✓ | |  | `branch` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `BusinessPlaceStartDate` |  | |  | `validfrom` |  |  |
+| `BusinessPlaceEndDate` |  | |  | `validto` |  |  |
+| `TaxNumber1` |  | |  | `stcd1` |  |  |
+| `TaxNumber2` |  | |  | `stcd2` |  |  |
+| `TaxNumber5` |  | |  | `stcd5` |  |  |
+| `BusinessPlaceDescription` |  | |  | `name` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
 
 ## Associations
 

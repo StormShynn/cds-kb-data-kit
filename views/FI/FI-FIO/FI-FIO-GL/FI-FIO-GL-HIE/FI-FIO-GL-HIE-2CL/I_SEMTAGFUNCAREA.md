@@ -26,18 +26,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountHierarchy` | ✓ | |  |  |
-| `HierarchyNode` | ✓ | |  |  |
-| `SemanticTag` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `ValidityStartDate` | ✓ | |  |  |
-| `FunctionalArea` | ✓ | |  |  |
-| `_Hierarchy` | | ✓ | | |
-| `_GLAccountHierarchyNode` | | ✓ | | |
-| `_SemanticTag` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountHierarchy` | ✓ | |  |  |  |  |
+| `HierarchyNode` | ✓ | |  |  |  |  |
+| `SemanticTag` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `ValidityStartDate` | ✓ | |  |  |  |  |
+| `FunctionalArea` | ✓ | |  |  |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_GLAccountHierarchyNode` | | ✓ | | | | |
+| `_SemanticTag` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
 
 ## Source Code
 

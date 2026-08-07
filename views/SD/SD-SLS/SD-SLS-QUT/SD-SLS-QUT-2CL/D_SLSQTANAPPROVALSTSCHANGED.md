@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
-| `SalesQuotationType` |  | |  | `auart_unv` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `OrganizationDivision` |  | |  | `spart` |
-| `SoldToParty` |  | |  | `kunnr` |
-| `SalesDocApprovalStatus` |  | |  | `sd_apm_approval_status` |
-| `PreviousSalesDocApprovalStatus` |  | |  | `sd_apm_approval_status` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |  |  |
+| `SalesQuotationType` |  | |  | `auart_unv` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `OrganizationDivision` |  | |  | `spart` |  |  |
+| `SoldToParty` |  | |  | `kunnr` |  |  |
+| `SalesDocApprovalStatus` |  | |  | `sd_apm_approval_status` |  |  |
+| `PreviousSalesDocApprovalStatus` |  | |  | `sd_apm_approval_status` |  |  |
 
 ## Source Code
 

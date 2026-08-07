@@ -35,17 +35,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Vbeln` | ✓ | |  | `vbeln` |
-| `Erdat` |  | |  | `erdat` |
-| `Erzet` |  | |  | `erzet` |
-| `Auart` |  | |  | `auart` |
-| `Waerk` |  | |  | `waerk` |
-| `Vkorg` |  | |  | `vkorg` |
-| `Vtweg` |  | |  | `vtweg` |
-| `Spart` |  | |  | `spart` |
-| `Kunnr` |  | |  | `kunnr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Vbeln` | ✓ | |  | `vbeln` |  |  |
+| `Erdat` |  | |  | `erdat` |  |  |
+| `Erzet` |  | |  | `erzet` |  |  |
+| `Auart` |  | |  | `auart` |  |  |
+| `Waerk` |  | |  | `waerk` |  |  |
+| `Vkorg` |  | |  | `vkorg` |  |  |
+| `Vtweg` |  | |  | `vtweg` |  |  |
+| `Spart` |  | |  | `spart` |  |  |
+| `Kunnr` |  | |  | `kunnr` |  |  |
 
 ## Source Code
 

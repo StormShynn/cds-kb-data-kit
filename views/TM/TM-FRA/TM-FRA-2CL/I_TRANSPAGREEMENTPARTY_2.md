@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspAgrmtBusinessPartnerUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_fag_bp_uuid preserving type)` |
-| `TransportationAgreementUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_uuid preserving type)` |
-| `BusinessPartner` |  | |  | `ptyintid_id133_i` |
-| `_BusinessPartner` | | ✓ | | |
-| `_TransportationAgreement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspAgrmtBusinessPartnerUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_fag_bp_uuid preserving type)` |  |  |
+| `TransportationAgreementUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_uuid preserving type)` |  |  |
+| `BusinessPartner` |  | |  | `ptyintid_id133_i` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_TransportationAgreement` | | ✓ | | | | |
 
 ## Associations
 

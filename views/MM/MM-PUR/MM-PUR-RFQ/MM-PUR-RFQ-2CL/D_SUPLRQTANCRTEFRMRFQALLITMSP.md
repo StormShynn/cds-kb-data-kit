@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RequestForQuotation` |  | |  | `ebeln` |
-| `Supplier` |  | |  | `md_supplier` |
-| `QuotationSubmissionDate` |  | |  | `ihran` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RequestForQuotation` |  | |  | `ebeln` |  |  |
+| `Supplier` |  | |  | `md_supplier` |  |  |
+| `QuotationSubmissionDate` |  | |  | `ihran` |  |  |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityMgmtCtrlKey` | ✓ | |  | `qm_pur` |
-| `Language` | ✓ | |  | `sprache` |
-| `QualityMgmtCtrlKeyText` |  | |  | `kurztext` |
-| `_Language` | | ✓ | | |
-| `_QualityMgmtCtrlKey` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityMgmtCtrlKey` | ✓ | |  | `qm_pur` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `QualityMgmtCtrlKeyText` |  | |  | `kurztext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_QualityMgmtCtrlKey` | | ✓ | | | | |
 
 ## Associations
 

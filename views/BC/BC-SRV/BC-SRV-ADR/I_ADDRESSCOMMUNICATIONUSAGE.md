@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |
-| `AddressPersonID` | ✓ | |  | `persnumber` |
-| `CommunicationMediumType` | ✓ | |  | `comm_type` |
-| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |
-| `CommunicationMediumTypeUsage` | ✓ | |  | `comm_usage` |
-| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |
-| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  | `addrnumber` |  |  |
+| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
+| `CommunicationMediumType` | ✓ | |  | `comm_type` |  |  |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |  |  |
+| `CommunicationMediumTypeUsage` | ✓ | |  | `comm_usage` |  |  |
+| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |  |  |
+| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |  |  |
 
 ## Source Code
 

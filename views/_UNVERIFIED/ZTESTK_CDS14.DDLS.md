@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `vbeln` | ✓ | | `_vbak` | `vbeln` |
-| `posnr` |  | | `_vbap` | `posnr` |
-| `kunnr` |  | | `_vbak` | `kunnr` |
-| `matnr` |  | | `_vbap` | `matnr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `vbeln` | ✓ | | `_vbak` | `vbeln` |  |  |
+| `posnr` |  | | `_vbap` | `posnr` |  |  |
+| `kunnr` |  | | `_vbak` | `kunnr` |  |  |
+| `matnr` |  | | `_vbap` | `matnr` |  |  |
 
 ## Source Code
 

@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACollectionStep` | ✓ | |  | `step` |
-| `CACollectionStepLevel` |  | |  | `steplevel` |
-| `CACollectionStepType` |  | |  | `steptype` |
-| `CAAltvCollectionStep` |  | |  | `altst` |
-| `CADaysToNextDunning` |  | |  | `intrv` |
-| `CAFactoryCalendarIsUsedForDun` |  | |  | `xmfac` |
-| `FactoryCalendar` |  | |  | `cast( mfcid as fabkl preserving type )` |
-| `CAItemGroupIsClosed` |  | |  | `closegroup` |
-| `CADaysToPaymentDeadline` |  | |  | `frist` |
-| `CACreditWorthinessRatingValue` |  | |  | `bonig` |
-| `CAInterestCode` |  | |  | `ikey` |
-| `CAPostingCodeForDunInterest` |  | |  | `ipost` |
-| `CAInterestIsCalculated` |  | |  | `icalc` |
-| `CAIntrstIsCalculatedBfrCharges` |  | |  | `intfirst` |
-| `CADunningChargesSchema` |  | |  | `chgid` |
-| `CAIntrstAndChargeIsAddedToHist` |  | |  | `newdc` |
-| `CADunningSuccessCanBeEvaluated` |  | |  | `xdsuc` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACollectionStep` | ✓ | |  | `step` |  |  |
+| `CACollectionStepLevel` |  | |  | `steplevel` |  |  |
+| `CACollectionStepType` |  | |  | `steptype` |  |  |
+| `CAAltvCollectionStep` |  | |  | `altst` |  |  |
+| `CADaysToNextDunning` |  | |  | `intrv` |  |  |
+| `CAFactoryCalendarIsUsedForDun` |  | |  | `xmfac` |  |  |
+| `FactoryCalendar` |  | |  | `cast( mfcid as fabkl preserving type )` |  |  |
+| `CAItemGroupIsClosed` |  | |  | `closegroup` |  |  |
+| `CADaysToPaymentDeadline` |  | |  | `frist` |  |  |
+| `CACreditWorthinessRatingValue` |  | |  | `bonig` |  |  |
+| `CAInterestCode` |  | |  | `ikey` |  |  |
+| `CAPostingCodeForDunInterest` |  | |  | `ipost` |  |  |
+| `CAInterestIsCalculated` |  | |  | `icalc` |  |  |
+| `CAIntrstIsCalculatedBfrCharges` |  | |  | `intfirst` |  |  |
+| `CADunningChargesSchema` |  | |  | `chgid` |  |  |
+| `CAIntrstAndChargeIsAddedToHist` |  | |  | `newdc` |  |  |
+| `CADunningSuccessCanBeEvaluated` |  | |  | `xdsuc` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,109 +31,109 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintOrderRoutingNumber` |  | |  |  |
-| `MaintenanceOrderType` |  | |  |  |
-| `MaintenanceOrderDesc` |  | |  |  |
-| `MaintOrdBasicStartDateTime` |  | |  |  |
-| `MaintOrdBasicEndDateTime` |  | |  |  |
-| `MaintOrdBasicStartDate` |  | |  |  |
-| `MaintOrdBasicStartTime` |  | |  |  |
-| `MaintOrdBasicEndDate` |  | |  |  |
-| `MaintOrdBasicEndTime` |  | |  |  |
-| `MaintOrdSchedldBscStrtDateTime` |  | |  |  |
-| `MaintOrdSchedldBscEndDateTime` |  | |  |  |
-| `ScheduledBasicStartDate` |  | |  |  |
-| `ScheduledBasicStartTime` |  | |  |  |
-| `ScheduledBasicEndDate` |  | |  |  |
-| `ScheduledBasicEndTime` |  | |  |  |
-| `MaintOrderReferenceDateTime` |  | |  |  |
-| `MaintOrderReferenceDate` |  | |  |  |
-| `MaintOrderReferenceTime` |  | |  |  |
-| `MainWorkCompletedDateTime` |  | |  |  |
-| `MaintenanceNotification` |  | |  |  |
-| `OrdIsNotSchedldAutomatically` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `MainWorkCenterTypeCode` |  | |  |  |
-| `MainWorkCenter` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `LocAcctAssgmtWBSElmntIntID` |  | |  |  |
-| `ControllingSettlementProfile` |  | |  |  |
-| `LocAcctAssgmtBusinessArea` |  | |  |  |
-| `LocAcctAssgmtControllingArea` |  | |  |  |
-| `LocAcctAssgmtCompanyCode` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `MaintOrdProcessPhaseCode` |  | |  |  |
-| `MaintOrdProcessSubPhaseCode` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ReferenceElement` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `AdditionalDeviceData` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `MaintenanceOrderPlanningCode` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `MaintPriority` |  | |  |  |
-| `MaintPriorityType` |  | |  |  |
-| `OrderProcessingGroup` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ResponsibleCostCenter` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `CostingSheet` |  | |  |  |
-| `Currency` |  | |  |  |
-| `MaintenanceRevision` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `Product` |  | |  |  |
-| `SuperiorProjectNetwork` |  | |  |  |
-| `OperationSystemCondition` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `ProjectInternalID` |  | |  |  |
-| `ControllingObjectClass` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `AssetLocation` |  | |  |  |
-| `AssetRoom` |  | |  |  |
-| `PlantSection` |  | |  |  |
-| `ABCIndicator` |  | |  |  |
-| `MaintObjectFreeDefinedAttrib` |  | |  |  |
-| `MaintenanceOrderInternalID` |  | |  |  |
-| `MaintenanceItemObjectList` |  | |  |  |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
-| `BasicSchedulingType` |  | |  |  |
-| `LatestAcceptableCompletionDate` |  | |  |  |
-| `MaintOrdPersonResponsible` |  | |  |  |
-| `LastChangeByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `MaintOrderCreationDateTime` |  | |  |  |
-| `OrderHasLongText` |  | |  |  |
-| `MaintOrderProcessingContext` |  | |  |  |
-| `MaintenanceOrderOverheadCode` |  | |  |  |
-| `PlannedCostsCostingVariant` |  | |  |  |
-| `ActualCostsCostingVariant` |  | |  |  |
-| `MaintenancePlan` |  | |  |  |
-| `MaintenanceCall` |  | |  |  |
-| `MaintenanceItem` |  | |  |  |
-| `LeadingOrder` |  | |  |  |
-| `TaskListType` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `_Equipment` | | ✓ | | |
-| `_LocationAccountAssignment` | | ✓ | | |
-| `_MaintenanceOrderOperation` | | ✓ | | |
-| `_MaintenanceOrderLongText` | | ✓ | | |
-| `_MaintenanceOrderPartner` | | ✓ | | |
-| `_MaintenanceOrderPhaseControl` | | ✓ | | |
-| `_MaintOrderSettlmtDistrRule_2` | | ✓ | | |
-| `_MaintOrderObjectListItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintOrderRoutingNumber` |  | |  |  |  |  |
+| `MaintenanceOrderType` |  | |  |  |  |  |
+| `MaintenanceOrderDesc` |  | |  |  |  |  |
+| `MaintOrdBasicStartDateTime` |  | |  |  |  |  |
+| `MaintOrdBasicEndDateTime` |  | |  |  |  |  |
+| `MaintOrdBasicStartDate` |  | |  |  |  |  |
+| `MaintOrdBasicStartTime` |  | |  |  |  |  |
+| `MaintOrdBasicEndDate` |  | |  |  |  |  |
+| `MaintOrdBasicEndTime` |  | |  |  |  |  |
+| `MaintOrdSchedldBscStrtDateTime` |  | |  |  |  |  |
+| `MaintOrdSchedldBscEndDateTime` |  | |  |  |  |  |
+| `ScheduledBasicStartDate` |  | |  |  |  |  |
+| `ScheduledBasicStartTime` |  | |  |  |  |  |
+| `ScheduledBasicEndDate` |  | |  |  |  |  |
+| `ScheduledBasicEndTime` |  | |  |  |  |  |
+| `MaintOrderReferenceDateTime` |  | |  |  |  |  |
+| `MaintOrderReferenceDate` |  | |  |  |  |  |
+| `MaintOrderReferenceTime` |  | |  |  |  |  |
+| `MainWorkCompletedDateTime` |  | |  |  |  |  |
+| `MaintenanceNotification` |  | |  |  |  |  |
+| `OrdIsNotSchedldAutomatically` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `MainWorkCenterTypeCode` |  | |  |  |  |  |
+| `MainWorkCenter` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `LocAcctAssgmtWBSElmntIntID` |  | |  |  |  |  |
+| `ControllingSettlementProfile` |  | |  |  |  |  |
+| `LocAcctAssgmtBusinessArea` |  | |  |  |  |  |
+| `LocAcctAssgmtControllingArea` |  | |  |  |  |  |
+| `LocAcctAssgmtCompanyCode` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `MaintOrdProcessPhaseCode` |  | |  |  |  |  |
+| `MaintOrdProcessSubPhaseCode` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ReferenceElement` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `AdditionalDeviceData` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `MaintenanceOrderPlanningCode` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `MaintPriority` |  | |  |  |  |  |
+| `MaintPriorityType` |  | |  |  |  |  |
+| `OrderProcessingGroup` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ResponsibleCostCenter` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `CostingSheet` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `MaintenanceRevision` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `SuperiorProjectNetwork` |  | |  |  |  |  |
+| `OperationSystemCondition` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `ProjectInternalID` |  | |  |  |  |  |
+| `ControllingObjectClass` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `AssetLocation` |  | |  |  |  |  |
+| `AssetRoom` |  | |  |  |  |  |
+| `PlantSection` |  | |  |  |  |  |
+| `ABCIndicator` |  | |  |  |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | |  |  |  |  |
+| `MaintenanceOrderInternalID` |  | |  |  |  |  |
+| `MaintenanceItemObjectList` |  | |  |  |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |  |  |
+| `BasicSchedulingType` |  | |  |  |  |  |
+| `LatestAcceptableCompletionDate` |  | |  |  |  |  |
+| `MaintOrdPersonResponsible` |  | |  |  |  |  |
+| `LastChangeByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `MaintOrderCreationDateTime` |  | |  |  |  |  |
+| `OrderHasLongText` |  | |  |  |  |  |
+| `MaintOrderProcessingContext` |  | |  |  |  |  |
+| `MaintenanceOrderOverheadCode` |  | |  |  |  |  |
+| `PlannedCostsCostingVariant` |  | |  |  |  |  |
+| `ActualCostsCostingVariant` |  | |  |  |  |  |
+| `MaintenancePlan` |  | |  |  |  |  |
+| `MaintenanceCall` |  | |  |  |  |  |
+| `MaintenanceItem` |  | |  |  |  |  |
+| `LeadingOrder` |  | |  |  |  |  |
+| `TaskListType` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `_Equipment` | | ✓ | | | | |
+| `_LocationAccountAssignment` | | ✓ | | | | |
+| `_MaintenanceOrderOperation` | | ✓ | | | | |
+| `_MaintenanceOrderLongText` | | ✓ | | | | |
+| `_MaintenanceOrderPartner` | | ✓ | | | | |
+| `_MaintenanceOrderPhaseControl` | | ✓ | | | | |
+| `_MaintOrderSettlmtDistrRule_2` | | ✓ | | | | |
+| `_MaintOrderObjectListItem` | | ✓ | | | | |
 
 ## Source Code
 

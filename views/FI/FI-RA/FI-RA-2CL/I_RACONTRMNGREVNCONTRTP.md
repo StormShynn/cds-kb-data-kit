@@ -28,61 +28,61 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RevenueAccountingContract` | ✓ | |  |  |
-| `RevnAcctgContractDescription` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `AccountingPrinciple` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `BusinessPartnerName` |  | |  |  |
-| `Customer` |  | |  |  |
-| `CustomerName` |  | |  |  |
-| `TotContractualPrcInSlsDocCrcy` |  | |  |  |
-| `RAContrBalanceIsDfrrdRevn` |  | |  |  |
-| `RAContrBalanceIsLiability` |  | |  |  |
-| `NumberOfPerformanceObligations` |  | |  |  |
-| `AllocEffctAmountInSalesDocCrcy` |  | |  |  |
-| `RevnContrAssetsImpairmentDate` |  | |  |  |
-| `RAContractHasAssetsImpairment` |  | |  |  |
-| `RevnAcctgContractStatus` |  | |  |  |
-| `RevnAcctgContractStatusName` |  | |  |  |
-| `RAContractStatusCriticality` |  | |  |  |
-| `RAContractCompletionDate` |  | |  |  |
-| `SalesDocumentCurrency` |  | |  |  |
-| `RevnAcctgSalesOrganization` |  | |  |  |
-| `RAContractHasAllocationEffect` |  | |  |  |
-| `CreatedByUserDescription` |  | |  |  |
-| `RevnAcctgContractCreationDate` |  | |  |  |
-| `LastChangedByUserDescription` |  | |  |  |
-| `RAContractLastChangeDate` |  | |  |  |
-| `RAContractIsSoftDeleted` |  | |  |  |
-| `RAContrManualChgBusinessReason` |  | |  |  |
-| `HasAttachment` |  | |  |  |
-| `RAContractHasCompoundPerfOblgn` |  | |  |  |
-| `RAContractIsManuallyAllocated` |  | |  |  |
-| `RAContrHasMnlPrcAllocConflict` |  | |  |  |
-| `RAAttributeHasConflict` |  | |  |  |
-| `PerfOblgnHasSprdgConflict` |  | |  |  |
-| `PerfOblgnHasManualSpreading` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `RAContractLastSavedDateTime` |  | |  |  |
-| `RAContractIsUniversal` |  | |  |  |
-| `RAContrIsNotActvUnivRevnRecgn` |  | |  |  |
-| `RAContractPostingMode` |  | |  |  |
-| `RAContractPostingModeName` |  | |  |  |
-| `RARevnLbltyAssetCalcIsEnabled` |  | |  |  |
-| `RARevenuePostIsEnabled` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `RevnAcctgContractCreatedByUser` |  | |  |  |
-| `RAContractLastChangedByUsr` |  | |  |  |
-| `_PerformanceObligation` | | ✓ | | |
-| `_AccountingPrinciple` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_RAContrMnlChgBusinessRsnText` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RevenueAccountingContract` | ✓ | |  |  |  |  |
+| `RevnAcctgContractDescription` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `AccountingPrinciple` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `BusinessPartnerName` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `CustomerName` |  | |  |  |  |  |
+| `TotContractualPrcInSlsDocCrcy` |  | |  |  |  |  |
+| `RAContrBalanceIsDfrrdRevn` |  | |  |  |  |  |
+| `RAContrBalanceIsLiability` |  | |  |  |  |  |
+| `NumberOfPerformanceObligations` |  | |  |  |  |  |
+| `AllocEffctAmountInSalesDocCrcy` |  | |  |  |  |  |
+| `RevnContrAssetsImpairmentDate` |  | |  |  |  |  |
+| `RAContractHasAssetsImpairment` |  | |  |  |  |  |
+| `RevnAcctgContractStatus` |  | |  |  |  |  |
+| `RevnAcctgContractStatusName` |  | |  |  |  |  |
+| `RAContractStatusCriticality` |  | |  |  |  |  |
+| `RAContractCompletionDate` |  | |  |  |  |  |
+| `SalesDocumentCurrency` |  | |  |  |  |  |
+| `RevnAcctgSalesOrganization` |  | |  |  |  |  |
+| `RAContractHasAllocationEffect` |  | |  |  |  |  |
+| `CreatedByUserDescription` |  | |  |  |  |  |
+| `RevnAcctgContractCreationDate` |  | |  |  |  |  |
+| `LastChangedByUserDescription` |  | |  |  |  |  |
+| `RAContractLastChangeDate` |  | |  |  |  |  |
+| `RAContractIsSoftDeleted` |  | |  |  |  |  |
+| `RAContrManualChgBusinessReason` |  | |  |  |  |  |
+| `HasAttachment` |  | |  |  |  |  |
+| `RAContractHasCompoundPerfOblgn` |  | |  |  |  |  |
+| `RAContractIsManuallyAllocated` |  | |  |  |  |  |
+| `RAContrHasMnlPrcAllocConflict` |  | |  |  |  |  |
+| `RAAttributeHasConflict` |  | |  |  |  |  |
+| `PerfOblgnHasSprdgConflict` |  | |  |  |  |  |
+| `PerfOblgnHasManualSpreading` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `RAContractLastSavedDateTime` |  | |  |  |  |  |
+| `RAContractIsUniversal` |  | |  |  |  |  |
+| `RAContrIsNotActvUnivRevnRecgn` |  | |  |  |  |  |
+| `RAContractPostingMode` |  | |  |  |  |  |
+| `RAContractPostingModeName` |  | |  |  |  |  |
+| `RARevnLbltyAssetCalcIsEnabled` |  | |  |  |  |  |
+| `RARevenuePostIsEnabled` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `RevnAcctgContractCreatedByUser` |  | |  |  |  |  |
+| `RAContractLastChangedByUsr` |  | |  |  |  |  |
+| `_PerformanceObligation` | | ✓ | | | | |
+| `_AccountingPrinciple` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_RAContrMnlChgBusinessRsnText` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
 
 ## Source Code
 

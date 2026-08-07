@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustMgmtObjectType` |  | |  | `crmt_subobject_category_db` |
-| `ServiceContractUUID` |  | |  | `crmt_object_guid` |
-| `ServiceContractType` |  | |  | `crmt_process_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtObjectType` |  | |  | `crmt_subobject_category_db` |  |  |
+| `ServiceContractUUID` |  | |  | `crmt_object_guid` |  |  |
+| `ServiceContractType` |  | |  | `crmt_process_type` |  |  |
 
 ## Source Code
 

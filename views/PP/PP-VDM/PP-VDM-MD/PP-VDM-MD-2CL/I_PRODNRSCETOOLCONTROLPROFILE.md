@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdnRsceToolControlProfile` | ✓ | |  | `steuf` |
-| `ProdnRsceToolSchedgIsActv` |  | |  | `xterm` |
-| `ProdnRsceToolCostingIsActive` |  | |  | `xkalk` |
-| `ProdnRsceToolConfIsActive` |  | |  | `xrueck` |
-| `ProdnRsceToolPrintIsActive` |  | |  | `xdruck` |
-| `ProdnRsceToolExpandPrintIsActv` |  | |  | `xexpand` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdnRsceToolControlProfile` | ✓ | |  | `steuf` |  |  |
+| `ProdnRsceToolSchedgIsActv` |  | |  | `xterm` |  |  |
+| `ProdnRsceToolCostingIsActive` |  | |  | `xkalk` |  |  |
+| `ProdnRsceToolConfIsActive` |  | |  | `xrueck` |  |  |
+| `ProdnRsceToolPrintIsActive` |  | |  | `xdruck` |  |  |
+| `ProdnRsceToolExpandPrintIsActv` |  | |  | `xexpand` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CpWfHandle` | ✓ | |  |  |
-| `RetentionTime` |  | |  |  |
-| `CpWfDefId` |  | |  |  |
-| `PaWfDefId` |  | |  |  |
-| `Consumer` |  | |  |  |
-| `LastChangeOn` |  | |  |  |
-| `Context` |  | |  |  |
-| `CallbackClass` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CpWfHandle` | ✓ | |  |  |  |  |
+| `RetentionTime` |  | |  |  |  |  |
+| `CpWfDefId` |  | |  |  |  |  |
+| `PaWfDefId` |  | |  |  |  |  |
+| `Consumer` |  | |  |  |  |  |
+| `LastChangeOn` |  | |  |  |  |  |
+| `Context` |  | |  |  |  |  |
+| `CallbackClass` |  | |  |  |  |  |
 
 ## Source Code
 

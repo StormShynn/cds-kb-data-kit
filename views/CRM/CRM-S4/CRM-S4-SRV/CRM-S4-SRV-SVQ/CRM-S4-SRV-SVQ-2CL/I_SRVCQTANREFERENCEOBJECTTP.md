@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceQuotation` | ✓ | |  |  |
-| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |
-| `SerialNumber` |  | |  |  |
-| `ServiceReferenceEquipment` |  | |  |  |
-| `ServiceRefFunctionalLocation` |  | |  |  |
-| `ServiceReferenceProduct` |  | |  |  |
-| `SrvcRefObjIsMainObject` |  | |  |  |
-| `_ServiceQuotationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `ServiceReferenceEquipment` |  | |  |  |  |  |
+| `ServiceRefFunctionalLocation` |  | |  |  |  |  |
+| `ServiceReferenceProduct` |  | |  |  |  |  |
+| `SrvcRefObjIsMainObject` |  | |  |  |  |  |
+| `_ServiceQuotationTP` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OverallTotalDeliveryStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OverallTotalDeliveryStatusDesc` |  | |  | `bezei` |
-| `_OverallTotalDeliveryStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverallTotalDeliveryStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OverallTotalDeliveryStatusDesc` |  | |  | `bezei` |  |  |
+| `_OverallTotalDeliveryStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

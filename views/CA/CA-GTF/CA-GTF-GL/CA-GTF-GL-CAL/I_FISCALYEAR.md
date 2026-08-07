@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `FiscalYearStartDate` |  | |  |  |
-| `FiscalYearEndDate` |  | |  |  |
-| `FiscalYearConsecutiveNumber` |  | |  |  |
-| `NextFiscalYear` |  | |  | `cast( P_FiscalYear.NextFiscalYear as fins_next_fiscalyear_no_conv preserving type )` |
-| `NextFiscalYearStartDate` |  | |  | `cast( P_FiscalYear.NextFiscalYearStartDate as fins_next_fyear_startdate preserving type )` |
-| `NextFiscalYearEndDate` |  | |  | `cast( P_FiscalYear.NextFiscalYearEndDate as fins_next_fyear_enddate preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `FiscalYearStartDate` |  | |  |  |  |  |
+| `FiscalYearEndDate` |  | |  |  |  |  |
+| `FiscalYearConsecutiveNumber` |  | |  |  |  |  |
+| `NextFiscalYear` |  | |  | `cast( P_FiscalYear.NextFiscalYear as fins_next_fiscalyear_no_conv preserving type )` |  |  |
+| `NextFiscalYearStartDate` |  | |  | `cast( P_FiscalYear.NextFiscalYearStartDate as fins_next_fyear_startdate preserving type )` |  |  |
+| `NextFiscalYearEndDate` |  | |  | `cast( P_FiscalYear.NextFiscalYearEndDate as fins_next_fyear_enddate preserving type )` |  |  |
 
 ## Source Code
 

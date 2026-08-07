@@ -30,48 +30,48 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProposalTaxPostingIdentifier` | ✓ | |  | `ptxnr` |
-| `ProposalTaxPostingItem` | ✓ | |  | `ptxit` |
-| `DeliveringPlant` |  | |  | `werks` |
-| `ReceivingPlant` |  | |  | `umwrk` |
-| `MaterialDocumentItem` |  | |  | `zeile` |
-| `OutboundDeliveryItem` |  | |  | `posnr` |
-| `Batch` |  | |  | `charg` |
-| `HigherLvlItmOfBatSpltItm` |  | |  | `uecha` |
-| `MaterialIsIntBatchManaged` |  | |  | `xchar` |
-| `ReversedMaterialDocumentItem` |  | |  | `smblp` |
-| `Material` |  | |  | `matnr` |
-| `TransactionCurrency` |  | | `_TaxProposalHeader` | `TransactionCurrency` |
-| `ForeignTradeStstclCurrency` |  | | `_TaxProposalHeader` | `ForeignTradeStstclCurrency` |
-| `QuantityInEntryUnit` |  | |  | `} TaxPropslItem.fkimg` |
-| `SalesUnit` |  | |  | `vrkme` |
-| `QuantityInEntryUnitBaseUnit` |  | |  | `} TaxPropslItem.fklmg` |
-| `BaseUnit` |  | |  | `meins` |
-| `MaterialNetWeight` |  | |  | `} TaxPropslItem.ntgew` |
-| `WeightUnit` |  | |  | `gewei` |
-| `ServicesRenderedDate` |  | |  | `fbuda` |
-| `PriceDetnExchangeRate` |  | |  | `cast( TaxPropslItem.kursk as kursk_not_converted preserving type )` |
-| `ItemNetAmountOfBillingDoc` |  | |  | `} TaxPropslItem.netwr` |
-| `PrecdgSDDocCategory` |  | |  | `vgtyp` |
-| `SalesDocument` |  | |  | `aubel` |
-| `SalesDocumentItem` |  | |  | `aupos` |
-| `SalesDocumentItemText` |  | |  | `arktx` |
-| `SalesDocumentItemCategory` |  | |  | `pstyv` |
-| `SDDocumentCategory` |  | |  | `autyp` |
-| `ItemGrossAmountOfBillingDoc` |  | |  | `} TaxPropslItem.brtwr` |
-| `ForeignTradeStstclAmt` |  | |  | `grwrt` |
-| `CountryOfOrigin` |  | |  | `spe_herkl` |
-| `RegionOfOrigin` |  | |  | `spe_herkr` |
-| `CommodityCode` |  | |  | `itm_comco` |
-| `SpecialStockIdfgCustomer` |  | |  | `nsdm_kunnr` |
-| `SoldToParty` |  | |  | `kunag` |
-| `SoldToPartyAddressID` |  | |  | `kunag_adr` |
-| `ShipToParty` |  | |  | `kunwe` |
-| `ShipToPartyAddressID` |  | |  | `kunwe_adr` |
-| `CompanyCode` |  | | `_TaxProposalHeader` | `CompanyCode` |
-| `_TaxProposalHeader` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProposalTaxPostingIdentifier` | ✓ | |  | `ptxnr` |  |  |
+| `ProposalTaxPostingItem` | ✓ | |  | `ptxit` |  |  |
+| `DeliveringPlant` |  | |  | `werks` |  |  |
+| `ReceivingPlant` |  | |  | `umwrk` |  |  |
+| `MaterialDocumentItem` |  | |  | `zeile` |  |  |
+| `OutboundDeliveryItem` |  | |  | `posnr` |  |  |
+| `Batch` |  | |  | `charg` |  |  |
+| `HigherLvlItmOfBatSpltItm` |  | |  | `uecha` |  |  |
+| `MaterialIsIntBatchManaged` |  | |  | `xchar` |  |  |
+| `ReversedMaterialDocumentItem` |  | |  | `smblp` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `TransactionCurrency` |  | | `_TaxProposalHeader` | `TransactionCurrency` |  |  |
+| `ForeignTradeStstclCurrency` |  | | `_TaxProposalHeader` | `ForeignTradeStstclCurrency` |  |  |
+| `QuantityInEntryUnit` |  | |  | `fkimg` |  |  |
+| `SalesUnit` |  | |  | `vrkme` |  |  |
+| `QuantityInEntryUnitBaseUnit` |  | |  | `fklmg` |  |  |
+| `BaseUnit` |  | |  | `meins` |  |  |
+| `MaterialNetWeight` |  | |  | `ntgew` |  |  |
+| `WeightUnit` |  | |  | `gewei` |  |  |
+| `ServicesRenderedDate` |  | |  | `fbuda` |  |  |
+| `PriceDetnExchangeRate` |  | |  | `cast( TaxPropslItem.kursk as kursk_not_converted preserving type )` |  |  |
+| `ItemNetAmountOfBillingDoc` |  | |  | `netwr` |  |  |
+| `PrecdgSDDocCategory` |  | |  | `vgtyp` |  |  |
+| `SalesDocument` |  | |  | `aubel` |  |  |
+| `SalesDocumentItem` |  | |  | `aupos` |  |  |
+| `SalesDocumentItemText` |  | |  | `arktx` |  |  |
+| `SalesDocumentItemCategory` |  | |  | `pstyv` |  |  |
+| `SDDocumentCategory` |  | |  | `autyp` |  |  |
+| `ItemGrossAmountOfBillingDoc` |  | |  | `brtwr` |  |  |
+| `ForeignTradeStstclAmt` |  | |  | `grwrt` |  |  |
+| `CountryOfOrigin` |  | |  | `spe_herkl` |  |  |
+| `RegionOfOrigin` |  | |  | `spe_herkr` |  |  |
+| `CommodityCode` |  | |  | `itm_comco` |  |  |
+| `SpecialStockIdfgCustomer` |  | |  | `nsdm_kunnr` |  |  |
+| `SoldToParty` |  | |  | `kunag` |  |  |
+| `SoldToPartyAddressID` |  | |  | `kunag_adr` |  |  |
+| `ShipToParty` |  | |  | `kunwe` |  |  |
+| `ShipToPartyAddressID` |  | |  | `kunwe_adr` |  |  |
+| `CompanyCode` |  | | `_TaxProposalHeader` | `CompanyCode` |  |  |
+| `_TaxProposalHeader` | | ✓ | | | | |
 
 ## Associations
 

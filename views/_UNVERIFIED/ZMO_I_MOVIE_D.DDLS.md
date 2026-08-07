@@ -35,16 +35,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Guid` | ✓ | |  | `guid` |
-| `Title` |  | |  | `title` |
-| `ReleaseYear` |  | |  | `release_year` |
-| `Director` |  | |  | `director` |
-| `GenreId` |  | |  | `genre_id` |
-| `GenreName` |  | | `_Genre` | `Name` |
-| `LastChangedAt` |  | |  | `last_changed_at` |
-| `_Genre` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Guid` | ✓ | |  | `guid` |  |  |
+| `Title` |  | |  | `title` |  |  |
+| `ReleaseYear` |  | |  | `release_year` |  |  |
+| `Director` |  | |  | `director` |  |  |
+| `GenreId` |  | |  | `genre_id` |  |  |
+| `GenreName` |  | | `_Genre` | `Name` |  |  |
+| `LastChangedAt` |  | |  | `last_changed_at` |  |  |
+| `_Genre` | | ✓ | | | | |
 
 ## Associations
 

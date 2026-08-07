@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(_AdhocSet.itclg as fincs_conschartofaccounts preserving type )` |
-| `CnsldtnAdhocSet` |  | |  | `}] key _AdhocSet.adhocset` |
-| `CnsldtnAdhocSetBrkdwnType` |  | | `_AdhocSet` | `adhocsetbrkdwntype` |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_CnsldtnAdhocSetBrkdwnType` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(_AdhocSet.itclg as fincs_conschartofaccounts preserving type )` |  |  |
+| `CnsldtnAdhocSet` | ✓ | | `_AdhocSet` | `adhocset` |  |  |
+| `CnsldtnAdhocSetBrkdwnType` |  | | `_AdhocSet` | `adhocsetbrkdwntype` |  |  |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_CnsldtnAdhocSetBrkdwnType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

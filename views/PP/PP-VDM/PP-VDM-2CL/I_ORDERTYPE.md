@@ -27,40 +27,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderType` | ✓ | |  | `auart` |
-| `OrderCategory` |  | |  | `cast(typ.autyp as pph_autyp preserving type)` |
-| `OrderNumberRange` |  | |  | `numkr` |
-| `CommitmentsMgmtActvtnStatus` |  | |  | `obligo` |
-| `StatusProfile` |  | |  | `stsma` |
-| `OperationStatusProfile` |  | |  | `cast(typ.vrg_stsma as vdm_stsma_op preserving type)` |
-| `ControllingSettlementProfile` |  | |  | `aprof` |
-| `PlanningProfile` |  | |  | `pprof` |
-| `BudgetProfile` |  | |  | `bprof` |
-| `ExecutionServiceProfile` |  | |  | `exec_profile` |
-| `ControllingObjectClass` |  | |  | `cast(typ.scope as pph_scope preserving type)` |
-| `FunctionalArea` |  | |  | `func_area` |
-| `CtrlgTotalsRecordActvtnStatus` |  | |  | `copar` |
-| `ResidenceTime1` |  | |  | `resz1` |
-| `ResidenceTime2` |  | |  | `resz2` |
-| `OrderMasterDataLayout` |  | |  | `layout` |
-| `TextObjectForm` |  | |  | `tdform` |
-| `ConfigDeprecationCode` |  | |  | `configurationdeprecationcode` |
-| `OrderIsToBeClassified` |  | |  | `aufkl` |
-| `OrderIsReleasedUponCreation` |  | |  | `relkz` |
-| `OrderHasStatusChangeDocuments` |  | |  | `chgkz` |
-| `SettlementIsNotRequired` |  | |  | `nabpf` |
-| `OrdIsUsedInIntegratedPlanning` |  | |  | `plint` |
-| `NetworkIsForPlanning` |  | |  | `vorpl` |
-| `RevenuePostingIsAllowed` |  | |  | `cast(typ.erloese as vdm_pp_erloese preserving type)` |
-| `CollectiveOrderHasAutoGoodsMvt` |  | |  | `cast(typ.colordproc as vdm_colordproc preserving type)` |
-| `_Text` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_ControllingObjectClass` | | ✓ | | |
-| `_OrderStatusProfile` | | ✓ | | |
-| `_OperationStatusProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderType` | ✓ | |  | `auart` |  |  |
+| `OrderCategory` |  | |  | `cast(typ.autyp as pph_autyp preserving type)` |  |  |
+| `OrderNumberRange` |  | |  | `numkr` |  |  |
+| `CommitmentsMgmtActvtnStatus` |  | |  | `obligo` |  |  |
+| `StatusProfile` |  | |  | `stsma` |  |  |
+| `OperationStatusProfile` |  | |  | `cast(typ.vrg_stsma as vdm_stsma_op preserving type)` |  |  |
+| `ControllingSettlementProfile` |  | |  | `aprof` |  |  |
+| `PlanningProfile` |  | |  | `pprof` |  |  |
+| `BudgetProfile` |  | |  | `bprof` |  |  |
+| `ExecutionServiceProfile` |  | |  | `exec_profile` |  |  |
+| `ControllingObjectClass` |  | |  | `cast(typ.scope as pph_scope preserving type)` |  |  |
+| `FunctionalArea` |  | |  | `func_area` |  |  |
+| `CtrlgTotalsRecordActvtnStatus` |  | |  | `copar` |  |  |
+| `ResidenceTime1` |  | |  | `resz1` |  |  |
+| `ResidenceTime2` |  | |  | `resz2` |  |  |
+| `OrderMasterDataLayout` |  | |  | `layout` |  |  |
+| `TextObjectForm` |  | |  | `tdform` |  |  |
+| `ConfigDeprecationCode` |  | |  | `configurationdeprecationcode` |  |  |
+| `OrderIsToBeClassified` |  | |  | `aufkl` |  |  |
+| `OrderIsReleasedUponCreation` |  | |  | `relkz` |  |  |
+| `OrderHasStatusChangeDocuments` |  | |  | `chgkz` |  |  |
+| `SettlementIsNotRequired` |  | |  | `nabpf` |  |  |
+| `OrdIsUsedInIntegratedPlanning` |  | |  | `plint` |  |  |
+| `NetworkIsForPlanning` |  | |  | `vorpl` |  |  |
+| `RevenuePostingIsAllowed` |  | |  | `cast(typ.erloese as vdm_pp_erloese preserving type)` |  |  |
+| `CollectiveOrderHasAutoGoodsMvt` |  | |  | `cast(typ.colordproc as vdm_colordproc preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_ControllingObjectClass` | | ✓ | | | | |
+| `_OrderStatusProfile` | | ✓ | | | | |
+| `_OperationStatusProfile` | | ✓ | | | | |
 
 ## Associations
 

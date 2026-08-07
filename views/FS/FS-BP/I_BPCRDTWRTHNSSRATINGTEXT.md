@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `BPCreditStandingRating` | ✓ | |  | `rating` |
-| `BPCreditStandingRatingDesc` |  | |  | `xrating` |
-| `_BPCreditWorthinessRating` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `BPCreditStandingRating` | ✓ | |  | `rating` |  |  |
+| `BPCreditStandingRatingDesc` |  | |  | `xrating` |  |  |
+| `_BPCreditWorthinessRating` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

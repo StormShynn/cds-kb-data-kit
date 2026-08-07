@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ManufacturingOrderCategory` | ✓ | |  | `cast( cast(substring(t.domvalue_l, 1, 2) as abap.numc(2) ) as manufacturingordercategory preserving type)` |
-| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
-| `ManufacturingOrderCategoryName` |  | |  | `cast(t.ddtext as manufacturingordercategoryname preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_MfgOrderCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ManufacturingOrderCategory` | ✓ | |  | `cast( cast(substring(t.domvalue_l, 1, 2) as abap.numc(2) ) as manufacturingordercategory preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |  |  |
+| `ManufacturingOrderCategoryName` |  | |  | `cast(t.ddtext as manufacturingordercategoryname preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_MfgOrderCategory` | | ✓ | | | | |
 
 ## Associations
 

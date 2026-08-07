@@ -28,66 +28,66 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |
-| `SemanticTag` | ✓ | |  |  |
-| `BusSolnOrdType` |  | |  |  |
-| `BusSolnOrdDescription` |  | |  |  |
-| `BusSolnOrdItmDescription` |  | |  |  |
-| `BusSolnOrdItmStatus` |  | |  |  |
-| `BusSolnOrdStatus` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `RevenueAmountInCompanyCodeCrcy` |  | |  | `} RevenueAmountInCompanyCodeCrcy` |
-| `CostAmountInCompanyCodeCrcy` |  | |  | `} CostAmountInCompanyCodeCrcy` |
-| `RecognizedMarginAmtInCCCrcy` |  | |  | `} RecognizedMarginAmtInCCCrcy` |
-| `SlsItmRevenueAmount` |  | |  | `} SlsItmRevenueAmount` |
-| `SrvcContrItmRevenueAmount` |  | |  | `} SrvcContrItmRevenueAmount` |
-| `ExpnItmRevenueAmount` |  | |  | `} ExpnItmRevenueAmount` |
-| `SbscrBilgItmRevenueAmount` |  | |  | `} SbscrBilgItmRevenueAmount` |
-| `SrvcPrtItmRevenueAmount` |  | |  | `} SrvcPrtItmRevenueAmount` |
-| `SrvcItmRevenueAmount` |  | |  | `} SrvcItmRevenueAmount` |
-| `EntProjItmRevenueAmount` |  | |  | `} EntProjItmRevenueAmount` |
-| `CalendarYear` |  | | `_CalendarPeriod` | `CalendarYear` |
-| `CalendarQuarter` |  | | `_CalendarPeriod` | `CalendarQuarter` |
-| `CalendarMonth` |  | | `_CalendarPeriod` | `CalendarMonth` |
-| `FiscalYearVariant` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalQuarter` |  | |  |  |
-| `Product` |  | |  |  |
-| `_ServiceObjType` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_JournalEntry` | | ✓ | | |
-| `_SemanticTag` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceDocItemStatus` | | ✓ | | |
-| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_SrvcDocLifecycleStatus` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |  |  |
+| `SemanticTag` | ✓ | |  |  |  |  |
+| `BusSolnOrdType` |  | |  |  |  |  |
+| `BusSolnOrdDescription` |  | |  |  |  |  |
+| `BusSolnOrdItmDescription` |  | |  |  |  |  |
+| `BusSolnOrdItmStatus` |  | |  |  |  |  |
+| `BusSolnOrdStatus` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `RevenueAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `CostAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `RecognizedMarginAmtInCCCrcy` |  | |  |  |  |  |
+| `SlsItmRevenueAmount` |  | |  |  |  |  |
+| `SrvcContrItmRevenueAmount` |  | |  |  |  |  |
+| `ExpnItmRevenueAmount` |  | |  |  |  |  |
+| `SbscrBilgItmRevenueAmount` |  | |  |  |  |  |
+| `SrvcPrtItmRevenueAmount` |  | |  |  |  |  |
+| `SrvcItmRevenueAmount` |  | |  |  |  |  |
+| `EntProjItmRevenueAmount` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_CalendarPeriod` | `CalendarYear` |  |  |
+| `CalendarQuarter` |  | | `_CalendarPeriod` | `CalendarQuarter` |  |  |
+| `CalendarMonth` |  | | `_CalendarPeriod` | `CalendarMonth` |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalQuarter` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+| `_SemanticTag` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocItemStatus` | | ✓ | | | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | | | |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
 
 ## Associations
 

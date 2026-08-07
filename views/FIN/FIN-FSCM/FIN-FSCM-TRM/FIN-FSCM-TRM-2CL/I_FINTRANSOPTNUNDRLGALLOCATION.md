@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinTransOptionNumber` | ✓ | |  | `optnr` |
-| `OptionUnderlyingTransaction` | ✓ | |  | `cast( rfha as option_underlying_transaction preserving type )` |
-| `FinancialTransactionFromExer` |  | |  | `vrfha` |
-| `_FinTrans` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinTransOptionNumber` | ✓ | |  | `optnr` |  |  |
+| `OptionUnderlyingTransaction` | ✓ | |  | `cast( rfha as option_underlying_transaction preserving type )` |  |  |
+| `FinancialTransactionFromExer` |  | |  | `vrfha` |  |  |
+| `_FinTrans` | | ✓ | | | | |
 
 ## Associations
 

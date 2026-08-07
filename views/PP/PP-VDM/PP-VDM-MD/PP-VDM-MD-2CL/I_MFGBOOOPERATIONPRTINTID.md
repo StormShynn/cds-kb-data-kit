@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsType` | ✓ | |  |  |
-| `BillOfOperationsGroup` | ✓ | |  |  |
-| `BillOfOperationsVariant` | ✓ | |  |  |
-| `BillOfOperationsSequence` | ✓ | |  |  |
-| `BOOOperationInternalID` | ✓ | |  |  |
-| `BOOOperationPRTInternalID` | ✓ | |  |  |
-| `_BillOfOperations` | | ✓ | | |
-| `_BillOfOperationsSequence` | | ✓ | | |
-| `_BillOfOperationsOperation` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |  |  |
+| `BillOfOperationsSequence` | ✓ | |  |  |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |  |  |
+| `BOOOperationPRTInternalID` | ✓ | |  |  |  |  |
+| `_BillOfOperations` | | ✓ | | | | |
+| `_BillOfOperationsSequence` | | ✓ | | | | |
+| `_BillOfOperationsOperation` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
 
 ## Associations
 

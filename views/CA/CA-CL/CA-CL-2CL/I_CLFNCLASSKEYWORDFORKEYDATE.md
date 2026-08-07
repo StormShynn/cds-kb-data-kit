@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ClassKeywordPositionNumber` | ✓ | |  |  |
-| `ClassKeywordText` |  | |  |  |
-| `_Class` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassInternalID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ClassKeywordPositionNumber` | ✓ | |  |  |  |  |
+| `ClassKeywordText` |  | |  |  |  |  |
+| `_Class` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

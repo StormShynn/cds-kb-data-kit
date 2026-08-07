@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `DataControllerName` | ✓ | |  | `data_ctrlr` |
-| `BPDataPurposeText` | ✓ | |  | `purpose` |
-| `BPDataControllerIsDerived` |  | |  | `data_ctrlr_derived` |
-| `DataControlAssignmentStatus` |  | |  | `asgmt_status` |
-| `PurposeDerived` |  | |  | `pur_derived` |
-| `PurposeType` |  | |  | `purpose_type` |
-| `BusinessPurposeFlag` |  | |  | `eop_flag` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `DataControllerName` | ✓ | |  | `data_ctrlr` |  |  |
+| `BPDataPurposeText` | ✓ | |  | `purpose` |  |  |
+| `BPDataControllerIsDerived` |  | |  | `data_ctrlr_derived` |  |  |
+| `DataControlAssignmentStatus` |  | |  | `asgmt_status` |  |  |
+| `PurposeDerived` |  | |  | `pur_derived` |  |  |
+| `PurposeType` |  | |  | `purpose_type` |  |  |
+| `BusinessPurposeFlag` |  | |  | `eop_flag` |  |  |
 
 ## Source Code
 

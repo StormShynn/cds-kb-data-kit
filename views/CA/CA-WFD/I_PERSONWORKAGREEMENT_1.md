@@ -27,24 +27,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  |  |
-| `Person` |  | |  | `BusinessPartner` |
-| `AuthorizationGroup` |  | |  |  |
-| `PersonFullName` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_PersonWrkAgrmtForKeyDate` | | ✓ | | |
-| `_WorkforcePerson` | | ✓ | | |
-| `_PersonWorkAgrmtToExternalID` | | ✓ | | |
-| `_PersonWorkAgrmtOrglDetails` | | ✓ | | |
-| `_PersonWorkAgrmtStatus` | | ✓ | | |
-| `_PersonWorkAgrmtPlndWrkgTime` | | ✓ | | |
-| `_PersonWorkAgrmtSrvcCostLevel` | | ✓ | | |
-| `_PersWrkAgrmtManagerForKeyDte` | | ✓ | | |
-| `_PersonWorkAgreementType` | | ✓ | | |
-| `_WorkforcePersonImageURL` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonWorkAgreement` | ✓ | |  |  |  |  |
+| `Person` |  | |  | `BusinessPartner` |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `PersonFullName` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_PersonWrkAgrmtForKeyDate` | | ✓ | | | | |
+| `_WorkforcePerson` | | ✓ | | | | |
+| `_PersonWorkAgrmtToExternalID` | | ✓ | | | | |
+| `_PersonWorkAgrmtOrglDetails` | | ✓ | | | | |
+| `_PersonWorkAgrmtStatus` | | ✓ | | | | |
+| `_PersonWorkAgrmtPlndWrkgTime` | | ✓ | | | | |
+| `_PersonWorkAgrmtSrvcCostLevel` | | ✓ | | | | |
+| `_PersWrkAgrmtManagerForKeyDte` | | ✓ | | | | |
+| `_PersonWorkAgreementType` | | ✓ | | | | |
+| `_WorkforcePersonImageURL` | | ✓ | | | | |
 
 ## Associations
 

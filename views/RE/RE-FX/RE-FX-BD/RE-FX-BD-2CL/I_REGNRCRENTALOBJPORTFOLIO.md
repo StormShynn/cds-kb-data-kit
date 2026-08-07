@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REGnrcRentalObjPortfolioID` | ✓ | |  | `portfolioid` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REGnrcRentalObjPortfolioID` | ✓ | |  | `portfolioid` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

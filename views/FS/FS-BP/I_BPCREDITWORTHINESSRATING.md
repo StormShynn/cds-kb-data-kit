@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BPCreditStandingRating` | ✓ | |  | `rating` |
-| `_Text` | | ✓ | | |
-| `_BPCreditWorthiness` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPCreditStandingRating` | ✓ | |  | `rating` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_BPCreditWorthiness` | | ✓ | | | | |
 
 ## Associations
 

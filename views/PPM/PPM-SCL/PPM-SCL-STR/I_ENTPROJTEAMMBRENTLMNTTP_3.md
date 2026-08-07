@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectEntitlementUUID` | ✓ | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ProjectRoleUUID` |  | |  |  |
-| `TeamMemberUUID` |  | |  |  |
-| `ProjectRoleType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_TeamMember` | | ✓ | | |
-| `_Role` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectEntitlementUUID` | ✓ | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ProjectRoleUUID` |  | |  |  |  |  |
+| `TeamMemberUUID` |  | |  |  |  |  |
+| `ProjectRoleType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_TeamMember` | | ✓ | | | | |
+| `_Role` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Source Code
 

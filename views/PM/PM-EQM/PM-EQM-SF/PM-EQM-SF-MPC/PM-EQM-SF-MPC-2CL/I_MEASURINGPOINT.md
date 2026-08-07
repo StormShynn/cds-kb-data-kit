@@ -28,69 +28,69 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MeasuringPoint` | ✓ | |  | `point` |
-| `MeasuringPointObjectIdentifier` |  | |  | `mpobj` |
-| `MeasuringPointPositionNumber` |  | |  | `psort` |
-| `MeasuringPointCategory` |  | |  | `mptyp` |
-| `CreationDate` |  | |  | `erdat` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `MeasuringPointIsInactive` |  | |  | `inact` |
-| `MeasuringPointIsCounter` |  | |  | `indct` |
-| `MultiLevelDeletionLogicStatus` |  | |  | `lvorm` |
-| `Assembly` |  | |  | `locas` |
-| `ReferenceMeasuringPoint` |  | |  | `refmp` |
-| `MsrgPtInternalCharacteristic` |  | |  | `atinn` |
-| `MeasuringPointExponent` |  | |  | `expon` |
-| `MeasuringPointDecimalPlaces` |  | |  | `decim` |
-| `MeasuringPointMinimumThreshold` |  | |  | `mrmin` |
-| `MinimumThresholdIsEntered` |  | |  | `mrmini` |
-| `MeasuringPointMaximumThreshold` |  | |  | `mrmax` |
-| `MaximumThresholdIsEntered` |  | |  | `mrmaxi` |
-| `MeasurementRangeUnit` |  | |  | `mrngu` |
-| `MeasuringPointSIUnitOfMeasure` |  | | `_UnitOfMeasure._Dimension` | `UnitOFMeasureSiUnit` |
-| `MsrgPtIsCountingBackwards` |  | |  | `indrv` |
-| `MsmtRdngSourceMeasuringPoint` |  | |  | `trans` |
-| `CounterOverflowRdngThreshold` |  | |  | `cjump` |
-| `OverflowReadingIsEntered` |  | |  | `cjumpi` |
-| `MeasuringPointAnnualEstimate` |  | |  | `pyear` |
-| `MsrgPtAnnualEstimateIsEntered` |  | |  | `pyeari` |
-| `MeasuringPointCatalogType` |  | |  | `codct` |
-| `MeasuringPointCodeGroup` |  | |  | `codgr` |
-| `ValuationCodeIsSufficient` |  | |  | `cdsuf` |
-| `Language` |  | |  | `mlang` |
-| `MeasuringPointDescription` |  | |  | `pttxt` |
-| `MeasuringPointShortText` |  | |  | `dstxt` |
-| `MeasuringPointIsReference` |  | |  | `irfmp` |
-| `MeasurementTransferIsSupported` |  | |  | `indtr` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `LastChangedByUser` |  | |  | `aenam` |
-| `MeasuringPointHasLongText` |  | |  | `kzltx` |
-| `MeasuringPointObjectType` |  | |  | `cast(substring(mpobj,1,2) as j_obart)` |
-| `MeasuringPointTargetValue` |  | |  | `desir` |
-| `TargetValueIsEntered` |  | |  | `desiri` |
-| `MsmtRdngTransferMode` |  | |  | `modtr` |
-| `MsrgPtMaximumToleranceQuantity` |  | |  | `upr_tolerance` |
-| `MsrgPtMaxTolUnitOfMeasure` |  | |  | `upr_dsp_unit` |
-| `MsrgPtMinimumToleranceQuantity` |  | |  | `lowr_tolerance` |
-| `MsrgPtMinTolUnitOfMeasure` |  | |  | `lowr_dsp_unit` |
-| `FunctionalLocation` |  | | `_FunctionalLocation` | `FunctionalLocation` |
-| `_ControllingObject` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ReferenceMeasuringPoint` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_MsmtRdngSourceMeasuringPoint` | | ✓ | | |
-| `_MeasuringPointCatalogType` | | ✓ | | |
-| `_MeasuringPointCodeGroup` | | ✓ | | |
-| `_Characteristic` | | ✓ | | |
-| `_MeasuringPointCategory` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_FunctionalLocationLabel` | | ✓ | | |
-| `_AuthorizationGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeasuringPoint` | ✓ | |  | `point` |  |  |
+| `MeasuringPointObjectIdentifier` |  | |  | `mpobj` |  |  |
+| `MeasuringPointPositionNumber` |  | |  | `psort` |  |  |
+| `MeasuringPointCategory` |  | |  | `mptyp` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `MeasuringPointIsInactive` |  | |  | `inact` |  |  |
+| `MeasuringPointIsCounter` |  | |  | `indct` |  |  |
+| `MultiLevelDeletionLogicStatus` |  | |  | `lvorm` |  |  |
+| `Assembly` |  | |  | `locas` |  |  |
+| `ReferenceMeasuringPoint` |  | |  | `refmp` |  |  |
+| `MsrgPtInternalCharacteristic` |  | |  | `atinn` |  |  |
+| `MeasuringPointExponent` |  | |  | `expon` |  |  |
+| `MeasuringPointDecimalPlaces` |  | |  | `decim` |  |  |
+| `MeasuringPointMinimumThreshold` |  | |  | `mrmin` |  |  |
+| `MinimumThresholdIsEntered` |  | |  | `mrmini` |  |  |
+| `MeasuringPointMaximumThreshold` |  | |  | `mrmax` |  |  |
+| `MaximumThresholdIsEntered` |  | |  | `mrmaxi` |  |  |
+| `MeasurementRangeUnit` |  | |  | `mrngu` |  |  |
+| `MeasuringPointSIUnitOfMeasure` |  | | `_UnitOfMeasure._Dimension` | `UnitOFMeasureSiUnit` |  |  |
+| `MsrgPtIsCountingBackwards` |  | |  | `indrv` |  |  |
+| `MsmtRdngSourceMeasuringPoint` |  | |  | `trans` |  |  |
+| `CounterOverflowRdngThreshold` |  | |  | `cjump` |  |  |
+| `OverflowReadingIsEntered` |  | |  | `cjumpi` |  |  |
+| `MeasuringPointAnnualEstimate` |  | |  | `pyear` |  |  |
+| `MsrgPtAnnualEstimateIsEntered` |  | |  | `pyeari` |  |  |
+| `MeasuringPointCatalogType` |  | |  | `codct` |  |  |
+| `MeasuringPointCodeGroup` |  | |  | `codgr` |  |  |
+| `ValuationCodeIsSufficient` |  | |  | `cdsuf` |  |  |
+| `Language` |  | |  | `mlang` |  |  |
+| `MeasuringPointDescription` |  | |  | `pttxt` |  |  |
+| `MeasuringPointShortText` |  | |  | `dstxt` |  |  |
+| `MeasuringPointIsReference` |  | |  | `irfmp` |  |  |
+| `MeasurementTransferIsSupported` |  | |  | `indtr` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `LastChangedByUser` |  | |  | `aenam` |  |  |
+| `MeasuringPointHasLongText` |  | |  | `kzltx` |  |  |
+| `MeasuringPointObjectType` |  | |  | `cast(substring(mpobj,1,2) as j_obart)` |  |  |
+| `MeasuringPointTargetValue` |  | |  | `desir` |  |  |
+| `TargetValueIsEntered` |  | |  | `desiri` |  |  |
+| `MsmtRdngTransferMode` |  | |  | `modtr` |  |  |
+| `MsrgPtMaximumToleranceQuantity` |  | |  | `upr_tolerance` |  |  |
+| `MsrgPtMaxTolUnitOfMeasure` |  | |  | `upr_dsp_unit` |  |  |
+| `MsrgPtMinimumToleranceQuantity` |  | |  | `lowr_tolerance` |  |  |
+| `MsrgPtMinTolUnitOfMeasure` |  | |  | `lowr_dsp_unit` |  |  |
+| `FunctionalLocation` |  | | `_FunctionalLocation` | `FunctionalLocation` |  |  |
+| `_ControllingObject` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ReferenceMeasuringPoint` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_MsmtRdngSourceMeasuringPoint` | | ✓ | | | | |
+| `_MeasuringPointCatalogType` | | ✓ | | | | |
+| `_MeasuringPointCodeGroup` | | ✓ | | | | |
+| `_Characteristic` | | ✓ | | | | |
+| `_MeasuringPointCategory` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_FunctionalLocationLabel` | | ✓ | | | | |
+| `_AuthorizationGroup` | | ✓ | | | | |
 
 ## Associations
 

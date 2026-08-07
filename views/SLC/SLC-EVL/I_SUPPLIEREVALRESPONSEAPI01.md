@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalRspUUID` | ✓ | |  |  |
-| `SupplierEvalResponse` |  | |  |  |
-| `SuplrEvalRspName` |  | |  |  |
-| `SuplrEvalStartDate` |  | |  |  |
-| `SuplrEvalEndDate` |  | |  |  |
-| `SuplrEvalSubmissionDateTime` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `SuplrEvalDeadlineDate` |  | |  |  |
-| `PurgCatUUID` |  | |  |  |
-| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `Language` |  | |  |  |
-| `SuplrEvalRspLifecycleStatus` |  | |  |  |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalRspUUID` | ✓ | |  |  |  |  |
+| `SupplierEvalResponse` |  | |  |  |  |  |
+| `SuplrEvalRspName` |  | |  |  |  |  |
+| `SuplrEvalStartDate` |  | |  |  |  |  |
+| `SuplrEvalEndDate` |  | |  |  |  |  |
+| `SuplrEvalSubmissionDateTime` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `SuplrEvalDeadlineDate` |  | |  |  |  |  |
+| `PurgCatUUID` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |  |  |
+| `Language` |  | |  |  |  |  |
+| `SuplrEvalRspLifecycleStatus` |  | |  |  |  |  |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

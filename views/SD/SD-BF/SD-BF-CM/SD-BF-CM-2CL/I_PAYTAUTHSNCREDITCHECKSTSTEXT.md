@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaytAuthsnCreditCheckSts` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `PaytAuthsnCreditCheckStsDesc` |  | |  | `cast(bezei as paytauthsncreditcheckstsdesc )` |
-| `_PaytAuthsnCreditCheckSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaytAuthsnCreditCheckSts` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PaytAuthsnCreditCheckStsDesc` |  | |  | `cast(bezei as paytauthsncreditcheckstsdesc )` |  |  |
+| `_PaytAuthsnCreditCheckSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

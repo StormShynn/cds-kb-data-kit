@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostCenter` |  | |  | `}] key cast( CostCenter as fincs_costcenter preserving type )` |
-| `ControllingArea` | ✓ | |  | `cast( ControllingArea as fincs_controllingarea preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `CreationDateTime` |  | |  | `cast( min ( CreationDateTime ) as fincs_creationdatetime preserving type )` |
-| `_ControllingArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_CostCenterHierNode` | | ✓ | | |
-| `_MDSource` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostCenter` | ✓ | |  | `cast( CostCenter as fincs_costcenter preserving type )` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( ControllingArea as fincs_controllingarea preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `CreationDateTime` |  | |  | `cast( min ( CreationDateTime ) as fincs_creationdatetime preserving type )` |  |  |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_CostCenterHierNode` | | ✓ | | | | |
+| `_MDSource` | | ✓ | | | | |
 
 ## Associations
 

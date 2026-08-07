@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |
-| `CnsldtnFSItemDataCollection` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemdatacollection preserving type )` |
-| `CnsldtnFSItemDataCollText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |
-| `CnsldtnFSItemDataCollLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |
-| `_CnsldtnFSItemDataCollection` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |  |  |
+| `CnsldtnFSItemDataCollection` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemdatacollection preserving type )` |  |  |
+| `CnsldtnFSItemDataCollText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |  |  |
+| `CnsldtnFSItemDataCollLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |  |  |
+| `_CnsldtnFSItemDataCollection` | | ✓ | | | | |
 
 ## Associations
 

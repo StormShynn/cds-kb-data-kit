@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPProfile` | ✓ | |  | `dispr` |
-| `Language` | ✓ | |  | `spras` |
-| `MRPProfileName` |  | |  | `ktext` |
-| `_MRPProfile` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPProfile` | ✓ | |  | `dispr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MRPProfileName` |  | |  | `ktext` |  |  |
+| `_MRPProfile` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

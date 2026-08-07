@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerClassification` | ✓ | |  | `kukla` |
-| `Language` | ✓ | |  | `spras` |
-| `CustomerClassificationDesc` |  | |  | `cast(vtext as customerclassificationdesc preserving type)` |
-| `_CustomerClassification` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerClassification` | ✓ | |  | `kukla` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CustomerClassificationDesc` |  | |  | `cast(vtext as customerclassificationdesc preserving type)` |  |  |
+| `_CustomerClassification` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionOrderInternalID` | ✓ | |  | `OrderInternalBillOfOperations` |
-| `ProductionOrder` |  | |  | `cast(OrderID as vdm_manufacturingorder preserving type)` |
-| `ProductionOrderType` |  | |  | `cast(OrderType as vdm_prodnordertype preserving type)` |
-| `_ProductionOrder` | | ✓ | | |
-| `_ProductionOrderType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionOrderInternalID` | ✓ | |  | `OrderInternalBillOfOperations` |  |  |
+| `ProductionOrder` |  | |  | `cast(OrderID as vdm_manufacturingorder preserving type)` |  |  |
+| `ProductionOrderType` |  | |  | `cast(OrderType as vdm_prodnordertype preserving type)` |  |  |
+| `_ProductionOrder` | | ✓ | | | | |
+| `_ProductionOrderType` | | ✓ | | | | |
 
 ## Associations
 

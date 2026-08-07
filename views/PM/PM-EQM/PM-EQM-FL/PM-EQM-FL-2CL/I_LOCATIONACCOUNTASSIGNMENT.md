@@ -28,62 +28,62 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintObjectLocAcctAssgmtNmbr` | ✓ | |  | `iloan` |
-| `WorkCenterInternalID` |  | |  | `ppsid` |
-| `WorkCenterTypeCode` |  | |  | `cr_objty` |
-| `FunctionalLocation` |  | |  | `tplnr` |
-| `MaintenancePlant` |  | |  | `swerk` |
-| `PlantSection` |  | |  | `}] iloa.beber` |
-| `AssetLocation` |  | |  | `stort` |
-| `MaintObjectFreeDefinedAttrib` |  | |  | `eqfnr` |
-| `BusinessArea` |  | |  | `gsber` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CostCenter` |  | |  | `}] iloa.kostl` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `Division` |  | |  | `spart` |
-| `MaintenanceObjectLocation` |  | |  | `stort` |
-| `AssetRoom` |  | |  | `msgrp` |
-| `ABCIndicator` |  | |  | `abckz` |
-| `AddressID` |  | |  | `adrnr` |
-| `WBSElementInternalID` |  | |  | `proid` |
-| `MasterFixedAsset` |  | |  | `}] iloa.anlnr` |
-| `FixedAsset` |  | |  | `}] iloa.anlun` |
-| `SettlementOrder` |  | |  | `aufnr` |
-| `StandingOrderNumber` |  | |  | `daufn` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `SalesOffice` |  | |  | `vkbur` |
-| `OrganizationDivision` |  | |  | `spart` |
-| `SalesGroup` |  | |  | `vkgrp` |
-| `_WorkCenterType` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_MaintenancePlant` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_PlantSection` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_ABCIndicator` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_PMNotifMaintenanceData` | | ✓ | | |
-| `_Location` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_SettlementOrder` | | ✓ | | |
-| `_StandingOrderNumber` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SlsOrganizationDistrChnl` | | ✓ | | |
-| `_SalesAreaSalesOffice` | | ✓ | | |
-| `_SalesOfficeSalesGroup` | | ✓ | | |
-| `_CostCenterText` | | ✓ | | |
-| `_Address2` | | ✓ | | |
-| `_PhoneNumber` | | ✓ | | |
-| `_FaxNumber` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintObjectLocAcctAssgmtNmbr` | ✓ | |  | `iloan` |  |  |
+| `WorkCenterInternalID` |  | |  | `ppsid` |  |  |
+| `WorkCenterTypeCode` |  | |  | `cr_objty` |  |  |
+| `FunctionalLocation` |  | |  | `tplnr` |  |  |
+| `MaintenancePlant` |  | |  | `swerk` |  |  |
+| `PlantSection` |  | |  | `beber` |  |  |
+| `AssetLocation` |  | |  | `stort` |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | |  | `eqfnr` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `MaintenanceObjectLocation` |  | |  | `stort` |  |  |
+| `AssetRoom` |  | |  | `msgrp` |  |  |
+| `ABCIndicator` |  | |  | `abckz` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `WBSElementInternalID` |  | |  | `proid` |  |  |
+| `MasterFixedAsset` |  | |  | `anlnr` |  |  |
+| `FixedAsset` |  | |  | `anlun` |  |  |
+| `SettlementOrder` |  | |  | `aufnr` |  |  |
+| `StandingOrderNumber` |  | |  | `daufn` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `SalesOffice` |  | |  | `vkbur` |  |  |
+| `OrganizationDivision` |  | |  | `spart` |  |  |
+| `SalesGroup` |  | |  | `vkgrp` |  |  |
+| `_WorkCenterType` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_MaintenancePlant` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_PlantSection` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_ABCIndicator` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_PMNotifMaintenanceData` | | ✓ | | | | |
+| `_Location` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_SettlementOrder` | | ✓ | | | | |
+| `_StandingOrderNumber` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SlsOrganizationDistrChnl` | | ✓ | | | | |
+| `_SalesAreaSalesOffice` | | ✓ | | | | |
+| `_SalesOfficeSalesGroup` | | ✓ | | | | |
+| `_CostCenterText` | | ✓ | | | | |
+| `_Address2` | | ✓ | | | | |
+| `_PhoneNumber` | | ✓ | | | | |
+| `_FaxNumber` | | ✓ | | | | |
 
 ## Associations
 

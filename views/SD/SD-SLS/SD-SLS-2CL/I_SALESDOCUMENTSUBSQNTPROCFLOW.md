@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocument` | ✓ | |  | `PrecedingDocument` |
-| `DocRelationshipUUID` | ✓ | |  |  |
-| `SubsequentDocument` |  | |  |  |
-| `SubsequentDocumentCategory` |  | |  |  |
-| `SDDocumentCategory` |  | |  | `PrecedingDocumentCategory` |
-| `ProcessFlowLevel` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `SalesDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_SalesDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `PrecedingDocument` |  |  |
+| `DocRelationshipUUID` | ✓ | |  |  |  |  |
+| `SubsequentDocument` |  | |  |  |  |  |
+| `SubsequentDocumentCategory` |  | |  |  |  |  |
+| `SDDocumentCategory` |  | |  | `PrecedingDocumentCategory` |  |  |
+| `ProcessFlowLevel` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `SalesDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_SalesDocument` | | ✓ | | | | |
 
 ## Associations
 

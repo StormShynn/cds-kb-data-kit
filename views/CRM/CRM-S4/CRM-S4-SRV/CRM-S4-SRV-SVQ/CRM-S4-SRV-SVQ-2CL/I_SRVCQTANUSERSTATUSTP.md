@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceQuotation` | ✓ | |  |  |
-| `UserStatus` | ✓ | |  |  |
-| `StatusProfile` |  | |  |  |
-| `_StatusCode` | | ✓ | | |
-| `_StatusProfile` | | ✓ | | |
-| `_ServiceQuotationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |  |  |
+| `UserStatus` | ✓ | |  |  |  |  |
+| `StatusProfile` |  | |  |  |  |  |
+| `_StatusCode` | | ✓ | | | | |
+| `_StatusProfile` | | ✓ | | | | |
+| `_ServiceQuotationTP` | | ✓ | | | | |
 
 ## Source Code
 

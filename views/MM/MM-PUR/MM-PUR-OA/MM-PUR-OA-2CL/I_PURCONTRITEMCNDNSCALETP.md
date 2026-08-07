@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractItem` | ✓ | |  |  |
-| `ConditionRecord` | ✓ | |  |  |
-| `ConditionValidityEndDate` | ✓ | |  |  |
-| `ConditionSequentialNumberShort` | ✓ | |  |  |
-| `ConditionScaleLine` | ✓ | |  |  |
-| `ConditionScaleQuantity` |  | |  |  |
-| `ConditionScaleQuantityUnit` |  | |  |  |
-| `CndnScaleQuantityUnitISOCode` |  | |  |  |
-| `ConditionScaleAmount` |  | |  |  |
-| `ConditionScaleAmountCurrency` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionRateValueUnit` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionScaleIsDeleted` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionQuantityUnitISOCode` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurContract` | | ✓ | | |
-| `_PurContrItemCndnAmount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |  |  |
+| `ConditionRecord` | ✓ | |  |  |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |  |  |
+| `ConditionScaleLine` | ✓ | |  |  |  |  |
+| `ConditionScaleQuantity` |  | |  |  |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |  |  |
+| `CndnScaleQuantityUnitISOCode` |  | |  |  |  |  |
+| `ConditionScaleAmount` |  | |  |  |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionRateValueUnit` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionScaleIsDeleted` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionQuantityUnitISOCode` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurContract` | | ✓ | | | | |
+| `_PurContrItemCndnAmount` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharcGroup` | ✓ | |  | `cast ( CharacteristicGroup.atkla as charcgroup preserving type )` |
-| `ConfigurationDeprecationCode` |  | |  | `configurationdeprecationcode` |
-| `_CharacteristicGroupText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharcGroup` | ✓ | |  | `cast ( CharacteristicGroup.atkla as charcgroup preserving type )` |  |  |
+| `ConfigurationDeprecationCode` |  | |  | `configurationdeprecationcode` |  |  |
+| `_CharacteristicGroupText` | | ✓ | | | | |
 
 ## Source Code
 

@@ -38,24 +38,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Uuid` | ✓ | |  | `uuid` |
-| `Carrid` |  | |  | `carrid` |
-| `Connid` |  | |  | `connid` |
-| `AirportFrom` |  | |  | `airport_from` |
-| `CityFrom` |  | |  | `city_from` |
-| `CountryFrom` |  | |  | `country_from` |
-| `AirportTo` |  | |  | `airport_to` |
-| `CityTo` |  | |  | `city_to` |
-| `CountryTo` |  | |  | `country_to` |
-| `Price` |  | |  | `price` |
-| `CurrencyCode` |  | |  | `currency_code` |
-| `LocalCreatedBy` |  | |  | `local_created_by` |
-| `LocalCreatedAt` |  | |  | `local_created_at` |
-| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |
-| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
-| `LastChangedAt` |  | |  | `last_changed_at` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Uuid` | ✓ | |  | `uuid` |  |  |
+| `Carrid` |  | |  | `carrid` |  |  |
+| `Connid` |  | |  | `connid` |  |  |
+| `AirportFrom` |  | |  | `airport_from` |  |  |
+| `CityFrom` |  | |  | `city_from` |  |  |
+| `CountryFrom` |  | |  | `country_from` |  |  |
+| `AirportTo` |  | |  | `airport_to` |  |  |
+| `CityTo` |  | |  | `city_to` |  |  |
+| `CountryTo` |  | |  | `country_to` |  |  |
+| `Price` |  | |  | `price` |  |  |
+| `CurrencyCode` |  | |  | `currency_code` |  |  |
+| `LocalCreatedBy` |  | |  | `local_created_by` |  |  |
+| `LocalCreatedAt` |  | |  | `local_created_at` |  |  |
+| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |  |  |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |  |  |
+| `LastChangedAt` |  | |  | `last_changed_at` |  |  |
 
 ## Source Code
 

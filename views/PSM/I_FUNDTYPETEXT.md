@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `FinancialManagementArea` | ✓ | |  | `fm_area` |
-| `FundType` | ✓ | |  | `fund_type` |
-| `FundTypeDescription` |  | |  | `cast( fund_typet as fmis_fundtypet preserving type )` |
-| `_FinMgmtArea` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_FundType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `FinancialManagementArea` | ✓ | |  | `fm_area` |  |  |
+| `FundType` | ✓ | |  | `fund_type` |  |  |
+| `FundTypeDescription` |  | |  | `cast( fund_typet as fmis_fundtypet preserving type )` |  |  |
+| `_FinMgmtArea` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_FundType` | | ✓ | | | | |
 
 ## Associations
 

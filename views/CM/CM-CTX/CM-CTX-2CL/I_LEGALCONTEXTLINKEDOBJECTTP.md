@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMCntxtLinkObjUUID` | ✓ | |  |  |
-| `LglCntntMContextUUID` |  | |  |  |
-| `LglCntntMLinkdObjType` |  | |  |  |
-| `LglCntntMIsMandatory` |  | |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |
-| `_LCMContextTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMCntxtLinkObjUUID` | ✓ | |  |  |  |  |
+| `LglCntntMContextUUID` |  | |  |  |  |  |
+| `LglCntntMLinkdObjType` |  | |  |  |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
+| `_LCMContextTP` | | ✓ | | | | |
 
 ## Source Code
 

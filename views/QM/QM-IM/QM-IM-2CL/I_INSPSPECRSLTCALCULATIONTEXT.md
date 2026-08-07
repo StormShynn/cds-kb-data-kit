@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSpecResultCalculation` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qkzformel preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `InspSpecResultCalculationText` |  | |  | `cast( ddtext as vdm_qkzformel_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_InspSpecResultCalculation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSpecResultCalculation` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qkzformel preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `InspSpecResultCalculationText` |  | |  | `cast( ddtext as vdm_qkzformel_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspSpecResultCalculation` | | ✓ | | | | |
 
 ## Associations
 

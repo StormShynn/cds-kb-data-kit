@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` |
-| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` |
-| `IsDisputed` |  | |  | `xstrp` |
-| `PaytDiffIsChargedToSprtGLAcct` |  | |  | `xausb` |
-| `_Text` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` |  |  |
+| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` |  |  |
+| `IsDisputed` |  | |  | `xstrp` |  |  |
+| `PaytDiffIsChargedToSprtGLAcct` |  | |  | `xausb` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

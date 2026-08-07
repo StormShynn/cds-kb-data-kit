@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrder` | ✓ | |  |  |
-| `ServiceOrderItem` | ✓ | |  |  |
-| `UserStatus` | ✓ | |  |  |
-| `StatusProfile` |  | |  |  |
-| `_StatusCode` | | ✓ | | |
-| `_StatusProfile` | | ✓ | | |
-| `_ServiceOrderItemTP` | | ✓ | | |
-| `_ServiceOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |  |  |
+| `UserStatus` | ✓ | |  |  |  |  |
+| `StatusProfile` |  | |  |  |  |  |
+| `_StatusCode` | | ✓ | | | | |
+| `_StatusProfile` | | ✓ | | | | |
+| `_ServiceOrderItemTP` | | ✓ | | | | |
+| `_ServiceOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

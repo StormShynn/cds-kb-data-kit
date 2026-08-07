@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
-| `PostingLevel` | ✓ | |  | `cast(left(_DomainT.DomainValue, 2) as fincs_postinglevel preserving type )` |
-| `PostingLevelText` |  | | `_DomainT` | `DomainValueText` |
-| `DomainValue` |  | | `_DomainT` | `DomainValue` |
-| `_PostingLevel` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |  |  |
+| `PostingLevel` | ✓ | |  | `cast(left(_DomainT.DomainValue, 2) as fincs_postinglevel preserving type )` |  |  |
+| `PostingLevelText` |  | | `_DomainT` | `DomainValueText` |  |  |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |  |  |
+| `_PostingLevel` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuperordinateEquipment` |  | |  | `hequi` |
-| `FunctionalLocation` |  | |  | `tplnr` |
-| `EquipInstallationPositionNmbr` |  | |  | `installpos` |
-| `EquipmentInstallationDate` |  | |  | `aedat` |
-| `EquipmentInstallationTime` |  | |  | `timbi` |
-| `LocationCopyIsRequested` |  | |  | `flag` |
-| `RoomCopyIsRequested` |  | |  | `flag` |
-| `PlantSectionCopyIsRequested` |  | |  | `flag` |
-| `WorkCenterCopyIsRequested` |  | |  | `flag` |
-| `ABCIndicatorCopyIsRequested` |  | |  | `flag` |
-| `SortFieldCopyIsRequested` |  | |  | `flag` |
-| `BusinessAreaCopyIsRequested` |  | |  | `flag` |
-| `CostCenterCopyIsRequested` |  | |  | `flag` |
-| `WBSElementCopyIsRequested` |  | |  | `flag` |
-| `StandingOrderCopyIsRequested` |  | |  | `flag` |
-| `SettlementOrderCopyIsRequested` |  | |  | `flag` |
-| `MaintPlanningPlantCopyIsReqd` |  | |  | `flag` |
-| `MaintWorkCenterCopyIsRequested` |  | |  | `flag` |
-| `CatalogProfileCopyIsRequested` |  | |  | `flag` |
-| `SalesOrganizationCopyIsReqd` |  | |  | `flag` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuperordinateEquipment` |  | |  | `hequi` |  |  |
+| `FunctionalLocation` |  | |  | `tplnr` |  |  |
+| `EquipInstallationPositionNmbr` |  | |  | `installpos` |  |  |
+| `EquipmentInstallationDate` |  | |  | `aedat` |  |  |
+| `EquipmentInstallationTime` |  | |  | `timbi` |  |  |
+| `LocationCopyIsRequested` |  | |  | `flag` |  |  |
+| `RoomCopyIsRequested` |  | |  | `flag` |  |  |
+| `PlantSectionCopyIsRequested` |  | |  | `flag` |  |  |
+| `WorkCenterCopyIsRequested` |  | |  | `flag` |  |  |
+| `ABCIndicatorCopyIsRequested` |  | |  | `flag` |  |  |
+| `SortFieldCopyIsRequested` |  | |  | `flag` |  |  |
+| `BusinessAreaCopyIsRequested` |  | |  | `flag` |  |  |
+| `CostCenterCopyIsRequested` |  | |  | `flag` |  |  |
+| `WBSElementCopyIsRequested` |  | |  | `flag` |  |  |
+| `StandingOrderCopyIsRequested` |  | |  | `flag` |  |  |
+| `SettlementOrderCopyIsRequested` |  | |  | `flag` |  |  |
+| `MaintPlanningPlantCopyIsReqd` |  | |  | `flag` |  |  |
+| `MaintWorkCenterCopyIsRequested` |  | |  | `flag` |  |  |
+| `CatalogProfileCopyIsRequested` |  | |  | `flag` |  |  |
+| `SalesOrganizationCopyIsReqd` |  | |  | `flag` |  |  |
 
 ## Source Code
 

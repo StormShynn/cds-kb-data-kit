@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SrvcCanclnProcedure` | ✓ | |  | `cancproc` |
-| `_SrvcCanclnProcedureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcCanclnProcedure` | ✓ | |  | `cancproc` |  |  |
+| `_SrvcCanclnProcedureText` | | ✓ | | | | |
 
 ## Associations
 

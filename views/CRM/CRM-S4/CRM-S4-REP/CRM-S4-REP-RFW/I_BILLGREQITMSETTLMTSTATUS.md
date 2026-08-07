@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillgReqItemBillingStatus` | ✓ | |  | `domvalue_l` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_BillgReqItmSettlmtStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillgReqItemBillingStatus` | ✓ | |  | `domvalue_l` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_BillgReqItmSettlmtStatusText` | | ✓ | | | | |
 
 ## Associations
 

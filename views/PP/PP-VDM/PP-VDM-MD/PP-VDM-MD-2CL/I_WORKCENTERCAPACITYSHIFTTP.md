@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterInternalID` | ✓ | |  |  |
-| `WorkCenterTypeCode` | ✓ | |  |  |
-| `CapacityCategoryAllocation` | ✓ | |  |  |
-| `CapacityInternalID` | ✓ | |  |  |
-| `CapacityActiveVersion` | ✓ | |  |  |
-| `IntervalEndDate` | ✓ | |  |  |
-| `WeekDay` | ✓ | |  |  |
-| `AvailableCapacityShift` | ✓ | |  |  |
-| `IntervalStartDate` |  | |  |  |
-| `WorkDayRule` |  | |  |  |
-| `ShiftDefinition` |  | |  |  |
-| `ShiftStartTime` |  | |  |  |
-| `ShiftEndTime` |  | |  |  |
-| `ShiftDefValidityStartDate` |  | |  |  |
-| `ShiftDefValidityEndDate` |  | |  |  |
-| `CapacityNumberOfCapacities` |  | |  |  |
-| `CapacityPlanUtilizationPercent` |  | |  |  |
-| `CapacityBreakDuration` |  | |  |  |
-| `OperatingDurationInSeconds` |  | |  |  |
-| `TotOperatingDurationInSeconds` |  | |  |  |
-| `CapacityLastChangeDateTime` |  | |  |  |
-| `_Header` | | ✓ | | |
-| `_Interval` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |  |  |
+| `CapacityCategoryAllocation` | ✓ | |  |  |  |  |
+| `CapacityInternalID` | ✓ | |  |  |  |  |
+| `CapacityActiveVersion` | ✓ | |  |  |  |  |
+| `IntervalEndDate` | ✓ | |  |  |  |  |
+| `WeekDay` | ✓ | |  |  |  |  |
+| `AvailableCapacityShift` | ✓ | |  |  |  |  |
+| `IntervalStartDate` |  | |  |  |  |  |
+| `WorkDayRule` |  | |  |  |  |  |
+| `ShiftDefinition` |  | |  |  |  |  |
+| `ShiftStartTime` |  | |  |  |  |  |
+| `ShiftEndTime` |  | |  |  |  |  |
+| `ShiftDefValidityStartDate` |  | |  |  |  |  |
+| `ShiftDefValidityEndDate` |  | |  |  |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |  |  |
+| `CapacityBreakDuration` |  | |  |  |  |  |
+| `OperatingDurationInSeconds` |  | |  |  |  |  |
+| `TotOperatingDurationInSeconds` |  | |  |  |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
+| `_Interval` | | ✓ | | | | |
 
 ## Source Code
 

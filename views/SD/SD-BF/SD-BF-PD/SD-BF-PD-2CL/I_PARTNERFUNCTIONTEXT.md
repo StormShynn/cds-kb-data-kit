@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PartnerFunction` | ✓ | |  | `cast(parvw as parvw_unv)` |
-| `Language` | ✓ | |  | `spras` |
-| `PartnerFunctionName` |  | |  | `vtext` |
-| `_PartnerFunction` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PartnerFunction` | ✓ | |  | `cast(parvw as parvw_unv)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PartnerFunctionName` |  | |  | `vtext` |  |  |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

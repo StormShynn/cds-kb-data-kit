@@ -128,7 +128,10 @@ jobs:
             exit 0
           fi
 
-          git add views/ changelog.json hub-metadata-manifest.json
+          git add views/ changelog.json
+          if [ -f hub-metadata-manifest.json ]; then
+            git add hub-metadata-manifest.json
+          fi
           if [ -f hub-metadata-refresh-request.json ]; then
             git add hub-metadata-refresh-request.json
           fi

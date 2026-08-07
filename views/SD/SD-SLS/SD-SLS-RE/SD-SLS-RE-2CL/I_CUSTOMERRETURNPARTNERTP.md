@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturn` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `PartnerFunctionForEdit` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `Partner` |  | |  |  |
-| `CustomerReturnType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_CustomerReturn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `CustomerReturnType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_CustomerReturn` | | ✓ | | | | |
 
 ## Source Code
 

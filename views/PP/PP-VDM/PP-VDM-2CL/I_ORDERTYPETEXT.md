@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderType` | ✓ | |  | `cast(txt.auart as aufart preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
-| `OrderTypeName` |  | |  | `cast(txt.txt as pph_auarttext preserving type)` |
-| `_OrderType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderType` | ✓ | |  | `cast(txt.auart as aufart preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |  |  |
+| `OrderTypeName` |  | |  | `cast(txt.txt as pph_auarttext preserving type)` |  |  |
+| `_OrderType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

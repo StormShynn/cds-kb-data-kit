@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `PurchasingHistoryDocumentType` | ✓ | |  |  |
-| `PurchasingHistoryDocumentYear` | ✓ | |  |  |
-| `PurchasingHistoryDocument` | ✓ | |  |  |
-| `PurchasingHistoryDocumentItem` | ✓ | |  |  |
-| `PurchasingHistoryCategory` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `PurOrdAmountInCompanyCodeCrcy` |  | |  |  |
-| `PurchaseOrderAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `GRIRAcctClrgAmtInCoCodeCrcy` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `DocumentReferenceID` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurgHistDocumentCreationDate` |  | |  |  |
-| `PurgHistDocumentCreationTime` |  | |  |  |
-| `InvoiceAmtInCoCodeCrcy` |  | |  |  |
-| `InvoiceAmountInFrgnCurrency` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `QtyInPurchaseOrderPriceUnit` |  | |  |  |
-| `GRIRAcctClrgAmtInTransacCrcy` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `GRIRAcctClrgAmtInOrdTrnsacCrcy` |  | |  |  |
-| `InvoiceAmtInPurOrdTransacCrcy` |  | |  |  |
-| `ExchangeRateDifferenceAmount` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `PurchasingHistoryDocumentType` | ✓ | |  |  |  |  |
+| `PurchasingHistoryDocumentYear` | ✓ | |  |  |  |  |
+| `PurchasingHistoryDocument` | ✓ | |  |  |  |  |
+| `PurchasingHistoryDocumentItem` | ✓ | |  |  |  |  |
+| `PurchasingHistoryCategory` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `PurOrdAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `PurchaseOrderAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `GRIRAcctClrgAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `DocumentReferenceID` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurgHistDocumentCreationDate` |  | |  |  |  |  |
+| `PurgHistDocumentCreationTime` |  | |  |  |  |  |
+| `InvoiceAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `InvoiceAmountInFrgnCurrency` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `QtyInPurchaseOrderPriceUnit` |  | |  |  |  |  |
+| `GRIRAcctClrgAmtInTransacCrcy` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `GRIRAcctClrgAmtInOrdTrnsacCrcy` |  | |  |  |  |  |
+| `InvoiceAmtInPurOrdTransacCrcy` |  | |  |  |  |  |
+| `ExchangeRateDifferenceAmount` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
 
 ## Associations
 

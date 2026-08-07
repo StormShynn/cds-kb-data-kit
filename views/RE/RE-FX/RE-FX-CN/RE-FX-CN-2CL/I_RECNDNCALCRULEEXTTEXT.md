@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `RECalculationRule` | ✓ | |  | `calcruleext` |
-| `REConditionAttributeName` |  | |  | `xlcalcrule` |
-| `_RECndnCalculationRuleExt` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `RECalculationRule` | ✓ | |  | `calcruleext` |  |  |
+| `REConditionAttributeName` |  | |  | `xlcalcrule` |  |  |
+| `_RECndnCalculationRuleExt` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

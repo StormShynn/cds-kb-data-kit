@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `ConsolidationPostgLevelHier` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_postinglevelhierarchy preserving type )` |
-| `ConsolidationPostgLevelHierTxt` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_postinglevelhiertext preserving type )` |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `ConsolidationPostgLevelHier` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_postinglevelhierarchy preserving type )` |  |  |
+| `ConsolidationPostgLevelHierTxt` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_postinglevelhiertext preserving type )` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

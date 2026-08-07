@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityRqmtConfirmation` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as cy_bstkz preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
-| `CapacityRqmtConfirmationName` |  | |  | `cast(txt.ddtext as pph_bstkz_txt preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_CapacityRequirementConf` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityRqmtConfirmation` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as cy_bstkz preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |  |  |
+| `CapacityRqmtConfirmationName` |  | |  | `cast(txt.ddtext as pph_bstkz_txt preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CapacityRequirementConf` | | ✓ | | | | |
 
 ## Associations
 

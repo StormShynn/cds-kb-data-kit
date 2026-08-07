@@ -33,23 +33,23 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `client` | ✓ | |  | `mandt` |
-| `userName` | ✓ | |  | `bname` |
-| `userType` |  | |  | `ustyp` |
-| `costCenter` |  | |  | `kostl` |
-| `addressType` |  | |  | `idadtype` |
-| `personNumber` |  | |  | `persnumber` |
-| `addressNumber` |  | |  | `addrnumber` |
-| `BPGUID` |  | |  | `bpperson` |
-| `technicalUserDescription` |  | |  | `techdesc` |
-| `_userInfo` | | ✓ | | |
-| `_businessAddress` | | ✓ | | |
-| `_uscompany` | | ✓ | | |
-| `_companyAddress` | | ✓ | | |
-| `_emailAddress` | | ✓ | | |
-| `_bpGeneral` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `client` | ✓ | |  | `mandt` |  |  |
+| `userName` | ✓ | |  | `bname` |  |  |
+| `userType` |  | |  | `ustyp` |  |  |
+| `costCenter` |  | |  | `kostl` |  |  |
+| `addressType` |  | |  | `idadtype` |  |  |
+| `personNumber` |  | |  | `persnumber` |  |  |
+| `addressNumber` |  | |  | `addrnumber` |  |  |
+| `BPGUID` |  | |  | `bpperson` |  |  |
+| `technicalUserDescription` |  | |  | `techdesc` |  |  |
+| `_userInfo` | | ✓ | | | | |
+| `_businessAddress` | | ✓ | | | | |
+| `_uscompany` | | ✓ | | | | |
+| `_companyAddress` | | ✓ | | | | |
+| `_emailAddress` | | ✓ | | | | |
+| `_bpGeneral` | | ✓ | | | | |
 
 ## Associations
 

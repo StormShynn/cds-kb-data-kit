@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SecurityExchange` | ✓ | |  | `cast(Exchange.rhandpl as ftr_sec_exchange preserving type )` |
-| `Currency` |  | |  | `waers` |
-| `CountryISOCode` |  | |  | `land1` |
-| `SecurityExchangeShortName` |  | |  | `cast(Exchange.xkurzbez as ftr_sec_exchange_desc)` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityExchange` | ✓ | |  | `cast(Exchange.rhandpl as ftr_sec_exchange preserving type )` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `CountryISOCode` |  | |  | `land1` |  |  |
+| `SecurityExchangeShortName` |  | |  | `cast(Exchange.xkurzbez as ftr_sec_exchange_desc)` |  |  |
 
 ## Source Code
 

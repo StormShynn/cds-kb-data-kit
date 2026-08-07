@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgLockedForInvoicing` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as invlock_kk preserving type )` |
-| `_CABillgLockedForInvcgText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgLockedForInvoicing` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as invlock_kk preserving type )` |  |  |
+| `_CABillgLockedForInvcgText` | | ✓ | | | | |
 
 ## Associations
 

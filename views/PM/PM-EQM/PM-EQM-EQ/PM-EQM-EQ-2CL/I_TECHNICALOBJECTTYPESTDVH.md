@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TechnicalObjectType` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TechnicalObjectType` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

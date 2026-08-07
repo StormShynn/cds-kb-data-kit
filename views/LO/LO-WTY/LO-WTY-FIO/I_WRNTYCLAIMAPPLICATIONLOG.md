@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ApplicationLog` | ✓ | |  | `lognumber` |
-| `ApplicationLogHandle` |  | |  | `log_handle` |
-| `ApplicationLogObject` |  | |  | `object` |
-| `ApplicationLogSubobject` |  | |  | `subobject` |
-| `ApplicationJobDescription` |  | |  | `extnumber` |
-| `NumberOfAlerts` |  | |  | `msg_cnt_al` |
-| `NumberOfErrorMessages` |  | |  | `msg_cnt_e` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ApplicationLog` | ✓ | |  | `lognumber` |  |  |
+| `ApplicationLogHandle` |  | |  | `log_handle` |  |  |
+| `ApplicationLogObject` |  | |  | `object` |  |  |
+| `ApplicationLogSubobject` |  | |  | `subobject` |  |  |
+| `ApplicationJobDescription` |  | |  | `extnumber` |  |  |
+| `NumberOfAlerts` |  | |  | `msg_cnt_al` |  |  |
+| `NumberOfErrorMessages` |  | |  | `msg_cnt_e` |  |  |
 
 ## Source Code
 

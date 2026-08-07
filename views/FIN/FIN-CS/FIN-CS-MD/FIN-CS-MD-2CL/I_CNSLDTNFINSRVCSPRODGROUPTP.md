@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialServicesProductGroup` | ✓ | | `_Source` | `FinancialServicesProductGroup` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinSrvcsProdGrpTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFinSrvcsProdGrpTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialServicesProductGroup` | ✓ | | `_Source` | `FinancialServicesProductGroup` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFinSrvcsProdGrpTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFinSrvcsProdGrpTextTP` |  |  |
 
 ## Source Code
 

@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectUUID` | ✓ | |  | `guid` |
-| `ProjectSummaryTaskUUID` |  | |  | `guid` |
-| `WBSElementInternalID` |  | |  | `cast( prps.pspnr as ps_s4_pspnr preserving type )` |
-| `JointVenture` |  | |  | `vname` |
-| `JointVentureCostRecoveryCode` |  | |  | `recid` |
-| `JointVentureEquityType` |  | |  | `etype` |
-| `JntVntrProjectType` |  | |  | `otype` |
-| `JntIntrstBillgClass` |  | |  | `jibcl` |
-| `JntIntrstBillgSubClass` |  | |  | `jibsa` |
-| `_EnterpriseProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  | `guid` |  |  |
+| `ProjectSummaryTaskUUID` |  | |  | `guid` |  |  |
+| `WBSElementInternalID` |  | |  | `cast( prps.pspnr as ps_s4_pspnr preserving type )` |  |  |
+| `JointVenture` |  | |  | `vname` |  |  |
+| `JointVentureCostRecoveryCode` |  | |  | `recid` |  |  |
+| `JointVentureEquityType` |  | |  | `etype` |  |  |
+| `JntVntrProjectType` |  | |  | `otype` |  |  |
+| `JntIntrstBillgClass` |  | |  | `jibcl` |  |  |
+| `JntIntrstBillgSubClass` |  | |  | `jibsa` |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'EWMStorageBinAccessType'` |  | |  | `representativeKey: 'EWMStorageBinAccessType'` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'EWMStorageBinAccessType'` |  | |  | `representativeKey: 'EWMStorageBinAccessType'` |  |  |
 
 ## Source Code
 

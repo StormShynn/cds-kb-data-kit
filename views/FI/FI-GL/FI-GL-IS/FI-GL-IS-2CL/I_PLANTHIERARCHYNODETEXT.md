@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlantHierarchy` | ✓ | |  | `cast ( hrrp_nodet_n.hryid as fis_hryid_plant preserving type )` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `ValidityEndDate` | ✓ | |  | `cast (hrrp_nodet_n.hryvalto as fis_datbi)` |
-| `Language` | ✓ | |  | `spras` |
-| `HierarchyNodeText` |  | |  | `nodetxt` |
-| `ValidityStartDate` |  | |  | `cast (hrrp_nodet_n.hryvalfrom as fis_datab)` |
-| `_Language` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlantHierarchy` | ✓ | |  | `cast ( hrrp_nodet_n.hryid as fis_hryid_plant preserving type )` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast (hrrp_nodet_n.hryvalto as fis_datbi)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `HierarchyNodeText` |  | |  | `nodetxt` |  |  |
+| `ValidityStartDate` |  | |  | `cast (hrrp_nodet_n.hryvalfrom as fis_datab)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

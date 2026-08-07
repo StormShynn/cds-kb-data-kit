@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `ProductionVersion` | ✓ | |  |  |
-| `ProductionVersionText` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ProductionVersion` | ✓ | |  |  |  |  |
+| `ProductionVersionText` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `InspectionLotType` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `MatlQualityAuthorizationGroup` |  | |  |  |
-| `Plant` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `InspectionLotType` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `MatlQualityAuthorizationGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
 
 ## Source Code
 

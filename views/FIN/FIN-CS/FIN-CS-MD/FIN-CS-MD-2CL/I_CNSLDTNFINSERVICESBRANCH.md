@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialServicesBranch` | ✓ | |  | `cast( _Source.FinancialServicesBranch as fincs_financialservicesbranch preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialServicesBranch` | ✓ | |  | `cast( _Source.FinancialServicesBranch as fincs_financialservicesbranch preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

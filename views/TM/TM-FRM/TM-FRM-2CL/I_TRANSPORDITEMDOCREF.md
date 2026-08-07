@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdItemDocReferenceUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_itm_drf_uuid preserving type)` |
-| `TransportationOrderUUID` |  | |  | `cast(root_key as /scmtms/vdm_tor_db_key preserving type)` |
-| `TransportationOrderItemUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_item_db_key preserving type)` |
-| `TranspOrdItemDocReferenceID` |  | |  | `btd_id` |
-| `TranspOrdItemDocReferenceType` |  | |  | `btd_tco` |
-| `TranspOrdItmDocRefItemType` |  | |  | `btditem_tco` |
-| `TranspOrdItmDocReferenceItemID` |  | |  | `btditem_id` |
-| `TranspOrdItmDocRefDate` |  | |  | `btd_date` |
-| `TranspOrdItemDocRefIssuerName` |  | |  | `btd_issuer` |
-| `_TransportationOrder` | | ✓ | | |
-| `_BusTransDocTypeCode` | | ✓ | | |
-| `_BusTransDocItemTypeCode` | | ✓ | | |
-| `_TransportationOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemDocReferenceUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_itm_drf_uuid preserving type)` |  |  |
+| `TransportationOrderUUID` |  | |  | `cast(root_key as /scmtms/vdm_tor_db_key preserving type)` |  |  |
+| `TransportationOrderItemUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_item_db_key preserving type)` |  |  |
+| `TranspOrdItemDocReferenceID` |  | |  | `btd_id` |  |  |
+| `TranspOrdItemDocReferenceType` |  | |  | `btd_tco` |  |  |
+| `TranspOrdItmDocRefItemType` |  | |  | `btditem_tco` |  |  |
+| `TranspOrdItmDocReferenceItemID` |  | |  | `btditem_id` |  |  |
+| `TranspOrdItmDocRefDate` |  | |  | `btd_date` |  |  |
+| `TranspOrdItemDocRefIssuerName` |  | |  | `btd_issuer` |  |  |
+| `_TransportationOrder` | | ✓ | | | | |
+| `_BusTransDocTypeCode` | | ✓ | | | | |
+| `_BusTransDocItemTypeCode` | | ✓ | | | | |
+| `_TransportationOrderItem` | | ✓ | | | | |
 
 ## Associations
 

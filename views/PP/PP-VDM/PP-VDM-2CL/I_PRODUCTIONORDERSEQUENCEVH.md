@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderInternalID` | ✓ | |  |  |
-| `SequenceInternalID` | ✓ | |  |  |
-| `ProductionOrder` |  | |  |  |
-| `ProductionOrderSequence` |  | |  |  |
-| `ProductionOrderSequenceText` |  | |  |  |
-| `SequenceCategory` |  | |  |  |
-| `ProductionOrderType` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `_ProductionOrderInternal` | | ✓ | | |
-| `_SequenceCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderInternalID` | ✓ | |  |  |  |  |
+| `SequenceInternalID` | ✓ | |  |  |  |  |
+| `ProductionOrder` |  | |  |  |  |  |
+| `ProductionOrderSequence` |  | |  |  |  |  |
+| `ProductionOrderSequenceText` |  | |  |  |  |  |
+| `SequenceCategory` |  | |  |  |  |  |
+| `ProductionOrderType` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `_ProductionOrderInternal` | | ✓ | | | | |
+| `_SequenceCategory` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialCommissionGroup` | ✓ | |  | `provg` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialCommissionGroup` | ✓ | |  | `provg` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

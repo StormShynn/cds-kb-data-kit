@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAReversalReason` | ✓ | |  | `rvrsn` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAReversalReason` | ✓ | |  | `rvrsn` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

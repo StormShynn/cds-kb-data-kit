@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoiceUploadFileUUID` | ✓ | |  |  |
-| `SupplierInvoiceUploadUUID` |  | |  |  |
-| `UploadedSupplierInvoiceUUID` |  | |  |  |
-| `SuplrInvcUpldFileLifeCycStatus` |  | |  |  |
-| `FileName` |  | |  |  |
-| `CompanyCode` |  | | `_Upload` | `CompanyCode` |
-| `_UploadedSupplierInvoiceAPI01` | | ✓ | | |
-| `_SupplierInvoiceUploadAPI01` | | ✓ | | |
-| `_LifecycleStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoiceUploadFileUUID` | ✓ | |  |  |  |  |
+| `SupplierInvoiceUploadUUID` |  | |  |  |  |  |
+| `UploadedSupplierInvoiceUUID` |  | |  |  |  |  |
+| `SuplrInvcUpldFileLifeCycStatus` |  | |  |  |  |  |
+| `FileName` |  | |  |  |  |  |
+| `CompanyCode` |  | | `_Upload` | `CompanyCode` |  |  |
+| `_UploadedSupplierInvoiceAPI01` | | ✓ | | | | |
+| `_SupplierInvoiceUploadAPI01` | | ✓ | | | | |
+| `_LifecycleStatusText` | | ✓ | | | | |
 
 ## Associations
 

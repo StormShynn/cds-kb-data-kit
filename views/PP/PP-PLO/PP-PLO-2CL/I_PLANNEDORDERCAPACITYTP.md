@@ -29,44 +29,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlannedOrder` | ✓ | |  |  |
-| `CapacityRequirement` | ✓ | |  |  |
-| `CapacityRequirementItem` | ✓ | |  |  |
-| `CapacityRqmtItemCapacity` | ✓ | |  |  |
-| `Sequence` |  | |  |  |
-| `Operation` |  | |  |  |
-| `SubOperation` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `MRPPlant` |  | |  |  |
-| `OperationLatestStartDate` |  | |  |  |
-| `OperationLatestStartTime` |  | |  |  |
-| `OperationLatestEndDate` |  | |  |  |
-| `OperationLatestEndTime` |  | |  |  |
-| `OperationEarliestStartDate` |  | |  |  |
-| `OperationEarliestStartTime` |  | |  |  |
-| `OperationEarliestEndDate` |  | |  |  |
-| `OperationEarliestEndTime` |  | |  |  |
-| `OpLtstSchedldProcgStrtDte` |  | |  |  |
-| `OpLtstSchedldProcgStrtTme` |  | |  |  |
-| `OpLtstSchedldTrdwnStrtDte` |  | |  |  |
-| `OpLtstSchedldTrdwnStrtTme` |  | |  |  |
-| `CapacityRequirementUnit` |  | |  |  |
-| `ScheduledCapReqOpSegSetupDurn` |  | |  |  |
-| `RemainingCapReqOpSegSetupDurn` |  | |  |  |
-| `ScheduledCapReqOpSegProcgDurn` |  | |  |  |
-| `RemainingCapReqOpSegProcgDurn` |  | |  |  |
-| `ScheduledCapReqOpSegTrdwnDurn` |  | |  |  |
-| `RemainingCapReqOpSegTrdwnDurn` |  | |  |  |
-| `WrkCtrHasLeadingCapacity` |  | |  |  |
-| `OperationText` |  | |  |  |
-| `PlannedOrderLastChangeDateTime` |  | |  |  |
-| `WorkCenterText` |  | |  |  |
-| `MRPControllerName` |  | |  |  |
-| `PlantName` |  | |  |  |
-| `I_PlannedOrderTP` |  | |  | `PlannedOrderCapacity._PlannedOrder : redirected to parent I_PlannedOrderTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlannedOrder` | ✓ | |  |  |  |  |
+| `CapacityRequirement` | ✓ | |  |  |  |  |
+| `CapacityRequirementItem` | ✓ | |  |  |  |  |
+| `CapacityRqmtItemCapacity` | ✓ | |  |  |  |  |
+| `Sequence` |  | |  |  |  |  |
+| `Operation` |  | |  |  |  |  |
+| `SubOperation` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `MRPPlant` |  | |  |  |  |  |
+| `OperationLatestStartDate` |  | |  |  |  |  |
+| `OperationLatestStartTime` |  | |  |  |  |  |
+| `OperationLatestEndDate` |  | |  |  |  |  |
+| `OperationLatestEndTime` |  | |  |  |  |  |
+| `OperationEarliestStartDate` |  | |  |  |  |  |
+| `OperationEarliestStartTime` |  | |  |  |  |  |
+| `OperationEarliestEndDate` |  | |  |  |  |  |
+| `OperationEarliestEndTime` |  | |  |  |  |  |
+| `OpLtstSchedldProcgStrtDte` |  | |  |  |  |  |
+| `OpLtstSchedldProcgStrtTme` |  | |  |  |  |  |
+| `OpLtstSchedldTrdwnStrtDte` |  | |  |  |  |  |
+| `OpLtstSchedldTrdwnStrtTme` |  | |  |  |  |  |
+| `CapacityRequirementUnit` |  | |  |  |  |  |
+| `ScheduledCapReqOpSegSetupDurn` |  | |  |  |  |  |
+| `RemainingCapReqOpSegSetupDurn` |  | |  |  |  |  |
+| `ScheduledCapReqOpSegProcgDurn` |  | |  |  |  |  |
+| `RemainingCapReqOpSegProcgDurn` |  | |  |  |  |  |
+| `ScheduledCapReqOpSegTrdwnDurn` |  | |  |  |  |  |
+| `RemainingCapReqOpSegTrdwnDurn` |  | |  |  |  |  |
+| `WrkCtrHasLeadingCapacity` |  | |  |  |  |  |
+| `OperationText` |  | |  |  |  |  |
+| `PlannedOrderLastChangeDateTime` |  | |  |  |  |  |
+| `WorkCenterText` |  | |  |  |  |  |
+| `MRPControllerName` |  | |  |  |  |  |
+| `PlantName` |  | |  |  |  |  |
+| `I_PlannedOrderTP` |  | |  | `PlannedOrderCapacity._PlannedOrder : redirected to parent I_PlannedOrderTP` |  |  |
 
 ## Source Code
 

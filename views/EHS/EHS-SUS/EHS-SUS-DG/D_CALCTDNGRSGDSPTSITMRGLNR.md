@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ComplianceRequirement` |  | |  | `ehfnd_req_identifier` |
-| `DangerousGoodsTransportCat` |  | |  | `dangerousgoodstransportcat` |
-| `DangerousGoodsQtyFactorText` |  | |  | `dangerousgoodsqtyfactortext` |
-| `DangerousGoodsPointText` |  | |  | `dangerousgoodspointtext` |
-| `_Item` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ComplianceRequirement` |  | |  | `ehfnd_req_identifier` |  |  |
+| `DangerousGoodsTransportCat` |  | |  | `dangerousgoodstransportcat` |  |  |
+| `DangerousGoodsQtyFactorText` |  | |  | `dangerousgoodsqtyfactortext` |  |  |
+| `DangerousGoodsPointText` |  | |  | `dangerousgoodspointtext` |  |  |
+| `_Item` | | ✓ | | | | |
 
 ## Source Code
 

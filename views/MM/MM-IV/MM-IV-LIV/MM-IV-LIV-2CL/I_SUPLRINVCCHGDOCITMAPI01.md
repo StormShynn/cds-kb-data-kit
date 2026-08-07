@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeDocObject` | ✓ | |  |  |
-| `ChangeDocObjectClass` | ✓ | |  |  |
-| `ChangeDocument` | ✓ | |  |  |
-| `DatabaseTable` | ✓ | |  |  |
-| `ChangeDocTableKey` | ✓ | |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |
-| `ChangeDocItemChangeType` | ✓ | |  |  |
-| `ChangeDocPreviousUnit` |  | |  |  |
-| `ChangeDocNewUnit` |  | |  |  |
-| `ChangeDocPreviousCurrency` |  | |  |  |
-| `ChangeDocNewCurrency` |  | |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeDocObject` | ✓ | |  |  |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |  |  |
+| `ChangeDocument` | ✓ | |  |  |  |  |
+| `DatabaseTable` | ✓ | |  |  |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |  |  |
+| `ChangeDocPreviousUnit` |  | |  |  |  |  |
+| `ChangeDocNewUnit` |  | |  |  |  |  |
+| `ChangeDocPreviousCurrency` |  | |  |  |  |  |
+| `ChangeDocNewCurrency` |  | |  |  |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
 
 ## Source Code
 

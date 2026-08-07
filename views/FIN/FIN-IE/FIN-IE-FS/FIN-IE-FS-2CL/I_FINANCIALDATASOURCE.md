@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialDataSource` | ✓ | |  | `datasource_id` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialDataSource` | ✓ | |  | `datasource_id` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

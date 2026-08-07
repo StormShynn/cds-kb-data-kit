@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
-| `ConditionAcctAssgmtRelevance` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as ktrel )` |
-| `CndnAcctAssgmtRelevanceName` |  | |  | `cast ( ddtext as price_element_accassrelv_descr )` |
-| `_ConditionAcctAssgmtRelevance` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |  |  |
+| `ConditionAcctAssgmtRelevance` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as ktrel )` |  |  |
+| `CndnAcctAssgmtRelevanceName` |  | |  | `cast ( ddtext as price_element_accassrelv_descr )` |  |  |
+| `_ConditionAcctAssgmtRelevance` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  | `objtype_h` |
-| `ServiceDocument` | ✓ | |  | `object_id` |
-| `ServiceDocumentItem` | ✓ | |  | `number_int` |
-| `ServiceRefObjectSequenceNumber` | ✓ | |  | `counter` |
-| `ServiceReferenceObjectType` |  | |  | `type_object` |
-| `ServiceReferenceObjectUUID` |  | |  | `guid_object` |
-| `ProductID` |  | |  | `product_id` |
-| `SrvcRefObjIsMainObject` |  | |  | `main_object` |
-| `ProductUUID` |  | |  | `product_guid` |
-| `SerialNumber` |  | |  | `serial_number` |
-| `Equipment` |  | |  | `equipment_id` |
-| `FunctionalLocation` |  | |  | `functional_location_id` |
-| `ReferenceProduct` |  | |  | `ref_product_id` |
-| `_Equipment` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_SrvcReferenceObjectType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  | `objtype_h` |  |  |
+| `ServiceDocument` | ✓ | |  | `object_id` |  |  |
+| `ServiceDocumentItem` | ✓ | |  | `number_int` |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  | `counter` |  |  |
+| `ServiceReferenceObjectType` |  | |  | `type_object` |  |  |
+| `ServiceReferenceObjectUUID` |  | |  | `guid_object` |  |  |
+| `ProductID` |  | |  | `product_id` |  |  |
+| `SrvcRefObjIsMainObject` |  | |  | `main_object` |  |  |
+| `ProductUUID` |  | |  | `product_guid` |  |  |
+| `SerialNumber` |  | |  | `serial_number` |  |  |
+| `Equipment` |  | |  | `equipment_id` |  |  |
+| `FunctionalLocation` |  | |  | `functional_location_id` |  |  |
+| `ReferenceProduct` |  | |  | `ref_product_id` |  |  |
+| `_Equipment` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_SrvcReferenceObjectType` | | ✓ | | | | |
 
 ## Associations
 

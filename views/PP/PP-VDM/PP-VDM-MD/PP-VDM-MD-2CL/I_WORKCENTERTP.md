@@ -30,70 +30,70 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterInternalID` | ✓ | |  |  |
-| `WorkCenterTypeCode` | ✓ | |  |  |
-| `WorkCenter` |  | |  |  |
-| `WorkCenterDesc` |  | |  |  |
-| `Plant` |  | |  |  |
-| `WorkCenterCategoryCode` |  | |  |  |
-| `WorkCenterResponsible` |  | |  |  |
-| `WorkCenterResponsibleName` |  | |  |  |
-| `SupplyArea` |  | |  |  |
-| `WorkCenterUsage` |  | |  |  |
-| `CapacityInternalID` |  | |  |  |
-| `CapacityCategoryCode` |  | |  |  |
-| `Capacity` |  | |  |  |
-| `WorkCenterIsToBeDeleted` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `WorkCenterFormulaParam1` |  | |  |  |
-| `WorkCenterFormulaParam2` |  | |  |  |
-| `WorkCenterFormulaParam3` |  | |  |  |
-| `WorkCenterFormulaParam4` |  | |  |  |
-| `WorkCenterFormulaParam5` |  | |  |  |
-| `WorkCenterFormulaParam6` |  | |  |  |
-| `WorkCenterFmlaParamValue1` |  | |  |  |
-| `WorkCenterFmlaParamValue2` |  | |  |  |
-| `WorkCenterFmlaParamValue3` |  | |  |  |
-| `WorkCenterFmlaParamValue4` |  | |  |  |
-| `WorkCenterFmlaParamValue5` |  | |  |  |
-| `WorkCenterFmlaParamValue6` |  | |  |  |
-| `WorkCenterFmlaParamUnit1` |  | |  |  |
-| `WorkCenterFmlaParamUnit2` |  | |  |  |
-| `WorkCenterFmlaParamUnit3` |  | |  |  |
-| `WorkCenterFmlaParamUnit4` |  | |  |  |
-| `WorkCenterFmlaParamUnit5` |  | |  |  |
-| `WorkCenterFmlaParamUnit6` |  | |  |  |
-| `StandardWorkFormulaParamGroup` |  | |  |  |
-| `WrkCtrStdValMaintRule1` |  | |  |  |
-| `WrkCtrStdValMaintRule2` |  | |  |  |
-| `WrkCtrStdValMaintRule3` |  | |  |  |
-| `WrkCtrStdValMaintRule4` |  | |  |  |
-| `WrkCtrStdValMaintRule5` |  | |  |  |
-| `WrkCtrStdValMaintRule6` |  | |  |  |
-| `WorkCenterStandardWorkQtyUnit1` |  | |  |  |
-| `WorkCenterStandardWorkQtyUnit2` |  | |  |  |
-| `WorkCenterStandardWorkQtyUnit3` |  | |  |  |
-| `WorkCenterStandardWorkQtyUnit4` |  | |  |  |
-| `WorkCenterStandardWorkQtyUnit5` |  | |  |  |
-| `WorkCenterStandardWorkQtyUnit6` |  | |  |  |
-| `OperationControlProfile` |  | |  |  |
-| `MatlCompIsMarkedForBackflush` |  | |  |  |
-| `WorkCenterLocation` |  | |  |  |
-| `WorkCenterLocationGroup` |  | |  |  |
-| `WrkCtrSetupSchedgFmla` |  | |  |  |
-| `WrkCtrProcgSchedgFmla` |  | |  |  |
-| `WrkCtrTeardownSchedgFmla` |  | |  |  |
-| `WrkCtrIntProcgSchedgFmla` |  | |  |  |
-| `WorkCenterLastChangeDateTime` |  | |  |  |
-| `ShiftNoteType` |  | |  |  |
-| `ShiftReportType` |  | |  |  |
-| `_Description` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_Capacity` | | ✓ | | |
-| `_PooledCap` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `WorkCenterDesc` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |  |  |
+| `WorkCenterResponsible` |  | |  |  |  |  |
+| `WorkCenterResponsibleName` |  | |  |  |  |  |
+| `SupplyArea` |  | |  |  |  |  |
+| `WorkCenterUsage` |  | |  |  |  |  |
+| `CapacityInternalID` |  | |  |  |  |  |
+| `CapacityCategoryCode` |  | |  |  |  |  |
+| `Capacity` |  | |  |  |  |  |
+| `WorkCenterIsToBeDeleted` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `WorkCenterFormulaParam1` |  | |  |  |  |  |
+| `WorkCenterFormulaParam2` |  | |  |  |  |  |
+| `WorkCenterFormulaParam3` |  | |  |  |  |  |
+| `WorkCenterFormulaParam4` |  | |  |  |  |  |
+| `WorkCenterFormulaParam5` |  | |  |  |  |  |
+| `WorkCenterFormulaParam6` |  | |  |  |  |  |
+| `WorkCenterFmlaParamValue1` |  | |  |  |  |  |
+| `WorkCenterFmlaParamValue2` |  | |  |  |  |  |
+| `WorkCenterFmlaParamValue3` |  | |  |  |  |  |
+| `WorkCenterFmlaParamValue4` |  | |  |  |  |  |
+| `WorkCenterFmlaParamValue5` |  | |  |  |  |  |
+| `WorkCenterFmlaParamValue6` |  | |  |  |  |  |
+| `WorkCenterFmlaParamUnit1` |  | |  |  |  |  |
+| `WorkCenterFmlaParamUnit2` |  | |  |  |  |  |
+| `WorkCenterFmlaParamUnit3` |  | |  |  |  |  |
+| `WorkCenterFmlaParamUnit4` |  | |  |  |  |  |
+| `WorkCenterFmlaParamUnit5` |  | |  |  |  |  |
+| `WorkCenterFmlaParamUnit6` |  | |  |  |  |  |
+| `StandardWorkFormulaParamGroup` |  | |  |  |  |  |
+| `WrkCtrStdValMaintRule1` |  | |  |  |  |  |
+| `WrkCtrStdValMaintRule2` |  | |  |  |  |  |
+| `WrkCtrStdValMaintRule3` |  | |  |  |  |  |
+| `WrkCtrStdValMaintRule4` |  | |  |  |  |  |
+| `WrkCtrStdValMaintRule5` |  | |  |  |  |  |
+| `WrkCtrStdValMaintRule6` |  | |  |  |  |  |
+| `WorkCenterStandardWorkQtyUnit1` |  | |  |  |  |  |
+| `WorkCenterStandardWorkQtyUnit2` |  | |  |  |  |  |
+| `WorkCenterStandardWorkQtyUnit3` |  | |  |  |  |  |
+| `WorkCenterStandardWorkQtyUnit4` |  | |  |  |  |  |
+| `WorkCenterStandardWorkQtyUnit5` |  | |  |  |  |  |
+| `WorkCenterStandardWorkQtyUnit6` |  | |  |  |  |  |
+| `OperationControlProfile` |  | |  |  |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |  |  |
+| `WorkCenterLocation` |  | |  |  |  |  |
+| `WorkCenterLocationGroup` |  | |  |  |  |  |
+| `WrkCtrSetupSchedgFmla` |  | |  |  |  |  |
+| `WrkCtrProcgSchedgFmla` |  | |  |  |  |  |
+| `WrkCtrTeardownSchedgFmla` |  | |  |  |  |  |
+| `WrkCtrIntProcgSchedgFmla` |  | |  |  |  |  |
+| `WorkCenterLastChangeDateTime` |  | |  |  |  |  |
+| `ShiftNoteType` |  | |  |  |  |  |
+| `ShiftReportType` |  | |  |  |  |  |
+| `_Description` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_Capacity` | | ✓ | | | | |
+| `_PooledCap` | | ✓ | | | | |
 
 ## Source Code
 

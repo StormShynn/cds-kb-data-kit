@@ -30,52 +30,52 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralPurchaseContract` | ✓ | |  |  |
-| `DistributionKey` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `CntrlPurContrDistributionPct` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `ManualDeliveryAddressID` |  | |  |  |
-| `ProcmtHubDelivAddressTypeCode` |  | |  |  |
-| `ProcurementHubSourceSystem` |  | |  |  |
-| `SourceListIsUpdated` |  | |  |  |
-| `SourceListRestriction` |  | |  |  |
-| `ProcmtHubCompanyCodeGroupingID` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `ShippingInstruction` |  | |  |  |
-| `ProcmtHubSubcontractor` |  | |  |  |
-| `ProcmtHubSuplrIsSubcontractor` |  | |  |  |
-| `ReferenceDeliveryAddressID` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `ProcmtHubBusinessPartnerName1` |  | |  |  |
-| `ProcmtHubBusinessPartnerName2` |  | |  |  |
-| `ProcmtHubBusinessPartnerName3` |  | |  |  |
-| `ProcmtHubBusinessPartnerName4` |  | |  |  |
-| `ProcmtHubStreetName` |  | |  |  |
-| `ProcmtHubHouseNumber` |  | |  |  |
-| `ProcmtHubPostalCode` |  | |  |  |
-| `ProcmtHubCityName` |  | |  |  |
-| `ProcmtHubCountry` |  | |  |  |
-| `ProcmtHubRegion` |  | |  |  |
-| `_CntrlPurchaseContract` | | ✓ | | |
-| `_CentralPurchaseContHdrPart` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |  |  |
+| `DistributionKey` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `CntrlPurContrDistributionPct` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |  |  |
+| `ProcmtHubDelivAddressTypeCode` |  | |  |  |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |  |  |
+| `SourceListIsUpdated` |  | |  |  |  |  |
+| `SourceListRestriction` |  | |  |  |  |  |
+| `ProcmtHubCompanyCodeGroupingID` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `ShippingInstruction` |  | |  |  |  |  |
+| `ProcmtHubSubcontractor` |  | |  |  |  |  |
+| `ProcmtHubSuplrIsSubcontractor` |  | |  |  |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `ProcmtHubBusinessPartnerName1` |  | |  |  |  |  |
+| `ProcmtHubBusinessPartnerName2` |  | |  |  |  |  |
+| `ProcmtHubBusinessPartnerName3` |  | |  |  |  |  |
+| `ProcmtHubBusinessPartnerName4` |  | |  |  |  |  |
+| `ProcmtHubStreetName` |  | |  |  |  |  |
+| `ProcmtHubHouseNumber` |  | |  |  |  |  |
+| `ProcmtHubPostalCode` |  | |  |  |  |  |
+| `ProcmtHubCityName` |  | |  |  |  |  |
+| `ProcmtHubCountry` |  | |  |  |  |  |
+| `ProcmtHubRegion` |  | |  |  |  |  |
+| `_CntrlPurchaseContract` | | ✓ | | | | |
+| `_CentralPurchaseContHdrPart` | | ✓ | | | | |
 
 ## Source Code
 

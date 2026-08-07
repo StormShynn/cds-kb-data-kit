@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAReceivableAdjustmentReason` | ✓ | |  | `cast( grund as grund_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAReceivableAdjustmentReason` | ✓ | |  | `cast( grund as grund_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NotificationPartnerObject` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `NotificationPartnerObjectNmbr` | ✓ | |  |  |
-| `NotificationObjectType` |  | |  |  |
-| `Partner` |  | |  |  |
-| `NotificationPartner` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_Notification` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Employee` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_User` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NotificationPartnerObject` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `NotificationPartnerObjectNmbr` | ✓ | |  |  |  |  |
+| `NotificationObjectType` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `NotificationPartner` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_Notification` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Employee` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_User` | | ✓ | | | | |
 
 ## Associations
 

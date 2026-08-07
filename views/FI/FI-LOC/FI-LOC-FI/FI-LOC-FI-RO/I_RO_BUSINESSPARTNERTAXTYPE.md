@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialAccountType` | ✓ | |  | `bptype` |
-| `BusinessPartner` | ✓ | |  | `bpnum` |
-| `ValidFrom` | ✓ | |  | `valid_fr` |
-| `ValidTo` | ✓ | |  | `valid_to` |
-| `BusinessPartnerIsSAFTRelevant` | ✓ | |  | `saft` |
-| `VATRegistration` |  | |  | `stceg` |
-| `TaxType` |  | |  | `taxtype` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialAccountType` | ✓ | |  | `bptype` |  |  |
+| `BusinessPartner` | ✓ | |  | `bpnum` |  |  |
+| `ValidFrom` | ✓ | |  | `valid_fr` |  |  |
+| `ValidTo` | ✓ | |  | `valid_to` |  |  |
+| `BusinessPartnerIsSAFTRelevant` | ✓ | |  | `saft` |  |  |
+| `VATRegistration` |  | |  | `stceg` |  |  |
+| `TaxType` |  | |  | `taxtype` |  |  |
 
 ## Source Code
 

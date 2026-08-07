@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  |  |
-| `TaskListGroup` | ✓ | |  |  |
-| `TaskListGroupCounter` | ✓ | |  |  |
-| `TaskListSequence` | ✓ | |  |  |
-| `TaskListOperationInternalId` | ✓ | |  |  |
-| `MaintenancePackage` | ✓ | |  |  |
-| `MaintPckgTskListOpAllocIntNmbr` | ✓ | |  |  |
-| `MaintenancePackageText` |  | |  |  |
-| `MaintenanceTaskListOperation` |  | |  |  |
-| `OperationText` |  | |  |  |
-| `MaintTaskListSubOperation` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `TaskListStatus` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ResponsiblePlannerGroup` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `_Header` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |  |  |
+| `TaskListGroup` | ✓ | |  |  |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |  |  |
+| `TaskListSequence` | ✓ | |  |  |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |  |  |
+| `MaintenancePackage` | ✓ | |  |  |  |  |
+| `MaintPckgTskListOpAllocIntNmbr` | ✓ | |  |  |  |  |
+| `MaintenancePackageText` |  | |  |  |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |  |  |
+| `OperationText` |  | |  |  |  |  |
+| `MaintTaskListSubOperation` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `TaskListStatus` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
 
 ## Source Code
 

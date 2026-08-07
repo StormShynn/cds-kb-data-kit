@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrganization` | ✓ | |  |  |
-| `SalesOrganizationCurrency` |  | |  |  |
-| `IntercompanyBillingCustomer` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Country` |  | | `_CompanyCode` | `Country` |
-| `Currency` |  | | `_CompanyCode` | `Currency` |
-| `FiscalYearVariant` |  | | `_CompanyCode` | `FiscalYearVariant` |
-| `_SalesOrganizationCurrency` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_IntercompanyBillingCustomer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  |  |  |  |
+| `SalesOrganizationCurrency` |  | |  |  |  |  |
+| `IntercompanyBillingCustomer` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Country` |  | | `_CompanyCode` | `Country` |  |  |
+| `Currency` |  | | `_CompanyCode` | `Currency` |  |  |
+| `FiscalYearVariant` |  | | `_CompanyCode` | `FiscalYearVariant` |  |  |
+| `_SalesOrganizationCurrency` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_IntercompanyBillingCustomer` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,169 +30,169 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  |  |
-| `BusinessPartner` | ✓ | |  |  |
-| `BusinessPartnerForEdit` |  | |  |  |
-| `ContractAccountName` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `ContrAcctPrtnCreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `ContrAcctPrtnLastChgDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CABankIDForIncomingPayments` |  | |  |  |
-| `CABankIDForOutgoingPayments` |  | |  |  |
-| `CAIncomingPaymentMethod` |  | |  |  |
-| `CACnctntdOutgPaymentMethods` |  | |  |  |
-| `CAFirstOutgoingPaymentMethod` |  | |  |  |
-| `CASecondOutgoingPaymentMethod` |  | |  |  |
-| `CAThirdOutgoingPaymentMethod` |  | |  |  |
-| `CAFourthOutgoingPaymentMethod` |  | |  |  |
-| `CAFifthOutgoingPaymentMethod` |  | |  |  |
-| `CAHouseBankReference` |  | |  |  |
-| `CAPaymentCardIDForIncomingPayt` |  | |  |  |
-| `CAPaymentCardIDForOutgoingPayt` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `CADunningProcedure` |  | |  |  |
-| `CADunningNoticeGroup` |  | |  |  |
-| `CACollectionsClerk` |  | |  |  |
-| `CACollectionsMasterDataGroup` |  | |  |  |
-| `CACollectionStrategy` |  | |  |  |
-| `CACollectionsContactPerson` |  | |  |  |
-| `ContractAccountForPayment` |  | |  |  |
-| `CABusinessPartnerForPayment` |  | |  |  |
-| `CAAlternativePayer` |  | |  |  |
-| `CAAlternativePayee` |  | |  |  |
-| `CAAlternativeDunningRecipient` |  | |  |  |
-| `CAAlternativeInvoiceRecipient` |  | |  |  |
-| `CAAlternativeCorrespncRcpnt` |  | |  |  |
-| `CAAddressIDOfAlternativePayer` |  | |  |  |
-| `CAAddressIDOfAlternativePayee` |  | |  |  |
-| `CAAddressIDOfAltvDunRecipient` |  | |  |  |
-| `CAAddressIDOfAltvInvoiceRcpnt` |  | |  |  |
-| `CACurrencyForDirectDebitLimit` |  | |  |  |
-| `CADirectDebitLimit` |  | |  |  |
-| `CANmbrMnthsForDirectDebitLimit` |  | |  |  |
-| `CADirectDebitLimitCalcMode` |  | |  |  |
-| `CAStartDateForBillingPeriod` |  | |  |  |
-| `ContrAcctPrtnHasInvcgChrgDsc` |  | |  |  |
-| `CATargetCurrencyForInvoicing` |  | |  |  |
-| `CAInvcgCategory` |  | |  |  |
-| `CAInvcgSchedule` |  | |  |  |
-| `CABillgCycle` |  | |  |  |
-| `CALastDayOfBillingPeriod` |  | |  |  |
-| `CADetnCodeForAltvInvoiceForm` |  | |  |  |
-| `CABusinessPartnerForPosting` |  | |  |  |
-| `ContractAccountForPosting` |  | |  |  |
-| `CAPartnerSettlementRule` |  | |  |  |
-| `ValdtyDateForWhldgTaxExmpCert` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `OutgPaytWithholdingTaxCode` |  | |  |  |
-| `IncgPaytWithholdingTaxCode` |  | |  |  |
-| `WithholdingTaxCertificate` |  | |  |  |
-| `CAAdditionalDaysForCashMgmt` |  | |  |  |
-| `CABusPartnerPostgLockExstcCode` |  | |  |  |
-| `CABusPartnerAddlLockExstcCode` |  | |  |  |
-| `CABusinessPartnerLockStartDate` |  | |  |  |
-| `CABusinessPartnerLockEndDate` |  | |  |  |
-| `CABPReferenceNumber` |  | |  |  |
-| `CACompanyCodeGroup` |  | |  |  |
-| `CAStandardCompanyCode` |  | |  |  |
-| `AltvContractAcctForCollvBills` |  | |  |  |
-| `CAInterestCode` |  | |  |  |
-| `CashPlanningGroup` |  | |  |  |
-| `CARelationshipOfBPToContrAcct` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `CAAddressIDOfJurisdictionCode` |  | |  |  |
-| `CAAuthorizationGroup` |  | |  |  |
-| `CAToleranceGroup` |  | |  |  |
-| `CACorrespondenceVariant` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `CACorrespondenceActivityCode` |  | |  |  |
-| `CAClearingCategory` |  | |  |  |
-| `CADefaultClearingRstrcnCode` |  | |  |  |
-| `SupplyingCountry` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `CASubledgerApplication` |  | |  |  |
-| `PaymentCondition` |  | |  |  |
-| `CAAccountDeterminationCode` |  | |  |  |
-| `CAPaymentCompanyCode` |  | |  |  |
-| `Country` |  | |  |  |
-| `ContractAccountingPayer` |  | |  |  |
-| `ContractAccountingPayee` |  | |  |  |
-| `_ContractAccount` | | ✓ | | |
-| `_ContrAcctPrtnBusinessLock` | | ✓ | | |
-| `_ContrAcctPrtnCorrespnc` | | ✓ | | |
-| `_ContrAcctPrtnInvcgChrgAndDisc` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_AcctDetnCode` | | ✓ | | |
-| `_AlternativePayee` | | ✓ | | |
-| `_AlternativePayer` | | ✓ | | |
-| `_AlternativePayerAddress` | | ✓ | | |
-| `_AltvContrAcc` | | ✓ | | |
-| `_AltvCorrespncRcpnt` | | ✓ | | |
-| `_AltvDunningRecipient` | | ✓ | | |
-| `_AltvInvoiceRecipient` | | ✓ | | |
-| `_BankForIncomingPayment` | | ✓ | | |
-| `_BankForOutgoingPayment` | | ✓ | | |
-| `_BillgCycle` | | ✓ | | |
-| `_BPForPayment` | | ✓ | | |
-| `_BPForPosting` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_BusinessPlace` | | ✓ | | |
-| `_CAAuthorizationGroup` | | ✓ | | |
-| `_CABusPrtnAddlLockExstcCode` | | ✓ | | |
-| `_CABusPrtnPostgLockExstcCode` | | ✓ | | |
-| `_CACorrespncActivityCode` | | ✓ | | |
-| `_CADetnCodeForAltvInvcFm` | | ✓ | | |
-| `_CADfltClearingRstrcnCode` | | ✓ | | |
-| `_CADirectDebitLimitCalcMod` | | ✓ | | |
-| `_CAFifthOutgoingPaymentMethod` | | ✓ | | |
-| `_CAFirstOutgoingPaymentMethod` | | ✓ | | |
-| `_CAFourthOutgoingPaymentMethod` | | ✓ | | |
-| `_CAIncomingPaymentMethod` | | ✓ | | |
-| `_CALastDayOfBillingPeriod` | | ✓ | | |
-| `_CAPartnerSettlementRule` | | ✓ | | |
-| `_CASecondOutgoingPaymentMethod` | | ✓ | | |
-| `_CashPlanningGroup` | | ✓ | | |
-| `_CASubledgerApplication` | | ✓ | | |
-| `_CAThirdOutgoingPaymentMethod` | | ✓ | | |
-| `_ClearingCategory` | | ✓ | | |
-| `_CollContactPerson` | | ✓ | | |
-| `_CollectionsClerk` | | ✓ | | |
-| `_CollectionStrategy` | | ✓ | | |
-| `_CollMasterDataGroup` | | ✓ | | |
-| `_CompCode` | | ✓ | | |
-| `_CompCodeGroup` | | ✓ | | |
-| `_ContrAcctForPayt` | | ✓ | | |
-| `_ContrAcctForPosting` | | ✓ | | |
-| `_CorrespncVar` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_CreatedByContactCard` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_CurrencyForDDL` | | ✓ | | |
-| `_CurrencyForInvoicing` | | ✓ | | |
-| `_DunningProcedure` | | ✓ | | |
-| `_DunNoticeGroup` | | ✓ | | |
-| `_HouseBankRef` | | ✓ | | |
-| `_InterestCode` | | ✓ | | |
-| `_InvcgCategory` | | ✓ | | |
-| `_InvcgSchedule` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_LastChangedByContactCard` | | ✓ | | |
-| `_PartnerCompany` | | ✓ | | |
-| `_PaytCardForIncomingPayment` | | ✓ | | |
-| `_PaytCardForOutgoingPayment` | | ✓ | | |
-| `_PaymentCompCode` | | ✓ | | |
-| `_PaymentCondition` | | ✓ | | |
-| `_RelshpOfBP` | | ✓ | | |
-| `_SupplyingCountry` | | ✓ | | |
-| `_ToleranceGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `BusinessPartnerForEdit` |  | |  |  |  |  |
+| `ContractAccountName` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `ContrAcctPrtnCreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `ContrAcctPrtnLastChgDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CABankIDForIncomingPayments` |  | |  |  |  |  |
+| `CABankIDForOutgoingPayments` |  | |  |  |  |  |
+| `CAIncomingPaymentMethod` |  | |  |  |  |  |
+| `CACnctntdOutgPaymentMethods` |  | |  |  |  |  |
+| `CAFirstOutgoingPaymentMethod` |  | |  |  |  |  |
+| `CASecondOutgoingPaymentMethod` |  | |  |  |  |  |
+| `CAThirdOutgoingPaymentMethod` |  | |  |  |  |  |
+| `CAFourthOutgoingPaymentMethod` |  | |  |  |  |  |
+| `CAFifthOutgoingPaymentMethod` |  | |  |  |  |  |
+| `CAHouseBankReference` |  | |  |  |  |  |
+| `CAPaymentCardIDForIncomingPayt` |  | |  |  |  |  |
+| `CAPaymentCardIDForOutgoingPayt` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `CADunningProcedure` |  | |  |  |  |  |
+| `CADunningNoticeGroup` |  | |  |  |  |  |
+| `CACollectionsClerk` |  | |  |  |  |  |
+| `CACollectionsMasterDataGroup` |  | |  |  |  |  |
+| `CACollectionStrategy` |  | |  |  |  |  |
+| `CACollectionsContactPerson` |  | |  |  |  |  |
+| `ContractAccountForPayment` |  | |  |  |  |  |
+| `CABusinessPartnerForPayment` |  | |  |  |  |  |
+| `CAAlternativePayer` |  | |  |  |  |  |
+| `CAAlternativePayee` |  | |  |  |  |  |
+| `CAAlternativeDunningRecipient` |  | |  |  |  |  |
+| `CAAlternativeInvoiceRecipient` |  | |  |  |  |  |
+| `CAAlternativeCorrespncRcpnt` |  | |  |  |  |  |
+| `CAAddressIDOfAlternativePayer` |  | |  |  |  |  |
+| `CAAddressIDOfAlternativePayee` |  | |  |  |  |  |
+| `CAAddressIDOfAltvDunRecipient` |  | |  |  |  |  |
+| `CAAddressIDOfAltvInvoiceRcpnt` |  | |  |  |  |  |
+| `CACurrencyForDirectDebitLimit` |  | |  |  |  |  |
+| `CADirectDebitLimit` |  | |  |  |  |  |
+| `CANmbrMnthsForDirectDebitLimit` |  | |  |  |  |  |
+| `CADirectDebitLimitCalcMode` |  | |  |  |  |  |
+| `CAStartDateForBillingPeriod` |  | |  |  |  |  |
+| `ContrAcctPrtnHasInvcgChrgDsc` |  | |  |  |  |  |
+| `CATargetCurrencyForInvoicing` |  | |  |  |  |  |
+| `CAInvcgCategory` |  | |  |  |  |  |
+| `CAInvcgSchedule` |  | |  |  |  |  |
+| `CABillgCycle` |  | |  |  |  |  |
+| `CALastDayOfBillingPeriod` |  | |  |  |  |  |
+| `CADetnCodeForAltvInvoiceForm` |  | |  |  |  |  |
+| `CABusinessPartnerForPosting` |  | |  |  |  |  |
+| `ContractAccountForPosting` |  | |  |  |  |  |
+| `CAPartnerSettlementRule` |  | |  |  |  |  |
+| `ValdtyDateForWhldgTaxExmpCert` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `OutgPaytWithholdingTaxCode` |  | |  |  |  |  |
+| `IncgPaytWithholdingTaxCode` |  | |  |  |  |  |
+| `WithholdingTaxCertificate` |  | |  |  |  |  |
+| `CAAdditionalDaysForCashMgmt` |  | |  |  |  |  |
+| `CABusPartnerPostgLockExstcCode` |  | |  |  |  |  |
+| `CABusPartnerAddlLockExstcCode` |  | |  |  |  |  |
+| `CABusinessPartnerLockStartDate` |  | |  |  |  |  |
+| `CABusinessPartnerLockEndDate` |  | |  |  |  |  |
+| `CABPReferenceNumber` |  | |  |  |  |  |
+| `CACompanyCodeGroup` |  | |  |  |  |  |
+| `CAStandardCompanyCode` |  | |  |  |  |  |
+| `AltvContractAcctForCollvBills` |  | |  |  |  |  |
+| `CAInterestCode` |  | |  |  |  |  |
+| `CashPlanningGroup` |  | |  |  |  |  |
+| `CARelationshipOfBPToContrAcct` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `CAAddressIDOfJurisdictionCode` |  | |  |  |  |  |
+| `CAAuthorizationGroup` |  | |  |  |  |  |
+| `CAToleranceGroup` |  | |  |  |  |  |
+| `CACorrespondenceVariant` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `CACorrespondenceActivityCode` |  | |  |  |  |  |
+| `CAClearingCategory` |  | |  |  |  |  |
+| `CADefaultClearingRstrcnCode` |  | |  |  |  |  |
+| `SupplyingCountry` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `CASubledgerApplication` |  | |  |  |  |  |
+| `PaymentCondition` |  | |  |  |  |  |
+| `CAAccountDeterminationCode` |  | |  |  |  |  |
+| `CAPaymentCompanyCode` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `ContractAccountingPayer` |  | |  |  |  |  |
+| `ContractAccountingPayee` |  | |  |  |  |  |
+| `_ContractAccount` | | ✓ | | | | |
+| `_ContrAcctPrtnBusinessLock` | | ✓ | | | | |
+| `_ContrAcctPrtnCorrespnc` | | ✓ | | | | |
+| `_ContrAcctPrtnInvcgChrgAndDisc` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_AcctDetnCode` | | ✓ | | | | |
+| `_AlternativePayee` | | ✓ | | | | |
+| `_AlternativePayer` | | ✓ | | | | |
+| `_AlternativePayerAddress` | | ✓ | | | | |
+| `_AltvContrAcc` | | ✓ | | | | |
+| `_AltvCorrespncRcpnt` | | ✓ | | | | |
+| `_AltvDunningRecipient` | | ✓ | | | | |
+| `_AltvInvoiceRecipient` | | ✓ | | | | |
+| `_BankForIncomingPayment` | | ✓ | | | | |
+| `_BankForOutgoingPayment` | | ✓ | | | | |
+| `_BillgCycle` | | ✓ | | | | |
+| `_BPForPayment` | | ✓ | | | | |
+| `_BPForPosting` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BusinessPlace` | | ✓ | | | | |
+| `_CAAuthorizationGroup` | | ✓ | | | | |
+| `_CABusPrtnAddlLockExstcCode` | | ✓ | | | | |
+| `_CABusPrtnPostgLockExstcCode` | | ✓ | | | | |
+| `_CACorrespncActivityCode` | | ✓ | | | | |
+| `_CADetnCodeForAltvInvcFm` | | ✓ | | | | |
+| `_CADfltClearingRstrcnCode` | | ✓ | | | | |
+| `_CADirectDebitLimitCalcMod` | | ✓ | | | | |
+| `_CAFifthOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CAFirstOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CAFourthOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CAIncomingPaymentMethod` | | ✓ | | | | |
+| `_CALastDayOfBillingPeriod` | | ✓ | | | | |
+| `_CAPartnerSettlementRule` | | ✓ | | | | |
+| `_CASecondOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CashPlanningGroup` | | ✓ | | | | |
+| `_CASubledgerApplication` | | ✓ | | | | |
+| `_CAThirdOutgoingPaymentMethod` | | ✓ | | | | |
+| `_ClearingCategory` | | ✓ | | | | |
+| `_CollContactPerson` | | ✓ | | | | |
+| `_CollectionsClerk` | | ✓ | | | | |
+| `_CollectionStrategy` | | ✓ | | | | |
+| `_CollMasterDataGroup` | | ✓ | | | | |
+| `_CompCode` | | ✓ | | | | |
+| `_CompCodeGroup` | | ✓ | | | | |
+| `_ContrAcctForPayt` | | ✓ | | | | |
+| `_ContrAcctForPosting` | | ✓ | | | | |
+| `_CorrespncVar` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_CreatedByContactCard` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_CurrencyForDDL` | | ✓ | | | | |
+| `_CurrencyForInvoicing` | | ✓ | | | | |
+| `_DunningProcedure` | | ✓ | | | | |
+| `_DunNoticeGroup` | | ✓ | | | | |
+| `_HouseBankRef` | | ✓ | | | | |
+| `_InterestCode` | | ✓ | | | | |
+| `_InvcgCategory` | | ✓ | | | | |
+| `_InvcgSchedule` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_LastChangedByContactCard` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_PaytCardForIncomingPayment` | | ✓ | | | | |
+| `_PaytCardForOutgoingPayment` | | ✓ | | | | |
+| `_PaymentCompCode` | | ✓ | | | | |
+| `_PaymentCondition` | | ✓ | | | | |
+| `_RelshpOfBP` | | ✓ | | | | |
+| `_SupplyingCountry` | | ✓ | | | | |
+| `_ToleranceGroup` | | ✓ | | | | |
 
 ## Source Code
 

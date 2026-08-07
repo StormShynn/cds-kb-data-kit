@@ -27,53 +27,53 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITHeaderUUID` | ✓ | |  | `db_key` |
-| `InternalJITCallNumber` |  | |  | `int_call_num` |
-| `JITScenario` |  | |  | `njit_scenario` |
-| `ExternalJITCallNumber` |  | |  | `ext_call_num` |
-| `CustomerUUID` |  | |  | `customeruuid` |
-| `ShipToParty` |  | |  | `kunnr` |
-| `SoldToParty` |  | |  | `kunag` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `Division` |  | |  | `spart` |
-| `UnloadingPointName` |  | |  | `ablad` |
-| `CustomerPartnerDescription` |  | |  | `knref` |
-| `MatlUsageIndicator` |  | |  | `abrvw` |
-| `ActiveSupplier` |  | |  | `cast( lifnr as abap.char( 10 ) )` |
-| `JITCallType` |  | |  | `call_type` |
-| `JITLifecycleStatus` |  | |  | `lifecycle_stat` |
-| `VehicleModel` |  | |  | `vhcle_model` |
-| `VehicleIdentificationNumber` |  | |  | `vhvin` |
-| `JITExtSequenceNumber` |  | |  | `ext_sequence_num` |
-| `JITIntSequenceNumber` |  | |  | `int_sequence_num` |
-| `JITComponentIsReordered` |  | |  | `jitcomponentisreordered` |
-| `CreationDateTime` |  | |  | `crea_date_time` |
-| `CreatedByUser` |  | |  | `crea_uname` |
-| `LastChangeDateTime` |  | |  | `lchg_date_time` |
-| `LastChangedByUser` |  | |  | `lchg_uname` |
-| `_CustomerToBusinessPartner` | | ✓ | | |
-| `_JITLifecycleStatus` | | ✓ | | |
-| `_JITCallType` | | ✓ | | |
-| `_JITCustomer` | | ✓ | | |
-| `_MatlUsageIndicator` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_LastChangedByUserDescription` | | ✓ | | |
-| `_CreatedByUserDescription` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_JITComponentIsReordered` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_JITCallHdrRefTextEnhcd` | | ✓ | | |
-| `_JITInbCallComponentGroup` | | ✓ | | |
-| `_JITInbCallComponent` | | ✓ | | |
-| `_JITInbCallReferenceText` | | ✓ | | |
-| `_JITInbCallDocReference` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITHeaderUUID` | ✓ | |  | `db_key` |  |  |
+| `InternalJITCallNumber` |  | |  | `int_call_num` |  |  |
+| `JITScenario` |  | |  | `njit_scenario` |  |  |
+| `ExternalJITCallNumber` |  | |  | `ext_call_num` |  |  |
+| `CustomerUUID` |  | |  | `customeruuid` |  |  |
+| `ShipToParty` |  | |  | `kunnr` |  |  |
+| `SoldToParty` |  | |  | `kunag` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `UnloadingPointName` |  | |  | `ablad` |  |  |
+| `CustomerPartnerDescription` |  | |  | `knref` |  |  |
+| `MatlUsageIndicator` |  | |  | `abrvw` |  |  |
+| `ActiveSupplier` |  | |  | `cast( lifnr as abap.char( 10 ) )` |  |  |
+| `JITCallType` |  | |  | `call_type` |  |  |
+| `JITLifecycleStatus` |  | |  | `lifecycle_stat` |  |  |
+| `VehicleModel` |  | |  | `vhcle_model` |  |  |
+| `VehicleIdentificationNumber` |  | |  | `vhvin` |  |  |
+| `JITExtSequenceNumber` |  | |  | `ext_sequence_num` |  |  |
+| `JITIntSequenceNumber` |  | |  | `int_sequence_num` |  |  |
+| `JITComponentIsReordered` |  | |  | `jitcomponentisreordered` |  |  |
+| `CreationDateTime` |  | |  | `crea_date_time` |  |  |
+| `CreatedByUser` |  | |  | `crea_uname` |  |  |
+| `LastChangeDateTime` |  | |  | `lchg_date_time` |  |  |
+| `LastChangedByUser` |  | |  | `lchg_uname` |  |  |
+| `_CustomerToBusinessPartner` | | ✓ | | | | |
+| `_JITLifecycleStatus` | | ✓ | | | | |
+| `_JITCallType` | | ✓ | | | | |
+| `_JITCustomer` | | ✓ | | | | |
+| `_MatlUsageIndicator` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_LastChangedByUserDescription` | | ✓ | | | | |
+| `_CreatedByUserDescription` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_JITComponentIsReordered` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_JITCallHdrRefTextEnhcd` | | ✓ | | | | |
+| `_JITInbCallComponentGroup` | | ✓ | | | | |
+| `_JITInbCallComponent` | | ✓ | | | | |
+| `_JITInbCallReferenceText` | | ✓ | | | | |
+| `_JITInbCallDocReference` | | ✓ | | | | |
 
 ## Associations
 

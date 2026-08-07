@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | | `_QltyNotificationLongText` | `QualityNotification` |
-| `LongTextInternalNumber` | ✓ | | `_QltyNotificationLongText` | `LongTextInternalNumber` |
-| `Language` | ✓ | | `_QltyNotificationLongText` | `Language` |
-| `LongTextID` |  | | `_QltyNotificationLongText` | `LongTextID` |
-| `QltyNotificationLongText` |  | | `_QltyNotificationLongText` | `QltyNotificationLongText` |
-| `LongTextCreatedByUser` |  | | `_QltyNotificationLongText` | `LongTextCreatedByUser` |
-| `LongTextCreatedAt` |  | | `_QltyNotificationLongText` | `LongTextCreatedAt` |
-| `LongTextLastChangedByUser` |  | | `_QltyNotificationLongText` | `LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` |  | | `_QltyNotificationLongText` | `LongTextLastChangedAt` |
-| `I_QltyNotificationTP` |  | |  | `_QltyNotificationLongText._QltyNotification : redirected to parent I_QltyNotificationTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | | `_QltyNotificationLongText` | `QualityNotification` |  |  |
+| `LongTextInternalNumber` | ✓ | | `_QltyNotificationLongText` | `LongTextInternalNumber` |  |  |
+| `Language` | ✓ | | `_QltyNotificationLongText` | `Language` |  |  |
+| `LongTextID` |  | | `_QltyNotificationLongText` | `LongTextID` |  |  |
+| `QltyNotificationLongText` |  | | `_QltyNotificationLongText` | `QltyNotificationLongText` |  |  |
+| `LongTextCreatedByUser` |  | | `_QltyNotificationLongText` | `LongTextCreatedByUser` |  |  |
+| `LongTextCreatedAt` |  | | `_QltyNotificationLongText` | `LongTextCreatedAt` |  |  |
+| `LongTextLastChangedByUser` |  | | `_QltyNotificationLongText` | `LongTextLastChangedByUser` |  |  |
+| `LongTextLastChangedAt` |  | | `_QltyNotificationLongText` | `LongTextLastChangedAt` |  |  |
+| `I_QltyNotificationTP` |  | |  | `_QltyNotificationLongText._QltyNotification : redirected to parent I_QltyNotificationTP` |  |  |
 
 ## Source Code
 

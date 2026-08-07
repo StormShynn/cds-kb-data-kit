@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPartnerSettlementStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as ptitm_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPartnerSettlementStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as ptitm_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

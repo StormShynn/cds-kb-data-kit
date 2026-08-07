@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CalendarDate` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |
-| `FiscalYearVariant` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalYearStartDate` |  | |  |  |
-| `FiscalYearEndDate` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalPeriodStartDate` |  | |  |  |
-| `FiscalPeriodEndDate` |  | |  |  |
-| `FiscalQuarter` |  | |  |  |
-| `FiscalQuarterStartDate` |  | |  |  |
-| `FiscalQuarterEndDate` |  | |  |  |
-| `FiscalWeek` |  | |  |  |
-| `FiscalWeekStartDate` |  | |  |  |
-| `FiscalWeekEndDate` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `FiscalYearQuarter` |  | |  |  |
-| `FiscalYearWeek` |  | |  |  |
-| `FiscalYearConsecutiveNumber` |  | |  |  |
-| `FiscalPeriodConsecutiveNumber` |  | |  |  |
-| `FiscalQuarterConsecutiveNumber` |  | |  |  |
-| `FiscalWeekConsecutiveNumber` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalendarDate` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalYearStartDate` |  | |  |  |  |  |
+| `FiscalYearEndDate` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalPeriodStartDate` |  | |  |  |  |  |
+| `FiscalPeriodEndDate` |  | |  |  |  |  |
+| `FiscalQuarter` |  | |  |  |  |  |
+| `FiscalQuarterStartDate` |  | |  |  |  |  |
+| `FiscalQuarterEndDate` |  | |  |  |  |  |
+| `FiscalWeek` |  | |  |  |  |  |
+| `FiscalWeekStartDate` |  | |  |  |  |  |
+| `FiscalWeekEndDate` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `FiscalYearQuarter` |  | |  |  |  |  |
+| `FiscalYearWeek` |  | |  |  |  |  |
+| `FiscalYearConsecutiveNumber` |  | |  |  |  |  |
+| `FiscalPeriodConsecutiveNumber` |  | |  |  |  |  |
+| `FiscalQuarterConsecutiveNumber` |  | |  |  |  |  |
+| `FiscalWeekConsecutiveNumber` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

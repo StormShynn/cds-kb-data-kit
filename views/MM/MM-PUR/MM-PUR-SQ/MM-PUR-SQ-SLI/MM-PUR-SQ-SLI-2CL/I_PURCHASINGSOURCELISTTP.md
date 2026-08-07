@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `MaterialForEdit` |  | |  |  |
-| `PlantForEdit` |  | |  |  |
-| `MaterialName` |  | |  |  |
-| `_Material` | | ✓ | | |
-| `_MaterialText` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingSourceItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `MaterialForEdit` |  | |  |  |  |  |
+| `PlantForEdit` |  | |  |  |  |  |
+| `MaterialName` |  | |  |  |  |  |
+| `_Material` | | ✓ | | | | |
+| `_MaterialText` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingSourceItem` | | ✓ | | | | |
 
 ## Source Code
 

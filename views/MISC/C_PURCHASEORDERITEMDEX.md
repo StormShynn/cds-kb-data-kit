@@ -37,108 +37,108 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `PurchaseOrderType` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplyingSupplier` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `InvoicingParty` |  | |  |  |
-| `PurchaseOrderDate` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `PurgDocumentItemDeletionCode` |  | |  | `PurchasingDocumentDeletionCode` |
-| `MaterialGroup` |  | |  |  |
-| `Material` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `PurchaseOrderCategory` |  | |  |  |
-| `PurchasingOrderReason` |  | |  |  |
-| `PurchaseOrderItemText` |  | |  |  |
-| `PurchaseOrderItemCategory` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `OrderQuantity` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `LocalCurrency` |  | |  | `Currency` |
-| `NetPriceQuantity` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `RequisitionerName` |  | |  |  |
-| `RetailPromotion` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `IsReturnsItem` |  | |  |  |
-| `IsFinallyInvoiced` |  | |  |  |
-| `InvoiceIsExpected` |  | |  |  |
-| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
-| `OrderItemQtyToBaseQtyNmrtr` |  | |  | `cast ( item.OrderItemQtyToBaseQtyNmrtr as umbsz_ll preserving type)` |
-| `InvoiceIsGoodsReceiptBased` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `MaterialType` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `ProductTypeCode` |  | |  | `ProductType` |
-| `CreatedByUser` |  | |  |  |
-| `ExpectedOverallLimitAmount` |  | |  |  |
-| `OverallLimitAmount` |  | |  |  |
-| `RequirementSegment` |  | |  |  |
-| `ReleaseIsNotCompleted` |  | |  |  |
-| `PurchasingCompletenessStatus` |  | |  |  |
-| `IsStatisticalItem` |  | |  |  |
-| `MultipleAcctAssgmtDistribution` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `SupplierConfirmationControlKey` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `_PurchaseOrderDEX` | | ✓ | | |
-| `_ScheduleLineDEX` | | ✓ | | |
-| `_AccountAssignmentDEX` | | ✓ | | |
-| `_POSupplierConfirmationDEX` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PurchaseOrderType` | | ✓ | | |
-| `_ItemCategory` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplyingSupplier` | | ✓ | | |
-| `_InvoicingParty` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_LocalCurrency` | | ✓ | | |
-| `_SupplyingPlant` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductTypeCode` | | ✓ | | |
-| `_ManufacturerMaterial` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_ProductType` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_OrderPriceUnit` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_PurchaseContract` | | ✓ | | |
-| `_PurchaseContractItem` | | ✓ | | |
-| `_PurchaseRequisitionItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `PurchaseOrderType` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplyingSupplier` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `PurgDocumentItemDeletionCode` |  | |  | `PurchasingDocumentDeletionCode` |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `PurchaseOrderCategory` |  | |  |  |  |  |
+| `PurchasingOrderReason` |  | |  |  |  |  |
+| `PurchaseOrderItemText` |  | |  |  |  |  |
+| `PurchaseOrderItemCategory` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `OrderQuantity` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `LocalCurrency` |  | |  | `Currency` |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `RequisitionerName` |  | |  |  |  |  |
+| `RetailPromotion` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `IsReturnsItem` |  | |  |  |  |  |
+| `IsFinallyInvoiced` |  | |  |  |  |  |
+| `InvoiceIsExpected` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  | `cast ( item.OrderItemQtyToBaseQtyNmrtr as umbsz_ll preserving type)` |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `MaterialType` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  | `ProductType` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `ExpectedOverallLimitAmount` |  | |  |  |  |  |
+| `OverallLimitAmount` |  | |  |  |  |  |
+| `RequirementSegment` |  | |  |  |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |  |  |
+| `PurchasingCompletenessStatus` |  | |  |  |  |  |
+| `IsStatisticalItem` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `_PurchaseOrderDEX` | | ✓ | | | | |
+| `_ScheduleLineDEX` | | ✓ | | | | |
+| `_AccountAssignmentDEX` | | ✓ | | | | |
+| `_POSupplierConfirmationDEX` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PurchaseOrderType` | | ✓ | | | | |
+| `_ItemCategory` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplyingSupplier` | | ✓ | | | | |
+| `_InvoicingParty` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_LocalCurrency` | | ✓ | | | | |
+| `_SupplyingPlant` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductTypeCode` | | ✓ | | | | |
+| `_ManufacturerMaterial` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_OrderPriceUnit` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_PurchaseContract` | | ✓ | | | | |
+| `_PurchaseContractItem` | | ✓ | | | | |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
 
 ## Source Code
 

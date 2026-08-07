@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `RecurrenceEndType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as fac_rjet_end_by_type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `RecurrenceEndTypeName` |  | |  | `ddtext` |
-| `_RecurrenceEndType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `RecurrenceEndType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as fac_rjet_end_by_type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `RecurrenceEndTypeName` |  | |  | `ddtext` |  |  |
+| `_RecurrenceEndType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

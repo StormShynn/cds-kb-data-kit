@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SubItemCategory` | ✓ | |  | `cast(sityp as fincs_subitemcategory preserving type )` |
-| `SubItem` |  | |  | `}] key cast(sitem as fincs_subitem preserving type )` |
-| `_Text` | | ✓ | | |
-| `_SubItemCategory` | | ✓ | | |
-| `_SubitemHierNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubItemCategory` | ✓ | |  | `cast(sityp as fincs_subitemcategory preserving type )` |  |  |
+| `SubItem` | ✓ | |  | `cast(sitem as fincs_subitem preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SubItemCategory` | | ✓ | | | | |
+| `_SubitemHierNode` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `SalesOrganization` | ✓ | |  |  |
-| `DistributionChannel` | ✓ | |  |  |
-| `Division` | ✓ | |  |  |
-| `AddressID` | ✓ | |  | `adrnr` |
-| `DepartureCountry` | ✓ | |  | `aland` |
-| `CustomerTaxCategory` | ✓ | |  | `tatyp` |
-| `CustomerTaxClassification` |  | |  | `taxkd` |
-| `_CustomerSalesAreaTax` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
-| `_CustomerSalesArea` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_Country` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `SalesOrganization` | ✓ | |  |  |  |  |
+| `DistributionChannel` | ✓ | |  |  |  |  |
+| `Division` | ✓ | |  |  |  |  |
+| `AddressID` | ✓ | |  | `adrnr` |  |  |
+| `DepartureCountry` | ✓ | |  | `aland` |  |  |
+| `CustomerTaxCategory` | ✓ | |  | `tatyp` |  |  |
+| `CustomerTaxClassification` |  | |  | `taxkd` |  |  |
+| `_CustomerSalesAreaTax` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
+| `_CustomerSalesArea` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
 
 ## Associations
 

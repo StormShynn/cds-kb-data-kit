@@ -27,50 +27,50 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InternalRealEstateNumber` | ✓ | |  | `intreno` |
-| `RETermType` | ✓ | |  | `termtype` |
-| `RETermNumber` | ✓ | |  | `termno` |
-| `ValidityStartDate` | ✓ | |  | `cast(validfrom as rebdvdmvalidfrom preserving type)` |
-| `ValidityEndDate` |  | |  | `cast(validto as rebdvdmvalidto preserving type)` |
-| `RENumberOfFrequencyUnits` |  | |  | `cast( frequency as recdvdmfrequency preserving type )` |
-| `REFrequencyUnit` |  | |  | `cast(frequencyunit as recdvdmfrequencyunit)` |
-| `REStartFrequencyWeek` |  | |  | `cast(weekfrom as recdvdmweekfrom)` |
-| `REFrequencyStart` |  | |  | `cast(monthfrom as recdvdmmonthfrom)` |
-| `REConditionAmountReference` |  | |  | `cast(condvaluerefer as recdvdmcondvaluerefer )` |
-| `REConditionAmountDiff` |  | |  | `cast(condvaluerefdif as retmvdmcondvaluerefdif)` |
-| `REProRataMethod` |  | |  | `cast(prorate as recdvdmprorate)` |
-| `REProRataMethodCalc` |  | |  | `cast(calcmethper as recdvdmcalcmethper)` |
-| `REPaymentForm` |  | |  | `cast(paymentformrh as recdvdmpaymentformrh)` |
-| `REFrequencyStartDate` |  | |  | `rhythmbegin` |
-| `REDueDateCorrectionRule` |  | |  | `duedatecorrrule` |
-| `REDueDateNumberOfCrrtnDays` |  | |  | `duedatecorrday` |
-| `REDueDateNumberOfCrrtnMonths` |  | |  | `duedatecorrmonth` |
-| `REDueDateNumberOfCrrtnYears` |  | |  | `duedatecorryear` |
-| `REDueDateNumberOfCrrtnCalendar` |  | |  | `duedatecorrcal` |
-| `REDueDateCrrtnCalendarUnit` |  | |  | `cast(duedatecorrcalun as recdvdmduedatecorrcalunit )` |
-| `FactoryCalendar` |  | |  | `duedatecalender` |
-| `REDueDateIsAtBeginning` |  | |  | `duedatemovebegin` |
-| `REDueDateIsAtEnd` |  | |  | `duedatemoveend` |
-| `REFixedPeriod` |  | |  | `fixper` |
-| `RealEstateObjectType` |  | | `_REKeyAssgmt` | `RealEstateObjectType` |
-| `_REKeyAssgmt` | | ✓ | | |
-| `_REContract` | | ✓ | | |
-| `_RETermType` | | ✓ | | |
-| `_RETerm` | | ✓ | | |
-| `_REFrequencyUnit` | | ✓ | | |
-| `_REStartFrequencyWeek` | | ✓ | | |
-| `_REFrequencyStart` | | ✓ | | |
-| `_REConditionAmtRef` | | ✓ | | |
-| `_REConditionAmtDiff` | | ✓ | | |
-| `_REProRataMethod` | | ✓ | | |
-| `_REProRataMethodCalc` | | ✓ | | |
-| `_REPaymentForm` | | ✓ | | |
-| `_REDueDateCrrtnRule` | | ✓ | | |
-| `_REDueDateCrrtnCalendarUnit` | | ✓ | | |
-| `_FactoryCalendar` | | ✓ | | |
-| `_REFixedPeriod` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  | `intreno` |  |  |
+| `RETermType` | ✓ | |  | `termtype` |  |  |
+| `RETermNumber` | ✓ | |  | `termno` |  |  |
+| `ValidityStartDate` | ✓ | |  | `cast(validfrom as rebdvdmvalidfrom preserving type)` |  |  |
+| `ValidityEndDate` |  | |  | `cast(validto as rebdvdmvalidto preserving type)` |  |  |
+| `RENumberOfFrequencyUnits` |  | |  | `cast( frequency as recdvdmfrequency preserving type )` |  |  |
+| `REFrequencyUnit` |  | |  | `cast(frequencyunit as recdvdmfrequencyunit)` |  |  |
+| `REStartFrequencyWeek` |  | |  | `cast(weekfrom as recdvdmweekfrom)` |  |  |
+| `REFrequencyStart` |  | |  | `cast(monthfrom as recdvdmmonthfrom)` |  |  |
+| `REConditionAmountReference` |  | |  | `cast(condvaluerefer as recdvdmcondvaluerefer )` |  |  |
+| `REConditionAmountDiff` |  | |  | `cast(condvaluerefdif as retmvdmcondvaluerefdif)` |  |  |
+| `REProRataMethod` |  | |  | `cast(prorate as recdvdmprorate)` |  |  |
+| `REProRataMethodCalc` |  | |  | `cast(calcmethper as recdvdmcalcmethper)` |  |  |
+| `REPaymentForm` |  | |  | `cast(paymentformrh as recdvdmpaymentformrh)` |  |  |
+| `REFrequencyStartDate` |  | |  | `rhythmbegin` |  |  |
+| `REDueDateCorrectionRule` |  | |  | `duedatecorrrule` |  |  |
+| `REDueDateNumberOfCrrtnDays` |  | |  | `duedatecorrday` |  |  |
+| `REDueDateNumberOfCrrtnMonths` |  | |  | `duedatecorrmonth` |  |  |
+| `REDueDateNumberOfCrrtnYears` |  | |  | `duedatecorryear` |  |  |
+| `REDueDateNumberOfCrrtnCalendar` |  | |  | `duedatecorrcal` |  |  |
+| `REDueDateCrrtnCalendarUnit` |  | |  | `cast(duedatecorrcalun as recdvdmduedatecorrcalunit )` |  |  |
+| `FactoryCalendar` |  | |  | `duedatecalender` |  |  |
+| `REDueDateIsAtBeginning` |  | |  | `duedatemovebegin` |  |  |
+| `REDueDateIsAtEnd` |  | |  | `duedatemoveend` |  |  |
+| `REFixedPeriod` |  | |  | `fixper` |  |  |
+| `RealEstateObjectType` |  | | `_REKeyAssgmt` | `RealEstateObjectType` |  |  |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_REContract` | | ✓ | | | | |
+| `_RETermType` | | ✓ | | | | |
+| `_RETerm` | | ✓ | | | | |
+| `_REFrequencyUnit` | | ✓ | | | | |
+| `_REStartFrequencyWeek` | | ✓ | | | | |
+| `_REFrequencyStart` | | ✓ | | | | |
+| `_REConditionAmtRef` | | ✓ | | | | |
+| `_REConditionAmtDiff` | | ✓ | | | | |
+| `_REProRataMethod` | | ✓ | | | | |
+| `_REProRataMethodCalc` | | ✓ | | | | |
+| `_REPaymentForm` | | ✓ | | | | |
+| `_REDueDateCrrtnRule` | | ✓ | | | | |
+| `_REDueDateCrrtnCalendarUnit` | | ✓ | | | | |
+| `_FactoryCalendar` | | ✓ | | | | |
+| `_REFixedPeriod` | | ✓ | | | | |
 
 ## Associations
 

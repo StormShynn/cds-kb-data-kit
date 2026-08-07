@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocType` | ✓ | |  | `edoc_type` |
-| `ElectronicDocIntVersionActDate` | ✓ | |  | `active_from` |
-| `EU_EDocDoctype` |  | |  | `doc_type` |
-| `EU_EDocDoctypeId` |  | |  | `doc_type_id` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocType` | ✓ | |  | `edoc_type` |  |  |
+| `ElectronicDocIntVersionActDate` | ✓ | |  | `active_from` |  |  |
+| `EU_EDocDoctype` |  | |  | `doc_type` |  |  |
+| `EU_EDocDoctypeId` |  | |  | `doc_type_id` |  |  |
 
 ## Source Code
 

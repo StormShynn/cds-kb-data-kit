@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ValuationVariant` | ✓ | |  | `bwvar` |
-| `OverheadCostingSheet` |  | |  | `kalsm` |
-| `ExtProcuredMatlOvhdCostingSht` |  | |  | `cast(kalsm_raw as fml_kalsm_raw preserving type)` |
-| `_Text` | | ✓ | | |
-| `_CostingSheetText` | | ✓ | | |
-| `_CostingSheetExtText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationVariant` | ✓ | |  | `bwvar` |  |  |
+| `OverheadCostingSheet` |  | |  | `kalsm` |  |  |
+| `ExtProcuredMatlOvhdCostingSht` |  | |  | `cast(kalsm_raw as fml_kalsm_raw preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CostingSheetText` | | ✓ | | | | |
+| `_CostingSheetExtText` | | ✓ | | | | |
 
 ## Associations
 

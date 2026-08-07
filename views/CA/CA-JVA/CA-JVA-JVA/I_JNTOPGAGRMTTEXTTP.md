@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `JntOpgAgrmt` | ✓ | |  |  |
-| `JntOpgAgrmtText` |  | |  |  |
-| `JntOpgAgrmtLongText` |  | |  |  |
-| `_JntOpgAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |  |  |
+| `JntOpgAgrmtText` |  | |  |  |  |  |
+| `JntOpgAgrmtLongText` |  | |  |  |  |  |
+| `_JntOpgAgrmt` | | ✓ | | | | |
 
 ## Source Code
 

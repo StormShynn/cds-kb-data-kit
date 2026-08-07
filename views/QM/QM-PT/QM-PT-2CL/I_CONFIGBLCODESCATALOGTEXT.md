@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |
-| `Language` | ✓ | |  | `sprache` |
-| `ConfigblCodesCatalogTxt` |  | |  | `katalogtxt` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `ConfigblCodesCatalogTxt` |  | |  | `katalogtxt` |  |  |
 
 ## Source Code
 

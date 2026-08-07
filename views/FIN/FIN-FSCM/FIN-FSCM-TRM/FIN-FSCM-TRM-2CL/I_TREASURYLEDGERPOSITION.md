@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryPosition` | ✓ | |  | `os_guid` |
-| `TreasuryPositionZeroDate` |  | |  | `zero_pos_date` |
-| `TreasuryPosAssetLiabilityCode` |  | |  | `cast(trlt_position.active_passive as ftr_gen_asset_liab_indicator preserving type)` |
-| `TrsyPosManagementProcedure` |  | |  | `cast(trlt_position.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |
-| `PositionCurrency` |  | |  | `position_curr` |
-| `ValuationCurrency` |  | |  | `valuation_curr` |
-| `CreatedByUser` |  | |  | `rerf` |
-| `FirstResponseByDate` |  | |  | `derf` |
-| `CorrespondenceCreationTime` |  | |  | `terf` |
-| `_PositionIdentifier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryPosition` | ✓ | |  | `os_guid` |  |  |
+| `TreasuryPositionZeroDate` |  | |  | `zero_pos_date` |  |  |
+| `TreasuryPosAssetLiabilityCode` |  | |  | `cast(trlt_position.active_passive as ftr_gen_asset_liab_indicator preserving type)` |  |  |
+| `TrsyPosManagementProcedure` |  | |  | `cast(trlt_position.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |  |  |
+| `PositionCurrency` |  | |  | `position_curr` |  |  |
+| `ValuationCurrency` |  | |  | `valuation_curr` |  |  |
+| `CreatedByUser` |  | |  | `rerf` |  |  |
+| `FirstResponseByDate` |  | |  | `derf` |  |  |
+| `CorrespondenceCreationTime` |  | |  | `terf` |  |  |
+| `_PositionIdentifier` | | ✓ | | | | |
 
 ## Associations
 

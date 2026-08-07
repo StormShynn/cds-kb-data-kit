@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |
-| `EG_ElectronicDocIncgDocUnqID` |  | |  |  |
-| `EG_ElectronicDocIncgRcvdDteTme` |  | |  |  |
-| `EG_EDocIncgCanclnAllwdDateTime` |  | |  |  |
-| `EG_EDocIncgRjcnAllwdDateTime` |  | |  |  |
-| `EG_EDocIncgCanclnRequestDteTme` |  | |  |  |
-| `EG_EDocIncgRejectionReqDateTme` |  | |  |  |
-| `EG_EDocIncgCanclnReqDlydDteTme` |  | |  |  |
-| `EG_EDocIncgRjcnReqDlydDateTime` |  | |  |  |
-| `EG_EDocIncgDclnCanclnReqDteTme` |  | |  |  |
-| `EG_EDocIncgDclnRjcnReqDateTime` |  | |  |  |
-| `EG_ElectronicDocIncgDocumentID` |  | |  |  |
-| `EG_ElectronicDocIncgDocVersion` |  | |  |  |
-| `EG_EDocIncgIsRejectionAllwd` |  | |  |  |
-| `EG_ElectronicDocIncgRjcnCode` |  | |  |  |
-| `EG_ElectronicDocIncgRjcnDesc` |  | |  |  |
-| `EG_ElectronicDocInternalIDIncg` |  | |  |  |
-| `EG_ElectronicDocIncgPORef` |  | |  |  |
-| `EG_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |  |  |
+| `EG_ElectronicDocIncgDocUnqID` |  | |  |  |  |  |
+| `EG_ElectronicDocIncgRcvdDteTme` |  | |  |  |  |  |
+| `EG_EDocIncgCanclnAllwdDateTime` |  | |  |  |  |  |
+| `EG_EDocIncgRjcnAllwdDateTime` |  | |  |  |  |  |
+| `EG_EDocIncgCanclnRequestDteTme` |  | |  |  |  |  |
+| `EG_EDocIncgRejectionReqDateTme` |  | |  |  |  |  |
+| `EG_EDocIncgCanclnReqDlydDteTme` |  | |  |  |  |  |
+| `EG_EDocIncgRjcnReqDlydDateTime` |  | |  |  |  |  |
+| `EG_EDocIncgDclnCanclnReqDteTme` |  | |  |  |  |  |
+| `EG_EDocIncgDclnRjcnReqDateTime` |  | |  |  |  |  |
+| `EG_ElectronicDocIncgDocumentID` |  | |  |  |  |  |
+| `EG_ElectronicDocIncgDocVersion` |  | |  |  |  |  |
+| `EG_EDocIncgIsRejectionAllwd` |  | |  |  |  |  |
+| `EG_ElectronicDocIncgRjcnCode` |  | |  |  |  |  |
+| `EG_ElectronicDocIncgRjcnDesc` |  | |  |  |  |  |
+| `EG_ElectronicDocInternalIDIncg` |  | |  |  |  |  |
+| `EG_ElectronicDocIncgPORef` |  | |  |  |  |  |
+| `EG_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |  |  |
 
 ## Associations
 

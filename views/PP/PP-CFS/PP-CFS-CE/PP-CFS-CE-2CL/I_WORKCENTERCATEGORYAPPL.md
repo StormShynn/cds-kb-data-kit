@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterCategoryCode` | ✓ | |  | `verwe` |
-| `BillOfOperationsApplication` | ✓ | |  | `applc` |
-| `_WrkCtrCat` | | ✓ | | |
-| `_BOOAppl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterCategoryCode` | ✓ | |  | `verwe` |  |  |
+| `BillOfOperationsApplication` | ✓ | |  | `applc` |  |  |
+| `_WrkCtrCat` | | ✓ | | | | |
+| `_BOOAppl` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,132 +29,132 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationLedger` | ✓ | |  |  |
-| `ConsolidationDimension` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `CnsldtnGroupJrnlEntry` | ✓ | |  |  |
-| `CnsldtnGroupJrnlEntryItem` | ✓ | |  |  |
-| `GLRecordType` |  | |  |  |
-| `ConsolidationVersionElement` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `LocalCurrency` |  | |  |  |
-| `GroupCurrency` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `Company` |  | |  |  |
-| `ConsolidationUnit` |  | |  |  |
-| `ConsolidationChartOfAccounts` |  | |  |  |
-| `CnsldtnFinancialStatementItem` |  | |  |  |
-| `PartnerConsolidationUnit` |  | |  |  |
-| `ConsolidationGroup` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `SubItemCategory` |  | |  |  |
-| `SubItem` |  | |  |  |
-| `PostingLevel` |  | |  |  |
-| `ConsolidationApportionment` |  | |  |  |
-| `CurrencyConversionsDiffType` |  | |  |  |
-| `ConsolidationDocumentType` |  | |  |  |
-| `ConsolidationAcquisitionYear` |  | |  |  |
-| `ConsolidationAcquisitionPeriod` |  | |  |  |
-| `InvesteeConsolidationUnit` |  | |  |  |
-| `InvestorConsolidationUnit` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  | `} AmountInTransactionCurrency` |
-| `AmountInLocalCurrency` |  | |  | `} AmountInLocalCurrency` |
-| `AmountInGroupCurrency` |  | |  | `} AmountInGroupCurrency` |
-| `CnsldtnQuantityInBaseUnit` |  | |  | `} CnsldtnQuantityInBaseUnit` |
-| `DocumentItemText` |  | |  |  |
-| `ConsolidationPostgItemAutoFlag` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CurrencyTranslationDate` |  | |  |  |
-| `RefConsolidationDocumentNumber` |  | |  |  |
-| `ReferenceFiscalYear` |  | |  |  |
-| `RefConsolidationPostingItem` |  | |  |  |
-| `RefConsolidationDocumentType` |  | |  |  |
-| `RefBusinessTransactionType` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `UserID` |  | |  |  |
-| `ReverseDocument` |  | |  |  |
-| `ReversedDocument` |  | |  |  |
-| `InvestmentActivityType` |  | |  |  |
-| `InvestmentActivity` |  | |  |  |
-| `ConsolidationDocReversalYear` |  | |  |  |
-| `ReferenceDocumentType` |  | |  |  |
-| `ReferenceDocumentContext` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `Segment` |  | |  |  |
-| `PartnerCostCenter` |  | |  |  |
-| `PartnerProfitCenter` |  | |  |  |
-| `PartnerFunctionalArea` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `PartnerSegment` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `FinancialTransactionType` |  | |  |  |
-| `BillingDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SoldProduct` |  | |  |  |
-| `SoldProductGroup` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CustomerSupplierCountry` |  | |  |  |
-| `CustomerSupplierIndustry` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `CnsldtnAdhocItem` |  | |  |  |
-| `CnsldtnAdhocSet` |  | |  |  |
-| `CnsldtnAdhocSetItem` |  | |  |  |
-| `CustomerSupplierCorporateGroup` |  | |  |  |
-| `MatchingReasonCode` |  | |  |  |
-| `OriginType` |  | |  |  |
-| `OriginReference` |  | |  |  |
-| `CnsldtnGroupJrnlEntryBundle` |  | |  |  |
-| `FinancialServicesProductGroup` |  | |  |  |
-| `FinancialServicesBranch` |  | |  |  |
-| `FinancialDataSource` |  | |  |  |
-| `GHGCategory` |  | |  |  |
-| `GHGScope` |  | |  |  |
-| `GHGScope2CalculationMethod` |  | |  |  |
-| `GHGScope2ContractualInstrument` |  | |  |  |
-| `GHGDataQualityCharacteristic` |  | |  |  |
-| `GHGEnergyClassification` |  | |  |  |
-| `GHGEnergyMix` |  | |  |  |
-| `GHGEnergySourcingType` |  | |  |  |
-| `SustainabilityModeOfTransport` |  | |  |  |
-| `FinancialManagementArea` |  | |  |  |
-| `Fund` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `CnsldtnCashLedgerChartOfAccts` |  | |  |  |
-| `CashLedgerAccount` |  | |  |  |
-| `PartnerFund` |  | |  |  |
-| `CnsldtnSubitemCategory` |  | |  | `cast( SubItemCategory as fincs_subitemcategory preserving type )` |
-| `CnsldtnSubitem` |  | |  | `cast( SubItem as fincs_subitem preserving type )` |
-| `ConsolidationPostingLevel` |  | |  | `cast( PostingLevel as fincs_postinglevel preserving type )` |
-| `CnsldtnCstmSignAmtInTransCrcy` |  | |  | `} CnsldtnCstmSignAmtInTransCrcy` |
-| `CnsldtnCstmSignAmtInLoclCrcy` |  | |  | `} CnsldtnCstmSignAmtInLoclCrcy` |
-| `CnsldtnCstmSignAmtInGrpCrcy` |  | |  | `} CnsldtnCstmSignAmtInGrpCrcy` |
-| `CnsldtnCstmSignQtyInBaseUnit` |  | |  | `} CnsldtnCstmSignQtyInBaseUnit` |
-| `CnsldtnCstmSignLongQtyInBsUnit` |  | |  | `} CnsldtnCstmSignLongQtyInBsUnit` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationLedger` | ✓ | |  |  |  |  |
+| `ConsolidationDimension` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `CnsldtnGroupJrnlEntry` | ✓ | |  |  |  |  |
+| `CnsldtnGroupJrnlEntryItem` | ✓ | |  |  |  |  |
+| `GLRecordType` |  | |  |  |  |  |
+| `ConsolidationVersionElement` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `LocalCurrency` |  | |  |  |  |  |
+| `GroupCurrency` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `Company` |  | |  |  |  |  |
+| `ConsolidationUnit` |  | |  |  |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |  |  |
+| `ConsolidationGroup` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `SubItemCategory` |  | |  |  |  |  |
+| `SubItem` |  | |  |  |  |  |
+| `PostingLevel` |  | |  |  |  |  |
+| `ConsolidationApportionment` |  | |  |  |  |  |
+| `CurrencyConversionsDiffType` |  | |  |  |  |  |
+| `ConsolidationDocumentType` |  | |  |  |  |  |
+| `ConsolidationAcquisitionYear` |  | |  |  |  |  |
+| `ConsolidationAcquisitionPeriod` |  | |  |  |  |  |
+| `InvesteeConsolidationUnit` |  | |  |  |  |  |
+| `InvestorConsolidationUnit` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `AmountInLocalCurrency` |  | |  |  |  |  |
+| `AmountInGroupCurrency` |  | |  |  |  |  |
+| `CnsldtnQuantityInBaseUnit` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `ConsolidationPostgItemAutoFlag` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CurrencyTranslationDate` |  | |  |  |  |  |
+| `RefConsolidationDocumentNumber` |  | |  |  |  |  |
+| `ReferenceFiscalYear` |  | |  |  |  |  |
+| `RefConsolidationPostingItem` |  | |  |  |  |  |
+| `RefConsolidationDocumentType` |  | |  |  |  |  |
+| `RefBusinessTransactionType` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `UserID` |  | |  |  |  |  |
+| `ReverseDocument` |  | |  |  |  |  |
+| `ReversedDocument` |  | |  |  |  |  |
+| `InvestmentActivityType` |  | |  |  |  |  |
+| `InvestmentActivity` |  | |  |  |  |  |
+| `ConsolidationDocReversalYear` |  | |  |  |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `ReferenceDocumentContext` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `PartnerProfitCenter` |  | |  |  |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `PartnerSegment` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `FinancialTransactionType` |  | |  |  |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SoldProduct` |  | |  |  |  |  |
+| `SoldProductGroup` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `CustomerSupplierCountry` |  | |  |  |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `CnsldtnAdhocItem` |  | |  |  |  |  |
+| `CnsldtnAdhocSet` |  | |  |  |  |  |
+| `CnsldtnAdhocSetItem` |  | |  |  |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  |  |  |  |
+| `MatchingReasonCode` |  | |  |  |  |  |
+| `OriginType` |  | |  |  |  |  |
+| `OriginReference` |  | |  |  |  |  |
+| `CnsldtnGroupJrnlEntryBundle` |  | |  |  |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |  |  |
+| `FinancialServicesBranch` |  | |  |  |  |  |
+| `FinancialDataSource` |  | |  |  |  |  |
+| `GHGCategory` |  | |  |  |  |  |
+| `GHGScope` |  | |  |  |  |  |
+| `GHGScope2CalculationMethod` |  | |  |  |  |  |
+| `GHGScope2ContractualInstrument` |  | |  |  |  |  |
+| `GHGDataQualityCharacteristic` |  | |  |  |  |  |
+| `GHGEnergyClassification` |  | |  |  |  |  |
+| `GHGEnergyMix` |  | |  |  |  |  |
+| `GHGEnergySourcingType` |  | |  |  |  |  |
+| `SustainabilityModeOfTransport` |  | |  |  |  |  |
+| `FinancialManagementArea` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  |  |  |  |
+| `CashLedgerAccount` |  | |  |  |  |  |
+| `PartnerFund` |  | |  |  |  |  |
+| `CnsldtnSubitemCategory` |  | |  | `cast( SubItemCategory as fincs_subitemcategory preserving type )` |  |  |
+| `CnsldtnSubitem` |  | |  | `cast( SubItem as fincs_subitem preserving type )` |  |  |
+| `ConsolidationPostingLevel` |  | |  | `cast( PostingLevel as fincs_postinglevel preserving type )` |  |  |
+| `CnsldtnCstmSignAmtInTransCrcy` |  | |  |  |  |  |
+| `CnsldtnCstmSignAmtInLoclCrcy` |  | |  |  |  |  |
+| `CnsldtnCstmSignAmtInGrpCrcy` |  | |  |  |  |  |
+| `CnsldtnCstmSignQtyInBaseUnit` |  | |  |  |  |  |
+| `CnsldtnCstmSignLongQtyInBsUnit` |  | |  |  |  |  |
 
 ## Associations
 

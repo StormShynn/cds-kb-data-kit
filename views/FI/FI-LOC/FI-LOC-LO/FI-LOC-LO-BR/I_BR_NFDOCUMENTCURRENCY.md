@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NotaFiscal` | ✓ | |  | `docnum` |
-| `SalesDocumentCurrency` |  | |  | `waerk` |
-| `_SalesDocumentCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |  |  |
+| `SalesDocumentCurrency` |  | |  | `waerk` |  |  |
+| `_SalesDocumentCurrency` | | ✓ | | | | |
 
 ## Associations
 

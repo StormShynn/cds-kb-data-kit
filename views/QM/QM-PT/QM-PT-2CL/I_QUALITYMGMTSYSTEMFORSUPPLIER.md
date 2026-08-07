@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityMgmtSystemForSupplier` | ✓ | |  | `qssys` |
-| `_QltyMgmtSystemForSupplierTxt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityMgmtSystemForSupplier` | ✓ | |  | `qssys` |  |  |
+| `_QltyMgmtSystemForSupplierTxt` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Currency` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Currency` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

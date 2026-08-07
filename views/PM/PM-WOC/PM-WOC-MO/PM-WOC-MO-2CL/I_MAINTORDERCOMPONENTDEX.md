@@ -29,117 +29,117 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Reservation` | ✓ | |  |  |
-| `ReservationItem` | ✓ | |  |  |
-| `ReservationType` | ✓ | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `MaintenanceOrderOperation` |  | |  |  |
-| `MaintenanceOrderSubOperation` |  | |  |  |
-| `MaintOrderComponentInternalID` |  | |  |  |
-| `MaintenanceOrderComponent` |  | |  |  |
-| `ResvnPurchasingDocumentNumber` |  | |  |  |
-| `FunctionalLocation` |  | | `_MaintenanceOrderDEX` | `FunctionalLocation` |
-| `Equipment` |  | | `_MaintenanceOrderDEX` | `Equipment` |
-| `Assembly` |  | | `_MaintenanceOrderDEX` | `Assembly` |
-| `MaintenanceActivityType` |  | | `_MaintenanceOrderDEX` | `MaintenanceActivityType` |
-| `MaintenancePlannerGroup` |  | | `_MaintenanceOrderDEX` | `MaintenancePlannerGroup` |
-| `MaintenancePlanningPlant` |  | | `_MaintenanceOrderDEX` | `MaintenancePlanningPlant` |
-| `MaintenanceOrderType` |  | | `_MaintenanceOrderDEX` | `MaintenanceOrderType` |
-| `MaintenancePlant` |  | | `_MaintenanceOrderDEX` | `MaintenancePlant` |
-| `MaintObjectLocAcctAssgmtNmbr` |  | | `_MaintenanceOrderDEX` | `MaintObjectLocAcctAssgmtNmbr` |
-| `CreationDate` |  | | `_MaintenanceOrder._Order` | `CreationDate` |
-| `LastChangeDateTime` |  | | `_MaintenanceOrderDEX` | `LastChangeDateTime` |
-| `MaintOrdProcessPhaseCode` |  | | `_MaintenanceOrderDEX` | `MaintOrdProcessPhaseCode` |
-| `MaintOrdProcessSubPhaseCode` |  | | `_MaintenanceOrderDEX` | `MaintOrdProcessSubPhaseCode` |
-| `LatestAcceptableCompletionDate` |  | | `_MaintenanceOrderDEX` | `LatestAcceptableCompletionDate` |
-| `PrevLtstAccptblCompletionDate` |  | | `_MaintenanceOrder` | `PrevLtstAccptblCompletionDate` |
-| `MaintOrderProcessingContext` |  | | `_MaintenanceOrderDEX` | `MaintOrderProcessingContext` |
-| `ReservationIsFinallyIssued` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Material` |  | |  |  |
-| `ComponentDescription` |  | |  |  |
-| `MaintComponentItemCategory` |  | |  |  |
-| `MaintOrdOpCompRequisitioner` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `RequirementQuantityInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `QuantityInUnitOfEntry` |  | |  |  |
-| `UnitOfEntry` |  | |  |  |
-| `MaintOrderCompDebitCreditCode` |  | |  |  |
-| `PurReqnOrResvnGeneration` |  | |  |  |
-| `MaterialCompIsProcuredDirectly` |  | |  |  |
-| `RequirementDate` |  | |  |  |
-| `RequirementTime` |  | |  |  |
-| `ProductTypeCode` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `PerformancePeriodStartDate` |  | |  |  |
-| `PerformancePeriodEndDate` |  | |  |  |
-| `PerformancePeriodStartTime` |  | |  |  |
-| `PerformancePeriodEndTime` |  | |  |  |
-| `LeanServiceDuration` |  | |  |  |
-| `LeanServiceDurationUnit` |  | |  |  |
-| `DistributionFunction` |  | |  |  |
-| `MaintOrdCompDeliveryDateAdjmt` |  | |  |  |
-| `SrvcSchedgIsAlignedWthOpWrkCtr` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `MaintOrderRoutingNumber` |  | |  |  |
-| `MaintOrderOperationCounter` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `GoodsMovementIsAllowed` |  | |  |  |
-| `MaintenanceOrderComponentBatch` |  | |  |  |
-| `MaintOrdOpComponentGLAccount` |  | |  |  |
-| `MaintOrdOpCompCostingRelevancy` |  | |  |  |
-| `MaintCompAltvProdUsgeRateInPct` |  | |  |  |
-| `MaintOrderOpComponentSortText` |  | |  |  |
-| `MaintOrdOpCompIsBulkProduct` |  | |  |  |
-| `MaterialProvisionType` |  | |  |  |
-| `MaintOrdOpCompAssgdWBSElmntInt` |  | |  |  |
-| `WBSElement` |  | |  | `cast ( _MaintenanceOrder._WBSElement.WBSElement as vdm_ps_posid preserving type )` |
-| `MaintOrderOpComponentPrice` |  | |  |  |
-| `MaintOrdOpCompPriceUnitQty` |  | |  |  |
-| `MatlCompIsMarkedForBackflush` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `DeliveryTimeInDays` |  | |  |  |
-| `MaintOrdOpCompGdsRecipientName` |  | |  |  |
-| `MaintOrdOpCompUnloadingPtTxt` |  | |  |  |
-| `GoodsReceiptDurationInWorkDays` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `OperationLeadTimeOffset` |  | |  |  |
-| `OpsLeadTimeOffsetUnit` |  | |  |  |
-| `ResponsiblePurchaseOrg` |  | |  |  |
-| `MaintOrdCompPurOutlineAgrmtItm` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ControllingArea` |  | | `_MaintenanceOrderDEX` | `ControllingArea` |
-| `ResponsibleCostCenter` |  | | `_MaintenanceOrderDEX` | `ResponsibleCostCenter` |
-| `OverallLimitAmount` |  | |  |  |
-| `ExpectedOverallLimitAmount` |  | |  |  |
-| `QuantityIsFixed` |  | |  |  |
-| `MaintOrdOpComponentCurrency` |  | |  |  |
-| `MaintOrdOpCompProcmtTrckgNmbr` |  | |  |  |
-| `MaintOrdOpCompSpecialStockType` |  | |  |  |
-| `VariableSizeDimension1` |  | |  |  |
-| `VariableSizeDimensionUnit` |  | |  |  |
-| `VariableSizeCompFormulaKey` |  | |  |  |
-| `VariableSizeDimension2` |  | |  |  |
-| `NumberOfVariableSizeItem` |  | |  |  |
-| `VariableSizeDimension3` |  | |  |  |
-| `VariableSizeItemQuantity` |  | |  |  |
-| `VariableSizeComponentUnit` |  | |  |  |
-| `RqmtDateIsEnteredManually` |  | |  |  |
-| `SupplierProduct` |  | |  |  |
-| `MaintOrdCompCmtdQtyIsKept` |  | |  |  |
-| `MaintOrdOpCompPurOutlineAgrmt` |  | |  |  |
-| `MaintOrdOpCompProcmtCatalog` |  | |  |  |
-| `MaintOrdOpCompProcmtCatalogItm` |  | |  |  |
-| `QuantityWithdrawnInBaseUnit` |  | |  |  |
-| `ConfirmedAvailableQuantity` |  | |  |  |
-| `RecipientLocationCode` |  | | `_ReservationItem` | `RecipientLocationCode` |
-| `_MaintenanceOrderDEX` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Reservation` | ✓ | |  |  |  |  |
+| `ReservationItem` | ✓ | |  |  |  |  |
+| `ReservationType` | ✓ | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |  |  |
+| `MaintenanceOrderSubOperation` |  | |  |  |  |  |
+| `MaintOrderComponentInternalID` |  | |  |  |  |  |
+| `MaintenanceOrderComponent` |  | |  |  |  |  |
+| `ResvnPurchasingDocumentNumber` |  | |  |  |  |  |
+| `FunctionalLocation` |  | | `_MaintenanceOrderDEX` | `FunctionalLocation` |  |  |
+| `Equipment` |  | | `_MaintenanceOrderDEX` | `Equipment` |  |  |
+| `Assembly` |  | | `_MaintenanceOrderDEX` | `Assembly` |  |  |
+| `MaintenanceActivityType` |  | | `_MaintenanceOrderDEX` | `MaintenanceActivityType` |  |  |
+| `MaintenancePlannerGroup` |  | | `_MaintenanceOrderDEX` | `MaintenancePlannerGroup` |  |  |
+| `MaintenancePlanningPlant` |  | | `_MaintenanceOrderDEX` | `MaintenancePlanningPlant` |  |  |
+| `MaintenanceOrderType` |  | | `_MaintenanceOrderDEX` | `MaintenanceOrderType` |  |  |
+| `MaintenancePlant` |  | | `_MaintenanceOrderDEX` | `MaintenancePlant` |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | | `_MaintenanceOrderDEX` | `MaintObjectLocAcctAssgmtNmbr` |  |  |
+| `CreationDate` |  | | `_MaintenanceOrder._Order` | `CreationDate` |  |  |
+| `LastChangeDateTime` |  | | `_MaintenanceOrderDEX` | `LastChangeDateTime` |  |  |
+| `MaintOrdProcessPhaseCode` |  | | `_MaintenanceOrderDEX` | `MaintOrdProcessPhaseCode` |  |  |
+| `MaintOrdProcessSubPhaseCode` |  | | `_MaintenanceOrderDEX` | `MaintOrdProcessSubPhaseCode` |  |  |
+| `LatestAcceptableCompletionDate` |  | | `_MaintenanceOrderDEX` | `LatestAcceptableCompletionDate` |  |  |
+| `PrevLtstAccptblCompletionDate` |  | | `_MaintenanceOrder` | `PrevLtstAccptblCompletionDate` |  |  |
+| `MaintOrderProcessingContext` |  | | `_MaintenanceOrderDEX` | `MaintOrderProcessingContext` |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ComponentDescription` |  | |  |  |  |  |
+| `MaintComponentItemCategory` |  | |  |  |  |  |
+| `MaintOrdOpCompRequisitioner` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `RequirementQuantityInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `QuantityInUnitOfEntry` |  | |  |  |  |  |
+| `UnitOfEntry` |  | |  |  |  |  |
+| `MaintOrderCompDebitCreditCode` |  | |  |  |  |  |
+| `PurReqnOrResvnGeneration` |  | |  |  |  |  |
+| `MaterialCompIsProcuredDirectly` |  | |  |  |  |  |
+| `RequirementDate` |  | |  |  |  |  |
+| `RequirementTime` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |  |  |
+| `PerformancePeriodStartTime` |  | |  |  |  |  |
+| `PerformancePeriodEndTime` |  | |  |  |  |  |
+| `LeanServiceDuration` |  | |  |  |  |  |
+| `LeanServiceDurationUnit` |  | |  |  |  |  |
+| `DistributionFunction` |  | |  |  |  |  |
+| `MaintOrdCompDeliveryDateAdjmt` |  | |  |  |  |  |
+| `SrvcSchedgIsAlignedWthOpWrkCtr` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `MaintOrderRoutingNumber` |  | |  |  |  |  |
+| `MaintOrderOperationCounter` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `GoodsMovementIsAllowed` |  | |  |  |  |  |
+| `MaintenanceOrderComponentBatch` |  | |  |  |  |  |
+| `MaintOrdOpComponentGLAccount` |  | |  |  |  |  |
+| `MaintOrdOpCompCostingRelevancy` |  | |  |  |  |  |
+| `MaintCompAltvProdUsgeRateInPct` |  | |  |  |  |  |
+| `MaintOrderOpComponentSortText` |  | |  |  |  |  |
+| `MaintOrdOpCompIsBulkProduct` |  | |  |  |  |  |
+| `MaterialProvisionType` |  | |  |  |  |  |
+| `MaintOrdOpCompAssgdWBSElmntInt` |  | |  |  |  |  |
+| `WBSElement` |  | |  | `cast ( _MaintenanceOrder._WBSElement.WBSElement as vdm_ps_posid preserving type )` |  |  |
+| `MaintOrderOpComponentPrice` |  | |  |  |  |  |
+| `MaintOrdOpCompPriceUnitQty` |  | |  |  |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `DeliveryTimeInDays` |  | |  |  |  |  |
+| `MaintOrdOpCompGdsRecipientName` |  | |  |  |  |  |
+| `MaintOrdOpCompUnloadingPtTxt` |  | |  |  |  |  |
+| `GoodsReceiptDurationInWorkDays` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `OperationLeadTimeOffset` |  | |  |  |  |  |
+| `OpsLeadTimeOffsetUnit` |  | |  |  |  |  |
+| `ResponsiblePurchaseOrg` |  | |  |  |  |  |
+| `MaintOrdCompPurOutlineAgrmtItm` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ControllingArea` |  | | `_MaintenanceOrderDEX` | `ControllingArea` |  |  |
+| `ResponsibleCostCenter` |  | | `_MaintenanceOrderDEX` | `ResponsibleCostCenter` |  |  |
+| `OverallLimitAmount` |  | |  |  |  |  |
+| `ExpectedOverallLimitAmount` |  | |  |  |  |  |
+| `QuantityIsFixed` |  | |  |  |  |  |
+| `MaintOrdOpComponentCurrency` |  | |  |  |  |  |
+| `MaintOrdOpCompProcmtTrckgNmbr` |  | |  |  |  |  |
+| `MaintOrdOpCompSpecialStockType` |  | |  |  |  |  |
+| `VariableSizeDimension1` |  | |  |  |  |  |
+| `VariableSizeDimensionUnit` |  | |  |  |  |  |
+| `VariableSizeCompFormulaKey` |  | |  |  |  |  |
+| `VariableSizeDimension2` |  | |  |  |  |  |
+| `NumberOfVariableSizeItem` |  | |  |  |  |  |
+| `VariableSizeDimension3` |  | |  |  |  |  |
+| `VariableSizeItemQuantity` |  | |  |  |  |  |
+| `VariableSizeComponentUnit` |  | |  |  |  |  |
+| `RqmtDateIsEnteredManually` |  | |  |  |  |  |
+| `SupplierProduct` |  | |  |  |  |  |
+| `MaintOrdCompCmtdQtyIsKept` |  | |  |  |  |  |
+| `MaintOrdOpCompPurOutlineAgrmt` |  | |  |  |  |  |
+| `MaintOrdOpCompProcmtCatalog` |  | |  |  |  |  |
+| `MaintOrdOpCompProcmtCatalogItm` |  | |  |  |  |  |
+| `QuantityWithdrawnInBaseUnit` |  | |  |  |  |  |
+| `ConfirmedAvailableQuantity` |  | |  |  |  |  |
+| `RecipientLocationCode` |  | | `_ReservationItem` | `RecipientLocationCode` |  |  |
+| `_MaintenanceOrderDEX` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanCalcLockingSequence` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as rfspr)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanCalcLockingSequence` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as rfspr)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

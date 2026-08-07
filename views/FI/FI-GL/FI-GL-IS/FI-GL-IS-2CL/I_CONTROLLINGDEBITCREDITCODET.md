@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingDebitCreditCode` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
-| `ControllingDebitCreditCodeName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingDebitCreditCode` | ✓ | |  | `substring(domvalue_l, 1, 1)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |  |  |
+| `ControllingDebitCreditCodeName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

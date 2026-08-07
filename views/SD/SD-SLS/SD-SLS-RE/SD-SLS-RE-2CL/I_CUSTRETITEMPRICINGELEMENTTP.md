@@ -31,34 +31,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturn` | ✓ | |  |  |
-| `CustomerReturnItem` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionBaseAmount` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionBaseQuantity` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `CustomerReturnType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_CustomerReturn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |  |  |
+| `CustomerReturnItem` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionBaseAmount` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionBaseQuantity` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `CustomerReturnType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_CustomerReturn` | | ✓ | | | | |
 
 ## Source Code
 

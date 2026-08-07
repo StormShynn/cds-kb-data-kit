@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Brand` | ✓ | |  | `brand_id` |
-| `Language` | ✓ | |  | `language` |
-| `BrandName` |  | |  | `brand_descr` |
-| `_Brand` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Brand` | ✓ | |  | `brand_id` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `BrandName` |  | |  | `brand_descr` |  |  |
+| `_Brand` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

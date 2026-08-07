@@ -28,59 +28,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MiscProductionResourceTool` | ✓ | |  |  |
-| `ProductionResourceType` |  | |  |  |
-| `ProductionResourceInternalID` |  | |  |  |
-| `ProductionResourceToolGroup1` |  | |  |  |
-| `ProductionResourceToolGroup2` |  | |  |  |
-| `ProductionResourceUsage` |  | |  |  |
-| `ProdnRsceToolControlProfile` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ProdnRsceToolStandardTextCode` |  | |  |  |
-| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |
-| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |
-| `StartDateOffsetReferenceCode` |  | |  |  |
-| `EndDateOffsetReferenceCode` |  | |  |  |
-| `EndDateOffsetDurnIsReferenced` |  | |  |  |
-| `StartDateOffstDurnIsReferenced` |  | |  |  |
-| `EndDteOffstRefCodeIsReferenced` |  | |  |  |
-| `StartDateOffsetRefCodeIsRefcd` |  | |  |  |
-| `PRTTotQtyCalcFmlaIsReferenced` |  | |  |  |
-| `PRTUsgeQtyCalcFmlaIsReferenced` |  | |  |  |
-| `PRTControlProfileIsReferenced` |  | |  |  |
-| `PRTStdTextCodeIsReferenced` |  | |  |  |
-| `StartDateOffsetDuration` |  | |  |  |
-| `StartDateOffsetDurationUnit` |  | |  |  |
-| `EndDateOffsetDuration` |  | |  |  |
-| `EndDateOffsetDurationUnit` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `MiscPRTAuthorizationGroup` |  | |  |  |
-| `ProdnRsceToolPlntLoc` |  | |  |  |
-| `ProductionResourceToolStatus` |  | |  |  |
-| `ProdnRsceToolIsDeleted` |  | |  |  |
-| `ProductionResourceToolLocation` |  | |  |  |
-| `ProdnRsceToolBaseUnit` |  | |  |  |
-| `_ProductionResourceType` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ProdnRsceToolGroup1` | | ✓ | | |
-| `_ProdnRsceToolGroup2` | | ✓ | | |
-| `_ProductionResourceUsage` | | ✓ | | |
-| `_ProdnRsceToolControlProfile` | | ✓ | | |
-| `_ProdnRsceToolStandardText` | | ✓ | | |
-| `_ProdnRsceToolTotQtyCalcFmla` | | ✓ | | |
-| `_ProdnRsceToolUsageQtyCalcFmla` | | ✓ | | |
-| `_StartDateOffsetReferenceCode` | | ✓ | | |
-| `_EndDateOffsetReferenceCode` | | ✓ | | |
-| `_StartDateOffsetDurationUnit` | | ✓ | | |
-| `_EndDateOffsetDurationUnit` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_ChangeMaster` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MiscProductionResourceTool` | ✓ | |  |  |  |  |
+| `ProductionResourceType` |  | |  |  |  |  |
+| `ProductionResourceInternalID` |  | |  |  |  |  |
+| `ProductionResourceToolGroup1` |  | |  |  |  |  |
+| `ProductionResourceToolGroup2` |  | |  |  |  |  |
+| `ProductionResourceUsage` |  | |  |  |  |  |
+| `ProdnRsceToolControlProfile` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ProdnRsceToolStandardTextCode` |  | |  |  |  |  |
+| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |  |  |
+| `StartDateOffsetReferenceCode` |  | |  |  |  |  |
+| `EndDateOffsetReferenceCode` |  | |  |  |  |  |
+| `EndDateOffsetDurnIsReferenced` |  | |  |  |  |  |
+| `StartDateOffstDurnIsReferenced` |  | |  |  |  |  |
+| `EndDteOffstRefCodeIsReferenced` |  | |  |  |  |  |
+| `StartDateOffsetRefCodeIsRefcd` |  | |  |  |  |  |
+| `PRTTotQtyCalcFmlaIsReferenced` |  | |  |  |  |  |
+| `PRTUsgeQtyCalcFmlaIsReferenced` |  | |  |  |  |  |
+| `PRTControlProfileIsReferenced` |  | |  |  |  |  |
+| `PRTStdTextCodeIsReferenced` |  | |  |  |  |  |
+| `StartDateOffsetDuration` |  | |  |  |  |  |
+| `StartDateOffsetDurationUnit` |  | |  |  |  |  |
+| `EndDateOffsetDuration` |  | |  |  |  |  |
+| `EndDateOffsetDurationUnit` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `MiscPRTAuthorizationGroup` |  | |  |  |  |  |
+| `ProdnRsceToolPlntLoc` |  | |  |  |  |  |
+| `ProductionResourceToolStatus` |  | |  |  |  |  |
+| `ProdnRsceToolIsDeleted` |  | |  |  |  |  |
+| `ProductionResourceToolLocation` |  | |  |  |  |  |
+| `ProdnRsceToolBaseUnit` |  | |  |  |  |  |
+| `_ProductionResourceType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ProdnRsceToolGroup1` | | ✓ | | | | |
+| `_ProdnRsceToolGroup2` | | ✓ | | | | |
+| `_ProductionResourceUsage` | | ✓ | | | | |
+| `_ProdnRsceToolControlProfile` | | ✓ | | | | |
+| `_ProdnRsceToolStandardText` | | ✓ | | | | |
+| `_ProdnRsceToolTotQtyCalcFmla` | | ✓ | | | | |
+| `_ProdnRsceToolUsageQtyCalcFmla` | | ✓ | | | | |
+| `_StartDateOffsetReferenceCode` | | ✓ | | | | |
+| `_EndDateOffsetReferenceCode` | | ✓ | | | | |
+| `_StartDateOffsetDurationUnit` | | ✓ | | | | |
+| `_EndDateOffsetDurationUnit` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_ChangeMaster` | | ✓ | | | | |
 
 ## Source Code
 

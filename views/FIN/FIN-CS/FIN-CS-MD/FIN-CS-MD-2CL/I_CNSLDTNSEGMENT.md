@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Segment` | ✓ | |  | `cast( Segment as fincs_segment preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | | ✓ | | |
-| `_SegmentHierNode` | | ✓ | | |
-| `_TmprlNde` | | ✓ | | |
-| `_MDSource` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Segment` | ✓ | |  | `cast( Segment as fincs_segment preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SegmentHierNode` | | ✓ | | | | |
+| `_TmprlNde` | | ✓ | | | | |
+| `_MDSource` | | ✓ | | | | |
 
 ## Associations
 

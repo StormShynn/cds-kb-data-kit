@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( itclg as fincs_conschartofaccounts preserving type )` |
-| `CnsldtnFinancialStatementItem` |  | |  | `}] key cast ( item as fincs_consolidationfsitem preserving type )` |
-| `CnsldtnFSItemText` |  | |  | `cast ( txtsh as fincs_short_text_15 preserving type )` |
-| `CnsldtnFSItemMediumText` |  | |  | `cast ( txtmi as fincs_medium_text_50 preserving type )` |
-| `CnsldtnFSItemLongText` |  | |  | `cast ( txtlg as fincs_long_text_250 preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_FSItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( itclg as fincs_conschartofaccounts preserving type )` |  |  |
+| `CnsldtnFinancialStatementItem` | ✓ | |  | `cast ( item as fincs_consolidationfsitem preserving type )` |  |  |
+| `CnsldtnFSItemText` |  | |  | `cast ( txtsh as fincs_short_text_15 preserving type )` |  |  |
+| `CnsldtnFSItemMediumText` |  | |  | `cast ( txtmi as fincs_medium_text_50 preserving type )` |  |  |
+| `CnsldtnFSItemLongText` |  | |  | `cast ( txtlg as fincs_long_text_250 preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_FSItem` | | ✓ | | | | |
 
 ## Associations
 

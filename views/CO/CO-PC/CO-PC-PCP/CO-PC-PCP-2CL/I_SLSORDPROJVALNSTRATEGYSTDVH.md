@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SlsOrdProjValnStrategy` | ✓ | |  |  |
-| `SlsOrdProjValnStrgyName` |  | | `_SlsOrdProjValnStrategyText` | `SlsOrdProjValnStrgyName` |
-| `_SlsOrdProjValnStrategyText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SlsOrdProjValnStrategy` | ✓ | |  |  |  |  |
+| `SlsOrdProjValnStrgyName` |  | | `_SlsOrdProjValnStrategyText` | `SlsOrdProjValnStrgyName` |  |  |
+| `_SlsOrdProjValnStrategyText` | | ✓ | | | | |
 
 ## Associations
 

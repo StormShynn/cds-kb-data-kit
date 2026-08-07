@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAProviderContractSender` | ✓ | |  | `sender` |
-| `CAProviderContractSenderCat` |  | |  | `sendercat` |
-| `ExternalNumberRangeInterval` |  | |  | `cast(nrext as nrext_vt_kk preserving type )` |
-| `InternalNumberRangeInterval` |  | |  | `cast(nrint as nrint_vt_kk preserving type )` |
-| `_Text` | | ✓ | | |
-| `_SenderCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAProviderContractSender` | ✓ | |  | `sender` |  |  |
+| `CAProviderContractSenderCat` |  | |  | `sendercat` |  |  |
+| `ExternalNumberRangeInterval` |  | |  | `cast(nrext as nrext_vt_kk preserving type )` |  |  |
+| `InternalNumberRangeInterval` |  | |  | `cast(nrint as nrint_vt_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SenderCategory` | | ✓ | | | | |
 
 ## Associations
 

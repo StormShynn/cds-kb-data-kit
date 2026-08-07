@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintOrdCancellationAction` | ✓ | |  | `cast(dd07l.domvalue_l as maintordcancellationaction)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrdCancellationAction` | ✓ | |  | `cast(dd07l.domvalue_l as maintordcancellationaction)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

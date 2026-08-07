@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerProject` | ✓ | |  |  |
-| `SalesOrderItem` | ✓ | |  |  |
-| `SalesOrder` |  | |  |  |
-| `BillingPlan` |  | |  | `cast( CustProjSlsOrdItem.BillingPlan as fplnr preserving type )` |
-| `BillingPlanCategory` |  | |  |  |
-| `BillingPlanUsageCategory` |  | |  |  |
-| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
-| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
-| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
-| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
-| `_CustomerProject` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_BillingPlanCategory` | | ✓ | | |
-| `_BillingPlanUsageCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerProject` | ✓ | |  |  |  |  |
+| `SalesOrderItem` | ✓ | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `BillingPlan` |  | |  | `cast( CustProjSlsOrdItem.BillingPlan as fplnr preserving type )` |  |  |
+| `BillingPlanCategory` |  | |  |  |  |  |
+| `BillingPlanUsageCategory` |  | |  |  |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |  |  |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |  |  |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |  |  |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |  |  |
+| `_CustomerProject` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_BillingPlanCategory` | | ✓ | | | | |
+| `_BillingPlanUsageCategory` | | ✓ | | | | |
 
 ## Associations
 

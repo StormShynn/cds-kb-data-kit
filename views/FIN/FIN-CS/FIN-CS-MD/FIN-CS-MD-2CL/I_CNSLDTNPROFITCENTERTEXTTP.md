@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `ControllingArea` | ✓ | | `_Text` | `ControllingArea` |
-| `ProfitCenter` | ✓ | | `_Text` | `ProfitCenter` |
-| `ProfitCenterName` |  | | `_Text` | `ProfitCenterName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnProfitCenterTP` |  | |  | `_ProfitCenter as _ProfitCenter : redirected to parent I_CnsldtnProfitCenterTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `ControllingArea` | ✓ | | `_Text` | `ControllingArea` |  |  |
+| `ProfitCenter` | ✓ | | `_Text` | `ProfitCenter` |  |  |
+| `ProfitCenterName` |  | | `_Text` | `ProfitCenterName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnProfitCenterTP` |  | |  | `_ProfitCenter as _ProfitCenter : redirected to parent I_CnsldtnProfitCenterTP` |  |  |
 
 ## Source Code
 

@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `AlternativeUnit` | ✓ | |  |  |
-| `Supplier` | ✓ | |  |  |
-| `ConsecutiveNumber` | ✓ | |  |  |
-| `GlobalTradeItemNumber` |  | |  |  |
-| `SuplrGTINIsMain` |  | |  |  |
-| `SupplierProduct` |  | |  |  |
-| `_ProductUnitOfMeasure` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_AlternativeUnit` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
-| `_AlternativeUnitText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `AlternativeUnit` | ✓ | |  |  |  |  |
+| `Supplier` | ✓ | |  |  |  |  |
+| `ConsecutiveNumber` | ✓ | |  |  |  |  |
+| `GlobalTradeItemNumber` |  | |  |  |  |  |
+| `SuplrGTINIsMain` |  | |  |  |  |  |
+| `SupplierProduct` |  | |  |  |  |  |
+| `_ProductUnitOfMeasure` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_AlternativeUnit` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
+| `_AlternativeUnitText` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,68 +28,68 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyClaimHeaderUUID` | ✓ | |  | `pnguid` |
-| `WarrantyClaimNumber` |  | |  | `clmno` |
-| `WarrantyClaimType` |  | |  | `clmty` |
-| `WrntyClaimExternalNumber` |  | |  | `refno` |
-| `WarrantyObjectType` |  | |  | `relty` |
-| `WrntyExternalObjectNumber` |  | |  | `relob_ext` |
-| `Plant` |  | |  | `werks` |
-| `IsArchived` |  | |  | `archiv_flag` |
-| `WrntyClaimHeaderText` |  | |  | `h_pntext` |
-| `WrntyClaimCreationTime` |  | |  | `creatime` |
-| `WrntyClaimSourceObjectNumber` |  | |  | `source_object` |
-| `WrntyClaimSource` |  | |  | `claim_source` |
-| `WrntyClaimDamageDate` |  | |  | `damage_date` |
-| `WrntyClaimRegistrationDate` |  | |  | `registration_date` |
-| `WrntyClaimRepairDate` |  | |  | `repair_date` |
-| `WrntyClaimRepairEndDate` |  | |  | `repair_end_date` |
-| `WarrantyClaimMileage` |  | |  | `mileage` |
-| `WarrantyClaimMileageUnit` |  | |  | `m_unit` |
-| `WrntyClmOperatingDurationInHrs` |  | |  | `operating_hours` |
-| `WrntyClmOperatingDurationUnit` |  | |  | `o_unit` |
-| `WarrantyCustomerCoverageType` |  | |  | `coverage_type` |
-| `WrntyCustClmProcessingStatus` |  | |  | `astate` |
-| `WrntyCustClaimRespPerson` |  | |  | `clerk` |
-| `WarrantyCustomerClaimGroup` |  | |  | `clmgrp` |
-| `WarrantyCustomerClaimIsClosed` |  | |  | `closed` |
-| `WrntyCustomerClaimClosedDate` |  | |  | `close_date` |
-| `WarrantyCustomer` |  | |  | `parnr` |
-| `WarrantyCustomerRole` |  | |  | `cast( parvw as parvw_unv preserving type )` |
-| `WarrantyCustomerApplicationLog` |  | |  | `cast(log_handle as wty_log_handle preserving type )` |
-| `WarrantyCustClmApplLogMessage` |  | |  | `log_message` |
-| `WrntySupplierCoverageType` |  | |  | `coverage_type_sup` |
-| `WrntySuplrClmProcessingStatus` |  | |  | `astate_sup` |
-| `WrntySuplrClaimRespPerson` |  | |  | `clerk_sup` |
-| `WrntySupplierClaimGroup` |  | |  | `clmgrp_sup` |
-| `WrntySupplierClaimIsClosed` |  | |  | `closed_sup` |
-| `WrntySupplierClaimClosedDate` |  | |  | `closed_date_sup` |
-| `WrntySupplier` |  | |  | `parnr_sup` |
-| `WrntySupplierRole` |  | |  | `cast( parvw_sup as parvw_unv preserving type )` |
-| `WrntySupplierApplicationLog` |  | |  | `cast(log_handle_sup as wty_log_handle preserving type )` |
-| `WrntySuplrClmApplLogMessage` |  | |  | `cast( log_message_sup as wty_balloghndl_msg_sup preserving type)` |
-| `WarrantyClaimChangeDateTime` |  | |  | `timstmp` |
-| `WrntyClaimCreationDate` |  | |  | `creadat` |
-| `CreatedByUser` |  | |  | `creaby` |
-| `WrntyClaimChangedDate` |  | |  | `chngdat` |
-| `LastChangedByUser` |  | |  | `chngby` |
-| `_WrntyClaimItem` | | ✓ | | |
-| `_WrntyClaimVersion` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_ResponsiblePerson` | | ✓ | | |
-| `_CustResponsiblePerson` | | ✓ | | |
-| `_ProcessingStatus` | | ✓ | | |
-| `_CustProcessingStatus` | | ✓ | | |
-| `_ClaimType` | | ✓ | | |
-| `_ObjectType` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_SupCoverageType` | | ✓ | | |
-| `_CustCoverageType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyClaimHeaderUUID` | ✓ | |  | `pnguid` |  |  |
+| `WarrantyClaimNumber` |  | |  | `clmno` |  |  |
+| `WarrantyClaimType` |  | |  | `clmty` |  |  |
+| `WrntyClaimExternalNumber` |  | |  | `refno` |  |  |
+| `WarrantyObjectType` |  | |  | `relty` |  |  |
+| `WrntyExternalObjectNumber` |  | |  | `relob_ext` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `IsArchived` |  | |  | `archiv_flag` |  |  |
+| `WrntyClaimHeaderText` |  | |  | `h_pntext` |  |  |
+| `WrntyClaimCreationTime` |  | |  | `creatime` |  |  |
+| `WrntyClaimSourceObjectNumber` |  | |  | `source_object` |  |  |
+| `WrntyClaimSource` |  | |  | `claim_source` |  |  |
+| `WrntyClaimDamageDate` |  | |  | `damage_date` |  |  |
+| `WrntyClaimRegistrationDate` |  | |  | `registration_date` |  |  |
+| `WrntyClaimRepairDate` |  | |  | `repair_date` |  |  |
+| `WrntyClaimRepairEndDate` |  | |  | `repair_end_date` |  |  |
+| `WarrantyClaimMileage` |  | |  | `mileage` |  |  |
+| `WarrantyClaimMileageUnit` |  | |  | `m_unit` |  |  |
+| `WrntyClmOperatingDurationInHrs` |  | |  | `operating_hours` |  |  |
+| `WrntyClmOperatingDurationUnit` |  | |  | `o_unit` |  |  |
+| `WarrantyCustomerCoverageType` |  | |  | `coverage_type` |  |  |
+| `WrntyCustClmProcessingStatus` |  | |  | `astate` |  |  |
+| `WrntyCustClaimRespPerson` |  | |  | `clerk` |  |  |
+| `WarrantyCustomerClaimGroup` |  | |  | `clmgrp` |  |  |
+| `WarrantyCustomerClaimIsClosed` |  | |  | `closed` |  |  |
+| `WrntyCustomerClaimClosedDate` |  | |  | `close_date` |  |  |
+| `WarrantyCustomer` |  | |  | `parnr` |  |  |
+| `WarrantyCustomerRole` |  | |  | `cast( parvw as parvw_unv preserving type )` |  |  |
+| `WarrantyCustomerApplicationLog` |  | |  | `cast(log_handle as wty_log_handle preserving type )` |  |  |
+| `WarrantyCustClmApplLogMessage` |  | |  | `log_message` |  |  |
+| `WrntySupplierCoverageType` |  | |  | `coverage_type_sup` |  |  |
+| `WrntySuplrClmProcessingStatus` |  | |  | `astate_sup` |  |  |
+| `WrntySuplrClaimRespPerson` |  | |  | `clerk_sup` |  |  |
+| `WrntySupplierClaimGroup` |  | |  | `clmgrp_sup` |  |  |
+| `WrntySupplierClaimIsClosed` |  | |  | `closed_sup` |  |  |
+| `WrntySupplierClaimClosedDate` |  | |  | `closed_date_sup` |  |  |
+| `WrntySupplier` |  | |  | `parnr_sup` |  |  |
+| `WrntySupplierRole` |  | |  | `cast( parvw_sup as parvw_unv preserving type )` |  |  |
+| `WrntySupplierApplicationLog` |  | |  | `cast(log_handle_sup as wty_log_handle preserving type )` |  |  |
+| `WrntySuplrClmApplLogMessage` |  | |  | `cast( log_message_sup as wty_balloghndl_msg_sup preserving type)` |  |  |
+| `WarrantyClaimChangeDateTime` |  | |  | `timstmp` |  |  |
+| `WrntyClaimCreationDate` |  | |  | `creadat` |  |  |
+| `CreatedByUser` |  | |  | `creaby` |  |  |
+| `WrntyClaimChangedDate` |  | |  | `chngdat` |  |  |
+| `LastChangedByUser` |  | |  | `chngby` |  |  |
+| `_WrntyClaimItem` | | ✓ | | | | |
+| `_WrntyClaimVersion` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ResponsiblePerson` | | ✓ | | | | |
+| `_CustResponsiblePerson` | | ✓ | | | | |
+| `_ProcessingStatus` | | ✓ | | | | |
+| `_CustProcessingStatus` | | ✓ | | | | |
+| `_ClaimType` | | ✓ | | | | |
+| `_ObjectType` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_SupCoverageType` | | ✓ | | | | |
+| `_CustCoverageType` | | ✓ | | | | |
 
 ## Associations
 

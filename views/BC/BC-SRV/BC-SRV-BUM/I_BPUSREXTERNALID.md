@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BPIdentificationType` | ✓ | |  | `type` |
-| `BPIdentificationNumber` | ✓ | |  | `idnumber` |
-| `ValidityStartDate` |  | |  | `valid_date_from` |
-| `ValidityEndDate` |  | |  | `valid_date_to` |
-| `_BusinessUserBasic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BPIdentificationType` | ✓ | |  | `type` |  |  |
+| `BPIdentificationNumber` | ✓ | |  | `idnumber` |  |  |
+| `ValidityStartDate` |  | |  | `valid_date_from` |  |  |
+| `ValidityEndDate` |  | |  | `valid_date_to` |  |  |
+| `_BusinessUserBasic` | | ✓ | | | | |
 
 ## Associations
 

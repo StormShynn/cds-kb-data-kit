@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ObjectDependencyName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ObjectDependencyStatus` |  | |  |  |
-| `ObjectDependencyGroup` |  | |  |  |
-| `ObjectDependencyType` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_ObjectDependency` | | ✓ | | |
-| `_HistoricalText` | | ✓ | | |
-| `_SourceCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectDependencyName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ObjectDependencyStatus` |  | |  |  |  |  |
+| `ObjectDependencyGroup` |  | |  |  |  |  |
+| `ObjectDependencyType` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_ObjectDependency` | | ✓ | | | | |
+| `_HistoricalText` | | ✓ | | | | |
+| `_SourceCode` | | ✓ | | | | |
 
 ## Source Code
 

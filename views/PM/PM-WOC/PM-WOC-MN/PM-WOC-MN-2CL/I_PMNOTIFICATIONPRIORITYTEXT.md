@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintPriority` | ✓ | |  | `priok` |
-| `MaintPriorityType` | ✓ | |  | `artpr` |
-| `Language` | ✓ | |  | `spras` |
-| `MaintPriorityDesc` |  | |  | `priokx` |
-| `_PMNotificationPriority` | | ✓ | | |
-| `_PMNotificationPriorityType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintPriority` | ✓ | |  | `priok` |  |  |
+| `MaintPriorityType` | ✓ | |  | `artpr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaintPriorityDesc` |  | |  | `priokx` |  |  |
+| `_PMNotificationPriority` | | ✓ | | | | |
+| `_PMNotificationPriorityType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

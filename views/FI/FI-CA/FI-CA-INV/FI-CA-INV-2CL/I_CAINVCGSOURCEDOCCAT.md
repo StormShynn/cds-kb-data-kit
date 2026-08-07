@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgSourceDocumentCat` | ✓ | |  | `srcdoccat` |
-| `CAInvcgSourceDocumentSemObj` |  | |  | `semantic_object` |
-| `_CAInvcgSourceDocCatText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgSourceDocumentCat` | ✓ | |  | `srcdoccat` |  |  |
+| `CAInvcgSourceDocumentSemObj` |  | |  | `semantic_object` |  |  |
+| `_CAInvcgSourceDocCatText` | | ✓ | | | | |
 
 ## Associations
 

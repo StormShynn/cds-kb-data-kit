@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADunningNoticeGroup` | ✓ | |  | `mgrup` |
-| `Language` | ✓ | |  | `spras` |
-| `CADunningNoticeGroupName` |  | |  | `mtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADunningNoticeGroup` | ✓ | |  | `mgrup` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CADunningNoticeGroupName` |  | |  | `mtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

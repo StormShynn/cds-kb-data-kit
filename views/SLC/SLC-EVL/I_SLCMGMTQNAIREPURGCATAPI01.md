@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SLCQnaireUUID` | ✓ | |  | `SLCQnairePurgCategoryUUID` |
-| `SLCQnairePurgCategoryUUID` |  | |  | `SLCQnaireUUID` |
-| `PurgCatUUID` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SLCQnaireUUID` | ✓ | |  | `SLCQnairePurgCategoryUUID` |  |  |
+| `SLCQnairePurgCategoryUUID` |  | |  | `SLCQnaireUUID` |  |  |
+| `PurgCatUUID` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CashFlowCalculationCategory` | ✓ | |  | `cast( CashFlowCalcCategoryText.sberfima as tfm_calculation_category preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `CashFlowCalcCategoryName` |  | |  | `cast( CashFlowCalcCategoryText.xberfima as tfm_calculation_category_name preserving type )` |
-| `_ValueHelp` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CashFlowCalculationCategory` | ✓ | |  | `cast( CashFlowCalcCategoryText.sberfima as tfm_calculation_category preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CashFlowCalcCategoryName` |  | |  | `cast( CashFlowCalcCategoryText.xberfima as tfm_calculation_category_name preserving type )` |  |  |
+| `_ValueHelp` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

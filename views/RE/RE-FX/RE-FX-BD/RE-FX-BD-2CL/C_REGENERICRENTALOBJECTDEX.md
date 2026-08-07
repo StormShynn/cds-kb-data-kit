@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REGenericRentalObjectUUID` | ✓ | |  |  |
-| `REGenericRentalObjectType` |  | |  |  |
-| `InternalRealEstateNumber` |  | |  |  |
-| `REStatusObject` |  | |  |  |
-| `REGenericRentalObjectOID` |  | |  |  |
-| `REGenericRentalObjectNumber` |  | |  |  |
-| `REGnrcRntlObjectAlternativeID` |  | |  |  |
-| `REGenericRentalObjectName` |  | |  |  |
-| `REIdentificationKey` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `REAuthorizationGroup` |  | |  |  |
-| `REGnrcRentalObjUsageCategory` |  | |  |  |
-| `REGenericRentalObjectUsageType` |  | |  |  |
-| `REGenericRentalObjParentUUID` |  | |  |  |
-| `REGnrcRentalObjPortfolioID` |  | |  |  |
-| `REGnrcRentalObjOwnershipID` |  | |  |  |
-| `RERentableObjectCategory` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REGenericRentalObjectUUID` | ✓ | |  |  |  |  |
+| `REGenericRentalObjectType` |  | |  |  |  |  |
+| `InternalRealEstateNumber` |  | |  |  |  |  |
+| `REStatusObject` |  | |  |  |  |  |
+| `REGenericRentalObjectOID` |  | |  |  |  |  |
+| `REGenericRentalObjectNumber` |  | |  |  |  |  |
+| `REGnrcRntlObjectAlternativeID` |  | |  |  |  |  |
+| `REGenericRentalObjectName` |  | |  |  |  |  |
+| `REIdentificationKey` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `REAuthorizationGroup` |  | |  |  |  |  |
+| `REGnrcRentalObjUsageCategory` |  | |  |  |  |  |
+| `REGenericRentalObjectUsageType` |  | |  |  |  |  |
+| `REGenericRentalObjParentUUID` |  | |  |  |  |  |
+| `REGnrcRentalObjPortfolioID` |  | |  |  |  |  |
+| `REGnrcRentalObjOwnershipID` |  | |  |  |  |  |
+| `RERentableObjectCategory` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
 
 ## Source Code
 

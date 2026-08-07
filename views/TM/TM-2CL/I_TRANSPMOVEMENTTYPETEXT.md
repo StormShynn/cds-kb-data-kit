@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MovementType` | ✓ | |  | `movem_type` |
-| `Language` | ✓ | |  | `langu` |
-| `MovementTypeDescription` |  | |  | `cast( description_s as /scmtms/vdm_movement_type_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_MovementType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MovementType` | ✓ | |  | `movem_type` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `MovementTypeDescription` |  | |  | `cast( description_s as /scmtms/vdm_movement_type_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_MovementType` | | ✓ | | | | |
 
 ## Associations
 

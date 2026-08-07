@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CndnValueZeroProcgCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as val_zero )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnValueZeroProcgCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as val_zero )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -38,18 +38,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Productid` | ✓ | |  |  |
-| `Bomid` | ✓ | |  |  |
-| `Bomname` |  | |  |  |
-| `LastChangedAt` |  | |  |  |
-| `CreatedBy` |  | |  |  |
-| `CreatedAt` |  | |  |  |
-| `LocalLastChangedBy` |  | |  |  |
-| `LastChangedBy` |  | |  |  |
-| `LocalLastChangedAt` |  | |  |  |
-| `_prod` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Productid` | ✓ | |  |  |  |  |
+| `Bomid` | ✓ | |  |  |  |  |
+| `Bomname` |  | |  |  |  |  |
+| `LastChangedAt` |  | |  |  |  |  |
+| `CreatedBy` |  | |  |  |  |  |
+| `CreatedAt` |  | |  |  |  |  |
+| `LocalLastChangedBy` |  | |  |  |  |  |
+| `LastChangedBy` |  | |  |  |  |  |
+| `LocalLastChangedAt` |  | |  |  |  |  |
+| `_prod` | | ✓ | | | | |
 
 ## Source Code
 

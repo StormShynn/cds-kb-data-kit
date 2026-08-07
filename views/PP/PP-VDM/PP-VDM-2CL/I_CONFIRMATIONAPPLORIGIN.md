@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConfirmationApplicationOrigin` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as ru_orina preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConfirmationApplicationOrigin` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as ru_orina preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

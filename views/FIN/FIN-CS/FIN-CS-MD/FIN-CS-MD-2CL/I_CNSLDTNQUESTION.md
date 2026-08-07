@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationQuestion` | ✓ | | `_Source` | `question` |
-| `ConsolidationQuestionType` |  | | `_Source` | `question_type` |
-| `CnsldtnQstnAreMultiAnswAllowed` |  | | `_Source` | `are_multiple_answers_allowed` |
-| `CnsldtnQstnMaxNrOfAllwdAnswers` |  | | `_Source` | `max_allowed_answers` |
-| `CnsldtnQstnMinNrOfRqdAnswers` |  | | `_Source` | `min_required_answers` |
-| `_AnswerAssignment` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationQuestion` | ✓ | | `_Source` | `question` |  |  |
+| `ConsolidationQuestionType` |  | | `_Source` | `question_type` |  |  |
+| `CnsldtnQstnAreMultiAnswAllowed` |  | | `_Source` | `are_multiple_answers_allowed` |  |  |
+| `CnsldtnQstnMaxNrOfAllwdAnswers` |  | | `_Source` | `max_allowed_answers` |  |  |
+| `CnsldtnQstnMinNrOfRqdAnswers` |  | | `_Source` | `min_required_answers` |  |  |
+| `_AnswerAssignment` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

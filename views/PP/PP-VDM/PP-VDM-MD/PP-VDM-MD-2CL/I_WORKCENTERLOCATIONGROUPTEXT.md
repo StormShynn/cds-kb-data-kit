@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterLocationGroup` | ✓ | |  | `ortgr` |
-| `WorkCenterPlant` | ✓ | |  | `werks` |
-| `Language` | ✓ | |  | `spras` |
-| `WorkCenterLocationGroupName` |  | |  | `txt` |
-| `_Plant` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterLocationGroup` | ✓ | |  | `ortgr` |  |  |
+| `WorkCenterPlant` | ✓ | |  | `werks` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `WorkCenterLocationGroupName` |  | |  | `txt` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

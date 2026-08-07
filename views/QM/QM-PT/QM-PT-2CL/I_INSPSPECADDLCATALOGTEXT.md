@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `InspSpecAdditionalCatalog` | ✓ | |  | `InspectionCatalog` |
-| `InspSpecAdditionalCatalogText` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `InspSpecAdditionalCatalog` | ✓ | |  | `InspectionCatalog` |  |  |
+| `InspSpecAdditionalCatalogText` |  | |  |  |  |  |
 
 ## Source Code
 

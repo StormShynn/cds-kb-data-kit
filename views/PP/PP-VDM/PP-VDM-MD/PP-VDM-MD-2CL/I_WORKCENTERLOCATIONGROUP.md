@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterPlant` | ✓ | |  | `werks` |
-| `WorkCenterLocationGroup` | ✓ | |  | `ortgr` |
-| `_Plant` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterPlant` | ✓ | |  | `werks` |  |  |
+| `WorkCenterLocationGroup` | ✓ | |  | `ortgr` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

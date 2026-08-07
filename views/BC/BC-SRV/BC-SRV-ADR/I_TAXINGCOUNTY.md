@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |
-| `Region` | ✓ | |  | `regio` |
-| `TaxingCounty` | ✓ | |  | `counc` |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |  |  |
+| `Region` | ✓ | |  | `regio` |  |  |
+| `TaxingCounty` | ✓ | |  | `counc` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

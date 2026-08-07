@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CaseType` | ✓ | |  | `cast( case_type as scmgcase_type preserving type )` |
-| `DisputeCaseRootCause` | ✓ | |  | `cast( root_ccode as udm_root_ccode preserving type )` |
-| `Language` | ✓ | |  | `langu` |
-| `CaseRootCauseDescription` |  | |  | `description` |
-| `_CaseType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseType` | ✓ | |  | `cast( case_type as scmgcase_type preserving type )` |  |  |
+| `DisputeCaseRootCause` | ✓ | |  | `cast( root_ccode as udm_root_ccode preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CaseRootCauseDescription` |  | |  | `description` |  |  |
+| `_CaseType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralRequestForQuotation` | ✓ | |  |  |
-| `CentralRequestForQuotationItem` | ✓ | |  |  |
-| `DistributionKey` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `Currency` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `CntrlPurgDistributionInPercent` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `PurgDocItmDistrLineDeltnCode` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `DistributionType` |  | |  |  |
-| `ProcurementHubSourceSystem` |  | |  |  |
-| `ProcmtHubPurchaseRequisition` |  | |  |  |
-| `ProcmtHubPurRequisitionItem` |  | |  |  |
-| `PurReqnReleaseStatus` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_CentralReqForQuotationItem` | | ✓ | | |
-| `_CntrlRFQ` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralRequestForQuotation` | ✓ | |  |  |  |  |
+| `CentralRequestForQuotationItem` | ✓ | |  |  |  |  |
+| `DistributionKey` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `CntrlPurgDistributionInPercent` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `PurgDocItmDistrLineDeltnCode` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `DistributionType` |  | |  |  |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |  |  |
+| `ProcmtHubPurchaseRequisition` |  | |  |  |  |  |
+| `ProcmtHubPurRequisitionItem` |  | |  |  |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_CentralReqForQuotationItem` | | ✓ | | | | |
+| `_CntrlRFQ` | | ✓ | | | | |
 
 ## Source Code
 

@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  |  |
-| `PartnerCompany` |  | |  | `TradingPartner` |
-| `AuthorizationGroup` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  |  |  |  |
+| `PartnerCompany` |  | |  | `TradingPartner` |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
 
 ## Source Code
 

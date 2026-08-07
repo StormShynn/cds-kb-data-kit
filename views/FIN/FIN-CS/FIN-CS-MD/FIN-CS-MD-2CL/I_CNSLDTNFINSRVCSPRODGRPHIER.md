@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnFinSrvcsProdGroupHier` | ✓ | |  | `cast(_Hierarchy.UniversalHierarchy as fincs_finsrvcsprodgrphier preserving type )` |
-| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
-| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
-| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnFinSrvcsProdGroupHier` | ✓ | |  | `cast(_Hierarchy.UniversalHierarchy as fincs_finsrvcsprodgrphier preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |  |  |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |  |  |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

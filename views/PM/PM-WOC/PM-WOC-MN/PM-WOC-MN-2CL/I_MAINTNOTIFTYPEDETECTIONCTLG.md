@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NotificationType` | ✓ | |  | `qmart` |
-| `MaintNotifDetectionCatalog` |  | |  | `detectioncatalog` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NotificationType` | ✓ | |  | `qmart` |  |  |
+| `MaintNotifDetectionCatalog` |  | |  | `detectioncatalog` |  |  |
 
 ## Source Code
 

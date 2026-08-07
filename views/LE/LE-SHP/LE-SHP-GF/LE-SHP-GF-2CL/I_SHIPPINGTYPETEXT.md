@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShippingType` | ✓ | |  | `vsart` |
-| `Language` | ✓ | |  | `spras` |
-| `ShippingTypeName` |  | |  | `bezei` |
-| `_ShippingType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShippingType` | ✓ | |  | `vsart` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ShippingTypeName` |  | |  | `bezei` |  |  |
+| `_ShippingType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

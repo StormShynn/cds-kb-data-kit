@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalLocation` | ✓ | |  |  |
-| `ClassInternalID` | ✓ | |  |  |
-| `CharcInternalID` | ✓ | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `Characteristic` |  | |  |  |
-| `CharcDataType` |  | |  |  |
-| `KeyDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ClassType` |  | |  |  |
-| `ClassMaintAuthGrp` |  | |  |  |
-| `ClassClassfctnAuthGrp` |  | |  |  |
-| `CharcMaintAuthGrp` |  | |  |  |
-| `Class` |  | |  |  |
-| `_Value` | | ✓ | | |
-| `_Class` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |  |  |
+| `ClassInternalID` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `Characteristic` |  | |  |  |  |  |
+| `CharcDataType` |  | |  |  |  |  |
+| `KeyDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ClassType` |  | |  |  |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |  |  |
+| `CharcMaintAuthGrp` |  | |  |  |  |  |
+| `Class` |  | |  |  |  |  |
+| `_Value` | | ✓ | | | | |
+| `_Class` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
 
 ## Source Code
 

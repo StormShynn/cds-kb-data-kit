@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfAccounts` | ✓ | |  | `ktopl` |
-| `FromGLAccount` | ✓ | |  | `cast( from_account as saknr_v )` |
-| `ToGLAccount` | ✓ | |  | `cast( to_account as saknr_b )` |
-| `CL_GLAccountGroup` |  | |  | `acct_code` |
-| `CL_GLAccountType` |  | |  | `acct_classification` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `ktopl` |  |  |
+| `FromGLAccount` | ✓ | |  | `cast( from_account as saknr_v )` |  |  |
+| `ToGLAccount` | ✓ | |  | `cast( to_account as saknr_b )` |  |  |
+| `CL_GLAccountGroup` |  | |  | `acct_code` |  |  |
+| `CL_GLAccountType` |  | |  | `acct_classification` |  |  |
 
 ## Source Code
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinSGLErrorItemSeverity` | ✓ | |  | `cast( domvalue_l as char1 )` |
-| `FinSGLErrorItemSeverityText` |  | |  | `cast( ddtext as char10 )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinSGLErrorItemSeverity` | ✓ | |  | `cast( domvalue_l as char1 )` | `CHAR(1)` | Single-Character Flag |
+| `FinSGLErrorItemSeverityText` |  | |  | `cast( ddtext as char10 )` | `CHAR(10)` | Character Field with Length 10 |
 
 ## Source Code
 

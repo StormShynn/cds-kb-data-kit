@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingRelevanceCode` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 1)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BillingRelevanceCodeName` |  | |  | `ddtext` |
-| `_BillingRelevanceCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingRelevanceCode` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 1)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BillingRelevanceCodeName` |  | |  | `ddtext` |  |  |
+| `_BillingRelevanceCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

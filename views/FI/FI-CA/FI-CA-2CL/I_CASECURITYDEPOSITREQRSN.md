@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASecurityDepositRequestReason` | ✓ | |  | `reason` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASecurityDepositRequestReason` | ✓ | |  | `reason` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

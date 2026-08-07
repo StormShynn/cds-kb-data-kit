@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OutputScenario` |  | |  | `ehdgm_output_scenario` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OutputScenario` |  | |  | `ehdgm_output_scenario` |  |  |
 
 ## Source Code
 

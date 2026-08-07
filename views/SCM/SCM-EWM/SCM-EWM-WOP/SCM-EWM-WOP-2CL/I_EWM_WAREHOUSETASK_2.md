@@ -29,150 +29,150 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMWarehouse` | ✓ | |  |  |
-| `WarehouseTask` | ✓ | |  |  |
-| `WarehouseTaskItem` | ✓ | |  | `cast('0000' as tapos_no_conv preserving type )` |
-| `IsHandlingUnitWarehouseTask` |  | |  |  |
-| `WarehouseProcessType` |  | |  |  |
-| `WarehouseProcessCategory` |  | |  |  |
-| `StorageProcess` |  | |  |  |
-| `ExternalStorageProcessStep` |  | |  |  |
-| `WarehouseTaskStatus` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `WhseTaskCrtnUTCDateTime` |  | |  |  |
-| `WarehouseTaskCodes` |  | |  |  |
-| `ExecutingResource` |  | |  |  |
-| `WarehouseMovementsReason` |  | |  |  |
-| `EWMWarehouseTaskPriority` |  | |  |  |
-| `StockItemUUID` |  | |  |  |
-| `CurrentNumberOfKeyTable` |  | |  |  |
-| `ProductUUID` |  | |  |  |
-| `ProductName` |  | | `_Material` | `Product` |
-| `BatchUUID` |  | |  |  |
-| `EWMStockType` |  | |  |  |
-| `StockDocumentCategory` |  | |  |  |
-| `StockDocumentNumber` |  | |  | `case StockDocumentCategory when 'SOS' then StockDocumentNumber when 'PJS' then WBSElementExternalID else StockDocumentNumber end` |
-| `StockItemNumber` |  | |  |  |
-| `EWMDocumentCategory` |  | |  |  |
-| `EWMStockUsage` |  | |  |  |
-| `EWMStockOwner` |  | |  |  |
-| `StockOwnerPartnerRole` |  | |  |  |
-| `EntitledToDisposeParty` |  | |  |  |
-| `EntitledToDisposePartnerRole` |  | |  |  |
-| `CounterForStockSeparation` |  | |  |  |
-| `Batch` |  | |  |  |
-| `RequirementSegment` |  | |  |  |
-| `StockSegment` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `AlternativeUnit` |  | |  |  |
-| `TargetQuantityInBaseUnit` |  | |  |  |
-| `TargetQuantityInAltvUnit` |  | |  |  |
-| `WhseTaskRetentionQuantity` |  | |  |  |
-| `HandlingUnitType` |  | |  |  |
-| `HandlingUnitTypeGroup` |  | |  |  |
-| `NetWeight` |  | |  |  |
-| `WhseTaskNetWeightUnitOfMeasure` |  | |  |  |
-| `WhseTaskNetVolume` |  | |  |  |
-| `WhseTaskNetVolumeUnitOfMeasure` |  | |  |  |
-| `WhseTaskCapacityConsumption` |  | |  |  |
-| `PutAwayPhysInventoryIsPlanned` |  | |  | `cast( PutAwayPhysInventoryIsPlanned as abap_boolean )` |
-| `WhseTaskLowStockCheckIsPlanned` |  | |  | `cast( WhseTaskLowStockCheckIsPlanned as abap_boolean )` |
-| `EWMPutAwayPhysInvtryPlnSts` |  | |  |  |
-| `EWMWhseTskLowStkChkPlnSts` |  | |  |  |
-| `EWMPutAwayPhysInvtryExecSts` |  | |  | `cast( '' as /scwm/de_place_inv )` |
-| `EWMWhseTskLowStkChkExecSts` |  | |  | `cast( '' as /scwm/de_lowchk_inv )` |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `WhseTaskGoodsReceiptDateTime` |  | |  |  |
-| `CountryOfOrigin` |  | |  |  |
-| `HazardousSubstanceIndicator` |  | |  |  |
-| `WhseTaskQualityInspectionType` |  | |  |  |
-| `QualityInspectionDocUUID` |  | |  |  |
-| `StockIdentificationOfWhseTask` |  | |  |  |
-| `EWMConsolidationGroup` |  | |  |  |
-| `SourceStorageType` |  | |  |  |
-| `SourceStorageSection` |  | |  |  |
-| `SourceStorageBin` |  | |  |  |
-| `SourceHndlgUnitLogicalPosition` |  | |  |  |
-| `SourceResource` |  | |  |  |
-| `SourceTransportationUnit` |  | |  |  |
-| `EWMSourceLocationType` |  | |  |  |
-| `SourceHandlingUnitUUID` |  | |  |  |
-| `SourceHandlingUnit` |  | |  |  |
-| `DestinationStorageType` |  | |  |  |
-| `DestinationStorageSection` |  | |  |  |
-| `DestinationStorageBin` |  | |  |  |
-| `DestHndlgUnitLogicalPosition` |  | |  |  |
-| `DestinationResource` |  | |  |  |
-| `DestinationTransportationUnit` |  | |  |  |
-| `EWMDestinationLocationType` |  | |  |  |
-| `DestinationHandlingUnitUUID` |  | |  |  |
-| `DestinationHandlingUnit` |  | |  |  |
-| `WhseTaskDestStorageBinDtmndBy` |  | |  |  |
-| `WrhsTaskSubsystemTransmn` |  | |  |  |
-| `WhseTaskPlannedProcessingTime` |  | |  |  |
-| `WhseTaskProcgTimeDetnTimeUnit` |  | |  |  |
-| `WhseTaskRefToValueAddedService` |  | |  |  |
-| `BatchChangeIsNotAllowed` |  | |  |  |
-| `EWMReferenceDocumentCategory` |  | |  |  |
-| `ReferenceDocumentUUID` |  | |  |  |
-| `ReferenceDocumentItemUUID` |  | |  |  |
-| `Wave` |  | |  |  |
-| `EWMWave` |  | |  |  |
-| `WaveItem` |  | |  |  |
-| `EWMWaveItem` |  | |  |  |
-| `WhseTaskTwoStepPickingType` |  | |  |  |
-| `WhseTaskTwoStepPickingRlvnce` |  | |  |  |
-| `DocumentReltdStockDocCat` |  | |  |  |
-| `DocumentReltdStockDocUUID` |  | |  |  |
-| `DocumentReltdStockDocItemUUID` |  | |  |  |
-| `StockIdentificationNumber` |  | |  |  |
-| `KitItemIsCreatedAutomatically` |  | |  |  |
-| `WarehouseTaskUUID` |  | |  |  |
-| `IsDocumentaryBatch` |  | |  | `cast( IsDocumentaryBatch as abap_boolean )` |
-| `ConveyorTechniqueSegment` |  | |  |  |
-| `EWMProductionSupplyArea` |  | |  |  |
-| `ProductionOrder` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `WhseTaskCrtnWhseTmznDateTime` |  | |  |  |
-| `WhseTaskChgWhseTmznDateTime` |  | |  |  |
-| `WhseTaskConfWhseTmznDateTime` |  | |  | `cast ('000000000000000' as timestamp)` |
-| `WhseTskPlndClsgWhseTmznDteTme` |  | |  |  |
-| `Kanban` |  | |  |  |
-| `StockKeepingAlternativeUoM` |  | |  |  |
-| `ActivityArea` |  | |  |  |
-| `Queue` |  | |  |  |
-| `WarehouseOrder` |  | |  |  |
-| `LogicalRecordProgramName` |  | |  |  |
-| `LogicalRecordTransactionCode` |  | |  |  |
-| `EWMDummyFuncForStructureExtn` |  | |  |  |
-| `CertificateText` |  | |  |  |
-| `WhseTaskLastChgUTCDateTime` |  | |  |  |
-| `WarehouseActivityType` |  | |  |  |
-| `WhseTaskPlannedClosingDateTime` |  | |  |  |
-| `ConfirmedByUser` |  | |  | `cast ('' as abap.char( 12 ))` |
-| `ConfirmationUTCDateTime` |  | |  | `cast ('000000000000000' as timestamp)` |
-| `Processor` |  | |  | `cast ('' as abap.char( 12 ))` |
-| `WarehouseTaskExceptionCode` |  | |  | `cast ('' as abap.char( 4 ))` |
-| `BusinessContext` |  | |  | `cast ('' as abap.char( 3 ))` |
-| `BusinessContextExecutionStep` |  | |  | `cast ('' as abap.char( 2 ))` |
-| `ExecutingResourceGroup` |  | |  | `cast ('' as abap.char( 4 ))` |
-| `ExecutingResourceType` |  | |  | `cast ('' as abap.char( 4 ))` |
-| `ActualQuantityInBaseUnit` |  | |  | `cast(0 as abap.quan( 31, 14 ))` |
-| `ActualQuantityInAltvUnit` |  | |  | `cast(0 as abap.quan( 31, 14 ))` |
-| `DifferenceQuantityInAltvUnit` |  | |  | `cast(0 as abap.quan( 31, 14 ))` |
-| `DifferenceQuantityInBaseUnit` |  | |  | `cast(0 as abap.quan( 31, 14 ))` |
-| `WhseTaskSortingSequenceValue` |  | |  |  |
-| `WarehouseOrderSequenceValue` |  | |  |  |
-| `WarehouseOrderActivityArea` |  | |  |  |
-| `WarehouseOrderCreationRule` |  | |  |  |
-| `HomogeneousFullPalletPick` |  | |  |  |
-| `EWMRoute` |  | |  |  |
-| `EWMWaveCategory` |  | |  |  |
-| `EWMCanceledWarehouseTask` |  | |  | `cast( '000000000000' as abap.numc( 12 ) )` |
-| `_Material` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  |  |  |  |
+| `WarehouseTask` | ✓ | |  |  |  |  |
+| `WarehouseTaskItem` | ✓ | |  | `cast('0000' as tapos_no_conv preserving type )` |  |  |
+| `IsHandlingUnitWarehouseTask` |  | |  |  |  |  |
+| `WarehouseProcessType` |  | |  |  |  |  |
+| `WarehouseProcessCategory` |  | |  |  |  |  |
+| `StorageProcess` |  | |  |  |  |  |
+| `ExternalStorageProcessStep` |  | |  |  |  |  |
+| `WarehouseTaskStatus` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `WhseTaskCrtnUTCDateTime` |  | |  |  |  |  |
+| `WarehouseTaskCodes` |  | |  |  |  |  |
+| `ExecutingResource` |  | |  |  |  |  |
+| `WarehouseMovementsReason` |  | |  |  |  |  |
+| `EWMWarehouseTaskPriority` |  | |  |  |  |  |
+| `StockItemUUID` |  | |  |  |  |  |
+| `CurrentNumberOfKeyTable` |  | |  |  |  |  |
+| `ProductUUID` |  | |  |  |  |  |
+| `ProductName` |  | | `_Material` | `Product` |  |  |
+| `BatchUUID` |  | |  |  |  |  |
+| `EWMStockType` |  | |  |  |  |  |
+| `StockDocumentCategory` |  | |  |  |  |  |
+| `StockDocumentNumber` |  | |  | `case StockDocumentCategory when 'SOS' then StockDocumentNumber when 'PJS' then WBSElementExternalID else StockDocumentNumber end` |  |  |
+| `StockItemNumber` |  | |  |  |  |  |
+| `EWMDocumentCategory` |  | |  |  |  |  |
+| `EWMStockUsage` |  | |  |  |  |  |
+| `EWMStockOwner` |  | |  |  |  |  |
+| `StockOwnerPartnerRole` |  | |  |  |  |  |
+| `EntitledToDisposeParty` |  | |  |  |  |  |
+| `EntitledToDisposePartnerRole` |  | |  |  |  |  |
+| `CounterForStockSeparation` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `RequirementSegment` |  | |  |  |  |  |
+| `StockSegment` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `AlternativeUnit` |  | |  |  |  |  |
+| `TargetQuantityInBaseUnit` |  | |  |  |  |  |
+| `TargetQuantityInAltvUnit` |  | |  |  |  |  |
+| `WhseTaskRetentionQuantity` |  | |  |  |  |  |
+| `HandlingUnitType` |  | |  |  |  |  |
+| `HandlingUnitTypeGroup` |  | |  |  |  |  |
+| `NetWeight` |  | |  |  |  |  |
+| `WhseTaskNetWeightUnitOfMeasure` |  | |  |  |  |  |
+| `WhseTaskNetVolume` |  | |  |  |  |  |
+| `WhseTaskNetVolumeUnitOfMeasure` |  | |  |  |  |  |
+| `WhseTaskCapacityConsumption` |  | |  |  |  |  |
+| `PutAwayPhysInventoryIsPlanned` |  | |  | `cast( PutAwayPhysInventoryIsPlanned as abap_boolean )` |  |  |
+| `WhseTaskLowStockCheckIsPlanned` |  | |  | `cast( WhseTaskLowStockCheckIsPlanned as abap_boolean )` |  |  |
+| `EWMPutAwayPhysInvtryPlnSts` |  | |  |  |  |  |
+| `EWMWhseTskLowStkChkPlnSts` |  | |  |  |  |  |
+| `EWMPutAwayPhysInvtryExecSts` |  | |  | `cast( '' as /scwm/de_place_inv )` |  |  |
+| `EWMWhseTskLowStkChkExecSts` |  | |  | `cast( '' as /scwm/de_lowchk_inv )` |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `WhseTaskGoodsReceiptDateTime` |  | |  |  |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `HazardousSubstanceIndicator` |  | |  |  |  |  |
+| `WhseTaskQualityInspectionType` |  | |  |  |  |  |
+| `QualityInspectionDocUUID` |  | |  |  |  |  |
+| `StockIdentificationOfWhseTask` |  | |  |  |  |  |
+| `EWMConsolidationGroup` |  | |  |  |  |  |
+| `SourceStorageType` |  | |  |  |  |  |
+| `SourceStorageSection` |  | |  |  |  |  |
+| `SourceStorageBin` |  | |  |  |  |  |
+| `SourceHndlgUnitLogicalPosition` |  | |  |  |  |  |
+| `SourceResource` |  | |  |  |  |  |
+| `SourceTransportationUnit` |  | |  |  |  |  |
+| `EWMSourceLocationType` |  | |  |  |  |  |
+| `SourceHandlingUnitUUID` |  | |  |  |  |  |
+| `SourceHandlingUnit` |  | |  |  |  |  |
+| `DestinationStorageType` |  | |  |  |  |  |
+| `DestinationStorageSection` |  | |  |  |  |  |
+| `DestinationStorageBin` |  | |  |  |  |  |
+| `DestHndlgUnitLogicalPosition` |  | |  |  |  |  |
+| `DestinationResource` |  | |  |  |  |  |
+| `DestinationTransportationUnit` |  | |  |  |  |  |
+| `EWMDestinationLocationType` |  | |  |  |  |  |
+| `DestinationHandlingUnitUUID` |  | |  |  |  |  |
+| `DestinationHandlingUnit` |  | |  |  |  |  |
+| `WhseTaskDestStorageBinDtmndBy` |  | |  |  |  |  |
+| `WrhsTaskSubsystemTransmn` |  | |  |  |  |  |
+| `WhseTaskPlannedProcessingTime` |  | |  |  |  |  |
+| `WhseTaskProcgTimeDetnTimeUnit` |  | |  |  |  |  |
+| `WhseTaskRefToValueAddedService` |  | |  |  |  |  |
+| `BatchChangeIsNotAllowed` |  | |  |  |  |  |
+| `EWMReferenceDocumentCategory` |  | |  |  |  |  |
+| `ReferenceDocumentUUID` |  | |  |  |  |  |
+| `ReferenceDocumentItemUUID` |  | |  |  |  |  |
+| `Wave` |  | |  |  |  |  |
+| `EWMWave` |  | |  |  |  |  |
+| `WaveItem` |  | |  |  |  |  |
+| `EWMWaveItem` |  | |  |  |  |  |
+| `WhseTaskTwoStepPickingType` |  | |  |  |  |  |
+| `WhseTaskTwoStepPickingRlvnce` |  | |  |  |  |  |
+| `DocumentReltdStockDocCat` |  | |  |  |  |  |
+| `DocumentReltdStockDocUUID` |  | |  |  |  |  |
+| `DocumentReltdStockDocItemUUID` |  | |  |  |  |  |
+| `StockIdentificationNumber` |  | |  |  |  |  |
+| `KitItemIsCreatedAutomatically` |  | |  |  |  |  |
+| `WarehouseTaskUUID` |  | |  |  |  |  |
+| `IsDocumentaryBatch` |  | |  | `cast( IsDocumentaryBatch as abap_boolean )` |  |  |
+| `ConveyorTechniqueSegment` |  | |  |  |  |  |
+| `EWMProductionSupplyArea` |  | |  |  |  |  |
+| `ProductionOrder` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `WhseTaskCrtnWhseTmznDateTime` |  | |  |  |  |  |
+| `WhseTaskChgWhseTmznDateTime` |  | |  |  |  |  |
+| `WhseTaskConfWhseTmznDateTime` |  | |  | `cast ('000000000000000' as timestamp)` |  |  |
+| `WhseTskPlndClsgWhseTmznDteTme` |  | |  |  |  |  |
+| `Kanban` |  | |  |  |  |  |
+| `StockKeepingAlternativeUoM` |  | |  |  |  |  |
+| `ActivityArea` |  | |  |  |  |  |
+| `Queue` |  | |  |  |  |  |
+| `WarehouseOrder` |  | |  |  |  |  |
+| `LogicalRecordProgramName` |  | |  |  |  |  |
+| `LogicalRecordTransactionCode` |  | |  |  |  |  |
+| `EWMDummyFuncForStructureExtn` |  | |  |  |  |  |
+| `CertificateText` |  | |  |  |  |  |
+| `WhseTaskLastChgUTCDateTime` |  | |  |  |  |  |
+| `WarehouseActivityType` |  | |  |  |  |  |
+| `WhseTaskPlannedClosingDateTime` |  | |  |  |  |  |
+| `ConfirmedByUser` |  | |  | `cast ('' as abap.char( 12 ))` |  |  |
+| `ConfirmationUTCDateTime` |  | |  | `cast ('000000000000000' as timestamp)` |  |  |
+| `Processor` |  | |  | `cast ('' as abap.char( 12 ))` |  |  |
+| `WarehouseTaskExceptionCode` |  | |  | `cast ('' as abap.char( 4 ))` |  |  |
+| `BusinessContext` |  | |  | `cast ('' as abap.char( 3 ))` |  |  |
+| `BusinessContextExecutionStep` |  | |  | `cast ('' as abap.char( 2 ))` |  |  |
+| `ExecutingResourceGroup` |  | |  | `cast ('' as abap.char( 4 ))` |  |  |
+| `ExecutingResourceType` |  | |  | `cast ('' as abap.char( 4 ))` |  |  |
+| `ActualQuantityInBaseUnit` |  | |  | `cast(0 as abap.quan( 31, 14 ))` |  |  |
+| `ActualQuantityInAltvUnit` |  | |  | `cast(0 as abap.quan( 31, 14 ))` |  |  |
+| `DifferenceQuantityInAltvUnit` |  | |  | `cast(0 as abap.quan( 31, 14 ))` |  |  |
+| `DifferenceQuantityInBaseUnit` |  | |  | `cast(0 as abap.quan( 31, 14 ))` |  |  |
+| `WhseTaskSortingSequenceValue` |  | |  |  |  |  |
+| `WarehouseOrderSequenceValue` |  | |  |  |  |  |
+| `WarehouseOrderActivityArea` |  | |  |  |  |  |
+| `WarehouseOrderCreationRule` |  | |  |  |  |  |
+| `HomogeneousFullPalletPick` |  | |  |  |  |  |
+| `EWMRoute` |  | |  |  |  |  |
+| `EWMWaveCategory` |  | |  |  |  |  |
+| `EWMCanceledWarehouseTask` |  | |  | `cast( '000000000000' as abap.numc( 12 ) )` |  |  |
+| `_Material` | | ✓ | | | | |
 
 ## Source Code
 

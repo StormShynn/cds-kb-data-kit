@@ -28,205 +28,205 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |
-| `ServiceDocument` | ✓ | |  |  |
-| `ServiceDocumentUUID` |  | |  |  |
-| `ServiceDocumentCharUUID` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocumentDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServiceDocumentTemplateType` |  | |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |
-| `ServiceDocumentCreationDate` |  | |  | `cast( tstmp_to_dats( ServiceDocCreationDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |
-| `ServiceDocumentChangedDate` |  | |  | `cast( tstmp_to_dats( ServiceDocChangedDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |
-| `ServiceDocumentCreatedByUser` |  | |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `PricingProcedure` |  | |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |
-| `SrvcDocIsMaintServiceOrder` |  | |  |  |
-| `BusinessActivityCategory` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
-| `SoldToParty` |  | |  |  |
-| `SoldToPartyCountry` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `ServiceTeam` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `ServiceEmployee` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `ServiceContractStartDateTime` |  | |  |  |
-| `ServiceContractEndDateTime` |  | |  |  |
-| `SrvcContrEarliestStartDateTime` |  | |  |  |
-| `SrvcContrLatestEndDateTime` |  | |  |  |
-| `SrvcQtanValidityStartDateTime` |  | |  |  |
-| `SrvcQtanValidityEndDateTime` |  | |  |  |
-| `SrvcDocTmplValdtyStartDateTime` |  | |  |  |
-| `SrvcDocTmplValdtyEndDateTime` |  | |  |  |
-| `SrvcDocTemplateSearchTermText` |  | |  |  |
-| `RequestedServiceStartDate` |  | |  | `cast( tstmp_to_dats( RequestedServiceStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |
-| `RequestedServiceEndDate` |  | |  | `cast( tstmp_to_dats( RequestedServiceEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |
-| `ServiceContractStartDate` |  | |  | `cast( tstmp_to_dats( ServiceContractStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |
-| `ServiceContractEndDate` |  | |  | `cast( tstmp_to_dats( ServiceContractEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |
-| `SrvcQuotationValidityStartDate` |  | |  | `cast( tstmp_to_dats( SrvcQtanValidityStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |
-| `SrvcQuotationValidityEndDate` |  | |  | `cast( tstmp_to_dats( SrvcQtanValidityEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `TaxDepartureCountry` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `CustomerTaxClassification1` |  | |  |  |
-| `CustomerTaxClassification2` |  | |  |  |
-| `CustomerTaxClassification3` |  | |  |  |
-| `CustomerTaxClassification4` |  | |  |  |
-| `CustomerTaxClassification5` |  | |  |  |
-| `CustomerTaxClassification6` |  | |  |  |
-| `CustomerTaxClassification7` |  | |  |  |
-| `CustomerTaxClassification8` |  | |  |  |
-| `CustomerTaxClassification9` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `ServiceDocumentRejectionReason` |  | |  |  |
-| `Region` |  | |  |  |
-| `ServiceDocumentStatus` |  | |  |  |
-| `ServiceDocumentHasError` |  | |  |  |
-| `ServiceDocBillingStatus` |  | |  |  |
-| `ServiceDocIsReleasedForBilling` |  | |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |
-| `SrvcDocTransferStatus` |  | |  |  |
-| `ServiceDocumentIsQuotation` |  | |  |  |
-| `ServiceDocumentIsReleased` |  | |  |  |
-| `ServiceDocumentIsRejected` |  | |  |  |
-| `ServiceConfirmationIsFinal` |  | |  |  |
-| `ServiceContractCanclnSts` |  | |  |  |
-| `MaintSrvcOrdExecutionStatus` |  | |  |  |
-| `SrvcDocExecutionStatus` |  | |  |  |
-| `SrvcDocDeliveryStatus` |  | |  |  |
-| `SrvcDocGoodsIssueStatus` |  | |  |  |
-| `SrvcDocRejectionStatus` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `ResponsibleServiceOrganization` |  | |  |  |
-| `EnterpriseServiceOrganization` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `RespyMgmtServiceTeam` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `ServiceReasonSchema` |  | |  |  |
-| `ServiceReasonCategory` |  | |  |  |
-| `ServiceDefectSchema` |  | |  |  |
-| `ServiceDefectCategory` |  | |  |  |
-| `ServiceFirstResponseByDateTime` |  | |  |  |
-| `ServiceDueByDateTime` |  | |  |  |
-| `ErlstRequestedDeliveryDateTime` |  | |  |  |
-| `RecommendedServicePriority` |  | |  |  |
-| `ServiceDocumentUrgency` |  | |  |  |
-| `ServiceDocumentImpact` |  | |  |  |
-| `ServiceEscalationLevel` |  | |  |  |
-| `ServiceDocumentProblemCategory` |  | |  |  |
-| `ServiceRisk` |  | |  |  |
-| `ServiceDocumentCanclnParty` |  | |  |  |
-| `ServiceDocumentCanclnReason` |  | |  |  |
-| `ReferenceInHouseRepair` |  | |  |  |
-| `ReferenceInHouseRepairItem` |  | |  |  |
-| `RefInHouseRepairIsExisting` |  | |  |  |
-| `SrvcDocCreditStatus` |  | |  |  |
-| `SrvcDocBslnCostPostgStatus` |  | |  |  |
-| `SrvcDocContinuousCostStatus` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `SrvcDocAcctAssgmtObjectType` |  | |  |  |
-| `SrvcDocAcctAssgmtObject` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `IncotermsPart1` |  | |  |  |
-| `IncotermsPart2` |  | |  |  |
-| `StatusProfile` |  | | `_StatusObjectWithUUID` | `StatusProfile` |
-| `_ServiceDocItem` | | ✓ | | |
-| `_ServiceDocRefObj` | | ✓ | | |
-| `_ServiceDocPredecessor` | | ✓ | | |
-| `_ServiceDocSuccessor` | | ✓ | | |
-| `_SrvcDocBPSoldToParty` | | ✓ | | |
-| `_ServiceDocLongText` | | ✓ | | |
-| `_CustMgmtPartner` | | ✓ | | |
-| `_SrvcDocHeaderLongText` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ServiceTeam` | | ✓ | | |
-| `_ServiceEmployee` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_SoldToPartyToCustomer` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_ServiceTeamHeader` | | ✓ | | |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_SrvcDocLifecycleStatus` | | ✓ | | |
-| `_ServiceDocBillingStatus` | | ✓ | | |
-| `_SrvcDocIsRelForBillgSts` | | ✓ | | |
-| `_ServiceDocumentIsOpen` | | ✓ | | |
-| `_ServiceDocHasError` | | ✓ | | |
-| `_ServiceContractCanclnSts` | | ✓ | | |
-| `_SrvcDocTransferStatus` | | ✓ | | |
-| `_BillingBlockReason` | | ✓ | | |
-| `_ActivityCategory` | | ✓ | | |
-| `_ServiceDocumentPriority` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_SrvcSEPAMandateRelevance` | | ✓ | | |
-| `_FixedPrice` | | ✓ | | |
-| `_TaxDepartureCountry` | | ✓ | | |
-| `_VATRegistrationCountry` | | ✓ | | |
-| `_SalesOrganizationOrgUnit` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
-| `_RespSrvcOrganizationOrgUnit` | | ✓ | | |
-| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_EnterpriseServiceOrg` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_SrvcDocumentRejectionReason` | | ✓ | | |
-| `_ServiceRisk` | | ✓ | | |
-| `_ServiceDocProblemCategory` | | ✓ | | |
-| `_SrvcDocCreditStatus` | | ✓ | | |
-| `_SrvcDocBslnCostPostgStatus` | | ✓ | | |
-| `_SrvcDocContinuousCostStatus` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_SrvcDocExecutionStatus` | | ✓ | | |
-| `_SrvcDocIsQuotation` | | ✓ | | |
-| `_SrvcDocIsQuotation_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |  |  |
+| `ServiceDocument` | ✓ | |  |  |  |  |
+| `ServiceDocumentUUID` |  | |  |  |  |  |
+| `ServiceDocumentCharUUID` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocumentDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceDocumentTemplateType` |  | |  |  |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocumentCreationDate` |  | |  | `cast( tstmp_to_dats( ServiceDocCreationDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |  |  |
+| `ServiceDocumentChangedDate` |  | |  | `cast( tstmp_to_dats( ServiceDocChangedDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |  |  |
+| `SrvcDocIsMaintServiceOrder` |  | |  |  |  |  |
+| `BusinessActivityCategory` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `ServiceTeam` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `ServiceEmployee` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `ServiceContractStartDateTime` |  | |  |  |  |  |
+| `ServiceContractEndDateTime` |  | |  |  |  |  |
+| `SrvcContrEarliestStartDateTime` |  | |  |  |  |  |
+| `SrvcContrLatestEndDateTime` |  | |  |  |  |  |
+| `SrvcQtanValidityStartDateTime` |  | |  |  |  |  |
+| `SrvcQtanValidityEndDateTime` |  | |  |  |  |  |
+| `SrvcDocTmplValdtyStartDateTime` |  | |  |  |  |  |
+| `SrvcDocTmplValdtyEndDateTime` |  | |  |  |  |  |
+| `SrvcDocTemplateSearchTermText` |  | |  |  |  |  |
+| `RequestedServiceStartDate` |  | |  | `cast( tstmp_to_dats( RequestedServiceStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |  |  |
+| `RequestedServiceEndDate` |  | |  | `cast( tstmp_to_dats( RequestedServiceEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |  |  |
+| `ServiceContractStartDate` |  | |  | `cast( tstmp_to_dats( ServiceContractStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |  |  |
+| `ServiceContractEndDate` |  | |  | `cast( tstmp_to_dats( ServiceContractEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |  |  |
+| `SrvcQuotationValidityStartDate` |  | |  | `cast( tstmp_to_dats( SrvcQtanValidityStartDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |  |  |
+| `SrvcQuotationValidityEndDate` |  | |  | `cast( tstmp_to_dats( SrvcQtanValidityEndDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `TaxDepartureCountry` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `CustomerTaxClassification1` |  | |  |  |  |  |
+| `CustomerTaxClassification2` |  | |  |  |  |  |
+| `CustomerTaxClassification3` |  | |  |  |  |  |
+| `CustomerTaxClassification4` |  | |  |  |  |  |
+| `CustomerTaxClassification5` |  | |  |  |  |  |
+| `CustomerTaxClassification6` |  | |  |  |  |  |
+| `CustomerTaxClassification7` |  | |  |  |  |  |
+| `CustomerTaxClassification8` |  | |  |  |  |  |
+| `CustomerTaxClassification9` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `ServiceDocumentRejectionReason` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `ServiceDocumentStatus` |  | |  |  |  |  |
+| `ServiceDocumentHasError` |  | |  |  |  |  |
+| `ServiceDocBillingStatus` |  | |  |  |  |  |
+| `ServiceDocIsReleasedForBilling` |  | |  |  |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |  |  |
+| `SrvcDocTransferStatus` |  | |  |  |  |  |
+| `ServiceDocumentIsQuotation` |  | |  |  |  |  |
+| `ServiceDocumentIsReleased` |  | |  |  |  |  |
+| `ServiceDocumentIsRejected` |  | |  |  |  |  |
+| `ServiceConfirmationIsFinal` |  | |  |  |  |  |
+| `ServiceContractCanclnSts` |  | |  |  |  |  |
+| `MaintSrvcOrdExecutionStatus` |  | |  |  |  |  |
+| `SrvcDocExecutionStatus` |  | |  |  |  |  |
+| `SrvcDocDeliveryStatus` |  | |  |  |  |  |
+| `SrvcDocGoodsIssueStatus` |  | |  |  |  |  |
+| `SrvcDocRejectionStatus` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `ResponsibleServiceOrganization` |  | |  |  |  |  |
+| `EnterpriseServiceOrganization` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `ServiceReasonSchema` |  | |  |  |  |  |
+| `ServiceReasonCategory` |  | |  |  |  |  |
+| `ServiceDefectSchema` |  | |  |  |  |  |
+| `ServiceDefectCategory` |  | |  |  |  |  |
+| `ServiceFirstResponseByDateTime` |  | |  |  |  |  |
+| `ServiceDueByDateTime` |  | |  |  |  |  |
+| `ErlstRequestedDeliveryDateTime` |  | |  |  |  |  |
+| `RecommendedServicePriority` |  | |  |  |  |  |
+| `ServiceDocumentUrgency` |  | |  |  |  |  |
+| `ServiceDocumentImpact` |  | |  |  |  |  |
+| `ServiceEscalationLevel` |  | |  |  |  |  |
+| `ServiceDocumentProblemCategory` |  | |  |  |  |  |
+| `ServiceRisk` |  | |  |  |  |  |
+| `ServiceDocumentCanclnParty` |  | |  |  |  |  |
+| `ServiceDocumentCanclnReason` |  | |  |  |  |  |
+| `ReferenceInHouseRepair` |  | |  |  |  |  |
+| `ReferenceInHouseRepairItem` |  | |  |  |  |  |
+| `RefInHouseRepairIsExisting` |  | |  |  |  |  |
+| `SrvcDocCreditStatus` |  | |  |  |  |  |
+| `SrvcDocBslnCostPostgStatus` |  | |  |  |  |  |
+| `SrvcDocContinuousCostStatus` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `SrvcDocAcctAssgmtObjectType` |  | |  |  |  |  |
+| `SrvcDocAcctAssgmtObject` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `IncotermsPart1` |  | |  |  |  |  |
+| `IncotermsPart2` |  | |  |  |  |  |
+| `StatusProfile` |  | | `_StatusObjectWithUUID` | `StatusProfile` |  |  |
+| `_ServiceDocItem` | | ✓ | | | | |
+| `_ServiceDocRefObj` | | ✓ | | | | |
+| `_ServiceDocPredecessor` | | ✓ | | | | |
+| `_ServiceDocSuccessor` | | ✓ | | | | |
+| `_SrvcDocBPSoldToParty` | | ✓ | | | | |
+| `_ServiceDocLongText` | | ✓ | | | | |
+| `_CustMgmtPartner` | | ✓ | | | | |
+| `_SrvcDocHeaderLongText` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ServiceTeam` | | ✓ | | | | |
+| `_ServiceEmployee` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_SoldToPartyToCustomer` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_ServiceTeamHeader` | | ✓ | | | | |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | | | |
+| `_ServiceDocBillingStatus` | | ✓ | | | | |
+| `_SrvcDocIsRelForBillgSts` | | ✓ | | | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | | | |
+| `_ServiceDocHasError` | | ✓ | | | | |
+| `_ServiceContractCanclnSts` | | ✓ | | | | |
+| `_SrvcDocTransferStatus` | | ✓ | | | | |
+| `_BillingBlockReason` | | ✓ | | | | |
+| `_ActivityCategory` | | ✓ | | | | |
+| `_ServiceDocumentPriority` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | | | |
+| `_FixedPrice` | | ✓ | | | | |
+| `_TaxDepartureCountry` | | ✓ | | | | |
+| `_VATRegistrationCountry` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_RespSrvcOrganizationOrgUnit` | | ✓ | | | | |
+| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_EnterpriseServiceOrg` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | | | |
+| `_ServiceRisk` | | ✓ | | | | |
+| `_ServiceDocProblemCategory` | | ✓ | | | | |
+| `_SrvcDocCreditStatus` | | ✓ | | | | |
+| `_SrvcDocBslnCostPostgStatus` | | ✓ | | | | |
+| `_SrvcDocContinuousCostStatus` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_SrvcDocExecutionStatus` | | ✓ | | | | |
+| `_SrvcDocIsQuotation` | | ✓ | | | | |
+| `_SrvcDocIsQuotation_2` | | ✓ | | | | |
 
 ## Associations
 

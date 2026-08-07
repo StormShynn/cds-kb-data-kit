@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ProjectBillingCategory` | ✓ | |  | `cast( substring( domvalue_l, 1, 4 ) as prflcat preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ProjectBillingCategoryText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_ProjectBillingCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ProjectBillingCategory` | ✓ | |  | `cast( substring( domvalue_l, 1, 4 ) as prflcat preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProjectBillingCategoryText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProjectBillingCategory` | | ✓ | | | | |
 
 ## Associations
 

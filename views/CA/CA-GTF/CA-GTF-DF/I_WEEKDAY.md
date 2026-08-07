@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WeekDay` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_weekday )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WeekDay` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_weekday )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

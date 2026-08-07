@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `ProjectBillingRequestType` | ✓ | |  | `cast( substring( domvalue_l, 1, 4 ) as pbr_doc_type preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ProjectBillingRequestTypeTxt` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_ProjectBillingRequestType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `ProjectBillingRequestType` | ✓ | |  | `cast( substring( domvalue_l, 1, 4 ) as pbr_doc_type preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProjectBillingRequestTypeTxt` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProjectBillingRequestType` | | ✓ | | | | |
 
 ## Associations
 

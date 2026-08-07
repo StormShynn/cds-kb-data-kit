@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SrvcDocItmDeliveryStatus` | ✓ | |  | `domvalue_l` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SrvcDocDeliveryStatusText` |  | |  | `ddtext` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_SrvcDocDeliveryStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcDocItmDeliveryStatus` | ✓ | |  | `domvalue_l` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SrvcDocDeliveryStatusText` |  | |  | `ddtext` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_SrvcDocDeliveryStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

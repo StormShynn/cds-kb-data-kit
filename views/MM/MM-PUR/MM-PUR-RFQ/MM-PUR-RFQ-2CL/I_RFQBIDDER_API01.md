@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RequestForQuotation` | ✓ | |  |  |
-| `PartnerCounter` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  | `cast( I_RFQBidder.PartnerFunction as parvw )` |
-| `Supplier` |  | |  |  |
-| `_RequestForQuotation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RequestForQuotation` | ✓ | |  |  |  |  |
+| `PartnerCounter` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  | `cast( I_RFQBidder.PartnerFunction as parvw )` |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `_RequestForQuotation` | | ✓ | | | | |
 
 ## Associations
 

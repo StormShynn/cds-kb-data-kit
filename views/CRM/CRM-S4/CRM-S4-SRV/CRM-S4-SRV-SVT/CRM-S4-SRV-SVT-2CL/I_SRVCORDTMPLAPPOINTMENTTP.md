@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrderTemplate` | ✓ | |  |  |
-| `SrvcDocAppointmentType` | ✓ | |  |  |
-| `SrvcDocApptStartDateTime` |  | |  |  |
-| `SrvcDocApptEndDateTime` |  | |  |  |
-| `_ServiceOrderTemplateTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrderTemplate` | ✓ | |  |  |  |  |
+| `SrvcDocAppointmentType` | ✓ | |  |  |  |  |
+| `SrvcDocApptStartDateTime` |  | |  |  |  |  |
+| `SrvcDocApptEndDateTime` |  | |  |  |  |  |
+| `_ServiceOrderTemplateTP` | | ✓ | | | | |
 
 ## Source Code
 

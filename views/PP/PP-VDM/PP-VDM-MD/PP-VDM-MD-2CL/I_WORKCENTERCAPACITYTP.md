@@ -30,49 +30,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterInternalID` | ✓ | |  |  |
-| `WorkCenterTypeCode` | ✓ | |  |  |
-| `CapacityCategoryAllocation` | ✓ | |  |  |
-| `CapacityInternalID` | ✓ | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `WorkCenterCategoryCode` |  | |  |  |
-| `SetupCapRequirementFormula` |  | |  |  |
-| `ProcgCapRequirementFormula` |  | |  |  |
-| `TeardownCapRequirementFormula` |  | |  |  |
-| `OtherCapRequirementFormula` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `WorkCenterLastChangeDateTime` |  | |  |  |
-| `Capacity` |  | |  |  |
-| `CapacityCategoryCode` |  | |  |  |
-| `CapacityActiveVersion` |  | |  |  |
-| `CapacityIsFinite` |  | |  |  |
-| `CapacityIsPooled` |  | |  |  |
-| `CapacityHasIndivCapacities` |  | |  |  |
-| `CapacityIsExcldFrmLongTermPlng` |  | |  |  |
-| `CapacityNumberOfCapacities` |  | |  |  |
-| `CapacityResponsiblePlanner` |  | |  |  |
-| `CapacityPlanUtilizationPercent` |  | |  |  |
-| `CapacityBreakDuration` |  | |  |  |
-| `Plant` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `ShiftGroup` |  | |  |  |
-| `CapacityStartTimeID` |  | |  |  |
-| `CapacityEndTimeID` |  | |  |  |
-| `CapIsUsedInMultiOperations` |  | |  |  |
-| `ReferencedCapacityInternalID` |  | |  |  |
-| `CapOverloadThresholdInPercent` |  | |  |  |
-| `CapacityQuantityUnit` |  | |  |  |
-| `CapacityBaseQtyUnit` |  | |  |  |
-| `CapacityLastChangeDateTime` |  | |  |  |
-| `_Header` | | ✓ | | |
-| `_CapDescription` | | ✓ | | |
-| `_Interval` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |  |  |
+| `CapacityCategoryAllocation` | ✓ | |  |  |  |  |
+| `CapacityInternalID` | ✓ | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |  |  |
+| `SetupCapRequirementFormula` |  | |  |  |  |  |
+| `ProcgCapRequirementFormula` |  | |  |  |  |  |
+| `TeardownCapRequirementFormula` |  | |  |  |  |  |
+| `OtherCapRequirementFormula` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `WorkCenterLastChangeDateTime` |  | |  |  |  |  |
+| `Capacity` |  | |  |  |  |  |
+| `CapacityCategoryCode` |  | |  |  |  |  |
+| `CapacityActiveVersion` |  | |  |  |  |  |
+| `CapacityIsFinite` |  | |  |  |  |  |
+| `CapacityIsPooled` |  | |  |  |  |  |
+| `CapacityHasIndivCapacities` |  | |  |  |  |  |
+| `CapacityIsExcldFrmLongTermPlng` |  | |  |  |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |  |  |
+| `CapacityResponsiblePlanner` |  | |  |  |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |  |  |
+| `CapacityBreakDuration` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `ShiftGroup` |  | |  |  |  |  |
+| `CapacityStartTimeID` |  | |  |  |  |  |
+| `CapacityEndTimeID` |  | |  |  |  |  |
+| `CapIsUsedInMultiOperations` |  | |  |  |  |  |
+| `ReferencedCapacityInternalID` |  | |  |  |  |  |
+| `CapOverloadThresholdInPercent` |  | |  |  |  |  |
+| `CapacityQuantityUnit` |  | |  |  |  |  |
+| `CapacityBaseQtyUnit` |  | |  |  |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
+| `_CapDescription` | | ✓ | | | | |
+| `_Interval` | | ✓ | | | | |
 
 ## Source Code
 

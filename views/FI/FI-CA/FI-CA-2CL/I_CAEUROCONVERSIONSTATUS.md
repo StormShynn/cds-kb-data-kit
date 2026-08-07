@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAStatusOfEuroConversion` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as eurou_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAStatusOfEuroConversion` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as eurou_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

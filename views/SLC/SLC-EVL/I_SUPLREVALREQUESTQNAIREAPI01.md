@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalReqQuestionnaireUUID` | ✓ | |  |  |
-| `SuplrEvalReqUUID` |  | |  |  |
-| `SuplrEvalOrdinalNumber` |  | |  |  |
-| `QuestionnaireName` |  | |  |  |
-| `IsScoringRelevant` |  | |  |  |
-| `WeightingFactor` |  | |  |  |
-| `MinimalScore` |  | |  |  |
-| `TargetScore` |  | |  |  |
-| `CalculatedScore` |  | |  |  |
-| `NumberOfResponses` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalReqQuestionnaireUUID` | ✓ | |  |  |  |  |
+| `SuplrEvalReqUUID` |  | |  |  |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |  |  |
+| `QuestionnaireName` |  | |  |  |  |  |
+| `IsScoringRelevant` |  | |  |  |  |  |
+| `WeightingFactor` |  | |  |  |  |  |
+| `MinimalScore` |  | |  |  |  |  |
+| `TargetScore` |  | |  |  |  |  |
+| `CalculatedScore` |  | |  |  |  |  |
+| `NumberOfResponses` |  | |  |  |  |  |
 
 ## Source Code
 

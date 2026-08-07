@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
-| `BR_NFFreightNature` | ✓ | |  | `cast ( domvalue_l as logbr_ind_nat_frt )` |
-| `BR_NFFreightNatureDesc` |  | |  | `cast ( ddtext as logbr_ind_nat_frt_desc preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_BR_NFFreightNature` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |  |  |
+| `BR_NFFreightNature` | ✓ | |  | `cast ( domvalue_l as logbr_ind_nat_frt )` |  |  |
+| `BR_NFFreightNatureDesc` |  | |  | `cast ( ddtext as logbr_ind_nat_frt_desc preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_BR_NFFreightNature` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

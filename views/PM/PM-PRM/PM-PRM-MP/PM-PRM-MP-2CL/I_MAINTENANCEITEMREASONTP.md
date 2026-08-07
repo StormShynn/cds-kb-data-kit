@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceItem` | ✓ | |  |  |
-| `NmbrOfMaintComplianceItems` | ✓ | |  |  |
-| `MaintenanceComplianceGroupCode` |  | |  |  |
-| `MaintenanceComplianceCode` |  | |  |  |
-| `MaintenanceComplianceTypeCode` |  | |  |  |
-| `MaintComplianceCatalogCode` |  | |  |  |
-| `MaintComplianceDescription` |  | |  |  |
-| `MaintenancePackage` |  | |  |  |
-| `MaintCmplRqIsLegallyBinding` |  | |  |  |
-| `MaintCmplRqOriginCode` |  | |  |  |
-| `MaintComplianceHasLongText` |  | |  |  |
-| `MaintComplianceSortNumber` |  | |  |  |
-| `MaintenanceComplianceIsDeleted` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_MaintenanceItem` | | ✓ | | |
-| `_MaintenanceItemReasonText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |  |  |
+| `NmbrOfMaintComplianceItems` | ✓ | |  |  |  |  |
+| `MaintenanceComplianceGroupCode` |  | |  |  |  |  |
+| `MaintenanceComplianceCode` |  | |  |  |  |  |
+| `MaintenanceComplianceTypeCode` |  | |  |  |  |  |
+| `MaintComplianceCatalogCode` |  | |  |  |  |  |
+| `MaintComplianceDescription` |  | |  |  |  |  |
+| `MaintenancePackage` |  | |  |  |  |  |
+| `MaintCmplRqIsLegallyBinding` |  | |  |  |  |  |
+| `MaintCmplRqOriginCode` |  | |  |  |  |  |
+| `MaintComplianceHasLongText` |  | |  |  |  |  |
+| `MaintComplianceSortNumber` |  | |  |  |  |  |
+| `MaintenanceComplianceIsDeleted` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_MaintenanceItem` | | ✓ | | | | |
+| `_MaintenanceItemReasonText` | | ✓ | | | | |
 
 ## Source Code
 

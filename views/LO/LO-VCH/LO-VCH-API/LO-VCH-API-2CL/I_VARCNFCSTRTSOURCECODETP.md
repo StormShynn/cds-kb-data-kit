@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarCnfConstraintNetName` | ✓ | |  |  |
-| `VarCnfConstraintName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_Constraint` | | ✓ | | |
-| `_ConstraintNet` | | ✓ | | |
-| `_SourceCodeLine` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarCnfConstraintNetName` | ✓ | |  |  |  |  |
+| `VarCnfConstraintName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_Constraint` | | ✓ | | | | |
+| `_ConstraintNet` | | ✓ | | | | |
+| `_SourceCodeLine` | | ✓ | | | | |
 
 ## Source Code
 

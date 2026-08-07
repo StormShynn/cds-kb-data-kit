@@ -27,59 +27,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InternalRealEstateNumber` | ✓ | |  | `intreno` |
-| `RETermType` | ✓ | |  | `termtype` |
-| `RETermNumber` | ✓ | |  | `termno` |
-| `ValidityStartDate` | ✓ | |  | `cast(validfrom as rebdvdmvalidfrom preserving type)` |
-| `ValidityEndDate` |  | |  | `cast(validto as rebdvdmvalidto preserving type)` |
-| `PaymentMethod` |  | |  | `cast(pymtmeth as farp_schzw_bseg)` |
-| `REPaymentMethodCreditMemo` |  | |  | `cast(pymtmethcrmo as retmvdmpymtmethcrmo preserving type)` |
-| `PaymentBlockingReason` |  | |  | `cast(pymtblock as farp_dzlspr)` |
-| `PaymentTerms` |  | |  | `pymtterm` |
-| `RENoteToPayeeText` |  | |  | `notetopayee` |
-| `DunningArea` |  | |  | `cast(dunnarea as farp_maber)` |
-| `DunningKey` |  | |  | `cast(dunnkey as farp_mschl)` |
-| `DunningBlockingReason` |  | |  | `cast(dunnblock as farp_mansp)` |
-| `REAcctDeterminationKey` |  | |  | `cast(accdetkey as retmvdmaccdetkey preserving type)` |
-| `RETaxType` |  | |  | `taxtype` |
-| `TaxGroup` |  | |  | `cast(taxgroup as taxgrp)` |
-| `REIsConditionGrossAmount` |  | |  | `isgross` |
-| `TaxCountry` |  | |  | `cast(taxcountry as retmvdmtaxcountry preserving type)` |
-| `BusinessPartner` |  | |  | `partner` |
-| `REAccountingObject` |  | |  | `cast(partnerobjnr as retmvdmpartnerobjnr preserving type)` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `REIsConditionSplit` |  | |  | `iscdsplit` |
-| `RECurrencyTranslationRule` |  | |  | `cast(ctrule as retmvdmcactrule preserving type)` |
-| `REIsPartnerBlocked` |  | |  | `ispartnerblocked` |
-| `RealEstateObjectType` |  | | `_REKeyAssgmt` | `RealEstateObjectType` |
-| `CompanyCode` |  | | `_REKeyAssgmt` | `CompanyCode` |
-| `Country` |  | | `_REKeyAssgmt._CompanyCode` | `Country` |
-| `TaxCalculationProcedure` |  | | `_REKeyAssgmt._CompanyCode._Country` | `TaxCalculationProcedure` |
-| `_CompanyCodeCountry` |  | | `_REKeyAssgmt._CompanyCode` | `_Country` |
-| `_REContract` | | ✓ | | |
-| `_REKeyAssgmt` | | ✓ | | |
-| `_RETermType` | | ✓ | | |
-| `_RETerm` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_PaymentBlockingReason` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_DunningArea` | | ✓ | | |
-| `_DunningKey` | | ✓ | | |
-| `_DunningBlockingReasonCode` | | ✓ | | |
-| `_REAcctDeterminationValue` | | ✓ | | |
-| `_RETaxType` | | ✓ | | |
-| `_RETaxGroup` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_InternalOrder` | | ✓ | | |
-| `_TaxJurisdiction` | | ✓ | | |
-| `_TaxJurisdictionCalcProcedure` | | ✓ | | |
-| `_RECurrencyTranslationRule` | | ✓ | | |
-| `_REAccountingObject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  | `intreno` |  |  |
+| `RETermType` | ✓ | |  | `termtype` |  |  |
+| `RETermNumber` | ✓ | |  | `termno` |  |  |
+| `ValidityStartDate` | ✓ | |  | `cast(validfrom as rebdvdmvalidfrom preserving type)` |  |  |
+| `ValidityEndDate` |  | |  | `cast(validto as rebdvdmvalidto preserving type)` |  |  |
+| `PaymentMethod` |  | |  | `cast(pymtmeth as farp_schzw_bseg)` |  |  |
+| `REPaymentMethodCreditMemo` |  | |  | `cast(pymtmethcrmo as retmvdmpymtmethcrmo preserving type)` |  |  |
+| `PaymentBlockingReason` |  | |  | `cast(pymtblock as farp_dzlspr)` |  |  |
+| `PaymentTerms` |  | |  | `pymtterm` |  |  |
+| `RENoteToPayeeText` |  | |  | `notetopayee` |  |  |
+| `DunningArea` |  | |  | `cast(dunnarea as farp_maber)` |  |  |
+| `DunningKey` |  | |  | `cast(dunnkey as farp_mschl)` |  |  |
+| `DunningBlockingReason` |  | |  | `cast(dunnblock as farp_mansp)` |  |  |
+| `REAcctDeterminationKey` |  | |  | `cast(accdetkey as retmvdmaccdetkey preserving type)` |  |  |
+| `RETaxType` |  | |  | `taxtype` |  |  |
+| `TaxGroup` |  | |  | `cast(taxgroup as taxgrp)` |  |  |
+| `REIsConditionGrossAmount` |  | |  | `isgross` |  |  |
+| `TaxCountry` |  | |  | `cast(taxcountry as retmvdmtaxcountry preserving type)` |  |  |
+| `BusinessPartner` |  | |  | `partner` |  |  |
+| `REAccountingObject` |  | |  | `cast(partnerobjnr as retmvdmpartnerobjnr preserving type)` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `REIsConditionSplit` |  | |  | `iscdsplit` |  |  |
+| `RECurrencyTranslationRule` |  | |  | `cast(ctrule as retmvdmcactrule preserving type)` |  |  |
+| `REIsPartnerBlocked` |  | |  | `ispartnerblocked` |  |  |
+| `RealEstateObjectType` |  | | `_REKeyAssgmt` | `RealEstateObjectType` |  |  |
+| `CompanyCode` |  | | `_REKeyAssgmt` | `CompanyCode` |  |  |
+| `Country` |  | | `_REKeyAssgmt._CompanyCode` | `Country` |  |  |
+| `TaxCalculationProcedure` |  | | `_REKeyAssgmt._CompanyCode._Country` | `TaxCalculationProcedure` |  |  |
+| `_CompanyCodeCountry` |  | | `_REKeyAssgmt._CompanyCode` | `_Country` |  |  |
+| `_REContract` | | ✓ | | | | |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_RETermType` | | ✓ | | | | |
+| `_RETerm` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_PaymentBlockingReason` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_DunningArea` | | ✓ | | | | |
+| `_DunningKey` | | ✓ | | | | |
+| `_DunningBlockingReasonCode` | | ✓ | | | | |
+| `_REAcctDeterminationValue` | | ✓ | | | | |
+| `_RETaxType` | | ✓ | | | | |
+| `_RETaxGroup` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_InternalOrder` | | ✓ | | | | |
+| `_TaxJurisdiction` | | ✓ | | | | |
+| `_TaxJurisdictionCalcProcedure` | | ✓ | | | | |
+| `_RECurrencyTranslationRule` | | ✓ | | | | |
+| `_REAccountingObject` | | ✓ | | | | |
 
 ## Associations
 

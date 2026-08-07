@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `language` |
-| `SDApprovalReason` | ✓ | |  | `apm_approval_reason` |
-| `SDApprovalReasonName` |  | |  | `description` |
-| `_SDApprovalReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `language` |  |  |
+| `SDApprovalReason` | ✓ | |  | `apm_approval_reason` |  |  |
+| `SDApprovalReasonName` |  | |  | `description` |  |  |
+| `_SDApprovalReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

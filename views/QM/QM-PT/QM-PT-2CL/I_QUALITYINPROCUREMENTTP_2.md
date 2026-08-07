@@ -28,41 +28,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `QltyInProcmtIntID` | ✓ | |  |  |
-| `Supplier` |  | |  |  |
-| `Plant` |  | |  |  |
-| `MaterialRevisionLevel` |  | |  |  |
-| `QltyInProcmtReleaseValidTo` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ReleasedQuantity` |  | |  |  |
-| `QltyInProcmtBlockReasonText` |  | |  |  |
-| `ProcurementBlock` |  | |  |  |
-| `QltyInProcmtRelQtyIsActive` |  | |  |  |
-| `QltyInProcmtInspControl` |  | |  |  |
-| `ProdnPieceApprovalIsRequired` |  | |  |  |
-| `ProductionPieceApproval` |  | |  |  |
-| `ProductionPieceApprovalLevel` |  | |  |  |
-| `ProductionPieceApprovalStatus` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `QualityManagementSystem` |  | |  |  |
-| `QltyInProcmtCertfnValidTo` |  | |  |  |
-| `InspectionLotType` |  | |  |  |
-| `QltyInProcmtLotCrtnLeadTime` |  | |  |  |
-| `QltyInProcmtCertificateCtrl` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `MatlQualityAuthorizationGroup` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `_QltyFirstArticleInsp` | | ✓ | | |
-| `_QltyInProcmtLongText` | | ✓ | | |
-| `_QltyInProcmtStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `QltyInProcmtIntID` | ✓ | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `MaterialRevisionLevel` |  | |  |  |  |  |
+| `QltyInProcmtReleaseValidTo` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ReleasedQuantity` |  | |  |  |  |  |
+| `QltyInProcmtBlockReasonText` |  | |  |  |  |  |
+| `ProcurementBlock` |  | |  |  |  |  |
+| `QltyInProcmtRelQtyIsActive` |  | |  |  |  |  |
+| `QltyInProcmtInspControl` |  | |  |  |  |  |
+| `ProdnPieceApprovalIsRequired` |  | |  |  |  |  |
+| `ProductionPieceApproval` |  | |  |  |  |  |
+| `ProductionPieceApprovalLevel` |  | |  |  |  |  |
+| `ProductionPieceApprovalStatus` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `QualityManagementSystem` |  | |  |  |  |  |
+| `QltyInProcmtCertfnValidTo` |  | |  |  |  |  |
+| `InspectionLotType` |  | |  |  |  |  |
+| `QltyInProcmtLotCrtnLeadTime` |  | |  |  |  |  |
+| `QltyInProcmtCertificateCtrl` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `MatlQualityAuthorizationGroup` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `_QltyFirstArticleInsp` | | ✓ | | | | |
+| `_QltyInProcmtLongText` | | ✓ | | | | |
+| `_QltyInProcmtStatus` | | ✓ | | | | |
 
 ## Source Code
 

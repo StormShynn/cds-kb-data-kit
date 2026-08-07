@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductGroup` | ✓ | | `_CnsldtnProductGroup` | `ProductGroup` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnProductGroup` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnProductGroupTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnProductGroupTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductGroup` | ✓ | | `_CnsldtnProductGroup` | `ProductGroup` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnProductGroup` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnProductGroupTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnProductGroupTextTP` |  |  |
 
 ## Source Code
 

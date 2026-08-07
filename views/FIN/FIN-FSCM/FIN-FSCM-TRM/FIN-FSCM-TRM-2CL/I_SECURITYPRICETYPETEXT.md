@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PriceQuotationType` | ✓ | |  | `cast ( tw56t.skursart as tba_pricetype)` |
-| `Language` | ✓ | |  | `spras` |
-| `PriceQuotationTypeName` |  | |  | `xkurzbez` |
-| `_Language` | | ✓ | | |
-| `_PriceQuotationType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PriceQuotationType` | ✓ | |  | `cast ( tw56t.skursart as tba_pricetype)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PriceQuotationTypeName` |  | |  | `xkurzbez` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PriceQuotationType` | | ✓ | | | | |
 
 ## Associations
 

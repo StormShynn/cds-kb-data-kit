@@ -28,59 +28,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingInfoRecord` | ✓ | |  |  |
-| `PurchasingOrganization` | ✓ | |  |  |
-| `PurchasingInfoRecordCategory` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Currency` |  | |  |  |
-| `MinimumPurchaseOrderQuantity` |  | |  |  |
-| `StandardPurchaseOrderQuantity` |  | |  |  |
-| `MaterialPlannedDeliveryDurn` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `LastReferencingPurchaseOrder` |  | |  |  |
-| `LastReferencingPurOrderItem` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `PurgInfoRecdEffctvPrc` |  | |  |  |
-| `MaterialPriceUnitQty` |  | |  |  |
-| `PurchaseOrderPriceUnit` |  | |  |  |
-| `PriceValidityEndDate` |  | |  |  |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
-| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
-| `InvoiceIsGoodsReceiptBased` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `MaximumOrderQuantity` |  | |  |  |
-| `IsRelevantForAutomSrcg` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `SupplierQuotation` |  | |  |  |
-| `SupplierQuotationDate` |  | |  |  |
-| `MinRemainingShelfLife` |  | |  |  |
-| `ShippingInstruction` |  | |  |  |
-| `IsEvaluatedRcptSettlmtAllowed` |  | |  |  |
-| `IsPurOrderAllwdForInbDeliv` |  | |  |  |
-| `IsOrderAcknRqd` |  | |  |  |
-| `SupplierConfirmationControlKey` |  | |  |  |
-| `MaterialRoundingProfile` |  | |  |  |
-| `MaterialStagingTime` |  | |  |  |
-| `ProductUnitGroup` |  | |  |  |
-| `IsRetMatlAuthznRqdBySupplier` |  | |  |  |
-| `SuplrRetMatlAuthznRqmtSts` |  | |  | `IsRetMatlAuthznRqdBySupplier` |
-| `IsCashDiscountGranted` |  | |  |  |
-| `MaterialConditionGroup` |  | |  |  |
-| `PricingDateControl` |  | |  |  |
-| `PurchasingDocumentDate` |  | |  |  |
-| `ShelfLifeExpirationDatePeriod` |  | |  |  |
-| `ProductionVersion` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `PurchasingInfoRecordCategory` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `MinimumPurchaseOrderQuantity` |  | |  |  |  |  |
+| `StandardPurchaseOrderQuantity` |  | |  |  |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `LastReferencingPurchaseOrder` |  | |  |  |  |  |
+| `LastReferencingPurOrderItem` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `PurgInfoRecdEffctvPrc` |  | |  |  |  |  |
+| `MaterialPriceUnitQty` |  | |  |  |  |  |
+| `PurchaseOrderPriceUnit` |  | |  |  |  |  |
+| `PriceValidityEndDate` |  | |  |  |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `MaximumOrderQuantity` |  | |  |  |  |  |
+| `IsRelevantForAutomSrcg` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `SupplierQuotation` |  | |  |  |  |  |
+| `SupplierQuotationDate` |  | |  |  |  |  |
+| `MinRemainingShelfLife` |  | |  |  |  |  |
+| `ShippingInstruction` |  | |  |  |  |  |
+| `IsEvaluatedRcptSettlmtAllowed` |  | |  |  |  |  |
+| `IsPurOrderAllwdForInbDeliv` |  | |  |  |  |  |
+| `IsOrderAcknRqd` |  | |  |  |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |  |  |
+| `MaterialRoundingProfile` |  | |  |  |  |  |
+| `MaterialStagingTime` |  | |  |  |  |  |
+| `ProductUnitGroup` |  | |  |  |  |  |
+| `IsRetMatlAuthznRqdBySupplier` |  | |  |  |  |  |
+| `SuplrRetMatlAuthznRqmtSts` |  | |  | `IsRetMatlAuthznRqdBySupplier` |  |  |
+| `IsCashDiscountGranted` |  | |  |  |  |  |
+| `MaterialConditionGroup` |  | |  |  |  |  |
+| `PricingDateControl` |  | |  |  |  |  |
+| `PurchasingDocumentDate` |  | |  |  |  |  |
+| `ShelfLifeExpirationDatePeriod` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
 
 ## Associations
 

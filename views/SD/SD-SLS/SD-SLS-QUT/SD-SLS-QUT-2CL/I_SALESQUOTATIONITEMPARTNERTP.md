@@ -32,25 +32,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesQuotation` | ✓ | |  |  |
-| `SalesQuotationItem` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `PartnerFunctionForEdit` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `Partner` |  | |  |  |
-| `PartnerIsSpecificForSDDocItem` |  | |  |  |
-| `SalesQuotationType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_SalesQuotation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |  |  |
+| `SalesQuotationItem` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |  |  |
+| `SalesQuotationType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_SalesQuotation` | | ✓ | | | | |
 
 ## Source Code
 

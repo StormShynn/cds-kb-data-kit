@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectorQualification` | ✓ | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectorQualification` | ✓ | |  |  |  |  |
 
 ## Source Code
 

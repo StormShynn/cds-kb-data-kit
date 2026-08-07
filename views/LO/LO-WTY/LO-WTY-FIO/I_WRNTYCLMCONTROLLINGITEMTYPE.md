@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyControllingItemType` | ✓ | |  | `cast( domvalue_l as wty_poskt )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyControllingItemType` | ✓ | |  | `cast( domvalue_l as wty_poskt )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

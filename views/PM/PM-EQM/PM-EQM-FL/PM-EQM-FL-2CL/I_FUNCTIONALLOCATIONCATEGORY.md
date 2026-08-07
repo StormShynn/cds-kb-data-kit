@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalLocationCategory` | ✓ | |  | `fltyp` |
-| `TechObjInspectionLevelCode` |  | |  | `idms_type` |
-| `FunctionalLocationCategoryOID` |  | |  | `cast( t370f.fltyp as functionallocationcategory_oid )` |
-| `_Text` | | ✓ | | |
-| `_InspectionLevelText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocationCategory` | ✓ | |  | `fltyp` |  |  |
+| `TechObjInspectionLevelCode` |  | |  | `idms_type` |  |  |
+| `FunctionalLocationCategoryOID` |  | |  | `cast( t370f.fltyp as functionallocationcategory_oid )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_InspectionLevelText` | | ✓ | | | | |
 
 ## Associations
 

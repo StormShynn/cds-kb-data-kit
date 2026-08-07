@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TimeSheetRecordUUID` | ✓ | |  |  |
-| `TimeSheetRecord` |  | |  |  |
-| `WorkAssignmentExternalID` |  | |  |  |
-| `Country2DigitISOCode` |  | |  |  |
-| `WorkAssignment` |  | |  |  |
-| `TimeSheetDate` |  | |  |  |
-| `RecordedHours` |  | |  |  |
-| `HoursUnitOfMeasure` |  | |  |  |
-| `TimeSheetRecordLongText` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `ActivityType` |  | |  |  |
-| `WorkItem` |  | |  |  |
-| `BillingControlCategory` |  | |  |  |
-| `TimeSheetStatus` |  | |  |  |
-| `TimeSheetPredecessorRecord` |  | |  |  |
-| `TimeSheetAccountingDocument` |  | |  |  |
-| `WorkflowTaskInternalID` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `TimeSheetApprovedByUser` |  | |  |  |
-| `TimeSheetApprovedDate` |  | |  |  |
-| `TimeSheetCreationDate` |  | |  |  |
-| `TimeSheetEntryTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `TimeSheetLastChangedDate` |  | |  |  |
-| `TimeSheetLastChangedTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TimeSheetRecordUUID` | ✓ | |  |  |  |  |
+| `TimeSheetRecord` |  | |  |  |  |  |
+| `WorkAssignmentExternalID` |  | |  |  |  |  |
+| `Country2DigitISOCode` |  | |  |  |  |  |
+| `WorkAssignment` |  | |  |  |  |  |
+| `TimeSheetDate` |  | |  |  |  |  |
+| `RecordedHours` |  | |  |  |  |  |
+| `HoursUnitOfMeasure` |  | |  |  |  |  |
+| `TimeSheetRecordLongText` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `ActivityType` |  | |  |  |  |  |
+| `WorkItem` |  | |  |  |  |  |
+| `BillingControlCategory` |  | |  |  |  |  |
+| `TimeSheetStatus` |  | |  |  |  |  |
+| `TimeSheetPredecessorRecord` |  | |  |  |  |  |
+| `TimeSheetAccountingDocument` |  | |  |  |  |  |
+| `WorkflowTaskInternalID` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `TimeSheetApprovedByUser` |  | |  |  |  |  |
+| `TimeSheetApprovedDate` |  | |  |  |  |  |
+| `TimeSheetCreationDate` |  | |  |  |  |  |
+| `TimeSheetEntryTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `TimeSheetLastChangedDate` |  | |  |  |  |  |
+| `TimeSheetLastChangedTime` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EngineeringChangeDocForEdit` |  | |  | `aennr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngineeringChangeDocForEdit` |  | |  | `aennr` |  |  |
 
 ## Source Code
 

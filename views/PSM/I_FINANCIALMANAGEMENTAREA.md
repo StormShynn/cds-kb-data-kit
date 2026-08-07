@@ -26,16 +26,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialManagementArea` | ✓ | |  | `fikrs` |
-| `FinancialManagementAreaCrcy` |  | |  | `waers` |
-| `FinMgmtAreaFiscalYearVariant` |  | |  | `ca_periv` |
-| `CommitmentItemIsYearDependent` |  | |  | `yearpos` |
-| `FundsCenterIsTimeDependent` |  | |  | `cast (yearctr as fmis_fc_time_dependent )` |
-| `_Currency` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  | `fikrs` |  |  |
+| `FinancialManagementAreaCrcy` |  | |  | `waers` |  |  |
+| `FinMgmtAreaFiscalYearVariant` |  | |  | `ca_periv` |  |  |
+| `CommitmentItemIsYearDependent` |  | |  | `yearpos` |  |  |
+| `FundsCenterIsTimeDependent` |  | |  | `cast (yearctr as fmis_fc_time_dependent )` |  |  |
+| `_Currency` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

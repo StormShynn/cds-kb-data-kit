@@ -29,43 +29,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerProject` | ✓ | |  |  |
-| `SalesOrderItem` | ✓ | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItemCategory` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `SalesOrderItemText` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CappedNetAmount` |  | |  |  |
-| `CappedNetAmtAlertThldInPct` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `UnderlyingPurchaseOrderItem` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `BillingPlan` |  | |  |  |
-| `TotalStandAloneSellingPrice` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `SalesOrderType` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `_SalesOrder` | | ✓ | | |
-| `_CustProjSlsOrd` | | ✓ | | |
-| `_CustomerProject` | | ✓ | | |
-| `_CustProjSlsOrdItemWorkPckg` | | ✓ | | |
-| `_CustProjSlsOrdItmBillgPlnItm` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerProject` | ✓ | |  |  |  |  |
+| `SalesOrderItem` | ✓ | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItemCategory` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `SalesOrderItemText` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CappedNetAmount` |  | |  |  |  |  |
+| `CappedNetAmtAlertThldInPct` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `UnderlyingPurchaseOrderItem` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `BillingPlan` |  | |  |  |  |  |
+| `TotalStandAloneSellingPrice` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `SalesOrderType` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_CustProjSlsOrd` | | ✓ | | | | |
+| `_CustomerProject` | | ✓ | | | | |
+| `_CustProjSlsOrdItemWorkPckg` | | ✓ | | | | |
+| `_CustProjSlsOrdItmBillgPlnItm` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `SalesOrganization` | ✓ | | `_Text` | `SalesOrganization` |
-| `SalesOrganizationName` |  | | `_Text` | `SalesOrganizationName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnSalesOrganizationTP` |  | |  | `_SalesOrganization as _SalesOrganization : redirected to parent I_CnsldtnSalesOrganizationTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `SalesOrganization` | ✓ | | `_Text` | `SalesOrganization` |  |  |
+| `SalesOrganizationName` |  | | `_Text` | `SalesOrganizationName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnSalesOrganizationTP` |  | |  | `_SalesOrganization as _SalesOrganization : redirected to parent I_CnsldtnSalesOrganizationTP` |  |  |
 
 ## Source Code
 

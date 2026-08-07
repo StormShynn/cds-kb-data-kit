@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RetsMgmtProcess` | ✓ | |  | `msr_id` |
-| `ReturnsDocumentType` |  | |  | `doc_type` |
-| `ReturnsDocument` |  | |  | `doc_nr` |
-| `_RetsMgmtProcessItem` | | ✓ | | |
-| `_ReturnsDocumentType` | | ✓ | | |
-| `_RetsMgmtProcessingStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RetsMgmtProcess` | ✓ | |  | `msr_id` |  |  |
+| `ReturnsDocumentType` |  | |  | `doc_type` |  |  |
+| `ReturnsDocument` |  | |  | `doc_nr` |  |  |
+| `_RetsMgmtProcessItem` | | ✓ | | | | |
+| `_ReturnsDocumentType` | | ✓ | | | | |
+| `_RetsMgmtProcessingStatus` | | ✓ | | | | |
 
 ## Associations
 

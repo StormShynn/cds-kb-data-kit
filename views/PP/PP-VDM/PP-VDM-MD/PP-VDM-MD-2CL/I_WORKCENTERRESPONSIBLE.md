@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `WorkCenterResponsible` | ✓ | |  | `cast(tc24.veran as ap_veran preserving type)` |
-| `WorkCenterResponsibleName` |  | |  | `cast(tc24.ktext as pph_veranname preserving type)` |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `WorkCenterResponsible` | ✓ | |  | `cast(tc24.veran as ap_veran preserving type)` |  |  |
+| `WorkCenterResponsibleName` |  | |  | `cast(tc24.ktext as pph_veranname preserving type)` |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

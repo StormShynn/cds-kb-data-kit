@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAProviderContractMigrtnStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as migst_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAProviderContractMigrtnStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as migst_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

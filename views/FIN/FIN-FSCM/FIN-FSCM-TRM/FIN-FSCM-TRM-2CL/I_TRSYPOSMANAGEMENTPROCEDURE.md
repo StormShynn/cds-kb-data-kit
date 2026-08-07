@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrsyPosManagementProcedure` | ✓ | |  | `cast(TrsyPosManagementProcedure.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |
-| `TrsyLdgrPosMgmtCat` |  | |  | `deriv_cat` |
-| `TrsyPosMgmtProcedStpCat1` |  | |  | `step_cat_1` |
-| `TrsyPosMgmtProcedStpProced1` |  | |  | `procedure_1` |
-| `TrsyPosMgmtProcedStpCat2` |  | |  | `step_cat_2` |
-| `TrsyPosMgmtProcedStpProced2` |  | |  | `procedure_2` |
-| `TrsyPosMgmtProcedStpCat3` |  | |  | `step_cat_3` |
-| `TrsyPosMgmtProcedStpProced3` |  | |  | `procedure_3` |
-| `TrsyPosMgmtProcedStpCat4` |  | |  | `step_cat_4` |
-| `TrsyPosMgmtProcedStpProced4` |  | |  | `procedure_4` |
-| `TrsyPosMgmtProcedStpCat5` |  | |  | `step_cat_5` |
-| `TrsyPosMgmtProcedStpProced5` |  | |  | `procedure_5` |
-| `TrsyPosMgmtProcedValnBase` |  | |  | `val_amount_base` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrsyPosManagementProcedure` | ✓ | |  | `cast(TrsyPosManagementProcedure.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |  |  |
+| `TrsyLdgrPosMgmtCat` |  | |  | `deriv_cat` |  |  |
+| `TrsyPosMgmtProcedStpCat1` |  | |  | `step_cat_1` |  |  |
+| `TrsyPosMgmtProcedStpProced1` |  | |  | `procedure_1` |  |  |
+| `TrsyPosMgmtProcedStpCat2` |  | |  | `step_cat_2` |  |  |
+| `TrsyPosMgmtProcedStpProced2` |  | |  | `procedure_2` |  |  |
+| `TrsyPosMgmtProcedStpCat3` |  | |  | `step_cat_3` |  |  |
+| `TrsyPosMgmtProcedStpProced3` |  | |  | `procedure_3` |  |  |
+| `TrsyPosMgmtProcedStpCat4` |  | |  | `step_cat_4` |  |  |
+| `TrsyPosMgmtProcedStpProced4` |  | |  | `procedure_4` |  |  |
+| `TrsyPosMgmtProcedStpCat5` |  | |  | `step_cat_5` |  |  |
+| `TrsyPosMgmtProcedStpProced5` |  | |  | `procedure_5` |  |  |
+| `TrsyPosMgmtProcedValnBase` |  | |  | `val_amount_base` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

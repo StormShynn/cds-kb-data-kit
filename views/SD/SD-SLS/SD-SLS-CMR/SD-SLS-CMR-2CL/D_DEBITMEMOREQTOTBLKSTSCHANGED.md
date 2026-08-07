@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
-| `DebitMemoRequestType` |  | |  | `auart_unv` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `OrganizationDivision` |  | |  | `spart` |
-| `SoldToParty` |  | |  | `kunnr` |
-| `TotalBlockStatus` |  | |  | `spstg` |
-| `PreviousTotalBlockStatus` |  | |  | `spstg` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |  |  |
+| `DebitMemoRequestType` |  | |  | `auart_unv` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `OrganizationDivision` |  | |  | `spart` |  |  |
+| `SoldToParty` |  | |  | `kunnr` |  |  |
+| `TotalBlockStatus` |  | |  | `spstg` |  |  |
+| `PreviousTotalBlockStatus` |  | |  | `spstg` |  |  |
 
 ## Source Code
 

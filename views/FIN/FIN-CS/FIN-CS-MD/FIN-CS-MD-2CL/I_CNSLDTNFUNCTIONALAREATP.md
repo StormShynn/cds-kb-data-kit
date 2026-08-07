@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalArea` | ✓ | | `_CnsldtnFunctionalArea` | `FunctionalArea` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnFunctionalArea` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFunctionalAreaTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFunctionalAreaTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalArea` | ✓ | | `_CnsldtnFunctionalArea` | `FunctionalArea` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnFunctionalArea` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFunctionalAreaTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFunctionalAreaTextTP` |  |  |
 
 ## Source Code
 

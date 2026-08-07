@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `InvoiceSummaryNumber` | ✓ | |  | `invsumnr` |
-| `InvcSmmryType` | ✓ | |  | `invsumtype` |
-| `InvcSmmryPayer` |  | |  | `cast( invsumpayer as isjp_ispayer )` |
-| `InvcSmmryPayerInvcGrpgUnit` |  | |  | `cast( pigrunit as isjp_pigrunit )` |
-| `Currency` |  | |  | `cast ( waers as waers)` |
-| `InvcSmmryRecipient` |  | |  | `cast( invsumrecip as isjp_recipient )` |
-| `InvcSmmryGroupingUnit` |  | |  | `cast( grunit as isjp_grpunit )` |
-| `InvcSmmryClosingDate` |  | |  | `cast( closdate as isjp_closedate )` |
-| `InvcSmmryDueDate` |  | |  | `cast( netdt as isjp_duedate )` |
-| `InvcSmmryPayerInvc` |  | |  | `cast(pinr as isjp_pinr)` |
-| `InvcSmmryNetAmount` |  | |  | `cast( netamnt as isjp_netamnt )` |
-| `InvcSmmryTaxAmount` |  | |  | `cast( taxamnt as isjp_taxamnt )` |
-| `InvcSmmryAmountPaid` |  | |  | `cast( paidamnt as isjp_amntpaid )` |
-| `InvcSmmryPrevInvoicedAmt` |  | |  | `cast( previnvamnt as isjp_previnvamnt )` |
-| `InvcSmmryCarryForwardAmt` |  | |  | `cast( carfwdamnt as isjp_carfwdamnt )` |
-| `InvcSmmryPrevClosingDate` |  | |  | `cast( prevclosdate as isjp_preclosedate )` |
-| `InvcSmmryPrevDueDate` |  | |  | `cast( prevnetdt as isjp_preduedate )` |
-| `InvcSmmryPrevMonthlyInvoice` |  | |  | `cast( previnvsumnr as isjp_preminr )` |
-| `InvcSmmryNextMonthlyInvoice` |  | |  | `cast( nextinvsumnr as isjp_nextminr )` |
-| `InvcSmmryOpenAmt` |  | |  | `cast( openamnt as isjp_amntopen )` |
-| `InvcSmmryGrossAmount` |  | |  | `cast(netamnt + taxamnt as isjp_grossamnt )as InvcSmmryGrossAmount` |
-| `ClearingDate` |  | |  | `cast( cleardate as fis_augdt )` |
-| `InvcSmmryIsCancelled` |  | |  | `cast( cancelled as isjp_micancelled )` |
-| `InvcSmmryTotBlldAmtInTransCrcy` |  | |  | `cast( netamnt + taxamnt + previnvamnt - paidamnt as isjptotalbilledamnt )` |
-| `NumberOfOpenItems` |  | |  | `cast( nropenitems as farp_number_of_open_items )` |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `InvoiceSummaryNumber` | ✓ | |  | `invsumnr` |  |  |
+| `InvcSmmryType` | ✓ | |  | `invsumtype` |  |  |
+| `InvcSmmryPayer` |  | |  | `cast( invsumpayer as isjp_ispayer )` |  |  |
+| `InvcSmmryPayerInvcGrpgUnit` |  | |  | `cast( pigrunit as isjp_pigrunit )` |  |  |
+| `Currency` |  | |  | `cast ( waers as waers)` |  |  |
+| `InvcSmmryRecipient` |  | |  | `cast( invsumrecip as isjp_recipient )` |  |  |
+| `InvcSmmryGroupingUnit` |  | |  | `cast( grunit as isjp_grpunit )` |  |  |
+| `InvcSmmryClosingDate` |  | |  | `cast( closdate as isjp_closedate )` |  |  |
+| `InvcSmmryDueDate` |  | |  | `cast( netdt as isjp_duedate )` |  |  |
+| `InvcSmmryPayerInvc` |  | |  | `cast(pinr as isjp_pinr)` |  |  |
+| `InvcSmmryNetAmount` |  | |  | `cast( netamnt as isjp_netamnt )` |  |  |
+| `InvcSmmryTaxAmount` |  | |  | `cast( taxamnt as isjp_taxamnt )` |  |  |
+| `InvcSmmryAmountPaid` |  | |  | `cast( paidamnt as isjp_amntpaid )` |  |  |
+| `InvcSmmryPrevInvoicedAmt` |  | |  | `cast( previnvamnt as isjp_previnvamnt )` |  |  |
+| `InvcSmmryCarryForwardAmt` |  | |  | `cast( carfwdamnt as isjp_carfwdamnt )` |  |  |
+| `InvcSmmryPrevClosingDate` |  | |  | `cast( prevclosdate as isjp_preclosedate )` |  |  |
+| `InvcSmmryPrevDueDate` |  | |  | `cast( prevnetdt as isjp_preduedate )` |  |  |
+| `InvcSmmryPrevMonthlyInvoice` |  | |  | `cast( previnvsumnr as isjp_preminr )` |  |  |
+| `InvcSmmryNextMonthlyInvoice` |  | |  | `cast( nextinvsumnr as isjp_nextminr )` |  |  |
+| `InvcSmmryOpenAmt` |  | |  | `cast( openamnt as isjp_amntopen )` |  |  |
+| `InvcSmmryGrossAmount` |  | |  | `cast(netamnt + taxamnt as isjp_grossamnt )as InvcSmmryGrossAmount` |  |  |
+| `ClearingDate` |  | |  | `cast( cleardate as fis_augdt )` |  |  |
+| `InvcSmmryIsCancelled` |  | |  | `cast( cancelled as isjp_micancelled )` |  |  |
+| `InvcSmmryTotBlldAmtInTransCrcy` |  | |  | `cast( netamnt + taxamnt + previnvamnt - paidamnt as isjptotalbilledamnt )` |  |  |
+| `NumberOfOpenItems` |  | |  | `cast( nropenitems as farp_number_of_open_items )` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

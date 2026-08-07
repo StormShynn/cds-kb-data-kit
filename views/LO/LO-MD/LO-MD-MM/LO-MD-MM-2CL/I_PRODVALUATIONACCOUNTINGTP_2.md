@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ValuationArea` | ✓ | |  |  |
-| `ValuationType` | ✓ | |  |  |
-| `CommercialPrice1InCoCodeCrcy` |  | |  |  |
-| `CommercialPrice2InCoCodeCrcy` |  | |  |  |
-| `CommercialPrice3InCoCodeCrcy` |  | |  |  |
-| `DevaluationYearCount` |  | |  |  |
-| `FuturePrice` |  | |  |  |
-| `FuturePriceValidityStartDate` |  | |  |  |
-| `LIFOValuationPoolNumber` |  | |  |  |
-| `TaxPricel1InCoCodeCrcy` |  | |  |  |
-| `TaxPrice2InCoCodeCrcy` |  | |  |  |
-| `TaxPrice3InCoCodeCrcy` |  | |  |  |
-| `TaxBasedPricesPriceUnitQty` |  | |  |  |
-| `IsLIFOAndFIFORelevant` |  | |  |  |
-| `Currency` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProductValuation` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ValuationArea` | ✓ | |  |  |  |  |
+| `ValuationType` | ✓ | |  |  |  |  |
+| `CommercialPrice1InCoCodeCrcy` |  | |  |  |  |  |
+| `CommercialPrice2InCoCodeCrcy` |  | |  |  |  |  |
+| `CommercialPrice3InCoCodeCrcy` |  | |  |  |  |  |
+| `DevaluationYearCount` |  | |  |  |  |  |
+| `FuturePrice` |  | |  |  |  |  |
+| `FuturePriceValidityStartDate` |  | |  |  |  |  |
+| `LIFOValuationPoolNumber` |  | |  |  |  |  |
+| `TaxPricel1InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxPrice2InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxPrice3InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxBasedPricesPriceUnitQty` |  | |  |  |  |  |
+| `IsLIFOAndFIFORelevant` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductValuation` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Source Code
 

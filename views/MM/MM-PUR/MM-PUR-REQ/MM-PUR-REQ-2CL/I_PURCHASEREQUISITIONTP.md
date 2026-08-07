@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseRequisition` | ✓ | |  |  |
-| `PurchaseRequisitionType` |  | |  |  |
-| `PurReqnDescription` |  | |  |  |
-| `SourceDetermination` |  | |  |  |
-| `PurReqnDoOnlyValidation` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurchaseRequisitionItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |  |  |
+| `PurchaseRequisitionType` |  | |  |  |  |  |
+| `PurReqnDescription` |  | |  |  |  |  |
+| `SourceDetermination` |  | |  |  |  |  |
+| `PurReqnDoOnlyValidation` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
 
 ## Source Code
 

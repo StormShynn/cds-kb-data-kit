@@ -29,109 +29,109 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrder` | ✓ | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceOrderType` |  | |  |  |
-| `ServiceOrderUUID` |  | |  |  |
-| `ServiceOrderDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `RespyMgmtServiceTeam` |  | |  |  |
-| `RespyMgmtGlobalTeamID` |  | |  |  |
-| `ServiceOrderIsNew` |  | |  |  |
-| `ServiceOrderIsInProcess` |  | |  |  |
-| `ServiceOrderIsReleased` |  | |  |  |
-| `ServiceOrderIsCompleted` |  | |  |  |
-| `ServiceOrderIsRejected` |  | |  |  |
-| `ServiceOrderStatus` |  | |  |  |
-| `SrvcOrdReldForBillingStatus` |  | |  |  |
-| `SrvcOrdBillingStatus` |  | |  |  |
-| `ServiceOrderHasError` |  | |  |  |
-| `SrvcDocTransferStatus` |  | |  |  |
-| `SrvcOrdExecutionStatus` |  | |  |  |
-| `SrvcOrdCreditStatus` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `ErlstRequestedDeliveryDateTime` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
-| `PricingDocument` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `ServiceOrderRejectionReason` |  | |  |  |
-| `SrvcOrdExtReference` |  | |  |  |
-| `ReferenceServiceContract` |  | |  |  |
-| `RefServiceOrderTemplate` |  | |  |  |
-| `ReferenceServiceQtan` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `FSMServiceCall` |  | |  |  |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_SrvcSEPAMandateRelevance` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_ServiceDocumentPriority` | | ✓ | | |
-| `_SrvcDocumentRejectionReason` | | ✓ | | |
-| `_Confirmation` | | ✓ | | |
-| `_ServiceOrderItemTP` | | ✓ | | |
-| `_SrvcOrdPartnerTP` | | ✓ | | |
-| `_SrvcOrdReferenceObjectTP` | | ✓ | | |
-| `_SrvcOrdPriceElementTP` | | ✓ | | |
-| `_SrvcOrdUserStatusTP` | | ✓ | | |
-| `_SrvcOrdAppointmentTP` | | ✓ | | |
-| `_SrvcOrdDurationTP` | | ✓ | | |
-| `_SrvcOrdFUPSrvcConfTP` | | ✓ | | |
-| `_SrvcOrdFUPBillgDocTP` | | ✓ | | |
-| `_SrvcOrdFUPPurchaseOrderTP` | | ✓ | | |
-| `_SrvcOrdFUPPurReqnTP` | | ✓ | | |
-| `_SrvcOrdFUPSrvcEntrSheetTP` | | ✓ | | |
-| `_SrvcOrdFUPSuplrInvcTP` | | ✓ | | |
-| `_SrvcOrdFUPMaintOrdTP` | | ✓ | | |
-| `_SrvcOrdLongTextTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceOrderType` |  | |  |  |  |  |
+| `ServiceOrderUUID` |  | |  |  |  |  |
+| `ServiceOrderDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |  |  |
+| `ServiceOrderIsNew` |  | |  |  |  |  |
+| `ServiceOrderIsInProcess` |  | |  |  |  |  |
+| `ServiceOrderIsReleased` |  | |  |  |  |  |
+| `ServiceOrderIsCompleted` |  | |  |  |  |  |
+| `ServiceOrderIsRejected` |  | |  |  |  |  |
+| `ServiceOrderStatus` |  | |  |  |  |  |
+| `SrvcOrdReldForBillingStatus` |  | |  |  |  |  |
+| `SrvcOrdBillingStatus` |  | |  |  |  |  |
+| `ServiceOrderHasError` |  | |  |  |  |  |
+| `SrvcDocTransferStatus` |  | |  |  |  |  |
+| `SrvcOrdExecutionStatus` |  | |  |  |  |  |
+| `SrvcOrdCreditStatus` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `ErlstRequestedDeliveryDateTime` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `ServiceOrderRejectionReason` |  | |  |  |  |  |
+| `SrvcOrdExtReference` |  | |  |  |  |  |
+| `ReferenceServiceContract` |  | |  |  |  |  |
+| `RefServiceOrderTemplate` |  | |  |  |  |  |
+| `ReferenceServiceQtan` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `FSMServiceCall` |  | |  |  |  |  |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_ServiceDocumentPriority` | | ✓ | | | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | | | |
+| `_Confirmation` | | ✓ | | | | |
+| `_ServiceOrderItemTP` | | ✓ | | | | |
+| `_SrvcOrdPartnerTP` | | ✓ | | | | |
+| `_SrvcOrdReferenceObjectTP` | | ✓ | | | | |
+| `_SrvcOrdPriceElementTP` | | ✓ | | | | |
+| `_SrvcOrdUserStatusTP` | | ✓ | | | | |
+| `_SrvcOrdAppointmentTP` | | ✓ | | | | |
+| `_SrvcOrdDurationTP` | | ✓ | | | | |
+| `_SrvcOrdFUPSrvcConfTP` | | ✓ | | | | |
+| `_SrvcOrdFUPBillgDocTP` | | ✓ | | | | |
+| `_SrvcOrdFUPPurchaseOrderTP` | | ✓ | | | | |
+| `_SrvcOrdFUPPurReqnTP` | | ✓ | | | | |
+| `_SrvcOrdFUPSrvcEntrSheetTP` | | ✓ | | | | |
+| `_SrvcOrdFUPSuplrInvcTP` | | ✓ | | | | |
+| `_SrvcOrdFUPMaintOrdTP` | | ✓ | | | | |
+| `_SrvcOrdLongTextTP` | | ✓ | | | | |
 
 ## Source Code
 

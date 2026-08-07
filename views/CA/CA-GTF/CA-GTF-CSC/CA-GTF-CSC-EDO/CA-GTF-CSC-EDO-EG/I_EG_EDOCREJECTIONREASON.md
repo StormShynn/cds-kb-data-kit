@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EG_EDocRejectionCode` | ✓ | |  |  |
-| `EG_EDocLanguage` |  | |  |  |
-| `EG_EDocRjcnReasonDesc` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EG_EDocRejectionCode` | ✓ | |  |  |  |  |
+| `EG_EDocLanguage` |  | |  |  |  |  |
+| `EG_EDocRjcnReasonDesc` |  | |  |  |  |  |
 
 ## Source Code
 

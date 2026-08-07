@@ -31,54 +31,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` |  | |  |  |
-| `IsStatisticalCostCenter` |  | |  |  |
-| `CostCenter` |  | |  | `, {type :#PARAMETER,value :'P_CostCenterHierarchy' }], hierarchyInitialLevel: 2, keyDisplay : #NOT_COMPOUND } CostCenter` |
-| `GLAccount` |  | |  | `], mandatory : false } GLAccount` |
-| `CostCtrActivityType` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `SourceLedger` |  | |  |  |
-| `AccountingDocument` |  | |  |  |
-| `FinancialPlanningReqTransSqnc` |  | |  |  |
-| `FinancialPlanningDataPacket` |  | |  |  |
-| `ActualPlanJournalEntryItem` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalQuarter` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `FiscalYearQuarter` |  | |  |  |
-| `LedgerFiscalYear` |  | |  |  |
-| `GlobalCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AccountAssignmentType` |  | |  |  |
-| `PartnerAccountAssignmentType` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `PartnerCostCtrActivityType` |  | |  |  |
-| `PartnerCostCenter` |  | |  |  |
-| `PartnerProjectInternalID` |  | |  |  |
-| `PartnerProjectExternalID` |  | |  |  |
-| `PartnerWBSElementExternalID` |  | |  |  |
-| `PartnerFunctionalArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |
-| `AmountInGlobalCurrency` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `RatioUnit` |  | |  | `cast( '%' as abap.unit )` |
-| `CurrentFYYearToDateValue` |  | |  | `] } cast( case when ( PlanningCategory = 'ACT01' and LedgerFiscalYear = $parameters.P_LedgerFiscalYear and PostingDate <= $parameters.P_ReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |
-| `PreviousFYYearToDateValue` |  | |  | `] } cast( case when ( PlanningCategory = 'ACT01' and LedgerFiscalYear = $parameters.P_ComparisonLedgerFiscalYear and PostingDate <= $parameters.P_ComparisonReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |
-| `PlanFYYearToDateValue` |  | |  | `] } cast( case when ( PlanningCategory = $parameters.P_PlanningCategory and LedgerFiscalYear = $parameters.P_LedgerFiscalYear and PostingDate <= $parameters.P_ReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |
-| `DeltaActPlanFYYearToDateValue` |  | |  | `] } cast( $projection.CurrentFYYearToDateValue - $projection.PlanFYYearToDateValue as abap.dec( 23, 2 ) )` |
-| `DeltaActPlanFYYearToDateRatio` |  | |  | `] } ratio_of( portion=>$projection.DeltaActPlanFYYearToDateValue, total=>$projection.PlanFYYearToDateValue ) * 100` |
-| `CurrentFYPeriodValue` |  | |  | `] } cast( case when ( PlanningCategory = 'ACT01' and FiscalYearPeriod = $parameters.P_FiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |
-| `PreviousFYPeriodValue` |  | |  | `] } cast( case when ( PlanningCategory = 'ACT01' and FiscalYearPeriod = $parameters.P_PreviousFiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |
-| `CurrentFYPeriodPlanValue` |  | |  | `] } cast( case when ( PlanningCategory = $parameters.P_PlanningCategory and FiscalYearPeriod = $parameters.P_FiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |
-| `DeltaActPlanFYPeriodValue` |  | |  | `] } cast( $projection.CurrentFYPeriodValue - $projection.CurrentFYPeriodPlanValue as abap.dec( 23, 2 ) )` |
-| `DeltaActPlanFYPeriodRatio` |  | |  | `] } ratio_of( portion=>$projection.DeltaActPlanFYPeriodValue, total=>$projection.CurrentFYPeriodPlanValue ) * 100` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  |  |  |
+| `IsStatisticalCostCenter` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `SourceLedger` |  | |  |  |  |  |
+| `AccountingDocument` |  | |  |  |  |  |
+| `FinancialPlanningReqTransSqnc` |  | |  |  |  |  |
+| `FinancialPlanningDataPacket` |  | |  |  |  |  |
+| `ActualPlanJournalEntryItem` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalQuarter` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `FiscalYearQuarter` |  | |  |  |  |  |
+| `LedgerFiscalYear` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AccountAssignmentType` |  | |  |  |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `PartnerCostCtrActivityType` |  | |  |  |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `PartnerProjectInternalID` |  | |  |  |  |  |
+| `PartnerProjectExternalID` |  | |  |  |  |  |
+| `PartnerWBSElementExternalID` |  | |  |  |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInGlobalCurrency` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `RatioUnit` |  | |  | `cast( '%' as abap.unit )` |  |  |
+| `CurrentFYYearToDateValue` |  | |  | `cast( case when ( PlanningCategory = 'ACT01' and LedgerFiscalYear = $parameters.P_LedgerFiscalYear and PostingDate <= $parameters.P_ReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `PreviousFYYearToDateValue` |  | |  | `cast( case when ( PlanningCategory = 'ACT01' and LedgerFiscalYear = $parameters.P_ComparisonLedgerFiscalYear and PostingDate <= $parameters.P_ComparisonReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `PlanFYYearToDateValue` |  | |  | `cast( case when ( PlanningCategory = $parameters.P_PlanningCategory and LedgerFiscalYear = $parameters.P_LedgerFiscalYear and PostingDate <= $parameters.P_ReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaActPlanFYYearToDateValue` |  | |  | `cast( $projection.CurrentFYYearToDateValue - $projection.PlanFYYearToDateValue as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaActPlanFYYearToDateRatio` |  | |  | `ratio_of( portion=>$projection.DeltaActPlanFYYearToDateValue, total=>$projection.PlanFYYearToDateValue ) * 100` |  |  |
+| `CurrentFYPeriodValue` |  | |  | `cast( case when ( PlanningCategory = 'ACT01' and FiscalYearPeriod = $parameters.P_FiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `PreviousFYPeriodValue` |  | |  | `cast( case when ( PlanningCategory = 'ACT01' and FiscalYearPeriod = $parameters.P_PreviousFiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `CurrentFYPeriodPlanValue` |  | |  | `cast( case when ( PlanningCategory = $parameters.P_PlanningCategory and FiscalYearPeriod = $parameters.P_FiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaActPlanFYPeriodValue` |  | |  | `cast( $projection.CurrentFYPeriodValue - $projection.CurrentFYPeriodPlanValue as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaActPlanFYPeriodRatio` |  | |  | `ratio_of( portion=>$projection.DeltaActPlanFYPeriodValue, total=>$projection.CurrentFYPeriodPlanValue ) * 100` |  |  |
 
 ## Source Code
 

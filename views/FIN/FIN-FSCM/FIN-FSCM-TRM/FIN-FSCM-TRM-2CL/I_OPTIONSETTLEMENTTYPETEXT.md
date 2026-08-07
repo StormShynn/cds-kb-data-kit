@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OptionSettlementType` | ✓ | |  | `cast(DomainText.domvalue_l as option_settlement_type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `OptionSettlementTypeName` |  | |  | `cast(DomainText.ddtext as option_settlement_type_name preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OptionSettlementType` | ✓ | |  | `cast(DomainText.domvalue_l as option_settlement_type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `OptionSettlementTypeName` |  | |  | `cast(DomainText.ddtext as option_settlement_type_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OperationSetupType` | ✓ | |  | `cast(rasch as pph_rasch preserving type)` |
-| `Plant` | ✓ | |  | `werks` |
-| `_Plant` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OperationSetupType` | ✓ | |  | `cast(rasch as pph_rasch preserving type)` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

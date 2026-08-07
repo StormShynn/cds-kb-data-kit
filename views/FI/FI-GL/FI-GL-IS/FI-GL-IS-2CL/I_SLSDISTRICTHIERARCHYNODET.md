@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDistrictHierarchy` | ✓ | |  | `cast ( hrrp_nodet_n.hryid as fis_hryid_salesdistrict preserving type )` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `ValidityEndDate` | ✓ | |  | `cast (hrrp_nodet_n.hryvalto as fis_datbi preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `HierarchyNodeText` |  | |  | `nodetxt` |
-| `ValidityStartDate` |  | |  | `cast (hrrp_nodet_n.hryvalfrom as fis_datab preserving type )` |
-| `_Language` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDistrictHierarchy` | ✓ | |  | `cast ( hrrp_nodet_n.hryid as fis_hryid_salesdistrict preserving type )` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast (hrrp_nodet_n.hryvalto as fis_datbi preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `HierarchyNodeText` |  | |  | `nodetxt` |  |  |
+| `ValidityStartDate` |  | |  | `cast (hrrp_nodet_n.hryvalfrom as fis_datab preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

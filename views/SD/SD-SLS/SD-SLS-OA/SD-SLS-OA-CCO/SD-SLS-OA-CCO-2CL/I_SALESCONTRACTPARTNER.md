@@ -31,43 +31,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContract` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `SDDocPartnerSequenceNumber` | ✓ | |  |  |
-| `Partner` |  | |  |  |
-| `FullName` |  | |  | `cast( case SDPartner.AddressID when '' then case when SDPartner.Personnel != '00000000' then coalesce(_WorkAssignment.PersonFullName, _WorkAssignment._BusinessPartner.LastName) end else case when SDPartner.AddressObjectType = '1' then case when SDPartner.ContactPerson != '0000000000' then cast(substring(replace(concat(SDPartner._ContactPerson.FirstName, concat(' &@', SDPartner._ContactPerson.LastName) ), '&@', '') ,1,80) as ad_namtext ) when SDPartner.Personnel != '00000000' then _OrganizationAddress.AddresseeName1 else cast(concat_with_space(_OrganizationAddress.AddresseeName1, _OrganizationAddress.AddresseeName2, 1) as ad_namtext ) end when SDPartner.AddressObjectType = '2' then _PersonAddress.PersonFullName when SDPartner.AddressObjectType = '3' then _PersonWorkplaceAddress.PersonFullName end end as ad_namtext )` |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `SDDocPartnerAddressRefType` |  | |  |  |
-| `BPAddrDeterminationTransaction` |  | |  |  |
-| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
-| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `FormOfAddress` |  | |  | `coalesce(_PersonName.FormOfAddress, _OrgNamePostalAddress.FormOfAddress )` |
-| `CorrespondenceLanguage` |  | |  | `coalesce(_PersonName.CorrespondenceLanguage, _OrgNamePostalAddress.CorrespondenceLanguage )` |
-| `InternationalPhoneNumber` |  | |  | `cast( case AddressID when '' then _WorkAssignment._WorkplaceAddress.NormalizedPhoneNumber else _CurrentDfltLandlinePhoneNmbr.InternationalPhoneNumber end as ad_telnrlg preserving type )` |
-| `InternationalMobilePhoneNumber` |  | |  | `cast( case AddressID when '' then _WorkAssignment._WorkplaceAddress.MblNormalizedPhoneNumber else _CurrentDfltMobilePhoneNumber.InternationalPhoneNumber end as ad_telnrlg preserving type )` |
-| `InternationalFaxNumber` |  | |  | `cast( case AddressID when '' then _WorkAssignment._WorkplaceAddress.InternationalFaxNumber else _CurrentDfltFaxNumber.InternationalFaxNumber end as ad_fxnrlng preserving type )` |
-| `EmailAddress` |  | |  | `cast( case AddressID when '' then _WorkAssignment._WorkplaceAddress.DefaultEmailAddress else _CurrentDfltEmailAddress.EmailAddress end as vdm_sd_ad_smtpadr preserving type )` |
-| `_PersonWorkplaceAddress` | | ✓ | | |
-| `_OrganizationAddress` | | ✓ | | |
-| `_PersonAddress` | | ✓ | | |
-| `_OrgNamePostalAddress` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_SalesContract` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_DfltAddrRprstn` | | ✓ | | |
-| `_BusinessPartnerAddress` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `SDDocPartnerSequenceNumber` | ✓ | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `FullName` |  | |  | `cast( case SDPartner.AddressID when '' then case when SDPartner.Personnel != '00000000' then coalesce(_WorkAssignment.PersonFullName, _WorkAssignment._BusinessPartner.LastName) end else case when SDPartner.AddressObjectType = '1' then case when SDPartner.ContactPerson != '0000000000' then cast(substring(replace(concat(SDPartner._ContactPerson.FirstName, concat(' &@', SDPartner._ContactPerson.LastName) ), '&@', '') ,1,80) as ad_namtext ) when SDPartner.Personnel != '00000000' then _OrganizationAddress.AddresseeName1 else cast(concat_with_space(_OrganizationAddress.AddresseeName1, _OrganizationAddress.AddresseeName2, 1) as ad_namtext ) end when SDPartner.AddressObjectType = '2' then _PersonAddress.PersonFullName when SDPartner.AddressObjectType = '3' then _PersonWorkplaceAddress.PersonFullName end end as ad_namtext )` |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |  |  |
+| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  | `coalesce(_PersonName.FormOfAddress, _OrgNamePostalAddress.FormOfAddress )` |  |  |
+| `CorrespondenceLanguage` |  | |  | `coalesce(_PersonName.CorrespondenceLanguage, _OrgNamePostalAddress.CorrespondenceLanguage )` |  |  |
+| `InternationalPhoneNumber` |  | |  | `cast( case AddressID when '' then _WorkAssignment._WorkplaceAddress.NormalizedPhoneNumber else _CurrentDfltLandlinePhoneNmbr.InternationalPhoneNumber end as ad_telnrlg preserving type )` |  |  |
+| `InternationalMobilePhoneNumber` |  | |  | `cast( case AddressID when '' then _WorkAssignment._WorkplaceAddress.MblNormalizedPhoneNumber else _CurrentDfltMobilePhoneNumber.InternationalPhoneNumber end as ad_telnrlg preserving type )` |  |  |
+| `InternationalFaxNumber` |  | |  | `cast( case AddressID when '' then _WorkAssignment._WorkplaceAddress.InternationalFaxNumber else _CurrentDfltFaxNumber.InternationalFaxNumber end as ad_fxnrlng preserving type )` |  |  |
+| `EmailAddress` |  | |  | `cast( case AddressID when '' then _WorkAssignment._WorkplaceAddress.DefaultEmailAddress else _CurrentDfltEmailAddress.EmailAddress end as vdm_sd_ad_smtpadr preserving type )` |  |  |
+| `_PersonWorkplaceAddress` | | ✓ | | | | |
+| `_OrganizationAddress` | | ✓ | | | | |
+| `_PersonAddress` | | ✓ | | | | |
+| `_OrgNamePostalAddress` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_SalesContract` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_DfltAddrRprstn` | | ✓ | | | | |
+| `_BusinessPartnerAddress` | | ✓ | | | | |
 
 ## Associations
 

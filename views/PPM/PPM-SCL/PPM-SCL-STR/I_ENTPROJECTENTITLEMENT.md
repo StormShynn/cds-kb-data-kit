@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectEntitlementUUID` | ✓ | |  | `guid` |
-| `ProjectUUID` |  | |  | `project_guid` |
-| `ProjectRoleUUID` |  | |  | `role_guid` |
-| `TeamMemberUUID` |  | |  | `team_member_guid` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `CreationDateTime` |  | |  | `created_on` |
-| `LastChangedByUser` |  | |  | `changed_by` |
-| `LastChangeDateTime` |  | |  | `changed_on` |
-| `_Project` | | ✓ | | |
-| `_Role` | | ✓ | | |
-| `_TeamMember` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectEntitlementUUID` | ✓ | |  | `guid` |  |  |
+| `ProjectUUID` |  | |  | `project_guid` |  |  |
+| `ProjectRoleUUID` |  | |  | `role_guid` |  |  |
+| `TeamMemberUUID` |  | |  | `team_member_guid` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `CreationDateTime` |  | |  | `created_on` |  |  |
+| `LastChangedByUser` |  | |  | `changed_by` |  |  |
+| `LastChangeDateTime` |  | |  | `changed_on` |  |  |
+| `_Project` | | ✓ | | | | |
+| `_Role` | | ✓ | | | | |
+| `_TeamMember` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,126 +30,126 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturn` | ✓ | |  |  |
-| `CustomerReturnType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `SenderBusinessSystemName` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `CreditControlArea` |  | |  |  |
-| `CustomerReturnDate` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SDDocumentReason` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderType` |  | |  |  |
-| `CustPurOrdTypeByShipToParty` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `CustomerPurchaseOrderSuplmnt` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `PurchaseOrderByShipToParty` |  | |  |  |
-| `CorrespncExternalReference` |  | |  |  |
-| `CorrespncExtRefByShipToParty` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `CustomerReturnCondition` |  | |  |  |
-| `SDPricingProcedure` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `PriceListType` |  | |  |  |
-| `TaxDepartureCountry` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `DeliveryBlockReason` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `CustomerReturnApprovalReason` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `BillingCompanyCode` |  | |  |  |
-| `HeaderBillingBlockReason` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `CostCenterBusinessArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `ControllingObject` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `AccountingDocExternalReference` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `RetsMgmtProcess` |  | |  |  |
-| `ReturnsDocumentType` |  | |  |  |
-| `ReturnsDocument` |  | |  |  |
-| `RetsMgmtLogProcgStatus` |  | |  |  |
-| `RetsMgmtCompnProcgStatus` |  | |  |  |
-| `RetsMgmtProcessingStatus` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `OverallSDDocumentRejectionSts` |  | |  |  |
-| `TotalBlockStatus` |  | |  |  |
-| `OverallTotalDeliveryStatus` |  | |  |  |
-| `OverallDeliveryStatus` |  | |  |  |
-| `OverallDeliveryBlockStatus` |  | |  |  |
-| `OverallOrdReltdBillgStatus` |  | |  |  |
-| `OverallBillingBlockStatus` |  | |  |  |
-| `OverallTotalSDDocRefStatus` |  | |  |  |
-| `OverallSDDocReferenceStatus` |  | |  |  |
-| `TotalCreditCheckStatus` |  | |  |  |
-| `MaxDocValueCreditCheckStatus` |  | |  |  |
-| `PaymentTermCreditCheckStatus` |  | |  |  |
-| `FinDocCreditCheckStatus` |  | |  |  |
-| `ExprtInsurCreditCheckStatus` |  | |  |  |
-| `PaytAuthsnCreditCheckSts` |  | |  |  |
-| `CentralCreditCheckStatus` |  | |  |  |
-| `CentralCreditChkTechErrSts` |  | |  |  |
-| `HdrGeneralIncompletionStatus` |  | |  |  |
-| `OverallPricingIncompletionSts` |  | |  |  |
-| `HeaderDelivIncompletionStatus` |  | |  |  |
-| `HeaderBillgIncompletionStatus` |  | |  |  |
-| `OvrlItmGeneralIncompletionSts` |  | |  |  |
-| `OvrlItmBillingIncompletionSts` |  | |  |  |
-| `OvrlItmDelivIncompletionSts` |  | |  |  |
-| `SalesDocApprovalStatus` |  | |  |  |
-| `CustomerTaxClassification1` |  | |  |  |
-| `CustomerTaxClassification2` |  | |  |  |
-| `CustomerTaxClassification3` |  | |  |  |
-| `CustomerTaxClassification4` |  | |  |  |
-| `CustomerTaxClassification5` |  | |  |  |
-| `CustomerTaxClassification6` |  | |  |  |
-| `CustomerTaxClassification7` |  | |  |  |
-| `CustomerTaxClassification8` |  | |  |  |
-| `CustomerTaxClassification9` |  | |  |  |
-| `_CustomerReturnItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |  |  |
+| `CustomerReturnType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `SenderBusinessSystemName` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `CreditControlArea` |  | |  |  |  |  |
+| `CustomerReturnDate` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |  |  |
+| `CustPurOrdTypeByShipToParty` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `CustomerPurchaseOrderSuplmnt` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `PurchaseOrderByShipToParty` |  | |  |  |  |  |
+| `CorrespncExternalReference` |  | |  |  |  |  |
+| `CorrespncExtRefByShipToParty` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `CustomerReturnCondition` |  | |  |  |  |  |
+| `SDPricingProcedure` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `PriceListType` |  | |  |  |  |  |
+| `TaxDepartureCountry` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `DeliveryBlockReason` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `CustomerReturnApprovalReason` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `BillingCompanyCode` |  | |  |  |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `CostCenterBusinessArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `ControllingObject` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `AccountingDocExternalReference` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `RetsMgmtProcess` |  | |  |  |  |  |
+| `ReturnsDocumentType` |  | |  |  |  |  |
+| `ReturnsDocument` |  | |  |  |  |  |
+| `RetsMgmtLogProcgStatus` |  | |  |  |  |  |
+| `RetsMgmtCompnProcgStatus` |  | |  |  |  |  |
+| `RetsMgmtProcessingStatus` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |  |  |
+| `TotalBlockStatus` |  | |  |  |  |  |
+| `OverallTotalDeliveryStatus` |  | |  |  |  |  |
+| `OverallDeliveryStatus` |  | |  |  |  |  |
+| `OverallDeliveryBlockStatus` |  | |  |  |  |  |
+| `OverallOrdReltdBillgStatus` |  | |  |  |  |  |
+| `OverallBillingBlockStatus` |  | |  |  |  |  |
+| `OverallTotalSDDocRefStatus` |  | |  |  |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |  |  |
+| `MaxDocValueCreditCheckStatus` |  | |  |  |  |  |
+| `PaymentTermCreditCheckStatus` |  | |  |  |  |  |
+| `FinDocCreditCheckStatus` |  | |  |  |  |  |
+| `ExprtInsurCreditCheckStatus` |  | |  |  |  |  |
+| `PaytAuthsnCreditCheckSts` |  | |  |  |  |  |
+| `CentralCreditCheckStatus` |  | |  |  |  |  |
+| `CentralCreditChkTechErrSts` |  | |  |  |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |  |  |
+| `OverallPricingIncompletionSts` |  | |  |  |  |  |
+| `HeaderDelivIncompletionStatus` |  | |  |  |  |  |
+| `HeaderBillgIncompletionStatus` |  | |  |  |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |  |  |
+| `OvrlItmBillingIncompletionSts` |  | |  |  |  |  |
+| `OvrlItmDelivIncompletionSts` |  | |  |  |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |  |  |
+| `CustomerTaxClassification1` |  | |  |  |  |  |
+| `CustomerTaxClassification2` |  | |  |  |  |  |
+| `CustomerTaxClassification3` |  | |  |  |  |  |
+| `CustomerTaxClassification4` |  | |  |  |  |  |
+| `CustomerTaxClassification5` |  | |  |  |  |  |
+| `CustomerTaxClassification6` |  | |  |  |  |  |
+| `CustomerTaxClassification7` |  | |  |  |  |  |
+| `CustomerTaxClassification8` |  | |  |  |  |  |
+| `CustomerTaxClassification9` |  | |  |  |  |  |
+| `_CustomerReturnItem` | | ✓ | | | | |
 
 ## Associations
 

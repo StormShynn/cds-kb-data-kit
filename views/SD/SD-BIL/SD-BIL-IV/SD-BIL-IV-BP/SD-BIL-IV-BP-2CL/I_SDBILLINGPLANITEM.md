@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingPlan` | ✓ | |  |  |
-| `BillingPlanItem` | ✓ | |  |  |
-| `BillingPlanBillingDate` |  | |  |  |
-| `BillingPlanServiceStartDate` |  | |  |  |
-| `BillingPlanServiceEndDate` |  | |  |  |
-| `BillingPlanAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `BillingPlanRelatedBillgStatus` |  | |  |  |
-| `BillingPlanType` |  | |  |  |
-| `BillingPlanDateCategory` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `ProposedBillingDocumentType` |  | |  |  |
-| `AdoptingBillingDateID` |  | |  |  |
-| `BillingPlanBillingRule` |  | |  |  |
-| `BillingPlanDateDescriptionCode` |  | |  |  |
-| `BillingPlanMilestoneUsage` |  | |  |  |
-| `BillingPlanAmountPercent` |  | |  |  |
-| `BillgPlnDteCorrectionRfndType` |  | |  |  |
-| `AccountingExchangeRate` |  | |  |  |
-| `PostponementReason` |  | |  |  |
-| `BillingPlanItemUsage` |  | |  |  |
-| `BillingPlanItemUsage_2` |  | |  |  |
-| `BillingPlanUsageCategory` |  | |  |  |
-| `BillingPlanItemDescription` |  | |  |  |
-| `EnterpriseProjectMilestoneUUID` |  | |  |  |
-| `EnterpriseProjectMilestone` |  | |  |  |
-| `_SDBillingPlan` | | ✓ | | |
-| `_BillingPlanDateCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingPlan` | ✓ | |  |  |  |  |
+| `BillingPlanItem` | ✓ | |  |  |  |  |
+| `BillingPlanBillingDate` |  | |  |  |  |  |
+| `BillingPlanServiceStartDate` |  | |  |  |  |  |
+| `BillingPlanServiceEndDate` |  | |  |  |  |  |
+| `BillingPlanAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `BillingPlanRelatedBillgStatus` |  | |  |  |  |  |
+| `BillingPlanType` |  | |  |  |  |  |
+| `BillingPlanDateCategory` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `ProposedBillingDocumentType` |  | |  |  |  |  |
+| `AdoptingBillingDateID` |  | |  |  |  |  |
+| `BillingPlanBillingRule` |  | |  |  |  |  |
+| `BillingPlanDateDescriptionCode` |  | |  |  |  |  |
+| `BillingPlanMilestoneUsage` |  | |  |  |  |  |
+| `BillingPlanAmountPercent` |  | |  |  |  |  |
+| `BillgPlnDteCorrectionRfndType` |  | |  |  |  |  |
+| `AccountingExchangeRate` |  | |  |  |  |  |
+| `PostponementReason` |  | |  |  |  |  |
+| `BillingPlanItemUsage` |  | |  |  |  |  |
+| `BillingPlanItemUsage_2` |  | |  |  |  |  |
+| `BillingPlanUsageCategory` |  | |  |  |  |  |
+| `BillingPlanItemDescription` |  | |  |  |  |  |
+| `EnterpriseProjectMilestoneUUID` |  | |  |  |  |  |
+| `EnterpriseProjectMilestone` |  | |  |  |  |  |
+| `_SDBillingPlan` | | ✓ | | | | |
+| `_BillingPlanDateCategory` | | ✓ | | | | |
 
 ## Associations
 

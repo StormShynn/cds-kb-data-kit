@@ -30,51 +30,51 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesQuotation` | ✓ | |  |  |
-| `SalesQuotationType` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `SDDocumentReason` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `SalesQuotationApprovalReason` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `BindingPeriodValidityStartDate` |  | |  |  |
-| `BindingPeriodValidityEndDate` |  | |  |  |
-| `HdrOrderProbabilityInPercent` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `HdrGeneralIncompletionStatus` |  | |  |  |
-| `OvrlItmGeneralIncompletionSts` |  | |  |  |
-| `OverallSDDocReferenceStatus` |  | |  |  |
-| `SalesDocApprovalStatus` |  | |  |  |
-| `TotalCreditCheckStatus` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_PricingElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |  |  |
+| `SalesQuotationType` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `SalesQuotationApprovalReason` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `BindingPeriodValidityStartDate` |  | |  |  |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |  |  |
+| `HdrOrderProbabilityInPercent` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_PricingElement` | | ✓ | | | | |
 
 ## Source Code
 

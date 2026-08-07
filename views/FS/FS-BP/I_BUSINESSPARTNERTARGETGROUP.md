@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerTargetGroup` | ✓ | |  | `group_d` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerTargetGroup` | ✓ | |  | `group_d` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

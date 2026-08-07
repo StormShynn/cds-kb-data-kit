@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  | `objtype_h` |
-| `ServiceDocument` | ✓ | |  | `object_id` |
-| `ServiceDocumentItem` | ✓ | |  | `number_int` |
-| `BillingRequestItem` | ✓ | |  | `record_no` |
-| `BillgReqItemBillingDateTime` |  | |  | `bill_date` |
-| `BillgReqItemBillingStatus` |  | |  | `bill_settl_stat` |
-| `SettlementStartDateTime` |  | |  | `settl_from` |
-| `SettlementEndDateTime` |  | |  | `settl_to` |
-| `BillingPlanTimeZone` |  | | `_ServiceDocItem` | `BillingPlanTimeZone` |
-| `TransactionCurrency` |  | | `_ServiceDocItem` | `TransactionCurrency` |
-| `BillgReqItemNetAmount` |  | |  | `} net_value` |
-| `BillingBlockReason` |  | |  | `billing_block` |
-| `BillgReqItemDescription` |  | |  | `description` |
-| `ServicesRenderedDateTime` |  | |  | `servicesrendereddatetime` |
-| `BillgReqItemPricingDate` |  | |  | `price_date` |
-| `BillgReqItemTaxAmount` |  | |  | `tax_amount` |
-| `BillgReqItemGrossAmount` |  | |  | `gross_value` |
-| `BillgReqItemIsCreditItem` |  | |  | `credit_indicator` |
-| `BillgReqItemUsageType` |  | |  | `billreq_i_usage_type` |
-| `BillgReqItemDeletionStatus` |  | |  | `bill_del_stat` |
-| `_ServiceDocItem` | | ✓ | | |
-| `_BillgReqItmSettlmtStatus` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_BillingBlockReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  | `objtype_h` |  |  |
+| `ServiceDocument` | ✓ | |  | `object_id` |  |  |
+| `ServiceDocumentItem` | ✓ | |  | `number_int` |  |  |
+| `BillingRequestItem` | ✓ | |  | `record_no` |  |  |
+| `BillgReqItemBillingDateTime` |  | |  | `bill_date` |  |  |
+| `BillgReqItemBillingStatus` |  | |  | `bill_settl_stat` |  |  |
+| `SettlementStartDateTime` |  | |  | `settl_from` |  |  |
+| `SettlementEndDateTime` |  | |  | `settl_to` |  |  |
+| `BillingPlanTimeZone` |  | | `_ServiceDocItem` | `BillingPlanTimeZone` |  |  |
+| `TransactionCurrency` |  | | `_ServiceDocItem` | `TransactionCurrency` |  |  |
+| `BillgReqItemNetAmount` |  | |  | `net_value` |  |  |
+| `BillingBlockReason` |  | |  | `billing_block` |  |  |
+| `BillgReqItemDescription` |  | |  | `description` |  |  |
+| `ServicesRenderedDateTime` |  | |  | `servicesrendereddatetime` |  |  |
+| `BillgReqItemPricingDate` |  | |  | `price_date` |  |  |
+| `BillgReqItemTaxAmount` |  | |  | `tax_amount` |  |  |
+| `BillgReqItemGrossAmount` |  | |  | `gross_value` |  |  |
+| `BillgReqItemIsCreditItem` |  | |  | `credit_indicator` |  |  |
+| `BillgReqItemUsageType` |  | |  | `billreq_i_usage_type` |  |  |
+| `BillgReqItemDeletionStatus` |  | |  | `bill_del_stat` |  |  |
+| `_ServiceDocItem` | | ✓ | | | | |
+| `_BillgReqItmSettlmtStatus` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_BillingBlockReason` | | ✓ | | | | |
 
 ## Associations
 

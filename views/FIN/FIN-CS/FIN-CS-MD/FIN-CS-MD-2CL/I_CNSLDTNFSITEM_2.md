@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( itclg as fincs_conschartofaccounts preserving type )` |
-| `CnsldtnFinancialStatementItem` |  | |  | `}] key cast ( item as fincs_consolidationfsitem preserving type )` |
-| `ConsolidationFSItemType` |  | |  | `cast ( itclass as fincs_fsitemtype preserving type )` |
-| `ConsolidationBreakdownCategory` |  | |  | `}] cast( itbrkdwn as fincs_consbreakdowncategory preserving type )` |
-| `CnsldtnFSItemIsForCnsldtnOnly` |  | |  | `cast( itcitem as fincs_fsitemisforcnsldtnonly preserving type )` |
-| `CnsldtnFSItemPostingIsBlocked` |  | |  | `cast( itblkd as fincs_fsitempostingisblocked preserving type )` |
-| `CnsldtnFSItemIsNetBalCarryFwd` |  | |  | `cast (itnbcf as fincs_fsitemisnetbalcarryfwd preserving type )` |
-| `CnsldtnFSItemLink` |  | |  | `cast( link as fincs_md_link preserving type )` |
-| `CnsldtnFSItemLinkLabel` |  | |  | `cast( linklabel as fincs_md_link_label preserving type )` |
-| `ETag` |  | |  | `etag` |
-| `CreationDateTime` |  | |  | `created_at` |
-| `CnsldtnSignLogicIsFSItemSpcfc` |  | |  | `cast( case _GlobalSetting.CnsldtnCustomSignLogicIsActive when 'X' then is_sign_item_specific else ' ' end as fincs_signlogicisfsitemspcfc preserving type )` |
-| `ConsolidationSignLogicType` |  | |  | `cast( case when _GlobalSetting.CnsldtnCustomSignLogicIsActive = 'X' and is_sign_item_specific = 'X' then sign else _CnsldtnFSItemTypeSignLogic.ConsolidationSignLogicType end as fincs_signlogictype preserving type )` |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_HierarchyNode` | | ✓ | | |
-| `_FSItemByTimeVersion` | | ✓ | | |
-| `_FSItemType` | | ✓ | | |
-| `_SignLogicType` | | ✓ | | |
-| `_BreakdownCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( itclg as fincs_conschartofaccounts preserving type )` |  |  |
+| `CnsldtnFinancialStatementItem` | ✓ | |  | `cast ( item as fincs_consolidationfsitem preserving type )` |  |  |
+| `ConsolidationFSItemType` |  | |  | `cast ( itclass as fincs_fsitemtype preserving type )` |  |  |
+| `ConsolidationBreakdownCategory` |  | |  | `cast( itbrkdwn as fincs_consbreakdowncategory preserving type )` |  |  |
+| `CnsldtnFSItemIsForCnsldtnOnly` |  | |  | `cast( itcitem as fincs_fsitemisforcnsldtnonly preserving type )` |  |  |
+| `CnsldtnFSItemPostingIsBlocked` |  | |  | `cast( itblkd as fincs_fsitempostingisblocked preserving type )` |  |  |
+| `CnsldtnFSItemIsNetBalCarryFwd` |  | |  | `cast (itnbcf as fincs_fsitemisnetbalcarryfwd preserving type )` |  |  |
+| `CnsldtnFSItemLink` |  | |  | `cast( link as fincs_md_link preserving type )` |  |  |
+| `CnsldtnFSItemLinkLabel` |  | |  | `cast( linklabel as fincs_md_link_label preserving type )` |  |  |
+| `ETag` |  | |  | `etag` |  |  |
+| `CreationDateTime` |  | |  | `created_at` |  |  |
+| `CnsldtnSignLogicIsFSItemSpcfc` |  | |  | `cast( case _GlobalSetting.CnsldtnCustomSignLogicIsActive when 'X' then is_sign_item_specific else ' ' end as fincs_signlogicisfsitemspcfc preserving type )` |  |  |
+| `ConsolidationSignLogicType` |  | |  | `cast( case when _GlobalSetting.CnsldtnCustomSignLogicIsActive = 'X' and is_sign_item_specific = 'X' then sign else _CnsldtnFSItemTypeSignLogic.ConsolidationSignLogicType end as fincs_signlogictype preserving type )` |  |  |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_HierarchyNode` | | ✓ | | | | |
+| `_FSItemByTimeVersion` | | ✓ | | | | |
+| `_FSItemType` | | ✓ | | | | |
+| `_SignLogicType` | | ✓ | | | | |
+| `_BreakdownCategory` | | ✓ | | | | |
 
 ## Associations
 

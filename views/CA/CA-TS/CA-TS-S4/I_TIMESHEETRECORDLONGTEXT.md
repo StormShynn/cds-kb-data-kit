@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TimeSheetRecord` | ✓ | |  | `counter` |
-| `Language` | ✓ | | `_TextObjectPlainLongText` | `Language` |
-| `PlainLongText` |  | | `_TextObjectPlainLongText` | `PlainLongText` |
-| `_TextObjectPlainLongText` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TimeSheetRecord` | ✓ | |  | `counter` |  |  |
+| `Language` | ✓ | | `_TextObjectPlainLongText` | `Language` |  |  |
+| `PlainLongText` |  | | `_TextObjectPlainLongText` | `PlainLongText` |  |  |
+| `_TextObjectPlainLongText` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

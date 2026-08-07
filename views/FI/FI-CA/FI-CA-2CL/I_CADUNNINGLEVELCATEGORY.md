@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADunningLevelCategory` | ✓ | |  | `mstyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADunningLevelCategory` | ✓ | |  | `mstyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

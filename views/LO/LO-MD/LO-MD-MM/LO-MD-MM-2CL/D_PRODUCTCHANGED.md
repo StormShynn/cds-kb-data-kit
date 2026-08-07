@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductType` |  | |  | `producttype` |
-| `ProductCategory` |  | |  | `prodcategory` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` |  | |  | `producttype` |  |  |
+| `ProductCategory` |  | |  | `prodcategory` |  |  |
 
 ## Source Code
 

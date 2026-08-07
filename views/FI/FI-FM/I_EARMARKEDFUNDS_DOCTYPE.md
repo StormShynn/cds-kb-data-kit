@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EarmarkedFundsDocumentCategory` | ✓ | |  | `bltyp` |
-| `EarmarkedFundsDocumentType` | ✓ | |  | `cast ( blart as fmre_blart preserving type )` |
-| `_EarmarkedFundsDocCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EarmarkedFundsDocumentCategory` | ✓ | |  | `bltyp` |  |  |
+| `EarmarkedFundsDocumentType` | ✓ | |  | `cast ( blart as fmre_blart preserving type )` |  |  |
+| `_EarmarkedFundsDocCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

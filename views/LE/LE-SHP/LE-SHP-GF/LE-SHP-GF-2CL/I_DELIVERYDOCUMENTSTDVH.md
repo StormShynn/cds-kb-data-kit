@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryDocument` | ✓ | |  |  |
-| `ShippingPoint` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocument` | ✓ | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
 
 ## Source Code
 

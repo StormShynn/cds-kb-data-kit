@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BusinessPartnerLegalEntity` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_entity_report )` |
-| `BPLegalEntityDescription` |  | |  | `ddtext` |
-| `_BPLegalEntity` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BusinessPartnerLegalEntity` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_entity_report )` |  |  |
+| `BPLegalEntityDescription` |  | |  | `ddtext` |  |  |
+| `_BPLegalEntity` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

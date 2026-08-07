@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinTransProductGroup` | ✓ | |  | `cast(left(DomainText.domvalue_l,4) as ftr_productgroup preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `FinTransProductGroupName` |  | |  | `cast(DomainText.ddtext as fin_trans_prod_group_name preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinTransProductGroup` | ✓ | |  | `cast(left(DomainText.domvalue_l,4) as ftr_productgroup preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `FinTransProductGroupName` |  | |  | `cast(DomainText.ddtext as fin_trans_prod_group_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

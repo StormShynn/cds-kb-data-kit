@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARelationshipOfBPToContrAcct` | ✓ | |  | `vkpbz` |
-| `Language` | ✓ | |  | `spras` |
-| `CARelshpOfBPToContrAcctName` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARelationshipOfBPToContrAcct` | ✓ | |  | `vkpbz` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CARelshpOfBPToContrAcctName` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

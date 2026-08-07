@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADocumentOriginCode` | ✓ | |  | `herkf` |
-| `Language` | ✓ | |  | `spras` |
-| `CADocumentOriginCodeName` |  | |  | `cast( htext as herkf_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADocumentOriginCode` | ✓ | |  | `herkf` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CADocumentOriginCodeName` |  | |  | `cast( htext as herkf_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

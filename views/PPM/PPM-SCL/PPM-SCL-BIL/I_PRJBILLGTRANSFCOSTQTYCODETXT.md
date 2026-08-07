@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ProjBillgTransfCostQtyCode` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbe_transfer_qty_costs preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PrjBillgTransfCostQtyCodeTxt` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_ProjBillgTransfCostQtyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ProjBillgTransfCostQtyCode` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbe_transfer_qty_costs preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PrjBillgTransfCostQtyCodeTxt` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProjBillgTransfCostQtyCode` | | ✓ | | | | |
 
 ## Associations
 

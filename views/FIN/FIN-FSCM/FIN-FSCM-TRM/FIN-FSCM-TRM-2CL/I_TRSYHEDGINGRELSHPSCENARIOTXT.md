@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrsyHedgingRelshpScenario` | ✓ | |  | `cast(TrsyHedgingRelshpScenarioTxt.hrel_scene_cat as ftr_gen_hrel_scenario preserving type)` |
-| `Language` | ✓ | |  | `lang_id` |
-| `TrsyHedgingRelshpScenarioName` |  | |  | `cast(TrsyHedgingRelshpScenarioTxt.text as ftr_gen_hrel_scenario_name preserving type)` |
-| `_TrsyHedgingRelshpScenario` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrsyHedgingRelshpScenario` | ✓ | |  | `cast(TrsyHedgingRelshpScenarioTxt.hrel_scene_cat as ftr_gen_hrel_scenario preserving type)` |  |  |
+| `Language` | ✓ | |  | `lang_id` |  |  |
+| `TrsyHedgingRelshpScenarioName` |  | |  | `cast(TrsyHedgingRelshpScenarioTxt.text as ftr_gen_hrel_scenario_name preserving type)` |  |  |
+| `_TrsyHedgingRelshpScenario` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

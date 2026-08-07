@@ -30,100 +30,100 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsContainerID` | ✓ | |  |  |
-| `DispatchedStartDate` | ✓ | |  |  |
-| `FldLogsDispatchPlant` | ✓ | |  |  |
-| `NumberOfCtnTripsPerDay` | ✓ | |  |  |
-| `FldLogsReferenceDocumentNumber` | ✓ | |  |  |
-| `FldLogsShptItmHndlgUnitID` | ✓ | |  |  |
-| `Material` |  | |  |  |
-| `RetblQtyInOrderUnit` |  | |  |  |
-| `RetblQtyOrderUnit` |  | |  |  |
-| `RetblQtyInBaseUnit` |  | |  |  |
-| `RetblQtyBaseUnit` |  | |  |  |
-| `RemoteStorageLocation` |  | |  |  |
-| `FldLogsSrceStorLocID` |  | |  |  |
-| `FldLogsDestStorLocID` |  | |  |  |
-| `FldLogsReturnStatus` |  | |  |  |
-| `FldLogsContainerItemStatus` |  | |  |  |
-| `FldLogsCtnQuickAction` |  | |  |  |
-| `FldLogsReferenceDocCategory` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `StockTransportOrder` |  | |  |  |
-| `FldLogsRetServicePurOrd` |  | |  |  |
-| `FldLogsRecommendedAction` |  | |  |  |
-| `ReferencePurchasingDocument` |  | |  |  |
-| `FldLogsReturnComment` |  | |  |  |
-| `FldLogsCtnItmChangeDateTime` |  | |  |  |
-| `ReferenceOrder` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `ValuationType` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `FieldLogisticsProcessType` |  | |  |  |
-| `FieldLogisticsReceivingPlant` |  | |  |  |
-| `FldLogsContainerUnitUUID` |  | |  |  |
-| `FldLogsShptItemUUID` |  | |  |  |
-| `FldLogsShptVoyageUUID` |  | |  |  |
-| `FldLogsShptVoyageNumber` |  | |  |  |
-| `FldLogsVoyageSrceStage` |  | |  |  |
-| `FldLogsVoyageDestStage` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `FldLogsRcvdItmStsCriticality` |  | |  |  |
-| `SystemMessageTypeCriticality` |  | |  |  |
-| `FldLogsStorageType` |  | |  |  |
-| `FldLogsRetPOOutbDelivIsCreated` |  | |  |  |
-| `FldLogsSubcontrgPOIsCreated` |  | |  |  |
-| `FldLogsSubcontractingPO` |  | |  |  |
-| `FldLogsSuplrItmPackggTypeCode` |  | |  |  |
-| `PackagingMaterial` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `Batch` |  | |  |  |
-| `IsInternalBatchManaged` |  | |  |  |
-| `FldLogsSupplyProcess` |  | |  |  |
-| `FldLogsCtnItmLastProcessingMsg` |  | |  |  |
-| `FldLogsPostProcessingMessage` |  | |  |  |
-| `FldLogsCtnItmProcessDateTime` |  | |  |  |
-| `WarehouseTask` |  | |  |  |
-| `FldLogsReturnProcgComment` |  | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `ReservationItem` |  | |  |  |
-| `RecipientLocationCode` |  | |  |  |
-| `FldLogsRefurbishmentOrder` |  | |  |  |
-| `FldLogsRefrbmtOrderReservation` |  | |  |  |
-| `FldLogsRefrbmtOrderResvnItem` |  | |  |  |
-| `InboundDelivery` |  | |  |  |
-| `InboundDeliveryItem` |  | |  |  |
-| `FldLogsSuplrItemUUID` |  | |  |  |
-| `FldLogsSuplrItemVislInspCode` |  | |  |  |
-| `FldLogsRcvdHndlgUnitCnctntdID` |  | |  |  |
-| `ReferenceDocumentLongNumber` |  | |  |  |
-| `HandlingUnitQuantity` |  | |  |  |
-| `HandlingUnitQuantityUnit` |  | |  |  |
-| `OutboundDelivery` |  | |  |  |
-| `OutboundDeliveryItem` |  | |  |  |
-| `FieldLogisticsKitIdentifier` |  | |  |  |
-| `FldLogsKitItmRefDocument1` |  | |  |  |
-| `FldLogsItemType` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `DeliveryDocument` |  | |  |  |
-| `DeliveryDocumentItem` |  | |  |  |
-| `WarehouseStorageBin` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `FldLogsItemActualDispatchPlant` |  | |  |  |
-| `FldLogsItmActualReceivingPlant` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `InspectionLot` |  | |  |  |
-| `GoodsReceivingPoint` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `_RcvdPackgg` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsContainerID` | ✓ | |  |  |  |  |
+| `DispatchedStartDate` | ✓ | |  |  |  |  |
+| `FldLogsDispatchPlant` | ✓ | |  |  |  |  |
+| `NumberOfCtnTripsPerDay` | ✓ | |  |  |  |  |
+| `FldLogsReferenceDocumentNumber` | ✓ | |  |  |  |  |
+| `FldLogsShptItmHndlgUnitID` | ✓ | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `RetblQtyInOrderUnit` |  | |  |  |  |  |
+| `RetblQtyOrderUnit` |  | |  |  |  |  |
+| `RetblQtyInBaseUnit` |  | |  |  |  |  |
+| `RetblQtyBaseUnit` |  | |  |  |  |  |
+| `RemoteStorageLocation` |  | |  |  |  |  |
+| `FldLogsSrceStorLocID` |  | |  |  |  |  |
+| `FldLogsDestStorLocID` |  | |  |  |  |  |
+| `FldLogsReturnStatus` |  | |  |  |  |  |
+| `FldLogsContainerItemStatus` |  | |  |  |  |  |
+| `FldLogsCtnQuickAction` |  | |  |  |  |  |
+| `FldLogsReferenceDocCategory` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `StockTransportOrder` |  | |  |  |  |  |
+| `FldLogsRetServicePurOrd` |  | |  |  |  |  |
+| `FldLogsRecommendedAction` |  | |  |  |  |  |
+| `ReferencePurchasingDocument` |  | |  |  |  |  |
+| `FldLogsReturnComment` |  | |  |  |  |  |
+| `FldLogsCtnItmChangeDateTime` |  | |  |  |  |  |
+| `ReferenceOrder` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `FieldLogisticsProcessType` |  | |  |  |  |  |
+| `FieldLogisticsReceivingPlant` |  | |  |  |  |  |
+| `FldLogsContainerUnitUUID` |  | |  |  |  |  |
+| `FldLogsShptItemUUID` |  | |  |  |  |  |
+| `FldLogsShptVoyageUUID` |  | |  |  |  |  |
+| `FldLogsShptVoyageNumber` |  | |  |  |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `FldLogsRcvdItmStsCriticality` |  | |  |  |  |  |
+| `SystemMessageTypeCriticality` |  | |  |  |  |  |
+| `FldLogsStorageType` |  | |  |  |  |  |
+| `FldLogsRetPOOutbDelivIsCreated` |  | |  |  |  |  |
+| `FldLogsSubcontrgPOIsCreated` |  | |  |  |  |  |
+| `FldLogsSubcontractingPO` |  | |  |  |  |  |
+| `FldLogsSuplrItmPackggTypeCode` |  | |  |  |  |  |
+| `PackagingMaterial` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `IsInternalBatchManaged` |  | |  |  |  |  |
+| `FldLogsSupplyProcess` |  | |  |  |  |  |
+| `FldLogsCtnItmLastProcessingMsg` |  | |  |  |  |  |
+| `FldLogsPostProcessingMessage` |  | |  |  |  |  |
+| `FldLogsCtnItmProcessDateTime` |  | |  |  |  |  |
+| `WarehouseTask` |  | |  |  |  |  |
+| `FldLogsReturnProcgComment` |  | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `ReservationItem` |  | |  |  |  |  |
+| `RecipientLocationCode` |  | |  |  |  |  |
+| `FldLogsRefurbishmentOrder` |  | |  |  |  |  |
+| `FldLogsRefrbmtOrderReservation` |  | |  |  |  |  |
+| `FldLogsRefrbmtOrderResvnItem` |  | |  |  |  |  |
+| `InboundDelivery` |  | |  |  |  |  |
+| `InboundDeliveryItem` |  | |  |  |  |  |
+| `FldLogsSuplrItemUUID` |  | |  |  |  |  |
+| `FldLogsSuplrItemVislInspCode` |  | |  |  |  |  |
+| `FldLogsRcvdHndlgUnitCnctntdID` |  | |  |  |  |  |
+| `ReferenceDocumentLongNumber` |  | |  |  |  |  |
+| `HandlingUnitQuantity` |  | |  |  |  |  |
+| `HandlingUnitQuantityUnit` |  | |  |  |  |  |
+| `OutboundDelivery` |  | |  |  |  |  |
+| `OutboundDeliveryItem` |  | |  |  |  |  |
+| `FieldLogisticsKitIdentifier` |  | |  |  |  |  |
+| `FldLogsKitItmRefDocument1` |  | |  |  |  |  |
+| `FldLogsItemType` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `DeliveryDocumentItem` |  | |  |  |  |  |
+| `WarehouseStorageBin` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `FldLogsItemActualDispatchPlant` |  | |  |  |  |  |
+| `FldLogsItmActualReceivingPlant` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `InspectionLot` |  | |  |  |  |  |
+| `GoodsReceivingPoint` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `_RcvdPackgg` | | ✓ | | | | |
 
 ## Source Code
 

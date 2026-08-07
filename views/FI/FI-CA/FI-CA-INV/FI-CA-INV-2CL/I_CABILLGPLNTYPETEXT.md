@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnType` | ✓ | | `_tfk8211t` | `biptype` |
-| `Language` | ✓ | | `_tfk8211t` | `langu` |
-| `CABillgPlnTypeText` |  | |  | `cast( _tfk8211t.text as biptype_txt_gfn_kk preserving type )` |
-| `_CABillgPlnType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnType` | ✓ | | `_tfk8211t` | `biptype` |  |  |
+| `Language` | ✓ | | `_tfk8211t` | `langu` |  |  |
+| `CABillgPlnTypeText` |  | |  | `cast( _tfk8211t.text as biptype_txt_gfn_kk preserving type )` |  |  |
+| `_CABillgPlnType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

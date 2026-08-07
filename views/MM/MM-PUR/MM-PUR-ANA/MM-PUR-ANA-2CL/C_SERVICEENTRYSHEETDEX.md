@@ -30,36 +30,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceEntrySheet` | ✓ | |  |  |
-| `ServiceEntrySheetName` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ApprovalStatus` |  | |  |  |
-| `ApprovalDateTime` |  | |  |  |
-| `ResponsiblePerson` |  | |  |  |
-| `Currency` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `PurgDocExternalSystem` |  | |  |  |
-| `PurgDocExternalReference` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_ServiceEntrySheetItemDEX` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_ServiceEntrySheetItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |  |  |
+| `ServiceEntrySheetName` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ApprovalStatus` |  | |  |  |  |  |
+| `ApprovalDateTime` |  | |  |  |  |  |
+| `ResponsiblePerson` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `PurgDocExternalSystem` |  | |  |  |  |  |
+| `PurgDocExternalReference` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_ServiceEntrySheetItemDEX` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_ServiceEntrySheetItem` | | ✓ | | | | |
 
 ## Associations
 

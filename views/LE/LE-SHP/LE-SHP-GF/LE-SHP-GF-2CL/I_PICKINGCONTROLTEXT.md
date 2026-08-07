@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PickingControl` | ✓ | |  | `substring(dd07t.domvalue_l, 1, 1)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `PickingControlDesc` |  | |  | `ddtext` |
-| `_PickingControl` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PickingControl` | ✓ | |  | `substring(dd07t.domvalue_l, 1, 1)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `PickingControlDesc` |  | |  | `ddtext` |  |  |
+| `_PickingControl` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

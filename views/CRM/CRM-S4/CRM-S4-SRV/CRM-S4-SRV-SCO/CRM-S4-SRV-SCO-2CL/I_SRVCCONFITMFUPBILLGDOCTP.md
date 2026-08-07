@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceConfirmation` | ✓ | |  |  |
-| `ServiceConfirmationItem` | ✓ | |  |  |
-| `BillingDocument` | ✓ | |  |  |
-| `BillingDocumentItem` | ✓ | |  |  |
-| `_ServiceConfirmationItem` | | ✓ | | |
-| `_ServiceConfirmationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |  |  |
+| `ServiceConfirmationItem` | ✓ | |  |  |  |  |
+| `BillingDocument` | ✓ | |  |  |  |  |
+| `BillingDocumentItem` | ✓ | |  |  |  |  |
+| `_ServiceConfirmationItem` | | ✓ | | | | |
+| `_ServiceConfirmationTP` | | ✓ | | | | |
 
 ## Source Code
 

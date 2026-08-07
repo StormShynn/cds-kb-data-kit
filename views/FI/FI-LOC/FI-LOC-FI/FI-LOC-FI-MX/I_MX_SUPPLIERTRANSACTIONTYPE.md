@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessType` | ✓ | |  | `transaction_type` |
-| `TaxItemGroupingVersion` | ✓ | |  | `version` |
-| `OrderType` | ✓ | |  | `ord_type` |
-| `_TransactionType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessType` | ✓ | |  | `transaction_type` |  |  |
+| `TaxItemGroupingVersion` | ✓ | |  | `version` |  |  |
+| `OrderType` | ✓ | |  | `ord_type` |  |  |
+| `_TransactionType` | | ✓ | | | | |
 
 ## Associations
 

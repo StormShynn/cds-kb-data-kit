@@ -33,21 +33,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturn` | ✓ | |  |  |
-| `CustomerReturnItem` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LongTextID` | ✓ | |  |  |
-| `LongTextIDForEdit` |  | |  |  |
-| `LanguageForEdit` |  | |  |  |
-| `LongText` |  | |  |  |
-| `CustomerReturnType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_CustomerReturn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |  |  |
+| `CustomerReturnItem` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LongTextID` | ✓ | |  |  |  |  |
+| `LongTextIDForEdit` |  | |  |  |  |  |
+| `LanguageForEdit` |  | |  |  |  |  |
+| `LongText` |  | |  |  |  |  |
+| `CustomerReturnType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_CustomerReturn` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,36 +30,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EDCType` | ✓ | | `_EDCRelation` | `EDCType` |
-| `CompanyCode` | ✓ | | `_EDCRelation` | `CompanyCode` |
-| `EDCCommonKey` | ✓ | | `_EDCRelation` | `EDCCommonKey` |
-| `AccountingDocument` |  | | `_EDCRelation` | `AccountingDocument` |
-| `FiscalYear` |  | | `_EDCRelation` | `FiscalYear` |
-| `EDCRecordUUID` |  | | `_EDCRelation` | `EDCRecordUUID` |
-| `EDCCreatedOnDateTime` |  | | `_EDCRelation` | `EDCCreatedOnDateTime` |
-| `EDCRepresentationType` |  | | `_EDCRelation` | `EDCRepresentationType` |
-| `EDCRepresentationKey` |  | | `_EDCRelation` | `EDCRepresentationKey` |
-| `AccountingDocumentType` |  | | `_JournalEntry` | `AccountingDocumentType` |
-| `DocumentDate` |  | | `_JournalEntry` | `DocumentDate` |
-| `PostingDate` |  | | `_JournalEntry` | `PostingDate` |
-| `AccountingDocumentCreationDate` |  | | `_JournalEntry` | `AccountingDocumentCreationDate` |
-| `TransactionCode` |  | | `_JournalEntry` | `TransactionCode` |
-| `IntercompanyTransaction` |  | | `_JournalEntry` | `IntercompanyTransaction` |
-| `DocumentReferenceID` |  | | `_JournalEntry` | `DocumentReferenceID` |
-| `TransactionCurrency` |  | | `_JournalEntry` | `TransactionCurrency` |
-| `AccountingDocumentCategory` |  | | `_JournalEntry` | `AccountingDocumentCategory` |
-| `BusinessTransactionType` |  | | `_JournalEntry` | `BusinessTransactionType` |
-| `Branch` |  | | `_JournalEntry` | `Branch` |
-| `IsDiscountDocument` |  | | `_JournalEntry` | `IsDiscountDocument` |
-| `TaxReportingDate` |  | | `_JournalEntry` | `TaxReportingDate` |
-| `TaxFulfillmentDate` |  | | `_JournalEntry` | `TaxFulfillmentDate` |
-| `AccountingDocumentClass` |  | | `_JournalEntry` | `AccountingDocumentClass` |
-| `IsReversal` |  | | `_JournalEntry` | `IsReversal` |
-| `IsReversed` |  | | `_JournalEntry` | `IsReversed` |
-| `TaxCountry` |  | | `_JournalEntry` | `TaxCountry` |
-| `WithholdingTaxReportingDate` |  | | `_JournalEntry` | `WithholdingTaxReportingDate` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EDCType` | ✓ | | `_EDCRelation` | `EDCType` |  |  |
+| `CompanyCode` | ✓ | | `_EDCRelation` | `CompanyCode` |  |  |
+| `EDCCommonKey` | ✓ | | `_EDCRelation` | `EDCCommonKey` |  |  |
+| `AccountingDocument` |  | | `_EDCRelation` | `AccountingDocument` |  |  |
+| `FiscalYear` |  | | `_EDCRelation` | `FiscalYear` |  |  |
+| `EDCRecordUUID` |  | | `_EDCRelation` | `EDCRecordUUID` |  |  |
+| `EDCCreatedOnDateTime` |  | | `_EDCRelation` | `EDCCreatedOnDateTime` |  |  |
+| `EDCRepresentationType` |  | | `_EDCRelation` | `EDCRepresentationType` |  |  |
+| `EDCRepresentationKey` |  | | `_EDCRelation` | `EDCRepresentationKey` |  |  |
+| `AccountingDocumentType` |  | | `_JournalEntry` | `AccountingDocumentType` |  |  |
+| `DocumentDate` |  | | `_JournalEntry` | `DocumentDate` |  |  |
+| `PostingDate` |  | | `_JournalEntry` | `PostingDate` |  |  |
+| `AccountingDocumentCreationDate` |  | | `_JournalEntry` | `AccountingDocumentCreationDate` |  |  |
+| `TransactionCode` |  | | `_JournalEntry` | `TransactionCode` |  |  |
+| `IntercompanyTransaction` |  | | `_JournalEntry` | `IntercompanyTransaction` |  |  |
+| `DocumentReferenceID` |  | | `_JournalEntry` | `DocumentReferenceID` |  |  |
+| `TransactionCurrency` |  | | `_JournalEntry` | `TransactionCurrency` |  |  |
+| `AccountingDocumentCategory` |  | | `_JournalEntry` | `AccountingDocumentCategory` |  |  |
+| `BusinessTransactionType` |  | | `_JournalEntry` | `BusinessTransactionType` |  |  |
+| `Branch` |  | | `_JournalEntry` | `Branch` |  |  |
+| `IsDiscountDocument` |  | | `_JournalEntry` | `IsDiscountDocument` |  |  |
+| `TaxReportingDate` |  | | `_JournalEntry` | `TaxReportingDate` |  |  |
+| `TaxFulfillmentDate` |  | | `_JournalEntry` | `TaxFulfillmentDate` |  |  |
+| `AccountingDocumentClass` |  | | `_JournalEntry` | `AccountingDocumentClass` |  |  |
+| `IsReversal` |  | | `_JournalEntry` | `IsReversal` |  |  |
+| `IsReversed` |  | | `_JournalEntry` | `IsReversed` |  |  |
+| `TaxCountry` |  | | `_JournalEntry` | `TaxCountry` |  |  |
+| `WithholdingTaxReportingDate` |  | | `_JournalEntry` | `WithholdingTaxReportingDate` |  |  |
 
 ## Source Code
 

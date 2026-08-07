@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `InspSpecImportanceCode` | ✓ | |  | `merkklasse` |
-| `InspSpecImportanceCodeText` |  | |  | `kurztext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspSpecImportanceCode` | ✓ | |  | `merkklasse` |  |  |
+| `InspSpecImportanceCodeText` |  | |  | `kurztext` |  |  |
 
 ## Source Code
 

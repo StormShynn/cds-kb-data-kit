@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  | `cast ( CharacteristicValueDesc.atinn as atinn_no_conv preserving type )` |
-| `CharcValuePositionNumber` | ✓ | |  | `atzhl` |
-| `Language` | ✓ | |  | `spras` |
-| `TimeIntervalNumber` | ✓ | |  | `adzhl` |
-| `CharcValueDescription` |  | |  | `atwtb` |
-| `ChangeNumber` |  | |  | `aennr` |
-| `ValidityStartDate` |  | |  | `datuv` |
-| `ValidityEndDate` |  | |  | `datub` |
-| `IsDeleted` |  | |  | `lkenz` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  | `cast ( CharacteristicValueDesc.atinn as atinn_no_conv preserving type )` |  |  |
+| `CharcValuePositionNumber` | ✓ | |  | `atzhl` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TimeIntervalNumber` | ✓ | |  | `adzhl` |  |  |
+| `CharcValueDescription` |  | |  | `atwtb` |  |  |
+| `ChangeNumber` |  | |  | `aennr` |  |  |
+| `ValidityStartDate` |  | |  | `datuv` |  |  |
+| `ValidityEndDate` |  | |  | `datub` |  |  |
+| `IsDeleted` |  | |  | `lkenz` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

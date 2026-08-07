@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ProofOfDeliveryRelevanceCode` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1 ) as podrel preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ProofOfDelivRlvnceCodeName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_ProofOfDelivRlvnceCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ProofOfDeliveryRelevanceCode` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1 ) as podrel preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProofOfDelivRlvnceCodeName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProofOfDelivRlvnceCode` | | ✓ | | | | |
 
 ## Associations
 

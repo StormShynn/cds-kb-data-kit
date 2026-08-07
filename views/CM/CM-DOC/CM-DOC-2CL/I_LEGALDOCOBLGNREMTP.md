@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocOblgnRemUUID` | ✓ | |  |  |
-| `LglCntntMDocOblgnUUID` |  | |  |  |
-| `LglCntntMDocumentUUID` |  | |  |  |
-| `LglCntntMDocOblgnRemType` |  | |  |  |
-| `LglCntntMDocOblgnRemDate` |  | |  |  |
-| `LglCntntMDocOblgnRemRcpntUsr` |  | |  |  |
-| `LglCntntMDocOblgnRemSubject` |  | |  |  |
-| `LglCntntMDocObligation` |  | |  |  |
-| `LglCntntMDocOblgnType` |  | |  |  |
-| `_Document` | | ✓ | | |
-| `_LegalDocObligation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocOblgnRemUUID` | ✓ | |  |  |  |  |
+| `LglCntntMDocOblgnUUID` |  | |  |  |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |  |  |
+| `LglCntntMDocOblgnRemType` |  | |  |  |  |  |
+| `LglCntntMDocOblgnRemDate` |  | |  |  |  |  |
+| `LglCntntMDocOblgnRemRcpntUsr` |  | |  |  |  |  |
+| `LglCntntMDocOblgnRemSubject` |  | |  |  |  |  |
+| `LglCntntMDocObligation` |  | |  |  |  |  |
+| `LglCntntMDocOblgnType` |  | |  |  |  |  |
+| `_Document` | | ✓ | | | | |
+| `_LegalDocObligation` | | ✓ | | | | |
 
 ## Source Code
 

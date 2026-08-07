@@ -29,37 +29,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinSGLErrorItemUUID` | ✓ | | `_ErroItem` | `FinSGLErrorItemUUID` |
-| `SourceLedger` |  | |  |  |
-| `Ledger` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `AccountingDocument` |  | |  |  |
-| `LedgerGLLineItem` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `PartnerProfitCenter` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `BalanceTransactionCurrency` |  | |  |  |
-| `AmountInBalanceTransacCrcy` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |
-| `GlobalCurrency` |  | |  |  |
-| `AmountInGlobalCurrency` |  | |  |  |
-| `FunctionalCurrency` |  | |  |  |
-| `AmountInFunctionalCurrency` |  | |  |  |
-| `FinancialServicesProductGroup` |  | |  |  |
-| `FinancialServicesBranch` |  | |  |  |
-| `FinancialDataSource` |  | |  |  |
-| `CustomerSupplierIndustry` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CustomerSupplierCountry` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinSGLErrorItemUUID` | ✓ | | `_ErroItem` | `FinSGLErrorItemUUID` | `RAW(16)` | ID of Error Correction Item |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `PartnerCompany` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `PartnerProfitCenter` |  | |  |  | `CHAR(10)` | Partner Profit Center |
+| `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
+| `BalanceTransactionCurrency` |  | |  |  | `CUKY(5)` | Balance Transaction Currency |
+| `AmountInBalanceTransacCrcy` |  | |  |  | `CURR(23)` | Amount in Balance Transaction Currency |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `FunctionalCurrency` |  | |  |  | `CUKY(5)` | Functional Currency |
+| `AmountInFunctionalCurrency` |  | |  |  | `CURR(23)` | Amount in Functional Currency |
+| `FinancialServicesProductGroup` |  | |  |  | `CHAR(10)` | Financial Services Product Group |
+| `FinancialServicesBranch` |  | |  |  | `CHAR(10)` | Financial Services Branch |
+| `FinancialDataSource` |  | |  |  | `CHAR(10)` | Financial Data Source |
+| `CustomerSupplierIndustry` |  | |  |  | `CHAR(4)` | Customer Supplier Industry |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `CustomerSupplierCountry` |  | |  |  | `CHAR(3)` | Customer or Supplier Country/Region |
 
 ## Source Code
 

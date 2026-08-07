@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `FormOfAddress` | ✓ | |  | `title` |
-| `FormOfAddressName` |  | |  | `title_medi` |
-| `_Language` | | ✓ | | |
-| `_FormOfAddress` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `FormOfAddress` | ✓ | |  | `title` |  |  |
+| `FormOfAddressName` |  | |  | `title_medi` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FormOfAddress` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FamilyNamePrefix` | ✓ | |  | `prefix_key` |
-| `FamilyNamePrefixName` |  | |  | `prefix_txt` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FamilyNamePrefix` | ✓ | |  | `prefix_key` |  |  |
+| `FamilyNamePrefixName` |  | |  | `prefix_txt` |  |  |
 
 ## Source Code
 

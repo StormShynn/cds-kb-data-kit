@@ -30,30 +30,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `SupplierInvoiceItem` | ✓ | |  | `cast ( cast ( coalesce ( cast ( I_SupplierInvoiceItemAsset.OrdinalNumber as abap.int2 ) - _GlItemCount.NumberOfItems , cast ( I_SupplierInvoiceItemAsset.OrdinalNumber as abap.int2 ) ) as char0016 ) as cobl_nr)` |
-| `CompanyCode` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `SupplierInvoiceItemAmount` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `TaxDeterminationDate` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `SupplierInvoiceItemText` |  | |  |  |
-| `IsNotCashDiscountLiable` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `AssetValueDate` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `_SupplierInvoiceAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `SupplierInvoiceItem` | ✓ | |  | `cast ( cast ( coalesce ( cast ( I_SupplierInvoiceItemAsset.OrdinalNumber as abap.int2 ) - _GlItemCount.NumberOfItems , cast ( I_SupplierInvoiceItemAsset.OrdinalNumber as abap.int2 ) ) as char0016 ) as cobl_nr)` |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `TaxDeterminationDate` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `SupplierInvoiceItemText` |  | |  |  |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `AssetValueDate` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | | | |
 
 ## Associations
 

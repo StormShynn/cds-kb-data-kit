@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentCopyIsRequested` |  | |  | `flag` |
-| `RelationshipCopyIsRequested` |  | |  | `flag` |
-| `DescriptionCopyIsRequested` |  | |  | `flag` |
-| `MaintTskListValidityStartDate` |  | |  | `datuv` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentCopyIsRequested` |  | |  | `flag` |  |  |
+| `RelationshipCopyIsRequested` |  | |  | `flag` |  |  |
+| `DescriptionCopyIsRequested` |  | |  | `flag` |  |  |
+| `MaintTskListValidityStartDate` |  | |  | `datuv` |  |  |
 
 ## Source Code
 

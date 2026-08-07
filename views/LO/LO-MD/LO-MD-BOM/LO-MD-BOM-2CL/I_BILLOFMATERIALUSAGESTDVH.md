@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterialVariantUsage` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `BillOfMaterialVariantUsageDesc` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariantUsageDesc` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -28,79 +28,79 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `abap.char(1)` |  | |  | `key DummyKey : abap.char(1)` |
-| `ConsolidationPostingItem` |  | |  | `docln6` |
-| `FinancialStatementItem` |  | |  | `fc_item` |
-| `ConsolidationVersion` |  | |  | `fc_rvers` |
-| `SubItem` |  | |  | `fc_sitem` |
-| `AmountInLocalCurrency` |  | |  | `vlcur12` |
-| `LocalCurrency` |  | |  | `lcurr` |
-| `AmountInGroupCurrency` |  | |  | `vgcur12` |
-| `GroupCurrency` |  | |  | `gcurr` |
-| `AmountInTransactionCurrency` |  | |  | `vtcur12` |
-| `TransactionCurrency` |  | |  | `rtcur` |
-| `PartnerConsolidationUnit` |  | |  | `fincs_partnerconsolidationunit` |
-| `ConsolidationUnit` |  | |  | `fincs_consolidationunit` |
-| `BaseUnit` |  | |  | `meins` |
-| `Quantity` |  | |  | `fincs_quan` |
-| `Company` |  | |  | `rcomp_d` |
-| `CompanyCode` |  | |  | `obukr` |
-| `BusinessTransactionType` |  | |  | `glvor` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CostCenter` |  | |  | `kostl` |
-| `GLAccount` |  | |  | `racct` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `BusinessArea` |  | |  | `gsber` |
-| `PartnerCostCenter` |  | |  | `skost` |
-| `PartnerProfitCenter` |  | |  | `pprctr` |
-| `AssignmentReference` |  | |  | `dzuonr` |
-| `Segment` |  | |  | `fb_segment` |
-| `PartnerFunctionalArea` |  | |  | `sfkber` |
-| `PartnerBusinessArea` |  | |  | `pargb` |
-| `PartnerCompany` |  | |  | `rassc` |
-| `PartnerSegment` |  | |  | `fb_psegment` |
-| `OrderID` |  | |  | `aufnr` |
-| `Customer` |  | |  | `kunnr` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `Supplier` |  | |  | `lifnr` |
-| `Material` |  | |  | `matnr` |
-| `Plant` |  | |  | `werks_d` |
-| `FinancialTransactionType` |  | |  | `rmvct` |
-| `BillingDocumentType` |  | |  | `fkart` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `OrganizationDivision` |  | |  | `spart` |
-| `SoldMaterial` |  | |  | `fins_matnr_pa` |
-| `MaterialGroup` |  | |  | `fins_matkl_mm` |
-| `ProductGroup` |  | |  | `fins_matkl_pa` |
-| `CustomerGroup` |  | |  | `kdgrp` |
-| `CustomerSupplierCountry` |  | |  | `land1_gp` |
-| `CustomerSupplierIndustry` |  | |  | `brsch` |
-| `SalesDistrict` |  | |  | `bzirk` |
-| `BillToParty` |  | |  | `kunre` |
-| `ShipToParty` |  | |  | `kunwe` |
-| `CustomerSupplierCorporateGroup` |  | |  | `konzs` |
-| `FinancialServicesProductGroup` |  | |  | `fincs_finsrvcsproductgroup` |
-| `FinancialServicesBranch` |  | |  | `fincs_financialservicesbranch` |
-| `FinancialDataSource` |  | |  | `fincs_financialdatasource` |
-| `FinancialManagementArea` |  | |  | `fincs_financialmanagementarea` |
-| `Fund` |  | |  | `fincs_fund` |
-| `GrantID` |  | |  | `fincs_grant` |
-| `CnsldtnCashLedgerChartOfAccts` |  | |  | `fincs_cashledgerchartofaccts` |
-| `CashLedgerAccount` |  | |  | `fincs_cashledgeraccount` |
-| `PartnerFund` |  | |  | `fincs_partnerfund` |
-| `GHGScope` |  | |  | `fincs_ghgscope` |
-| `GHGCategory` |  | |  | `fincs_ghgcategory` |
-| `GHGScope2CalculationMethod` |  | |  | `fincs_ghgscp2calculationmethod` |
-| `GHGScope2ContractualInstrument` |  | |  | `fincs_ghgscp2cntrctlinstrument` |
-| `SustainabilityModeOfTransport` |  | |  | `fincs_sustmodeoftransport` |
-| `GHGDataQualityCharacteristic` |  | |  | `fincs_ghgdtaqltycharc` |
-| `GHGEnergyClassification` |  | |  | `fincs_ghgenergyclassification` |
-| `GHGEnergyMix` |  | |  | `fincs_ghgenergymix` |
-| `GHGEnergySourcingType` |  | |  | `fincs_ghgenergysourcingtype` |
-| `_DummyAssociation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `abap.char(1)` |  | |  | `key DummyKey : abap.char(1)` |  |  |
+| `ConsolidationPostingItem` |  | |  | `docln6` |  |  |
+| `FinancialStatementItem` |  | |  | `fc_item` |  |  |
+| `ConsolidationVersion` |  | |  | `fc_rvers` |  |  |
+| `SubItem` |  | |  | `fc_sitem` |  |  |
+| `AmountInLocalCurrency` |  | |  | `vlcur12` |  |  |
+| `LocalCurrency` |  | |  | `lcurr` |  |  |
+| `AmountInGroupCurrency` |  | |  | `vgcur12` |  |  |
+| `GroupCurrency` |  | |  | `gcurr` |  |  |
+| `AmountInTransactionCurrency` |  | |  | `vtcur12` |  |  |
+| `TransactionCurrency` |  | |  | `rtcur` |  |  |
+| `PartnerConsolidationUnit` |  | |  | `fincs_partnerconsolidationunit` |  |  |
+| `ConsolidationUnit` |  | |  | `fincs_consolidationunit` |  |  |
+| `BaseUnit` |  | |  | `meins` |  |  |
+| `Quantity` |  | |  | `fincs_quan` |  |  |
+| `Company` |  | |  | `rcomp_d` |  |  |
+| `CompanyCode` |  | |  | `obukr` |  |  |
+| `BusinessTransactionType` |  | |  | `glvor` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `GLAccount` |  | |  | `racct` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `PartnerCostCenter` |  | |  | `skost` |  |  |
+| `PartnerProfitCenter` |  | |  | `pprctr` |  |  |
+| `AssignmentReference` |  | |  | `dzuonr` |  |  |
+| `Segment` |  | |  | `fb_segment` |  |  |
+| `PartnerFunctionalArea` |  | |  | `sfkber` |  |  |
+| `PartnerBusinessArea` |  | |  | `pargb` |  |  |
+| `PartnerCompany` |  | |  | `rassc` |  |  |
+| `PartnerSegment` |  | |  | `fb_psegment` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `Customer` |  | |  | `kunnr` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `Supplier` |  | |  | `lifnr` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `Plant` |  | |  | `werks_d` |  |  |
+| `FinancialTransactionType` |  | |  | `rmvct` |  |  |
+| `BillingDocumentType` |  | |  | `fkart` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `OrganizationDivision` |  | |  | `spart` |  |  |
+| `SoldMaterial` |  | |  | `fins_matnr_pa` |  |  |
+| `MaterialGroup` |  | |  | `fins_matkl_mm` |  |  |
+| `ProductGroup` |  | |  | `fins_matkl_pa` |  |  |
+| `CustomerGroup` |  | |  | `kdgrp` |  |  |
+| `CustomerSupplierCountry` |  | |  | `land1_gp` |  |  |
+| `CustomerSupplierIndustry` |  | |  | `brsch` |  |  |
+| `SalesDistrict` |  | |  | `bzirk` |  |  |
+| `BillToParty` |  | |  | `kunre` |  |  |
+| `ShipToParty` |  | |  | `kunwe` |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  | `konzs` |  |  |
+| `FinancialServicesProductGroup` |  | |  | `fincs_finsrvcsproductgroup` |  |  |
+| `FinancialServicesBranch` |  | |  | `fincs_financialservicesbranch` |  |  |
+| `FinancialDataSource` |  | |  | `fincs_financialdatasource` |  |  |
+| `FinancialManagementArea` |  | |  | `fincs_financialmanagementarea` |  |  |
+| `Fund` |  | |  | `fincs_fund` |  |  |
+| `GrantID` |  | |  | `fincs_grant` |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  | `fincs_cashledgerchartofaccts` |  |  |
+| `CashLedgerAccount` |  | |  | `fincs_cashledgeraccount` |  |  |
+| `PartnerFund` |  | |  | `fincs_partnerfund` |  |  |
+| `GHGScope` |  | |  | `fincs_ghgscope` |  |  |
+| `GHGCategory` |  | |  | `fincs_ghgcategory` |  |  |
+| `GHGScope2CalculationMethod` |  | |  | `fincs_ghgscp2calculationmethod` |  |  |
+| `GHGScope2ContractualInstrument` |  | |  | `fincs_ghgscp2cntrctlinstrument` |  |  |
+| `SustainabilityModeOfTransport` |  | |  | `fincs_sustmodeoftransport` |  |  |
+| `GHGDataQualityCharacteristic` |  | |  | `fincs_ghgdtaqltycharc` |  |  |
+| `GHGEnergyClassification` |  | |  | `fincs_ghgenergyclassification` |  |  |
+| `GHGEnergyMix` |  | |  | `fincs_ghgenergymix` |  |  |
+| `GHGEnergySourcingType` |  | |  | `fincs_ghgenergysourcingtype` |  |  |
+| `_DummyAssociation` | | ✓ | | | | |
 
 ## Source Code
 

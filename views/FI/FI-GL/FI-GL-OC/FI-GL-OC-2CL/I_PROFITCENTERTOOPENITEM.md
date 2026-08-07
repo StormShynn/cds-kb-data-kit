@@ -31,31 +31,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SplitOpenItemKey` | ✓ | |  | `open_item_id` |
-| `ValidityStartDate` | ✓ | |  | `valid_from` |
-| `ValidityEndDate` |  | |  | `valid_to` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `OrganizationalChange` |  | |  | `orgl_change` |
-| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |
-| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |
-| `AccountingDocument` |  | |  | `cast( belnr as farp_belnr_d preserving type )` |
-| `FiscalYear` |  | |  | `cast( gjahr as fis_gjahr_no_conv preserving type )` |
-| `AccountingDocumentItem` |  | |  | `buzei` |
-| `SplitInformationSequenceNumber` |  | |  | `spl_no` |
-| `_OrglChgReassignmentStatus` | | ✓ | | |
-| `_ProfitCtrDerivationSrceType` | | ✓ | | |
-| `_OrglChange` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ProfitCtr` | | ✓ | | |
-| `_ProfitCenterBeforeOrglChange` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_JournalEntry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SplitOpenItemKey` | ✓ | |  | `open_item_id` |  |  |
+| `ValidityStartDate` | ✓ | |  | `valid_from` |  |  |
+| `ValidityEndDate` |  | |  | `valid_to` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `OrganizationalChange` |  | |  | `orgl_change` |  |  |
+| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |  |  |
+| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |  |  |
+| `AccountingDocument` |  | |  | `cast( belnr as farp_belnr_d preserving type )` |  |  |
+| `FiscalYear` |  | |  | `cast( gjahr as fis_gjahr_no_conv preserving type )` |  |  |
+| `AccountingDocumentItem` |  | |  | `buzei` |  |  |
+| `SplitInformationSequenceNumber` |  | |  | `spl_no` |  |  |
+| `_OrglChgReassignmentStatus` | | ✓ | | | | |
+| `_ProfitCtrDerivationSrceType` | | ✓ | | | | |
+| `_OrglChange` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ProfitCtr` | | ✓ | | | | |
+| `_ProfitCenterBeforeOrglChange` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
 
 ## Associations
 

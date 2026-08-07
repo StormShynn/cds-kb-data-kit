@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CorporateIncomeTaxHierarchy` | ✓ | |  |  |
-| `HierarchyNode` | ✓ | |  |  |
-| `CITClassificationCode` | ✓ | |  |  |
-| `ParentNode` |  | |  |  |
-| `NodeType` |  | |  |  |
-| `CITClassificationCodeDesc` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CorporateIncomeTaxHierarchy` | ✓ | |  |  |  |  |
+| `HierarchyNode` | ✓ | |  |  |  |  |
+| `CITClassificationCode` | ✓ | |  |  |  |  |
+| `ParentNode` |  | |  |  |  |  |
+| `NodeType` |  | |  |  |  |  |
+| `CITClassificationCodeDesc` |  | |  |  |  |  |
 
 ## Source Code
 

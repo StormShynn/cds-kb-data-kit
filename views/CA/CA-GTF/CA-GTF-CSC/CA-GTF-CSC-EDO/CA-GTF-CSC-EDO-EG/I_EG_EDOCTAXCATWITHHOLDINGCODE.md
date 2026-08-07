@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EG_EDocWhgdTxCode` | ✓ | |  |  |
-| `EG_EDocTaxType` |  | |  |  |
-| `EG_EDocTaxSubtype` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EG_EDocWhgdTxCode` | ✓ | |  |  |  |  |
+| `EG_EDocTaxType` |  | |  |  |  |  |
+| `EG_EDocTaxSubtype` |  | |  |  |  |  |
 
 ## Source Code
 

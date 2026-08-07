@@ -30,64 +30,64 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgDocument` | ✓ | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `CABillgType` |  | |  |  |
-| `CABillgDocPeriodStartDate` |  | |  |  |
-| `CABillgDocPeriodEndDate` |  | |  |  |
-| `CABillgDocumentReversalReason` |  | |  |  |
-| `CABillgIsDocumentSimulated` |  | |  |  |
-| `CABillgDocumentExternal` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `CAApplicationArea` |  | |  |  |
-| `CABillgDocOriginProcess` |  | |  |  |
-| `CAInvcgSourceDocumentType` |  | |  |  |
-| `CAInvcgTechnicalDocumentType` |  | |  |  |
-| `CAInvcgDocumentType` |  | |  |  |
-| `CAInvcgTargetProcess` |  | |  |  |
-| `CAInvcgMasterDataType` |  | |  |  |
-| `CAInvcgAltvBusinessPartner` |  | |  |  |
-| `CAInvcgAltvContractAccount` |  | |  |  |
-| `CABillgBaseDate` |  | |  |  |
-| `CABillgCurrency` |  | |  |  |
-| `CAInvcgCurrency` |  | |  |  |
-| `CATaxDetnType` |  | |  |  |
-| `CATaxDateType` |  | |  |  |
-| `CAInvcgCategory` |  | |  |  |
-| `CAInvcgControlOfInvoicingUnit` |  | |  |  |
-| `CAInvcgFirstDate` |  | |  |  |
-| `CABillgReversalDocument` |  | |  |  |
-| `CABillgReversedDocument` |  | |  |  |
-| `CABillgAdjustmentDocument` |  | |  |  |
-| `CABillgAdjustedDocument` |  | |  |  |
-| `CAInvcgCorrectionCategory` |  | |  |  |
-| `CaInvcgIsOrderDeleted` |  | |  |  |
-| `CABillgHasAdditionalInvoice` |  | |  |  |
-| `CAInvcgIsAccrualPostingRlvt` |  | |  |  |
-| `CABillgLockedForInvoicing` |  | |  |  |
-| `CABillgGrpgOfAdditionalItems` |  | |  |  |
-| `CABillgDocHasRefObjects` |  | |  |  |
-| `CABillgDocumentNumberOfItems` |  | |  |  |
-| `CABllbleItmNumber` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CABillgDocCreationDate` |  | |  |  |
-| `CABillgDocCreationTime` |  | |  |  |
-| `CABillgDocInternalNumber` |  | |  |  |
-| `CABillgProcess` |  | |  |  |
-| `CABillgDocHasPrepaidItems` |  | |  |  |
-| `CABillgDocHasRefillItems` |  | |  |  |
-| `CABillgDocHasRevnRecgnItems` |  | |  |  |
-| `CAPartnerSettlementRule` |  | |  |  |
-| `CABillgDocumentInvcgStatus` |  | |  |  |
-| `CAInvoicingDocument` |  | |  |  |
-| `CAInvcgCreationDate` |  | |  |  |
-| `CASubAreaForParallelization` |  | |  |  |
-| `CAAltvMDOriginalIsIncluded` |  | |  |  |
-| `_ContractAccountPartner` | | ✓ | | |
-| `_CABillgDocItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgDocument` | ✓ | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `CABillgType` |  | |  |  |  |  |
+| `CABillgDocPeriodStartDate` |  | |  |  |  |  |
+| `CABillgDocPeriodEndDate` |  | |  |  |  |  |
+| `CABillgDocumentReversalReason` |  | |  |  |  |  |
+| `CABillgIsDocumentSimulated` |  | |  |  |  |  |
+| `CABillgDocumentExternal` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `CAApplicationArea` |  | |  |  |  |  |
+| `CABillgDocOriginProcess` |  | |  |  |  |  |
+| `CAInvcgSourceDocumentType` |  | |  |  |  |  |
+| `CAInvcgTechnicalDocumentType` |  | |  |  |  |  |
+| `CAInvcgDocumentType` |  | |  |  |  |  |
+| `CAInvcgTargetProcess` |  | |  |  |  |  |
+| `CAInvcgMasterDataType` |  | |  |  |  |  |
+| `CAInvcgAltvBusinessPartner` |  | |  |  |  |  |
+| `CAInvcgAltvContractAccount` |  | |  |  |  |  |
+| `CABillgBaseDate` |  | |  |  |  |  |
+| `CABillgCurrency` |  | |  |  |  |  |
+| `CAInvcgCurrency` |  | |  |  |  |  |
+| `CATaxDetnType` |  | |  |  |  |  |
+| `CATaxDateType` |  | |  |  |  |  |
+| `CAInvcgCategory` |  | |  |  |  |  |
+| `CAInvcgControlOfInvoicingUnit` |  | |  |  |  |  |
+| `CAInvcgFirstDate` |  | |  |  |  |  |
+| `CABillgReversalDocument` |  | |  |  |  |  |
+| `CABillgReversedDocument` |  | |  |  |  |  |
+| `CABillgAdjustmentDocument` |  | |  |  |  |  |
+| `CABillgAdjustedDocument` |  | |  |  |  |  |
+| `CAInvcgCorrectionCategory` |  | |  |  |  |  |
+| `CaInvcgIsOrderDeleted` |  | |  |  |  |  |
+| `CABillgHasAdditionalInvoice` |  | |  |  |  |  |
+| `CAInvcgIsAccrualPostingRlvt` |  | |  |  |  |  |
+| `CABillgLockedForInvoicing` |  | |  |  |  |  |
+| `CABillgGrpgOfAdditionalItems` |  | |  |  |  |  |
+| `CABillgDocHasRefObjects` |  | |  |  |  |  |
+| `CABillgDocumentNumberOfItems` |  | |  |  |  |  |
+| `CABllbleItmNumber` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CABillgDocCreationDate` |  | |  |  |  |  |
+| `CABillgDocCreationTime` |  | |  |  |  |  |
+| `CABillgDocInternalNumber` |  | |  |  |  |  |
+| `CABillgProcess` |  | |  |  |  |  |
+| `CABillgDocHasPrepaidItems` |  | |  |  |  |  |
+| `CABillgDocHasRefillItems` |  | |  |  |  |  |
+| `CABillgDocHasRevnRecgnItems` |  | |  |  |  |  |
+| `CAPartnerSettlementRule` |  | |  |  |  |  |
+| `CABillgDocumentInvcgStatus` |  | |  |  |  |  |
+| `CAInvoicingDocument` |  | |  |  |  |  |
+| `CAInvcgCreationDate` |  | |  |  |  |  |
+| `CASubAreaForParallelization` |  | |  |  |  |  |
+| `CAAltvMDOriginalIsIncluded` |  | |  |  |  |  |
+| `_ContractAccountPartner` | | ✓ | | | | |
+| `_CABillgDocItem` | | ✓ | | | | |
 
 ## Source Code
 

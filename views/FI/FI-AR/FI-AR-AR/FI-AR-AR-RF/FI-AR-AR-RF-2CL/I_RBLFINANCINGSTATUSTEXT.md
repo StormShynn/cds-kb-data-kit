@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReceivableFinancingStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1) as frp_rcvbl_financing_status )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ReceivableFinancingStatusText` |  | |  | `cast( ddtext as frp_rcvbl_financing_status_txt preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReceivableFinancingStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1) as frp_rcvbl_financing_status )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ReceivableFinancingStatusText` |  | |  | `cast( ddtext as frp_rcvbl_financing_status_txt preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

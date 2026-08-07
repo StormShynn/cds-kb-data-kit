@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdItemType` | ✓ | |  | `item_type` |
-| `TranspOrdItemCategory` |  | |  | `item_cat` |
-| `_TranspOrdItemCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemType` | ✓ | |  | `item_type` |  |  |
+| `TranspOrdItemCategory` |  | |  | `item_cat` |  |  |
+| `_TranspOrdItemCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

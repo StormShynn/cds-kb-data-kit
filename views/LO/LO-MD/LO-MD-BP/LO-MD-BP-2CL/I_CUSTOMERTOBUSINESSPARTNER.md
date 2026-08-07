@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |
-| `Customer` |  | |  | `customer` |
-| `_BusinessPartner` | | ✓ | | |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |  |  |
+| `Customer` |  | |  | `customer` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LogAccMObjectType` | ✓ | |  |  |
-| `LogAccMObjectTypeIsActive` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LogAccMObjectType` | ✓ | |  |  |  |  |
+| `LogAccMObjectTypeIsActive` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentItemNumber` |  | |  | `posnr` |
-| `OutboundDeliveryItem` |  | |  | `outbound_delivery_item` |
-| `DeliveryDocumentType` |  | |  | `lfart` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `SDDocumentCategory` |  | |  | `vbtypl` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentItemNumber` |  | |  | `posnr` |  |  |
+| `OutboundDeliveryItem` |  | |  | `outbound_delivery_item` |  |  |
+| `DeliveryDocumentType` |  | |  | `lfart` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `SDDocumentCategory` |  | |  | `vbtypl` |  |  |
 
 ## Source Code
 

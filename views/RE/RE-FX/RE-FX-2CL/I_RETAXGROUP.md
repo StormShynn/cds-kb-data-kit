@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaxGroup` | ✓ | |  | `taxgroup` |
-| `REIsTaxGroupExempt` |  | |  | `isnonetax` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxGroup` | ✓ | |  | `taxgroup` |  |  |
+| `REIsTaxGroupExempt` |  | |  | `isnonetax` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

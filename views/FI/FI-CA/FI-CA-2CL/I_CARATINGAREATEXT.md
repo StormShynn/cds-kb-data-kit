@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARatingArea` | ✓ | |  | `rating_area` |
-| `Language` | ✓ | |  | `langu` |
-| `CARatingAreaDescription` |  | |  | `ra_txt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARatingArea` | ✓ | |  | `rating_area` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CARatingAreaDescription` |  | |  | `ra_txt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

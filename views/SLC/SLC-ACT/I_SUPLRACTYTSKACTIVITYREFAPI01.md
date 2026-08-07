@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrActyTaskReferenceUUID` | ✓ | |  |  |
-| `SuplrActyTaskUUID` |  | |  |  |
-| `SuplrActyUUID` |  | |  |  |
-| `SupplierActivity` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrActyTaskReferenceUUID` | ✓ | |  |  |  |  |
+| `SuplrActyTaskUUID` |  | |  |  |  |  |
+| `SuplrActyUUID` |  | |  |  |  |  |
+| `SupplierActivity` |  | |  |  |  |  |
 
 ## Source Code
 

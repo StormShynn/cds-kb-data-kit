@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentRequest` | ✓ | |  | `cast( Partner.BillingDocument as vbeln_bdr preserving type )` |
-| `BillingDocumentRequestItem` |  | |  | `}] key cast( Partner.BillingDocumentItem as posnr_bdr preserving type )` |
-| `PartnerFunction` | ✓ | |  | `cast(Partner.PartnerFunction as parvw_unv preserving type )` |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
-| `SDDocPartnerAddressRefType` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `_BillingDocumentRequest` | | ✓ | | |
-| `_Item` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  | `cast( Partner.BillingDocument as vbeln_bdr preserving type )` |  |  |
+| `BillingDocumentRequestItem` | ✓ | |  | `cast( Partner.BillingDocumentItem as posnr_bdr preserving type )` |  |  |
+| `PartnerFunction` | ✓ | |  | `cast(Partner.PartnerFunction as parvw_unv preserving type )` |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `_BillingDocumentRequest` | | ✓ | | | | |
+| `_Item` | | ✓ | | | | |
 
 ## Associations
 

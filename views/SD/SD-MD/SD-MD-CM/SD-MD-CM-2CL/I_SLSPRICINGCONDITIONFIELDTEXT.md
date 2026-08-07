@@ -33,15 +33,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `ConditionUsage` | ✓ | |  | `cast ( 'A' as kvewe )` |
-| `ConditionApplication` | ✓ | |  | `cast ( 'V' as kappl )` |
-| `PricingConditionField` | ✓ | |  | `fieldname` |
-| `DatabaseTable` | ✓ | |  | `tabname` |
-| `PricingConditionFieldText` |  | |  | `scrtext_l` |
-| `_SalesPricingConditionField` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `ConditionUsage` | ✓ | |  | `cast ( 'A' as kvewe )` |  |  |
+| `ConditionApplication` | ✓ | |  | `cast ( 'V' as kappl )` |  |  |
+| `PricingConditionField` | ✓ | |  | `fieldname` |  |  |
+| `DatabaseTable` | ✓ | |  | `tabname` |  |  |
+| `PricingConditionFieldText` |  | |  | `scrtext_l` |  |  |
+| `_SalesPricingConditionField` | | ✓ | | | | |
 
 ## Associations
 

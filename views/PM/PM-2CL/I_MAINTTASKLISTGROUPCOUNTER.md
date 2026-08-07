@@ -26,29 +26,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsType` | ✓ | |  | `plnty` |
-| `BillOfOperationsGroup` | ✓ | |  | `plnnr` |
-| `BillOfOperationsVariant` | ✓ | |  | `plnal` |
-| `BillOfOperationsVersionType` |  | |  | `subtype` |
-| `BillOfOperationsSubtype` |  | |  | `subtype` |
-| `LastUsageDate` |  | |  | `abdat` |
-| `NumberOfUsages` |  | |  | `abanz` |
-| `HasChangeNumber` |  | |  | `flg_ecm` |
-| `HasParameterEffectivity` |  | |  | `flg_ecm_par` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `LastChangeTime` |  | |  | `aeuzeit` |
-| `LastChangedByUser` |  | |  | `cast(plkz.aenam as vdm_lastchangedbyuserid preserving type)` |
-| `RoutingIsReworkRouting` |  | |  | `rework` |
-| `ProdnProcgIsFlexible` |  | |  | `relaxed` |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsVersionType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BillOfOperationsGroup_2` | | ✓ | | |
-| `_BillOfOperationsChangeState` | | ✓ | | |
-| `_BillOfOperationsSequence` | | ✓ | | |
-| `_BOOMaterialAssignment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  | `plnty` |  |  |
+| `BillOfOperationsGroup` | ✓ | |  | `plnnr` |  |  |
+| `BillOfOperationsVariant` | ✓ | |  | `plnal` |  |  |
+| `BillOfOperationsVersionType` |  | |  | `subtype` |  |  |
+| `BillOfOperationsSubtype` |  | |  | `subtype` |  |  |
+| `LastUsageDate` |  | |  | `abdat` |  |  |
+| `NumberOfUsages` |  | |  | `abanz` |  |  |
+| `HasChangeNumber` |  | |  | `flg_ecm` |  |  |
+| `HasParameterEffectivity` |  | |  | `flg_ecm_par` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `LastChangeTime` |  | |  | `aeuzeit` |  |  |
+| `LastChangedByUser` |  | |  | `cast(plkz.aenam as vdm_lastchangedbyuserid preserving type)` |  |  |
+| `RoutingIsReworkRouting` |  | |  | `rework` |  |  |
+| `ProdnProcgIsFlexible` |  | |  | `relaxed` |  |  |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsVersionType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsGroup_2` | | ✓ | | | | |
+| `_BillOfOperationsChangeState` | | ✓ | | | | |
+| `_BillOfOperationsSequence` | | ✓ | | | | |
+| `_BOOMaterialAssignment` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,59 +31,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralPurchaseContract` | ✓ | |  |  |
-| `PurchaseContractType` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `PurchaseContractTargetAmount` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `QuotationSubmissionDate` |  | |  |  |
-| `SupplierQuotation` |  | |  |  |
-| `CorrespncExternalReference` |  | |  |  |
-| `CorrespncInternalReference` |  | |  |  |
-| `SupplierRespSalesPersonName` |  | |  |  |
-| `SupplierPhoneNumber` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `PurchasingDocumentName` |  | |  |  |
-| `PurchasingProcessingStatus` |  | |  |  |
-| `PurgContractIsInPreparation` |  | |  |  |
-| `CntrlPurContrFlxblDistrIsAllwd` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `ActivePurchasingDocument` |  | |  |  |
-| `PurchasingDocumentVersion` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `PurgDocIsChgVers` |  | |  |  |
-| `IsCancelled` |  | |  |  |
-| `CntrlPurContrDistributionSts` |  | |  |  |
-| `PurchasingDocVersionReasonCode` |  | |  |  |
-| `PurchasingDocumentSubtype` |  | |  |  |
-| `ProcmtHubCompanyCodeGroupingID` |  | |  |  |
-| `_CentralPurchaseContractItem` | | ✓ | | |
-| `_CentralPurchaseContrHdrDistr` | | ✓ | | |
-| `_CntrlPurContractHdrNotes` | | ✓ | | |
-| `_CntrlPurContrHdrCndnValidity` | | ✓ | | |
-| `_CntrlPurContrVersionHistory` | | ✓ | | |
-| `_SubordCntrlPurContract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractType` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `QuotationSubmissionDate` |  | |  |  |  |  |
+| `SupplierQuotation` |  | |  |  |  |  |
+| `CorrespncExternalReference` |  | |  |  |  |  |
+| `CorrespncInternalReference` |  | |  |  |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |  |  |
+| `SupplierPhoneNumber` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `PurchasingDocumentName` |  | |  |  |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |  |  |
+| `PurgContractIsInPreparation` |  | |  |  |  |  |
+| `CntrlPurContrFlxblDistrIsAllwd` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `ActivePurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentVersion` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `PurgDocIsChgVers` |  | |  |  |  |  |
+| `IsCancelled` |  | |  |  |  |  |
+| `CntrlPurContrDistributionSts` |  | |  |  |  |  |
+| `PurchasingDocVersionReasonCode` |  | |  |  |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |  |  |
+| `ProcmtHubCompanyCodeGroupingID` |  | |  |  |  |  |
+| `_CentralPurchaseContractItem` | | ✓ | | | | |
+| `_CentralPurchaseContrHdrDistr` | | ✓ | | | | |
+| `_CntrlPurContractHdrNotes` | | ✓ | | | | |
+| `_CntrlPurContrHdrCndnValidity` | | ✓ | | | | |
+| `_CntrlPurContrVersionHistory` | | ✓ | | | | |
+| `_SubordCntrlPurContract` | | ✓ | | | | |
 
 ## Source Code
 

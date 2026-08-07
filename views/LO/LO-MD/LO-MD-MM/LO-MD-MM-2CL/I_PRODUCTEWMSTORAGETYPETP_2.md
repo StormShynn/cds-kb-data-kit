@@ -30,43 +30,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `EWMWarehouse` | ✓ | |  |  |
-| `EntitledToDisposeParty` | ✓ | |  |  |
-| `EWMStorageType` | ✓ | |  |  |
-| `ProductInternalUUID` |  | |  |  |
-| `SupplyChainUnitUUID` |  | |  |  |
-| `EWMPartyEntitledToDisposeUUID` |  | |  |  |
-| `EWMStorageSectionMethod` |  | |  |  |
-| `EWMStorageBinType` |  | |  |  |
-| `EWMMaximumNumberOfBins` |  | |  |  |
-| `EWMMaximumStorageQuantity` |  | |  |  |
-| `EWMMaxStorQuantityBaseUnit` |  | |  |  |
-| `EWMMaxStorQuantityDisplayUnit` |  | |  |  |
-| `EWMMinimumStorageQuantity` |  | |  |  |
-| `EWMMinStorQuantityBaseUnit` |  | |  |  |
-| `EWMMinStorQuantityDisplayUnit` |  | |  |  |
-| `EWMMinReplnmtQuantity` |  | |  |  |
-| `EWMMinReplnmtQtyBaseUnit` |  | |  |  |
-| `EWMMinReplnmtQtyDisplayUnit` |  | |  |  |
-| `EWMMinStorQtyOfMaxStorQtyInPct` |  | |  |  |
-| `EWMSpltPtwyThresholdInPercent` |  | |  |  |
-| `EWMProdIsSplitOnPtwy` |  | |  |  |
-| `EWMProdIsSkippedOnPtwy` |  | |  |  |
-| `EWMHasNoReplenishment` |  | |  |  |
-| `EWMStorageBinSearchRule` |  | |  |  |
-| `EWMProdQuantityClassification` |  | |  |  |
-| `EWMProdPtwyQtyClassification` |  | |  |  |
-| `EWMPtwySequence` |  | |  |  |
-| `_ProductEWMWarehouse` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_MaxStorageQtyDisplayUnitText` | | ✓ | | |
-| `_MinStorageQtyDisplayUnitText` | | ✓ | | |
-| `_MinReplnmtQtyDisplayUnitText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `EWMWarehouse` | ✓ | |  |  |  |  |
+| `EntitledToDisposeParty` | ✓ | |  |  |  |  |
+| `EWMStorageType` | ✓ | |  |  |  |  |
+| `ProductInternalUUID` |  | |  |  |  |  |
+| `SupplyChainUnitUUID` |  | |  |  |  |  |
+| `EWMPartyEntitledToDisposeUUID` |  | |  |  |  |  |
+| `EWMStorageSectionMethod` |  | |  |  |  |  |
+| `EWMStorageBinType` |  | |  |  |  |  |
+| `EWMMaximumNumberOfBins` |  | |  |  |  |  |
+| `EWMMaximumStorageQuantity` |  | |  |  |  |  |
+| `EWMMaxStorQuantityBaseUnit` |  | |  |  |  |  |
+| `EWMMaxStorQuantityDisplayUnit` |  | |  |  |  |  |
+| `EWMMinimumStorageQuantity` |  | |  |  |  |  |
+| `EWMMinStorQuantityBaseUnit` |  | |  |  |  |  |
+| `EWMMinStorQuantityDisplayUnit` |  | |  |  |  |  |
+| `EWMMinReplnmtQuantity` |  | |  |  |  |  |
+| `EWMMinReplnmtQtyBaseUnit` |  | |  |  |  |  |
+| `EWMMinReplnmtQtyDisplayUnit` |  | |  |  |  |  |
+| `EWMMinStorQtyOfMaxStorQtyInPct` |  | |  |  |  |  |
+| `EWMSpltPtwyThresholdInPercent` |  | |  |  |  |  |
+| `EWMProdIsSplitOnPtwy` |  | |  |  |  |  |
+| `EWMProdIsSkippedOnPtwy` |  | |  |  |  |  |
+| `EWMHasNoReplenishment` |  | |  |  |  |  |
+| `EWMStorageBinSearchRule` |  | |  |  |  |  |
+| `EWMProdQuantityClassification` |  | |  |  |  |  |
+| `EWMProdPtwyQtyClassification` |  | |  |  |  |  |
+| `EWMPtwySequence` |  | |  |  |  |  |
+| `_ProductEWMWarehouse` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_MaxStorageQtyDisplayUnitText` | | ✓ | | | | |
+| `_MinStorageQtyDisplayUnitText` | | ✓ | | | | |
+| `_MinReplnmtQtyDisplayUnitText` | | ✓ | | | | |
 
 ## Source Code
 

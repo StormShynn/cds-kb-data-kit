@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReferenceSDDocumentItem` |  | |  | `vgpos` |
-| `RequestedQuantity` |  | |  | `reqd_qty` |
-| `RequestedQuantityUnit` |  | |  | `reqd_qty_unit` |
-| `CustRetItmFollowUpActivity` |  | |  | `msr_fu_code` |
-| `ReturnsRefundType` |  | |  | `msr_refund_type` |
-| `ReturnsRefundProcgMode` |  | |  | `msr_refund_control` |
-| `ReturnReason` |  | |  | `msr_returns_reason` |
-| `RetMatlInspResultCode` |  | |  | `msr_inspection_code` |
-| `RetsMgmtProcessingBlock` |  | |  | `msr_approval_block` |
-| `ReturnsMaterialHasBeenReceived` |  | |  | `msr_material_received` |
-| `ProductIsInspectedAtCustSite` |  | |  | `msr_at_customer_site` |
-| `NextPlantForFollowUpActivity` |  | |  | `msr_next_plant` |
-| `Supplier` |  | |  | `lifnr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReferenceSDDocumentItem` |  | |  | `vgpos` |  |  |
+| `RequestedQuantity` |  | |  | `reqd_qty` |  |  |
+| `RequestedQuantityUnit` |  | |  | `reqd_qty_unit` |  |  |
+| `CustRetItmFollowUpActivity` |  | |  | `msr_fu_code` |  |  |
+| `ReturnsRefundType` |  | |  | `msr_refund_type` |  |  |
+| `ReturnsRefundProcgMode` |  | |  | `msr_refund_control` |  |  |
+| `ReturnReason` |  | |  | `msr_returns_reason` |  |  |
+| `RetMatlInspResultCode` |  | |  | `msr_inspection_code` |  |  |
+| `RetsMgmtProcessingBlock` |  | |  | `msr_approval_block` |  |  |
+| `ReturnsMaterialHasBeenReceived` |  | |  | `msr_material_received` |  |  |
+| `ProductIsInspectedAtCustSite` |  | |  | `msr_at_customer_site` |  |  |
+| `NextPlantForFollowUpActivity` |  | |  | `msr_next_plant` |  |  |
+| `Supplier` |  | |  | `lifnr` |  |  |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_DUEType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_due_type preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_DUEType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_due_type preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,53 +30,53 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractType` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `PurchaseContractTargetAmount` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ReleaseCode` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `SupplyingSupplier` |  | |  |  |
-| `InvoicingParty` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `QuotationSubmissionDate` |  | |  |  |
-| `SupplierQuotation` |  | |  |  |
-| `CorrespncExternalReference` |  | |  |  |
-| `CorrespncInternalReference` |  | |  |  |
-| `SupplierRespSalesPersonName` |  | |  |  |
-| `SupplierPhoneNumber` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `ReleaseIsNotCompleted` |  | |  |  |
-| `SupplierAddressID` |  | |  |  |
-| `PurgDocExternalReference` |  | |  |  |
-| `PurchasingDocumentName` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `PurchasingProcessingStatus` |  | |  |  |
-| `PurgAggrgdProdCmplncSuplrSts` |  | |  |  |
-| `PurgHasCatalogRelevantItems` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractType` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ReleaseCode` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `SupplyingSupplier` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `QuotationSubmissionDate` |  | |  |  |  |  |
+| `SupplierQuotation` |  | |  |  |  |  |
+| `CorrespncExternalReference` |  | |  |  |  |  |
+| `CorrespncInternalReference` |  | |  |  |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |  |  |
+| `SupplierPhoneNumber` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |  |  |
+| `SupplierAddressID` |  | |  |  |  |  |
+| `PurgDocExternalReference` |  | |  |  |  |  |
+| `PurchasingDocumentName` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |  |  |
+| `PurgAggrgdProdCmplncSuplrSts` |  | |  |  |  |  |
+| `PurgHasCatalogRelevantItems` |  | |  |  |  |  |
 
 ## Associations
 

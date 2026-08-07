@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPPlant` | ✓ | |  | `werks` |
-| `MRPPlanningCalendar` | ✓ | |  | `mrppp` |
-| `Language` | ✓ | |  | `spras` |
-| `MRPPlanningCalendarName` |  | |  | `cast(txt.pptxt as vdm_pptxt preserving type)` |
-| `_Plant` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Calendar` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPPlant` | ✓ | |  | `werks` |  |  |
+| `MRPPlanningCalendar` | ✓ | |  | `mrppp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MRPPlanningCalendarName` |  | |  | `cast(txt.pptxt as vdm_pptxt preserving type)` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Calendar` | | ✓ | | | | |
 
 ## Associations
 

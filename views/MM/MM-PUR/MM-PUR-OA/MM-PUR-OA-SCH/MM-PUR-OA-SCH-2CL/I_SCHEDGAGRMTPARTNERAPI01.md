@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `PurchasingOrganization` | ✓ | |  |  |
-| `SupplierSubrange` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `PartnerCounter` | ✓ | |  |  |
-| `SchedgAgrmtPartner` |  | |  |  |
-| `SchedgAgrmtPartnerName` |  | |  |  |
-| `SchedgAgrmtCategory` |  | |  |  |
-| `SchedgAgrmtType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierContact` |  | |  |  |
-| `EmploymentInternalID` |  | |  |  |
-| `PersonWorkAgreement` |  | |  |  |
-| `DefaultPartner` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `_SchedgAgrmtHdr` | | ✓ | | |
-| `_SchedgAgrmtItm` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_PartnerFunctionText` | | ✓ | | |
-| `_PersonWorkAgreement` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingDocument` | | ✓ | | |
-| `_PurchasingDocumentItem` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierContact` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `SupplierSubrange` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `PartnerCounter` | ✓ | |  |  |  |  |
+| `SchedgAgrmtPartner` |  | |  |  |  |  |
+| `SchedgAgrmtPartnerName` |  | |  |  |  |  |
+| `SchedgAgrmtCategory` |  | |  |  |  |  |
+| `SchedgAgrmtType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierContact` |  | |  |  |  |  |
+| `EmploymentInternalID` |  | |  |  |  |  |
+| `PersonWorkAgreement` |  | |  |  |  |  |
+| `DefaultPartner` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `_SchedgAgrmtHdr` | | ✓ | | | | |
+| `_SchedgAgrmtItm` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_PartnerFunctionText` | | ✓ | | | | |
+| `_PersonWorkAgreement` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingDocument` | | ✓ | | | | |
+| `_PurchasingDocumentItem` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierContact` | | ✓ | | | | |
 
 ## Associations
 

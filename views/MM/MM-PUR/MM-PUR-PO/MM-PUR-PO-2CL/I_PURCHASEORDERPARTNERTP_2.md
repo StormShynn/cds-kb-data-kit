@@ -32,31 +32,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `SupplierSubrange` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PartnerCounter` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `PurchasingDocumentPartnerType` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierHierarchyCategory` |  | |  |  |
-| `SupplierContact` |  | |  |  |
-| `PersonWorkAgreement` |  | |  |  |
-| `EmploymentInternalID` |  | |  |  |
-| `DefaultPartner` |  | |  |  |
-| `_PartnerFunction` | | ✓ | | |
-| `_PartnerFunctionText` | | ✓ | | |
-| `_PersonWorkAgreement` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchaseOrderTP` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierContact` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `SupplierSubrange` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PartnerCounter` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `PurchasingDocumentPartnerType` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierHierarchyCategory` |  | |  |  |  |  |
+| `SupplierContact` |  | |  |  |  |  |
+| `PersonWorkAgreement` |  | |  |  |  |  |
+| `EmploymentInternalID` |  | |  |  |  |  |
+| `DefaultPartner` |  | |  |  |  |  |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_PartnerFunctionText` | | ✓ | | | | |
+| `_PersonWorkAgreement` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchaseOrderTP` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierContact` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceProfile` | ✓ | |  | `srv_serwi` |
-| `Language` | ✓ | |  | `langu` |
-| `ServiceProfileName` |  | |  | `description` |
-| `_Language` | | ✓ | | |
-| `_ServiceProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceProfile` | ✓ | |  | `srv_serwi` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ServiceProfileName` |  | |  | `description` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ServiceProfile` | | ✓ | | | | |
 
 ## Associations
 

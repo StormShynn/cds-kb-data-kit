@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturnType` | ✓ | |  | `SalesDocumentType` |
-| `SDDocumentCategory` |  | |  |  |
-| `RetsMgmtIsActive` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturnType` | ✓ | |  | `SalesDocumentType` |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `RetsMgmtIsActive` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

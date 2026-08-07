@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceConfirmation` | ✓ | |  |  |
-| `BillingDocument` | ✓ | |  |  |
-| `_ServiceConfirmationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |  |  |
+| `BillingDocument` | ✓ | |  |  |  |  |
+| `_ServiceConfirmationTP` | | ✓ | | | | |
 
 ## Source Code
 

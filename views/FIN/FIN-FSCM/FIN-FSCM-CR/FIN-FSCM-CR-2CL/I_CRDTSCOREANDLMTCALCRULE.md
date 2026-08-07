@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditScoreAndLimitCalcRule` | ✓ | |  | `limit_rule` |
-| `CrdtScoreAndLmtCalcRuleIsDflt` |  | |  | `default_rule` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditScoreAndLimitCalcRule` | ✓ | |  | `limit_rule` |  |  |
+| `CrdtScoreAndLmtCalcRuleIsDflt` |  | |  | `default_rule` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

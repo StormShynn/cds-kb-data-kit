@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrCarrierConfExpectation` | ✓ | |  | `cast (left(dd07l.domvalue_l, 1 ) as /spe/carrier_cnf preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrCarrierConfExpectation` | ✓ | |  | `cast (left(dd07l.domvalue_l, 1 ) as /spe/carrier_cnf preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

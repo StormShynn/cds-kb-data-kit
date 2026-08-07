@@ -30,44 +30,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `SchedLineStscDeliveryDate` |  | |  |  |
-| `PerformancePeriodStartDate` |  | |  |  |
-| `PerformancePeriodEndDate` |  | |  |  |
-| `ScheduleLineDeliveryTime` |  | |  |  |
-| `Batch` |  | |  |  |
-| `BatchBySupplier` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `OpenPurchaseOrderQuantity` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `Currency` |  | |  |  |
-| `OpenPurchaseOrderNetAmount` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `ScheduleLineOrderDate` |  | |  |  |
-| `ProductAvailabilityDate` |  | |  |  |
-| `LoadingDate` |  | |  |  |
-| `LoadingTime` |  | |  |  |
-| `TransportationPlanningDate` |  | |  |  |
-| `TransportationPlanningTime` |  | |  |  |
-| `GoodsIssueDate` |  | |  |  |
-| `GoodsIssueTime` |  | |  |  |
-| `RouteSchedule` |  | |  |  |
-| `ProductAvailabilityTime` |  | |  |  |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_SubcontractingComponent` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_PurchaseOrderQuantityUnit` | | ✓ | | |
-| `_PurchaseRequisition` | | ✓ | | |
-| `_PurchaseRequisitionItem` | | ✓ | | |
-| `_PurchaseOrderQuantityUnitText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `BatchBySupplier` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `OpenPurchaseOrderQuantity` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `OpenPurchaseOrderNetAmount` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `ScheduleLineOrderDate` |  | |  |  |  |  |
+| `ProductAvailabilityDate` |  | |  |  |  |  |
+| `LoadingDate` |  | |  |  |  |  |
+| `LoadingTime` |  | |  |  |  |  |
+| `TransportationPlanningDate` |  | |  |  |  |  |
+| `TransportationPlanningTime` |  | |  |  |  |  |
+| `GoodsIssueDate` |  | |  |  |  |  |
+| `GoodsIssueTime` |  | |  |  |  |  |
+| `RouteSchedule` |  | |  |  |  |  |
+| `ProductAvailabilityTime` |  | |  |  |  |  |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_SubcontractingComponent` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_PurchaseOrderQuantityUnit` | | ✓ | | | | |
+| `_PurchaseRequisition` | | ✓ | | | | |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
+| `_PurchaseOrderQuantityUnitText` | | ✓ | | | | |
 
 ## Source Code
 

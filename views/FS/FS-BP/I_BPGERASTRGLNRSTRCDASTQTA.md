@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BPGerAstRglnRestrictedAstQuota` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_entity_quota )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPGerAstRglnRestrictedAstQuota` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_entity_quota )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

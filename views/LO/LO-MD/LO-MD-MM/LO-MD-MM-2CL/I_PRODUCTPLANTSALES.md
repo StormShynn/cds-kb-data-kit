@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `LoadingGroup` |  | |  |  |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `CapPlanningQuantityInBaseUoM` |  | |  |  |
-| `ProductShippingProcessingTime` |  | |  |  |
-| `WrkCentersShipgSetupTimeInDays` |  | |  |  |
-| `ReplacementPartType` |  | |  |  |
-| `AvailabilityCheckType` |  | |  |  |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `_Product` | | ✓ | | |
-| `_LoadingGroupText` | | ✓ | | |
-| `_AvailabilityCheckType` | | ✓ | | |
-| `_AvailabilityCheckType_2` | | ✓ | | |
-| `_ProductReplacementPartTypeT` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `LoadingGroup` |  | |  |  |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `CapPlanningQuantityInBaseUoM` |  | |  |  |  |  |
+| `ProductShippingProcessingTime` |  | |  |  |  |  |
+| `WrkCentersShipgSetupTimeInDays` |  | |  |  |  |  |
+| `ReplacementPartType` |  | |  |  |  |  |
+| `AvailabilityCheckType` |  | |  |  |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_LoadingGroupText` | | ✓ | | | | |
+| `_AvailabilityCheckType` | | ✓ | | | | |
+| `_AvailabilityCheckType_2` | | ✓ | | | | |
+| `_ProductReplacementPartTypeT` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
 
 ## Associations
 

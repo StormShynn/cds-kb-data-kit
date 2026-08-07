@@ -28,82 +28,82 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceQuotation` | ✓ | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceQuotationType` |  | |  |  |
-| `ServiceQuotationUUID` |  | |  |  |
-| `ServiceQuotationDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `RespyMgmtServiceTeam` |  | |  |  |
-| `RespyMgmtGlobalTeamID` |  | |  |  |
-| `ServiceQuotationIsNew` |  | |  |  |
-| `ServiceQuotationIsInProcess` |  | |  |  |
-| `ServiceQuotationIsReleased` |  | |  |  |
-| `ServiceQuotationIsCompleted` |  | |  |  |
-| `ServiceQuotationStatus` |  | |  |  |
-| `ServiceQuotationHasError` |  | |  |  |
-| `SrvcDocRejectionStatus` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `SrvcQtanValidityStartDateTime` |  | |  |  |
-| `SrvcQtanValidityEndDateTime` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
-| `PricingDocument` |  | |  |  |
-| `SrvcQuotationRejectionReason` |  | |  |  |
-| `ServiceQtanExtReference` |  | |  |  |
-| `ReferenceServiceContract` |  | |  |  |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
-| `_ServiceTeamHeader` | | ✓ | | |
-| `_SrvcQtanStatus` | | ✓ | | |
-| `_ServiceDocumentPriority` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_SrvcDocumentRejectionReason` | | ✓ | | |
-| `_ServiceQuotationItemTP` | | ✓ | | |
-| `_SrvcQtanReferenceObjectTP` | | ✓ | | |
-| `_SrvcQtanPriceElementTP` | | ✓ | | |
-| `_SrvcQtanAppointmentTP` | | ✓ | | |
-| `_SrvcQtanDurationTP` | | ✓ | | |
-| `_SrvcQtanFUPSrvcOrdTP` | | ✓ | | |
-| `_SrvcQtanLongTextTP` | | ✓ | | |
-| `_SrvcQtanPartnerTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceQuotationType` |  | |  |  |  |  |
+| `ServiceQuotationUUID` |  | |  |  |  |  |
+| `ServiceQuotationDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |  |  |
+| `ServiceQuotationIsNew` |  | |  |  |  |  |
+| `ServiceQuotationIsInProcess` |  | |  |  |  |  |
+| `ServiceQuotationIsReleased` |  | |  |  |  |  |
+| `ServiceQuotationIsCompleted` |  | |  |  |  |  |
+| `ServiceQuotationStatus` |  | |  |  |  |  |
+| `ServiceQuotationHasError` |  | |  |  |  |  |
+| `SrvcDocRejectionStatus` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `SrvcQtanValidityStartDateTime` |  | |  |  |  |  |
+| `SrvcQtanValidityEndDateTime` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `SrvcQuotationRejectionReason` |  | |  |  |  |  |
+| `ServiceQtanExtReference` |  | |  |  |  |  |
+| `ReferenceServiceContract` |  | |  |  |  |  |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_ServiceTeamHeader` | | ✓ | | | | |
+| `_SrvcQtanStatus` | | ✓ | | | | |
+| `_ServiceDocumentPriority` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | | | |
+| `_ServiceQuotationItemTP` | | ✓ | | | | |
+| `_SrvcQtanReferenceObjectTP` | | ✓ | | | | |
+| `_SrvcQtanPriceElementTP` | | ✓ | | | | |
+| `_SrvcQtanAppointmentTP` | | ✓ | | | | |
+| `_SrvcQtanDurationTP` | | ✓ | | | | |
+| `_SrvcQtanFUPSrvcOrdTP` | | ✓ | | | | |
+| `_SrvcQtanLongTextTP` | | ✓ | | | | |
+| `_SrvcQtanPartnerTP` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionSeverity` | ✓ | |  | `prschaerfe` |
-| `InspectionSeverityText` |  | |  | `kurztext` |
-| `_InspectionSeverity` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionSeverity` | ✓ | |  | `prschaerfe` |  |  |
+| `InspectionSeverityText` |  | |  | `kurztext` |  |  |
+| `_InspectionSeverity` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

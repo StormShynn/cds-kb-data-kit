@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |
-| `BillingPlan` | ✓ | |  |  |
-| `BillingPlanCategory` |  | |  |  |
-| `BillingPlanUsageCategory` |  | |  |  |
-| `BillingPlanType` |  | |  |  |
-| `BillingPlanStartDate` |  | |  |  |
-| `BillingPlanStartDateRule` |  | |  |  |
-| `BillingPlanEndDate` |  | |  |  |
-| `BillingPlanEndDateRule` |  | |  |  |
-| `BillingPlanSearchTerm` |  | |  |  |
-| `ReferenceBillingPlan` |  | |  |  |
-| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
-| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
-| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
-| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderBillingPlanItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |  |  |
+| `BillingPlan` | ✓ | |  |  |  |  |
+| `BillingPlanCategory` |  | |  |  |  |  |
+| `BillingPlanUsageCategory` |  | |  |  |  |  |
+| `BillingPlanType` |  | |  |  |  |  |
+| `BillingPlanStartDate` |  | |  |  |  |  |
+| `BillingPlanStartDateRule` |  | |  |  |  |  |
+| `BillingPlanEndDate` |  | |  |  |  |  |
+| `BillingPlanEndDateRule` |  | |  |  |  |  |
+| `BillingPlanSearchTerm` |  | |  |  |  |  |
+| `ReferenceBillingPlan` |  | |  |  |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |  |  |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |  |  |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |  |  |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderBillingPlanItem` | | ✓ | | | | |
 
 ## Associations
 

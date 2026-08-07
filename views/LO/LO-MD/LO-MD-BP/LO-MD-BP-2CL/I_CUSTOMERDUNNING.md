@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `Customer` | ✓ | |  | `kunnr` |
-| `DunningArea` | ✓ | |  | `maber` |
-| `LastDunnedOn` |  | |  | `madat` |
-| `DunningProcedure` |  | |  | `mahna` |
-| `DunningLevel` |  | |  | `mahns` |
-| `DunningBlock` |  | |  | `mansp` |
-| `DunningRecipient` |  | |  | `knrma` |
-| `LegDunningProcedureOn` |  | |  | `gmvdt` |
-| `DunningClerk` |  | |  | `busab` |
-| `_CustomerCompany` | | ✓ | | |
-| `_DunningArea` | | ✓ | | |
-| `_DunningAreaText` | | ✓ | | |
-| `_DunningProcedure` | | ✓ | | |
-| `_DunningProcedureText` | | ✓ | | |
-| `_DunningBlock` | | ✓ | | |
-| `_DunningBlockText` | | ✓ | | |
-| `_DunningClerk` | | ✓ | | |
-| `_DunningRecipient` | | ✓ | | |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `DunningArea` | ✓ | |  | `maber` |  |  |
+| `LastDunnedOn` |  | |  | `madat` |  |  |
+| `DunningProcedure` |  | |  | `mahna` |  |  |
+| `DunningLevel` |  | |  | `mahns` |  |  |
+| `DunningBlock` |  | |  | `mansp` |  |  |
+| `DunningRecipient` |  | |  | `knrma` |  |  |
+| `LegDunningProcedureOn` |  | |  | `gmvdt` |  |  |
+| `DunningClerk` |  | |  | `busab` |  |  |
+| `_CustomerCompany` | | ✓ | | | | |
+| `_DunningArea` | | ✓ | | | | |
+| `_DunningAreaText` | | ✓ | | | | |
+| `_DunningProcedure` | | ✓ | | | | |
+| `_DunningProcedureText` | | ✓ | | | | |
+| `_DunningBlock` | | ✓ | | | | |
+| `_DunningBlockText` | | ✓ | | | | |
+| `_DunningClerk` | | ✓ | | | | |
+| `_DunningRecipient` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
 
 ## Associations
 

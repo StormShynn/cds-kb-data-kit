@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowExternalStatus` | ✓ | |  | `WorkflowTaskStatus` |
-| `Language` | ✓ | |  |  |
-| `WorkflowExternalStatusDesc` |  | |  | `WorkflowTaskStatusDesc` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowExternalStatus` | ✓ | |  | `WorkflowTaskStatus` |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `WorkflowExternalStatusDesc` |  | |  | `WorkflowTaskStatusDesc` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

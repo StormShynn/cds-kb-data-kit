@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialDocument` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocument` |
-| `MaterialDocumentYear` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocumentYear` |
-| `MaterialDocumentItem` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocumentItem` |
-| `PurchaseOrder` |  | | `_MaterialDocumentRecord` | `PurchaseOrder` |
-| `PurchaseOrderItem` |  | | `_MaterialDocumentRecord` | `PurchaseOrderItem` |
-| `FullNameOfPerson` |  | | `_AddressPersonName` | `PersonFullName` |
-| `CalendarDay` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 7, 2)` |
-| `CalendarMonth` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 5, 2)` |
-| `CalendarYear` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 1, 4)` |
-| `SystemID` |  | |  | `substring(_MaterialDocumentRecord.LogicalSystem, 1, 3)` |
-| `ClientID` |  | |  | `substring(_MaterialDocumentRecord.LogicalSystem, 8, 3)` |
-| `InvtryMgmtReferenceDocument` |  | | `_MaterialDocumentRecord` | `InvtryMgmtReferenceDocument` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialDocument` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocument` |  |  |
+| `MaterialDocumentYear` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocumentYear` |  |  |
+| `MaterialDocumentItem` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocumentItem` |  |  |
+| `PurchaseOrder` |  | | `_MaterialDocumentRecord` | `PurchaseOrder` |  |  |
+| `PurchaseOrderItem` |  | | `_MaterialDocumentRecord` | `PurchaseOrderItem` |  |  |
+| `FullNameOfPerson` |  | | `_AddressPersonName` | `PersonFullName` |  |  |
+| `CalendarDay` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 7, 2)` |  |  |
+| `CalendarMonth` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 5, 2)` |  |  |
+| `CalendarYear` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 1, 4)` |  |  |
+| `SystemID` |  | |  | `substring(_MaterialDocumentRecord.LogicalSystem, 1, 3)` |  |  |
+| `ClientID` |  | |  | `substring(_MaterialDocumentRecord.LogicalSystem, 8, 3)` |  |  |
+| `InvtryMgmtReferenceDocument` |  | | `_MaterialDocumentRecord` | `InvtryMgmtReferenceDocument` |  |  |
 
 ## Source Code
 

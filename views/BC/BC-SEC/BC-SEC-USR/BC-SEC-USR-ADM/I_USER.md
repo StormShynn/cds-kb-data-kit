@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserID` | ✓ | |  | `cast( usr21.bname as vdm_userid preserving type )` |
-| `UserDescription` |  | |  | `cast( usr21.techdesc as vdm_userdescription preserving type )` |
-| `IsTechnicalUser` |  | |  | `case usr21.idadtype when '00' then ' ' when '02' then ' ' when '03' then ' ' when '04' then ' ' else 'X' end` |
-| `AddressPersonID` |  | |  | `persnumber` |
-| `AddressID` |  | |  | `addrnumber` |
-| `_AddrCurDefaultEmailAddress` | | ✓ | | |
-| `_UserAddress` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserID` | ✓ | |  | `cast( usr21.bname as vdm_userid preserving type )` |  |  |
+| `UserDescription` |  | |  | `cast( usr21.techdesc as vdm_userdescription preserving type )` |  |  |
+| `IsTechnicalUser` |  | |  | `case usr21.idadtype when '00' then ' ' when '02' then ' ' when '03' then ' ' when '04' then ' ' else 'X' end` |  |  |
+| `AddressPersonID` |  | |  | `persnumber` |  |  |
+| `AddressID` |  | |  | `addrnumber` |  |  |
+| `_AddrCurDefaultEmailAddress` | | ✓ | | | | |
+| `_UserAddress` | | ✓ | | | | |
 
 ## Associations
 

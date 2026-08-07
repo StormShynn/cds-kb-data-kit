@@ -29,62 +29,62 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocument` | ✓ | |  | `cast( PurchaseOrder as mm_a_purchasing_document preserving type )` |
-| `PurchasingDocumentItem` | ✓ | |  | `cast( PurchaseOrderItem as mm_a_purchasing_document_item preserving type )` |
-| `PurgDocMigrtnIsCmpltdForAnlyts` |  | |  | `, derivation: { lookupEntity: 'F_ProcmtAnalyticsDataSelMeth', resultElement: 'PurgDocMigrtnIsCmpltdForAnlyts' } } PurgDocMigrtnIsCmpltdForAnlyts` |
-| `SuplrEvalCritraDelivCompleted` |  | |  | `, derivation: { lookupEntity: 'F_SuplrEvalCriteriaGenConfign', resultElement: 'SuplrEvalCritraDelivCompleted' } } SuplrEvalCritraDelivCompleted` |
-| `SuplrEvalRelevantDocCategory` |  | |  | `, derivation: { lookupEntity: 'F_SuplrEvalDocCatConfign', resultElement: 'SuplrEvalRelevantDocCategory' } } SuplrEvalRelevantDocCategory` |
-| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |
-| `CalendarQuarter` |  | | `_Calendar` | `CalendarQuarter` |
-| `CalendarMonth` |  | | `_Calendar` | `CalendarMonth` |
-| `CalendarWeek` |  | | `_Calendar` | `CalendarWeek` |
-| `PurchaseOrderDate` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Region` |  | | `_Supplier` | `Region` |
-| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |
-| `Plant` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingCategory` |  | |  |  |
-| `PurgCatName` |  | |  |  |
-| `DisplayCurrency` |  | |  |  |
-| `PurchaseOrderNetPriceAmount` |  | |  |  |
-| `TimeVarianceScore` |  | |  | `cast ( VendorEval.TimeVarianceScore as mm_a_time_variance_score )` |
-| `PriceVarianceScore` |  | |  | `cast( VendorEval.PriceVarianceScore as mm_a_price_variance_score )` |
-| `QuantityVarianceScore` |  | |  | `cast( VendorEval.QuantityVarianceScore as mm_a_quantity_var_score )` |
-| `InspectionLotQualityScore` |  | |  | `cast( VendorEval.InspectionLotQualityScore as mm_a_quality_variance_score )` |
-| `QualityNotificationScore` |  | |  | `cast( VendorEval.QualityNotificationScore as mm_a_quality_notif_score )` |
-| `NmbrOfPOWithPriceVariance` |  | |  | `PriceVarianceCount` |
-| `NmbrOfPOWithQuantityVariance` |  | |  | `QuantityVarianceCount` |
-| `NmbrOfPOWithTimeVariance` |  | |  | `TimeVarianceCount` |
-| `NmbrOfPOWithQualityVariance` |  | |  | `InspectionLotQualityCount` |
-| `QualityNotificationCount` |  | |  |  |
-| `SupplierOperationalScore` |  | |  | `cast( ( QuantityVarianceScore1 * evaluationquantityweight + PriceVarianceScore1 * evaluationpriceweight + TimeVarianceScore1 * evaluationtimeweight + InspectionLotQualityScore1 * evaluationqualityweight + QualityNotificationScore1 * evaluationqualitynotifweight ) * division( 1, (evaluationquantityweight + evaluationpriceweight + evaluationtimeweight + evaluationqualityweight + evaluationqualitynotifweight ) , 8 ) as mm_a_supplier_opl_score )` |
-| `SuplrEvalOplScoreValue` |  | |  | `case when InspectionLotQualityScore1 = 0 then cast( round(( QuantityVarianceScore1 * evaluationquantityweight + PriceVarianceScore1 * evaluationpriceweight + TimeVarianceScore1 * evaluationtimeweight + QualityNotificationScore1 * evaluationqualitynotifweight ) * division( 1, (evaluationquantityweight + evaluationpriceweight + evaluationtimeweight + evaluationqualitynotifweight ) , 8 ), 1) as mm_pur_ana_suplreval_opl_score ) else cast( round(( QuantityVarianceScore1 * evaluationquantityweight + PriceVarianceScore1 * evaluationpriceweight + TimeVarianceScore1 * evaluationtimeweight + InspectionLotQualityScore1 * evaluationqualityweight + QualityNotificationScore1 * evaluationqualitynotifweight ) * division( 1, (evaluationquantityweight + evaluationpriceweight + evaluationtimeweight + evaluationqualityweight + evaluationqualitynotifweight ) , 8 ), 1) as mm_pur_ana_suplreval_opl_score ) end` |
-| `SupplierEvalQualityWeighting` |  | |  | `cast(evaluationquantityweight + evaluationpriceweight + evaluationtimeweight + evaluationqualityweight + evaluationqualitynotifweight as mm_weighting )` |
-| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |
-| `NmbrOfScoredSuppliers` |  | |  | `cast( 1 as mm_pur_ana_numbrofscoredsuplrs )` |
-| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
-| `SupplierClassification` |  | |  | `cast( '' as mm_classification )` |
-| `_Material` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PurchasingCategory` | | ✓ | | |
-| `_PurchasingDocumentCategory` | | ✓ | | |
-| `_DocConfigCategory` | | ✓ | | |
-| `_DelivCmpltdConfign` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocument` | ✓ | |  | `cast( PurchaseOrder as mm_a_purchasing_document preserving type )` |  |  |
+| `PurchasingDocumentItem` | ✓ | |  | `cast( PurchaseOrderItem as mm_a_purchasing_document_item preserving type )` |  |  |
+| `PurgDocMigrtnIsCmpltdForAnlyts` |  | |  |  |  |  |
+| `SuplrEvalCritraDelivCompleted` |  | |  |  |  |  |
+| `SuplrEvalRelevantDocCategory` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |  |  |
+| `CalendarQuarter` |  | | `_Calendar` | `CalendarQuarter` |  |  |
+| `CalendarMonth` |  | | `_Calendar` | `CalendarMonth` |  |  |
+| `CalendarWeek` |  | | `_Calendar` | `CalendarWeek` |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Region` |  | | `_Supplier` | `Region` |  |  |
+| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingCategory` |  | |  |  |  |  |
+| `PurgCatName` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  |  |  |  |
+| `PurchaseOrderNetPriceAmount` |  | |  |  |  |  |
+| `TimeVarianceScore` |  | |  | `cast ( VendorEval.TimeVarianceScore as mm_a_time_variance_score )` |  |  |
+| `PriceVarianceScore` |  | |  | `cast( VendorEval.PriceVarianceScore as mm_a_price_variance_score )` |  |  |
+| `QuantityVarianceScore` |  | |  | `cast( VendorEval.QuantityVarianceScore as mm_a_quantity_var_score )` |  |  |
+| `InspectionLotQualityScore` |  | |  | `cast( VendorEval.InspectionLotQualityScore as mm_a_quality_variance_score )` |  |  |
+| `QualityNotificationScore` |  | |  | `cast( VendorEval.QualityNotificationScore as mm_a_quality_notif_score )` |  |  |
+| `NmbrOfPOWithPriceVariance` |  | |  | `PriceVarianceCount` |  |  |
+| `NmbrOfPOWithQuantityVariance` |  | |  | `QuantityVarianceCount` |  |  |
+| `NmbrOfPOWithTimeVariance` |  | |  | `TimeVarianceCount` |  |  |
+| `NmbrOfPOWithQualityVariance` |  | |  | `InspectionLotQualityCount` |  |  |
+| `QualityNotificationCount` |  | |  |  |  |  |
+| `SupplierOperationalScore` |  | |  | `cast( ( QuantityVarianceScore1 * evaluationquantityweight + PriceVarianceScore1 * evaluationpriceweight + TimeVarianceScore1 * evaluationtimeweight + InspectionLotQualityScore1 * evaluationqualityweight + QualityNotificationScore1 * evaluationqualitynotifweight ) * division( 1, (evaluationquantityweight + evaluationpriceweight + evaluationtimeweight + evaluationqualityweight + evaluationqualitynotifweight ) , 8 ) as mm_a_supplier_opl_score )` |  |  |
+| `SuplrEvalOplScoreValue` |  | |  | `case when InspectionLotQualityScore1 = 0 then cast( round(( QuantityVarianceScore1 * evaluationquantityweight + PriceVarianceScore1 * evaluationpriceweight + TimeVarianceScore1 * evaluationtimeweight + QualityNotificationScore1 * evaluationqualitynotifweight ) * division( 1, (evaluationquantityweight + evaluationpriceweight + evaluationtimeweight + evaluationqualitynotifweight ) , 8 ), 1) as mm_pur_ana_suplreval_opl_score ) else cast( round(( QuantityVarianceScore1 * evaluationquantityweight + PriceVarianceScore1 * evaluationpriceweight + TimeVarianceScore1 * evaluationtimeweight + InspectionLotQualityScore1 * evaluationqualityweight + QualityNotificationScore1 * evaluationqualitynotifweight ) * division( 1, (evaluationquantityweight + evaluationpriceweight + evaluationtimeweight + evaluationqualityweight + evaluationqualitynotifweight ) , 8 ), 1) as mm_pur_ana_suplreval_opl_score ) end` |  |  |
+| `SupplierEvalQualityWeighting` |  | |  | `cast(evaluationquantityweight + evaluationpriceweight + evaluationtimeweight + evaluationqualityweight + evaluationqualitynotifweight as mm_weighting )` |  |  |
+| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |  |  |
+| `NmbrOfScoredSuppliers` |  | |  | `cast( 1 as mm_pur_ana_numbrofscoredsuplrs )` |  |  |
+| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `SupplierClassification` |  | |  | `cast( '' as mm_classification )` |  |  |
+| `_Material` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PurchasingCategory` | | ✓ | | | | |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
+| `_DocConfigCategory` | | ✓ | | | | |
+| `_DelivCmpltdConfign` | | ✓ | | | | |
 
 ## Associations
 

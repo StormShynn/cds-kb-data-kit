@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsContainerID` | ✓ | |  |  |
-| `DispatchedStartDate` | ✓ | |  |  |
-| `FldLogsDispatchPlant` | ✓ | |  |  |
-| `NumberOfCtnTripsPerDay` | ✓ | |  |  |
-| `FldLogsShipmentID` |  | |  |  |
-| `FldLogsCtnProcessingStartDate` |  | |  |  |
-| `FldLogsCtnProcessingEndDate` |  | |  |  |
-| `FldLogsCtnChangeDateTime` |  | |  |  |
-| `FldLogsContainerUUID` |  | |  |  |
-| `FieldLogisticsProcessType` |  | |  |  |
-| `FldLogsContainerUnitUUID` |  | |  |  |
-| `FldLogsShptVoyageUUID` |  | |  |  |
-| `FldLogsShptVoyageNumber` |  | |  |  |
-| `FldLogsVoyageSrceStage` |  | |  |  |
-| `FldLogsVoyageDestStage` |  | |  |  |
-| `FieldLogisticsReceivingPlant` |  | |  |  |
-| `FldLogsSealNumber1` |  | |  |  |
-| `FldLogsSealNumber2` |  | |  |  |
-| `FldLogsSealNumber3` |  | |  |  |
-| `FldLogsSealNumber4` |  | |  |  |
-| `FldLogsSealNumber5` |  | |  |  |
-| `FldLogsParentContainerID` |  | |  |  |
-| `FldLogsReferenceDocumentNumber` |  | |  |  |
-| `Material` |  | |  |  |
-| `Batch` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `SystemMessageTypeCriticality` |  | |  |  |
-| `InboundDelivery` |  | |  |  |
-| `FldLogsShptItmHndlgUnitID` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `FldLogsContainerOwner` |  | |  |  |
-| `FldLogsRcvdContainerIsReleased` |  | |  |  |
-| `FieldLogisticsKitIdentifier` |  | |  |  |
-| `FldLogsItemType` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `LocationIsDestinationLocation` |  | |  |  |
-| `FldLogsShptCtnStsCriticality` |  | |  |  |
-| `FldLogsContainerItemStatus` |  | |  |  |
-| `FldLogsContainerStatus` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `_CtnList` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsContainerID` | ✓ | |  |  |  |  |
+| `DispatchedStartDate` | ✓ | |  |  |  |  |
+| `FldLogsDispatchPlant` | ✓ | |  |  |  |  |
+| `NumberOfCtnTripsPerDay` | ✓ | |  |  |  |  |
+| `FldLogsShipmentID` |  | |  |  |  |  |
+| `FldLogsCtnProcessingStartDate` |  | |  |  |  |  |
+| `FldLogsCtnProcessingEndDate` |  | |  |  |  |  |
+| `FldLogsCtnChangeDateTime` |  | |  |  |  |  |
+| `FldLogsContainerUUID` |  | |  |  |  |  |
+| `FieldLogisticsProcessType` |  | |  |  |  |  |
+| `FldLogsContainerUnitUUID` |  | |  |  |  |  |
+| `FldLogsShptVoyageUUID` |  | |  |  |  |  |
+| `FldLogsShptVoyageNumber` |  | |  |  |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |  |  |
+| `FieldLogisticsReceivingPlant` |  | |  |  |  |  |
+| `FldLogsSealNumber1` |  | |  |  |  |  |
+| `FldLogsSealNumber2` |  | |  |  |  |  |
+| `FldLogsSealNumber3` |  | |  |  |  |  |
+| `FldLogsSealNumber4` |  | |  |  |  |  |
+| `FldLogsSealNumber5` |  | |  |  |  |  |
+| `FldLogsParentContainerID` |  | |  |  |  |  |
+| `FldLogsReferenceDocumentNumber` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `SystemMessageTypeCriticality` |  | |  |  |  |  |
+| `InboundDelivery` |  | |  |  |  |  |
+| `FldLogsShptItmHndlgUnitID` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `FldLogsContainerOwner` |  | |  |  |  |  |
+| `FldLogsRcvdContainerIsReleased` |  | |  |  |  |  |
+| `FieldLogisticsKitIdentifier` |  | |  |  |  |  |
+| `FldLogsItemType` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `LocationIsDestinationLocation` |  | |  |  |  |  |
+| `FldLogsShptCtnStsCriticality` |  | |  |  |  |  |
+| `FldLogsContainerItemStatus` |  | |  |  |  |  |
+| `FldLogsContainerStatus` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `_CtnList` | | ✓ | | | | |
 
 ## Source Code
 

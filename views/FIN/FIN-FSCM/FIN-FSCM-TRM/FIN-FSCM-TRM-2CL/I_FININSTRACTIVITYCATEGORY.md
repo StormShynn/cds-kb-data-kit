@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialInstrProductCategory` | ✓ | |  | `sanlfor` |
-| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |
-| `FinancialInstrActivityCategory` | ✓ | |  | `sfgzustt` |
-| `FinTransGenActivityCategory` |  | |  | `cast(svgtyp as ftr_gen_activity_category)` |
-| `_ProductCategory` | | ✓ | | |
-| `_TransactionCategory` | | ✓ | | |
-| `_ActivityCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlfor` |  |  |
+| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |  |  |
+| `FinancialInstrActivityCategory` | ✓ | |  | `sfgzustt` |  |  |
+| `FinTransGenActivityCategory` |  | |  | `cast(svgtyp as ftr_gen_activity_category)` |  |  |
+| `_ProductCategory` | | ✓ | | | | |
+| `_TransactionCategory` | | ✓ | | | | |
+| `_ActivityCategoryText` | | ✓ | | | | |
 
 ## Associations
 

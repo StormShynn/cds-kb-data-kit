@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OverallWarehouseActivityStatus` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as lvstk preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverallWarehouseActivityStatus` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as lvstk preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

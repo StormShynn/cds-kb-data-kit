@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContractValidityPerdCat` | ✓ | |  | `vlaufk` |
-| `Language` | ✓ | |  | `spras` |
-| `SlsContractValidityPerdCatName` |  | |  | `bezei` |
-| `_SalesContractValidityPerdCat` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContractValidityPerdCat` | ✓ | |  | `vlaufk` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SlsContractValidityPerdCatName` |  | |  | `bezei` |  |  |
+| `_SalesContractValidityPerdCat` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

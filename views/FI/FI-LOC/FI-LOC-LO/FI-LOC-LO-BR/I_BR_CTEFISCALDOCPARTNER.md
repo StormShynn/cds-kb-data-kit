@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_CTeFiscalDocumentPartner` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as j_1bcte_tomali preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_CTeFiscalDocumentPartner` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as j_1bcte_tomali preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_fincs_bunitt` | `langu` |
-| `ConsolidationUnit` | ✓ | |  | `cast(_fincs_bunitt.bunit as fincs_consolidationunit preserving type )` |
-| `ConsolidationUnitText` |  | |  | `cast(_fincs_bunitt.txtsh as fincs_consolidationunittext preserving type )` |
-| `ConsolidationUnitMdmText` |  | |  | `cast(_fincs_bunitt.txtmi as fincs_medium_text_30 preserving type )` |
-| `ConsolidationUnitLongText` |  | |  | `cast(_fincs_bunitt.txtlg as fincs_consunitlongtext preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_fincs_bunitt` | `langu` |  |  |
+| `ConsolidationUnit` | ✓ | |  | `cast(_fincs_bunitt.bunit as fincs_consolidationunit preserving type )` |  |  |
+| `ConsolidationUnitText` |  | |  | `cast(_fincs_bunitt.txtsh as fincs_consolidationunittext preserving type )` |  |  |
+| `ConsolidationUnitMdmText` |  | |  | `cast(_fincs_bunitt.txtmi as fincs_medium_text_30 preserving type )` |  |  |
+| `ConsolidationUnitLongText` |  | |  | `cast(_fincs_bunitt.txtlg as fincs_consunitlongtext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
 
 ## Associations
 

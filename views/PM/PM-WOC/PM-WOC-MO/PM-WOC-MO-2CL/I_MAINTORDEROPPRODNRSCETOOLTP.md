@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintenanceOrderOperation` | ✓ | |  |  |
-| `MaintenanceOrderSubOperation` | ✓ | |  |  |
-| `ProdnRsceToolItemNumber` | ✓ | |  |  |
-| `OrderProdnRsceToolText` |  | |  |  |
-| `ProdnRsceToolCategory` |  | |  |  |
-| `Product` |  | |  |  |
-| `MiscProductionResourceTool` |  | |  |  |
-| `ProdnRsceToolControlProfile` |  | |  |  |
-| `ProdnRsceToolStandardWorkQty` |  | |  |  |
-| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `DocumentInfoRecord` |  | |  |  |
-| `DocumentType` |  | |  |  |
-| `DocumentPart` |  | |  |  |
-| `DocumentVersion` |  | |  |  |
-| `MeasuringPoint` |  | |  |  |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintenanceOrderOperation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintenanceOrderOperation` | ✓ | |  |  |  |  |
+| `MaintenanceOrderSubOperation` | ✓ | |  |  |  |  |
+| `ProdnRsceToolItemNumber` | ✓ | |  |  |  |  |
+| `OrderProdnRsceToolText` |  | |  |  |  |  |
+| `ProdnRsceToolCategory` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `MiscProductionResourceTool` |  | |  |  |  |  |
+| `ProdnRsceToolControlProfile` |  | |  |  |  |  |
+| `ProdnRsceToolStandardWorkQty` |  | |  |  |  |  |
+| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `DocumentInfoRecord` |  | |  |  |  |  |
+| `DocumentType` |  | |  |  |  |  |
+| `DocumentPart` |  | |  |  |  |  |
+| `DocumentVersion` |  | |  |  |  |  |
+| `MeasuringPoint` |  | |  |  |  |  |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintenanceOrderOperation` | | ✓ | | | | |
 
 ## Source Code
 

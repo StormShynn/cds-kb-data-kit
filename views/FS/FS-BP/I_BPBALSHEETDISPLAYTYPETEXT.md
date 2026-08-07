@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BPBalanceSheetDisplayType` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_bal_flg )` |
-| `BPBalanceSheetDisplayTypeDesc` |  | |  | `ddtext` |
-| `_BPBalanceSheetDisplayType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BPBalanceSheetDisplayType` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_bal_flg )` |  |  |
+| `BPBalanceSheetDisplayTypeDesc` |  | |  | `ddtext` |  |  |
+| `_BPBalanceSheetDisplayType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

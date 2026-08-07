@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `FinancialInstrumentProductType` | ✓ | |  | `sgsart` |
-| `FinancialInstrTransactionType` | ✓ | |  | `cast(FinancialInstrTransTypeText.sfhaart as ftr_gen_transaction_type preserving type)` |
-| `FinancialInstrTransTypeName` |  | |  | `cast(FinancialInstrTransTypeText.xtext as ftr_gen_transaction_type_name preserving type)` |
-| `_FinancialInstrTransType` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Financialinstrproducttype` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FinancialInstrumentProductType` | ✓ | |  | `sgsart` |  |  |
+| `FinancialInstrTransactionType` | ✓ | |  | `cast(FinancialInstrTransTypeText.sfhaart as ftr_gen_transaction_type preserving type)` |  |  |
+| `FinancialInstrTransTypeName` |  | |  | `cast(FinancialInstrTransTypeText.xtext as ftr_gen_transaction_type_name preserving type)` |  |  |
+| `_FinancialInstrTransType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Financialinstrproducttype` | | ✓ | | | | |
 
 ## Associations
 

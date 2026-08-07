@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` |  | |  | `} key partner` |
-| `BPCollPrflAssignmentValidTo` | ✓ | |  | `valid_until` |
-| `BPCollPrflAssignmentValidFrom` |  | |  | `valid_from` |
-| `CollectionProfile` |  | |  | `coll_profile` |
-| `LastChangeDateTime` |  | |  | `last_changed_at` |
-| `_BusinessPartner` | | ✓ | | |
-| `_CollectionsProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BPCollPrflAssignmentValidTo` | ✓ | |  | `valid_until` |  |  |
+| `BPCollPrflAssignmentValidFrom` |  | |  | `valid_from` |  |  |
+| `CollectionProfile` |  | |  | `coll_profile` |  |  |
+| `LastChangeDateTime` |  | |  | `last_changed_at` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CollectionsProfile` | | ✓ | | | | |
 
 ## Associations
 

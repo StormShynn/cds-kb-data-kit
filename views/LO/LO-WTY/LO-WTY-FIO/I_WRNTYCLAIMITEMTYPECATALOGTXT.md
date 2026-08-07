@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyCatalogCode` | ✓ | |  | `katkz` |
-| `WrntyNumberInCatalog` | ✓ | |  | `katnr` |
-| `Language` | ✓ | |  | `langu` |
-| `WrntyNumberInCatalogText` |  | |  | `ltext` |
-| `_WrntyClaimItemTypeCatalog` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyCatalogCode` | ✓ | |  | `katkz` |  |  |
+| `WrntyNumberInCatalog` | ✓ | |  | `katnr` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `WrntyNumberInCatalogText` |  | |  | `ltext` |  |  |
+| `_WrntyClaimItemTypeCatalog` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

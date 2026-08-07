@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PhysicalInventoryDocument` |  | |  | `pi_item_document` |
-| `PhysicalInventoryDocumentItem` |  | |  | `pi_item_number` |
-| `FiscalYear` |  | |  | `gjahr` |
-| `_PrintSettings` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhysicalInventoryDocument` |  | |  | `pi_item_document` |  |  |
+| `PhysicalInventoryDocumentItem` |  | |  | `pi_item_number` |  |  |
+| `FiscalYear` |  | |  | `gjahr` |  |  |
+| `_PrintSettings` | | ✓ | | | | |
 
 ## Source Code
 

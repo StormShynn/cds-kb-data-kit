@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContractFollowUpAction` | ✓ | |  | `aktvt` |
-| `Language` | ✓ | |  | `spras` |
-| `SlsContractFollowUpActionDesc` |  | |  | `bezei` |
-| `_SalesContractFollowUpAction` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContractFollowUpAction` | ✓ | |  | `aktvt` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SlsContractFollowUpActionDesc` |  | |  | `bezei` |  |  |
+| `_SalesContractFollowUpAction` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

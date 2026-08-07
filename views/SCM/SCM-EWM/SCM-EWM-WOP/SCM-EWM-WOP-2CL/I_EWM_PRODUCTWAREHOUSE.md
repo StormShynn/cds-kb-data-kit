@@ -30,88 +30,88 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductInternalUUID` | ✓ | |  | `matid` |
-| `SupplyChainUnitUUID` | ✓ | |  | `scuguid` |
-| `EWMPartyEntitledToDisposeUUID` | ✓ | |  | `entitled_id` |
-| `EWMWarehouse` |  | |  | `_AssgWhseBusinessPartner[inner].EWMWarehouse` |
-| `EWMProductProcessBlockProfile` |  | |  | `procprfl` |
-| `EWMWarehouseProcessType` |  | |  | `ptdetind` |
-| `EWMProcessTypeControlCode` |  | |  | `ptdetind` |
-| `EWMProductLoadCategory` |  | |  | `wrkldgr` |
-| `EWMPhysInventoryCountingCycle` |  | |  | `ccind` |
-| `RequiredMinShelfLife` |  | |  | `cast( ProductEWMWarehouse.slrq_min as cmd_prd_shelf_life_req_min_n preserving type )` |
-| `EWMProdBackflushWthdrwlMethod` |  | |  | `backflush_prod` |
-| `EWMKitQuantityCorrelation` |  | |  | `kit_fixed_quan` |
-| `EWMIsCnsmpnRlvtForValAddedSrvc` |  | |  | `vasvcp` |
-| `EWMQuantityAdjustmentProfile` |  | |  | `medi_aprof_wh` |
-| `EWMMrchdsDistrQtyClassfctn` |  | |  | `quancla_merch` |
-| `PreferredUnitOfMeasure` |  | |  | `puom_wh` |
-| `EWMPreferredUnit` |  | |  | `puom_wh` |
-| `EWMQualityInspectionGroup` |  | |  | `qgrp_wh` |
-| `EWMPtwyControlStrategy` |  | |  | `put_stra` |
-| `EWMStorageBinType` |  | |  | `lptyp` |
-| `EWMBulkStorageMethod` |  | |  | `block` |
-| `EWMStorageSectionMethod` |  | |  | `lgbkz` |
-| `EWMStockRemovalControlStrategy` |  | |  | `rem_stra` |
-| `EWMStockDeterminationGroup` |  | |  | `stckdetgr` |
-| `EWMProdTwoStepPickingRelevant` |  | |  | `l2skr` |
-| `EWMStggAreaDeterminationGroup` |  | |  | `drdetgr` |
-| `BaseUnit` |  | |  | `_Product[inner].BaseUnit` |
-| `EWMSltgRequirementQuantity` |  | |  | `demqty` |
-| `EWMSltgNumberOfSalesOrderItems` |  | |  | `nosoi` |
-| `EWMSltgRecmddStorageQuantity` |  | |  | `rsqty` |
-| `EWMSlottingWeightSizeCode` |  | |  | `wghtind` |
-| `EWMSlottingVolumeSizeCode` |  | |  | `volind` |
-| `EWMSlottingLengthSizeCode` |  | |  | `lgthind` |
-| `EWMSlottingWidthSizeCode` |  | |  | `wdthind` |
-| `EWMSlottingHeightSizeCode` |  | |  | `hghtind` |
-| `_Product` | | ✓ | | |
-| `_AssgWhseBusinessPartner` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_BusinessPartnerNumber` | | ✓ | | |
-| `_WarehouseNumber` | | ✓ | | |
-| `_WarehouseNumberText` | | ✓ | | |
-| `_ProductProcessBlockProfile` | | ✓ | | |
-| `_ProcessBlockProfileText` | | ✓ | | |
-| `_WhseProcessTypeCtrlInd` | | ✓ | | |
-| `_WhseProcTypeCtrlIndText` | | ✓ | | |
-| `_WhseProcessTypeCtrlInd_2` | | ✓ | | |
-| `_WhseProcTypeCtrlIndText_2` | | ✓ | | |
-| `_ProductLoadCategory` | | ✓ | | |
-| `_ProductLoadCategoryText` | | ✓ | | |
-| `_QtyAdjustmentProfile` | | ✓ | | |
-| `_QtyAdjustmentPrflT` | | ✓ | | |
-| `_QtyClassification` | | ✓ | | |
-| `_QtyClassificationText` | | ✓ | | |
-| `_PtwyControlStrategy` | | ✓ | | |
-| `_PtwyControlStrategyText` | | ✓ | | |
-| `_StorageBinType` | | ✓ | | |
-| `_StorageBinTypeText` | | ✓ | | |
-| `_BulkStorageMethod` | | ✓ | | |
-| `_BulkStorageMethodText` | | ✓ | | |
-| `_StkRemovalCtrlStrgy` | | ✓ | | |
-| `_StkRemovalCtrlStrgyText` | | ✓ | | |
-| `_StockDeterminationGroup` | | ✓ | | |
-| `_StkDetnGroupText` | | ✓ | | |
-| `_StagingAreaDetnGroup` | | ✓ | | |
-| `_StagingAreaDetnGroupText` | | ✓ | | |
-| `_StorageSectionIndicator` | | ✓ | | |
-| `_StorageSectionIndText` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_UnitOfMeasure_2` | | ✓ | | |
-| `_UnitOfMeasureText_2` | | ✓ | | |
-| `_BackflushMethod` | | ✓ | | |
-| `_BackflushMethodText` | | ✓ | | |
-| `_KitQtyCorrelationType` | | ✓ | | |
-| `_KitQtyCorrlnTypeText` | | ✓ | | |
-| `_RelevanceTwoStepPicking` | | ✓ | | |
-| `_RlvnceTwoStepPickingText` | | ✓ | | |
-| `_PhysInvtryCycleCounting` | | ✓ | | |
-| `_QualityInspectionGroup` | | ✓ | | |
-| `_QualityInspectionGroupT` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductInternalUUID` | ✓ | |  | `matid` |  |  |
+| `SupplyChainUnitUUID` | ✓ | |  | `scuguid` |  |  |
+| `EWMPartyEntitledToDisposeUUID` | ✓ | |  | `entitled_id` |  |  |
+| `EWMWarehouse` |  | |  | `_AssgWhseBusinessPartner[inner].EWMWarehouse` |  |  |
+| `EWMProductProcessBlockProfile` |  | |  | `procprfl` |  |  |
+| `EWMWarehouseProcessType` |  | |  | `ptdetind` |  |  |
+| `EWMProcessTypeControlCode` |  | |  | `ptdetind` |  |  |
+| `EWMProductLoadCategory` |  | |  | `wrkldgr` |  |  |
+| `EWMPhysInventoryCountingCycle` |  | |  | `ccind` |  |  |
+| `RequiredMinShelfLife` |  | |  | `cast( ProductEWMWarehouse.slrq_min as cmd_prd_shelf_life_req_min_n preserving type )` |  |  |
+| `EWMProdBackflushWthdrwlMethod` |  | |  | `backflush_prod` |  |  |
+| `EWMKitQuantityCorrelation` |  | |  | `kit_fixed_quan` |  |  |
+| `EWMIsCnsmpnRlvtForValAddedSrvc` |  | |  | `vasvcp` |  |  |
+| `EWMQuantityAdjustmentProfile` |  | |  | `medi_aprof_wh` |  |  |
+| `EWMMrchdsDistrQtyClassfctn` |  | |  | `quancla_merch` |  |  |
+| `PreferredUnitOfMeasure` |  | |  | `puom_wh` |  |  |
+| `EWMPreferredUnit` |  | |  | `puom_wh` |  |  |
+| `EWMQualityInspectionGroup` |  | |  | `qgrp_wh` |  |  |
+| `EWMPtwyControlStrategy` |  | |  | `put_stra` |  |  |
+| `EWMStorageBinType` |  | |  | `lptyp` |  |  |
+| `EWMBulkStorageMethod` |  | |  | `block` |  |  |
+| `EWMStorageSectionMethod` |  | |  | `lgbkz` |  |  |
+| `EWMStockRemovalControlStrategy` |  | |  | `rem_stra` |  |  |
+| `EWMStockDeterminationGroup` |  | |  | `stckdetgr` |  |  |
+| `EWMProdTwoStepPickingRelevant` |  | |  | `l2skr` |  |  |
+| `EWMStggAreaDeterminationGroup` |  | |  | `drdetgr` |  |  |
+| `BaseUnit` |  | |  | `_Product[inner].BaseUnit` |  |  |
+| `EWMSltgRequirementQuantity` |  | |  | `demqty` |  |  |
+| `EWMSltgNumberOfSalesOrderItems` |  | |  | `nosoi` |  |  |
+| `EWMSltgRecmddStorageQuantity` |  | |  | `rsqty` |  |  |
+| `EWMSlottingWeightSizeCode` |  | |  | `wghtind` |  |  |
+| `EWMSlottingVolumeSizeCode` |  | |  | `volind` |  |  |
+| `EWMSlottingLengthSizeCode` |  | |  | `lgthind` |  |  |
+| `EWMSlottingWidthSizeCode` |  | |  | `wdthind` |  |  |
+| `EWMSlottingHeightSizeCode` |  | |  | `hghtind` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_AssgWhseBusinessPartner` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BusinessPartnerNumber` | | ✓ | | | | |
+| `_WarehouseNumber` | | ✓ | | | | |
+| `_WarehouseNumberText` | | ✓ | | | | |
+| `_ProductProcessBlockProfile` | | ✓ | | | | |
+| `_ProcessBlockProfileText` | | ✓ | | | | |
+| `_WhseProcessTypeCtrlInd` | | ✓ | | | | |
+| `_WhseProcTypeCtrlIndText` | | ✓ | | | | |
+| `_WhseProcessTypeCtrlInd_2` | | ✓ | | | | |
+| `_WhseProcTypeCtrlIndText_2` | | ✓ | | | | |
+| `_ProductLoadCategory` | | ✓ | | | | |
+| `_ProductLoadCategoryText` | | ✓ | | | | |
+| `_QtyAdjustmentProfile` | | ✓ | | | | |
+| `_QtyAdjustmentPrflT` | | ✓ | | | | |
+| `_QtyClassification` | | ✓ | | | | |
+| `_QtyClassificationText` | | ✓ | | | | |
+| `_PtwyControlStrategy` | | ✓ | | | | |
+| `_PtwyControlStrategyText` | | ✓ | | | | |
+| `_StorageBinType` | | ✓ | | | | |
+| `_StorageBinTypeText` | | ✓ | | | | |
+| `_BulkStorageMethod` | | ✓ | | | | |
+| `_BulkStorageMethodText` | | ✓ | | | | |
+| `_StkRemovalCtrlStrgy` | | ✓ | | | | |
+| `_StkRemovalCtrlStrgyText` | | ✓ | | | | |
+| `_StockDeterminationGroup` | | ✓ | | | | |
+| `_StkDetnGroupText` | | ✓ | | | | |
+| `_StagingAreaDetnGroup` | | ✓ | | | | |
+| `_StagingAreaDetnGroupText` | | ✓ | | | | |
+| `_StorageSectionIndicator` | | ✓ | | | | |
+| `_StorageSectionIndText` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_UnitOfMeasure_2` | | ✓ | | | | |
+| `_UnitOfMeasureText_2` | | ✓ | | | | |
+| `_BackflushMethod` | | ✓ | | | | |
+| `_BackflushMethodText` | | ✓ | | | | |
+| `_KitQtyCorrelationType` | | ✓ | | | | |
+| `_KitQtyCorrlnTypeText` | | ✓ | | | | |
+| `_RelevanceTwoStepPicking` | | ✓ | | | | |
+| `_RlvnceTwoStepPickingText` | | ✓ | | | | |
+| `_PhysInvtryCycleCounting` | | ✓ | | | | |
+| `_QualityInspectionGroup` | | ✓ | | | | |
+| `_QualityInspectionGroupT` | | ✓ | | | | |
 
 ## Associations
 

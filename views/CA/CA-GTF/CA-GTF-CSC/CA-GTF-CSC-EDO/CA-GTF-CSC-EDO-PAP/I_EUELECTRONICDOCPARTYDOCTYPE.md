@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` |
-| `ElectronicDocBPType` | ✓ | |  | `partner_type` |
-| `EU_EDocDocCategory` | ✓ | |  | `doc_categ` |
-| `EU_EDocDocTypeId` |  | |  | `doc_type_id` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` |  |  |
+| `ElectronicDocBPType` | ✓ | |  | `partner_type` |  |  |
+| `EU_EDocDocCategory` | ✓ | |  | `doc_categ` |  |  |
+| `EU_EDocDocTypeId` |  | |  | `doc_type_id` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` |  |  |
 
 ## Associations
 

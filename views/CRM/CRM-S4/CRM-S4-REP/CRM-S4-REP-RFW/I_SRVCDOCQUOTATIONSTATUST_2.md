@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentIsQuotation` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as crms4_stat_quotation preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SrvcDocQuotationStatusText` |  | |  | `ddtext` |
-| `_SrvcDocQuotationStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentIsQuotation` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as crms4_stat_quotation preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SrvcDocQuotationStatusText` |  | |  | `ddtext` |  |  |
+| `_SrvcDocQuotationStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

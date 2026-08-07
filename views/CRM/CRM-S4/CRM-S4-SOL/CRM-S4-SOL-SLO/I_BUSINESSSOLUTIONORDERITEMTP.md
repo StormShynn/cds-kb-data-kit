@@ -28,162 +28,162 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `ParentBusSolnOrdItem` |  | |  |  |
-| `BusSolnOrdItmCategory` |  | |  |  |
-| `BusinessSolutionOrderItemUUID` |  | |  |  |
-| `ServiceDocumentItemCharUUID` |  | |  |  |
-| `BusSolnOrdItmDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PlannedServiceStartDateTime` |  | |  |  |
-| `PlannedServiceEndDateTime` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `RequestedDeliveryUTCDateTime` |  | |  |  |
-| `ServiceDocItemCreationDateTime` |  | |  |  |
-| `ServiceDocItemChangedDateTime` |  | |  |  |
-| `ServiceDocItemCreatedByUser` |  | |  |  |
-| `ServiceDocItemChangedByUser` |  | |  |  |
-| `BusSolnOrdExtReference` |  | |  |  |
-| `BusSolnOrdItmExtReference` |  | |  |  |
-| `Product` |  | |  |  |
-| `SrvcDocItemCumulatedNetAmount` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |
-| `ProjectManager` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `BusSolnOrdItmIsNew` |  | |  |  |
-| `BusSolnOrdItmIsInProcess` |  | |  |  |
-| `BusSolnOrdItmIsReleased` |  | |  |  |
-| `BusSolnOrdItmIsCompleted` |  | |  |  |
-| `BusSolnOrdItmStatus` |  | |  |  |
-| `BusSolnOrdItmIsRejected` |  | |  |  |
-| `ServiceDocItemBillingStatus` |  | |  |  |
-| `SrvcDocItmDeliveryStatus` |  | |  |  |
-| `SrvcDocItemTransferStatus` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `ResponsibleCostCenter` |  | |  |  |
-| `EnterpriseProjectServiceOrg` |  | |  |  |
-| `ReferenceServiceContract` |  | |  |  |
-| `ReferenceServiceContractItem` |  | |  |  |
-| `SrvcContrDetnIsSpprsd` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `BusSolnOrdItmRjcnReason` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |
-| `SrvcContrItemRnwlDuration` |  | |  |  |
-| `SrvcContrItemRnwlDurationUnit` |  | |  |  |
-| `SrvcContrItemExtensionDuration` |  | |  |  |
-| `SrvcContrItemExtnDurationUnit` |  | |  |  |
-| `SrvcMgmtBillgPlanBillgDateRule` |  | |  |  |
-| `SettlementPeriodRule` |  | |  |  |
-| `SubscrpnContrTrmsAreSpecified` |  | |  |  |
-| `MidBillgCycExprtnIsAllowed` |  | |  |  |
-| `SubscrpnContrAutoRnwlIsActv` |  | |  |  |
-| `SubscriptionBillingCycle` |  | |  |  |
-| `SubscrpnOrdIsPending` |  | |  |  |
-| `NrOfBillgCyclesBilledTogether` |  | |  |  |
-| `SubscrpnBillgRatePlanUUID` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocumentItemNetAmount` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `DeliveryBlockReason` |  | |  |  |
-| `ItemOrderProbabilityInPercent` |  | |  |  |
-| `IncotermsPart1` |  | |  |  |
-| `IncotermsPart2` |  | |  |  |
-| `OrderCombinationIsAllowed` |  | |  |  |
-| `DeliveryGroup` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `ResponseProfile` |  | |  |  |
-| `ServiceProfile` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SrvcDocItmApptRefObjectUUID` |  | |  |  |
-| `_BusinessSolutionOrder` | | ✓ | | |
-| `_BusSolnOrdItmRefObjectTP` | | ✓ | | |
-| `_BusSolnOrdItmPriceElementTP` | | ✓ | | |
-| `_BusSolnOrdItmProductTP` | | ✓ | | |
-| `_BusSolnOrdItmUserStatusTP` | | ✓ | | |
-| `_BusSolnOrdItmPartnerTP` | | ✓ | | |
-| `_BSOrdItmRateElementTP` | | ✓ | | |
-| `_BSOrdItmSubscrpnParameterTP` | | ✓ | | |
-| `_BSOrdItmSubscrpnParameter2TP` | | ✓ | | |
-| `_BSOrdItmSubscrpnPriceParamTP` | | ✓ | | |
-| `_BusSolnOrdItmFUPSalesOrderTP` | | ✓ | | |
-| `_BusSolnOrdItmFUPSrvcOrdTP` | | ✓ | | |
-| `_BusSolnOrdItmFUPSrvcContrTP` | | ✓ | | |
-| `_BusSolnOrdItmFUPSubscrpnTP` | | ✓ | | |
-| `_BusSolnOrdItmFUPEntProjectTP` | | ✓ | | |
-| `_BusSolnOrdItmAppointmentTP` | | ✓ | | |
-| `_BusSolnOrdItmDurationTP` | | ✓ | | |
-| `_BSOrdItmPrdcssrSrvcContrTP` | | ✓ | | |
-| `_BusSolnOrdItmScheduleLineTP` | | ✓ | | |
-| `_BSOrdItmSubscrpnPriceAgrmtTP` | | ✓ | | |
-| `_BusSolnOrdItmConfigurationTP` | | ✓ | | |
-| `_BusSolnOrdItemLongTextTP` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_BusSolnOrdItemStatus` | | ✓ | | |
-| `_RejectionReasonText` | | ✓ | | |
-| `_ServiceDocument` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_ServiceDocItemRejectionReason` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_SettlementPeriodRuleText` | | ✓ | | |
-| `_SrvcMgmtDateRuleText` | | ✓ | | |
-| `_SubscriptionBillingCycleText` | | ✓ | | |
-| `_SrvcDocLifecycleStatusText` | | ✓ | | |
-| `_ServiceDocBillingStatusText` | | ✓ | | |
-| `_SrvcDocDeliveryStatusText` | | ✓ | | |
-| `_SrvcDocTransferStatusText` | | ✓ | | |
-| `_SalesOrganizationText` | | ✓ | | |
-| `_DistributionChannelText` | | ✓ | | |
-| `_DivisionText` | | ✓ | | |
-| `_SalesOfficeText` | | ✓ | | |
-| `_SalesGroupText` | | ✓ | | |
-| `_BillingBlockReasonText` | | ✓ | | |
-| `_SalesDocumentRjcnReasonText` | | ✓ | | |
-| `_PaymentTermsText` | | ✓ | | |
-| `_DeliveryBlockReasonText` | | ✓ | | |
-| `_ResponseProfileText` | | ✓ | | |
-| `_ServiceProfileText` | | ✓ | | |
-| `_ServiceDocumentTypeText` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_ServiceDocItemCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `ParentBusSolnOrdItem` |  | |  |  |  |  |
+| `BusSolnOrdItmCategory` |  | |  |  |  |  |
+| `BusinessSolutionOrderItemUUID` |  | |  |  |  |  |
+| `ServiceDocumentItemCharUUID` |  | |  |  |  |  |
+| `BusSolnOrdItmDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PlannedServiceStartDateTime` |  | |  |  |  |  |
+| `PlannedServiceEndDateTime` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `RequestedDeliveryUTCDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |  |  |
+| `BusSolnOrdExtReference` |  | |  |  |  |  |
+| `BusSolnOrdItmExtReference` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `SrvcDocItemCumulatedNetAmount` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
+| `ProjectManager` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `BusSolnOrdItmIsNew` |  | |  |  |  |  |
+| `BusSolnOrdItmIsInProcess` |  | |  |  |  |  |
+| `BusSolnOrdItmIsReleased` |  | |  |  |  |  |
+| `BusSolnOrdItmIsCompleted` |  | |  |  |  |  |
+| `BusSolnOrdItmStatus` |  | |  |  |  |  |
+| `BusSolnOrdItmIsRejected` |  | |  |  |  |  |
+| `ServiceDocItemBillingStatus` |  | |  |  |  |  |
+| `SrvcDocItmDeliveryStatus` |  | |  |  |  |  |
+| `SrvcDocItemTransferStatus` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `ResponsibleCostCenter` |  | |  |  |  |  |
+| `EnterpriseProjectServiceOrg` |  | |  |  |  |  |
+| `ReferenceServiceContract` |  | |  |  |  |  |
+| `ReferenceServiceContractItem` |  | |  |  |  |  |
+| `SrvcContrDetnIsSpprsd` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `BusSolnOrdItmRjcnReason` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDuration` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDurationUnit` |  | |  |  |  |  |
+| `SrvcContrItemExtensionDuration` |  | |  |  |  |  |
+| `SrvcContrItemExtnDurationUnit` |  | |  |  |  |  |
+| `SrvcMgmtBillgPlanBillgDateRule` |  | |  |  |  |  |
+| `SettlementPeriodRule` |  | |  |  |  |  |
+| `SubscrpnContrTrmsAreSpecified` |  | |  |  |  |  |
+| `MidBillgCycExprtnIsAllowed` |  | |  |  |  |  |
+| `SubscrpnContrAutoRnwlIsActv` |  | |  |  |  |  |
+| `SubscriptionBillingCycle` |  | |  |  |  |  |
+| `SubscrpnOrdIsPending` |  | |  |  |  |  |
+| `NrOfBillgCyclesBilledTogether` |  | |  |  |  |  |
+| `SubscrpnBillgRatePlanUUID` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `DeliveryBlockReason` |  | |  |  |  |  |
+| `ItemOrderProbabilityInPercent` |  | |  |  |  |  |
+| `IncotermsPart1` |  | |  |  |  |  |
+| `IncotermsPart2` |  | |  |  |  |  |
+| `OrderCombinationIsAllowed` |  | |  |  |  |  |
+| `DeliveryGroup` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `ResponseProfile` |  | |  |  |  |  |
+| `ServiceProfile` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SrvcDocItmApptRefObjectUUID` |  | |  |  |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | | | |
+| `_BusSolnOrdItmRefObjectTP` | | ✓ | | | | |
+| `_BusSolnOrdItmPriceElementTP` | | ✓ | | | | |
+| `_BusSolnOrdItmProductTP` | | ✓ | | | | |
+| `_BusSolnOrdItmUserStatusTP` | | ✓ | | | | |
+| `_BusSolnOrdItmPartnerTP` | | ✓ | | | | |
+| `_BSOrdItmRateElementTP` | | ✓ | | | | |
+| `_BSOrdItmSubscrpnParameterTP` | | ✓ | | | | |
+| `_BSOrdItmSubscrpnParameter2TP` | | ✓ | | | | |
+| `_BSOrdItmSubscrpnPriceParamTP` | | ✓ | | | | |
+| `_BusSolnOrdItmFUPSalesOrderTP` | | ✓ | | | | |
+| `_BusSolnOrdItmFUPSrvcOrdTP` | | ✓ | | | | |
+| `_BusSolnOrdItmFUPSrvcContrTP` | | ✓ | | | | |
+| `_BusSolnOrdItmFUPSubscrpnTP` | | ✓ | | | | |
+| `_BusSolnOrdItmFUPEntProjectTP` | | ✓ | | | | |
+| `_BusSolnOrdItmAppointmentTP` | | ✓ | | | | |
+| `_BusSolnOrdItmDurationTP` | | ✓ | | | | |
+| `_BSOrdItmPrdcssrSrvcContrTP` | | ✓ | | | | |
+| `_BusSolnOrdItmScheduleLineTP` | | ✓ | | | | |
+| `_BSOrdItmSubscrpnPriceAgrmtTP` | | ✓ | | | | |
+| `_BusSolnOrdItmConfigurationTP` | | ✓ | | | | |
+| `_BusSolnOrdItemLongTextTP` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_BusSolnOrdItemStatus` | | ✓ | | | | |
+| `_RejectionReasonText` | | ✓ | | | | |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_ServiceDocItemRejectionReason` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_SettlementPeriodRuleText` | | ✓ | | | | |
+| `_SrvcMgmtDateRuleText` | | ✓ | | | | |
+| `_SubscriptionBillingCycleText` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatusText` | | ✓ | | | | |
+| `_ServiceDocBillingStatusText` | | ✓ | | | | |
+| `_SrvcDocDeliveryStatusText` | | ✓ | | | | |
+| `_SrvcDocTransferStatusText` | | ✓ | | | | |
+| `_SalesOrganizationText` | | ✓ | | | | |
+| `_DistributionChannelText` | | ✓ | | | | |
+| `_DivisionText` | | ✓ | | | | |
+| `_SalesOfficeText` | | ✓ | | | | |
+| `_SalesGroupText` | | ✓ | | | | |
+| `_BillingBlockReasonText` | | ✓ | | | | |
+| `_SalesDocumentRjcnReasonText` | | ✓ | | | | |
+| `_PaymentTermsText` | | ✓ | | | | |
+| `_DeliveryBlockReasonText` | | ✓ | | | | |
+| `_ResponseProfileText` | | ✓ | | | | |
+| `_ServiceProfileText` | | ✓ | | | | |
+| `_ServiceDocumentTypeText` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_ServiceDocItemCategoryText` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `REValuationClassification` | ✓ | |  | `cast( dd07t.domvalue_l as rececesltype )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `REValuationClassificationName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_REValuationClassification` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `REValuationClassification` | ✓ | |  | `cast( dd07t.domvalue_l as rececesltype )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `REValuationClassificationName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_REValuationClassification` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContractValidityPerdUnit` | ✓ | |  | `substring(dd07t.domvalue_l, 1, 1)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SalesContrValdtyPerdUnitName` |  | |  | `ddtext` |
-| `_SalesContractValidityPerdUnit` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContractValidityPerdUnit` | ✓ | |  | `substring(dd07t.domvalue_l, 1, 1)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SalesContrValdtyPerdUnitName` |  | |  | `ddtext` |  |  |
+| `_SalesContractValidityPerdUnit` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,33 +28,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MerchandiseCategory` | ✓ | |  | `cast (MrchdsCategory.class as rfm_mrchdscategory)` |
-| `Characteristic` | ✓ | |  | `atnam` |
-| `ClfnCharcValuePositionNumber` | ✓ | |  | `CharcValuePositionNumber` |
-| `CharcInternalID` |  | |  | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |
-| `ClfnObjectID` |  | |  |  |
-| `CharcValue` |  | |  |  |
-| `CharcFromNumericValue` |  | |  |  |
-| `CharcFromNumericValueUnit` |  | |  |  |
-| `CharcToNumericValue` |  | |  |  |
-| `CharcToNumericValueUnit` |  | |  |  |
-| `CharcValueIntervalType` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `CharcFromDecimalValue` |  | |  |  |
-| `CharcToDecimalValue` |  | |  |  |
-| `CharcFromAmount` |  | |  |  |
-| `CharcToAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `CharcFromDate` |  | |  |  |
-| `CharcToDate` |  | |  |  |
-| `CharcFromTime` |  | |  |  |
-| `CharcToTime` |  | |  |  |
-| `_Characteristic` | | ✓ | | |
-| `_CharacteristicDesc` | | ✓ | | |
-| `_MerchandiseCategory` | | ✓ | | |
-| `_MrchdsCategoryCharacteristic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MerchandiseCategory` | ✓ | |  | `cast (MrchdsCategory.class as rfm_mrchdscategory)` |  |  |
+| `Characteristic` | ✓ | |  | `atnam` |  |  |
+| `ClfnCharcValuePositionNumber` | ✓ | |  | `CharcValuePositionNumber` |  |  |
+| `CharcInternalID` |  | |  | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |  |  |
+| `ClfnObjectID` |  | |  |  |  |  |
+| `CharcValue` |  | |  |  |  |  |
+| `CharcFromNumericValue` |  | |  |  |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |  |  |
+| `CharcToNumericValue` |  | |  |  |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |  |  |
+| `CharcValueIntervalType` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `CharcFromDecimalValue` |  | |  |  |  |  |
+| `CharcToDecimalValue` |  | |  |  |  |  |
+| `CharcFromAmount` |  | |  |  |  |  |
+| `CharcToAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `CharcFromDate` |  | |  |  |  |  |
+| `CharcToDate` |  | |  |  |  |  |
+| `CharcFromTime` |  | |  |  |  |  |
+| `CharcToTime` |  | |  |  |  |  |
+| `_Characteristic` | | ✓ | | | | |
+| `_CharacteristicDesc` | | ✓ | | | | |
+| `_MerchandiseCategory` | | ✓ | | | | |
+| `_MrchdsCategoryCharacteristic` | | ✓ | | | | |
 
 ## Associations
 

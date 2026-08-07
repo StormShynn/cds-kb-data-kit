@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryValuationArea` | ✓ | |  | `valuation_area` |
-| `TreasuryValuationAreaName` |  | |  | `cast(TreasuryValuationArea.val_area_name as ftr_gen_valuation_area_name preserving type)` |
-| `ValuationAreaIsPaying` |  | |  | `paying_val_area` |
-| `AccountingPrinciple` |  | |  | `acc_principle` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryValuationArea` | ✓ | |  | `valuation_area` |  |  |
+| `TreasuryValuationAreaName` |  | |  | `cast(TreasuryValuationArea.val_area_name as ftr_gen_valuation_area_name preserving type)` |  |  |
+| `ValuationAreaIsPaying` |  | |  | `paying_val_area` |  |  |
+| `AccountingPrinciple` |  | |  | `acc_principle` |  |  |
 
 ## Source Code
 

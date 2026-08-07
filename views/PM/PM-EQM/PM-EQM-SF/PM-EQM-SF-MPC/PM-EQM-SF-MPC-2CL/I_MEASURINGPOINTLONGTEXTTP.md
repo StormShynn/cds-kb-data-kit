@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MeasuringPoint` | ✓ | |  |  |
-| `Language` |  | |  |  |
-| `MeasuringPointLongText` |  | |  |  |
-| `_MeasuringPoint` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeasuringPoint` | ✓ | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `MeasuringPointLongText` |  | |  |  |  |  |
+| `_MeasuringPoint` | | ✓ | | | | |
 
 ## Source Code
 

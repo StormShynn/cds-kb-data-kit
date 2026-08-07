@@ -27,32 +27,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `InspectionPlanGroup` | ✓ | |  | `BillOfOperationsGroup` |
-| `InspectionPlan` | ✓ | |  | `BillOfOperationsVariant` |
-| `InspPlanMatlAssignment` | ✓ | |  | `BOOToMaterialInternalID` |
-| `InspPlanMatlAssgmtIntVersion` | ✓ | |  | `BOOMatlInternalVersionCounter` |
-| `BillOfOperationsType` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `IsImplicitlyDeleted` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `BOOSearchText` |  | |  |  |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_InspectionPlanVersion` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `InspectionPlanGroup` | ✓ | |  | `BillOfOperationsGroup` |  |  |
+| `InspectionPlan` | ✓ | |  | `BillOfOperationsVariant` |  |  |
+| `InspPlanMatlAssignment` | ✓ | |  | `BOOToMaterialInternalID` |  |  |
+| `InspPlanMatlAssgmtIntVersion` | ✓ | |  | `BOOMatlInternalVersionCounter` |  |  |
+| `BillOfOperationsType` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `BOOSearchText` |  | |  |  |  |  |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_InspectionPlanVersion` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `YearMonth` | ✓ | |  | `yearmonth` |
-| `CalendarMonth` |  | |  | `calendarmonth` |
-| `CalendarYear` |  | |  | `calendaryear` |
-| `CalendarQuarter` |  | |  | `calendarquarter` |
-| `IsLeapYear` |  | |  | `isleapyear` |
-| `NumberOfDays` |  | |  | `numberofdays` |
-| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` |
-| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` |
-| `HalfYear` |  | |  | `halfyear` |
-| `_CalendarMonth` | | ✓ | | |
-| `_CalendarQuarter` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `YearMonth` | ✓ | |  | `yearmonth` |  |  |
+| `CalendarMonth` |  | |  | `calendarmonth` |  |  |
+| `CalendarYear` |  | |  | `calendaryear` |  |  |
+| `CalendarQuarter` |  | |  | `calendarquarter` |  |  |
+| `IsLeapYear` |  | |  | `isleapyear` |  |  |
+| `NumberOfDays` |  | |  | `numberofdays` |  |  |
+| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` |  |  |
+| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` |  |  |
+| `HalfYear` |  | |  | `halfyear` |  |  |
+| `_CalendarMonth` | | ✓ | | | | |
+| `_CalendarQuarter` | | ✓ | | | | |
 
 ## Associations
 

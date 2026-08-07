@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterInternalID` | ✓ | |  |  |
-| `WorkCenterTypeCode` | ✓ | |  |  |
-| `CapacityCategoryAllocation` | ✓ | |  |  |
-| `CapacityInternalID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `CapacityText` |  | |  |  |
-| `CapacityLastChangeDateTime` |  | |  |  |
-| `_CapHeader` | | ✓ | | |
-| `_Header` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |  |  |
+| `CapacityCategoryAllocation` | ✓ | |  |  |  |  |
+| `CapacityInternalID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `CapacityText` |  | |  |  |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |  |  |
+| `_CapHeader` | | ✓ | | | | |
+| `_Header` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IndependentRequirementType` | ✓ | |  | `cast(typ.bedae as vdm_bedae preserving type)` |
-| `IndependentRequirementClass` |  | |  | `cast(typ.bedar as vdm_bedar preserving type)` |
-| `_Text` | | ✓ | | |
-| `_RequirementClass` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndependentRequirementType` | ✓ | |  | `cast(typ.bedae as vdm_bedae preserving type)` |  |  |
+| `IndependentRequirementClass` |  | |  | `cast(typ.bedar as vdm_bedar preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_RequirementClass` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  |  |
-| `ProductionSupervisor` | ✓ | |  |  |
-| `ProductionSupervisorName` |  | |  |  |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |  |  |
+| `ProductionSupervisor` | ✓ | |  |  |  |  |
+| `ProductionSupervisorName` |  | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Source Code
 

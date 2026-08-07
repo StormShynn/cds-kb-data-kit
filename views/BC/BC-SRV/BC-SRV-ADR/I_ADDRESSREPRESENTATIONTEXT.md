@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |
-| `AddressRepresentationDesc` |  | |  | `nation_tex` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
+| `AddressRepresentationDesc` |  | |  | `nation_tex` |  |  |
 
 ## Source Code
 

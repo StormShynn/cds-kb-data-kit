@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OverallWarehouseActivityStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OvrlWarehouseActyStatusDesc` |  | |  | `bezei` |
-| `_OvrlWarehouseActyStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverallWarehouseActivityStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OvrlWarehouseActyStatusDesc` |  | |  | `bezei` |  |  |
+| `_OvrlWarehouseActyStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

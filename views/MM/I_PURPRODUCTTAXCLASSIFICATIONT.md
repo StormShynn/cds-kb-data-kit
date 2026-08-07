@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdPurchaseTaxClassification` | ✓ | |  | `taxim` |
-| `DestinationCountry` | ✓ | |  | `land1` |
-| `Language` | ✓ | |  | `spras` |
-| `ProdPurTaxClassificationName` |  | |  | `taxib` |
-| `_Country` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdPurchaseTaxClassification` | ✓ | |  | `taxim` |  |  |
+| `DestinationCountry` | ✓ | |  | `land1` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProdPurTaxClassificationName` |  | |  | `taxib` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TotalDeliveryStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `TotalDeliveryStatusDesc` |  | |  | `bezei` |
-| `_TotalDeliveryStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TotalDeliveryStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TotalDeliveryStatusDesc` |  | |  | `bezei` |  |  |
+| `_TotalDeliveryStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

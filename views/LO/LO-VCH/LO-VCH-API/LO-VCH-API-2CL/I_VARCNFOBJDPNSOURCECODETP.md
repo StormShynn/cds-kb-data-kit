@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ObjectDependencyName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_ObjectDependency` | | ✓ | | |
-| `_SourceCodeLine` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectDependencyName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_ObjectDependency` | | ✓ | | | | |
+| `_SourceCodeLine` | | ✓ | | | | |
 
 ## Source Code
 

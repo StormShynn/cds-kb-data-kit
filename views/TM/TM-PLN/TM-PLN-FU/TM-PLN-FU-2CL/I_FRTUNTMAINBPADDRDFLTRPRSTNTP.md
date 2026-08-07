@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderUUID` | ✓ | |  |  |
-| `TranspOrdBizPartnerFunction` | ✓ | |  |  |
-| `AddressID` |  | |  |  |
-| `AddresseeFullName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `InternationalPhoneNumber` |  | |  |  |
-| `InternationalMobilePhoneNumber` |  | |  |  |
-| `InternationalFaxNumber` |  | |  |  |
-| `I_FreightUnitTP` |  | |  | `_TransportationOrder as _FreightUnit : redirected to parent I_FreightUnitTP` |
-| `I_FrtUntMainBPAddrAddlRprstnTP` |  | |  | `_TrOrdMainBPAddrAddlRprstn as _FrtUnitMainBPAddrAddlRprstn : redirected to composition child I_FrtUntMainBPAddrAddlRprstnTP` |
-| `_PartnerFunction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderUUID` | ✓ | |  |  |  |  |
+| `TranspOrdBizPartnerFunction` | ✓ | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddresseeFullName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `InternationalPhoneNumber` |  | |  |  |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |  |  |
+| `InternationalFaxNumber` |  | |  |  |  |  |
+| `I_FreightUnitTP` |  | |  | `_TransportationOrder as _FreightUnit : redirected to parent I_FreightUnitTP` |  |  |
+| `I_FrtUntMainBPAddrAddlRprstnTP` |  | |  | `_TrOrdMainBPAddrAddlRprstn as _FrtUnitMainBPAddrAddlRprstn : redirected to composition child I_FrtUntMainBPAddrAddlRprstnTP` |  |  |
+| `_PartnerFunction` | | ✓ | | | | |
 
 ## Source Code
 

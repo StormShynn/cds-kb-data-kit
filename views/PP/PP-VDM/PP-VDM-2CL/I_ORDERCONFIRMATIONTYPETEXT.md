@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
-| `OrderConfirmationType` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as manur preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `OrderConfirmationTypeName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_ConfirmationType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |  |  |
+| `OrderConfirmationType` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as manur preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `OrderConfirmationTypeName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ConfirmationType` | | ✓ | | | | |
 
 ## Associations
 

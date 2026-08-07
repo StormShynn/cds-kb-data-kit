@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionType` |  | |  | `kschl` |
-| `ConditionRateAmount` |  | |  | `vfprc_rate_amount` |
-| `ConditionCurrency` |  | |  | `waers` |
-| `ConditionQuantity` |  | |  | `kpein` |
-| `ConditionQuantityUnit` |  | |  | `kmein` |
-| `ConditionRateRatio` |  | |  | `vfprc_element_ratio` |
-| `ConditionRateRatioUnit` |  | |  | `msehi` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionType` |  | |  | `kschl` |  |  |
+| `ConditionRateAmount` |  | |  | `vfprc_rate_amount` |  |  |
+| `ConditionCurrency` |  | |  | `waers` |  |  |
+| `ConditionQuantity` |  | |  | `kpein` |  |  |
+| `ConditionQuantityUnit` |  | |  | `kmein` |  |  |
+| `ConditionRateRatio` |  | |  | `vfprc_element_ratio` |  |  |
+| `ConditionRateRatioUnit` |  | |  | `msehi` |  |  |
 
 ## Source Code
 

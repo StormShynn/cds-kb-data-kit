@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `CnsldtnFunctionalAreaHierarchy` | ✓ | |  | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_functionalareahierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `FunctionalAreaHierarchyName` |  | | `_HierarchyText` | `UniversalHierarchyText` |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `CnsldtnFunctionalAreaHierarchy` | ✓ | |  | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_functionalareahierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `FunctionalAreaHierarchyName` |  | | `_HierarchyText` | `UniversalHierarchyText` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

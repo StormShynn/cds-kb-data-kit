@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `Supplier` | ✓ | | `_Text` | `Supplier` |
-| `SupplierName` |  | | `_Text` | `SupplierName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnSupplierTP` |  | |  | `_Supplier as _Supplier : redirected to parent I_CnsldtnSupplierTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `Supplier` | ✓ | | `_Text` | `Supplier` |  |  |
+| `SupplierName` |  | | `_Text` | `SupplierName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnSupplierTP` |  | |  | `_Supplier as _Supplier : redirected to parent I_CnsldtnSupplierTP` |  |  |
 
 ## Source Code
 

@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionType` | ✓ | |  | `kschl` |
-| `EWMWarehouse` | ✓ | |  | `ewm_warehouse_number` |
-| `Material` | ✓ | |  | `matnr` |
-| `EWMHandlingUnitType` | ✓ | |  | `ewm_handling_unit_type` |
-| `ConditionValidityEndDate` | ✓ | |  | `datbi` |
-| `ConditionValidityStartDate` |  | |  | `datab` |
-| `ConditionRecord` |  | |  | `knumh` |
-| `PackingInstructionSystemUUID` |  | |  | `cast( Conditions.packnr as pl_packinstnr preserving type )` |
-| `PackingInstructionAlt1SystUUID` |  | |  | `cast( Conditions.packnr1 as pl_altpacknr1 preserving type )` |
-| `PackingInstructionAlt2SystUUID` |  | |  | `cast( Conditions.packnr2 as pl_altpacknr2 preserving type )` |
-| `PackingInstructionAlt3SystUUID` |  | |  | `cast( Conditions.packnr3 as pl_altpacknr3 preserving type )` |
-| `PackingInstructionAlt4SystUUID` |  | |  | `cast( Conditions.packnr4 as pl_altpacknr4 preserving type )` |
-| `_ConditionType` | | ✓ | | |
-| `_EWMWarehouse` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_PackingInstructionHeader` | | ✓ | | |
-| `_PackingInstructionHeaderAlt1` | | ✓ | | |
-| `_PackingInstructionHeaderAlt2` | | ✓ | | |
-| `_PackingInstructionHeaderAlt3` | | ✓ | | |
-| `_PackingInstructionHeaderAlt4` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionType` | ✓ | |  | `kschl` |  |  |
+| `EWMWarehouse` | ✓ | |  | `ewm_warehouse_number` |  |  |
+| `Material` | ✓ | |  | `matnr` |  |  |
+| `EWMHandlingUnitType` | ✓ | |  | `ewm_handling_unit_type` |  |  |
+| `ConditionValidityEndDate` | ✓ | |  | `datbi` |  |  |
+| `ConditionValidityStartDate` |  | |  | `datab` |  |  |
+| `ConditionRecord` |  | |  | `knumh` |  |  |
+| `PackingInstructionSystemUUID` |  | |  | `cast( Conditions.packnr as pl_packinstnr preserving type )` |  |  |
+| `PackingInstructionAlt1SystUUID` |  | |  | `cast( Conditions.packnr1 as pl_altpacknr1 preserving type )` |  |  |
+| `PackingInstructionAlt2SystUUID` |  | |  | `cast( Conditions.packnr2 as pl_altpacknr2 preserving type )` |  |  |
+| `PackingInstructionAlt3SystUUID` |  | |  | `cast( Conditions.packnr3 as pl_altpacknr3 preserving type )` |  |  |
+| `PackingInstructionAlt4SystUUID` |  | |  | `cast( Conditions.packnr4 as pl_altpacknr4 preserving type )` |  |  |
+| `_ConditionType` | | ✓ | | | | |
+| `_EWMWarehouse` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_PackingInstructionHeader` | | ✓ | | | | |
+| `_PackingInstructionHeaderAlt1` | | ✓ | | | | |
+| `_PackingInstructionHeaderAlt2` | | ✓ | | | | |
+| `_PackingInstructionHeaderAlt3` | | ✓ | | | | |
+| `_PackingInstructionHeaderAlt4` | | ✓ | | | | |
 
 ## Associations
 

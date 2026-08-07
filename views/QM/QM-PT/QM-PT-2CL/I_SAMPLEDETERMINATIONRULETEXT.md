@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `SampleDeterminationRule` | ✓ | |  | `fbkey` |
-| `SampleDeterminationRuleTxt` |  | |  | `cast( qdfbt.kurztext as vdm_qfbkey_text preserving type )` |
-| `_SampleDeterminationRule` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `SampleDeterminationRule` | ✓ | |  | `fbkey` |  |  |
+| `SampleDeterminationRuleTxt` |  | |  | `cast( qdfbt.kurztext as vdm_qfbkey_text preserving type )` |  |  |
+| `_SampleDeterminationRule` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ValuationVariant` | ✓ | |  |  |
-| `ValuationVariantName` |  | | `_CostingValuationVarText` | `ValuationVariantName` |
-| `OverheadCostingSheet` |  | |  |  |
-| `OverheadCostingSheetDesc` |  | |  | `cast(_CostingSheetText.CostingSheetProcedureDesc as fpc_costing_sheet_description preserving type)` |
-| `ExtProcuredMatlOvhdCostingSht` |  | |  |  |
-| `ExtProcMatlOvhdCostgShtDesc` |  | |  | `cast(_CostingSheetExtText.CostingSheetProcedureDesc as fpc_costing_sheet_ext_desc preserving type)` |
-| `_CostingValuationVarText` | | ✓ | | |
-| `_CostingSheetText` | | ✓ | | |
-| `_CostingSheetExtText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationVariant` | ✓ | |  |  |  |  |
+| `ValuationVariantName` |  | | `_CostingValuationVarText` | `ValuationVariantName` |  |  |
+| `OverheadCostingSheet` |  | |  |  |  |  |
+| `OverheadCostingSheetDesc` |  | |  | `cast(_CostingSheetText.CostingSheetProcedureDesc as fpc_costing_sheet_description preserving type)` |  |  |
+| `ExtProcuredMatlOvhdCostingSht` |  | |  |  |  |  |
+| `ExtProcMatlOvhdCostgShtDesc` |  | |  | `cast(_CostingSheetExtText.CostingSheetProcedureDesc as fpc_costing_sheet_ext_desc preserving type)` |  |  |
+| `_CostingValuationVarText` | | ✓ | | | | |
+| `_CostingSheetText` | | ✓ | | | | |
+| `_CostingSheetExtText` | | ✓ | | | | |
 
 ## Associations
 

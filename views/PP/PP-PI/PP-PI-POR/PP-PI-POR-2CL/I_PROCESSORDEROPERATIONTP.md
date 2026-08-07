@@ -29,140 +29,140 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderInternalID` | ✓ | |  |  |
-| `OrderOperationInternalID` | ✓ | |  |  |
-| `ProcessOrder` |  | |  |  |
-| `ProcessOrderSequence` |  | |  |  |
-| `ProcessOrderOperation` |  | |  |  |
-| `OperationText` |  | |  |  |
-| `OperationHasLongText` |  | |  |  |
-| `LongTextLanguage` |  | |  |  |
-| `OperationStandardTextCode` |  | |  |  |
-| `OperationIsToBeDeleted` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ProductionResource` |  | |  |  |
-| `ProductionResourceInternalID` |  | |  |  |
-| `OperationControlProfile` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `ConfirmationGroup` |  | |  |  |
-| `NumberOfOperationConfirmations` |  | |  |  |
-| `NumberOfCapacities` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `NumberOfConfirmationSlips` |  | |  |  |
-| `CostElement` |  | |  |  |
-| `EmployeeSuitability` |  | |  |  |
-| `EmployeeWageType` |  | |  |  |
-| `EmployeeWageGroup` |  | |  |  |
-| `NumberOfEmployees` |  | |  |  |
-| `NumberOfTimeTickets` |  | |  |  |
-| `OperationSetupGroupCategory` |  | |  |  |
-| `OperationSetupGroup` |  | |  |  |
-| `OperationSetupType` |  | |  |  |
-| `BillOfOperationsType` |  | |  |  |
-| `MasterRecipeGroup` |  | |  |  |
-| `MasterRecipe` |  | |  |  |
-| `MasterRecipeOperationIntID` |  | |  |  |
-| `ExtProcgOperationHasSubcontrg` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `PurgInfoRecdDataIsFixed` |  | |  |  |
-| `PurchasingInfoRecordCategory` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `OpExternalProcessingCurrency` |  | |  |  |
-| `OpExternalProcessingPrice` |  | |  |  |
-| `NumberOfOperationPriceUnits` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `RequestingCostCenter` |  | |  |  |
-| `CostingVariant` |  | |  |  |
-| `CostingSheet` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `ErlstSchedldExecStrtDte` |  | |  |  |
-| `ErlstSchedldExecStrtTime` |  | |  |  |
-| `ErlstSchedldExecEndDte` |  | |  |  |
-| `ErlstSchedldExecEndTime` |  | |  |  |
-| `LtstSchedldExecStrtDte` |  | |  |  |
-| `LtstSchedldExecStrtTime` |  | |  |  |
-| `LtstSchedldExecEndDte` |  | |  |  |
-| `LtstSchedldExecEndTime` |  | |  |  |
-| `ActualExecutionStartDate` |  | |  |  |
-| `ActualExecutionStartTime` |  | |  |  |
-| `ActualProcessingStartDate` |  | |  |  |
-| `ActualProcessingStartTime` |  | |  |  |
-| `ActualProcessingEndDate` |  | |  |  |
-| `ActualProcessingEndTime` |  | |  |  |
-| `ActualExecutionEndDate` |  | |  |  |
-| `ActualExecutionEndTime` |  | |  |  |
-| `OpPlannedProcessingDurn` |  | |  |  |
-| `OpPlannedProcessingDurnUnit` |  | |  |  |
-| `OperationUnit` |  | |  |  |
-| `OpQtyToBaseQtyDnmntr` |  | |  |  |
-| `OpQtyToBaseQtyNmrtr` |  | |  |  |
-| `OperationReferenceQuantity` |  | |  |  |
-| `OpPlannedTotalQuantity` |  | |  |  |
-| `OpPlannedScrapQuantity` |  | |  |  |
-| `OpTotalConfirmedYieldQty` |  | |  |  |
-| `OpTotalConfirmedScrapQty` |  | |  |  |
-| `StandardWorkQuantityUnit1` |  | |  |  |
-| `StandardWorkQuantity1` |  | |  |  |
-| `CostCtrActivityType1` |  | |  |  |
-| `StandardWorkQuantityUnit2` |  | |  |  |
-| `StandardWorkQuantity2` |  | |  |  |
-| `CostCtrActivityType2` |  | |  |  |
-| `StandardWorkQuantityUnit3` |  | |  |  |
-| `StandardWorkQuantity3` |  | |  |  |
-| `CostCtrActivityType3` |  | |  |  |
-| `StandardWorkQuantityUnit4` |  | |  |  |
-| `StandardWorkQuantity4` |  | |  |  |
-| `CostCtrActivityType4` |  | |  |  |
-| `StandardWorkQuantityUnit5` |  | |  |  |
-| `StandardWorkQuantity5` |  | |  |  |
-| `CostCtrActivityType5` |  | |  |  |
-| `StandardWorkQuantityUnit6` |  | |  |  |
-| `StandardWorkQuantity6` |  | |  |  |
-| `CostCtrActivityType6` |  | |  |  |
-| `WorkQuantityUnit1` |  | |  |  |
-| `ConfirmedWorkQuantity1` |  | |  |  |
-| `NoFurtherWorkQuantity1IsExpd` |  | |  |  |
-| `WorkQuantityUnit2` |  | |  |  |
-| `ConfirmedWorkQuantity2` |  | |  |  |
-| `NoFurtherWorkQuantity2IsExpd` |  | |  |  |
-| `WorkQuantityUnit3` |  | |  |  |
-| `ConfirmedWorkQuantity3` |  | |  |  |
-| `NoFurtherWorkQuantity3IsExpd` |  | |  |  |
-| `WorkQuantityUnit4` |  | |  |  |
-| `ConfirmedWorkQuantity4` |  | |  |  |
-| `NoFurtherWorkQuantity4IsExpd` |  | |  |  |
-| `WorkQuantityUnit5` |  | |  |  |
-| `ConfirmedWorkQuantity5` |  | |  |  |
-| `NoFurtherWorkQuantity5IsExpd` |  | |  |  |
-| `WorkQuantityUnit6` |  | |  |  |
-| `ConfirmedWorkQuantity6` |  | |  |  |
-| `NoFurtherWorkQuantity6IsExpd` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `BusinessProcessEntryUnit` |  | |  |  |
-| `BusinessProcessConfirmedQty` |  | |  |  |
-| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |
-| `BusinessProcRemainingQtyUnit` |  | |  |  |
-| `BusinessProcessRemainingQty` |  | |  |  |
-| `_Order` | | ✓ | | |
-| `_Phase` | | ✓ | | |
-| `_Component` | | ✓ | | |
-| `_OperationCapacity` | | ✓ | | |
-| `_PhaseCapacity` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderInternalID` | ✓ | |  |  |  |  |
+| `OrderOperationInternalID` | ✓ | |  |  |  |  |
+| `ProcessOrder` |  | |  |  |  |  |
+| `ProcessOrderSequence` |  | |  |  |  |  |
+| `ProcessOrderOperation` |  | |  |  |  |  |
+| `OperationText` |  | |  |  |  |  |
+| `OperationHasLongText` |  | |  |  |  |  |
+| `LongTextLanguage` |  | |  |  |  |  |
+| `OperationStandardTextCode` |  | |  |  |  |  |
+| `OperationIsToBeDeleted` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ProductionResource` |  | |  |  |  |  |
+| `ProductionResourceInternalID` |  | |  |  |  |  |
+| `OperationControlProfile` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `ConfirmationGroup` |  | |  |  |  |  |
+| `NumberOfOperationConfirmations` |  | |  |  |  |  |
+| `NumberOfCapacities` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |  |  |
+| `CostElement` |  | |  |  |  |  |
+| `EmployeeSuitability` |  | |  |  |  |  |
+| `EmployeeWageType` |  | |  |  |  |  |
+| `EmployeeWageGroup` |  | |  |  |  |  |
+| `NumberOfEmployees` |  | |  |  |  |  |
+| `NumberOfTimeTickets` |  | |  |  |  |  |
+| `OperationSetupGroupCategory` |  | |  |  |  |  |
+| `OperationSetupGroup` |  | |  |  |  |  |
+| `OperationSetupType` |  | |  |  |  |  |
+| `BillOfOperationsType` |  | |  |  |  |  |
+| `MasterRecipeGroup` |  | |  |  |  |  |
+| `MasterRecipe` |  | |  |  |  |  |
+| `MasterRecipeOperationIntID` |  | |  |  |  |  |
+| `ExtProcgOperationHasSubcontrg` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `PurgInfoRecdDataIsFixed` |  | |  |  |  |  |
+| `PurchasingInfoRecordCategory` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `RequestingCostCenter` |  | |  |  |  |  |
+| `CostingVariant` |  | |  |  |  |  |
+| `CostingSheet` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `ErlstSchedldExecStrtDte` |  | |  |  |  |  |
+| `ErlstSchedldExecStrtTime` |  | |  |  |  |  |
+| `ErlstSchedldExecEndDte` |  | |  |  |  |  |
+| `ErlstSchedldExecEndTime` |  | |  |  |  |  |
+| `LtstSchedldExecStrtDte` |  | |  |  |  |  |
+| `LtstSchedldExecStrtTime` |  | |  |  |  |  |
+| `LtstSchedldExecEndDte` |  | |  |  |  |  |
+| `LtstSchedldExecEndTime` |  | |  |  |  |  |
+| `ActualExecutionStartDate` |  | |  |  |  |  |
+| `ActualExecutionStartTime` |  | |  |  |  |  |
+| `ActualProcessingStartDate` |  | |  |  |  |  |
+| `ActualProcessingStartTime` |  | |  |  |  |  |
+| `ActualProcessingEndDate` |  | |  |  |  |  |
+| `ActualProcessingEndTime` |  | |  |  |  |  |
+| `ActualExecutionEndDate` |  | |  |  |  |  |
+| `ActualExecutionEndTime` |  | |  |  |  |  |
+| `OpPlannedProcessingDurn` |  | |  |  |  |  |
+| `OpPlannedProcessingDurnUnit` |  | |  |  |  |  |
+| `OperationUnit` |  | |  |  |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OperationReferenceQuantity` |  | |  |  |  |  |
+| `OpPlannedTotalQuantity` |  | |  |  |  |  |
+| `OpPlannedScrapQuantity` |  | |  |  |  |  |
+| `OpTotalConfirmedYieldQty` |  | |  |  |  |  |
+| `OpTotalConfirmedScrapQty` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit1` |  | |  |  |  |  |
+| `StandardWorkQuantity1` |  | |  |  |  |  |
+| `CostCtrActivityType1` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit2` |  | |  |  |  |  |
+| `StandardWorkQuantity2` |  | |  |  |  |  |
+| `CostCtrActivityType2` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit3` |  | |  |  |  |  |
+| `StandardWorkQuantity3` |  | |  |  |  |  |
+| `CostCtrActivityType3` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit4` |  | |  |  |  |  |
+| `StandardWorkQuantity4` |  | |  |  |  |  |
+| `CostCtrActivityType4` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit5` |  | |  |  |  |  |
+| `StandardWorkQuantity5` |  | |  |  |  |  |
+| `CostCtrActivityType5` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit6` |  | |  |  |  |  |
+| `StandardWorkQuantity6` |  | |  |  |  |  |
+| `CostCtrActivityType6` |  | |  |  |  |  |
+| `WorkQuantityUnit1` |  | |  |  |  |  |
+| `ConfirmedWorkQuantity1` |  | |  |  |  |  |
+| `NoFurtherWorkQuantity1IsExpd` |  | |  |  |  |  |
+| `WorkQuantityUnit2` |  | |  |  |  |  |
+| `ConfirmedWorkQuantity2` |  | |  |  |  |  |
+| `NoFurtherWorkQuantity2IsExpd` |  | |  |  |  |  |
+| `WorkQuantityUnit3` |  | |  |  |  |  |
+| `ConfirmedWorkQuantity3` |  | |  |  |  |  |
+| `NoFurtherWorkQuantity3IsExpd` |  | |  |  |  |  |
+| `WorkQuantityUnit4` |  | |  |  |  |  |
+| `ConfirmedWorkQuantity4` |  | |  |  |  |  |
+| `NoFurtherWorkQuantity4IsExpd` |  | |  |  |  |  |
+| `WorkQuantityUnit5` |  | |  |  |  |  |
+| `ConfirmedWorkQuantity5` |  | |  |  |  |  |
+| `NoFurtherWorkQuantity5IsExpd` |  | |  |  |  |  |
+| `WorkQuantityUnit6` |  | |  |  |  |  |
+| `ConfirmedWorkQuantity6` |  | |  |  |  |  |
+| `NoFurtherWorkQuantity6IsExpd` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `BusinessProcessEntryUnit` |  | |  |  |  |  |
+| `BusinessProcessConfirmedQty` |  | |  |  |  |  |
+| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |  |  |
+| `BusinessProcRemainingQtyUnit` |  | |  |  |  |  |
+| `BusinessProcessRemainingQty` |  | |  |  |  |  |
+| `_Order` | | ✓ | | | | |
+| `_Phase` | | ✓ | | | | |
+| `_Component` | | ✓ | | | | |
+| `_OperationCapacity` | | ✓ | | | | |
+| `_PhaseCapacity` | | ✓ | | | | |
 
 ## Source Code
 

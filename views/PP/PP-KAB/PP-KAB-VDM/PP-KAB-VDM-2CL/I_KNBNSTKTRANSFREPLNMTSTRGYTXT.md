@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `StockTransferReplnmtStrategy` | ✓ | |  | `pkstu` |
-| `Language` | ✓ | |  | `spras` |
-| `StkTransfReplnmtStrgyName` |  | |  | `pksbz` |
-| `_KnbnStkTransfReplnmtStrgy` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `StockTransferReplnmtStrategy` | ✓ | |  | `pkstu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `StkTransfReplnmtStrgyName` |  | |  | `pksbz` |  |  |
+| `_KnbnStkTransfReplnmtStrgy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

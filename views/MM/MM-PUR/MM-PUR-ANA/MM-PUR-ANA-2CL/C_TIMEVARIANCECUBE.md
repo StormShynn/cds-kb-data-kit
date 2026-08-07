@@ -29,61 +29,61 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  | `cast( SupplierEvalByTime.PurchaseOrder as vdm_purchaseorder )` |
-| `PurchaseOrderItem` | ✓ | |  | `cast(SupplierEvalByTime.PurchaseOrderItem as vdm_purchaseorderitem)` |
-| `ScheduleLine` | ✓ | |  |  |
-| `DeliveryDate` |  | |  | `cast( ScheduleLineDeliveryDate as fieu_deliverydate)` |
-| `SchedLineStscDeliveryDate` |  | |  | `cast( SchedLineStscDeliveryDate as slfdt)` |
-| `OriglPOSchdLnDelivDte` |  | |  |  |
-| `OriglPOSchedLineStstclDelivDte` |  | |  |  |
-| `PurOrdItmFinalGRPostingDate` |  | |  |  |
-| `PurOrdItmFirstGRPostingDate` |  | |  |  |
-| `OriglPurOrdItm1stGRPostgDte` |  | |  |  |
-| `OriglPurOrdItmFnlGRPostgDte` |  | |  |  |
-| `PurchaseOrderDate` |  | |  |  |
-| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |
-| `CalendarQuarter` |  | | `_Calendar` | `CalendarQuarter` |
-| `CalendarMonth` |  | | `_Calendar` | `CalendarMonth` |
-| `CalendarWeek` |  | | `_Calendar` | `CalendarWeek` |
-| `PurgDocMigrtnIsCmpltdForAnlyts` |  | |  |  |
-| `SuplrEvalRelevantDocCategory` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Region` |  | | `_Supplier` | `Region` |
-| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingCategory` |  | | `_PurchasingCategoryMatlGroup._PurchasingCategory` | `PurchasingCategory` |
-| `PurgCatName` |  | | `_PurchasingCategoryMatlGroup._PurchasingCategory` | `PurgCatName` |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `TimeVarianceInDays` |  | |  | `cast ( TimeVarianceInDays as mm_a_overdue_days )` |
-| `TimeVarianceInPct` |  | |  | `cast ( TimeVarianceInPct as mmpur_ana_timevar_statdelivpct )` |
-| `TimeVarianceInPctByDelivDate` |  | |  | `cast( TimeVarianceInPctByDelivDate as mm_a_variance_delivery_pct )` |
-| `TimeVarianceScore` |  | |  | `cast( case when UpdatedScore.IsScoreChanged = 'X' then UpdatedScore.TimeVarianceScore else SupplierEvalByTime.TimeVarianceScore end as abap.dec(3,0) )` |
-| `TimeVarianceScoreByDelivDate` |  | |  | `cast ( TimeVarianceScoreByDelivDate as abap.dec(3,0))` |
-| `TimeVarianceScoreValue` |  | |  | `cast( case when UpdatedScore.IsScoreChanged = 'X' then UpdatedScore.TimeVarianceScore else SupplierEvalByTime.TimeVarianceScore end as mm_pur_ana_time_variance_score )` |
-| `TmeVarcScrByDelivDateValue` |  | |  | `cast ( TimeVarianceScoreByDelivDate as mm_pur_ana_stat_timevar_score)` |
-| `PurchaseOrderItemUniqueID` |  | |  | `cast( PurchaseOrderItemUniqueID as purchasingdocumentitemuniqueid )` |
-| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |
-| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
-| `NumberOfScheduleLines` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
-| `_Calendar` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingDocumentCategory` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_PurchasingCategory` | | ✓ | | |
-| `_Region` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  | `cast( SupplierEvalByTime.PurchaseOrder as vdm_purchaseorder )` |  |  |
+| `PurchaseOrderItem` | ✓ | |  | `cast(SupplierEvalByTime.PurchaseOrderItem as vdm_purchaseorderitem)` |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `DeliveryDate` |  | |  | `cast( ScheduleLineDeliveryDate as fieu_deliverydate)` |  |  |
+| `SchedLineStscDeliveryDate` |  | |  | `cast( SchedLineStscDeliveryDate as slfdt)` |  |  |
+| `OriglPOSchdLnDelivDte` |  | |  |  |  |  |
+| `OriglPOSchedLineStstclDelivDte` |  | |  |  |  |  |
+| `PurOrdItmFinalGRPostingDate` |  | |  |  |  |  |
+| `PurOrdItmFirstGRPostingDate` |  | |  |  |  |  |
+| `OriglPurOrdItm1stGRPostgDte` |  | |  |  |  |  |
+| `OriglPurOrdItmFnlGRPostgDte` |  | |  |  |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |  |  |
+| `CalendarQuarter` |  | | `_Calendar` | `CalendarQuarter` |  |  |
+| `CalendarMonth` |  | | `_Calendar` | `CalendarMonth` |  |  |
+| `CalendarWeek` |  | | `_Calendar` | `CalendarWeek` |  |  |
+| `PurgDocMigrtnIsCmpltdForAnlyts` |  | |  |  |  |  |
+| `SuplrEvalRelevantDocCategory` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Region` |  | | `_Supplier` | `Region` |  |  |
+| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingCategory` |  | | `_PurchasingCategoryMatlGroup._PurchasingCategory` | `PurchasingCategory` |  |  |
+| `PurgCatName` |  | | `_PurchasingCategoryMatlGroup._PurchasingCategory` | `PurgCatName` |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `TimeVarianceInDays` |  | |  | `cast ( TimeVarianceInDays as mm_a_overdue_days )` |  |  |
+| `TimeVarianceInPct` |  | |  | `cast ( TimeVarianceInPct as mmpur_ana_timevar_statdelivpct )` |  |  |
+| `TimeVarianceInPctByDelivDate` |  | |  | `cast( TimeVarianceInPctByDelivDate as mm_a_variance_delivery_pct )` |  |  |
+| `TimeVarianceScore` |  | |  | `cast( case when UpdatedScore.IsScoreChanged = 'X' then UpdatedScore.TimeVarianceScore else SupplierEvalByTime.TimeVarianceScore end as abap.dec(3,0) )` |  |  |
+| `TimeVarianceScoreByDelivDate` |  | |  | `cast ( TimeVarianceScoreByDelivDate as abap.dec(3,0))` |  |  |
+| `TimeVarianceScoreValue` |  | |  | `cast( case when UpdatedScore.IsScoreChanged = 'X' then UpdatedScore.TimeVarianceScore else SupplierEvalByTime.TimeVarianceScore end as mm_pur_ana_time_variance_score )` |  |  |
+| `TmeVarcScrByDelivDateValue` |  | |  | `cast ( TimeVarianceScoreByDelivDate as mm_pur_ana_stat_timevar_score)` |  |  |
+| `PurchaseOrderItemUniqueID` |  | |  | `cast( PurchaseOrderItemUniqueID as purchasingdocumentitemuniqueid )` |  |  |
+| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |  |  |
+| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `NumberOfScheduleLines` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `_Calendar` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_PurchasingCategory` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
 
 ## Associations
 

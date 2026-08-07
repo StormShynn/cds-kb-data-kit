@@ -28,39 +28,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoiceItem` |  | |  | `cobl_nr` |
-| `GLAccount` |  | |  | `saknr` |
-| `DocumentCurrency` |  | |  | `waers` |
-| `wrbtr_cs` |  | |  | `} SupplierInvoiceItemAmount : wrbtr_cs` |
-| `DebitCreditCode` |  | |  | `shkzg` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `TaxCode` |  | |  | `mwskz` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `SupplierInvoiceItemText` |  | |  | `sgtxt` |
-| `CostCenter` |  | |  | `kostl` |
-| `SalesOrder` |  | |  | `vbeln` |
-| `SalesOrderItem` |  | |  | `vbelp` |
-| `InternalOrder` |  | |  | `aufnr` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `BusinessArea` |  | |  | `gsber` |
-| `CostObject` |  | |  | `kstrg` |
-| `WBSElementInternalID` |  | |  | `ps_s4_pspnr` |
-| `CostCtrActivityType` |  | |  | `lstar` |
-| `PersonnelNumber` |  | |  | `pernr_d` |
-| `BusinessProcess` |  | |  | `co_prznr` |
-| `GrantID` |  | |  | `gm_grant_nbr` |
-| `QuantityUnit` |  | |  | `meins` |
-| `menge_d` |  | |  | `} Quantity : menge_d` |
-| `AssignmentReference` |  | |  | `dzuonr` |
-| `IsNotCashDiscountLiable` |  | |  | `xskrl` |
-| `fwbas_cs` |  | |  | `} TaxBaseAmountInDocCry : fwbas_cs` |
-| `WorkItem` |  | |  | `/cpd/pfp_workitem_id` |
-| `TaxCountry` |  | |  | `fot_tax_country` |
-| `FinancialTransactionType` |  | |  | `rmvct` |
-| `BudgetPeriod` |  | |  | `fm_budget_period` |
-| `_SupplierInvoice` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoiceItem` |  | |  | `cobl_nr` |  |  |
+| `GLAccount` |  | |  | `saknr` |  |  |
+| `DocumentCurrency` |  | |  | `waers` |  |  |
+| `SupplierInvoiceItemAmount` |  | |  | `wrbtr_cs` |  |  |
+| `DebitCreditCode` |  | |  | `shkzg` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `TaxCode` |  | |  | `mwskz` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `SupplierInvoiceItemText` |  | |  | `sgtxt` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `SalesOrder` |  | |  | `vbeln` |  |  |
+| `SalesOrderItem` |  | |  | `vbelp` |  |  |
+| `InternalOrder` |  | |  | `aufnr` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `CostObject` |  | |  | `kstrg` |  |  |
+| `WBSElementInternalID` |  | |  | `ps_s4_pspnr` |  |  |
+| `CostCtrActivityType` |  | |  | `lstar` |  |  |
+| `PersonnelNumber` |  | |  | `pernr_d` |  |  |
+| `BusinessProcess` |  | |  | `co_prznr` |  |  |
+| `GrantID` |  | |  | `gm_grant_nbr` |  |  |
+| `QuantityUnit` |  | |  | `meins` |  |  |
+| `Quantity` |  | |  | `menge_d` |  |  |
+| `AssignmentReference` |  | |  | `dzuonr` |  |  |
+| `IsNotCashDiscountLiable` |  | |  | `xskrl` |  |  |
+| `TaxBaseAmountInDocCry` |  | |  | `fwbas_cs` |  |  |
+| `WorkItem` |  | |  | `/cpd/pfp_workitem_id` |  |  |
+| `TaxCountry` |  | |  | `fot_tax_country` |  |  |
+| `FinancialTransactionType` |  | |  | `rmvct` |  |  |
+| `BudgetPeriod` |  | |  | `fm_budget_period` |  |  |
+| `_SupplierInvoice` | | ✓ | | | | |
 
 ## Source Code
 

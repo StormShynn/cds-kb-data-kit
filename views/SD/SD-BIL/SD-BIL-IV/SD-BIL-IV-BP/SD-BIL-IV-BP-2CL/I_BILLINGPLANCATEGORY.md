@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingPlanCategory` | ✓ | |  | `cast( dd07l.domvalue_l as fptyp_fp )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingPlanCategory` | ✓ | |  | `cast( dd07l.domvalue_l as fptyp_fp )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

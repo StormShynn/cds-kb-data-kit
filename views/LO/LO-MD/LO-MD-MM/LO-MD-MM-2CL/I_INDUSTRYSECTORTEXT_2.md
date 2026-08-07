@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IndustrySector` | ✓ | |  | `mbrsh` |
-| `Language` | ✓ | |  | `spras` |
-| `IndustrySectorName` |  | |  | `mbbez` |
-| `_IndustrySector` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndustrySector` | ✓ | |  | `mbrsh` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `IndustrySectorName` |  | |  | `mbbez` |  |  |
+| `_IndustrySector` | | ✓ | | | | |
 
 ## Associations
 

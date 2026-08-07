@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OvrlItmPickingIncompletionSts` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OvrlItmPickingIncompltnStsDesc` |  | |  | `bezei` |
-| `_OvrlItmPickingIncompletionSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OvrlItmPickingIncompletionSts` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OvrlItmPickingIncompltnStsDesc` |  | |  | `bezei` |  |  |
+| `_OvrlItmPickingIncompletionSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

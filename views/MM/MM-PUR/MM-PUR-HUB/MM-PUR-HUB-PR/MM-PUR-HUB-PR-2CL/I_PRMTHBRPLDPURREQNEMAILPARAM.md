@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProcmtHubPurchaseRequisition` | ✓ | |  |  |
-| `ProcmtHubPurRequisitionItem` | ✓ | |  |  |
-| `ProcurementHubSourceSystem` | ✓ | |  |  |
-| `ProcmtHubPurReqnItmCommentUUID` | ✓ | |  |  |
-| `PrmtHbPurReqnItmCmntText` |  | |  |  |
-| `PrmtHbCommentedByUserName` |  | |  |  |
-| `PrmtHbCreatedByUserName` |  | |  | `cast( '' as sstring )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcmtHubPurchaseRequisition` | ✓ | |  |  |  |  |
+| `ProcmtHubPurRequisitionItem` | ✓ | |  |  |  |  |
+| `ProcurementHubSourceSystem` | ✓ | |  |  |  |  |
+| `ProcmtHubPurReqnItmCommentUUID` | ✓ | |  |  |  |  |
+| `PrmtHbPurReqnItmCmntText` |  | |  |  |  |  |
+| `PrmtHbCommentedByUserName` |  | |  |  |  |  |
+| `PrmtHbCreatedByUserName` |  | |  | `cast( '' as sstring )` |  |  |
 
 ## Source Code
 

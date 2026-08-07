@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturnType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `CustomerReturnTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_customer_return_type_name preserving type )` |
-| `_CustomerReturnType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturnType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `CustomerReturnTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_customer_return_type_name preserving type )` |  |  |
+| `_CustomerReturnType` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `FinTransCentralClearingOption` | ✓ | |  | `cast( dd07t.domvalue_l as tpm_trea_clearing_opt )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FinTransCntrlClrgOptionName` |  | |  | `cast( dd07t.ddtext as tpm_trea_clearing_opt_name preserving type )` |
-| `_CentralClearingOption` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `FinTransCentralClearingOption` | ✓ | |  | `cast( dd07t.domvalue_l as tpm_trea_clearing_opt )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FinTransCntrlClrgOptionName` |  | |  | `cast( dd07t.ddtext as tpm_trea_clearing_opt_name preserving type )` |  |  |
+| `_CentralClearingOption` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

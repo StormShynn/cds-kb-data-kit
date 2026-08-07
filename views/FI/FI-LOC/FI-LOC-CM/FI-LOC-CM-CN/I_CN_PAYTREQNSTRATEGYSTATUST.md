@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentReqnStrategyStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as payreqn_stgy_status preserving type)` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PaymentReqnStrategyStatusName` |  | |  | `cast( ddtext as payreqn_stgy_status_name preserving type )` |
-| `_Language` | | ✓ | | |
-| `_StrategyStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentReqnStrategyStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as payreqn_stgy_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PaymentReqnStrategyStatusName` |  | |  | `cast( ddtext as payreqn_stgy_status_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_StrategyStatus` | | ✓ | | | | |
 
 ## Associations
 

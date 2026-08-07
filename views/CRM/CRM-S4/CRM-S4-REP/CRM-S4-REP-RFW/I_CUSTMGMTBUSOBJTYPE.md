@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessObjectType` | ✓ | |  | `subobj_category` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessObjectType` | ✓ | |  | `subobj_category` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

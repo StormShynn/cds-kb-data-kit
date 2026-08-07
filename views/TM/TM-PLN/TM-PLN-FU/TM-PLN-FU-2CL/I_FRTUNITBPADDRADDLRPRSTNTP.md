@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderBusPartUUID` | ✓ | |  |  |
-| `AddressRepresentationCode` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddresseeFullName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `I_FreightUnitTP` |  | |  | `_TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |
-| `I_FrtUnitBPAddrDfltRprstnTP` |  | |  | `_TranspOrdBPAddrDfltRprstn as _FrtUnitBPAddrDfltRprstn : redirected to parent I_FrtUnitBPAddrDfltRprstnTP` |
-| `_AddressRepresentationCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderBusPartUUID` | ✓ | |  |  |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddresseeFullName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `I_FreightUnitTP` |  | |  | `_TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |  |  |
+| `I_FrtUnitBPAddrDfltRprstnTP` |  | |  | `_TranspOrdBPAddrDfltRprstn as _FrtUnitBPAddrDfltRprstn : redirected to parent I_FrtUnitBPAddrDfltRprstnTP` |  |  |
+| `_AddressRepresentationCode` | | ✓ | | | | |
 
 ## Source Code
 

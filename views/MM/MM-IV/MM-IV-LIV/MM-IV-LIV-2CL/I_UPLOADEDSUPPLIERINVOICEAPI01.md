@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UploadedSupplierInvoiceUUID` | ✓ | |  |  |
-| `SupplierInvoiceUploadUUID` |  | |  |  |
-| `SupplierInvoice` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `SuplrInvcUploadDescription` |  | | `_SupplierInvoiceUploadAPI01` | `SuplrInvcUploadDescription` |
-| `_SupplierInvoiceAPI01` | | ✓ | | |
-| `_SupplierInvoiceUploadAPI01` | | ✓ | | |
-| `_SuplrInvcUploadHistoryAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UploadedSupplierInvoiceUUID` | ✓ | |  |  |  |  |
+| `SupplierInvoiceUploadUUID` |  | |  |  |  |  |
+| `SupplierInvoice` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `SuplrInvcUploadDescription` |  | | `_SupplierInvoiceUploadAPI01` | `SuplrInvcUploadDescription` |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | | | |
+| `_SupplierInvoiceUploadAPI01` | | ✓ | | | | |
+| `_SuplrInvcUploadHistoryAPI01` | | ✓ | | | | |
 
 ## Associations
 

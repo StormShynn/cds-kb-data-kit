@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionRoutingGroup` | ✓ | |  |  |
-| `ProductionRouting` | ✓ | |  |  |
-| `ProductionRoutingSequence` | ✓ | |  |  |
-| `ProductionRoutingOpIntID` | ✓ | |  |  |
-| `ProdnRtgOpBOMItemInternalID` | ✓ | |  |  |
-| `ProdnRtgOpBOMItemIntVersion` | ✓ | |  |  |
-| `BillOfMaterialCategory` |  | |  |  |
-| `BillOfMaterial` |  | |  |  |
-| `BillOfMaterialComponent` |  | |  |  |
-| `BillOfMaterialVariant` |  | |  |  |
-| `BillOfMaterialItemNodeNumber` |  | |  |  |
-| `MatlCompIsMarkedForBackflush` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_NonSqncTP` | | ✓ | | |
-| `_Header` | | ✓ | | |
-| `_ProdnRtgTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |  |  |
+| `ProductionRouting` | ✓ | |  |  |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |  |  |
+| `ProductionRoutingOpIntID` | ✓ | |  |  |  |  |
+| `ProdnRtgOpBOMItemInternalID` | ✓ | |  |  |  |  |
+| `ProdnRtgOpBOMItemIntVersion` | ✓ | |  |  |  |  |
+| `BillOfMaterialCategory` |  | |  |  |  |  |
+| `BillOfMaterial` |  | |  |  |  |  |
+| `BillOfMaterialComponent` |  | |  |  |  |  |
+| `BillOfMaterialVariant` |  | |  |  |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  |  |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_NonSqncTP` | | ✓ | | | | |
+| `_Header` | | ✓ | | | | |
+| `_ProdnRtgTP` | | ✓ | | | | |
 
 ## Source Code
 

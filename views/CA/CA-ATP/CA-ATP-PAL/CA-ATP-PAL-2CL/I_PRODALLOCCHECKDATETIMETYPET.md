@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdAllocCheckDateTimeType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckdatetimetype preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `ProdAllocChkDateTimeTypeDesc` |  | |  | `cast( ddtext as prodalloccheckdatetimetypedesc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_ProdAllocCheckDateTimeType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdAllocCheckDateTimeType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckdatetimetype preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `ProdAllocChkDateTimeTypeDesc` |  | |  | `cast( ddtext as prodalloccheckdatetimetypedesc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProdAllocCheckDateTimeType` | | ✓ | | | | |
 
 ## Associations
 

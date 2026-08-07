@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `Country` | ✓ | |  | `land1` |
-| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` |
-| `WithholdingTaxIncomeTypeName` |  | |  | `eatxt` |
-| `_Language` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_IncomeType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `Country` | ✓ | |  | `land1` |  |  |
+| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` |  |  |
+| `WithholdingTaxIncomeTypeName` |  | |  | `eatxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_IncomeType` | | ✓ | | | | |
 
 ## Associations
 

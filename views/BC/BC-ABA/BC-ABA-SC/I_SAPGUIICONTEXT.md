@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `SAPGUIIconASCIICode` | ✓ | |  | `id` |
-| `SAPGUIIconName` |  | |  | `shorttext` |
-| `_Language` | | ✓ | | |
-| `_SAPGUIIcon` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `SAPGUIIconASCIICode` | ✓ | |  | `id` |  |  |
+| `SAPGUIIconName` |  | |  | `shorttext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SAPGUIIcon` | | ✓ | | | | |
 
 ## Associations
 

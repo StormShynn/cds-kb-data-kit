@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionAcctAssgmtRelevance` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as ktrel )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionAcctAssgmtRelevance` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as ktrel )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

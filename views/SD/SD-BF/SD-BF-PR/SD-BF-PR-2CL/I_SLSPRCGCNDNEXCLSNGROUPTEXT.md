@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `ConditionUsage` | ✓ | |  |  |
-| `ConditionApplication` | ✓ | |  |  |
-| `ConditionExclusionGroup` | ✓ | |  |  |
-| `ConditionExclusionGroupText` |  | |  |  |
-| `_SlsPrcgCndnExclusionGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `ConditionUsage` | ✓ | |  |  |  |  |
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `ConditionExclusionGroup` | ✓ | |  |  |  |  |
+| `ConditionExclusionGroupText` |  | |  |  |  |  |
+| `_SlsPrcgCndnExclusionGroup` | | ✓ | | | | |
 
 ## Associations
 

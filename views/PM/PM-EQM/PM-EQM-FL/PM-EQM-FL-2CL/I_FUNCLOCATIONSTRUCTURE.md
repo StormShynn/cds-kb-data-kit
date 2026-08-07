@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FuncLocationStructure` | ✓ | |  | `tplkz` |
-| `FuncLocationStructureEditMask` |  | |  | `editm` |
-| `FuncLocationStrucHierLevels` |  | |  | `stufm` |
-| `FuncLocStrucIdentifyingLevel` |  | |  | `level_kz` |
-| `FuncLocStruc2ndIdentifyingLvl` |  | |  | `level_kz2` |
-| `FuncnlLocationStructureCodeOID` |  | |  | `cast( t370s.tplkz as funclocationstructure_oid )` |
-| `_FuncLocationStructureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FuncLocationStructure` | ✓ | |  | `tplkz` |  |  |
+| `FuncLocationStructureEditMask` |  | |  | `editm` |  |  |
+| `FuncLocationStrucHierLevels` |  | |  | `stufm` |  |  |
+| `FuncLocStrucIdentifyingLevel` |  | |  | `level_kz` |  |  |
+| `FuncLocStruc2ndIdentifyingLvl` |  | |  | `level_kz2` |  |  |
+| `FuncnlLocationStructureCodeOID` |  | |  | `cast( t370s.tplkz as funclocationstructure_oid )` |  |  |
+| `_FuncLocationStructureText` | | ✓ | | | | |
 
 ## Associations
 

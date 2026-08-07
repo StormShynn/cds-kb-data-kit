@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `ControllingArea` | ✓ | |  |  |
-| `ProfitCenter` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `LanguageForEdit` |  | |  |  |
-| `ProfitCenterName` |  | |  |  |
-| `ProfitCenterLongName` |  | |  |  |
-| `_ProfitCenterTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `ProfitCenter` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `LanguageForEdit` |  | |  |  |  |  |
+| `ProfitCenterName` |  | |  |  |  |  |
+| `ProfitCenterLongName` |  | |  |  |  |  |
+| `_ProfitCenterTP` | | ✓ | | | | |
 
 ## Source Code
 

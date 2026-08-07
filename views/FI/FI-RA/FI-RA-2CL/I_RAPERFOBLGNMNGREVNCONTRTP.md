@@ -28,109 +28,109 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PerformanceObligation` | ✓ | |  |  |
-| `RevenueAccountingContract` | ✓ | |  |  |
-| `RAPerfOblgnDistinctType` |  | |  |  |
-| `PerformanceObligationClass` |  | |  |  |
-| `ContractualPrcInSlsDocCrcy` |  | |  |  |
-| `SSPriceInSalesDocCrcy` |  | |  |  |
-| `AllocatedPriceInSalesDocCrcy` |  | |  |  |
-| `SalesDocumentCurrency` |  | |  |  |
-| `RevnAcctgSuspensionDate` |  | |  |  |
-| `PerfOblgnEffectiveQuantity` |  | |  |  |
-| `PerfOblgnEffectiveQuantityUnit` |  | |  |  |
-| `RevnAcctgPerfOblgnStatus` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CompanyCodeName` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `BusinessPartnerName` |  | |  |  |
-| `Customer` |  | |  |  |
-| `PerfOblgnFulfillmentType` |  | |  |  |
-| `PerfOblgnEventType` |  | |  |  |
-| `PerfOblgnStartDateType` |  | |  |  |
-| `PerformanceObligationStartDate` |  | |  |  |
-| `PerformanceObligationEndDate` |  | |  |  |
-| `PerfObligationDuration` |  | |  |  |
-| `PerfObligationDurationUnit` |  | |  |  |
-| `PerfObligationDeferralMethod` |  | |  |  |
-| `PerfOblgnIsExclFromPriceAlloc` |  | |  |  |
-| `RAPerfOblgnIsResidual` |  | |  |  |
-| `RAPerfOblgnInvoiceEffectType` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `Segment` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `RAPerfOblgnCompletionDate` |  | |  |  |
-| `PerfOblgnIsFinallyInvoiced` |  | |  |  |
-| `PerfOblgnIsFullyFulfilled` |  | |  |  |
-| `PerfOblgnIsSoftDeleted` |  | |  |  |
-| `RAPerfOblgnIsManuallyChanged` |  | |  |  |
-| `PerfOblgnHasManualSpreading` |  | |  |  |
-| `RAAttributeHasConflict` |  | |  |  |
-| `PerfOblgnHasSprdgConflict` |  | |  |  |
-| `RAPerfOblgnFinalizationDate` |  | |  |  |
-| `RevnAcctgSuspensionReason` |  | |  |  |
-| `PerfOblgnContractualQuantity` |  | |  |  |
-| `PerfOblgnContractualQtyUnit` |  | |  |  |
-| `PerfOblgnCreatedByUser` |  | |  |  |
-| `CreatedByUserDescription` |  | |  |  |
-| `PerfOblgnCreationDate` |  | |  |  |
-| `PerfOblgnLastChangedByUsr` |  | |  |  |
-| `PerfOblgnLastChangeDate` |  | |  |  |
-| `RAHigherLevelPerfOblgn` |  | |  |  |
-| `RootPerformanceObligationInBOM` |  | |  |  |
-| `RAPerformanceObligationType` |  | |  |  |
-| `RAPerfOblgnCategory` |  | |  |  |
-| `PerformanceObligationRole` |  | |  |  |
-| `RAPerfOblgnIsManuallyCreated` |  | |  |  |
-| `RatioUnit` |  | |  |  |
-| `RAUnivRevnRecgnIntegType` |  | |  |  |
-| `RAContrIsNotActvUnivRevnRecgn` |  | |  |  |
-| `SalesDocument` |  | |  |  |
-| `SalesDocumentItem` |  | |  |  |
-| `ServiceDocument` |  | |  |  |
-| `ServiceDocumentItem` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSDescription` |  | |  |  |
-| `SSPriceToleranceMethod` |  | |  |  |
-| `SSPriceToleranceAmount` |  | |  |  |
-| `SSPriceTolerancePercent` |  | |  |  |
-| `RevnAcctgItmQuantityUnit` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitabilitySegment` |  | |  |  |
-| `RAPerfOblgnRevnFrmAllocAccount` |  | |  |  |
-| `OperatingConcern` |  | |  |  |
-| `GLAccountName` |  | |  |  |
-| `RAFulfillmentTypeIsTimeBased` |  | |  |  |
-| `RAFulfillmentTypeIsEventBased` |  | |  |  |
-| `AccountingPrinciple` |  | |  |  |
-| `RAPerfOblgnIsCostRecognizable` |  | |  |  |
-| `PerfOblgnDeliveredQuantity` |  | |  |  |
-| `RAItemDifferenceToDeliveredQty` |  | |  |  |
-| `RAFulfillmentIsValueBased` |  | |  |  |
-| `RevnAcctgSalesOrganization` |  | |  |  |
-| `PerUnitSSPriceInSlsDocCrcy` |  | |  |  |
-| `_Contract` | | ✓ | | |
-| `_PerfOblgnDistinctType` | | ✓ | | |
-| `_RAPerfOblgnStatus` | | ✓ | | |
-| `_FulfillmentType` | | ✓ | | |
-| `_PerfObligationEventType` | | ✓ | | |
-| `_PerfOblgnStartDateType` | | ✓ | | |
-| `_PerfOblgnDeferralMethod` | | ✓ | | |
-| `_PerfOblgnInvcEffctType` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_RAPerfOblgnCategory` | | ✓ | | |
-| `_PerformanceObligationRole` | | ✓ | | |
-| `_RAUnivRevnRecgnIntegType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PerformanceObligation` | ✓ | |  |  |  |  |
+| `RevenueAccountingContract` | ✓ | |  |  |  |  |
+| `RAPerfOblgnDistinctType` |  | |  |  |  |  |
+| `PerformanceObligationClass` |  | |  |  |  |  |
+| `ContractualPrcInSlsDocCrcy` |  | |  |  |  |  |
+| `SSPriceInSalesDocCrcy` |  | |  |  |  |  |
+| `AllocatedPriceInSalesDocCrcy` |  | |  |  |  |  |
+| `SalesDocumentCurrency` |  | |  |  |  |  |
+| `RevnAcctgSuspensionDate` |  | |  |  |  |  |
+| `PerfOblgnEffectiveQuantity` |  | |  |  |  |  |
+| `PerfOblgnEffectiveQuantityUnit` |  | |  |  |  |  |
+| `RevnAcctgPerfOblgnStatus` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CompanyCodeName` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `BusinessPartnerName` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `PerfOblgnFulfillmentType` |  | |  |  |  |  |
+| `PerfOblgnEventType` |  | |  |  |  |  |
+| `PerfOblgnStartDateType` |  | |  |  |  |  |
+| `PerformanceObligationStartDate` |  | |  |  |  |  |
+| `PerformanceObligationEndDate` |  | |  |  |  |  |
+| `PerfObligationDuration` |  | |  |  |  |  |
+| `PerfObligationDurationUnit` |  | |  |  |  |  |
+| `PerfObligationDeferralMethod` |  | |  |  |  |  |
+| `PerfOblgnIsExclFromPriceAlloc` |  | |  |  |  |  |
+| `RAPerfOblgnIsResidual` |  | |  |  |  |  |
+| `RAPerfOblgnInvoiceEffectType` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `RAPerfOblgnCompletionDate` |  | |  |  |  |  |
+| `PerfOblgnIsFinallyInvoiced` |  | |  |  |  |  |
+| `PerfOblgnIsFullyFulfilled` |  | |  |  |  |  |
+| `PerfOblgnIsSoftDeleted` |  | |  |  |  |  |
+| `RAPerfOblgnIsManuallyChanged` |  | |  |  |  |  |
+| `PerfOblgnHasManualSpreading` |  | |  |  |  |  |
+| `RAAttributeHasConflict` |  | |  |  |  |  |
+| `PerfOblgnHasSprdgConflict` |  | |  |  |  |  |
+| `RAPerfOblgnFinalizationDate` |  | |  |  |  |  |
+| `RevnAcctgSuspensionReason` |  | |  |  |  |  |
+| `PerfOblgnContractualQuantity` |  | |  |  |  |  |
+| `PerfOblgnContractualQtyUnit` |  | |  |  |  |  |
+| `PerfOblgnCreatedByUser` |  | |  |  |  |  |
+| `CreatedByUserDescription` |  | |  |  |  |  |
+| `PerfOblgnCreationDate` |  | |  |  |  |  |
+| `PerfOblgnLastChangedByUsr` |  | |  |  |  |  |
+| `PerfOblgnLastChangeDate` |  | |  |  |  |  |
+| `RAHigherLevelPerfOblgn` |  | |  |  |  |  |
+| `RootPerformanceObligationInBOM` |  | |  |  |  |  |
+| `RAPerformanceObligationType` |  | |  |  |  |  |
+| `RAPerfOblgnCategory` |  | |  |  |  |  |
+| `PerformanceObligationRole` |  | |  |  |  |  |
+| `RAPerfOblgnIsManuallyCreated` |  | |  |  |  |  |
+| `RatioUnit` |  | |  |  |  |  |
+| `RAUnivRevnRecgnIntegType` |  | |  |  |  |  |
+| `RAContrIsNotActvUnivRevnRecgn` |  | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `ServiceDocument` |  | |  |  |  |  |
+| `ServiceDocumentItem` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSDescription` |  | |  |  |  |  |
+| `SSPriceToleranceMethod` |  | |  |  |  |  |
+| `SSPriceToleranceAmount` |  | |  |  |  |  |
+| `SSPriceTolerancePercent` |  | |  |  |  |  |
+| `RevnAcctgItmQuantityUnit` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  |  |  |  |
+| `RAPerfOblgnRevnFrmAllocAccount` |  | |  |  |  |  |
+| `OperatingConcern` |  | |  |  |  |  |
+| `GLAccountName` |  | |  |  |  |  |
+| `RAFulfillmentTypeIsTimeBased` |  | |  |  |  |  |
+| `RAFulfillmentTypeIsEventBased` |  | |  |  |  |  |
+| `AccountingPrinciple` |  | |  |  |  |  |
+| `RAPerfOblgnIsCostRecognizable` |  | |  |  |  |  |
+| `PerfOblgnDeliveredQuantity` |  | |  |  |  |  |
+| `RAItemDifferenceToDeliveredQty` |  | |  |  |  |  |
+| `RAFulfillmentIsValueBased` |  | |  |  |  |  |
+| `RevnAcctgSalesOrganization` |  | |  |  |  |  |
+| `PerUnitSSPriceInSlsDocCrcy` |  | |  |  |  |  |
+| `_Contract` | | ✓ | | | | |
+| `_PerfOblgnDistinctType` | | ✓ | | | | |
+| `_RAPerfOblgnStatus` | | ✓ | | | | |
+| `_FulfillmentType` | | ✓ | | | | |
+| `_PerfObligationEventType` | | ✓ | | | | |
+| `_PerfOblgnStartDateType` | | ✓ | | | | |
+| `_PerfOblgnDeferralMethod` | | ✓ | | | | |
+| `_PerfOblgnInvcEffctType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_RAPerfOblgnCategory` | | ✓ | | | | |
+| `_PerformanceObligationRole` | | ✓ | | | | |
+| `_RAUnivRevnRecgnIntegType` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,43 +28,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BusinessPartnerIsVIP` |  | |  | `vip` |
-| `TradingPartner` |  | |  | `vbund` |
-| `FactoryCalendar` |  | |  | `calendarid` |
-| `BusinessPartnerOfficeCountry` |  | |  | `cntry_comp` |
-| `BusinessPartnerOfficeRegion` |  | |  | `regio` |
-| `BPRegisteredOfficeName` |  | |  | `comp_head` |
-| `BPBalanceSheetCurrency` |  | |  | `bal_sh_cur` |
-| `BPLastCptlIncrAmtInBalShtCrcy` |  | |  | `cap_incr_a` |
-| `BPLastCapitalIncreaseYear` |  | |  | `cap_incr_y` |
-| `BPBalanceSheetDisplayType` |  | |  | `balance_fl` |
-| `BusinessPartnerCitizenship` |  | |  | `state` |
-| `BPMaritalPropertyRegime` |  | |  | `proprty_st` |
-| `BusinessPartnerIncomeCurrency` |  | |  | `income_cur` |
-| `BPNumberOfChildren` |  | |  | `children` |
-| `BPNumberOfHouseholdMembers` |  | |  | `mem_house` |
-| `BPAnnualNetIncAmtInIncomeCrcy` |  | |  | `net_income` |
-| `BPMonthlyNetIncAmtInIncomeCrcy` |  | |  | `mo_net_inc` |
-| `BPAnnualNetIncomeYear` |  | |  | `net_inc_y` |
-| `BPMonthlyNetIncomeMonth` |  | |  | `mo_inc_m` |
-| `BPMonthlyNetIncomeYear` |  | |  | `mo_inc_y` |
-| `BPPlaceOfDeathName` |  | |  | `dying_place` |
-| `CustomerIsUnwanted` |  | |  | `unw_customer` |
-| `UndesirabilityReason` |  | |  | `unw_reason` |
-| `UndesirabilityComment` |  | |  | `unw_remark` |
-| `LastCustomerContactDate` |  | |  | `last_cust_cont` |
-| `BPGroupingCharacter` |  | |  | `group_feature` |
-| `BPLetterSalutation` |  | |  | `title_let` |
-| `BusinessPartnerTargetGroup` |  | |  | `group_d` |
-| `BusinessPartnerEmployeeGroup` |  | |  | `staff_grp` |
-| `BusinessPartnerIsEmployee` |  | |  | `staff_ref` |
-| `BPTermnBusRelationsBankDate` |  | |  | `bank_del_d` |
-| `_BusinessPartner` | | ✓ | | |
-| `_BPLetterSalutation` | | ✓ | | |
-| `_BPTradingPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BusinessPartnerIsVIP` |  | |  | `vip` |  |  |
+| `TradingPartner` |  | |  | `vbund` |  |  |
+| `FactoryCalendar` |  | |  | `calendarid` |  |  |
+| `BusinessPartnerOfficeCountry` |  | |  | `cntry_comp` |  |  |
+| `BusinessPartnerOfficeRegion` |  | |  | `regio` |  |  |
+| `BPRegisteredOfficeName` |  | |  | `comp_head` |  |  |
+| `BPBalanceSheetCurrency` |  | |  | `bal_sh_cur` |  |  |
+| `BPLastCptlIncrAmtInBalShtCrcy` |  | |  | `cap_incr_a` |  |  |
+| `BPLastCapitalIncreaseYear` |  | |  | `cap_incr_y` |  |  |
+| `BPBalanceSheetDisplayType` |  | |  | `balance_fl` |  |  |
+| `BusinessPartnerCitizenship` |  | |  | `state` |  |  |
+| `BPMaritalPropertyRegime` |  | |  | `proprty_st` |  |  |
+| `BusinessPartnerIncomeCurrency` |  | |  | `income_cur` |  |  |
+| `BPNumberOfChildren` |  | |  | `children` |  |  |
+| `BPNumberOfHouseholdMembers` |  | |  | `mem_house` |  |  |
+| `BPAnnualNetIncAmtInIncomeCrcy` |  | |  | `net_income` |  |  |
+| `BPMonthlyNetIncAmtInIncomeCrcy` |  | |  | `mo_net_inc` |  |  |
+| `BPAnnualNetIncomeYear` |  | |  | `net_inc_y` |  |  |
+| `BPMonthlyNetIncomeMonth` |  | |  | `mo_inc_m` |  |  |
+| `BPMonthlyNetIncomeYear` |  | |  | `mo_inc_y` |  |  |
+| `BPPlaceOfDeathName` |  | |  | `dying_place` |  |  |
+| `CustomerIsUnwanted` |  | |  | `unw_customer` |  |  |
+| `UndesirabilityReason` |  | |  | `unw_reason` |  |  |
+| `UndesirabilityComment` |  | |  | `unw_remark` |  |  |
+| `LastCustomerContactDate` |  | |  | `last_cust_cont` |  |  |
+| `BPGroupingCharacter` |  | |  | `group_feature` |  |  |
+| `BPLetterSalutation` |  | |  | `title_let` |  |  |
+| `BusinessPartnerTargetGroup` |  | |  | `group_d` |  |  |
+| `BusinessPartnerEmployeeGroup` |  | |  | `staff_grp` |  |  |
+| `BusinessPartnerIsEmployee` |  | |  | `staff_ref` |  |  |
+| `BPTermnBusRelationsBankDate` |  | |  | `bank_del_d` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BPLetterSalutation` | | ✓ | | | | |
+| `_BPTradingPartner` | | ✓ | | | | |
 
 ## Associations
 

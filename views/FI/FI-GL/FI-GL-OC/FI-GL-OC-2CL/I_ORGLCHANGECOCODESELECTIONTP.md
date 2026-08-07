@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrganizationalChange` | ✓ | |  |  |
-| `OrglChangeSelectionSequence` | ✓ | |  |  |
-| `OrglChangeSelectionSqncForEdit` |  | |  |  |
-| `CompanyCodeRangeSign` |  | |  |  |
-| `CompanyCodeRangeOption` |  | |  |  |
-| `CompanyCodeRangeFrom` |  | |  |  |
-| `CompanyCodeRangeTo` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_OrganizationalChange` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrganizationalChange` | ✓ | |  |  |  |  |
+| `OrglChangeSelectionSequence` | ✓ | |  |  |  |  |
+| `OrglChangeSelectionSqncForEdit` |  | |  |  |  |  |
+| `CompanyCodeRangeSign` |  | |  |  |  |  |
+| `CompanyCodeRangeOption` |  | |  |  |  |  |
+| `CompanyCodeRangeFrom` |  | |  |  |  |  |
+| `CompanyCodeRangeTo` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_OrganizationalChange` | | ✓ | | | | |
 
 ## Source Code
 

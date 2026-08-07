@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderEventUUID` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `TransportationOrderEvent` |  | |  |  |
-| `TranspOrdEventCode` |  | |  |  |
-| `TranspOrdEvtActualDateTime` |  | |  |  |
-| `TranspOrdEvtActualDateTimeZone` |  | |  |  |
-| `TranspOrdEvtEstimatedDateTime` |  | |  |  |
-| `LocationAdditionalUUID` |  | |  |  |
-| `TransportationOrderStopUUID` |  | |  |  |
-| `TransportationOrderItemUUID` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `I_FreightOrderTP` |  | |  | `FreightOrderEvent._TransportationOrder as _FreightOrder : redirected to parent I_FreightOrderTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderEventUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `TransportationOrderEvent` |  | |  |  |  |  |
+| `TranspOrdEventCode` |  | |  |  |  |  |
+| `TranspOrdEvtActualDateTime` |  | |  |  |  |  |
+| `TranspOrdEvtActualDateTimeZone` |  | |  |  |  |  |
+| `TranspOrdEvtEstimatedDateTime` |  | |  |  |  |  |
+| `LocationAdditionalUUID` |  | |  |  |  |  |
+| `TransportationOrderStopUUID` |  | |  |  |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `I_FreightOrderTP` |  | |  | `FreightOrderEvent._TransportationOrder as _FreightOrder : redirected to parent I_FreightOrderTP` |  |  |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CurrencyRole` | ✓ | |  | `curtype` |
-| `LegalCurrencyRole` |  | |  | `legal_curtype` |
-| `AccountingValuationView` |  | |  | `valutyp` |
-| `AccountingValuationSubview` |  | |  | `valusubtyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CurrencyRole` | ✓ | |  | `curtype` |  |  |
+| `LegalCurrencyRole` |  | |  | `legal_curtype` |  |  |
+| `AccountingValuationView` |  | |  | `valutyp` |  |  |
+| `AccountingValuationSubview` |  | |  | `valusubtyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

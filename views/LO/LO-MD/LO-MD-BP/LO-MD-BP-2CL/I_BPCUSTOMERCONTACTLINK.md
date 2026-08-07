@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |
-| `PersonUUID` | ✓ | |  | `person_guid` |
-| `CustomerContact` | ✓ | |  | `customer_cont` |
-| `CreatedByUser` |  | |  | `cruser` |
-| `CreationDate` |  | |  | `crdat` |
-| `CreationTime` |  | |  | `crtim` |
-| `_CustomerToBusinessPartner` | | ✓ | | |
-| `_BusinessPartnerCompany` | | ✓ | | |
-| `_BusinessPartnerPerson` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |  |  |
+| `PersonUUID` | ✓ | |  | `person_guid` |  |  |
+| `CustomerContact` | ✓ | |  | `customer_cont` |  |  |
+| `CreatedByUser` |  | |  | `cruser` |  |  |
+| `CreationDate` |  | |  | `crdat` |  |  |
+| `CreationTime` |  | |  | `crtim` |  |  |
+| `_CustomerToBusinessPartner` | | ✓ | | | | |
+| `_BusinessPartnerCompany` | | ✓ | | | | |
+| `_BusinessPartnerPerson` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
 
 ## Associations
 

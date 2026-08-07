@@ -29,106 +29,106 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnTaskLogUUID` | ✓ | |  | `cnsldtnlognumber` |
-| `CnsldtnTaskLogItemUUID` | ✓ | |  | `cnsldtnlogitemnumber` |
-| `CnsldtnTaskLogItemType` |  | |  | `cnsldtnlineitemtype` |
-| `ConsolidationGroup` |  | |  | `cast(cnsldtngroup as fincs_md_congr preserving type)` |
-| `ConsolidationUnit` |  | |  | `cast(cnsldtnunit as fincs_consolidationunit preserving type)` |
-| `CnsldtnFinancialStatementItem` |  | |  | `cast(cnsldtnfinstmntitm as fincs_md_finstatementitem preserving type)` |
-| `SubItemCategory` |  | |  | `cast(cnsldtnfinstmntsubitmcat as fincs_subitemcategory preserving type)` |
-| `SubItem` |  | |  | `cast(cnsldtnfinstmntsubitm as fincs_subitem preserving type)` |
-| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  | `cast(cnsldtnlocalcurrency as fincs_lcurr_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  | `cast(amountinlocalcrcy as fincs_lc_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  | `cast(cnsldtngroupcurrency as fincs_gcurr_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  | `cast(amountingroupcrcy as fincs_gc_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  | `cast(transactioncurrency as fincs_tcurr_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  | `cast(amountintransactioncrcy as fincs_tc_doc preserving type)` |
-| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  | `cast(baseunit as fincs_base_unit_doc preserving type)` |
-| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  | `cast(quantityinbaseunit as fincs_quan_doc preserving type)` |
-| `CnsldtnTriggeringAmtLoclCrcy` |  | |  | `cast(cnsldtnlocalcurrency as fincs_lcurr_tri preserving type)` |
-| `CnsldtnTriggeringAmtInLoclCrcy` |  | |  | `cast(amountinlocalcrcy as fincs_lc_tri preserving type)` |
-| `CnsldtnTriggeringAmtGrpCrcy` |  | |  | `cast(cnsldtngroupcurrency as fincs_gcurr_tri preserving type)` |
-| `CnsldtnTriggeringAmtInGrpCrcy` |  | |  | `cast(amountingroupcrcy as fincs_gc_tri preserving type)` |
-| `CnsldtnTriggeringAmtTransCrcy` |  | |  | `cast(transactioncurrency as fincs_tcurr_tri preserving type)` |
-| `CnsldtnTriggeringAmtInTC` |  | |  | `cast(amountintransactioncrcy as fincs_tc_tri preserving type)` |
-| `CnsldtnTriggeringQtyBaseUnit` |  | |  | `cast(baseunit as fincs_base_unit_tri preserving type)` |
-| `CnsldtnTriggeringQtyInBsUnt` |  | |  | `cast(quantityinbaseunit as fincs_quan_tri preserving type)` |
-| `SequenceNumber` |  | |  | `cast(seqno as fincs_seqno)` |
-| `ConsolidationMethod` |  | |  | `cast(cnsldtnmethod as fincs_method preserving type)` |
-| `CnsldtnRclassfctnRecdType` |  | |  | `cast(recordindicator as fincs_stindicator preserving type)` |
-| `CnsldtnRefExchangeRateType` |  | |  | `cast(reexchangerateindicator as fincs_rerin preserving type)` |
-| `CnsldtnRefExchangeRateValue` |  | |  | `cast(reexchagerate as fincs_rrate preserving type)` |
-| `CnsldtnExchangeRateType` |  | |  | `cast(exchangerateindicator as fincs_exrind preserving type)` |
-| `CnsldtnExchangeRateValue` |  | |  | `cast(exchangerate as fincs_erate preserving type)` |
-| `CnsldtnCrcyTranslationKey` |  | |  | `cast(currencytranskey as fincs_ctkey preserving type)` |
-| `CnsldtnCrcyTrnsltnDiffFSItem` |  | |  | `cast(cnsldtnfinstmntitmr as fincs_md_finstatementitem preserving type)` |
-| `CnsldtnCrcyTrnsltnDiffSubitem` |  | |  | `cast(cnsldtnfinstmntsubitmr as fincs_subitem preserving type)` |
-| `CalculatedDiffAmount` |  | |  | `cast(diffamount as fincs_diffamount preserving type)` |
-| `CalculatedRefAmount` |  | |  | `cast(reffamount as fincs_refamount preserving type)` |
-| `ConsolidationSelection` |  | |  | `cast(selection_id as fincs_sel_id preserving type)` |
-| `FinancialServicesBranch` |  | |  | `branch_id` |
-| `GHGScope2CalculationMethod` |  | |  | `cast(ghgscp2calcmeth as fincs_ghgscp2calculationmethod preserving type)` |
-| `CashLedgerAccount` |  | |  | `re_account` |
-| `CnsldtnCashLedgerChartOfAccts` |  | |  | `cast(re_ktopl as fincs_re_ktopl preserving type)` |
-| `GHGScope2ContractualInstrument` |  | |  | `cast(ghgscp2contrinstr as fincs_ghgscp2cntrctlinstrument preserving type)` |
-| `FinancialDataSource` |  | |  | `datasource_id` |
-| `FinancialManagementArea` |  | |  | `fikrs` |
-| `Fund` |  | |  | `rfund` |
-| `GHGCategory` |  | |  | `cast(ghgcategory as fincs_ghgcategory preserving type)` |
-| `GHGScope` |  | |  | `cast(ghgscope as fincs_ghgscope preserving type)` |
-| `GrantID` |  | |  | `rgrant_nbr` |
-| `SustainabilityModeOfTransport` |  | |  | `cast(susmodeoftransport as fincs_sustmodeoftransport preserving type)` |
-| `FinancialServicesProductGroup` |  | |  | `fs_product_group` |
-| `ConsolidationDocumentNumber` |  | |  | `cast(cnsldtndocumentnumber as fincs_docnr preserving type)` |
-| `ConsolidationPostingItem` |  | |  | `cnsldtnpostingitem` |
-| `CurrencyConversionsDiffType` |  | |  | `cast(cnsldtncrcycnvrsndifftype as fincs_currencycnvrsnsdifftype preserving type)` |
-| `ConsolidationApportionment` |  | |  | `cast(cnsldtnapportionment as fincs_apportionment preserving type)` |
-| `ConsolidationPostgItemAutoFlag` |  | |  | `cast(cnsldtnisautoposting as fincs_autom preserving type)` |
-| `PartnerConsolidationUnit` |  | |  | `cast(cnsldtnpartnerunit as fincs_consolidationunit preserving type)` |
-| `ConsolidationCurrencySetIdn` |  | |  | `cast(cnsldtnsetidentification as fincs_selid preserving type)` |
-| `CnsldtnPercent` |  | |  | `cast(percentage as fincs_taxrate preserving type)` |
-| `PartnerCostCenter` |  | |  | `cast(partnercostcenter as fincs_skost preserving type)` |
-| `FinancialTransactionType` |  | |  | `cast(financialtransactiontype as fincs_financialtransactiontype preserving type)` |
-| `SoldMaterial` |  | |  | `soldmaterial` |
-| `CustomerGroup` |  | |  | `cast(customergroup as fincs_customergroup preserving type)` |
-| `CustomerSupplierCountry` |  | |  | `cast(customersuppliercountry as fincs_country preserving type)` |
-| `SoldProductGroup` |  | |  | `soldproductgroup` |
-| `AssignmentReference` |  | |  | `assignmentreference` |
-| `CnsldtnTskLgNode` |  | |  | `node` |
-| `CnsldtnTskLgParNode` |  | |  | `parentnode` |
-| `ChartOfAccounts` |  | |  | `chartofaccounts` |
-| `_CnsldtnGroup` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
-| `_CnsldtnSubitemCategory` | | ✓ | | |
-| `_CnsldtnSubItem` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | |
-| `_CnsldtnTriggeringAmtLoclCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringAmtGrpCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringAmtTransCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringQtyBaseUnit` | | ✓ | | |
-| `_CnsldtnMethod` | | ✓ | | |
-| `_CnsldtnItemDiff` | | ✓ | | |
-| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | |
-| `_CnsldtnCashLedgerAccount` | | ✓ | | |
-| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | |
-| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | |
-| `_CnsldtnGHGCategory` | | ✓ | | |
-| `_CnsldtnGHGScope` | | ✓ | | |
-| `_CnsldtnSustModeOfTransport` | | ✓ | | |
-| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | |
-| `_CnsldtnApportionment` | | ✓ | | |
-| `_CnsldtnUnitPartner` | | ✓ | | |
-| `_CnsldtnFinTransType` | | ✓ | | |
-| `_CnsldtnMaterial` | | ✓ | | |
-| `_CnsldtnCustomerGroup` | | ✓ | | |
-| `_CnsldtnCountry` | | ✓ | | |
-| `_CnsldtnProductGroup` | | ✓ | | |
-| `_CnsldtnGLChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  | `cnsldtnlognumber` |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  | `cnsldtnlogitemnumber` |  |  |
+| `CnsldtnTaskLogItemType` |  | |  | `cnsldtnlineitemtype` |  |  |
+| `ConsolidationGroup` |  | |  | `cast(cnsldtngroup as fincs_md_congr preserving type)` |  |  |
+| `ConsolidationUnit` |  | |  | `cast(cnsldtnunit as fincs_consolidationunit preserving type)` |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  | `cast(cnsldtnfinstmntitm as fincs_md_finstatementitem preserving type)` |  |  |
+| `SubItemCategory` |  | |  | `cast(cnsldtnfinstmntsubitmcat as fincs_subitemcategory preserving type)` |  |  |
+| `SubItem` |  | |  | `cast(cnsldtnfinstmntsubitm as fincs_subitem preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  | `cast(cnsldtnlocalcurrency as fincs_lcurr_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  | `cast(amountinlocalcrcy as fincs_lc_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  | `cast(cnsldtngroupcurrency as fincs_gcurr_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  | `cast(amountingroupcrcy as fincs_gc_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  | `cast(transactioncurrency as fincs_tcurr_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  | `cast(amountintransactioncrcy as fincs_tc_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  | `cast(baseunit as fincs_base_unit_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  | `cast(quantityinbaseunit as fincs_quan_doc preserving type)` |  |  |
+| `CnsldtnTriggeringAmtLoclCrcy` |  | |  | `cast(cnsldtnlocalcurrency as fincs_lcurr_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtInLoclCrcy` |  | |  | `cast(amountinlocalcrcy as fincs_lc_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtGrpCrcy` |  | |  | `cast(cnsldtngroupcurrency as fincs_gcurr_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtInGrpCrcy` |  | |  | `cast(amountingroupcrcy as fincs_gc_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtTransCrcy` |  | |  | `cast(transactioncurrency as fincs_tcurr_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtInTC` |  | |  | `cast(amountintransactioncrcy as fincs_tc_tri preserving type)` |  |  |
+| `CnsldtnTriggeringQtyBaseUnit` |  | |  | `cast(baseunit as fincs_base_unit_tri preserving type)` |  |  |
+| `CnsldtnTriggeringQtyInBsUnt` |  | |  | `cast(quantityinbaseunit as fincs_quan_tri preserving type)` |  |  |
+| `SequenceNumber` |  | |  | `cast(seqno as fincs_seqno)` |  |  |
+| `ConsolidationMethod` |  | |  | `cast(cnsldtnmethod as fincs_method preserving type)` |  |  |
+| `CnsldtnRclassfctnRecdType` |  | |  | `cast(recordindicator as fincs_stindicator preserving type)` |  |  |
+| `CnsldtnRefExchangeRateType` |  | |  | `cast(reexchangerateindicator as fincs_rerin preserving type)` |  |  |
+| `CnsldtnRefExchangeRateValue` |  | |  | `cast(reexchagerate as fincs_rrate preserving type)` |  |  |
+| `CnsldtnExchangeRateType` |  | |  | `cast(exchangerateindicator as fincs_exrind preserving type)` |  |  |
+| `CnsldtnExchangeRateValue` |  | |  | `cast(exchangerate as fincs_erate preserving type)` |  |  |
+| `CnsldtnCrcyTranslationKey` |  | |  | `cast(currencytranskey as fincs_ctkey preserving type)` |  |  |
+| `CnsldtnCrcyTrnsltnDiffFSItem` |  | |  | `cast(cnsldtnfinstmntitmr as fincs_md_finstatementitem preserving type)` |  |  |
+| `CnsldtnCrcyTrnsltnDiffSubitem` |  | |  | `cast(cnsldtnfinstmntsubitmr as fincs_subitem preserving type)` |  |  |
+| `CalculatedDiffAmount` |  | |  | `cast(diffamount as fincs_diffamount preserving type)` |  |  |
+| `CalculatedRefAmount` |  | |  | `cast(reffamount as fincs_refamount preserving type)` |  |  |
+| `ConsolidationSelection` |  | |  | `cast(selection_id as fincs_sel_id preserving type)` |  |  |
+| `FinancialServicesBranch` |  | |  | `branch_id` |  |  |
+| `GHGScope2CalculationMethod` |  | |  | `cast(ghgscp2calcmeth as fincs_ghgscp2calculationmethod preserving type)` |  |  |
+| `CashLedgerAccount` |  | |  | `re_account` |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  | `cast(re_ktopl as fincs_re_ktopl preserving type)` |  |  |
+| `GHGScope2ContractualInstrument` |  | |  | `cast(ghgscp2contrinstr as fincs_ghgscp2cntrctlinstrument preserving type)` |  |  |
+| `FinancialDataSource` |  | |  | `datasource_id` |  |  |
+| `FinancialManagementArea` |  | |  | `fikrs` |  |  |
+| `Fund` |  | |  | `rfund` |  |  |
+| `GHGCategory` |  | |  | `cast(ghgcategory as fincs_ghgcategory preserving type)` |  |  |
+| `GHGScope` |  | |  | `cast(ghgscope as fincs_ghgscope preserving type)` |  |  |
+| `GrantID` |  | |  | `rgrant_nbr` |  |  |
+| `SustainabilityModeOfTransport` |  | |  | `cast(susmodeoftransport as fincs_sustmodeoftransport preserving type)` |  |  |
+| `FinancialServicesProductGroup` |  | |  | `fs_product_group` |  |  |
+| `ConsolidationDocumentNumber` |  | |  | `cast(cnsldtndocumentnumber as fincs_docnr preserving type)` |  |  |
+| `ConsolidationPostingItem` |  | |  | `cnsldtnpostingitem` |  |  |
+| `CurrencyConversionsDiffType` |  | |  | `cast(cnsldtncrcycnvrsndifftype as fincs_currencycnvrsnsdifftype preserving type)` |  |  |
+| `ConsolidationApportionment` |  | |  | `cast(cnsldtnapportionment as fincs_apportionment preserving type)` |  |  |
+| `ConsolidationPostgItemAutoFlag` |  | |  | `cast(cnsldtnisautoposting as fincs_autom preserving type)` |  |  |
+| `PartnerConsolidationUnit` |  | |  | `cast(cnsldtnpartnerunit as fincs_consolidationunit preserving type)` |  |  |
+| `ConsolidationCurrencySetIdn` |  | |  | `cast(cnsldtnsetidentification as fincs_selid preserving type)` |  |  |
+| `CnsldtnPercent` |  | |  | `cast(percentage as fincs_taxrate preserving type)` |  |  |
+| `PartnerCostCenter` |  | |  | `cast(partnercostcenter as fincs_skost preserving type)` |  |  |
+| `FinancialTransactionType` |  | |  | `cast(financialtransactiontype as fincs_financialtransactiontype preserving type)` |  |  |
+| `SoldMaterial` |  | |  | `soldmaterial` |  |  |
+| `CustomerGroup` |  | |  | `cast(customergroup as fincs_customergroup preserving type)` |  |  |
+| `CustomerSupplierCountry` |  | |  | `cast(customersuppliercountry as fincs_country preserving type)` |  |  |
+| `SoldProductGroup` |  | |  | `soldproductgroup` |  |  |
+| `AssignmentReference` |  | |  | `assignmentreference` |  |  |
+| `CnsldtnTskLgNode` |  | |  | `node` |  |  |
+| `CnsldtnTskLgParNode` |  | |  | `parentnode` |  |  |
+| `ChartOfAccounts` |  | |  | `chartofaccounts` |  |  |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | | | |
+| `_CnsldtnSubItem` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtLoclCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtGrpCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtTransCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringQtyBaseUnit` | | ✓ | | | | |
+| `_CnsldtnMethod` | | ✓ | | | | |
+| `_CnsldtnItemDiff` | | ✓ | | | | |
+| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | | | |
+| `_CnsldtnCashLedgerAccount` | | ✓ | | | | |
+| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | | | |
+| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | | | |
+| `_CnsldtnGHGCategory` | | ✓ | | | | |
+| `_CnsldtnGHGScope` | | ✓ | | | | |
+| `_CnsldtnSustModeOfTransport` | | ✓ | | | | |
+| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | | | |
+| `_CnsldtnApportionment` | | ✓ | | | | |
+| `_CnsldtnUnitPartner` | | ✓ | | | | |
+| `_CnsldtnFinTransType` | | ✓ | | | | |
+| `_CnsldtnMaterial` | | ✓ | | | | |
+| `_CnsldtnCustomerGroup` | | ✓ | | | | |
+| `_CnsldtnCountry` | | ✓ | | | | |
+| `_CnsldtnProductGroup` | | ✓ | | | | |
+| `_CnsldtnGLChartOfAccounts` | | ✓ | | | | |
 
 ## Associations
 

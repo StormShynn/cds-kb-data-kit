@@ -28,47 +28,47 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateUsableObjectUUID` | ✓ | |  | `REGenericRentalObjectUUID` |
-| `REGenericRentalObjectType` |  | |  |  |
-| `InternalRealEstateNumber` |  | |  |  |
-| `REStatusObject` |  | |  |  |
-| `RealEstateUsableObjectOID` |  | |  | `REGenericRentalObjectOID` |
-| `REGnrcRntlObjectAlternativeID` |  | |  |  |
-| `RealEstateUsableObjectNumber` |  | |  | `cast( REGenericRentalObjectNumber as regogonrusable preserving type )` |
-| `REUsableObjectName` |  | |  | `cast( REGenericRentalObjectName as regovdmxusableobject preserving type )` |
-| `REIdentificationKey` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `REAuthorizationGroup` |  | |  |  |
-| `REGnrcRentalObjUsageCategory` |  | |  |  |
-| `REGenericRentalObjectUsageType` |  | |  | `cast( REGenericRentalObjectUsageType as regovdmusableobjusagetype preserving type )` |
-| `REGenericRentalObjParentUUID` |  | |  |  |
-| `REGnrcRentalObjPortfolioID` |  | |  |  |
-| `REGnrcRentalObjOwnershipID` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `_REUsblObjToRntblObjAssgmt` | | ✓ | | |
-| `_RERntblObjToUsblObjAssgmt` | | ✓ | | |
-| `_REUsableObjectMeasurement` | | ✓ | | |
-| `_REUsblObjLdngAcctAssgmtObj` | | ✓ | | |
-| `_REUsblObjAddlAcctAssgmtObj` | | ✓ | | |
-| `_REUsblObjArchtrUsage` | | ✓ | | |
-| `_REUsableObjectStatusObject` | | ✓ | | |
-| `_REKeyAssgmt` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_REAuthorizationGroup` | | ✓ | | |
-| `_REGnrcRentalObjUsageCategory` | | ✓ | | |
-| `_REGnrcRentalObjUsageType` | | ✓ | | |
-| `_REGnrcRentalObjOwnership` | | ✓ | | |
-| `_REGnrcRentalObjPortfolio` | | ✓ | | |
-| `_REGenericRentalObjectType` | | ✓ | | |
-| `_REArchitectureObject` | | ✓ | | |
-| `_StatusObject` | | ✓ | | |
-| `_StatusObjectStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateUsableObjectUUID` | ✓ | |  | `REGenericRentalObjectUUID` |  |  |
+| `REGenericRentalObjectType` |  | |  |  |  |  |
+| `InternalRealEstateNumber` |  | |  |  |  |  |
+| `REStatusObject` |  | |  |  |  |  |
+| `RealEstateUsableObjectOID` |  | |  | `REGenericRentalObjectOID` |  |  |
+| `REGnrcRntlObjectAlternativeID` |  | |  |  |  |  |
+| `RealEstateUsableObjectNumber` |  | |  | `cast( REGenericRentalObjectNumber as regogonrusable preserving type )` |  |  |
+| `REUsableObjectName` |  | |  | `cast( REGenericRentalObjectName as regovdmxusableobject preserving type )` |  |  |
+| `REIdentificationKey` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `REAuthorizationGroup` |  | |  |  |  |  |
+| `REGnrcRentalObjUsageCategory` |  | |  |  |  |  |
+| `REGenericRentalObjectUsageType` |  | |  | `cast( REGenericRentalObjectUsageType as regovdmusableobjusagetype preserving type )` |  |  |
+| `REGenericRentalObjParentUUID` |  | |  |  |  |  |
+| `REGnrcRentalObjPortfolioID` |  | |  |  |  |  |
+| `REGnrcRentalObjOwnershipID` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `_REUsblObjToRntblObjAssgmt` | | ✓ | | | | |
+| `_RERntblObjToUsblObjAssgmt` | | ✓ | | | | |
+| `_REUsableObjectMeasurement` | | ✓ | | | | |
+| `_REUsblObjLdngAcctAssgmtObj` | | ✓ | | | | |
+| `_REUsblObjAddlAcctAssgmtObj` | | ✓ | | | | |
+| `_REUsblObjArchtrUsage` | | ✓ | | | | |
+| `_REUsableObjectStatusObject` | | ✓ | | | | |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_REAuthorizationGroup` | | ✓ | | | | |
+| `_REGnrcRentalObjUsageCategory` | | ✓ | | | | |
+| `_REGnrcRentalObjUsageType` | | ✓ | | | | |
+| `_REGnrcRentalObjOwnership` | | ✓ | | | | |
+| `_REGnrcRentalObjPortfolio` | | ✓ | | | | |
+| `_REGenericRentalObjectType` | | ✓ | | | | |
+| `_REArchitectureObject` | | ✓ | | | | |
+| `_StatusObject` | | ✓ | | | | |
+| `_StatusObjectStatus` | | ✓ | | | | |
 
 ## Associations
 

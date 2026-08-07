@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TemperatureConditionInd` | ✓ | |  | `tempb` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TemperatureConditionInd` | ✓ | |  | `tempb` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

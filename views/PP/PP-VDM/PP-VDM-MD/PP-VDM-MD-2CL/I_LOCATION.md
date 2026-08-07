@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Location` | ✓ | |  | `stand` |
-| `Plant` | ✓ | |  | `werks` |
-| `AddressID` |  | |  | `addrnum` |
-| `LocationName` |  | |  | `cast(loc.ktext as locationname preserving type)` |
-| `_Plant` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_Address_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Location` | ✓ | |  | `stand` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `AddressID` |  | |  | `addrnum` |  |  |
+| `LocationName` |  | |  | `cast(loc.ktext as locationname preserving type)` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_Address_2` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocPartyIdType` | ✓ | |  | `party_id_type` |
-| `BPIdentificationType` |  | |  | `bu_id_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocPartyIdType` | ✓ | |  | `party_id_type` |  |  |
+| `BPIdentificationType` |  | |  | `bu_id_type` |  |  |
 
 ## Source Code
 

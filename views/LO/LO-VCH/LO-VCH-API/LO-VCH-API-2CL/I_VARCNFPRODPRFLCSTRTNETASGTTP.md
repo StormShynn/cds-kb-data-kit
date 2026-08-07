@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `VarConfigurationProfileName` | ✓ | |  |  |
-| `VarCnfConstraintNetName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ObjDpnAssignmentNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_Profile` | | ✓ | | |
-| `_HistoricalProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `VarConfigurationProfileName` | ✓ | |  |  |  |  |
+| `VarCnfConstraintNetName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ObjDpnAssignmentNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Profile` | | ✓ | | | | |
+| `_HistoricalProfile` | | ✓ | | | | |
 
 ## Source Code
 

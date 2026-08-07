@@ -28,39 +28,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CalendarDate` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  | `cast( I_LedgerCompanyCodeCrcyRoles.CompanyCode as fis_bukrs preserving type )` |
-| `Ledger` | ✓ | |  | `cast( I_LedgerCompanyCodeCrcyRoles.Ledger as fis_rldnr preserving type )` |
-| `FiscalYearVariant` |  | |  |  |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
-| `FiscalYear` |  | |  |  |
-| `FiscalYearStartDate` |  | |  |  |
-| `FiscalYearEndDate` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalPeriodStartDate` |  | |  |  |
-| `FiscalPeriodEndDate` |  | |  |  |
-| `FiscalQuarter` |  | |  |  |
-| `FiscalQuarterStartDate` |  | |  |  |
-| `FiscalQuarterEndDate` |  | |  |  |
-| `FiscalWeek` |  | |  |  |
-| `FiscalWeekStartDate` |  | |  |  |
-| `FiscalWeekEndDate` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `FiscalYearQuarter` |  | |  |  |
-| `FiscalYearWeek` |  | |  |  |
-| `FiscalYearConsecutiveNumber` |  | |  |  |
-| `FiscalPeriodConsecutiveNumber` |  | |  |  |
-| `FiscalQuarterConsecutiveNumber` |  | |  |  |
-| `FiscalWeekConsecutiveNumber` |  | |  |  |
-| `_ControllingAreaText` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalendarDate` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  | `cast( I_LedgerCompanyCodeCrcyRoles.CompanyCode as fis_bukrs preserving type )` |  |  |
+| `Ledger` | ✓ | |  | `cast( I_LedgerCompanyCodeCrcyRoles.Ledger as fis_rldnr preserving type )` |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalYearStartDate` |  | |  |  |  |  |
+| `FiscalYearEndDate` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalPeriodStartDate` |  | |  |  |  |  |
+| `FiscalPeriodEndDate` |  | |  |  |  |  |
+| `FiscalQuarter` |  | |  |  |  |  |
+| `FiscalQuarterStartDate` |  | |  |  |  |  |
+| `FiscalQuarterEndDate` |  | |  |  |  |  |
+| `FiscalWeek` |  | |  |  |  |  |
+| `FiscalWeekStartDate` |  | |  |  |  |  |
+| `FiscalWeekEndDate` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `FiscalYearQuarter` |  | |  |  |  |  |
+| `FiscalYearWeek` |  | |  |  |  |  |
+| `FiscalYearConsecutiveNumber` |  | |  |  |  |  |
+| `FiscalPeriodConsecutiveNumber` |  | |  |  |  |  |
+| `FiscalQuarterConsecutiveNumber` |  | |  |  |  |  |
+| `FiscalWeekConsecutiveNumber` |  | |  |  |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
 
 ## Associations
 

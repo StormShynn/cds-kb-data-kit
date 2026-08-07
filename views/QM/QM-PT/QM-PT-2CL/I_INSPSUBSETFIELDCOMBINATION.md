@@ -27,24 +27,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSubsetFieldCombination` | ✓ | |  | `slwbez` |
-| `InspectionSubsetType` |  | |  | `ppkttyp` |
-| `InspSbstFieldCombnIsLastValid` |  | |  | `last_valid` |
-| `SamplingProcedureInspSubset` |  | |  | `cast( case tq79.ppkttyp when '1' then '1' when '2' then '1' when '3' then '2' else 'X' end as vdm_qkzrast preserving type )` |
-| `InspSbstLongTxtFldProperty` |  | |  | `userc1akt` |
-| `InspSbstShrtTxtFldProperty` |  | |  | `userc2akt` |
-| `InspSbstLongNmbrFldProperty` |  | |  | `usern1akt` |
-| `InspSbstShrtNmbrFldProperty` |  | |  | `usern2akt` |
-| `InspSbstDateFldProperty` |  | |  | `userd1akt` |
-| `InspSbstTimeFldProperty` |  | |  | `usert1akt` |
-| `SelectedCodeSet` |  | |  | `ppvemenge` |
-| `SelectedCodeSetPlant` |  | |  | `ppvewerk` |
-| `_InspectionSubsetType` | | ✓ | | |
-| `_SelectedCodeSetPlant` | | ✓ | | |
-| `_UsageDcsnSelectedCodeSet` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSubsetFieldCombination` | ✓ | |  | `slwbez` |  |  |
+| `InspectionSubsetType` |  | |  | `ppkttyp` |  |  |
+| `InspSbstFieldCombnIsLastValid` |  | |  | `last_valid` |  |  |
+| `SamplingProcedureInspSubset` |  | |  | `cast( case tq79.ppkttyp when '1' then '1' when '2' then '1' when '3' then '2' else 'X' end as vdm_qkzrast preserving type )` |  |  |
+| `InspSbstLongTxtFldProperty` |  | |  | `userc1akt` |  |  |
+| `InspSbstShrtTxtFldProperty` |  | |  | `userc2akt` |  |  |
+| `InspSbstLongNmbrFldProperty` |  | |  | `usern1akt` |  |  |
+| `InspSbstShrtNmbrFldProperty` |  | |  | `usern2akt` |  |  |
+| `InspSbstDateFldProperty` |  | |  | `userd1akt` |  |  |
+| `InspSbstTimeFldProperty` |  | |  | `usert1akt` |  |  |
+| `SelectedCodeSet` |  | |  | `ppvemenge` |  |  |
+| `SelectedCodeSetPlant` |  | |  | `ppvewerk` |  |  |
+| `_InspectionSubsetType` | | ✓ | | | | |
+| `_SelectedCodeSetPlant` | | ✓ | | | | |
+| `_UsageDcsnSelectedCodeSet` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

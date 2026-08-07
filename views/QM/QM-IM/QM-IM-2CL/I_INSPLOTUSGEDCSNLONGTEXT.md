@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `InspLotUsageDecisionLongText` |  | |  | `InspectionLotLongText` |
-| `LongTextCreatedByUser` |  | |  |  |
-| `LongTextCreatedAt` |  | |  |  |
-| `LongTextLastChangedByUser` |  | |  |  |
-| `LongTextLastChangedAt` |  | |  |  |
-| `_InspectionLot` | | ✓ | | |
-| `_InspLotUsageDecision` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `InspLotUsageDecisionLongText` |  | |  | `InspectionLotLongText` |  |  |
+| `LongTextCreatedByUser` |  | |  |  |  |  |
+| `LongTextCreatedAt` |  | |  |  |  |  |
+| `LongTextLastChangedByUser` |  | |  |  |  |  |
+| `LongTextLastChangedAt` |  | |  |  |  |  |
+| `_InspectionLot` | | ✓ | | | | |
+| `_InspLotUsageDecision` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

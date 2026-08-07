@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `CreditSegment` | ✓ | |  |  |
-| `CrdtAcctInformationCategory` | ✓ | |  |  |
-| `CrdtAcctInformationType` | ✓ | |  |  |
-| `AdditionalCreditDocSequence` | ✓ | |  | `cast ( SequenceNumber as bp_counter preserving type )` |
-| `ExceptionIsCreditCheckRelevant` |  | |  |  |
-| `AddlCreditDocAmtInTransacCrcy` |  | |  | `} AddlCreditDocAmtInTransacCrcy` |
-| `TransactionCurrency` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `AdditionalCreditDocComment` |  | |  |  |
-| `_CrdtMBusinessPartnerTP` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `CreditSegment` | ✓ | |  |  |  |  |
+| `CrdtAcctInformationCategory` | ✓ | |  |  |  |  |
+| `CrdtAcctInformationType` | ✓ | |  |  |  |  |
+| `AdditionalCreditDocSequence` | ✓ | |  | `cast ( SequenceNumber as bp_counter preserving type )` |  |  |
+| `ExceptionIsCreditCheckRelevant` |  | |  |  |  |  |
+| `AddlCreditDocAmtInTransacCrcy` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `AdditionalCreditDocComment` |  | |  |  |  |  |
+| `_CrdtMBusinessPartnerTP` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
 

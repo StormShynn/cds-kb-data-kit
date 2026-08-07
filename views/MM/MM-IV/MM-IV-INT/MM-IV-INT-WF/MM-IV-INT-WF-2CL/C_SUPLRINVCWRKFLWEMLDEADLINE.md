@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | | `_WorkflowDeadline` | `WorkflowTaskInternalID` |
-| `SAPObjectNodeRepresentation` |  | | `_WorkflowDeadline` | `SAPObjectNodeRepresentation` |
-| `SuplrInvcWrkflwTaskDesc` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTaskDesc` |
-| `SuplrInvcWrkflwTaskType` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTaskType` |
-| `SuplrInvcWrkflwTskTypeDesc` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTskTypeDesc` |
-| `SuplrInvcWrkflwTaskStatus` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTaskStatus` |
-| `SuplrInvcWrkflwTskStatusDesc` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTskStatusDesc` |
-| `WorkflowTaskCreatedByUser` |  | | `_WorkflowDeadline` | `WorkflowTaskCreatedByUser` |
-| `SuplrInvcWrkflwTskCrtnDateTime` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTskCrtnDateTime` |
-| `WorkflowTaskCurrentUser` |  | | `_WorkflowDeadline` | `WorkflowTaskCurrentUser` |
-| `FullName` |  | | `_WorkflowDeadline` | `FullName` |
-| `WorkflowTaskDefinition` |  | | `_WorkflowDeadline` | `WorkflowTaskDefinition` |
-| `WorkflowTaskDueUTCDateTime` |  | | `_WorkflowDeadline` | `WorkflowTaskDueUTCDateTime` |
-| `SupplierInvoice` |  | | `_WorkflowDeadline` | `SupplierInvoice` |
-| `FiscalYear` |  | | `_WorkflowDeadline` | `FiscalYear` |
-| `CompanyCode` |  | | `_WorkflowDeadline` | `CompanyCode` |
-| `CompanyCodeName` |  | | `_WorkflowDeadline` | `CompanyCodeName` |
-| `InvoicingParty` |  | | `_WorkflowDeadline` | `InvoicingParty` |
-| `SupplierName` |  | | `_WorkflowDeadline` | `SupplierName` |
-| `BPSupplierName` |  | | `_WorkflowDeadline` | `BPSupplierName` |
-| `InvoiceGrossAmount` |  | | `_WorkflowDeadline` | `InvoiceGrossAmount` |
-| `DocumentCurrency` |  | | `_WorkflowDeadline` | `DocumentCurrency` |
-| `WorkflowTaskURL` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_WorkflowDeadline` | `WorkflowTaskInternalID` |  |  |
+| `SAPObjectNodeRepresentation` |  | | `_WorkflowDeadline` | `SAPObjectNodeRepresentation` |  |  |
+| `SuplrInvcWrkflwTaskDesc` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTaskDesc` |  |  |
+| `SuplrInvcWrkflwTaskType` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTaskType` |  |  |
+| `SuplrInvcWrkflwTskTypeDesc` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTskTypeDesc` |  |  |
+| `SuplrInvcWrkflwTaskStatus` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTaskStatus` |  |  |
+| `SuplrInvcWrkflwTskStatusDesc` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTskStatusDesc` |  |  |
+| `WorkflowTaskCreatedByUser` |  | | `_WorkflowDeadline` | `WorkflowTaskCreatedByUser` |  |  |
+| `SuplrInvcWrkflwTskCrtnDateTime` |  | | `_WorkflowDeadline` | `SuplrInvcWrkflwTskCrtnDateTime` |  |  |
+| `WorkflowTaskCurrentUser` |  | | `_WorkflowDeadline` | `WorkflowTaskCurrentUser` |  |  |
+| `FullName` |  | | `_WorkflowDeadline` | `FullName` |  |  |
+| `WorkflowTaskDefinition` |  | | `_WorkflowDeadline` | `WorkflowTaskDefinition` |  |  |
+| `WorkflowTaskDueUTCDateTime` |  | | `_WorkflowDeadline` | `WorkflowTaskDueUTCDateTime` |  |  |
+| `SupplierInvoice` |  | | `_WorkflowDeadline` | `SupplierInvoice` |  |  |
+| `FiscalYear` |  | | `_WorkflowDeadline` | `FiscalYear` |  |  |
+| `CompanyCode` |  | | `_WorkflowDeadline` | `CompanyCode` |  |  |
+| `CompanyCodeName` |  | | `_WorkflowDeadline` | `CompanyCodeName` |  |  |
+| `InvoicingParty` |  | | `_WorkflowDeadline` | `InvoicingParty` |  |  |
+| `SupplierName` |  | | `_WorkflowDeadline` | `SupplierName` |  |  |
+| `BPSupplierName` |  | | `_WorkflowDeadline` | `BPSupplierName` |  |  |
+| `InvoiceGrossAmount` |  | | `_WorkflowDeadline` | `InvoiceGrossAmount` |  |  |
+| `DocumentCurrency` |  | | `_WorkflowDeadline` | `DocumentCurrency` |  |  |
+| `WorkflowTaskURL` |  | |  |  |  |  |
 
 ## Source Code
 

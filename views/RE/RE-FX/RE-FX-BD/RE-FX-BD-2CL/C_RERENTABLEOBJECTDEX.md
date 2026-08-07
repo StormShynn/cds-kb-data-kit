@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateRentableObjectUUID` | ✓ | |  |  |
-| `REGenericRentalObjectType` |  | |  |  |
-| `InternalRealEstateNumber` |  | |  |  |
-| `REStatusObject` |  | |  |  |
-| `RealEstateRentableObjectOID` |  | |  |  |
-| `REGnrcRntlObjectAlternativeID` |  | |  |  |
-| `REGnrcRentalObjPortfolioID` |  | |  |  |
-| `RealEstateRentableObjectNumber` |  | |  |  |
-| `RERentableObjectName` |  | |  |  |
-| `REIdentificationKey` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `REAuthorizationGroup` |  | |  |  |
-| `REGnrcRentalObjUsageCategory` |  | |  |  |
-| `REGenericRentalObjectUsageType` |  | |  |  |
-| `REGenericRentalObjParentUUID` |  | |  |  |
-| `RERentableObjectCategory` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateRentableObjectUUID` | ✓ | |  |  |  |  |
+| `REGenericRentalObjectType` |  | |  |  |  |  |
+| `InternalRealEstateNumber` |  | |  |  |  |  |
+| `REStatusObject` |  | |  |  |  |  |
+| `RealEstateRentableObjectOID` |  | |  |  |  |  |
+| `REGnrcRntlObjectAlternativeID` |  | |  |  |  |  |
+| `REGnrcRentalObjPortfolioID` |  | |  |  |  |  |
+| `RealEstateRentableObjectNumber` |  | |  |  |  |  |
+| `RERentableObjectName` |  | |  |  |  |  |
+| `REIdentificationKey` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `REAuthorizationGroup` |  | |  |  |  |  |
+| `REGnrcRentalObjUsageCategory` |  | |  |  |  |  |
+| `REGenericRentalObjectUsageType` |  | |  |  |  |  |
+| `REGenericRentalObjParentUUID` |  | |  |  |  |  |
+| `RERentableObjectCategory` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
 
 ## Associations
 

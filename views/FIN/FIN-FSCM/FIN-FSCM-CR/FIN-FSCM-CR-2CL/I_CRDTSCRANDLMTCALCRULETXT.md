@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditScoreAndLimitCalcRule` | ✓ | |  | `limit_rule` |
-| `Language` | ✓ | |  | `langu` |
-| `CrdtScoreAndLimitCalcRuleName` |  | |  | `text50` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditScoreAndLimitCalcRule` | ✓ | |  | `limit_rule` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CrdtScoreAndLimitCalcRuleName` |  | |  | `text50` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

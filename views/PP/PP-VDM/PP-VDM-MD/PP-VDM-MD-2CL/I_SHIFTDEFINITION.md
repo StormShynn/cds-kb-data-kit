@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShiftDefinition` | ✓ | |  | `kaptprog` |
-| `ShiftGrouping` | ✓ | |  | `schgrup` |
-| `ShiftEndDate` | ✓ | |  | `endda` |
-| `ShiftEndTime` |  | |  | `endzt` |
-| `ShiftStartDate` |  | |  | `begda` |
-| `ShiftStartTime` |  | |  | `begzt` |
-| `OperatingDurationInSeconds` |  | |  | `einzt` |
-| `WorkBreakSchedule` |  | |  | `paplan` |
-| `DailyWorkSchedule` |  | |  | `tprog` |
-| `DailyWorkScheduleGroup` |  | |  | `motpr` |
-| `DailyWorkScheduleVariant` |  | |  | `varia` |
-| `ValidityEndDate` |  | |  | `cast(def.endda as vdm_validityend preserving type)` |
-| `_Text` | | ✓ | | |
-| `_Text2` | | ✓ | | |
-| `_ShiftGrouping` | | ✓ | | |
-| `_EndDate` | | ✓ | | |
-| `_StartDate` | | ✓ | | |
-| `_WorkBreakSchedule` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShiftDefinition` | ✓ | |  | `kaptprog` |  |  |
+| `ShiftGrouping` | ✓ | |  | `schgrup` |  |  |
+| `ShiftEndDate` | ✓ | |  | `endda` |  |  |
+| `ShiftEndTime` |  | |  | `endzt` |  |  |
+| `ShiftStartDate` |  | |  | `begda` |  |  |
+| `ShiftStartTime` |  | |  | `begzt` |  |  |
+| `OperatingDurationInSeconds` |  | |  | `einzt` |  |  |
+| `WorkBreakSchedule` |  | |  | `paplan` |  |  |
+| `DailyWorkSchedule` |  | |  | `tprog` |  |  |
+| `DailyWorkScheduleGroup` |  | |  | `motpr` |  |  |
+| `DailyWorkScheduleVariant` |  | |  | `varia` |  |  |
+| `ValidityEndDate` |  | |  | `cast(def.endda as vdm_validityend preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Text2` | | ✓ | | | | |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_EndDate` | | ✓ | | | | |
+| `_StartDate` | | ✓ | | | | |
+| `_WorkBreakSchedule` | | ✓ | | | | |
 
 ## Associations
 

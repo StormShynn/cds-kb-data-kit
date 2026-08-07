@@ -29,50 +29,50 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `PurchasingDocumentTypeName` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `Language` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `TargetAmount` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `PurchasingDocumentOrderDate` |  | |  |  |
-| `ScheduleAgreementHasReleaseDoc` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierAddressID` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `QuotationSubmissionDate` |  | |  |  |
-| `SupplierQuotationExternalID` |  | |  |  |
-| `SupplierRespSalesPersonName` |  | |  |  |
-| `SupplierPhoneNumber` |  | |  |  |
-| `InvoicingParty` |  | |  |  |
-| `SupplyingSupplier` |  | |  |  |
-| `CompanyVATRegistration` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `PurchasingDocumentTypeName` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `TargetAmount` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `PurchasingDocumentOrderDate` |  | |  |  |  |  |
+| `ScheduleAgreementHasReleaseDoc` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierAddressID` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `QuotationSubmissionDate` |  | |  |  |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |  |  |
+| `SupplierPhoneNumber` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `SupplyingSupplier` |  | |  |  |  |  |
+| `CompanyVATRegistration` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
 
 ## Associations
 

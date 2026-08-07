@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_nodet` | `spras` |
-| `Segment` | ✓ | |  | `cast(left(_nodet.nodevalue, 25) as fincs_elim_segment preserving type )` |
-| `SegmentName` |  | |  | `cast(left(_nodet.nodetxt, 50) as fincs_description_text_50 preserving type )` |
-| `_Language` | | ✓ | | |
-| `_Segment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_nodet` | `spras` |  |  |
+| `Segment` | ✓ | |  | `cast(left(_nodet.nodevalue, 25) as fincs_elim_segment preserving type )` |  |  |
+| `SegmentName` |  | |  | `cast(left(_nodet.nodetxt, 50) as fincs_description_text_50 preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
 
 ## Associations
 

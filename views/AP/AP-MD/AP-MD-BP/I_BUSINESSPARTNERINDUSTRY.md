@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IndustrySector` | ✓ | |  | `ind_sector` |
-| `IndustrySystemType` | ✓ | |  | `istype` |
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `IsStandardIndustry` |  | |  | `isdef` |
-| `IndustryKeyDescription` |  | | `_Text` | `IndustryKeyDescription` |
-| `_BusinessPartner` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_BusPartIndustrySystem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndustrySector` | ✓ | |  | `ind_sector` |  |  |
+| `IndustrySystemType` | ✓ | |  | `istype` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `IsStandardIndustry` |  | |  | `isdef` |  |  |
+| `IndustryKeyDescription` |  | | `_Text` | `IndustryKeyDescription` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_BusPartIndustrySystem` | | ✓ | | | | |
 
 ## Associations
 

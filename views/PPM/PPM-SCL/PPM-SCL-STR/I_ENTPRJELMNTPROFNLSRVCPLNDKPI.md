@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectUUID` | ✓ | |  |  |
-| `ProjectElementUUID` | ✓ | |  |  |
-| `Project` |  | |  |  |
-| `ProjectElement` |  | |  |  |
-| `ProjectElementDescription` |  | |  |  |
-| `PlannedStartDate` |  | |  |  |
-| `PlannedEndDate` |  | |  |  |
-| `EntProjectElementType` |  | |  |  |
-| `EntProjElmntDeliverableType` |  | |  |  |
-| `EntProjElmntDlvbrlQuantity` |  | |  |  |
-| `EntProjElmntDlvbrlQuantityUnit` |  | |  |  |
-| `EntProjElmntDlvbrlRevnAmount` |  | |  |  |
-| `PlndEffortQty` |  | |  |  |
-| `UnitOfMeasure` |  | |  |  |
-| `PlndCostAmt` |  | |  |  |
-| `PlndRevnAmt` |  | |  |  |
-| `Currency` |  | |  |  |
-| `_Project` |  | |  |  |
-| `_EnterpriseProjectForUser` |  | |  |  |
-| `_EntProjElmntDlvbrlTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  |  |  |  |
+| `ProjectElementUUID` | ✓ | |  |  |  |  |
+| `Project` |  | |  |  |  |  |
+| `ProjectElement` |  | |  |  |  |  |
+| `ProjectElementDescription` |  | |  |  |  |  |
+| `PlannedStartDate` |  | |  |  |  |  |
+| `PlannedEndDate` |  | |  |  |  |  |
+| `EntProjectElementType` |  | |  |  |  |  |
+| `EntProjElmntDeliverableType` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlQuantity` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlQuantityUnit` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlRevnAmount` |  | |  |  |  |  |
+| `PlndEffortQty` |  | |  |  |  |  |
+| `UnitOfMeasure` |  | |  |  |  |  |
+| `PlndCostAmt` |  | |  |  |  |  |
+| `PlndRevnAmt` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `_Project` |  | |  |  |  |  |
+| `_EnterpriseProjectForUser` |  | |  |  |  |  |
+| `_EntProjElmntDlvbrlTypeText` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspCalculationSheetUUID` | ✓ | |  |  |
-| `TransportationCalculationSheet` |  | |  |  |
-| `TransportationAgreementUUID` |  | |  |  |
-| `TranspAgreementItemUUID` |  | |  |  |
-| `I_FreightAgreementTP` |  | |  | `FreightAgrmtCalculationSheet._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FrtAgrmtCalcSheetItemTP` |  | |  | `FreightAgrmtCalculationSheet._FrtAgrmtCalcSheetItem : redirected to composition child I_FrtAgrmtCalcSheetItemTP` |
-| `I_FreightAgreementItemTP` |  | |  | `FreightAgrmtCalculationSheet._FreightAgreementItem : redirected to parent I_FreightAgreementItemTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspCalculationSheetUUID` | ✓ | |  |  |  |  |
+| `TransportationCalculationSheet` |  | |  |  |  |  |
+| `TransportationAgreementUUID` |  | |  |  |  |  |
+| `TranspAgreementItemUUID` |  | |  |  |  |  |
+| `I_FreightAgreementTP` |  | |  | `FreightAgrmtCalculationSheet._FreightAgreement : redirected to I_FreightAgreementTP` |  |  |
+| `I_FrtAgrmtCalcSheetItemTP` |  | |  | `FreightAgrmtCalculationSheet._FrtAgrmtCalcSheetItem : redirected to composition child I_FrtAgrmtCalcSheetItemTP` |  |  |
+| `I_FreightAgreementItemTP` |  | |  | `FreightAgrmtCalculationSheet._FreightAgreementItem : redirected to parent I_FreightAgreementItemTP` |  |  |
 
 ## Source Code
 

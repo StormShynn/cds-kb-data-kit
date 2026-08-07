@@ -29,117 +29,117 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceNotification` | ✓ | |  |  |
-| `MaintNotifInternalID` |  | |  |  |
-| `NotificationText` |  | |  |  |
-| `MaintPriority` |  | |  |  |
-| `MaintPriorityType` |  | |  |  |
-| `NotificationType` |  | |  |  |
-| `NotifProcessingPhase` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `ReportedByUser` |  | |  |  |
-| `ReporterFullName` |  | |  |  |
-| `PersonResponsible` |  | |  |  |
-| `MalfunctionEffect` |  | |  |  |
-| `MalfunctionStartDate` |  | |  |  |
-| `MalfunctionStartTime` |  | |  |  |
-| `MalfunctionStartDateTime` |  | |  |  |
-| `MalfunctionEndDate` |  | |  |  |
-| `MalfunctionEndTime` |  | |  |  |
-| `MalfunctionEndDateTime` |  | |  |  |
-| `MaintNotificationCatalog` |  | |  |  |
-| `MaintNotificationCode` |  | |  |  |
-| `MaintNotificationCodeGroup` |  | |  |  |
-| `CatalogProfile` |  | |  |  |
-| `NotificationCreationDate` |  | |  |  |
-| `NotificationCreationTime` |  | |  |  |
-| `NotificationCreationDateTime` |  | |  |  |
-| `NotificationTimeZone` |  | |  |  |
-| `RequiredStartDate` |  | |  |  |
-| `RequiredStartTime` |  | |  |  |
-| `MaintNotifRqdStartDateTime` |  | |  |  |
-| `RequiredEndDate` |  | |  |  |
-| `RequiredEndTime` |  | |  |  |
-| `MaintNotifRqdEndDateTime` |  | |  |  |
-| `LatestAcceptableCompletionDate` |  | |  |  |
-| `MaintenanceObjectIsDown` |  | |  |  |
-| `TextObjectCategory` |  | |  |  |
-| `TextObjectType` |  | |  |  |
-| `TechnicalObject` |  | |  |  |
-| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
-| `TechnicalObjectLabel` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `AssetManufacturerName` |  | |  |  |
-| `PlantSection` |  | |  |  |
-| `ABCIndicator` |  | |  |  |
-| `SuperiorTechnicalObjectLabel` |  | |  |  |
-| `ManufacturerPartTypeName` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `AssetLocation` |  | |  |  |
-| `LocationName` |  | |  |  |
-| `TechnicalObjectCategory` |  | |  |  |
-| `TechnicalObjectType` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `MaintenanceWorkCenterPlant` |  | |  |  |
-| `MainWorkCenter` |  | |  |  |
-| `MaintenanceWorkCenter` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `LocationDescription` |  | |  |  |
-| `NmbrOfOpenMaintNotifications` |  | |  |  |
-| `NumberOfOrders` |  | |  |  |
-| `MaintWorkRequestAttchKey` |  | |  |  |
-| `MaintNotifWithLeadingZeros` |  | |  |  |
-| `MaintNotifSourceApplication` |  | |  |  |
-| `ActiveTechnicalObject` |  | |  |  |
-| `MaintNotifRespPartnerFunction` |  | |  |  |
-| `PersonResponsibleName` |  | |  |  |
-| `ConcatenatedActiveSystStsName` |  | |  |  |
-| `ConcatenatedActiveUserStsName` |  | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `MaintenanceOrderType` |  | |  |  |
-| `MaintEvtIsCreatedByCurrentUser` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `MaintObjDowntimeDurationUnit` |  | |  |  |
-| `MaintObjectDowntimeDuration` |  | |  |  |
-| `NotificationReferenceDate` |  | |  |  |
-| `NotificationReferenceTime` |  | |  |  |
-| `NotificationCompletionDate` |  | |  |  |
-| `CompletionTime` |  | |  |  |
-| `AssetRoom` |  | |  |  |
-| `MaintNotifProcessPhaseCode` |  | |  |  |
-| `MaintNotifProcessSubPhaseCode` |  | |  |  |
-| `MaintNotifRejectionReasonCode` |  | |  |  |
-| `MaintNotifExtReferenceNumber` |  | |  |  |
-| `MaintenanceTaskListType` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `TaskList` |  | |  |  |
-| `TaskListKeyDate` |  | |  |  |
-| `MaintNotifDetectionCatalog` |  | |  |  |
-| `MaintNotifDetectionCodeGroup` |  | |  |  |
-| `MaintNotifDetectionCode` |  | |  |  |
-| `TechObjInstallationLocation` |  | |  |  |
-| `IdentifyingLabel` |  | |  |  |
-| `WorkRequestTextTemplate` |  | |  |  |
-| `_MalfunctionEffect` | | ✓ | | |
-| `_PMNotifMaintenanceData` | | ✓ | | |
-| `_MaintNotifPersonResponsible` | | ✓ | | |
-| `_ActiveSystemStatus` | | ✓ | | |
-| `_Item` | | ✓ | | |
-| `_Partner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceNotification` | ✓ | |  |  |  |  |
+| `MaintNotifInternalID` |  | |  |  |  |  |
+| `NotificationText` |  | |  |  |  |  |
+| `MaintPriority` |  | |  |  |  |  |
+| `MaintPriorityType` |  | |  |  |  |  |
+| `NotificationType` |  | |  |  |  |  |
+| `NotifProcessingPhase` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `ReportedByUser` |  | |  |  |  |  |
+| `ReporterFullName` |  | |  |  |  |  |
+| `PersonResponsible` |  | |  |  |  |  |
+| `MalfunctionEffect` |  | |  |  |  |  |
+| `MalfunctionStartDate` |  | |  |  |  |  |
+| `MalfunctionStartTime` |  | |  |  |  |  |
+| `MalfunctionStartDateTime` |  | |  |  |  |  |
+| `MalfunctionEndDate` |  | |  |  |  |  |
+| `MalfunctionEndTime` |  | |  |  |  |  |
+| `MalfunctionEndDateTime` |  | |  |  |  |  |
+| `MaintNotificationCatalog` |  | |  |  |  |  |
+| `MaintNotificationCode` |  | |  |  |  |  |
+| `MaintNotificationCodeGroup` |  | |  |  |  |  |
+| `CatalogProfile` |  | |  |  |  |  |
+| `NotificationCreationDate` |  | |  |  |  |  |
+| `NotificationCreationTime` |  | |  |  |  |  |
+| `NotificationCreationDateTime` |  | |  |  |  |  |
+| `NotificationTimeZone` |  | |  |  |  |  |
+| `RequiredStartDate` |  | |  |  |  |  |
+| `RequiredStartTime` |  | |  |  |  |  |
+| `MaintNotifRqdStartDateTime` |  | |  |  |  |  |
+| `RequiredEndDate` |  | |  |  |  |  |
+| `RequiredEndTime` |  | |  |  |  |  |
+| `MaintNotifRqdEndDateTime` |  | |  |  |  |  |
+| `LatestAcceptableCompletionDate` |  | |  |  |  |  |
+| `MaintenanceObjectIsDown` |  | |  |  |  |  |
+| `TextObjectCategory` |  | |  |  |  |  |
+| `TextObjectType` |  | |  |  |  |  |
+| `TechnicalObject` |  | |  |  |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |  |  |
+| `TechnicalObjectLabel` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `AssetManufacturerName` |  | |  |  |  |  |
+| `PlantSection` |  | |  |  |  |  |
+| `ABCIndicator` |  | |  |  |  |  |
+| `SuperiorTechnicalObjectLabel` |  | |  |  |  |  |
+| `ManufacturerPartTypeName` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `AssetLocation` |  | |  |  |  |  |
+| `LocationName` |  | |  |  |  |  |
+| `TechnicalObjectCategory` |  | |  |  |  |  |
+| `TechnicalObjectType` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `MaintenanceWorkCenterPlant` |  | |  |  |  |  |
+| `MainWorkCenter` |  | |  |  |  |  |
+| `MaintenanceWorkCenter` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `LocationDescription` |  | |  |  |  |  |
+| `NmbrOfOpenMaintNotifications` |  | |  |  |  |  |
+| `NumberOfOrders` |  | |  |  |  |  |
+| `MaintWorkRequestAttchKey` |  | |  |  |  |  |
+| `MaintNotifWithLeadingZeros` |  | |  |  |  |  |
+| `MaintNotifSourceApplication` |  | |  |  |  |  |
+| `ActiveTechnicalObject` |  | |  |  |  |  |
+| `MaintNotifRespPartnerFunction` |  | |  |  |  |  |
+| `PersonResponsibleName` |  | |  |  |  |  |
+| `ConcatenatedActiveSystStsName` |  | |  |  |  |  |
+| `ConcatenatedActiveUserStsName` |  | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `MaintenanceOrderType` |  | |  |  |  |  |
+| `MaintEvtIsCreatedByCurrentUser` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `MaintObjDowntimeDurationUnit` |  | |  |  |  |  |
+| `MaintObjectDowntimeDuration` |  | |  |  |  |  |
+| `NotificationReferenceDate` |  | |  |  |  |  |
+| `NotificationReferenceTime` |  | |  |  |  |  |
+| `NotificationCompletionDate` |  | |  |  |  |  |
+| `CompletionTime` |  | |  |  |  |  |
+| `AssetRoom` |  | |  |  |  |  |
+| `MaintNotifProcessPhaseCode` |  | |  |  |  |  |
+| `MaintNotifProcessSubPhaseCode` |  | |  |  |  |  |
+| `MaintNotifRejectionReasonCode` |  | |  |  |  |  |
+| `MaintNotifExtReferenceNumber` |  | |  |  |  |  |
+| `MaintenanceTaskListType` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `TaskList` |  | |  |  |  |  |
+| `TaskListKeyDate` |  | |  |  |  |  |
+| `MaintNotifDetectionCatalog` |  | |  |  |  |  |
+| `MaintNotifDetectionCodeGroup` |  | |  |  |  |  |
+| `MaintNotifDetectionCode` |  | |  |  |  |  |
+| `TechObjInstallationLocation` |  | |  |  |  |  |
+| `IdentifyingLabel` |  | |  |  |  |  |
+| `WorkRequestTextTemplate` |  | |  |  |  |  |
+| `_MalfunctionEffect` | | ✓ | | | | |
+| `_PMNotifMaintenanceData` | | ✓ | | | | |
+| `_MaintNotifPersonResponsible` | | ✓ | | | | |
+| `_ActiveSystemStatus` | | ✓ | | | | |
+| `_Item` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `CreditRatingAgency` | ✓ | |  | `sol_ins` |
-| `CreditRatingAgencyName` |  | |  | `xsolv` |
-| `_BPCreditRatingAgency` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CreditRatingAgency` | ✓ | |  | `sol_ins` |  |  |
+| `CreditRatingAgencyName` |  | |  | `xsolv` |  |  |
+| `_BPCreditRatingAgency` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

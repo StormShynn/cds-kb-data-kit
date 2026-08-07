@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | | `_CnsldtnPlant` | `Plant` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnPlant` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnPlantTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnPlantTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | | `_CnsldtnPlant` | `Plant` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnPlant` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnPlantTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnPlantTextTP` |  |  |
 
 ## Source Code
 

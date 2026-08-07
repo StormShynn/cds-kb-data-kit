@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryReferenceCategory` | ✓ | |  | `reftyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryReferenceCategory` | ✓ | |  | `reftyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

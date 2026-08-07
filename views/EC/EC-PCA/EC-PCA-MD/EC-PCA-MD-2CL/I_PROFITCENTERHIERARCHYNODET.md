@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast( hrrp_nodet_n.kokrs as fis_kokrs preserving type )` |
-| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_nodet_n.hryid as fis_hryid_prctr preserving type )` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `ValidityEndDate` | ✓ | |  | `cast(hrrp_nodet_n.hryvalto as fis_datbi preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `HierarchyNodeText` |  | |  | `nodetxt` |
-| `HierarchyNodeShortText` |  | |  | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |
-| `ValidityStartDate` |  | |  | `cast(hrrp_nodet_n.hryvalfrom as fis_datab preserving type )` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( hrrp_nodet_n.kokrs as fis_kokrs preserving type )` |  |  |
+| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_nodet_n.hryid as fis_hryid_prctr preserving type )` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_nodet_n.hryvalto as fis_datbi preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `HierarchyNodeText` |  | |  | `nodetxt` |  |  |
+| `HierarchyNodeShortText` |  | |  | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |  |  |
+| `ValidityStartDate` |  | |  | `cast(hrrp_nodet_n.hryvalfrom as fis_datab preserving type )` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

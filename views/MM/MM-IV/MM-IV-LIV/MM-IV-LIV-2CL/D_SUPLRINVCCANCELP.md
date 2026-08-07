@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReversalReason` |  | |  | `stgrd` |
-| `PostingDate` |  | |  | `budat` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReversalReason` |  | |  | `stgrd` |  |  |
+| `PostingDate` |  | |  | `budat` |  |  |
 
 ## Source Code
 

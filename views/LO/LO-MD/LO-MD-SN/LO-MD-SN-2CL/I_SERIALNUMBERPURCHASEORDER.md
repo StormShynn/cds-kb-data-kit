@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
-| `PurchaseOrder` | ✓ | | `_MaintObjListPurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | ✓ | | `_MaintObjListPurchaseOrder` | `PurchaseOrderItem` |
-| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
-| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |  |  |
+| `PurchaseOrder` | ✓ | | `_MaintObjListPurchaseOrder` | `PurchaseOrder` |  |  |
+| `PurchaseOrderItem` | ✓ | | `_MaintObjListPurchaseOrder` | `PurchaseOrderItem` |  |  |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |  |  |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |  |  |
 
 ## Source Code
 

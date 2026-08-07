@@ -31,114 +31,114 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `matnr` |
-| `MRPArea` | ✓ | |  | `berid` |
-| `Plant` | ✓ | |  | `werks` |
-| `MRPType` |  | |  | `dismm` |
-| `MRPResponsible` |  | |  | `dispo` |
-| `MRPGroup` |  | |  | `disgr` |
-| `ReorderThresholdQuantity` |  | |  | `minbe` |
-| `PlanAndOrderDayDetermination` |  | |  | `lfrhy` |
-| `PlanningTimeFence` |  | |  | `fxhor` |
-| `LotSizingProcedure` |  | |  | `disls` |
-| `RoundingProfile` |  | |  | `rdprf` |
-| `LotSizeRoundingQuantity` |  | |  | `bstrf` |
-| `MinimumLotSizeQuantity` |  | |  | `bstmi` |
-| `MaximumLotSizeQuantity` |  | |  | `bstma` |
-| `MaximumStockQuantity` |  | |  | `mabst` |
-| `AssemblyScrapPercent` |  | |  | `ausss` |
-| `ProcurementSubType` |  | |  | `sobsl` |
-| `StorageLocation` |  | |  | `lgpro` |
-| `DfltStorageLocationExtProcmt` |  | |  | `lgfsb` |
-| `MRPPlanningCalendar` |  | |  | `mrppp` |
-| `SafetyStockQuantity` |  | |  | `eisbe` |
-| `RangeOfCvrgPrflCode` |  | |  | `rwpro` |
-| `SafetyDuration` |  | |  | `shzet` |
-| `FixedLotSizeQuantity` |  | |  | `bstfe` |
-| `LotSizeIndependentCosts` |  | |  | `losfx` |
-| `StorageCostsPercentageCode` |  | |  | `lagpr` |
-| `SrvcLvl` |  | |  | `lgrad` |
-| `CreationDate` |  | |  | `vrbdt` |
-| `IsMarkedForDeletion` |  | |  | `loekz` |
-| `PerdPrflForSftyTme` |  | |  | `shpro` |
-| `IsMRPDependentRqmt` |  | |  | `ahdis` |
-| `DependentRqmtMRPRelevance` |  | |  | `ahdis` |
-| `MaintenanceStatusName` |  | |  | `pstat` |
-| `IsSafetyTime` |  | |  | `shflg` |
-| `ProductSafetyTimeMRPRelevance` |  | |  | `shflg` |
-| `PlannedDeliveryDurationInDays` |  | |  | `plifz` |
-| `IsPlannedDeliveryTime` |  | |  | `cast(MRPAreaData.plifzx as isplanneddeliverytime preserving type )` |
-| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  | `takzt` |
-| `PPPlanningProcedure` |  | |  | `scm_rrp_type` |
-| `ProdnPlngHeuristic` |  | |  | `scm_heur_id` |
-| `ProductPlanningGroup` |  | |  | `scm_rrp_sel_group` |
-| `ProductPlanningPackage` |  | |  | `scm_package_id` |
-| `AdvncdPlngPPDSHorizonInDays` |  | |  | `convh` |
-| `LotSizeUnit` |  | |  | `scm_lsuom` |
-| `TargetDaysSupplyInWorkDays` |  | |  | `cast (MRPAreaData.scm_target_dur as cmd_prd_target_dur_n preserving type )` |
-| `ReorderDaysSupplyInWorkDays` |  | |  | `cast (MRPAreaData.scm_reord_dur as cmd_prd_reord_dur_n preserving type )` |
-| `PlngCalendarPerdcLotSizing` |  | |  | `scm_tstrid` |
-| `LocProdGoodsReceiptProcHours` |  | |  | `cast (MRPAreaData.scm_grprt as cmd_prd_good_rcpt_proc_time_n preserving type )` |
-| `LocProdGoodsIssueProcHours` |  | |  | `cast (MRPAreaData.scm_giprt as cmd_prd_good_issue_proc_time_n preserving type )` |
-| `GRHandlingCapacityQuantity` |  | |  | `scm_conhap` |
-| `GRHandlingCapacityUnit` |  | |  | `scm_hunit` |
-| `GIHandlingCapacityQuantity` |  | |  | `scm_conhap_out` |
-| `GIHandlingCapacityUnit` |  | |  | `scm_hunit_out` |
-| `SrvcPartsThroughputTimeDurn` |  | |  | `cast(MRPAreaData.scm_thruput_time as cmd_prd_srvc_prts_thruput_time preserving type )` |
-| `ParLocSafetyStockQuantity` |  | |  | `scm_ppsaftystk` |
-| `VCLSafetyStockQuantity` |  | |  | `scm_safty_v` |
-| `VCLParLocSafetyStockQuantity` |  | |  | `scm_ppsaftystk_v` |
-| `VCLReorderPointQuantity` |  | |  | `scm_reord_v` |
-| `VCLMaximumStockQuantity` |  | |  | `scm_maxstock_v` |
-| `CostFactorForStockHoldingVal` |  | |  | `scm_scost_prcnt` |
-| `ProductProcurementCostsVal` |  | |  | `scm_proc_cost` |
-| `GoodsReceiptHandlingCost` |  | |  | `scm_ndcostwe` |
-| `GoodsIssueHandlingCost` |  | |  | `scm_ndcostwa` |
-| `ConsumptionOfStorageCapacity` |  | |  | `scm_coninp` |
-| `ConsumptionOfStorageCapUnit` |  | |  | `scm_iunit` |
-| `MRPSafetyStockMethod` |  | |  | `sfty_stk_meth` |
-| `Currency` |  | |  | `waers` |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `MaxDaysOfSupplyIsActive` |  | |  | `maxdos_flg` |
-| `MaxDaysOfSupplyPenaltyAmount` |  | |  | `maxdos_pen` |
-| `AdvncdPlngSftyStkMeth` |  | |  | `saftystock_method` |
-| `AdvncdPlngTgtStkLvlMeth` |  | |  | `target_stock_level_meth` |
-| `SftyStkMethIsAutomlyDtmnd` |  | |  | `cast(MRPAreaData.auto_det_sftystk_meth as xfeld)` |
-| `PeriodFactorIsUsed` |  | |  | `use_period_factor` |
-| `AdvncdPlngPeriodFactorValue` |  | |  | `period_factor_value` |
-| `TimeDepdntStkLvlPerdFactorVal` |  | |  | `period_factor_tds` |
-| `LocProdStorageCostValue` |  | |  | `scm_scost` |
-| `SftyStkVioltnPnltyCostValue` |  | |  | `scm_sspen` |
-| `_MRPType` | | ✓ | | |
-| `_MRPTypeName` | | ✓ | | |
-| `_LotSizingProcedure` | | ✓ | | |
-| `_LotSizingProcedureText` | | ✓ | | |
-| `_PlantInvtryManagedLoc` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_MRPResponsible` | | ✓ | | |
-| `_LotSizeUnit` | | ✓ | | |
-| `_GRHandlingCapacityUnit` | | ✓ | | |
-| `_GIHandlingCapacityUnit` | | ✓ | | |
-| `_SafetyTimePeriodProfile` | | ✓ | | |
-| `_SafetyTimePeriodProfileText` | | ✓ | | |
-| `_ProdnPlngHeuristic` | | ✓ | | |
-| `_PPPlanningProcedure` | | ✓ | | |
-| `_ProductPlanningPackage` | | ✓ | | |
-| `_RangeOfCvrgPrflCode` | | ✓ | | |
-| `_RangeOfCvrgPrflCodeText` | | ✓ | | |
-| `_MRPGroupText` | | ✓ | | |
-| `_MRPPlanningCalendarText` | | ✓ | | |
-| `_StorageCostsPercentageCode` | | ✓ | | |
-| `_PlantVH` | | ✓ | | |
-| `_ProductProcmtProfile` | | ✓ | | |
-| `_ProductProcmtProfileText` | | ✓ | | |
-| `_MRPSafetyStockMethod` | | ✓ | | |
-| `_MRPSafetyStockMethodText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_ProdSafetyTimeMRPRlvnceText` | | ✓ | | |
-| `_DepdntRqmtMRPRelevanceText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `MRPArea` | ✓ | |  | `berid` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `MRPType` |  | |  | `dismm` |  |  |
+| `MRPResponsible` |  | |  | `dispo` |  |  |
+| `MRPGroup` |  | |  | `disgr` |  |  |
+| `ReorderThresholdQuantity` |  | |  | `minbe` |  |  |
+| `PlanAndOrderDayDetermination` |  | |  | `lfrhy` |  |  |
+| `PlanningTimeFence` |  | |  | `fxhor` |  |  |
+| `LotSizingProcedure` |  | |  | `disls` |  |  |
+| `RoundingProfile` |  | |  | `rdprf` |  |  |
+| `LotSizeRoundingQuantity` |  | |  | `bstrf` |  |  |
+| `MinimumLotSizeQuantity` |  | |  | `bstmi` |  |  |
+| `MaximumLotSizeQuantity` |  | |  | `bstma` |  |  |
+| `MaximumStockQuantity` |  | |  | `mabst` |  |  |
+| `AssemblyScrapPercent` |  | |  | `ausss` |  |  |
+| `ProcurementSubType` |  | |  | `sobsl` |  |  |
+| `StorageLocation` |  | |  | `lgpro` |  |  |
+| `DfltStorageLocationExtProcmt` |  | |  | `lgfsb` |  |  |
+| `MRPPlanningCalendar` |  | |  | `mrppp` |  |  |
+| `SafetyStockQuantity` |  | |  | `eisbe` |  |  |
+| `RangeOfCvrgPrflCode` |  | |  | `rwpro` |  |  |
+| `SafetyDuration` |  | |  | `shzet` |  |  |
+| `FixedLotSizeQuantity` |  | |  | `bstfe` |  |  |
+| `LotSizeIndependentCosts` |  | |  | `losfx` |  |  |
+| `StorageCostsPercentageCode` |  | |  | `lagpr` |  |  |
+| `SrvcLvl` |  | |  | `lgrad` |  |  |
+| `CreationDate` |  | |  | `vrbdt` |  |  |
+| `IsMarkedForDeletion` |  | |  | `loekz` |  |  |
+| `PerdPrflForSftyTme` |  | |  | `shpro` |  |  |
+| `IsMRPDependentRqmt` |  | |  | `ahdis` |  |  |
+| `DependentRqmtMRPRelevance` |  | |  | `ahdis` |  |  |
+| `MaintenanceStatusName` |  | |  | `pstat` |  |  |
+| `IsSafetyTime` |  | |  | `shflg` |  |  |
+| `ProductSafetyTimeMRPRelevance` |  | |  | `shflg` |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  | `plifz` |  |  |
+| `IsPlannedDeliveryTime` |  | |  | `cast(MRPAreaData.plifzx as isplanneddeliverytime preserving type )` |  |  |
+| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  | `takzt` |  |  |
+| `PPPlanningProcedure` |  | |  | `scm_rrp_type` |  |  |
+| `ProdnPlngHeuristic` |  | |  | `scm_heur_id` |  |  |
+| `ProductPlanningGroup` |  | |  | `scm_rrp_sel_group` |  |  |
+| `ProductPlanningPackage` |  | |  | `scm_package_id` |  |  |
+| `AdvncdPlngPPDSHorizonInDays` |  | |  | `convh` |  |  |
+| `LotSizeUnit` |  | |  | `scm_lsuom` |  |  |
+| `TargetDaysSupplyInWorkDays` |  | |  | `cast (MRPAreaData.scm_target_dur as cmd_prd_target_dur_n preserving type )` |  |  |
+| `ReorderDaysSupplyInWorkDays` |  | |  | `cast (MRPAreaData.scm_reord_dur as cmd_prd_reord_dur_n preserving type )` |  |  |
+| `PlngCalendarPerdcLotSizing` |  | |  | `scm_tstrid` |  |  |
+| `LocProdGoodsReceiptProcHours` |  | |  | `cast (MRPAreaData.scm_grprt as cmd_prd_good_rcpt_proc_time_n preserving type )` |  |  |
+| `LocProdGoodsIssueProcHours` |  | |  | `cast (MRPAreaData.scm_giprt as cmd_prd_good_issue_proc_time_n preserving type )` |  |  |
+| `GRHandlingCapacityQuantity` |  | |  | `scm_conhap` |  |  |
+| `GRHandlingCapacityUnit` |  | |  | `scm_hunit` |  |  |
+| `GIHandlingCapacityQuantity` |  | |  | `scm_conhap_out` |  |  |
+| `GIHandlingCapacityUnit` |  | |  | `scm_hunit_out` |  |  |
+| `SrvcPartsThroughputTimeDurn` |  | |  | `cast(MRPAreaData.scm_thruput_time as cmd_prd_srvc_prts_thruput_time preserving type )` |  |  |
+| `ParLocSafetyStockQuantity` |  | |  | `scm_ppsaftystk` |  |  |
+| `VCLSafetyStockQuantity` |  | |  | `scm_safty_v` |  |  |
+| `VCLParLocSafetyStockQuantity` |  | |  | `scm_ppsaftystk_v` |  |  |
+| `VCLReorderPointQuantity` |  | |  | `scm_reord_v` |  |  |
+| `VCLMaximumStockQuantity` |  | |  | `scm_maxstock_v` |  |  |
+| `CostFactorForStockHoldingVal` |  | |  | `scm_scost_prcnt` |  |  |
+| `ProductProcurementCostsVal` |  | |  | `scm_proc_cost` |  |  |
+| `GoodsReceiptHandlingCost` |  | |  | `scm_ndcostwe` |  |  |
+| `GoodsIssueHandlingCost` |  | |  | `scm_ndcostwa` |  |  |
+| `ConsumptionOfStorageCapacity` |  | |  | `scm_coninp` |  |  |
+| `ConsumptionOfStorageCapUnit` |  | |  | `scm_iunit` |  |  |
+| `MRPSafetyStockMethod` |  | |  | `sfty_stk_meth` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `MaxDaysOfSupplyIsActive` |  | |  | `maxdos_flg` |  |  |
+| `MaxDaysOfSupplyPenaltyAmount` |  | |  | `maxdos_pen` |  |  |
+| `AdvncdPlngSftyStkMeth` |  | |  | `saftystock_method` |  |  |
+| `AdvncdPlngTgtStkLvlMeth` |  | |  | `target_stock_level_meth` |  |  |
+| `SftyStkMethIsAutomlyDtmnd` |  | |  | `cast(MRPAreaData.auto_det_sftystk_meth as xfeld)` |  |  |
+| `PeriodFactorIsUsed` |  | |  | `use_period_factor` |  |  |
+| `AdvncdPlngPeriodFactorValue` |  | |  | `period_factor_value` |  |  |
+| `TimeDepdntStkLvlPerdFactorVal` |  | |  | `period_factor_tds` |  |  |
+| `LocProdStorageCostValue` |  | |  | `scm_scost` |  |  |
+| `SftyStkVioltnPnltyCostValue` |  | |  | `scm_sspen` |  |  |
+| `_MRPType` | | ✓ | | | | |
+| `_MRPTypeName` | | ✓ | | | | |
+| `_LotSizingProcedure` | | ✓ | | | | |
+| `_LotSizingProcedureText` | | ✓ | | | | |
+| `_PlantInvtryManagedLoc` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_MRPResponsible` | | ✓ | | | | |
+| `_LotSizeUnit` | | ✓ | | | | |
+| `_GRHandlingCapacityUnit` | | ✓ | | | | |
+| `_GIHandlingCapacityUnit` | | ✓ | | | | |
+| `_SafetyTimePeriodProfile` | | ✓ | | | | |
+| `_SafetyTimePeriodProfileText` | | ✓ | | | | |
+| `_ProdnPlngHeuristic` | | ✓ | | | | |
+| `_PPPlanningProcedure` | | ✓ | | | | |
+| `_ProductPlanningPackage` | | ✓ | | | | |
+| `_RangeOfCvrgPrflCode` | | ✓ | | | | |
+| `_RangeOfCvrgPrflCodeText` | | ✓ | | | | |
+| `_MRPGroupText` | | ✓ | | | | |
+| `_MRPPlanningCalendarText` | | ✓ | | | | |
+| `_StorageCostsPercentageCode` | | ✓ | | | | |
+| `_PlantVH` | | ✓ | | | | |
+| `_ProductProcmtProfile` | | ✓ | | | | |
+| `_ProductProcmtProfileText` | | ✓ | | | | |
+| `_MRPSafetyStockMethod` | | ✓ | | | | |
+| `_MRPSafetyStockMethodText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_ProdSafetyTimeMRPRlvnceText` | | ✓ | | | | |
+| `_DepdntRqmtMRPRelevanceText` | | ✓ | | | | |
 
 ## Associations
 

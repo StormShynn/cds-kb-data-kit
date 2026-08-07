@@ -29,44 +29,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NFItemType` | ✓ | |  | `itmtyp` |
-| `BR_NFeIsDefaultItemType` |  | |  | `defaulttyp` |
-| `BR_NFeICMSStatisticCode` |  | |  | `icmsstat` |
-| `BR_NFeIPIStatisticCode` |  | |  | `ipistat` |
-| `BR_NFeIsCheckGoodIssue` |  | |  | `checkgrgi` |
-| `BR_NFeIsUniqueItemType` |  | |  | `uniqueiv` |
-| `BR_NFeIsCheckPerformReference` |  | |  | `norefiv` |
-| `BR_NfeIsIgnoredRefInInvtryMgmt` |  | |  | `ignoreim` |
-| `BR_NFeChkRefBsdOnDirectionCode` |  | |  | `checkdir` |
-| `BR_NFeIsUnqItmForInvtryMgmt` |  | |  | `uniqueim` |
-| `BR_NFeIsRefMaterialRequired` |  | |  | `refmd` |
-| `BR_NFeIsObsvnFieldRequired` |  | |  | `observat` |
-| `BR_NFeIsICMSBaseStoredOthBase` |  | |  | `excothbasicms` |
-| `BR_NFeIsIPIBaseStoredOthBase` |  | |  | `excothbasipi` |
-| `BR_NFeIsAllTxStoredOthBase` |  | |  | `othbas` |
-| `BR_NFeIsTaxBaseAmountIgnored` |  | |  | `ignoretotal` |
-| `BR_NFeIsSkipItemInReporting` |  | |  | `skip` |
-| `BR_NFeIsTxCodeFrmPrecdgDocUsed` |  | |  | `redmwskz` |
-| `BR_NFeMainItemInvtryMgmtCode` |  | |  | `mainitem1` |
-| `BR_NFeMainItemInvtryMgmt2Code` |  | |  | `mainitem2` |
-| `BR_NFeMainItemInvtryMgmt3Code` |  | |  | `mainitem3` |
-| `BR_NFeMainItemInvtryMgmt4Code` |  | |  | `mainitem4` |
-| `BR_NFeMainItemInvtryMgmt5Code` |  | |  | `mainitem5` |
-| `BR_NFeMainItemInvtryMgmt6Code` |  | |  | `mainitem6` |
-| `BR_NFeMainItemInvtryMgmt7Code` |  | |  | `mainitem7` |
-| `BR_NFeMainItemInvtryMgmt8Code` |  | |  | `mainitem8` |
-| `BR_NFeMainItemInvtryMgmt9Code` |  | |  | `mainitem9` |
-| `BR_NFeMainItemInvtryMgmt10Code` |  | |  | `mainitem10` |
-| `BR_NFeIsItmTypeUsdForTransfers` |  | |  | `transfer` |
-| `BR_NFeIsThirdPtyShipmentItems` |  | |  | `trdparty` |
-| `BR_NFeTextNumber` |  | |  | `textmod1` |
-| `BR_NFeText2Number` |  | |  | `textmod2` |
-| `BR_NFeHasToClearReference` |  | |  | `clearref1` |
-| `BR_NFeHasToClearReference2` |  | |  | `clearref2` |
-| `_BR_NFeTextNumber` | | ✓ | | |
-| `_BR_NFeTextNumber2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NFItemType` | ✓ | |  | `itmtyp` |  |  |
+| `BR_NFeIsDefaultItemType` |  | |  | `defaulttyp` |  |  |
+| `BR_NFeICMSStatisticCode` |  | |  | `icmsstat` |  |  |
+| `BR_NFeIPIStatisticCode` |  | |  | `ipistat` |  |  |
+| `BR_NFeIsCheckGoodIssue` |  | |  | `checkgrgi` |  |  |
+| `BR_NFeIsUniqueItemType` |  | |  | `uniqueiv` |  |  |
+| `BR_NFeIsCheckPerformReference` |  | |  | `norefiv` |  |  |
+| `BR_NfeIsIgnoredRefInInvtryMgmt` |  | |  | `ignoreim` |  |  |
+| `BR_NFeChkRefBsdOnDirectionCode` |  | |  | `checkdir` |  |  |
+| `BR_NFeIsUnqItmForInvtryMgmt` |  | |  | `uniqueim` |  |  |
+| `BR_NFeIsRefMaterialRequired` |  | |  | `refmd` |  |  |
+| `BR_NFeIsObsvnFieldRequired` |  | |  | `observat` |  |  |
+| `BR_NFeIsICMSBaseStoredOthBase` |  | |  | `excothbasicms` |  |  |
+| `BR_NFeIsIPIBaseStoredOthBase` |  | |  | `excothbasipi` |  |  |
+| `BR_NFeIsAllTxStoredOthBase` |  | |  | `othbas` |  |  |
+| `BR_NFeIsTaxBaseAmountIgnored` |  | |  | `ignoretotal` |  |  |
+| `BR_NFeIsSkipItemInReporting` |  | |  | `skip` |  |  |
+| `BR_NFeIsTxCodeFrmPrecdgDocUsed` |  | |  | `redmwskz` |  |  |
+| `BR_NFeMainItemInvtryMgmtCode` |  | |  | `mainitem1` |  |  |
+| `BR_NFeMainItemInvtryMgmt2Code` |  | |  | `mainitem2` |  |  |
+| `BR_NFeMainItemInvtryMgmt3Code` |  | |  | `mainitem3` |  |  |
+| `BR_NFeMainItemInvtryMgmt4Code` |  | |  | `mainitem4` |  |  |
+| `BR_NFeMainItemInvtryMgmt5Code` |  | |  | `mainitem5` |  |  |
+| `BR_NFeMainItemInvtryMgmt6Code` |  | |  | `mainitem6` |  |  |
+| `BR_NFeMainItemInvtryMgmt7Code` |  | |  | `mainitem7` |  |  |
+| `BR_NFeMainItemInvtryMgmt8Code` |  | |  | `mainitem8` |  |  |
+| `BR_NFeMainItemInvtryMgmt9Code` |  | |  | `mainitem9` |  |  |
+| `BR_NFeMainItemInvtryMgmt10Code` |  | |  | `mainitem10` |  |  |
+| `BR_NFeIsItmTypeUsdForTransfers` |  | |  | `transfer` |  |  |
+| `BR_NFeIsThirdPtyShipmentItems` |  | |  | `trdparty` |  |  |
+| `BR_NFeTextNumber` |  | |  | `textmod1` |  |  |
+| `BR_NFeText2Number` |  | |  | `textmod2` |  |  |
+| `BR_NFeHasToClearReference` |  | |  | `clearref1` |  |  |
+| `BR_NFeHasToClearReference2` |  | |  | `clearref2` |  |  |
+| `_BR_NFeTextNumber` | | ✓ | | | | |
+| `_BR_NFeTextNumber2` | | ✓ | | | | |
 
 ## Associations
 

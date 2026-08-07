@@ -28,61 +28,61 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAWriteOffDocumentNumber` | ✓ | |  | `CADocumentNumber` |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `CATaxCompanyCode` |  | |  |  |
-| `CAStorageLocationOfTaxSuplmnt` |  | |  |  |
-| `CATaxCodeWasExchanged` |  | |  |  |
-| `TaxReportingDate` |  | |  |  |
-| `CAReconciliationKey` |  | |  |  |
-| `CASeparateDocIsCreatedInGL` |  | |  |  |
-| `CARequestedPeriodForGLTransfer` |  | |  |  |
-| `CAApplicationArea` |  | |  |  |
-| `CADocumentType` |  | |  |  |
-| `CADocumentOriginCode` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `CAWriteOffDate` |  | |  | `CAPostingDate` |
-| `ExchangeRateDate` |  | |  |  |
-| `CAReferenceDocument` |  | |  |  |
-| `CAReturnReason` |  | |  |  |
-| `CAWriteOffReason` |  | |  | `CAPostingReason` |
-| `ReferenceDocumentType` |  | |  |  |
-| `OriginalReferenceDocument` |  | |  |  |
-| `CAReversedDocumentNumber` |  | |  |  |
-| `CAClearingInformation` |  | |  |  |
-| `CAReversalDocumentNumber` |  | |  |  |
-| `CADocumentSupplements` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `CAWorkflowCheckReason` |  | |  |  |
-| `CAWorkflowCheckProcess` |  | |  |  |
-| `CADocumentTransactionClass` |  | |  |  |
-| `CADocContainsCashFlowItems` |  | |  |  |
-| `CADocumentClass` |  | |  |  |
-| `CADocumentVersion` |  | |  |  |
-| `IsIndividualPosting` |  | |  |  |
-| `_CAApplicationArea` | | ✓ | | |
-| `_CAClearingInformation` | | ✓ | | |
-| `_CADocTransactionClass` | | ✓ | | |
-| `_CADocumentClass` | | ✓ | | |
-| `_CADocumentOriginCode` | | ✓ | | |
-| `_CADocumentSupplement` | | ✓ | | |
-| `_CADocumentType` | | ✓ | | |
-| `_CADocumentVersion` | | ✓ | | |
-| `_CAPostingReason` | | ✓ | | |
-| `_CARequestedSpecialPeriod` | | ✓ | | |
-| `_CAReturnReason` | | ✓ | | |
-| `_CATaxSupplementStorageLoc` | | ✓ | | |
-| `_CATaxCompanyCode` | | ✓ | | |
-| `_CAWorkflowCheckProcess` | | ✓ | | |
-| `_CAWorkflowCheckReason` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAWriteOffDocumentNumber` | ✓ | |  | `CADocumentNumber` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `CATaxCompanyCode` |  | |  |  |  |  |
+| `CAStorageLocationOfTaxSuplmnt` |  | |  |  |  |  |
+| `CATaxCodeWasExchanged` |  | |  |  |  |  |
+| `TaxReportingDate` |  | |  |  |  |  |
+| `CAReconciliationKey` |  | |  |  |  |  |
+| `CASeparateDocIsCreatedInGL` |  | |  |  |  |  |
+| `CARequestedPeriodForGLTransfer` |  | |  |  |  |  |
+| `CAApplicationArea` |  | |  |  |  |  |
+| `CADocumentType` |  | |  |  |  |  |
+| `CADocumentOriginCode` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `CAWriteOffDate` |  | |  | `CAPostingDate` |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `CAReferenceDocument` |  | |  |  |  |  |
+| `CAReturnReason` |  | |  |  |  |  |
+| `CAWriteOffReason` |  | |  | `CAPostingReason` |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `OriginalReferenceDocument` |  | |  |  |  |  |
+| `CAReversedDocumentNumber` |  | |  |  |  |  |
+| `CAClearingInformation` |  | |  |  |  |  |
+| `CAReversalDocumentNumber` |  | |  |  |  |  |
+| `CADocumentSupplements` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `CAWorkflowCheckReason` |  | |  |  |  |  |
+| `CAWorkflowCheckProcess` |  | |  |  |  |  |
+| `CADocumentTransactionClass` |  | |  |  |  |  |
+| `CADocContainsCashFlowItems` |  | |  |  |  |  |
+| `CADocumentClass` |  | |  |  |  |  |
+| `CADocumentVersion` |  | |  |  |  |  |
+| `IsIndividualPosting` |  | |  |  |  |  |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_CAClearingInformation` | | ✓ | | | | |
+| `_CADocTransactionClass` | | ✓ | | | | |
+| `_CADocumentClass` | | ✓ | | | | |
+| `_CADocumentOriginCode` | | ✓ | | | | |
+| `_CADocumentSupplement` | | ✓ | | | | |
+| `_CADocumentType` | | ✓ | | | | |
+| `_CADocumentVersion` | | ✓ | | | | |
+| `_CAPostingReason` | | ✓ | | | | |
+| `_CARequestedSpecialPeriod` | | ✓ | | | | |
+| `_CAReturnReason` | | ✓ | | | | |
+| `_CATaxSupplementStorageLoc` | | ✓ | | | | |
+| `_CATaxCompanyCode` | | ✓ | | | | |
+| `_CAWorkflowCheckProcess` | | ✓ | | | | |
+| `_CAWorkflowCheckReason` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
 
 ## Associations
 

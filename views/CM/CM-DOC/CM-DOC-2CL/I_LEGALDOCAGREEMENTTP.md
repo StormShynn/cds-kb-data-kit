@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMAgreementUUID` | ✓ | |  |  |
-| `LglCntntMDocumentUUID` |  | |  |  |
-| `LglCntntMContractTypeName` |  | |  |  |
-| `LglCntntMAgreementTemplateName` |  | |  |  |
-| `LglCntntMAgreementSystemID` |  | |  |  |
-| `LglCntntMDocAgrmtVersion` |  | |  |  |
-| `LglCntntMDocAgrmtCoreStatus` |  | |  |  |
-| `LglCntntMDocAgrmtBizStatus` |  | |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |
-| `_Document` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMAgreementUUID` | ✓ | |  |  |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |  |  |
+| `LglCntntMContractTypeName` |  | |  |  |  |  |
+| `LglCntntMAgreementTemplateName` |  | |  |  |  |  |
+| `LglCntntMAgreementSystemID` |  | |  |  |  |  |
+| `LglCntntMDocAgrmtVersion` |  | |  |  |  |  |
+| `LglCntntMDocAgrmtCoreStatus` |  | |  |  |  |  |
+| `LglCntntMDocAgrmtBizStatus` |  | |  |  |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |  |  |
+| `_Document` | | ✓ | | | | |
 
 ## Source Code
 

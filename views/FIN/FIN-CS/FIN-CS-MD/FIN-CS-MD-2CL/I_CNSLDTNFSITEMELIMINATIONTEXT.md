@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |
-| `CnsldtnFSItemElimination` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemelimination preserving type )` |
-| `CnsldtnFSItemEliminationText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |
-| `CnsldtnFSItemElimLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |
-| `_CnsldtnFSItemElimination` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |  |  |
+| `CnsldtnFSItemElimination` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemelimination preserving type )` |  |  |
+| `CnsldtnFSItemEliminationText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |  |  |
+| `CnsldtnFSItemElimLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |  |  |
+| `_CnsldtnFSItemElimination` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,33 +31,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContract` | ✓ | |  |  |
-| `SalesContractItem` | ✓ | |  |  |
-| `BillingPlan` | ✓ | |  |  |
-| `BillingPlanItem` | ✓ | |  |  |
-| `BillingPlanItemForEdit` |  | |  |  |
-| `BillingPlanBillingDate` |  | |  |  |
-| `BillingPlanDateCategory` |  | |  |  |
-| `BillingPlanDateDescriptionCode` |  | |  |  |
-| `BillingPlanAmountPercent` |  | |  |  |
-| `BillingPlanAmount` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `BillingPlanRelatedBillgStatus` |  | |  |  |
-| `ProposedBillingDocumentType` |  | |  |  |
-| `BillingPlanType` |  | |  |  |
-| `BillingPlanBillingRule` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `AdoptingBillingDateID` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `SalesContractType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_SalesContract` | | ✓ | | |
-| `_ItemBillingPlan` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |  |  |
+| `SalesContractItem` | ✓ | |  |  |  |  |
+| `BillingPlan` | ✓ | |  |  |  |  |
+| `BillingPlanItem` | ✓ | |  |  |  |  |
+| `BillingPlanItemForEdit` |  | |  |  |  |  |
+| `BillingPlanBillingDate` |  | |  |  |  |  |
+| `BillingPlanDateCategory` |  | |  |  |  |  |
+| `BillingPlanDateDescriptionCode` |  | |  |  |  |  |
+| `BillingPlanAmountPercent` |  | |  |  |  |  |
+| `BillingPlanAmount` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `BillingPlanRelatedBillgStatus` |  | |  |  |  |  |
+| `ProposedBillingDocumentType` |  | |  |  |  |  |
+| `BillingPlanType` |  | |  |  |  |  |
+| `BillingPlanBillingRule` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `AdoptingBillingDateID` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `SalesContractType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_SalesContract` | | ✓ | | | | |
+| `_ItemBillingPlan` | | ✓ | | | | |
 
 ## Source Code
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `UnitOfMeasureDimension` | ✓ | |  | `dimid` |
-| `UnitOfMeasureDimensionName` |  | |  | `txdim` |
-| `_UnitOfMeasureDimension` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `UnitOfMeasureDimension` | ✓ | |  | `dimid` |  |  |
+| `UnitOfMeasureDimensionName` |  | |  | `txdim` |  |  |
+| `_UnitOfMeasureDimension` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

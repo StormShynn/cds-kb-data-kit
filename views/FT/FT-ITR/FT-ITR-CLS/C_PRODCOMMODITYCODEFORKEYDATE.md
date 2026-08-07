@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrdClassfctnNmbrSchm` | ✓ | |  |  |
-| `TrdClassfctnNmbrSchmCntnt` | ✓ | |  |  |
-| `Product` | ✓ | |  |  |
-| `ValidityStartDate` | ✓ | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CommodityCode` |  | |  | `cast (_CommodityCode.TrdClassfctnNmbr as /sapsll/comco)` |
-| `Country` |  | | `_TrdClassfctnNmbrSchmUsge` | `Country` |
-| `CustomsUnitOfMeasure` |  | | `_CommodityCode` | `CustomsUnitOfMeasure` |
-| `UnitOfMeasureSystem` |  | | `_CommodityCode` | `UnitOfMeasureSystem` |
-| `SecondCustomsUnitOfMeasure` |  | | `_CommodityCode` | `SecondCustomsUnitOfMeasure` |
-| `SecondSupplementaryUnit` |  | | `_CommodityCode` | `SecondSupplementaryUnit` |
-| `SupplementaryUnit` |  | | `_CommodityCode` | `SupplementaryUnit` |
-| `_CommodityCodeText` | | ✓ | | |
-| `_TrdClassfctnNmbrSchm` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdClassfctnNmbrSchm` | ✓ | |  |  |  |  |
+| `TrdClassfctnNmbrSchmCntnt` | ✓ | |  |  |  |  |
+| `Product` | ✓ | |  |  |  |  |
+| `ValidityStartDate` | ✓ | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CommodityCode` |  | |  | `cast (_CommodityCode.TrdClassfctnNmbr as /sapsll/comco)` |  |  |
+| `Country` |  | | `_TrdClassfctnNmbrSchmUsge` | `Country` |  |  |
+| `CustomsUnitOfMeasure` |  | | `_CommodityCode` | `CustomsUnitOfMeasure` |  |  |
+| `UnitOfMeasureSystem` |  | | `_CommodityCode` | `UnitOfMeasureSystem` |  |  |
+| `SecondCustomsUnitOfMeasure` |  | | `_CommodityCode` | `SecondCustomsUnitOfMeasure` |  |  |
+| `SecondSupplementaryUnit` |  | | `_CommodityCode` | `SecondSupplementaryUnit` |  |  |
+| `SupplementaryUnit` |  | | `_CommodityCode` | `SupplementaryUnit` |  |  |
+| `_CommodityCodeText` | | ✓ | | | | |
+| `_TrdClassfctnNmbrSchm` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Associations
 

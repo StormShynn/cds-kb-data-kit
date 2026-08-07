@@ -38,13 +38,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `domain_name` | ✓ | |  |  |
-| `value_position` | ✓ | |  |  |
-| `language` | ✓ | |  |  |
-| `value_low` |  | |  |  |
-| `Description` |  | |  | `text` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `domain_name` | ✓ | |  |  |  |  |
+| `value_position` | ✓ | |  |  |  |  |
+| `language` | ✓ | |  |  |  |  |
+| `value_low` |  | |  |  |  |  |
+| `Description` |  | |  | `text` |  |  |
 
 ## Source Code
 

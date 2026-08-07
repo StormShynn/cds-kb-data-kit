@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PhoneNumberType` | ✓ | |  | `cast ( domvalue_l as ad_flgmob)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `PhoneNumberTypeText` |  | |  | `ddtext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhoneNumberType` | ✓ | |  | `cast ( domvalue_l as ad_flgmob)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `PhoneNumberTypeText` |  | |  | `ddtext` |  |  |
 
 ## Source Code
 

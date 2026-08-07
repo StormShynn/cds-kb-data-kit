@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HandlingUnitUUID` | ✓ | |  | `guid_hu` |
-| `EWMHndlgUnitAltvIDType` | ✓ | |  | `idart` |
-| `EWMHndlgUnitAltvID` |  | |  | `huident` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HandlingUnitUUID` | ✓ | |  | `guid_hu` |  |  |
+| `EWMHndlgUnitAltvIDType` | ✓ | |  | `idart` |  |  |
+| `EWMHndlgUnitAltvID` |  | |  | `huident` |  |  |
 
 ## Source Code
 

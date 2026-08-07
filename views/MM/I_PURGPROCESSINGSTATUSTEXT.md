@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `PurchasingProcessingStatus` | ✓ | |  | `cast( dd07t.domvalue_l as meprocstate)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PurchasingProcessingStatusName` |  | |  | `cast( dd07t.ddtext as purchasingprocessingstatusname preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PurchasingProcessingStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `PurchasingProcessingStatus` | ✓ | |  | `cast( dd07t.domvalue_l as meprocstate)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PurchasingProcessingStatusName` |  | |  | `cast( dd07t.ddtext as purchasingprocessingstatusname preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PurchasingProcessingStatus` | | ✓ | | | | |
 
 ## Associations
 

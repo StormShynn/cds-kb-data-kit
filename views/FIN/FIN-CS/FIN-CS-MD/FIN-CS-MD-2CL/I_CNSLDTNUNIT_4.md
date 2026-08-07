@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationUnit` | ✓ | |  | `cast(bunit as fincs_consolidationunit preserving type )` |
-| `Country` |  | |  | `cast(cntry as fincs_country preserving type )` |
-| `Company` |  | |  | `cast(_Company.Company as fincs_company preserving type )` |
-| `ConsolidationUnitLink` |  | |  | `cast(link as fincs_md_link preserving type )` |
-| `ConsolidationUnitLinkLabel` |  | |  | `cast(linklabel as fincs_md_link_label preserving type )` |
-| `ETag` |  | |  | `etag` |
-| `CreationDateTime` |  | |  | `created_at` |
-| `_Text` | | ✓ | | |
-| `_CnsldtnUnitHierNode` | | ✓ | | |
-| `_TmprlNde` | | ✓ | | |
-| `_CnsldtnUnitByTime` | | ✓ | | |
-| `_CnsldtnUnitByTimeVersion` | | ✓ | | |
-| `_Country` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | |  | `cast(bunit as fincs_consolidationunit preserving type )` |  |  |
+| `Country` |  | |  | `cast(cntry as fincs_country preserving type )` |  |  |
+| `Company` |  | |  | `cast(_Company.Company as fincs_company preserving type )` |  |  |
+| `ConsolidationUnitLink` |  | |  | `cast(link as fincs_md_link preserving type )` |  |  |
+| `ConsolidationUnitLinkLabel` |  | |  | `cast(linklabel as fincs_md_link_label preserving type )` |  |  |
+| `ETag` |  | |  | `etag` |  |  |
+| `CreationDateTime` |  | |  | `created_at` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CnsldtnUnitHierNode` | | ✓ | | | | |
+| `_TmprlNde` | | ✓ | | | | |
+| `_CnsldtnUnitByTime` | | ✓ | | | | |
+| `_CnsldtnUnitByTimeVersion` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
 
 ## Associations
 

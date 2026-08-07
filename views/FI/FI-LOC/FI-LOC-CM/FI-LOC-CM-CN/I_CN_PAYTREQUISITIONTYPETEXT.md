@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentRequisitionType` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as payreqn_reqn_type preserving type)` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type)` |
-| `PaymentRequisitionTypeName` |  | |  | `cast( ddtext as payreqn_reqn_type_name preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_RequisitionType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentRequisitionType` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as payreqn_reqn_type preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type)` |  |  |
+| `PaymentRequisitionTypeName` |  | |  | `cast( ddtext as payreqn_reqn_type_name preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_RequisitionType` | | ✓ | | | | |
 
 ## Associations
 

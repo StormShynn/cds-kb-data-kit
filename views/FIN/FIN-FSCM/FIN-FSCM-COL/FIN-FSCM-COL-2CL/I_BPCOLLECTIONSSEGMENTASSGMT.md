@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` |  | |  | `} key partner` |
-| `CollectionSegment` |  | |  | `} key coll_segment` |
-| `BPCollSgmtAssignmentValidTo` |  | |  | `} key valid_until` |
-| `BPCollSgmtAssignmentValidFrom` |  | |  | `} valid_from` |
-| `CollectionGroup` |  | |  | `} coll_group` |
-| `CollectionSpecialist` |  | |  | `} coll_specialist` |
-| `CollectionBPMainContactPerson` |  | |  | `} last_contact` |
-| `_BusinessPartner` | | ✓ | | |
-| `_CollectionSegment` | | ✓ | | |
-| `_CollectionGroup` | | ✓ | | |
-| `_CollectionSpecialist` | | ✓ | | |
-| `_MainContactPerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `CollectionSegment` | ✓ | |  | `coll_segment` |  |  |
+| `BPCollSgmtAssignmentValidTo` | ✓ | |  | `valid_until` |  |  |
+| `BPCollSgmtAssignmentValidFrom` |  | |  | `valid_from` |  |  |
+| `CollectionGroup` |  | |  | `coll_group` |  |  |
+| `CollectionSpecialist` |  | |  | `coll_specialist` |  |  |
+| `CollectionBPMainContactPerson` |  | |  | `last_contact` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CollectionSegment` | | ✓ | | | | |
+| `_CollectionGroup` | | ✓ | | | | |
+| `_CollectionSpecialist` | | ✓ | | | | |
+| `_MainContactPerson` | | ✓ | | | | |
 
 ## Associations
 

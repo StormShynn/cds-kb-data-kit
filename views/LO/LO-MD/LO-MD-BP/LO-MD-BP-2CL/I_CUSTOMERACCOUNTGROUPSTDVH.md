@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerAccountGroup` | ✓ | |  |  |
-| `_CustomerAccountGroupText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerAccountGroup` | ✓ | |  |  |  |  |
+| `_CustomerAccountGroupText` | | ✓ | | | | |
 
 ## Source Code
 

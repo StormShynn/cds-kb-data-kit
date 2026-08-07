@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PartnerCompany` | ✓ | |  |  |
-| `GLAccount` | ✓ | |  | `cast ( 'F_BKPF_BES' as fis_racct preserving type )` |
-| `AuthorizationGroup` | ✓ | |  |  |
-| `AuthorizationObject` |  | |  | `'F_BKPF_BES'` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PartnerCompany` | ✓ | |  |  |  |  |
+| `GLAccount` | ✓ | |  | `cast ( 'F_BKPF_BES' as fis_racct preserving type )` |  |  |
+| `AuthorizationGroup` | ✓ | |  |  |  |  |
+| `AuthorizationObject` |  | |  | `'F_BKPF_BES'` |  |  |
 
 ## Source Code
 

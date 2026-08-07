@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanContainerCalculationType` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as kcart preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanContainerCalculationType` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as kcart preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

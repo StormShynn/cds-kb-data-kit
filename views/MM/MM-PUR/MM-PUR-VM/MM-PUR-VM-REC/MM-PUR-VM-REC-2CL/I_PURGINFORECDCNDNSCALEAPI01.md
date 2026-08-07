@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingInfoRecord` | ✓ | |  |  |
-| `PurchasingOrganization` | ✓ | |  |  |
-| `PurchasingInfoRecordCategory` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `ConditionRecord` | ✓ | |  |  |
-| `ConditionValidityEndDate` | ✓ | |  |  |
-| `ConditionSequentialNumberShort` | ✓ | |  |  |
-| `ConditionScaleLine` | ✓ | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionScaleQuantity` |  | |  |  |
-| `ConditionScaleQuantityUnit` |  | |  |  |
-| `ConditionScaleAmount` |  | |  |  |
-| `ConditionScaleAmountCurrency` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionRateValueUnit` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionRateAmount` |  | |  | `cast ( ConditionRateAmount as vfprc_rate_amount )` |
-| `ConditionCurrency` |  | |  | `cast ( ConditionCurrency as waers )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `PurchasingInfoRecordCategory` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ConditionRecord` | ✓ | |  |  |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |  |  |
+| `ConditionScaleLine` | ✓ | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionScaleQuantity` |  | |  |  |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |  |  |
+| `ConditionScaleAmount` |  | |  |  |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionRateValueUnit` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  | `cast ( ConditionRateAmount as vfprc_rate_amount )` |  |  |
+| `ConditionCurrency` |  | |  | `cast ( ConditionCurrency as waers )` |  |  |
 
 ## Source Code
 

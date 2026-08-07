@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralPurchaseContract` | ✓ | |  | `PurchasingDocument` |
-| `CntrlPurContrDistrMsgSqncNmbr` | ✓ | |  | `SequenceNumber` |
-| `DistrResponseMessageUUID` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `ExtContractForPurg` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `SystemMessageType` |  | |  |  |
-| `SystemMessageIdentification` |  | |  |  |
-| `SystemMessageNumber` |  | |  |  |
-| `SystemMessageVariable1` |  | |  |  |
-| `SystemMessageVariable2` |  | |  |  |
-| `SystemMessageVariable3` |  | |  |  |
-| `SystemMessageVariable4` |  | |  |  |
-| `SystemMessageText` |  | |  |  |
-| `DistrResponseReceivedDateTime` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | | `_CentralPurchaseContract` | `IsEndOfPurposeBlocked` |
-| `PurchasingOrganization` |  | | `_CentralPurchaseContract` | `PurchasingOrganization` |
-| `PurchasingGroup` |  | | `_CentralPurchaseContract` | `PurchasingGroup` |
-| `PurchaseContractType` |  | | `_CentralPurchaseContract` | `PurchaseContractType` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  | `PurchasingDocument` |  |  |
+| `CntrlPurContrDistrMsgSqncNmbr` | ✓ | |  | `SequenceNumber` |  |  |
+| `DistrResponseMessageUUID` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `ExtContractForPurg` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `SystemMessageType` |  | |  |  |  |  |
+| `SystemMessageIdentification` |  | |  |  |  |  |
+| `SystemMessageNumber` |  | |  |  |  |  |
+| `SystemMessageVariable1` |  | |  |  |  |  |
+| `SystemMessageVariable2` |  | |  |  |  |  |
+| `SystemMessageVariable3` |  | |  |  |  |  |
+| `SystemMessageVariable4` |  | |  |  |  |  |
+| `SystemMessageText` |  | |  |  |  |  |
+| `DistrResponseReceivedDateTime` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | | `_CentralPurchaseContract` | `IsEndOfPurposeBlocked` |  |  |
+| `PurchasingOrganization` |  | | `_CentralPurchaseContract` | `PurchasingOrganization` |  |  |
+| `PurchasingGroup` |  | | `_CentralPurchaseContract` | `PurchasingGroup` |  |  |
+| `PurchaseContractType` |  | | `_CentralPurchaseContract` | `PurchaseContractType` |  |  |
 
 ## Source Code
 

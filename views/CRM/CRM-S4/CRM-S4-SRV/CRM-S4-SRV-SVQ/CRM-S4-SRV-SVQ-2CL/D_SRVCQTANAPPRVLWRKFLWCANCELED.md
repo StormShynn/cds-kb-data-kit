@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustMgmtObjectType` |  | |  | `crmt_subobject_category_db` |
-| `ServiceQuotationUUID` |  | |  | `crmt_object_guid` |
-| `ServiceQuotationDescription` |  | |  | `crmt_process_description` |
-| `ServiceQuotationType` |  | |  | `crmt_process_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtObjectType` |  | |  | `crmt_subobject_category_db` |  |  |
+| `ServiceQuotationUUID` |  | |  | `crmt_object_guid` |  |  |
+| `ServiceQuotationDescription` |  | |  | `crmt_process_description` |  |  |
+| `ServiceQuotationType` |  | |  | `crmt_process_type` |  |  |
 
 ## Source Code
 

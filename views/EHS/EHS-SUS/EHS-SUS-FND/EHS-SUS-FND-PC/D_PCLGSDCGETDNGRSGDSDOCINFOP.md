@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OutputScenario` |  | |  | `ehdgm_output_scenario` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `D_PCLgsDcGetDaGdsDocInfoItemP` |  | |  | `_Items : composition [0..*] of D_PCLgsDcGetDaGdsDocInfoItemP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OutputScenario` |  | |  | `ehdgm_output_scenario` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `D_PCLgsDcGetDaGdsDocInfoItemP` |  | |  | `_Items : composition [0..*] of D_PCLgsDcGetDaGdsDocInfoItemP` |  |  |
 
 ## Source Code
 

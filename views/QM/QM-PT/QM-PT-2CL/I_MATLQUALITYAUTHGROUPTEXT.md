@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `MatlQualityAuthorizationGroup` | ✓ | |  | `cast( qmatauth as vdm_qmatauth preserving type )` |
-| `MatlQltyAuthorizationGrpText` |  | |  | `cast( kurztext as vdm_qmatauth_text preserving type )` |
-| `_MatlQualityAuthGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `MatlQualityAuthorizationGroup` | ✓ | |  | `cast( qmatauth as vdm_qmatauth preserving type )` |  |  |
+| `MatlQltyAuthorizationGrpText` |  | |  | `cast( kurztext as vdm_qmatauth_text preserving type )` |  |  |
+| `_MatlQualityAuthGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

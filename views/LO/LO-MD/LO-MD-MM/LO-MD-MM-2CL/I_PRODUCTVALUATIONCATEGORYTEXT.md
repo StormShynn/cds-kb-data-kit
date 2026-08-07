@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InventoryValuationCategory` | ✓ | |  | `bwtty` |
-| `Language` | ✓ | |  | `spras` |
-| `InventoryValuationCategoryName` |  | |  | `cast( t149t.btbez as inventoryvaluationcategoryname )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InventoryValuationCategory` | ✓ | |  | `bwtty` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `InventoryValuationCategoryName` |  | |  | `cast( t149t.btbez as inventoryvaluationcategoryname )` |  |  |
 
 ## Source Code
 

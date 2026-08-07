@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `ReplacementPartType` | ✓ | |  | `cast ( domvalue_l as atpkz )` |
-| `Name` |  | |  | `cast ( ddtext as val_text )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `ReplacementPartType` | ✓ | |  | `cast ( domvalue_l as atpkz )` |  |  |
+| `Name` |  | |  | `cast ( ddtext as val_text )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

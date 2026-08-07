@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  | `cast( t009.periv as fis_periv preserving type )` |
-| `FiscalPeriodIsEqualMonth` |  | |  | `cast( t009.xkale as fis_xkale preserving type )` |
-| `IsYearDependent` |  | |  | `xjabh` |
-| `PostingPeriodsNumberVal` |  | |  | `anzbp` |
-| `NumberOfSpecialPeriods` |  | |  | `anzsp` |
-| `FsclWeekStartIsFsclYearStart` |  | |  | `xweek` |
-| `FiscalCalendarIsWeekBased` |  | |  | `xweekquart` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  | `cast( t009.periv as fis_periv preserving type )` |  |  |
+| `FiscalPeriodIsEqualMonth` |  | |  | `cast( t009.xkale as fis_xkale preserving type )` |  |  |
+| `IsYearDependent` |  | |  | `xjabh` |  |  |
+| `PostingPeriodsNumberVal` |  | |  | `anzbp` |  |  |
+| `NumberOfSpecialPeriods` |  | |  | `anzsp` |  |  |
+| `FsclWeekStartIsFsclYearStart` |  | |  | `xweek` |  |  |
+| `FiscalCalendarIsWeekBased` |  | |  | `xweekquart` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

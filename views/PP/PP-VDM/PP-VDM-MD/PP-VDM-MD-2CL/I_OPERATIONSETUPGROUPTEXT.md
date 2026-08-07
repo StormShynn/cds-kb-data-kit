@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `OperationSetupGroupCategory` | ✓ | |  | `cast(txt.rfgrp as pph_rfgrp preserving type)` |
-| `OperationSetupGroup` | ✓ | |  | `cast(txt.rfsch as pph_rfsch preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `OperationSetupGroupName` |  | |  | `txt` |
-| `_Language` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_OperationSetupGroupCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `OperationSetupGroupCategory` | ✓ | |  | `cast(txt.rfgrp as pph_rfgrp preserving type)` |  |  |
+| `OperationSetupGroup` | ✓ | |  | `cast(txt.rfsch as pph_rfsch preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OperationSetupGroupName` |  | |  | `txt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_OperationSetupGroupCategory` | | ✓ | | | | |
 
 ## Associations
 

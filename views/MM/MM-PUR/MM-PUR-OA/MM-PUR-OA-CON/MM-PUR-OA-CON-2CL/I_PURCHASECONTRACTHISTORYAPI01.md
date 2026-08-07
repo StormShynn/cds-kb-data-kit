@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractItem` | ✓ | |  |  |
-| `ReleaseOrder` | ✓ | |  |  |
-| `ReleaseOrderItem` | ✓ | |  |  |
-| `ReleaseOrderItemOrderQuantity` |  | |  |  |
-| `ReleaseOrderItemNetAmount` |  | |  |  |
-| `ReleaseOrderItemIsDeleted` |  | |  |  |
-| `ReleaseOrderDate` |  | |  |  |
-| `ReleaseOrderItemQuantityUnit` |  | |  |  |
-| `ReleaseOrderCurrency` |  | |  |  |
-| `ReleaseOrderItemLastChgDate` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `_PurchaseContractAPI01` | | ✓ | | |
-| `_PurchaseContractItemAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |  |  |
+| `ReleaseOrder` | ✓ | |  |  |  |  |
+| `ReleaseOrderItem` | ✓ | |  |  |  |  |
+| `ReleaseOrderItemOrderQuantity` |  | |  |  |  |  |
+| `ReleaseOrderItemNetAmount` |  | |  |  |  |  |
+| `ReleaseOrderItemIsDeleted` |  | |  |  |  |  |
+| `ReleaseOrderDate` |  | |  |  |  |  |
+| `ReleaseOrderItemQuantityUnit` |  | |  |  |  |  |
+| `ReleaseOrderCurrency` |  | |  |  |  |  |
+| `ReleaseOrderItemLastChgDate` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `_PurchaseContractAPI01` | | ✓ | | | | |
+| `_PurchaseContractItemAPI01` | | ✓ | | | | |
 
 ## Associations
 

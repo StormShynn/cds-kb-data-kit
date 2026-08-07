@@ -29,74 +29,74 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  | `BillOfOperationsType` |
-| `TaskListGroup` | ✓ | |  | `BillOfOperationsGroup` |
-| `TaskListOperationInternalId` | ✓ | |  | `BOOOperationInternalID` |
-| `BOOOpInternalVersionCounter` | ✓ | |  |  |
-| `TaskListGroupCounter` |  | |  | `BillOfOperationsVariant` |
-| `TaskListSequence` |  | |  | `BillOfOperationsSequence` |
-| `BOOOperationInternalID` |  | |  |  |
-| `TaskListOpBOMItmIntVersCounter` |  | |  | `BOOSqncOpAssgmtIntVersionCntr` |
-| `SuperiorOperationInternalID` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `MaintenanceTaskListOperation` |  | |  | `case when superior.Operation_2 is not null then superior.Operation_2 else TaskListOpBasic.Operation_2 end` |
-| `MaintTaskListSubOperation` |  | |  | `case when TaskListOpBasic.SuperiorOperationInternalID <> '00000000' then TaskListOpBasic.Operation_2 else '' end` |
-| `OperationText` |  | |  |  |
-| `OperationControlProfile` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `OpPlannedWorkQuantity` |  | |  |  |
-| `OpWorkQuantityUnit` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  | `cast ( case when plas.IsDeleted = 'X' then plas.ValidityStartDate else TaskListOpBasic.ValidityStartDate end as vdm_v_validity_start_date preserving type )` |
-| `ValidityEndDate` |  | |  | `cast ( case when plas.ValidityEndDate <= TaskListOpBasic.ValidityEndDate then plas.ValidityEndDate else TaskListOpBasic.ValidityEndDate end as vdm_v_validity_end_date preserving type )` |
-| `OperationStandardTextCode` |  | |  |  |
-| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |
-| `OpExternalProcessingPrice` |  | |  |  |
-| `NumberOfOperationPriceUnits` |  | |  |  |
-| `OpExternalProcessingCurrency` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `OperationStandardDuration` |  | |  |  |
-| `OperationStandardDurationUnit` |  | |  |  |
-| `NumberOfCapacities` |  | |  |  |
-| `OperationSystemCondition` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `OperationCalculationControl` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `PurchaseOrderQty` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `FunctionalLocation` |  | |  | `cast( TaskListOpBasic.FunctionalLocation as ps_s4_tplnr preserving type )` |
-| `Equipment` |  | |  |  |
-| `PurchasingInfoRecordCategory` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `IsDeleted` |  | |  | `case when plas.IsDeleted = 'X' then plas.IsDeleted else TaskListOpBasic.IsDeleted end` |
-| `IsImplicitlyDeleted` |  | |  |  |
-| `OperationUnit` |  | |  |  |
-| `OpQtyToBaseQtyDnmntr` |  | |  |  |
-| `OpQtyToBaseQtyNmrtr` |  | |  |  |
-| `OperationReferenceQuantity` |  | |  |  |
-| `PlannedDeliveryDuration` |  | |  |  |
-| `CostElement` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `OperationCostingRelevancyType` |  | |  |  |
-| `MinimumDuration` |  | |  |  |
-| `MinimumDurationUnit` |  | |  |  |
-| `OperationWorkPercent` |  | |  |  |
-| `CapRqmtsDistributionFunction` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `CapacityRequirementDistrKey` |  | |  |  |
-| `MaintOperationExecStageCode` |  | |  |  |
-| `_MaintenanceTaskList` | | ✓ | | |
-| `_TaskListType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  | `BillOfOperationsType` |  |  |
+| `TaskListGroup` | ✓ | |  | `BillOfOperationsGroup` |  |  |
+| `TaskListOperationInternalId` | ✓ | |  | `BOOOperationInternalID` |  |  |
+| `BOOOpInternalVersionCounter` | ✓ | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  | `BillOfOperationsVariant` |  |  |
+| `TaskListSequence` |  | |  | `BillOfOperationsSequence` |  |  |
+| `BOOOperationInternalID` |  | |  |  |  |  |
+| `TaskListOpBOMItmIntVersCounter` |  | |  | `BOOSqncOpAssgmtIntVersionCntr` |  |  |
+| `SuperiorOperationInternalID` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `MaintenanceTaskListOperation` |  | |  | `case when superior.Operation_2 is not null then superior.Operation_2 else TaskListOpBasic.Operation_2 end` |  |  |
+| `MaintTaskListSubOperation` |  | |  | `case when TaskListOpBasic.SuperiorOperationInternalID <> '00000000' then TaskListOpBasic.Operation_2 else '' end` |  |  |
+| `OperationText` |  | |  |  |  |  |
+| `OperationControlProfile` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `OpPlannedWorkQuantity` |  | |  |  |  |  |
+| `OpWorkQuantityUnit` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  | `cast ( case when plas.IsDeleted = 'X' then plas.ValidityStartDate else TaskListOpBasic.ValidityStartDate end as vdm_v_validity_start_date preserving type )` |  |  |
+| `ValidityEndDate` |  | |  | `cast ( case when plas.ValidityEndDate <= TaskListOpBasic.ValidityEndDate then plas.ValidityEndDate else TaskListOpBasic.ValidityEndDate end as vdm_v_validity_end_date preserving type )` |  |  |
+| `OperationStandardTextCode` |  | |  |  |  |  |
+| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `OperationStandardDuration` |  | |  |  |  |  |
+| `OperationStandardDurationUnit` |  | |  |  |  |  |
+| `NumberOfCapacities` |  | |  |  |  |  |
+| `OperationSystemCondition` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `OperationCalculationControl` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `PurchaseOrderQty` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  | `cast( TaskListOpBasic.FunctionalLocation as ps_s4_tplnr preserving type )` |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `PurchasingInfoRecordCategory` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `IsDeleted` |  | |  | `case when plas.IsDeleted = 'X' then plas.IsDeleted else TaskListOpBasic.IsDeleted end` |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |  |  |
+| `OperationUnit` |  | |  |  |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OperationReferenceQuantity` |  | |  |  |  |  |
+| `PlannedDeliveryDuration` |  | |  |  |  |  |
+| `CostElement` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `OperationCostingRelevancyType` |  | |  |  |  |  |
+| `MinimumDuration` |  | |  |  |  |  |
+| `MinimumDurationUnit` |  | |  |  |  |  |
+| `OperationWorkPercent` |  | |  |  |  |  |
+| `CapRqmtsDistributionFunction` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `CapacityRequirementDistrKey` |  | |  |  |  |  |
+| `MaintOperationExecStageCode` |  | |  |  |  |  |
+| `_MaintenanceTaskList` | | ✓ | | | | |
+| `_TaskListType` | | ✓ | | | | |
 
 ## Associations
 

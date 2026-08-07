@@ -30,83 +30,83 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMOutboundDeliveryOrder` | ✓ | |  |  |
-| `EWMOutboundDeliveryOrderItem` | ✓ | |  |  |
-| `OutboundDeliveryOrderUUID` |  | |  |  |
-| `OutboundDeliveryOrderItemUUID` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `EWMDeliveryDocumentCategory` |  | |  |  |
-| `EWMOutbDelivOrderItemCategory` |  | |  |  |
-| `EWMOutbDeliveryOrderItemType` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductExternalID` |  | |  |  |
-| `Batch` |  | |  |  |
-| `ProductQuantity` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `SerialNumberRequiredLevel` |  | |  |  |
-| `StagingArea` |  | |  |  |
-| `StagingAreaGroup` |  | |  |  |
-| `StagingBay` |  | |  |  |
-| `GoodsIssueStatus` |  | |  |  |
-| `PlannedPickingStatus` |  | |  |  |
-| `PickingStatus` |  | |  |  |
-| `CompletionStatus` |  | |  |  |
-| `OverallBlockStatus` |  | |  |  |
-| `LoadingStatus` |  | |  |  |
-| `EWMGoodsIssueAndDistrStatus` |  | |  |  |
-| `EWMPlndPickingAndDistrStatus` |  | |  |  |
-| `PickingAndDistributionStatus` |  | |  |  |
-| `EWMWhseReqItmBatSpltParentItem` |  | |  |  |
-| `EWMWhseReqGrossVolume` |  | |  |  |
-| `EWMWhseReqGrossVolumeUnit` |  | |  |  |
-| `EWMWhseReqGrossWeight` |  | |  |  |
-| `EWMWhseReqGrossWeightUnit` |  | |  |  |
-| `WarehouseProcessType` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `GoodsMovementBin` |  | |  |  |
-| `EWMProductionSupplyArea` |  | |  |  |
-| `EWMDelivLastChangeUTCDateTime` |  | |  |  |
-| `WarehouseTimeZone` |  | |  |  |
-| `EWMStorageType` |  | |  |  |
-| `EWMStorageSection` |  | |  |  |
-| `EWMStorageBin` |  | |  |  |
-| `EWMGoodsRecipient` |  | |  |  |
-| `EWMRecipientLocationName` |  | |  |  |
-| `EWMLoadingPoint` |  | |  |  |
-| `EWMUnloadingPoint` |  | |  |  |
-| `WarehouseDoor` |  | |  |  |
-| `EWMWhseReqItmHasOpnWhseTsk` |  | |  |  |
-| `PlndGoodsIssueStartUTCDateTime` |  | |  |  |
-| `ActlGoodsIssueStartUTCDateTime` |  | |  |  |
-| `EWMWhseReqItmBBDSLEDUTCDteTme` |  | |  |  |
-| `RouteSchedule` |  | |  |  |
-| `EntitledToDisposeParty` |  | |  |  |
-| `EntitledToDisposePartyName` |  | |  |  |
-| `EWMStockUsage` |  | |  |  |
-| `EWMStockType` |  | |  |  |
-| `EWMStockOwner` |  | |  |  |
-| `EWMStockOwnerName` |  | |  |  |
-| `DeliveryItemStockTypeDetnCode` |  | |  |  |
-| `ExternalStockDocumentNumber` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `SpecialStockIdfgSalesOrder` |  | |  |  |
-| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
-| `CountryOfOrigin` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `ManufacturingOrder` |  | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `MaintenanceOrderOperation` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `OutboundDelivery` |  | |  |  |
-| `OutboundDeliveryItem` |  | |  |  |
-| `StockDocumentCategory` |  | |  |  |
-| `Plant` |  | |  |  |
-| `_WhseOutbDeliveryOrderHead` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMOutboundDeliveryOrder` | ✓ | |  |  |  |  |
+| `EWMOutboundDeliveryOrderItem` | ✓ | |  |  |  |  |
+| `OutboundDeliveryOrderUUID` |  | |  |  |  |  |
+| `OutboundDeliveryOrderItemUUID` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  |  |  |  |
+| `EWMOutbDelivOrderItemCategory` |  | |  |  |  |  |
+| `EWMOutbDeliveryOrderItemType` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductExternalID` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ProductQuantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `SerialNumberRequiredLevel` |  | |  |  |  |  |
+| `StagingArea` |  | |  |  |  |  |
+| `StagingAreaGroup` |  | |  |  |  |  |
+| `StagingBay` |  | |  |  |  |  |
+| `GoodsIssueStatus` |  | |  |  |  |  |
+| `PlannedPickingStatus` |  | |  |  |  |  |
+| `PickingStatus` |  | |  |  |  |  |
+| `CompletionStatus` |  | |  |  |  |  |
+| `OverallBlockStatus` |  | |  |  |  |  |
+| `LoadingStatus` |  | |  |  |  |  |
+| `EWMGoodsIssueAndDistrStatus` |  | |  |  |  |  |
+| `EWMPlndPickingAndDistrStatus` |  | |  |  |  |  |
+| `PickingAndDistributionStatus` |  | |  |  |  |  |
+| `EWMWhseReqItmBatSpltParentItem` |  | |  |  |  |  |
+| `EWMWhseReqGrossVolume` |  | |  |  |  |  |
+| `EWMWhseReqGrossVolumeUnit` |  | |  |  |  |  |
+| `EWMWhseReqGrossWeight` |  | |  |  |  |  |
+| `EWMWhseReqGrossWeightUnit` |  | |  |  |  |  |
+| `WarehouseProcessType` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `GoodsMovementBin` |  | |  |  |  |  |
+| `EWMProductionSupplyArea` |  | |  |  |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  |  |  |  |
+| `WarehouseTimeZone` |  | |  |  |  |  |
+| `EWMStorageType` |  | |  |  |  |  |
+| `EWMStorageSection` |  | |  |  |  |  |
+| `EWMStorageBin` |  | |  |  |  |  |
+| `EWMGoodsRecipient` |  | |  |  |  |  |
+| `EWMRecipientLocationName` |  | |  |  |  |  |
+| `EWMLoadingPoint` |  | |  |  |  |  |
+| `EWMUnloadingPoint` |  | |  |  |  |  |
+| `WarehouseDoor` |  | |  |  |  |  |
+| `EWMWhseReqItmHasOpnWhseTsk` |  | |  |  |  |  |
+| `PlndGoodsIssueStartUTCDateTime` |  | |  |  |  |  |
+| `ActlGoodsIssueStartUTCDateTime` |  | |  |  |  |  |
+| `EWMWhseReqItmBBDSLEDUTCDteTme` |  | |  |  |  |  |
+| `RouteSchedule` |  | |  |  |  |  |
+| `EntitledToDisposeParty` |  | |  |  |  |  |
+| `EntitledToDisposePartyName` |  | |  |  |  |  |
+| `EWMStockUsage` |  | |  |  |  |  |
+| `EWMStockType` |  | |  |  |  |  |
+| `EWMStockOwner` |  | |  |  |  |  |
+| `EWMStockOwnerName` |  | |  |  |  |  |
+| `DeliveryItemStockTypeDetnCode` |  | |  |  |  |  |
+| `ExternalStockDocumentNumber` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `ManufacturingOrder` |  | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `OutboundDelivery` |  | |  |  |  |  |
+| `OutboundDeliveryItem` |  | |  |  |  |  |
+| `StockDocumentCategory` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `_WhseOutbDeliveryOrderHead` | | ✓ | | | | |
 
 ## Source Code
 

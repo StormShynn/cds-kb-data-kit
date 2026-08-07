@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NFSourceDocumentNumber` | ✓ | | `_BR_NFItem` | `BR_NFSourceDocumentNumber` |
-| `BR_NotaFiscal` |  | | `_BR_NFDocument` | `BR_NotaFiscal` |
-| `BR_NFType` |  | | `_BR_NFDocument` | `BR_NFType` |
-| `BR_NFSNumber` |  | | `_BR_NFDocument` | `BR_NFSNumber` |
-| `BR_NFSVerificationCode` |  | | `_BR_NFDocument` | `BR_NFSVerificationCode` |
-| `BR_NFAuthznProtocolNumber` |  | | `_BR_NFDocument` | `BR_NFAuthznProtocolNumber` |
-| `BR_NFAuthznProtocolNumber16` |  | | `_BR_NFDocument` | `BR_NFAuthznProtocolNumber16` |
-| `BR_NFAuthenticationDate` |  | | `_BR_NFDocument` | `BR_NFAuthenticationDate` |
-| `BR_NFAuthenticationTime` |  | | `_BR_NFDocument` | `BR_NFAuthenticationTime` |
-| `BR_NFeRandomNumber` |  | | `_BR_NFeActive` | `BR_NFeRandomNumber` |
-| `IssuingType` |  | | `_BR_NFeActive` | `IssuingType` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NFSourceDocumentNumber` | ✓ | | `_BR_NFItem` | `BR_NFSourceDocumentNumber` |  |  |
+| `BR_NotaFiscal` |  | | `_BR_NFDocument` | `BR_NotaFiscal` |  |  |
+| `BR_NFType` |  | | `_BR_NFDocument` | `BR_NFType` |  |  |
+| `BR_NFSNumber` |  | | `_BR_NFDocument` | `BR_NFSNumber` |  |  |
+| `BR_NFSVerificationCode` |  | | `_BR_NFDocument` | `BR_NFSVerificationCode` |  |  |
+| `BR_NFAuthznProtocolNumber` |  | | `_BR_NFDocument` | `BR_NFAuthznProtocolNumber` |  |  |
+| `BR_NFAuthznProtocolNumber16` |  | | `_BR_NFDocument` | `BR_NFAuthznProtocolNumber16` |  |  |
+| `BR_NFAuthenticationDate` |  | | `_BR_NFDocument` | `BR_NFAuthenticationDate` |  |  |
+| `BR_NFAuthenticationTime` |  | | `_BR_NFDocument` | `BR_NFAuthenticationTime` |  |  |
+| `BR_NFeRandomNumber` |  | | `_BR_NFeActive` | `BR_NFeRandomNumber` |  |  |
+| `IssuingType` |  | | `_BR_NFeActive` | `IssuingType` |  |  |
 
 ## Source Code
 

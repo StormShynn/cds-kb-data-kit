@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CalendarDate` | ✓ | |  | `calendardate` |
-| `CalendarYear` |  | |  | `calendaryear` |
-| `CalendarQuarter` |  | |  | `calendarquarter` |
-| `CalendarMonth` |  | |  | `calendarmonth` |
-| `CalendarWeek` |  | |  | `calendarweek` |
-| `CalendarDay` |  | |  | `calendarday` |
-| `YearMonth` |  | |  | `yearmonth` |
-| `YearQuarter` |  | |  | `yearquarter` |
-| `YearWeek` |  | |  | `yearweek` |
-| `WeekDay` |  | |  | `weekday` |
-| `FirstDayOfWeekDate` |  | |  | `firstdayofweekdate` |
-| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` |
-| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` |
-| `CalendarDayOfYear` |  | |  | `calendardayofyear` |
-| `YearDay` |  | |  | `yearday` |
-| `_CalendarMonth` | | ✓ | | |
-| `_CalendarQuarter` | | ✓ | | |
-| `_CalendarYear` | | ✓ | | |
-| `_WeekDay` | | ✓ | | |
-| `_YearMonth` | | ✓ | | |
-| `_YearWeek` | | ✓ | | |
-| `_CalendarWeek` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalendarDate` | ✓ | |  | `calendardate` |  |  |
+| `CalendarYear` |  | |  | `calendaryear` |  |  |
+| `CalendarQuarter` |  | |  | `calendarquarter` |  |  |
+| `CalendarMonth` |  | |  | `calendarmonth` |  |  |
+| `CalendarWeek` |  | |  | `calendarweek` |  |  |
+| `CalendarDay` |  | |  | `calendarday` |  |  |
+| `YearMonth` |  | |  | `yearmonth` |  |  |
+| `YearQuarter` |  | |  | `yearquarter` |  |  |
+| `YearWeek` |  | |  | `yearweek` |  |  |
+| `WeekDay` |  | |  | `weekday` |  |  |
+| `FirstDayOfWeekDate` |  | |  | `firstdayofweekdate` |  |  |
+| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` |  |  |
+| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` |  |  |
+| `CalendarDayOfYear` |  | |  | `calendardayofyear` |  |  |
+| `YearDay` |  | |  | `yearday` |  |  |
+| `_CalendarMonth` | | ✓ | | | | |
+| `_CalendarQuarter` | | ✓ | | | | |
+| `_CalendarYear` | | ✓ | | | | |
+| `_WeekDay` | | ✓ | | | | |
+| `_YearMonth` | | ✓ | | | | |
+| `_YearWeek` | | ✓ | | | | |
+| `_CalendarWeek` | | ✓ | | | | |
 
 ## Associations
 

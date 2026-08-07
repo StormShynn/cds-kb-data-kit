@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintPriorityType` | ✓ | |  | `artpr` |
-| `Language` | ✓ | |  | `spras` |
-| `MaintPriorityTypeDesc` |  | |  | `artprx` |
-| `_Language` | | ✓ | | |
-| `_PMNotificationPriorityType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintPriorityType` | ✓ | |  | `artpr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaintPriorityTypeDesc` |  | |  | `artprx` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PMNotificationPriorityType` | | ✓ | | | | |
 
 ## Associations
 

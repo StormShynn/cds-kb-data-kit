@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintNotifDetectionCodeGroup` | ✓ | |  | `detectioncodegroup` |
-| `MaintNotifDetectionCode` | ✓ | |  | `detectioncode` |
-| `MaintNotifDetectionCodeText` |  | |  | `_DetectionCodeText[1:Language=$session.system_language].MaintNotifDetectionCodeText` |
-| `MaintNotifDetectionCodeGrpTxt` |  | |  | `_DetectionCodeGroupText[1:Language=$session.system_language].MaintNotifDetectionCodeGrpTxt` |
-| `_DetectionCode` | | ✓ | | |
-| `_DetectionCodeGroup` | | ✓ | | |
-| `_DetectionCodeText` | | ✓ | | |
-| `_DetectionCodeGroupText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintNotifDetectionCodeGroup` | ✓ | |  | `detectioncodegroup` |  |  |
+| `MaintNotifDetectionCode` | ✓ | |  | `detectioncode` |  |  |
+| `MaintNotifDetectionCodeText` |  | |  | `_DetectionCodeText[1:Language=$session.system_language].MaintNotifDetectionCodeText` |  |  |
+| `MaintNotifDetectionCodeGrpTxt` |  | |  | `_DetectionCodeGroupText[1:Language=$session.system_language].MaintNotifDetectionCodeGrpTxt` |  |  |
+| `_DetectionCode` | | ✓ | | | | |
+| `_DetectionCodeGroup` | | ✓ | | | | |
+| `_DetectionCodeText` | | ✓ | | | | |
+| `_DetectionCodeGroupText` | | ✓ | | | | |
 
 ## Associations
 

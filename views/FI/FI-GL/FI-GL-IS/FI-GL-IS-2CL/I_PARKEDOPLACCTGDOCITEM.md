@@ -29,227 +29,227 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SourceCompanyCode` | ✓ | |  |  |
-| `SourceFiscalYear` | ✓ | |  |  |
-| `SourceAccountingDocument` | ✓ | |  |  |
-| `SourceAccountingDocumentItem` | ✓ | |  |  |
-| `AccountAssignmentNumber` |  | |  |  |
-| `AssetContract` |  | |  |  |
-| `AssetTransactionType` |  | |  |  |
-| `AssetValueDate` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `BPBankAccountInternalID` |  | |  |  |
-| `BranchAccount` |  | |  |  |
-| `BudgetPeriod` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount1DueDate` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `CashDiscount2DueDate` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `CashFlowType` |  | |  |  |
-| `CommitmentItemShortID` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CompanyCodeCurrencyDetnMethod` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `CostObject` |  | |  |  |
-| `CostOriginGroup` |  | |  |  |
-| `CreditControlArea` |  | |  |  |
-| `Customer` |  | |  |  |
-| `DataExchangeInstruction1` |  | |  |  |
-| `DataExchangeInstruction2` |  | |  |  |
-| `DataExchangeInstruction3` |  | |  |  |
-| `DataExchangeInstruction4` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `DueCalculationBaseDate` |  | |  |  |
-| `DunningArea` |  | |  |  |
-| `DunningBlockingReason` |  | |  |  |
-| `DunningKey` |  | |  |  |
-| `DunningLevel` |  | |  |  |
-| `FinancialAccountType` |  | |  |  |
-| `FinancialTransactionType` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `FixedCashDiscount` |  | |  |  |
-| `FollowOnDocumentType` |  | |  |  |
-| `Fund` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `FundedProgram` |  | |  |  |
-| `FundsCenter` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `HouseBank` |  | |  |  |
-| `HouseBankAccount` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `InvoiceItemReference` |  | |  |  |
-| `InvoiceList` |  | |  |  |
-| `InvoiceReference` |  | |  |  |
-| `InvoiceReferenceFiscalYear` |  | |  |  |
-| `IsEUTriangularDeal` |  | |  |  |
-| `IsNotCashDiscountLiable` |  | |  |  |
-| `IsSalesRelated` |  | |  |  |
-| `JointVenture` |  | |  |  |
-| `JointVentureCostRecoveryCode` |  | |  |  |
-| `JointVentureEquityGroup` |  | |  |  |
-| `JointVentureEquityType` |  | |  |  |
-| `LastDunningDate` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `MaterialPriceControl` |  | |  |  |
-| `MaterialPriceUnitQty` |  | |  | `} P_ParkedOplAcctgDocItem.MaterialPriceUnitQty` |
-| `Product` |  | |  |  |
-| `NetDueDate` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderInternalBillOfOperations` |  | |  |  |
-| `PartnerBudgetPeriod` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `PartnerFund` |  | |  |  |
-| `PartnerGrant` |  | |  |  |
-| `PartnerSegment` |  | |  |  |
-| `PaymentBlockingReason` |  | |  |  |
-| `PaymentCardPaymentSettlement` |  | |  |  |
-| `PaymentDifferenceReason` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `PaymentMethodSupplement` |  | |  |  |
-| `PaymentReference` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `PlanningLevel` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PostingKey` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ProfitabilitySegment` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `REInternalFinNumber` |  | |  |  |
-| `Reference1IDByBusinessPartner` |  | |  |  |
-| `Reference2IDByBusinessPartner` |  | |  |  |
-| `Reference3IDByBusinessPartner` |  | |  |  |
-| `Region` |  | |  |  |
-| `Segment` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `SpecialGLAccountAssignment` |  | |  |  |
-| `SpecialGLCode` |  | |  |  |
-| `SpecialGLTransactionType` |  | |  |  |
-| `StateCentralBankPaymentReason` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplyingCountry` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TaxSection` |  | |  |  |
-| `TaxType` |  | |  |  |
-| `TreasuryContractType` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `ValueDate` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WithholdingTaxCode` |  | |  |  |
-| `AccountingDocumentCategory` |  | | `_ParkedOplAcctgDocument` | `AccountingDocumentCategory` |
-| `AccountingDocumentType` |  | | `_ParkedOplAcctgDocument` | `AccountingDocumentType` |
-| `PartnerCompany` |  | | `_ParkedOplAcctgDocument` | `PartnerCompany` |
-| `FiscalPeriod` |  | | `_ParkedOplAcctgDocument` | `FiscalPeriod` |
-| `DocumentDate` |  | | `_ParkedOplAcctgDocument` | `DocumentDate` |
-| `PostingDate` |  | | `_ParkedOplAcctgDocument` | `PostingDate` |
-| `LedgerGroup` |  | | `_ParkedOplAcctgDocument` | `LedgerGroup` |
-| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
-| `FiscalYearVariant` |  | | `_CompanyCode` | `FiscalYearVariant` |
-| `FinancialManagementArea` |  | | `_CompanyCode` | `FinancialManagementArea` |
-| `AdditionalCurrency1` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency1` |
-| `AdditionalCurrency2` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency2` |
-| `CompanyCodeCurrency` |  | | `_ParkedOplAcctgDocument` | `CompanyCodeCurrency` |
-| `PaymentCurrency` |  | |  |  |
-| `TransactionCurrency` |  | | `_ParkedOplAcctgDocument` | `TransactionCurrency` |
-| `AmountInAdditionalCurrency1` |  | |  |  |
-| `AmountInAdditionalCurrency2` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |
-| `AmountInPaymentCurrency` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |
-| `CashDiscountAmount` |  | |  |  |
-| `CashDiscountAmtInCoCodeCrcy` |  | |  |  |
-| `CashDiscountBaseAmount` |  | |  |  |
-| `InvoiceAmountInFrgnCurrency` |  | |  |  |
-| `InvoiceAmtInCoCodeCrcy` |  | |  |  |
-| `PlannedAmtInTransactionCrcy` |  | |  |  |
-| `TaxAmount` |  | |  |  |
-| `TaxAmountInCoCodeCrcy` |  | |  |  |
-| `TaxBaseAmountInCoCodeCrcy` |  | |  |  |
-| `TaxBaseAmountInTransCrcy` |  | |  |  |
-| `WithholdingTaxAmount` |  | |  |  |
-| `WithholdingTaxBaseAmount` |  | |  |  |
-| `WithholdingTaxExemptionAmt` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_SourceCompanyCode` | | ✓ | | |
-| `_SourceFiscalYear` | | ✓ | | |
-| `_ParkedOplAcctgDocument` | | ✓ | | |
-| `_SourceParkedOplAcctgDocument` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_CustomerCompany` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompany` | | ✓ | | |
-| `_PostingKey` | | ✓ | | |
-| `_FinancialAccountType` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_PartnerBusinessArea` | | ✓ | | |
-| `_TaxType` | | ✓ | | |
-| `_PartnerCompany` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_CurrentProfitCenter` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CurrentCostCenter` | | ✓ | | |
-| `_SupplyingCountry` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_PaymentDifferenceReason` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_PartnerSegment` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_PaymentCurrency` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_AdditionalCurrency1` | | ✓ | | |
-| `_AdditionalCurrency2` | | ✓ | | |
-| `_AccountingDocumentCategory` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_AssetTransactionType` | | ✓ | | |
-| `_PurchasingDocument` | | ✓ | | |
-| `_PurchasingDocumentItem` | | ✓ | | |
-| `_ProjectNetwork` | | ✓ | | |
-| `_CostCtrActivityType` | | ✓ | | |
-| `_BusinessProcess` | | ✓ | | |
-| `_BudgetPeriod` | | ✓ | | |
-| `_PartnerBudgetPeriod` | | ✓ | | |
-| `_FinancialTransactionType` | | ✓ | | |
-| `_FinancialManagementArea` | | ✓ | | |
-| `_Fund` | | ✓ | | |
-| `_PartnerFund` | | ✓ | | |
-| `_FundsCenter` | | ✓ | | |
-| `_Grant` | | ✓ | | |
-| `_PartnerGrant` | | ✓ | | |
-| `_HouseBank` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
-| `_PaymentBlockingReason` | | ✓ | | |
-| `_PersonWorkAgreement_1` | | ✓ | | |
-| `_SpecialGLCode` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SourceCompanyCode` | ✓ | |  |  |  |  |
+| `SourceFiscalYear` | ✓ | |  |  |  |  |
+| `SourceAccountingDocument` | ✓ | |  |  |  |  |
+| `SourceAccountingDocumentItem` | ✓ | |  |  |  |  |
+| `AccountAssignmentNumber` |  | |  |  |  |  |
+| `AssetContract` |  | |  |  |  |  |
+| `AssetTransactionType` |  | |  |  |  |  |
+| `AssetValueDate` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `BPBankAccountInternalID` |  | |  |  |  |  |
+| `BranchAccount` |  | |  |  |  |  |
+| `BudgetPeriod` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount1DueDate` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `CashDiscount2DueDate` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `CashFlowType` |  | |  |  |  |  |
+| `CommitmentItemShortID` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CompanyCodeCurrencyDetnMethod` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `CostOriginGroup` |  | |  |  |  |  |
+| `CreditControlArea` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `DataExchangeInstruction1` |  | |  |  |  |  |
+| `DataExchangeInstruction2` |  | |  |  |  |  |
+| `DataExchangeInstruction3` |  | |  |  |  |  |
+| `DataExchangeInstruction4` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `DueCalculationBaseDate` |  | |  |  |  |  |
+| `DunningArea` |  | |  |  |  |  |
+| `DunningBlockingReason` |  | |  |  |  |  |
+| `DunningKey` |  | |  |  |  |  |
+| `DunningLevel` |  | |  |  |  |  |
+| `FinancialAccountType` |  | |  |  |  |  |
+| `FinancialTransactionType` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `FixedCashDiscount` |  | |  |  |  |  |
+| `FollowOnDocumentType` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `FundedProgram` |  | |  |  |  |  |
+| `FundsCenter` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `HouseBank` |  | |  |  |  |  |
+| `HouseBankAccount` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `InvoiceItemReference` |  | |  |  |  |  |
+| `InvoiceList` |  | |  |  |  |  |
+| `InvoiceReference` |  | |  |  |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  |  |  |  |
+| `IsEUTriangularDeal` |  | |  |  |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |  |  |
+| `IsSalesRelated` |  | |  |  |  |  |
+| `JointVenture` |  | |  |  |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |  |  |
+| `JointVentureEquityGroup` |  | |  |  |  |  |
+| `JointVentureEquityType` |  | |  |  |  |  |
+| `LastDunningDate` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `MaterialPriceControl` |  | |  |  |  |  |
+| `MaterialPriceUnitQty` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `NetDueDate` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderInternalBillOfOperations` |  | |  |  |  |  |
+| `PartnerBudgetPeriod` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `PartnerFund` |  | |  |  |  |  |
+| `PartnerGrant` |  | |  |  |  |  |
+| `PartnerSegment` |  | |  |  |  |  |
+| `PaymentBlockingReason` |  | |  |  |  |  |
+| `PaymentCardPaymentSettlement` |  | |  |  |  |  |
+| `PaymentDifferenceReason` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `PaymentMethodSupplement` |  | |  |  |  |  |
+| `PaymentReference` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `PlanningLevel` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PostingKey` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `REInternalFinNumber` |  | |  |  |  |  |
+| `Reference1IDByBusinessPartner` |  | |  |  |  |  |
+| `Reference2IDByBusinessPartner` |  | |  |  |  |  |
+| `Reference3IDByBusinessPartner` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `SpecialGLAccountAssignment` |  | |  |  |  |  |
+| `SpecialGLCode` |  | |  |  |  |  |
+| `SpecialGLTransactionType` |  | |  |  |  |  |
+| `StateCentralBankPaymentReason` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplyingCountry` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TaxSection` |  | |  |  |  |  |
+| `TaxType` |  | |  |  |  |  |
+| `TreasuryContractType` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `ValueDate` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WithholdingTaxCode` |  | |  |  |  |  |
+| `AccountingDocumentCategory` |  | | `_ParkedOplAcctgDocument` | `AccountingDocumentCategory` |  |  |
+| `AccountingDocumentType` |  | | `_ParkedOplAcctgDocument` | `AccountingDocumentType` |  |  |
+| `PartnerCompany` |  | | `_ParkedOplAcctgDocument` | `PartnerCompany` |  |  |
+| `FiscalPeriod` |  | | `_ParkedOplAcctgDocument` | `FiscalPeriod` |  |  |
+| `DocumentDate` |  | | `_ParkedOplAcctgDocument` | `DocumentDate` |  |  |
+| `PostingDate` |  | | `_ParkedOplAcctgDocument` | `PostingDate` |  |  |
+| `LedgerGroup` |  | | `_ParkedOplAcctgDocument` | `LedgerGroup` |  |  |
+| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `FiscalYearVariant` |  | | `_CompanyCode` | `FiscalYearVariant` |  |  |
+| `FinancialManagementArea` |  | | `_CompanyCode` | `FinancialManagementArea` |  |  |
+| `AdditionalCurrency1` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency1` |  |  |
+| `AdditionalCurrency2` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency2` |  |  |
+| `CompanyCodeCurrency` |  | | `_ParkedOplAcctgDocument` | `CompanyCodeCurrency` |  |  |
+| `PaymentCurrency` |  | |  |  |  |  |
+| `TransactionCurrency` |  | | `_ParkedOplAcctgDocument` | `TransactionCurrency` |  |  |
+| `AmountInAdditionalCurrency1` |  | |  |  |  |  |
+| `AmountInAdditionalCurrency2` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInPaymentCurrency` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `CashDiscountAmount` |  | |  |  |  |  |
+| `CashDiscountAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `CashDiscountBaseAmount` |  | |  |  |  |  |
+| `InvoiceAmountInFrgnCurrency` |  | |  |  |  |  |
+| `InvoiceAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `PlannedAmtInTransactionCrcy` |  | |  |  |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `TaxBaseAmountInTransCrcy` |  | |  |  |  |  |
+| `WithholdingTaxAmount` |  | |  |  |  |  |
+| `WithholdingTaxBaseAmount` |  | |  |  |  |  |
+| `WithholdingTaxExemptionAmt` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_SourceCompanyCode` | | ✓ | | | | |
+| `_SourceFiscalYear` | | ✓ | | | | |
+| `_ParkedOplAcctgDocument` | | ✓ | | | | |
+| `_SourceParkedOplAcctgDocument` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerCompany` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompany` | | ✓ | | | | |
+| `_PostingKey` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_PartnerBusinessArea` | | ✓ | | | | |
+| `_TaxType` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_SupplyingCountry` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_PaymentDifferenceReason` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_PartnerSegment` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_PaymentCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_AdditionalCurrency1` | | ✓ | | | | |
+| `_AdditionalCurrency2` | | ✓ | | | | |
+| `_AccountingDocumentCategory` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_AssetTransactionType` | | ✓ | | | | |
+| `_PurchasingDocument` | | ✓ | | | | |
+| `_PurchasingDocumentItem` | | ✓ | | | | |
+| `_ProjectNetwork` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
+| `_BusinessProcess` | | ✓ | | | | |
+| `_BudgetPeriod` | | ✓ | | | | |
+| `_PartnerBudgetPeriod` | | ✓ | | | | |
+| `_FinancialTransactionType` | | ✓ | | | | |
+| `_FinancialManagementArea` | | ✓ | | | | |
+| `_Fund` | | ✓ | | | | |
+| `_PartnerFund` | | ✓ | | | | |
+| `_FundsCenter` | | ✓ | | | | |
+| `_Grant` | | ✓ | | | | |
+| `_PartnerGrant` | | ✓ | | | | |
+| `_HouseBank` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_PaymentBlockingReason` | | ✓ | | | | |
+| `_PersonWorkAgreement_1` | | ✓ | | | | |
+| `_SpecialGLCode` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
 
 ## Associations
 

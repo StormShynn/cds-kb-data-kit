@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialTransactionType` | ✓ | | `_CnsldtnFinTransType` | `FinancialTransactionType` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnFinTransType` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinTransTypeTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFinTransTypeTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialTransactionType` | ✓ | | `_CnsldtnFinTransType` | `FinancialTransactionType` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnFinTransType` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFinTransTypeTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFinTransTypeTextTP` |  |  |
 
 ## Source Code
 

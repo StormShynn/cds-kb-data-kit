@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReferenceInterestRate` | ✓ | |  | `referenz` |
-| `EffectiveDate` |  | |  | `datab` |
-| `Currency` |  | |  | `waers` |
-| `LongText` |  | |  | `zilabez` |
-| `TextDescription` |  | |  | `zikubez` |
-| `RefIntrstRateTenorTerm` |  | |  | `laufzeit` |
-| `RefIntrstRateTenorTermUnit` |  | |  | `masseinh` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReferenceInterestRate` | ✓ | |  | `referenz` |  |  |
+| `EffectiveDate` |  | |  | `datab` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `LongText` |  | |  | `zilabez` |  |  |
+| `TextDescription` |  | |  | `zikubez` |  |  |
+| `RefIntrstRateTenorTerm` |  | |  | `laufzeit` |  |  |
+| `RefIntrstRateTenorTermUnit` |  | |  | `masseinh` |  |  |
 
 ## Source Code
 

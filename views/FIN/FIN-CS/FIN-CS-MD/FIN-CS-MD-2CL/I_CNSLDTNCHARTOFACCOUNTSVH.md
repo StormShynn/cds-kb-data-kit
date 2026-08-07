@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | | `_CnsldtnChartOfAccounts` | `ConsolidationChartOfAccounts` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_CnsldtnChartOfAccounts` | `ConsolidationChartOfAccounts` |  |  |
 
 ## Source Code
 

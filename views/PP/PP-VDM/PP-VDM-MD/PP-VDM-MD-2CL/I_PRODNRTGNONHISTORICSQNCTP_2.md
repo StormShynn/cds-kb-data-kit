@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionRoutingGroup` | ✓ | |  |  |
-| `ProductionRouting` | ✓ | |  |  |
-| `ProductionRoutingSequence` | ✓ | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_ProdnRtgTP` | | ✓ | | |
-| `_Header` | | ✓ | | |
-| `_Sequence` | | ✓ | | |
-| `_Operation` | | ✓ | | |
-| `_SubOp` | | ✓ | | |
-| `_OpCompAlloc` | | ✓ | | |
-| `_OpDocPRTAssgmt` | | ✓ | | |
-| `_OpEquipPRTAssgmt` | | ✓ | | |
-| `_OpMatlPRTAssgmt` | | ✓ | | |
-| `_OpMiscPRTAssgmt` | | ✓ | | |
-| `_OpInspCharcsAssgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |  |  |
+| `ProductionRouting` | ✓ | |  |  |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_ProdnRtgTP` | | ✓ | | | | |
+| `_Header` | | ✓ | | | | |
+| `_Sequence` | | ✓ | | | | |
+| `_Operation` | | ✓ | | | | |
+| `_SubOp` | | ✓ | | | | |
+| `_OpCompAlloc` | | ✓ | | | | |
+| `_OpDocPRTAssgmt` | | ✓ | | | | |
+| `_OpEquipPRTAssgmt` | | ✓ | | | | |
+| `_OpMatlPRTAssgmt` | | ✓ | | | | |
+| `_OpMiscPRTAssgmt` | | ✓ | | | | |
+| `_OpInspCharcsAssgmt` | | ✓ | | | | |
 
 ## Source Code
 

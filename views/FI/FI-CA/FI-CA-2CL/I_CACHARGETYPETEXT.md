@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAChargeType` | ✓ | |  | `chgty` |
-| `Language` | ✓ | |  | `spras` |
-| `CAChargeTypeName` |  | |  | `chtxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAChargeType` | ✓ | |  | `chgty` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAChargeTypeName` |  | |  | `chtxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

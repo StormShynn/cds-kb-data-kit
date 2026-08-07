@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HierarchyType` | ✓ | |  | `cast(_node.hrytyp as fincs_hierarchytype preserving type )` |
-| `UniversalHierarchy` | ✓ | | `_node` | `hryid` |
-| `HierarchyNodeClass` | ✓ | |  | `cast(_node.nodecls as fincs_hierarchynodeclass preserving type )` |
-| `HierarchyNode` | ✓ | |  | `cast(_node.hrynode as fincs_hierarchynode preserving type )` |
-| `ParentNode` | ✓ | |  | `cast(_node.parnode as fincs_parentnode preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `cast(_node.hryvalto as fincs_validityenddate preserving type )` |
-| `ValidityStartDate` |  | |  | `cast(_node.hryvalfrom as fincs_validitystartdate preserving type )` |
-| `HierarchyNodeVal` |  | |  | `cast(_node.nodevalue as fincs_hierarchynodevalue preserving type )` |
-| `HierarchyNodeLevel` |  | |  | `cast(_node.hrylevel as fincs_hierarchynodelevel preserving type )` |
-| `NodeType` |  | |  | `cast(_node.nodetype as fincs_nodetype preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyType` | ✓ | |  | `cast(_node.hrytyp as fincs_hierarchytype preserving type )` |  |  |
+| `UniversalHierarchy` | ✓ | | `_node` | `hryid` |  |  |
+| `HierarchyNodeClass` | ✓ | |  | `cast(_node.nodecls as fincs_hierarchynodeclass preserving type )` |  |  |
+| `HierarchyNode` | ✓ | |  | `cast(_node.hrynode as fincs_hierarchynode preserving type )` |  |  |
+| `ParentNode` | ✓ | |  | `cast(_node.parnode as fincs_parentnode preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(_node.hryvalto as fincs_validityenddate preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast(_node.hryvalfrom as fincs_validitystartdate preserving type )` |  |  |
+| `HierarchyNodeVal` |  | |  | `cast(_node.nodevalue as fincs_hierarchynodevalue preserving type )` |  |  |
+| `HierarchyNodeLevel` |  | |  | `cast(_node.hrylevel as fincs_hierarchynodelevel preserving type )` |  |  |
+| `NodeType` |  | |  | `cast(_node.nodetype as fincs_nodetype preserving type )` |  |  |
 
 ## Source Code
 

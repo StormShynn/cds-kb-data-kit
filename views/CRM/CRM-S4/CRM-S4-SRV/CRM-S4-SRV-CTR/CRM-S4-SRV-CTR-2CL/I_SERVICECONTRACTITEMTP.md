@@ -30,92 +30,92 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `ServiceContractItem` | ✓ | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceContractItemCategory` |  | |  |  |
-| `ServiceContractItemUUID` |  | |  |  |
-| `ServiceContractItemDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `ServiceDocItemCreationDateTime` |  | |  |  |
-| `ServiceDocItemChangedDateTime` |  | |  |  |
-| `ServiceDocItemCreatedByUser` |  | |  |  |
-| `ServiceDocItemChangedByUser` |  | |  |  |
-| `Product` |  | |  |  |
-| `Quantity` |  | |  | `} Quantity` |
-| `QuantityUnit` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |
-| `ServiceContractItemIsNew` |  | |  |  |
-| `ServiceContractItemIsInProcess` |  | |  |  |
-| `ServiceContractItemIsReleased` |  | |  |  |
-| `ServiceContractItemIsCompleted` |  | |  |  |
-| `ServiceContractItemStatus` |  | |  |  |
-| `ServiceContrItemBillingStatus` |  | |  |  |
-| `ServiceContractItemIsRejected` |  | |  |  |
-| `ServiceContractItemHasError` |  | |  |  |
-| `SrvcDocItemTransferStatus` |  | |  |  |
-| `ServiceContrItemStartDateTime` |  | |  |  |
-| `ServiceContrItemEndDateTime` |  | |  |  |
-| `SrvcContrItemRnwlDuration` |  | |  | `} SrvcContrItemRnwlDuration` |
-| `SrvcContrItemRnwlDurationUnit` |  | |  |  |
-| `SrvcContrItemExtensionDuration` |  | |  | `} SrvcContrItemExtensionDuration` |
-| `SrvcContrItemExtnDurationUnit` |  | |  |  |
-| `ServiceDocItemGrossAmount` |  | |  | `} ServiceDocItemGrossAmount` |
-| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceDocumentItemNetAmount` |
-| `ServiceDocumentItemTaxAmount` |  | |  | `} ServiceDocumentItemTaxAmount` |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceContractItemCanclnParty` |  | |  |  |
-| `ServiceContractItmCanclnReason` |  | |  |  |
-| `SettlementPeriodRuleUUID` |  | |  |  |
-| `SettlementPeriodRule` |  | |  |  |
-| `BillingPlanBillingDateRuleUUID` |  | |  |  |
-| `SrvcMgmtBillgPlanBillgDateRule` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `SrvcContrExternalReference` |  | |  |  |
-| `SrvcContrItmExternalReference` |  | |  |  |
-| `ServiceQtanExtReference` |  | |  |  |
-| `ServiceQtanItemExtReference` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `_ServiceDocument` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_ExtRefServiceContract` | | ✓ | | |
-| `_ExtRefServiceContractItem` | | ✓ | | |
-| `_SrvcDocLifecycleStatusText` | | ✓ | | |
-| `_ServiceDocBillingStatusText` | | ✓ | | |
-| `_SrvcDocTransferStatusText` | | ✓ | | |
-| `_SrvcDocRejectionStatusText` | | ✓ | | |
-| `_BillingBlockReasonText` | | ✓ | | |
-| `_PaymentTermsText` | | ✓ | | |
-| `_ServiceDocItemCategoryText` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_SrvcMgmtDateRuleText` | | ✓ | | |
-| `_SettlementPeriodRuleText` | | ✓ | | |
-| `_ServiceCancellationPartyText` | | ✓ | | |
-| `_ServiceCanclnReasonText` | | ✓ | | |
-| `_ServiceContractTP` | | ✓ | | |
-| `_SrvcContrItemRefObjectTP` | | ✓ | | |
-| `_SrvcContrItmPriceElementTP` | | ✓ | | |
-| `_SrvcContrItemUserStatusTP` | | ✓ | | |
-| `_SrvcContrItemAppointmentTP` | | ✓ | | |
-| `_SrvcContrItemDurationTP` | | ✓ | | |
-| `_SrvcContrItemProductTP` | | ✓ | | |
-| `_SrvcContrItmBillgReqItemTP` | | ✓ | | |
-| `_SrvcContrItmFUPBillgDocTP` | | ✓ | | |
-| `_SrvcContrItmFUPSrvcOrdTP` | | ✓ | | |
-| `_SrvcContrItmPartnerTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `ServiceContractItem` | ✓ | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceContractItemCategory` |  | |  |  |  |  |
+| `ServiceContractItemUUID` |  | |  |  |  |  |
+| `ServiceContractItemDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
+| `ServiceContractItemIsNew` |  | |  |  |  |  |
+| `ServiceContractItemIsInProcess` |  | |  |  |  |  |
+| `ServiceContractItemIsReleased` |  | |  |  |  |  |
+| `ServiceContractItemIsCompleted` |  | |  |  |  |  |
+| `ServiceContractItemStatus` |  | |  |  |  |  |
+| `ServiceContrItemBillingStatus` |  | |  |  |  |  |
+| `ServiceContractItemIsRejected` |  | |  |  |  |  |
+| `ServiceContractItemHasError` |  | |  |  |  |  |
+| `SrvcDocItemTransferStatus` |  | |  |  |  |  |
+| `ServiceContrItemStartDateTime` |  | |  |  |  |  |
+| `ServiceContrItemEndDateTime` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDuration` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDurationUnit` |  | |  |  |  |  |
+| `SrvcContrItemExtensionDuration` |  | |  |  |  |  |
+| `SrvcContrItemExtnDurationUnit` |  | |  |  |  |  |
+| `ServiceDocItemGrossAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceContractItemCanclnParty` |  | |  |  |  |  |
+| `ServiceContractItmCanclnReason` |  | |  |  |  |  |
+| `SettlementPeriodRuleUUID` |  | |  |  |  |  |
+| `SettlementPeriodRule` |  | |  |  |  |  |
+| `BillingPlanBillingDateRuleUUID` |  | |  |  |  |  |
+| `SrvcMgmtBillgPlanBillgDateRule` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `SrvcContrExternalReference` |  | |  |  |  |  |
+| `SrvcContrItmExternalReference` |  | |  |  |  |  |
+| `ServiceQtanExtReference` |  | |  |  |  |  |
+| `ServiceQtanItemExtReference` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_ExtRefServiceContract` | | ✓ | | | | |
+| `_ExtRefServiceContractItem` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatusText` | | ✓ | | | | |
+| `_ServiceDocBillingStatusText` | | ✓ | | | | |
+| `_SrvcDocTransferStatusText` | | ✓ | | | | |
+| `_SrvcDocRejectionStatusText` | | ✓ | | | | |
+| `_BillingBlockReasonText` | | ✓ | | | | |
+| `_PaymentTermsText` | | ✓ | | | | |
+| `_ServiceDocItemCategoryText` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_SrvcMgmtDateRuleText` | | ✓ | | | | |
+| `_SettlementPeriodRuleText` | | ✓ | | | | |
+| `_ServiceCancellationPartyText` | | ✓ | | | | |
+| `_ServiceCanclnReasonText` | | ✓ | | | | |
+| `_ServiceContractTP` | | ✓ | | | | |
+| `_SrvcContrItemRefObjectTP` | | ✓ | | | | |
+| `_SrvcContrItmPriceElementTP` | | ✓ | | | | |
+| `_SrvcContrItemUserStatusTP` | | ✓ | | | | |
+| `_SrvcContrItemAppointmentTP` | | ✓ | | | | |
+| `_SrvcContrItemDurationTP` | | ✓ | | | | |
+| `_SrvcContrItemProductTP` | | ✓ | | | | |
+| `_SrvcContrItmBillgReqItemTP` | | ✓ | | | | |
+| `_SrvcContrItmFUPBillgDocTP` | | ✓ | | | | |
+| `_SrvcContrItmFUPSrvcOrdTP` | | ✓ | | | | |
+| `_SrvcContrItmPartnerTP` | | ✓ | | | | |
 
 ## Source Code
 

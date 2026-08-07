@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `StockDeterminationGroup` | ✓ | |  | `eprio` |
-| `_Plant` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `StockDeterminationGroup` | ✓ | |  | `eprio` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

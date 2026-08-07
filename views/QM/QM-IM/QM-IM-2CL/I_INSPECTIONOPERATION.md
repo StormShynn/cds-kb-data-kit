@@ -28,36 +28,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  | `prueflos` |
-| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |
-| `OrderInternalBillOfOperations` |  | |  | `aufpl` |
-| `OrderOperationInternalID` |  | |  | `aplzl` |
-| `InspectionOperation` |  | |  | `vornr` |
-| `InspectionOperationPlant` |  | |  | `werks` |
-| `BillOfOperationsType` |  | |  | `plnty` |
-| `BillOfOperationsGroup` |  | |  | `plnnr` |
-| `BillOfOperationsVariant` |  | |  | `plnal` |
-| `BOOOperationInternalID` |  | |  | `plnkn` |
-| `BillOfOperationsVersion` |  | |  | `tl_versn` |
-| `WorkCenterInternalID` |  | |  | `arbid` |
-| `StatusObject` |  | |  | `objnr` |
-| `OperationControlProfile` |  | |  | `steus` |
-| `OperationConfirmation` |  | |  | `rueck` |
-| `InspectionSubSystem` |  | |  | `subsys` |
-| `OperationText` |  | |  | `ltxa1` |
-| `InspSbstIsTimeRelated` |  | |  | `qkzprzeit` |
-| `InspSbstHasNoTimeOrQuantity` |  | |  | `qkzprfrei` |
-| `Sequence` |  | |  | `aplfl` |
-| `InspSbstCompletionConfirmation` |  | |  | `qppktabs` |
-| `_InspectionLot` | | ✓ | | |
-| `_InspectionCharacteristic` | | ✓ | | |
-| `_InspectionSubset` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_InspectionOperationStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |  |  |
+| `OrderInternalBillOfOperations` |  | |  | `aufpl` |  |  |
+| `OrderOperationInternalID` |  | |  | `aplzl` |  |  |
+| `InspectionOperation` |  | |  | `vornr` |  |  |
+| `InspectionOperationPlant` |  | |  | `werks` |  |  |
+| `BillOfOperationsType` |  | |  | `plnty` |  |  |
+| `BillOfOperationsGroup` |  | |  | `plnnr` |  |  |
+| `BillOfOperationsVariant` |  | |  | `plnal` |  |  |
+| `BOOOperationInternalID` |  | |  | `plnkn` |  |  |
+| `BillOfOperationsVersion` |  | |  | `tl_versn` |  |  |
+| `WorkCenterInternalID` |  | |  | `arbid` |  |  |
+| `StatusObject` |  | |  | `objnr` |  |  |
+| `OperationControlProfile` |  | |  | `steus` |  |  |
+| `OperationConfirmation` |  | |  | `rueck` |  |  |
+| `InspectionSubSystem` |  | |  | `subsys` |  |  |
+| `OperationText` |  | |  | `ltxa1` |  |  |
+| `InspSbstIsTimeRelated` |  | |  | `qkzprzeit` |  |  |
+| `InspSbstHasNoTimeOrQuantity` |  | |  | `qkzprfrei` |  |  |
+| `Sequence` |  | |  | `aplfl` |  |  |
+| `InspSbstCompletionConfirmation` |  | |  | `qppktabs` |  |  |
+| `_InspectionLot` | | ✓ | | | | |
+| `_InspectionCharacteristic` | | ✓ | | | | |
+| `_InspectionSubset` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_InspectionOperationStatus` | | ✓ | | | | |
 
 ## Associations
 

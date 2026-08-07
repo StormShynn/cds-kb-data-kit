@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgCatUUID` | ✓ | |  |  |
-| `PurchasingCategory` |  | |  |  |
-| `PurgCatName` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `Language` |  | |  |  |
-| `PurgCatIsInactive` |  | |  |  |
-| `PurgCatTranslationOvrlStatus` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgCatUUID` | ✓ | |  |  |  |  |
+| `PurchasingCategory` |  | |  |  |  |  |
+| `PurgCatName` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |  |  |
+| `Language` |  | |  |  |  |  |
+| `PurgCatIsInactive` |  | |  |  |  |  |
+| `PurgCatTranslationOvrlStatus` |  | |  |  |  |  |
 
 ## Source Code
 

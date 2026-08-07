@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ScheduleLineCategory` | ✓ | |  | `ettyp` |
-| `Language` | ✓ | |  | `spras` |
-| `ScheduleLineCategoryName` |  | |  | `vtext` |
-| `_ScheduleLineCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ScheduleLineCategory` | ✓ | |  | `ettyp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ScheduleLineCategoryName` |  | |  | `vtext` |  |  |
+| `_ScheduleLineCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

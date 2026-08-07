@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfAccounts` | ✓ | |  |  |
-| `GLAccountGroup` | ✓ | |  |  |
-| `_GLAccountGroupText` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  |  |  |  |
+| `GLAccountGroup` | ✓ | |  |  |  |  |
+| `_GLAccountGroupText` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
 
 ## Source Code
 

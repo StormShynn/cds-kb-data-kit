@@ -26,42 +26,42 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RuntimeHierarchy` | ✓ | |  | `hryid` |
-| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |
-| `HierarchyType` |  | |  | `hrytyp` |
-| `ValidityStartDate` |  | |  | `cast(hryvalfrom as fis_datab preserving type )` |
-| `LastChangedByUser` |  | |  | `upduser` |
-| `LastChangeDateTime` |  | |  | `updtime` |
-| `HierarchyClass` |  | |  | `hrycls` |
-| `HierarchyShortID` |  | |  | `hrysid` |
-| `FromCreationDateTime` |  | |  | `cretime` |
-| `CreatedByUser` |  | |  | `creuser` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `ChartOfAccounts` |  | |  | `ktopl` |
-| `ConsolidationChartOfAccounts` |  | |  | `itclg` |
-| `SubItemCategory` |  | |  | `sityp` |
-| `ValidationScenarioID` |  | |  | `scen_id` |
-| `FinancialManagementArea` |  | |  | `fikrs` |
-| `FinMgmtAreaFiscalYear` |  | |  | `fma_fisyear` |
-| `SalesOrganization` |  | |  | `salesorganization` |
-| `DistributionChannel` |  | |  | `distributionchannel` |
-| `Division` |  | |  | `division` |
-| `Language` |  | |  | `dspra` |
-| `GroupChartOfAccountIsUsed` |  | |  | `xergs` |
-| `FinancialStatementAssetsItem` |  | |  | `aktva` |
-| `FinStatementLiabilitiesItem` |  | |  | `pssva` |
-| `FinancialStatementNetLossItem` |  | |  | `ergak` |
-| `FinStatementNetProfitItem` |  | |  | `ergpa` |
-| `FinStatementProfitAndLossItem` |  | |  | `erggv` |
-| `FinancialStatementOrphansItem` |  | |  | `zuord` |
-| `FinancialStatementNotesItem` |  | |  | `anhng` |
-| `GeneralLedgerAgingScope` |  | |  | `aging` |
-| `FunctionalAreaIsUsed` |  | |  | `funareaassigned` |
-| `SemanticTagIsUsed` |  | |  | `semtagassigned` |
-| `HierarchyNodeIsTimeDependent` |  | |  | `node_timedep` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RuntimeHierarchy` | ✓ | |  | `hryid` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |  |  |
+| `HierarchyType` |  | |  | `hrytyp` |  |  |
+| `ValidityStartDate` |  | |  | `cast(hryvalfrom as fis_datab preserving type )` |  |  |
+| `LastChangedByUser` |  | |  | `upduser` |  |  |
+| `LastChangeDateTime` |  | |  | `updtime` |  |  |
+| `HierarchyClass` |  | |  | `hrycls` |  |  |
+| `HierarchyShortID` |  | |  | `hrysid` |  |  |
+| `FromCreationDateTime` |  | |  | `cretime` |  |  |
+| `CreatedByUser` |  | |  | `creuser` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `ChartOfAccounts` |  | |  | `ktopl` |  |  |
+| `ConsolidationChartOfAccounts` |  | |  | `itclg` |  |  |
+| `SubItemCategory` |  | |  | `sityp` |  |  |
+| `ValidationScenarioID` |  | |  | `scen_id` |  |  |
+| `FinancialManagementArea` |  | |  | `fikrs` |  |  |
+| `FinMgmtAreaFiscalYear` |  | |  | `fma_fisyear` |  |  |
+| `SalesOrganization` |  | |  | `salesorganization` |  |  |
+| `DistributionChannel` |  | |  | `distributionchannel` |  |  |
+| `Division` |  | |  | `division` |  |  |
+| `Language` |  | |  | `dspra` |  |  |
+| `GroupChartOfAccountIsUsed` |  | |  | `xergs` |  |  |
+| `FinancialStatementAssetsItem` |  | |  | `aktva` |  |  |
+| `FinStatementLiabilitiesItem` |  | |  | `pssva` |  |  |
+| `FinancialStatementNetLossItem` |  | |  | `ergak` |  |  |
+| `FinStatementNetProfitItem` |  | |  | `ergpa` |  |  |
+| `FinStatementProfitAndLossItem` |  | |  | `erggv` |  |  |
+| `FinancialStatementOrphansItem` |  | |  | `zuord` |  |  |
+| `FinancialStatementNotesItem` |  | |  | `anhng` |  |  |
+| `GeneralLedgerAgingScope` |  | |  | `aging` |  |  |
+| `FunctionalAreaIsUsed` |  | |  | `funareaassigned` |  |  |
+| `SemanticTagIsUsed` |  | |  | `semtagassigned` |  |  |
+| `HierarchyNodeIsTimeDependent` |  | |  | `node_timedep` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

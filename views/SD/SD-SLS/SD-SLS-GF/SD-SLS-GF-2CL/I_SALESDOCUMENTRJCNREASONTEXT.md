@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocumentRjcnReason` | ✓ | |  | `abgru` |
-| `Language` | ✓ | |  | `spras` |
-| `SalesDocumentRjcnReasonName` |  | |  | `bezei` |
-| `_SalesDocumentRjcnReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocumentRjcnReason` | ✓ | |  | `abgru` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SalesDocumentRjcnReasonName` |  | |  | `bezei` |  |  |
+| `_SalesDocumentRjcnReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

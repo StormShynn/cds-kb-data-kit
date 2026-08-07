@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TextObjectCategory` | ✓ | |  | `tdobject` |
-| `_TextObjectCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TextObjectCategory` | ✓ | |  | `tdobject` |  |  |
+| `_TextObjectCategoryText` | | ✓ | | | | |
 
 ## Associations
 

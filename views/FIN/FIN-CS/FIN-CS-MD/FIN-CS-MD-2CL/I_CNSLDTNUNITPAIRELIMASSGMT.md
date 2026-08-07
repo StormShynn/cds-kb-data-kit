@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationUnitHierarchy` | ✓ | |  | `cast ( _Source.hryid as fincs_hryid_consunit )` |
-| `ValidityEndDate` | ✓ | |  | `cast ( _Source.hryvalto as fincs_validityenddate preserving type )` |
-| `ConsolidationUnit` | ✓ | |  | `cast ( _Source.rbunit as fincs_consolidationunit preserving type )` |
-| `PartnerConsolidationUnit` | ✓ | |  | `cast ( _Source.rbuptr as fincs_partnerconsolidationunit preserving type )` |
-| `ValidityStartDate` |  | |  | `cast ( _Source.hryvalfrom as fincs_validitystartdate preserving type )` |
-| `ConsolidationUnitForElim` |  | |  | `cast ( _Source.rbunit_eliminated as fincs_consolidationunitforelim preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnitHierarchy` | ✓ | |  | `cast ( _Source.hryid as fincs_hryid_consunit )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast ( _Source.hryvalto as fincs_validityenddate preserving type )` |  |  |
+| `ConsolidationUnit` | ✓ | |  | `cast ( _Source.rbunit as fincs_consolidationunit preserving type )` |  |  |
+| `PartnerConsolidationUnit` | ✓ | |  | `cast ( _Source.rbuptr as fincs_partnerconsolidationunit preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast ( _Source.hryvalfrom as fincs_validitystartdate preserving type )` |  |  |
+| `ConsolidationUnitForElim` |  | |  | `cast ( _Source.rbunit_eliminated as fincs_consolidationunitforelim preserving type )` |  |  |
 
 ## Source Code
 

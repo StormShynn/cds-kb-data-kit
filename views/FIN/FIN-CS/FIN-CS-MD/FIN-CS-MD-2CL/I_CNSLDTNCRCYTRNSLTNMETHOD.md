@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnCrcyTranslationMethod` | ✓ | |  | `cast ( ConsolidationMethod as fincs_crcy_trnsltn_method preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnCrcyTranslationMethod` | ✓ | |  | `cast ( ConsolidationMethod as fincs_crcy_trnsltn_method preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

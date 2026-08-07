@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | | `_Person` | `WorkforcePersonExternalID` |
-| `WorkforcePersonSkillTagID` | ✓ | | `_SkillTag` | `EmployeeSkillTagID` |
-| `BusinessPartner` |  | | `_Person` | `BusinessPartner` |
-| `WorkforcePersonTagText` |  | | `_SkillTag` | `EmployeeSkillTagName` |
-| `_BusinessPartner` | | ✓ | | |
-| `_WorkforcePerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | | `_Person` | `WorkforcePersonExternalID` |  |  |
+| `WorkforcePersonSkillTagID` | ✓ | | `_SkillTag` | `EmployeeSkillTagID` |  |  |
+| `BusinessPartner` |  | | `_Person` | `BusinessPartner` |  |  |
+| `WorkforcePersonTagText` |  | | `_SkillTag` | `EmployeeSkillTagName` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_WorkforcePerson` | | ✓ | | | | |
 
 ## Associations
 

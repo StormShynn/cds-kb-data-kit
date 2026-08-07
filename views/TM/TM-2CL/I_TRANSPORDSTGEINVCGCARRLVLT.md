@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdStgeInvcgCarrLvl` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/stg_pymt_ind preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspOrdStgeInvcgCarrLvlDesc` |  | |  | `cast(ddtext as /scmtms/vdm_stg_inv_car_l_desc preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdStgeInvcgCarrLvl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStgeInvcgCarrLvl` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/stg_pymt_ind preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspOrdStgeInvcgCarrLvlDesc` |  | |  | `cast(ddtext as /scmtms/vdm_stg_inv_car_l_desc preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdStgeInvcgCarrLvl` | | ✓ | | | | |
 
 ## Associations
 

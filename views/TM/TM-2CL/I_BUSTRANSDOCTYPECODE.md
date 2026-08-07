@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessTransactionDocType` | ✓ | |  | `btd_tco129` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransactionDocType` | ✓ | |  | `btd_tco129` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

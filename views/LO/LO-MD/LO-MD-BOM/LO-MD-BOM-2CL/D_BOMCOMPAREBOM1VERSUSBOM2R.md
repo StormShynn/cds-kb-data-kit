@@ -28,49 +28,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BOMCompareUUID` |  | |  | `guid` |
-| `BOMComponentPrimary` |  | |  | `idnrk` |
-| `BOMComparisonResult` |  | |  | `bom_comp_result` |
-| `MaterialTypePrimary` |  | |  | `mtart` |
-| `PrimBOMItemQuantity` |  | |  | `kmpmg` |
-| `BOMItemCategoryPrimary` |  | |  | `postp` |
-| `BOMItemNumberPrimary` |  | |  | `sposn` |
-| `CompleteMaintStatusPrimary` |  | |  | `vpsta` |
-| `BOMItemDescriptionPrimary` |  | |  | `maktx` |
-| `PrimBOMHdrBaseUoM` |  | |  | `meins` |
-| `BOMItemUnitPrimary` |  | |  | `kmpme` |
-| `IsProductionRelevantPrimary` |  | |  | `sanfe` |
-| `PrimBOMItemIsCostingRelevant` |  | |  | `cs_sanka` |
-| `PrimaryBOMHeaderIsDeleted` |  | |  | `lkenz` |
-| `PrimBOMIsMaterialConfigurable` |  | |  | `kzkfg` |
-| `PrimaryBOMIsMaterialProvision` |  | |  | `beikz` |
-| `IsCADPrimary` |  | |  | `cadpo` |
-| `LeadTimeOffsetPrimBOMValue` |  | |  | `nlfzt` |
-| `PrimaryBOMPurchasingGroupValue` |  | |  | `ekgrp` |
-| `DeliveryTimeInDaysPrimBOM` |  | |  | `lifzt` |
-| `PrimaryBOMSupplier` |  | |  | `lifnr` |
-| `PrimaryBOMItemPrice` |  | |  | `cprei` |
-| `PrimaryBOMItemPriceUnits` |  | |  | `waers` |
-| `NmbrVarblSizeItemPrimBOMQty` |  | |  | `roanz` |
-| `Size1PrimaryBOMQuantity` |  | |  | `roms1` |
-| `Size2PrimaryBOMQuantity` |  | |  | `roms2` |
-| `Size3PrimaryBOMQuantity` |  | |  | `roms3` |
-| `PrimBOMVarblSizeItemQuantity` |  | |  | `romen` |
-| `PrimaryBOMFormulaKeyValue` |  | |  | `rform` |
-| `GoodsReceiptDurationInPrimBOM` |  | |  | `webaz` |
-| `MaterialGroupPrimaryBOM` |  | |  | `matkl` |
-| `PrimBOMSpecialProcurementType` |  | |  | `cs_sobsl` |
-| `PrimBOMComponentLevelValue` |  | |  | `stufe` |
-| `CompDiffInBOMComparisonQty` |  | |  | `kmpmg` |
-| `PrimBOMParentCompValue` |  | |  | `matnr` |
-| `BOMComparisonIsSummarized` |  | |  | `lkenz` |
-| `PrimaryBOMValue` |  | |  | `stnum` |
-| `BOMNmbrNextLevelPrimBOMValue` |  | |  | `stnum` |
-| `ComparisonResultValue` |  | |  | `cs_comparison_result` |
-| `BOMHdrMatlHierNode` |  | |  | `matnr` |
-| `BOMItemCategoryPrimaryDesc` |  | |  | `pttxt` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BOMCompareUUID` |  | |  | `guid` |  |  |
+| `BOMComponentPrimary` |  | |  | `idnrk` |  |  |
+| `BOMComparisonResult` |  | |  | `bom_comp_result` |  |  |
+| `MaterialTypePrimary` |  | |  | `mtart` |  |  |
+| `PrimBOMItemQuantity` |  | |  | `kmpmg` |  |  |
+| `BOMItemCategoryPrimary` |  | |  | `postp` |  |  |
+| `BOMItemNumberPrimary` |  | |  | `sposn` |  |  |
+| `CompleteMaintStatusPrimary` |  | |  | `vpsta` |  |  |
+| `BOMItemDescriptionPrimary` |  | |  | `maktx` |  |  |
+| `PrimBOMHdrBaseUoM` |  | |  | `meins` |  |  |
+| `BOMItemUnitPrimary` |  | |  | `kmpme` |  |  |
+| `IsProductionRelevantPrimary` |  | |  | `sanfe` |  |  |
+| `PrimBOMItemIsCostingRelevant` |  | |  | `cs_sanka` |  |  |
+| `PrimaryBOMHeaderIsDeleted` |  | |  | `lkenz` |  |  |
+| `PrimBOMIsMaterialConfigurable` |  | |  | `kzkfg` |  |  |
+| `PrimaryBOMIsMaterialProvision` |  | |  | `beikz` |  |  |
+| `IsCADPrimary` |  | |  | `cadpo` |  |  |
+| `LeadTimeOffsetPrimBOMValue` |  | |  | `nlfzt` |  |  |
+| `PrimaryBOMPurchasingGroupValue` |  | |  | `ekgrp` |  |  |
+| `DeliveryTimeInDaysPrimBOM` |  | |  | `lifzt` |  |  |
+| `PrimaryBOMSupplier` |  | |  | `lifnr` |  |  |
+| `PrimaryBOMItemPrice` |  | |  | `cprei` |  |  |
+| `PrimaryBOMItemPriceUnits` |  | |  | `waers` |  |  |
+| `NmbrVarblSizeItemPrimBOMQty` |  | |  | `roanz` |  |  |
+| `Size1PrimaryBOMQuantity` |  | |  | `roms1` |  |  |
+| `Size2PrimaryBOMQuantity` |  | |  | `roms2` |  |  |
+| `Size3PrimaryBOMQuantity` |  | |  | `roms3` |  |  |
+| `PrimBOMVarblSizeItemQuantity` |  | |  | `romen` |  |  |
+| `PrimaryBOMFormulaKeyValue` |  | |  | `rform` |  |  |
+| `GoodsReceiptDurationInPrimBOM` |  | |  | `webaz` |  |  |
+| `MaterialGroupPrimaryBOM` |  | |  | `matkl` |  |  |
+| `PrimBOMSpecialProcurementType` |  | |  | `cs_sobsl` |  |  |
+| `PrimBOMComponentLevelValue` |  | |  | `stufe` |  |  |
+| `CompDiffInBOMComparisonQty` |  | |  | `kmpmg` |  |  |
+| `PrimBOMParentCompValue` |  | |  | `matnr` |  |  |
+| `BOMComparisonIsSummarized` |  | |  | `lkenz` |  |  |
+| `PrimaryBOMValue` |  | |  | `stnum` |  |  |
+| `BOMNmbrNextLevelPrimBOMValue` |  | |  | `stnum` |  |  |
+| `ComparisonResultValue` |  | |  | `cs_comparison_result` |  |  |
+| `BOMHdrMatlHierNode` |  | |  | `matnr` |  |  |
+| `BOMItemCategoryPrimaryDesc` |  | |  | `pttxt` |  |  |
 
 ## Source Code
 

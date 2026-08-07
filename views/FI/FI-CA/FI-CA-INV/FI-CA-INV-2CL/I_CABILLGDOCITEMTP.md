@@ -30,101 +30,101 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgDocument` | ✓ | |  |  |
-| `CABillgDocItem` | ✓ | |  |  |
-| `CAIsDocItemSimulated` |  | |  |  |
-| `CABillgDocumentItemType` |  | |  |  |
-| `CAContract` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CAMainTransaction` |  | |  |  |
-| `CASubTransaction` |  | |  |  |
-| `CAInvcgIsItemPostingRelevant` |  | |  |  |
-| `CAInvcgIsItemPrintingRelevant` |  | |  |  |
-| `CABillgDocItemAmount` |  | |  |  |
-| `CABillgCurrency` |  | |  |  |
-| `CATaxIsIncluded` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `UnitOfMeasure` |  | |  |  |
-| `CABillgDocItemExternalNumber` |  | |  |  |
-| `CABillgDocItemIsReversal` |  | |  |  |
-| `CAInvcgCorrectionCategory` |  | |  |  |
-| `CAInvcgIsNotBPRelevant` |  | |  |  |
-| `CAInvcgSubstituteGroupPrinting` |  | |  |  |
-| `CAItemPeriodStartDate` |  | |  |  |
-| `CAItemPeriodEndDate` |  | |  |  |
-| `CANetDueDate` |  | |  |  |
-| `Division` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `Segment` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CAAccountDeterminationCode` |  | |  |  |
-| `CATaxDetnType` |  | |  |  |
-| `CATaxCountry` |  | |  |  |
-| `CATaxDateType` |  | |  |  |
-| `CABillgTaxGroup` |  | |  |  |
-| `CAExternalTaxDate` |  | |  |  |
-| `CATaxDeterminationCode` |  | |  |  |
-| `CAAltvTaxDeterminationCode` |  | |  |  |
-| `CAAltvTaxCode` |  | |  |  |
-| `CAOtherTaxCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `WithholdingTaxCode` |  | |  |  |
-| `CAIsDownPaymentRequest` |  | |  |  |
-| `CAStatisticalItemCode` |  | |  |  |
-| `CABillgDeferredRevenueCategory` |  | |  |  |
-| `CABillgDeferredRevenueDate` |  | |  |  |
-| `CAInvcgDfrrdRevenueStatus` |  | |  |  |
-| `CAIsRevenueAccountingRelevant` |  | |  |  |
-| `CARevenueAccountingServiceType` |  | |  |  |
-| `CAInvcgAccrualPostingType` |  | |  |  |
-| `CABillgDocItemIsBIRelevant` |  | |  |  |
-| `CABillgDocItemIsFICORelevant` |  | |  |  |
-| `CAProviderContractItemNumber` |  | |  |  |
-| `CASubApplication` |  | |  |  |
-| `CAIsPrepaid` |  | |  |  |
-| `CABillgIsPrepaidBalanceChg` |  | |  |  |
-| `CABillgPartnerSettlementCat` |  | |  |  |
-| `CABillgDocItemCrtnMethod` |  | |  |  |
-| `CABillgFunction` |  | |  |  |
-| `CABillgGrpgOfAdditionalItems` |  | |  |  |
-| `CABillgGrpgOfPaymentData` |  | |  |  |
-| `CABillgGroupingSourceItems` |  | |  |  |
-| `CABllbleItmNumber` |  | |  |  |
-| `CADiscBaseItmGroup` |  | |  |  |
-| `CAReasonSecurityDeposit` |  | |  |  |
-| `CABillgReqReason` |  | |  |  |
-| `CABllbleItmDiscountKey` |  | |  |  |
-| `CABllbleItmDiscountVersion` |  | |  |  |
-| `CABillingQuantity` |  | |  |  |
-| `CADependentItemType` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `CAAltvMDOriginalIsEnbld` |  | |  |  |
-| `CAInvcgOffsettingReferenceKey` |  | |  |  |
-| `CAInvcgOffsettingCategory` |  | |  |  |
-| `CAInvcgOffsettingProcedure` |  | |  |  |
-| `CAInvcgOffsettingAction` |  | |  |  |
-| `CAInvcgOffsettingGroup` |  | |  |  |
-| `CAInvcgOffsettingRefKeyLong` |  | |  |  |
-| `RAOriginalDocItemType` |  | |  |  |
-| `RAOriginalDocItemID` |  | |  |  |
-| `CAAmountPerUnitAmount` |  | |  |  |
-| `CAAmountPerUnitCurrency` |  | |  |  |
-| `CAAmountPerUnitQuantityUnit` |  | |  |  |
-| `CAAmountPerUnitQuantity` |  | |  |  |
-| `CAIntcoCompanyCodeRequesting` |  | |  |  |
-| `CAIntcoCompanyCodeSupplying` |  | |  |  |
-| `CAIntcoType` |  | |  |  |
-| `CAIntcoProcedure` |  | |  |  |
-| `CABillToParty` |  | |  |  |
-| `CABillToRegion` |  | |  |  |
-| `CABillFromRegion` |  | |  |  |
-| `CAControlCode` |  | |  |  |
-| `CASupplyRegion` |  | |  |  |
-| `CABillToCountry` |  | |  |  |
-| `_CABillgDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgDocument` | ✓ | |  |  |  |  |
+| `CABillgDocItem` | ✓ | |  |  |  |  |
+| `CAIsDocItemSimulated` |  | |  |  |  |  |
+| `CABillgDocumentItemType` |  | |  |  |  |  |
+| `CAContract` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CAMainTransaction` |  | |  |  |  |  |
+| `CASubTransaction` |  | |  |  |  |  |
+| `CAInvcgIsItemPostingRelevant` |  | |  |  |  |  |
+| `CAInvcgIsItemPrintingRelevant` |  | |  |  |  |  |
+| `CABillgDocItemAmount` |  | |  |  |  |  |
+| `CABillgCurrency` |  | |  |  |  |  |
+| `CATaxIsIncluded` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `UnitOfMeasure` |  | |  |  |  |  |
+| `CABillgDocItemExternalNumber` |  | |  |  |  |  |
+| `CABillgDocItemIsReversal` |  | |  |  |  |  |
+| `CAInvcgCorrectionCategory` |  | |  |  |  |  |
+| `CAInvcgIsNotBPRelevant` |  | |  |  |  |  |
+| `CAInvcgSubstituteGroupPrinting` |  | |  |  |  |  |
+| `CAItemPeriodStartDate` |  | |  |  |  |  |
+| `CAItemPeriodEndDate` |  | |  |  |  |  |
+| `CANetDueDate` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CAAccountDeterminationCode` |  | |  |  |  |  |
+| `CATaxDetnType` |  | |  |  |  |  |
+| `CATaxCountry` |  | |  |  |  |  |
+| `CATaxDateType` |  | |  |  |  |  |
+| `CABillgTaxGroup` |  | |  |  |  |  |
+| `CAExternalTaxDate` |  | |  |  |  |  |
+| `CATaxDeterminationCode` |  | |  |  |  |  |
+| `CAAltvTaxDeterminationCode` |  | |  |  |  |  |
+| `CAAltvTaxCode` |  | |  |  |  |  |
+| `CAOtherTaxCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `WithholdingTaxCode` |  | |  |  |  |  |
+| `CAIsDownPaymentRequest` |  | |  |  |  |  |
+| `CAStatisticalItemCode` |  | |  |  |  |  |
+| `CABillgDeferredRevenueCategory` |  | |  |  |  |  |
+| `CABillgDeferredRevenueDate` |  | |  |  |  |  |
+| `CAInvcgDfrrdRevenueStatus` |  | |  |  |  |  |
+| `CAIsRevenueAccountingRelevant` |  | |  |  |  |  |
+| `CARevenueAccountingServiceType` |  | |  |  |  |  |
+| `CAInvcgAccrualPostingType` |  | |  |  |  |  |
+| `CABillgDocItemIsBIRelevant` |  | |  |  |  |  |
+| `CABillgDocItemIsFICORelevant` |  | |  |  |  |  |
+| `CAProviderContractItemNumber` |  | |  |  |  |  |
+| `CASubApplication` |  | |  |  |  |  |
+| `CAIsPrepaid` |  | |  |  |  |  |
+| `CABillgIsPrepaidBalanceChg` |  | |  |  |  |  |
+| `CABillgPartnerSettlementCat` |  | |  |  |  |  |
+| `CABillgDocItemCrtnMethod` |  | |  |  |  |  |
+| `CABillgFunction` |  | |  |  |  |  |
+| `CABillgGrpgOfAdditionalItems` |  | |  |  |  |  |
+| `CABillgGrpgOfPaymentData` |  | |  |  |  |  |
+| `CABillgGroupingSourceItems` |  | |  |  |  |  |
+| `CABllbleItmNumber` |  | |  |  |  |  |
+| `CADiscBaseItmGroup` |  | |  |  |  |  |
+| `CAReasonSecurityDeposit` |  | |  |  |  |  |
+| `CABillgReqReason` |  | |  |  |  |  |
+| `CABllbleItmDiscountKey` |  | |  |  |  |  |
+| `CABllbleItmDiscountVersion` |  | |  |  |  |  |
+| `CABillingQuantity` |  | |  |  |  |  |
+| `CADependentItemType` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `CAAltvMDOriginalIsEnbld` |  | |  |  |  |  |
+| `CAInvcgOffsettingReferenceKey` |  | |  |  |  |  |
+| `CAInvcgOffsettingCategory` |  | |  |  |  |  |
+| `CAInvcgOffsettingProcedure` |  | |  |  |  |  |
+| `CAInvcgOffsettingAction` |  | |  |  |  |  |
+| `CAInvcgOffsettingGroup` |  | |  |  |  |  |
+| `CAInvcgOffsettingRefKeyLong` |  | |  |  |  |  |
+| `RAOriginalDocItemType` |  | |  |  |  |  |
+| `RAOriginalDocItemID` |  | |  |  |  |  |
+| `CAAmountPerUnitAmount` |  | |  |  |  |  |
+| `CAAmountPerUnitCurrency` |  | |  |  |  |  |
+| `CAAmountPerUnitQuantityUnit` |  | |  |  |  |  |
+| `CAAmountPerUnitQuantity` |  | |  |  |  |  |
+| `CAIntcoCompanyCodeRequesting` |  | |  |  |  |  |
+| `CAIntcoCompanyCodeSupplying` |  | |  |  |  |  |
+| `CAIntcoType` |  | |  |  |  |  |
+| `CAIntcoProcedure` |  | |  |  |  |  |
+| `CABillToParty` |  | |  |  |  |  |
+| `CABillToRegion` |  | |  |  |  |  |
+| `CABillFromRegion` |  | |  |  |  |  |
+| `CAControlCode` |  | |  |  |  |  |
+| `CASupplyRegion` |  | |  |  |  |  |
+| `CABillToCountry` |  | |  |  |  |  |
+| `_CABillgDocument` | | ✓ | | | | |
 
 ## Source Code
 

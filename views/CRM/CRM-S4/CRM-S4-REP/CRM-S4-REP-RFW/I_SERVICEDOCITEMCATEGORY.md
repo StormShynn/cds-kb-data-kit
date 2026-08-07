@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |
-| `ServiceObjectType` |  | |  | `object_type` |
-| `ItemIsBillingRelevant` |  | | `_ServiceDocItemTypeSlsSttg` | `ItemIsBillingRelevant` |
-| `StatusProfile` |  | |  | `user_stat_proc` |
-| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` |
-| `_ServiceDocItemCategoryText` | | ✓ | | |
-| `_ServiceDocItemTypeSlsSttg` | | ✓ | | |
-| `_SrvcMgmtPrtnDetnProcedure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |  |  |
+| `ServiceObjectType` |  | |  | `object_type` |  |  |
+| `ItemIsBillingRelevant` |  | | `_ServiceDocItemTypeSlsSttg` | `ItemIsBillingRelevant` |  |  |
+| `StatusProfile` |  | |  | `user_stat_proc` |  |  |
+| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` |  |  |
+| `_ServiceDocItemCategoryText` | | ✓ | | | | |
+| `_ServiceDocItemTypeSlsSttg` | | ✓ | | | | |
+| `_SrvcMgmtPrtnDetnProcedure` | | ✓ | | | | |
 
 ## Associations
 

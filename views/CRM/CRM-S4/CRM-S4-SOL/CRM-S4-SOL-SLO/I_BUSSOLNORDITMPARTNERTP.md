@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `CustMgmtPartnerFunction` | ✓ | |  |  |
-| `CustMgmtBusinessPartner` | ✓ | |  |  |
-| `CustMgmtPartFunctionCategory` |  | |  |  |
-| `CustMgmtPartnerIsMainPartner` |  | |  |  |
-| `_BusSolnOrdItmPartnerAddrTP` | | ✓ | | |
-| `_BusinessSolutionOrderItemTP` | | ✓ | | |
-| `_BusinessSolutionOrderTP` | | ✓ | | |
-| `_CustMgmtPartnerFuncText` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_PartnerFunctionText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |  |  |
+| `CustMgmtPartFunctionCategory` |  | |  |  |  |  |
+| `CustMgmtPartnerIsMainPartner` |  | |  |  |  |  |
+| `_BusSolnOrdItmPartnerAddrTP` | | ✓ | | | | |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | | | |
+| `_CustMgmtPartnerFuncText` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_PartnerFunctionText` | | ✓ | | | | |
 
 ## Source Code
 

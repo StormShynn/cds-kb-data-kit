@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast( cskr.kokrs as fis_kokrs preserving type )` |
-| `CostAnalysisResource` | ✓ | |  | `cast( cskr.resrc as fis_co_resource preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `cast( cskr.datbi as fis_datbi preserving type )` |
-| `ValidityStartDate` |  | |  | `cast( cskr.datab as fis_datab preserving type )` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( cskr.kokrs as fis_kokrs preserving type )` |  |  |
+| `CostAnalysisResource` | ✓ | |  | `cast( cskr.resrc as fis_co_resource preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast( cskr.datbi as fis_datbi preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast( cskr.datab as fis_datab preserving type )` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADisputeType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as fkkdm_int_reason preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CADisputeTypeName` |  | |  | `cast( ddtext as fkkdm_int_text_reason preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADisputeType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as fkkdm_int_reason preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CADisputeTypeName` |  | |  | `cast( ddtext as fkkdm_int_text_reason preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

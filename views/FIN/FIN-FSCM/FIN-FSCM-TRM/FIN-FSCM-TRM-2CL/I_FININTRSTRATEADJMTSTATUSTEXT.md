@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `FinInterestRateAdjmtStatus` | ✓ | |  | `cast( dd07t.domvalue_l as tb_ira_registration_state )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FinInterestRateAdjmtStatusName` |  | |  | `cast( dd07t.ddtext as tb_ira_registration_state_name preserving type )` |
-| `_AdjustmentStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `FinInterestRateAdjmtStatus` | ✓ | |  | `cast( dd07t.domvalue_l as tb_ira_registration_state )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FinInterestRateAdjmtStatusName` |  | |  | `cast( dd07t.ddtext as tb_ira_registration_state_name preserving type )` |  |  |
+| `_AdjustmentStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

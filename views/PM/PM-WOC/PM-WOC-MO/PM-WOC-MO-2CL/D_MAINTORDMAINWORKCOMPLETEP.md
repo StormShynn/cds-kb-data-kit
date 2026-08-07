@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MainWorkCompletedDateTime` |  | |  | `timestamp` |
-| `MainWrkCmpltdDateTimeIsUsed` |  | |  | `abap_boolean` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MainWorkCompletedDateTime` |  | |  | `timestamp` |  |  |
+| `MainWrkCmpltdDateTimeIsUsed` |  | |  | `abap_boolean` |  |  |
 
 ## Source Code
 

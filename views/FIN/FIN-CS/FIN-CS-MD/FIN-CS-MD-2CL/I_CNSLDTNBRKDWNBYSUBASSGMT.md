@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | |  | `itclg` |
-| `ConsolidationBreakdownCategory` |  | |  | `}] key cast(tf103a.itgrp as fincs_breakdowncategory preserving type )` |
-| `CnsldtnSubassignment` | ✓ | |  | `cast( case tf103a.fieldname when 'RTCUR' then 'TransactionCurrency' when 'RBUPTR' then 'PartnerConsolidationUnit' when 'SITYP' then 'SubItemCategory' when 'SUBIT' then 'SubItem' when 'RUNIT' then 'BaseUnit' else '' end as fincs_md_subassignment )` |
-| `ConsolidationBreakdownType` |  | |  | `cast(tf103a.breakdown as fincs_breakdowntype preserving type )` |
-| `CnsldtnFixedValueOfSubassgmt` |  | |  | `cast(tf103a.value as fincs_fixedvalueofsubassgmt preserving type )` |
-| `CnsldtnFixedValOfSubassgmtExt` |  | |  | `cast(case when tf103a.fieldname = 'RUNIT' and tf103a.value <> '' then _UnitOfMeasure.UnitOfMeasure_E else tf103a.value end as fincs_fxdvalofsubssgm_ext preserving type )` |
-| `ConsolidationSelection` |  | |  | `cast(tf103a.selnm_max as fincs_consolidationselection preserving type )` |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_Subassignment` | | ✓ | | |
-| `_BreakdownType` | | ✓ | | |
-| `_BreakdownCategory` | | ✓ | | |
-| `_CnsldtnSelection` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `itclg` |  |  |
+| `ConsolidationBreakdownCategory` | ✓ | |  | `cast(tf103a.itgrp as fincs_breakdowncategory preserving type )` |  |  |
+| `CnsldtnSubassignment` | ✓ | |  | `cast( case tf103a.fieldname when 'RTCUR' then 'TransactionCurrency' when 'RBUPTR' then 'PartnerConsolidationUnit' when 'SITYP' then 'SubItemCategory' when 'SUBIT' then 'SubItem' when 'RUNIT' then 'BaseUnit' else '' end as fincs_md_subassignment )` |  |  |
+| `ConsolidationBreakdownType` |  | |  | `cast(tf103a.breakdown as fincs_breakdowntype preserving type )` |  |  |
+| `CnsldtnFixedValueOfSubassgmt` |  | |  | `cast(tf103a.value as fincs_fixedvalueofsubassgmt preserving type )` |  |  |
+| `CnsldtnFixedValOfSubassgmtExt` |  | |  | `cast(case when tf103a.fieldname = 'RUNIT' and tf103a.value <> '' then _UnitOfMeasure.UnitOfMeasure_E else tf103a.value end as fincs_fxdvalofsubssgm_ext preserving type )` |  |  |
+| `ConsolidationSelection` |  | |  | `cast(tf103a.selnm_max as fincs_consolidationselection preserving type )` |  |  |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_Subassignment` | | ✓ | | | | |
+| `_BreakdownType` | | ✓ | | | | |
+| `_BreakdownCategory` | | ✓ | | | | |
+| `_CnsldtnSelection` | | ✓ | | | | |
 
 ## Associations
 

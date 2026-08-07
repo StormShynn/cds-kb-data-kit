@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditMemoRequest` | ✓ | |  |  |
-| `CreditMemoRequestItem` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionBaseAmount` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionBaseQuantity` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `CreditMemoRequestType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_CreditMemoRequest` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |  |  |
+| `CreditMemoRequestItem` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionBaseAmount` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionBaseQuantity` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `CreditMemoRequestType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_CreditMemoRequest` | | ✓ | | | | |
 
 ## Source Code
 

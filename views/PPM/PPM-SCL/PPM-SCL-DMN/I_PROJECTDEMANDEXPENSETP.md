@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandExpenseUUID` | ✓ | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjectDemandExpenseType` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ReferencedObjectUUID` |  | |  |  |
-| `ProjDmndBillingControlCategory` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_ProjDmndExpenseDistr` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandExpenseUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjectDemandExpenseType` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ReferencedObjectUUID` |  | |  |  |  |  |
+| `ProjDmndBillingControlCategory` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_ProjDmndExpenseDistr` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REArchitectureObjectType` | ✓ | |  | `objtype` |
-| `REArchitectureObjectCategory` |  | |  | `objcategory` |
-| `SemanticObject` |  | |  | `semanticobject` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REArchitectureObjectType` | ✓ | |  | `objtype` |  |  |
+| `REArchitectureObjectCategory` |  | |  | `objcategory` |  |  |
+| `SemanticObject` |  | |  | `semanticobject` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

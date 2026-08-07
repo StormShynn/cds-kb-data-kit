@@ -26,33 +26,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalArea` | ✓ | |  | `fkber` |
-| `FunctionalAreaAuthznGrp` |  | |  | `authgrp` |
-| `CreatedByUser` |  | |  | `} cast( created_by as fmis_farea_createdbyuser preserving type )` |
-| `CreationDate` |  | |  | `cast( created_on as fmis_farea_creationdate preserving type )` |
-| `CreationTime` |  | |  | `cast( created_at as fmis_farea_creationtime preserving type )` |
-| `LastChangedByUser` |  | |  | `} cast( modified_by as fmis_farea_lastchangedbyuser preserving type )` |
-| `LastChangeDate` |  | |  | `cast( modified_on as fmis_farea_lastchangedate preserving type )` |
-| `LastChangeTime` |  | |  | `cast( modified_at as fmis_farea_lastchangetime preserving type )` |
-| `ValidityStartDate` |  | |  | `cast( datab as fmis_farea_validitystartdate preserving type )` |
-| `ValidityEndDate` |  | |  | `cast( datbis as fmis_farea_validityenddate preserving type )` |
-| `ExpirationDate` |  | |  | `cast( date_exp as fmis_farea_expirationdate preserving type )` |
-| `FunctionalAreaSubdivisionID` |  | |  | `str_id` |
-| `FunctionalArea1Subdivision` |  | |  | `fnsub1` |
-| `FunctionalArea2Subdivision` |  | |  | `fnsub2` |
-| `FunctionalArea3Subdivision` |  | |  | `fnsub3` |
-| `_FunctionalArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_FunctionalAreaSubdivisionID` | | ✓ | | |
-| `_FuncArea1Subdivision` | | ✓ | | |
-| `_FuncArea2Subdivision` | | ✓ | | |
-| `_FuncArea3Subdivision` | | ✓ | | |
-| `_FunctionalAreaHierNode` | | ✓ | | |
-| `_BusinessFeatureState` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalArea` | ✓ | |  | `fkber` |  |  |
+| `FunctionalAreaAuthznGrp` |  | |  | `authgrp` |  |  |
+| `CreatedByUser` |  | |  | `cast( created_by as fmis_farea_createdbyuser preserving type )` |  |  |
+| `CreationDate` |  | |  | `cast( created_on as fmis_farea_creationdate preserving type )` |  |  |
+| `CreationTime` |  | |  | `cast( created_at as fmis_farea_creationtime preserving type )` |  |  |
+| `LastChangedByUser` |  | |  | `cast( modified_by as fmis_farea_lastchangedbyuser preserving type )` |  |  |
+| `LastChangeDate` |  | |  | `cast( modified_on as fmis_farea_lastchangedate preserving type )` |  |  |
+| `LastChangeTime` |  | |  | `cast( modified_at as fmis_farea_lastchangetime preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast( datab as fmis_farea_validitystartdate preserving type )` |  |  |
+| `ValidityEndDate` |  | |  | `cast( datbis as fmis_farea_validityenddate preserving type )` |  |  |
+| `ExpirationDate` |  | |  | `cast( date_exp as fmis_farea_expirationdate preserving type )` |  |  |
+| `FunctionalAreaSubdivisionID` |  | |  | `str_id` |  |  |
+| `FunctionalArea1Subdivision` |  | |  | `fnsub1` |  |  |
+| `FunctionalArea2Subdivision` |  | |  | `fnsub2` |  |  |
+| `FunctionalArea3Subdivision` |  | |  | `fnsub3` |  |  |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_FunctionalAreaSubdivisionID` | | ✓ | | | | |
+| `_FuncArea1Subdivision` | | ✓ | | | | |
+| `_FuncArea2Subdivision` | | ✓ | | | | |
+| `_FuncArea3Subdivision` | | ✓ | | | | |
+| `_FunctionalAreaHierNode` | | ✓ | | | | |
+| `_BusinessFeatureState` | | ✓ | | | | |
 
 ## Associations
 

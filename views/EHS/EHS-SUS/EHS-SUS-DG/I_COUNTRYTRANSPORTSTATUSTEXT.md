@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CountryTransportStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l, 2) as ehdgm_country_transport_status preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `CountryTransportStatusName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CountryTransportStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l, 2) as ehdgm_country_transport_status preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `CountryTransportStatusName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

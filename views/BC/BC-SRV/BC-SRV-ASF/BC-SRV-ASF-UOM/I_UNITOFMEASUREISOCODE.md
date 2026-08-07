@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

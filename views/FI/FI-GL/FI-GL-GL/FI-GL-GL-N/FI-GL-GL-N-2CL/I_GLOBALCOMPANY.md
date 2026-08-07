@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Company` | ✓ | |  | `rcomp` |
-| `CompanyName` |  | |  | `cast(name1 as fis_company_name preserving type )` |
-| `CompanyCurrency` |  | |  | `curr` |
-| `CompanyLanguage` |  | |  | `langu` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Company` | ✓ | |  | `rcomp` |  |  |
+| `CompanyName` |  | |  | `cast(name1 as fis_company_name preserving type )` |  |  |
+| `CompanyCurrency` |  | |  | `curr` |  |  |
+| `CompanyLanguage` |  | |  | `langu` |  |  |
 
 ## Source Code
 

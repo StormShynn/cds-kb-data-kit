@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProcurementHubSourceSystem` | ✓ | |  | `be_source_sys` |
-| `ProcmtHubPurchasingOrg` | ✓ | |  | `be_purchorg` |
-| `ProcmtHubPurgOrgUniqueID` |  | |  | `be_purchorg_unique_id` |
-| `ProcmtHubPurgOrgName` |  | |  | `be_purchorg_name` |
-| `ProcurementHubSourceSystemName` |  | | `_ProcmtHubBackendSourceSystem` | `ProcurementHubSourceSystemName` |
-| `_ProcmtHubBackendSourceSystem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcurementHubSourceSystem` | ✓ | |  | `be_source_sys` |  |  |
+| `ProcmtHubPurchasingOrg` | ✓ | |  | `be_purchorg` |  |  |
+| `ProcmtHubPurgOrgUniqueID` |  | |  | `be_purchorg_unique_id` |  |  |
+| `ProcmtHubPurgOrgName` |  | |  | `be_purchorg_name` |  |  |
+| `ProcurementHubSourceSystemName` |  | | `_ProcmtHubBackendSourceSystem` | `ProcurementHubSourceSystemName` |  |  |
+| `_ProcmtHubBackendSourceSystem` | | ✓ | | | | |
 
 ## Associations
 

@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgReleaseStrategyControlCode` | ✓ | |  | `frgke` |
-| `_PurgRelStrategyControlCodeT` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgReleaseStrategyControlCode` | ✓ | |  | `frgke` |  |  |
+| `_PurgRelStrategyControlCodeT` | | ✓ | | | | |
 
 ## Associations
 

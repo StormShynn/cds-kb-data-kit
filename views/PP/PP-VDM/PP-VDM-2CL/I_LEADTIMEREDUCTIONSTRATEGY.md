@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `LeadTimeReductionStrategy` | ✓ | |  | `rstra` |
-| `_Plant` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `LeadTimeReductionStrategy` | ✓ | |  | `rstra` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

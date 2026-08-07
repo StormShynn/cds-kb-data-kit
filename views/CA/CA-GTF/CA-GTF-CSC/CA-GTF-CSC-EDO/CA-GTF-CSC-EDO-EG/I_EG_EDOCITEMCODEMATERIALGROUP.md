@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `EG_EDocMaterialGroup` | ✓ | |  |  |
-| `EG_EDocItmType` |  | |  |  |
-| `EG_EDocItmCode` |  | |  |  |
-| `EG_EDocInternationalArtclNmbr` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `EG_EDocMaterialGroup` | ✓ | |  |  |  |  |
+| `EG_EDocItmType` |  | |  |  |  |  |
+| `EG_EDocItmCode` |  | |  |  |  |  |
+| `EG_EDocInternationalArtclNmbr` |  | |  |  |  |  |
 
 ## Source Code
 

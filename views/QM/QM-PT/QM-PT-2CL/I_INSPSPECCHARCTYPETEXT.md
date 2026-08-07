@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSpecCharacteristicType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qchar_type_basic preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `InspSpecCharacteristicTypeText` |  | |  | `cast( ddtext as vdm_qchar_type_basic_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_InspSpecCharcType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSpecCharacteristicType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qchar_type_basic preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `InspSpecCharacteristicTypeText` |  | |  | `cast( ddtext as vdm_qchar_type_basic_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspSpecCharcType` | | ✓ | | | | |
 
 ## Associations
 

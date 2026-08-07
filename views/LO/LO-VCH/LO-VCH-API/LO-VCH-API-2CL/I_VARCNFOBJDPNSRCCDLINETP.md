@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ObjectDependencyName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ObjectDependencyCodeLineNumber` | ✓ | |  |  |
-| `ObjectDependencyCodeLineText` |  | |  |  |
-| `_SourceCode` | | ✓ | | |
-| `_ObjectDependency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectDependencyName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ObjectDependencyCodeLineNumber` | ✓ | |  |  |  |  |
+| `ObjectDependencyCodeLineText` |  | |  |  |  |  |
+| `_SourceCode` | | ✓ | | | | |
+| `_ObjectDependency` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialTransactionType` | ✓ | |  | `cast( FinancialTransactionType as fincs_financialtransactiontype preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | | ✓ | | |
-| `_FinTransTypeHierNode` | | ✓ | | |
-| `_MDSource` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialTransactionType` | ✓ | |  | `cast( FinancialTransactionType as fincs_financialtransactiontype preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_FinTransTypeHierNode` | | ✓ | | | | |
+| `_MDSource` | | ✓ | | | | |
 
 ## Associations
 

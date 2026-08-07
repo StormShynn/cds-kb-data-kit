@@ -27,42 +27,42 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RECORD_ID` |  | |  |  |
-| `FORM_APP_NAME` |  | |  |  |
-| `FORM_NAME` |  | |  |  |
-| `FORM_VERSION` |  | |  |  |
-| `FORM_INSTANCE_ID` |  | |  |  |
-| `FORM_STATUS` |  | |  |  |
-| `BOR_OBJTYP` |  | |  |  |
-| `OBJECT_TYPE` |  | |  |  |
-| `OBJECT_KEY` |  | |  |  |
-| `OBJECT_GROUP` |  | |  |  |
-| `OBJECT_GROUP_1` |  | |  |  |
-| `OBJECT_DESCR` |  | |  |  |
-| `TECH_ENTITY_TYPE` |  | |  |  |
-| `TECH_ENTITY_KEY` |  | |  |  |
-| `PARENT_OBJECT_TYPE` |  | |  |  |
-| `PARENT_OBJECT_KEY` |  | |  |  |
-| `OBJECT_KEY_EXT` |  | |  |  |
-| `DF_AGENT_ID` |  | |  |  |
-| `SYS_COMP` |  | |  |  |
-| `TENANT_ID` |  | |  |  |
-| `ORG_ID` |  | |  |  |
-| `FLAG_MANDATORY` |  | |  |  |
-| `MOBILE_APP` |  | |  |  |
-| `DELETED` |  | |  |  |
-| `ACTIVE` |  | |  |  |
-| `FORM_UPDATE_TS` |  | |  |  |
-| `FLAG_FINAL` |  | |  |  |
-| `CREATED_BY` |  | |  |  |
-| `CREATED_TS` |  | |  |  |
-| `CHANGED_BY` |  | |  |  |
-| `CHANGED_TS` |  | |  |  |
-| `REGISTRY_ID` |  | |  |  |
-| `DF_HOST_NAME` |  | |  |  |
-| `FORM_INSTANCE_LINK` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RECORD_ID` |  | |  |  |  |  |
+| `FORM_APP_NAME` |  | |  |  |  |  |
+| `FORM_NAME` |  | |  |  |  |  |
+| `FORM_VERSION` |  | |  |  |  |  |
+| `FORM_INSTANCE_ID` |  | |  |  |  |  |
+| `FORM_STATUS` |  | |  |  |  |  |
+| `BOR_OBJTYP` |  | |  |  |  |  |
+| `OBJECT_TYPE` |  | |  |  |  |  |
+| `OBJECT_KEY` |  | |  |  |  |  |
+| `OBJECT_GROUP` |  | |  |  |  |  |
+| `OBJECT_GROUP_1` |  | |  |  |  |  |
+| `OBJECT_DESCR` |  | |  |  |  |  |
+| `TECH_ENTITY_TYPE` |  | |  |  |  |  |
+| `TECH_ENTITY_KEY` |  | |  |  |  |  |
+| `PARENT_OBJECT_TYPE` |  | |  |  |  |  |
+| `PARENT_OBJECT_KEY` |  | |  |  |  |  |
+| `OBJECT_KEY_EXT` |  | |  |  |  |  |
+| `DF_AGENT_ID` |  | |  |  |  |  |
+| `SYS_COMP` |  | |  |  |  |  |
+| `TENANT_ID` |  | |  |  |  |  |
+| `ORG_ID` |  | |  |  |  |  |
+| `FLAG_MANDATORY` |  | |  |  |  |  |
+| `MOBILE_APP` |  | |  |  |  |  |
+| `DELETED` |  | |  |  |  |  |
+| `ACTIVE` |  | |  |  |  |  |
+| `FORM_UPDATE_TS` |  | |  |  |  |  |
+| `FLAG_FINAL` |  | |  |  |  |  |
+| `CREATED_BY` |  | |  |  |  |  |
+| `CREATED_TS` |  | |  |  |  |  |
+| `CHANGED_BY` |  | |  |  |  |  |
+| `CHANGED_TS` |  | |  |  |  |  |
+| `REGISTRY_ID` |  | |  |  |  |  |
+| `DF_HOST_NAME` |  | |  |  |  |  |
+| `FORM_INSTANCE_LINK` |  | |  |  |  |  |
 
 ## Source Code
 

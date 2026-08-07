@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialShortageProfile` | ✓ | |  |  |
-| `MaterialShortageProfileCount` | ✓ | |  |  |
-| `MaterialShortageDefinition` |  | |  | `concat(MaterialShortageProfile, MaterialShortageProfileCount)` |
-| `DemandCategoryGroup` |  | |  |  |
-| `ReceiptCategoryGroup` |  | |  |  |
-| `EvaluationHorizonInDays` |  | |  |  |
-| `MaterialShortageDefinitionName` |  | |  |  |
-| `UncoveredDemandIsCalculated` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialShortageProfile` | ✓ | |  |  |  |  |
+| `MaterialShortageProfileCount` | ✓ | |  |  |  |  |
+| `MaterialShortageDefinition` |  | |  | `concat(MaterialShortageProfile, MaterialShortageProfileCount)` |  |  |
+| `DemandCategoryGroup` |  | |  |  |  |  |
+| `ReceiptCategoryGroup` |  | |  |  |  |  |
+| `EvaluationHorizonInDays` |  | |  |  |  |  |
+| `MaterialShortageDefinitionName` |  | |  |  |  |  |
+| `UncoveredDemandIsCalculated` |  | |  |  |  |  |
 
 ## Associations
 

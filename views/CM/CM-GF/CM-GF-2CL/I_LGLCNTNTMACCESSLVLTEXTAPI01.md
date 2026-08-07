@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMAccessLvl` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LglCntntMAccessLvlName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMAccessLvl` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LglCntntMAccessLvlName` |  | |  |  |  |  |
 
 ## Source Code
 

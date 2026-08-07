@@ -31,31 +31,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankPowerOfAttorneyUUID` | ✓ | |  |  |
-| `BankPowerOfAttorney` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `BkPOABankAccountAssignmentType` |  | |  |  |
-| `BankPowerOfAttorneyName` |  | |  |  |
-| `BankPowerOfAttorneyStatus` |  | |  |  |
-| `BkPOAAuthorizationGroup` |  | |  |  |
-| `PaymentApprovalRule` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `BkPOARtntnPeriodStartDateTime` |  | |  |  |
-| `BankPowerOfAttorneyIsBlocked` |  | |  |  |
-| `BankPowerOfAttorneyType` |  | |  |  |
-| `_BkPOAActivityAssignment` | | ✓ | | |
-| `_BkPOAAuthzdRepresentative` | | ✓ | | |
-| `_BkPOABankAccount` | | ✓ | | |
-| `_BkPOABankAccountSelection` | | ✓ | | |
-| `_BkPOACompanyCode` | | ✓ | | |
-| `_BkPOAPredecessor` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` | ✓ | |  |  |  |  |
+| `BankPowerOfAttorney` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `BkPOABankAccountAssignmentType` |  | |  |  |  |  |
+| `BankPowerOfAttorneyName` |  | |  |  |  |  |
+| `BankPowerOfAttorneyStatus` |  | |  |  |  |  |
+| `BkPOAAuthorizationGroup` |  | |  |  |  |  |
+| `PaymentApprovalRule` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `BkPOARtntnPeriodStartDateTime` |  | |  |  |  |  |
+| `BankPowerOfAttorneyIsBlocked` |  | |  |  |  |  |
+| `BankPowerOfAttorneyType` |  | |  |  |  |  |
+| `_BkPOAActivityAssignment` | | ✓ | | | | |
+| `_BkPOAAuthzdRepresentative` | | ✓ | | | | |
+| `_BkPOABankAccount` | | ✓ | | | | |
+| `_BkPOABankAccountSelection` | | ✓ | | | | |
+| `_BkPOACompanyCode` | | ✓ | | | | |
+| `_BkPOAPredecessor` | | ✓ | | | | |
 
 ## Source Code
 

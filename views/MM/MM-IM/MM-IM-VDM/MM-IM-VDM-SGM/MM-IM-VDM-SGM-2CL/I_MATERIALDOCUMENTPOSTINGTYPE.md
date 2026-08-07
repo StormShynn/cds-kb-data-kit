@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialDocumentPostingType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as kzsto)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialDocumentPostingType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as kzsto)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

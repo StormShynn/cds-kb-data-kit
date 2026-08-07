@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DefectInternalID` | ✓ | | `_DefectLongText` | `DefectInternalID` |
-| `LongTextInternalNumber` | ✓ | | `_DefectLongText` | `LongTextInternalNumber` |
-| `Language` | ✓ | | `_DefectLongText` | `Language` |
-| `LongTextID` |  | | `_DefectLongText` | `LongTextID` |
-| `DefectLongText` |  | | `_DefectLongText` | `DefectLongText` |
-| `LongTextCreatedByUser` |  | | `_DefectLongText` | `LongTextCreatedByUser` |
-| `LongTextCreatedAt` |  | | `_DefectLongText` | `LongTextCreatedAt` |
-| `LongTextLastChangedByUser` |  | | `_DefectLongText` | `LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` |  | | `_DefectLongText` | `LongTextLastChangedAt` |
-| `MimeType` |  | | `_DefectLongText` | `MimeType` |
-| `_Defect` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DefectInternalID` | ✓ | | `_DefectLongText` | `DefectInternalID` |  |  |
+| `LongTextInternalNumber` | ✓ | | `_DefectLongText` | `LongTextInternalNumber` |  |  |
+| `Language` | ✓ | | `_DefectLongText` | `Language` |  |  |
+| `LongTextID` |  | | `_DefectLongText` | `LongTextID` |  |  |
+| `DefectLongText` |  | | `_DefectLongText` | `DefectLongText` |  |  |
+| `LongTextCreatedByUser` |  | | `_DefectLongText` | `LongTextCreatedByUser` |  |  |
+| `LongTextCreatedAt` |  | | `_DefectLongText` | `LongTextCreatedAt` |  |  |
+| `LongTextLastChangedByUser` |  | | `_DefectLongText` | `LongTextLastChangedByUser` |  |  |
+| `LongTextLastChangedAt` |  | | `_DefectLongText` | `LongTextLastChangedAt` |  |  |
+| `MimeType` |  | | `_DefectLongText` | `MimeType` |  |  |
+| `_Defect` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Source Code
 

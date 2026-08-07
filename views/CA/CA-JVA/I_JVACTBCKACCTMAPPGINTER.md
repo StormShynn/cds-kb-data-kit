@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JntVntrIntcoCode` | ✓ | |  |  |
-| `FromGLAccount` | ✓ | |  |  |
-| `ToGLAccount` |  | |  |  |
-| `CutbackAccount` |  | |  |  |
-| `JVAIsToKeepOriginalAccount` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_InterCompanyCompanyCode` | | ✓ | | |
-| `_FromGLAccount` | | ✓ | | |
-| `_ToGLAccount` | | ✓ | | |
-| `_CutbackAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JntVntrIntcoCode` | ✓ | |  |  |  |  |
+| `FromGLAccount` | ✓ | |  |  |  |  |
+| `ToGLAccount` |  | |  |  |  |  |
+| `CutbackAccount` |  | |  |  |  |  |
+| `JVAIsToKeepOriginalAccount` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_InterCompanyCompanyCode` | | ✓ | | | | |
+| `_FromGLAccount` | | ✓ | | | | |
+| `_ToGLAccount` | | ✓ | | | | |
+| `_CutbackAccount` | | ✓ | | | | |
 
 ## Associations
 

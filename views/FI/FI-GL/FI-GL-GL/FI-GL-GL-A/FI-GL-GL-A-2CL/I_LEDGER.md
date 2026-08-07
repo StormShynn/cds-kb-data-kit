@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` | ✓ | |  | `rldnr` |
-| `IsLeadingLedger` |  | |  | `xleading` |
-| `LedgerApplication` |  | |  | `appl` |
-| `LedgerSubApplication` |  | |  | `subappl` |
-| `AccountingValuationView` |  | |  | `valutyp` |
-| `LedgerType` |  | |  | `ledger_type` |
-| `ExtensionLedgerType` |  | |  | `ext_ledger_type` |
-| `ReferenceLedger` |  | |  | `fallback_ledger` |
-| `TechnicalLedger` |  | |  | `tech_ledger` |
-| `_PredictionLedger` | | ✓ | | |
-| `_LedgerType` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` | ✓ | |  | `rldnr` |  |  |
+| `IsLeadingLedger` |  | |  | `xleading` |  |  |
+| `LedgerApplication` |  | |  | `appl` |  |  |
+| `LedgerSubApplication` |  | |  | `subappl` |  |  |
+| `AccountingValuationView` |  | |  | `valutyp` |  |  |
+| `LedgerType` |  | |  | `ledger_type` |  |  |
+| `ExtensionLedgerType` |  | |  | `ext_ledger_type` |  |  |
+| `ReferenceLedger` |  | |  | `fallback_ledger` |  |  |
+| `TechnicalLedger` |  | |  | `tech_ledger` |  |  |
+| `_PredictionLedger` | | ✓ | | | | |
+| `_LedgerType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

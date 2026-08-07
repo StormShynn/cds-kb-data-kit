@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgSafetyDataSheetStatus` | ✓ | |  | `cast( dd07l.domvalue_l as mmpur_pc_status_sds )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgSafetyDataSheetStatus` | ✓ | |  | `cast( dd07l.domvalue_l as mmpur_pc_status_sds )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

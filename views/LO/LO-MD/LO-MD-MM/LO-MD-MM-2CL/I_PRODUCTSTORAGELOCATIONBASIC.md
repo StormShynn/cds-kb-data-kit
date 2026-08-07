@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `StorageLocation` | ✓ | |  |  |
-| `WarehouseStorageBin` |  | |  |  |
-| `MaintenanceStatus` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `PhysicalInventoryBlockInd` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `DateOfLastPostedCntUnRstrcdStk` |  | |  |  |
-| `InventoryCorrectionFactor` |  | |  |  |
-| `InvtryRestrictedUseStockInd` |  | |  |  |
-| `InvtryCurrentYearStockInd` |  | |  |  |
-| `InvtryQualInspCurrentYrStkInd` |  | |  |  |
-| `InventoryBlockStockInd` |  | |  |  |
-| `InvtryRestStockPrevPeriodInd` |  | |  |  |
-| `InventoryStockPrevPeriod` |  | |  |  |
-| `InvtryStockQltyInspPrevPeriod` |  | |  |  |
-| `HasInvtryBlockStockPrevPeriod` |  | |  |  |
-| `FiscalYearCurrentInvtryPeriod` |  | |  |  |
-| `LeanWrhsManagementPickingArea` |  | |  |  |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `_Product` | | ✓ | | |
-| `_MaterialStock` | | ✓ | | |
-| `_Stock` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `StorageLocation` | ✓ | |  |  |  |  |
+| `WarehouseStorageBin` |  | |  |  |  |  |
+| `MaintenanceStatus` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `PhysicalInventoryBlockInd` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `DateOfLastPostedCntUnRstrcdStk` |  | |  |  |  |  |
+| `InventoryCorrectionFactor` |  | |  |  |  |  |
+| `InvtryRestrictedUseStockInd` |  | |  |  |  |  |
+| `InvtryCurrentYearStockInd` |  | |  |  |  |  |
+| `InvtryQualInspCurrentYrStkInd` |  | |  |  |  |  |
+| `InventoryBlockStockInd` |  | |  |  |  |  |
+| `InvtryRestStockPrevPeriodInd` |  | |  |  |  |  |
+| `InventoryStockPrevPeriod` |  | |  |  |  |  |
+| `InvtryStockQltyInspPrevPeriod` |  | |  |  |  |  |
+| `HasInvtryBlockStockPrevPeriod` |  | |  |  |  |  |
+| `FiscalYearCurrentInvtryPeriod` |  | |  |  |  |  |
+| `LeanWrhsManagementPickingArea` |  | |  |  |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_MaterialStock` | | ✓ | | | | |
+| `_Stock` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
 
 ## Associations
 

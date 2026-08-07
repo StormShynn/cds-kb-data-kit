@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SequenceCategory` | ✓ | |  | `flgat` |
-| `Language` | ✓ | |  | `spras` |
-| `SequenceCategoryName` |  | |  | `flg_ltxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SequenceCategory` | ✓ | |  | `flgat` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SequenceCategoryName` |  | |  | `flg_ltxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgDocumentItemType` | ✓ | | `_CAInvcgDocItemType0Text` | `CAInvcgDocumentItemType` |
-| `Language` | ✓ | | `_CAInvcgDocItemType0Text` | `Language` |
-| `CAInvcgDocItemTypeText` |  | | `_CAInvcgDocItemType0Text` | `CAInvcgDocItemTypeText` |
-| `_CAInvcgDocItemType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgDocumentItemType` | ✓ | | `_CAInvcgDocItemType0Text` | `CAInvcgDocumentItemType` |  |  |
+| `Language` | ✓ | | `_CAInvcgDocItemType0Text` | `Language` |  |  |
+| `CAInvcgDocItemTypeText` |  | | `_CAInvcgDocItemType0Text` | `CAInvcgDocItemTypeText` |  |  |
+| `_CAInvcgDocItemType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

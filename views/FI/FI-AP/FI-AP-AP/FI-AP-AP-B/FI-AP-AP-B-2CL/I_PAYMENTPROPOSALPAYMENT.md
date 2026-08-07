@@ -29,161 +29,161 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentRunDate` | ✓ | |  |  |
-| `PaymentRunID` | ✓ | |  |  |
-| `PaymentRunIsProposal` | ✓ | |  |  |
-| `PayingCompanyCode` | ✓ | |  |  |
-| `Supplier` | ✓ | |  |  |
-| `Customer` | ✓ | |  |  |
-| `PaymentRecipient` | ✓ | |  |  |
-| `PaymentDocument` | ✓ | |  |  |
-| `FinancialAccountType` |  | |  |  |
-| `SendingCompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `PaymentReason` |  | |  |  |
-| `BranchCode` |  | |  |  |
-| `DirectDebitType` |  | |  |  |
-| `PaymentDueDate` |  | |  |  |
-| `PaymentRequestPaymentGroup` |  | |  |  |
-| `NumberOfTextLines` |  | |  |  |
-| `NumberOfPaidItems` |  | |  |  |
-| `CompanyCodeCountry` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `PaymentMethodSupplement` |  | |  |  |
-| `PaymentReference` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PaymentOrder` |  | |  |  |
-| `ValueDate` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `PaymentsGroupingCriterion` |  | |  |  |
-| `PaymentOrigin` |  | |  |  |
-| `SWIFTTransactionReferenceUUID` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `AccountingClerk` |  | |  |  |
-| `AccountByShipper` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `CityName` |  | |  |  |
-| `StreetAddressName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `POBoxDeviatingCityName` |  | |  |  |
-| `OrganizationBPName1` |  | |  |  |
-| `OrganizationBPName2` |  | |  |  |
-| `OrganizationBPName3` |  | |  |  |
-| `OrganizationBPName4` |  | |  |  |
-| `BankControlKey` |  | |  |  |
-| `BankCountry` |  | |  |  |
-| `Bank` |  | |  |  |
-| `BankInternalID` |  | |  |  |
-| `BankAccount` |  | |  |  |
-| `BankAccountLongID` |  | |  |  |
-| `IBAN` |  | |  |  |
-| `HouseBank` |  | |  |  |
-| `HouseBankAccount` |  | |  |  |
-| `PayeeTitle` |  | |  |  |
-| `PayeeLanguage` |  | |  |  |
-| `PayeeName` |  | |  |  |
-| `PayeeAdditionalName` |  | |  |  |
-| `PayeeCountry` |  | |  |  |
-| `PayeeRegion` |  | |  |  |
-| `PayeeCityName` |  | |  |  |
-| `PayeeDistrictName` |  | |  |  |
-| `PayeeStreet` |  | |  |  |
-| `PayeePostalCode` |  | |  |  |
-| `PayeePOBox` |  | |  |  |
-| `PayeePOBoxPostalCode` |  | |  |  |
-| `PayeeBankControlKey` |  | |  |  |
-| `PayeeBankCountry` |  | |  |  |
-| `PayeeBank` |  | |  |  |
-| `PayeeBankKey` |  | |  |  |
-| `PayeeBankAccount` |  | |  |  |
-| `PayeeBankAccountLongID` |  | |  |  |
-| `PayeeSEPASequenceType` |  | |  |  |
-| `PayeeSEPAMandateUUID` |  | |  |  |
-| `PayeeIBAN` |  | |  |  |
-| `PayeeSWIFTCode` |  | |  |  |
-| `PayeeBankDetailReference` |  | |  |  |
-| `PayeeBankAccountHolderName` |  | |  |  |
-| `PaymentCurrency` |  | |  |  |
-| `CashDiscountAmountInPaytCrcy` |  | |  |  |
-| `PaymentAmountInPaytCurrency` |  | |  |  |
-| `LostCashDiscountInPaytCrcy` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `CashDiscountAmtInCoCodeCrcy` |  | |  |  |
-| `PaytAmountInCoCodeCurrency` |  | |  |  |
-| `LostCashDiscountInCoCodeCrcy` |  | |  |  |
-| `FunctionalCurrency` |  | |  |  |
-| `PaymentAmountInFunctionalCrcy` |  | |  |  |
-| `CashDiscountAmountInFuncnlCrcy` |  | |  |  |
-| `AdditionalCurrency1` |  | |  |  |
-| `PaymentAmountInAdditionalCrcy1` |  | |  |  |
-| `CashDiscountAmtInAddlCrcy1` |  | |  |  |
-| `AdditionalCurrency2` |  | |  |  |
-| `PaymentAmountInAdditionalCrcy2` |  | |  |  |
-| `CashDiscountAmtInAddlCrcy2` |  | |  |  |
-| `EDIPaymentOrderStatus` |  | |  |  |
-| `EDIPaymentAdviceStatus` |  | |  |  |
-| `DataExchangeInstructionKey` |  | |  |  |
-| `DataExchangeInstruction1` |  | |  |  |
-| `DataExchangeInstruction2` |  | |  |  |
-| `DataExchangeInstruction3` |  | |  |  |
-| `DataExchangeInstruction4` |  | |  |  |
-| `BillOfExchangeIssueDate` |  | |  |  |
-| `BillOfExchangeDueDate` |  | |  |  |
-| `BankChainBank1Type` |  | |  |  |
-| `BankChainBank1Country` |  | |  |  |
-| `BankChainBank1` |  | |  |  |
-| `BankChainBank1BankAccount` |  | |  |  |
-| `BankChainBank1ControlKey` |  | |  |  |
-| `BankChainBank1DetailReference` |  | |  |  |
-| `BankChainBank1IBAN` |  | |  |  |
-| `BankChainBank2Type` |  | |  |  |
-| `BankChainBank2Country` |  | |  |  |
-| `BankChainBank2` |  | |  |  |
-| `BankChainBank2BankAccount` |  | |  |  |
-| `BankChainBank2ControlKey` |  | |  |  |
-| `BankChainBank2DetailReference` |  | |  |  |
-| `BankChainBank2IBAN` |  | |  |  |
-| `BankChainBank3Type` |  | |  |  |
-| `BankChainBank3Country` |  | |  |  |
-| `BankChainBank3` |  | |  |  |
-| `BankChainBank3BankAccount` |  | |  |  |
-| `BankChainBank3ControlKey` |  | |  |  |
-| `BankChainBank3DetailReference` |  | |  |  |
-| `BankChainBank3IBAN` |  | |  |  |
-| `PayeePaymentSystem` |  | |  |  |
-| `PayeeAliasType` |  | |  |  |
-| `PayeeAliasName` |  | |  |  |
-| `_PaymentProposalItem` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_CompanyCodeCountry` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_PaymentCurrency` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_PaymentmethodSupplement` | | ✓ | | |
-| `_PayableToleranceDay` | | ✓ | | |
-| `_PaymentReason` | | ✓ | | |
-| `_SendingCompanyCode` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_BankCountry` | | ✓ | | |
-| `_Bank` | | ✓ | | |
-| `_HouseBank` | | ✓ | | |
-| `_HouseBankAccount` | | ✓ | | |
-| `_DataExchangeInstructionKeys` | | ✓ | | |
-| `_PayeeCountry` | | ✓ | | |
-| `_PayeeBankCountry` | | ✓ | | |
-| `_PayeeBank` | | ✓ | | |
-| `_FunctionalCurrency` | | ✓ | | |
-| `_PayeePaymentSystem` | | ✓ | | |
-| `_PayeeAliasType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentRunDate` | ✓ | |  |  |  |  |
+| `PaymentRunID` | ✓ | |  |  |  |  |
+| `PaymentRunIsProposal` | ✓ | |  |  |  |  |
+| `PayingCompanyCode` | ✓ | |  |  |  |  |
+| `Supplier` | ✓ | |  |  |  |  |
+| `Customer` | ✓ | |  |  |  |  |
+| `PaymentRecipient` | ✓ | |  |  |  |  |
+| `PaymentDocument` | ✓ | |  |  |  |  |
+| `FinancialAccountType` |  | |  |  |  |  |
+| `SendingCompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `PaymentReason` |  | |  |  |  |  |
+| `BranchCode` |  | |  |  |  |  |
+| `DirectDebitType` |  | |  |  |  |  |
+| `PaymentDueDate` |  | |  |  |  |  |
+| `PaymentRequestPaymentGroup` |  | |  |  |  |  |
+| `NumberOfTextLines` |  | |  |  |  |  |
+| `NumberOfPaidItems` |  | |  |  |  |  |
+| `CompanyCodeCountry` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `PaymentMethodSupplement` |  | |  |  |  |  |
+| `PaymentReference` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PaymentOrder` |  | |  |  |  |  |
+| `ValueDate` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `PaymentsGroupingCriterion` |  | |  |  |  |  |
+| `PaymentOrigin` |  | |  |  |  |  |
+| `SWIFTTransactionReferenceUUID` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `AccountingClerk` |  | |  |  |  |  |
+| `AccountByShipper` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `StreetAddressName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |  |  |
+| `OrganizationBPName1` |  | |  |  |  |  |
+| `OrganizationBPName2` |  | |  |  |  |  |
+| `OrganizationBPName3` |  | |  |  |  |  |
+| `OrganizationBPName4` |  | |  |  |  |  |
+| `BankControlKey` |  | |  |  |  |  |
+| `BankCountry` |  | |  |  |  |  |
+| `Bank` |  | |  |  |  |  |
+| `BankInternalID` |  | |  |  |  |  |
+| `BankAccount` |  | |  |  |  |  |
+| `BankAccountLongID` |  | |  |  |  |  |
+| `IBAN` |  | |  |  |  |  |
+| `HouseBank` |  | |  |  |  |  |
+| `HouseBankAccount` |  | |  |  |  |  |
+| `PayeeTitle` |  | |  |  |  |  |
+| `PayeeLanguage` |  | |  |  |  |  |
+| `PayeeName` |  | |  |  |  |  |
+| `PayeeAdditionalName` |  | |  |  |  |  |
+| `PayeeCountry` |  | |  |  |  |  |
+| `PayeeRegion` |  | |  |  |  |  |
+| `PayeeCityName` |  | |  |  |  |  |
+| `PayeeDistrictName` |  | |  |  |  |  |
+| `PayeeStreet` |  | |  |  |  |  |
+| `PayeePostalCode` |  | |  |  |  |  |
+| `PayeePOBox` |  | |  |  |  |  |
+| `PayeePOBoxPostalCode` |  | |  |  |  |  |
+| `PayeeBankControlKey` |  | |  |  |  |  |
+| `PayeeBankCountry` |  | |  |  |  |  |
+| `PayeeBank` |  | |  |  |  |  |
+| `PayeeBankKey` |  | |  |  |  |  |
+| `PayeeBankAccount` |  | |  |  |  |  |
+| `PayeeBankAccountLongID` |  | |  |  |  |  |
+| `PayeeSEPASequenceType` |  | |  |  |  |  |
+| `PayeeSEPAMandateUUID` |  | |  |  |  |  |
+| `PayeeIBAN` |  | |  |  |  |  |
+| `PayeeSWIFTCode` |  | |  |  |  |  |
+| `PayeeBankDetailReference` |  | |  |  |  |  |
+| `PayeeBankAccountHolderName` |  | |  |  |  |  |
+| `PaymentCurrency` |  | |  |  |  |  |
+| `CashDiscountAmountInPaytCrcy` |  | |  |  |  |  |
+| `PaymentAmountInPaytCurrency` |  | |  |  |  |  |
+| `LostCashDiscountInPaytCrcy` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `CashDiscountAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `PaytAmountInCoCodeCurrency` |  | |  |  |  |  |
+| `LostCashDiscountInCoCodeCrcy` |  | |  |  |  |  |
+| `FunctionalCurrency` |  | |  |  |  |  |
+| `PaymentAmountInFunctionalCrcy` |  | |  |  |  |  |
+| `CashDiscountAmountInFuncnlCrcy` |  | |  |  |  |  |
+| `AdditionalCurrency1` |  | |  |  |  |  |
+| `PaymentAmountInAdditionalCrcy1` |  | |  |  |  |  |
+| `CashDiscountAmtInAddlCrcy1` |  | |  |  |  |  |
+| `AdditionalCurrency2` |  | |  |  |  |  |
+| `PaymentAmountInAdditionalCrcy2` |  | |  |  |  |  |
+| `CashDiscountAmtInAddlCrcy2` |  | |  |  |  |  |
+| `EDIPaymentOrderStatus` |  | |  |  |  |  |
+| `EDIPaymentAdviceStatus` |  | |  |  |  |  |
+| `DataExchangeInstructionKey` |  | |  |  |  |  |
+| `DataExchangeInstruction1` |  | |  |  |  |  |
+| `DataExchangeInstruction2` |  | |  |  |  |  |
+| `DataExchangeInstruction3` |  | |  |  |  |  |
+| `DataExchangeInstruction4` |  | |  |  |  |  |
+| `BillOfExchangeIssueDate` |  | |  |  |  |  |
+| `BillOfExchangeDueDate` |  | |  |  |  |  |
+| `BankChainBank1Type` |  | |  |  |  |  |
+| `BankChainBank1Country` |  | |  |  |  |  |
+| `BankChainBank1` |  | |  |  |  |  |
+| `BankChainBank1BankAccount` |  | |  |  |  |  |
+| `BankChainBank1ControlKey` |  | |  |  |  |  |
+| `BankChainBank1DetailReference` |  | |  |  |  |  |
+| `BankChainBank1IBAN` |  | |  |  |  |  |
+| `BankChainBank2Type` |  | |  |  |  |  |
+| `BankChainBank2Country` |  | |  |  |  |  |
+| `BankChainBank2` |  | |  |  |  |  |
+| `BankChainBank2BankAccount` |  | |  |  |  |  |
+| `BankChainBank2ControlKey` |  | |  |  |  |  |
+| `BankChainBank2DetailReference` |  | |  |  |  |  |
+| `BankChainBank2IBAN` |  | |  |  |  |  |
+| `BankChainBank3Type` |  | |  |  |  |  |
+| `BankChainBank3Country` |  | |  |  |  |  |
+| `BankChainBank3` |  | |  |  |  |  |
+| `BankChainBank3BankAccount` |  | |  |  |  |  |
+| `BankChainBank3ControlKey` |  | |  |  |  |  |
+| `BankChainBank3DetailReference` |  | |  |  |  |  |
+| `BankChainBank3IBAN` |  | |  |  |  |  |
+| `PayeePaymentSystem` |  | |  |  |  |  |
+| `PayeeAliasType` |  | |  |  |  |  |
+| `PayeeAliasName` |  | |  |  |  |  |
+| `_PaymentProposalItem` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CompanyCodeCountry` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_PaymentCurrency` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_PaymentmethodSupplement` | | ✓ | | | | |
+| `_PayableToleranceDay` | | ✓ | | | | |
+| `_PaymentReason` | | ✓ | | | | |
+| `_SendingCompanyCode` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_BankCountry` | | ✓ | | | | |
+| `_Bank` | | ✓ | | | | |
+| `_HouseBank` | | ✓ | | | | |
+| `_HouseBankAccount` | | ✓ | | | | |
+| `_DataExchangeInstructionKeys` | | ✓ | | | | |
+| `_PayeeCountry` | | ✓ | | | | |
+| `_PayeeBankCountry` | | ✓ | | | | |
+| `_PayeeBank` | | ✓ | | | | |
+| `_FunctionalCurrency` | | ✓ | | | | |
+| `_PayeePaymentSystem` | | ✓ | | | | |
+| `_PayeeAliasType` | | ✓ | | | | |
 
 ## Associations
 

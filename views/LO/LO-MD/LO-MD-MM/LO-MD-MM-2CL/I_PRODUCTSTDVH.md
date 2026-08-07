@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ProductExternalID` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `ProductType` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_ProductGroup_2` | | ✓ | | |
-| `_ProductType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ProductExternalID` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `ProductType` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ProductGroup_2` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
 
 ## Source Code
 

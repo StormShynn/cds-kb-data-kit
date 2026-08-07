@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as bu_type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BusinessPartnerCategoryText` |  | |  | `ddtext` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_CategoryValueHelp` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as bu_type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BusinessPartnerCategoryText` |  | |  | `ddtext` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_CategoryValueHelp` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |
-| `EG_ElectronicDocOutgDocUnqID` |  | |  |  |
-| `EG_ElectronicDocOutgRcvdDteTme` |  | |  |  |
-| `EG_EDocOutgSubmsnUnqID` |  | |  |  |
-| `EG_EDocOutgCanclnAllwdDateTime` |  | |  |  |
-| `EG_EDocOutgRjcnAllwdDateTime` |  | |  |  |
-| `EG_EDocOutgCanclnRequestDteTme` |  | |  |  |
-| `EG_EDocOutgRejectionReqDateTme` |  | |  |  |
-| `EG_EDocOutgCanclnReqDlydDteTme` |  | |  |  |
-| `EG_EDocOutgRjcnReqDlydDateTime` |  | |  |  |
-| `EG_EDocOutgDclnCanclnReqDteTme` |  | |  |  |
-| `EG_EDocOutgDclnRjcnReqDateTime` |  | |  |  |
-| `EG_ElectronicDocOutgDocumentID` |  | |  |  |
-| `EG_ElectronicDocOutgDocVersion` |  | |  |  |
-| `EG_EDocOutgIsCanclnAllwd` |  | |  |  |
-| `EG_ElectronicDocOutgCanclnCode` |  | |  |  |
-| `EG_ElectronicDocCanclnRsnDesc` |  | |  |  |
-| `EG_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |  |  |
+| `EG_ElectronicDocOutgDocUnqID` |  | |  |  |  |  |
+| `EG_ElectronicDocOutgRcvdDteTme` |  | |  |  |  |  |
+| `EG_EDocOutgSubmsnUnqID` |  | |  |  |  |  |
+| `EG_EDocOutgCanclnAllwdDateTime` |  | |  |  |  |  |
+| `EG_EDocOutgRjcnAllwdDateTime` |  | |  |  |  |  |
+| `EG_EDocOutgCanclnRequestDteTme` |  | |  |  |  |  |
+| `EG_EDocOutgRejectionReqDateTme` |  | |  |  |  |  |
+| `EG_EDocOutgCanclnReqDlydDteTme` |  | |  |  |  |  |
+| `EG_EDocOutgRjcnReqDlydDateTime` |  | |  |  |  |  |
+| `EG_EDocOutgDclnCanclnReqDteTme` |  | |  |  |  |  |
+| `EG_EDocOutgDclnRjcnReqDateTime` |  | |  |  |  |  |
+| `EG_ElectronicDocOutgDocumentID` |  | |  |  |  |  |
+| `EG_ElectronicDocOutgDocVersion` |  | |  |  |  |  |
+| `EG_EDocOutgIsCanclnAllwd` |  | |  |  |  |  |
+| `EG_ElectronicDocOutgCanclnCode` |  | |  |  |  |  |
+| `EG_ElectronicDocCanclnRsnDesc` |  | |  |  |  |  |
+| `EG_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |  |  |
 
 ## Associations
 

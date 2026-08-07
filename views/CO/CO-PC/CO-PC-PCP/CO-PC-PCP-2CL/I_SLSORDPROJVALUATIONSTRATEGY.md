@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SlsOrdProjValnStrategy` | ✓ | |  | `cast( cast ( substring( domvalue_l, 1, 1) as abap.char( 1 ) ) as fpc_val_strat_sls_order )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SlsOrdProjValnStrategy` | ✓ | |  | `cast( cast ( substring( domvalue_l, 1, 1) as abap.char( 1 ) ) as fpc_val_strat_sls_order )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

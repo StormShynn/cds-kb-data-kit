@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GoodsMovementType` | ✓ | |  | `bwart` |
-| `GoodsMovementReasonCode` | ✓ | |  | `grund` |
-| `_GoodsMovementType` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GoodsMovementType` | ✓ | |  | `bwart` |  |  |
+| `GoodsMovementReasonCode` | ✓ | |  | `grund` |  |  |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

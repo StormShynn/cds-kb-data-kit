@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
-| `DocumentInfoRecordDocNumber` |  | |  | `}] key documentdesc.doknr` |
-| `DocumentInfoRecordDocVersion` |  | |  | `}] key documentdesc.dokvr` |
-| `DocumentInfoRecordDocPart` | ✓ | |  | `doktl` |
-| `Language` | ✓ | |  | `langu` |
-| `DocumentDescription` |  | |  | `dktxt` |
-| `LongTextExists` |  | |  | `ltxin` |
-| `DocInfoRecdShortText` |  | |  | `dktxt_uc` |
-| `_DocType` | | ✓ | | |
-| `_DocNumber` | | ✓ | | |
-| `_DocPart` | | ✓ | | |
-| `_DocVersion` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  | `dokvr` |  |  |
+| `DocumentInfoRecordDocPart` | ✓ | |  | `doktl` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `DocumentDescription` |  | |  | `dktxt` |  |  |
+| `LongTextExists` |  | |  | `ltxin` |  |  |
+| `DocInfoRecdShortText` |  | |  | `dktxt_uc` |  |  |
+| `_DocType` | | ✓ | | | | |
+| `_DocNumber` | | ✓ | | | | |
+| `_DocPart` | | ✓ | | | | |
+| `_DocVersion` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

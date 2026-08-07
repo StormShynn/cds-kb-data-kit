@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `EarmarkedFundsDocumentCategory` | ✓ | |  | `bltyp` |
-| `EarmarkedFundsDocumentType` | ✓ | |  | `cast ( blart as fmre_blart preserving type )` |
-| `EarmarkedFundsDocTypeText` |  | |  | `cast ( batxt as fmis_efd_doctypetext preserving type )` |
-| `_EarmarkedFundsDocCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_EarmarkedFundsDocType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `EarmarkedFundsDocumentCategory` | ✓ | |  | `bltyp` |  |  |
+| `EarmarkedFundsDocumentType` | ✓ | |  | `cast ( blart as fmre_blart preserving type )` |  |  |
+| `EarmarkedFundsDocTypeText` |  | |  | `cast ( batxt as fmis_efd_doctypetext preserving type )` |  |  |
+| `_EarmarkedFundsDocCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_EarmarkedFundsDocType` | | ✓ | | | | |
 
 ## Associations
 

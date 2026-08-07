@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
-| `CnsldtnSystemMessageType` | ✓ | |  | `cast(left(_DomainT.DomainValue, 1) as fincs_msg_type preserving type )` |
-| `CnsldtnSystemMessageTypeText` |  | |  | `cast(_DomainT.DomainValueText as fincs_msg_type_text preserving type )` |
-| `DomainValue` |  | | `_DomainT` | `DomainValue` |
-| `_SystemMessageType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |  |  |
+| `CnsldtnSystemMessageType` | ✓ | |  | `cast(left(_DomainT.DomainValue, 1) as fincs_msg_type preserving type )` |  |  |
+| `CnsldtnSystemMessageTypeText` |  | |  | `cast(_DomainT.DomainValueText as fincs_msg_type_text preserving type )` |  |  |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |  |  |
+| `_SystemMessageType` | | ✓ | | | | |
 
 ## Associations
 

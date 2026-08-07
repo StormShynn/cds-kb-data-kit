@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceConfirmation` | ✓ | |  |  |
-| `ServiceConfirmationItem` | ✓ | |  |  |
-| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |
-| `SerialNumber` |  | |  |  |
-| `ServiceReferenceEquipment` |  | |  |  |
-| `ServiceRefFunctionalLocation` |  | |  |  |
-| `ServiceReferenceProduct` |  | |  |  |
-| `SrvcRefObjIsMainObject` |  | |  |  |
-| `_ServiceConfirmationItemTP` | | ✓ | | |
-| `_SrvcConfTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |  |  |
+| `ServiceConfirmationItem` | ✓ | |  |  |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `ServiceReferenceEquipment` |  | |  |  |  |  |
+| `ServiceRefFunctionalLocation` |  | |  |  |  |  |
+| `ServiceReferenceProduct` |  | |  |  |  |  |
+| `SrvcRefObjIsMainObject` |  | |  |  |  |  |
+| `_ServiceConfirmationItemTP` | | ✓ | | | | |
+| `_SrvcConfTP` | | ✓ | | | | |
 
 ## Source Code
 

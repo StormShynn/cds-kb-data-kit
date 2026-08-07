@@ -31,10 +31,10 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClfnObjectID` | ✓ | |  |  |
-| `CharcValue` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClfnObjectID` | ✓ | |  |  |  |  |
+| `CharcValue` |  | |  |  |  |  |
 
 ## Source Code
 

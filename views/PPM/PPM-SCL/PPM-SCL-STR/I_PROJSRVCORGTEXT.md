@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectServiceOrganization` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ProjectServiceOrganizationUUID` |  | |  |  |
-| `ProjSrvcOrgName` |  | |  |  |
-| `_ServiceOrganization` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectServiceOrganization` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ProjectServiceOrganizationUUID` |  | |  |  |  |  |
+| `ProjSrvcOrgName` |  | |  |  |  |  |
+| `_ServiceOrganization` | | ✓ | | | | |
 
 ## Associations
 

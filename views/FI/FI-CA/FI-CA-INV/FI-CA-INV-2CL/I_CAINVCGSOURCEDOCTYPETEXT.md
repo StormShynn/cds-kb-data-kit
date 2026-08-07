@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sct` | `srcdoctype` |
-| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sct` | `srcdoccat` |
-| `Language` | ✓ | | `_tfk2605sct` | `langu` |
-| `CAInvcgSourceDocTypeText` |  | |  | `cast( _tfk2605sct.text as srcdoctype_txt_gfn_kk preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CAInvcgSourceDocCat` | | ✓ | | |
-| `_CAInvcgSourceDocType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sct` | `srcdoctype` |  |  |
+| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sct` | `srcdoccat` |  |  |
+| `Language` | ✓ | | `_tfk2605sct` | `langu` |  |  |
+| `CAInvcgSourceDocTypeText` |  | |  | `cast( _tfk2605sct.text as srcdoctype_txt_gfn_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CAInvcgSourceDocCat` | | ✓ | | | | |
+| `_CAInvcgSourceDocType` | | ✓ | | | | |
 
 ## Associations
 

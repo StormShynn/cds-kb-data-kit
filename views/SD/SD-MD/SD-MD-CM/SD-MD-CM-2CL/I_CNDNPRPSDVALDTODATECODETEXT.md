@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
-| `PrcgCndnPrpsdValidToDateCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as datvo )` |
-| `PrcgCndnPrpsdValdToDteCodeText` |  | |  | `cast ( ddtext as val_text )` |
-| `_CndnPrpsdValidToDateCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |  |  |
+| `PrcgCndnPrpsdValidToDateCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as datvo )` |  |  |
+| `PrcgCndnPrpsdValdToDteCodeText` |  | |  | `cast ( ddtext as val_text )` |  |  |
+| `_CndnPrpsdValidToDateCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

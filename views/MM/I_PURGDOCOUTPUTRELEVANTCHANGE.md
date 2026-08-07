@@ -26,13 +26,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DatabaseTable` | ✓ | |  | `tname` |
-| `DatabaseTableFieldName` | ✓ | |  | `fname` |
-| `POChangeIsOutputRelevant` |  | |  | `xbest` |
-| `PurchasingChangeTextID` |  | |  | `ctxnr` |
-| `_PurgDocOutputChangeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DatabaseTable` | ✓ | |  | `tname` |  |  |
+| `DatabaseTableFieldName` | ✓ | |  | `fname` |  |  |
+| `POChangeIsOutputRelevant` |  | |  | `xbest` |  |  |
+| `PurchasingChangeTextID` |  | |  | `ctxnr` |  |  |
+| `_PurgDocOutputChangeText` | | ✓ | | | | |
 
 ## Associations
 

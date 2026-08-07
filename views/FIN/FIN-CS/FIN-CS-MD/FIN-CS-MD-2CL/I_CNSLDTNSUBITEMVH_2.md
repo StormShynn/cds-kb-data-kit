@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnSubitemCategory` | ✓ | | `_Source` | `CnsldtnSubitemCategory` |
-| `CnsldtnSubitem` | ✓ | | `_Source` | `CnsldtnSubitem` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnSubitemCategory` | ✓ | | `_Source` | `CnsldtnSubitemCategory` |  |  |
+| `CnsldtnSubitem` | ✓ | | `_Source` | `CnsldtnSubitem` |  |  |
 
 ## Source Code
 

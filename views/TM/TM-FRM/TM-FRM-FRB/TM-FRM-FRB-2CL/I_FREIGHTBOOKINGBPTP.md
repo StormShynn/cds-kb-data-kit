@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderBusPartUUID` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `BusinessPartnerUUID` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `TranspOrdBizPartnerFunction` |  | |  |  |
-| `TranspOrdBizPartnerAddressID` |  | |  |  |
-| `I_FreightBookingTP` |  | |  | `FreightBookingBusinessPartner._TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |
-| `I_FrtBkgBPAddrDfltRprstnTP` |  | |  | `FreightBookingBusinessPartner._TranspOrdBPAddrDfltRprstn as _FrtBkgBPAddrDfltRprstn : redirected to composition child I_FrtBkgBPAddrDfltRprstnTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderBusPartUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `BusinessPartnerUUID` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `TranspOrdBizPartnerFunction` |  | |  |  |  |  |
+| `TranspOrdBizPartnerAddressID` |  | |  |  |  |  |
+| `I_FreightBookingTP` |  | |  | `FreightBookingBusinessPartner._TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |  |  |
+| `I_FrtBkgBPAddrDfltRprstnTP` |  | |  | `FreightBookingBusinessPartner._TranspOrdBPAddrDfltRprstn as _FrtBkgBPAddrDfltRprstn : redirected to composition child I_FrtBkgBPAddrDfltRprstnTP` |  |  |
 
 ## Source Code
 

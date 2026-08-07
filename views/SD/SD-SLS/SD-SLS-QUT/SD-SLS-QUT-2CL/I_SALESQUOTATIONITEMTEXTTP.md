@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesQuotation` | ✓ | |  |  |
-| `SalesQuotationItem` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LongTextID` | ✓ | |  |  |
-| `LongTextIDForEdit` |  | |  |  |
-| `LanguageForEdit` |  | |  |  |
-| `LongText` |  | |  |  |
-| `SalesQuotationType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_SalesQuotation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |  |  |
+| `SalesQuotationItem` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LongTextID` | ✓ | |  |  |  |  |
+| `LongTextIDForEdit` |  | |  |  |  |  |
+| `LanguageForEdit` |  | |  |  |  |  |
+| `LongText` |  | |  |  |  |  |
+| `SalesQuotationType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_SalesQuotation` | | ✓ | | | | |
 
 ## Source Code
 

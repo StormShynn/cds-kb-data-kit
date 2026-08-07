@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusinessTransactionObject` | ✓ | |  | `cast( left( dd07l.domvalue_l, 8 ) as evl_objid_kk preserving type )` |
-| `_CABusTransObjText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusinessTransactionObject` | ✓ | |  | `cast( left( dd07l.domvalue_l, 8 ) as evl_objid_kk preserving type )` |  |  |
+| `_CABusTransObjText` | | ✓ | | | | |
 
 ## Associations
 

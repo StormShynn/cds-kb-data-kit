@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MrchdsCategoryHierarchyNode` | ✓ | |  | `cast(MrchdsCatHierNode.class as rfm_mrchdcathiernode preserving type )` |
-| `LastChangeDateTime` |  | |  | `case when class_header.tstmp_i >= class_header.tstmp_c and class_header.tstmp_i >= MrchdsCatHierNode.lastchangeddatetime then class_header.tstmp_i when class_header.tstmp_c >= class_header.tstmp_i and class_header.tstmp_c >= MrchdsCatHierNode.lastchangeddatetime then class_header.tstmp_c else MrchdsCatHierNode.lastchangeddatetime end` |
-| `ClassInternalID` |  | |  | `clint` |
-| `_MrchdsCatHierNodeText` | | ✓ | | |
-| `_MrchdsCatHierNodeCharc` | | ✓ | | |
-| `_MrchdsCatHierNodeToParent` | | ✓ | | |
-| `_MCHierNodeCVRstrn` | | ✓ | | |
-| `_MrchdsCmpltHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MrchdsCategoryHierarchyNode` | ✓ | |  | `cast(MrchdsCatHierNode.class as rfm_mrchdcathiernode preserving type )` |  |  |
+| `LastChangeDateTime` |  | |  | `case when class_header.tstmp_i >= class_header.tstmp_c and class_header.tstmp_i >= MrchdsCatHierNode.lastchangeddatetime then class_header.tstmp_i when class_header.tstmp_c >= class_header.tstmp_i and class_header.tstmp_c >= MrchdsCatHierNode.lastchangeddatetime then class_header.tstmp_c else MrchdsCatHierNode.lastchangeddatetime end` |  |  |
+| `ClassInternalID` |  | |  | `clint` |  |  |
+| `_MrchdsCatHierNodeText` | | ✓ | | | | |
+| `_MrchdsCatHierNodeCharc` | | ✓ | | | | |
+| `_MrchdsCatHierNodeToParent` | | ✓ | | | | |
+| `_MCHierNodeCVRstrn` | | ✓ | | | | |
+| `_MrchdsCmpltHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

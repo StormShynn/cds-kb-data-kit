@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyNodeText` | `spras` |
-| `ConsolidationDocTypeHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.hryid as fincs_doctypehierarchy preserving type )` |
-| `HierarchyNode` | ✓ | |  | `cast(_HierarchyNode.hrynode as fincs_hierarchynode preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `cast(_HierarchyNodeText.hryvalto as fincs_validityenddate preserving type )` |
-| `ValidityStartDate` |  | |  | `cast(_HierarchyNodeText.hryvalfrom as fincs_validitystartdate preserving type )` |
-| `ParentNode` |  | |  | `cast(_HierarchyNodeText.parnode as fincs_parentnode preserving type )` |
-| `HierarchyVersion` |  | |  | `cast(_HierarchyNodeText.hryver as fincs_hierarchyversion preserving type )` |
-| `HierarchyNodeText` |  | |  | `cast(_HierarchyNodeText.nodetxt as fincs_hierarchynodetext preserving type )` |
-| `_Language` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `spras` |  |  |
+| `ConsolidationDocTypeHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.hryid as fincs_doctypehierarchy preserving type )` |  |  |
+| `HierarchyNode` | ✓ | |  | `cast(_HierarchyNode.hrynode as fincs_hierarchynode preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(_HierarchyNodeText.hryvalto as fincs_validityenddate preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast(_HierarchyNodeText.hryvalfrom as fincs_validitystartdate preserving type )` |  |  |
+| `ParentNode` |  | |  | `cast(_HierarchyNodeText.parnode as fincs_parentnode preserving type )` |  |  |
+| `HierarchyVersion` |  | |  | `cast(_HierarchyNodeText.hryver as fincs_hierarchyversion preserving type )` |  |  |
+| `HierarchyNodeText` |  | |  | `cast(_HierarchyNodeText.nodetxt as fincs_hierarchynodetext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

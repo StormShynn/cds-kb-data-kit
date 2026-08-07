@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CatalogProfile` | ✓ | |  | `rbnr` |
-| `NotificationCategory` |  | |  | `qmtyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CatalogProfile` | ✓ | |  | `rbnr` |  |  |
+| `NotificationCategory` |  | |  | `qmtyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

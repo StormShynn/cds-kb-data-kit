@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceStrategy` | ✓ | |  | `strat` |
-| `MaintenancePackage` | ✓ | |  | `zaehl` |
-| `MaintenanceTaskPerformanceUnit` |  | |  | `zeieh` |
-| `MaintenancePackageCycle` |  | |  | `zykzt` |
-| `MaintPackageTimeStartOffset` |  | |  | `offzt` |
-| `MaintenancePackageNature` |  | |  | `hiera` |
-| `MaintenanceLeadFloatInDays` |  | |  | `puffp` |
-| `FollowUpFloat` |  | |  | `puffn` |
-| `MaintPackagePeriodType` |  | |  | `perkn` |
-| `CallHorizonInDays` |  | |  | `eroef` |
-| `_MaintenanceStrategy` | | ✓ | | |
-| `_MaintenancePackageText` | | ✓ | | |
-| `_MaintenancePackageUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceStrategy` | ✓ | |  | `strat` |  |  |
+| `MaintenancePackage` | ✓ | |  | `zaehl` |  |  |
+| `MaintenanceTaskPerformanceUnit` |  | |  | `zeieh` |  |  |
+| `MaintenancePackageCycle` |  | |  | `zykzt` |  |  |
+| `MaintPackageTimeStartOffset` |  | |  | `offzt` |  |  |
+| `MaintenancePackageNature` |  | |  | `hiera` |  |  |
+| `MaintenanceLeadFloatInDays` |  | |  | `puffp` |  |  |
+| `FollowUpFloat` |  | |  | `puffn` |  |  |
+| `MaintPackagePeriodType` |  | |  | `perkn` |  |  |
+| `CallHorizonInDays` |  | |  | `eroef` |  |  |
+| `_MaintenanceStrategy` | | ✓ | | | | |
+| `_MaintenancePackageText` | | ✓ | | | | |
+| `_MaintenancePackageUnit` | | ✓ | | | | |
 
 ## Associations
 

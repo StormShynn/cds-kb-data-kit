@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |
-| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |
-| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |
-| `GroupStrucFromFiscalYearPeriod` | ✓ | | `_Source` | `GroupStrucFromFiscalYearPeriod` |
-| `GroupStrucToFiscalYearPeriod` |  | | `_Source` | `GroupStrucToFiscalYearPeriod` |
-| `FirstCnsldtnFiscalYearPeriod` |  | | `_Source` | `FirstCnsldtnFiscalYearPeriod` |
-| `FirstCnsldtnIsAtEndOfPeriod` |  | | `_Source` | `FirstCnsldtnIsAtEndOfPeriod` |
-| `DivestitureFiscalYearPeriod` |  | | `_Source` | `DivestitureFiscalYearPeriod` |
-| `DivestitureIsAtBeginOfPeriod` |  | | `_Source` | `DivestitureIsAtBeginOfPeriod` |
-| `DivestitureIsDueToMerger` |  | | `_Source` | `DivestitureIsDueToMerger` |
-| `ETag` |  | | `_Source` | `ETag` |
-| `_CnsldtnVersion` | | ✓ | | |
-| `_CnsldtnGroup` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
-| `_CnsldtnGroupStrucMethAssgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |  |  |
+| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |  |  |
+| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |  |  |
+| `GroupStrucFromFiscalYearPeriod` | ✓ | | `_Source` | `GroupStrucFromFiscalYearPeriod` |  |  |
+| `GroupStrucToFiscalYearPeriod` |  | | `_Source` | `GroupStrucToFiscalYearPeriod` |  |  |
+| `FirstCnsldtnFiscalYearPeriod` |  | | `_Source` | `FirstCnsldtnFiscalYearPeriod` |  |  |
+| `FirstCnsldtnIsAtEndOfPeriod` |  | | `_Source` | `FirstCnsldtnIsAtEndOfPeriod` |  |  |
+| `DivestitureFiscalYearPeriod` |  | | `_Source` | `DivestitureFiscalYearPeriod` |  |  |
+| `DivestitureIsAtBeginOfPeriod` |  | | `_Source` | `DivestitureIsAtBeginOfPeriod` |  |  |
+| `DivestitureIsDueToMerger` |  | | `_Source` | `DivestitureIsDueToMerger` |  |  |
+| `ETag` |  | | `_Source` | `ETag` |  |  |
+| `_CnsldtnVersion` | | ✓ | | | | |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
+| `_CnsldtnGroupStrucMethAssgmt` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MarketRiskKeyFigureSet` | ✓ | |  | `mra_kf_set` |
-| `EvaluationCurrency` | ✓ | |  | `currency` |
-| `TreasuryEvaluationType` | ✓ | |  | `eval_type` |
-| `MarketDataScenario` | ✓ | |  | `md_scenario` |
-| `MarketDataShift` | ✓ | |  | `md_shift_id` |
-| `_KeyFigureSetText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MarketRiskKeyFigureSet` | ✓ | |  | `mra_kf_set` |  |  |
+| `EvaluationCurrency` | ✓ | |  | `currency` |  |  |
+| `TreasuryEvaluationType` | ✓ | |  | `eval_type` |  |  |
+| `MarketDataScenario` | ✓ | |  | `md_scenario` |  |  |
+| `MarketDataShift` | ✓ | |  | `md_shift_id` |  |  |
+| `_KeyFigureSetText` | | ✓ | | | | |
 
 ## Associations
 

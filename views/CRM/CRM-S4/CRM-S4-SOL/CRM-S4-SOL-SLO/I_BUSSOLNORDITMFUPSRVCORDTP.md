@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `ServiceOrder` | ✓ | |  |  |
-| `ServiceOrderItem` | ✓ | |  |  |
-| `_BusinessSolutionOrder` | | ✓ | | |
-| `_BusinessSolutionOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | | | |
+| `_BusinessSolutionOrderItem` | | ✓ | | | | |
 
 ## Source Code
 

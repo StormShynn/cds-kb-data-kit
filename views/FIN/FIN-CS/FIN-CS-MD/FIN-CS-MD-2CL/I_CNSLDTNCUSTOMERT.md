@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
-| `Customer` | ✓ | |  | `cast( _Source.Customer as fincs_customer preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast( _Source.CustomerName as fincs_description_text_80 preserving type )` |
-| `CustomerName` |  | |  | `cast( _Source.CustomerName as fincs_customername preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |  |  |
+| `Customer` | ✓ | |  | `cast( _Source.Customer as fincs_customer preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.CustomerName as fincs_description_text_80 preserving type )` |  |  |
+| `CustomerName` |  | |  | `cast( _Source.CustomerName as fincs_customername preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
 
 ## Associations
 

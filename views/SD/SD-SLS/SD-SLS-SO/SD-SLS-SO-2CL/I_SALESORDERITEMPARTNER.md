@@ -32,29 +32,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  | `cast(Partner.SalesDocument as vdm_sales_order preserving type)` |
-| `SalesOrderItem` | ✓ | |  | `cast(Partner.SalesDocumentItem as sales_order_item preserving type)` |
-| `PartnerFunction` | ✓ | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `Partner` |  | |  |  |
-| `FullName` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `SDDocPartnerAddressRefType` |  | |  |  |
-| `BPAddrDeterminationTransaction` |  | |  |  |
-| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
-| `InternationalPhoneNumber` |  | |  |  |
-| `InternationalMobilePhoneNumber` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(Partner.SalesDocument as vdm_sales_order preserving type)` |  |  |
+| `SalesOrderItem` | ✓ | |  | `cast(Partner.SalesDocumentItem as sales_order_item preserving type)` |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `FullName` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |  |  |
+| `InternationalPhoneNumber` |  | |  |  |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,73 +31,73 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostingReferenceObject` | ✓ | |  |  |
-| `CostEstimate` | ✓ | |  |  |
-| `CostingType` | ✓ | |  |  |
-| `CostingDate` | ✓ | |  |  |
-| `CostingVersion` | ✓ | |  |  |
-| `ValuationVariant` | ✓ | |  |  |
-| `CostIsEnteredManually` | ✓ | |  |  |
-| `Product` |  | |  |  |
-| `ValuationType` |  | |  |  |
-| `CostingVariant` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `Ledger` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CostEstimateValidityStartDate` |  | |  |  |
-| `CostEstimateValidityEndDate` |  | |  |  |
-| `ValuationDate` |  | |  |  |
-| `QuantityStructureDate` |  | |  |  |
-| `CostingLotSize` |  | |  |  |
-| `ValuationQuantityUnit` |  | |  |  |
-| `CostEstimateCreationDate` |  | |  |  |
-| `CostEstimateStatus` |  | |  |  |
-| `ProductionVersion` |  | |  |  |
-| `ProductValuationStrategy` |  | |  |  |
-| `ProductValnPurgInfoRecdStrgy` |  | |  |  |
-| `ReferenceLedger` |  | |  |  |
-| `ComponentBreakdown` |  | |  |  |
-| `PostingPeriod` |  | |  |  |
-| `PostingFiscalYear` |  | |  |  |
-| `CostingItemIsProductComp` |  | |  |  |
-| `CostEstimateTransferControl` |  | |  |  |
-| `SalesOrder` |  | |  | `cast( CostEst.SalesDocument as vdm_sales_order preserving type )` |
-| `SalesOrderItem` |  | |  | `cast( CostEst.SalesDocumentItem as sales_order_item preserving type )` |
-| `BillOfMaterial` |  | |  |  |
-| `ProductBOMUsage` |  | |  |  |
-| `AlternativeBillOfMaterial` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListType` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `SpecialProcurementType` |  | |  |  |
-| `ProductProcurementType` |  | |  |  |
-| `SpecialProcurementPlant` |  | |  |  |
-| `CostingSheet` |  | |  |  |
-| `CostingOverheadGroup` |  | |  |  |
-| `CostingOverhead` |  | |  |  |
-| `ConfiguredProduct` |  | |  |  |
-| `CostEstimateCostingLevel` |  | |  |  |
-| `CostComponentStructure` |  | |  |  |
-| `CostEstimateCreatedByUser` |  | |  |  |
-| `CostEstimateMarkedByUser` |  | |  |  |
-| `CostEstimateMarkingDate` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `GlobalCurrency` |  | |  | `ControllingAreaCurrency` |
-| `_SalesOrderItemCostEstItem` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_GlobalCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_CostingType` | | ✓ | | |
-| `_CostingVersion` | | ✓ | | |
-| `_CostingVariant` | | ✓ | | |
-| `_ValuationVariant` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostingReferenceObject` | ✓ | |  |  |  |  |
+| `CostEstimate` | ✓ | |  |  |  |  |
+| `CostingType` | ✓ | |  |  |  |  |
+| `CostingDate` | ✓ | |  |  |  |  |
+| `CostingVersion` | ✓ | |  |  |  |  |
+| `ValuationVariant` | ✓ | |  |  |  |  |
+| `CostIsEnteredManually` | ✓ | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `CostingVariant` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `Ledger` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CostEstimateValidityStartDate` |  | |  |  |  |  |
+| `CostEstimateValidityEndDate` |  | |  |  |  |  |
+| `ValuationDate` |  | |  |  |  |  |
+| `QuantityStructureDate` |  | |  |  |  |  |
+| `CostingLotSize` |  | |  |  |  |  |
+| `ValuationQuantityUnit` |  | |  |  |  |  |
+| `CostEstimateCreationDate` |  | |  |  |  |  |
+| `CostEstimateStatus` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `ProductValuationStrategy` |  | |  |  |  |  |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  |  |  |
+| `ReferenceLedger` |  | |  |  |  |  |
+| `ComponentBreakdown` |  | |  |  |  |  |
+| `PostingPeriod` |  | |  |  |  |  |
+| `PostingFiscalYear` |  | |  |  |  |  |
+| `CostingItemIsProductComp` |  | |  |  |  |  |
+| `CostEstimateTransferControl` |  | |  |  |  |  |
+| `SalesOrder` |  | |  | `cast( CostEst.SalesDocument as vdm_sales_order preserving type )` |  |  |
+| `SalesOrderItem` |  | |  | `cast( CostEst.SalesDocumentItem as sales_order_item preserving type )` |  |  |
+| `BillOfMaterial` |  | |  |  |  |  |
+| `ProductBOMUsage` |  | |  |  |  |  |
+| `AlternativeBillOfMaterial` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListType` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `SpecialProcurementType` |  | |  |  |  |  |
+| `ProductProcurementType` |  | |  |  |  |  |
+| `SpecialProcurementPlant` |  | |  |  |  |  |
+| `CostingSheet` |  | |  |  |  |  |
+| `CostingOverheadGroup` |  | |  |  |  |  |
+| `CostingOverhead` |  | |  |  |  |  |
+| `ConfiguredProduct` |  | |  |  |  |  |
+| `CostEstimateCostingLevel` |  | |  |  |  |  |
+| `CostComponentStructure` |  | |  |  |  |  |
+| `CostEstimateCreatedByUser` |  | |  |  |  |  |
+| `CostEstimateMarkedByUser` |  | |  |  |  |  |
+| `CostEstimateMarkingDate` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  | `ControllingAreaCurrency` |  |  |
+| `_SalesOrderItemCostEstItem` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_GlobalCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_CostingType` | | ✓ | | | | |
+| `_CostingVersion` | | ✓ | | | | |
+| `_CostingVariant` | | ✓ | | | | |
+| `_ValuationVariant` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
 
 ## Associations
 

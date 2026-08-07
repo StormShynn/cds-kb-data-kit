@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateObjectType` | ✓ | |  | `obart` |
-| `REAuthorizationGroup` | ✓ | |  | `authgrp` |
-| `_Text` | | ✓ | | |
-| `_REObjectType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateObjectType` | ✓ | |  | `obart` |  |  |
+| `REAuthorizationGroup` | ✓ | |  | `authgrp` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_REObjectType` | | ✓ | | | | |
 
 ## Associations
 

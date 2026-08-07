@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JntOpgAgrmt` | ✓ | |  |  |
-| `JntVntrDrillingStstclRatioID` | ✓ | |  |  |
-| `JointVentureDrillingRate` |  | |  |  |
-| `JntVntrIsMonthlyDrillingRate` |  | |  |  |
-| `JntVntrDrillingFromDepth` |  | |  |  |
-| `JntVntrDrillingToDepth` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_JntVntrDrillingStstclRatio` | | ✓ | | |
-| `_JntOpgAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |  |  |
+| `JntVntrDrillingStstclRatioID` | ✓ | |  |  |  |  |
+| `JointVentureDrillingRate` |  | |  |  |  |  |
+| `JntVntrIsMonthlyDrillingRate` |  | |  |  |  |  |
+| `JntVntrDrillingFromDepth` |  | |  |  |  |  |
+| `JntVntrDrillingToDepth` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntVntrDrillingStstclRatio` | | ✓ | | | | |
+| `_JntOpgAgrmt` | | ✓ | | | | |
 
 ## Source Code
 

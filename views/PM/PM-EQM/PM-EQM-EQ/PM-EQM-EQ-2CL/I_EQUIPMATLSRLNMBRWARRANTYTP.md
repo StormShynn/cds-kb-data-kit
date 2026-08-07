@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `SerialNumber` | ✓ | |  |  |
-| `Equipment` | ✓ | |  |  |
-| `WarrantyCategory` | ✓ | |  |  |
-| `WarrantyType` |  | |  |  |
-| `MasterWarranty` |  | |  |  |
-| `WarrantyStartDate` |  | |  |  |
-| `WarrantyEndDate` |  | |  |  |
-| `WrntyIsInhtdFromSuperiorObject` |  | |  |  |
-| `WrntyIsPassedOnToChildObject` |  | |  |  |
-| `_EquipmentMaterialSerialNumber` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `SerialNumber` | ✓ | |  |  |  |  |
+| `Equipment` | ✓ | |  |  |  |  |
+| `WarrantyCategory` | ✓ | |  |  |  |  |
+| `WarrantyType` |  | |  |  |  |  |
+| `MasterWarranty` |  | |  |  |  |  |
+| `WarrantyStartDate` |  | |  |  |  |  |
+| `WarrantyEndDate` |  | |  |  |  |  |
+| `WrntyIsInhtdFromSuperiorObject` |  | |  |  |  |  |
+| `WrntyIsPassedOnToChildObject` |  | |  |  |  |  |
+| `_EquipmentMaterialSerialNumber` | | ✓ | | | | |
 
 ## Source Code
 

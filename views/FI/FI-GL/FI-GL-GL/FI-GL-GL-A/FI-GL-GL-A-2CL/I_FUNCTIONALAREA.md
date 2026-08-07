@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalArea` | ✓ | |  | `fkber` |
-| `CreationDate` |  | |  | `created_on` |
-| `LastChangeDate` |  | |  | `modified_on` |
-| `_Text` | | ✓ | | |
-| `_FunctionalAreaHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalArea` | ✓ | |  | `fkber` |  |  |
+| `CreationDate` |  | |  | `created_on` |  |  |
+| `LastChangeDate` |  | |  | `modified_on` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_FunctionalAreaHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

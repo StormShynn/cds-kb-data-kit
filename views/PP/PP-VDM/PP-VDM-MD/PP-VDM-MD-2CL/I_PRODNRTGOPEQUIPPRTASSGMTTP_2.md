@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionRoutingGroup` | ✓ | |  |  |
-| `ProductionRouting` | ✓ | |  |  |
-| `ProductionRoutingSequence` | ✓ | |  |  |
-| `ProductionRoutingOpIntID` | ✓ | |  |  |
-| `BOOOperationPRTInternalID` | ✓ | |  |  |
-| `BOOOperationPRTIntVersCounter` | ✓ | |  |  |
-| `ProductionResourceType` |  | |  |  |
-| `ProductionResourceInternalID` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `ProdnRsceToolItemNumber` |  | |  |  |
-| `ProdnRsceToolStandardTextCode` |  | |  |  |
-| `ProdnRsceToolText` |  | |  |  |
-| `ProdnRsceToolControlProfile` |  | |  |  |
-| `ProdnRsceToolStandardWorkQty` |  | |  |  |
-| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |
-| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |
-| `ProdnRsceToolUsageQuantity` |  | |  |  |
-| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |
-| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_NonSqncTP` | | ✓ | | |
-| `_Header` | | ✓ | | |
-| `_ProdnRtgTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |  |  |
+| `ProductionRouting` | ✓ | |  |  |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |  |  |
+| `ProductionRoutingOpIntID` | ✓ | |  |  |  |  |
+| `BOOOperationPRTInternalID` | ✓ | |  |  |  |  |
+| `BOOOperationPRTIntVersCounter` | ✓ | |  |  |  |  |
+| `ProductionResourceType` |  | |  |  |  |  |
+| `ProductionResourceInternalID` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `ProdnRsceToolItemNumber` |  | |  |  |  |  |
+| `ProdnRsceToolStandardTextCode` |  | |  |  |  |  |
+| `ProdnRsceToolText` |  | |  |  |  |  |
+| `ProdnRsceToolControlProfile` |  | |  |  |  |  |
+| `ProdnRsceToolStandardWorkQty` |  | |  |  |  |  |
+| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |  |  |
+| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQuantity` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_NonSqncTP` | | ✓ | | | | |
+| `_Header` | | ✓ | | | | |
+| `_ProdnRtgTP` | | ✓ | | | | |
 
 ## Source Code
 

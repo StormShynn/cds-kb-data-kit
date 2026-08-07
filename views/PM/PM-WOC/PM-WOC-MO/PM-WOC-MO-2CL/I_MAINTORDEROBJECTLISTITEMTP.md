@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintenanceOrderObjectList` | ✓ | |  |  |
-| `MaintenanceObjectListItem` | ✓ | |  |  |
-| `Equipment` |  | |  |  |
-| `MaintenanceNotification` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `Material` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `UniqueItemIdentifier` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `MaintObjectListItemSequence` |  | |  |  |
-| `_MaintenanceOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintenanceOrderObjectList` | ✓ | |  |  |  |  |
+| `MaintenanceObjectListItem` | ✓ | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `MaintenanceNotification` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `UniqueItemIdentifier` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `MaintObjectListItemSequence` |  | |  |  |  |  |
+| `_MaintenanceOrder` | | ✓ | | | | |
 
 ## Source Code
 

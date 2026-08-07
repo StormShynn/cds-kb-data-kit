@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdUnivHierarchy` | ✓ | |  | `cast(substring( hryid, 6, 26 ) as prod_hier_id )` |
-| `ProdHierarchyValidityEndDate` | ✓ | |  | `cast(hryvalto as prodhierarchyvalidityenddate preserving type )` |
-| `ProdHierarchyValidityStartDate` |  | |  | `cast(hryvalfrom as prodhierarchyvaliditystartdate preserving type )` |
-| `LastChangedByUser` |  | |  | `upduser` |
-| `ProdUnivHierLastChangeDateTime` |  | |  | `updtime` |
-| `HierarchyType` |  | |  | `hrytyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdUnivHierarchy` | ✓ | |  | `cast(substring( hryid, 6, 26 ) as prod_hier_id )` |  |  |
+| `ProdHierarchyValidityEndDate` | ✓ | |  | `cast(hryvalto as prodhierarchyvalidityenddate preserving type )` |  |  |
+| `ProdHierarchyValidityStartDate` |  | |  | `cast(hryvalfrom as prodhierarchyvaliditystartdate preserving type )` |  |  |
+| `LastChangedByUser` |  | |  | `upduser` |  |  |
+| `ProdUnivHierLastChangeDateTime` |  | |  | `updtime` |  |  |
+| `HierarchyType` |  | |  | `hrytyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialManagementArea` | ✓ | | `_Source` | `FinancialManagementArea` |
-| `Fund` | ✓ | | `_Source` | `Fund` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFundTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFundTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | | `_Source` | `FinancialManagementArea` |  |  |
+| `Fund` | ✓ | | `_Source` | `Fund` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFundTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFundTextTP` |  |  |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITCallUsageOfMsgDetn` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pabmsd)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `JITCallUsageOfMsgDetnName` |  | |  | `cast(ddtext as vdm_pabmsd_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_JITCallUsageOfMsgDetn` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITCallUsageOfMsgDetn` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pabmsd)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `JITCallUsageOfMsgDetnName` |  | |  | `cast(ddtext as vdm_pabmsd_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_JITCallUsageOfMsgDetn` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

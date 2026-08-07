@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IT_ElectronicDocPartStat` | ✓ | |  |  |
-| `IT_ElectronicDocPartStatText` |  | |  | `_Text[1:Language = $session.system_language].IT_ElectronicDocPartStatText` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IT_ElectronicDocPartStat` | ✓ | |  |  |  |  |
+| `IT_ElectronicDocPartStatText` |  | |  | `_Text[1:Language = $session.system_language].IT_ElectronicDocPartStatText` |  |  |
 
 ## Source Code
 

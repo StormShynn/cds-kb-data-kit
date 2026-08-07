@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocument` | ✓ | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocument` | ✓ | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
 
 ## Source Code
 

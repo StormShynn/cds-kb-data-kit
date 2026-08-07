@@ -29,92 +29,92 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalLocation` | ✓ | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `FunctionalLocationName` |  | |  |  |
-| `FuncLocationStructure` |  | |  |  |
-| `FunctionalLocationCategory` |  | |  |  |
-| `SuperiorFunctionalLocation` |  | |  |  |
-| `SuperiorFuncnlLocLabelName` |  | |  |  |
-| `TechnicalObjectType` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `GrossWeight` |  | |  |  |
-| `GrossWeightUnit` |  | |  |  |
-| `OperationStartDate` |  | |  |  |
-| `InventoryNumber` |  | |  |  |
-| `AcquisitionValue` |  | |  |  |
-| `Currency` |  | |  |  |
-| `AcquisitionDate` |  | |  |  |
-| `AssetManufacturerName` |  | |  |  |
-| `ManufacturerPartNmbr` |  | |  |  |
-| `ManufacturerCountry` |  | |  |  |
-| `ManufacturerPartTypeName` |  | |  |  |
-| `ConstructionMonth` |  | |  |  |
-| `ConstructionYear` |  | |  |  |
-| `ManufacturerSerialNumber` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `AssetLocation` |  | |  |  |
-| `AssetRoom` |  | |  |  |
-| `PlantSection` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `WorkCenterPlant` |  | |  |  |
-| `ABCIndicator` |  | |  |  |
-| `MaintObjectFreeDefinedAttrib` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `BusinessPartnerName1` |  | |  |  |
-| `BusinessPartnerName2` |  | |  |  |
-| `CityName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `Region` |  | |  |  |
-| `Country` |  | |  |  |
-| `PhoneNumber` |  | |  |  |
-| `FaxNumber` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `SettlementOrder` |  | |  |  |
-| `ConstructionMaterial` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `MainWorkCenter` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `CatalogProfile` |  | |  |  |
-| `EquipmentInstallationIsAllowed` |  | |  |  |
-| `OnePieceOfEquipmentIsAllowed` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `FunctionalLocationHasEquipment` |  | |  |  |
-| `FuncnlLocHasSubOrdinateFuncLoc` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `FuncnlLocIsMarkedForDeletion` |  | |  |  |
-| `FuncnlLocIsDeleted` |  | |  |  |
-| `FunctionalLocationIsActive` |  | |  |  |
-| `FuncnlLocIsDeactivated` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_Partner` | | ✓ | | |
-| `_LongText` | | ✓ | | |
-| `_Classification` | | ✓ | | |
-| `_Warranty` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `FunctionalLocationName` |  | |  |  |  |  |
+| `FuncLocationStructure` |  | |  |  |  |  |
+| `FunctionalLocationCategory` |  | |  |  |  |  |
+| `SuperiorFunctionalLocation` |  | |  |  |  |  |
+| `SuperiorFuncnlLocLabelName` |  | |  |  |  |  |
+| `TechnicalObjectType` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `GrossWeight` |  | |  |  |  |  |
+| `GrossWeightUnit` |  | |  |  |  |  |
+| `OperationStartDate` |  | |  |  |  |  |
+| `InventoryNumber` |  | |  |  |  |  |
+| `AcquisitionValue` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `AcquisitionDate` |  | |  |  |  |  |
+| `AssetManufacturerName` |  | |  |  |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |  |  |
+| `ManufacturerCountry` |  | |  |  |  |  |
+| `ManufacturerPartTypeName` |  | |  |  |  |  |
+| `ConstructionMonth` |  | |  |  |  |  |
+| `ConstructionYear` |  | |  |  |  |  |
+| `ManufacturerSerialNumber` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `AssetLocation` |  | |  |  |  |  |
+| `AssetRoom` |  | |  |  |  |  |
+| `PlantSection` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenterPlant` |  | |  |  |  |  |
+| `ABCIndicator` |  | |  |  |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `BusinessPartnerName1` |  | |  |  |  |  |
+| `BusinessPartnerName2` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `PhoneNumber` |  | |  |  |  |  |
+| `FaxNumber` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `SettlementOrder` |  | |  |  |  |  |
+| `ConstructionMaterial` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `MainWorkCenter` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `CatalogProfile` |  | |  |  |  |  |
+| `EquipmentInstallationIsAllowed` |  | |  |  |  |  |
+| `OnePieceOfEquipmentIsAllowed` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `FunctionalLocationHasEquipment` |  | |  |  |  |  |
+| `FuncnlLocHasSubOrdinateFuncLoc` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `FuncnlLocIsMarkedForDeletion` |  | |  |  |  |  |
+| `FuncnlLocIsDeleted` |  | |  |  |  |  |
+| `FunctionalLocationIsActive` |  | |  |  |  |  |
+| `FuncnlLocIsDeactivated` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_Partner` | | ✓ | | | | |
+| `_LongText` | | ✓ | | | | |
+| `_Classification` | | ✓ | | | | |
+| `_Warranty` | | ✓ | | | | |
 
 ## Source Code
 

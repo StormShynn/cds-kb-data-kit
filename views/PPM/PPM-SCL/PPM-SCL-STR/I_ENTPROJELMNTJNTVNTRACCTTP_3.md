@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectElementUUID` | ✓ | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `JointVenture` |  | |  |  |
-| `JointVentureCostRecoveryCode` |  | |  |  |
-| `JointVentureEquityType` |  | |  |  |
-| `JntVntrProjectType` |  | |  |  |
-| `JntIntrstBillgClass` |  | |  |  |
-| `JntIntrstBillgSubClass` |  | |  |  |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectElementUUID` | ✓ | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `JointVenture` |  | |  |  |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |  |  |
+| `JointVentureEquityType` |  | |  |  |  |  |
+| `JntVntrProjectType` |  | |  |  |  |  |
+| `JntIntrstBillgClass` |  | |  |  |  |  |
+| `JntIntrstBillgSubClass` |  | |  |  |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
 
 ## Source Code
 

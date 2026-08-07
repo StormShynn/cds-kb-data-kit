@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `element:'InspectionOperation'` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `element:'InspectionOperation'` |  | |  |  |  |  |
 
 ## Source Code
 

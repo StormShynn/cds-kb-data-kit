@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateTableCalcRuleUUID` | ✓ | |  |  |
-| `TranspRateTableValidityUUID` |  | |  |  |
-| `TransportationRateTableUUID` |  | |  |  |
-| `TransportationCalculationBase` |  | |  |  |
-| `TranspRateCalcRulePricePerQty` |  | |  | `cast( TranspRateCalcRulePricePerQty as /scmtms/rttable_calcrule_price preserving type )` |
-| `TranspRateTableCalcRuleQtyUnit` |  | |  |  |
-| `I_TransportationRateTableTP` |  | |  | `TranspRateTableCalcRule._TransportationRateTable : redirected to I_TransportationRateTableTP` |
-| `I_TranspRateTableValidityTP` |  | |  | `TranspRateTableCalcRule._TranspRateTableValidity : redirected to parent I_TranspRateTableValidityTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateTableCalcRuleUUID` | ✓ | |  |  |  |  |
+| `TranspRateTableValidityUUID` |  | |  |  |  |  |
+| `TransportationRateTableUUID` |  | |  |  |  |  |
+| `TransportationCalculationBase` |  | |  |  |  |  |
+| `TranspRateCalcRulePricePerQty` |  | |  | `cast( TranspRateCalcRulePricePerQty as /scmtms/rttable_calcrule_price preserving type )` |  |  |
+| `TranspRateTableCalcRuleQtyUnit` |  | |  |  |  |  |
+| `I_TransportationRateTableTP` |  | |  | `TranspRateTableCalcRule._TransportationRateTable : redirected to I_TransportationRateTableTP` |  |  |
+| `I_TranspRateTableValidityTP` |  | |  | `TranspRateTableCalcRule._TranspRateTableValidity : redirected to parent I_TranspRateTableValidityTP` |  |  |
 
 ## Source Code
 

@@ -29,64 +29,64 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `AddressRepresentationCode` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `PrfrdCommMediumType` |  | |  |  |
-| `AddresseeFullName` |  | |  |  |
-| `CityNumber` |  | |  |  |
-| `CityName` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `VillageName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `CompanyPostalCode` |  | |  |  |
-| `Street` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetAddrNonDeliverableReason` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `AddresseeName1` |  | |  |  |
-| `AddresseeName2` |  | |  |  |
-| `AddresseeName3` |  | |  |  |
-| `AddresseeName4` |  | |  |  |
-| `AddressSearchTerm1` |  | |  |  |
-| `AddressSearchTerm2` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TransportZone` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxAddrNonDeliverableReason` |  | |  |  |
-| `POBoxIsWithoutNumber` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `POBoxLobbyName` |  | |  |  |
-| `POBoxDeviatingCityName` |  | |  |  |
-| `POBoxDeviatingCityCode` |  | |  |  |
-| `POBoxDeviatingRegion` |  | |  |  |
-| `POBoxDeviatingCountry` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `DeliveryServiceTypeCode` |  | |  |  |
-| `DeliveryServiceNumber` |  | |  |  |
-| `AddressTimeZone` |  | |  |  |
-| `SecondaryRegion` |  | |  |  |
-| `SecondaryRegionName` |  | |  |  |
-| `TertiaryRegion` |  | |  |  |
-| `TertiaryRegionName` |  | |  |  |
-| `RegionalStructureCheckStatus` |  | |  |  |
-| `AddressGroup` |  | |  |  |
-| `_AddrAdditionalRepresentation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `AddressRepresentationCode` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `PrfrdCommMediumType` |  | |  |  |  |  |
+| `AddresseeFullName` |  | |  |  |  |  |
+| `CityNumber` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `VillageName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `CompanyPostalCode` |  | |  |  |  |  |
+| `Street` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetAddrNonDeliverableReason` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `AddresseeName1` |  | |  |  |  |  |
+| `AddresseeName2` |  | |  |  |  |  |
+| `AddresseeName3` |  | |  |  |  |  |
+| `AddresseeName4` |  | |  |  |  |  |
+| `AddressSearchTerm1` |  | |  |  |  |  |
+| `AddressSearchTerm2` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TransportZone` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxAddrNonDeliverableReason` |  | |  |  |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `POBoxLobbyName` |  | |  |  |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |  |  |
+| `POBoxDeviatingCityCode` |  | |  |  |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |  |  |
+| `DeliveryServiceNumber` |  | |  |  |  |  |
+| `AddressTimeZone` |  | |  |  |  |  |
+| `SecondaryRegion` |  | |  |  |  |  |
+| `SecondaryRegionName` |  | |  |  |  |  |
+| `TertiaryRegion` |  | |  |  |  |  |
+| `TertiaryRegionName` |  | |  |  |  |  |
+| `RegionalStructureCheckStatus` |  | |  |  |  |  |
+| `AddressGroup` |  | |  |  |  |  |
+| `_AddrAdditionalRepresentation` | | ✓ | | | | |
 
 ## Associations
 

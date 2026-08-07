@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgTechnicalDocumentType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as techdoctype_kk preserving type )` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgDocTechDocTypeText` |  | |  | `cast ( ddtext as techdoctype_txt_gfn_kk preserving type )` |
-| `_CAInvcgDocTechDocType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgTechnicalDocumentType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as techdoctype_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
+| `CAInvcgDocTechDocTypeText` |  | |  | `cast ( ddtext as techdoctype_txt_gfn_kk preserving type )` |  |  |
+| `_CAInvcgDocTechDocType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

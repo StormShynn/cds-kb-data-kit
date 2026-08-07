@@ -33,25 +33,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturn` | ✓ | |  |  |
-| `CustomerReturnItem` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `PartnerFunctionForEdit` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `Partner` |  | |  |  |
-| `PartnerIsSpecificForSDDocItem` |  | |  |  |
-| `CustomerReturnType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_CustomerReturn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |  |  |
+| `CustomerReturnItem` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |  |  |
+| `CustomerReturnType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_CustomerReturn` | | ✓ | | | | |
 
 ## Source Code
 

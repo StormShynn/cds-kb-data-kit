@@ -32,23 +32,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocument` | ✓ | |  | `cast(Partner.SDDocument as vbeln_vf preserving type )` |
-| `PartnerFunction` | ✓ | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `SDDocPartnerAddressRefType` |  | |  |  |
-| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `_BillingDocumentBasic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  | `cast(Partner.SDDocument as vbeln_vf preserving type )` |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `_BillingDocumentBasic` | | ✓ | | | | |
 
 ## Associations
 

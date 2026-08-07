@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `SupplierInvoiceItem` | ✓ | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `Plant` |  | |  |  |
-| `SupplierInvoiceItemText` |  | |  |  |
-| `PurchaseOrderItemMaterial` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `QuantityInPurchaseOrderUnit` |  | |  |  |
-| `PurchaseOrderPriceUnit` |  | |  |  |
-| `QtyInPurchaseOrderPriceUnit` |  | |  |  |
-| `StockUnit` |  | |  |  |
-| `SuplrInvcDeliveryCostCndnType` |  | |  |  |
-| `SuplrInvcDeliveryCostCndnStep` |  | |  |  |
-| `SuplrInvcDeliveryCostCndnCount` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `SupplierInvoiceItemAmount` |  | |  |  |
-| `IsSubsequentDebitCredit` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `ReferenceDocumentFiscalYear` |  | |  |  |
-| `ReferenceDocumentItem` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `FreightSupplier` |  | |  |  |
-| `IsNotCashDiscountLiable` |  | |  |  |
-| `SuplrInvcItemHasPriceVariance` |  | |  |  |
-| `SuplrInvcItemHasQtyVariance` |  | |  |  |
-| `SuplrInvcItemHasDateVariance` |  | |  |  |
-| `SuplrInvcItemHasOrdPrcQtyVarc` |  | |  |  |
-| `SuplrInvcItemHasOtherVariance` |  | |  |  |
-| `SuplrInvcItemHasAmountOutsdTol` |  | |  |  |
-| `SuplrInvcItmHasQualityVariance` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `SuplrInvcItmUnplndDelivCost` |  | |  |  |
-| `IsFinallyInvoiced` |  | |  |  |
-| `_SupplierInvoiceAPI01` | | ✓ | | |
-| `_SuplrInvcItmAcctAssgmtAPI01` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_PurOrdPriceUnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `SupplierInvoiceItemText` |  | |  |  |  |  |
+| `PurchaseOrderItemMaterial` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `QuantityInPurchaseOrderUnit` |  | |  |  |  |  |
+| `PurchaseOrderPriceUnit` |  | |  |  |  |  |
+| `QtyInPurchaseOrderPriceUnit` |  | |  |  |  |  |
+| `StockUnit` |  | |  |  |  |  |
+| `SuplrInvcDeliveryCostCndnType` |  | |  |  |  |  |
+| `SuplrInvcDeliveryCostCndnStep` |  | |  |  |  |  |
+| `SuplrInvcDeliveryCostCndnCount` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |  |  |
+| `IsSubsequentDebitCredit` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `ReferenceDocumentFiscalYear` |  | |  |  |  |  |
+| `ReferenceDocumentItem` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `FreightSupplier` |  | |  |  |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |  |  |
+| `SuplrInvcItemHasPriceVariance` |  | |  |  |  |  |
+| `SuplrInvcItemHasQtyVariance` |  | |  |  |  |  |
+| `SuplrInvcItemHasDateVariance` |  | |  |  |  |  |
+| `SuplrInvcItemHasOrdPrcQtyVarc` |  | |  |  |  |  |
+| `SuplrInvcItemHasOtherVariance` |  | |  |  |  |  |
+| `SuplrInvcItemHasAmountOutsdTol` |  | |  |  |  |  |
+| `SuplrInvcItmHasQualityVariance` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `SuplrInvcItmUnplndDelivCost` |  | |  |  |  |  |
+| `IsFinallyInvoiced` |  | |  |  |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | | | |
+| `_SuplrInvcItmAcctAssgmtAPI01` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_PurOrdPriceUnitOfMeasure` | | ✓ | | | | |
 
 ## Associations
 

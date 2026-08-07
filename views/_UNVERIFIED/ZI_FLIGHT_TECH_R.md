@@ -32,17 +32,17 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CarrierId` | ✓ | |  | `carrier_id` |
-| `ConnectionId` | ✓ | |  | `connection_id` |
-| `FlightDate` | ✓ | |  | `flight_date` |
-| `Price` |  | |  | `price` |
-| `CurrencyCode` |  | |  | `currency_code` |
-| `PlaneTypeId` |  | |  | `plane_type_id` |
-| `SeatsMax` |  | |  | `seats_max` |
-| `SeatsOccupied` |  | |  | `seats_occupied` |
-| `_Airline` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CarrierId` | ✓ | |  | `carrier_id` |  |  |
+| `ConnectionId` | ✓ | |  | `connection_id` |  |  |
+| `FlightDate` | ✓ | |  | `flight_date` |  |  |
+| `Price` |  | |  | `price` |  |  |
+| `CurrencyCode` |  | |  | `currency_code` |  |  |
+| `PlaneTypeId` |  | |  | `plane_type_id` |  |  |
+| `SeatsMax` |  | |  | `seats_max` |  |  |
+| `SeatsOccupied` |  | |  | `seats_occupied` |  |  |
+| `_Airline` | | ✓ | | | | |
 
 ## Associations
 

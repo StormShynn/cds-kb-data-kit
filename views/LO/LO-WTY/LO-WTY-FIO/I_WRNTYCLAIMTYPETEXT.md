@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WarrantyClaimType` | ✓ | |  | `clmty` |
-| `Language` | ✓ | |  | `spras` |
-| `WrntyClaimTypeText` |  | |  | `clmty_des` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarrantyClaimType` | ✓ | |  | `clmty` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `WrntyClaimTypeText` |  | |  | `clmty_des` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

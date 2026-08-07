@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ModelProductSpecificationUUID` | ✓ | |  |  |
-| `ModelProductSpecification` |  | |  |  |
-| `ModelProductSpecificationName` |  | |  |  |
-| `ModProdSpecGroupingCode` |  | |  |  |
-| `ModProdSpecSearchTermText` |  | |  |  |
-| `ModProdSpecActvtnStatusCode` |  | |  |  |
-| `Language` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_ModProdSpecItemTP` | | ✓ | | |
-| `_ChangedByUser` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_ModProdSpecGroupingCode` | | ✓ | | |
-| `_ModProdSpecStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ModelProductSpecificationUUID` | ✓ | |  |  |  |  |
+| `ModelProductSpecification` |  | |  |  |  |  |
+| `ModelProductSpecificationName` |  | |  |  |  |  |
+| `ModProdSpecGroupingCode` |  | |  |  |  |  |
+| `ModProdSpecSearchTermText` |  | |  |  |  |  |
+| `ModProdSpecActvtnStatusCode` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_ModProdSpecItemTP` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ModProdSpecGroupingCode` | | ✓ | | | | |
+| `_ModProdSpecStatusText` | | ✓ | | | | |
 
 ## Source Code
 

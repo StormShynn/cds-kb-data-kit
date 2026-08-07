@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintOrdOpCompSpecialStockType` | ✓ | |  | `cast ( domvalue_l as co_sobkz_d )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `MaintOrdOpCompSpclStkTypeText` |  | |  | `ddtext` |
-| `_MaintOrdOpCompSpclStockType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrdOpCompSpecialStockType` | ✓ | |  | `cast ( domvalue_l as co_sobkz_d )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `MaintOrdOpCompSpclStkTypeText` |  | |  | `ddtext` |  |  |
+| `_MaintOrdOpCompSpclStockType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

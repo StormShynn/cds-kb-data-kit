@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `CostingType` | ✓ | |  | `kalka` |
-| `CostingTypeName` |  | |  | `cast(txkla as fpc_costing_type_name preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CostingType` | ✓ | |  | `kalka` |  |  |
+| `CostingTypeName` |  | |  | `cast(txkla as fpc_costing_type_name preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FrtCostAllocBusProcCat` | ✓ | |  | `cast( dd07t.domvalue_l as wlf_use_case_type )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FrtCostAllocBusProcCatName` |  | |  | `cast( ddtext as wlf_use_case_type_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_FrtCostAllocBusProcCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FrtCostAllocBusProcCat` | ✓ | |  | `cast( dd07t.domvalue_l as wlf_use_case_type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FrtCostAllocBusProcCatName` |  | |  | `cast( ddtext as wlf_use_case_type_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FrtCostAllocBusProcCat` | | ✓ | | | | |
 
 ## Associations
 

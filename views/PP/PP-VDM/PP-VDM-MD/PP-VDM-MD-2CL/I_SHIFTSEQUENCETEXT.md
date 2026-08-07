@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShiftGrouping` | ✓ | |  | `schgrup` |
-| `ShiftSequence` | ✓ | |  | `sprog` |
-| `Language` | ✓ | |  | `spras` |
-| `ShiftSequenceName` |  | |  | `ktext` |
-| `_ShiftGrouping` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShiftGrouping` | ✓ | |  | `schgrup` |  |  |
+| `ShiftSequence` | ✓ | |  | `sprog` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ShiftSequenceName` |  | |  | `ktext` |  |  |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

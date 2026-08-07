@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnSubassignment` | ✓ | |  |  |
-| `CnsldtnSubassignmentText` |  | |  | `cast(_SubAssignment._Text[1: Language=$session.system_language].CnsldtnSubassignmentText as fincs_description_text_40 preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnSubassignment` | ✓ | |  |  |  |  |
+| `CnsldtnSubassignmentText` |  | |  | `cast(_SubAssignment._Text[1: Language=$session.system_language].CnsldtnSubassignmentText as fincs_description_text_40 preserving type )` |  |  |
 
 ## Source Code
 

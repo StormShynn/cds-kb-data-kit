@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MerchandiseCategory` | ✓ | |  | `matkl` |
-| `Language` | ✓ | |  | `spras` |
-| `MerchandiseCategoryName` |  | |  | `wgbez` |
-| `MerchandiseCategoryText` |  | |  | `wgbez60` |
-| `ClassInternalID` |  | |  | `clint` |
-| `_MerchandiseCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MerchandiseCategory` | ✓ | |  | `matkl` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MerchandiseCategoryName` |  | |  | `wgbez` |  |  |
+| `MerchandiseCategoryText` |  | |  | `wgbez60` |  |  |
+| `ClassInternalID` |  | |  | `clint` |  |  |
+| `_MerchandiseCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

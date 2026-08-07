@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `QualityCertificateType` | ✓ | |  | `zgtyp` |
-| `QualityCertificateTypeText` |  | |  | `kurztext` |
-| `_QualityCertificateType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `QualityCertificateType` | ✓ | |  | `zgtyp` |  |  |
+| `QualityCertificateTypeText` |  | |  | `kurztext` |  |  |
+| `_QualityCertificateType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

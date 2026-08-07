@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryUpdateType` | ✓ | |  | `dis_flowtype` |
-| `Language` | ✓ | |  | `spras` |
-| `TreasuryUpdateTypeName` |  | |  | `cast(TreasuryUpdateTypeText.dis_flowtypetext as ftr_gen_update_type_name preserving type )` |
-| `_TreasuryUpdateType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryUpdateType` | ✓ | |  | `dis_flowtype` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TreasuryUpdateTypeName` |  | |  | `cast(TreasuryUpdateTypeText.dis_flowtypetext as ftr_gen_update_type_name preserving type )` |  |  |
+| `_TreasuryUpdateType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

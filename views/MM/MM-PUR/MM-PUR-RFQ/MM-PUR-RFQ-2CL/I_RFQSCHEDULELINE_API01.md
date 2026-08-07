@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RequestForQuotation` | ✓ | |  |  |
-| `RequestForQuotationItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `SchedLineStscDeliveryDate` |  | |  |  |
-| `ScheduleLineDeliveryTime` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `RoughGoodsReceiptQty` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `_RequestForQuotation` | | ✓ | | |
-| `_RequestForQuotationItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RequestForQuotation` | ✓ | |  |  |  |  |
+| `RequestForQuotationItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `_RequestForQuotation` | | ✓ | | | | |
+| `_RequestForQuotationItem` | | ✓ | | | | |
 
 ## Associations
 

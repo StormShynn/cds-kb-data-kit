@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FrtCostAllocAcctgTransfSts` | ✓ | |  | `cast(dd07t.domvalue_l as wfbsk )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FrtCostAllocAcctgTransfStsName` |  | |  | `cast( dd07t.ddtext as wlf_rfbsk_name preserving type)` |
-| `_Language` | | ✓ | | |
-| `_FrtCostAllocAcctgTransfSts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FrtCostAllocAcctgTransfSts` | ✓ | |  | `cast(dd07t.domvalue_l as wfbsk )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FrtCostAllocAcctgTransfStsName` |  | |  | `cast( dd07t.ddtext as wlf_rfbsk_name preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FrtCostAllocAcctgTransfSts` | | ✓ | | | | |
 
 ## Associations
 

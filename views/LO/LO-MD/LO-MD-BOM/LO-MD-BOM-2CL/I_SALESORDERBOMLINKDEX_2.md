@@ -32,20 +32,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterial` | ✓ | |  |  |
-| `BillOfMaterialVariant` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `BillOfMaterialVariantUsage` | ✓ | |  |  |
-| `SalesOrder` | ✓ | |  |  |
-| `SalesOrderItem` | ✓ | |  |  |
-| `BillOfMaterialCategory` |  | |  |  |
-| `RecordCreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |  |  |
+| `SalesOrder` | ✓ | |  |  |  |  |
+| `SalesOrderItem` | ✓ | |  |  |  |  |
+| `BillOfMaterialCategory` |  | |  |  |  |  |
+| `RecordCreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  |  |
-| `ContractAccountName` |  | |  |  |
-| `ContractAccountCategory` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  |  |  |  |
+| `ContractAccountName` |  | |  |  |  |  |
+| `ContractAccountCategory` |  | |  |  |  |  |
 
 ## Source Code
 

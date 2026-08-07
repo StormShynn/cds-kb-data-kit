@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PhysInventoryPlannedCountDate` |  | |  | `gidat` |
-| `DocumentDate` |  | |  | `bldat` |
-| `PostingIsBlockedForPhysInvtry` |  | |  | `isper` |
-| `PhysInvtryDocHasQtySnapshot` |  | |  | `pi_book_inventory_freeze` |
-| `PhysicalInventoryNumber` |  | |  | `pi_number` |
-| `PhysInventoryReferenceNumber` |  | |  | `pi_reference` |
-| `PhysicalInventoryDocumentDesc` |  | |  | `im_pi_doc_description` |
-| `D_PInvDocRecountItemKeysP` |  | |  | `_Items : composition [0..*] of D_PInvDocRecountItemKeysP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhysInventoryPlannedCountDate` |  | |  | `gidat` |  |  |
+| `DocumentDate` |  | |  | `bldat` |  |  |
+| `PostingIsBlockedForPhysInvtry` |  | |  | `isper` |  |  |
+| `PhysInvtryDocHasQtySnapshot` |  | |  | `pi_book_inventory_freeze` |  |  |
+| `PhysicalInventoryNumber` |  | |  | `pi_number` |  |  |
+| `PhysInventoryReferenceNumber` |  | |  | `pi_reference` |  |  |
+| `PhysicalInventoryDocumentDesc` |  | |  | `im_pi_doc_description` |  |  |
+| `D_PInvDocRecountItemKeysP` |  | |  | `_Items : composition [0..*] of D_PInvDocRecountItemKeysP` |  |  |
 
 ## Source Code
 

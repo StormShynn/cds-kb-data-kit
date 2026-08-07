@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralPurchaseContract` | ✓ | |  |  |
-| `CentralPurchaseContractItem` | ✓ | |  |  |
-| `ConditionRecord` | ✓ | |  |  |
-| `ConditionValidityEndDate` | ✓ | |  |  |
-| `ConditionSequentialNumberShort` | ✓ | |  |  |
-| `ConditionScaleLine` | ✓ | |  |  |
-| `ConditionScaleQuantity` |  | |  |  |
-| `ConditionScaleQuantityUnit` |  | |  |  |
-| `ConditionScaleAmount` |  | |  |  |
-| `ConditionScaleAmountCurrency` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionRateValueUnit` |  | |  |  |
-| `ConditionScaleIsDeleted` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `_CentralPurchaseContract` | | ✓ | | |
-| `_CntrlPurContrItmCndnAmount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |  |  |
+| `CentralPurchaseContractItem` | ✓ | |  |  |  |  |
+| `ConditionRecord` | ✓ | |  |  |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |  |  |
+| `ConditionScaleLine` | ✓ | |  |  |  |  |
+| `ConditionScaleQuantity` |  | |  |  |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |  |  |
+| `ConditionScaleAmount` |  | |  |  |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionRateValueUnit` |  | |  |  |  |  |
+| `ConditionScaleIsDeleted` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `_CentralPurchaseContract` | | ✓ | | | | |
+| `_CntrlPurContrItmCndnAmount` | | ✓ | | | | |
 
 ## Source Code
 

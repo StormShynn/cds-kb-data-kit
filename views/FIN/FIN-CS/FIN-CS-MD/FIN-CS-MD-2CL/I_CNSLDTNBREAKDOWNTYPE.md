@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationBreakdownType` | ✓ | |  | `cast(_Domain.DomainValue as fincs_breakdowntype )` |
-| `DomainValue` |  | | `_Domain` | `DomainValue` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationBreakdownType` | ✓ | |  | `cast(_Domain.DomainValue as fincs_breakdowntype )` |  |  |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

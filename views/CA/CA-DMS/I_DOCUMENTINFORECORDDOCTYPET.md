@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
-| `Language` | ✓ | |  | `cvlang` |
-| `DocumentTypeDescription` |  | |  | `dartxt` |
-| `_DocType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
+| `Language` | ✓ | |  | `cvlang` |  |  |
+| `DocumentTypeDescription` |  | |  | `dartxt` |  |  |
+| `_DocType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

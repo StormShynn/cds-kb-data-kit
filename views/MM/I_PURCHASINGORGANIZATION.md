@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingOrganization` | ✓ | |  | `cast( ekorg as ekorg_ll preserving type )` |
-| `PurchasingOrganizationName` |  | |  | `cast( ekotx as mm_a_purg_org_name preserving type )` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingOrganization` | ✓ | |  | `cast( ekorg as ekorg_ll preserving type )` |  |  |
+| `PurchasingOrganizationName` |  | |  | `cast( ekotx as mm_a_purg_org_name preserving type )` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

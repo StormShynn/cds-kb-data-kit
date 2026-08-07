@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPreliminaryInvcgDocStatus` | ✓ | |  | `cast( dd07l.domvalue_l as prlinv_status_kk )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPreliminaryInvcgDocStatus` | ✓ | |  | `cast( dd07l.domvalue_l as prlinv_status_kk )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

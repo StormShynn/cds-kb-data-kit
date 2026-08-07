@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InventorySpecialStockValnType` | ✓ | |  | `cast( dd07l.domvalue_l as fis_inventoryspclstockvalntype )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InventorySpecialStockValnType` | ✓ | |  | `cast( dd07l.domvalue_l as fis_inventoryspclstockvalntype )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

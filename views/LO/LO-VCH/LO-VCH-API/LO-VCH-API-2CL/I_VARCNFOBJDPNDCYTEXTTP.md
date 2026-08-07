@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ObjectDependencyName` | ✓ | |  |  |
-| `LanguageCode` | ✓ | |  |  |
-| `_HistoricalText` | | ✓ | | |
-| `_ObjectDependency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectDependencyName` | ✓ | |  |  |  |  |
+| `LanguageCode` | ✓ | |  |  |  |  |
+| `_HistoricalText` | | ✓ | | | | |
+| `_ObjectDependency` | | ✓ | | | | |
 
 ## Source Code
 

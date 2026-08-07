@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UsageDecisionCodeGroup` | ✓ | |  | `codegruppe` |
-| `UsageDecisionCode` | ✓ | |  | `code` |
-| `CodeIsInactive` |  | |  | `case qpcd.inaktiv when ' ' then cast( ' ' as vdm_qm_codeisinactive preserving type ) else cast( 'X' as vdm_qm_codeisinactive preserving type ) end` |
-| `UsgeDcsnCodeCreatedBy` |  | |  | `ersteller` |
-| `UsgeDcsnCodeCreatedOn` |  | |  | `e_datum` |
-| `UsgeDcsnCodeLastChangedBy` |  | |  | `aenderer` |
-| `UsgeDcsnCodeLastChangedOn` |  | |  | `a_datum` |
-| `_UsageDecisionCodeGroup` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UsageDecisionCodeGroup` | ✓ | |  | `codegruppe` |  |  |
+| `UsageDecisionCode` | ✓ | |  | `code` |  |  |
+| `CodeIsInactive` |  | |  | `case qpcd.inaktiv when ' ' then cast( ' ' as vdm_qm_codeisinactive preserving type ) else cast( 'X' as vdm_qm_codeisinactive preserving type ) end` |  |  |
+| `UsgeDcsnCodeCreatedBy` |  | |  | `ersteller` |  |  |
+| `UsgeDcsnCodeCreatedOn` |  | |  | `e_datum` |  |  |
+| `UsgeDcsnCodeLastChangedBy` |  | |  | `aenderer` |  |  |
+| `UsgeDcsnCodeLastChangedOn` |  | |  | `a_datum` |  |  |
+| `_UsageDecisionCodeGroup` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

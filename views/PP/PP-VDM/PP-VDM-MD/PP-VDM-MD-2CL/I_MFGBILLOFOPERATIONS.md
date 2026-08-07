@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsType` | ✓ | |  |  |
-| `BillOfOperationsGroup` | ✓ | |  |  |
-| `BillOfOperationsVariant` | ✓ | |  |  |
-| `BillOfOperationsVersionType` |  | |  |  |
-| `LastUsageDate` |  | |  |  |
-| `NumberOfUsages` |  | |  |  |
-| `HasChangeNumber` |  | |  |  |
-| `HasParameterEffectivity` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_BillOfOperationsChangeState` | | ✓ | | |
-| `_BillOfOperationsSequence` | | ✓ | | |
-| `_BOOMaterialAssignment` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsVersionType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |  |  |
+| `BillOfOperationsVersionType` |  | |  |  |  |  |
+| `LastUsageDate` |  | |  |  |  |  |
+| `NumberOfUsages` |  | |  |  |  |  |
+| `HasChangeNumber` |  | |  |  |  |  |
+| `HasParameterEffectivity` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_BillOfOperationsChangeState` | | ✓ | | | | |
+| `_BillOfOperationsSequence` | | ✓ | | | | |
+| `_BOOMaterialAssignment` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsVersionType` | | ✓ | | | | |
 
 ## Associations
 

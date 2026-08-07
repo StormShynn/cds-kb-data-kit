@@ -30,333 +30,333 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderInternalID` | ✓ | |  | `cast(afvg.OrderInternalID as pph_aufpl preserving type)` |
-| `OrderOperationInternalID` | ✓ | |  | `cast(afvg.OrderOperationInternalID as operationinternalid preserving type)` |
-| `ProductionOrder` |  | |  | `cast(aufv.ManufacturingOrder as vdm_manufacturingorder preserving type)` |
-| `ProductionOrderSequence` |  | |  | `cast(afvg.Sequence as vdm_prodnordersequence preserving type)` |
-| `ProductionOrderOperation` |  | |  | `cast(afvg.Operation_2 as vdm_prodnorderoperation preserving type)` |
-| `ProductionOrderType` |  | |  | `cast(aufv.ManufacturingOrderType as vdm_prodnordertype preserving type)` |
-| `ProductionSupervisor` |  | |  | `cast(aufv.ProductionSupervisor as pph_fevor preserving type)` |
-| `MRPController` |  | |  | `cast(aufv.MRPController as pph_dispo preserving type)` |
-| `ProductionOrderOperationText` |  | |  | `OperationText` |
-| `OperationStandardTextCode` |  | |  | `cast(afvg.StandardTextInternalID as pph_ktsch preserving type)` |
-| `OperationHasLongText` |  | |  | `cast(case afvg.Language when '' then '' else 'X' end as aufltext preserving type)` |
-| `LongTextLanguage` |  | |  | `Language` |
-| `OperationIsToBeDeleted` |  | |  |  |
-| `NumberOfCapacities` |  | |  | `cast(afvg.NumberOfCapacities as pph_anzkap preserving type)` |
-| `NumberOfConfirmationSlips` |  | |  |  |
-| `Plant` |  | |  |  |
-| `WorkCenterInternalID` |  | |  | `cast(afvg.WorkCenterInternalID as pph_arbid preserving type)` |
-| `WorkCenterType` |  | |  | `cast(afvg.WorkCenterTypeCode_2 as vdm_arbty preserving type)` |
-| `OperationControlProfile` |  | |  | `cast(afvg.OperationControlProfile as pph_steus preserving type)` |
-| `OperationConfirmation` |  | |  |  |
-| `NumberOfOperationConfirmations` |  | |  | `cast(afvg.NumberOfOperationConfirmations as pph_noofconf preserving type)` |
-| `FactoryCalendar` |  | |  | `cast(afvg.FactoryCalendar as cr_wfcid preserving type)` |
-| `CapacityRequirement` |  | |  |  |
-| `CapacityRequirementItem` |  | |  | `cast(afvg.CapacityRequirementItem as pph_bedzl preserving type)` |
-| `ChangeNumber` |  | |  |  |
-| `ObjectInternalID` |  | |  | `cast(afvg.ObjectInternalID as pph_objnr preserving type)` |
-| `OperationTrackingNumber` |  | |  |  |
-| `NumberOfTimeTickets` |  | |  |  |
-| `NumberOfEmployees` |  | |  | `cast(afvg.NumberOfEmployees as pph_anzms preserving type)` |
-| `BillOfOperationsType` |  | |  | `cast(afvg.BillOfOperationsType as billofoperationstype preserving type)` |
-| `BillOfOperationsGroup` |  | |  |  |
-| `BillOfOperationsVariant` |  | |  |  |
-| `BillOfOperationsSequence` |  | |  | `cast(afvg.BillOfOperationsSequence as boosequence preserving type)` |
-| `BOOOperationInternalID` |  | |  |  |
-| `BillOfOperationsVersion` |  | |  |  |
-| `BillOfMaterialCategory` |  | |  | `cast(afvg.BillOfMaterialCategory as pph_stlty preserving type)` |
-| `BillOfMaterialInternalID` |  | |  | `BillOfMaterialInternalID_2` |
-| `BillOfMaterialItemNodeNumber` |  | |  | `cast(afvg.BillOfMaterialItemNodeNumber as pph_stlkn preserving type)` |
-| `BOMItemNodeCount` |  | |  |  |
-| `ExtProcgOperationHasSubcontrg` |  | |  |  |
-| `PurchasingOrganization` |  | |  | `cast(afvg.PurchasingOrganization as pph_ekorg preserving type)` |
-| `PurchasingGroup` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  | `cast(afvg.PurchaseRequisitionItem as pph_bnfpo preserving type)` |
-| `PurchaseOutlineAgreement` |  | |  | `cast(afvg.PurchasingDocument as pph_konnr preserving type)` |
-| `PurchaseOutlineAgreementItem` |  | |  | `cast(afvg.PurchasingDocumentItem as pph_ktpnr preserving type)` |
-| `PurgInfoRecNonStockItmSortTerm` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  | `cast(afvg.PurchasingInfoRecord as pph_infnr preserving type)` |
-| `PurgInfoRecdDataIsFixed` |  | |  | `cast(afvg.PurgInfoRecdDataIsFixed as vdm_kzfix preserving type)` |
-| `PurchasingInfoRecordCategory` |  | |  | `cast(afvg.PurchasingInfoRecordCategory as pph_esokz preserving type)` |
-| `Supplier` |  | |  |  |
-| `PurchaseRequisitionPlndDlvDurn` |  | |  | `cast(afvg.PlannedDeliveryDuration as pph_plifz preserving type)` |
-| `GoodsRecipientName` |  | |  | `cast(afvg.GoodsRecipientName as pph_wempf preserving type)` |
-| `UnloadingPointName` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `InspectionLotType` |  | |  |  |
-| `OpExternalProcessingCurrency` |  | |  | `Currency` |
-| `OpExternalProcessingPrice` |  | |  |  |
-| `NumberOfOperationPriceUnits` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `RequestingCostCenter` |  | |  |  |
-| `CostElement` |  | |  |  |
-| `CostingVariant` |  | |  |  |
-| `CostingSheet` |  | |  |  |
-| `CostEstimate` |  | |  |  |
-| `ControllingObjectCurrency` |  | |  |  |
-| `ControllingObjectClass` |  | |  | `cast(afvg.ControllingObjectClass as pph_scope preserving type)` |
-| `FunctionalArea` |  | |  |  |
-| `OperationSetupGroupCategory` |  | |  | `cast(afvg.OperationSetupGroupCategory as pph_rfgrp preserving type)` |
-| `OperationSetupGroup` |  | |  | `cast(afvg.OperationSetupGroup as pph_rfsch preserving type)` |
-| `OperationSetupType` |  | |  | `cast(afvg.OperationSetupType as pph_rasch preserving type)` |
-| `OperationOverlappingIsRequired` |  | |  |  |
-| `OperationOverlappingIsPossible` |  | |  |  |
-| `OperationsIsAlwaysOverlapping` |  | |  |  |
-| `OperationSplitIsRequired` |  | |  |  |
-| `OverlapMinimumTransferQty` |  | |  |  |
-| `MaximumNumberOfSplits` |  | |  |  |
-| `ActualNumberOfSplits` |  | |  |  |
-| `MinProcessingDurnPerSplitUnit` |  | |  |  |
-| `MinProcessingDurationPerSplit` |  | |  |  |
-| `LeadTimeReductionStrategy` |  | |  | `cast(afvg.LeadTimeReductionStrategy as pph_rstra preserving type)` |
-| `OpSchedldReductionLevel` |  | |  |  |
-| `OpErlstSchedldExecStrtDte` |  | |  | `cast(afvg.OpErlstSchedldExecStrtDte as vdm_fsavd preserving type)` |
-| `OpErlstSchedldExecStrtTme` |  | |  | `cast(afvg.OpErlstSchedldExecStrtTme as vdm_fsavz preserving type)` |
-| `OpErlstSchedldProcgStrtDte` |  | |  | `cast(afvg.OpErlstSchedldProcgStrtDte as vdm_fssbd preserving type)` |
-| `OpErlstSchedldProcgStrtTme` |  | |  | `cast(afvg.OpErlstSchedldProcgStrtTme as vdm_fssbz preserving type)` |
-| `OpErlstSchedldTrdwnStrtDte` |  | |  | `cast(afvg.OpErlstSchedldTrdwnStrtDte as vdm_fssad preserving type)` |
-| `OpErlstSchedldTrdwnStrtTme` |  | |  | `cast(afvg.OpErlstSchedldTrdwnStrtTme as vdm_fssaz preserving type)` |
-| `OpErlstSchedldExecEndDte` |  | |  | `cast(afvg.OpErlstSchedldExecEndDte as vdm_fsedd preserving type)` |
-| `OpErlstSchedldExecEndTme` |  | |  | `cast(afvg.OpErlstSchedldExecEndTme as vdm_fsedz preserving type)` |
-| `OpLtstSchedldExecStrtDte` |  | |  | `cast(afvg.OpLtstSchedldExecStrtDte as vdm_ssavd preserving type)` |
-| `OpLtstSchedldExecStrtTme` |  | |  | `cast(afvg.OpLtstSchedldExecStrtTme as vdm_ssavz preserving type)` |
-| `OpLtstSchedldProcgStrtDte` |  | |  | `cast(afvg.OpLtstSchedldProcgStrtDte as vdm_sssbd preserving type)` |
-| `OpLtstSchedldProcgStrtTme` |  | |  | `cast(afvg.OpLtstSchedldProcgStrtTme as vdm_sssbz preserving type)` |
-| `OpLtstSchedldTrdwnStrtDte` |  | |  | `cast(afvg.OpLtstSchedldTrdwnStrtDte as vdm_sssad preserving type)` |
-| `OpLtstSchedldTrdwnStrtTme` |  | |  | `cast(afvg.OpLtstSchedldTrdwnStrtTme as vdm_sssaz preserving type)` |
-| `OpLtstSchedldExecEndDte` |  | |  | `cast(afvg.OpLtstSchedldExecEndDte as vdm_ssedd preserving type)` |
-| `OpLtstSchedldExecEndTme` |  | |  | `cast(afvg.OpLtstSchedldExecEndTme as vdm_ssedz preserving type)` |
-| `SchedldFcstdEarliestStartDate` |  | |  | `cast(afvg.SchedldFcstdEarliestStartDate as pph_fpavd preserving type)` |
-| `SchedldFcstdEarliestStartTime` |  | |  | `cast(afvg.SchedldFcstdEarliestStartTime as pph_fpavz preserving type)` |
-| `SchedldFcstdEarliestEndDate` |  | |  | `cast(afvg.SchedldFcstdEarliestEndDate as pph_fpedd preserving type)` |
-| `SchedldFcstdEarliestEndTime` |  | |  | `cast(afvg.SchedldFcstdEarliestEndTime as pph_fpedz preserving type)` |
-| `LatestSchedldFcstdStartDate` |  | |  | `cast(afvg.LatestSchedldFcstdStartDate as pph_spavd preserving type)` |
-| `SchedldFcstdLatestStartTime` |  | |  | `cast(afvg.SchedldFcstdLatestStartTime as pph_spavz preserving type)` |
-| `LatestSchedldFcstdEndDate` |  | |  | `cast(afvg.LatestSchedldFcstdEndDate as pph_spedd preserving type)` |
-| `SchedldFcstdLatestEndTime` |  | |  | `cast(afvg.SchedldFcstdLatestEndTime as pph_spedz preserving type)` |
-| `OperationConfirmedStartDate` |  | |  | `cast(afvg.OperationConfirmedStartDate as pph_isavd preserving type)` |
-| `OperationConfirmedEndDate` |  | |  | `cast(afvg.OperationConfirmedEndDate as pph_ieavd preserving type)` |
-| `OpActualExecutionStartDate` |  | |  | `cast(afvg.OpActualExecutionStartDate as vdm_isdd preserving type)` |
-| `OpActualExecutionStartTime` |  | |  | `cast(afvg.OpActualExecutionStartTime as vdm_isdz preserving type)` |
-| `OpActualSetupEndDate` |  | |  | `cast(afvg.OpActualSetupEndDate as vdm_ierd preserving type)` |
-| `OpActualSetupEndTime` |  | |  | `cast(afvg.OpActualSetupEndTime as vdm_ierz preserving type)` |
-| `OpActualProcessingStartDate` |  | |  | `cast(afvg.OpActualProcessingStartDate as vdm_isbd preserving type)` |
-| `OpActualProcessingStartTime` |  | |  | `cast(afvg.OpActualProcessingStartTime as vdm_isbz preserving type)` |
-| `OpActualProcessingEndDate` |  | |  | `cast(afvg.OpActualProcessingEndDate as vdm_iebd preserving type)` |
-| `OpActualProcessingEndTime` |  | |  | `cast(afvg.OpActualProcessingEndTime as vdm_iebz preserving type)` |
-| `OpActualTeardownStartDate` |  | |  | `cast(afvg.OpActualTeardownStartDate as vdm_isad preserving type)` |
-| `OpActualTeardownStartTme` |  | |  | `cast(afvg.OpActualTeardownStartTme as vdm_isaz preserving type)` |
-| `OpActualExecutionEndDate` |  | |  | `cast(afvg.OpActualExecutionEndDate as vdm_iedd preserving type)` |
-| `OpActualExecutionEndTime` |  | |  | `cast(afvg.OpActualExecutionEndTime as vdm_iedz preserving type)` |
-| `ActualForecastEndDate` |  | |  | `cast(afvg.ActualForecastEndDate as pph_pedd preserving type)` |
-| `ActualForecastEndTime` |  | |  | `cast(afvg.ActualForecastEndTime as pph_pedz preserving type)` |
-| `EarliestScheduledWaitStartDate` |  | |  |  |
-| `EarliestScheduledWaitStartTime` |  | |  |  |
-| `EarliestScheduledWaitEndDate` |  | |  |  |
-| `EarliestScheduledWaitEndTime` |  | |  |  |
-| `LatestScheduledWaitStartDate` |  | |  |  |
-| `LatestScheduledWaitStartTime` |  | |  |  |
-| `LatestScheduledWaitEndDate` |  | |  |  |
-| `LatestScheduledWaitEndTime` |  | |  |  |
-| `BreakDurationUnit` |  | |  |  |
-| `PlannedBreakDuration` |  | |  |  |
-| `ConfirmedBreakDuration` |  | |  |  |
-| `OverlapMinimumDurationUnit` |  | |  | `cast(afvg.OverlapMinimumDurationUnit as pph_dzeimu preserving type)` |
-| `OverlapMinimumDuration` |  | |  |  |
-| `MaximumWaitDurationUnit` |  | |  |  |
-| `MaximumWaitDuration` |  | |  |  |
-| `MinimumWaitDurationUnit` |  | |  |  |
-| `MinimumWaitDuration` |  | |  |  |
-| `StandardMoveDurationUnit` |  | |  |  |
-| `StandardMoveDuration` |  | |  |  |
-| `StandardQueueDurationUnit` |  | |  |  |
-| `StandardQueueDuration` |  | |  |  |
-| `MinimumQueueDurationUnit` |  | |  |  |
-| `MinimumQueueDuration` |  | |  |  |
-| `MinimumMoveDurationUnit` |  | |  |  |
-| `MinimumMoveDuration` |  | |  |  |
-| `OperationStandardDuration` |  | |  |  |
-| `OperationStandardDurationUnit` |  | |  |  |
-| `MinimumDuration` |  | |  | `cast(afvg.MinimumDuration as vdm_daumin preserving type)` |
-| `MinimumDurationUnit` |  | |  | `cast(afvg.MinimumDurationUnit as vdm_daumine preserving type)` |
-| `MinimumProcessingDuration` |  | |  |  |
-| `MinimumProcessingDurationUnit` |  | |  |  |
-| `ScheduledMoveDuration` |  | |  |  |
-| `ScheduledMoveDurationUnit` |  | |  |  |
-| `ScheduledQueueDuration` |  | |  |  |
-| `ScheduledQueueDurationUnit` |  | |  |  |
-| `ScheduledWaitDuration` |  | |  |  |
-| `ScheduledWaitDurationUnit` |  | |  |  |
-| `OpPlannedSetupDurn` |  | |  |  |
-| `OpPlannedSetupDurnUnit` |  | |  |  |
-| `OpPlannedProcessingDurn` |  | |  |  |
-| `OpPlannedProcessingDurnUnit` |  | |  | `cast(afvg.OpPlannedProcessingDurnUnit as pph_beaze preserving type)` |
-| `OpPlannedTeardownDurn` |  | |  |  |
-| `OpPlannedTeardownDurnUnit` |  | |  |  |
-| `ActualForecastDuration` |  | |  | `cast(afvg.ActualForecastDuration as pph_pdau preserving type)` |
-| `ActualForecastDurationUnit` |  | |  | `cast(afvg.ActualForecastDurationUnit as pph_pdae preserving type)` |
-| `ForecastProcessingDuration` |  | |  |  |
-| `ForecastProcessingDurationUnit` |  | |  |  |
-| `StartDateOffsetReferenceCode` |  | |  |  |
-| `StartDateOffsetDurationUnit` |  | |  |  |
-| `StartDateOffsetDuration` |  | |  |  |
-| `EndDateOffsetReferenceCode` |  | |  |  |
-| `EndDateOffsetDurationUnit` |  | |  |  |
-| `EndDateOffsetDuration` |  | |  |  |
-| `StandardWorkFormulaParamGroup` |  | |  |  |
-| `OperationUnit` |  | |  | `cast(afvg.OperationUnit as operationunit preserving type)` |
-| `OpQtyToBaseQtyDnmntr` |  | |  |  |
-| `OpQtyToBaseQtyNmrtr` |  | |  |  |
-| `OperationScrapPercent` |  | |  |  |
-| `OperationReferenceQuantity` |  | |  |  |
-| `OpPlannedTotalQuantity` |  | |  |  |
-| `OpPlannedScrapQuantity` |  | |  |  |
-| `OpPlannedYieldQuantity` |  | |  | `cast((afvg.OpPlannedTotalQuantity - afvg.OpPlannedScrapQuantity) as vdm_gmeng)` |
-| `OpTotalConfirmedYieldQty` |  | |  |  |
-| `OpTotalConfirmedScrapQty` |  | |  |  |
-| `OperationConfirmedReworkQty` |  | |  |  |
-| `ProductionUnit` |  | |  | `cast(aufv.ProductionUnit as productionunit preserving type)` |
-| `OpTotConfdYieldQtyInOrdQtyUnit` |  | |  |  |
-| `WorkQuantityUnit1` |  | |  | `cast(afvg.OpWorkQuantityUnit1 as vdm_ile01 preserving type)` |
-| `ConfirmedWorkQuantity1` |  | |  | `cast(afvg.OpConfirmedWorkQuantity1 as vdm_ism01 preserving type)` |
-| `NoFurtherOpWorkQuantity1IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity1IsExpd as vdm_lek01 preserving type)` |
-| `WorkQuantityUnit2` |  | |  | `cast(afvg.OpWorkQuantityUnit2 as vdm_ile02 preserving type)` |
-| `ConfirmedWorkQuantity2` |  | |  | `cast(afvg.OpConfirmedWorkQuantity2 as vdm_ism02 preserving type)` |
-| `NoFurtherOpWorkQuantity2IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity2IsExpd as vdm_lek02 preserving type)` |
-| `WorkQuantityUnit3` |  | |  | `cast(afvg.OpWorkQuantityUnit3 as vdm_ile03 preserving type)` |
-| `ConfirmedWorkQuantity3` |  | |  | `cast(afvg.OpConfirmedWorkQuantity3 as vdm_ism03 preserving type)` |
-| `NoFurtherOpWorkQuantity3IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity3IsExpd as vdm_lek03 preserving type)` |
-| `WorkQuantityUnit4` |  | |  | `cast(afvg.OpWorkQuantityUnit4 as vdm_ile04 preserving type)` |
-| `ConfirmedWorkQuantity4` |  | |  | `cast(afvg.OpConfirmedWorkQuantity4 as vdm_ism04 preserving type)` |
-| `NoFurtherOpWorkQuantity4IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity4IsExpd as vdm_lek04 preserving type)` |
-| `WorkQuantityUnit5` |  | |  | `cast(afvg.OpWorkQuantityUnit5 as vdm_ile05 preserving type)` |
-| `ConfirmedWorkQuantity5` |  | |  | `cast(afvg.OpConfirmedWorkQuantity5 as vdm_ism05 preserving type)` |
-| `NoFurtherOpWorkQuantity5IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity5IsExpd as vdm_lek05 preserving type)` |
-| `WorkQuantityUnit6` |  | |  | `cast(afvg.OpWorkQuantityUnit6 as vdm_ile06 preserving type)` |
-| `ConfirmedWorkQuantity6` |  | |  | `cast(afvg.OpConfirmedWorkQuantity6 as vdm_ism06 preserving type)` |
-| `NoFurtherOpWorkQuantity6IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity6IsExpd as vdm_lek06 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit1` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit1 as pph_vge01 preserving type)` |
-| `WorkCenterStandardWorkQty1` |  | |  | `cast(afvg.WorkCenterStandardWorkQty1 as vdm_vgw01 preserving type)` |
-| `CostCtrActivityType1` |  | |  | `cast(afvg.CostCtrActivityType1 as vdm_lar01 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit2` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit2 as pph_vge02 preserving type)` |
-| `WorkCenterStandardWorkQty2` |  | |  | `cast(afvg.WorkCenterStandardWorkQty2 as vdm_vgw02 preserving type)` |
-| `CostCtrActivityType2` |  | |  | `cast(afvg.CostCtrActivityType2 as vdm_lar02 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit3` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit3 as pph_vge03 preserving type)` |
-| `WorkCenterStandardWorkQty3` |  | |  | `cast(afvg.WorkCenterStandardWorkQty3 as vdm_vgw03 preserving type)` |
-| `CostCtrActivityType3` |  | |  | `cast(afvg.CostCtrActivityType3 as vdm_lar03 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit4` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit4 as pph_vge04 preserving type)` |
-| `WorkCenterStandardWorkQty4` |  | |  | `cast(afvg.WorkCenterStandardWorkQty4 as vdm_vgw04 preserving type)` |
-| `CostCtrActivityType4` |  | |  | `cast(afvg.CostCtrActivityType4 as vdm_lar04 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit5` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit5 as pph_vge05 preserving type)` |
-| `WorkCenterStandardWorkQty5` |  | |  | `cast(afvg.WorkCenterStandardWorkQty5 as vdm_vgw05 preserving type)` |
-| `CostCtrActivityType5` |  | |  | `cast(afvg.CostCtrActivityType5 as vdm_lar05 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit6` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit6 as pph_vge06 preserving type)` |
-| `WorkCenterStandardWorkQty6` |  | |  | `cast(afvg.WorkCenterStandardWorkQty6 as vdm_vgw06 preserving type)` |
-| `CostCtrActivityType6` |  | |  | `cast(afvg.CostCtrActivityType6 as vdm_lar06 preserving type)` |
-| `ForecastWorkQuantity1` |  | |  | `cast(afvg.ForecastWorkQuantity1 as vdm_ofm01 preserving type)` |
-| `ForecastWorkQuantity2` |  | |  | `cast(afvg.ForecastWorkQuantity2 as vdm_ofm02 preserving type)` |
-| `ForecastWorkQuantity3` |  | |  | `cast(afvg.ForecastWorkQuantity3 as vdm_ofm03 preserving type)` |
-| `ForecastWorkQuantity4` |  | |  | `cast(afvg.ForecastWorkQuantity4 as vdm_ofm04 preserving type)` |
-| `ForecastWorkQuantity5` |  | |  | `cast(afvg.ForecastWorkQuantity5 as vdm_ofm05 preserving type)` |
-| `ForecastWorkQuantity6` |  | |  | `cast(afvg.ForecastWorkQuantity6 as vdm_ofm06 preserving type)` |
-| `StandardWorkQtyDetnType` |  | |  |  |
-| `StandardWorkQtyDetnYear` |  | |  |  |
-| `StandardWorkQuantityReference` |  | |  |  |
-| `StandardWorkQuantityCalcBasis` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `BusinessProcessEntryUnit` |  | |  |  |
-| `BusinessProcessConfirmedQty` |  | |  |  |
-| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |
-| `BusinessProcRemainingQtyUnit` |  | |  |  |
-| `BusinessProcessRemainingQty` |  | |  | `cast(afvg.BusinessProcessRemainingQty as pph_oprz1 preserving type)` |
-| `_ProductionOrderInternal` | | ✓ | | |
-| `_ProductionOrderType` | | ✓ | | |
-| `_OperationStandardTextCode` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_ProductionUnit` | | ✓ | | |
-| `_OperationUnit` | | ✓ | | |
-| `_ProductionSupervisor` | | ✓ | | |
-| `_MRPController` | | ✓ | | |
-| `_WorkCenterType` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_OperationControlProfile` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BillOfOperationsVariant` | | ✓ | | |
-| `_BillOfOperationsSequence` | | ✓ | | |
-| `_BOOOperationInternalID` | | ✓ | | |
-| `_FactoryCalendar` | | ✓ | | |
-| `_CapacityRequirement` | | ✓ | | |
-| `_CapacityRequirementItem` | | ✓ | | |
-| `_OperationConfirmation` | | ✓ | | |
-| `_ChangeNumber` | | ✓ | | |
-| `_PurchaseContract` | | ✓ | | |
-| `_PurchaseContractItem` | | ✓ | | |
-| `_SchedulingAgreement` | | ✓ | | |
-| `_SchedulingAgreementItem` | | ✓ | | |
-| `_PurchaseRequisition` | | ✓ | | |
-| `_PurchaseRequisitionItem` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingInfoRecord` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_StatusObject` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_RequestingCostCenter` | | ✓ | | |
-| `_CostElement` | | ✓ | | |
-| `_CostingVariant` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ControllingObjectClass` | | ✓ | | |
-| `_ControllingObjectCurrency` | | ✓ | | |
-| `_OpExternalProcessingCurrency` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_BusinessProcess` | | ✓ | | |
-| `_BusinessProcessEntryUnit` | | ✓ | | |
-| `_ConfirmedWorkQuantityUnit1` | | ✓ | | |
-| `_ConfirmedWorkQuantityUnit2` | | ✓ | | |
-| `_ConfirmedWorkQuantityUnit3` | | ✓ | | |
-| `_ConfirmedWorkQuantityUnit4` | | ✓ | | |
-| `_ConfirmedWorkQuantityUnit5` | | ✓ | | |
-| `_ConfirmedWorkQuantityUnit6` | | ✓ | | |
-| `_StdWorkQuantityUnit1` | | ✓ | | |
-| `_StdWorkQuantityUnit2` | | ✓ | | |
-| `_StdWorkQuantityUnit3` | | ✓ | | |
-| `_StdWorkQuantityUnit4` | | ✓ | | |
-| `_StdWorkQuantityUnit5` | | ✓ | | |
-| `_StdWorkQuantityUnit6` | | ✓ | | |
-| `_OperationSetupGroupCategory` | | ✓ | | |
-| `_OperationSetupGroup` | | ✓ | | |
-| `_OperationSetupType` | | ✓ | | |
-| `_LeadTimeReductionStrategy` | | ✓ | | |
-| `_StartDateOffsetReferenceCode` | | ✓ | | |
-| `_EndDateOffsetReferenceCode` | | ✓ | | |
-| `_StandardWorkFmlaParamGroup` | | ✓ | | |
-| `_LongTextLanguage` | | ✓ | | |
-| `_ProductionOrderHeader` | | ✓ | | |
-| `_PlantText` | | ✓ | | |
-| `_ProductionOrderText` | | ✓ | | |
-| `_WorkCenterText` | | ✓ | | |
-| `_SupplierText` | | ✓ | | |
-| `_StatusObjectText` | | ✓ | | |
-| `_BusinessAreaText` | | ✓ | | |
-| `_CompanyCodeText` | | ✓ | | |
-| `_ControllingAreaText` | | ✓ | | |
-| `_FunctionalAreaText` | | ✓ | | |
-| `_ProductionOrderSequence` | | ✓ | | |
-| `_ProductionOrderComponent` | | ✓ | | |
-| `_ProductionOrderPRT` | | ✓ | | |
-| `_ProductionOrderTriggerPoint` | | ✓ | | |
-| `_ProdnOrderOperationCapacity` | | ✓ | | |
-| `_LongText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderInternalID` | ✓ | |  | `cast(afvg.OrderInternalID as pph_aufpl preserving type)` |  |  |
+| `OrderOperationInternalID` | ✓ | |  | `cast(afvg.OrderOperationInternalID as operationinternalid preserving type)` |  |  |
+| `ProductionOrder` |  | |  | `cast(aufv.ManufacturingOrder as vdm_manufacturingorder preserving type)` |  |  |
+| `ProductionOrderSequence` |  | |  | `cast(afvg.Sequence as vdm_prodnordersequence preserving type)` |  |  |
+| `ProductionOrderOperation` |  | |  | `cast(afvg.Operation_2 as vdm_prodnorderoperation preserving type)` |  |  |
+| `ProductionOrderType` |  | |  | `cast(aufv.ManufacturingOrderType as vdm_prodnordertype preserving type)` |  |  |
+| `ProductionSupervisor` |  | |  | `cast(aufv.ProductionSupervisor as pph_fevor preserving type)` |  |  |
+| `MRPController` |  | |  | `cast(aufv.MRPController as pph_dispo preserving type)` |  |  |
+| `ProductionOrderOperationText` |  | |  | `OperationText` |  |  |
+| `OperationStandardTextCode` |  | |  | `cast(afvg.StandardTextInternalID as pph_ktsch preserving type)` |  |  |
+| `OperationHasLongText` |  | |  | `cast(case afvg.Language when '' then '' else 'X' end as aufltext preserving type)` |  |  |
+| `LongTextLanguage` |  | |  | `Language` |  |  |
+| `OperationIsToBeDeleted` |  | |  |  |  |  |
+| `NumberOfCapacities` |  | |  | `cast(afvg.NumberOfCapacities as pph_anzkap preserving type)` |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  | `cast(afvg.WorkCenterInternalID as pph_arbid preserving type)` |  |  |
+| `WorkCenterType` |  | |  | `cast(afvg.WorkCenterTypeCode_2 as vdm_arbty preserving type)` |  |  |
+| `OperationControlProfile` |  | |  | `cast(afvg.OperationControlProfile as pph_steus preserving type)` |  |  |
+| `OperationConfirmation` |  | |  |  |  |  |
+| `NumberOfOperationConfirmations` |  | |  | `cast(afvg.NumberOfOperationConfirmations as pph_noofconf preserving type)` |  |  |
+| `FactoryCalendar` |  | |  | `cast(afvg.FactoryCalendar as cr_wfcid preserving type)` |  |  |
+| `CapacityRequirement` |  | |  |  |  |  |
+| `CapacityRequirementItem` |  | |  | `cast(afvg.CapacityRequirementItem as pph_bedzl preserving type)` |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  | `cast(afvg.ObjectInternalID as pph_objnr preserving type)` |  |  |
+| `OperationTrackingNumber` |  | |  |  |  |  |
+| `NumberOfTimeTickets` |  | |  |  |  |  |
+| `NumberOfEmployees` |  | |  | `cast(afvg.NumberOfEmployees as pph_anzms preserving type)` |  |  |
+| `BillOfOperationsType` |  | |  | `cast(afvg.BillOfOperationsType as billofoperationstype preserving type)` |  |  |
+| `BillOfOperationsGroup` |  | |  |  |  |  |
+| `BillOfOperationsVariant` |  | |  |  |  |  |
+| `BillOfOperationsSequence` |  | |  | `cast(afvg.BillOfOperationsSequence as boosequence preserving type)` |  |  |
+| `BOOOperationInternalID` |  | |  |  |  |  |
+| `BillOfOperationsVersion` |  | |  |  |  |  |
+| `BillOfMaterialCategory` |  | |  | `cast(afvg.BillOfMaterialCategory as pph_stlty preserving type)` |  |  |
+| `BillOfMaterialInternalID` |  | |  | `BillOfMaterialInternalID_2` |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  | `cast(afvg.BillOfMaterialItemNodeNumber as pph_stlkn preserving type)` |  |  |
+| `BOMItemNodeCount` |  | |  |  |  |  |
+| `ExtProcgOperationHasSubcontrg` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  | `cast(afvg.PurchasingOrganization as pph_ekorg preserving type)` |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  | `cast(afvg.PurchaseRequisitionItem as pph_bnfpo preserving type)` |  |  |
+| `PurchaseOutlineAgreement` |  | |  | `cast(afvg.PurchasingDocument as pph_konnr preserving type)` |  |  |
+| `PurchaseOutlineAgreementItem` |  | |  | `cast(afvg.PurchasingDocumentItem as pph_ktpnr preserving type)` |  |  |
+| `PurgInfoRecNonStockItmSortTerm` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  | `cast(afvg.PurchasingInfoRecord as pph_infnr preserving type)` |  |  |
+| `PurgInfoRecdDataIsFixed` |  | |  | `cast(afvg.PurgInfoRecdDataIsFixed as vdm_kzfix preserving type)` |  |  |
+| `PurchasingInfoRecordCategory` |  | |  | `cast(afvg.PurchasingInfoRecordCategory as pph_esokz preserving type)` |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchaseRequisitionPlndDlvDurn` |  | |  | `cast(afvg.PlannedDeliveryDuration as pph_plifz preserving type)` |  |  |
+| `GoodsRecipientName` |  | |  | `cast(afvg.GoodsRecipientName as pph_wempf preserving type)` |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `InspectionLotType` |  | |  |  |  |  |
+| `OpExternalProcessingCurrency` |  | |  | `Currency` |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `RequestingCostCenter` |  | |  |  |  |  |
+| `CostElement` |  | |  |  |  |  |
+| `CostingVariant` |  | |  |  |  |  |
+| `CostingSheet` |  | |  |  |  |  |
+| `CostEstimate` |  | |  |  |  |  |
+| `ControllingObjectCurrency` |  | |  |  |  |  |
+| `ControllingObjectClass` |  | |  | `cast(afvg.ControllingObjectClass as pph_scope preserving type)` |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `OperationSetupGroupCategory` |  | |  | `cast(afvg.OperationSetupGroupCategory as pph_rfgrp preserving type)` |  |  |
+| `OperationSetupGroup` |  | |  | `cast(afvg.OperationSetupGroup as pph_rfsch preserving type)` |  |  |
+| `OperationSetupType` |  | |  | `cast(afvg.OperationSetupType as pph_rasch preserving type)` |  |  |
+| `OperationOverlappingIsRequired` |  | |  |  |  |  |
+| `OperationOverlappingIsPossible` |  | |  |  |  |  |
+| `OperationsIsAlwaysOverlapping` |  | |  |  |  |  |
+| `OperationSplitIsRequired` |  | |  |  |  |  |
+| `OverlapMinimumTransferQty` |  | |  |  |  |  |
+| `MaximumNumberOfSplits` |  | |  |  |  |  |
+| `ActualNumberOfSplits` |  | |  |  |  |  |
+| `MinProcessingDurnPerSplitUnit` |  | |  |  |  |  |
+| `MinProcessingDurationPerSplit` |  | |  |  |  |  |
+| `LeadTimeReductionStrategy` |  | |  | `cast(afvg.LeadTimeReductionStrategy as pph_rstra preserving type)` |  |  |
+| `OpSchedldReductionLevel` |  | |  |  |  |  |
+| `OpErlstSchedldExecStrtDte` |  | |  | `cast(afvg.OpErlstSchedldExecStrtDte as vdm_fsavd preserving type)` |  |  |
+| `OpErlstSchedldExecStrtTme` |  | |  | `cast(afvg.OpErlstSchedldExecStrtTme as vdm_fsavz preserving type)` |  |  |
+| `OpErlstSchedldProcgStrtDte` |  | |  | `cast(afvg.OpErlstSchedldProcgStrtDte as vdm_fssbd preserving type)` |  |  |
+| `OpErlstSchedldProcgStrtTme` |  | |  | `cast(afvg.OpErlstSchedldProcgStrtTme as vdm_fssbz preserving type)` |  |  |
+| `OpErlstSchedldTrdwnStrtDte` |  | |  | `cast(afvg.OpErlstSchedldTrdwnStrtDte as vdm_fssad preserving type)` |  |  |
+| `OpErlstSchedldTrdwnStrtTme` |  | |  | `cast(afvg.OpErlstSchedldTrdwnStrtTme as vdm_fssaz preserving type)` |  |  |
+| `OpErlstSchedldExecEndDte` |  | |  | `cast(afvg.OpErlstSchedldExecEndDte as vdm_fsedd preserving type)` |  |  |
+| `OpErlstSchedldExecEndTme` |  | |  | `cast(afvg.OpErlstSchedldExecEndTme as vdm_fsedz preserving type)` |  |  |
+| `OpLtstSchedldExecStrtDte` |  | |  | `cast(afvg.OpLtstSchedldExecStrtDte as vdm_ssavd preserving type)` |  |  |
+| `OpLtstSchedldExecStrtTme` |  | |  | `cast(afvg.OpLtstSchedldExecStrtTme as vdm_ssavz preserving type)` |  |  |
+| `OpLtstSchedldProcgStrtDte` |  | |  | `cast(afvg.OpLtstSchedldProcgStrtDte as vdm_sssbd preserving type)` |  |  |
+| `OpLtstSchedldProcgStrtTme` |  | |  | `cast(afvg.OpLtstSchedldProcgStrtTme as vdm_sssbz preserving type)` |  |  |
+| `OpLtstSchedldTrdwnStrtDte` |  | |  | `cast(afvg.OpLtstSchedldTrdwnStrtDte as vdm_sssad preserving type)` |  |  |
+| `OpLtstSchedldTrdwnStrtTme` |  | |  | `cast(afvg.OpLtstSchedldTrdwnStrtTme as vdm_sssaz preserving type)` |  |  |
+| `OpLtstSchedldExecEndDte` |  | |  | `cast(afvg.OpLtstSchedldExecEndDte as vdm_ssedd preserving type)` |  |  |
+| `OpLtstSchedldExecEndTme` |  | |  | `cast(afvg.OpLtstSchedldExecEndTme as vdm_ssedz preserving type)` |  |  |
+| `SchedldFcstdEarliestStartDate` |  | |  | `cast(afvg.SchedldFcstdEarliestStartDate as pph_fpavd preserving type)` |  |  |
+| `SchedldFcstdEarliestStartTime` |  | |  | `cast(afvg.SchedldFcstdEarliestStartTime as pph_fpavz preserving type)` |  |  |
+| `SchedldFcstdEarliestEndDate` |  | |  | `cast(afvg.SchedldFcstdEarliestEndDate as pph_fpedd preserving type)` |  |  |
+| `SchedldFcstdEarliestEndTime` |  | |  | `cast(afvg.SchedldFcstdEarliestEndTime as pph_fpedz preserving type)` |  |  |
+| `LatestSchedldFcstdStartDate` |  | |  | `cast(afvg.LatestSchedldFcstdStartDate as pph_spavd preserving type)` |  |  |
+| `SchedldFcstdLatestStartTime` |  | |  | `cast(afvg.SchedldFcstdLatestStartTime as pph_spavz preserving type)` |  |  |
+| `LatestSchedldFcstdEndDate` |  | |  | `cast(afvg.LatestSchedldFcstdEndDate as pph_spedd preserving type)` |  |  |
+| `SchedldFcstdLatestEndTime` |  | |  | `cast(afvg.SchedldFcstdLatestEndTime as pph_spedz preserving type)` |  |  |
+| `OperationConfirmedStartDate` |  | |  | `cast(afvg.OperationConfirmedStartDate as pph_isavd preserving type)` |  |  |
+| `OperationConfirmedEndDate` |  | |  | `cast(afvg.OperationConfirmedEndDate as pph_ieavd preserving type)` |  |  |
+| `OpActualExecutionStartDate` |  | |  | `cast(afvg.OpActualExecutionStartDate as vdm_isdd preserving type)` |  |  |
+| `OpActualExecutionStartTime` |  | |  | `cast(afvg.OpActualExecutionStartTime as vdm_isdz preserving type)` |  |  |
+| `OpActualSetupEndDate` |  | |  | `cast(afvg.OpActualSetupEndDate as vdm_ierd preserving type)` |  |  |
+| `OpActualSetupEndTime` |  | |  | `cast(afvg.OpActualSetupEndTime as vdm_ierz preserving type)` |  |  |
+| `OpActualProcessingStartDate` |  | |  | `cast(afvg.OpActualProcessingStartDate as vdm_isbd preserving type)` |  |  |
+| `OpActualProcessingStartTime` |  | |  | `cast(afvg.OpActualProcessingStartTime as vdm_isbz preserving type)` |  |  |
+| `OpActualProcessingEndDate` |  | |  | `cast(afvg.OpActualProcessingEndDate as vdm_iebd preserving type)` |  |  |
+| `OpActualProcessingEndTime` |  | |  | `cast(afvg.OpActualProcessingEndTime as vdm_iebz preserving type)` |  |  |
+| `OpActualTeardownStartDate` |  | |  | `cast(afvg.OpActualTeardownStartDate as vdm_isad preserving type)` |  |  |
+| `OpActualTeardownStartTme` |  | |  | `cast(afvg.OpActualTeardownStartTme as vdm_isaz preserving type)` |  |  |
+| `OpActualExecutionEndDate` |  | |  | `cast(afvg.OpActualExecutionEndDate as vdm_iedd preserving type)` |  |  |
+| `OpActualExecutionEndTime` |  | |  | `cast(afvg.OpActualExecutionEndTime as vdm_iedz preserving type)` |  |  |
+| `ActualForecastEndDate` |  | |  | `cast(afvg.ActualForecastEndDate as pph_pedd preserving type)` |  |  |
+| `ActualForecastEndTime` |  | |  | `cast(afvg.ActualForecastEndTime as pph_pedz preserving type)` |  |  |
+| `EarliestScheduledWaitStartDate` |  | |  |  |  |  |
+| `EarliestScheduledWaitStartTime` |  | |  |  |  |  |
+| `EarliestScheduledWaitEndDate` |  | |  |  |  |  |
+| `EarliestScheduledWaitEndTime` |  | |  |  |  |  |
+| `LatestScheduledWaitStartDate` |  | |  |  |  |  |
+| `LatestScheduledWaitStartTime` |  | |  |  |  |  |
+| `LatestScheduledWaitEndDate` |  | |  |  |  |  |
+| `LatestScheduledWaitEndTime` |  | |  |  |  |  |
+| `BreakDurationUnit` |  | |  |  |  |  |
+| `PlannedBreakDuration` |  | |  |  |  |  |
+| `ConfirmedBreakDuration` |  | |  |  |  |  |
+| `OverlapMinimumDurationUnit` |  | |  | `cast(afvg.OverlapMinimumDurationUnit as pph_dzeimu preserving type)` |  |  |
+| `OverlapMinimumDuration` |  | |  |  |  |  |
+| `MaximumWaitDurationUnit` |  | |  |  |  |  |
+| `MaximumWaitDuration` |  | |  |  |  |  |
+| `MinimumWaitDurationUnit` |  | |  |  |  |  |
+| `MinimumWaitDuration` |  | |  |  |  |  |
+| `StandardMoveDurationUnit` |  | |  |  |  |  |
+| `StandardMoveDuration` |  | |  |  |  |  |
+| `StandardQueueDurationUnit` |  | |  |  |  |  |
+| `StandardQueueDuration` |  | |  |  |  |  |
+| `MinimumQueueDurationUnit` |  | |  |  |  |  |
+| `MinimumQueueDuration` |  | |  |  |  |  |
+| `MinimumMoveDurationUnit` |  | |  |  |  |  |
+| `MinimumMoveDuration` |  | |  |  |  |  |
+| `OperationStandardDuration` |  | |  |  |  |  |
+| `OperationStandardDurationUnit` |  | |  |  |  |  |
+| `MinimumDuration` |  | |  | `cast(afvg.MinimumDuration as vdm_daumin preserving type)` |  |  |
+| `MinimumDurationUnit` |  | |  | `cast(afvg.MinimumDurationUnit as vdm_daumine preserving type)` |  |  |
+| `MinimumProcessingDuration` |  | |  |  |  |  |
+| `MinimumProcessingDurationUnit` |  | |  |  |  |  |
+| `ScheduledMoveDuration` |  | |  |  |  |  |
+| `ScheduledMoveDurationUnit` |  | |  |  |  |  |
+| `ScheduledQueueDuration` |  | |  |  |  |  |
+| `ScheduledQueueDurationUnit` |  | |  |  |  |  |
+| `ScheduledWaitDuration` |  | |  |  |  |  |
+| `ScheduledWaitDurationUnit` |  | |  |  |  |  |
+| `OpPlannedSetupDurn` |  | |  |  |  |  |
+| `OpPlannedSetupDurnUnit` |  | |  |  |  |  |
+| `OpPlannedProcessingDurn` |  | |  |  |  |  |
+| `OpPlannedProcessingDurnUnit` |  | |  | `cast(afvg.OpPlannedProcessingDurnUnit as pph_beaze preserving type)` |  |  |
+| `OpPlannedTeardownDurn` |  | |  |  |  |  |
+| `OpPlannedTeardownDurnUnit` |  | |  |  |  |  |
+| `ActualForecastDuration` |  | |  | `cast(afvg.ActualForecastDuration as pph_pdau preserving type)` |  |  |
+| `ActualForecastDurationUnit` |  | |  | `cast(afvg.ActualForecastDurationUnit as pph_pdae preserving type)` |  |  |
+| `ForecastProcessingDuration` |  | |  |  |  |  |
+| `ForecastProcessingDurationUnit` |  | |  |  |  |  |
+| `StartDateOffsetReferenceCode` |  | |  |  |  |  |
+| `StartDateOffsetDurationUnit` |  | |  |  |  |  |
+| `StartDateOffsetDuration` |  | |  |  |  |  |
+| `EndDateOffsetReferenceCode` |  | |  |  |  |  |
+| `EndDateOffsetDurationUnit` |  | |  |  |  |  |
+| `EndDateOffsetDuration` |  | |  |  |  |  |
+| `StandardWorkFormulaParamGroup` |  | |  |  |  |  |
+| `OperationUnit` |  | |  | `cast(afvg.OperationUnit as operationunit preserving type)` |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OperationScrapPercent` |  | |  |  |  |  |
+| `OperationReferenceQuantity` |  | |  |  |  |  |
+| `OpPlannedTotalQuantity` |  | |  |  |  |  |
+| `OpPlannedScrapQuantity` |  | |  |  |  |  |
+| `OpPlannedYieldQuantity` |  | |  | `cast((afvg.OpPlannedTotalQuantity - afvg.OpPlannedScrapQuantity) as vdm_gmeng)` |  |  |
+| `OpTotalConfirmedYieldQty` |  | |  |  |  |  |
+| `OpTotalConfirmedScrapQty` |  | |  |  |  |  |
+| `OperationConfirmedReworkQty` |  | |  |  |  |  |
+| `ProductionUnit` |  | |  | `cast(aufv.ProductionUnit as productionunit preserving type)` |  |  |
+| `OpTotConfdYieldQtyInOrdQtyUnit` |  | |  |  |  |  |
+| `WorkQuantityUnit1` |  | |  | `cast(afvg.OpWorkQuantityUnit1 as vdm_ile01 preserving type)` |  |  |
+| `ConfirmedWorkQuantity1` |  | |  | `cast(afvg.OpConfirmedWorkQuantity1 as vdm_ism01 preserving type)` |  |  |
+| `NoFurtherOpWorkQuantity1IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity1IsExpd as vdm_lek01 preserving type)` |  |  |
+| `WorkQuantityUnit2` |  | |  | `cast(afvg.OpWorkQuantityUnit2 as vdm_ile02 preserving type)` |  |  |
+| `ConfirmedWorkQuantity2` |  | |  | `cast(afvg.OpConfirmedWorkQuantity2 as vdm_ism02 preserving type)` |  |  |
+| `NoFurtherOpWorkQuantity2IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity2IsExpd as vdm_lek02 preserving type)` |  |  |
+| `WorkQuantityUnit3` |  | |  | `cast(afvg.OpWorkQuantityUnit3 as vdm_ile03 preserving type)` |  |  |
+| `ConfirmedWorkQuantity3` |  | |  | `cast(afvg.OpConfirmedWorkQuantity3 as vdm_ism03 preserving type)` |  |  |
+| `NoFurtherOpWorkQuantity3IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity3IsExpd as vdm_lek03 preserving type)` |  |  |
+| `WorkQuantityUnit4` |  | |  | `cast(afvg.OpWorkQuantityUnit4 as vdm_ile04 preserving type)` |  |  |
+| `ConfirmedWorkQuantity4` |  | |  | `cast(afvg.OpConfirmedWorkQuantity4 as vdm_ism04 preserving type)` |  |  |
+| `NoFurtherOpWorkQuantity4IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity4IsExpd as vdm_lek04 preserving type)` |  |  |
+| `WorkQuantityUnit5` |  | |  | `cast(afvg.OpWorkQuantityUnit5 as vdm_ile05 preserving type)` |  |  |
+| `ConfirmedWorkQuantity5` |  | |  | `cast(afvg.OpConfirmedWorkQuantity5 as vdm_ism05 preserving type)` |  |  |
+| `NoFurtherOpWorkQuantity5IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity5IsExpd as vdm_lek05 preserving type)` |  |  |
+| `WorkQuantityUnit6` |  | |  | `cast(afvg.OpWorkQuantityUnit6 as vdm_ile06 preserving type)` |  |  |
+| `ConfirmedWorkQuantity6` |  | |  | `cast(afvg.OpConfirmedWorkQuantity6 as vdm_ism06 preserving type)` |  |  |
+| `NoFurtherOpWorkQuantity6IsExpd` |  | |  | `cast(afvg.NoFurtherOpWorkQuantity6IsExpd as vdm_lek06 preserving type)` |  |  |
+| `WorkCenterStandardWorkQtyUnit1` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit1 as pph_vge01 preserving type)` |  |  |
+| `WorkCenterStandardWorkQty1` |  | |  | `cast(afvg.WorkCenterStandardWorkQty1 as vdm_vgw01 preserving type)` |  |  |
+| `CostCtrActivityType1` |  | |  | `cast(afvg.CostCtrActivityType1 as vdm_lar01 preserving type)` |  |  |
+| `WorkCenterStandardWorkQtyUnit2` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit2 as pph_vge02 preserving type)` |  |  |
+| `WorkCenterStandardWorkQty2` |  | |  | `cast(afvg.WorkCenterStandardWorkQty2 as vdm_vgw02 preserving type)` |  |  |
+| `CostCtrActivityType2` |  | |  | `cast(afvg.CostCtrActivityType2 as vdm_lar02 preserving type)` |  |  |
+| `WorkCenterStandardWorkQtyUnit3` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit3 as pph_vge03 preserving type)` |  |  |
+| `WorkCenterStandardWorkQty3` |  | |  | `cast(afvg.WorkCenterStandardWorkQty3 as vdm_vgw03 preserving type)` |  |  |
+| `CostCtrActivityType3` |  | |  | `cast(afvg.CostCtrActivityType3 as vdm_lar03 preserving type)` |  |  |
+| `WorkCenterStandardWorkQtyUnit4` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit4 as pph_vge04 preserving type)` |  |  |
+| `WorkCenterStandardWorkQty4` |  | |  | `cast(afvg.WorkCenterStandardWorkQty4 as vdm_vgw04 preserving type)` |  |  |
+| `CostCtrActivityType4` |  | |  | `cast(afvg.CostCtrActivityType4 as vdm_lar04 preserving type)` |  |  |
+| `WorkCenterStandardWorkQtyUnit5` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit5 as pph_vge05 preserving type)` |  |  |
+| `WorkCenterStandardWorkQty5` |  | |  | `cast(afvg.WorkCenterStandardWorkQty5 as vdm_vgw05 preserving type)` |  |  |
+| `CostCtrActivityType5` |  | |  | `cast(afvg.CostCtrActivityType5 as vdm_lar05 preserving type)` |  |  |
+| `WorkCenterStandardWorkQtyUnit6` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit6 as pph_vge06 preserving type)` |  |  |
+| `WorkCenterStandardWorkQty6` |  | |  | `cast(afvg.WorkCenterStandardWorkQty6 as vdm_vgw06 preserving type)` |  |  |
+| `CostCtrActivityType6` |  | |  | `cast(afvg.CostCtrActivityType6 as vdm_lar06 preserving type)` |  |  |
+| `ForecastWorkQuantity1` |  | |  | `cast(afvg.ForecastWorkQuantity1 as vdm_ofm01 preserving type)` |  |  |
+| `ForecastWorkQuantity2` |  | |  | `cast(afvg.ForecastWorkQuantity2 as vdm_ofm02 preserving type)` |  |  |
+| `ForecastWorkQuantity3` |  | |  | `cast(afvg.ForecastWorkQuantity3 as vdm_ofm03 preserving type)` |  |  |
+| `ForecastWorkQuantity4` |  | |  | `cast(afvg.ForecastWorkQuantity4 as vdm_ofm04 preserving type)` |  |  |
+| `ForecastWorkQuantity5` |  | |  | `cast(afvg.ForecastWorkQuantity5 as vdm_ofm05 preserving type)` |  |  |
+| `ForecastWorkQuantity6` |  | |  | `cast(afvg.ForecastWorkQuantity6 as vdm_ofm06 preserving type)` |  |  |
+| `StandardWorkQtyDetnType` |  | |  |  |  |  |
+| `StandardWorkQtyDetnYear` |  | |  |  |  |  |
+| `StandardWorkQuantityReference` |  | |  |  |  |  |
+| `StandardWorkQuantityCalcBasis` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `BusinessProcessEntryUnit` |  | |  |  |  |  |
+| `BusinessProcessConfirmedQty` |  | |  |  |  |  |
+| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |  |  |
+| `BusinessProcRemainingQtyUnit` |  | |  |  |  |  |
+| `BusinessProcessRemainingQty` |  | |  | `cast(afvg.BusinessProcessRemainingQty as pph_oprz1 preserving type)` |  |  |
+| `_ProductionOrderInternal` | | ✓ | | | | |
+| `_ProductionOrderType` | | ✓ | | | | |
+| `_OperationStandardTextCode` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ProductionUnit` | | ✓ | | | | |
+| `_OperationUnit` | | ✓ | | | | |
+| `_ProductionSupervisor` | | ✓ | | | | |
+| `_MRPController` | | ✓ | | | | |
+| `_WorkCenterType` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_OperationControlProfile` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsVariant` | | ✓ | | | | |
+| `_BillOfOperationsSequence` | | ✓ | | | | |
+| `_BOOOperationInternalID` | | ✓ | | | | |
+| `_FactoryCalendar` | | ✓ | | | | |
+| `_CapacityRequirement` | | ✓ | | | | |
+| `_CapacityRequirementItem` | | ✓ | | | | |
+| `_OperationConfirmation` | | ✓ | | | | |
+| `_ChangeNumber` | | ✓ | | | | |
+| `_PurchaseContract` | | ✓ | | | | |
+| `_PurchaseContractItem` | | ✓ | | | | |
+| `_SchedulingAgreement` | | ✓ | | | | |
+| `_SchedulingAgreementItem` | | ✓ | | | | |
+| `_PurchaseRequisition` | | ✓ | | | | |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingInfoRecord` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_StatusObject` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_RequestingCostCenter` | | ✓ | | | | |
+| `_CostElement` | | ✓ | | | | |
+| `_CostingVariant` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ControllingObjectClass` | | ✓ | | | | |
+| `_ControllingObjectCurrency` | | ✓ | | | | |
+| `_OpExternalProcessingCurrency` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_BusinessProcess` | | ✓ | | | | |
+| `_BusinessProcessEntryUnit` | | ✓ | | | | |
+| `_ConfirmedWorkQuantityUnit1` | | ✓ | | | | |
+| `_ConfirmedWorkQuantityUnit2` | | ✓ | | | | |
+| `_ConfirmedWorkQuantityUnit3` | | ✓ | | | | |
+| `_ConfirmedWorkQuantityUnit4` | | ✓ | | | | |
+| `_ConfirmedWorkQuantityUnit5` | | ✓ | | | | |
+| `_ConfirmedWorkQuantityUnit6` | | ✓ | | | | |
+| `_StdWorkQuantityUnit1` | | ✓ | | | | |
+| `_StdWorkQuantityUnit2` | | ✓ | | | | |
+| `_StdWorkQuantityUnit3` | | ✓ | | | | |
+| `_StdWorkQuantityUnit4` | | ✓ | | | | |
+| `_StdWorkQuantityUnit5` | | ✓ | | | | |
+| `_StdWorkQuantityUnit6` | | ✓ | | | | |
+| `_OperationSetupGroupCategory` | | ✓ | | | | |
+| `_OperationSetupGroup` | | ✓ | | | | |
+| `_OperationSetupType` | | ✓ | | | | |
+| `_LeadTimeReductionStrategy` | | ✓ | | | | |
+| `_StartDateOffsetReferenceCode` | | ✓ | | | | |
+| `_EndDateOffsetReferenceCode` | | ✓ | | | | |
+| `_StandardWorkFmlaParamGroup` | | ✓ | | | | |
+| `_LongTextLanguage` | | ✓ | | | | |
+| `_ProductionOrderHeader` | | ✓ | | | | |
+| `_PlantText` | | ✓ | | | | |
+| `_ProductionOrderText` | | ✓ | | | | |
+| `_WorkCenterText` | | ✓ | | | | |
+| `_SupplierText` | | ✓ | | | | |
+| `_StatusObjectText` | | ✓ | | | | |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_CompanyCodeText` | | ✓ | | | | |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_FunctionalAreaText` | | ✓ | | | | |
+| `_ProductionOrderSequence` | | ✓ | | | | |
+| `_ProductionOrderComponent` | | ✓ | | | | |
+| `_ProductionOrderPRT` | | ✓ | | | | |
+| `_ProductionOrderTriggerPoint` | | ✓ | | | | |
+| `_ProdnOrderOperationCapacity` | | ✓ | | | | |
+| `_LongText` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspAgrmtBusinessPartnerUUID` | ✓ | |  |  |
-| `TransportationAgreementUUID` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `I_FreightAgreementTP` |  | |  | `FreightAgreementParty._FreightAgreement : redirected to parent I_FreightAgreementTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspAgrmtBusinessPartnerUUID` | ✓ | |  |  |  |  |
+| `TransportationAgreementUUID` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `I_FreightAgreementTP` |  | |  | `FreightAgreementParty._FreightAgreement : redirected to parent I_FreightAgreementTP` |  |  |
 
 ## Source Code
 

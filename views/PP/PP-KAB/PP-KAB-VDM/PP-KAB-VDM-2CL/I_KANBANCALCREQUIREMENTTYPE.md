@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `matnr` |
-| `Plant` | ✓ | |  | `werks` |
-| `StorageLocation` | ✓ | |  | `lgort` |
-| `PlndIndepRqmtsAreConsdrd` |  | |  | `flg_indreq` |
-| `CustRqmtsAreConsdrd` |  | |  | `flg_cusreq` |
-| `StkTransfRqmtsAreConsdrd` |  | |  | `flg_strreq` |
-| `NonAssgdDepdntRqmtsAreConsdrd` |  | |  | `flg_depreq` |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `StorageLocation` | ✓ | |  | `lgort` |  |  |
+| `PlndIndepRqmtsAreConsdrd` |  | |  | `flg_indreq` |  |  |
+| `CustRqmtsAreConsdrd` |  | |  | `flg_cusreq` |  |  |
+| `StkTransfRqmtsAreConsdrd` |  | |  | `flg_strreq` |  |  |
+| `NonAssgdDepdntRqmtsAreConsdrd` |  | |  | `flg_depreq` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
 
 ## Associations
 

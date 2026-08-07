@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GoodsMovementRefDocType` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 2 ) as abap.char( 2 ) ) as kzbew )` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `GoodsMovementRefDocTypeName` |  | |  | `cast(ddtext as vdm_lkngseq_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_GoodsMovementRefDocType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GoodsMovementRefDocType` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 2 ) as abap.char( 2 ) ) as kzbew )` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `GoodsMovementRefDocTypeName` |  | |  | `cast(ddtext as vdm_lkngseq_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_GoodsMovementRefDocType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

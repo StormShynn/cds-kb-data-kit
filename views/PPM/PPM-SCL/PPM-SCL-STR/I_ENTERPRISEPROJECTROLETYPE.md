@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectRoleType` | ✓ | |  | `participant_role` |
-| `ProjectRoleCategory` |  | |  | `role_category` |
-| `PartnerFunction` |  | |  | `cast ( dpr_part_role.partner_function as /s4ppm/tv_partner_function preserving type )` |
-| `_ProjectRoleTypeCategory` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectRoleType` | ✓ | |  | `participant_role` |  |  |
+| `ProjectRoleCategory` |  | |  | `role_category` |  |  |
+| `PartnerFunction` |  | |  | `cast ( dpr_part_role.partner_function as /s4ppm/tv_partner_function preserving type )` |  |  |
+| `_ProjectRoleTypeCategory` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

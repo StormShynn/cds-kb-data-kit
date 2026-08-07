@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | | `_ByTimeVersion` | `ConsolidationChartOfAccounts` |
-| `CnsldtnFinancialStatementItem` |  | |  | `}] key _ByTimeVersion.CnsldtnFinancialStatementItem` |
-| `ConsolidationVersion` | ✓ | | `_ByTimeVersion` | `ConsolidationVersion` |
-| `FromFiscalYearPeriod` | ✓ | | `_ByTimeVersion` | `FromFiscalYearPeriod` |
-| `ToFiscalYearPeriod` |  | | `_ByTimeVersion` | `ToFiscalYearPeriod` |
-| `CnsldtnFSItemRole` |  | | `_ByTimeVersion` | `CnsldtnFSItemRole` |
-| `CnsldtnFSItemDataCollection` |  | | `_ByTimeVersion` | `CnsldtnFSItemDataCollection` |
-| `CnsldtnFSItemCrcyTranslation` |  | | `_ByTimeVersion` | `CnsldtnFSItemCrcyTranslation` |
-| `CnsldtnFSItemElimination` |  | | `_ByTimeVersion` | `CnsldtnFSItemElimination` |
-| `CnsldtnFSItemCashFlow` |  | | `_ByTimeVersion` | `CnsldtnFSItemCashFlow` |
-| `CnsldtnFSItemScope` |  | | `_ByTimeVersion` | `CnsldtnFSItemScope` |
-| `CnsldtnFSItemCustomerSpecific` |  | | `_ByTimeVersion` | `CnsldtnFSItemCustomerSpecific` |
-| `CnsldtnEliminationTargetFSItem` |  | |  | `}] _ByTimeVersion.CnsldtnEliminationTargetFSItem` |
-| `CnsldtnNCITargetFSItem` |  | |  | `}] _ByTimeVersion.CnsldtnNCITargetFSItem` |
-| `CnsldtnPlanningTargetFSItem` |  | |  | `}] _ByTimeVersion.CnsldtnPlanningTargetFSItem` |
-| `CnsldtnOffsettingTargetFSItem` |  | |  | `}] _ByTimeVersion.CnsldtnOffsettingTargetFSItem` |
-| `_CnsldtnElimTargetFSItem` | | ✓ | | |
-| `_CnsldtnNCITargetFSItem` | | ✓ | | |
-| `_CnsldtnPlanningTargetFSItem` | | ✓ | | |
-| `_CnsldtnOffsettingTargetFSItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_ByTimeVersion` | `ConsolidationChartOfAccounts` |  |  |
+| `CnsldtnFinancialStatementItem` | ✓ | | `_ByTimeVersion` | `CnsldtnFinancialStatementItem` |  |  |
+| `ConsolidationVersion` | ✓ | | `_ByTimeVersion` | `ConsolidationVersion` |  |  |
+| `FromFiscalYearPeriod` | ✓ | | `_ByTimeVersion` | `FromFiscalYearPeriod` |  |  |
+| `ToFiscalYearPeriod` |  | | `_ByTimeVersion` | `ToFiscalYearPeriod` |  |  |
+| `CnsldtnFSItemRole` |  | | `_ByTimeVersion` | `CnsldtnFSItemRole` |  |  |
+| `CnsldtnFSItemDataCollection` |  | | `_ByTimeVersion` | `CnsldtnFSItemDataCollection` |  |  |
+| `CnsldtnFSItemCrcyTranslation` |  | | `_ByTimeVersion` | `CnsldtnFSItemCrcyTranslation` |  |  |
+| `CnsldtnFSItemElimination` |  | | `_ByTimeVersion` | `CnsldtnFSItemElimination` |  |  |
+| `CnsldtnFSItemCashFlow` |  | | `_ByTimeVersion` | `CnsldtnFSItemCashFlow` |  |  |
+| `CnsldtnFSItemScope` |  | | `_ByTimeVersion` | `CnsldtnFSItemScope` |  |  |
+| `CnsldtnFSItemCustomerSpecific` |  | | `_ByTimeVersion` | `CnsldtnFSItemCustomerSpecific` |  |  |
+| `CnsldtnEliminationTargetFSItem` |  | | `_ByTimeVersion` | `CnsldtnEliminationTargetFSItem` |  |  |
+| `CnsldtnNCITargetFSItem` |  | | `_ByTimeVersion` | `CnsldtnNCITargetFSItem` |  |  |
+| `CnsldtnPlanningTargetFSItem` |  | | `_ByTimeVersion` | `CnsldtnPlanningTargetFSItem` |  |  |
+| `CnsldtnOffsettingTargetFSItem` |  | | `_ByTimeVersion` | `CnsldtnOffsettingTargetFSItem` |  |  |
+| `_CnsldtnElimTargetFSItem` | | ✓ | | | | |
+| `_CnsldtnNCITargetFSItem` | | ✓ | | | | |
+| `_CnsldtnPlanningTargetFSItem` | | ✓ | | | | |
+| `_CnsldtnOffsettingTargetFSItem` | | ✓ | | | | |
 
 ## Associations
 

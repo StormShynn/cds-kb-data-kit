@@ -32,23 +32,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankAccountInternalID` | ✓ | |  |  |
-| `BankAccountRevision` | ✓ | |  |  |
-| `BankCountry` |  | |  |  |
-| `Bank` |  | |  |  |
-| `BankAccountNumber` |  | |  |  |
-| `BankAccountCurrency` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `Segment` |  | |  |  |
-| `BankAccountType` |  | |  |  |
-| `LastChangeDate` |  | |  | `case when LastChangeDate is not null and BankAccountRevision <> '0000' then LastChangeDate else CreationDate end` |
-| `LastChangedByUser` |  | |  | `case when LastChangedByUser is not null and BankAccountRevision <> '0001' and BankAccountRevision <> '0000' then LastChangedByUser else CreatedByUser end` |
-| `BankAccountRevActivatedByUser` |  | |  |  |
-| `BankAccountURL` |  | |  | `cast( ' ' as fclm_bam_acc_url)` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountInternalID` | ✓ | |  |  |  |  |
+| `BankAccountRevision` | ✓ | |  |  |  |  |
+| `BankCountry` |  | |  |  |  |  |
+| `Bank` |  | |  |  |  |  |
+| `BankAccountNumber` |  | |  |  |  |  |
+| `BankAccountCurrency` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `BankAccountType` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  | `case when LastChangeDate is not null and BankAccountRevision <> '0000' then LastChangeDate else CreationDate end` |  |  |
+| `LastChangedByUser` |  | |  | `case when LastChangedByUser is not null and BankAccountRevision <> '0001' and BankAccountRevision <> '0000' then LastChangedByUser else CreatedByUser end` |  |  |
+| `BankAccountRevActivatedByUser` |  | |  |  |  |  |
+| `BankAccountURL` |  | |  | `cast( ' ' as fclm_bam_acc_url)` |  |  |
 
 ## Source Code
 

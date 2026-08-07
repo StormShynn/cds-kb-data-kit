@@ -31,456 +31,456 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SourceLedger` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `FinancialPlanningReqTransSqnc` | ✓ | |  |  |
-| `FinancialPlanningDataPacket` | ✓ | |  |  |
-| `ActualPlanJournalEntryItem` | ✓ | |  |  |
-| `LedgerGLLineItem` |  | |  |  |
-| `FinancialPlanningEntryItem` |  | |  |  |
-| `LedgerFiscalYear` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `ActualPlanCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `Project` |  | |  |  |
-| `ProjectInternalID` |  | |  |  |
-| `ProjectExternalID` |  | |  | `cast( ActualPlanJournalEntryItem._ProjectBasicData.ProjectExternalID as fis_projectext_no_conv )` |
-| `PartnerProjectInternalID` |  | |  |  |
-| `PartnerProjectExternalID` |  | |  | `cast( ActualPlanJournalEntryItem._PartnerProjectBasicData.ProjectExternalID as fis_part_projectext_no_conv )` |
-| `WBSElement` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  | `cast( ActualPlanJournalEntryItem._WBSElementBasicData.WBSElementExternalID as fis_wbsext_no_conv )` |
-| `PartnerWBSElementInternalID` |  | |  |  |
-| `PartnerWBSElementExternalID` |  | |  | `cast( ActualPlanJournalEntryItem._PartnerWBSElementBasicData.WBSElementExternalID as fis_partner_wbsext_no_conv )` |
-| `FunctionalArea` |  | |  |  |
-| `Segment` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `CostAnalysisResource` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderCategory` |  | |  |  |
-| `WorkPackage` |  | |  |  |
-| `WorkItem` |  | |  |  |
-| `PartnerAccountAssignmentType` |  | |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |
-| `PartnerCompanyCode` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `PartnerProfitCenter` |  | |  |  |
-| `PartnerCostCenter` |  | |  |  |
-| `PartnerProject` |  | |  |  |
-| `PartnerWBSElement` |  | |  |  |
-| `PartnerFunctionalArea` |  | |  |  |
-| `PartnerSegment` |  | |  |  |
-| `PartnerCostCtrActivityType` |  | |  |  |
-| `PartnerOrder` |  | |  |  |
-| `PartnerOrder_2` |  | |  |  |
-| `PartnerOrderCategory` |  | |  |  |
-| `PartnerSalesDocument` |  | |  |  |
-| `PartnerProjectNetwork` |  | |  |  |
-| `PartnerProjectNetworkActivity` |  | |  |  |
-| `PartnerBusinessProcess` |  | |  |  |
-| `PartnerCostObject` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `OriginProfitCenter` |  | |  |  |
-| `OriginCostCenter` |  | |  |  |
-| `OriginCostCtrActivityType` |  | |  |  |
-| `ReferenceDocumentType` |  | |  |  |
-| `ReferenceDocumentContext` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `ReferenceDocumentItem` |  | |  |  |
-| `BusinessTransactionCategory` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `FinancialTransactionType` |  | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `FinancialAccountType` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `AccountingDocCreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `PlanningCategory` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `ControllingDebitCreditCode` |  | |  |  |
-| `AccountAssignmentType` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `BillableControl` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `ControllingObject` |  | |  |  |
-| `CostOriginGroup` |  | |  |  |
-| `ControllingObjectClass` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `BusinessSolutionOrderItem` |  | |  |  |
-| `ProviderContract` |  | |  |  |
-| `ProviderContractItem` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `AccountAssignmentNumber` |  | |  |  |
-| `OffsettingAccount` |  | |  |  |
-| `OffsettingAccountType` |  | |  |  |
-| `OffsettingChartOfAccounts` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SalesDocument` |  | |  |  |
-| `SalesDocumentItem` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocument` |  | |  |  |
-| `ServiceDocumentItem` |  | |  |  |
-| `ServiceContractType` |  | |  |  |
-| `ServiceContract` |  | |  |  |
-| `ServiceContractItem` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `BillingDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SoldMaterial` |  | |  |  |
-| `SoldProduct` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `SoldProductGroup` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CustomerSupplierCountry` |  | |  |  |
-| `CustomerSupplierIndustry` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `CustomerSupplierCorporateGroup` |  | |  |  |
-| `IsStatisticalOrder` |  | |  |  |
-| `IsStatisticalCostCenter` |  | |  |  |
-| `IsStatisticalSalesDocument` |  | |  |  |
-| `WBSIsStatisticalWBSElement` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `OrderOperation` |  | |  |  |
-| `OrderItem` |  | |  |  |
-| `PartnerOrderItem` |  | |  |  |
-| `OrderSuboperation` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `MaintenanceOrderPlanningCode` |  | |  |  |
-| `MaintPriorityType` |  | |  |  |
-| `MaintPriority` |  | |  |  |
-| `SuperiorOrder` |  | |  |  |
-| `SourceReferenceDocumentType` |  | |  |  |
-| `SourceLogicalSystem` |  | |  |  |
-| `SourceReferenceDocumentCntxt` |  | |  |  |
-| `SourceReferenceDocument` |  | |  |  |
-| `SourceReferenceDocumentItem` |  | |  |  |
-| `SourceReferenceDocSubitem` |  | |  |  |
-| `IsCommitment` |  | |  |  |
-| `CashLedgerCompanyCode` |  | |  |  |
-| `CashLedgerAccount` |  | |  |  |
-| `FinancialManagementArea` |  | |  |  |
-| `FundsCenter` |  | |  |  |
-| `FundedProgram` |  | |  |  |
-| `Fund` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `BudgetPeriod` |  | |  |  |
-| `PartnerFund` |  | |  |  |
-| `PartnerGrant` |  | |  |  |
-| `PartnerBudgetPeriod` |  | |  |  |
-| `PubSecBudgetAccount` |  | |  |  |
-| `PubSecBudgetAccountCoCode` |  | |  |  |
-| `PubSecBudgetCnsmpnDate` |  | |  |  |
-| `PubSecBudgetCnsmpnFsclPeriod` |  | |  |  |
-| `PubSecBudgetCnsmpnFsclYear` |  | |  |  |
-| `PubSecBudgetIsRelevant` |  | |  |  |
-| `PubSecBudgetCnsmpnType` |  | |  |  |
-| `PubSecBudgetCnsmpnAmtType` |  | |  |  |
-| `SponsoredProgram` |  | |  |  |
-| `SponsoredClass` |  | |  |  |
-| `GteeMBudgetValidityNumber` |  | |  |  |
-| `BudgetProcess` |  | |  |  |
-| `BudgetingType` |  | |  |  |
-| `BudgetDocWorkFlowStatus` |  | |  |  |
-| `SubLedgerAcctLineItemType` |  | |  |  |
-| `AssetDepreciationArea` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `AssetAcctTransClassfctn` |  | |  |  |
-| `AssetClass` |  | |  |  |
-| `JointVenture` |  | |  |  |
-| `JointVentureEquityGroup` |  | |  |  |
-| `JointVentureCostRecoveryCode` |  | |  |  |
-| `JointVentureProductionDate` |  | |  |  |
-| `JointVentureAccountingActivity` |  | |  |  |
-| `AccrualObjectType` |  | |  |  |
-| `AccrualObjectLogicalSystem` |  | |  |  |
-| `AccrualObject` |  | |  |  |
-| `AccrualSubobject` |  | |  |  |
-| `AccrualItemType` |  | |  |  |
-| `AccrualReferenceObject` |  | |  |  |
-| `AccrualValueDate` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `ReservationItem` |  | |  |  |
-| `ReservationType` |  | |  |  |
-| `MMServicePackage` |  | |  |  |
-| `MMServicePackageLine` |  | |  |  |
-| `REBusinessEntity` |  | |  |  |
-| `RealEstateBuilding` |  | |  |  |
-| `RealEstateProperty` |  | |  |  |
-| `RERentalObject` |  | |  |  |
-| `RealEstateContract` |  | |  |  |
-| `REServiceChargeKey` |  | |  |  |
-| `RESettlementUnitID` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `GlobalCurrency` |  | |  |  |
-| `FunctionalCurrency` |  | |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |
-| `FreeDefinedCurrency2` |  | |  |  |
-| `FreeDefinedCurrency3` |  | |  |  |
-| `FreeDefinedCurrency4` |  | |  |  |
-| `FreeDefinedCurrency5` |  | |  |  |
-| `FreeDefinedCurrency6` |  | |  |  |
-| `FreeDefinedCurrency7` |  | |  |  |
-| `FreeDefinedCurrency8` |  | |  |  |
-| `ControllingObjectCurrency` |  | |  |  |
-| `CostSourceUnit` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  | `} ActualPlanJournalEntryItem.AmountInTransactionCurrency` |
-| `AmountInCompanyCodeCurrency` |  | |  | `} ActualPlanJournalEntryItem.AmountInCompanyCodeCurrency` |
-| `AmountInGlobalCurrency` |  | |  | `} ActualPlanJournalEntryItem.AmountInGlobalCurrency` |
-| `AmountInFunctionalCurrency` |  | |  | `} ActualPlanJournalEntryItem.AmountInFunctionalCurrency` |
-| `AmountInFreeDefinedCurrency1` |  | |  | `} ActualPlanJournalEntryItem.AmountInFreeDefinedCurrency1` |
-| `AmountInFreeDefinedCurrency2` |  | |  | `} ActualPlanJournalEntryItem.AmountInFreeDefinedCurrency2` |
-| `AmountInFreeDefinedCurrency3` |  | |  | `} ActualPlanJournalEntryItem.AmountInFreeDefinedCurrency3` |
-| `AmountInFreeDefinedCurrency4` |  | |  | `} ActualPlanJournalEntryItem.AmountInFreeDefinedCurrency4` |
-| `AmountInFreeDefinedCurrency5` |  | |  | `} ActualPlanJournalEntryItem.AmountInFreeDefinedCurrency5` |
-| `AmountInFreeDefinedCurrency6` |  | |  | `} ActualPlanJournalEntryItem.AmountInFreeDefinedCurrency6` |
-| `AmountInFreeDefinedCurrency7` |  | |  | `} ActualPlanJournalEntryItem.AmountInFreeDefinedCurrency7` |
-| `AmountInFreeDefinedCurrency8` |  | |  | `} ActualPlanJournalEntryItem.AmountInFreeDefinedCurrency8` |
-| `AmountInObjectCurrency` |  | |  | `} ActualPlanJournalEntryItem.AmountInObjectCurrency` |
-| `FixedAmountInGlobalCrcy` |  | |  | `} ActualPlanJournalEntryItem.FixedAmountInGlobalCrcy` |
-| `FixedAmountInCoCodeCrcy` |  | |  | `} ActualPlanJournalEntryItem.FixedAmountInCoCodeCrcy` |
-| `FixedAmountInTransCrcy` |  | |  | `} ActualPlanJournalEntryItem.FixedAmountInTransCrcy` |
-| `ValuationQuantity` |  | |  | `} ActualPlanJournalEntryItem.ValuationQuantity` |
-| `ValuationFixedQuantity` |  | |  | `} ActualPlanJournalEntryItem.ValuationFixedQuantity` |
-| `FixedQuantity` |  | |  | `} ActualPlanJournalEntryItem.FixedQuantity` |
-| `BaseUnit` |  | |  |  |
-| `Quantity` |  | |  | `} ActualPlanJournalEntryItem.Quantity` |
-| `ReferenceQuantityUnit` |  | |  |  |
-| `ReferenceQuantity` |  | |  | `} ActualPlanJournalEntryItem.ReferenceQuantity` |
-| `ActualAmountInTransactionCrcy` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInTransactionCrcy` |
-| `ActualAmountInCompanyCodeCrcy` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInCompanyCodeCrcy` |
-| `ActualAmountInGlobalCurrency` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInGlobalCurrency` |
-| `ActualAmountInFreeDfndCrcy1` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy1` |
-| `ActualAmountInFreeDfndCrcy2` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy2` |
-| `ActualAmountInFreeDfndCrcy3` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy3` |
-| `ActualAmountInFreeDfndCrcy4` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy4` |
-| `ActualAmountInFreeDfndCrcy5` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy5` |
-| `ActualAmountInFreeDfndCrcy6` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy6` |
-| `ActualAmountInFreeDfndCrcy7` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy7` |
-| `ActualAmountInFreeDfndCrcy8` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy8` |
-| `ActualAmountInObjectCurrency` |  | |  | `} ActualPlanJournalEntryItem.ActualAmountInObjectCurrency` |
-| `ActualValuationQuantity` |  | |  | `} ActualPlanJournalEntryItem.ActualValuationQuantity` |
-| `ActualReferenceQuantity` |  | |  | `} ActualPlanJournalEntryItem.ActualReferenceQuantity` |
-| `ActualQuantityInBaseUnit` |  | |  | `} ActualPlanJournalEntryItem.ActualQuantityInBaseUnit` |
-| `PlanAmountInTransactionCrcy` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInTransactionCrcy` |
-| `PlanAmountInCompanyCodeCrcy` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInCompanyCodeCrcy` |
-| `PlanAmountInGlobalCurrency` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInGlobalCurrency` |
-| `PlanAmountInFreeDefinedCrcy1` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy1` |
-| `PlanAmountInFreeDefinedCrcy2` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy2` |
-| `PlanAmountInFreeDefinedCrcy3` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy3` |
-| `PlanAmountInFreeDefinedCrcy4` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy4` |
-| `PlanAmountInFreeDefinedCrcy5` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy5` |
-| `PlanAmountInFreeDefinedCrcy6` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy6` |
-| `PlanAmountInFreeDefinedCrcy7` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy7` |
-| `PlanAmountInFreeDefinedCrcy8` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy8` |
-| `PlanAmountInObjectCurrency` |  | |  | `} ActualPlanJournalEntryItem.PlanAmountInObjectCurrency` |
-| `PlanValuationQuantity` |  | |  | `} ActualPlanJournalEntryItem.PlanValuationQuantity` |
-| `PlanReferenceQuantity` |  | |  | `} ActualPlanJournalEntryItem.PlanReferenceQuantity` |
-| `PlanPriceInGlobalCurrency` |  | |  | `} ActualPlanJournalEntryItem.PlanPriceInGlobalCurrency` |
-| `PlanPriceInCompanyCodeCurrency` |  | |  | `} ActualPlanJournalEntryItem.PlanPriceInCompanyCodeCurrency` |
-| `PlanPriceInTransactionCurrency` |  | |  | `} ActualPlanJournalEntryItem.PlanPriceInTransactionCurrency` |
-| `ActlPlnDiffAmtInTransCrcy` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInTransactionCrcy - ActualPlanJournalEntryItem.PlanAmountInTransactionCrcy as fis_actl_pln_diff_wsl)` |
-| `ActlPlnDiffAmtInCoCodeCrcy` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInCompanyCodeCrcy - ActualPlanJournalEntryItem.PlanAmountInCompanyCodeCrcy as fis_actl_pln_diff_hsl)` |
-| `ActlPlnDiffAmtInGlobalCrcy` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInGlobalCurrency - ActualPlanJournalEntryItem.PlanAmountInGlobalCurrency as fis_actl_pln_diff_ksl)` |
-| `ActlPlnDiffAmtInFreeDfndCrcy1` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy1 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy1 as fis_actl_pln_diff_osl)` |
-| `ActlPlnDiffAmtInFreeDfndCrcy2` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy2 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy2 as fis_actl_pln_diff_vsl)` |
-| `ActlPlnDiffAmtInFreeDfndCrcy3` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy3 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy3 as fis_actl_pln_diff_bsl)` |
-| `ActlPlnDiffAmtInFreeDfndCrcy4` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy4 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy4 as fis_actl_pln_diff_csl)` |
-| `ActlPlnDiffAmtInFreeDfndCrcy5` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy5 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy5 as fis_actl_pln_diff_dsl)` |
-| `ActlPlnDiffAmtInFreeDfndCrcy6` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy6 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy6 as fis_actl_pln_diff_esl)` |
-| `ActlPlnDiffAmtInFreeDfndCrcy7` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy7 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy7 as fis_actl_pln_diff_fsl)` |
-| `ActlPlnDiffAmtInFreeDfndCrcy8` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy8 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy8 as fis_actl_pln_diff_gsl)` |
-| `ActlPlnDiffAmtInObjectCrcy` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualAmountInObjectCurrency - ActualPlanJournalEntryItem.PlanAmountInObjectCurrency as fis_actl_pln_diff_co_osl)` |
-| `ActlPanDiffValuationQuantity` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualValuationQuantity - ActualPlanJournalEntryItem.PlanValuationQuantity as fis_val_quan_actl_plan_diff)` |
-| `ActlPlanDiffReferenceQuantity` |  | |  | `} cast(ActualPlanJournalEntryItem.ActualValuationQuantity - ActualPlanJournalEntryItem.PlanValuationQuantity as fis_ref_quan_actl_plan_diff)` |
-| `GLAccountAuthorizationGroup` |  | |  |  |
-| `SupplierBasicAuthorizationGrp` |  | |  |  |
-| `CustomerBasicAuthorizationGrp` |  | |  |  |
-| `AcctgDocTypeAuthorizationGroup` |  | |  |  |
-| `OrderType` |  | |  |  |
-| `SalesOrderType` |  | |  |  |
-| `_SourceLedger` | | ✓ | | |
-| `_JournalEntry` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_LedgerFiscalYear` | | ✓ | | |
-| `_FiscalPeriod` | | ✓ | | |
-| `_FiscalYearPeriod` | | ✓ | | |
-| `_LedgerFiscalYearForVariant` | | ✓ | | |
-| `_FiscalPeriodForVariant` | | ✓ | | |
-| `_FiscalYearPeriodForVariant` | | ✓ | | |
-| `_CalendarDate` | | ✓ | | |
-| `_FiscalCalendarDate` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_CurrentProfitCenter` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CurrentCostCenter` | | ✓ | | |
-| `_Project` | | ✓ | | |
-| `_ProjectExternalID` | | ✓ | | |
-| `_ProjectExternalIDText` | | ✓ | | |
-| `_PartnerProjectExternalID` | | ✓ | | |
-| `_PartnerProjctExtrnalIDText` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_WBSElementExternalID` | | ✓ | | |
-| `_PartnerWBSElementExternalID` | | ✓ | | |
-| `_PartnerWBSElemntExtrnalIDText` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_CostCtrActivityType` | | ✓ | | |
-| `_CostAnalysisResource` | | ✓ | | |
-| `_InternalOrder` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_WorkPackageWorkItem` | | ✓ | | |
-| `_WorkPackage` | | ✓ | | |
-| `_PartnerCompanyCode` | | ✓ | | |
-| `_PartnerBusinessArea` | | ✓ | | |
-| `_PartnerProfitCenter` | | ✓ | | |
-| `_PartnerCostCenter` | | ✓ | | |
-| `_PartnerProject` | | ✓ | | |
-| `_PartnerWBSElement` | | ✓ | | |
-| `_PartnerFunctionalArea` | | ✓ | | |
-| `_PartnerSegment` | | ✓ | | |
-| `_PartnerCostCtrActivityType` | | ✓ | | |
-| `_PartnerOrder` | | ✓ | | |
-| `_PartnerOrder_2` | | ✓ | | |
-| `_PartnerOrderCategory` | | ✓ | | |
-| `_PartnerCompany` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_ControllingDebitCreditCode` | | ✓ | | |
-| `_Employment` | | ✓ | | |
-| `_PersonWorkAgreement_1` | | ✓ | | |
-| `_BusinessTransactionCategory` | | ✓ | | |
-| `_BusinessTransactionType` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_FinancialAccountType` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_CustomerCompany` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceDocument` | | ✓ | | |
-| `_ServiceDocumentItem` | | ✓ | | |
-| `_ServiceContractType` | | ✓ | | |
-| `_ServiceContract` | | ✓ | | |
-| `_ServiceContractItem` | | ✓ | | |
-| `_BillingDocumentType` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_SoldMaterial` | | ✓ | | |
-| `_SoldProduct` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_ProductGroup_2` | | ✓ | | |
-| `_SoldProductGroup` | | ✓ | | |
-| `_SoldProductGroup_2` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_CustomerSupplierCountry` | | ✓ | | |
-| `_CustomerSupplierIndustryText` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_GlobalCurrency` | | ✓ | | |
-| `_FunctionalCurrency` | | ✓ | | |
-| `_FreeDefinedCurrency1` | | ✓ | | |
-| `_FreeDefinedCurrency2` | | ✓ | | |
-| `_FreeDefinedCurrency3` | | ✓ | | |
-| `_FreeDefinedCurrency4` | | ✓ | | |
-| `_FreeDefinedCurrency5` | | ✓ | | |
-| `_FreeDefinedCurrency6` | | ✓ | | |
-| `_FreeDefinedCurrency7` | | ✓ | | |
-| `_FreeDefinedCurrency8` | | ✓ | | |
-| `_ControllingObjectCurrency` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_CostSourceUnit` | | ✓ | | |
-| `_ReferenceQuantityUnit` | | ✓ | | |
-| `_PlanningCategory` | | ✓ | | |
-| `_OriginCostCenter` | | ✓ | | |
-| `_OriginProfitCenter` | | ✓ | | |
-| `_OriginCostCtrActivityType` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_BillableControl` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompany` | | ✓ | | |
-| `_SemTagGLAccount` | | ✓ | | |
-| `_CashLedgerCompanyCode` | | ✓ | | |
-| `_CashLedgerAccount` | | ✓ | | |
-| `_FundsCenter` | | ✓ | | |
-| `_FundedProgram` | | ✓ | | |
-| `_PartnerFund` | | ✓ | | |
-| `_PartnerGrant` | | ✓ | | |
-| `_PartnerBudgetPeriod` | | ✓ | | |
-| `_PubSecBudgetAccountCoCode` | | ✓ | | |
-| `_PubSecBudgetAccount` | | ✓ | | |
-| `_PubSecBudgetCnsmpnDate` | | ✓ | | |
-| `_PubSecBudgetCnsmpnFsclPeriod` | | ✓ | | |
-| `_PubSecBudgetCnsmpnFsclYear` | | ✓ | | |
-| `_PubSecBudgetCnsmpnType` | | ✓ | | |
-| `_PubSecBudgetCnsmpnAmtType` | | ✓ | | |
-| `_SponsoredClass` | | ✓ | | |
-| `_SponsoredProgram` | | ✓ | | |
-| `_BudgetProcess` | | ✓ | | |
-| `_BudgetingType` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_SubLedgerAccLineItemType` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintenanceOrderOperation` | | ✓ | | |
-| `_MaintenanceOrderSubOperation` | | ✓ | | |
-| `_MaintOrdPlngDegreeCode` | | ✓ | | |
-| `_PMNotificationPriorityType` | | ✓ | | |
-| `_PMNotificationPriority` | | ✓ | | |
-| `_SuperiorOrder` | | ✓ | | |
-| `_AccountAssignmentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SourceLedger` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `FinancialPlanningReqTransSqnc` | ✓ | |  |  |  |  |
+| `FinancialPlanningDataPacket` | ✓ | |  |  |  |  |
+| `ActualPlanJournalEntryItem` | ✓ | |  |  |  |  |
+| `LedgerGLLineItem` |  | |  |  |  |  |
+| `FinancialPlanningEntryItem` |  | |  |  |  |  |
+| `LedgerFiscalYear` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `ActualPlanCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `Project` |  | |  |  |  |  |
+| `ProjectInternalID` |  | |  |  |  |  |
+| `ProjectExternalID` |  | |  | `cast( ActualPlanJournalEntryItem._ProjectBasicData.ProjectExternalID as fis_projectext_no_conv )` |  |  |
+| `PartnerProjectInternalID` |  | |  |  |  |  |
+| `PartnerProjectExternalID` |  | |  | `cast( ActualPlanJournalEntryItem._PartnerProjectBasicData.ProjectExternalID as fis_part_projectext_no_conv )` |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  | `cast( ActualPlanJournalEntryItem._WBSElementBasicData.WBSElementExternalID as fis_wbsext_no_conv )` |  |  |
+| `PartnerWBSElementInternalID` |  | |  |  |  |  |
+| `PartnerWBSElementExternalID` |  | |  | `cast( ActualPlanJournalEntryItem._PartnerWBSElementBasicData.WBSElementExternalID as fis_partner_wbsext_no_conv )` |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `CostAnalysisResource` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `WorkPackage` |  | |  |  |  |  |
+| `WorkItem` |  | |  |  |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
+| `PartnerCompanyCode` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `PartnerProfitCenter` |  | |  |  |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `PartnerProject` |  | |  |  |  |  |
+| `PartnerWBSElement` |  | |  |  |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `PartnerSegment` |  | |  |  |  |  |
+| `PartnerCostCtrActivityType` |  | |  |  |  |  |
+| `PartnerOrder` |  | |  |  |  |  |
+| `PartnerOrder_2` |  | |  |  |  |  |
+| `PartnerOrderCategory` |  | |  |  |  |  |
+| `PartnerSalesDocument` |  | |  |  |  |  |
+| `PartnerProjectNetwork` |  | |  |  |  |  |
+| `PartnerProjectNetworkActivity` |  | |  |  |  |  |
+| `PartnerBusinessProcess` |  | |  |  |  |  |
+| `PartnerCostObject` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `OriginProfitCenter` |  | |  |  |  |  |
+| `OriginCostCenter` |  | |  |  |  |  |
+| `OriginCostCtrActivityType` |  | |  |  |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `ReferenceDocumentContext` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `ReferenceDocumentItem` |  | |  |  |  |  |
+| `BusinessTransactionCategory` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `FinancialTransactionType` |  | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `FinancialAccountType` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `AccountingDocCreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `PlanningCategory` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `ControllingDebitCreditCode` |  | |  |  |  |  |
+| `AccountAssignmentType` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `BillableControl` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `ControllingObject` |  | |  |  |  |  |
+| `CostOriginGroup` |  | |  |  |  |  |
+| `ControllingObjectClass` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |  |  |
+| `ProviderContract` |  | |  |  |  |  |
+| `ProviderContractItem` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `AccountAssignmentNumber` |  | |  |  |  |  |
+| `OffsettingAccount` |  | |  |  |  |  |
+| `OffsettingAccountType` |  | |  |  |  |  |
+| `OffsettingChartOfAccounts` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocument` |  | |  |  |  |  |
+| `ServiceDocumentItem` |  | |  |  |  |  |
+| `ServiceContractType` |  | |  |  |  |  |
+| `ServiceContract` |  | |  |  |  |  |
+| `ServiceContractItem` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SoldMaterial` |  | |  |  |  |  |
+| `SoldProduct` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `SoldProductGroup` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `CustomerSupplierCountry` |  | |  |  |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  |  |  |  |
+| `IsStatisticalOrder` |  | |  |  |  |  |
+| `IsStatisticalCostCenter` |  | |  |  |  |  |
+| `IsStatisticalSalesDocument` |  | |  |  |  |  |
+| `WBSIsStatisticalWBSElement` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `OrderOperation` |  | |  |  |  |  |
+| `OrderItem` |  | |  |  |  |  |
+| `PartnerOrderItem` |  | |  |  |  |  |
+| `OrderSuboperation` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `MaintenanceOrderPlanningCode` |  | |  |  |  |  |
+| `MaintPriorityType` |  | |  |  |  |  |
+| `MaintPriority` |  | |  |  |  |  |
+| `SuperiorOrder` |  | |  |  |  |  |
+| `SourceReferenceDocumentType` |  | |  |  |  |  |
+| `SourceLogicalSystem` |  | |  |  |  |  |
+| `SourceReferenceDocumentCntxt` |  | |  |  |  |  |
+| `SourceReferenceDocument` |  | |  |  |  |  |
+| `SourceReferenceDocumentItem` |  | |  |  |  |  |
+| `SourceReferenceDocSubitem` |  | |  |  |  |  |
+| `IsCommitment` |  | |  |  |  |  |
+| `CashLedgerCompanyCode` |  | |  |  |  |  |
+| `CashLedgerAccount` |  | |  |  |  |  |
+| `FinancialManagementArea` |  | |  |  |  |  |
+| `FundsCenter` |  | |  |  |  |  |
+| `FundedProgram` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `BudgetPeriod` |  | |  |  |  |  |
+| `PartnerFund` |  | |  |  |  |  |
+| `PartnerGrant` |  | |  |  |  |  |
+| `PartnerBudgetPeriod` |  | |  |  |  |  |
+| `PubSecBudgetAccount` |  | |  |  |  |  |
+| `PubSecBudgetAccountCoCode` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnDate` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnFsclPeriod` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnFsclYear` |  | |  |  |  |  |
+| `PubSecBudgetIsRelevant` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnType` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnAmtType` |  | |  |  |  |  |
+| `SponsoredProgram` |  | |  |  |  |  |
+| `SponsoredClass` |  | |  |  |  |  |
+| `GteeMBudgetValidityNumber` |  | |  |  |  |  |
+| `BudgetProcess` |  | |  |  |  |  |
+| `BudgetingType` |  | |  |  |  |  |
+| `BudgetDocWorkFlowStatus` |  | |  |  |  |  |
+| `SubLedgerAcctLineItemType` |  | |  |  |  |  |
+| `AssetDepreciationArea` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `AssetAcctTransClassfctn` |  | |  |  |  |  |
+| `AssetClass` |  | |  |  |  |  |
+| `JointVenture` |  | |  |  |  |  |
+| `JointVentureEquityGroup` |  | |  |  |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |  |  |
+| `JointVentureProductionDate` |  | |  |  |  |  |
+| `JointVentureAccountingActivity` |  | |  |  |  |  |
+| `AccrualObjectType` |  | |  |  |  |  |
+| `AccrualObjectLogicalSystem` |  | |  |  |  |  |
+| `AccrualObject` |  | |  |  |  |  |
+| `AccrualSubobject` |  | |  |  |  |  |
+| `AccrualItemType` |  | |  |  |  |  |
+| `AccrualReferenceObject` |  | |  |  |  |  |
+| `AccrualValueDate` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `ReservationItem` |  | |  |  |  |  |
+| `ReservationType` |  | |  |  |  |  |
+| `MMServicePackage` |  | |  |  |  |  |
+| `MMServicePackageLine` |  | |  |  |  |  |
+| `REBusinessEntity` |  | |  |  |  |  |
+| `RealEstateBuilding` |  | |  |  |  |  |
+| `RealEstateProperty` |  | |  |  |  |  |
+| `RERentalObject` |  | |  |  |  |  |
+| `RealEstateContract` |  | |  |  |  |  |
+| `REServiceChargeKey` |  | |  |  |  |  |
+| `RESettlementUnitID` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  |  |  |  |
+| `FunctionalCurrency` |  | |  |  |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |  |  |
+| `FreeDefinedCurrency2` |  | |  |  |  |  |
+| `FreeDefinedCurrency3` |  | |  |  |  |  |
+| `FreeDefinedCurrency4` |  | |  |  |  |  |
+| `FreeDefinedCurrency5` |  | |  |  |  |  |
+| `FreeDefinedCurrency6` |  | |  |  |  |  |
+| `FreeDefinedCurrency7` |  | |  |  |  |  |
+| `FreeDefinedCurrency8` |  | |  |  |  |  |
+| `ControllingObjectCurrency` |  | |  |  |  |  |
+| `CostSourceUnit` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInGlobalCurrency` |  | |  |  |  |  |
+| `AmountInFunctionalCurrency` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency3` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency4` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency5` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency6` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency7` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency8` |  | |  |  |  |  |
+| `AmountInObjectCurrency` |  | |  |  |  |  |
+| `FixedAmountInGlobalCrcy` |  | |  |  |  |  |
+| `FixedAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `FixedAmountInTransCrcy` |  | |  |  |  |  |
+| `ValuationQuantity` |  | |  |  |  |  |
+| `ValuationFixedQuantity` |  | |  |  |  |  |
+| `FixedQuantity` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `ReferenceQuantityUnit` |  | |  |  |  |  |
+| `ReferenceQuantity` |  | |  |  |  |  |
+| `ActualAmountInTransactionCrcy` |  | |  |  |  |  |
+| `ActualAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `ActualAmountInGlobalCurrency` |  | |  |  |  |  |
+| `ActualAmountInFreeDfndCrcy1` |  | |  |  |  |  |
+| `ActualAmountInFreeDfndCrcy2` |  | |  |  |  |  |
+| `ActualAmountInFreeDfndCrcy3` |  | |  |  |  |  |
+| `ActualAmountInFreeDfndCrcy4` |  | |  |  |  |  |
+| `ActualAmountInFreeDfndCrcy5` |  | |  |  |  |  |
+| `ActualAmountInFreeDfndCrcy6` |  | |  |  |  |  |
+| `ActualAmountInFreeDfndCrcy7` |  | |  |  |  |  |
+| `ActualAmountInFreeDfndCrcy8` |  | |  |  |  |  |
+| `ActualAmountInObjectCurrency` |  | |  |  |  |  |
+| `ActualValuationQuantity` |  | |  |  |  |  |
+| `ActualReferenceQuantity` |  | |  |  |  |  |
+| `ActualQuantityInBaseUnit` |  | |  |  |  |  |
+| `PlanAmountInTransactionCrcy` |  | |  |  |  |  |
+| `PlanAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `PlanAmountInGlobalCurrency` |  | |  |  |  |  |
+| `PlanAmountInFreeDefinedCrcy1` |  | |  |  |  |  |
+| `PlanAmountInFreeDefinedCrcy2` |  | |  |  |  |  |
+| `PlanAmountInFreeDefinedCrcy3` |  | |  |  |  |  |
+| `PlanAmountInFreeDefinedCrcy4` |  | |  |  |  |  |
+| `PlanAmountInFreeDefinedCrcy5` |  | |  |  |  |  |
+| `PlanAmountInFreeDefinedCrcy6` |  | |  |  |  |  |
+| `PlanAmountInFreeDefinedCrcy7` |  | |  |  |  |  |
+| `PlanAmountInFreeDefinedCrcy8` |  | |  |  |  |  |
+| `PlanAmountInObjectCurrency` |  | |  |  |  |  |
+| `PlanValuationQuantity` |  | |  |  |  |  |
+| `PlanReferenceQuantity` |  | |  |  |  |  |
+| `PlanPriceInGlobalCurrency` |  | |  |  |  |  |
+| `PlanPriceInCompanyCodeCurrency` |  | |  |  |  |  |
+| `PlanPriceInTransactionCurrency` |  | |  |  |  |  |
+| `ActlPlnDiffAmtInTransCrcy` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInTransactionCrcy - ActualPlanJournalEntryItem.PlanAmountInTransactionCrcy as fis_actl_pln_diff_wsl)` |  |  |
+| `ActlPlnDiffAmtInCoCodeCrcy` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInCompanyCodeCrcy - ActualPlanJournalEntryItem.PlanAmountInCompanyCodeCrcy as fis_actl_pln_diff_hsl)` |  |  |
+| `ActlPlnDiffAmtInGlobalCrcy` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInGlobalCurrency - ActualPlanJournalEntryItem.PlanAmountInGlobalCurrency as fis_actl_pln_diff_ksl)` |  |  |
+| `ActlPlnDiffAmtInFreeDfndCrcy1` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy1 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy1 as fis_actl_pln_diff_osl)` |  |  |
+| `ActlPlnDiffAmtInFreeDfndCrcy2` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy2 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy2 as fis_actl_pln_diff_vsl)` |  |  |
+| `ActlPlnDiffAmtInFreeDfndCrcy3` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy3 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy3 as fis_actl_pln_diff_bsl)` |  |  |
+| `ActlPlnDiffAmtInFreeDfndCrcy4` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy4 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy4 as fis_actl_pln_diff_csl)` |  |  |
+| `ActlPlnDiffAmtInFreeDfndCrcy5` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy5 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy5 as fis_actl_pln_diff_dsl)` |  |  |
+| `ActlPlnDiffAmtInFreeDfndCrcy6` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy6 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy6 as fis_actl_pln_diff_esl)` |  |  |
+| `ActlPlnDiffAmtInFreeDfndCrcy7` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy7 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy7 as fis_actl_pln_diff_fsl)` |  |  |
+| `ActlPlnDiffAmtInFreeDfndCrcy8` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInFreeDfndCrcy8 - ActualPlanJournalEntryItem.PlanAmountInFreeDefinedCrcy8 as fis_actl_pln_diff_gsl)` |  |  |
+| `ActlPlnDiffAmtInObjectCrcy` |  | |  | `cast(ActualPlanJournalEntryItem.ActualAmountInObjectCurrency - ActualPlanJournalEntryItem.PlanAmountInObjectCurrency as fis_actl_pln_diff_co_osl)` |  |  |
+| `ActlPanDiffValuationQuantity` |  | |  | `cast(ActualPlanJournalEntryItem.ActualValuationQuantity - ActualPlanJournalEntryItem.PlanValuationQuantity as fis_val_quan_actl_plan_diff)` |  |  |
+| `ActlPlanDiffReferenceQuantity` |  | |  | `cast(ActualPlanJournalEntryItem.ActualValuationQuantity - ActualPlanJournalEntryItem.PlanValuationQuantity as fis_ref_quan_actl_plan_diff)` |  |  |
+| `GLAccountAuthorizationGroup` |  | |  |  |  |  |
+| `SupplierBasicAuthorizationGrp` |  | |  |  |  |  |
+| `CustomerBasicAuthorizationGrp` |  | |  |  |  |  |
+| `AcctgDocTypeAuthorizationGroup` |  | |  |  |  |  |
+| `OrderType` |  | |  |  |  |  |
+| `SalesOrderType` |  | |  |  |  |  |
+| `_SourceLedger` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_LedgerFiscalYear` | | ✓ | | | | |
+| `_FiscalPeriod` | | ✓ | | | | |
+| `_FiscalYearPeriod` | | ✓ | | | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | | | |
+| `_FiscalPeriodForVariant` | | ✓ | | | | |
+| `_FiscalYearPeriodForVariant` | | ✓ | | | | |
+| `_CalendarDate` | | ✓ | | | | |
+| `_FiscalCalendarDate` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_Project` | | ✓ | | | | |
+| `_ProjectExternalID` | | ✓ | | | | |
+| `_ProjectExternalIDText` | | ✓ | | | | |
+| `_PartnerProjectExternalID` | | ✓ | | | | |
+| `_PartnerProjctExtrnalIDText` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementExternalID` | | ✓ | | | | |
+| `_PartnerWBSElementExternalID` | | ✓ | | | | |
+| `_PartnerWBSElemntExtrnalIDText` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
+| `_CostAnalysisResource` | | ✓ | | | | |
+| `_InternalOrder` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_WorkPackageWorkItem` | | ✓ | | | | |
+| `_WorkPackage` | | ✓ | | | | |
+| `_PartnerCompanyCode` | | ✓ | | | | |
+| `_PartnerBusinessArea` | | ✓ | | | | |
+| `_PartnerProfitCenter` | | ✓ | | | | |
+| `_PartnerCostCenter` | | ✓ | | | | |
+| `_PartnerProject` | | ✓ | | | | |
+| `_PartnerWBSElement` | | ✓ | | | | |
+| `_PartnerFunctionalArea` | | ✓ | | | | |
+| `_PartnerSegment` | | ✓ | | | | |
+| `_PartnerCostCtrActivityType` | | ✓ | | | | |
+| `_PartnerOrder` | | ✓ | | | | |
+| `_PartnerOrder_2` | | ✓ | | | | |
+| `_PartnerOrderCategory` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_ControllingDebitCreditCode` | | ✓ | | | | |
+| `_Employment` | | ✓ | | | | |
+| `_PersonWorkAgreement_1` | | ✓ | | | | |
+| `_BusinessTransactionCategory` | | ✓ | | | | |
+| `_BusinessTransactionType` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerCompany` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_ServiceDocumentItem` | | ✓ | | | | |
+| `_ServiceContractType` | | ✓ | | | | |
+| `_ServiceContract` | | ✓ | | | | |
+| `_ServiceContractItem` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_SoldMaterial` | | ✓ | | | | |
+| `_SoldProduct` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_ProductGroup_2` | | ✓ | | | | |
+| `_SoldProductGroup` | | ✓ | | | | |
+| `_SoldProductGroup_2` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_CustomerSupplierCountry` | | ✓ | | | | |
+| `_CustomerSupplierIndustryText` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_GlobalCurrency` | | ✓ | | | | |
+| `_FunctionalCurrency` | | ✓ | | | | |
+| `_FreeDefinedCurrency1` | | ✓ | | | | |
+| `_FreeDefinedCurrency2` | | ✓ | | | | |
+| `_FreeDefinedCurrency3` | | ✓ | | | | |
+| `_FreeDefinedCurrency4` | | ✓ | | | | |
+| `_FreeDefinedCurrency5` | | ✓ | | | | |
+| `_FreeDefinedCurrency6` | | ✓ | | | | |
+| `_FreeDefinedCurrency7` | | ✓ | | | | |
+| `_FreeDefinedCurrency8` | | ✓ | | | | |
+| `_ControllingObjectCurrency` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_CostSourceUnit` | | ✓ | | | | |
+| `_ReferenceQuantityUnit` | | ✓ | | | | |
+| `_PlanningCategory` | | ✓ | | | | |
+| `_OriginCostCenter` | | ✓ | | | | |
+| `_OriginProfitCenter` | | ✓ | | | | |
+| `_OriginCostCtrActivityType` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_BillableControl` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompany` | | ✓ | | | | |
+| `_SemTagGLAccount` | | ✓ | | | | |
+| `_CashLedgerCompanyCode` | | ✓ | | | | |
+| `_CashLedgerAccount` | | ✓ | | | | |
+| `_FundsCenter` | | ✓ | | | | |
+| `_FundedProgram` | | ✓ | | | | |
+| `_PartnerFund` | | ✓ | | | | |
+| `_PartnerGrant` | | ✓ | | | | |
+| `_PartnerBudgetPeriod` | | ✓ | | | | |
+| `_PubSecBudgetAccountCoCode` | | ✓ | | | | |
+| `_PubSecBudgetAccount` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnDate` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnFsclPeriod` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnFsclYear` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnType` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnAmtType` | | ✓ | | | | |
+| `_SponsoredClass` | | ✓ | | | | |
+| `_SponsoredProgram` | | ✓ | | | | |
+| `_BudgetProcess` | | ✓ | | | | |
+| `_BudgetingType` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_SubLedgerAccLineItemType` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintenanceOrderOperation` | | ✓ | | | | |
+| `_MaintenanceOrderSubOperation` | | ✓ | | | | |
+| `_MaintOrdPlngDegreeCode` | | ✓ | | | | |
+| `_PMNotificationPriorityType` | | ✓ | | | | |
+| `_PMNotificationPriority` | | ✓ | | | | |
+| `_SuperiorOrder` | | ✓ | | | | |
+| `_AccountAssignmentType` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,39 +31,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContract` | ✓ | |  | `cast( SCIA.SalesDocument as sales_contract preserving type )` |
-| `SalesContractItem` | ✓ | |  | `cast( SCIA.SalesDocumentItem as sales_contract_item preserving type )` |
-| `SalesContractType` |  | |  | `SalesDocumentType` |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `SalesContractValidityStartDate` |  | |  | `AgrmtValdtyStartDate` |
-| `SalesContractValidityEndDate` |  | |  | `AgrmtValdtyEndDate` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  | `cast(SCIA.OrganizationDivision as organization_division preserving type )` |
-| `SalesGroup` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `PartnerCompany` |  | |  | `TradingPartner` |
-| `SoldToParty` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `SalesEmployee` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
-| `SalesContractTargetValue` |  | |  | `cast (currency_conversion( amount => SCIA.SalesContractTargetValue, source_currency => SCIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SCIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sales_contract_target_value)` |
-| `SalesContractTargetAmountInDC` |  | |  | `cast( currency_conversion( amount => SCIA.SalesContractTargetAmount, source_currency => SCIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SCIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sls_contr_tgt_val_in_dc )` |
-| `ReleasedNetAmount` |  | |  | `cast( ReleasedSalesContract.SalesContractReleasedAmount as reld_sls_contr_tgt_val )` |
-| `SalesContractReleasedAmtInDC` |  | |  | `cast( ReleasedSalesContract.SalesContractReleasedAmtInDC as reld_sls_contr_tgt_val_in_dc )` |
-| `SlsContrPeriodElapsedPercent` |  | |  | `cast( case when SCIA.AgrmtValdtyStartDate = '00000000' then case when SCIA.AgrmtValdtyEndDate = '00000000' then case when SCIA.CreationDate = '99991231' then 1 else division(dats_days_between(SCIA.CreationDate, :P_Date),dats_days_between(SCIA.CreationDate,cast('99991231' as abap.dats(8))),5) end else case when SCIA.AgrmtValdtyEndDate = SCIA.CreationDate then 1 else division(dats_days_between(SCIA.CreationDate, :P_Date),dats_days_between(SCIA.CreationDate,SCIA.AgrmtValdtyEndDate),5) end end else case when SCIA.AgrmtValdtyEndDate = '00000000' then case when SCIA.AgrmtValdtyStartDate = '99991231' then 1 else division(dats_days_between(SCIA.AgrmtValdtyStartDate, :P_Date),dats_days_between(SCIA.AgrmtValdtyStartDate,cast('99991231' as abap.dats(8))),5) end else case when SCIA.AgrmtValdtyStartDate = SCIA.AgrmtValdtyEndDate then 1 else division(dats_days_between(SCIA.AgrmtValdtyStartDate, :P_Date),dats_days_between(SCIA.AgrmtValdtyStartDate,SCIA.AgrmtValdtyEndDate),5) end end end as sls_contr_period_elpsd_percent)` |
-| `_SalesContract` | | ✓ | | |
-| `_ResponsibleEmployee` | | ✓ | | |
-| `_SalesEmployee` | | ✓ | | |
-| `_SalesEmployee_2` | | ✓ | | |
-| `_ResponsibleEmployee_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContract` | ✓ | |  | `cast( SCIA.SalesDocument as sales_contract preserving type )` |  |  |
+| `SalesContractItem` | ✓ | |  | `cast( SCIA.SalesDocumentItem as sales_contract_item preserving type )` |  |  |
+| `SalesContractType` |  | |  | `SalesDocumentType` |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `SalesContractValidityStartDate` |  | |  | `AgrmtValdtyStartDate` |  |  |
+| `SalesContractValidityEndDate` |  | |  | `AgrmtValdtyEndDate` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  | `cast(SCIA.OrganizationDivision as organization_division preserving type )` |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  | `TradingPartner` |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `SalesEmployee` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |  |  |
+| `SalesContractTargetValue` |  | |  | `cast (currency_conversion( amount => SCIA.SalesContractTargetValue, source_currency => SCIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SCIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sales_contract_target_value)` |  |  |
+| `SalesContractTargetAmountInDC` |  | |  | `cast( currency_conversion( amount => SCIA.SalesContractTargetAmount, source_currency => SCIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SCIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sls_contr_tgt_val_in_dc )` |  |  |
+| `ReleasedNetAmount` |  | |  | `cast( ReleasedSalesContract.SalesContractReleasedAmount as reld_sls_contr_tgt_val )` |  |  |
+| `SalesContractReleasedAmtInDC` |  | |  | `cast( ReleasedSalesContract.SalesContractReleasedAmtInDC as reld_sls_contr_tgt_val_in_dc )` |  |  |
+| `SlsContrPeriodElapsedPercent` |  | |  | `cast( case when SCIA.AgrmtValdtyStartDate = '00000000' then case when SCIA.AgrmtValdtyEndDate = '00000000' then case when SCIA.CreationDate = '99991231' then 1 else division(dats_days_between(SCIA.CreationDate, :P_Date),dats_days_between(SCIA.CreationDate,cast('99991231' as abap.dats(8))),5) end else case when SCIA.AgrmtValdtyEndDate = SCIA.CreationDate then 1 else division(dats_days_between(SCIA.CreationDate, :P_Date),dats_days_between(SCIA.CreationDate,SCIA.AgrmtValdtyEndDate),5) end end else case when SCIA.AgrmtValdtyEndDate = '00000000' then case when SCIA.AgrmtValdtyStartDate = '99991231' then 1 else division(dats_days_between(SCIA.AgrmtValdtyStartDate, :P_Date),dats_days_between(SCIA.AgrmtValdtyStartDate,cast('99991231' as abap.dats(8))),5) end else case when SCIA.AgrmtValdtyStartDate = SCIA.AgrmtValdtyEndDate then 1 else division(dats_days_between(SCIA.AgrmtValdtyStartDate, :P_Date),dats_days_between(SCIA.AgrmtValdtyStartDate,SCIA.AgrmtValdtyEndDate),5) end end end as sls_contr_period_elpsd_percent)` |  |  |
+| `_SalesContract` | | ✓ | | | | |
+| `_ResponsibleEmployee` | | ✓ | | | | |
+| `_SalesEmployee` | | ✓ | | | | |
+| `_SalesEmployee_2` | | ✓ | | | | |
+| `_ResponsibleEmployee_2` | | ✓ | | | | |
 
 ## Associations
 

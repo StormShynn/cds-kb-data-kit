@@ -34,11 +34,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PrelimBillingDocument` | ✓ | |  |  |
-| `BillingDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PrelimBillingDocument` | ✓ | |  |  |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
 
 ## Source Code
 

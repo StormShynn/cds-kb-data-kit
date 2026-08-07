@@ -29,57 +29,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionRecord` | ✓ | |  |  |
-| `ConditionSequentialNumber` | ✓ | |  |  |
-| `ConditionTable` |  | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionValidityEndDate` |  | |  |  |
-| `ConditionValidityStartDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `ConditionTextID` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `PricingScaleBasis` |  | |  |  |
-| `ConditionScaleQuantity` |  | |  |  |
-| `ConditionScaleQuantityUnit` |  | |  |  |
-| `ConditionScaleAmount` |  | |  |  |
-| `ConditionScaleAmountCurrency` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionRateValueUnit` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionToBaseQtyNmrtr` |  | |  |  |
-| `ConditionToBaseQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ConditionLowerLimit` |  | |  |  |
-| `ConditionLowerLimitAmount` |  | |  |  |
-| `ConditionLowerLimitRatio` |  | |  |  |
-| `ConditionUpperLimit` |  | |  |  |
-| `ConditionUpperLimitAmount` |  | |  |  |
-| `ConditionUpperLimitRatio` |  | |  |  |
-| `ConditionAlternativeCurrency` |  | |  |  |
-| `ConditionExclusion` |  | |  |  |
-| `ConditionIsDeleted` |  | |  |  |
-| `AdditionalValueDays` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CndnMaxNumberOfSalesOrders` |  | |  |  |
-| `MinimumConditionBasisValue` |  | |  |  |
-| `MaximumConditionBasisValue` |  | |  |  |
-| `MaximumConditionAmount` |  | |  |  |
-| `IncrementalScale` |  | |  |  |
-| `PricingScaleLine` |  | |  |  |
-| `_SupplementScale` | | ✓ | | |
-| `_SupplementText` | | ✓ | | |
-| `_ConditionRecord` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionRecord` | ✓ | |  |  |  |  |
+| `ConditionSequentialNumber` | ✓ | |  |  |  |  |
+| `ConditionTable` |  | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionValidityEndDate` |  | |  |  |  |  |
+| `ConditionValidityStartDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `ConditionTextID` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `PricingScaleBasis` |  | |  |  |  |  |
+| `ConditionScaleQuantity` |  | |  |  |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |  |  |
+| `ConditionScaleAmount` |  | |  |  |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionRateValueUnit` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ConditionLowerLimit` |  | |  |  |  |  |
+| `ConditionLowerLimitAmount` |  | |  |  |  |  |
+| `ConditionLowerLimitRatio` |  | |  |  |  |  |
+| `ConditionUpperLimit` |  | |  |  |  |  |
+| `ConditionUpperLimitAmount` |  | |  |  |  |  |
+| `ConditionUpperLimitRatio` |  | |  |  |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |  |  |
+| `ConditionExclusion` |  | |  |  |  |  |
+| `ConditionIsDeleted` |  | |  |  |  |  |
+| `AdditionalValueDays` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CndnMaxNumberOfSalesOrders` |  | |  |  |  |  |
+| `MinimumConditionBasisValue` |  | |  |  |  |  |
+| `MaximumConditionBasisValue` |  | |  |  |  |  |
+| `MaximumConditionAmount` |  | |  |  |  |  |
+| `IncrementalScale` |  | |  |  |  |  |
+| `PricingScaleLine` |  | |  |  |  |  |
+| `_SupplementScale` | | ✓ | | | | |
+| `_SupplementText` | | ✓ | | | | |
+| `_ConditionRecord` | | ✓ | | | | |
 
 ## Source Code
 

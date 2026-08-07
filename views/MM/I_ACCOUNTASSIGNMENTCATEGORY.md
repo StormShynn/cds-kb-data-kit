@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountAssignmentCategory` | ✓ | |  | `knttp` |
-| `ConsumptionPosting` |  | |  | `kzvbr` |
-| `InventorySpecialStockType` |  | |  | `sobkz` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountAssignmentCategory` | ✓ | |  | `knttp` |  |  |
+| `ConsumptionPosting` |  | |  | `kzvbr` |  |  |
+| `InventorySpecialStockType` |  | |  | `sobkz` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

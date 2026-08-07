@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransactionCurrency` |  | |  | `twaer` |
-| `CompanyCode` |  | |  | `bukrs` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransactionCurrency` |  | |  | `twaer` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
 
 ## Source Code
 

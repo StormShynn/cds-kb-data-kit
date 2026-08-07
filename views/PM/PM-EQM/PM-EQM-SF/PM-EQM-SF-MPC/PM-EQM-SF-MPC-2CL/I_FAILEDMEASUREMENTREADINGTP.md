@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MsmtRdngDate` | ✓ | |  |  |
-| `MsmtRdngTime` | ✓ | |  |  |
-| `MsmtRdngSourceMeasurementDoc` | ✓ | |  |  |
-| `MeasuringPoint` | ✓ | |  |  |
-| `MsmtRdngTransfFailedMsgNumber` |  | |  |  |
-| `_MeasurementDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MsmtRdngDate` | ✓ | |  |  |  |  |
+| `MsmtRdngTime` | ✓ | |  |  |  |  |
+| `MsmtRdngSourceMeasurementDoc` | ✓ | |  |  |  |  |
+| `MeasuringPoint` | ✓ | |  |  |  |  |
+| `MsmtRdngTransfFailedMsgNumber` |  | |  |  |  |  |
+| `_MeasurementDocument` | | ✓ | | | | |
 
 ## Source Code
 

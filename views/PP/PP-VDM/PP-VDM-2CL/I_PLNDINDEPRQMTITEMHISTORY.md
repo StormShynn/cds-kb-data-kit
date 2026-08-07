@@ -28,39 +28,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlndIndepRqmtInternalID` | ✓ | |  |  |
-| `ForecastYearMonth` | ✓ | |  | `YearMonth` |
-| `OrderEndDate` | ✓ | |  |  |
-| `LastChangeDate` | ✓ | |  |  |
-| `LastChangeTime` | ✓ | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ForecastPeriodType` |  | |  |  |
-| `DeliveryDate` |  | |  | `cast(coalesce(hist.OrderEndDate,'00000000') as lfdat_v preserving type)` |
-| `ForecastPeriodStartDate` |  | |  | `cast((case when hist.ForecastPeriodType = '1' then coalesce(hist.OrderEndDate,'00000000') when hist.ForecastPeriodType = '2' then coalesce(hist._OrderEndDate.FirstDayOfWeekDate,'00000000') else coalesce(hist._OrderEndDate.FirstDayOfMonthDate,'00000000') end ) as pph_per_sdat)` |
-| `ForecastYearQuarter` |  | |  | `YearQuarter` |
-| `BaseUnit` |  | |  |  |
-| `PlannedQuantity` |  | |  | `cast(coalesce(hist.PlannedQuantity, 0) as pph_plan_qty preserving type)` |
-| `WithdrawalQuantity` |  | |  | `cast(coalesce(hist.WithdrawalQuantity, 0) as entmg preserving type)` |
-| `Product` |  | |  |  |
-| `Plant` |  | |  |  |
-| `MRPArea` |  | |  |  |
-| `PlndIndepRqmtType` |  | |  |  |
-| `RequirementPlan` |  | |  |  |
-| `ExternalRequirementPlan` |  | |  |  |
-| `RequirementSegment` |  | |  |  |
-| `PlndIndepRqmtConsumptionStrgy` |  | |  |  |
-| `PlndIndepRqmtIsActive` |  | |  |  |
-| `PlndIndepRqmtConsumptionAssgmt` |  | |  |  |
-| `PlndIndepRqmtUsage` |  | |  |  |
-| `PlndIndepRqmtIsToBeDeleted` |  | |  |  |
-| `PlannedIndepRqmtDeletionCode` |  | |  |  |
-| `PlndIndepRqmtLastChgdDateTime` |  | |  |  |
-| `_PlndIndepRqmt` | | ✓ | | |
-| `_PlndIndepRqmtItem` | | ✓ | | |
-| `_DeliveryDate` | | ✓ | | |
-| `_PeriodStartDate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlndIndepRqmtInternalID` | ✓ | |  |  |  |  |
+| `ForecastYearMonth` | ✓ | |  | `YearMonth` |  |  |
+| `OrderEndDate` | ✓ | |  |  |  |  |
+| `LastChangeDate` | ✓ | |  |  |  |  |
+| `LastChangeTime` | ✓ | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ForecastPeriodType` |  | |  |  |  |  |
+| `DeliveryDate` |  | |  | `cast(coalesce(hist.OrderEndDate,'00000000') as lfdat_v preserving type)` |  |  |
+| `ForecastPeriodStartDate` |  | |  | `cast((case when hist.ForecastPeriodType = '1' then coalesce(hist.OrderEndDate,'00000000') when hist.ForecastPeriodType = '2' then coalesce(hist._OrderEndDate.FirstDayOfWeekDate,'00000000') else coalesce(hist._OrderEndDate.FirstDayOfMonthDate,'00000000') end ) as pph_per_sdat)` |  |  |
+| `ForecastYearQuarter` |  | |  | `YearQuarter` |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `PlannedQuantity` |  | |  | `cast(coalesce(hist.PlannedQuantity, 0) as pph_plan_qty preserving type)` |  |  |
+| `WithdrawalQuantity` |  | |  | `cast(coalesce(hist.WithdrawalQuantity, 0) as entmg preserving type)` |  |  |
+| `Product` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `MRPArea` |  | |  |  |  |  |
+| `PlndIndepRqmtType` |  | |  |  |  |  |
+| `RequirementPlan` |  | |  |  |  |  |
+| `ExternalRequirementPlan` |  | |  |  |  |  |
+| `RequirementSegment` |  | |  |  |  |  |
+| `PlndIndepRqmtConsumptionStrgy` |  | |  |  |  |  |
+| `PlndIndepRqmtIsActive` |  | |  |  |  |  |
+| `PlndIndepRqmtConsumptionAssgmt` |  | |  |  |  |  |
+| `PlndIndepRqmtUsage` |  | |  |  |  |  |
+| `PlndIndepRqmtIsToBeDeleted` |  | |  |  |  |  |
+| `PlannedIndepRqmtDeletionCode` |  | |  |  |  |  |
+| `PlndIndepRqmtLastChgdDateTime` |  | |  |  |  |  |
+| `_PlndIndepRqmt` | | ✓ | | | | |
+| `_PlndIndepRqmtItem` | | ✓ | | | | |
+| `_DeliveryDate` | | ✓ | | | | |
+| `_PeriodStartDate` | | ✓ | | | | |
 
 ## Associations
 

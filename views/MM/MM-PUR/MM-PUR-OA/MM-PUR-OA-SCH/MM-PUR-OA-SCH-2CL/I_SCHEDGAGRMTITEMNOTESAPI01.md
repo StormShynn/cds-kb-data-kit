@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `DocumentText` | ✓ | |  |  |
-| `TechnicalObjectType` | ✓ | |  |  |
-| `ArchObjectNumber` | ✓ | |  |  |
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `NoteDescription` |  | |  |  |
-| `FixedIndicator` |  | |  |  |
-| `Plant` |  | | `_ScheduleAgreementItem` | `Plant` |
-| `StorageLocation` |  | | `_ScheduleAgreementItem` | `StorageLocation` |
-| `PurchasingDocumentType` |  | | `_SchedgAgrmtHdr` | `PurchasingDocumentType` |
-| `PurchasingOrganization` |  | | `_SchedgAgrmtHdr` | `PurchasingOrganization` |
-| `PurchasingGroup` |  | | `_SchedgAgrmtHdr` | `PurchasingGroup` |
-| `_SchedgAgrmtHdr` | | ✓ | | |
-| `_ScheduleAgreementItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `DocumentText` | ✓ | |  |  |  |  |
+| `TechnicalObjectType` | ✓ | |  |  |  |  |
+| `ArchObjectNumber` | ✓ | |  |  |  |  |
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `NoteDescription` |  | |  |  |  |  |
+| `FixedIndicator` |  | |  |  |  |  |
+| `Plant` |  | | `_ScheduleAgreementItem` | `Plant` |  |  |
+| `StorageLocation` |  | | `_ScheduleAgreementItem` | `StorageLocation` |  |  |
+| `PurchasingDocumentType` |  | | `_SchedgAgrmtHdr` | `PurchasingDocumentType` |  |  |
+| `PurchasingOrganization` |  | | `_SchedgAgrmtHdr` | `PurchasingOrganization` |  |  |
+| `PurchasingGroup` |  | | `_SchedgAgrmtHdr` | `PurchasingGroup` |  |  |
+| `_SchedgAgrmtHdr` | | ✓ | | | | |
+| `_ScheduleAgreementItem` | | ✓ | | | | |
 
 ## Associations
 

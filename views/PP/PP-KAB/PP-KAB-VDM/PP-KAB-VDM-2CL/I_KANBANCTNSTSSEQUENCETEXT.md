@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanContainerStatusSequence` | ✓ | |  | `pksfg` |
-| `Language` | ✓ | |  | `spras` |
-| `KnbnCtnStatusSequenceName` |  | |  | `sfkt` |
-| `_KanbanContainerStsSequence` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanContainerStatusSequence` | ✓ | |  | `pksfg` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `KnbnCtnStatusSequenceName` |  | |  | `sfkt` |  |  |
+| `_KanbanContainerStsSequence` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

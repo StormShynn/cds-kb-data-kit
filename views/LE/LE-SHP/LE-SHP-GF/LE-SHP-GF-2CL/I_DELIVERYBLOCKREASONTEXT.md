@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryBlockReason` | ✓ | |  | `lifsp` |
-| `Language` | ✓ | |  | `spras` |
-| `DeliveryBlockReasonText` |  | |  | `vtext` |
-| `_DeliveryBlockReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryBlockReason` | ✓ | |  | `lifsp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `DeliveryBlockReasonText` |  | |  | `vtext` |  |  |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

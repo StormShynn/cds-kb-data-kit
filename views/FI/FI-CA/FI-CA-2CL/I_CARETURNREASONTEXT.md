@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAReturnReason` | ✓ | |  | `rlgrd` |
-| `HouseBank` | ✓ | |  | `hbkid` |
-| `Language` | ✓ | |  | `spras` |
-| `CAReturnReasonName` |  | |  | `rtext` |
-| `_HouseBank` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAReturnReason` | ✓ | |  | `rlgrd` |  |  |
+| `HouseBank` | ✓ | |  | `hbkid` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAReturnReasonName` |  | |  | `rtext` |  |  |
+| `_HouseBank` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

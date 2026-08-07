@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspAgreementItemUUID` | ✓ | |  | `cast(db_key as /scmtms/transpagrmt_itm_uuid preserving type)` |
-| `TransportationAgreementItem` |  | |  | `item_no` |
-| `TransportationAgreementUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_uuid preserving type)` |
-| `TranspCalculationSheetUUID` |  | |  | `cast(tccs_uuid as /scmtms/transpcalcsheet_uuid preserving type)` |
-| `TransportationStageCategory` |  | |  | `stage_cat` |
-| `TranspChargeCalculationSheet` |  | |  | `cast(tccs_id as /scmtms/vdm_fag_calc_sheet preserving type)` |
-| `TranspChargeItemIsHeaderCharge` |  | |  | `cast(is_header_charge as /scmtms/vdm_tcc_item_is_header preserving type)` |
-| `_TransportationStageCategory` | | ✓ | | |
-| `_TransportationAgreement` | | ✓ | | |
-| `_TranspAgrmtPaymentTerm` | | ✓ | | |
-| `_TranspChargeCalcSheet` | | ✓ | | |
-| `_TranspAgrmtItemDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspAgreementItemUUID` | ✓ | |  | `cast(db_key as /scmtms/transpagrmt_itm_uuid preserving type)` |  |  |
+| `TransportationAgreementItem` |  | |  | `item_no` |  |  |
+| `TransportationAgreementUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_uuid preserving type)` |  |  |
+| `TranspCalculationSheetUUID` |  | |  | `cast(tccs_uuid as /scmtms/transpcalcsheet_uuid preserving type)` |  |  |
+| `TransportationStageCategory` |  | |  | `stage_cat` |  |  |
+| `TranspChargeCalculationSheet` |  | |  | `cast(tccs_id as /scmtms/vdm_fag_calc_sheet preserving type)` |  |  |
+| `TranspChargeItemIsHeaderCharge` |  | |  | `cast(is_header_charge as /scmtms/vdm_tcc_item_is_header preserving type)` |  |  |
+| `_TransportationStageCategory` | | ✓ | | | | |
+| `_TransportationAgreement` | | ✓ | | | | |
+| `_TranspAgrmtPaymentTerm` | | ✓ | | | | |
+| `_TranspChargeCalcSheet` | | ✓ | | | | |
+| `_TranspAgrmtItemDescription` | | ✓ | | | | |
 
 ## Associations
 

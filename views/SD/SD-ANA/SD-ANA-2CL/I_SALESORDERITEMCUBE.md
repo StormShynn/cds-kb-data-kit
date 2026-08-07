@@ -31,370 +31,370 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  | `cast( SDIA.SalesDocument as vdm_sales_order preserving type )` |
-| `SalesOrderItem` | ✓ | |  | `cast( SDIA.SalesDocumentItem as sales_order_item preserving type )` |
-| `SalesOrderType` |  | |  | `SalesDocumentType` |
-| `SalesOrderItemCategory` |  | |  | `cast(SalesDocumentItemCategory as sales_order_item_category preserving type)` |
-| `SalesOrderItemType` |  | |  | `cast(SalesDocumentItemType as sales_order_item_type)` |
-| `IsReturnsItem` |  | |  | `cast(IsReturnsItem as returns_item_flag)` |
-| `CreatedByUser` |  | |  |  |
-| `CreatedByUserName` |  | |  | `cast(_CreatedByUser.UserDescription as created_by_user_name )` |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |
-| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |
-| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |
-| `LastChangeDate` |  | |  |  |
-| `SalesOrderDateYear` |  | |  | `cast(CalendarDateSalesOrder.CalendarYear as sales_order_date_year)` |
-| `SalesOrderDateYearQuarter` |  | |  | `cast(CalendarDateSalesOrder.YearQuarter as sales_order_date_year_quarter)` |
-| `SalesOrderDateYearMonth` |  | |  | `cast(CalendarDateSalesOrder.YearMonth as sales_order_date_year_month)` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  | `cast(OrganizationDivision as organization_division preserving type )` |
-| `SalesGroup` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `Division` |  | |  |  |
-| `PartnerCompany` |  | |  | `TradingPartner` |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `Batch` |  | |  | `, additionalBinding: [{ localElement: 'Plant', element: 'Plant'},{ localElement: 'Material', element: 'Material'} ] }] } Batch` |
-| `ProductHierarchyNode` |  | |  |  |
-| `ProductCatalog` |  | |  | `cast(ProductCatalog as product_catalog)` |
-| `MaterialSubstitutionReason` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ProductionPlantName` |  | | `_Plant` | `PlantName` |
-| `ProductionPlant` |  | |  | `Plant` |
-| `_ProductionPlant` |  | |  | `_Plant` |
-| `StorageLocation` |  | |  |  |
-| `StorageLocationName` |  | | `_StorageLocation` | `StorageLocationName` |
-| `ProductConfiguration` |  | |  | `cast(ProductConfiguration as product_configuration)` |
-| `MainItemPricingRefProduct` |  | |  |  |
-| `BillOfMaterial` |  | |  |  |
-| `PropagatePrftbltySgmt2BOM` |  | |  |  |
-| `CostDeterminationIsRequired` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SoldToPartyClassification` |  | |  | `CustomerClassification` |
-| `SoldToPartyName` |  | |  | `cast(SDIA._SoldToParty.CustomerName as vdm_sold_to_name)` |
-| `ShipToParty` |  | |  |  |
-| `ShipToPartyName` |  | |  | `cast(SDIA._ShipToParty.CustomerName as ship_to_name)` |
-| `PayerParty` |  | |  |  |
-| `PayerPartyName` |  | |  | `cast(SDIA._PayerParty.CustomerName as payer_name)` |
-| `BillToParty` |  | |  |  |
-| `BillToPartyName` |  | |  | `cast(SDIA._BillToParty.CustomerName as bill_to_name)` |
-| `SalesEmployee` |  | |  |  |
-| `SalesEmployeeName` |  | |  | `cast(_SalesEmployee_2.PersonFullName as sales_empl_name)` |
-| `ResponsibleEmployee` |  | |  |  |
-| `ResponsibleEmployeeName` |  | |  | `cast(_ResponsibleEmployee_2.PersonFullName as resp_empl_name)` |
-| `SalesEmployeeWorkAgreement` |  | |  |  |
-| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `CreditControlArea` |  | |  |  |
-| `CustomerRebateAgreement` |  | |  | `cast(CustomerRebateAgreement as customer_rebate_agreement)` |
-| `SalesOrderDate` |  | |  | `SalesDocumentDate` |
-| `SDDocumentReason` |  | |  |  |
-| `SDDocumentCollectiveNumber` |  | |  |  |
-| `CustomerPurchaseOrderType` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `CustomerPurchaseOrderSuplmnt` |  | |  |  |
-| `CustomerPurchaseOrderSupplemnt` |  | |  | `CustomerPurchaseOrderSuplmnt` |
-| `SalesOrderItemText` |  | |  | `cast(SalesDocumentItemText as sales_order_item_text)` |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `UnderlyingPurchaseOrderItem` |  | |  |  |
-| `OrderQuantity` |  | |  |  |
-| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |
-| `TargetDelivQtyInOrderQtyUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `ConfdDeliveryQtyInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `OrderToBaseQuantityDnmntr` |  | |  |  |
-| `OrderToBaseQuantityNmrtr` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetQuantityUnit` |  | |  |  |
-| `TargetToBaseQuantityDnmntr` |  | |  |  |
-| `TargetToBaseQuantityNmrtr` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `SalesDeal` |  | |  |  |
-| `SalesDealDescription` |  | |  | `cast(_SalesDeal.SalesDealDescription as sales_deal_description)` |
-| `SalesPromotion` |  | |  | `cast(SalesPromotion as sales_promotion)` |
-| `RetailPromotion` |  | |  | `cast(RetailPromotion as retail_promotion)` |
-| `CustomerGroup` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `ItemOrderProbabilityInPercent` |  | |  |  |
-| `OrderQuantityUnitDcmls` |  | |  | `UnitOfMeasureDspNmbrOfDcmls` |
-| `TotalNetAmount` |  | |  |  |
-| `SalesOrderCondition` |  | |  | `cast(SalesDocumentCondition as sales_order_condition)` |
-| `NetAmount` |  | |  |  |
-| `NetAmount_2` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
-| `NetAmountInDisplayCurrency` |  | |  | `cast (currency_conversion( amount => NetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as net_amount_in_dsp_crcy)` |
-| `IncomingSalesOrdersNetAmount` |  | |  |  |
-| `IncomingSalesOrdersQuantity` |  | |  |  |
-| `IncomingSalesOrdersNetAmtInDC` |  | |  | `cast (currency_conversion( amount => IncomingSalesOrdersNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as incg_sls_ords_net_amt_in_dc)` |
-| `NumberOfIncomingSlsOrderItems` |  | |  |  |
-| `OpnSOForOrdReltdInvcsNetAmount` |  | |  |  |
-| `OpnSOForOrdReltdInvcsNetAmtDC` |  | |  | `cast (currency_conversion( amount => OpnSOForOrdReltdInvcsNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_ords_for_ordrelinv_amt_idc)` |
-| `OpnSlsOrdsForDelivAmtInDspCrcy` |  | |  | `cast(OpnSlsOrdsForDelivAmtInDspCrcy as opn_ord_for_del_amt_idc)` |
-| `OpenConfdDelivQtyInBaseUnit` |  | |  | `cast(OpenConfdDelivQtyInBaseUnit as opn_ord_for_del_qty)` |
-| `OpenReqdDelivQtyInBaseUnit` |  | |  | `cast(OpenReqdDelivQtyInBaseUnit as opn_reqd_ord_for_del_qty)` |
-| `OpnSlsOrdsForInvcPlansNetAmtDC` |  | |  | `cast(OpnSlsOrdsForInvcPlansNetAmtDC as opn_ord_for_iplan_amt_idc)` |
-| `NumberOfOpenSalesOrderItems` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `NetPriceQuantityUnit` |  | |  |  |
-| `StatisticalValueControl` |  | |  |  |
-| `StatisticalValue` |  | |  | `StatisticalValueControl` |
-| `TaxAmount` |  | |  |  |
-| `CostAmount` |  | |  |  |
-| `Subtotal1Amount` |  | |  |  |
-| `Subtotal2Amount` |  | |  |  |
-| `Subtotal3Amount` |  | |  |  |
-| `Subtotal4Amount` |  | |  |  |
-| `Subtotal5Amount` |  | |  |  |
-| `Subtotal6Amount` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `CompleteDeliveryIsDefined` |  | |  |  |
-| `DeliveryBlockReason` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `Route` |  | |  |  |
-| `DeliveryDateQuantityIsFixed` |  | |  | `cast(DeliveryDateQuantityIsFixed as fixed_delivery_date_quantity)` |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `MaxNmbrOfPartialDelivery` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `MinDeliveryQtyInBaseUnit` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `OpenDeliveryLeadingUnitCode` |  | |  |  |
-| `ItemIsDeliveryRelevant` |  | |  |  |
-| `BillingCompanyCode` |  | |  |  |
-| `HeaderBillingBlockReason` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `ItemIsBillingRelevant` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  | `cast(ItemBillingBlockReason as billing_block_reason_item preserving type)` |
-| `BillingPlan` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `AdditionalValueDays` |  | |  |  |
-| `CustomerProject` |  | |  | `EngagementProject` |
-| `ExchangeRateType` |  | |  |  |
-| `CostCenterBusinessArea` |  | |  | `cast(CostCenterBusinessArea as business_area_cost_center preserving type)` |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ControllingAreaName` |  | | `_ControllingArea` | `ControllingAreaName` |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | | `_WBSElementBasicData_2` | `WBSElementExternalID` |
-| `OrderID` |  | |  |  |
-| `ControllingObject` |  | |  | `cast(ControllingObject as controlling_object)` |
-| `ProfitabilitySegment` |  | |  |  |
-| `ProfitabilitySegment_2` |  | |  |  |
-| `OriginSDDocument` |  | |  |  |
-| `OriginSDDocumentItem` |  | |  | `cast(OriginSDDocumentItem as origin_sd_document_item)` |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  | `cast(OverallSDProcessStatus as overall_sd_process_status preserving type)` |
-| `OverallPurchaseConfStatus` |  | |  | `cast(OverallPurchaseConfStatus as overall_purchase_conf_status preserving type)` |
-| `OverallSDDocumentRejectionSts` |  | |  | `cast(OverallSDDocumentRejectionSts as ovrl_sd_doc_rejection_status preserving type)` |
-| `TotalBlockStatus` |  | |  |  |
-| `OverallDelivConfStatus` |  | |  | `cast(OverallDelivConfStatus as overall_delivery_conf_status preserving type)` |
-| `OverallTotalDeliveryStatus` |  | |  | `cast(OverallTotalDeliveryStatus as itms_ovrl_delivery_status preserving type)` |
-| `OverallDeliveryStatus` |  | |  | `cast(OverallDeliveryStatus as overall_delivery_status preserving type)` |
-| `OverallDeliveryBlockStatus` |  | |  | `cast(OverallDeliveryBlockStatus as overall_delivery_block_status preserving type)` |
-| `OverallOrdReltdBillgStatus` |  | |  | `cast(OverallOrdReltdBillgStatus as ovrl_ord_rel_billg_status preserving type)` |
-| `OverallBillingBlockStatus` |  | |  | `cast(OverallBillingBlockStatus as overall_billing_block_status preserving type)` |
-| `OverallTotalSDDocRefStatus` |  | |  | `cast(OverallTotalSDDocRefStatus as ovrl_reference_status preserving type)` |
-| `OverallSDDocReferenceStatus` |  | |  | `cast(OverallSDDocReferenceStatus as ovrl_sd_doc_reference_status preserving type)` |
-| `TotalCreditCheckStatus` |  | |  |  |
-| `MaxDocValueCreditCheckStatus` |  | |  |  |
-| `PaymentTermCreditCheckStatus` |  | |  | `cast(PaymentTermCreditCheckStatus as payt_terms_credit_check_status preserving type)` |
-| `FinDocCreditCheckStatus` |  | |  |  |
-| `ExprtInsurCreditCheckStatus` |  | |  |  |
-| `PaytAuthsnCreditCheckSts` |  | |  |  |
-| `CentralCreditCheckStatus` |  | |  | `cast(CentralCreditCheckStatus as central_credit_check_status preserving type)` |
-| `CentralCreditChkTechErrSts` |  | |  | `cast(CentralCreditChkTechErrSts as centrl_crdt_chck_tech_err_sts preserving type)` |
-| `HdrGeneralIncompletionStatus` |  | |  | `cast(HdrGeneralIncompletionStatus as hdr_general_incompltn_status preserving type)` |
-| `OverallPricingIncompletionSts` |  | |  | `cast(OverallPricingIncompletionSts as ovrl_pricing_incompletion_sts preserving type)` |
-| `HeaderDelivIncompletionStatus` |  | |  | `cast(HeaderDelivIncompletionStatus as hdrdelivincompletionstatus preserving type )` |
-| `HeaderBillgIncompletionStatus` |  | |  | `cast(HeaderBillgIncompletionStatus as hdrbillgincompletionstatus preserving type )` |
-| `OvrlItmGeneralIncompletionSts` |  | |  | `cast(OvrlItmGeneralIncompletionSts as itms_ovrl_incompletion_status preserving type)` |
-| `OvrlItmBillingIncompletionSts` |  | |  | `cast(OvrlItmBillingIncompletionSts as ovrl_itms_incompltn_sts_billg preserving type)` |
-| `OvrlItmDelivIncompletionSts` |  | |  | `cast(OvrlItmDelivIncompletionSts as ovrl_items_dlv_incompltn_sts preserving type)` |
-| `SDProcessStatus` |  | |  | `cast(SDProcessStatus as sd_doc_process_status preserving type)` |
-| `DeliveryConfirmationStatus` |  | |  | `cast(DeliveryConfirmationStatus as delivery_confirmation_status preserving type)` |
-| `PurchaseConfirmationStatus` |  | |  | `cast(PurchaseConfirmationStatus as purchase_confirmation_status preserving type)` |
-| `TotalDeliveryStatus` |  | |  |  |
-| `DeliveryStatus` |  | |  |  |
-| `DeliveryBlockStatus` |  | |  |  |
-| `OrderRelatedBillingStatus` |  | |  |  |
-| `BillingBlockStatus` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  | `cast(ItemGeneralIncompletionStatus as item_general_incompletion_sts preserving type)` |
-| `ItemBillingIncompletionStatus` |  | |  | `cast(ItemBillingIncompletionStatus as itms_incompltn_sts_billg preserving type)` |
-| `PricingIncompletionStatus` |  | |  | `cast(PricingIncompletionStatus as pricing_incompletion_status preserving type)` |
-| `ItemDeliveryIncompletionStatus` |  | |  | `cast(ItemDeliveryIncompletionStatus as itm_deliv_incompletion_status preserving type)` |
-| `SDDocumentRejectionStatus` |  | |  | `cast(SDDocumentRejectionStatus as sd_doc_rejection_status preserving type)` |
-| `TotalSDDocReferenceStatus` |  | |  |  |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderType` | | ✓ | | |
-| `_CustomerProject` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SoldToPartyClassification` | | ✓ | | |
-| `_SalesEmployee` | | ✓ | | |
-| `_ResponsibleEmployee` | | ✓ | | |
-| `_SalesEmployee_2` | | ✓ | | |
-| `_ResponsibleEmployee_2` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_WBSElementExternalID` | | ✓ | | |
-| `_ScheduleLine` | | ✓ | | |
-| `_ItemCategory` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_OriginallyRequestedMaterial` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_ProductHierarchyNode` | | ✓ | | |
-| `_MaterialSubstitutionReason` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_AdditionalMaterialGroup1` | | ✓ | | |
-| `_AdditionalMaterialGroup2` | | ✓ | | |
-| `_AdditionalMaterialGroup3` | | ✓ | | |
-| `_AdditionalMaterialGroup4` | | ✓ | | |
-| `_AdditionalMaterialGroup5` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_CreditControlArea` | | ✓ | | |
-| `_SDDocumentReason` | | ✓ | | |
-| `_CustomerPurchaseOrderType` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_TargetQuantityUnit` | | ✓ | | |
-| `_ItemWeightUnit` | | ✓ | | |
-| `_ItemVolumeUnit` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_SalesDeal` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_SalesDocumentRjcnReason` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_NetPriceQuantityUnit` | | ✓ | | |
-| `_StatisticalValueControl` | | ✓ | | |
-| `_ShippingCondition` | | ✓ | | |
-| `_DeliveryBlockReason` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
-| `_ShippingType` | | ✓ | | |
-| `_DeliveryPriority` | | ✓ | | |
-| `_Route` | | ✓ | | |
-| `_PartialDeliveryItem` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_BillingCompanyCode` | | ✓ | | |
-| `_HeaderBillingBlockReason` | | ✓ | | |
-| `_ItemIsBillingRelevant` | | ✓ | | |
-| `_ItemBillingBlockReason` | | ✓ | | |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_ExchangeRateType` | | ✓ | | |
-| `_CostCenterBusinessArea` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_CustomerAccountAssgmtGroup` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_WBSElementBasicData_2` | | ✓ | | |
-| `_ReferenceSDDocument` | | ✓ | | |
-| `_ReferenceSDDocumentItem` | | ✓ | | |
-| `_ReferenceSDDocumentCategory` | | ✓ | | |
-| `_OverallSDProcessStatus` | | ✓ | | |
-| `_OverallPurchaseConfStatus` | | ✓ | | |
-| `_OverallSDDocumentRejectionSts` | | ✓ | | |
-| `_TotalBlockStatus` | | ✓ | | |
-| `_OverallDelivConfStatus` | | ✓ | | |
-| `_OverallTotalDeliveryStatus` | | ✓ | | |
-| `_OverallDeliveryStatus` | | ✓ | | |
-| `_OverallDeliveryBlockStatus` | | ✓ | | |
-| `_OverallOrdReltdBillgStatus` | | ✓ | | |
-| `_OverallBillingBlockStatus` | | ✓ | | |
-| `_OverallTotalSDDocRefStatus` | | ✓ | | |
-| `_OverallSDDocReferenceStatus` | | ✓ | | |
-| `_TotalCreditCheckStatus` | | ✓ | | |
-| `_MaxDocValueCreditCheckStatus` | | ✓ | | |
-| `_PaymentTermCreditCheckStatus` | | ✓ | | |
-| `_FinDocCreditCheckStatus` | | ✓ | | |
-| `_ExprtInsurCreditCheckStatus` | | ✓ | | |
-| `_PaytAuthsnCreditCheckSts` | | ✓ | | |
-| `_CentralCreditCheckStatus` | | ✓ | | |
-| `_CentralCreditChkTechErrSts` | | ✓ | | |
-| `_HdrGeneralIncompletionStatus` | | ✓ | | |
-| `_OverallPricingIncompletionSts` | | ✓ | | |
-| `_HeaderDelivIncompletionStatus` | | ✓ | | |
-| `_HeaderBillgIncompletionStatus` | | ✓ | | |
-| `_OvrlItmGeneralIncompletionSts` | | ✓ | | |
-| `_OvrlItmBillingIncompletionSts` | | ✓ | | |
-| `_OvrlItmDelivIncompletionSts` | | ✓ | | |
-| `_SDProcessStatus` | | ✓ | | |
-| `_DeliveryConfirmationStatus` | | ✓ | | |
-| `_PurchaseConfirmationStatus` | | ✓ | | |
-| `_TotalDeliveryStatus` | | ✓ | | |
-| `_DeliveryStatus` | | ✓ | | |
-| `_DeliveryBlockStatus` | | ✓ | | |
-| `_OrderRelatedBillingStatus` | | ✓ | | |
-| `_BillingBlockStatus` | | ✓ | | |
-| `_ItemGeneralIncompletionStatus` | | ✓ | | |
-| `_ItemBillingIncompletionStatus` | | ✓ | | |
-| `_PricingIncompletionStatus` | | ✓ | | |
-| `_ItemDelivIncompletionSts` | | ✓ | | |
-| `_SDDocumentRejectionStatus` | | ✓ | | |
-| `_TotalSDDocReferenceStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast( SDIA.SalesDocument as vdm_sales_order preserving type )` |  |  |
+| `SalesOrderItem` | ✓ | |  | `cast( SDIA.SalesDocumentItem as sales_order_item preserving type )` |  |  |
+| `SalesOrderType` |  | |  | `SalesDocumentType` |  |  |
+| `SalesOrderItemCategory` |  | |  | `cast(SalesDocumentItemCategory as sales_order_item_category preserving type)` |  |  |
+| `SalesOrderItemType` |  | |  | `cast(SalesDocumentItemType as sales_order_item_type)` |  |  |
+| `IsReturnsItem` |  | |  | `cast(IsReturnsItem as returns_item_flag)` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreatedByUserName` |  | |  | `cast(_CreatedByUser.UserDescription as created_by_user_name )` |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |  |  |
+| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |  |  |
+| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `SalesOrderDateYear` |  | |  | `cast(CalendarDateSalesOrder.CalendarYear as sales_order_date_year)` |  |  |
+| `SalesOrderDateYearQuarter` |  | |  | `cast(CalendarDateSalesOrder.YearQuarter as sales_order_date_year_quarter)` |  |  |
+| `SalesOrderDateYearMonth` |  | |  | `cast(CalendarDateSalesOrder.YearMonth as sales_order_date_year_month)` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  | `cast(OrganizationDivision as organization_division preserving type )` |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  | `TradingPartner` |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ProductHierarchyNode` |  | |  |  |  |  |
+| `ProductCatalog` |  | |  | `cast(ProductCatalog as product_catalog)` |  |  |
+| `MaterialSubstitutionReason` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ProductionPlantName` |  | | `_Plant` | `PlantName` |  |  |
+| `ProductionPlant` |  | |  | `Plant` |  |  |
+| `_ProductionPlant` |  | |  | `_Plant` |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `StorageLocationName` |  | | `_StorageLocation` | `StorageLocationName` |  |  |
+| `ProductConfiguration` |  | |  | `cast(ProductConfiguration as product_configuration)` |  |  |
+| `MainItemPricingRefProduct` |  | |  |  |  |  |
+| `BillOfMaterial` |  | |  |  |  |  |
+| `PropagatePrftbltySgmt2BOM` |  | |  |  |  |  |
+| `CostDeterminationIsRequired` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SoldToPartyClassification` |  | |  | `CustomerClassification` |  |  |
+| `SoldToPartyName` |  | |  | `cast(SDIA._SoldToParty.CustomerName as vdm_sold_to_name)` |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `ShipToPartyName` |  | |  | `cast(SDIA._ShipToParty.CustomerName as ship_to_name)` |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `PayerPartyName` |  | |  | `cast(SDIA._PayerParty.CustomerName as payer_name)` |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `BillToPartyName` |  | |  | `cast(SDIA._BillToParty.CustomerName as bill_to_name)` |  |  |
+| `SalesEmployee` |  | |  |  |  |  |
+| `SalesEmployeeName` |  | |  | `cast(_SalesEmployee_2.PersonFullName as sales_empl_name)` |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `ResponsibleEmployeeName` |  | |  | `cast(_ResponsibleEmployee_2.PersonFullName as resp_empl_name)` |  |  |
+| `SalesEmployeeWorkAgreement` |  | |  |  |  |  |
+| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `CreditControlArea` |  | |  |  |  |  |
+| `CustomerRebateAgreement` |  | |  | `cast(CustomerRebateAgreement as customer_rebate_agreement)` |  |  |
+| `SalesOrderDate` |  | |  | `SalesDocumentDate` |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `SDDocumentCollectiveNumber` |  | |  |  |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `CustomerPurchaseOrderSuplmnt` |  | |  |  |  |  |
+| `CustomerPurchaseOrderSupplemnt` |  | |  | `CustomerPurchaseOrderSuplmnt` |  |  |
+| `SalesOrderItemText` |  | |  | `cast(SalesDocumentItemText as sales_order_item_text)` |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `UnderlyingPurchaseOrderItem` |  | |  |  |  |  |
+| `OrderQuantity` |  | |  |  |  |  |
+| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `TargetDelivQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `ConfdDeliveryQtyInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `OrderToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `OrderToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetQuantityUnit` |  | |  |  |  |  |
+| `TargetToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `TargetToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `SalesDeal` |  | |  |  |  |  |
+| `SalesDealDescription` |  | |  | `cast(_SalesDeal.SalesDealDescription as sales_deal_description)` |  |  |
+| `SalesPromotion` |  | |  | `cast(SalesPromotion as sales_promotion)` |  |  |
+| `RetailPromotion` |  | |  | `cast(RetailPromotion as retail_promotion)` |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `ItemOrderProbabilityInPercent` |  | |  |  |  |  |
+| `OrderQuantityUnitDcmls` |  | |  | `UnitOfMeasureDspNmbrOfDcmls` |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `SalesOrderCondition` |  | |  | `cast(SalesDocumentCondition as sales_order_condition)` |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `NetAmount_2` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |  |  |
+| `NetAmountInDisplayCurrency` |  | |  | `cast (currency_conversion( amount => NetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as net_amount_in_dsp_crcy)` |  |  |
+| `IncomingSalesOrdersNetAmount` |  | |  |  |  |  |
+| `IncomingSalesOrdersQuantity` |  | |  |  |  |  |
+| `IncomingSalesOrdersNetAmtInDC` |  | |  | `cast (currency_conversion( amount => IncomingSalesOrdersNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as incg_sls_ords_net_amt_in_dc)` |  |  |
+| `NumberOfIncomingSlsOrderItems` |  | |  |  |  |  |
+| `OpnSOForOrdReltdInvcsNetAmount` |  | |  |  |  |  |
+| `OpnSOForOrdReltdInvcsNetAmtDC` |  | |  | `cast (currency_conversion( amount => OpnSOForOrdReltdInvcsNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_ords_for_ordrelinv_amt_idc)` |  |  |
+| `OpnSlsOrdsForDelivAmtInDspCrcy` |  | |  | `cast(OpnSlsOrdsForDelivAmtInDspCrcy as opn_ord_for_del_amt_idc)` |  |  |
+| `OpenConfdDelivQtyInBaseUnit` |  | |  | `cast(OpenConfdDelivQtyInBaseUnit as opn_ord_for_del_qty)` |  |  |
+| `OpenReqdDelivQtyInBaseUnit` |  | |  | `cast(OpenReqdDelivQtyInBaseUnit as opn_reqd_ord_for_del_qty)` |  |  |
+| `OpnSlsOrdsForInvcPlansNetAmtDC` |  | |  | `cast(OpnSlsOrdsForInvcPlansNetAmtDC as opn_ord_for_iplan_amt_idc)` |  |  |
+| `NumberOfOpenSalesOrderItems` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |  |  |
+| `StatisticalValueControl` |  | |  |  |  |  |
+| `StatisticalValue` |  | |  | `StatisticalValueControl` |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `CostAmount` |  | |  |  |  |  |
+| `Subtotal1Amount` |  | |  |  |  |  |
+| `Subtotal2Amount` |  | |  |  |  |  |
+| `Subtotal3Amount` |  | |  |  |  |  |
+| `Subtotal4Amount` |  | |  |  |  |  |
+| `Subtotal5Amount` |  | |  |  |  |  |
+| `Subtotal6Amount` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `CompleteDeliveryIsDefined` |  | |  |  |  |  |
+| `DeliveryBlockReason` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `Route` |  | |  |  |  |  |
+| `DeliveryDateQuantityIsFixed` |  | |  | `cast(DeliveryDateQuantityIsFixed as fixed_delivery_date_quantity)` |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `MaxNmbrOfPartialDelivery` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `MinDeliveryQtyInBaseUnit` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `OpenDeliveryLeadingUnitCode` |  | |  |  |  |  |
+| `ItemIsDeliveryRelevant` |  | |  |  |  |  |
+| `BillingCompanyCode` |  | |  |  |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `ItemIsBillingRelevant` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  | `cast(ItemBillingBlockReason as billing_block_reason_item preserving type)` |  |  |
+| `BillingPlan` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `AdditionalValueDays` |  | |  |  |  |  |
+| `CustomerProject` |  | |  | `EngagementProject` |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `CostCenterBusinessArea` |  | |  | `cast(CostCenterBusinessArea as business_area_cost_center preserving type)` |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ControllingAreaName` |  | | `_ControllingArea` | `ControllingAreaName` |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | | `_WBSElementBasicData_2` | `WBSElementExternalID` |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `ControllingObject` |  | |  | `cast(ControllingObject as controlling_object)` |  |  |
+| `ProfitabilitySegment` |  | |  |  |  |  |
+| `ProfitabilitySegment_2` |  | |  |  |  |  |
+| `OriginSDDocument` |  | |  |  |  |  |
+| `OriginSDDocumentItem` |  | |  | `cast(OriginSDDocumentItem as origin_sd_document_item)` |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  | `cast(OverallSDProcessStatus as overall_sd_process_status preserving type)` |  |  |
+| `OverallPurchaseConfStatus` |  | |  | `cast(OverallPurchaseConfStatus as overall_purchase_conf_status preserving type)` |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  | `cast(OverallSDDocumentRejectionSts as ovrl_sd_doc_rejection_status preserving type)` |  |  |
+| `TotalBlockStatus` |  | |  |  |  |  |
+| `OverallDelivConfStatus` |  | |  | `cast(OverallDelivConfStatus as overall_delivery_conf_status preserving type)` |  |  |
+| `OverallTotalDeliveryStatus` |  | |  | `cast(OverallTotalDeliveryStatus as itms_ovrl_delivery_status preserving type)` |  |  |
+| `OverallDeliveryStatus` |  | |  | `cast(OverallDeliveryStatus as overall_delivery_status preserving type)` |  |  |
+| `OverallDeliveryBlockStatus` |  | |  | `cast(OverallDeliveryBlockStatus as overall_delivery_block_status preserving type)` |  |  |
+| `OverallOrdReltdBillgStatus` |  | |  | `cast(OverallOrdReltdBillgStatus as ovrl_ord_rel_billg_status preserving type)` |  |  |
+| `OverallBillingBlockStatus` |  | |  | `cast(OverallBillingBlockStatus as overall_billing_block_status preserving type)` |  |  |
+| `OverallTotalSDDocRefStatus` |  | |  | `cast(OverallTotalSDDocRefStatus as ovrl_reference_status preserving type)` |  |  |
+| `OverallSDDocReferenceStatus` |  | |  | `cast(OverallSDDocReferenceStatus as ovrl_sd_doc_reference_status preserving type)` |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |  |  |
+| `MaxDocValueCreditCheckStatus` |  | |  |  |  |  |
+| `PaymentTermCreditCheckStatus` |  | |  | `cast(PaymentTermCreditCheckStatus as payt_terms_credit_check_status preserving type)` |  |  |
+| `FinDocCreditCheckStatus` |  | |  |  |  |  |
+| `ExprtInsurCreditCheckStatus` |  | |  |  |  |  |
+| `PaytAuthsnCreditCheckSts` |  | |  |  |  |  |
+| `CentralCreditCheckStatus` |  | |  | `cast(CentralCreditCheckStatus as central_credit_check_status preserving type)` |  |  |
+| `CentralCreditChkTechErrSts` |  | |  | `cast(CentralCreditChkTechErrSts as centrl_crdt_chck_tech_err_sts preserving type)` |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  | `cast(HdrGeneralIncompletionStatus as hdr_general_incompltn_status preserving type)` |  |  |
+| `OverallPricingIncompletionSts` |  | |  | `cast(OverallPricingIncompletionSts as ovrl_pricing_incompletion_sts preserving type)` |  |  |
+| `HeaderDelivIncompletionStatus` |  | |  | `cast(HeaderDelivIncompletionStatus as hdrdelivincompletionstatus preserving type )` |  |  |
+| `HeaderBillgIncompletionStatus` |  | |  | `cast(HeaderBillgIncompletionStatus as hdrbillgincompletionstatus preserving type )` |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  | `cast(OvrlItmGeneralIncompletionSts as itms_ovrl_incompletion_status preserving type)` |  |  |
+| `OvrlItmBillingIncompletionSts` |  | |  | `cast(OvrlItmBillingIncompletionSts as ovrl_itms_incompltn_sts_billg preserving type)` |  |  |
+| `OvrlItmDelivIncompletionSts` |  | |  | `cast(OvrlItmDelivIncompletionSts as ovrl_items_dlv_incompltn_sts preserving type)` |  |  |
+| `SDProcessStatus` |  | |  | `cast(SDProcessStatus as sd_doc_process_status preserving type)` |  |  |
+| `DeliveryConfirmationStatus` |  | |  | `cast(DeliveryConfirmationStatus as delivery_confirmation_status preserving type)` |  |  |
+| `PurchaseConfirmationStatus` |  | |  | `cast(PurchaseConfirmationStatus as purchase_confirmation_status preserving type)` |  |  |
+| `TotalDeliveryStatus` |  | |  |  |  |  |
+| `DeliveryStatus` |  | |  |  |  |  |
+| `DeliveryBlockStatus` |  | |  |  |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |  |  |
+| `BillingBlockStatus` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  | `cast(ItemGeneralIncompletionStatus as item_general_incompletion_sts preserving type)` |  |  |
+| `ItemBillingIncompletionStatus` |  | |  | `cast(ItemBillingIncompletionStatus as itms_incompltn_sts_billg preserving type)` |  |  |
+| `PricingIncompletionStatus` |  | |  | `cast(PricingIncompletionStatus as pricing_incompletion_status preserving type)` |  |  |
+| `ItemDeliveryIncompletionStatus` |  | |  | `cast(ItemDeliveryIncompletionStatus as itm_deliv_incompletion_status preserving type)` |  |  |
+| `SDDocumentRejectionStatus` |  | |  | `cast(SDDocumentRejectionStatus as sd_doc_rejection_status preserving type)` |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderType` | | ✓ | | | | |
+| `_CustomerProject` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SoldToPartyClassification` | | ✓ | | | | |
+| `_SalesEmployee` | | ✓ | | | | |
+| `_ResponsibleEmployee` | | ✓ | | | | |
+| `_SalesEmployee_2` | | ✓ | | | | |
+| `_ResponsibleEmployee_2` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_WBSElementExternalID` | | ✓ | | | | |
+| `_ScheduleLine` | | ✓ | | | | |
+| `_ItemCategory` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_OriginallyRequestedMaterial` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_ProductHierarchyNode` | | ✓ | | | | |
+| `_MaterialSubstitutionReason` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_CreditControlArea` | | ✓ | | | | |
+| `_SDDocumentReason` | | ✓ | | | | |
+| `_CustomerPurchaseOrderType` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_TargetQuantityUnit` | | ✓ | | | | |
+| `_ItemWeightUnit` | | ✓ | | | | |
+| `_ItemVolumeUnit` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_SalesDeal` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_SalesDocumentRjcnReason` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_NetPriceQuantityUnit` | | ✓ | | | | |
+| `_StatisticalValueControl` | | ✓ | | | | |
+| `_ShippingCondition` | | ✓ | | | | |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_ShippingType` | | ✓ | | | | |
+| `_DeliveryPriority` | | ✓ | | | | |
+| `_Route` | | ✓ | | | | |
+| `_PartialDeliveryItem` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_BillingCompanyCode` | | ✓ | | | | |
+| `_HeaderBillingBlockReason` | | ✓ | | | | |
+| `_ItemIsBillingRelevant` | | ✓ | | | | |
+| `_ItemBillingBlockReason` | | ✓ | | | | |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_ExchangeRateType` | | ✓ | | | | |
+| `_CostCenterBusinessArea` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_WBSElementBasicData_2` | | ✓ | | | | |
+| `_ReferenceSDDocument` | | ✓ | | | | |
+| `_ReferenceSDDocumentItem` | | ✓ | | | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | | | |
+| `_OverallSDProcessStatus` | | ✓ | | | | |
+| `_OverallPurchaseConfStatus` | | ✓ | | | | |
+| `_OverallSDDocumentRejectionSts` | | ✓ | | | | |
+| `_TotalBlockStatus` | | ✓ | | | | |
+| `_OverallDelivConfStatus` | | ✓ | | | | |
+| `_OverallTotalDeliveryStatus` | | ✓ | | | | |
+| `_OverallDeliveryStatus` | | ✓ | | | | |
+| `_OverallDeliveryBlockStatus` | | ✓ | | | | |
+| `_OverallOrdReltdBillgStatus` | | ✓ | | | | |
+| `_OverallBillingBlockStatus` | | ✓ | | | | |
+| `_OverallTotalSDDocRefStatus` | | ✓ | | | | |
+| `_OverallSDDocReferenceStatus` | | ✓ | | | | |
+| `_TotalCreditCheckStatus` | | ✓ | | | | |
+| `_MaxDocValueCreditCheckStatus` | | ✓ | | | | |
+| `_PaymentTermCreditCheckStatus` | | ✓ | | | | |
+| `_FinDocCreditCheckStatus` | | ✓ | | | | |
+| `_ExprtInsurCreditCheckStatus` | | ✓ | | | | |
+| `_PaytAuthsnCreditCheckSts` | | ✓ | | | | |
+| `_CentralCreditCheckStatus` | | ✓ | | | | |
+| `_CentralCreditChkTechErrSts` | | ✓ | | | | |
+| `_HdrGeneralIncompletionStatus` | | ✓ | | | | |
+| `_OverallPricingIncompletionSts` | | ✓ | | | | |
+| `_HeaderDelivIncompletionStatus` | | ✓ | | | | |
+| `_HeaderBillgIncompletionStatus` | | ✓ | | | | |
+| `_OvrlItmGeneralIncompletionSts` | | ✓ | | | | |
+| `_OvrlItmBillingIncompletionSts` | | ✓ | | | | |
+| `_OvrlItmDelivIncompletionSts` | | ✓ | | | | |
+| `_SDProcessStatus` | | ✓ | | | | |
+| `_DeliveryConfirmationStatus` | | ✓ | | | | |
+| `_PurchaseConfirmationStatus` | | ✓ | | | | |
+| `_TotalDeliveryStatus` | | ✓ | | | | |
+| `_DeliveryStatus` | | ✓ | | | | |
+| `_DeliveryBlockStatus` | | ✓ | | | | |
+| `_OrderRelatedBillingStatus` | | ✓ | | | | |
+| `_BillingBlockStatus` | | ✓ | | | | |
+| `_ItemGeneralIncompletionStatus` | | ✓ | | | | |
+| `_ItemBillingIncompletionStatus` | | ✓ | | | | |
+| `_PricingIncompletionStatus` | | ✓ | | | | |
+| `_ItemDelivIncompletionSts` | | ✓ | | | | |
+| `_SDDocumentRejectionStatus` | | ✓ | | | | |
+| `_TotalSDDocReferenceStatus` | | ✓ | | | | |
 
 ## Associations
 

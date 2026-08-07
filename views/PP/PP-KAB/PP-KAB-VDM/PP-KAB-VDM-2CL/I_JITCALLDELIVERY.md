@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITCallNumber` | ✓ | |  | `pabnum` |
-| `JITCallItemNumber` | ✓ | |  | `cast(pabpos as njit_call_item_num preserving type)` |
-| `DeliveryDocument` | ✓ | |  | `vbeln` |
-| `DeliveryDocumentItem` | ✓ | |  | `posnr` |
-| `JITCallGoodsReceiptQuantity` |  | |  | `pabavm` |
-| `BaseUnit` |  | | `_SummarizedJITCallItem` | `BaseUnit` |
-| `JITCallGoodsReceiptIsPosted` |  | |  | `partgr` |
-| `Plant` |  | | `_SummarizedJITCall` | `Plant` |
-| `Supplier` |  | | `_DeliveryDocument` | `Supplier` |
-| `_SummarizedJITCall` | | ✓ | | |
-| `_SummarizedJITCallItem` | | ✓ | | |
-| `_DeliveryDocument` | | ✓ | | |
-| `_DeliveryDocumentItem` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITCallNumber` | ✓ | |  | `pabnum` |  |  |
+| `JITCallItemNumber` | ✓ | |  | `cast(pabpos as njit_call_item_num preserving type)` |  |  |
+| `DeliveryDocument` | ✓ | |  | `vbeln` |  |  |
+| `DeliveryDocumentItem` | ✓ | |  | `posnr` |  |  |
+| `JITCallGoodsReceiptQuantity` |  | |  | `pabavm` |  |  |
+| `BaseUnit` |  | | `_SummarizedJITCallItem` | `BaseUnit` |  |  |
+| `JITCallGoodsReceiptIsPosted` |  | |  | `partgr` |  |  |
+| `Plant` |  | | `_SummarizedJITCall` | `Plant` |  |  |
+| `Supplier` |  | | `_DeliveryDocument` | `Supplier` |  |  |
+| `_SummarizedJITCall` | | ✓ | | | | |
+| `_SummarizedJITCallItem` | | ✓ | | | | |
+| `_DeliveryDocument` | | ✓ | | | | |
+| `_DeliveryDocumentItem` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
 
 ## Associations
 

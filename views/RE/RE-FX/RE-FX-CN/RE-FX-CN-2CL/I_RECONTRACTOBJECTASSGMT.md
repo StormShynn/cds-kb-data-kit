@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REStatusObjectSource` | ✓ | | `_REObjectAssgmt` | `REStatusObjectSource` |
-| `REObjectAssignmentType` | ✓ | | `_REObjectAssgmt` | `REObjectAssignmentType` |
-| `REStatusObjectTarget` | ✓ | | `_REObjectAssgmt` | `REStatusObjectTarget` |
-| `ValidityStartDate` | ✓ | | `_REObjectAssgmt` | `ValidityStartDate` |
-| `ValidityEndDate` |  | | `_REObjectAssgmt` | `ValidityEndDate` |
-| `REOnlyInfoAssgmt` |  | | `_REObjectAssgmt` | `REOnlyInfoAssgmt` |
-| `REStatusObjectSourceIsArchived` |  | | `_REObjectAssgmt` | `REStatusObjectSourceIsArchived` |
-| `REGenerationType` |  | | `_REObjectAssgmt` | `REGenerationType` |
-| `REIsMainAsset` |  | | `_REObjectAssgmt` | `REIsMainAsset` |
-| `REAssignmentHasMultiple` |  | | `_REObjectAssgmt` | `REAssignmentHasMultiple` |
-| `REObjectPossessionStartDate` |  | | `_REObjectAssgmt` | `REObjectPossessionStartDate` |
-| `REObjectPossessionEndDate` |  | | `_REObjectAssgmt` | `REObjectPossessionEndDate` |
-| `REIsLeadingObject` |  | | `_REObjectAssgmt` | `REIsLeadingObject` |
-| `_REContract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REStatusObjectSource` | ✓ | | `_REObjectAssgmt` | `REStatusObjectSource` |  |  |
+| `REObjectAssignmentType` | ✓ | | `_REObjectAssgmt` | `REObjectAssignmentType` |  |  |
+| `REStatusObjectTarget` | ✓ | | `_REObjectAssgmt` | `REStatusObjectTarget` |  |  |
+| `ValidityStartDate` | ✓ | | `_REObjectAssgmt` | `ValidityStartDate` |  |  |
+| `ValidityEndDate` |  | | `_REObjectAssgmt` | `ValidityEndDate` |  |  |
+| `REOnlyInfoAssgmt` |  | | `_REObjectAssgmt` | `REOnlyInfoAssgmt` |  |  |
+| `REStatusObjectSourceIsArchived` |  | | `_REObjectAssgmt` | `REStatusObjectSourceIsArchived` |  |  |
+| `REGenerationType` |  | | `_REObjectAssgmt` | `REGenerationType` |  |  |
+| `REIsMainAsset` |  | | `_REObjectAssgmt` | `REIsMainAsset` |  |  |
+| `REAssignmentHasMultiple` |  | | `_REObjectAssgmt` | `REAssignmentHasMultiple` |  |  |
+| `REObjectPossessionStartDate` |  | | `_REObjectAssgmt` | `REObjectPossessionStartDate` |  |  |
+| `REObjectPossessionEndDate` |  | | `_REObjectAssgmt` | `REObjectPossessionEndDate` |  |  |
+| `REIsLeadingObject` |  | | `_REObjectAssgmt` | `REIsLeadingObject` |  |  |
+| `_REContract` | | ✓ | | | | |
 
 ## Associations
 

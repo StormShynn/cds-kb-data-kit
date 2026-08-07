@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnStatus` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_status_kk preserving type)` |
-| `_CABillgPlnStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnStatus` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_status_kk preserving type)` |  |  |
+| `_CABillgPlnStatusText` | | ✓ | | | | |
 
 ## Associations
 

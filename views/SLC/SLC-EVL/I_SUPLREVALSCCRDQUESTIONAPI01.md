@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalSccrdQuestionUUID` | ✓ | |  |  |
-| `SuplrEvalSccrdUUID` |  | |  |  |
-| `SuplrEvalSccrdSectionUUID` |  | |  |  |
-| `SuplrEvalReqQuestionUUID` |  | |  |  |
-| `SupplierEvalQuestion` |  | |  |  |
-| `SupplierEvalRequestQuestion` |  | |  |  |
-| `QuestionName` |  | |  |  |
-| `SLCQuestionType` |  | |  |  |
-| `WeightingFactor` |  | |  |  |
-| `MinimalScore` |  | |  |  |
-| `TargetScore` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalSccrdQuestionUUID` | ✓ | |  |  |  |  |
+| `SuplrEvalSccrdUUID` |  | |  |  |  |  |
+| `SuplrEvalSccrdSectionUUID` |  | |  |  |  |  |
+| `SuplrEvalReqQuestionUUID` |  | |  |  |  |  |
+| `SupplierEvalQuestion` |  | |  |  |  |  |
+| `SupplierEvalRequestQuestion` |  | |  |  |  |  |
+| `QuestionName` |  | |  |  |  |  |
+| `SLCQuestionType` |  | |  |  |  |  |
+| `WeightingFactor` |  | |  |  |  |  |
+| `MinimalScore` |  | |  |  |  |  |
+| `TargetScore` |  | |  |  |  |  |
 
 ## Source Code
 

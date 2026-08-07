@@ -31,52 +31,52 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocument` | ✓ | |  |  |
-| `SDDocumentCategory` |  | |  |  |
-| `SalesDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `CustomerCreditAccount` |  | |  |  |
-| `ReleasedCreditAmount` |  | |  |  |
-| `ControllingAreaCurrency` |  | |  |  |
-| `CreditBlockReleaseDate` |  | |  |  |
-| `NextShippingDate` |  | |  |  |
-| `NextCreditCheckDate` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  | `cast( ' ' as abgru_va )` |
-| `FinDocCreditCheckStatus` |  | |  |  |
-| `TotalCreditCheckStatus` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `CentralCreditCheckStatus` |  | |  |  |
-| `CentralCreditChkTechErrSts` |  | |  |  |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_SalesDocumentType` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_FinDocCreditCheckStatus` | | ✓ | | |
-| `_TotalCreditCheckStatus` | | ✓ | | |
-| `_OverallSDProcessStatus` | | ✓ | | |
-| `_CentralCreditCheckStatus` | | ✓ | | |
-| `_CentralCreditChkTechErrSts` | | ✓ | | |
-| `_CustomerCreditAccount` | | ✓ | | |
-| `_ControllingAreaCurrency` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_SalesDocumentRjcnReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  |  |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `SalesDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `CustomerCreditAccount` |  | |  |  |  |  |
+| `ReleasedCreditAmount` |  | |  |  |  |  |
+| `ControllingAreaCurrency` |  | |  |  |  |  |
+| `CreditBlockReleaseDate` |  | |  |  |  |  |
+| `NextShippingDate` |  | |  |  |  |  |
+| `NextCreditCheckDate` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  | `cast( ' ' as abgru_va )` |  |  |
+| `FinDocCreditCheckStatus` |  | |  |  |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `CentralCreditCheckStatus` |  | |  |  |  |  |
+| `CentralCreditChkTechErrSts` |  | |  |  |  |  |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_SalesDocumentType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_FinDocCreditCheckStatus` | | ✓ | | | | |
+| `_TotalCreditCheckStatus` | | ✓ | | | | |
+| `_OverallSDProcessStatus` | | ✓ | | | | |
+| `_CentralCreditCheckStatus` | | ✓ | | | | |
+| `_CentralCreditChkTechErrSts` | | ✓ | | | | |
+| `_CustomerCreditAccount` | | ✓ | | | | |
+| `_ControllingAreaCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_SalesDocumentRjcnReason` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABllbleItmClass` | ✓ | | `_tfk8101t` | `bitcat` |
-| `Language` | ✓ | | `_tfk8101t` | `langu` |
-| `CABllbleItmClassText` |  | | `_tfk8101t` | `bitcat_txt` |
-| `_CABllbleItmClass` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABllbleItmClass` | ✓ | | `_tfk8101t` | `bitcat` |  |  |
+| `Language` | ✓ | | `_tfk8101t` | `langu` |  |  |
+| `CABllbleItmClassText` |  | | `_tfk8101t` | `bitcat_txt` |  |  |
+| `_CABllbleItmClass` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

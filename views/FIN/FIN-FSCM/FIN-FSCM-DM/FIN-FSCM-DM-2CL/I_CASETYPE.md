@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CaseType` | ✓ | |  | `cast( case_type as scmgcase_type preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseType` | ✓ | |  | `cast( case_type as scmgcase_type preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

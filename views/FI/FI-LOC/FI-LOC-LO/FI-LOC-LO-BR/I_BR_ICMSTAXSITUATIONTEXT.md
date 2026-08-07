@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `BR_ICMSTaxSituation` | ✓ | |  | `cast(case substring( domvalue_l, 1, 1 ) when 'A' then '41' when 'B' then '51' else concat(substring( domvalue_l, 1, 1 ), '0') end as logbr_taxsit)` |
-| `BR_ICMSTaxSituationDesc` |  | |  | `cast(ddtext as logbr_icmstaxsituation preserving type)` |
-| `_BR_ICMSTaxSituation` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `BR_ICMSTaxSituation` | ✓ | |  | `cast(case substring( domvalue_l, 1, 1 ) when 'A' then '41' when 'B' then '51' else concat(substring( domvalue_l, 1, 1 ), '0') end as logbr_taxsit)` |  |  |
+| `BR_ICMSTaxSituationDesc` |  | |  | `cast(ddtext as logbr_icmstaxsituation preserving type)` |  |  |
+| `_BR_ICMSTaxSituation` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

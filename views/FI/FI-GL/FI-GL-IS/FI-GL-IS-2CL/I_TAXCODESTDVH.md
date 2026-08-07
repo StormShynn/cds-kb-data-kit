@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaxCalculationProcedure` | ✓ | |  |  |
-| `TaxCode` | ✓ | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxCalculationProcedure` | ✓ | |  |  |  |  |
+| `TaxCode` | ✓ | |  |  |  |  |
 
 ## Source Code
 

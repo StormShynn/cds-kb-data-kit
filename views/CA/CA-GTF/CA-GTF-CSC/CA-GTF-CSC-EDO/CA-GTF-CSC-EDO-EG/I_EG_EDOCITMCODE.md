@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `EG_EDocMaterial` | ✓ | |  |  |
-| `EG_EDocItmType` |  | |  |  |
-| `EG_EDocItmCode` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `EG_EDocMaterial` | ✓ | |  |  |  |  |
+| `EG_EDocItmType` |  | |  |  |  |  |
+| `EG_EDocItmCode` |  | |  |  |  |  |
 
 ## Source Code
 

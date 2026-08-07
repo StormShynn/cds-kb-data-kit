@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionResultStatus` | ✓ | |  | `status` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionResultStatus` | ✓ | |  | `status` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

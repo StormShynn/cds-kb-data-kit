@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrder` | ✓ | |  |  |
-| `ServiceOrderItem` | ✓ | |  |  |
-| `ServiceEntrySheet` | ✓ | |  |  |
-| `ServiceEntrySheetItem` | ✓ | |  |  |
-| `_ServiceOrderItem` | | ✓ | | |
-| `_ServiceOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |  |  |
+| `ServiceEntrySheet` | ✓ | |  |  |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |  |  |
+| `_ServiceOrderItem` | | ✓ | | | | |
+| `_ServiceOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

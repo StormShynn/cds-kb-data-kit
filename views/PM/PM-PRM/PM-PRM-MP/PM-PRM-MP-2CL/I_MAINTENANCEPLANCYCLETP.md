@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenancePlan` | ✓ | |  |  |
-| `MaintenancePlanCycle` | ✓ | |  |  |
-| `MaintenanceStrategy` |  | |  |  |
-| `MaintPlanCycRcrrcIntervalQty` |  | |  |  |
-| `MaintPlanCycRcrrcIntervalUnit` |  | |  |  |
-| `MaintPlanCycleDesc` |  | |  |  |
-| `MeasuringPoint` |  | |  |  |
-| `MaintPlanCycleStartOffsetValue` |  | |  |  |
-| `MaintCycleNextPlndCntrRdng` |  | |  |  |
-| `MaintenancePlanCycleIsInactive` |  | |  |  |
-| `CycleSetSequence` |  | |  |  |
-| `CycleSetSequenceRepeatFactor` |  | |  |  |
-| `MaintPlnStrtBufDurationInDays` |  | |  |  |
-| `CharcValueUnit` |  | |  |  |
-| `_MaintenancePlan` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlan` | ✓ | |  |  |  |  |
+| `MaintenancePlanCycle` | ✓ | |  |  |  |  |
+| `MaintenanceStrategy` |  | |  |  |  |  |
+| `MaintPlanCycRcrrcIntervalQty` |  | |  |  |  |  |
+| `MaintPlanCycRcrrcIntervalUnit` |  | |  |  |  |  |
+| `MaintPlanCycleDesc` |  | |  |  |  |  |
+| `MeasuringPoint` |  | |  |  |  |  |
+| `MaintPlanCycleStartOffsetValue` |  | |  |  |  |  |
+| `MaintCycleNextPlndCntrRdng` |  | |  |  |  |  |
+| `MaintenancePlanCycleIsInactive` |  | |  |  |  |  |
+| `CycleSetSequence` |  | |  |  |  |  |
+| `CycleSetSequenceRepeatFactor` |  | |  |  |  |  |
+| `MaintPlnStrtBufDurationInDays` |  | |  |  |  |  |
+| `CharcValueUnit` |  | |  |  |  |  |
+| `_MaintenancePlan` | | ✓ | | | | |
 
 ## Source Code
 

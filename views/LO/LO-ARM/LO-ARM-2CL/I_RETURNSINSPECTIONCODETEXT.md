@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReturnsInspectionCode` | ✓ | |  | `code` |
-| `Language` | ✓ | |  | `sprache` |
-| `ReturnsInspectionCodeDesc` |  | |  | `cast(InspCtlgCodeTxt.kurztext as vdm_qtxt_code preserving type)` |
-| `_ReturnsInspectionCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReturnsInspectionCode` | ✓ | |  | `code` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `ReturnsInspectionCodeDesc` |  | |  | `cast(InspCtlgCodeTxt.kurztext as vdm_qtxt_code preserving type)` |  |  |
+| `_ReturnsInspectionCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

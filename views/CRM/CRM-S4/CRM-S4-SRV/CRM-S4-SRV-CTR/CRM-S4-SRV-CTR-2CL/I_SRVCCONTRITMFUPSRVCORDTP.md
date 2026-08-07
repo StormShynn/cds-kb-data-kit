@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `ServiceContractItem` | ✓ | |  |  |
-| `ServiceOrder` | ✓ | |  |  |
-| `ServiceOrderItem` | ✓ | |  |  |
-| `_ServiceContractItemTP` | | ✓ | | |
-| `_ServiceContractTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `ServiceContractItem` | ✓ | |  |  |  |  |
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |  |  |
+| `_ServiceContractItemTP` | | ✓ | | | | |
+| `_ServiceContractTP` | | ✓ | | | | |
 
 ## Source Code
 

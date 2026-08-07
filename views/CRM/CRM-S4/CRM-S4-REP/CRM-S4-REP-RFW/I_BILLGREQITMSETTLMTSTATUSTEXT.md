@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillgReqItemBillingStatus` | ✓ | |  | `domvalue_l` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BillgReqItemBillingStatusName` |  | |  | `ddtext` |
-| `_BillgReqItmSettlmtStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillgReqItemBillingStatus` | ✓ | |  | `domvalue_l` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BillgReqItemBillingStatusName` |  | |  | `ddtext` |  |  |
+| `_BillgReqItmSettlmtStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

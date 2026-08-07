@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | | `_CnsldtnCustomer` | `Customer` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnCustomer` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnCustomerTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnCustomerTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | | `_CnsldtnCustomer` | `Customer` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnCustomer` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnCustomerTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnCustomerTextTP` |  |  |
 
 ## Source Code
 

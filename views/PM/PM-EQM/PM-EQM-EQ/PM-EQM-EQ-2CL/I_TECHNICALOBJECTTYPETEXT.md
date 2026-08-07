@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TechnicalObjectType` | ✓ | |  | `eqart` |
-| `Language` | ✓ | |  | `spras` |
-| `TechnicalObjectTypeDesc` |  | |  | `eartx` |
-| `_TechnicalObjectType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TechnicalObjectType` | ✓ | |  | `eqart` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TechnicalObjectTypeDesc` |  | |  | `eartx` |  |  |
+| `_TechnicalObjectType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

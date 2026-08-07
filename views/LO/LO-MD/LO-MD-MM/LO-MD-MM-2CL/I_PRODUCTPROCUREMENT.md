@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `matnr` |
-| `PurchaseOrderQuantityUnit` |  | |  | `bstme` |
-| `VarblPurOrdUnitStatus` |  | |  | `vabme` |
-| `PurchasingAcknProfile` |  | |  | `ekwsl` |
-| `ProcurementRule` |  | |  | `bwvor` |
-| `SourceOfSupplyCategory` |  | |  | `bwscl` |
-| `PurchasingGroup` |  | | `_ProductRetail` | `PurchasingGroup` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `_Product` | | ✓ | | |
-| `_ProductRetail` | | ✓ | | |
-| `_PurchaseOrderQuantityUnit` | | ✓ | | |
-| `_PurchaseOrderUnitText` | | ✓ | | |
-| `_SourceOfSupplyCategory` | | ✓ | | |
-| `_SourceOfSupplyCategoryText` | | ✓ | | |
-| `_VarblPurOrdUnitActvStatus` | | ✓ | | |
-| `_VarblPurOrdUnitActvStatusText` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  | `bstme` |  |  |
+| `VarblPurOrdUnitStatus` |  | |  | `vabme` |  |  |
+| `PurchasingAcknProfile` |  | |  | `ekwsl` |  |  |
+| `ProcurementRule` |  | |  | `bwvor` |  |  |
+| `SourceOfSupplyCategory` |  | |  | `bwscl` |  |  |
+| `PurchasingGroup` |  | | `_ProductRetail` | `PurchasingGroup` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductRetail` | | ✓ | | | | |
+| `_PurchaseOrderQuantityUnit` | | ✓ | | | | |
+| `_PurchaseOrderUnitText` | | ✓ | | | | |
+| `_SourceOfSupplyCategory` | | ✓ | | | | |
+| `_SourceOfSupplyCategoryText` | | ✓ | | | | |
+| `_VarblPurOrdUnitActvStatus` | | ✓ | | | | |
+| `_VarblPurOrdUnitActvStatusText` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Associations
 

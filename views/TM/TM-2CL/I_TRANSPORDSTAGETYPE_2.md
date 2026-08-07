@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdStageType` | ✓ | |  | `stage_type` |
-| `TranspOrdStageCategory` |  | |  | `stage_cat` |
-| `_TranspOrdStageCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStageType` | ✓ | |  | `stage_type` |  |  |
+| `TranspOrdStageCategory` |  | |  | `stage_cat` |  |  |
+| `_TranspOrdStageCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

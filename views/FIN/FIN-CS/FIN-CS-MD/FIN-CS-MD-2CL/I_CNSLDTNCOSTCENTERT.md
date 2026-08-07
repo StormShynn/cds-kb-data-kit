@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `CostCenter` |  | |  | `}] key cast( _Source.CostCenter as fincs_costcenter preserving type )` |
-| `ControllingArea` | ✓ | |  | `cast( _Source.ControllingArea as fincs_controllingarea preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast( _Source.CostCenterName as fincs_description_text_20 preserving type )` |
-| `CostCenterName` |  | |  | `cast( _Source.CostCenterName as fincs_costcentername preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `CostCenter` | ✓ | |  | `cast( _Source.CostCenter as fincs_costcenter preserving type )` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( _Source.ControllingArea as fincs_controllingarea preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.CostCenterName as fincs_description_text_20 preserving type )` |  |  |
+| `CostCenterName` |  | |  | `cast( _Source.CostCenterName as fincs_costcentername preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
 
 ## Associations
 

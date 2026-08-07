@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PricingProcedure` | ✓ | |  |  |
-| `ConditionUsage` |  | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `InclusionPoint` |  | |  |  |
-| `_SlsPricingProcedureItem` | | ✓ | | |
-| `_ConditionUsage` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingProcedure` | ✓ | |  |  |  |  |
+| `ConditionUsage` |  | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `InclusionPoint` |  | |  |  |  |  |
+| `_SlsPricingProcedureItem` | | ✓ | | | | |
+| `_ConditionUsage` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

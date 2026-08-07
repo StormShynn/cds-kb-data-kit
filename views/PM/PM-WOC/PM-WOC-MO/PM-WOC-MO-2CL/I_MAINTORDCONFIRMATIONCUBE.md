@@ -29,79 +29,79 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintOrderConf` | ✓ | |  |  |
-| `MaintOrderConfCntrValue` | ✓ | |  |  |
-| `MaintOrderConfirmationEntryDte` |  | |  |  |
-| `MaintOrderOperationCounter` |  | |  |  |
-| `EnteredByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `ConfirmationText` |  | |  |  |
-| `Language` |  | |  |  |
-| `LongTextExists` |  | |  |  |
-| `ActualWorkQuantity` |  | |  |  |
-| `ActualWorkQuantityUnit` |  | |  |  |
-| `ActivityType` |  | |  |  |
-| `EmployeeWageType` |  | |  |  |
-| `ConfirmationUnit` |  | |  |  |
-| `VarianceReasonCode` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `OperationConfirmedStartDate` |  | |  |  |
-| `OperationConfirmedStartTime` |  | |  |  |
-| `MaintOrderRoutingNumber` |  | |  |  |
-| `MaintOrdOpWrkExecStartDateTime` |  | |  |  |
-| `OperationConfirmedEndDate` |  | |  |  |
-| `OperationConfirmedEndTime` |  | |  |  |
-| `MaintOrdOpWrkExecEndDateTime` |  | |  |  |
-| `ActyConfFcstdEndDate` |  | |  |  |
-| `ActyConfFcstdEndTime` |  | |  |  |
-| `MaintOrdOpFcstdEndDateTime` |  | |  |  |
-| `IsFinalConfirmation` |  | |  |  |
-| `OpenReservationsIsCleared` |  | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `MaintenanceOrderOperation` |  | |  |  |
-| `MaintenanceOrderSubOperation` |  | |  |  |
-| `RemainingWorkQuantity` |  | |  |  |
-| `RemainingWorkQuantityUnit` |  | |  |  |
-| `NoFurtherWorkQuantityIsExpd` |  | |  |  |
-| `IsReversed` |  | |  |  |
-| `IsReversal` |  | |  |  |
-| `CancldMaintOrderConfCntrValue` |  | |  |  |
-| `AccountingIndicatorCode` |  | |  |  |
-| `EnteredByExternalUser` |  | |  |  |
-| `ConfirmationExternalEntryDate` |  | |  |  |
-| `ConfirmationExternalEntryTime` |  | |  |  |
-| `ActualWorkExternalQuantityUnit` |  | |  |  |
-| `RemainingWorkExtQuantityUnit` |  | |  |  |
-| `Plant` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `MaintOrderOperationInternalID` |  | |  |  |
-| `CapacityInternalID` |  | |  |  |
-| `EmployeeWageGroup` |  | |  |  |
-| `NmbrOfMaintTechnicianCapSplits` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `AddressTimeZone` |  | |  |  |
-| `UserEnteredTimeZone` |  | |  |  |
-| `PlantTimeZone` |  | |  |  |
-| `_ActualWorkCenter` | | ✓ | | |
-| `_ActualWorkExtQuantityUnit` | | ✓ | | |
-| `_ConfirmationGroup` | | ✓ | | |
-| `_EnteredByUser` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_LastChangeByUser` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintenanceOrderOperation` | | ✓ | | |
-| `_MaintOrderConfGoodsMovement` | | ✓ | | |
-| `_OrderConfLongText` | | ✓ | | |
-| `_PersonnelName` | | ✓ | | |
-| `_PersonResponsible` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_RemainingWorkExtQuantityUnit` | | ✓ | | |
-| `_VarianceReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrderConf` | ✓ | |  |  |  |  |
+| `MaintOrderConfCntrValue` | ✓ | |  |  |  |  |
+| `MaintOrderConfirmationEntryDte` |  | |  |  |  |  |
+| `MaintOrderOperationCounter` |  | |  |  |  |  |
+| `EnteredByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `ConfirmationText` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `LongTextExists` |  | |  |  |  |  |
+| `ActualWorkQuantity` |  | |  |  |  |  |
+| `ActualWorkQuantityUnit` |  | |  |  |  |  |
+| `ActivityType` |  | |  |  |  |  |
+| `EmployeeWageType` |  | |  |  |  |  |
+| `ConfirmationUnit` |  | |  |  |  |  |
+| `VarianceReasonCode` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `OperationConfirmedStartDate` |  | |  |  |  |  |
+| `OperationConfirmedStartTime` |  | |  |  |  |  |
+| `MaintOrderRoutingNumber` |  | |  |  |  |  |
+| `MaintOrdOpWrkExecStartDateTime` |  | |  |  |  |  |
+| `OperationConfirmedEndDate` |  | |  |  |  |  |
+| `OperationConfirmedEndTime` |  | |  |  |  |  |
+| `MaintOrdOpWrkExecEndDateTime` |  | |  |  |  |  |
+| `ActyConfFcstdEndDate` |  | |  |  |  |  |
+| `ActyConfFcstdEndTime` |  | |  |  |  |  |
+| `MaintOrdOpFcstdEndDateTime` |  | |  |  |  |  |
+| `IsFinalConfirmation` |  | |  |  |  |  |
+| `OpenReservationsIsCleared` |  | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |  |  |
+| `MaintenanceOrderSubOperation` |  | |  |  |  |  |
+| `RemainingWorkQuantity` |  | |  |  |  |  |
+| `RemainingWorkQuantityUnit` |  | |  |  |  |  |
+| `NoFurtherWorkQuantityIsExpd` |  | |  |  |  |  |
+| `IsReversed` |  | |  |  |  |  |
+| `IsReversal` |  | |  |  |  |  |
+| `CancldMaintOrderConfCntrValue` |  | |  |  |  |  |
+| `AccountingIndicatorCode` |  | |  |  |  |  |
+| `EnteredByExternalUser` |  | |  |  |  |  |
+| `ConfirmationExternalEntryDate` |  | |  |  |  |  |
+| `ConfirmationExternalEntryTime` |  | |  |  |  |  |
+| `ActualWorkExternalQuantityUnit` |  | |  |  |  |  |
+| `RemainingWorkExtQuantityUnit` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `MaintOrderOperationInternalID` |  | |  |  |  |  |
+| `CapacityInternalID` |  | |  |  |  |  |
+| `EmployeeWageGroup` |  | |  |  |  |  |
+| `NmbrOfMaintTechnicianCapSplits` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `AddressTimeZone` |  | |  |  |  |  |
+| `UserEnteredTimeZone` |  | |  |  |  |  |
+| `PlantTimeZone` |  | |  |  |  |  |
+| `_ActualWorkCenter` | | ✓ | | | | |
+| `_ActualWorkExtQuantityUnit` | | ✓ | | | | |
+| `_ConfirmationGroup` | | ✓ | | | | |
+| `_EnteredByUser` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_LastChangeByUser` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintenanceOrderOperation` | | ✓ | | | | |
+| `_MaintOrderConfGoodsMovement` | | ✓ | | | | |
+| `_OrderConfLongText` | | ✓ | | | | |
+| `_PersonnelName` | | ✓ | | | | |
+| `_PersonResponsible` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_RemainingWorkExtQuantityUnit` | | ✓ | | | | |
+| `_VarianceReason` | | ✓ | | | | |
 
 ## Source Code
 

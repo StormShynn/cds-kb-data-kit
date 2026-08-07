@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land` |
-| `CAOtherTaxCode` | ✓ | |  | `strkz` |
-| `Language` | ✓ | |  | `spras` |
-| `CAOtherTaxCodeName` |  | |  | `strkz_txt` |
-| `_Country` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land` |  |  |
+| `CAOtherTaxCode` | ✓ | |  | `strkz` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAOtherTaxCodeName` |  | |  | `strkz_txt` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

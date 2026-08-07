@@ -28,41 +28,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | | `_QualityNotificationTask` | `QualityNotification` |
-| `NotificationTask` | ✓ | | `_QualityNotificationTask` | `NotificationTask` |
-| `NotificationTaskText` |  | | `_QualityNotificationTask` | `NotificationTaskText` |
-| `IsDeleted` |  | | `_QualityNotificationTask` | `IsDeleted` |
-| `NotifTaskPlannedStartDate` |  | | `_QualityNotificationTask` | `NotifTaskPlannedStartDate` |
-| `NotifTaskPlannedStartTime` |  | | `_QualityNotificationTask` | `NotifTaskPlannedStartTime` |
-| `NotifTaskPlannedEndDate` |  | | `_QualityNotificationTask` | `NotifTaskPlannedEndDate` |
-| `NotifTaskPlannedEndTime` |  | | `_QualityNotificationTask` | `NotifTaskPlannedEndTime` |
-| `StatusObject` |  | | `_QualityNotificationTask` | `StatusObject` |
-| `NotifTaskCompletedByUser` |  | | `_QualityNotificationTask` | `NotifTaskCompletedByUser` |
-| `NotifTaskCompletionDate` |  | | `_QualityNotificationTask` | `NotifTaskCompletionDate` |
-| `NotifTaskCompletionTime` |  | | `_QualityNotificationTask` | `NotifTaskCompletionTime` |
-| `ResponsiblePersonFunctionCode` |  | | `_QualityNotificationTask` | `ResponsiblePersonFunctionCode` |
-| `PersonResponsible` |  | | `_QualityNotificationTask` | `PersonResponsible` |
-| `NotificationTaskSortNumber` |  | | `_QualityNotificationTask` | `NotificationTaskSortNumber` |
-| `NotificationItem` |  | | `_QualityNotificationTask` | `NotificationItem` |
-| `NotificationCauseID` |  | | `_QualityNotificationTask` | `NotificationCauseID` |
-| `QualityTaskCodeCatalog` |  | | `_QualityNotificationTask` | `QualityTaskCodeCatalog` |
-| `QualityTaskCodeGroup` |  | | `_QualityNotificationTask` | `QualityTaskCodeGroup` |
-| `QualityTaskCode` |  | | `_QualityNotificationTask` | `QualityTaskCode` |
-| `QltyTaskTimeBasedEffort` |  | | `_QualityNotificationTask` | `QltyTaskTimeBasedEffort` |
-| `QltyTaskTimeBasedEffortUoM` |  | | `_QualityNotificationTask` | `QltyTaskTimeBasedEffortUoM` |
-| `CreatedByUser` |  | | `_QualityNotificationTask` | `CreatedByUser` |
-| `CreationDate` |  | | `_QualityNotificationTask` | `CreationDate` |
-| `CreationTime` |  | | `_QualityNotificationTask` | `CreationTime` |
-| `LastChangedByUser` |  | | `_QualityNotificationTask` | `LastChangedByUser` |
-| `LastChangeDate` |  | | `_QualityNotificationTask` | `LastChangeDate` |
-| `LastChangeTime` |  | | `_QualityNotificationTask` | `LastChangeTime` |
-| `NotificationType` |  | | `_QualityNotificationTask` | `NotificationType` |
-| `Plant` |  | | `_QualityNotificationTask` | `Plant` |
-| `IsBusinessPurposeCompleted` |  | | `_QualityNotificationTask` | `IsBusinessPurposeCompleted` |
-| `I_QltyNotificationTP` |  | |  | `_QualityNotificationTask._QltyNotification : redirected to parent I_QltyNotificationTP` |
-| `I_QltyNotifTaskLongTextTP` |  | |  | `_QualityNotificationTask._QltyNotificationTaskLongText : redirected to composition child I_QltyNotifTaskLongTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | | `_QualityNotificationTask` | `QualityNotification` |  |  |
+| `NotificationTask` | ✓ | | `_QualityNotificationTask` | `NotificationTask` |  |  |
+| `NotificationTaskText` |  | | `_QualityNotificationTask` | `NotificationTaskText` |  |  |
+| `IsDeleted` |  | | `_QualityNotificationTask` | `IsDeleted` |  |  |
+| `NotifTaskPlannedStartDate` |  | | `_QualityNotificationTask` | `NotifTaskPlannedStartDate` |  |  |
+| `NotifTaskPlannedStartTime` |  | | `_QualityNotificationTask` | `NotifTaskPlannedStartTime` |  |  |
+| `NotifTaskPlannedEndDate` |  | | `_QualityNotificationTask` | `NotifTaskPlannedEndDate` |  |  |
+| `NotifTaskPlannedEndTime` |  | | `_QualityNotificationTask` | `NotifTaskPlannedEndTime` |  |  |
+| `StatusObject` |  | | `_QualityNotificationTask` | `StatusObject` |  |  |
+| `NotifTaskCompletedByUser` |  | | `_QualityNotificationTask` | `NotifTaskCompletedByUser` |  |  |
+| `NotifTaskCompletionDate` |  | | `_QualityNotificationTask` | `NotifTaskCompletionDate` |  |  |
+| `NotifTaskCompletionTime` |  | | `_QualityNotificationTask` | `NotifTaskCompletionTime` |  |  |
+| `ResponsiblePersonFunctionCode` |  | | `_QualityNotificationTask` | `ResponsiblePersonFunctionCode` |  |  |
+| `PersonResponsible` |  | | `_QualityNotificationTask` | `PersonResponsible` |  |  |
+| `NotificationTaskSortNumber` |  | | `_QualityNotificationTask` | `NotificationTaskSortNumber` |  |  |
+| `NotificationItem` |  | | `_QualityNotificationTask` | `NotificationItem` |  |  |
+| `NotificationCauseID` |  | | `_QualityNotificationTask` | `NotificationCauseID` |  |  |
+| `QualityTaskCodeCatalog` |  | | `_QualityNotificationTask` | `QualityTaskCodeCatalog` |  |  |
+| `QualityTaskCodeGroup` |  | | `_QualityNotificationTask` | `QualityTaskCodeGroup` |  |  |
+| `QualityTaskCode` |  | | `_QualityNotificationTask` | `QualityTaskCode` |  |  |
+| `QltyTaskTimeBasedEffort` |  | | `_QualityNotificationTask` | `QltyTaskTimeBasedEffort` |  |  |
+| `QltyTaskTimeBasedEffortUoM` |  | | `_QualityNotificationTask` | `QltyTaskTimeBasedEffortUoM` |  |  |
+| `CreatedByUser` |  | | `_QualityNotificationTask` | `CreatedByUser` |  |  |
+| `CreationDate` |  | | `_QualityNotificationTask` | `CreationDate` |  |  |
+| `CreationTime` |  | | `_QualityNotificationTask` | `CreationTime` |  |  |
+| `LastChangedByUser` |  | | `_QualityNotificationTask` | `LastChangedByUser` |  |  |
+| `LastChangeDate` |  | | `_QualityNotificationTask` | `LastChangeDate` |  |  |
+| `LastChangeTime` |  | | `_QualityNotificationTask` | `LastChangeTime` |  |  |
+| `NotificationType` |  | | `_QualityNotificationTask` | `NotificationType` |  |  |
+| `Plant` |  | | `_QualityNotificationTask` | `Plant` |  |  |
+| `IsBusinessPurposeCompleted` |  | | `_QualityNotificationTask` | `IsBusinessPurposeCompleted` |  |  |
+| `I_QltyNotificationTP` |  | |  | `_QualityNotificationTask._QltyNotification : redirected to parent I_QltyNotificationTP` |  |  |
+| `I_QltyNotifTaskLongTextTP` |  | |  | `_QualityNotificationTask._QltyNotificationTaskLongText : redirected to composition child I_QltyNotifTaskLongTextTP` |  |  |
 
 ## Source Code
 

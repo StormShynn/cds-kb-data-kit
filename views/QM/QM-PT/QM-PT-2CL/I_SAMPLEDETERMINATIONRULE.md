@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SampleDeterminationRule` | ✓ | |  | `fbkey` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SampleDeterminationRule` | ✓ | |  | `fbkey` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

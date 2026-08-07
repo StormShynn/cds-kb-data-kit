@@ -29,44 +29,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceQuotation` | ✓ | |  |  |
-| `CustMgmtPartnerFunction` | ✓ | |  |  |
-| `CustMgmtBusinessPartner` | ✓ | |  |  |
-| `CityName` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `Country` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `FaxAreaCodeSubscriberNumber` |  | |  |  |
-| `FaxExtensionNumber` |  | |  |  |
-| `FaxNumberCountry` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `MobileNumber` |  | |  |  |
-| `MobilePhoneCountry` |  | |  |  |
-| `OrganizationName1` |  | |  |  |
-| `OrganizationName2` |  | |  |  |
-| `OrganizationName3` |  | |  |  |
-| `OrganizationName4` |  | |  |  |
-| `PersonFamilyName` |  | |  |  |
-| `PersonGivenName` |  | |  |  |
-| `PhoneExtensionNumber` |  | |  |  |
-| `PhoneNumber` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `Region` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TransportZone` |  | |  |  |
-| `_ServiceQuotationTP` | | ✓ | | |
-| `_SrvcQtanPartnerTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |  |  |
+| `FaxExtensionNumber` |  | |  |  |  |  |
+| `FaxNumberCountry` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `MobileNumber` |  | |  |  |  |  |
+| `MobilePhoneCountry` |  | |  |  |  |  |
+| `OrganizationName1` |  | |  |  |  |  |
+| `OrganizationName2` |  | |  |  |  |  |
+| `OrganizationName3` |  | |  |  |  |  |
+| `OrganizationName4` |  | |  |  |  |  |
+| `PersonFamilyName` |  | |  |  |  |  |
+| `PersonGivenName` |  | |  |  |  |  |
+| `PhoneExtensionNumber` |  | |  |  |  |  |
+| `PhoneNumber` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TransportZone` |  | |  |  |  |  |
+| `_ServiceQuotationTP` | | ✓ | | | | |
+| `_SrvcQtanPartnerTP` | | ✓ | | | | |
 
 ## Source Code
 

@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` |  | |  | `matnr` |
-| `MRPPlant` |  | |  | `werks_d` |
-| `MRPArea` |  | |  | `berid` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` |  | |  | `matnr` |  |  |
+| `MRPPlant` |  | |  | `werks_d` |  |  |
+| `MRPArea` |  | |  | `berid` |  |  |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentRequisitionPriority` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as payreqn_priority preserving type)` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type)` |
-| `PaymentRequisitionPriorityName` |  | |  | `cast( ddtext as payreqn_priority_name preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_Priority` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentRequisitionPriority` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as payreqn_priority preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type)` |  |  |
+| `PaymentRequisitionPriorityName` |  | |  | `cast( ddtext as payreqn_priority_name preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Priority` | | ✓ | | | | |
 
 ## Associations
 

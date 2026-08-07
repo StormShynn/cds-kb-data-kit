@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjElmntDlvbrlDistrUUID` | ✓ | |  |  |
-| `EntProjElmntDeliverableUUID` |  | |  |  |
-| `ProjectElementUUID` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `EntProjElmntDlvbrlDistrYearVal` |  | |  |  |
-| `EntProjElmntDlvbrlDistrPerdVal` |  | |  |  |
-| `EntProjElmntDlvbrlDistrQty` |  | |  |  |
-| `EntProjElmntDlvbrlDistrQtyUnit` |  | |  |  |
-| `_EntProjElmntDlvbrl` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntDlvbrlDistrUUID` | ✓ | |  |  |  |  |
+| `EntProjElmntDeliverableUUID` |  | |  |  |  |  |
+| `ProjectElementUUID` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlDistrYearVal` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlDistrPerdVal` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlDistrQty` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlDistrQtyUnit` |  | |  |  |  |  |
+| `_EntProjElmntDlvbrl` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,190 +28,190 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |
-| `LedgerFiscalYear` |  | |  |  |
-| `GLRecordType` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `AccountingDocumentCategory` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `Segment` |  | |  |  |
-| `PartnerCostCenter` |  | |  |  |
-| `PartnerProfitCenter` |  | |  |  |
-| `PartnerFunctionalArea` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `PostingKey` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `CountryChartOfAccounts` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `PartnerSegment` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `JrnlEntrAltvFYConsecutiveID` |  | |  |  |
-| `AccountingDocumentItem` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `JournalEntryItemCategory` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `GLAccountType` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `ConsolidationUnit` |  | |  |  |
-| `PartnerConsolidationUnit` |  | |  |  |
-| `Company` |  | |  |  |
-| `ConsolidationChartOfAccounts` |  | |  |  |
-| `CnsldtnFinancialStatementItem` |  | |  |  |
-| `CnsldtnSubitemCategory` |  | |  |  |
-| `CnsldtnSubitem` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CustomerSupplierCountry` |  | |  |  |
-| `CustomerSupplierIndustry` |  | |  |  |
-| `FinancialServicesProductGroup` |  | |  |  |
-| `FinancialServicesBranch` |  | |  |  |
-| `FinancialDataSource` |  | |  |  |
-| `BalanceTransactionCurrency` |  | |  |  |
-| `AmountInBalanceTransacCrcy` |  | |  |  |
-| `PriorDayBalInBalTransCrcy` |  | |  |  |
-| `CurDayActyAmtInBalTransCrcy` |  | |  |  |
-| `PriorMonthBalInBalTransCrcy` |  | |  |  |
-| `CurMonthActyAmtInBalTransCrcy` |  | |  |  |
-| `YTDBalInBalTransCrcy` |  | |  |  |
-| `MTDAvgDailyBalInBalTransCrcy` |  | |  |  |
-| `QTDAvgDailyBalInBalTransCrcy` |  | |  |  |
-| `YTDAvgDailyBalInBalTransCrcy` |  | |  |  |
-| `MTDAvgActyAmtInBalTransCrcy` |  | |  |  |
-| `QTDActyAmtInBalTransCrcy` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |
-| `PriorDayBalInCCCrcy` |  | |  |  |
-| `CurDayActyAmtInCCCrcy` |  | |  |  |
-| `PriorMonthBalInCCCrcy` |  | |  |  |
-| `CurMonthActyAmtInCCCrcy` |  | |  |  |
-| `YTDBalInCCCrcy` |  | |  |  |
-| `MTDAvgDailyBalInCCCrcy` |  | |  |  |
-| `QTDAvgDailyBalInCCCrcy` |  | |  |  |
-| `YTDAvgDailyBalInCCCrcy` |  | |  |  |
-| `MTDAvgActyAmtInCCCrcy` |  | |  |  |
-| `QTDActyAmtInCCCrcy` |  | |  |  |
-| `GlobalCurrency` |  | |  |  |
-| `AmountInGlobalCurrency` |  | |  |  |
-| `PriorDayBalInGlobCrcy` |  | |  |  |
-| `CurDayActyAmtInGlobCrcy` |  | |  |  |
-| `PriorMonthBalInGlobCrcy` |  | |  |  |
-| `CurMonthActyAmtInGlobCrcy` |  | |  |  |
-| `YTDBalInGlobCrcy` |  | |  |  |
-| `MTDAvgDailyBalInGlobCrcy` |  | |  |  |
-| `QTDAvgDailyBalInGlobCrcy` |  | |  |  |
-| `YTDAvgDailyBalInGlobCrcy` |  | |  |  |
-| `MTDAvgActyAmtInGlobCrcy` |  | |  |  |
-| `QTDActyAmtInGlobCrcy` |  | |  |  |
-| `FunctionalCurrency` |  | |  |  |
-| `AmountInFunctionalCurrency` |  | |  |  |
-| `PriorDayBalInFuncnlCrcy` |  | |  |  |
-| `CurDayActyAmtInFuncnlCrcy` |  | |  |  |
-| `PriorMonthBalInFuncnlCrcy` |  | |  |  |
-| `CurMonthActyAmtInFuncnlCrcy` |  | |  |  |
-| `YTDBalInFuncnlCrcy` |  | |  |  |
-| `MTDAvgDailyBalInFuncnlCrcy` |  | |  |  |
-| `QTDAvgDailyBalInFuncnlCrcy` |  | |  |  |
-| `YTDAvgDailyBalInFuncnlCrcy` |  | |  |  |
-| `MTDAvgActyAmtInFuncnlCrcy` |  | |  |  |
-| `QTDActyAmtInFuncnlCrcy` |  | |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |
-| `AmountInFreeDefinedCurrency1` |  | |  |  |
-| `PriorDayBalInFDCrcy1` |  | |  |  |
-| `CurDayActyAmtInFDCrcy1` |  | |  |  |
-| `PriorMonthBalInFDCrcy1` |  | |  |  |
-| `CurMonthActyAmtInFDCrcy1` |  | |  |  |
-| `YTDBalInFDCrcy1` |  | |  |  |
-| `MTDAvgDailyBalInFDCrcy1` |  | |  |  |
-| `QTDAvgDailyBalInFDCrcy1` |  | |  |  |
-| `YTDAvgDailyBalInFDCrcy1` |  | |  |  |
-| `MTDAvgActyAmtInFDCrcy1` |  | |  |  |
-| `QTDActyAmtInFDCrcy1` |  | |  |  |
-| `FreeDefinedCurrency2` |  | |  |  |
-| `AmountInFreeDefinedCurrency2` |  | |  |  |
-| `PriorDayBalInFDCrcy2` |  | |  |  |
-| `CurDayActyAmtInFDCrcy2` |  | |  |  |
-| `PriorMonthBalInFDCrcy2` |  | |  |  |
-| `CurMonthActyAmtInFDCrcy2` |  | |  |  |
-| `YTDBalInFDCrcy2` |  | |  |  |
-| `MTDAvgDailyBalInFDCrcy2` |  | |  |  |
-| `QTDAvgDailyBalInFDCrcy2` |  | |  |  |
-| `YTDAvgDailyBalInFDCrcy2` |  | |  |  |
-| `MTDAvgActyAmtInFDCrcy2` |  | |  |  |
-| `QTDActyAmtInFDCrcy2` |  | |  |  |
-| `_JournalEntry` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_CompanyCodeText` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_LedgerFiscalYear` | | ✓ | | |
-| `_FiscalPeriod` | | ✓ | | |
-| `_FiscalYearPeriod` | | ✓ | | |
-| `_LedgerFiscalYearForVariant` | | ✓ | | |
-| `_FiscalPeriodForVariant` | | ✓ | | |
-| `_FiscalYearPeriodForVariant` | | ✓ | | |
-| `_FiscalCalendarDate` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ControllingAreaText` | | ✓ | | |
-| `_BalanceTransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_GlobalCurrency` | | ✓ | | |
-| `_FreeDefinedCurrency1` | | ✓ | | |
-| `_FreeDefinedCurrency2` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_SegmentText` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_ProfitCenterText` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CostCenterText` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_BusinessAreaText` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_FunctionalAreaText` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_GLAcctInChartOfAccountsText` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_AccountingDocumentTypeText` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_PartnerCostCenter` | | ✓ | | |
-| `_PartnerProfitCenter` | | ✓ | | |
-| `_PartnerBusinessArea` | | ✓ | | |
-| `_PartnerBusinessAreaText` | | ✓ | | |
-| `_PartnerFunctionalArea` | | ✓ | | |
-| `_PartnerSegment` | | ✓ | | |
-| `_PartnerSegmentText` | | ✓ | | |
-| `_AccountingDocumentCategory` | | ✓ | | |
-| `_PostingKey` | | ✓ | | |
-| `_GLAccountType` | | ✓ | | |
-| `_CountryChartOfAccounts` | | ✓ | | |
-| `_CountryChartOfAccountsText` | | ✓ | | |
-| `_PartnerCompany` | | ✓ | | |
-| `_GLAccountTxt` | | ✓ | | |
-| `_SemTagGLAccount` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_CustomerSupplierCountry` | | ✓ | | |
-| `_CustomerSupplierIndustry` | | ✓ | | |
-| `_FinServicesProductGroup` | | ✓ | | |
-| `_FinancialServicesBranch` | | ✓ | | |
-| `_FinancialDataSource` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |  |  |
+| `LedgerFiscalYear` |  | |  |  |  |  |
+| `GLRecordType` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `AccountingDocumentCategory` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `PartnerProfitCenter` |  | |  |  |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `PostingKey` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `CountryChartOfAccounts` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PartnerSegment` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `JrnlEntrAltvFYConsecutiveID` |  | |  |  |  |  |
+| `AccountingDocumentItem` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `JournalEntryItemCategory` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `GLAccountType` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `ConsolidationUnit` |  | |  |  |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |  |  |
+| `Company` |  | |  |  |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |  |  |
+| `CnsldtnSubitemCategory` |  | |  |  |  |  |
+| `CnsldtnSubitem` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `CustomerSupplierCountry` |  | |  |  |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |  |  |
+| `FinancialServicesBranch` |  | |  |  |  |  |
+| `FinancialDataSource` |  | |  |  |  |  |
+| `BalanceTransactionCurrency` |  | |  |  |  |  |
+| `AmountInBalanceTransacCrcy` |  | |  |  |  |  |
+| `PriorDayBalInBalTransCrcy` |  | |  |  |  |  |
+| `CurDayActyAmtInBalTransCrcy` |  | |  |  |  |  |
+| `PriorMonthBalInBalTransCrcy` |  | |  |  |  |  |
+| `CurMonthActyAmtInBalTransCrcy` |  | |  |  |  |  |
+| `YTDBalInBalTransCrcy` |  | |  |  |  |  |
+| `MTDAvgDailyBalInBalTransCrcy` |  | |  |  |  |  |
+| `QTDAvgDailyBalInBalTransCrcy` |  | |  |  |  |  |
+| `YTDAvgDailyBalInBalTransCrcy` |  | |  |  |  |  |
+| `MTDAvgActyAmtInBalTransCrcy` |  | |  |  |  |  |
+| `QTDActyAmtInBalTransCrcy` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `PriorDayBalInCCCrcy` |  | |  |  |  |  |
+| `CurDayActyAmtInCCCrcy` |  | |  |  |  |  |
+| `PriorMonthBalInCCCrcy` |  | |  |  |  |  |
+| `CurMonthActyAmtInCCCrcy` |  | |  |  |  |  |
+| `YTDBalInCCCrcy` |  | |  |  |  |  |
+| `MTDAvgDailyBalInCCCrcy` |  | |  |  |  |  |
+| `QTDAvgDailyBalInCCCrcy` |  | |  |  |  |  |
+| `YTDAvgDailyBalInCCCrcy` |  | |  |  |  |  |
+| `MTDAvgActyAmtInCCCrcy` |  | |  |  |  |  |
+| `QTDActyAmtInCCCrcy` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  |  |  |  |
+| `AmountInGlobalCurrency` |  | |  |  |  |  |
+| `PriorDayBalInGlobCrcy` |  | |  |  |  |  |
+| `CurDayActyAmtInGlobCrcy` |  | |  |  |  |  |
+| `PriorMonthBalInGlobCrcy` |  | |  |  |  |  |
+| `CurMonthActyAmtInGlobCrcy` |  | |  |  |  |  |
+| `YTDBalInGlobCrcy` |  | |  |  |  |  |
+| `MTDAvgDailyBalInGlobCrcy` |  | |  |  |  |  |
+| `QTDAvgDailyBalInGlobCrcy` |  | |  |  |  |  |
+| `YTDAvgDailyBalInGlobCrcy` |  | |  |  |  |  |
+| `MTDAvgActyAmtInGlobCrcy` |  | |  |  |  |  |
+| `QTDActyAmtInGlobCrcy` |  | |  |  |  |  |
+| `FunctionalCurrency` |  | |  |  |  |  |
+| `AmountInFunctionalCurrency` |  | |  |  |  |  |
+| `PriorDayBalInFuncnlCrcy` |  | |  |  |  |  |
+| `CurDayActyAmtInFuncnlCrcy` |  | |  |  |  |  |
+| `PriorMonthBalInFuncnlCrcy` |  | |  |  |  |  |
+| `CurMonthActyAmtInFuncnlCrcy` |  | |  |  |  |  |
+| `YTDBalInFuncnlCrcy` |  | |  |  |  |  |
+| `MTDAvgDailyBalInFuncnlCrcy` |  | |  |  |  |  |
+| `QTDAvgDailyBalInFuncnlCrcy` |  | |  |  |  |  |
+| `YTDAvgDailyBalInFuncnlCrcy` |  | |  |  |  |  |
+| `MTDAvgActyAmtInFuncnlCrcy` |  | |  |  |  |  |
+| `QTDActyAmtInFuncnlCrcy` |  | |  |  |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
+| `PriorDayBalInFDCrcy1` |  | |  |  |  |  |
+| `CurDayActyAmtInFDCrcy1` |  | |  |  |  |  |
+| `PriorMonthBalInFDCrcy1` |  | |  |  |  |  |
+| `CurMonthActyAmtInFDCrcy1` |  | |  |  |  |  |
+| `YTDBalInFDCrcy1` |  | |  |  |  |  |
+| `MTDAvgDailyBalInFDCrcy1` |  | |  |  |  |  |
+| `QTDAvgDailyBalInFDCrcy1` |  | |  |  |  |  |
+| `YTDAvgDailyBalInFDCrcy1` |  | |  |  |  |  |
+| `MTDAvgActyAmtInFDCrcy1` |  | |  |  |  |  |
+| `QTDActyAmtInFDCrcy1` |  | |  |  |  |  |
+| `FreeDefinedCurrency2` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  |  |  |  |
+| `PriorDayBalInFDCrcy2` |  | |  |  |  |  |
+| `CurDayActyAmtInFDCrcy2` |  | |  |  |  |  |
+| `PriorMonthBalInFDCrcy2` |  | |  |  |  |  |
+| `CurMonthActyAmtInFDCrcy2` |  | |  |  |  |  |
+| `YTDBalInFDCrcy2` |  | |  |  |  |  |
+| `MTDAvgDailyBalInFDCrcy2` |  | |  |  |  |  |
+| `QTDAvgDailyBalInFDCrcy2` |  | |  |  |  |  |
+| `YTDAvgDailyBalInFDCrcy2` |  | |  |  |  |  |
+| `MTDAvgActyAmtInFDCrcy2` |  | |  |  |  |  |
+| `QTDActyAmtInFDCrcy2` |  | |  |  |  |  |
+| `_JournalEntry` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CompanyCodeText` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_LedgerFiscalYear` | | ✓ | | | | |
+| `_FiscalPeriod` | | ✓ | | | | |
+| `_FiscalYearPeriod` | | ✓ | | | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | | | |
+| `_FiscalPeriodForVariant` | | ✓ | | | | |
+| `_FiscalYearPeriodForVariant` | | ✓ | | | | |
+| `_FiscalCalendarDate` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_BalanceTransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_GlobalCurrency` | | ✓ | | | | |
+| `_FreeDefinedCurrency1` | | ✓ | | | | |
+| `_FreeDefinedCurrency2` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_SegmentText` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_ProfitCenterText` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CostCenterText` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_FunctionalAreaText` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_GLAcctInChartOfAccountsText` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_AccountingDocumentTypeText` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_PartnerCostCenter` | | ✓ | | | | |
+| `_PartnerProfitCenter` | | ✓ | | | | |
+| `_PartnerBusinessArea` | | ✓ | | | | |
+| `_PartnerBusinessAreaText` | | ✓ | | | | |
+| `_PartnerFunctionalArea` | | ✓ | | | | |
+| `_PartnerSegment` | | ✓ | | | | |
+| `_PartnerSegmentText` | | ✓ | | | | |
+| `_AccountingDocumentCategory` | | ✓ | | | | |
+| `_PostingKey` | | ✓ | | | | |
+| `_GLAccountType` | | ✓ | | | | |
+| `_CountryChartOfAccounts` | | ✓ | | | | |
+| `_CountryChartOfAccountsText` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_GLAccountTxt` | | ✓ | | | | |
+| `_SemTagGLAccount` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_CustomerSupplierCountry` | | ✓ | | | | |
+| `_CustomerSupplierIndustry` | | ✓ | | | | |
+| `_FinServicesProductGroup` | | ✓ | | | | |
+| `_FinancialServicesBranch` | | ✓ | | | | |
+| `_FinancialDataSource` | | ✓ | | | | |
 
 ## Associations
 

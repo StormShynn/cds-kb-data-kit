@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `FinancialInstrProductCategory` | ✓ | |  | `sanlfor` |
-| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |
-| `FinInstrTransCategoryName` |  | |  | `xtext` |
-| `_Language` | | ✓ | | |
-| `_FinancialInstrProdCat` | | ✓ | | |
-| `_FinInstrTransCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlfor` |  |  |
+| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |  |  |
+| `FinInstrTransCategoryName` |  | |  | `xtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FinancialInstrProdCat` | | ✓ | | | | |
+| `_FinInstrTransCat` | | ✓ | | | | |
 
 ## Associations
 

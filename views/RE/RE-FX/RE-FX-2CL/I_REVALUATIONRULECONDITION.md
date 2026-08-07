@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InternalRealEstateNumber` | ✓ | |  | `intreno` |
-| `REValuationRuleUUID` | ✓ | |  | `ruleguid` |
-| `REConditionUUID` | ✓ | |  | `condguid` |
-| `REValuationCndnProperty` |  | |  | `cdprop` |
-| `REValuationCndnConsdtn` |  | |  | `cdcons` |
-| `REIsValuationCndnConsdtn` |  | |  | `considercond` |
-| `REValuationCndnSharePercent` |  | |  | `condperc` |
-| `REValuationCndnShareAbsltAmt` |  | |  | `condabs` |
-| `REValuationCurrency` |  | |  | `cast(currency as recdvdmvalcurr preserving type )` |
-| `REValuationCndnStatus` |  | |  | `statuscondrule` |
-| `REInfoText` |  | |  | `note` |
-| `REValuationRule` |  | | `_REValuationTerm` | `REValuationRule` |
-| `_REContract` | | ✓ | | |
-| `_REKeyAssgmt` | | ✓ | | |
-| `_REValuationTerm` | | ✓ | | |
-| `_RECondition` | | ✓ | | |
-| `_REValuationCndnProperty` | | ✓ | | |
-| `_REValuationCndnConsdtn` | | ✓ | | |
-| `_REValuationCndnStatus` | | ✓ | | |
-| `_REValuationRule` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  | `intreno` |  |  |
+| `REValuationRuleUUID` | ✓ | |  | `ruleguid` |  |  |
+| `REConditionUUID` | ✓ | |  | `condguid` |  |  |
+| `REValuationCndnProperty` |  | |  | `cdprop` |  |  |
+| `REValuationCndnConsdtn` |  | |  | `cdcons` |  |  |
+| `REIsValuationCndnConsdtn` |  | |  | `considercond` |  |  |
+| `REValuationCndnSharePercent` |  | |  | `condperc` |  |  |
+| `REValuationCndnShareAbsltAmt` |  | |  | `condabs` |  |  |
+| `REValuationCurrency` |  | |  | `cast(currency as recdvdmvalcurr preserving type )` |  |  |
+| `REValuationCndnStatus` |  | |  | `statuscondrule` |  |  |
+| `REInfoText` |  | |  | `note` |  |  |
+| `REValuationRule` |  | | `_REValuationTerm` | `REValuationRule` |  |  |
+| `_REContract` | | ✓ | | | | |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_REValuationTerm` | | ✓ | | | | |
+| `_RECondition` | | ✓ | | | | |
+| `_REValuationCndnProperty` | | ✓ | | | | |
+| `_REValuationCndnConsdtn` | | ✓ | | | | |
+| `_REValuationCndnStatus` | | ✓ | | | | |
+| `_REValuationRule` | | ✓ | | | | |
 
 ## Associations
 

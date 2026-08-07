@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharacteristicAttributeCodeGrp` | ✓ | |  |  |
-| `CharacteristicAttribCodeGrpTxt` |  | |  |  |
-| `CodeGroupStatus` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharacteristicAttributeCodeGrp` | ✓ | |  |  |  |  |
+| `CharacteristicAttribCodeGrpTxt` |  | |  |  |  |  |
+| `CodeGroupStatus` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturnDelivery` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `_Delivery` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturnDelivery` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `_Delivery` | | ✓ | | | | |
 
 ## Source Code
 

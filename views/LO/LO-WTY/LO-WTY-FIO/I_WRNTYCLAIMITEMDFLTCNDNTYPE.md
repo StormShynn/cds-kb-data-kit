@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyControllingItemType` | ✓ | |  |  |
-| `MatlItmCndnTypeInbFrmRmbsr` |  | |  |  |
-| `MatlItmCndnTypeOutbToRmbsr` |  | |  |  |
-| `LabItmCndnTypeInbFrmRmbsr` |  | |  |  |
-| `LabItmCndnTypeOutbToRmbsr` |  | |  |  |
-| `ExtItmCndnTypeInbFrmRmbsr` |  | |  |  |
-| `ExtItmCndnTypeOutbToRmbsr` |  | |  |  |
-| `MatlItmCndnTypeInbFrmClmnt` |  | |  |  |
-| `MatlItmCndnTypeOutbToClmnt` |  | |  |  |
-| `LabItmCndnTypeForInbFrmClmnt` |  | |  |  |
-| `LabItmCndnTypeOutbToClmnt` |  | |  |  |
-| `ExtItmCndnTypeInbFrmClmnt` |  | |  |  |
-| `ExtItmCndnTypeOutbToClmnt` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyControllingItemType` | ✓ | |  |  |  |  |
+| `MatlItmCndnTypeInbFrmRmbsr` |  | |  |  |  |  |
+| `MatlItmCndnTypeOutbToRmbsr` |  | |  |  |  |  |
+| `LabItmCndnTypeInbFrmRmbsr` |  | |  |  |  |  |
+| `LabItmCndnTypeOutbToRmbsr` |  | |  |  |  |  |
+| `ExtItmCndnTypeInbFrmRmbsr` |  | |  |  |  |  |
+| `ExtItmCndnTypeOutbToRmbsr` |  | |  |  |  |  |
+| `MatlItmCndnTypeInbFrmClmnt` |  | |  |  |  |  |
+| `MatlItmCndnTypeOutbToClmnt` |  | |  |  |  |  |
+| `LabItmCndnTypeForInbFrmClmnt` |  | |  |  |  |  |
+| `LabItmCndnTypeOutbToClmnt` |  | |  |  |  |  |
+| `ExtItmCndnTypeInbFrmClmnt` |  | |  |  |  |  |
+| `ExtItmCndnTypeOutbToClmnt` |  | |  |  |  |  |
 
 ## Source Code
 

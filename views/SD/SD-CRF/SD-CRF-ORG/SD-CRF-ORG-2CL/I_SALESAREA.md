@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrganization` | ✓ | |  | `vkorg` |
-| `DistributionChannel` | ✓ | |  | `vtweg` |
-| `Division` | ✓ | |  | `spart` |
-| `ReferenceDistributionChannel` |  | |  | `vtwku` |
-| `RefSlsOrgForSlsDocType` |  | |  | `vkoau` |
-| `RefDistrChnlForSlsDocType` |  | |  | `vtwau` |
-| `RefDivisionForSlsDocType` |  | |  | `spaau` |
-| `ATPResultModeControl` |  | |  | `revfp` |
-| `CreditControlArea` |  | |  | `kkber` |
-| `ReferenceDivision` |  | |  | `spaku` |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_ReferenceDistributionChannel` | | ✓ | | |
-| `_CreditControlArea` | | ✓ | | |
-| `_ReferenceDivision` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  | `vkorg` |  |  |
+| `DistributionChannel` | ✓ | |  | `vtweg` |  |  |
+| `Division` | ✓ | |  | `spart` |  |  |
+| `ReferenceDistributionChannel` |  | |  | `vtwku` |  |  |
+| `RefSlsOrgForSlsDocType` |  | |  | `vkoau` |  |  |
+| `RefDistrChnlForSlsDocType` |  | |  | `vtwau` |  |  |
+| `RefDivisionForSlsDocType` |  | |  | `spaau` |  |  |
+| `ATPResultModeControl` |  | |  | `revfp` |  |  |
+| `CreditControlArea` |  | |  | `kkber` |  |  |
+| `ReferenceDivision` |  | |  | `spaku` |  |  |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_ReferenceDistributionChannel` | | ✓ | | | | |
+| `_CreditControlArea` | | ✓ | | | | |
+| `_ReferenceDivision` | | ✓ | | | | |
 
 ## Associations
 

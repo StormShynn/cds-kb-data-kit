@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarCnfConstraintNetName` | ✓ | |  |  |
-| `VarCnfConstraintName` | ✓ | |  |  |
-| `LanguageCode` | ✓ | |  |  |
-| `_Constraint` | | ✓ | | |
-| `_ConstraintNet` | | ✓ | | |
-| `_HistoricalText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarCnfConstraintNetName` | ✓ | |  |  |  |  |
+| `VarCnfConstraintName` | ✓ | |  |  |  |  |
+| `LanguageCode` | ✓ | |  |  |  |  |
+| `_Constraint` | | ✓ | | | | |
+| `_ConstraintNet` | | ✓ | | | | |
+| `_HistoricalText` | | ✓ | | | | |
 
 ## Source Code
 

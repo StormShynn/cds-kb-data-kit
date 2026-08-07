@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlannedOrder` |  | |  | `plnum` |
-| `OperationLatestStartDate` |  | |  | `sstad` |
-| `OperationLatestStartTime` |  | |  | `sstau` |
-| `OperationLatestEndDate` |  | |  | `sendd` |
-| `OperationLatestEndTime` |  | |  | `sendu` |
-| `PlndOrdOpSchedulingDirection` |  | |  | `pph_termkz` |
-| `PlndOrdOpSchedulingStatus` |  | |  | `pp_pldorder_schedstatus` |
-| `PlndOrdOpSchedulingStrategy` |  | |  | `pp_pldorder_schedulingstrategy` |
-| `WorkCenter` |  | |  | `arbpl` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlannedOrder` |  | |  | `plnum` |  |  |
+| `OperationLatestStartDate` |  | |  | `sstad` |  |  |
+| `OperationLatestStartTime` |  | |  | `sstau` |  |  |
+| `OperationLatestEndDate` |  | |  | `sendd` |  |  |
+| `OperationLatestEndTime` |  | |  | `sendu` |  |  |
+| `PlndOrdOpSchedulingDirection` |  | |  | `pph_termkz` |  |  |
+| `PlndOrdOpSchedulingStatus` |  | |  | `pp_pldorder_schedstatus` |  |  |
+| `PlndOrdOpSchedulingStrategy` |  | |  | `pp_pldorder_schedulingstrategy` |  |  |
+| `WorkCenter` |  | |  | `arbpl` |  |  |
 
 ## Source Code
 

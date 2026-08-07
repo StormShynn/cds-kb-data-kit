@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrgUnitTypeIDConcatenated` | ✓ | |  | `otjid` |
-| `Language` | ✓ | |  | `langu` |
-| `OrganizationalUnit` |  | |  | `objid` |
-| `StartDate` |  | |  | `begda` |
-| `EndDate` |  | |  | `endda` |
-| `OrganizationalUnitShortName` |  | |  | `short` |
-| `OrganizationalUnitName` |  | |  | `stext` |
-| `_SrvcMgmtOrganizationUnit` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrgUnitTypeIDConcatenated` | ✓ | |  | `otjid` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `OrganizationalUnit` |  | |  | `objid` |  |  |
+| `StartDate` |  | |  | `begda` |  |  |
+| `EndDate` |  | |  | `endda` |  |  |
+| `OrganizationalUnitShortName` |  | |  | `short` |  |  |
+| `OrganizationalUnitName` |  | |  | `stext` |  |  |
+| `_SrvcMgmtOrganizationUnit` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

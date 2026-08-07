@@ -31,24 +31,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |
-| `PurchaseContract` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |
-| `ActivePurchasingDocument` |  | | `_PurchaseContract` | `ActivePurchasingDocument` |
-| `PurchaseContractType` |  | | `_PurchaseContract` | `PurchasingDocumentType` |
-| `DocumentCurrency` |  | | `_PurchaseContract` | `DocumentCurrency` |
-| `WorkflowTaskResult` |  | |  | `case _Workflowtask._WorkflowTaskResult.WorkflowTaskResult when 'requestApproved' then 'Approved' when 'requestRejected' then 'Rejected' else _Workflowtask._WorkflowTaskResult.WorkflowTaskResult end` |
-| `PurContrWrkflwTskCrtnUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `PurContrWrkflwTskCrtnUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `PurContrWrkflwTaskEndUTCDate` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCompletionUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
-| `PurContrWrkflwTaskEndUTCTime` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCompletionUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
-| `PurContrWrkflwTskDuUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
-| `PurContrWrkflwTskDuUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
-| `Supplier` |  | | `_PurchaseContract` | `Supplier` |
-| `SupplierName` |  | | `_Supplier` | `SupplierName` |
-| `CreatedByUserDescription` |  | | `_User` | `UserDescription` |
-| `ApprovedByUserFullName` |  | |  | `cast(_ApproverUser.UserDescription as mm_oa_user_fullname )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |  |  |
+| `PurchaseContract` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |  |  |
+| `ActivePurchasingDocument` |  | | `_PurchaseContract` | `ActivePurchasingDocument` |  |  |
+| `PurchaseContractType` |  | | `_PurchaseContract` | `PurchasingDocumentType` |  |  |
+| `DocumentCurrency` |  | | `_PurchaseContract` | `DocumentCurrency` |  |  |
+| `WorkflowTaskResult` |  | |  | `case _Workflowtask._WorkflowTaskResult.WorkflowTaskResult when 'requestApproved' then 'Approved' when 'requestRejected' then 'Rejected' else _Workflowtask._WorkflowTaskResult.WorkflowTaskResult end` |  |  |
+| `PurContrWrkflwTskCrtnUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |  |  |
+| `PurContrWrkflwTskCrtnUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |  |  |
+| `PurContrWrkflwTaskEndUTCDate` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCompletionUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |  |  |
+| `PurContrWrkflwTaskEndUTCTime` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCompletionUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |  |  |
+| `PurContrWrkflwTskDuUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |  |  |
+| `PurContrWrkflwTskDuUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |  |  |
+| `Supplier` |  | | `_PurchaseContract` | `Supplier` |  |  |
+| `SupplierName` |  | | `_Supplier` | `SupplierName` |  |  |
+| `CreatedByUserDescription` |  | | `_User` | `UserDescription` |  |  |
+| `ApprovedByUserFullName` |  | |  | `cast(_ApproverUser.UserDescription as mm_oa_user_fullname )` |  |  |
 
 ## Source Code
 

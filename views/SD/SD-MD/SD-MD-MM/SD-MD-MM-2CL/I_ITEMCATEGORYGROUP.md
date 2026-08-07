@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ItemCategoryGroup` | ✓ | |  | `mtpos` |
-| `ItemCategoryGroupOID` |  | |  | `cast( mtpos as itemcategorygroup_oid )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ItemCategoryGroup` | ✓ | |  | `mtpos` |  |  |
+| `ItemCategoryGroupOID` |  | |  | `cast( mtpos as itemcategorygroup_oid )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

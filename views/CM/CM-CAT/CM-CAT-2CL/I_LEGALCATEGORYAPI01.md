@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMCategory` | ✓ | |  |  |
-| `LglCntntMCatLevel` |  | |  |  |
-| `LglCntntMCatType` |  | |  |  |
-| `LglCntntMCatIsSelect` |  | |  |  |
-| `LglCntntMCatIsMultiSelection` |  | |  |  |
-| `LglCntntMCatIsObsolete` |  | |  |  |
-| `LglCntntMCatModel` |  | |  |  |
-| `LglCntntMCategoryValue` |  | |  |  |
-| `LglCntntMCatIsUpdateFromTable` |  | |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |
-| `LglCntntMParentCategory` |  | |  |  |
-| `LglCntntMRootCategory` |  | |  |  |
-| `LglCntntMCatPurpose` |  | |  |  |
-| `LglCntntMCatIsSystGenerated` |  | |  |  |
-| `LglCntntMCatConstant` |  | |  |  |
-| `LglCntntMCategoryName` |  | |  |  |
-| `LglCntntMCategoryNameSyst` |  | |  |  |
-| `LglCntntMCategoryNameInEnglish` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMCategory` | ✓ | |  |  |  |  |
+| `LglCntntMCatLevel` |  | |  |  |  |  |
+| `LglCntntMCatType` |  | |  |  |  |  |
+| `LglCntntMCatIsSelect` |  | |  |  |  |  |
+| `LglCntntMCatIsMultiSelection` |  | |  |  |  |  |
+| `LglCntntMCatIsObsolete` |  | |  |  |  |  |
+| `LglCntntMCatModel` |  | |  |  |  |  |
+| `LglCntntMCategoryValue` |  | |  |  |  |  |
+| `LglCntntMCatIsUpdateFromTable` |  | |  |  |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMParentCategory` |  | |  |  |  |  |
+| `LglCntntMRootCategory` |  | |  |  |  |  |
+| `LglCntntMCatPurpose` |  | |  |  |  |  |
+| `LglCntntMCatIsSystGenerated` |  | |  |  |  |  |
+| `LglCntntMCatConstant` |  | |  |  |  |  |
+| `LglCntntMCategoryName` |  | |  |  |  |  |
+| `LglCntntMCategoryNameSyst` |  | |  |  |  |  |
+| `LglCntntMCategoryNameInEnglish` |  | |  |  |  |  |
 
 ## Source Code
 

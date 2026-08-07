@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintNotifDetectionCode` | ✓ | |  | `detectioncode` |
-| `Language` | ✓ | |  | `language` |
-| `MaintNotifDetectionCodeText` |  | |  | `detectioncodetext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintNotifDetectionCode` | ✓ | |  | `detectioncode` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `MaintNotifDetectionCodeText` |  | |  | `detectioncodetext` |  |  |
 
 ## Source Code
 

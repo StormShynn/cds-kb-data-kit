@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityMgmtCtrlKey` | ✓ | |  | `qm_pur` |
-| `SupplierReleaseIsRequired` |  | |  | `lieffrei` |
-| `QualityCertificateIsRequired` |  | |  | `zgerf` |
-| `QualityManagementControlKeyOID` |  | |  | `case when I_MdiOidConfiguration.Context is initial then cast( tq08.qm_pur as qualitymanagementcontrolkeyoid ) when I_MdiOidConfiguration.Context is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), tq08.qm_pur ) as qualitymanagementcontrolkeyoid ) end` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityMgmtCtrlKey` | ✓ | |  | `qm_pur` |  |  |
+| `SupplierReleaseIsRequired` |  | |  | `lieffrei` |  |  |
+| `QualityCertificateIsRequired` |  | |  | `zgerf` |  |  |
+| `QualityManagementControlKeyOID` |  | |  | `case when I_MdiOidConfiguration.Context is initial then cast( tq08.qm_pur as qualitymanagementcontrolkeyoid ) when I_MdiOidConfiguration.Context is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), tq08.qm_pur ) as qualitymanagementcontrolkeyoid ) end` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

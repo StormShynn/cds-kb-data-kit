@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BPTaxType` | ✓ | |  | `taxtype` |
-| `TaxTypeName` |  | |  | `text` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BPTaxType` | ✓ | |  | `taxtype` |  |  |
+| `TaxTypeName` |  | |  | `text` |  |  |
 
 ## Source Code
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CountryCode` | ✓ | |  | `land1` |
-| `ConsumptionTaxCtrlCode` | ✓ | |  | `steuc` |
-| `_Country` | | ✓ | | |
-| `_ControlCodeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CountryCode` | ✓ | |  | `land1` |  |  |
+| `ConsumptionTaxCtrlCode` | ✓ | |  | `steuc` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_ControlCodeText` | | ✓ | | | | |
 
 ## Associations
 

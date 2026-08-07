@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NFDirection` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as logbr_nfdirection preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NFDirection` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as logbr_nfdirection preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectServiceOrganizationUUID` | ✓ | |  |  |
-| `ProjectServiceOrganization` |  | |  |  |
-| `ProjectServiceOrganizationOID` |  | |  |  |
-| `ProjSrvcOrgIsTimePostingAllwd` |  | |  |  |
-| `ProjSrvcOrgIsProjDeliveryOrg` |  | |  |  |
-| `ProjSrvcOrgIsResourceOrg` |  | |  |  |
-| `ProjSrvcOrgControllingArea` |  | |  |  |
-| `ProjSrvcOrgCompanyCode` |  | |  |  |
-| `ProjSrvcOrgSalesOrg` |  | |  |  |
-| `ProjSrvcOrgDivision` |  | |  |  |
-| `ProjSrvcOrgDistributionChannel` |  | |  |  |
-| `ProjSrvcOrgPurchaseOrg` |  | |  |  |
-| `ProjSrvcOrgPlant` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectServiceOrganizationUUID` | ✓ | |  |  |  |  |
+| `ProjectServiceOrganization` |  | |  |  |  |  |
+| `ProjectServiceOrganizationOID` |  | |  |  |  |  |
+| `ProjSrvcOrgIsTimePostingAllwd` |  | |  |  |  |  |
+| `ProjSrvcOrgIsProjDeliveryOrg` |  | |  |  |  |  |
+| `ProjSrvcOrgIsResourceOrg` |  | |  |  |  |  |
+| `ProjSrvcOrgControllingArea` |  | |  |  |  |  |
+| `ProjSrvcOrgCompanyCode` |  | |  |  |  |  |
+| `ProjSrvcOrgSalesOrg` |  | |  |  |  |  |
+| `ProjSrvcOrgDivision` |  | |  |  |  |  |
+| `ProjSrvcOrgDistributionChannel` |  | |  |  |  |  |
+| `ProjSrvcOrgPurchaseOrg` |  | |  |  |  |  |
+| `ProjSrvcOrgPlant` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
 
 ## Associations
 

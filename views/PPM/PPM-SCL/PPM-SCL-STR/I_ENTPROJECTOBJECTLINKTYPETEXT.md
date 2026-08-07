@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LanguageCode` | ✓ | |  | `language` |
-| `ObjectLinkType` | ✓ | |  | `object_type` |
-| `ObjectLinkTypeText` |  | |  | `text` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LanguageCode` | ✓ | |  | `language` |  |  |
+| `ObjectLinkType` | ✓ | |  | `object_type` |  |  |
+| `ObjectLinkTypeText` |  | |  | `text` |  |  |
 
 ## Source Code
 

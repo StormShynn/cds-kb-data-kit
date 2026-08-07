@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BankKey` |  | |  | `bankl` |
-| `BankCountry` |  | |  | `banks` |
-| `BPMinimumReserve` |  | |  | `min_reserv` |
-| `_BusinessPartner` | | ✓ | | |
-| `_BPFinancialServicesExtn` | | ✓ | | |
-| `_BPMinimumReserve` | | ✓ | | |
-| `_BPMinimumReserveText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BankKey` |  | |  | `bankl` |  |  |
+| `BankCountry` |  | |  | `banks` |  |  |
+| `BPMinimumReserve` |  | |  | `min_reserv` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BPFinancialServicesExtn` | | ✓ | | | | |
+| `_BPMinimumReserve` | | ✓ | | | | |
+| `_BPMinimumReserveText` | | ✓ | | | | |
 
 ## Associations
 

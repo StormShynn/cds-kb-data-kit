@@ -42,117 +42,117 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  | `cast ( PurchaseOrderItem as vdm_purchaseorderitem preserving type )` |
-| `AccountAssignmentNumber` | ✓ | |  |  |
-| `PurchasingHistoryDocumentType` | ✓ | |  |  |
-| `PurchasingHistoryDocumentYear` | ✓ | |  |  |
-| `PurchasingHistoryDocument` | ✓ | |  |  |
-| `PurchasingHistoryDocumentItem` | ✓ | |  |  |
-| `PurchasingHistoryCategory` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `Currency` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `ReferenceDocumentFiscalYear` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `Material` |  | |  |  |
-| `Plant` |  | |  |  |
-| `RvslOfGoodsReceiptIsAllowed` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `DocumentReferenceID` |  | |  |  |
-| `DeliveryQuantityUnit` |  | |  |  |
-| `ManufacturerMaterial` |  | |  | `cast ( ManufacturerMaterial as ematn preserving type )` |
-| `AccountingDocumentCreationDate` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `PurOrdAmountInCompanyCodeCrcy` |  | |  |  |
-| `PurchaseOrderAmount` |  | |  |  |
-| `QtyInPurchaseOrderPriceUnit` |  | |  |  |
-| `GRIRAcctClrgAmtInCoCodeCrcy` |  | |  |  |
-| `GdsRcptBlkdStkQtyInOrdQtyUnit` |  | |  |  |
-| `GdsRcptBlkdStkQtyInOrdPrcUnit` |  | |  |  |
-| `InvoiceAmtInCoCodeCrcy` |  | |  |  |
-| `ShipgInstrnSupplierCompliance` |  | |  |  |
-| `InvoiceAmountInFrgnCurrency` |  | |  |  |
-| `QuantityInDeliveryQtyUnit` |  | |  |  |
-| `GRIRAcctClrgAmtInTransacCrcy` |  | |  |  |
-| `QuantityInBaseUnit` |  | |  |  |
-| `GRIRAcctClrgAmtInOrdTrnsacCrcy` |  | |  |  |
-| `InvoiceAmtInPurOrdTransacCrcy` |  | |  |  |
-| `VltdGdsRcptBlkdStkQtyInOrdUnit` |  | |  |  |
-| `VltdGdsRcptBlkdQtyInOrdPrcUnit` |  | |  |  |
-| `IsToBeAcceptedAtOrigin` |  | |  |  |
-| `ExchangeRateDifferenceAmount` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `DeliveryDocument` |  | |  |  |
-| `DeliveryDocumentItem` |  | |  | `cast ( DeliveryDocumentItem as vdm_posnr_vl preserving type )` |
-| `OrderPriceUnit` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `DocumentCurrency` |  | |  | `cast ( DocumentCurrency as vdm_documentcurrency preserving type )` |
-| `CompanyCodeCurrency` |  | |  | `cast ( CompanyCodeCurrency as fis_hwaer preserving type )` |
-| `ProductTypeCode` |  | | `_PurchaseOrderItem` | `ProductType` |
-| `IsStatisticalItem` |  | | `_PurchaseOrderItem` | `IsStatisticalItem` |
-| `IsReturnsItem` |  | | `_PurchaseOrderItem` | `IsReturnsItem` |
-| `GoodsReceiptIsExpected` |  | | `_PurchaseOrderItem` | `GoodsReceiptIsExpected` |
-| `GoodsReceiptIsNonValuated` |  | | `_PurchaseOrderItem` | `GoodsReceiptIsNonValuated` |
-| `IsFinallyInvoiced` |  | | `_PurchaseOrderItem` | `IsFinallyInvoiced` |
-| `InvoiceIsExpected` |  | | `_PurchaseOrderItem` | `InvoiceIsExpected` |
-| `PurchaseContract` |  | | `_PurchaseOrderItem` | `PurchaseContract` |
-| `PurchaseContractItem` |  | | `_PurchaseOrderItem` | `PurchaseContractItem` |
-| `AccountAssignmentCategory` |  | | `_PurchaseOrderItem` | `AccountAssignmentCategory` |
-| `PurchaseRequisition` |  | | `_PurchaseOrderItem` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` |  | | `_PurchaseOrderItem` | `PurchaseRequisitionItem` |
-| `PurchaseOrderItemCategory` |  | | `_PurchaseOrderItem` | `PurchaseOrderItemCategory` |
-| `ServicePerformer` |  | | `_PurchaseOrderItem` | `ServicePerformer` |
-| `ProductGroup` |  | | `_PurchaseOrderItem` | `MaterialGroup` |
-| `MultipleAcctAssgmtDistribution` |  | | `_PurchaseOrderItem` | `MultipleAcctAssgmtDistribution` |
-| `PurgDocumentItemDeletionCode` |  | | `_PurchaseOrderItem` | `PurchasingDocumentDeletionCode` |
-| `Supplier` |  | | `_PurchaseOrder` | `Supplier` |
-| `PurchasingOrganization` |  | | `_PurchaseOrder` | `PurchasingOrganization` |
-| `PurchasingGroup` |  | | `_PurchaseOrder` | `PurchasingGroup` |
-| `CompanyCode` |  | | `_PurchaseOrder` | `CompanyCode` |
-| `PurchaseOrderType` |  | | `_PurchaseOrder` | `PurchaseOrderType` |
-| `PurchasingDocumentDeletionCode` |  | | `_PurchaseOrder` | `PurchasingDocumentDeletionCode` |
-| `ReleaseIsNotCompleted` |  | | `_PurchaseOrder` | `ReleaseIsNotCompleted` |
-| `PurchasingCompletenessStatus` |  | | `_PurchaseOrder` | `PurchasingCompletenessStatus` |
-| `_PurchaseOrderDEX` | | ✓ | | |
-| `_PurchaseOrderItemDEX` | | ✓ | | |
-| `_PurchaseContract` | | ✓ | | |
-| `_PurchaseContractItem` | | ✓ | | |
-| `_PurchaseRequisitionItem` | | ✓ | | |
-| `_PurchaseOrderHistCategory` | | ✓ | | |
-| `_GoodsMovementType` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
-| `_DeliveryQuantityUnit` | | ✓ | | |
-| `_ManufacturerMaterial` | | ✓ | | |
-| `_DeliveryDocument` | | ✓ | | |
-| `_DeliveryDocumentItem` | | ✓ | | |
-| `_OrderPriceUnit` | | ✓ | | |
-| `_PurchaseOrderQuantityUnit` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_ProductTypeCode` | | ✓ | | |
-| `_PurgDocumentItemCategory` | | ✓ | | |
-| `_ServicePerformer` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  | `cast ( PurchaseOrderItem as vdm_purchaseorderitem preserving type )` |  |  |
+| `AccountAssignmentNumber` | ✓ | |  |  |  |  |
+| `PurchasingHistoryDocumentType` | ✓ | |  |  |  |  |
+| `PurchasingHistoryDocumentYear` | ✓ | |  |  |  |  |
+| `PurchasingHistoryDocument` | ✓ | |  |  |  |  |
+| `PurchasingHistoryDocumentItem` | ✓ | |  |  |  |  |
+| `PurchasingHistoryCategory` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `ReferenceDocumentFiscalYear` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `RvslOfGoodsReceiptIsAllowed` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `DocumentReferenceID` |  | |  |  |  |  |
+| `DeliveryQuantityUnit` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  | `cast ( ManufacturerMaterial as ematn preserving type )` |  |  |
+| `AccountingDocumentCreationDate` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `PurOrdAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `PurchaseOrderAmount` |  | |  |  |  |  |
+| `QtyInPurchaseOrderPriceUnit` |  | |  |  |  |  |
+| `GRIRAcctClrgAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `GdsRcptBlkdStkQtyInOrdQtyUnit` |  | |  |  |  |  |
+| `GdsRcptBlkdStkQtyInOrdPrcUnit` |  | |  |  |  |  |
+| `InvoiceAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `ShipgInstrnSupplierCompliance` |  | |  |  |  |  |
+| `InvoiceAmountInFrgnCurrency` |  | |  |  |  |  |
+| `QuantityInDeliveryQtyUnit` |  | |  |  |  |  |
+| `GRIRAcctClrgAmtInTransacCrcy` |  | |  |  |  |  |
+| `QuantityInBaseUnit` |  | |  |  |  |  |
+| `GRIRAcctClrgAmtInOrdTrnsacCrcy` |  | |  |  |  |  |
+| `InvoiceAmtInPurOrdTransacCrcy` |  | |  |  |  |  |
+| `VltdGdsRcptBlkdStkQtyInOrdUnit` |  | |  |  |  |  |
+| `VltdGdsRcptBlkdQtyInOrdPrcUnit` |  | |  |  |  |  |
+| `IsToBeAcceptedAtOrigin` |  | |  |  |  |  |
+| `ExchangeRateDifferenceAmount` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `DeliveryDocumentItem` |  | |  | `cast ( DeliveryDocumentItem as vdm_posnr_vl preserving type )` |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  | `cast ( DocumentCurrency as vdm_documentcurrency preserving type )` |  |  |
+| `CompanyCodeCurrency` |  | |  | `cast ( CompanyCodeCurrency as fis_hwaer preserving type )` |  |  |
+| `ProductTypeCode` |  | | `_PurchaseOrderItem` | `ProductType` |  |  |
+| `IsStatisticalItem` |  | | `_PurchaseOrderItem` | `IsStatisticalItem` |  |  |
+| `IsReturnsItem` |  | | `_PurchaseOrderItem` | `IsReturnsItem` |  |  |
+| `GoodsReceiptIsExpected` |  | | `_PurchaseOrderItem` | `GoodsReceiptIsExpected` |  |  |
+| `GoodsReceiptIsNonValuated` |  | | `_PurchaseOrderItem` | `GoodsReceiptIsNonValuated` |  |  |
+| `IsFinallyInvoiced` |  | | `_PurchaseOrderItem` | `IsFinallyInvoiced` |  |  |
+| `InvoiceIsExpected` |  | | `_PurchaseOrderItem` | `InvoiceIsExpected` |  |  |
+| `PurchaseContract` |  | | `_PurchaseOrderItem` | `PurchaseContract` |  |  |
+| `PurchaseContractItem` |  | | `_PurchaseOrderItem` | `PurchaseContractItem` |  |  |
+| `AccountAssignmentCategory` |  | | `_PurchaseOrderItem` | `AccountAssignmentCategory` |  |  |
+| `PurchaseRequisition` |  | | `_PurchaseOrderItem` | `PurchaseRequisition` |  |  |
+| `PurchaseRequisitionItem` |  | | `_PurchaseOrderItem` | `PurchaseRequisitionItem` |  |  |
+| `PurchaseOrderItemCategory` |  | | `_PurchaseOrderItem` | `PurchaseOrderItemCategory` |  |  |
+| `ServicePerformer` |  | | `_PurchaseOrderItem` | `ServicePerformer` |  |  |
+| `ProductGroup` |  | | `_PurchaseOrderItem` | `MaterialGroup` |  |  |
+| `MultipleAcctAssgmtDistribution` |  | | `_PurchaseOrderItem` | `MultipleAcctAssgmtDistribution` |  |  |
+| `PurgDocumentItemDeletionCode` |  | | `_PurchaseOrderItem` | `PurchasingDocumentDeletionCode` |  |  |
+| `Supplier` |  | | `_PurchaseOrder` | `Supplier` |  |  |
+| `PurchasingOrganization` |  | | `_PurchaseOrder` | `PurchasingOrganization` |  |  |
+| `PurchasingGroup` |  | | `_PurchaseOrder` | `PurchasingGroup` |  |  |
+| `CompanyCode` |  | | `_PurchaseOrder` | `CompanyCode` |  |  |
+| `PurchaseOrderType` |  | | `_PurchaseOrder` | `PurchaseOrderType` |  |  |
+| `PurchasingDocumentDeletionCode` |  | | `_PurchaseOrder` | `PurchasingDocumentDeletionCode` |  |  |
+| `ReleaseIsNotCompleted` |  | | `_PurchaseOrder` | `ReleaseIsNotCompleted` |  |  |
+| `PurchasingCompletenessStatus` |  | | `_PurchaseOrder` | `PurchasingCompletenessStatus` |  |  |
+| `_PurchaseOrderDEX` | | ✓ | | | | |
+| `_PurchaseOrderItemDEX` | | ✓ | | | | |
+| `_PurchaseContract` | | ✓ | | | | |
+| `_PurchaseContractItem` | | ✓ | | | | |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
+| `_PurchaseOrderHistCategory` | | ✓ | | | | |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_DeliveryQuantityUnit` | | ✓ | | | | |
+| `_ManufacturerMaterial` | | ✓ | | | | |
+| `_DeliveryDocument` | | ✓ | | | | |
+| `_DeliveryDocumentItem` | | ✓ | | | | |
+| `_OrderPriceUnit` | | ✓ | | | | |
+| `_PurchaseOrderQuantityUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_ProductTypeCode` | | ✓ | | | | |
+| `_PurgDocumentItemCategory` | | ✓ | | | | |
+| `_ServicePerformer` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
 
 ## Associations
 

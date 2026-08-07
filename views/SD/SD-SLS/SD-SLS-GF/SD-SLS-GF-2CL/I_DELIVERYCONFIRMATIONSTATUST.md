@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryConfirmationStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `DeliveryConfirmationStatusDesc` |  | |  | `bezei` |
-| `_DeliveryConfirmationStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryConfirmationStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `DeliveryConfirmationStatusDesc` |  | |  | `bezei` |  |  |
+| `_DeliveryConfirmationStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

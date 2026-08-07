@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderID` | ✓ | |  |  |
-| `OrderDescription` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `OrderCategory` |  | |  |  |
-| `OrderType` |  | |  |  |
-| `Plant` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderID` | ✓ | |  |  |  |  |
+| `OrderDescription` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `OrderType` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
 
 ## Source Code
 

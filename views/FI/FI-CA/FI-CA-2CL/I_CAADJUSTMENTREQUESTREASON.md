@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAAdjustmentRequestReason` | ✓ | |  | `argrd` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAAdjustmentRequestReason` | ✓ | |  | `argrd` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

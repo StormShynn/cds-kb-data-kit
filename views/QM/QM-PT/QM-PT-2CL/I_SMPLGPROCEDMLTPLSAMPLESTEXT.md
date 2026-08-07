@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SamplingProcedureMltplSamples` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as qkzumfs preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SmplgProcedureMltplSamplesText` |  | |  | `cast( ddtext as vdm_qkzumfs_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_SmplgProcedMltplSamples` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SamplingProcedureMltplSamples` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as qkzumfs preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SmplgProcedureMltplSamplesText` |  | |  | `cast( ddtext as vdm_qkzumfs_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SmplgProcedMltplSamples` | | ✓ | | | | |
 
 ## Associations
 

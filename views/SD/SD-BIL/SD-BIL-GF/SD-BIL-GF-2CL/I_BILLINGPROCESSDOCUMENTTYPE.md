@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingProcessDocumentType` | ✓ | |  | `cast( fkart as billingprocessdocumenttype preserving type )` |
-| `SDDocumentCategory` |  | |  | `vbtyp` |
-| `IncrementItemNumber` |  | |  | `incpo` |
-| `BillingDocumentCategory` |  | |  | `fktyp` |
-| `BillgProcDocTxtDetnProcedure` |  | |  | `cast( txtgr as billg_proc_doc_text_detn_head preserving type )` |
-| `BillgProcDocItmTxtDetnProced` |  | |  | `cast( txtgr_p as billg_proc_doc_text_detn_item preserving type )` |
-| `_Text` | | ✓ | | |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_BillingDocumentCategory` | | ✓ | | |
-| `_BillgProcDocTxtDetnProcedure` | | ✓ | | |
-| `_BillgProcDocItmTxtDetnProced` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingProcessDocumentType` | ✓ | |  | `cast( fkart as billingprocessdocumenttype preserving type )` |  |  |
+| `SDDocumentCategory` |  | |  | `vbtyp` |  |  |
+| `IncrementItemNumber` |  | |  | `incpo` |  |  |
+| `BillingDocumentCategory` |  | |  | `fktyp` |  |  |
+| `BillgProcDocTxtDetnProcedure` |  | |  | `cast( txtgr as billg_proc_doc_text_detn_head preserving type )` |  |  |
+| `BillgProcDocItmTxtDetnProced` |  | |  | `cast( txtgr_p as billg_proc_doc_text_detn_item preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_BillingDocumentCategory` | | ✓ | | | | |
+| `_BillgProcDocTxtDetnProcedure` | | ✓ | | | | |
+| `_BillgProcDocItmTxtDetnProced` | | ✓ | | | | |
 
 ## Source Code
 

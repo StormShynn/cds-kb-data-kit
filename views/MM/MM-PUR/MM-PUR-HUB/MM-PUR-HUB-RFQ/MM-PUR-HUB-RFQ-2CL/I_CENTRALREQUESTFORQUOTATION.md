@@ -28,63 +28,63 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralRequestForQuotation` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `Language` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `RFQPublishingDate` |  | |  |  |
-| `QuotationLatestSubmissionDate` |  | |  |  |
-| `BindingPeriodValidityEndDate` |  | |  |  |
-| `TargetAmount` |  | |  |  |
-| `RFQLifecycleStatus` |  | |  |  |
-| `RequestForQuotationName` |  | |  |  |
-| `QuotationEarliestSubmsnDate` |  | |  |  |
-| `LatestRegistrationDate` |  | |  |  |
-| `CorrespncInternalReference` |  | |  |  |
-| `FollowOnDocumentCategory` |  | |  |  |
-| `FollowOnDocumentType` |  | |  |  |
-| `PurgDocFollowOnDocumentType` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `PurContrValidityStartDate` |  | |  |  |
-| `PurContrValidityEndDate` |  | |  |  |
-| `_CentralReqForQuotationItem` | | ✓ | | |
-| `_CntrlReqForQuotationBidder` | | ✓ | | |
-| `_FollowOnDocumentType` | | ✓ | | |
-| `_FollowOnDocumentCategory` | | ✓ | | |
-| `_CentralSupplierQuotation` | | ✓ | | |
-| `_PurchasingDocumentType` | | ✓ | | |
-| `_PurchasingDocumentCategory` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralRequestForQuotation` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `RFQPublishingDate` |  | |  |  |  |  |
+| `QuotationLatestSubmissionDate` |  | |  |  |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |  |  |
+| `TargetAmount` |  | |  |  |  |  |
+| `RFQLifecycleStatus` |  | |  |  |  |  |
+| `RequestForQuotationName` |  | |  |  |  |  |
+| `QuotationEarliestSubmsnDate` |  | |  |  |  |  |
+| `LatestRegistrationDate` |  | |  |  |  |  |
+| `CorrespncInternalReference` |  | |  |  |  |  |
+| `FollowOnDocumentCategory` |  | |  |  |  |  |
+| `FollowOnDocumentType` |  | |  |  |  |  |
+| `PurgDocFollowOnDocumentType` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `PurContrValidityStartDate` |  | |  |  |  |  |
+| `PurContrValidityEndDate` |  | |  |  |  |  |
+| `_CentralReqForQuotationItem` | | ✓ | | | | |
+| `_CntrlReqForQuotationBidder` | | ✓ | | | | |
+| `_FollowOnDocumentType` | | ✓ | | | | |
+| `_FollowOnDocumentCategory` | | ✓ | | | | |
+| `_CentralSupplierQuotation` | | ✓ | | | | |
+| `_PurchasingDocumentType` | | ✓ | | | | |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

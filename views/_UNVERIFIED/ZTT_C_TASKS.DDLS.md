@@ -37,27 +37,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `projectCode` |  | |  | `, {type: #FOR_ACTION, position: 3, dataAction: 'BOPF:CREATE_TR_CU', label: 'New Customizing TR'}, {type: #FOR_ACTION, position: 8, dataAction: 'BOPF:CANCEL', label: 'Cancel'}, {type: #FOR_ACTION, position: 8, dataAction: 'BOPF:BACK_PREVIOUS_VERSION', label: 'Restore status'}, {type: #FOR_ACTION, position: 9, dataAction: 'BOPF:END_TASK', label: 'End task'}, { position: 10, importance: #HIGH } ], lineItem: [ {type: #FOR_ACTION, position: 1, dataAction: 'BOPF:CANCEL', label: 'Cancel'}, {position: 10, importance: #HIGH } ], selectionField.position: 10, dataPoint.title: 'Project code' } key project_code` |
-| `code` |  | |  | `, lineItem: { position: 20, importance: #HIGH }, selectionField.position: 20, dataPoint: { title: 'Task', criticality: 'endCritically' } } key code` |
-| `description` |  | |  | `, lineItem: { position: 30, importance: #HIGH }, selectionField.position: 30 } description` |
-| `status` |  | |  | `, lineItem: { position: 35, importance: #HIGH }, selectionField.position: 35 } status` |
-| `progressCriticality` |  | |  | `case when progress < 33 then 1 when progress > 66 then 3 else 2 end` |
-| `progress` |  | |  |  |
-| `estimation` |  | |  |  |
-| `totalHours` |  | | `_totalHours` | `totalHours` |
-| `planEndDate` |  | |  | `plan_end_date` |
-| `endDate` |  | |  | `ended_on` |
-| `endCritically` |  | |  | `, lineItem: {position: 66, importance: #MEDIUM, criticality: 'endCritically' }, textArrangement: #TEXT_ONLY } cast( case when plan_end_date <> '00000000' then case when secondsToDeadline <= 0 then 1 when secondsToDeadline between 0 and 86400 then 2 else 3 end else 0 end as abap.char(3) )` |
-| `functionalResponsible` |  | |  | `, lineItem: { position: 70, importance: #HIGH, type: #AS_CONTACT, label: 'Functional Responsible', value: '_functionalUserInfo' }, selectionField.position: 70 } functional_responsible` |
-| `technicalResponsible` |  | |  | `, lineItem: { position: 80, importance: #MEDIUM, type: #AS_CONTACT, label: 'Technical Responsible', value: '_technicalUserInfo' }, selectionField.position: 80 } technical_responsible` |
-| `_project` | | ✓ | | |
-| `_status` | | ✓ | | |
-| `_criticality` | | ✓ | | |
-| `_comments` | | ✓ | | |
-| `_transportRequests` | | ✓ | | |
-| `_timeLog` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `projectCode` | ✓ | |  | `project_code` |  |  |
+| `code` | ✓ | |  |  |  |  |
+| `description` |  | |  |  |  |  |
+| `status` |  | |  |  |  |  |
+| `progressCriticality` |  | |  | `case when progress < 33 then 1 when progress > 66 then 3 else 2 end` |  |  |
+| `progress` |  | |  |  |  |  |
+| `estimation` |  | |  |  |  |  |
+| `totalHours` |  | | `_totalHours` | `totalHours` |  |  |
+| `planEndDate` |  | |  | `plan_end_date` |  |  |
+| `endDate` |  | |  | `ended_on` |  |  |
+| `endCritically` |  | |  | `cast( case when plan_end_date <> '00000000' then case when secondsToDeadline <= 0 then 1 when secondsToDeadline between 0 and 86400 then 2 else 3 end else 0 end as abap.char(3) )` |  |  |
+| `functionalResponsible` |  | |  | `functional_responsible` |  |  |
+| `technicalResponsible` |  | |  | `technical_responsible` |  |  |
+| `_project` | | ✓ | | | | |
+| `_functionalUserInfo` | | ✓ | | | | |
+| `_technicalUserInfo` | | ✓ | | | | |
+| `_status` | | ✓ | | | | |
+| `_criticality` | | ✓ | | | | |
+| `_comments` | | ✓ | | | | |
+| `_transportRequests` | | ✓ | | | | |
+| `_timeLog` | | ✓ | | | | |
 
 ## Associations
 

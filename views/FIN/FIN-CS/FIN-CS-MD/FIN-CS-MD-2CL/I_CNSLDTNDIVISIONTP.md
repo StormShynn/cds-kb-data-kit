@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Division` | ✓ | | `_CnsldtnDivision` | `Division` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnDivision` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnDivisionTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnDivisionTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Division` | ✓ | | `_CnsldtnDivision` | `Division` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnDivision` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnDivisionTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnDivisionTextTP` |  |  |
 
 ## Source Code
 

@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationScaleUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_rate_scale_uuid preserving type)` |
-| `TranspRateScaleRefUUID` |  | |  | `cast(rate_scale_ref_key as /scmtms/transpratescalref_uuid preserving type)` |
-| `TransportationRateUUID` |  | | `_TranspRateScaleReference` | `TransportationRateUUID` |
-| `TransportationScale` |  | |  | `cast(scaid as /scmtms/vdm_rate_scale preserving type)` |
-| `TransportationScaleType` |  | |  | `cast(scatyp as /scmtms/vdm_rt_scale_type preserving type)` |
-| `TransportationScaleBase` |  | |  | `cast(scalebase as /scmtms/vdm_rt_scale_base preserving type)` |
-| `TranspScaleQuantityUnit` |  | |  | `cast(scale_uom as /scmtms/vdm_rt_sc_qty_unit preserving type)` |
-| `TransportationScaleCurrency` |  | |  | `scale_curr` |
-| `CreatedByUser` |  | |  | `cast(created_by as vdm_createdbyuserid preserving type)` |
-| `CreationDateTime` |  | |  | `cast(created_on as log_created_on preserving type)` |
-| `LastChangedByUser` |  | |  | `cast(changed_by as vdm_lastchangedbyuserid preserving type)` |
-| `ChangedDateTime` |  | |  | `cast(changed_on as /scmtms/vdm_tm_tstmp_cht preserving type)` |
-| `_CreatedBy` | | ✓ | | |
-| `_ChangedBy` | | ✓ | | |
-| `_TranspScaleQuantityUnit` | | ✓ | | |
-| `_TranspScaleCurrency` | | ✓ | | |
-| `_TransportationScaleType` | | ✓ | | |
-| `_TransportationScaleBase` | | ✓ | | |
-| `_TransportationRate` | | ✓ | | |
-| `_TranspScaleItem` | | ✓ | | |
-| `_TranspRateScaleReference` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationScaleUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_rate_scale_uuid preserving type)` |  |  |
+| `TranspRateScaleRefUUID` |  | |  | `cast(rate_scale_ref_key as /scmtms/transpratescalref_uuid preserving type)` |  |  |
+| `TransportationRateUUID` |  | | `_TranspRateScaleReference` | `TransportationRateUUID` |  |  |
+| `TransportationScale` |  | |  | `cast(scaid as /scmtms/vdm_rate_scale preserving type)` |  |  |
+| `TransportationScaleType` |  | |  | `cast(scatyp as /scmtms/vdm_rt_scale_type preserving type)` |  |  |
+| `TransportationScaleBase` |  | |  | `cast(scalebase as /scmtms/vdm_rt_scale_base preserving type)` |  |  |
+| `TranspScaleQuantityUnit` |  | |  | `cast(scale_uom as /scmtms/vdm_rt_sc_qty_unit preserving type)` |  |  |
+| `TransportationScaleCurrency` |  | |  | `scale_curr` |  |  |
+| `CreatedByUser` |  | |  | `cast(created_by as vdm_createdbyuserid preserving type)` |  |  |
+| `CreationDateTime` |  | |  | `cast(created_on as log_created_on preserving type)` |  |  |
+| `LastChangedByUser` |  | |  | `cast(changed_by as vdm_lastchangedbyuserid preserving type)` |  |  |
+| `ChangedDateTime` |  | |  | `cast(changed_on as /scmtms/vdm_tm_tstmp_cht preserving type)` |  |  |
+| `_CreatedBy` | | ✓ | | | | |
+| `_ChangedBy` | | ✓ | | | | |
+| `_TranspScaleQuantityUnit` | | ✓ | | | | |
+| `_TranspScaleCurrency` | | ✓ | | | | |
+| `_TransportationScaleType` | | ✓ | | | | |
+| `_TransportationScaleBase` | | ✓ | | | | |
+| `_TransportationRate` | | ✓ | | | | |
+| `_TranspScaleItem` | | ✓ | | | | |
+| `_TranspRateScaleReference` | | ✓ | | | | |
 
 ## Associations
 

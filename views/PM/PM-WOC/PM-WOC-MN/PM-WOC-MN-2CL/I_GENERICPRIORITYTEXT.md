@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `GenericPriorityType` | ✓ | |  | `artpr` |
-| `PriorityCode` | ✓ | |  | `priok` |
-| `GenericPriorityDesc` |  | |  | `priokx` |
-| `_GenericPriority` | | ✓ | | |
-| `_GenericPriorityType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `GenericPriorityType` | ✓ | |  | `artpr` |  |  |
+| `PriorityCode` | ✓ | |  | `priok` |  |  |
+| `GenericPriorityDesc` |  | |  | `priokx` |  |  |
+| `_GenericPriority` | | ✓ | | | | |
+| `_GenericPriorityType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

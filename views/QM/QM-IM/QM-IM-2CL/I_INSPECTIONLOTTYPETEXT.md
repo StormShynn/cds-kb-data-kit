@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLotType` | ✓ | |  | `art` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionLotTypeText` |  | |  | `cast( tq30t.kurztext as vdm_qpart_text preserving type )` |
-| `_InspectionLotType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLotType` | ✓ | |  | `art` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionLotTypeText` |  | |  | `cast( tq30t.kurztext as vdm_qpart_text preserving type )` |  |  |
+| `_InspectionLotType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

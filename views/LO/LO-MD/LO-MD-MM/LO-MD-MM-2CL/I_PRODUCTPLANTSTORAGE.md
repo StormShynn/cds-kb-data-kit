@@ -31,23 +31,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `InventoryForCycleCountInd` |  | |  |  |
-| `MaximumStoragePeriod` |  | |  |  |
-| `ProvisioningServiceLevel` |  | |  |  |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `ProdMaximumStoragePeriodUnit` |  | |  |  |
-| `WrhsMgmtPtwyAndStkRemovalStrgy` |  | |  |  |
-| `CycleCountingIndicatorIsFixed` |  | |  |  |
-| `SegmentationStrategyForPlant` |  | |  |  |
-| `DefaultSegmentValue` |  | |  |  |
-| `SgmtHasPrioInProductStockSort` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProvisioningSrvcLvl` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `InventoryForCycleCountInd` |  | |  |  |  |  |
+| `MaximumStoragePeriod` |  | |  |  |  |  |
+| `ProvisioningServiceLevel` |  | |  |  |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `ProdMaximumStoragePeriodUnit` |  | |  |  |  |  |
+| `WrhsMgmtPtwyAndStkRemovalStrgy` |  | |  |  |  |  |
+| `CycleCountingIndicatorIsFixed` |  | |  |  |  |  |
+| `SegmentationStrategyForPlant` |  | |  |  |  |  |
+| `DefaultSegmentValue` |  | |  |  |  |  |
+| `SgmtHasPrioInProductStockSort` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProvisioningSrvcLvl` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `ConsolidationProductHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_producthierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `CnsldtnProductHierarchyText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_productgrouphiertext preserving type )` |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `ConsolidationProductHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_producthierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `CnsldtnProductHierarchyText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_productgrouphiertext preserving type )` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

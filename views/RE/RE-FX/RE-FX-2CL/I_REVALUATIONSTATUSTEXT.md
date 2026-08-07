@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `REValuationStatus` | ✓ | |  | `cast(domvalue_l as recestatusevaluation )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `REValuationStatusDesc` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_REValuationStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `REValuationStatus` | ✓ | |  | `cast(domvalue_l as recestatusevaluation )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `REValuationStatusDesc` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_REValuationStatus` | | ✓ | | | | |
 
 ## Associations
 

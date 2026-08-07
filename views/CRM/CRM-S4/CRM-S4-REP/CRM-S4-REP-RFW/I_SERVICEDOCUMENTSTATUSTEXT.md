@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentStatus` | ✓ | |  | `domvalue_l` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `ServiceDocumentStatusName` |  | |  | `ddtext` |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentStatus` | ✓ | |  | `domvalue_l` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `ServiceDocumentStatusName` |  | |  | `ddtext` |  |  |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

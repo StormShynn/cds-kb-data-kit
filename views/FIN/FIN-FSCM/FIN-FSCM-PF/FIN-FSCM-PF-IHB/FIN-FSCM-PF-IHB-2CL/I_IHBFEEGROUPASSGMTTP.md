@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IHBGroupAssignmentUUID` | ✓ | |  |  |
-| `IHBObjectUUID` |  | |  |  |
-| `IHBGroupAssignmentRefUUID` |  | |  |  |
-| `IHBObjectCategory` |  | |  |  |
-| `IHBObjectKeyUUID` |  | |  |  |
-| `IHBAccountNumber` |  | |  |  |
-| `IHBAccountCurrency` |  | |  |  |
-| `IHBGroupAssgmtValidFromDate` |  | |  |  |
-| `IHBGroupAssgmtValidToDate` |  | |  |  |
-| `IHBObjectTotalChangedDateTime` |  | |  |  |
-| `IHBObjectCreatedDateTime` |  | |  |  |
-| `IHBObjectCreatedByUser` |  | |  |  |
-| `IHBObjectChangedDateTime` |  | |  |  |
-| `IHBObjectChangedByUser` |  | |  |  |
-| `_IHBAccount` | | ✓ | | |
-| `_IHBMasterDataObjectTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IHBGroupAssignmentUUID` | ✓ | |  |  |  |  |
+| `IHBObjectUUID` |  | |  |  |  |  |
+| `IHBGroupAssignmentRefUUID` |  | |  |  |  |  |
+| `IHBObjectCategory` |  | |  |  |  |  |
+| `IHBObjectKeyUUID` |  | |  |  |  |  |
+| `IHBAccountNumber` |  | |  |  |  |  |
+| `IHBAccountCurrency` |  | |  |  |  |  |
+| `IHBGroupAssgmtValidFromDate` |  | |  |  |  |  |
+| `IHBGroupAssgmtValidToDate` |  | |  |  |  |  |
+| `IHBObjectTotalChangedDateTime` |  | |  |  |  |  |
+| `IHBObjectCreatedDateTime` |  | |  |  |  |  |
+| `IHBObjectCreatedByUser` |  | |  |  |  |  |
+| `IHBObjectChangedDateTime` |  | |  |  |  |  |
+| `IHBObjectChangedByUser` |  | |  |  |  |  |
+| `_IHBAccount` | | ✓ | | | | |
+| `_IHBMasterDataObjectTP` | | ✓ | | | | |
 
 ## Source Code
 

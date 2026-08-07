@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RecurrenceEndType` | ✓ | |  | `cast( substring( dd07l.domvalue_l, 1, 1 ) as fac_rjet_end_by_type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RecurrenceEndType` | ✓ | |  | `cast( substring( dd07l.domvalue_l, 1, 1 ) as fac_rjet_end_by_type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

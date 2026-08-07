@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCodeHierarchy` | ✓ | |  | `cast ( hrrp_nodet_n.hryid_42 as fis_hryid_ccode_42 preserving type )` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `ValidityEndDate` | ✓ | |  | `cast (hrrp_nodet_n.hryvalto as fis_datbi)` |
-| `Language` | ✓ | |  | `spras` |
-| `HierarchyNodeText` |  | |  | `nodetxt` |
-| `ValidityStartDate` |  | |  | `cast (hrrp_nodet_n.hryvalfrom as fis_datab)` |
-| `_Language` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCodeHierarchy` | ✓ | |  | `cast ( hrrp_nodet_n.hryid_42 as fis_hryid_ccode_42 preserving type )` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast (hrrp_nodet_n.hryvalto as fis_datbi)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `HierarchyNodeText` |  | |  | `nodetxt` |  |  |
+| `ValidityStartDate` |  | |  | `cast (hrrp_nodet_n.hryvalfrom as fis_datab)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

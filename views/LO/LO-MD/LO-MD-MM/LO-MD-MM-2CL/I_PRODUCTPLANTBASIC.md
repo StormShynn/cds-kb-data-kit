@@ -31,128 +31,128 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `CountryOfOrigin` |  | |  |  |
-| `RegionOfOrigin` |  | |  | `, useAsTemplate: true }] RegionOfOrigin` |
-| `ProductionInvtryManagedLoc` |  | |  |  |
-| `ProfileCode` |  | |  |  |
-| `ProfileValidityStartDate` |  | |  |  |
-| `AvailabilityCheckType` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `PeriodType` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `GoodsReceiptDuration` |  | |  |  |
-| `MaintenanceStatusName` |  | |  | `MaintenanceStatus` |
-| `IsMarkedForDeletion` |  | |  |  |
-| `MRPType` |  | |  |  |
-| `MRPResponsible` |  | |  |  |
-| `ABCIndicator` |  | |  |  |
-| `MinimumLotSizeQuantity` |  | |  |  |
-| `MaximumLotSizeQuantity` |  | |  |  |
-| `FixedLotSizeQuantity` |  | |  |  |
-| `ConsumptionTaxCtrlCode` |  | |  |  |
-| `IsCoProduct` |  | |  |  |
-| `ConfigurableProduct` |  | |  |  |
-| `StockDeterminationGroup` |  | |  |  |
-| `HasPostToInspectionStock` |  | |  |  |
-| `IsBatchManagementRequired` |  | |  |  |
-| `SerialNumberProfile` |  | |  |  |
-| `IsNegativeStockAllowed` |  | |  |  |
-| `HasConsignmentCtrl` |  | |  | `ConsignmentControl` |
-| `IsPurgAcrossPurgGroup` |  | |  |  |
-| `IsInternalBatchManaged` |  | |  |  |
-| `ProductCFOPCategory` |  | |  |  |
-| `ProductIsExciseTaxRelevant` |  | |  |  |
-| `UnderDelivToleranceLimit` |  | |  |  |
-| `OverDelivToleranceLimit` |  | |  |  |
-| `ProcurementType` |  | |  |  |
-| `SpecialProcurementType` |  | |  | `ProcurementSubType` |
-| `ProductionSchedulingProfile` |  | |  |  |
-| `ProductionSupervisor` |  | |  |  |
-| `SafetyStockQuantity` |  | |  |  |
-| `GoodsIssueUnit` |  | |  |  |
-| `SourceOfSupplyCategory` |  | |  |  |
-| `ConsumptionReferenceProduct` |  | |  |  |
-| `ConsumptionReferencePlant` |  | |  |  |
-| `ConsumptionRefUsageEndDate` |  | |  |  |
-| `ConsumptionQtyMultiplier` |  | |  |  |
-| `ProductUnitGroup` |  | |  |  |
-| `DistrCntrDistributionProfile` |  | |  |  |
-| `ConsignmentControl` |  | |  |  |
-| `GoodIssueProcessingDays` |  | |  |  |
-| `PlannedDeliveryDurationInDays` |  | |  |  |
-| `ProductIsCriticalPrt` |  | |  |  |
-| `ProductLogisticsHandlingGroup` |  | |  |  |
-| `MaterialFreightGroup` |  | |  |  |
-| `OriginalBatchReferenceMaterial` |  | |  |  |
-| `OriglBatchManagementIsRequired` |  | |  |  |
-| `ProductConfiguration` |  | |  |  |
-| `ProductMinControlTemperature` |  | |  |  |
-| `ProductMaxControlTemperature` |  | |  |  |
-| `ProductControlTemperatureUnit` |  | |  |  |
-| `ValuationCategory` |  | |  |  |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `ItemUniqueIdentifierIsRelevant` |  | |  |  |
-| `ItemUniqueIdentifierType` |  | |  |  |
-| `ExtAllocOfItmUnqIdtIsRelevant` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_MRPController` | | ✓ | | |
-| `_ProductStatus` | | ✓ | | |
-| `_ProductStatusText` | | ✓ | | |
-| `_GoodsIssueUnit` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_FiscalYearVariantDescription` | | ✓ | | |
-| `_ConfigurableProduct` | | ✓ | | |
-| `_ConfigurableProductName` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ConfigurableProductName_2` | | ✓ | | |
-| `_Text_2` | | ✓ | | |
-| `_ABCIndicator` | | ✓ | | |
-| `_ABCIndicatorDesc` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Site` | | ✓ | | |
-| `_MRPType` | | ✓ | | |
-| `_SourceOfSupplyCategory` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_GoodsMovementQuantity` | | ✓ | | |
-| `_PlantProcurement` | | ✓ | | |
-| `_ProdPlantInternationalTrade` | | ✓ | | |
-| `_ProductPlantCosting` | | ✓ | | |
-| `_ProductPlantForecast` | | ✓ | | |
-| `_PlantQualityMgmt` | | ✓ | | |
-| `_PlantSales` | | ✓ | | |
-| `_MaterialLotSizingProcedure` | | ✓ | | |
-| `_MaterialStock` | | ✓ | | |
-| `_Stock` | | ✓ | | |
-| `_CountryOfOriginText` | | ✓ | | |
-| `_RegionText` | | ✓ | | |
-| `_ProductStorageLocation` | | ✓ | | |
-| `_StockDeterminationGroup` | | ✓ | | |
-| `_StockDeterminationGroupT` | | ✓ | | |
-| `_ProductCFOPCategory` | | ✓ | | |
-| `_CFOPDesc` | | ✓ | | |
-| `_PeriodType` | | ✓ | | |
-| `_PeriodTypeText` | | ✓ | | |
-| `_DistributionProfile` | | ✓ | | |
-| `_DistributionProfileText` | | ✓ | | |
-| `_PlantESPP` | | ✓ | | |
-| `_ProdControlTemperatureUnit` | | ✓ | | |
-| `_ProdCtrlTemperatureUnitText` | | ✓ | | |
-| `_ProductFreightGroup` | | ✓ | | |
-| `_ProductFreightGroupText` | | ✓ | | |
-| `_ConsignmentControlText` | | ✓ | | |
-| `_ProdLogisticsHandlingGroupT` | | ✓ | | |
-| `_ProdProcurementTypeText` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
-| `_CnsmpnReferenceProductText` | | ✓ | | |
-| `_OriglReferenceMaterialText` | | ✓ | | |
-| `_SerialNumberProfileText` | | ✓ | | |
-| `_MRPTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `RegionOfOrigin` |  | |  |  |  |  |
+| `ProductionInvtryManagedLoc` |  | |  |  |  |  |
+| `ProfileCode` |  | |  |  |  |  |
+| `ProfileValidityStartDate` |  | |  |  |  |  |
+| `AvailabilityCheckType` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `PeriodType` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `GoodsReceiptDuration` |  | |  |  |  |  |
+| `MaintenanceStatusName` |  | |  | `MaintenanceStatus` |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `MRPType` |  | |  |  |  |  |
+| `MRPResponsible` |  | |  |  |  |  |
+| `ABCIndicator` |  | |  |  |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |  |  |
+| `FixedLotSizeQuantity` |  | |  |  |  |  |
+| `ConsumptionTaxCtrlCode` |  | |  |  |  |  |
+| `IsCoProduct` |  | |  |  |  |  |
+| `ConfigurableProduct` |  | |  |  |  |  |
+| `StockDeterminationGroup` |  | |  |  |  |  |
+| `HasPostToInspectionStock` |  | |  |  |  |  |
+| `IsBatchManagementRequired` |  | |  |  |  |  |
+| `SerialNumberProfile` |  | |  |  |  |  |
+| `IsNegativeStockAllowed` |  | |  |  |  |  |
+| `HasConsignmentCtrl` |  | |  | `ConsignmentControl` |  |  |
+| `IsPurgAcrossPurgGroup` |  | |  |  |  |  |
+| `IsInternalBatchManaged` |  | |  |  |  |  |
+| `ProductCFOPCategory` |  | |  |  |  |  |
+| `ProductIsExciseTaxRelevant` |  | |  |  |  |  |
+| `UnderDelivToleranceLimit` |  | |  |  |  |  |
+| `OverDelivToleranceLimit` |  | |  |  |  |  |
+| `ProcurementType` |  | |  |  |  |  |
+| `SpecialProcurementType` |  | |  | `ProcurementSubType` |  |  |
+| `ProductionSchedulingProfile` |  | |  |  |  |  |
+| `ProductionSupervisor` |  | |  |  |  |  |
+| `SafetyStockQuantity` |  | |  |  |  |  |
+| `GoodsIssueUnit` |  | |  |  |  |  |
+| `SourceOfSupplyCategory` |  | |  |  |  |  |
+| `ConsumptionReferenceProduct` |  | |  |  |  |  |
+| `ConsumptionReferencePlant` |  | |  |  |  |  |
+| `ConsumptionRefUsageEndDate` |  | |  |  |  |  |
+| `ConsumptionQtyMultiplier` |  | |  |  |  |  |
+| `ProductUnitGroup` |  | |  |  |  |  |
+| `DistrCntrDistributionProfile` |  | |  |  |  |  |
+| `ConsignmentControl` |  | |  |  |  |  |
+| `GoodIssueProcessingDays` |  | |  |  |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |  |  |
+| `ProductIsCriticalPrt` |  | |  |  |  |  |
+| `ProductLogisticsHandlingGroup` |  | |  |  |  |  |
+| `MaterialFreightGroup` |  | |  |  |  |  |
+| `OriginalBatchReferenceMaterial` |  | |  |  |  |  |
+| `OriglBatchManagementIsRequired` |  | |  |  |  |  |
+| `ProductConfiguration` |  | |  |  |  |  |
+| `ProductMinControlTemperature` |  | |  |  |  |  |
+| `ProductMaxControlTemperature` |  | |  |  |  |  |
+| `ProductControlTemperatureUnit` |  | |  |  |  |  |
+| `ValuationCategory` |  | |  |  |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `ItemUniqueIdentifierIsRelevant` |  | |  |  |  |  |
+| `ItemUniqueIdentifierType` |  | |  |  |  |  |
+| `ExtAllocOfItmUnqIdtIsRelevant` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_MRPController` | | ✓ | | | | |
+| `_ProductStatus` | | ✓ | | | | |
+| `_ProductStatusText` | | ✓ | | | | |
+| `_GoodsIssueUnit` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_FiscalYearVariantDescription` | | ✓ | | | | |
+| `_ConfigurableProduct` | | ✓ | | | | |
+| `_ConfigurableProductName` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ConfigurableProductName_2` | | ✓ | | | | |
+| `_Text_2` | | ✓ | | | | |
+| `_ABCIndicator` | | ✓ | | | | |
+| `_ABCIndicatorDesc` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Site` | | ✓ | | | | |
+| `_MRPType` | | ✓ | | | | |
+| `_SourceOfSupplyCategory` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_GoodsMovementQuantity` | | ✓ | | | | |
+| `_PlantProcurement` | | ✓ | | | | |
+| `_ProdPlantInternationalTrade` | | ✓ | | | | |
+| `_ProductPlantCosting` | | ✓ | | | | |
+| `_ProductPlantForecast` | | ✓ | | | | |
+| `_PlantQualityMgmt` | | ✓ | | | | |
+| `_PlantSales` | | ✓ | | | | |
+| `_MaterialLotSizingProcedure` | | ✓ | | | | |
+| `_MaterialStock` | | ✓ | | | | |
+| `_Stock` | | ✓ | | | | |
+| `_CountryOfOriginText` | | ✓ | | | | |
+| `_RegionText` | | ✓ | | | | |
+| `_ProductStorageLocation` | | ✓ | | | | |
+| `_StockDeterminationGroup` | | ✓ | | | | |
+| `_StockDeterminationGroupT` | | ✓ | | | | |
+| `_ProductCFOPCategory` | | ✓ | | | | |
+| `_CFOPDesc` | | ✓ | | | | |
+| `_PeriodType` | | ✓ | | | | |
+| `_PeriodTypeText` | | ✓ | | | | |
+| `_DistributionProfile` | | ✓ | | | | |
+| `_DistributionProfileText` | | ✓ | | | | |
+| `_PlantESPP` | | ✓ | | | | |
+| `_ProdControlTemperatureUnit` | | ✓ | | | | |
+| `_ProdCtrlTemperatureUnitText` | | ✓ | | | | |
+| `_ProductFreightGroup` | | ✓ | | | | |
+| `_ProductFreightGroupText` | | ✓ | | | | |
+| `_ConsignmentControlText` | | ✓ | | | | |
+| `_ProdLogisticsHandlingGroupT` | | ✓ | | | | |
+| `_ProdProcurementTypeText` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
+| `_CnsmpnReferenceProductText` | | ✓ | | | | |
+| `_OriglReferenceMaterialText` | | ✓ | | | | |
+| `_SerialNumberProfileText` | | ✓ | | | | |
+| `_MRPTypeText` | | ✓ | | | | |
 
 ## Associations
 

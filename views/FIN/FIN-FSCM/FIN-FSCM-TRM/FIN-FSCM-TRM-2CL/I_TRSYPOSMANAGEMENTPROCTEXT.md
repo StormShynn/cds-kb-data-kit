@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrsyPosManagementProcedure` | ✓ | |  | `cast(TrsyPosManagementProcedureText.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `TrsyPosManagementProcedureName` |  | |  | `cast(TrsyPosManagementProcedureText.pos_man_proc_t as ftr_gen_pos_man_proc_name preserving type)` |
-| `_TrsyPosManagementProcedure` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrsyPosManagementProcedure` | ✓ | |  | `cast(TrsyPosManagementProcedureText.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TrsyPosManagementProcedureName` |  | |  | `cast(TrsyPosManagementProcedureText.pos_man_proc_t as ftr_gen_pos_man_proc_name preserving type)` |  |  |
+| `_TrsyPosManagementProcedure` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

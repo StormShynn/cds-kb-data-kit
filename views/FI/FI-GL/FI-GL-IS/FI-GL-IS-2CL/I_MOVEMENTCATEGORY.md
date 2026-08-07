@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AssetAcctTransClassfctn` | ✓ | |  | `movcat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AssetAcctTransClassfctn` | ✓ | |  | `movcat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

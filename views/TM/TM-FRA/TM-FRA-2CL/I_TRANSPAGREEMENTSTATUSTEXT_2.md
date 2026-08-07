@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationAgreementStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/vdm_fag_root_status preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspAgreementStatusText` |  | |  | `cast(ddtext as /scmtms/vdm_fag_status_desc preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspAgreementStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationAgreementStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/vdm_fag_root_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspAgreementStatusText` |  | |  | `cast(ddtext as /scmtms/vdm_fag_status_desc preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspAgreementStatus` | | ✓ | | | | |
 
 ## Associations
 

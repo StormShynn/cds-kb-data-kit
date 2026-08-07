@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionSupplyArea` | ✓ | |  | `cast(pvbe.prvbe as vdm_prvbe preserving type)` |
-| `Plant` | ✓ | |  | `werks` |
-| `StorageLocation` |  | |  | `cast(pvbe.lgort as pph_lgort preserving type)` |
-| `UnloadingPointName` |  | |  | `ablad` |
-| `AddressID` |  | |  | `pvadr` |
-| `ProductionSupplyAreaRespPerson` |  | |  | `rgver` |
-| `FactoryCalendar` |  | |  | `cast(pvbe.fabklv as fabkl preserving type)` |
-| `ShiftGrouping` |  | |  | `schgrupv` |
-| `ShiftSequence` |  | |  | `sprogv` |
-| `PullIntervalInWorkdays` |  | |  | `pintvd` |
-| `PullIntervalInHoursAndMinutes` |  | |  | `cast(pvbe.pintvm as pintv_hrs_min)` |
-| `UnloadingWarehouseStagingArea` |  | |  | `lgbzo` |
-| `LastChangeDateTime` |  | |  | `lastchange_datetime` |
-| `AutomotiveLoadingPoint` |  | |  | `loadingpoint` |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_ResponsiblePerson` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_ShiftGrouping` | | ✓ | | |
-| `_ShiftSequence` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionSupplyArea` | ✓ | |  | `cast(pvbe.prvbe as vdm_prvbe preserving type)` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `StorageLocation` |  | |  | `cast(pvbe.lgort as pph_lgort preserving type)` |  |  |
+| `UnloadingPointName` |  | |  | `ablad` |  |  |
+| `AddressID` |  | |  | `pvadr` |  |  |
+| `ProductionSupplyAreaRespPerson` |  | |  | `rgver` |  |  |
+| `FactoryCalendar` |  | |  | `cast(pvbe.fabklv as fabkl preserving type)` |  |  |
+| `ShiftGrouping` |  | |  | `schgrupv` |  |  |
+| `ShiftSequence` |  | |  | `sprogv` |  |  |
+| `PullIntervalInWorkdays` |  | |  | `pintvd` |  |  |
+| `PullIntervalInHoursAndMinutes` |  | |  | `cast(pvbe.pintvm as pintv_hrs_min)` |  |  |
+| `UnloadingWarehouseStagingArea` |  | |  | `lgbzo` |  |  |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` |  |  |
+| `AutomotiveLoadingPoint` |  | |  | `loadingpoint` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_ResponsiblePerson` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_ShiftSequence` | | ✓ | | | | |
 
 ## Associations
 

@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentRequestType` | ✓ | |  | `cast ( BillingProcessDocumentType as sdbil_odata_bdr_type preserving type)` |
-| `SDDocumentCategory` |  | |  |  |
-| `IncrementItemNumber` |  | |  |  |
-| `BillingDocumentCategory` |  | |  |  |
-| `BillgDocReqTxtDetnProcedure` |  | |  | `cast ( BillgProcDocTxtDetnProcedure as billgdocreqtxtdetnprocedure preserving type)` |
-| `BillgDocReqItmTxtDetnProcedure` |  | |  | `cast ( BillgProcDocItmTxtDetnProced as billgdocreqitmtxtdetnprocedure preserving type )` |
-| `_BillgDocReqTxtDetnProcedure` |  | |  | `_BillgProcDocTxtDetnProcedure` |
-| `_BillgDocReqItmTxtDetnProced` |  | |  | `_BillgProcDocItmTxtDetnProced` |
-| `_Text` | | ✓ | | |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_BillingDocumentCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentRequestType` | ✓ | |  | `cast ( BillingProcessDocumentType as sdbil_odata_bdr_type preserving type)` |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `IncrementItemNumber` |  | |  |  |  |  |
+| `BillingDocumentCategory` |  | |  |  |  |  |
+| `BillgDocReqTxtDetnProcedure` |  | |  | `cast ( BillgProcDocTxtDetnProcedure as billgdocreqtxtdetnprocedure preserving type)` |  |  |
+| `BillgDocReqItmTxtDetnProcedure` |  | |  | `cast ( BillgProcDocItmTxtDetnProced as billgdocreqitmtxtdetnprocedure preserving type )` |  |  |
+| `_BillgDocReqTxtDetnProcedure` |  | |  | `_BillgProcDocTxtDetnProcedure` |  |  |
+| `_BillgDocReqItmTxtDetnProced` |  | |  | `_BillgProcDocItmTxtDetnProced` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_BillingDocumentCategory` | | ✓ | | | | |
 
 ## Source Code
 

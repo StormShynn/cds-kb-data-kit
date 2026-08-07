@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `SelectedCodeSet` |  | |  | `ppvemenge` |
-| `SelectedCodeSetPlant` |  | |  | `ppvewerk` |
-| `InspSpecAddlDecimalPlaces` |  | |  | `nkstellof` |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `SelectedCodeSet` |  | |  | `ppvemenge` |  |  |
+| `SelectedCodeSetPlant` |  | |  | `ppvewerk` |  |  |
+| `InspSpecAddlDecimalPlaces` |  | |  | `nkstellof` |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

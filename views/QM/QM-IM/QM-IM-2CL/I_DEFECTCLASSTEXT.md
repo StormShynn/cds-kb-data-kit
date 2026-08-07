@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DefectClass` | ✓ | |  | `fehlklasse` |
-| `Language` | ✓ | |  | `sprache` |
-| `DefectClassText` |  | |  | `kurztext` |
-| `_Language` | | ✓ | | |
-| `_DefectClass` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DefectClass` | ✓ | |  | `fehlklasse` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `DefectClassText` |  | |  | `kurztext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_DefectClass` | | ✓ | | | | |
 
 ## Associations
 

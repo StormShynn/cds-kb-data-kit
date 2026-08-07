@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JntVntrIntcoCode` | ✓ | |  |  |
-| `JVAFromCostCenter` | ✓ | |  |  |
-| `JVAToCostCenter` |  | |  |  |
-| `JVACutbackCostCenter` |  | |  |  |
-| `JVACutbackOrder` |  | |  |  |
-| `JVACutbackWBS` |  | |  |  |
-| `JVACutbackWBSExt` |  | | `_CutbackWBSElement` | `WBSElementExternalID` |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
-| `JVAInterCompanyControllingArea` |  | | `_InterCompanyCompanyCode` | `ControllingArea` |
-| `_CompanyCode` | | ✓ | | |
-| `_InterCompanyCompanyCode` | | ✓ | | |
-| `_FromCostCenter` | | ✓ | | |
-| `_ToCostCenter` | | ✓ | | |
-| `_CutbackCostCenter` | | ✓ | | |
-| `_CutbackOrder` | | ✓ | | |
-| `_CutbackWBSElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JntVntrIntcoCode` | ✓ | |  |  |  |  |
+| `JVAFromCostCenter` | ✓ | |  |  |  |  |
+| `JVAToCostCenter` |  | |  |  |  |  |
+| `JVACutbackCostCenter` |  | |  |  |  |  |
+| `JVACutbackOrder` |  | |  |  |  |  |
+| `JVACutbackWBS` |  | |  |  |  |  |
+| `JVACutbackWBSExt` |  | | `_CutbackWBSElement` | `WBSElementExternalID` |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `JVAInterCompanyControllingArea` |  | | `_InterCompanyCompanyCode` | `ControllingArea` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_InterCompanyCompanyCode` | | ✓ | | | | |
+| `_FromCostCenter` | | ✓ | | | | |
+| `_ToCostCenter` | | ✓ | | | | |
+| `_CutbackCostCenter` | | ✓ | | | | |
+| `_CutbackOrder` | | ✓ | | | | |
+| `_CutbackWBSElement` | | ✓ | | | | |
 
 ## Associations
 

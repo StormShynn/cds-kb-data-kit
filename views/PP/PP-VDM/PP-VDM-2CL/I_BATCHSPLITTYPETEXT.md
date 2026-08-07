@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
-| `BatchSplitType` | ✓ | |  | `cast(substring( domvalue_l, 1, 1) as vdm_chsplit preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `BatchSplitTypeName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_BatchSplitType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |  |  |
+| `BatchSplitType` | ✓ | |  | `cast(substring( domvalue_l, 1, 1) as vdm_chsplit preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `BatchSplitTypeName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_BatchSplitType` | | ✓ | | | | |
 
 ## Associations
 

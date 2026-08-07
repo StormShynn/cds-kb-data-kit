@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IndustrySector` | ✓ | |  | `mbrsh` |
-| `_Text` | | ✓ | | |
-| `_Text_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndustrySector` | ✓ | |  | `mbrsh` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Text_2` | | ✓ | | | | |
 
 ## Associations
 

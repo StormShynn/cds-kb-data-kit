@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PCLgsDcItmPackgInstructionUUID` |  | |  | `ehfnd_log_doc_pi_uuid` |
-| `PackingInstructionSystemUUID` |  | |  | `ehfnd_pi_uuid` |
-| `PackingInstructionNumber` |  | |  | `ehfnd_pi_id` |
-| `ProdCmplncLogsDocumentItem` |  | |  | `ehfnd_log_doc_posnr` |
-| `Product` |  | |  | `ehfnd_mat_id` |
-| `DngrsGdsCalculatedEnclosureQty` |  | |  | `dngrsgdscalculatedenclosureqty` |
-| `DangerousGoodsEnclosureSapUnit` |  | |  | `ehfnd_vdm_component_unit_sap` |
-| `DangerousGoodsEnclosureISOUnit` |  | |  | `ehfnd_vdm_component_unit_iso` |
-| `D_DaGdsClfnCalctPtsPaInsnRglnR` |  | |  | `_PackingInstructionRegulation : composition [0..*] of D_DaGdsClfnCalctPtsPaInsnRglnR` |
-| `_Document` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PCLgsDcItmPackgInstructionUUID` |  | |  | `ehfnd_log_doc_pi_uuid` |  |  |
+| `PackingInstructionSystemUUID` |  | |  | `ehfnd_pi_uuid` |  |  |
+| `PackingInstructionNumber` |  | |  | `ehfnd_pi_id` |  |  |
+| `ProdCmplncLogsDocumentItem` |  | |  | `ehfnd_log_doc_posnr` |  |  |
+| `Product` |  | |  | `ehfnd_mat_id` |  |  |
+| `DngrsGdsCalculatedEnclosureQty` |  | |  | `dngrsgdscalculatedenclosureqty` |  |  |
+| `DangerousGoodsEnclosureSapUnit` |  | |  | `ehfnd_vdm_component_unit_sap` |  |  |
+| `DangerousGoodsEnclosureISOUnit` |  | |  | `ehfnd_vdm_component_unit_iso` |  |  |
+| `D_DaGdsClfnCalctPtsPaInsnRglnR` |  | |  | `_PackingInstructionRegulation : composition [0..*] of D_DaGdsClfnCalctPtsPaInsnRglnR` |  |  |
+| `_Document` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'IEWMSBINEMPTTXT'` |  | |  | `sqlViewName: 'IEWMSBINEMPTTXT'` |
-| `true` |  | |  | `compiler.compareFilter: true` |
-| `preserveKey` |  | |  | `true` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'IEWMSBINEMPTTXT'` |  | |  | `sqlViewName: 'IEWMSBINEMPTTXT'` |  |  |
+| `true` |  | |  | `compiler.compareFilter: true` |  |  |
+| `preserveKey` |  | |  | `true` |  |  |
 
 ## Source Code
 

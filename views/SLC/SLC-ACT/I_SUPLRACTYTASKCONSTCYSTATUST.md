@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrActyTaskConsistencyStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/3val_consistency_stcd preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SuplrActyTskConsistencyStsName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_SuplrActyTaskConstcyStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrActyTaskConsistencyStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/3val_consistency_stcd preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SuplrActyTskConsistencyStsName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SuplrActyTaskConstcyStatus` | | ✓ | | | | |
 
 ## Associations
 

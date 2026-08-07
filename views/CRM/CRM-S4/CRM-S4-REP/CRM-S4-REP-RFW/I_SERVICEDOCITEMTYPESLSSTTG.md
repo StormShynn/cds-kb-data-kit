@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |
-| `ItemIsBillingRelevant` |  | |  | `billing_relevant` |
-| `SrvcDocItemCategoryIsQuotation` |  | |  | `case is_quotation when '0' then ' ' when '2' then 'X' when '3' then ' ' else ' ' end` |
-| `SrvcDocQuotationItemIsCopied` |  | |  | `copy_quote` |
-| `_ServiceDocItemCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |  |  |
+| `ItemIsBillingRelevant` |  | |  | `billing_relevant` |  |  |
+| `SrvcDocItemCategoryIsQuotation` |  | |  | `case is_quotation when '0' then ' ' when '2' then 'X' when '3' then ' ' else ' ' end` |  |  |
+| `SrvcDocQuotationItemIsCopied` |  | |  | `copy_quote` |  |  |
+| `_ServiceDocItemCategory` | | ✓ | | | | |
 
 ## Associations
 

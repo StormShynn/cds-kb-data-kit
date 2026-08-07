@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPPlanningScenario` | ✓ | |  | `plscn` |
-| `MRPPlanningScenarioText` |  | |  | `plsct` |
-| `MRPPlanningScenarioStatus` |  | |  | `psact` |
-| `CapacityActiveVersion` |  | |  | `versa` |
-| `PlanningVersion` |  | |  | `vrsio` |
-| `PlanningPeriodStartDate` |  | |  | `pdat1` |
-| `PlanningPeriodEndDate` |  | |  | `pdat2` |
-| `_MRPPlanningScenarioStatus` | | ✓ | | |
-| `_CapacityActiveVersion` | | ✓ | | |
-| `_PlanningPeriodStartDate` | | ✓ | | |
-| `_PlanningPeriodEndDate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPPlanningScenario` | ✓ | |  | `plscn` |  |  |
+| `MRPPlanningScenarioText` |  | |  | `plsct` |  |  |
+| `MRPPlanningScenarioStatus` |  | |  | `psact` |  |  |
+| `CapacityActiveVersion` |  | |  | `versa` |  |  |
+| `PlanningVersion` |  | |  | `vrsio` |  |  |
+| `PlanningPeriodStartDate` |  | |  | `pdat1` |  |  |
+| `PlanningPeriodEndDate` |  | |  | `pdat2` |  |  |
+| `_MRPPlanningScenarioStatus` | | ✓ | | | | |
+| `_CapacityActiveVersion` | | ✓ | | | | |
+| `_PlanningPeriodStartDate` | | ✓ | | | | |
+| `_PlanningPeriodEndDate` | | ✓ | | | | |
 
 ## Associations
 

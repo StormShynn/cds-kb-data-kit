@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarCnfConstraintNetName` | ✓ | |  |  |
-| `VarCnfConstraintName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ObjectDependencyStatus` |  | |  |  |
-| `ObjectDependencyGroup` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `_Constraint` | | ✓ | | |
-| `_ConstraintNet` | | ✓ | | |
-| `_HistoricalText` | | ✓ | | |
-| `_SourceCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarCnfConstraintNetName` | ✓ | |  |  |  |  |
+| `VarCnfConstraintName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ObjectDependencyStatus` |  | |  |  |  |  |
+| `ObjectDependencyGroup` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `_Constraint` | | ✓ | | | | |
+| `_ConstraintNet` | | ✓ | | | | |
+| `_HistoricalText` | | ✓ | | | | |
+| `_SourceCode` | | ✓ | | | | |
 
 ## Source Code
 

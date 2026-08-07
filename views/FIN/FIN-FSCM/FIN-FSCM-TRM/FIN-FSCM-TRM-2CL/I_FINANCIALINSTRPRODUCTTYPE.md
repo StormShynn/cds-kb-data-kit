@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialInstrumentProductType` | ✓ | |  | `gsart` |
-| `TreasuryContractType` |  | |  | `rantyp` |
-| `FinancialInstrProductCategory` |  | |  | `sanlf` |
-| `FinCndnTypeAllocCndnGroup` |  | |  | `skogrp` |
-| `_Text` | | ✓ | | |
-| `_FinancialInstrProdCat` | | ✓ | | |
-| `_FinancialInstrProdTypeSuplmnt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialInstrumentProductType` | ✓ | |  | `gsart` |  |  |
+| `TreasuryContractType` |  | |  | `rantyp` |  |  |
+| `FinancialInstrProductCategory` |  | |  | `sanlf` |  |  |
+| `FinCndnTypeAllocCndnGroup` |  | |  | `skogrp` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_FinancialInstrProdCat` | | ✓ | | | | |
+| `_FinancialInstrProdTypeSuplmnt` | | ✓ | | | | |
 
 ## Associations
 

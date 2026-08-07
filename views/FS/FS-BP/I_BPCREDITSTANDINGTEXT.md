@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BusPartCreditStanding` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_solvncy )` |
-| `BPCreditStandingDescription` |  | |  | `ddtext` |
-| `_BPCreditStanding` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BusPartCreditStanding` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_solvncy )` |  |  |
+| `BPCreditStandingDescription` |  | |  | `ddtext` |  |  |
+| `_BPCreditStanding` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

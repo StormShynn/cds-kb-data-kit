@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `mandt` |  | |  |  |
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BusinessPartnerRole` | ✓ | |  | `rltyp` |
-| `ValidFrom` |  | |  | `valid_from` |
-| `ValidTo` |  | |  | `valid_to` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartnerRole` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `mandt` |  | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BusinessPartnerRole` | ✓ | |  | `rltyp` |  |  |
+| `ValidFrom` |  | |  | `valid_from` |  |  |
+| `ValidTo` |  | |  | `valid_to` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartnerRole` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

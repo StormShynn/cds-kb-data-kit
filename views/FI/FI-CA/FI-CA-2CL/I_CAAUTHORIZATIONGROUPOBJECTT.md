@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |
-| `Language` | ✓ | |  | `langu` |
-| `CAAuthorizationGroupObjectText` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CAAuthorizationGroupObjectText` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

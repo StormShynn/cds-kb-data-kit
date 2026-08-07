@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContractCanclnParty` | ✓ | |  | `canc_party` |
-| `Language` | ✓ | |  | `langu` |
-| `ServiceContrCanclnPartyName` |  | |  | `canc_party_t` |
-| `_ServiceCancellationParty` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContractCanclnParty` | ✓ | |  | `canc_party` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ServiceContrCanclnPartyName` |  | |  | `canc_party_t` |  |  |
+| `_ServiceCancellationParty` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

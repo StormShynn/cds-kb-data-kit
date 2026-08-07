@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `CnsldtnBusinessAreaHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierHierarchyID as fincs_businessareahierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `CnsldtnBusinessAreaHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_description_text_50 preserving type )` |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `CnsldtnBusinessAreaHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierHierarchyID as fincs_businessareahierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `CnsldtnBusinessAreaHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_description_text_50 preserving type )` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

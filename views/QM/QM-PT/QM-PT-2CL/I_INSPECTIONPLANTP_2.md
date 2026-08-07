@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionPlanGroup` | ✓ | |  |  |
-| `InspectionPlan` | ✓ | |  |  |
-| `HasChangeNumber` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_InspPlanVersion` | | ✓ | | |
-| `_MatlAssgmtVersion` | | ✓ | | |
-| `_InspPlanOperation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  |  |  |  |
+| `InspectionPlan` | ✓ | |  |  |  |  |
+| `HasChangeNumber` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_InspPlanVersion` | | ✓ | | | | |
+| `_MatlAssgmtVersion` | | ✓ | | | | |
+| `_InspPlanOperation` | | ✓ | | | | |
 
 ## Source Code
 

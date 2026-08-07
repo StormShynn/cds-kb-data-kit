@@ -29,57 +29,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlannedOrder` | ✓ | |  |  |
-| `Reservation` | ✓ | |  |  |
-| `ReservationItem` | ✓ | |  |  |
-| `BOMItem` |  | |  |  |
-| `BOMItemDescription` |  | |  |  |
-| `BOMItemDescriptionLine2` |  | |  |  |
-| `BillOfMaterialCategory` |  | |  |  |
-| `BOMItemSorter` |  | |  |  |
-| `BillOfMaterialItemNumber` |  | |  |  |
-| `BillOfMaterialInternalID` |  | |  |  |
-| `BillOfMaterialVariant` |  | |  |  |
-| `BOMItemCategory` |  | |  |  |
-| `Material` |  | |  |  |
-| `MatlCompRequirementDate` |  | |  |  |
-| `GoodsMovementEntryQty` |  | |  |  |
-| `EntryUnit` |  | |  |  |
-| `RequiredQuantity` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `ComponentScrapInPercent` |  | |  |  |
-| `QuantityIsFixed` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `SupplyArea` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `MaterialComponentIsPhantomItem` |  | |  |  |
-| `OrderPathValue` |  | |  |  |
-| `OrderLevelValue` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `AssemblyOrderPathValue` |  | |  |  |
-| `AssemblyOrderLevelValue` |  | |  |  |
-| `DiscontinuationGroup` |  | |  |  |
-| `MatlCompDiscontinuationType` |  | |  |  |
-| `MatlCompIsFollowUpMaterial` |  | |  |  |
-| `FollowUpGroup` |  | |  |  |
-| `FollowUpMaterial` |  | |  |  |
-| `FollowUpMaterialIsNotActive` |  | |  |  |
-| `PlannedOrderLastChangeDateTime` |  | |  |  |
-| `ProductName` |  | |  |  |
-| `MRPControllerName` |  | |  |  |
-| `StorageLocationName` |  | |  |  |
-| `ProductionSupplyAreaName` |  | |  |  |
-| `PlantName` |  | |  |  |
-| `FollowUpMaterialText` |  | |  |  |
-| `DebitCreditCodeName` |  | |  |  |
-| `AssemblyProductText` |  | |  |  |
-| `BillOfMaterialItemCategoryDesc` |  | |  |  |
-| `BillOfMaterialCategoryDesc` |  | |  |  |
-| `I_PlannedOrderTP` |  | |  | `PlannedOrderComponent._PlannedOrder : redirected to parent I_PlannedOrderTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlannedOrder` | ✓ | |  |  |  |  |
+| `Reservation` | ✓ | |  |  |  |  |
+| `ReservationItem` | ✓ | |  |  |  |  |
+| `BOMItem` |  | |  |  |  |  |
+| `BOMItemDescription` |  | |  |  |  |  |
+| `BOMItemDescriptionLine2` |  | |  |  |  |  |
+| `BillOfMaterialCategory` |  | |  |  |  |  |
+| `BOMItemSorter` |  | |  |  |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |  |  |
+| `BillOfMaterialInternalID` |  | |  |  |  |  |
+| `BillOfMaterialVariant` |  | |  |  |  |  |
+| `BOMItemCategory` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MatlCompRequirementDate` |  | |  |  |  |  |
+| `GoodsMovementEntryQty` |  | |  |  |  |  |
+| `EntryUnit` |  | |  |  |  |  |
+| `RequiredQuantity` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `ComponentScrapInPercent` |  | |  |  |  |  |
+| `QuantityIsFixed` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `SupplyArea` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `MaterialComponentIsPhantomItem` |  | |  |  |  |  |
+| `OrderPathValue` |  | |  |  |  |  |
+| `OrderLevelValue` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `AssemblyOrderPathValue` |  | |  |  |  |  |
+| `AssemblyOrderLevelValue` |  | |  |  |  |  |
+| `DiscontinuationGroup` |  | |  |  |  |  |
+| `MatlCompDiscontinuationType` |  | |  |  |  |  |
+| `MatlCompIsFollowUpMaterial` |  | |  |  |  |  |
+| `FollowUpGroup` |  | |  |  |  |  |
+| `FollowUpMaterial` |  | |  |  |  |  |
+| `FollowUpMaterialIsNotActive` |  | |  |  |  |  |
+| `PlannedOrderLastChangeDateTime` |  | |  |  |  |  |
+| `ProductName` |  | |  |  |  |  |
+| `MRPControllerName` |  | |  |  |  |  |
+| `StorageLocationName` |  | |  |  |  |  |
+| `ProductionSupplyAreaName` |  | |  |  |  |  |
+| `PlantName` |  | |  |  |  |  |
+| `FollowUpMaterialText` |  | |  |  |  |  |
+| `DebitCreditCodeName` |  | |  |  |  |  |
+| `AssemblyProductText` |  | |  |  |  |  |
+| `BillOfMaterialItemCategoryDesc` |  | |  |  |  |  |
+| `BillOfMaterialCategoryDesc` |  | |  |  |  |  |
+| `I_PlannedOrderTP` |  | |  | `PlannedOrderComponent._PlannedOrder : redirected to parent I_PlannedOrderTP` |  |  |
 
 ## Source Code
 

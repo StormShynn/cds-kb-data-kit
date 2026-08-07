@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NotaFiscal` | ✓ | |  | `docnum` |
-| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |
-| `BR_NFTextType` | ✓ | |  | `type` |
-| `BR_NFTextSequenceNumber` | ✓ | |  | `counter` |
-| `BR_NFText` |  | |  | `text` |
-| `BR_NFTaxPartnerTextID` |  | |  | `textid` |
-| `_BR_NFTextType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |  |  |
+| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |  |  |
+| `BR_NFTextType` | ✓ | |  | `type` |  |  |
+| `BR_NFTextSequenceNumber` | ✓ | |  | `counter` |  |  |
+| `BR_NFText` |  | |  | `text` |  |  |
+| `BR_NFTaxPartnerTextID` |  | |  | `textid` |  |  |
+| `_BR_NFTextType` | | ✓ | | | | |
 
 ## Associations
 

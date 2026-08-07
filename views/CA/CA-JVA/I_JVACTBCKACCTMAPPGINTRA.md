@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `FromGLAccount` | ✓ | |  |  |
-| `ToGLAccount` |  | |  |  |
-| `CutbackAccount` |  | |  |  |
-| `JVAIsToKeepOriginalAccount` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_FromGLAccount` | | ✓ | | |
-| `_ToGLAccount` | | ✓ | | |
-| `_CutbackAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FromGLAccount` | ✓ | |  |  |  |  |
+| `ToGLAccount` |  | |  |  |  |  |
+| `CutbackAccount` |  | |  |  |  |  |
+| `JVAIsToKeepOriginalAccount` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FromGLAccount` | | ✓ | | | | |
+| `_ToGLAccount` | | ✓ | | | | |
+| `_CutbackAccount` | | ✓ | | | | |
 
 ## Associations
 

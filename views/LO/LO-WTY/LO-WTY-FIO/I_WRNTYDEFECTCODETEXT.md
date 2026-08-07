@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionCode` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `InspectionCodeText` |  | |  | `max(InspectionCodeText)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionCode` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `InspectionCodeText` |  | |  | `max(InspectionCodeText)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

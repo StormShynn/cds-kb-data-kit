@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RelationshipNumber` | ✓ | |  | `relnr` |
-| `BusinessPartner1` | ✓ | |  | `partner1` |
-| `BusinessPartner2` | ✓ | |  | `partner2` |
-| `ValidityEndDate` | ✓ | |  | `date_to` |
-| `ValidityStartDate` |  | |  | `date_from` |
-| `IsStandardRelationship` |  | |  | `xdfrel` |
-| `RelationshipCategory` |  | |  | `reltyp` |
-| `BPRelationshipType` |  | |  | `relkind` |
-| `BusPartRelshpIsRoleDefinition` |  | |  | `xrf` |
-| `CreatedByUser` |  | |  | `crusr` |
-| `CreationDate` |  | |  | `crdat` |
-| `CreationTime` |  | |  | `crtim` |
-| `LastChangedByUser` |  | |  | `chusr` |
-| `LastChangeDate` |  | |  | `chdat` |
-| `LastChangeTime` |  | |  | `chtim` |
-| `_BusinessPartner1` | | ✓ | | |
-| `_BusinessPartner2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RelationshipNumber` | ✓ | |  | `relnr` |  |  |
+| `BusinessPartner1` | ✓ | |  | `partner1` |  |  |
+| `BusinessPartner2` | ✓ | |  | `partner2` |  |  |
+| `ValidityEndDate` | ✓ | |  | `date_to` |  |  |
+| `ValidityStartDate` |  | |  | `date_from` |  |  |
+| `IsStandardRelationship` |  | |  | `xdfrel` |  |  |
+| `RelationshipCategory` |  | |  | `reltyp` |  |  |
+| `BPRelationshipType` |  | |  | `relkind` |  |  |
+| `BusPartRelshpIsRoleDefinition` |  | |  | `xrf` |  |  |
+| `CreatedByUser` |  | |  | `crusr` |  |  |
+| `CreationDate` |  | |  | `crdat` |  |  |
+| `CreationTime` |  | |  | `crtim` |  |  |
+| `LastChangedByUser` |  | |  | `chusr` |  |  |
+| `LastChangeDate` |  | |  | `chdat` |  |  |
+| `LastChangeTime` |  | |  | `chtim` |  |  |
+| `_BusinessPartner1` | | ✓ | | | | |
+| `_BusinessPartner2` | | ✓ | | | | |
 
 ## Associations
 

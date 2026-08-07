@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `BR_ICMSExemptionReason` | ✓ | |  | `cast( substring(domvalue_l, 1, 2) as logbr_icmsexemptionreason preserving type )` |
-| `BR_ICMSExemptionReasonDesc` |  | |  | `ddtext` |
-| `_BR_ICMSExemptionReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `BR_ICMSExemptionReason` | ✓ | |  | `cast( substring(domvalue_l, 1, 2) as logbr_icmsexemptionreason preserving type )` |  |  |
+| `BR_ICMSExemptionReasonDesc` |  | |  | `ddtext` |  |  |
+| `_BR_ICMSExemptionReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BOPRptgCntry` | ✓ | |  | `country` |
-| `BOPForm` | ✓ | |  | `form` |
-| `_BOPRptgCntry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BOPRptgCntry` | ✓ | |  | `country` |  |  |
+| `BOPForm` | ✓ | |  | `form` |  |  |
+| `_BOPRptgCntry` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderStageUUID` | ✓ | |  |  |
-| `TranspOrdBizPartnerFunction` | ✓ | |  |  |
-| `AddressRepresentationCode` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddresseeFullName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
-| `I_FrtBkgStgeBPAddrDfltRprstnTP` |  | |  | `_TrOrdStgeBPAddrDfltRprstn as _FrtBkgStageBPAddrDfltRprstn : redirected to parent I_FrtBkgStgeBPAddrDfltRprstnTP` |
-| `_AddressRepresentationCode` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderStageUUID` | ✓ | |  |  |  |  |
+| `TranspOrdBizPartnerFunction` | ✓ | |  |  |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddresseeFullName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |  |  |
+| `I_FrtBkgStgeBPAddrDfltRprstnTP` |  | |  | `_TrOrdStgeBPAddrDfltRprstn as _FrtBkgStageBPAddrDfltRprstn : redirected to parent I_FrtBkgStgeBPAddrDfltRprstnTP` |  |  |
+| `_AddressRepresentationCode` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
 
 ## Source Code
 

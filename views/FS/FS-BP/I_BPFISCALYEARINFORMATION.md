@@ -27,43 +27,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partnr` |
-| `BusinessPartnerFiscalYear` | ✓ | |  | `business_y` |
-| `BPBalanceSheetCurrency` |  | |  | `bal_sh_cur` |
-| `BPAnnualStockholderMeetingDate` |  | |  | `gen_meet_d` |
-| `BPFiscalYearStartDate` |  | |  | `bu_y_begin` |
-| `BPFiscalYearEndDate` |  | |  | `bu_y_end` |
-| `BPFiscalYearIsClosed` |  | |  | `annual_acc` |
-| `BPFiscalYearClosingDate` |  | |  | `annu_acc_d` |
-| `BPFsclYrCnsldtdFinStatementDte` |  | |  | `cons_fst_d` |
-| `BPCapitalStockAmtInBalShtCrcy` |  | |  | `capi_stock` |
-| `BPIssdStockCptlAmtInBalShtCrcy` |  | |  | `shar_stock` |
-| `BPPartcipnCertAmtInBalShtCrcy` |  | |  | `prsh_stock` |
-| `BPEquityCapitalAmtInBalShtCrcy` |  | |  | `equity` |
-| `BPGrossPremiumAmtInBalShtCrcy` |  | |  | `gross_amnt` |
-| `BPNetPremiumAmtInBalShtCrcy` |  | |  | `net_amount` |
-| `BPAnnualSalesAmtInBalShtCrcy` |  | |  | `turnover` |
-| `BPAnnualNetIncAmtInBalShtCrcy` |  | |  | `net_income` |
-| `BPDividendDistrAmtInBalShtCrcy` |  | |  | `div_dis_am` |
-| `BPDebtRatioInYears` |  | |  | `debts_fact` |
-| `BPAnnualPnLAmtInBalShtCrcy` |  | |  | `dis_profit` |
-| `BPBalSheetTotalAmtInBalShtCrcy` |  | |  | `bal_amount` |
-| `BPNumberOfEmployees` |  | |  | `staff_count` |
-| `BPCptlReserveAmtInBalShtCrcy` |  | |  | `cap_res` |
-| `BPLglRevnRsrvAmtInBalShtCrcy` |  | |  | `rev_res_leg` |
-| `RevnRsrvOwnStkAmtInBalShtCrcy` |  | |  | `rev_res_own_shr` |
-| `BPStatryReserveAmtInBalShtCrcy` |  | |  | `rev_res_by_laws` |
-| `BPOthRevnRsrvAmtInBalShtCrcy` |  | |  | `rev_res_others` |
-| `BPPnLCarryfwdAmtInBalShtCrcy` |  | |  | `forw_profit_loss` |
-| `BPSuborddLbltyAmtInBalShtCrcy` |  | |  | `liabilit_second` |
-| `BPRetOnTotalCptlEmpldInPercent` |  | |  | `ret_tot_cap_empl` |
-| `BPDebtClearancePeriodInYears` |  | |  | `reduc_long_term` |
-| `BPFinancingCoeffInPercent` |  | |  | `coeff_finance` |
-| `BPEquityRatioInPercent` |  | |  | `equity_capit` |
-| `_BusinessPartner` | | ✓ | | |
-| `_BPFinancialServicesExtn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partnr` |  |  |
+| `BusinessPartnerFiscalYear` | ✓ | |  | `business_y` |  |  |
+| `BPBalanceSheetCurrency` |  | |  | `bal_sh_cur` |  |  |
+| `BPAnnualStockholderMeetingDate` |  | |  | `gen_meet_d` |  |  |
+| `BPFiscalYearStartDate` |  | |  | `bu_y_begin` |  |  |
+| `BPFiscalYearEndDate` |  | |  | `bu_y_end` |  |  |
+| `BPFiscalYearIsClosed` |  | |  | `annual_acc` |  |  |
+| `BPFiscalYearClosingDate` |  | |  | `annu_acc_d` |  |  |
+| `BPFsclYrCnsldtdFinStatementDte` |  | |  | `cons_fst_d` |  |  |
+| `BPCapitalStockAmtInBalShtCrcy` |  | |  | `capi_stock` |  |  |
+| `BPIssdStockCptlAmtInBalShtCrcy` |  | |  | `shar_stock` |  |  |
+| `BPPartcipnCertAmtInBalShtCrcy` |  | |  | `prsh_stock` |  |  |
+| `BPEquityCapitalAmtInBalShtCrcy` |  | |  | `equity` |  |  |
+| `BPGrossPremiumAmtInBalShtCrcy` |  | |  | `gross_amnt` |  |  |
+| `BPNetPremiumAmtInBalShtCrcy` |  | |  | `net_amount` |  |  |
+| `BPAnnualSalesAmtInBalShtCrcy` |  | |  | `turnover` |  |  |
+| `BPAnnualNetIncAmtInBalShtCrcy` |  | |  | `net_income` |  |  |
+| `BPDividendDistrAmtInBalShtCrcy` |  | |  | `div_dis_am` |  |  |
+| `BPDebtRatioInYears` |  | |  | `debts_fact` |  |  |
+| `BPAnnualPnLAmtInBalShtCrcy` |  | |  | `dis_profit` |  |  |
+| `BPBalSheetTotalAmtInBalShtCrcy` |  | |  | `bal_amount` |  |  |
+| `BPNumberOfEmployees` |  | |  | `staff_count` |  |  |
+| `BPCptlReserveAmtInBalShtCrcy` |  | |  | `cap_res` |  |  |
+| `BPLglRevnRsrvAmtInBalShtCrcy` |  | |  | `rev_res_leg` |  |  |
+| `RevnRsrvOwnStkAmtInBalShtCrcy` |  | |  | `rev_res_own_shr` |  |  |
+| `BPStatryReserveAmtInBalShtCrcy` |  | |  | `rev_res_by_laws` |  |  |
+| `BPOthRevnRsrvAmtInBalShtCrcy` |  | |  | `rev_res_others` |  |  |
+| `BPPnLCarryfwdAmtInBalShtCrcy` |  | |  | `forw_profit_loss` |  |  |
+| `BPSuborddLbltyAmtInBalShtCrcy` |  | |  | `liabilit_second` |  |  |
+| `BPRetOnTotalCptlEmpldInPercent` |  | |  | `ret_tot_cap_empl` |  |  |
+| `BPDebtClearancePeriodInYears` |  | |  | `reduc_long_term` |  |  |
+| `BPFinancingCoeffInPercent` |  | |  | `coeff_finance` |  |  |
+| `BPEquityRatioInPercent` |  | |  | `equity_capit` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BPFinancialServicesExtn` | | ✓ | | | | |
 
 ## Associations
 

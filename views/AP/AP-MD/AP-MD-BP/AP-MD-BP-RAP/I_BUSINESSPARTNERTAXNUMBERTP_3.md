@@ -33,27 +33,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `BPTaxType` | ✓ | |  |  |
-| `BPTaxNumber` |  | |  |  |
-| `BPTaxLongNumber` |  | |  |  |
-| `BPTaxNumberForEditValue` |  | |  |  |
-| `BPTaxTypeForEditValue` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `_BusinessPartnerTaxType` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `BPTaxType` | ✓ | |  |  |  |  |
+| `BPTaxNumber` |  | |  |  |  |  |
+| `BPTaxLongNumber` |  | |  |  |  |  |
+| `BPTaxNumberForEditValue` |  | |  |  |  |  |
+| `BPTaxTypeForEditValue` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `_BusinessPartnerTaxType` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
 

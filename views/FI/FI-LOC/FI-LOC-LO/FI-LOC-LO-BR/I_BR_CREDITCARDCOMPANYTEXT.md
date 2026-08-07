@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `CreditCardBrand` | ✓ | |  | `cast (t_band as logbr_tband preserving type)` |
-| `CreditCardBrandDesc` |  | |  | `cast(t_bandt as logbr_tbanddesc preserving type )` |
-| `_BR_CreditCardCompany` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CreditCardBrand` | ✓ | |  | `cast (t_band as logbr_tband preserving type)` |  |  |
+| `CreditCardBrandDesc` |  | |  | `cast(t_bandt as logbr_tbanddesc preserving type )` |  |  |
+| `_BR_CreditCardCompany` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

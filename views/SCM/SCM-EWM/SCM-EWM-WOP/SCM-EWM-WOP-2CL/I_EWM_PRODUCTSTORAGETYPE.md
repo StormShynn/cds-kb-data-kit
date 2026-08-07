@@ -29,62 +29,62 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplyChainUnitUUID` | ✓ | |  | `scuguid` |
-| `ProductInternalUUID` | ✓ | |  | `matid` |
-| `EWMPartyEntitledToDisposeUUID` | ✓ | |  | `entitled_id` |
-| `EWMStorageType` | ✓ | |  | `lgtyp` |
-| `EWMWarehouse` |  | |  | `_AssgWhseBusinessPartner[inner].EWMWarehouse` |
-| `EWMStorageSectionMethod` |  | |  | `sectind` |
-| `EWMStorageBinType` |  | |  | `bintype` |
-| `EWMStorageBinSearchRule` |  | |  | `binsrch` |
-| `EWMMaximumNumberOfBins` |  | |  | `maxfixbin` |
-| `EWMSpltPtwyThresholdInPercent` |  | |  | `splitth` |
-| `EWMPtwySequence` |  | |  | `seqput` |
-| `EWMProdQuantityClassification` |  | |  | `quancla` |
-| `EWMProdPtwyQtyClassification` |  | |  | `quanclaput` |
-| `EWMProdIsSplitOnPtwy` |  | |  | `splitput` |
-| `EWMProdIsSkippedOnPtwy` |  | |  | `skipptw` |
-| `EWMHasNoReplenishment` |  | |  | `norpln` |
-| `BaseUnit` |  | |  | `_Product[inner].BaseUnit` |
-| `EWMMinReplnmtQuantity` |  | |  | `repqty` |
-| `EWMMinReplnmtQuantityUnit` |  | |  | `repqty_uom_dsp` |
-| `EWMMinReplnmtQtyDisplayUnit` |  | |  | `repqty_uom_dsp` |
-| `EWMMinimumStorageQuantity` |  | |  | `minqty` |
-| `EWMMinimumStorageQuantityUnit` |  | |  | `minqty_uom_dsp` |
-| `EWMMinStorQuantityDisplayUnit` |  | |  | `minqty_uom_dsp` |
-| `EWMMaximumStorageQuantity` |  | |  | `maxqty` |
-| `EWMMaximumStorageQuantityUnit` |  | |  | `maxqty_uom_dsp` |
-| `EWMMaxStorQuantityDisplayUnit` |  | |  | `maxqty_uom_dsp` |
-| `EWMMinStorQtyOfMaxStorQtyInPct` |  | |  | `permxqty` |
-| `_BusinessPartner` | | ✓ | | |
-| `_WarehouseNumber` | | ✓ | | |
-| `_StorageType` | | ✓ | | |
-| `_StorageTypeText` | | ✓ | | |
-| `_StorageSectionIndicator` | | ✓ | | |
-| `_StorageSectionIndText` | | ✓ | | |
-| `_StorageBinType` | | ✓ | | |
-| `_StorageBinTypeText` | | ✓ | | |
-| `_QtyClassification` | | ✓ | | |
-| `_QtyClassificationText` | | ✓ | | |
-| `_PtwyQtyClassification` | | ✓ | | |
-| `_PtwyQtyClassificationText` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_StorageBinSearchSortRule` | | ✓ | | |
-| `_StorageBinSearchSortRuleText` | | ✓ | | |
-| `_MinReplnmtQuantityUnit` | | ✓ | | |
-| `_MinReplnmtQuantityUnitText` | | ✓ | | |
-| `_MinReplnmtQtyDisplayUnit` | | ✓ | | |
-| `_MinReplnmtQtyDisplayUnitText` | | ✓ | | |
-| `_MinStorageQuantityUnit` | | ✓ | | |
-| `_MinStorageQuantityUnitText` | | ✓ | | |
-| `_MinStorageQtyDisplayUnit` | | ✓ | | |
-| `_MinStorageQtyDisplayUnitText` | | ✓ | | |
-| `_MaxStorageQuantityUnit` | | ✓ | | |
-| `_MaxStorageQuantityUnitText` | | ✓ | | |
-| `_MaxStorageQtyDisplayUnit` | | ✓ | | |
-| `_MaxStorageQtyDisplayUnitText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplyChainUnitUUID` | ✓ | |  | `scuguid` |  |  |
+| `ProductInternalUUID` | ✓ | |  | `matid` |  |  |
+| `EWMPartyEntitledToDisposeUUID` | ✓ | |  | `entitled_id` |  |  |
+| `EWMStorageType` | ✓ | |  | `lgtyp` |  |  |
+| `EWMWarehouse` |  | |  | `_AssgWhseBusinessPartner[inner].EWMWarehouse` |  |  |
+| `EWMStorageSectionMethod` |  | |  | `sectind` |  |  |
+| `EWMStorageBinType` |  | |  | `bintype` |  |  |
+| `EWMStorageBinSearchRule` |  | |  | `binsrch` |  |  |
+| `EWMMaximumNumberOfBins` |  | |  | `maxfixbin` |  |  |
+| `EWMSpltPtwyThresholdInPercent` |  | |  | `splitth` |  |  |
+| `EWMPtwySequence` |  | |  | `seqput` |  |  |
+| `EWMProdQuantityClassification` |  | |  | `quancla` |  |  |
+| `EWMProdPtwyQtyClassification` |  | |  | `quanclaput` |  |  |
+| `EWMProdIsSplitOnPtwy` |  | |  | `splitput` |  |  |
+| `EWMProdIsSkippedOnPtwy` |  | |  | `skipptw` |  |  |
+| `EWMHasNoReplenishment` |  | |  | `norpln` |  |  |
+| `BaseUnit` |  | |  | `_Product[inner].BaseUnit` |  |  |
+| `EWMMinReplnmtQuantity` |  | |  | `repqty` |  |  |
+| `EWMMinReplnmtQuantityUnit` |  | |  | `repqty_uom_dsp` |  |  |
+| `EWMMinReplnmtQtyDisplayUnit` |  | |  | `repqty_uom_dsp` |  |  |
+| `EWMMinimumStorageQuantity` |  | |  | `minqty` |  |  |
+| `EWMMinimumStorageQuantityUnit` |  | |  | `minqty_uom_dsp` |  |  |
+| `EWMMinStorQuantityDisplayUnit` |  | |  | `minqty_uom_dsp` |  |  |
+| `EWMMaximumStorageQuantity` |  | |  | `maxqty` |  |  |
+| `EWMMaximumStorageQuantityUnit` |  | |  | `maxqty_uom_dsp` |  |  |
+| `EWMMaxStorQuantityDisplayUnit` |  | |  | `maxqty_uom_dsp` |  |  |
+| `EWMMinStorQtyOfMaxStorQtyInPct` |  | |  | `permxqty` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_WarehouseNumber` | | ✓ | | | | |
+| `_StorageType` | | ✓ | | | | |
+| `_StorageTypeText` | | ✓ | | | | |
+| `_StorageSectionIndicator` | | ✓ | | | | |
+| `_StorageSectionIndText` | | ✓ | | | | |
+| `_StorageBinType` | | ✓ | | | | |
+| `_StorageBinTypeText` | | ✓ | | | | |
+| `_QtyClassification` | | ✓ | | | | |
+| `_QtyClassificationText` | | ✓ | | | | |
+| `_PtwyQtyClassification` | | ✓ | | | | |
+| `_PtwyQtyClassificationText` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_StorageBinSearchSortRule` | | ✓ | | | | |
+| `_StorageBinSearchSortRuleText` | | ✓ | | | | |
+| `_MinReplnmtQuantityUnit` | | ✓ | | | | |
+| `_MinReplnmtQuantityUnitText` | | ✓ | | | | |
+| `_MinReplnmtQtyDisplayUnit` | | ✓ | | | | |
+| `_MinReplnmtQtyDisplayUnitText` | | ✓ | | | | |
+| `_MinStorageQuantityUnit` | | ✓ | | | | |
+| `_MinStorageQuantityUnitText` | | ✓ | | | | |
+| `_MinStorageQtyDisplayUnit` | | ✓ | | | | |
+| `_MinStorageQtyDisplayUnitText` | | ✓ | | | | |
+| `_MaxStorageQuantityUnit` | | ✓ | | | | |
+| `_MaxStorageQuantityUnitText` | | ✓ | | | | |
+| `_MaxStorageQtyDisplayUnit` | | ✓ | | | | |
+| `_MaxStorageQtyDisplayUnitText` | | ✓ | | | | |
 
 ## Associations
 

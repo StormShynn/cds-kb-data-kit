@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GoodsMovementType` | ✓ | |  | `bwart` |
-| `Language` | ✓ | |  | `spras` |
-| `GoodsMovementTypeName` |  | |  | `btext` |
-| `_GoodsMovementType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GoodsMovementType` | ✓ | |  | `bwart` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `GoodsMovementTypeName` |  | |  | `btext` |  |  |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

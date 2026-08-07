@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `FinTransFlowFixingStatus` | ✓ | |  | `cast( dd07t.domvalue_l as tb_sbewebe )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FinTransFlowFixingStatusName` |  | |  | `cast( dd07t.ddtext as tb_sbewebe_name preserving type )` |
-| `_FixingStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `FinTransFlowFixingStatus` | ✓ | |  | `cast( dd07t.domvalue_l as tb_sbewebe )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FinTransFlowFixingStatusName` |  | |  | `cast( dd07t.ddtext as tb_sbewebe_name preserving type )` |  |  |
+| `_FixingStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

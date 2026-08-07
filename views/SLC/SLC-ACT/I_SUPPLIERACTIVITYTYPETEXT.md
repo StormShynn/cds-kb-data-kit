@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrActyType` | ✓ | |  | `act_type` |
-| `Language` | ✓ | |  | `langu` |
-| `SuplrActyTypeName` |  | |  | `description` |
-| `_Language` | | ✓ | | |
-| `_SupplierActivityType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrActyType` | ✓ | |  | `act_type` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `SuplrActyTypeName` |  | |  | `description` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SupplierActivityType` | | ✓ | | | | |
 
 ## Associations
 

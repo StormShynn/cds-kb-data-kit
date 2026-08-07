@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `JointVenture` | ✓ | |  | `vname` |
-| `JointVentureName` |  | |  | `cast ( vtext as jv_venturename preserving type )` |
-| `_CompanyCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_JointVentureMasterFld` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `JointVenture` | ✓ | |  | `vname` |  |  |
+| `JointVentureName` |  | |  | `cast ( vtext as jv_venturename preserving type )` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_JointVentureMasterFld` | | ✓ | | | | |
 
 ## Associations
 

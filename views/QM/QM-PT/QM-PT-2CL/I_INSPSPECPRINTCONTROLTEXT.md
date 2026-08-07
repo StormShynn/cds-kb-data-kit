@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSpecPrintControl` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qdruck1 preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `InspSpecPrintControlText` |  | |  | `cast( ddtext as vdm_qdruck1_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_InspSpecPrintControl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSpecPrintControl` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qdruck1 preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `InspSpecPrintControlText` |  | |  | `cast( ddtext as vdm_qdruck1_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspSpecPrintControl` | | ✓ | | | | |
 
 ## Associations
 

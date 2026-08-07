@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjDmndRsceAssgmtUUID` | ✓ | |  |  |
-| `ProjectDemandWorkUUID` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjDmndRsceAssgmt` |  | |  |  |
-| `ProjDmndRsceAssgmtQuantity` |  | |  | `} ProjDmndRsceAssgmtQuantity` |
-| `ProjDmndRsceAssgmtQuantityUnit` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ReferencedObjectUUID` |  | |  |  |
-| `ProjectDemandSupplyIdentifier` |  | |  |  |
-| `ProjectDemandSupplyDeliveryOrg` |  | |  |  |
-| `ProjectDemandSourceOfSupply` |  | |  |  |
-| `ProjAssgmtLastUpdateSource` |  | |  |  |
-| `ProjDmndRsceWorkAssgmtOID` |  | |  |  |
-| `ProjDmndRsceWrkfrcPersonOID` |  | |  |  |
-| `ProjDmndRsceAssgmtStartDate` |  | |  |  |
-| `ProjDmndRsceAssgmtEndDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_Work` | | ✓ | | |
-| `_RsceAssgmtQuantityUnit` | | ✓ | | |
-| `_AssgmtDistribution` | | ✓ | | |
-| `_PersonWorkAgreement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjDmndRsceAssgmtUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandWorkUUID` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmt` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtQuantity` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtQuantityUnit` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ReferencedObjectUUID` |  | |  |  |  |  |
+| `ProjectDemandSupplyIdentifier` |  | |  |  |  |  |
+| `ProjectDemandSupplyDeliveryOrg` |  | |  |  |  |  |
+| `ProjectDemandSourceOfSupply` |  | |  |  |  |  |
+| `ProjAssgmtLastUpdateSource` |  | |  |  |  |  |
+| `ProjDmndRsceWorkAssgmtOID` |  | |  |  |  |  |
+| `ProjDmndRsceWrkfrcPersonOID` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtStartDate` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtEndDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_Work` | | ✓ | | | | |
+| `_RsceAssgmtQuantityUnit` | | ✓ | | | | |
+| `_AssgmtDistribution` | | ✓ | | | | |
+| `_PersonWorkAgreement` | | ✓ | | | | |
 
 ## Source Code
 

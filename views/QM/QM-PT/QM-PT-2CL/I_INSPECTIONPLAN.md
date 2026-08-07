@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionPlanGroup` | ✓ | |  | `BillOfOperationsGroup` |
-| `InspectionPlan` | ✓ | |  | `BillOfOperationsVariant` |
-| `BillOfOperationsType` |  | |  |  |
-| `HasChangeNumber` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  | `BillOfOperationsGroup` |  |  |
+| `InspectionPlan` | ✓ | |  | `BillOfOperationsVariant` |  |  |
+| `BillOfOperationsType` |  | |  |  |  |  |
+| `HasChangeNumber` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
 
 ## Associations
 

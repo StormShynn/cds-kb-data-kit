@@ -28,51 +28,51 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialPrimary` |  | |  | `matnr` |
-| `PlantPrimary` |  | |  | `werks_d` |
-| `BOMVariantUsagePrimary` |  | |  | `stlan` |
-| `BOMVariantPrimary` |  | |  | `stalt` |
-| `BOMVersionPrimary` |  | |  | `cs_versn` |
-| `PrimBOMValidityDate` |  | |  | `datuv` |
-| `ChangeNumberPrimary` |  | |  | `aennr` |
-| `MaterialSecondary` |  | |  | `matnr` |
-| `PlantSecondary` |  | |  | `werks_d` |
-| `BOMVariantUsageSecondary` |  | |  | `stlan` |
-| `BOMVariantSecondary` |  | |  | `stalt` |
-| `BOMVersionSecondary` |  | |  | `cs_versn` |
-| `SecondaryBOMValidityDate` |  | |  | `datuv` |
-| `ChangeNumberSecondary` |  | |  | `aennr` |
-| `ComparisonFieldsDesc` |  | |  | `cs_comparison_fields` |
-| `BOMComparisonIsType` |  | |  | `cs_comparison_type` |
-| `BOMTypeOfPrimBOMValue` |  | |  | `cs_bom_type_primary` |
-| `BOMTypeOfSecdryBOMValue` |  | |  | `cs_bom_type_secondary` |
-| `BOMExplsnApplPrimBOMValue` |  | |  | `capid` |
-| `BOMExplsnApplSecdryBOMValue` |  | |  | `capid` |
-| `SalesOrderNmbrPrimBOMValue` |  | |  | `cs_vbeln` |
-| `PrimBOMSalesOrderItemNmbrValue` |  | |  | `cs_vbpos` |
-| `SalesOrderNmbrSecdryBOMValue` |  | |  | `cs_vbeln` |
-| `SalesOrderItemSecdryBOMValue` |  | |  | `cs_vbpos` |
-| `BOMHasAlternativePriority` |  | |  | `altvo` |
-| `BOMObjDependenciesAreCompared` |  | |  | `cs_bzvgl` |
-| `ScrapQuantityIsRequested` |  | |  | `asflg` |
-| `ExplodeBOMLevelValue` |  | |  | `cs_maxst` |
-| `BillOfMaterialComponent` |  | |  | `idnrk` |
-| `BOMComparisonIsSummarized` |  | |  | `lkenz` |
-| `BOMItemNumberPrimary` |  | |  | `sposn` |
-| `BOMItemNumberSecondary` |  | |  | `sposn` |
-| `PrimBOMHdrBaseUoM` |  | |  | `meins` |
-| `BOMPrimaryComponentRequiredQty` |  | |  | `emeng` |
-| `BOMSecondaryCompRequiredQty` |  | |  | `emeng` |
-| `PrimBOMComponentLevelValue` |  | |  | `stufe` |
-| `PrimaryBOMValue` |  | |  | `stnum` |
-| `BOMNmbrNextLevelPrimBOMValue` |  | |  | `stnum` |
-| `SecdryBOMComponentLevelValue` |  | |  | `stufe` |
-| `SecondaryBOMValue` |  | |  | `stnum` |
-| `BOMNmbrNextLevelSecdryBOMValue` |  | |  | `stnum` |
-| `PrimaryBOMComponentIndexValue` |  | |  | `sytabix` |
-| `SecdryBOMComponentIndexValue` |  | |  | `sytabix` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialPrimary` |  | |  | `matnr` |  |  |
+| `PlantPrimary` |  | |  | `werks_d` |  |  |
+| `BOMVariantUsagePrimary` |  | |  | `stlan` |  |  |
+| `BOMVariantPrimary` |  | |  | `stalt` |  |  |
+| `BOMVersionPrimary` |  | |  | `cs_versn` |  |  |
+| `PrimBOMValidityDate` |  | |  | `datuv` |  |  |
+| `ChangeNumberPrimary` |  | |  | `aennr` |  |  |
+| `MaterialSecondary` |  | |  | `matnr` |  |  |
+| `PlantSecondary` |  | |  | `werks_d` |  |  |
+| `BOMVariantUsageSecondary` |  | |  | `stlan` |  |  |
+| `BOMVariantSecondary` |  | |  | `stalt` |  |  |
+| `BOMVersionSecondary` |  | |  | `cs_versn` |  |  |
+| `SecondaryBOMValidityDate` |  | |  | `datuv` |  |  |
+| `ChangeNumberSecondary` |  | |  | `aennr` |  |  |
+| `ComparisonFieldsDesc` |  | |  | `cs_comparison_fields` |  |  |
+| `BOMComparisonIsType` |  | |  | `cs_comparison_type` |  |  |
+| `BOMTypeOfPrimBOMValue` |  | |  | `cs_bom_type_primary` |  |  |
+| `BOMTypeOfSecdryBOMValue` |  | |  | `cs_bom_type_secondary` |  |  |
+| `BOMExplsnApplPrimBOMValue` |  | |  | `capid` |  |  |
+| `BOMExplsnApplSecdryBOMValue` |  | |  | `capid` |  |  |
+| `SalesOrderNmbrPrimBOMValue` |  | |  | `cs_vbeln` |  |  |
+| `PrimBOMSalesOrderItemNmbrValue` |  | |  | `cs_vbpos` |  |  |
+| `SalesOrderNmbrSecdryBOMValue` |  | |  | `cs_vbeln` |  |  |
+| `SalesOrderItemSecdryBOMValue` |  | |  | `cs_vbpos` |  |  |
+| `BOMHasAlternativePriority` |  | |  | `altvo` |  |  |
+| `BOMObjDependenciesAreCompared` |  | |  | `cs_bzvgl` |  |  |
+| `ScrapQuantityIsRequested` |  | |  | `asflg` |  |  |
+| `ExplodeBOMLevelValue` |  | |  | `cs_maxst` |  |  |
+| `BillOfMaterialComponent` |  | |  | `idnrk` |  |  |
+| `BOMComparisonIsSummarized` |  | |  | `lkenz` |  |  |
+| `BOMItemNumberPrimary` |  | |  | `sposn` |  |  |
+| `BOMItemNumberSecondary` |  | |  | `sposn` |  |  |
+| `PrimBOMHdrBaseUoM` |  | |  | `meins` |  |  |
+| `BOMPrimaryComponentRequiredQty` |  | |  | `emeng` |  |  |
+| `BOMSecondaryCompRequiredQty` |  | |  | `emeng` |  |  |
+| `PrimBOMComponentLevelValue` |  | |  | `stufe` |  |  |
+| `PrimaryBOMValue` |  | |  | `stnum` |  |  |
+| `BOMNmbrNextLevelPrimBOMValue` |  | |  | `stnum` |  |  |
+| `SecdryBOMComponentLevelValue` |  | |  | `stufe` |  |  |
+| `SecondaryBOMValue` |  | |  | `stnum` |  |  |
+| `BOMNmbrNextLevelSecdryBOMValue` |  | |  | `stnum` |  |  |
+| `PrimaryBOMComponentIndexValue` |  | |  | `sytabix` |  |  |
+| `SecdryBOMComponentIndexValue` |  | |  | `sytabix` |  |  |
 
 ## Source Code
 

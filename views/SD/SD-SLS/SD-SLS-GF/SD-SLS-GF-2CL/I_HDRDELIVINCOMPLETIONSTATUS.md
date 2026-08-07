@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HeaderDelivIncompletionStatus` | ✓ | |  | `SUBSTRING(dd07l.domvalue_l, 1, 1)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HeaderDelivIncompletionStatus` | ✓ | |  | `SUBSTRING(dd07l.domvalue_l, 1, 1)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

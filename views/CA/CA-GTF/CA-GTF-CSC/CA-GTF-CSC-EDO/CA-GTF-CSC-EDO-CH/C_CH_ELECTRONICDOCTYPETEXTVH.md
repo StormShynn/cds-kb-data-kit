@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CH_ElectronicDocAcctgDocType` | ✓ | |  |  |
-| `CH_ElectronicDocTypeText` |  | |  | `_Text[1:Language = $session.system_language].CH_ElectronicDocTypeText` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CH_ElectronicDocAcctgDocType` | ✓ | |  |  |  |  |
+| `CH_ElectronicDocTypeText` |  | |  | `_Text[1:Language = $session.system_language].CH_ElectronicDocTypeText` |  |  |
 
 ## Source Code
 

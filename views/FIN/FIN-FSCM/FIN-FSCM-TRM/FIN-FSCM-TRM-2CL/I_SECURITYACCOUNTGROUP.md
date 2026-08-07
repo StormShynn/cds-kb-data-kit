@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `company_code` |
-| `SecurityAccountGroup` | ✓ | |  | `cast(SecurityAccountGroup.sec_acct_grp as ftr_gen_sec_account_group preserving type)` |
-| `SecurityAccountGroupName` |  | |  | `cast(SecurityAccountGroup.sec_acct_grp_nam as ftr_gen_sec_account_group_name preserving type)` |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `company_code` |  |  |
+| `SecurityAccountGroup` | ✓ | |  | `cast(SecurityAccountGroup.sec_acct_grp as ftr_gen_sec_account_group preserving type)` |  |  |
+| `SecurityAccountGroupName` |  | |  | `cast(SecurityAccountGroup.sec_acct_grp_nam as ftr_gen_sec_account_group_name preserving type)` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

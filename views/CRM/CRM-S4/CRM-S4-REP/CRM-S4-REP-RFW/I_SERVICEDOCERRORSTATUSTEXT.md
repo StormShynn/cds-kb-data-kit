@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentHasError` | ✓ | |  | `domvalue_l` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `ServiceDocumentHasErrorName` |  | |  | `ddtext` |
-| `_ServiceDocHasError` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentHasError` | ✓ | |  | `domvalue_l` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `ServiceDocumentHasErrorName` |  | |  | `ddtext` |  |  |
+| `_ServiceDocHasError` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ManufacturingOrderType` | ✓ | |  | `cast(typ.OrderType as manufacturingordertype preserving type)` |
-| `ManufacturingOrderCategory` |  | |  | `cast(typ.OrderCategory as manufacturingordercategory preserving type)` |
-| `_Text` | | ✓ | | |
-| `_MfgOrderCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ManufacturingOrderType` | ✓ | |  | `cast(typ.OrderType as manufacturingordertype preserving type)` |  |  |
+| `ManufacturingOrderCategory` |  | |  | `cast(typ.OrderCategory as manufacturingordercategory preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_MfgOrderCategory` | | ✓ | | | | |
 
 ## Associations
 

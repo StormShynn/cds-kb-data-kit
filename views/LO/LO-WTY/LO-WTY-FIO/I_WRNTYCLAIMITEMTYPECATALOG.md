@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyCatalogCode` | ✓ | |  | `j_3gtplkz` |
-| `WrntyNumberInCatalog` | ✓ | |  | `j_3gkatnrc` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyCatalogCode` | ✓ | |  | `j_3gtplkz` |  |  |
+| `WrntyNumberInCatalog` | ✓ | |  | `j_3gkatnrc` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

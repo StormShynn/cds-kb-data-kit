@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationTask` | ✓ | |  | `cast( cacti as fincs_tsk preserving type )` |
-| `ConsolidationTaskCategory` |  | |  | `cast( cactt as fincs_taskcategory preserving type )` |
-| `CnsldtnTskDocValdtnIsActive` |  | |  | `docval_active` |
-| `CnsldtnBalValdtnCrcyCategory` |  | |  | `curr_type` |
-| `_CnsldtnTaskCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_CnsldtnTskDocTypeDtaColl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationTask` | ✓ | |  | `cast( cacti as fincs_tsk preserving type )` |  |  |
+| `ConsolidationTaskCategory` |  | |  | `cast( cactt as fincs_taskcategory preserving type )` |  |  |
+| `CnsldtnTskDocValdtnIsActive` |  | |  | `docval_active` |  |  |
+| `CnsldtnBalValdtnCrcyCategory` |  | |  | `curr_type` |  |  |
+| `_CnsldtnTaskCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_CnsldtnTskDocTypeDtaColl` | | ✓ | | | | |
 
 ## Associations
 

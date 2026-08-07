@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinInterestRateAdjmtStatus` | ✓ | |  | `cast( dd07l.domvalue_l as tb_ira_registration_state )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinInterestRateAdjmtStatus` | ✓ | |  | `cast( dd07l.domvalue_l as tb_ira_registration_state )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

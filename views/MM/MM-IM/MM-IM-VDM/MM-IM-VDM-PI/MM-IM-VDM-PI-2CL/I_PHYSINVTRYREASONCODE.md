@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GoodsMovementType` | ✓ | |  | `bwart` |
-| `ReasonForPhysInvtryDifference` | ✓ | |  | `grund` |
-| `_GoodsMovementType` | | ✓ | | |
-| `_PhysInvtryReasonCodeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GoodsMovementType` | ✓ | |  | `bwart` |  |  |
+| `ReasonForPhysInvtryDifference` | ✓ | |  | `grund` |  |  |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_PhysInvtryReasonCodeText` | | ✓ | | | | |
 
 ## Associations
 

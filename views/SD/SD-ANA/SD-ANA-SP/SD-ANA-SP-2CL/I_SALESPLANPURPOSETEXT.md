@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesPlanPurpose` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as sales_plan_purpose )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SalesPlanPurposeDesc` |  | |  | `cast( ddtext as sp_purpose_text )` |
-| `_Language` | | ✓ | | |
-| `_SalesPlanPurpose` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesPlanPurpose` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as sales_plan_purpose )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SalesPlanPurposeDesc` |  | |  | `cast( ddtext as sp_purpose_text )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SalesPlanPurpose` | | ✓ | | | | |
 
 ## Associations
 

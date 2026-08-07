@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderInternalBillOfOperations` | ✓ | |  |  |
-| `InspPlanOperationInternalID` | ✓ | |  |  |
-| `InspectionOpIsCompletionNeeded` |  | |  | `max(tqec30.oper_completion)` |
-| `InspOpHasCharc` |  | |  | `max(case I_InspectionOperation.BillOfOperationsType when 'Q' then 1 else case I_StatusObjectStatusBasic.StatusIsInactive when 'X' then 0 else case I_StatusObjectStatusBasic.StatusCode when 'I0282' then 1 when 'I0283' then 1 else 0 end end end)` |
-| `MatlQualityAuthorizationGroup` |  | |  |  |
-| `InspectionLotType` |  | |  |  |
-| `Plant` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderInternalBillOfOperations` | ✓ | |  |  |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |  |  |
+| `InspectionOpIsCompletionNeeded` |  | |  | `max(tqec30.oper_completion)` |  |  |
+| `InspOpHasCharc` |  | |  | `max(case I_InspectionOperation.BillOfOperationsType when 'Q' then 1 else case I_StatusObjectStatusBasic.StatusIsInactive when 'X' then 0 else case I_StatusObjectStatusBasic.StatusCode when 'I0282' then 1 when 'I0283' then 1 else 0 end end end)` |  |  |
+| `MatlQualityAuthorizationGroup` |  | |  |  |  |  |
+| `InspectionLotType` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
 
 ## Source Code
 

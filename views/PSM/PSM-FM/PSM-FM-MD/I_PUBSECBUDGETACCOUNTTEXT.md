@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PubSecBudgetAccount` | ✓ | |  |  |
-| `PubSecBudgetAccountCoCode` | ✓ | |  | `cast( I_GLAccountInCompanyCode.CompanyCode as psm_bdgt_account_cocode preserving type )` |
-| `Language` | ✓ | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `BudgetAccountName` |  | |  |  |
-| `BudgetAccountDescription` |  | |  |  |
-| `_Language` | | ✓ | | |
-| `_PubSecBudgetAccountCoCode` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PubSecBudgetAccount` | ✓ | |  |  |  |  |
+| `PubSecBudgetAccountCoCode` | ✓ | |  | `cast( I_GLAccountInCompanyCode.CompanyCode as psm_bdgt_account_cocode preserving type )` |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `BudgetAccountName` |  | |  |  |  |  |
+| `BudgetAccountDescription` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PubSecBudgetAccountCoCode` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
 
 ## Associations
 

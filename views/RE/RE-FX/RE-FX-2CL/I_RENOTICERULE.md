@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RENoticeRule` | ✓ | |  | `ntrule` |
-| `RENoticeRuleType` |  | |  | `ntruletype` |
-| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
-| `_Text` | | ✓ | | |
-| `_NoticeRuleType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RENoticeRule` | ✓ | |  | `ntrule` |  |  |
+| `RENoticeRuleType` |  | |  | `ntruletype` |  |  |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_NoticeRuleType` | | ✓ | | | | |
 
 ## Associations
 

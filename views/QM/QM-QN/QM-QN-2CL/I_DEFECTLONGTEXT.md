@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `}` |  | |  | `usageType: { dataClass: #TRANSACTIONAL, sizeCategory: #L, serviceQuality: #A }` |
-| `'LongTextInternalNumber'` |  | |  | `representativeKey: 'LongTextInternalNumber'` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `}` |  | |  | `usageType: { dataClass: #TRANSACTIONAL, sizeCategory: #L, serviceQuality: #A }` |  |  |
+| `'LongTextInternalNumber'` |  | |  | `representativeKey: 'LongTextInternalNumber'` |  |  |
 
 ## Source Code
 

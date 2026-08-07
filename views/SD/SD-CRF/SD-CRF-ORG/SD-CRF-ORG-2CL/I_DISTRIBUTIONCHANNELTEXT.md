@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DistributionChannel` | ✓ | |  | `vtweg` |
-| `Language` | ✓ | |  | `spras` |
-| `DistributionChannelName` |  | |  | `cast(vtext as distributionchannelname preserving type)` |
-| `_DistributionChannel` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DistributionChannel` | ✓ | |  | `vtweg` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `DistributionChannelName` |  | |  | `cast(vtext as distributionchannelname preserving type)` |  |  |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

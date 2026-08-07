@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralPurchaseContract` | ✓ | |  |  |
-| `DistributionKey` | ✓ | |  |  |
-| `PartnerCounter` | ✓ | |  |  |
-| `PartnerFunction` |  | |  |  |
-| `ExtPlantForPurg` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierSubrange` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `_CentralPurchaseContrHdrDist` | | ✓ | | |
-| `_CentralPurchaseContract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |  |  |
+| `DistributionKey` | ✓ | |  |  |  |  |
+| `PartnerCounter` | ✓ | |  |  |  |  |
+| `PartnerFunction` |  | |  |  |  |  |
+| `ExtPlantForPurg` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierSubrange` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `_CentralPurchaseContrHdrDist` | | ✓ | | | | |
+| `_CentralPurchaseContract` | | ✓ | | | | |
 
 ## Source Code
 

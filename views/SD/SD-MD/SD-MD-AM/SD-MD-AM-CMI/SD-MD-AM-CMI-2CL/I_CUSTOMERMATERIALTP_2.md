@@ -33,36 +33,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrganization` | ✓ | |  |  |
-| `DistributionChannel` | ✓ | |  |  |
-| `Customer` | ✓ | |  |  |
-| `Product` | ✓ | |  |  |
-| `SalesOrganizationForEdit` |  | |  |  |
-| `DistributionChannelForEdit` |  | |  |  |
-| `CustomerForEdit` |  | |  |  |
-| `ProductForEdit` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `MaterialDescriptionByCustomer` |  | |  |  |
-| `CustomerMaterialSearchTerm` |  | |  |  |
-| `Plant` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `MinDeliveryQtyInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `MaxNmbrOfPartialDelivery` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `CustomerMaterialItemUsage` |  | |  |  |
-| `SalesUnit` |  | |  |  |
-| `SalesQtyToBaseQtyDnmntr` |  | |  |  |
-| `SalesQtyToBaseQtyNmrtr` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  |  |  |  |
+| `DistributionChannel` | ✓ | |  |  |  |  |
+| `Customer` | ✓ | |  |  |  |  |
+| `Product` | ✓ | |  |  |  |  |
+| `SalesOrganizationForEdit` |  | |  |  |  |  |
+| `DistributionChannelForEdit` |  | |  |  |  |  |
+| `CustomerForEdit` |  | |  |  |  |  |
+| `ProductForEdit` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `MaterialDescriptionByCustomer` |  | |  |  |  |  |
+| `CustomerMaterialSearchTerm` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `MinDeliveryQtyInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `MaxNmbrOfPartialDelivery` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `CustomerMaterialItemUsage` |  | |  |  |  |  |
+| `SalesUnit` |  | |  |  |  |  |
+| `SalesQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `SalesQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LegalTransactionParCatUUID` | ✓ | |  |  |
-| `LegalTransactionCatGroupUUID` |  | |  |  |
-| `LegalTransactionUUID` |  | |  |  |
-| `LglCntntMParentCategory` |  | |  |  |
-| `LglCntntMIsMandatory` |  | |  |  |
-| `LglCntntMIndex` |  | |  |  |
-| `_LegalTransaction` | | ✓ | | |
-| `_LegalTransCategoryGroup` | | ✓ | | |
-| `_LegalTransCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionParCatUUID` | ✓ | |  |  |  |  |
+| `LegalTransactionCatGroupUUID` |  | |  |  |  |  |
+| `LegalTransactionUUID` |  | |  |  |  |  |
+| `LglCntntMParentCategory` |  | |  |  |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |  |  |
+| `LglCntntMIndex` |  | |  |  |  |  |
+| `_LegalTransaction` | | ✓ | | | | |
+| `_LegalTransCategoryGroup` | | ✓ | | | | |
+| `_LegalTransCategory` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `cast (tax.matnr as productnumber preserving type )` |
-| `Country` | ✓ | |  | `aland` |
-| `TaxCategory` | ✓ | |  | `tatyp` |
-| `TaxClassification` | ✓ | |  | `case taxType.lfdnr when '1' then tax.taxm1 when '2' then tax.taxm2 when '3' then tax.taxm3 when '4' then tax.taxm4 when '5' then tax.taxm5 when '6' then tax.taxm6 when '7' then tax.taxm7 when '8' then tax.taxm8 when '9' then tax.taxm9 else '' end` |
-| `_Product` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_CountryName` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast (tax.matnr as productnumber preserving type )` |  |  |
+| `Country` | ✓ | |  | `aland` |  |  |
+| `TaxCategory` | ✓ | |  | `tatyp` |  |  |
+| `TaxClassification` | ✓ | |  | `case taxType.lfdnr when '1' then tax.taxm1 when '2' then tax.taxm2 when '3' then tax.taxm3 when '4' then tax.taxm4 when '5' then tax.taxm5 when '6' then tax.taxm6 when '7' then tax.taxm7 when '8' then tax.taxm8 when '9' then tax.taxm9 else '' end` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_CountryName` | | ✓ | | | | |
 
 ## Associations
 

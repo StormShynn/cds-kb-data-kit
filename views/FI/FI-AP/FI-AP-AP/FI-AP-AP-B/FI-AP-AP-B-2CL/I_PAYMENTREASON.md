@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentReason` | ✓ | |  | `payt_rsn` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentReason` | ✓ | |  | `payt_rsn` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

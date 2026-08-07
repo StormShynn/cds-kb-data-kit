@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CalendarDate` | ✓ | |  |  |
-| `ShiftedCalendarDate` |  | |  | `cast( case $parameters.P_TimePeriodOffsetUnit when 'D' then dats_add_days (CalendarDate, :P_TimePeriodOffsetDuration ,'FAIL') when 'W' then dats_add_days (CalendarDate, :P_TimePeriodOffsetDuration*7 ,'FAIL') when 'M' then dats_add_months (CalendarDate, :P_TimePeriodOffsetDuration ,'FAIL') when 'Q' then dats_add_months (CalendarDate, :P_TimePeriodOffsetDuration*3 ,'FAIL') when 'Y' then dats_add_months (CalendarDate, :P_TimePeriodOffsetDuration*12 ,'FAIL') else '' end as calendardate)` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalendarDate` | ✓ | |  |  |  |  |
+| `ShiftedCalendarDate` |  | |  | `cast( case $parameters.P_TimePeriodOffsetUnit when 'D' then dats_add_days (CalendarDate, :P_TimePeriodOffsetDuration ,'FAIL') when 'W' then dats_add_days (CalendarDate, :P_TimePeriodOffsetDuration*7 ,'FAIL') when 'M' then dats_add_months (CalendarDate, :P_TimePeriodOffsetDuration ,'FAIL') when 'Q' then dats_add_months (CalendarDate, :P_TimePeriodOffsetDuration*3 ,'FAIL') when 'Y' then dats_add_months (CalendarDate, :P_TimePeriodOffsetDuration*12 ,'FAIL') else '' end as calendardate)` |  |  |
 
 ## Source Code
 

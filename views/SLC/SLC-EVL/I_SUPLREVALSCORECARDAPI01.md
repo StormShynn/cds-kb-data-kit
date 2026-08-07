@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalScorecardUUID` | ✓ | |  |  |
-| `SupplierEvalScorecard` |  | |  |  |
-| `SuplrEvalScorecardName` |  | |  |  |
-| `SuplrEvalStartDate` |  | |  |  |
-| `SuplrEvalEndDate` |  | |  |  |
-| `PurgCatUUID` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `SuplrEvalIsFinal` |  | |  |  |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalScorecardUUID` | ✓ | |  |  |  |  |
+| `SupplierEvalScorecard` |  | |  |  |  |  |
+| `SuplrEvalScorecardName` |  | |  |  |  |  |
+| `SuplrEvalStartDate` |  | |  |  |  |  |
+| `SuplrEvalEndDate` |  | |  |  |  |  |
+| `PurgCatUUID` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |  |  |
+| `SuplrEvalIsFinal` |  | |  |  |  |  |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

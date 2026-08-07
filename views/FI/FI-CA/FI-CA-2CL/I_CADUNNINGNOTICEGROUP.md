@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADunningNoticeGroup` | ✓ | |  | `mgrup` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADunningNoticeGroup` | ✓ | |  | `mgrup` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

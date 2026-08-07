@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |
-| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |
-| `StartDate` | ✓ | | `_BPRelationship` | `ValidityStartDate` |
-| `EndDate` |  | | `_BPRelationship` | `ValidityEndDate` |
-| `WorkforcePersonExternalID` |  | | `_AssignmentBP` | `WorkforcePersonExternalID` |
-| `Supplier` |  | | `_BPRelationship` | `BusinessPartner1` |
-| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |
-| `_WorkAssignment` | | ✓ | | |
-| `_WorkforcePerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |  |  |
+| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |  |  |
+| `StartDate` | ✓ | | `_BPRelationship` | `ValidityStartDate` |  |  |
+| `EndDate` |  | | `_BPRelationship` | `ValidityEndDate` |  |  |
+| `WorkforcePersonExternalID` |  | | `_AssignmentBP` | `WorkforcePersonExternalID` |  |  |
+| `Supplier` |  | | `_BPRelationship` | `BusinessPartner1` |  |  |
+| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |  |  |
+| `_WorkAssignment` | | ✓ | | | | |
+| `_WorkforcePerson` | | ✓ | | | | |
 
 ## Associations
 

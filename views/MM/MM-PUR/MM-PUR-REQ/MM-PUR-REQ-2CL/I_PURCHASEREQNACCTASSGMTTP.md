@@ -30,63 +30,63 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseRequisition` | ✓ | |  |  |
-| `PurchaseRequisitionItem` | ✓ | |  |  |
-| `PurchaseReqnAcctAssgmtNumber` | ✓ | |  |  |
-| `CostCenter` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
-| `PurReqnItemCurrency` |  | |  |  |
-| `PurReqnNetAmount` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SalesOrderScheduleLine` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostObject` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ProjectNetworkInternalID` |  | |  |  |
-| `CommitmentItem` |  | |  |  |
-| `CommitmentItemShortID` |  | |  |  |
-| `FundsCenter` |  | |  |  |
-| `Fund` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `REInternalFinNumber` |  | |  |  |
-| `NetworkActivityInternalID` |  | |  |  |
-| `PartnerAccountNumber` |  | |  |  |
-| `JointVentureRecoveryCode` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `OrderInternalID` |  | |  |  |
-| `OrderIntBillOfOperationsItem` |  | |  |  |
-| `EarmarkedFundsDocument` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `ValidityDate` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `PurchaseRequisitionType` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Currency` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_PurchaseRequisitionItem` | | ✓ | | |
-| `_PurReqn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |  |  |
+| `PurchaseRequisitionItem` | ✓ | |  |  |  |  |
+| `PurchaseReqnAcctAssgmtNumber` | ✓ | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |  |  |
+| `PurReqnItemCurrency` |  | |  |  |  |  |
+| `PurReqnNetAmount` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |  |  |
+| `CommitmentItem` |  | |  |  |  |  |
+| `CommitmentItemShortID` |  | |  |  |  |  |
+| `FundsCenter` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `REInternalFinNumber` |  | |  |  |  |  |
+| `NetworkActivityInternalID` |  | |  |  |  |  |
+| `PartnerAccountNumber` |  | |  |  |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `ValidityDate` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `PurchaseRequisitionType` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Currency` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
+| `_PurReqn` | | ✓ | | | | |
 
 ## Source Code
 

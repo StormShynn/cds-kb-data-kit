@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdAllocSqncAssignmentUUID` | ✓ | |  |  |
-| `ProductAllocationSequenceUUID` |  | |  |  |
-| `ProductAllocationSequence` |  | |  |  |
-| `Material` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ValidityStartUTCDateTime` |  | |  |  |
-| `ValidityStartTimeZone` |  | |  |  |
-| `ValidityEndUTCDateTime` |  | |  |  |
-| `ValidityEndTimeZone` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_ProdAllocationSequenceTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdAllocSqncAssignmentUUID` | ✓ | |  |  |  |  |
+| `ProductAllocationSequenceUUID` |  | |  |  |  |  |
+| `ProductAllocationSequence` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ValidityStartUTCDateTime` |  | |  |  |  |  |
+| `ValidityStartTimeZone` |  | |  |  |  |  |
+| `ValidityEndUTCDateTime` |  | |  |  |  |  |
+| `ValidityEndTimeZone` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_ProdAllocationSequenceTP` | | ✓ | | | | |
 
 ## Source Code
 

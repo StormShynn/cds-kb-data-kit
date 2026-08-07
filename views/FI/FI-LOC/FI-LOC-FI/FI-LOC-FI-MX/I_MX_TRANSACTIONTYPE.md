@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessTransactionType` | ✓ | |  | `cast(domvalue_l as transaction_type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransactionType` | ✓ | |  | `cast(domvalue_l as transaction_type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

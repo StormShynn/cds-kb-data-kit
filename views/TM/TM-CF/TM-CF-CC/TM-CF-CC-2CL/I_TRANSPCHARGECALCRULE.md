@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChrgCalcRuleUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tcc_calc_rule_uuid preserving type )` |
-| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type )` |
-| `TranspChargeElementUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_element_uuid preserving type )` |
-| `TransportationCalculationBase` |  | |  | `calc_base_code` |
-| `TranspChrgCalcRuleUnit` |  | |  | `qty_unit_c` |
-| `TranspChrgPricePerQuantity` |  | |  | `cast(qty_value as /scmtms/vdm_tcc_qty_val preserving type)` |
-| `TranspChrgDataSourceQuantity` |  | |  | `cast(quantity as /scmtms/vdm_tcc_dsrc_qty preserving type)` |
-| `_TransportationCharge` | | ✓ | | |
-| `_TranspCalculationBase` | | ✓ | | |
-| `_TranspChrgCalcRuleQtyUnit` | | ✓ | | |
-| `_TransportationChargeElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChrgCalcRuleUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tcc_calc_rule_uuid preserving type )` |  |  |
+| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type )` |  |  |
+| `TranspChargeElementUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_element_uuid preserving type )` |  |  |
+| `TransportationCalculationBase` |  | |  | `calc_base_code` |  |  |
+| `TranspChrgCalcRuleUnit` |  | |  | `qty_unit_c` |  |  |
+| `TranspChrgPricePerQuantity` |  | |  | `cast(qty_value as /scmtms/vdm_tcc_qty_val preserving type)` |  |  |
+| `TranspChrgDataSourceQuantity` |  | |  | `cast(quantity as /scmtms/vdm_tcc_dsrc_qty preserving type)` |  |  |
+| `_TransportationCharge` | | ✓ | | | | |
+| `_TranspCalculationBase` | | ✓ | | | | |
+| `_TranspChrgCalcRuleQtyUnit` | | ✓ | | | | |
+| `_TransportationChargeElement` | | ✓ | | | | |
 
 ## Associations
 

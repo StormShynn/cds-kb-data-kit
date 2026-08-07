@@ -30,609 +30,609 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SourceLedger` | ✓ | |  | `rldnr` |
-| `CompanyCode` | ✓ | |  | `rbukrs` |
-| `FiscalYear` | ✓ | |  | `gjahr` |
-| `AccountingDocument` | ✓ | |  | `belnr` |
-| `LedgerGLLineItem` | ✓ | |  | `docln` |
-| `LedgerFiscalYear` |  | |  | `ryear` |
-| `GLRecordType` |  | |  | `rrcty` |
-| `JrnlEntrAltvFYConsecutiveID` |  | |  | `DOCNR_LD` |
-| `ChartOfAccounts` |  | |  | `ktopl` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `FinancialTransactionType` |  | |  | `rmvct` |
-| `GLBusinessTransactionType` |  | |  | `vorgn` |
-| `BusinessTransactionCategory` |  | |  | `bttype` |
-| `BusinessTransactionType` |  | |  | `cbttype` |
-| `FinancialClosingStep` |  | |  | `closingstep` |
-| `ControllingBusTransacType` |  | |  | `vrgng` |
-| `ReferenceDocumentType` |  | |  | `awtyp` |
-| `LogicalSystem` |  | |  | `awsys` |
-| `ReferenceDocumentContext` |  | |  | `aworg` |
-| `ReferenceDocument` |  | |  | `awref` |
-| `ReferenceDocumentItem` |  | |  | `cast( P_ACDOCA.awitem as fis_awitem preserving type )` |
-| `ReferenceDocumentItemGroup` |  | |  | `cast( P_ACDOCA.awitgrp as fis_awitgrp preserving type )` |
-| `TransactionSubitem` |  | |  | `subta` |
-| `AccountingNotificationUUID` |  | |  | `ACCTG_NOTIF_UUID` |
-| `OffsettingLedgerGLLineItem` |  | |  | `offstg_docln` |
-| `IsReversal` |  | |  | `xreversing` |
-| `IsReversed` |  | |  | `xreversed` |
-| `ReversalReferenceDocumentType` |  | |  | `awtyp_rev` |
-| `ReversalReferenceDocumentCntxt` |  | |  | `cast( P_ACDOCA.aworg_rev as fis_aworg_rev preserving type )` |
-| `ReversalReferenceDocument` |  | |  | `cast( P_ACDOCA.awref_rev as fis_awref_rev preserving type )` |
-| `ReversalTransactionSubitem` |  | |  | `subta_rev` |
-| `IsSettlement` |  | |  | `xsettling` |
-| `IsSettled` |  | |  | `xsettled` |
-| `PredecessorReferenceDocType` |  | |  | `cast( P_ACDOCA.prec_awtyp as fis_prec_awtyp preserving type )` |
-| `PredecessorReferenceDocCntxt` |  | |  | `cast( P_ACDOCA.prec_aworg as fis_prec_aworg preserving type )` |
-| `PredecessorReferenceDocument` |  | |  | `cast( P_ACDOCA.prec_awref as fis_prec_awref preserving type )` |
-| `PredecessorReferenceDocItem` |  | |  | `cast( P_ACDOCA.prec_awitem as fis_prec_awitem preserving type )` |
-| `PrdcssrJournalEntryCompanyCode` |  | |  | `cast( P_ACDOCA.prec_bukrs as fins_prec_bukrs_gfc preserving type )` |
-| `PrdcssrJournalEntryFiscalYear` |  | |  | `prec_gjahr` |
-| `PredecessorJournalEntry` |  | |  | `cast( P_ACDOCA.prec_belnr as fins_prec_belnr_gfc preserving type )` |
-| `PredecessorJournalEntryItem` |  | |  | `cast( P_ACDOCA.prec_docln as fins_prec_docln_gfc preserving type )` |
-| `SourceReferenceDocumentType` |  | |  | `cast( P_ACDOCA.src_awtyp as fis_src_awtyp preserving type )` |
-| `SourceLogicalSystem` |  | |  | `cast( P_ACDOCA.src_awsys as fis_src_awsys preserving type )` |
-| `SourceReferenceDocumentCntxt` |  | |  | `cast( P_ACDOCA.src_aworg as fis_src_aworg preserving type )` |
-| `SourceReferenceDocument` |  | |  | `cast( P_ACDOCA.src_awref as fis_src_awref preserving type )` |
-| `SourceReferenceDocumentItem` |  | |  | `cast( P_ACDOCA.src_awitem as fis_src_awitem preserving type )` |
-| `SourceReferenceDocSubitem` |  | |  | `cast( P_ACDOCA.src_awsubit as fis_src_awsubit preserving type )` |
-| `IsCommitment` |  | |  | `cast( P_ACDOCA.xcommitment as fis_xcommitment preserving type )` |
-| `JrnlEntryItemObsoleteReason` |  | |  | `obs_reason` |
-| `JournalEntryIsSecondaryEntry` |  | |  | `XSECONDARY` |
-| `JrnlPeriodEndClosingRunLogUUID` |  | |  | `closing_run_id` |
-| `OrganizationalChange` |  | |  | `orgl_change` |
-| `GLAccount` |  | |  | `racct` |
-| `CostCenter` |  | |  | `rcntr` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `FunctionalArea` |  | |  | `rfarea` |
-| `BusinessArea` |  | |  | `rbusa` |
-| `Segment` |  | |  | `segment` |
-| `PartnerCostCenter` |  | |  | `scntr` |
-| `PartnerProfitCenter` |  | |  | `pprctr` |
-| `PartnerFunctionalArea` |  | |  | `sfarea` |
-| `PartnerBusinessArea` |  | |  | `sbusa` |
-| `PartnerCompany` |  | |  | `rassc` |
-| `PartnerSegment` |  | |  | `psegment` |
-| `BalanceTransactionCurrency` |  | |  | `rtcur` |
-| `AmountInBalanceTransacCrcy` |  | |  | `} P_ACDOCA.tsl` |
-| `TransactionCurrency` |  | |  | `rwcur` |
-| `AmountInTransactionCurrency` |  | |  | `} P_ACDOCA.wsl` |
-| `CompanyCodeCurrency` |  | |  | `rhcur` |
-| `AmountInCompanyCodeCurrency` |  | |  | `} P_ACDOCA.hsl` |
-| `GlobalCurrency` |  | |  | `rkcur` |
-| `AmountInGlobalCurrency` |  | |  | `} P_ACDOCA.ksl` |
-| `FunctionalCurrency` |  | |  | `rfccur` |
-| `AmountInFunctionalCurrency` |  | |  | `} P_ACDOCA.fcsl` |
-| `FreeDefinedCurrency1` |  | |  | `rocur` |
-| `AmountInFreeDefinedCurrency1` |  | |  | `} P_ACDOCA.osl` |
-| `FreeDefinedCurrency2` |  | |  | `rvcur` |
-| `AmountInFreeDefinedCurrency2` |  | |  | `} P_ACDOCA.vsl` |
-| `FreeDefinedCurrency3` |  | |  | `cast( P_ACDOCA.rbcur as fis_curr3 preserving type )` |
-| `AmountInFreeDefinedCurrency3` |  | |  | `} P_ACDOCA.bsl` |
-| `FreeDefinedCurrency4` |  | |  | `cast( P_ACDOCA.rccur as fis_curr4 preserving type )` |
-| `AmountInFreeDefinedCurrency4` |  | |  | `} P_ACDOCA.csl` |
-| `FreeDefinedCurrency5` |  | |  | `cast( P_ACDOCA.rdcur as fis_curr5 preserving type )` |
-| `AmountInFreeDefinedCurrency5` |  | |  | `} P_ACDOCA.dsl` |
-| `FreeDefinedCurrency6` |  | |  | `cast( P_ACDOCA.recur as fis_curr6 preserving type )` |
-| `AmountInFreeDefinedCurrency6` |  | |  | `} P_ACDOCA.esl` |
-| `FreeDefinedCurrency7` |  | |  | `rfcur` |
-| `AmountInFreeDefinedCurrency7` |  | |  | `} P_ACDOCA.fsl` |
-| `FreeDefinedCurrency8` |  | |  | `cast( P_ACDOCA.rgcur as fis_curr8 preserving type )` |
-| `AmountInFreeDefinedCurrency8` |  | |  | `} P_ACDOCA.gsl` |
-| `FixedAmountInGlobalCrcy` |  | |  | `} P_ACDOCA.kfsl` |
-| `GrpValnFixedAmtInGlobCrcy` |  | |  | `} cast( P_ACDOCA.kfsl2 as fis_vgcur12_fix2 preserving type )` |
-| `PrftCtrValnFxdAmtInGlobCrcy` |  | |  | `} cast( P_ACDOCA.kfsl3 as fis_vgcur12_fix3 preserving type )` |
-| `FixedAmountInCoCodeCrcy` |  | |  | `} P_ACDOCA.hfsl` |
-| `FixedAmountInTransCrcy` |  | |  | `} P_ACDOCA.wfsl` |
-| `TotalPriceVarcInGlobalCrcy` |  | |  | `} P_ACDOCA.psl` |
-| `GrpValnTotPrcVarcInGlobCrcy` |  | |  | `} cast( P_ACDOCA.psl2 as fis_vpcur12_2 preserving type )` |
-| `PrftCtrValnTotPrcVarcInGlbCrcy` |  | |  | `} cast( P_ACDOCA.psl3 as fis_vpcur12_3 preserving type )` |
-| `FixedPriceVarcInGlobalCrcy` |  | |  | `} P_ACDOCA.pfsl` |
-| `GrpValnFixedPrcVarcInGlobCrcy` |  | |  | `} cast( P_ACDOCA.pfsl2 as fis_vpfcur12_2 preserving type )` |
-| `PrftCtrValnFxdPrcVarcInGlbCrcy` |  | |  | `} cast( P_ACDOCA.pfsl3 as fis_vpfcur12_3 preserving type )` |
-| `ControllingObjectCurrency` |  | |  | `rco_ocur` |
-| `AmountInObjectCurrency` |  | |  | `} cast( P_ACDOCA.co_osl as fis_vco_ocur12 preserving type )` |
-| `GrantCurrency` |  | |  | `rgm_ocur` |
-| `AmountInGrantCurrency` |  | |  | `} P_ACDOCA.gm_osl` |
-| `BaseUnit` |  | |  | `runit` |
-| `Quantity` |  | |  | `} P_ACDOCA.msl` |
-| `FixedQuantity` |  | |  | `} cast( P_ACDOCA.mfsl as fis_quan1_12_fix preserving type )` |
-| `CostSourceUnit` |  | |  | `rvunit` |
-| `ValuationQuantity` |  | |  | `} cast( P_ACDOCA.vmsl as fis_vquan1_12 preserving type )` |
-| `ValuationFixedQuantity` |  | |  | `} cast( P_ACDOCA.vmfsl as fis_vquan1_12_fix preserving type )` |
-| `ReferenceQuantityUnit` |  | |  | `rrunit` |
-| `ReferenceQuantity` |  | |  | `} P_ACDOCA.rmsl` |
-| `AdditionalQuantity1Unit` |  | |  | `cast( P_ACDOCA.qunit1 as fis_qunit1 preserving type )` |
-| `AdditionalQuantity1` |  | |  | `} cast( P_ACDOCA.quant1 as fis_quan1_l preserving type )` |
-| `AdditionalQuantity2Unit` |  | |  | `cast( P_ACDOCA.qunit2 as fis_qunit2 preserving type )` |
-| `AdditionalQuantity2` |  | |  | `} cast( P_ACDOCA.quant2 as fis_quan2_l preserving type )` |
-| `AdditionalQuantity3Unit` |  | |  | `cast( P_ACDOCA.qunit3 as fis_qunit3 preserving type )` |
-| `AdditionalQuantity3` |  | |  | `} cast( P_ACDOCA.quant3 as fis_quan3_l preserving type )` |
-| `IncmpltSummableValnQtyUnt` |  | |  | `CO_MEINH` |
-| `IncmpltSummableValnQty` |  | |  | `} P_ACDOCA.CO_MEGBTR` |
-| `IncmpltSummableValnFxdQty` |  | |  | `} P_ACDOCA.CO_MEFBTR` |
-| `DebitCreditCode` |  | |  | `drcrk` |
-| `FiscalPeriod` |  | |  | `poper` |
-| `FiscalYearVariant` |  | |  | `periv` |
-| `FiscalYearPeriod` |  | |  | `fiscyearper` |
-| `PostingDate` |  | |  | `budat` |
-| `DocumentDate` |  | |  | `bldat` |
-| `AccountingDocumentType` |  | |  | `blart` |
-| `AccountingDocumentItem` |  | |  | `buzei` |
-| `AssignmentReference` |  | |  | `zuonr` |
-| `AccountingDocumentCategory` |  | |  | `bstat` |
-| `JournalEntryItemCategory` |  | |  | `linetype` |
-| `PostingKey` |  | |  | `bschl` |
-| `TransactionTypeDetermination` |  | |  | `ktosl` |
-| `SubLedgerAcctLineItemType` |  | |  | `slalittype` |
-| `AccountingDocCreatedByUser` |  | |  | `usnam` |
-| `LastChangeDateTime` |  | |  | `cast( (case when P_ACDOCA.last_change_datetime <> 0 then P_ACDOCA.last_change_datetime when P_ACDOCA.last_change_datetime = 0 then P_ACDOCA.timestamp end) as fis_lastchange_datetime preserving type )` |
-| `CreationDateTime` |  | |  | `cast( P_ACDOCA.timestamp as fis_creation_datetime preserving type )` |
-| `CreationDate` |  | |  | `cast(substring( cast(P_ACDOCA.timestamp as abap.char(30)) , 1 , 8) as fis_cpdat)` |
-| `EliminationProfitCenter` |  | |  | `cast( P_ACDOCA.eprctr as fis_eprctr preserving type )` |
-| `OriginObjectType` |  | |  | `rhoart` |
-| `GLAccountType` |  | |  | `glaccount_type` |
-| `AlternativeGLAccount` |  | |  | `cast(P_ACDOCA.lokkt as fis_alternativeglaccount preserving type )` |
-| `CountryChartOfAccounts` |  | |  | `ktop2` |
-| `ItemIsSplit` |  | |  | `cast( P_ACDOCA.xsplitmod as xsplitmod_acd preserving type )` |
-| `ConsolidationUnit` |  | |  | `rbunit` |
-| `PartnerConsolidationUnit` |  | |  | `rbuptr` |
-| `Company` |  | |  | `rcomp` |
-| `ConsolidationChartOfAccounts` |  | |  | `ritclg` |
-| `CnsldtnFinancialStatementItem` |  | |  | `ritem` |
-| `CnsldtnSubitemCategory` |  | |  | `sityp` |
-| `CnsldtnSubitem` |  | |  | `subit` |
-| `InvoiceReference` |  | |  | `rebzg` |
-| `InvoiceReferenceFiscalYear` |  | |  | `rebzj` |
-| `FollowOnDocumentType` |  | |  | `cast( P_ACDOCA.rebzt as fis_rebzt preserving type )` |
-| `InvoiceItemReference` |  | |  | `rebzz` |
-| `ReferencePurchaseOrderCategory` |  | |  | `rbest` |
-| `PurchasingDocument` |  | |  | `ebeln` |
-| `PurchasingDocumentItem` |  | |  | `ebelp` |
-| `AccountAssignmentNumber` |  | |  | `cast( P_ACDOCA.zekkn as fis_dzekkn preserving type )` |
-| `DocumentItemText` |  | |  | `sgtxt` |
-| `SalesDocument` |  | |  | `cast(P_ACDOCA.kdauf as vbeln_va preserving type)` |
-| `SalesDocumentItem` |  | |  | `cast(P_ACDOCA.kdpos as posnr_va preserving type)` |
-| `Product` |  | |  | `cast (P_ACDOCA.matnr as productnumber)` |
-| `Plant` |  | |  | `werks` |
-| `Supplier` |  | |  | `lifnr` |
-| `Customer` |  | |  | `kunnr` |
-| `ServicesRenderedDate` |  | |  | `fbuda` |
-| `PerformancePeriodStartDate` |  | |  | `perop_beg` |
-| `PerformancePeriodEndDate` |  | |  | `perop_end` |
-| `ConditionContract` |  | |  | `coco_num` |
-| `ExchangeRateDate` |  | |  | `wwert` |
-| `ComponentBreakdown` |  | |  | `cast( P_ACDOCA.ucb_id as fis_fucb_id preserving type )` |
-| `CompBreakdownScaleNumerator` |  | |  | `cast( P_ACDOCA.ucb_scale_numerator as fin_fucb_scale_numerator preserving type )` |
-| `FinancialAccountType` |  | |  | `koart` |
-| `SpecialGLCode` |  | |  | `umskz` |
-| `TaxCode` |  | |  | `mwskz` |
-| `TaxCountry` |  | |  | `tax_country` |
-| `HouseBank` |  | |  | `hbkid` |
-| `HouseBankAccount` |  | |  | `hktid` |
-| `IsOpenItemManaged` |  | |  | `xopvw` |
-| `ClearingDate` |  | |  | `augdt` |
-| `ClearingDocFiscalYear` |  | |  | `cast( P_ACDOCA.auggj as fis_auggj_no_conv_depre preserving type )` |
-| `ClearingAccountingDocument` |  | |  | `cast( P_ACDOCA.augbl as fis_augbl_depre preserving type )` |
-| `ClearingJournalEntryFiscalYear` |  | |  | `auggj` |
-| `ClearingJournalEntry` |  | |  | `augbl` |
-| `ValueDate` |  | |  | `valut` |
-| `GeneralLedgerAgingScope` |  | |  | `AGING` |
-| `GeneralLedgerAgingIncrement` |  | |  | `AGING_INCRMNT` |
-| `AssetDepreciationArea` |  | |  | `afabe` |
-| `MasterFixedAsset` |  | |  | `anln1` |
-| `FixedAsset` |  | |  | `anln2` |
-| `AssetValueDate` |  | |  | `bzdat` |
-| `AssetTransactionType` |  | |  | `anbwa` |
-| `AssetAcctTransClassfctn` |  | |  | `movcat` |
-| `DepreciationFiscalPeriod` |  | |  | `depr_period` |
-| `GroupMasterFixedAsset` |  | |  | `anlgr` |
-| `GroupFixedAsset` |  | |  | `anlgr2` |
-| `AssetClass` |  | |  | `anlkl` |
-| `PartnerMasterFixedAsset` |  | |  | `panl1` |
-| `PartnerFixedAsset` |  | |  | `panl2` |
-| `CostEstimate` |  | |  | `kalnr` |
-| `InventorySpecialStockValnType` |  | |  | `cast( P_ACDOCA.kzbws as fis_inventoryspclstockvalntype preserving type )` |
-| `IsSupplierStockValuation` |  | |  | `cast( P_ACDOCA.xobew as fis_mlxobew preserving type )` |
-| `InventorySpecialStockType` |  | |  | `cast( P_ACDOCA.sobkz as fis_inventoryspecialstocktype preserving type )` |
-| `InventorySpclStkSalesDocument` |  | |  | `cast( P_ACDOCA.mat_kdauf as fis_mlmat_kdauf preserving type )` |
-| `InventorySpclStkSalesDocItm` |  | |  | `cast( P_ACDOCA.mat_kdpos as fis_mlmat_kdpos preserving type )` |
-| `InvtrySpclStockWBSElmntIntID` |  | |  | `cast( P_ACDOCA.mat_pspnr as fis_invspstock_wbsint_no_conv preserving type )` |
-| `InventorySpclStockWBSElement` |  | |  | `cast( P_ACDOCA.mat_ps_posid as fis_invspstock_wbs_no_conv preserving type )` |
-| `InventorySpecialStockSupplier` |  | |  | `mat_lifnr` |
-| `InventoryValuationType` |  | |  | `cast( P_ACDOCA.bwtar as fis_bwtar_d preserving type )` |
-| `ValuationArea` |  | |  | `bwkey` |
-| `MaterialLedgerProcessType` |  | |  | `cast(P_ACDOCA.mlptyp as fml_process_type preserving type )` |
-| `MaterialLedgerCategory` |  | |  | `cast(P_ACDOCA.mlcateg as fml_category preserving type )` |
-| `SlsPriceAmountInCoCodeCrcy` |  | |  | `} cast(P_ACDOCA.hvkwrt as fis_lcrcy_sp_value preserving type )` |
-| `ProductPriceControl` |  | |  | `cast(P_ACDOCA.vprsv as fml_price_control preserving type )` |
-| `ProcurementAlternative` |  | |  | `cast( P_ACDOCA.qsbvalt as fis_ml_qsbvalt preserving type )` |
-| `ProductionProcess` |  | |  | `cast( P_ACDOCA.qsprocess as fis_ml_qsprocess preserving type )` |
-| `CurPlanProjSlsOrdValnStrategy` |  | |  | `lbwst` |
-| `SenderCompanyCode` |  | |  | `cast( P_ACDOCA.bukrs_sender as fis_bukrs_sender preserving type )` |
-| `SenderGLAccount` |  | |  | `racct_sender` |
-| `SenderAccountAssignment` |  | |  | `cast( P_ACDOCA.accas_sender as fis_accas_sender preserving type )` |
-| `SenderAccountAssignmentType` |  | |  | `cast( P_ACDOCA.accasty_sender as fis_accasty_sender preserving type )` |
-| `ControllingObject` |  | |  | `cast( P_ACDOCA.objnr as fis_objnr preserving type)` |
-| `ControllingKeySubNumber` |  | |  | `hrkft` |
-| `CostOriginGroup` |  | |  | `hkgrp` |
-| `OriginSenderObject` |  | |  | `uspob` |
-| `ControllingDebitCreditCode` |  | |  | `cast( P_ACDOCA.co_belkz as fis_co_belkz preserving type )` |
-| `OriginCtrlgDebitCreditCode` |  | |  | `co_beknz` |
-| `ControllingObjectDebitType` |  | |  | `cast( P_ACDOCA.beltp as fis_bp_inout preserving type )` |
-| `QuantityIsIncomplete` |  | |  | `muvflg` |
-| `SettlementDistributionRuleGrp` |  | |  | `bureg` |
-| `OffsettingAccount` |  | |  | `gkont` |
-| `OffsettingAccountType` |  | |  | `cast( P_ACDOCA.gkoar as fis_gkoar preserving type )` |
-| `OffsettingChartOfAccounts` |  | |  | `case P_ACDOCA.gkoar when 'D' then cast (' ' as fis_offsettingktopl preserving type ) when 'K' then cast (' ' as fis_offsettingktopl preserving type ) else cast( P_ACDOCA.ktopl as fis_offsettingktopl preserving type ) end` |
-| `LineItemIsCompleted` |  | |  | `erlkz` |
-| `PersonnelNumber` |  | |  | `pernr` |
-| `ProfitabilitySegment` |  | |  | `paobjnr` |
-| `ControllingObjectClass` |  | |  | `scope` |
-| `PartnerCompanyCode` |  | |  | `cast( P_ACDOCA.pbukrs as fis_pbukrs preserving type )` |
-| `PartnerControllingObjectClass` |  | |  | `pscope` |
-| `OriginProfitCenter` |  | |  | `uprctr` |
-| `OriginOrder` |  | |  | `aufnr_org` |
-| `OriginCostCtrActivityType` |  | |  | `ulstar` |
-| `OriginCostCenter` |  | |  | `ukostl` |
-| `OriginProduct` |  | |  | `UMATNR` |
-| `VarianceOriginGLAccount` |  | |  | `VARC_UACCT` |
-| `AccountAssignment` |  | |  | `accas` |
-| `AccountAssignmentType` |  | |  | `accasty` |
-| `CostCtrActivityType` |  | |  | `lstar` |
-| `OrderID` |  | |  | `aufnr` |
-| `OrderCategory` |  | |  | `autyp` |
-| `WBSElementInternalID` |  | |  | `cast( P_ACDOCA.ps_psp_pnr as fis_wbsint_no_conv preserving type )` |
-| `WBSElement` |  | |  | `cast( P_ACDOCA.ps_posid as fis_wbs_no_conv preserving type )` |
-| `PartnerWBSElementInternalID` |  | |  | `cast( P_ACDOCA.pps_psp_pnr as fis_partner_wbsint_no_conv preserving type )` |
-| `PartnerWBSElement` |  | |  | `cast( P_ACDOCA.pps_posid as fis_partner_wbs_no_conv preserving type )` |
-| `ProjectInternalID` |  | |  | `cast( P_ACDOCA.ps_prj_pnr as fis_projectint_no_conv preserving type )` |
-| `Project` |  | |  | `cast( P_ACDOCA.ps_pspid as fis_project_no_conv preserving type )` |
-| `PartnerProjectInternalID` |  | |  | `cast( P_ACDOCA.pps_prj_pnr as fis_part_projectint_no_conv preserving type )` |
-| `PartnerProject` |  | |  | `cast( P_ACDOCA.pps_pspid as fis_part_project_no_conv preserving type )` |
-| `OperatingConcern` |  | |  | `erkrs` |
-| `ProjectNetwork` |  | |  | `nplnr` |
-| `RelatedNetworkActivity` |  | |  | `nplnr_vorgn` |
-| `BusinessProcess` |  | |  | `prznr` |
-| `CostObject` |  | |  | `kstrg` |
-| `BillableControl` |  | |  | `bemot` |
-| `CostAnalysisResource` |  | |  | `rsrce` |
-| `CustomerServiceNotification` |  | |  | `cast( P_ACDOCA.qmnum as fis_qmnum preserving type )` |
-| `ServiceDocumentType` |  | |  | `service_doc_type` |
-| `ServiceDocument` |  | |  | `service_doc_id` |
-| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |
-| `PartnerServiceDocumentType` |  | |  | `cast( P_ACDOCA.pservice_doc_type as fis_psrvdoc_type preserving type )` |
-| `PartnerServiceDocument` |  | |  | `cast( P_ACDOCA.pservice_doc_id as fis_psrvdoc_id preserving type )` |
-| `PartnerServiceDocumentItem` |  | |  | `cast( P_ACDOCA.pservice_doc_item_id as fis_psrvdoc_item_id preserving type )` |
-| `ServiceContractType` |  | |  | `service_contract_type` |
-| `ServiceContract` |  | |  | `service_contract_id` |
-| `ServiceContractItem` |  | |  | `service_contract_item_id` |
-| `BusinessSolutionOrder` |  | |  | `solution_order_id` |
-| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` |
-| `ProviderContract` |  | |  | `vtkey` |
-| `ProviderContractItem` |  | |  | `vtpos` |
-| `RevenueAccountingContract` |  | |  | `ra_contract_id` |
-| `PerformanceObligation` |  | |  | `ra_pob_id` |
-| `TimeSheetOvertimeCategory` |  | |  | `overtimecat` |
-| `PartnerAccountAssignment` |  | |  | `paccas` |
-| `PartnerAccountAssignmentType` |  | |  | `paccasty` |
-| `StstclAccountAssignmentType1` |  | |  | `co_accasty_n1` |
-| `StstclAccountAssignmentType2` |  | |  | `co_accasty_n2` |
-| `StstclAccountAssignmentType3` |  | |  | `co_accasty_n3` |
-| `WorkPackage` |  | |  | `cast( P_ACDOCA.ps_posid as /cpd/plan_item_id )` |
-| `WorkItem` |  | |  | `work_item_id` |
-| `PartnerCostCtrActivityType` |  | |  | `plstar` |
-| `PartnerOrder` |  | |  | `paufnr` |
-| `PartnerOrderCategory` |  | |  | `pautyp` |
-| `PartnerSalesDocument` |  | |  | `pkdauf` |
-| `PartnerSalesDocumentItem` |  | |  | `pkdpos` |
-| `PartnerProjectNetwork` |  | |  | `cast( P_ACDOCA.pnplnr as fis_par_npln preserving type )` |
-| `PartnerProjectNetworkActivity` |  | |  | `pnplnr_vorgn` |
-| `PartnerBusinessProcess` |  | |  | `cast( P_ACDOCA.pprznr as fis_par_prznr preserving type )` |
-| `PartnerCostObject` |  | |  | `pkstrg` |
-| `ControllingDocumentItem` |  | |  | `cast( P_ACDOCA.co_buzei as co_buzei_acd preserving type )` |
-| `VarianceOriginGroup` |  | |  | `varc_hkgrp` |
-| `BillingDocumentType` |  | |  | `fkart` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `OrganizationDivision` |  | |  | `spart` |
-| `SoldProduct` |  | |  | `matnr_copa` |
-| `SoldProductGroup` |  | |  | `matkl` |
-| `CustomerGroup` |  | |  | `kdgrp` |
-| `CustomerSupplierCountry` |  | |  | `cast( P_ACDOCA.land1 as fis_land1_gp preserving type )` |
-| `CustomerSupplierIndustry` |  | |  | `cast( P_ACDOCA.brsch as fis_brsch preserving type )` |
-| `SalesDistrict` |  | |  | `bzirk` |
-| `BillToParty` |  | |  | `kunre` |
-| `ShipToParty` |  | |  | `kunwe` |
-| `CustomerSupplierCorporateGroup` |  | |  | `cast( P_ACDOCA.konzs as fis_konzs preserving type )` |
-| `CashLedgerCompanyCode` |  | |  | `re_bukrs` |
-| `CashLedgerAccount` |  | |  | `re_account` |
-| `FinancialManagementArea` |  | |  | `fikrs` |
-| `CommitmentItem` |  | |  | `fipex` |
-| `FundsCenter` |  | |  | `fistl` |
-| `FundedProgram` |  | |  | `measure` |
-| `Fund` |  | |  | `rfund` |
-| `GrantID` |  | |  | `rgrant_nbr` |
-| `BudgetPeriod` |  | |  | `rbudget_pd` |
-| `PartnerFund` |  | |  | `sfund` |
-| `PartnerGrant` |  | |  | `sgrant_nbr` |
-| `PartnerBudgetPeriod` |  | |  | `cast( P_ACDOCA.sbudget_pd as fis_fm_pbudget_period preserving type )` |
-| `PubSecBudgetAccount` |  | |  | `bdgt_account` |
-| `PubSecBudgetAccountCoCode` |  | |  | `bdgt_account_cocode` |
-| `PubSecBudgetCnsmpnDate` |  | |  | `bdgt_cnsmpn_date` |
-| `PubSecBudgetCnsmpnFsclPeriod` |  | |  | `bdgt_cnsmpn_period` |
-| `PubSecBudgetCnsmpnFsclYear` |  | |  | `bdgt_cnsmpn_year` |
-| `PubSecBudgetIsRelevant` |  | |  | `bdgt_relevant` |
-| `PubSecBudgetCnsmpnType` |  | |  | `bdgt_cnsmpn_type` |
-| `PubSecBudgetCnsmpnAmtType` |  | |  | `bdgt_cnsmpn_amount_type` |
-| `SponsoredProgram` |  | |  | `rsponsored_prog` |
-| `SponsoredClass` |  | |  | `rsponsored_class` |
-| `GteeMBudgetValidityNumber` |  | |  | `rbdgt_vldty_nbr` |
-| `EarmarkedFundsDocument` |  | |  | `kblnr` |
-| `EarmarkedFundsDocumentItem` |  | |  | `kblpos` |
-| `FinancialServicesProductGroup` |  | |  | `FS_PRODUCT_GROUP` |
-| `FinancialServicesBranch` |  | |  | `BRANCH_ID` |
-| `FinancialDataSource` |  | |  | `DATASOURCE_ID` |
-| `JointVenture` |  | |  | `vname` |
-| `JointVentureEquityGroup` |  | |  | `cast( P_ACDOCA.egrup as jv_egroup_cds preserving type )` |
-| `JointVentureCostRecoveryCode` |  | |  | `cast( P_ACDOCA.recid as jv_recind_cds preserving type )` |
-| `JointVenturePartner` |  | |  | `cast( P_ACDOCA.vptnr as jv_part_cds preserving type )` |
-| `JointVentureBillingType` |  | |  | `cast( P_ACDOCA.btype as jv_bilind_cds preserving type )` |
-| `JointVentureEquityType` |  | |  | `cast( P_ACDOCA.etype as jv_etype_cds preserving type )` |
-| `JointVentureProductionDate` |  | |  | `cast( P_ACDOCA.prodper as jv_prodper_cds preserving type )` |
-| `JointVentureBillingDate` |  | |  | `cast( P_ACDOCA.billm as jv_billm_cds preserving type )` |
-| `JointVentureOperationalDate` |  | |  | `cast( P_ACDOCA.pom as jv_pom_cds preserving type )` |
-| `CutbackRun` |  | |  | `cast( P_ACDOCA.cbrunid as jv_cbrunid_cds preserving type )` |
-| `JointVentureAccountingActivity` |  | |  | `cast( P_ACDOCA.jvactivity as jv_activity_cds preserving type )` |
-| `PartnerVenture` |  | |  | `cast( P_ACDOCA.pvname as jv_pvname_cds preserving type )` |
-| `PartnerEquityGroup` |  | |  | `cast( P_ACDOCA.pegrup as jv_pegrup_cds preserving type )` |
-| `SenderCostRecoveryCode` |  | |  | `cast( P_ACDOCA.s_recind as jv_srecind_cds preserving type )` |
-| `CutbackAccount` |  | |  | `cast( P_ACDOCA.cbracct as jv_cbracct_cds preserving type )` |
-| `CutbackCostObject` |  | |  | `cast( P_ACDOCA.cbobjnr as jv_cbobjnr_cds preserving type )` |
-| `REBusinessEntity` |  | |  | `SWENR` |
-| `RealEstateBuilding` |  | |  | `SGENR` |
-| `RealEstateProperty` |  | |  | `SGRNR` |
-| `RERentalObject` |  | |  | `SMENR` |
-| `RealEstateContract` |  | |  | `RECNNR` |
-| `REServiceChargeKey` |  | |  | `snksl` |
-| `RESettlementUnitID` |  | |  | `sempsl` |
-| `SettlementReferenceDate` |  | |  | `cast( P_ACDOCA.dabrz as fis_dabrbez preserving type )` |
-| `REPartnerBusinessEntity` |  | |  | `pswenr` |
-| `RealEstatePartnerBuilding` |  | |  | `psgenr` |
-| `RealEstatePartnerProperty` |  | |  | `psgrnr` |
-| `REPartnerRentalObject` |  | |  | `psmenr` |
-| `RealEstatePartnerContract` |  | |  | `precnnr` |
-| `REPartnerServiceChargeKey` |  | |  | `psnksl` |
-| `REPartnerSettlementUnitID` |  | |  | `psempsl` |
-| `PartnerSettlementReferenceDate` |  | |  | `pdabrz` |
-| `AccrualObjectType` |  | |  | `acrobjtype` |
-| `AccrualObjectLogicalSystem` |  | |  | `acrlogsys` |
-| `AccrualObject` |  | |  | `acrobj_id` |
-| `AccrualSubobject` |  | |  | `acrsobj_id` |
-| `AccrualItemType` |  | |  | `acritmtype` |
-| `AccrualReferenceObject` |  | |  | `acrrefobj_id` |
-| `AccrualValueDate` |  | |  | `acrvaldat` |
-| `FinancialValuationObjectType` |  | |  | `cast( P_ACDOCA.valobjtype as fis_val_obj_type preserving type )` |
-| `FinancialValuationObject` |  | |  | `cast( P_ACDOCA.valobj_id as fis_val_obj_id preserving type )` |
-| `FinancialValuationSubobject` |  | |  | `cast( P_ACDOCA.valsobj_id as fis_val_subobj_id preserving type )` |
-| `NetDueDate` |  | |  | `netdt` |
-| `CreditRiskClass` |  | |  | `risk_class` |
-| `WorkCenterInternalID` |  | |  | `arbid` |
-| `OrderOperation` |  | |  | `vornr` |
-| `OrderItem` |  | |  | `aufps` |
-| `PartnerOrderItem` |  | |  | `paufps` |
-| `OrderSuboperation` |  | |  | `uvorn` |
-| `Equipment` |  | |  | `equnr` |
-| `FunctionalLocation` |  | |  | `tplnr` |
-| `Assembly` |  | |  | `istru` |
-| `MaintenanceActivityType` |  | |  | `ilart` |
-| `MaintenanceOrderPlanningCode` |  | |  | `plknz` |
-| `MaintPriorityType` |  | |  | `artpr` |
-| `MaintPriority` |  | |  | `priok` |
-| `SuperiorOrder` |  | |  | `maufnr` |
-| `ProductGroup` |  | |  | `cast( P_ACDOCA.matkl_mm as fis_matkl_mm preserving type )` |
-| `MaintenanceOrderIsPlanned` |  | |  | `planned_parts_work` |
-| `OriginOrderOperation` |  | |  | `vornr_org` |
-| `JrnlEntryItemMigrationSource` |  | |  | `mig_source` |
-| `_JournalEntry` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_LedgerFiscalYearForVariant` | | ✓ | | |
-| `_FiscalPeriodForVariant` | | ✓ | | |
-| `_FiscalYearPeriodForVariant` | | ✓ | | |
-| `_CalendarDate` | | ✓ | | |
-| `_FiscalCalendarDate` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_BalanceTransactionCurrency` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_GlobalCurrency` | | ✓ | | |
-| `_FunctionalCurrency` | | ✓ | | |
-| `_FreeDefinedCurrency1` | | ✓ | | |
-| `_FreeDefinedCurrency2` | | ✓ | | |
-| `_FreeDefinedCurrency3` | | ✓ | | |
-| `_FreeDefinedCurrency4` | | ✓ | | |
-| `_FreeDefinedCurrency5` | | ✓ | | |
-| `_FreeDefinedCurrency6` | | ✓ | | |
-| `_FreeDefinedCurrency7` | | ✓ | | |
-| `_FreeDefinedCurrency8` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_CostSourceUnit` | | ✓ | | |
-| `_AdditionalQuantity1Unit` | | ✓ | | |
-| `_AdditionalQuantity2Unit` | | ✓ | | |
-| `_AdditionalQuantity3Unit` | | ✓ | | |
-| `_ReferenceQuantityUnit` | | ✓ | | |
-| `_IncmpltSummableValnQtyUnt` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_FinancialAccountType` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_CustomerCompany` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompany` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_ProductGroup_2` | | ✓ | | |
-| `_SoldProductGroup` | | ✓ | | |
-| `_SoldProductGroup_2` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_OriginOrder` | | ✓ | | |
-| `_CostAnalysisResource` | | ✓ | | |
-| `_FinancialTransactionType` | | ✓ | | |
-| `_BusinessTransactionCategory` | | ✓ | | |
-| `_BusinessTransactionType` | | ✓ | | |
-| `_ReferenceDocumentType` | | ✓ | | |
-| `_PredecessorReferenceDocType` | | ✓ | | |
-| `_PartnerCostCenter` | | ✓ | | |
-| `_PartnerProfitCenter` | | ✓ | | |
-| `_PartnerBusinessArea` | | ✓ | | |
-| `_PartnerFunctionalArea` | | ✓ | | |
-| `_PartnerCompanyCode` | | ✓ | | |
-| `_PartnerSegment` | | ✓ | | |
-| `_AccountingDocumentCategory` | | ✓ | | |
-| `_PostingKey` | | ✓ | | |
-| `_SubLedgerAccLineItemType` | | ✓ | | |
-| `_EliminationProfitCenter` | | ✓ | | |
-| `_GLAccountType` | | ✓ | | |
-| `_OffsettingAccountType` | | ✓ | | |
-| `_AlternativeGLAccount` | | ✓ | | |
-| `_OffsettingAccount` | | ✓ | | |
-| `_OffsettingChartOfAccounts` | | ✓ | | |
-| `_CountryChartOfAccounts` | | ✓ | | |
-| `_SpecialGLCode` | | ✓ | | |
-| `_TaxCode` | | ✓ | | |
-| `_TaxCountry` | | ✓ | | |
-| `_ClearingAccountingDocument` | | ✓ | | |
-| `_ClearingJrnlEntryFiscalYear` | | ✓ | | |
-| `_ClearingJournalEntry` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_GroupMasterFixedAsset` | | ✓ | | |
-| `_PartnerMasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_GroupFixedAsset` | | ✓ | | |
-| `_PartnerFixedAsset` | | ✓ | | |
-| `_BusinessProcess` | | ✓ | | |
-| `_PartnerCostCtrActivityType` | | ✓ | | |
-| `_PartnerOrder` | | ✓ | | |
-| `_PartnerOrderCategory` | | ✓ | | |
-| `_PartnerSalesDocument` | | ✓ | | |
-| `_PartnerSalesDocumentItem` | | ✓ | | |
-| `_PartnerBusinessProcess` | | ✓ | | |
-| `_BillingDocumentType` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_SoldProduct` | | ✓ | | |
-| `_OriginProduct` | | ✓ | | |
-| `_InventorySpecialStockValnType` | | ✓ | | |
-| `_InventorySpclStockValnType` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_InventorySpclStkSalesDocument` | | ✓ | | |
-| `_InventorySpclStkSalesDocItm` | | ✓ | | |
-| `_InvtrySpclStockWBSElmntBasic` | | ✓ | | |
-| `_InvtrySpclStkWBSElmntBscData` | | ✓ | | |
-| `_InventorySpecialStockSupplier` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
-| `_ControllingDebitCreditCode` | | ✓ | | |
-| `_OriginCtrlgDebitCreditCode` | | ✓ | | |
-| `_OriginSenderObject` | | ✓ | | |
-| `_ControllingObjectClass` | | ✓ | | |
-| `_PartnerCompany` | | ✓ | | |
-| `_PartnerControllingObjectClass` | | ✓ | | |
-| `_OriginCostCenter` | | ✓ | | |
-| `_OriginProfitCenter` | | ✓ | | |
-| `_CostCtrActivityType` | | ✓ | | |
-| `_OriginCostCtrActivityType` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
-| `_MovementCategory` | | ✓ | | |
-| `_AssetTransactionType` | | ✓ | | |
-| `_CostOriginGroup` | | ✓ | | |
-| `_CustomerSupplierCountry` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_OperatingConcern` | | ✓ | | |
-| `_ValuationArea` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_BillableControl` | | ✓ | | |
-| `_ConditionContract` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintenanceOrderOperation` | | ✓ | | |
-| `_MaintenanceOrderSubOperation` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_Assembly` | | ✓ | | |
-| `_MaintenanceActivityType` | | ✓ | | |
-| `_WorkPackage` | | ✓ | | |
-| `_WorkPackageWorkItem` | | ✓ | | |
-| `_TimeSheetOvertimeCat` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceDocument` | | ✓ | | |
-| `_ServiceDocumentItem` | | ✓ | | |
-| `_ServiceContractType` | | ✓ | | |
-| `_ServiceContract` | | ✓ | | |
-| `_ServiceContractItem` | | ✓ | | |
-| `_PartnerServiceDocumentType` | | ✓ | | |
-| `_PartnerServiceDocument` | | ✓ | | |
-| `_PartnerServiceDocumentItem` | | ✓ | | |
-| `_ProjectBasicData` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_PartnerProjectBasicData` | | ✓ | | |
-| `_PartnerWBSElementBasicData` | | ✓ | | |
-| `_AccrualObjectType` | | ✓ | | |
-| `_AccrualObject` | | ✓ | | |
-| `_AccrualSubobject` | | ✓ | | |
-| `_AccrualItemType` | | ✓ | | |
-| `_CreditRiskClass` | | ✓ | | |
-| `_FinValuationObjectType` | | ✓ | | |
-| `_SemTagGLAccount` | | ✓ | | |
-| `_CashLedgerCompanyCode` | | ✓ | | |
-| `_CashLedgerAccount` | | ✓ | | |
-| `_FinancialManagementArea` | | ✓ | | |
-| `_FundsCenter` | | ✓ | | |
-| `_FundedProgram` | | ✓ | | |
-| `_Fund` | | ✓ | | |
-| `_Grant` | | ✓ | | |
-| `_BudgetPeriod` | | ✓ | | |
-| `_PartnerFund` | | ✓ | | |
-| `_PartnerGrant` | | ✓ | | |
-| `_PartnerBudgetPeriod` | | ✓ | | |
-| `_PubSecBudgetAccountCoCode` | | ✓ | | |
-| `_PubSecBudgetAccount` | | ✓ | | |
-| `_SponsoredProgram` | | ✓ | | |
-| `_SponsoredClass` | | ✓ | | |
-| `_PubSecBudgetCnsmpnDate` | | ✓ | | |
-| `_PubSecBudgetCnsmpnFsclPeriod` | | ✓ | | |
-| `_PubSecBudgetCnsmpnFsclYear` | | ✓ | | |
-| `_PubSecBudgetCnsmpnType` | | ✓ | | |
-| `_PubSecBudgetCnsmpnAmtType` | | ✓ | | |
-| `_ConsolidationUnit` | | ✓ | | |
-| `_PartnerConsolidationUnit` | | ✓ | | |
-| `_Company` | | ✓ | | |
-| `_ConsolidationChartOfAccounts` | | ✓ | | |
-| `_CnsldtnFinancialStatementItem` | | ✓ | | |
-| `_CnsldtnSubitemCategory` | | ✓ | | |
-| `_CnsldtnSubitem` | | ✓ | | |
-| `_ProviderContract` | | ✓ | | |
-| `_ProviderContractItem` | | ✓ | | |
-| `_AccountAssignmentType` | | ✓ | | |
-| `_JrnlEntryItemObsoleteRsn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SourceLedger` | ✓ | |  | `rldnr` |  |  |
+| `CompanyCode` | ✓ | |  | `rbukrs` |  |  |
+| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
+| `AccountingDocument` | ✓ | |  | `belnr` |  |  |
+| `LedgerGLLineItem` | ✓ | |  | `docln` |  |  |
+| `LedgerFiscalYear` |  | |  | `ryear` |  |  |
+| `GLRecordType` |  | |  | `rrcty` |  |  |
+| `JrnlEntrAltvFYConsecutiveID` |  | |  | `DOCNR_LD` |  |  |
+| `ChartOfAccounts` |  | |  | `ktopl` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `FinancialTransactionType` |  | |  | `rmvct` |  |  |
+| `GLBusinessTransactionType` |  | |  | `vorgn` |  |  |
+| `BusinessTransactionCategory` |  | |  | `bttype` |  |  |
+| `BusinessTransactionType` |  | |  | `cbttype` |  |  |
+| `FinancialClosingStep` |  | |  | `closingstep` |  |  |
+| `ControllingBusTransacType` |  | |  | `vrgng` |  |  |
+| `ReferenceDocumentType` |  | |  | `awtyp` |  |  |
+| `LogicalSystem` |  | |  | `awsys` |  |  |
+| `ReferenceDocumentContext` |  | |  | `aworg` |  |  |
+| `ReferenceDocument` |  | |  | `awref` |  |  |
+| `ReferenceDocumentItem` |  | |  | `cast( P_ACDOCA.awitem as fis_awitem preserving type )` |  |  |
+| `ReferenceDocumentItemGroup` |  | |  | `cast( P_ACDOCA.awitgrp as fis_awitgrp preserving type )` |  |  |
+| `TransactionSubitem` |  | |  | `subta` |  |  |
+| `AccountingNotificationUUID` |  | |  | `ACCTG_NOTIF_UUID` |  |  |
+| `OffsettingLedgerGLLineItem` |  | |  | `offstg_docln` |  |  |
+| `IsReversal` |  | |  | `xreversing` |  |  |
+| `IsReversed` |  | |  | `xreversed` |  |  |
+| `ReversalReferenceDocumentType` |  | |  | `awtyp_rev` |  |  |
+| `ReversalReferenceDocumentCntxt` |  | |  | `cast( P_ACDOCA.aworg_rev as fis_aworg_rev preserving type )` |  |  |
+| `ReversalReferenceDocument` |  | |  | `cast( P_ACDOCA.awref_rev as fis_awref_rev preserving type )` |  |  |
+| `ReversalTransactionSubitem` |  | |  | `subta_rev` |  |  |
+| `IsSettlement` |  | |  | `xsettling` |  |  |
+| `IsSettled` |  | |  | `xsettled` |  |  |
+| `PredecessorReferenceDocType` |  | |  | `cast( P_ACDOCA.prec_awtyp as fis_prec_awtyp preserving type )` |  |  |
+| `PredecessorReferenceDocCntxt` |  | |  | `cast( P_ACDOCA.prec_aworg as fis_prec_aworg preserving type )` |  |  |
+| `PredecessorReferenceDocument` |  | |  | `cast( P_ACDOCA.prec_awref as fis_prec_awref preserving type )` |  |  |
+| `PredecessorReferenceDocItem` |  | |  | `cast( P_ACDOCA.prec_awitem as fis_prec_awitem preserving type )` |  |  |
+| `PrdcssrJournalEntryCompanyCode` |  | |  | `cast( P_ACDOCA.prec_bukrs as fins_prec_bukrs_gfc preserving type )` |  |  |
+| `PrdcssrJournalEntryFiscalYear` |  | |  | `prec_gjahr` |  |  |
+| `PredecessorJournalEntry` |  | |  | `cast( P_ACDOCA.prec_belnr as fins_prec_belnr_gfc preserving type )` |  |  |
+| `PredecessorJournalEntryItem` |  | |  | `cast( P_ACDOCA.prec_docln as fins_prec_docln_gfc preserving type )` |  |  |
+| `SourceReferenceDocumentType` |  | |  | `cast( P_ACDOCA.src_awtyp as fis_src_awtyp preserving type )` |  |  |
+| `SourceLogicalSystem` |  | |  | `cast( P_ACDOCA.src_awsys as fis_src_awsys preserving type )` |  |  |
+| `SourceReferenceDocumentCntxt` |  | |  | `cast( P_ACDOCA.src_aworg as fis_src_aworg preserving type )` |  |  |
+| `SourceReferenceDocument` |  | |  | `cast( P_ACDOCA.src_awref as fis_src_awref preserving type )` |  |  |
+| `SourceReferenceDocumentItem` |  | |  | `cast( P_ACDOCA.src_awitem as fis_src_awitem preserving type )` |  |  |
+| `SourceReferenceDocSubitem` |  | |  | `cast( P_ACDOCA.src_awsubit as fis_src_awsubit preserving type )` |  |  |
+| `IsCommitment` |  | |  | `cast( P_ACDOCA.xcommitment as fis_xcommitment preserving type )` |  |  |
+| `JrnlEntryItemObsoleteReason` |  | |  | `obs_reason` |  |  |
+| `JournalEntryIsSecondaryEntry` |  | |  | `XSECONDARY` |  |  |
+| `JrnlPeriodEndClosingRunLogUUID` |  | |  | `closing_run_id` |  |  |
+| `OrganizationalChange` |  | |  | `orgl_change` |  |  |
+| `GLAccount` |  | |  | `racct` |  |  |
+| `CostCenter` |  | |  | `rcntr` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `FunctionalArea` |  | |  | `rfarea` |  |  |
+| `BusinessArea` |  | |  | `rbusa` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `PartnerCostCenter` |  | |  | `scntr` |  |  |
+| `PartnerProfitCenter` |  | |  | `pprctr` |  |  |
+| `PartnerFunctionalArea` |  | |  | `sfarea` |  |  |
+| `PartnerBusinessArea` |  | |  | `sbusa` |  |  |
+| `PartnerCompany` |  | |  | `rassc` |  |  |
+| `PartnerSegment` |  | |  | `psegment` |  |  |
+| `BalanceTransactionCurrency` |  | |  | `rtcur` |  |  |
+| `AmountInBalanceTransacCrcy` |  | |  | `tsl` |  |  |
+| `TransactionCurrency` |  | |  | `rwcur` |  |  |
+| `AmountInTransactionCurrency` |  | |  | `wsl` |  |  |
+| `CompanyCodeCurrency` |  | |  | `rhcur` |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `hsl` |  |  |
+| `GlobalCurrency` |  | |  | `rkcur` |  |  |
+| `AmountInGlobalCurrency` |  | |  | `ksl` |  |  |
+| `FunctionalCurrency` |  | |  | `rfccur` |  |  |
+| `AmountInFunctionalCurrency` |  | |  | `fcsl` |  |  |
+| `FreeDefinedCurrency1` |  | |  | `rocur` |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  | `osl` |  |  |
+| `FreeDefinedCurrency2` |  | |  | `rvcur` |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  | `vsl` |  |  |
+| `FreeDefinedCurrency3` |  | |  | `cast( P_ACDOCA.rbcur as fis_curr3 preserving type )` |  |  |
+| `AmountInFreeDefinedCurrency3` |  | |  | `bsl` |  |  |
+| `FreeDefinedCurrency4` |  | |  | `cast( P_ACDOCA.rccur as fis_curr4 preserving type )` |  |  |
+| `AmountInFreeDefinedCurrency4` |  | |  | `csl` |  |  |
+| `FreeDefinedCurrency5` |  | |  | `cast( P_ACDOCA.rdcur as fis_curr5 preserving type )` |  |  |
+| `AmountInFreeDefinedCurrency5` |  | |  | `dsl` |  |  |
+| `FreeDefinedCurrency6` |  | |  | `cast( P_ACDOCA.recur as fis_curr6 preserving type )` |  |  |
+| `AmountInFreeDefinedCurrency6` |  | |  | `esl` |  |  |
+| `FreeDefinedCurrency7` |  | |  | `rfcur` |  |  |
+| `AmountInFreeDefinedCurrency7` |  | |  | `fsl` |  |  |
+| `FreeDefinedCurrency8` |  | |  | `cast( P_ACDOCA.rgcur as fis_curr8 preserving type )` |  |  |
+| `AmountInFreeDefinedCurrency8` |  | |  | `gsl` |  |  |
+| `FixedAmountInGlobalCrcy` |  | |  | `kfsl` |  |  |
+| `GrpValnFixedAmtInGlobCrcy` |  | |  | `cast( P_ACDOCA.kfsl2 as fis_vgcur12_fix2 preserving type )` |  |  |
+| `PrftCtrValnFxdAmtInGlobCrcy` |  | |  | `cast( P_ACDOCA.kfsl3 as fis_vgcur12_fix3 preserving type )` |  |  |
+| `FixedAmountInCoCodeCrcy` |  | |  | `hfsl` |  |  |
+| `FixedAmountInTransCrcy` |  | |  | `wfsl` |  |  |
+| `TotalPriceVarcInGlobalCrcy` |  | |  | `psl` |  |  |
+| `GrpValnTotPrcVarcInGlobCrcy` |  | |  | `cast( P_ACDOCA.psl2 as fis_vpcur12_2 preserving type )` |  |  |
+| `PrftCtrValnTotPrcVarcInGlbCrcy` |  | |  | `cast( P_ACDOCA.psl3 as fis_vpcur12_3 preserving type )` |  |  |
+| `FixedPriceVarcInGlobalCrcy` |  | |  | `pfsl` |  |  |
+| `GrpValnFixedPrcVarcInGlobCrcy` |  | |  | `cast( P_ACDOCA.pfsl2 as fis_vpfcur12_2 preserving type )` |  |  |
+| `PrftCtrValnFxdPrcVarcInGlbCrcy` |  | |  | `cast( P_ACDOCA.pfsl3 as fis_vpfcur12_3 preserving type )` |  |  |
+| `ControllingObjectCurrency` |  | |  | `rco_ocur` |  |  |
+| `AmountInObjectCurrency` |  | |  | `cast( P_ACDOCA.co_osl as fis_vco_ocur12 preserving type )` |  |  |
+| `GrantCurrency` |  | |  | `rgm_ocur` |  |  |
+| `AmountInGrantCurrency` |  | |  | `gm_osl` |  |  |
+| `BaseUnit` |  | |  | `runit` |  |  |
+| `Quantity` |  | |  | `msl` |  |  |
+| `FixedQuantity` |  | |  | `cast( P_ACDOCA.mfsl as fis_quan1_12_fix preserving type )` |  |  |
+| `CostSourceUnit` |  | |  | `rvunit` |  |  |
+| `ValuationQuantity` |  | |  | `cast( P_ACDOCA.vmsl as fis_vquan1_12 preserving type )` |  |  |
+| `ValuationFixedQuantity` |  | |  | `cast( P_ACDOCA.vmfsl as fis_vquan1_12_fix preserving type )` |  |  |
+| `ReferenceQuantityUnit` |  | |  | `rrunit` |  |  |
+| `ReferenceQuantity` |  | |  | `rmsl` |  |  |
+| `AdditionalQuantity1Unit` |  | |  | `cast( P_ACDOCA.qunit1 as fis_qunit1 preserving type )` |  |  |
+| `AdditionalQuantity1` |  | |  | `cast( P_ACDOCA.quant1 as fis_quan1_l preserving type )` |  |  |
+| `AdditionalQuantity2Unit` |  | |  | `cast( P_ACDOCA.qunit2 as fis_qunit2 preserving type )` |  |  |
+| `AdditionalQuantity2` |  | |  | `cast( P_ACDOCA.quant2 as fis_quan2_l preserving type )` |  |  |
+| `AdditionalQuantity3Unit` |  | |  | `cast( P_ACDOCA.qunit3 as fis_qunit3 preserving type )` |  |  |
+| `AdditionalQuantity3` |  | |  | `cast( P_ACDOCA.quant3 as fis_quan3_l preserving type )` |  |  |
+| `IncmpltSummableValnQtyUnt` |  | |  | `CO_MEINH` |  |  |
+| `IncmpltSummableValnQty` |  | |  | `CO_MEGBTR` |  |  |
+| `IncmpltSummableValnFxdQty` |  | |  | `CO_MEFBTR` |  |  |
+| `DebitCreditCode` |  | |  | `drcrk` |  |  |
+| `FiscalPeriod` |  | |  | `poper` |  |  |
+| `FiscalYearVariant` |  | |  | `periv` |  |  |
+| `FiscalYearPeriod` |  | |  | `fiscyearper` |  |  |
+| `PostingDate` |  | |  | `budat` |  |  |
+| `DocumentDate` |  | |  | `bldat` |  |  |
+| `AccountingDocumentType` |  | |  | `blart` |  |  |
+| `AccountingDocumentItem` |  | |  | `buzei` |  |  |
+| `AssignmentReference` |  | |  | `zuonr` |  |  |
+| `AccountingDocumentCategory` |  | |  | `bstat` |  |  |
+| `JournalEntryItemCategory` |  | |  | `linetype` |  |  |
+| `PostingKey` |  | |  | `bschl` |  |  |
+| `TransactionTypeDetermination` |  | |  | `ktosl` |  |  |
+| `SubLedgerAcctLineItemType` |  | |  | `slalittype` |  |  |
+| `AccountingDocCreatedByUser` |  | |  | `usnam` |  |  |
+| `LastChangeDateTime` |  | |  | `cast( (case when P_ACDOCA.last_change_datetime <> 0 then P_ACDOCA.last_change_datetime when P_ACDOCA.last_change_datetime = 0 then P_ACDOCA.timestamp end) as fis_lastchange_datetime preserving type )` |  |  |
+| `CreationDateTime` |  | |  | `cast( P_ACDOCA.timestamp as fis_creation_datetime preserving type )` |  |  |
+| `CreationDate` |  | |  | `cast(substring( cast(P_ACDOCA.timestamp as abap.char(30)) , 1 , 8) as fis_cpdat)` |  |  |
+| `EliminationProfitCenter` |  | |  | `cast( P_ACDOCA.eprctr as fis_eprctr preserving type )` |  |  |
+| `OriginObjectType` |  | |  | `rhoart` |  |  |
+| `GLAccountType` |  | |  | `glaccount_type` |  |  |
+| `AlternativeGLAccount` |  | |  | `cast(P_ACDOCA.lokkt as fis_alternativeglaccount preserving type )` |  |  |
+| `CountryChartOfAccounts` |  | |  | `ktop2` |  |  |
+| `ItemIsSplit` |  | |  | `cast( P_ACDOCA.xsplitmod as xsplitmod_acd preserving type )` |  |  |
+| `ConsolidationUnit` |  | |  | `rbunit` |  |  |
+| `PartnerConsolidationUnit` |  | |  | `rbuptr` |  |  |
+| `Company` |  | |  | `rcomp` |  |  |
+| `ConsolidationChartOfAccounts` |  | |  | `ritclg` |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  | `ritem` |  |  |
+| `CnsldtnSubitemCategory` |  | |  | `sityp` |  |  |
+| `CnsldtnSubitem` |  | |  | `subit` |  |  |
+| `InvoiceReference` |  | |  | `rebzg` |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  | `rebzj` |  |  |
+| `FollowOnDocumentType` |  | |  | `cast( P_ACDOCA.rebzt as fis_rebzt preserving type )` |  |  |
+| `InvoiceItemReference` |  | |  | `rebzz` |  |  |
+| `ReferencePurchaseOrderCategory` |  | |  | `rbest` |  |  |
+| `PurchasingDocument` |  | |  | `ebeln` |  |  |
+| `PurchasingDocumentItem` |  | |  | `ebelp` |  |  |
+| `AccountAssignmentNumber` |  | |  | `cast( P_ACDOCA.zekkn as fis_dzekkn preserving type )` |  |  |
+| `DocumentItemText` |  | |  | `sgtxt` |  |  |
+| `SalesDocument` |  | |  | `cast(P_ACDOCA.kdauf as vbeln_va preserving type)` |  |  |
+| `SalesDocumentItem` |  | |  | `cast(P_ACDOCA.kdpos as posnr_va preserving type)` |  |  |
+| `Product` |  | |  | `cast (P_ACDOCA.matnr as productnumber)` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `Supplier` |  | |  | `lifnr` |  |  |
+| `Customer` |  | |  | `kunnr` |  |  |
+| `ServicesRenderedDate` |  | |  | `fbuda` |  |  |
+| `PerformancePeriodStartDate` |  | |  | `perop_beg` |  |  |
+| `PerformancePeriodEndDate` |  | |  | `perop_end` |  |  |
+| `ConditionContract` |  | |  | `coco_num` |  |  |
+| `ExchangeRateDate` |  | |  | `wwert` |  |  |
+| `ComponentBreakdown` |  | |  | `cast( P_ACDOCA.ucb_id as fis_fucb_id preserving type )` |  |  |
+| `CompBreakdownScaleNumerator` |  | |  | `cast( P_ACDOCA.ucb_scale_numerator as fin_fucb_scale_numerator preserving type )` |  |  |
+| `FinancialAccountType` |  | |  | `koart` |  |  |
+| `SpecialGLCode` |  | |  | `umskz` |  |  |
+| `TaxCode` |  | |  | `mwskz` |  |  |
+| `TaxCountry` |  | |  | `tax_country` |  |  |
+| `HouseBank` |  | |  | `hbkid` |  |  |
+| `HouseBankAccount` |  | |  | `hktid` |  |  |
+| `IsOpenItemManaged` |  | |  | `xopvw` |  |  |
+| `ClearingDate` |  | |  | `augdt` |  |  |
+| `ClearingDocFiscalYear` |  | |  | `cast( P_ACDOCA.auggj as fis_auggj_no_conv_depre preserving type )` |  |  |
+| `ClearingAccountingDocument` |  | |  | `cast( P_ACDOCA.augbl as fis_augbl_depre preserving type )` |  |  |
+| `ClearingJournalEntryFiscalYear` |  | |  | `auggj` |  |  |
+| `ClearingJournalEntry` |  | |  | `augbl` |  |  |
+| `ValueDate` |  | |  | `valut` |  |  |
+| `GeneralLedgerAgingScope` |  | |  | `AGING` |  |  |
+| `GeneralLedgerAgingIncrement` |  | |  | `AGING_INCRMNT` |  |  |
+| `AssetDepreciationArea` |  | |  | `afabe` |  |  |
+| `MasterFixedAsset` |  | |  | `anln1` |  |  |
+| `FixedAsset` |  | |  | `anln2` |  |  |
+| `AssetValueDate` |  | |  | `bzdat` |  |  |
+| `AssetTransactionType` |  | |  | `anbwa` |  |  |
+| `AssetAcctTransClassfctn` |  | |  | `movcat` |  |  |
+| `DepreciationFiscalPeriod` |  | |  | `depr_period` |  |  |
+| `GroupMasterFixedAsset` |  | |  | `anlgr` |  |  |
+| `GroupFixedAsset` |  | |  | `anlgr2` |  |  |
+| `AssetClass` |  | |  | `anlkl` |  |  |
+| `PartnerMasterFixedAsset` |  | |  | `panl1` |  |  |
+| `PartnerFixedAsset` |  | |  | `panl2` |  |  |
+| `CostEstimate` |  | |  | `kalnr` |  |  |
+| `InventorySpecialStockValnType` |  | |  | `cast( P_ACDOCA.kzbws as fis_inventoryspclstockvalntype preserving type )` |  |  |
+| `IsSupplierStockValuation` |  | |  | `cast( P_ACDOCA.xobew as fis_mlxobew preserving type )` |  |  |
+| `InventorySpecialStockType` |  | |  | `cast( P_ACDOCA.sobkz as fis_inventoryspecialstocktype preserving type )` |  |  |
+| `InventorySpclStkSalesDocument` |  | |  | `cast( P_ACDOCA.mat_kdauf as fis_mlmat_kdauf preserving type )` |  |  |
+| `InventorySpclStkSalesDocItm` |  | |  | `cast( P_ACDOCA.mat_kdpos as fis_mlmat_kdpos preserving type )` |  |  |
+| `InvtrySpclStockWBSElmntIntID` |  | |  | `cast( P_ACDOCA.mat_pspnr as fis_invspstock_wbsint_no_conv preserving type )` |  |  |
+| `InventorySpclStockWBSElement` |  | |  | `cast( P_ACDOCA.mat_ps_posid as fis_invspstock_wbs_no_conv preserving type )` |  |  |
+| `InventorySpecialStockSupplier` |  | |  | `mat_lifnr` |  |  |
+| `InventoryValuationType` |  | |  | `cast( P_ACDOCA.bwtar as fis_bwtar_d preserving type )` |  |  |
+| `ValuationArea` |  | |  | `bwkey` |  |  |
+| `MaterialLedgerProcessType` |  | |  | `cast(P_ACDOCA.mlptyp as fml_process_type preserving type )` |  |  |
+| `MaterialLedgerCategory` |  | |  | `cast(P_ACDOCA.mlcateg as fml_category preserving type )` |  |  |
+| `SlsPriceAmountInCoCodeCrcy` |  | |  | `cast(P_ACDOCA.hvkwrt as fis_lcrcy_sp_value preserving type )` |  |  |
+| `ProductPriceControl` |  | |  | `cast(P_ACDOCA.vprsv as fml_price_control preserving type )` |  |  |
+| `ProcurementAlternative` |  | |  | `cast( P_ACDOCA.qsbvalt as fis_ml_qsbvalt preserving type )` |  |  |
+| `ProductionProcess` |  | |  | `cast( P_ACDOCA.qsprocess as fis_ml_qsprocess preserving type )` |  |  |
+| `CurPlanProjSlsOrdValnStrategy` |  | |  | `lbwst` |  |  |
+| `SenderCompanyCode` |  | |  | `cast( P_ACDOCA.bukrs_sender as fis_bukrs_sender preserving type )` |  |  |
+| `SenderGLAccount` |  | |  | `racct_sender` |  |  |
+| `SenderAccountAssignment` |  | |  | `cast( P_ACDOCA.accas_sender as fis_accas_sender preserving type )` |  |  |
+| `SenderAccountAssignmentType` |  | |  | `cast( P_ACDOCA.accasty_sender as fis_accasty_sender preserving type )` |  |  |
+| `ControllingObject` |  | |  | `cast( P_ACDOCA.objnr as fis_objnr preserving type)` |  |  |
+| `ControllingKeySubNumber` |  | |  | `hrkft` |  |  |
+| `CostOriginGroup` |  | |  | `hkgrp` |  |  |
+| `OriginSenderObject` |  | |  | `uspob` |  |  |
+| `ControllingDebitCreditCode` |  | |  | `cast( P_ACDOCA.co_belkz as fis_co_belkz preserving type )` |  |  |
+| `OriginCtrlgDebitCreditCode` |  | |  | `co_beknz` |  |  |
+| `ControllingObjectDebitType` |  | |  | `cast( P_ACDOCA.beltp as fis_bp_inout preserving type )` |  |  |
+| `QuantityIsIncomplete` |  | |  | `muvflg` |  |  |
+| `SettlementDistributionRuleGrp` |  | |  | `bureg` |  |  |
+| `OffsettingAccount` |  | |  | `gkont` |  |  |
+| `OffsettingAccountType` |  | |  | `cast( P_ACDOCA.gkoar as fis_gkoar preserving type )` |  |  |
+| `OffsettingChartOfAccounts` |  | |  | `case P_ACDOCA.gkoar when 'D' then cast (' ' as fis_offsettingktopl preserving type ) when 'K' then cast (' ' as fis_offsettingktopl preserving type ) else cast( P_ACDOCA.ktopl as fis_offsettingktopl preserving type ) end` |  |  |
+| `LineItemIsCompleted` |  | |  | `erlkz` |  |  |
+| `PersonnelNumber` |  | |  | `pernr` |  |  |
+| `ProfitabilitySegment` |  | |  | `paobjnr` |  |  |
+| `ControllingObjectClass` |  | |  | `scope` |  |  |
+| `PartnerCompanyCode` |  | |  | `cast( P_ACDOCA.pbukrs as fis_pbukrs preserving type )` |  |  |
+| `PartnerControllingObjectClass` |  | |  | `pscope` |  |  |
+| `OriginProfitCenter` |  | |  | `uprctr` |  |  |
+| `OriginOrder` |  | |  | `aufnr_org` |  |  |
+| `OriginCostCtrActivityType` |  | |  | `ulstar` |  |  |
+| `OriginCostCenter` |  | |  | `ukostl` |  |  |
+| `OriginProduct` |  | |  | `UMATNR` |  |  |
+| `VarianceOriginGLAccount` |  | |  | `VARC_UACCT` |  |  |
+| `AccountAssignment` |  | |  | `accas` |  |  |
+| `AccountAssignmentType` |  | |  | `accasty` |  |  |
+| `CostCtrActivityType` |  | |  | `lstar` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `OrderCategory` |  | |  | `autyp` |  |  |
+| `WBSElementInternalID` |  | |  | `cast( P_ACDOCA.ps_psp_pnr as fis_wbsint_no_conv preserving type )` |  |  |
+| `WBSElement` |  | |  | `cast( P_ACDOCA.ps_posid as fis_wbs_no_conv preserving type )` |  |  |
+| `PartnerWBSElementInternalID` |  | |  | `cast( P_ACDOCA.pps_psp_pnr as fis_partner_wbsint_no_conv preserving type )` |  |  |
+| `PartnerWBSElement` |  | |  | `cast( P_ACDOCA.pps_posid as fis_partner_wbs_no_conv preserving type )` |  |  |
+| `ProjectInternalID` |  | |  | `cast( P_ACDOCA.ps_prj_pnr as fis_projectint_no_conv preserving type )` |  |  |
+| `Project` |  | |  | `cast( P_ACDOCA.ps_pspid as fis_project_no_conv preserving type )` |  |  |
+| `PartnerProjectInternalID` |  | |  | `cast( P_ACDOCA.pps_prj_pnr as fis_part_projectint_no_conv preserving type )` |  |  |
+| `PartnerProject` |  | |  | `cast( P_ACDOCA.pps_pspid as fis_part_project_no_conv preserving type )` |  |  |
+| `OperatingConcern` |  | |  | `erkrs` |  |  |
+| `ProjectNetwork` |  | |  | `nplnr` |  |  |
+| `RelatedNetworkActivity` |  | |  | `nplnr_vorgn` |  |  |
+| `BusinessProcess` |  | |  | `prznr` |  |  |
+| `CostObject` |  | |  | `kstrg` |  |  |
+| `BillableControl` |  | |  | `bemot` |  |  |
+| `CostAnalysisResource` |  | |  | `rsrce` |  |  |
+| `CustomerServiceNotification` |  | |  | `cast( P_ACDOCA.qmnum as fis_qmnum preserving type )` |  |  |
+| `ServiceDocumentType` |  | |  | `service_doc_type` |  |  |
+| `ServiceDocument` |  | |  | `service_doc_id` |  |  |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |  |  |
+| `PartnerServiceDocumentType` |  | |  | `cast( P_ACDOCA.pservice_doc_type as fis_psrvdoc_type preserving type )` |  |  |
+| `PartnerServiceDocument` |  | |  | `cast( P_ACDOCA.pservice_doc_id as fis_psrvdoc_id preserving type )` |  |  |
+| `PartnerServiceDocumentItem` |  | |  | `cast( P_ACDOCA.pservice_doc_item_id as fis_psrvdoc_item_id preserving type )` |  |  |
+| `ServiceContractType` |  | |  | `service_contract_type` |  |  |
+| `ServiceContract` |  | |  | `service_contract_id` |  |  |
+| `ServiceContractItem` |  | |  | `service_contract_item_id` |  |  |
+| `BusinessSolutionOrder` |  | |  | `solution_order_id` |  |  |
+| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` |  |  |
+| `ProviderContract` |  | |  | `vtkey` |  |  |
+| `ProviderContractItem` |  | |  | `vtpos` |  |  |
+| `RevenueAccountingContract` |  | |  | `ra_contract_id` |  |  |
+| `PerformanceObligation` |  | |  | `ra_pob_id` |  |  |
+| `TimeSheetOvertimeCategory` |  | |  | `overtimecat` |  |  |
+| `PartnerAccountAssignment` |  | |  | `paccas` |  |  |
+| `PartnerAccountAssignmentType` |  | |  | `paccasty` |  |  |
+| `StstclAccountAssignmentType1` |  | |  | `co_accasty_n1` |  |  |
+| `StstclAccountAssignmentType2` |  | |  | `co_accasty_n2` |  |  |
+| `StstclAccountAssignmentType3` |  | |  | `co_accasty_n3` |  |  |
+| `WorkPackage` |  | |  | `cast( P_ACDOCA.ps_posid as /cpd/plan_item_id )` |  |  |
+| `WorkItem` |  | |  | `work_item_id` |  |  |
+| `PartnerCostCtrActivityType` |  | |  | `plstar` |  |  |
+| `PartnerOrder` |  | |  | `paufnr` |  |  |
+| `PartnerOrderCategory` |  | |  | `pautyp` |  |  |
+| `PartnerSalesDocument` |  | |  | `pkdauf` |  |  |
+| `PartnerSalesDocumentItem` |  | |  | `pkdpos` |  |  |
+| `PartnerProjectNetwork` |  | |  | `cast( P_ACDOCA.pnplnr as fis_par_npln preserving type )` |  |  |
+| `PartnerProjectNetworkActivity` |  | |  | `pnplnr_vorgn` |  |  |
+| `PartnerBusinessProcess` |  | |  | `cast( P_ACDOCA.pprznr as fis_par_prznr preserving type )` |  |  |
+| `PartnerCostObject` |  | |  | `pkstrg` |  |  |
+| `ControllingDocumentItem` |  | |  | `cast( P_ACDOCA.co_buzei as co_buzei_acd preserving type )` |  |  |
+| `VarianceOriginGroup` |  | |  | `varc_hkgrp` |  |  |
+| `BillingDocumentType` |  | |  | `fkart` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `OrganizationDivision` |  | |  | `spart` |  |  |
+| `SoldProduct` |  | |  | `matnr_copa` |  |  |
+| `SoldProductGroup` |  | |  | `matkl` |  |  |
+| `CustomerGroup` |  | |  | `kdgrp` |  |  |
+| `CustomerSupplierCountry` |  | |  | `cast( P_ACDOCA.land1 as fis_land1_gp preserving type )` |  |  |
+| `CustomerSupplierIndustry` |  | |  | `cast( P_ACDOCA.brsch as fis_brsch preserving type )` |  |  |
+| `SalesDistrict` |  | |  | `bzirk` |  |  |
+| `BillToParty` |  | |  | `kunre` |  |  |
+| `ShipToParty` |  | |  | `kunwe` |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  | `cast( P_ACDOCA.konzs as fis_konzs preserving type )` |  |  |
+| `CashLedgerCompanyCode` |  | |  | `re_bukrs` |  |  |
+| `CashLedgerAccount` |  | |  | `re_account` |  |  |
+| `FinancialManagementArea` |  | |  | `fikrs` |  |  |
+| `CommitmentItem` |  | |  | `fipex` |  |  |
+| `FundsCenter` |  | |  | `fistl` |  |  |
+| `FundedProgram` |  | |  | `measure` |  |  |
+| `Fund` |  | |  | `rfund` |  |  |
+| `GrantID` |  | |  | `rgrant_nbr` |  |  |
+| `BudgetPeriod` |  | |  | `rbudget_pd` |  |  |
+| `PartnerFund` |  | |  | `sfund` |  |  |
+| `PartnerGrant` |  | |  | `sgrant_nbr` |  |  |
+| `PartnerBudgetPeriod` |  | |  | `cast( P_ACDOCA.sbudget_pd as fis_fm_pbudget_period preserving type )` |  |  |
+| `PubSecBudgetAccount` |  | |  | `bdgt_account` |  |  |
+| `PubSecBudgetAccountCoCode` |  | |  | `bdgt_account_cocode` |  |  |
+| `PubSecBudgetCnsmpnDate` |  | |  | `bdgt_cnsmpn_date` |  |  |
+| `PubSecBudgetCnsmpnFsclPeriod` |  | |  | `bdgt_cnsmpn_period` |  |  |
+| `PubSecBudgetCnsmpnFsclYear` |  | |  | `bdgt_cnsmpn_year` |  |  |
+| `PubSecBudgetIsRelevant` |  | |  | `bdgt_relevant` |  |  |
+| `PubSecBudgetCnsmpnType` |  | |  | `bdgt_cnsmpn_type` |  |  |
+| `PubSecBudgetCnsmpnAmtType` |  | |  | `bdgt_cnsmpn_amount_type` |  |  |
+| `SponsoredProgram` |  | |  | `rsponsored_prog` |  |  |
+| `SponsoredClass` |  | |  | `rsponsored_class` |  |  |
+| `GteeMBudgetValidityNumber` |  | |  | `rbdgt_vldty_nbr` |  |  |
+| `EarmarkedFundsDocument` |  | |  | `kblnr` |  |  |
+| `EarmarkedFundsDocumentItem` |  | |  | `kblpos` |  |  |
+| `FinancialServicesProductGroup` |  | |  | `FS_PRODUCT_GROUP` |  |  |
+| `FinancialServicesBranch` |  | |  | `BRANCH_ID` |  |  |
+| `FinancialDataSource` |  | |  | `DATASOURCE_ID` |  |  |
+| `JointVenture` |  | |  | `vname` |  |  |
+| `JointVentureEquityGroup` |  | |  | `cast( P_ACDOCA.egrup as jv_egroup_cds preserving type )` |  |  |
+| `JointVentureCostRecoveryCode` |  | |  | `cast( P_ACDOCA.recid as jv_recind_cds preserving type )` |  |  |
+| `JointVenturePartner` |  | |  | `cast( P_ACDOCA.vptnr as jv_part_cds preserving type )` |  |  |
+| `JointVentureBillingType` |  | |  | `cast( P_ACDOCA.btype as jv_bilind_cds preserving type )` |  |  |
+| `JointVentureEquityType` |  | |  | `cast( P_ACDOCA.etype as jv_etype_cds preserving type )` |  |  |
+| `JointVentureProductionDate` |  | |  | `cast( P_ACDOCA.prodper as jv_prodper_cds preserving type )` |  |  |
+| `JointVentureBillingDate` |  | |  | `cast( P_ACDOCA.billm as jv_billm_cds preserving type )` |  |  |
+| `JointVentureOperationalDate` |  | |  | `cast( P_ACDOCA.pom as jv_pom_cds preserving type )` |  |  |
+| `CutbackRun` |  | |  | `cast( P_ACDOCA.cbrunid as jv_cbrunid_cds preserving type )` |  |  |
+| `JointVentureAccountingActivity` |  | |  | `cast( P_ACDOCA.jvactivity as jv_activity_cds preserving type )` |  |  |
+| `PartnerVenture` |  | |  | `cast( P_ACDOCA.pvname as jv_pvname_cds preserving type )` |  |  |
+| `PartnerEquityGroup` |  | |  | `cast( P_ACDOCA.pegrup as jv_pegrup_cds preserving type )` |  |  |
+| `SenderCostRecoveryCode` |  | |  | `cast( P_ACDOCA.s_recind as jv_srecind_cds preserving type )` |  |  |
+| `CutbackAccount` |  | |  | `cast( P_ACDOCA.cbracct as jv_cbracct_cds preserving type )` |  |  |
+| `CutbackCostObject` |  | |  | `cast( P_ACDOCA.cbobjnr as jv_cbobjnr_cds preserving type )` |  |  |
+| `REBusinessEntity` |  | |  | `SWENR` |  |  |
+| `RealEstateBuilding` |  | |  | `SGENR` |  |  |
+| `RealEstateProperty` |  | |  | `SGRNR` |  |  |
+| `RERentalObject` |  | |  | `SMENR` |  |  |
+| `RealEstateContract` |  | |  | `RECNNR` |  |  |
+| `REServiceChargeKey` |  | |  | `snksl` |  |  |
+| `RESettlementUnitID` |  | |  | `sempsl` |  |  |
+| `SettlementReferenceDate` |  | |  | `cast( P_ACDOCA.dabrz as fis_dabrbez preserving type )` |  |  |
+| `REPartnerBusinessEntity` |  | |  | `pswenr` |  |  |
+| `RealEstatePartnerBuilding` |  | |  | `psgenr` |  |  |
+| `RealEstatePartnerProperty` |  | |  | `psgrnr` |  |  |
+| `REPartnerRentalObject` |  | |  | `psmenr` |  |  |
+| `RealEstatePartnerContract` |  | |  | `precnnr` |  |  |
+| `REPartnerServiceChargeKey` |  | |  | `psnksl` |  |  |
+| `REPartnerSettlementUnitID` |  | |  | `psempsl` |  |  |
+| `PartnerSettlementReferenceDate` |  | |  | `pdabrz` |  |  |
+| `AccrualObjectType` |  | |  | `acrobjtype` |  |  |
+| `AccrualObjectLogicalSystem` |  | |  | `acrlogsys` |  |  |
+| `AccrualObject` |  | |  | `acrobj_id` |  |  |
+| `AccrualSubobject` |  | |  | `acrsobj_id` |  |  |
+| `AccrualItemType` |  | |  | `acritmtype` |  |  |
+| `AccrualReferenceObject` |  | |  | `acrrefobj_id` |  |  |
+| `AccrualValueDate` |  | |  | `acrvaldat` |  |  |
+| `FinancialValuationObjectType` |  | |  | `cast( P_ACDOCA.valobjtype as fis_val_obj_type preserving type )` |  |  |
+| `FinancialValuationObject` |  | |  | `cast( P_ACDOCA.valobj_id as fis_val_obj_id preserving type )` |  |  |
+| `FinancialValuationSubobject` |  | |  | `cast( P_ACDOCA.valsobj_id as fis_val_subobj_id preserving type )` |  |  |
+| `NetDueDate` |  | |  | `netdt` |  |  |
+| `CreditRiskClass` |  | |  | `risk_class` |  |  |
+| `WorkCenterInternalID` |  | |  | `arbid` |  |  |
+| `OrderOperation` |  | |  | `vornr` |  |  |
+| `OrderItem` |  | |  | `aufps` |  |  |
+| `PartnerOrderItem` |  | |  | `paufps` |  |  |
+| `OrderSuboperation` |  | |  | `uvorn` |  |  |
+| `Equipment` |  | |  | `equnr` |  |  |
+| `FunctionalLocation` |  | |  | `tplnr` |  |  |
+| `Assembly` |  | |  | `istru` |  |  |
+| `MaintenanceActivityType` |  | |  | `ilart` |  |  |
+| `MaintenanceOrderPlanningCode` |  | |  | `plknz` |  |  |
+| `MaintPriorityType` |  | |  | `artpr` |  |  |
+| `MaintPriority` |  | |  | `priok` |  |  |
+| `SuperiorOrder` |  | |  | `maufnr` |  |  |
+| `ProductGroup` |  | |  | `cast( P_ACDOCA.matkl_mm as fis_matkl_mm preserving type )` |  |  |
+| `MaintenanceOrderIsPlanned` |  | |  | `planned_parts_work` |  |  |
+| `OriginOrderOperation` |  | |  | `vornr_org` |  |  |
+| `JrnlEntryItemMigrationSource` |  | |  | `mig_source` |  |  |
+| `_JournalEntry` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | | | |
+| `_FiscalPeriodForVariant` | | ✓ | | | | |
+| `_FiscalYearPeriodForVariant` | | ✓ | | | | |
+| `_CalendarDate` | | ✓ | | | | |
+| `_FiscalCalendarDate` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_BalanceTransactionCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_GlobalCurrency` | | ✓ | | | | |
+| `_FunctionalCurrency` | | ✓ | | | | |
+| `_FreeDefinedCurrency1` | | ✓ | | | | |
+| `_FreeDefinedCurrency2` | | ✓ | | | | |
+| `_FreeDefinedCurrency3` | | ✓ | | | | |
+| `_FreeDefinedCurrency4` | | ✓ | | | | |
+| `_FreeDefinedCurrency5` | | ✓ | | | | |
+| `_FreeDefinedCurrency6` | | ✓ | | | | |
+| `_FreeDefinedCurrency7` | | ✓ | | | | |
+| `_FreeDefinedCurrency8` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_CostSourceUnit` | | ✓ | | | | |
+| `_AdditionalQuantity1Unit` | | ✓ | | | | |
+| `_AdditionalQuantity2Unit` | | ✓ | | | | |
+| `_AdditionalQuantity3Unit` | | ✓ | | | | |
+| `_ReferenceQuantityUnit` | | ✓ | | | | |
+| `_IncmpltSummableValnQtyUnt` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerCompany` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompany` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_ProductGroup_2` | | ✓ | | | | |
+| `_SoldProductGroup` | | ✓ | | | | |
+| `_SoldProductGroup_2` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_OriginOrder` | | ✓ | | | | |
+| `_CostAnalysisResource` | | ✓ | | | | |
+| `_FinancialTransactionType` | | ✓ | | | | |
+| `_BusinessTransactionCategory` | | ✓ | | | | |
+| `_BusinessTransactionType` | | ✓ | | | | |
+| `_ReferenceDocumentType` | | ✓ | | | | |
+| `_PredecessorReferenceDocType` | | ✓ | | | | |
+| `_PartnerCostCenter` | | ✓ | | | | |
+| `_PartnerProfitCenter` | | ✓ | | | | |
+| `_PartnerBusinessArea` | | ✓ | | | | |
+| `_PartnerFunctionalArea` | | ✓ | | | | |
+| `_PartnerCompanyCode` | | ✓ | | | | |
+| `_PartnerSegment` | | ✓ | | | | |
+| `_AccountingDocumentCategory` | | ✓ | | | | |
+| `_PostingKey` | | ✓ | | | | |
+| `_SubLedgerAccLineItemType` | | ✓ | | | | |
+| `_EliminationProfitCenter` | | ✓ | | | | |
+| `_GLAccountType` | | ✓ | | | | |
+| `_OffsettingAccountType` | | ✓ | | | | |
+| `_AlternativeGLAccount` | | ✓ | | | | |
+| `_OffsettingAccount` | | ✓ | | | | |
+| `_OffsettingChartOfAccounts` | | ✓ | | | | |
+| `_CountryChartOfAccounts` | | ✓ | | | | |
+| `_SpecialGLCode` | | ✓ | | | | |
+| `_TaxCode` | | ✓ | | | | |
+| `_TaxCountry` | | ✓ | | | | |
+| `_ClearingAccountingDocument` | | ✓ | | | | |
+| `_ClearingJrnlEntryFiscalYear` | | ✓ | | | | |
+| `_ClearingJournalEntry` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_GroupMasterFixedAsset` | | ✓ | | | | |
+| `_PartnerMasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_GroupFixedAsset` | | ✓ | | | | |
+| `_PartnerFixedAsset` | | ✓ | | | | |
+| `_BusinessProcess` | | ✓ | | | | |
+| `_PartnerCostCtrActivityType` | | ✓ | | | | |
+| `_PartnerOrder` | | ✓ | | | | |
+| `_PartnerOrderCategory` | | ✓ | | | | |
+| `_PartnerSalesDocument` | | ✓ | | | | |
+| `_PartnerSalesDocumentItem` | | ✓ | | | | |
+| `_PartnerBusinessProcess` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_SoldProduct` | | ✓ | | | | |
+| `_OriginProduct` | | ✓ | | | | |
+| `_InventorySpecialStockValnType` | | ✓ | | | | |
+| `_InventorySpclStockValnType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_InventorySpclStkSalesDocument` | | ✓ | | | | |
+| `_InventorySpclStkSalesDocItm` | | ✓ | | | | |
+| `_InvtrySpclStockWBSElmntBasic` | | ✓ | | | | |
+| `_InvtrySpclStkWBSElmntBscData` | | ✓ | | | | |
+| `_InventorySpecialStockSupplier` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_ControllingDebitCreditCode` | | ✓ | | | | |
+| `_OriginCtrlgDebitCreditCode` | | ✓ | | | | |
+| `_OriginSenderObject` | | ✓ | | | | |
+| `_ControllingObjectClass` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_PartnerControllingObjectClass` | | ✓ | | | | |
+| `_OriginCostCenter` | | ✓ | | | | |
+| `_OriginProfitCenter` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
+| `_OriginCostCtrActivityType` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_MovementCategory` | | ✓ | | | | |
+| `_AssetTransactionType` | | ✓ | | | | |
+| `_CostOriginGroup` | | ✓ | | | | |
+| `_CustomerSupplierCountry` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_OperatingConcern` | | ✓ | | | | |
+| `_ValuationArea` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_BillableControl` | | ✓ | | | | |
+| `_ConditionContract` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintenanceOrderOperation` | | ✓ | | | | |
+| `_MaintenanceOrderSubOperation` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_Assembly` | | ✓ | | | | |
+| `_MaintenanceActivityType` | | ✓ | | | | |
+| `_WorkPackage` | | ✓ | | | | |
+| `_WorkPackageWorkItem` | | ✓ | | | | |
+| `_TimeSheetOvertimeCat` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_ServiceDocumentItem` | | ✓ | | | | |
+| `_ServiceContractType` | | ✓ | | | | |
+| `_ServiceContract` | | ✓ | | | | |
+| `_ServiceContractItem` | | ✓ | | | | |
+| `_PartnerServiceDocumentType` | | ✓ | | | | |
+| `_PartnerServiceDocument` | | ✓ | | | | |
+| `_PartnerServiceDocumentItem` | | ✓ | | | | |
+| `_ProjectBasicData` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_PartnerProjectBasicData` | | ✓ | | | | |
+| `_PartnerWBSElementBasicData` | | ✓ | | | | |
+| `_AccrualObjectType` | | ✓ | | | | |
+| `_AccrualObject` | | ✓ | | | | |
+| `_AccrualSubobject` | | ✓ | | | | |
+| `_AccrualItemType` | | ✓ | | | | |
+| `_CreditRiskClass` | | ✓ | | | | |
+| `_FinValuationObjectType` | | ✓ | | | | |
+| `_SemTagGLAccount` | | ✓ | | | | |
+| `_CashLedgerCompanyCode` | | ✓ | | | | |
+| `_CashLedgerAccount` | | ✓ | | | | |
+| `_FinancialManagementArea` | | ✓ | | | | |
+| `_FundsCenter` | | ✓ | | | | |
+| `_FundedProgram` | | ✓ | | | | |
+| `_Fund` | | ✓ | | | | |
+| `_Grant` | | ✓ | | | | |
+| `_BudgetPeriod` | | ✓ | | | | |
+| `_PartnerFund` | | ✓ | | | | |
+| `_PartnerGrant` | | ✓ | | | | |
+| `_PartnerBudgetPeriod` | | ✓ | | | | |
+| `_PubSecBudgetAccountCoCode` | | ✓ | | | | |
+| `_PubSecBudgetAccount` | | ✓ | | | | |
+| `_SponsoredProgram` | | ✓ | | | | |
+| `_SponsoredClass` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnDate` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnFsclPeriod` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnFsclYear` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnType` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnAmtType` | | ✓ | | | | |
+| `_ConsolidationUnit` | | ✓ | | | | |
+| `_PartnerConsolidationUnit` | | ✓ | | | | |
+| `_Company` | | ✓ | | | | |
+| `_ConsolidationChartOfAccounts` | | ✓ | | | | |
+| `_CnsldtnFinancialStatementItem` | | ✓ | | | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | | | |
+| `_CnsldtnSubitem` | | ✓ | | | | |
+| `_ProviderContract` | | ✓ | | | | |
+| `_ProviderContractItem` | | ✓ | | | | |
+| `_AccountAssignmentType` | | ✓ | | | | |
+| `_JrnlEntryItemObsoleteRsn` | | ✓ | | | | |
 
 ## Associations
 

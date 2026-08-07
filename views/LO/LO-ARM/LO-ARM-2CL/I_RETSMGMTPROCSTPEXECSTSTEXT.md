@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RetsMgmtProcStepExecStatus` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 1) as msr_exec_step_status preserving type)` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `RetsProcStpExecStsDescription` |  | |  | `ddtext` |
-| `_ReturnsProcStepExecStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RetsMgmtProcStepExecStatus` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 1) as msr_exec_step_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `RetsProcStpExecStsDescription` |  | |  | `ddtext` |  |  |
+| `_ReturnsProcStepExecStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UndesirabilityReason` | ✓ | |  | `unw_reason` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UndesirabilityReason` | ✓ | |  | `unw_reason` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

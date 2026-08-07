@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlanningStrategyGroup` | ✓ | |  | `cast(txt.strgr as strgr preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
-| `PlanningStrategyGroupName` |  | |  | `cast(txt.text40 as planningstrategygroupname preserving type)` |
-| `_StrategyGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanningStrategyGroup` | ✓ | |  | `cast(txt.strgr as strgr preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |  |  |
+| `PlanningStrategyGroupName` |  | |  | `cast(txt.text40 as planningstrategygroupname preserving type)` |  |  |
+| `_StrategyGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

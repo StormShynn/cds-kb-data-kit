@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGCategory` | ✓ | | `_Source` | `GHGCategory` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGCategory` | ✓ | | `_Source` | `GHGCategory` |  |  |
 
 ## Source Code
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'I_Currency'` |  | |  | `name: 'I_Currency'` |
-| `:'Currency'` |  | |  | `element :'Currency'` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'I_Currency'` |  | |  | `name: 'I_Currency'` |  |  |
+| `:'Currency'` |  | |  | `element :'Currency'` |  |  |
 
 ## Source Code
 

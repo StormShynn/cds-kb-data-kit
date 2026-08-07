@@ -29,73 +29,73 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityInternalID` | ✓ | |  |  |
-| `Plant` |  | |  |  |
-| `Capacity` |  | |  |  |
-| `CapacityCategoryCode` |  | |  |  |
-| `CapacityActiveVersion` |  | |  |  |
-| `CapacityIsFinite` |  | |  |  |
-| `CapacityIsPooled` |  | |  |  |
-| `CapacityHasIndivCapacities` |  | |  |  |
-| `CapacityIsExcldFrmLongTermPlng` |  | |  |  |
-| `CapacityNumberOfCapacities` |  | |  |  |
-| `CapacityResponsiblePlanner` |  | |  |  |
-| `CapacityPlanUtilizationPercent` |  | |  |  |
-| `CapacityBreakDuration` |  | |  |  |
-| `CapIsUsedInMultiOperations` |  | |  |  |
-| `ReferencedCapacityInternalID` |  | |  |  |
-| `CapOverloadThresholdInPercent` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `ShiftGroup` |  | |  |  |
-| `CapacityStartTimeID` |  | |  |  |
-| `CapacityEndTimeID` |  | |  |  |
-| `CapacityQuantityUnit` |  | |  |  |
-| `CapacityBaseQtyUnit` |  | |  |  |
-| `CapacityLastChangeDateTime` |  | |  |  |
-| `ResourceType` |  | |  |  |
-| `ResourceCategory` |  | |  |  |
-| `RsceValidityStartOffsetInDays` |  | |  |  |
-| `RsceValidityEndOffsetInDays` |  | |  |  |
-| `ResourceSortText` |  | |  |  |
-| `ResourceFinitenessLevel` |  | |  |  |
-| `ResourceIsBottleNeck` |  | |  |  |
-| `RsceOverlappingActiesSync` |  | |  |  |
-| `ResourceTimeBufferQuantity` |  | |  |  |
-| `ResourceTimeBufferUnit` |  | |  |  |
-| `ResourceMaxOverlapDuration` |  | |  |  |
-| `ResourceMaxOverlapDurationUnit` |  | |  |  |
-| `ResourceIsCampaignRelevant` |  | |  |  |
-| `RsceShiftsAndBreaksAreDerived` |  | |  |  |
-| `PPDSPeriodSourceType` |  | |  |  |
-| `PPDSPeriodDurationSchema` |  | |  |  |
-| `PPDSPeriodTimeRatioInPercent` |  | |  |  |
-| `PPDSCapacitySupplyTimeCategory` |  | |  |  |
-| `RsceHasStorCharcs` |  | |  |  |
-| `RsceStorageQuantityDimension` |  | |  |  |
-| `RsceStorageQuantityUnit` |  | |  |  |
-| `RsceStorageMinProductionQty` |  | |  |  |
-| `RsceStorageMaxQuantity` |  | |  |  |
-| `RsceStorIsZeroOnNoFillPurity` |  | |  |  |
-| `CapacityPlanningPeriodLotSize` |  | |  |  |
-| `RsceStorHasMltplProds` |  | |  |  |
-| `RsceStorZeroFillPurityThldQty` |  | |  |  |
-| `_CapacityCategory` | | ✓ | | |
-| `_FactoryCalendar` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ReferencedCapacityText` | | ✓ | | |
-| `_CapacityResponsiblePlanner` | | ✓ | | |
-| `_ShiftGrouping` | | ✓ | | |
-| `_CapacityQuantityUnit` | | ✓ | | |
-| `_CapacityBaseQtyUnit` | | ✓ | | |
-| `_CapacityBySemanticKey` | | ✓ | | |
-| `_Capacity` | | ✓ | | |
-| `_ResourceTimeBufferUnit` | | ✓ | | |
-| `_RsceMaxOverlapDurationUnit` | | ✓ | | |
-| `_RsceStorageQuantityUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Capacity` |  | |  |  |  |  |
+| `CapacityCategoryCode` |  | |  |  |  |  |
+| `CapacityActiveVersion` |  | |  |  |  |  |
+| `CapacityIsFinite` |  | |  |  |  |  |
+| `CapacityIsPooled` |  | |  |  |  |  |
+| `CapacityHasIndivCapacities` |  | |  |  |  |  |
+| `CapacityIsExcldFrmLongTermPlng` |  | |  |  |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |  |  |
+| `CapacityResponsiblePlanner` |  | |  |  |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |  |  |
+| `CapacityBreakDuration` |  | |  |  |  |  |
+| `CapIsUsedInMultiOperations` |  | |  |  |  |  |
+| `ReferencedCapacityInternalID` |  | |  |  |  |  |
+| `CapOverloadThresholdInPercent` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `ShiftGroup` |  | |  |  |  |  |
+| `CapacityStartTimeID` |  | |  |  |  |  |
+| `CapacityEndTimeID` |  | |  |  |  |  |
+| `CapacityQuantityUnit` |  | |  |  |  |  |
+| `CapacityBaseQtyUnit` |  | |  |  |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |  |  |
+| `ResourceType` |  | |  |  |  |  |
+| `ResourceCategory` |  | |  |  |  |  |
+| `RsceValidityStartOffsetInDays` |  | |  |  |  |  |
+| `RsceValidityEndOffsetInDays` |  | |  |  |  |  |
+| `ResourceSortText` |  | |  |  |  |  |
+| `ResourceFinitenessLevel` |  | |  |  |  |  |
+| `ResourceIsBottleNeck` |  | |  |  |  |  |
+| `RsceOverlappingActiesSync` |  | |  |  |  |  |
+| `ResourceTimeBufferQuantity` |  | |  |  |  |  |
+| `ResourceTimeBufferUnit` |  | |  |  |  |  |
+| `ResourceMaxOverlapDuration` |  | |  |  |  |  |
+| `ResourceMaxOverlapDurationUnit` |  | |  |  |  |  |
+| `ResourceIsCampaignRelevant` |  | |  |  |  |  |
+| `RsceShiftsAndBreaksAreDerived` |  | |  |  |  |  |
+| `PPDSPeriodSourceType` |  | |  |  |  |  |
+| `PPDSPeriodDurationSchema` |  | |  |  |  |  |
+| `PPDSPeriodTimeRatioInPercent` |  | |  |  |  |  |
+| `PPDSCapacitySupplyTimeCategory` |  | |  |  |  |  |
+| `RsceHasStorCharcs` |  | |  |  |  |  |
+| `RsceStorageQuantityDimension` |  | |  |  |  |  |
+| `RsceStorageQuantityUnit` |  | |  |  |  |  |
+| `RsceStorageMinProductionQty` |  | |  |  |  |  |
+| `RsceStorageMaxQuantity` |  | |  |  |  |  |
+| `RsceStorIsZeroOnNoFillPurity` |  | |  |  |  |  |
+| `CapacityPlanningPeriodLotSize` |  | |  |  |  |  |
+| `RsceStorHasMltplProds` |  | |  |  |  |  |
+| `RsceStorZeroFillPurityThldQty` |  | |  |  |  |  |
+| `_CapacityCategory` | | ✓ | | | | |
+| `_FactoryCalendar` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ReferencedCapacityText` | | ✓ | | | | |
+| `_CapacityResponsiblePlanner` | | ✓ | | | | |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_CapacityQuantityUnit` | | ✓ | | | | |
+| `_CapacityBaseQtyUnit` | | ✓ | | | | |
+| `_CapacityBySemanticKey` | | ✓ | | | | |
+| `_Capacity` | | ✓ | | | | |
+| `_ResourceTimeBufferUnit` | | ✓ | | | | |
+| `_RsceMaxOverlapDurationUnit` | | ✓ | | | | |
+| `_RsceStorageQuantityUnit` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserID` | ✓ | |  | `cast( bru.user_id as vdm_userid preserving type )` |
-| `BusinessRoleUUID` | ✓ | |  |  |
-| `BusinessRole` |  | |  |  |
-| `BusinessRoleGroup` |  | |  |  |
-| `_BusinessUser` | | ✓ | | |
-| `_BusinessRole` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserID` | ✓ | |  | `cast( bru.user_id as vdm_userid preserving type )` |  |  |
+| `BusinessRoleUUID` | ✓ | |  |  |  |  |
+| `BusinessRole` |  | |  |  |  |  |
+| `BusinessRoleGroup` |  | |  |  |  |  |
+| `_BusinessUser` | | ✓ | | | | |
+| `_BusinessRole` | | ✓ | | | | |
 
 ## Associations
 

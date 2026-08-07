@@ -27,23 +27,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `SubscriptionRateElementNumber` | ✓ | |  |  |
-| `Currency` |  | |  |  |
-| `SubscriptionRateElement` |  | |  |  |
-| `SubscriptionRateElementType` |  | |  |  |
-| `SubscrpnRateElementNetAmount` |  | |  |  |
-| `SubscrpnRateElementGrossAmount` |  | |  |  |
-| `SubscrpnRateElementTaxAmount` |  | |  |  |
-| `_BusinessSolutionOrderItemTP` | | ✓ | | |
-| `_BusinessSolutionOrderTP` | | ✓ | | |
-| `_SubscriptionBilling` | | ✓ | | |
-| `_SubscriptionBillingItem` | | ✓ | | |
-| `_SubscrpnRateElementTypeText` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `SubscriptionRateElementNumber` | ✓ | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `SubscriptionRateElement` |  | |  |  |  |  |
+| `SubscriptionRateElementType` |  | |  |  |  |  |
+| `SubscrpnRateElementNetAmount` |  | |  |  |  |  |
+| `SubscrpnRateElementGrossAmount` |  | |  |  |  |  |
+| `SubscrpnRateElementTaxAmount` |  | |  |  |  |  |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | | | |
+| `_SubscriptionBilling` | | ✓ | | | | |
+| `_SubscriptionBillingItem` | | ✓ | | | | |
+| `_SubscrpnRateElementTypeText` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
 
 ## Source Code
 

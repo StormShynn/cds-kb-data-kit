@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StatusAreaUUID` | ✓ | |  | `guid` |
-| `ProjectUUID` |  | |  | `project_guid` |
-| `StatusArea` |  | |  | `statusarea` |
-| `StatusAreaStatus` |  | |  | `status` |
-| `StatusTrend` |  | |  | `trend` |
-| `StatusAreaNote` |  | |  | `comments` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `CreationDateTime` |  | |  | `created_on` |
-| `LastChangedByUser` |  | |  | `changed_by` |
-| `LastChangeDateTime` |  | |  | `changed_on` |
-| `_Area` | | ✓ | | |
-| `_AreaStatus` | | ✓ | | |
-| `_AreaTrend` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatusAreaUUID` | ✓ | |  | `guid` |  |  |
+| `ProjectUUID` |  | |  | `project_guid` |  |  |
+| `StatusArea` |  | |  | `statusarea` |  |  |
+| `StatusAreaStatus` |  | |  | `status` |  |  |
+| `StatusTrend` |  | |  | `trend` |  |  |
+| `StatusAreaNote` |  | |  | `comments` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `CreationDateTime` |  | |  | `created_on` |  |  |
+| `LastChangedByUser` |  | |  | `changed_by` |  |  |
+| `LastChangeDateTime` |  | |  | `changed_on` |  |  |
+| `_Area` | | ✓ | | | | |
+| `_AreaStatus` | | ✓ | | | | |
+| `_AreaTrend` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyClaimReturnedPartner` | ✓ | |  | `partn` |
-| `Language` | ✓ | |  | `spras` |
-| `WrntySupplierReturnParts` | ✓ | |  | `retpa` |
-| `WrntySupplierReturnPartsText` |  | |  | `retpa_txt` |
-| `_ReturnSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyClaimReturnedPartner` | ✓ | |  | `partn` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `WrntySupplierReturnParts` | ✓ | |  | `retpa` |  |  |
+| `WrntySupplierReturnPartsText` |  | |  | `retpa_txt` |  |  |
+| `_ReturnSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

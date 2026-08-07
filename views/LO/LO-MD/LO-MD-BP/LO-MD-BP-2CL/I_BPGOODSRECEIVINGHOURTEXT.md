@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BPGoodsReceivingHoursCode` | ✓ | |  | `wanid` |
-| `Language` | ✓ | |  | `spras` |
-| `BPGoodsReceivingHoursText` |  | |  | `vtext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPGoodsReceivingHoursCode` | ✓ | |  | `wanid` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BPGoodsReceivingHoursText` |  | |  | `vtext` |  |  |
 
 ## Source Code
 

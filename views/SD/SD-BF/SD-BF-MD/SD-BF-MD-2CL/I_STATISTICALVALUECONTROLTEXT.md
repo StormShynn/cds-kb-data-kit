@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StatisticalValueControl` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 1)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `StatisticalValueControlName` |  | |  | `ddtext` |
-| `_StatisticalValueControl` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatisticalValueControl` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 1)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `StatisticalValueControlName` |  | |  | `ddtext` |  |  |
+| `_StatisticalValueControl` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

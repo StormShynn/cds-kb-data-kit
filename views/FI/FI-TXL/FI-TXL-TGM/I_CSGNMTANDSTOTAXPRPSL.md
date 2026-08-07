@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProposalTaxPostingIdentifier` | ✓ | |  | `ptxnr` |
-| `CrossBorderTaxProposalCategory` |  | |  | `ptxtype` |
-| `CrossBorderTaxPrpslSubcategory` |  | |  | `ptxsubtype` |
-| `MaterialDocument` |  | |  | `mblnr` |
-| `MaterialDocumentYear` |  | |  | `mjahr` |
-| `NrOfMaterialDocumentHeaders` |  | |  | `hdr_counter` |
-| `OutboundDelivery` |  | |  | `vbeln` |
-| `TransactionCurrency` |  | |  | `waerk` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ReversedMaterialDocument` |  | |  | `smbln` |
-| `ReversedMaterialDocumentYear` |  | |  | `sjahr` |
-| `NrOfReversedMatlDocHeaders` |  | |  | `cr_counter` |
-| `MaterialDocPostgDate` |  | |  | `budat` |
-| `MaterialDocumentCreationDate` |  | |  | `cpudt` |
-| `MaterialDocCreationTime` |  | |  | `cputm` |
-| `Customer` |  | |  | `kunnr` |
-| `TaxDepartureCountry` |  | |  | `otaxcnty` |
-| `TaxDestinationCountry` |  | |  | `itaxcnty` |
-| `TaxPostingStatus` |  | |  | `taxstatus` |
-| `TaxPostingReverseCode` |  | |  | `reversecode` |
-| `TaxPostingCancelCode` |  | |  | `cancelcode` |
-| `JournalEntry` |  | |  | `belnr` |
-| `FiscalYear` |  | |  | `cast(TaxPropslHearder.gjahr as fis_gjahr_no_conv preserving type)` |
-| `PostingDate` |  | |  | `fibudat` |
-| `CustomerVATRegistration` |  | |  | `stceg` |
-| `DeptrCtryCoCodeVATRegnNumber` |  | |  | `ostceg` |
-| `DestCtryCoCodeVATRegnNumber` |  | |  | `istceg` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `erzet` |
-| `LastChangedByUser` |  | |  | `upnam` |
-| `LastChangeDate` |  | |  | `updat` |
-| `LastChangeTime` |  | |  | `uptim` |
-| `IncotermsPart1` |  | |  | `inco1` |
-| `AccountingExchangeRate` |  | |  | `cast( TaxPropslHearder.kurrf as kurrf_not_converted preserving type )` |
-| `DestinationCountry` |  | |  | `land1` |
-| `Region` |  | |  | `regio` |
-| `ForeignTradeStstclCurrency` |  | |  | `grwcu` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `IsIntrastatReportingRelevant` |  | |  | `intra_rel` |
-| `IsIntrastatReportingExcluded` |  | |  | `intra_excl` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProposalTaxPostingIdentifier` | ✓ | |  | `ptxnr` |  |  |
+| `CrossBorderTaxProposalCategory` |  | |  | `ptxtype` |  |  |
+| `CrossBorderTaxPrpslSubcategory` |  | |  | `ptxsubtype` |  |  |
+| `MaterialDocument` |  | |  | `mblnr` |  |  |
+| `MaterialDocumentYear` |  | |  | `mjahr` |  |  |
+| `NrOfMaterialDocumentHeaders` |  | |  | `hdr_counter` |  |  |
+| `OutboundDelivery` |  | |  | `vbeln` |  |  |
+| `TransactionCurrency` |  | |  | `waerk` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ReversedMaterialDocument` |  | |  | `smbln` |  |  |
+| `ReversedMaterialDocumentYear` |  | |  | `sjahr` |  |  |
+| `NrOfReversedMatlDocHeaders` |  | |  | `cr_counter` |  |  |
+| `MaterialDocPostgDate` |  | |  | `budat` |  |  |
+| `MaterialDocumentCreationDate` |  | |  | `cpudt` |  |  |
+| `MaterialDocCreationTime` |  | |  | `cputm` |  |  |
+| `Customer` |  | |  | `kunnr` |  |  |
+| `TaxDepartureCountry` |  | |  | `otaxcnty` |  |  |
+| `TaxDestinationCountry` |  | |  | `itaxcnty` |  |  |
+| `TaxPostingStatus` |  | |  | `taxstatus` |  |  |
+| `TaxPostingReverseCode` |  | |  | `reversecode` |  |  |
+| `TaxPostingCancelCode` |  | |  | `cancelcode` |  |  |
+| `JournalEntry` |  | |  | `belnr` |  |  |
+| `FiscalYear` |  | |  | `cast(TaxPropslHearder.gjahr as fis_gjahr_no_conv preserving type)` |  |  |
+| `PostingDate` |  | |  | `fibudat` |  |  |
+| `CustomerVATRegistration` |  | |  | `stceg` |  |  |
+| `DeptrCtryCoCodeVATRegnNumber` |  | |  | `ostceg` |  |  |
+| `DestCtryCoCodeVATRegnNumber` |  | |  | `istceg` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `erzet` |  |  |
+| `LastChangedByUser` |  | |  | `upnam` |  |  |
+| `LastChangeDate` |  | |  | `updat` |  |  |
+| `LastChangeTime` |  | |  | `uptim` |  |  |
+| `IncotermsPart1` |  | |  | `inco1` |  |  |
+| `AccountingExchangeRate` |  | |  | `cast( TaxPropslHearder.kurrf as kurrf_not_converted preserving type )` |  |  |
+| `DestinationCountry` |  | |  | `land1` |  |  |
+| `Region` |  | |  | `regio` |  |  |
+| `ForeignTradeStstclCurrency` |  | |  | `grwcu` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `IsIntrastatReportingRelevant` |  | |  | `intra_rel` |  |  |
+| `IsIntrastatReportingExcluded` |  | |  | `intra_excl` |  |  |
 
 ## Source Code
 

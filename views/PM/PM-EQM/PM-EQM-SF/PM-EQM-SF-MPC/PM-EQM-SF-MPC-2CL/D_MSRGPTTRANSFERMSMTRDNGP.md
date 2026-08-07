@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MsmtRdngIntervalStartDate` |  | |  | `imrc_idat1` |
-| `MsmtRdngIntervalStartTime` |  | |  | `imrc_itim1` |
-| `MsmtRdngIntervalEndDate` |  | |  | `imrc_idate` |
-| `MsmtRdngIntervalEndTime` |  | |  | `imrc_itime` |
-| `MsmtRdngSourceMeasuringPoint` |  | |  | `imrc_trans` |
-| `MsmtRdngTransferMode` |  | |  | `imrc_modtr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MsmtRdngIntervalStartDate` |  | |  | `imrc_idat1` |  |  |
+| `MsmtRdngIntervalStartTime` |  | |  | `imrc_itim1` |  |  |
+| `MsmtRdngIntervalEndDate` |  | |  | `imrc_idate` |  |  |
+| `MsmtRdngIntervalEndTime` |  | |  | `imrc_itime` |  |  |
+| `MsmtRdngSourceMeasuringPoint` |  | |  | `imrc_trans` |  |  |
+| `MsmtRdngTransferMode` |  | |  | `imrc_modtr` |  |  |
 
 ## Source Code
 

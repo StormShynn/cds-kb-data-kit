@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessEventUUID` | ✓ | |  |  |
-| `SAPObjectType` | ✓ | |  |  |
-| `BusEvtLogFieldName` | ✓ | |  |  |
-| `BusEvtLogOldFieldValue` |  | |  |  |
-| `BusEvtLogOldFieldUnit` |  | |  |  |
-| `BusEvtLogNewFieldValue` |  | |  |  |
-| `BusEvtLogNewFieldUnit` |  | |  |  |
-| `BusEvtLogOldFieldCurrency` |  | |  |  |
-| `BusEvtLogNewFieldCurrency` |  | |  |  |
-| `BusEvtLogFieldHasOldValue` |  | |  |  |
-| `BusEvtLogFieldIsQualifier` |  | |  |  |
-| `BusEvtLogLastChangedDateTime` |  | |  |  |
-| `BusEvtLogGlobalFieldName` |  | |  |  |
-| `BuEvLgGlobalFieldNameUpperCase` |  | |  |  |
-| `ChangeDocumentDatabaseTable` |  | |  |  |
-| `ChangeDocDatabaseTableField` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessEventUUID` | ✓ | |  |  |  |  |
+| `SAPObjectType` | ✓ | |  |  |  |  |
+| `BusEvtLogFieldName` | ✓ | |  |  |  |  |
+| `BusEvtLogOldFieldValue` |  | |  |  |  |  |
+| `BusEvtLogOldFieldUnit` |  | |  |  |  |  |
+| `BusEvtLogNewFieldValue` |  | |  |  |  |  |
+| `BusEvtLogNewFieldUnit` |  | |  |  |  |  |
+| `BusEvtLogOldFieldCurrency` |  | |  |  |  |  |
+| `BusEvtLogNewFieldCurrency` |  | |  |  |  |  |
+| `BusEvtLogFieldHasOldValue` |  | |  |  |  |  |
+| `BusEvtLogFieldIsQualifier` |  | |  |  |  |  |
+| `BusEvtLogLastChangedDateTime` |  | |  |  |  |  |
+| `BusEvtLogGlobalFieldName` |  | |  |  |  |  |
+| `BuEvLgGlobalFieldNameUpperCase` |  | |  |  |  |  |
+| `ChangeDocumentDatabaseTable` |  | |  |  |  |  |
+| `ChangeDocDatabaseTableField` |  | |  |  |  |  |
 
 ## Source Code
 

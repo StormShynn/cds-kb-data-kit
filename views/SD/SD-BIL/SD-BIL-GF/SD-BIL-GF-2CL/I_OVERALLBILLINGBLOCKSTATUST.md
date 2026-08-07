@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OverallBillingBlockStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OverallBillingBlockStatusDesc` |  | |  | `bezei` |
-| `_OverallBillingBlockStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverallBillingBlockStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OverallBillingBlockStatusDesc` |  | |  | `bezei` |  |  |
+| `_OverallBillingBlockStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

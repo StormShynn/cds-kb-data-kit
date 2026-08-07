@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `DistributionChannel` | ✓ | | `_Text` | `DistributionChannel` |
-| `DistributionChannelName` |  | | `_Text` | `DistributionChannelName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnDistributionChannelTP` |  | |  | `_DistributionChannel as _DistributionChannel : redirected to parent I_CnsldtnDistributionChannelTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `DistributionChannel` | ✓ | | `_Text` | `DistributionChannel` |  |  |
+| `DistributionChannelName` |  | | `_Text` | `DistributionChannelName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnDistributionChannelTP` |  | |  | `_DistributionChannel as _DistributionChannel : redirected to parent I_CnsldtnDistributionChannelTP` |  |  |
 
 ## Source Code
 

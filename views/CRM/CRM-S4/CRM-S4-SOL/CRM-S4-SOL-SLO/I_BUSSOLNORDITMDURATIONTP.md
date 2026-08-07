@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `SrvcDocDurationType` | ✓ | |  |  |
-| `SrvcDocDurationValue` |  | |  |  |
-| `SrvcDocDurationUnit` |  | |  |  |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_DurationText` | | ✓ | | |
-| `_BusinessSolutionOrderItemTP` | | ✓ | | |
-| `_BusinessSolutionOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `SrvcDocDurationType` | ✓ | |  |  |  |  |
+| `SrvcDocDurationValue` |  | |  |  |  |  |
+| `SrvcDocDurationUnit` |  | |  |  |  |  |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_DurationText` | | ✓ | | | | |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

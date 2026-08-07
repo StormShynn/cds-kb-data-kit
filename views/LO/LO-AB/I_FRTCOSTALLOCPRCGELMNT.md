@@ -27,69 +27,69 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FreightCostAllocationDocument` |  | |  | `}] } key FreightCostAllocationDocument` |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `PriceConditionDeterminationDte` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionBaseAmount` |  | |  |  |
-| `ConditionBaseQuantity` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionCategory` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `IsRelevantForAccrual` |  | |  |  |
-| `CndnIsRelevantForInvoiceList` |  | |  |  |
-| `ConditionOrigin` |  | |  |  |
-| `IsGroupCondition` |  | |  |  |
-| `ConditionRecord` |  | |  |  |
-| `ConditionSequentialNumber` |  | |  |  |
-| `CndnRoundingOffDiffAmount` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionControl` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `ConditionClass` |  | |  |  |
-| `PrcgProcedureCounterForHeader` |  | |  |  |
-| `FactorForConditionBasisValue` |  | |  |  |
-| `StructureCondition` |  | |  |  |
-| `PeriodFactorForCndnBasisValue` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `PricingScaleBasis` |  | |  |  |
-| `ConditionScaleBaseAmount` |  | |  |  |
-| `ConditionScaleBaseQuantity` |  | |  |  |
-| `ConditionScaleBasisUnit` |  | |  |  |
-| `ConditionScaleBasisCurrency` |  | |  |  |
-| `CndnIsRelevantForIntcoBilling` |  | |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |
-| `ConditionIsForConfiguration` |  | |  |  |
-| `VariantCondition` |  | |  |  |
-| `_FrtCostAllocDoc` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
-| `_PricingConditionType` | | ✓ | | |
-| `_ConditionCalculationType` | | ✓ | | |
-| `_ConditionCurrency` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_ConditionQuantityUnit` | | ✓ | | |
-| `_ConditionCategory` | | ✓ | | |
-| `_ConditionOrigin` | | ✓ | | |
-| `_ConditionControl` | | ✓ | | |
-| `_ConditionInactiveReason` | | ✓ | | |
-| `_ConditionClass` | | ✓ | | |
-| `_PricingScaleBasis` | | ✓ | | |
-| `_ScaleUnitOfMeasure` | | ✓ | | |
-| `_ScaleCurrency` | | ✓ | | |
-| `_VariantCondition` | | ✓ | | |
-| `_StructureCondition` | | ✓ | | |
-| `_ConditionRateRatioUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FreightCostAllocationDocument` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionBaseAmount` |  | |  |  |  |  |
+| `ConditionBaseQuantity` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionCategory` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `IsRelevantForAccrual` |  | |  |  |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |  |  |
+| `ConditionOrigin` |  | |  |  |  |  |
+| `IsGroupCondition` |  | |  |  |  |  |
+| `ConditionRecord` |  | |  |  |  |  |
+| `ConditionSequentialNumber` |  | |  |  |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionControl` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `ConditionClass` |  | |  |  |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |  |  |
+| `StructureCondition` |  | |  |  |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `PricingScaleBasis` |  | |  |  |  |  |
+| `ConditionScaleBaseAmount` |  | |  |  |  |  |
+| `ConditionScaleBaseQuantity` |  | |  |  |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |  |  |
+| `VariantCondition` |  | |  |  |  |  |
+| `_FrtCostAllocDoc` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_PricingConditionType` | | ✓ | | | | |
+| `_ConditionCalculationType` | | ✓ | | | | |
+| `_ConditionCurrency` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_ConditionQuantityUnit` | | ✓ | | | | |
+| `_ConditionCategory` | | ✓ | | | | |
+| `_ConditionOrigin` | | ✓ | | | | |
+| `_ConditionControl` | | ✓ | | | | |
+| `_ConditionInactiveReason` | | ✓ | | | | |
+| `_ConditionClass` | | ✓ | | | | |
+| `_PricingScaleBasis` | | ✓ | | | | |
+| `_ScaleUnitOfMeasure` | | ✓ | | | | |
+| `_ScaleCurrency` | | ✓ | | | | |
+| `_VariantCondition` | | ✓ | | | | |
+| `_StructureCondition` | | ✓ | | | | |
+| `_ConditionRateRatioUnit` | | ✓ | | | | |
 
 ## Associations
 

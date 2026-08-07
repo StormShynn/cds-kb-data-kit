@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlndIndepRqmtCllgAppl` |  | |  | `pph_pir_calling_appl` |
-| `PlndIndepRqmtLastChangedBy` |  | |  | `aenam` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlndIndepRqmtCllgAppl` |  | |  | `pph_pir_calling_appl` |  |  |
+| `PlndIndepRqmtLastChangedBy` |  | |  | `aenam` |  |  |
 
 ## Source Code
 

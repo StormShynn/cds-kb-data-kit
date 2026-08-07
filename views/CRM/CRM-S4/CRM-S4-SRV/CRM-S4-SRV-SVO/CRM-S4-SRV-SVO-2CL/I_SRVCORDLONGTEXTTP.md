@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrder` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `SrvcDocLogTextIdentifier` | ✓ | |  |  |
-| `TextObjectCategory` |  | |  |  |
-| `SrvcDocLongTextMimeType` |  | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceOrderLongText` |  | |  |  |
-| `ReferenceTextObjectCategory` |  | |  |  |
-| `ReferenceTextObjectType` |  | |  |  |
-| `ReferenceLongTextKey` |  | |  |  |
-| `SrvcDocLongTxtCreationDateTime` |  | |  |  |
-| `SrvcDocLongTextCreatedByUser` |  | |  |  |
-| `SrvcDocLongTextChangedDateTime` |  | |  |  |
-| `SrvcDocLongTextChangedByUser` |  | |  |  |
-| `_ServiceOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `SrvcDocLogTextIdentifier` | ✓ | |  |  |  |  |
+| `TextObjectCategory` |  | |  |  |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceOrderLongText` |  | |  |  |  |  |
+| `ReferenceTextObjectCategory` |  | |  |  |  |  |
+| `ReferenceTextObjectType` |  | |  |  |  |  |
+| `ReferenceLongTextKey` |  | |  |  |  |  |
+| `SrvcDocLongTxtCreationDateTime` |  | |  |  |  |  |
+| `SrvcDocLongTextCreatedByUser` |  | |  |  |  |  |
+| `SrvcDocLongTextChangedDateTime` |  | |  |  |  |  |
+| `SrvcDocLongTextChangedByUser` |  | |  |  |  |  |
+| `_ServiceOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACorrespondenceVariant` | ✓ | |  | `coprc` |
-| `Language` | ✓ | |  | `spras` |
-| `CACorrespondenceVariantName` |  | |  | `cotxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACorrespondenceVariant` | ✓ | |  | `coprc` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CACorrespondenceVariantName` |  | |  | `cotxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

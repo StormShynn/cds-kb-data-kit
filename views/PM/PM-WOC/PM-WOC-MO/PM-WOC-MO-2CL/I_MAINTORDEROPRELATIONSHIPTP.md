@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintenanceOrderOperation` | ✓ | |  |  |
-| `MaintenanceOrderSubOperation` | ✓ | |  |  |
-| `MaintOrdOperationIsSuccessor` | ✓ | |  |  |
-| `RelatedMaintenanceOrder` | ✓ | |  |  |
-| `RelatedMaintOrderOperation` | ✓ | |  |  |
-| `OrderOpRelationshipIntType` | ✓ | |  |  |
-| `PredecessorMaintOrderRouting` |  | |  |  |
-| `PredecessorOrderRoutingNode` |  | |  |  |
-| `SuccessorMaintOrderRouting` |  | |  |  |
-| `SuccessorOrderRoutingNode` |  | |  |  |
-| `RelatedMaintOrderRouting` |  | |  |  |
-| `RelatedOrderRoutingNode` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `OpRelshpOffsetDuration` |  | |  |  |
-| `OpRelshpOffsetDurationUnit` |  | |  |  |
-| `OpRelshpEarliestStartDate` |  | |  |  |
-| `OpRelshpEarliestStartTime` |  | |  |  |
-| `OpRelationshipLatestStartDate` |  | |  |  |
-| `OpRelationshipLatestStartTime` |  | |  |  |
-| `OpRelshpEarliestFinishDate` |  | |  |  |
-| `OpRelshpEarliestFinishTime` |  | |  |  |
-| `OpRelshpLatestFinishDate` |  | |  |  |
-| `OpRelshpLatestFinishTime` |  | |  |  |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintenanceOrderOperation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintenanceOrderOperation` | ✓ | |  |  |  |  |
+| `MaintenanceOrderSubOperation` | ✓ | |  |  |  |  |
+| `MaintOrdOperationIsSuccessor` | ✓ | |  |  |  |  |
+| `RelatedMaintenanceOrder` | ✓ | |  |  |  |  |
+| `RelatedMaintOrderOperation` | ✓ | |  |  |  |  |
+| `OrderOpRelationshipIntType` | ✓ | |  |  |  |  |
+| `PredecessorMaintOrderRouting` |  | |  |  |  |  |
+| `PredecessorOrderRoutingNode` |  | |  |  |  |  |
+| `SuccessorMaintOrderRouting` |  | |  |  |  |  |
+| `SuccessorOrderRoutingNode` |  | |  |  |  |  |
+| `RelatedMaintOrderRouting` |  | |  |  |  |  |
+| `RelatedOrderRoutingNode` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `OpRelshpOffsetDuration` |  | |  |  |  |  |
+| `OpRelshpOffsetDurationUnit` |  | |  |  |  |  |
+| `OpRelshpEarliestStartDate` |  | |  |  |  |  |
+| `OpRelshpEarliestStartTime` |  | |  |  |  |  |
+| `OpRelationshipLatestStartDate` |  | |  |  |  |  |
+| `OpRelationshipLatestStartTime` |  | |  |  |  |  |
+| `OpRelshpEarliestFinishDate` |  | |  |  |  |  |
+| `OpRelshpEarliestFinishTime` |  | |  |  |  |  |
+| `OpRelshpLatestFinishDate` |  | |  |  |  |  |
+| `OpRelshpLatestFinishTime` |  | |  |  |  |  |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintenanceOrderOperation` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AFDFUniqueKeyUUID` | ✓ | |  |  |
-| `SupplierInvoice` | ✓ | |  | `cast( AFDFDocumentKey1 as re_belnr )` |
-| `FiscalYear` | ✓ | |  | `cast( AFDFDocumentKey2 as gjahr )` |
-| `OfficialDocumentNumberCountry` |  | |  |  |
-| `OfficialDocumentNumberType` |  | |  |  |
-| `OfficialDocumentNumber` |  | |  |  |
-| `OfficialDocumentNumberDateTime` |  | |  |  |
-| `ODNLegalDateTimeText` |  | |  |  |
-| `OfficialDocumentNumberIntType` |  | |  |  |
-| `OfficialDocumentNumberTypeText` |  | |  |  |
-| `_Country` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AFDFUniqueKeyUUID` | ✓ | |  |  |  |  |
+| `SupplierInvoice` | ✓ | |  | `cast( AFDFDocumentKey1 as re_belnr )` |  |  |
+| `FiscalYear` | ✓ | |  | `cast( AFDFDocumentKey2 as gjahr )` |  |  |
+| `OfficialDocumentNumberCountry` |  | |  |  |  |  |
+| `OfficialDocumentNumberType` |  | |  |  |  |  |
+| `OfficialDocumentNumber` |  | |  |  |  |  |
+| `OfficialDocumentNumberDateTime` |  | |  |  |  |  |
+| `ODNLegalDateTimeText` |  | |  |  |  |  |
+| `OfficialDocumentNumberIntType` |  | |  |  |  |  |
+| `OfficialDocumentNumberTypeText` |  | |  |  |  |  |
+| `_Country` | | ✓ | | | | |
 
 ## Associations
 

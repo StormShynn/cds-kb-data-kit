@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateTableScaleRefUUID` | ✓ | |  |  |
-| `TransportationRateTableUUID` |  | |  |  |
-| `TransportationScaleUUID` |  | |  |  |
-| `TransportationCalculationBase` |  | |  |  |
-| `TranspRateTblScRefMinValIsSupp` |  | |  |  |
-| `TranspRateTblScRefMaxValIsSupp` |  | |  |  |
-| `TranspRateScRefIsRlvtForBrkWgt` |  | |  |  |
-| `TranspRateTblScaleRefScaleType` |  | |  |  |
-| `TranspRateTblScaleRefQtyUnit` |  | |  |  |
-| `TranspRateTblScaleRefCurrency` |  | |  |  |
-| `TranspRateTblScaleRefCalcType` |  | |  |  |
-| `TranspRateTableDimensionIndex` |  | |  |  |
-| `TranspRateTblScRefNoValIsSupp` |  | |  |  |
-| `TranspCmmdtyCodeNmbrngSchm` |  | |  |  |
-| `I_TransportationRateTableTP` |  | |  | `TranspRateTableScaleRef._TransportationRateTable : redirected to parent I_TransportationRateTableTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateTableScaleRefUUID` | ✓ | |  |  |  |  |
+| `TransportationRateTableUUID` |  | |  |  |  |  |
+| `TransportationScaleUUID` |  | |  |  |  |  |
+| `TransportationCalculationBase` |  | |  |  |  |  |
+| `TranspRateTblScRefMinValIsSupp` |  | |  |  |  |  |
+| `TranspRateTblScRefMaxValIsSupp` |  | |  |  |  |  |
+| `TranspRateScRefIsRlvtForBrkWgt` |  | |  |  |  |  |
+| `TranspRateTblScaleRefScaleType` |  | |  |  |  |  |
+| `TranspRateTblScaleRefQtyUnit` |  | |  |  |  |  |
+| `TranspRateTblScaleRefCurrency` |  | |  |  |  |  |
+| `TranspRateTblScaleRefCalcType` |  | |  |  |  |  |
+| `TranspRateTableDimensionIndex` |  | |  |  |  |  |
+| `TranspRateTblScRefNoValIsSupp` |  | |  |  |  |  |
+| `TranspCmmdtyCodeNmbrngSchm` |  | |  |  |  |  |
+| `I_TransportationRateTableTP` |  | |  | `TranspRateTableScaleRef._TransportationRateTable : redirected to parent I_TransportationRateTableTP` |  |  |
 
 ## Source Code
 

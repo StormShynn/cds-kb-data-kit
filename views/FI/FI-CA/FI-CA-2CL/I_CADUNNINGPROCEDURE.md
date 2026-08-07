@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADunningProcedure` | ✓ | |  | `mahnv` |
-| `CADunningProcedureCategory` |  | |  | `cast(mvtyp as mvtyp_gfn_kk preserving type)` |
-| `CAAltvDunProcedForInstallments` |  | |  | `cast(altmv as altmv_gfn_kk preserving type)` |
-| `CAAltvDunProcedForReturns` |  | |  | `cast(altmv2 as altmv2_gfn_kk preserving type)` |
-| `CAProcessControlAtLastDunLevel` |  | |  | `vlmst` |
-| `CAFactoryCalendarIsUsedForDun` |  | |  | `xmfac` |
-| `FactoryCalendar` |  | |  | `cast(mfcid as fabkl preserving type)` |
-| `CADunningLevelMustNotBeReduced` |  | |  | `not_lower_dl` |
-| `CAProcessControlForCredits` |  | |  | `vbgut` |
-| `_Text` | | ✓ | | |
-| `_DunProcedInstallments` | | ✓ | | |
-| `_DunProcedReturns` | | ✓ | | |
-| `_Category` | | ✓ | | |
-| `_FactoryCalendar` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADunningProcedure` | ✓ | |  | `mahnv` |  |  |
+| `CADunningProcedureCategory` |  | |  | `cast(mvtyp as mvtyp_gfn_kk preserving type)` |  |  |
+| `CAAltvDunProcedForInstallments` |  | |  | `cast(altmv as altmv_gfn_kk preserving type)` |  |  |
+| `CAAltvDunProcedForReturns` |  | |  | `cast(altmv2 as altmv2_gfn_kk preserving type)` |  |  |
+| `CAProcessControlAtLastDunLevel` |  | |  | `vlmst` |  |  |
+| `CAFactoryCalendarIsUsedForDun` |  | |  | `xmfac` |  |  |
+| `FactoryCalendar` |  | |  | `cast(mfcid as fabkl preserving type)` |  |  |
+| `CADunningLevelMustNotBeReduced` |  | |  | `not_lower_dl` |  |  |
+| `CAProcessControlForCredits` |  | |  | `vbgut` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_DunProcedInstallments` | | ✓ | | | | |
+| `_DunProcedReturns` | | ✓ | | | | |
+| `_Category` | | ✓ | | | | |
+| `_FactoryCalendar` | | ✓ | | | | |
 
 ## Associations
 

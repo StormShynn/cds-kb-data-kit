@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerType` | ✓ | |  | `bpkind` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerType` | ✓ | |  | `bpkind` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

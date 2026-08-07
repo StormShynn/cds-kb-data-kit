@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceItem` | ✓ | |  |  |
-| `MaintenanceItemObjectList` | ✓ | |  |  |
-| `MaintenanceObjectListItem` | ✓ | |  |  |
-| `MaintenanceObjectListUsageCode` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
-| `TechnicalObject` |  | |  |  |
-| `TechnicalObjectLabel` |  | |  |  |
-| `TechnicalObjectDescription` |  | |  |  |
-| `MaintenanceNotification` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
-| `Material` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `UniqueItemIdentifier` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `MaintObjectListItemSequence` |  | |  |  |
-| `MaintObjListEntryIsProcessed` |  | |  |  |
-| `ServiceReferenceProduct` |  | |  |  |
-| `MaintenancePlanCallObject` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `_Equipment` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_MaintenanceItemTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |  |  |
+| `MaintenanceItemObjectList` | ✓ | |  |  |  |  |
+| `MaintenanceObjectListItem` | ✓ | |  |  |  |  |
+| `MaintenanceObjectListUsageCode` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |  |  |
+| `TechnicalObject` |  | |  |  |  |  |
+| `TechnicalObjectLabel` |  | |  |  |  |  |
+| `TechnicalObjectDescription` |  | |  |  |  |  |
+| `MaintenanceNotification` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `UniqueItemIdentifier` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `MaintObjectListItemSequence` |  | |  |  |  |  |
+| `MaintObjListEntryIsProcessed` |  | |  |  |  |  |
+| `ServiceReferenceProduct` |  | |  |  |  |  |
+| `MaintenancePlanCallObject` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_MaintenanceItemTP` | | ✓ | | | | |
 
 ## Source Code
 

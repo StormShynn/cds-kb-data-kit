@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PInvItmPrntIsSortedBySpclStk` |  | |  | `mm_im_pi_sort_special_stock` |
-| `PInvPrntSerialNumberSortOrder` |  | |  | `mm_im_pi_sort_order` |
-| `PrintQueue` |  | |  | `apoc_print_queue` |
-| `D_PInvDocPrintItemKeysP` |  | |  | `_Items : composition [0..*] of D_PInvDocPrintItemKeysP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PInvItmPrntIsSortedBySpclStk` |  | |  | `mm_im_pi_sort_special_stock` |  |  |
+| `PInvPrntSerialNumberSortOrder` |  | |  | `mm_im_pi_sort_order` |  |  |
+| `PrintQueue` |  | |  | `apoc_print_queue` |  |  |
+| `D_PInvDocPrintItemKeysP` |  | |  | `_Items : composition [0..*] of D_PInvDocPrintItemKeysP` |  |  |
 
 ## Source Code
 

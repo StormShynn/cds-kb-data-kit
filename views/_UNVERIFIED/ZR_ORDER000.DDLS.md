@@ -39,19 +39,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UUID` | ✓ | |  | `uuid` |
-| `OrderID` |  | |  | `order_id` |
-| `OrderDate` |  | |  | `order_date` |
-| `CustomerName` |  | |  | `customer_name` |
-| `LocalCreatedBy` |  | |  | `local_created_by` |
-| `LocalCreatedAt` |  | |  | `local_created_at` |
-| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |
-| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
-| `LastChangedAt` |  | |  | `last_changed_at` |
-| `Status` |  | |  | `status` |
-| `_OrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UUID` | ✓ | |  | `uuid` |  |  |
+| `OrderID` |  | |  | `order_id` |  |  |
+| `OrderDate` |  | |  | `order_date` |  |  |
+| `CustomerName` |  | |  | `customer_name` |  |  |
+| `LocalCreatedBy` |  | |  | `local_created_by` |  |  |
+| `LocalCreatedAt` |  | |  | `local_created_at` |  |  |
+| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |  |  |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |  |  |
+| `LastChangedAt` |  | |  | `last_changed_at` |  |  |
+| `Status` |  | |  | `status` |  |  |
+| `_OrderItem` | | ✓ | | | | |
 
 ## Source Code
 

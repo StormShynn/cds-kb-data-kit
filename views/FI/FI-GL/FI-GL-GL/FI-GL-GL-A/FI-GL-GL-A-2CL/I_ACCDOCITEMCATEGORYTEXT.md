@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingDocumentItemCategory` | ✓ | |  | `cast(t8g02t.linetype as fis_accdoc_itemcat preserving type )` |
-| `Language` | ✓ | |  | `langu` |
-| `AccountingDocItemCategoryName` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocumentItemCategory` | ✓ | |  | `cast(t8g02t.linetype as fis_accdoc_itemcat preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `AccountingDocItemCategoryName` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

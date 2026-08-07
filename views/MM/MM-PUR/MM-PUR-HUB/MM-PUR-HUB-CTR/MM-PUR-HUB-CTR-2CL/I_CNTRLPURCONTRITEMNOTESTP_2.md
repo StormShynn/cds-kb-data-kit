@@ -31,24 +31,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocumentNoteUUID` | ✓ | |  |  |
-| `PurchasingDocumentObjNodeType` |  | |  |  |
-| `PurchasingDocumentNoteObjectID` |  | |  |  |
-| `PurchasingDocumentNoteType` |  | |  |  |
-| `PurchasingDocumentNoteLanguage` |  | |  |  |
-| `PurchasingDocumentNoteTitle` |  | |  |  |
-| `PurchasingDocumentNoteMimeType` |  | |  |  |
-| `PurgDocNoteCreatedBy` |  | |  |  |
-| `PurgDocNoteCreationDateTime` |  | |  |  |
-| `PurgDocNoteLastChangedBy` |  | |  |  |
-| `PurgDocNoteLastChangedDateTime` |  | |  |  |
-| `PurgDocNoteText` |  | |  |  |
-| `CentralPurchaseContract` |  | |  |  |
-| `CentralPurchaseContractItem` |  | |  |  |
-| `_CentralPurchaseContract` | | ✓ | | |
-| `_CntrlPurchaseContractItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocumentNoteUUID` | ✓ | |  |  |  |  |
+| `PurchasingDocumentObjNodeType` |  | |  |  |  |  |
+| `PurchasingDocumentNoteObjectID` |  | |  |  |  |  |
+| `PurchasingDocumentNoteType` |  | |  |  |  |  |
+| `PurchasingDocumentNoteLanguage` |  | |  |  |  |  |
+| `PurchasingDocumentNoteTitle` |  | |  |  |  |  |
+| `PurchasingDocumentNoteMimeType` |  | |  |  |  |  |
+| `PurgDocNoteCreatedBy` |  | |  |  |  |  |
+| `PurgDocNoteCreationDateTime` |  | |  |  |  |  |
+| `PurgDocNoteLastChangedBy` |  | |  |  |  |  |
+| `PurgDocNoteLastChangedDateTime` |  | |  |  |  |  |
+| `PurgDocNoteText` |  | |  |  |  |  |
+| `CentralPurchaseContract` |  | |  |  |  |  |
+| `CentralPurchaseContractItem` |  | |  |  |  |  |
+| `_CentralPurchaseContract` | | ✓ | | | | |
+| `_CntrlPurchaseContractItem` | | ✓ | | | | |
 
 ## Source Code
 

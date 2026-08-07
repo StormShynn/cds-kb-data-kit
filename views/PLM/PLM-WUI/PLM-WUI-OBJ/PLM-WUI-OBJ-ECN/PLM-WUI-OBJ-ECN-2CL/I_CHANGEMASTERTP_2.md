@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumber` | ✓ | |  |  |
-| `ChangeNumberStatus` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `ChangeNumberFunction` |  | |  |  |
-| `IsTechnicallyReleased` |  | |  |  |
-| `ChangeNumberReleaseKey` |  | |  |  |
-| `ReasonForChangeText` |  | |  |  |
-| `ChangeNumberDescription` |  | |  |  |
-| `ChangeNumberValidFromDate` |  | |  |  |
-| `ChangeNumberCreationDate` |  | |  |  |
-| `ChangeNumberCreatedByUser` |  | |  |  |
-| `ChangeNumberLastChangedDate` |  | |  |  |
-| `ChangeNumberLastChangedByUser` |  | |  |  |
-| `IsUsedForDataDefinition` |  | |  |  |
-| `ChangeNumberIsMrkdForDeletion` |  | |  |  |
-| `ChangeNumberLastChgdDateTime` |  | |  |  |
-| `_ChangeNumberStatus` | | ✓ | | |
-| `_AlternativeDate` | | ✓ | | |
-| `_ObjTypeAssignment` | | ✓ | | |
-| `_ChangeMstrObjectMgmtRecord` | | ✓ | | |
-| `_ChangeMstrObMgReMaterial` | | ✓ | | |
-| `_ChangeMstrObMgReMatlBOM` | | ✓ | | |
-| `_ChangeMstrObMgReDocInfoRecd` | | ✓ | | |
-| `_LogAccMObjectTypeActive` | | ✓ | | |
-| `_LogAccMObjectUserAuthzn` | | ✓ | | |
-| `_LogAccMObjSecureIDAssgmt` | | ✓ | | |
-| `_ChangeMasterLogAccMActive` | | ✓ | | |
-| `_ChgMstrLogAccMSecureIDAssgmt` | | ✓ | | |
-| `_ChangeMstrLogAccMUserAuthzn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ChangeNumberStatus` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `ChangeNumberFunction` |  | |  |  |  |  |
+| `IsTechnicallyReleased` |  | |  |  |  |  |
+| `ChangeNumberReleaseKey` |  | |  |  |  |  |
+| `ReasonForChangeText` |  | |  |  |  |  |
+| `ChangeNumberDescription` |  | |  |  |  |  |
+| `ChangeNumberValidFromDate` |  | |  |  |  |  |
+| `ChangeNumberCreationDate` |  | |  |  |  |  |
+| `ChangeNumberCreatedByUser` |  | |  |  |  |  |
+| `ChangeNumberLastChangedDate` |  | |  |  |  |  |
+| `ChangeNumberLastChangedByUser` |  | |  |  |  |  |
+| `IsUsedForDataDefinition` |  | |  |  |  |  |
+| `ChangeNumberIsMrkdForDeletion` |  | |  |  |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |  |  |
+| `_ChangeNumberStatus` | | ✓ | | | | |
+| `_AlternativeDate` | | ✓ | | | | |
+| `_ObjTypeAssignment` | | ✓ | | | | |
+| `_ChangeMstrObjectMgmtRecord` | | ✓ | | | | |
+| `_ChangeMstrObMgReMaterial` | | ✓ | | | | |
+| `_ChangeMstrObMgReMatlBOM` | | ✓ | | | | |
+| `_ChangeMstrObMgReDocInfoRecd` | | ✓ | | | | |
+| `_LogAccMObjectTypeActive` | | ✓ | | | | |
+| `_LogAccMObjectUserAuthzn` | | ✓ | | | | |
+| `_LogAccMObjSecureIDAssgmt` | | ✓ | | | | |
+| `_ChangeMasterLogAccMActive` | | ✓ | | | | |
+| `_ChgMstrLogAccMSecureIDAssgmt` | | ✓ | | | | |
+| `_ChangeMstrLogAccMUserAuthzn` | | ✓ | | | | |
 
 ## Source Code
 

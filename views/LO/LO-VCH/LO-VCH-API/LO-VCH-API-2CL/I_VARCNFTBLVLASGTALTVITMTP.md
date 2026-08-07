@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarConfignTblName` | ✓ | |  |  |
-| `VarConfignTblValAssgmtAltvID` | ✓ | |  |  |
-| `Characteristic` | ✓ | |  |  |
-| `CharcInternalID` |  | |  |  |
-| `_Column` | | ✓ | | |
-| `_Table` | | ✓ | | |
-| `_ValueAssignmentAlternative` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |  |  |
+| `VarConfignTblValAssgmtAltvID` | ✓ | |  |  |  |  |
+| `Characteristic` | ✓ | |  |  |  |  |
+| `CharcInternalID` |  | |  |  |  |  |
+| `_Column` | | ✓ | | | | |
+| `_Table` | | ✓ | | | | |
+| `_ValueAssignmentAlternative` | | ✓ | | | | |
 
 ## Source Code
 

@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentType` | ✓ | | `_CnsldtnBillingDocumentType` | `BillingDocumentType` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnBillingDocumentType` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnBillingDocTypeTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnBillingDocTypeTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentType` | ✓ | | `_CnsldtnBillingDocumentType` | `BillingDocumentType` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnBillingDocumentType` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnBillingDocTypeTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnBillingDocTypeTextTP` |  |  |
 
 ## Source Code
 

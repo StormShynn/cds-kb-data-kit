@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSubsetFieldCombination` | ✓ | |  | `slwbez` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspSubsetFldCombinationTxt` |  | |  | `kurztext` |
-| `InspSubsetMaterialSampleName` |  | |  | `phynrslw` |
-| `InspSubsetEquipmentName` |  | |  | `equnrslw` |
-| `InspSubsetFuncnlLocName` |  | |  | `tplnrslw` |
-| `InspSubsetShopFloorItemName` |  | |  | `sfi_id_slw` |
-| `InspSubsetShortTxtFieldName` |  | |  | `userc1slw` |
-| `InspSubsetLongTxtFieldName` |  | |  | `userc2slw` |
-| `InspSubsetDateFieldName` |  | |  | `userd1slw` |
-| `InspSubsetShortNmbrFieldName` |  | |  | `usern1slw` |
-| `InspSubsetLongNmbrFieldName` |  | |  | `usern2slw` |
-| `InspSubsetTimeFieldName` |  | |  | `usert1slw` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSubsetFieldCombination` | ✓ | |  | `slwbez` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspSubsetFldCombinationTxt` |  | |  | `kurztext` |  |  |
+| `InspSubsetMaterialSampleName` |  | |  | `phynrslw` |  |  |
+| `InspSubsetEquipmentName` |  | |  | `equnrslw` |  |  |
+| `InspSubsetFuncnlLocName` |  | |  | `tplnrslw` |  |  |
+| `InspSubsetShopFloorItemName` |  | |  | `sfi_id_slw` |  |  |
+| `InspSubsetShortTxtFieldName` |  | |  | `userc1slw` |  |  |
+| `InspSubsetLongTxtFieldName` |  | |  | `userc2slw` |  |  |
+| `InspSubsetDateFieldName` |  | |  | `userd1slw` |  |  |
+| `InspSubsetShortNmbrFieldName` |  | |  | `usern1slw` |  |  |
+| `InspSubsetLongNmbrFieldName` |  | |  | `usern2slw` |  |  |
+| `InspSubsetTimeFieldName` |  | |  | `usert1slw` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

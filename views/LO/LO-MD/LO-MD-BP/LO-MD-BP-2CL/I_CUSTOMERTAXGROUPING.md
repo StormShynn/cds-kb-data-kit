@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `CustomerTaxGroupingCode` | ✓ | |  | `taxgr` |
-| `CustomerAccountGroup` |  | | `_Customer` | `CustomerAccountGroup` |
-| `AuthorizationGroup` |  | | `_Customer` | `AuthorizationGroup` |
-| `CustTaxGrpExemptionCertificate` |  | |  | `exnr` |
-| `CustTaxGroupExemptionRate` |  | |  | `exrt` |
-| `CustTaxGroupExemptionStartDate` |  | |  | `exdf` |
-| `CustTaxGroupExemptionEndDate` |  | |  | `exdt` |
-| `CustTaxGroupSubjectedStartDate` |  | |  | `sbjdf` |
-| `CustTaxGroupSubjectedEndDate` |  | |  | `sbjdt` |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `CustomerTaxGroupingCode` | ✓ | |  | `taxgr` |  |  |
+| `CustomerAccountGroup` |  | | `_Customer` | `CustomerAccountGroup` |  |  |
+| `AuthorizationGroup` |  | | `_Customer` | `AuthorizationGroup` |  |  |
+| `CustTaxGrpExemptionCertificate` |  | |  | `exnr` |  |  |
+| `CustTaxGroupExemptionRate` |  | |  | `exrt` |  |  |
+| `CustTaxGroupExemptionStartDate` |  | |  | `exdf` |  |  |
+| `CustTaxGroupExemptionEndDate` |  | |  | `exdt` |  |  |
+| `CustTaxGroupSubjectedStartDate` |  | |  | `sbjdf` |  |  |
+| `CustTaxGroupSubjectedEndDate` |  | |  | `sbjdt` |  |  |
+| `_Customer` | | ✓ | | | | |
 
 ## Associations
 

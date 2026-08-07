@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InboundDelivery` | ✓ | |  |  |
-| `InboundDeliveryItem` | ✓ | |  |  |
-| `SerialNumber` | ✓ | |  |  |
-| `Equipment` |  | |  |  |
-| `Material` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_Delivery` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InboundDelivery` | ✓ | |  |  |  |  |
+| `InboundDeliveryItem` | ✓ | |  |  |  |  |
+| `SerialNumber` | ✓ | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_Delivery` | | ✓ | | | | |
 
 ## Source Code
 

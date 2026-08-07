@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` |
-| `_LabOfficeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` |  |  |
+| `_LabOfficeText` | | ✓ | | | | |
 
 ## Associations
 

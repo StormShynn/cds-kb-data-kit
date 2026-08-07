@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractItem` | ✓ | |  |  |
-| `ConditionRecord` | ✓ | |  |  |
-| `ConditionValidityEndDate` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionValidityStartDate` |  | |  |  |
-| `ConditionIsDeleted` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_ContractItem` | | ✓ | | |
-| `_PurContract` | | ✓ | | |
-| `_PurContrItemCndnAmount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |  |  |
+| `ConditionRecord` | ✓ | |  |  |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionValidityStartDate` |  | |  |  |  |  |
+| `ConditionIsDeleted` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_ContractItem` | | ✓ | | | | |
+| `_PurContract` | | ✓ | | | | |
+| `_PurContrItemCndnAmount` | | ✓ | | | | |
 
 ## Source Code
 

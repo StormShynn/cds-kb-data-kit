@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JntVntrSuspenseStatus` | ✓ | |  | `cast (left(domvalue_l, 1) as jv_suspense_status_cds preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `JntVntrSuspenseStatusText` |  | |  | `cast( ddtext as jv_suspsts_text_cds preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JntVntrSuspenseStatus` | ✓ | |  | `cast (left(domvalue_l, 1) as jv_suspense_status_cds preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `JntVntrSuspenseStatusText` |  | |  | `cast( ddtext as jv_suspsts_text_cds preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

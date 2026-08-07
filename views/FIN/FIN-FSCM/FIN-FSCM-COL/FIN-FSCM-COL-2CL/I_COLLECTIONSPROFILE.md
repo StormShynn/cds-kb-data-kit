@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CollectionProfile` |  | |  | `} key coll_profile` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollectionProfile` | ✓ | |  | `coll_profile` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

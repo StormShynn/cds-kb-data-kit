@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land` |
-| `Language` | ✓ | |  | `spras` |
-| `TaxDepreciationGroup` | ✓ | |  | `glo_tax_depr_grp` |
-| `TaxDepreciationGroupDesc` |  | |  | `glo_tax_depr_grp_desc` |
-| `_Country` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TaxDepreciationGroup` | ✓ | |  | `glo_tax_depr_grp` |  |  |
+| `TaxDepreciationGroupDesc` |  | |  | `glo_tax_depr_grp_desc` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

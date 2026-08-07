@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusVolTableGroup` | ✓ | |  | `bvtab_group` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolTableGroup` | ✓ | |  | `bvtab_group` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PickingStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `PickingStatusName` |  | |  | `bezei` |
-| `_PickingStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PickingStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PickingStatusName` |  | |  | `bezei` |  |  |
+| `_PickingStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReturnReason` | ✓ | |  | `ret_reason` |
-| `Language` | ✓ | |  | `spras` |
-| `ReturnReasonName` |  | |  | `bezei` |
-| `_ReturnReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReturnReason` | ✓ | |  | `ret_reason` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ReturnReasonName` |  | |  | `bezei` |  |  |
+| `_ReturnReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

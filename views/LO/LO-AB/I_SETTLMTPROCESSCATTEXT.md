@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SettlmtProcessCat` | ✓ | |  | `cast(dd07t.domvalue_l as wlf_settlmt_process_cat )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SettlmtProcessCatName` |  | |  | `cast( dd07t.ddtext as wlf_wbtyp_name preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_SettlmtProcessCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtProcessCat` | ✓ | |  | `cast(dd07t.domvalue_l as wlf_settlmt_process_cat )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SettlmtProcessCatName` |  | |  | `cast( dd07t.ddtext as wlf_wbtyp_name preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SettlmtProcessCat` | | ✓ | | | | |
 
 ## Associations
 

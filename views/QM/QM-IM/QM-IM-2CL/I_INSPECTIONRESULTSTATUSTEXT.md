@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionResultStatus` | ✓ | |  | `status` |
-| `InspectionResultStatusText` |  | |  | `cast( tq76t.kurztext as vdm_qinspresultstatus_text preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionResultStatus` | ✓ | |  | `status` |  |  |
+| `InspectionResultStatusText` |  | |  | `cast( tq76t.kurztext as vdm_qinspresultstatus_text preserving type )` |  |  |
 
 ## Source Code
 

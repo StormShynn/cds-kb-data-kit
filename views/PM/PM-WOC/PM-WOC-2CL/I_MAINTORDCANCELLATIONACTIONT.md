@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `MaintOrdCancellationAction` | ✓ | |  | `cast( dd07t.domvalue_l as maintordcancellationaction )` |
-| `MaintOrdCancellationActionTxt` |  | |  | `cast( dd07t.ddtext as maintordcancellationactiontxt preserving type )` |
-| `_Language` | | ✓ | | |
-| `_MaintOrdCancellationAction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `MaintOrdCancellationAction` | ✓ | |  | `cast( dd07t.domvalue_l as maintordcancellationaction )` |  |  |
+| `MaintOrdCancellationActionTxt` |  | |  | `cast( dd07t.ddtext as maintordcancellationactiontxt preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_MaintOrdCancellationAction` | | ✓ | | | | |
 
 ## Associations
 

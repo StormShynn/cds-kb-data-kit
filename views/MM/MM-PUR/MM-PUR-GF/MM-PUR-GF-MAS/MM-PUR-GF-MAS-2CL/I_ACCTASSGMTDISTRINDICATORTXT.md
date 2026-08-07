@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `MultipleAcctAssgmtDistribution` | ✓ | |  | `domvalue_l` |
-| `DistributionKeyText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_DistributionInd` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `MultipleAcctAssgmtDistribution` | ✓ | |  | `domvalue_l` |  |  |
+| `DistributionKeyText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_DistributionInd` | | ✓ | | | | |
 
 ## Associations
 

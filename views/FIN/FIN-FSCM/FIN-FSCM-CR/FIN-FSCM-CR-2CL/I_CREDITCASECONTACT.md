@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserID` | ✓ | |  | `ContactCardID` |
-| `FullName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserID` | ✓ | |  | `ContactCardID` |  |  |
+| `FullName` |  | |  |  |  |  |
 
 ## Source Code
 

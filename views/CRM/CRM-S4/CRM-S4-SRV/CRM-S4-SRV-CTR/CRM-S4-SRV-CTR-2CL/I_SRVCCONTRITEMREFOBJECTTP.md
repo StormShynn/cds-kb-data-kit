@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `ServiceContractItem` | ✓ | |  |  |
-| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |
-| `ServiceReferenceEquipment` |  | |  |  |
-| `ServiceRefFunctionalLocation` |  | |  |  |
-| `ServiceReferenceProduct` |  | |  |  |
-| `_ServiceContractItemTP` | | ✓ | | |
-| `_ServiceContractTP` | | ✓ | | |
-| `_EquipmentText` | | ✓ | | |
-| `_FunctionalLocationText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `ServiceContractItem` | ✓ | |  |  |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |  |  |
+| `ServiceReferenceEquipment` |  | |  |  |  |  |
+| `ServiceRefFunctionalLocation` |  | |  |  |  |  |
+| `ServiceReferenceProduct` |  | |  |  |  |  |
+| `_ServiceContractItemTP` | | ✓ | | | | |
+| `_ServiceContractTP` | | ✓ | | | | |
+| `_EquipmentText` | | ✓ | | | | |
+| `_FunctionalLocationText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAOverdueItemOrigin` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as overdue_item_origin_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAOverdueItemOriginText` |  | |  | `cast( ddtext as overdue_item_origin_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAOverdueItemOrigin` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as overdue_item_origin_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAOverdueItemOriginText` |  | |  | `cast( ddtext as overdue_item_origin_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

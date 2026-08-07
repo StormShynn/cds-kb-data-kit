@@ -28,45 +28,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |
-| `KR_EDocIncgInvcApprovalNo` |  | |  | `apprvl_no` |
-| `KR_EDocIncgInvcSupplier` |  | |  | `vendor` |
-| `KR_EDocIncgInvcSupplierName` |  | |  | `vendor_name` |
-| `KR_EDocIncgInvcTaxBaseValue` |  | |  | `tax_base_amt` |
-| `KR_EDocIncgInvcTaxValue` |  | |  | `tax_amount` |
-| `KR_EDocIncgInvcAmountValue` |  | |  | `amount` |
-| `KR_EDocIncgInvcTransferDate` |  | |  | `transfer_date` |
-| `KR_EDocIncgInvcDocumentNo` |  | |  | `belnr` |
-| `KR_EDocIncgInvcInvoiceDate` |  | |  | `invoice_date` |
-| `KR_EDocIncgInvcIssueDate` |  | |  | `issue_date` |
-| `KR_EDocIncgInvcSuplrBizRegnNo` |  | |  | `s_supplier_stcd2` |
-| `KR_EDocIncgInvcSuplrBizPlace` |  | |  | `s_business_place` |
-| `KR_EDocIncgInvcSuplrCoName` |  | |  | `s_company_name` |
-| `KR_EDocIncgInvcSuplrRprstvName` |  | |  | `s_repres` |
-| `KR_EDocIncgInvcSuplrAddressTxt` |  | |  | `s_address` |
-| `KR_EDocIncgInvcBuyerBizRegnNo` |  | |  | `b_supplier_stcd2` |
-| `KR_EDocIncgInvcBuyerBizPlace` |  | |  | `b_business_place` |
-| `KR_EDocIncgInvcBuyerCoName` |  | |  | `b_company_name` |
-| `KR_EDocIncgInvcBuyerRprstvName` |  | |  | `b_repres` |
-| `KR_EDocIncgInvcBuyerAddressTxt` |  | |  | `b_address` |
-| `KR_EDocIncgInvcClassification` |  | |  | `invc_clfn` |
-| `KR_EDocIncgInvcType` |  | |  | `invoice_type` |
-| `KR_EDocIncgInvcIssuanceType` |  | |  | `issuance_type` |
-| `KR_EDocIncgInvcRemarkText` |  | |  | `remark` |
-| `KR_EDocIncgInvcReceiptBilling` |  | |  | `rcpt_billg` |
-| `KR_EDocIncgInvcSuplrEmail` |  | |  | `buyer_email` |
-| `KR_EDocIncgInvcBuyerEmail1` |  | |  | `buyer_email1` |
-| `KR_EDocIncgInvcBuyerEmail2` |  | |  | `buyer_email2` |
-| `KR_EDocIncgInvcItemDate` |  | |  | `item_date` |
-| `KR_EDocIncgInvcItemName` |  | |  | `item_name` |
-| `KR_EDocIncgInvcItemUnit` |  | |  | `item_unit` |
-| `KR_EDocIncgInvcItemQuantityVal` |  | |  | `item_quantity` |
-| `KR_EDocIncgInvcItemUnitPrcVal` |  | |  | `item_unit_price` |
-| `KR_EDocIncgInvcItemBaseValue` |  | |  | `item_base_amt` |
-| `KR_EDocIncgInvcItemTaxValue` |  | |  | `item_tax_amount` |
-| `KR_EDocIncgInvcItemRemarkText` |  | |  | `item_remarks` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
+| `KR_EDocIncgInvcApprovalNo` |  | |  | `apprvl_no` |  |  |
+| `KR_EDocIncgInvcSupplier` |  | |  | `vendor` |  |  |
+| `KR_EDocIncgInvcSupplierName` |  | |  | `vendor_name` |  |  |
+| `KR_EDocIncgInvcTaxBaseValue` |  | |  | `tax_base_amt` |  |  |
+| `KR_EDocIncgInvcTaxValue` |  | |  | `tax_amount` |  |  |
+| `KR_EDocIncgInvcAmountValue` |  | |  | `amount` |  |  |
+| `KR_EDocIncgInvcTransferDate` |  | |  | `transfer_date` |  |  |
+| `KR_EDocIncgInvcDocumentNo` |  | |  | `belnr` |  |  |
+| `KR_EDocIncgInvcInvoiceDate` |  | |  | `invoice_date` |  |  |
+| `KR_EDocIncgInvcIssueDate` |  | |  | `issue_date` |  |  |
+| `KR_EDocIncgInvcSuplrBizRegnNo` |  | |  | `s_supplier_stcd2` |  |  |
+| `KR_EDocIncgInvcSuplrBizPlace` |  | |  | `s_business_place` |  |  |
+| `KR_EDocIncgInvcSuplrCoName` |  | |  | `s_company_name` |  |  |
+| `KR_EDocIncgInvcSuplrRprstvName` |  | |  | `s_repres` |  |  |
+| `KR_EDocIncgInvcSuplrAddressTxt` |  | |  | `s_address` |  |  |
+| `KR_EDocIncgInvcBuyerBizRegnNo` |  | |  | `b_supplier_stcd2` |  |  |
+| `KR_EDocIncgInvcBuyerBizPlace` |  | |  | `b_business_place` |  |  |
+| `KR_EDocIncgInvcBuyerCoName` |  | |  | `b_company_name` |  |  |
+| `KR_EDocIncgInvcBuyerRprstvName` |  | |  | `b_repres` |  |  |
+| `KR_EDocIncgInvcBuyerAddressTxt` |  | |  | `b_address` |  |  |
+| `KR_EDocIncgInvcClassification` |  | |  | `invc_clfn` |  |  |
+| `KR_EDocIncgInvcType` |  | |  | `invoice_type` |  |  |
+| `KR_EDocIncgInvcIssuanceType` |  | |  | `issuance_type` |  |  |
+| `KR_EDocIncgInvcRemarkText` |  | |  | `remark` |  |  |
+| `KR_EDocIncgInvcReceiptBilling` |  | |  | `rcpt_billg` |  |  |
+| `KR_EDocIncgInvcSuplrEmail` |  | |  | `buyer_email` |  |  |
+| `KR_EDocIncgInvcBuyerEmail1` |  | |  | `buyer_email1` |  |  |
+| `KR_EDocIncgInvcBuyerEmail2` |  | |  | `buyer_email2` |  |  |
+| `KR_EDocIncgInvcItemDate` |  | |  | `item_date` |  |  |
+| `KR_EDocIncgInvcItemName` |  | |  | `item_name` |  |  |
+| `KR_EDocIncgInvcItemUnit` |  | |  | `item_unit` |  |  |
+| `KR_EDocIncgInvcItemQuantityVal` |  | |  | `item_quantity` |  |  |
+| `KR_EDocIncgInvcItemUnitPrcVal` |  | |  | `item_unit_price` |  |  |
+| `KR_EDocIncgInvcItemBaseValue` |  | |  | `item_base_amt` |  |  |
+| `KR_EDocIncgInvcItemTaxValue` |  | |  | `item_tax_amount` |  |  |
+| `KR_EDocIncgInvcItemRemarkText` |  | |  | `item_remarks` |  |  |
 
 ## Source Code
 

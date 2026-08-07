@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SelectedCodeSetPlant` | ✓ | |  |  |
-| `SelectedCodeSet` | ✓ | |  |  |
-| `SelectedCodeSetText` |  | |  |  |
-| `InspectionSelectedSetStatus` |  | |  |  |
-| `_SelectedCodeSetPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SelectedCodeSetPlant` | ✓ | |  |  |  |  |
+| `SelectedCodeSet` | ✓ | |  |  |  |  |
+| `SelectedCodeSetText` |  | |  |  |  |  |
+| `InspectionSelectedSetStatus` |  | |  |  |  |  |
+| `_SelectedCodeSetPlant` | | ✓ | | | | |
 
 ## Source Code
 

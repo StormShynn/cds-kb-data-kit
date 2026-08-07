@@ -38,21 +38,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Id` | ✓ | |  |  |
-| `HeaderId` |  | |  |  |
-| `Name` |  | |  |  |
-| `Description` |  | |  |  |
-| `ReleaseDate` |  | |  |  |
-| `DiscontinuedDate` |  | |  |  |
-| `Price` |  | |  |  |
-| `Height` |  | |  |  |
-| `Width` |  | |  |  |
-| `Depth` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `UnitOfMeasure` |  | |  |  |
-| `_Header` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Id` | ✓ | |  |  |  |  |
+| `HeaderId` |  | |  |  |  |  |
+| `Name` |  | |  |  |  |  |
+| `Description` |  | |  |  |  |  |
+| `ReleaseDate` |  | |  |  |  |  |
+| `DiscontinuedDate` |  | |  |  |  |  |
+| `Price` |  | |  |  |  |  |
+| `Height` |  | |  |  |  |  |
+| `Width` |  | |  |  |  |  |
+| `Depth` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `UnitOfMeasure` |  | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
 
 ## Source Code
 

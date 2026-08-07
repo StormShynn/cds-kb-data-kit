@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdStageCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_stage_category preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspOrdStageCategoryDesc` |  | |  | `cast(ddtext as /scmtms/vdm_stage_cat_desc preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdStageCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStageCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_stage_category preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspOrdStageCategoryDesc` |  | |  | `cast(ddtext as /scmtms/vdm_stage_cat_desc preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdStageCategory` | | ✓ | | | | |
 
 ## Associations
 

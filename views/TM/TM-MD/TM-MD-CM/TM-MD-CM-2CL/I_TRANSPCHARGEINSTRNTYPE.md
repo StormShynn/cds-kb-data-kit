@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChargeInstrnType` | ✓ | |  | `cast(substring(domvalue_l, 1, 6) as /scmtms/trcharg_clc_res_instr preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChargeInstrnType` | ✓ | |  | `cast(substring(domvalue_l, 1, 6) as /scmtms/trcharg_clc_res_instr preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

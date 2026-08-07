@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASrvcDisconncnReqStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as disreq_status_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CASrvcDisconncnReqStatusText` |  | |  | `cast( ddtext as disreq_status_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASrvcDisconncnReqStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as disreq_status_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CASrvcDisconncnReqStatusText` |  | |  | `cast( ddtext as disreq_status_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `SamplingScheme` | ✓ | |  | `stprplan` |
-| `SamplingSchemeText` |  | |  | `cast( qdpkt.kurztext as vdm_qstprplan_text preserving type )` |
-| `_SamplingScheme` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `SamplingScheme` | ✓ | |  | `stprplan` |  |  |
+| `SamplingSchemeText` |  | |  | `cast( qdpkt.kurztext as vdm_qstprplan_text preserving type )` |  |  |
+| `_SamplingScheme` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

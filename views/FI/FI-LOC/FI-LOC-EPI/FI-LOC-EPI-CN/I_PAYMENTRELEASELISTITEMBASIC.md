@@ -31,139 +31,139 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentReleaseListItemUUID` | ✓ | |  | `guid` |
-| `PaymentReleaseList` |  | |  | `cast ( list_id as fprl_list_id preserving type)` |
-| `PaymentReleaseListItemStatus` |  | |  | `cast ( status as fprl_item_status preserving type )` |
-| `PaytRelListItemApprovalLevel` |  | |  | `cast ( alevel as fprl_level preserving type )` |
-| `CreatedByUser` |  | |  | `crea_user` |
-| `LastChangedByUser` |  | |  | `change_user` |
-| `PaymentReleaseListApplication` |  | |  | `cast ( applic as fprl_application preserving type )` |
-| `CompanyCode` |  | |  | `cast( bukrs as bukrs preserving type )` |
-| `AccountingDocument` |  | |  | `belnr` |
-| `FiscalYear` |  | |  | `gjahr` |
-| `AccountingDocumentItem` |  | |  | `buzei` |
-| `Supplier` |  | |  | `cast ( lifnr as lifnr preserving type )` |
-| `Customer` |  | |  | `cast ( kunnr as kunnr preserving type )` |
-| `BranchAccount` |  | |  | `filkd` |
-| `PayerPayee` |  | |  | `empfb` |
-| `PartnerCompany` |  | |  | `cast ( vbund as rassc preserving type )` |
-| `DebitCreditCode` |  | |  | `shkzg` |
-| `TransactionCurrency` |  | |  | `cast ( waers as waers preserving type )` |
-| `AmountInTransactionCurrency` |  | |  | `} wrbtr` |
-| `CashDiscountBaseAmount` |  | |  | `} skfbt` |
-| `CashDiscountAmtInTransacCrcy` |  | |  | `} wskto` |
-| `WhldgTaxAmtInTransacCrcy` |  | |  | `} qbshb` |
-| `BalanceTransactionCurrency` |  | |  | `pswsl` |
-| `AmountInBalanceTransacCrcy` |  | |  | `} pswbt` |
-| `CashDiscountAmount` |  | |  | `} psskt` |
-| `AccountingDocumentType` |  | |  | `cast ( blart as blart preserving type )` |
-| `PostingDate` |  | |  | `budat` |
-| `DocumentDate` |  | |  | `bldat` |
-| `FinancialAccountType` |  | |  | `koart` |
-| `PostingKey` |  | |  | `cast ( bschl as bschl preserving type )` |
-| `GLAccount` |  | |  | `cast ( hkont as hkont preserving type )` |
-| `OperationalGLAccount` |  | |  | `cast ( saknr as saknr preserving type )` |
-| `SpecialGLCode` |  | |  | `cast ( umskz as umskz preserving type )` |
-| `BusinessArea` |  | |  | `cast ( gsber as gsber preserving type )` |
-| `TaxCode` |  | |  | `mwskz` |
-| `WithholdingTaxCode` |  | |  | `qsskz` |
-| `DocumentItemText` |  | |  | `sgtxt` |
-| `DueCalculationBaseDate` |  | |  | `zfbdt` |
-| `CashDiscount1Days` |  | |  | `zbd1t` |
-| `CashDiscount2Days` |  | |  | `zbd2t` |
-| `NetPaymentDays` |  | |  | `zbd3t` |
-| `CashDiscount1Percent` |  | |  | `zbd1p` |
-| `CashDiscount2Percent` |  | |  | `zbd2p` |
-| `PurchasingDocument` |  | |  | `cast ( ebeln as ebeln preserving type )` |
-| `PurchasingDocumentItem` |  | |  | `cast ( ebelp as ebelp preserving type )` |
-| `VATRegistration` |  | |  | `stceg` |
-| `DocumentReferenceID` |  | |  | `xblnr` |
-| `StateCentralBankPaymentReason` |  | |  | `cast ( lzbkz as lzbkz preserving type )` |
-| `SupplyingCountry` |  | |  | `cast ( landl as landl preserving type )` |
-| `ProjectNetwork` |  | |  | `nplnr` |
-| `OrderInternalBillOfOperations` |  | |  | `aufpl` |
-| `AssignmentReference` |  | |  | `zuonr` |
-| `AssetContract` |  | |  | `vertn` |
-| `FollowOnDocumentType` |  | |  | `rebzt` |
-| `CostCenter` |  | |  | `kostl` |
-| `SalesDocument` |  | |  | `vbel2` |
-| `SalesDocumentItem` |  | |  | `posn2` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `Reference1IDByBusinessPartner` |  | |  | `xref1` |
-| `Reference2IDByBusinessPartner` |  | |  | `xref2` |
-| `Reference3IDByBusinessPartner` |  | |  | `xref3` |
-| `DataExchangeInstruction1` |  | |  | `dtws1` |
-| `DataExchangeInstruction2` |  | |  | `dtws2` |
-| `DataExchangeInstruction3` |  | |  | `dtws3` |
-| `DataExchangeInstruction4` |  | |  | `dtws4` |
-| `AddressAndBankIsSetManually` |  | |  | `xcpdd` |
-| `BusinessPlace` |  | |  | `bupla` |
-| `PartnerProfitCenter` |  | |  | `pprct` |
-| `GrantID` |  | |  | `grant_nbr` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `Fund` |  | |  | `geber` |
-| `PaymentRequest` | ✓ | |  | `keyno` |
-| `PaymentRequestAmountInPaytCrcy` |  | |  | `} pamtf` |
-| `PaymentRequestOrigin` |  | |  | `origin` |
-| `CurrentProcessor` |  | |  | `epic_processor` |
-| `PaymentItemStatus` |  | |  | `epic_status` |
-| `ReferencePurchasingDocument` |  | |  | `ebeln_co` |
-| `EarmarkedFundsDocument` |  | |  | `kblnr` |
-| `TaxID2` |  | |  | `stcd2` |
-| `PaymentRunItemMessageNumber` |  | |  | `poken` |
-| `PaymentBlockingReason` |  | |  | `cast ( zlspr as dzlspr preserving type )` |
-| `PaymentRunDate` |  | |  | `laufd_pay` |
-| `PaymentRunID` |  | |  | `laufi_pay` |
-| `PaymentDocument` |  | |  | `vblnr_pay` |
-| `PaymentOrder` |  | |  | `pyord_pay` |
-| `ProposalRunDate` |  | |  | `laufd` |
-| `ProposalRunNumber` |  | |  | `laufi` |
-| `PayingCompanyCode` |  | |  | `cast ( zbukr as dzbukr preserving type )` |
-| `SendingCompanyCode` |  | |  | `absbu` |
-| `PayeeAdditionalName` |  | |  | `znme1` |
-| `PayeePostalCode` |  | |  | `zpstl` |
-| `PayeeCityName` |  | |  | `zort1` |
-| `PayeeCountry` |  | |  | `zland` |
-| `PayeeRegion` |  | |  | `zregi` |
-| `PayeeLanguage` |  | |  | `zspra` |
-| `Name` |  | |  | `name1` |
-| `PayeeBankCountry` |  | |  | `zbnks` |
-| `PayeeBank` |  | |  | `zbnky` |
-| `PayeeBankNumber` |  | |  | `zbnkl` |
-| `PayeeBankAccount` |  | |  | `zbnkn` |
-| `PayeeBankControlKey` |  | |  | `zbkon` |
-| `BankDetailReference` |  | |  | `bkref` |
-| `PayeeBankIdentifierCode` |  | |  | `zswif` |
-| `PayeeIBAN` |  | |  | `ziban` |
-| `BankAccountHolderName` |  | |  | `koinh` |
-| `HouseBankAccount` |  | |  | `hktid` |
-| `HouseBank` |  | |  | `cast ( hbkid as hbkid preserving type )` |
-| `BankCountry` |  | |  | `ubnks` |
-| `Bank` |  | |  | `ubnky` |
-| `BankNumber` |  | |  | `ubnkl` |
-| `BankAccount` |  | |  | `ubknt` |
-| `BankControlKey` |  | |  | `ubkon` |
-| `GLAccountForBankAccount` |  | |  | `ubhkt` |
-| `SupplierPaymentMethod` |  | |  | `cast ( rzawe as dzlsch preserving type )` |
-| `PaymentMethodSupplement` |  | |  | `cast ( uzawe as uzawe preserving type )` |
-| `DataExchangeInstructionKey` |  | |  | `dtaws` |
-| `PaymentDocumentPostingDate` |  | |  | `zaldt` |
-| `ValueDate` |  | |  | `valut` |
-| `PaidItemDueDate` |  | |  | `ausfd` |
-| `BillOfExchangeDueDate` |  | |  | `wefae` |
-| `BillOfExchangeIssueDate` |  | |  | `wdate` |
-| `AccountingClerk` |  | |  | `busab` |
-| `AccountByShipper` |  | |  | `eikto` |
-| `PaymentReference` |  | |  | `kidno` |
-| `SEPAMandateUUID` |  | |  | `mguid` |
-| `SEPAMandate` |  | |  | `mndid` |
-| `InvoiceReference` |  | |  | `inv_no` |
-| `InvoiceReferenceFiscalYear` |  | |  | `inv_year` |
-| `InvoiceItemReference` |  | |  | `inv_item` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `ValidityEndDate` |  | |  | `datbi` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentReleaseListItemUUID` | ✓ | |  | `guid` |  |  |
+| `PaymentReleaseList` |  | |  | `cast ( list_id as fprl_list_id preserving type)` |  |  |
+| `PaymentReleaseListItemStatus` |  | |  | `cast ( status as fprl_item_status preserving type )` |  |  |
+| `PaytRelListItemApprovalLevel` |  | |  | `cast ( alevel as fprl_level preserving type )` |  |  |
+| `CreatedByUser` |  | |  | `crea_user` |  |  |
+| `LastChangedByUser` |  | |  | `change_user` |  |  |
+| `PaymentReleaseListApplication` |  | |  | `cast ( applic as fprl_application preserving type )` |  |  |
+| `CompanyCode` |  | |  | `cast( bukrs as bukrs preserving type )` |  |  |
+| `AccountingDocument` |  | |  | `belnr` |  |  |
+| `FiscalYear` |  | |  | `gjahr` |  |  |
+| `AccountingDocumentItem` |  | |  | `buzei` |  |  |
+| `Supplier` |  | |  | `cast ( lifnr as lifnr preserving type )` |  |  |
+| `Customer` |  | |  | `cast ( kunnr as kunnr preserving type )` |  |  |
+| `BranchAccount` |  | |  | `filkd` |  |  |
+| `PayerPayee` |  | |  | `empfb` |  |  |
+| `PartnerCompany` |  | |  | `cast ( vbund as rassc preserving type )` |  |  |
+| `DebitCreditCode` |  | |  | `shkzg` |  |  |
+| `TransactionCurrency` |  | |  | `cast ( waers as waers preserving type )` |  |  |
+| `AmountInTransactionCurrency` |  | |  | `wrbtr` |  |  |
+| `CashDiscountBaseAmount` |  | |  | `skfbt` |  |  |
+| `CashDiscountAmtInTransacCrcy` |  | |  | `wskto` |  |  |
+| `WhldgTaxAmtInTransacCrcy` |  | |  | `qbshb` |  |  |
+| `BalanceTransactionCurrency` |  | |  | `pswsl` |  |  |
+| `AmountInBalanceTransacCrcy` |  | |  | `pswbt` |  |  |
+| `CashDiscountAmount` |  | |  | `psskt` |  |  |
+| `AccountingDocumentType` |  | |  | `cast ( blart as blart preserving type )` |  |  |
+| `PostingDate` |  | |  | `budat` |  |  |
+| `DocumentDate` |  | |  | `bldat` |  |  |
+| `FinancialAccountType` |  | |  | `koart` |  |  |
+| `PostingKey` |  | |  | `cast ( bschl as bschl preserving type )` |  |  |
+| `GLAccount` |  | |  | `cast ( hkont as hkont preserving type )` |  |  |
+| `OperationalGLAccount` |  | |  | `cast ( saknr as saknr preserving type )` |  |  |
+| `SpecialGLCode` |  | |  | `cast ( umskz as umskz preserving type )` |  |  |
+| `BusinessArea` |  | |  | `cast ( gsber as gsber preserving type )` |  |  |
+| `TaxCode` |  | |  | `mwskz` |  |  |
+| `WithholdingTaxCode` |  | |  | `qsskz` |  |  |
+| `DocumentItemText` |  | |  | `sgtxt` |  |  |
+| `DueCalculationBaseDate` |  | |  | `zfbdt` |  |  |
+| `CashDiscount1Days` |  | |  | `zbd1t` |  |  |
+| `CashDiscount2Days` |  | |  | `zbd2t` |  |  |
+| `NetPaymentDays` |  | |  | `zbd3t` |  |  |
+| `CashDiscount1Percent` |  | |  | `zbd1p` |  |  |
+| `CashDiscount2Percent` |  | |  | `zbd2p` |  |  |
+| `PurchasingDocument` |  | |  | `cast ( ebeln as ebeln preserving type )` |  |  |
+| `PurchasingDocumentItem` |  | |  | `cast ( ebelp as ebelp preserving type )` |  |  |
+| `VATRegistration` |  | |  | `stceg` |  |  |
+| `DocumentReferenceID` |  | |  | `xblnr` |  |  |
+| `StateCentralBankPaymentReason` |  | |  | `cast ( lzbkz as lzbkz preserving type )` |  |  |
+| `SupplyingCountry` |  | |  | `cast ( landl as landl preserving type )` |  |  |
+| `ProjectNetwork` |  | |  | `nplnr` |  |  |
+| `OrderInternalBillOfOperations` |  | |  | `aufpl` |  |  |
+| `AssignmentReference` |  | |  | `zuonr` |  |  |
+| `AssetContract` |  | |  | `vertn` |  |  |
+| `FollowOnDocumentType` |  | |  | `rebzt` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `SalesDocument` |  | |  | `vbel2` |  |  |
+| `SalesDocumentItem` |  | |  | `posn2` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `Reference1IDByBusinessPartner` |  | |  | `xref1` |  |  |
+| `Reference2IDByBusinessPartner` |  | |  | `xref2` |  |  |
+| `Reference3IDByBusinessPartner` |  | |  | `xref3` |  |  |
+| `DataExchangeInstruction1` |  | |  | `dtws1` |  |  |
+| `DataExchangeInstruction2` |  | |  | `dtws2` |  |  |
+| `DataExchangeInstruction3` |  | |  | `dtws3` |  |  |
+| `DataExchangeInstruction4` |  | |  | `dtws4` |  |  |
+| `AddressAndBankIsSetManually` |  | |  | `xcpdd` |  |  |
+| `BusinessPlace` |  | |  | `bupla` |  |  |
+| `PartnerProfitCenter` |  | |  | `pprct` |  |  |
+| `GrantID` |  | |  | `grant_nbr` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `Fund` |  | |  | `geber` |  |  |
+| `PaymentRequest` | ✓ | |  | `keyno` |  |  |
+| `PaymentRequestAmountInPaytCrcy` |  | |  | `pamtf` |  |  |
+| `PaymentRequestOrigin` |  | |  | `origin` |  |  |
+| `CurrentProcessor` |  | |  | `epic_processor` |  |  |
+| `PaymentItemStatus` |  | |  | `epic_status` |  |  |
+| `ReferencePurchasingDocument` |  | |  | `ebeln_co` |  |  |
+| `EarmarkedFundsDocument` |  | |  | `kblnr` |  |  |
+| `TaxID2` |  | |  | `stcd2` |  |  |
+| `PaymentRunItemMessageNumber` |  | |  | `poken` |  |  |
+| `PaymentBlockingReason` |  | |  | `cast ( zlspr as dzlspr preserving type )` |  |  |
+| `PaymentRunDate` |  | |  | `laufd_pay` |  |  |
+| `PaymentRunID` |  | |  | `laufi_pay` |  |  |
+| `PaymentDocument` |  | |  | `vblnr_pay` |  |  |
+| `PaymentOrder` |  | |  | `pyord_pay` |  |  |
+| `ProposalRunDate` |  | |  | `laufd` |  |  |
+| `ProposalRunNumber` |  | |  | `laufi` |  |  |
+| `PayingCompanyCode` |  | |  | `cast ( zbukr as dzbukr preserving type )` |  |  |
+| `SendingCompanyCode` |  | |  | `absbu` |  |  |
+| `PayeeAdditionalName` |  | |  | `znme1` |  |  |
+| `PayeePostalCode` |  | |  | `zpstl` |  |  |
+| `PayeeCityName` |  | |  | `zort1` |  |  |
+| `PayeeCountry` |  | |  | `zland` |  |  |
+| `PayeeRegion` |  | |  | `zregi` |  |  |
+| `PayeeLanguage` |  | |  | `zspra` |  |  |
+| `Name` |  | |  | `name1` |  |  |
+| `PayeeBankCountry` |  | |  | `zbnks` |  |  |
+| `PayeeBank` |  | |  | `zbnky` |  |  |
+| `PayeeBankNumber` |  | |  | `zbnkl` |  |  |
+| `PayeeBankAccount` |  | |  | `zbnkn` |  |  |
+| `PayeeBankControlKey` |  | |  | `zbkon` |  |  |
+| `BankDetailReference` |  | |  | `bkref` |  |  |
+| `PayeeBankIdentifierCode` |  | |  | `zswif` |  |  |
+| `PayeeIBAN` |  | |  | `ziban` |  |  |
+| `BankAccountHolderName` |  | |  | `koinh` |  |  |
+| `HouseBankAccount` |  | |  | `hktid` |  |  |
+| `HouseBank` |  | |  | `cast ( hbkid as hbkid preserving type )` |  |  |
+| `BankCountry` |  | |  | `ubnks` |  |  |
+| `Bank` |  | |  | `ubnky` |  |  |
+| `BankNumber` |  | |  | `ubnkl` |  |  |
+| `BankAccount` |  | |  | `ubknt` |  |  |
+| `BankControlKey` |  | |  | `ubkon` |  |  |
+| `GLAccountForBankAccount` |  | |  | `ubhkt` |  |  |
+| `SupplierPaymentMethod` |  | |  | `cast ( rzawe as dzlsch preserving type )` |  |  |
+| `PaymentMethodSupplement` |  | |  | `cast ( uzawe as uzawe preserving type )` |  |  |
+| `DataExchangeInstructionKey` |  | |  | `dtaws` |  |  |
+| `PaymentDocumentPostingDate` |  | |  | `zaldt` |  |  |
+| `ValueDate` |  | |  | `valut` |  |  |
+| `PaidItemDueDate` |  | |  | `ausfd` |  |  |
+| `BillOfExchangeDueDate` |  | |  | `wefae` |  |  |
+| `BillOfExchangeIssueDate` |  | |  | `wdate` |  |  |
+| `AccountingClerk` |  | |  | `busab` |  |  |
+| `AccountByShipper` |  | |  | `eikto` |  |  |
+| `PaymentReference` |  | |  | `kidno` |  |  |
+| `SEPAMandateUUID` |  | |  | `mguid` |  |  |
+| `SEPAMandate` |  | |  | `mndid` |  |  |
+| `InvoiceReference` |  | |  | `inv_no` |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  | `inv_year` |  |  |
+| `InvoiceItemReference` |  | |  | `inv_item` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `ValidityEndDate` |  | |  | `datbi` |  |  |
 
 ## Associations
 

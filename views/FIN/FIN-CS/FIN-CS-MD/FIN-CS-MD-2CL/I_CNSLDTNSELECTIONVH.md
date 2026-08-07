@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationSelection` | ✓ | |  |  |
-| `FinancialSelection` |  | |  |  |
-| `ConsolidationSelectionText` |  | |  | `cast(_Text[1: Language=$session.system_language].ConsolidationSelectionText as fincs_description_text_80 preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationSelection` | ✓ | |  |  |  |  |
+| `FinancialSelection` |  | |  |  |  |  |
+| `ConsolidationSelectionText` |  | |  | `cast(_Text[1: Language=$session.system_language].ConsolidationSelectionText as fincs_description_text_80 preserving type )` |  |  |
 
 ## Source Code
 

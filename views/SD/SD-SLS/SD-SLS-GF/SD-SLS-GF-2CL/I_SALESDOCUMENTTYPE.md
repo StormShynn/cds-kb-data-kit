@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocumentType` | ✓ | |  | `auart` |
-| `SDDocumentCategory` |  | |  | `vbtyp` |
-| `MandatoryReferenceSDDocCat` |  | |  | `bezob` |
-| `SalesDocumentProcessingType` |  | |  | `vbklt` |
-| `ScreenSequenceGroup` |  | |  | `kopgr` |
-| `OrderTypeForBillingRequest` |  | |  | `aufak` |
-| `DeliveryBlockReason` |  | |  | `lifsk` |
-| `IsLocked` |  | |  | `sperr` |
-| `RetsMgmtIsActive` |  | |  | `msr_active` |
-| `TradeComplianceIsActive` |  | |  | `itmac` |
-| `TextDeterminationProcedure` |  | |  | `cast(txtgr as sls_doc_text_detn_head preserving type )` |
-| `PartnerDeterminationProcedure` |  | |  | `cast(pargr as sls_doc_partner_detn_head preserving type )` |
-| `SlsDocProdProposalProcedure` |  | |  | `pvbsm` |
-| `NumberRangeForIntIDAssignment` |  | |  | `numki` |
-| `NumberRangeForExtIDAssignment` |  | |  | `numke` |
-| `_Text` | | ✓ | | |
-| `_OrderTypeForBillingRequest` | | ✓ | | |
-| `_DeliveryBlockReason` | | ✓ | | |
-| `_TextDeterminationProcedure` | | ✓ | | |
-| `_PartDeterminationProcedure` | | ✓ | | |
-| `_SalesDocumentTypeLangDepdnt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocumentType` | ✓ | |  | `auart` |  |  |
+| `SDDocumentCategory` |  | |  | `vbtyp` |  |  |
+| `MandatoryReferenceSDDocCat` |  | |  | `bezob` |  |  |
+| `SalesDocumentProcessingType` |  | |  | `vbklt` |  |  |
+| `ScreenSequenceGroup` |  | |  | `kopgr` |  |  |
+| `OrderTypeForBillingRequest` |  | |  | `aufak` |  |  |
+| `DeliveryBlockReason` |  | |  | `lifsk` |  |  |
+| `IsLocked` |  | |  | `sperr` |  |  |
+| `RetsMgmtIsActive` |  | |  | `msr_active` |  |  |
+| `TradeComplianceIsActive` |  | |  | `itmac` |  |  |
+| `TextDeterminationProcedure` |  | |  | `cast(txtgr as sls_doc_text_detn_head preserving type )` |  |  |
+| `PartnerDeterminationProcedure` |  | |  | `cast(pargr as sls_doc_partner_detn_head preserving type )` |  |  |
+| `SlsDocProdProposalProcedure` |  | |  | `pvbsm` |  |  |
+| `NumberRangeForIntIDAssignment` |  | |  | `numki` |  |  |
+| `NumberRangeForExtIDAssignment` |  | |  | `numke` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_OrderTypeForBillingRequest` | | ✓ | | | | |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_TextDeterminationProcedure` | | ✓ | | | | |
+| `_PartDeterminationProcedure` | | ✓ | | | | |
+| `_SalesDocumentTypeLangDepdnt` | | ✓ | | | | |
 
 ## Associations
 

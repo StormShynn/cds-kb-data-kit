@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ObjectDependencyName` | ✓ | |  |  |
-| `LanguageCode` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ObjectDependencyDescription` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_ObjectDependency` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectDependencyName` | ✓ | |  |  |  |  |
+| `LanguageCode` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ObjectDependencyDescription` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_ObjectDependency` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

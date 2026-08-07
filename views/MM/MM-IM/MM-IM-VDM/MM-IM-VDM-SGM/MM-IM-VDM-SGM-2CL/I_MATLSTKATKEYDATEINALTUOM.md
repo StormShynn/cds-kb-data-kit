@@ -29,42 +29,42 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `Material` |
-| `Plant` | ✓ | |  |  |
-| `StorageLocation` | ✓ | |  |  |
-| `Batch` | ✓ | |  |  |
-| `Supplier` | ✓ | |  |  |
-| `SDDocument` | ✓ | |  |  |
-| `SDDocumentItem` | ✓ | |  |  |
-| `WBSElementInternalID` | ✓ | |  |  |
-| `Customer` | ✓ | |  |  |
-| `SpecialStockIdfgStockOwner` | ✓ | |  |  |
-| `InventoryStockType` | ✓ | |  |  |
-| `InventorySpecialStockType` | ✓ | |  |  |
-| `MaterialBaseUnit` | ✓ | |  |  |
-| `AlternativeUnit` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |
-| `MatlCnsmpnQtyInMatlBaseUnit` |  | |  |  |
-| `MatlStkIncrQtyInMatlBaseUnit` |  | |  |  |
-| `MatlStkDecrQtyInMatlBaseUnit` |  | |  |  |
-| `MatlWrhsStkQtyInAltUoM` |  | |  | `cast( fltp_to_dec( MatlWrhsStkQtyInAltUoM as abap.dec(31,14) ) as nsdm_stock_qty_auom )` |
-| `MatlCnsmpnQtyInAltUoM` |  | |  | `cast( fltp_to_dec( MatlCnsmpnQtyInAltUoM as abap.dec(31,14) ) as nsdm_consumption_qty_auom )` |
-| `MatlStkIncrQtyInAltUoM` |  | |  | `cast( fltp_to_dec( MatlStkIncrQtyInAltUoM as abap.dec(31,14) ) as nsdm_stock_increase_qty_auom )` |
-| `MatlStkDecrQtyInAltUoM` |  | |  | `cast( fltp_to_dec( MatlStkDecrQtyInAltUoM as abap.dec(31,14) ) as nsdm_stock_decrease_qty_auom )` |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_SpecialStockIdfgStockOwner` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_InventoryStockType` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `Material` |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `StorageLocation` | ✓ | |  |  |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `Supplier` | ✓ | |  |  |  |  |
+| `SDDocument` | ✓ | |  |  |  |  |
+| `SDDocumentItem` | ✓ | |  |  |  |  |
+| `WBSElementInternalID` | ✓ | |  |  |  |  |
+| `Customer` | ✓ | |  |  |  |  |
+| `SpecialStockIdfgStockOwner` | ✓ | |  |  |  |  |
+| `InventoryStockType` | ✓ | |  |  |  |  |
+| `InventorySpecialStockType` | ✓ | |  |  |  |  |
+| `MaterialBaseUnit` | ✓ | |  |  |  |  |
+| `AlternativeUnit` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |  |  |
+| `MatlCnsmpnQtyInMatlBaseUnit` |  | |  |  |  |  |
+| `MatlStkIncrQtyInMatlBaseUnit` |  | |  |  |  |  |
+| `MatlStkDecrQtyInMatlBaseUnit` |  | |  |  |  |  |
+| `MatlWrhsStkQtyInAltUoM` |  | |  | `cast( fltp_to_dec( MatlWrhsStkQtyInAltUoM as abap.dec(31,14) ) as nsdm_stock_qty_auom )` |  |  |
+| `MatlCnsmpnQtyInAltUoM` |  | |  | `cast( fltp_to_dec( MatlCnsmpnQtyInAltUoM as abap.dec(31,14) ) as nsdm_consumption_qty_auom )` |  |  |
+| `MatlStkIncrQtyInAltUoM` |  | |  | `cast( fltp_to_dec( MatlStkIncrQtyInAltUoM as abap.dec(31,14) ) as nsdm_stock_increase_qty_auom )` |  |  |
+| `MatlStkDecrQtyInAltUoM` |  | |  | `cast( fltp_to_dec( MatlStkDecrQtyInAltUoM as abap.dec(31,14) ) as nsdm_stock_decrease_qty_auom )` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_SpecialStockIdfgStockOwner` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_InventoryStockType` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

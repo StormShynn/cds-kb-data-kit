@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `matnr` |
-| `Plant` | ✓ | |  | `werks` |
-| `StorageLocation` | ✓ | |  | `lgort` |
-| `ProductionSupplyArea` | ✓ | |  | `prvbe` |
-| `KnbnCalcRqmtDistrWeightValue` |  | |  | `weight` |
-| `KnbnCalcTotalRqmtDistrWgtValue` |  | |  | `wtsum` |
-| `KnbnCalcRqmtDistrWgtPct` |  | |  | `wprcnt` |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_ProductionSupplyArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `StorageLocation` | ✓ | |  | `lgort` |  |  |
+| `ProductionSupplyArea` | ✓ | |  | `prvbe` |  |  |
+| `KnbnCalcRqmtDistrWeightValue` |  | |  | `weight` |  |  |
+| `KnbnCalcTotalRqmtDistrWgtValue` |  | |  | `wtsum` |  |  |
+| `KnbnCalcRqmtDistrWgtPct` |  | |  | `wprcnt` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_ProductionSupplyArea` | | ✓ | | | | |
 
 ## Associations
 

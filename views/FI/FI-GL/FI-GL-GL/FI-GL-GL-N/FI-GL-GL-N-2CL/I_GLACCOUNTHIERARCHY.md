@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountHierarchy` | ✓ | |  | `cast ( hrrp_dir_n.hryid_42 as fis_glaccthier preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `hryvalto` |
-| `ValidityStartDate` |  | |  | `hryvalfrom` |
-| `HierarchyType` |  | |  | `hrytyp` |
-| `LastChangedByUser` |  | |  | `upduser` |
-| `LastChangeTime` |  | |  | `updtime` |
-| `LastChangeDateTime` |  | |  | `updtime` |
-| `HierarchyShortID` |  | |  | `hrysid` |
-| `FunctionalAreaIsUsed` |  | |  | `funareaassigned` |
-| `SemanticTagIsUsed` |  | |  | `semtagassigned` |
-| `ChartOfAccounts` |  | |  | `ktopl` |
-| `_Text` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountHierarchy` | ✓ | |  | `cast ( hrrp_dir_n.hryid_42 as fis_glaccthier preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |  |  |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |  |  |
+| `HierarchyType` |  | |  | `hrytyp` |  |  |
+| `LastChangedByUser` |  | |  | `upduser` |  |  |
+| `LastChangeTime` |  | |  | `updtime` |  |  |
+| `LastChangeDateTime` |  | |  | `updtime` |  |  |
+| `HierarchyShortID` |  | |  | `hrysid` |  |  |
+| `FunctionalAreaIsUsed` |  | |  | `funareaassigned` |  |  |
+| `SemanticTagIsUsed` |  | |  | `semtagassigned` |  |  |
+| `ChartOfAccounts` |  | |  | `ktopl` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
 
 ## Associations
 

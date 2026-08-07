@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentBlockingReason` | ✓ | |  | `cast (zahls as farp_dzlspr)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentBlockingReason` | ✓ | |  | `cast (zahls as farp_dzlspr)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

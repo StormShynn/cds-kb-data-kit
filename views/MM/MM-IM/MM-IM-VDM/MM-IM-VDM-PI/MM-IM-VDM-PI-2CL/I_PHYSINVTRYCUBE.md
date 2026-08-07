@@ -29,98 +29,98 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FiscalYear` | ✓ | |  |  |
-| `PhysicalInventoryDocument` | ✓ | |  |  |
-| `PhysicalInventoryDocumentItem` | ✓ | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Material` |  | |  |  |
-| `RealProductBatch` |  | |  |  |
-| `Batch` |  | |  |  |
-| `ValuationType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `PhysicalInventoryStockType` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `ScheduleLine` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `PhysicalInventoryItemIsCounted` |  | |  |  |
-| `PhysInvtryDifferenceIsPosted` |  | |  |  |
-| `PhysInvtryItemIsRecounted` |  | |  |  |
-| `PhysInvtryItemIsDeleted` |  | |  |  |
-| `CycleCountType` |  | |  |  |
-| `PhysicalInventoryType` |  | |  |  |
-| `InventoryTransactionType` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `PostingIsBlockedForPhysInvtry` |  | |  |  |
-| `PhysInvtryDocHasQtySnapshot` |  | |  |  |
-| `PhysicalInventoryLastCountDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ReasonForPhysInvtryDifference` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `PhysInventoryPlannedCountDate` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `PhysInvtryDiffIsDistributed` |  | |  |  |
-| `Currency` |  | |  |  |
-| `PhysicalInventoryGroupType` |  | |  |  |
-| `PhysicalInventoryGroup` |  | |  |  |
-| `PhysicalInventoryNumber` |  | |  |  |
-| `PhysicalInventoryDocumentDesc` |  | |  |  |
-| `PhysInventoryReferenceNumber` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `PhysInvtryRecountDocument` |  | |  |  |
-| `IsValueOnlyMaterial` |  | |  |  |
-| `IsHandledInAltvUnitOfMsr` |  | |  |  |
-| `ProductCategory` |  | |  |  |
-| `CrossPlantConfigurableMaterial` |  | |  |  |
-| `SalesPriceValuationIsActive` |  | |  |  |
-| `BookQtyBfrCountInMatlBaseUnit` |  | |  |  |
-| `PhysicalInventoryItemIsZero` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `MaterialBaseUnit` |  | |  |  |
-| `QuantityInUnitOfEntry` |  | |  |  |
-| `DifferenceQuantityInBaseUnit` |  | |  |  |
-| `UnitOfEntry` |  | |  |  |
-| `DiffSlsPrcAmtInCoCodeCrcy` |  | |  |  |
-| `EnteredSlsAmtInCoCodeCrcy` |  | |  |  |
-| `SlsPriceAmountInCoCodeCrcy` |  | |  |  |
-| `PhysInvtryCtAmtInCoCodeCrcy` |  | |  |  |
-| `BookQtyAmountInCoCodeCrcy` |  | |  |  |
-| `DifferenceAmountInCoCodeCrcy` |  | |  |  |
-| `MaxAbsDiffAmountInCoCodeCrcy` |  | |  |  |
-| `MinAbsDiffAmountInCoCodeCrcy` |  | |  |  |
-| `NumberOfPhysInvtryItems` |  | |  |  |
-| `_PhysInvtryType` | | ✓ | | |
-| `_InventoryTransactionType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductPlantExt` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_AdjmtPostingMovementType` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductStorageLocation` | | ✓ | | |
-| `_CrossPlantConfigurableMatl` | | ✓ | | |
-| `_MaterialBaseUnit` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_UnitOfEntry` | | ✓ | | |
-| `_PhysicalInventoryStockType` | | ✓ | | |
-| `_ProductCategory` | | ✓ | | |
-| `_GoodsMovementType` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
-| `_CustomerCompanyByPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `PhysicalInventoryDocument` | ✓ | |  |  |  |  |
+| `PhysicalInventoryDocumentItem` | ✓ | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `RealProductBatch` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `PhysicalInventoryStockType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `ScheduleLine` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `PhysicalInventoryItemIsCounted` |  | |  |  |  |  |
+| `PhysInvtryDifferenceIsPosted` |  | |  |  |  |  |
+| `PhysInvtryItemIsRecounted` |  | |  |  |  |  |
+| `PhysInvtryItemIsDeleted` |  | |  |  |  |  |
+| `CycleCountType` |  | |  |  |  |  |
+| `PhysicalInventoryType` |  | |  |  |  |  |
+| `InventoryTransactionType` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `PostingIsBlockedForPhysInvtry` |  | |  |  |  |  |
+| `PhysInvtryDocHasQtySnapshot` |  | |  |  |  |  |
+| `PhysicalInventoryLastCountDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ReasonForPhysInvtryDifference` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `PhysInventoryPlannedCountDate` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `PhysInvtryDiffIsDistributed` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `PhysicalInventoryGroupType` |  | |  |  |  |  |
+| `PhysicalInventoryGroup` |  | |  |  |  |  |
+| `PhysicalInventoryNumber` |  | |  |  |  |  |
+| `PhysicalInventoryDocumentDesc` |  | |  |  |  |  |
+| `PhysInventoryReferenceNumber` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `PhysInvtryRecountDocument` |  | |  |  |  |  |
+| `IsValueOnlyMaterial` |  | |  |  |  |  |
+| `IsHandledInAltvUnitOfMsr` |  | |  |  |  |  |
+| `ProductCategory` |  | |  |  |  |  |
+| `CrossPlantConfigurableMaterial` |  | |  |  |  |  |
+| `SalesPriceValuationIsActive` |  | |  |  |  |  |
+| `BookQtyBfrCountInMatlBaseUnit` |  | |  |  |  |  |
+| `PhysicalInventoryItemIsZero` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `MaterialBaseUnit` |  | |  |  |  |  |
+| `QuantityInUnitOfEntry` |  | |  |  |  |  |
+| `DifferenceQuantityInBaseUnit` |  | |  |  |  |  |
+| `UnitOfEntry` |  | |  |  |  |  |
+| `DiffSlsPrcAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `EnteredSlsAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `SlsPriceAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `PhysInvtryCtAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `BookQtyAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `DifferenceAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `MaxAbsDiffAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `MinAbsDiffAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `NumberOfPhysInvtryItems` |  | |  |  |  |  |
+| `_PhysInvtryType` | | ✓ | | | | |
+| `_InventoryTransactionType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlantExt` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_AdjmtPostingMovementType` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductStorageLocation` | | ✓ | | | | |
+| `_CrossPlantConfigurableMatl` | | ✓ | | | | |
+| `_MaterialBaseUnit` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_UnitOfEntry` | | ✓ | | | | |
+| `_PhysicalInventoryStockType` | | ✓ | | | | |
+| `_ProductCategory` | | ✓ | | | | |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
+| `_CustomerCompanyByPlant` | | ✓ | | | | |
 
 ## Associations
 

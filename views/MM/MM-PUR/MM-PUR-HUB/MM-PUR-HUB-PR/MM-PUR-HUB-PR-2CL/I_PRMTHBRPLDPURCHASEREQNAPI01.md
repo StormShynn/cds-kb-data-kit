@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProcmtHubPurchaseRequisition` | ✓ | |  |  |
-| `ProcurementHubSourceSystem` | ✓ | |  |  |
-| `ProcmtHubPurRequisitionType` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcmtHubPurchaseRequisition` | ✓ | |  |  |  |  |
+| `ProcurementHubSourceSystem` | ✓ | |  |  |  |  |
+| `ProcmtHubPurRequisitionType` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
 
 ## Source Code
 

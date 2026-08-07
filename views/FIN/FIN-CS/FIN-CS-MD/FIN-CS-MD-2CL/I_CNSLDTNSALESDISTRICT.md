@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDistrict` | ✓ | |  | `cast( SalesDistrict as fincs_salesdistrict preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | | ✓ | | |
-| `_MDSource` | | ✓ | | |
-| `_HierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDistrict` | ✓ | |  | `cast( SalesDistrict as fincs_salesdistrict preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_MDSource` | | ✓ | | | | |
+| `_HierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

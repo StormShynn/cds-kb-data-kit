@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationAgreementType` | ✓ | |  | `cast( fagtypeid103 as /scmtms/vdm_fag_type_code preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `TranspAgreementTypeText` |  | |  | `cast( description as vdm_fag_type_desc preserving type )` |
-| `_TranspAgreementType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationAgreementType` | ✓ | |  | `cast( fagtypeid103 as /scmtms/vdm_fag_type_code preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TranspAgreementTypeText` |  | |  | `cast( description as vdm_fag_type_desc preserving type )` |  |  |
+| `_TranspAgreementType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

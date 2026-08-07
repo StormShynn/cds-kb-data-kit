@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrder` | ✓ | |  |  |
-| `ServiceOrderItem` | ✓ | |  |  |
-| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |
-| `SerialNumber` |  | |  |  |
-| `ServiceReferenceEquipment` |  | |  |  |
-| `ServiceRefFunctionalLocation` |  | |  |  |
-| `ServiceReferenceProduct` |  | |  |  |
-| `SrvcRefObjIsMainObject` |  | |  |  |
-| `_ServiceOrderItemTP` | | ✓ | | |
-| `_ServiceOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `ServiceReferenceEquipment` |  | |  |  |  |  |
+| `ServiceRefFunctionalLocation` |  | |  |  |  |  |
+| `ServiceReferenceProduct` |  | |  |  |  |  |
+| `SrvcRefObjIsMainObject` |  | |  |  |  |  |
+| `_ServiceOrderItemTP` | | ✓ | | | | |
+| `_ServiceOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

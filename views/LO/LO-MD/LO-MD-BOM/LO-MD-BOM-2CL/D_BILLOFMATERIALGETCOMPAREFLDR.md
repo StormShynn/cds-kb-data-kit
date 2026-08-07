@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ComparisonFieldName` |  | |  | `fieldname` |
-| `ComparisonFieldNameText` |  | |  | `as4text` |
-| `ComparisonFieldObjTypeValue` |  | |  | `bom_comp_obj_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ComparisonFieldName` |  | |  | `fieldname` |  |  |
+| `ComparisonFieldNameText` |  | |  | `as4text` |  |  |
+| `ComparisonFieldObjTypeValue` |  | |  | `bom_comp_obj_type` |  |  |
 
 ## Source Code
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceQuotation` | ✓ | |  |  |
-| `ServiceQuotationItem` | ✓ | |  |  |
-| `UserStatus` | ✓ | |  |  |
-| `StatusProfile` |  | |  |  |
-| `_StatusCode` | | ✓ | | |
-| `_StatusProfile` | | ✓ | | |
-| `_ServiceQuotationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |  |  |
+| `ServiceQuotationItem` | ✓ | |  |  |  |  |
+| `UserStatus` | ✓ | |  |  |  |  |
+| `StatusProfile` |  | |  |  |  |  |
+| `_StatusCode` | | ✓ | | | | |
+| `_StatusProfile` | | ✓ | | | | |
+| `_ServiceQuotationTP` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
-| `BillOfMaterialVariantUsageDesc` |  | | `_BillOfMaterialUsage` | `BillOfMaterialVariantUsageDesc` |
-| `BOMIsProductionUsageRelevant` |  | |  | `pmpfe` |
-| `BOMIsEngineeringUsageRelevant` |  | |  | `pmpko` |
-| `BOMIsCostingUsageRelevant` |  | |  | `pmpka` |
-| `BOMIsSalesDistributionRelevant` |  | |  | `pmprv` |
-| `BOMIsHighLevelConfigRelevant` |  | |  | `pmpvs` |
-| `BOMIsPlantMaintenanceRelevant` |  | |  | `pmpin` |
-| `BOMIsSparePartRelevant` |  | |  | `pmper` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |  |  |
+| `BillOfMaterialVariantUsageDesc` |  | | `_BillOfMaterialUsage` | `BillOfMaterialVariantUsageDesc` |  |  |
+| `BOMIsProductionUsageRelevant` |  | |  | `pmpfe` |  |  |
+| `BOMIsEngineeringUsageRelevant` |  | |  | `pmpko` |  |  |
+| `BOMIsCostingUsageRelevant` |  | |  | `pmpka` |  |  |
+| `BOMIsSalesDistributionRelevant` |  | |  | `pmprv` |  |  |
+| `BOMIsHighLevelConfigRelevant` |  | |  | `pmpvs` |  |  |
+| `BOMIsPlantMaintenanceRelevant` |  | |  | `pmpin` |  |  |
+| `BOMIsSparePartRelevant` |  | |  | `pmper` |  |  |
 
 ## Associations
 

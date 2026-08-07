@@ -30,90 +30,90 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderType` |  | |  |  |
-| `PurchaseOrderSubtype` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `PurchaseOrderDate` |  | |  |  |
-| `Language` |  | |  |  |
-| `CorrespncExternalReference` |  | |  |  |
-| `CorrespncInternalReference` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  | `PurchaseOrderDeletionCode` |
-| `ReleaseIsNotCompleted` |  | |  |  |
-| `PurchasingCompletenessStatus` |  | |  |  |
-| `PurchasingProcessingStatus` |  | |  |  |
-| `PurgReleaseSequenceStatus` |  | |  |  |
-| `ReleaseCode` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `ManualSupplierAddressID` |  | |  |  |
-| `SupplierRespSalesPersonName` |  | |  |  |
-| `SupplierPhoneNumber` |  | |  |  |
-| `SupplyingSupplier` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `InvoicingParty` |  | |  |  |
-| `Customer` |  | |  |  |
-| `SupplierQuotationExternalID` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `DownPaymentType` |  | |  |  |
-| `DownPaymentPercentageOfTotAmt` |  | |  |  |
-| `DownPaymentAmount` |  | |  |  |
-| `DownPaymentDueDate` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IsIntrastatReportingRelevant` |  | |  |  |
-| `IsIntrastatReportingExcluded` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `PricingProcedure` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `TaxReturnCountry` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `PurgReasonForDocCancellation` |  | |  |  |
-| `PurgReleaseTimeTotalAmount` |  | |  |  |
-| `PurgAggrgdProdCmplncSuplrSts` |  | |  |  |
-| `PurgAggrgdProdMarketabilitySts` |  | |  |  |
-| `PurgAggrgdSftyDataSheetStatus` |  | |  |  |
-| `PurgProdCmplncTotDngrsGoodsSts` |  | |  |  |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchaseOrderType` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_SupplyingSupplier` | | ✓ | | |
-| `_InvoicingParty` | | ✓ | | |
-| `_SupplyingPlant` | | ✓ | | |
-| `_PurchaseOrderTypeText` | | ✓ | | |
-| `_PurchaseOrderDeletionCodeText` | | ✓ | | |
-| `_IncotermsClassificationText` | | ✓ | | |
-| `_IncotermsVersionText` | | ✓ | | |
-| `_DocumentCurrencyText` | | ✓ | | |
-| `_TaxReturnCountryText` | | ✓ | | |
-| `_VATRegistrationCountryText` | | ✓ | | |
-| `_PurgTotProdCmplncSuplrStsT` | | ✓ | | |
-| `_PurgTotProdMarketabilityStsT` | | ✓ | | |
-| `_PurgAggrgdSftyDataSheetStsT` | | ✓ | | |
-| `_PurgTotDangerousGoodsStsT` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderType` |  | |  |  |  |  |
+| `PurchaseOrderSubtype` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `CorrespncExternalReference` |  | |  |  |  |  |
+| `CorrespncInternalReference` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  | `PurchaseOrderDeletionCode` |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |  |  |
+| `PurchasingCompletenessStatus` |  | |  |  |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |  |  |
+| `PurgReleaseSequenceStatus` |  | |  |  |  |  |
+| `ReleaseCode` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `ManualSupplierAddressID` |  | |  |  |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |  |  |
+| `SupplierPhoneNumber` |  | |  |  |  |  |
+| `SupplyingSupplier` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `DownPaymentType` |  | |  |  |  |  |
+| `DownPaymentPercentageOfTotAmt` |  | |  |  |  |  |
+| `DownPaymentAmount` |  | |  |  |  |  |
+| `DownPaymentDueDate` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IsIntrastatReportingRelevant` |  | |  |  |  |  |
+| `IsIntrastatReportingExcluded` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `TaxReturnCountry` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `PurgReasonForDocCancellation` |  | |  |  |  |  |
+| `PurgReleaseTimeTotalAmount` |  | |  |  |  |  |
+| `PurgAggrgdProdCmplncSuplrSts` |  | |  |  |  |  |
+| `PurgAggrgdProdMarketabilitySts` |  | |  |  |  |  |
+| `PurgAggrgdSftyDataSheetStatus` |  | |  |  |  |  |
+| `PurgProdCmplncTotDngrsGoodsSts` |  | |  |  |  |  |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchaseOrderType` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_SupplyingSupplier` | | ✓ | | | | |
+| `_InvoicingParty` | | ✓ | | | | |
+| `_SupplyingPlant` | | ✓ | | | | |
+| `_PurchaseOrderTypeText` | | ✓ | | | | |
+| `_PurchaseOrderDeletionCodeText` | | ✓ | | | | |
+| `_IncotermsClassificationText` | | ✓ | | | | |
+| `_IncotermsVersionText` | | ✓ | | | | |
+| `_DocumentCurrencyText` | | ✓ | | | | |
+| `_TaxReturnCountryText` | | ✓ | | | | |
+| `_VATRegistrationCountryText` | | ✓ | | | | |
+| `_PurgTotProdCmplncSuplrStsT` | | ✓ | | | | |
+| `_PurgTotProdMarketabilityStsT` | | ✓ | | | | |
+| `_PurgAggrgdSftyDataSheetStsT` | | ✓ | | | | |
+| `_PurgTotDangerousGoodsStsT` | | ✓ | | | | |
 
 ## Associations
 

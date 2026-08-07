@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectRoleUUID` | ✓ | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ProjectRoleType` |  | |  |  |
-| `ProjectRoleCategory` |  | |  |  |
-| `ProjectRoleName` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectRoleUUID` | ✓ | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ProjectRoleType` |  | |  |  |  |  |
+| `ProjectRoleCategory` |  | |  |  |  |  |
+| `ProjectRoleName` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Source Code
 

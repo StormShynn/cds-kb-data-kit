@@ -30,54 +30,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralPurchaseContract` | ✓ | |  |  |
-| `CentralPurchaseContractItem` | ✓ | |  |  |
-| `PurchasingDocumentItemCategory` |  | |  |  |
-| `FormattedPurchaseContractItem` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingCentralMaterial` |  | |  |  |
-| `ProcmtHubExtReferencedMaterial` |  | |  |  |
-| `CntrlPurContractItemText` |  | |  | `PurchaseContractItemText` |
-| `ProductType` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `CntrlPurContrItmTargetAmount` |  | |  |  |
-| `ContractNetPriceAmount` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `PurgDocReleaseOrderQuantity` |  | |  |  |
-| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `NoDaysReminder1` |  | |  |  |
-| `NoDaysReminder2` |  | |  |  |
-| `NoDaysReminder3` |  | |  |  |
-| `PurgDocOrderAcknNumber` |  | |  |  |
-| `RequirementTracking` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `IsOrderAcknRqd` |  | |  |  |
-| `PurgDocEstimatedPrice` |  | |  |  |
-| `PriceIsToBePrinted` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `StockType` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `ShippingInstruction` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `InvoiceIsExpected` |  | |  |  |
-| `InvoiceIsGoodsReceiptBased` |  | |  |  |
-| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
-| `PurchasingContractDeletionCode` |  | |  |  |
-| `ActivePurchasingDocument` |  | |  |  |
-| `PurgDocItmBlkRsnCode` |  | |  |  |
-| `PurchasingParentItem` |  | |  |  |
-| `IsOutline` |  | |  | `IsStatisticalItem` |
-| `_CentralPurchaseContract` | | ✓ | | |
-| `_CntrlPurConItmDistribution` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |  |  |
+| `CentralPurchaseContractItem` | ✓ | |  |  |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |  |  |
+| `FormattedPurchaseContractItem` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingCentralMaterial` |  | |  |  |  |  |
+| `ProcmtHubExtReferencedMaterial` |  | |  |  |  |  |
+| `CntrlPurContractItemText` |  | |  | `PurchaseContractItemText` |  |  |
+| `ProductType` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `CntrlPurContrItmTargetAmount` |  | |  |  |  |  |
+| `ContractNetPriceAmount` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `PurgDocReleaseOrderQuantity` |  | |  |  |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `NoDaysReminder1` |  | |  |  |  |  |
+| `NoDaysReminder2` |  | |  |  |  |  |
+| `NoDaysReminder3` |  | |  |  |  |  |
+| `PurgDocOrderAcknNumber` |  | |  |  |  |  |
+| `RequirementTracking` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `IsOrderAcknRqd` |  | |  |  |  |  |
+| `PurgDocEstimatedPrice` |  | |  |  |  |  |
+| `PriceIsToBePrinted` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `StockType` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `ShippingInstruction` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `InvoiceIsExpected` |  | |  |  |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |  |  |
+| `PurchasingContractDeletionCode` |  | |  |  |  |  |
+| `ActivePurchasingDocument` |  | |  |  |  |  |
+| `PurgDocItmBlkRsnCode` |  | |  |  |  |  |
+| `PurchasingParentItem` |  | |  |  |  |  |
+| `IsOutline` |  | |  | `IsStatisticalItem` |  |  |
+| `_CentralPurchaseContract` | | ✓ | | | | |
+| `_CntrlPurConItmDistribution` | | ✓ | | | | |
 
 ## Associations
 

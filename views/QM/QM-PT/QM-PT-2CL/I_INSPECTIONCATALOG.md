@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionCatalog` | ✓ | |  | `katalogart` |
-| `_InspectionCatalogText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionCatalog` | ✓ | |  | `katalogart` |  |  |
+| `_InspectionCatalogText` | | ✓ | | | | |
 
 ## Associations
 

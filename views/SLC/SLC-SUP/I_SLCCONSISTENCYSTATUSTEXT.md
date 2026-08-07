@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SLCConsistencyStatus` | ✓ | |  | `cast( domvalue_l as /srmsmc/consistency_stcd )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SLCConsistencyStatusName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type)` |
-| `_Language` | | ✓ | | |
-| `_SLCConsistencyStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SLCConsistencyStatus` | ✓ | |  | `cast( domvalue_l as /srmsmc/consistency_stcd )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SLCConsistencyStatusName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SLCConsistencyStatus` | | ✓ | | | | |
 
 ## Associations
 

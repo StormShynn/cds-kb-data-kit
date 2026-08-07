@@ -31,34 +31,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  | `cast(Partner.SalesDocument as vdm_sales_order preserving type)` |
-| `PartnerFunction` | ✓ | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `Partner` |  | |  |  |
-| `FullName` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `SDDocPartnerAddressRefType` |  | |  |  |
-| `BPAddrDeterminationTransaction` |  | |  |  |
-| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
-| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |
-| `PartnerIsOneTimeAccount` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `InternationalPhoneNumber` |  | |  |  |
-| `InternationalMobilePhoneNumber` |  | |  |  |
-| `InternationalFaxNumber` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `_SalesOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(Partner.SalesDocument as vdm_sales_order preserving type)` |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `FullName` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |  |  |
+| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |  |  |
+| `PartnerIsOneTimeAccount` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `InternationalPhoneNumber` |  | |  |  |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |  |  |
+| `InternationalFaxNumber` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `_SalesOrder` | | ✓ | | | | |
 
 ## Associations
 

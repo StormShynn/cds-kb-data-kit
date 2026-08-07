@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumber` | ✓ | |  |  |
-| `ChangeNumberObjectType` | ✓ | |  |  |
-| `ObjMgmtRecdObjectInternalID` | ✓ | |  |  |
-| `ObjMgmtRecdObject` |  | |  |  |
-| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |
-| `ObjMgmtRecdObjRevisionLevel` |  | |  |  |
-| `ObjMgmtRecdDescription` |  | |  |  |
-| `ObjMgmtRecdObjIsPlanned` |  | |  |  |
-| `ObjMgmtRecdCreatedBy` |  | |  |  |
-| `ObjMgmtRecdCreationDate` |  | |  |  |
-| `ObjMgmtRecdLastChangedBy` |  | |  |  |
-| `ObjMgmtRecdLastChangedAt` |  | |  |  |
-| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |
-| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |
-| `_ChangeMaster` | | ✓ | | |
-| `_ChangeMasterObjectType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ChangeNumberObjectType` | ✓ | |  |  |  |  |
+| `ObjMgmtRecdObjectInternalID` | ✓ | |  |  |  |  |
+| `ObjMgmtRecdObject` |  | |  |  |  |  |
+| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |  |  |
+| `ObjMgmtRecdObjRevisionLevel` |  | |  |  |  |  |
+| `ObjMgmtRecdDescription` |  | |  |  |  |  |
+| `ObjMgmtRecdObjIsPlanned` |  | |  |  |  |  |
+| `ObjMgmtRecdCreatedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdCreationDate` |  | |  |  |  |  |
+| `ObjMgmtRecdLastChangedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdLastChangedAt` |  | |  |  |  |  |
+| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |  |  |
+| `_ChangeMaster` | | ✓ | | | | |
+| `_ChangeMasterObjectType` | | ✓ | | | | |
 
 ## Source Code
 

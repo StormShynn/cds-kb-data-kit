@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EDCType` | ✓ | |  | `contype` |
-| `EDCRepresentationType` | ✓ | |  | `representation_type` |
-| `EDCRepresentationKey` | ✓ | |  | `representation_key` |
-| `EDCRecordUUID` |  | |  | `consistency_guid` |
-| `EDCCommonKey` |  | |  | `common_key` |
-| `EDCCompany` |  | |  | `bukrs` |
-| `EDCCreatedOnDateTime` |  | |  | `created_on` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EDCType` | ✓ | |  | `contype` |  |  |
+| `EDCRepresentationType` | ✓ | |  | `representation_type` |  |  |
+| `EDCRepresentationKey` | ✓ | |  | `representation_key` |  |  |
+| `EDCRecordUUID` |  | |  | `consistency_guid` |  |  |
+| `EDCCommonKey` |  | |  | `common_key` |  |  |
+| `EDCCompany` |  | |  | `bukrs` |  |  |
+| `EDCCreatedOnDateTime` |  | |  | `created_on` |  |  |
 
 ## Source Code
 

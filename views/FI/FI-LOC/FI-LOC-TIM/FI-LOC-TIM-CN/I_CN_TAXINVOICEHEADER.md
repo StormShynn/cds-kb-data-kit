@@ -30,58 +30,58 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CN_TaxInvcUUID` | ✓ | |  |  |
-| `CN_TaxInvcCode` |  | |  |  |
-| `CN_TaxInvcNmbr` |  | |  |  |
-| `CN_TaxInvcType` |  | |  | `cast( hdr.CN_TaxInvcType as ficntaxinvc_type preserving type)` |
-| `CN_TaxInvcDate` |  | |  |  |
-| `CN_TaxSellerRegnNmbr` |  | |  |  |
-| `CN_TaxSellerName` |  | |  |  |
-| `CN_TaxInvcCrcy` |  | |  |  |
-| `CN_TaxInvcNetAmtInInvcCrcy` |  | |  |  |
-| `CN_TaxInvcTaxAmtInInvcCrcy` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CompanyCode` |  | |  | `cast( hdr.CompanyCode as fis_bukrs preserving type)` |
-| `Supplier` |  | |  | `cast( hdr.Supplier as elifn preserving type)` |
-| `CN_TaxEntityID` |  | |  |  |
-| `CN_TaxBuyerRegnNmbr` |  | |  |  |
-| `CN_TaxInvcDeductAmtInInvcCrcy` |  | |  |  |
-| `CN_TaxInvcDiscNetAmtInInvcCrcy` |  | |  |  |
-| `CN_TaxInvcDiscTaxAmtInInvcCrcy` |  | |  |  |
-| `TaxRate` |  | |  |  |
-| `CN_TaxInvcGldnTxSystSts` |  | |  |  |
-| `CN_TaxInvcInptProcgSts` |  | |  |  |
-| `CN_TaxInvcDeductionType` |  | |  | `cast( hdr.CN_TaxInvcDeductionType as ficntaxinvc_deduct_type preserving type)` |
-| `CN_TaxInvcComment` |  | |  |  |
-| `CN_TaxInvoiceUsage` |  | |  |  |
-| `CN_TaxInvoiceDataSource` |  | |  |  |
-| `CN_TaxInvoiceExpenseReportNmbr` |  | |  |  |
-| `IsPostedOnAccount` |  | |  |  |
-| `TaxCategory` |  | |  | `cast( hdr.TaxCategory as ficntax_input_vat_cat preserving type)` |
-| `CN_TaxDeclnYear` |  | |  |  |
-| `CN_TaxDeclnMonth` |  | |  |  |
-| `TaxInvoiceBuyerAddressPhone` |  | |  |  |
-| `TaxInvoiceBuyerBankAccount` |  | |  |  |
-| `TaxInvoiceSellerAddressPhone` |  | |  |  |
-| `TaxInvoiceSellerBankAccount` |  | |  |  |
-| `CN_TaxInvoiceVehicleType` |  | |  |  |
-| `CN_TaxInvoiceVehFactoryModel` |  | |  |  |
-| `CN_TaxInvoiceVehicleProdnPlace` |  | |  |  |
-| `CN_TaxInvoiceVehicleCertNumber` |  | |  |  |
-| `CN_TaxInvoiceVehImportCertNmbr` |  | |  |  |
-| `CN_TaxInvoiceVehicleInspNumber` |  | |  |  |
-| `CN_TaxInvoiceVehicleEngineNmbr` |  | |  |  |
-| `CN_TaxInvoiceVehicleNumber` |  | |  |  |
-| `CN_TaxInvcVehTotAmtInInvcCrcy` |  | |  |  |
-| `CN_TaxInvoiceVehTxnRecordNmbr` |  | |  |  |
-| `CN_TaxInvoiceVehicleTonnage` |  | |  |  |
-| `CN_TaxInvoiceVehPassengerLimit` |  | |  |  |
-| `PurchasingOrganization` |  | |  | `cast( hdr.PurchasingOrganization as ekorg preserving type)` |
-| `PurchasingGroup` |  | |  | `cast( hdr.PurchasingGroup as ekgrp preserving type)` |
-| `_InvoiceType` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CN_TaxInvcUUID` | ✓ | |  |  |  |  |
+| `CN_TaxInvcCode` |  | |  |  |  |  |
+| `CN_TaxInvcNmbr` |  | |  |  |  |  |
+| `CN_TaxInvcType` |  | |  | `cast( hdr.CN_TaxInvcType as ficntaxinvc_type preserving type)` |  |  |
+| `CN_TaxInvcDate` |  | |  |  |  |  |
+| `CN_TaxSellerRegnNmbr` |  | |  |  |  |  |
+| `CN_TaxSellerName` |  | |  |  |  |  |
+| `CN_TaxInvcCrcy` |  | |  |  |  |  |
+| `CN_TaxInvcNetAmtInInvcCrcy` |  | |  |  |  |  |
+| `CN_TaxInvcTaxAmtInInvcCrcy` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CompanyCode` |  | |  | `cast( hdr.CompanyCode as fis_bukrs preserving type)` |  |  |
+| `Supplier` |  | |  | `cast( hdr.Supplier as elifn preserving type)` |  |  |
+| `CN_TaxEntityID` |  | |  |  |  |  |
+| `CN_TaxBuyerRegnNmbr` |  | |  |  |  |  |
+| `CN_TaxInvcDeductAmtInInvcCrcy` |  | |  |  |  |  |
+| `CN_TaxInvcDiscNetAmtInInvcCrcy` |  | |  |  |  |  |
+| `CN_TaxInvcDiscTaxAmtInInvcCrcy` |  | |  |  |  |  |
+| `TaxRate` |  | |  |  |  |  |
+| `CN_TaxInvcGldnTxSystSts` |  | |  |  |  |  |
+| `CN_TaxInvcInptProcgSts` |  | |  |  |  |  |
+| `CN_TaxInvcDeductionType` |  | |  | `cast( hdr.CN_TaxInvcDeductionType as ficntaxinvc_deduct_type preserving type)` |  |  |
+| `CN_TaxInvcComment` |  | |  |  |  |  |
+| `CN_TaxInvoiceUsage` |  | |  |  |  |  |
+| `CN_TaxInvoiceDataSource` |  | |  |  |  |  |
+| `CN_TaxInvoiceExpenseReportNmbr` |  | |  |  |  |  |
+| `IsPostedOnAccount` |  | |  |  |  |  |
+| `TaxCategory` |  | |  | `cast( hdr.TaxCategory as ficntax_input_vat_cat preserving type)` |  |  |
+| `CN_TaxDeclnYear` |  | |  |  |  |  |
+| `CN_TaxDeclnMonth` |  | |  |  |  |  |
+| `TaxInvoiceBuyerAddressPhone` |  | |  |  |  |  |
+| `TaxInvoiceBuyerBankAccount` |  | |  |  |  |  |
+| `TaxInvoiceSellerAddressPhone` |  | |  |  |  |  |
+| `TaxInvoiceSellerBankAccount` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehicleType` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehFactoryModel` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehicleProdnPlace` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehicleCertNumber` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehImportCertNmbr` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehicleInspNumber` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehicleEngineNmbr` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehicleNumber` |  | |  |  |  |  |
+| `CN_TaxInvcVehTotAmtInInvcCrcy` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehTxnRecordNmbr` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehicleTonnage` |  | |  |  |  |  |
+| `CN_TaxInvoiceVehPassengerLimit` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  | `cast( hdr.PurchasingOrganization as ekorg preserving type)` |  |  |
+| `PurchasingGroup` |  | |  | `cast( hdr.PurchasingGroup as ekgrp preserving type)` |  |  |
+| `_InvoiceType` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

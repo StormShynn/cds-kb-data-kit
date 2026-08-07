@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EquipmentCategory` | ✓ | |  | `eqtyp` |
-| `Language` | ✓ | |  | `spras` |
-| `EquipmentCategoryDesc` |  | |  | `typtx` |
-| `_EquipmentCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EquipmentCategory` | ✓ | |  | `eqtyp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `EquipmentCategoryDesc` |  | |  | `typtx` |  |  |
+| `_EquipmentCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

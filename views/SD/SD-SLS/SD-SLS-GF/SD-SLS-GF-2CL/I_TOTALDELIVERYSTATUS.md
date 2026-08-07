@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TotalDeliveryStatus` | ✓ | |  | `substring(dd07l.domvalue_l, 1, 1)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TotalDeliveryStatus` | ✓ | |  | `substring(dd07l.domvalue_l, 1, 1)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

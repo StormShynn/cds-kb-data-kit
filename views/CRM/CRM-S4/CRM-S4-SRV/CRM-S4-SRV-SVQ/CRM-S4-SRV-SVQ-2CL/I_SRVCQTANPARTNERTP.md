@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceQuotation` | ✓ | |  |  |
-| `CustMgmtPartnerFunction` | ✓ | |  |  |
-| `CustMgmtBusinessPartner` | ✓ | |  |  |
-| `CustMgmtPartnerIsMainPartner` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_ServiceQuotationTP` | | ✓ | | |
-| `_SrvcQtanPartnerAddressTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |  |  |
+| `CustMgmtPartnerIsMainPartner` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_ServiceQuotationTP` | | ✓ | | | | |
+| `_SrvcQtanPartnerAddressTP` | | ✓ | | | | |
 
 ## Source Code
 

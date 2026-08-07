@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PerfObligationDeferralMethod` | ✓ | | `_BADIFilterCondition` | `value1` |
-| `_DeferralMethodText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PerfObligationDeferralMethod` | ✓ | | `_BADIFilterCondition` | `value1` |  |  |
+| `_DeferralMethodText` | | ✓ | | | | |
 
 ## Associations
 

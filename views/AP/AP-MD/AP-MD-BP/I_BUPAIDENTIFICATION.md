@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BPIdentificationType` | ✓ | |  | `type` |
-| `BPIdentificationNumber` | ✓ | |  | `idnumber` |
-| `BPIdnNmbrIssuingInstitute` |  | |  | `institute` |
-| `BPIdentificationEntryDate` |  | |  | `entry_date` |
-| `Country` |  | |  | `country` |
-| `Region` |  | |  | `region` |
-| `ValidityStartDate` |  | |  | `valid_date_from` |
-| `ValidityEndDate` |  | |  | `valid_date_to` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartner` | | ✓ | | |
-| `_BuPaIdentificationType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BPIdentificationType` | ✓ | |  | `type` |  |  |
+| `BPIdentificationNumber` | ✓ | |  | `idnumber` |  |  |
+| `BPIdnNmbrIssuingInstitute` |  | |  | `institute` |  |  |
+| `BPIdentificationEntryDate` |  | |  | `entry_date` |  |  |
+| `Country` |  | |  | `country` |  |  |
+| `Region` |  | |  | `region` |  |  |
+| `ValidityStartDate` |  | |  | `valid_date_from` |  |  |
+| `ValidityEndDate` |  | |  | `valid_date_to` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BuPaIdentificationType` | | ✓ | | | | |
 
 ## Associations
 

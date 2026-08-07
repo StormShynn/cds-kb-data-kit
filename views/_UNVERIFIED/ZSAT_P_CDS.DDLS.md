@@ -31,17 +31,17 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DdlName` | ✓ | |  | `ddlname` |
-| `EntityId` |  | |  | `cast(case when CdsEntityHeader.strucobjn is null then Source.ddlname else CdsEntityHeader.strucobjn end as ddstrucobjname)` |
-| `RawEntityId` |  | |  | `cast(case when CdsEntityHeader.strucobjn_raw is null then Source.ddlname else CdsEntityHeader.strucobjn_raw end as ddstrucobjname)` |
-| `ViewName` |  | |  | `cast(case when StructuredObject.ViewName is null then Source.ddlname else StructuredObject.ViewName end as ddstrucobjname)` |
-| `ParentDdlName` |  | |  | `parentname` |
-| `SourceType` |  | |  | `source_type` |
-| `DdlSource` |  | |  | `source` |
-| `ChangedDate` |  | |  | `as4date` |
-| `ChangedBy` |  | |  | `as4user` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DdlName` | ✓ | |  | `ddlname` |  |  |
+| `EntityId` |  | |  | `cast(case when CdsEntityHeader.strucobjn is null then Source.ddlname else CdsEntityHeader.strucobjn end as ddstrucobjname)` |  |  |
+| `RawEntityId` |  | |  | `cast(case when CdsEntityHeader.strucobjn_raw is null then Source.ddlname else CdsEntityHeader.strucobjn_raw end as ddstrucobjname)` |  |  |
+| `ViewName` |  | |  | `cast(case when StructuredObject.ViewName is null then Source.ddlname else StructuredObject.ViewName end as ddstrucobjname)` |  |  |
+| `ParentDdlName` |  | |  | `parentname` |  |  |
+| `SourceType` |  | |  | `source_type` |  |  |
+| `DdlSource` |  | |  | `source` |  |  |
+| `ChangedDate` |  | |  | `as4date` |  |  |
+| `ChangedBy` |  | |  | `as4user` |  |  |
 
 ## Source Code
 

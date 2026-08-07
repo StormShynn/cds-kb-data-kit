@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductType` | ✓ | |  | `cast(t134t.mtart as producttype preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `MaterialTypeName` |  | |  | `cast(t134t.mtbez as producttypename preserving type )` |
-| `_ProductType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` | ✓ | |  | `cast(t134t.mtart as producttype preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaterialTypeName` |  | |  | `cast(t134t.mtbez as producttypename preserving type )` |  |  |
+| `_ProductType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

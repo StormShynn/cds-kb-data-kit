@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdAllocationLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationlifecyclestatus preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `ProdAllocLifecycleStatusDesc` |  | |  | `cast( ddtext as prodalloclifecyclestatusdesc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_ProdAllocLifecycleStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdAllocationLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationlifecyclestatus preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `ProdAllocLifecycleStatusDesc` |  | |  | `cast( ddtext as prodalloclifecyclestatusdesc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProdAllocLifecycleStatus` | | ✓ | | | | |
 
 ## Associations
 

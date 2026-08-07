@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationUnit` | ✓ | |  | `cast(ConsolidationUnit as fincs_elim_unit preserving type )` |
-| `_UnitHierNode` | | ✓ | | |
-| `_TmprlNde` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | |  | `cast(ConsolidationUnit as fincs_elim_unit preserving type )` |  |  |
+| `_UnitHierNode` | | ✓ | | | | |
+| `_TmprlNde` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

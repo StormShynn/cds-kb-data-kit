@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanReplenishmentStrgyType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pk_replenishment_type preserving type)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `KanbanReplnmtStrgyTypeText` |  | |  | `cast(ddtext as vdm_repl_strategy_type_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KnbnReplnmtStrgyTypes` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanReplenishmentStrgyType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pk_replenishment_type preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `KanbanReplnmtStrgyTypeText` |  | |  | `cast(ddtext as vdm_repl_strategy_type_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KnbnReplnmtStrgyTypes` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

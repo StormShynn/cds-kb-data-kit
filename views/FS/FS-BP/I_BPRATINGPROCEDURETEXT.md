@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |
-| `BPRatingProcedureDescription` |  | |  | `text` |
-| `_BPRatingProcedure` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |  |  |
+| `BPRatingProcedureDescription` |  | |  | `text` |  |  |
+| `_BPRatingProcedure` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,40 +28,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjBillgElmntEntrItmUUID` | ✓ | |  |  |
-| `ProjectBillingRequestUUID` |  | |  |  |
-| `ProjectInternalID` |  | |  |  |
-| `Ledger` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `Ledger` |
-| `CompanyCode` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `CompanyCode` |
-| `AccountingDocument` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `AccountingDocument` |
-| `LedgerGLLineItem` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `LedgerGLLineItem` |
-| `FiscalYear` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `FiscalYear` |
-| `Material` |  | | `_ProjBillElementEntry` | `Material` |
-| `WBSElement` |  | | `_ProjBillElementEntry._WBSElement` | `WBSElementExternalID` |
-| `ServicesRenderedDate` |  | | `_ProjBillElementEntry` | `ServicesRenderedDate` |
-| `OpenAmountInTransCrcy` |  | | `_ProjBillElementEntry` | `OriginalAmountInTransacCrcy` |
-| `WrittenOffQuantity` |  | |  | `cast(WrittenOffQuantity as pbee_wrtnoffqty preserving type)` |
-| `WrittenOffAmtInTransacCrcy` |  | |  | `cast(WrittenOffAmtInTransacCrcy as pbee_wrtnofftranscrcy preserving type)` |
-| `WrittenOffRevenueAmtInDocCrcy` |  | |  | `cast(WrittenOffRevenueAmtInDocCrcy as pbee_writtenoffrevnindoccrcy preserving type)` |
-| `TransactionCurrency` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `_ProjectBillingRequestTP` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_MaterialText` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_TransactionCurrencyText` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_DocumentCurrencyText` | | ✓ | | |
-| `_QuantityUnit` | | ✓ | | |
-| `_QuantityUnitText` | | ✓ | | |
-| `_AccountingDocument` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjBillgElmntEntrItmUUID` | ✓ | |  |  |  |  |
+| `ProjectBillingRequestUUID` |  | |  |  |  |  |
+| `ProjectInternalID` |  | |  |  |  |  |
+| `Ledger` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `Ledger` |  |  |
+| `CompanyCode` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `CompanyCode` |  |  |
+| `AccountingDocument` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `AccountingDocument` |  |  |
+| `LedgerGLLineItem` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `LedgerGLLineItem` |  |  |
+| `FiscalYear` |  | | `_PrjBlgElmEntrJrnlEntrLink` | `FiscalYear` |  |  |
+| `Material` |  | | `_ProjBillElementEntry` | `Material` |  |  |
+| `WBSElement` |  | | `_ProjBillElementEntry._WBSElement` | `WBSElementExternalID` |  |  |
+| `ServicesRenderedDate` |  | | `_ProjBillElementEntry` | `ServicesRenderedDate` |  |  |
+| `OpenAmountInTransCrcy` |  | | `_ProjBillElementEntry` | `OriginalAmountInTransacCrcy` |  |  |
+| `WrittenOffQuantity` |  | |  | `cast(WrittenOffQuantity as pbee_wrtnoffqty preserving type)` |  |  |
+| `WrittenOffAmtInTransacCrcy` |  | |  | `cast(WrittenOffAmtInTransacCrcy as pbee_wrtnofftranscrcy preserving type)` |  |  |
+| `WrittenOffRevenueAmtInDocCrcy` |  | |  | `cast(WrittenOffRevenueAmtInDocCrcy as pbee_writtenoffrevnindoccrcy preserving type)` |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `_ProjectBillingRequestTP` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_MaterialText` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_TransactionCurrencyText` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_DocumentCurrencyText` | | ✓ | | | | |
+| `_QuantityUnit` | | ✓ | | | | |
+| `_QuantityUnitText` | | ✓ | | | | |
+| `_AccountingDocument` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
 
 ## Associations
 

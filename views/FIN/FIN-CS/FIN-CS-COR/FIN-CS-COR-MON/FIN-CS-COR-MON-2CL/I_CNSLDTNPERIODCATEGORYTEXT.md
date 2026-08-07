@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationPeriodCategory` | ✓ | |  | `cast( pertp as fincs_periodcategory preserving type )` |
-| `Language` | ✓ | |  | `langu` |
-| `CnsldtnPeriodCategoryText` |  | |  | `cast(txt as fincs_periodcategory_txt preserving type )` |
-| `_CnsldtnPeriodCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationPeriodCategory` | ✓ | |  | `cast( pertp as fincs_periodcategory preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CnsldtnPeriodCategoryText` |  | |  | `cast(txt as fincs_periodcategory_txt preserving type )` |  |  |
+| `_CnsldtnPeriodCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

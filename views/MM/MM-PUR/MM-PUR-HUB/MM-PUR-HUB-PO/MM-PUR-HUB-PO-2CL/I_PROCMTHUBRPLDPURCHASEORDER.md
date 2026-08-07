@@ -30,80 +30,80 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `ExtSourceSystem` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchaseOrderType` |  | |  |  |
-| `PurchaseOrderSubtype` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreatedByUserFullName` |  | |  | `CreatedByUserName` |
-| `CreationDate` |  | |  |  |
-| `PurchaseOrderDate` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `Language` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `ReleaseIsNotCompleted` |  | |  |  |
-| `PurchasingProcessingStatus` |  | |  |  |
-| `PurchasingCompletenessStatus` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CompanyCodeCountry` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierRespSalesPersonName` |  | |  |  |
-| `SupplierPhoneNumber` |  | |  |  |
-| `SupplyingSupplier` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `InvoicingParty` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IsIntrastatReportingRelevant` |  | |  |  |
-| `IsIntrastatReportingExcluded` |  | |  |  |
-| `DeliveryDocumentCondition` |  | |  |  |
-| `PricingProcedure` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `AbsoluteExchangeRate` |  | |  |  |
-| `ExchRateIsIndirectQuotation` |  | |  |  |
-| `EffectiveExchangeRate` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `ManualSupplierAddressID` |  | |  |  |
-| `HasNote` |  | |  |  |
-| `HasAttachment` |  | |  |  |
-| `PurchaseOrderNetAmount` |  | |  |  |
-| `NumberOfOverduePurOrders` |  | |  |  |
-| `NumberOfOverduePurOrdItm` |  | |  |  |
-| `PurchaseOrderStatus` |  | |  |  |
-| `PurchaseOrderStatusName` |  | |  |  |
-| `ApproverUser` |  | |  |  |
-| `ApproverName` |  | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `PurOrdOutputCtrlType` |  | |  |  |
-| `PurchaseOrderOutputStatus` |  | |  |  |
-| `PurchaseOrderOutputStatusName` |  | |  |  |
-| `PurchaseOrderOutputDateTime` |  | |  |  |
-| `WeightedRelevance` |  | |  |  |
-| `PurchaseOrderOutputIndCode` |  | |  |  |
-| `PurchaseOrderOutputIndDesc` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `CorrespncExternalReference` |  | |  |  |
-| `CorrespncInternalReference` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `_DocumentCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `ExtSourceSystem` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchaseOrderType` |  | |  |  |  |  |
+| `PurchaseOrderSubtype` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreatedByUserFullName` |  | |  | `CreatedByUserName` |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |  |  |
+| `PurchasingCompletenessStatus` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CompanyCodeCountry` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |  |  |
+| `SupplierPhoneNumber` |  | |  |  |  |  |
+| `SupplyingSupplier` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IsIntrastatReportingRelevant` |  | |  |  |  |  |
+| `IsIntrastatReportingExcluded` |  | |  |  |  |  |
+| `DeliveryDocumentCondition` |  | |  |  |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `AbsoluteExchangeRate` |  | |  |  |  |  |
+| `ExchRateIsIndirectQuotation` |  | |  |  |  |  |
+| `EffectiveExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `ManualSupplierAddressID` |  | |  |  |  |  |
+| `HasNote` |  | |  |  |  |  |
+| `HasAttachment` |  | |  |  |  |  |
+| `PurchaseOrderNetAmount` |  | |  |  |  |  |
+| `NumberOfOverduePurOrders` |  | |  |  |  |  |
+| `NumberOfOverduePurOrdItm` |  | |  |  |  |  |
+| `PurchaseOrderStatus` |  | |  |  |  |  |
+| `PurchaseOrderStatusName` |  | |  |  |  |  |
+| `ApproverUser` |  | |  |  |  |  |
+| `ApproverName` |  | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `PurOrdOutputCtrlType` |  | |  |  |  |  |
+| `PurchaseOrderOutputStatus` |  | |  |  |  |  |
+| `PurchaseOrderOutputStatusName` |  | |  |  |  |  |
+| `PurchaseOrderOutputDateTime` |  | |  |  |  |  |
+| `WeightedRelevance` |  | |  |  |  |  |
+| `PurchaseOrderOutputIndCode` |  | |  |  |  |  |
+| `PurchaseOrderOutputIndDesc` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `CorrespncExternalReference` |  | |  |  |  |  |
+| `CorrespncInternalReference` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `_DocumentCurrency` | | ✓ | | | | |
 
 ## Associations
 

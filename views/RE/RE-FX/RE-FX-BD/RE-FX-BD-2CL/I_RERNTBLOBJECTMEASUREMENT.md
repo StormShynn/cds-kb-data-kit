@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateRentableObjectUUID` | ✓ | | `_RERentableObjectData` | `RealEstateRentableObjectUUID` |
-| `InternalRealEstateNumber` | ✓ | | `_REMeasurement` | `InternalRealEstateNumber` |
-| `REMeasurementType` | ✓ | | `_REMeasurement` | `REMeasurementType` |
-| `ValidityEndDate` | ✓ | | `_REMeasurement` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_REMeasurement` | `ValidityStartDate` |
-| `REMeasurementIsTotal` |  | | `_REMeasurement._REMeasurementType` | `REMeasurementIsTotal` |
-| `REMeasurementUnit` |  | | `_REMeasurement` | `REMeasurementUnit` |
-| `REMeasurementQuantity` |  | | `_REMeasurement` | `REMeasurementQuantity` |
-| `REMaximumMeasurementQuantity` |  | | `_REMeasurement` | `REMaximumMeasurementQuantity` |
-| `_REMeasurementType` |  | | `_REMeasurement` | `_REMeasurementType` |
-| `_UnitOfMeasure` |  | | `_REMeasurement` | `_UnitOfMeasure` |
-| `_RERentableObject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateRentableObjectUUID` | ✓ | | `_RERentableObjectData` | `RealEstateRentableObjectUUID` |  |  |
+| `InternalRealEstateNumber` | ✓ | | `_REMeasurement` | `InternalRealEstateNumber` |  |  |
+| `REMeasurementType` | ✓ | | `_REMeasurement` | `REMeasurementType` |  |  |
+| `ValidityEndDate` | ✓ | | `_REMeasurement` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_REMeasurement` | `ValidityStartDate` |  |  |
+| `REMeasurementIsTotal` |  | | `_REMeasurement._REMeasurementType` | `REMeasurementIsTotal` |  |  |
+| `REMeasurementUnit` |  | | `_REMeasurement` | `REMeasurementUnit` |  |  |
+| `REMeasurementQuantity` |  | | `_REMeasurement` | `REMeasurementQuantity` |  |  |
+| `REMaximumMeasurementQuantity` |  | | `_REMeasurement` | `REMaximumMeasurementQuantity` |  |  |
+| `_REMeasurementType` |  | | `_REMeasurement` | `_REMeasurementType` |  |  |
+| `_UnitOfMeasure` |  | | `_REMeasurement` | `_UnitOfMeasure` |  |  |
+| `_RERentableObject` | | ✓ | | | | |
 
 ## Associations
 

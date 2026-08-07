@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `FiscalYear` | ✓ | |  | `gjahr` |
-| `Region` | ✓ | |  | `regio` |
-| `EmploymentTaxDistributionType` | ✓ | |  | `j_1adtyp` |
-| `AR_GrossIncomeCoefficientRate` |  | |  | `j_1amacoef` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
+| `Region` | ✓ | |  | `regio` |  |  |
+| `EmploymentTaxDistributionType` | ✓ | |  | `j_1adtyp` |  |  |
+| `AR_GrossIncomeCoefficientRate` |  | |  | `j_1amacoef` |  |  |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShippingCondition` | ✓ | |  | `vsbed` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShippingCondition` | ✓ | |  | `vsbed` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

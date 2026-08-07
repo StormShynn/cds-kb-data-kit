@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceItem` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `TextObjectKey` |  | |  |  |
-| `TextObjectCategory` |  | |  |  |
-| `TextObjectType` |  | |  |  |
-| `MaintenanceItemLongText` |  | |  |  |
-| `_Language` | | ✓ | | |
-| `_LongText` | | ✓ | | |
-| `_TextObjectCategory` | | ✓ | | |
-| `_TextObjectType` | | ✓ | | |
-| `_MaintenanceItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `TextObjectKey` |  | |  |  |  |  |
+| `TextObjectCategory` |  | |  |  |  |  |
+| `TextObjectType` |  | |  |  |  |  |
+| `MaintenanceItemLongText` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
+| `_LongText` | | ✓ | | | | |
+| `_TextObjectCategory` | | ✓ | | | | |
+| `_TextObjectType` | | ✓ | | | | |
+| `_MaintenanceItem` | | ✓ | | | | |
 
 ## Source Code
 

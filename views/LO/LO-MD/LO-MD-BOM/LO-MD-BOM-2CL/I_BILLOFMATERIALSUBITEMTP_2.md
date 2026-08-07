@@ -33,24 +33,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterial` | ✓ | |  |  |
-| `BillOfMaterialCategory` | ✓ | |  |  |
-| `BillOfMaterialVariant` | ✓ | |  |  |
-| `BillOfMaterialVersion` | ✓ | |  |  |
-| `BillOfMaterialItemNodeNumber` | ✓ | |  |  |
-| `HeaderChangeDocument` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `BOMItemInternalChangeCount` | ✓ | |  |  |
-| `BOMSubItemNumberValue` | ✓ | |  |  |
-| `BillOfMaterialItemUnit` |  | |  |  |
-| `BillOfMaterialSubItemQuantity` |  | |  |  |
-| `BOMSubItemInstallationPoint` |  | |  |  |
-| `BillOfMaterialSubItemText` |  | |  |  |
-| `_BillOfMaterialItem` | | ✓ | | |
-| `_BillOfMaterial` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  |  |  |  |
+| `BillOfMaterialCategory` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |  |  |
+| `BillOfMaterialVersion` | ✓ | |  |  |  |  |
+| `BillOfMaterialItemNodeNumber` | ✓ | |  |  |  |  |
+| `HeaderChangeDocument` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `BOMItemInternalChangeCount` | ✓ | |  |  |  |  |
+| `BOMSubItemNumberValue` | ✓ | |  |  |  |  |
+| `BillOfMaterialItemUnit` |  | |  |  |  |  |
+| `BillOfMaterialSubItemQuantity` |  | |  |  |  |  |
+| `BOMSubItemInstallationPoint` |  | |  |  |  |  |
+| `BillOfMaterialSubItemText` |  | |  |  |  |  |
+| `_BillOfMaterialItem` | | ✓ | | | | |
+| `_BillOfMaterial` | | ✓ | | | | |
 
 ## Source Code
 

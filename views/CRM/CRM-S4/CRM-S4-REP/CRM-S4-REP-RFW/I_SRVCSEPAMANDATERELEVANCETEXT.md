@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SrvcSEPAMandateRelevance` | ✓ | |  | `cast(domvalue_l as crm_sepa_on)` |
-| `SrvcSEPAMandateRelevanceText` |  | |  | `ddtext` |
-| `_SrvcSEPAMandateRelevance` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SrvcSEPAMandateRelevance` | ✓ | |  | `cast(domvalue_l as crm_sepa_on)` |  |  |
+| `SrvcSEPAMandateRelevanceText` |  | |  | `ddtext` |  |  |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

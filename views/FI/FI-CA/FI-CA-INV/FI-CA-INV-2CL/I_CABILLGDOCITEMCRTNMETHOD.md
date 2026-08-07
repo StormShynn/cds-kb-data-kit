@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as billitem_crmet_kk preserving type )` |
-| `_CABillgDocItemCrtnMethodText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as billitem_crmet_kk preserving type )` |  |  |
+| `_CABillgDocItemCrtnMethodText` | | ✓ | | | | |
 
 ## Associations
 

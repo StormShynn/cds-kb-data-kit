@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LegalTransactionLinkdObjUUID` | ✓ | |  |  |
-| `LglCntntMLinkdObjType` |  | |  |  |
-| `LglCntntMLinkdObj` |  | |  |  |
-| `LegalTransactionUUID` |  | |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |
-| `LegalTransactionIsTriggerObj` |  | |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |
-| `_LegalTransaction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionLinkdObjUUID` | ✓ | |  |  |  |  |
+| `LglCntntMLinkdObjType` |  | |  |  |  |  |
+| `LglCntntMLinkdObj` |  | |  |  |  |  |
+| `LegalTransactionUUID` |  | |  |  |  |  |
+| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
+| `LegalTransactionIsTriggerObj` |  | |  |  |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `_LegalTransaction` | | ✓ | | | | |
 
 ## Source Code
 

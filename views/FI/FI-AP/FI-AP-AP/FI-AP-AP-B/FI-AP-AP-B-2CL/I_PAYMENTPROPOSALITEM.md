@@ -30,101 +30,101 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentRunDate` | ✓ | |  |  |
-| `PaymentRunID` | ✓ | |  |  |
-| `PaymentRunIsProposal` | ✓ | |  |  |
-| `PayingCompanyCode` | ✓ | |  |  |
-| `Supplier` | ✓ | |  |  |
-| `Customer` | ✓ | |  |  |
-| `PaymentRecipient` | ✓ | |  |  |
-| `PaymentDocument` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocumentItem` | ✓ | |  |  |
-| `BranchAccount` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `DueCalculationBaseDate` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PostingKey` |  | |  |  |
-| `SpecialGLCode` |  | |  |  |
-| `PaymentRunItemMessageNumber` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `PaymentBlockingReason` |  | |  |  |
-| `AccountingDocExternalReference` |  | |  |  |
-| `DocumentReferenceID` |  | |  | `AccountingDocExternalReference` |
-| `PaymentReference` |  | |  |  |
-| `AssetContract` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `SystemMessageNumber` |  | |  |  |
-| `PaymentCurrency` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |
-| `CashDiscountAmtInTransacCrcy` |  | |  |  |
-| `WhldgTaxAmtInTransacCrcy` |  | |  |  |
-| `TotDeductionAmtInTransacCrcy` |  | |  |  |
-| `NetAmountInTransacCurrency` |  | |  |  |
-| `MaxCshDiscAmtInTransacCrcy` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `CashDiscountAmtInCoCodeCrcy` |  | |  |  |
-| `WhldgTaxAmtInCoCodeCrcy` |  | |  |  |
-| `TotDeductionAmtInCoCodeCrcy` |  | |  |  |
-| `NetAmountInCoCodeCurrency` |  | |  |  |
-| `HeaderAmtInCoCodeCurrency` |  | |  |  |
-| `MaxCshDiscAmtInCoCodeCrcy` |  | |  |  |
-| `FunctionalCurrency` |  | |  |  |
-| `AmountInFunctionalCurrency` |  | |  | `cast( case FunctionalCurrency when CompanyCodeCurrency then HeaderAmtInCoCodeCurrency when AdditionalCurrency1 then AmountInAdditionalCurrency1 when AdditionalCurrency2 then AmountInAdditionalCurrency2 end as fins_vfccur12 preserving type )` |
-| `CashDiscountAmountInFuncnlCrcy` |  | |  | `cast( case FunctionalCurrency when CompanyCodeCurrency then CashDiscountAmtInTransacCrcy when AdditionalCurrency1 then CashDiscountAmtInAddlCrcy1 when AdditionalCurrency2 then CashDiscountAmtInAddlCrcy2 end as farp_cash_disc_fcsl preserving type )` |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `StateCentralBankPaymentReason` |  | |  |  |
-| `SupplyingCountry` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `FinancialAccountType` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `TradingPartner` |  | |  |  |
-| `HouseBank` |  | |  |  |
-| `BPBankAccountInternalID` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `BankReconciliationAccount` |  | |  |  |
-| `PaymentBlockLevel` |  | |  |  |
-| `ConsideredPaymentMethods` |  | |  |  |
-| `Reference1IDByBusinessPartner` |  | |  |  |
-| `Reference2IDByBusinessPartner` |  | |  |  |
-| `Reference3IDByBusinessPartner` |  | |  |  |
-| `PaymentReason` |  | |  |  |
-| `BranchCode` |  | |  |  |
-| `_PaymentProposalPayment` | | ✓ | | |
-| `_PostingKeyWthSpclGLCodeTxt` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_PayableToleranceDay` | | ✓ | | |
-| `_PostingKeyWithSpecialGLCode` | | ✓ | | |
-| `_PaytProposalRunMessage` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PaymentCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_FunctionalCurrency` | | ✓ | | |
-| `_OperationalAcctgDocItem` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_PostingKey` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_HouseBank` | | ✓ | | |
-| `_PaymentReason` | | ✓ | | |
-| `_FinancialAccountType` | | ✓ | | |
-| `_SpecialGLCode` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_PaymentBlockLevel` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentRunDate` | ✓ | |  |  |  |  |
+| `PaymentRunID` | ✓ | |  |  |  |  |
+| `PaymentRunIsProposal` | ✓ | |  |  |  |  |
+| `PayingCompanyCode` | ✓ | |  |  |  |  |
+| `Supplier` | ✓ | |  |  |  |  |
+| `Customer` | ✓ | |  |  |  |  |
+| `PaymentRecipient` | ✓ | |  |  |  |  |
+| `PaymentDocument` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocumentItem` | ✓ | |  |  |  |  |
+| `BranchAccount` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `DueCalculationBaseDate` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PostingKey` |  | |  |  |  |  |
+| `SpecialGLCode` |  | |  |  |  |  |
+| `PaymentRunItemMessageNumber` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `PaymentBlockingReason` |  | |  |  |  |  |
+| `AccountingDocExternalReference` |  | |  |  |  |  |
+| `DocumentReferenceID` |  | |  | `AccountingDocExternalReference` |  |  |
+| `PaymentReference` |  | |  |  |  |  |
+| `AssetContract` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `SystemMessageNumber` |  | |  |  |  |  |
+| `PaymentCurrency` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `CashDiscountAmtInTransacCrcy` |  | |  |  |  |  |
+| `WhldgTaxAmtInTransacCrcy` |  | |  |  |  |  |
+| `TotDeductionAmtInTransacCrcy` |  | |  |  |  |  |
+| `NetAmountInTransacCurrency` |  | |  |  |  |  |
+| `MaxCshDiscAmtInTransacCrcy` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `CashDiscountAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `WhldgTaxAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `TotDeductionAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `NetAmountInCoCodeCurrency` |  | |  |  |  |  |
+| `HeaderAmtInCoCodeCurrency` |  | |  |  |  |  |
+| `MaxCshDiscAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `FunctionalCurrency` |  | |  |  |  |  |
+| `AmountInFunctionalCurrency` |  | |  | `cast( case FunctionalCurrency when CompanyCodeCurrency then HeaderAmtInCoCodeCurrency when AdditionalCurrency1 then AmountInAdditionalCurrency1 when AdditionalCurrency2 then AmountInAdditionalCurrency2 end as fins_vfccur12 preserving type )` |  |  |
+| `CashDiscountAmountInFuncnlCrcy` |  | |  | `cast( case FunctionalCurrency when CompanyCodeCurrency then CashDiscountAmtInTransacCrcy when AdditionalCurrency1 then CashDiscountAmtInAddlCrcy1 when AdditionalCurrency2 then CashDiscountAmtInAddlCrcy2 end as farp_cash_disc_fcsl preserving type )` |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `StateCentralBankPaymentReason` |  | |  |  |  |  |
+| `SupplyingCountry` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `FinancialAccountType` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `TradingPartner` |  | |  |  |  |  |
+| `HouseBank` |  | |  |  |  |  |
+| `BPBankAccountInternalID` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `BankReconciliationAccount` |  | |  |  |  |  |
+| `PaymentBlockLevel` |  | |  |  |  |  |
+| `ConsideredPaymentMethods` |  | |  |  |  |  |
+| `Reference1IDByBusinessPartner` |  | |  |  |  |  |
+| `Reference2IDByBusinessPartner` |  | |  |  |  |  |
+| `Reference3IDByBusinessPartner` |  | |  |  |  |  |
+| `PaymentReason` |  | |  |  |  |  |
+| `BranchCode` |  | |  |  |  |  |
+| `_PaymentProposalPayment` | | ✓ | | | | |
+| `_PostingKeyWthSpclGLCodeTxt` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_PayableToleranceDay` | | ✓ | | | | |
+| `_PostingKeyWithSpecialGLCode` | | ✓ | | | | |
+| `_PaytProposalRunMessage` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PaymentCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_FunctionalCurrency` | | ✓ | | | | |
+| `_OperationalAcctgDocItem` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_PostingKey` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_HouseBank` | | ✓ | | | | |
+| `_PaymentReason` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_SpecialGLCode` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_PaymentBlockLevel` | | ✓ | | | | |
 
 ## Associations
 

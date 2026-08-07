@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ProcessingStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as /s4ppm/tv_proc_status )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ProcessingStatusText` |  | |  | `cast ( ddtext as /s4ppm/tv_proc_status_text )` |
-| `_Language` | | ✓ | | |
-| `_ProcessingStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ProcessingStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as /s4ppm/tv_proc_status )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProcessingStatusText` |  | |  | `cast ( ddtext as /s4ppm/tv_proc_status_text )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProcessingStatus` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `_BusinessSolutionOrder` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
 
 ## Source Code
 

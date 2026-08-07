@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(td05t_at_fs.spras as spras preserving type)` |
-| `BPOeNBTargetGroup` | ✓ | |  | `cast(td05t_at_fs.szg_at as vvszg_at_fs preserving type)` |
-| `BPOeNBTargetGroupDescription` |  | |  | `xlbez` |
-| `_AT_BPOeNBTargetGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(td05t_at_fs.spras as spras preserving type)` |  |  |
+| `BPOeNBTargetGroup` | ✓ | |  | `cast(td05t_at_fs.szg_at as vvszg_at_fs preserving type)` |  |  |
+| `BPOeNBTargetGroupDescription` |  | |  | `xlbez` |  |  |
+| `_AT_BPOeNBTargetGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

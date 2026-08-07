@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocument` | ✓ | |  |  |
-| `PurchasingDocumentItem` | ✓ | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `_PurchasingDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocument` | ✓ | |  |  |  |  |
+| `PurchasingDocumentItem` | ✓ | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `_PurchasingDocument` | | ✓ | | | | |
 
 ## Source Code
 

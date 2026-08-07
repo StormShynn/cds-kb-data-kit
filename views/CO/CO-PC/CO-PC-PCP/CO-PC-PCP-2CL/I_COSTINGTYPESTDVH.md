@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostingType` | ✓ | |  |  |
-| `CostingTypeName` |  | | `_CostingTypeText` | `CostingTypeName` |
-| `_CostingTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostingType` | ✓ | |  |  |  |  |
+| `CostingTypeName` |  | | `_CostingTypeText` | `CostingTypeName` |  |  |
+| `_CostingTypeText` | | ✓ | | | | |
 
 ## Associations
 

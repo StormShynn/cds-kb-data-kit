@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RERntblObjToUsblObjAssgmtUUID` | ✓ | |  | `rouoassignuuid` |
-| `RealEstateRentableObjectUUID` |  | |  | `rentableobjectuuid` |
-| `RealEstateUsableObjectUUID` |  | |  | `usableobjectuuid` |
-| `ValidityStartDate` |  | |  | `validfrom` |
-| `ValidityEndDate` |  | |  | `validto` |
-| `_RERentableObject` | | ✓ | | |
-| `_REUsableObject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RERntblObjToUsblObjAssgmtUUID` | ✓ | |  | `rouoassignuuid` |  |  |
+| `RealEstateRentableObjectUUID` |  | |  | `rentableobjectuuid` |  |  |
+| `RealEstateUsableObjectUUID` |  | |  | `usableobjectuuid` |  |  |
+| `ValidityStartDate` |  | |  | `validfrom` |  |  |
+| `ValidityEndDate` |  | |  | `validto` |  |  |
+| `_RERentableObject` | | ✓ | | | | |
+| `_REUsableObject` | | ✓ | | | | |
 
 ## Associations
 

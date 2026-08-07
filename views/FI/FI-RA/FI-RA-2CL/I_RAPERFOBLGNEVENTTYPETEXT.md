@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `language` |
-| `PerfOblgnEventType` | ✓ | |  | `event_type` |
-| `PerfOblgnEventTypeText` |  | |  | `cast(description as farr_cds_event_type_name preserving type)` |
-| `_RAPerfOblgnEventType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `language` |  |  |
+| `PerfOblgnEventType` | ✓ | |  | `event_type` |  |  |
+| `PerfOblgnEventTypeText` |  | |  | `cast(description as farr_cds_event_type_name preserving type)` |  |  |
+| `_RAPerfOblgnEventType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

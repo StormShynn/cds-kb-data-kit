@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `SalesOrganization` | ✓ | |  | `cast( _Source.SalesOrganization as fincs_salesorganization preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast ( _Source.SalesOrganizationName as fincs_description_text_20 preserving type )` |
-| `SalesOrganizationName` |  | |  | `cast( _Source.SalesOrganizationName as fincs_salesorganizationname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `SalesOrganization` | ✓ | |  | `cast( _Source.SalesOrganization as fincs_salesorganization preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast ( _Source.SalesOrganizationName as fincs_description_text_20 preserving type )` |  |  |
+| `SalesOrganizationName` |  | |  | `cast( _Source.SalesOrganizationName as fincs_salesorganizationname preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
 
 ## Associations
 

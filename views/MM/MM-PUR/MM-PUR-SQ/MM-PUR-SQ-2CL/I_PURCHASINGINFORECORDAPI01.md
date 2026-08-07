@@ -28,42 +28,42 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingInfoRecord` | ✓ | |  |  |
-| `Supplier` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `PurchasingInfoRecordDesc` |  | |  |  |
-| `PurgDocOrderQuantityUnit` |  | |  |  |
-| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
-| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `SupplierRespSalesPersonName` |  | |  |  |
-| `SupplierPhoneNumber` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `SupplierMaterialGroup` |  | |  |  |
-| `PriorSupplier` |  | |  |  |
-| `VarblPurOrdUnitIsActive` |  | |  |  |
-| `Manufacturer` |  | |  |  |
-| `IsRegularSupplier` |  | |  |  |
-| `SupplierSubrange` |  | |  |  |
-| `NoDaysReminder1` |  | |  |  |
-| `NoDaysReminder2` |  | |  |  |
-| `NoDaysReminder3` |  | |  |  |
-| `ProductPurchasePointsQty` |  | |  |  |
-| `ProductPurchasePointsQtyUnit` |  | |  |  |
-| `ReturnAgreement` |  | |  |  |
-| `SupplierCertOriginCat` |  | |  |  |
-| `SupplierCertOriginNumber` |  | |  |  |
-| `SupplierCertValidityEndDate` |  | |  |  |
-| `SupplierCertOriginCountry` |  | |  |  |
-| `SupplierCertOriginRegion` |  | |  |  |
-| `SuplrCertOriginClassfctnNumber` |  | |  |  |
-| `SupplierSubrangeSortNumber` |  | |  |  |
-| `_PurgInfoRecdOrgPlntDataApi01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `PurchasingInfoRecordDesc` |  | |  |  |  |  |
+| `PurgDocOrderQuantityUnit` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |  |  |
+| `SupplierPhoneNumber` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `SupplierMaterialGroup` |  | |  |  |  |  |
+| `PriorSupplier` |  | |  |  |  |  |
+| `VarblPurOrdUnitIsActive` |  | |  |  |  |  |
+| `Manufacturer` |  | |  |  |  |  |
+| `IsRegularSupplier` |  | |  |  |  |  |
+| `SupplierSubrange` |  | |  |  |  |  |
+| `NoDaysReminder1` |  | |  |  |  |  |
+| `NoDaysReminder2` |  | |  |  |  |  |
+| `NoDaysReminder3` |  | |  |  |  |  |
+| `ProductPurchasePointsQty` |  | |  |  |  |  |
+| `ProductPurchasePointsQtyUnit` |  | |  |  |  |  |
+| `ReturnAgreement` |  | |  |  |  |  |
+| `SupplierCertOriginCat` |  | |  |  |  |  |
+| `SupplierCertOriginNumber` |  | |  |  |  |  |
+| `SupplierCertValidityEndDate` |  | |  |  |  |  |
+| `SupplierCertOriginCountry` |  | |  |  |  |  |
+| `SupplierCertOriginRegion` |  | |  |  |  |  |
+| `SuplrCertOriginClassfctnNumber` |  | |  |  |  |  |
+| `SupplierSubrangeSortNumber` |  | |  |  |  |  |
+| `_PurgInfoRecdOrgPlntDataApi01` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `BusinessRoleUUID` | ✓ | |  |  |
-| `BusinessRolePriceCategory` | ✓ | |  | `usrprc_id` |
-| `BusinessRole` |  | |  |  |
-| `BusinessRoleGroup` |  | |  |  |
-| `BusinessRolePriceCategoryName` |  | |  | `text` |
-| `_BusinessRolePriceCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `BusinessRoleUUID` | ✓ | |  |  |  |  |
+| `BusinessRolePriceCategory` | ✓ | |  | `usrprc_id` |  |  |
+| `BusinessRole` |  | |  |  |  |  |
+| `BusinessRoleGroup` |  | |  |  |  |  |
+| `BusinessRolePriceCategoryName` |  | |  | `text` |  |  |
+| `_BusinessRolePriceCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

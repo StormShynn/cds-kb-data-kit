@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REGenericRentalObjectUsageType` | ✓ | |  | `usagetype` |
-| `REGnrcRentalObjUsageCategory` |  | |  | `usagecategory` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REGenericRentalObjectUsageType` | ✓ | |  | `usagetype` |  |  |
+| `REGnrcRentalObjUsageCategory` |  | |  | `usagecategory` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

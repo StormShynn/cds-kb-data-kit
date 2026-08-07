@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionResourceToolGroup` | ✓ | |  | `cast(fgrua as vdm_prtgroup preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `ProductionRsceToolGroupDesc` |  | |  | `fgrtxt` |
-| `_Language` | | ✓ | | |
-| `_ProdnRsceToolGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionResourceToolGroup` | ✓ | |  | `cast(fgrua as vdm_prtgroup preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProductionRsceToolGroupDesc` |  | |  | `fgrtxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProdnRsceToolGroup` | | ✓ | | | | |
 
 ## Associations
 

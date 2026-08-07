@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `CreditSegment` | ✓ | |  |  |
-| `CreditSegmentCurrency` |  | |  |  |
-| `EffectiveTotalCreditLimitAmt` |  | |  | `cast( ( CustomerCreditLimitAmount + SgmSecuredCreditLimitAmount + SgmInsuredCreditLimitAmount + SgmTempIncreasedCreditLmtAmt + ProfSecLimitAmount + ProfInsLimitAmount + ProfTmpIncrLimitAmount ) as ukm_effectivetotalcrdlimitamt )` |
-| `CustomerCreditLimitAmount` |  | |  |  |
-| `SecuredCreditLimitAmount` |  | |  | `cast( ( SgmSecuredCreditLimitAmount + ProfSecLimitAmount ) as ukm_securedcreditlimitamt )` |
-| `InsuredCreditLimitAmount` |  | |  | `cast( ( SgmInsuredCreditLimitAmount + ProfInsLimitAmount ) as ukm_insuredcreditlimitamt )` |
-| `TemporaryIncreasedCreditLmtAmt` |  | |  | `cast( ( SgmTempIncreasedCreditLmtAmt + ProfTmpIncrLimitAmount ) as ukm_tmpincreasedcrdlimitamt )` |
-| `_BusinessPartner` | | ✓ | | |
-| `_CreditManagementSegment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `CreditSegment` | ✓ | |  |  |  |  |
+| `CreditSegmentCurrency` |  | |  |  |  |  |
+| `EffectiveTotalCreditLimitAmt` |  | |  | `cast( ( CustomerCreditLimitAmount + SgmSecuredCreditLimitAmount + SgmInsuredCreditLimitAmount + SgmTempIncreasedCreditLmtAmt + ProfSecLimitAmount + ProfInsLimitAmount + ProfTmpIncrLimitAmount ) as ukm_effectivetotalcrdlimitamt )` |  |  |
+| `CustomerCreditLimitAmount` |  | |  |  |  |  |
+| `SecuredCreditLimitAmount` |  | |  | `cast( ( SgmSecuredCreditLimitAmount + ProfSecLimitAmount ) as ukm_securedcreditlimitamt )` |  |  |
+| `InsuredCreditLimitAmount` |  | |  | `cast( ( SgmInsuredCreditLimitAmount + ProfInsLimitAmount ) as ukm_insuredcreditlimitamt )` |  |  |
+| `TemporaryIncreasedCreditLmtAmt` |  | |  | `cast( ( SgmTempIncreasedCreditLmtAmt + ProfTmpIncrLimitAmount ) as ukm_tmpincreasedcrdlimitamt )` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CreditManagementSegment` | | ✓ | | | | |
 
 ## Associations
 

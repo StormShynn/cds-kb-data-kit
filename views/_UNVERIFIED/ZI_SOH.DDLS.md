@@ -35,19 +35,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Vbeln` | ✓ | |  | `vbeln` |
-| `Ernam` |  | |  | `ernam` |
-| `Erdat` |  | |  | `erdat` |
-| `Vkorg` |  | |  | `vkorg` |
-| `Vtweg` |  | |  | `vtweg` |
-| `Spart` |  | |  | `spart` |
-| `Kunnr` |  | |  | `kunnr` |
-| `changed_by` |  | |  |  |
-| `changed_at` |  | |  |  |
-| `_kna1` | | ✓ | | |
-| `_tvko` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Vbeln` | ✓ | |  | `vbeln` |  |  |
+| `Ernam` |  | |  | `ernam` |  |  |
+| `Erdat` |  | |  | `erdat` |  |  |
+| `Vkorg` |  | |  | `vkorg` |  |  |
+| `Vtweg` |  | |  | `vtweg` |  |  |
+| `Spart` |  | |  | `spart` |  |  |
+| `Kunnr` |  | |  | `kunnr` |  |  |
+| `changed_by` |  | |  |  |  |  |
+| `changed_at` |  | |  |  |  |  |
+| `_kna1` | | ✓ | | | | |
+| `_tvko` | | ✓ | | | | |
 
 ## Associations
 

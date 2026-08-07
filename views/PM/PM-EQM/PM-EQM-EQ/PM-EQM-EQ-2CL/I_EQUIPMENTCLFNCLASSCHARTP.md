@@ -30,24 +30,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | |  |  |
-| `ClassInternalID` | ✓ | |  |  |
-| `CharcInternalID` | ✓ | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `Characteristic` |  | |  |  |
-| `CharcDataType` |  | |  |  |
-| `KeyDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ClassType` |  | |  |  |
-| `ClassMaintAuthGrp` |  | |  |  |
-| `ClassClassfctnAuthGrp` |  | |  |  |
-| `CharcMaintAuthGrp` |  | |  |  |
-| `Class` |  | |  |  |
-| `_Value` | | ✓ | | |
-| `_EquipmentClass` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |  |  |
+| `ClassInternalID` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `Characteristic` |  | |  |  |  |  |
+| `CharcDataType` |  | |  |  |  |  |
+| `KeyDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ClassType` |  | |  |  |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |  |  |
+| `CharcMaintAuthGrp` |  | |  |  |  |  |
+| `Class` |  | |  |  |  |  |
+| `_Value` | | ✓ | | | | |
+| `_EquipmentClass` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
 
 ## Source Code
 

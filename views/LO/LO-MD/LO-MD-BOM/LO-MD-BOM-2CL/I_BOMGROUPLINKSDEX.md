@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BOMLinkUUID` | ✓ | |  |  |
-| `BOMGroupUUID` |  | |  |  |
-| `BillOfMaterialCategory` |  | |  |  |
-| `BillOfMaterial` |  | |  |  |
-| `BillOfMaterialVariant` |  | |  |  |
-| `BillOfMaterialVersion` |  | |  |  |
-| `BillOfMaterialItemNodeNumber` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BOMLinkUUID` | ✓ | |  |  |  |  |
+| `BOMGroupUUID` |  | |  |  |  |  |
+| `BillOfMaterialCategory` |  | |  |  |  |  |
+| `BillOfMaterial` |  | |  |  |  |  |
+| `BillOfMaterialVariant` |  | |  |  |  |  |
+| `BillOfMaterialVersion` |  | |  |  |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  |  |  |  |
 
 ## Source Code
 

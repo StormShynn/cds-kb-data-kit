@@ -27,40 +27,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EarmarkedFundsDocument` | ✓ | |  |  |
-| `EarmarkedFundsDocumentItem` | ✓ | |  |  |
-| `EmrkdFndsDocItmMnlReducn` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `ReferenceDocumentType` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `ReferenceDocumentContext` |  | |  |  |
-| `ReferenceDocumentLogicalSystem` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `AccountingDocument` |  | |  |  |
-| `AccountingDocumentItem` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `AccountAssignmentNumber` |  | |  |  |
-| `ScheduleLine` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `PurchaseReqnAcctAssgmtNumber` |  | |  |  |
-| `EmrkdFndsItmProcgIsStatistical` |  | |  |  |
-| `IsReversed` |  | |  |  |
-| `EarmarkedFundsDocItmProcgText` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `EmrkdFndsProcgAmtInTransCrcy` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `EmrkdFndsProcgAmtInCCCrcy` |  | |  |  |
-| `I_EarmarkedFundsDocumentItemTP` |  | |  | `efitmred._EarmarkedFundsDocumentItem : redirected to parent I_EarmarkedFundsDocumentItemTP` |
-| `I_EarmarkedFundsDocumentTP` |  | |  | `efitmred._EarmarkedFundsDocument : redirected to I_EarmarkedFundsDocumentTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EarmarkedFundsDocument` | ✓ | |  |  |  |  |
+| `EarmarkedFundsDocumentItem` | ✓ | |  |  |  |  |
+| `EmrkdFndsDocItmMnlReducn` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `ReferenceDocumentContext` |  | |  |  |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `AccountingDocument` |  | |  |  |  |  |
+| `AccountingDocumentItem` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `AccountAssignmentNumber` |  | |  |  |  |  |
+| `ScheduleLine` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `PurchaseReqnAcctAssgmtNumber` |  | |  |  |  |  |
+| `EmrkdFndsItmProcgIsStatistical` |  | |  |  |  |  |
+| `IsReversed` |  | |  |  |  |  |
+| `EarmarkedFundsDocItmProcgText` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `EmrkdFndsProcgAmtInTransCrcy` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `EmrkdFndsProcgAmtInCCCrcy` |  | |  |  |  |  |
+| `I_EarmarkedFundsDocumentItemTP` |  | |  | `efitmred._EarmarkedFundsDocumentItem : redirected to parent I_EarmarkedFundsDocumentItemTP` |  |  |
+| `I_EarmarkedFundsDocumentTP` |  | |  | `efitmred._EarmarkedFundsDocument : redirected to I_EarmarkedFundsDocumentTP` |  |  |
 
 ## Source Code
 

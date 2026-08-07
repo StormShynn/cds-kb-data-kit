@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAIntcoType` | ✓ | |  | `cast(_tfk8250s.ico_type as ico_type_gfn_kk preserving type)` |
-| `CAIntcoSubtype` | ✓ | |  | `cast(_tfk8250s.ico_subtype as ico_subtype_gfn_kk preserving type)` |
-| `_CAIntcoType` | | ✓ | | |
-| `_CAIntcoSubtypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAIntcoType` | ✓ | |  | `cast(_tfk8250s.ico_type as ico_type_gfn_kk preserving type)` |  |  |
+| `CAIntcoSubtype` | ✓ | |  | `cast(_tfk8250s.ico_subtype as ico_subtype_gfn_kk preserving type)` |  |  |
+| `_CAIntcoType` | | ✓ | | | | |
+| `_CAIntcoSubtypeText` | | ✓ | | | | |
 
 ## Associations
 

@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  |  |
-| `Supplier` | ✓ | |  |  |
-| `ValuationArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |  |  |
+| `Supplier` | ✓ | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseRequisition` | ✓ | |  |  |
-| `PurchaseRequisitionItem` | ✓ | |  |  |
-| `TextObjectCategory` | ✓ | |  |  |
-| `TextObjectKey` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `PlainLongText` |  | |  |  |
-| `FixedIndicator` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurchaseRequisitionItem` | | ✓ | | |
-| `_PurReqn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |  |  |
+| `PurchaseRequisitionItem` | ✓ | |  |  |  |  |
+| `TextObjectCategory` | ✓ | |  |  |  |  |
+| `TextObjectKey` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `PlainLongText` |  | |  |  |  |  |
+| `FixedIndicator` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
+| `_PurReqn` | | ✓ | | | | |
 
 ## Source Code
 

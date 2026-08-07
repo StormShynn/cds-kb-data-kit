@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
-| `PMRPConstraintType` | ✓ | |  | `domvalue_l` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PMRPConstraintTypeText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_PMRPFlxblCstrtType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |  |  |
+| `PMRPConstraintType` | ✓ | |  | `domvalue_l` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PMRPConstraintTypeText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PMRPFlxblCstrtType` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EU_EDocDoctypeId` | ✓ | |  | `doc_type_id` |
-| `EU_EDocDoctype` |  | |  | `doc_type` |
-| `EU_EDocProcessId` |  | |  | `process_id` |
-| `EU_EDocIsEmailDocType` |  | |  | `is_email_doc_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EU_EDocDoctypeId` | ✓ | |  | `doc_type_id` |  |  |
+| `EU_EDocDoctype` |  | |  | `doc_type` |  |  |
+| `EU_EDocProcessId` |  | |  | `process_id` |  |  |
+| `EU_EDocIsEmailDocType` |  | |  | `is_email_doc_type` |  |  |
 
 ## Source Code
 

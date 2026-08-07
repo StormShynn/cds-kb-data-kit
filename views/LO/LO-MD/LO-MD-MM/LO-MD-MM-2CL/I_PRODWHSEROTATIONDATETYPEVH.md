@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrhsMgmtPtwyAndStkRemovalStrgy` | ✓ | |  | `cast ( dd07l.domvalue_l as rotation_date)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrhsMgmtPtwyAndStkRemovalStrgy` | ✓ | |  | `cast ( dd07l.domvalue_l as rotation_date)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

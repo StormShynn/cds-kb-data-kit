@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityCategoryCode` | ✓ | |  | `cast(cat.kapar as pph_kapart preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityCategoryCode` | ✓ | |  | `cast(cat.kapar as pph_kapart preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

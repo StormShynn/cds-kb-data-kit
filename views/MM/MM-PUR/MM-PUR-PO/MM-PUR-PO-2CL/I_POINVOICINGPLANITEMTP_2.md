@@ -30,24 +30,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `InvoicingPlanItem` | ✓ | |  |  |
-| `InvoicingPlan` | ✓ | |  |  |
-| `InvoicingPlanSettlementFromDte` |  | |  |  |
-| `InvoicingPlanSettlementToDte` |  | |  |  |
-| `InvoicingPlanInvoicingDate` |  | |  |  |
-| `InvoicingPlanAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchaseOrderType` |  | |  |  |
-| `Plant` |  | |  |  |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_PurchaseOrderInvoicingPlan` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `InvoicingPlanItem` | ✓ | |  |  |  |  |
+| `InvoicingPlan` | ✓ | |  |  |  |  |
+| `InvoicingPlanSettlementFromDte` |  | |  |  |  |  |
+| `InvoicingPlanSettlementToDte` |  | |  |  |  |  |
+| `InvoicingPlanInvoicingDate` |  | |  |  |  |  |
+| `InvoicingPlanAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchaseOrderType` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_PurchaseOrderInvoicingPlan` | | ✓ | | | | |
 
 ## Source Code
 

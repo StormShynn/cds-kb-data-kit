@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `PlainLongText` |  | |  |  |
-| `_Language` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `PlainLongText` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
 
 ## Source Code
 

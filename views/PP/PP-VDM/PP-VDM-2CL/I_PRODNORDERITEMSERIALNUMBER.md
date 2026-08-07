@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionOrder` | ✓ | |  |  |
-| `ProductionOrderItem` | ✓ | |  |  |
-| `SerialNumber` | ✓ | |  | `cast(objk.SerialNumber as gernr preserving type)` |
-| `MaintenanceItemObjectList` |  | |  |  |
-| `MaintenanceItemObject` |  | |  |  |
-| `Equipment` |  | |  | `cast(objk.Equipment as equnr preserving type)` |
-| `Product` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `PlanningPlant` |  | |  |  |
-| `ProductionOrderType` |  | |  |  |
-| `SerialNumberProfile` |  | |  |  |
-| `SerialNumberAssignmentDate` |  | |  |  |
-| `_ProductionOrder` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_EquipmentText` | | ✓ | | |
-| `_ProductionOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionOrder` | ✓ | |  |  |  |  |
+| `ProductionOrderItem` | ✓ | |  |  |  |  |
+| `SerialNumber` | ✓ | |  | `cast(objk.SerialNumber as gernr preserving type)` |  |  |
+| `MaintenanceItemObjectList` |  | |  |  |  |  |
+| `MaintenanceItemObject` |  | |  |  |  |  |
+| `Equipment` |  | |  | `cast(objk.Equipment as equnr preserving type)` |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `PlanningPlant` |  | |  |  |  |  |
+| `ProductionOrderType` |  | |  |  |  |  |
+| `SerialNumberProfile` |  | |  |  |  |  |
+| `SerialNumberAssignmentDate` |  | |  |  |  |  |
+| `_ProductionOrder` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_EquipmentText` | | ✓ | | | | |
+| `_ProductionOrderItem` | | ✓ | | | | |
 
 ## Associations
 

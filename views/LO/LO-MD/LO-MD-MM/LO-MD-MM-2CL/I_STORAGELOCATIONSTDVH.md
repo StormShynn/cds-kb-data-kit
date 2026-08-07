@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  |  |
-| `StorageLocation` | ✓ | |  |  |
-| `StorageLocationName` |  | |  |  |
-| `ConfigDeprecationCode` |  | |  |  |
-| `PlantName` |  | | `_Plant` | `PlantName` |
-| `SalesOrganization` |  | | `_Plant` | `SalesOrganization` |
-| `CompanyCode` |  | | `_Plant._ValuationArea` | `CompanyCode` |
-| `_ConfigDeprecationCode` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |  |  |
+| `StorageLocation` | ✓ | |  |  |  |  |
+| `StorageLocationName` |  | |  |  |  |  |
+| `ConfigDeprecationCode` |  | |  |  |  |  |
+| `PlantName` |  | | `_Plant` | `PlantName` |  |  |
+| `SalesOrganization` |  | | `_Plant` | `SalesOrganization` |  |  |
+| `CompanyCode` |  | | `_Plant._ValuationArea` | `CompanyCode` |  |  |
+| `_ConfigDeprecationCode` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

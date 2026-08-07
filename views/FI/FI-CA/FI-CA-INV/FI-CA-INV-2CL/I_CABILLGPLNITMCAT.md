@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnItmCat` | ✓ | |  | `bipitemcat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnItmCat` | ✓ | |  | `bipitemcat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `dzeord` |  | |  | `key SourceListRecord : dzeord` |
-| `SourceListCreationDate` |  | |  | `erdat` |
-| `SourceListCreatedByUser` |  | |  | `ernam` |
-| `NewValueOfValidityStartDate` |  | |  | `bdatu` |
-| `NewValueOfValidityEndDate` |  | |  | `bdatu` |
-| `SupplierNewValue` |  | |  | `lifnr` |
-| `PurchasingOrganizationNewValue` |  | |  | `ekorg` |
-| `PurchaseOrderUnit` |  | |  | `meins` |
-| `OldValueOfValidityStartDate` |  | |  | `bdatu` |
-| `OldValueOfValidityEndDate` |  | |  | `bdatu` |
-| `SupplierOldValue` |  | |  | `lifnr` |
-| `PurchasingOrganizationOldValue` |  | |  | `ekorg` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `dzeord` |  | |  | `key SourceListRecord : dzeord` |  |  |
+| `SourceListCreationDate` |  | |  | `erdat` |  |  |
+| `SourceListCreatedByUser` |  | |  | `ernam` |  |  |
+| `NewValueOfValidityStartDate` |  | |  | `bdatu` |  |  |
+| `NewValueOfValidityEndDate` |  | |  | `bdatu` |  |  |
+| `SupplierNewValue` |  | |  | `lifnr` |  |  |
+| `PurchasingOrganizationNewValue` |  | |  | `ekorg` |  |  |
+| `PurchaseOrderUnit` |  | |  | `meins` |  |  |
+| `OldValueOfValidityStartDate` |  | |  | `bdatu` |  |  |
+| `OldValueOfValidityEndDate` |  | |  | `bdatu` |  |  |
+| `SupplierOldValue` |  | |  | `lifnr` |  |  |
+| `PurchasingOrganizationOldValue` |  | |  | `ekorg` |  |  |
 
 ## Source Code
 

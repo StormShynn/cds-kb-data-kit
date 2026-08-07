@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACorrespondenceActivityCode` | ✓ | |  | `corr_ackey` |
-| `Language` | ✓ | |  | `spras` |
-| `CACorrespncActivityCodeText` |  | |  | `corr_atext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACorrespondenceActivityCode` | ✓ | |  | `corr_ackey` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CACorrespncActivityCodeText` |  | |  | `corr_atext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

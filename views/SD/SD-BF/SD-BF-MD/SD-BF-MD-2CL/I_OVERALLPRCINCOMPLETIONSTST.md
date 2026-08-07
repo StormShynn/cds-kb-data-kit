@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OverallPricingIncompletionSts` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OverallPrcIncompletionStsDesc` |  | |  | `cast(bezei as overallprcincompletionstsdesc preserving type)` |
-| `_OverallPricingIncompletionSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverallPricingIncompletionSts` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OverallPrcIncompletionStsDesc` |  | |  | `cast(bezei as overallprcincompletionstsdesc preserving type)` |  |  |
+| `_OverallPricingIncompletionSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

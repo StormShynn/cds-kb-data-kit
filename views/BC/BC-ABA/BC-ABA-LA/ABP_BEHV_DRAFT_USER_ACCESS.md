@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserID` |  | |  | `abp_behv_draft_user_name` |
-| `UserAccessRole` |  | |  | `abp_behv_draft_user_role` |
-| `ABP_BEHV_PAR_SHARE` |  | |  | `toParent : association to parent ABP_BEHV_PAR_SHARE` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserID` |  | |  | `abp_behv_draft_user_name` |  |  |
+| `UserAccessRole` |  | |  | `abp_behv_draft_user_role` |  |  |
+| `ABP_BEHV_PAR_SHARE` |  | |  | `toParent : association to parent ABP_BEHV_PAR_SHARE` |  |  |
 
 ## Source Code
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SubLedgerAcctLineItemType` | ✓ | |  | `slalittype` |
-| `Language` | ✓ | |  | `langu` |
-| `SubLedgerAcctLineItemTypeName` |  | |  | `cast( finsts_slalittyt.description as fis_slalittype_desc)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubLedgerAcctLineItemType` | ✓ | |  | `slalittype` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `SubLedgerAcctLineItemTypeName` |  | |  | `cast( finsts_slalittyt.description as fis_slalittype_desc)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

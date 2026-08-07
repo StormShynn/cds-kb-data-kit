@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Carrid` | ✓ | |  | `carrid` |
-| `Connid` | ✓ | |  | `connid` |
-| `Countryfr` |  | |  | `countryfr` |
-| `Cityfrom` |  | |  | `cityfrom` |
-| `Airpfrom` |  | |  | `airpfrom` |
-| `Countryto` |  | |  | `countryto` |
-| `Cityto` |  | |  | `cityto` |
-| `_Flights` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Carrid` | ✓ | |  | `carrid` |  |  |
+| `Connid` | ✓ | |  | `connid` |  |  |
+| `Countryfr` |  | |  | `countryfr` |  |  |
+| `Cityfrom` |  | |  | `cityfrom` |  |  |
+| `Airpfrom` |  | |  | `airpfrom` |  |  |
+| `Countryto` |  | |  | `countryto` |  |  |
+| `Cityto` |  | |  | `cityto` |  |  |
+| `_Flights` | | ✓ | | | | |
 
 ## Associations
 

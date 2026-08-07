@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KnbnCalcNewCtnNmbrAssgmt` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as nknum)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KnbnCalcNewCtnNmbrAssgmt` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as nknum)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

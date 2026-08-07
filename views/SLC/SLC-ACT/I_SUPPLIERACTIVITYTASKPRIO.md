@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrActyTaskPriority` | ✓ | |  | `cast(substring( domvalue_l, 1, 1) as /srmsmc/tsk_priority)` |
-| `_SupplierActivityTaskPrioText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrActyTaskPriority` | ✓ | |  | `cast(substring( domvalue_l, 1, 1) as /srmsmc/tsk_priority)` |  |  |
+| `_SupplierActivityTaskPrioText` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TeamMemberUUID` | ✓ | |  | `guid` |
-| `BusinessPartnerUUID` |  | |  | `bupa_guid` |
-| `ProjectUUID` |  | |  | `project_guid` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `CreationDateTime` |  | |  | `created_on` |
-| `LastChangedByUser` |  | |  | `changed_by` |
-| `LastChangeDateTime` |  | |  | `changed_on` |
-| `_Project` | | ✓ | | |
-| `_Entitlement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TeamMemberUUID` | ✓ | |  | `guid` |  |  |
+| `BusinessPartnerUUID` |  | |  | `bupa_guid` |  |  |
+| `ProjectUUID` |  | |  | `project_guid` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `CreationDateTime` |  | |  | `created_on` |  |  |
+| `LastChangedByUser` |  | |  | `changed_by` |  |  |
+| `LastChangeDateTime` |  | |  | `changed_on` |  |  |
+| `_Project` | | ✓ | | | | |
+| `_Entitlement` | | ✓ | | | | |
 
 ## Associations
 

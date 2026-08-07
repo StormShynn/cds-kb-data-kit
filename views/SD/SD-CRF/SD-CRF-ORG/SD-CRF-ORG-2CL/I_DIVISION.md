@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Division` | ✓ | |  | `spart` |
-| `DivisionOID` |  | |  | `cast( spart as division_oid )` |
-| `_Text` | | ✓ | | |
-| `_DivisionHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Division` | ✓ | |  | `spart` |  |  |
+| `DivisionOID` |  | |  | `cast( spart as division_oid )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_DivisionHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

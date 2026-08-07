@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |
-| `CAMainTransaction` | ✓ | |  | `hvorg` |
-| `CASubTransaction` | ✓ | |  | `tvorg` |
-| `Language` | ✓ | |  | `spras` |
-| `CASubTransactionName` |  | |  | `cast( txt30 as tvorg_text_kk preserving type )` |
-| `_ApplArea` |  | |  | `_CAApplicationArea` |
-| `_MainTransaction` |  | |  | `_CAMainTransaction` |
-| `_CAApplicationArea` | | ✓ | | |
-| `_CAMainTransaction` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
+| `CAMainTransaction` | ✓ | |  | `hvorg` |  |  |
+| `CASubTransaction` | ✓ | |  | `tvorg` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CASubTransactionName` |  | |  | `cast( txt30 as tvorg_text_kk preserving type )` |  |  |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
+| `_MainTransaction` |  | |  | `_CAMainTransaction` |  |  |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_CAMainTransaction` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

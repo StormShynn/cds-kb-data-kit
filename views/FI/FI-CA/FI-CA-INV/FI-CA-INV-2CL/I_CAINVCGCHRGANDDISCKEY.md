@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | | `_tfk2617` | `applk` |
-| `CAInvcgChargeAndDiscountKey` | ✓ | | `_tfk2617` | `chgkey` |
-| `CAInvcgChrgAndDiscIsIndividual` |  | | `_tfk2617` | `chgindiv` |
-| `_ApplArea` | | ✓ | | |
-| `_CAInvcgChrgAndDiscKeyText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | | `_tfk2617` | `applk` |  |  |
+| `CAInvcgChargeAndDiscountKey` | ✓ | | `_tfk2617` | `chgkey` |  |  |
+| `CAInvcgChrgAndDiscIsIndividual` |  | | `_tfk2617` | `chgindiv` |  |  |
+| `_ApplArea` | | ✓ | | | | |
+| `_CAInvcgChrgAndDiscKeyText` | | ✓ | | | | |
 
 ## Associations
 

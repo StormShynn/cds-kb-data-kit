@@ -27,34 +27,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |
-| `CASrvcDisconncnReqIsInvalid` | ✓ | |  | `xdpinv` |
-| `CASrvcDisconncnReqIsObsolete` | ✓ | |  | `xiobs` |
-| `CASrvcDisconncnReqStatus` |  | |  | `cast( case when xdpinv = 'X' then 'I' when xiobs = 'X' then 'O' else 'V' end as disreq_status_kk preserving type )` |
-| `CAMassRunDate` |  | |  | `laufd` |
-| `CAMassRunID` |  | |  | `laufi` |
-| `BusinessPartner` |  | |  | `cast( gpart as bu_partner preserving type )` |
-| `ContractAccount` |  | |  | `cast( vkont as vkont_gfn_kk preserving type )` |
-| `CAContract` |  | |  | `cast( vtref as vtref_kk preserving type )` |
-| `CASubApplication` |  | |  | `subap` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `Division` |  | |  | `spart` |
-| `CADunningAmount` |  | |  | `mbetm` |
-| `TransactionCurrency` |  | |  | `waers` |
-| `CreatedByUser` |  | |  | `uname` |
-| `CreationDate` |  | |  | `crdate` |
-| `CreationTime` |  | |  | `crtime` |
-| `_BusinessPartner` | | ✓ | | |
-| `_CAProviderContract` | | ✓ | | |
-| `_CASrvcDisconncnReqStatus` | | ✓ | | |
-| `_CASubApplication` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ContractAccountPartner` | | ✓ | | |
-| `_ContractAccount` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_Division` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |  |  |
+| `CASrvcDisconncnReqIsInvalid` | ✓ | |  | `xdpinv` |  |  |
+| `CASrvcDisconncnReqIsObsolete` | ✓ | |  | `xiobs` |  |  |
+| `CASrvcDisconncnReqStatus` |  | |  | `cast( case when xdpinv = 'X' then 'I' when xiobs = 'X' then 'O' else 'V' end as disreq_status_kk preserving type )` |  |  |
+| `CAMassRunDate` |  | |  | `laufd` |  |  |
+| `CAMassRunID` |  | |  | `laufi` |  |  |
+| `BusinessPartner` |  | |  | `cast( gpart as bu_partner preserving type )` |  |  |
+| `ContractAccount` |  | |  | `cast( vkont as vkont_gfn_kk preserving type )` |  |  |
+| `CAContract` |  | |  | `cast( vtref as vtref_kk preserving type )` |  |  |
+| `CASubApplication` |  | |  | `subap` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `CADunningAmount` |  | |  | `mbetm` |  |  |
+| `TransactionCurrency` |  | |  | `waers` |  |  |
+| `CreatedByUser` |  | |  | `uname` |  |  |
+| `CreationDate` |  | |  | `crdate` |  |  |
+| `CreationTime` |  | |  | `crtime` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CAProviderContract` | | ✓ | | | | |
+| `_CASrvcDisconncnReqStatus` | | ✓ | | | | |
+| `_CASubApplication` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ContractAccountPartner` | | ✓ | | | | |
+| `_ContractAccount` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
 
 ## Associations
 

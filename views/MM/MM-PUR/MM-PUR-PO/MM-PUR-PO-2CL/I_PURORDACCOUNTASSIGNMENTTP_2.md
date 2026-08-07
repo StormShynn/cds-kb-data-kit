@@ -29,97 +29,97 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `AccountAssignmentNumber` | ✓ | |  |  |
-| `CostCenter` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `NetworkActivity` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `PurgDocNetAmount` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SalesOrderScheduleLine` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostObject` |  | |  |  |
-| `ProfitabilitySegment` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `ProjectNetworkInternalID` |  | |  |  |
-| `CommitmentItemShortID` |  | |  |  |
-| `FundsCenter` |  | |  |  |
-| `Fund` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `LastChangedDate` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `IsFinallyInvoiced` |  | |  |  |
-| `NetworkActivityInternalID` |  | |  |  |
-| `PartnerAccountNumber` |  | |  |  |
-| `JointVentureRecoveryCode` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `OrderInternalID` |  | |  |  |
-| `OrderIntBillOfOperationsItem` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `NonDeductibleInputTaxAmount` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `BudgetPeriod` |  | |  |  |
-| `EarmarkedFundsDocument` |  | |  |  |
-| `EarmarkedFundsDocumentItem` |  | |  |  |
-| `ValidityDate` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocument` |  | |  |  |
-| `ServiceDocumentItem` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `IsAcctLineFinal` |  | |  |  |
-| `AcctLineFinalReason` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_BusinessAreaText` | | ✓ | | |
-| `_BusinessProcess` | | ✓ | | |
-| `_BusinessProcessText` | | ✓ | | |
-| `_CommitmentItemShortID` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CostCenterActivityType` | | ✓ | | |
-| `_CostCenterActivityTypeText` | | ✓ | | |
-| `_CostCenterText` | | ✓ | | |
-| `_FixedAssetWorklist` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_FunctionalAreaText` | | ✓ | | |
-| `_GLAccount` | | ✓ | | |
-| `_GLAccountText` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_ProfitCenterText` | | ✓ | | |
-| `_SalesDocumentScheduleLine` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_TaxCode` | | ✓ | | |
-| `_TaxCodeText` | | ✓ | | |
-| `_TaxJurisdiction` | | ✓ | | |
-| `_TaxJurisdictionText` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_WBSElementByInternalKey` | | ✓ | | |
-| `_PurchaseOrderQuantityUnitText` | | ✓ | | |
-| `_DocumentCurrencyText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `AccountAssignmentNumber` | ✓ | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `NetworkActivity` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `PurgDocNetAmount` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |  |  |
+| `CommitmentItemShortID` |  | |  |  |  |  |
+| `FundsCenter` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `LastChangedDate` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `IsFinallyInvoiced` |  | |  |  |  |  |
+| `NetworkActivityInternalID` |  | |  |  |  |  |
+| `PartnerAccountNumber` |  | |  |  |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `BudgetPeriod` |  | |  |  |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |  |  |
+| `EarmarkedFundsDocumentItem` |  | |  |  |  |  |
+| `ValidityDate` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocument` |  | |  |  |  |  |
+| `ServiceDocumentItem` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `IsAcctLineFinal` |  | |  |  |  |  |
+| `AcctLineFinalReason` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_BusinessProcess` | | ✓ | | | | |
+| `_BusinessProcessText` | | ✓ | | | | |
+| `_CommitmentItemShortID` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CostCenterActivityType` | | ✓ | | | | |
+| `_CostCenterActivityTypeText` | | ✓ | | | | |
+| `_CostCenterText` | | ✓ | | | | |
+| `_FixedAssetWorklist` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_FunctionalAreaText` | | ✓ | | | | |
+| `_GLAccount` | | ✓ | | | | |
+| `_GLAccountText` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_ProfitCenterText` | | ✓ | | | | |
+| `_SalesDocumentScheduleLine` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_TaxCode` | | ✓ | | | | |
+| `_TaxCodeText` | | ✓ | | | | |
+| `_TaxJurisdiction` | | ✓ | | | | |
+| `_TaxJurisdictionText` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementByInternalKey` | | ✓ | | | | |
+| `_PurchaseOrderQuantityUnitText` | | ✓ | | | | |
+| `_DocumentCurrencyText` | | ✓ | | | | |
 
 ## Source Code
 

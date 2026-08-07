@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderBusPartUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_bp_db_key preserving type )` |
-| `TransportationOrderUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_db_key preserving type)` |
-| `BusinessPartnerUUID` |  | |  | `cast(party_uuid as bu_partner_guid preserving type)` |
-| `BusinessPartner` |  | |  | `cast(party_id as bu_partner preserving type)` |
-| `TranspOrdBizPartnerFunction` |  | |  | `cast(party_rco as /scmtms/vdm_partner_function preserving type )` |
-| `TranspOrdBizPartnerAddressID` |  | |  | `address_id` |
-| `_BusinessPartner` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_TransportationOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderBusPartUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_bp_db_key preserving type )` |  |  |
+| `TransportationOrderUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_db_key preserving type)` |  |  |
+| `BusinessPartnerUUID` |  | |  | `cast(party_uuid as bu_partner_guid preserving type)` |  |  |
+| `BusinessPartner` |  | |  | `cast(party_id as bu_partner preserving type)` |  |  |
+| `TranspOrdBizPartnerFunction` |  | |  | `cast(party_rco as /scmtms/vdm_partner_function preserving type )` |  |  |
+| `TranspOrdBizPartnerAddressID` |  | |  | `address_id` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_TransportationOrder` | | ✓ | | | | |
 
 ## Associations
 

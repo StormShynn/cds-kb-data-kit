@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
-| `GHGScope2CalculationMethod` | ✓ | |  | `cast( _Source.GHGScope2CalculationMethod as fincs_ghgscp2calculationmethod preserving type )` |
-| `GHGScope2CalculationMethodName` |  | |  | `cast( _Source.GHGScope2CalculationMethodName as fincs_ghgscp2calcmethodname preserving type )` |
-| `_Language` | | ✓ | | |
-| `_GHGScope2CalculationMethod` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |  |  |
+| `GHGScope2CalculationMethod` | ✓ | |  | `cast( _Source.GHGScope2CalculationMethod as fincs_ghgscp2calculationmethod preserving type )` |  |  |
+| `GHGScope2CalculationMethodName` |  | |  | `cast( _Source.GHGScope2CalculationMethodName as fincs_ghgscp2calcmethodname preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_GHGScope2CalculationMethod` | | ✓ | | | | |
 
 ## Associations
 

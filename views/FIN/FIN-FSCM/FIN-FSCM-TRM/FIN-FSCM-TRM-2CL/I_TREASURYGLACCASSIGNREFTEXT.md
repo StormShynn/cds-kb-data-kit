@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryGLAccountAssignmentRef` | ✓ | |  | `aa_ref` |
-| `Language` | ✓ | |  | `spras` |
-| `TreasuryGLAccountAssignRefName` |  | |  | `cast(TreasuryGLAccAssignRefText.aa_ref_name as ftr_gen_accnt_assign_ref_name preserving type)` |
-| `_TreasuryGLAccountAssignRef` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryGLAccountAssignmentRef` | ✓ | |  | `aa_ref` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TreasuryGLAccountAssignRefName` |  | |  | `cast(TreasuryGLAccAssignRefText.aa_ref_name as ftr_gen_accnt_assign_ref_name preserving type)` |  |  |
+| `_TreasuryGLAccountAssignRef` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `SalesOrganization` | ✓ | |  | `vkorg` |
-| `DistributionChannel` | ✓ | |  | `vtweg` |
-| `Division` | ✓ | |  | `spart` |
-| `PartnerCounter` | ✓ | |  | `parza` |
-| `PartnerFunction` | ✓ | |  | `parvw` |
-| `PartnerFunctionType` |  | |  | `nrart` |
-| `BPCustomerNumber` |  | |  | `case when tpar.nrart = 'KU' then knvp.kunn2 when tpar.nrart = 'LI' then knvp.lifnr when tpar.nrart = 'AP' then knvp.parnr when tpar.nrart = 'PE' then knvp.pernr else '' end` |
-| `CustomerPartnerDescription` |  | |  | `knref` |
-| `DefaultPartner` |  | |  | `defpa` |
-| `Supplier` |  | |  | `lifnr` |
-| `PersonnelNumber` |  | |  | `pernr` |
-| `ContactPerson` |  | |  | `parnr` |
-| `AddressID` |  | |  | `adrnr` |
-| `_CustomerSalesArea` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_CustSalesPartnerCounter` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `SalesOrganization` | ✓ | |  | `vkorg` |  |  |
+| `DistributionChannel` | ✓ | |  | `vtweg` |  |  |
+| `Division` | ✓ | |  | `spart` |  |  |
+| `PartnerCounter` | ✓ | |  | `parza` |  |  |
+| `PartnerFunction` | ✓ | |  | `parvw` |  |  |
+| `PartnerFunctionType` |  | |  | `nrart` |  |  |
+| `BPCustomerNumber` |  | |  | `case when tpar.nrart = 'KU' then knvp.kunn2 when tpar.nrart = 'LI' then knvp.lifnr when tpar.nrart = 'AP' then knvp.parnr when tpar.nrart = 'PE' then knvp.pernr else '' end` |  |  |
+| `CustomerPartnerDescription` |  | |  | `knref` |  |  |
+| `DefaultPartner` |  | |  | `defpa` |  |  |
+| `Supplier` |  | |  | `lifnr` |  |  |
+| `PersonnelNumber` |  | |  | `pernr` |  |  |
+| `ContactPerson` |  | |  | `parnr` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `_CustomerSalesArea` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_CustSalesPartnerCounter` | | ✓ | | | | |
 
 ## Associations
 

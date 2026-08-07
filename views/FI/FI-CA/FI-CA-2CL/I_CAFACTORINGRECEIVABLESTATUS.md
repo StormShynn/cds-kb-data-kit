@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACurrentFactoringStatusOfRbl` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as fasta_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACurrentFactoringStatusOfRbl` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as fasta_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

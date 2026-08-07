@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdExtAssortmentPriority` | ✓ | |  | `pflks` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdExtAssortmentPriority` | ✓ | |  | `pflks` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

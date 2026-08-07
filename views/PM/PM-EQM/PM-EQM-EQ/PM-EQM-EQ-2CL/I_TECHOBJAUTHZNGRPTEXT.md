@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TechObjAuthorizationGroup` | ✓ | |  | `begru` |
-| `Language` | ✓ | |  | `spras` |
-| `TechObjAuthorizationGroupDesc` |  | |  | `cast (t370b_t.begtx as eam_tech_obj_authzn_grp_desc)` |
-| `_TechObjAuthznGrp` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TechObjAuthorizationGroup` | ✓ | |  | `begru` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TechObjAuthorizationGroupDesc` |  | |  | `cast (t370b_t.begtx as eam_tech_obj_authzn_grp_desc)` |  |  |
+| `_TechObjAuthznGrp` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProcurementHubSourceSystem` | ✓ | |  | `be_source_sys` |
-| `ProcmtHubCompanyCode` | ✓ | |  | `be_co_code` |
-| `ProcmtHubCompanyCodeUniqueID` |  | |  | `be_cc_unique_id` |
-| `ProcmtHubCompanyCodeName` |  | |  | `be_co_code_name` |
-| `ProcurementHubSourceSystemName` |  | | `_ProcmtHubBackendSourceSystem` | `ProcurementHubSourceSystemName` |
-| `_ProcmtHubBackendSourceSystem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcurementHubSourceSystem` | ✓ | |  | `be_source_sys` |  |  |
+| `ProcmtHubCompanyCode` | ✓ | |  | `be_co_code` |  |  |
+| `ProcmtHubCompanyCodeUniqueID` |  | |  | `be_cc_unique_id` |  |  |
+| `ProcmtHubCompanyCodeName` |  | |  | `be_co_code_name` |  |  |
+| `ProcurementHubSourceSystemName` |  | | `_ProcmtHubBackendSourceSystem` | `ProcurementHubSourceSystemName` |  |  |
+| `_ProcmtHubBackendSourceSystem` | | ✓ | | | | |
 
 ## Associations
 

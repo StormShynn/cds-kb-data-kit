@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceEntrySheet` | ✓ | |  |  |
-| `NoteBasicUUID` | ✓ | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `NoteBasicObjectNodeType` |  | |  |  |
-| `NoteBasicType` |  | |  |  |
-| `NoteBasicLanguage` |  | |  |  |
-| `NoteBasicContent` |  | |  |  |
-| `_ServiceEntrySheet` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |  |  |
+| `NoteBasicUUID` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `NoteBasicObjectNodeType` |  | |  |  |  |  |
+| `NoteBasicType` |  | |  |  |  |  |
+| `NoteBasicLanguage` |  | |  |  |  |  |
+| `NoteBasicContent` |  | |  |  |  |  |
+| `_ServiceEntrySheet` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OverallOrdReltdBillgStatus` | ✓ | |  | `cast(substring(dd07l.domvalue_l, 1, 1) as sdmd_overallordreltdbillgsts preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverallOrdReltdBillgStatus` | ✓ | |  | `cast(substring(dd07l.domvalue_l, 1, 1) as sdmd_overallordreltdbillgsts preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

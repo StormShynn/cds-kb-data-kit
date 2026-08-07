@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `CustomsPreference` | ✓ | |  | `cast(domvalue_l as prefe)` |
-| `CustomsPreferenceDescription` |  | |  | `cast(ddtext as /sapsll/prefe_desc_r3)` |
-| `_Language` | | ✓ | | |
-| `_CustomsPreference` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `CustomsPreference` | ✓ | |  | `cast(domvalue_l as prefe)` |  |  |
+| `CustomsPreferenceDescription` |  | |  | `cast(ddtext as /sapsll/prefe_desc_r3)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CustomsPreference` | | ✓ | | | | |
 
 ## Associations
 

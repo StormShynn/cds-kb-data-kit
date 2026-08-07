@@ -28,72 +28,72 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `FinancialTransaction` | ✓ | |  | `rfha` |
-| `FinancialInstrumentActivity` | ✓ | |  | `rfhazu` |
-| `FinancialInstrActivityCategory` |  | |  | `sfgzustt` |
-| `TermEndDate` |  | |  | `delfz` |
-| `FinTransTermCategory` |  | |  | `cast( case when Activity.delfz is initial then 'X' else '' end as ftr_term_category )` |
-| `TermEndDateIsInclusive` |  | |  | `sincle` |
-| `FinTransTermStartEndInclusive` |  | |  | `cast( Activity.sincle as ftr_term_start_end_inclusive preserving type )` |
-| `FinTransNoticeDate` |  | |  | `notice_date` |
-| `FinTransActyConclusionDate` |  | |  | `cast(Activity.dvtrab as ftr_acty_conclusion_dte preserving type )` |
-| `FinTransActyConclusionTime` |  | |  | `tvtrab` |
-| `FinTransActyConclusionTimeZone` |  | |  | `zvtrab` |
-| `FinTransRolloverDate` |  | |  | `case when Activity.sfgzustt = '11' or Activity.sfgzustt = '21' then Activity.dblfz else cast('00000000' as tb_dblfz) end` |
-| `FinTransExerciseDate` |  | |  | `case when Activity.sfgzustt = '41' or Activity.sfgzustt = '51' or Activity.sfgzustt = '61' or Activity.sfgzustt = '71' or Activity.sfgzustt = '42' or Activity.sfgzustt = '52' or Activity.sfgzustt = '62' or Activity.sfgzustt = '72' then Activity.delfz else cast('00000000' as tb_delfz) end` |
-| `FinTransOrderValidityEndDate` |  | |  | `limitdat` |
-| `FinTransFixingDate` |  | |  | `dfix` |
-| `ForeignExchangeFixingReference` |  | |  | `fixing_ref_id` |
-| `Trader` |  | |  | `rdealer` |
-| `FinancialInstrContactPerson` |  | |  | `gsppart` |
-| `FinInstrExternalReference` |  | |  | `nordext` |
-| `TreasuryReversalReason` |  | |  | `sstogrd` |
-| `FinTransConfirmationStatus` |  | |  | `sconfirm` |
-| `FinTransConfirmationDate` |  | |  | `dexdat` |
-| `FinTransConfirmedByUser` |  | |  | `uexnam` |
-| `FinTransCntrconfStatus` |  | |  | `sreconfirm` |
-| `FinTransCntrconfDate` |  | |  | `dredat` |
-| `FinTransCntrconfCreatedByUser` |  | |  | `urenam` |
-| `LeadingCurrency` |  | |  | `wlwaers` |
-| `FollowingCurrency` |  | |  | `wfwaers` |
-| `ExchangeRate` |  | |  | `kkurs` |
-| `SpotExchangeRate` |  | |  | `kkassa` |
-| `SwapExchangeRate` |  | |  | `kswap` |
-| `LiquidityEffectValue` |  | |  | `kwliqui` |
-| `CurrencyPair` |  | |  | `case when (Activity.wlwaers is not initial and Activity.wfwaers is not initial) then cast( concat(concat(Activity.wlwaers, '/'), Activity.wfwaers) as ftr_curr_pair) end` |
-| `EffectiveInterestRate` |  | |  | `peffzins` |
-| `EffectiveInterestMethod` |  | |  | `seffmeth` |
-| `FinTransIntrstHndlgAtRollover` |  | |  | `sznspro` |
-| `RolloverDfrrdIntrstPyoutDte` |  | |  | `dznsstd` |
-| `LetterOfCredit` |  | |  | `lc_number` |
-| `TreasuryApplicant` |  | |  | `applicant` |
-| `TreasuryBeneficiary` |  | |  | `benficiary` |
-| `TrsyMnllyEnteredBnfcyName` |  | |  | `cast( case when ( LetterOfCredit.man_benficiary is initial and TransactionType.sfgtyp = '100' ) then LetterOfCredit.man_comp_name else '' end as ftr_man_bene_name )` |
-| `TrsyMnllyEnteredApplcntName` |  | |  | `cast( case when ( LetterOfCredit.man_applicant is initial and TransactionType.sfgtyp = '200' ) then LetterOfCredit.man_comp_name else '' end as ftr_man_appl_name )` |
-| `TreasuryAdvisingBank` |  | |  | `advising_bank` |
-| `TreasuryIssuingBank` |  | |  | `issuing_bank` |
-| `BankGuaranteeNumber` |  | |  | `bg_number` |
-| `BankGuaranteeType` |  | |  | `bg_type` |
-| `FinInstrTransactionCategory` |  | |  | `sfgtyp` |
-| `FinancialInstrProductCategory` |  | |  | `sanlf` |
-| `_CompanyCode` | | ✓ | | |
-| `_FinTrans` | | ✓ | | |
-| `_ActivityCategory` | | ✓ | | |
-| `_TimeZone` | | ✓ | | |
-| `_FixRef` | | ✓ | | |
-| `_RevReason` | | ✓ | | |
-| `_ConfStatus` | | ✓ | | |
-| `_CntrconfStatus` | | ✓ | | |
-| `_LeadingCurrency` | | ✓ | | |
-| `_FollowingCurrency` | | ✓ | | |
-| `_ApplicantBP` | | ✓ | | |
-| `_BeneficiaryBP` | | ✓ | | |
-| `_AdvisingBankBP` | | ✓ | | |
-| `_IssuingBankBP` | | ✓ | | |
-| `_ActivityCategory2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `FinancialTransaction` | ✓ | |  | `rfha` |  |  |
+| `FinancialInstrumentActivity` | ✓ | |  | `rfhazu` |  |  |
+| `FinancialInstrActivityCategory` |  | |  | `sfgzustt` |  |  |
+| `TermEndDate` |  | |  | `delfz` |  |  |
+| `FinTransTermCategory` |  | |  | `cast( case when Activity.delfz is initial then 'X' else '' end as ftr_term_category )` |  |  |
+| `TermEndDateIsInclusive` |  | |  | `sincle` |  |  |
+| `FinTransTermStartEndInclusive` |  | |  | `cast( Activity.sincle as ftr_term_start_end_inclusive preserving type )` |  |  |
+| `FinTransNoticeDate` |  | |  | `notice_date` |  |  |
+| `FinTransActyConclusionDate` |  | |  | `cast(Activity.dvtrab as ftr_acty_conclusion_dte preserving type )` |  |  |
+| `FinTransActyConclusionTime` |  | |  | `tvtrab` |  |  |
+| `FinTransActyConclusionTimeZone` |  | |  | `zvtrab` |  |  |
+| `FinTransRolloverDate` |  | |  | `case when Activity.sfgzustt = '11' or Activity.sfgzustt = '21' then Activity.dblfz else cast('00000000' as tb_dblfz) end` |  |  |
+| `FinTransExerciseDate` |  | |  | `case when Activity.sfgzustt = '41' or Activity.sfgzustt = '51' or Activity.sfgzustt = '61' or Activity.sfgzustt = '71' or Activity.sfgzustt = '42' or Activity.sfgzustt = '52' or Activity.sfgzustt = '62' or Activity.sfgzustt = '72' then Activity.delfz else cast('00000000' as tb_delfz) end` |  |  |
+| `FinTransOrderValidityEndDate` |  | |  | `limitdat` |  |  |
+| `FinTransFixingDate` |  | |  | `dfix` |  |  |
+| `ForeignExchangeFixingReference` |  | |  | `fixing_ref_id` |  |  |
+| `Trader` |  | |  | `rdealer` |  |  |
+| `FinancialInstrContactPerson` |  | |  | `gsppart` |  |  |
+| `FinInstrExternalReference` |  | |  | `nordext` |  |  |
+| `TreasuryReversalReason` |  | |  | `sstogrd` |  |  |
+| `FinTransConfirmationStatus` |  | |  | `sconfirm` |  |  |
+| `FinTransConfirmationDate` |  | |  | `dexdat` |  |  |
+| `FinTransConfirmedByUser` |  | |  | `uexnam` |  |  |
+| `FinTransCntrconfStatus` |  | |  | `sreconfirm` |  |  |
+| `FinTransCntrconfDate` |  | |  | `dredat` |  |  |
+| `FinTransCntrconfCreatedByUser` |  | |  | `urenam` |  |  |
+| `LeadingCurrency` |  | |  | `wlwaers` |  |  |
+| `FollowingCurrency` |  | |  | `wfwaers` |  |  |
+| `ExchangeRate` |  | |  | `kkurs` |  |  |
+| `SpotExchangeRate` |  | |  | `kkassa` |  |  |
+| `SwapExchangeRate` |  | |  | `kswap` |  |  |
+| `LiquidityEffectValue` |  | |  | `kwliqui` |  |  |
+| `CurrencyPair` |  | |  | `case when (Activity.wlwaers is not initial and Activity.wfwaers is not initial) then cast( concat(concat(Activity.wlwaers, '/'), Activity.wfwaers) as ftr_curr_pair) end` |  |  |
+| `EffectiveInterestRate` |  | |  | `peffzins` |  |  |
+| `EffectiveInterestMethod` |  | |  | `seffmeth` |  |  |
+| `FinTransIntrstHndlgAtRollover` |  | |  | `sznspro` |  |  |
+| `RolloverDfrrdIntrstPyoutDte` |  | |  | `dznsstd` |  |  |
+| `LetterOfCredit` |  | |  | `lc_number` |  |  |
+| `TreasuryApplicant` |  | |  | `applicant` |  |  |
+| `TreasuryBeneficiary` |  | |  | `benficiary` |  |  |
+| `TrsyMnllyEnteredBnfcyName` |  | |  | `cast( case when ( LetterOfCredit.man_benficiary is initial and TransactionType.sfgtyp = '100' ) then LetterOfCredit.man_comp_name else '' end as ftr_man_bene_name )` |  |  |
+| `TrsyMnllyEnteredApplcntName` |  | |  | `cast( case when ( LetterOfCredit.man_applicant is initial and TransactionType.sfgtyp = '200' ) then LetterOfCredit.man_comp_name else '' end as ftr_man_appl_name )` |  |  |
+| `TreasuryAdvisingBank` |  | |  | `advising_bank` |  |  |
+| `TreasuryIssuingBank` |  | |  | `issuing_bank` |  |  |
+| `BankGuaranteeNumber` |  | |  | `bg_number` |  |  |
+| `BankGuaranteeType` |  | |  | `bg_type` |  |  |
+| `FinInstrTransactionCategory` |  | |  | `sfgtyp` |  |  |
+| `FinancialInstrProductCategory` |  | |  | `sanlf` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FinTrans` | | ✓ | | | | |
+| `_ActivityCategory` | | ✓ | | | | |
+| `_TimeZone` | | ✓ | | | | |
+| `_FixRef` | | ✓ | | | | |
+| `_RevReason` | | ✓ | | | | |
+| `_ConfStatus` | | ✓ | | | | |
+| `_CntrconfStatus` | | ✓ | | | | |
+| `_LeadingCurrency` | | ✓ | | | | |
+| `_FollowingCurrency` | | ✓ | | | | |
+| `_ApplicantBP` | | ✓ | | | | |
+| `_BeneficiaryBP` | | ✓ | | | | |
+| `_AdvisingBankBP` | | ✓ | | | | |
+| `_IssuingBankBP` | | ✓ | | | | |
+| `_ActivityCategory2` | | ✓ | | | | |
 
 ## Associations
 

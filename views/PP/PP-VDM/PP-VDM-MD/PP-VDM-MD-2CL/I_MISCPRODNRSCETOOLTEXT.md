@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionResourceType` | ✓ | |  |  |
-| `ProductionResourceInternalID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `MiscProductionResourceToolDesc` |  | |  | `ProductionResourceText` |
-| `MiscPRTAuthorizationGroup` |  | | `_MiscPRTByInternalKey` | `MiscPRTAuthorizationGroup` |
-| `_ProductionResourceType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionResourceType` | ✓ | |  |  |  |  |
+| `ProductionResourceInternalID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `MiscProductionResourceToolDesc` |  | |  | `ProductionResourceText` |  |  |
+| `MiscPRTAuthorizationGroup` |  | | `_MiscPRTByInternalKey` | `MiscPRTAuthorizationGroup` |  |  |
+| `_ProductionResourceType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

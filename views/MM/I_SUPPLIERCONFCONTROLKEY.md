@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierConfirmationControlKey` | ✓ | |  | `bstae` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierConfirmationControlKey` | ✓ | |  | `bstae` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

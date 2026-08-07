@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BusinessPartnerOccupationGroup` | ✓ | |  | `jobgr` |
-| `BPOccupationGroupDescription` |  | |  | `bez30` |
-| `_BPOccupationGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BusinessPartnerOccupationGroup` | ✓ | |  | `jobgr` |  |  |
+| `BPOccupationGroupDescription` |  | |  | `bez30` |  |  |
+| `_BPOccupationGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

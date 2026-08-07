@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `}` |  | |  | `recurse: { parent: ['ParentNode'], child: ['HierarchyNode'] }` |
-| `}]` |  | |  | `siblingsOrder: [{ by: 'HierarchyNodeSequence', direction: 'ASC' }]` |
-| `'_Hierarchy'` |  | |  | `directory: '_Hierarchy'` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `}` |  | |  | `recurse: { parent: ['ParentNode'], child: ['HierarchyNode'] }` |  |  |
+| `}]` |  | |  | `siblingsOrder: [{ by: 'HierarchyNodeSequence', direction: 'ASC' }]` |  |  |
+| `'_Hierarchy'` |  | |  | `directory: '_Hierarchy'` |  |  |
 
 ## Source Code
 

@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintenancePhaseControl` | ✓ | |  | `MaintenancePhaseControlName` |
-| `MaintenancePhaseControlName` |  | |  |  |
-| `StatusObject` |  | |  |  |
-| `MaintUserStatusProfileCode` |  | |  |  |
-| `MaintenanceUserStatusCode` |  | |  |  |
-| `MaintenancePhaseControlText` |  | |  |  |
-| `MaintPhseCtrlIsSetAutomly` |  | |  |  |
-| `EAMOverallStatusProfile` |  | |  |  |
-| `MaintPhaseControlAuthorityCode` |  | |  |  |
-| `MaintProcgPhseCtrlActvtnCode` |  | |  |  |
-| `EAMProcessPhaseCode` |  | |  |  |
-| `EAMProcessSubPhaseCode` |  | |  |  |
-| `MaintObjPhseCtrlStatusIsActive` |  | |  | `cast ( StatusObjectStatus.StatusIsActive as vdm_j_statusisactive preserving type )` |
-| `MaintObjPhaseControlStateCode` |  | |  | `cast( case when StatusObjectStatus.StatusIsActive = 'X' then 'X' when StatusObjectStatus.StatusIsInactive = 'X' then 'Y' else '' end as eam_bo_blkcd_status preserving type)` |
-| `MaintenanceOrderType` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `EAMBlockerCodeEntityType` |  | |  |  |
-| `MaintOrdProcessPhaseCode` |  | | `_MaintenanceOrder` | `MaintOrdProcessPhaseCode` |
-| `MaintOrdProcessSubPhaseCode` |  | | `_MaintenanceOrder` | `MaintOrdProcessSubPhaseCode` |
-| `_MaintObjPhseCtrlCodeChgSet` | | ✓ | | |
-| `_MaintObjPhseCtrlCodeChgReset` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintPhseCtrlActivationCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintenancePhaseControl` | ✓ | |  | `MaintenancePhaseControlName` |  |  |
+| `MaintenancePhaseControlName` |  | |  |  |  |  |
+| `StatusObject` |  | |  |  |  |  |
+| `MaintUserStatusProfileCode` |  | |  |  |  |  |
+| `MaintenanceUserStatusCode` |  | |  |  |  |  |
+| `MaintenancePhaseControlText` |  | |  |  |  |  |
+| `MaintPhseCtrlIsSetAutomly` |  | |  |  |  |  |
+| `EAMOverallStatusProfile` |  | |  |  |  |  |
+| `MaintPhaseControlAuthorityCode` |  | |  |  |  |  |
+| `MaintProcgPhseCtrlActvtnCode` |  | |  |  |  |  |
+| `EAMProcessPhaseCode` |  | |  |  |  |  |
+| `EAMProcessSubPhaseCode` |  | |  |  |  |  |
+| `MaintObjPhseCtrlStatusIsActive` |  | |  | `cast ( StatusObjectStatus.StatusIsActive as vdm_j_statusisactive preserving type )` |  |  |
+| `MaintObjPhaseControlStateCode` |  | |  | `cast( case when StatusObjectStatus.StatusIsActive = 'X' then 'X' when StatusObjectStatus.StatusIsInactive = 'X' then 'Y' else '' end as eam_bo_blkcd_status preserving type)` |  |  |
+| `MaintenanceOrderType` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `EAMBlockerCodeEntityType` |  | |  |  |  |  |
+| `MaintOrdProcessPhaseCode` |  | | `_MaintenanceOrder` | `MaintOrdProcessPhaseCode` |  |  |
+| `MaintOrdProcessSubPhaseCode` |  | | `_MaintenanceOrder` | `MaintOrdProcessSubPhaseCode` |  |  |
+| `_MaintObjPhseCtrlCodeChgSet` | | ✓ | | | | |
+| `_MaintObjPhseCtrlCodeChgReset` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintPhseCtrlActivationCode` | | ✓ | | | | |
 
 ## Associations
 

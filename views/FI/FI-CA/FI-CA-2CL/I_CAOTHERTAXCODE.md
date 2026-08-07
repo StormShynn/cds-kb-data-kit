@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land` |
-| `CAOtherTaxCode` | ✓ | |  | `strkz` |
-| `CAOtherTaxPercentage` |  | |  | `pertax` |
-| `CACategoriesAreUsedForOtherTax` |  | |  | `xkschl` |
-| `CAIsValidForUSTelcomTaxCode` |  | |  | `xustc` |
-| `_Country` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land` |  |  |
+| `CAOtherTaxCode` | ✓ | |  | `strkz` |  |  |
+| `CAOtherTaxPercentage` |  | |  | `pertax` |  |  |
+| `CACategoriesAreUsedForOtherTax` |  | |  | `xkschl` |  |  |
+| `CAIsValidForUSTelcomTaxCode` |  | |  | `xustc` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

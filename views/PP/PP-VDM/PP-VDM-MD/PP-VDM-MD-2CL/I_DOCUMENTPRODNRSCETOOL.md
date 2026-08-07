@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentType` | ✓ | |  |  |
-| `DocumentInfoRecord` | ✓ | |  |  |
-| `DocumentVersion` | ✓ | |  |  |
-| `DocumentPart` | ✓ | |  |  |
-| `ProductionResourceType` |  | |  |  |
-| `ProductionResourceInternalID` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `InternalDocumentStatus` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_DocumentType` | | ✓ | | |
-| `_DocumentNumber` | | ✓ | | |
-| `_DocumentVersion` | | ✓ | | |
-| `_DocumentInfoRecord` | | ✓ | | |
-| `_ProductionResourceType` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentType` | ✓ | |  |  |  |  |
+| `DocumentInfoRecord` | ✓ | |  |  |  |  |
+| `DocumentVersion` | ✓ | |  |  |  |  |
+| `DocumentPart` | ✓ | |  |  |  |  |
+| `ProductionResourceType` |  | |  |  |  |  |
+| `ProductionResourceInternalID` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `InternalDocumentStatus` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_DocumentType` | | ✓ | | | | |
+| `_DocumentNumber` | | ✓ | | | | |
+| `_DocumentVersion` | | ✓ | | | | |
+| `_DocumentInfoRecord` | | ✓ | | | | |
+| `_ProductionResourceType` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
 
 ## Source Code
 

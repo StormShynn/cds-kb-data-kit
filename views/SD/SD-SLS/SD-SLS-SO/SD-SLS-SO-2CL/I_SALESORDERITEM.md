@@ -31,357 +31,357 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |
-| `SalesOrderItem` | ✓ | |  | `cast(SalesDocumentItem as sales_order_item preserving type)` |
-| `SalesOrderItemUUID` |  | |  | `SalesDocumentItemUUID` |
-| `SalesOrderItemCategory` |  | |  | `SalesDocumentItemCategory` |
-| `SalesOrderItemType` |  | |  | `SalesDocumentItemType` |
-| `IsReturnsItem` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `Division` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `Batch` |  | |  | `}] Batch` |
-| `ProductHierarchyNode` |  | |  |  |
-| `ProductCatalog` |  | |  |  |
-| `MaterialSubstitutionReason` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `Plant` |  | |  |  |
-| `OriginalPlant` |  | |  |  |
-| `TransitPlant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `DeliveryGroup` |  | |  |  |
-| `ProductConfiguration` |  | |  |  |
-| `BOMExplosionDate` |  | |  |  |
-| `MRPArea` |  | |  |  |
-| `SalesOrderItemText` |  | |  | `SalesDocumentItemText` |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `PurchaseOrderByShipToParty` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `UnderlyingPurchaseOrderItem` |  | |  |  |
-| `UndrlgPurOrdItmByShipToParty` |  | |  |  |
-| `CorrespncExternalReference` |  | |  |  |
-| `CorrespncExtRefByShipToParty` |  | |  |  |
-| `ExternalItemID` |  | |  |  |
-| `OrderQuantity` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `OrderToBaseQuantityDnmntr` |  | |  |  |
-| `OrderToBaseQuantityNmrtr` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetQuantityUnit` |  | |  |  |
-| `TargetToBaseQuantityDnmntr` |  | |  |  |
-| `TargetToBaseQuantityNmrtr` |  | |  |  |
-| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |
-| `TargetDelivQtyInOrderQtyUnit` |  | |  |  |
-| `ConfdDeliveryQtyInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `CommittedDelivQtyInOrdQtyUnit` |  | |  |  |
-| `CommittedDelivCreationDate` |  | |  |  |
-| `CommittedDeliveryDate` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `RequestedQuantityInBaseUnit` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `SalesDeal` |  | |  |  |
-| `SalesPromotion` |  | |  |  |
-| `RetailPromotion` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `RequirementSegment` |  | |  |  |
-| `SlsDocIsRlvtForProofOfDeliv` |  | |  |  |
-| `SalesDocItemSupplyBlockReason` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `PricingReferenceMaterial` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `NetPriceQuantityUnit` |  | |  |  |
-| `StatisticalValueControl` |  | |  |  |
-| `SalesDocumentItemProcgCode` |  | |  |  |
-| `DownPaymentProcessingVariant` |  | |  |  |
-| `TaxAmount` |  | |  |  |
-| `ProductTaxClassification1` |  | |  |  |
-| `ProductTaxClassification2` |  | |  |  |
-| `ProductTaxClassification3` |  | |  |  |
-| `ProductTaxClassification4` |  | |  |  |
-| `ProductTaxClassification5` |  | |  |  |
-| `ProductTaxClassification6` |  | |  |  |
-| `ProductTaxClassification7` |  | |  |  |
-| `ProductTaxClassification8` |  | |  |  |
-| `ProductTaxClassification9` |  | |  |  |
-| `MatlAccountAssignmentGroup` |  | |  |  |
-| `CostAmount` |  | |  |  |
-| `Subtotal1Amount` |  | |  |  |
-| `Subtotal2Amount` |  | |  |  |
-| `Subtotal3Amount` |  | |  |  |
-| `Subtotal4Amount` |  | |  |  |
-| `Subtotal5Amount` |  | |  |  |
-| `Subtotal6Amount` |  | |  |  |
-| `SalesOrderCondition` |  | |  | `SalesDocumentCondition` |
-| `CustomerPriceGroup` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `Route` |  | |  |  |
-| `DeliveryDateQuantityIsFixed` |  | |  |  |
-| `DeliveryDateTypeRule` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `MaxNmbrOfPartialDelivery` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `MinDeliveryQtyInBaseUnit` |  | |  |  |
-| `OpenDeliveryLeadingUnitCode` |  | |  |  |
-| `ItemIsDeliveryRelevant` |  | |  |  |
-| `ReceivingPoint` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `OrderCombinationIsAllowed` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `AdditionalValueDays` |  | |  |  |
-| `ProductSeasonYear` |  | |  |  |
-| `ProductSeason` |  | |  |  |
-| `ProductCollection` |  | |  |  |
-| `ProductTheme` |  | |  |  |
-| `FashionCancelDate` |  | |  |  |
-| `ProductCharacteristic1` |  | |  |  |
-| `ProductCharacteristic2` |  | |  |  |
-| `ProductCharacteristic3` |  | |  |  |
-| `ShippingGroupNumber` |  | |  |  |
-| `ShippingGroupRule` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `ItemIsBillingRelevant` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `BillingPlan` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `ControllingObject` |  | |  |  |
-| `ProfitabilitySegment` |  | |  |  |
-| `ProfitabilitySegment_2` |  | |  |  |
-| `OriginSDDocument` |  | |  |  |
-| `OriginSDDocumentItem` |  | |  |  |
-| `AccountingExchangeRate` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `HigherLevelItemUsage` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `BusinessSolutionOrderItem` |  | |  |  |
-| `BusSolnOrdItemBundleItem` |  | |  |  |
-| `SlsContrAutoAssgmtIDForSlsOrd` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `DeliveryConfirmationStatus` |  | |  |  |
-| `PurchaseConfirmationStatus` |  | |  |  |
-| `TotalDeliveryStatus` |  | |  |  |
-| `DeliveryStatus` |  | |  |  |
-| `DeliveryBlockStatus` |  | |  |  |
-| `OrderRelatedBillingStatus` |  | |  |  |
-| `BillingBlockStatus` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  |  |
-| `ItemBillingIncompletionStatus` |  | |  |  |
-| `PricingIncompletionStatus` |  | |  |  |
-| `ItemDeliveryIncompletionStatus` |  | |  |  |
-| `SDDocReferenceStatus` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `TotalSDDocReferenceStatus` |  | |  |  |
-| `ChmlCmplncStatus` |  | |  |  |
-| `DangerousGoodsStatus` |  | |  |  |
-| `SafetyDataSheetStatus` |  | |  |  |
-| `SlsOrderItemDownPaymentStatus` |  | |  | `ContractItemDownPaymentStatus` |
-| `TrdCmplncEmbargoSts` |  | |  |  |
-| `TrdCmplncSnctndListChkSts` |  | |  |  |
-| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  |  |
-| `AltvBsdConfSubstitutionStatus` |  | |  |  |
-| `SlsDocItmOvrlSupplyBlockStatus` |  | |  |  |
-| `OmniChannelSalesPromotion` |  | |  |  |
-| `OmniChannelSalesPromotionRule` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `CappedNetAmount` |  | |  |  |
-| `CappedNetAmtAlertThldInPct` |  | |  |  |
-| `TotalStandAloneSellingPrice` |  | |  |  |
-| `SalesOrderType` |  | |  | `cast( SalesDocumentType as sales_order_type preserving type )` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `SalesOrderDate` |  | |  | `SalesDocumentDate` |
-| `SDDocumentReason` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `SalesEmployee` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `SalesEmployeeWorkAgreement` |  | |  |  |
-| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |
-| `_ItemDownPaymentStatus` |  | |  | `_ContractItemDownPaymentStatus` |
-| `_BusinessAreaText` | | ✓ | | |
-| `_MaterialText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_OrigMaterialText` | | ✓ | | |
-| `_ShippingPointText` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderType` | | ✓ | | |
-| `_ScheduleLine` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_PricingElement` | | ✓ | | |
-| `_HigherLevelItem` | | ✓ | | |
-| `_ItemBillingPlan` | | ✓ | | |
-| `_PrecedingProcFlowDocItem` | | ✓ | | |
-| `_SubsequentProcFlowDocItem` | | ✓ | | |
-| `_ItemCategory` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_OriginallyRequestedMaterial` | | ✓ | | |
-| `_MaterialPlant` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_ProductHierarchyNode` | | ✓ | | |
-| `_MaterialSubstitutionReason` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_MaterialPricingGroup` | | ✓ | | |
-| `_AdditionalMaterialGroup1` | | ✓ | | |
-| `_AdditionalMaterialGroup2` | | ✓ | | |
-| `_AdditionalMaterialGroup3` | | ✓ | | |
-| `_AdditionalMaterialGroup4` | | ✓ | | |
-| `_AdditionalMaterialGroup5` | | ✓ | | |
-| `_MatlAccountAssignmentGroup` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_OriginalPlant` | | ✓ | | |
-| `_TransitPlant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_TargetQuantityUnit` | | ✓ | | |
-| `_RequestedQuantityUnit` | | ✓ | | |
-| `_ItemWeightUnit` | | ✓ | | |
-| `_ItemVolumeUnit` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_SalesDeal` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_CustomerPriceGroup` | | ✓ | | |
-| `_SalesDocumentRjcnReason` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_NetPriceQuantityUnit` | | ✓ | | |
-| `_StatisticalValueControl` | | ✓ | | |
-| `_DownPaymentProcessingVariant` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
-| `_ShippingType` | | ✓ | | |
-| `_DeliveryPriority` | | ✓ | | |
-| `_DeliveryDateTypeRule` | | ✓ | | |
-| `_PartialDeliveryItem` | | ✓ | | |
-| `_Route` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_ItemIsBillingRelevant` | | ✓ | | |
-| `_ItemBillingBlockReason` | | ✓ | | |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_CustomerAccountAssgmtGroup` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_SlsDocItemSupplyBlockReason` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_WBSElementBasicData_2` | | ✓ | | |
-| `_ProfitabilitySegment` | | ✓ | | |
-| `_ReferenceSDDocument` | | ✓ | | |
-| `_ReferenceSDDocumentItem` | | ✓ | | |
-| `_ReferenceSDDocumentCategory` | | ✓ | | |
-| `_SolutionOrder` | | ✓ | | |
-| `_SolutionOrderItem` | | ✓ | | |
-| `_SolutionOrderBundleItem` | | ✓ | | |
-| `_SDProcessStatus` | | ✓ | | |
-| `_DeliveryConfirmationStatus` | | ✓ | | |
-| `_PurchaseConfirmationStatus` | | ✓ | | |
-| `_TotalDeliveryStatus` | | ✓ | | |
-| `_DeliveryStatus` | | ✓ | | |
-| `_DeliveryBlockStatus` | | ✓ | | |
-| `_OrderRelatedBillingStatus` | | ✓ | | |
-| `_BillingBlockStatus` | | ✓ | | |
-| `_ItemGeneralIncompletionStatus` | | ✓ | | |
-| `_ItemBillingIncompletionStatus` | | ✓ | | |
-| `_PricingIncompletionStatus` | | ✓ | | |
-| `_ItemDelivIncompletionSts` | | ✓ | | |
-| `_SDDocReferenceStatus` | | ✓ | | |
-| `_SDDocumentRejectionStatus` | | ✓ | | |
-| `_TotalSDDocReferenceStatus` | | ✓ | | |
-| `_ChmlCmplncStatus` | | ✓ | | |
-| `_DangerousGoodsStatus` | | ✓ | | |
-| `_SafetyDataSheetStatus` | | ✓ | | |
-| `_OvrlTrdCmplncLegalCtrlChkSts` | | ✓ | | |
-| `_AltvBsdConfSubstitutionSts` | | ✓ | | |
-| `_TrdCmplncSnctndListChkSts` | | ✓ | | |
-| `_TrdCmplncEmbargoSts` | | ✓ | | |
-| `_SlsDocItmOvrlSupplyBlockSts` | | ✓ | | |
-| `_MRPArea` | | ✓ | | |
-| `_BillingPlan` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_SDDocumentReason` | | ✓ | | |
-| `_ShippingCondition` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_SalesEmployee` | | ✓ | | |
-| `_ResponsibleEmployee` | | ✓ | | |
-| `_ConsumptionPosting` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |  |  |
+| `SalesOrderItem` | ✓ | |  | `cast(SalesDocumentItem as sales_order_item preserving type)` |  |  |
+| `SalesOrderItemUUID` |  | |  | `SalesDocumentItemUUID` |  |  |
+| `SalesOrderItemCategory` |  | |  | `SalesDocumentItemCategory` |  |  |
+| `SalesOrderItemType` |  | |  | `SalesDocumentItemType` |  |  |
+| `IsReturnsItem` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ProductHierarchyNode` |  | |  |  |  |  |
+| `ProductCatalog` |  | |  |  |  |  |
+| `MaterialSubstitutionReason` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `OriginalPlant` |  | |  |  |  |  |
+| `TransitPlant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `DeliveryGroup` |  | |  |  |  |  |
+| `ProductConfiguration` |  | |  |  |  |  |
+| `BOMExplosionDate` |  | |  |  |  |  |
+| `MRPArea` |  | |  |  |  |  |
+| `SalesOrderItemText` |  | |  | `SalesDocumentItemText` |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `PurchaseOrderByShipToParty` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `UnderlyingPurchaseOrderItem` |  | |  |  |  |  |
+| `UndrlgPurOrdItmByShipToParty` |  | |  |  |  |  |
+| `CorrespncExternalReference` |  | |  |  |  |  |
+| `CorrespncExtRefByShipToParty` |  | |  |  |  |  |
+| `ExternalItemID` |  | |  |  |  |  |
+| `OrderQuantity` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `OrderToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `OrderToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetQuantityUnit` |  | |  |  |  |  |
+| `TargetToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `TargetToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `TargetDelivQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `ConfdDeliveryQtyInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `CommittedDelivQtyInOrdQtyUnit` |  | |  |  |  |  |
+| `CommittedDelivCreationDate` |  | |  |  |  |  |
+| `CommittedDeliveryDate` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `RequestedQuantityInBaseUnit` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `SalesDeal` |  | |  |  |  |  |
+| `SalesPromotion` |  | |  |  |  |  |
+| `RetailPromotion` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `RequirementSegment` |  | |  |  |  |  |
+| `SlsDocIsRlvtForProofOfDeliv` |  | |  |  |  |  |
+| `SalesDocItemSupplyBlockReason` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `PricingReferenceMaterial` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |  |  |
+| `StatisticalValueControl` |  | |  |  |  |  |
+| `SalesDocumentItemProcgCode` |  | |  |  |  |  |
+| `DownPaymentProcessingVariant` |  | |  |  |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `ProductTaxClassification1` |  | |  |  |  |  |
+| `ProductTaxClassification2` |  | |  |  |  |  |
+| `ProductTaxClassification3` |  | |  |  |  |  |
+| `ProductTaxClassification4` |  | |  |  |  |  |
+| `ProductTaxClassification5` |  | |  |  |  |  |
+| `ProductTaxClassification6` |  | |  |  |  |  |
+| `ProductTaxClassification7` |  | |  |  |  |  |
+| `ProductTaxClassification8` |  | |  |  |  |  |
+| `ProductTaxClassification9` |  | |  |  |  |  |
+| `MatlAccountAssignmentGroup` |  | |  |  |  |  |
+| `CostAmount` |  | |  |  |  |  |
+| `Subtotal1Amount` |  | |  |  |  |  |
+| `Subtotal2Amount` |  | |  |  |  |  |
+| `Subtotal3Amount` |  | |  |  |  |  |
+| `Subtotal4Amount` |  | |  |  |  |  |
+| `Subtotal5Amount` |  | |  |  |  |  |
+| `Subtotal6Amount` |  | |  |  |  |  |
+| `SalesOrderCondition` |  | |  | `SalesDocumentCondition` |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `Route` |  | |  |  |  |  |
+| `DeliveryDateQuantityIsFixed` |  | |  |  |  |  |
+| `DeliveryDateTypeRule` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `MaxNmbrOfPartialDelivery` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `MinDeliveryQtyInBaseUnit` |  | |  |  |  |  |
+| `OpenDeliveryLeadingUnitCode` |  | |  |  |  |  |
+| `ItemIsDeliveryRelevant` |  | |  |  |  |  |
+| `ReceivingPoint` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `OrderCombinationIsAllowed` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `AdditionalValueDays` |  | |  |  |  |  |
+| `ProductSeasonYear` |  | |  |  |  |  |
+| `ProductSeason` |  | |  |  |  |  |
+| `ProductCollection` |  | |  |  |  |  |
+| `ProductTheme` |  | |  |  |  |  |
+| `FashionCancelDate` |  | |  |  |  |  |
+| `ProductCharacteristic1` |  | |  |  |  |  |
+| `ProductCharacteristic2` |  | |  |  |  |  |
+| `ProductCharacteristic3` |  | |  |  |  |  |
+| `ShippingGroupNumber` |  | |  |  |  |  |
+| `ShippingGroupRule` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `ItemIsBillingRelevant` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `BillingPlan` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `ControllingObject` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  |  |  |  |
+| `ProfitabilitySegment_2` |  | |  |  |  |  |
+| `OriginSDDocument` |  | |  |  |  |  |
+| `OriginSDDocumentItem` |  | |  |  |  |  |
+| `AccountingExchangeRate` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `HigherLevelItemUsage` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |  |  |
+| `BusSolnOrdItemBundleItem` |  | |  |  |  |  |
+| `SlsContrAutoAssgmtIDForSlsOrd` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `DeliveryConfirmationStatus` |  | |  |  |  |  |
+| `PurchaseConfirmationStatus` |  | |  |  |  |  |
+| `TotalDeliveryStatus` |  | |  |  |  |  |
+| `DeliveryStatus` |  | |  |  |  |  |
+| `DeliveryBlockStatus` |  | |  |  |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |  |  |
+| `BillingBlockStatus` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |  |  |
+| `ItemBillingIncompletionStatus` |  | |  |  |  |  |
+| `PricingIncompletionStatus` |  | |  |  |  |  |
+| `ItemDeliveryIncompletionStatus` |  | |  |  |  |  |
+| `SDDocReferenceStatus` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |  |  |
+| `ChmlCmplncStatus` |  | |  |  |  |  |
+| `DangerousGoodsStatus` |  | |  |  |  |  |
+| `SafetyDataSheetStatus` |  | |  |  |  |  |
+| `SlsOrderItemDownPaymentStatus` |  | |  | `ContractItemDownPaymentStatus` |  |  |
+| `TrdCmplncEmbargoSts` |  | |  |  |  |  |
+| `TrdCmplncSnctndListChkSts` |  | |  |  |  |  |
+| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  |  |  |  |
+| `AltvBsdConfSubstitutionStatus` |  | |  |  |  |  |
+| `SlsDocItmOvrlSupplyBlockStatus` |  | |  |  |  |  |
+| `OmniChannelSalesPromotion` |  | |  |  |  |  |
+| `OmniChannelSalesPromotionRule` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `CappedNetAmount` |  | |  |  |  |  |
+| `CappedNetAmtAlertThldInPct` |  | |  |  |  |  |
+| `TotalStandAloneSellingPrice` |  | |  |  |  |  |
+| `SalesOrderType` |  | |  | `cast( SalesDocumentType as sales_order_type preserving type )` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `SalesOrderDate` |  | |  | `SalesDocumentDate` |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `SalesEmployee` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `SalesEmployeeWorkAgreement` |  | |  |  |  |  |
+| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |  |  |
+| `_ItemDownPaymentStatus` |  | |  | `_ContractItemDownPaymentStatus` |  |  |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_MaterialText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_OrigMaterialText` | | ✓ | | | | |
+| `_ShippingPointText` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderType` | | ✓ | | | | |
+| `_ScheduleLine` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_PricingElement` | | ✓ | | | | |
+| `_HigherLevelItem` | | ✓ | | | | |
+| `_ItemBillingPlan` | | ✓ | | | | |
+| `_PrecedingProcFlowDocItem` | | ✓ | | | | |
+| `_SubsequentProcFlowDocItem` | | ✓ | | | | |
+| `_ItemCategory` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_OriginallyRequestedMaterial` | | ✓ | | | | |
+| `_MaterialPlant` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_ProductHierarchyNode` | | ✓ | | | | |
+| `_MaterialSubstitutionReason` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_MaterialPricingGroup` | | ✓ | | | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | | | |
+| `_MatlAccountAssignmentGroup` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_OriginalPlant` | | ✓ | | | | |
+| `_TransitPlant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_TargetQuantityUnit` | | ✓ | | | | |
+| `_RequestedQuantityUnit` | | ✓ | | | | |
+| `_ItemWeightUnit` | | ✓ | | | | |
+| `_ItemVolumeUnit` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_SalesDeal` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_CustomerPriceGroup` | | ✓ | | | | |
+| `_SalesDocumentRjcnReason` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_NetPriceQuantityUnit` | | ✓ | | | | |
+| `_StatisticalValueControl` | | ✓ | | | | |
+| `_DownPaymentProcessingVariant` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_ShippingType` | | ✓ | | | | |
+| `_DeliveryPriority` | | ✓ | | | | |
+| `_DeliveryDateTypeRule` | | ✓ | | | | |
+| `_PartialDeliveryItem` | | ✓ | | | | |
+| `_Route` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_ItemIsBillingRelevant` | | ✓ | | | | |
+| `_ItemBillingBlockReason` | | ✓ | | | | |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_SlsDocItemSupplyBlockReason` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_WBSElementBasicData_2` | | ✓ | | | | |
+| `_ProfitabilitySegment` | | ✓ | | | | |
+| `_ReferenceSDDocument` | | ✓ | | | | |
+| `_ReferenceSDDocumentItem` | | ✓ | | | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | | | |
+| `_SolutionOrder` | | ✓ | | | | |
+| `_SolutionOrderItem` | | ✓ | | | | |
+| `_SolutionOrderBundleItem` | | ✓ | | | | |
+| `_SDProcessStatus` | | ✓ | | | | |
+| `_DeliveryConfirmationStatus` | | ✓ | | | | |
+| `_PurchaseConfirmationStatus` | | ✓ | | | | |
+| `_TotalDeliveryStatus` | | ✓ | | | | |
+| `_DeliveryStatus` | | ✓ | | | | |
+| `_DeliveryBlockStatus` | | ✓ | | | | |
+| `_OrderRelatedBillingStatus` | | ✓ | | | | |
+| `_BillingBlockStatus` | | ✓ | | | | |
+| `_ItemGeneralIncompletionStatus` | | ✓ | | | | |
+| `_ItemBillingIncompletionStatus` | | ✓ | | | | |
+| `_PricingIncompletionStatus` | | ✓ | | | | |
+| `_ItemDelivIncompletionSts` | | ✓ | | | | |
+| `_SDDocReferenceStatus` | | ✓ | | | | |
+| `_SDDocumentRejectionStatus` | | ✓ | | | | |
+| `_TotalSDDocReferenceStatus` | | ✓ | | | | |
+| `_ChmlCmplncStatus` | | ✓ | | | | |
+| `_DangerousGoodsStatus` | | ✓ | | | | |
+| `_SafetyDataSheetStatus` | | ✓ | | | | |
+| `_OvrlTrdCmplncLegalCtrlChkSts` | | ✓ | | | | |
+| `_AltvBsdConfSubstitutionSts` | | ✓ | | | | |
+| `_TrdCmplncSnctndListChkSts` | | ✓ | | | | |
+| `_TrdCmplncEmbargoSts` | | ✓ | | | | |
+| `_SlsDocItmOvrlSupplyBlockSts` | | ✓ | | | | |
+| `_MRPArea` | | ✓ | | | | |
+| `_BillingPlan` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_SDDocumentReason` | | ✓ | | | | |
+| `_ShippingCondition` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_SalesEmployee` | | ✓ | | | | |
+| `_ResponsibleEmployee` | | ✓ | | | | |
+| `_ConsumptionPosting` | | ✓ | | | | |
 
 ## Associations
 

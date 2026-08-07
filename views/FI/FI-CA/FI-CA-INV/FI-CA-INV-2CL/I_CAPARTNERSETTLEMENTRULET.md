@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( langu as spras preserving type )` |
-| `CAPartnerSettlementRule` | ✓ | |  | `ptsrl` |
-| `CAPartnerSettlementRuleText` |  | |  | `text` |
-| `_CAPartnerSettlementRule` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( langu as spras preserving type )` |  |  |
+| `CAPartnerSettlementRule` | ✓ | |  | `ptsrl` |  |  |
+| `CAPartnerSettlementRuleText` |  | |  | `text` |  |  |
+| `_CAPartnerSettlementRule` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

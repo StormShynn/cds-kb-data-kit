@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdUnivHierarchy` | ✓ | |  |  |
-| `HierarchyNode` | ✓ | |  |  |
-| `ProdHierarchyValidityEndDate` | ✓ | |  |  |
-| `Product` | ✓ | |  |  |
-| `ProdHierarchyValidityStartDate` |  | |  |  |
-| `ParentNode` |  | |  |  |
-| `HierarchyNodeSequence` |  | |  |  |
-| `NodeType` |  | |  |  |
-| `Product_Text` |  | |  |  |
-| `_ProdUnivHierNormalNode` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdUnivHierarchy` | ✓ | |  |  |  |  |
+| `HierarchyNode` | ✓ | |  |  |  |  |
+| `ProdHierarchyValidityEndDate` | ✓ | |  |  |  |  |
+| `Product` | ✓ | |  |  |  |  |
+| `ProdHierarchyValidityStartDate` |  | |  |  |  |  |
+| `ParentNode` |  | |  |  |  |  |
+| `HierarchyNodeSequence` |  | |  |  |  |  |
+| `NodeType` |  | |  |  |  |  |
+| `Product_Text` |  | |  |  |  |  |
+| `_ProdUnivHierNormalNode` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Source Code
 

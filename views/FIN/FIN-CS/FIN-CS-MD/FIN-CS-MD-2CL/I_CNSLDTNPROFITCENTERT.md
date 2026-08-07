@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `ProfitCenter` |  | |  | `}] key cast( _Source.ProfitCenter as fincs_profitcenter preserving type )` |
-| `ControllingArea` | ✓ | |  | `cast( _Source.ControllingArea as fincs_controllingarea preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast( _Source.ProfitCenterName as fincs_description_text_20 preserving type )` |
-| `ProfitCenterName` |  | |  | `cast( _Source.ProfitCenterName as fincs_profitcenter_name preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( _Source.CnsldtnIsAdditionalMasterData as fincs_isadditionalmasterdata preserving type )` |
-| `_Language` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `ProfitCenter` | ✓ | |  | `cast( _Source.ProfitCenter as fincs_profitcenter preserving type )` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( _Source.ControllingArea as fincs_controllingarea preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.ProfitCenterName as fincs_description_text_20 preserving type )` |  |  |
+| `ProfitCenterName` |  | |  | `cast( _Source.ProfitCenterName as fincs_profitcenter_name preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( _Source.CnsldtnIsAdditionalMasterData as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StatryRptgEntity` | ✓ | |  | `statryrptgentity` |
-| `StatryRptCategory` | ✓ | |  | `statryrptcategory` |
-| `StatryRptRunID` | ✓ | |  | `statryrptrunid` |
-| `CompanyCode` | ✓ | |  | `companycode` |
-| `GLAccount` | ✓ | |  | `glaccount` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatryRptgEntity` | ✓ | |  | `statryrptgentity` |  |  |
+| `StatryRptCategory` | ✓ | |  | `statryrptcategory` |  |  |
+| `StatryRptRunID` | ✓ | |  | `statryrptrunid` |  |  |
+| `CompanyCode` | ✓ | |  | `companycode` |  |  |
+| `GLAccount` | ✓ | |  | `glaccount` |  |  |
 
 ## Source Code
 

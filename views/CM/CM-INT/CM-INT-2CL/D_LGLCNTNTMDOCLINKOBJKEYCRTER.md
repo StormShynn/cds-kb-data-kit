@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocumentLinkedObjKey` |  | |  | `lcm_uuid_c32` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocumentLinkedObjKey` |  | |  | `lcm_uuid_c32` |  |  |
 
 ## Source Code
 

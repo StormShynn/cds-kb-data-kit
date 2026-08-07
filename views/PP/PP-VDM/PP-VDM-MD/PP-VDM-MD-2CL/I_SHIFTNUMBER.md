@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShiftGrouping` | ✓ | |  | `schgrup` |
-| `ShiftSequence` | ✓ | |  | `sprog` |
-| `ShiftNumber` | ✓ | |  | `schnr` |
-| `_ShiftGrouping` | | ✓ | | |
-| `_ShiftSequence` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShiftGrouping` | ✓ | |  | `schgrup` |  |  |
+| `ShiftSequence` | ✓ | |  | `sprog` |  |  |
+| `ShiftNumber` | ✓ | |  | `schnr` |  |  |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_ShiftSequence` | | ✓ | | | | |
 
 ## Associations
 

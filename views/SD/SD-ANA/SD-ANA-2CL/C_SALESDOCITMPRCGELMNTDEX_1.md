@@ -28,98 +28,98 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PricingDocument` | ✓ | |  |  |
-| `PricingDocumentItem` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `SalesDocument` |  | |  |  |
-| `SalesDocumentItem` |  | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionCategory` |  | |  |  |
-| `ConditionClass` |  | |  |  |
-| `SDDocumentCategory` |  | |  |  |
-| `SalesDocumentType` |  | |  |  |
-| `SalesDocumentItemCategory` |  | |  |  |
-| `IsReturnsItem` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SDDocumentReason` |  | |  |  |
-| `SalesDocumentDate` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `OrderQuantity` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetQuantityUnit` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `SalesEmployee` |  | |  |  |
-| `SalesEmployeeWorkAgreement` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `Division` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `ConditionIsForConfiguration` |  | |  |  |
-| `VariantCondition` |  | |  |  |
-| `PricingIncompletionStatus` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `ConditionOrigin` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `StatisticsCurrency` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `StatisticalValueControl` |  | |  |  |
-| `Currency` |  | |  |  |
-| `HeaderBillingBlockReason` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `ItemIsBillingRelevant` |  | |  |  |
-| `BillingCompanyCode` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `TotalDeliveryStatus` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingDocument` | ✓ | |  |  |  |  |
+| `PricingDocumentItem` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionCategory` |  | |  |  |  |  |
+| `ConditionClass` |  | |  |  |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `SalesDocumentType` |  | |  |  |  |  |
+| `SalesDocumentItemCategory` |  | |  |  |  |  |
+| `IsReturnsItem` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `SalesDocumentDate` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `OrderQuantity` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetQuantityUnit` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `SalesEmployee` |  | |  |  |  |  |
+| `SalesEmployeeWorkAgreement` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |  |  |
+| `VariantCondition` |  | |  |  |  |  |
+| `PricingIncompletionStatus` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `ConditionOrigin` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `StatisticsCurrency` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `StatisticalValueControl` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `ItemIsBillingRelevant` |  | |  |  |  |  |
+| `BillingCompanyCode` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `TotalDeliveryStatus` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
 
 ## Associations
 

@@ -29,60 +29,60 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | |  | `Notification` |
-| `NotificationItem` | ✓ | |  |  |
-| `NotifProcessingPhase` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `NotificationItemText` |  | |  |  |
-| `DefectCodeCatalog` |  | |  |  |
-| `DefectCodeGroup` |  | |  | `cast( I_NotificationItem.DefectCodeGroup as vdm_qfegrp preserving type )` |
-| `DefectCode` |  | |  | `cast( I_NotificationItem.DefectCode as vdm_qfecod preserving type )` |
-| `NotifItmObjectPartCodeCtlg` |  | |  | `cast( I_NotificationItem.NotifItmObjectPartCodeCtlg as vdm_qfeocat preserving type )` |
-| `NotifItmObjectPartCodeGroup` |  | |  | `cast( I_NotificationItem.NotifItmObjectPartCodeGroup as vdm_qfeogrp preserving type )` |
-| `NotifItmObjectPartCode` |  | |  | `cast( I_NotificationItem.NotifItmObjectPartCode as vdm_qfeocod preserving type )` |
-| `Assembly` |  | |  |  |
-| `MasterLanguage` |  | |  |  |
-| `CreationTime` |  | |  | `cast( I_NotificationItem.CreationTime as vdm_qerstezeit preserving type )` |
-| `LastChangeTime` |  | |  | `cast( I_NotificationItem.LastChangeTime as vdm_qaendezeit preserving type )` |
-| `DefectClass` |  | |  |  |
-| `NumberOfDefects` |  | |  |  |
-| `InspPlanOperationInternalID` |  | |  |  |
-| `InspectionCharacteristic` |  | |  |  |
-| `InspectionSubsetInternalID` |  | |  |  |
-| `MaterialSample` |  | |  |  |
-| `DefectiveSingleUnit` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `MainWorkCenter` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `NotificationItemExternalID` |  | |  | `cast( I_NotificationItem.NotificationItemExternalID as vdm_qnotifitemextid preserving type )` |
-| `DefectOrigin` |  | |  |  |
-| `ExternalDefectiveQuantity` |  | |  |  |
-| `InternalDefectiveQuantity` |  | |  |  |
-| `DefectiveQuantity` |  | |  |  |
-| `DefectiveQuantityUnit` |  | |  |  |
-| `ReferencedDefect` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_CreatedByUserContactCard` |  | |  |  |
-| `_LastChangedByUserContactCard` |  | |  |  |
-| `_QltyNotification` | | ✓ | | |
-| `_Notification` | | ✓ | | |
-| `_QltyNotificationTask` | | ✓ | | |
-| `_QltyNotificationCause` | | ✓ | | |
-| `_QltyNotificationActivity` | | ✓ | | |
-| `_ReferencedDefect` | | ✓ | | |
-| `_DefectCodeGroup` | | ✓ | | |
-| `_DefectCode` | | ✓ | | |
-| `_DefectLocationCatalog` | | ✓ | | |
-| `_DefectLocationCodeGroup` | | ✓ | | |
-| `_DefectLocationCode` | | ✓ | | |
-| `_QltyNotifItemLongText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |  |  |
+| `NotificationItem` | ✓ | |  |  |  |  |
+| `NotifProcessingPhase` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `NotificationItemText` |  | |  |  |  |  |
+| `DefectCodeCatalog` |  | |  |  |  |  |
+| `DefectCodeGroup` |  | |  | `cast( I_NotificationItem.DefectCodeGroup as vdm_qfegrp preserving type )` |  |  |
+| `DefectCode` |  | |  | `cast( I_NotificationItem.DefectCode as vdm_qfecod preserving type )` |  |  |
+| `NotifItmObjectPartCodeCtlg` |  | |  | `cast( I_NotificationItem.NotifItmObjectPartCodeCtlg as vdm_qfeocat preserving type )` |  |  |
+| `NotifItmObjectPartCodeGroup` |  | |  | `cast( I_NotificationItem.NotifItmObjectPartCodeGroup as vdm_qfeogrp preserving type )` |  |  |
+| `NotifItmObjectPartCode` |  | |  | `cast( I_NotificationItem.NotifItmObjectPartCode as vdm_qfeocod preserving type )` |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `MasterLanguage` |  | |  |  |  |  |
+| `CreationTime` |  | |  | `cast( I_NotificationItem.CreationTime as vdm_qerstezeit preserving type )` |  |  |
+| `LastChangeTime` |  | |  | `cast( I_NotificationItem.LastChangeTime as vdm_qaendezeit preserving type )` |  |  |
+| `DefectClass` |  | |  |  |  |  |
+| `NumberOfDefects` |  | |  |  |  |  |
+| `InspPlanOperationInternalID` |  | |  |  |  |  |
+| `InspectionCharacteristic` |  | |  |  |  |  |
+| `InspectionSubsetInternalID` |  | |  |  |  |  |
+| `MaterialSample` |  | |  |  |  |  |
+| `DefectiveSingleUnit` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `MainWorkCenter` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `NotificationItemExternalID` |  | |  | `cast( I_NotificationItem.NotificationItemExternalID as vdm_qnotifitemextid preserving type )` |  |  |
+| `DefectOrigin` |  | |  |  |  |  |
+| `ExternalDefectiveQuantity` |  | |  |  |  |  |
+| `InternalDefectiveQuantity` |  | |  |  |  |  |
+| `DefectiveQuantity` |  | |  |  |  |  |
+| `DefectiveQuantityUnit` |  | |  |  |  |  |
+| `ReferencedDefect` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_CreatedByUserContactCard` |  | |  |  |  |  |
+| `_LastChangedByUserContactCard` |  | |  |  |  |  |
+| `_QltyNotification` | | ✓ | | | | |
+| `_Notification` | | ✓ | | | | |
+| `_QltyNotificationTask` | | ✓ | | | | |
+| `_QltyNotificationCause` | | ✓ | | | | |
+| `_QltyNotificationActivity` | | ✓ | | | | |
+| `_ReferencedDefect` | | ✓ | | | | |
+| `_DefectCodeGroup` | | ✓ | | | | |
+| `_DefectCode` | | ✓ | | | | |
+| `_DefectLocationCatalog` | | ✓ | | | | |
+| `_DefectLocationCodeGroup` | | ✓ | | | | |
+| `_DefectLocationCode` | | ✓ | | | | |
+| `_QltyNotifItemLongText` | | ✓ | | | | |
 
 ## Associations
 

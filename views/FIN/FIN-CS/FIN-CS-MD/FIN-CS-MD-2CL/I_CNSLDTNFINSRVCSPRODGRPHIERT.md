@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `CnsldtnFinSrvcsProdGroupHier` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_finsrvcsprodgrphier preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `CnsldtnFinSrvcsProdGrpHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_finsrvcsprodgrphiertext preserving type )` |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `CnsldtnFinSrvcsProdGroupHier` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_finsrvcsprodgrphier preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `CnsldtnFinSrvcsProdGrpHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_finsrvcsprodgrphiertext preserving type )` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

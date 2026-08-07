@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialServicesProductGroup` | ✓ | |  | `cast( _Source.FinancialServicesProductGroup as fincs_finsrvcsproductgroup preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | | ✓ | | |
-| `_HierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialServicesProductGroup` | ✓ | |  | `cast( _Source.FinancialServicesProductGroup as fincs_finsrvcsproductgroup preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_HierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

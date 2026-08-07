@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocOblgnRcpntUUID` | ✓ | |  |  |
-| `LglCntntMDocOblgnUUID` |  | |  |  |
-| `LglCntntMDocumentUUID` |  | |  |  |
-| `LglCntntMDocOblgnRcpnt` |  | |  |  |
-| `_Document` | | ✓ | | |
-| `_LegalDocObligation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocOblgnRcpntUUID` | ✓ | |  |  |  |  |
+| `LglCntntMDocOblgnUUID` |  | |  |  |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |  |  |
+| `LglCntntMDocOblgnRcpnt` |  | |  |  |  |  |
+| `_Document` | | ✓ | | | | |
+| `_LegalDocObligation` | | ✓ | | | | |
 
 ## Source Code
 

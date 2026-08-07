@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REObjectAssignmentType` | ✓ | |  | `objasstype` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REObjectAssignmentType` | ✓ | |  | `objasstype` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

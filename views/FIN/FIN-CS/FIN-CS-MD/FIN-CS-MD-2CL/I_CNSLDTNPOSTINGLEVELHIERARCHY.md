@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationPostgLevelHier` | ✓ | |  | `cast( _Hierarchy.UniversalHierarchy as fincs_postinglevelhierarchy preserving type )` |
-| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
-| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationPostgLevelHier` | ✓ | |  | `cast( _Hierarchy.UniversalHierarchy as fincs_postinglevelhierarchy preserving type )` |  |  |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |  |  |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

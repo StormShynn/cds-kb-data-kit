@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `StockTransferReplnmtStrategy` | ✓ | |  | `pkstu` |
-| `KnbnCtrlCycStkTransfCtrlType` |  | |  | `pksau` |
-| `GoodsMovementType` |  | |  | `bwart` |
-| `SignalLockingTimeInMinutes` |  | |  | `aussp` |
-| `StockDeterminationRule` |  | |  | `rules` |
-| `KnbnBatchDeterminationProced` |  | |  | `kalsm` |
-| `KnbnStockTransferIsCrossPlant` |  | |  | `pkwzw` |
-| `PostCnsmpnToCostCtrStkTransf` |  | |  | `cnscc` |
-| `PostCnsmpnToCostCtrMvtType` |  | |  | `bwacc` |
-| `SubDaySchedulingIsConsdrd` |  | |  | `uttrm` |
-| `UsageOfPackingInstructions` |  | |  | `vpack` |
-| `KanbanCtrlCycPrintFormTemplate` |  | |  | `cc_print_form` |
-| `KanbanCtnPrintFormTemplate` |  | |  | `kbform` |
-| `KnbnSDSchedgAgrmtDelivCrtnType` |  | |  | `sddkz` |
-| `_Text` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `StockTransferReplnmtStrategy` | ✓ | |  | `pkstu` |  |  |
+| `KnbnCtrlCycStkTransfCtrlType` |  | |  | `pksau` |  |  |
+| `GoodsMovementType` |  | |  | `bwart` |  |  |
+| `SignalLockingTimeInMinutes` |  | |  | `aussp` |  |  |
+| `StockDeterminationRule` |  | |  | `rules` |  |  |
+| `KnbnBatchDeterminationProced` |  | |  | `kalsm` |  |  |
+| `KnbnStockTransferIsCrossPlant` |  | |  | `pkwzw` |  |  |
+| `PostCnsmpnToCostCtrStkTransf` |  | |  | `cnscc` |  |  |
+| `PostCnsmpnToCostCtrMvtType` |  | |  | `bwacc` |  |  |
+| `SubDaySchedulingIsConsdrd` |  | |  | `uttrm` |  |  |
+| `UsageOfPackingInstructions` |  | |  | `vpack` |  |  |
+| `KanbanCtrlCycPrintFormTemplate` |  | |  | `cc_print_form` |  |  |
+| `KanbanCtnPrintFormTemplate` |  | |  | `kbform` |  |  |
+| `KnbnSDSchedgAgrmtDelivCrtnType` |  | |  | `sddkz` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,30 +27,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalRspQuestionUUID` | ✓ | |  |  |
-| `SuplrEvalRspUUID` |  | |  |  |
-| `SuplrEvalRspSectionUUID` |  | |  |  |
-| `SuplrEvalRspBrnchgQuestionUUID` |  | |  |  |
-| `SuplrEvalRspBrnchgQstnValnUUID` |  | |  |  |
-| `SuplrEvalRspBrnchgQuestionValn` |  | |  |  |
-| `SuplrEvalRspBrnchgQuestion` |  | |  |  |
-| `SuplrEvalReqQuestionUUID` |  | |  |  |
-| `SupplierEvalQuestion` |  | |  |  |
-| `SupplierEvalRequestQuestion` |  | |  |  |
-| `QuestionName` |  | |  |  |
-| `SLCQuestionType` |  | |  |  |
-| `WeightingFactor` |  | |  |  |
-| `MinimalScore` |  | |  |  |
-| `TargetScore` |  | |  |  |
-| `SLCQuestionAttachmentOption` |  | |  |  |
-| `IsDisqualifyingQuestion` |  | |  |  |
-| `SLCPreferredAnswer` |  | |  |  |
-| `NumberOfResponses` |  | |  |  |
-| `IsQuestionCommentEnabled` |  | |  |  |
-| `SuplrEvalOrdinalNumber` |  | |  |  |
-| `IsMandatoryQuestion` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalRspQuestionUUID` | ✓ | |  |  |  |  |
+| `SuplrEvalRspUUID` |  | |  |  |  |  |
+| `SuplrEvalRspSectionUUID` |  | |  |  |  |  |
+| `SuplrEvalRspBrnchgQuestionUUID` |  | |  |  |  |  |
+| `SuplrEvalRspBrnchgQstnValnUUID` |  | |  |  |  |  |
+| `SuplrEvalRspBrnchgQuestionValn` |  | |  |  |  |  |
+| `SuplrEvalRspBrnchgQuestion` |  | |  |  |  |  |
+| `SuplrEvalReqQuestionUUID` |  | |  |  |  |  |
+| `SupplierEvalQuestion` |  | |  |  |  |  |
+| `SupplierEvalRequestQuestion` |  | |  |  |  |  |
+| `QuestionName` |  | |  |  |  |  |
+| `SLCQuestionType` |  | |  |  |  |  |
+| `WeightingFactor` |  | |  |  |  |  |
+| `MinimalScore` |  | |  |  |  |  |
+| `TargetScore` |  | |  |  |  |  |
+| `SLCQuestionAttachmentOption` |  | |  |  |  |  |
+| `IsDisqualifyingQuestion` |  | |  |  |  |  |
+| `SLCPreferredAnswer` |  | |  |  |  |  |
+| `NumberOfResponses` |  | |  |  |  |  |
+| `IsQuestionCommentEnabled` |  | |  |  |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |  |  |
+| `IsMandatoryQuestion` |  | |  |  |  |  |
 
 ## Source Code
 

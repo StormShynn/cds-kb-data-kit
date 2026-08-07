@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterTypeCode` | ✓ | |  | `ProductionResourceType` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterTypeCode` | ✓ | |  | `ProductionResourceType` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

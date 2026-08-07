@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusinessProcess` | ✓ | |  | `proid` |
-| `CAApplicationArea` |  | |  | `cast( applkc as applk_kk preserving type )` |
-| `_Text` | | ✓ | | |
-| `_ApplArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusinessProcess` | ✓ | |  | `proid` |  |  |
+| `CAApplicationArea` |  | |  | `cast( applkc as applk_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ApplArea` | | ✓ | | | | |
 
 ## Associations
 

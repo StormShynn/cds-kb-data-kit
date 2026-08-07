@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `REValuationStatusReason` | ✓ | |  | `cast( dd07t.domvalue_l as recestatusreason )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `REValuationStatusReasonName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_REValuationStatusReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `REValuationStatusReason` | ✓ | |  | `cast( dd07t.domvalue_l as recestatusreason )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `REValuationStatusReasonName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_REValuationStatusReason` | | ✓ | | | | |
 
 ## Associations
 

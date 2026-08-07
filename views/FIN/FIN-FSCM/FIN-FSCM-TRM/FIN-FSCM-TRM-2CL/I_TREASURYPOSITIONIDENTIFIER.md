@@ -29,40 +29,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrsyPositionIdentificationUUID` | ✓ | |  | `cast(dift.os_guid as ftr_gen_position_ident_uuid preserving type)` |
-| `TreasuryPosition` |  | |  | `cast (dift.identified_oid as ftr_gen_position_uuid preserving type)` |
-| `TreasuryValuationArea` |  | |  | `valuation_area` |
-| `CompanyCode` |  | |  | `company_code` |
-| `FinancialInstrumentProductType` |  | |  | `product_type` |
-| `TreasuryValuationClass` |  | |  | `cast(dift.valuation_class as ftr_gen_valuation_class preserving type)` |
-| `FinancialInstrValuationClass` |  | |  | `cast(dift.com_val_class as ftr_gen_fin_instr_val_class preserving type)` |
-| `SecurityAccount` |  | |  | `cast(dift.security_account as ftr_gen_security_account preserving type)` |
-| `SecurityClass` |  | |  | `cast(dift.security_id as ftr_gen_security_class preserving type)` |
-| `DifferentiationPortfolio` |  | |  | `cast(dift.portfolio as ftr_gen_portfolio_diff preserving type)` |
-| `SecurityAccountGroup` |  | |  | `cast(dift.account_group as ftr_gen_sec_account_group preserving type)` |
-| `TreasuryPositionLongShortCode` |  | |  | `cast(dift.flag_long_short as ftr_gen_long_short_code preserving type)` |
-| `TreasuryPositionLotUUID` |  | |  | `lot_id` |
-| `FinancialTransaction` |  | |  | `cast(dift.deal_number as tb_rfha preserving type)` |
-| `Fund` |  | |  | `fund` |
-| `GrantID` |  | |  | `grant_nbr` |
-| `WBSElementInternalID` |  | |  | `cast(dift.wbs_element as ps_s4_pspnr preserving type)` |
-| `ProfitCenter` |  | |  | `profit_center` |
-| `CostCenter` |  | |  | `cost_center` |
-| `FunctionalArea` |  | |  | `functional_area` |
-| `TreasuryPositionContext` |  | |  | `context` |
-| `FinancialExposureItem` |  | |  | `exposure_item_id` |
-| `FinancialExposureSubItem` |  | |  | `exposure_subitem_id` |
-| `TrsyPosCustomDiffntnTerm1` |  | |  | `cast(dift.custom_diff_term_1 as tpm_cust_diff_term_1_value preserving type )` |
-| `TrsyPosCustomDiffntnTerm2` |  | |  | `cast(dift.custom_diff_term_2 as tpm_cust_diff_term_2_value preserving type )` |
-| `TrsyPosCustomDiffntnTerm3` |  | |  | `cast(dift.custom_diff_term_3 as tpm_cust_diff_term_3_value preserving type )` |
-| `TrsyPosCustomDiffntnTerm4` |  | |  | `cast(dift.custom_diff_term_4 as tpm_cust_diff_term_4_value preserving type )` |
-| `TrsyPosCustomDiffntnTerm5` |  | |  | `cast(dift.custom_diff_term_5 as tpm_cust_diff_term_5_value preserving type )` |
-| `_CompanyCode` | | ✓ | | |
-| `_FinancialInstrProdType` | | ✓ | | |
-| `_TreasuryValuationArea` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrsyPositionIdentificationUUID` | ✓ | |  | `cast(dift.os_guid as ftr_gen_position_ident_uuid preserving type)` |  |  |
+| `TreasuryPosition` |  | |  | `cast (dift.identified_oid as ftr_gen_position_uuid preserving type)` |  |  |
+| `TreasuryValuationArea` |  | |  | `valuation_area` |  |  |
+| `CompanyCode` |  | |  | `company_code` |  |  |
+| `FinancialInstrumentProductType` |  | |  | `product_type` |  |  |
+| `TreasuryValuationClass` |  | |  | `cast(dift.valuation_class as ftr_gen_valuation_class preserving type)` |  |  |
+| `FinancialInstrValuationClass` |  | |  | `cast(dift.com_val_class as ftr_gen_fin_instr_val_class preserving type)` |  |  |
+| `SecurityAccount` |  | |  | `cast(dift.security_account as ftr_gen_security_account preserving type)` |  |  |
+| `SecurityClass` |  | |  | `cast(dift.security_id as ftr_gen_security_class preserving type)` |  |  |
+| `DifferentiationPortfolio` |  | |  | `cast(dift.portfolio as ftr_gen_portfolio_diff preserving type)` |  |  |
+| `SecurityAccountGroup` |  | |  | `cast(dift.account_group as ftr_gen_sec_account_group preserving type)` |  |  |
+| `TreasuryPositionLongShortCode` |  | |  | `cast(dift.flag_long_short as ftr_gen_long_short_code preserving type)` |  |  |
+| `TreasuryPositionLotUUID` |  | |  | `lot_id` |  |  |
+| `FinancialTransaction` |  | |  | `cast(dift.deal_number as tb_rfha preserving type)` |  |  |
+| `Fund` |  | |  | `fund` |  |  |
+| `GrantID` |  | |  | `grant_nbr` |  |  |
+| `WBSElementInternalID` |  | |  | `cast(dift.wbs_element as ps_s4_pspnr preserving type)` |  |  |
+| `ProfitCenter` |  | |  | `profit_center` |  |  |
+| `CostCenter` |  | |  | `cost_center` |  |  |
+| `FunctionalArea` |  | |  | `functional_area` |  |  |
+| `TreasuryPositionContext` |  | |  | `context` |  |  |
+| `FinancialExposureItem` |  | |  | `exposure_item_id` |  |  |
+| `FinancialExposureSubItem` |  | |  | `exposure_subitem_id` |  |  |
+| `TrsyPosCustomDiffntnTerm1` |  | |  | `cast(dift.custom_diff_term_1 as tpm_cust_diff_term_1_value preserving type )` |  |  |
+| `TrsyPosCustomDiffntnTerm2` |  | |  | `cast(dift.custom_diff_term_2 as tpm_cust_diff_term_2_value preserving type )` |  |  |
+| `TrsyPosCustomDiffntnTerm3` |  | |  | `cast(dift.custom_diff_term_3 as tpm_cust_diff_term_3_value preserving type )` |  |  |
+| `TrsyPosCustomDiffntnTerm4` |  | |  | `cast(dift.custom_diff_term_4 as tpm_cust_diff_term_4_value preserving type )` |  |  |
+| `TrsyPosCustomDiffntnTerm5` |  | |  | `cast(dift.custom_diff_term_5 as tpm_cust_diff_term_5_value preserving type )` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FinancialInstrProdType` | | ✓ | | | | |
+| `_TreasuryValuationArea` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
 
 ## Associations
 

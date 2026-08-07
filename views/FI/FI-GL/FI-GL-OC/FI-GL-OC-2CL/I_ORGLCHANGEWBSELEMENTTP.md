@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrganizationalChange` | ✓ | |  |  |
-| `WBSElementInternalID` | ✓ | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ProfitCenterByOrglChange` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_OrganizationalChange` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrganizationalChange` | ✓ | |  |  |  |  |
+| `WBSElementInternalID` | ✓ | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ProfitCenterByOrglChange` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_OrganizationalChange` | | ✓ | | | | |
 
 ## Source Code
 

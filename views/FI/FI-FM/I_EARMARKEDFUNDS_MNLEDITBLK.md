@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EarmarkedFundsManualEditBlock` | ✓ | |  | `locktype` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EarmarkedFundsManualEditBlock` | ✓ | |  | `locktype` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

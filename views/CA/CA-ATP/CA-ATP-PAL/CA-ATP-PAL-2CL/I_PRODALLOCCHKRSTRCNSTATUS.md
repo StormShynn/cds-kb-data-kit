@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

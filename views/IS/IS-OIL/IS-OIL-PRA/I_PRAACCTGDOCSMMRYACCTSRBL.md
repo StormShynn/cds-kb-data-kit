@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast ( bukrs as fis_bukrs preserving type )` |
-| `Remitter` | ✓ | |  | `remt_no` |
-| `AccountsReceivableJointVenture` | ✓ | |  | `ar_vname` |
-| `AcctsRblDivisionOfInterest` | ✓ | |  | `ar_doi_no` |
-| `AcctsRblMeasurementPt` | ✓ | |  | `ar_mp_no` |
-| `Product` | ✓ | |  | `pd_cd` |
-| `SalesDate` | ✓ | |  | `sale_dt` |
-| `BalAmtAgeCode` |  | |  | `age` |
-| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |
-| `AcctsRblStatus` |  | |  | `status` |
-| `StatusLastChangedByUser` |  | |  | `status_user` |
-| `WriteOffResponsibleUser` |  | |  | `awo_user` |
-| `AgingPeriod` |  | |  | `cast(aging_period as /pra/aging_acct_perd)` |
-| `GLAccountType` |  | |  | `cast( 'AR' as oiuh_acctype)` |
-| `BalAmtInCompanyCodeCrcy` |  | |  | `cur_bal` |
-| `ReceivableAmtInCoCodeCrcy` |  | |  | `tot_recvbl` |
-| `CashAmtInCoCodeCrcy` |  | |  | `tot_cashbl` |
-| `StatusAmtInCompanyCodeCrcy` |  | |  | `orig_status_amt` |
-| `WriteOffAmtInCoCodeCrcy` |  | |  | `awo_amt` |
-| `_CompanyCode` | | ✓ | | |
-| `_Remitter` | | ✓ | | |
-| `_AccountsRblJointVenture` | | ✓ | | |
-| `_AcctsRblDivisionOfInterest` | | ✓ | | |
-| `_AcctsRblMeasurementPt` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_BalAmtAge` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_AcctsRblStatus` | | ✓ | | |
-| `_GLAccountType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast ( bukrs as fis_bukrs preserving type )` |  |  |
+| `Remitter` | ✓ | |  | `remt_no` |  |  |
+| `AccountsReceivableJointVenture` | ✓ | |  | `ar_vname` |  |  |
+| `AcctsRblDivisionOfInterest` | ✓ | |  | `ar_doi_no` |  |  |
+| `AcctsRblMeasurementPt` | ✓ | |  | `ar_mp_no` |  |  |
+| `Product` | ✓ | |  | `pd_cd` |  |  |
+| `SalesDate` | ✓ | |  | `sale_dt` |  |  |
+| `BalAmtAgeCode` |  | |  | `age` |  |  |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |  |  |
+| `AcctsRblStatus` |  | |  | `status` |  |  |
+| `StatusLastChangedByUser` |  | |  | `status_user` |  |  |
+| `WriteOffResponsibleUser` |  | |  | `awo_user` |  |  |
+| `AgingPeriod` |  | |  | `cast(aging_period as /pra/aging_acct_perd)` |  |  |
+| `GLAccountType` |  | |  | `cast( 'AR' as oiuh_acctype)` |  |  |
+| `BalAmtInCompanyCodeCrcy` |  | |  | `cur_bal` |  |  |
+| `ReceivableAmtInCoCodeCrcy` |  | |  | `tot_recvbl` |  |  |
+| `CashAmtInCoCodeCrcy` |  | |  | `tot_cashbl` |  |  |
+| `StatusAmtInCompanyCodeCrcy` |  | |  | `orig_status_amt` |  |  |
+| `WriteOffAmtInCoCodeCrcy` |  | |  | `awo_amt` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Remitter` | | ✓ | | | | |
+| `_AccountsRblJointVenture` | | ✓ | | | | |
+| `_AcctsRblDivisionOfInterest` | | ✓ | | | | |
+| `_AcctsRblMeasurementPt` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_BalAmtAge` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_AcctsRblStatus` | | ✓ | | | | |
+| `_GLAccountType` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InsurClmDamageCategory` | ✓ | |  | `damcat` |
-| `InsurClmScopeOfLoss` | ✓ | |  | `losstype` |
-| `_DamageCategory` | | ✓ | | |
-| `_ClaimScopeOfLossTxt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurClmDamageCategory` | ✓ | |  | `damcat` |  |  |
+| `InsurClmScopeOfLoss` | ✓ | |  | `losstype` |  |  |
+| `_DamageCategory` | | ✓ | | | | |
+| `_ClaimScopeOfLossTxt` | | ✓ | | | | |
 
 ## Associations
 

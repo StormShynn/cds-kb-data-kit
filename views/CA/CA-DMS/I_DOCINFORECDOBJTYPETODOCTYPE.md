@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
-| `LinkedSAPObject` | ✓ | |  | `dokob` |
-| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |
-| `_Text` | | ✓ | | |
-| `_DocType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
+| `LinkedSAPObject` | ✓ | |  | `dokob` |  |  |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_DocType` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReturnsDocumentStatus` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 1) as msr_doc_status preserving type)` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `RetsDocumentStatusDescription` |  | |  | `ddtext` |
-| `_ReturnsDocumentStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReturnsDocumentStatus` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 1) as msr_doc_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `RetsDocumentStatusDescription` |  | |  | `ddtext` |  |  |
+| `_ReturnsDocumentStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

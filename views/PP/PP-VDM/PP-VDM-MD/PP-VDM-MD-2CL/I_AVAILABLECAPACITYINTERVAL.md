@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityInternalID` | ✓ | |  | `kapid` |
-| `AvailableCapacityType` | ✓ | |  | `versn` |
-| `ValidityEndDate` | ✓ | |  | `datub` |
-| `CapacityNumberOfCapacities` |  | |  | `anzhl` |
-| `CapacityNumberOfShifts` |  | |  | `anzsh` |
-| `WorkDayRule` |  | |  | `cast(kazy.fabtg as workdayrule preserving type)` |
-| `ShiftSequence` |  | |  | `sprog` |
-| `AvailableCapacityIntervalDurn` |  | |  | `cast(kazy.anztg as availablecapacityintervaldurn preserving type)` |
-| `CapacityPlanUtilizationPercent` |  | |  | `ngrad` |
-| `StdAvailableCapacityIsValid` |  | |  | `kkopf` |
-| `_Capacity` | | ✓ | | |
-| `_AvailableCapacityType` | | ✓ | | |
-| `_EndDate` | | ✓ | | |
-| `_WorkDayRule` | | ✓ | | |
-| `_ShiftSequence` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  | `kapid` |  |  |
+| `AvailableCapacityType` | ✓ | |  | `versn` |  |  |
+| `ValidityEndDate` | ✓ | |  | `datub` |  |  |
+| `CapacityNumberOfCapacities` |  | |  | `anzhl` |  |  |
+| `CapacityNumberOfShifts` |  | |  | `anzsh` |  |  |
+| `WorkDayRule` |  | |  | `cast(kazy.fabtg as workdayrule preserving type)` |  |  |
+| `ShiftSequence` |  | |  | `sprog` |  |  |
+| `AvailableCapacityIntervalDurn` |  | |  | `cast(kazy.anztg as availablecapacityintervaldurn preserving type)` |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  | `ngrad` |  |  |
+| `StdAvailableCapacityIsValid` |  | |  | `kkopf` |  |  |
+| `_Capacity` | | ✓ | | | | |
+| `_AvailableCapacityType` | | ✓ | | | | |
+| `_EndDate` | | ✓ | | | | |
+| `_WorkDayRule` | | ✓ | | | | |
+| `_ShiftSequence` | | ✓ | | | | |
 
 ## Associations
 

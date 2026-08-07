@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjElmntWorkItemUUID` | ✓ | |  |  |
-| `EntProjElmntWorkItem` |  | |  |  |
-| `EntProjElmntWorkItemName` |  | |  |  |
-| `EntProjElmntWorkItemIsInactive` |  | |  |  |
-| `EntProjElmntWorkItemIsCnfgrd` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ProjectElementUUID` |  | |  |  |
-| `EntProjElmntWrkItmLastUpdtSrce` |  | |  |  |
-| `EntProjElmntWrkItmCrtedByUsr` |  | |  |  |
-| `EntProjElmntWrkItmCrtnDteTme` |  | |  |  |
-| `EntProjElmntWrkItmLstChgByUsr` |  | |  |  |
-| `EntProjElmntWrkItmLstChgDteTme` |  | |  |  |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntWorkItemUUID` | ✓ | |  |  |  |  |
+| `EntProjElmntWorkItem` |  | |  |  |  |  |
+| `EntProjElmntWorkItemName` |  | |  |  |  |  |
+| `EntProjElmntWorkItemIsInactive` |  | |  |  |  |  |
+| `EntProjElmntWorkItemIsCnfgrd` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ProjectElementUUID` |  | |  |  |  |  |
+| `EntProjElmntWrkItmLastUpdtSrce` |  | |  |  |  |  |
+| `EntProjElmntWrkItmCrtedByUsr` |  | |  |  |  |  |
+| `EntProjElmntWrkItmCrtnDteTme` |  | |  |  |  |  |
+| `EntProjElmntWrkItmLstChgByUsr` |  | |  |  |  |  |
+| `EntProjElmntWrkItmLstChgDteTme` |  | |  |  |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Source Code
 

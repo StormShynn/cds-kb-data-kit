@@ -30,115 +30,115 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SourceCompanyCode` | ✓ | |  | `ausbk` |
-| `SourceAccountingDocument` | ✓ | |  | `cast( belnr as fis_belnr preserving type )` |
-| `SourceFiscalYear` | ✓ | |  | `cast( gjahr as fis_gjahr_no_conv preserving type )` |
-| `ParkedAcctgDocAssetItem` | ✓ | |  | `cast( bzkey as fis_parked_gl_item preserving type )` |
-| `SourceAccountingDocumentItem` |  | |  | `cast(buzei as fis_buzei preserving type )` |
-| `CompanyCode` |  | |  | `cast( bukrs as fis_bukrs preserving type )` |
-| `AccountingDocumentType` |  | | `_ParkedOplAcctgDocument` | `AccountingDocumentType` |
-| `ControllingArea` |  | | `_SourceCompanyCode` | `ControllingArea` |
-| `PostingKey` |  | |  | `cast( bschl as fis_bschl preserving type )` |
-| `FinancialAccountType` |  | |  | `cast( 'A' as farp_koart preserving type )` |
-| `DebitCreditCode` |  | |  | `cast( case xnegp when 'X' then case shkzg when 'S' then 'H' when 'H' then 'S' end when '' then shkzg end as fis_shkzg preserving type )` |
-| `BusinessArea` |  | |  | `cast( gsber as fis_rbusa preserving type )` |
-| `PartnerBusinessArea` |  | |  | `cast(pargb as fis_pargb preserving type )` |
-| `TaxCode` |  | |  | `cast( mwskz as fis_mwskz preserving type )` |
-| `TaxType` |  | |  | `mwart` |
-| `AssignmentReference` |  | |  | `cast( zuonr as fis_zuonr preserving type )` |
-| `DocumentItemText` |  | |  | `cast( sgtxt as farp_sgtxt preserving type )` |
-| `CostCenter` |  | |  | `cast( kostl as fis_kostl preserving type )` |
-| `OrderID` |  | |  | `aufnr` |
-| `MasterFixedAsset` |  | |  | `cast( anln1 as fis_anln1 preserving type )` |
-| `FixedAsset` |  | |  | `cast( anln2 as fis_anln2 preserving type )` |
-| `AssetTransactionType` |  | |  | `anbwa` |
-| `PersonnelNumber` |  | |  | `pernr` |
-| `GLAccount` |  | |  | `cast( hkont as fis_racct preserving type )` |
-| `SpecialGLAccountAssignment` |  | |  | `cast( hzuon as fins_hzuon preserving type )` |
-| `Product` |  | |  | `cast (matnr as productnumber preserving type )` |
-| `Plant` |  | |  | `werks` |
-| `ProfitCenter` |  | |  | `cast( prctr as fis_prctr preserving type )` |
-| `JointVenture` |  | |  | `vname` |
-| `JointVentureEquityGroup` |  | |  | `egrup` |
-| `TaxJurisdiction` |  | |  | `cast( txjcd as fis_txjcd preserving type )` |
-| `REInternalFinNumber` |  | |  | `cast( imkey as recaimkeyfi preserving type )` |
-| `CommitmentItemShortID` |  | |  | `cast( fipos as fis_fipos_shortid preserving type )` |
-| `CostObject` |  | |  | `kstrg` |
-| `ProjectNetwork` |  | |  | `nplnr` |
-| `ProfitabilitySegment` |  | |  | `cast( paobjnr as rkeobjnr_char )` |
-| `FundsCenter` |  | |  | `cast( fistl as farp_fistl preserving type )` |
-| `Fund` |  | |  | `geber` |
-| `Reference2IDByBusinessPartner` |  | |  | `cast( xref2 as farp_xref2 preserving type )` |
-| `IsNegativePosting` |  | |  | `cast( xnegp as farp_xnegp preserving type )` |
-| `Reference3IDByBusinessPartner` |  | |  | `cast( xref3 as farp_xref3 preserving type )` |
-| `Region` |  | |  | `grirg` |
-| `BusinessPlace` |  | |  | `cast( bupla as farp_bupla preserving type )` |
-| `CostCtrActivityType` |  | |  | `lstar` |
-| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` |
-| `GrantID` |  | |  | `grant_nbr` |
-| `Segment` |  | |  | `segment` |
-| `PartnerSegment` |  | |  | `psegment` |
-| `PartnerFund` |  | |  | `cast( pgeber as bp_p_geber preserving type )` |
-| `PartnerGrant` |  | |  | `pgrant_nbr` |
-| `BudgetPeriod` |  | |  | `budget_pd` |
-| `PartnerBudgetPeriod` |  | |  | `pbudget_pd` |
-| `TransactionCurrency` |  | | `_ParkedOplAcctgDocument` | `TransactionCurrency` |
-| `CompanyCodeCurrency` |  | | `_ParkedOplAcctgDocument` | `CompanyCodeCurrency` |
-| `AdditionalCurrency1` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency1` |
-| `AdditionalCurrency2` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency2` |
-| `AmountInCompanyCodeCurrency` |  | |  | `} case shkzg when 'H' then cast( cast(-dmbtr as abap.curr( 23,2)) as fis_hsl preserving type ) when 'S' then cast(dmbtr as fis_hsl preserving type ) end` |
-| `AmountInTransactionCurrency` |  | |  | `} case shkzg when 'H' then cast( cast(-wrbtr as abap.curr( 23,2)) as fis_wsl preserving type ) when 'S' then cast(wrbtr as fis_wsl preserving type ) end` |
-| `AmountInAdditionalCurrency1` |  | |  | `} case shkzg when 'H' then cast( cast(-dmbe2 as abap.curr( 23,2)) as fis_dmbe2 preserving type ) when 'S' then cast(dmbe2 as fis_dmbe2 preserving type ) end` |
-| `AmountInAdditionalCurrency2` |  | |  | `} case shkzg when 'H' then cast( cast(-dmbe3 as abap.curr( 23,2)) as fis_dmbe3 preserving type ) when 'S' then cast(dmbe3 as fis_dmbe3 preserving type ) end` |
-| `TaxBaseAmountInCoCodeCrcy` |  | |  | `} case shkzg when 'H' then cast( cast(-hwbas as abap.curr( 23,2)) as hwbas_shl preserving type ) when 'S' then cast(hwbas as hwbas_shl preserving type ) end` |
-| `TaxBaseAmountInTransCrcy` |  | |  | `} case shkzg when 'H' then cast( cast(-fwbas as abap.curr( 23,2)) as fwbas_shl preserving type ) when 'S' then cast(fwbas as fwbas_shl preserving type ) end` |
-| `BaseUnit` |  | |  | `meins` |
-| `Quantity` |  | |  | `menge` |
-| `AssetValueDate` |  | |  | `bzdat` |
-| `CompanyCodeCurrencyDetnMethod` |  | |  | `hwmet` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `FundedProgram` |  | |  | `measure` |
-| `IsNotCashDiscountLiable` |  | |  | `xskrl` |
-| `_ControllingArea` |  | | `_SourceCompanyCode` | `_ControllingArea` |
-| `_CompanyCode` | | ✓ | | |
-| `_SourceCompanyCode` | | ✓ | | |
-| `_SourceFiscalYear` | | ✓ | | |
-| `_ParkedOplAcctgDocument` | | ✓ | | |
-| `_SourceParkedOplAcctgDocument` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_PostingKey` | | ✓ | | |
-| `_FinancialAccountType` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_PartnerBusinessArea` | | ✓ | | |
-| `_TaxType` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_CurrentProfitCenter` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CurrentCostCenter` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_PartnerSegment` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_AdditionalCurrency1` | | ✓ | | |
-| `_AdditionalCurrency2` | | ✓ | | |
-| `_InternalOrder` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_AssetTransactionType` | | ✓ | | |
-| `_ProjectNetwork` | | ✓ | | |
-| `_CostCtrActivityType` | | ✓ | | |
-| `_BudgetPeriod` | | ✓ | | |
-| `_Grant` | | ✓ | | |
-| `_PartnerGrant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SourceCompanyCode` | ✓ | |  | `ausbk` |  |  |
+| `SourceAccountingDocument` | ✓ | |  | `cast( belnr as fis_belnr preserving type )` |  |  |
+| `SourceFiscalYear` | ✓ | |  | `cast( gjahr as fis_gjahr_no_conv preserving type )` |  |  |
+| `ParkedAcctgDocAssetItem` | ✓ | |  | `cast( bzkey as fis_parked_gl_item preserving type )` |  |  |
+| `SourceAccountingDocumentItem` |  | |  | `cast(buzei as fis_buzei preserving type )` |  |  |
+| `CompanyCode` |  | |  | `cast( bukrs as fis_bukrs preserving type )` |  |  |
+| `AccountingDocumentType` |  | | `_ParkedOplAcctgDocument` | `AccountingDocumentType` |  |  |
+| `ControllingArea` |  | | `_SourceCompanyCode` | `ControllingArea` |  |  |
+| `PostingKey` |  | |  | `cast( bschl as fis_bschl preserving type )` |  |  |
+| `FinancialAccountType` |  | |  | `cast( 'A' as farp_koart preserving type )` |  |  |
+| `DebitCreditCode` |  | |  | `cast( case xnegp when 'X' then case shkzg when 'S' then 'H' when 'H' then 'S' end when '' then shkzg end as fis_shkzg preserving type )` |  |  |
+| `BusinessArea` |  | |  | `cast( gsber as fis_rbusa preserving type )` |  |  |
+| `PartnerBusinessArea` |  | |  | `cast(pargb as fis_pargb preserving type )` |  |  |
+| `TaxCode` |  | |  | `cast( mwskz as fis_mwskz preserving type )` |  |  |
+| `TaxType` |  | |  | `mwart` |  |  |
+| `AssignmentReference` |  | |  | `cast( zuonr as fis_zuonr preserving type )` |  |  |
+| `DocumentItemText` |  | |  | `cast( sgtxt as farp_sgtxt preserving type )` |  |  |
+| `CostCenter` |  | |  | `cast( kostl as fis_kostl preserving type )` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `MasterFixedAsset` |  | |  | `cast( anln1 as fis_anln1 preserving type )` |  |  |
+| `FixedAsset` |  | |  | `cast( anln2 as fis_anln2 preserving type )` |  |  |
+| `AssetTransactionType` |  | |  | `anbwa` |  |  |
+| `PersonnelNumber` |  | |  | `pernr` |  |  |
+| `GLAccount` |  | |  | `cast( hkont as fis_racct preserving type )` |  |  |
+| `SpecialGLAccountAssignment` |  | |  | `cast( hzuon as fins_hzuon preserving type )` |  |  |
+| `Product` |  | |  | `cast (matnr as productnumber preserving type )` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `ProfitCenter` |  | |  | `cast( prctr as fis_prctr preserving type )` |  |  |
+| `JointVenture` |  | |  | `vname` |  |  |
+| `JointVentureEquityGroup` |  | |  | `egrup` |  |  |
+| `TaxJurisdiction` |  | |  | `cast( txjcd as fis_txjcd preserving type )` |  |  |
+| `REInternalFinNumber` |  | |  | `cast( imkey as recaimkeyfi preserving type )` |  |  |
+| `CommitmentItemShortID` |  | |  | `cast( fipos as fis_fipos_shortid preserving type )` |  |  |
+| `CostObject` |  | |  | `kstrg` |  |  |
+| `ProjectNetwork` |  | |  | `nplnr` |  |  |
+| `ProfitabilitySegment` |  | |  | `cast( paobjnr as rkeobjnr_char )` |  |  |
+| `FundsCenter` |  | |  | `cast( fistl as farp_fistl preserving type )` |  |  |
+| `Fund` |  | |  | `geber` |  |  |
+| `Reference2IDByBusinessPartner` |  | |  | `cast( xref2 as farp_xref2 preserving type )` |  |  |
+| `IsNegativePosting` |  | |  | `cast( xnegp as farp_xnegp preserving type )` |  |  |
+| `Reference3IDByBusinessPartner` |  | |  | `cast( xref3 as farp_xref3 preserving type )` |  |  |
+| `Region` |  | |  | `grirg` |  |  |
+| `BusinessPlace` |  | |  | `cast( bupla as farp_bupla preserving type )` |  |  |
+| `CostCtrActivityType` |  | |  | `lstar` |  |  |
+| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` |  |  |
+| `GrantID` |  | |  | `grant_nbr` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `PartnerSegment` |  | |  | `psegment` |  |  |
+| `PartnerFund` |  | |  | `cast( pgeber as bp_p_geber preserving type )` |  |  |
+| `PartnerGrant` |  | |  | `pgrant_nbr` |  |  |
+| `BudgetPeriod` |  | |  | `budget_pd` |  |  |
+| `PartnerBudgetPeriod` |  | |  | `pbudget_pd` |  |  |
+| `TransactionCurrency` |  | | `_ParkedOplAcctgDocument` | `TransactionCurrency` |  |  |
+| `CompanyCodeCurrency` |  | | `_ParkedOplAcctgDocument` | `CompanyCodeCurrency` |  |  |
+| `AdditionalCurrency1` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency1` |  |  |
+| `AdditionalCurrency2` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency2` |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `case shkzg when 'H' then cast( cast(-dmbtr as abap.curr( 23,2)) as fis_hsl preserving type ) when 'S' then cast(dmbtr as fis_hsl preserving type ) end` |  |  |
+| `AmountInTransactionCurrency` |  | |  | `case shkzg when 'H' then cast( cast(-wrbtr as abap.curr( 23,2)) as fis_wsl preserving type ) when 'S' then cast(wrbtr as fis_wsl preserving type ) end` |  |  |
+| `AmountInAdditionalCurrency1` |  | |  | `case shkzg when 'H' then cast( cast(-dmbe2 as abap.curr( 23,2)) as fis_dmbe2 preserving type ) when 'S' then cast(dmbe2 as fis_dmbe2 preserving type ) end` |  |  |
+| `AmountInAdditionalCurrency2` |  | |  | `case shkzg when 'H' then cast( cast(-dmbe3 as abap.curr( 23,2)) as fis_dmbe3 preserving type ) when 'S' then cast(dmbe3 as fis_dmbe3 preserving type ) end` |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `case shkzg when 'H' then cast( cast(-hwbas as abap.curr( 23,2)) as hwbas_shl preserving type ) when 'S' then cast(hwbas as hwbas_shl preserving type ) end` |  |  |
+| `TaxBaseAmountInTransCrcy` |  | |  | `case shkzg when 'H' then cast( cast(-fwbas as abap.curr( 23,2)) as fwbas_shl preserving type ) when 'S' then cast(fwbas as fwbas_shl preserving type ) end` |  |  |
+| `BaseUnit` |  | |  | `meins` |  |  |
+| `Quantity` |  | |  | `menge` |  |  |
+| `AssetValueDate` |  | |  | `bzdat` |  |  |
+| `CompanyCodeCurrencyDetnMethod` |  | |  | `hwmet` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `FundedProgram` |  | |  | `measure` |  |  |
+| `IsNotCashDiscountLiable` |  | |  | `xskrl` |  |  |
+| `_ControllingArea` |  | | `_SourceCompanyCode` | `_ControllingArea` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_SourceCompanyCode` | | ✓ | | | | |
+| `_SourceFiscalYear` | | ✓ | | | | |
+| `_ParkedOplAcctgDocument` | | ✓ | | | | |
+| `_SourceParkedOplAcctgDocument` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_PostingKey` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_PartnerBusinessArea` | | ✓ | | | | |
+| `_TaxType` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_PartnerSegment` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_AdditionalCurrency1` | | ✓ | | | | |
+| `_AdditionalCurrency2` | | ✓ | | | | |
+| `_InternalOrder` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_AssetTransactionType` | | ✓ | | | | |
+| `_ProjectNetwork` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
+| `_BudgetPeriod` | | ✓ | | | | |
+| `_Grant` | | ✓ | | | | |
+| `_PartnerGrant` | | ✓ | | | | |
 
 ## Associations
 

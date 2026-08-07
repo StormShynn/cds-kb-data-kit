@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PackingStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `PackingStatusDesc` |  | |  | `bezei` |
-| `_PackingStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PackingStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PackingStatusDesc` |  | |  | `bezei` |  |  |
+| `_PackingStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

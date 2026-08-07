@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SrvcOrderConfirmationRelevance` | ✓ | |  | `cast (domvalue_l as abap.char(1) )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SrvcOrdConfRelevanceText` |  | |  | `ddtext` |
-| `_SrvcOrdItmConfRelevance` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcOrderConfirmationRelevance` | ✓ | |  | `cast (domvalue_l as abap.char(1) )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SrvcOrdConfRelevanceText` |  | |  | `ddtext` |  |  |
+| `_SrvcOrdItmConfRelevance` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

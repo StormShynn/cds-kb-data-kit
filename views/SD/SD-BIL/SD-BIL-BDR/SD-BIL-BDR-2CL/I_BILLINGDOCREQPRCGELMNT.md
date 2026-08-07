@@ -30,62 +30,62 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentRequest` | ✓ | |  | `cast(PricingElement.BillingDocument as vbeln_bdr preserving type)` |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `PricingDateTime` |  | |  |  |
-| `PriceConditionDeterminationDte` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionBaseValue` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionCategory` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `IsRelevantForAccrual` |  | |  |  |
-| `CndnIsRelevantForInvoiceList` |  | |  |  |
-| `ConditionOrigin` |  | |  |  |
-| `IsGroupCondition` |  | |  | `IsGroupCondition_2` |
-| `ConditionRecord` |  | |  |  |
-| `ConditionSequentialNumber` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `WithholdingTaxCode` |  | |  |  |
-| `CndnRoundingOffDiffAmount` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionControl` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `ConditionClass` |  | |  |  |
-| `PrcgProcedureCounterForHeader` |  | |  |  |
-| `FactorForConditionBasisValue` |  | |  |  |
-| `StructureCondition` |  | |  |  |
-| `PeriodFactorForCndnBasisValue` |  | |  |  |
-| `PricingScaleBasis` |  | |  |  |
-| `ConditionScaleBasisValue` |  | |  |  |
-| `ConditionScaleBasisUnit` |  | |  |  |
-| `ConditionScaleBasisCurrency` |  | |  |  |
-| `CndnIsRelevantForIntcoBilling` |  | |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |
-| `ConditionIsForConfiguration` |  | |  |  |
-| `VariantCondition` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionBaseAmount` |  | |  |  |
-| `ConditionBaseQuantity` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionScaleBaseAmount` |  | |  |  |
-| `ConditionScaleBaseQuantity` |  | |  |  |
-| `ConditionAbsoluteExchangeRate` |  | |  |  |
-| `ConditionExchRateIsIndrctQtan` |  | |  |  |
-| `AccountKeyForGLAccount` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `_BillingDocumentRequest` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  | `cast(PricingElement.BillingDocument as vbeln_bdr preserving type)` |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `PricingDateTime` |  | |  |  |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionBaseValue` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionCategory` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `IsRelevantForAccrual` |  | |  |  |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |  |  |
+| `ConditionOrigin` |  | |  |  |  |  |
+| `IsGroupCondition` |  | |  | `IsGroupCondition_2` |  |  |
+| `ConditionRecord` |  | |  |  |  |  |
+| `ConditionSequentialNumber` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `WithholdingTaxCode` |  | |  |  |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionControl` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `ConditionClass` |  | |  |  |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |  |  |
+| `StructureCondition` |  | |  |  |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |  |  |
+| `PricingScaleBasis` |  | |  |  |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |  |  |
+| `VariantCondition` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionBaseAmount` |  | |  |  |  |  |
+| `ConditionBaseQuantity` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionScaleBaseAmount` |  | |  |  |  |  |
+| `ConditionScaleBaseQuantity` |  | |  |  |  |  |
+| `ConditionAbsoluteExchangeRate` |  | |  |  |  |  |
+| `ConditionExchRateIsIndrctQtan` |  | |  |  |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `_BillingDocumentRequest` | | ✓ | | | | |
 
 ## Associations
 

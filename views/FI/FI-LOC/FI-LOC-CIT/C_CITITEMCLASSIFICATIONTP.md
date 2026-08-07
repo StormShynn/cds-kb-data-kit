@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CITClassificationUUID` | ✓ | |  |  |
-| `Ledger` |  | |  | `}] Ledger` |
-| `SourceLedger` |  | |  |  |
-| `CompanyCode` |  | |  | `} ] CompanyCode` |
-| `FiscalYear` |  | |  |  |
-| `AccountingDocument` |  | |  |  |
-| `LedgerGLLineItem` |  | |  |  |
-| `CITReportingDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CorporateIncomeTaxHierarchy` |  | |  | `}] CorporateIncomeTaxHierarchy` |
-| `CITClassificationCode` |  | |  | `}] CITClassificationCode` |
-| `CITClassificationCodeDesc` |  | |  |  |
-| `CITItemAmountInDisplayCurrency` |  | |  |  |
-| `Currency` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CITClassificationUUID` | ✓ | |  |  |  |  |
+| `Ledger` |  | |  |  |  |  |
+| `SourceLedger` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `AccountingDocument` |  | |  |  |  |  |
+| `LedgerGLLineItem` |  | |  |  |  |  |
+| `CITReportingDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CorporateIncomeTaxHierarchy` |  | |  |  |  |  |
+| `CITClassificationCode` |  | |  |  |  |  |
+| `CITClassificationCodeDesc` |  | |  |  |  |  |
+| `CITItemAmountInDisplayCurrency` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
 
 ## Source Code
 

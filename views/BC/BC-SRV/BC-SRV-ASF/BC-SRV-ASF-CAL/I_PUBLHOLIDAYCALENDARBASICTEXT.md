@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PublicHolidayCalendarLanguage` | ✓ | |  |  |
-| `PublicHolidayCalendarID` | ✓ | |  |  |
-| `PublHolidayCalendarDescription` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCalendarLanguage` | ✓ | |  |  |  |  |
+| `PublicHolidayCalendarID` | ✓ | |  |  |  |  |
+| `PublHolidayCalendarDescription` |  | |  |  |  |  |
 
 ## Source Code
 

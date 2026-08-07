@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentMethod` | ✓ | |  | `cast ( t_pag as logbr_tpag preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentMethod` | ✓ | |  | `cast ( t_pag as logbr_tpag preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

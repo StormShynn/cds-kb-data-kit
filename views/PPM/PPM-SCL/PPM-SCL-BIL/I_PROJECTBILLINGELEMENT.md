@@ -31,34 +31,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectBillingElementUUID` | ✓ | |  | `projectbillingelementuuid` |
-| `BillingWBSElementInternalID` |  | |  | `billingwbselementinternalid` |
-| `DocumentCurrency` |  | |  | `documentcurrency` |
-| `BilledRevenueAmtInDocCrcy` |  | |  | `billedrevenueamtindoccrcy` |
-| `WrittenOffRevenueAmtInDocCrcy` |  | |  | `writtenoffrevenueamtindoccrcy` |
-| `ProjBillingProfile` |  | |  | `projbillingprofile` |
-| `ProjectBillingCategory` |  | |  | `projectbillingcategory` |
-| `ProjBillgElmntCreatedByUser` |  | |  | `projbillgelmntcreatedbyuser` |
-| `ProjBillgElmntCreatedAtDteTme` |  | |  | `projbillgelmntcreatedatdtetme` |
-| `ProjBillgElmntLastChgdByUser` |  | |  | `projbillgelmntlastchgdbyuser` |
-| `ProjBillgElmntLastChgdAtDteTme` |  | |  | `projbillgelmntlastchgdatdtetme` |
-| `SalesDocument` |  | |  | `salesdocument` |
-| `SalesDocumentItem` |  | |  | `salesdocumentitem` |
-| `BillingPlan` |  | |  | `billingplan` |
-| `ProjectUUID` |  | |  | `projectuuid` |
-| `ProjectElementUUID` |  | |  | `projectelementuuid` |
-| `PrjBlgElmObjLnkUUID` |  | | `_ProjBillgElmObjectLink` | `PrjBlgElmObjLnkUUID` |
-| `_ProjectBillingElementEntry` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_ProjBillgElmObjectLink` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_ProjectBillingCategory` | | ✓ | | |
-| `_ProjectBillingCategoryText` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectBillingElementUUID` | ✓ | |  | `projectbillingelementuuid` |  |  |
+| `BillingWBSElementInternalID` |  | |  | `billingwbselementinternalid` |  |  |
+| `DocumentCurrency` |  | |  | `documentcurrency` |  |  |
+| `BilledRevenueAmtInDocCrcy` |  | |  | `billedrevenueamtindoccrcy` |  |  |
+| `WrittenOffRevenueAmtInDocCrcy` |  | |  | `writtenoffrevenueamtindoccrcy` |  |  |
+| `ProjBillingProfile` |  | |  | `projbillingprofile` |  |  |
+| `ProjectBillingCategory` |  | |  | `projectbillingcategory` |  |  |
+| `ProjBillgElmntCreatedByUser` |  | |  | `projbillgelmntcreatedbyuser` |  |  |
+| `ProjBillgElmntCreatedAtDteTme` |  | |  | `projbillgelmntcreatedatdtetme` |  |  |
+| `ProjBillgElmntLastChgdByUser` |  | |  | `projbillgelmntlastchgdbyuser` |  |  |
+| `ProjBillgElmntLastChgdAtDteTme` |  | |  | `projbillgelmntlastchgdatdtetme` |  |  |
+| `SalesDocument` |  | |  | `salesdocument` |  |  |
+| `SalesDocumentItem` |  | |  | `salesdocumentitem` |  |  |
+| `BillingPlan` |  | |  | `billingplan` |  |  |
+| `ProjectUUID` |  | |  | `projectuuid` |  |  |
+| `ProjectElementUUID` |  | |  | `projectelementuuid` |  |  |
+| `PrjBlgElmObjLnkUUID` |  | | `_ProjBillgElmObjectLink` | `PrjBlgElmObjLnkUUID` |  |  |
+| `_ProjectBillingElementEntry` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_ProjBillgElmObjectLink` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_ProjectBillingCategory` | | ✓ | | | | |
+| `_ProjectBillingCategoryText` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
 
 ## Associations
 

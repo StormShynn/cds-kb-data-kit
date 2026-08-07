@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SamplingProcedure` | ✓ | |  |  |
-| `SamplingType` |  | |  |  |
-| `SamplingValuationMode` |  | |  |  |
-| `SamplingScheme` |  | |  |  |
-| `QualityControlChartType` |  | |  |  |
-| `SamplingProcedureIsBlocked` |  | |  |  |
-| `SamplingProcedureInspSubset` |  | |  |  |
-| `SamplingProcedureMltplSamples` |  | |  |  |
-| `_InspSubsetFieldCombination` | | ✓ | | |
-| `_SamplingProcedureInspSubset` | | ✓ | | |
-| `_SamplingType` | | ✓ | | |
-| `_SamplingValuationMode` | | ✓ | | |
-| `_SamplingScheme` | | ✓ | | |
-| `_QualityControlChartType` | | ✓ | | |
-| `_SmplgProcedMltplSamples` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SamplingProcedure` | ✓ | |  |  |  |  |
+| `SamplingType` |  | |  |  |  |  |
+| `SamplingValuationMode` |  | |  |  |  |  |
+| `SamplingScheme` |  | |  |  |  |  |
+| `QualityControlChartType` |  | |  |  |  |  |
+| `SamplingProcedureIsBlocked` |  | |  |  |  |  |
+| `SamplingProcedureInspSubset` |  | |  |  |  |  |
+| `SamplingProcedureMltplSamples` |  | |  |  |  |  |
+| `_InspSubsetFieldCombination` | | ✓ | | | | |
+| `_SamplingProcedureInspSubset` | | ✓ | | | | |
+| `_SamplingType` | | ✓ | | | | |
+| `_SamplingValuationMode` | | ✓ | | | | |
+| `_SamplingScheme` | | ✓ | | | | |
+| `_QualityControlChartType` | | ✓ | | | | |
+| `_SmplgProcedMltplSamples` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `FirstName` |  | |  |  |
-| `MiddleName` |  | |  |  |
-| `LastName` |  | |  |  |
-| `FullName` |  | |  | `PersonFullName` |
-| `BirthName` |  | |  | `BusinessPartnerBirthName` |
-| `Initials` |  | |  |  |
-| `NativePreferredLanguage` |  | |  | `CorrespondenceLanguage` |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `_WorkAssignment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `FirstName` |  | |  |  |  |  |
+| `MiddleName` |  | |  |  |  |  |
+| `LastName` |  | |  |  |  |  |
+| `FullName` |  | |  | `PersonFullName` |  |  |
+| `BirthName` |  | |  | `BusinessPartnerBirthName` |  |  |
+| `Initials` |  | |  |  |  |  |
+| `NativePreferredLanguage` |  | |  | `CorrespondenceLanguage` |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `_WorkAssignment` | | ✓ | | | | |
 
 ## Associations
 

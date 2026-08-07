@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjBusSolnOrderLinkUUID` | ✓ | |  | `cast( EntProjBusSolnOrderLinkUUID as /s4ppm/tv_solo_link_uuid preserving type )` |
-| `ProjectUUID` |  | |  | `cast( ProjectUUID as /s4ppm/tv_project_uuid preserving type )` |
-| `EntProjectObjectLinkUUID` |  | |  | `cast( EntProjectObjectLinkUUID as /s4ppm/tv_objectlink_guid preserving type )` |
-| `BusinessSolutionOrder` |  | |  |  |
-| `BusinessSolutionOrderItem` |  | |  |  |
-| `_EntProjectProjectObjectLink` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjBusSolnOrderLinkUUID` | ✓ | |  | `cast( EntProjBusSolnOrderLinkUUID as /s4ppm/tv_solo_link_uuid preserving type )` |  |  |
+| `ProjectUUID` |  | |  | `cast( ProjectUUID as /s4ppm/tv_project_uuid preserving type )` |  |  |
+| `EntProjectObjectLinkUUID` |  | |  | `cast( EntProjectObjectLinkUUID as /s4ppm/tv_objectlink_guid preserving type )` |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |  |  |
+| `_EntProjectProjectObjectLink` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
 
 ## Associations
 

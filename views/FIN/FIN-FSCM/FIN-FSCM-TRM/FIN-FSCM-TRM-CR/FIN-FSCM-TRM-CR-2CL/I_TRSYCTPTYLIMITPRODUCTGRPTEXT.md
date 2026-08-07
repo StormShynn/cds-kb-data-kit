@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `LimitProductGroup` | ✓ | |  | `slpg` |
-| `LimitProductGroupName` |  | |  | `xlpg` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `LimitProductGroup` | ✓ | |  | `slpg` |  |  |
+| `LimitProductGroupName` |  | |  | `xlpg` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

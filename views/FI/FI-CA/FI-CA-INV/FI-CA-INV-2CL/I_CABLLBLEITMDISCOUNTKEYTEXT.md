@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABllbleItmDiscountKey` | ✓ | | `_tfk8117t` | `disckey` |
-| `Language` | ✓ | | `_tfk8117t` | `langu` |
-| `CABllbleItmDiscountKeyText` |  | |  | `cast(_tfk8117t.text as disckey_txt_gfn_kk preserving type )` |
-| `_CABllbleItmDiscountKey` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABllbleItmDiscountKey` | ✓ | | `_tfk8117t` | `disckey` |  |  |
+| `Language` | ✓ | | `_tfk8117t` | `langu` |  |  |
+| `CABllbleItmDiscountKeyText` |  | |  | `cast(_tfk8117t.text as disckey_txt_gfn_kk preserving type )` |  |  |
+| `_CABllbleItmDiscountKey` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

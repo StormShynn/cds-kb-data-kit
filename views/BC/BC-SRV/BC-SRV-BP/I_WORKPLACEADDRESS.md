@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |
-| `AddressID` |  | |  | `addrnumber` |
-| `BusinessPartner` |  | |  | `partner` |
-| `DestinationLocationCountry` |  | |  | `_phone[1: r3_user = '1' ].country` |
-| `PhoneNumber` |  | |  | `_phone[1: r3_user = '1' ].tel_number` |
-| `PhoneNumberExtension` |  | |  | `_phone[1: r3_user = '1' ].tel_extens` |
-| `NormalizedPhoneNumber` |  | |  | `_phone[1: r3_user = '1' ].telnr_long` |
-| `MblPhoneDestinationLocCountry` |  | |  | `_phone[1: r3_user = '3' ].country` |
-| `MobilePhoneNumber` |  | |  | `_phone[1: r3_user = '3' ].tel_number` |
-| `MblNormalizedPhoneNumber` |  | |  | `_phone[1: r3_user = '3' ].telnr_long` |
-| `FaxNumberCountry` |  | | `_CurrentDefaultFaxNumber` | `country` |
-| `FaxAreaCodeSubscriberNumber` |  | | `_CurrentDefaultFaxNumber` | `fax_number` |
-| `FaxExtensionNumber` |  | | `_CurrentDefaultFaxNumber` | `fax_extens` |
-| `InternationalFaxNumber` |  | | `_CurrentDefaultFaxNumber` | `faxnr_long` |
-| `DefaultEmailAddress` |  | |  | `_mail[1: flgdefault = 'X'].smtp_addr` |
-| `ValidityStartDate` |  | |  | `tstmp_to_dats(Mom.from_timestamp,'UTC', $session.client, 'NULL')` |
-| `ValidityEndDate` |  | |  | `tstmp_to_dats(Mom.to_timestamp,'UTC', $session.client, 'NULL')` |
-| `Building` |  | |  | `building` |
-| `RoomNumber` |  | |  | `roomnumber` |
-| `Floor` |  | |  | `floor` |
-| `FunctionalTitlename` |  | |  | `function` |
-| `Department` |  | |  | `department` |
-| `CommunicationMediumType` |  | |  | `deflt_comm` |
-| `PersonNumber` |  | |  | `persnumber` |
-| `AddressPersonID` |  | |  | `persnumber` |
-| `IsBusinessPurposeCompleted` |  | |  | `xpcpt` |
-| `AuthorizationGroup` |  | |  | `augrp` |
-| `_DestinationLocationCountry` | | ✓ | | |
-| `_MblPhoneDestinationLocCountry` | | ✓ | | |
-| `_FaxNumberCountry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |  |  |
+| `AddressID` |  | |  | `addrnumber` |  |  |
+| `BusinessPartner` |  | |  | `partner` |  |  |
+| `DestinationLocationCountry` |  | |  | `_phone[1: r3_user = '1' ].country` |  |  |
+| `PhoneNumber` |  | |  | `_phone[1: r3_user = '1' ].tel_number` |  |  |
+| `PhoneNumberExtension` |  | |  | `_phone[1: r3_user = '1' ].tel_extens` |  |  |
+| `NormalizedPhoneNumber` |  | |  | `_phone[1: r3_user = '1' ].telnr_long` |  |  |
+| `MblPhoneDestinationLocCountry` |  | |  | `_phone[1: r3_user = '3' ].country` |  |  |
+| `MobilePhoneNumber` |  | |  | `_phone[1: r3_user = '3' ].tel_number` |  |  |
+| `MblNormalizedPhoneNumber` |  | |  | `_phone[1: r3_user = '3' ].telnr_long` |  |  |
+| `FaxNumberCountry` |  | | `_CurrentDefaultFaxNumber` | `country` |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | | `_CurrentDefaultFaxNumber` | `fax_number` |  |  |
+| `FaxExtensionNumber` |  | | `_CurrentDefaultFaxNumber` | `fax_extens` |  |  |
+| `InternationalFaxNumber` |  | | `_CurrentDefaultFaxNumber` | `faxnr_long` |  |  |
+| `DefaultEmailAddress` |  | |  | `_mail[1: flgdefault = 'X'].smtp_addr` |  |  |
+| `ValidityStartDate` |  | |  | `tstmp_to_dats(Mom.from_timestamp,'UTC', $session.client, 'NULL')` |  |  |
+| `ValidityEndDate` |  | |  | `tstmp_to_dats(Mom.to_timestamp,'UTC', $session.client, 'NULL')` |  |  |
+| `Building` |  | |  | `building` |  |  |
+| `RoomNumber` |  | |  | `roomnumber` |  |  |
+| `Floor` |  | |  | `floor` |  |  |
+| `FunctionalTitlename` |  | |  | `function` |  |  |
+| `Department` |  | |  | `department` |  |  |
+| `CommunicationMediumType` |  | |  | `deflt_comm` |  |  |
+| `PersonNumber` |  | |  | `persnumber` |  |  |
+| `AddressPersonID` |  | |  | `persnumber` |  |  |
+| `IsBusinessPurposeCompleted` |  | |  | `xpcpt` |  |  |
+| `AuthorizationGroup` |  | |  | `augrp` |  |  |
+| `_DestinationLocationCountry` | | ✓ | | | | |
+| `_MblPhoneDestinationLocCountry` | | ✓ | | | | |
+| `_FaxNumberCountry` | | ✓ | | | | |
 
 ## Associations
 

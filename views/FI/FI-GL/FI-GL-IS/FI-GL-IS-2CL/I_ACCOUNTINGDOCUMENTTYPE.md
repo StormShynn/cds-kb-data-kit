@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingDocumentType` | ✓ | |  | `cast ( blart as farp_blart preserving type )` |
-| `AccountingDocumentNumberRange` |  | |  | `numkr` |
-| `AuthorizationGroup` |  | |  | `brgru` |
-| `ExchangeRateType` |  | |  | `kurst` |
-| `AllowedFinancialAccountTypes` |  | |  | `koars` |
-| `CustomerPostingIsAllowed` |  | |  | `cast( xkoad as fis_xkoad preserving type )` |
-| `SupplierPostingIsAllowed` |  | |  | `cast( xkoak as fis_xkoak preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocumentType` | ✓ | |  | `cast ( blart as farp_blart preserving type )` |  |  |
+| `AccountingDocumentNumberRange` |  | |  | `numkr` |  |  |
+| `AuthorizationGroup` |  | |  | `brgru` |  |  |
+| `ExchangeRateType` |  | |  | `kurst` |  |  |
+| `AllowedFinancialAccountTypes` |  | |  | `koars` |  |  |
+| `CustomerPostingIsAllowed` |  | |  | `cast( xkoad as fis_xkoad preserving type )` |  |  |
+| `SupplierPostingIsAllowed` |  | |  | `cast( xkoak as fis_xkoak preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

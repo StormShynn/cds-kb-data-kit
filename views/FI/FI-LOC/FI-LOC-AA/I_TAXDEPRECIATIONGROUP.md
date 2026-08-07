@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land` |
-| `TaxDepreciationGroup` | ✓ | |  | `glo_tax_depr_grp` |
-| `_Country` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land` |  |  |
+| `TaxDepreciationGroup` | ✓ | |  | `glo_tax_depr_grp` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

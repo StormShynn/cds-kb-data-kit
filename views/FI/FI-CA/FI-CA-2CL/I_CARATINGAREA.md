@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARatingArea` | ✓ | |  | `rating_area` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARatingArea` | ✓ | |  | `rating_area` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

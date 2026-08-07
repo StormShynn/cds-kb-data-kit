@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TimeSheetOvertimeCategory` | ✓ | |  | `overtimecat` |
-| `_TimeSheetOvertimeCatText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TimeSheetOvertimeCategory` | ✓ | |  | `overtimecat` |  |  |
+| `_TimeSheetOvertimeCatText` | | ✓ | | | | |
 
 ## Associations
 

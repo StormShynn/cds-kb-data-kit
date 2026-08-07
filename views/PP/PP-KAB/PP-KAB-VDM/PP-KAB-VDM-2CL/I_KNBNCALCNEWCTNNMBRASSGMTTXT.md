@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KnbnCalcNewCtnNmbrAssgmt` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as nknum)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `KnbnCalcNewCtnNmbrAssgmtName` |  | |  | `cast(ddtext as vdm_nmbrassngmnt_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KnbnCalcNmbrAssignment` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KnbnCalcNewCtnNmbrAssgmt` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as nknum)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `KnbnCalcNewCtnNmbrAssgmtName` |  | |  | `cast(ddtext as vdm_nmbrassngmnt_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KnbnCalcNmbrAssignment` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

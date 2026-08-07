@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `PurchaseOrderOutputIsAutomated` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 2 ) as mm_a_output_channel_type )` |
-| `POOutputChannelAutomnText` |  | |  | `ddtext` |
-| `_OutputType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `PurchaseOrderOutputIsAutomated` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 2 ) as mm_a_output_channel_type )` |  |  |
+| `POOutputChannelAutomnText` |  | |  | `ddtext` |  |  |
+| `_OutputType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

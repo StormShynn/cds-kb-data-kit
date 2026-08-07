@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
-| `BusinessArea` | ✓ | |  | `cast( _Source.BusinessArea as fincs_businessarea preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast( _Source.BusinessAreaName as fincs_description_text_30 preserving type )` |
-| `BusinessAreaName` |  | |  | `cast( _Source.BusinessAreaName as fincs_businessareaname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |  |  |
+| `BusinessArea` | ✓ | |  | `cast( _Source.BusinessArea as fincs_businessarea preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.BusinessAreaName as fincs_description_text_30 preserving type )` |  |  |
+| `BusinessAreaName` |  | |  | `cast( _Source.BusinessAreaName as fincs_businessareaname preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderID` | ✓ | | `_CnsldtnOrder` | `OrderID` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnOrder` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnOrderTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnOrderTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderID` | ✓ | | `_CnsldtnOrder` | `OrderID` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnOrder` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnOrderTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnOrderTextTP` |  |  |
 
 ## Source Code
 

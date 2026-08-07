@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SLCPartyIdentifierType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as /srmsmc/party_id_type preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SLCPartyIdentifierTypeName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_SLCPartyIdentifierType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SLCPartyIdentifierType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as /srmsmc/party_id_type preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SLCPartyIdentifierTypeName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SLCPartyIdentifierType` | | ✓ | | | | |
 
 ## Associations
 

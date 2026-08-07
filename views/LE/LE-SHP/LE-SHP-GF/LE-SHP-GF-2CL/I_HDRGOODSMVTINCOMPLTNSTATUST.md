@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HdrGoodsMvtIncompletionStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `HdrGoodsMvtIncompltnStatusDesc` |  | |  | `bezei` |
-| `_HdrGoodsMvtIncompletionStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HdrGoodsMvtIncompletionStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `HdrGoodsMvtIncompltnStatusDesc` |  | |  | `bezei` |  |  |
+| `_HdrGoodsMvtIncompletionStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

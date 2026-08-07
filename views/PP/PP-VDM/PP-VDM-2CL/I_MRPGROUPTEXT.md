@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPGroup` | ✓ | |  | `disgr` |
-| `MRPPlant` | ✓ | |  | `werks` |
-| `Language` | ✓ | |  | `spras` |
-| `MRPGroupName` |  | |  | `cast(txt.text40 as mrpgroupname preserving type)` |
-| `_MRPGroup` | | ✓ | | |
-| `_MRPPlant` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPGroup` | ✓ | |  | `disgr` |  |  |
+| `MRPPlant` | ✓ | |  | `werks` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MRPGroupName` |  | |  | `cast(txt.text40 as mrpgroupname preserving type)` |  |  |
+| `_MRPGroup` | | ✓ | | | | |
+| `_MRPPlant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

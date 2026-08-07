@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast ( _Source.kokrs as fincs_controllingarea preserving type )` |
-| `ConsolidationPrftCtrHierarchy` | ✓ | |  | `cast ( _Source.hryid as fincs_hryid_profitcenter )` |
-| `ValidityEndDate` | ✓ | |  | `cast ( _Source.hryvalto as fincs_validityenddate preserving type )` |
-| `ProfitCenter` | ✓ | |  | `cast ( _Source.prctr as fincs_profitcenter preserving type )` |
-| `PartnerProfitCenter` | ✓ | |  | `cast ( _Source.pprctr as fincs_partnerprofitcenter preserving type )` |
-| `ValidityStartDate` |  | |  | `cast ( _Source.hryvalfrom as fincs_validitystartdate preserving type )` |
-| `ConsolidationPrftCtrForElim` |  | |  | `cast ( _Source.prctr_eliminated as fincs_prftctrforelim preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast ( _Source.kokrs as fincs_controllingarea preserving type )` |  |  |
+| `ConsolidationPrftCtrHierarchy` | ✓ | |  | `cast ( _Source.hryid as fincs_hryid_profitcenter )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast ( _Source.hryvalto as fincs_validityenddate preserving type )` |  |  |
+| `ProfitCenter` | ✓ | |  | `cast ( _Source.prctr as fincs_profitcenter preserving type )` |  |  |
+| `PartnerProfitCenter` | ✓ | |  | `cast ( _Source.pprctr as fincs_partnerprofitcenter preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast ( _Source.hryvalfrom as fincs_validitystartdate preserving type )` |  |  |
+| `ConsolidationPrftCtrForElim` |  | |  | `cast ( _Source.prctr_eliminated as fincs_prftctrforelim preserving type )` |  |  |
 
 ## Source Code
 

@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |
-| `ChartOfAccounts` | ✓ | | `_Source` | `ChartOfAccounts` |
-| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |
-| `FromFiscalYearPeriod` | ✓ | | `_Source` | `FromFiscalYearPeriod` |
-| `ToFiscalYearPeriod` |  | | `_Source` | `ToFiscalYearPeriod` |
-| `CnsldtnFSItemMapping` |  | | `_Source` | `CnsldtnFSItemMapping` |
-| `CnsldtnFSItemMappingRevision` |  | |  | `}] _Source.CnsldtnFSItemMappingRevision` |
-| `ETag` |  | | `_Source` | `ETag` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |  |  |
+| `ChartOfAccounts` | ✓ | | `_Source` | `ChartOfAccounts` |  |  |
+| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |  |  |
+| `FromFiscalYearPeriod` | ✓ | | `_Source` | `FromFiscalYearPeriod` |  |  |
+| `ToFiscalYearPeriod` |  | | `_Source` | `ToFiscalYearPeriod` |  |  |
+| `CnsldtnFSItemMapping` |  | | `_Source` | `CnsldtnFSItemMapping` |  |  |
+| `CnsldtnFSItemMappingRevision` |  | | `_Source` | `CnsldtnFSItemMappingRevision` |  |  |
+| `ETag` |  | | `_Source` | `ETag` |  |  |
 
 ## Source Code
 

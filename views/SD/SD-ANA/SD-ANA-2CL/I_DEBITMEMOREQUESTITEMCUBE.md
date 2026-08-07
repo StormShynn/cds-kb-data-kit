@@ -29,78 +29,78 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DebitMemoRequest` | ✓ | |  | `cast(SDIA.SalesDocument as debit_memo_request preserving type)` |
-| `DebitMemoRequestItem` | ✓ | |  | `cast(SDIA.SalesDocumentItem as debit_memo_request_item preserving type)` |
-| `DebitMemoRequestType` |  | |  | `SalesDocumentType` |
-| `DebitMemoRequestItemCategory` |  | |  | `SalesDocumentItemCategory` |
-| `DebitMemoRequestItemType` |  | |  | `SalesDocumentItemType` |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |
-| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |
-| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  | `cast(SDIA.OrganizationDivision as organization_division preserving type)` |
-| `Division` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `PartnerCompany` |  | |  | `TradingPartner` |
-| `SoldToParty` |  | |  | `}] } SDIA.SoldToParty` |
-| `SDDocumentReason` |  | |  |  |
-| `DebitMemoRequestItemText` |  | |  | `SalesDocumentItemText` |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `MainItemPricingRefProduct` |  | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `BillOfMaterial` |  | |  |  |
-| `PropagatePrftbltySgmt2BOM` |  | |  |  |
-| `CostDeterminationIsRequired` |  | |  |  |
-| `TaxAmount` |  | |  |  |
-| `CostAmount` |  | |  |  |
-| `Subtotal1Amount` |  | |  |  |
-| `Subtotal2Amount` |  | |  |  |
-| `Subtotal3Amount` |  | |  |  |
-| `Subtotal4Amount` |  | |  |  |
-| `Subtotal5Amount` |  | |  |  |
-| `Subtotal6Amount` |  | |  |  |
-| `BillingCompanyCode` |  | |  |  |
-| `ItemIsBillingRelevant` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  | `cast(SDIA.ItemBillingBlockReason as billing_block_reason_item preserving type)` |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `SDProcessStatus` |  | |  | `cast(SDIA.SDProcessStatus as sd_doc_process_status preserving type)` |
-| `OrderRelatedBillingStatus` |  | |  |  |
-| `BillingBlockStatus` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
-| `NetAmount` |  | |  |  |
-| `DebitMemoRequestNetAmount` |  | |  | `cast( SDIA.NetAmount as debit_memo_request_net_amt preserving type )` |
-| `NetAmountInDisplayCurrency` |  | |  | `cast( currency_conversion( amount => SDIA.NetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as net_amount_in_dsp_crcy )` |
-| `DebitMemoRequestNetAmtInDC` |  | |  | `cast( currency_conversion( amount => SDIA.NetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as debit_memo_req_net_amt_in_dc )` |
-| `DebitMemoRequestQuantity` |  | |  |  |
-| `NumberOfDebitMemoRequestItems` |  | |  |  |
-| `_DebitMemoRequest` | | ✓ | | |
-| `_DebitMemoRequestType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  | `cast(SDIA.SalesDocument as debit_memo_request preserving type)` |  |  |
+| `DebitMemoRequestItem` | ✓ | |  | `cast(SDIA.SalesDocumentItem as debit_memo_request_item preserving type)` |  |  |
+| `DebitMemoRequestType` |  | |  | `SalesDocumentType` |  |  |
+| `DebitMemoRequestItemCategory` |  | |  | `SalesDocumentItemCategory` |  |  |
+| `DebitMemoRequestItemType` |  | |  | `SalesDocumentItemType` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |  |  |
+| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |  |  |
+| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  | `cast(SDIA.OrganizationDivision as organization_division preserving type)` |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  | `TradingPartner` |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `DebitMemoRequestItemText` |  | |  | `SalesDocumentItemText` |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `MainItemPricingRefProduct` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `BillOfMaterial` |  | |  |  |  |  |
+| `PropagatePrftbltySgmt2BOM` |  | |  |  |  |  |
+| `CostDeterminationIsRequired` |  | |  |  |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `CostAmount` |  | |  |  |  |  |
+| `Subtotal1Amount` |  | |  |  |  |  |
+| `Subtotal2Amount` |  | |  |  |  |  |
+| `Subtotal3Amount` |  | |  |  |  |  |
+| `Subtotal4Amount` |  | |  |  |  |  |
+| `Subtotal5Amount` |  | |  |  |  |  |
+| `Subtotal6Amount` |  | |  |  |  |  |
+| `BillingCompanyCode` |  | |  |  |  |  |
+| `ItemIsBillingRelevant` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  | `cast(SDIA.ItemBillingBlockReason as billing_block_reason_item preserving type)` |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  | `cast(SDIA.SDProcessStatus as sd_doc_process_status preserving type)` |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |  |  |
+| `BillingBlockStatus` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `DebitMemoRequestNetAmount` |  | |  | `cast( SDIA.NetAmount as debit_memo_request_net_amt preserving type )` |  |  |
+| `NetAmountInDisplayCurrency` |  | |  | `cast( currency_conversion( amount => SDIA.NetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as net_amount_in_dsp_crcy )` |  |  |
+| `DebitMemoRequestNetAmtInDC` |  | |  | `cast( currency_conversion( amount => SDIA.NetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as debit_memo_req_net_amt_in_dc )` |  |  |
+| `DebitMemoRequestQuantity` |  | |  |  |  |  |
+| `NumberOfDebitMemoRequestItems` |  | |  |  |  |  |
+| `_DebitMemoRequest` | | ✓ | | | | |
+| `_DebitMemoRequestType` | | ✓ | | | | |
 
 ## Associations
 

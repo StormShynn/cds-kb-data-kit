@@ -26,58 +26,58 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  | `BillOfOperationsType` |
-| `TaskListGroup` | ✓ | |  | `BillOfOperationsGroup` |
-| `TaskListGroupCounter` | ✓ | |  | `BillOfOperationsVariant` |
-| `TaskListDesc` |  | |  | `BillOfOperationsDesc` |
-| `MaintenanceStrategy` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ResponsiblePlannerGroup` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `TaskListStatus` |  | |  | `BillOfOperationsStatus` |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `OperationSystemCondition` |  | |  |  |
-| `ReferenceElement` |  | |  |  |
-| `TaskListUsage` |  | |  | `BillOfOperationsUsage` |
-| `InspSubsetFieldCombination` |  | |  |  |
-| `InspExternalNumberingOfValues` |  | |  |  |
-| `TechObjIsEquipOrFuncnlLoc` |  | |  | `cast( case I_BillOfOperations.BillOfOperationsType when 'E' then 'EAMS_EQUI' when 'T' then 'EAMS_FL' else '' end as eams_tec_obj_type_value )` |
-| `TechnicalObject` |  | |  | `}] cast( case I_BillOfOperations.BillOfOperationsType when 'E' then _TaskListEquip.Equipment when 'T' then _TaskListFuncnlLoc.FunctionalLocation else '' end as eams_tec_obj )` |
-| `TaskListObjectKey` |  | |  | `concat( concat( I_BillOfOperations.BillOfOperationsType, I_BillOfOperations.BillOfOperationsGroup ), I_BillOfOperations.BillOfOperationsVariant )` |
-| `SafetyRelevantObject` |  | |  | `cast( concat( concat( concat( I_BillOfOperations.BillOfOperationsType, I_BillOfOperations.BillOfOperationsGroup ), I_BillOfOperations.BillOfOperationsVariant ), '00000000' ) as eamws_obj_id )` |
-| `ControllingArea` |  | |  |  |
-| `BillOfOperationIsConfigurable` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `Equipment` |  | | `_TaskListEquip` | `Equipment` |
-| `FunctionalLocation` |  | | `_TaskListFuncnlLoc` | `FunctionalLocation` |
-| `FunctionalLocationLabelName` |  | | `_TaskListFuncnlLoc._FunctionalLocation._FunctionalLocationLabel` | `FunctionalLocationLabelName` |
-| `TaskListVersionCounter` |  | |  | `BOOInternalVersionCounter` |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `BillOfOperationsUsage` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `TaskListIsHierarchical` |  | |  |  |
-| `LastChangeDateTime` |  | |  | `BillOfOperationsDateTime` |
-| `_TaskListStatus` |  | |  | `_BillOfOperationsStatus` |
-| `_TaskListUsage` |  | |  | `_BillOfOperationsUsage` |
-| `LongTextLanguageCode` |  | |  |  |
-| `_TaskListType` | | ✓ | | |
-| `_PMReferenceElement` | | ✓ | | |
-| `_SafetyRelevance` | | ✓ | | |
-| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | |
-| `_TechnicalObject` | | ✓ | | |
-| `_MaintTaskListOperation` | | ✓ | | |
-| `_TaskListGroup` | | ✓ | | |
-| `_TaskListGroupCounter` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  | `BillOfOperationsType` |  |  |
+| `TaskListGroup` | ✓ | |  | `BillOfOperationsGroup` |  |  |
+| `TaskListGroupCounter` | ✓ | |  | `BillOfOperationsVariant` |  |  |
+| `TaskListDesc` |  | |  | `BillOfOperationsDesc` |  |  |
+| `MaintenanceStrategy` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `TaskListStatus` |  | |  | `BillOfOperationsStatus` |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `OperationSystemCondition` |  | |  |  |  |  |
+| `ReferenceElement` |  | |  |  |  |  |
+| `TaskListUsage` |  | |  | `BillOfOperationsUsage` |  |  |
+| `InspSubsetFieldCombination` |  | |  |  |  |  |
+| `InspExternalNumberingOfValues` |  | |  |  |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  | `cast( case I_BillOfOperations.BillOfOperationsType when 'E' then 'EAMS_EQUI' when 'T' then 'EAMS_FL' else '' end as eams_tec_obj_type_value )` |  |  |
+| `TechnicalObject` |  | |  | `cast( case I_BillOfOperations.BillOfOperationsType when 'E' then _TaskListEquip.Equipment when 'T' then _TaskListFuncnlLoc.FunctionalLocation else '' end as eams_tec_obj )` |  |  |
+| `TaskListObjectKey` |  | |  | `concat( concat( I_BillOfOperations.BillOfOperationsType, I_BillOfOperations.BillOfOperationsGroup ), I_BillOfOperations.BillOfOperationsVariant )` |  |  |
+| `SafetyRelevantObject` |  | |  | `cast( concat( concat( concat( I_BillOfOperations.BillOfOperationsType, I_BillOfOperations.BillOfOperationsGroup ), I_BillOfOperations.BillOfOperationsVariant ), '00000000' ) as eamws_obj_id )` |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `BillOfOperationIsConfigurable` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `Equipment` |  | | `_TaskListEquip` | `Equipment` |  |  |
+| `FunctionalLocation` |  | | `_TaskListFuncnlLoc` | `FunctionalLocation` |  |  |
+| `FunctionalLocationLabelName` |  | | `_TaskListFuncnlLoc._FunctionalLocation._FunctionalLocationLabel` | `FunctionalLocationLabelName` |  |  |
+| `TaskListVersionCounter` |  | |  | `BOOInternalVersionCounter` |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `BillOfOperationsUsage` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `TaskListIsHierarchical` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  | `BillOfOperationsDateTime` |  |  |
+| `_TaskListStatus` |  | |  | `_BillOfOperationsStatus` |  |  |
+| `_TaskListUsage` |  | |  | `_BillOfOperationsUsage` |  |  |
+| `LongTextLanguageCode` |  | |  |  |  |  |
+| `_TaskListType` | | ✓ | | | | |
+| `_PMReferenceElement` | | ✓ | | | | |
+| `_SafetyRelevance` | | ✓ | | | | |
+| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | | | |
+| `_TechnicalObject` | | ✓ | | | | |
+| `_MaintTaskListOperation` | | ✓ | | | | |
+| `_TaskListGroup` | | ✓ | | | | |
+| `_TaskListGroupCounter` | | ✓ | | | | |
 
 ## Associations
 

@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerPurchaseOrderType` | ✓ | |  | `bsark` |
-| `Language` | ✓ | |  | `spras` |
-| `CustomerPurchaseOrderTypeDesc` |  | |  | `cast(vtext as bezei20)` |
-| `_CustomerPurchaseOrderType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerPurchaseOrderType` | ✓ | |  | `bsark` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CustomerPurchaseOrderTypeDesc` |  | |  | `cast(vtext as bezei20)` |  |  |
+| `_CustomerPurchaseOrderType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectElementUUID` | ✓ | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `Fund` |  | |  |  |
-| `FundIsFixAssigned` |  | |  |  |
-| `FunctionalAreaIsFixAssigned` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `GrantIsFixAssigned` |  | |  |  |
-| `SponsoredProgram` |  | |  |  |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectElementUUID` | ✓ | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `FundIsFixAssigned` |  | |  |  |  |  |
+| `FunctionalAreaIsFixAssigned` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `GrantIsFixAssigned` |  | |  |  |  |  |
+| `SponsoredProgram` |  | |  |  |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
 
 ## Source Code
 

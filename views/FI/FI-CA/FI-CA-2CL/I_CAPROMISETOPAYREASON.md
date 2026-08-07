@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPromiseToPayReason` | ✓ | |  | `pprsc` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPromiseToPayReason` | ✓ | |  | `pprsc` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

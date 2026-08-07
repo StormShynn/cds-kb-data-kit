@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_CnsldtnFSItemText_2` | `Language` |
-| `ConsolidationChartOfAccounts` | ✓ | | `_CnsldtnFSItemText_2` | `ConsolidationChartOfAccounts` |
-| `ConsolidationReportingItem` | ✓ | |  | `cast ( _CnsldtnFSItemText_2.CnsldtnFinancialStatementItem as fincs_reportingitem preserving type )` |
-| `ConsolidationReportingItemText` |  | | `_CnsldtnFSItemText_2` | `CnsldtnFSItemText` |
-| `ConsolidationRptgItemMdmText` |  | | `_CnsldtnFSItemText_2` | `CnsldtnFSItemMediumText` |
-| `ConsolidationRptgItemLongText` |  | | `_CnsldtnFSItemText_2` | `CnsldtnFSItemLongText` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_CnsldtnFSItemText_2` | `Language` |  |  |
+| `ConsolidationChartOfAccounts` | ✓ | | `_CnsldtnFSItemText_2` | `ConsolidationChartOfAccounts` |  |  |
+| `ConsolidationReportingItem` | ✓ | |  | `cast ( _CnsldtnFSItemText_2.CnsldtnFinancialStatementItem as fincs_reportingitem preserving type )` |  |  |
+| `ConsolidationReportingItemText` |  | | `_CnsldtnFSItemText_2` | `CnsldtnFSItemText` |  |  |
+| `ConsolidationRptgItemMdmText` |  | | `_CnsldtnFSItemText_2` | `CnsldtnFSItemMediumText` |  |  |
+| `ConsolidationRptgItemLongText` |  | | `_CnsldtnFSItemText_2` | `CnsldtnFSItemLongText` |  |  |
 
 ## Source Code
 

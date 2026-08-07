@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentApprovalRule` | ✓ | |  |  |
-| `PaymentApprovalRuleItem` | ✓ | |  |  |
-| `PaymentApproverGroupNumber` | ✓ | |  |  |
-| `PaymentApproverGroup` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `_PaymentApprovalRule` | | ✓ | | |
-| `_PaymentApprovalRuleItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentApprovalRule` | ✓ | |  |  |  |  |
+| `PaymentApprovalRuleItem` | ✓ | |  |  |  |  |
+| `PaymentApproverGroupNumber` | ✓ | |  |  |  |  |
+| `PaymentApproverGroup` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `_PaymentApprovalRule` | | ✓ | | | | |
+| `_PaymentApprovalRuleItem` | | ✓ | | | | |
 
 ## Source Code
 

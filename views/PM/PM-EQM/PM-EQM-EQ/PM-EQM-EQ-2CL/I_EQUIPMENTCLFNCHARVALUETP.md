@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | |  |  |
-| `ClassType` | ✓ | |  |  |
-| `ClfnCharcValuePositionNumber` | ✓ | |  |  |
-| `CharcInternalID` | ✓ | |  |  |
-| `Characteristic` |  | |  |  |
-| `CharcDataType` |  | |  |  |
-| `ClassInternalID` |  | |  |  |
-| `KeyDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `CharcValueIntervalType` |  | |  |  |
-| `CharcValue` |  | |  |  |
-| `CharcFromNumericValue` |  | |  |  |
-| `CharcFromNumericValueUnit` |  | |  |  |
-| `CharcToNumericValue` |  | |  |  |
-| `CharcToNumericValueUnit` |  | |  |  |
-| `CharcFromDecimalValue` |  | |  |  |
-| `CharcToDecimalValue` |  | |  |  |
-| `CharcFromAmount` |  | |  |  |
-| `CharcToAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `CharcFromDate` |  | |  |  |
-| `CharcToDate` |  | |  |  |
-| `CharcFromTime` |  | |  |  |
-| `CharcToTime` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CharcMaintAuthGrp` |  | |  |  |
-| `ClassMaintAuthGrp` |  | |  |  |
-| `ClassClassfctnAuthGrp` |  | |  |  |
-| `_Characteristic` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |  |  |
+| `ClassType` | ✓ | |  |  |  |  |
+| `ClfnCharcValuePositionNumber` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `Characteristic` |  | |  |  |  |  |
+| `CharcDataType` |  | |  |  |  |  |
+| `ClassInternalID` |  | |  |  |  |  |
+| `KeyDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `CharcValueIntervalType` |  | |  |  |  |  |
+| `CharcValue` |  | |  |  |  |  |
+| `CharcFromNumericValue` |  | |  |  |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |  |  |
+| `CharcToNumericValue` |  | |  |  |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |  |  |
+| `CharcFromDecimalValue` |  | |  |  |  |  |
+| `CharcToDecimalValue` |  | |  |  |  |  |
+| `CharcFromAmount` |  | |  |  |  |  |
+| `CharcToAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `CharcFromDate` |  | |  |  |  |  |
+| `CharcToDate` |  | |  |  |  |  |
+| `CharcFromTime` |  | |  |  |  |  |
+| `CharcToTime` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CharcMaintAuthGrp` |  | |  |  |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |  |  |
+| `_Characteristic` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
 
 ## Source Code
 

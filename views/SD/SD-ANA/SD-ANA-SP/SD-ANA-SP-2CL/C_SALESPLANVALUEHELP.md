@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesPlanUUID` | ✓ | |  |  |
-| `SalesPlan` |  | |  |  |
-| `SalesPlanDescription` |  | |  |  |
-| `SalesPlanVersion` |  | |  |  |
-| `SalesPlanVersionDescription` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `UserDescription` |  | |  | `cast( _CreatedByUser.UserDescription as sp_username preserving type )` |
-| `SalesPlanStatus` |  | |  | `_SalesPlanStatus._Text[1: Language=$session.system_language].SalesPlanStatusDesc` |
-| `SalesPlanPurpose` |  | |  | `_SalesPlanPurposeText[1: Language=$session.system_language].SalesPlanPurposeDesc` |
-| `SalesPlanPeriodTypeName` |  | |  | `_SalesPlanPeriodTypeText[1: Language=$session.system_language].SalesPlanPeriodTypeName` |
-| `SalesPlanFrom` |  | |  |  |
-| `SalesPlanTo` |  | |  |  |
-| `SalesPlanCurrency` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesPlanUUID` | ✓ | |  |  |  |  |
+| `SalesPlan` |  | |  |  |  |  |
+| `SalesPlanDescription` |  | |  |  |  |  |
+| `SalesPlanVersion` |  | |  |  |  |  |
+| `SalesPlanVersionDescription` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `UserDescription` |  | |  | `cast( _CreatedByUser.UserDescription as sp_username preserving type )` |  |  |
+| `SalesPlanStatus` |  | |  | `_SalesPlanStatus._Text[1: Language=$session.system_language].SalesPlanStatusDesc` |  |  |
+| `SalesPlanPurpose` |  | |  | `_SalesPlanPurposeText[1: Language=$session.system_language].SalesPlanPurposeDesc` |  |  |
+| `SalesPlanPeriodTypeName` |  | |  | `_SalesPlanPeriodTypeText[1: Language=$session.system_language].SalesPlanPeriodTypeName` |  |  |
+| `SalesPlanFrom` |  | |  |  |  |  |
+| `SalesPlanTo` |  | |  |  |  |  |
+| `SalesPlanCurrency` |  | |  |  |  |  |
 
 ## Source Code
 

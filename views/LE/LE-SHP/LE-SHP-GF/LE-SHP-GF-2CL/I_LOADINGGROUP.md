@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LoadingGroup` | ✓ | |  | `ladgr` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoadingGroup` | ✓ | |  | `ladgr` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

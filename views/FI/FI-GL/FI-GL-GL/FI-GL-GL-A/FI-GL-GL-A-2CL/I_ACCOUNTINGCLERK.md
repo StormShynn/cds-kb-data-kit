@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs preserving type )` |
-| `AccountingClerk` | ✓ | |  | `cast (busab as farp_busab preserving type )` |
-| `AccountingClerkName` |  | |  | `cast (sname as farp_sname_001s preserving type )` |
-| `UserID` |  | |  | `cast( usnam as vdm_userid preserving type )` |
-| `_Company` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs preserving type )` |  |  |
+| `AccountingClerk` | ✓ | |  | `cast (busab as farp_busab preserving type )` |  |  |
+| `AccountingClerkName` |  | |  | `cast (sname as farp_sname_001s preserving type )` |  |  |
+| `UserID` |  | |  | `cast( usnam as vdm_userid preserving type )` |  |  |
+| `_Company` | | ✓ | | | | |
 
 ## Associations
 

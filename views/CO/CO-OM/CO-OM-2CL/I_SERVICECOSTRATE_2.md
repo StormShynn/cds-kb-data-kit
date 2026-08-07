@@ -28,51 +28,51 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingCostRateUUID` | ✓ | |  |  |
-| `Ledger` |  | | `_Rate` | `Ledger` |
-| `CurrencyRole` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ActivityType` |  | |  |  |
-| `IsIntercompanyRate` |  | |  |  |
-| `ReceivingCompanyCode` |  | |  |  |
-| `ServiceCostLevel` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |
-| `WBSElementExternalID` |  | |  | `WBSElementExternalID_2` |
-| `WorkItem` |  | |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |
-| `ValidityStartFiscalYear` |  | |  |  |
-| `ValidityStartFiscalPeriod` |  | |  |  |
-| `ValidityStartFiscalYearPeriod` |  | |  | `cast((concat( ValidityStartFiscalYear, ValidityStartFiscalPeriod )) as fins_fyearperiod)` |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndFiscalYear` |  | |  |  |
-| `ValidityEndFiscalPeriod` |  | |  |  |
-| `ValidityEndFiscalYearPeriod` |  | |  | `cast((concat( ValidityEndFiscalYear, ValidityEndFiscalPeriod )) as fins_fyearperiod)` |
-| `ValidityEndDate` |  | |  |  |
-| `CostCtrActivityTypeQtyUnit` |  | |  |  |
-| `Currency` |  | |  |  |
-| `CostRateVarblAmount` |  | |  | `cast(CostRateTotalAmount - CostRateFixedAmount as fco_rate_varbl_amount)` |
-| `CostRateScaleFactor` |  | |  |  |
-| `LedgerForAuthorization` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_ReceivingCompanyCode` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CurrentCostCenter` | | ✓ | | |
-| `_CostCtrActivityType` | | ✓ | | |
-| `_CurrentCostCtrActyType` | | ✓ | | |
-| `_WorkItem` | | ✓ | | |
-| `_ServiceCostLevel` | | ✓ | | |
-| `_CurrentServiceCostLevel` | | ✓ | | |
-| `_Employment` | | ✓ | | |
-| `_PersonWorkAgreement` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_WBSElementInternalID` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingCostRateUUID` | ✓ | |  |  |  |  |
+| `Ledger` |  | | `_Rate` | `Ledger` |  |  |
+| `CurrencyRole` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ActivityType` |  | |  |  |  |  |
+| `IsIntercompanyRate` |  | |  |  |  |  |
+| `ReceivingCompanyCode` |  | |  |  |  |  |
+| `ServiceCostLevel` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |  |  |
+| `WBSElementExternalID` |  | |  | `WBSElementExternalID_2` |  |  |
+| `WorkItem` |  | |  |  |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |  |  |
+| `ValidityStartFiscalYearPeriod` |  | |  | `cast((concat( ValidityStartFiscalYear, ValidityStartFiscalPeriod )) as fins_fyearperiod)` |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |  |  |
+| `ValidityEndFiscalYearPeriod` |  | |  | `cast((concat( ValidityEndFiscalYear, ValidityEndFiscalPeriod )) as fins_fyearperiod)` |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `CostRateVarblAmount` |  | |  | `cast(CostRateTotalAmount - CostRateFixedAmount as fco_rate_varbl_amount)` |  |  |
+| `CostRateScaleFactor` |  | |  |  |  |  |
+| `LedgerForAuthorization` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ReceivingCompanyCode` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
+| `_CurrentCostCtrActyType` | | ✓ | | | | |
+| `_WorkItem` | | ✓ | | | | |
+| `_ServiceCostLevel` | | ✓ | | | | |
+| `_CurrentServiceCostLevel` | | ✓ | | | | |
+| `_Employment` | | ✓ | | | | |
+| `_PersonWorkAgreement` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementInternalID` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
 
 ## Associations
 

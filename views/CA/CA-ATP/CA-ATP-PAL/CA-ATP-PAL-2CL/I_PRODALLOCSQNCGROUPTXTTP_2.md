@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdAllocSequenceGroupUUID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ProdAllocSequenceGroupDesc` |  | |  |  |
-| `ProductAllocationSequenceUUID` |  | |  |  |
-| `_ProdAllocationSequenceTP` | | ✓ | | |
-| `_ProdAllocSqncGroupTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdAllocSequenceGroupUUID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ProdAllocSequenceGroupDesc` |  | |  |  |  |  |
+| `ProductAllocationSequenceUUID` |  | |  |  |  |  |
+| `_ProdAllocationSequenceTP` | | ✓ | | | | |
+| `_ProdAllocSqncGroupTP` | | ✓ | | | | |
 
 ## Source Code
 

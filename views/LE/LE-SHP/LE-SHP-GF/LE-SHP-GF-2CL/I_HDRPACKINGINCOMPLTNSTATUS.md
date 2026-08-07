@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HeaderPackingIncompletionSts` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as uvpak_uk preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HeaderPackingIncompletionSts` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as uvpak_uk preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

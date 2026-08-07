@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HeaderPickgIncompletionStatus` | ✓ | |  | `cast( left(dd07l.domvalue_l, 1 ) as uvpik_uk preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HeaderPickgIncompletionStatus` | ✓ | |  | `cast( left(dd07l.domvalue_l, 1 ) as uvpik_uk preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

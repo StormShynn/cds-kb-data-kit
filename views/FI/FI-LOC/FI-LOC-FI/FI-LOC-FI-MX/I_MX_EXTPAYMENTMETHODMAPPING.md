@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentMethod` | ✓ | |  | `zlsch` |
-| `MX_ExternalPaymentMethod` |  | |  | `ext_payt_meth` |
-| `MX_ExtPaymentMethodDescription` |  | |  | `_Text[1:Language = $session.system_language].DomainText` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentMethod` | ✓ | |  | `zlsch` |  |  |
+| `MX_ExternalPaymentMethod` |  | |  | `ext_payt_meth` |  |  |
+| `MX_ExtPaymentMethodDescription` |  | |  | `_Text[1:Language = $session.system_language].DomainText` |  |  |
 
 ## Associations
 

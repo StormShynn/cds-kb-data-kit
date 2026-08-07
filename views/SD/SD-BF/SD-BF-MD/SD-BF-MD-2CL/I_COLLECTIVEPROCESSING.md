@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CollectiveProcessing` | ✓ | |  | `sammg` |
-| `CollectiveProcessingType` |  | |  | `smart` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `uzeit` |
-| `NumberOfCreatedDocuments` |  | |  | `vbnum` |
-| `NumberOfErrors` |  | |  | `ernum` |
-| `HeaderGrossWeight` |  | |  | `brgew` |
-| `HeaderWeightUnit` |  | |  | `gewei` |
-| `HeaderVolume` |  | |  | `volum` |
-| `HeaderVolumeUnit` |  | |  | `voleh` |
-| `ShippingPoint` |  | |  | `vstel` |
-| `ShippingPointName` |  | |  | `vtext` |
-| `MaximumLaborCapacity` |  | |  | `maxzt` |
-| `ABAPProgramName` |  | |  | `programm` |
-| `ABAPProgramVariantName` |  | |  | `selset` |
-| `HasBeenProcessedInBackground` |  | |  | `batch` |
-| `NumberOfCreatedDocumentItems` |  | |  | `anzlp` |
-| `NumberOfProcessedDocumentItems` |  | |  | `anzgp` |
-| `NumberOfProcessedDueIndexes` |  | |  | `anzgi` |
-| `PickingWaveProfile` |  | |  | `kwpro` |
-| `ShiftDefinition` |  | |  | `kaptp` |
-| `Warehouse` |  | |  | `lgnum` |
-| `CollectiveProcessingRunUUID` |  | |  | `collectiverun_uuid` |
-| `_CollectiveProcessingDocument` | | ✓ | | |
-| `_HeaderWeightUnit` | | ✓ | | |
-| `_HeaderVolumeUnit` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
-| `_Warehouse` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollectiveProcessing` | ✓ | |  | `sammg` |  |  |
+| `CollectiveProcessingType` |  | |  | `smart` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `uzeit` |  |  |
+| `NumberOfCreatedDocuments` |  | |  | `vbnum` |  |  |
+| `NumberOfErrors` |  | |  | `ernum` |  |  |
+| `HeaderGrossWeight` |  | |  | `brgew` |  |  |
+| `HeaderWeightUnit` |  | |  | `gewei` |  |  |
+| `HeaderVolume` |  | |  | `volum` |  |  |
+| `HeaderVolumeUnit` |  | |  | `voleh` |  |  |
+| `ShippingPoint` |  | |  | `vstel` |  |  |
+| `ShippingPointName` |  | |  | `vtext` |  |  |
+| `MaximumLaborCapacity` |  | |  | `maxzt` |  |  |
+| `ABAPProgramName` |  | |  | `programm` |  |  |
+| `ABAPProgramVariantName` |  | |  | `selset` |  |  |
+| `HasBeenProcessedInBackground` |  | |  | `batch` |  |  |
+| `NumberOfCreatedDocumentItems` |  | |  | `anzlp` |  |  |
+| `NumberOfProcessedDocumentItems` |  | |  | `anzgp` |  |  |
+| `NumberOfProcessedDueIndexes` |  | |  | `anzgi` |  |  |
+| `PickingWaveProfile` |  | |  | `kwpro` |  |  |
+| `ShiftDefinition` |  | |  | `kaptp` |  |  |
+| `Warehouse` |  | |  | `lgnum` |  |  |
+| `CollectiveProcessingRunUUID` |  | |  | `collectiverun_uuid` |  |  |
+| `_CollectiveProcessingDocument` | | ✓ | | | | |
+| `_HeaderWeightUnit` | | ✓ | | | | |
+| `_HeaderVolumeUnit` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_Warehouse` | | ✓ | | | | |
 
 ## Associations
 

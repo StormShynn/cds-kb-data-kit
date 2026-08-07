@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectElement` | ✓ | |  |  |
-| `ProjectElementUUID` |  | |  |  |
-| `ProjectElementDescription` |  | |  |  |
-| `Project` |  | | `_Project` | `Project` |
-| `ProjectDescription` |  | | `_Project` | `ProjectDescription` |
-| `ProcessingStatus` |  | |  |  |
-| `ProcessingStatusText` |  | | `_ProcessingStatusText` | `ProcessingStatusText` |
-| `WBSElementInternalID` |  | |  |  |
-| `ResponsibleCostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ParentObjectUUID` |  | |  |  |
-| `IsProjectMilestone` |  | |  |  |
-| `_EnterpriseProject` |  | |  | `_Project` |
-| `_ProcessingStatusText` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectElement` | ✓ | |  |  |  |  |
+| `ProjectElementUUID` |  | |  |  |  |  |
+| `ProjectElementDescription` |  | |  |  |  |  |
+| `Project` |  | | `_Project` | `Project` |  |  |
+| `ProjectDescription` |  | | `_Project` | `ProjectDescription` |  |  |
+| `ProcessingStatus` |  | |  |  |  |  |
+| `ProcessingStatusText` |  | | `_ProcessingStatusText` | `ProcessingStatusText` |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `ResponsibleCostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ParentObjectUUID` |  | |  |  |  |  |
+| `IsProjectMilestone` |  | |  |  |  |  |
+| `_EnterpriseProject` |  | |  | `_Project` |  |  |
+| `_ProcessingStatusText` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Associations
 

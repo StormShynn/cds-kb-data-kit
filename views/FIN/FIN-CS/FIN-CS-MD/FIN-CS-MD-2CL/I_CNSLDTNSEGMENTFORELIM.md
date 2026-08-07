@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Segment` | ✓ | |  |  |
-| `_Text_2` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_SegmentHierNode_2` | | ✓ | | |
-| `_TmprlNde` | | ✓ | | |
-| `_SegmentHierNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Segment` | ✓ | |  |  |  |  |
+| `_Text_2` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_SegmentHierNode_2` | | ✓ | | | | |
+| `_TmprlNde` | | ✓ | | | | |
+| `_SegmentHierNode` | | ✓ | | | | |
 
 ## Associations
 

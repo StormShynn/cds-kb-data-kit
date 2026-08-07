@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SystemStatus` | ✓ | |  | `istat` |
-| `StatusIsHidden` |  | |  | `nodis` |
-| `_SystemStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SystemStatus` | ✓ | |  | `istat` |  |  |
+| `StatusIsHidden` |  | |  | `nodis` |  |  |
+| `_SystemStatusText` | | ✓ | | | | |
 
 ## Associations
 

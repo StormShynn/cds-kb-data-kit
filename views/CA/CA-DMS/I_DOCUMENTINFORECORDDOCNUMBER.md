@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
-| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` |
-| `_Text` | | ✓ | | |
-| `_DocType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_DocType` | | ✓ | | | | |
 
 ## Associations
 

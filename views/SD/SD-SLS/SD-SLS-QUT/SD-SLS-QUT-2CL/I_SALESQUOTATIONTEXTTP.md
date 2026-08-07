@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesQuotation` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LongTextID` | ✓ | |  |  |
-| `LongTextIDForEdit` |  | |  |  |
-| `LanguageForEdit` |  | |  |  |
-| `LongText` |  | |  |  |
-| `SalesQuotationType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_SalesQuotation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LongTextID` | ✓ | |  |  |  |  |
+| `LongTextIDForEdit` |  | |  |  |  |  |
+| `LanguageForEdit` |  | |  |  |  |  |
+| `LongText` |  | |  |  |  |  |
+| `SalesQuotationType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_SalesQuotation` | | ✓ | | | | |
 
 ## Source Code
 

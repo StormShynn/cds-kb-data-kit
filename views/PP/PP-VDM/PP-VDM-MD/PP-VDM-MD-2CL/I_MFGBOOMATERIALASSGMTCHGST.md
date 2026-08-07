@@ -30,48 +30,48 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `Material` |
-| `Plant` | ✓ | |  |  |
-| `BillOfOperationsType` | ✓ | |  |  |
-| `BillOfOperationsGroup` | ✓ | |  |  |
-| `BillOfOperationsVariant` | ✓ | |  |  |
-| `BOOToMaterialInternalID` | ✓ | |  |  |
-| `BOOMatlInternalVersionCounter` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `IsImplicitlyDeleted` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementInternalID_2` |  | |  |  |
-| `BOOSearchText` |  | |  |  |
-| `_BillOfOperations` | | ✓ | | |
-| `_BOOMaterialAssignment` | | ✓ | | |
-| `_WBSElementInternal` | | ✓ | | |
-| `_WBSElementBasic` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductPlant2` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
-| `_CustomerCompanyByPlant` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_ChangeMaster` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `Material` |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `BillOfOperationsType` | ✓ | |  |  |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |  |  |
+| `BOOToMaterialInternalID` | ✓ | |  |  |  |  |
+| `BOOMatlInternalVersionCounter` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementInternalID_2` |  | |  |  |  |  |
+| `BOOSearchText` |  | |  |  |  |  |
+| `_BillOfOperations` | | ✓ | | | | |
+| `_BOOMaterialAssignment` | | ✓ | | | | |
+| `_WBSElementInternal` | | ✓ | | | | |
+| `_WBSElementBasic` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductPlant2` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
+| `_CustomerCompanyByPlant` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_ChangeMaster` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
 
 ## Associations
 

@@ -33,20 +33,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UUID` | ✓ | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderDate` |  | |  |  |
-| `CustomerName` |  | |  |  |
-| `LocalCreatedBy` |  | |  |  |
-| `LocalCreatedAt` |  | |  |  |
-| `LocalLastChangedBy` |  | |  |  |
-| `LocalLastChangedAt` |  | |  |  |
-| `LastChangedAt` |  | |  |  |
-| `Status` |  | |  |  |
-| `_BaseEntity` | | ✓ | | |
-| `_OrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UUID` | ✓ | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderDate` |  | |  |  |  |  |
+| `CustomerName` |  | |  |  |  |  |
+| `LocalCreatedBy` |  | |  |  |  |  |
+| `LocalCreatedAt` |  | |  |  |  |  |
+| `LocalLastChangedBy` |  | |  |  |  |  |
+| `LocalLastChangedAt` |  | |  |  |  |  |
+| `LastChangedAt` |  | |  |  |  |  |
+| `Status` |  | |  |  |  |  |
+| `_BaseEntity` | | ✓ | | | | |
+| `_OrderItem` | | ✓ | | | | |
 
 ## Associations
 

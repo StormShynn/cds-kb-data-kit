@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomFieldID` | ✓ | |  | `name` |
-| `Code` | ✓ | |  | `code` |
-| `IsDisabled` |  | |  | `is_disabled` |
-| `_CodeListDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomFieldID` | ✓ | |  | `name` |  |  |
+| `Code` | ✓ | |  | `code` |  |  |
+| `IsDisabled` |  | |  | `is_disabled` |  |  |
+| `_CodeListDescription` | | ✓ | | | | |
 
 ## Associations
 

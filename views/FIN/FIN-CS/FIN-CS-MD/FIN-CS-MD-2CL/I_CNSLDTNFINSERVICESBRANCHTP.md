@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialServicesBranch` | ✓ | | `_Source` | `FinancialServicesBranch` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinSrvcsBranchTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFinSrvcsBranchTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialServicesBranch` | ✓ | | `_Source` | `FinancialServicesBranch` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFinSrvcsBranchTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFinSrvcsBranchTextTP` |  |  |
 
 ## Source Code
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADocContainerDocItemRefType` | ✓ | |  | `cast( left( dd07t.domvalue_l,2 ) as oprty_dc_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `CADocContainerDocItmRefTypeTxt` |  | |  | `cast( dd07t.ddtext as oprty_dc_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADocContainerDocItemRefType` | ✓ | |  | `cast( left( dd07t.domvalue_l,2 ) as oprty_dc_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `CADocContainerDocItmRefTypeTxt` |  | |  | `cast( dd07t.ddtext as oprty_dc_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

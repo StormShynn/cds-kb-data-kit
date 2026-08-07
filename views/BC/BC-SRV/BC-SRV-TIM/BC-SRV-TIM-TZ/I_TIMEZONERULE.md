@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TimeZoneRule` | ✓ | |  | `zonerule` |
-| `UTCTimeZoneTimeDiff` |  | |  | `utcdiff` |
-| `UTCDifferenceSign` |  | |  | `utcsign` |
-| `TimeZoneRuleIsActive` |  | |  | `flagactive` |
-| `_TimeZoneRuleText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TimeZoneRule` | ✓ | |  | `zonerule` |  |  |
+| `UTCTimeZoneTimeDiff` |  | |  | `utcdiff` |  |  |
+| `UTCDifferenceSign` |  | |  | `utcsign` |  |  |
+| `TimeZoneRuleIsActive` |  | |  | `flagactive` |  |  |
+| `_TimeZoneRuleText` | | ✓ | | | | |
 
 ## Associations
 

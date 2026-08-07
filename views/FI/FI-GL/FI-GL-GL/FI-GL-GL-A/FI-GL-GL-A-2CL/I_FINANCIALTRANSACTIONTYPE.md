@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialTransactionType` | ✓ | |  | `cast( trtyp as fis_rmvct preserving type )` |
-| `FinancialTransactionTypeGroup` |  | |  | `cast( ttgrp as fis_rmvct_grp preserving type )` |
-| `CarryForwardTransactionType` |  | |  | `ttcfo` |
-| `TransactionTypeIsDerived` |  | |  | `toind` |
-| `TransacTypeTotalsFormulaText` |  | |  | `sumru` |
-| `BalanceCarryForwardIsFixed` |  | |  | `cfind` |
-| `AcquisitionIsCurrentYearOnly` |  | |  | `cyind` |
-| `BrkdwnByYearsIsNotApplicable` |  | |  | `cydbi` |
-| `RetirementTransactionType` |  | |  | `ttret` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialTransactionType` | ✓ | |  | `cast( trtyp as fis_rmvct preserving type )` |  |  |
+| `FinancialTransactionTypeGroup` |  | |  | `cast( ttgrp as fis_rmvct_grp preserving type )` |  |  |
+| `CarryForwardTransactionType` |  | |  | `ttcfo` |  |  |
+| `TransactionTypeIsDerived` |  | |  | `toind` |  |  |
+| `TransacTypeTotalsFormulaText` |  | |  | `sumru` |  |  |
+| `BalanceCarryForwardIsFixed` |  | |  | `cfind` |  |  |
+| `AcquisitionIsCurrentYearOnly` |  | |  | `cyind` |  |  |
+| `BrkdwnByYearsIsNotApplicable` |  | |  | `cydbi` |  |  |
+| `RetirementTransactionType` |  | |  | `ttret` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

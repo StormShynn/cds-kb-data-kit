@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionCatalog` | ✓ | |  | `katalogart` |
-| `InspSpecAdditionalCatalogText` |  | |  | `katalogtxt` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionCatalog` | ✓ | |  | `katalogart` |  |  |
+| `InspSpecAdditionalCatalogText` |  | |  | `katalogtxt` |  |  |
 
 ## Source Code
 

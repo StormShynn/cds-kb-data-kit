@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgBolloTaxPostStatus` | ✓ | |  | `cast ( cast ( substring( dd07l.domvalue_l,1,1 ) as abap.char( 1 ) ) as inv_bollotax_kk)` |
-| `_CAInvcgBolloTaxPostStatText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgBolloTaxPostStatus` | ✓ | |  | `cast ( cast ( substring( dd07l.domvalue_l,1,1 ) as abap.char( 1 ) ) as inv_bollotax_kk)` |  |  |
+| `_CAInvcgBolloTaxPostStatText` | | ✓ | | | | |
 
 ## Associations
 

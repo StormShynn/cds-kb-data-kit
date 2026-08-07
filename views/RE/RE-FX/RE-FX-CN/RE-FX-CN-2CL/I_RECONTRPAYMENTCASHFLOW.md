@@ -29,126 +29,126 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PayRelatedCashFlowRecordUUID` | ✓ | |  |  |
-| `REConditionUUID` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `REDocumentReferenceUUID` |  | |  |  |
-| `InternalRealEstateNumber` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `RESourceOfCreation` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `RESourceOfChange` |  | |  |  |
-| `CalculationPeriodStartDate` |  | |  |  |
-| `CalcPeriodStartDateIsExclusive` |  | |  | `case when CalcPeriodStartDateIsExclusive = '0' then cast ( ' ' as recdvdmcalcstartexcl ) else cast ( 'X' as recdvdmcalcstartexcl ) end` |
-| `CalcPeriodStartDateIsMonthEnd` |  | |  |  |
-| `CalculationPeriodEndDate` |  | |  |  |
-| `CalcPeriodEndDateIsInclusive` |  | |  | `case when CalcPeriodEndDateIsInclusive = '0' then cast ( ' ' as recdvdmcalcendincl ) else cast ( 'X' as recdvdmcalcendincl ) end` |
-| `CalcPeriodEndDateIsMonthEnd` |  | |  |  |
-| `CalculationDate` |  | |  |  |
-| `CalcDateIsAsEndDateInclusive` |  | |  | `case when CalcDateIsAsEndDateInclusive = '0' then cast ( ' ' as recdvdmcalcendincl ) else cast ( 'X' as recdvdmcalcendincl ) end` |
-| `CalculationDateIsMonthEnd` |  | |  |  |
-| `PaymentDueDate` |  | |  |  |
-| `DueDateIsMonthEnd` |  | |  |  |
-| `NextWorkingDateForPayDueDate` |  | |  |  |
-| `NumberOfDays` |  | |  |  |
-| `NumberOfCalculationDays` |  | |  |  |
-| `InterestBaseDaysMethod` |  | |  |  |
-| `InterestCalculationMethod` |  | |  |  |
-| `REBeginOfPeriodDate` |  | |  |  |
-| `PeriodStartDateIsExclusive` |  | |  | `case when PeriodStartDateIsExclusive = '0' then cast ( ' ' as recdvdmperiodstartexcl ) else cast ( 'X' as recdvdmperiodstartexcl ) end` |
-| `PeriodStartDateIsMonthEnd` |  | |  |  |
-| `REEndOfPeriodDate` |  | |  |  |
-| `PeriodEndDateIsInclusive` |  | |  | `case when PeriodEndDateIsInclusive = '0' then cast ( ' ' as recdvdmperiodendincl ) else cast ( 'X' as recdvdmperiodendincl ) end` |
-| `PeriodEndDateIsMonthEnd` |  | |  |  |
-| `REConditionCurrency` |  | |  |  |
-| `REUnitPrice` |  | |  |  |
-| `REProRataMethod` |  | |  |  |
-| `REPaymentStatus` |  | |  |  |
-| `CashFlowConditionGroup` |  | |  |  |
-| `RECashFlowPositionAmount` |  | |  | `case when _REFlowType.DebitCreditCode = 'H' then RECashFlowPositionAmount * ( -1 ) else RECashFlowPositionAmount end` |
-| `RETaxType` |  | |  |  |
-| `RETaxGroup` |  | |  | `TaxGroup` |
-| `TaxJurisdiction` |  | |  |  |
-| `REIsConditionGrossAmount` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `CashFlowItemOrigin` |  | |  |  |
-| `REFlowType` |  | |  |  |
-| `REOriginalFlowType` |  | |  |  |
-| `RERelshpOriglToFlowType` |  | |  |  |
-| `CashFlowPostingStatus` |  | |  |  |
-| `PlanningLevel` |  | |  |  |
-| `REHasEnteredCashMgmtForecast` |  | |  |  |
-| `IsToBeArchived` |  | |  |  |
-| `REOriglDueDate` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `REPartnerStatusObject` |  | |  |  |
-| `REConditionType` |  | |  |  |
-| `REPostingTerm` |  | |  |  |
-| `RERhythmTerm` |  | |  |  |
-| `REAdjustmentNumber` |  | |  |  |
-| `REOrgAssignmentTerm` |  | |  |  |
-| `RESalesTerm` |  | |  |  |
-| `REPeakSalesTerm` |  | |  |  |
-| `REWithholdingTaxTerm` |  | |  |  |
-| `REOriglExDueDate` |  | |  |  |
-| `REAdvancePaymentRelevantStatus` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `REReversalForUUID` |  | |  |  |
-| `REReversalByUUID` |  | |  |  |
-| `REFollowUpPostingUUID` |  | |  |  |
-| `REBookedFlowType` |  | |  |  |
-| `RERelshpBookedToFlowType` |  | |  |  |
-| `RETaxCalcDate` |  | |  |  |
-| `REModifiedDueDate` |  | |  |  |
-| `RECalcDueDate` |  | |  |  |
-| `SplitCashFlowRecordUUID` |  | |  |  |
-| `RecordIsBasisForSplit` |  | |  |  |
-| `REConditionSplitNumber` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CashPlanningGroup` |  | |  |  |
-| `RECurrencyTranslationRule` |  | |  |  |
-| `ExchangeRate` |  | |  | `cast( ExchangeRate as kurrf_not_converted preserving type )` |
-| `REOriginExchangeRate` |  | |  | `cast( REOriginExchangeRate as kurrf_not_converted preserving type )` |
-| `REIsPostInConditionCurrency` |  | |  |  |
-| `REPlndTranslationDate` |  | |  |  |
-| `REActlTranslationDate` |  | |  |  |
-| `REOriglActlTranslationDate` |  | |  |  |
-| `REIsTranslationDateFrmCashFlow` |  | |  |  |
-| `REStatusObject` |  | |  |  |
-| `_CostCenterCalculation` | | ✓ | | |
-| `_WBSElementCalculation` | | ✓ | | |
-| `_InternalOrderCalculation` | | ✓ | | |
-| `_REContract` | | ✓ | | |
-| `_RECondition` | | ✓ | | |
-| `_REConditionType` | | ✓ | | |
-| `_REDocumentHeader` | | ✓ | | |
-| `_RERhythmTerm` | | ✓ | | |
-| `_REPostingTerm` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_ChangedByUser` | | ✓ | | |
-| `_RETaxType` | | ✓ | | |
-| `_RETaxGroup` | | ✓ | | |
-| `_TaxCountry` | | ✓ | | |
-| `_REFlowType` | | ✓ | | |
-| `_REOriglFlowType` | | ✓ | | |
-| `_PlanningLevel` | | ✓ | | |
-| `_REProRateMethod` | | ✓ | | |
-| `_RECashFlowItemOrigin` | | ✓ | | |
-| `_RERelshpOriglToFlowType` | | ✓ | | |
-| `_RECashFlowPostingStatus` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_REAdvancePaytRlvtStatus` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_REBookedFlowType` | | ✓ | | |
-| `_RERelshpBookedToFlowType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PayRelatedCashFlowRecordUUID` | ✓ | |  |  |  |  |
+| `REConditionUUID` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `REDocumentReferenceUUID` |  | |  |  |  |  |
+| `InternalRealEstateNumber` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `RESourceOfCreation` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `RESourceOfChange` |  | |  |  |  |  |
+| `CalculationPeriodStartDate` |  | |  |  |  |  |
+| `CalcPeriodStartDateIsExclusive` |  | |  | `case when CalcPeriodStartDateIsExclusive = '0' then cast ( ' ' as recdvdmcalcstartexcl ) else cast ( 'X' as recdvdmcalcstartexcl ) end` |  |  |
+| `CalcPeriodStartDateIsMonthEnd` |  | |  |  |  |  |
+| `CalculationPeriodEndDate` |  | |  |  |  |  |
+| `CalcPeriodEndDateIsInclusive` |  | |  | `case when CalcPeriodEndDateIsInclusive = '0' then cast ( ' ' as recdvdmcalcendincl ) else cast ( 'X' as recdvdmcalcendincl ) end` |  |  |
+| `CalcPeriodEndDateIsMonthEnd` |  | |  |  |  |  |
+| `CalculationDate` |  | |  |  |  |  |
+| `CalcDateIsAsEndDateInclusive` |  | |  | `case when CalcDateIsAsEndDateInclusive = '0' then cast ( ' ' as recdvdmcalcendincl ) else cast ( 'X' as recdvdmcalcendincl ) end` |  |  |
+| `CalculationDateIsMonthEnd` |  | |  |  |  |  |
+| `PaymentDueDate` |  | |  |  |  |  |
+| `DueDateIsMonthEnd` |  | |  |  |  |  |
+| `NextWorkingDateForPayDueDate` |  | |  |  |  |  |
+| `NumberOfDays` |  | |  |  |  |  |
+| `NumberOfCalculationDays` |  | |  |  |  |  |
+| `InterestBaseDaysMethod` |  | |  |  |  |  |
+| `InterestCalculationMethod` |  | |  |  |  |  |
+| `REBeginOfPeriodDate` |  | |  |  |  |  |
+| `PeriodStartDateIsExclusive` |  | |  | `case when PeriodStartDateIsExclusive = '0' then cast ( ' ' as recdvdmperiodstartexcl ) else cast ( 'X' as recdvdmperiodstartexcl ) end` |  |  |
+| `PeriodStartDateIsMonthEnd` |  | |  |  |  |  |
+| `REEndOfPeriodDate` |  | |  |  |  |  |
+| `PeriodEndDateIsInclusive` |  | |  | `case when PeriodEndDateIsInclusive = '0' then cast ( ' ' as recdvdmperiodendincl ) else cast ( 'X' as recdvdmperiodendincl ) end` |  |  |
+| `PeriodEndDateIsMonthEnd` |  | |  |  |  |  |
+| `REConditionCurrency` |  | |  |  |  |  |
+| `REUnitPrice` |  | |  |  |  |  |
+| `REProRataMethod` |  | |  |  |  |  |
+| `REPaymentStatus` |  | |  |  |  |  |
+| `CashFlowConditionGroup` |  | |  |  |  |  |
+| `RECashFlowPositionAmount` |  | |  | `case when _REFlowType.DebitCreditCode = 'H' then RECashFlowPositionAmount * ( -1 ) else RECashFlowPositionAmount end` |  |  |
+| `RETaxType` |  | |  |  |  |  |
+| `RETaxGroup` |  | |  | `TaxGroup` |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `REIsConditionGrossAmount` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `CashFlowItemOrigin` |  | |  |  |  |  |
+| `REFlowType` |  | |  |  |  |  |
+| `REOriginalFlowType` |  | |  |  |  |  |
+| `RERelshpOriglToFlowType` |  | |  |  |  |  |
+| `CashFlowPostingStatus` |  | |  |  |  |  |
+| `PlanningLevel` |  | |  |  |  |  |
+| `REHasEnteredCashMgmtForecast` |  | |  |  |  |  |
+| `IsToBeArchived` |  | |  |  |  |  |
+| `REOriglDueDate` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `REPartnerStatusObject` |  | |  |  |  |  |
+| `REConditionType` |  | |  |  |  |  |
+| `REPostingTerm` |  | |  |  |  |  |
+| `RERhythmTerm` |  | |  |  |  |  |
+| `REAdjustmentNumber` |  | |  |  |  |  |
+| `REOrgAssignmentTerm` |  | |  |  |  |  |
+| `RESalesTerm` |  | |  |  |  |  |
+| `REPeakSalesTerm` |  | |  |  |  |  |
+| `REWithholdingTaxTerm` |  | |  |  |  |  |
+| `REOriglExDueDate` |  | |  |  |  |  |
+| `REAdvancePaymentRelevantStatus` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `REReversalForUUID` |  | |  |  |  |  |
+| `REReversalByUUID` |  | |  |  |  |  |
+| `REFollowUpPostingUUID` |  | |  |  |  |  |
+| `REBookedFlowType` |  | |  |  |  |  |
+| `RERelshpBookedToFlowType` |  | |  |  |  |  |
+| `RETaxCalcDate` |  | |  |  |  |  |
+| `REModifiedDueDate` |  | |  |  |  |  |
+| `RECalcDueDate` |  | |  |  |  |  |
+| `SplitCashFlowRecordUUID` |  | |  |  |  |  |
+| `RecordIsBasisForSplit` |  | |  |  |  |  |
+| `REConditionSplitNumber` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CashPlanningGroup` |  | |  |  |  |  |
+| `RECurrencyTranslationRule` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  | `cast( ExchangeRate as kurrf_not_converted preserving type )` |  |  |
+| `REOriginExchangeRate` |  | |  | `cast( REOriginExchangeRate as kurrf_not_converted preserving type )` |  |  |
+| `REIsPostInConditionCurrency` |  | |  |  |  |  |
+| `REPlndTranslationDate` |  | |  |  |  |  |
+| `REActlTranslationDate` |  | |  |  |  |  |
+| `REOriglActlTranslationDate` |  | |  |  |  |  |
+| `REIsTranslationDateFrmCashFlow` |  | |  |  |  |  |
+| `REStatusObject` |  | |  |  |  |  |
+| `_CostCenterCalculation` | | ✓ | | | | |
+| `_WBSElementCalculation` | | ✓ | | | | |
+| `_InternalOrderCalculation` | | ✓ | | | | |
+| `_REContract` | | ✓ | | | | |
+| `_RECondition` | | ✓ | | | | |
+| `_REConditionType` | | ✓ | | | | |
+| `_REDocumentHeader` | | ✓ | | | | |
+| `_RERhythmTerm` | | ✓ | | | | |
+| `_REPostingTerm` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_RETaxType` | | ✓ | | | | |
+| `_RETaxGroup` | | ✓ | | | | |
+| `_TaxCountry` | | ✓ | | | | |
+| `_REFlowType` | | ✓ | | | | |
+| `_REOriglFlowType` | | ✓ | | | | |
+| `_PlanningLevel` | | ✓ | | | | |
+| `_REProRateMethod` | | ✓ | | | | |
+| `_RECashFlowItemOrigin` | | ✓ | | | | |
+| `_RERelshpOriglToFlowType` | | ✓ | | | | |
+| `_RECashFlowPostingStatus` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_REAdvancePaytRlvtStatus` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_REBookedFlowType` | | ✓ | | | | |
+| `_RERelshpBookedToFlowType` | | ✓ | | | | |
 
 ## Associations
 

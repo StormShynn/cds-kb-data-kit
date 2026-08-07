@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingObject` | ✓ | |  |  |
-| `ControllingArea` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingObject` | ✓ | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
 
 ## Source Code
 

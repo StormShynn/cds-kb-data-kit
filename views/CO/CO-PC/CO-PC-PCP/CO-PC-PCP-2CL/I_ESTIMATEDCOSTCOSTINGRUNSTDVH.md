@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EstimatedCostCostingRun` | ✓ | |  |  |
-| `EstimatedCostCostingRunDate` | ✓ | |  |  |
-| `CostingVersion` | ✓ | |  |  |
-| `EstimatedCostCostingRunDesc` |  | |  | `cast(EstimatedCostCostingRunDesc as fpc_costing_run_description preserving type)` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EstimatedCostCostingRun` | ✓ | |  |  |  |  |
+| `EstimatedCostCostingRunDate` | ✓ | |  |  |  |  |
+| `CostingVersion` | ✓ | |  |  |  |  |
+| `EstimatedCostCostingRunDesc` |  | |  | `cast(EstimatedCostCostingRunDesc as fpc_costing_run_description preserving type)` |  |  |
 
 ## Source Code
 

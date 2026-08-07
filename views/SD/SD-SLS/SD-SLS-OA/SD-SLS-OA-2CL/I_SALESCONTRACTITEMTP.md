@@ -32,38 +32,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContract` | ✓ | |  |  |
-| `SalesContractItem` | ✓ | |  |  |
-| `SalesContractItemCategory` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetQuantityUnit` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `SalesContractType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_SalesContract` | | ✓ | | |
-| `_ItemText` | | ✓ | | |
-| `_ItemPricingElement` | | ✓ | | |
-| `_ItemBillingPlan` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |  |  |
+| `SalesContractItem` | ✓ | |  |  |  |  |
+| `SalesContractItemCategory` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetQuantityUnit` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `SalesContractType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_SalesContract` | | ✓ | | | | |
+| `_ItemText` | | ✓ | | | | |
+| `_ItemPricingElement` | | ✓ | | | | |
+| `_ItemBillingPlan` | | ✓ | | | | |
 
 ## Source Code
 

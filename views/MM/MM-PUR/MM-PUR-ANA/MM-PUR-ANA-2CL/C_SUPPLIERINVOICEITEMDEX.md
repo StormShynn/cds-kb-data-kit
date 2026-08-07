@@ -32,56 +32,56 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `SupplierInvoiceItem` | ✓ | |  |  |
-| `QtyInPurchaseOrderPriceUnit` |  | |  |  |
-| `PurchaseOrderPriceUnit` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `PrmtHbReferenceDocument` |  | |  | `ReferenceDocument` |
-| `PrmtHbReferenceDocumentFsclYr` |  | |  | `ReferenceDocumentFiscalYear` |
-| `PrmtHbReferenceDocumentItem` |  | |  | `ReferenceDocumentItem` |
-| `PurchaseOrderItemMaterial` |  | |  |  |
-| `QuantityInPurchaseOrderUnit` |  | |  |  |
-| `SuplrInvcItmHasQualityVariance` |  | |  |  |
-| `SuplrInvcItemHasOrdPrcQtyVarc` |  | |  |  |
-| `SuplrInvcItemHasQtyVariance` |  | |  |  |
-| `SuplrInvcItemHasPriceVariance` |  | |  |  |
-| `SuplrInvcItemHasOtherVariance` |  | |  |  |
-| `SuplrInvcItemHasAmountOutsdTol` |  | |  |  |
-| `SuplrInvcItemHasDateVariance` |  | |  |  |
-| `IsSubsequentDebitCredit` |  | |  |  |
-| `Plant` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `SupplierInvoiceItemAmount` |  | |  |  |
-| `SuplrInvcAutomReducedAmount` |  | | `_SupplierInvoiceAPI01` | `SuplrInvcAutomReducedAmount` |
-| `UnplannedDeliveryCost` |  | | `_SupplierInvoiceAPI01` | `UnplannedDeliveryCost` |
-| `DocumentHeaderText` |  | | `_SupplierInvoiceAPI01` | `DocumentHeaderText` |
-| `DocumentDate` |  | | `_SupplierInvoiceAPI01` | `DocumentDate` |
-| `PostingDate` |  | | `_SupplierInvoiceAPI01` | `PostingDate` |
-| `CompanyCode` |  | | `_SupplierInvoiceAPI01` | `CompanyCode` |
-| `SupplierInvoiceOrigin` |  | | `_SupplierInvoiceAPI01` | `SupplierInvoiceOrigin` |
-| `InvoicingParty` |  | | `_SupplierInvoiceAPI01` | `InvoicingParty` |
-| `UnplannedDeliveryCostTaxCode` |  | | `_SupplierInvoiceAPI01` | `UnplannedDeliveryCostTaxCode` |
-| `ReverseDocument` |  | | `_SupplierInvoiceAPI01` | `ReverseDocument` |
-| `ReverseDocumentFiscalYear` |  | | `_SupplierInvoiceAPI01` | `ReverseDocumentFiscalYear` |
-| `SupplierInvoiceIDByInvcgParty` |  | | `_SupplierInvoiceAPI01` | `SupplierInvoiceIDByInvcgParty` |
-| `IsInvoice` |  | | `_SupplierInvoiceAPI01` | `IsInvoice` |
-| `SupplierInvoiceStatus` |  | | `_SupplierInvoiceAPI01` | `SupplierInvoiceStatus` |
-| `_SupplierInvoiceDEX` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_InvoicingParty` | | ✓ | | |
-| `_SupplierInvoiceStatus` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |  |  |
+| `QtyInPurchaseOrderPriceUnit` |  | |  |  |  |  |
+| `PurchaseOrderPriceUnit` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `PrmtHbReferenceDocument` |  | |  | `ReferenceDocument` |  |  |
+| `PrmtHbReferenceDocumentFsclYr` |  | |  | `ReferenceDocumentFiscalYear` |  |  |
+| `PrmtHbReferenceDocumentItem` |  | |  | `ReferenceDocumentItem` |  |  |
+| `PurchaseOrderItemMaterial` |  | |  |  |  |  |
+| `QuantityInPurchaseOrderUnit` |  | |  |  |  |  |
+| `SuplrInvcItmHasQualityVariance` |  | |  |  |  |  |
+| `SuplrInvcItemHasOrdPrcQtyVarc` |  | |  |  |  |  |
+| `SuplrInvcItemHasQtyVariance` |  | |  |  |  |  |
+| `SuplrInvcItemHasPriceVariance` |  | |  |  |  |  |
+| `SuplrInvcItemHasOtherVariance` |  | |  |  |  |  |
+| `SuplrInvcItemHasAmountOutsdTol` |  | |  |  |  |  |
+| `SuplrInvcItemHasDateVariance` |  | |  |  |  |  |
+| `IsSubsequentDebitCredit` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |  |  |
+| `SuplrInvcAutomReducedAmount` |  | | `_SupplierInvoiceAPI01` | `SuplrInvcAutomReducedAmount` |  |  |
+| `UnplannedDeliveryCost` |  | | `_SupplierInvoiceAPI01` | `UnplannedDeliveryCost` |  |  |
+| `DocumentHeaderText` |  | | `_SupplierInvoiceAPI01` | `DocumentHeaderText` |  |  |
+| `DocumentDate` |  | | `_SupplierInvoiceAPI01` | `DocumentDate` |  |  |
+| `PostingDate` |  | | `_SupplierInvoiceAPI01` | `PostingDate` |  |  |
+| `CompanyCode` |  | | `_SupplierInvoiceAPI01` | `CompanyCode` |  |  |
+| `SupplierInvoiceOrigin` |  | | `_SupplierInvoiceAPI01` | `SupplierInvoiceOrigin` |  |  |
+| `InvoicingParty` |  | | `_SupplierInvoiceAPI01` | `InvoicingParty` |  |  |
+| `UnplannedDeliveryCostTaxCode` |  | | `_SupplierInvoiceAPI01` | `UnplannedDeliveryCostTaxCode` |  |  |
+| `ReverseDocument` |  | | `_SupplierInvoiceAPI01` | `ReverseDocument` |  |  |
+| `ReverseDocumentFiscalYear` |  | | `_SupplierInvoiceAPI01` | `ReverseDocumentFiscalYear` |  |  |
+| `SupplierInvoiceIDByInvcgParty` |  | | `_SupplierInvoiceAPI01` | `SupplierInvoiceIDByInvcgParty` |  |  |
+| `IsInvoice` |  | | `_SupplierInvoiceAPI01` | `IsInvoice` |  |  |
+| `SupplierInvoiceStatus` |  | | `_SupplierInvoiceAPI01` | `SupplierInvoiceStatus` |  |  |
+| `_SupplierInvoiceDEX` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_InvoicingParty` | | ✓ | | | | |
+| `_SupplierInvoiceStatus` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
 
 ## Associations
 

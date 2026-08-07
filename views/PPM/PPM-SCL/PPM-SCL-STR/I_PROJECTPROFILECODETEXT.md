@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectProfileCode` | ✓ | |  | `profidproj` |
-| `Language` | ✓ | |  | `spras` |
-| `ProjectProfileCodeText` |  | |  | `profi_txt` |
-| `_Code` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectProfileCode` | ✓ | |  | `profidproj` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProjectProfileCodeText` |  | |  | `profi_txt` |  |  |
+| `_Code` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

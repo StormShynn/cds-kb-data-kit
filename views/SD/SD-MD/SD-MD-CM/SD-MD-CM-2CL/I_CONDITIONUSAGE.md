@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionUsage` | ✓ | |  | `kvewe` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

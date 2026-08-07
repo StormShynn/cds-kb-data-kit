@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DngrsGdsRglnLanguageType` | ✓ | |  | `cast( left(dd07t.domvalue_l, 2) as ehdgm_regulation_language_type preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `DngrsGdsRglnLanguageTypeName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DngrsGdsRglnLanguageType` | ✓ | |  | `cast( left(dd07t.domvalue_l, 2) as ehdgm_regulation_language_type preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `DngrsGdsRglnLanguageTypeName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

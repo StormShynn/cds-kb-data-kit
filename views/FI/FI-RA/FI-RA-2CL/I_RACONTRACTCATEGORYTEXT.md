@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `language` |
-| `RevnAcctgContractCategory` | ✓ | |  | `contract_cat` |
-| `RevnAcctgContrCategoryText` |  | |  | `cast(description as farr_contract_category_text preserving type)` |
-| `_RAContractCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `language` |  |  |
+| `RevnAcctgContractCategory` | ✓ | |  | `contract_cat` |  |  |
+| `RevnAcctgContrCategoryText` |  | |  | `cast(description as farr_contract_category_text preserving type)` |  |  |
+| `_RAContractCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

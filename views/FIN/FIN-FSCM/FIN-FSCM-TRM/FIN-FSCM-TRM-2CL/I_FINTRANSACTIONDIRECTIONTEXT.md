@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `FinancialTransactionDirection` | ✓ | |  | `cast( dd07t.domvalue_l as tb_rkondgr )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FinTransactionDirectionName` |  | |  | `cast( dd07t.ddtext as tb_rkondgr_name preserving type )` |
-| `_Direction` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `FinancialTransactionDirection` | ✓ | |  | `cast( dd07t.domvalue_l as tb_rkondgr )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FinTransactionDirectionName` |  | |  | `cast( dd07t.ddtext as tb_rkondgr_name preserving type )` |  |  |
+| `_Direction` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

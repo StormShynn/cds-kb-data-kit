@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductPlanningStrategy` | ✓ | |  | `stra1` |
-| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
-| `ProductPlanningStrategyName` |  | |  | `cast(txt.text40 as planningstrategyname preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductPlanningStrategy` | ✓ | |  | `stra1` |  |  |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |  |  |
+| `ProductPlanningStrategyName` |  | |  | `cast(txt.text40 as planningstrategyname preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

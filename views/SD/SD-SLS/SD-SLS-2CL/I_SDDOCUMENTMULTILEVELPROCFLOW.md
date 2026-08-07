@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocRelationshipUUID` | ✓ | |  | `ruuid` |
-| `PrecedingDocument` |  | |  | `vbelv` |
-| `PrecedingDocumentItem` |  | |  | `posnv` |
-| `PrecedingDocumentCategory` |  | |  | `vbtyp_v` |
-| `SubsequentDocument` |  | |  | `vbeln` |
-| `SubsequentDocumentItem` |  | |  | `posnn` |
-| `SubsequentDocumentCategory` |  | |  | `vbtyp_n` |
-| `ProcessFlowLevel` |  | |  | `stufe` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `erzet` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `QuantityInBaseUnit` |  | |  | `rfmng` |
-| `RefQuantityInOrdQtyUnitAsFloat` |  | |  | `rfmng_flo` |
-| `RefQuantityInBaseUnitAsFloat` |  | |  | `rfmng_flt` |
-| `BaseUnit` |  | |  | `meins` |
-| `OrderQuantityUnit` |  | |  | `vrkme` |
-| `SDFulfillmentCalculationRule` |  | |  | `plmin` |
-| `NetAmount` |  | |  | `rfwrt` |
-| `StatisticsCurrency` |  | |  | `waers` |
-| `TransferOrderInWrhsMgmtIsConfd` |  | |  | `taqui` |
-| `WarehouseNumber` |  | |  | `lgnum` |
-| `MaterialDocumentYear` |  | |  | `mjahr` |
-| `GoodsMovementType` |  | |  | `bwart` |
-| `BillingPlan` |  | |  | `fplnr` |
-| `BillingPlanItem` |  | |  | `fpltr` |
-| `_BaseUnit` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_StatisticsCurrency` | | ✓ | | |
-| `_GoodsMovementType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocRelationshipUUID` | ✓ | |  | `ruuid` |  |  |
+| `PrecedingDocument` |  | |  | `vbelv` |  |  |
+| `PrecedingDocumentItem` |  | |  | `posnv` |  |  |
+| `PrecedingDocumentCategory` |  | |  | `vbtyp_v` |  |  |
+| `SubsequentDocument` |  | |  | `vbeln` |  |  |
+| `SubsequentDocumentItem` |  | |  | `posnn` |  |  |
+| `SubsequentDocumentCategory` |  | |  | `vbtyp_n` |  |  |
+| `ProcessFlowLevel` |  | |  | `stufe` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `erzet` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `QuantityInBaseUnit` |  | |  | `rfmng` |  |  |
+| `RefQuantityInOrdQtyUnitAsFloat` |  | |  | `rfmng_flo` |  |  |
+| `RefQuantityInBaseUnitAsFloat` |  | |  | `rfmng_flt` |  |  |
+| `BaseUnit` |  | |  | `meins` |  |  |
+| `OrderQuantityUnit` |  | |  | `vrkme` |  |  |
+| `SDFulfillmentCalculationRule` |  | |  | `plmin` |  |  |
+| `NetAmount` |  | |  | `rfwrt` |  |  |
+| `StatisticsCurrency` |  | |  | `waers` |  |  |
+| `TransferOrderInWrhsMgmtIsConfd` |  | |  | `taqui` |  |  |
+| `WarehouseNumber` |  | |  | `lgnum` |  |  |
+| `MaterialDocumentYear` |  | |  | `mjahr` |  |  |
+| `GoodsMovementType` |  | |  | `bwart` |  |  |
+| `BillingPlan` |  | |  | `fplnr` |  |  |
+| `BillingPlanItem` |  | |  | `fpltr` |  |  |
+| `_BaseUnit` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_StatisticsCurrency` | | ✓ | | | | |
+| `_GoodsMovementType` | | ✓ | | | | |
 
 ## Associations
 

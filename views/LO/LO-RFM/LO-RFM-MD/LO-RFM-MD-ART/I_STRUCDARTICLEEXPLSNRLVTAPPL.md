@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StrucdArticleExplsnRlvtAppl` | ✓ | |  | `cast( dd07l.domvalue_l as keytr)` |
-| `_MatSplitTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StrucdArticleExplsnRlvtAppl` | ✓ | |  | `cast( dd07l.domvalue_l as keytr)` |  |  |
+| `_MatSplitTypeText` | | ✓ | | | | |
 
 ## Associations
 

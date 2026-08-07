@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `EntProjElmntDeliverableType` | ✓ | |  | `cast ( substring( ResourceID.resource_id, 1, 6 ) as /s4ppm/tv_entprojdlvbrltype preserving type )` |
-| `EntProjElmntDlvbrlTypeText` |  | |  | `Ktext` |
-| `_Language` | | ✓ | | |
-| `_DeliverableType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `EntProjElmntDeliverableType` | ✓ | |  | `cast ( substring( ResourceID.resource_id, 1, 6 ) as /s4ppm/tv_entprojdlvbrltype preserving type )` |  |  |
+| `EntProjElmntDlvbrlTypeText` |  | |  | `Ktext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_DeliverableType` | | ✓ | | | | |
 
 ## Associations
 

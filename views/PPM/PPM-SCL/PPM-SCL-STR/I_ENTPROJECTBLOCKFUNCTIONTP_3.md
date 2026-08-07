@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectUUID` | ✓ | |  |  |
-| `ParentObjectUUID` |  | |  |  |
-| `EntProjTimeRecgIsBlkd` |  | |  |  |
-| `EntProjStaffExpensePostgIsBlkd` |  | |  |  |
-| `EntProjServicePostingIsBlkd` |  | |  |  |
-| `EntProjOtherExpensePostgIsBlkd` |  | |  |  |
-| `EntProjPurchasingIsBlkd` |  | |  |  |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  |  |  |  |
+| `ParentObjectUUID` |  | |  |  |  |  |
+| `EntProjTimeRecgIsBlkd` |  | |  |  |  |  |
+| `EntProjStaffExpensePostgIsBlkd` |  | |  |  |  |  |
+| `EntProjServicePostingIsBlkd` |  | |  |  |  |  |
+| `EntProjOtherExpensePostgIsBlkd` |  | |  |  |  |  |
+| `EntProjPurchasingIsBlkd` |  | |  |  |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Source Code
 

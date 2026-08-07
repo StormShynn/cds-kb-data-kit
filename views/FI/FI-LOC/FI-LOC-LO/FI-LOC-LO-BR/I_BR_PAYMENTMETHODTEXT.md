@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `PaymentMethod` | ✓ | |  | `cast (t_pag as logbr_tpag preserving type)` |
-| `PaymentMethodDescription` |  | |  | `cast(t_pagt as logbr_tpagdesc preserving type)` |
-| `_BR_PaymentMethod` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PaymentMethod` | ✓ | |  | `cast (t_pag as logbr_tpag preserving type)` |  |  |
+| `PaymentMethodDescription` |  | |  | `cast(t_pagt as logbr_tpagdesc preserving type)` |  |  |
+| `_BR_PaymentMethod` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

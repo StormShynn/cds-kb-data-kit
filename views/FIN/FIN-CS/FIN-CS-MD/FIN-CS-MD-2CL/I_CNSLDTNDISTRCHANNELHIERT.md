@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `CnsldtnDistrChannelHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_distrchannelhierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `CnsldtnDistrChannelHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_distrchannelhiertext preserving type )` |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `CnsldtnDistrChannelHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_distrchannelhierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `CnsldtnDistrChannelHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_distrchannelhiertext preserving type )` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

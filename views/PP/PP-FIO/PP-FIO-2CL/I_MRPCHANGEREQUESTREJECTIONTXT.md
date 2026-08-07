@@ -26,13 +26,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `MRPRequestRejection` | ✓ | |  | `rejectioncode` |
-| `MRPRequestRejectionName` |  | |  | `rejectiontxt` |
-| `_Language` | | ✓ | | |
-| `_MRPRequestRejection` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MRPRequestRejection` | ✓ | |  | `rejectioncode` |  |  |
+| `MRPRequestRejectionName` |  | |  | `rejectiontxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_MRPRequestRejection` | | ✓ | | | | |
 
 ## Associations
 

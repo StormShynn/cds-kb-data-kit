@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |
-| `CostCenter` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `CostCenter` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
 
 ## Source Code
 

@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StockTransportOrder` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `PlainLongText` |  | |  |  |
-| `_StockTransportOrder` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `PlainLongText` |  | |  |  |  |  |
+| `_StockTransportOrder` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Source Code
 

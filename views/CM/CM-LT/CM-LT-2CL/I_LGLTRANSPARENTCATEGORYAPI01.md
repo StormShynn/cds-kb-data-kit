@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LegalTransactionParCatUUID` | ✓ | |  |  |
-| `LegalTransactionCatGroupUUID` |  | |  |  |
-| `LegalTransactionUUID` |  | |  |  |
-| `LglCntntMParentCategory` |  | |  |  |
-| `LglCntntMIsMandatory` |  | |  |  |
-| `LglCntntMIndex` |  | |  |  |
-| `_LegalTransaction` | | ✓ | | |
-| `_LglTransCategoryGroup` | | ✓ | | |
-| `_LglTransCategory` | | ✓ | | |
-| `_LegalCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionParCatUUID` | ✓ | |  |  |  |  |
+| `LegalTransactionCatGroupUUID` |  | |  |  |  |  |
+| `LegalTransactionUUID` |  | |  |  |  |  |
+| `LglCntntMParentCategory` |  | |  |  |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |  |  |
+| `LglCntntMIndex` |  | |  |  |  |  |
+| `_LegalTransaction` | | ✓ | | | | |
+| `_LglTransCategoryGroup` | | ✓ | | | | |
+| `_LglTransCategory` | | ✓ | | | | |
+| `_LegalCategory` | | ✓ | | | | |
 
 ## Associations
 

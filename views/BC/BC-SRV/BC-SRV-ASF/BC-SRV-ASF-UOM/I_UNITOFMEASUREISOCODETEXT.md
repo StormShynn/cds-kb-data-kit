@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` |
-| `UnitOfMeasureISOCodeName` |  | |  | `isotxt` |
-| `_ISOCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` |  |  |
+| `UnitOfMeasureISOCodeName` |  | |  | `isotxt` |  |  |
+| `_ISOCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

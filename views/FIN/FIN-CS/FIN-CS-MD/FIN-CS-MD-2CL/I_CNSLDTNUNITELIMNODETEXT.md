@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_nodet` | `spras` |
-| `ConsolidationUnit` | ✓ | |  | `cast(left(_nodet.nodevalue, 25) as fincs_elim_unit preserving type )` |
-| `ConsolidationUnitMdmText` |  | |  | `cast(left(_nodet.nodetxt, 50) as fincs_description_text_50 preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_nodet` | `spras` |  |  |
+| `ConsolidationUnit` | ✓ | |  | `cast(left(_nodet.nodevalue, 25) as fincs_elim_unit preserving type )` |  |  |
+| `ConsolidationUnitMdmText` |  | |  | `cast(left(_nodet.nodetxt, 50) as fincs_description_text_50 preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
 
 ## Associations
 

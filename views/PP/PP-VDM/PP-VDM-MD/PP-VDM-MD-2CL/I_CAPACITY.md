@@ -28,75 +28,75 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityInternalID` | ✓ | |  | `kapid` |
-| `Plant` |  | |  | `werks` |
-| `Capacity` |  | |  | `name` |
-| `CapacityCategoryCode` |  | |  | `cast(kako.kapar as pph_kapart preserving type)` |
-| `CapacityActiveVersion` |  | |  | `versa` |
-| `CapacityIsFinite` |  | |  | `kapter` |
-| `CapacityIsPooled` |  | |  | `poolk` |
-| `CapacityHasIndivCapacities` |  | |  | `mehr` |
-| `CapacityIsExcldFrmLongTermPlng` |  | |  | `kaplpl` |
-| `CapacityNumberOfCapacities` |  | |  | `aznor` |
-| `CapacityResponsiblePlanner` |  | |  | `planr` |
-| `CapacityPlanUtilizationPercent` |  | |  | `ngrad` |
-| `CapacityBreakDuration` |  | |  | `pause` |
-| `CapIsUsedInMultiOperations` |  | |  | `cast(kako.kapavo as pph_kzavo preserving type)` |
-| `ReferencedCapacityInternalID` |  | |  | `cast(kako.refid as pph_refid preserving type)` |
-| `CapOverloadThresholdInPercent` |  | |  | `ueberlast` |
-| `FactoryCalendar` |  | |  | `kalid` |
-| `AuthorizationGroup` |  | |  | `brgru` |
-| `ShiftGroup` |  | |  | `mosid` |
-| `CapacityStartTime` |  | |  | `begzt` |
-| `CapacityEndTime` |  | |  | `endzt` |
-| `CapacityStartTimeID` |  | |  | `cast(kako.begzt as vdm_begzt preserving type)` |
-| `CapacityEndTimeID` |  | |  | `cast(kako.endzt as vdm_endzt preserving type)` |
-| `CapacityQuantityUnit` |  | |  | `kapeh` |
-| `CapacityBaseQtyUnit` |  | |  | `meins` |
-| `CapacityLastChangeDateTime` |  | |  | `case when kako.lastchange_datetime = 0 or kako.lastchange_datetime is null then cast('20190101120000' as kap_lastchange_datetime) else kako.lastchange_datetime end` |
-| `ResourceType` |  | |  | `type` |
-| `ResourceCategory` |  | |  | `restype` |
-| `RsceValidityStartOffsetInDays` |  | |  | `lc_days_minus` |
-| `RsceValidityEndOffsetInDays` |  | |  | `lc_days_plus` |
-| `ResourceSortText` |  | |  | `sort` |
-| `ResourceFinitenessLevel` |  | |  | `finity_level` |
-| `ResourceIsBottleNeck` |  | |  | `is_bottleneck` |
-| `RsceOverlappingActiesSync` |  | |  | `sync_start` |
-| `ResourceTimeBufferQuantity` |  | |  | `buffertime` |
-| `ResourceTimeBufferUnit` |  | |  | `buffertime_unit` |
-| `ResourceMaxOverlapDuration` |  | |  | `min_overlap` |
-| `ResourceMaxOverlapDurationUnit` |  | |  | `min_overlap_unit` |
-| `ResourceIsCampaignRelevant` |  | |  | `campaign_ppds` |
-| `RsceShiftsAndBreaksAreDerived` |  | |  | `tstream_external` |
-| `PPDSPeriodSourceType` |  | |  | `pp_def_buckets` |
-| `PPDSPeriodDurationSchema` |  | |  | `pp_bucket_schema` |
-| `PPDSPeriodTimeRatioInPercent` |  | |  | `pp_bucket_fact` |
-| `PPDSCapacitySupplyTimeCategory` |  | |  | `mix_plan_type` |
-| `RsceHasStorCharcs` |  | |  | `storage_capable` |
-| `RsceStorageQuantityDimension` |  | |  | `dim_storage` |
-| `RsceStorageQuantityUnit` |  | |  | `storage_unit` |
-| `RsceStorageMinProductionQty` |  | |  | `min_storage` |
-| `RsceStorageMaxQuantity` |  | |  | `max_storage` |
-| `RsceStorIsZeroOnNoFillPurity` |  | |  | `storage_to_zero` |
-| `CapacityPlanningPeriodLotSize` |  | |  | `campaign_ppo` |
-| `RsceStorHasMltplProds` |  | |  | `multiple_product` |
-| `RsceStorZeroFillPurityThldQty` |  | |  | `zero_threshold` |
-| `_Plant` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ReferencedCapacityText` | | ✓ | | |
-| `_CapacityCategory` | | ✓ | | |
-| `_CapacityResponsiblePlanner` | | ✓ | | |
-| `_FactoryCalendar` | | ✓ | | |
-| `_ShiftGrouping` | | ✓ | | |
-| `_CapacityQuantityUnit` | | ✓ | | |
-| `_CapacityBaseQtyUnit` | | ✓ | | |
-| `_Capacity` | | ✓ | | |
-| `_CapacityBySemanticKey` | | ✓ | | |
-| `_ResourceTimeBufferUnit` | | ✓ | | |
-| `_RsceMaxOverlapDurationUnit` | | ✓ | | |
-| `_RsceStorageQuantityUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  | `kapid` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `Capacity` |  | |  | `name` |  |  |
+| `CapacityCategoryCode` |  | |  | `cast(kako.kapar as pph_kapart preserving type)` |  |  |
+| `CapacityActiveVersion` |  | |  | `versa` |  |  |
+| `CapacityIsFinite` |  | |  | `kapter` |  |  |
+| `CapacityIsPooled` |  | |  | `poolk` |  |  |
+| `CapacityHasIndivCapacities` |  | |  | `mehr` |  |  |
+| `CapacityIsExcldFrmLongTermPlng` |  | |  | `kaplpl` |  |  |
+| `CapacityNumberOfCapacities` |  | |  | `aznor` |  |  |
+| `CapacityResponsiblePlanner` |  | |  | `planr` |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  | `ngrad` |  |  |
+| `CapacityBreakDuration` |  | |  | `pause` |  |  |
+| `CapIsUsedInMultiOperations` |  | |  | `cast(kako.kapavo as pph_kzavo preserving type)` |  |  |
+| `ReferencedCapacityInternalID` |  | |  | `cast(kako.refid as pph_refid preserving type)` |  |  |
+| `CapOverloadThresholdInPercent` |  | |  | `ueberlast` |  |  |
+| `FactoryCalendar` |  | |  | `kalid` |  |  |
+| `AuthorizationGroup` |  | |  | `brgru` |  |  |
+| `ShiftGroup` |  | |  | `mosid` |  |  |
+| `CapacityStartTime` |  | |  | `begzt` |  |  |
+| `CapacityEndTime` |  | |  | `endzt` |  |  |
+| `CapacityStartTimeID` |  | |  | `cast(kako.begzt as vdm_begzt preserving type)` |  |  |
+| `CapacityEndTimeID` |  | |  | `cast(kako.endzt as vdm_endzt preserving type)` |  |  |
+| `CapacityQuantityUnit` |  | |  | `kapeh` |  |  |
+| `CapacityBaseQtyUnit` |  | |  | `meins` |  |  |
+| `CapacityLastChangeDateTime` |  | |  | `case when kako.lastchange_datetime = 0 or kako.lastchange_datetime is null then cast('20190101120000' as kap_lastchange_datetime) else kako.lastchange_datetime end` |  |  |
+| `ResourceType` |  | |  | `type` |  |  |
+| `ResourceCategory` |  | |  | `restype` |  |  |
+| `RsceValidityStartOffsetInDays` |  | |  | `lc_days_minus` |  |  |
+| `RsceValidityEndOffsetInDays` |  | |  | `lc_days_plus` |  |  |
+| `ResourceSortText` |  | |  | `sort` |  |  |
+| `ResourceFinitenessLevel` |  | |  | `finity_level` |  |  |
+| `ResourceIsBottleNeck` |  | |  | `is_bottleneck` |  |  |
+| `RsceOverlappingActiesSync` |  | |  | `sync_start` |  |  |
+| `ResourceTimeBufferQuantity` |  | |  | `buffertime` |  |  |
+| `ResourceTimeBufferUnit` |  | |  | `buffertime_unit` |  |  |
+| `ResourceMaxOverlapDuration` |  | |  | `min_overlap` |  |  |
+| `ResourceMaxOverlapDurationUnit` |  | |  | `min_overlap_unit` |  |  |
+| `ResourceIsCampaignRelevant` |  | |  | `campaign_ppds` |  |  |
+| `RsceShiftsAndBreaksAreDerived` |  | |  | `tstream_external` |  |  |
+| `PPDSPeriodSourceType` |  | |  | `pp_def_buckets` |  |  |
+| `PPDSPeriodDurationSchema` |  | |  | `pp_bucket_schema` |  |  |
+| `PPDSPeriodTimeRatioInPercent` |  | |  | `pp_bucket_fact` |  |  |
+| `PPDSCapacitySupplyTimeCategory` |  | |  | `mix_plan_type` |  |  |
+| `RsceHasStorCharcs` |  | |  | `storage_capable` |  |  |
+| `RsceStorageQuantityDimension` |  | |  | `dim_storage` |  |  |
+| `RsceStorageQuantityUnit` |  | |  | `storage_unit` |  |  |
+| `RsceStorageMinProductionQty` |  | |  | `min_storage` |  |  |
+| `RsceStorageMaxQuantity` |  | |  | `max_storage` |  |  |
+| `RsceStorIsZeroOnNoFillPurity` |  | |  | `storage_to_zero` |  |  |
+| `CapacityPlanningPeriodLotSize` |  | |  | `campaign_ppo` |  |  |
+| `RsceStorHasMltplProds` |  | |  | `multiple_product` |  |  |
+| `RsceStorZeroFillPurityThldQty` |  | |  | `zero_threshold` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ReferencedCapacityText` | | ✓ | | | | |
+| `_CapacityCategory` | | ✓ | | | | |
+| `_CapacityResponsiblePlanner` | | ✓ | | | | |
+| `_FactoryCalendar` | | ✓ | | | | |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_CapacityQuantityUnit` | | ✓ | | | | |
+| `_CapacityBaseQtyUnit` | | ✓ | | | | |
+| `_Capacity` | | ✓ | | | | |
+| `_CapacityBySemanticKey` | | ✓ | | | | |
+| `_ResourceTimeBufferUnit` | | ✓ | | | | |
+| `_RsceMaxOverlapDurationUnit` | | ✓ | | | | |
+| `_RsceStorageQuantityUnit` | | ✓ | | | | |
 
 ## Associations
 

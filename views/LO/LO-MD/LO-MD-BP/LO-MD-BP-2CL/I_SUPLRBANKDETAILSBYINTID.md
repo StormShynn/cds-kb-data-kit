@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  | `lifnr` |
-| `BPBankAccountInternalID` | ✓ | |  | `bvtyp` |
-| `BankCountry` |  | |  | `banks` |
-| `Bank` |  | |  | `bankl` |
-| `BankAccount` |  | |  | `bankn` |
-| `BankAccountHolderName` |  | |  | `koinh` |
-| `BankControlKey` |  | |  | `bkont` |
-| `AuthorizationGroup` |  | | `_Supplier` | `AuthorizationGroup` |
-| `_Bank` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_BankAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |  |  |
+| `BPBankAccountInternalID` | ✓ | |  | `bvtyp` |  |  |
+| `BankCountry` |  | |  | `banks` |  |  |
+| `Bank` |  | |  | `bankl` |  |  |
+| `BankAccount` |  | |  | `bankn` |  |  |
+| `BankAccountHolderName` |  | |  | `koinh` |  |  |
+| `BankControlKey` |  | |  | `bkont` |  |  |
+| `AuthorizationGroup` |  | | `_Supplier` | `AuthorizationGroup` |  |  |
+| `_Bank` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_BankAccount` | | ✓ | | | | |
 
 ## Associations
 

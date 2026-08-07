@@ -29,56 +29,56 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HandlingUnitExternalID` | ✓ | |  |  |
-| `Warehouse` | ✓ | |  |  |
-| `HandlingUnitExternalIdType` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `HandlingUnitLowerLevelRefer` |  | |  |  |
-| `ParentHandlingUnitNumber` |  | |  |  |
-| `PackagingMaterial` |  | |  |  |
-| `PackagingMaterialType` |  | |  |  |
-| `GrossWeight` |  | |  |  |
-| `NetWeight` |  | |  |  |
-| `HandlingUnitMaxWeight` |  | |  |  |
-| `WeightUnit` |  | |  |  |
-| `HandlingUnitTareWeight` |  | |  |  |
-| `HandlingUnitTareWeightUnit` |  | |  |  |
-| `GrossVolume` |  | |  |  |
-| `HandlingUnitNetVolume` |  | |  |  |
-| `HandlingUnitMaxVolume` |  | |  |  |
-| `VolumeUnit` |  | |  |  |
-| `HandlingUnitTareVolume` |  | |  |  |
-| `HandlingUnitTareVolumeUnit` |  | |  |  |
-| `HandlingUnitLength` |  | |  |  |
-| `HandlingUnitWidth` |  | |  |  |
-| `HandlingUnitHeight` |  | |  |  |
-| `UnitOfMeasureDimension` |  | |  |  |
-| `HandlingUnitPackingObjectType` |  | |  |  |
-| `HandlingUnitReferenceDocument` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `HandlingUnitInternalStatus` |  | |  |  |
-| `HandlingUnitProcessStatus` |  | |  |  |
-| `SourceHandlingUnitUUID` |  | |  |  |
-| `PackingInstruction` |  | |  |  |
-| `HandlingUnitSecondExternalId` |  | |  |  |
-| `StorageType` |  | |  |  |
-| `StorageSection` |  | |  |  |
-| `StorageBin` |  | |  |  |
-| `EWMConsolidationGroup` |  | |  |  |
-| `HandlingUnitHasCrossRefDoc` |  | |  |  |
-| `EWMHandlingUnitType` |  | |  |  |
-| `HandlingUnitMaxLength` |  | |  |  |
-| `HandlingUnitMaxWidth` |  | |  |  |
-| `HandlingUnitMaxHeight` |  | |  |  |
-| `HandlingUnitMaxDimensionUnit` |  | |  |  |
-| `_HandlingUnitItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HandlingUnitExternalID` | ✓ | |  |  |  |  |
+| `Warehouse` | ✓ | |  |  |  |  |
+| `HandlingUnitExternalIdType` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `HandlingUnitLowerLevelRefer` |  | |  |  |  |  |
+| `ParentHandlingUnitNumber` |  | |  |  |  |  |
+| `PackagingMaterial` |  | |  |  |  |  |
+| `PackagingMaterialType` |  | |  |  |  |  |
+| `GrossWeight` |  | |  |  |  |  |
+| `NetWeight` |  | |  |  |  |  |
+| `HandlingUnitMaxWeight` |  | |  |  |  |  |
+| `WeightUnit` |  | |  |  |  |  |
+| `HandlingUnitTareWeight` |  | |  |  |  |  |
+| `HandlingUnitTareWeightUnit` |  | |  |  |  |  |
+| `GrossVolume` |  | |  |  |  |  |
+| `HandlingUnitNetVolume` |  | |  |  |  |  |
+| `HandlingUnitMaxVolume` |  | |  |  |  |  |
+| `VolumeUnit` |  | |  |  |  |  |
+| `HandlingUnitTareVolume` |  | |  |  |  |  |
+| `HandlingUnitTareVolumeUnit` |  | |  |  |  |  |
+| `HandlingUnitLength` |  | |  |  |  |  |
+| `HandlingUnitWidth` |  | |  |  |  |  |
+| `HandlingUnitHeight` |  | |  |  |  |  |
+| `UnitOfMeasureDimension` |  | |  |  |  |  |
+| `HandlingUnitPackingObjectType` |  | |  |  |  |  |
+| `HandlingUnitReferenceDocument` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `HandlingUnitInternalStatus` |  | |  |  |  |  |
+| `HandlingUnitProcessStatus` |  | |  |  |  |  |
+| `SourceHandlingUnitUUID` |  | |  |  |  |  |
+| `PackingInstruction` |  | |  |  |  |  |
+| `HandlingUnitSecondExternalId` |  | |  |  |  |  |
+| `StorageType` |  | |  |  |  |  |
+| `StorageSection` |  | |  |  |  |  |
+| `StorageBin` |  | |  |  |  |  |
+| `EWMConsolidationGroup` |  | |  |  |  |  |
+| `HandlingUnitHasCrossRefDoc` |  | |  |  |  |  |
+| `EWMHandlingUnitType` |  | |  |  |  |  |
+| `HandlingUnitMaxLength` |  | |  |  |  |  |
+| `HandlingUnitMaxWidth` |  | |  |  |  |  |
+| `HandlingUnitMaxHeight` |  | |  |  |  |  |
+| `HandlingUnitMaxDimensionUnit` |  | |  |  |  |  |
+| `_HandlingUnitItem` | | ✓ | | | | |
 
 ## Source Code
 

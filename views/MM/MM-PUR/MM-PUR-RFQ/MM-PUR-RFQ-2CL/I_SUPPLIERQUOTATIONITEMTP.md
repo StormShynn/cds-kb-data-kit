@@ -32,57 +32,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierQuotation` | ✓ | |  |  |
-| `SupplierQuotationItem` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentItemText` |  | |  |  |
-| `Material` |  | |  |  |
-| `ProductTypeCode` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `ManufacturerPartNmbr` |  | |  |  |
-| `Manufacturer` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ManualDeliveryAddressID` |  | |  |  |
-| `ReferenceDeliveryAddressID` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `ItemDeliveryAddressID` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `AwardedQuantity` |  | |  |  |
-| `PerformancePeriodStartDate` |  | |  |  |
-| `PerformancePeriodEndDate` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
-| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
-| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
-| `PurgDocPriceDate` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `GrossAmount` |  | |  |  |
-| `EffectiveAmount` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `RequestForQuotation` |  | |  |  |
-| `RequestForQuotationItem` |  | |  |  |
-| `PurchasingInfoRecordUpdateCode` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchasingDocumentItemCategory` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_QTNPricingElement` | | ✓ | | |
-| `_SupplierQuotation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierQuotation` | ✓ | |  |  |  |  |
+| `SupplierQuotationItem` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |  |  |
+| `Manufacturer` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `AwardedQuantity` |  | |  |  |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `PurgDocPriceDate` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `GrossAmount` |  | |  |  |  |  |
+| `EffectiveAmount` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `RequestForQuotation` |  | |  |  |  |  |
+| `RequestForQuotationItem` |  | |  |  |  |  |
+| `PurchasingInfoRecordUpdateCode` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_QTNPricingElement` | | ✓ | | | | |
+| `_SupplierQuotation` | | ✓ | | | | |
 
 ## Source Code
 

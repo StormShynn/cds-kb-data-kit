@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PricingProcedure` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionUsage` |  | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `PrcgProcedItemFromRefStep` |  | |  |  |
-| `PrcgProcedItemToRefStep` |  | |  |  |
-| `ConditionIsManuallyDtmnd` |  | |  |  |
-| `PrcgProcedItemSubtotal` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `AccountKeyForGLAccount` |  | |  |  |
-| `AcctKeyForAccrualsGLAccount` |  | |  |  |
-| `PricingProcedureItemPrintType` |  | |  |  |
-| `ConditionIsMandatory` |  | |  |  |
-| `CndnIsAcctDetnRelevant` |  | |  |  |
-| `PriceElementAccessLevel` |  | |  |  |
-| `InclusionPointFromToIsCopied` |  | |  |  |
-| `_ConditionUsage` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
-| `_ConditionType` | | ✓ | | |
-| `_PrcgProcedItemPrntType` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_SalesPricingProcedure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingProcedure` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionUsage` |  | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `PrcgProcedItemFromRefStep` |  | |  |  |  |  |
+| `PrcgProcedItemToRefStep` |  | |  |  |  |  |
+| `ConditionIsManuallyDtmnd` |  | |  |  |  |  |
+| `PrcgProcedItemSubtotal` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |  |  |
+| `AcctKeyForAccrualsGLAccount` |  | |  |  |  |  |
+| `PricingProcedureItemPrintType` |  | |  |  |  |  |
+| `ConditionIsMandatory` |  | |  |  |  |  |
+| `CndnIsAcctDetnRelevant` |  | |  |  |  |  |
+| `PriceElementAccessLevel` |  | |  |  |  |  |
+| `InclusionPointFromToIsCopied` |  | |  |  |  |  |
+| `_ConditionUsage` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_ConditionType` | | ✓ | | | | |
+| `_PrcgProcedItemPrntType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_SalesPricingProcedure` | | ✓ | | | | |
 
 ## Associations
 

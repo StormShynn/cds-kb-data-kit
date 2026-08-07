@@ -29,65 +29,65 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MemoRecord` | ✓ | |  |  |
-| `MemoRecordDescription` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `MemoRecordCategory` |  | |  |  |
-| `MemoRecordType` |  | |  |  |
-| `PlanningLevel` |  | |  |  |
-| `MemoRecordBalanceDateDimension` |  | |  |  |
-| `TransactionDate` |  | |  |  |
-| `MemoRecordExpirationDateTime` |  | |  |  |
-| `MemoRecordStatus_2` |  | |  |  |
-| `MemoRecordStatus` |  | |  |  |
-| `BankAccountInternalID` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `CashFlowReconciliationBundle` |  | |  |  |
-| `CashPlanningGroup` |  | |  |  |
-| `LiquidityItem` |  | |  |  |
-| `BankStatementShortID` |  | |  | `cast( BankStatementShortID as kukey_eb preserving type )` |
-| `BankStatement` |  | |  | `cast( BankStatement as aznum_lg_eb preserving type )` |
-| `BankStatementItem` |  | |  | `cast( BankStatementItem as esnum_eb preserving type )` |
-| `ProfitCenter` |  | |  |  |
-| `Fund` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `MemoRecordStatisticsIndicator` |  | |  |  |
-| `MemoRecordCharacteristic` |  | |  |  |
-| `MemoRecordInternalReference` |  | |  |  |
-| `BankStatementDate` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `FinancialManagementArea` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `BankAccountNumber` |  | |  |  |
-| `MemoRecordStatusCriticality` |  | |  |  |
-| `MemoRecdExprtnCritlty` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeByUser` |  | |  |  |
-| `CompanyCodeName` |  | |  |  |
-| `MemoRecdOffstgCoCodeName` |  | |  |  |
-| `ProfitCenterValidityEndDate` |  | |  |  |
-| `HouseBank` |  | |  |  |
-| `HouseBankAccount` |  | |  |  |
-| `MemoRecordImport` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `MemoRecordIsLeadingDocument` |  | |  |  |
-| `MemoRecdOffsettingCompanyCode` |  | |  |  |
-| `MemoRecordOffsettingHouseBank` |  | |  |  |
-| `MemoRecdOffstgHouseBankAccount` |  | |  |  |
-| `MemoRecordPairingReason` |  | |  |  |
-| `MemoRecdOffstgBkAcctInternalID` |  | |  |  |
-| `OffsettingMemoRecord` |  | |  |  |
-| `MemoRecdOffstgTransactionDate` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MemoRecord` | ✓ | |  |  |  |  |
+| `MemoRecordDescription` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `MemoRecordCategory` |  | |  |  |  |  |
+| `MemoRecordType` |  | |  |  |  |  |
+| `PlanningLevel` |  | |  |  |  |  |
+| `MemoRecordBalanceDateDimension` |  | |  |  |  |  |
+| `TransactionDate` |  | |  |  |  |  |
+| `MemoRecordExpirationDateTime` |  | |  |  |  |  |
+| `MemoRecordStatus_2` |  | |  |  |  |  |
+| `MemoRecordStatus` |  | |  |  |  |  |
+| `BankAccountInternalID` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `CashFlowReconciliationBundle` |  | |  |  |  |  |
+| `CashPlanningGroup` |  | |  |  |  |  |
+| `LiquidityItem` |  | |  |  |  |  |
+| `BankStatementShortID` |  | |  | `cast( BankStatementShortID as kukey_eb preserving type )` |  |  |
+| `BankStatement` |  | |  | `cast( BankStatement as aznum_lg_eb preserving type )` |  |  |
+| `BankStatementItem` |  | |  | `cast( BankStatementItem as esnum_eb preserving type )` |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `MemoRecordStatisticsIndicator` |  | |  |  |  |  |
+| `MemoRecordCharacteristic` |  | |  |  |  |  |
+| `MemoRecordInternalReference` |  | |  |  |  |  |
+| `BankStatementDate` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `FinancialManagementArea` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `BankAccountNumber` |  | |  |  |  |  |
+| `MemoRecordStatusCriticality` |  | |  |  |  |  |
+| `MemoRecdExprtnCritlty` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeByUser` |  | |  |  |  |  |
+| `CompanyCodeName` |  | |  |  |  |  |
+| `MemoRecdOffstgCoCodeName` |  | |  |  |  |  |
+| `ProfitCenterValidityEndDate` |  | |  |  |  |  |
+| `HouseBank` |  | |  |  |  |  |
+| `HouseBankAccount` |  | |  |  |  |  |
+| `MemoRecordImport` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `MemoRecordIsLeadingDocument` |  | |  |  |  |  |
+| `MemoRecdOffsettingCompanyCode` |  | |  |  |  |  |
+| `MemoRecordOffsettingHouseBank` |  | |  |  |  |  |
+| `MemoRecdOffstgHouseBankAccount` |  | |  |  |  |  |
+| `MemoRecordPairingReason` |  | |  |  |  |  |
+| `MemoRecdOffstgBkAcctInternalID` |  | |  |  |  |  |
+| `OffsettingMemoRecord` |  | |  |  |  |  |
+| `MemoRecdOffstgTransactionDate` |  | |  |  |  |  |
 
 ## Source Code
 

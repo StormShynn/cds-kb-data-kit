@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JVAChartOfAccounts` | ✓ | |  |  |
-| `JVAInterCompanyCOA` | ✓ | |  |  |
-| `FromGLAccount` | ✓ | |  |  |
-| `ToGLAccount` |  | |  |  |
-| `CutbackAccount` |  | |  |  |
-| `JVAIsToKeepOriginalAccount` |  | |  |  |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_JVAInterCompanyCOA` | | ✓ | | |
-| `_FromGLAccount` | | ✓ | | |
-| `_ToGLAccount` | | ✓ | | |
-| `_CutbackAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JVAChartOfAccounts` | ✓ | |  |  |  |  |
+| `JVAInterCompanyCOA` | ✓ | |  |  |  |  |
+| `FromGLAccount` | ✓ | |  |  |  |  |
+| `ToGLAccount` |  | |  |  |  |  |
+| `CutbackAccount` |  | |  |  |  |  |
+| `JVAIsToKeepOriginalAccount` |  | |  |  |  |  |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_JVAInterCompanyCOA` | | ✓ | | | | |
+| `_FromGLAccount` | | ✓ | | | | |
+| `_ToGLAccount` | | ✓ | | | | |
+| `_CutbackAccount` | | ✓ | | | | |
 
 ## Associations
 

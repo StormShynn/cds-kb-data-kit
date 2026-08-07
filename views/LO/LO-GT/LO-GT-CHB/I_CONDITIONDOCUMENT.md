@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionDocument` | ✓ | |  |  |
-| `CndnContrType` |  | |  |  |
-| `CndnDocActivationStatus` |  | |  |  |
-| `ConditionDocumentValidFromDate` |  | |  |  |
-| `ConditionDocumentValidToDate` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `PriorSupplier` |  | |  |  |
-| `PersonWorkAgreement` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `PrecedingConditionDocument` |  | |  |  |
-| `CndnDocWorkerCostCenter` |  | |  |  |
-| `CndnDocObjNodeTypeAbbr` |  | |  |  |
-| `CndnDocSemanticCode` |  | |  |  |
-| `_CndnContrType` | | ✓ | | |
-| `_PrecedingConditionDocument` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_PriorSupplier` | | ✓ | | |
-| `_PersonWorkAgreement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionDocument` | ✓ | |  |  |  |  |
+| `CndnContrType` |  | |  |  |  |  |
+| `CndnDocActivationStatus` |  | |  |  |  |  |
+| `ConditionDocumentValidFromDate` |  | |  |  |  |  |
+| `ConditionDocumentValidToDate` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `PriorSupplier` |  | |  |  |  |  |
+| `PersonWorkAgreement` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `PrecedingConditionDocument` |  | |  |  |  |  |
+| `CndnDocWorkerCostCenter` |  | |  |  |  |  |
+| `CndnDocObjNodeTypeAbbr` |  | |  |  |  |  |
+| `CndnDocSemanticCode` |  | |  |  |  |  |
+| `_CndnContrType` | | ✓ | | | | |
+| `_PrecedingConditionDocument` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_PriorSupplier` | | ✓ | | | | |
+| `_PersonWorkAgreement` | | ✓ | | | | |
 
 ## Associations
 

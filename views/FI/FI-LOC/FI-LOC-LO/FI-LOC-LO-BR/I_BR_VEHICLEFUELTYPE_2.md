@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VehicleFuelType` | ✓ | |  | `cast ( tpcomb as logbr_vehiclefueltype preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VehicleFuelType` | ✓ | |  | `cast ( tpcomb as logbr_vehiclefueltype preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

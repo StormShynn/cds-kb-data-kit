@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `FinancialInstrProductCategory` | ✓ | |  | `sanlf` |
-| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |
-| `FinTransProcessingCategory` | ✓ | |  | `abwtyp` |
-| `FinTransProcessingCategoryName` |  | |  | `xabrbez` |
-| `_Language` | | ✓ | | |
-| `_ProductCategory` | | ✓ | | |
-| `_TransactionCategory` | | ✓ | | |
-| `_ProcessingCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlf` |  |  |
+| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |  |  |
+| `FinTransProcessingCategory` | ✓ | |  | `abwtyp` |  |  |
+| `FinTransProcessingCategoryName` |  | |  | `xabrbez` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProductCategory` | | ✓ | | | | |
+| `_TransactionCategory` | | ✓ | | | | |
+| `_ProcessingCategory` | | ✓ | | | | |
 
 ## Associations
 

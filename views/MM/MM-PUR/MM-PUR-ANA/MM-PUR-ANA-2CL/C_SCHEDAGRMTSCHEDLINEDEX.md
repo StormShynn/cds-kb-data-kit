@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `SchedLineStscDeliveryDate` |  | |  |  |
-| `ScheduleLineDeliveryTime` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `RoughGoodsReceiptQty` |  | |  |  |
-| `ScheduleLineIsFixed` |  | |  |  |
-| `PurchasingSchdLnNrOfReminders` |  | |  | `NoOfRemindersOfScheduleLine` |
-| `PrevDelivQtyOfScheduleLine` |  | |  |  |
-| `SourceOfCreation` |  | |  |  |
-| `PurchasingDocumentOrderDate` |  | | `_SchedgagrmthdrApi01` | `PurchasingDocumentOrderDate` |
-| `PurchasingGroup` |  | | `_SchedgagrmthdrApi01` | `PurchasingGroup` |
-| `PurchasingOrganization` |  | | `_SchedgagrmthdrApi01` | `PurchasingOrganization` |
-| `StorageLocation` |  | | `_SchedgAgrmtItmApi01` | `StorageLocation` |
-| `Supplier` |  | | `_SchedgagrmthdrApi01` | `Supplier` |
-| `Material` |  | | `_SchedgAgrmtItmApi01` | `Material` |
-| `PurchasingDocumentOrigin` |  | | `_SchedgagrmthdrApi01` | `PurchasingDocumentOrigin` |
-| `Plant` |  | | `_SchedgAgrmtItmApi01` | `Plant` |
-| `PurchasingDocumentType` |  | | `_SchedgagrmthdrApi01` | `PurchasingDocumentType` |
-| `_ScheduleAgreementHdrDEX` | | ✓ | | |
-| `_ScheduleAgreementItemDEX` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_PurchaseRequisitionItem` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_PurchasingDocumentOrigin` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |  |  |
+| `ScheduleLineIsFixed` |  | |  |  |  |  |
+| `PurchasingSchdLnNrOfReminders` |  | |  | `NoOfRemindersOfScheduleLine` |  |  |
+| `PrevDelivQtyOfScheduleLine` |  | |  |  |  |  |
+| `SourceOfCreation` |  | |  |  |  |  |
+| `PurchasingDocumentOrderDate` |  | | `_SchedgagrmthdrApi01` | `PurchasingDocumentOrderDate` |  |  |
+| `PurchasingGroup` |  | | `_SchedgagrmthdrApi01` | `PurchasingGroup` |  |  |
+| `PurchasingOrganization` |  | | `_SchedgagrmthdrApi01` | `PurchasingOrganization` |  |  |
+| `StorageLocation` |  | | `_SchedgAgrmtItmApi01` | `StorageLocation` |  |  |
+| `Supplier` |  | | `_SchedgagrmthdrApi01` | `Supplier` |  |  |
+| `Material` |  | | `_SchedgAgrmtItmApi01` | `Material` |  |  |
+| `PurchasingDocumentOrigin` |  | | `_SchedgagrmthdrApi01` | `PurchasingDocumentOrigin` |  |  |
+| `Plant` |  | | `_SchedgAgrmtItmApi01` | `Plant` |  |  |
+| `PurchasingDocumentType` |  | | `_SchedgagrmthdrApi01` | `PurchasingDocumentType` |  |  |
+| `_ScheduleAgreementHdrDEX` | | ✓ | | | | |
+| `_ScheduleAgreementItemDEX` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_PurchasingDocumentOrigin` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingDocumentType` | | ✓ | | | | |
 
 ## Associations
 

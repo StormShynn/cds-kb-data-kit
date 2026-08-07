@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdCmplncLabelFieldVersionID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ProdCmplncLabelFieldName` |  | |  |  |
-| `ProdCmplncLabelFieldGroupID` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_LabelFieldGroup` | | ✓ | | |
-| `_LabelFieldVersion` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdCmplncLabelFieldVersionID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ProdCmplncLabelFieldName` |  | |  |  |  |  |
+| `ProdCmplncLabelFieldGroupID` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_LabelFieldGroup` | | ✓ | | | | |
+| `_LabelFieldVersion` | | ✓ | | | | |
 
 ## Source Code
 

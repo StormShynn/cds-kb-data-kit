@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `ServiceContract` | ✓ | |  |  |
-| `_BusinessSolutionOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | | | |
 
 ## Source Code
 

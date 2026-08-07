@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `DataController` | ✓ | |  |  |
-| `PurposeForPersonalData` | ✓ | |  |  |
-| `BusinessPartnerForEdit` |  | |  |  |
-| `DataControllerForEdit` |  | |  |  |
-| `IsDerivationSet` |  | |  |  |
-| `DataControllerDescription` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `DataControlAssignmentStatus` |  | |  |  |
-| `PurposeDerived` |  | |  |  |
-| `PurposeType` |  | |  |  |
-| `BusinessPurposeFlag` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `DataController` | ✓ | |  |  |  |  |
+| `PurposeForPersonalData` | ✓ | |  |  |  |  |
+| `BusinessPartnerForEdit` |  | |  |  |  |  |
+| `DataControllerForEdit` |  | |  |  |  |  |
+| `IsDerivationSet` |  | |  |  |  |  |
+| `DataControllerDescription` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `DataControlAssignmentStatus` |  | |  |  |  |  |
+| `PurposeDerived` |  | |  |  |  |  |
+| `PurposeType` |  | |  |  |  |  |
+| `BusinessPurposeFlag` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
 

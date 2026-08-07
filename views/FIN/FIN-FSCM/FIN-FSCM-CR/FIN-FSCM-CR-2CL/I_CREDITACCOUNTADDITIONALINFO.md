@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `CreditSegment` | ✓ | |  | `cast(criter as ukm_credit_sgmnt preserving type)` |
-| `CrdtAcctInformationCategory` | ✓ | |  | `addtype` |
-| `CrdtAcctInformationType` | ✓ | |  | `data_type` |
-| `CrdtAcctAddInfoUTCDateTime` | ✓ | |  | `timestamp` |
-| `AdditionalCreditDocSequence` | ✓ | |  | `counter` |
-| `ExceptionIsCreditCheckRelevant` |  | |  | `cast(xfeld as ukm_check_relevant preserving type )` |
-| `AddlCreditDocAmtInTransacCrcy` |  | |  | `} amnt` |
-| `TransactionCurrency` |  | |  | `curr` |
-| `ValidityStartDate` |  | |  | `} cast(datefr as ukm_validity_start_date preserving type )` |
-| `ValidityEndDate` |  | |  | `} cast(dateto as ukm_validity_end_date preserving type)` |
-| `CreditAccountResubmissionDate` |  | |  | `} cast(addate as ukm_resubmission_date preserving type)` |
-| `AdditionalCreditDocComment` |  | |  | `cast(text as ukm_comment preserving type)` |
-| `_BusinessPartner` | | ✓ | | |
-| `_CreditManagementSegment` | | ✓ | | |
-| `_CrdtAcctInfoCategory` | | ✓ | | |
-| `_CrdtAcctInformationType` | | ✓ | | |
-| `_Currency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `CreditSegment` | ✓ | |  | `cast(criter as ukm_credit_sgmnt preserving type)` |  |  |
+| `CrdtAcctInformationCategory` | ✓ | |  | `addtype` |  |  |
+| `CrdtAcctInformationType` | ✓ | |  | `data_type` |  |  |
+| `CrdtAcctAddInfoUTCDateTime` | ✓ | |  | `timestamp` |  |  |
+| `AdditionalCreditDocSequence` | ✓ | |  | `counter` |  |  |
+| `ExceptionIsCreditCheckRelevant` |  | |  | `cast(xfeld as ukm_check_relevant preserving type )` |  |  |
+| `AddlCreditDocAmtInTransacCrcy` |  | |  | `amnt` |  |  |
+| `TransactionCurrency` |  | |  | `curr` |  |  |
+| `ValidityStartDate` |  | |  | `cast(datefr as ukm_validity_start_date preserving type )` |  |  |
+| `ValidityEndDate` |  | |  | `cast(dateto as ukm_validity_end_date preserving type)` |  |  |
+| `CreditAccountResubmissionDate` |  | |  | `cast(addate as ukm_resubmission_date preserving type)` |  |  |
+| `AdditionalCreditDocComment` |  | |  | `cast(text as ukm_comment preserving type)` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CreditManagementSegment` | | ✓ | | | | |
+| `_CrdtAcctInfoCategory` | | ✓ | | | | |
+| `_CrdtAcctInformationType` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
 
 ## Associations
 

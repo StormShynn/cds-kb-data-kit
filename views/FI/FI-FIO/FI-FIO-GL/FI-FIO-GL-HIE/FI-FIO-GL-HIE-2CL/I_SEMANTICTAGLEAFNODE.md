@@ -26,19 +26,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountHierarchy` | ✓ | |  | `hryid_42` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `ValidityEndDate` | ✓ | |  | `hryvalto` |
-| `SemanticTag` | ✓ | |  | `fins_sem_tag` |
-| `ValidityStartDate` |  | |  | `hryvalfrom` |
-| `ChartOfAccounts` |  | |  | `ktopl` |
-| `GLAccount` |  | |  | `saknr` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `_GLAccountHierarchyNode` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
-| `_SemanticTag` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountHierarchy` | ✓ | |  | `hryid_42` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |  |  |
+| `SemanticTag` | ✓ | |  | `fins_sem_tag` |  |  |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |  |  |
+| `ChartOfAccounts` |  | |  | `ktopl` |  |  |
+| `GLAccount` |  | |  | `saknr` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `_GLAccountHierarchyNode` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
+| `_SemanticTag` | | ✓ | | | | |
 
 ## Associations
 

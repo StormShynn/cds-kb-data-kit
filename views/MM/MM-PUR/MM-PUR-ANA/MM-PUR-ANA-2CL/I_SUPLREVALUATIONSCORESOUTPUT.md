@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalScoresOutputUUID` | ✓ | |  | `guid` |
-| `Supplier` |  | |  | `supplier_id` |
-| `IdentifierOfScoreHistoryJobRun` |  | |  | `job_run_id` |
-| `StartDate` |  | |  | `eval_start_date` |
-| `EndDate` |  | |  | `eval_end_date` |
-| `SuplrEvalScoreOutputActionType` |  | |  | `output_action_type` |
-| `SuplrEvalScoreOutputStatus` |  | |  | `status` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `SuplrEvalScoreOutpTriggerDate` |  | |  | `output_trigger_date` |
-| `SuplrEvalScoreOutpCreationDate` |  | |  | `se_creation_date` |
-| `_RunInfo` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalScoresOutputUUID` | ✓ | |  | `guid` |  |  |
+| `Supplier` |  | |  | `supplier_id` |  |  |
+| `IdentifierOfScoreHistoryJobRun` |  | |  | `job_run_id` |  |  |
+| `StartDate` |  | |  | `eval_start_date` |  |  |
+| `EndDate` |  | |  | `eval_end_date` |  |  |
+| `SuplrEvalScoreOutputActionType` |  | |  | `output_action_type` |  |  |
+| `SuplrEvalScoreOutputStatus` |  | |  | `status` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `SuplrEvalScoreOutpTriggerDate` |  | |  | `output_trigger_date` |  |  |
+| `SuplrEvalScoreOutpCreationDate` |  | |  | `se_creation_date` |  |  |
+| `_RunInfo` | | ✓ | | | | |
 
 ## Associations
 

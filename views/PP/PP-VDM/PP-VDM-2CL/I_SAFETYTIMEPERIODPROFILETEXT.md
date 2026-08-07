@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `SafetyTimePeriodProfile` | ✓ | |  | `cast(shpro as pph_shpro preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `SafetyTimePeriodProfileName` |  | |  | `cast(txt.text40 as pph_shprotxt preserving type)` |
-| `_Plant` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Profile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `SafetyTimePeriodProfile` | ✓ | |  | `cast(shpro as pph_shpro preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SafetyTimePeriodProfileName` |  | |  | `cast(txt.text40 as pph_shprotxt preserving type)` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Profile` | | ✓ | | | | |
 
 ## Associations
 

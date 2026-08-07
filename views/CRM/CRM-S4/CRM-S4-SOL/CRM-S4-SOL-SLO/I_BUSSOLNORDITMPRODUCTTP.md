@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `ServiceProductListItem` | ✓ | |  |  |
-| `SrvcProductListProduct` |  | |  |  |
-| `_BusinessSolutionOrder` | | ✓ | | |
-| `_BusinessSolutionOrderItem` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `ServiceProductListItem` | ✓ | |  |  |  |  |
+| `SrvcProductListProduct` |  | |  |  |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | | | |
+| `_BusinessSolutionOrderItem` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

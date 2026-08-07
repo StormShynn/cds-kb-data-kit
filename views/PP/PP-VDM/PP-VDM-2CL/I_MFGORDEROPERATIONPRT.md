@@ -27,85 +27,85 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MfgOrderInternalID` | ✓ | |  | `OrderInternalBillOfOperations` |
-| `MfgOrderOpProdnRsceToolIntID` | ✓ | |  | `OrderProdnRsceToolInternalID` |
-| `IsDeleted` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `MfgOrderOpProdnRsceToolText` |  | |  | `OrderProdnRsceToolText` |
-| `ProdnRsceToolHasLongText` |  | |  |  |
-| `Language` |  | |  |  |
-| `ProductionResourceType` |  | |  |  |
-| `ProductionResourceInternalID` |  | |  |  |
-| `ProductionResourceTool` |  | |  | `cast(prt._ProdnRsceToolByInternalKey.ProductionResourceTool as pph_fhmnr preserving type)` |
-| `ProdnRsceToolCategory` |  | |  |  |
-| `ProdnRsceToolCategory_2` |  | |  |  |
-| `ProdnRsceToolControlProfile` |  | |  |  |
-| `ProdnRsceToolItemNumber` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `OrderOperationInternalID` |  | |  | `OrderIntBillOfOperationsItem` |
-| `ManufacturingOrder` |  | |  | `cast(prt.OrderID as manufacturingorder preserving type)` |
-| `ManufacturingOrderSequence` |  | |  | `cast(opr.Sequence as manufacturingordersequence preserving type)` |
-| `ManufacturingOrderOperation` |  | |  | `cast(opr.Operation as manufacturingorderoperation preserving type)` |
-| `ManufacturingOrderOperation_2` |  | |  | `Operation_2` |
-| `MfgOrderOperationIsPhase` |  | |  |  |
-| `ManufacturingOrderCategory` |  | |  | `cast(prt.OrderCategory as manufacturingordercategory preserving type)` |
-| `ManufacturingOrderType` |  | |  | `cast(prt.OrderType as manufacturingordertype preserving type)` |
-| `ProductionPlant` |  | |  | `cast(prt.Plant as pwwrk preserving type)` |
-| `OperationControlProfile` |  | |  | `cast(opr.OperationControlProfile as pph_steus preserving type)` |
-| `BillOfOperationsType` |  | |  |  |
-| `BillOfOperationsGroup` |  | |  |  |
-| `EarliestSchedldUsageStartDate` |  | |  |  |
-| `EarliestSchedldUsageStartTime` |  | |  |  |
-| `EarliestSchedldUsageEndDate` |  | |  |  |
-| `EarliestSchedldUsageEndTime` |  | |  |  |
-| `LatestSchedldUsageStartDate` |  | |  |  |
-| `LatestSchedldUsageStartTime` |  | |  |  |
-| `LatestSchedldUsageEndDate` |  | |  |  |
-| `LatestSchedldUsageEndTime` |  | |  |  |
-| `ActualUsageStartDate` |  | |  |  |
-| `ActualUsageStartTime` |  | |  |  |
-| `ActualUsageEndDate` |  | |  |  |
-| `ActualUsageEndTime` |  | |  |  |
-| `ProdnRsceToolUsageDurnUnit` |  | |  |  |
-| `ProdnRsceToolUsageDuration` |  | |  |  |
-| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |
-| `ProdnRsceToolStandardWorkQty` |  | |  |  |
-| `PlannedProdnRsceToolQtyUnit` |  | |  |  |
-| `PlannedTotalProdnRsceToolQty` |  | |  |  |
-| `ConfirmedProdnRsceToolQtyUnit` |  | |  |  |
-| `ConfirmedProdnRsceToolQty` |  | |  |  |
-| `RemainingProdnRsceToolQtyUnit` |  | |  |  |
-| `RemainingProdnRsceToolQty` |  | |  |  |
-| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |
-| `ProdnRsceToolUsageQuantity` |  | |  |  |
-| `PlndProdnRsceToolUsageQtyUnit` |  | |  |  |
-| `PlannedProdnRsceToolUsageQty` |  | |  |  |
-| `ConfdProdnRsceToolUsageQtyUnit` |  | |  |  |
-| `ConfirmedProdnRsceToolUsageQty` |  | |  |  |
-| `RmngProdnRsceToolUsageQtyUnit` |  | |  |  |
-| `RemainingProdnRsceToolUsageQty` |  | |  |  |
-| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |
-| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |
-| `_MfgOrderInternalID` | | ✓ | | |
-| `_MfgOrder2` | | ✓ | | |
-| `_MfgOrderSequence` | | ✓ | | |
-| `_MfgOrderSequence2` | | ✓ | | |
-| `_MfgOrderOperation` | | ✓ | | |
-| `_MfgOrderOperationBySemanKey` | | ✓ | | |
-| `_MfgOrderOperationBySemKey` | | ✓ | | |
-| `_MfgOrderCategory` | | ✓ | | |
-| `_MfgOrderType` | | ✓ | | |
-| `_ProdnRsceToolCategory` | | ✓ | | |
-| `_ProdnRsceToolCategory_2` | | ✓ | | |
-| `_ProductionPlant` | | ✓ | | |
-| `_OperationControlProfile` | | ✓ | | |
-| `_MfgOrder` | | ✓ | | |
-| `_MfgOrderOperationPRTLongText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MfgOrderInternalID` | ✓ | |  | `OrderInternalBillOfOperations` |  |  |
+| `MfgOrderOpProdnRsceToolIntID` | ✓ | |  | `OrderProdnRsceToolInternalID` |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `MfgOrderOpProdnRsceToolText` |  | |  | `OrderProdnRsceToolText` |  |  |
+| `ProdnRsceToolHasLongText` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `ProductionResourceType` |  | |  |  |  |  |
+| `ProductionResourceInternalID` |  | |  |  |  |  |
+| `ProductionResourceTool` |  | |  | `cast(prt._ProdnRsceToolByInternalKey.ProductionResourceTool as pph_fhmnr preserving type)` |  |  |
+| `ProdnRsceToolCategory` |  | |  |  |  |  |
+| `ProdnRsceToolCategory_2` |  | |  |  |  |  |
+| `ProdnRsceToolControlProfile` |  | |  |  |  |  |
+| `ProdnRsceToolItemNumber` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `OrderOperationInternalID` |  | |  | `OrderIntBillOfOperationsItem` |  |  |
+| `ManufacturingOrder` |  | |  | `cast(prt.OrderID as manufacturingorder preserving type)` |  |  |
+| `ManufacturingOrderSequence` |  | |  | `cast(opr.Sequence as manufacturingordersequence preserving type)` |  |  |
+| `ManufacturingOrderOperation` |  | |  | `cast(opr.Operation as manufacturingorderoperation preserving type)` |  |  |
+| `ManufacturingOrderOperation_2` |  | |  | `Operation_2` |  |  |
+| `MfgOrderOperationIsPhase` |  | |  |  |  |  |
+| `ManufacturingOrderCategory` |  | |  | `cast(prt.OrderCategory as manufacturingordercategory preserving type)` |  |  |
+| `ManufacturingOrderType` |  | |  | `cast(prt.OrderType as manufacturingordertype preserving type)` |  |  |
+| `ProductionPlant` |  | |  | `cast(prt.Plant as pwwrk preserving type)` |  |  |
+| `OperationControlProfile` |  | |  | `cast(opr.OperationControlProfile as pph_steus preserving type)` |  |  |
+| `BillOfOperationsType` |  | |  |  |  |  |
+| `BillOfOperationsGroup` |  | |  |  |  |  |
+| `EarliestSchedldUsageStartDate` |  | |  |  |  |  |
+| `EarliestSchedldUsageStartTime` |  | |  |  |  |  |
+| `EarliestSchedldUsageEndDate` |  | |  |  |  |  |
+| `EarliestSchedldUsageEndTime` |  | |  |  |  |  |
+| `LatestSchedldUsageStartDate` |  | |  |  |  |  |
+| `LatestSchedldUsageStartTime` |  | |  |  |  |  |
+| `LatestSchedldUsageEndDate` |  | |  |  |  |  |
+| `LatestSchedldUsageEndTime` |  | |  |  |  |  |
+| `ActualUsageStartDate` |  | |  |  |  |  |
+| `ActualUsageStartTime` |  | |  |  |  |  |
+| `ActualUsageEndDate` |  | |  |  |  |  |
+| `ActualUsageEndTime` |  | |  |  |  |  |
+| `ProdnRsceToolUsageDurnUnit` |  | |  |  |  |  |
+| `ProdnRsceToolUsageDuration` |  | |  |  |  |  |
+| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |  |  |
+| `ProdnRsceToolStandardWorkQty` |  | |  |  |  |  |
+| `PlannedProdnRsceToolQtyUnit` |  | |  |  |  |  |
+| `PlannedTotalProdnRsceToolQty` |  | |  |  |  |  |
+| `ConfirmedProdnRsceToolQtyUnit` |  | |  |  |  |  |
+| `ConfirmedProdnRsceToolQty` |  | |  |  |  |  |
+| `RemainingProdnRsceToolQtyUnit` |  | |  |  |  |  |
+| `RemainingProdnRsceToolQty` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQuantity` |  | |  |  |  |  |
+| `PlndProdnRsceToolUsageQtyUnit` |  | |  |  |  |  |
+| `PlannedProdnRsceToolUsageQty` |  | |  |  |  |  |
+| `ConfdProdnRsceToolUsageQtyUnit` |  | |  |  |  |  |
+| `ConfirmedProdnRsceToolUsageQty` |  | |  |  |  |  |
+| `RmngProdnRsceToolUsageQtyUnit` |  | |  |  |  |  |
+| `RemainingProdnRsceToolUsageQty` |  | |  |  |  |  |
+| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |  |  |
+| `_MfgOrderInternalID` | | ✓ | | | | |
+| `_MfgOrder2` | | ✓ | | | | |
+| `_MfgOrderSequence` | | ✓ | | | | |
+| `_MfgOrderSequence2` | | ✓ | | | | |
+| `_MfgOrderOperation` | | ✓ | | | | |
+| `_MfgOrderOperationBySemanKey` | | ✓ | | | | |
+| `_MfgOrderOperationBySemKey` | | ✓ | | | | |
+| `_MfgOrderCategory` | | ✓ | | | | |
+| `_MfgOrderType` | | ✓ | | | | |
+| `_ProdnRsceToolCategory` | | ✓ | | | | |
+| `_ProdnRsceToolCategory_2` | | ✓ | | | | |
+| `_ProductionPlant` | | ✓ | | | | |
+| `_OperationControlProfile` | | ✓ | | | | |
+| `_MfgOrder` | | ✓ | | | | |
+| `_MfgOrderOperationPRTLongText` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `AddressID` |  | |  | `addrnumber` |
-| `ValidityStartDateTime` |  | |  | `addr_valid_from` |
-| `ValidityEndDateTime` |  | |  | `addr_valid_to` |
-| `BPAddressIsProtected` |  | | `_BPProtectedAddress` | `BPAddressIsProtected` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_Address` | | ✓ | | |
-| `_StandardAddress` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
-| `_AddrOrgNamePostalAddress` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `AddressID` |  | |  | `addrnumber` |  |  |
+| `ValidityStartDateTime` |  | |  | `addr_valid_from` |  |  |
+| `ValidityEndDateTime` |  | |  | `addr_valid_to` |  |  |
+| `BPAddressIsProtected` |  | | `_BPProtectedAddress` | `BPAddressIsProtected` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_Address` | | ✓ | | | | |
+| `_StandardAddress` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
+| `_AddrOrgNamePostalAddress` | | ✓ | | | | |
 
 ## Associations
 

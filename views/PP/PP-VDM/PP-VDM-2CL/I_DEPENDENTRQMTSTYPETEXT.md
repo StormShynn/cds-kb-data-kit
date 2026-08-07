@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
-| `DependentRequirementsType` | ✓ | |  | `cast(substring( domvalue_l, 1, 1) as vdm_sbdkz preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `DependentRequirementsTypeName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_DependentRequirementsType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |  |  |
+| `DependentRequirementsType` | ✓ | |  | `cast(substring( domvalue_l, 1, 1) as vdm_sbdkz preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `DependentRequirementsTypeName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_DependentRequirementsType` | | ✓ | | | | |
 
 ## Associations
 

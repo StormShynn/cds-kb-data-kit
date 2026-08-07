@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SequentialPlantDataCollection` | ✓ | |  |  |
-| `ConfirmationApplicationOrigin` |  | |  |  |
-| `SystemMessageIdentification` |  | |  |  |
-| `SystemMessageNumber` |  | |  |  |
-| `SystemMessageType` |  | |  |  |
-| `SystemMessageVariable1` |  | |  |  |
-| `SystemMessageVariable2` |  | |  |  |
-| `SystemMessageVariable3` |  | |  |  |
-| `SystemMessageVariable4` |  | |  |  |
-| `_ConfirmationApplicationOrigin` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SequentialPlantDataCollection` | ✓ | |  |  |  |  |
+| `ConfirmationApplicationOrigin` |  | |  |  |  |  |
+| `SystemMessageIdentification` |  | |  |  |  |  |
+| `SystemMessageNumber` |  | |  |  |  |  |
+| `SystemMessageType` |  | |  |  |  |  |
+| `SystemMessageVariable1` |  | |  |  |  |  |
+| `SystemMessageVariable2` |  | |  |  |  |  |
+| `SystemMessageVariable3` |  | |  |  |  |  |
+| `SystemMessageVariable4` |  | |  |  |  |  |
+| `_ConfirmationApplicationOrigin` | | ✓ | | | | |
 
 ## Source Code
 

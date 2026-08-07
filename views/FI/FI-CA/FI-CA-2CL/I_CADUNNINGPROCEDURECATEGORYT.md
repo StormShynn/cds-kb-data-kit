@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADunningProcedureCategory` | ✓ | |  | `mvtyp` |
-| `Language` | ✓ | |  | `spras` |
-| `CADunningProcedureCategoryName` |  | |  | `mvtxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADunningProcedureCategory` | ✓ | |  | `mvtyp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CADunningProcedureCategoryName` |  | |  | `mvtxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

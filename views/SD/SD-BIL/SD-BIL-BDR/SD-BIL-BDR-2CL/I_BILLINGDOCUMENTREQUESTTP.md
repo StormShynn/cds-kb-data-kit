@@ -33,81 +33,81 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentRequest` | ✓ | |  |  |
-| `SDDocumentCategory` |  | |  |  |
-| `BillingDocumentRequestType` |  | |  |  |
-| `ProposedBillingDocumentType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `BillgDocReqCombinationCriteria` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `TotalTaxAmount` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `PriceListType` |  | |  |  |
-| `TaxDepartureCountry` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `VATRegistrationOrigin` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `CustomerTaxClassification1` |  | |  |  |
-| `CustomerTaxClassification2` |  | |  |  |
-| `CustomerTaxClassification3` |  | |  |  |
-| `CustomerTaxClassification4` |  | |  |  |
-| `CustomerTaxClassification5` |  | |  |  |
-| `CustomerTaxClassification6` |  | |  |  |
-| `CustomerTaxClassification7` |  | |  |  |
-| `CustomerTaxClassification8` |  | |  |  |
-| `CustomerTaxClassification9` |  | |  |  |
-| `SDPricingProcedure` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `AdditionalValueDays` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `DocumentReferenceID` |  | |  |  |
-| `DunningArea` |  | |  |  |
-| `DunningBlockingReason` |  | |  |  |
-| `DunningKey` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `ReferenceDocumentLogicalSystem` |  | |  |  |
-| `ReferenceDocSDDocCategory` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `Country` |  | |  |  |
-| `CityCode` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `Region` |  | |  |  |
-| `County` |  | |  |  |
-| `CreditControlArea` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `OverallBillingDocReqStatus` |  | |  |  |
-| `BillingIssueType` |  | |  |  |
-| `OverallPricingIncompletionSts` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  |  |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `BillingDocumentRequestType` |  | |  |  |  |  |
+| `ProposedBillingDocumentType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `BillgDocReqCombinationCriteria` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `TotalTaxAmount` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `PriceListType` |  | |  |  |  |  |
+| `TaxDepartureCountry` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `VATRegistrationOrigin` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `CustomerTaxClassification1` |  | |  |  |  |  |
+| `CustomerTaxClassification2` |  | |  |  |  |  |
+| `CustomerTaxClassification3` |  | |  |  |  |  |
+| `CustomerTaxClassification4` |  | |  |  |  |  |
+| `CustomerTaxClassification5` |  | |  |  |  |  |
+| `CustomerTaxClassification6` |  | |  |  |  |  |
+| `CustomerTaxClassification7` |  | |  |  |  |  |
+| `CustomerTaxClassification8` |  | |  |  |  |  |
+| `CustomerTaxClassification9` |  | |  |  |  |  |
+| `SDPricingProcedure` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `AdditionalValueDays` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `DocumentReferenceID` |  | |  |  |  |  |
+| `DunningArea` |  | |  |  |  |  |
+| `DunningBlockingReason` |  | |  |  |  |  |
+| `DunningKey` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  |  |  |  |
+| `ReferenceDocSDDocCategory` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `CityCode` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `County` |  | |  |  |  |  |
+| `CreditControlArea` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `OverallBillingDocReqStatus` |  | |  |  |  |  |
+| `BillingIssueType` |  | |  |  |  |  |
+| `OverallPricingIncompletionSts` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

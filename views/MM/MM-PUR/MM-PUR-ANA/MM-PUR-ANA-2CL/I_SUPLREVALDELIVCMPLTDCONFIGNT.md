@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `SuplrEvalCritraDelivCompleted` | ✓ | |  | `cast( domvalue_l as mm_pur_ana_de_delivery_compind)` |
-| `SuplrEvalCritraDelivCmpltdTxt` |  | |  | `cast(ddtext as mm_pur_ana_de_del_compind_txt)` |
-| `_Language` | | ✓ | | |
-| `_SuplrEvalDelivCmpltdConfign` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `SuplrEvalCritraDelivCompleted` | ✓ | |  | `cast( domvalue_l as mm_pur_ana_de_delivery_compind)` |  |  |
+| `SuplrEvalCritraDelivCmpltdTxt` |  | |  | `cast(ddtext as mm_pur_ana_de_del_compind_txt)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SuplrEvalDelivCmpltdConfign` | | ✓ | | | | |
 
 ## Associations
 

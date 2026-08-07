@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostCenterCategory` | ✓ | |  | `kosar` |
-| `IsBlkdForPrimaryCostsPosting` |  | |  | `bkzkp` |
-| `IsBlkdForSecondaryCostsPosting` |  | |  | `bkzks` |
-| `IsBlockedForRevenuePosting` |  | |  | `bkzer` |
-| `IsBlockedForCommitmentPosting` |  | |  | `bkzob` |
-| `IsBlockedForPlanPrimaryCosts` |  | |  | `pkzkp` |
-| `IsBlockedForPlanSecondaryCosts` |  | |  | `cast(pkzks as fis_pkzks)` |
-| `IsBlockedForPlanRevenues` |  | |  | `cast(pkzer as fis_pkzer)` |
-| `CostCenterAllocationMethod` |  | |  | `cast(vmeth as fis_vmeth)` |
-| `ConsumptionQtyIsRecorded` |  | |  | `mgefl` |
-| `FunctionalArea` |  | |  | `func_area` |
-| `_Text` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostCenterCategory` | ✓ | |  | `kosar` |  |  |
+| `IsBlkdForPrimaryCostsPosting` |  | |  | `bkzkp` |  |  |
+| `IsBlkdForSecondaryCostsPosting` |  | |  | `bkzks` |  |  |
+| `IsBlockedForRevenuePosting` |  | |  | `bkzer` |  |  |
+| `IsBlockedForCommitmentPosting` |  | |  | `bkzob` |  |  |
+| `IsBlockedForPlanPrimaryCosts` |  | |  | `pkzkp` |  |  |
+| `IsBlockedForPlanSecondaryCosts` |  | |  | `cast(pkzks as fis_pkzks)` |  |  |
+| `IsBlockedForPlanRevenues` |  | |  | `cast(pkzer as fis_pkzer)` |  |  |
+| `CostCenterAllocationMethod` |  | |  | `cast(vmeth as fis_vmeth)` |  |  |
+| `ConsumptionQtyIsRecorded` |  | |  | `mgefl` |  |  |
+| `FunctionalArea` |  | |  | `func_area` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
 
 ## Associations
 

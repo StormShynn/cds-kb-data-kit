@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShelfLifeExpirationDatePeriod` | ✓ | |  | `cast( dd07l.domvalue_l as shelflifeexpirationdateperiod )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShelfLifeExpirationDatePeriod` | ✓ | |  | `cast( dd07l.domvalue_l as shelflifeexpirationdateperiod )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

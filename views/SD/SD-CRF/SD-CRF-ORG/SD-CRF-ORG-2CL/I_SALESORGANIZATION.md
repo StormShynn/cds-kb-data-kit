@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrganization` | ✓ | |  | `vkorg` |
-| `SalesOrganizationCurrency` |  | |  | `waers` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `IntercompanyBillingCustomer` |  | |  | `kunnr` |
-| `ArgentinaDeliveryDateEvent` |  | |  | `j_1anutime` |
-| `AddressID` |  | |  | `adrnr` |
-| `VATRegnNumberDeterminationRule` |  | |  | `xstceg` |
-| `_Text` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_IntercompanyBillingCustomer` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_DfltAddrRprstn` | | ✓ | | |
-| `_SlsOrgHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  | `vkorg` |  |  |
+| `SalesOrganizationCurrency` |  | |  | `waers` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `IntercompanyBillingCustomer` |  | |  | `kunnr` |  |  |
+| `ArgentinaDeliveryDateEvent` |  | |  | `j_1anutime` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `VATRegnNumberDeterminationRule` |  | |  | `xstceg` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_IntercompanyBillingCustomer` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_DfltAddrRprstn` | | ✓ | | | | |
+| `_SlsOrgHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

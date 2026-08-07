@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceNotification` |  | |  | `qmnum` |
-| `NotificationIsHeaderNotif` |  | |  | `eams_flag_header_notif` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceNotification` |  | |  | `qmnum` |  |  |
+| `NotificationIsHeaderNotif` |  | |  | `eams_flag_header_notif` |  |  |
 
 ## Source Code
 

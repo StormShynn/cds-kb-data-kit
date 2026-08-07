@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | |  | `equnr` |
-| `Language` | ✓ | |  | `spras` |
-| `EquipmentName` |  | |  | `eqktx` |
-| `IsPrimaryLanguage` |  | |  | `txasp` |
-| `EquipmentHasLongText` |  | |  | `kzltx` |
-| `LastChangeDateTime` |  | |  | `textchangeddatetime` |
-| `ValidityStartDate` |  | | `_Equipment` | `CreationDate` |
-| `ValidityEndDate` |  | |  | `cast( '99991231' as datbi )` |
-| `_Equipment` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | |  | `equnr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `EquipmentName` |  | |  | `eqktx` |  |  |
+| `IsPrimaryLanguage` |  | |  | `txasp` |  |  |
+| `EquipmentHasLongText` |  | |  | `kzltx` |  |  |
+| `LastChangeDateTime` |  | |  | `textchangeddatetime` |  |  |
+| `ValidityStartDate` |  | | `_Equipment` | `CreationDate` |  |  |
+| `ValidityEndDate` |  | |  | `cast( '99991231' as datbi )` |  |  |
+| `_Equipment` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

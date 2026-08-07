@@ -29,75 +29,75 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsContainerUnitUUID` | ✓ | |  |  |
-| `FldLogsContainerUUID` |  | |  |  |
-| `FldLogsContainerID` |  | |  |  |
-| `FldLogsShipmentID` |  | |  |  |
-| `FldLogsCtnPackgStsCode` |  | |  |  |
-| `FldLogsCtnPackgChkErrCode` |  | |  |  |
-| `FldLogsCtnIntTranspStsCode` |  | |  |  |
-| `FldLogsCtnExtTranspSts` |  | |  |  |
-| `FldLogsSrceStorLocID` |  | |  |  |
-| `FldLogsSrcePlnt` |  | |  |  |
-| `FldLogsDestStorLocID` |  | |  |  |
-| `FldLogsDestPlnt` |  | |  |  |
-| `FldLogsCtnPackgChangeDateTime` |  | |  |  |
-| `FldLogsContainerCategory` |  | |  |  |
-| `FldLogsCtnPackgStsText` |  | |  |  |
-| `FldLogsShptCtnIntTranspStsText` |  | |  |  |
-| `FldLogsSealNumber1` |  | |  |  |
-| `FldLogsSealNumber2` |  | |  |  |
-| `FldLogsSealNumber3` |  | |  |  |
-| `FldLogsSealNumber4` |  | |  |  |
-| `FldLogsSealNumber5` |  | |  |  |
-| `FldLogsGrossVolume` |  | |  |  |
-| `FldLogsGrossVolumeUnit` |  | |  |  |
-| `ProductGrossWeight` |  | |  |  |
-| `ProductWeightUnit` |  | |  |  |
-| `FldLogsCtnActualWeight` |  | |  |  |
-| `FldLogsCtnActualWeightUnit` |  | |  |  |
-| `EquipmentType` |  | |  |  |
-| `FldLogsContainerText` |  | |  |  |
-| `FldLogsContainerStatus` |  | |  |  |
-| `FldLogsContainerSafeLoadQty` |  | |  |  |
-| `FldLogsContainerSafeLoadUnit` |  | |  |  |
-| `FldLogsCtnCurrentLocation` |  | |  |  |
-| `FldLogsCtnCurrentStorageLoc` |  | |  |  |
-| `FldLogsContainerOwner` |  | |  |  |
-| `FldLogsCtnCubicCapacity` |  | |  |  |
-| `FldLogsCtnCubicCapacityUnit` |  | |  |  |
-| `FldLogsCertEndDate` |  | |  |  |
-| `FldLogsShptItmIsAssgdToVoy` |  | |  |  |
-| `FldLogsContainerTareWeight` |  | |  |  |
-| `FldLogsContainerTareWeightUnit` |  | |  |  |
-| `FldLogsVoyageSrceStage` |  | |  |  |
-| `FldLogsVoyageDestStage` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemWeight` |  | |  |  |
-| `FldLogsVoyageAssignmentStatus` |  | |  |  |
-| `FldLogsVoyAssgmtStatusCritlty` |  | |  |  |
-| `FldLogsVoyAssgmtStatusText` |  | |  |  |
-| `FldLogsCtnUnitCurrentPlant` |  | |  |  |
-| `FldLogsCtnUnitCurShipgPoint` |  | |  |  |
-| `FldLogsContainerUnitExternalID` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `DeliveryDocument` |  | |  |  |
-| `FldLogsReferenceDocumentNumber` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `SuplrCoIsBusPrpsCmpltd` |  | |  |  |
-| `FldLogsShptItemActnID` |  | |  |  |
-| `ShippingPointName` |  | |  |  |
-| `ReceivingPoint` |  | |  |  |
-| `_ShipgPtText` | | ✓ | | |
-| `_RcvgPtText` | | ✓ | | |
-| `_ShptItems` | | ✓ | | |
-| `_ShptStgeAssgmt` | | ✓ | | |
-| `_TaggedItems` | | ✓ | | |
-| `_ShptPkgCtnAssgmt` | | ✓ | | |
-| `_EquipmentTypeText` | | ✓ | | |
-| `_CtnCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsContainerUnitUUID` | ✓ | |  |  |  |  |
+| `FldLogsContainerUUID` |  | |  |  |  |  |
+| `FldLogsContainerID` |  | |  |  |  |  |
+| `FldLogsShipmentID` |  | |  |  |  |  |
+| `FldLogsCtnPackgStsCode` |  | |  |  |  |  |
+| `FldLogsCtnPackgChkErrCode` |  | |  |  |  |  |
+| `FldLogsCtnIntTranspStsCode` |  | |  |  |  |  |
+| `FldLogsCtnExtTranspSts` |  | |  |  |  |  |
+| `FldLogsSrceStorLocID` |  | |  |  |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |  |  |
+| `FldLogsDestStorLocID` |  | |  |  |  |  |
+| `FldLogsDestPlnt` |  | |  |  |  |  |
+| `FldLogsCtnPackgChangeDateTime` |  | |  |  |  |  |
+| `FldLogsContainerCategory` |  | |  |  |  |  |
+| `FldLogsCtnPackgStsText` |  | |  |  |  |  |
+| `FldLogsShptCtnIntTranspStsText` |  | |  |  |  |  |
+| `FldLogsSealNumber1` |  | |  |  |  |  |
+| `FldLogsSealNumber2` |  | |  |  |  |  |
+| `FldLogsSealNumber3` |  | |  |  |  |  |
+| `FldLogsSealNumber4` |  | |  |  |  |  |
+| `FldLogsSealNumber5` |  | |  |  |  |  |
+| `FldLogsGrossVolume` |  | |  |  |  |  |
+| `FldLogsGrossVolumeUnit` |  | |  |  |  |  |
+| `ProductGrossWeight` |  | |  |  |  |  |
+| `ProductWeightUnit` |  | |  |  |  |  |
+| `FldLogsCtnActualWeight` |  | |  |  |  |  |
+| `FldLogsCtnActualWeightUnit` |  | |  |  |  |  |
+| `EquipmentType` |  | |  |  |  |  |
+| `FldLogsContainerText` |  | |  |  |  |  |
+| `FldLogsContainerStatus` |  | |  |  |  |  |
+| `FldLogsContainerSafeLoadQty` |  | |  |  |  |  |
+| `FldLogsContainerSafeLoadUnit` |  | |  |  |  |  |
+| `FldLogsCtnCurrentLocation` |  | |  |  |  |  |
+| `FldLogsCtnCurrentStorageLoc` |  | |  |  |  |  |
+| `FldLogsContainerOwner` |  | |  |  |  |  |
+| `FldLogsCtnCubicCapacity` |  | |  |  |  |  |
+| `FldLogsCtnCubicCapacityUnit` |  | |  |  |  |  |
+| `FldLogsCertEndDate` |  | |  |  |  |  |
+| `FldLogsShptItmIsAssgdToVoy` |  | |  |  |  |  |
+| `FldLogsContainerTareWeight` |  | |  |  |  |  |
+| `FldLogsContainerTareWeightUnit` |  | |  |  |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemWeight` |  | |  |  |  |  |
+| `FldLogsVoyageAssignmentStatus` |  | |  |  |  |  |
+| `FldLogsVoyAssgmtStatusCritlty` |  | |  |  |  |  |
+| `FldLogsVoyAssgmtStatusText` |  | |  |  |  |  |
+| `FldLogsCtnUnitCurrentPlant` |  | |  |  |  |  |
+| `FldLogsCtnUnitCurShipgPoint` |  | |  |  |  |  |
+| `FldLogsContainerUnitExternalID` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `FldLogsReferenceDocumentNumber` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `SuplrCoIsBusPrpsCmpltd` |  | |  |  |  |  |
+| `FldLogsShptItemActnID` |  | |  |  |  |  |
+| `ShippingPointName` |  | |  |  |  |  |
+| `ReceivingPoint` |  | |  |  |  |  |
+| `_ShipgPtText` | | ✓ | | | | |
+| `_RcvgPtText` | | ✓ | | | | |
+| `_ShptItems` | | ✓ | | | | |
+| `_ShptStgeAssgmt` | | ✓ | | | | |
+| `_TaggedItems` | | ✓ | | | | |
+| `_ShptPkgCtnAssgmt` | | ✓ | | | | |
+| `_EquipmentTypeText` | | ✓ | | | | |
+| `_CtnCategoryText` | | ✓ | | | | |
 
 ## Source Code
 

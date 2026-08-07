@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `BusinessPlace` | ✓ | |  | `branch` |
-| `Language` | ✓ | |  | `language` |
-| `BusinessPlaceDescription` |  | |  | `name` |
-| `_Language` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `BusinessPlace` | ✓ | |  | `branch` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `BusinessPlaceDescription` |  | |  | `name` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

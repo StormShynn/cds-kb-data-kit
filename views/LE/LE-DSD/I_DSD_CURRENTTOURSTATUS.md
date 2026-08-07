@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DSD_TourIdentification` | ✓ | |  | `tourid` |
-| `TourScenario` |  | |  | `scenario` |
-| `TourStartDate` |  | |  | `sdate` |
-| `TourStatusIdentification` |  | |  | `status_id` |
-| `ShipmentDocument` |  | |  | `shipment` |
-| `VisitListNumber` |  | |  | `vlid` |
-| `MainDriver` |  | |  | `driver` |
-| `DeliveryVehicleNumber` |  | |  | `vehicle` |
-| `AssignedObject` |  | |  | `objectass` |
-| `ShipmentType` |  | |  | `shtyp` |
-| `TransportationPlanningPoint` |  | |  | `tplst` |
-| `VisitPlanType` |  | |  | `vptyp` |
-| `RouteSettlementOffice` |  | |  | `bso` |
-| `RouteSettlementType` |  | |  | `sltyp` |
-| `TourStatusSequentialNumber` |  | |  | `last_count` |
-| `EnteredByUser` |  | |  | `iuser` |
-| `CreatedAtDate` |  | |  | `idate` |
-| `TimeOfCreation` |  | |  | `itime` |
-| `_TourScenario` | | ✓ | | |
-| `_TourStatusID` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_PlanType` | | ✓ | | |
-| `_SettlementOffice` | | ✓ | | |
-| `_SettlementTypes` | | ✓ | | |
-| `_User` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DSD_TourIdentification` | ✓ | |  | `tourid` |  |  |
+| `TourScenario` |  | |  | `scenario` |  |  |
+| `TourStartDate` |  | |  | `sdate` |  |  |
+| `TourStatusIdentification` |  | |  | `status_id` |  |  |
+| `ShipmentDocument` |  | |  | `shipment` |  |  |
+| `VisitListNumber` |  | |  | `vlid` |  |  |
+| `MainDriver` |  | |  | `driver` |  |  |
+| `DeliveryVehicleNumber` |  | |  | `vehicle` |  |  |
+| `AssignedObject` |  | |  | `objectass` |  |  |
+| `ShipmentType` |  | |  | `shtyp` |  |  |
+| `TransportationPlanningPoint` |  | |  | `tplst` |  |  |
+| `VisitPlanType` |  | |  | `vptyp` |  |  |
+| `RouteSettlementOffice` |  | |  | `bso` |  |  |
+| `RouteSettlementType` |  | |  | `sltyp` |  |  |
+| `TourStatusSequentialNumber` |  | |  | `last_count` |  |  |
+| `EnteredByUser` |  | |  | `iuser` |  |  |
+| `CreatedAtDate` |  | |  | `idate` |  |  |
+| `TimeOfCreation` |  | |  | `itime` |  |  |
+| `_TourScenario` | | ✓ | | | | |
+| `_TourStatusID` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_PlanType` | | ✓ | | | | |
+| `_SettlementOffice` | | ✓ | | | | |
+| `_SettlementTypes` | | ✓ | | | | |
+| `_User` | | ✓ | | | | |
 
 ## Associations
 

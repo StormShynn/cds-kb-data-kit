@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrderType` | ✓ | |  | `cast( SalesDocumentType as sales_order_type preserving type )` |
-| `SalesOrderProcessingType` |  | |  | `SalesDocumentProcessingType` |
-| `OrderTypeForBillingRequest` |  | |  |  |
-| `TradeComplianceIsActive` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_OrderTypeForBillingRequest` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrderType` | ✓ | |  | `cast( SalesDocumentType as sales_order_type preserving type )` |  |  |
+| `SalesOrderProcessingType` |  | |  | `SalesDocumentProcessingType` |  |  |
+| `OrderTypeForBillingRequest` |  | |  |  |  |  |
+| `TradeComplianceIsActive` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_OrderTypeForBillingRequest` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspToleranceSpecification` | ✓ | |  | `toleranzsl` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspToleranceSpecification` | ✓ | |  | `toleranzsl` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

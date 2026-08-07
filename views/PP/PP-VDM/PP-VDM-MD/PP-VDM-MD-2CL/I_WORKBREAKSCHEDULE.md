@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShiftGrouping` | ✓ | |  | `schgrup` |
-| `WorkBreakSchedule` | ✓ | |  | `paplan` |
-| `_Text` | | ✓ | | |
-| `_Text2` | | ✓ | | |
-| `_WorkBreak` | | ✓ | | |
-| `_ShiftGrouping` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShiftGrouping` | ✓ | |  | `schgrup` |  |  |
+| `WorkBreakSchedule` | ✓ | |  | `paplan` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Text2` | | ✓ | | | | |
+| `_WorkBreak` | | ✓ | | | | |
+| `_ShiftGrouping` | | ✓ | | | | |
 
 ## Associations
 

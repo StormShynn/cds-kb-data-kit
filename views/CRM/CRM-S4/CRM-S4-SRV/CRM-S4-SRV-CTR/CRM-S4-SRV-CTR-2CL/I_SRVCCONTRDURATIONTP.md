@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `SrvcDocDurationType` | ✓ | |  |  |
-| `SrvcDocDurationValue` |  | |  |  |
-| `SrvcDocDurationUnit` |  | |  |  |
-| `_DurationText` | | ✓ | | |
-| `_ServiceContractTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `SrvcDocDurationType` | ✓ | |  |  |  |  |
+| `SrvcDocDurationValue` |  | |  |  |  |  |
+| `SrvcDocDurationUnit` |  | |  |  |  |  |
+| `_DurationText` | | ✓ | | | | |
+| `_ServiceContractTP` | | ✓ | | | | |
 
 ## Source Code
 

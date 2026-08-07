@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AutomPostingToAcctgIsDisabled` |  | |  | `rfbfk` |
-| `_DummyAssociation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AutomPostingToAcctgIsDisabled` |  | |  | `rfbfk` |  |  |
+| `_DummyAssociation` | | ✓ | | | | |
 
 ## Source Code
 

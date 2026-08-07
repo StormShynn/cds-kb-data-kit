@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Division` | ✓ | |  | `spart` |
-| `Language` | ✓ | |  | `spras` |
-| `DivisionName` |  | |  | `cast(vtext as divisionname preserving type)` |
-| `_Division` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Division` | ✓ | |  | `spart` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `DivisionName` |  | |  | `cast(vtext as divisionname preserving type)` |  |  |
+| `_Division` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

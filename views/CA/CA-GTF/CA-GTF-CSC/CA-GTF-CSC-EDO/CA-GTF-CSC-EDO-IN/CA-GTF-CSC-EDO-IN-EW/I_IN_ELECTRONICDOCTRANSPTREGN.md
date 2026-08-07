@@ -28,58 +28,58 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |
-| `ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |
-| `ElectronicDocCountry` |  | | `_ElectronicDoc` | `ElectronicDocCountry` |
-| `ElectronicDocSourceType` |  | | `_ElectronicDoc` | `ElectronicDocSourceType` |
-| `ElectronicDocSourceKey` |  | | `_ElectronicDoc` | `ElectronicDocSourceKey` |
-| `ElectronicDocType` |  | | `_ElectronicDoc` | `ElectronicDocType` |
-| `ElectronicDocProcessStatus` |  | | `_ElectronicDoc` | `ElectronicDocProcessStatus` |
-| `ElectronicDocProcess` |  | | `_ElectronicDoc` | `ElectronicDocProcess` |
-| `ElectronicDocSequenceNmbr` |  | |  |  |
-| `IN_ElectronicDocEWbillNmbr` |  | |  |  |
-| `IN_EDocEWbillCreateDate` |  | |  |  |
-| `IN_EDocEWbillCreateTime` |  | |  |  |
-| `IN_EDocEWbillValidityDate` |  | |  |  |
-| `IN_EDocEWbillValidityTime` |  | |  |  |
-| `IN_EDocTransptDocNmbr` |  | |  |  |
-| `IN_EDocTransptDocDate` |  | |  |  |
-| `IN_EDocTransptDistanceVal` |  | |  |  |
-| `IN_EDocRmngTransptDstncVal` |  | |  |  |
-| `IN_EDocVehicleNumber` |  | |  |  |
-| `IN_ElectronicDocVehicleType` |  | |  |  |
-| `IN_ElectronicDocFromPlaceTxt` |  | |  |  |
-| `IN_ElectronicDocFromState` |  | |  |  |
-| `IN_ElectronicDocTransptMode` |  | |  |  |
-| `IN_EDocEWbillModifReasonCode` |  | |  |  |
-| `IN_EDocEWbillModifRemarksTxt` |  | |  |  |
-| `IN_EDocTransptrUpdtDate` |  | |  |  |
-| `IN_EDocEWbillUpdtDate` |  | |  |  |
-| `IN_EDocEWbillUpdtTime` |  | |  |  |
-| `IN_EDocEWbillValdtyExtnRsnCode` |  | |  |  |
-| `IN_EWbillValdtyExtnRemarksTxt` |  | |  |  |
-| `IN_EDocEWbillCancRsnCode` |  | |  |  |
-| `IN_EDocEWbillCancelDate` |  | |  |  |
-| `IN_EDocEWbillCancelTime` |  | |  |  |
-| `IN_EDocEWbillCancRemarksTxt` |  | |  |  |
-| `IN_ElectronicDocIsCancFlag` |  | |  |  |
-| `IN_ElectronicDocEditActionFlag` |  | |  |  |
-| `IN_ElectronicDocInvcNmbr` |  | |  |  |
-| `IN_ElectronicDocBusinessPlace` |  | |  |  |
-| `IN_EDocEWbillIsContingencyFlag` |  | |  |  |
-| `IN_ElectronicDocTransptrName` |  | |  |  |
-| `IN_ElectronicDocTransptrGSTIN` |  | |  |  |
-| `IN_EDocEWbillCtptyRejectStatus` |  | |  |  |
-| `IN_ElectronicDocCsgnmtStatus` |  | |  |  |
-| `IN_EDocEWbillTransitType` |  | |  |  |
-| `IN_EDocEWbillFromPinCode` |  | |  |  |
-| `IN_EDocEWbillExtnAddrLine1Txt` |  | |  |  |
-| `IN_EDocEWbillExtnAddrLine2Txt` |  | |  |  |
-| `IN_EDocEWbillExtnAddrLine3Txt` |  | |  |  |
-| `IN_EDocEWbillIsMultiVehFlag` |  | |  |  |
-| `IN_ElectronicDocSubSupplyDesc` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |  |  |
+| `ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |  |  |
+| `ElectronicDocCountry` |  | | `_ElectronicDoc` | `ElectronicDocCountry` |  |  |
+| `ElectronicDocSourceType` |  | | `_ElectronicDoc` | `ElectronicDocSourceType` |  |  |
+| `ElectronicDocSourceKey` |  | | `_ElectronicDoc` | `ElectronicDocSourceKey` |  |  |
+| `ElectronicDocType` |  | | `_ElectronicDoc` | `ElectronicDocType` |  |  |
+| `ElectronicDocProcessStatus` |  | | `_ElectronicDoc` | `ElectronicDocProcessStatus` |  |  |
+| `ElectronicDocProcess` |  | | `_ElectronicDoc` | `ElectronicDocProcess` |  |  |
+| `ElectronicDocSequenceNmbr` |  | |  |  |  |  |
+| `IN_ElectronicDocEWbillNmbr` |  | |  |  |  |  |
+| `IN_EDocEWbillCreateDate` |  | |  |  |  |  |
+| `IN_EDocEWbillCreateTime` |  | |  |  |  |  |
+| `IN_EDocEWbillValidityDate` |  | |  |  |  |  |
+| `IN_EDocEWbillValidityTime` |  | |  |  |  |  |
+| `IN_EDocTransptDocNmbr` |  | |  |  |  |  |
+| `IN_EDocTransptDocDate` |  | |  |  |  |  |
+| `IN_EDocTransptDistanceVal` |  | |  |  |  |  |
+| `IN_EDocRmngTransptDstncVal` |  | |  |  |  |  |
+| `IN_EDocVehicleNumber` |  | |  |  |  |  |
+| `IN_ElectronicDocVehicleType` |  | |  |  |  |  |
+| `IN_ElectronicDocFromPlaceTxt` |  | |  |  |  |  |
+| `IN_ElectronicDocFromState` |  | |  |  |  |  |
+| `IN_ElectronicDocTransptMode` |  | |  |  |  |  |
+| `IN_EDocEWbillModifReasonCode` |  | |  |  |  |  |
+| `IN_EDocEWbillModifRemarksTxt` |  | |  |  |  |  |
+| `IN_EDocTransptrUpdtDate` |  | |  |  |  |  |
+| `IN_EDocEWbillUpdtDate` |  | |  |  |  |  |
+| `IN_EDocEWbillUpdtTime` |  | |  |  |  |  |
+| `IN_EDocEWbillValdtyExtnRsnCode` |  | |  |  |  |  |
+| `IN_EWbillValdtyExtnRemarksTxt` |  | |  |  |  |  |
+| `IN_EDocEWbillCancRsnCode` |  | |  |  |  |  |
+| `IN_EDocEWbillCancelDate` |  | |  |  |  |  |
+| `IN_EDocEWbillCancelTime` |  | |  |  |  |  |
+| `IN_EDocEWbillCancRemarksTxt` |  | |  |  |  |  |
+| `IN_ElectronicDocIsCancFlag` |  | |  |  |  |  |
+| `IN_ElectronicDocEditActionFlag` |  | |  |  |  |  |
+| `IN_ElectronicDocInvcNmbr` |  | |  |  |  |  |
+| `IN_ElectronicDocBusinessPlace` |  | |  |  |  |  |
+| `IN_EDocEWbillIsContingencyFlag` |  | |  |  |  |  |
+| `IN_ElectronicDocTransptrName` |  | |  |  |  |  |
+| `IN_ElectronicDocTransptrGSTIN` |  | |  |  |  |  |
+| `IN_EDocEWbillCtptyRejectStatus` |  | |  |  |  |  |
+| `IN_ElectronicDocCsgnmtStatus` |  | |  |  |  |  |
+| `IN_EDocEWbillTransitType` |  | |  |  |  |  |
+| `IN_EDocEWbillFromPinCode` |  | |  |  |  |  |
+| `IN_EDocEWbillExtnAddrLine1Txt` |  | |  |  |  |  |
+| `IN_EDocEWbillExtnAddrLine2Txt` |  | |  |  |  |  |
+| `IN_EDocEWbillExtnAddrLine3Txt` |  | |  |  |  |  |
+| `IN_EDocEWbillIsMultiVehFlag` |  | |  |  |  |  |
+| `IN_ElectronicDocSubSupplyDesc` |  | |  |  |  |  |
 
 ## Source Code
 

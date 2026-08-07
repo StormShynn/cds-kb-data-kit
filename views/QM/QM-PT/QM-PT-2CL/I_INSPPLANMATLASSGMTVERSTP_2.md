@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `InspectionPlanGroup` | ✓ | |  |  |
-| `InspectionPlan` | ✓ | |  |  |
-| `InspPlanMatlAssignment` | ✓ | |  |  |
-| `InspPlanMatlAssgmtIntVersion` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `MultipleSpecificationObject` |  | |  |  |
-| `MultipleSpecificationObjType` |  | |  |  |
-| `BOOSearchText` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_Customer` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_InspPlan` | | ✓ | | |
-| `_InspectionPlanVersion` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `InspectionPlanGroup` | ✓ | |  |  |  |  |
+| `InspectionPlan` | ✓ | |  |  |  |  |
+| `InspPlanMatlAssignment` | ✓ | |  |  |  |  |
+| `InspPlanMatlAssgmtIntVersion` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `MultipleSpecificationObject` |  | |  |  |  |  |
+| `MultipleSpecificationObjType` |  | |  |  |  |  |
+| `BOOSearchText` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_InspPlan` | | ✓ | | | | |
+| `_InspectionPlanVersion` | | ✓ | | | | |
 
 ## Source Code
 

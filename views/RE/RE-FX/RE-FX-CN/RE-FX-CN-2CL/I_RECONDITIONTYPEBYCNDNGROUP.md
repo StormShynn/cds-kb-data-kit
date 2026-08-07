@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REConditionGroup` | ✓ | |  | `condgroup` |
-| `REConditionType` | ✓ | |  | `condtype` |
-| `REConditionTypeDisplayOrder` |  | |  | `displayorder` |
-| `REExtConditionPurpose` |  | |  | `condpurposeext` |
-| `REAdjustmentRule` |  | |  | `adjmrule` |
-| `REConditionTypeIsAutoDefault` |  | |  | `typeautodefault` |
-| `REConditionTypeIsLocked` |  | |  | `cdtypelocked` |
-| `REConditionTypeIsHidden` |  | |  | `cdtypehide` |
-| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
-| `_REConditionType` | | ✓ | | |
-| `_REConditionGroup` | | ✓ | | |
-| `_REAdjustmentRule` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REConditionGroup` | ✓ | |  | `condgroup` |  |  |
+| `REConditionType` | ✓ | |  | `condtype` |  |  |
+| `REConditionTypeDisplayOrder` |  | |  | `displayorder` |  |  |
+| `REExtConditionPurpose` |  | |  | `condpurposeext` |  |  |
+| `REAdjustmentRule` |  | |  | `adjmrule` |  |  |
+| `REConditionTypeIsAutoDefault` |  | |  | `typeautodefault` |  |  |
+| `REConditionTypeIsLocked` |  | |  | `cdtypelocked` |  |  |
+| `REConditionTypeIsHidden` |  | |  | `cdtypehide` |  |  |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |  |  |
+| `_REConditionType` | | ✓ | | | | |
+| `_REConditionGroup` | | ✓ | | | | |
+| `_REAdjustmentRule` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,45 +28,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderStageUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_stage_db_key preserving type )` |
-| `TransportationOrderUUID` |  | |  | `cast(root_key as /scmtms/vdm_tor_db_key preserving type)` |
-| `TransportationOrderStage` |  | |  | `cast(successor_id as /scmtms/vdm_stage_id preserving type )` |
-| `TranspOrdStageType` |  | |  | `cast(stage_type as /scmtms/vdm_stage_type preserving type )` |
-| `TranspOrdStageCategory` |  | |  | `cast(stage_cat as /scmtms/vdm_stage_category preserving type )` |
-| `TransportationMode` |  | |  | `cast(mot as /scmtms/vdm_tor_trmodcode preserving type )` |
-| `TransportationModeCategory` |  | |  | `cast(mot_cat as /scmtms/vdm_tor_trmod_cat preserving type )` |
-| `TransportationShippingType` |  | |  | `shipping_type` |
-| `TranspOrdStageVoyage` |  | |  | `cast(voyage_id as /scmtms/vdm_s_voyage_id preserving type )` |
-| `TranspOrdStageVessel` |  | |  | `cast(vessel_id as /scmtms/vdm_s_vessel_id preserving type )` |
-| `TranspOrdStageFlight` |  | |  | `cast(flight_code as /scmtms/vdm_s_flight_code preserving type )` |
-| `TranspOrdStgeInvcgCarrLvl` |  | |  | `stg_pymt_ind` |
-| `CarrierUUID` |  | |  | `cast(tsp_key as /scmtms/vdm_carrier_party_key preserving type )` |
-| `Carrier` |  | |  | `tsp_id` |
-| `TranspOrdStageSCACCode` |  | |  | `cast(tsp_scac as /scmtms/vdm_s_scacd preserving type )` |
-| `TranspOrdStgeInvcgCarrUUID` |  | |  | `cast (tsp_pymt_key as /scmtms/vdm_inv_carr_uuid preserving type )` |
-| `TranspOrdStageInvoicingCarrier` |  | |  | `tsp_pymt_id` |
-| `TranspOrdStgeInvcgSCACCode` |  | |  | `cast(tsp_pymt_scac as /scmtms/vdm_s_pymt_scacd preserving type )` |
-| `TranspOrdStageDistance` |  | |  | `cast(distance_km as /scmtms/vdm_stage_dstnc preserving type)` |
-| `TranspOrdStageDistanceUnit` |  | |  | `cast('KM' as /scmtms/vdm_stage_dstnc_unit)` |
-| `TranspOrdStageNetDuration` |  | |  | `cast(duration_net as /scmtms/vdm_stg_net_duration preserving type )` |
-| `TranspOrdStageSrceStopUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_stg_s_stop_key preserving type )` |
-| `TranspOrdStageDestStopUUID` |  | |  | `cast(succ_stop_key as /scmtms/vdm_tor_stg_d_stop_key preserving type )` |
-| `_TransportationOrder` | | ✓ | | |
-| `_TranspOrdStageSrceStop` | | ✓ | | |
-| `_TranspOrdStageDestStop` | | ✓ | | |
-| `_TranspOrdStageType` | | ✓ | | |
-| `_TranspOrdStageCategory` | | ✓ | | |
-| `_Carrier` | | ✓ | | |
-| `_TranspOrdStageInvoicingCarr` | | ✓ | | |
-| `_TranspSCACCode` | | ✓ | | |
-| `_TranspOrdStgeInvcgSCACCode` | | ✓ | | |
-| `_TransportationMode` | | ✓ | | |
-| `_TransportationModeCategory` | | ✓ | | |
-| `_TranspOrdStageShippingType` | | ✓ | | |
-| `_TranspOrdStgeInvcgCarrLvl` | | ✓ | | |
-| `_TransportationOrderStop` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderStageUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_stage_db_key preserving type )` |  |  |
+| `TransportationOrderUUID` |  | |  | `cast(root_key as /scmtms/vdm_tor_db_key preserving type)` |  |  |
+| `TransportationOrderStage` |  | |  | `cast(successor_id as /scmtms/vdm_stage_id preserving type )` |  |  |
+| `TranspOrdStageType` |  | |  | `cast(stage_type as /scmtms/vdm_stage_type preserving type )` |  |  |
+| `TranspOrdStageCategory` |  | |  | `cast(stage_cat as /scmtms/vdm_stage_category preserving type )` |  |  |
+| `TransportationMode` |  | |  | `cast(mot as /scmtms/vdm_tor_trmodcode preserving type )` |  |  |
+| `TransportationModeCategory` |  | |  | `cast(mot_cat as /scmtms/vdm_tor_trmod_cat preserving type )` |  |  |
+| `TransportationShippingType` |  | |  | `shipping_type` |  |  |
+| `TranspOrdStageVoyage` |  | |  | `cast(voyage_id as /scmtms/vdm_s_voyage_id preserving type )` |  |  |
+| `TranspOrdStageVessel` |  | |  | `cast(vessel_id as /scmtms/vdm_s_vessel_id preserving type )` |  |  |
+| `TranspOrdStageFlight` |  | |  | `cast(flight_code as /scmtms/vdm_s_flight_code preserving type )` |  |  |
+| `TranspOrdStgeInvcgCarrLvl` |  | |  | `stg_pymt_ind` |  |  |
+| `CarrierUUID` |  | |  | `cast(tsp_key as /scmtms/vdm_carrier_party_key preserving type )` |  |  |
+| `Carrier` |  | |  | `tsp_id` |  |  |
+| `TranspOrdStageSCACCode` |  | |  | `cast(tsp_scac as /scmtms/vdm_s_scacd preserving type )` |  |  |
+| `TranspOrdStgeInvcgCarrUUID` |  | |  | `cast (tsp_pymt_key as /scmtms/vdm_inv_carr_uuid preserving type )` |  |  |
+| `TranspOrdStageInvoicingCarrier` |  | |  | `tsp_pymt_id` |  |  |
+| `TranspOrdStgeInvcgSCACCode` |  | |  | `cast(tsp_pymt_scac as /scmtms/vdm_s_pymt_scacd preserving type )` |  |  |
+| `TranspOrdStageDistance` |  | |  | `cast(distance_km as /scmtms/vdm_stage_dstnc preserving type)` |  |  |
+| `TranspOrdStageDistanceUnit` |  | |  | `cast('KM' as /scmtms/vdm_stage_dstnc_unit)` |  |  |
+| `TranspOrdStageNetDuration` |  | |  | `cast(duration_net as /scmtms/vdm_stg_net_duration preserving type )` |  |  |
+| `TranspOrdStageSrceStopUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_stg_s_stop_key preserving type )` |  |  |
+| `TranspOrdStageDestStopUUID` |  | |  | `cast(succ_stop_key as /scmtms/vdm_tor_stg_d_stop_key preserving type )` |  |  |
+| `_TransportationOrder` | | ✓ | | | | |
+| `_TranspOrdStageSrceStop` | | ✓ | | | | |
+| `_TranspOrdStageDestStop` | | ✓ | | | | |
+| `_TranspOrdStageType` | | ✓ | | | | |
+| `_TranspOrdStageCategory` | | ✓ | | | | |
+| `_Carrier` | | ✓ | | | | |
+| `_TranspOrdStageInvoicingCarr` | | ✓ | | | | |
+| `_TranspSCACCode` | | ✓ | | | | |
+| `_TranspOrdStgeInvcgSCACCode` | | ✓ | | | | |
+| `_TransportationMode` | | ✓ | | | | |
+| `_TransportationModeCategory` | | ✓ | | | | |
+| `_TranspOrdStageShippingType` | | ✓ | | | | |
+| `_TranspOrdStgeInvcgCarrLvl` | | ✓ | | | | |
+| `_TransportationOrderStop` | | ✓ | | | | |
 
 ## Associations
 

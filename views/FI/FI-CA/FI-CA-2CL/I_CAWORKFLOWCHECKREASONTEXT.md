@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAWorkflowCheckReason` | ✓ | |  | `c4eye` |
-| `Language` | ✓ | |  | `spras` |
-| `CAWorkflowCheckReasonName` |  | |  | `ltext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAWorkflowCheckReason` | ✓ | |  | `c4eye` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAWorkflowCheckReasonName` |  | |  | `ltext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

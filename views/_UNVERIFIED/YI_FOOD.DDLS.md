@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `carrid` | ✓ | |  |  |
-| `mealnumber` | ✓ | |  |  |
-| `food_category` |  | |  | `'MAIN_COURSE'` |
-| `text` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `carrid` | ✓ | |  |  |  |  |
+| `mealnumber` | ✓ | |  |  |  |  |
+| `food_category` |  | |  | `'MAIN_COURSE'` |  |  |
+| `text` |  | |  |  |  |  |
 
 ## Source Code
 

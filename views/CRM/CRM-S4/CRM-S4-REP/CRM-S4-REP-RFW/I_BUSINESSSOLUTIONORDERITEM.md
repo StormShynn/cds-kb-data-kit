@@ -27,168 +27,168 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  | `ServiceDocument` |
-| `BusinessSolutionOrderItem` | ✓ | |  | `ServiceDocumentItem` |
-| `ServiceObjectType` |  | |  |  |
-| `BusinessSolutionOrderUUID` |  | |  | `ServiceDocumentUUID` |
-| `ServiceDocumentType` |  | |  |  |
-| `BusinessSolutionOrderItemUUID` |  | |  | `ServiceDocumentItemUUID` |
-| `ServiceDocumentItemObjectType` |  | |  |  |
-| `BusSolnOrdItmDescription` |  | |  | `ServiceDocumentItemDescription` |
-| `Language` |  | |  |  |
-| `BusSolnOrdDescription` |  | |  | `ServiceDocumentDescription` |
-| `BusSolnOrdItmCategory` |  | |  | `ServiceDocItemCategory` |
-| `ParentServiceDocumentItemUUID` |  | |  |  |
-| `BusSolnOrderItemCharUUID` |  | |  | `cast( ServiceDocumentItemCharUUID as sysuuid_c preserving type )` |
-| `PostingDate` |  | |  |  |
-| `ServiceDocItemCreationDateTime` |  | |  |  |
-| `ServiceDocItemChangedDateTime` |  | |  |  |
-| `ServiceDocItemCreatedByUser` |  | |  |  |
-| `ServiceDocItemChangedByUser` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ProfitCenterDeterminationDate` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |
-| `OriginallyRequestedProduct` |  | |  |  |
-| `Product` |  | |  |  |
-| `BusSolnOrdItemBundleProduct` |  | |  |  |
-| `BusSolnOrdItemBundleItem` |  | |  |  |
-| `Quantity` |  | |  | `ServiceDocumentItemQuantity` |
-| `QuantityUnit` |  | |  | `ServiceDocItemQuantityUnit` |
-| `IncotermsPart1` |  | |  |  |
-| `IncotermsPart2` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `DeliveryGroup` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `OrderCombinationIsAllowed` |  | |  |  |
-| `DeliveryBlockReason` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SoldToPartyCountry` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ServiceDocumentItemNetAmount` |  | |  |  |
-| `ServiceDocItemGrossAmount` |  | |  |  |
-| `ServiceDocumentItemTaxAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ReferenceCurrency` |  | |  | `StatisticsCurrency` |
-| `ExchangeRateType` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `AccountingExchangeRate` |  | |  | `cast( AccountingExchangeRate as fis_exchange_rate preserving type )` |
-| `CustomerGroup` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `BusSolnOrdItmRjcnReason` |  | |  | `ServiceDocItemRejectionReason` |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `BillableControl` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `BusSolnOrdItmStatus` |  | |  | `ServiceDocumentItemStatus` |
-| `BusSolnOrdItmIsReleased` |  | |  | `ServiceDocumentItemIsReleased` |
-| `BusSolnOrdItemHasError` |  | |  | `ServiceDocumentItemHasError` |
-| `SrvcDocItmDeliveryStatus` |  | |  |  |
-| `BusSolnOrdItmIsRejected` |  | |  | `ServiceDocumentItemIsRejected` |
-| `ServiceDocumentItemIsOpen` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `ProductGroup1` |  | |  |  |
-| `ProductGroup2` |  | |  |  |
-| `ProductGroup3` |  | |  |  |
-| `ProductGroup4` |  | |  |  |
-| `ProductGroup5` |  | |  |  |
-| `ResponsibleCostCenter` |  | |  |  |
-| `EnterpriseProjectServiceOrg` |  | |  |  |
-| `ServiceContrItemStartDateTime` |  | |  |  |
-| `ServiceContrItemEndDateTime` |  | |  |  |
-| `MidBillgCycExprtnIsAllowed` |  | |  |  |
-| `SubscrpnContrTrmsAreSpecified` |  | |  |  |
-| `SubscriptionBillingCycle` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `ResponseProfile` |  | |  |  |
-| `ServiceProfile` |  | |  |  |
-| `SrvcContrItemRnwlDuration` |  | |  |  |
-| `SrvcContrItemRnwlDurationUnit` |  | |  |  |
-| `SrvcContrItemExtensionDuration` |  | |  |  |
-| `SrvcContrItemExtnDurationUnit` |  | |  |  |
-| `SubscrpnBillgRatePlanCharUUID` |  | |  | `cast( SubscrpnBillgRatePlanCharUUID as sysuuid_c preserving type )` |
-| `PlannedServiceStartDateTime` |  | |  |  |
-| `PlannedServiceEndDateTime` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `SettlementPeriodRuleUUID` |  | |  |  |
-| `SrvcDocItmPartReferenceItem` |  | |  |  |
-| `BillingPlanBillingDateRuleUUID` |  | |  |  |
-| `_BusSolnOrdItmCategory` |  | |  | `_ServiceDocItemCategory` |
-| `_BusSolnOrdItmHasError` |  | |  | `_ServiceDocItemHasError` |
-| `_BusSolnOrdItmRjcnReason` |  | |  | `_ServiceDocItemRejectionReason` |
-| `_BusinessSolutionOrder` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_ServiceDocumentIsOpen` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_BillingBlockReason` | | ✓ | | |
-| `_DeliveryBlockReason` | | ✓ | | |
-| `_SalesUnit` | | ✓ | | |
-| `_VolumeUnit` | | ✓ | | |
-| `_WeightUnit` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SrvcContrItemRnwlDurationUnit` | | ✓ | | |
-| `_SrvcContrItemExtnDurationUnit` | | ✓ | | |
-| `_StatusObjItemStatus` | | ✓ | | |
-| `_ResponseProfile` | | ✓ | | |
-| `_ServiceProfile` | | ✓ | | |
-| `_BillableControl` | | ✓ | | |
-| `_BillPlanDateRule` | | ✓ | | |
-| `_SettlementDateRule` | | ✓ | | |
-| `_MaterialPricingGroup` | | ✓ | | |
-| `_AdditionalMaterialGroup1` | | ✓ | | |
-| `_AdditionalMaterialGroup2` | | ✓ | | |
-| `_AdditionalMaterialGroup3` | | ✓ | | |
-| `_AdditionalMaterialGroup4` | | ✓ | | |
-| `_AdditionalMaterialGroup5` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_ServiceProductList` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  | `ServiceDocument` |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  | `ServiceDocumentItem` |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `BusinessSolutionOrderUUID` |  | |  | `ServiceDocumentUUID` |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `BusinessSolutionOrderItemUUID` |  | |  | `ServiceDocumentItemUUID` |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
+| `BusSolnOrdItmDescription` |  | |  | `ServiceDocumentItemDescription` |  |  |
+| `Language` |  | |  |  |  |  |
+| `BusSolnOrdDescription` |  | |  | `ServiceDocumentDescription` |  |  |
+| `BusSolnOrdItmCategory` |  | |  | `ServiceDocItemCategory` |  |  |
+| `ParentServiceDocumentItemUUID` |  | |  |  |  |  |
+| `BusSolnOrderItemCharUUID` |  | |  | `cast( ServiceDocumentItemCharUUID as sysuuid_c preserving type )` |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ProfitCenterDeterminationDate` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
+| `OriginallyRequestedProduct` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `BusSolnOrdItemBundleProduct` |  | |  |  |  |  |
+| `BusSolnOrdItemBundleItem` |  | |  |  |  |  |
+| `Quantity` |  | |  | `ServiceDocumentItemQuantity` |  |  |
+| `QuantityUnit` |  | |  | `ServiceDocItemQuantityUnit` |  |  |
+| `IncotermsPart1` |  | |  |  |  |  |
+| `IncotermsPart2` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `DeliveryGroup` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `OrderCombinationIsAllowed` |  | |  |  |  |  |
+| `DeliveryBlockReason` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
+| `ServiceDocItemGrossAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ReferenceCurrency` |  | |  | `StatisticsCurrency` |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `AccountingExchangeRate` |  | |  | `cast( AccountingExchangeRate as fis_exchange_rate preserving type )` |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `BusSolnOrdItmRjcnReason` |  | |  | `ServiceDocItemRejectionReason` |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `BillableControl` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `BusSolnOrdItmStatus` |  | |  | `ServiceDocumentItemStatus` |  |  |
+| `BusSolnOrdItmIsReleased` |  | |  | `ServiceDocumentItemIsReleased` |  |  |
+| `BusSolnOrdItemHasError` |  | |  | `ServiceDocumentItemHasError` |  |  |
+| `SrvcDocItmDeliveryStatus` |  | |  |  |  |  |
+| `BusSolnOrdItmIsRejected` |  | |  | `ServiceDocumentItemIsRejected` |  |  |
+| `ServiceDocumentItemIsOpen` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `ProductGroup1` |  | |  |  |  |  |
+| `ProductGroup2` |  | |  |  |  |  |
+| `ProductGroup3` |  | |  |  |  |  |
+| `ProductGroup4` |  | |  |  |  |  |
+| `ProductGroup5` |  | |  |  |  |  |
+| `ResponsibleCostCenter` |  | |  |  |  |  |
+| `EnterpriseProjectServiceOrg` |  | |  |  |  |  |
+| `ServiceContrItemStartDateTime` |  | |  |  |  |  |
+| `ServiceContrItemEndDateTime` |  | |  |  |  |  |
+| `MidBillgCycExprtnIsAllowed` |  | |  |  |  |  |
+| `SubscrpnContrTrmsAreSpecified` |  | |  |  |  |  |
+| `SubscriptionBillingCycle` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `ResponseProfile` |  | |  |  |  |  |
+| `ServiceProfile` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDuration` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDurationUnit` |  | |  |  |  |  |
+| `SrvcContrItemExtensionDuration` |  | |  |  |  |  |
+| `SrvcContrItemExtnDurationUnit` |  | |  |  |  |  |
+| `SubscrpnBillgRatePlanCharUUID` |  | |  | `cast( SubscrpnBillgRatePlanCharUUID as sysuuid_c preserving type )` |  |  |
+| `PlannedServiceStartDateTime` |  | |  |  |  |  |
+| `PlannedServiceEndDateTime` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `SettlementPeriodRuleUUID` |  | |  |  |  |  |
+| `SrvcDocItmPartReferenceItem` |  | |  |  |  |  |
+| `BillingPlanBillingDateRuleUUID` |  | |  |  |  |  |
+| `_BusSolnOrdItmCategory` |  | |  | `_ServiceDocItemCategory` |  |  |
+| `_BusSolnOrdItmHasError` |  | |  | `_ServiceDocItemHasError` |  |  |
+| `_BusSolnOrdItmRjcnReason` |  | |  | `_ServiceDocItemRejectionReason` |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_BillingBlockReason` | | ✓ | | | | |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_SalesUnit` | | ✓ | | | | |
+| `_VolumeUnit` | | ✓ | | | | |
+| `_WeightUnit` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SrvcContrItemRnwlDurationUnit` | | ✓ | | | | |
+| `_SrvcContrItemExtnDurationUnit` | | ✓ | | | | |
+| `_StatusObjItemStatus` | | ✓ | | | | |
+| `_ResponseProfile` | | ✓ | | | | |
+| `_ServiceProfile` | | ✓ | | | | |
+| `_BillableControl` | | ✓ | | | | |
+| `_BillPlanDateRule` | | ✓ | | | | |
+| `_SettlementDateRule` | | ✓ | | | | |
+| `_MaterialPricingGroup` | | ✓ | | | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_ServiceProductList` | | ✓ | | | | |
 
 ## Source Code
 

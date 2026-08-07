@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SDDocumentCategory` | ✓ | |  | `cast(substring(dd07t.domvalue_l, 1, 4) as vbtypl preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SDDocumentCategoryName` |  | |  | `cast(ddtext as sddocumentcategoryname preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SDDocumentCategory` | ✓ | |  | `cast(substring(dd07t.domvalue_l, 1, 4) as vbtypl preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SDDocumentCategoryName` |  | |  | `cast(ddtext as sddocumentcategoryname preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

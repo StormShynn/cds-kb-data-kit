@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceStrategy` | ✓ | |  | `strat` |
-| `MaintenanceTaskPerformanceUnit` |  | |  | `zeieh` |
-| `MaintenanceStrategyActyUnit` |  | |  | `leieh` |
-| `MaintenanceStrategyCycTotDurn` |  | |  | `zyk1g` |
-| `MaintenanceStrategyCycDurn` |  | |  | `zyk2g` |
-| `MaintPackageMinimumStepValue` |  | |  | `zyk1k` |
-| `PerfBasedMaintPckgMinStepValue` |  | |  | `zyk2k` |
-| `NumberOfMaintenancePackages` |  | |  | `anzp1` |
-| `NumberOfPerfBasedMaintPackages` |  | |  | `anzp2` |
-| `LateCompletionTolerancePercent` |  | |  | `tole1` |
-| `EarlyCompletionTolerancePct` |  | |  | `tole2` |
-| `LateCompletionShiftInPercent` |  | |  | `vers1` |
-| `EarlyCompletionShiftInPercent` |  | |  | `vers2` |
-| `MaintStrategySchedulingCode` |  | |  | `termk` |
-| `MaintenanceCallHorizonPercent` |  | |  | `horiz` |
-| `MaintenanceCallHorizonCalcType` |  | |  | `cast(t351.horiz_qualifier as eam_cc_callhorizon_calc_type preserving type)` |
-| `FactoryCalendar` |  | |  | `fabkl` |
-| `AuthorizationGroup` |  | |  | `authgr` |
-| `_MaintenanceStrategyText` | | ✓ | | |
-| `_MaintenanceStrategyUnit` | | ✓ | | |
-| `_FactoryCalendar` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceStrategy` | ✓ | |  | `strat` |  |  |
+| `MaintenanceTaskPerformanceUnit` |  | |  | `zeieh` |  |  |
+| `MaintenanceStrategyActyUnit` |  | |  | `leieh` |  |  |
+| `MaintenanceStrategyCycTotDurn` |  | |  | `zyk1g` |  |  |
+| `MaintenanceStrategyCycDurn` |  | |  | `zyk2g` |  |  |
+| `MaintPackageMinimumStepValue` |  | |  | `zyk1k` |  |  |
+| `PerfBasedMaintPckgMinStepValue` |  | |  | `zyk2k` |  |  |
+| `NumberOfMaintenancePackages` |  | |  | `anzp1` |  |  |
+| `NumberOfPerfBasedMaintPackages` |  | |  | `anzp2` |  |  |
+| `LateCompletionTolerancePercent` |  | |  | `tole1` |  |  |
+| `EarlyCompletionTolerancePct` |  | |  | `tole2` |  |  |
+| `LateCompletionShiftInPercent` |  | |  | `vers1` |  |  |
+| `EarlyCompletionShiftInPercent` |  | |  | `vers2` |  |  |
+| `MaintStrategySchedulingCode` |  | |  | `termk` |  |  |
+| `MaintenanceCallHorizonPercent` |  | |  | `horiz` |  |  |
+| `MaintenanceCallHorizonCalcType` |  | |  | `cast(t351.horiz_qualifier as eam_cc_callhorizon_calc_type preserving type)` |  |  |
+| `FactoryCalendar` |  | |  | `fabkl` |  |  |
+| `AuthorizationGroup` |  | |  | `authgr` |  |  |
+| `_MaintenanceStrategyText` | | ✓ | | | | |
+| `_MaintenanceStrategyUnit` | | ✓ | | | | |
+| `_FactoryCalendar` | | ✓ | | | | |
 
 ## Associations
 

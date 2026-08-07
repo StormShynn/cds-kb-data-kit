@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfAccounts` | ✓ | |  |  |
-| `OffsettingAccountType` | ✓ | |  |  |
-| `OffsettingAccount` | ✓ | |  |  |
-| `OffsettingAccountName` |  | |  |  |
-| `OffsettingAccountShortName` |  | |  |  |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_GLAccount` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_OffsettingAccountType` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  |  |  |  |
+| `OffsettingAccountType` | ✓ | |  |  |  |  |
+| `OffsettingAccount` | ✓ | |  |  |  |  |
+| `OffsettingAccountName` |  | |  |  |  |  |
+| `OffsettingAccountShortName` |  | |  |  |  |  |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_GLAccount` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_OffsettingAccountType` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

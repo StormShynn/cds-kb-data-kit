@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KnbnCtrlCycExtProcmtCtrlType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pksaf)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `KnbnExtProcmtCtrlTypeName` |  | |  | `cast(ddtext as vdm_pksaf_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KnbnExtProcmtCtrlType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KnbnCtrlCycExtProcmtCtrlType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pksaf)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `KnbnExtProcmtCtrlTypeName` |  | |  | `cast(ddtext as vdm_pksaf_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KnbnExtProcmtCtrlType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

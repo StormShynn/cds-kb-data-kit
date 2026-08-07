@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalReqQuestionValueUUID` | ✓ | |  |  |
-| `SuplrEvalReqUUID` |  | |  |  |
-| `SuplrEvalReqQuestionUUID` |  | |  |  |
-| `AnswerScore` |  | |  |  |
-| `SuplrEvalRspQuestionValue` |  | |  |  |
-| `SuplrEvalOrdinalNumber` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalReqQuestionValueUUID` | ✓ | |  |  |  |  |
+| `SuplrEvalReqUUID` |  | |  |  |  |  |
+| `SuplrEvalReqQuestionUUID` |  | |  |  |  |  |
+| `AnswerScore` |  | |  |  |  |  |
+| `SuplrEvalRspQuestionValue` |  | |  |  |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |  |  |
 
 ## Source Code
 

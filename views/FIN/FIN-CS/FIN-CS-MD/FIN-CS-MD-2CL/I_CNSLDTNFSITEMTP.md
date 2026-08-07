@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |
-| `CnsldtnFinancialStatementItem` | ✓ | | `_Source` | `CnsldtnFinancialStatementItem` |
-| `ConsolidationFSItemType` |  | | `_Source` | `ConsolidationFSItemType` |
-| `ConsolidationBreakdownCategory` |  | | `_Source` | `ConsolidationBreakdownCategory` |
-| `CnsldtnFSItemIsForCnsldtnOnly` |  | | `_Source` | `CnsldtnFSItemIsForCnsldtnOnly` |
-| `CnsldtnFSItemPostingIsBlocked` |  | | `_Source` | `CnsldtnFSItemPostingIsBlocked` |
-| `CnsldtnFSItemIsNetBalCarryFwd` |  | | `_Source` | `CnsldtnFSItemIsNetBalCarryFwd` |
-| `CnsldtnFSItemLink` |  | | `_Source` | `CnsldtnFSItemLink` |
-| `CnsldtnFSItemLinkLabel` |  | | `_Source` | `CnsldtnFSItemLinkLabel` |
-| `CnsldtnSignLogicIsFSItemSpcfc` |  | | `_Source` | `CnsldtnSignLogicIsFSItemSpcfc` |
-| `ConsolidationSignLogicType` |  | | `_Source` | `ConsolidationSignLogicType` |
-| `_Text` | | ✓ | | |
-| `_CnsldtnFSItemByTimeVersion` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |  |  |
+| `CnsldtnFinancialStatementItem` | ✓ | | `_Source` | `CnsldtnFinancialStatementItem` |  |  |
+| `ConsolidationFSItemType` |  | | `_Source` | `ConsolidationFSItemType` |  |  |
+| `ConsolidationBreakdownCategory` |  | | `_Source` | `ConsolidationBreakdownCategory` |  |  |
+| `CnsldtnFSItemIsForCnsldtnOnly` |  | | `_Source` | `CnsldtnFSItemIsForCnsldtnOnly` |  |  |
+| `CnsldtnFSItemPostingIsBlocked` |  | | `_Source` | `CnsldtnFSItemPostingIsBlocked` |  |  |
+| `CnsldtnFSItemIsNetBalCarryFwd` |  | | `_Source` | `CnsldtnFSItemIsNetBalCarryFwd` |  |  |
+| `CnsldtnFSItemLink` |  | | `_Source` | `CnsldtnFSItemLink` |  |  |
+| `CnsldtnFSItemLinkLabel` |  | | `_Source` | `CnsldtnFSItemLinkLabel` |  |  |
+| `CnsldtnSignLogicIsFSItemSpcfc` |  | | `_Source` | `CnsldtnSignLogicIsFSItemSpcfc` |  |  |
+| `ConsolidationSignLogicType` |  | | `_Source` | `ConsolidationSignLogicType` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CnsldtnFSItemByTimeVersion` | | ✓ | | | | |
 
 ## Source Code
 

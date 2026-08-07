@@ -31,73 +31,73 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMInboundDelivery` | ✓ | |  |  |
-| `EWMInboundDeliveryItem` | ✓ | |  |  |
-| `InboundDeliveryUUID` |  | |  |  |
-| `InboundDeliveryItemUUID` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `WarehouseTimeZone` |  | |  |  |
-| `EWMDeliveryDocumentCategory` |  | |  |  |
-| `EWMInboundDeliveryItemCategory` |  | |  |  |
-| `EWMInboundDeliveryItemType` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductExternalID` |  | |  |  |
-| `Batch` |  | |  |  |
-| `EWMWhseReqItmBatchIsCreated` |  | |  |  |
-| `EWMBatchBySupplierPlanned` |  | |  |  |
-| `EWMProductBySupplier` |  | |  |  |
-| `CountryOfOrigin` |  | |  |  |
-| `ProductQuantity` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `EWMInbDelivItmQuantitySAPCode` |  | |  |  |
-| `EWMInbDelivItmQuantityISOCode` |  | |  |  |
-| `EWMWhseReqItmBatSpltParentItem` |  | |  |  |
-| `EWMWhseReqItmHierParentItem` |  | |  |  |
-| `SerialNumberRequiredLevel` |  | |  |  |
-| `EWMWhseReqItmBBDSLEDUTCDteTme` |  | |  |  |
-| `EWMWhseReqItmProdnDteTme` |  | |  |  |
-| `StagingAreaGroup` |  | |  |  |
-| `StagingArea` |  | |  |  |
-| `StagingBay` |  | |  |  |
-| `GoodsReceiptStatus` |  | |  |  |
-| `EWMGoodsReceiptAndDistrStatus` |  | |  |  |
-| `PlanningPutawayStatus` |  | |  |  |
-| `EWMPlndPutawayAndDistrStatus` |  | |  |  |
-| `PutawayStatus` |  | |  |  |
-| `EWMPutawayAndDistrStatus` |  | |  |  |
-| `CompletionStatus` |  | |  |  |
-| `OverallBlockStatus` |  | |  |  |
-| `FldLogsStatus` |  | |  |  |
-| `WarehouseProcessType` |  | |  |  |
-| `GoodsMovementBin` |  | |  |  |
-| `EWMProductionSupplyArea` |  | |  |  |
-| `EWMDelivLastChangeUTCDateTime` |  | |  |  |
-| `EntitledToDisposeParty` |  | |  |  |
-| `EntitledToDisposePartyName` |  | |  |  |
-| `EWMStockUsage` |  | |  |  |
-| `EWMStockType` |  | |  |  |
-| `EWMStockOwner` |  | |  |  |
-| `EWMStockOwnerName` |  | |  |  |
-| `EWMGoodsRecipient` |  | |  |  |
-| `EWMRecipientLocationName` |  | |  |  |
-| `DeliveryItemStockTypeDetnCode` |  | |  |  |
-| `ExternalStockDocumentNumber` |  | |  |  |
-| `StockDocumentCategory` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `SpecialStockIdfgSalesOrder` |  | |  |  |
-| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `ManufacturingOrder` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `MaintenanceOrderOperation` |  | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `InboundDelivery` |  | |  |  |
-| `InboundDeliveryItem` |  | |  |  |
-| `_WhseInbDeliveryHead` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMInboundDelivery` | ✓ | |  |  |  |  |
+| `EWMInboundDeliveryItem` | ✓ | |  |  |  |  |
+| `InboundDeliveryUUID` |  | |  |  |  |  |
+| `InboundDeliveryItemUUID` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `WarehouseTimeZone` |  | |  |  |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  |  |  |  |
+| `EWMInboundDeliveryItemCategory` |  | |  |  |  |  |
+| `EWMInboundDeliveryItemType` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductExternalID` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `EWMWhseReqItmBatchIsCreated` |  | |  |  |  |  |
+| `EWMBatchBySupplierPlanned` |  | |  |  |  |  |
+| `EWMProductBySupplier` |  | |  |  |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `ProductQuantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `EWMInbDelivItmQuantitySAPCode` |  | |  |  |  |  |
+| `EWMInbDelivItmQuantityISOCode` |  | |  |  |  |  |
+| `EWMWhseReqItmBatSpltParentItem` |  | |  |  |  |  |
+| `EWMWhseReqItmHierParentItem` |  | |  |  |  |  |
+| `SerialNumberRequiredLevel` |  | |  |  |  |  |
+| `EWMWhseReqItmBBDSLEDUTCDteTme` |  | |  |  |  |  |
+| `EWMWhseReqItmProdnDteTme` |  | |  |  |  |  |
+| `StagingAreaGroup` |  | |  |  |  |  |
+| `StagingArea` |  | |  |  |  |  |
+| `StagingBay` |  | |  |  |  |  |
+| `GoodsReceiptStatus` |  | |  |  |  |  |
+| `EWMGoodsReceiptAndDistrStatus` |  | |  |  |  |  |
+| `PlanningPutawayStatus` |  | |  |  |  |  |
+| `EWMPlndPutawayAndDistrStatus` |  | |  |  |  |  |
+| `PutawayStatus` |  | |  |  |  |  |
+| `EWMPutawayAndDistrStatus` |  | |  |  |  |  |
+| `CompletionStatus` |  | |  |  |  |  |
+| `OverallBlockStatus` |  | |  |  |  |  |
+| `FldLogsStatus` |  | |  |  |  |  |
+| `WarehouseProcessType` |  | |  |  |  |  |
+| `GoodsMovementBin` |  | |  |  |  |  |
+| `EWMProductionSupplyArea` |  | |  |  |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  |  |  |  |
+| `EntitledToDisposeParty` |  | |  |  |  |  |
+| `EntitledToDisposePartyName` |  | |  |  |  |  |
+| `EWMStockUsage` |  | |  |  |  |  |
+| `EWMStockType` |  | |  |  |  |  |
+| `EWMStockOwner` |  | |  |  |  |  |
+| `EWMStockOwnerName` |  | |  |  |  |  |
+| `EWMGoodsRecipient` |  | |  |  |  |  |
+| `EWMRecipientLocationName` |  | |  |  |  |  |
+| `DeliveryItemStockTypeDetnCode` |  | |  |  |  |  |
+| `ExternalStockDocumentNumber` |  | |  |  |  |  |
+| `StockDocumentCategory` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `ManufacturingOrder` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `InboundDelivery` |  | |  |  |  |  |
+| `InboundDeliveryItem` |  | |  |  |  |  |
+| `_WhseInbDeliveryHead` | | ✓ | | | | |
 
 ## Source Code
 

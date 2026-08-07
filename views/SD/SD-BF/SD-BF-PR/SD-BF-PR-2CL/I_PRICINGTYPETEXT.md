@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
-| `PricingType` | ✓ | |  | `cast ( SUBSTRING( domvalue_l, 1, 1) as knprs preserving type)` |
-| `PricingTypeDesc` |  | |  | `cast( ddtext as knprs_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PricingType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |  |  |
+| `PricingType` | ✓ | |  | `cast ( SUBSTRING( domvalue_l, 1, 1) as knprs preserving type)` |  |  |
+| `PricingTypeDesc` |  | |  | `cast( ddtext as knprs_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PricingType` | | ✓ | | | | |
 
 ## Associations
 

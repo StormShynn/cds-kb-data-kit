@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectElementUUID` | ✓ | |  | `TaskUUID` |
-| `ProjectUUID` |  | |  |  |
-| `EntProjTimeRecgIsBlkd` |  | |  |  |
-| `EntProjStaffExpensePostgIsBlkd` |  | |  |  |
-| `EntProjServicePostingIsBlkd` |  | |  |  |
-| `EntProjOtherExpensePostgIsBlkd` |  | |  |  |
-| `EntProjPurchasingIsBlkd` |  | |  |  |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectElementUUID` | ✓ | |  | `TaskUUID` |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `EntProjTimeRecgIsBlkd` |  | |  |  |  |  |
+| `EntProjStaffExpensePostgIsBlkd` |  | |  |  |  |  |
+| `EntProjServicePostingIsBlkd` |  | |  |  |  |  |
+| `EntProjOtherExpensePostgIsBlkd` |  | |  |  |  |  |
+| `EntProjPurchasingIsBlkd` |  | |  |  |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
 
 ## Source Code
 

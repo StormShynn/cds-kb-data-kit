@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContactPersonDepartment` | ✓ | |  | `abtnr` |
-| `Language` | ✓ | |  | `spras` |
-| `ContactPersonDepartmentName` |  | |  | `bez20` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContactPersonDepartment` | ✓ | |  | `abtnr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ContactPersonDepartmentName` |  | |  | `bez20` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

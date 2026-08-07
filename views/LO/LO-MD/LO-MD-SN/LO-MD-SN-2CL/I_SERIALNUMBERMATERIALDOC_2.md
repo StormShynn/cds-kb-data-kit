@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
-| `MaterialDocumentYear` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocumentYear` |
-| `MaterialDocument` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocument` |
-| `MaterialDocumentItem` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocumentItem` |
-| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
-| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |  |  |
+| `MaterialDocumentYear` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocumentYear` |  |  |
+| `MaterialDocument` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocument` |  |  |
+| `MaterialDocumentItem` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocumentItem` |  |  |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |  |  |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |  |  |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WarrantyClaimVersionCategory` | ✓ | |  | `cast(dd07l.domvalue_l as abap.char( 2 ))` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarrantyClaimVersionCategory` | ✓ | |  | `cast(dd07l.domvalue_l as abap.char( 2 ))` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

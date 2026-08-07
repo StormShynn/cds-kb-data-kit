@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  |  |
-| `TaxCode` | ✓ | |  |  |
-| `CAConditionType` | ✓ | |  |  |
-| `CustTaxGroupExemptionStartDate` | ✓ | |  |  |
-| `TaxCodeForEdit` |  | |  |  |
-| `CAConditionTypeForEdit` |  | |  |  |
-| `CustTxGrpExmpStrtDtFoEd` |  | |  |  |
-| `CustTaxGroupExemptionEndDate` |  | |  |  |
-| `CATaxExemptionLicense` |  | |  |  |
-| `CATaxExemptionRate` |  | |  |  |
-| `CAMassRunDate` |  | |  |  |
-| `CAMassRunID` |  | |  |  |
-| `CATaxExemptionLicenseExtended` |  | |  |  |
-| `CATaxExemptionLicenseAmount` |  | |  | `} CATaxExemptionLicenseAmount` |
-| `CATaxExemptionLicenseCurrency` |  | |  |  |
-| `CATaxExemptionLicenseIssueDate` |  | |  |  |
-| `IT_TaxCalculationProcedure` |  | |  |  |
-| `_CAConditionType` | | ✓ | | |
-| `_CATaxExemptionLicenseCurrency` | | ✓ | | |
-| `_ContrAcctTaxExemptionUI` | | ✓ | | |
-| `_ContractAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  |  |  |  |
+| `TaxCode` | ✓ | |  |  |  |  |
+| `CAConditionType` | ✓ | |  |  |  |  |
+| `CustTaxGroupExemptionStartDate` | ✓ | |  |  |  |  |
+| `TaxCodeForEdit` |  | |  |  |  |  |
+| `CAConditionTypeForEdit` |  | |  |  |  |  |
+| `CustTxGrpExmpStrtDtFoEd` |  | |  |  |  |  |
+| `CustTaxGroupExemptionEndDate` |  | |  |  |  |  |
+| `CATaxExemptionLicense` |  | |  |  |  |  |
+| `CATaxExemptionRate` |  | |  |  |  |  |
+| `CAMassRunDate` |  | |  |  |  |  |
+| `CAMassRunID` |  | |  |  |  |  |
+| `CATaxExemptionLicenseExtended` |  | |  |  |  |  |
+| `CATaxExemptionLicenseAmount` |  | |  |  |  |  |
+| `CATaxExemptionLicenseCurrency` |  | |  |  |  |  |
+| `CATaxExemptionLicenseIssueDate` |  | |  |  |  |  |
+| `IT_TaxCalculationProcedure` |  | |  |  |  |  |
+| `_CAConditionType` | | ✓ | | | | |
+| `_CATaxExemptionLicenseCurrency` | | ✓ | | | | |
+| `_ContrAcctTaxExemptionUI` | | ✓ | | | | |
+| `_ContractAccount` | | ✓ | | | | |
 
 ## Source Code
 

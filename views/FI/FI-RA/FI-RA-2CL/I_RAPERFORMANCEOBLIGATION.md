@@ -27,131 +27,131 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PerformanceObligation` | ✓ | |  | `cast(pob_id as farr_cds_pob_id preserving type)` |
-| `PerformanceObligationClass` |  | |  | `cast(pob_name as farr_cds_pob_name preserving type)` |
-| `RevenueAccountingContract` |  | |  | `cast(contract_id as farr_cds_contract_id preserving type)` |
-| `Segment` |  | |  | `segment` |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `AllocatedPriceInSalesDocCrcy` |  | |  | `alloc_amt` |
-| `ContractualPrcInSlsDocCrcy` |  | |  | `cast(trx_price as farr_cds_contractual_price preserving type)` |
-| `RATotalInterestAmtInSlsDocCrcy` |  | |  | `cast(total_interest_amount as farr_cds_total_interest_amount preserving type)` |
-| `PerUnitSSPriceInSlsDocCrcy` |  | |  | `cast(unit_ssp as farr_cds_unit_ssp preserving type)` |
-| `SSPriceInSalesDocCrcy` |  | |  | `cast(ssp as farr_cds_standalone_price preserving type)` |
-| `SSPriceTolerancePercent` |  | |  | `cast(ssp_range_perc as farr_cds_ssp_range_percentage preserving type)` |
-| `SSPriceToleranceAmount` |  | |  | `ssp_range_amount` |
-| `SalesDocumentCurrency` |  | |  | `cast(alloc_amt_curk as waerk preserving type)` |
-| `PerfOblgnContractualQuantity` |  | |  | `cast(quantity as farr_cds_contractual_quantity)` |
-| `PerfOblgnContractualQtyUnit` |  | |  | `quantity_unit` |
-| `PerfOblgnEffectiveQuantity` |  | |  | `cast(effective_qty as farr_cds_effective_quantity)` |
-| `PerfOblgnEffectiveQuantityUnit` |  | |  | `effective_qty_unit` |
-| `PerfOblgnFulfillmentType` |  | |  | `cast(fulfill_type as farr_fulfill_type preserving type)` |
-| `RAPerfOblgnIsResidual` |  | |  | `cast(residual_pob as farr_cds_residual_pob preserving type)` |
-| `PerfOblgnEventType` |  | |  | `event_type` |
-| `PerformanceObligationStartDate` |  | |  | `start_date` |
-| `PerformanceObligationEndDate` |  | |  | `end_date` |
-| `RAPerfOblgnFinalizationDate` |  | |  | `final_date` |
-| `PerfObligationDeferralMethod` |  | |  | `deferral_method` |
-| `PerfOblgnStartDateType` |  | |  | `start_date_type` |
-| `PerfObligationDuration` |  | |  | `duration` |
-| `PerfObligationDurationUnit` |  | |  | `duration_unit` |
-| `PerfOblgnIsFullyFulfilled` |  | |  | `cast(fully_fulfilled as farr_cds_fully_fulfilled preserving type)` |
-| `PerfOblgnIsFinallyInvoiced` |  | |  | `final_invoice` |
-| `BusinessPartner` |  | |  | `partner` |
-| `CostCenter` |  | |  | `kostl` |
-| `WBSElementExternalID` |  | | `_InternalWBSElement` | `WBSElementExternalID` |
-| `WBSElementInternalID` |  | |  | `cast(ps_psp_pnr as ps_s4_pspnr preserving type)` |
-| `RevnAcctgSalesOrganization` |  | |  | `sales_org` |
-| `CompanyCode` |  | |  | `company_code` |
-| `AccountingPrinciple` |  | |  | `acct_principle` |
-| `PerfOblgnCreatedByUser` |  | |  | `cast(created_by as fis_cc_erfnm preserving type)` |
-| `PerfOblgnCreationDate` |  | |  | `cast(created_on as fis_cc_erfdt preserving type)` |
-| `PerfOblgnLastChangeDate` |  | |  | `last_changed_on` |
-| `PerfOblgnLastChangedByUsr` |  | |  | `cast(last_changed_by as fis_aufaenam preserving type)` |
-| `PerfOblgnIsExclFromPriceAlloc` |  | |  | `cast(prevent_alloc as farr_cds_exclude_allocation preserving type)` |
-| `PerfOblgnPostingIsSusp` |  | |  | `rev_rec_block` |
-| `OplContractualPrcInSlsDocCrcy` |  | |  | `distributed_org_price` |
-| `PerfOblgnHasContrModification` |  | |  | `cast(has_pro_change as farr_cds_has_pro_change preserving type)` |
-| `RAHigherLevelPerfOblgn` |  | |  | `hi_level_pob_id` |
-| `PerfOblgnIsSoftDeleted` |  | |  | `soft_deleted` |
-| `RAPerfOblgnInvoiceEffectType` |  | |  | `invoice_effect_type` |
-| `RAFulfillmentIsValueBased` |  | |  | `cast(value_based_fulfillments as farr_cds_ful_based_on_value preserving type)` |
-| `RevnAcctgPerfOblgnStatus` |  | |  | `cast(status as farr_cds_pob_status preserving type)` |
-| `RAPerfOblgnCompletionDate` |  | |  | `cast(completion_date as farr_cds_pob_completion_date preserving type)` |
-| `Customer` |  | |  | `customer_id` |
-| `RAPerformanceObligationType` |  | |  | `cast(pob_type as farr_cds_pob_type preserving type)` |
-| `RAPerfOblgnCategory` |  | |  | `cast(pob_category as farr_cds_pob_category preserving type)` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `BusinessArea` |  | |  | `gsber` |
-| `ProfitabilitySegment` |  | |  | `cast(case when paobjnr > '9999999999' then '9999999999' else lpad(paobjnr, 10, '0') end as rkeobjnr_numc)` |
-| `ProfitabilitySegment_2` |  | |  | `cast(paobjnr as rkeobjnr_char preserving type)` |
-| `OrderID` |  | |  | `aufnr` |
-| `SalesOrder` |  | |  | `cast(kdauf as farr_cds_acct_assmt_so preserving type)` |
-| `SalesOrderItem` |  | |  | `cast(kdpos as farr_cds_acct_assmt_so_item preserving type)` |
-| `RAPerfOblgnAccruedCostAccount` |  | |  | `accrued_cost_account` |
-| `RAPerfOblgnDeferredCostAccount` |  | |  | `deferred_cost_account` |
-| `RAContractAssetAccount` |  | |  | `asset_account` |
-| `RAContractLiabilityAccount` |  | |  | `liability_account` |
-| `RAPerfOblgnIsManuallyChanged` |  | |  | `manual_changed` |
-| `RAPerfOblgnIsManuallyCreated` |  | |  | `manual_created` |
-| `RAPerfOblgnIsManuallyDeleted` |  | |  | `manual_deleted` |
-| `RAPerfOblgnCostAmtInSlsDocCrcy` |  | |  | `cost` |
-| `CostCurrency` |  | |  | `cost_curk` |
-| `RAPerfOblgnDistinctType` |  | |  | `distinct_type` |
-| `RAPerfOblgnIsCostRecognizable` |  | |  | `cast(cost_recognition as farr_cds_cost_recognition preserving type)` |
-| `RAInitialEffectiveDate` |  | |  | `initial_effective_date` |
-| `RootPerformanceObligationInBOM` |  | |  | `bom_pob_id` |
-| `PerfOblgnDeliveredQuantity` |  | |  | `cast(delivered_quantity as farr_cds_delivered_quantity)` |
-| `RAItemDifferenceToDeliveredQty` |  | |  | `cast(delivered_qty_diff as farr_cds_diff_to_delivered_qty)` |
-| `PerformanceObligationRole` |  | |  | `cast(pob_role as farr_cds_pob_role preserving type)` |
-| `LeadingPerformanceObligation` |  | |  | `cast(leading_pob_id as farr_cds_leading_pob_id preserving type)` |
-| `RAPerfOblgnInceptionDate` |  | |  | `inception_date` |
-| `RevnAcctgSuspensionDate` |  | |  | `suspension_date` |
-| `RevnAcctgSuspensionReason` |  | |  | `suspension_reason` |
-| `PerfOblgnHasManualSpreading` |  | |  | `manual_spreading` |
-| `PerfOblgnHasSprdgConflict` |  | |  | `spread_conflict` |
-| `RAAttributeHasConflict` |  | |  | `attr_conflict` |
-| `RAUnivRevnRecgnIntegType` |  | |  | `urr_integration_type` |
-| `RevnAcctgReceivablesAccount` |  | |  | `receivable_account` |
-| `BusinessSolutionOrder` |  | |  | `solution_order_id` |
-| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` |
-| `_RevenueAccountingContract` | | ✓ | | |
-| `_Mapping` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_AccountingPrinciple` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_CurrentProfitCenter` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CurrentCostCenter` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_InternalWBSElement` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_CostCurrency` | | ✓ | | |
-| `_PerfOblgnEffectiveQtyUnit` | | ✓ | | |
-| `_PerfOblgnContractualQtyUnit` | | ✓ | | |
-| `_FulfillmentType` | | ✓ | | |
-| `_PerfObligationEventType` | | ✓ | | |
-| `_PerfOblgnStartDateType` | | ✓ | | |
-| `_RAPerfOblgnStatus` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_ChangedByUser` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_IndicatorManuallyChgd` | | ✓ | | |
-| `_PerfOblgnDistinctType` | | ✓ | | |
-| `_PerformanceObligationRole` | | ✓ | | |
-| `_RAPerfOblgnCategory` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_RAUnivRevnRecgnIntegType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PerformanceObligation` | ✓ | |  | `cast(pob_id as farr_cds_pob_id preserving type)` |  |  |
+| `PerformanceObligationClass` |  | |  | `cast(pob_name as farr_cds_pob_name preserving type)` |  |  |
+| `RevenueAccountingContract` |  | |  | `cast(contract_id as farr_cds_contract_id preserving type)` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `AllocatedPriceInSalesDocCrcy` |  | |  | `alloc_amt` |  |  |
+| `ContractualPrcInSlsDocCrcy` |  | |  | `cast(trx_price as farr_cds_contractual_price preserving type)` |  |  |
+| `RATotalInterestAmtInSlsDocCrcy` |  | |  | `cast(total_interest_amount as farr_cds_total_interest_amount preserving type)` |  |  |
+| `PerUnitSSPriceInSlsDocCrcy` |  | |  | `cast(unit_ssp as farr_cds_unit_ssp preserving type)` |  |  |
+| `SSPriceInSalesDocCrcy` |  | |  | `cast(ssp as farr_cds_standalone_price preserving type)` |  |  |
+| `SSPriceTolerancePercent` |  | |  | `cast(ssp_range_perc as farr_cds_ssp_range_percentage preserving type)` |  |  |
+| `SSPriceToleranceAmount` |  | |  | `ssp_range_amount` |  |  |
+| `SalesDocumentCurrency` |  | |  | `cast(alloc_amt_curk as waerk preserving type)` |  |  |
+| `PerfOblgnContractualQuantity` |  | |  | `cast(quantity as farr_cds_contractual_quantity)` |  |  |
+| `PerfOblgnContractualQtyUnit` |  | |  | `quantity_unit` |  |  |
+| `PerfOblgnEffectiveQuantity` |  | |  | `cast(effective_qty as farr_cds_effective_quantity)` |  |  |
+| `PerfOblgnEffectiveQuantityUnit` |  | |  | `effective_qty_unit` |  |  |
+| `PerfOblgnFulfillmentType` |  | |  | `cast(fulfill_type as farr_fulfill_type preserving type)` |  |  |
+| `RAPerfOblgnIsResidual` |  | |  | `cast(residual_pob as farr_cds_residual_pob preserving type)` |  |  |
+| `PerfOblgnEventType` |  | |  | `event_type` |  |  |
+| `PerformanceObligationStartDate` |  | |  | `start_date` |  |  |
+| `PerformanceObligationEndDate` |  | |  | `end_date` |  |  |
+| `RAPerfOblgnFinalizationDate` |  | |  | `final_date` |  |  |
+| `PerfObligationDeferralMethod` |  | |  | `deferral_method` |  |  |
+| `PerfOblgnStartDateType` |  | |  | `start_date_type` |  |  |
+| `PerfObligationDuration` |  | |  | `duration` |  |  |
+| `PerfObligationDurationUnit` |  | |  | `duration_unit` |  |  |
+| `PerfOblgnIsFullyFulfilled` |  | |  | `cast(fully_fulfilled as farr_cds_fully_fulfilled preserving type)` |  |  |
+| `PerfOblgnIsFinallyInvoiced` |  | |  | `final_invoice` |  |  |
+| `BusinessPartner` |  | |  | `partner` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `WBSElementExternalID` |  | | `_InternalWBSElement` | `WBSElementExternalID` |  |  |
+| `WBSElementInternalID` |  | |  | `cast(ps_psp_pnr as ps_s4_pspnr preserving type)` |  |  |
+| `RevnAcctgSalesOrganization` |  | |  | `sales_org` |  |  |
+| `CompanyCode` |  | |  | `company_code` |  |  |
+| `AccountingPrinciple` |  | |  | `acct_principle` |  |  |
+| `PerfOblgnCreatedByUser` |  | |  | `cast(created_by as fis_cc_erfnm preserving type)` |  |  |
+| `PerfOblgnCreationDate` |  | |  | `cast(created_on as fis_cc_erfdt preserving type)` |  |  |
+| `PerfOblgnLastChangeDate` |  | |  | `last_changed_on` |  |  |
+| `PerfOblgnLastChangedByUsr` |  | |  | `cast(last_changed_by as fis_aufaenam preserving type)` |  |  |
+| `PerfOblgnIsExclFromPriceAlloc` |  | |  | `cast(prevent_alloc as farr_cds_exclude_allocation preserving type)` |  |  |
+| `PerfOblgnPostingIsSusp` |  | |  | `rev_rec_block` |  |  |
+| `OplContractualPrcInSlsDocCrcy` |  | |  | `distributed_org_price` |  |  |
+| `PerfOblgnHasContrModification` |  | |  | `cast(has_pro_change as farr_cds_has_pro_change preserving type)` |  |  |
+| `RAHigherLevelPerfOblgn` |  | |  | `hi_level_pob_id` |  |  |
+| `PerfOblgnIsSoftDeleted` |  | |  | `soft_deleted` |  |  |
+| `RAPerfOblgnInvoiceEffectType` |  | |  | `invoice_effect_type` |  |  |
+| `RAFulfillmentIsValueBased` |  | |  | `cast(value_based_fulfillments as farr_cds_ful_based_on_value preserving type)` |  |  |
+| `RevnAcctgPerfOblgnStatus` |  | |  | `cast(status as farr_cds_pob_status preserving type)` |  |  |
+| `RAPerfOblgnCompletionDate` |  | |  | `cast(completion_date as farr_cds_pob_completion_date preserving type)` |  |  |
+| `Customer` |  | |  | `customer_id` |  |  |
+| `RAPerformanceObligationType` |  | |  | `cast(pob_type as farr_cds_pob_type preserving type)` |  |  |
+| `RAPerfOblgnCategory` |  | |  | `cast(pob_category as farr_cds_pob_category preserving type)` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `ProfitabilitySegment` |  | |  | `cast(case when paobjnr > '9999999999' then '9999999999' else lpad(paobjnr, 10, '0') end as rkeobjnr_numc)` |  |  |
+| `ProfitabilitySegment_2` |  | |  | `cast(paobjnr as rkeobjnr_char preserving type)` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `SalesOrder` |  | |  | `cast(kdauf as farr_cds_acct_assmt_so preserving type)` |  |  |
+| `SalesOrderItem` |  | |  | `cast(kdpos as farr_cds_acct_assmt_so_item preserving type)` |  |  |
+| `RAPerfOblgnAccruedCostAccount` |  | |  | `accrued_cost_account` |  |  |
+| `RAPerfOblgnDeferredCostAccount` |  | |  | `deferred_cost_account` |  |  |
+| `RAContractAssetAccount` |  | |  | `asset_account` |  |  |
+| `RAContractLiabilityAccount` |  | |  | `liability_account` |  |  |
+| `RAPerfOblgnIsManuallyChanged` |  | |  | `manual_changed` |  |  |
+| `RAPerfOblgnIsManuallyCreated` |  | |  | `manual_created` |  |  |
+| `RAPerfOblgnIsManuallyDeleted` |  | |  | `manual_deleted` |  |  |
+| `RAPerfOblgnCostAmtInSlsDocCrcy` |  | |  | `cost` |  |  |
+| `CostCurrency` |  | |  | `cost_curk` |  |  |
+| `RAPerfOblgnDistinctType` |  | |  | `distinct_type` |  |  |
+| `RAPerfOblgnIsCostRecognizable` |  | |  | `cast(cost_recognition as farr_cds_cost_recognition preserving type)` |  |  |
+| `RAInitialEffectiveDate` |  | |  | `initial_effective_date` |  |  |
+| `RootPerformanceObligationInBOM` |  | |  | `bom_pob_id` |  |  |
+| `PerfOblgnDeliveredQuantity` |  | |  | `cast(delivered_quantity as farr_cds_delivered_quantity)` |  |  |
+| `RAItemDifferenceToDeliveredQty` |  | |  | `cast(delivered_qty_diff as farr_cds_diff_to_delivered_qty)` |  |  |
+| `PerformanceObligationRole` |  | |  | `cast(pob_role as farr_cds_pob_role preserving type)` |  |  |
+| `LeadingPerformanceObligation` |  | |  | `cast(leading_pob_id as farr_cds_leading_pob_id preserving type)` |  |  |
+| `RAPerfOblgnInceptionDate` |  | |  | `inception_date` |  |  |
+| `RevnAcctgSuspensionDate` |  | |  | `suspension_date` |  |  |
+| `RevnAcctgSuspensionReason` |  | |  | `suspension_reason` |  |  |
+| `PerfOblgnHasManualSpreading` |  | |  | `manual_spreading` |  |  |
+| `PerfOblgnHasSprdgConflict` |  | |  | `spread_conflict` |  |  |
+| `RAAttributeHasConflict` |  | |  | `attr_conflict` |  |  |
+| `RAUnivRevnRecgnIntegType` |  | |  | `urr_integration_type` |  |  |
+| `RevnAcctgReceivablesAccount` |  | |  | `receivable_account` |  |  |
+| `BusinessSolutionOrder` |  | |  | `solution_order_id` |  |  |
+| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` |  |  |
+| `_RevenueAccountingContract` | | ✓ | | | | |
+| `_Mapping` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_AccountingPrinciple` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_InternalWBSElement` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CostCurrency` | | ✓ | | | | |
+| `_PerfOblgnEffectiveQtyUnit` | | ✓ | | | | |
+| `_PerfOblgnContractualQtyUnit` | | ✓ | | | | |
+| `_FulfillmentType` | | ✓ | | | | |
+| `_PerfObligationEventType` | | ✓ | | | | |
+| `_PerfOblgnStartDateType` | | ✓ | | | | |
+| `_RAPerfOblgnStatus` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_IndicatorManuallyChgd` | | ✓ | | | | |
+| `_PerfOblgnDistinctType` | | ✓ | | | | |
+| `_PerformanceObligationRole` | | ✓ | | | | |
+| `_RAPerfOblgnCategory` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_RAUnivRevnRecgnIntegType` | | ✓ | | | | |
 
 ## Associations
 

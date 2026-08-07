@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |
-| `AddressPersonID` | ✓ | |  | `persnumber` |
-| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |
-| `EmailAddress` |  | |  | `smtp_addr` |
-| `EmailAddressIsCurrentDefault` |  | |  | `cast (flgdefault as ad_emailcurdflt preserving type)` |
-| `CommLineNotForUnsolicitedCntct` |  | |  | `cast (flg_nouse as ad_commlinenotforunslctdcntct preserving type)` |
-| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |
-| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |
-| `_OrgNamePostalAddress` | | ✓ | | |
-| `_AddressPersonName` | | ✓ | | |
-| `_AddressCommunicationRemark` | | ✓ | | |
-| `_AddressCommunicationUsage` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  | `addrnumber` |  |  |
+| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |  |  |
+| `EmailAddress` |  | |  | `smtp_addr` |  |  |
+| `EmailAddressIsCurrentDefault` |  | |  | `cast (flgdefault as ad_emailcurdflt preserving type)` |  |  |
+| `CommLineNotForUnsolicitedCntct` |  | |  | `cast (flg_nouse as ad_commlinenotforunslctdcntct preserving type)` |  |  |
+| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |  |  |
+| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |  |  |
+| `_OrgNamePostalAddress` | | ✓ | | | | |
+| `_AddressPersonName` | | ✓ | | | | |
+| `_AddressCommunicationRemark` | | ✓ | | | | |
+| `_AddressCommunicationUsage` | | ✓ | | | | |
 
 ## Associations
 

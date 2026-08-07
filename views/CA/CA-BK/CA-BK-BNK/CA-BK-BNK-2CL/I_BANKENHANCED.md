@@ -30,35 +30,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankCountry` | ✓ | |  |  |
-| `BankInternalID` | ✓ | |  |  |
-| `LongBankName` |  | |  | `case when ( _BankAddress.LongBankName is null or _BankAddress.LongBankName is initial ) then BankName else _BankAddress.LongBankName end` |
-| `LongBankBranch` |  | |  | `case when ( _BankAddress.LongBankBranch is null or _BankAddress.LongBankBranch is initial ) then BankBranch else _BankAddress.LongBankBranch end` |
-| `StreetName` |  | |  | `case when ( _BankAddress.StreetName is null or _BankAddress.StreetName is initial ) then ShortStreetName else _BankAddress.StreetName end` |
-| `CityName` |  | |  | `case when ( _BankAddress.CityName is null or _BankAddress.CityName is initial ) then ShortCityName else _BankAddress.CityName end` |
-| `AddressRegion` |  | |  | `case when ( _BankAddress.Region is null or _BankAddress.Region is initial ) then Region else _BankAddress.Region end` |
-| `BankCategory` |  | |  | `cast(BankCategory as bf_bank_category preserving type)` |
-| `BankNumber` |  | |  | `Bank` |
-| `SWIFTCode` |  | |  |  |
-| `BankNetworkGrouping` |  | |  | `cast(BankNetworkGrouping as bf_bank_banknetworkgrouping preserving type)` |
-| `IsPostBankAccount` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `PostOfficeBankAccount` |  | |  |  |
-| `BankBranch` |  | |  |  |
-| `CheckDigitCalculationMethod` |  | |  |  |
-| `BankDataFileFormat` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `BankName` |  | |  |  |
-| `ShortStreetName` |  | |  |  |
-| `ShortCityName` |  | |  |  |
-| `Region` |  | |  |  |
-| `_BankAddress` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankCountry` | ✓ | |  |  |  |  |
+| `BankInternalID` | ✓ | |  |  |  |  |
+| `LongBankName` |  | |  | `case when ( _BankAddress.LongBankName is null or _BankAddress.LongBankName is initial ) then BankName else _BankAddress.LongBankName end` |  |  |
+| `LongBankBranch` |  | |  | `case when ( _BankAddress.LongBankBranch is null or _BankAddress.LongBankBranch is initial ) then BankBranch else _BankAddress.LongBankBranch end` |  |  |
+| `StreetName` |  | |  | `case when ( _BankAddress.StreetName is null or _BankAddress.StreetName is initial ) then ShortStreetName else _BankAddress.StreetName end` |  |  |
+| `CityName` |  | |  | `case when ( _BankAddress.CityName is null or _BankAddress.CityName is initial ) then ShortCityName else _BankAddress.CityName end` |  |  |
+| `AddressRegion` |  | |  | `case when ( _BankAddress.Region is null or _BankAddress.Region is initial ) then Region else _BankAddress.Region end` |  |  |
+| `BankCategory` |  | |  | `cast(BankCategory as bf_bank_category preserving type)` |  |  |
+| `BankNumber` |  | |  | `Bank` |  |  |
+| `SWIFTCode` |  | |  |  |  |  |
+| `BankNetworkGrouping` |  | |  | `cast(BankNetworkGrouping as bf_bank_banknetworkgrouping preserving type)` |  |  |
+| `IsPostBankAccount` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `PostOfficeBankAccount` |  | |  |  |  |  |
+| `BankBranch` |  | |  |  |  |  |
+| `CheckDigitCalculationMethod` |  | |  |  |  |  |
+| `BankDataFileFormat` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `BankName` |  | |  |  |  |  |
+| `ShortStreetName` |  | |  |  |  |  |
+| `ShortCityName` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `_BankAddress` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
 
 ## Associations
 

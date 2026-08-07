@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialStatisticsGroup` | ✓ | |  | `stgma` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialStatisticsGroup` | ✓ | |  | `stgma` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

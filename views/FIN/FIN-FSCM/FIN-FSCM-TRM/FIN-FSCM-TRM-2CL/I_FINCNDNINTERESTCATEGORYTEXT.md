@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `FinConditionInterestCategory` | ✓ | |  | `cast( dd07t.domvalue_l as ftr_intcat )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FinCndnInterestCategoryName` |  | |  | `cast( dd07t.ddtext as ftr_intcat_name preserving type )` |
-| `_InterestCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `FinConditionInterestCategory` | ✓ | |  | `cast( dd07t.domvalue_l as ftr_intcat )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FinCndnInterestCategoryName` |  | |  | `cast( dd07t.ddtext as ftr_intcat_name preserving type )` |  |  |
+| `_InterestCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

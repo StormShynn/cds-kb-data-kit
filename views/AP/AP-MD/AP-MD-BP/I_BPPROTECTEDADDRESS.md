@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `AddressID` | ✓ | |  |  |
-| `BPAddressIsProtected` |  | |  | `case when BPProtectedAddrUsageCount > 0 then cast('E' as bu_protected) when BPProtectedAddrUsageCount = 0 then cast(' ' as bu_protected) end` |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `AddressID` | ✓ | |  |  |  |  |
+| `BPAddressIsProtected` |  | |  | `case when BPProtectedAddrUsageCount > 0 then cast('E' as bu_protected) when BPProtectedAddrUsageCount = 0 then cast(' ' as bu_protected) end` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

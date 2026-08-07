@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HedgingRelationshipUUID` | ✓ | |  | `cast(hrel.os_guid as ftr_gen_hrel_uuid preserving type)` |
-| `HedgingRelationship` |  | |  | `hrel_number` |
-| `HedgingRelationshipFiscalYear` |  | |  | `cast(hrel.fiscal_year as ftr_gen_hrel_fiscal_year preserving type)` |
-| `HedgingRelationshipName` |  | |  | `cast(hrel.description as tpm_hrel_descr preserving type)` |
-| `CompanyCode` |  | |  | `cast(hrel.tr_acc_code as bukrs preserving type)` |
-| `TreasuryValuationArea` |  | |  | `cast(hrel.valuation_area as tpm_val_area preserving type)` |
-| `HedgingRelationshipStatus` |  | |  | `cast(hrel.hrel_status as ftr_gen_hrel_status preserving type)` |
-| `HedgingProfile` |  | |  | `cast(hrel.hrel_profile as ftr_gen_hdgg_profile preserving type)` |
-| `TrsyHedgingRelshpRiskCurrency` |  | |  | `cast(hrel.hrel_risk_curr as ftr_gen_hrel_risk_currency preserving type)` |
-| `TrsyCostHdggRsrvCalcRule` |  | |  | `cast(hrel.hres_calc_rule as ftr_gen_cost_hres_calc_rule preserving type)` |
-| `HedgingArea` |  | |  | `hrel_hedging_area` |
-| `FinNetOpenExposureSnapshot` |  | |  | `hrel_snapshot_id` |
-| `TrsyHdggRelshpDsgntnSplitID` |  | |  | `hrel_split_id` |
-| `TrsyHdggRelshpBalShtRecgnDate` |  | |  | `cast(hrel.hrel_bal_sheet_rec_date as ftr_gen_hrel_bal_sht_recgn_dte preserving type)` |
-| `TrsyAltvReclassificationDate` |  | |  | `cast(hrel.hrel_reclass_st_date as ftr_gen_hrel_altv_reclass_date preserving type)` |
-| `_TrsyHedgingRelshpProfile` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_TreasuryValuationArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HedgingRelationshipUUID` | ✓ | |  | `cast(hrel.os_guid as ftr_gen_hrel_uuid preserving type)` |  |  |
+| `HedgingRelationship` |  | |  | `hrel_number` |  |  |
+| `HedgingRelationshipFiscalYear` |  | |  | `cast(hrel.fiscal_year as ftr_gen_hrel_fiscal_year preserving type)` |  |  |
+| `HedgingRelationshipName` |  | |  | `cast(hrel.description as tpm_hrel_descr preserving type)` |  |  |
+| `CompanyCode` |  | |  | `cast(hrel.tr_acc_code as bukrs preserving type)` |  |  |
+| `TreasuryValuationArea` |  | |  | `cast(hrel.valuation_area as tpm_val_area preserving type)` |  |  |
+| `HedgingRelationshipStatus` |  | |  | `cast(hrel.hrel_status as ftr_gen_hrel_status preserving type)` |  |  |
+| `HedgingProfile` |  | |  | `cast(hrel.hrel_profile as ftr_gen_hdgg_profile preserving type)` |  |  |
+| `TrsyHedgingRelshpRiskCurrency` |  | |  | `cast(hrel.hrel_risk_curr as ftr_gen_hrel_risk_currency preserving type)` |  |  |
+| `TrsyCostHdggRsrvCalcRule` |  | |  | `cast(hrel.hres_calc_rule as ftr_gen_cost_hres_calc_rule preserving type)` |  |  |
+| `HedgingArea` |  | |  | `hrel_hedging_area` |  |  |
+| `FinNetOpenExposureSnapshot` |  | |  | `hrel_snapshot_id` |  |  |
+| `TrsyHdggRelshpDsgntnSplitID` |  | |  | `hrel_split_id` |  |  |
+| `TrsyHdggRelshpBalShtRecgnDate` |  | |  | `cast(hrel.hrel_bal_sheet_rec_date as ftr_gen_hrel_bal_sht_recgn_dte preserving type)` |  |  |
+| `TrsyAltvReclassificationDate` |  | |  | `cast(hrel.hrel_reclass_st_date as ftr_gen_hrel_altv_reclass_date preserving type)` |  |  |
+| `_TrsyHedgingRelshpProfile` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_TreasuryValuationArea` | | ✓ | | | | |
 
 ## Associations
 

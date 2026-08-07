@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgRefPostingDocType` | ✓ | | `_tfk2605` | `cadoctype` |
-| `_CAInvcgRefPostgDocTypTxt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgRefPostingDocType` | ✓ | | `_tfk2605` | `cadoctype` |  |  |
+| `_CAInvcgRefPostgDocTypTxt` | | ✓ | | | | |
 
 ## Associations
 

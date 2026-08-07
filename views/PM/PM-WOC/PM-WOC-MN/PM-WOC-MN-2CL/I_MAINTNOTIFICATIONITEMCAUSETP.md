@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceNotification` | ✓ | |  |  |
-| `MaintenanceNotificationItem` | ✓ | |  |  |
-| `MaintenanceNotificationCause` | ✓ | |  |  |
-| `MaintNotifCauseText` |  | |  |  |
-| `MaintNotifCauseCodeGroup` |  | |  |  |
-| `MaintNotificationCauseCode` |  | |  |  |
-| `MaintNotifCauseCodeCatalog` |  | |  |  |
-| `MaintNotificationRootCause` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_MaintNotifCauseCodeGroup` | | ✓ | | |
-| `_MaintNotificationCauseCode` | | ✓ | | |
-| `_MaintenanceNotification` | | ✓ | | |
-| `_MaintNotificationRootCause` | | ✓ | | |
-| `_Item` | | ✓ | | |
-| `_Notif` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceNotification` | ✓ | |  |  |  |  |
+| `MaintenanceNotificationItem` | ✓ | |  |  |  |  |
+| `MaintenanceNotificationCause` | ✓ | |  |  |  |  |
+| `MaintNotifCauseText` |  | |  |  |  |  |
+| `MaintNotifCauseCodeGroup` |  | |  |  |  |  |
+| `MaintNotificationCauseCode` |  | |  |  |  |  |
+| `MaintNotifCauseCodeCatalog` |  | |  |  |  |  |
+| `MaintNotificationRootCause` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_MaintNotifCauseCodeGroup` | | ✓ | | | | |
+| `_MaintNotificationCauseCode` | | ✓ | | | | |
+| `_MaintenanceNotification` | | ✓ | | | | |
+| `_MaintNotificationRootCause` | | ✓ | | | | |
+| `_Item` | | ✓ | | | | |
+| `_Notif` | | ✓ | | | | |
 
 ## Source Code
 

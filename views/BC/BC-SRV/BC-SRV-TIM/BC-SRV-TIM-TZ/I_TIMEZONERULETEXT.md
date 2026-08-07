@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TimeZoneRule` | ✓ | |  | `zonerule` |
-| `Language` | ✓ | |  | `language` |
-| `TimeZoneRuleText` |  | |  | `descript` |
-| `_TimeZoneRule` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TimeZoneRule` | ✓ | |  | `zonerule` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `TimeZoneRuleText` |  | |  | `descript` |  |  |
+| `_TimeZoneRule` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

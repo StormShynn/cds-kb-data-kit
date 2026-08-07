@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditSpreadID` | ✓ | |  | `csprd_id` |
-| `TextDescription` |  | |  | `description` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditSpreadID` | ✓ | |  | `csprd_id` |  |  |
+| `TextDescription` |  | |  | `description` |  |  |
 
 ## Source Code
 

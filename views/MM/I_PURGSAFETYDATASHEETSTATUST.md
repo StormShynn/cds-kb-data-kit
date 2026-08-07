@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `PurgSafetyDataSheetStatus` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_status_sds )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PurgSafetyDataSheetStatusName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_status_sds_dscr preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PurgSafetyDataSheetStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `PurgSafetyDataSheetStatus` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_status_sds )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PurgSafetyDataSheetStatusName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_status_sds_dscr preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PurgSafetyDataSheetStatus` | | ✓ | | | | |
 
 ## Associations
 

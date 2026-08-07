@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'SWOR'` |  | |  | `table: 'SWOR'` |
-| `'KLPOS']` |  | |  | `tableElement: ['CLINT','SPRAS','KLPOS']` |
-| `'ClassKeywordPositionNumber']` |  | |  | `viewElement: ['ClassInternalID','Language','ClassKeywordPositionNumber']` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'SWOR'` |  | |  | `table: 'SWOR'` |  |  |
+| `'KLPOS']` |  | |  | `tableElement: ['CLINT','SPRAS','KLPOS']` |  |  |
+| `'ClassKeywordPositionNumber']` |  | |  | `viewElement: ['ClassInternalID','Language','ClassKeywordPositionNumber']` |  |  |
 
 ## Source Code
 

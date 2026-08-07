@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectUUID` | ✓ | |  | `guid` |
-| `ProjectSummaryTaskUUID` |  | |  | `guid` |
-| `WBSElementInternalID` |  | |  | `cast( prps.pspnr as ps_s4_pspnr preserving type )` |
-| `Fund` |  | |  | `rfund` |
-| `FundIsFixAssigned` |  | |  | `fund_fix_assign` |
-| `FunctionalAreaIsFixAssigned` |  | |  | `func_area_fix_assigned` |
-| `GrantID` |  | |  | `rgrant_nbr` |
-| `GrantIsFixAssigned` |  | |  | `grant_fix_assigned` |
-| `SponsoredProgram` |  | |  | `sponsoredprog` |
-| `WBSIsAvailyControlControlObj` |  | |  | `is_avc_check_level` |
-| `_EnterpriseProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  | `guid` |  |  |
+| `ProjectSummaryTaskUUID` |  | |  | `guid` |  |  |
+| `WBSElementInternalID` |  | |  | `cast( prps.pspnr as ps_s4_pspnr preserving type )` |  |  |
+| `Fund` |  | |  | `rfund` |  |  |
+| `FundIsFixAssigned` |  | |  | `fund_fix_assign` |  |  |
+| `FunctionalAreaIsFixAssigned` |  | |  | `func_area_fix_assigned` |  |  |
+| `GrantID` |  | |  | `rgrant_nbr` |  |  |
+| `GrantIsFixAssigned` |  | |  | `grant_fix_assigned` |  |  |
+| `SponsoredProgram` |  | |  | `sponsoredprog` |  |  |
+| `WBSIsAvailyControlControlObj` |  | |  | `is_avc_check_level` |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
 
 ## Associations
 

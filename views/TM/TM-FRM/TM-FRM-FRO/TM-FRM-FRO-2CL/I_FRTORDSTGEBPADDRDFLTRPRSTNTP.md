@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderStageUUID` | ✓ | |  |  |
-| `TranspOrdBizPartnerFunction` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddresseeFullName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `InternationalPhoneNumber` |  | |  |  |
-| `InternationalMobilePhoneNumber` |  | |  |  |
-| `InternationalFaxNumber` |  | |  |  |
-| `I_FreightOrderStageTP` |  | |  | `_TransportationOrderStage as _FreightOrderStage : redirected to parent I_FreightOrderStageTP` |
-| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `I_FrtOrdStgeBPAddrAddlRprstnTP` |  | |  | `_TrOrdStgeBPAddrAddlRprstn as _FrtOrdStageBPAddrAddlRprstn : redirected to composition child I_FrtOrdStgeBPAddrAddlRprstnTP` |
-| `_PartnerFunction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderStageUUID` | ✓ | |  |  |  |  |
+| `TranspOrdBizPartnerFunction` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddresseeFullName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `InternationalPhoneNumber` |  | |  |  |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |  |  |
+| `InternationalFaxNumber` |  | |  |  |  |  |
+| `I_FreightOrderStageTP` |  | |  | `_TransportationOrderStage as _FreightOrderStage : redirected to parent I_FreightOrderStageTP` |  |  |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |  |  |
+| `I_FrtOrdStgeBPAddrAddlRprstnTP` |  | |  | `_TrOrdStgeBPAddrAddlRprstn as _FrtOrdStageBPAddrAddlRprstn : redirected to composition child I_FrtOrdStgeBPAddrAddlRprstnTP` |  |  |
+| `_PartnerFunction` | | ✓ | | | | |
 
 ## Source Code
 

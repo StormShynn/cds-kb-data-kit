@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionRoutingGroup` | ✓ | |  |  |
-| `ProductionRouting` | ✓ | |  |  |
-| `ProductionRoutingSequence` | ✓ | |  |  |
-| `ProductionRoutingSqncIntVers` | ✓ | |  |  |
-| `IsDeleted` |  | |  |  |
-| `IsImplicitlyDeleted` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `SequenceCategory` |  | |  |  |
-| `BillOfOperationsRefSequence` |  | |  |  |
-| `BOOSqncBranchOpInternalID` |  | |  |  |
-| `BOOSqncReturnOpInternalID` |  | |  |  |
-| `MinimumLotSizeQuantity` |  | |  |  |
-| `MaximumLotSizeQuantity` |  | |  |  |
-| `BillOfOperationsUnit` |  | |  |  |
-| `SequenceText` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_NonSqnc` | | ✓ | | |
-| `_ProdnRtgTP` | | ✓ | | |
-| `_Header` | | ✓ | | |
-| `_Operation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |  |  |
+| `ProductionRouting` | ✓ | |  |  |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |  |  |
+| `ProductionRoutingSqncIntVers` | ✓ | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `SequenceCategory` |  | |  |  |  |  |
+| `BillOfOperationsRefSequence` |  | |  |  |  |  |
+| `BOOSqncBranchOpInternalID` |  | |  |  |  |  |
+| `BOOSqncReturnOpInternalID` |  | |  |  |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |  |  |
+| `BillOfOperationsUnit` |  | |  |  |  |  |
+| `SequenceText` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_NonSqnc` | | ✓ | | | | |
+| `_ProdnRtgTP` | | ✓ | | | | |
+| `_Header` | | ✓ | | | | |
+| `_Operation` | | ✓ | | | | |
 
 ## Source Code
 

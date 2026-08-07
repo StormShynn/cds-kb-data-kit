@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationMethod` | ✓ | |  |  |
-| `ConsolidationMethodText` |  | |  | `cast(_Text[1: Language=$session.system_language].ConsolidationMethodText as fincs_description_text_30 preserving type )` |
-| `ConsolidationTaskCategory` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationMethod` | ✓ | |  |  |  |  |
+| `ConsolidationMethodText` |  | |  | `cast(_Text[1: Language=$session.system_language].ConsolidationMethodText as fincs_description_text_30 preserving type )` |  |  |
+| `ConsolidationTaskCategory` |  | |  |  |  |  |
 
 ## Source Code
 

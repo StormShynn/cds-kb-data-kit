@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SerialNumberProfile` | ✓ | |  | `serail` |
-| `Language` | ✓ | |  | `spras` |
-| `SerialNumberProfileDescription` |  | |  | `cast( t377p_t.serailtxt as losn_profile_description preserving type )` |
-| `_SerialNumberProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SerialNumberProfile` | ✓ | |  | `serail` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SerialNumberProfileDescription` |  | |  | `cast( t377p_t.serailtxt as losn_profile_description preserving type )` |  |  |
+| `_SerialNumberProfile` | | ✓ | | | | |
 
 ## Source Code
 

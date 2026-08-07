@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusinessProcess` | ✓ | |  |  |
-| `CABusinessLockReason` | ✓ | |  | `CADunningLockReason` |
-| `Language` | ✓ | |  |  |
-| `CABusinessLockReasonName` |  | |  | `CADunningLockReasonName` |
-| `_BusProcess` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusinessProcess` | ✓ | |  |  |  |  |
+| `CABusinessLockReason` | ✓ | |  | `CADunningLockReason` |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `CABusinessLockReasonName` |  | |  | `CADunningLockReasonName` |  |  |
+| `_BusProcess` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

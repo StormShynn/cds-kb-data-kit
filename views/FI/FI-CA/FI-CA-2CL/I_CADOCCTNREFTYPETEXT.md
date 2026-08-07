@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADocumentContainerRefType` | ✓ | |  | `refty` |
-| `Language` | ✓ | |  | `langu` |
-| `CADocumentContainerRefTypeText` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADocumentContainerRefType` | ✓ | |  | `refty` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CADocumentContainerRefTypeText` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

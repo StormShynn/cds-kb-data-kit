@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Sprsl` | ✓ | |  | `sprsl` |
-| `Arbgb` | ✓ | |  | `arbgb` |
-| `Msgnr` | ✓ | |  | `msgnr` |
-| `Text` |  | |  | `text` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Sprsl` | ✓ | |  | `sprsl` |  |  |
+| `Arbgb` | ✓ | |  | `arbgb` |  |  |
+| `Msgnr` | ✓ | |  | `msgnr` |  |  |
+| `Text` |  | |  | `text` |  |  |
 
 ## Source Code
 

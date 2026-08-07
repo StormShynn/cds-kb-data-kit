@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `FinancialTransaction` | ✓ | |  |  |
-| `FinancialTransactionNPVType` | ✓ | |  |  |
-| `NetPresentValueValidityDate` | ✓ | |  |  |
-| `Counterparty` |  | | `_FinancialTransaction` | `Counterparty` |
-| `FinancialInstrProductCategory` |  | | `_FinancialTransaction` | `FinancialInstrProductCategory` |
-| `FinancialInstrumentProductType` |  | | `_FinancialTransaction` | `FinancialInstrumentProductType` |
-| `FinancialInstrTransactionType` |  | | `_FinancialTransaction` | `FinancialInstrTransactionType` |
-| `NetPresentValueAmountInNPVCrcy` |  | |  |  |
-| `IntrinsicValueAmountInNPVCrcy` |  | |  |  |
-| `TimeValueAmountInNPVCrcy` |  | |  |  |
-| `CleanPriceAmountInNPVCrcy` |  | |  |  |
-| `IncomingNPVAmountInNPVCrcy` |  | |  |  |
-| `OutgoingNPVAmountInNPVCrcy` |  | |  |  |
-| `RiskFreeNPVAmountInNPVCrcy` |  | |  |  |
-| `CreditValueAdjmtAmtInNPVCrcy` |  | |  |  |
-| `DebitValueAdjmtAmtInNPVCrcy` |  | |  |  |
-| `NetPresentValueCurrency` |  | |  |  |
-| `_Counterparty` |  | | `_FinancialTransaction` | `_Counterparty` |
-| `_FinancialInstrProdCat` |  | | `_FinancialTransaction` | `_FinancialInstrProdCat` |
-| `_FinancialInstrProdType` |  | | `_FinancialTransaction` | `_FinancialInstrProdType` |
-| `_FinancialInstrTransType` |  | | `_FinancialTransaction` | `_FinancialInstrTransType` |
-| `_CompanyCode` | | ✓ | | |
-| `_FinancialTransaction` | | ✓ | | |
-| `_NPVType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FinancialTransaction` | ✓ | |  |  |  |  |
+| `FinancialTransactionNPVType` | ✓ | |  |  |  |  |
+| `NetPresentValueValidityDate` | ✓ | |  |  |  |  |
+| `Counterparty` |  | | `_FinancialTransaction` | `Counterparty` |  |  |
+| `FinancialInstrProductCategory` |  | | `_FinancialTransaction` | `FinancialInstrProductCategory` |  |  |
+| `FinancialInstrumentProductType` |  | | `_FinancialTransaction` | `FinancialInstrumentProductType` |  |  |
+| `FinancialInstrTransactionType` |  | | `_FinancialTransaction` | `FinancialInstrTransactionType` |  |  |
+| `NetPresentValueAmountInNPVCrcy` |  | |  |  |  |  |
+| `IntrinsicValueAmountInNPVCrcy` |  | |  |  |  |  |
+| `TimeValueAmountInNPVCrcy` |  | |  |  |  |  |
+| `CleanPriceAmountInNPVCrcy` |  | |  |  |  |  |
+| `IncomingNPVAmountInNPVCrcy` |  | |  |  |  |  |
+| `OutgoingNPVAmountInNPVCrcy` |  | |  |  |  |  |
+| `RiskFreeNPVAmountInNPVCrcy` |  | |  |  |  |  |
+| `CreditValueAdjmtAmtInNPVCrcy` |  | |  |  |  |  |
+| `DebitValueAdjmtAmtInNPVCrcy` |  | |  |  |  |  |
+| `NetPresentValueCurrency` |  | |  |  |  |  |
+| `_Counterparty` |  | | `_FinancialTransaction` | `_Counterparty` |  |  |
+| `_FinancialInstrProdCat` |  | | `_FinancialTransaction` | `_FinancialInstrProdCat` |  |  |
+| `_FinancialInstrProdType` |  | | `_FinancialTransaction` | `_FinancialInstrProdType` |  |  |
+| `_FinancialInstrTransType` |  | | `_FinancialTransaction` | `_FinancialInstrTransType` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FinancialTransaction` | | ✓ | | | | |
+| `_NPVType` | | ✓ | | | | |
 
 ## Source Code
 

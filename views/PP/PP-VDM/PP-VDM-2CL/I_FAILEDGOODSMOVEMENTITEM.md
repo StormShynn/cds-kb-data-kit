@@ -28,97 +28,97 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FailedGoodsMovement` | ✓ | |  | `GoodsMovementException` |
-| `FailedGoodsMovementItem` | ✓ | |  | `GoodsMovementExceptionItem` |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ErrorOccurrenceDate` |  | |  |  |
-| `ErrorOccurrenceTime` |  | |  |  |
-| `SystemMessageIdentification` |  | |  |  |
-| `SystemMessageNumber` |  | |  |  |
-| `SystemMessageType` |  | |  |  |
-| `SystemMessageVariable1` |  | |  |  |
-| `SystemMessageVariable2` |  | |  |  |
-| `SystemMessageVariable3` |  | |  |  |
-| `SystemMessageVariable4` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  | `cast(affw.Material as productnumber preserving type)` |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Batch` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `GoodsMovementReasonCode` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `InventoryUsabilityCode` |  | |  |  |
-| `GoodsMovementRefDocType` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementInternalID_2` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `ReservationIsFinallyIssued` |  | |  |  |
-| `ProductionSupplyArea` |  | |  | `SupplyArea` |
-| `MaterialStaging` |  | |  |  |
-| `Warehouse` |  | |  |  |
-| `StorageType` |  | |  |  |
-| `StorageBin` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `EWMStorageBin` |  | |  |  |
-| `DestinationStorageBin` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `ReversalMaterialDocument` |  | |  |  |
-| `ReversalMaterialDocumentItem` |  | |  |  |
-| `ReversalMaterialDocumentYear` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderCategory` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `ReservationItem` |  | |  |  |
-| `RecordType` |  | |  |  |
-| `ConfirmationGroup` |  | |  |  |
-| `ConfirmationCount` |  | |  |  |
-| `OrderInternalID` |  | |  | `OrderInternalBillOfOperations` |
-| `OrderOperationInternalID` |  | |  | `OrderIntBillOfOperationsItem` |
-| `RepetitiveMfgConfirmation` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `ProductionSupervisor` |  | |  |  |
-| `RecordIsFromMfgProcgExec` |  | |  |  |
-| `SerialNumberAssgmtProfile` |  | |  |  |
-| `NumberOfSerialNumbers` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `ShopFloorItem` |  | |  |  |
-| `GdsMvtExcptnDepdntItemGroup` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `SLEDOrManufactureDate` |  | |  |  |
-| `GoodsMovementEntryUnit` |  | |  |  |
-| `GoodsMovementEntryQty` |  | |  |  |
-| `Currency` |  | |  |  |
-| `_ProductionSupplyArea` |  | |  | `_SupplyArea` |
-| `_FailedGoodsMovement` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Batch_2` | | ✓ | | |
-| `_PlantText` | | ✓ | | |
-| `_MaterialText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_OrderText` | | ✓ | | |
-| `_WBSElementText` | | ✓ | | |
-| `_StorageLocationText` | | ✓ | | |
-| `_ProductionSupplyAreaText` | | ✓ | | |
-| `_ConfirmationText` | | ✓ | | |
-| `_SupplierText` | | ✓ | | |
-| `_CustomerText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FailedGoodsMovement` | ✓ | |  | `GoodsMovementException` |  |  |
+| `FailedGoodsMovementItem` | ✓ | |  | `GoodsMovementExceptionItem` |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ErrorOccurrenceDate` |  | |  |  |  |  |
+| `ErrorOccurrenceTime` |  | |  |  |  |  |
+| `SystemMessageIdentification` |  | |  |  |  |  |
+| `SystemMessageNumber` |  | |  |  |  |  |
+| `SystemMessageType` |  | |  |  |  |  |
+| `SystemMessageVariable1` |  | |  |  |  |  |
+| `SystemMessageVariable2` |  | |  |  |  |  |
+| `SystemMessageVariable3` |  | |  |  |  |  |
+| `SystemMessageVariable4` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  | `cast(affw.Material as productnumber preserving type)` |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `GoodsMovementReasonCode` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `InventoryUsabilityCode` |  | |  |  |  |  |
+| `GoodsMovementRefDocType` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementInternalID_2` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |  |  |
+| `ProductionSupplyArea` |  | |  | `SupplyArea` |  |  |
+| `MaterialStaging` |  | |  |  |  |  |
+| `Warehouse` |  | |  |  |  |  |
+| `StorageType` |  | |  |  |  |  |
+| `StorageBin` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `EWMStorageBin` |  | |  |  |  |  |
+| `DestinationStorageBin` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `ReversalMaterialDocument` |  | |  |  |  |  |
+| `ReversalMaterialDocumentItem` |  | |  |  |  |  |
+| `ReversalMaterialDocumentYear` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `ReservationItem` |  | |  |  |  |  |
+| `RecordType` |  | |  |  |  |  |
+| `ConfirmationGroup` |  | |  |  |  |  |
+| `ConfirmationCount` |  | |  |  |  |  |
+| `OrderInternalID` |  | |  | `OrderInternalBillOfOperations` |  |  |
+| `OrderOperationInternalID` |  | |  | `OrderIntBillOfOperationsItem` |  |  |
+| `RepetitiveMfgConfirmation` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `ProductionSupervisor` |  | |  |  |  |  |
+| `RecordIsFromMfgProcgExec` |  | |  |  |  |  |
+| `SerialNumberAssgmtProfile` |  | |  |  |  |  |
+| `NumberOfSerialNumbers` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `ShopFloorItem` |  | |  |  |  |  |
+| `GdsMvtExcptnDepdntItemGroup` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `SLEDOrManufactureDate` |  | |  |  |  |  |
+| `GoodsMovementEntryUnit` |  | |  |  |  |  |
+| `GoodsMovementEntryQty` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `_ProductionSupplyArea` |  | |  | `_SupplyArea` |  |  |
+| `_FailedGoodsMovement` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Batch_2` | | ✓ | | | | |
+| `_PlantText` | | ✓ | | | | |
+| `_MaterialText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_OrderText` | | ✓ | | | | |
+| `_WBSElementText` | | ✓ | | | | |
+| `_StorageLocationText` | | ✓ | | | | |
+| `_ProductionSupplyAreaText` | | ✓ | | | | |
+| `_ConfirmationText` | | ✓ | | | | |
+| `_SupplierText` | | ✓ | | | | |
+| `_CustomerText` | | ✓ | | | | |
 
 ## Associations
 

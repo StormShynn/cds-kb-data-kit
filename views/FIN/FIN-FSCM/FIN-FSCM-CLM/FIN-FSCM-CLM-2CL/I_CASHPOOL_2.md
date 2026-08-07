@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CashPool` | ✓ | |  |  |
-| `CashPoolIsDeleted` |  | |  |  |
-| `CashPoolType` |  | |  |  |
-| `CashPoolTransfDrctn` |  | |  |  |
-| `CashPoolSrvcPrvdr` |  | |  |  |
-| `CashPoolBalCalcPrfl` |  | |  |  |
-| `PlanningLevel` |  | |  |  |
-| `BankManagedCashPoolAuthGrp` |  | |  |  |
-| `CashPoolLastChangeDateTime` |  | |  |  |
-| `CashPoolCreatedByUser` |  | |  |  |
-| `CashPoolLastChangedByUser` |  | |  |  |
-| `CashPoolCreationDateTime` |  | |  |  |
-| `IHBBusinessPartner` |  | |  |  |
-| `IHBBankKey` |  | |  |  |
-| `IHBBankAreaCountry` |  | |  |  |
-| `CashConcentrationGroup` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `_DrctnText` | | ✓ | | |
-| `_SrvcPrvdrText` | | ✓ | | |
-| `_IsDeletedText` | | ✓ | | |
-| `_TypeText` | | ✓ | | |
-| `_BalCalcProfText` | | ✓ | | |
-| `_PlanLevelText` | | ✓ | | |
-| `_AuthGrpText` | | ✓ | | |
-| `_IHBBankAreaOwner` | | ✓ | | |
-| `_CashConcentrationGrpText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CashPool` | ✓ | |  |  |  |  |
+| `CashPoolIsDeleted` |  | |  |  |  |  |
+| `CashPoolType` |  | |  |  |  |  |
+| `CashPoolTransfDrctn` |  | |  |  |  |  |
+| `CashPoolSrvcPrvdr` |  | |  |  |  |  |
+| `CashPoolBalCalcPrfl` |  | |  |  |  |  |
+| `PlanningLevel` |  | |  |  |  |  |
+| `BankManagedCashPoolAuthGrp` |  | |  |  |  |  |
+| `CashPoolLastChangeDateTime` |  | |  |  |  |  |
+| `CashPoolCreatedByUser` |  | |  |  |  |  |
+| `CashPoolLastChangedByUser` |  | |  |  |  |  |
+| `CashPoolCreationDateTime` |  | |  |  |  |  |
+| `IHBBusinessPartner` |  | |  |  |  |  |
+| `IHBBankKey` |  | |  |  |  |  |
+| `IHBBankAreaCountry` |  | |  |  |  |  |
+| `CashConcentrationGroup` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `_DrctnText` | | ✓ | | | | |
+| `_SrvcPrvdrText` | | ✓ | | | | |
+| `_IsDeletedText` | | ✓ | | | | |
+| `_TypeText` | | ✓ | | | | |
+| `_BalCalcProfText` | | ✓ | | | | |
+| `_PlanLevelText` | | ✓ | | | | |
+| `_AuthGrpText` | | ✓ | | | | |
+| `_IHBBankAreaOwner` | | ✓ | | | | |
+| `_CashConcentrationGrpText` | | ✓ | | | | |
 
 ## Source Code
 

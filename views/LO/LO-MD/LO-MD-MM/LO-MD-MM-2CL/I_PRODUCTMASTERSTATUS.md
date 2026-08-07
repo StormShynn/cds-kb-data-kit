@@ -30,24 +30,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `matnr` |
-| `ProductMasterMaintenanceStatus` | ✓ | |  | `statm` |
-| `ProdMasterStatusSequenceNumber` | ✓ | |  | `zhler` |
-| `CreationDate` |  | |  | `ersda` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `LastChangeDate` |  | |  | `laeda` |
-| `LastChangedByUser` |  | |  | `aenam` |
-| `Plant` |  | |  | `werks` |
-| `StorageLocation` |  | |  | `lgort` |
-| `Warehouse` |  | |  | `lgnum` |
-| `StorageType` |  | |  | `lgtyp` |
-| `ProductSalesOrganization` |  | |  | `vkorg` |
-| `ProductDistributionChannel` |  | |  | `vtweg` |
-| `ValuationArea` |  | |  | `bwkey` |
-| `ValuationType` |  | |  | `bwtar` |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `ProductMasterMaintenanceStatus` | ✓ | |  | `statm` |  |  |
+| `ProdMasterStatusSequenceNumber` | ✓ | |  | `zhler` |  |  |
+| `CreationDate` |  | |  | `ersda` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `LastChangeDate` |  | |  | `laeda` |  |  |
+| `LastChangedByUser` |  | |  | `aenam` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `StorageLocation` |  | |  | `lgort` |  |  |
+| `Warehouse` |  | |  | `lgnum` |  |  |
+| `StorageType` |  | |  | `lgtyp` |  |  |
+| `ProductSalesOrganization` |  | |  | `vkorg` |  |  |
+| `ProductDistributionChannel` |  | |  | `vtweg` |  |  |
+| `ValuationArea` |  | |  | `bwkey` |  |  |
+| `ValuationType` |  | |  | `bwtar` |  |  |
+| `_Product` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |
-| `ProdCmplncLogsDocumentStage` | ✓ | |  |  |
-| `Country` | ✓ | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_Document` | | ✓ | | |
-| `_Stage` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |  |  |
+| `ProdCmplncLogsDocumentStage` | ✓ | |  |  |  |  |
+| `Country` | ✓ | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_Document` | | ✓ | | | | |
+| `_Stage` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `FiscalQuarter` | ✓ | |  | `cast ( dd07t.domvalue_l as fis_fiscal_quarter )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FiscalQuarterName` |  | |  | `cast( dd07t.ddtext as fis_fiscal_quarter_name )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `FiscalQuarter` | ✓ | |  | `cast ( dd07t.domvalue_l as fis_fiscal_quarter )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FiscalQuarterName` |  | |  | `cast( dd07t.ddtext as fis_fiscal_quarter_name )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

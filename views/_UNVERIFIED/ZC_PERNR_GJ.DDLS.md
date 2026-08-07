@@ -37,20 +37,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ZcPernrId` | ✓ | |  |  |
-| `ZcEmpName` |  | |  |  |
-| `ZcOrgehCode` |  | |  |  |
-| `zcorgehname` |  | |  |  |
-| `Zchp` |  | |  |  |
-| `CreatedBy` |  | |  |  |
-| `CreatedAt` |  | |  |  |
-| `LastChangedBy` |  | |  |  |
-| `LastChangedAt` |  | |  |  |
-| `Attachment` |  | |  |  |
-| `MimeType` |  | |  |  |
-| `FileName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ZcPernrId` | ✓ | |  |  |  |  |
+| `ZcEmpName` |  | |  |  |  |  |
+| `ZcOrgehCode` |  | |  |  |  |  |
+| `zcorgehname` |  | |  |  |  |  |
+| `Zchp` |  | |  |  |  |  |
+| `CreatedBy` |  | |  |  |  |  |
+| `CreatedAt` |  | |  |  |  |  |
+| `LastChangedBy` |  | |  |  |  |  |
+| `LastChangedAt` |  | |  |  |  |  |
+| `Attachment` |  | |  |  |  |  |
+| `MimeType` |  | |  |  |  |  |
+| `FileName` |  | |  |  |  |  |
 
 ## Source Code
 

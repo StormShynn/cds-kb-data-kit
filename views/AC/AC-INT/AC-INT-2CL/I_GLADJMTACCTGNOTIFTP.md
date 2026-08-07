@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAdjmtAcctgNotificationUUID` | ✓ | |  |  |
-| `AccountingDocument` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `EntryTimestamp` |  | |  |  |
-| `_CompanyCodeVH` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAdjmtAcctgNotificationUUID` | ✓ | |  |  |  |  |
+| `AccountingDocument` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `EntryTimestamp` |  | |  |  |  |  |
+| `_CompanyCodeVH` | | ✓ | | | | |
 
 ## Source Code
 

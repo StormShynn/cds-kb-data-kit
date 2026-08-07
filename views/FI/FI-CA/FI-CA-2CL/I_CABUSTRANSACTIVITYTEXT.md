@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusinessTransactionActivity` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as evl_actid_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CABusTransActivityName` |  | |  | `cast( ddtext as evl_actid_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusinessTransactionActivity` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as evl_actid_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CABusTransActivityName` |  | |  | `cast( ddtext as evl_actid_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

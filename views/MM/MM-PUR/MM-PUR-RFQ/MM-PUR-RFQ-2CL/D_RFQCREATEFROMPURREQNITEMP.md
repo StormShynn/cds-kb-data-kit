@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseRequisition` |  | |  | `banfn` |
-| `PurchaseRequisitionItem` |  | |  | `bnfpo` |
-| `_DummyAssociation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseRequisition` |  | |  | `banfn` |  |  |
+| `PurchaseRequisitionItem` |  | |  | `bnfpo` |  |  |
+| `_DummyAssociation` | | ✓ | | | | |
 
 ## Source Code
 

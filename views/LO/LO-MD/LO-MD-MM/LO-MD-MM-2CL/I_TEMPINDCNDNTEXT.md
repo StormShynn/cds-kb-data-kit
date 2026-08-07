@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TemperatureConditionInd` | ✓ | |  | `tempb` |
-| `Language` | ✓ | |  | `spras` |
-| `TemperatureConditionIndName` |  | |  | `tbtxt` |
-| `_TemperatureConditionInd` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TemperatureConditionInd` | ✓ | |  | `tempb` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TemperatureConditionIndName` |  | |  | `tbtxt` |  |  |
+| `_TemperatureConditionInd` | | ✓ | | | | |
 
 ## Associations
 

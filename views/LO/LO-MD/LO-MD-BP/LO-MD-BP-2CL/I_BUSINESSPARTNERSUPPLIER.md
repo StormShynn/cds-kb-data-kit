@@ -33,75 +33,75 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  |  |
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BusinessPartnerUUID` |  | |  | `partner_guid` |
-| `BusinessPartnerCategory` |  | |  | `type` |
-| `SupplierAccountGroup` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `InternationalLocationNumber1` |  | |  |  |
-| `InternationalLocationNumber2` |  | |  |  |
-| `InternationalLocationNumber3` |  | |  |  |
-| `ReferenceAccountGroup` |  | |  |  |
-| `SupplierAlternativePayee` |  | |  | `AlternativePayeeAccountNumber` |
-| `Customer` |  | |  |  |
-| `PostingIsBlocked` |  | |  |  |
-| `PurchasingIsBlocked` |  | |  |  |
-| `VATLiability` |  | |  |  |
-| `PaymentIsBlockedForSupplier` |  | |  |  |
-| `SuplrProofOfDelivRlvtCode` |  | |  |  |
-| `BR_TaxIsSplit` |  | |  |  |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `AuthorizationGroup` |  | |  |  |
-| `IsToBeAcceptedAtOrigin` |  | |  |  |
-| `SupplierCorporateGroup` |  | |  |  |
-| `ResponsibleType` |  | |  |  |
-| `FiscalAddress` |  | |  |  |
-| `SupplierProcurementBlock` |  | |  |  |
-| `DataExchangeInstructionKey` |  | |  |  |
-| `BPIsEqualizationTaxSubject` |  | |  |  |
-| `BRSpcfcTaxBasePercentageCode` |  | |  |  |
-| `DataMediumExchangeIndicator` |  | |  |  |
-| `TranspServiceAgentStstcGrp` |  | |  |  |
-| `TaxNumberResponsible` |  | |  |  |
-| `TaxNumberType` |  | |  |  |
-| `SuplrQualityManagementSystem` |  | |  |  |
-| `SuplrQltyInProcmtCertfnValidTo` |  | |  |  |
-| `SupplierIsSubRangeRelevant` |  | |  |  |
-| `TrainStationName` |  | |  |  |
-| `AlternativePayeeIsAllowed` |  | |  |  |
-| `PaytSlipWthRefSubscriber` |  | |  |  |
-| `SupplierIsPlantRelevant` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `SupplierPlant` |  | |  |  |
-| `DeletionIndicator` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `PaymentReason` |  | |  |  |
-| `SupplierCentralDeletionIsBlock` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `IsOneTimeAccount` |  | |  |  |
-| `BusinessPartnerPanNumber` |  | |  |  |
-| `_SupplierToBusinessPartner` | | ✓ | | |
-| `_ReferenceAccountGroupText` | | ✓ | | |
-| `_SupplierAlternativePayee` | | ✓ | | |
-| `_FiscalAddress` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_SupplierAccountGroup` | | ✓ | | |
-| `_SupplierAccountGroupText` | | ✓ | | |
-| `_ProcurementBlock` | | ✓ | | |
-| `_QualityManagementSystem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BusinessPartnerUUID` |  | |  | `partner_guid` |  |  |
+| `BusinessPartnerCategory` |  | |  | `type` |  |  |
+| `SupplierAccountGroup` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `InternationalLocationNumber1` |  | |  |  |  |  |
+| `InternationalLocationNumber2` |  | |  |  |  |  |
+| `InternationalLocationNumber3` |  | |  |  |  |  |
+| `ReferenceAccountGroup` |  | |  |  |  |  |
+| `SupplierAlternativePayee` |  | |  | `AlternativePayeeAccountNumber` |  |  |
+| `Customer` |  | |  |  |  |  |
+| `PostingIsBlocked` |  | |  |  |  |  |
+| `PurchasingIsBlocked` |  | |  |  |  |  |
+| `VATLiability` |  | |  |  |  |  |
+| `PaymentIsBlockedForSupplier` |  | |  |  |  |  |
+| `SuplrProofOfDelivRlvtCode` |  | |  |  |  |  |
+| `BR_TaxIsSplit` |  | |  |  |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `IsToBeAcceptedAtOrigin` |  | |  |  |  |  |
+| `SupplierCorporateGroup` |  | |  |  |  |  |
+| `ResponsibleType` |  | |  |  |  |  |
+| `FiscalAddress` |  | |  |  |  |  |
+| `SupplierProcurementBlock` |  | |  |  |  |  |
+| `DataExchangeInstructionKey` |  | |  |  |  |  |
+| `BPIsEqualizationTaxSubject` |  | |  |  |  |  |
+| `BRSpcfcTaxBasePercentageCode` |  | |  |  |  |  |
+| `DataMediumExchangeIndicator` |  | |  |  |  |  |
+| `TranspServiceAgentStstcGrp` |  | |  |  |  |  |
+| `TaxNumberResponsible` |  | |  |  |  |  |
+| `TaxNumberType` |  | |  |  |  |  |
+| `SuplrQualityManagementSystem` |  | |  |  |  |  |
+| `SuplrQltyInProcmtCertfnValidTo` |  | |  |  |  |  |
+| `SupplierIsSubRangeRelevant` |  | |  |  |  |  |
+| `TrainStationName` |  | |  |  |  |  |
+| `AlternativePayeeIsAllowed` |  | |  |  |  |  |
+| `PaytSlipWthRefSubscriber` |  | |  |  |  |  |
+| `SupplierIsPlantRelevant` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `SupplierPlant` |  | |  |  |  |  |
+| `DeletionIndicator` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `PaymentReason` |  | |  |  |  |  |
+| `SupplierCentralDeletionIsBlock` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `IsOneTimeAccount` |  | |  |  |  |  |
+| `BusinessPartnerPanNumber` |  | |  |  |  |  |
+| `_SupplierToBusinessPartner` | | ✓ | | | | |
+| `_ReferenceAccountGroupText` | | ✓ | | | | |
+| `_SupplierAlternativePayee` | | ✓ | | | | |
+| `_FiscalAddress` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_SupplierAccountGroup` | | ✓ | | | | |
+| `_SupplierAccountGroupText` | | ✓ | | | | |
+| `_ProcurementBlock` | | ✓ | | | | |
+| `_QualityManagementSystem` | | ✓ | | | | |
 
 ## Associations
 

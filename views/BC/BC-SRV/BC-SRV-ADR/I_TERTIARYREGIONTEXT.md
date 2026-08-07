@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `Country` | ✓ | |  | `country` |
-| `Region` | ✓ | |  | `region` |
-| `SecondaryRegion` | ✓ | |  | `county_code` |
-| `TertiaryRegion` | ✓ | |  | `township_code` |
-| `TertiaryRegionName` |  | |  | `township` |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_SecondaryRegion` | | ✓ | | |
-| `_TertiaryRegion` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `Country` | ✓ | |  | `country` |  |  |
+| `Region` | ✓ | |  | `region` |  |  |
+| `SecondaryRegion` | ✓ | |  | `county_code` |  |  |
+| `TertiaryRegion` | ✓ | |  | `township_code` |  |  |
+| `TertiaryRegionName` |  | |  | `township` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_SecondaryRegion` | | ✓ | | | | |
+| `_TertiaryRegion` | | ✓ | | | | |
 
 ## Associations
 

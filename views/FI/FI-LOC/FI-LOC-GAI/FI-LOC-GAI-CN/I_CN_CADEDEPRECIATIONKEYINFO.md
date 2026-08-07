@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |
-| `ChartOfDepreciation` | ✓ | |  | `afapl` |
-| `DepreciationKey` | ✓ | |  | `afasl` |
-| `CN_CADEDepreciationFormulaText` |  | |  | `cade_depr_fmla` |
-| `DepreciationKeyName` |  | | `_DeprKeyText` | `DepreciationKeyName` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |  |  |
+| `ChartOfDepreciation` | ✓ | |  | `afapl` |  |  |
+| `DepreciationKey` | ✓ | |  | `afasl` |  |  |
+| `CN_CADEDepreciationFormulaText` |  | |  | `cade_depr_fmla` |  |  |
+| `DepreciationKeyName` |  | | `_DeprKeyText` | `DepreciationKeyName` |  |  |
 
 ## Associations
 

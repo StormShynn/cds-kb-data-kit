@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerProject` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `SalesOrder` |  | |  |  |
-| `Partner` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `SDDocPartnerAddressRefType` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `BPAddrDeterminationTransaction` |  | |  |  |
-| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
-| `SalesOrderType` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `_SalesOrder` | | ✓ | | |
-| `_CustProjSlsOrd` | | ✓ | | |
-| `_CustomerProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerProject` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |  |  |
+| `SalesOrderType` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_CustProjSlsOrd` | | ✓ | | | | |
+| `_CustomerProject` | | ✓ | | | | |
 
 ## Associations
 

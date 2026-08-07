@@ -27,108 +27,108 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | |  | `Notification` |
-| `MasterLanguage` |  | |  |  |
-| `NotificationOrigin` |  | |  |  |
-| `NotificationType` |  | |  |  |
-| `NotifProcessingPhase` |  | |  |  |
-| `NotificationText` |  | |  |  |
-| `NotificationPriorityType` |  | |  |  |
-| `NotificationPriority` |  | |  |  |
-| `NotificationStatusObject` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `NotificationCatalog` |  | |  |  |
-| `NotificationCodeGroup` |  | |  |  |
-| `NotificationCodeID` |  | |  | `cast( I_Notification.NotificationCodeID as vdm_qmcod preserving type )` |
-| `NotificationComplaintQuantity` |  | |  |  |
-| `NotificationInternalQuantity` |  | |  |  |
-| `NotificationExternalQty` |  | |  |  |
-| `NotificationQuantityUnit` |  | |  |  |
-| `NotificationReferenceQuantity` |  | |  |  |
-| `NotifReturnDeliveryQuantity` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedDate` |  | |  |  |
-| `NotificationCreationTime` |  | |  |  |
-| `NotificationReportingDate` |  | |  |  |
-| `NotificationCompletionDate` |  | |  |  |
-| `NotificationRequiredStartDate` |  | |  |  |
-| `NotificationRequiredStartTime` |  | |  |  |
-| `NotificationRequiredEndDate` |  | |  |  |
-| `NotificationRequiredEndTime` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `NotificationReturnDeliveryDate` |  | |  |  |
-| `NotificationTimeZone` |  | |  | `cast ( I_Notification.NotificationTimeZone as vdm_qtzonso preserving type )` |
-| `ChangedDateTime` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `ReportedByUser` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ProductionOrder` |  | |  |  |
-| `MfgOrderInternalID` |  | |  |  |
-| `ProductionVersion` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `ActiveDivision` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `InspectionLot` |  | |  |  |
-| `OrderOperationInternalID` |  | |  |  |
-| `Batch` |  | |  |  |
-| `Manufacturer` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `AdditionalDeviceData` |  | |  |  |
-| `NotificationLinkedNotification` |  | |  | `cast( I_Notification.NotificationLinkedNotification as vdm_qwrnum preserving type )` |
-| `NotificationExtReferenceNumber` |  | |  | `cast( I_Notification.NotificationExtReferenceNumber as vdm_qmextnr preserving type )` |
-| `OrderDocument` |  | |  |  |
-| `OrderDocumentItem` |  | |  |  |
-| `DeliveryDocument` |  | |  |  |
-| `DeliveryDocumentItem` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `ProductionDate` |  | |  |  |
-| `_NotificationItem` |  | |  | `_QualityNotificationItem` |
-| `_QualityNotificationPartner` | | ✓ | | |
-| `_QualityNotificationItem` | | ✓ | | |
-| `_QltyNotificationTask` | | ✓ | | |
-| `_QltyNotificationActivity` | | ✓ | | |
-| `_QltyNotificationHdrTask` | | ✓ | | |
-| `_QltyNotificationHdrActivity` | | ✓ | | |
-| `_QltyNotificationLongText` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductGroup_2` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_PurchasingDocument` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_NotificationQuantityUnit` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_InspectionLot` | | ✓ | | |
-| `_InspectionOperation` | | ✓ | | |
-| `_OrderOperationBasic` | | ✓ | | |
-| `_NotificationType` | | ✓ | | |
-| `_NotificationPriority` | | ✓ | | |
-| `_NotificationCatalog` | | ✓ | | |
-| `_NotificationCodeGroup` | | ✓ | | |
-| `_NotificationCode` | | ✓ | | |
-| `_NotifProcessingPhase` | | ✓ | | |
-| `_StsObjConcatActiveStsILL` | | ✓ | | |
-| `_CreatedByUserContactCard` | | ✓ | | |
-| `_LastChangedByUserContactCard` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |  |  |
+| `MasterLanguage` |  | |  |  |  |  |
+| `NotificationOrigin` |  | |  |  |  |  |
+| `NotificationType` |  | |  |  |  |  |
+| `NotifProcessingPhase` |  | |  |  |  |  |
+| `NotificationText` |  | |  |  |  |  |
+| `NotificationPriorityType` |  | |  |  |  |  |
+| `NotificationPriority` |  | |  |  |  |  |
+| `NotificationStatusObject` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `NotificationCatalog` |  | |  |  |  |  |
+| `NotificationCodeGroup` |  | |  |  |  |  |
+| `NotificationCodeID` |  | |  | `cast( I_Notification.NotificationCodeID as vdm_qmcod preserving type )` |  |  |
+| `NotificationComplaintQuantity` |  | |  |  |  |  |
+| `NotificationInternalQuantity` |  | |  |  |  |  |
+| `NotificationExternalQty` |  | |  |  |  |  |
+| `NotificationQuantityUnit` |  | |  |  |  |  |
+| `NotificationReferenceQuantity` |  | |  |  |  |  |
+| `NotifReturnDeliveryQuantity` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedDate` |  | |  |  |  |  |
+| `NotificationCreationTime` |  | |  |  |  |  |
+| `NotificationReportingDate` |  | |  |  |  |  |
+| `NotificationCompletionDate` |  | |  |  |  |  |
+| `NotificationRequiredStartDate` |  | |  |  |  |  |
+| `NotificationRequiredStartTime` |  | |  |  |  |  |
+| `NotificationRequiredEndDate` |  | |  |  |  |  |
+| `NotificationRequiredEndTime` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `NotificationReturnDeliveryDate` |  | |  |  |  |  |
+| `NotificationTimeZone` |  | |  | `cast ( I_Notification.NotificationTimeZone as vdm_qtzonso preserving type )` |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `ReportedByUser` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ProductionOrder` |  | |  |  |  |  |
+| `MfgOrderInternalID` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `ActiveDivision` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `InspectionLot` |  | |  |  |  |  |
+| `OrderOperationInternalID` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `Manufacturer` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `AdditionalDeviceData` |  | |  |  |  |  |
+| `NotificationLinkedNotification` |  | |  | `cast( I_Notification.NotificationLinkedNotification as vdm_qwrnum preserving type )` |  |  |
+| `NotificationExtReferenceNumber` |  | |  | `cast( I_Notification.NotificationExtReferenceNumber as vdm_qmextnr preserving type )` |  |  |
+| `OrderDocument` |  | |  |  |  |  |
+| `OrderDocumentItem` |  | |  |  |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `DeliveryDocumentItem` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `ProductionDate` |  | |  |  |  |  |
+| `_NotificationItem` |  | |  | `_QualityNotificationItem` |  |  |
+| `_QualityNotificationPartner` | | ✓ | | | | |
+| `_QualityNotificationItem` | | ✓ | | | | |
+| `_QltyNotificationTask` | | ✓ | | | | |
+| `_QltyNotificationActivity` | | ✓ | | | | |
+| `_QltyNotificationHdrTask` | | ✓ | | | | |
+| `_QltyNotificationHdrActivity` | | ✓ | | | | |
+| `_QltyNotificationLongText` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductGroup_2` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_PurchasingDocument` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_NotificationQuantityUnit` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_InspectionLot` | | ✓ | | | | |
+| `_InspectionOperation` | | ✓ | | | | |
+| `_OrderOperationBasic` | | ✓ | | | | |
+| `_NotificationType` | | ✓ | | | | |
+| `_NotificationPriority` | | ✓ | | | | |
+| `_NotificationCatalog` | | ✓ | | | | |
+| `_NotificationCodeGroup` | | ✓ | | | | |
+| `_NotificationCode` | | ✓ | | | | |
+| `_NotifProcessingPhase` | | ✓ | | | | |
+| `_StsObjConcatActiveStsILL` | | ✓ | | | | |
+| `_CreatedByUserContactCard` | | ✓ | | | | |
+| `_LastChangedByUserContactCard` | | ✓ | | | | |
 
 ## Associations
 

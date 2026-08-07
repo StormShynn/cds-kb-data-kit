@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDistrict` | ✓ | |  | `bzirk` |
-| `Language` | ✓ | |  | `spras` |
-| `SalesDistrictName` |  | |  | `bztxt` |
-| `_SalesDistrict` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDistrict` | ✓ | |  | `bzirk` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SalesDistrictName` |  | |  | `bztxt` |  |  |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

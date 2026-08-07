@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | | `_sernum` | `InspectionLot` |
-| `MaintenanceItemObjectList` | ✓ | |  |  |
-| `SerialNumber` | ✓ | |  |  |
-| `InspectionLotType` |  | | `_sernum._InspectionLot` | `InspectionLotType` |
-| `Plant` |  | | `_sernum._InspectionLot` | `Plant` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | | `_sernum` | `InspectionLot` |  |  |
+| `MaintenanceItemObjectList` | ✓ | |  |  |  |  |
+| `SerialNumber` | ✓ | |  |  |  |  |
+| `InspectionLotType` |  | | `_sernum._InspectionLot` | `InspectionLotType` |  |  |
+| `Plant` |  | | `_sernum._InspectionLot` | `Plant` |  |  |
 
 ## Source Code
 

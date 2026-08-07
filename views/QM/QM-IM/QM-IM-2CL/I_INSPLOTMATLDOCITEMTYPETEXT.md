@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspLotMatlDocItemType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as qambtype )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `InspLotMatlDocItemTypeText` |  | |  | `cast( ddtext as val_text )` |
-| `_Language` | | ✓ | | |
-| `_InspLotMatlDocItemType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspLotMatlDocItemType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as qambtype )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `InspLotMatlDocItemTypeText` |  | |  | `cast( ddtext as val_text )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspLotMatlDocItemType` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,62 +30,62 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditMemoRequest` | ✓ | |  |  |
-| `CreditMemoRequestType` |  | |  |  |
-| `CreditMemoRequestDate` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `CustomerName` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `ReferenceDistributionChannel` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderType` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SDDocumentReason` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `HeaderBillingBlockReason` |  | |  |  |
-| `SDPricingProcedure` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `BillingCompanyCode` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `SalesDocumentCreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `CreditMemoReqApprovalReason` |  | |  |  |
-| `SalesDocApprovalStatus` |  | |  |  |
-| `OverallBillingBlockStatus` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `OverallSDDocumentRejectionSts` |  | |  |  |
-| `OverallOrdReltdBillgStatus` |  | |  |  |
-| `TotalBlockStatus` |  | |  |  |
-| `HdrGeneralIncompletionStatus` |  | |  |  |
-| `OvrlItmGeneralIncompletionSts` |  | |  |  |
-| `OverallSDDocReferenceStatus` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_PricingElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |  |  |
+| `CreditMemoRequestType` |  | |  |  |  |  |
+| `CreditMemoRequestDate` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `CustomerName` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `ReferenceDistributionChannel` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |  |  |
+| `SDPricingProcedure` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `BillingCompanyCode` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `SalesDocumentCreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `CreditMemoReqApprovalReason` |  | |  |  |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |  |  |
+| `OverallBillingBlockStatus` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |  |  |
+| `OverallOrdReltdBillgStatus` |  | |  |  |  |  |
+| `TotalBlockStatus` |  | |  |  |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_PricingElement` | | ✓ | | | | |
 
 ## Source Code
 

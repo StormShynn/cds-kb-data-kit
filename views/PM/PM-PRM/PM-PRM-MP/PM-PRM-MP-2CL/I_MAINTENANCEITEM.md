@@ -29,109 +29,109 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceItem` | ✓ | |  |  |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
-| `MaintObjLocAcctAssgmtIsIndiv` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `SettlementRuleIsMaintained` |  | |  |  |
-| `MaintenanceItemHasLongText` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `TaskListType` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | | `_LocationAccountAssignment` | `FunctionalLocation` |
-| `Assembly` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `MaintenanceItemDescription` |  | |  |  |
-| `MaintenancePlan` |  | |  |  |
-| `MaintenancePlanItemPosition` |  | |  |  |
-| `MaintenanceStrategy` |  | |  |  |
-| `MaintenancePlanCategory` |  | |  |  |
-| `MaintenancePlanCallObject` |  | |  |  |
-| `MaintItemCausesAreDisplayed` |  | |  |  |
-| `MaintItemReasonsAreDisplayed` |  | |  |  |
-| `AdditionalDeviceData` |  | |  |  |
-| `NotificationType` |  | |  |  |
-| `MaintenanceNotification` |  | |  |  |
-| `MaintPriorityType` |  | |  | `case _MaintenancePlanCatParam.MaintenancePlanCallObject when '' then _MaintOrderTypeControlParam.MaintPriorityType when '2' then _PMNotificationType.MaintPriorityType end` |
-| `MaintPriority` |  | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `MaintenanceOrderType` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaintenanceItemObjectList` |  | |  |  |
-| `OperationSystemCondition` |  | |  |  |
-| `NumberOfTaskListExecutions` |  | |  |  |
-| `MaintenanceItemIsInactive` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `MaintObjectCategory` |  | |  |  |
-| `SalesDocument` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `SettlementOrder` |  | |  |  |
-| `MaintNotifTskIsAutomlyDtmnd` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `MaintPlanLastChangeDateTime` |  | |  |  |
-| `ImmediateReleaseIsBlocked` |  | |  |  |
-| `CycleSetSequence` |  | |  |  |
-| `ReferenceElement` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceContract` |  | |  |  |
-| `ServiceContractItem` |  | |  |  |
-| `ServiceOrderTemplate` |  | |  |  |
-| `Product` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `MaintCmplncCalculationMethod` |  | |  |  |
-| `MaintCmplncStrtDteOffsetInDays` |  | |  |  |
-| `MaintCmplncEndDateOffsetInDays` |  | |  |  |
-| `_PMNotificationPriority` | | ✓ | | |
-| `_PMNotificationPriorityType` | | ✓ | | |
-| `_LocationAccountAssignment` | | ✓ | | |
-| `_MaintenancePlannerGroup` | | ✓ | | |
-| `_MaintenancePlanningPlant` | | ✓ | | |
-| `_MaintenancePlan` | | ✓ | | |
-| `_MaintenancePlanCatParam` | | ✓ | | |
-| `_MaintenanceStrategy` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_MaintenanceNotification` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintenanceTaskList` | | ✓ | | |
-| `_TaskListType` | | ✓ | | |
-| `_TaskListGroup` | | ✓ | | |
-| `_TaskListGroup_2` | | ✓ | | |
-| `_TaskListGroupCounter` | | ✓ | | |
-| `_TaskListGroupCounter_2` | | ✓ | | |
-| `_MaintenanceActivityType` | | ✓ | | |
-| `_MaintenanceOrderType` | | ✓ | | |
-| `_MainWorkCenter` | | ✓ | | |
-| `_WorkCenterType` | | ✓ | | |
-| `_Assembly` | | ✓ | | |
-| `_PMNotificationType` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_SettlementOrder` | | ✓ | | |
-| `_MaintOperationSystCondition` | | ✓ | | |
-| `_MaintenanceItemObject` | | ✓ | | |
-| `_PMReferenceElement` | | ✓ | | |
-| `_MaintOrderTypeControlParam` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ImmediateReleaseIsBlocked` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ServiceContract` | | ✓ | | |
-| `_ServiceContractItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |  |  |
+| `MaintObjLocAcctAssgmtIsIndiv` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `SettlementRuleIsMaintained` |  | |  |  |  |  |
+| `MaintenanceItemHasLongText` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `TaskListType` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | | `_LocationAccountAssignment` | `FunctionalLocation` |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `MaintenanceItemDescription` |  | |  |  |  |  |
+| `MaintenancePlan` |  | |  |  |  |  |
+| `MaintenancePlanItemPosition` |  | |  |  |  |  |
+| `MaintenanceStrategy` |  | |  |  |  |  |
+| `MaintenancePlanCategory` |  | |  |  |  |  |
+| `MaintenancePlanCallObject` |  | |  |  |  |  |
+| `MaintItemCausesAreDisplayed` |  | |  |  |  |  |
+| `MaintItemReasonsAreDisplayed` |  | |  |  |  |  |
+| `AdditionalDeviceData` |  | |  |  |  |  |
+| `NotificationType` |  | |  |  |  |  |
+| `MaintenanceNotification` |  | |  |  |  |  |
+| `MaintPriorityType` |  | |  | `case _MaintenancePlanCatParam.MaintenancePlanCallObject when '' then _MaintOrderTypeControlParam.MaintPriorityType when '2' then _PMNotificationType.MaintPriorityType end` |  |  |
+| `MaintPriority` |  | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `MaintenanceOrderType` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaintenanceItemObjectList` |  | |  |  |  |  |
+| `OperationSystemCondition` |  | |  |  |  |  |
+| `NumberOfTaskListExecutions` |  | |  |  |  |  |
+| `MaintenanceItemIsInactive` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `MaintObjectCategory` |  | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `SettlementOrder` |  | |  |  |  |  |
+| `MaintNotifTskIsAutomlyDtmnd` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `MaintPlanLastChangeDateTime` |  | |  |  |  |  |
+| `ImmediateReleaseIsBlocked` |  | |  |  |  |  |
+| `CycleSetSequence` |  | |  |  |  |  |
+| `ReferenceElement` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceContract` |  | |  |  |  |  |
+| `ServiceContractItem` |  | |  |  |  |  |
+| `ServiceOrderTemplate` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `MaintCmplncCalculationMethod` |  | |  |  |  |  |
+| `MaintCmplncStrtDteOffsetInDays` |  | |  |  |  |  |
+| `MaintCmplncEndDateOffsetInDays` |  | |  |  |  |  |
+| `_PMNotificationPriority` | | ✓ | | | | |
+| `_PMNotificationPriorityType` | | ✓ | | | | |
+| `_LocationAccountAssignment` | | ✓ | | | | |
+| `_MaintenancePlannerGroup` | | ✓ | | | | |
+| `_MaintenancePlanningPlant` | | ✓ | | | | |
+| `_MaintenancePlan` | | ✓ | | | | |
+| `_MaintenancePlanCatParam` | | ✓ | | | | |
+| `_MaintenanceStrategy` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_MaintenanceNotification` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintenanceTaskList` | | ✓ | | | | |
+| `_TaskListType` | | ✓ | | | | |
+| `_TaskListGroup` | | ✓ | | | | |
+| `_TaskListGroup_2` | | ✓ | | | | |
+| `_TaskListGroupCounter` | | ✓ | | | | |
+| `_TaskListGroupCounter_2` | | ✓ | | | | |
+| `_MaintenanceActivityType` | | ✓ | | | | |
+| `_MaintenanceOrderType` | | ✓ | | | | |
+| `_MainWorkCenter` | | ✓ | | | | |
+| `_WorkCenterType` | | ✓ | | | | |
+| `_Assembly` | | ✓ | | | | |
+| `_PMNotificationType` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_SettlementOrder` | | ✓ | | | | |
+| `_MaintOperationSystCondition` | | ✓ | | | | |
+| `_MaintenanceItemObject` | | ✓ | | | | |
+| `_PMReferenceElement` | | ✓ | | | | |
+| `_MaintOrderTypeControlParam` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ImmediateReleaseIsBlocked` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ServiceContract` | | ✓ | | | | |
+| `_ServiceContractItem` | | ✓ | | | | |
 
 ## Associations
 

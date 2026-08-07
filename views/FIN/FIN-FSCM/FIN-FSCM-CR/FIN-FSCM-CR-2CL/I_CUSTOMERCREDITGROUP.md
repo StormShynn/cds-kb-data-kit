@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditAccountGroup` | ✓ | |  | `cred_group` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditAccountGroup` | ✓ | |  | `cred_group` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

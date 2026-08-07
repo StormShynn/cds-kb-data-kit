@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ValuationArea` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CompanyCodeName` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationArea` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CompanyCodeName` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Source Code
 

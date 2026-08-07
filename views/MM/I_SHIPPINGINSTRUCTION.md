@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShippingInstruction` | ✓ | |  | `evers` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShippingInstruction` | ✓ | |  | `evers` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

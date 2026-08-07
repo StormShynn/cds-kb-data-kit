@@ -29,168 +29,168 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  | `vkont` |
-| `BusinessPartner` | ✓ | |  | `gpart` |
-| `ContractAccountName` |  | |  | `vkbez` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `ertim` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `IsMarkedForDeletion` |  | |  | `cast( loevm as loevm preserving type )` |
-| `LastChangeDate` |  | |  | `aedatp` |
-| `LastChangeTime` |  | |  | `aetimp` |
-| `LastChangedByUser` |  | |  | `aenamp` |
-| `CABankIDForIncomingPayments` |  | |  | `ebvty` |
-| `CABankIDForOutgoingPayments` |  | |  | `abvty` |
-| `CAIncomingPaymentMethod` |  | |  | `ezawe` |
-| `CACnctntdOutgPaymentMethods` |  | |  | `azawe` |
-| `CAFirstOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 1, 1) as azawe1_conacct_kk preserving type)` |
-| `CASecondOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 2, 1) as azawe2_conacct_kk preserving type)` |
-| `CAThirdOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 3, 1) as azawe3_conacct_kk preserving type)` |
-| `CAFourthOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 4, 1) as azawe4_conacct_kk preserving type)` |
-| `CAFifthOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 5, 1) as azawe5_conacct_kk preserving type)` |
-| `CAHouseBankReference` |  | |  | `eigbv` |
-| `CAPaymentCardIDForIncomingPayt` |  | |  | `ccard_id` |
-| `CAPaymentCardIDForOutgoingPayt` |  | |  | `ccard_out` |
-| `SEPAMandate` |  | |  | `mndid` |
-| `CADunningProcedure` |  | |  | `mahnv` |
-| `CADunningNoticeGroup` |  | |  | `mgrup` |
-| `CACorrespondenceDunningProced` |  | |  | `corr_mahnv` |
-| `CACollectionsClerk` |  | |  | `persr` |
-| `CACollectionsMasterDataGroup` |  | |  | `cmgrp` |
-| `CACollectionStrategy` |  | |  | `strat` |
-| `CACollectionsContactPerson` |  | |  | `cpers` |
-| `ContractAccountForPayment` |  | |  | `vkonv` |
-| `CABusinessPartnerForPayment` |  | |  | `gparv` |
-| `CAAlternativePayer` |  | |  | `abwre` |
-| `CAAlternativePayee` |  | |  | `abwra` |
-| `CAAlternativeDunningRecipient` |  | |  | `abwma` |
-| `CAAlternativeInvoiceRecipient` |  | |  | `abwrh` |
-| `CAAlternativeCorrespncRcpnt` |  | |  | `def_rec` |
-| `CAAddressIDOfAlternativePayer` |  | |  | `adrre` |
-| `CAAddressIDOfAlternativePayee` |  | |  | `adrra` |
-| `CAAddressIDOfAltvDunRecipient` |  | |  | `adrma` |
-| `CAAddressIDOfAltvInvoiceRcpnt` |  | |  | `adrrh` |
-| `CACurrencyForDirectDebitLimit` |  | |  | `ddlcu` |
-| `CADirectDebitLimit` |  | |  | `ddlam` |
-| `CANmbrMnthsForDirectDebitLimit` |  | |  | `ddlnm` |
-| `CADirectDebitLimitCalcMode` |  | |  | `ddlxg` |
-| `CAStartDateForBillingPeriod` |  | |  | `inv_cycle_start` |
-| `ContrAcctPrtnHasInvcgChrgDsc` |  | |  | `inv_chgdisc_x` |
-| `CATargetCurrencyForInvoicing` |  | |  | `inv_curr` |
-| `CAInvcgCategory` |  | |  | `inv_category` |
-| `CAInvcgSchedule` |  | |  | `inv_schedule` |
-| `CABillgCycle` |  | |  | `inv_cycle` |
-| `CALastDayOfBillingPeriod` |  | |  | `inv_cycle_day` |
-| `CADetnCodeForAltvInvoiceForm` |  | |  | `inv_form_det_key` |
-| `CABusinessPartnerForPosting` |  | |  | `gpart_inv` |
-| `ContractAccountForPosting` |  | |  | `vkont_inv` |
-| `CABusinessPartnerForInvcgList` |  | |  | `gpart_invlist` |
-| `ContractAccountForInvcgList` |  | |  | `vkont_invlist` |
-| `CAMasterAgreement` |  | |  | `makey` |
-| `CAPartnerSettlementRule` |  | |  | `ptsrl` |
-| `ValdtyDateForWhldgTaxExmpCert` |  | |  | `qszdt` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `OutgPaytWithholdingTaxCode` |  | |  | `qsskz_a` |
-| `IncgPaytWithholdingTaxCode` |  | |  | `qsskz_e` |
-| `WithholdingTaxCertificate` |  | |  | `qsznr` |
-| `CAAdditionalDaysForCashMgmt` |  | |  | `fdztg` |
-| `CABusPartnerPostgLockExstcCode` |  | |  | `bpl_xpocl` |
-| `CABusPartnerAddlLockExstcCode` |  | |  | `bpl_xaddl` |
-| `CABusinessPartnerLockStartDate` |  | |  | `bpl_fdate` |
-| `CABusinessPartnerLockEndDate` |  | |  | `bpl_tdate` |
-| `CABPReferenceNumber` |  | |  | `exvko` |
-| `CACompanyCodeGroup` |  | |  | `opbuk` |
-| `CAStandardCompanyCode` |  | |  | `stdbk` |
-| `AltvContractAcctForCollvBills` |  | |  | `abwvk` |
-| `CAInterestCode` |  | |  | `ikey` |
-| `CashPlanningGroup` |  | |  | `fdgrp` |
-| `CARelationshipOfBPToContrAcct` |  | |  | `vkpbz` |
-| `AddressID` |  | |  | `adrnb` |
-| `CAAddressIDOfJurisdictionCode` |  | |  | `adrjdc` |
-| `CAAuthorizationGroup` |  | |  | `begru` |
-| `CAToleranceGroup` |  | |  | `togru` |
-| `CACorrespondenceVariant` |  | |  | `coprc` |
-| `PartnerCompany` |  | |  | `vbund` |
-| `CACorrespondenceActivityCode` |  | |  | `def_rec_ind` |
-| `CAClearingCategory` |  | |  | `vertyp` |
-| `CADefaultClearingRstrcnCode` |  | |  | `augrs_def` |
-| `SupplyingCountry` |  | |  | `landl` |
-| `BusinessPlace` |  | |  | `bupla` |
-| `CASubledgerApplication` |  | |  | `trsla` |
-| `PaymentCondition` |  | |  | `zahlkond` |
-| `CAAccountDeterminationCode` |  | |  | `kofiz_sd` |
-| `BusinessArea` |  | |  | `gsber` |
-| `CAPaymentCompanyCode` |  | | `_CompCodeGroup` | `CAPaymentCompanyCode` |
-| `Country` |  | | `_CompCodeGroup._CompanyCode` | `Country` |
-| `CABusinessPartnerLock` |  | |  | `bpl_xpocl` |
-| `CAClearingRestriction` |  | |  | `augrs_def` |
-| `CAPaymentMethodForIncgPayment` |  | |  | `ezawe` |
-| `CAPaymentMethodForOutgPayment` |  | |  | `azawe` |
-| `CAWhldgTaxCodeOutgoingPayt` |  | |  | `qsskz_a` |
-| `CAWhldgTaxCodeIncomingPayt` |  | |  | `qsskz_e` |
-| `_CorrVariant` |  | |  | `_CorrespncVar` |
-| `_BusinessArea` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_AlternativePayer` | | ✓ | | |
-| `_AlternativePayee` | | ✓ | | |
-| `_AltvDunningRecipient` | | ✓ | | |
-| `_AltvInvoiceRecipient` | | ✓ | | |
-| `_AltvCorrespncRcpnt` | | ✓ | | |
-| `_BPForPayment` | | ✓ | | |
-| `_CollContactPerson` | | ✓ | | |
-| `_CollectionsClerk` | | ✓ | | |
-| `_BPForPosting` | | ✓ | | |
-| `_BPForInvcgList` | | ✓ | | |
-| `_BusinessPlace` | | ✓ | | |
-| `_AcctDetnCode` | | ✓ | | |
-| `_CAAuthorizationGroup` | | ✓ | | |
-| `_BillgCycle` | | ✓ | | |
-| `_CABusPrtnAddlLockExstcCode` | | ✓ | | |
-| `_CABusPrtnPostgLockExstcCode` | | ✓ | | |
-| `_ClearingCategory` | | ✓ | | |
-| `_CollectionStrategy` | | ✓ | | |
-| `_CollMasterDataGroup` | | ✓ | | |
-| `_CompCodeGroup` | | ✓ | | |
-| `_CACorrespncActivityCode` | | ✓ | | |
-| `_CorrespncVar` | | ✓ | | |
-| `_CADfltClearingRstrcnCode` | | ✓ | | |
-| `_CADirectDebitLimitCalcMod` | | ✓ | | |
-| `_DunningProcedure` | | ✓ | | |
-| `_CorrespncDunningProcedure` | | ✓ | | |
-| `_DunNoticeGroup` | | ✓ | | |
-| `_HouseBankRef` | | ✓ | | |
-| `_InterestCode` | | ✓ | | |
-| `_InvcgCategory` | | ✓ | | |
-| `_InvcgSchedule` | | ✓ | | |
-| `_MasterAgreement` | | ✓ | | |
-| `_CAIncomingPaymentMethod` | | ✓ | | |
-| `_CAFirstOutgoingPaymentMethod` | | ✓ | | |
-| `_CASecondOutgoingPaymentMethod` | | ✓ | | |
-| `_CAThirdOutgoingPaymentMethod` | | ✓ | | |
-| `_CAFourthOutgoingPaymentMethod` | | ✓ | | |
-| `_CAFifthOutgoingPaymentMethod` | | ✓ | | |
-| `_CAPartnerSettlementRule` | | ✓ | | |
-| `_CashPlanningGroup` | | ✓ | | |
-| `_CASubledgerApplication` | | ✓ | | |
-| `_ToleranceGroup` | | ✓ | | |
-| `_CompCode` | | ✓ | | |
-| `_PaymentCompCode` | | ✓ | | |
-| `_RelshpOfBP` | | ✓ | | |
-| `_ContrAcc` | | ✓ | | |
-| `_AltvContrAcc` | | ✓ | | |
-| `_ContrAcctForPayt` | | ✓ | | |
-| `_ContrAcctForPosting` | | ✓ | | |
-| `_ContrAcctForInvcgList` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_SupplyingCountry` | | ✓ | | |
-| `_CurrencyForDDL` | | ✓ | | |
-| `_CurrencyForInvoicing` | | ✓ | | |
-| `_PartnerCompany` | | ✓ | | |
-| `_PaymentCondition` | | ✓ | | |
-| `_PaytMethodIncg` | | ✓ | | |
-| `_PaytMethodOutg` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  | `vkont` |  |  |
+| `BusinessPartner` | ✓ | |  | `gpart` |  |  |
+| `ContractAccountName` |  | |  | `vkbez` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `ertim` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `IsMarkedForDeletion` |  | |  | `cast( loevm as loevm preserving type )` |  |  |
+| `LastChangeDate` |  | |  | `aedatp` |  |  |
+| `LastChangeTime` |  | |  | `aetimp` |  |  |
+| `LastChangedByUser` |  | |  | `aenamp` |  |  |
+| `CABankIDForIncomingPayments` |  | |  | `ebvty` |  |  |
+| `CABankIDForOutgoingPayments` |  | |  | `abvty` |  |  |
+| `CAIncomingPaymentMethod` |  | |  | `ezawe` |  |  |
+| `CACnctntdOutgPaymentMethods` |  | |  | `azawe` |  |  |
+| `CAFirstOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 1, 1) as azawe1_conacct_kk preserving type)` |  |  |
+| `CASecondOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 2, 1) as azawe2_conacct_kk preserving type)` |  |  |
+| `CAThirdOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 3, 1) as azawe3_conacct_kk preserving type)` |  |  |
+| `CAFourthOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 4, 1) as azawe4_conacct_kk preserving type)` |  |  |
+| `CAFifthOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 5, 1) as azawe5_conacct_kk preserving type)` |  |  |
+| `CAHouseBankReference` |  | |  | `eigbv` |  |  |
+| `CAPaymentCardIDForIncomingPayt` |  | |  | `ccard_id` |  |  |
+| `CAPaymentCardIDForOutgoingPayt` |  | |  | `ccard_out` |  |  |
+| `SEPAMandate` |  | |  | `mndid` |  |  |
+| `CADunningProcedure` |  | |  | `mahnv` |  |  |
+| `CADunningNoticeGroup` |  | |  | `mgrup` |  |  |
+| `CACorrespondenceDunningProced` |  | |  | `corr_mahnv` |  |  |
+| `CACollectionsClerk` |  | |  | `persr` |  |  |
+| `CACollectionsMasterDataGroup` |  | |  | `cmgrp` |  |  |
+| `CACollectionStrategy` |  | |  | `strat` |  |  |
+| `CACollectionsContactPerson` |  | |  | `cpers` |  |  |
+| `ContractAccountForPayment` |  | |  | `vkonv` |  |  |
+| `CABusinessPartnerForPayment` |  | |  | `gparv` |  |  |
+| `CAAlternativePayer` |  | |  | `abwre` |  |  |
+| `CAAlternativePayee` |  | |  | `abwra` |  |  |
+| `CAAlternativeDunningRecipient` |  | |  | `abwma` |  |  |
+| `CAAlternativeInvoiceRecipient` |  | |  | `abwrh` |  |  |
+| `CAAlternativeCorrespncRcpnt` |  | |  | `def_rec` |  |  |
+| `CAAddressIDOfAlternativePayer` |  | |  | `adrre` |  |  |
+| `CAAddressIDOfAlternativePayee` |  | |  | `adrra` |  |  |
+| `CAAddressIDOfAltvDunRecipient` |  | |  | `adrma` |  |  |
+| `CAAddressIDOfAltvInvoiceRcpnt` |  | |  | `adrrh` |  |  |
+| `CACurrencyForDirectDebitLimit` |  | |  | `ddlcu` |  |  |
+| `CADirectDebitLimit` |  | |  | `ddlam` |  |  |
+| `CANmbrMnthsForDirectDebitLimit` |  | |  | `ddlnm` |  |  |
+| `CADirectDebitLimitCalcMode` |  | |  | `ddlxg` |  |  |
+| `CAStartDateForBillingPeriod` |  | |  | `inv_cycle_start` |  |  |
+| `ContrAcctPrtnHasInvcgChrgDsc` |  | |  | `inv_chgdisc_x` |  |  |
+| `CATargetCurrencyForInvoicing` |  | |  | `inv_curr` |  |  |
+| `CAInvcgCategory` |  | |  | `inv_category` |  |  |
+| `CAInvcgSchedule` |  | |  | `inv_schedule` |  |  |
+| `CABillgCycle` |  | |  | `inv_cycle` |  |  |
+| `CALastDayOfBillingPeriod` |  | |  | `inv_cycle_day` |  |  |
+| `CADetnCodeForAltvInvoiceForm` |  | |  | `inv_form_det_key` |  |  |
+| `CABusinessPartnerForPosting` |  | |  | `gpart_inv` |  |  |
+| `ContractAccountForPosting` |  | |  | `vkont_inv` |  |  |
+| `CABusinessPartnerForInvcgList` |  | |  | `gpart_invlist` |  |  |
+| `ContractAccountForInvcgList` |  | |  | `vkont_invlist` |  |  |
+| `CAMasterAgreement` |  | |  | `makey` |  |  |
+| `CAPartnerSettlementRule` |  | |  | `ptsrl` |  |  |
+| `ValdtyDateForWhldgTaxExmpCert` |  | |  | `qszdt` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `OutgPaytWithholdingTaxCode` |  | |  | `qsskz_a` |  |  |
+| `IncgPaytWithholdingTaxCode` |  | |  | `qsskz_e` |  |  |
+| `WithholdingTaxCertificate` |  | |  | `qsznr` |  |  |
+| `CAAdditionalDaysForCashMgmt` |  | |  | `fdztg` |  |  |
+| `CABusPartnerPostgLockExstcCode` |  | |  | `bpl_xpocl` |  |  |
+| `CABusPartnerAddlLockExstcCode` |  | |  | `bpl_xaddl` |  |  |
+| `CABusinessPartnerLockStartDate` |  | |  | `bpl_fdate` |  |  |
+| `CABusinessPartnerLockEndDate` |  | |  | `bpl_tdate` |  |  |
+| `CABPReferenceNumber` |  | |  | `exvko` |  |  |
+| `CACompanyCodeGroup` |  | |  | `opbuk` |  |  |
+| `CAStandardCompanyCode` |  | |  | `stdbk` |  |  |
+| `AltvContractAcctForCollvBills` |  | |  | `abwvk` |  |  |
+| `CAInterestCode` |  | |  | `ikey` |  |  |
+| `CashPlanningGroup` |  | |  | `fdgrp` |  |  |
+| `CARelationshipOfBPToContrAcct` |  | |  | `vkpbz` |  |  |
+| `AddressID` |  | |  | `adrnb` |  |  |
+| `CAAddressIDOfJurisdictionCode` |  | |  | `adrjdc` |  |  |
+| `CAAuthorizationGroup` |  | |  | `begru` |  |  |
+| `CAToleranceGroup` |  | |  | `togru` |  |  |
+| `CACorrespondenceVariant` |  | |  | `coprc` |  |  |
+| `PartnerCompany` |  | |  | `vbund` |  |  |
+| `CACorrespondenceActivityCode` |  | |  | `def_rec_ind` |  |  |
+| `CAClearingCategory` |  | |  | `vertyp` |  |  |
+| `CADefaultClearingRstrcnCode` |  | |  | `augrs_def` |  |  |
+| `SupplyingCountry` |  | |  | `landl` |  |  |
+| `BusinessPlace` |  | |  | `bupla` |  |  |
+| `CASubledgerApplication` |  | |  | `trsla` |  |  |
+| `PaymentCondition` |  | |  | `zahlkond` |  |  |
+| `CAAccountDeterminationCode` |  | |  | `kofiz_sd` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `CAPaymentCompanyCode` |  | | `_CompCodeGroup` | `CAPaymentCompanyCode` |  |  |
+| `Country` |  | | `_CompCodeGroup._CompanyCode` | `Country` |  |  |
+| `CABusinessPartnerLock` |  | |  | `bpl_xpocl` |  |  |
+| `CAClearingRestriction` |  | |  | `augrs_def` |  |  |
+| `CAPaymentMethodForIncgPayment` |  | |  | `ezawe` |  |  |
+| `CAPaymentMethodForOutgPayment` |  | |  | `azawe` |  |  |
+| `CAWhldgTaxCodeOutgoingPayt` |  | |  | `qsskz_a` |  |  |
+| `CAWhldgTaxCodeIncomingPayt` |  | |  | `qsskz_e` |  |  |
+| `_CorrVariant` |  | |  | `_CorrespncVar` |  |  |
+| `_BusinessArea` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_AlternativePayer` | | ✓ | | | | |
+| `_AlternativePayee` | | ✓ | | | | |
+| `_AltvDunningRecipient` | | ✓ | | | | |
+| `_AltvInvoiceRecipient` | | ✓ | | | | |
+| `_AltvCorrespncRcpnt` | | ✓ | | | | |
+| `_BPForPayment` | | ✓ | | | | |
+| `_CollContactPerson` | | ✓ | | | | |
+| `_CollectionsClerk` | | ✓ | | | | |
+| `_BPForPosting` | | ✓ | | | | |
+| `_BPForInvcgList` | | ✓ | | | | |
+| `_BusinessPlace` | | ✓ | | | | |
+| `_AcctDetnCode` | | ✓ | | | | |
+| `_CAAuthorizationGroup` | | ✓ | | | | |
+| `_BillgCycle` | | ✓ | | | | |
+| `_CABusPrtnAddlLockExstcCode` | | ✓ | | | | |
+| `_CABusPrtnPostgLockExstcCode` | | ✓ | | | | |
+| `_ClearingCategory` | | ✓ | | | | |
+| `_CollectionStrategy` | | ✓ | | | | |
+| `_CollMasterDataGroup` | | ✓ | | | | |
+| `_CompCodeGroup` | | ✓ | | | | |
+| `_CACorrespncActivityCode` | | ✓ | | | | |
+| `_CorrespncVar` | | ✓ | | | | |
+| `_CADfltClearingRstrcnCode` | | ✓ | | | | |
+| `_CADirectDebitLimitCalcMod` | | ✓ | | | | |
+| `_DunningProcedure` | | ✓ | | | | |
+| `_CorrespncDunningProcedure` | | ✓ | | | | |
+| `_DunNoticeGroup` | | ✓ | | | | |
+| `_HouseBankRef` | | ✓ | | | | |
+| `_InterestCode` | | ✓ | | | | |
+| `_InvcgCategory` | | ✓ | | | | |
+| `_InvcgSchedule` | | ✓ | | | | |
+| `_MasterAgreement` | | ✓ | | | | |
+| `_CAIncomingPaymentMethod` | | ✓ | | | | |
+| `_CAFirstOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CASecondOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CAThirdOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CAFourthOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CAFifthOutgoingPaymentMethod` | | ✓ | | | | |
+| `_CAPartnerSettlementRule` | | ✓ | | | | |
+| `_CashPlanningGroup` | | ✓ | | | | |
+| `_CASubledgerApplication` | | ✓ | | | | |
+| `_ToleranceGroup` | | ✓ | | | | |
+| `_CompCode` | | ✓ | | | | |
+| `_PaymentCompCode` | | ✓ | | | | |
+| `_RelshpOfBP` | | ✓ | | | | |
+| `_ContrAcc` | | ✓ | | | | |
+| `_AltvContrAcc` | | ✓ | | | | |
+| `_ContrAcctForPayt` | | ✓ | | | | |
+| `_ContrAcctForPosting` | | ✓ | | | | |
+| `_ContrAcctForInvcgList` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_SupplyingCountry` | | ✓ | | | | |
+| `_CurrencyForDDL` | | ✓ | | | | |
+| `_CurrencyForInvoicing` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_PaymentCondition` | | ✓ | | | | |
+| `_PaytMethodIncg` | | ✓ | | | | |
+| `_PaytMethodOutg` | | ✓ | | | | |
 
 ## Associations
 

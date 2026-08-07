@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast(_node.kokrs as fincs_controllingarea preserving type )` |
-| `ProfitCenter` | ✓ | |  | `cast(left(_node.nodevalue, 25) as fincs_elim_profitcenter preserving type )` |
-| `_ControllingArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast(_node.kokrs as fincs_controllingarea preserving type )` |  |  |
+| `ProfitCenter` | ✓ | |  | `cast(left(_node.nodevalue, 25) as fincs_elim_profitcenter preserving type )` |  |  |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

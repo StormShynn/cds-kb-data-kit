@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionResultOrigin` | ✓ | |  | `qergdath` |
-| `Language` | ✓ | |  | `sprsl` |
-| `InspectionResultOriginText` |  | |  | `erdathetxt` |
-| `_Language` | | ✓ | | |
-| `_InspectionResultOrigin` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionResultOrigin` | ✓ | |  | `qergdath` |  |  |
+| `Language` | ✓ | |  | `sprsl` |  |  |
+| `InspectionResultOriginText` |  | |  | `erdathetxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspectionResultOrigin` | | ✓ | | | | |
 
 ## Associations
 

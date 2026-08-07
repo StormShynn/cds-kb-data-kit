@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderBusPartUUID` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddresseeFullName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `InternationalPhoneNumber` |  | |  |  |
-| `InternationalMobilePhoneNumber` |  | |  |  |
-| `InternationalFaxNumber` |  | |  |  |
-| `I_FreightUnitTP` |  | |  | `_TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |
-| `I_FreightUnitBusinessPartnerTP` |  | |  | `_TransportationOrderBP as _FreightUnitBusinessPartner : redirected to parent I_FreightUnitBusinessPartnerTP` |
-| `I_FrtUnitBPAddrAddlRprstnTP` |  | |  | `_TranspOrdBPAddrAddlRprstn as _FrtUnitBPAddrAddlRprstn : redirected to composition child I_FrtUnitBPAddrAddlRprstnTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderBusPartUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddresseeFullName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `InternationalPhoneNumber` |  | |  |  |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |  |  |
+| `InternationalFaxNumber` |  | |  |  |  |  |
+| `I_FreightUnitTP` |  | |  | `_TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |  |  |
+| `I_FreightUnitBusinessPartnerTP` |  | |  | `_TransportationOrderBP as _FreightUnitBusinessPartner : redirected to parent I_FreightUnitBusinessPartnerTP` |  |  |
+| `I_FrtUnitBPAddrAddlRprstnTP` |  | |  | `_TranspOrdBPAddrAddlRprstn as _FrtUnitBPAddrAddlRprstn : redirected to composition child I_FrtUnitBPAddrAddlRprstnTP` |  |  |
 
 ## Source Code
 

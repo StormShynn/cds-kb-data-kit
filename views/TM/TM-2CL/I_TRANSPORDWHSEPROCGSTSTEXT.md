@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdWhseProcessingStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_wh_procg_status preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspOrdWhseProcgStatusDesc` |  | |  | `cast(ddtext as /scmtms/vdm_wh_procg_sts_desc preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdWhseProcgStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdWhseProcessingStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_wh_procg_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspOrdWhseProcgStatusDesc` |  | |  | `cast(ddtext as /scmtms/vdm_wh_procg_sts_desc preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdWhseProcgStatus` | | ✓ | | | | |
 
 ## Associations
 

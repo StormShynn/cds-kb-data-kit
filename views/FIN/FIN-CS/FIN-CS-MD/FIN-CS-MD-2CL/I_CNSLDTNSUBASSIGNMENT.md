@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnSubassignment` | ✓ | |  | `cast(case rollname when 'RTCUR' then 'TransactionCurrency' when 'FC_BUPTR' then 'PartnerConsolidationUnit' when 'FC_SITYP' then 'SubItemCategory' when 'FC_SITEM' then 'SubItem' when 'MEINS' then 'BaseUnit' else '' end as fincs_subassignment )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnSubassignment` | ✓ | |  | `cast(case rollname when 'RTCUR' then 'TransactionCurrency' when 'FC_BUPTR' then 'PartnerConsolidationUnit' when 'FC_SITYP' then 'SubItemCategory' when 'FC_SITEM' then 'SubItem' when 'MEINS' then 'BaseUnit' else '' end as fincs_subassignment )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

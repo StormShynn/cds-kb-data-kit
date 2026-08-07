@@ -29,47 +29,47 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `LedgerGroup` | ✓ | |  |  |
-| `SettlementDistributionRuleGrp` | ✓ | |  |  |
-| `SettlmtDistrRuleSequence` | ✓ | |  |  |
-| `ControllingObject` |  | |  |  |
-| `SettlementType` |  | |  |  |
-| `DistributionSourceAssignment` |  | |  |  |
-| `AccountAssignmentType` |  | |  |  |
-| `SettlementPercentageRate` |  | |  |  |
-| `SettlementEquivalenceFactor` |  | |  |  |
-| `SettlementAmount` |  | |  |  |
-| `SettlementAmountCurrency` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `NetworkNumberForAcctAssgmt` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `CostObject` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `AltvSettlmtDistrRuleSequence` |  | |  |  |
-| `ValidityStartFiscalPeriod` |  | |  |  |
-| `ValidityStartFiscalYear` |  | |  |  |
-| `ValidityEndFiscalPeriod` |  | |  |  |
-| `ValidityEndFiscalYear` |  | |  |  |
-| `SettlmtRule1stUsgeFiscalPeriod` |  | |  |  |
-| `SettlmtRule1stUsageFiscalYear` |  | |  |  |
-| `SettlmtRuleLastUsgeFsclPeriod` |  | |  |  |
-| `SettlmtRuleLastUsageFiscalYear` |  | |  |  |
-| `SettlmtDistrRuleIsUsedInLedger` |  | |  |  |
-| `_MaintenanceOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `LedgerGroup` | ✓ | |  |  |  |  |
+| `SettlementDistributionRuleGrp` | ✓ | |  |  |  |  |
+| `SettlmtDistrRuleSequence` | ✓ | |  |  |  |  |
+| `ControllingObject` |  | |  |  |  |  |
+| `SettlementType` |  | |  |  |  |  |
+| `DistributionSourceAssignment` |  | |  |  |  |  |
+| `AccountAssignmentType` |  | |  |  |  |  |
+| `SettlementPercentageRate` |  | |  |  |  |  |
+| `SettlementEquivalenceFactor` |  | |  |  |  |  |
+| `SettlementAmount` |  | |  |  |  |  |
+| `SettlementAmountCurrency` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `NetworkNumberForAcctAssgmt` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `AltvSettlmtDistrRuleSequence` |  | |  |  |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |  |  |
+| `SettlmtRule1stUsgeFiscalPeriod` |  | |  |  |  |  |
+| `SettlmtRule1stUsageFiscalYear` |  | |  |  |  |  |
+| `SettlmtRuleLastUsgeFsclPeriod` |  | |  |  |  |  |
+| `SettlmtRuleLastUsageFiscalYear` |  | |  |  |  |  |
+| `SettlmtDistrRuleIsUsedInLedger` |  | |  |  |  |  |
+| `_MaintenanceOrder` | | ✓ | | | | |
 
 ## Source Code
 

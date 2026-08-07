@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionUsage` | ✓ | |  |  |
-| `ConditionApplication` | ✓ | |  |  |
-| `ConditionExclusionGroup` | ✓ | |  |  |
-| `_SlsPrcgCndnTypeInExclsnGroup` | | ✓ | | |
-| `_SlsCndnExclsnForPrcgProced` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  |  |  |  |
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `ConditionExclusionGroup` | ✓ | |  |  |  |  |
+| `_SlsPrcgCndnTypeInExclsnGroup` | | ✓ | | | | |
+| `_SlsCndnExclsnForPrcgProced` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

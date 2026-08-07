@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfExchangeIsBlocked` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as xfeld preserving type)` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type)` |
-| `BillOfExchangeBlockingTypeText` |  | |  | `ddtext` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_BillOfExchangeBlock` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfExchangeIsBlocked` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as xfeld preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type)` |  |  |
+| `BillOfExchangeBlockingTypeText` |  | |  | `ddtext` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_BillOfExchangeBlock` | | ✓ | | | | |
 
 ## Associations
 

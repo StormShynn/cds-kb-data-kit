@@ -29,55 +29,55 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ValuationArea` | ✓ | |  |  |
-| `ValuationType` | ✓ | |  |  |
-| `ValuationClass` |  | |  |  |
-| `PriceDeterminationControl` |  | |  |  |
-| `FiscalMonthCurrentPeriod` |  | |  | `lfmon` |
-| `FiscalYearCurrentPeriod` |  | |  | `lfgja` |
-| `StandardPrice` |  | |  |  |
-| `PriceUnitQty` |  | |  |  |
-| `InventoryValuationProcedure` |  | |  |  |
-| `FuturePriceValidityStartDate` |  | |  |  |
-| `PrevInvtryPriceInCoCodeCrcy` |  | |  |  |
-| `MovingAveragePrice` |  | |  |  |
-| `ValuationCategory` |  | |  |  |
-| `ProductUsageType` |  | |  |  |
-| `ProductOriginType` |  | |  |  |
-| `IsProducedInhouse` |  | |  |  |
-| `ProdCostEstNumber` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `ValuationMargin` |  | |  |  |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ValuationClassSalesOrderStock` |  | |  |  |
-| `ProjectStockValuationClass` |  | |  |  |
-| `TaxBasedPricesPriceUnitQty` |  | |  |  |
-| `PriceLastChangeDate` |  | |  |  |
-| `FuturePrice` |  | |  |  |
-| `MaintenanceStatus` |  | |  |  |
-| `Currency` |  | |  | `waers` |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `MLIsActiveAtProductLevel` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ValuationClass` | | ✓ | | |
-| `_ValnClassSalesOrderStock` | | ✓ | | |
-| `_ValnClassProjectStock` | | ✓ | | |
-| `_InventoryValnProcedure` | | ✓ | | |
-| `_PriceDeterminationControl` | | ✓ | | |
-| `_BR_MaterialUsage` | | ✓ | | |
-| `_BR_MaterialOrigin` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_PriceDeterminationControlText` | | ✓ | | |
-| `_InventoryValnProcedureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ValuationArea` | ✓ | |  |  |  |  |
+| `ValuationType` | ✓ | |  |  |  |  |
+| `ValuationClass` |  | |  |  |  |  |
+| `PriceDeterminationControl` |  | |  |  |  |  |
+| `FiscalMonthCurrentPeriod` |  | |  | `lfmon` |  |  |
+| `FiscalYearCurrentPeriod` |  | |  | `lfgja` |  |  |
+| `StandardPrice` |  | |  |  |  |  |
+| `PriceUnitQty` |  | |  |  |  |  |
+| `InventoryValuationProcedure` |  | |  |  |  |  |
+| `FuturePriceValidityStartDate` |  | |  |  |  |  |
+| `PrevInvtryPriceInCoCodeCrcy` |  | |  |  |  |  |
+| `MovingAveragePrice` |  | |  |  |  |  |
+| `ValuationCategory` |  | |  |  |  |  |
+| `ProductUsageType` |  | |  |  |  |  |
+| `ProductOriginType` |  | |  |  |  |  |
+| `IsProducedInhouse` |  | |  |  |  |  |
+| `ProdCostEstNumber` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `ValuationMargin` |  | |  |  |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ValuationClassSalesOrderStock` |  | |  |  |  |  |
+| `ProjectStockValuationClass` |  | |  |  |  |  |
+| `TaxBasedPricesPriceUnitQty` |  | |  |  |  |  |
+| `PriceLastChangeDate` |  | |  |  |  |  |
+| `FuturePrice` |  | |  |  |  |  |
+| `MaintenanceStatus` |  | |  |  |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `MLIsActiveAtProductLevel` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ValuationClass` | | ✓ | | | | |
+| `_ValnClassSalesOrderStock` | | ✓ | | | | |
+| `_ValnClassProjectStock` | | ✓ | | | | |
+| `_InventoryValnProcedure` | | ✓ | | | | |
+| `_PriceDeterminationControl` | | ✓ | | | | |
+| `_BR_MaterialUsage` | | ✓ | | | | |
+| `_BR_MaterialOrigin` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_PriceDeterminationControlText` | | ✓ | | | | |
+| `_InventoryValnProcedureText` | | ✓ | | | | |
 
 ## Associations
 

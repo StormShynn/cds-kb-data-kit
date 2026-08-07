@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjBillgElmntEntrItmUUID` | ✓ | |  | `projbillgelmntentritmuuid` |
-| `BillingPlan` |  | |  | `billingplan` |
-| `BillingPlanItem` |  | |  | `billingplanitem` |
-| `CreatedByUser` |  | |  | `createdbyuser` |
-| `CreationDateTime` |  | |  | `creationdatetime` |
-| `LastChangedByUser` |  | |  | `lastchangedbyuser` |
-| `LastChangeDateTime` |  | |  | `lastchangedatetime` |
-| `_ProjectBillingElementEntry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjBillgElmntEntrItmUUID` | ✓ | |  | `projbillgelmntentritmuuid` |  |  |
+| `BillingPlan` |  | |  | `billingplan` |  |  |
+| `BillingPlanItem` |  | |  | `billingplanitem` |  |  |
+| `CreatedByUser` |  | |  | `createdbyuser` |  |  |
+| `CreationDateTime` |  | |  | `creationdatetime` |  |  |
+| `LastChangedByUser` |  | |  | `lastchangedbyuser` |  |  |
+| `LastChangeDateTime` |  | |  | `lastchangedatetime` |  |  |
+| `_ProjectBillingElementEntry` | | ✓ | | | | |
 
 ## Associations
 

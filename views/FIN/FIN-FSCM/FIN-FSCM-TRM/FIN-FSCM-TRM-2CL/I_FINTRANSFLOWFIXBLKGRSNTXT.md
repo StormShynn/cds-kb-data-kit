@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `FinTransFlowFixingBlkgReason` | ✓ | |  | `cast( dd07t.domvalue_l as tb_ssprgrd )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `FinTransFlowFixingBlkgRsnName` |  | |  | `cast( dd07t.ddtext as tb_ssprgrd_name preserving type )` |
-| `_FixingBlockingReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `FinTransFlowFixingBlkgReason` | ✓ | |  | `cast( dd07t.domvalue_l as tb_ssprgrd )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FinTransFlowFixingBlkgRsnName` |  | |  | `cast( dd07t.ddtext as tb_ssprgrd_name preserving type )` |  |  |
+| `_FixingBlockingReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

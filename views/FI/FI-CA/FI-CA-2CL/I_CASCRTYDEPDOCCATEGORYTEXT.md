@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASecurityDepositDocCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as secdep_doc_category_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `CASecurityDepositDocCatText` |  | |  | `cast( ddtext as secdep_doc_category_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASecurityDepositDocCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as secdep_doc_category_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `CASecurityDepositDocCatText` |  | |  | `cast( ddtext as secdep_doc_category_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

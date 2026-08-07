@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASubApplication` | ✓ | |  |  |
-| `_CASubApplicationText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASubApplication` | ✓ | |  |  |  |  |
+| `_CASubApplicationText` | | ✓ | | | | |
 
 ## Source Code
 

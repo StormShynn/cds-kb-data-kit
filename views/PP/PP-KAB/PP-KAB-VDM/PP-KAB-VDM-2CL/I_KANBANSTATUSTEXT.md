@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanStatus` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pkbst preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `KanbanStatusName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanStatus` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pkbst preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `KanbanStatusName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

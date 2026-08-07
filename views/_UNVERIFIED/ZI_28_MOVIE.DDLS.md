@@ -31,22 +31,22 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MovieUuid` | ✓ | |  |  |
-| `Title` |  | |  |  |
-| `Genre` |  | |  |  |
-| `PublishingYear` |  | |  |  |
-| `RuntimeInMin` |  | |  |  |
-| `ImageUrl` |  | |  |  |
-| `CreatedAt` |  | |  |  |
-| `CreatedBy` |  | |  |  |
-| `LastChangedAt` |  | |  |  |
-| `LastChangedBy` |  | |  |  |
-| `GenreText` |  | | `_GenreText` | `text` |
-| `AverageRating` |  | | `_AverageRating` | `AverageRating` |
-| `AverageRatingCriticality` |  | |  | `case when _AverageRating.AverageRating > 6.6 then 3 when _AverageRating.AverageRating > 3.3 then 2 when _AverageRating.AverageRating > 0 then 1 else 0 end` |
-| `_Ratings` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MovieUuid` | ✓ | |  |  |  |  |
+| `Title` |  | |  |  |  |  |
+| `Genre` |  | |  |  |  |  |
+| `PublishingYear` |  | |  |  |  |  |
+| `RuntimeInMin` |  | |  |  |  |  |
+| `ImageUrl` |  | |  |  |  |  |
+| `CreatedAt` |  | |  |  |  |  |
+| `CreatedBy` |  | |  |  |  |  |
+| `LastChangedAt` |  | |  |  |  |  |
+| `LastChangedBy` |  | |  |  |  |  |
+| `GenreText` |  | | `_GenreText` | `text` |  |  |
+| `AverageRating` |  | | `_AverageRating` | `AverageRating` |  |  |
+| `AverageRatingCriticality` |  | |  | `case when _AverageRating.AverageRating > 6.6 then 3 when _AverageRating.AverageRating > 3.3 then 2 when _AverageRating.AverageRating > 0 then 1 else 0 end` |  |  |
+| `_Ratings` | | ✓ | | | | |
 
 ## Associations
 

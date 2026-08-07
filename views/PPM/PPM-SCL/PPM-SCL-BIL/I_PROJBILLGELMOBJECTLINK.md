@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PrjBlgElmObjLnkUUID` | ✓ | |  | `prjblgelmobjlnkuuid` |
-| `ProjectBillingElementUUID` |  | |  | `projectbillingelementuuid` |
-| `SalesDocument` |  | |  | `salesdocument` |
-| `SalesDocumentItem` |  | |  | `salesdocumentitem` |
-| `SDDocumentCategory` |  | |  | `sddocumentcategory` |
-| `PartnerCompanyCode` |  | |  | `partnercompanycode` |
-| `ReceiverCompanyCode` |  | |  | `receivercompanycode` |
-| `_ProjectBillingElement` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PrjBlgElmObjLnkUUID` | ✓ | |  | `prjblgelmobjlnkuuid` |  |  |
+| `ProjectBillingElementUUID` |  | |  | `projectbillingelementuuid` |  |  |
+| `SalesDocument` |  | |  | `salesdocument` |  |  |
+| `SalesDocumentItem` |  | |  | `salesdocumentitem` |  |  |
+| `SDDocumentCategory` |  | |  | `sddocumentcategory` |  |  |
+| `PartnerCompanyCode` |  | |  | `partnercompanycode` |  |  |
+| `ReceiverCompanyCode` |  | |  | `receivercompanycode` |  |  |
+| `_ProjectBillingElement` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
 
 ## Associations
 

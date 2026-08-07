@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankPowerOfAttorneyUUID` | ✓ | |  |  |
-| `BkPOAPredecessorUUID` | ✓ | |  |  |
-| `BankPowerOfAttorneyPredecessor` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `_BankPowerOfAttorney` | | ✓ | | |
-| `_Predecessor` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` | ✓ | |  |  |  |  |
+| `BkPOAPredecessorUUID` | ✓ | |  |  |  |  |
+| `BankPowerOfAttorneyPredecessor` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `_BankPowerOfAttorney` | | ✓ | | | | |
+| `_Predecessor` | | ✓ | | | | |
 
 ## Source Code
 

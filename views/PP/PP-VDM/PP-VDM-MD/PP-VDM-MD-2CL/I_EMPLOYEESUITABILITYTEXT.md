@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `Plant` | ✓ | |  | `werks` |
-| `EmployeeSuitability` | ✓ | |  | `qualf` |
-| `EmployeeSuitabilityName` |  | |  | `txt` |
-| `_EmployeeSuitability` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `EmployeeSuitability` | ✓ | |  | `qualf` |  |  |
+| `EmployeeSuitabilityName` |  | |  | `txt` |  |  |
+| `_EmployeeSuitability` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

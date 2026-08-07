@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderID` | ✓ | |  |  |
-| `OrderCategory` |  | |  |  |
-| `OrderType` |  | |  |  |
-| `OrderInternalID` |  | |  |  |
-| `OrderDescription` |  | |  |  |
-| `OrderHasLongText` |  | |  |  |
-| `Plant` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `IsStatisticalOrder` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `_PlantText` | | ✓ | | |
-| `_CompanyCodeText` | | ✓ | | |
-| `_ControllingAreaText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderID` | ✓ | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `OrderType` |  | |  |  |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `OrderDescription` |  | |  |  |  |  |
+| `OrderHasLongText` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `IsStatisticalOrder` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `_PlantText` | | ✓ | | | | |
+| `_CompanyCodeText` | | ✓ | | | | |
+| `_ControllingAreaText` | | ✓ | | | | |
 
 ## Associations
 

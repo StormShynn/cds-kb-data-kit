@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `Branch` | ✓ | |  | `branch` |
-| `AddressID` |  | |  | `adrnr` |
-| `BusinessPlaceName` |  | |  | `case when _NFBusinessPlaceText[language = $session.system_language].name is not null then _NFBusinessPlaceText[language = $session.system_language].name else name end` |
-| `BR_BusinessPlacePartOfCNPJ` |  | |  | `cast(case when NFBusinessPlace.cgc_branch > '9999' then '0000' else NFBusinessPlace.cgc_branch end as logbr_cgcbra_numc )` |
-| `BR_BusinessPlacePartOfCNPJ_2` |  | |  | `cgc_branch` |
-| `BusinessPlaceStateTaxNumber` |  | |  | `state_insc` |
-| `BusPlaceMunicipalTaxNumber` |  | |  | `munic_insc` |
-| `BR_SUFRAMACode` |  | |  | `suframa` |
-| `BusinessPlaceActivity` |  | |  | `spedactind` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `Branch` | ✓ | |  | `branch` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `BusinessPlaceName` |  | |  | `case when _NFBusinessPlaceText[language = $session.system_language].name is not null then _NFBusinessPlaceText[language = $session.system_language].name else name end` |  |  |
+| `BR_BusinessPlacePartOfCNPJ` |  | |  | `cast(case when NFBusinessPlace.cgc_branch > '9999' then '0000' else NFBusinessPlace.cgc_branch end as logbr_cgcbra_numc )` |  |  |
+| `BR_BusinessPlacePartOfCNPJ_2` |  | |  | `cgc_branch` |  |  |
+| `BusinessPlaceStateTaxNumber` |  | |  | `state_insc` |  |  |
+| `BusPlaceMunicipalTaxNumber` |  | |  | `munic_insc` |  |  |
+| `BR_SUFRAMACode` |  | |  | `suframa` |  |  |
+| `BusinessPlaceActivity` |  | |  | `spedactind` |  |  |
 
 ## Associations
 

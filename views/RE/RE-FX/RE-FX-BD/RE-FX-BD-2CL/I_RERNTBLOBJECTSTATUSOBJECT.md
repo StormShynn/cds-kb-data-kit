@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateRentableObjectUUID` | ✓ | |  | `REGenericRentalObjectUUID` |
-| `StatusProfile` | ✓ | |  |  |
-| `StatusCode` | ✓ | |  |  |
-| `InternalRealEstateNumber` |  | | `_RERentableObject` | `InternalRealEstateNumber` |
-| `REStatusObject` |  | |  |  |
-| `IsUserStatus` |  | |  |  |
-| `StatusIsInactive` |  | |  |  |
-| `_RERentableObject` | | ✓ | | |
-| `_StatusCode` | | ✓ | | |
-| `_StatusProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateRentableObjectUUID` | ✓ | |  | `REGenericRentalObjectUUID` |  |  |
+| `StatusProfile` | ✓ | |  |  |  |  |
+| `StatusCode` | ✓ | |  |  |  |  |
+| `InternalRealEstateNumber` |  | | `_RERentableObject` | `InternalRealEstateNumber` |  |  |
+| `REStatusObject` |  | |  |  |  |  |
+| `IsUserStatus` |  | |  |  |  |  |
+| `StatusIsInactive` |  | |  |  |  |  |
+| `_RERentableObject` | | ✓ | | | | |
+| `_StatusCode` | | ✓ | | | | |
+| `_StatusProfile` | | ✓ | | | | |
 
 ## Associations
 

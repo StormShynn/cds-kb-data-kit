@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CollectiveAllocationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as collectiveallocationtype preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `CollectiveAllocationTypeDesc` |  | |  | `cast( ddtext as collectiveallocationtypedesc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CollectiveAllocationType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollectiveAllocationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as collectiveallocationtype preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `CollectiveAllocationTypeDesc` |  | |  | `cast( ddtext as collectiveallocationtypedesc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CollectiveAllocationType` | | ✓ | | | | |
 
 ## Associations
 

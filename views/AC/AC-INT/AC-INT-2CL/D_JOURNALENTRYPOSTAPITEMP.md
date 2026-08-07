@@ -29,48 +29,48 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountLineItem` |  | |  | `docln6` |
-| `Supplier` |  | |  | `lifnr` |
-| `GLAccount` |  | |  | `hkont` |
-| `DocumentItemText` |  | |  | `sgtxt` |
-| `AssignmentReference` |  | |  | `acpi_zuonr` |
-| `Reference1IDByBusinessPartner` |  | |  | `xref1` |
-| `Reference2IDByBusinessPartner` |  | |  | `xref2` |
-| `Reference3IDByBusinessPartner` |  | |  | `xref3` |
-| `PaymentTerms` |  | |  | `acpi_zterm` |
-| `DueCalculationBaseDate` |  | |  | `acpi_zfbdt` |
-| `CashDiscount1Days` |  | |  | `acpi_zbd1t` |
-| `CashDiscount1Percent` |  | |  | `acpi_zbd1p` |
-| `CashDiscount2Days` |  | |  | `acpi_zbd2t` |
-| `CashDiscount2Percent` |  | |  | `acpi_zbd2p` |
-| `NetPaymentDays` |  | |  | `acpi_zbd3t` |
-| `PaymentMethod` |  | |  | `acpi_zlsch` |
-| `PaymentMethodSupplement` |  | |  | `uzawe` |
-| `PaymentReference` |  | |  | `acpi_kidno` |
-| `PaymentBlockingReason` |  | |  | `acpi_zlspr` |
-| `AlternativePayee` |  | |  | `vvabwze` |
-| `BPBankAccountInternalID` |  | |  | `vvbvtypabw` |
-| `StateCentralBankPaymentReason` |  | |  | `lzbkz` |
-| `OplAcctgDocItmCntrySpcfcRef1` |  | |  | `fac_glo_ref1` |
-| `BranchAccount` |  | |  | `acpi_filkd` |
-| `BusinessPlace` |  | |  | `acpi_branch` |
-| `BusinessSectionCode` |  | |  | `secco` |
-| `HouseBank` |  | |  | `hbkid` |
-| `HouseBankAccount` |  | |  | `hktid` |
-| `TaxCountry` |  | |  | `fot_tax_country` |
-| `SpecialGLCode` |  | |  | `acpi_umskz` |
-| `TaxCode` |  | |  | `mwskz` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `VATRegistration` |  | |  | `stceg` |
-| `PaymentReason` |  | |  | `farp_payt_rsn` |
-| `JointVenture` |  | |  | `jv_name` |
-| `JointVentureRecoveryCode` |  | |  | `jv_recind` |
-| `JointVentureEquityGroup` |  | |  | `jv_egroup` |
-| `WBSElement` |  | |  | `ps_posid_edit` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `_JournalEntryPost` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountLineItem` |  | |  | `docln6` |  |  |
+| `Supplier` |  | |  | `lifnr` |  |  |
+| `GLAccount` |  | |  | `hkont` |  |  |
+| `DocumentItemText` |  | |  | `sgtxt` |  |  |
+| `AssignmentReference` |  | |  | `acpi_zuonr` |  |  |
+| `Reference1IDByBusinessPartner` |  | |  | `xref1` |  |  |
+| `Reference2IDByBusinessPartner` |  | |  | `xref2` |  |  |
+| `Reference3IDByBusinessPartner` |  | |  | `xref3` |  |  |
+| `PaymentTerms` |  | |  | `acpi_zterm` |  |  |
+| `DueCalculationBaseDate` |  | |  | `acpi_zfbdt` |  |  |
+| `CashDiscount1Days` |  | |  | `acpi_zbd1t` |  |  |
+| `CashDiscount1Percent` |  | |  | `acpi_zbd1p` |  |  |
+| `CashDiscount2Days` |  | |  | `acpi_zbd2t` |  |  |
+| `CashDiscount2Percent` |  | |  | `acpi_zbd2p` |  |  |
+| `NetPaymentDays` |  | |  | `acpi_zbd3t` |  |  |
+| `PaymentMethod` |  | |  | `acpi_zlsch` |  |  |
+| `PaymentMethodSupplement` |  | |  | `uzawe` |  |  |
+| `PaymentReference` |  | |  | `acpi_kidno` |  |  |
+| `PaymentBlockingReason` |  | |  | `acpi_zlspr` |  |  |
+| `AlternativePayee` |  | |  | `vvabwze` |  |  |
+| `BPBankAccountInternalID` |  | |  | `vvbvtypabw` |  |  |
+| `StateCentralBankPaymentReason` |  | |  | `lzbkz` |  |  |
+| `OplAcctgDocItmCntrySpcfcRef1` |  | |  | `fac_glo_ref1` |  |  |
+| `BranchAccount` |  | |  | `acpi_filkd` |  |  |
+| `BusinessPlace` |  | |  | `acpi_branch` |  |  |
+| `BusinessSectionCode` |  | |  | `secco` |  |  |
+| `HouseBank` |  | |  | `hbkid` |  |  |
+| `HouseBankAccount` |  | |  | `hktid` |  |  |
+| `TaxCountry` |  | |  | `fot_tax_country` |  |  |
+| `SpecialGLCode` |  | |  | `acpi_umskz` |  |  |
+| `TaxCode` |  | |  | `mwskz` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `VATRegistration` |  | |  | `stceg` |  |  |
+| `PaymentReason` |  | |  | `farp_payt_rsn` |  |  |
+| `JointVenture` |  | |  | `jv_name` |  |  |
+| `JointVentureRecoveryCode` |  | |  | `jv_recind` |  |  |
+| `JointVentureEquityGroup` |  | |  | `jv_egroup` |  |  |
+| `WBSElement` |  | |  | `ps_posid_edit` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `_JournalEntryPost` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,185 +29,185 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesQuotation` | ✓ | |  | `cast(SalesDocument as sales_quotation preserving type )` |
-| `SalesQuotationType` |  | |  | `SalesDocumentType` |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `CreditControlArea` |  | |  |  |
-| `CustomerRebateAgreement` |  | |  |  |
-| `SalesQuotationDate` |  | |  | `SalesDocumentDate` |
-| `ServicesRenderedDate` |  | |  |  |
-| `SDDocumentReason` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderType` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `CustomerPurchaseOrderSuplmnt` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `ProductCatalog` |  | |  |  |
-| `BindingPeriodValidityStartDate` |  | |  |  |
-| `BindingPeriodValidityEndDate` |  | |  |  |
-| `HdrOrderProbabilityInPercent` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `RetailPromotion` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `SalesQuotationCondition` |  | |  | `SalesDocumentCondition` |
-| `SDPricingProcedure` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `PriceListType` |  | |  |  |
-| `CompleteDeliveryIsDefined` |  | |  |  |
-| `DeliveryBlockReason` |  | |  |  |
-| `SalesQuotationApprovalReason` |  | |  | `SalesDocApprovalReason` |
-| `BillingDocumentDate` |  | |  |  |
-| `BillingCompanyCode` |  | |  |  |
-| `HeaderBillingBlockReason` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `AdditionalValueDays` |  | |  |  |
-| `CustomerTaxClassification1` |  | |  |  |
-| `CustomerTaxClassification2` |  | |  |  |
-| `CustomerTaxClassification3` |  | |  |  |
-| `CustomerTaxClassification4` |  | |  |  |
-| `CustomerTaxClassification5` |  | |  |  |
-| `CustomerTaxClassification6` |  | |  |  |
-| `CustomerTaxClassification7` |  | |  |  |
-| `CustomerTaxClassification8` |  | |  |  |
-| `CustomerTaxClassification9` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `CostCenterBusinessArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `CustomerCreditAccount` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `OverallSDDocumentRejectionSts` |  | |  |  |
-| `TotalBlockStatus` |  | |  |  |
-| `OverallBillingBlockStatus` |  | |  |  |
-| `OverallTotalSDDocRefStatus` |  | |  |  |
-| `OverallSDDocReferenceStatus` |  | |  |  |
-| `TotalCreditCheckStatus` |  | |  |  |
-| `MaxDocValueCreditCheckStatus` |  | |  |  |
-| `PaymentTermCreditCheckStatus` |  | |  |  |
-| `FinDocCreditCheckStatus` |  | |  |  |
-| `ExprtInsurCreditCheckStatus` |  | |  |  |
-| `PaytAuthsnCreditCheckSts` |  | |  |  |
-| `CentralCreditCheckStatus` |  | |  |  |
-| `CentralCreditChkTechErrSts` |  | |  |  |
-| `HdrGeneralIncompletionStatus` |  | |  |  |
-| `OverallPricingIncompletionSts` |  | |  |  |
-| `HeaderBillgIncompletionStatus` |  | |  |  |
-| `OvrlItmGeneralIncompletionSts` |  | |  |  |
-| `OvrlItmBillingIncompletionSts` |  | |  |  |
-| `SalesDocApprovalStatus` |  | |  |  |
-| `OverallChmlCmplncStatus` |  | |  |  |
-| `OverallDangerousGoodsStatus` |  | |  |  |
-| `OverallSafetyDataSheetStatus` |  | |  |  |
-| `OverallTrdCmplncEmbargoSts` |  | |  |  |
-| `_BusinessAreaText` | | ✓ | | |
-| `_CostCenterBusinessAreaText` | | ✓ | | |
-| `_CreditControlAreaText` | | ✓ | | |
-| `_Item` | | ✓ | | |
-| `_SalesQuotationType` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_PricingElement` | | ✓ | | |
-| `_SalesQuotationApprovalReason` | | ✓ | | |
-| `_StandardPartner` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_CreditControlArea` | | ✓ | | |
-| `_SDDocumentReason` | | ✓ | | |
-| `_CustomerPurchaseOrderType` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_ShippingType` | | ✓ | | |
-| `_ShippingCondition` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_DeliveryBlockReason` | | ✓ | | |
-| `_BillingCompanyCode` | | ✓ | | |
-| `_HeaderBillingBlockReason` | | ✓ | | |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_ExchangeRateType` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_CustomerAccountAssgmtGroup` | | ✓ | | |
-| `_CostCenterBusinessArea` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ReferenceSDDocumentCategory` | | ✓ | | |
-| `_OverallSDProcessStatus` | | ✓ | | |
-| `_OverallSDDocumentRejectionSts` | | ✓ | | |
-| `_TotalBlockStatus` | | ✓ | | |
-| `_OverallBillingBlockStatus` | | ✓ | | |
-| `_OverallTotalSDDocRefStatus` | | ✓ | | |
-| `_OverallSDDocReferenceStatus` | | ✓ | | |
-| `_TotalCreditCheckStatus` | | ✓ | | |
-| `_MaxDocValueCreditCheckStatus` | | ✓ | | |
-| `_PaymentTermCreditCheckStatus` | | ✓ | | |
-| `_FinDocCreditCheckStatus` | | ✓ | | |
-| `_ExprtInsurCreditCheckStatus` | | ✓ | | |
-| `_PaytAuthsnCreditCheckSts` | | ✓ | | |
-| `_CentralCreditCheckStatus` | | ✓ | | |
-| `_CentralCreditChkTechErrSts` | | ✓ | | |
-| `_HdrGeneralIncompletionStatus` | | ✓ | | |
-| `_OverallPricingIncompletionSts` | | ✓ | | |
-| `_HeaderBillgIncompletionStatus` | | ✓ | | |
-| `_OvrlItmGeneralIncompletionSts` | | ✓ | | |
-| `_OvrlItmBillingIncompletionSts` | | ✓ | | |
-| `_OvrlTradeCmplncEmbargoStatus` | | ✓ | | |
-| `_SalesDocApprovalStatus` | | ✓ | | |
-| `_SDPricingProcedure` | | ✓ | | |
-| `_CustomerPriceGroup` | | ✓ | | |
-| `_OverallChmlCmplncStatus` | | ✓ | | |
-| `_OverallDangerousGoodsStatus` | | ✓ | | |
-| `_OvrlSftyDataSheetSts` | | ✓ | | |
-| `_CustomerCreditAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  | `cast(SalesDocument as sales_quotation preserving type )` |  |  |
+| `SalesQuotationType` |  | |  | `SalesDocumentType` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `CreditControlArea` |  | |  |  |  |  |
+| `CustomerRebateAgreement` |  | |  |  |  |  |
+| `SalesQuotationDate` |  | |  | `SalesDocumentDate` |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `CustomerPurchaseOrderSuplmnt` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `ProductCatalog` |  | |  |  |  |  |
+| `BindingPeriodValidityStartDate` |  | |  |  |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |  |  |
+| `HdrOrderProbabilityInPercent` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `RetailPromotion` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `SalesQuotationCondition` |  | |  | `SalesDocumentCondition` |  |  |
+| `SDPricingProcedure` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `PriceListType` |  | |  |  |  |  |
+| `CompleteDeliveryIsDefined` |  | |  |  |  |  |
+| `DeliveryBlockReason` |  | |  |  |  |  |
+| `SalesQuotationApprovalReason` |  | |  | `SalesDocApprovalReason` |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `BillingCompanyCode` |  | |  |  |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `AdditionalValueDays` |  | |  |  |  |  |
+| `CustomerTaxClassification1` |  | |  |  |  |  |
+| `CustomerTaxClassification2` |  | |  |  |  |  |
+| `CustomerTaxClassification3` |  | |  |  |  |  |
+| `CustomerTaxClassification4` |  | |  |  |  |  |
+| `CustomerTaxClassification5` |  | |  |  |  |  |
+| `CustomerTaxClassification6` |  | |  |  |  |  |
+| `CustomerTaxClassification7` |  | |  |  |  |  |
+| `CustomerTaxClassification8` |  | |  |  |  |  |
+| `CustomerTaxClassification9` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `CostCenterBusinessArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `CustomerCreditAccount` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |  |  |
+| `TotalBlockStatus` |  | |  |  |  |  |
+| `OverallBillingBlockStatus` |  | |  |  |  |  |
+| `OverallTotalSDDocRefStatus` |  | |  |  |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |  |  |
+| `MaxDocValueCreditCheckStatus` |  | |  |  |  |  |
+| `PaymentTermCreditCheckStatus` |  | |  |  |  |  |
+| `FinDocCreditCheckStatus` |  | |  |  |  |  |
+| `ExprtInsurCreditCheckStatus` |  | |  |  |  |  |
+| `PaytAuthsnCreditCheckSts` |  | |  |  |  |  |
+| `CentralCreditCheckStatus` |  | |  |  |  |  |
+| `CentralCreditChkTechErrSts` |  | |  |  |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |  |  |
+| `OverallPricingIncompletionSts` |  | |  |  |  |  |
+| `HeaderBillgIncompletionStatus` |  | |  |  |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |  |  |
+| `OvrlItmBillingIncompletionSts` |  | |  |  |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |  |  |
+| `OverallChmlCmplncStatus` |  | |  |  |  |  |
+| `OverallDangerousGoodsStatus` |  | |  |  |  |  |
+| `OverallSafetyDataSheetStatus` |  | |  |  |  |  |
+| `OverallTrdCmplncEmbargoSts` |  | |  |  |  |  |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_CostCenterBusinessAreaText` | | ✓ | | | | |
+| `_CreditControlAreaText` | | ✓ | | | | |
+| `_Item` | | ✓ | | | | |
+| `_SalesQuotationType` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_PricingElement` | | ✓ | | | | |
+| `_SalesQuotationApprovalReason` | | ✓ | | | | |
+| `_StandardPartner` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_CreditControlArea` | | ✓ | | | | |
+| `_SDDocumentReason` | | ✓ | | | | |
+| `_CustomerPurchaseOrderType` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_ShippingType` | | ✓ | | | | |
+| `_ShippingCondition` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_BillingCompanyCode` | | ✓ | | | | |
+| `_HeaderBillingBlockReason` | | ✓ | | | | |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_ExchangeRateType` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | | | |
+| `_CostCenterBusinessArea` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | | | |
+| `_OverallSDProcessStatus` | | ✓ | | | | |
+| `_OverallSDDocumentRejectionSts` | | ✓ | | | | |
+| `_TotalBlockStatus` | | ✓ | | | | |
+| `_OverallBillingBlockStatus` | | ✓ | | | | |
+| `_OverallTotalSDDocRefStatus` | | ✓ | | | | |
+| `_OverallSDDocReferenceStatus` | | ✓ | | | | |
+| `_TotalCreditCheckStatus` | | ✓ | | | | |
+| `_MaxDocValueCreditCheckStatus` | | ✓ | | | | |
+| `_PaymentTermCreditCheckStatus` | | ✓ | | | | |
+| `_FinDocCreditCheckStatus` | | ✓ | | | | |
+| `_ExprtInsurCreditCheckStatus` | | ✓ | | | | |
+| `_PaytAuthsnCreditCheckSts` | | ✓ | | | | |
+| `_CentralCreditCheckStatus` | | ✓ | | | | |
+| `_CentralCreditChkTechErrSts` | | ✓ | | | | |
+| `_HdrGeneralIncompletionStatus` | | ✓ | | | | |
+| `_OverallPricingIncompletionSts` | | ✓ | | | | |
+| `_HeaderBillgIncompletionStatus` | | ✓ | | | | |
+| `_OvrlItmGeneralIncompletionSts` | | ✓ | | | | |
+| `_OvrlItmBillingIncompletionSts` | | ✓ | | | | |
+| `_OvrlTradeCmplncEmbargoStatus` | | ✓ | | | | |
+| `_SalesDocApprovalStatus` | | ✓ | | | | |
+| `_SDPricingProcedure` | | ✓ | | | | |
+| `_CustomerPriceGroup` | | ✓ | | | | |
+| `_OverallChmlCmplncStatus` | | ✓ | | | | |
+| `_OverallDangerousGoodsStatus` | | ✓ | | | | |
+| `_OvrlSftyDataSheetSts` | | ✓ | | | | |
+| `_CustomerCreditAccount` | | ✓ | | | | |
 
 ## Associations
 

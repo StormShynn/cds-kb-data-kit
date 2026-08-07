@@ -30,78 +30,78 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnNumber` | ✓ | |  |  |
-| `CABillgPlnItem` | ✓ | |  |  |
-| `CABillgPlnItmCat` |  | |  |  |
-| `CABillgPlnItmType` |  | |  |  |
-| `CABillgPlnItmTxt` |  | |  |  |
-| `CABillgPlnItemExtRef` |  | |  |  |
-| `CABillgPlnItemAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `CATaxIsIncluded` |  | |  |  |
-| `CABillgPlnItemQuantity` |  | |  |  |
-| `CABillgPlnItemQuantityUnit` |  | |  |  |
-| `CATaxDeterminationCode` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `CABillgPlnItemStartDate` |  | |  |  |
-| `CABillgPlnItmEndDate` |  | |  |  |
-| `CABillgPlnItemTermStartDate` |  | |  |  |
-| `CABillgPlnItemTermEndDate` |  | |  |  |
-| `CABillgPlnItemRecurring` |  | |  |  |
-| `CABillgCycle` |  | |  |  |
-| `CAStartDateForBillingPeriod` |  | |  |  |
-| `CAConditionType` |  | |  |  |
-| `CABillgPlnItemAmountDetnType` |  | |  |  |
-| `CABillgPlnItemAmountDateType` |  | |  |  |
-| `CABillgPlnItemPriceDateType` |  | |  |  |
-| `CAContract` |  | |  |  |
-| `CAProviderContractItemNumber` |  | |  |  |
-| `CASubApplication` |  | |  |  |
-| `CAProviderContractItemUUID` |  | |  |  |
-| `Division` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `Segment` |  | |  |  |
-| `CAMainTransaction` |  | |  |  |
-| `CASubTransaction` |  | |  |  |
-| `CABillgPlnItemServiceType` |  | |  |  |
-| `CADependentItemType` |  | |  |  |
-| `Material` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `CAAccountDeterminationCode` |  | |  |  |
-| `CAInvcgOffsettingAction` |  | |  |  |
-| `CAInvcgOffsettingCategory` |  | |  |  |
-| `CAInvcgOffsettingProcedure` |  | |  |  |
-| `CAInvcgOffsettingReferenceKey` |  | |  |  |
-| `CABillgPlnItemReqDteLast` |  | |  |  |
-| `CABillgPlnItemReqDteNext` |  | |  |  |
-| `CABillgPlnDvtgNextRequestDate` |  | |  |  |
-| `CABillgPlnItemRequestedToDte` |  | |  |  |
-| `CABillgPlnItemCanceled` |  | |  |  |
-| `CABillgPlnSubItmExist` |  | |  |  |
-| `CABillgPlnItemMain` |  | |  |  |
-| `CABillgPlnItmExcptnReason` |  | |  |  |
-| `CABillgPlnItemChildExist` |  | |  |  |
-| `CABillgPlnItemParent` |  | |  |  |
-| `CABillgPlnItemStatus` |  | |  |  |
-| `CABillgPlnItemNrOfBllbleItm` |  | |  |  |
-| `CAIsRevnAcctgTransfRecordRlvt` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `CANetDueDate` |  | |  |  |
-| `CABillgPlnItmIsNotToBeReqd` |  | |  |  |
-| `CABllbleItmCostType` |  | |  |  |
-| `CABllbleItmCostSubType` |  | |  |  |
-| `CAIntcoCompanyCodeRequesting` |  | |  |  |
-| `CAIntcoCompanyCodeSupplying` |  | |  |  |
-| `CAIntcoType` |  | |  |  |
-| `CAIntcoSubtype` |  | |  |  |
-| `TaxCalculationProcedure` |  | |  |  |
-| `CAApplicationArea` |  | |  |  |
-| `_CABillgPln` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnNumber` | ✓ | |  |  |  |  |
+| `CABillgPlnItem` | ✓ | |  |  |  |  |
+| `CABillgPlnItmCat` |  | |  |  |  |  |
+| `CABillgPlnItmType` |  | |  |  |  |  |
+| `CABillgPlnItmTxt` |  | |  |  |  |  |
+| `CABillgPlnItemExtRef` |  | |  |  |  |  |
+| `CABillgPlnItemAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `CATaxIsIncluded` |  | |  |  |  |  |
+| `CABillgPlnItemQuantity` |  | |  |  |  |  |
+| `CABillgPlnItemQuantityUnit` |  | |  |  |  |  |
+| `CATaxDeterminationCode` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `CABillgPlnItemStartDate` |  | |  |  |  |  |
+| `CABillgPlnItmEndDate` |  | |  |  |  |  |
+| `CABillgPlnItemTermStartDate` |  | |  |  |  |  |
+| `CABillgPlnItemTermEndDate` |  | |  |  |  |  |
+| `CABillgPlnItemRecurring` |  | |  |  |  |  |
+| `CABillgCycle` |  | |  |  |  |  |
+| `CAStartDateForBillingPeriod` |  | |  |  |  |  |
+| `CAConditionType` |  | |  |  |  |  |
+| `CABillgPlnItemAmountDetnType` |  | |  |  |  |  |
+| `CABillgPlnItemAmountDateType` |  | |  |  |  |  |
+| `CABillgPlnItemPriceDateType` |  | |  |  |  |  |
+| `CAContract` |  | |  |  |  |  |
+| `CAProviderContractItemNumber` |  | |  |  |  |  |
+| `CASubApplication` |  | |  |  |  |  |
+| `CAProviderContractItemUUID` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `CAMainTransaction` |  | |  |  |  |  |
+| `CASubTransaction` |  | |  |  |  |  |
+| `CABillgPlnItemServiceType` |  | |  |  |  |  |
+| `CADependentItemType` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `CAAccountDeterminationCode` |  | |  |  |  |  |
+| `CAInvcgOffsettingAction` |  | |  |  |  |  |
+| `CAInvcgOffsettingCategory` |  | |  |  |  |  |
+| `CAInvcgOffsettingProcedure` |  | |  |  |  |  |
+| `CAInvcgOffsettingReferenceKey` |  | |  |  |  |  |
+| `CABillgPlnItemReqDteLast` |  | |  |  |  |  |
+| `CABillgPlnItemReqDteNext` |  | |  |  |  |  |
+| `CABillgPlnDvtgNextRequestDate` |  | |  |  |  |  |
+| `CABillgPlnItemRequestedToDte` |  | |  |  |  |  |
+| `CABillgPlnItemCanceled` |  | |  |  |  |  |
+| `CABillgPlnSubItmExist` |  | |  |  |  |  |
+| `CABillgPlnItemMain` |  | |  |  |  |  |
+| `CABillgPlnItmExcptnReason` |  | |  |  |  |  |
+| `CABillgPlnItemChildExist` |  | |  |  |  |  |
+| `CABillgPlnItemParent` |  | |  |  |  |  |
+| `CABillgPlnItemStatus` |  | |  |  |  |  |
+| `CABillgPlnItemNrOfBllbleItm` |  | |  |  |  |  |
+| `CAIsRevnAcctgTransfRecordRlvt` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `CANetDueDate` |  | |  |  |  |  |
+| `CABillgPlnItmIsNotToBeReqd` |  | |  |  |  |  |
+| `CABllbleItmCostType` |  | |  |  |  |  |
+| `CABllbleItmCostSubType` |  | |  |  |  |  |
+| `CAIntcoCompanyCodeRequesting` |  | |  |  |  |  |
+| `CAIntcoCompanyCodeSupplying` |  | |  |  |  |  |
+| `CAIntcoType` |  | |  |  |  |  |
+| `CAIntcoSubtype` |  | |  |  |  |  |
+| `TaxCalculationProcedure` |  | |  |  |  |  |
+| `CAApplicationArea` |  | |  |  |  |  |
+| `_CABillgPln` | | ✓ | | | | |
 
 ## Source Code
 

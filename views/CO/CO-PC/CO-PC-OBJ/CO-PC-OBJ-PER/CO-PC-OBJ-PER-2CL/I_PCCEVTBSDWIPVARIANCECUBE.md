@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `OrderID` | ✓ | |  |  |
-| `OrderType` | ✓ | |  |  |
-| `OrderCategory` | ✓ | |  |  |
-| `ChartOfAccounts` | ✓ | |  |  |
-| `GLAccount` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `ProducedProduct` | ✓ | |  |  |
-| `OriginProduct` | ✓ | |  |  |
-| `OriginCostCenter` | ✓ | |  |  |
-| `OriginCostCtrActivityType` | ✓ | |  |  |
-| `DisplayCurrency` |  | |  |  |
-| `InptPrVarcAmtInDspCrcy` |  | |  |  |
-| `InptQtyVarcAmtInDspCrcy` |  | |  |  |
-| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  |
-| `OutpPrVarcAmtInDspCrcy` |  | |  |  |
-| `RmngVarcAmtInDspCrcy` |  | |  |  |
-| `CostVarianceInDspCrcy` |  | |  |  |
-| `WIPCostInDspCrcy` |  | |  |  |
-| `_Ledger` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_OrderType` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Currency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `OrderID` | ✓ | |  |  |  |  |
+| `OrderType` | ✓ | |  |  |  |  |
+| `OrderCategory` | ✓ | |  |  |  |  |
+| `ChartOfAccounts` | ✓ | |  |  |  |  |
+| `GLAccount` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ProducedProduct` | ✓ | |  |  |  |  |
+| `OriginProduct` | ✓ | |  |  |  |  |
+| `OriginCostCenter` | ✓ | |  |  |  |  |
+| `OriginCostCtrActivityType` | ✓ | |  |  |  |  |
+| `DisplayCurrency` |  | |  |  |  |  |
+| `InptPrVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `InptQtyVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `OutpPrVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `RmngVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `CostVarianceInDspCrcy` |  | |  |  |  |  |
+| `WIPCostInDspCrcy` |  | |  |  |  |  |
+| `_Ledger` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_OrderType` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
 
 ## Associations
 

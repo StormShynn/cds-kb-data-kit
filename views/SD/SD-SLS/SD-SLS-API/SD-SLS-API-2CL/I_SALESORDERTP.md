@@ -31,99 +31,99 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  |  |
-| `SalesOrderType` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `ReferenceDistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderType` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `PurchaseOrderByShipToParty` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `SDDocumentReason` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `SDPricingProcedure` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `PriceListType` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `DeliveryDateTypeRule` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `CompleteDeliveryIsDefined` |  | |  |  |
-| `OrderCombinationIsAllowed` |  | |  |  |
-| `SlsDocIsRlvtForProofOfDeliv` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `ReceivingPoint` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `TaxDepartureCountry` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `HeaderBillingBlockReason` |  | |  |  |
-| `DeliveryBlockReason` |  | |  |  |
-| `SalesOrderApprovalReason` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `BillingCompanyCode` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `AccountingDocExternalReference` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `CustomerCreditAccount` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `OverallDeliveryBlockStatus` |  | |  |  |
-| `OverallBillingBlockStatus` |  | |  |  |
-| `OverallDeliveryStatus` |  | |  |  |
-| `TotalCreditCheckStatus` |  | |  |  |
-| `OverallSDDocumentRejectionSts` |  | |  |  |
-| `TotalBlockStatus` |  | |  |  |
-| `HdrGeneralIncompletionStatus` |  | |  |  |
-| `OvrlItmGeneralIncompletionSts` |  | |  |  |
-| `OverallSDDocReferenceStatus` |  | |  |  |
-| `SalesDocApprovalStatus` |  | |  |  |
-| `OverallChmlCmplncStatus` |  | |  |  |
-| `OverallDangerousGoodsStatus` |  | |  |  |
-| `OverallSafetyDataSheetStatus` |  | |  |  |
-| `OverallTrdCmplncEmbargoSts` |  | |  |  |
-| `OvrlTrdCmplncSnctndListChkSts` |  | |  |  |
-| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  |  |
-| `SalesOrderDownPaymentStatus` |  | |  |  |
-| `OverallOrdReltdBillgStatus` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `SalesOrderDate` |  | |  |  |
-| `SalesOrderProcessingType` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `SalesDocumentCreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `IsEUTriangularDeal` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_PricingElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |  |  |
+| `SalesOrderType` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `ReferenceDistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `PurchaseOrderByShipToParty` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `SDPricingProcedure` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `PriceListType` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `DeliveryDateTypeRule` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `CompleteDeliveryIsDefined` |  | |  |  |  |  |
+| `OrderCombinationIsAllowed` |  | |  |  |  |  |
+| `SlsDocIsRlvtForProofOfDeliv` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `ReceivingPoint` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `TaxDepartureCountry` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |  |  |
+| `DeliveryBlockReason` |  | |  |  |  |  |
+| `SalesOrderApprovalReason` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `BillingCompanyCode` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `AccountingDocExternalReference` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `CustomerCreditAccount` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `OverallDeliveryBlockStatus` |  | |  |  |  |  |
+| `OverallBillingBlockStatus` |  | |  |  |  |  |
+| `OverallDeliveryStatus` |  | |  |  |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |  |  |
+| `TotalBlockStatus` |  | |  |  |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |  |  |
+| `OverallChmlCmplncStatus` |  | |  |  |  |  |
+| `OverallDangerousGoodsStatus` |  | |  |  |  |  |
+| `OverallSafetyDataSheetStatus` |  | |  |  |  |  |
+| `OverallTrdCmplncEmbargoSts` |  | |  |  |  |  |
+| `OvrlTrdCmplncSnctndListChkSts` |  | |  |  |  |  |
+| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  |  |  |  |
+| `SalesOrderDownPaymentStatus` |  | |  |  |  |  |
+| `OverallOrdReltdBillgStatus` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `SalesOrderDate` |  | |  |  |  |  |
+| `SalesOrderProcessingType` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `SalesDocumentCreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `IsEUTriangularDeal` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_PricingElement` | | ✓ | | | | |
 
 ## Source Code
 

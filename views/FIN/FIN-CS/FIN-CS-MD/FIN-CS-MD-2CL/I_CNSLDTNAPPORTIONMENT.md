@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationApportionment` | ✓ | |  | `cast(left(_Domain.DomainValue, 1) as fincs_apportionment)` |
-| `DomainValue` |  | | `_Domain` | `DomainValue` |
-| `_Text` | | ✓ | | |
-| `_Text_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationApportionment` | ✓ | |  | `cast(left(_Domain.DomainValue, 1) as fincs_apportionment)` |  |  |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Text_2` | | ✓ | | | | |
 
 ## Associations
 

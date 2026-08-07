@@ -29,62 +29,62 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingInfoRecord` | ✓ | |  |  |
-| `PurchasingInfoRecordCategory` | ✓ | |  |  |
-| `PurchasingOrganization` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `ConditionRecord` | ✓ | |  |  |
-| `ConditionValidityEndDate` | ✓ | |  |  |
-| `ConditionSequentialNumber` | ✓ | |  |  |
-| `ConditionTable` |  | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionValidityStartDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `ConditionTextID` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `PricingScaleBasis` |  | |  |  |
-| `ConditionScaleQuantity` |  | |  |  |
-| `ConditionScaleQuantityUnit` |  | |  |  |
-| `ConditionScaleAmount` |  | |  |  |
-| `ConditionScaleAmountCurrency` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionRateValueUnit` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionToBaseQtyNmrtr` |  | |  |  |
-| `ConditionToBaseQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ConditionLowerLimit` |  | |  |  |
-| `ConditionUpperLimit` |  | |  |  |
-| `ConditionAlternativeCurrency` |  | |  |  |
-| `ConditionExclusion` |  | |  |  |
-| `ConditionIsDeleted` |  | |  |  |
-| `AdditionalValueDays` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CndnMaxNumberOfSalesOrders` |  | |  |  |
-| `MinimumConditionBasisValue` |  | |  |  |
-| `MaximumConditionBasisValue` |  | |  |  |
-| `MaximumConditionAmount` |  | |  |  |
-| `IncrementalScale` |  | |  |  |
-| `PricingScaleLine` |  | |  |  |
-| `ConditionReleaseStatus` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurgInfoRecdCndnRecord` | | ✓ | | |
-| `_PurgInfoRecd` | | ✓ | | |
-| `_PurgInfoRecdOrgPlntData` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_ConditionQuantityUnit` | | ✓ | | |
-| `_ConditionRateValueUnit` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_PurgPrcgCndnRecordScale` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |  |  |
+| `PurchasingInfoRecordCategory` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ConditionRecord` | ✓ | |  |  |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |  |  |
+| `ConditionSequentialNumber` | ✓ | |  |  |  |  |
+| `ConditionTable` |  | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionValidityStartDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `ConditionTextID` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `PricingScaleBasis` |  | |  |  |  |  |
+| `ConditionScaleQuantity` |  | |  |  |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |  |  |
+| `ConditionScaleAmount` |  | |  |  |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionRateValueUnit` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ConditionLowerLimit` |  | |  |  |  |  |
+| `ConditionUpperLimit` |  | |  |  |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |  |  |
+| `ConditionExclusion` |  | |  |  |  |  |
+| `ConditionIsDeleted` |  | |  |  |  |  |
+| `AdditionalValueDays` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CndnMaxNumberOfSalesOrders` |  | |  |  |  |  |
+| `MinimumConditionBasisValue` |  | |  |  |  |  |
+| `MaximumConditionBasisValue` |  | |  |  |  |  |
+| `MaximumConditionAmount` |  | |  |  |  |  |
+| `IncrementalScale` |  | |  |  |  |  |
+| `PricingScaleLine` |  | |  |  |  |  |
+| `ConditionReleaseStatus` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurgInfoRecdCndnRecord` | | ✓ | | | | |
+| `_PurgInfoRecd` | | ✓ | | | | |
+| `_PurgInfoRecdOrgPlntData` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_ConditionQuantityUnit` | | ✓ | | | | |
+| `_ConditionRateValueUnit` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_PurgPrcgCndnRecordScale` | | ✓ | | | | |
 
 ## Source Code
 

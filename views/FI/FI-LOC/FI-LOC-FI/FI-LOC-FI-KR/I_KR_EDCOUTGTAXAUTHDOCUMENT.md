@@ -30,44 +30,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EDCTaxAuthRecordUUID` | ✓ | |  | `record_guid` |
-| `TaxInvoiceApprovalNmbr` |  | |  | `apprvl_no` |
-| `Currency` |  | |  | `waers` |
-| `EDCTaxableAmount` |  | |  | `tax_base_amt` |
-| `EDCTaxAmount` |  | |  | `tax_amount` |
-| `TotalAmountInCoCodeCrcy` |  | |  | `amount` |
-| `KR_EDocTransferDate` |  | |  | `transfer_date` |
-| `AccountingDocument` |  | |  | `belnr` |
-| `InvoiceDate` |  | |  | `invoice_date` |
-| `KR_ElectronicDocumentIssueDate` |  | |  | `issue_date` |
-| `KR_EDocSuplrRegistrationNumber` |  | |  | `s_supplier_stcd2` |
-| `KR_EDocSupplierBusinessPlace` |  | |  | `s_business_place` |
-| `KR_EDocSupplierCompanyName` |  | |  | `s_company_name` |
-| `KR_EDocSuplrRepresentativeName` |  | |  | `s_repres` |
-| `KR_EDocSupplierAddress` |  | |  | `s_address` |
-| `KR_EDocBuyerRegistrationNumber` |  | |  | `b_supplier_stcd2` |
-| `KR_EDocBuyerBusinessPlace` |  | |  | `b_business_place` |
-| `KR_EDocBuyerCompanyName` |  | |  | `b_company_name` |
-| `KR_EDocBuyerRepresentativeName` |  | |  | `b_repres` |
-| `KR_EDocBuyerAddress` |  | |  | `b_address` |
-| `KR_EDocTxInvoiceClassification` |  | |  | `invc_clfn` |
-| `KR_EDocInvoiceType` |  | |  | `invoice_type` |
-| `KR_EDocIssuanceType` |  | |  | `issuance_type` |
-| `KR_ElectronicDocumentRemark` |  | |  | `remark` |
-| `KR_EDocReceiptBilling` |  | |  | `rcpt_billg` |
-| `KR_EDocBuyrRespPersnEmlAddr1` |  | |  | `buyer_email` |
-| `KR_EDocBuyrRespPersnEmlAddr2` |  | |  | `buyer_email1` |
-| `KR_EDocBuyrRespPersnEmlAddr3` |  | |  | `buyer_email2` |
-| `KR_ElectronicDocumentItemDate` |  | |  | `item_date` |
-| `KR_ElectronicDocumentItemName` |  | |  | `item_name` |
-| `KR_ElectronicDocumentItemUnit` |  | |  | `item_unit_n` |
-| `KR_EDocItemQuantity` |  | |  | `item_quantity_n` |
-| `KR_EDocItmUntPriceInCoCodeCrcy` |  | |  | `item_unit_price` |
-| `TaxBaseAmountInCoCodeCrcy` |  | |  | `item_base_amt` |
-| `TaxAmountInCoCodeCrcy` |  | |  | `item_tax_amount` |
-| `KR_EDocItemRemark` |  | |  | `item_remarks` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EDCTaxAuthRecordUUID` | ✓ | |  | `record_guid` |  |  |
+| `TaxInvoiceApprovalNmbr` |  | |  | `apprvl_no` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `EDCTaxableAmount` |  | |  | `tax_base_amt` |  |  |
+| `EDCTaxAmount` |  | |  | `tax_amount` |  |  |
+| `TotalAmountInCoCodeCrcy` |  | |  | `amount` |  |  |
+| `KR_EDocTransferDate` |  | |  | `transfer_date` |  |  |
+| `AccountingDocument` |  | |  | `belnr` |  |  |
+| `InvoiceDate` |  | |  | `invoice_date` |  |  |
+| `KR_ElectronicDocumentIssueDate` |  | |  | `issue_date` |  |  |
+| `KR_EDocSuplrRegistrationNumber` |  | |  | `s_supplier_stcd2` |  |  |
+| `KR_EDocSupplierBusinessPlace` |  | |  | `s_business_place` |  |  |
+| `KR_EDocSupplierCompanyName` |  | |  | `s_company_name` |  |  |
+| `KR_EDocSuplrRepresentativeName` |  | |  | `s_repres` |  |  |
+| `KR_EDocSupplierAddress` |  | |  | `s_address` |  |  |
+| `KR_EDocBuyerRegistrationNumber` |  | |  | `b_supplier_stcd2` |  |  |
+| `KR_EDocBuyerBusinessPlace` |  | |  | `b_business_place` |  |  |
+| `KR_EDocBuyerCompanyName` |  | |  | `b_company_name` |  |  |
+| `KR_EDocBuyerRepresentativeName` |  | |  | `b_repres` |  |  |
+| `KR_EDocBuyerAddress` |  | |  | `b_address` |  |  |
+| `KR_EDocTxInvoiceClassification` |  | |  | `invc_clfn` |  |  |
+| `KR_EDocInvoiceType` |  | |  | `invoice_type` |  |  |
+| `KR_EDocIssuanceType` |  | |  | `issuance_type` |  |  |
+| `KR_ElectronicDocumentRemark` |  | |  | `remark` |  |  |
+| `KR_EDocReceiptBilling` |  | |  | `rcpt_billg` |  |  |
+| `KR_EDocBuyrRespPersnEmlAddr1` |  | |  | `buyer_email` |  |  |
+| `KR_EDocBuyrRespPersnEmlAddr2` |  | |  | `buyer_email1` |  |  |
+| `KR_EDocBuyrRespPersnEmlAddr3` |  | |  | `buyer_email2` |  |  |
+| `KR_ElectronicDocumentItemDate` |  | |  | `item_date` |  |  |
+| `KR_ElectronicDocumentItemName` |  | |  | `item_name` |  |  |
+| `KR_ElectronicDocumentItemUnit` |  | |  | `item_unit_n` |  |  |
+| `KR_EDocItemQuantity` |  | |  | `item_quantity_n` |  |  |
+| `KR_EDocItmUntPriceInCoCodeCrcy` |  | |  | `item_unit_price` |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `item_base_amt` |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  | `item_tax_amount` |  |  |
+| `KR_EDocItemRemark` |  | |  | `item_remarks` |  |  |
 
 ## Source Code
 

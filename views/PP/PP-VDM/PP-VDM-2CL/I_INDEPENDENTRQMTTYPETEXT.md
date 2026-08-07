@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IndependentRequirementType` | ✓ | |  | `cast(txt.bedae as vdm_bedae preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
-| `IndependentRequirementTypeName` |  | |  | `cast(txt.bdtxt as pph_bdtxt preserving type)` |
-| `_RequirementType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndependentRequirementType` | ✓ | |  | `cast(txt.bedae as vdm_bedae preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |  |  |
+| `IndependentRequirementTypeName` |  | |  | `cast(txt.bdtxt as pph_bdtxt preserving type)` |  |  |
+| `_RequirementType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `status` | ✓ | |  | `cast( domvalue_l as ZTT_STATUS )` |
-| `valpos` |  | |  |  |
-| `_text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `status` | ✓ | |  | `cast( domvalue_l as ZTT_STATUS )` |  |  |
+| `valpos` |  | |  |  |  |  |
+| `_text` | | ✓ | | | | |
 
 ## Associations
 

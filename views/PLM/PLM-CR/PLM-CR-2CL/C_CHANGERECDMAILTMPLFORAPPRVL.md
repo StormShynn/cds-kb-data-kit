@@ -27,28 +27,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | |  |  |
-| `ChangeRecordUUID` |  | |  |  |
-| `ChgRecordDescriptionText` |  | |  | `_Text[1:Language = $session.system_language].ChgRecordDescriptionText` |
-| `ChangeRecord` |  | |  |  |
-| `ChangeRecordType` |  | |  |  |
-| `ParentChangeRecordUUID` |  | |  |  |
-| `RootChangeRecordUUID` |  | |  |  |
-| `ChangeRecordPriority` |  | |  | `cast ('' as /iam/priority )` |
-| `ChangeRecordStatus` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ChangeRecordCategory` |  | |  |  |
-| `ChgRecordApplication` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `ChangeRecordLifecycleStatus` |  | |  |  |
-| `ChgRecdAuthGroup` |  | |  |  |
-| `_TaskRecipient` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | |  |  |  |  |
+| `ChangeRecordUUID` |  | |  |  |  |  |
+| `ChgRecordDescriptionText` |  | |  | `_Text[1:Language = $session.system_language].ChgRecordDescriptionText` |  |  |
+| `ChangeRecord` |  | |  |  |  |  |
+| `ChangeRecordType` |  | |  |  |  |  |
+| `ParentChangeRecordUUID` |  | |  |  |  |  |
+| `RootChangeRecordUUID` |  | |  |  |  |  |
+| `ChangeRecordPriority` |  | |  | `cast ('' as /iam/priority )` |  |  |
+| `ChangeRecordStatus` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ChangeRecordCategory` |  | |  |  |  |  |
+| `ChgRecordApplication` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `ChangeRecordLifecycleStatus` |  | |  |  |  |  |
+| `ChgRecdAuthGroup` |  | |  |  |  |  |
+| `_TaskRecipient` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

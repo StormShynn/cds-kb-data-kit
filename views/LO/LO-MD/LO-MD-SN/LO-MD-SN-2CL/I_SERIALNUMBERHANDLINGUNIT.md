@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
-| `HandlingUnitInternalID` | ✓ | | `_MaintObjListHandlingUnit` | `HandlingUnitInternalID` |
-| `HandlingUnitItem` | ✓ | | `_MaintObjListHandlingUnit` | `HandlingUnitItem` |
-| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
-| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
-| `HandlingUnitExternalID` |  | | `_MaintObjListHandlingUnit` | `HandlingUnitExternalID` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |  |  |
+| `HandlingUnitInternalID` | ✓ | | `_MaintObjListHandlingUnit` | `HandlingUnitInternalID` |  |  |
+| `HandlingUnitItem` | ✓ | | `_MaintObjListHandlingUnit` | `HandlingUnitItem` |  |  |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |  |  |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |  |  |
+| `HandlingUnitExternalID` |  | | `_MaintObjListHandlingUnit` | `HandlingUnitExternalID` |  |  |
 
 ## Source Code
 

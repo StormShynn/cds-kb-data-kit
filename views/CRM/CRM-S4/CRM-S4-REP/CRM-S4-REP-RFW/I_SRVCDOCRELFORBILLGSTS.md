@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocIsReleasedForBilling` | ✓ | |  | `domvalue_l` |
-| `_SrvcDocIsRelForBillgStsText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocIsReleasedForBilling` | ✓ | |  | `domvalue_l` |  |  |
+| `_SrvcDocIsRelForBillgStsText` | | ✓ | | | | |
 
 ## Associations
 

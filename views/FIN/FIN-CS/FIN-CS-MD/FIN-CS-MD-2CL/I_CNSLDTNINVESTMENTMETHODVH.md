@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationInvestmentMethod` | ✓ | | `_Source` | `ConsolidationInvestmentMethod` |
-| `CnsldtnInvestmentMethodText` |  | |  | `cast(_Source._Text[1: Language=$session.system_language].CnsldtnInvestmentMethodText as fincs_description_text_30 preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationInvestmentMethod` | ✓ | | `_Source` | `ConsolidationInvestmentMethod` |  |  |
+| `CnsldtnInvestmentMethodText` |  | |  | `cast(_Source._Text[1: Language=$session.system_language].CnsldtnInvestmentMethodText as fincs_description_text_30 preserving type )` |  |  |
 
 ## Source Code
 

@@ -28,43 +28,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryLedgerTransaction` | ✓ | |  | `cast(transaction_oid as ftr_gen_trl_trans preserving type)` |
-| `TreasuryLedgerFlow` | ✓ | |  | `trlflownumber` |
-| `TreasuryTransactionFlow` |  | |  | `flownumber` |
-| `TrsyPosTransfSourceTargetCode` |  | |  | `sourcetarget_flg` |
-| `TreasuryPositionTransferGroup` |  | |  | `transfer_group` |
-| `TreasuryUpdateType` |  | |  | `flowtype` |
-| `TreasuryPositionTransferFactor` |  | |  | `amount_factor` |
-| `TrsyPosQuantityChangeCategory` |  | |  | `quant_cat` |
-| `TrsyPosAmountChangeCategory` |  | |  | `amount_cat` |
-| `QuantityInPieces` |  | |  | `cast(units as ftr_gen_quantity_in_units_l)` |
-| `NominalAmountInNominalCurrency` |  | |  | `nominal_amt` |
-| `OriglNominalAmtInNominalCrcy` |  | |  | `nominal_org_amt` |
-| `NominalCurrency` |  | |  | `nominal_curr` |
-| `IndexCleanRpaytAmtInPosCrcy` |  | |  | `posamt_idx_clean` |
-| `AmountInPositionCurrency` |  | |  | `position_amt` |
-| `PositionCurrency` |  | |  | `position_curr` |
-| `AmountInValuationCurrency` |  | |  | `valuation_amt` |
-| `ValuationCurrency` |  | |  | `valuation_curr` |
-| `CalculationDate` |  | |  | `calculation_date` |
-| `CalcDateIsAsEndDateInclusive` |  | |  | `calc_date_incl` |
-| `DueDate` |  | |  | `due_date` |
-| `CalculationPeriodStartDate` |  | |  | `calc_begin` |
-| `CalculationPeriodEndDate` |  | |  | `calc_end` |
-| `EffectiveInterestRate` |  | |  | `eff_int_rate_u` |
-| `EffctvIntrstRateRdmptnSched` |  | |  | `sched_eff_rate` |
-| `NextEffectiveInterestRate` |  | |  | `eff_int_rate_n` |
-| `FixedRedemptionSchedule` |  | |  | `sched_fix` |
-| `CalculationBasis` |  | |  | `bbasis` |
-| `TreasuryPosition` |  | |  | `cast(position_oid as ftr_gen_position_uuid)` |
-| `TreasuryPositionLedgerDate` |  | |  | `trldate` |
-| `TrsySubPosition` |  | |  | `subposition_oid` |
-| `_NominalCurrency` | | ✓ | | |
-| `_PositionCurrency` | | ✓ | | |
-| `_ValuationCurrency` | | ✓ | | |
-| `_PositionIdentifier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryLedgerTransaction` | ✓ | |  | `cast(transaction_oid as ftr_gen_trl_trans preserving type)` |  |  |
+| `TreasuryLedgerFlow` | ✓ | |  | `trlflownumber` |  |  |
+| `TreasuryTransactionFlow` |  | |  | `flownumber` |  |  |
+| `TrsyPosTransfSourceTargetCode` |  | |  | `sourcetarget_flg` |  |  |
+| `TreasuryPositionTransferGroup` |  | |  | `transfer_group` |  |  |
+| `TreasuryUpdateType` |  | |  | `flowtype` |  |  |
+| `TreasuryPositionTransferFactor` |  | |  | `amount_factor` |  |  |
+| `TrsyPosQuantityChangeCategory` |  | |  | `quant_cat` |  |  |
+| `TrsyPosAmountChangeCategory` |  | |  | `amount_cat` |  |  |
+| `QuantityInPieces` |  | |  | `cast(units as ftr_gen_quantity_in_units_l)` |  |  |
+| `NominalAmountInNominalCurrency` |  | |  | `nominal_amt` |  |  |
+| `OriglNominalAmtInNominalCrcy` |  | |  | `nominal_org_amt` |  |  |
+| `NominalCurrency` |  | |  | `nominal_curr` |  |  |
+| `IndexCleanRpaytAmtInPosCrcy` |  | |  | `posamt_idx_clean` |  |  |
+| `AmountInPositionCurrency` |  | |  | `position_amt` |  |  |
+| `PositionCurrency` |  | |  | `position_curr` |  |  |
+| `AmountInValuationCurrency` |  | |  | `valuation_amt` |  |  |
+| `ValuationCurrency` |  | |  | `valuation_curr` |  |  |
+| `CalculationDate` |  | |  | `calculation_date` |  |  |
+| `CalcDateIsAsEndDateInclusive` |  | |  | `calc_date_incl` |  |  |
+| `DueDate` |  | |  | `due_date` |  |  |
+| `CalculationPeriodStartDate` |  | |  | `calc_begin` |  |  |
+| `CalculationPeriodEndDate` |  | |  | `calc_end` |  |  |
+| `EffectiveInterestRate` |  | |  | `eff_int_rate_u` |  |  |
+| `EffctvIntrstRateRdmptnSched` |  | |  | `sched_eff_rate` |  |  |
+| `NextEffectiveInterestRate` |  | |  | `eff_int_rate_n` |  |  |
+| `FixedRedemptionSchedule` |  | |  | `sched_fix` |  |  |
+| `CalculationBasis` |  | |  | `bbasis` |  |  |
+| `TreasuryPosition` |  | |  | `cast(position_oid as ftr_gen_position_uuid)` |  |  |
+| `TreasuryPositionLedgerDate` |  | |  | `trldate` |  |  |
+| `TrsySubPosition` |  | |  | `subposition_oid` |  |  |
+| `_NominalCurrency` | | ✓ | | | | |
+| `_PositionCurrency` | | ✓ | | | | |
+| `_ValuationCurrency` | | ✓ | | | | |
+| `_PositionIdentifier` | | ✓ | | | | |
 
 ## Associations
 

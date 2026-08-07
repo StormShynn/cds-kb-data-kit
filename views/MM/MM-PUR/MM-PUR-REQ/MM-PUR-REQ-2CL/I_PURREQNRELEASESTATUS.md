@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurReqnReleaseStatus` | ✓ | |  | `cast(domvalue_l as banpr)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurReqnReleaseStatus` | ✓ | |  | `cast(domvalue_l as banpr)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

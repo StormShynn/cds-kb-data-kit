@@ -37,15 +37,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ZBS_ST_StartUpID` |  | |  | `key StartUpID : ZBS_ST_StartUpID` |
-| `StartUpName` |  | |  | `abap.char(50)` |
-| `Description` |  | |  | `abap.char(200)` |
-| `CompanyRegisterID` |  | |  | `abap.char(20)` |
-| `Rating` |  | |  | `ZBS_SE_Ranking` |
-| `ZBS_Employee` |  | |  | `_Employee : composition of exact one to many ZBS_Employee` |
-| `ZBS_Investor` |  | |  | `_Investor : composition of exact one to many ZBS_Investor` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ZBS_ST_StartUpID` |  | |  | `key StartUpID : ZBS_ST_StartUpID` |  |  |
+| `StartUpName` |  | |  | `abap.char(50)` |  |  |
+| `Description` |  | |  | `abap.char(200)` |  |  |
+| `CompanyRegisterID` |  | |  | `abap.char(20)` |  |  |
+| `Rating` |  | |  | `ZBS_SE_Ranking` |  |  |
+| `ZBS_Employee` |  | |  | `_Employee : composition of exact one to many ZBS_Employee` |  |  |
+| `ZBS_Investor` |  | |  | `_Investor : composition of exact one to many ZBS_Investor` |  |  |
 
 ## Source Code
 

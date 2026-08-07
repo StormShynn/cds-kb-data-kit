@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceConfirmation` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `SrvcDocLogTextIdentifier` | ✓ | |  |  |
-| `TextObjectCategory` |  | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `SrvcDocLongTextMimeType` |  | |  |  |
-| `SrvcConfLongText` |  | |  |  |
-| `ReferenceTextObjectCategory` |  | |  |  |
-| `ReferenceTextObjectType` |  | |  |  |
-| `ReferenceLongTextKey` |  | |  |  |
-| `SrvcDocLongTxtCreationDateTime` |  | |  |  |
-| `SrvcDocLongTextCreatedByUser` |  | |  |  |
-| `SrvcDocLongTextChangedDateTime` |  | |  |  |
-| `SrvcDocLongTextChangedByUser` |  | |  |  |
-| `_ServiceConfirmationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `SrvcDocLogTextIdentifier` | ✓ | |  |  |  |  |
+| `TextObjectCategory` |  | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |  |  |
+| `SrvcConfLongText` |  | |  |  |  |  |
+| `ReferenceTextObjectCategory` |  | |  |  |  |  |
+| `ReferenceTextObjectType` |  | |  |  |  |  |
+| `ReferenceLongTextKey` |  | |  |  |  |  |
+| `SrvcDocLongTxtCreationDateTime` |  | |  |  |  |  |
+| `SrvcDocLongTextCreatedByUser` |  | |  |  |  |  |
+| `SrvcDocLongTextChangedDateTime` |  | |  |  |  |  |
+| `SrvcDocLongTextChangedByUser` |  | |  |  |  |  |
+| `_ServiceConfirmationTP` | | ✓ | | | | |
 
 ## Source Code
 

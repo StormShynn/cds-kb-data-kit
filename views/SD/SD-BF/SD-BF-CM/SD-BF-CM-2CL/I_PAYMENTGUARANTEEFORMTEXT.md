@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentGuaranteeForm` | ✓ | |  | `absfo` |
-| `Language` | ✓ | |  | `spras` |
-| `PaymentGuaranteeFormName` |  | |  | `bezei` |
-| `_PaymentGuaranteeForm` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentGuaranteeForm` | ✓ | |  | `absfo` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PaymentGuaranteeFormName` |  | |  | `bezei` |  |  |
+| `_PaymentGuaranteeForm` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

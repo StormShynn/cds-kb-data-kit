@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `REGenericRentalObjectUsageType` | ✓ | |  | `usagetype` |
-| `REGnrcRentalObjUsageTypeText` |  | |  | `description` |
-| `_REGnrcRentalObjUsageType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `REGenericRentalObjectUsageType` | ✓ | |  | `usagetype` |  |  |
+| `REGnrcRentalObjUsageTypeText` |  | |  | `description` |  |  |
+| `_REGnrcRentalObjUsageType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TR_EDocAccountNumberOfSupplier` | ✓ | |  |  |
-| `TR_ElectronicDocumentScenario` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TR_EDocAccountNumberOfSupplier` | ✓ | |  |  |  |  |
+| `TR_ElectronicDocumentScenario` |  | |  |  |  |  |
 
 ## Source Code
 

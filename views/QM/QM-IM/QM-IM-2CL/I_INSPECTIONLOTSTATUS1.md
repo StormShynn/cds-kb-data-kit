@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `StatusCode` | ✓ | |  |  |
-| `StatusObject` |  | |  |  |
-| `_InspectionLot` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `StatusCode` | ✓ | |  |  |  |  |
+| `StatusObject` |  | |  |  |  |  |
+| `_InspectionLot` | | ✓ | | | | |
 
 ## Associations
 

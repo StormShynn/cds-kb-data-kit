@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PersSettlmtBusProcCat` | ✓ | |  | `cast( dd07t.domvalue_l as wlf_use_case_type )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PersSettlmtBusProcCatName` |  | |  | `cast( ddtext as wlf_use_case_type_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PersSettlmtBusProcCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersSettlmtBusProcCat` | ✓ | |  | `cast( dd07t.domvalue_l as wlf_use_case_type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PersSettlmtBusProcCatName` |  | |  | `cast( ddtext as wlf_use_case_type_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PersSettlmtBusProcCat` | | ✓ | | | | |
 
 ## Associations
 

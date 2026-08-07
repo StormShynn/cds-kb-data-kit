@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnType` |  | |  | `biptype_kk` |
-| `ContractAccount` |  | |  | `vkont_kk` |
-| `CAContract` |  | |  | `vtref_kk` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnType` |  | |  | `biptype_kk` |  |  |
+| `ContractAccount` |  | |  | `vkont_kk` |  |  |
+| `CAContract` |  | |  | `vtref_kk` |  |  |
 
 ## Source Code
 

@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoiceStatus` | ✓ | |  |  |
-| `DomainValue` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoiceStatus` | ✓ | |  |  |  |  |
+| `DomainValue` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

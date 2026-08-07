@@ -30,72 +30,72 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrderWithoutCharge` | ✓ | |  |  |
-| `SalesOrderWithoutChargeItem` | ✓ | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `SlsOrdWthoutChrgItemCategory` |  | |  |  |
-| `SalesOrderWthoutChrgItemText` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `ConfirmedDeliveryDate` |  | |  |  |
-| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  |  |
-| `DeliveryBlockStatus` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `Route` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `MaxNmbrOfPartialDelivery` |  | |  |  |
-| `DeliveryDateQuantityIsFixed` |  | |  |  |
-| `DeliveryGroup` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `Product` |  | |  |  |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `Batch` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `DeliveryStatus` |  | |  |  |
-| `ItemCategoryGroup` |  | |  |  |
-| `SDDocumentItemUsage` |  | |  |  |
-| `SalesOrderWithoutChargeType` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `_SalesOrderWithoutCharge` | | ✓ | | |
-| `_ItemPartner` | | ✓ | | |
-| `_ItemText` | | ✓ | | |
-| `_ScheduleLine` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  |  |  |  |
+| `SalesOrderWithoutChargeItem` | ✓ | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `SlsOrdWthoutChrgItemCategory` |  | |  |  |  |  |
+| `SalesOrderWthoutChrgItemText` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `ConfirmedDeliveryDate` |  | |  |  |  |  |
+| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |  |  |
+| `DeliveryBlockStatus` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `Route` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `MaxNmbrOfPartialDelivery` |  | |  |  |  |  |
+| `DeliveryDateQuantityIsFixed` |  | |  |  |  |  |
+| `DeliveryGroup` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `DeliveryStatus` |  | |  |  |  |  |
+| `ItemCategoryGroup` |  | |  |  |  |  |
+| `SDDocumentItemUsage` |  | |  |  |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `_SalesOrderWithoutCharge` | | ✓ | | | | |
+| `_ItemPartner` | | ✓ | | | | |
+| `_ItemText` | | ✓ | | | | |
+| `_ScheduleLine` | | ✓ | | | | |
 
 ## Source Code
 

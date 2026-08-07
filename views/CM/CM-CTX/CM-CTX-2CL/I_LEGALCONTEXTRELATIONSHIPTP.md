@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMCntxtRelshpUUID` | ✓ | |  |  |
-| `LglCntntMContextUUID` |  | |  |  |
-| `LglCntntMRelshpType` |  | |  |  |
-| `LglCntntMCntxtRelshpLglTrans` |  | |  |  |
-| `LglCntntMIsMandatory` |  | |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |
-| `_LCMContextTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMCntxtRelshpUUID` | ✓ | |  |  |  |  |
+| `LglCntntMContextUUID` |  | |  |  |  |  |
+| `LglCntntMRelshpType` |  | |  |  |  |  |
+| `LglCntntMCntxtRelshpLglTrans` |  | |  |  |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
+| `_LCMContextTP` | | ✓ | | | | |
 
 ## Source Code
 

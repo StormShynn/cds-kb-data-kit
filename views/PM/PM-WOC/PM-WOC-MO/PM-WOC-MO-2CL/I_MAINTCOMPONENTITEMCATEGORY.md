@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintComponentItemCategory` | ✓ | |  | `postp` |
-| `MaterialIsInventoryManaged` |  | |  | `kzbsf` |
-| `ItemCatRequiresMaterialEntry` |  | |  | `matin` |
-| `ItemIsVariableSized` |  | |  | `rtpos` |
-| `MaterialIsTextItem` |  | |  | `txpos` |
-| `ItemCategoryControlKey` |  | |  | `pstrg` |
-| `ItemIsIntraMaterial` |  | |  | `inpos` |
-| `ItemCatIsUsedForEnhancedLimits` |  | |  | `itemcatisusedforenhancedlimits` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintComponentItemCategory` | ✓ | |  | `postp` |  |  |
+| `MaterialIsInventoryManaged` |  | |  | `kzbsf` |  |  |
+| `ItemCatRequiresMaterialEntry` |  | |  | `matin` |  |  |
+| `ItemIsVariableSized` |  | |  | `rtpos` |  |  |
+| `MaterialIsTextItem` |  | |  | `txpos` |  |  |
+| `ItemCategoryControlKey` |  | |  | `pstrg` |  |  |
+| `ItemIsIntraMaterial` |  | |  | `inpos` |  |  |
+| `ItemCatIsUsedForEnhancedLimits` |  | |  | `itemcatisusedforenhancedlimits` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

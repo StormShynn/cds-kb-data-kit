@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GenericPriorityType` | ✓ | |  | `artpr` |
-| `PriorityCode` | ✓ | |  | `priok` |
-| `GenericStartDateShiftFactor` |  | |  | `tagbn` |
-| `GenericStrtDateShiftFactorUnit` |  | |  | `ehtbg` |
-| `GenericEndDateShiftFactor` |  | |  | `tagen` |
-| `GenericEndDateShiftFactorUnit` |  | |  | `ehten` |
-| `GenericPriorityColorCode` |  | |  | `priocc` |
-| `LtstAcceptableCompltnDteFactor` |  | |  | `lacd_unit` |
-| `LtstAcceptableCompltnDteUoM` |  | |  | `lacd_uom` |
-| `_GenericPriorityType` | | ✓ | | |
-| `_GenericPriorityText` | | ✓ | | |
-| `_GenericStrtDateShiftFctrUnit` | | ✓ | | |
-| `_GenericEndDateShiftFactorUnit` | | ✓ | | |
-| `_LtstAcceptableCompltnDteUoM` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GenericPriorityType` | ✓ | |  | `artpr` |  |  |
+| `PriorityCode` | ✓ | |  | `priok` |  |  |
+| `GenericStartDateShiftFactor` |  | |  | `tagbn` |  |  |
+| `GenericStrtDateShiftFactorUnit` |  | |  | `ehtbg` |  |  |
+| `GenericEndDateShiftFactor` |  | |  | `tagen` |  |  |
+| `GenericEndDateShiftFactorUnit` |  | |  | `ehten` |  |  |
+| `GenericPriorityColorCode` |  | |  | `priocc` |  |  |
+| `LtstAcceptableCompltnDteFactor` |  | |  | `lacd_unit` |  |  |
+| `LtstAcceptableCompltnDteUoM` |  | |  | `lacd_uom` |  |  |
+| `_GenericPriorityType` | | ✓ | | | | |
+| `_GenericPriorityText` | | ✓ | | | | |
+| `_GenericStrtDateShiftFctrUnit` | | ✓ | | | | |
+| `_GenericEndDateShiftFactorUnit` | | ✓ | | | | |
+| `_LtstAcceptableCompltnDteUoM` | | ✓ | | | | |
 
 ## Associations
 

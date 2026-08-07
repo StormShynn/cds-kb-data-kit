@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingOrganization` | ✓ | |  | `ekorg` |
-| `Plant` | ✓ | |  | `werks` |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingOrganization` | ✓ | |  | `ekorg` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

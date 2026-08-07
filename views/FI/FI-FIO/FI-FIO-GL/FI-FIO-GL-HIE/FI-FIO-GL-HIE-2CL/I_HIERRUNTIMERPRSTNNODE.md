@@ -26,88 +26,88 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RuntimeHierarchy` | ✓ | |  | `hryid` |
-| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `HierarchyNodeClass` | ✓ | |  | `nodecls` |
-| `ParentNode` | ✓ | |  | `parnode` |
-| `HierarchyType` |  | |  | `hrytyp` |
-| `ValidityStartDate` |  | |  | `cast(hryvalfrom as fis_datab preserving type )` |
-| `DebitCreditCode` |  | |  | `balind` |
-| `NodeType` |  | |  | `nodetype` |
-| `HierarchyNodeVal` |  | |  | `nodevalue` |
-| `HierarchyNodeSequence` |  | |  | `hryseqnbr` |
-| `HierarchyNodeLevel` |  | |  | `hrylevel` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `ChartOfAccounts` |  | |  | `ktopl` |
-| `ConsolidationChartOfAccounts` |  | |  | `itclg` |
-| `SubItemCategory` |  | |  | `sityp` |
-| `ValidationScenarioID` |  | |  | `scen_id` |
-| `FinancialManagementArea` |  | |  | `fikrs` |
-| `FinMgmtAreaFiscalYear` |  | |  | `fma_fisyear` |
-| `GLAccount` |  | |  | `saknr` |
-| `CostCenter` |  | |  | `kostl` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `StatisticalKeyFigure` |  | |  | `stagr` |
-| `ActivityType` |  | |  | `lstar` |
-| `WBSElement` |  | |  | `cast( posid as fis_wbs_no_conv preserving type )` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `Segment` |  | |  | `segment` |
-| `BusinessTransactionType` |  | |  | `cbttype` |
-| `OrderID` |  | |  | `aufnr` |
-| `Fund` |  | |  | `fincode` |
-| `GrantID` |  | |  | `grant_nbr` |
-| `BudgetPeriod` |  | |  | `budget_pd` |
-| `SponsoredClass` |  | |  | `sponsored_class` |
-| `FundCenterText` |  | |  | `fictr` |
-| `SponsoredProgram` |  | |  | `sponsored_prog` |
-| `FundedProgram` |  | |  | `measure` |
-| `BusinessPartnerNumber` |  | |  | `partner` |
-| `BankAccountInternalID` |  | |  | `acc_id` |
-| `LiquidityItem` |  | |  | `lqpos` |
-| `AssetBusinessArea` |  | |  | `gsber` |
-| `FinancialTransactionType` |  | |  | `trtyp` |
-| `CustomerNum` |  | |  | `kunnr` |
-| `AssetSupplier` |  | |  | `lifnr` |
-| `Project` |  | |  | `cast( pspid as fis_project_no_conv preserving type )` |
-| `Material` |  | |  | `matnr` |
-| `CustomerGroup` |  | |  | `kdgrp` |
-| `CountryOrRegion` |  | |  | `land1` |
-| `FinancialStatementItemTemplate` |  | |  | `item` |
-| `ConsolidationUnit` |  | |  | `cast ( bunit as fincs_consolidationunit preserving type )` |
-| `SubItem` |  | |  | `sitem` |
-| `ConsolidationDocumentType` |  | |  | `docty` |
-| `Company` |  | |  | `rcomp` |
-| `MaterialGroup` |  | |  | `matkl` |
-| `ValidationRuleID` |  | |  | `rule_num` |
-| `SalesDistrict` |  | |  | `bzirk` |
-| `BillingDocumentType` |  | |  | `fkart` |
-| `Division` |  | |  | `spart` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `Plant` |  | |  | `werks` |
-| `Industry` |  | |  | `brsch` |
-| `CommitmentItem` |  | |  | `fipex` |
-| `PostingLevel` |  | |  | `plevl` |
-| `FinancialServicesProductGroup` |  | |  | `fs_product_group` |
-| `PricingIsRelevant` |  | |  | `pricingrelevant` |
-| `SignIsInverted` |  | |  | `cast( sign as rr_rsign preserving type )` |
-| `GeneralLedgerAgingIncrement` |  | |  | `regrouping` |
-| `FinancialStatementLeafItem` |  | |  | `fs_leafitem` |
-| `FinancialStatementNodeType` |  | |  | `fs_nodetype` |
-| `FinStmntNodeFormattedID` |  | |  | `hrynodeext` |
-| `BankAccountGroupingIsSet` |  | |  | `banksplit` |
-| `HierarchyNodeIsTimeDependent` |  | |  | `node_timedep` |
-| `HierarchyNodeType` |  | |  | `node_typelem` |
-| `CnsldtnEliminationCharcValue` |  | |  | `eliminationmember` |
-| `UniversalHierNodeID` |  | |  | `uhnodeid` |
-| `UniversalHierNodeParentID` |  | |  | `par_uhnodeid` |
-| `ConsolidationGroup` |  | |  | `congr` |
-| `_Hierarchy` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RuntimeHierarchy` | ✓ | |  | `hryid` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `HierarchyNodeClass` | ✓ | |  | `nodecls` |  |  |
+| `ParentNode` | ✓ | |  | `parnode` |  |  |
+| `HierarchyType` |  | |  | `hrytyp` |  |  |
+| `ValidityStartDate` |  | |  | `cast(hryvalfrom as fis_datab preserving type )` |  |  |
+| `DebitCreditCode` |  | |  | `balind` |  |  |
+| `NodeType` |  | |  | `nodetype` |  |  |
+| `HierarchyNodeVal` |  | |  | `nodevalue` |  |  |
+| `HierarchyNodeSequence` |  | |  | `hryseqnbr` |  |  |
+| `HierarchyNodeLevel` |  | |  | `hrylevel` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `ChartOfAccounts` |  | |  | `ktopl` |  |  |
+| `ConsolidationChartOfAccounts` |  | |  | `itclg` |  |  |
+| `SubItemCategory` |  | |  | `sityp` |  |  |
+| `ValidationScenarioID` |  | |  | `scen_id` |  |  |
+| `FinancialManagementArea` |  | |  | `fikrs` |  |  |
+| `FinMgmtAreaFiscalYear` |  | |  | `fma_fisyear` |  |  |
+| `GLAccount` |  | |  | `saknr` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `StatisticalKeyFigure` |  | |  | `stagr` |  |  |
+| `ActivityType` |  | |  | `lstar` |  |  |
+| `WBSElement` |  | |  | `cast( posid as fis_wbs_no_conv preserving type )` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `BusinessTransactionType` |  | |  | `cbttype` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `Fund` |  | |  | `fincode` |  |  |
+| `GrantID` |  | |  | `grant_nbr` |  |  |
+| `BudgetPeriod` |  | |  | `budget_pd` |  |  |
+| `SponsoredClass` |  | |  | `sponsored_class` |  |  |
+| `FundCenterText` |  | |  | `fictr` |  |  |
+| `SponsoredProgram` |  | |  | `sponsored_prog` |  |  |
+| `FundedProgram` |  | |  | `measure` |  |  |
+| `BusinessPartnerNumber` |  | |  | `partner` |  |  |
+| `BankAccountInternalID` |  | |  | `acc_id` |  |  |
+| `LiquidityItem` |  | |  | `lqpos` |  |  |
+| `AssetBusinessArea` |  | |  | `gsber` |  |  |
+| `FinancialTransactionType` |  | |  | `trtyp` |  |  |
+| `CustomerNum` |  | |  | `kunnr` |  |  |
+| `AssetSupplier` |  | |  | `lifnr` |  |  |
+| `Project` |  | |  | `cast( pspid as fis_project_no_conv preserving type )` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `CustomerGroup` |  | |  | `kdgrp` |  |  |
+| `CountryOrRegion` |  | |  | `land1` |  |  |
+| `FinancialStatementItemTemplate` |  | |  | `item` |  |  |
+| `ConsolidationUnit` |  | |  | `cast ( bunit as fincs_consolidationunit preserving type )` |  |  |
+| `SubItem` |  | |  | `sitem` |  |  |
+| `ConsolidationDocumentType` |  | |  | `docty` |  |  |
+| `Company` |  | |  | `rcomp` |  |  |
+| `MaterialGroup` |  | |  | `matkl` |  |  |
+| `ValidationRuleID` |  | |  | `rule_num` |  |  |
+| `SalesDistrict` |  | |  | `bzirk` |  |  |
+| `BillingDocumentType` |  | |  | `fkart` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `Industry` |  | |  | `brsch` |  |  |
+| `CommitmentItem` |  | |  | `fipex` |  |  |
+| `PostingLevel` |  | |  | `plevl` |  |  |
+| `FinancialServicesProductGroup` |  | |  | `fs_product_group` |  |  |
+| `PricingIsRelevant` |  | |  | `pricingrelevant` |  |  |
+| `SignIsInverted` |  | |  | `cast( sign as rr_rsign preserving type )` |  |  |
+| `GeneralLedgerAgingIncrement` |  | |  | `regrouping` |  |  |
+| `FinancialStatementLeafItem` |  | |  | `fs_leafitem` |  |  |
+| `FinancialStatementNodeType` |  | |  | `fs_nodetype` |  |  |
+| `FinStmntNodeFormattedID` |  | |  | `hrynodeext` |  |  |
+| `BankAccountGroupingIsSet` |  | |  | `banksplit` |  |  |
+| `HierarchyNodeIsTimeDependent` |  | |  | `node_timedep` |  |  |
+| `HierarchyNodeType` |  | |  | `node_typelem` |  |  |
+| `CnsldtnEliminationCharcValue` |  | |  | `eliminationmember` |  |  |
+| `UniversalHierNodeID` |  | |  | `uhnodeid` |  |  |
+| `UniversalHierNodeParentID` |  | |  | `par_uhnodeid` |  |  |
+| `ConsolidationGroup` |  | |  | `congr` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

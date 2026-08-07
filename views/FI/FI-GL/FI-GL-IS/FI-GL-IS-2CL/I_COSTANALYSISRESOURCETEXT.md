@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostAnalysisResource` | ✓ | |  | `cast( cskv.resrc as fis_co_resource preserving type )` |
-| `ControllingArea` | ✓ | |  | `cast( cskv.kokrs as fis_kokrs preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `ValidityEndDate` | ✓ | |  | `cast( cskv.datbi as fis_datbi preserving type )` |
-| `ValidityStartDate` |  | |  | `cast( _md.datab as fis_datab preserving type )` |
-| `CostAnalysisResourceName` |  | |  | `cast( cskv.ktext as fis_co_resrc_name preserving type )` |
-| `CostAnalysisResourceDesc` |  | |  | `cast( cskv.ltext as fis_co_resrc_desc preserving type )` |
-| `_ControllingArea` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostAnalysisResource` | ✓ | |  | `cast( cskv.resrc as fis_co_resource preserving type )` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( cskv.kokrs as fis_kokrs preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast( cskv.datbi as fis_datbi preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast( _md.datab as fis_datab preserving type )` |  |  |
+| `CostAnalysisResourceName` |  | |  | `cast( cskv.ktext as fis_co_resrc_name preserving type )` |  |  |
+| `CostAnalysisResourceDesc` |  | |  | `cast( cskv.ltext as fis_co_resrc_desc preserving type )` |  |  |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

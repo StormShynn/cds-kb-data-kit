@@ -27,60 +27,60 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |
-| `Characteristic` |  | |  |  |
-| `CharcStatus` |  | |  |  |
-| `CharcDataType` |  | |  |  |
-| `CharcLength` |  | |  |  |
-| `CharcDecimals` |  | |  |  |
-| `CharcTemplate` |  | |  |  |
-| `ValueIsCaseSensitive` |  | |  |  |
-| `CharcConversionRoutine` |  | |  |  |
-| `CharcGroup` |  | |  |  |
-| `EntryIsRequired` |  | |  |  |
-| `MultipleValuesAreAllowed` |  | |  |  |
-| `CharcValueUnit` |  | |  |  |
-| `Currency` |  | |  |  |
-| `CharcExponentValue` |  | |  |  |
-| `ValueIntervalIsAllowed` |  | |  |  |
-| `AdditionalValueIsAllowed` |  | |  |  |
-| `NegativeValueIsAllowed` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `DocumentInfoRecordDocType` |  | |  |  |
-| `DocumentInfoRecordDocNumber` |  | |  |  |
-| `DocumentInfoRecordDocVersion` |  | |  |  |
-| `DocumentInfoRecordDocPart` |  | |  |  |
-| `CharcMaintAuthGrp` |  | |  |  |
-| `CharcIsReadOnly` |  | |  |  |
-| `CharcIsHidden` |  | |  |  |
-| `CharcIsRestrictable` |  | |  |  |
-| `CharcReferenceTable` |  | |  |  |
-| `CharcReferenceTableField` |  | |  |  |
-| `CharcCheckTable` |  | |  |  |
-| `CharcCheckFunctionModule` |  | |  |  |
-| `CharcExponentFormat` |  | |  |  |
-| `CharcEntryIsNotFormatCtrld` |  | |  |  |
-| `CharcTemplateIsDisplayed` |  | |  |  |
-| `CharcSelectedSet` |  | |  |  |
-| `Plant` |  | |  |  |
-| `CharcCatalogType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `CharcLastChangedDateTime` |  | |  |  |
-| `_CharacteristicDesc` | | ✓ | | |
-| `_CharacteristicValue` | | ✓ | | |
-| `_CharacteristicGroup` | | ✓ | | |
-| `_CharacteristicStatus` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `Characteristic` |  | |  |  |  |  |
+| `CharcStatus` |  | |  |  |  |  |
+| `CharcDataType` |  | |  |  |  |  |
+| `CharcLength` |  | |  |  |  |  |
+| `CharcDecimals` |  | |  |  |  |  |
+| `CharcTemplate` |  | |  |  |  |  |
+| `ValueIsCaseSensitive` |  | |  |  |  |  |
+| `CharcConversionRoutine` |  | |  |  |  |  |
+| `CharcGroup` |  | |  |  |  |  |
+| `EntryIsRequired` |  | |  |  |  |  |
+| `MultipleValuesAreAllowed` |  | |  |  |  |  |
+| `CharcValueUnit` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `CharcExponentValue` |  | |  |  |  |  |
+| `ValueIntervalIsAllowed` |  | |  |  |  |  |
+| `AdditionalValueIsAllowed` |  | |  |  |  |  |
+| `NegativeValueIsAllowed` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `DocumentInfoRecordDocType` |  | |  |  |  |  |
+| `DocumentInfoRecordDocNumber` |  | |  |  |  |  |
+| `DocumentInfoRecordDocVersion` |  | |  |  |  |  |
+| `DocumentInfoRecordDocPart` |  | |  |  |  |  |
+| `CharcMaintAuthGrp` |  | |  |  |  |  |
+| `CharcIsReadOnly` |  | |  |  |  |  |
+| `CharcIsHidden` |  | |  |  |  |  |
+| `CharcIsRestrictable` |  | |  |  |  |  |
+| `CharcReferenceTable` |  | |  |  |  |  |
+| `CharcReferenceTableField` |  | |  |  |  |  |
+| `CharcCheckTable` |  | |  |  |  |  |
+| `CharcCheckFunctionModule` |  | |  |  |  |  |
+| `CharcExponentFormat` |  | |  |  |  |  |
+| `CharcEntryIsNotFormatCtrld` |  | |  |  |  |  |
+| `CharcTemplateIsDisplayed` |  | |  |  |  |  |
+| `CharcSelectedSet` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `CharcCatalogType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `CharcLastChangedDateTime` |  | |  |  |  |  |
+| `_CharacteristicDesc` | | ✓ | | | | |
+| `_CharacteristicValue` | | ✓ | | | | |
+| `_CharacteristicGroup` | | ✓ | | | | |
+| `_CharacteristicStatus` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
 
 ## Associations
 

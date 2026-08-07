@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `StorageLocation` | ✓ | |  |  |
-| `InventoryStockType` | ✓ | |  |  |
-| `InventorySpecialStockType` | ✓ | |  |  |
-| `MaterialBaseUnit` | ✓ | |  |  |
-| `Currency` | ✓ | |  |  |
-| `ValuationAreaType` | ✓ | |  |  |
-| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |
-| `StockValueInCCCrcy` |  | |  |  |
-| `_Currency` | | ✓ | | |
-| `_ProductPlantBasic` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_InventoryStockType` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_MaterialBaseUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `StorageLocation` | ✓ | |  |  |  |  |
+| `InventoryStockType` | ✓ | |  |  |  |  |
+| `InventorySpecialStockType` | ✓ | |  |  |  |  |
+| `MaterialBaseUnit` | ✓ | |  |  |  |  |
+| `Currency` | ✓ | |  |  |  |  |
+| `ValuationAreaType` | ✓ | |  |  |  |  |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |  |  |
+| `StockValueInCCCrcy` |  | |  |  |  |  |
+| `_Currency` | | ✓ | | | | |
+| `_ProductPlantBasic` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_InventoryStockType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_MaterialBaseUnit` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerIndustryCode` | ✓ | |  | `braco` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerIndustryCode` | ✓ | |  | `braco` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

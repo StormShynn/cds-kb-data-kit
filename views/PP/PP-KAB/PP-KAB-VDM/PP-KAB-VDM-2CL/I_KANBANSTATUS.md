@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanStatus` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as pkbst preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanStatus` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as pkbst preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

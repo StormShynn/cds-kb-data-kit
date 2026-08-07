@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGCategory` | ✓ | |  |  |
-| `GHGScope` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_GHGScope` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGCategory` | ✓ | |  |  |  |  |
+| `GHGScope` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_GHGScope` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,51 +28,51 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventBasedDistrPostingRuleUUID` | ✓ | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderItem` |  | |  |  |
-| `EventBasedDistributionRuleSqnc` |  | |  |  |
-| `CompanyCode` |  | | `_ManufacturingOrder` | `CompanyCode` |
-| `ProductionPlant` |  | | `_ManufacturingOrder` | `ProductionPlant` |
-| `EventBasedDistributionType` |  | |  |  |
-| `EvtBsdDistrSourceStructure` |  | |  |  |
-| `EvtBsdDistrSourceAssignment` |  | |  |  |
-| `EventBasedDistrRateInPercent` |  | |  |  |
-| `EvtBsdDistrEquivalenceFactor` |  | |  |  |
-| `EventBasedDistributionDfltRule` |  | |  |  |
-| `OrderCategory` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  | `} ] SalesOrderItem` |
-| `WBSElementInternalID` |  | |  | `} ] WBSElementInternalID` |
-| `WBSElementExternalID` |  | |  | `} ] _WBSElementBasicData.WBSElementExternalID` |
-| `PartnerControllingObjectType` |  | |  |  |
-| `EvtBsdPostingRuleReceiver` |  | |  |  |
-| `EvtBsdPostingRuleReceiverText` |  | |  |  |
-| `EvtBsdDistrTracingFctrDetnMeth` |  | |  |  |
-| `MfgOrdNonMatlRcvrAcctDetnMeth` |  | |  |  |
-| `EnteredByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `RecentlyChangedDateTime` |  | |  |  |
-| `MfgOrderHasMultipleItems` |  | | `_ManufacturingOrder` | `MfgOrderHasMultipleItems` |
-| `ManufacturingOrderText` |  | | `_ManufacturingOrder` | `ManufacturingOrderText` |
-| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |
-| `WBSDescription` |  | | `_WBSElementBasicData` | `WBSDescription` |
-| `MfgOrdNonMatlRcvrDetnMethName` |  | | `_MfgOrdNonMatRcvrAcctDetnMeth` | `MfgOrdNonMatlRcvrDetnMethName` |
-| `_ManufacturingOrder` | | ✓ | | |
-| `_ManufacturingOrderItem` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
-| `_OrderCategoryText` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_EnteredByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_MfgOrdNonMatRcvrAcctDetnMeth` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventBasedDistrPostingRuleUUID` | ✓ | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderItem` |  | |  |  |  |  |
+| `EventBasedDistributionRuleSqnc` |  | |  |  |  |  |
+| `CompanyCode` |  | | `_ManufacturingOrder` | `CompanyCode` |  |  |
+| `ProductionPlant` |  | | `_ManufacturingOrder` | `ProductionPlant` |  |  |
+| `EventBasedDistributionType` |  | |  |  |  |  |
+| `EvtBsdDistrSourceStructure` |  | |  |  |  |  |
+| `EvtBsdDistrSourceAssignment` |  | |  |  |  |  |
+| `EventBasedDistrRateInPercent` |  | |  |  |  |  |
+| `EvtBsdDistrEquivalenceFactor` |  | |  |  |  |  |
+| `EventBasedDistributionDfltRule` |  | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | | `_WBSElementBasicData` | `WBSElementExternalID` |  |  |
+| `PartnerControllingObjectType` |  | |  |  |  |  |
+| `EvtBsdPostingRuleReceiver` |  | |  |  |  |  |
+| `EvtBsdPostingRuleReceiverText` |  | |  |  |  |  |
+| `EvtBsdDistrTracingFctrDetnMeth` |  | |  |  |  |  |
+| `MfgOrdNonMatlRcvrAcctDetnMeth` |  | |  |  |  |  |
+| `EnteredByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `RecentlyChangedDateTime` |  | |  |  |  |  |
+| `MfgOrderHasMultipleItems` |  | | `_ManufacturingOrder` | `MfgOrderHasMultipleItems` |  |  |
+| `ManufacturingOrderText` |  | | `_ManufacturingOrder` | `ManufacturingOrderText` |  |  |
+| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |  |  |
+| `WBSDescription` |  | | `_WBSElementBasicData` | `WBSDescription` |  |  |
+| `MfgOrdNonMatlRcvrDetnMethName` |  | | `_MfgOrdNonMatRcvrAcctDetnMeth` | `MfgOrdNonMatlRcvrDetnMethName` |  |  |
+| `_ManufacturingOrder` | | ✓ | | | | |
+| `_ManufacturingOrderItem` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_OrderCategoryText` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_EnteredByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_MfgOrdNonMatRcvrAcctDetnMeth` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
-| `GHGScope` | ✓ | |  | `cast( _Source.GHGScope as fincs_ghgscope preserving type )` |
-| `GHGScopeName` |  | |  | `cast( _Source.GHGScopeName as fincs_ghgscopename preserving type )` |
-| `_Language` | | ✓ | | |
-| `_GHGScope` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |  |  |
+| `GHGScope` | ✓ | |  | `cast( _Source.GHGScope as fincs_ghgscope preserving type )` |  |  |
+| `GHGScopeName` |  | |  | `cast( _Source.GHGScopeName as fincs_ghgscopename preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_GHGScope` | | ✓ | | | | |
 
 ## Associations
 

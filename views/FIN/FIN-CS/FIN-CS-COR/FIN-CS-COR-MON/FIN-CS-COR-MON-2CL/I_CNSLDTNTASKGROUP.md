@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationTaskGroup` | ✓ | |  | `cast( acgr as fincs_taskgroup preserving type )` |
-| `_Text` | | ✓ | | |
-| `_CnsldtnTaskAssignment` | | ✓ | | |
-| `_CnsldtnTaskPreceding` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationTaskGroup` | ✓ | |  | `cast( acgr as fincs_taskgroup preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CnsldtnTaskAssignment` | | ✓ | | | | |
+| `_CnsldtnTaskPreceding` | | ✓ | | | | |
 
 ## Associations
 

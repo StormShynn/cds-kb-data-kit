@@ -36,14 +36,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `supplement_id` | ✓ | |  |  |
-| `id` |  | |  |  |
-| `price_lugg` |  | |  | `case when suppl.supplement_category = 'LU' then suppl.price end` |
-| `price_meal` |  | |  | `case when suppl.supplement_category = 'ML' then suppl.price end` |
-| `price_bev` |  | |  | `case when suppl.supplement_category = 'BV' then suppl.price end` |
-| `price` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `supplement_id` | ✓ | |  |  |  |  |
+| `id` |  | |  |  |  |  |
+| `price_lugg` |  | |  | `case when suppl.supplement_category = 'LU' then suppl.price end` |  |  |
+| `price_meal` |  | |  | `case when suppl.supplement_category = 'ML' then suppl.price end` |  |  |
+| `price_bev` |  | |  | `case when suppl.supplement_category = 'BV' then suppl.price end` |  |  |
+| `price` |  | |  |  |  |  |
 
 ## Source Code
 

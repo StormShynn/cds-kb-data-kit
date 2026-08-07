@@ -33,14 +33,14 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CarrierId` | ✓ | |  | `carrier_id` |
-| `ConnectionId` | ✓ | |  | `connection_id` |
-| `FlightDate` | ✓ | |  | `flight_date` |
-| `Name` |  | |  | `name` |
-| `AirportFromId` |  | |  | `airport_from_id` |
-| `AirportToId` |  | |  | `airport_to_id` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CarrierId` | ✓ | |  | `carrier_id` |  |  |
+| `ConnectionId` | ✓ | |  | `connection_id` |  |  |
+| `FlightDate` | ✓ | |  | `flight_date` |  |  |
+| `Name` |  | |  | `name` |  |  |
+| `AirportFromId` |  | |  | `airport_from_id` |  |  |
+| `AirportToId` |  | |  | `airport_to_id` |  |  |
 
 ## Source Code
 

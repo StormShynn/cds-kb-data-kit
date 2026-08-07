@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostCtrActivityTypeCategory` | ✓ | |  | `cast( domvalue_l as latyp )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostCtrActivityTypeCategory` | ✓ | |  | `cast( domvalue_l as latyp )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

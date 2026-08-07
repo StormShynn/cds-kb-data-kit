@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `VarConfigurationProfileName` | ✓ | |  |  |
-| `ObjectDependencyName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ObjDpnProcessingSequenceValue` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ObjDpnAssignmentNumber` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_Profile` | | ✓ | | |
-| `_HistoricalProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `VarConfigurationProfileName` | ✓ | |  |  |  |  |
+| `ObjectDependencyName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ObjDpnProcessingSequenceValue` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ObjDpnAssignmentNumber` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Profile` | | ✓ | | | | |
+| `_HistoricalProfile` | | ✓ | | | | |
 
 ## Source Code
 

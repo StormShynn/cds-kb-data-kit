@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `EarmarkedFundsDecisionReason` | ✓ | |  | `fmreason` |
-| `EmrkdFundsDecisionReasonText` |  | |  | `cast ( fmreasntxt as fmis_efd_decisionreasontext preserving type )` |
-| `_Language` | | ✓ | | |
-| `_EarmarkedFundsDcsnReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `EarmarkedFundsDecisionReason` | ✓ | |  | `fmreason` |  |  |
+| `EmrkdFundsDecisionReasonText` |  | |  | `cast ( fmreasntxt as fmis_efd_decisionreasontext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_EarmarkedFundsDcsnReason` | | ✓ | | | | |
 
 ## Associations
 

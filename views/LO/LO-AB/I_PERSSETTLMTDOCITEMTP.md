@@ -29,67 +29,67 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PersonnelSettlementDocument` | ✓ | |  |  |
-| `PersSettlmtDocItem` |  | |  | `, useAsTemplate: true }] } key PersSettlmtDocItem` |
-| `PersSettlmtDocCurrency` |  | |  | `, useAsTemplate: true }] } PersSettlmtDocCurrency` |
-| `PricingDocument` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `SettlmtQuantity` |  | |  |  |
-| `SettlmtQuantityUnit` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `NetPriceQuantityUnit` |  | |  |  |
-| `SettlmtToBaseQuantityNmrtr` |  | |  |  |
-| `SettlmtToBaseQuantityDnmntr` |  | |  |  |
-| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |
-| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ItemNetAmount` |  | |  |  |
-| `Subtotal1Amount` |  | |  |  |
-| `Subtotal2Amount` |  | |  |  |
-| `Subtotal3Amount` |  | |  |  |
-| `Subtotal4Amount` |  | |  |  |
-| `Subtotal5Amount` |  | |  |  |
-| `Subtotal6Amount` |  | |  |  |
-| `RebateBasisAmount` |  | |  |  |
-| `PersSettlmtDocItmStstclPrpty` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `PersSettlmtDocItmActyReason` |  | |  |  |
-| `PersSettlmtDocItemText` |  | |  |  |
-| `BusinessArea` |  | |  | `, useAsTemplate: true }] } BusinessArea` |
-| `ControllingArea` |  | |  | `, useAsTemplate: true }] } ControllingArea` |
-| `CostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `PersSettlmtDocOrder` |  | |  |  |
-| `PrcDetnIsIncmplt` |  | |  |  |
-| `PersSettlmtDocItemCat` |  | |  |  |
-| `PersSettlmtDocItemStatus` |  | |  |  |
-| `PersSettlmtDocItemRvsd` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SettlementFiscalYear` |  | |  |  |
-| `CompanyCode` |  | |  | `, useAsTemplate: true }] } CompanyCode` |
-| `GLAccount` |  | |  |  |
-| `SalesSpcfcProductGroup1` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup1` |
-| `SalesSpcfcProductGroup2` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup2` |
-| `SalesSpcfcProductGroup3` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup3` |
-| `SalesSpcfcProductGroup4` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup4` |
-| `SalesSpcfcProductGroup5` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup5` |
-| `BusTransDocReferenceID` |  | |  |  |
-| `BusTransDocReferenceItemID` |  | |  |  |
-| `_PersSettlmtDoc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonnelSettlementDocument` | ✓ | |  |  |  |  |
+| `PersSettlmtDocItem` | ✓ | |  |  |  |  |
+| `PersSettlmtDocCurrency` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `SettlmtQuantity` |  | |  |  |  |  |
+| `SettlmtQuantityUnit` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |  |  |
+| `SettlmtToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `SettlmtToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |  |  |
+| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ItemNetAmount` |  | |  |  |  |  |
+| `Subtotal1Amount` |  | |  |  |  |  |
+| `Subtotal2Amount` |  | |  |  |  |  |
+| `Subtotal3Amount` |  | |  |  |  |  |
+| `Subtotal4Amount` |  | |  |  |  |  |
+| `Subtotal5Amount` |  | |  |  |  |  |
+| `Subtotal6Amount` |  | |  |  |  |  |
+| `RebateBasisAmount` |  | |  |  |  |  |
+| `PersSettlmtDocItmStstclPrpty` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `PersSettlmtDocItmActyReason` |  | |  |  |  |  |
+| `PersSettlmtDocItemText` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `PersSettlmtDocOrder` |  | |  |  |  |  |
+| `PrcDetnIsIncmplt` |  | |  |  |  |  |
+| `PersSettlmtDocItemCat` |  | |  |  |  |  |
+| `PersSettlmtDocItemStatus` |  | |  |  |  |  |
+| `PersSettlmtDocItemRvsd` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SettlementFiscalYear` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup1` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup2` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup3` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup4` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup5` |  | |  |  |  |  |
+| `BusTransDocReferenceID` |  | |  |  |  |  |
+| `BusTransDocReferenceItemID` |  | |  |  |  |  |
+| `_PersSettlmtDoc` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InternalDocumentStatus` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LglCntntMDocStatusName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalDocumentStatus` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LglCntntMDocStatusName` |  | |  |  |  |  |
 
 ## Source Code
 

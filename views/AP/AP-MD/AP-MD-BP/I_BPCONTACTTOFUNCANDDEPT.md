@@ -28,38 +28,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RelationshipNumber` | ✓ | |  | `relnr` |
-| `BusinessPartnerCompany` | ✓ | |  | `partner1` |
-| `BusinessPartnerPerson` | ✓ | |  | `partner2` |
-| `ValidityEndDate` | ✓ | |  | `date_to` |
-| `ValidityStartDate` |  | | `_BPContact` | `ValidityStartDate` |
-| `ContactPersonFunction` |  | |  | `pafkt` |
-| `BPContactPersonFunction` |  | |  | `pafkt` |
-| `ContactPersonFunctionName` |  | |  | `fnctn` |
-| `ContactPersonDepartment` |  | |  | `abtnr` |
-| `ContactPersonDepartmentName` |  | |  | `dprtmnt` |
-| `ContactPersonAuthorityType` |  | |  | `paauth` |
-| `ContactPersonVIPType` |  | |  | `pavip` |
-| `ContactPersonRemarkText` |  | |  | `parem` |
-| `PhoneNumber` |  | |  | `tel_number` |
-| `PhoneNumberExtension` |  | |  | `tel_extens` |
-| `FaxNumber` |  | |  | `fax_number` |
-| `FaxNumberExtension` |  | |  | `fax_extens` |
-| `EmailAddress` |  | |  | `smtp_address` |
-| `RelationshipCategory` |  | |  | `reltyp` |
-| `_BusinessPartnerCompany` | | ✓ | | |
-| `_BusinessPartnerPerson` | | ✓ | | |
-| `_ContactPersonDepartment` | | ✓ | | |
-| `_ContactPersonFunction` | | ✓ | | |
-| `_CntctPersnFuncValueHelp` | | ✓ | | |
-| `_ContactPersonFunctionText` | | ✓ | | |
-| `_CntctPersnDeptValueHelp` | | ✓ | | |
-| `_ContactPersonDepartmentText` | | ✓ | | |
-| `_BPContactPersonAuthorityText` | | ✓ | | |
-| `_BPCntctPersnVIPIndicatorText` | | ✓ | | |
-| `_BPContact` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RelationshipNumber` | ✓ | |  | `relnr` |  |  |
+| `BusinessPartnerCompany` | ✓ | |  | `partner1` |  |  |
+| `BusinessPartnerPerson` | ✓ | |  | `partner2` |  |  |
+| `ValidityEndDate` | ✓ | |  | `date_to` |  |  |
+| `ValidityStartDate` |  | | `_BPContact` | `ValidityStartDate` |  |  |
+| `ContactPersonFunction` |  | |  | `pafkt` |  |  |
+| `BPContactPersonFunction` |  | |  | `pafkt` |  |  |
+| `ContactPersonFunctionName` |  | |  | `fnctn` |  |  |
+| `ContactPersonDepartment` |  | |  | `abtnr` |  |  |
+| `ContactPersonDepartmentName` |  | |  | `dprtmnt` |  |  |
+| `ContactPersonAuthorityType` |  | |  | `paauth` |  |  |
+| `ContactPersonVIPType` |  | |  | `pavip` |  |  |
+| `ContactPersonRemarkText` |  | |  | `parem` |  |  |
+| `PhoneNumber` |  | |  | `tel_number` |  |  |
+| `PhoneNumberExtension` |  | |  | `tel_extens` |  |  |
+| `FaxNumber` |  | |  | `fax_number` |  |  |
+| `FaxNumberExtension` |  | |  | `fax_extens` |  |  |
+| `EmailAddress` |  | |  | `smtp_address` |  |  |
+| `RelationshipCategory` |  | |  | `reltyp` |  |  |
+| `_BusinessPartnerCompany` | | ✓ | | | | |
+| `_BusinessPartnerPerson` | | ✓ | | | | |
+| `_ContactPersonDepartment` | | ✓ | | | | |
+| `_ContactPersonFunction` | | ✓ | | | | |
+| `_CntctPersnFuncValueHelp` | | ✓ | | | | |
+| `_ContactPersonFunctionText` | | ✓ | | | | |
+| `_CntctPersnDeptValueHelp` | | ✓ | | | | |
+| `_ContactPersonDepartmentText` | | ✓ | | | | |
+| `_BPContactPersonAuthorityText` | | ✓ | | | | |
+| `_BPCntctPersnVIPIndicatorText` | | ✓ | | | | |
+| `_BPContact` | | ✓ | | | | |
 
 ## Associations
 

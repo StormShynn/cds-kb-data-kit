@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADocumentNumber` | ✓ | |  |  |
-| `CARepetitionItemNumber` | ✓ | |  |  |
-| `CABPItemNumber` | ✓ | |  |  |
-| `CASubItemNumber` | ✓ | |  |  |
-| `CAPromiseToPay` | ✓ | |  |  |
-| `CANetDueDate` | ✓ | |  |  |
-| `CAOverdueItemOrigin` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `CAAmountInTransactionCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `CAAmountInLocalCurrency` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_CADocument_2` | | ✓ | | |
-| `_CADocumentBPItem_2` | | ✓ | | |
-| `_CAOverdueItemOrigin` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ContractAccount` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CADocumentBPItem` | | ✓ | | |
-| `_CADocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  |  |  |  |
+| `CARepetitionItemNumber` | ✓ | |  |  |  |  |
+| `CABPItemNumber` | ✓ | |  |  |  |  |
+| `CASubItemNumber` | ✓ | |  |  |  |  |
+| `CAPromiseToPay` | ✓ | |  |  |  |  |
+| `CANetDueDate` | ✓ | |  |  |  |  |
+| `CAOverdueItemOrigin` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `CAAmountInTransactionCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `CAAmountInLocalCurrency` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CADocument_2` | | ✓ | | | | |
+| `_CADocumentBPItem_2` | | ✓ | | | | |
+| `_CAOverdueItemOrigin` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ContractAccount` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CADocumentBPItem` | | ✓ | | | | |
+| `_CADocument` | | ✓ | | | | |
 
 ## Associations
 

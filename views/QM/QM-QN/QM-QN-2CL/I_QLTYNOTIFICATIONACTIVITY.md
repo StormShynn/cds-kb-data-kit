@@ -27,33 +27,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | |  | `Notification` |
-| `NotificationActivity` | ✓ | |  |  |
-| `NotificationItem` |  | |  |  |
-| `NotificationActivitySortNumber` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `MasterLanguage` |  | |  |  |
-| `NotifActivityCatalog` |  | |  |  |
-| `NotifActivityCodeGroup` |  | |  |  |
-| `NotifActivityCode` |  | |  |  |
-| `NotifActivityText` |  | |  |  |
-| `NotifActivityStartDate` |  | |  |  |
-| `NotifActivityStartTime` |  | |  |  |
-| `NotifActivityEndDate` |  | |  |  |
-| `NotifActivityEndTime` |  | |  |  |
-| `NotifProcessingPhase` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `_Notification` | | ✓ | | |
-| `_QltyNotifActivityLongText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |  |  |
+| `NotificationActivity` | ✓ | |  |  |  |  |
+| `NotificationItem` |  | |  |  |  |  |
+| `NotificationActivitySortNumber` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `MasterLanguage` |  | |  |  |  |  |
+| `NotifActivityCatalog` |  | |  |  |  |  |
+| `NotifActivityCodeGroup` |  | |  |  |  |  |
+| `NotifActivityCode` |  | |  |  |  |  |
+| `NotifActivityText` |  | |  |  |  |  |
+| `NotifActivityStartDate` |  | |  |  |  |  |
+| `NotifActivityStartTime` |  | |  |  |  |  |
+| `NotifActivityEndDate` |  | |  |  |  |  |
+| `NotifActivityEndTime` |  | |  |  |  |  |
+| `NotifProcessingPhase` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `_Notification` | | ✓ | | | | |
+| `_QltyNotifActivityLongText` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionSchedulingProfile` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `OrderCategory` |  | |  |  |
-| `_Plant` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionSchedulingProfile` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

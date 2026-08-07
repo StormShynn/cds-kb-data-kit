@@ -27,28 +27,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITDocRefUUID` | ✓ | |  | `db_key` |
-| `JITHeaderUUID` |  | |  | `root_key` |
-| `JITCallComponentUUID` |  | |  | `parent_key` |
-| `InternalJITCallNumber` |  | |  | `int_call_num` |
-| `CompGrpNumber` |  | |  | `comp_grp_num` |
-| `JITCallItemNumber` |  | |  | `call_item_num` |
-| `BusinessTransactionDocType` |  | |  | `btd_type_code` |
-| `BusinessTransactionDocument` |  | |  | `btd_id` |
-| `BusinessTransactionDocItem` |  | |  | `btd_item_id` |
-| `BusinessTransacDocItmTypeCode` |  | |  | `btd_item_type_code` |
-| `BusinessTransactionDocStatus` |  | |  | `btd_status` |
-| `LogicalSystemID` |  | |  | `logsys` |
-| `LastChangeDateTime` |  | |  | `lchg_date_time` |
-| `BusinessTransactionDocUUID` |  | |  | `businesstransactiondocuuid` |
-| `_DeliveryDocumentItem` | | ✓ | | |
-| `_JITHandlingUnitHeader` | | ✓ | | |
-| `_JITInboundCall` | | ✓ | | |
-| `_JITBusTransDocType` | | ✓ | | |
-| `_JITBusTransDocItemType` | | ✓ | | |
-| `_JITInbCallComponent` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITDocRefUUID` | ✓ | |  | `db_key` |  |  |
+| `JITHeaderUUID` |  | |  | `root_key` |  |  |
+| `JITCallComponentUUID` |  | |  | `parent_key` |  |  |
+| `InternalJITCallNumber` |  | |  | `int_call_num` |  |  |
+| `CompGrpNumber` |  | |  | `comp_grp_num` |  |  |
+| `JITCallItemNumber` |  | |  | `call_item_num` |  |  |
+| `BusinessTransactionDocType` |  | |  | `btd_type_code` |  |  |
+| `BusinessTransactionDocument` |  | |  | `btd_id` |  |  |
+| `BusinessTransactionDocItem` |  | |  | `btd_item_id` |  |  |
+| `BusinessTransacDocItmTypeCode` |  | |  | `btd_item_type_code` |  |  |
+| `BusinessTransactionDocStatus` |  | |  | `btd_status` |  |  |
+| `LogicalSystemID` |  | |  | `logsys` |  |  |
+| `LastChangeDateTime` |  | |  | `lchg_date_time` |  |  |
+| `BusinessTransactionDocUUID` |  | |  | `businesstransactiondocuuid` |  |  |
+| `_DeliveryDocumentItem` | | ✓ | | | | |
+| `_JITHandlingUnitHeader` | | ✓ | | | | |
+| `_JITInboundCall` | | ✓ | | | | |
+| `_JITBusTransDocType` | | ✓ | | | | |
+| `_JITBusTransDocItemType` | | ✓ | | | | |
+| `_JITInbCallComponent` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,225 +29,225 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DebitMemoRequest` | ✓ | |  | `cast(SalesDocument as debit_memo_request preserving type)` |
-| `DebitMemoRequestItem` | ✓ | |  | `cast(SalesDocumentItem as debit_memo_request_item preserving type)` |
-| `DebitMemoRequestItemCategory` |  | |  | `SalesDocumentItemCategory` |
-| `DebitMemoRequestItemType` |  | |  | `SalesDocumentItemType` |
-| `IsReturnsItem` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `Division` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `Batch` |  | |  |  |
-| `ProductHierarchyNode` |  | |  |  |
-| `ProductCatalog` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `ProductTaxClassification1` |  | |  |  |
-| `ProductTaxClassification2` |  | |  |  |
-| `ProductTaxClassification3` |  | |  |  |
-| `ProductTaxClassification4` |  | |  |  |
-| `ProductTaxClassification5` |  | |  |  |
-| `ProductTaxClassification6` |  | |  |  |
-| `ProductTaxClassification7` |  | |  |  |
-| `ProductTaxClassification8` |  | |  |  |
-| `ProductTaxClassification9` |  | |  |  |
-| `MatlAccountAssignmentGroup` |  | |  |  |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `Plant` |  | |  |  |
-| `DebitMemoRequestItemText` |  | |  | `SalesDocumentItemText` |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `PurchaseOrderByShipToParty` |  | |  |  |
-| `CorrespncExternalReference` |  | |  |  |
-| `CorrespncExtRefByShipToParty` |  | |  |  |
-| `UnderlyingPurchaseOrderItem` |  | |  |  |
-| `UndrlgPurOrdItmByShipToParty` |  | |  |  |
-| `CustomerPurchaseOrderType` |  | |  |  |
-| `CustPurOrdTypeByShipToParty` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetQuantityUnit` |  | |  |  |
-| `TargetToBaseQuantityDnmntr` |  | |  |  |
-| `TargetToBaseQuantityNmrtr` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `RequestedQuantityInBaseUnit` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `SalesDeal` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `NetPriceQuantityUnit` |  | |  |  |
-| `StatisticalValueControl` |  | |  |  |
-| `TaxAmount` |  | |  |  |
-| `CostAmount` |  | |  |  |
-| `Subtotal1Amount` |  | |  |  |
-| `Subtotal2Amount` |  | |  |  |
-| `Subtotal3Amount` |  | |  |  |
-| `Subtotal4Amount` |  | |  |  |
-| `Subtotal5Amount` |  | |  |  |
-| `Subtotal6Amount` |  | |  |  |
-| `DebitMemoRequestCondition` |  | |  | `SalesDocumentCondition` |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `ItemIsBillingRelevant` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `ReferenceBillingPlan` |  | |  |  |
-| `ReferenceBillingPlanItem` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `ControllingObject` |  | |  |  |
-| `ProfitabilitySegment` |  | |  |  |
-| `ProfitabilitySegment_2` |  | |  |  |
-| `OriginSDDocument` |  | |  |  |
-| `OriginSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `OrderRelatedBillingStatus` |  | |  |  |
-| `BillingBlockStatus` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  |  |
-| `ItemBillingIncompletionStatus` |  | |  |  |
-| `PricingIncompletionStatus` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `TotalSDDocReferenceStatus` |  | |  |  |
-| `DebitMemoRequestType` |  | |  | `SalesDocumentType` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `DebitMemoRequestDate` |  | |  | `SalesDocumentDate` |
-| `SDDocumentReason` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `SalesEmployee` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `SalesEmployeeWorkAgreement` |  | |  |  |
-| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |
-| `_BusinessAreaText` | | ✓ | | |
-| `_MaterialText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_OrigMaterialText` | | ✓ | | |
-| `_DebitMemoRequest` | | ✓ | | |
-| `_DebitMemoRequestType` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_PricingElement` | | ✓ | | |
-| `_HigherLevelItem` | | ✓ | | |
-| `_StatisticalValueControl` | | ✓ | | |
-| `_ItemCategory` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_OriginallyRequestedMaterial` | | ✓ | | |
-| `_MaterialPlant` | | ✓ | | |
-| `_ProductHierarchyNode` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_MaterialPricingGroup` | | ✓ | | |
-| `_AdditionalMaterialGroup1` | | ✓ | | |
-| `_AdditionalMaterialGroup2` | | ✓ | | |
-| `_AdditionalMaterialGroup3` | | ✓ | | |
-| `_AdditionalMaterialGroup4` | | ✓ | | |
-| `_AdditionalMaterialGroup5` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_TargetQuantityUnit` | | ✓ | | |
-| `_RequestedQuantityUnit` | | ✓ | | |
-| `_ItemWeightUnit` | | ✓ | | |
-| `_ItemVolumeUnit` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_SalesDeal` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_CustomerPurchaseOrderType` | | ✓ | | |
-| `_CustPurOrdTypeByShipToParty` | | ✓ | | |
-| `_SalesDocumentRjcnReason` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_NetPriceQuantityUnit` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_ItemIsBillingRelevant` | | ✓ | | |
-| `_ItemBillingBlockReason` | | ✓ | | |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_CustomerAccountAssgmtGroup` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ReferenceSDDocument` | | ✓ | | |
-| `_ReferenceSDDocumentItem` | | ✓ | | |
-| `_ReferenceSDDocumentCategory` | | ✓ | | |
-| `_SDProcessStatus` | | ✓ | | |
-| `_OrderRelatedBillingStatus` | | ✓ | | |
-| `_BillingBlockStatus` | | ✓ | | |
-| `_ItemGeneralIncompletionStatus` | | ✓ | | |
-| `_ItemBillingIncompletionStatus` | | ✓ | | |
-| `_PricingIncompletionStatus` | | ✓ | | |
-| `_SDDocumentRejectionStatus` | | ✓ | | |
-| `_TotalSDDocReferenceStatus` | | ✓ | | |
-| `_MatlAccountAssignmentGroup` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_SDDocumentReason` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_SalesEmployee` | | ✓ | | |
-| `_ResponsibleEmployee` | | ✓ | | |
-| `_WBSElementBasicData_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  | `cast(SalesDocument as debit_memo_request preserving type)` |  |  |
+| `DebitMemoRequestItem` | ✓ | |  | `cast(SalesDocumentItem as debit_memo_request_item preserving type)` |  |  |
+| `DebitMemoRequestItemCategory` |  | |  | `SalesDocumentItemCategory` |  |  |
+| `DebitMemoRequestItemType` |  | |  | `SalesDocumentItemType` |  |  |
+| `IsReturnsItem` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ProductHierarchyNode` |  | |  |  |  |  |
+| `ProductCatalog` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `ProductTaxClassification1` |  | |  |  |  |  |
+| `ProductTaxClassification2` |  | |  |  |  |  |
+| `ProductTaxClassification3` |  | |  |  |  |  |
+| `ProductTaxClassification4` |  | |  |  |  |  |
+| `ProductTaxClassification5` |  | |  |  |  |  |
+| `ProductTaxClassification6` |  | |  |  |  |  |
+| `ProductTaxClassification7` |  | |  |  |  |  |
+| `ProductTaxClassification8` |  | |  |  |  |  |
+| `ProductTaxClassification9` |  | |  |  |  |  |
+| `MatlAccountAssignmentGroup` |  | |  |  |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `DebitMemoRequestItemText` |  | |  | `SalesDocumentItemText` |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `PurchaseOrderByShipToParty` |  | |  |  |  |  |
+| `CorrespncExternalReference` |  | |  |  |  |  |
+| `CorrespncExtRefByShipToParty` |  | |  |  |  |  |
+| `UnderlyingPurchaseOrderItem` |  | |  |  |  |  |
+| `UndrlgPurOrdItmByShipToParty` |  | |  |  |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |  |  |
+| `CustPurOrdTypeByShipToParty` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetQuantityUnit` |  | |  |  |  |  |
+| `TargetToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `TargetToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `RequestedQuantityInBaseUnit` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `SalesDeal` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |  |  |
+| `StatisticalValueControl` |  | |  |  |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `CostAmount` |  | |  |  |  |  |
+| `Subtotal1Amount` |  | |  |  |  |  |
+| `Subtotal2Amount` |  | |  |  |  |  |
+| `Subtotal3Amount` |  | |  |  |  |  |
+| `Subtotal4Amount` |  | |  |  |  |  |
+| `Subtotal5Amount` |  | |  |  |  |  |
+| `Subtotal6Amount` |  | |  |  |  |  |
+| `DebitMemoRequestCondition` |  | |  | `SalesDocumentCondition` |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `ItemIsBillingRelevant` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `ReferenceBillingPlan` |  | |  |  |  |  |
+| `ReferenceBillingPlanItem` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `ControllingObject` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  |  |  |  |
+| `ProfitabilitySegment_2` |  | |  |  |  |  |
+| `OriginSDDocument` |  | |  |  |  |  |
+| `OriginSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |  |  |
+| `BillingBlockStatus` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |  |  |
+| `ItemBillingIncompletionStatus` |  | |  |  |  |  |
+| `PricingIncompletionStatus` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |  |  |
+| `DebitMemoRequestType` |  | |  | `SalesDocumentType` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `DebitMemoRequestDate` |  | |  | `SalesDocumentDate` |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `SalesEmployee` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `SalesEmployeeWorkAgreement` |  | |  |  |  |  |
+| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |  |  |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_MaterialText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_OrigMaterialText` | | ✓ | | | | |
+| `_DebitMemoRequest` | | ✓ | | | | |
+| `_DebitMemoRequestType` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_PricingElement` | | ✓ | | | | |
+| `_HigherLevelItem` | | ✓ | | | | |
+| `_StatisticalValueControl` | | ✓ | | | | |
+| `_ItemCategory` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_OriginallyRequestedMaterial` | | ✓ | | | | |
+| `_MaterialPlant` | | ✓ | | | | |
+| `_ProductHierarchyNode` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_MaterialPricingGroup` | | ✓ | | | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_TargetQuantityUnit` | | ✓ | | | | |
+| `_RequestedQuantityUnit` | | ✓ | | | | |
+| `_ItemWeightUnit` | | ✓ | | | | |
+| `_ItemVolumeUnit` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_SalesDeal` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_CustomerPurchaseOrderType` | | ✓ | | | | |
+| `_CustPurOrdTypeByShipToParty` | | ✓ | | | | |
+| `_SalesDocumentRjcnReason` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_NetPriceQuantityUnit` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_ItemIsBillingRelevant` | | ✓ | | | | |
+| `_ItemBillingBlockReason` | | ✓ | | | | |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ReferenceSDDocument` | | ✓ | | | | |
+| `_ReferenceSDDocumentItem` | | ✓ | | | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | | | |
+| `_SDProcessStatus` | | ✓ | | | | |
+| `_OrderRelatedBillingStatus` | | ✓ | | | | |
+| `_BillingBlockStatus` | | ✓ | | | | |
+| `_ItemGeneralIncompletionStatus` | | ✓ | | | | |
+| `_ItemBillingIncompletionStatus` | | ✓ | | | | |
+| `_PricingIncompletionStatus` | | ✓ | | | | |
+| `_SDDocumentRejectionStatus` | | ✓ | | | | |
+| `_TotalSDDocReferenceStatus` | | ✓ | | | | |
+| `_MatlAccountAssignmentGroup` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_SDDocumentReason` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_SalesEmployee` | | ✓ | | | | |
+| `_ResponsibleEmployee` | | ✓ | | | | |
+| `_WBSElementBasicData_2` | | ✓ | | | | |
 
 ## Associations
 

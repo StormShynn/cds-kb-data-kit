@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  |  |
-| `PaymentMethod` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `PaymentMethodDescription` |  | |  |  |
-| `_Country` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  |  |  |  |
+| `PaymentMethod` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `PaymentMethodDescription` |  | |  |  |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

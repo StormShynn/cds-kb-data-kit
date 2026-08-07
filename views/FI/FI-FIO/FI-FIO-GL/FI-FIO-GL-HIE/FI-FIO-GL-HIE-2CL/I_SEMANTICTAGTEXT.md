@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `SemanticTag` | ✓ | |  | `fins_sem_tag` |
-| `SemanticTagName` |  | |  | `fins_sem_tag_name` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SemanticTag` | ✓ | |  | `fins_sem_tag` |  |  |
+| `SemanticTagName` |  | |  | `fins_sem_tag_name` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AirportId` | ✓ | |  | `airport_id` |
-| `Name` |  | |  | `name` |
-| `City` |  | |  | `city` |
-| `Country` |  | |  | `country` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AirportId` | ✓ | |  | `airport_id` |  |  |
+| `Name` |  | |  | `name` |  |  |
+| `City` |  | |  | `city` |  |  |
+| `Country` |  | |  | `country` |  |  |
 
 ## Source Code
 

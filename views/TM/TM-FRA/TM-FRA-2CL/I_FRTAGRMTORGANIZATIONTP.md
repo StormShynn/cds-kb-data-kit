@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspAgrmtOrganizationUUID` | ✓ | |  |  |
-| `TransportationAgreementUUID` |  | |  |  |
-| `TranspPurgOrgExtID` |  | |  |  |
-| `I_FreightAgreementTP` |  | |  | `FreightAgreementOrganization._FreightAgreement : redirected to parent I_FreightAgreementTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspAgrmtOrganizationUUID` | ✓ | |  |  |  |  |
+| `TransportationAgreementUUID` |  | |  |  |  |  |
+| `TranspPurgOrgExtID` |  | |  |  |  |  |
+| `I_FreightAgreementTP` |  | |  | `FreightAgreementOrganization._FreightAgreement : redirected to parent I_FreightAgreementTP` |  |  |
 
 ## Source Code
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectProfileCode` | ✓ | |  | `profidproj` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectProfileCode` | ✓ | |  | `profidproj` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

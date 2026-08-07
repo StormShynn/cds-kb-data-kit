@@ -30,131 +30,131 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  | `aufnr` |
-| `MaintPriorityType` |  | |  | `artpr` |
-| `MaintPriority` |  | |  | `priok` |
-| `MaintenanceProcessingPhase` |  | |  | `iphas` |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  | `iloan` |
-| `MaintenanceNotification` |  | |  | `qmnum` |
-| `Equipment` |  | |  | `equnr` |
-| `Assembly` |  | |  | `bautl` |
-| `SerialNumber` |  | |  | `serialnr` |
-| `MaintenancePlanningPlant` |  | |  | `iwerk` |
-| `MaintenancePlannerGroup` |  | |  | `ingpr` |
-| `MaintenanceRevision` |  | |  | `revnr` |
-| `MaintenancePlan` |  | |  | `warpl` |
-| `MaintenanceItem` |  | |  | `wapos` |
-| `MaintenanceActivityType` |  | |  | `cast( afih.ilart as eam_maint_activity_type preserving type )` |
-| `WorkCenterInternalID` |  | |  | `gewrk` |
-| `WorkCenterTypeCode` |  | |  | `pm_objty` |
-| `MaintOrderReferenceDate` |  | |  | `addat` |
-| `MaintOrderReferenceTime` |  | |  | `aduhr` |
-| `MainWorkCompletedDateTime` |  | |  | `mainworkcompleteddatetime` |
-| `MaintenanceOrderPlanningCode` |  | |  | `plknz` |
-| `OperationSystemCondition` |  | |  | `anlzu` |
-| `ReferenceElement` |  | |  | `adpsp` |
-| `MaintenanceItemObjectList` |  | |  | `obknr` |
-| `MaintenanceOrderObjectList` |  | |  | `cast(afih.obknr as objknr preserving type )` |
-| `PersonnelNumber` |  | |  | `cast(afih.aning as pernr_d )` |
-| `MaintOrdProcmtIntegScenario` |  | |  | `maintordprocmtintegscenario` |
-| `Material` |  | |  | `sermat` |
-| `MaintOrderRoutingNumber` |  | |  | `aufpl` |
-| `BusinessArea` |  | |  | `gsber` |
-| `FunctionalArea` |  | |  | `func_area` |
-| `MaintenanceOrderType` |  | |  | `auart` |
-| `MaintenanceOrderCategory` |  | |  | `autyp` |
-| `MaintenanceOrderDesc` |  | |  | `ktext` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ResponsibleCostCenter` |  | |  | `cast(aufk.kostv as pph_kostl preserving type)` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `ControllingObjectClass` |  | |  | `cast(aufk.scope as pph_scope preserving type)` |
-| `TechnicalCompletionDate` |  | |  | `idat2` |
-| `BasicSchedulingType` |  | |  | `terkz` |
-| `OrdIsNotSchedldAutomatically` |  | |  | `nauterm` |
-| `MaintOrdBasicStartDate` |  | |  | `gstrp` |
-| `MaintOrdBasicStartTime` |  | |  | `gsuzp` |
-| `MaintOrdBasicEndDate` |  | |  | `gltrp` |
-| `MaintOrdBasicEndTime` |  | |  | `gluzp` |
-| `ScheduledBasicStartDate` |  | |  | `gstrs` |
-| `ScheduledBasicStartTime` |  | |  | `gsuzs` |
-| `ScheduledBasicEndDate` |  | |  | `gltrs` |
-| `ScheduledBasicEndTime` |  | |  | `gluzs` |
-| `MaintOrdPersonResponsible` |  | |  | `maintordpersonresponsible` |
-| `MaintenanceOrderInternalID` |  | |  | `objnr` |
-| `TaskListGroup` |  | |  | `cast(afko.plnnr as billofoperations preserving type)` |
-| `TaskListType` |  | |  | `cast(afko.plnty as billofoperationstype preserving type)` |
-| `TaskListGroupCounter` |  | |  | `cast(afko.plnal as billofoperationsvariant preserving type)` |
-| `MaintenancePlant` |  | |  | `sowrk` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `erfzeit` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `OrderHasLongText` |  | |  | `cast( case when aufk.ltext = '' then '' else 'X' end as pph_aufltxt preserving type)` |
-| `LastChangeByUser` |  | |  | `aenam` |
-| `LastChangeDateTime` |  | |  | `changeddatetime` |
-| `AdditionalDeviceData` |  | |  | `deviceid` |
-| `WBSElementInternalID` |  | |  | `cast( aufk.pspel as vdm_wbs_element_internal preserving type )` |
-| `ProjectInternalID` |  | |  | `cast( afko.pronr as ps_s4_proj_pspnr preserving type)` |
-| `OrderProcessingGroup` |  | |  | `abkrs` |
-| `SuperiorProjectNetwork` |  | |  | `aufnt` |
-| `MainWorkCenter` |  | |  | `vaplz` |
-| `MainWorkCenterPlant` |  | |  | `wawrk` |
-| `CostingSheet` |  | |  | `kalsm` |
-| `Currency` |  | |  | `waers` |
-| `LatestAcceptableCompletionDate` |  | |  | `cast(afih.lacd_date as vdm_lacd_date preserving type )` |
-| `MaintOrdProcessPhaseCode` |  | |  | `maintordovrlprocphase` |
-| `MaintOrdProcessSubPhaseCode` |  | |  | `maintordovrlprocsubphase` |
-| `MaintOrderProcessingContext` |  | |  | `maintorderprocessingcontext` |
-| `ServiceDocumentType` |  | |  | `service_doc_type` |
-| `ServiceDocument` |  | |  | `service_doc_id` |
-| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |
-| `ConditionUsage` |  | |  | `kvewe` |
-| `ConditionApplication` |  | |  | `kappl` |
-| `MaintenanceOrderOverheadCode` |  | |  | `zschl` |
-| `PlannedCostsCostingVariant` |  | |  | `klvarp` |
-| `ActualCostsCostingVariant` |  | |  | `klvari` |
-| `MaintenanceCall` |  | |  | `abnum` |
-| `LeadingOrder` |  | |  | `laufn` |
-| `PrevLtstAccptblCompletionDate` |  | |  | `old_lacd_date` |
-| `_MaintenancePriorityType` | | ✓ | | |
-| `_MaintenancePriority` | | ✓ | | |
-| `_MaintenanceOrderPhase` | | ✓ | | |
-| `_LocationAccountAssignment` | | ✓ | | |
-| `_MaintenanceNotification` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_Assembly` | | ✓ | | |
-| `_MaintenancePlanPlant` | | ✓ | | |
-| `_EAMProcessPhase` | | ✓ | | |
-| `_EAMProcessSubPhase` | | ✓ | | |
-| `_MaintenancePlannerGroup` | | ✓ | | |
-| `_MaintenanceRevision` | | ✓ | | |
-| `_MaintenancePlan` | | ✓ | | |
-| `_MaintenanceItem` | | ✓ | | |
-| `_MainWorkCenter` | | ✓ | | |
-| `_WorkCenterType` | | ✓ | | |
-| `_MaintenanceActivityType` | | ✓ | | |
-| `_OperationSystemCondition` | | ✓ | | |
-| `_MaintOrdPlngDegreeCode` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_MaintenanceOrderCategory` | | ✓ | | |
-| `_MaintenanceOrderType` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ControllingObjectClass` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ResponsibleCostCenter` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_ResponsibleCostCenterText` | | ✓ | | |
-| `_BasicSchedulingType` | | ✓ | | |
-| `_LocationPlant` | | ✓ | | |
-| `_OrderHasLongText` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_Project` | | ✓ | | |
-| `_OrderProcessingGroup` | | ✓ | | |
-| `_MaintOrderTypeControlParam` | | ✓ | | |
-| `_Order` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  | `aufnr` |  |  |
+| `MaintPriorityType` |  | |  | `artpr` |  |  |
+| `MaintPriority` |  | |  | `priok` |  |  |
+| `MaintenanceProcessingPhase` |  | |  | `iphas` |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  | `iloan` |  |  |
+| `MaintenanceNotification` |  | |  | `qmnum` |  |  |
+| `Equipment` |  | |  | `equnr` |  |  |
+| `Assembly` |  | |  | `bautl` |  |  |
+| `SerialNumber` |  | |  | `serialnr` |  |  |
+| `MaintenancePlanningPlant` |  | |  | `iwerk` |  |  |
+| `MaintenancePlannerGroup` |  | |  | `ingpr` |  |  |
+| `MaintenanceRevision` |  | |  | `revnr` |  |  |
+| `MaintenancePlan` |  | |  | `warpl` |  |  |
+| `MaintenanceItem` |  | |  | `wapos` |  |  |
+| `MaintenanceActivityType` |  | |  | `cast( afih.ilart as eam_maint_activity_type preserving type )` |  |  |
+| `WorkCenterInternalID` |  | |  | `gewrk` |  |  |
+| `WorkCenterTypeCode` |  | |  | `pm_objty` |  |  |
+| `MaintOrderReferenceDate` |  | |  | `addat` |  |  |
+| `MaintOrderReferenceTime` |  | |  | `aduhr` |  |  |
+| `MainWorkCompletedDateTime` |  | |  | `mainworkcompleteddatetime` |  |  |
+| `MaintenanceOrderPlanningCode` |  | |  | `plknz` |  |  |
+| `OperationSystemCondition` |  | |  | `anlzu` |  |  |
+| `ReferenceElement` |  | |  | `adpsp` |  |  |
+| `MaintenanceItemObjectList` |  | |  | `obknr` |  |  |
+| `MaintenanceOrderObjectList` |  | |  | `cast(afih.obknr as objknr preserving type )` |  |  |
+| `PersonnelNumber` |  | |  | `cast(afih.aning as pernr_d )` |  |  |
+| `MaintOrdProcmtIntegScenario` |  | |  | `maintordprocmtintegscenario` |  |  |
+| `Material` |  | |  | `sermat` |  |  |
+| `MaintOrderRoutingNumber` |  | |  | `aufpl` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `FunctionalArea` |  | |  | `func_area` |  |  |
+| `MaintenanceOrderType` |  | |  | `auart` |  |  |
+| `MaintenanceOrderCategory` |  | |  | `autyp` |  |  |
+| `MaintenanceOrderDesc` |  | |  | `ktext` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ResponsibleCostCenter` |  | |  | `cast(aufk.kostv as pph_kostl preserving type)` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `ControllingObjectClass` |  | |  | `cast(aufk.scope as pph_scope preserving type)` |  |  |
+| `TechnicalCompletionDate` |  | |  | `idat2` |  |  |
+| `BasicSchedulingType` |  | |  | `terkz` |  |  |
+| `OrdIsNotSchedldAutomatically` |  | |  | `nauterm` |  |  |
+| `MaintOrdBasicStartDate` |  | |  | `gstrp` |  |  |
+| `MaintOrdBasicStartTime` |  | |  | `gsuzp` |  |  |
+| `MaintOrdBasicEndDate` |  | |  | `gltrp` |  |  |
+| `MaintOrdBasicEndTime` |  | |  | `gluzp` |  |  |
+| `ScheduledBasicStartDate` |  | |  | `gstrs` |  |  |
+| `ScheduledBasicStartTime` |  | |  | `gsuzs` |  |  |
+| `ScheduledBasicEndDate` |  | |  | `gltrs` |  |  |
+| `ScheduledBasicEndTime` |  | |  | `gluzs` |  |  |
+| `MaintOrdPersonResponsible` |  | |  | `maintordpersonresponsible` |  |  |
+| `MaintenanceOrderInternalID` |  | |  | `objnr` |  |  |
+| `TaskListGroup` |  | |  | `cast(afko.plnnr as billofoperations preserving type)` |  |  |
+| `TaskListType` |  | |  | `cast(afko.plnty as billofoperationstype preserving type)` |  |  |
+| `TaskListGroupCounter` |  | |  | `cast(afko.plnal as billofoperationsvariant preserving type)` |  |  |
+| `MaintenancePlant` |  | |  | `sowrk` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `erfzeit` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `OrderHasLongText` |  | |  | `cast( case when aufk.ltext = '' then '' else 'X' end as pph_aufltxt preserving type)` |  |  |
+| `LastChangeByUser` |  | |  | `aenam` |  |  |
+| `LastChangeDateTime` |  | |  | `changeddatetime` |  |  |
+| `AdditionalDeviceData` |  | |  | `deviceid` |  |  |
+| `WBSElementInternalID` |  | |  | `cast( aufk.pspel as vdm_wbs_element_internal preserving type )` |  |  |
+| `ProjectInternalID` |  | |  | `cast( afko.pronr as ps_s4_proj_pspnr preserving type)` |  |  |
+| `OrderProcessingGroup` |  | |  | `abkrs` |  |  |
+| `SuperiorProjectNetwork` |  | |  | `aufnt` |  |  |
+| `MainWorkCenter` |  | |  | `vaplz` |  |  |
+| `MainWorkCenterPlant` |  | |  | `wawrk` |  |  |
+| `CostingSheet` |  | |  | `kalsm` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `LatestAcceptableCompletionDate` |  | |  | `cast(afih.lacd_date as vdm_lacd_date preserving type )` |  |  |
+| `MaintOrdProcessPhaseCode` |  | |  | `maintordovrlprocphase` |  |  |
+| `MaintOrdProcessSubPhaseCode` |  | |  | `maintordovrlprocsubphase` |  |  |
+| `MaintOrderProcessingContext` |  | |  | `maintorderprocessingcontext` |  |  |
+| `ServiceDocumentType` |  | |  | `service_doc_type` |  |  |
+| `ServiceDocument` |  | |  | `service_doc_id` |  |  |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |  |  |
+| `ConditionUsage` |  | |  | `kvewe` |  |  |
+| `ConditionApplication` |  | |  | `kappl` |  |  |
+| `MaintenanceOrderOverheadCode` |  | |  | `zschl` |  |  |
+| `PlannedCostsCostingVariant` |  | |  | `klvarp` |  |  |
+| `ActualCostsCostingVariant` |  | |  | `klvari` |  |  |
+| `MaintenanceCall` |  | |  | `abnum` |  |  |
+| `LeadingOrder` |  | |  | `laufn` |  |  |
+| `PrevLtstAccptblCompletionDate` |  | |  | `old_lacd_date` |  |  |
+| `_MaintenancePriorityType` | | ✓ | | | | |
+| `_MaintenancePriority` | | ✓ | | | | |
+| `_MaintenanceOrderPhase` | | ✓ | | | | |
+| `_LocationAccountAssignment` | | ✓ | | | | |
+| `_MaintenanceNotification` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_Assembly` | | ✓ | | | | |
+| `_MaintenancePlanPlant` | | ✓ | | | | |
+| `_EAMProcessPhase` | | ✓ | | | | |
+| `_EAMProcessSubPhase` | | ✓ | | | | |
+| `_MaintenancePlannerGroup` | | ✓ | | | | |
+| `_MaintenanceRevision` | | ✓ | | | | |
+| `_MaintenancePlan` | | ✓ | | | | |
+| `_MaintenanceItem` | | ✓ | | | | |
+| `_MainWorkCenter` | | ✓ | | | | |
+| `_WorkCenterType` | | ✓ | | | | |
+| `_MaintenanceActivityType` | | ✓ | | | | |
+| `_OperationSystemCondition` | | ✓ | | | | |
+| `_MaintOrdPlngDegreeCode` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_MaintenanceOrderCategory` | | ✓ | | | | |
+| `_MaintenanceOrderType` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ControllingObjectClass` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ResponsibleCostCenter` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_ResponsibleCostCenterText` | | ✓ | | | | |
+| `_BasicSchedulingType` | | ✓ | | | | |
+| `_LocationPlant` | | ✓ | | | | |
+| `_OrderHasLongText` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_Project` | | ✓ | | | | |
+| `_OrderProcessingGroup` | | ✓ | | | | |
+| `_MaintOrderTypeControlParam` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
 
 ## Associations
 

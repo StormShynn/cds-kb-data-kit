@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCodeCurrency` |  | |  | `waers` |
-| `ControllingAreaCurrency` |  | |  | `waers` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCodeCurrency` |  | |  | `waers` |  |  |
+| `ControllingAreaCurrency` |  | |  | `waers` |  |  |
 
 ## Source Code
 

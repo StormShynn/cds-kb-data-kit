@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `SuplrInvcVerificatTolGroup` | ✓ | |  |  |
-| `APARToleranceGroupName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `SuplrInvcVerificatTolGroup` | ✓ | |  |  |  |  |
+| `APARToleranceGroupName` |  | |  |  |  |  |
 
 ## Source Code
 

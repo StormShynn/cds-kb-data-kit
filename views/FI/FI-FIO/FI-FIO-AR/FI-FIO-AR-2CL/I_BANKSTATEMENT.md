@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankStatementShortID` | ✓ | |  | `StatementShortID` |
-| `CompanyCode` |  | |  |  |
-| `HouseBank` |  | |  |  |
-| `HouseBankAccount` |  | |  | `cast ( HouseBankAccount as farp_hktid)` |
-| `BankStatement` |  | |  | `cast ( StatementNumber as farp_aznum )` |
-| `BankStatementDate` |  | |  | `cast ( StatementDate as farp_azdat )` |
-| `BankStatementStatus` |  | |  | `StatementStatus` |
-| `BankStatementPageNumber` |  | |  | `StatementPageNumber` |
-| `Currency` |  | |  |  |
-| `OpeningBalanceIsInterim` |  | |  | `cast ( OpeningBalanceIsInterim as farp_opening_bal_interim_ind )` |
-| `ClosingBalanceIsInterim` |  | |  | `cast ( ClosingBalanceIsInterim as farp_closing_bal_interim_ind )` |
-| `OpeningBalanceAmtInTransCrcy` |  | |  |  |
-| `ClosingBalanceAmtInTransCrcy` |  | |  |  |
-| `InterimOpenBalAmtInTransCrcy` |  | |  |  |
-| `InterimClsgBalAmtInTransCrcy` |  | |  |  |
-| `PaymentTransactionTypeGroup` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `BankStatementIsManuallyCreated` |  | |  | `cast ( IsManuallyCreated as farp_bsmanuallycreated )` |
-| `BankStatementFormat` |  | |  | `cast ( StatementInputFormat as farp_input_format )` |
-| `BankStatementImportDate` |  | |  | `cast ( BankStatementImportDate as farp_edate )` |
-| `BankStatementImportTime` |  | |  | `cast ( BankStatementImportTime as farp_etime )` |
-| `_Currency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankStatementShortID` | ✓ | |  | `StatementShortID` |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `HouseBank` |  | |  |  |  |  |
+| `HouseBankAccount` |  | |  | `cast ( HouseBankAccount as farp_hktid)` |  |  |
+| `BankStatement` |  | |  | `cast ( StatementNumber as farp_aznum )` |  |  |
+| `BankStatementDate` |  | |  | `cast ( StatementDate as farp_azdat )` |  |  |
+| `BankStatementStatus` |  | |  | `StatementStatus` |  |  |
+| `BankStatementPageNumber` |  | |  | `StatementPageNumber` |  |  |
+| `Currency` |  | |  |  |  |  |
+| `OpeningBalanceIsInterim` |  | |  | `cast ( OpeningBalanceIsInterim as farp_opening_bal_interim_ind )` |  |  |
+| `ClosingBalanceIsInterim` |  | |  | `cast ( ClosingBalanceIsInterim as farp_closing_bal_interim_ind )` |  |  |
+| `OpeningBalanceAmtInTransCrcy` |  | |  |  |  |  |
+| `ClosingBalanceAmtInTransCrcy` |  | |  |  |  |  |
+| `InterimOpenBalAmtInTransCrcy` |  | |  |  |  |  |
+| `InterimClsgBalAmtInTransCrcy` |  | |  |  |  |  |
+| `PaymentTransactionTypeGroup` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `BankStatementIsManuallyCreated` |  | |  | `cast ( IsManuallyCreated as farp_bsmanuallycreated )` |  |  |
+| `BankStatementFormat` |  | |  | `cast ( StatementInputFormat as farp_input_format )` |  |  |
+| `BankStatementImportDate` |  | |  | `cast ( BankStatementImportDate as farp_edate )` |  |  |
+| `BankStatementImportTime` |  | |  | `cast ( BankStatementImportTime as farp_etime )` |  |  |
+| `_Currency` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,102 +29,102 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |
-| `AddressPersonID` | ✓ | |  | `cast('' as ad_persnum )` |
-| `AddressRepresentationCode` | ✓ | |  |  |
-| `AddressObjectType` |  | |  | `cast('1' as ad_adrtype)` |
-| `CorrespondenceLanguage` |  | |  |  |
-| `PrfrdCommMediumType` |  | |  |  |
-| `AddresseeFullName` |  | |  | `cast(concat_with_space(AddresseeName1, AddresseeName2, 1) as ad_namtext )` |
-| `CityNumber` |  | |  |  |
-| `CityName` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `VillageName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `CompanyPostalCode` |  | |  |  |
-| `Street` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetAddrNonDeliverableReason` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `AddresseeName1` |  | |  |  |
-| `AddresseeName2` |  | |  |  |
-| `AddresseeName3` |  | |  |  |
-| `AddresseeName4` |  | |  |  |
-| `AddressSearchTerm1` |  | |  |  |
-| `AddressSearchTerm2` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TransportZone` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxAddrNonDeliverableReason` |  | |  |  |
-| `POBoxIsWithoutNumber` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `POBoxLobbyName` |  | |  |  |
-| `POBoxDeviatingCityName` |  | |  |  |
-| `POBoxDeviatingCityCode` |  | |  |  |
-| `POBoxDeviatingRegion` |  | |  |  |
-| `POBoxDeviatingCountry` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `DeliveryServiceTypeCode` |  | |  |  |
-| `DeliveryServiceNumber` |  | |  |  |
-| `AddressTimeZone` |  | |  |  |
-| `SecondaryRegion` |  | |  |  |
-| `SecondaryRegionName` |  | |  |  |
-| `TertiaryRegion` |  | |  |  |
-| `TertiaryRegionName` |  | |  |  |
-| `RegionalStructureCheckStatus` |  | |  |  |
-| `AddressGroup` |  | |  |  |
-| `DistrictNumber` |  | |  |  |
-| `Village` |  | |  |  |
-| `RegionalStructureGroup` |  | |  |  |
-| `AddressCreatedByUser` |  | |  |  |
-| `AddressCreatedOnDateTime` |  | |  |  |
-| `AddressChangedByUser` |  | |  |  |
-| `AddressChangedOnDateTime` |  | |  |  |
-| `_EmailAddress` | | ✓ | | |
-| `_CurrentDfltEmailAddress` | | ✓ | | |
-| `_PhoneNumber` | | ✓ | | |
-| `_CurrentDfltLandlinePhoneNmbr` | | ✓ | | |
-| `_CurrentDfltMobilePhoneNumber` | | ✓ | | |
-| `_FaxNumber` | | ✓ | | |
-| `_CurrentDfltFaxNumber` | | ✓ | | |
-| `_UniformResourceIdentifier` | | ✓ | | |
-| `_MainWebsiteURL` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_FormOfAddress` | | ✓ | | |
-| `_POBoxAddrNonDeliverableReason` | | ✓ | | |
-| `_StreetAddrNonDeliverableRsn` | | ✓ | | |
-| `_TransportationZone` | | ✓ | | |
-| `_POBoxDeviatingRegion` | | ✓ | | |
-| `_POBoxDeviatingCountry` | | ✓ | | |
-| `_PrfrdCommMediumType` | | ✓ | | |
-| `_DeliveryServiceTypeCode` | | ✓ | | |
-| `_CorrespondenceLanguage` | | ✓ | | |
-| `_AddressRepresentationCode` | | ✓ | | |
-| `_AddressObjectType` | | ✓ | | |
-| `_TimeZone` | | ✓ | | |
-| `_SecondaryRegion` | | ✓ | | |
-| `_TertiaryRegion` | | ✓ | | |
-| `_PostalCity` | | ✓ | | |
-| `_POBoxDeviatingCityCode` | | ✓ | | |
-| `_RegionalStructureCheckStatus` | | ✓ | | |
-| `_Street` | | ✓ | | |
-| `_AddressGroup` | | ✓ | | |
-| `_AddressPersonName` | | ✓ | | |
-| `_Addressremark` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |  |  |
+| `AddressPersonID` | ✓ | |  | `cast('' as ad_persnum )` |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  |  |  |
+| `AddressObjectType` |  | |  | `cast('1' as ad_adrtype)` |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `PrfrdCommMediumType` |  | |  |  |  |  |
+| `AddresseeFullName` |  | |  | `cast(concat_with_space(AddresseeName1, AddresseeName2, 1) as ad_namtext )` |  |  |
+| `CityNumber` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `VillageName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `CompanyPostalCode` |  | |  |  |  |  |
+| `Street` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetAddrNonDeliverableReason` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `AddresseeName1` |  | |  |  |  |  |
+| `AddresseeName2` |  | |  |  |  |  |
+| `AddresseeName3` |  | |  |  |  |  |
+| `AddresseeName4` |  | |  |  |  |  |
+| `AddressSearchTerm1` |  | |  |  |  |  |
+| `AddressSearchTerm2` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TransportZone` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxAddrNonDeliverableReason` |  | |  |  |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `POBoxLobbyName` |  | |  |  |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |  |  |
+| `POBoxDeviatingCityCode` |  | |  |  |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |  |  |
+| `DeliveryServiceNumber` |  | |  |  |  |  |
+| `AddressTimeZone` |  | |  |  |  |  |
+| `SecondaryRegion` |  | |  |  |  |  |
+| `SecondaryRegionName` |  | |  |  |  |  |
+| `TertiaryRegion` |  | |  |  |  |  |
+| `TertiaryRegionName` |  | |  |  |  |  |
+| `RegionalStructureCheckStatus` |  | |  |  |  |  |
+| `AddressGroup` |  | |  |  |  |  |
+| `DistrictNumber` |  | |  |  |  |  |
+| `Village` |  | |  |  |  |  |
+| `RegionalStructureGroup` |  | |  |  |  |  |
+| `AddressCreatedByUser` |  | |  |  |  |  |
+| `AddressCreatedOnDateTime` |  | |  |  |  |  |
+| `AddressChangedByUser` |  | |  |  |  |  |
+| `AddressChangedOnDateTime` |  | |  |  |  |  |
+| `_EmailAddress` | | ✓ | | | | |
+| `_CurrentDfltEmailAddress` | | ✓ | | | | |
+| `_PhoneNumber` | | ✓ | | | | |
+| `_CurrentDfltLandlinePhoneNmbr` | | ✓ | | | | |
+| `_CurrentDfltMobilePhoneNumber` | | ✓ | | | | |
+| `_FaxNumber` | | ✓ | | | | |
+| `_CurrentDfltFaxNumber` | | ✓ | | | | |
+| `_UniformResourceIdentifier` | | ✓ | | | | |
+| `_MainWebsiteURL` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_FormOfAddress` | | ✓ | | | | |
+| `_POBoxAddrNonDeliverableReason` | | ✓ | | | | |
+| `_StreetAddrNonDeliverableRsn` | | ✓ | | | | |
+| `_TransportationZone` | | ✓ | | | | |
+| `_POBoxDeviatingRegion` | | ✓ | | | | |
+| `_POBoxDeviatingCountry` | | ✓ | | | | |
+| `_PrfrdCommMediumType` | | ✓ | | | | |
+| `_DeliveryServiceTypeCode` | | ✓ | | | | |
+| `_CorrespondenceLanguage` | | ✓ | | | | |
+| `_AddressRepresentationCode` | | ✓ | | | | |
+| `_AddressObjectType` | | ✓ | | | | |
+| `_TimeZone` | | ✓ | | | | |
+| `_SecondaryRegion` | | ✓ | | | | |
+| `_TertiaryRegion` | | ✓ | | | | |
+| `_PostalCity` | | ✓ | | | | |
+| `_POBoxDeviatingCityCode` | | ✓ | | | | |
+| `_RegionalStructureCheckStatus` | | ✓ | | | | |
+| `_Street` | | ✓ | | | | |
+| `_AddressGroup` | | ✓ | | | | |
+| `_AddressPersonName` | | ✓ | | | | |
+| `_Addressremark` | | ✓ | | | | |
 
 ## Associations
 

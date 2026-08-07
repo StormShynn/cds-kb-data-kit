@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SystemStatus` | ✓ | |  | `istat` |
-| `Language` | ✓ | |  | `spras` |
-| `SystemStatusName` |  | |  | `txt30` |
-| `SystemStatusShortName` |  | |  | `txt04` |
-| `_SystemStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SystemStatus` | ✓ | |  | `istat` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SystemStatusName` |  | |  | `txt30` |  |  |
+| `SystemStatusShortName` |  | |  | `txt04` |  |  |
+| `_SystemStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

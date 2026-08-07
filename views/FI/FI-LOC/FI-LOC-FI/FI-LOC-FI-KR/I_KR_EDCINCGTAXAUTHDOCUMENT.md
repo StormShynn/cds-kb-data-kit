@@ -30,44 +30,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EDCTaxAuthRecordUUID` | ✓ | |  | `edoc_guid` |
-| `TaxInvoiceApprovalNmbr` |  | |  | `apprvl_no` |
-| `Currency` |  | |  | `cast('KRW' as waers)` |
-| `EDCTaxableAmount` |  | |  | `cast((TATaxItem.tax_base_amt / 100) as hwbas)` |
-| `EDCTaxAmount` |  | |  | `cast((TATaxItem.tax_amount / 100) as hwbas)` |
-| `TotalAmountInCoCodeCrcy` |  | |  | `cast(TATaxItem.amount / 100 as hwbas)` |
-| `KR_EDocTransferDate` |  | |  | `transfer_date` |
-| `AccountingDocument` |  | |  | `belnr` |
-| `InvoiceDate` |  | |  | `invoice_date` |
-| `KR_ElectronicDocumentIssueDate` |  | |  | `issue_date` |
-| `KR_EDocSuplrRegistrationNumber` |  | |  | `s_supplier_stcd2` |
-| `KR_EDocSupplierBusinessPlace` |  | |  | `s_business_place` |
-| `KR_EDocSupplierCompanyName` |  | |  | `s_company_name` |
-| `KR_EDocSuplrRepresentativeName` |  | |  | `s_repres` |
-| `KR_EDocSupplierAddress` |  | |  | `s_address` |
-| `KR_EDocBuyerRegistrationNumber` |  | |  | `b_supplier_stcd2` |
-| `KR_EDocBuyerBusinessPlace` |  | |  | `b_business_place` |
-| `KR_EDocBuyerCompanyName` |  | |  | `b_company_name` |
-| `KR_EDocBuyerRepresentativeName` |  | |  | `b_repres` |
-| `KR_EDocBuyerAddress` |  | |  | `b_address` |
-| `KR_EDocTxInvoiceClassification` |  | |  | `invc_clfn` |
-| `KR_EDocInvoiceType` |  | |  | `invoice_type` |
-| `KR_EDocIssuanceType` |  | |  | `issuance_type` |
-| `KR_ElectronicDocumentRemark` |  | |  | `remark` |
-| `KR_EDocReceiptBilling` |  | |  | `rcpt_billg` |
-| `KR_EDocBuyrRespPersnEmlAddr1` |  | |  | `buyer_email` |
-| `KR_EDocBuyrRespPersnEmlAddr2` |  | |  | `buyer_email1` |
-| `KR_EDocBuyrRespPersnEmlAddr3` |  | |  | `buyer_email2` |
-| `KR_ElectronicDocumentItemDate` |  | |  | `item_date` |
-| `KR_ElectronicDocumentItemName` |  | |  | `item_name` |
-| `KR_ElectronicDocumentItemUnit` |  | |  | `cast(TATaxItem.item_unit as edc_kr_item_unit)` |
-| `KR_EDocItemQuantity` |  | |  | `cast(TATaxItem.item_quantity as edc_kr_item_quantity)` |
-| `KR_EDocItmUntPriceInCoCodeCrcy` |  | |  | `cast(TATaxItem.item_unit_price as edoc_kr_item_unit_price)` |
-| `TaxBaseAmountInCoCodeCrcy` |  | |  | `cast((TATaxItem.item_base_amt / 100) as hwbas)` |
-| `TaxAmountInCoCodeCrcy` |  | |  | `cast((TATaxItem.item_tax_amount / 100) as hwbas)` |
-| `KR_EDocItemRemark` |  | |  | `item_remarks` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EDCTaxAuthRecordUUID` | ✓ | |  | `edoc_guid` |  |  |
+| `TaxInvoiceApprovalNmbr` |  | |  | `apprvl_no` |  |  |
+| `Currency` |  | |  | `cast('KRW' as waers)` |  |  |
+| `EDCTaxableAmount` |  | |  | `cast((TATaxItem.tax_base_amt / 100) as hwbas)` |  |  |
+| `EDCTaxAmount` |  | |  | `cast((TATaxItem.tax_amount / 100) as hwbas)` |  |  |
+| `TotalAmountInCoCodeCrcy` |  | |  | `cast(TATaxItem.amount / 100 as hwbas)` |  |  |
+| `KR_EDocTransferDate` |  | |  | `transfer_date` |  |  |
+| `AccountingDocument` |  | |  | `belnr` |  |  |
+| `InvoiceDate` |  | |  | `invoice_date` |  |  |
+| `KR_ElectronicDocumentIssueDate` |  | |  | `issue_date` |  |  |
+| `KR_EDocSuplrRegistrationNumber` |  | |  | `s_supplier_stcd2` |  |  |
+| `KR_EDocSupplierBusinessPlace` |  | |  | `s_business_place` |  |  |
+| `KR_EDocSupplierCompanyName` |  | |  | `s_company_name` |  |  |
+| `KR_EDocSuplrRepresentativeName` |  | |  | `s_repres` |  |  |
+| `KR_EDocSupplierAddress` |  | |  | `s_address` |  |  |
+| `KR_EDocBuyerRegistrationNumber` |  | |  | `b_supplier_stcd2` |  |  |
+| `KR_EDocBuyerBusinessPlace` |  | |  | `b_business_place` |  |  |
+| `KR_EDocBuyerCompanyName` |  | |  | `b_company_name` |  |  |
+| `KR_EDocBuyerRepresentativeName` |  | |  | `b_repres` |  |  |
+| `KR_EDocBuyerAddress` |  | |  | `b_address` |  |  |
+| `KR_EDocTxInvoiceClassification` |  | |  | `invc_clfn` |  |  |
+| `KR_EDocInvoiceType` |  | |  | `invoice_type` |  |  |
+| `KR_EDocIssuanceType` |  | |  | `issuance_type` |  |  |
+| `KR_ElectronicDocumentRemark` |  | |  | `remark` |  |  |
+| `KR_EDocReceiptBilling` |  | |  | `rcpt_billg` |  |  |
+| `KR_EDocBuyrRespPersnEmlAddr1` |  | |  | `buyer_email` |  |  |
+| `KR_EDocBuyrRespPersnEmlAddr2` |  | |  | `buyer_email1` |  |  |
+| `KR_EDocBuyrRespPersnEmlAddr3` |  | |  | `buyer_email2` |  |  |
+| `KR_ElectronicDocumentItemDate` |  | |  | `item_date` |  |  |
+| `KR_ElectronicDocumentItemName` |  | |  | `item_name` |  |  |
+| `KR_ElectronicDocumentItemUnit` |  | |  | `cast(TATaxItem.item_unit as edc_kr_item_unit)` |  |  |
+| `KR_EDocItemQuantity` |  | |  | `cast(TATaxItem.item_quantity as edc_kr_item_quantity)` |  |  |
+| `KR_EDocItmUntPriceInCoCodeCrcy` |  | |  | `cast(TATaxItem.item_unit_price as edoc_kr_item_unit_price)` |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `cast((TATaxItem.item_base_amt / 100) as hwbas)` |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  | `cast((TATaxItem.item_tax_amount / 100) as hwbas)` |  |  |
+| `KR_EDocItemRemark` |  | |  | `item_remarks` |  |  |
 
 ## Source Code
 

@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `ServiceContractItem` | ✓ | |  |  |
-| `CustMgmtPartnerFunction` | ✓ | |  |  |
-| `CustMgmtBusinessPartner` | ✓ | |  |  |
-| `CityName` |  | |  |  |
-| `Country` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `FaxAreaCodeSubscriberNumber` |  | |  |  |
-| `FaxExtensionNumber` |  | |  |  |
-| `FaxNumberCountry` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `MobileNumber` |  | |  |  |
-| `MobilePhoneCountry` |  | |  |  |
-| `OrganizationName1` |  | |  |  |
-| `OrganizationName2` |  | |  |  |
-| `OrganizationName3` |  | |  |  |
-| `OrganizationName4` |  | |  |  |
-| `PhoneExtensionNumber` |  | |  |  |
-| `PhoneNumber` |  | |  |  |
-| `PhoneNumberCountry` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `Region` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `_SrvcContrItemPartnerTP` | | ✓ | | |
-| `_ServiceContractTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `ServiceContractItem` | ✓ | |  |  |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |  |  |
+| `FaxExtensionNumber` |  | |  |  |  |  |
+| `FaxNumberCountry` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `MobileNumber` |  | |  |  |  |  |
+| `MobilePhoneCountry` |  | |  |  |  |  |
+| `OrganizationName1` |  | |  |  |  |  |
+| `OrganizationName2` |  | |  |  |  |  |
+| `OrganizationName3` |  | |  |  |  |  |
+| `OrganizationName4` |  | |  |  |  |  |
+| `PhoneExtensionNumber` |  | |  |  |  |  |
+| `PhoneNumber` |  | |  |  |  |  |
+| `PhoneNumberCountry` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `_SrvcContrItemPartnerTP` | | ✓ | | | | |
+| `_ServiceContractTP` | | ✓ | | | | |
 
 ## Source Code
 

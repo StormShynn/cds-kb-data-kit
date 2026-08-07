@@ -30,79 +30,79 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `PaymentAdviceAccountType` | ✓ | |  | `koart` |
-| `PaymentAdviceAccount` | ✓ | |  | `konto` |
-| `PaymentAdvice` | ✓ | |  | `cast(avsid as farp_pa_avsid preserving type)` |
-| `PaymentAdviceItem` | ✓ | |  | `avspo` |
-| `PaymentAdviceAltvAccount` |  | |  | `abwko` |
-| `AlternativeCompanyCode` |  | |  | `cast(abwbu as farp_abwbu_av preserving type)` |
-| `AccountingDocument` |  | |  | `belnr` |
-| `DocumentReferenceID` |  | |  | `cast(xblnr as far_pa_xblnr1 preserving type)` |
-| `LockboxInvoiceReference` |  | |  | `lbinvref` |
-| `BillingDocument` |  | |  | `vbeln` |
-| `BranchAccount` |  | |  | `cast(filkd as farp_filkd preserving type)` |
-| `AccountingDocumentCreationDate` |  | |  | `cast(cpudt as farp_cpudt preserving type)` |
-| `BusinessArea` |  | |  | `gsber` |
-| `AssignmentReference` |  | |  | `cast(zuonr as farp_dzuonr preserving type)` |
-| `PaytDifferenceReasonExtCode` |  | |  | `restg` |
-| `DocumentItemText` |  | |  | `cast(sgtxt as farp_sgtxt preserving type)` |
-| `TaxAmountInCoCodeCrcy` |  | |  | `cast(mwsts as farp_mwsts preserving type)` |
-| `TaxCode` |  | |  | `mwskz` |
-| `GrossAmountInPaymentCurrency` |  | |  | `wrbtr` |
-| `NetPaymentAmountInPaytCurrency` |  | |  | `nebtr` |
-| `CashDiscountAmountInPaytCrcy` |  | |  | `cast(wskto as far_pa_wskto_av preserving type )` |
-| `FiscalYear` |  | |  | `gjahr` |
-| `AccountingDocumentItem` |  | |  | `cast(buzei as farp_buzei preserving type)` |
-| `PaymentAdviceAltvAccountType` |  | |  | `cast(abwka as farp_abwka_av preserving type)` |
-| `CashDiscountPercent` |  | |  | `zbdxp` |
-| `CashDiscountDays` |  | |  | `zbdxt` |
-| `DifferenceAmountInCoCodeCrcy` |  | |  | `cast(difhw as farp_difhw preserving type)` |
-| `DifferenceAmount` |  | |  | `cast(diffw as farp_diffw preserving type)` |
-| `DiffAmtInAdditionalCurrency1` |  | |  | `cast(difh2 as farp_difh2 preserving type)` |
-| `DiffAmtInAdditionalCurrency2` |  | |  | `cast(difh3 as farp_difh3 preserving type)` |
-| `ItemIsActivated` |  | |  | `cast(xaktp as farp_xaktp preserving type)` |
-| `CashDiscountIsActivated` |  | |  | `cast(xakts as far_pa_xakts preserving type)` |
-| `IsPartialPayment` |  | |  | `cast(xppmt as farp_xppmt preserving type)` |
-| `PaytDiffRsdlBalIsCarriedFwd` |  | |  | `cast(xvort as farp_xvort preserving type)` |
-| `PaymentDifferenceReason` |  | |  | `rstgn` |
-| `Currency` |  | |  | `waers` |
-| `Reference1IDByBusinessPartner` |  | |  | `cast(xref1 as farp_xref1 preserving type)` |
-| `Reference2IDByBusinessPartner` |  | |  | `cast(xref2 as farp_xref2 preserving type)` |
-| `DeliveryDocument` |  | |  | `liefn` |
-| `InvoiceDate` |  | |  | `cast(redat as farp_pa_redat preserving type)` |
-| `PurchasingDocReferenceByCust` |  | |  | `bstnk` |
-| `IsPostedOnAccount` |  | |  | `xacon` |
-| `PaymentAdviceStatus` |  | |  | `cast(astat as farp_astat_avik preserving type)` |
-| `DeductionAmountInPaytCurrency` |  | |  | `cast(abbtr as far_pa_abbtr_av preserving type)` |
-| `PaymentReference` |  | |  | `cast(kidno as farp_kidno preserving type)` |
-| `PaymentAdviceSelectionField` |  | |  | `sfeld` |
-| `PaymentAdviceSelectionValue` |  | |  | `swert` |
-| `PaytAdvcExternalSelectionField` |  | |  | `cast(afeld as farp_afeld_av preserving type)` |
-| `CASelectionValue` |  | |  | `fica_selw1` |
-| `CASelectionCategory` |  | |  | `fica_selt1` |
-| `CADocumentNumber` |  | |  | `fica_opbel` |
-| `CAAssignedAmountInPaytCrcy` |  | |  | `fica_betrw_ac` |
-| `TaxCalculationProcedure` |  | |  | `cast(_CompanyCode._Country.TaxCalculationProcedure as farp_kalsm_d preserving type )` |
-| `AdditionalCurrency1` |  | | `_OperationalAcctgDocItem` | `AdditionalCurrency1` |
-| `AdditionalCurrency2` |  | | `_OperationalAcctgDocItem` | `AdditionalCurrency2` |
-| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |
-| `_CompanyCode` | | ✓ | | |
-| `_AlternativeCompanyCode` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_TaxCode` | | ✓ | | |
-| `_PaymentDifferenceReason` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_PaymentAdviceSubItem` | | ✓ | | |
-| `_TaxCalculationProcedure` | | ✓ | | |
-| `_OperationalAcctgDocItem` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_CustomerCompany` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompany` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `PaymentAdviceAccountType` | ✓ | |  | `koart` |  |  |
+| `PaymentAdviceAccount` | ✓ | |  | `konto` |  |  |
+| `PaymentAdvice` | ✓ | |  | `cast(avsid as farp_pa_avsid preserving type)` |  |  |
+| `PaymentAdviceItem` | ✓ | |  | `avspo` |  |  |
+| `PaymentAdviceAltvAccount` |  | |  | `abwko` |  |  |
+| `AlternativeCompanyCode` |  | |  | `cast(abwbu as farp_abwbu_av preserving type)` |  |  |
+| `AccountingDocument` |  | |  | `belnr` |  |  |
+| `DocumentReferenceID` |  | |  | `cast(xblnr as far_pa_xblnr1 preserving type)` |  |  |
+| `LockboxInvoiceReference` |  | |  | `lbinvref` |  |  |
+| `BillingDocument` |  | |  | `vbeln` |  |  |
+| `BranchAccount` |  | |  | `cast(filkd as farp_filkd preserving type)` |  |  |
+| `AccountingDocumentCreationDate` |  | |  | `cast(cpudt as farp_cpudt preserving type)` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `AssignmentReference` |  | |  | `cast(zuonr as farp_dzuonr preserving type)` |  |  |
+| `PaytDifferenceReasonExtCode` |  | |  | `restg` |  |  |
+| `DocumentItemText` |  | |  | `cast(sgtxt as farp_sgtxt preserving type)` |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  | `cast(mwsts as farp_mwsts preserving type)` |  |  |
+| `TaxCode` |  | |  | `mwskz` |  |  |
+| `GrossAmountInPaymentCurrency` |  | |  | `wrbtr` |  |  |
+| `NetPaymentAmountInPaytCurrency` |  | |  | `nebtr` |  |  |
+| `CashDiscountAmountInPaytCrcy` |  | |  | `cast(wskto as far_pa_wskto_av preserving type )` |  |  |
+| `FiscalYear` |  | |  | `gjahr` |  |  |
+| `AccountingDocumentItem` |  | |  | `cast(buzei as farp_buzei preserving type)` |  |  |
+| `PaymentAdviceAltvAccountType` |  | |  | `cast(abwka as farp_abwka_av preserving type)` |  |  |
+| `CashDiscountPercent` |  | |  | `zbdxp` |  |  |
+| `CashDiscountDays` |  | |  | `zbdxt` |  |  |
+| `DifferenceAmountInCoCodeCrcy` |  | |  | `cast(difhw as farp_difhw preserving type)` |  |  |
+| `DifferenceAmount` |  | |  | `cast(diffw as farp_diffw preserving type)` |  |  |
+| `DiffAmtInAdditionalCurrency1` |  | |  | `cast(difh2 as farp_difh2 preserving type)` |  |  |
+| `DiffAmtInAdditionalCurrency2` |  | |  | `cast(difh3 as farp_difh3 preserving type)` |  |  |
+| `ItemIsActivated` |  | |  | `cast(xaktp as farp_xaktp preserving type)` |  |  |
+| `CashDiscountIsActivated` |  | |  | `cast(xakts as far_pa_xakts preserving type)` |  |  |
+| `IsPartialPayment` |  | |  | `cast(xppmt as farp_xppmt preserving type)` |  |  |
+| `PaytDiffRsdlBalIsCarriedFwd` |  | |  | `cast(xvort as farp_xvort preserving type)` |  |  |
+| `PaymentDifferenceReason` |  | |  | `rstgn` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `Reference1IDByBusinessPartner` |  | |  | `cast(xref1 as farp_xref1 preserving type)` |  |  |
+| `Reference2IDByBusinessPartner` |  | |  | `cast(xref2 as farp_xref2 preserving type)` |  |  |
+| `DeliveryDocument` |  | |  | `liefn` |  |  |
+| `InvoiceDate` |  | |  | `cast(redat as farp_pa_redat preserving type)` |  |  |
+| `PurchasingDocReferenceByCust` |  | |  | `bstnk` |  |  |
+| `IsPostedOnAccount` |  | |  | `xacon` |  |  |
+| `PaymentAdviceStatus` |  | |  | `cast(astat as farp_astat_avik preserving type)` |  |  |
+| `DeductionAmountInPaytCurrency` |  | |  | `cast(abbtr as far_pa_abbtr_av preserving type)` |  |  |
+| `PaymentReference` |  | |  | `cast(kidno as farp_kidno preserving type)` |  |  |
+| `PaymentAdviceSelectionField` |  | |  | `sfeld` |  |  |
+| `PaymentAdviceSelectionValue` |  | |  | `swert` |  |  |
+| `PaytAdvcExternalSelectionField` |  | |  | `cast(afeld as farp_afeld_av preserving type)` |  |  |
+| `CASelectionValue` |  | |  | `fica_selw1` |  |  |
+| `CASelectionCategory` |  | |  | `fica_selt1` |  |  |
+| `CADocumentNumber` |  | |  | `fica_opbel` |  |  |
+| `CAAssignedAmountInPaytCrcy` |  | |  | `fica_betrw_ac` |  |  |
+| `TaxCalculationProcedure` |  | |  | `cast(_CompanyCode._Country.TaxCalculationProcedure as farp_kalsm_d preserving type )` |  |  |
+| `AdditionalCurrency1` |  | | `_OperationalAcctgDocItem` | `AdditionalCurrency1` |  |  |
+| `AdditionalCurrency2` |  | | `_OperationalAcctgDocItem` | `AdditionalCurrency2` |  |  |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_AlternativeCompanyCode` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_TaxCode` | | ✓ | | | | |
+| `_PaymentDifferenceReason` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_PaymentAdviceSubItem` | | ✓ | | | | |
+| `_TaxCalculationProcedure` | | ✓ | | | | |
+| `_OperationalAcctgDocItem` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerCompany` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompany` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

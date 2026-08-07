@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdInvoicingCarrierLevel` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/pymt_ind preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspOrdInvcgCarrLvlDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tor_inv_car_l_desc preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdInvcgCarrLvl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdInvoicingCarrierLevel` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/pymt_ind preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspOrdInvcgCarrLvlDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tor_inv_car_l_desc preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdInvcgCarrLvl` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `CnsldtnMaterialGroupHierarchy` | ✓ | |  | `cast( _HierarchyText.UniversalHierarchy as fincs_materialgrouphierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `CnsldtnMaterialGroupHierText` |  | |  | `cast( _HierarchyText.UniversalHierarchyText as fincs_materialgrouphiertext preserving type )` |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `CnsldtnMaterialGroupHierarchy` | ✓ | |  | `cast( _HierarchyText.UniversalHierarchy as fincs_materialgrouphierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `CnsldtnMaterialGroupHierText` |  | |  | `cast( _HierarchyText.UniversalHierarchyText as fincs_materialgrouphiertext preserving type )` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,48 +29,48 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | |  |  |
-| `AddressNumber` | ✓ | |  | `AddressID` |
-| `BusinessPartner` |  | |  |  |
-| `StartDate` |  | |  | `cast (tstmp_to_dats( EmployeeAddress.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |
-| `EndDate` |  | |  | `cast (tstmp_to_dats( EmployeeAddress.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |
-| `Country` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `Region` |  | |  |  |
-| `SecondaryRegion` |  | |  |  |
-| `SecondaryRegionName` |  | |  |  |
-| `TertiaryRegion` |  | |  |  |
-| `TertiaryRegionName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_BP` | `IsBusinessPurposeCompleted` |
-| `DataControllerSet` |  | | `_BP` | `DataControllerSet` |
-| `DataController1` |  | | `_BP` | `DataController1` |
-| `DataController2` |  | | `_BP` | `DataController2` |
-| `DataController3` |  | | `_BP` | `DataController3` |
-| `DataController4` |  | | `_BP` | `DataController4` |
-| `DataController5` |  | | `_BP` | `DataController5` |
-| `DataController6` |  | | `_BP` | `DataController6` |
-| `DataController7` |  | | `_BP` | `DataController7` |
-| `DataController8` |  | | `_BP` | `DataController8` |
-| `DataController9` |  | | `_BP` | `DataController9` |
-| `DataController10` |  | | `_BP` | `DataController10` |
-| `AuthorizationGroup` |  | | `_BP` | `AuthorizationGroup` |
-| `_BPProtectedAddress` | | ✓ | | |
-| `_WorkforcePerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |  |  |
+| `AddressNumber` | ✓ | |  | `AddressID` |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `StartDate` |  | |  | `cast (tstmp_to_dats( EmployeeAddress.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |  |  |
+| `EndDate` |  | |  | `cast (tstmp_to_dats( EmployeeAddress.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |  |  |
+| `Country` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `SecondaryRegion` |  | |  |  |  |  |
+| `SecondaryRegionName` |  | |  |  |  |  |
+| `TertiaryRegion` |  | |  |  |  |  |
+| `TertiaryRegionName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | | `_BP` | `IsBusinessPurposeCompleted` |  |  |
+| `DataControllerSet` |  | | `_BP` | `DataControllerSet` |  |  |
+| `DataController1` |  | | `_BP` | `DataController1` |  |  |
+| `DataController2` |  | | `_BP` | `DataController2` |  |  |
+| `DataController3` |  | | `_BP` | `DataController3` |  |  |
+| `DataController4` |  | | `_BP` | `DataController4` |  |  |
+| `DataController5` |  | | `_BP` | `DataController5` |  |  |
+| `DataController6` |  | | `_BP` | `DataController6` |  |  |
+| `DataController7` |  | | `_BP` | `DataController7` |  |  |
+| `DataController8` |  | | `_BP` | `DataController8` |  |  |
+| `DataController9` |  | | `_BP` | `DataController9` |  |  |
+| `DataController10` |  | | `_BP` | `DataController10` |  |  |
+| `AuthorizationGroup` |  | | `_BP` | `AuthorizationGroup` |  |  |
+| `_BPProtectedAddress` | | ✓ | | | | |
+| `_WorkforcePerson` | | ✓ | | | | |
 
 ## Associations
 

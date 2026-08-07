@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocumentType` |  | |  | `esart` |
-| `D_RFQCreateFromPurReqnItemP` |  | |  | `_Items : composition[0..*] of D_RFQCreateFromPurReqnItemP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocumentType` |  | |  | `esart` |  |  |
+| `D_RFQCreateFromPurReqnItemP` |  | |  | `_Items : composition[0..*] of D_RFQCreateFromPurReqnItemP` |  |  |
 
 ## Source Code
 

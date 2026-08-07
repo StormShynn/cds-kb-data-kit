@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnIndustryHierarchy` | ✓ | |  | `cast(_Hierarchy.UniversalHierarchy as fincs_industryhierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
-| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
-| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnIndustryHierarchy` | ✓ | |  | `cast(_Hierarchy.UniversalHierarchy as fincs_industryhierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |  |  |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |  |  |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceNotification` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `NotificationPartnerObjectNmbr` | ✓ | |  |  |
-| `Partner` |  | |  |  |
-| `MaintenancePartner` |  | |  |  |
-| `_ContactPerson` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Employee` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_Notif` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceNotification` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `NotificationPartnerObjectNmbr` | ✓ | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `MaintenancePartner` |  | |  |  |  |  |
+| `_ContactPerson` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Employee` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_Notif` | | ✓ | | | | |
 
 ## Source Code
 

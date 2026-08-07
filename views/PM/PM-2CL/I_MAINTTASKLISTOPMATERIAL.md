@@ -28,46 +28,46 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  | `BillOfOperationsType` |
-| `TaskListGroup` | ✓ | |  | `BillOfOperationsGroup` |
-| `TaskListGroupCounter` | ✓ | |  | `BillOfOperationsVariant` |
-| `TaskListSequence` | ✓ | |  | `BillOfOperationsSequence` |
-| `TaskListOperationInternalId` | ✓ | |  | `BOOOperationInternalID` |
-| `TaskListOpBOMItmInternalID` | ✓ | |  | `BOOOpBOMItemInternalID` |
-| `TaskListOpBOMItmIntVersCounter` | ✓ | |  | `BOOOpBOMItemIntVersCounter` |
-| `BillOfMaterialCategory` |  | |  |  |
-| `BillOfMaterial` |  | |  |  |
-| `BillOfMaterialVariant` |  | |  |  |
-| `BillOfMaterialItemNodeNumber` |  | |  |  |
-| `MatlCompIsMarkedForBackflush` |  | |  |  |
-| `BillOfMaterialItemQuantity` |  | |  |  |
-| `BillOfMaterialItemUnit` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ResvnIsMRPRlvtOrPurReqnIsCrted` |  | |  |  |
-| `BillOfMaterialComponent` |  | | `_BOMItemEAM` | `BillOfMaterialComponent` |
-| `BillOfMaterialItemCategory` |  | | `_BOMItemEAM` | `BillOfMaterialItemCategory` |
-| `TechObjIsEquipOrFuncnlLoc` |  | | `_MaintenanceTaskList` | `TechObjIsEquipOrFuncnlLoc` |
-| `Equipment` |  | | `_MaintenanceTaskList` | `Equipment` |
-| `FunctionalLocation` |  | | `_MaintenanceTaskList` | `FunctionalLocation` |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `_MaintenanceTaskList` | | ✓ | | |
-| `_SafetyRelevance` | | ✓ | | |
-| `_BOMItemEAM` | | ✓ | | |
-| `_BillOfMaterialComponent` | | ✓ | | |
-| `_BillOfMaterialItemCategory` | | ✓ | | |
-| `_BOMItemCategoryText` | | ✓ | | |
-| `_MatlsPlngRelevancy` | | ✓ | | |
-| `_BillOfMaterialItem` | | ✓ | | |
-| `_BillOfOperations` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BillOfOperationsOperation` | | ✓ | | |
-| `_BillOfOperationsSequence` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BOOOpBOMItemInternalID` | | ✓ | | |
-| `_BOOOperationInternalID` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  | `BillOfOperationsType` |  |  |
+| `TaskListGroup` | ✓ | |  | `BillOfOperationsGroup` |  |  |
+| `TaskListGroupCounter` | ✓ | |  | `BillOfOperationsVariant` |  |  |
+| `TaskListSequence` | ✓ | |  | `BillOfOperationsSequence` |  |  |
+| `TaskListOperationInternalId` | ✓ | |  | `BOOOperationInternalID` |  |  |
+| `TaskListOpBOMItmInternalID` | ✓ | |  | `BOOOpBOMItemInternalID` |  |  |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  | `BOOOpBOMItemIntVersCounter` |  |  |
+| `BillOfMaterialCategory` |  | |  |  |  |  |
+| `BillOfMaterial` |  | |  |  |  |  |
+| `BillOfMaterialVariant` |  | |  |  |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  |  |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |  |  |
+| `BillOfMaterialItemQuantity` |  | |  |  |  |  |
+| `BillOfMaterialItemUnit` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ResvnIsMRPRlvtOrPurReqnIsCrted` |  | |  |  |  |  |
+| `BillOfMaterialComponent` |  | | `_BOMItemEAM` | `BillOfMaterialComponent` |  |  |
+| `BillOfMaterialItemCategory` |  | | `_BOMItemEAM` | `BillOfMaterialItemCategory` |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | | `_MaintenanceTaskList` | `TechObjIsEquipOrFuncnlLoc` |  |  |
+| `Equipment` |  | | `_MaintenanceTaskList` | `Equipment` |  |  |
+| `FunctionalLocation` |  | | `_MaintenanceTaskList` | `FunctionalLocation` |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `_MaintenanceTaskList` | | ✓ | | | | |
+| `_SafetyRelevance` | | ✓ | | | | |
+| `_BOMItemEAM` | | ✓ | | | | |
+| `_BillOfMaterialComponent` | | ✓ | | | | |
+| `_BillOfMaterialItemCategory` | | ✓ | | | | |
+| `_BOMItemCategoryText` | | ✓ | | | | |
+| `_MatlsPlngRelevancy` | | ✓ | | | | |
+| `_BillOfMaterialItem` | | ✓ | | | | |
+| `_BillOfOperations` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsOperation` | | ✓ | | | | |
+| `_BillOfOperationsSequence` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BOOOpBOMItemInternalID` | | ✓ | | | | |
+| `_BOOOperationInternalID` | | ✓ | | | | |
 
 ## Associations
 

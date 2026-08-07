@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierAccountGroup` | ✓ | |  |  |
-| `_SupplierAccountGroupText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierAccountGroup` | ✓ | |  |  |  |  |
+| `_SupplierAccountGroupText` | | ✓ | | | | |
 
 ## Source Code
 

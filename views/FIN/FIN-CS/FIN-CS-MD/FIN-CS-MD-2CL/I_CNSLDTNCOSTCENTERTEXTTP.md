@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `ControllingArea` | ✓ | | `_Text` | `ControllingArea` |
-| `CostCenter` | ✓ | | `_Text` | `CostCenter` |
-| `CostCenterName` |  | | `_Text` | `CostCenterName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnCostCenterTP` |  | |  | `_CostCenter as _CostCenter : redirected to parent I_CnsldtnCostCenterTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `ControllingArea` | ✓ | | `_Text` | `ControllingArea` |  |  |
+| `CostCenter` | ✓ | | `_Text` | `CostCenter` |  |  |
+| `CostCenterName` |  | | `_Text` | `CostCenterName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnCostCenterTP` |  | |  | `_CostCenter as _CostCenter : redirected to parent I_CnsldtnCostCenterTP` |  |  |
 
 ## Source Code
 

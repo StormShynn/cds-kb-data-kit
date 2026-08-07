@@ -32,33 +32,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JointVenturePartner` | ✓ | |  |  |
-| `JointVenturePartner2ShortText` |  | |  |  |
-| `JntVntrIntcoCode` |  | |  |  |
-| `JntVntrCashCallThld` |  | |  |  |
-| `JntVntrHardCopyBillgIsSupp` |  | |  |  |
-| `JntVntrOwnrIsEDITo` |  | |  |  |
-| `JntVentureIsConvenienceNetting` |  | |  |  |
-| `JntVntrBillgFormat` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `EDIReceiver` |  | |  |  |
-| `JntVntrPartnerProcessGrp` |  | |  |  |
-| `JntVntrPartEquityCashCallThld` |  | |  |  |
-| `JntVntrPartProjCashCallThld` |  | |  |  |
-| `ResponsibleContact` |  | |  |  |
-| `ContactPhoneNumber` |  | |  |  |
-| `JntVntrGeneratedExpndtrSet` |  | |  |  |
-| `Currency` |  | |  |  |
-| `JntVntrBillgThldDebit` |  | |  |  |
-| `JntVntrBillgThldCredit` |  | |  |  |
-| `JntVntrBillgThldIsActive` |  | |  |  |
-| `JntVntrBillgReportsAreSpprsd` |  | |  |  |
-| `JntVntrSeparateBillgIsPrepared` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JointVenturePartner` | ✓ | |  |  |  |  |
+| `JointVenturePartner2ShortText` |  | |  |  |  |  |
+| `JntVntrIntcoCode` |  | |  |  |  |  |
+| `JntVntrCashCallThld` |  | |  |  |  |  |
+| `JntVntrHardCopyBillgIsSupp` |  | |  |  |  |  |
+| `JntVntrOwnrIsEDITo` |  | |  |  |  |  |
+| `JntVentureIsConvenienceNetting` |  | |  |  |  |  |
+| `JntVntrBillgFormat` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `EDIReceiver` |  | |  |  |  |  |
+| `JntVntrPartnerProcessGrp` |  | |  |  |  |  |
+| `JntVntrPartEquityCashCallThld` |  | |  |  |  |  |
+| `JntVntrPartProjCashCallThld` |  | |  |  |  |  |
+| `ResponsibleContact` |  | |  |  |  |  |
+| `ContactPhoneNumber` |  | |  |  |  |  |
+| `JntVntrGeneratedExpndtrSet` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `JntVntrBillgThldDebit` |  | |  |  |  |  |
+| `JntVntrBillgThldCredit` |  | |  |  |  |  |
+| `JntVntrBillgThldIsActive` |  | |  |  |  |  |
+| `JntVntrBillgReportsAreSpprsd` |  | |  |  |  |  |
+| `JntVntrSeparateBillgIsPrepared` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerRiskGroup` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_risk_group )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerRiskGroup` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_risk_group )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

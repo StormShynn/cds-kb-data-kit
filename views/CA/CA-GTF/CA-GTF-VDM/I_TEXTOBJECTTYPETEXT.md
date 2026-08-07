@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TextObjectCategory` | ✓ | |  | `tdobject` |
-| `TextObjectType` | ✓ | |  | `tdid` |
-| `Language` | ✓ | |  | `tdspras` |
-| `TextObjectTypeName` |  | |  | `tdtext` |
-| `_TextObjectCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_TextObjectType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TextObjectCategory` | ✓ | |  | `tdobject` |  |  |
+| `TextObjectType` | ✓ | |  | `tdid` |  |  |
+| `Language` | ✓ | |  | `tdspras` |  |  |
+| `TextObjectTypeName` |  | |  | `tdtext` |  |  |
+| `_TextObjectCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_TextObjectType` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContractType` | ✓ | |  | `PurchasingDocumentType` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContractType` | ✓ | |  | `PurchasingDocumentType` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

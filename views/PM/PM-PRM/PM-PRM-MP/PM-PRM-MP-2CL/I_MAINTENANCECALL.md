@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenancePlan` | ✓ | |  | `warpl` |
-| `MaintenanceCall` | ✓ | |  | `abnum` |
-| `MaintenanceItem` | ✓ | |  | `wppos` |
-| `MaintenanceOrder` |  | |  | `aufnr` |
-| `MaintenanceNotification` |  | |  | `qmnum` |
-| `MaintCallHorizonIsNotReached` |  | |  | `tsenq` |
-| `SchedulingStatus` |  | |  | `tstat` |
-| `CompletionDate` |  | |  | `addat` |
-| `CompletionTime` |  | |  | `adtime` |
-| `PlannedStartDate` |  | |  | `gstrp` |
-| `ReleasedByUserName` |  | |  | `usermod` |
-| `ServiceOrder` |  | |  | `service_order` |
-| `_MaintenancePlan` | | ✓ | | |
-| `_MaintenanceItem` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintenanceNotification` | | ✓ | | |
-| `_ServiceOrder` | | ✓ | | |
-| `_MaintPlanCallHistory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlan` | ✓ | |  | `warpl` |  |  |
+| `MaintenanceCall` | ✓ | |  | `abnum` |  |  |
+| `MaintenanceItem` | ✓ | |  | `wppos` |  |  |
+| `MaintenanceOrder` |  | |  | `aufnr` |  |  |
+| `MaintenanceNotification` |  | |  | `qmnum` |  |  |
+| `MaintCallHorizonIsNotReached` |  | |  | `tsenq` |  |  |
+| `SchedulingStatus` |  | |  | `tstat` |  |  |
+| `CompletionDate` |  | |  | `addat` |  |  |
+| `CompletionTime` |  | |  | `adtime` |  |  |
+| `PlannedStartDate` |  | |  | `gstrp` |  |  |
+| `ReleasedByUserName` |  | |  | `usermod` |  |  |
+| `ServiceOrder` |  | |  | `service_order` |  |  |
+| `_MaintenancePlan` | | ✓ | | | | |
+| `_MaintenanceItem` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintenanceNotification` | | ✓ | | | | |
+| `_ServiceOrder` | | ✓ | | | | |
+| `_MaintPlanCallHistory` | | ✓ | | | | |
 
 ## Associations
 

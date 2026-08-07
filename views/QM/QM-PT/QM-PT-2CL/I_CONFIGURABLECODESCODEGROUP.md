@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |
-| `ConfigurableCodesCodeGroup` | ✓ | |  | `codegruppe` |
-| `ConfigblCodesCodeGrpIsInactv` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |
-| `ConfigblCodesCodeGroupStatus` |  | |  | `status` |
-| `_ConfigurableCodesCatalog` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ConfigurableCodesCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |  |  |
+| `ConfigurableCodesCodeGroup` | ✓ | |  | `codegruppe` |  |  |
+| `ConfigblCodesCodeGrpIsInactv` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |  |  |
+| `ConfigblCodesCodeGroupStatus` |  | |  | `status` |  |  |
+| `_ConfigurableCodesCatalog` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ConfigurableCodesCode` | | ✓ | | | | |
 
 ## Associations
 

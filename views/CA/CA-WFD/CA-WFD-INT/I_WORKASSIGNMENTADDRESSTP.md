@@ -30,52 +30,52 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | |  |  |
-| `WorkAssignmentExternalID` | ✓ | |  |  |
-| `Country2DigitISOCode` | ✓ | |  |  |
-| `WorkAssignmentStartDate` | ✓ | |  |  |
-| `AddressNumber` | ✓ | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `WorkAssignmentEndDate` |  | |  |  |
-| `Country` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `Region` |  | |  |  |
-| `SecondaryRegion` |  | |  |  |
-| `SecondaryRegionName` |  | |  |  |
-| `TertiaryRegion` |  | |  |  |
-| `TertiaryRegionName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `IsBlocked` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `_BPProtectedAddress` | | ✓ | | |
-| `_WorkAssignment` | | ✓ | | |
-| `_WorkforcePerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |  |  |
+| `WorkAssignmentExternalID` | ✓ | |  |  |  |  |
+| `Country2DigitISOCode` | ✓ | |  |  |  |  |
+| `WorkAssignmentStartDate` | ✓ | |  |  |  |  |
+| `AddressNumber` | ✓ | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `WorkAssignmentEndDate` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `SecondaryRegion` |  | |  |  |  |  |
+| `SecondaryRegionName` |  | |  |  |  |  |
+| `TertiaryRegion` |  | |  |  |  |  |
+| `TertiaryRegionName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `IsBlocked` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `_BPProtectedAddress` | | ✓ | | | | |
+| `_WorkAssignment` | | ✓ | | | | |
+| `_WorkforcePerson` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `CrdtMgmtBusinessPartnerGroup` |  | |  |  |
-| `CreditWorthinessScoreValue` |  | |  |  |
-| `CrdtWrthnssScoreValdtyEndDate` |  | |  |  |
-| `CrdtWorthinessScoreLastChgDate` |  | |  |  |
-| `CalcdCrdtWorthinessScoreValue` |  | |  |  |
-| `CreditRiskClass` |  | |  |  |
-| `CalculatedCreditRiskClass` |  | |  |  |
-| `CreditRiskClassLastChangeDate` |  | |  |  |
-| `CreditCheckRule` |  | |  |  |
-| `CreditScoreAndLimitCalcRule` |  | |  |  |
-| `CustBusinessRelshpStartYear` |  | |  |  |
-| `_CreditMgmtAccountTP` | | ✓ | | |
-| `_CrdtMBPCollateralTP` | | ✓ | | |
-| `_CrdtMBPCreditInsuranceTP` | | ✓ | | |
-| `_CrdtMBPNegativeEventTP` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  |  |  |
+| `CreditWorthinessScoreValue` |  | |  |  |  |  |
+| `CrdtWrthnssScoreValdtyEndDate` |  | |  |  |  |  |
+| `CrdtWorthinessScoreLastChgDate` |  | |  |  |  |  |
+| `CalcdCrdtWorthinessScoreValue` |  | |  |  |  |  |
+| `CreditRiskClass` |  | |  |  |  |  |
+| `CalculatedCreditRiskClass` |  | |  |  |  |  |
+| `CreditRiskClassLastChangeDate` |  | |  |  |  |  |
+| `CreditCheckRule` |  | |  |  |  |  |
+| `CreditScoreAndLimitCalcRule` |  | |  |  |  |  |
+| `CustBusinessRelshpStartYear` |  | |  |  |  |  |
+| `_CreditMgmtAccountTP` | | ✓ | | | | |
+| `_CrdtMBPCollateralTP` | | ✓ | | | | |
+| `_CrdtMBPCreditInsuranceTP` | | ✓ | | | | |
+| `_CrdtMBPNegativeEventTP` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
 

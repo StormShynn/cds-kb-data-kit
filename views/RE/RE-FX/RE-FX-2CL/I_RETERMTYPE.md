@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateObjectType` | ✓ | |  | `objtype` |
-| `RETermType` | ✓ | |  | `termtype` |
-| `RETermCategory` |  | |  | `termcate` |
-| `_REObjectType` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateObjectType` | ✓ | |  | `objtype` |  |  |
+| `RETermType` | ✓ | |  | `termtype` |  |  |
+| `RETermCategory` |  | |  | `termcate` |  |  |
+| `_REObjectType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

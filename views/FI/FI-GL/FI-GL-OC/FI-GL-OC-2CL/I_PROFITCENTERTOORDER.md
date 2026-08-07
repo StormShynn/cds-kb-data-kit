@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderID` | ✓ | |  | `aufnr` |
-| `ValidityStartDate` | ✓ | |  | `valid_from` |
-| `ValidityEndDate` |  | |  | `valid_to` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `OrganizationalChange` |  | |  | `orgl_change` |
-| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |
-| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |
-| `OrderCategory` |  | |  | `autyp` |
-| `SourceProduct` |  | |  | `srce_matnr` |
-| `SourcePlant` |  | |  | `srce_werks` |
-| `SourceCostCenter` |  | |  | `srce_kostl` |
-| `SourceWBSElementInternalID` |  | |  | `cast( srce_ps_psp_pnr as ps_s4_pspnr preserving type)` |
-| `SourceProjectInternalID` |  | |  | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |
-| `_Order` | | ✓ | | |
-| `_OrglChgReassignmentStatus` | | ✓ | | |
-| `_ProfitCtrDerivationSrceType` | | ✓ | | |
-| `_OrglChange` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ProfitCtr` | | ✓ | | |
-| `_ProfitCenterBeforeOrglChange` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderID` | ✓ | |  | `aufnr` |  |  |
+| `ValidityStartDate` | ✓ | |  | `valid_from` |  |  |
+| `ValidityEndDate` |  | |  | `valid_to` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `OrganizationalChange` |  | |  | `orgl_change` |  |  |
+| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |  |  |
+| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |  |  |
+| `OrderCategory` |  | |  | `autyp` |  |  |
+| `SourceProduct` |  | |  | `srce_matnr` |  |  |
+| `SourcePlant` |  | |  | `srce_werks` |  |  |
+| `SourceCostCenter` |  | |  | `srce_kostl` |  |  |
+| `SourceWBSElementInternalID` |  | |  | `cast( srce_ps_psp_pnr as ps_s4_pspnr preserving type)` |  |  |
+| `SourceProjectInternalID` |  | |  | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |  |  |
+| `_Order` | | ✓ | | | | |
+| `_OrglChgReassignmentStatus` | | ✓ | | | | |
+| `_ProfitCtrDerivationSrceType` | | ✓ | | | | |
+| `_OrglChange` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ProfitCtr` | | ✓ | | | | |
+| `_ProfitCenterBeforeOrglChange` | | ✓ | | | | |
 
 ## Associations
 

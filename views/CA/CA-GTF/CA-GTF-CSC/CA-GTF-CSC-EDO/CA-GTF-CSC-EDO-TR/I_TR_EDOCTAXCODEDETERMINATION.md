@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TR_EDocPurchaseCode` | ✓ | |  |  |
-| `TR_EDocAccountKey` | ✓ | |  |  |
-| `TR_ElectronicDocumentTaxType` |  | |  |  |
-| `TR_EDocVatTaxTypeCode` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TR_EDocPurchaseCode` | ✓ | |  |  |  |  |
+| `TR_EDocAccountKey` | ✓ | |  |  |  |  |
+| `TR_ElectronicDocumentTaxType` |  | |  |  |  |  |
+| `TR_EDocVatTaxTypeCode` |  | |  |  |  |  |
 
 ## Source Code
 

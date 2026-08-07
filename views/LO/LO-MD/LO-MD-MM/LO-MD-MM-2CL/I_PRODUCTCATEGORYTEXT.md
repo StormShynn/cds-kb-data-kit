@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `ProductCategory` | ✓ | |  | `cast ( domvalue_l as articlecategory )` |
-| `Name` |  | |  | `cast ( ddtext as articlecategorytext preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `ProductCategory` | ✓ | |  | `cast ( domvalue_l as articlecategory )` |  |  |
+| `Name` |  | |  | `cast ( ddtext as articlecategorytext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

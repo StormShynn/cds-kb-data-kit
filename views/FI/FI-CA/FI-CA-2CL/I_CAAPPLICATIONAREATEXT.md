@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  |  |
-| `Language` | ✓ | |  | `cast( DomainText.ddlanguage as spras preserving type )` |
-| `CAApplicationAreaText` |  | |  | `cast( DomainText.ddtext as applk_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  | `cast( DomainText.ddlanguage as spras preserving type )` |  |  |
+| `CAApplicationAreaText` |  | |  | `cast( DomainText.ddtext as applk_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

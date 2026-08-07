@@ -32,85 +32,85 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractItem` | ✓ | |  |  |
-| `PurchaseContractItemUniqueID` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Material` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `PurchaseContractItemText` |  | |  |  |
-| `ContractNetPriceAmount` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `VolumeUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Subcontractor` |  | |  |  |
-| `ReferenceDeliveryAddressID` |  | |  |  |
-| `ManualDeliveryAddressID` |  | |  |  |
-| `DeliveryAddressID` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `MultipleAcctAssgmtDistribution` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetAmount` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
-| `PurchasingDocumentItemCategory` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `PriceIsToBePrinted` |  | |  |  |
-| `SupplierConfirmationControlKey` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `InvoiceIsExpected` |  | |  |  |
-| `InvoiceIsGoodsReceiptBased` |  | |  |  |
-| `PurgDocPriceDate` |  | |  |  |
-| `PurchasingInfoRecordUpdateCode` |  | |  |  |
-| `PurgDocReleaseOrderQuantity` |  | |  |  |
-| `PurgDocOrderAcknNumber` |  | |  |  |
-| `PurchasingPriceIsEstimated` |  | |  |  |
-| `IsInfoAtRegistration` |  | |  |  |
-| `NoDaysReminder1` |  | |  |  |
-| `NoDaysReminder2` |  | |  |  |
-| `NoDaysReminder3` |  | |  |  |
-| `StockType` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `TaxDeterminationDate` |  | |  |  |
-| `RequirementTracking` |  | |  |  |
-| `IsOrderAcknRqd` |  | |  |  |
-| `ShippingInstruction` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `ProductTypeCode` |  | |  |  |
-| `MaterialType` |  | |  |  |
-| `PurchaseContractItemFormatted` |  | |  |  |
-| `PurchasingContractDeletionCode` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `PartialInvoiceDistribution` |  | |  |  |
-| `ManufacturerPartNmbr` |  | |  |  |
-| `Manufacturer` |  | |  |  |
-| `PurchasingCategory` |  | |  |  |
-| `PurgCatName` |  | |  |  |
-| `PurchaseContractType` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `PurchasingIsCatalogRelevant` |  | |  |  |
-| `_PurchaseContract` | | ✓ | | |
-| `_PurCtrAccount` | | ✓ | | |
-| `_PurCtrAddress` | | ✓ | | |
-| `_PurCtrItNotes` | | ✓ | | |
-| `_PurContrItemCndnValdty` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |  |  |
+| `PurchaseContractItemUniqueID` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `PurchaseContractItemText` |  | |  |  |  |  |
+| `ContractNetPriceAmount` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `VolumeUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Subcontractor` |  | |  |  |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |  |  |
+| `DeliveryAddressID` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetAmount` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `PriceIsToBePrinted` |  | |  |  |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `InvoiceIsExpected` |  | |  |  |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |  |  |
+| `PurgDocPriceDate` |  | |  |  |  |  |
+| `PurchasingInfoRecordUpdateCode` |  | |  |  |  |  |
+| `PurgDocReleaseOrderQuantity` |  | |  |  |  |  |
+| `PurgDocOrderAcknNumber` |  | |  |  |  |  |
+| `PurchasingPriceIsEstimated` |  | |  |  |  |  |
+| `IsInfoAtRegistration` |  | |  |  |  |  |
+| `NoDaysReminder1` |  | |  |  |  |  |
+| `NoDaysReminder2` |  | |  |  |  |  |
+| `NoDaysReminder3` |  | |  |  |  |  |
+| `StockType` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `TaxDeterminationDate` |  | |  |  |  |  |
+| `RequirementTracking` |  | |  |  |  |  |
+| `IsOrderAcknRqd` |  | |  |  |  |  |
+| `ShippingInstruction` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  |  |  |  |
+| `MaterialType` |  | |  |  |  |  |
+| `PurchaseContractItemFormatted` |  | |  |  |  |  |
+| `PurchasingContractDeletionCode` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `PartialInvoiceDistribution` |  | |  |  |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |  |  |
+| `Manufacturer` |  | |  |  |  |  |
+| `PurchasingCategory` |  | |  |  |  |  |
+| `PurgCatName` |  | |  |  |  |  |
+| `PurchaseContractType` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `PurchasingIsCatalogRelevant` |  | |  |  |  |  |
+| `_PurchaseContract` | | ✓ | | | | |
+| `_PurCtrAccount` | | ✓ | | | | |
+| `_PurCtrAddress` | | ✓ | | | | |
+| `_PurCtrItNotes` | | ✓ | | | | |
+| `_PurContrItemCndnValdty` | | ✓ | | | | |
 
 ## Source Code
 

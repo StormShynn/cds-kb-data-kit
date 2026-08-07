@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocumentType` | ✓ | |  | `bsart` |
-| `PurchasingDocumentCategory` | ✓ | |  | `bstyp` |
-| `Language` | ✓ | |  | `spras` |
-| `PurchasingDocumentTypeName` |  | |  | `batxt` |
-| `_PurchasingDocumentCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_PurchasingDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocumentType` | ✓ | |  | `bsart` |  |  |
+| `PurchasingDocumentCategory` | ✓ | |  | `bstyp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PurchasingDocumentTypeName` |  | |  | `batxt` |  |  |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_PurchasingDocumentType` | | ✓ | | | | |
 
 ## Associations
 

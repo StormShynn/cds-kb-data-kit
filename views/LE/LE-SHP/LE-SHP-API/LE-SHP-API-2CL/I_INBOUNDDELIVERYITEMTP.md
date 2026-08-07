@@ -31,138 +31,138 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InboundDelivery` | ✓ | |  |  |
-| `InboundDeliveryItem` | ✓ | |  |  |
-| `DeliveryDocumentItemCategory` |  | |  |  |
-| `SalesDocumentItemType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `DepartmentClassificationByCust` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `Batch` |  | |  |  |
-| `BatchBySupplier` |  | |  |  |
-| `BatchClassification` |  | |  |  |
-| `MaterialIsBatchManaged` |  | |  |  |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `MaterialFreightGroup` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Warehouse` |  | |  |  |
-| `StorageBin` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `StorageType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `NumberOfSerialNumbers` |  | |  |  |
-| `ProductConfiguration` |  | |  |  |
-| `ProductHierarchyNode` |  | |  |  |
-| `ManufactureDate` |  | |  |  |
-| `DeliveryDocumentItemText` |  | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `HigherLvlItmOfBatSpltItm` |  | |  |  |
-| `ActualDeliveredQtyInOrderUnit` |  | |  |  |
-| `QuantityIsFixed` |  | |  |  |
-| `OriginalDeliveryQuantity` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `ActualDeliveredQtyInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `DeliveryToBaseQuantityDnmntr` |  | |  |  |
-| `DeliveryToBaseQuantityNmrtr` |  | |  |  |
-| `ProductAvailabilityDate` |  | |  |  |
-| `ProductAvailabilityTime` |  | |  |  |
-| `DeliveryGroup` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `InspectionLot` |  | |  |  |
-| `InspectionPartialLot` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `WarehouseStorageBin` |  | |  |  |
-| `BOMExplosion` |  | |  |  |
-| `CustEngineeringChgStatus` |  | |  |  |
-| `WarehouseStagingArea` |  | |  |  |
-| `WarehouseStockCategory` |  | |  |  |
-| `IssgOrRcvgStockCategory` |  | |  |  |
-| `IssgOrRcvgMaterial` |  | |  |  |
-| `IssuingOrReceivingPlant` |  | |  |  |
-| `IssuingOrReceivingStorageLoc` |  | |  |  |
-| `IssgOrRcvgBatch` |  | |  |  |
-| `IssgOrRcvgSpclStockCode` |  | |  |  |
-| `IssgOrRcvgValuationType` |  | |  |  |
-| `PrimaryPostingSwitch` |  | |  |  |
-| `StockType` |  | |  |  |
-| `IsNotGoodsMovementsRelevant` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `GoodsMovementReasonCode` |  | |  |  |
-| `SubsequentMovementType` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `AlternateProductNumber` |  | |  |  |
-| `PutawayQuantityInBaseUnit` |  | |  |  |
-| `PutawayQuantityInOrderUnit` |  | |  |  |
-| `LoadingGroup` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `TransportationGroup` |  | |  |  |
-| `FixedShipgProcgDurationInDays` |  | |  |  |
-| `VarblShipgProcgDurationInDays` |  | |  |  |
-| `ProofOfDeliveryRelevanceCode` |  | |  |  |
-| `BillingRelevanceCode` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `PaymentGuaranteeForm` |  | |  |  |
-| `IntercompanyBillingStatus` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `IsSeparateValuation` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `ManufacturingOrder` |  | |  |  |
-| `ManufacturingOrderItem` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ReferenceDocumentLogicalSystem` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `StatisticsDate` |  | |  |  |
-| `DeliveryItemProcessStatus` |  | |  |  |
-| `PutawayConfirmationStatus` |  | |  |  |
-| `PackingStatus` |  | |  |  |
-| `PutawayStatus` |  | |  |  |
-| `WarehouseActivityStatus` |  | |  |  |
-| `GoodsMovementStatus` |  | |  |  |
-| `DeliveryRelatedBillingStatus` |  | |  |  |
-| `ProofOfDeliveryStatus` |  | |  |  |
-| `ItemBillingIncompletionStatus` |  | |  |  |
-| `ItemDeliveryIncompletionStatus` |  | |  |  |
-| `ItemGdsMvtIncompletionSts` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  |  |
-| `ItemPackingIncompletionStatus` |  | |  |  |
-| `ItemPutawayIncompletionStatus` |  | |  |  |
-| `_SerialNumber` | | ✓ | | |
-| `_ItemText` | | ✓ | | |
-| `_Delivery` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InboundDelivery` | ✓ | |  |  |  |  |
+| `InboundDeliveryItem` | ✓ | |  |  |  |  |
+| `DeliveryDocumentItemCategory` |  | |  |  |  |  |
+| `SalesDocumentItemType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `DepartmentClassificationByCust` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `BatchBySupplier` |  | |  |  |  |  |
+| `BatchClassification` |  | |  |  |  |  |
+| `MaterialIsBatchManaged` |  | |  |  |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `MaterialFreightGroup` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Warehouse` |  | |  |  |  |  |
+| `StorageBin` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `StorageType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `NumberOfSerialNumbers` |  | |  |  |  |  |
+| `ProductConfiguration` |  | |  |  |  |  |
+| `ProductHierarchyNode` |  | |  |  |  |  |
+| `ManufactureDate` |  | |  |  |  |  |
+| `DeliveryDocumentItemText` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `HigherLvlItmOfBatSpltItm` |  | |  |  |  |  |
+| `ActualDeliveredQtyInOrderUnit` |  | |  |  |  |  |
+| `QuantityIsFixed` |  | |  |  |  |  |
+| `OriginalDeliveryQuantity` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `ActualDeliveredQtyInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `DeliveryToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `DeliveryToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `ProductAvailabilityDate` |  | |  |  |  |  |
+| `ProductAvailabilityTime` |  | |  |  |  |  |
+| `DeliveryGroup` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `InspectionLot` |  | |  |  |  |  |
+| `InspectionPartialLot` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `WarehouseStorageBin` |  | |  |  |  |  |
+| `BOMExplosion` |  | |  |  |  |  |
+| `CustEngineeringChgStatus` |  | |  |  |  |  |
+| `WarehouseStagingArea` |  | |  |  |  |  |
+| `WarehouseStockCategory` |  | |  |  |  |  |
+| `IssgOrRcvgStockCategory` |  | |  |  |  |  |
+| `IssgOrRcvgMaterial` |  | |  |  |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  |  |  |  |
+| `IssgOrRcvgBatch` |  | |  |  |  |  |
+| `IssgOrRcvgSpclStockCode` |  | |  |  |  |  |
+| `IssgOrRcvgValuationType` |  | |  |  |  |  |
+| `PrimaryPostingSwitch` |  | |  |  |  |  |
+| `StockType` |  | |  |  |  |  |
+| `IsNotGoodsMovementsRelevant` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `GoodsMovementReasonCode` |  | |  |  |  |  |
+| `SubsequentMovementType` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `AlternateProductNumber` |  | |  |  |  |  |
+| `PutawayQuantityInBaseUnit` |  | |  |  |  |  |
+| `PutawayQuantityInOrderUnit` |  | |  |  |  |  |
+| `LoadingGroup` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `TransportationGroup` |  | |  |  |  |  |
+| `FixedShipgProcgDurationInDays` |  | |  |  |  |  |
+| `VarblShipgProcgDurationInDays` |  | |  |  |  |  |
+| `ProofOfDeliveryRelevanceCode` |  | |  |  |  |  |
+| `BillingRelevanceCode` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `PaymentGuaranteeForm` |  | |  |  |  |  |
+| `IntercompanyBillingStatus` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `IsSeparateValuation` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `ManufacturingOrder` |  | |  |  |  |  |
+| `ManufacturingOrderItem` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `StatisticsDate` |  | |  |  |  |  |
+| `DeliveryItemProcessStatus` |  | |  |  |  |  |
+| `PutawayConfirmationStatus` |  | |  |  |  |  |
+| `PackingStatus` |  | |  |  |  |  |
+| `PutawayStatus` |  | |  |  |  |  |
+| `WarehouseActivityStatus` |  | |  |  |  |  |
+| `GoodsMovementStatus` |  | |  |  |  |  |
+| `DeliveryRelatedBillingStatus` |  | |  |  |  |  |
+| `ProofOfDeliveryStatus` |  | |  |  |  |  |
+| `ItemBillingIncompletionStatus` |  | |  |  |  |  |
+| `ItemDeliveryIncompletionStatus` |  | |  |  |  |  |
+| `ItemGdsMvtIncompletionSts` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |  |  |
+| `ItemPackingIncompletionStatus` |  | |  |  |  |  |
+| `ItemPutawayIncompletionStatus` |  | |  |  |  |  |
+| `_SerialNumber` | | ✓ | | | | |
+| `_ItemText` | | ✓ | | | | |
+| `_Delivery` | | ✓ | | | | |
 
 ## Source Code
 

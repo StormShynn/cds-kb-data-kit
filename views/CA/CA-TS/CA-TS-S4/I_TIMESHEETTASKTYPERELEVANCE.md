@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TimeSheetTaskTypeRelevanceCode` | ✓ | |  | `cast(dd07l.domvalue_l as catsxt_tasktype_relevance)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TimeSheetTaskTypeRelevanceCode` | ✓ | |  | `cast(dd07l.domvalue_l as catsxt_tasktype_relevance)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

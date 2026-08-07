@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenancePlanCategory` | ✓ | |  | `mptyp` |
-| `Language` | ✓ | |  | `spras` |
-| `MaintenancePlanCategoryDesc` |  | |  | `txt` |
-| `_MaintenancePlanCatParam` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlanCategory` | ✓ | |  | `mptyp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaintenancePlanCategoryDesc` |  | |  | `txt` |  |  |
+| `_MaintenancePlanCatParam` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

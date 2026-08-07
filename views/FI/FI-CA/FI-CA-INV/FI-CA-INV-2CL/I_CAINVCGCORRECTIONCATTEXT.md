@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgCorrectionCategory` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,2 ) as corrcat_gfn_kk preserving type )` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgCorrectionCatText` |  | |  | `cast ( ddtext as corrcat_txt_gfn_kk preserving type )` |
-| `_CAInvcgCorrectionCat` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgCorrectionCategory` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,2 ) as corrcat_gfn_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
+| `CAInvcgCorrectionCatText` |  | |  | `cast ( ddtext as corrcat_txt_gfn_kk preserving type )` |  |  |
+| `_CAInvcgCorrectionCat` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

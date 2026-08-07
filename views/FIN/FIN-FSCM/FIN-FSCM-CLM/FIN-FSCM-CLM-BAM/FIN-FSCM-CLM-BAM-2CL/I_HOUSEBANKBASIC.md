@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `HouseBank` | ✓ | |  |  |
-| `BankCountry` |  | |  |  |
-| `BankInternalID` |  | |  |  |
-| `BankName` |  | | `_Bank` | `BankName` |
-| `_Bank` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `HouseBank` | ✓ | |  |  |  |  |
+| `BankCountry` |  | |  |  |  |  |
+| `BankInternalID` |  | |  |  |  |  |
+| `BankName` |  | | `_Bank` | `BankName` |  |  |
+| `_Bank` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Source Code
 

@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ReservationCompletionStatus` | ✓ | |  | `cast ( dd07t.domvalue_l as imrs_resvn_compltn_status_code )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ResvnCompletionStatusText` |  | |  | `cast( dd07t.ddtext as imrs_resvn_compltn_status_text preserving type )` |
-| `_ResvnCompletionStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ReservationCompletionStatus` | ✓ | |  | `cast ( dd07t.domvalue_l as imrs_resvn_compltn_status_code )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ResvnCompletionStatusText` |  | |  | `cast( dd07t.ddtext as imrs_resvn_compltn_status_text preserving type )` |  |  |
+| `_ResvnCompletionStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

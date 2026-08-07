@@ -30,39 +30,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PeriodType` | ✓ | |  |  |
-| `EndDate` | ✓ | |  |  |
-| `YearPeriod` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `StorageLocation` | ✓ | |  |  |
-| `Batch` | ✓ | |  |  |
-| `Supplier` | ✓ | |  |  |
-| `SDDocument` | ✓ | |  |  |
-| `SDDocumentItem` | ✓ | |  |  |
-| `WBSElementInternalID` | ✓ | |  |  |
-| `Customer` | ✓ | |  |  |
-| `InventoryStockType` | ✓ | |  |  |
-| `InventorySpecialStockType` | ✓ | |  |  |
-| `FiscalYearVariant` | ✓ | |  |  |
-| `MaterialBaseUnit` | ✓ | |  |  |
-| `CostEstimate` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |
-| `_Material` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_InventoryStockType` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_InvtryPrcByPeriodEndDate` | | ✓ | | |
-| `_CurrentInvtryPrice` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PeriodType` | ✓ | |  |  |  |  |
+| `EndDate` | ✓ | |  |  |  |  |
+| `YearPeriod` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `StorageLocation` | ✓ | |  |  |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `Supplier` | ✓ | |  |  |  |  |
+| `SDDocument` | ✓ | |  |  |  |  |
+| `SDDocumentItem` | ✓ | |  |  |  |  |
+| `WBSElementInternalID` | ✓ | |  |  |  |  |
+| `Customer` | ✓ | |  |  |  |  |
+| `InventoryStockType` | ✓ | |  |  |  |  |
+| `InventorySpecialStockType` | ✓ | |  |  |  |  |
+| `FiscalYearVariant` | ✓ | |  |  |  |  |
+| `MaterialBaseUnit` | ✓ | |  |  |  |  |
+| `CostEstimate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |  |  |
+| `_Material` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_InventoryStockType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_InvtryPrcByPeriodEndDate` | | ✓ | | | | |
+| `_CurrentInvtryPrice` | | ✓ | | | | |
 
 ## Associations
 

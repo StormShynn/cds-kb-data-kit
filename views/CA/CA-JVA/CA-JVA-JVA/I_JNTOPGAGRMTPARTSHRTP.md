@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JntOpgAgrmt` | ✓ | |  |  |
-| `JntOpgAgrmtEquityGrp` | ✓ | |  |  |
-| `JointVenturePartner` | ✓ | |  |  |
-| `JntVntrEquityShare` |  | |  |  |
-| `JntVntrOwnrIsSuspended` |  | |  |  |
-| `JntVntrOwnrSuspendedPerd` |  | |  |  |
-| `JntVntrOwnrSuspendedYr` |  | |  |  |
-| `JntVntrOwnrIsNotSuspended` |  | |  |  |
-| `JntVntrOwnrNotSuspendedPerd` |  | |  |  |
-| `JntVntrOwnrNotSuspendedYr` |  | |  |  |
-| `JntVntrPayIsStppd` |  | |  |  |
-| `JntVntrOperatorAddressArea` |  | |  |  |
-| `_JntOpgAgrmtEquityGrp` | | ✓ | | |
-| `_JntOpgAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  |  |  |  |
+| `JointVenturePartner` | ✓ | |  |  |  |  |
+| `JntVntrEquityShare` |  | |  |  |  |  |
+| `JntVntrOwnrIsSuspended` |  | |  |  |  |  |
+| `JntVntrOwnrSuspendedPerd` |  | |  |  |  |  |
+| `JntVntrOwnrSuspendedYr` |  | |  |  |  |  |
+| `JntVntrOwnrIsNotSuspended` |  | |  |  |  |  |
+| `JntVntrOwnrNotSuspendedPerd` |  | |  |  |  |  |
+| `JntVntrOwnrNotSuspendedYr` |  | |  |  |  |  |
+| `JntVntrPayIsStppd` |  | |  |  |  |  |
+| `JntVntrOperatorAddressArea` |  | |  |  |  |  |
+| `_JntOpgAgrmtEquityGrp` | | ✓ | | | | |
+| `_JntOpgAgrmt` | | ✓ | | | | |
 
 ## Source Code
 

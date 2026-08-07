@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarConfignTblName` | ✓ | |  |  |
-| `Characteristic` | ✓ | |  |  |
-| `VarConfignTblColumnPosition` |  | |  |  |
-| `VarConfignTblCstmStorFieldName` |  | |  |  |
-| `CharcInternalID` |  | |  |  |
-| `_Table` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |  |  |
+| `Characteristic` | ✓ | |  |  |  |  |
+| `VarConfignTblColumnPosition` |  | |  |  |  |  |
+| `VarConfignTblCstmStorFieldName` |  | |  |  |  |  |
+| `CharcInternalID` |  | |  |  |  |  |
+| `_Table` | | ✓ | | | | |
 
 ## Source Code
 

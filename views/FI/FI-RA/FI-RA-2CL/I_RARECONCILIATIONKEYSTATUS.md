@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RevnAcctgRecnclnKeyStatus` | ✓ | |  | `cast(dd07l.domvalue_l as farr_recon_key_status)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RevnAcctgRecnclnKeyStatus` | ✓ | |  | `cast(dd07l.domvalue_l as farr_recon_key_status)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cvlang` |
-| `InternalDocumentStatus` | ✓ | |  | `dokst` |
-| `ExternalDocumentStatus` |  | |  | `stabk` |
-| `DocumentStatusName` |  | |  | `dostx` |
-| `_DocStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cvlang` |  |  |
+| `InternalDocumentStatus` | ✓ | |  | `dokst` |  |  |
+| `ExternalDocumentStatus` |  | |  | `stabk` |  |  |
+| `DocumentStatusName` |  | |  | `dostx` |  |  |
+| `_DocStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

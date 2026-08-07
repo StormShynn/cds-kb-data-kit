@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalScoreOutputStatus` | ✓ | |  | `cast ( dd07l.domvalue_l as mmpur_ana_de_se_output_status )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalScoreOutputStatus` | ✓ | |  | `cast ( dd07l.domvalue_l as mmpur_ana_de_se_output_status )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

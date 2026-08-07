@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeDocumentControllingArea` | ✓ | |  |  |
-| `ChangeDocumentCostCenter` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocumentCostCenter as kostl )` |
-| `ChangeDocumentValidityEndDate` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocumentValidityEndDate as costcentervalidityenddate )` |
-| `ChangeDocValidityStartDate` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocValidityStartDate as costcentervaliditystartdate )` |
-| `ChangeDocObject` | ✓ | |  |  |
-| `ChangeDocument` | ✓ | |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |
-| `ChangeDocItemChangeType` | ✓ | |  |  |
-| `ChangeDocObjectClass` |  | |  |  |
-| `DatabaseTable` |  | |  |  |
-| `ChangeDocTableKey` |  | |  |  |
-| `ChangeDocPreviousUnit` |  | |  |  |
-| `ChangeDocNewUnit` |  | |  |  |
-| `ChangeDocPreviousCurrency` |  | |  |  |
-| `ChangeDocNewCurrency` |  | |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `ChangeDocLanguage` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeDocumentControllingArea` | ✓ | |  |  |  |  |
+| `ChangeDocumentCostCenter` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocumentCostCenter as kostl )` |  |  |
+| `ChangeDocumentValidityEndDate` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocumentValidityEndDate as costcentervalidityenddate )` |  |  |
+| `ChangeDocValidityStartDate` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocValidityStartDate as costcentervaliditystartdate )` |  |  |
+| `ChangeDocObject` | ✓ | |  |  |  |  |
+| `ChangeDocument` | ✓ | |  |  |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |  |  |
+| `ChangeDocObjectClass` |  | |  |  |  |  |
+| `DatabaseTable` |  | |  |  |  |  |
+| `ChangeDocTableKey` |  | |  |  |  |  |
+| `ChangeDocPreviousUnit` |  | |  |  |  |  |
+| `ChangeDocNewUnit` |  | |  |  |  |  |
+| `ChangeDocPreviousCurrency` |  | |  |  |  |  |
+| `ChangeDocNewCurrency` |  | |  |  |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `ChangeDocLanguage` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
 
 ## Associations
 

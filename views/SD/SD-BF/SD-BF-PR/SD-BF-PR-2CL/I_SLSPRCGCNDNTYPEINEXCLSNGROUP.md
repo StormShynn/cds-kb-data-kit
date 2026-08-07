@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionUsage` | ✓ | |  |  |
-| `ConditionApplication` | ✓ | |  |  |
-| `ConditionExclusionGroup` | ✓ | |  |  |
-| `ConditionType` | ✓ | |  |  |
-| `_SlsPrcgCndnExclusionGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  |  |  |  |
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `ConditionExclusionGroup` | ✓ | |  |  |  |  |
+| `ConditionType` | ✓ | |  |  |  |  |
+| `_SlsPrcgCndnExclusionGroup` | | ✓ | | | | |
 
 ## Associations
 

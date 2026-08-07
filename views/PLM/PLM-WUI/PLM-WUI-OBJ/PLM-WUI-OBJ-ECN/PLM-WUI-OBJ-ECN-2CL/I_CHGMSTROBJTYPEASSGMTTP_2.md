@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumber` | ✓ | |  |  |
-| `ChangeNumberObjectType` | ✓ | |  |  |
-| `SAPObjectType` | ✓ | |  |  |
-| `IsActiveForChangeNumber` |  | |  |  |
-| `IsLockedForChanges` |  | |  |  |
-| `IsPartiallyDisplayed` |  | |  |  |
-| `ObjMgmtRecdIsRequired` |  | |  |  |
-| `ObjMgmtRecdIsGenerated` |  | |  |  |
-| `ObjMgmtRecdIsAutomlyCrted` |  | |  |  |
-| `ObjMgmtRecdIsAutomlyCrtedByDlg` |  | |  |  |
-| `ObjectTypeCreationDate` |  | |  |  |
-| `ObjectTypeCreatedByUser` |  | |  |  |
-| `ObjectTypeLastChangedDate` |  | |  |  |
-| `ObjectTypeLastChangedByUser` |  | |  |  |
-| `ChangeNumberLastChgdDateTime` |  | |  |  |
-| `_ChangeMaster` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ChangeNumberObjectType` | ✓ | |  |  |  |  |
+| `SAPObjectType` | ✓ | |  |  |  |  |
+| `IsActiveForChangeNumber` |  | |  |  |  |  |
+| `IsLockedForChanges` |  | |  |  |  |  |
+| `IsPartiallyDisplayed` |  | |  |  |  |  |
+| `ObjMgmtRecdIsRequired` |  | |  |  |  |  |
+| `ObjMgmtRecdIsGenerated` |  | |  |  |  |  |
+| `ObjMgmtRecdIsAutomlyCrted` |  | |  |  |  |  |
+| `ObjMgmtRecdIsAutomlyCrtedByDlg` |  | |  |  |  |  |
+| `ObjectTypeCreationDate` |  | |  |  |  |  |
+| `ObjectTypeCreatedByUser` |  | |  |  |  |  |
+| `ObjectTypeLastChangedDate` |  | |  |  |  |  |
+| `ObjectTypeLastChangedByUser` |  | |  |  |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |  |  |
+| `_ChangeMaster` | | ✓ | | | | |
 
 ## Source Code
 

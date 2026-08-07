@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `InspLotMatlDocItem` | ✓ | |  |  |
-| `InspLotMatlDocItemType` |  | |  |  |
-| `InspLotMatlDocItmQtyUnit` |  | |  |  |
-| `InspLotQtyPosted` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `InspLotMaterialPostedTo` |  | |  |  |
-| `InspLotBatchTransferredTo` |  | |  |  |
-| `MaterialDocumentItemText` |  | |  |  |
-| `UsageDecisionStockType` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `_InspectionLot` | | ✓ | | |
-| `_InspLotMatlDocItmSrlNmbr` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `InspLotMatlDocItem` | ✓ | |  |  |  |  |
+| `InspLotMatlDocItemType` |  | |  |  |  |  |
+| `InspLotMatlDocItmQtyUnit` |  | |  |  |  |  |
+| `InspLotQtyPosted` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `InspLotMaterialPostedTo` |  | |  |  |  |  |
+| `InspLotBatchTransferredTo` |  | |  |  |  |  |
+| `MaterialDocumentItemText` |  | |  |  |  |  |
+| `UsageDecisionStockType` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `_InspectionLot` | | ✓ | | | | |
+| `_InspLotMatlDocItmSrlNmbr` | | ✓ | | | | |
 
 ## Source Code
 

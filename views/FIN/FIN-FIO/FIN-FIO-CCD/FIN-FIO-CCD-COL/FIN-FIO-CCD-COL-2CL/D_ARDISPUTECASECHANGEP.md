@@ -26,29 +26,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DisputeCaseUUID` |  | |  | `scmg_case_guid` |
-| `DisputeCaseCoordinator` |  | |  | `udm_coordinator` |
-| `DisputeCaseRootCause` |  | |  | `udm_root_ccode` |
-| `CaseProcessingDeadlineDate` |  | |  | `udm_due_date` |
-| `CustomerDisputedAmount` |  | |  | `udm_custdisp_amt` |
-| `CustomerDisputedCurrency` |  | |  | `udm_custdisp_curr` |
-| `ContactPersonName` |  | |  | `udm_contact_name` |
-| `ContactPersonEmailAddress` |  | |  | `udm_contact_email` |
-| `ContactPersonPhoneNumber` |  | |  | `udm_contact_phone` |
-| `CaseExternalReference` |  | |  | `scmg_ext_ref` |
-| `CasePlannedCloseDate` |  | |  | `scmg_plan_end_date` |
-| `CaseProcessor` |  | |  | `scmg_processor` |
-| `CaseResponsible` |  | |  | `scmg_responsible` |
-| `CaseTitle` |  | |  | `scmg_case_title` |
-| `CaseEscalationReason` |  | |  | `scmg_escal_reason` |
-| `CaseCategory` |  | |  | `scmg_category` |
-| `CasePriority` |  | |  | `scmg_priority` |
-| `CaseStatus` |  | |  | `scmgstatusonr` |
-| `CaseReason` |  | |  | `scmg_reason_code` |
-| `D_ARDisputeCaseChangeNoteP` |  | |  | `_Notes : composition [0..*] of D_ARDisputeCaseChangeNoteP` |
-| `D_ARDisputeCaseChangeAttchP` |  | |  | `_Attachments : composition [0..*] of D_ARDisputeCaseChangeAttchP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DisputeCaseUUID` |  | |  | `scmg_case_guid` |  |  |
+| `DisputeCaseCoordinator` |  | |  | `udm_coordinator` |  |  |
+| `DisputeCaseRootCause` |  | |  | `udm_root_ccode` |  |  |
+| `CaseProcessingDeadlineDate` |  | |  | `udm_due_date` |  |  |
+| `CustomerDisputedAmount` |  | |  | `udm_custdisp_amt` |  |  |
+| `CustomerDisputedCurrency` |  | |  | `udm_custdisp_curr` |  |  |
+| `ContactPersonName` |  | |  | `udm_contact_name` |  |  |
+| `ContactPersonEmailAddress` |  | |  | `udm_contact_email` |  |  |
+| `ContactPersonPhoneNumber` |  | |  | `udm_contact_phone` |  |  |
+| `CaseExternalReference` |  | |  | `scmg_ext_ref` |  |  |
+| `CasePlannedCloseDate` |  | |  | `scmg_plan_end_date` |  |  |
+| `CaseProcessor` |  | |  | `scmg_processor` |  |  |
+| `CaseResponsible` |  | |  | `scmg_responsible` |  |  |
+| `CaseTitle` |  | |  | `scmg_case_title` |  |  |
+| `CaseEscalationReason` |  | |  | `scmg_escal_reason` |  |  |
+| `CaseCategory` |  | |  | `scmg_category` |  |  |
+| `CasePriority` |  | |  | `scmg_priority` |  |  |
+| `CaseStatus` |  | |  | `scmgstatusonr` |  |  |
+| `CaseReason` |  | |  | `scmg_reason_code` |  |  |
+| `D_ARDisputeCaseChangeNoteP` |  | |  | `_Notes : composition [0..*] of D_ARDisputeCaseChangeNoteP` |  |  |
+| `D_ARDisputeCaseChangeAttchP` |  | |  | `_Attachments : composition [0..*] of D_ARDisputeCaseChangeAttchP` |  |  |
 
 ## Source Code
 

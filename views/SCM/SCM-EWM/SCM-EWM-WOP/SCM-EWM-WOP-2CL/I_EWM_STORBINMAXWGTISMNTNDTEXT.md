@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `EWMStorageBinMaxWeightIsMntnd` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as ewm_de_storbinmaxweightismaint preserving type )` |
-| `EWMStorBinMaxWeightMntndDesc` |  | |  | `cast( ddtext as ewm_de_storbinmaxwgtmaintdesc preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `EWMStorageBinMaxWeightIsMntnd` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as ewm_de_storbinmaxweightismaint preserving type )` |  |  |
+| `EWMStorBinMaxWeightMntndDesc` |  | |  | `cast( ddtext as ewm_de_storbinmaxwgtmaintdesc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

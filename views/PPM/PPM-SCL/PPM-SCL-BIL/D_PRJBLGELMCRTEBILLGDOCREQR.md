@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentRequest` |  | |  | `vbeln` |
-| `ProjectBillingRequest` |  | |  | `bdr_ref` |
-| `ProjBillgElmntEntrItmFlowUUID` |  | |  | `pbee_uuid` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentRequest` |  | |  | `vbeln` |  |  |
+| `ProjectBillingRequest` |  | |  | `bdr_ref` |  |  |
+| `ProjBillgElmntEntrItmFlowUUID` |  | |  | `pbee_uuid` |  |  |
 
 ## Source Code
 

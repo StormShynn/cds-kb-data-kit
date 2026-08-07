@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `ConsolidationUnitHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_consolidationunithier preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `ConsolidationUnitHierarchyText` |  | | `_HierarchyText` | `UniversalHierarchyText` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `ConsolidationUnitHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_consolidationunithier preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `ConsolidationUnitHierarchyText` |  | | `_HierarchyText` | `UniversalHierarchyText` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Source Code
 

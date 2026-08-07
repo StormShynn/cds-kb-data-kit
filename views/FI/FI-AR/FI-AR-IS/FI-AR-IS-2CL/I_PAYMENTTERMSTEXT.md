@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `PaymentTerms` | ✓ | |  |  |
-| `PaymentTermsName` |  | | `_CustomerPaymentTermsText` | `CustomerPaymentTermsName` |
-| `PaymentTermsDescription` |  | |  | `cast( PaymentTermsDescription as farp_paytterms_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_CustomerPaymentTermsText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `PaymentTerms` | ✓ | |  |  |  |  |
+| `PaymentTermsName` |  | | `_CustomerPaymentTermsText` | `CustomerPaymentTermsName` |  |  |
+| `PaymentTermsDescription` |  | |  | `cast( PaymentTermsDescription as farp_paytterms_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_CustomerPaymentTermsText` | | ✓ | | | | |
 
 ## Associations
 

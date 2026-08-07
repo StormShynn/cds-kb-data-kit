@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgReqStatus` | ✓ | |  | `cast( substring( dd07l.domvalue_l,1,1 ) as billreqstatus_kk preserving type )` |
-| `_CABillgReqStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgReqStatus` | ✓ | |  | `cast( substring( dd07l.domvalue_l,1,1 ) as billreqstatus_kk preserving type )` |  |  |
+| `_CABillgReqStatusText` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryReferenceCategory` | ✓ | |  | `reftyp` |
-| `Language` | ✓ | |  | `spras` |
-| `TreasuryReferenceCategoryName` |  | |  | `txt30` |
-| `TrsyReferenceCategoryShortName` |  | |  | `txt15` |
-| `_TreasuryReferenceCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryReferenceCategory` | ✓ | |  | `reftyp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TreasuryReferenceCategoryName` |  | |  | `txt30` |  |  |
+| `TrsyReferenceCategoryShortName` |  | |  | `txt15` |  |  |
+| `_TreasuryReferenceCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceConfirmation` | ✓ | |  |  |
-| `SrvcDocAppointmentType` | ✓ | |  |  |
-| `SrvcDocApptStartDateTime` |  | |  |  |
-| `SrvcDocApptEndDateTime` |  | |  |  |
-| `_ServiceConfirmationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |  |  |
+| `SrvcDocAppointmentType` | ✓ | |  |  |  |  |
+| `SrvcDocApptStartDateTime` |  | |  |  |  |  |
+| `SrvcDocApptEndDateTime` |  | |  |  |  |  |
+| `_ServiceConfirmationTP` | | ✓ | | | | |
 
 ## Source Code
 

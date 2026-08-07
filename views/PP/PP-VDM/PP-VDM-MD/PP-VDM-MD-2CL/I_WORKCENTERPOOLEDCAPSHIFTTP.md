@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityInternalID` | ✓ | |  |  |
-| `CapacityActiveVersion` | ✓ | |  |  |
-| `IntervalEndDate` | ✓ | |  |  |
-| `WeekDay` | ✓ | |  |  |
-| `AvailableCapacityShift` | ✓ | |  |  |
-| `IntervalStartDate` |  | |  |  |
-| `WorkDayRule` |  | |  |  |
-| `ShiftDefinition` |  | |  |  |
-| `ShiftStartTime` |  | |  |  |
-| `ShiftEndTime` |  | |  |  |
-| `ShiftDefValidityStartDate` |  | |  |  |
-| `ShiftDefValidityEndDate` |  | |  |  |
-| `CapacityNumberOfCapacities` |  | |  |  |
-| `CapacityPlanUtilizationPercent` |  | |  |  |
-| `CapacityBreakDuration` |  | |  |  |
-| `OperatingDurationInSeconds` |  | |  |  |
-| `TotOperatingDurationInSeconds` |  | |  |  |
-| `CapacityLastChangeDateTime` |  | |  |  |
-| `_Interval` | | ✓ | | |
-| `_Header` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  |  |  |  |
+| `CapacityActiveVersion` | ✓ | |  |  |  |  |
+| `IntervalEndDate` | ✓ | |  |  |  |  |
+| `WeekDay` | ✓ | |  |  |  |  |
+| `AvailableCapacityShift` | ✓ | |  |  |  |  |
+| `IntervalStartDate` |  | |  |  |  |  |
+| `WorkDayRule` |  | |  |  |  |  |
+| `ShiftDefinition` |  | |  |  |  |  |
+| `ShiftStartTime` |  | |  |  |  |  |
+| `ShiftEndTime` |  | |  |  |  |  |
+| `ShiftDefValidityStartDate` |  | |  |  |  |  |
+| `ShiftDefValidityEndDate` |  | |  |  |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |  |  |
+| `CapacityBreakDuration` |  | |  |  |  |  |
+| `OperatingDurationInSeconds` |  | |  |  |  |  |
+| `TotOperatingDurationInSeconds` |  | |  |  |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |  |  |
+| `_Interval` | | ✓ | | | | |
+| `_Header` | | ✓ | | | | |
 
 ## Source Code
 

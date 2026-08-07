@@ -31,27 +31,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `SupplierInvoiceItem` | ✓ | |  |  |
-| `Material` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  | `SuplrInvcItemMaterialPlant` |
-| `InventoryValuationType` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `IsNotCashDiscountLiable` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `TaxDeterminationDate` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `SupplierInvoiceItemAmount` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `_SupplierInvoiceAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  | `SuplrInvcItemMaterialPlant` |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `TaxDeterminationDate` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | | | |
 
 ## Associations
 

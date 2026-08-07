@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SDDocumentRejectionStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `SDDocumentRejectionStatusDesc` |  | |  | `bezei` |
-| `_SDDocumentRejectionStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SDDocumentRejectionStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SDDocumentRejectionStatusDesc` |  | |  | `bezei` |  |  |
+| `_SDDocumentRejectionStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

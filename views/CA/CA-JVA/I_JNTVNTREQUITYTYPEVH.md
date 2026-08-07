@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JointVentureEquityType` | ✓ | |  | `etype` |
-| `_CompanyCode` | | ✓ | | |
-| `_JntVntrEquityTypeDesc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JointVentureEquityType` | ✓ | |  | `etype` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntVntrEquityTypeDesc` | | ✓ | | | | |
 
 ## Associations
 

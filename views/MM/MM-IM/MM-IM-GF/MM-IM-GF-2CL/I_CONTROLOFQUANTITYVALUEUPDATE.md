@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ValuationArea` | ✓ | |  | `bwkey` |
-| `ProductType` | ✓ | |  | `cast(mtart as producttype preserving type )` |
-| `QuantityUpdateIsActive` |  | |  | `mengu` |
-| `ValueUpdateIsActive` |  | |  | `wertu` |
-| `PipelineHndlgIsMand` |  | |  | `kzpip` |
-| `PipelineHndlgIsAllowed` |  | |  | `xpizu` |
-| `_ValuationArea` | | ✓ | | |
-| `_ProductType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationArea` | ✓ | |  | `bwkey` |  |  |
+| `ProductType` | ✓ | |  | `cast(mtart as producttype preserving type )` |  |  |
+| `QuantityUpdateIsActive` |  | |  | `mengu` |  |  |
+| `ValueUpdateIsActive` |  | |  | `wertu` |  |  |
+| `PipelineHndlgIsMand` |  | |  | `kzpip` |  |  |
+| `PipelineHndlgIsAllowed` |  | |  | `xpizu` |  |  |
+| `_ValuationArea` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,103 +31,103 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StockTransportOrder` | ✓ | |  |  |
-| `StockTransportOrderItem` | ✓ | |  |  |
-| `PricingDocument` | ✓ | |  |  |
-| `PricingDocumentItem` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `PriceConditionDeterminationDte` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionBaseAmount` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionToBaseQtyNmrtr` |  | |  |  |
-| `ConditionToBaseQtyDnmntr` |  | |  |  |
-| `ConditionCategory` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `IsRelevantForAccrual` |  | |  |  |
-| `CndnIsRelevantForInvoiceList` |  | |  |  |
-| `ConditionOrigin` |  | |  |  |
-| `IsGroupCondition` |  | |  |  |
-| `AccessNumberOfAccessSequence` |  | |  |  |
-| `ConditionRecord` |  | |  |  |
-| `ConditionSequentialNumber` |  | |  |  |
-| `AccountKeyForGLAccount` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `AcctKeyForAccrualsGLAccount` |  | |  |  |
-| `AccrualsGLAccount` |  | |  |  |
-| `WithholdingTaxCode` |  | |  |  |
-| `FreightSupplier` |  | |  |  |
-| `CndnRoundingOffDiffAmount` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionControl` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `ConditionClass` |  | |  |  |
-| `PrcgProcedureCounterForHeader` |  | |  |  |
-| `FactorForConditionBasisValue` |  | |  |  |
-| `StructureCondition` |  | |  |  |
-| `PeriodFactorForCndnBasisValue` |  | |  |  |
-| `PricingScaleBasis` |  | |  |  |
-| `ConditionScaleBasisCurrency` |  | |  |  |
-| `ConditionAlternativeCurrency` |  | |  |  |
-| `ConditionAmountInLocalCrcy` |  | |  |  |
-| `CndnIsRelevantForIntcoBilling` |  | |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |
-| `BillingPriceSource` |  | |  |  |
-| `TaxJurisdictionLevel` |  | |  |  |
-| `ConditionByteSequence` |  | |  |  |
-| `CndnIsRelevantForLimitValue` |  | |  |  |
-| `ConditionBasisLimitExceeded` |  | |  |  |
-| `ConditionAmountLimitExceeded` |  | |  |  |
-| `CustomerRebateRecipient` |  | |  |  |
-| `ConditionIsForConfiguration` |  | |  |  |
-| `VariantCondition` |  | |  |  |
-| `ConditionAcctAssgmtRelevance` |  | |  |  |
-| `ConditionMatrixMaintRelevance` |  | |  |  |
-| `ConfigblParametersAndFormulas` |  | |  |  |
-| `ConditionAdjustedQuantity` |  | |  |  |
-| `ConditionTypeName` |  | |  |  |
-| `TaxCodeName` |  | |  |  |
-| `ConditionIsDeletable` |  | |  |  |
-| `PricingProcedure` |  | |  |  |
-| `_StockTransportOrderItem` | | ✓ | | |
-| `_StockTransportOrder` | | ✓ | | |
-| `_BillingPriceSource` | | ✓ | | |
-| `_ConditionAcctAssgmtRelevance` | | ✓ | | |
-| `_ConditionAlternativeCurrency` | | ✓ | | |
-| `_ConditionAmountLimitExceeded` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
-| `_ConditionBasisLimitExceeded` | | ✓ | | |
-| `_ConditionCalculationType` | | ✓ | | |
-| `_ConditionCategory` | | ✓ | | |
-| `_ConditionClass` | | ✓ | | |
-| `_ConditionControl` | | ✓ | | |
-| `_ConditionCurrency` | | ✓ | | |
-| `_ConditionInactiveReason` | | ✓ | | |
-| `_ConditionOrigin` | | ✓ | | |
-| `_ConditionQuantityUnit` | | ✓ | | |
-| `_ConditionRateRatioUnit` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_PricingConditionType` | | ✓ | | |
-| `_PricingScaleBasis` | | ✓ | | |
-| `_ScaleCurrency` | | ✓ | | |
-| `_StructureCondition` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_VariantCondition` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |  |  |
+| `StockTransportOrderItem` | ✓ | |  |  |  |  |
+| `PricingDocument` | ✓ | |  |  |  |  |
+| `PricingDocumentItem` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionBaseAmount` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |  |  |
+| `ConditionCategory` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `IsRelevantForAccrual` |  | |  |  |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |  |  |
+| `ConditionOrigin` |  | |  |  |  |  |
+| `IsGroupCondition` |  | |  |  |  |  |
+| `AccessNumberOfAccessSequence` |  | |  |  |  |  |
+| `ConditionRecord` |  | |  |  |  |  |
+| `ConditionSequentialNumber` |  | |  |  |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `AcctKeyForAccrualsGLAccount` |  | |  |  |  |  |
+| `AccrualsGLAccount` |  | |  |  |  |  |
+| `WithholdingTaxCode` |  | |  |  |  |  |
+| `FreightSupplier` |  | |  |  |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionControl` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `ConditionClass` |  | |  |  |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |  |  |
+| `StructureCondition` |  | |  |  |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |  |  |
+| `PricingScaleBasis` |  | |  |  |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |  |  |
+| `ConditionAmountInLocalCrcy` |  | |  |  |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |  |  |
+| `BillingPriceSource` |  | |  |  |  |  |
+| `TaxJurisdictionLevel` |  | |  |  |  |  |
+| `ConditionByteSequence` |  | |  |  |  |  |
+| `CndnIsRelevantForLimitValue` |  | |  |  |  |  |
+| `ConditionBasisLimitExceeded` |  | |  |  |  |  |
+| `ConditionAmountLimitExceeded` |  | |  |  |  |  |
+| `CustomerRebateRecipient` |  | |  |  |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |  |  |
+| `VariantCondition` |  | |  |  |  |  |
+| `ConditionAcctAssgmtRelevance` |  | |  |  |  |  |
+| `ConditionMatrixMaintRelevance` |  | |  |  |  |  |
+| `ConfigblParametersAndFormulas` |  | |  |  |  |  |
+| `ConditionAdjustedQuantity` |  | |  |  |  |  |
+| `ConditionTypeName` |  | |  |  |  |  |
+| `TaxCodeName` |  | |  |  |  |  |
+| `ConditionIsDeletable` |  | |  |  |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `_StockTransportOrderItem` | | ✓ | | | | |
+| `_StockTransportOrder` | | ✓ | | | | |
+| `_BillingPriceSource` | | ✓ | | | | |
+| `_ConditionAcctAssgmtRelevance` | | ✓ | | | | |
+| `_ConditionAlternativeCurrency` | | ✓ | | | | |
+| `_ConditionAmountLimitExceeded` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_ConditionBasisLimitExceeded` | | ✓ | | | | |
+| `_ConditionCalculationType` | | ✓ | | | | |
+| `_ConditionCategory` | | ✓ | | | | |
+| `_ConditionClass` | | ✓ | | | | |
+| `_ConditionControl` | | ✓ | | | | |
+| `_ConditionCurrency` | | ✓ | | | | |
+| `_ConditionInactiveReason` | | ✓ | | | | |
+| `_ConditionOrigin` | | ✓ | | | | |
+| `_ConditionQuantityUnit` | | ✓ | | | | |
+| `_ConditionRateRatioUnit` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_PricingConditionType` | | ✓ | | | | |
+| `_PricingScaleBasis` | | ✓ | | | | |
+| `_ScaleCurrency` | | ✓ | | | | |
+| `_StructureCondition` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_VariantCondition` | | ✓ | | | | |
 
 ## Source Code
 

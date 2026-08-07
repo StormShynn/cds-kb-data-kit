@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PropagatePrftbltySgmt2BOM` | ✓ | |  | `cast (substring(dd07l.domvalue_l, 1, 1 ) as sd_sls_propagate_paobjnr_bom preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PropagatePrftbltySgmt2BOM` | ✓ | |  | `cast (substring(dd07l.domvalue_l, 1, 1 ) as sd_sls_propagate_paobjnr_bom preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

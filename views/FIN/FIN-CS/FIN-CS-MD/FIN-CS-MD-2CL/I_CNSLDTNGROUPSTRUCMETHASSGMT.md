@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |
-| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |
-| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |
-| `GroupStrucFromFiscalYearPeriod` | ✓ | | `_Source` | `GroupStrucFromFiscalYearPeriod` |
-| `MethAssgmtFromFiscalYearPeriod` | ✓ | | `_Source` | `MethAssgmtFromFiscalYearPeriod` |
-| `MethAssgmtToFiscalYearPeriod` |  | | `_Source` | `MethAssgmtToFiscalYearPeriod` |
-| `ConsolidationInvestmentMethod` |  | | `_Source` | `ConsolidationInvestmentMethod` |
-| `AccountingTechnique` |  | | `_Source` | `AccountingTechnique` |
-| `MethChangeIsAtBeginOfPeriod` |  | | `_Source` | `MethChangeIsAtBeginOfPeriod` |
-| `_CnsldtnVersion` | | ✓ | | |
-| `_CnsldtnGroup` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
-| `_CnsldtnInvestmentMethod` | | ✓ | | |
-| `_CnsldtnGroupStructure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |  |  |
+| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |  |  |
+| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |  |  |
+| `GroupStrucFromFiscalYearPeriod` | ✓ | | `_Source` | `GroupStrucFromFiscalYearPeriod` |  |  |
+| `MethAssgmtFromFiscalYearPeriod` | ✓ | | `_Source` | `MethAssgmtFromFiscalYearPeriod` |  |  |
+| `MethAssgmtToFiscalYearPeriod` |  | | `_Source` | `MethAssgmtToFiscalYearPeriod` |  |  |
+| `ConsolidationInvestmentMethod` |  | | `_Source` | `ConsolidationInvestmentMethod` |  |  |
+| `AccountingTechnique` |  | | `_Source` | `AccountingTechnique` |  |  |
+| `MethChangeIsAtBeginOfPeriod` |  | | `_Source` | `MethChangeIsAtBeginOfPeriod` |  |  |
+| `_CnsldtnVersion` | | ✓ | | | | |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
+| `_CnsldtnInvestmentMethod` | | ✓ | | | | |
+| `_CnsldtnGroupStructure` | | ✓ | | | | |
 
 ## Source Code
 

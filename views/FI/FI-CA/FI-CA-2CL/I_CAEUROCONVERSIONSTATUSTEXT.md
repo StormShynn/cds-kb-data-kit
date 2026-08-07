@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAStatusOfEuroConversion` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as eurou_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAStatusOfEuroConversionText` |  | |  | `cast( ddtext as eurou_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAStatusOfEuroConversion` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as eurou_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAStatusOfEuroConversionText` |  | |  | `cast( ddtext as eurou_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

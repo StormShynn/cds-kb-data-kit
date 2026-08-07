@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `ControlRecipeDestination` | ✓ | |  | `cast(tc52.phseq as vdm_phseq preserving type)` |
-| `ControlRecipeDestinationType` |  | |  | `comty` |
-| `ControlRecipeDestinationName` |  | |  | `sebez` |
-| `DigitalSignatureIsRequired` |  | |  | `elec_sign` |
-| `NumberOfPhasesDisplayed` |  | |  | `vis_phases` |
-| `_Plant` | | ✓ | | |
-| `_Type` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `ControlRecipeDestination` | ✓ | |  | `cast(tc52.phseq as vdm_phseq preserving type)` |  |  |
+| `ControlRecipeDestinationType` |  | |  | `comty` |  |  |
+| `ControlRecipeDestinationName` |  | |  | `sebez` |  |  |
+| `DigitalSignatureIsRequired` |  | |  | `elec_sign` |  |  |
+| `NumberOfPhasesDisplayed` |  | |  | `vis_phases` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Type` | | ✓ | | | | |
 
 ## Associations
 

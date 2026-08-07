@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BusinessPartnerOccupation` | ✓ | |  | `jobgr` |
-| `OccupationDescription` |  | |  | `bez30` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BusinessPartnerOccupation` | ✓ | |  | `jobgr` |  |  |
+| `OccupationDescription` |  | |  | `bez30` |  |  |
 
 ## Source Code
 

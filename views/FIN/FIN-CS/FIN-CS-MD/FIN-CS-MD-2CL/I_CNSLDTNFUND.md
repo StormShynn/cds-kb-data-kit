@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialManagementArea` | ✓ | |  | `cast(_source.FinancialManagementArea as fincs_financialmanagementarea preserving type )` |
-| `Fund` |  | |  | `}] key cast( _source.Fund as fincs_fund preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `CreationDateTime` |  | |  | `cast( min ( _source.CreationDateTime ) as fincs_creationdatetime preserving type )` |
-| `_FinancialManagementArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_HierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  | `cast(_source.FinancialManagementArea as fincs_financialmanagementarea preserving type )` |  |  |
+| `Fund` | ✓ | |  | `cast( _source.Fund as fincs_fund preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |  |  |
+| `CreationDateTime` |  | |  | `cast( min ( _source.CreationDateTime ) as fincs_creationdatetime preserving type )` |  |  |
+| `_FinancialManagementArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_HierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

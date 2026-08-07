@@ -30,96 +30,96 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceItem` | ✓ | |  |  |
-| `MaintenanceItemDescription` |  | |  |  |
-| `MaintenanceStrategy` |  | |  |  |
-| `MaintenancePlanCategory` |  | |  |  |
-| `MaintenancePlanCallObject` |  | |  |  |
-| `MaintItemCausesAreDisplayed` |  | |  |  |
-| `MaintItemReasonsAreDisplayed` |  | |  |  |
-| `MaintenancePlan` |  | |  |  |
-| `MaintenancePlanItemPosition` |  | |  |  |
-| `MaintenancePlanType` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
-| `TechnicalObject` |  | |  |  |
-| `TechnicalObjectLabel` |  | |  |  |
-| `TechnicalObjectDescription` |  | |  |  |
-| `MaintItemHasObjectList` |  | |  |  |
-| `MaintenanceItemObjectList` |  | |  |  |
-| `TaskListType` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `OperationSystemCondition` |  | |  |  |
-| `NumberOfTaskListExecutions` |  | |  |  |
-| `TaskListKeyDate` |  | |  |  |
-| `TaskList` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintenanceOrderType` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `MainWorkCenter` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `MaintPriority` |  | |  |  |
-| `AdditionalDeviceData` |  | |  |  |
-| `MaintPriorityType` |  | |  |  |
-| `NotificationType` |  | |  |  |
-| `ImmediateReleaseIsBlocked` |  | |  |  |
-| `MaintenanceItemHasLongText` |  | |  |  |
-| `SettlementRuleIsMaintained` |  | |  |  |
-| `MaintNotifTskIsAutomlyDtmnd` |  | |  |  |
-| `Material` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceContract` |  | |  |  |
-| `ServiceContractItem` |  | |  |  |
-| `ServiceOrderTemplate` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `Product` |  | |  |  |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `AssetLocation` |  | |  |  |
-| `AssetRoom` |  | |  |  |
-| `PlantSection` |  | |  |  |
-| `PlantSectionDesc` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `LocAcctAssgmtWorkCtrTypeCode` |  | |  |  |
-| `ABCIndicator` |  | |  |  |
-| `MaintObjectFreeDefinedAttrib` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `LocAcctAssgmtBusinessArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `StandingOrderNumber` |  | |  |  |
-| `SettlementOrder` |  | |  |  |
-| `CycleSetSequence` |  | |  |  |
-| `OrderCategoryScreenTypeCode` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_FunctionalLocation` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_ServiceContract` | | ✓ | | |
-| `_MaintItemObjectListItem` | | ✓ | | |
-| `_MaintenanceItemReason` | | ✓ | | |
-| `_MaintenanceItemCause` | | ✓ | | |
-| `_LongText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |  |  |
+| `MaintenanceItemDescription` |  | |  |  |  |  |
+| `MaintenanceStrategy` |  | |  |  |  |  |
+| `MaintenancePlanCategory` |  | |  |  |  |  |
+| `MaintenancePlanCallObject` |  | |  |  |  |  |
+| `MaintItemCausesAreDisplayed` |  | |  |  |  |  |
+| `MaintItemReasonsAreDisplayed` |  | |  |  |  |  |
+| `MaintenancePlan` |  | |  |  |  |  |
+| `MaintenancePlanItemPosition` |  | |  |  |  |  |
+| `MaintenancePlanType` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |  |  |
+| `TechnicalObject` |  | |  |  |  |  |
+| `TechnicalObjectLabel` |  | |  |  |  |  |
+| `TechnicalObjectDescription` |  | |  |  |  |  |
+| `MaintItemHasObjectList` |  | |  |  |  |  |
+| `MaintenanceItemObjectList` |  | |  |  |  |  |
+| `TaskListType` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `OperationSystemCondition` |  | |  |  |  |  |
+| `NumberOfTaskListExecutions` |  | |  |  |  |  |
+| `TaskListKeyDate` |  | |  |  |  |  |
+| `TaskList` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintenanceOrderType` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `MainWorkCenter` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `MaintPriority` |  | |  |  |  |  |
+| `AdditionalDeviceData` |  | |  |  |  |  |
+| `MaintPriorityType` |  | |  |  |  |  |
+| `NotificationType` |  | |  |  |  |  |
+| `ImmediateReleaseIsBlocked` |  | |  |  |  |  |
+| `MaintenanceItemHasLongText` |  | |  |  |  |  |
+| `SettlementRuleIsMaintained` |  | |  |  |  |  |
+| `MaintNotifTskIsAutomlyDtmnd` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceContract` |  | |  |  |  |  |
+| `ServiceContractItem` |  | |  |  |  |  |
+| `ServiceOrderTemplate` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `AssetLocation` |  | |  |  |  |  |
+| `AssetRoom` |  | |  |  |  |  |
+| `PlantSection` |  | |  |  |  |  |
+| `PlantSectionDesc` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `LocAcctAssgmtWorkCtrTypeCode` |  | |  |  |  |  |
+| `ABCIndicator` |  | |  |  |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `LocAcctAssgmtBusinessArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `StandingOrderNumber` |  | |  |  |  |  |
+| `SettlementOrder` |  | |  |  |  |  |
+| `CycleSetSequence` |  | |  |  |  |  |
+| `OrderCategoryScreenTypeCode` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_ServiceContract` | | ✓ | | | | |
+| `_MaintItemObjectListItem` | | ✓ | | | | |
+| `_MaintenanceItemReason` | | ✓ | | | | |
+| `_MaintenanceItemCause` | | ✓ | | | | |
+| `_LongText` | | ✓ | | | | |
 
 ## Source Code
 

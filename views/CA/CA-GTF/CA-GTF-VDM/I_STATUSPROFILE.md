@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StatusProfile` | ✓ | |  | `stsma` |
-| `MasterLanguage` |  | |  | `pflsp` |
-| `_StatusProfileText` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatusProfile` | ✓ | |  | `stsma` |  |  |
+| `MasterLanguage` |  | |  | `pflsp` |  |  |
+| `_StatusProfileText` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

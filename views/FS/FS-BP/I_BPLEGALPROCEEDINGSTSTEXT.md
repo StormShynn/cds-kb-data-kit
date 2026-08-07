@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `BPLegalProceedingStatus` | ✓ | |  | `lgl_proc` |
-| `BPLegalProceedingStatusDesc` |  | |  | `lgl_proc_t` |
-| `_BPLegalProceedingStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `BPLegalProceedingStatus` | ✓ | |  | `lgl_proc` |  |  |
+| `BPLegalProceedingStatusDesc` |  | |  | `lgl_proc_t` |  |  |
+| `_BPLegalProceedingStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

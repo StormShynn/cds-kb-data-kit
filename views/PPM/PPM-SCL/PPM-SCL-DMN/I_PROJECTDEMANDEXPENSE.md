@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandExpenseUUID` | ✓ | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjectDemandExpenseType` |  | |  |  |
-| `ProjDmndBillingControlCategory` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_ExpenseDistribution` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandExpenseUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjectDemandExpenseType` |  | |  |  |  |  |
+| `ProjDmndBillingControlCategory` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_ExpenseDistribution` | | ✓ | | | | |
 
 ## Associations
 

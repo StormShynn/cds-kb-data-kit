@@ -29,52 +29,52 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralRequestForQuotation` | ✓ | |  |  |
-| `CentralRequestForQuotationItem` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentItemText` |  | |  |  |
-| `ProductType` |  | |  |  |
-| `ProductTypeCode` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `ManufacturerPartNmbr` |  | |  |  |
-| `Manufacturer` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ManualDeliveryAddressID` |  | |  |  |
-| `ReferenceDeliveryAddressID` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `ItemDeliveryAddressID` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
-| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
-| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `RequirementTracking` |  | |  |  |
-| `PurchasingCentralMaterial` |  | |  |  |
-| `PurchasingDocumentItemCategory` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `_CentralRequestForQuotation` | | ✓ | | |
-| `_PurchasingDocumentCategory` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_CntrlSupplierQuotationItem` | | ✓ | | |
-| `_CntrlReqForQtanScheduleLine` | | ✓ | | |
-| `_CentralRFQItemDistribution` | | ✓ | | |
-| `_ProductType` | | ✓ | | |
-| `_Manufacturer` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_PurgDocumentItemCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralRequestForQuotation` | ✓ | |  |  |  |  |
+| `CentralRequestForQuotationItem` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |  |  |
+| `ProductType` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |  |  |
+| `Manufacturer` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `RequirementTracking` |  | |  |  |  |  |
+| `PurchasingCentralMaterial` |  | |  |  |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `_CentralRequestForQuotation` | | ✓ | | | | |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_CntrlSupplierQuotationItem` | | ✓ | | | | |
+| `_CntrlReqForQtanScheduleLine` | | ✓ | | | | |
+| `_CentralRFQItemDistribution` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
+| `_Manufacturer` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_PurgDocumentItemCategory` | | ✓ | | | | |
 
 ## Associations
 

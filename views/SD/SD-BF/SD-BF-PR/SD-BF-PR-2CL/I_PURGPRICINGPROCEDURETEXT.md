@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `ConditionUsage` | ✓ | |  |  |
-| `ConditionApplication` | ✓ | |  |  |
-| `PricingProcedure` | ✓ | |  |  |
-| `PricingProcedureName` |  | |  |  |
-| `_ConditionUsage` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
-| `_PurgPricingProcedure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `ConditionUsage` | ✓ | |  |  |  |  |
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `PricingProcedure` | ✓ | |  |  |  |  |
+| `PricingProcedureName` |  | |  |  |  |  |
+| `_ConditionUsage` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_PurgPricingProcedure` | | ✓ | | | | |
 
 ## Associations
 

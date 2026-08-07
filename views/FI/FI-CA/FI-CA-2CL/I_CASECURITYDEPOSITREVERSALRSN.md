@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASecurityDepositReversalRsn` | ✓ | |  | `rev_reason` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASecurityDepositReversalRsn` | ✓ | |  | `rev_reason` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

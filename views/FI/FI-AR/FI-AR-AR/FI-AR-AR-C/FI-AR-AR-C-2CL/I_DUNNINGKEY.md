@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DunningKey` | ✓ | |  | `cast( mschl as farp_mschl )` |
-| `MaximumDunningLevel` |  | |  | `} cast(maxst as maxst)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DunningKey` | ✓ | |  | `cast( mschl as farp_mschl )` |  |  |
+| `MaximumDunningLevel` |  | |  | `cast(maxst as maxst)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

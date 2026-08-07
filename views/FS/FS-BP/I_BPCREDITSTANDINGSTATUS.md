@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BPCreditStandingStatus` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_sol_inf )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPCreditStandingStatus` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_sol_inf )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShippingPoint` | ✓ | |  | `vstel` |
-| `ActiveDepartureCountry` |  | |  | `aland` |
-| `AddressID` |  | |  | `adrnr` |
-| `PickingConfirmation` |  | |  | `koqui` |
-| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |
-| `LoadingTimeInWorkingDays` |  | |  | `cast(floor(division(floor(division(loadtg,10000,4)),24,2)) + division(floor(division(cast(mod(cast(floor(division(loadtg,10000,4)) as abap.int8),24)*3600 + floor(division(loadtg - floor(division(loadtg,10000,4))*10000,100,2))*60 + mod(cast(loadtg as abap.int8),100) as abap.int8),864,6)),100,2) as le_loadtg_day)` |
-| `LoadingTimeWorkHoursInMinutes` |  | |  | `cast(floor(division(loadtn,10000,4))*60 + division(loadtn - floor(division(loadtn,10000,4))*10000,100,0) as le_loadtn_min)` |
-| `PickPackTimeInWorkingDays` |  | |  | `cast(floor(division(floor(division(pipatg,10000,4)),24,2)) + division(floor(division(cast(mod(cast(floor(division(pipatg,10000,4))as abap.int8),24)*3600 + floor(division(pipatg - floor(division(pipatg,10000,4))*10000,100,2))*60 + mod(cast(pipatg as abap.int8),100) as abap.int8),864,6)),100,2) as le_pipatg_day)` |
-| `PickPackTimeWorkHoursInMinutes` |  | |  | `cast(floor(division(pipatn,10000,4))*60 + division(pipatn - floor(division(pipatn,10000,4))*10000,100,0) as le_pipatn_min)` |
-| `_Text` | | ✓ | | |
-| `_ActiveDepartureCountry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShippingPoint` | ✓ | |  | `vstel` |  |  |
+| `ActiveDepartureCountry` |  | |  | `aland` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `PickingConfirmation` |  | |  | `koqui` |  |  |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |  |  |
+| `LoadingTimeInWorkingDays` |  | |  | `cast(floor(division(floor(division(loadtg,10000,4)),24,2)) + division(floor(division(cast(mod(cast(floor(division(loadtg,10000,4)) as abap.int8),24)*3600 + floor(division(loadtg - floor(division(loadtg,10000,4))*10000,100,2))*60 + mod(cast(loadtg as abap.int8),100) as abap.int8),864,6)),100,2) as le_loadtg_day)` |  |  |
+| `LoadingTimeWorkHoursInMinutes` |  | |  | `cast(floor(division(loadtn,10000,4))*60 + division(loadtn - floor(division(loadtn,10000,4))*10000,100,0) as le_loadtn_min)` |  |  |
+| `PickPackTimeInWorkingDays` |  | |  | `cast(floor(division(floor(division(pipatg,10000,4)),24,2)) + division(floor(division(cast(mod(cast(floor(division(pipatg,10000,4))as abap.int8),24)*3600 + floor(division(pipatg - floor(division(pipatg,10000,4))*10000,100,2))*60 + mod(cast(pipatg as abap.int8),100) as abap.int8),864,6)),100,2) as le_pipatg_day)` |  |  |
+| `PickPackTimeWorkHoursInMinutes` |  | |  | `cast(floor(division(pipatn,10000,4))*60 + division(pipatn - floor(division(pipatn,10000,4))*10000,100,0) as le_pipatn_min)` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ActiveDepartureCountry` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SrvcDocIsAccepted` | ✓ | |  | `domvalue_l` |
-| `_SrvcQtanAcceptanceStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcDocIsAccepted` | ✓ | |  | `domvalue_l` |  |  |
+| `_SrvcQtanAcceptanceStatusText` | | ✓ | | | | |
 
 ## Associations
 

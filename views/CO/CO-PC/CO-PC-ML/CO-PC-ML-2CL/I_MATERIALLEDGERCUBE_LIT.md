@@ -30,82 +30,82 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SourceLedger` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `GLAccount` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `LedgerFiscalYear` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `MatlDocLatestPostgDate` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `Segment` |  | |  |  |
-| `AccountingDocCreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `ReferenceDocumentType` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `ProductionOrder` |  | |  |  |
-| `TransactionTypeDetermination` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `MaterialValuationClass` |  | |  |  |
-| `InventoryValuationCategory` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `Plant` |  | |  |  |
-| `MaterialLedgerProcessType` |  | |  |  |
-| `MaterialLedgerCategory` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  | `} AmountInCompanyCodeCurrency` |
-| `SlsPriceAmountInCoCodeCrcy` |  | |  | `} SlsPriceAmountInCoCodeCrcy` |
-| `GroupCurrency` |  | |  |  |
-| `AmountInGroupCurrency` |  | |  | `} AmountInGroupCurrency` |
-| `FreeDefinedCurrency1` |  | |  |  |
-| `AmountInFreeDefinedCurrency1` |  | |  | `} AmountInFreeDefinedCurrency1` |
-| `FreeDefinedCurrency2` |  | |  |  |
-| `AmountInFreeDefinedCurrency2` |  | |  | `} AmountInFreeDefinedCurrency2` |
-| `FreeDefinedCurrency3` |  | |  |  |
-| `AmountInFreeDefinedCurrency3` |  | |  | `} AmountInFreeDefinedCurrency3` |
-| `FreeDefinedCurrency4` |  | |  |  |
-| `AmountInFreeDefinedCurrency4` |  | |  | `} AmountInFreeDefinedCurrency4` |
-| `FreeDefinedCurrency5` |  | |  |  |
-| `AmountInFreeDefinedCurrency5` |  | |  | `} AmountInFreeDefinedCurrency5` |
-| `FreeDefinedCurrency6` |  | |  |  |
-| `AmountInFreeDefinedCurrency6` |  | |  | `} AmountInFreeDefinedCurrency6` |
-| `FreeDefinedCurrency7` |  | |  |  |
-| `AmountInFreeDefinedCurrency7` |  | |  | `} AmountInFreeDefinedCurrency7` |
-| `FreeDefinedCurrency8` |  | |  |  |
-| `AmountInFreeDefinedCurrency8` |  | |  | `} AmountInFreeDefinedCurrency8` |
-| `BaseUnit` |  | |  |  |
-| `InventoryQty` |  | |  | `} InventoryQty` |
-| `_MaterialGroup` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_CostSourceUnit` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_BusinessTransactionType` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SourceLedger` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `GLAccount` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `LedgerFiscalYear` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `MatlDocLatestPostgDate` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `AccountingDocCreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `ProductionOrder` |  | |  |  |  |  |
+| `TransactionTypeDetermination` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `MaterialValuationClass` |  | |  |  |  |  |
+| `InventoryValuationCategory` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `MaterialLedgerProcessType` |  | |  |  |  |  |
+| `MaterialLedgerCategory` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `SlsPriceAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `GroupCurrency` |  | |  |  |  |  |
+| `AmountInGroupCurrency` |  | |  |  |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
+| `FreeDefinedCurrency2` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  |  |  |  |
+| `FreeDefinedCurrency3` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency3` |  | |  |  |  |  |
+| `FreeDefinedCurrency4` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency4` |  | |  |  |  |  |
+| `FreeDefinedCurrency5` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency5` |  | |  |  |  |  |
+| `FreeDefinedCurrency6` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency6` |  | |  |  |  |  |
+| `FreeDefinedCurrency7` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency7` |  | |  |  |  |  |
+| `FreeDefinedCurrency8` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency8` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `InventoryQty` |  | |  |  |  |  |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_CostSourceUnit` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_BusinessTransactionType` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

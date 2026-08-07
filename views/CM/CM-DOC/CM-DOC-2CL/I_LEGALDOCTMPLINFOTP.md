@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocTemplateInfoUUID` | ✓ | |  |  |
-| `LglCntntMDocumentUUID` |  | |  |  |
-| `LglCntntMDocTemplateName` |  | |  |  |
-| `LglCntntMDocTemplateVersion` |  | |  |  |
-| `LglCntntMDocTemplateDate` |  | |  |  |
-| `_Document` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocTemplateInfoUUID` | ✓ | |  |  |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |  |  |
+| `LglCntntMDocTemplateName` |  | |  |  |  |  |
+| `LglCntntMDocTemplateVersion` |  | |  |  |  |  |
+| `LglCntntMDocTemplateDate` |  | |  |  |  |  |
+| `_Document` | | ✓ | | | | |
 
 ## Source Code
 

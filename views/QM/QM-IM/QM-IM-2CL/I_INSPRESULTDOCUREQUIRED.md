@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspResultIsDocumentationRqd` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qdokukz preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspResultIsDocumentationRqd` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qdokukz preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

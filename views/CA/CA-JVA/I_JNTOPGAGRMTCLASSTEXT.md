@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `Language` | ✓ | |  | `spras` |
-| `JntOpgAgrmtClass` | ✓ | |  | `aclass` |
-| `JntOpgAgrmtClassText` |  | |  | `actext` |
-| `_Language` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_JntOpgAgrmtClass` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `JntOpgAgrmtClass` | ✓ | |  | `aclass` |  |  |
+| `JntOpgAgrmtClassText` |  | |  | `actext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntOpgAgrmtClass` | | ✓ | | | | |
 
 ## Associations
 

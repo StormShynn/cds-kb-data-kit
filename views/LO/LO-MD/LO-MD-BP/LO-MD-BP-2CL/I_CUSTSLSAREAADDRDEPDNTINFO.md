@@ -28,35 +28,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `SalesOrganization` | ✓ | |  | `vkorg` |
-| `DistributionChannel` | ✓ | |  | `vtweg` |
-| `Division` | ✓ | |  | `spart` |
-| `AddressID` | ✓ | |  | `adrnr` |
-| `IncotermsClassification` |  | |  | `inco1` |
-| `IncotermsLocation1` |  | |  | `inco2_l` |
-| `IncotermsLocation2` |  | |  | `inco3_l` |
-| `DeliveryIsBlocked` |  | |  | `lifsd` |
-| `SalesOffice` |  | |  | `vkbur` |
-| `SalesGroup` |  | |  | `vkgrp` |
-| `ShippingCondition` |  | |  | `vsbed` |
-| `SupplyingPlant` |  | |  | `vwerk` |
-| `IncotermsVersion` |  | |  | `incov` |
-| `IncotermsSupChnLoc1AddlUUID` |  | |  | `cast( inco2_key as /sapapo/location_uuid )` |
-| `IncotermsSupChnLoc2AddlUUID` |  | |  | `cast( inco3_key as /sapapo/location_uuid )` |
-| `IncotermsSupChnDvtgLocAddlUUID` |  | |  | `cast( inco4_key as /sapapo/location_uuid )` |
-| `_Customer` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_DeliveryIsBlockedForCustomer` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
-| `_CustomerSalesArea` | | ✓ | | |
-| `_IncotermsSupChnDvtgLoc` | | ✓ | | |
-| `_IncotermsSupChnLoc2` | | ✓ | | |
-| `_IncotermsSupChnLoc1` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `SalesOrganization` | ✓ | |  | `vkorg` |  |  |
+| `DistributionChannel` | ✓ | |  | `vtweg` |  |  |
+| `Division` | ✓ | |  | `spart` |  |  |
+| `AddressID` | ✓ | |  | `adrnr` |  |  |
+| `IncotermsClassification` |  | |  | `inco1` |  |  |
+| `IncotermsLocation1` |  | |  | `inco2_l` |  |  |
+| `IncotermsLocation2` |  | |  | `inco3_l` |  |  |
+| `DeliveryIsBlocked` |  | |  | `lifsd` |  |  |
+| `SalesOffice` |  | |  | `vkbur` |  |  |
+| `SalesGroup` |  | |  | `vkgrp` |  |  |
+| `ShippingCondition` |  | |  | `vsbed` |  |  |
+| `SupplyingPlant` |  | |  | `vwerk` |  |  |
+| `IncotermsVersion` |  | |  | `incov` |  |  |
+| `IncotermsSupChnLoc1AddlUUID` |  | |  | `cast( inco2_key as /sapapo/location_uuid )` |  |  |
+| `IncotermsSupChnLoc2AddlUUID` |  | |  | `cast( inco3_key as /sapapo/location_uuid )` |  |  |
+| `IncotermsSupChnDvtgLocAddlUUID` |  | |  | `cast( inco4_key as /sapapo/location_uuid )` |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_DeliveryIsBlockedForCustomer` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
+| `_CustomerSalesArea` | | ✓ | | | | |
+| `_IncotermsSupChnDvtgLoc` | | ✓ | | | | |
+| `_IncotermsSupChnLoc2` | | ✓ | | | | |
+| `_IncotermsSupChnLoc1` | | ✓ | | | | |
 
 ## Associations
 

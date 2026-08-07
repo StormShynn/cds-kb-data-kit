@@ -31,57 +31,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterialCategory` | ✓ | |  |  |
-| `BillOfMaterialVariantUsage` | ✓ | |  |  |
-| `BillOfMaterial` | ✓ | |  |  |
-| `BillOfMaterialVariant` | ✓ | |  |  |
-| `BillOfMaterialVersion` | ✓ | |  |  |
-| `BOMHeaderInternalChangeCount` | ✓ | |  |  |
-| `IsMultipleBOMAlt` |  | |  |  |
-| `BOMPrioritizedVersion` |  | |  |  |
-| `BOMExplosionApplication` |  | |  |  |
-| `BOMUsagePriority` |  | |  |  |
-| `BillOfMaterialAuthsnGrp` |  | |  |  |
-| `BOMVersionStatus` |  | |  |  |
-| `IsVersionBillOfMaterial` |  | |  |  |
-| `IsLatestBOMVersion` |  | |  |  |
-| `BOMIsConfigurable` |  | |  |  |
-| `IsConfiguredMaterial` |  | |  |  |
-| `BOMTechnicalType` |  | |  | `cast ( bom_header.BOMTechnicalType as tetyp_d preserving type)` |
-| `BOMGroup` |  | |  |  |
-| `BOMHeaderText` |  | |  |  |
-| `BOMAlternativeText` |  | |  |  |
-| `BillOfMaterialStatus` |  | |  |  |
-| `HeaderValidityStartDate` |  | |  |  |
-| `HeaderValidityEndDate` |  | |  |  |
-| `EngineeringChangeDocument` |  | |  |  |
-| `ChgToEngineeringChgDocument` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `IsALE` |  | |  |  |
-| `BOMHeaderBaseUnit` |  | |  |  |
-| `BOMHeaderQuantityInBaseUnit` |  | |  |  |
-| `RecordCreationDate` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `BOMIsToBeDeleted` |  | |  |  |
-| `DocumentIsCreatedByCAD` |  | |  |  |
-| `LaboratoryOrDesignOffice` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |
-| `BOMPredecessorVersion` |  | |  |  |
-| `_BillOfMaterialItem` | | ✓ | | |
-| `_Mast` | | ✓ | | |
-| `_Dost` | | ✓ | | |
-| `_Prst` | | ✓ | | |
-| `_Kdst` | | ✓ | | |
-| `_Eqst` | | ✓ | | |
-| `_Tpst` | | ✓ | | |
-| `_Stst` | | ✓ | | |
-| `_BillOfMaterialVariantUsage` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterialCategory` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |  |  |
+| `BillOfMaterial` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |  |  |
+| `BillOfMaterialVersion` | ✓ | |  |  |  |  |
+| `BOMHeaderInternalChangeCount` | ✓ | |  |  |  |  |
+| `IsMultipleBOMAlt` |  | |  |  |  |  |
+| `BOMPrioritizedVersion` |  | |  |  |  |  |
+| `BOMExplosionApplication` |  | |  |  |  |  |
+| `BOMUsagePriority` |  | |  |  |  |  |
+| `BillOfMaterialAuthsnGrp` |  | |  |  |  |  |
+| `BOMVersionStatus` |  | |  |  |  |  |
+| `IsVersionBillOfMaterial` |  | |  |  |  |  |
+| `IsLatestBOMVersion` |  | |  |  |  |  |
+| `BOMIsConfigurable` |  | |  |  |  |  |
+| `IsConfiguredMaterial` |  | |  |  |  |  |
+| `BOMTechnicalType` |  | |  | `cast ( bom_header.BOMTechnicalType as tetyp_d preserving type)` |  |  |
+| `BOMGroup` |  | |  |  |  |  |
+| `BOMHeaderText` |  | |  |  |  |  |
+| `BOMAlternativeText` |  | |  |  |  |  |
+| `BillOfMaterialStatus` |  | |  |  |  |  |
+| `HeaderValidityStartDate` |  | |  |  |  |  |
+| `HeaderValidityEndDate` |  | |  |  |  |  |
+| `EngineeringChangeDocument` |  | |  |  |  |  |
+| `ChgToEngineeringChgDocument` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `IsALE` |  | |  |  |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |  |  |
+| `BOMHeaderQuantityInBaseUnit` |  | |  |  |  |  |
+| `RecordCreationDate` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `BOMIsToBeDeleted` |  | |  |  |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |  |  |
+| `BOMPredecessorVersion` |  | |  |  |  |  |
+| `_BillOfMaterialItem` | | ✓ | | | | |
+| `_Mast` | | ✓ | | | | |
+| `_Dost` | | ✓ | | | | |
+| `_Prst` | | ✓ | | | | |
+| `_Kdst` | | ✓ | | | | |
+| `_Eqst` | | ✓ | | | | |
+| `_Tpst` | | ✓ | | | | |
+| `_Stst` | | ✓ | | | | |
+| `_BillOfMaterialVariantUsage` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
 
 ## Associations
 

@@ -33,84 +33,84 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `AddressNumber` | ✓ | |  |  |
-| `AddressIDForEdit` |  | |  |  |
-| `BusinessPartnerAddressUUID` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `StreetPrefixName` |  | |  |  |
-| `AdditionalStreetPrefixName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `StreetSuffixName` |  | |  |  |
-| `AdditionalStreetSuffixName` |  | |  |  |
-| `HomeCityName` |  | |  |  |
-| `District` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `CityName` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `AddressTimeZone` |  | |  |  |
-| `TransportZone` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `CompanyPostalCode` |  | |  |  |
-| `DeliveryServiceTypeCode` |  | |  |  |
-| `DeliveryServiceNumber` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxIsWithoutNumber` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `POBoxLobbyName` |  | |  |  |
-| `POBoxDeviatingCityName` |  | |  |  |
-| `POBoxDeviatingRegion` |  | |  |  |
-| `POBoxDeviatingCountry` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `PrfrdCommMediumType` |  | |  |  |
-| `AddressLine1Text` |  | |  |  |
-| `FormattedAddress` |  | |  |  |
-| `CompleteAddress` |  | |  |  |
-| `BPAddressIsProtected` |  | |  |  |
-| `StandardUsage` |  | |  |  |
-| `AddressNonDeliverableReason` |  | |  |  |
-| `PostBoxNonDeliverableReason` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `County` |  | |  |  |
-| `BPCountyText` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `_BPProtectedAddress` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_BusinessPartnerAddressUsage` | | ✓ | | |
-| `_BusinessPartnerPhoneNumber` | | ✓ | | |
-| `_BusPartMobileNumber` | | ✓ | | |
-| `_BusPartFaxNumber` | | ✓ | | |
-| `_BusinessPartnerEmailAddress` | | ✓ | | |
-| `_BusPartWebsiteURL` | | ✓ | | |
-| `_BusPartScriptedOrgAddress` | | ✓ | | |
-| `_BusPartScriptedPersonAddress` | | ✓ | | |
-| `_BusPartScriptedGroupAddress` | | ✓ | | |
-| `_StandardPhoneNumber` | | ✓ | | |
-| `_StandardMobileNumber` | | ✓ | | |
-| `_StandardFaxNumber` | | ✓ | | |
-| `_StandardEmailAddress` | | ✓ | | |
-| `_StandardWebsiteURL` | | ✓ | | |
-| `_CountryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `AddressNumber` | ✓ | |  |  |  |  |
+| `AddressIDForEdit` |  | |  |  |  |  |
+| `BusinessPartnerAddressUUID` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `StreetPrefixName` |  | |  |  |  |  |
+| `AdditionalStreetPrefixName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `StreetSuffixName` |  | |  |  |  |  |
+| `AdditionalStreetSuffixName` |  | |  |  |  |  |
+| `HomeCityName` |  | |  |  |  |  |
+| `District` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `AddressTimeZone` |  | |  |  |  |  |
+| `TransportZone` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `CompanyPostalCode` |  | |  |  |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |  |  |
+| `DeliveryServiceNumber` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `POBoxLobbyName` |  | |  |  |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `PrfrdCommMediumType` |  | |  |  |  |  |
+| `AddressLine1Text` |  | |  |  |  |  |
+| `FormattedAddress` |  | |  |  |  |  |
+| `CompleteAddress` |  | |  |  |  |  |
+| `BPAddressIsProtected` |  | |  |  |  |  |
+| `StandardUsage` |  | |  |  |  |  |
+| `AddressNonDeliverableReason` |  | |  |  |  |  |
+| `PostBoxNonDeliverableReason` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `County` |  | |  |  |  |  |
+| `BPCountyText` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `_BPProtectedAddress` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BusinessPartnerAddressUsage` | | ✓ | | | | |
+| `_BusinessPartnerPhoneNumber` | | ✓ | | | | |
+| `_BusPartMobileNumber` | | ✓ | | | | |
+| `_BusPartFaxNumber` | | ✓ | | | | |
+| `_BusinessPartnerEmailAddress` | | ✓ | | | | |
+| `_BusPartWebsiteURL` | | ✓ | | | | |
+| `_BusPartScriptedOrgAddress` | | ✓ | | | | |
+| `_BusPartScriptedPersonAddress` | | ✓ | | | | |
+| `_BusPartScriptedGroupAddress` | | ✓ | | | | |
+| `_StandardPhoneNumber` | | ✓ | | | | |
+| `_StandardMobileNumber` | | ✓ | | | | |
+| `_StandardFaxNumber` | | ✓ | | | | |
+| `_StandardEmailAddress` | | ✓ | | | | |
+| `_StandardWebsiteURL` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
 
 ## Source Code
 

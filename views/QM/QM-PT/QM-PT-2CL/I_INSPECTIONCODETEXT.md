@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionCatalog` | ✓ | |  | `katalogart` |
-| `InspectionCodeGroup` |  | |  | `}] key codegruppe` |
-| `InspectionCode` |  | |  | `}] key code` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionCodeText` |  | |  | `cast( kurztext as vdm_qtxt_code preserving type )` |
-| `_InspectionCatalog` | | ✓ | | |
-| `_InspectionCodeGroup` | | ✓ | | |
-| `_InspectionCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionCatalog` | ✓ | |  | `katalogart` |  |  |
+| `InspectionCodeGroup` | ✓ | |  | `codegruppe` |  |  |
+| `InspectionCode` | ✓ | |  | `code` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionCodeText` |  | |  | `cast( kurztext as vdm_qtxt_code preserving type )` |  |  |
+| `_InspectionCatalog` | | ✓ | | | | |
+| `_InspectionCodeGroup` | | ✓ | | | | |
+| `_InspectionCode` | | ✓ | | | | |
 
 ## Associations
 

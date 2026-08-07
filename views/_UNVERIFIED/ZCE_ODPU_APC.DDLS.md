@@ -35,15 +35,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `apc_application_id` |  | |  | `key ApplicationId : apc_application_id` |
-| `r3state` |  | |  | `key Version : r3state` |
-| `Path` |  | |  | `apc_appl_path` |
-| `ClassName` |  | |  | `seoclsname` |
-| `ProtocolTypeId` |  | |  | `apc_wsp_protocol_type_id` |
-| `AmcMessageTypeId` |  | |  | `amc_message_type_id` |
-| `Description` |  | |  | `ddtext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `apc_application_id` |  | |  | `key ApplicationId : apc_application_id` |  |  |
+| `r3state` |  | |  | `key Version : r3state` |  |  |
+| `Path` |  | |  | `apc_appl_path` |  |  |
+| `ClassName` |  | |  | `seoclsname` |  |  |
+| `ProtocolTypeId` |  | |  | `apc_wsp_protocol_type_id` |  |  |
+| `AmcMessageTypeId` |  | |  | `amc_message_type_id` |  |  |
+| `Description` |  | |  | `ddtext` |  |  |
 
 ## Source Code
 

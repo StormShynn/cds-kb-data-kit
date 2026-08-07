@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |
-| `JntVntrPenaltyCategoryText` |  | |  | `pctext` |
-| `_CompanyCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_JntVntrPenaltyCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |  |  |
+| `JntVntrPenaltyCategoryText` |  | |  | `pctext` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_JntVntrPenaltyCategory` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LegalTransactionRelshpUUID` | ✓ | |  |  |
-| `LegalTransactionUUID` |  | |  |  |
-| `RelshpLegalTransaction` |  | |  |  |
-| `RelshpLegalTransactionUUID` |  | |  |  |
-| `LglCntntMRelshpType` |  | |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |
-| `_LegalTransaction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionRelshpUUID` | ✓ | |  |  |  |  |
+| `LegalTransactionUUID` |  | |  |  |  |  |
+| `RelshpLegalTransaction` |  | |  |  |  |  |
+| `RelshpLegalTransactionUUID` |  | |  |  |  |  |
+| `LglCntntMRelshpType` |  | |  |  |  |  |
+| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `_LegalTransaction` | | ✓ | | | | |
 
 ## Source Code
 

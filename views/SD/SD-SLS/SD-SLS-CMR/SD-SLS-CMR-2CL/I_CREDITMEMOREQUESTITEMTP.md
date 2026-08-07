@@ -31,59 +31,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditMemoRequest` | ✓ | |  |  |
-| `CreditMemoRequestItem` | ✓ | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `CreditMemoRequestItemCategory` |  | |  |  |
-| `CreditMemoRequestItemText` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `Product` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `Batch` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `Plant` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetQuantityUnit` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `TaxAmount` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `OrderRelatedBillingStatus` |  | |  |  |
-| `BillingBlockStatus` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `TotalSDDocReferenceStatus` |  | |  |  |
-| `CreditMemoRequestType` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `_CreditMemoRequest` | | ✓ | | |
-| `_ItemPartner` | | ✓ | | |
-| `_ItemText` | | ✓ | | |
-| `_ItemPricingElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |  |  |
+| `CreditMemoRequestItem` | ✓ | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `CreditMemoRequestItemCategory` |  | |  |  |  |  |
+| `CreditMemoRequestItemText` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetQuantityUnit` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |  |  |
+| `BillingBlockStatus` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |  |  |
+| `CreditMemoRequestType` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `_CreditMemoRequest` | | ✓ | | | | |
+| `_ItemPartner` | | ✓ | | | | |
+| `_ItemText` | | ✓ | | | | |
+| `_ItemPricingElement` | | ✓ | | | | |
 
 ## Source Code
 

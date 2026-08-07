@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnFinTransTypeHierarchy` | ✓ | |  | `cast(_Hierarchy.CnsldtnUniversalHierarchy as fincs_fintransactiontypehier preserving type )` |
-| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
-| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
-| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnFinTransTypeHierarchy` | ✓ | |  | `cast(_Hierarchy.CnsldtnUniversalHierarchy as fincs_fintransactiontypehier preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |  |  |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |  |  |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

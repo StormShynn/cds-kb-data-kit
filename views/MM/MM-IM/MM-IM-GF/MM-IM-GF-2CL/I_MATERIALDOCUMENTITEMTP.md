@@ -33,87 +33,87 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialDocumentYear` | ✓ | |  |  |
-| `MaterialDocument` | ✓ | |  |  |
-| `MaterialDocumentItem` | ✓ | |  |  |
-| `MaterialDocumentLine` |  | |  |  |
-| `MaterialDocumentParentLine` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `Material` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `InventoryUsabilityCode` |  | |  |  |
-| `QuantityInEntryUnit` |  | |  |  |
-| `EntryUnit` |  | |  |  |
-| `QuantityInBaseUnit` |  | |  |  |
-| `MaterialBaseUnit` |  | |  |  |
-| `Batch` |  | |  | `, useAsTemplate: true } ] Batch` |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `ManufactureDate` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `InventoryStockType` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `ReversedMaterialDocumentYear` |  | |  |  |
-| `ReversedMaterialDocument` |  | |  |  |
-| `ReversedMaterialDocumentItem` |  | |  |  |
-| `GoodsMovementIsCancelled` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `IsAutomaticallyCreated` |  | |  |  |
-| `MaterialDocumentPostingType` |  | |  |  |
-| `ReservationItemRecordType` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `IssgOrRcvgMaterial` |  | |  |  |
-| `IssuingOrReceivingPlant` |  | |  |  |
-| `IssuingOrReceivingStorageLoc` |  | |  | `} ] IssuingOrReceivingStorageLoc` |
-| `IssgOrRcvgBatch` |  | |  |  |
-| `IssgOrRcvgSpclStockInd` |  | |  |  |
-| `IssuingOrReceivingValType` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `ReservationItem` |  | |  |  |
-| `GoodsMovementRefDocType` |  | |  |  |
-| `GoodsMovementReasonCode` |  | |  | `} ] GoodsMovementReasonCode` |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `SerialNumbersAreCreatedAutomly` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  | `,useAsTemplate: true } ] SalesOrderItem` |
-| `SalesOrderScheduleLine` |  | |  |  |
-| `DeliveryDocument` |  | |  |  |
-| `DeliveryDocumentItem` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `ReservationIsFinallyIssued` |  | |  |  |
-| `ManufacturingOrder` |  | |  |  |
-| `ManufacturingOrderItem` |  | |  |  |
-| `SpecialStockIdfgSalesOrder` |  | |  |  |
-| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
-| `MaterialDocumentItemText` |  | |  |  |
-| `GdsMvtExtAmtInCoCodeCrcy` |  | |  |  |
-| `ProductStandardID` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `ReferenceDocumentFiscalYear` |  | |  |  |
-| `InvtryMgmtRefDocumentItem` |  | |  |  |
-| `InvtryMgmtReferenceDocument` |  | |  |  |
-| `_GoodsMovementType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_GoodsMovementReasonCode` | | ✓ | | |
-| `_EntryUnit` | | ✓ | | |
-| `_MaterialBaseUnit` | | ✓ | | |
-| `_MaterialDocumentHeader` | | ✓ | | |
-| `_SerialNumber` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialDocumentYear` | ✓ | |  |  |  |  |
+| `MaterialDocument` | ✓ | |  |  |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |  |  |
+| `MaterialDocumentLine` |  | |  |  |  |  |
+| `MaterialDocumentParentLine` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `InventoryUsabilityCode` |  | |  |  |  |  |
+| `QuantityInEntryUnit` |  | |  |  |  |  |
+| `EntryUnit` |  | |  |  |  |  |
+| `QuantityInBaseUnit` |  | |  |  |  |  |
+| `MaterialBaseUnit` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `ManufactureDate` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `InventoryStockType` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `ReversedMaterialDocumentYear` |  | |  |  |  |  |
+| `ReversedMaterialDocument` |  | |  |  |  |  |
+| `ReversedMaterialDocumentItem` |  | |  |  |  |  |
+| `GoodsMovementIsCancelled` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `IsAutomaticallyCreated` |  | |  |  |  |  |
+| `MaterialDocumentPostingType` |  | |  |  |  |  |
+| `ReservationItemRecordType` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `IssgOrRcvgMaterial` |  | |  |  |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  |  |  |  |
+| `IssgOrRcvgBatch` |  | |  |  |  |  |
+| `IssgOrRcvgSpclStockInd` |  | |  |  |  |  |
+| `IssuingOrReceivingValType` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `ReservationItem` |  | |  |  |  |  |
+| `GoodsMovementRefDocType` |  | |  |  |  |  |
+| `GoodsMovementReasonCode` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `SerialNumbersAreCreatedAutomly` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `DeliveryDocumentItem` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |  |  |
+| `ManufacturingOrder` |  | |  |  |  |  |
+| `ManufacturingOrderItem` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |  |  |
+| `MaterialDocumentItemText` |  | |  |  |  |  |
+| `GdsMvtExtAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `ProductStandardID` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `ReferenceDocumentFiscalYear` |  | |  |  |  |  |
+| `InvtryMgmtRefDocumentItem` |  | |  |  |  |  |
+| `InvtryMgmtReferenceDocument` |  | |  |  |  |  |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_GoodsMovementReasonCode` | | ✓ | | | | |
+| `_EntryUnit` | | ✓ | | | | |
+| `_MaterialBaseUnit` | | ✓ | | | | |
+| `_MaterialDocumentHeader` | | ✓ | | | | |
+| `_SerialNumber` | | ✓ | | | | |
 
 ## Source Code
 

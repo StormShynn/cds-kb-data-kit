@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialProcurementCategory` | ✓ | |  | `cast(q.beskz as pph_beskz preserving type)` |
-| `MaterialProcurementType` | ✓ | |  | `cast(q.sobes as pph_sobes preserving type)` |
-| `_MaterialProcurementCategory` | | ✓ | | |
-| `_MaterialProcurementType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialProcurementCategory` | ✓ | |  | `cast(q.beskz as pph_beskz preserving type)` |  |  |
+| `MaterialProcurementType` | ✓ | |  | `cast(q.sobes as pph_sobes preserving type)` |  |  |
+| `_MaterialProcurementCategory` | | ✓ | | | | |
+| `_MaterialProcurementType` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationAgreementUUID` | ✓ | |  |  |
-| `TransportationAgreement` |  | |  |  |
-| `TransportationAgreementDesc` |  | |  |  |
-| `TranspAgrmtChangedOnDateTime` |  | |  |  |
-| `TranspAgreementCreatedBy` |  | |  |  |
-| `TranspAgrmtCreatedOnDateTime` |  | |  |  |
-| `TranspAgreementChangedBy` |  | |  |  |
-| `TranspExternalAgreement` |  | |  |  |
-| `TransportationAgreementType` |  | |  |  |
-| `TranspAgreementValidFrom` |  | |  |  |
-| `TranspAgreementValidTo` |  | |  |  |
-| `TranspAgreementTimeZone` |  | |  |  |
-| `TranspAgrmtDimnWgtProfile` |  | |  |  |
-| `TransportationAgreementDocCrcy` |  | |  |  |
-| `TransportationShippingType` |  | |  |  |
-| `TransportationMode` |  | |  |  |
-| `TransportationAgreementStatus` |  | |  |  |
-| `I_FreightAgreementItemTP` |  | |  | `FreightAgreement._FreightAgreementItem : redirected to composition child I_FreightAgreementItemTP` |
-| `I_FrtAgrmtOrganizationTP` |  | |  | `FreightAgreement._FreightAgreementOrganization : redirected to composition child I_FrtAgrmtOrganizationTP` |
-| `I_FreightAgreementPartyTP` |  | |  | `FreightAgreement._FreightAgreementParty : redirected to composition child I_FreightAgreementPartyTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationAgreementUUID` | ✓ | |  |  |  |  |
+| `TransportationAgreement` |  | |  |  |  |  |
+| `TransportationAgreementDesc` |  | |  |  |  |  |
+| `TranspAgrmtChangedOnDateTime` |  | |  |  |  |  |
+| `TranspAgreementCreatedBy` |  | |  |  |  |  |
+| `TranspAgrmtCreatedOnDateTime` |  | |  |  |  |  |
+| `TranspAgreementChangedBy` |  | |  |  |  |  |
+| `TranspExternalAgreement` |  | |  |  |  |  |
+| `TransportationAgreementType` |  | |  |  |  |  |
+| `TranspAgreementValidFrom` |  | |  |  |  |  |
+| `TranspAgreementValidTo` |  | |  |  |  |  |
+| `TranspAgreementTimeZone` |  | |  |  |  |  |
+| `TranspAgrmtDimnWgtProfile` |  | |  |  |  |  |
+| `TransportationAgreementDocCrcy` |  | |  |  |  |  |
+| `TransportationShippingType` |  | |  |  |  |  |
+| `TransportationMode` |  | |  |  |  |  |
+| `TransportationAgreementStatus` |  | |  |  |  |  |
+| `I_FreightAgreementItemTP` |  | |  | `FreightAgreement._FreightAgreementItem : redirected to composition child I_FreightAgreementItemTP` |  |  |
+| `I_FrtAgrmtOrganizationTP` |  | |  | `FreightAgreement._FreightAgreementOrganization : redirected to composition child I_FrtAgrmtOrganizationTP` |  |  |
+| `I_FreightAgreementPartyTP` |  | |  | `FreightAgreement._FreightAgreementParty : redirected to composition child I_FreightAgreementPartyTP` |  |  |
 
 ## Source Code
 

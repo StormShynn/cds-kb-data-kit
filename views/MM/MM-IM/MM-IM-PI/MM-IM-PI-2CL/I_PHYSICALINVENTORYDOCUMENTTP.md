@@ -32,40 +32,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PhysicalInventoryDocument` |  | |  | `, additionalBinding: [{ localElement: 'FiscalYear', element: 'FiscalYear'}], useAsTemplate: true } ] } key PhysicalInventoryDocument` |
-| `FiscalYear` |  | |  | `, useAsTemplate: true } ] } key FiscalYear` |
-| `InventoryTransactionType` |  | |  | `, useAsTemplate: true } ] } InventoryTransactionType` |
-| `Plant` |  | |  | `, useAsTemplate: true } ] } Plant` |
-| `StorageLocation` |  | |  | `, additionalBinding: [{ localElement: 'Plant', element: 'Plant'}], useAsTemplate: true } ] } StorageLocation` |
-| `InventorySpecialStockType` |  | |  | `, useAsTemplate: true } ] } InventorySpecialStockType` |
-| `DocumentDate` |  | |  |  |
-| `PhysInventoryPlannedCountDate` |  | |  |  |
-| `PhysicalInventoryLastCountDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PostingFiscalPeriod` |  | |  |  |
-| `CreatedByUserName` |  | |  |  |
-| `PostingIsBlockedForPhysInvtry` |  | |  |  |
-| `PhysicalInventoryCountStatus` |  | |  | `, useAsTemplate: true } ] } PhysicalInventoryCountStatus` |
-| `PhysInvtryAdjustmentPostingSts` |  | |  | `, useAsTemplate: true } ] } PhysInvtryAdjustmentPostingSts` |
-| `PhysInventoryReferenceNumber` |  | |  |  |
-| `PhysInvtryDeletionStatus` |  | |  | `, useAsTemplate: true } ] } PhysInvtryDeletionStatus` |
-| `PhysInvtryDocHasQtySnapshot` |  | |  |  |
-| `PhysicalInventoryGroupType` |  | |  | `, useAsTemplate: true } ] } PhysicalInventoryGroupType` |
-| `PhysicalInventoryGroup` |  | |  |  |
-| `PhysicalInventoryNumber` |  | |  |  |
-| `PhysicalInventoryDocumentDesc` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `SalesPriceValuationIsActive` |  | |  |  |
-| `CountingVarianceInPercent` |  | |  |  |
-| `_PhysicalInventoryDocumentItem` | | ✓ | | |
-| `_InventorySpecialStockTypeText` | | ✓ | | |
-| `_InventoryTransactionTypeText` | | ✓ | | |
-| `_PhysInvtryCountStsText` | | ✓ | | |
-| `_PhysInvtryPostStsText` | | ✓ | | |
-| `_PhysInvtryDeletionStsText` | | ✓ | | |
-| `_PhysInvtryGroupTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhysicalInventoryDocument` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `InventoryTransactionType` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PhysInventoryPlannedCountDate` |  | |  |  |  |  |
+| `PhysicalInventoryLastCountDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PostingFiscalPeriod` |  | |  |  |  |  |
+| `CreatedByUserName` |  | |  |  |  |  |
+| `PostingIsBlockedForPhysInvtry` |  | |  |  |  |  |
+| `PhysicalInventoryCountStatus` |  | |  |  |  |  |
+| `PhysInvtryAdjustmentPostingSts` |  | |  |  |  |  |
+| `PhysInventoryReferenceNumber` |  | |  |  |  |  |
+| `PhysInvtryDeletionStatus` |  | |  |  |  |  |
+| `PhysInvtryDocHasQtySnapshot` |  | |  |  |  |  |
+| `PhysicalInventoryGroupType` |  | |  |  |  |  |
+| `PhysicalInventoryGroup` |  | |  |  |  |  |
+| `PhysicalInventoryNumber` |  | |  |  |  |  |
+| `PhysicalInventoryDocumentDesc` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `SalesPriceValuationIsActive` |  | |  |  |  |  |
+| `CountingVarianceInPercent` |  | |  |  |  |  |
+| `_PhysicalInventoryDocumentItem` | | ✓ | | | | |
+| `_InventorySpecialStockTypeText` | | ✓ | | | | |
+| `_InventoryTransactionTypeText` | | ✓ | | | | |
+| `_PhysInvtryCountStsText` | | ✓ | | | | |
+| `_PhysInvtryPostStsText` | | ✓ | | | | |
+| `_PhysInvtryDeletionStsText` | | ✓ | | | | |
+| `_PhysInvtryGroupTypeText` | | ✓ | | | | |
 
 ## Source Code
 

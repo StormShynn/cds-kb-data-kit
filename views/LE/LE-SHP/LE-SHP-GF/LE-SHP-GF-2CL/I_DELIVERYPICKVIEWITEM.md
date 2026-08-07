@@ -30,68 +30,68 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryDocument` | ✓ | |  |  |
-| `DeliveryDocumentItem` | ✓ | |  |  |
-| `DeliveryDocumentItemText` |  | |  |  |
-| `RetailPromotion` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `Batch` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `ActualDeliveryQuantity` |  | |  |  |
-| `ActualDeliveredQtyInBaseUnit` |  | |  |  |
-| `Warehouse` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `WarehouseStorageBin` |  | |  |  |
-| `StorageBin` |  | |  |  |
-| `StorageType` |  | |  |  |
-| `Material` |  | |  |  |
-| `ProductAvailabilityDate` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `HigherLvlItmOfBatSpltItm` |  | |  |  |
-| `DeliveryToBaseQuantityDnmntr` |  | |  |  |
-| `DeliveryToBaseQuantityNmrtr` |  | |  |  |
-| `DeliveryQuantityUnit` |  | |  |  |
-| `Plant` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `PickingControl` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `MaterialIsBatchManaged` |  | |  |  |
-| `MaterialIsIntBatchManaged` |  | |  |  |
-| `ReceivingPoint` |  | |  |  |
-| `DepartmentClassificationByCust` |  | |  |  |
-| `NumberOfSerialNumbers` |  | |  |  |
-| `BatchBySupplier` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `WarehouseStockCategory` |  | |  |  |
-| `IssgOrRcvgStockCategory` |  | |  |  |
-| `IssgOrRcvgMaterial` |  | |  |  |
-| `IssuingOrReceivingPlant` |  | |  |  |
-| `IssuingOrReceivingStorageLoc` |  | |  |  |
-| `IssgOrRcvgBatch` |  | |  |  |
-| `IssgOrRcvgSpclStockInd` |  | |  |  |
-| `WarehouseStagingArea` |  | |  |  |
-| `PrimaryPostingSwitch` |  | |  |  |
-| `InspectionLot` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `WarehouseActivityStatus` |  | |  |  |
-| `PickingStatus` |  | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `HigherLevelItemUsage` |  | |  |  |
-| `DeliveryGroup` |  | |  |  |
-| `_DeliveryDocumentItem` | | ✓ | | |
-| `_DocumentFlow` | | ✓ | | |
-| `_DeliveryDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocument` | ✓ | |  |  |  |  |
+| `DeliveryDocumentItem` | ✓ | |  |  |  |  |
+| `DeliveryDocumentItemText` |  | |  |  |  |  |
+| `RetailPromotion` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `ActualDeliveryQuantity` |  | |  |  |  |  |
+| `ActualDeliveredQtyInBaseUnit` |  | |  |  |  |  |
+| `Warehouse` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `WarehouseStorageBin` |  | |  |  |  |  |
+| `StorageBin` |  | |  |  |  |  |
+| `StorageType` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ProductAvailabilityDate` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `HigherLvlItmOfBatSpltItm` |  | |  |  |  |  |
+| `DeliveryToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `DeliveryToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `DeliveryQuantityUnit` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `PickingControl` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `MaterialIsBatchManaged` |  | |  |  |  |  |
+| `MaterialIsIntBatchManaged` |  | |  |  |  |  |
+| `ReceivingPoint` |  | |  |  |  |  |
+| `DepartmentClassificationByCust` |  | |  |  |  |  |
+| `NumberOfSerialNumbers` |  | |  |  |  |  |
+| `BatchBySupplier` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `WarehouseStockCategory` |  | |  |  |  |  |
+| `IssgOrRcvgStockCategory` |  | |  |  |  |  |
+| `IssgOrRcvgMaterial` |  | |  |  |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  |  |  |  |
+| `IssgOrRcvgBatch` |  | |  |  |  |  |
+| `IssgOrRcvgSpclStockInd` |  | |  |  |  |  |
+| `WarehouseStagingArea` |  | |  |  |  |  |
+| `PrimaryPostingSwitch` |  | |  |  |  |  |
+| `InspectionLot` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `WarehouseActivityStatus` |  | |  |  |  |  |
+| `PickingStatus` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `HigherLevelItemUsage` |  | |  |  |  |  |
+| `DeliveryGroup` |  | |  |  |  |  |
+| `_DeliveryDocumentItem` | | ✓ | | | | |
+| `_DocumentFlow` | | ✓ | | | | |
+| `_DeliveryDocument` | | ✓ | | | | |
 
 ## Associations
 

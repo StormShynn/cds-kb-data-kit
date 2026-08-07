@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `PaymentSystemIntegrationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_tpintegra preserving type )` |
-| `PaytSystemIntegrationTypeDesc` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as logbr_tpintegradesc preserving type )` |
-| `_BR_PaymentIntegrationType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `PaymentSystemIntegrationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_tpintegra preserving type )` |  |  |
+| `PaytSystemIntegrationTypeDesc` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as logbr_tpintegradesc preserving type )` |  |  |
+| `_BR_PaymentIntegrationType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,71 +29,71 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `ExtSourceSystem` | ✓ | |  |  |
-| `PurchaseOrderType` |  | |  |  |
-| `PurchaseOrderSubtype` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `PurchaseOrderDate` |  | |  |  |
-| `Language` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `ReleaseIsNotCompleted` |  | |  |  |
-| `PurchasingCompletenessStatus` |  | |  |  |
-| `PurchasingProcessingStatus` |  | |  |  |
-| `PurgReleaseSequenceStatus` |  | |  |  |
-| `ReleaseCode` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `ManualSupplierAddressID` |  | |  |  |
-| `SupplierRespSalesPersonName` |  | |  |  |
-| `SupplierPhoneNumber` |  | |  |  |
-| `SupplyingSupplier` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `InvoicingParty` |  | |  |  |
-| `Customer` |  | |  |  |
-| `SupplierQuotationExternalID` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `DownPaymentType` |  | |  |  |
-| `DownPaymentPercentageOfTotAmt` |  | |  |  |
-| `DownPaymentAmount` |  | |  |  |
-| `DownPaymentDueDate` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IsIntrastatReportingRelevant` |  | |  |  |
-| `IsIntrastatReportingExcluded` |  | |  |  |
-| `PricingDocument` |  | |  | `DeliveryDocumentCondition` |
-| `PricingProcedure` |  | |  |  |
-| `PurchaseOrderNetAmount` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `TaxReturnCountry` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `PurgReasonForDocCancellation` |  | |  |  |
-| `PurgReleaseTimeTotalAmount` |  | |  |  |
-| `PrmtHbRpldPOUniqueID` |  | |  | `concat(PurchaseOrder, ExtSourceSystem)` |
-| `ProcmtHubCompanyCodeUniqueID` |  | | `_ProcmtHubCoCodeSystemVH` | `ProcmtHubCompanyCodeUniqueID` |
-| `ProcmtHubPurgOrgUniqueID` |  | | `_ProcmtHubPurgOrgSystemVH` | `ProcmtHubPurgOrgUniqueID` |
-| `_ProcmtHubPurchaseOrderItem` | | ✓ | | |
-| `_ProcmtHubCoCodeSystemVH` | | ✓ | | |
-| `_ProcmtHubPurgOrgSystemVH` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `ExtSourceSystem` | ✓ | |  |  |  |  |
+| `PurchaseOrderType` |  | |  |  |  |  |
+| `PurchaseOrderSubtype` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |  |  |
+| `PurchasingCompletenessStatus` |  | |  |  |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |  |  |
+| `PurgReleaseSequenceStatus` |  | |  |  |  |  |
+| `ReleaseCode` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `ManualSupplierAddressID` |  | |  |  |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |  |  |
+| `SupplierPhoneNumber` |  | |  |  |  |  |
+| `SupplyingSupplier` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `DownPaymentType` |  | |  |  |  |  |
+| `DownPaymentPercentageOfTotAmt` |  | |  |  |  |  |
+| `DownPaymentAmount` |  | |  |  |  |  |
+| `DownPaymentDueDate` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IsIntrastatReportingRelevant` |  | |  |  |  |  |
+| `IsIntrastatReportingExcluded` |  | |  |  |  |  |
+| `PricingDocument` |  | |  | `DeliveryDocumentCondition` |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `PurchaseOrderNetAmount` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `TaxReturnCountry` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `PurgReasonForDocCancellation` |  | |  |  |  |  |
+| `PurgReleaseTimeTotalAmount` |  | |  |  |  |  |
+| `PrmtHbRpldPOUniqueID` |  | |  | `concat(PurchaseOrder, ExtSourceSystem)` |  |  |
+| `ProcmtHubCompanyCodeUniqueID` |  | | `_ProcmtHubCoCodeSystemVH` | `ProcmtHubCompanyCodeUniqueID` |  |  |
+| `ProcmtHubPurgOrgUniqueID` |  | | `_ProcmtHubPurgOrgSystemVH` | `ProcmtHubPurgOrgUniqueID` |  |  |
+| `_ProcmtHubPurchaseOrderItem` | | ✓ | | | | |
+| `_ProcmtHubCoCodeSystemVH` | | ✓ | | | | |
+| `_ProcmtHubPurgOrgSystemVH` | | ✓ | | | | |
 
 ## Associations
 

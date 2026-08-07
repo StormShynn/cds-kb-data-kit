@@ -28,35 +28,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionResourceType` | ✓ | |  |  |
-| `ProductionResourceInternalID` | ✓ | |  |  |
-| `ProductionResourceTool` |  | |  | `cast( case PRT.ProdnRsceToolCategory when 'M' then crvm_a.Material when 'E' then crve_a.Equipment when 'S' then crvs_a.MiscProductionResourceTool when 'D' then concat_with_space(concat_with_space(concat_with_space( crvd_a.DocumentInfoRecord, crvd_a.DocumentType, 1), crvd_a.DocumentPart, 1), crvd_a.DocumentVersion, 1) when 'P' then crvp_a.MeasuringPoint else PRT.ProdnRsceToolCategory end as pph_fhmnr preserving type)` |
-| `ProdnRsceToolCategory` |  | |  |  |
-| `ProdnRsceToolCategory_2` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Material` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `MiscProductionResourceTool` |  | |  |  |
-| `DocumentType` |  | |  |  |
-| `DocumentInfoRecord` |  | |  |  |
-| `DocumentVersion` |  | |  |  |
-| `DocumentPart` |  | |  |  |
-| `MeasuringPoint` |  | |  |  |
-| `_ProductionResourceType` |  | |  |  |
-| `_ProdnRsceToolCategory` |  | |  |  |
-| `_ProdnRsceToolCategory_2` |  | |  |  |
-| `_ProdnRsceToolCategory_3` |  | |  |  |
-| `_DocumentType` |  | |  |  |
-| `_DocumentNumber` |  | |  |  |
-| `_DocumentVersion` |  | |  |  |
-| `_ProdnRsceToolText` | | ✓ | | |
-| `_MaterialProdnRsceTool` | | ✓ | | |
-| `_EquipmentProdnRsceTool` | | ✓ | | |
-| `_MiscProdnRsceTool` | | ✓ | | |
-| `_DocumentProdnRsceTool` | | ✓ | | |
-| `_MsrgPointProdnRsceTool` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionResourceType` | ✓ | |  |  |  |  |
+| `ProductionResourceInternalID` | ✓ | |  |  |  |  |
+| `ProductionResourceTool` |  | |  | `cast( case PRT.ProdnRsceToolCategory when 'M' then crvm_a.Material when 'E' then crve_a.Equipment when 'S' then crvs_a.MiscProductionResourceTool when 'D' then concat_with_space(concat_with_space(concat_with_space( crvd_a.DocumentInfoRecord, crvd_a.DocumentType, 1), crvd_a.DocumentPart, 1), crvd_a.DocumentVersion, 1) when 'P' then crvp_a.MeasuringPoint else PRT.ProdnRsceToolCategory end as pph_fhmnr preserving type)` |  |  |
+| `ProdnRsceToolCategory` |  | |  |  |  |  |
+| `ProdnRsceToolCategory_2` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `MiscProductionResourceTool` |  | |  |  |  |  |
+| `DocumentType` |  | |  |  |  |  |
+| `DocumentInfoRecord` |  | |  |  |  |  |
+| `DocumentVersion` |  | |  |  |  |  |
+| `DocumentPart` |  | |  |  |  |  |
+| `MeasuringPoint` |  | |  |  |  |  |
+| `_ProductionResourceType` |  | |  |  |  |  |
+| `_ProdnRsceToolCategory` |  | |  |  |  |  |
+| `_ProdnRsceToolCategory_2` |  | |  |  |  |  |
+| `_ProdnRsceToolCategory_3` |  | |  |  |  |  |
+| `_DocumentType` |  | |  |  |  |  |
+| `_DocumentNumber` |  | |  |  |  |  |
+| `_DocumentVersion` |  | |  |  |  |  |
+| `_ProdnRsceToolText` | | ✓ | | | | |
+| `_MaterialProdnRsceTool` | | ✓ | | | | |
+| `_EquipmentProdnRsceTool` | | ✓ | | | | |
+| `_MiscProdnRsceTool` | | ✓ | | | | |
+| `_DocumentProdnRsceTool` | | ✓ | | | | |
+| `_MsrgPointProdnRsceTool` | | ✓ | | | | |
 
 ## Associations
 

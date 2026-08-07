@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs )` |
-| `Language` | ✓ | |  | `spras` |
-| `APARToleranceGroup` | ✓ | |  | `cast( togru as farp_togru )` |
-| `APARToleranceGroupName` |  | |  | `txt30` |
-| `_CompanyCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `APARToleranceGroup` | ✓ | |  | `cast( togru as farp_togru )` |  |  |
+| `APARToleranceGroupName` |  | |  | `txt30` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

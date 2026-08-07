@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
-| `DocumentInfoRecordDocNumber` |  | |  | `}] key document.doknr` |
-| `DocumentInfoRecordDocVersion` | ✓ | |  | `dokvr` |
-| `_TEXT` | | ✓ | | |
-| `_DocType` | | ✓ | | |
-| `_DocNumber` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  | `doknr` |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  | `dokvr` |  |  |
+| `_TEXT` | | ✓ | | | | |
+| `_DocType` | | ✓ | | | | |
+| `_DocNumber` | | ✓ | | | | |
 
 ## Associations
 

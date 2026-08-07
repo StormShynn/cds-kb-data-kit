@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityRequirement` | ✓ | |  | `bedid` |
-| `CapacityRequirementItem` | ✓ | |  | `bedzl` |
-| `_CapacityRequirement` | | ✓ | | |
-| `_CapacityRequirementItemCap` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityRequirement` | ✓ | |  | `bedid` |  |  |
+| `CapacityRequirementItem` | ✓ | |  | `bedzl` |  |  |
+| `_CapacityRequirement` | | ✓ | | | | |
+| `_CapacityRequirementItemCap` | | ✓ | | | | |
 
 ## Associations
 

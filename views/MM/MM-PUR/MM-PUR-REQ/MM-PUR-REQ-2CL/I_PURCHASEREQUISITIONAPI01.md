@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseRequisition` | ✓ | |  |  |
-| `PurReqnDescription` |  | |  |  |
-| `PurchaseRequisitionType` |  | |  |  |
-| `LastChangeDateTime` |  | |  | `max( LastChangeDateTime )` |
-| `_PurchaseRequisitionItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |  |  |
+| `PurReqnDescription` |  | |  |  |  |  |
+| `PurchaseRequisitionType` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  | `max( LastChangeDateTime )` |  |  |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
 
 ## Associations
 

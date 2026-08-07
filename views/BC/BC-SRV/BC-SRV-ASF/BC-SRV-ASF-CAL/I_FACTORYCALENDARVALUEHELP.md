@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FactoryCalendarID` | ✓ | |  |  |
-| `FactoryCalendarLegacyID` |  | |  |  |
-| `FctryCalendarValidityStartDate` |  | |  |  |
-| `FactoryCalendarValidityEndDate` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FactoryCalendarID` | ✓ | |  |  |  |  |
+| `FactoryCalendarLegacyID` |  | |  |  |  |  |
+| `FctryCalendarValidityStartDate` |  | |  |  |  |  |
+| `FactoryCalendarValidityEndDate` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

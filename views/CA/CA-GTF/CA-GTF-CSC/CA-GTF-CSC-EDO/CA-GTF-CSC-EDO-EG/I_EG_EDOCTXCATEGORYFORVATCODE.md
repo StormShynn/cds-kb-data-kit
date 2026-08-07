@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EG_EDocTaxCode` | ✓ | |  |  |
-| `EG_EDocAcctKey` | ✓ | |  |  |
-| `EG_EDocTaxType` |  | |  |  |
-| `EG_EDocTaxSubtype` |  | |  |  |
-| `EG_EDocTaxCategory` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EG_EDocTaxCode` | ✓ | |  |  |  |  |
+| `EG_EDocAcctKey` | ✓ | |  |  |  |  |
+| `EG_EDocTaxType` |  | |  |  |  |  |
+| `EG_EDocTaxSubtype` |  | |  |  |  |  |
+| `EG_EDocTaxCategory` |  | |  |  |  |  |
 
 ## Source Code
 

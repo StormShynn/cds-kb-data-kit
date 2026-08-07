@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UniversalHierarchy` | ✓ | |  | `hryid` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `CustUnivHierarchyValidEndDate` | ✓ | |  | `cast(Node.hryvalto as custhierarchyvalidityenddate preserving type )` |
-| `CustUnivHierarchyValidStartDte` |  | |  | `cast(Node.hryvalfrom as custhierarchyvaliditystartdate preserving type )` |
-| `CustUnivHierarchyType` |  | |  | `hrytyp` |
-| `CustUnivHierarchyShortID` |  | | `_hierarchydirectory` | `hrysid` |
-| `CustUnivHierarchyParentNode` |  | |  | `parnode` |
-| `CustUnivHierarchyNodeType` |  | |  | `nodetype` |
-| `CustUnivHierarchyNodeValue` |  | |  | `nodevalue` |
-| `Customer` |  | |  | `cast( _NodeAttribute.hryattrvalue as kunnr)` |
-| `CustUnivHierarchyNodeSequence` |  | |  | `hryseqnbr` |
-| `CustUnivHierarchyNodeLevel` |  | |  | `hrylevel` |
-| `CustUnivHierarchyLeafValue` |  | |  | `leafvalue` |
-| `_CustUnivHierarchy` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UniversalHierarchy` | ✓ | |  | `hryid` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `CustUnivHierarchyValidEndDate` | ✓ | |  | `cast(Node.hryvalto as custhierarchyvalidityenddate preserving type )` |  |  |
+| `CustUnivHierarchyValidStartDte` |  | |  | `cast(Node.hryvalfrom as custhierarchyvaliditystartdate preserving type )` |  |  |
+| `CustUnivHierarchyType` |  | |  | `hrytyp` |  |  |
+| `CustUnivHierarchyShortID` |  | | `_hierarchydirectory` | `hrysid` |  |  |
+| `CustUnivHierarchyParentNode` |  | |  | `parnode` |  |  |
+| `CustUnivHierarchyNodeType` |  | |  | `nodetype` |  |  |
+| `CustUnivHierarchyNodeValue` |  | |  | `nodevalue` |  |  |
+| `Customer` |  | |  | `cast( _NodeAttribute.hryattrvalue as kunnr)` |  |  |
+| `CustUnivHierarchyNodeSequence` |  | |  | `hryseqnbr` |  |  |
+| `CustUnivHierarchyNodeLevel` |  | |  | `hrylevel` |  |  |
+| `CustUnivHierarchyLeafValue` |  | |  | `leafvalue` |  |  |
+| `_CustUnivHierarchy` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
 
 ## Associations
 

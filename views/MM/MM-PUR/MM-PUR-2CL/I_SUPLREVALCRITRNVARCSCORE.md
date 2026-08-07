@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingCategory` | ✓ | |  | `purchasingcategory` |
-| `PurchasingOrganization` | ✓ | |  | `purchasingorganization` |
-| `SuplrEvalCriterion` | ✓ | |  | `suplrevalcriterion` |
-| `SuplrEvalAbsltVariancePctFrom` | ✓ | |  | `absolutepercentagefrom` |
-| `SuplrEvalAbsltVariancePctTo` | ✓ | |  | `absolutepercentageto` |
-| `SupplierEvaluationScore` |  | |  | `supplierevaluationscore` |
-| `SuplrEvalVarcScrUprLmtIndIsSet` |  | |  | `suplrevalvarcscruprlmtindisset` |
-| `SuplrEvalScrLowrLmtIndIsSet` |  | |  | `suplrevalscrlowrlmtindisset` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingCategory` | ✓ | |  | `purchasingcategory` |  |  |
+| `PurchasingOrganization` | ✓ | |  | `purchasingorganization` |  |  |
+| `SuplrEvalCriterion` | ✓ | |  | `suplrevalcriterion` |  |  |
+| `SuplrEvalAbsltVariancePctFrom` | ✓ | |  | `absolutepercentagefrom` |  |  |
+| `SuplrEvalAbsltVariancePctTo` | ✓ | |  | `absolutepercentageto` |  |  |
+| `SupplierEvaluationScore` |  | |  | `supplierevaluationscore` |  |  |
+| `SuplrEvalVarcScrUprLmtIndIsSet` |  | |  | `suplrevalvarcscruprlmtindisset` |  |  |
+| `SuplrEvalScrLowrLmtIndIsSet` |  | |  | `suplrevalscrlowrlmtindisset` |  |  |
 
 ## Source Code
 

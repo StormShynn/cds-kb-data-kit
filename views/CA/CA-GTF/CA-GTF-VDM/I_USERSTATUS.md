@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserStatus` | ✓ | |  | `estat` |
-| `StatusProfile` | ✓ | |  | `stsma` |
-| `StatusAuthorizationKey` |  | |  | `bersl` |
-| `StatusSequenceNumber` |  | |  | `stonr` |
-| `StatusDisplayPosition` |  | |  | `linep` |
-| `StatusDisplayPriority` |  | |  | `statp` |
-| `_UserStatusText` | | ✓ | | |
-| `_StatusProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserStatus` | ✓ | |  | `estat` |  |  |
+| `StatusProfile` | ✓ | |  | `stsma` |  |  |
+| `StatusAuthorizationKey` |  | |  | `bersl` |  |  |
+| `StatusSequenceNumber` |  | |  | `stonr` |  |  |
+| `StatusDisplayPosition` |  | |  | `linep` |  |  |
+| `StatusDisplayPriority` |  | |  | `statp` |  |  |
+| `_UserStatusText` | | ✓ | | | | |
+| `_StatusProfile` | | ✓ | | | | |
 
 ## Associations
 

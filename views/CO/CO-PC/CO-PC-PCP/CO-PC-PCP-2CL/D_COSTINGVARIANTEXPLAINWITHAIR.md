@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ExplainWithAIResultText` |  | |  | `aifnd_xc_explanation` |
-| `CreationDateTime` |  | |  | `tzntstmps` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExplainWithAIResultText` |  | |  | `aifnd_xc_explanation` |  |  |
+| `CreationDateTime` |  | |  | `tzntstmps` |  |  |
 
 ## Source Code
 

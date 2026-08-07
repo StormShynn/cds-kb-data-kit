@@ -32,33 +32,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `FormOfAddressName` |  | | `_FormOfAddressText` | `FormOfAddressName` |
-| `BusinessPartnerName` |  | |  |  |
-| `BusinessPartnerCategory` |  | |  |  |
-| `BusinessPartnerIDByExtSystem` |  | |  |  |
-| `FirstName` |  | |  |  |
-| `LastName` |  | |  |  |
-| `OrganizationBPName1` |  | |  |  |
-| `GroupBusinessPartnerName1` |  | |  |  |
-| `BirthDate` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `_FormOfAddressText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `FormOfAddressName` |  | | `_FormOfAddressText` | `FormOfAddressName` |  |  |
+| `BusinessPartnerName` |  | |  |  |  |  |
+| `BusinessPartnerCategory` |  | |  |  |  |  |
+| `BusinessPartnerIDByExtSystem` |  | |  |  |  |  |
+| `FirstName` |  | |  |  |  |  |
+| `LastName` |  | |  |  |  |  |
+| `OrganizationBPName1` |  | |  |  |  |  |
+| `GroupBusinessPartnerName1` |  | |  |  |  |  |
+| `BirthDate` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `_FormOfAddressText` | | ✓ | | | | |
 
 ## Associations
 

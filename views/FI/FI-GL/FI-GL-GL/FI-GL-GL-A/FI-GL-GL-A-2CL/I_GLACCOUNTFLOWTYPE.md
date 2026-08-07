@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountFlowType` | ✓ | |  | `cast( dd07l.domvalue_l as fis_glaccount_flow_type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountFlowType` | ✓ | |  | `cast( dd07l.domvalue_l as fis_glaccount_flow_type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GoodsMovementType` | ✓ | |  | `bwart` |
-| `IsReversalMovementType` |  | |  | `xstbw` |
-| `DebitCreditCode` |  | |  | `shkzg` |
-| `ResvnAcctAssgmtCategory` |  | |  | `rstyp` |
-| `BasicMovementTypeReference` |  | |  | `bustr` |
-| `SourceGoodsMovementType` |  | |  | `mvt_source` |
-| `_Text` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_ResvnAcctAssgmtCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GoodsMovementType` | ✓ | |  | `bwart` |  |  |
+| `IsReversalMovementType` |  | |  | `xstbw` |  |  |
+| `DebitCreditCode` |  | |  | `shkzg` |  |  |
+| `ResvnAcctAssgmtCategory` |  | |  | `rstyp` |  |  |
+| `BasicMovementTypeReference` |  | |  | `bustr` |  |  |
+| `SourceGoodsMovementType` |  | |  | `mvt_source` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_ResvnAcctAssgmtCategory` | | ✓ | | | | |
 
 ## Associations
 

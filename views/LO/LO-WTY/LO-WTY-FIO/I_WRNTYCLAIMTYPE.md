@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WarrantyClaimType` | ✓ | |  | `clmty` |
-| `WarrantyClaimVersionCategory` |  | |  | `start_kateg` |
-| `WarrantyClaimTypeUsage` |  | |  | `clmty_usage` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarrantyClaimType` | ✓ | |  | `clmty` |  |  |
+| `WarrantyClaimVersionCategory` |  | |  | `start_kateg` |  |  |
+| `WarrantyClaimTypeUsage` |  | |  | `clmty_usage` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

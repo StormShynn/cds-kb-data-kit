@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAReturnReason` | ✓ | |  | `rlgrd` |
-| `HouseBank` | ✓ | |  | `hbkid` |
-| `CAReturnType` |  | |  | `rltyp` |
-| `CAReturnHistoryDays` |  | |  | `histt` |
-| `CACreditWorthinessRatingValue` |  | |  | `bonig` |
-| `CAClarificationAccount` |  | |  | `klaeh` |
-| `CAChequeVoidingReason` |  | |  | `voidr` |
-| `_HouseBank` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAReturnReason` | ✓ | |  | `rlgrd` |  |  |
+| `HouseBank` | ✓ | |  | `hbkid` |  |  |
+| `CAReturnType` |  | |  | `rltyp` |  |  |
+| `CAReturnHistoryDays` |  | |  | `histt` |  |  |
+| `CACreditWorthinessRatingValue` |  | |  | `bonig` |  |  |
+| `CAClarificationAccount` |  | |  | `klaeh` |  |  |
+| `CAChequeVoidingReason` |  | |  | `voidr` |  |  |
+| `_HouseBank` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

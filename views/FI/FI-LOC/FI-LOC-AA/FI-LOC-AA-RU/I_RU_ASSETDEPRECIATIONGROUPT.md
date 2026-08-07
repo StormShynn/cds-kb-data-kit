@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |
-| `RU_AssetOKOF` | ✓ | |  | `okof` |
-| `RU_AssetDepreciationGroup` | ✓ | |  | `depr_group` |
-| `Language` | ✓ | |  | `sprsl` |
-| `RU_AssetDepreciationGroupDesc` |  | |  | `description` |
-| `_Country` | | ✓ | | |
-| `_RU_AssetOKOF` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |  |  |
+| `RU_AssetOKOF` | ✓ | |  | `okof` |  |  |
+| `RU_AssetDepreciationGroup` | ✓ | |  | `depr_group` |  |  |
+| `Language` | ✓ | |  | `sprsl` |  |  |
+| `RU_AssetDepreciationGroupDesc` |  | |  | `description` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_RU_AssetOKOF` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

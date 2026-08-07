@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |
-| `CharcValuePositionNumber` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `CharcValueDescription` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `_Characteristic` | | ✓ | | |
-| `_CharacteristicValue` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `CharcValuePositionNumber` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `CharcValueDescription` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `_Characteristic` | | ✓ | | | | |
+| `_CharacteristicValue` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

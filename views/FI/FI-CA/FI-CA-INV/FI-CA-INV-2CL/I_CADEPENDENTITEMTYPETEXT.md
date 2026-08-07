@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADependentItemType` | ✓ | |  | `cast( _tfk8240t.dittype as ditrsn_gfn_kk preserving type )` |
-| `Language` | ✓ | | `_tfk8240t` | `langu` |
-| `CADependentItemTypeText` |  | | `_tfk8240t` | `text` |
-| `_CADependentItemType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADependentItemType` | ✓ | |  | `cast( _tfk8240t.dittype as ditrsn_gfn_kk preserving type )` |  |  |
+| `Language` | ✓ | | `_tfk8240t` | `langu` |  |  |
+| `CADependentItemTypeText` |  | | `_tfk8240t` | `text` |  |  |
+| `_CADependentItemType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgPreliminaryCategory` | ✓ | |  | `prlinv_cat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgPreliminaryCategory` | ✓ | |  | `prlinv_cat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankPowerOfAttorneyUUID` | ✓ | |  |  |
-| `BkPOABankAccountUUID` | ✓ | |  |  |
-| `BankAccountInternalID` |  | |  |  |
-| `BkPOABkAcctAssignmentDateTime` |  | |  |  |
-| `BkPOABkAcctRemovalDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `_BankPowerOfAttorney` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` | ✓ | |  |  |  |  |
+| `BkPOABankAccountUUID` | ✓ | |  |  |  |  |
+| `BankAccountInternalID` |  | |  |  |  |  |
+| `BkPOABkAcctAssignmentDateTime` |  | |  |  |  |  |
+| `BkPOABkAcctRemovalDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `_BankPowerOfAttorney` | | ✓ | | | | |
 
 ## Source Code
 

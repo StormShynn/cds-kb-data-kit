@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowStepType` | ✓ | |  |  |
-| `WrkflwScen` | ✓ | |  |  |
-| `WrkflwScenVers` | ✓ | |  |  |
-| `WorkflowStepIsSystemTask` |  | |  |  |
-| `WorkflowStepTypeClassfctn` |  | |  |  |
-| `_WorkflowTaskStepTypeText` | | ✓ | | |
-| `_WorkflowTaskStepResult` | | ✓ | | |
-| `_WorkflowStepTypeClassfctn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowStepType` | ✓ | |  |  |  |  |
+| `WrkflwScen` | ✓ | |  |  |  |  |
+| `WrkflwScenVers` | ✓ | |  |  |  |  |
+| `WorkflowStepIsSystemTask` |  | |  |  |  |  |
+| `WorkflowStepTypeClassfctn` |  | |  |  |  |  |
+| `_WorkflowTaskStepTypeText` | | ✓ | | | | |
+| `_WorkflowTaskStepResult` | | ✓ | | | | |
+| `_WorkflowStepTypeClassfctn` | | ✓ | | | | |
 
 ## Source Code
 

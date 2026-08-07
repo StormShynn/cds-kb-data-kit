@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `REConditionType` | ✓ | |  | `condtype` |
-| `REConditionTypeName` |  | |  | `xcondtypel` |
-| `_Language` | | ✓ | | |
-| `_REConditionType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `REConditionType` | ✓ | |  | `condtype` |  |  |
+| `REConditionTypeName` |  | |  | `xcondtypel` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_REConditionType` | | ✓ | | | | |
 
 ## Associations
 

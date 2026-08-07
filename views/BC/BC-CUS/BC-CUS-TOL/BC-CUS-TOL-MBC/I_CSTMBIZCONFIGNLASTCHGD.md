@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ViewEntityName` | ✓ | |  | `view_entity_name` |
-| `LastChangedDateTime` |  | |  | `last_changed_date_time` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ViewEntityName` | ✓ | |  | `view_entity_name` |  |  |
+| `LastChangedDateTime` |  | |  | `last_changed_date_time` |  |  |
 
 ## Source Code
 

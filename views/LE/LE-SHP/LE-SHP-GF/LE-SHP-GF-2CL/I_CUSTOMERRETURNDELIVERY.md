@@ -31,173 +31,173 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturnDelivery` | ✓ | |  | `cast(DeliveryDocument as customer_return_delivery)` |
-| `DeliveryDocument` |  | |  |  |
-| `DeliveryDocumentType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `CompleteDeliveryIsDefined` |  | |  |  |
-| `OrderCombinationIsAllowed` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `DeliveryBlockReason` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `DeliveryDocumentBySupplier` |  | |  |  |
-| `DeliveryIsInPlant` |  | |  |  |
-| `ReceivingPlant` |  | |  |  |
-| `Warehouse` |  | |  |  |
-| `IsExportDelivery` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `HeaderGrossWeight` |  | |  |  |
-| `HeaderNetWeight` |  | |  |  |
-| `HeaderWeightUnit` |  | |  |  |
-| `HeaderVolume` |  | |  |  |
-| `HeaderVolumeUnit` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `ReadyForWarehouseExecStatus` |  | |  |  |
-| `DelivAdvncdShipgRcvgRlvnce` |  | |  |  |
-| `PickingDate` |  | |  |  |
-| `PickingTime` |  | |  |  |
-| `TotalNumberOfPackage` |  | |  |  |
-| `LoadingPoint` |  | |  |  |
-| `LoadingDate` |  | |  |  |
-| `LoadingTime` |  | |  |  |
-| `BillOfLading` |  | |  |  |
-| `HandlingUnitInStock` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `DeliveryDate` |  | |  |  |
-| `DeliveryTime` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `ShipmentBlockReason` |  | |  |  |
-| `TransportationPlanningDate` |  | |  |  |
-| `TransportationPlanningTime` |  | |  |  |
-| `ProposedDeliveryRoute` |  | |  |  |
-| `ActualDeliveryRoute` |  | |  |  |
-| `RouteSchedule` |  | |  |  |
-| `PlannedGoodsIssueDate` |  | |  |  |
-| `GoodsIssueTime` |  | |  |  |
-| `ActualGoodsMovementDate` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `ExternalTransportSystem` |  | |  |  |
-| `TransportationGroup` |  | |  |  |
-| `MeansOfTransport` |  | |  |  |
-| `MeansOfTransportType` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `ProofOfDeliveryDate` |  | |  |  |
-| `ConfirmationTime` |  | |  |  |
-| `FactoryCalendarByCustomer` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `HeaderBillingBlockReason` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `OverallIntcoBillingStatus` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `TotalBlockStatus` |  | |  |  |
-| `OverallDelivConfStatus` |  | |  |  |
-| `TransportationPlanningStatus` |  | |  |  |
-| `OverallPickingConfStatus` |  | |  |  |
-| `OverallPickingStatus` |  | |  |  |
-| `OverallPutawayStatus` |  | |  | `OverallPickingStatus` |
-| `OverallPackingStatus` |  | |  |  |
-| `OverallWarehouseActivityStatus` |  | |  |  |
-| `DistrStatusByDecentralizedWrhs` |  | |  |  |
-| `OverallGoodsMovementStatus` |  | |  |  |
-| `OverallDelivReltdBillgStatus` |  | |  |  |
-| `OverallProofOfDeliveryStatus` |  | |  |  |
-| `HdrGeneralIncompletionStatus` |  | |  |  |
-| `HeaderDelivIncompletionStatus` |  | |  |  |
-| `HeaderPickgIncompletionStatus` |  | |  |  |
-| `HeaderPackingIncompletionSts` |  | |  |  |
-| `HdrGoodsMvtIncompletionStatus` |  | |  |  |
-| `HeaderBillgIncompletionStatus` |  | |  |  |
-| `OvrlItmGeneralIncompletionSts` |  | |  |  |
-| `OvrlItmPackingIncompletionSts` |  | |  |  |
-| `OvrlItmPickingIncompletionSts` |  | |  |  |
-| `OvrlItmDelivIncompletionSts` |  | |  |  |
-| `OvrlItmGdsMvtIncompletionSts` |  | |  |  |
-| `OverallChmlCmplncStatus` |  | |  |  |
-| `OverallDangerousGoodsStatus` |  | |  |  |
-| `OverallSafetyDataSheetStatus` |  | |  |  |
-| `EU_DeliveryARCStatus` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_OverallPutawayStatus` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_DeliveryDocumentType` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_DeliveryPriority` | | ✓ | | |
-| `_DeliveryBlockReason` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_ReceivingPlant` | | ✓ | | |
-| `_Warehouse` | | ✓ | | |
-| `_OrderID` | | ✓ | | |
-| `_HeaderWeightUnit` | | ✓ | | |
-| `_HeaderVolumeUnit` | | ✓ | | |
-| `_LoadingPoint` | | ✓ | | |
-| `_HandlingUnitInStock` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_ShippingType` | | ✓ | | |
-| `_ShippingCondition` | | ✓ | | |
-| `_ShipmentBlockReason` | | ✓ | | |
-| `_ProposedDeliveryRoute` | | ✓ | | |
-| `_ActualDeliveryRoute` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_TransportationGroup` | | ✓ | | |
-| `_MeansOfTransportType` | | ✓ | | |
-| `_HeaderBillingBlockReason` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_OverallSDProcessStatus` | | ✓ | | |
-| `_TotalBlockStatus` | | ✓ | | |
-| `_OverallDelivConfStatus` | | ✓ | | |
-| `_TransportationPlanningSts` | | ✓ | | |
-| `_OverallPickingConfStatus` | | ✓ | | |
-| `_OverallPickingStatus` | | ✓ | | |
-| `_OverallPackingStatus` | | ✓ | | |
-| `_OvrlWarehouseActyStatus` | | ✓ | | |
-| `_DistrStatusByDectrlzdWrhs` | | ✓ | | |
-| `_OverallGoodsMovementStatus` | | ✓ | | |
-| `_OverallDelivReltdBillgStatus` | | ✓ | | |
-| `_OverallProofOfDeliveryStatus` | | ✓ | | |
-| `_HdrGeneralIncompletionStatus` | | ✓ | | |
-| `_HeaderDelivIncompletionStatus` | | ✓ | | |
-| `_HeaderPickgIncompletionStatus` | | ✓ | | |
-| `_HeaderPackingIncompletionSts` | | ✓ | | |
-| `_HdrGoodsMvtIncompletionStatus` | | ✓ | | |
-| `_HeaderBillgIncompletionStatus` | | ✓ | | |
-| `_OvrlItmGeneralIncompletionSts` | | ✓ | | |
-| `_OvrlItmPackingIncompletionSts` | | ✓ | | |
-| `_OvrlItmPickingIncompletionSts` | | ✓ | | |
-| `_OvrlItmDelivIncompletionSts` | | ✓ | | |
-| `_OvrlItmGdsMvtIncompletionSts` | | ✓ | | |
-| `_MaterialDocumentHeader` | | ✓ | | |
-| `_MaterialDocumentHeader_2` | | ✓ | | |
-| `_OverallChmlCmplncStatus` | | ✓ | | |
-| `_OverallDangerousGoodsStatus` | | ✓ | | |
-| `_OvrlSftyDataSheetSts` | | ✓ | | |
-| `_ExciseTaxStatus` | | ✓ | | |
-| `_WarehouseExecutionStatus` | | ✓ | | |
-| `_DelivAdvncdShipgRcvgRlvnce` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturnDelivery` | ✓ | |  | `cast(DeliveryDocument as customer_return_delivery)` |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `DeliveryDocumentType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `CompleteDeliveryIsDefined` |  | |  |  |  |  |
+| `OrderCombinationIsAllowed` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `DeliveryBlockReason` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `DeliveryDocumentBySupplier` |  | |  |  |  |  |
+| `DeliveryIsInPlant` |  | |  |  |  |  |
+| `ReceivingPlant` |  | |  |  |  |  |
+| `Warehouse` |  | |  |  |  |  |
+| `IsExportDelivery` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `HeaderGrossWeight` |  | |  |  |  |  |
+| `HeaderNetWeight` |  | |  |  |  |  |
+| `HeaderWeightUnit` |  | |  |  |  |  |
+| `HeaderVolume` |  | |  |  |  |  |
+| `HeaderVolumeUnit` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `ReadyForWarehouseExecStatus` |  | |  |  |  |  |
+| `DelivAdvncdShipgRcvgRlvnce` |  | |  |  |  |  |
+| `PickingDate` |  | |  |  |  |  |
+| `PickingTime` |  | |  |  |  |  |
+| `TotalNumberOfPackage` |  | |  |  |  |  |
+| `LoadingPoint` |  | |  |  |  |  |
+| `LoadingDate` |  | |  |  |  |  |
+| `LoadingTime` |  | |  |  |  |  |
+| `BillOfLading` |  | |  |  |  |  |
+| `HandlingUnitInStock` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `DeliveryDate` |  | |  |  |  |  |
+| `DeliveryTime` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `ShipmentBlockReason` |  | |  |  |  |  |
+| `TransportationPlanningDate` |  | |  |  |  |  |
+| `TransportationPlanningTime` |  | |  |  |  |  |
+| `ProposedDeliveryRoute` |  | |  |  |  |  |
+| `ActualDeliveryRoute` |  | |  |  |  |  |
+| `RouteSchedule` |  | |  |  |  |  |
+| `PlannedGoodsIssueDate` |  | |  |  |  |  |
+| `GoodsIssueTime` |  | |  |  |  |  |
+| `ActualGoodsMovementDate` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `ExternalTransportSystem` |  | |  |  |  |  |
+| `TransportationGroup` |  | |  |  |  |  |
+| `MeansOfTransport` |  | |  |  |  |  |
+| `MeansOfTransportType` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `ProofOfDeliveryDate` |  | |  |  |  |  |
+| `ConfirmationTime` |  | |  |  |  |  |
+| `FactoryCalendarByCustomer` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `OverallIntcoBillingStatus` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `TotalBlockStatus` |  | |  |  |  |  |
+| `OverallDelivConfStatus` |  | |  |  |  |  |
+| `TransportationPlanningStatus` |  | |  |  |  |  |
+| `OverallPickingConfStatus` |  | |  |  |  |  |
+| `OverallPickingStatus` |  | |  |  |  |  |
+| `OverallPutawayStatus` |  | |  | `OverallPickingStatus` |  |  |
+| `OverallPackingStatus` |  | |  |  |  |  |
+| `OverallWarehouseActivityStatus` |  | |  |  |  |  |
+| `DistrStatusByDecentralizedWrhs` |  | |  |  |  |  |
+| `OverallGoodsMovementStatus` |  | |  |  |  |  |
+| `OverallDelivReltdBillgStatus` |  | |  |  |  |  |
+| `OverallProofOfDeliveryStatus` |  | |  |  |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |  |  |
+| `HeaderDelivIncompletionStatus` |  | |  |  |  |  |
+| `HeaderPickgIncompletionStatus` |  | |  |  |  |  |
+| `HeaderPackingIncompletionSts` |  | |  |  |  |  |
+| `HdrGoodsMvtIncompletionStatus` |  | |  |  |  |  |
+| `HeaderBillgIncompletionStatus` |  | |  |  |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |  |  |
+| `OvrlItmPackingIncompletionSts` |  | |  |  |  |  |
+| `OvrlItmPickingIncompletionSts` |  | |  |  |  |  |
+| `OvrlItmDelivIncompletionSts` |  | |  |  |  |  |
+| `OvrlItmGdsMvtIncompletionSts` |  | |  |  |  |  |
+| `OverallChmlCmplncStatus` |  | |  |  |  |  |
+| `OverallDangerousGoodsStatus` |  | |  |  |  |  |
+| `OverallSafetyDataSheetStatus` |  | |  |  |  |  |
+| `EU_DeliveryARCStatus` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_OverallPutawayStatus` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_DeliveryDocumentType` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_DeliveryPriority` | | ✓ | | | | |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_ReceivingPlant` | | ✓ | | | | |
+| `_Warehouse` | | ✓ | | | | |
+| `_OrderID` | | ✓ | | | | |
+| `_HeaderWeightUnit` | | ✓ | | | | |
+| `_HeaderVolumeUnit` | | ✓ | | | | |
+| `_LoadingPoint` | | ✓ | | | | |
+| `_HandlingUnitInStock` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_ShippingType` | | ✓ | | | | |
+| `_ShippingCondition` | | ✓ | | | | |
+| `_ShipmentBlockReason` | | ✓ | | | | |
+| `_ProposedDeliveryRoute` | | ✓ | | | | |
+| `_ActualDeliveryRoute` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_TransportationGroup` | | ✓ | | | | |
+| `_MeansOfTransportType` | | ✓ | | | | |
+| `_HeaderBillingBlockReason` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_OverallSDProcessStatus` | | ✓ | | | | |
+| `_TotalBlockStatus` | | ✓ | | | | |
+| `_OverallDelivConfStatus` | | ✓ | | | | |
+| `_TransportationPlanningSts` | | ✓ | | | | |
+| `_OverallPickingConfStatus` | | ✓ | | | | |
+| `_OverallPickingStatus` | | ✓ | | | | |
+| `_OverallPackingStatus` | | ✓ | | | | |
+| `_OvrlWarehouseActyStatus` | | ✓ | | | | |
+| `_DistrStatusByDectrlzdWrhs` | | ✓ | | | | |
+| `_OverallGoodsMovementStatus` | | ✓ | | | | |
+| `_OverallDelivReltdBillgStatus` | | ✓ | | | | |
+| `_OverallProofOfDeliveryStatus` | | ✓ | | | | |
+| `_HdrGeneralIncompletionStatus` | | ✓ | | | | |
+| `_HeaderDelivIncompletionStatus` | | ✓ | | | | |
+| `_HeaderPickgIncompletionStatus` | | ✓ | | | | |
+| `_HeaderPackingIncompletionSts` | | ✓ | | | | |
+| `_HdrGoodsMvtIncompletionStatus` | | ✓ | | | | |
+| `_HeaderBillgIncompletionStatus` | | ✓ | | | | |
+| `_OvrlItmGeneralIncompletionSts` | | ✓ | | | | |
+| `_OvrlItmPackingIncompletionSts` | | ✓ | | | | |
+| `_OvrlItmPickingIncompletionSts` | | ✓ | | | | |
+| `_OvrlItmDelivIncompletionSts` | | ✓ | | | | |
+| `_OvrlItmGdsMvtIncompletionSts` | | ✓ | | | | |
+| `_MaterialDocumentHeader` | | ✓ | | | | |
+| `_MaterialDocumentHeader_2` | | ✓ | | | | |
+| `_OverallChmlCmplncStatus` | | ✓ | | | | |
+| `_OverallDangerousGoodsStatus` | | ✓ | | | | |
+| `_OvrlSftyDataSheetSts` | | ✓ | | | | |
+| `_ExciseTaxStatus` | | ✓ | | | | |
+| `_WarehouseExecutionStatus` | | ✓ | | | | |
+| `_DelivAdvncdShipgRcvgRlvnce` | | ✓ | | | | |
 
 ## Associations
 

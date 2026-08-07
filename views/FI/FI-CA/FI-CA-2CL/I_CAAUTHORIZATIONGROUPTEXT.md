@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |
-| `CAAuthorizationGroup` | ✓ | |  | `begru` |
-| `Language` | ✓ | |  | `langu` |
-| `CAAuthorizationGroupText` |  | |  | `text` |
-| `_AuthznGroupObject` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |  |  |
+| `CAAuthorizationGroup` | ✓ | |  | `begru` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CAAuthorizationGroupText` |  | |  | `text` |  |  |
+| `_AuthznGroupObject` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

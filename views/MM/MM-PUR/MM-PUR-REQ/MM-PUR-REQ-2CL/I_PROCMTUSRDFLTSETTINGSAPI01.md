@@ -28,54 +28,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserID` | ✓ | |  | `Employee` |
-| `PersonalizationID` | ✓ | |  |  |
-| `BusinessObjectType` | ✓ | |  |  |
-| `Employee` |  | | `_Employee` | `BPIdentificationNumber` |
-| `Plant` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Currency` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `SourceDetermination` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `WBSElementInternalID` |  | |  | `cast( WBSElementInternalID_2 as ps_psp_pnr )` |
-| `WBSElementInternalID_2` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `ProjectNetworkInternalID` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `Asset` |  | |  |  |
-| `AssetSubNumber` |  | |  |  |
-| `ProcurementHubSourceSystem` |  | |  |  |
-| `ShopOnBehalfType` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `PurchaseOrderPriceType` |  | |  |  |
-| `AuthorizationGroup` |  | | `_Employee` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` |  | | `_Employee` | `IsBusinessPurposeCompleted` |
-| `DataControllerSet` |  | | `_Employee` | `DataControllerSet` |
-| `DataController1` |  | | `_Employee` | `DataController1` |
-| `DataController2` |  | | `_Employee` | `DataController2` |
-| `DataController3` |  | | `_Employee` | `DataController3` |
-| `DataController4` |  | | `_Employee` | `DataController4` |
-| `DataController5` |  | | `_Employee` | `DataController5` |
-| `DataController6` |  | | `_Employee` | `DataController6` |
-| `DataController7` |  | | `_Employee` | `DataController7` |
-| `DataController8` |  | | `_Employee` | `DataController8` |
-| `DataController9` |  | | `_Employee` | `DataController9` |
-| `DataController10` |  | | `_Employee` | `DataController10` |
-| `BusinessPartner` |  | | `_Employee` | `BusinessPartner` |
-| `_Employee` | | ✓ | | |
-| `_Employee1` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserID` | ✓ | |  | `Employee` |  |  |
+| `PersonalizationID` | ✓ | |  |  |  |  |
+| `BusinessObjectType` | ✓ | |  |  |  |  |
+| `Employee` |  | | `_Employee` | `BPIdentificationNumber` |  |  |
+| `Plant` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `SourceDetermination` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  | `cast( WBSElementInternalID_2 as ps_psp_pnr )` |  |  |
+| `WBSElementInternalID_2` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `Asset` |  | |  |  |  |  |
+| `AssetSubNumber` |  | |  |  |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |  |  |
+| `ShopOnBehalfType` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `PurchaseOrderPriceType` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | | `_Employee` | `AuthorizationGroup` |  |  |
+| `IsBusinessPurposeCompleted` |  | | `_Employee` | `IsBusinessPurposeCompleted` |  |  |
+| `DataControllerSet` |  | | `_Employee` | `DataControllerSet` |  |  |
+| `DataController1` |  | | `_Employee` | `DataController1` |  |  |
+| `DataController2` |  | | `_Employee` | `DataController2` |  |  |
+| `DataController3` |  | | `_Employee` | `DataController3` |  |  |
+| `DataController4` |  | | `_Employee` | `DataController4` |  |  |
+| `DataController5` |  | | `_Employee` | `DataController5` |  |  |
+| `DataController6` |  | | `_Employee` | `DataController6` |  |  |
+| `DataController7` |  | | `_Employee` | `DataController7` |  |  |
+| `DataController8` |  | | `_Employee` | `DataController8` |  |  |
+| `DataController9` |  | | `_Employee` | `DataController9` |  |  |
+| `DataController10` |  | | `_Employee` | `DataController10` |  |  |
+| `BusinessPartner` |  | | `_Employee` | `BusinessPartner` |  |  |
+| `_Employee` | | ✓ | | | | |
+| `_Employee1` | | ✓ | | | | |
 
 ## Associations
 

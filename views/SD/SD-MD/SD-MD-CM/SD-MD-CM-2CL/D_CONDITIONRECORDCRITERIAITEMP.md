@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DummyKey` |  | |  | `char1` |
-| `D_CndnTypeSelectionOptionP` |  | |  | `_ConditionType : composition [0..*] of D_CndnTypeSelectionOptionP` |
-| `D_CndnRecordSelectionOptionP` |  | |  | `_ConditionRecord : composition [0..*] of D_CndnRecordSelectionOptionP` |
-| `D_CndnTableSelectionOptionP` |  | |  | `_ConditionTable : composition [0..*] of D_CndnTableSelectionOptionP` |
-| `D_CndnFieldSelectionOptionP` |  | |  | `_ConditionField : composition [0..*] of D_CndnFieldSelectionOptionP` |
-| `_SlsPrcgGetConditionRecordP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DummyKey` |  | |  | `char1` |  |  |
+| `D_CndnTypeSelectionOptionP` |  | |  | `_ConditionType : composition [0..*] of D_CndnTypeSelectionOptionP` |  |  |
+| `D_CndnRecordSelectionOptionP` |  | |  | `_ConditionRecord : composition [0..*] of D_CndnRecordSelectionOptionP` |  |  |
+| `D_CndnTableSelectionOptionP` |  | |  | `_ConditionTable : composition [0..*] of D_CndnTableSelectionOptionP` |  |  |
+| `D_CndnFieldSelectionOptionP` |  | |  | `_ConditionField : composition [0..*] of D_CndnFieldSelectionOptionP` |  |  |
+| `_SlsPrcgGetConditionRecordP` | | ✓ | | | | |
 
 ## Source Code
 

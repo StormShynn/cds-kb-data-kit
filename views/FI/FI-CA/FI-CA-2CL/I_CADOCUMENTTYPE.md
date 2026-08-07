@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADocumentType` | ✓ | |  | `blart` |
-| `CAApplicationArea` | ✓ | |  | `applk` |
-| `CACrossCompCodePostgIsAllowed` |  | |  | `xgsub` |
-| `CAManualPostingIsForbidden` |  | |  | `xintf` |
-| `CANegativePostingCode` |  | |  | `negbl` |
-| `_ApplArea` |  | |  | `_CAApplicationArea` |
-| `_CAApplicationArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADocumentType` | ✓ | |  | `blart` |  |  |
+| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
+| `CACrossCompCodePostgIsAllowed` |  | |  | `xgsub` |  |  |
+| `CAManualPostingIsForbidden` |  | |  | `xintf` |  |  |
+| `CANegativePostingCode` |  | |  | `negbl` |  |  |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

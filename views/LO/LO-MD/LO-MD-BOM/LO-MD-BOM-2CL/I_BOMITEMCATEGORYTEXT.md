@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BillOfMaterialItemCategory` | ✓ | |  | `postp` |
-| `BillOfMaterialItemCategoryDesc` |  | |  | `ptext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BillOfMaterialItemCategory` | ✓ | |  | `postp` |  |  |
+| `BillOfMaterialItemCategoryDesc` |  | |  | `ptext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

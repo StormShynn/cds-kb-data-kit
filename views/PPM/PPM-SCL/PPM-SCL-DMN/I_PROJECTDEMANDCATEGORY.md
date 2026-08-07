@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandCategory` | ✓ | |  | `category` |
-| `_Type` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandCategory` | ✓ | |  | `category` |  |  |
+| `_Type` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

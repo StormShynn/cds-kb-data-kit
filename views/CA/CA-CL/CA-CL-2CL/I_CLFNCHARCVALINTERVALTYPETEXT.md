@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `CharcValueIntervalType` | ✓ | |  | `cast( dd07t.domvalue_l as atcod )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `CharcValueIntervalTypeName` |  | |  | `cast( dd07t.ddtext as charcvalueintervaltypename preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CharcValueIntervalType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `CharcValueIntervalType` | ✓ | |  | `cast( dd07t.domvalue_l as atcod )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CharcValueIntervalTypeName` |  | |  | `cast( dd07t.ddtext as charcvalueintervaltypename preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CharcValueIntervalType` | | ✓ | | | | |
 
 ## Associations
 

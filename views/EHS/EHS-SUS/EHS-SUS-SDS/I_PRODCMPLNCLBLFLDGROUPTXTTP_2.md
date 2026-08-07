@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdCmplncLabelFieldGroupID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ProdCmplncLabelFieldGroupName` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_LabelFieldGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdCmplncLabelFieldGroupID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ProdCmplncLabelFieldGroupName` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_LabelFieldGroup` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARevenueAccountingRefType` | ✓ | |  | `reference_type` |
-| `Language` | ✓ | |  | `langu` |
-| `CARevenueAccountingRefTypeText` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARevenueAccountingRefType` | ✓ | |  | `reference_type` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CARevenueAccountingRefTypeText` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

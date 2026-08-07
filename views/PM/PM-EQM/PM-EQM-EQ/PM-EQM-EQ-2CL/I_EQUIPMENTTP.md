@@ -30,109 +30,109 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `ValidityEndTime` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `EquipmentName` |  | |  |  |
-| `EquipmentCategory` |  | |  |  |
-| `TechnicalObjectType` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `GrossWeight` |  | |  |  |
-| `GrossWeightUnit` |  | |  |  |
-| `SizeOrDimensionText` |  | |  |  |
-| `InventoryNumber` |  | |  |  |
-| `OperationStartDate` |  | |  |  |
-| `AcquisitionValue` |  | |  |  |
-| `Currency` |  | |  |  |
-| `AcquisitionDate` |  | |  |  |
-| `AssetManufacturerName` |  | |  |  |
-| `ManufacturerPartTypeName` |  | |  |  |
-| `ManufacturerCountry` |  | |  |  |
-| `ConstructionYear` |  | |  |  |
-| `ConstructionMonth` |  | |  |  |
-| `EquipmentManufacturerPrtNmbr` |  | |  |  |
-| `ManufacturerSerialNumber` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `AssetLocation` |  | |  |  |
-| `AssetRoom` |  | |  |  |
-| `PlantSection` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `WorkCenterPlant` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `ABCIndicator` |  | |  |  |
-| `MaintObjectFreeDefinedAttrib` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `BusinessPartnerName1` |  | |  |  |
-| `BusinessPartnerName2` |  | |  |  |
-| `CityName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `Region` |  | |  |  |
-| `Country` |  | |  |  |
-| `PhoneNumber` |  | |  |  |
-| `AddressFaxNumber` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `SettlementOrder` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MainWorkCenter` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `CatalogProfile` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `FunctionalLocationName` |  | |  |  |
-| `EquipInstallationPositionNmbr` |  | |  |  |
-| `SuperordinateEquipment` |  | |  |  |
-| `TechnicalObjectSortCode` |  | |  |  |
-| `ConstructionMaterial` |  | |  |  |
-| `Material` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `UniqueItemIdentifier` |  | |  |  |
-| `UniqueItemIdentifierStrucType` |  | |  |  |
-| `UniqueItemIdentifierRespPlant` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `NextEquipUsagePeriodSqncNmbr` |  | |  |  |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
-| `MaintObjectInternalID` |  | |  |  |
-| `EquipUsagePeriodSequenceNumber` |  | |  |  |
-| `EquipmentIsAtCustomer` |  | |  |  |
-| `EquipmentIsAvailable` |  | |  |  |
-| `EquipmentIsInWarehouse` |  | |  |  |
-| `EquipmentIsAssignedToDelivery` |  | |  |  |
-| `EquipmentIsMarkedForDeletion` |  | |  |  |
-| `EquipmentIsInstalled` |  | |  |  |
-| `EquipIsAllocToSuperiorEquip` |  | |  |  |
-| `EquipmentIsInactive` |  | |  |  |
-| `EquipHasSubOrdinateEquipment` |  | |  |  |
-| `_Partner` | | ✓ | | |
-| `_LongText` | | ✓ | | |
-| `_Classification` | | ✓ | | |
-| `_Warranty` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `ValidityEndTime` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `EquipmentName` |  | |  |  |  |  |
+| `EquipmentCategory` |  | |  |  |  |  |
+| `TechnicalObjectType` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `GrossWeight` |  | |  |  |  |  |
+| `GrossWeightUnit` |  | |  |  |  |  |
+| `SizeOrDimensionText` |  | |  |  |  |  |
+| `InventoryNumber` |  | |  |  |  |  |
+| `OperationStartDate` |  | |  |  |  |  |
+| `AcquisitionValue` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `AcquisitionDate` |  | |  |  |  |  |
+| `AssetManufacturerName` |  | |  |  |  |  |
+| `ManufacturerPartTypeName` |  | |  |  |  |  |
+| `ManufacturerCountry` |  | |  |  |  |  |
+| `ConstructionYear` |  | |  |  |  |  |
+| `ConstructionMonth` |  | |  |  |  |  |
+| `EquipmentManufacturerPrtNmbr` |  | |  |  |  |  |
+| `ManufacturerSerialNumber` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `AssetLocation` |  | |  |  |  |  |
+| `AssetRoom` |  | |  |  |  |  |
+| `PlantSection` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenterPlant` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `ABCIndicator` |  | |  |  |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `BusinessPartnerName1` |  | |  |  |  |  |
+| `BusinessPartnerName2` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `PhoneNumber` |  | |  |  |  |  |
+| `AddressFaxNumber` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `SettlementOrder` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MainWorkCenter` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `CatalogProfile` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `FunctionalLocationName` |  | |  |  |  |  |
+| `EquipInstallationPositionNmbr` |  | |  |  |  |  |
+| `SuperordinateEquipment` |  | |  |  |  |  |
+| `TechnicalObjectSortCode` |  | |  |  |  |  |
+| `ConstructionMaterial` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `UniqueItemIdentifier` |  | |  |  |  |  |
+| `UniqueItemIdentifierStrucType` |  | |  |  |  |  |
+| `UniqueItemIdentifierRespPlant` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `NextEquipUsagePeriodSqncNmbr` |  | |  |  |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |  |  |
+| `MaintObjectInternalID` |  | |  |  |  |  |
+| `EquipUsagePeriodSequenceNumber` |  | |  |  |  |  |
+| `EquipmentIsAtCustomer` |  | |  |  |  |  |
+| `EquipmentIsAvailable` |  | |  |  |  |  |
+| `EquipmentIsInWarehouse` |  | |  |  |  |  |
+| `EquipmentIsAssignedToDelivery` |  | |  |  |  |  |
+| `EquipmentIsMarkedForDeletion` |  | |  |  |  |  |
+| `EquipmentIsInstalled` |  | |  |  |  |  |
+| `EquipIsAllocToSuperiorEquip` |  | |  |  |  |  |
+| `EquipmentIsInactive` |  | |  |  |  |  |
+| `EquipHasSubOrdinateEquipment` |  | |  |  |  |  |
+| `_Partner` | | ✓ | | | | |
+| `_LongText` | | ✓ | | | | |
+| `_Classification` | | ✓ | | | | |
+| `_Warranty` | | ✓ | | | | |
 
 ## Source Code
 

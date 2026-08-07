@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GrantID` | ✓ | | `_Source` | `GrantID` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnGrantTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnGrantTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` | ✓ | | `_Source` | `GrantID` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnGrantTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnGrantTextTP` |  |  |
 
 ## Source Code
 

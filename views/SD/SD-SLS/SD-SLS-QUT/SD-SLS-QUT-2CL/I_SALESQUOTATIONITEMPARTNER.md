@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesQuotation` | ✓ | |  | `cast(SalesDocument as sales_quotation preserving type)` |
-| `SalesQuotationItem` | ✓ | |  | `cast(SalesDocumentItem as sales_quotation_item preserving type)` |
-| `PartnerFunction` | ✓ | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `SDDocPartnerAddressRefType` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `_SalesQuotation` | | ✓ | | |
-| `_SalesQuotationItem` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_DfltAddrRprstn` | | ✓ | | |
-| `_BusinessPartnerAddress` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  | `cast(SalesDocument as sales_quotation preserving type)` |  |  |
+| `SalesQuotationItem` | ✓ | |  | `cast(SalesDocumentItem as sales_quotation_item preserving type)` |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `_SalesQuotation` | | ✓ | | | | |
+| `_SalesQuotationItem` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_DfltAddrRprstn` | | ✓ | | | | |
+| `_BusinessPartnerAddress` | | ✓ | | | | |
 
 ## Associations
 

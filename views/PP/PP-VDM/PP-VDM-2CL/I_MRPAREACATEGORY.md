@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPAreaCategory` | ✓ | |  | `cast( cast(substring(l.domvalue_l, 1, 2) as abap.numc(2) ) as berty preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPAreaCategory` | ✓ | |  | `cast( cast(substring(l.domvalue_l, 1, 2) as abap.numc(2) ) as berty preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

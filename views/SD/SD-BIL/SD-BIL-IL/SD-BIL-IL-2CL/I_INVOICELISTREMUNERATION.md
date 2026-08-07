@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InvoiceList` | ✓ | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `TotalRemunerationNetAmount` |  | |  | `cast(sum(InvoiceListItem.RemunerationNetAmount) as kwert_rl preserving type)` |
-| `TotalRemunerationTaxAmount` |  | |  | `cast(sum(InvoiceListItem.RemunerationTaxAmount) as mwsbp_rl preserving type)` |
-| `_InvoiceList` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvoiceList` | ✓ | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `TotalRemunerationNetAmount` |  | |  | `cast(sum(InvoiceListItem.RemunerationNetAmount) as kwert_rl preserving type)` |  |  |
+| `TotalRemunerationTaxAmount` |  | |  | `cast(sum(InvoiceListItem.RemunerationTaxAmount) as mwsbp_rl preserving type)` |  |  |
+| `_InvoiceList` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
 
 ## Associations
 

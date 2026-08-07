@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `InsurClmDamageCategory` | ✓ | |  | `damcat` |
-| `InsurClmScopeOfLoss` | ✓ | |  | `losstype` |
-| `InsurClmScopeOfLossTxt` |  | |  | `name` |
-| `_DamageCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_ScopeOfLoss` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `InsurClmDamageCategory` | ✓ | |  | `damcat` |  |  |
+| `InsurClmScopeOfLoss` | ✓ | |  | `losstype` |  |  |
+| `InsurClmScopeOfLossTxt` |  | |  | `name` |  |  |
+| `_DamageCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_ScopeOfLoss` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,54 +31,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `SequentialNmbrOfSuplrConf` | ✓ | |  |  |
-| `SupplierConfirmationCategory` |  | |  |  |
-| `DeliveryDate` |  | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `DeliveryTime` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `ConfirmedQuantity` |  | |  |  |
-| `MRPRelevantQuantity` |  | |  |  |
-| `SuplrConfCreationCategory` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ConfIsRelevantToMRP` |  | |  |  |
-| `SupplierConfirmationExtNumber` |  | |  |  |
-| `DeliveryDocument` |  | |  |  |
-| `DeliveryDocumentItem` |  | |  |  |
-| `ManufacturerPartProfile` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `NumberOfReminders` |  | |  |  |
-| `Batch` |  | |  |  |
-| `DeliveryIsInPlant` |  | |  |  |
-| `HandoverDate` |  | |  |  |
-| `HandoverTime` |  | |  |  |
-| `PerformancePeriodStartDate` |  | |  |  |
-| `PerformancePeriodEndDate` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `SupplierConfirmation` |  | |  |  |
-| `SupplierConfirmationItem` |  | |  |  |
-| `PurchaseOrderType` |  | | `_PurchaseOrder` | `PurchaseOrderType` |
-| `PurchasingOrganization` |  | | `_PurchaseOrder` | `PurchasingOrganization` |
-| `PurchasingGroup` |  | | `_PurchaseOrder` | `PurchasingGroup` |
-| `Plant` |  | | `_PurchaseOrderItem` | `Plant` |
-| `_PurchaseOrderDEX` | | ✓ | | |
-| `_PurchaseOrderItemDEX` | | ✓ | | |
-| `_SupplierConfirmationCategory` | | ✓ | | |
-| `_DeliveryDocument` | | ✓ | | |
-| `_DeliveryDocumentItem` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_PurchaseOrderType` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `SequentialNmbrOfSuplrConf` | ✓ | |  |  |  |  |
+| `SupplierConfirmationCategory` |  | |  |  |  |  |
+| `DeliveryDate` |  | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `DeliveryTime` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `ConfirmedQuantity` |  | |  |  |  |  |
+| `MRPRelevantQuantity` |  | |  |  |  |  |
+| `SuplrConfCreationCategory` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ConfIsRelevantToMRP` |  | |  |  |  |  |
+| `SupplierConfirmationExtNumber` |  | |  |  |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `DeliveryDocumentItem` |  | |  |  |  |  |
+| `ManufacturerPartProfile` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `NumberOfReminders` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `DeliveryIsInPlant` |  | |  |  |  |  |
+| `HandoverDate` |  | |  |  |  |  |
+| `HandoverTime` |  | |  |  |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `SupplierConfirmation` |  | |  |  |  |  |
+| `SupplierConfirmationItem` |  | |  |  |  |  |
+| `PurchaseOrderType` |  | | `_PurchaseOrder` | `PurchaseOrderType` |  |  |
+| `PurchasingOrganization` |  | | `_PurchaseOrder` | `PurchasingOrganization` |  |  |
+| `PurchasingGroup` |  | | `_PurchaseOrder` | `PurchasingGroup` |  |  |
+| `Plant` |  | | `_PurchaseOrderItem` | `Plant` |  |  |
+| `_PurchaseOrderDEX` | | ✓ | | | | |
+| `_PurchaseOrderItemDEX` | | ✓ | | | | |
+| `_SupplierConfirmationCategory` | | ✓ | | | | |
+| `_DeliveryDocument` | | ✓ | | | | |
+| `_DeliveryDocumentItem` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_PurchaseOrderType` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

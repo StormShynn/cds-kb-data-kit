@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OvrlItmPickingIncompletionSts` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as uvpik_su preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OvrlItmPickingIncompletionSts` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as uvpik_su preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

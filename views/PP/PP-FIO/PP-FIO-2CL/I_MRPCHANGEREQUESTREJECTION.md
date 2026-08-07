@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPRequestRejection` | ✓ | |  | `rejectioncode` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPRequestRejection` | ✓ | |  | `rejectioncode` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

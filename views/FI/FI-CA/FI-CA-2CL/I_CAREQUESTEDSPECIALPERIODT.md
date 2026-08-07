@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARequestedPeriodForGLTransfer` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2 ) as wnper_kk )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CARequestedPerdForGLTransfText` |  | |  | `cast( ddtext as wnper_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARequestedPeriodForGLTransfer` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2 ) as wnper_kk )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CARequestedPerdForGLTransfText` |  | |  | `cast( ddtext as wnper_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

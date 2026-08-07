@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `StorageLocation` | ✓ | |  | `lgort` |
-| `StorageLocationName` |  | |  | `cast(lgobe as lgort_name)` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `Division` |  | |  | `spart` |
-| `IsStorLocAuthznCheckActive` |  | |  | `xblgo` |
-| `HandlingUnitIsRequired` |  | |  | `xhupf` |
-| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |
-| `_Plant` | | ✓ | | |
-| `_ConfignDeprecationCode` | | ✓ | | |
-| `_ConfignDeprecationCodeText` | | ✓ | | |
-| `_SalesOrganizationText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `StorageLocation` | ✓ | |  | `lgort` |  |  |
+| `StorageLocationName` |  | |  | `cast(lgobe as lgort_name)` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `IsStorLocAuthznCheckActive` |  | |  | `xblgo` |  |  |
+| `HandlingUnitIsRequired` |  | |  | `xhupf` |  |  |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_ConfignDeprecationCode` | | ✓ | | | | |
+| `_ConfignDeprecationCodeText` | | ✓ | | | | |
+| `_SalesOrganizationText` | | ✓ | | | | |
 
 ## Associations
 

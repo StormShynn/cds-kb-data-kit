@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CN_TaxInvcGldnTxSystSts` | ✓ | |  | `gts_status` |
-| `StatusDescription` |  | |  | `gts_status_txt` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CN_TaxInvcGldnTxSystSts` | ✓ | |  | `gts_status` |  |  |
+| `StatusDescription` |  | |  | `gts_status_txt` |  |  |
 
 ## Source Code
 

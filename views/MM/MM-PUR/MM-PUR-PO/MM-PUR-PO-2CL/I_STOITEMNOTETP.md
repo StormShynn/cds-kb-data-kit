@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StockTransportOrder` | ✓ | |  |  |
-| `StockTransportOrderItem` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `PlainLongText` |  | |  |  |
-| `STOItemUniqueID` |  | |  |  |
-| `_StockTransportOrderItem` | | ✓ | | |
-| `_StockTransportOrder` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |  |  |
+| `StockTransportOrderItem` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `PlainLongText` |  | |  |  |  |  |
+| `STOItemUniqueID` |  | |  |  |  |  |
+| `_StockTransportOrderItem` | | ✓ | | | | |
+| `_StockTransportOrder` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Source Code
 

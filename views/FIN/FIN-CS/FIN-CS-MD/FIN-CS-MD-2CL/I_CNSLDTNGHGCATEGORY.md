@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGCategory` | ✓ | |  | `cast( _Source.GHGCategory as fincs_ghgcategory preserving type )` |
-| `GHGScope` |  | |  | `cast( _Source.GHGScope as fincs_ghgscope preserving type )` |
-| `_Text` | | ✓ | | |
-| `_GHGScope` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGCategory` | ✓ | |  | `cast( _Source.GHGCategory as fincs_ghgcategory preserving type )` |  |  |
+| `GHGScope` |  | |  | `cast( _Source.GHGScope as fincs_ghgscope preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_GHGScope` | | ✓ | | | | |
 
 ## Associations
 

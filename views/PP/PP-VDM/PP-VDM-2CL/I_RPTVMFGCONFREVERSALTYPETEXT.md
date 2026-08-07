@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
-| `RptvMfgConfReversalType` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as pph_storn preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `RptvMfgConfReversalTypeName` |  | |  | `cast(t.ddtext as vdm_pp_storntxt preserving type)` |
-| `_Language` | | ✓ | | |
-| `_RptvMfgConfReversalType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |  |  |
+| `RptvMfgConfReversalType` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as pph_storn preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `RptvMfgConfReversalTypeName` |  | |  | `cast(t.ddtext as vdm_pp_storntxt preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_RptvMfgConfReversalType` | | ✓ | | | | |
 
 ## Associations
 

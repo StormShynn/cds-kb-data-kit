@@ -35,31 +35,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClassName` | ✓ | |  | `clsname` |
-| `TadirType` |  | |  | `case when Class.clstype = '0' then 'CLAS' else 'INTF' end` |
-| `Category` |  | |  | `category` |
-| `Exposure` |  | |  | `exposure` |
-| `State` |  | |  | `state` |
-| `CreatedBy` |  | |  | `author` |
-| `CreatedOn` |  | |  | `createdon` |
-| `ChangedBy` |  | |  | `case when ClassDef.changedby <> '' then ClassDef.changedby else ClassDef.author end` |
-| `ChangedOn` |  | |  | `case when ClassDef.changedon <> '00000000' then ClassDef.changedon else ClassDef.createdon end` |
-| `IsAbstract` |  | |  | `clsabstrct` |
-| `IsFinal` |  | |  | `clsfinal` |
-| `ReferencedObject` |  | |  | `refclsname` |
-| `HasFixPointArithmetic` |  | |  | `fixpt` |
-| `ABAPVersion` |  | |  | `unicode` |
-| `ProgramStatus` |  | |  | `rstat` |
-| `ReleaseNumber` |  | |  | `r3release` |
-| `MessageClass` |  | |  | `msg_id` |
-| `ProxyClassCategory` |  | |  | `clsproxy` |
-| `IsSharedMemoryEnabled` |  | |  | `clssharedmemory` |
-| `HasUnitTests` |  | |  | `with_unit_tests` |
-| `DurationType` |  | |  | `duration_type` |
-| `RiskLevel` |  | |  | `risk_level` |
-| `IsOpenedForPackage` |  | |  | `within_package` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassName` | ✓ | |  | `clsname` |  |  |
+| `TadirType` |  | |  | `case when Class.clstype = '0' then 'CLAS' else 'INTF' end` |  |  |
+| `Category` |  | |  | `category` |  |  |
+| `Exposure` |  | |  | `exposure` |  |  |
+| `State` |  | |  | `state` |  |  |
+| `CreatedBy` |  | |  | `author` |  |  |
+| `CreatedOn` |  | |  | `createdon` |  |  |
+| `ChangedBy` |  | |  | `case when ClassDef.changedby <> '' then ClassDef.changedby else ClassDef.author end` |  |  |
+| `ChangedOn` |  | |  | `case when ClassDef.changedon <> '00000000' then ClassDef.changedon else ClassDef.createdon end` |  |  |
+| `IsAbstract` |  | |  | `clsabstrct` |  |  |
+| `IsFinal` |  | |  | `clsfinal` |  |  |
+| `ReferencedObject` |  | |  | `refclsname` |  |  |
+| `HasFixPointArithmetic` |  | |  | `fixpt` |  |  |
+| `ABAPVersion` |  | |  | `unicode` |  |  |
+| `ProgramStatus` |  | |  | `rstat` |  |  |
+| `ReleaseNumber` |  | |  | `r3release` |  |  |
+| `MessageClass` |  | |  | `msg_id` |  |  |
+| `ProxyClassCategory` |  | |  | `clsproxy` |  |  |
+| `IsSharedMemoryEnabled` |  | |  | `clssharedmemory` |  |  |
+| `HasUnitTests` |  | |  | `with_unit_tests` |  |  |
+| `DurationType` |  | |  | `duration_type` |  |  |
+| `RiskLevel` |  | |  | `risk_level` |  |  |
+| `IsOpenedForPackage` |  | |  | `within_package` |  |  |
 
 ## Source Code
 

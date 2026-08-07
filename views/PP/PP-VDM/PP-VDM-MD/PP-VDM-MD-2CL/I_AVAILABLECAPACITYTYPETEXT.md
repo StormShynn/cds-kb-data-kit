@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AvailableCapacityType` | ✓ | |  | `cast(txt.versn as availablecapacitytype preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
-| `AvailableCapacityTypeName` |  | |  | `cast(txt.txt as availablecapacitytypename preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AvailableCapacityType` | ✓ | |  | `cast(txt.versn as availablecapacitytype preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |  |  |
+| `AvailableCapacityTypeName` |  | |  | `cast(txt.txt as availablecapacitytypename preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

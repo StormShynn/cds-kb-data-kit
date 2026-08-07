@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaxType` | ✓ | |  | `cast(domvalue_l as mwart)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxType` | ✓ | |  | `cast(domvalue_l as mwart)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

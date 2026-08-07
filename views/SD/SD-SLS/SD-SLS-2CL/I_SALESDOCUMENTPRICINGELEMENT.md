@@ -30,58 +30,58 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocument` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `PricingDateTime` |  | |  |  |
-| `PriceConditionDeterminationDte` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionBaseValue` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionCategory` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `IsRelevantForAccrual` |  | |  |  |
-| `CndnIsRelevantForInvoiceList` |  | |  |  |
-| `ConditionOrigin` |  | |  |  |
-| `IsGroupCondition` |  | |  |  |
-| `IsGroupCondition_2` |  | |  |  |
-| `ConditionRecord` |  | |  |  |
-| `ConditionSequentialNumber` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `WithholdingTaxCode` |  | |  |  |
-| `CndnRoundingOffDiffAmount` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionControl` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `ConditionClass` |  | |  |  |
-| `PrcgProcedureCounterForHeader` |  | |  |  |
-| `FactorForConditionBasisValue` |  | |  |  |
-| `StructureCondition` |  | |  |  |
-| `PeriodFactorForCndnBasisValue` |  | |  |  |
-| `PricingScaleBasis` |  | |  |  |
-| `ConditionScaleBasisValue` |  | |  |  |
-| `ConditionScaleBasisUnit` |  | |  |  |
-| `ConditionScaleBasisCurrency` |  | |  |  |
-| `CndnIsRelevantForIntcoBilling` |  | |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |
-| `ConditionIsForConfiguration` |  | |  |  |
-| `VariantCondition` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionBaseAmount` |  | |  |  |
-| `ConditionBaseQuantity` |  | |  |  |
-| `SDDocumentCategory` |  | |  |  |
-| `_SalesDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `PricingDateTime` |  | |  |  |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionBaseValue` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionCategory` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `IsRelevantForAccrual` |  | |  |  |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |  |  |
+| `ConditionOrigin` |  | |  |  |  |  |
+| `IsGroupCondition` |  | |  |  |  |  |
+| `IsGroupCondition_2` |  | |  |  |  |  |
+| `ConditionRecord` |  | |  |  |  |  |
+| `ConditionSequentialNumber` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `WithholdingTaxCode` |  | |  |  |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionControl` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `ConditionClass` |  | |  |  |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |  |  |
+| `StructureCondition` |  | |  |  |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |  |  |
+| `PricingScaleBasis` |  | |  |  |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |  |  |
+| `VariantCondition` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionBaseAmount` |  | |  |  |  |  |
+| `ConditionBaseQuantity` |  | |  |  |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `_SalesDocument` | | ✓ | | | | |
 
 ## Associations
 

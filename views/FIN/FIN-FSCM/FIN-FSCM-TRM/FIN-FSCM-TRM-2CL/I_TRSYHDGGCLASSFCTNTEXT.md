@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `lang` |
-| `HedgingClassification` | ✓ | |  | `hedging_classification` |
-| `HedgingClassificationName` |  | |  | `text` |
-| `_TreasuryHedgingClassfctn` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `lang` |  |  |
+| `HedgingClassification` | ✓ | |  | `hedging_classification` |  |  |
+| `HedgingClassificationName` |  | |  | `text` |  |  |
+| `_TreasuryHedgingClassfctn` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

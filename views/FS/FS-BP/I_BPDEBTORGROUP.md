@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerDebtorGroup` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_debtor_group )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerDebtorGroup` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_debtor_group )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

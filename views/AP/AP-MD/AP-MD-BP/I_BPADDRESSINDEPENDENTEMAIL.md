@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |
-| `AddressID` | ✓ | |  |  |
-| `Person` | ✓ | |  | `AddressPersonID` |
-| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |
-| `AddressIDForEdit` |  | |  | `AddressID` |
-| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` |
-| `IsDefaultEmailAddress` |  | |  | `EmailAddressIsCurrentDefault` |
-| `EmailAddress` |  | |  |  |
-| `SearchEmailAddress` |  | |  | `cast('' as ad_smtpad2)` |
-| `IsHomeEmailAddress` |  | |  | `cast('' as ad_flghome)` |
-| `CommNumberIsNotUsed` |  | |  | `cast('' as ad_flnouse)` |
-| `ValidityStartDateTime` |  | |  | `cast ( I_AddressEmailAddress_2.ValidityStartDate as ad_valfrom )` |
-| `ValidityEndDateTime` |  | |  | `cast ( I_AddressEmailAddress_2.ValidityEndDate as ad_valto )` |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |  |  |
+| `AddressID` | ✓ | |  |  |  |  |
+| `Person` | ✓ | |  | `AddressPersonID` |  |  |
+| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |  |  |
+| `AddressIDForEdit` |  | |  | `AddressID` |  |  |
+| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` |  |  |
+| `IsDefaultEmailAddress` |  | |  | `EmailAddressIsCurrentDefault` |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `SearchEmailAddress` |  | |  | `cast('' as ad_smtpad2)` |  |  |
+| `IsHomeEmailAddress` |  | |  | `cast('' as ad_flghome)` |  |  |
+| `CommNumberIsNotUsed` |  | |  | `cast('' as ad_flnouse)` |  |  |
+| `ValidityStartDateTime` |  | |  | `cast ( I_AddressEmailAddress_2.ValidityStartDate as ad_valfrom )` |  |  |
+| `ValidityEndDateTime` |  | |  | `cast ( I_AddressEmailAddress_2.ValidityEndDate as ad_valto )` |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OvrlItmPackingIncompletionSts` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OvrlItmPackingIncompltnStsDesc` |  | |  | `bezei` |
-| `_OvrlItmPackingIncompletionSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OvrlItmPackingIncompletionSts` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OvrlItmPackingIncompltnStsDesc` |  | |  | `bezei` |  |  |
+| `_OvrlItmPackingIncompletionSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

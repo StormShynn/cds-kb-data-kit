@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DivisionHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_division preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `DivisionHierarchyName` |  | |  | `hrytxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DivisionHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_division preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |  |  |
+| `DivisionHierarchyName` |  | |  | `hrytxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

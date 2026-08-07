@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgCatPartyUUID` | ✓ | |  |  |
-| `PurgCatUUID` |  | |  |  |
-| `SLCParty` |  | |  |  |
-| `SLCPartyType` |  | |  |  |
-| `SLCPartyRole` |  | |  |  |
-| `SLCPartyIdentifierType` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgCatPartyUUID` | ✓ | |  |  |  |  |
+| `PurgCatUUID` |  | |  |  |  |  |
+| `SLCParty` |  | |  |  |  |  |
+| `SLCPartyType` |  | |  |  |  |  |
+| `SLCPartyRole` |  | |  |  |  |  |
+| `SLCPartyIdentifierType` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
 
 ## Source Code
 

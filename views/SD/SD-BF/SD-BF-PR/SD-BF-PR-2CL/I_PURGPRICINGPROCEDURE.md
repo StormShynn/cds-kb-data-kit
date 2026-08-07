@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionUsage` | ✓ | |  |  |
-| `ConditionApplication` | ✓ | |  |  |
-| `PricingProcedure` | ✓ | |  |  |
-| `InclusionPoint` |  | |  |  |
-| `_PurgPricingProcedureItem` | | ✓ | | |
-| `_ConditionUsage` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  |  |  |  |
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `PricingProcedure` | ✓ | |  |  |  |  |
+| `InclusionPoint` |  | |  |  |  |  |
+| `_PurgPricingProcedureItem` | | ✓ | | | | |
+| `_ConditionUsage` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

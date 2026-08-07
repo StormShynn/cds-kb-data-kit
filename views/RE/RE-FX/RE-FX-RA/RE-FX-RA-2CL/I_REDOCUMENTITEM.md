@@ -30,41 +30,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateDocumentUUID` | ✓ | |  | `docguid` |
-| `RealEstateDocumentItem` | ✓ | |  | `itemno` |
-| `REReferenceDocumentItem` |  | |  | `refitemno` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
-| `REDocumentItemType` |  | |  | `itemtype` |
-| `SettlementReferenceDate` |  | |  | `refdate` |
-| `REProcessType` |  | |  | `process` |
-| `REProcessUUID` |  | |  | `processguid` |
-| `RealEstateClearingProcess` |  | |  | `clearngprocessid` |
-| `REDocumentReferenceOrigin` |  | |  | `refguidorigin` |
-| `REDocumentReferenceUUID` |  | |  | `refguid` |
-| `REStatusObject` |  | |  | `objnr` |
-| `CalculationPeriodStartDate` |  | |  | `pfrom` |
-| `CalculationPeriodEndDate` |  | |  | `pto` |
-| `DueCalculationBaseDate` |  | |  | `blinedate` |
-| `REOriglDueDate` |  | |  | `origduedate` |
-| `REConditionType` |  | |  | `condtype` |
-| `REFlowType` |  | |  | `flowtype` |
-| `DebitCreditCode` |  | |  | `dcindicator` |
-| `RETaxCalcDate` |  | |  | `taxdate` |
-| `BusinessArea` |  | |  | `gsber` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `Fund` |  | |  | `cast( fund as bp_geber )` |
-| `FundsCenter` |  | |  | `cast( fundscenter as fm_fictr )` |
-| `CommitmentItem` |  | |  | `cast( commitmentitem as fm_fipex preserving type )` |
-| `FunctionalArea` |  | |  | `cast( functionalarea as fm_farea )` |
-| `REFundsManagementGrantID` |  | |  | `cast( grantnumber as reravdmgrantnumber preserving type)` |
-| `REStatusObjectAsset` |  | |  | `assetobjnr` |
-| `REValnIsCompleteRetirement` |  | |  | `iscompleteretirement` |
-| `_REDocumentHeader` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateDocumentUUID` | ✓ | |  | `docguid` |  |  |
+| `RealEstateDocumentItem` | ✓ | |  | `itemno` |  |  |
+| `REReferenceDocumentItem` |  | |  | `refitemno` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `REDocumentItemType` |  | |  | `itemtype` |  |  |
+| `SettlementReferenceDate` |  | |  | `refdate` |  |  |
+| `REProcessType` |  | |  | `process` |  |  |
+| `REProcessUUID` |  | |  | `processguid` |  |  |
+| `RealEstateClearingProcess` |  | |  | `clearngprocessid` |  |  |
+| `REDocumentReferenceOrigin` |  | |  | `refguidorigin` |  |  |
+| `REDocumentReferenceUUID` |  | |  | `refguid` |  |  |
+| `REStatusObject` |  | |  | `objnr` |  |  |
+| `CalculationPeriodStartDate` |  | |  | `pfrom` |  |  |
+| `CalculationPeriodEndDate` |  | |  | `pto` |  |  |
+| `DueCalculationBaseDate` |  | |  | `blinedate` |  |  |
+| `REOriglDueDate` |  | |  | `origduedate` |  |  |
+| `REConditionType` |  | |  | `condtype` |  |  |
+| `REFlowType` |  | |  | `flowtype` |  |  |
+| `DebitCreditCode` |  | |  | `dcindicator` |  |  |
+| `RETaxCalcDate` |  | |  | `taxdate` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `Fund` |  | |  | `cast( fund as bp_geber )` |  |  |
+| `FundsCenter` |  | |  | `cast( fundscenter as fm_fictr )` |  |  |
+| `CommitmentItem` |  | |  | `cast( commitmentitem as fm_fipex preserving type )` |  |  |
+| `FunctionalArea` |  | |  | `cast( functionalarea as fm_farea )` |  |  |
+| `REFundsManagementGrantID` |  | |  | `cast( grantnumber as reravdmgrantnumber preserving type)` |  |  |
+| `REStatusObjectAsset` |  | |  | `assetobjnr` |  |  |
+| `REValnIsCompleteRetirement` |  | |  | `iscompleteretirement` |  |  |
+| `_REDocumentHeader` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
 
 ## Associations
 

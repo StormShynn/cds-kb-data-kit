@@ -30,78 +30,78 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  |  |
-| `CAApplicationArea` |  | |  |  |
-| `CAInvcgProcess` |  | |  |  |
-| `CAInvcgType` |  | |  |  |
-| `CAInvcgCategory` |  | |  |  |
-| `CAInvcgTechnicalDocumentType` |  | |  |  |
-| `CAInvcgTargetProcess` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `CAInvcgMasterDataType` |  | |  |  |
-| `AltvContractAcctForCollvBills` |  | |  |  |
-| `CASubstituteDocumentNumber` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CAInvcgCreationDate` |  | |  |  |
-| `CAInvcgCreationTime` |  | |  |  |
-| `CAInvcgDocCreationMode` |  | |  |  |
-| `CAInvcgNmbrOfInvoicingDocItems` |  | |  |  |
-| `CABllbleItmNumber` |  | |  |  |
-| `CAInvcgDocInternalNumber` |  | |  |  |
-| `CAReconciliationKey` |  | |  |  |
-| `CAPostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `CANetDueDate` |  | |  |  |
-| `CACashDiscountDueDate` |  | |  |  |
-| `CACashDiscountRate` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `CAAmountInTransactionCurrency` |  | |  |  |
-| `CAInvcgIsDocumentPosted` |  | |  |  |
-| `CAInvcgIsDocumentSimulated` |  | |  |  |
-| `CAInvcgIsDocumentPreliminary` |  | |  |  |
-| `CAInvcgPreliminaryCategory` |  | |  |  |
-| `CAPrelimInvcgDocValue` |  | |  |  |
-| `CAPreliminaryInvcgDocStatus` |  | |  |  |
-| `CAInvcgDocumentReversalReason` |  | |  |  |
-| `CAInvcgReversalDocument` |  | |  |  |
-| `CAInvcgReversedDocument` |  | |  |  |
-| `CAInvcgCorrectionCategory` |  | |  |  |
-| `CAInvcgDocumentPrintDate` |  | |  |  |
-| `CAInvcgDocIsLockedForPrinting` |  | |  |  |
-| `CAPaymentMethod` |  | |  |  |
-| `CAPaymentFormNumber` |  | |  |  |
-| `CAInvcgDocFormID` |  | |  |  |
-| `ApplicationForm` |  | |  |  |
-| `FormIDForAttachedPaymentMedium` |  | |  |  |
-| `CAInvcgDocumentType` |  | |  |  |
-| `CAKeyIdentification` |  | |  |  |
-| `CAOfficialDocumentNumber` |  | |  |  |
-| `CAPartnerSettlementRule` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `CAContract` |  | |  |  |
-| `CASubApplication` |  | |  |  |
-| `CAInvcgBaseDate` |  | |  |  |
-| `CAInvcgDocPeriodCategory` |  | |  |  |
-| `CAInvcgDocPeriodDate` |  | |  |  |
-| `CAInvcgDocPeriodStartDate` |  | |  |  |
-| `CADunningCounter` |  | |  |  |
-| `CAInvcgDocHasChargeOrDiscItems` |  | |  |  |
-| `CAInvcgDocHasControlDoc` |  | |  |  |
-| `CAInvcgBolloTaxPostStatus` |  | |  |  |
-| `CAInvcgDocIsPartOfList` |  | |  |  |
-| `CAInvcgDocHasObjectRelation` |  | |  |  |
-| `CAInvcgDocHasSEPAPreNotif` |  | |  |  |
-| `CAInvcgDocExternal` |  | |  |  |
-| `CAInvcgAdjustmentDocument` |  | |  |  |
-| `CAInvcgAdjustedDocument` |  | |  |  |
-| `CAClassificationKey` |  | |  |  |
-| `_ContractAccountHeader` | | ✓ | | |
-| `_ContractAccountPartner` | | ✓ | | |
-| `_CAInvcgDocItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvoicingDocument` | ✓ | |  |  |  |  |
+| `CAApplicationArea` |  | |  |  |  |  |
+| `CAInvcgProcess` |  | |  |  |  |  |
+| `CAInvcgType` |  | |  |  |  |  |
+| `CAInvcgCategory` |  | |  |  |  |  |
+| `CAInvcgTechnicalDocumentType` |  | |  |  |  |  |
+| `CAInvcgTargetProcess` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `CAInvcgMasterDataType` |  | |  |  |  |  |
+| `AltvContractAcctForCollvBills` |  | |  |  |  |  |
+| `CASubstituteDocumentNumber` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CAInvcgCreationDate` |  | |  |  |  |  |
+| `CAInvcgCreationTime` |  | |  |  |  |  |
+| `CAInvcgDocCreationMode` |  | |  |  |  |  |
+| `CAInvcgNmbrOfInvoicingDocItems` |  | |  |  |  |  |
+| `CABllbleItmNumber` |  | |  |  |  |  |
+| `CAInvcgDocInternalNumber` |  | |  |  |  |  |
+| `CAReconciliationKey` |  | |  |  |  |  |
+| `CAPostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `CANetDueDate` |  | |  |  |  |  |
+| `CACashDiscountDueDate` |  | |  |  |  |  |
+| `CACashDiscountRate` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `CAAmountInTransactionCurrency` |  | |  |  |  |  |
+| `CAInvcgIsDocumentPosted` |  | |  |  |  |  |
+| `CAInvcgIsDocumentSimulated` |  | |  |  |  |  |
+| `CAInvcgIsDocumentPreliminary` |  | |  |  |  |  |
+| `CAInvcgPreliminaryCategory` |  | |  |  |  |  |
+| `CAPrelimInvcgDocValue` |  | |  |  |  |  |
+| `CAPreliminaryInvcgDocStatus` |  | |  |  |  |  |
+| `CAInvcgDocumentReversalReason` |  | |  |  |  |  |
+| `CAInvcgReversalDocument` |  | |  |  |  |  |
+| `CAInvcgReversedDocument` |  | |  |  |  |  |
+| `CAInvcgCorrectionCategory` |  | |  |  |  |  |
+| `CAInvcgDocumentPrintDate` |  | |  |  |  |  |
+| `CAInvcgDocIsLockedForPrinting` |  | |  |  |  |  |
+| `CAPaymentMethod` |  | |  |  |  |  |
+| `CAPaymentFormNumber` |  | |  |  |  |  |
+| `CAInvcgDocFormID` |  | |  |  |  |  |
+| `ApplicationForm` |  | |  |  |  |  |
+| `FormIDForAttachedPaymentMedium` |  | |  |  |  |  |
+| `CAInvcgDocumentType` |  | |  |  |  |  |
+| `CAKeyIdentification` |  | |  |  |  |  |
+| `CAOfficialDocumentNumber` |  | |  |  |  |  |
+| `CAPartnerSettlementRule` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `CAContract` |  | |  |  |  |  |
+| `CASubApplication` |  | |  |  |  |  |
+| `CAInvcgBaseDate` |  | |  |  |  |  |
+| `CAInvcgDocPeriodCategory` |  | |  |  |  |  |
+| `CAInvcgDocPeriodDate` |  | |  |  |  |  |
+| `CAInvcgDocPeriodStartDate` |  | |  |  |  |  |
+| `CADunningCounter` |  | |  |  |  |  |
+| `CAInvcgDocHasChargeOrDiscItems` |  | |  |  |  |  |
+| `CAInvcgDocHasControlDoc` |  | |  |  |  |  |
+| `CAInvcgBolloTaxPostStatus` |  | |  |  |  |  |
+| `CAInvcgDocIsPartOfList` |  | |  |  |  |  |
+| `CAInvcgDocHasObjectRelation` |  | |  |  |  |  |
+| `CAInvcgDocHasSEPAPreNotif` |  | |  |  |  |  |
+| `CAInvcgDocExternal` |  | |  |  |  |  |
+| `CAInvcgAdjustmentDocument` |  | |  |  |  |  |
+| `CAInvcgAdjustedDocument` |  | |  |  |  |  |
+| `CAClassificationKey` |  | |  |  |  |  |
+| `_ContractAccountHeader` | | ✓ | | | | |
+| `_ContractAccountPartner` | | ✓ | | | | |
+| `_CAInvcgDocItem` | | ✓ | | | | |
 
 ## Source Code
 

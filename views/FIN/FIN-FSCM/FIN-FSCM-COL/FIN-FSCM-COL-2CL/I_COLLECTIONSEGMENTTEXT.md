@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CollectionSegment` | ✓ | |  | `cast(coll_segment as bdm_coll_segment preserving type)` |
-| `Language` | ✓ | |  | `lang` |
-| `CollectionSegmentName` |  | |  | `coll_segment_txt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollectionSegment` | ✓ | |  | `cast(coll_segment as bdm_coll_segment preserving type)` |  |  |
+| `Language` | ✓ | |  | `lang` |  |  |
+| `CollectionSegmentName` |  | |  | `coll_segment_txt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

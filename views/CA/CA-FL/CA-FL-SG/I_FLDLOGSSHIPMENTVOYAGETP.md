@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsShptVoyageUUID` | ✓ | |  |  |
-| `FldLogsShptVoyageNumber` |  | |  |  |
-| `FldLogsShptVoyageTypeCode` |  | |  |  |
-| `FldLogsShptVoyageVehicleNumber` |  | |  |  |
-| `FldLogsShptVoyageVehicleName` |  | |  |  |
-| `FldLogsShptVoyageStatusCode` |  | |  |  |
-| `FldLogsVoyageChangeDateTime` |  | |  |  |
-| `FldLogsVoyLastChangeDateTime` |  | |  |  |
-| `FldLogsShptVoyIsExternallyMngd` |  | |  |  |
-| `Country` |  | |  |  |
-| `FldLogsVoyageCarrierID` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `_Stage` | | ✓ | | |
-| `_PackggAssgmt` | | ✓ | | |
-| `_CtnAssgmt` | | ✓ | | |
-| `_ItmAssgmt` | | ✓ | | |
-| `_HndlgUnitAssgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsShptVoyageUUID` | ✓ | |  |  |  |  |
+| `FldLogsShptVoyageNumber` |  | |  |  |  |  |
+| `FldLogsShptVoyageTypeCode` |  | |  |  |  |  |
+| `FldLogsShptVoyageVehicleNumber` |  | |  |  |  |  |
+| `FldLogsShptVoyageVehicleName` |  | |  |  |  |  |
+| `FldLogsShptVoyageStatusCode` |  | |  |  |  |  |
+| `FldLogsVoyageChangeDateTime` |  | |  |  |  |  |
+| `FldLogsVoyLastChangeDateTime` |  | |  |  |  |  |
+| `FldLogsShptVoyIsExternallyMngd` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `FldLogsVoyageCarrierID` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `_Stage` | | ✓ | | | | |
+| `_PackggAssgmt` | | ✓ | | | | |
+| `_CtnAssgmt` | | ✓ | | | | |
+| `_ItmAssgmt` | | ✓ | | | | |
+| `_HndlgUnitAssgmt` | | ✓ | | | | |
 
 ## Source Code
 

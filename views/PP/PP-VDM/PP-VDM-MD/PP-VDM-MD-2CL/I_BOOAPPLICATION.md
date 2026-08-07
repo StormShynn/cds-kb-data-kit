@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsApplication` | ✓ | |  | `cast(c.plnaw as billofoperationsapplication preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsApplication` | ✓ | |  | `cast(c.plnaw as billofoperationsapplication preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

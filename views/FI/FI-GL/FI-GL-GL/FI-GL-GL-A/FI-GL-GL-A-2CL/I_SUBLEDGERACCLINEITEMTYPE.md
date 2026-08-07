@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SubLedgerAcctLineItemType` | ✓ | |  | `slalittype` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubLedgerAcctLineItemType` | ✓ | |  | `slalittype` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

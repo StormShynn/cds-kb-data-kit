@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `BPCreditStandingReview` | ✓ | |  | `kwg_cre` |
-| `BPCrdtStndgReviewDescription` |  | |  | `kwg_cre_t` |
-| `_BPCreditStandingReview` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `BPCreditStandingReview` | ✓ | |  | `kwg_cre` |  |  |
+| `BPCrdtStndgReviewDescription` |  | |  | `kwg_cre_t` |  |  |
+| `_BPCreditStandingReview` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

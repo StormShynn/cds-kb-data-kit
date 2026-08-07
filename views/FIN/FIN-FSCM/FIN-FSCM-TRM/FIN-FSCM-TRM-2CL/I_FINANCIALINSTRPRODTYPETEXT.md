@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `FinancialInstrumentProductType` | ✓ | |  | `gsart` |
-| `FinancialInstrProdTypeName` |  | |  | `cast(FinancialInstrProdTypeText.ltx as ftr_gen_product_type_name preserving type)` |
-| `_FinancialInstrProductType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FinancialInstrumentProductType` | ✓ | |  | `gsart` |  |  |
+| `FinancialInstrProdTypeName` |  | |  | `cast(FinancialInstrProdTypeText.ltx as ftr_gen_product_type_name preserving type)` |  |  |
+| `_FinancialInstrProductType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

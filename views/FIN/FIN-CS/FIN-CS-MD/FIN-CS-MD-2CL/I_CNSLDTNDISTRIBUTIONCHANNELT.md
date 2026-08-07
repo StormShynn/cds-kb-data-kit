@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `DistributionChannel` | ✓ | |  | `cast( _Source.DistributionChannel as fincs_distributionchannel preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast( _Source.DistributionChannelName as fincs_description_text_20 preserving type )` |
-| `DistributionChannelName` |  | |  | `cast( _Source.DistributionChannelName as fincs_distributionchannelname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `DistributionChannel` | ✓ | |  | `cast( _Source.DistributionChannel as fincs_distributionchannel preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.DistributionChannelName as fincs_description_text_20 preserving type )` |  |  |
+| `DistributionChannelName` |  | |  | `cast( _Source.DistributionChannelName as fincs_distributionchannelname preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
 
 ## Associations
 

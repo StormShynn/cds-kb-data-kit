@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CATaxDateType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as tax_date_type_kk preserving type )` |
-| `_CATaxDateTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CATaxDateType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as tax_date_type_kk preserving type )` |  |  |
+| `_CATaxDateTypeText` | | ✓ | | | | |
 
 ## Associations
 

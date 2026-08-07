@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SLCTranslationStatus` | ✓ | |  | `cast(substring( domvalue_l, 1, 2) as /srmsmc/translation_status)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SLCTranslationStatusName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type)` |
-| `_Language` | | ✓ | | |
-| `_SLCTranslationStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SLCTranslationStatus` | ✓ | |  | `cast(substring( domvalue_l, 1, 2) as /srmsmc/translation_status)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SLCTranslationStatusName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SLCTranslationStatus` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionUsage` | ✓ | |  | `kvewe` |
-| `ConditionApplication` | ✓ | |  | `kappl` |
-| `ConditionTable` | ✓ | |  | `cast ( t681.kotabnr as char03 )` |
-| `PricingConditionField` | ✓ | |  | `fieldname` |
-| `PrcgCndnTableFieldIsKey` |  | |  | `keyflag` |
-| `PrcgCndnTableFieldIsItem` |  | |  | `cast ( case when t681e.fsetyp = 'B' then 'X' else ' ' end as dzeifd )` |
-| `PrcgCndnTableFieldHasText` |  | |  | `fsetxt` |
-| `_PricingConditionTable` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |  |  |
+| `ConditionApplication` | ✓ | |  | `kappl` |  |  |
+| `ConditionTable` | ✓ | |  | `cast ( t681.kotabnr as char03 )` |  |  |
+| `PricingConditionField` | ✓ | |  | `fieldname` |  |  |
+| `PrcgCndnTableFieldIsKey` |  | |  | `keyflag` |  |  |
+| `PrcgCndnTableFieldIsItem` |  | |  | `cast ( case when t681e.fsetyp = 'B' then 'X' else ' ' end as dzeifd )` |  |  |
+| `PrcgCndnTableFieldHasText` |  | |  | `fsetxt` |  |  |
+| `_PricingConditionTable` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `cast( partner as ukm_contributing_partner preserving type )` |
-| `CreditSegment` | ✓ | |  | `cast ( credit_sgmnt as ukm_contributing_segment preserving type )` |
-| `CreditManagementLineItem` | ✓ | |  | `cast( iguid as ukm_line_item preserving type )` |
-| `CreditMgmtLinkedLineItemKey` |  | | `_ext_guid` | `objkey` |
-| `BusinessObjectType` |  | | `_ext_guid` | `objtype` |
-| `LogicalSystem` |  | | `_ext_guid` | `logsys` |
-| `CreditExposureUTCDateTime` |  | |  | `cast( tmstmp as tstrcreats preserving type )` |
-| `CreditExposureCategory` |  | |  | `comm_typ` |
-| `ExposureAmount` |  | |  | `amount` |
-| `HedgedAmount` |  | |  | `amount_sec` |
-| `Currency` |  | |  | `currency` |
-| `OriginalLiableBusinessPartner` |  | |  | `msg_partner` |
-| `OriginalLiableCreditSegment` |  | |  | `msg_sgmnt` |
-| `_BusinessPartner` | | ✓ | | |
-| `_CreditSegment` | | ✓ | | |
-| `_ExposureCategory` | | ✓ | | |
-| `_OriginalLiableBusinessPartner` | | ✓ | | |
-| `_OriginalLiableCreditSegment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `cast( partner as ukm_contributing_partner preserving type )` |  |  |
+| `CreditSegment` | ✓ | |  | `cast ( credit_sgmnt as ukm_contributing_segment preserving type )` |  |  |
+| `CreditManagementLineItem` | ✓ | |  | `cast( iguid as ukm_line_item preserving type )` |  |  |
+| `CreditMgmtLinkedLineItemKey` |  | | `_ext_guid` | `objkey` |  |  |
+| `BusinessObjectType` |  | | `_ext_guid` | `objtype` |  |  |
+| `LogicalSystem` |  | | `_ext_guid` | `logsys` |  |  |
+| `CreditExposureUTCDateTime` |  | |  | `cast( tmstmp as tstrcreats preserving type )` |  |  |
+| `CreditExposureCategory` |  | |  | `comm_typ` |  |  |
+| `ExposureAmount` |  | |  | `amount` |  |  |
+| `HedgedAmount` |  | |  | `amount_sec` |  |  |
+| `Currency` |  | |  | `currency` |  |  |
+| `OriginalLiableBusinessPartner` |  | |  | `msg_partner` |  |  |
+| `OriginalLiableCreditSegment` |  | |  | `msg_sgmnt` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CreditSegment` | | ✓ | | | | |
+| `_ExposureCategory` | | ✓ | | | | |
+| `_OriginalLiableBusinessPartner` | | ✓ | | | | |
+| `_OriginalLiableCreditSegment` | | ✓ | | | | |
 
 ## Associations
 

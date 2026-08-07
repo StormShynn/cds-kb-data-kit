@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QuotaArrangement` | ✓ | |  |  |
-| `QuotaArrangementItem` | ✓ | |  |  |
-| `MaterialProcurementCategory` |  | |  |  |
-| `MaterialProcurementType` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `PurchasingSourceQuota` |  | |  |  |
-| `QuotaBaseQuantity` |  | |  |  |
-| `QuotaAllocatedQuantity` |  | |  |  |
-| `QuotaMaximumQuantity` |  | |  |  |
-| `ProductionVersion` |  | |  |  |
-| `MaterialMaxLotSizeQuantity` |  | |  |  |
-| `MaterialMinLotSizeQuantity` |  | |  |  |
-| `MaterialRoundingProfile` |  | |  |  |
-| `SourceOfSupplyIsAssignedOnce` |  | |  |  |
-| `MaximumReleaseQuantity` |  | |  |  |
-| `QuotaReleasePeriodType` |  | |  |  |
-| `NumberOfPeriodsPerRelQuantity` |  | |  |  |
-| `QuotaDeterminationPriority` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `PlannedDeliveryDurationInDays` |  | |  |  |
-| `Plant` |  | |  |  |
-| `MaterialBaseUnit` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `_PurgQuotaArrgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QuotaArrangement` | ✓ | |  |  |  |  |
+| `QuotaArrangementItem` | ✓ | |  |  |  |  |
+| `MaterialProcurementCategory` |  | |  |  |  |  |
+| `MaterialProcurementType` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `PurchasingSourceQuota` |  | |  |  |  |  |
+| `QuotaBaseQuantity` |  | |  |  |  |  |
+| `QuotaAllocatedQuantity` |  | |  |  |  |  |
+| `QuotaMaximumQuantity` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `MaterialMaxLotSizeQuantity` |  | |  |  |  |  |
+| `MaterialMinLotSizeQuantity` |  | |  |  |  |  |
+| `MaterialRoundingProfile` |  | |  |  |  |  |
+| `SourceOfSupplyIsAssignedOnce` |  | |  |  |  |  |
+| `MaximumReleaseQuantity` |  | |  |  |  |  |
+| `QuotaReleasePeriodType` |  | |  |  |  |  |
+| `NumberOfPeriodsPerRelQuantity` |  | |  |  |  |  |
+| `QuotaDeterminationPriority` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `MaterialBaseUnit` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `_PurgQuotaArrgmt` | | ✓ | | | | |
 
 ## Associations
 

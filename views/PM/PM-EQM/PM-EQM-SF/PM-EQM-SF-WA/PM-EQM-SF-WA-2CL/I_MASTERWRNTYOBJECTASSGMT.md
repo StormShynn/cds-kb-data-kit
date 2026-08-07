@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ObjectInternalID` | ✓ | |  | `j_objnr` |
-| `WarrantyType` | ✓ | |  | `gaart` |
-| `MasterWarranty` |  | |  | `mganr` |
-| `WarrantyStartDate` |  | |  | `gwldt` |
-| `WarrantyEndDate` |  | |  | `gwlen` |
-| `CreationDate` |  | |  | `erdat` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `WrntyIsPassedOnToChildObject` |  | |  | `gaerb` |
-| `WrntyIsInhtdFromSuperiorObject` |  | |  | `waget` |
-| `_MasterWarranty` | | ✓ | | |
-| `_WarrantyType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectInternalID` | ✓ | |  | `j_objnr` |  |  |
+| `WarrantyType` | ✓ | |  | `gaart` |  |  |
+| `MasterWarranty` |  | |  | `mganr` |  |  |
+| `WarrantyStartDate` |  | |  | `gwldt` |  |  |
+| `WarrantyEndDate` |  | |  | `gwlen` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `WrntyIsPassedOnToChildObject` |  | |  | `gaerb` |  |  |
+| `WrntyIsInhtdFromSuperiorObject` |  | |  | `waget` |  |  |
+| `_MasterWarranty` | | ✓ | | | | |
+| `_WarrantyType` | | ✓ | | | | |
 
 ## Associations
 

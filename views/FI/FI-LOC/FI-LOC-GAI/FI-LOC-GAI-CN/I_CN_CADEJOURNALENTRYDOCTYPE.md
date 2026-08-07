@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |
-| `CN_CADEDocumentTypeUsage` | ✓ | |  | `cade_jrnl_entr_type_ind` |
-| `CN_CADEDocumentListType` | ✓ | |  | `cade_jrnl_entr_type_code` |
-| `CN_CADEDocumentListTypeName` |  | |  | `cade_jrnl_entr_type_desc` |
-| `AccountingDocumentTypeName` |  | |  | `cade_jrnl_entr_type_s_desc` |
-| `IsDefaultValue` |  | |  | `is_default` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |  |  |
+| `CN_CADEDocumentTypeUsage` | ✓ | |  | `cade_jrnl_entr_type_ind` |  |  |
+| `CN_CADEDocumentListType` | ✓ | |  | `cade_jrnl_entr_type_code` |  |  |
+| `CN_CADEDocumentListTypeName` |  | |  | `cade_jrnl_entr_type_desc` |  |  |
+| `AccountingDocumentTypeName` |  | |  | `cade_jrnl_entr_type_s_desc` |  |  |
+| `IsDefaultValue` |  | |  | `is_default` |  |  |
 
 ## Source Code
 

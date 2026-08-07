@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarCnfConstraintNetName` | ✓ | |  |  |
-| `VarCnfConstraintName` | ✓ | |  |  |
-| `LanguageCode` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `VarCnfConstraintDescription` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_ConstraintNet` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarCnfConstraintNetName` | ✓ | |  |  |  |  |
+| `VarCnfConstraintName` | ✓ | |  |  |  |  |
+| `LanguageCode` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `VarCnfConstraintDescription` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ConstraintNet` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,37 +29,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `CalendarYear` | ✓ | |  |  |
-| `CACreditWorthinessSequenceNmbr` | ✓ | |  |  |
-| `CACreditWorthinessOrigin` |  | |  |  |
-| `CACreditWorthinessDate` |  | |  |  |
-| `CAItemCreditWorthinessValue` |  | |  |  |
-| `CAItemCrdtWorthinessIsNegative` |  | |  |  |
-| `CAItmCrdtWrthnssWthSignVal` |  | |  | `cast( case when CAItemCrdtWorthinessIsNegative = 'X' then cast( CAItemCreditWorthinessValue as cbetr_kk ) * -1 else cast( CAItemCreditWorthinessValue as cbetr_kk ) end as cbetr_kk )` |
-| `CACrdtWorthinessItemIsReversed` |  | |  |  |
-| `CACrdtWorthinessItemStatus` |  | |  | `cast( case when CACrdtWorthinessItemIsReversed = 'X' then '2' else '1' end as bonis_kk )` |
-| `CACreditWorthinessItemExtKey` |  | |  |  |
-| `CACreditWorthinessItemText` |  | |  |  |
-| `CAApplicationArea` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `CAMassRunDate` |  | |  |  |
-| `CAMassRunID` |  | |  |  |
-| `CADunningCounter` |  | |  |  |
-| `CAReturnDocumentNumber` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `_CACreditWorthinessItemStatus` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_CAApplicationArea` | | ✓ | | |
-| `_CACreditWorthinessOrigin` | | ✓ | | |
-| `_CAReturnDocument` | | ✓ | | |
-| `_CalendarYear` | | ✓ | | |
-| `_ContractAccount` | | ✓ | | |
-| `_ContractAccountPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `CalendarYear` | ✓ | |  |  |  |  |
+| `CACreditWorthinessSequenceNmbr` | ✓ | |  |  |  |  |
+| `CACreditWorthinessOrigin` |  | |  |  |  |  |
+| `CACreditWorthinessDate` |  | |  |  |  |  |
+| `CAItemCreditWorthinessValue` |  | |  |  |  |  |
+| `CAItemCrdtWorthinessIsNegative` |  | |  |  |  |  |
+| `CAItmCrdtWrthnssWthSignVal` |  | |  | `cast( case when CAItemCrdtWorthinessIsNegative = 'X' then cast( CAItemCreditWorthinessValue as cbetr_kk ) * -1 else cast( CAItemCreditWorthinessValue as cbetr_kk ) end as cbetr_kk )` |  |  |
+| `CACrdtWorthinessItemIsReversed` |  | |  |  |  |  |
+| `CACrdtWorthinessItemStatus` |  | |  | `cast( case when CACrdtWorthinessItemIsReversed = 'X' then '2' else '1' end as bonis_kk )` |  |  |
+| `CACreditWorthinessItemExtKey` |  | |  |  |  |  |
+| `CACreditWorthinessItemText` |  | |  |  |  |  |
+| `CAApplicationArea` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `CAMassRunDate` |  | |  |  |  |  |
+| `CAMassRunID` |  | |  |  |  |  |
+| `CADunningCounter` |  | |  |  |  |  |
+| `CAReturnDocumentNumber` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `_CACreditWorthinessItemStatus` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_CACreditWorthinessOrigin` | | ✓ | | | | |
+| `_CAReturnDocument` | | ✓ | | | | |
+| `_CalendarYear` | | ✓ | | | | |
+| `_ContractAccount` | | ✓ | | | | |
+| `_ContractAccountPartner` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |
-| `ElectronicDocSourceType` | ✓ | |  | `source_type` |
-| `ElectronicDocSourceKey` | ✓ | |  | `source_key` |
-| `KR_EDocSelfBillMapIsDelete` |  | |  | `delete_indicator` |
-| `AccountingDocument` |  | |  | `belnr` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `FiscalYear` |  | |  | `cast(gjahr as fis_gjahr_no_conv preserving type)` |
-| `BillingDocument` |  | |  | `vbeln` |
-| `KR_EDocSelfBillMapInvcgDocNo` |  | |  | `invdocno` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |  |  |
+| `ElectronicDocSourceType` | ✓ | |  | `source_type` |  |  |
+| `ElectronicDocSourceKey` | ✓ | |  | `source_key` |  |  |
+| `KR_EDocSelfBillMapIsDelete` |  | |  | `delete_indicator` |  |  |
+| `AccountingDocument` |  | |  | `belnr` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `FiscalYear` |  | |  | `cast(gjahr as fis_gjahr_no_conv preserving type)` |  |  |
+| `BillingDocument` |  | |  | `vbeln` |  |  |
+| `KR_EDocSelfBillMapInvcgDocNo` |  | |  | `invdocno` |  |  |
 
 ## Source Code
 

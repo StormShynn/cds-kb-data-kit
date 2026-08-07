@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IsQuestionCommentEnabled` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as /srmsmc/qst_notes)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SLCQuestionCommentOptionName` |  | |  | `cast(ddtext as /srmsmc/type_descr preserving type)` |
-| `_Language` | | ✓ | | |
-| `_SLCQuestionNoteOption` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IsQuestionCommentEnabled` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as /srmsmc/qst_notes)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SLCQuestionCommentOptionName` |  | |  | `cast(ddtext as /srmsmc/type_descr preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SLCQuestionNoteOption` | | ✓ | | | | |
 
 ## Associations
 

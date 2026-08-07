@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceQuotation` | ✓ | |  |  |
-| `ServiceQuotationItem` | ✓ | |  |  |
-| `SrvcDocAppointmentType` | ✓ | |  |  |
-| `SrvcDocApptStartDateTime` |  | |  |  |
-| `SrvcDocApptEndDateTime` |  | |  |  |
-| `_ServiceQuotationItemTP` | | ✓ | | |
-| `_ServiceQuotationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |  |  |
+| `ServiceQuotationItem` | ✓ | |  |  |  |  |
+| `SrvcDocAppointmentType` | ✓ | |  |  |  |  |
+| `SrvcDocApptStartDateTime` |  | |  |  |  |  |
+| `SrvcDocApptEndDateTime` |  | |  |  |  |  |
+| `_ServiceQuotationItemTP` | | ✓ | | | | |
+| `_ServiceQuotationTP` | | ✓ | | | | |
 
 ## Source Code
 

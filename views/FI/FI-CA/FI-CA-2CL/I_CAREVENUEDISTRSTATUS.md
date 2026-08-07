@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARevenueDistributionStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as rdstat_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARevenueDistributionStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as rdstat_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

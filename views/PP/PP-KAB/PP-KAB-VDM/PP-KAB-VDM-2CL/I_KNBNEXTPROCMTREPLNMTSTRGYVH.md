@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ExtProcurementReplnmtStrgy` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExtProcurementReplnmtStrgy` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Source Code
 

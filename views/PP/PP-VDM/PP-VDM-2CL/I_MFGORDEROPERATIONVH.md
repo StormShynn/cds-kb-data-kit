@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MfgOrderInternalID` | ✓ | |  |  |
-| `OrderOperationInternalID` | ✓ | |  |  |
-| `ManufacturingOrder` |  | |  |  |
-| `ManufacturingOrderSequence` |  | |  |  |
-| `ManufacturingOrderOperation` |  | |  |  |
-| `OperationIsSubOperation` |  | |  | `cast(oper1.OperationIsSubOperation as vdm_subop_flag preserving type)` |
-| `MfgOrderOperationText` |  | |  | `OperationText` |
-| `ManufacturingOrderCategory` |  | |  |  |
-| `ManufacturingOrderType` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MfgOrderInternalID` | ✓ | |  |  |  |  |
+| `OrderOperationInternalID` | ✓ | |  |  |  |  |
+| `ManufacturingOrder` |  | |  |  |  |  |
+| `ManufacturingOrderSequence` |  | |  |  |  |  |
+| `ManufacturingOrderOperation` |  | |  |  |  |  |
+| `OperationIsSubOperation` |  | |  | `cast(oper1.OperationIsSubOperation as vdm_subop_flag preserving type)` |  |  |
+| `MfgOrderOperationText` |  | |  | `OperationText` |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |  |  |
+| `ManufacturingOrderType` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
 
 ## Source Code
 

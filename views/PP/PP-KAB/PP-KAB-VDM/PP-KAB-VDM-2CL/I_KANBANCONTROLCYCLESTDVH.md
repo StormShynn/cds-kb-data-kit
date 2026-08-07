@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanControlCycle` | ✓ | |  |  |
-| `Plant` |  | |  |  |
-| `ProductionSupplyArea` |  | |  |  |
-| `Product` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanControlCycle` | ✓ | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ProductionSupplyArea` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
 
 ## Source Code
 

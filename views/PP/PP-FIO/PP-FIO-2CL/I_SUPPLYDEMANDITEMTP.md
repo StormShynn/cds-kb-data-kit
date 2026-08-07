@@ -28,67 +28,67 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RowIndex` | ✓ | |  |  |
-| `Material` |  | |  |  |
-| `MRPPlant` |  | |  |  |
-| `MRPArea` |  | |  |  |
-| `MRPPlanningSegmentType` |  | |  |  |
-| `MRPPlanningSegment` |  | |  |  |
-| `MaterialShortageDefinition` |  | |  |  |
-| `MRPElementSupplyAggregation` |  | |  |  |
-| `MRPElementDemandAggregation` |  | |  |  |
-| `MaterialExternalID` |  | |  |  |
-| `MRPElement` |  | |  |  |
-| `MRPElementItem` |  | |  |  |
-| `MRPElementScheduleLine` |  | |  |  |
-| `MRPElementCategory` |  | |  |  |
-| `MRPElementCategoryShortName` |  | |  |  |
-| `MRPElementAvailyOrRqmtDate` |  | |  |  |
-| `SupplyEndDate` |  | |  |  |
-| `SupplyStartDate` |  | |  |  |
-| `RequirementMRPDate` |  | |  |  |
-| `MRPAvailableQuantity` |  | |  |  |
-| `MRPElementOpenQuantity` |  | |  |  |
-| `MRPElementQuantityIsFirm` |  | |  |  |
-| `MRPElementDocumentType` |  | |  |  |
-| `StorageLocation` |  | |  | `, useAsTemplate: true, additionalBinding: [{ element: 'Plant', localElement: 'MRPPlant' } ] }] } StorageLocation` |
-| `Assembly` |  | |  |  |
-| `ProductionVersion` |  | |  | `, useAsTemplate: true, additionalBinding: [{ element: 'Product', localElement: 'Material' }, { element: 'Plant', localElement: 'MRPPlant' } ] }] } ProductionVersion` |
-| `SourceMRPElement` |  | |  |  |
-| `SourceMRPElement_2` |  | |  |  |
-| `SourceMRPElementItem` |  | |  |  |
-| `SourceMRPElementScheduleLine` |  | |  |  |
-| `SourceMRPElementCategory` |  | |  |  |
-| `MRPElementBusinessPartner` |  | |  |  |
-| `MRPElementBusinessPartnerName` |  | |  |  |
-| `MRPElementBusinessPartnerType` |  | |  |  |
-| `MaterialBaseUnit` |  | |  |  |
-| `UnitOfMeasureCommercialName` |  | |  |  |
-| `TargetQuantityUnitDisplayDcmls` |  | |  |  |
-| `TargetQuantityUnitDcmls` |  | |  |  |
-| `MaterialBaseUnitDesc` |  | |  |  |
-| `UnitOfMeasureName` |  | |  |  |
-| `MRPElementIsReleased` |  | |  |  |
-| `MRPElementIsPartiallyDelivered` |  | |  |  |
-| `MRPRequestStatus` |  | |  |  |
-| `MRPRequestSupplierResponse` |  | |  |  |
-| `MRPAvailability` |  | |  |  |
-| `MRPEvaluationHorizonInDays` |  | |  |  |
-| `MaterialSafetyStockQty` |  | |  |  |
-| `MRPElementDocumentTypeName` |  | |  |  |
-| `MRPElementCategoryGroup` |  | |  |  |
-| `MRPElementCategoryGroupName` |  | |  |  |
-| `SupplyIsInThePast` |  | |  |  |
-| `NumberOfAggregatedMRPElements` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `PlanningPlant` |  | |  |  |
-| `ExceptionMessageNumber` |  | |  |  |
-| `ExceptionMessageText` |  | |  |  |
-| `ExceptionMessageNumber2` |  | |  |  |
-| `ExceptionMessageText2` |  | |  |  |
-| `MRPElementReschedulingDate` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RowIndex` | ✓ | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MRPPlant` |  | |  |  |  |  |
+| `MRPArea` |  | |  |  |  |  |
+| `MRPPlanningSegmentType` |  | |  |  |  |  |
+| `MRPPlanningSegment` |  | |  |  |  |  |
+| `MaterialShortageDefinition` |  | |  |  |  |  |
+| `MRPElementSupplyAggregation` |  | |  |  |  |  |
+| `MRPElementDemandAggregation` |  | |  |  |  |  |
+| `MaterialExternalID` |  | |  |  |  |  |
+| `MRPElement` |  | |  |  |  |  |
+| `MRPElementItem` |  | |  |  |  |  |
+| `MRPElementScheduleLine` |  | |  |  |  |  |
+| `MRPElementCategory` |  | |  |  |  |  |
+| `MRPElementCategoryShortName` |  | |  |  |  |  |
+| `MRPElementAvailyOrRqmtDate` |  | |  |  |  |  |
+| `SupplyEndDate` |  | |  |  |  |  |
+| `SupplyStartDate` |  | |  |  |  |  |
+| `RequirementMRPDate` |  | |  |  |  |  |
+| `MRPAvailableQuantity` |  | |  |  |  |  |
+| `MRPElementOpenQuantity` |  | |  |  |  |  |
+| `MRPElementQuantityIsFirm` |  | |  |  |  |  |
+| `MRPElementDocumentType` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `SourceMRPElement` |  | |  |  |  |  |
+| `SourceMRPElement_2` |  | |  |  |  |  |
+| `SourceMRPElementItem` |  | |  |  |  |  |
+| `SourceMRPElementScheduleLine` |  | |  |  |  |  |
+| `SourceMRPElementCategory` |  | |  |  |  |  |
+| `MRPElementBusinessPartner` |  | |  |  |  |  |
+| `MRPElementBusinessPartnerName` |  | |  |  |  |  |
+| `MRPElementBusinessPartnerType` |  | |  |  |  |  |
+| `MaterialBaseUnit` |  | |  |  |  |  |
+| `UnitOfMeasureCommercialName` |  | |  |  |  |  |
+| `TargetQuantityUnitDisplayDcmls` |  | |  |  |  |  |
+| `TargetQuantityUnitDcmls` |  | |  |  |  |  |
+| `MaterialBaseUnitDesc` |  | |  |  |  |  |
+| `UnitOfMeasureName` |  | |  |  |  |  |
+| `MRPElementIsReleased` |  | |  |  |  |  |
+| `MRPElementIsPartiallyDelivered` |  | |  |  |  |  |
+| `MRPRequestStatus` |  | |  |  |  |  |
+| `MRPRequestSupplierResponse` |  | |  |  |  |  |
+| `MRPAvailability` |  | |  |  |  |  |
+| `MRPEvaluationHorizonInDays` |  | |  |  |  |  |
+| `MaterialSafetyStockQty` |  | |  |  |  |  |
+| `MRPElementDocumentTypeName` |  | |  |  |  |  |
+| `MRPElementCategoryGroup` |  | |  |  |  |  |
+| `MRPElementCategoryGroupName` |  | |  |  |  |  |
+| `SupplyIsInThePast` |  | |  |  |  |  |
+| `NumberOfAggregatedMRPElements` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `PlanningPlant` |  | |  |  |  |  |
+| `ExceptionMessageNumber` |  | |  |  |  |  |
+| `ExceptionMessageText` |  | |  |  |  |  |
+| `ExceptionMessageNumber2` |  | |  |  |  |  |
+| `ExceptionMessageText2` |  | |  |  |  |  |
+| `MRPElementReschedulingDate` |  | |  |  |  |  |
 
 ## Source Code
 

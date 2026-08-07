@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionMethodPlant` | ✓ | |  | `werks` |
-| `InspectionMethod` | ✓ | |  | `pmtnr` |
-| `InspectionMethodVersion` | ✓ | |  | `version` |
-| `InspectionMethodValidFromDate` |  | |  | `gueltigab` |
-| `InspectionMethodSearchField` |  | |  | `sortfeld` |
-| `InspectionMethodStatus` |  | |  | `loekz` |
-| `InspectorQualification` |  | |  | `prfql` |
-| `InspMethInformationField1` |  | |  | `dummy10` |
-| `InspMethInformationField2` |  | |  | `dummy20` |
-| `InspMethInformationField3` |  | |  | `dummy40` |
-| `QltyMstrDataAuthorizationGroup` |  | |  | `qauth` |
-| `CreatedByUser` |  | |  | `autor` |
-| `CreationDate` |  | |  | `dates` |
-| `LastChangedByUser` |  | |  | `aeaut` |
-| `LastChangeDate` |  | |  | `datae` |
-| `ChangedDateTime` |  | |  | `case qmtb.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qmtb.changeddatetime end` |
-| `_InspectionMethod` | | ✓ | | |
-| `_InspectionMethodPlant` | | ✓ | | |
-| `_InspectionMethodText` | | ✓ | | |
-| `_InspectionMethodStatus` | | ✓ | | |
-| `_InspectionMethodStatusText` | | ✓ | | |
-| `_InspectorQualification` | | ✓ | | |
-| `_InspectorQualificationText` | | ✓ | | |
-| `_QltyMstrDataAuthznGrp` | | ✓ | | |
-| `_QltyMstrDataAuthznGrpTxt` | | ✓ | | |
-| `_InspMethCreatedByUser` | | ✓ | | |
-| `_InspMethLastChangedByUser` | | ✓ | | |
-| `_CreatedByUserContactCard` | | ✓ | | |
-| `_LastChangedByUserContactCard` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionMethodPlant` | ✓ | |  | `werks` |  |  |
+| `InspectionMethod` | ✓ | |  | `pmtnr` |  |  |
+| `InspectionMethodVersion` | ✓ | |  | `version` |  |  |
+| `InspectionMethodValidFromDate` |  | |  | `gueltigab` |  |  |
+| `InspectionMethodSearchField` |  | |  | `sortfeld` |  |  |
+| `InspectionMethodStatus` |  | |  | `loekz` |  |  |
+| `InspectorQualification` |  | |  | `prfql` |  |  |
+| `InspMethInformationField1` |  | |  | `dummy10` |  |  |
+| `InspMethInformationField2` |  | |  | `dummy20` |  |  |
+| `InspMethInformationField3` |  | |  | `dummy40` |  |  |
+| `QltyMstrDataAuthorizationGroup` |  | |  | `qauth` |  |  |
+| `CreatedByUser` |  | |  | `autor` |  |  |
+| `CreationDate` |  | |  | `dates` |  |  |
+| `LastChangedByUser` |  | |  | `aeaut` |  |  |
+| `LastChangeDate` |  | |  | `datae` |  |  |
+| `ChangedDateTime` |  | |  | `case qmtb.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qmtb.changeddatetime end` |  |  |
+| `_InspectionMethod` | | ✓ | | | | |
+| `_InspectionMethodPlant` | | ✓ | | | | |
+| `_InspectionMethodText` | | ✓ | | | | |
+| `_InspectionMethodStatus` | | ✓ | | | | |
+| `_InspectionMethodStatusText` | | ✓ | | | | |
+| `_InspectorQualification` | | ✓ | | | | |
+| `_InspectorQualificationText` | | ✓ | | | | |
+| `_QltyMstrDataAuthznGrp` | | ✓ | | | | |
+| `_QltyMstrDataAuthznGrpTxt` | | ✓ | | | | |
+| `_InspMethCreatedByUser` | | ✓ | | | | |
+| `_InspMethLastChangedByUser` | | ✓ | | | | |
+| `_CreatedByUserContactCard` | | ✓ | | | | |
+| `_LastChangedByUserContactCard` | | ✓ | | | | |
 
 ## Associations
 

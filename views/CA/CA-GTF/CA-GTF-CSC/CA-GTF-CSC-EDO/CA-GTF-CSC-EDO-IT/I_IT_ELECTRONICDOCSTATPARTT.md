@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `IT_ElectronicDocPartStat` | ✓ | |  | `status_at_partner` |
-| `IT_ElectronicDocPartStatText` |  | |  | `description` |
-| `_StatusPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `IT_ElectronicDocPartStat` | ✓ | |  | `status_at_partner` |  |  |
+| `IT_ElectronicDocPartStatText` |  | |  | `description` |  |  |
+| `_StatusPartner` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UsageDecisionCodeGroup` | ✓ | |  | `codegruppe` |
-| `CodeGroupIsInactive` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |
-| `CodeGroupStatus` |  | |  | `status` |
-| `UsgeDcsnCodeGroupCreatedBy` |  | |  | `ersteller` |
-| `UsgeDcsnCodeGroupCreatedOn` |  | |  | `e_datum` |
-| `UsgeDcsnCodeGroupLastChgdBy` |  | |  | `aenderer` |
-| `UsgeDcsnCodeGroupLastChgdOn` |  | |  | `a_datum` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UsageDecisionCodeGroup` | ✓ | |  | `codegruppe` |  |  |
+| `CodeGroupIsInactive` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |  |  |
+| `CodeGroupStatus` |  | |  | `status` |  |  |
+| `UsgeDcsnCodeGroupCreatedBy` |  | |  | `ersteller` |  |  |
+| `UsgeDcsnCodeGroupCreatedOn` |  | |  | `e_datum` |  |  |
+| `UsgeDcsnCodeGroupLastChgdBy` |  | |  | `aenderer` |  |  |
+| `UsgeDcsnCodeGroupLastChgdOn` |  | |  | `a_datum` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -26,57 +26,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  | `ServiceDocument` |
-| `ServiceObjectType` |  | |  |  |
-| `BusinessSolutionOrderUUID` |  | |  | `ServiceDocumentUUID` |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocumentDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
-| `TransactionCurrency` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SoldToPartyCountry` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `ServiceDocumentStatus` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `ResponsibleServiceOrganization` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_SrvcDocLifecycleStatus` | | ✓ | | |
-| `_SalesOrganizationOrgUnit` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
-| `_RespSrvcOrganizationOrgUnit` | | ✓ | | |
-| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  | `ServiceDocument` |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `BusinessSolutionOrderUUID` |  | |  | `ServiceDocumentUUID` |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocumentDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `ServiceDocumentStatus` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `ResponsibleServiceOrganization` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_RespSrvcOrganizationOrgUnit` | | ✓ | | | | |
+| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
 
 ## Source Code
 

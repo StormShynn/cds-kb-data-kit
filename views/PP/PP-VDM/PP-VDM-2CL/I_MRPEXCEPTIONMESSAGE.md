@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPExceptionMessage` | ✓ | |  | `cast(aussl as vdm_aussl preserving type)` |
-| `MRPExceptionMessageNumber` |  | |  | `cast(auskt as vdm_auskt preserving type)` |
-| `MRPExceptionMessagePriority` |  | |  | `cast(aspri as vdm_aspri preserving type)` |
-| `MRPExcptnMessageSelGroup` |  | |  | `cast(selgp as selgp preserving type)` |
-| `MRPListIsToBeCreated` |  | |  | `erdis` |
-| `_MRPExcptnMessageSelGroup` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPExceptionMessage` | ✓ | |  | `cast(aussl as vdm_aussl preserving type)` |  |  |
+| `MRPExceptionMessageNumber` |  | |  | `cast(auskt as vdm_auskt preserving type)` |  |  |
+| `MRPExceptionMessagePriority` |  | |  | `cast(aspri as vdm_aspri preserving type)` |  |  |
+| `MRPExcptnMessageSelGroup` |  | |  | `cast(selgp as selgp preserving type)` |  |  |
+| `MRPListIsToBeCreated` |  | |  | `erdis` |  |  |
+| `_MRPExcptnMessageSelGroup` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

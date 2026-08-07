@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryValuationArea` | ✓ | |  | `valuation_area` |
-| `TreasuryValuationClass` | ✓ | |  | `cast(TreasuryValuationClass.valuation_class as ftr_gen_valuation_class preserving type)` |
-| `_TreasuryValuationArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryValuationArea` | ✓ | |  | `valuation_area` |  |  |
+| `TreasuryValuationClass` | ✓ | |  | `cast(TreasuryValuationClass.valuation_class as ftr_gen_valuation_class preserving type)` |  |  |
+| `_TreasuryValuationArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

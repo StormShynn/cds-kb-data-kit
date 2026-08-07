@@ -28,15 +28,15 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `carrid` | ✓ | |  |  |
-| `connid` | ✓ | |  |  |
-| `fldate` | ✓ | |  |  |
-| `One` |  | |  | `1` |
-| `Pi` |  | |  | `14` |
-| `'Hello` |  | |  |  |
-| `Greeting` |  | |  | `World!'` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `carrid` | ✓ | |  |  |  |  |
+| `connid` | ✓ | |  |  |  |  |
+| `fldate` | ✓ | |  |  |  |  |
+| `One` |  | |  | `1` |  |  |
+| `Pi` |  | |  | `14` |  |  |
+| `'Hello` |  | |  |  |  |  |
+| `Greeting` |  | |  | `World!'` |  |  |
 
 ## Source Code
 

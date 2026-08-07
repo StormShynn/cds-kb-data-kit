@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `HouseBank` | ✓ | |  | `hbkid` |
-| `HouseBankAccount` | ✓ | |  | `hktid` |
-| `EU_EDocPaymentMeans` |  | |  | `paym_means` |
-| `IBAN` |  | |  | `iban` |
-| `_CompanyCode` | | ✓ | | |
-| `_HouseBank` | | ✓ | | |
-| `_HouseBankAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `HouseBank` | ✓ | |  | `hbkid` |  |  |
+| `HouseBankAccount` | ✓ | |  | `hktid` |  |  |
+| `EU_EDocPaymentMeans` |  | |  | `paym_means` |  |  |
+| `IBAN` |  | |  | `iban` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_HouseBank` | | ✓ | | | | |
+| `_HouseBankAccount` | | ✓ | | | | |
 
 ## Associations
 

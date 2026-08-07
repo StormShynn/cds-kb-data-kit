@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnUnitDataCollection` | ✓ | | `_CnsldtnUnitDataColl` | `CnsldtnUnitDataCollection` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnUnitDataCollection` | ✓ | | `_CnsldtnUnitDataColl` | `CnsldtnUnitDataCollection` |  |  |
 
 ## Source Code
 

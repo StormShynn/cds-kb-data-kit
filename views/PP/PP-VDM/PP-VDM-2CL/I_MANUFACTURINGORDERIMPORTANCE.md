@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ManufacturingOrderCategory` | ✓ | |  |  |
-| `ManufacturingOrderImportance` | ✓ | |  |  |
-| `_MfgOrderCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ManufacturingOrderCategory` | ✓ | |  |  |  |  |
+| `ManufacturingOrderImportance` | ✓ | |  |  |  |  |
+| `_MfgOrderCategory` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `langu` |
-| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( _Source.ritclg as fincs_conschartofaccounts preserving type )` |
-| `ChartOfAccounts` | ✓ | |  | `cast( _Source.ktopl as fincs_chartofaccounts preserving type )` |
-| `CnsldtnFSItemMapping` | ✓ | |  | `cast( _Source.mapping_id as fincs_fsitemmapping preserving type )` |
-| `CnsldtnFSItemMappingRevision` | ✓ | |  | `cast( _Source.revision as fincs_fsitemmappingrevision preserving type )` |
-| `CnsldtnFSItemMappgRevisionText` |  | |  | `cast ( _Source.revision_text as fincs_fsitemmappgrevisiontext preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_CnsldtnFSItemMapping` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `langu` |  |  |
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( _Source.ritclg as fincs_conschartofaccounts preserving type )` |  |  |
+| `ChartOfAccounts` | ✓ | |  | `cast( _Source.ktopl as fincs_chartofaccounts preserving type )` |  |  |
+| `CnsldtnFSItemMapping` | ✓ | |  | `cast( _Source.mapping_id as fincs_fsitemmapping preserving type )` |  |  |
+| `CnsldtnFSItemMappingRevision` | ✓ | |  | `cast( _Source.revision as fincs_fsitemmappingrevision preserving type )` |  |  |
+| `CnsldtnFSItemMappgRevisionText` |  | |  | `cast ( _Source.revision_text as fincs_fsitemmappgrevisiontext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_CnsldtnFSItemMapping` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LegalTransactionMandatoryFlag` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LglCntntMLglTransMandFlagText` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionMandatoryFlag` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LglCntntMLglTransMandFlagText` |  | |  |  |  |  |
 
 ## Source Code
 

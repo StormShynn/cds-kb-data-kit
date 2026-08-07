@@ -26,16 +26,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SettlmtProcessType` |  | |  | `wlf_settlmt_process_type` |
-| `SettlmtDocType` |  | |  | `wlf_settlmt_doc_type` |
-| `SettlmtDocCat` |  | |  | `wlf_settlmt_doc_cat` |
-| `SettlmtProcessCat` |  | |  | `wlf_settlmt_process_cat` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `Division` |  | |  | `spart` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtProcessType` |  | |  | `wlf_settlmt_process_type` |  |  |
+| `SettlmtDocType` |  | |  | `wlf_settlmt_doc_type` |  |  |
+| `SettlmtDocCat` |  | |  | `wlf_settlmt_doc_cat` |  |  |
+| `SettlmtProcessCat` |  | |  | `wlf_settlmt_process_cat` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `Division` |  | |  | `spart` |  |  |
 
 ## Source Code
 

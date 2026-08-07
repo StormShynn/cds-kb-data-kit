@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `}` |  | |  | `usageType: { dataClass: #MIXED, sizeCategory: #L, serviceQuality: #C }` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `}` |  | |  | `usageType: { dataClass: #MIXED, sizeCategory: #L, serviceQuality: #C }` |  |  |
 
 ## Source Code
 

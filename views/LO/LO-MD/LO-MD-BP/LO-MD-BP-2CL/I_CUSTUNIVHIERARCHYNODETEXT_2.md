@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `UniversalHierarchy` | ✓ | |  | `hryid` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `CustUnivHierarchyValidEndDate` | ✓ | |  | `cast(nodetn.hryvalto as custhierarchyvalidityenddate preserving type )` |
-| `CustUnivHierarchyValidStartDte` |  | |  | `cast(nodetn.hryvalfrom as custhierarchyvaliditystartdate preserving type )` |
-| `CustUnivHierarchyType` |  | |  | `hrytyp` |
-| `CustUnivHierarchyShortID` |  | |  | `hrysid` |
-| `CustUnivHierarchyParentNode` |  | |  | `parnode` |
-| `HierarchyNodeText` |  | |  | `nodetxt` |
-| `_CustUnivHierarchy` | | ✓ | | |
-| `_CustomerHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `UniversalHierarchy` | ✓ | |  | `hryid` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `CustUnivHierarchyValidEndDate` | ✓ | |  | `cast(nodetn.hryvalto as custhierarchyvalidityenddate preserving type )` |  |  |
+| `CustUnivHierarchyValidStartDte` |  | |  | `cast(nodetn.hryvalfrom as custhierarchyvaliditystartdate preserving type )` |  |  |
+| `CustUnivHierarchyType` |  | |  | `hrytyp` |  |  |
+| `CustUnivHierarchyShortID` |  | |  | `hrysid` |  |  |
+| `CustUnivHierarchyParentNode` |  | |  | `parnode` |  |  |
+| `HierarchyNodeText` |  | |  | `nodetxt` |  |  |
+| `_CustUnivHierarchy` | | ✓ | | | | |
+| `_CustomerHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

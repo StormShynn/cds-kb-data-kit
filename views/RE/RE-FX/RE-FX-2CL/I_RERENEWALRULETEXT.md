@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `RERenewalRule` | ✓ | |  | `rnrule` |
-| `RERenewalRuleDescription` |  | |  | `xrnrule` |
-| `_RERenewalRule` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `RERenewalRule` | ✓ | |  | `rnrule` |  |  |
+| `RERenewalRuleDescription` |  | |  | `xrnrule` |  |  |
+| `_RERenewalRule` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

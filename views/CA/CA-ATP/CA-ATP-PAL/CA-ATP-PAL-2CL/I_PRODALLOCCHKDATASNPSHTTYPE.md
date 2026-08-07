@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdAllocChkDataSnapshotType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkdatasnapshottype preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdAllocChkDataSnapshotType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkdatasnapshottype preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

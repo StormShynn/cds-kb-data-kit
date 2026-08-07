@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |
-| `Customer` |  | |  | `customer` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartner` | | ✓ | | |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |  |  |
+| `Customer` |  | |  | `customer` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
 
 ## Associations
 

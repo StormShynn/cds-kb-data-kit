@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressObjectType` | ✓ | |  | `cast ( domvalue_l as ad_adrtype )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressObjectType` | ✓ | |  | `cast ( domvalue_l as ad_adrtype )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

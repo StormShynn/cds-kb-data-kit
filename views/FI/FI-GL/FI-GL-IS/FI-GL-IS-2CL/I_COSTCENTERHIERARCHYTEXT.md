@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `hrycls` |
-| `CostCenterHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_cctr preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `hryvalto` |
-| `Language` | ✓ | |  | `spras` |
-| `ValidityStartDate` |  | |  | `hryvalfrom` |
-| `CostCenterHierarchyName` |  | |  | `hrytxt` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `hrycls` |  |  |
+| `CostCenterHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_cctr preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |  |  |
+| `CostCenterHierarchyName` |  | |  | `hrytxt` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

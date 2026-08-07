@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |
-| `CnsldtnFSItemRole` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemrole preserving type )` |
-| `CnsldtnFSItemRoleText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |
-| `CnsldtnFSItemRoleLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |
-| `_CnsldtnFSItemRole` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |  |  |
+| `CnsldtnFSItemRole` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemrole preserving type )` |  |  |
+| `CnsldtnFSItemRoleText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |  |  |
+| `CnsldtnFSItemRoleLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |  |  |
+| `_CnsldtnFSItemRole` | | ✓ | | | | |
 
 ## Associations
 

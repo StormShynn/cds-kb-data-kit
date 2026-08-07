@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialServicesBranch` | ✓ | | `_Source` | `FinancialServicesBranch` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialServicesBranch` | ✓ | | `_Source` | `FinancialServicesBranch` |  |  |
 
 ## Source Code
 

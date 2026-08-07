@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesSpcfcProductGroup3` | ✓ | |  | `AdditionalMaterialGroup3` |
-| `Language` | ✓ | |  |  |
-| `SalesSpcfcProductGroup3Name` |  | |  | `AdditionalMaterialGroup3Name` |
-| `_Language` | | ✓ | | |
-| `_SalesSpcfcProductGroup3` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesSpcfcProductGroup3` | ✓ | |  | `AdditionalMaterialGroup3` |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `SalesSpcfcProductGroup3Name` |  | |  | `AdditionalMaterialGroup3Name` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup3` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGEnergyMix` | ✓ | | `_Source` | `GHGEnergyMix` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGEnergyMix` | ✓ | | `_Source` | `GHGEnergyMix` |  |  |
 
 ## Source Code
 

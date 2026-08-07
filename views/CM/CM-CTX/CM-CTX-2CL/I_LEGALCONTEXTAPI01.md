@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMContextUUID` | ✓ | |  |  |
-| `LglCntntMContext` |  | |  |  |
-| `LglCntntMContextVersion` |  | |  |  |
-| `LglCntntMContextTitle` |  | |  |  |
-| `LglCntntMContextOwner` |  | |  |  |
-| `LglCntntMProfile` |  | |  |  |
-| `LglCntntMContextStatus` |  | |  |  |
-| `LglCntntMContextValidFromDate` |  | |  |  |
-| `LglCntntMContextValidToDate` |  | |  |  |
-| `LglCntntMCntxtLanguage` |  | |  |  |
-| `LglCntntMPrevCntxtVers` |  | |  |  |
-| `LglCntntMCntxtIsReadOnly` |  | |  |  |
-| `LglCntntMGovLaw` |  | |  |  |
-| `LglCntntMCntxtAccessLvl` |  | |  |  |
-| `LglCntntMMainOrgType` |  | |  |  |
-| `LglCntntMMainOrgCoCode` |  | |  |  |
-| `LglCntntMMainOrgSalesOrg` |  | |  |  |
-| `LglCntntMMainOrgPurOrg` |  | |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMContextUUID` | ✓ | |  |  |  |  |
+| `LglCntntMContext` |  | |  |  |  |  |
+| `LglCntntMContextVersion` |  | |  |  |  |  |
+| `LglCntntMContextTitle` |  | |  |  |  |  |
+| `LglCntntMContextOwner` |  | |  |  |  |  |
+| `LglCntntMProfile` |  | |  |  |  |  |
+| `LglCntntMContextStatus` |  | |  |  |  |  |
+| `LglCntntMContextValidFromDate` |  | |  |  |  |  |
+| `LglCntntMContextValidToDate` |  | |  |  |  |  |
+| `LglCntntMCntxtLanguage` |  | |  |  |  |  |
+| `LglCntntMPrevCntxtVers` |  | |  |  |  |  |
+| `LglCntntMCntxtIsReadOnly` |  | |  |  |  |  |
+| `LglCntntMGovLaw` |  | |  |  |  |  |
+| `LglCntntMCntxtAccessLvl` |  | |  |  |  |  |
+| `LglCntntMMainOrgType` |  | |  |  |  |  |
+| `LglCntntMMainOrgCoCode` |  | |  |  |  |  |
+| `LglCntntMMainOrgSalesOrg` |  | |  |  |  |  |
+| `LglCntntMMainOrgPurOrg` |  | |  |  |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |  |  |
 
 ## Associations
 

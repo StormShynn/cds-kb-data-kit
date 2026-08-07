@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` | ✓ | |  | `rldnr` |
-| `Language` | ✓ | |  | `langu` |
-| `LedgerName` |  | |  | `name` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` | ✓ | |  | `rldnr` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `LedgerName` |  | |  | `name` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

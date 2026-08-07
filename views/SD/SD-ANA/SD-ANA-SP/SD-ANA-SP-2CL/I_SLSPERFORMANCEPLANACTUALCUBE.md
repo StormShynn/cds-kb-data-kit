@@ -29,108 +29,108 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesPlanItemUUID` | ✓ | |  |  |
-| `SDDocument` | ✓ | |  |  |
-| `SDDocumentItem` | ✓ | |  |  |
-| `SalesDocumentType` |  | |  |  |
-| `BillingDocumentType` |  | |  |  |
-| `SDDocumentObject` |  | |  |  |
-| `SalesPlanPurpose` |  | |  |  |
-| `SalesPlanPeriodName` |  | |  |  |
-| `SalesPerformanceDate` |  | |  |  |
-| `SalesPerformanceYearMonth` |  | |  |  |
-| `SlsPerformanceYearQuarter` |  | |  |  |
-| `SalesPerformanceYear` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `Division` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `SalesEmployee` |  | |  | `cast( case when SalesEmployee is not null then SalesEmployee else '00000000' end as sales_empl )` |
-| `Plant` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `Country` |  | |  |  |
-| `BillToPartyCountry` |  | |  |  |
-| `Region` |  | |  |  |
-| `BillToPartyRegion` |  | |  |  |
-| `DisplayCurrency` |  | |  |  |
-| `SalesPlanAmountInDspCrcy` |  | |  |  |
-| `SalesPerfActlAmtInDspCurrency` |  | |  |  |
-| `SalesPlanQuantity` |  | |  |  |
-| `SalesPlanUnit` |  | |  | `cast(SalesPlanUnit as plan_unit)` |
-| `SalesPerfActualQtyInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  | `cast (BaseUnit as meins)` |
-| `SalesPerformanceActualQuantity` |  | |  |  |
-| `SalesPerfActualQuantityUnit` |  | |  |  |
-| `_SalesPlanPurpose` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_AdditionalMaterialGroup1` | | ✓ | | |
-| `_AdditionalMaterialGroup2` | | ✓ | | |
-| `_AdditionalMaterialGroup3` | | ✓ | | |
-| `_AdditionalMaterialGroup4` | | ✓ | | |
-| `_AdditionalMaterialGroup5` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_SalesEmployee_2` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_ShippingType` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_BillToPartyCountry` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_BillToPartyRegion` | | ✓ | | |
-| `_SalesPlanUnit` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_SalesUnit` | | ✓ | | |
-| `_SalesDocumentType` | | ✓ | | |
-| `_BillingDocumentType` | | ✓ | | |
-| `_DataSource` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesPlanItemUUID` | ✓ | |  |  |  |  |
+| `SDDocument` | ✓ | |  |  |  |  |
+| `SDDocumentItem` | ✓ | |  |  |  |  |
+| `SalesDocumentType` |  | |  |  |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `SDDocumentObject` |  | |  |  |  |  |
+| `SalesPlanPurpose` |  | |  |  |  |  |
+| `SalesPlanPeriodName` |  | |  |  |  |  |
+| `SalesPerformanceDate` |  | |  |  |  |  |
+| `SalesPerformanceYearMonth` |  | |  |  |  |  |
+| `SlsPerformanceYearQuarter` |  | |  |  |  |  |
+| `SalesPerformanceYear` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `SalesEmployee` |  | |  | `cast( case when SalesEmployee is not null then SalesEmployee else '00000000' end as sales_empl )` |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `BillToPartyCountry` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `BillToPartyRegion` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  |  |  |  |
+| `SalesPlanAmountInDspCrcy` |  | |  |  |  |  |
+| `SalesPerfActlAmtInDspCurrency` |  | |  |  |  |  |
+| `SalesPlanQuantity` |  | |  |  |  |  |
+| `SalesPlanUnit` |  | |  | `cast(SalesPlanUnit as plan_unit)` |  |  |
+| `SalesPerfActualQtyInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  | `cast (BaseUnit as meins)` |  |  |
+| `SalesPerformanceActualQuantity` |  | |  |  |  |  |
+| `SalesPerfActualQuantityUnit` |  | |  |  |  |  |
+| `_SalesPlanPurpose` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_SalesEmployee_2` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ShippingType` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_BillToPartyCountry` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_BillToPartyRegion` | | ✓ | | | | |
+| `_SalesPlanUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_SalesUnit` | | ✓ | | | | |
+| `_SalesDocumentType` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_DataSource` | | ✓ | | | | |
 
 ## Associations
 

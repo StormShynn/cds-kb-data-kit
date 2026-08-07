@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChrgExchangeRateUUID` | ✓ | |  |  |
-| `TranspChargeItemElementUUID` |  | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `SourceCurrency` |  | |  |  |
-| `TargetCurrency` |  | |  |  |
-| `TranspChrgExchangeRate` |  | |  |  |
-| `TranspChrgExchangeRateType` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `TranspExchRateDateIsMnllyChgd` |  | |  |  |
-| `TranspExchRateIsManuallyChgd` |  | |  |  |
-| `I_FrtBkgChrgElementTP` |  | |  | `_TranspOrdChrgElmnt as _FreightBookingChrgElmnt : redirected to parent I_FrtBkgChrgElementTP` |
-| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChrgExchangeRateUUID` | ✓ | |  |  |  |  |
+| `TranspChargeItemElementUUID` |  | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `SourceCurrency` |  | |  |  |  |  |
+| `TargetCurrency` |  | |  |  |  |  |
+| `TranspChrgExchangeRate` |  | |  |  |  |  |
+| `TranspChrgExchangeRateType` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `TranspExchRateDateIsMnllyChgd` |  | |  |  |  |  |
+| `TranspExchRateIsManuallyChgd` |  | |  |  |  |  |
+| `I_FrtBkgChrgElementTP` |  | |  | `_TranspOrdChrgElmnt as _FreightBookingChrgElmnt : redirected to parent I_FrtBkgChrgElementTP` |  |  |
+| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |  |  |
 
 ## Source Code
 

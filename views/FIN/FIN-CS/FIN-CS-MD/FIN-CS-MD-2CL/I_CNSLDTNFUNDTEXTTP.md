@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `FinancialManagementArea` | ✓ | | `_Text` | `FinancialManagementArea` |
-| `Fund` | ✓ | | `_Text` | `Fund` |
-| `FundName` |  | | `_Text` | `FundName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFundTP` |  | |  | `_Fund as _Fund : redirected to parent I_CnsldtnFundTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `FinancialManagementArea` | ✓ | | `_Text` | `FinancialManagementArea` |  |  |
+| `Fund` | ✓ | | `_Text` | `Fund` |  |  |
+| `FundName` |  | | `_Text` | `FundName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFundTP` |  | |  | `_Fund as _Fund : redirected to parent I_CnsldtnFundTP` |  |  |
 
 ## Source Code
 

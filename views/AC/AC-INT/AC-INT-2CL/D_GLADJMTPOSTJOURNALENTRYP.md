@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` |  | |  | `bukrs` |
-| `LedgerGroup` |  | |  | `fagl_ldgrp` |
-| `AccountingDocumentType` |  | |  | `blart` |
-| `BusinessTransactionType` |  | |  | `fins_custbttype` |
-| `DocumentDate` |  | |  | `bldat` |
-| `PostingDate` |  | |  | `budat` |
-| `PostingFiscalPeriod` |  | |  | `monat` |
-| `DocumentReferenceID` |  | |  | `xblnr` |
-| `AccountingDocumentHeaderText` |  | |  | `bktxt` |
-| `CreatedByUser` |  | |  | `usnam` |
-| `Reference1InDocumentHeader` |  | |  | `xref1_hd` |
-| `Reference2InDocumentHeader` |  | |  | `xref2_hd` |
-| `D_GLAdjmtItemPostJournalEntryP` |  | |  | `_GLItems : composition [0..*] of D_GLAdjmtItemPostJournalEntryP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `LedgerGroup` |  | |  | `fagl_ldgrp` |  |  |
+| `AccountingDocumentType` |  | |  | `blart` |  |  |
+| `BusinessTransactionType` |  | |  | `fins_custbttype` |  |  |
+| `DocumentDate` |  | |  | `bldat` |  |  |
+| `PostingDate` |  | |  | `budat` |  |  |
+| `PostingFiscalPeriod` |  | |  | `monat` |  |  |
+| `DocumentReferenceID` |  | |  | `xblnr` |  |  |
+| `AccountingDocumentHeaderText` |  | |  | `bktxt` |  |  |
+| `CreatedByUser` |  | |  | `usnam` |  |  |
+| `Reference1InDocumentHeader` |  | |  | `xref1_hd` |  |  |
+| `Reference2InDocumentHeader` |  | |  | `xref2_hd` |  |  |
+| `D_GLAdjmtItemPostJournalEntryP` |  | |  | `_GLItems : composition [0..*] of D_GLAdjmtItemPostJournalEntryP` |  |  |
 
 ## Source Code
 

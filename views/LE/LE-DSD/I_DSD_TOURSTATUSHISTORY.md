@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DSD_TourIdentification` | ✓ | | `_History` | `tourid` |
-| `TourStatusSequentialNumber` | ✓ | | `_History` | `counter` |
-| `TourStatusIdentification` |  | | `_History` | `status_id` |
-| `CreatedAtDate` |  | | `_History` | `idate` |
-| `TimeOfCreation` |  | | `_History` | `itime` |
-| `TourStatusHasBeenCancelled` |  | | `_History` | `canceled` |
-| `TourStatusHasBeenSetManually` |  | | `_History` | `man_exec` |
-| `TourScenario` |  | | `_TourStatus` | `scenario` |
-| `_Status` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DSD_TourIdentification` | ✓ | | `_History` | `tourid` |  |  |
+| `TourStatusSequentialNumber` | ✓ | | `_History` | `counter` |  |  |
+| `TourStatusIdentification` |  | | `_History` | `status_id` |  |  |
+| `CreatedAtDate` |  | | `_History` | `idate` |  |  |
+| `TimeOfCreation` |  | | `_History` | `itime` |  |  |
+| `TourStatusHasBeenCancelled` |  | | `_History` | `canceled` |  |  |
+| `TourStatusHasBeenSetManually` |  | | `_History` | `man_exec` |  |  |
+| `TourScenario` |  | | `_TourStatus` | `scenario` |  |  |
+| `_Status` | | ✓ | | | | |
 
 ## Associations
 

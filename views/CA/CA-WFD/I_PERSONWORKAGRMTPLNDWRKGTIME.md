@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  | `cast(workforce_assgmt_id as persno preserving type)` |
-| `StartDate` | ✓ | |  | `cast(start_date as begda preserving type)` |
-| `EndDate` | ✓ | |  | `cast(end_date as endda preserving type)` |
-| `WorkingTimePercentage` |  | |  | `cast(employment_percent as empct preserving type)` |
-| `WeeklyWorkingHours` |  | |  | `cast(weekly_working_hours as wostd preserving type)` |
-| `WeeklyWorkdays` |  | |  | `cast(weekly_working_days as warst preserving type)` |
-| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast('' as vdsk1)` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonWorkAgreement` | ✓ | |  | `cast(workforce_assgmt_id as persno preserving type)` |  |  |
+| `StartDate` | ✓ | |  | `cast(start_date as begda preserving type)` |  |  |
+| `EndDate` | ✓ | |  | `cast(end_date as endda preserving type)` |  |  |
+| `WorkingTimePercentage` |  | |  | `cast(employment_percent as empct preserving type)` |  |  |
+| `WeeklyWorkingHours` |  | |  | `cast(weekly_working_hours as wostd preserving type)` |  |  |
+| `WeeklyWorkdays` |  | |  | `cast(weekly_working_days as warst preserving type)` |  |  |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast('' as vdsk1)` |  |  |
 
 ## Source Code
 

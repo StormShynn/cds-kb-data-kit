@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DocumentBillingStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbee_bdrstatus preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PrjBlgElmEntrDocBillgStsText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_PrjBlgElmEntrDocBillgStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DocumentBillingStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbee_bdrstatus preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PrjBlgElmEntrDocBillgStsText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PrjBlgElmEntrDocBillgStatus` | | ✓ | | | | |
 
 ## Associations
 

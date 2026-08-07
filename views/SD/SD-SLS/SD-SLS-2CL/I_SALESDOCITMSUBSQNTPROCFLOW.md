@@ -27,28 +27,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocument` | ✓ | |  | `PrecedingDocument` |
-| `SalesDocumentItem` | ✓ | |  | `PrecedingDocumentItem` |
-| `DocRelationshipUUID` | ✓ | |  | `case when SubsequentProcFlowItem.SubsequentDocumentCategory = 'N' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'M' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'N' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'PBD' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'M' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'PBD' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'P' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'PBD' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'O' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'PBD' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'S' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'O' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'N' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'P' or SubsequentProcFlowItem.SubsequentDocumentCategory = '6' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = '5' then _SDDocMultiLevelProcFlow.DocRelationshipUUID else SubsequentProcFlowItem.DocRelationshipUUID end` |
-| `SDDocumentCategory` |  | |  | `PrecedingDocumentCategory` |
-| `SubsequentDocument` |  | |  |  |
-| `SubsequentDocumentItem` |  | |  |  |
-| `SubsequentDocumentCategory` |  | |  |  |
-| `ProcessFlowLevel` |  | |  |  |
-| `SubsqntDocItmPrecdgDocument` |  | | `_SDDocMultiLevelProcFlow` | `PrecedingDocument` |
-| `SubsqntDocItmPrecdgDocItem` |  | | `_SDDocMultiLevelProcFlow` | `PrecedingDocumentItem` |
-| `SubsqntDocItmPrecdgDocCategory` |  | | `_SDDocMultiLevelProcFlow` | `PrecedingDocumentCategory` |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `SalesDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `PrecedingDocument` |  |  |
+| `SalesDocumentItem` | ✓ | |  | `PrecedingDocumentItem` |  |  |
+| `DocRelationshipUUID` | ✓ | |  | `case when SubsequentProcFlowItem.SubsequentDocumentCategory = 'N' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'M' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'N' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'PBD' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'M' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'PBD' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'P' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'PBD' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'O' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'PBD' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'S' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'O' or SubsequentProcFlowItem.SubsequentDocumentCategory = 'N' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = 'P' or SubsequentProcFlowItem.SubsequentDocumentCategory = '6' and _SDDocMultiLevelProcFlow.PrecedingDocumentCategory = '5' then _SDDocMultiLevelProcFlow.DocRelationshipUUID else SubsequentProcFlowItem.DocRelationshipUUID end` |  |  |
+| `SDDocumentCategory` |  | |  | `PrecedingDocumentCategory` |  |  |
+| `SubsequentDocument` |  | |  |  |  |  |
+| `SubsequentDocumentItem` |  | |  |  |  |  |
+| `SubsequentDocumentCategory` |  | |  |  |  |  |
+| `ProcessFlowLevel` |  | |  |  |  |  |
+| `SubsqntDocItmPrecdgDocument` |  | | `_SDDocMultiLevelProcFlow` | `PrecedingDocument` |  |  |
+| `SubsqntDocItmPrecdgDocItem` |  | | `_SDDocMultiLevelProcFlow` | `PrecedingDocumentItem` |  |  |
+| `SubsqntDocItmPrecdgDocCategory` |  | | `_SDDocMultiLevelProcFlow` | `PrecedingDocumentCategory` |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `SalesDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
 
 ## Associations
 

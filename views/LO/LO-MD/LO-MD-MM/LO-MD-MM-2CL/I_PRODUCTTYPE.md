@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductType` | ✓ | |  | `cast(t134.mtart as producttype preserving type )` |
-| `ProductTypeCode` |  | |  | `prod_type_code` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `MaintenanceStatus` |  | |  | `pstat` |
-| `ReferenceProductType` |  | |  | `mtref` |
-| `AcctCategoryRef` |  | |  | `kkref` |
-| `_Text` | | ✓ | | |
-| `_ProductTypeCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` | ✓ | |  | `cast(t134.mtart as producttype preserving type )` |  |  |
+| `ProductTypeCode` |  | |  | `prod_type_code` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `MaintenanceStatus` |  | |  | `pstat` |  |  |
+| `ReferenceProductType` |  | |  | `mtref` |  |  |
+| `AcctCategoryRef` |  | |  | `kkref` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ProductTypeCode` | | ✓ | | | | |
 
 ## Associations
 

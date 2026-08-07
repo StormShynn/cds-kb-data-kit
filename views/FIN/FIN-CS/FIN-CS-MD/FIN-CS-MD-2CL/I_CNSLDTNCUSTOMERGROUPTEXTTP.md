@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `CustomerGroup` | ✓ | | `_Text` | `CustomerGroup` |
-| `CustomerGroupName` |  | | `_Text` | `CustomerGroupName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnCustomerGroupTP` |  | |  | `_CustomerGroup as _CustomerGroup : redirected to parent I_CnsldtnCustomerGroupTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `CustomerGroup` | ✓ | | `_Text` | `CustomerGroup` |  |  |
+| `CustomerGroupName` |  | | `_Text` | `CustomerGroupName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnCustomerGroupTP` |  | |  | `_CustomerGroup as _CustomerGroup : redirected to parent I_CnsldtnCustomerGroupTP` |  |  |
 
 ## Source Code
 

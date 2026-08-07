@@ -28,133 +28,133 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `FinancialTransaction` | ✓ | |  | `rfha` |
-| `TreasuryFinancialObject` |  | |  | `objnr` |
-| `CreatedByUser` |  | |  | `cruser` |
-| `FinTransCreationDate` |  | |  | `cast( FinancialTransactionTable.dcrdat as ftr_creation_date preserving type )` |
-| `FinTransCreationTime` |  | |  | `tcrtim` |
-| `LastChangedByUser` |  | |  | `cast(FinancialTransactionTable.upuser as vdm_lastchangedbyuserid preserving type)` |
-| `LastChangeDate` |  | |  | `dupdat` |
-| `FinInstrumentLastChangedTime` |  | |  | `tuptim` |
-| `TreasuryContractType` |  | |  | `rantyp` |
-| `FinancialInstrProductCategory` |  | |  | `cast(FinancialTransactionTable.sanlf as ftr_gen_fin_instr_prod_categ preserving type)` |
-| `FinancialInstrumentProductType` |  | |  | `sgsart` |
-| `FinInstrTransactionCategory` |  | |  | `sfgtyp` |
-| `FinancialInstrTransactionType` |  | |  | `cast(FinancialTransactionTable.sfhaart as ftr_gen_transaction_type preserving type)` |
-| `FinTransProcessingCategory` |  | |  | `abwtyp` |
-| `TermStartDate` |  | |  | `dblfz` |
-| `TermStartDateIsInclusive` |  | |  | `cast(FinancialTransactionTable.sinclbe as abap_boolean preserving type )` |
-| `FinTransNoticePeriod` |  | |  | `akuend` |
-| `FinTransNoticePeriodUnit` |  | |  | `skuend` |
-| `FinTransFactoryCalendar1` |  | |  | `skalid` |
-| `FinTransFactoryCalendar2` |  | |  | `skalid2` |
-| `Counterparty` |  | |  | `cast(FinancialTransactionTable.kontrh as rkontrah_new preserving type)` |
-| `FinancialInstrumentGuarantor` |  | |  | `rgarant` |
-| `Portfolio` |  | |  | `rportb` |
-| `TreasuryFinanceProject` |  | |  | `zuonr` |
-| `FinancialInstrumentAssignment` |  | |  | `cast(FinancialTransactionTable.zuond as ftr_gen_fin_instr_assignment preserving type)` |
-| `FinancialInstrumentReference` |  | |  | `cast(FinancialTransactionTable.refer as ftr_gen_fin_instr_internal_ref preserving type)` |
-| `FinancialInstrCharacteristic` |  | |  | `cast(FinancialTransactionTable.merkm as ftr_gen_fin_instr_char preserving type)` |
-| `TreasuryValuationClass` |  | |  | `rcomvalcl` |
-| `BusinessArea` |  | |  | `rbusa` |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
-| `CostCenter` |  | |  | `rcntr` |
-| `HedgingClassification` |  | |  | `hedge_class` |
-| `HedgeRequestIdentifier` |  | |  | `cast( FinancialTransactionTable.hedge_request_id as hedge_request_identifier preserving type )` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `WBSElementInternalID` |  | |  | `cast(FinancialTransactionTable.ps_posid as ps_s4_pspnr preserving type )` |
-| `TreasuryFacilityCompanyCode` |  | |  | `facilitybukrs` |
-| `TreasuryFacility` |  | |  | `facilitynr` |
-| `FinancialInstrumentStatus` |  | |  | `saktiv` |
-| `FinTransReleaseStatus` |  | |  | `sfrgzust` |
-| `TransactionCurrency` |  | |  | `wgschft` |
-| `FinInstrumentOutgoingCurrency` |  | |  | `wgschft1` |
-| `FinInstrumentIncomingCurrency` |  | |  | `wgschft2` |
-| `TradedCurrency` |  | |  | `traded_currency` |
-| `SecurityClass` |  | |  | `cast(FinancialTransactionTable.ranl as ftr_gen_security_class preserving type)` |
-| `SecurityClassIntlScrtyIdnNmbr` |  | |  | `isin` |
-| `ClassificationOfFinInstr` |  | |  | `cfi_code` |
-| `SecurityAccount` |  | |  | `cast(FinancialTransactionTable.rldepo as ftr_gen_security_account preserving type)` |
-| `FuturesAccount` |  | |  | `posacc` |
-| `FinTransCentralClearingOption` |  | |  | `clearing_option` |
-| `FinTransCentralClearingStatus` |  | |  | `clearing_status` |
-| `FinTransCentralClearingDate` |  | |  | `clearing_date` |
-| `FinTransCntrlClrgActualDate` |  | |  | `clear_date_act` |
-| `CentralClearingAccount` |  | |  | `ext_account` |
-| `FinTransIsRiskMitigating` |  | |  | `risk_mitigating` |
-| `FinInstrLastActiveActivity` |  | |  | `cast(FinancialTransactionTable.rfhazul as ftr_gen_fin_instr_last_act_act preserving type)` |
-| `TermEndDate` |  | |  | `delfz` |
-| `TrsyTradedAmountBuySellCode` |  | |  | `case FinancialTransactionTable.amtinput when '1' then cast ('S' as ttm_fx_buy_sell) when '2' then cast ('B' as ttm_fx_buy_sell) end` |
-| `Segment` |  | |  | `fb_segment` |
-| `OnBehalfOfCompany` |  | |  | `behalf_of_company` |
-| `MarketIdentifierCode` |  | |  | `mic` |
-| `FinTransRoundingCategory` |  | |  | `srndng` |
-| `FinTransGeneralValuationClass` |  | |  | `rcomvalcl` |
-| `Fund` |  | |  | `fund` |
-| `GrantID` |  | |  | `grant_nbr` |
-| `FinTransAuthorizationGroup` |  | |  | `tbegru` |
-| `BusinessPlace` |  | |  | `bupla` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `TrsyPosCustomDiffntnTerm1` |  | |  | `custom_diff_term_1` |
-| `TrsyPosCustomDiffntnTerm2` |  | |  | `custom_diff_term_2` |
-| `TrsyPosCustomDiffntnTerm3` |  | |  | `custom_diff_term_3` |
-| `TrsyPosCustomDiffntnTerm4` |  | |  | `custom_diff_term_4` |
-| `TrsyPosCustomDiffntnTerm5` |  | |  | `custom_diff_term_5` |
-| `UniqueProductIdentifier` |  | |  | `upi` |
-| `InternationalSecuritiesIdnNmbr` |  | |  | `isin` |
-| `ReportTrackingNumber` |  | |  | `rtn` |
-| `FinTransOptionNumber` |  | |  | `rgatt` |
-| `_CompanyCode` | | ✓ | | |
-| `_ContractType` | | ✓ | | |
-| `_FinancialInstrProdCat` | | ✓ | | |
-| `_FinancialInstrProdType` | | ✓ | | |
-| `_FinInstrTransCat` | | ✓ | | |
-| `_FinancialInstrTransType` | | ✓ | | |
-| `_ProcessingCategory` | | ✓ | | |
-| `_NoticePeriodUnit` | | ✓ | | |
-| `_Calendar` | | ✓ | | |
-| `_Calendar2` | | ✓ | | |
-| `_Counterparty` | | ✓ | | |
-| `_Guarantor` | | ✓ | | |
-| `_Portfolio` | | ✓ | | |
-| `_Assignment` | | ✓ | | |
-| `_Reference` | | ✓ | | |
-| `_Characteristics` | | ✓ | | |
-| `_ValuationClass` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CostCenter_2` | | ✓ | | |
-| `_TreasuryHedgingClassfctn` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_ProfitCenter_2` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_FacilityCompanyCode` | | ✓ | | |
-| `_Status` | | ✓ | | |
-| `_ReleaseStatus` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_OutgoingCurrency` | | ✓ | | |
-| `_IncomingCurrency` | | ✓ | | |
-| `_TradedCurrency` | | ✓ | | |
-| `_SecurityClass` | | ✓ | | |
-| `_SecurityAccount` | | ✓ | | |
-| `_FuturesAccount` | | ✓ | | |
-| `_CentralClearingOption` | | ✓ | | |
-| `_CentralClearingStatus` | | ✓ | | |
-| `_CentralClearingAccount` | | ✓ | | |
-| `_ContractActivity` | | ✓ | | |
-| `_CurrentActivity` | | ✓ | | |
-| `_Security` | | ✓ | | |
-| `_Interest` | | ✓ | | |
-| `_Nominal` | | ✓ | | |
-| `_TabActivity` | | ✓ | | |
-| `_TabFlow` | | ✓ | | |
-| `_TabCondition` | | ✓ | | |
-| `_LetterOfCredit` | | ✓ | | |
-| `_ReferenceItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `FinancialTransaction` | ✓ | |  | `rfha` |  |  |
+| `TreasuryFinancialObject` |  | |  | `objnr` |  |  |
+| `CreatedByUser` |  | |  | `cruser` |  |  |
+| `FinTransCreationDate` |  | |  | `cast( FinancialTransactionTable.dcrdat as ftr_creation_date preserving type )` |  |  |
+| `FinTransCreationTime` |  | |  | `tcrtim` |  |  |
+| `LastChangedByUser` |  | |  | `cast(FinancialTransactionTable.upuser as vdm_lastchangedbyuserid preserving type)` |  |  |
+| `LastChangeDate` |  | |  | `dupdat` |  |  |
+| `FinInstrumentLastChangedTime` |  | |  | `tuptim` |  |  |
+| `TreasuryContractType` |  | |  | `rantyp` |  |  |
+| `FinancialInstrProductCategory` |  | |  | `cast(FinancialTransactionTable.sanlf as ftr_gen_fin_instr_prod_categ preserving type)` |  |  |
+| `FinancialInstrumentProductType` |  | |  | `sgsart` |  |  |
+| `FinInstrTransactionCategory` |  | |  | `sfgtyp` |  |  |
+| `FinancialInstrTransactionType` |  | |  | `cast(FinancialTransactionTable.sfhaart as ftr_gen_transaction_type preserving type)` |  |  |
+| `FinTransProcessingCategory` |  | |  | `abwtyp` |  |  |
+| `TermStartDate` |  | |  | `dblfz` |  |  |
+| `TermStartDateIsInclusive` |  | |  | `cast(FinancialTransactionTable.sinclbe as abap_boolean preserving type )` |  |  |
+| `FinTransNoticePeriod` |  | |  | `akuend` |  |  |
+| `FinTransNoticePeriodUnit` |  | |  | `skuend` |  |  |
+| `FinTransFactoryCalendar1` |  | |  | `skalid` |  |  |
+| `FinTransFactoryCalendar2` |  | |  | `skalid2` |  |  |
+| `Counterparty` |  | |  | `cast(FinancialTransactionTable.kontrh as rkontrah_new preserving type)` |  |  |
+| `FinancialInstrumentGuarantor` |  | |  | `rgarant` |  |  |
+| `Portfolio` |  | |  | `rportb` |  |  |
+| `TreasuryFinanceProject` |  | |  | `zuonr` |  |  |
+| `FinancialInstrumentAssignment` |  | |  | `cast(FinancialTransactionTable.zuond as ftr_gen_fin_instr_assignment preserving type)` |  |  |
+| `FinancialInstrumentReference` |  | |  | `cast(FinancialTransactionTable.refer as ftr_gen_fin_instr_internal_ref preserving type)` |  |  |
+| `FinancialInstrCharacteristic` |  | |  | `cast(FinancialTransactionTable.merkm as ftr_gen_fin_instr_char preserving type)` |  |  |
+| `TreasuryValuationClass` |  | |  | `rcomvalcl` |  |  |
+| `BusinessArea` |  | |  | `rbusa` |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `CostCenter` |  | |  | `rcntr` |  |  |
+| `HedgingClassification` |  | |  | `hedge_class` |  |  |
+| `HedgeRequestIdentifier` |  | |  | `cast( FinancialTransactionTable.hedge_request_id as hedge_request_identifier preserving type )` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `WBSElementInternalID` |  | |  | `cast(FinancialTransactionTable.ps_posid as ps_s4_pspnr preserving type )` |  |  |
+| `TreasuryFacilityCompanyCode` |  | |  | `facilitybukrs` |  |  |
+| `TreasuryFacility` |  | |  | `facilitynr` |  |  |
+| `FinancialInstrumentStatus` |  | |  | `saktiv` |  |  |
+| `FinTransReleaseStatus` |  | |  | `sfrgzust` |  |  |
+| `TransactionCurrency` |  | |  | `wgschft` |  |  |
+| `FinInstrumentOutgoingCurrency` |  | |  | `wgschft1` |  |  |
+| `FinInstrumentIncomingCurrency` |  | |  | `wgschft2` |  |  |
+| `TradedCurrency` |  | |  | `traded_currency` |  |  |
+| `SecurityClass` |  | |  | `cast(FinancialTransactionTable.ranl as ftr_gen_security_class preserving type)` |  |  |
+| `SecurityClassIntlScrtyIdnNmbr` |  | |  | `isin` |  |  |
+| `ClassificationOfFinInstr` |  | |  | `cfi_code` |  |  |
+| `SecurityAccount` |  | |  | `cast(FinancialTransactionTable.rldepo as ftr_gen_security_account preserving type)` |  |  |
+| `FuturesAccount` |  | |  | `posacc` |  |  |
+| `FinTransCentralClearingOption` |  | |  | `clearing_option` |  |  |
+| `FinTransCentralClearingStatus` |  | |  | `clearing_status` |  |  |
+| `FinTransCentralClearingDate` |  | |  | `clearing_date` |  |  |
+| `FinTransCntrlClrgActualDate` |  | |  | `clear_date_act` |  |  |
+| `CentralClearingAccount` |  | |  | `ext_account` |  |  |
+| `FinTransIsRiskMitigating` |  | |  | `risk_mitigating` |  |  |
+| `FinInstrLastActiveActivity` |  | |  | `cast(FinancialTransactionTable.rfhazul as ftr_gen_fin_instr_last_act_act preserving type)` |  |  |
+| `TermEndDate` |  | |  | `delfz` |  |  |
+| `TrsyTradedAmountBuySellCode` |  | |  | `case FinancialTransactionTable.amtinput when '1' then cast ('S' as ttm_fx_buy_sell) when '2' then cast ('B' as ttm_fx_buy_sell) end` |  |  |
+| `Segment` |  | |  | `fb_segment` |  |  |
+| `OnBehalfOfCompany` |  | |  | `behalf_of_company` |  |  |
+| `MarketIdentifierCode` |  | |  | `mic` |  |  |
+| `FinTransRoundingCategory` |  | |  | `srndng` |  |  |
+| `FinTransGeneralValuationClass` |  | |  | `rcomvalcl` |  |  |
+| `Fund` |  | |  | `fund` |  |  |
+| `GrantID` |  | |  | `grant_nbr` |  |  |
+| `FinTransAuthorizationGroup` |  | |  | `tbegru` |  |  |
+| `BusinessPlace` |  | |  | `bupla` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `TrsyPosCustomDiffntnTerm1` |  | |  | `custom_diff_term_1` |  |  |
+| `TrsyPosCustomDiffntnTerm2` |  | |  | `custom_diff_term_2` |  |  |
+| `TrsyPosCustomDiffntnTerm3` |  | |  | `custom_diff_term_3` |  |  |
+| `TrsyPosCustomDiffntnTerm4` |  | |  | `custom_diff_term_4` |  |  |
+| `TrsyPosCustomDiffntnTerm5` |  | |  | `custom_diff_term_5` |  |  |
+| `UniqueProductIdentifier` |  | |  | `upi` |  |  |
+| `InternationalSecuritiesIdnNmbr` |  | |  | `isin` |  |  |
+| `ReportTrackingNumber` |  | |  | `rtn` |  |  |
+| `FinTransOptionNumber` |  | |  | `rgatt` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ContractType` | | ✓ | | | | |
+| `_FinancialInstrProdCat` | | ✓ | | | | |
+| `_FinancialInstrProdType` | | ✓ | | | | |
+| `_FinInstrTransCat` | | ✓ | | | | |
+| `_FinancialInstrTransType` | | ✓ | | | | |
+| `_ProcessingCategory` | | ✓ | | | | |
+| `_NoticePeriodUnit` | | ✓ | | | | |
+| `_Calendar` | | ✓ | | | | |
+| `_Calendar2` | | ✓ | | | | |
+| `_Counterparty` | | ✓ | | | | |
+| `_Guarantor` | | ✓ | | | | |
+| `_Portfolio` | | ✓ | | | | |
+| `_Assignment` | | ✓ | | | | |
+| `_Reference` | | ✓ | | | | |
+| `_Characteristics` | | ✓ | | | | |
+| `_ValuationClass` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CostCenter_2` | | ✓ | | | | |
+| `_TreasuryHedgingClassfctn` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_ProfitCenter_2` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_FacilityCompanyCode` | | ✓ | | | | |
+| `_Status` | | ✓ | | | | |
+| `_ReleaseStatus` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_OutgoingCurrency` | | ✓ | | | | |
+| `_IncomingCurrency` | | ✓ | | | | |
+| `_TradedCurrency` | | ✓ | | | | |
+| `_SecurityClass` | | ✓ | | | | |
+| `_SecurityAccount` | | ✓ | | | | |
+| `_FuturesAccount` | | ✓ | | | | |
+| `_CentralClearingOption` | | ✓ | | | | |
+| `_CentralClearingStatus` | | ✓ | | | | |
+| `_CentralClearingAccount` | | ✓ | | | | |
+| `_ContractActivity` | | ✓ | | | | |
+| `_CurrentActivity` | | ✓ | | | | |
+| `_Security` | | ✓ | | | | |
+| `_Interest` | | ✓ | | | | |
+| `_Nominal` | | ✓ | | | | |
+| `_TabActivity` | | ✓ | | | | |
+| `_TabFlow` | | ✓ | | | | |
+| `_TabCondition` | | ✓ | | | | |
+| `_LetterOfCredit` | | ✓ | | | | |
+| `_ReferenceItem` | | ✓ | | | | |
 
 ## Associations
 

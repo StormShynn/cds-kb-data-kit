@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClassType` | ✓ | |  | `klart` |
-| `ClassStatus` | ✓ | |  | `status` |
-| `ClassificationIsAllowed` |  | |  | `cast ( ClassStatus.klfkz as classificationisallowed preserving type )` |
-| `_ClassType` | | ✓ | | |
-| `_ClassStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassType` | ✓ | |  | `klart` |  |  |
+| `ClassStatus` | ✓ | |  | `status` |  |  |
+| `ClassificationIsAllowed` |  | |  | `cast ( ClassStatus.klfkz as classificationisallowed preserving type )` |  |  |
+| `_ClassType` | | ✓ | | | | |
+| `_ClassStatusText` | | ✓ | | | | |
 
 ## Associations
 

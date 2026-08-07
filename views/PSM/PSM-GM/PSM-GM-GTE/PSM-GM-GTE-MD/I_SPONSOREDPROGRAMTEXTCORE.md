@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SponsoredProgram` | ✓ | |  | `sponsored_prog` |
-| `Language` | ✓ | |  | `language` |
-| `SponsoredProgramDescription` |  | |  | `description` |
-| `SponsoredProgramName` |  | |  | `sponsoredprogramname` |
-| `_SponsoredProgram` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredProgram` | ✓ | |  | `sponsored_prog` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `SponsoredProgramDescription` |  | |  | `description` |  |  |
+| `SponsoredProgramName` |  | |  | `sponsoredprogramname` |  |  |
+| `_SponsoredProgram` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FiscalYear` | ✓ | |  |  |
-| `ConsolidationDocumentNumber` | ✓ | |  |  |
-| `ConsolidationVersion` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `ConsolidationChartOfAccounts` |  | |  |  |
-| `PostingLevel` |  | |  |  |
-| `ConsolidationDocumentType` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `ConsolidationUnit` |  | |  |  |
-| `ConsolidationGroup` |  | |  |  |
-| `ConsolidationUnit1` |  | |  |  |
-| `ConsolidationUnit2` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `ReversedDocument` |  | |  |  |
-| `ReverseDocument` |  | |  |  |
-| `ConsolidationDocReversalYear` |  | |  |  |
-| `IsReversalDocument` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `ConsolidationDocumentNumber` | ✓ | |  |  |  |  |
+| `ConsolidationVersion` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |  |  |
+| `PostingLevel` |  | |  |  |  |  |
+| `ConsolidationDocumentType` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `ConsolidationUnit` |  | |  |  |  |  |
+| `ConsolidationGroup` |  | |  |  |  |  |
+| `ConsolidationUnit1` |  | |  |  |  |  |
+| `ConsolidationUnit2` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `ReversedDocument` |  | |  |  |  |  |
+| `ReverseDocument` |  | |  |  |  |  |
+| `ConsolidationDocReversalYear` |  | |  |  |  |  |
+| `IsReversalDocument` |  | |  |  |  |  |
 
 ## Source Code
 

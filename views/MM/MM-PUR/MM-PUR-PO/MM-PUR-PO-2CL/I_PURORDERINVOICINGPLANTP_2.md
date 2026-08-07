@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `InvoicingPlan` | ✓ | |  |  |
-| `InvoicingPlanType` |  | |  |  |
-| `InvoicingPlanStartDate` |  | |  |  |
-| `InvoicingPlanEndDate` |  | |  |  |
-| `InvoicingPlanNextInvcDateRule` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchaseOrderType` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `Plant` |  | |  |  |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_POInvoicingPlanItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `InvoicingPlan` | ✓ | |  |  |  |  |
+| `InvoicingPlanType` |  | |  |  |  |  |
+| `InvoicingPlanStartDate` |  | |  |  |  |  |
+| `InvoicingPlanEndDate` |  | |  |  |  |  |
+| `InvoicingPlanNextInvcDateRule` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchaseOrderType` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_POInvoicingPlanItem` | | ✓ | | | | |
 
 ## Source Code
 

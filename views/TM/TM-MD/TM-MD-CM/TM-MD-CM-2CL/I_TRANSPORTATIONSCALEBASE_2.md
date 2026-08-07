@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationScaleBase` | ✓ | |  | `scalebase` |
-| `TransportationFieldAssignment` |  | |  | `cast(ass_field as /scmtms/vdm_sc_base_fld_assgmt preserving type)` |
-| `TranspScaleBaseHasUoM` |  | |  | `cast(unit_check as /scmtms/vdm_sc_base_uom_rlvt preserving type)` |
-| `TranspScaleBaseDimension` |  | |  | `cast(dimid as /scmtms/vdm_sc_base_dimension preserving type)` |
-| `TranspScaleBaseIsNumeric` |  | |  | `cast(all_numc_flag as /scmtms/vdm_sc_base_is_numeric preserving type)` |
-| `TranspScaleBaseIsAmount` |  | |  | `cast(is_cur as /scmtms/vdm_sc_base_is_amount preserving type)` |
-| `TranspScaleBaseIsRawValue` |  | |  | `cast(is_raw as /scmtms/vdm_sc_base_is_raw_val preserving type)` |
-| `TranspScaleBaseIsDate` |  | |  | `cast(is_date as /scmtms/vdm_sc_base_is_date preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationScaleBase` | ✓ | |  | `scalebase` |  |  |
+| `TransportationFieldAssignment` |  | |  | `cast(ass_field as /scmtms/vdm_sc_base_fld_assgmt preserving type)` |  |  |
+| `TranspScaleBaseHasUoM` |  | |  | `cast(unit_check as /scmtms/vdm_sc_base_uom_rlvt preserving type)` |  |  |
+| `TranspScaleBaseDimension` |  | |  | `cast(dimid as /scmtms/vdm_sc_base_dimension preserving type)` |  |  |
+| `TranspScaleBaseIsNumeric` |  | |  | `cast(all_numc_flag as /scmtms/vdm_sc_base_is_numeric preserving type)` |  |  |
+| `TranspScaleBaseIsAmount` |  | |  | `cast(is_cur as /scmtms/vdm_sc_base_is_amount preserving type)` |  |  |
+| `TranspScaleBaseIsRawValue` |  | |  | `cast(is_raw as /scmtms/vdm_sc_base_is_raw_val preserving type)` |  |  |
+| `TranspScaleBaseIsDate` |  | |  | `cast(is_date as /scmtms/vdm_sc_base_is_date preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

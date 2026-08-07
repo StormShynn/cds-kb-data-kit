@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentBlockingReason` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `InvoicingParty` | ✓ | |  |  |
-| `SupplierInvoice` | ✓ | |  |  |
-| `CreatedByUser` | ✓ | |  |  |
-| `PostingDate` | ✓ | |  |  |
-| `PurchasingGroup` | ✓ | |  |  |
-| `NetDueDate` | ✓ | |  |  |
-| `_SupplierInvoiceAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentBlockingReason` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `InvoicingParty` | ✓ | |  |  |  |  |
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `CreatedByUser` | ✓ | |  |  |  |  |
+| `PostingDate` | ✓ | |  |  |  |  |
+| `PurchasingGroup` | ✓ | |  |  |  |  |
+| `NetDueDate` | ✓ | |  |  |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | | | |
 
 ## Associations
 

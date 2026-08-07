@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |
-| `CAMainTransaction` | ✓ | |  | `hvorg` |
-| `Language` | ✓ | |  | `spras` |
-| `CAMainTransactionName` |  | |  | `cast( txt30 as hvorg_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
-| `_ApplArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
+| `CAMainTransaction` | ✓ | |  | `hvorg` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAMainTransactionName` |  | |  | `cast( txt30 as hvorg_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ApplArea` | | ✓ | | | | |
 
 ## Associations
 

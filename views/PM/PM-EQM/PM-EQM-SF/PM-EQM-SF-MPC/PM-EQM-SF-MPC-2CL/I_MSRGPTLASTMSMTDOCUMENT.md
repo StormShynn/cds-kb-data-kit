@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MeasurementDocument` | ✓ | |  |  |
-| `MeasuringPoint` |  | |  |  |
-| `MsmtRdngDate` |  | |  |  |
-| `MsmtRdngTime` |  | |  |  |
-| `MeasurementReadingDateTime` |  | |  |  |
-| `MsmtRdngSourceMeasurementDoc` |  | |  |  |
-| `MeasurementReading` |  | |  |  |
-| `MeasurementCounterReading` |  | |  |  |
-| `MeasurementReadingInEntryUoM` |  | |  |  |
-| `MeasurementReadingEntryUoM` |  | |  |  |
-| `MsmtRdngByUser` |  | |  |  |
-| `_User` | | ✓ | | |
-| `_MeasuringPoint` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeasurementDocument` | ✓ | |  |  |  |  |
+| `MeasuringPoint` |  | |  |  |  |  |
+| `MsmtRdngDate` |  | |  |  |  |  |
+| `MsmtRdngTime` |  | |  |  |  |  |
+| `MeasurementReadingDateTime` |  | |  |  |  |  |
+| `MsmtRdngSourceMeasurementDoc` |  | |  |  |  |  |
+| `MeasurementReading` |  | |  |  |  |  |
+| `MeasurementCounterReading` |  | |  |  |  |  |
+| `MeasurementReadingInEntryUoM` |  | |  |  |  |  |
+| `MeasurementReadingEntryUoM` |  | |  |  |  |  |
+| `MsmtRdngByUser` |  | |  |  |  |  |
+| `_User` | | ✓ | | | | |
+| `_MeasuringPoint` | | ✓ | | | | |
 
 ## Associations
 

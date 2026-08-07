@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FixedVariableInterestRateCat` | ✓ | |  | `cast(left(domvalue_l, 1) as ftr_interest_category)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `FixedVariableInterestCatName` |  | |  | `ddtext` |
-| `_FixedVariableInterestRateCat` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FixedVariableInterestRateCat` | ✓ | |  | `cast(left(domvalue_l, 1) as ftr_interest_category)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `FixedVariableInterestCatName` |  | |  | `ddtext` |  |  |
+| `_FixedVariableInterestRateCat` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

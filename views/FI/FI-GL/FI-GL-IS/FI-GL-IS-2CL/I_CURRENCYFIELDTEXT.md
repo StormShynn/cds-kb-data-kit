@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `CurrencyField` | ✓ | |  | `cast( dd07t.domvalue_l as fis_crcy_role_field )` |
-| `CurrencyFieldName` |  | |  | `cast( dd07t.ddtext as fis_crcy_role_field_text preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `CurrencyField` | ✓ | |  | `cast( dd07t.domvalue_l as fis_crcy_role_field )` |  |  |
+| `CurrencyFieldName` |  | |  | `cast( dd07t.ddtext as fis_crcy_role_field_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

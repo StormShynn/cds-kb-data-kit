@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessRoleUUID` | ✓ | |  |  |
-| `BusinessRole` |  | |  |  |
-| `BusinessRoleGroup` |  | |  |  |
-| `BusinessRolePriceCategory` |  | |  | `case res.access_restriction_code when '3' then pc.PriceCategoryRead else pc.PriceCategory end` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessRoleUUID` | ✓ | |  |  |  |  |
+| `BusinessRole` |  | |  |  |  |  |
+| `BusinessRoleGroup` |  | |  |  |  |  |
+| `BusinessRolePriceCategory` |  | |  | `case res.access_restriction_code when '3' then pc.PriceCategoryRead else pc.PriceCategory end` |  |  |
 
 ## Source Code
 

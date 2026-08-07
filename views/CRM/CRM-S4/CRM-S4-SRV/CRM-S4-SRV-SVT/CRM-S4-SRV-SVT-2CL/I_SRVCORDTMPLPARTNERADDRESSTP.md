@@ -29,44 +29,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrderTemplate` | ✓ | |  |  |
-| `CustMgmtPartnerFunction` | ✓ | |  |  |
-| `CustMgmtBusinessPartner` | ✓ | |  |  |
-| `CityName` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `Country` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `FaxAreaCodeSubscriberNumber` |  | |  |  |
-| `FaxExtensionNumber` |  | |  |  |
-| `FaxNumberCountry` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `MobileNumber` |  | |  |  |
-| `MobilePhoneCountry` |  | |  |  |
-| `OrganizationName1` |  | |  |  |
-| `OrganizationName2` |  | |  |  |
-| `OrganizationName3` |  | |  |  |
-| `OrganizationName4` |  | |  |  |
-| `PersonFamilyName` |  | |  |  |
-| `PersonGivenName` |  | |  |  |
-| `PhoneExtensionNumber` |  | |  |  |
-| `PhoneNumber` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `Region` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TransportZone` |  | |  |  |
-| `_SrvcOrdTmplPartnerTP` | | ✓ | | |
-| `_ServiceOrderTemplateTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrderTemplate` | ✓ | |  |  |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |  |  |
+| `FaxExtensionNumber` |  | |  |  |  |  |
+| `FaxNumberCountry` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `MobileNumber` |  | |  |  |  |  |
+| `MobilePhoneCountry` |  | |  |  |  |  |
+| `OrganizationName1` |  | |  |  |  |  |
+| `OrganizationName2` |  | |  |  |  |  |
+| `OrganizationName3` |  | |  |  |  |  |
+| `OrganizationName4` |  | |  |  |  |  |
+| `PersonFamilyName` |  | |  |  |  |  |
+| `PersonGivenName` |  | |  |  |  |  |
+| `PhoneExtensionNumber` |  | |  |  |  |  |
+| `PhoneNumber` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TransportZone` |  | |  |  |  |  |
+| `_SrvcOrdTmplPartnerTP` | | ✓ | | | | |
+| `_ServiceOrderTemplateTP` | | ✓ | | | | |
 
 ## Source Code
 

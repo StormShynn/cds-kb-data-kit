@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialManagementArea` | ✓ | |  |  |
-| `FinancialManagementAreaCrcy` |  | |  |  |
-| `FinMgmtAreaFiscalYearVariant` |  | |  |  |
-| `CommitmentItemIsYearDependent` |  | |  |  |
-| `FundsCenterIsTimeDependent` |  | |  |  |
-| `_Currency` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  |  |  |  |
+| `FinancialManagementAreaCrcy` |  | |  |  |  |  |
+| `FinMgmtAreaFiscalYearVariant` |  | |  |  |  |  |
+| `CommitmentItemIsYearDependent` |  | |  |  |  |  |
+| `FundsCenterIsTimeDependent` |  | |  |  |  |  |
+| `_Currency` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

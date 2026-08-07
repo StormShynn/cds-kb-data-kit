@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `DeliveryServiceTypeCode` | ✓ | |  | `deli_serv_type` |
-| `DeliveryServiceTypeDescription` |  | |  | `deli_serv_dscr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `DeliveryServiceTypeCode` | ✓ | |  | `deli_serv_type` |  |  |
+| `DeliveryServiceTypeDescription` |  | |  | `deli_serv_dscr` |  |  |
 
 ## Source Code
 

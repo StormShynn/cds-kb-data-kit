@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskActivityValue` |  | |  | `activ_auth` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskActivityValue` |  | |  | `activ_auth` |  |  |
 
 ## Source Code
 

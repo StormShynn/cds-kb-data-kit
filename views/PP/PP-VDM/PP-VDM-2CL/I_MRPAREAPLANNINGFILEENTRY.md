@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  | `matnr` |
-| `Plant` | ✓ | |  | `werks` |
-| `MRPArea` | ✓ | |  | `berid` |
-| `MRPPlanningScenario` | ✓ | |  | `plscn` |
-| `MatlIsConsideredInNetChgPlng` |  | |  | `gsaen` |
-| `MatlNextTimePhasedPlanningDate` |  | |  | `cast(d.rhytd as vdm_rhytd preserving type)` |
-| `MaterialLastMRPDateTime` |  | |  | `dstmp` |
-| `MatlLastMRPRelevantChgDateTime` |  | |  | `lstmp` |
-| `_Material` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_MaterialPlant` | | ✓ | | |
-| `_MRPArea` | | ✓ | | |
-| `_PlanningScenario` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  | `matnr` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `MRPArea` | ✓ | |  | `berid` |  |  |
+| `MRPPlanningScenario` | ✓ | |  | `plscn` |  |  |
+| `MatlIsConsideredInNetChgPlng` |  | |  | `gsaen` |  |  |
+| `MatlNextTimePhasedPlanningDate` |  | |  | `cast(d.rhytd as vdm_rhytd preserving type)` |  |  |
+| `MaterialLastMRPDateTime` |  | |  | `dstmp` |  |  |
+| `MatlLastMRPRelevantChgDateTime` |  | |  | `lstmp` |  |  |
+| `_Material` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_MaterialPlant` | | ✓ | | | | |
+| `_MRPArea` | | ✓ | | | | |
+| `_PlanningScenario` | | ✓ | | | | |
 
 ## Associations
 

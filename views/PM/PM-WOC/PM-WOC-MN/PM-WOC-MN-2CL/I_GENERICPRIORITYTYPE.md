@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GenericPriorityType` | ✓ | |  | `artpr` |
-| `_GenericPriorityTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GenericPriorityType` | ✓ | |  | `artpr` |  |  |
+| `_GenericPriorityTypeText` | | ✓ | | | | |
 
 ## Associations
 

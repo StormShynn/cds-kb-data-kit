@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |
-| `AddressID` | ✓ | |  |  |
-| `AddressPersonID` | ✓ | |  |  |
-| `CommMediumSequenceNumber` | ✓ | |  |  |
-| `FaxNumberCountry` |  | |  |  |
-| `FaxAreaCodeSubscriberNumber` |  | |  |  |
-| `FaxExtensionNumber` |  | |  |  |
-| `InternationalFaxNumber` |  | |  |  |
-| `FaxNumberIsCurrentDefault` |  | |  |  |
-| `ValidityStartDateTime` |  | |  | `cast ( ValidityStartDate as ad_valfrom )` |
-| `ValidityEndDateTime` |  | |  | `cast ( ValidityEndDate as ad_valto )` |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_AddressCommunicationRemark` | | ✓ | | |
-| `_AddressCommunicationUsage` | | ✓ | | |
-| `_FaxNumberCountry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` | ✓ | |  |  | `NUMC(3)` | Sequence Number |
+| `FaxNumberCountry` |  | |  |  | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  | `CHAR(30)` | Fax Number: Dialing Code and Number |
+| `FaxExtensionNumber` |  | |  |  | `CHAR(10)` | Fax no.: Extension |
+| `InternationalFaxNumber` |  | |  |  | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `FaxNumberIsCurrentDefault` |  | |  |  | `CHAR(1)` | Indicator : Current Default Fax Number |
+| `ValidityStartDateTime` |  | |  | `cast ( ValidityStartDate as ad_valfrom )` | `CHAR(14)` | Communication Data: Valid From (YYYYMMDDHHMMSS) |
+| `ValidityEndDateTime` |  | |  | `cast ( ValidityEndDate as ad_valto )` | `CHAR(14)` | Communication Data: Valid To (YYYYMMDDHHMMSS) |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_AddressCommunicationRemark` | | ✓ | | | | |
+| `_AddressCommunicationUsage` | | ✓ | | | | |
+| `_FaxNumberCountry` | | ✓ | | | | |
 
 ## Associations
 

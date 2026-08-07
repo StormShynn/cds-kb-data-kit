@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjDmndRsceReqDistrUUID` | ✓ | |  |  |
-| `ProjDmndResourceRequestUUID` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjDmndRsceReqDistrYearVal` |  | |  |  |
-| `ProjDmndRsceReqDistrPerdVal` |  | |  |  |
-| `ProjDmndRsceReqDistrQuantity` |  | |  | `} ProjDmndRsceReqDistrQuantity` |
-| `ProjDmndRsceReqDistrQtyUnit` |  | |  |  |
-| `ProjDmndRsceReqDistrPerdAmt` |  | |  | `} ProjDmndRsceReqDistrPerdAmt` |
-| `ProjDmndRsceReqDistrPerdAmtCur` |  | |  |  |
-| `ProjDmndRsceReqDistrRevenueAmt` |  | |  | `} ProjDmndRsceReqDistrRevenueAmt` |
-| `ProjDmndRsceReqDistrRevnAmtCur` |  | |  |  |
-| `ProjDmndRsceReqDistrStartDate` |  | |  |  |
-| `ProjDmndRsceReqDistrEndDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_ProjDmndRsceReq` | | ✓ | | |
-| `_ProjDmndRsceReqDistrQtyUnit` | | ✓ | | |
-| `_DmndRsceReqDistrPerdAmtCur` | | ✓ | | |
-| `_DmndRsceReqDistrRevnAmtCur` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjDmndRsceReqDistrUUID` | ✓ | |  |  |  |  |
+| `ProjDmndResourceRequestUUID` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrYearVal` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrPerdVal` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrQuantity` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrQtyUnit` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrPerdAmt` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrPerdAmtCur` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrRevenueAmt` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrRevnAmtCur` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrStartDate` |  | |  |  |  |  |
+| `ProjDmndRsceReqDistrEndDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_ProjDmndRsceReq` | | ✓ | | | | |
+| `_ProjDmndRsceReqDistrQtyUnit` | | ✓ | | | | |
+| `_DmndRsceReqDistrPerdAmtCur` | | ✓ | | | | |
+| `_DmndRsceReqDistrRevnAmtCur` | | ✓ | | | | |
 
 ## Associations
 

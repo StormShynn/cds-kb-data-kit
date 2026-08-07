@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceEntrySheet` | ✓ | |  |  |
-| `ServiceEntrySheetName` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ApprovalStatus` |  | |  |  |
-| `ApprovalDateTime` |  | |  |  |
-| `ResponsiblePerson` |  | |  |  |
-| `OriginObjectType` |  | |  |  |
-| `Currency` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `PurgDocExternalSystem` |  | |  |  |
-| `PurgDocExternalReference` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  | `LastChangeUser` |
-| `_ServiceEntrySheetItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |  |  |
+| `ServiceEntrySheetName` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ApprovalStatus` |  | |  |  |  |  |
+| `ApprovalDateTime` |  | |  |  |  |  |
+| `ResponsiblePerson` |  | |  |  |  |  |
+| `OriginObjectType` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `PurgDocExternalSystem` |  | |  |  |  |  |
+| `PurgDocExternalReference` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  | `LastChangeUser` |  |  |
+| `_ServiceEntrySheetItem` | | ✓ | | | | |
 
 ## Associations
 

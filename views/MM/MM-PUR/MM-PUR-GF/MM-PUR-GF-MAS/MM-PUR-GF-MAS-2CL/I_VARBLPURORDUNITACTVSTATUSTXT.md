@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `VarblPurOrdUnitIsActive` | ✓ | |  | `cast( dd07t.domvalue_l as vabme )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `VarblPurOrdUnitStatus` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_VarblPurOrdUnitActvStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `VarblPurOrdUnitIsActive` | ✓ | |  | `cast( dd07t.domvalue_l as vabme )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `VarblPurOrdUnitStatus` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_VarblPurOrdUnitActvStatus` | | ✓ | | | | |
 
 ## Associations
 

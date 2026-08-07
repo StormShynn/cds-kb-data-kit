@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
-| `DocumentInfoRecordDocType` | ✓ | |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  |  |
-| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |
-| `IsDocInfoRecdStructure` |  | |  |  |
-| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |
-| `_DocType` | | ✓ | | |
-| `_DocNumber` | | ✓ | | |
-| `_DocVersion` | | ✓ | | |
-| `_DocPart` | | ✓ | | |
-| `_DeltnStatusText` | | ✓ | | |
-| `_StrucStatusText` | | ✓ | | |
-| `_CadStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |  |  |
+| `IsDocInfoRecdStructure` |  | |  |  |  |  |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |  |  |
+| `_DocType` | | ✓ | | | | |
+| `_DocNumber` | | ✓ | | | | |
+| `_DocVersion` | | ✓ | | | | |
+| `_DocPart` | | ✓ | | | | |
+| `_DeltnStatusText` | | ✓ | | | | |
+| `_StrucStatusText` | | ✓ | | | | |
+| `_CadStatusText` | | ✓ | | | | |
 
 ## Associations
 

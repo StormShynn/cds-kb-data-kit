@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SequenceSchedulingAlignment` | ✓ | |  | `auschl` |
-| `Language` | ✓ | |  | `spras` |
-| `SequenceSchedulingAlgnmtName` |  | |  | `ausch_ltxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SequenceSchedulingAlignment` | ✓ | |  | `auschl` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SequenceSchedulingAlgnmtName` |  | |  | `ausch_ltxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

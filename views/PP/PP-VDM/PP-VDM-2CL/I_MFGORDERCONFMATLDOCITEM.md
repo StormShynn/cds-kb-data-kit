@@ -28,108 +28,108 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MfgOrderConfirmationGroup` | ✓ | |  |  |
-| `MfgOrderConfirmation` | ✓ | |  |  |
-| `MaterialDocument` | ✓ | |  |  |
-| `MaterialDocumentYear` | ✓ | |  | `cast(afwi.MaterialDocumentYear as nsdm_mjahr preserving type)` |
-| `MaterialDocumentItem` | ✓ | |  | `cast(afwi.MaterialDocumentItem as nsdm_mblpo preserving type)` |
-| `PostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `CreatedByUser` |  | |  | `cast(mseg.CreatedByUser as ernam preserving type)` |
-| `ManufacturingOrder` |  | |  |  |
-| `ManufacturingOrderSequence` |  | |  |  |
-| `ManufacturingOrderOperation` |  | |  |  |
-| `ManufacturingOrderOperation_2` |  | |  |  |
-| `ManufacturingOrderItem` |  | |  | `OrderItem` |
-| `ManufacturingOrderCategory` |  | |  |  |
-| `ManufacturingOrderType` |  | |  |  |
-| `ConfirmationPlant` |  | |  | `cast(afru.Plant as vdm_confirmationplant preserving type)` |
-| `ConfirmationText` |  | |  |  |
-| `FinalConfirmationType` |  | |  |  |
-| `IsFinalConfirmation` |  | |  |  |
-| `OpenReservationsIsCleared` |  | |  |  |
-| `IsReversed` |  | |  |  |
-| `IsReversal` |  | |  |  |
-| `Material` |  | |  | `cast(mseg.Material as co_matnr preserving type)` |
-| `Plant` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `ReservationItem` |  | |  |  |
-| `ReservationRecordType` |  | |  |  |
-| `StorageLocation` |  | |  | `cast(mseg.StorageLocation as pph_lgort preserving type)` |
-| `Batch` |  | |  |  |
-| `InventoryValuationType` |  | |  | `cast(mseg.InventoryValuationType as pph_bwtar preserving type)` |
-| `ConsumptionPosting` |  | |  | `cast(mseg.ConsumptionPosting as pph_kzvbr preserving type)` |
-| `DebitCreditCode` |  | |  | `cast(mseg.DebitCreditCode as pph_shkzg preserving type)` |
-| `GoodsMovementType` |  | |  | `cast(mseg.GoodsMovementType as pph_bwart preserving type)` |
-| `GoodsMovementReasonCode` |  | |  |  |
-| `GoodsMovementRefDocType` |  | |  |  |
-| `InventoryUsabilityCode` |  | |  | `cast(mseg.InventoryUsabilityCode as inventoryusabilitycode preserving type)` |
-| `InventorySpecialStockType` |  | |  | `cast(mseg.InventorySpecialStockType as inventoryspecialstocktype preserving type)` |
-| `InventorySpecialStockValnType` |  | |  | `cast(mseg.InventorySpecialStockValnType as pph_kzbws preserving type)` |
-| `SalesOrder` |  | |  | `cast(mseg.SalesOrder as co_kdauf preserving type)` |
-| `SalesOrderItem` |  | |  | `cast(mseg.SalesOrderItem as co_kdpos preserving type)` |
-| `WBSElementInternalID` |  | |  | `cast(mseg.WBSElementInternalID as pph_pspel preserving type)` |
-| `WBSElementInternalID_2` |  | |  | `cast(mseg.WBSElementInternalID as ps_s4_pspnr preserving type)` |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `GoodsRecipientName` |  | |  | `cast(mseg.GoodsRecipientName as pph_wempf preserving type)` |
-| `UnloadingPointName` |  | |  | `cast(mseg.UnloadingPointName as ablad preserving type)` |
-| `ReservationIsFinallyIssued` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `ManufactureDate` |  | |  |  |
-| `StorageType` |  | |  |  |
-| `StorageBin` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `EWMStorageBin` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `MaterialDocumentItemText` |  | |  |  |
-| `BaseUnit` |  | |  | `MaterialBaseUnit` |
-| `QuantityInBaseUnit` |  | |  | `cast(mseg.QuantityInBaseUnit as vdm_pp_menge preserving type)` |
-| `EntryUnit` |  | |  |  |
-| `QuantityInEntryUnit` |  | |  | `cast(mseg.QuantityInEntryUnit as pph_erfmg preserving type)` |
-| `_ConfirmationPlant` |  | |  | `_Plant` |
-| `_ConfirmationCount` | | ✓ | | |
-| `_MaterialDocumentHeader` | | ✓ | | |
-| `_DocumentDate` | | ✓ | | |
-| `_PostingDate` | | ✓ | | |
-| `_ShelfLifeExpirationDate` | | ✓ | | |
-| `_ManufactureDate` | | ✓ | | |
-| `_MfgOrder` | | ✓ | | |
-| `_MfgOrderItem` | | ✓ | | |
-| `_MfgOrderSequence` | | ✓ | | |
-| `_MfgOrderConfirmation` | | ✓ | | |
-| `_Reservation` | | ✓ | | |
-| `_ReservationItem` | | ✓ | | |
-| `_ReservationRecordType` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_EntryUnit` | | ✓ | | |
-| `_GoodsMovementType` | | ✓ | | |
-| `_GoodsMovementReason` | | ✓ | | |
-| `_GoodsMovementRefDocType` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
-| `_InventorySpecialStockValnType` | | ✓ | | |
-| `_ConsumptionPosting` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_InventoryUsabilityCode` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_WBSElementBasic` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
-| `_CustomerCompanyByPlant` | | ✓ | | |
-| `_EWMWarehouse` | | ✓ | | |
-| `_EWMStorageBin` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MfgOrderConfirmationGroup` | ✓ | |  |  |  |  |
+| `MfgOrderConfirmation` | ✓ | |  |  |  |  |
+| `MaterialDocument` | ✓ | |  |  |  |  |
+| `MaterialDocumentYear` | ✓ | |  | `cast(afwi.MaterialDocumentYear as nsdm_mjahr preserving type)` |  |  |
+| `MaterialDocumentItem` | ✓ | |  | `cast(afwi.MaterialDocumentItem as nsdm_mblpo preserving type)` |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  | `cast(mseg.CreatedByUser as ernam preserving type)` |  |  |
+| `ManufacturingOrder` |  | |  |  |  |  |
+| `ManufacturingOrderSequence` |  | |  |  |  |  |
+| `ManufacturingOrderOperation` |  | |  |  |  |  |
+| `ManufacturingOrderOperation_2` |  | |  |  |  |  |
+| `ManufacturingOrderItem` |  | |  | `OrderItem` |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |  |  |
+| `ManufacturingOrderType` |  | |  |  |  |  |
+| `ConfirmationPlant` |  | |  | `cast(afru.Plant as vdm_confirmationplant preserving type)` |  |  |
+| `ConfirmationText` |  | |  |  |  |  |
+| `FinalConfirmationType` |  | |  |  |  |  |
+| `IsFinalConfirmation` |  | |  |  |  |  |
+| `OpenReservationsIsCleared` |  | |  |  |  |  |
+| `IsReversed` |  | |  |  |  |  |
+| `IsReversal` |  | |  |  |  |  |
+| `Material` |  | |  | `cast(mseg.Material as co_matnr preserving type)` |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `ReservationItem` |  | |  |  |  |  |
+| `ReservationRecordType` |  | |  |  |  |  |
+| `StorageLocation` |  | |  | `cast(mseg.StorageLocation as pph_lgort preserving type)` |  |  |
+| `Batch` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  | `cast(mseg.InventoryValuationType as pph_bwtar preserving type)` |  |  |
+| `ConsumptionPosting` |  | |  | `cast(mseg.ConsumptionPosting as pph_kzvbr preserving type)` |  |  |
+| `DebitCreditCode` |  | |  | `cast(mseg.DebitCreditCode as pph_shkzg preserving type)` |  |  |
+| `GoodsMovementType` |  | |  | `cast(mseg.GoodsMovementType as pph_bwart preserving type)` |  |  |
+| `GoodsMovementReasonCode` |  | |  |  |  |  |
+| `GoodsMovementRefDocType` |  | |  |  |  |  |
+| `InventoryUsabilityCode` |  | |  | `cast(mseg.InventoryUsabilityCode as inventoryusabilitycode preserving type)` |  |  |
+| `InventorySpecialStockType` |  | |  | `cast(mseg.InventorySpecialStockType as inventoryspecialstocktype preserving type)` |  |  |
+| `InventorySpecialStockValnType` |  | |  | `cast(mseg.InventorySpecialStockValnType as pph_kzbws preserving type)` |  |  |
+| `SalesOrder` |  | |  | `cast(mseg.SalesOrder as co_kdauf preserving type)` |  |  |
+| `SalesOrderItem` |  | |  | `cast(mseg.SalesOrderItem as co_kdpos preserving type)` |  |  |
+| `WBSElementInternalID` |  | |  | `cast(mseg.WBSElementInternalID as pph_pspel preserving type)` |  |  |
+| `WBSElementInternalID_2` |  | |  | `cast(mseg.WBSElementInternalID as ps_s4_pspnr preserving type)` |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  | `cast(mseg.GoodsRecipientName as pph_wempf preserving type)` |  |  |
+| `UnloadingPointName` |  | |  | `cast(mseg.UnloadingPointName as ablad preserving type)` |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `ManufactureDate` |  | |  |  |  |  |
+| `StorageType` |  | |  |  |  |  |
+| `StorageBin` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `EWMStorageBin` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `MaterialDocumentItemText` |  | |  |  |  |  |
+| `BaseUnit` |  | |  | `MaterialBaseUnit` |  |  |
+| `QuantityInBaseUnit` |  | |  | `cast(mseg.QuantityInBaseUnit as vdm_pp_menge preserving type)` |  |  |
+| `EntryUnit` |  | |  |  |  |  |
+| `QuantityInEntryUnit` |  | |  | `cast(mseg.QuantityInEntryUnit as pph_erfmg preserving type)` |  |  |
+| `_ConfirmationPlant` |  | |  | `_Plant` |  |  |
+| `_ConfirmationCount` | | ✓ | | | | |
+| `_MaterialDocumentHeader` | | ✓ | | | | |
+| `_DocumentDate` | | ✓ | | | | |
+| `_PostingDate` | | ✓ | | | | |
+| `_ShelfLifeExpirationDate` | | ✓ | | | | |
+| `_ManufactureDate` | | ✓ | | | | |
+| `_MfgOrder` | | ✓ | | | | |
+| `_MfgOrderItem` | | ✓ | | | | |
+| `_MfgOrderSequence` | | ✓ | | | | |
+| `_MfgOrderConfirmation` | | ✓ | | | | |
+| `_Reservation` | | ✓ | | | | |
+| `_ReservationItem` | | ✓ | | | | |
+| `_ReservationRecordType` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_EntryUnit` | | ✓ | | | | |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_GoodsMovementReason` | | ✓ | | | | |
+| `_GoodsMovementRefDocType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_InventorySpecialStockValnType` | | ✓ | | | | |
+| `_ConsumptionPosting` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_InventoryUsabilityCode` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementBasic` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
+| `_CustomerCompanyByPlant` | | ✓ | | | | |
+| `_EWMWarehouse` | | ✓ | | | | |
+| `_EWMStorageBin` | | ✓ | | | | |
 
 ## Associations
 

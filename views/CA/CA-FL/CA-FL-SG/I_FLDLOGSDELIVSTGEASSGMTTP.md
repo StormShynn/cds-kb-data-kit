@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsShptVoyageUUID` | ✓ | |  |  |
-| `FldLogsVoyStgeAssgmtUUID` | ✓ | |  |  |
-| `FldLogsVoyStgeAssgmtSqncID` |  | |  |  |
-| `FldLogsShipmentItemTypeCode` |  | |  |  |
-| `FldLogsShptVoyageNumber` |  | |  |  |
-| `FldLogsShptVoyageTypeCode` |  | |  |  |
-| `FldLogsShptVoyageVehicleNumber` |  | |  |  |
-| `FldLogsShptVoyageVehicleName` |  | |  |  |
-| `FldLogsVoyageChangeDateTime` |  | |  |  |
-| `FldLogsSrcePlnt` |  | |  |  |
-| `FldLogsDestPlnt` |  | |  |  |
-| `FldLogsVoyageSrceStage` |  | |  |  |
-| `FldLogsVoyageDestStage` |  | |  |  |
-| `FldLogsShptAssignmentStatus` |  | |  |  |
-| `_ShptStgeItm` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsShptVoyageUUID` | ✓ | |  |  |  |  |
+| `FldLogsVoyStgeAssgmtUUID` | ✓ | |  |  |  |  |
+| `FldLogsVoyStgeAssgmtSqncID` |  | |  |  |  |  |
+| `FldLogsShipmentItemTypeCode` |  | |  |  |  |  |
+| `FldLogsShptVoyageNumber` |  | |  |  |  |  |
+| `FldLogsShptVoyageTypeCode` |  | |  |  |  |  |
+| `FldLogsShptVoyageVehicleNumber` |  | |  |  |  |  |
+| `FldLogsShptVoyageVehicleName` |  | |  |  |  |  |
+| `FldLogsVoyageChangeDateTime` |  | |  |  |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |  |  |
+| `FldLogsDestPlnt` |  | |  |  |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |  |  |
+| `FldLogsShptAssignmentStatus` |  | |  |  |  |  |
+| `_ShptStgeItm` | | ✓ | | | | |
 
 ## Source Code
 

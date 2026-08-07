@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` |
-| `ProdAllocChkRstrcnStatusDesc` |  | |  | `cast( ddtext as prodallocchkrstrcnstatusdesc preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_ProdAllocChkRstrcnStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` |  |  |
+| `ProdAllocChkRstrcnStatusDesc` |  | |  | `cast( ddtext as prodallocchkrstrcnstatusdesc preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProdAllocChkRstrcnStatus` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `SrvcDocLogTextIdentifier` |  | |  |  |
-| `TextObjectCategory` |  | |  |  |
-| `SrvcDocLongTextMimeType` |  | |  |  |
-| `BusSolnOrdItmLongText` |  | |  |  |
-| `_BusinessSolutionOrderItemTP` | | ✓ | | |
-| `_BusinessSolutionOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `SrvcDocLogTextIdentifier` |  | |  |  |  |  |
+| `TextObjectCategory` |  | |  |  |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |  |  |
+| `BusSolnOrdItmLongText` |  | |  |  |  |  |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

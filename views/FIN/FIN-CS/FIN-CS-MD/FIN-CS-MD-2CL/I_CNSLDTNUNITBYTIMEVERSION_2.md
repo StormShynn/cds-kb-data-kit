@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationUnit` | ✓ | | `_UnitByTimeVersion` | `ConsolidationUnit` |
-| `ConsolidationVersion` | ✓ | | `_UnitByTimeVersion` | `ConsolidationVersion` |
-| `FromFiscalYearPeriod` | ✓ | | `_UnitByTimeVersion` | `FromFiscalYearPeriod` |
-| `ToFiscalYearPeriod` |  | |  |  |
-| `ConsolidationUnitIsPartnerOnly` |  | |  |  |
-| `CnsldtnCrcyTranslationMethod` |  | |  |  |
-| `CnsldtnTaxRate` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `CnsldtnUnivJournalIntegType` |  | |  |  |
-| `CnsldtnGroupCrcyIsLeadingCrcy` |  | |  |  |
-| `CnsldtnUnitLocalCrcySource` |  | |  |  |
-| `CnsldtnUnitGroupCrcySource` |  | |  |  |
-| `CnsldtnUploadMethod` |  | |  |  |
-| `CnsldtnUnitDataCollection` |  | | `_UnitByTimeVersion` | `CnsldtnUnitDataCollection` |
-| `ConsolidationUnitPartner` |  | | `_UnitByTimeVersion` | `ConsolidationUnitPartner` |
-| `ConsolidationUnitPostingRule` |  | | `_UnitByTimeVersion` | `ConsolidationUnitPostingRule` |
-| `ConsolidationUnitValidation` |  | | `_UnitByTimeVersion` | `ConsolidationUnitValidation` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | | `_UnitByTimeVersion` | `ConsolidationUnit` |  |  |
+| `ConsolidationVersion` | ✓ | | `_UnitByTimeVersion` | `ConsolidationVersion` |  |  |
+| `FromFiscalYearPeriod` | ✓ | | `_UnitByTimeVersion` | `FromFiscalYearPeriod` |  |  |
+| `ToFiscalYearPeriod` |  | |  |  |  |  |
+| `ConsolidationUnitIsPartnerOnly` |  | |  |  |  |  |
+| `CnsldtnCrcyTranslationMethod` |  | |  |  |  |  |
+| `CnsldtnTaxRate` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `CnsldtnUnivJournalIntegType` |  | |  |  |  |  |
+| `CnsldtnGroupCrcyIsLeadingCrcy` |  | |  |  |  |  |
+| `CnsldtnUnitLocalCrcySource` |  | |  |  |  |  |
+| `CnsldtnUnitGroupCrcySource` |  | |  |  |  |  |
+| `CnsldtnUploadMethod` |  | |  |  |  |  |
+| `CnsldtnUnitDataCollection` |  | | `_UnitByTimeVersion` | `CnsldtnUnitDataCollection` |  |  |
+| `ConsolidationUnitPartner` |  | | `_UnitByTimeVersion` | `ConsolidationUnitPartner` |  |  |
+| `ConsolidationUnitPostingRule` |  | | `_UnitByTimeVersion` | `ConsolidationUnitPostingRule` |  |  |
+| `ConsolidationUnitValidation` |  | | `_UnitByTimeVersion` | `ConsolidationUnitValidation` |  |  |
 
 ## Associations
 

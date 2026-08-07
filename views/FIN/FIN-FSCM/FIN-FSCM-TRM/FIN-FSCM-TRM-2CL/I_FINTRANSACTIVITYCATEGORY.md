@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `FinancialTransaction` | ✓ | |  |  |
-| `FinancialInstrActivityCategory` | ✓ | |  |  |
-| `FinancialInstrProductCategory` |  | |  |  |
-| `FinInstrTransactionCategory` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_FinTrans` | | ✓ | | |
-| `_ActivityCategoryText` | | ✓ | | |
-| `_ProductCategory` | | ✓ | | |
-| `_TransactionCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FinancialTransaction` | ✓ | |  |  |  |  |
+| `FinancialInstrActivityCategory` | ✓ | |  |  |  |  |
+| `FinancialInstrProductCategory` |  | |  |  |  |  |
+| `FinInstrTransactionCategory` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FinTrans` | | ✓ | | | | |
+| `_ActivityCategoryText` | | ✓ | | | | |
+| `_ProductCategory` | | ✓ | | | | |
+| `_TransactionCategory` | | ✓ | | | | |
 
 ## Associations
 

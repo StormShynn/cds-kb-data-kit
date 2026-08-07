@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderType` | ✓ | |  | `cast(type as /scmtms/vdm_tor_type preserving type )` |
-| `Language` | ✓ | |  | `langu` |
-| `TransportationOrderTypeDesc` |  | |  | `cast ( descr as /scmtms/vdm_tor_type_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_TransportationOrderType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderType` | ✓ | |  | `cast(type as /scmtms/vdm_tor_type preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `TransportationOrderTypeDesc` |  | |  | `cast ( descr as /scmtms/vdm_tor_type_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TransportationOrderType` | | ✓ | | | | |
 
 ## Associations
 

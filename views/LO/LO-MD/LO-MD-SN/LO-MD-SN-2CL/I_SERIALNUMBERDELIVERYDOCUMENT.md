@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
-| `DeliveryDocument` | ✓ | | `_MaintObjListDeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | ✓ | | `_MaintObjListDeliveryDocument` | `DeliveryDocumentItem` |
-| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
-| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |  |  |
+| `DeliveryDocument` | ✓ | | `_MaintObjListDeliveryDocument` | `DeliveryDocument` |  |  |
+| `DeliveryDocumentItem` | ✓ | | `_MaintObjListDeliveryDocument` | `DeliveryDocumentItem` |  |  |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |  |  |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |  |  |
 
 ## Source Code
 

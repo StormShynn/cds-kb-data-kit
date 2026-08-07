@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjDmndRsceAssgmtDistrUUID` | ✓ | |  |  |
-| `ProjDmndRsceAssgmtUUID` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjDmndRsceAssgmtDistrYearVal` |  | |  |  |
-| `ProjDmndRsceAssgmtDistrPerdVal` |  | |  |  |
-| `ProjDmndRsceAssgmtDistrQty` |  | |  | `} ProjDmndRsceAssgmtDistrQty` |
-| `ProjDmndRsceAssgmtDistrQtyUnit` |  | |  |  |
-| `ProjDmndRsceDistrPerdAmt` |  | |  | `} ProjDmndRsceDistrPerdAmt` |
-| `ProjDmndRsceDistrPerdAmtCur` |  | |  |  |
-| `ProjDmndRsceDistrRevenueAmt` |  | |  | `} ProjDmndRsceDistrRevenueAmt` |
-| `ProjDmndRsceDistrRevenueAmtCur` |  | |  |  |
-| `ProjDmndRsceAssgmtDistrStrtDte` |  | |  |  |
-| `ProjDmndRsceAssgmtDistrEndDte` |  | |  |  |
-| `ProjDmndRsceDistrIsNotSupplied` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Assignment` | | ✓ | | |
-| `_Root` | | ✓ | | |
-| `_ProjDmndRsceDistrQtyUnit` | | ✓ | | |
-| `_ProjDmndRsceDistrPerdAmtCur` | | ✓ | | |
-| `_ProjDmndRsceDistrRevnAmtCur` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjDmndRsceAssgmtDistrUUID` | ✓ | |  |  |  |  |
+| `ProjDmndRsceAssgmtUUID` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtDistrYearVal` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtDistrPerdVal` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtDistrQty` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtDistrQtyUnit` |  | |  |  |  |  |
+| `ProjDmndRsceDistrPerdAmt` |  | |  |  |  |  |
+| `ProjDmndRsceDistrPerdAmtCur` |  | |  |  |  |  |
+| `ProjDmndRsceDistrRevenueAmt` |  | |  |  |  |  |
+| `ProjDmndRsceDistrRevenueAmtCur` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtDistrStrtDte` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtDistrEndDte` |  | |  |  |  |  |
+| `ProjDmndRsceDistrIsNotSupplied` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Assignment` | | ✓ | | | | |
+| `_Root` | | ✓ | | | | |
+| `_ProjDmndRsceDistrQtyUnit` | | ✓ | | | | |
+| `_ProjDmndRsceDistrPerdAmtCur` | | ✓ | | | | |
+| `_ProjDmndRsceDistrRevnAmtCur` | | ✓ | | | | |
 
 ## Associations
 

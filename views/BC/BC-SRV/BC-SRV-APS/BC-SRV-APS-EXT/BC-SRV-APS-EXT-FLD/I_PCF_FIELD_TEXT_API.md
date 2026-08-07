@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NodeName` | ✓ | |  | `node_name` |
-| `FieldName` | ✓ | |  | `field_name` |
-| `Language` | ✓ | |  | `language` |
-| `FieldLabel` |  | |  | `field_label` |
-| `FieldTooltip` |  | |  | `field_tooltip` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NodeName` | ✓ | |  | `node_name` |  |  |
+| `FieldName` | ✓ | |  | `field_name` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `FieldLabel` |  | |  | `field_label` |  |  |
+| `FieldTooltip` |  | |  | `field_tooltip` |  |  |
 
 ## Source Code
 

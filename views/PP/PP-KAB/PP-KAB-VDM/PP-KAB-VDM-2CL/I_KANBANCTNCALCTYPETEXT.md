@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanContainerCalculationType` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as kcart preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
-| `KanbanContainerCalcTypeName` |  | |  | `cast(txt.ddtext as vdm_knbncntncalctypename preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KanbanCtnCalcType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanContainerCalculationType` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as kcart preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |  |  |
+| `KanbanContainerCalcTypeName` |  | |  | `cast(txt.ddtext as vdm_knbncntncalctypename preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KanbanCtnCalcType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

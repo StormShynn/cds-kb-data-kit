@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `FinancialServicesBranch` | ✓ | |  | `branch_id` |
-| `FinancialServicesBranchName` |  | |  | `cast(branch_tt as ffs_vdm_branch_tt preserving type )` |
-| `_Language` | | ✓ | | |
-| `_FinancialServicesBranch` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `FinancialServicesBranch` | ✓ | |  | `branch_id` |  |  |
+| `FinancialServicesBranchName` |  | |  | `cast(branch_tt as ffs_vdm_branch_tt preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FinancialServicesBranch` | | ✓ | | | | |
 
 ## Associations
 

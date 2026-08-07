@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationFSItemType` | ✓ | |  | `cast ( _Domain.DomainValue as fincs_fsitemtype preserving type )` |
-| `_FSItemTypeSignLogic` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationFSItemType` | ✓ | |  | `cast ( _Domain.DomainValue as fincs_fsitemtype preserving type )` |  |  |
+| `_FSItemTypeSignLogic` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `Division` | ✓ | |  | `cast( _Source.Division as fincs_division preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast( _Source.DivisionName as fincs_description_text_20 preserving type )` |
-| `DivisionName` |  | |  | `cast( _Source.DivisionName as fincs_divisionname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_Division` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `Division` | ✓ | |  | `cast( _Source.Division as fincs_division preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.DivisionName as fincs_description_text_20 preserving type )` |  |  |
+| `DivisionName` |  | |  | `cast( _Source.DivisionName as fincs_divisionname preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrderWithoutCharge` | ✓ | |  |  |
-| `SalesOrderWithoutChargeItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `ScheduleLineForEdit` |  | |  |  |
-| `ScheduleLineCategory` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |
-| `DeliveredQtyInOrderQtyUnit` |  | |  |  |
-| `OpenConfdDelivQtyInOrdQtyUnit` |  | |  |  |
-| `CorrectedQtyInOrderQtyUnit` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `ConfirmedDeliveryDate` |  | |  |  |
-| `DelivBlockReasonForSchedLine` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `SalesOrderWithoutChargeType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_SalesOrderWithoutCharge` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  |  |  |  |
+| `SalesOrderWithoutChargeItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `ScheduleLineForEdit` |  | |  |  |  |  |
+| `ScheduleLineCategory` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |  |  |
+| `DeliveredQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `OpenConfdDelivQtyInOrdQtyUnit` |  | |  |  |  |  |
+| `CorrectedQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `ConfirmedDeliveryDate` |  | |  |  |  |  |
+| `DelivBlockReasonForSchedLine` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_SalesOrderWithoutCharge` | | ✓ | | | | |
 
 ## Source Code
 

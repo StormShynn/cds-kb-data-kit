@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `SrvcDocAppointmentType` | ✓ | |  |  |
-| `SrvcDocApptStartDateTime` |  | |  |  |
-| `SrvcDocApptEndDateTime` |  | |  |  |
-| `_SrvcDocAppointmentTypeText` | | ✓ | | |
-| `_BusinessSolutionOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `SrvcDocAppointmentType` | ✓ | |  |  |  |  |
+| `SrvcDocApptStartDateTime` |  | |  |  |  |  |
+| `SrvcDocApptEndDateTime` |  | |  |  |  |  |
+| `_SrvcDocAppointmentTypeText` | | ✓ | | | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

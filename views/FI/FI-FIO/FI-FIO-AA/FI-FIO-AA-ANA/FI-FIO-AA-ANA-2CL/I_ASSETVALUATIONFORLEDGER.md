@@ -27,51 +27,51 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `MasterFixedAsset` | ✓ | |  |  |
-| `FixedAsset` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `AssetRealDepreciationArea` | ✓ | |  | `cast(I_AssetTimeBasedValuation.AssetDepreciationArea as afabe_d)` |
-| `ValidityEndDate` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `DepreciationStartDate` |  | |  |  |
-| `SpecialDeprStartDate` |  | |  |  |
-| `DeprKeyChangeoverYear` |  | |  | `cast(I_AssetValuation.DeprKeyChangeoverYear as fis_umjar)` |
-| `DeprKeyChangeoverPeriod` |  | |  |  |
-| `DepreciationKey` |  | |  |  |
-| `InvestmentSupportMeasure` |  | |  | `cast('' as faa_invsl)` |
-| `PlannedUsefulLifeInPeriods` |  | |  | `cast(I_AssetTimeBasedValuation.PlannedUsefulLifeInPeriods as fis_ndper)` |
-| `PlannedUsefulLifeInYears` |  | |  | `cast(I_AssetTimeBasedValuation.PlannedUsefulLifeInYears as fis_ndjar)` |
-| `VintageYear` |  | |  | `cast('0000' as fis_vyear)` |
-| `VintageMonth` |  | |  | `cast('000' as fis_vmnth)` |
-| `OriglAstUsefulLifeInPerds` |  | |  | `cast('000' as fis_ndurp)` |
-| `OriglAstUsefulLifeInYears` |  | |  | `cast('000' as ndurj)` |
-| `ReplacementValueIndexSers` |  | |  |  |
-| `RplcmtValueAgingIndexSers` |  | |  | `cast(I_AssetValuation.RplcmtValueAgingIndexSers as fis_alind)` |
-| `AcqnProdnCostScrapPercent` |  | |  |  |
-| `VariableDeprPercent` |  | |  |  |
-| `ShiftOperationFactor` |  | |  |  |
-| `IsShutDown` |  | |  |  |
-| `DeprCalcBaseValuePercent` |  | |  |  |
-| `LastRetirementValueDate` |  | |  |  |
-| `DepreciationAreaType` |  | |  |  |
-| `ScrapAmountInCoCodeCrcy` |  | |  |  |
-| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |
-| `AssetOpgReadinessDate` |  | |  |  |
-| `FixedAssetUsageObject` |  | |  |  |
-| `AssetRevaluationIndex` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_DepreciationArea` | | ✓ | | |
-| `_ReplacementValueIndexSers` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_FixedAssetUsageObject` | | ✓ | | |
-| `_AssetRevaluationIndex` | | ✓ | | |
-| `_ScrapAmount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `MasterFixedAsset` | ✓ | |  |  |  |  |
+| `FixedAsset` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `AssetRealDepreciationArea` | ✓ | |  | `cast(I_AssetTimeBasedValuation.AssetDepreciationArea as afabe_d)` |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `DepreciationStartDate` |  | |  |  |  |  |
+| `SpecialDeprStartDate` |  | |  |  |  |  |
+| `DeprKeyChangeoverYear` |  | |  | `cast(I_AssetValuation.DeprKeyChangeoverYear as fis_umjar)` |  |  |
+| `DeprKeyChangeoverPeriod` |  | |  |  |  |  |
+| `DepreciationKey` |  | |  |  |  |  |
+| `InvestmentSupportMeasure` |  | |  | `cast('' as faa_invsl)` |  |  |
+| `PlannedUsefulLifeInPeriods` |  | |  | `cast(I_AssetTimeBasedValuation.PlannedUsefulLifeInPeriods as fis_ndper)` |  |  |
+| `PlannedUsefulLifeInYears` |  | |  | `cast(I_AssetTimeBasedValuation.PlannedUsefulLifeInYears as fis_ndjar)` |  |  |
+| `VintageYear` |  | |  | `cast('0000' as fis_vyear)` |  |  |
+| `VintageMonth` |  | |  | `cast('000' as fis_vmnth)` |  |  |
+| `OriglAstUsefulLifeInPerds` |  | |  | `cast('000' as fis_ndurp)` |  |  |
+| `OriglAstUsefulLifeInYears` |  | |  | `cast('000' as ndurj)` |  |  |
+| `ReplacementValueIndexSers` |  | |  |  |  |  |
+| `RplcmtValueAgingIndexSers` |  | |  | `cast(I_AssetValuation.RplcmtValueAgingIndexSers as fis_alind)` |  |  |
+| `AcqnProdnCostScrapPercent` |  | |  |  |  |  |
+| `VariableDeprPercent` |  | |  |  |  |  |
+| `ShiftOperationFactor` |  | |  |  |  |  |
+| `IsShutDown` |  | |  |  |  |  |
+| `DeprCalcBaseValuePercent` |  | |  |  |  |  |
+| `LastRetirementValueDate` |  | |  |  |  |  |
+| `DepreciationAreaType` |  | |  |  |  |  |
+| `ScrapAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |  |  |
+| `AssetOpgReadinessDate` |  | |  |  |  |  |
+| `FixedAssetUsageObject` |  | |  |  |  |  |
+| `AssetRevaluationIndex` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_DepreciationArea` | | ✓ | | | | |
+| `_ReplacementValueIndexSers` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_FixedAssetUsageObject` | | ✓ | | | | |
+| `_AssetRevaluationIndex` | | ✓ | | | | |
+| `_ScrapAmount` | | ✓ | | | | |
 
 ## Associations
 

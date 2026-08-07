@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ModProdSpecItemType` |  | |  | `mmpur_mps_item_type` |
-| `ModProdSpecSelectedItemUUID` |  | |  | `mmpur_mps_selected_item_uuid` |
-| `ModProdSpecItemIsSubitem` |  | |  | `mmpur_mps_item_is_subitem` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ModProdSpecItemType` |  | |  | `mmpur_mps_item_type` |  |  |
+| `ModProdSpecSelectedItemUUID` |  | |  | `mmpur_mps_selected_item_uuid` |  |  |
+| `ModProdSpecItemIsSubitem` |  | |  | `mmpur_mps_item_is_subitem` |  |  |
 
 ## Source Code
 

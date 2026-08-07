@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SecurityClass` | ✓ | |  | `cast(ranl as ftr_gen_security_class preserving type)` |
-| `StockPartlyPaytEffctvFromDate` | ✓ | |  | `dguel_kk` |
-| `ScrtyClDvdndEntlmntStartDate` |  | |  | `ddbab` |
-| `ScrtyClDistrIsReinvested` |  | |  | `cast( case when StkSubscrpnRghtInvmtCertCndn.jthesau = '1' then 'X' else '' end as ftr_sc_sthes preserving type )` |
-| `DistrReinvestmentDiscInPct` |  | |  | `pwanlrab` |
-| `StockPartlyPayInRateInPercent` |  | |  | `kzahlakt` |
-| `StockPartlyPaymentAmount` |  | |  | `cast(StkSubscrpnRghtInvmtCertCndn.bzahlakt as ftr_sc_bzahlakt)` |
-| `StockPartlyPaymentDate` |  | |  | `drest` |
-| `IssueCurrency` |  | | `_SecurityClassBasic` | `IssueCurrency` |
-| `FinancialInstrProductCategory` |  | | `_SecurityClassBasic` | `FinancialInstrProductCategory` |
-| `_SecurityClassBasic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityClass` | ✓ | |  | `cast(ranl as ftr_gen_security_class preserving type)` |  |  |
+| `StockPartlyPaytEffctvFromDate` | ✓ | |  | `dguel_kk` |  |  |
+| `ScrtyClDvdndEntlmntStartDate` |  | |  | `ddbab` |  |  |
+| `ScrtyClDistrIsReinvested` |  | |  | `cast( case when StkSubscrpnRghtInvmtCertCndn.jthesau = '1' then 'X' else '' end as ftr_sc_sthes preserving type )` |  |  |
+| `DistrReinvestmentDiscInPct` |  | |  | `pwanlrab` |  |  |
+| `StockPartlyPayInRateInPercent` |  | |  | `kzahlakt` |  |  |
+| `StockPartlyPaymentAmount` |  | |  | `cast(StkSubscrpnRghtInvmtCertCndn.bzahlakt as ftr_sc_bzahlakt)` |  |  |
+| `StockPartlyPaymentDate` |  | |  | `drest` |  |  |
+| `IssueCurrency` |  | | `_SecurityClassBasic` | `IssueCurrency` |  |  |
+| `FinancialInstrProductCategory` |  | | `_SecurityClassBasic` | `FinancialInstrProductCategory` |  |  |
+| `_SecurityClassBasic` | | ✓ | | | | |
 
 ## Associations
 

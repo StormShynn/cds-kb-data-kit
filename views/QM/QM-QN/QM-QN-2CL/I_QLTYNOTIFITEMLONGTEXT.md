@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | |  | `Notification` |
-| `NotificationItem` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LongTextInternalNumber` | ✓ | |  |  |
-| `LongTextID` |  | |  |  |
-| `NotificationItemLongText` |  | |  |  |
-| `MimeType` |  | |  | `cast( I_NotificationItemLongText.MimeType as w3conttype )` |
-| `LongTextCreatedByUser` |  | |  |  |
-| `LongTextCreatedAt` |  | |  |  |
-| `LongTextLastChangedByUser` |  | |  |  |
-| `LongTextLastChangedAt` |  | |  |  |
-| `_QltyNotification` | | ✓ | | |
-| `_QualityNotificationItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |  |  |
+| `NotificationItem` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LongTextInternalNumber` | ✓ | |  |  |  |  |
+| `LongTextID` |  | |  |  |  |  |
+| `NotificationItemLongText` |  | |  |  |  |  |
+| `MimeType` |  | |  | `cast( I_NotificationItemLongText.MimeType as w3conttype )` |  |  |
+| `LongTextCreatedByUser` |  | |  |  |  |  |
+| `LongTextCreatedAt` |  | |  |  |  |  |
+| `LongTextLastChangedByUser` |  | |  |  |  |  |
+| `LongTextLastChangedAt` |  | |  |  |  |  |
+| `_QltyNotification` | | ✓ | | | | |
+| `_QualityNotificationItem` | | ✓ | | | | |
 
 ## Associations
 

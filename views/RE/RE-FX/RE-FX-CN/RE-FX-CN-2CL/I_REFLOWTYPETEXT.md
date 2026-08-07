@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `REFlowType` | ✓ | |  | `flowtype` |
-| `REFlowTypeName` |  | |  | `xflowtype` |
-| `_REFlowType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `REFlowType` | ✓ | |  | `flowtype` |  |  |
+| `REFlowTypeName` |  | |  | `xflowtype` |  |  |
+| `_REFlowType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

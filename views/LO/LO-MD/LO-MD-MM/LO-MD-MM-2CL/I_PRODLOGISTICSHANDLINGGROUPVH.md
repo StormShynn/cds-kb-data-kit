@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductLogisticsHandlingGroup` | ✓ | |  | `loggr` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductLogisticsHandlingGroup` | ✓ | |  | `loggr` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

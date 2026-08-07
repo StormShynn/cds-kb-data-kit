@@ -29,54 +29,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesBillingProviderContract` | ✓ | |  | `ProviderContract` |
-| `SlsBillgProviderContractItem` | ✓ | |  | `ProviderContractItem` |
-| `CAProviderContractItemUUID` |  | |  |  |
-| `CAPrvdrContrParentItemUUID` |  | |  |  |
-| `CAProviderContractStatus` |  | |  |  |
-| `CAProviderContractItemText` |  | |  |  |
-| `CASubscriptionChargeType` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CAPrvdrContrItmValidFromDteTme` |  | |  |  |
-| `CAPrvdrContrItmValidToDateTime` |  | |  |  |
-| `CAPrvdrContrItemCanclnDateTime` |  | |  |  |
-| `PrvdrContrItmWthdrwlDateTime` |  | |  |  |
-| `CAStartOfDurationDateTime` |  | |  |  |
-| `CAEndOfDurationDateTime` |  | |  |  |
-| `CAProduct` |  | |  |  |
-| `ProductConfiguration` |  | |  |  |
-| `SoldProduct` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `BusinessSolutionOrderItem` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `CAPrvdrContrSalesAreaAttrib1` |  | |  |  |
-| `CAPrvdrContrSalesAreaAttrib2` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `Segment` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CAStandardDivision` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `InternalOrder` |  | |  |  |
-| `EBRRResultAnalysisInternalID` |  | |  |  |
-| `EBRRIsBundleActive` |  | |  |  |
-| `_PrvdrContr` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_CompCode` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_Segment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesBillingProviderContract` | ✓ | |  | `ProviderContract` |  |  |
+| `SlsBillgProviderContractItem` | ✓ | |  | `ProviderContractItem` |  |  |
+| `CAProviderContractItemUUID` |  | |  |  |  |  |
+| `CAPrvdrContrParentItemUUID` |  | |  |  |  |  |
+| `CAProviderContractStatus` |  | |  |  |  |  |
+| `CAProviderContractItemText` |  | |  |  |  |  |
+| `CASubscriptionChargeType` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CAPrvdrContrItmValidFromDteTme` |  | |  |  |  |  |
+| `CAPrvdrContrItmValidToDateTime` |  | |  |  |  |  |
+| `CAPrvdrContrItemCanclnDateTime` |  | |  |  |  |  |
+| `PrvdrContrItmWthdrwlDateTime` |  | |  |  |  |  |
+| `CAStartOfDurationDateTime` |  | |  |  |  |  |
+| `CAEndOfDurationDateTime` |  | |  |  |  |  |
+| `CAProduct` |  | |  |  |  |  |
+| `ProductConfiguration` |  | |  |  |  |  |
+| `SoldProduct` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `CAPrvdrContrSalesAreaAttrib1` |  | |  |  |  |  |
+| `CAPrvdrContrSalesAreaAttrib2` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CAStandardDivision` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `InternalOrder` |  | |  |  |  |  |
+| `EBRRResultAnalysisInternalID` |  | |  |  |  |  |
+| `EBRRIsBundleActive` |  | |  |  |  |  |
+| `_PrvdrContr` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_CompCode` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
 
 ## Associations
 

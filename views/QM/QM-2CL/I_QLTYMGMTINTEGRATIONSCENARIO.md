@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QltyMgmtIntegrationScenario` | ✓ | |  | `integ_scenario` |
-| `QltyMgmtIntegScenState` |  | |  | `integration_state` |
-| `_QltyMgmtIntegScenState` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QltyMgmtIntegrationScenario` | ✓ | |  | `integ_scenario` |  |  |
+| `QltyMgmtIntegScenState` |  | |  | `integration_state` |  |  |
+| `_QltyMgmtIntegScenState` | | ✓ | | | | |
 
 ## Associations
 

@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WBSElementHierarchy` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `WBSElementHierarchyText` |  | |  |  |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WBSElementHierarchy` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `WBSElementHierarchyText` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

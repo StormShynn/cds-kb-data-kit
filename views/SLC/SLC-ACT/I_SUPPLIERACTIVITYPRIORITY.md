@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrActyPriority` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as /srmsmc/act_priority )` |
-| `_SupplierActivityPriorityText` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrActyPriority` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as /srmsmc/act_priority )` |  |  |
+| `_SupplierActivityPriorityText` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

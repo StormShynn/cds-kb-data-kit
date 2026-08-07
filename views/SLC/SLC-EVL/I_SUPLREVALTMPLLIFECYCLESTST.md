@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalTemplateLifecycleSts` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/sep_lifecycle_stat_cd preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SuplrEvalTmplLifecycleStsName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type)` |
-| `_Language` | | ✓ | | |
-| `_SuplrEvalTmplLifecycleSts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalTemplateLifecycleSts` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/sep_lifecycle_stat_cd preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SuplrEvalTmplLifecycleStsName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SuplrEvalTmplLifecycleSts` | | ✓ | | | | |
 
 ## Associations
 

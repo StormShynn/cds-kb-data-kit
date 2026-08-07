@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `QltyInProcmtIntID` | ✓ | |  |  |
-| `StatusCode` | ✓ | |  |  |
-| `StatusProfile` |  | |  |  |
-| `StatusObject` |  | |  |  |
-| `UserStatusName` |  | |  |  |
-| `_QltyInProcurement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `QltyInProcmtIntID` | ✓ | |  |  |  |  |
+| `StatusCode` | ✓ | |  |  |  |  |
+| `StatusProfile` |  | |  |  |  |  |
+| `StatusObject` |  | |  |  |  |  |
+| `UserStatusName` |  | |  |  |  |  |
+| `_QltyInProcurement` | | ✓ | | | | |
 
 ## Source Code
 

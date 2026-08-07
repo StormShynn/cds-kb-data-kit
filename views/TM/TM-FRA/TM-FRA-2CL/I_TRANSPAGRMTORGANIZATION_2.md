@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspAgrmtOrganizationUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_fag_org_uuid preserving type)` |
-| `TransportationAgreementUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_uuid preserving type)` |
-| `TranspPurgOrg` |  | |  | `purch_org` |
-| `_PurchasingOrg` | | ✓ | | |
-| `_TransportationAgreement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspAgrmtOrganizationUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_fag_org_uuid preserving type)` |  |  |
+| `TransportationAgreementUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_uuid preserving type)` |  |  |
+| `TranspPurgOrg` |  | |  | `purch_org` |  |  |
+| `_PurchasingOrg` | | ✓ | | | | |
+| `_TransportationAgreement` | | ✓ | | | | |
 
 ## Associations
 

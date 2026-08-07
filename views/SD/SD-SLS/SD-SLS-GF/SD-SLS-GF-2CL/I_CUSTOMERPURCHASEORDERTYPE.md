@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerPurchaseOrderType` | ✓ | |  | `bsark` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerPurchaseOrderType` | ✓ | |  | `bsark` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

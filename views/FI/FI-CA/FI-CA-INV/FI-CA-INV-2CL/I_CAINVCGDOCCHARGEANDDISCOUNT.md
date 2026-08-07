@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |
-| `CADocumentNumber` | ✓ | |  | `opbel` |
-| `CABPItemNumber` | ✓ | |  | `opupk` |
-| `CAInvcgChargeAndDiscountKey` |  | |  | `chgkey` |
-| `CAInvcgIsChargeOrDiscount` |  | |  | `chgdisc` |
-| `CACreditWorthiness` |  | |  | `bonit` |
-| `CAItemPeriodStartDate` |  | |  | `date_from` |
-| `CAItemPeriodEndDate` |  | |  | `date_to` |
-| `TransactionCurrency` |  | |  | `waers` |
-| `CAInvcgChrgAndDiscBaseAmount` |  | |  | `basamt` |
-| `CAInvcgChrgAndDiscAmount` |  | |  | `chgamt` |
-| `CAInvcgChrgAndDiscIsExisting` |  | |  | `chghist` |
-| `_CAInvcgDocHeader` | | ✓ | | |
-| `_CADocument` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
+| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
+| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
+| `CAInvcgChargeAndDiscountKey` |  | |  | `chgkey` |  |  |
+| `CAInvcgIsChargeOrDiscount` |  | |  | `chgdisc` |  |  |
+| `CACreditWorthiness` |  | |  | `bonit` |  |  |
+| `CAItemPeriodStartDate` |  | |  | `date_from` |  |  |
+| `CAItemPeriodEndDate` |  | |  | `date_to` |  |  |
+| `TransactionCurrency` |  | |  | `waers` |  |  |
+| `CAInvcgChrgAndDiscBaseAmount` |  | |  | `basamt` |  |  |
+| `CAInvcgChrgAndDiscAmount` |  | |  | `chgamt` |  |  |
+| `CAInvcgChrgAndDiscIsExisting` |  | |  | `chghist` |  |  |
+| `_CAInvcgDocHeader` | | ✓ | | | | |
+| `_CADocument` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OvrlItmGdsMvtIncompletionSts` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OvrlItmGdsMvtIncompltnStsDesc` |  | |  | `bezei` |
-| `_OvrlItmGdsMvtIncompletionSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OvrlItmGdsMvtIncompletionSts` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OvrlItmGdsMvtIncompltnStsDesc` |  | |  | `bezei` |  |  |
+| `_OvrlItmGdsMvtIncompletionSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

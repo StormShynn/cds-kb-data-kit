@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sc` | `srcdoccat` |
-| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sc` | `srcdoctype` |
-| `_CAInvcgSourceDocTypeText` | | ✓ | | |
-| `_CAInvcgSourceDocCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sc` | `srcdoccat` |  |  |
+| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sc` | `srcdoctype` |  |  |
+| `_CAInvcgSourceDocTypeText` | | ✓ | | | | |
+| `_CAInvcgSourceDocCat` | | ✓ | | | | |
 
 ## Associations
 

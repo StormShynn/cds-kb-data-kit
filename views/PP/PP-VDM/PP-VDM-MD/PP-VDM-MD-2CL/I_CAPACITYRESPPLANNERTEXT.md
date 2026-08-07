@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityResponsiblePlanner` | ✓ | |  | `cast(txt.planr as kapplaner preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
-| `CapacityResponsiblePlannerName` |  | |  | `cast(txt.txt as kapplanername preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityResponsiblePlanner` | ✓ | |  | `cast(txt.planr as kapplaner preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |  |  |
+| `CapacityResponsiblePlannerName` |  | |  | `cast(txt.txt as kapplanername preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

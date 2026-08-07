@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionLotOrigin` | ✓ | |  | `herkunft` |
-| `InspLotSummaryControl` | ✓ | |  | `einwelos` |
-| `InspLotSummaryControlTxt` |  | |  | `kurztext` |
-| `_Language` | | ✓ | | |
-| `_InspLotSummaryControl` | | ✓ | | |
-| `_InspectionLotOrigin` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionLotOrigin` | ✓ | |  | `herkunft` |  |  |
+| `InspLotSummaryControl` | ✓ | |  | `einwelos` |  |  |
+| `InspLotSummaryControlTxt` |  | |  | `kurztext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspLotSummaryControl` | | ✓ | | | | |
+| `_InspectionLotOrigin` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |
-| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |
-| `FixedAssetUsageObjectDeprArea` | ✓ | |  | `depr_area` |
-| `ValidityEndDate` | ✓ | |  | `valid_to_date` |
-| `ValidityStartDate` |  | |  | `valid_from_date` |
-| `CapacityInProductionUnit` |  | |  | `total_units` |
-| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` |
-| `_UsageObject` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |  |  |
+| `FixedAssetUsageObjectDeprArea` | ✓ | |  | `depr_area` |  |  |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` |  |  |
+| `ValidityStartDate` |  | |  | `valid_from_date` |  |  |
+| `CapacityInProductionUnit` |  | |  | `total_units` |  |  |
+| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` |  |  |
+| `_UsageObject` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

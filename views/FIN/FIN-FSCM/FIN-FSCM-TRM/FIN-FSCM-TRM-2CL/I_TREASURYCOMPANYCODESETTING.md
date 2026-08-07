@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `CompanyCodeIsTreasuryCenter` |  | |  | `is_trsy_center` |
-| `TreasuryCenterSortSequenceVal` |  | |  | `trsy_ctr_sort_order` |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `CompanyCodeIsTreasuryCenter` |  | |  | `is_trsy_center` |  |  |
+| `TreasuryCenterSortSequenceVal` |  | |  | `trsy_ctr_sort_order` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

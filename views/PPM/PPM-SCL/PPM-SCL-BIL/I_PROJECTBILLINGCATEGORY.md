@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectBillingCategory` | ✓ | |  | `cast( substring( domvalue_l, 1, 4 ) as prflcat preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_ProjectBillingCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectBillingCategory` | ✓ | |  | `cast( substring( domvalue_l, 1, 4 ) as prflcat preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_ProjectBillingCategoryText` | | ✓ | | | | |
 
 ## Source Code
 

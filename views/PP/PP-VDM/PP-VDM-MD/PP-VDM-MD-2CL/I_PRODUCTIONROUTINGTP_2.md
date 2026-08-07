@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionRoutingGroup` | ✓ | |  |  |
-| `ProductionRouting` | ✓ | |  |  |
-| `BillOfOperationsVersionType` |  | |  |  |
-| `BillOfOperationsSubtype` |  | |  |  |
-| `LastUsageDate` |  | |  |  |
-| `NumberOfUsages` |  | |  |  |
-| `HasChangeNumber` |  | |  |  |
-| `HasParameterEffectivity` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `RoutingIsReworkRouting` |  | |  |  |
-| `ProdnProcgIsFlexible` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_Header` | | ✓ | | |
-| `_MatlAssgmt` | | ✓ | | |
-| `_NonSqnc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |  |  |
+| `ProductionRouting` | ✓ | |  |  |  |  |
+| `BillOfOperationsVersionType` |  | |  |  |  |  |
+| `BillOfOperationsSubtype` |  | |  |  |  |  |
+| `LastUsageDate` |  | |  |  |  |  |
+| `NumberOfUsages` |  | |  |  |  |  |
+| `HasChangeNumber` |  | |  |  |  |  |
+| `HasParameterEffectivity` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `RoutingIsReworkRouting` |  | |  |  |  |  |
+| `ProdnProcgIsFlexible` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
+| `_MatlAssgmt` | | ✓ | | | | |
+| `_NonSqnc` | | ✓ | | | | |
 
 ## Source Code
 

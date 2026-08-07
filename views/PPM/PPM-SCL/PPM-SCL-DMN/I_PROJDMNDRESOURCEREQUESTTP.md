@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjDmndResourceRequestUUID` | ✓ | |  |  |
-| `ProjectDemandWorkUUID` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ReferencedObjectUUID` |  | |  |  |
-| `ProjectDemandRequestedResource` |  | |  |  |
-| `ProjDmndStfngInstructionText` |  | |  |  |
-| `ProjDmndRsceReqWorkAssgmtOID` |  | |  |  |
-| `ProjDmndRsceReqWrkfrcPersonOID` |  | |  |  |
-| `ProjDmndRsceReqStartDate` |  | |  |  |
-| `ProjDmndRsceReqEndDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_Work` | | ✓ | | |
-| `_ProjDmndRsceReqDistr` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
-| `_PersonWorkAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjDmndResourceRequestUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandWorkUUID` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ReferencedObjectUUID` |  | |  |  |  |  |
+| `ProjectDemandRequestedResource` |  | |  |  |  |  |
+| `ProjDmndStfngInstructionText` |  | |  |  |  |  |
+| `ProjDmndRsceReqWorkAssgmtOID` |  | |  |  |  |  |
+| `ProjDmndRsceReqWrkfrcPersonOID` |  | |  |  |  |  |
+| `ProjDmndRsceReqStartDate` |  | |  |  |  |  |
+| `ProjDmndRsceReqEndDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_Work` | | ✓ | | | | |
+| `_ProjDmndRsceReqDistr` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_PersonWorkAgrmt` | | ✓ | | | | |
 
 ## Source Code
 

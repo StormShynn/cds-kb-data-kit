@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountLineItem` |  | |  | `docln6` |
-| `WithholdingTaxType` |  | |  | `witht` |
-| `WithholdingTaxCode` |  | |  | `wt_withcd` |
-| `WhldgTaxBaseIsEnteredManually` |  | |  | `wt_basman` |
-| `WhldgTaxIsEnteredManually` |  | |  | `wt_amnman` |
-| `_JournalEntryPost` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountLineItem` |  | |  | `docln6` |  |  |
+| `WithholdingTaxType` |  | |  | `witht` |  |  |
+| `WithholdingTaxCode` |  | |  | `wt_withcd` |  |  |
+| `WhldgTaxBaseIsEnteredManually` |  | |  | `wt_basman` |  |  |
+| `WhldgTaxIsEnteredManually` |  | |  | `wt_amnman` |  |  |
+| `_JournalEntryPost` | | ✓ | | | | |
 
 ## Source Code
 

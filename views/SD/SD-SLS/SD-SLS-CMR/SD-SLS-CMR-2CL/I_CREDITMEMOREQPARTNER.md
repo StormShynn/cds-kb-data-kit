@@ -30,43 +30,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditMemoRequest` | ✓ | |  | `cast(SalesDocument as credit_memo_request preserving type)` |
-| `PartnerFunction` | ✓ | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `Partner` |  | |  |  |
-| `FullName` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `SDDocPartnerAddressRefType` |  | |  |  |
-| `BPAddrDeterminationTransaction` |  | |  |  |
-| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `InternationalPhoneNumber` |  | |  |  |
-| `InternationalMobilePhoneNumber` |  | |  |  |
-| `InternationalFaxNumber` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |
-| `_CreditMemoRequest` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_DfltAddrRprstn` | | ✓ | | |
-| `_BusinessPartnerAddress` | | ✓ | | |
-| `_BPRefAddressForDocSpcfcAddr` | | ✓ | | |
-| `_PersonAddress` | | ✓ | | |
-| `_PersonName` | | ✓ | | |
-| `_OrganizationAddress` | | ✓ | | |
-| `_OrgNamePostalAddress` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  | `cast(SalesDocument as credit_memo_request preserving type)` |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `FullName` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `InternationalPhoneNumber` |  | |  |  |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |  |  |
+| `InternationalFaxNumber` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |  |  |
+| `_CreditMemoRequest` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_DfltAddrRprstn` | | ✓ | | | | |
+| `_BusinessPartnerAddress` | | ✓ | | | | |
+| `_BPRefAddressForDocSpcfcAddr` | | ✓ | | | | |
+| `_PersonAddress` | | ✓ | | | | |
+| `_PersonName` | | ✓ | | | | |
+| `_OrganizationAddress` | | ✓ | | | | |
+| `_OrgNamePostalAddress` | | ✓ | | | | |
 
 ## Associations
 

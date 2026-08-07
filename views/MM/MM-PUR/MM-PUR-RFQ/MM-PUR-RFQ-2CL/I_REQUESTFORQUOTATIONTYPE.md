@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RFQType` | ✓ | |  | `PurchasingDocumentType` |
-| `_RFQTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RFQType` | ✓ | |  | `PurchasingDocumentType` |  |  |
+| `_RFQTypeText` | | ✓ | | | | |
 
 ## Associations
 

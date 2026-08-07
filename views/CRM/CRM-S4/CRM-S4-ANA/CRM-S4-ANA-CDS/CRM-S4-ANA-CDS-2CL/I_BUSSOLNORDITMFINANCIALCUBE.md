@@ -27,69 +27,69 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `BusSolnOrdType` |  | |  |  |
-| `BusSolnOrdDescription` |  | |  |  |
-| `BusSolnOrdItmDescription` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `BusSolnOrdItmStatus` |  | |  |  |
-| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |
-| `TransactionCurrency` |  | |  |  |
-| `TotBusSolnOrdItmNetAmtPerPerd` |  | |  | `} TotBusSolnOrdItmNetAmtPerPerd` |
-| `ServiceDocumentItemObjectType` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `RevenueAmountInCompanyCodeCrcy` |  | |  | `} RevenueAmountInCompanyCodeCrcy` |
-| `CostAmountInCompanyCodeCrcy` |  | |  | `} CostAmountInCompanyCodeCrcy` |
-| `RecognizedMarginAmtInCCCrcy` |  | |  | `} RecognizedMarginAmtInCCCrcy` |
-| `BusSolnOrdStatus` |  | |  |  |
-| `ServiceDocItemCategory` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | | `_Product` | `ProductGroup` |
-| `PostingDate` |  | |  |  |
-| `SlsItmNetAmount` |  | |  | `} case when ServiceDocumentItemObjectType = 'BUS2000131' then TotBusSolnOrdItmNetAmtPerPerd end` |
-| `ServiceContractItemNetAmount` |  | |  | `} case when ServiceDocumentItemObjectType = 'BUS2000137' then TotBusSolnOrdItmNetAmtPerPerd end` |
-| `ExpnItmNetAmount` |  | |  | `} case when ServiceDocumentItemObjectType = 'BUS2000159' then TotBusSolnOrdItmNetAmtPerPerd end` |
-| `SbscrBilgItmNetAmount` |  | |  | `} case when ServiceDocumentItemObjectType = 'BUS2000189' then TotBusSolnOrdItmNetAmtPerPerd end` |
-| `SrvcPrtItmNetAmount` |  | |  | `} case when ServiceDocumentItemObjectType = 'BUS2000146' then TotBusSolnOrdItmNetAmtPerPerd end` |
-| `SrvcItmNetAmount` |  | |  | `} case when ServiceDocumentItemObjectType = 'BUS2000140' then TotBusSolnOrdItmNetAmtPerPerd end` |
-| `EnterpriseProjectItemNetAmount` |  | |  | `} case when ServiceDocumentItemObjectType = 'BUS2000193' then TotBusSolnOrdItmNetAmtPerPerd end` |
-| `NrOfOpenBusSolnOrders` |  | |  |  |
-| `NrOfReldBusSolnOrders` |  | |  |  |
-| `NrOfCmpltdBusSolnOrders` |  | |  |  |
-| `BusSolnOrdCreationQuarter` |  | | `_Period` | `CalendarQuarter` |
-| `BusSolnOrdCreationMonth` |  | | `_Period` | `CalendarMonth` |
-| `BusSolnOrdCreationYear` |  | | `_Period` | `CalendarYear` |
-| `ServiceDocItemCreationDate` |  | |  |  |
-| `ServiceDocumentCreationDate` |  | |  |  |
-| `_Period` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_ServiceDocItemStatus` | | ✓ | | |
-| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_SrvcDocLifecycleStatus` | | ✓ | | |
-| `_ServiceDocItemCategory` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `BusSolnOrdType` |  | |  |  |  |  |
+| `BusSolnOrdDescription` |  | |  |  |  |  |
+| `BusSolnOrdItmDescription` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `BusSolnOrdItmStatus` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `TotBusSolnOrdItmNetAmtPerPerd` |  | |  |  |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `RevenueAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `CostAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `RecognizedMarginAmtInCCCrcy` |  | |  |  |  |  |
+| `BusSolnOrdStatus` |  | |  |  |  |  |
+| `ServiceDocItemCategory` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | | `_Product` | `ProductGroup` |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `SlsItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000131' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
+| `ServiceContractItemNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000137' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
+| `ExpnItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000159' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
+| `SbscrBilgItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000189' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
+| `SrvcPrtItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000146' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
+| `SrvcItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000140' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
+| `EnterpriseProjectItemNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000193' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
+| `NrOfOpenBusSolnOrders` |  | |  |  |  |  |
+| `NrOfReldBusSolnOrders` |  | |  |  |  |  |
+| `NrOfCmpltdBusSolnOrders` |  | |  |  |  |  |
+| `BusSolnOrdCreationQuarter` |  | | `_Period` | `CalendarQuarter` |  |  |
+| `BusSolnOrdCreationMonth` |  | | `_Period` | `CalendarMonth` |  |  |
+| `BusSolnOrdCreationYear` |  | | `_Period` | `CalendarYear` |  |  |
+| `ServiceDocItemCreationDate` |  | |  |  |  |  |
+| `ServiceDocumentCreationDate` |  | |  |  |  |  |
+| `_Period` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_ServiceDocItemStatus` | | ✓ | | | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | | | |
+| `_ServiceDocItemCategory` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Associations
 

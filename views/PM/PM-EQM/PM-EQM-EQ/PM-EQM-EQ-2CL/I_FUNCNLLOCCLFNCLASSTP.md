@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalLocation` | ✓ | |  |  |
-| `ClassInternalID` | ✓ | |  |  |
-| `ClassType` | ✓ | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `KeyDate` |  | |  |  |
-| `Class` |  | |  |  |
-| `ClfnStatus` |  | |  |  |
-| `ClassPositionNumber` |  | |  |  |
-| `ClassIsStandardClass` |  | |  |  |
-| `ClfnObjectInternalID` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ClassMaintAuthGrp` |  | |  |  |
-| `ClassClassfctnAuthGrp` |  | |  |  |
-| `_Characteristic` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |  |  |
+| `ClassInternalID` | ✓ | |  |  |  |  |
+| `ClassType` | ✓ | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `KeyDate` |  | |  |  |  |  |
+| `Class` |  | |  |  |  |  |
+| `ClfnStatus` |  | |  |  |  |  |
+| `ClassPositionNumber` |  | |  |  |  |  |
+| `ClassIsStandardClass` |  | |  |  |  |  |
+| `ClfnObjectInternalID` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |  |  |
+| `_Characteristic` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
 
 ## Source Code
 

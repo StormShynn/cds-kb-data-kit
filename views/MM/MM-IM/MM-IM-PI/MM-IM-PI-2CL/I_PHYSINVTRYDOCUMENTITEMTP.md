@@ -31,76 +31,76 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FiscalYear` | ✓ | |  |  |
-| `PhysicalInventoryDocument` | ✓ | |  |  |
-| `PhysicalInventoryDocumentItem` | ✓ | |  |  |
-| `Material` |  | |  | `, useAsTemplate: true } ] } Material` |
-| `Plant` |  | |  | `, useAsTemplate: true } ] } Plant` |
-| `StorageLocation` |  | |  | `, additionalBinding: [{ localElement: 'Plant', element: 'Plant'}], useAsTemplate: true } ] } StorageLocation` |
-| `Batch` |  | |  |  |
-| `InventorySpecialStockType` |  | |  | `, useAsTemplate: true } ] } InventorySpecialStockType` |
-| `ValuationType` |  | |  |  |
-| `PhysicalInventoryStockType` |  | |  | `, useAsTemplate: true } ] } PhysicalInventoryStockType` |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `ScheduleLine` |  | |  |  |
-| `Supplier` |  | |  | `, useAsTemplate: true } ] } Supplier` |
-| `Customer` |  | |  | `, useAsTemplate: true } ] } Customer` |
-| `StockOwner` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `CountedByUser` |  | |  |  |
-| `PhysicalInventoryLastCountDate` |  | |  |  |
-| `AdjustmentPostingMadeByUser` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PhysicalInventoryItemIsCounted` |  | |  |  |
-| `PhysInvtryDifferenceIsPosted` |  | |  |  |
-| `PhysInvtryItemIsRecounted` |  | |  |  |
-| `PhysInvtryItemIsDeleted` |  | |  |  |
-| `IsHandledInAltvUnitOfMsr` |  | |  |  |
-| `BookQtyBfrCountInMatlBaseUnit` |  | |  |  |
-| `PhysicalInventoryItemIsZero` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `MaterialBaseUnit` |  | |  |  |
-| `QuantityInUnitOfEntry` |  | |  |  |
-| `UnitOfEntry` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `PhysInvtryRecountDocument` |  | |  |  |
-| `DifferenceAmountInCoCodeCrcy` |  | |  |  |
-| `Currency` |  | |  |  |
-| `CycleCountType` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `SlsPrcAmtInclVATInCoCodeCrcy` |  | |  |  |
-| `SlsPrcAmtExclVATInCoCodeCrcy` |  | |  |  |
-| `DiffAmountOnCountEntryInCCCrcy` |  | |  |  |
-| `EnteredSlsAmtInCoCodeCrcy` |  | |  |  |
-| `SlsPriceAmountInCoCodeCrcy` |  | |  |  |
-| `IsValueOnlyMaterial` |  | |  |  |
-| `PhysInvtryCtAmtInCoCodeCrcy` |  | |  |  |
-| `BookQtyAmountInCoCodeCrcy` |  | |  |  |
-| `ProductCategory` |  | |  | `, useAsTemplate: true } ] } ProductCategory` |
-| `ReasonForPhysInvtryDifference` |  | |  |  |
-| `CrossPlantConfigurableMaterial` |  | |  | `, useAsTemplate: true } ] } CrossPlantConfigurableMaterial` |
-| `PhysInvtryDiffIsDistributed` |  | |  |  |
-| `_PhysicalInventoryDocument` | | ✓ | | |
-| `_CountSerialNumber` | | ✓ | | |
-| `_BookSerialNumber` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_CrossPlantConfigProductText` | | ✓ | | |
-| `_InventorySpecialStockTypeText` | | ✓ | | |
-| `_PhysInvtryStockTypeText` | | ✓ | | |
-| `_ProductCategoryText` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
-| `_CustomerCompanyByPlant` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductPlantBasic` | | ✓ | | |
-| `_Batch` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `PhysicalInventoryDocument` | ✓ | |  |  |  |  |
+| `PhysicalInventoryDocumentItem` | ✓ | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `PhysicalInventoryStockType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `ScheduleLine` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `StockOwner` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `CountedByUser` |  | |  |  |  |  |
+| `PhysicalInventoryLastCountDate` |  | |  |  |  |  |
+| `AdjustmentPostingMadeByUser` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PhysicalInventoryItemIsCounted` |  | |  |  |  |  |
+| `PhysInvtryDifferenceIsPosted` |  | |  |  |  |  |
+| `PhysInvtryItemIsRecounted` |  | |  |  |  |  |
+| `PhysInvtryItemIsDeleted` |  | |  |  |  |  |
+| `IsHandledInAltvUnitOfMsr` |  | |  |  |  |  |
+| `BookQtyBfrCountInMatlBaseUnit` |  | |  |  |  |  |
+| `PhysicalInventoryItemIsZero` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `MaterialBaseUnit` |  | |  |  |  |  |
+| `QuantityInUnitOfEntry` |  | |  |  |  |  |
+| `UnitOfEntry` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `PhysInvtryRecountDocument` |  | |  |  |  |  |
+| `DifferenceAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `CycleCountType` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `SlsPrcAmtInclVATInCoCodeCrcy` |  | |  |  |  |  |
+| `SlsPrcAmtExclVATInCoCodeCrcy` |  | |  |  |  |  |
+| `DiffAmountOnCountEntryInCCCrcy` |  | |  |  |  |  |
+| `EnteredSlsAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `SlsPriceAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `IsValueOnlyMaterial` |  | |  |  |  |  |
+| `PhysInvtryCtAmtInCoCodeCrcy` |  | |  |  |  |  |
+| `BookQtyAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `ProductCategory` |  | |  |  |  |  |
+| `ReasonForPhysInvtryDifference` |  | |  |  |  |  |
+| `CrossPlantConfigurableMaterial` |  | |  |  |  |  |
+| `PhysInvtryDiffIsDistributed` |  | |  |  |  |  |
+| `_PhysicalInventoryDocument` | | ✓ | | | | |
+| `_CountSerialNumber` | | ✓ | | | | |
+| `_BookSerialNumber` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_CrossPlantConfigProductText` | | ✓ | | | | |
+| `_InventorySpecialStockTypeText` | | ✓ | | | | |
+| `_PhysInvtryStockTypeText` | | ✓ | | | | |
+| `_ProductCategoryText` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
+| `_CustomerCompanyByPlant` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductPlantBasic` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
 
 ## Source Code
 

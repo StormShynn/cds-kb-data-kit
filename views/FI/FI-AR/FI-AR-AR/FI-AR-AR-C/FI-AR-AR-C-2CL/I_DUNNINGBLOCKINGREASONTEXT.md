@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DunningBlockingReason` | ✓ | |  | `cast( mansp as farp_mansp preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `DunningBlockingReasonDesc` |  | |  | `cast( text1 as farp_text1_040t preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DunningBlockingReason` | ✓ | |  | `cast( mansp as farp_mansp preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `DunningBlockingReasonDesc` |  | |  | `cast( text1 as farp_text1_040t preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

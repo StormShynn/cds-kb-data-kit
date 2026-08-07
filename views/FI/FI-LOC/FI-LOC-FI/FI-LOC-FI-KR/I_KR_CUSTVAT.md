@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `TaxInvcNmbrValidityStartDate` | ✓ | |  | `datab` |
-| `TaxNumber1` |  | |  | `stcd1` |
-| `TaxNumber2` |  | |  | `stcd2` |
-| `BusinessType` |  | |  | `gestyp` |
-| `IndustryType` |  | |  | `indtyp` |
-| `TaxInvoiceRepresentativeName` |  | |  | `repres` |
-| `CustomerBusinessPlace` |  | |  | `business_place` |
-| `ResponsibleDepartmentName1` |  | |  | `department_name` |
-| `ResponsibleDepartmentName2` |  | |  | `rdepname2` |
-| `ResponsiblePersonName1` |  | |  | `person_name` |
-| `ResponsiblePersonName2` |  | |  | `rpername2` |
-| `ResponsiblePersonEmailAddress1` |  | |  | `person_email1` |
-| `ResponsiblePersonEmailAddress2` |  | |  | `person_email2` |
-| `ResponsiblePersonPhoneNumber1` |  | |  | `person_phone1` |
-| `ResponsiblePersonPhoneNumber2` |  | |  | `person_phone2` |
-| `CustomerIsSelfBilling` |  | |  | `selfbilling` |
-| `CustomerIsMonthlyTaxInvcCust` |  | |  | `monthtax` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `TaxInvcNmbrValidityStartDate` | ✓ | |  | `datab` |  |  |
+| `TaxNumber1` |  | |  | `stcd1` |  |  |
+| `TaxNumber2` |  | |  | `stcd2` |  |  |
+| `BusinessType` |  | |  | `gestyp` |  |  |
+| `IndustryType` |  | |  | `indtyp` |  |  |
+| `TaxInvoiceRepresentativeName` |  | |  | `repres` |  |  |
+| `CustomerBusinessPlace` |  | |  | `business_place` |  |  |
+| `ResponsibleDepartmentName1` |  | |  | `department_name` |  |  |
+| `ResponsibleDepartmentName2` |  | |  | `rdepname2` |  |  |
+| `ResponsiblePersonName1` |  | |  | `person_name` |  |  |
+| `ResponsiblePersonName2` |  | |  | `rpername2` |  |  |
+| `ResponsiblePersonEmailAddress1` |  | |  | `person_email1` |  |  |
+| `ResponsiblePersonEmailAddress2` |  | |  | `person_email2` |  |  |
+| `ResponsiblePersonPhoneNumber1` |  | |  | `person_phone1` |  |  |
+| `ResponsiblePersonPhoneNumber2` |  | |  | `person_phone2` |  |  |
+| `CustomerIsSelfBilling` |  | |  | `selfbilling` |  |  |
+| `CustomerIsMonthlyTaxInvcCust` |  | |  | `monthtax` |  |  |
 
 ## Source Code
 

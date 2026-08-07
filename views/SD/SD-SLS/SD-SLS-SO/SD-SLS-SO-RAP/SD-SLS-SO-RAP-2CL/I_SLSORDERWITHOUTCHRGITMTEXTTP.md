@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrderWithoutCharge` |  | |  | `key SlsOrderWithoutChargeItemText. SalesOrderWithoutCharge` |
-| `SalesOrderWithoutChargeItem` |  | |  | `key SlsOrderWithoutChargeItemText. SalesOrderWithoutChargeItem` |
-| `Language` | ✓ | |  |  |
-| `LongTextID` | ✓ | |  |  |
-| `LongTextIDForEdit` |  | |  |  |
-| `LanguageForEdit` |  | |  |  |
-| `LongText` |  | |  |  |
-| `SalesOrderWithoutChargeType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_SalesOrderWithoutCharge` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrderWithoutCharge` |  | |  | `key SlsOrderWithoutChargeItemText. SalesOrderWithoutCharge` |  |  |
+| `SalesOrderWithoutChargeItem` |  | |  | `key SlsOrderWithoutChargeItemText. SalesOrderWithoutChargeItem` |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LongTextID` | ✓ | |  |  |  |  |
+| `LongTextIDForEdit` |  | |  |  |  |  |
+| `LanguageForEdit` |  | |  |  |  |  |
+| `LongText` |  | |  |  |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_SalesOrderWithoutCharge` | | ✓ | | | | |
 
 ## Source Code
 

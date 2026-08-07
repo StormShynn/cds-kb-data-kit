@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PrcgConditionAmountSign` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as knega )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PrcgConditionAmountSign` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as knega )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

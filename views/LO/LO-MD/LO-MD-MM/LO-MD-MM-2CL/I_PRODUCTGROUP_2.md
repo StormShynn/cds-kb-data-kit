@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductGroup` | ✓ | |  | `cast(t023.matkl as productgroup preserving type )` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `ValuationClass` |  | |  | `bklas` |
-| `PurchasingAcknProfile` |  | |  | `ekwsl` |
-| `_ProductGroupText` | | ✓ | | |
-| `_ProductValuationClass` | | ✓ | | |
-| `_PurgAcknowledgmentProfile` | | ✓ | | |
-| `_ProductGroupHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductGroup` | ✓ | |  | `cast(t023.matkl as productgroup preserving type )` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `ValuationClass` |  | |  | `bklas` |  |  |
+| `PurchasingAcknProfile` |  | |  | `ekwsl` |  |  |
+| `_ProductGroupText` | | ✓ | | | | |
+| `_ProductValuationClass` | | ✓ | | | | |
+| `_PurgAcknowledgmentProfile` | | ✓ | | | | |
+| `_ProductGroupHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

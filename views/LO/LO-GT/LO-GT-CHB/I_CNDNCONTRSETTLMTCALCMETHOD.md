@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CndnContrSettlmtCalcMethod` | ✓ | |  | `cast( dd07l.domvalue_l as wb2_settlmt_calc_method )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrSettlmtCalcMethod` | ✓ | |  | `cast( dd07l.domvalue_l as wb2_settlmt_calc_method )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

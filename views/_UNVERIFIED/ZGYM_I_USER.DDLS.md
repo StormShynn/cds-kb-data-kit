@@ -28,22 +28,22 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Id` | ✓ | |  | `id` |
-| `Ssn` | ✓ | |  | `ssn` |
-| `Role` |  | |  | `role` |
-| `Name` |  | |  | `name` |
-| `Dob` |  | |  | `dob` |
-| `Email` |  | |  | `email` |
-| `CountryCode` |  | |  | `country_code` |
-| `PhoneNumber` |  | |  | `phone_number` |
-| `Createdby` |  | |  | `createdby` |
-| `Createdat` |  | |  | `createdat` |
-| `Lastchangedby` |  | |  | `lastchangedby` |
-| `Lastchangedat` |  | |  | `lastchangedat` |
-| `Locallastchanged` |  | |  | `locallastchanged` |
-| `_Membership` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Id` | ✓ | |  | `id` |  |  |
+| `Ssn` | ✓ | |  | `ssn` |  |  |
+| `Role` |  | |  | `role` |  |  |
+| `Name` |  | |  | `name` |  |  |
+| `Dob` |  | |  | `dob` |  |  |
+| `Email` |  | |  | `email` |  |  |
+| `CountryCode` |  | |  | `country_code` |  |  |
+| `PhoneNumber` |  | |  | `phone_number` |  |  |
+| `Createdby` |  | |  | `createdby` |  |  |
+| `Createdat` |  | |  | `createdat` |  |  |
+| `Lastchangedby` |  | |  | `lastchangedby` |  |  |
+| `Lastchangedat` |  | |  | `lastchangedat` |  |  |
+| `Locallastchanged` |  | |  | `locallastchanged` |  |  |
+| `_Membership` | | ✓ | | | | |
 
 ## Associations
 

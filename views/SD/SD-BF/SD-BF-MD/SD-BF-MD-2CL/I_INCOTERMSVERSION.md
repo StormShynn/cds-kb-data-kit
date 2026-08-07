@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IncotermsVersion` | ✓ | |  | `incov` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncotermsVersion` | ✓ | |  | `incov` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

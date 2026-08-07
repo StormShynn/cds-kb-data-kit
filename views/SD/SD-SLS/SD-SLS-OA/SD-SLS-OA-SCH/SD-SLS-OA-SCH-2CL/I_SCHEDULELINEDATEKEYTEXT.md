@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ScheduleLineDateKey` | ✓ | |  | `substring( domvalue_l,1,1 )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `ScheduleLineDateKeyDesc` |  | |  | `ddtext` |
-| `_ScheduleLineDateKey` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ScheduleLineDateKey` | ✓ | |  | `substring( domvalue_l,1,1 )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `ScheduleLineDateKeyDesc` |  | |  | `ddtext` |  |  |
+| `_ScheduleLineDateKey` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

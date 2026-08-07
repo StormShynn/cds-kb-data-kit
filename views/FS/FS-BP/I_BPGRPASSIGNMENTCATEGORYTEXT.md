@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BPGroupAssignmentCategory` | ✓ | |  | `cast ( dd07t.domvalue_l as vvgidtype_at )` |
-| `BPGrpAssgmtCategoryDescription` |  | |  | `ddtext` |
-| `_BPGrpAssignmentCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BPGroupAssignmentCategory` | ✓ | |  | `cast ( dd07t.domvalue_l as vvgidtype_at )` |  |  |
+| `BPGrpAssgmtCategoryDescription` |  | |  | `ddtext` |  |  |
+| `_BPGrpAssignmentCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

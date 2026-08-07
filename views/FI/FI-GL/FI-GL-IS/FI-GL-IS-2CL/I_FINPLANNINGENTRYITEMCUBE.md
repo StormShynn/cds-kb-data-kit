@@ -30,231 +30,231 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialPlanningDataPacket` | ✓ | |  |  |
-| `FinancialPlanningEntryItem` | ✓ | |  |  |
-| `FinancialPlanningReqTransSqnc` | ✓ | |  |  |
-| `AccountAssignmentType` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `BillToPartyName` |  | |  | `cast( I_FinancialPlanningEntryItem._BillToParty.CustomerName as bill_to_name preserving type)` |
-| `BillingDocumentType` |  | |  |  |
-| `BudgetingType` |  | |  |  |
-| `BudgetPeriod` |  | |  |  |
-| `BudgetProcess` |  | |  |  |
-| `BudgetDocWorkFlowStatus` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `BusinessAreaName` |  | |  | `cast( _BusinessArea._Text[1: Language = $session.system_language].BusinessAreaName as fis_busarea_name preserving type )` |
-| `BusinessTransactionCategory` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CompanyCodeName` |  | |  | `cast( I_FinancialPlanningEntryItem._CompanyCode.CompanyCodeName as fis_butxt preserving type )` |
-| `CompanyCodeCurrency` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ControllingAreaName` |  | |  | `cast( I_FinancialPlanningEntryItem._ControllingArea.ControllingAreaName as fis_bezei preserving type )` |
-| `ControllingDebitCreditCode` |  | |  | `cast( I_FinancialPlanningEntryItem.ControllingDebitCreditCode as fis_co_belkz_no_conv preserving type )` |
-| `CostAnalysisResource` |  | |  |  |
-| `CostCenter` |  | |  | `}] I_FinancialPlanningEntryItem.CostCenter` |
-| `CostCenterName` |  | |  | `_CostCenter[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].CostCenterName` |
-| `CostCtrActivityType` |  | |  |  |
-| `CostCtrActivityTypeName` |  | |  | `cast( _CostCtrActivityType[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].CostCtrActivityTypeName as fis_lstar_text )` |
-| `CostSourceUnit` |  | |  |  |
-| `Customer` |  | |  |  |
-| `CustomerName` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CustomerGroupName` |  | |  | `cast( _CustomerGroup._Text[1: Language = $session.system_language].CustomerGroupName as fis_customergroup_name )` |
-| `CustomerSupplierCorporateGroup` |  | |  |  |
-| `CustomerSupplierCountry` |  | |  |  |
-| `CustomerSupplierCountryName` |  | |  | `cast( _CustomerSupplierCountry._Text[1: Language = $session.system_language].CountryName as fis_customersupplier_country )` |
-| `CustomerSupplierIndustry` |  | |  |  |
-| `CustomerSupplierIndustryName` |  | |  | `cast( _CustomerSupplierIndustryText[1: Language = $session.system_language].CustomerSupplierIndustryName as fis_customersupplier_industry preserving type )` |
-| `DistributionChannel` |  | |  |  |
-| `DistributionChannelName` |  | |  | `cast( _DistributionChannel._Text[1: Language = $session.system_language].DistributionChannelName as fis_distributionchannel_name preserving type )` |
-| `OrganizationDivision` |  | |  |  |
-| `Division` |  | |  |  |
-| `DivisionName` |  | |  | `cast( _OrganizationDivision._Text[1: Language = $session.system_language].DivisionName as fis_division_name )` |
-| `FinancialTransactionType` |  | |  |  |
-| `FinancialManagementArea` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |
-| `FreeDefinedCurrency2` |  | |  |  |
-| `FreeDefinedCurrency3` |  | |  |  |
-| `FreeDefinedCurrency4` |  | |  |  |
-| `FreeDefinedCurrency5` |  | |  |  |
-| `FreeDefinedCurrency6` |  | |  |  |
-| `FreeDefinedCurrency7` |  | |  |  |
-| `FreeDefinedCurrency8` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `Fund` |  | |  |  |
-| `FunctionalAreaName` |  | |  | `cast( _FunctionalArea._Text[1: Language = $session.system_language].FunctionalAreaName as fis_funcarea_name )` |
-| `GLAccount` |  | |  |  |
-| `GLAccountName` |  | |  | `cast( _GLAccountInChartOfAccounts._Text[1: Language = $session.system_language].GLAccountName as fis_txt30_skat )` |
-| `GLAccountLongName` |  | |  | `cast( _GLAccountInChartOfAccounts._Text[1: Language = $session.system_language].GLAccountLongName as fis_txt50_skat )` |
-| `FunctionalCurrency` |  | |  |  |
-| `GlobalCurrency` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `Ledger` |  | |  |  |
-| `LedgerName` |  | |  | `_Ledger._Text[1: Language = $session.system_language].LedgerName` |
-| `LedgerFiscalYear` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialName` |  | |  | `_Material._Text[1: Language = $session.system_language].MaterialName` |
-| `MaterialGroup` |  | |  |  |
-| `MaterialGroupName` |  | |  | `_MaterialGroup._Text[1: Language = $session.system_language].MaterialGroupName` |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `ProductGroupName` |  | |  | `_ProductGroup_2._ProductGroupText[1: Language = $session.system_language].ProductGroupName` |
-| `ControllingObjectCurrency` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderItem` |  | |  |  |
-| `PartnerAccountAssignmentType` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `PartnerBusinessAreaName` |  | |  | `cast( _PartnerBusinessArea._Text[1: Language = $session.system_language].BusinessAreaName as fis_partner_busarea_name preserving type )` |
-| `PartnerCompany` |  | |  |  |
-| `PartnerCompanyName` |  | |  | `cast( _PartnerCompany[1: Language = $session.system_language].CompanyName as fis_rcomp_name preserving type )` |
-| `PartnerCompanyCode` |  | |  |  |
-| `PartnerCompanyCodeName` |  | |  | `cast( I_FinancialPlanningEntryItem._PartnerCompanyCode.CompanyCodeName as fis_partner_company_code_name preserving type )` |
-| `PartnerCostCenter` |  | |  |  |
-| `PartnerCostCenterName` |  | |  | `cast( _PartnerCostCenter[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].CostCenterName as fis_partner_kostl_name preserving type)` |
-| `PartnerCostCtrActivityType` |  | |  |  |
-| `PartnerCostCtrActivityTypeName` |  | |  | `cast( _PartnerCostCtrActivityType[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].CostCtrActivityTypeName as fis_partner_activity_type_name )` |
-| `PartnerFunctionalArea` |  | |  |  |
-| `PartnerFunctionalAreaName` |  | |  | `cast( _PartnerFunctionalArea._Text[1: Language = $session.system_language].FunctionalAreaName as fis_partner_funcarea_name )` |
-| `PartnerOrder` |  | |  |  |
-| `PartnerOrder_2` |  | |  |  |
-| `PartnerProfitCenter` |  | |  |  |
-| `PartnerProfitCenterName` |  | |  | `cast( _PartnerProfitCenter[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].ProfitCenterName as fis_partner_prctr_name )` |
-| `PartnerProject` |  | |  |  |
-| `PartnerProjectDescription` |  | |  | `cast( I_FinancialPlanningEntryItem._PartnerProjectBasicData.ProjectDescription as fis_partner_project_descript preserving type )` |
-| `PartnerSegment` |  | |  |  |
-| `PartnerSegmentName` |  | |  | `cast( _PartnerSegment._Text[1: Language = $session.system_language].SegmentName as fis_partner_segment_name preserving type )` |
-| `PartnerWBSElement` |  | |  |  |
-| `PartnerWBSElementDescription` |  | |  | `cast( I_FinancialPlanningEntryItem._PartnerWBSElementBasicData.WBSDescription as fis_partner_wbs_descript preserving type )` |
-| `PersonnelNumber` |  | |  |  |
-| `IsStatisticalOrder` |  | |  |  |
-| `IsStatisticalCostCenter` |  | |  |  |
-| `IsStatisticalSalesDocument` |  | |  |  |
-| `WBSIsStatisticalWBSElement` |  | |  |  |
-| `PlanningCategory` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PlantName` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocument` |  | |  |  |
-| `ServiceDocumentItem` |  | |  |  |
-| `ProfitCenter` |  | |  | `}] I_FinancialPlanningEntryItem.ProfitCenter` |
-| `ProfitCenterName` |  | |  | `_ProfitCenter[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].ProfitCenterName` |
-| `Project` |  | |  |  |
-| `ProjectInternalID` |  | |  |  |
-| `ProjectExternalID` |  | |  | `cast( I_FinancialPlanningEntryItem._ProjectBasicData.ProjectExternalID as fis_projectext_no_conv preserving type )` |
-| `PartnerProjectInternalID` |  | |  |  |
-| `PartnerProjectExternalID` |  | |  | `ProjectExternalID` |
-| `ProjectDescription` |  | |  | `cast( I_FinancialPlanningEntryItem._ProjectBasicData.ProjectDescription as fis_project_description preserving type )` |
-| `ReferenceDocument` |  | |  |  |
-| `ReferenceDocumentContext` |  | |  |  |
-| `ReferenceDocumentType` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `SalesDistrictName` |  | |  | `_SalesDistrict._Text[1: Language = $session.system_language].SalesDistrictName` |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SalesDocument` |  | |  |  |
-| `SalesDocumentItem` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOrganizationName` |  | |  | `cast( _SalesOrganization._Text[1: Language = $session.system_language].SalesOrganizationName as fis_sales_organization_name preserving type )` |
-| `Segment` |  | |  |  |
-| `SegmentName` |  | |  | `_Segment._Text[1: Language = $session.system_language].SegmentName` |
-| `ShipToParty` |  | |  |  |
-| `ShipToPartyName` |  | |  | `cast( I_FinancialPlanningEntryItem._ShipToParty.CustomerName as ship_to_name preserving type )` |
-| `SoldMaterial` |  | |  |  |
-| `SoldMaterialName` |  | |  | `cast( _SoldMaterial._Text[1: Language = $session.system_language].MaterialName as fis_matnr_copa_name preserving type )` |
-| `SoldProduct` |  | |  |  |
-| `SoldProductName` |  | |  | `cast( _SoldProduct._Text[1: Language = $session.system_language].ProductName as fis_matnr_copa_name preserving type)` |
-| `SoldProductGroup` |  | |  |  |
-| `SoldProductGroupName` |  | |  | `_SoldProductGroup._Text[1: Language = $session.system_language].MaterialGroupName` |
-| `TransactionCurrency` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSElementExternalID` |  | |  | `cast( I_FinancialPlanningEntryItem._WBSElementBasicData.WBSElementExternalID as fis_wbsext_no_conv preserving type )` |
-| `PartnerWBSElementInternalID` |  | |  |  |
-| `PartnerWBSElementExternalID` |  | |  | `WBSElementExternalID` |
-| `WBSElementDescription` |  | |  | `WBSDescription` |
-| `WorkItem` |  | |  |  |
-| `WorkPackage` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `OrderOperation` |  | |  |  |
-| `BillableControl` |  | |  |  |
-| `IsLotSizeIndependent` |  | |  |  |
-| `SubLedgerAcctLineItemType` |  | |  |  |
-| `AssetDepreciationArea` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `AssetAcctTransClassfctn` |  | |  |  |
-| `AssetClass` |  | |  |  |
-| `CalendarYear` |  | |  |  |
-| `CalendarQuarter` |  | |  |  |
-| `CalendarYearQuarter` |  | |  | `YearQuarter` |
-| `CalendarMonth` |  | |  |  |
-| `CalendarYearMonth` |  | |  | `YearMonth` |
-| `CalendarWeek` |  | |  |  |
-| `CalendarYearWeek` |  | |  | `YearWeek` |
-| `FiscalQuarter` |  | |  |  |
-| `FiscalWeek` |  | |  |  |
-| `FiscalYearQuarter` |  | |  |  |
-| `FiscalYearWeek` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  | `} I_FinancialPlanningEntryItem.AmountInTransactionCurrency` |
-| `AmountInCompanyCodeCurrency` |  | |  | `} I_FinancialPlanningEntryItem.AmountInCompanyCodeCurrency` |
-| `AmountInGlobalCurrency` |  | |  | `} I_FinancialPlanningEntryItem.AmountInGlobalCurrency` |
-| `AmountInFunctionalCurrency` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFunctionalCurrency` |
-| `AmountInFreeDefinedCurrency1` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFreeDefinedCurrency1` |
-| `AmountInFreeDefinedCurrency2` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFreeDefinedCurrency2` |
-| `AmountInFreeDefinedCurrency3` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFreeDefinedCurrency3` |
-| `AmountInFreeDefinedCurrency4` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFreeDefinedCurrency4` |
-| `AmountInFreeDefinedCurrency5` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFreeDefinedCurrency5` |
-| `AmountInFreeDefinedCurrency6` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFreeDefinedCurrency6` |
-| `AmountInFreeDefinedCurrency7` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFreeDefinedCurrency7` |
-| `AmountInFreeDefinedCurrency8` |  | |  | `} I_FinancialPlanningEntryItem.AmountInFreeDefinedCurrency8` |
-| `AmountInObjectCurrency` |  | |  | `} I_FinancialPlanningEntryItem.AmountInObjectCurrency` |
-| `FixedAmountInGlobalCrcy` |  | |  | `} I_FinancialPlanningEntryItem.FixedAmountInGlobalCrcy` |
-| `FixedAmountInCoCodeCrcy` |  | |  | `} I_FinancialPlanningEntryItem.FixedAmountInCoCodeCrcy` |
-| `FixedAmountInTransCrcy` |  | |  | `} I_FinancialPlanningEntryItem.FixedAmountInTransCrcy` |
-| `ValuationQuantity` |  | |  | `} I_FinancialPlanningEntryItem.ValuationQuantity` |
-| `ValuationFixedQuantity` |  | |  | `} I_FinancialPlanningEntryItem.ValuationFixedQuantity` |
-| `ReferenceQuantityUnit` |  | |  |  |
-| `ReferenceQuantity` |  | |  | `} I_FinancialPlanningEntryItem.ReferenceQuantity` |
-| `SponsoredProgram` |  | |  |  |
-| `SponsoredClass` |  | |  |  |
-| `GteeMBudgetValidityNumber` |  | |  |  |
-| `REBusinessEntity` |  | |  |  |
-| `RealEstateBuilding` |  | |  |  |
-| `RealEstateProperty` |  | |  |  |
-| `RERentalObject` |  | |  |  |
-| `RealEstateContract` |  | |  |  |
-| `REServiceChargeKey` |  | |  |  |
-| `RESettlementUnitID` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `GLAccountAuthorizationGroup` |  | |  |  |
-| `CustomerBasicAuthorizationGrp` |  | |  |  |
-| `OrderType` |  | |  |  |
-| `SalesOrderType` |  | |  |  |
-| `_ControllingAreaText` | | ✓ | | |
-| `_CalendarMonth` | | ✓ | | |
-| `_CalendarQuarter` | | ✓ | | |
-| `_CalendarYearMonth` | | ✓ | | |
-| `_WBSElementExternalID` | | ✓ | | |
-| `_WBSElementExternalIDText` | | ✓ | | |
-| `_PartnerWBSElementExternalID` | | ✓ | | |
-| `_PartnerWBSElemntExtrnalIDText` | | ✓ | | |
-| `_PartnerProjectExternalID` | | ✓ | | |
-| `_PartnerProjctExtrnalIDText` | | ✓ | | |
-| `_ProjectExternalID` | | ✓ | | |
-| `_ProjectExternalIDText` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_SubLedgerAccLineItemType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialPlanningDataPacket` | ✓ | |  |  |  |  |
+| `FinancialPlanningEntryItem` | ✓ | |  |  |  |  |
+| `FinancialPlanningReqTransSqnc` | ✓ | |  |  |  |  |
+| `AccountAssignmentType` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `BillToPartyName` |  | |  | `cast( I_FinancialPlanningEntryItem._BillToParty.CustomerName as bill_to_name preserving type)` |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `BudgetingType` |  | |  |  |  |  |
+| `BudgetPeriod` |  | |  |  |  |  |
+| `BudgetProcess` |  | |  |  |  |  |
+| `BudgetDocWorkFlowStatus` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `BusinessAreaName` |  | |  | `cast( _BusinessArea._Text[1: Language = $session.system_language].BusinessAreaName as fis_busarea_name preserving type )` |  |  |
+| `BusinessTransactionCategory` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CompanyCodeName` |  | |  | `cast( I_FinancialPlanningEntryItem._CompanyCode.CompanyCodeName as fis_butxt preserving type )` |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ControllingAreaName` |  | |  | `cast( I_FinancialPlanningEntryItem._ControllingArea.ControllingAreaName as fis_bezei preserving type )` |  |  |
+| `ControllingDebitCreditCode` |  | |  | `cast( I_FinancialPlanningEntryItem.ControllingDebitCreditCode as fis_co_belkz_no_conv preserving type )` |  |  |
+| `CostAnalysisResource` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `CostCenterName` |  | |  | `_CostCenter[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].CostCenterName` |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `CostCtrActivityTypeName` |  | |  | `cast( _CostCtrActivityType[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].CostCtrActivityTypeName as fis_lstar_text )` |  |  |
+| `CostSourceUnit` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `CustomerName` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `CustomerGroupName` |  | |  | `cast( _CustomerGroup._Text[1: Language = $session.system_language].CustomerGroupName as fis_customergroup_name )` |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  |  |  |  |
+| `CustomerSupplierCountry` |  | |  |  |  |  |
+| `CustomerSupplierCountryName` |  | |  | `cast( _CustomerSupplierCountry._Text[1: Language = $session.system_language].CountryName as fis_customersupplier_country )` |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |  |  |
+| `CustomerSupplierIndustryName` |  | |  | `cast( _CustomerSupplierIndustryText[1: Language = $session.system_language].CustomerSupplierIndustryName as fis_customersupplier_industry preserving type )` |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `DistributionChannelName` |  | |  | `cast( _DistributionChannel._Text[1: Language = $session.system_language].DistributionChannelName as fis_distributionchannel_name preserving type )` |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `DivisionName` |  | |  | `cast( _OrganizationDivision._Text[1: Language = $session.system_language].DivisionName as fis_division_name )` |  |  |
+| `FinancialTransactionType` |  | |  |  |  |  |
+| `FinancialManagementArea` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |  |  |
+| `FreeDefinedCurrency2` |  | |  |  |  |  |
+| `FreeDefinedCurrency3` |  | |  |  |  |  |
+| `FreeDefinedCurrency4` |  | |  |  |  |  |
+| `FreeDefinedCurrency5` |  | |  |  |  |  |
+| `FreeDefinedCurrency6` |  | |  |  |  |  |
+| `FreeDefinedCurrency7` |  | |  |  |  |  |
+| `FreeDefinedCurrency8` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `FunctionalAreaName` |  | |  | `cast( _FunctionalArea._Text[1: Language = $session.system_language].FunctionalAreaName as fis_funcarea_name )` |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `GLAccountName` |  | |  | `cast( _GLAccountInChartOfAccounts._Text[1: Language = $session.system_language].GLAccountName as fis_txt30_skat )` |  |  |
+| `GLAccountLongName` |  | |  | `cast( _GLAccountInChartOfAccounts._Text[1: Language = $session.system_language].GLAccountLongName as fis_txt50_skat )` |  |  |
+| `FunctionalCurrency` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `Ledger` |  | |  |  |  |  |
+| `LedgerName` |  | |  | `_Ledger._Text[1: Language = $session.system_language].LedgerName` |  |  |
+| `LedgerFiscalYear` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialName` |  | |  | `_Material._Text[1: Language = $session.system_language].MaterialName` |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `MaterialGroupName` |  | |  | `_MaterialGroup._Text[1: Language = $session.system_language].MaterialGroupName` |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `ProductGroupName` |  | |  | `_ProductGroup_2._ProductGroupText[1: Language = $session.system_language].ProductGroupName` |  |  |
+| `ControllingObjectCurrency` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderItem` |  | |  |  |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `PartnerBusinessAreaName` |  | |  | `cast( _PartnerBusinessArea._Text[1: Language = $session.system_language].BusinessAreaName as fis_partner_busarea_name preserving type )` |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `PartnerCompanyName` |  | |  | `cast( _PartnerCompany[1: Language = $session.system_language].CompanyName as fis_rcomp_name preserving type )` |  |  |
+| `PartnerCompanyCode` |  | |  |  |  |  |
+| `PartnerCompanyCodeName` |  | |  | `cast( I_FinancialPlanningEntryItem._PartnerCompanyCode.CompanyCodeName as fis_partner_company_code_name preserving type )` |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `PartnerCostCenterName` |  | |  | `cast( _PartnerCostCenter[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].CostCenterName as fis_partner_kostl_name preserving type)` |  |  |
+| `PartnerCostCtrActivityType` |  | |  |  |  |  |
+| `PartnerCostCtrActivityTypeName` |  | |  | `cast( _PartnerCostCtrActivityType[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].CostCtrActivityTypeName as fis_partner_activity_type_name )` |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `PartnerFunctionalAreaName` |  | |  | `cast( _PartnerFunctionalArea._Text[1: Language = $session.system_language].FunctionalAreaName as fis_partner_funcarea_name )` |  |  |
+| `PartnerOrder` |  | |  |  |  |  |
+| `PartnerOrder_2` |  | |  |  |  |  |
+| `PartnerProfitCenter` |  | |  |  |  |  |
+| `PartnerProfitCenterName` |  | |  | `cast( _PartnerProfitCenter[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].ProfitCenterName as fis_partner_prctr_name )` |  |  |
+| `PartnerProject` |  | |  |  |  |  |
+| `PartnerProjectDescription` |  | |  | `cast( I_FinancialPlanningEntryItem._PartnerProjectBasicData.ProjectDescription as fis_partner_project_descript preserving type )` |  |  |
+| `PartnerSegment` |  | |  |  |  |  |
+| `PartnerSegmentName` |  | |  | `cast( _PartnerSegment._Text[1: Language = $session.system_language].SegmentName as fis_partner_segment_name preserving type )` |  |  |
+| `PartnerWBSElement` |  | |  |  |  |  |
+| `PartnerWBSElementDescription` |  | |  | `cast( I_FinancialPlanningEntryItem._PartnerWBSElementBasicData.WBSDescription as fis_partner_wbs_descript preserving type )` |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `IsStatisticalOrder` |  | |  |  |  |  |
+| `IsStatisticalCostCenter` |  | |  |  |  |  |
+| `IsStatisticalSalesDocument` |  | |  |  |  |  |
+| `WBSIsStatisticalWBSElement` |  | |  |  |  |  |
+| `PlanningCategory` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PlantName` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocument` |  | |  |  |  |  |
+| `ServiceDocumentItem` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ProfitCenterName` |  | |  | `_ProfitCenter[1:ValidityStartDate <= $session.system_date and ValidityEndDate >= $session.system_date]._Text[1: Language = $session.system_language].ProfitCenterName` |  |  |
+| `Project` |  | |  |  |  |  |
+| `ProjectInternalID` |  | |  |  |  |  |
+| `ProjectExternalID` |  | |  | `cast( I_FinancialPlanningEntryItem._ProjectBasicData.ProjectExternalID as fis_projectext_no_conv preserving type )` |  |  |
+| `PartnerProjectInternalID` |  | |  |  |  |  |
+| `PartnerProjectExternalID` |  | |  | `ProjectExternalID` |  |  |
+| `ProjectDescription` |  | |  | `cast( I_FinancialPlanningEntryItem._ProjectBasicData.ProjectDescription as fis_project_description preserving type )` |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `ReferenceDocumentContext` |  | |  |  |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `SalesDistrictName` |  | |  | `_SalesDistrict._Text[1: Language = $session.system_language].SalesDistrictName` |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOrganizationName` |  | |  | `cast( _SalesOrganization._Text[1: Language = $session.system_language].SalesOrganizationName as fis_sales_organization_name preserving type )` |  |  |
+| `Segment` |  | |  |  |  |  |
+| `SegmentName` |  | |  | `_Segment._Text[1: Language = $session.system_language].SegmentName` |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `ShipToPartyName` |  | |  | `cast( I_FinancialPlanningEntryItem._ShipToParty.CustomerName as ship_to_name preserving type )` |  |  |
+| `SoldMaterial` |  | |  |  |  |  |
+| `SoldMaterialName` |  | |  | `cast( _SoldMaterial._Text[1: Language = $session.system_language].MaterialName as fis_matnr_copa_name preserving type )` |  |  |
+| `SoldProduct` |  | |  |  |  |  |
+| `SoldProductName` |  | |  | `cast( _SoldProduct._Text[1: Language = $session.system_language].ProductName as fis_matnr_copa_name preserving type)` |  |  |
+| `SoldProductGroup` |  | |  |  |  |  |
+| `SoldProductGroupName` |  | |  | `_SoldProductGroup._Text[1: Language = $session.system_language].MaterialGroupName` |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  | `cast( I_FinancialPlanningEntryItem._WBSElementBasicData.WBSElementExternalID as fis_wbsext_no_conv preserving type )` |  |  |
+| `PartnerWBSElementInternalID` |  | |  |  |  |  |
+| `PartnerWBSElementExternalID` |  | |  | `WBSElementExternalID` |  |  |
+| `WBSElementDescription` |  | |  | `WBSDescription` |  |  |
+| `WorkItem` |  | |  |  |  |  |
+| `WorkPackage` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `OrderOperation` |  | |  |  |  |  |
+| `BillableControl` |  | |  |  |  |  |
+| `IsLotSizeIndependent` |  | |  |  |  |  |
+| `SubLedgerAcctLineItemType` |  | |  |  |  |  |
+| `AssetDepreciationArea` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `AssetAcctTransClassfctn` |  | |  |  |  |  |
+| `AssetClass` |  | |  |  |  |  |
+| `CalendarYear` |  | |  |  |  |  |
+| `CalendarQuarter` |  | |  |  |  |  |
+| `CalendarYearQuarter` |  | |  | `YearQuarter` |  |  |
+| `CalendarMonth` |  | |  |  |  |  |
+| `CalendarYearMonth` |  | |  | `YearMonth` |  |  |
+| `CalendarWeek` |  | |  |  |  |  |
+| `CalendarYearWeek` |  | |  | `YearWeek` |  |  |
+| `FiscalQuarter` |  | |  |  |  |  |
+| `FiscalWeek` |  | |  |  |  |  |
+| `FiscalYearQuarter` |  | |  |  |  |  |
+| `FiscalYearWeek` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInGlobalCurrency` |  | |  |  |  |  |
+| `AmountInFunctionalCurrency` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency3` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency4` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency5` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency6` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency7` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency8` |  | |  |  |  |  |
+| `AmountInObjectCurrency` |  | |  |  |  |  |
+| `FixedAmountInGlobalCrcy` |  | |  |  |  |  |
+| `FixedAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `FixedAmountInTransCrcy` |  | |  |  |  |  |
+| `ValuationQuantity` |  | |  |  |  |  |
+| `ValuationFixedQuantity` |  | |  |  |  |  |
+| `ReferenceQuantityUnit` |  | |  |  |  |  |
+| `ReferenceQuantity` |  | |  |  |  |  |
+| `SponsoredProgram` |  | |  |  |  |  |
+| `SponsoredClass` |  | |  |  |  |  |
+| `GteeMBudgetValidityNumber` |  | |  |  |  |  |
+| `REBusinessEntity` |  | |  |  |  |  |
+| `RealEstateBuilding` |  | |  |  |  |  |
+| `RealEstateProperty` |  | |  |  |  |  |
+| `RERentalObject` |  | |  |  |  |  |
+| `RealEstateContract` |  | |  |  |  |  |
+| `REServiceChargeKey` |  | |  |  |  |  |
+| `RESettlementUnitID` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `GLAccountAuthorizationGroup` |  | |  |  |  |  |
+| `CustomerBasicAuthorizationGrp` |  | |  |  |  |  |
+| `OrderType` |  | |  |  |  |  |
+| `SalesOrderType` |  | |  |  |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_CalendarMonth` | | ✓ | | | | |
+| `_CalendarQuarter` | | ✓ | | | | |
+| `_CalendarYearMonth` | | ✓ | | | | |
+| `_WBSElementExternalID` | | ✓ | | | | |
+| `_WBSElementExternalIDText` | | ✓ | | | | |
+| `_PartnerWBSElementExternalID` | | ✓ | | | | |
+| `_PartnerWBSElemntExtrnalIDText` | | ✓ | | | | |
+| `_PartnerProjectExternalID` | | ✓ | | | | |
+| `_PartnerProjctExtrnalIDText` | | ✓ | | | | |
+| `_ProjectExternalID` | | ✓ | | | | |
+| `_ProjectExternalIDText` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_SubLedgerAccLineItemType` | | ✓ | | | | |
 
 ## Associations
 

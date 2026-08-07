@@ -28,76 +28,76 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseRequisition` | ✓ | |  |  |
-| `PurchaseRequisitionItem` | ✓ | |  |  |
-| `PurchaseReqnAcctAssgmtNumber` | ✓ | |  |  |
-| `CostCenter` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `BaseUnit` |  | | `_PurchaseRequisition_Api01` | `BaseUnit` |
-| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
-| `PurReqnNetAmount` |  | |  |  |
-| `PurReqnItemCurrency` |  | | `_PurchaseRequisition_Api01` | `PurReqnItemCurrency` |
-| `IsDeleted` |  | |  |  |
-| `CostElement` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `SDDocument` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesDocumentItem` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `ScheduleLine` |  | |  |  |
-| `SalesOrderScheduleLine` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `ProcessOrder` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostObject` |  | |  |  |
-| `ProfitabilitySegment` |  | |  | `cast(I_PurReqnAcctAssgmt.ProfitabilitySegment as rkeobjnr_numc )` |
-| `ProfitabilitySegment_2` |  | |  | `cast(I_PurReqnAcctAssgmt.ProfitabilitySegment as rkeobjnr_char )` |
-| `ProfitCenter` |  | |  |  |
-| `WBSElementInternalID` |  | |  | `cast( I_PurReqnAcctAssgmt.WBSElementInternalID_2 as ps_psp_pnr )` |
-| `WBSElementInternalID_2` |  | |  |  |
-| `ProjectNetworkInternalID` |  | |  |  |
-| `CommitmentItem` |  | |  | `cast(I_PurReqnAcctAssgmt.CommitmentItemShortID as fipos)` |
-| `CommitmentItemShortID` |  | |  |  |
-| `FundsCenter` |  | |  |  |
-| `Fund` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `RealEstateObject` |  | |  |  |
-| `REInternalFinNumber` |  | |  |  |
-| `NetworkActivityInternalID` |  | |  |  |
-| `PartnerAccountNumber` |  | |  |  |
-| `JointVentureRecoveryCode` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `OrderInternalID` |  | |  |  |
-| `OrderIntBillOfOperationsItem` |  | |  |  |
-| `EarmarkedFundsDocument` |  | |  |  |
-| `ServiceDocID` |  | |  |  |
-| `ServiceDocItemID` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `ValidityDate` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSElementExternalID_2` |  | |  |  |
-| `ProcmtHubWBSElementExternalID` |  | |  |  |
-| `PurchaseRequisitionType` |  | | `_PurchaseRequisition_Api01` | `PurchaseRequisitionType` |
-| `Plant` |  | | `_PurchaseRequisition_Api01` | `Plant` |
-| `PurchasingOrganization` |  | | `_PurchaseRequisition_Api01` | `PurchasingOrganization` |
-| `PurchasingGroup` |  | | `_PurchaseRequisition_Api01` | `PurchasingGroup` |
-| `_PurchaseRequisitionItem` |  | |  | `_PurchaseRequisition_Api01` |
-| `_PurchaseRequisition_Api01` | | ✓ | | |
-| `_CommitmentItemShortID` | | ✓ | | |
-| `_REObjectByIntFinNumber` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |  |  |
+| `PurchaseRequisitionItem` | ✓ | |  |  |  |  |
+| `PurchaseReqnAcctAssgmtNumber` | ✓ | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `BaseUnit` |  | | `_PurchaseRequisition_Api01` | `BaseUnit` |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |  |  |
+| `PurReqnNetAmount` |  | |  |  |  |  |
+| `PurReqnItemCurrency` |  | | `_PurchaseRequisition_Api01` | `PurReqnItemCurrency` |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `CostElement` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `SDDocument` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `ScheduleLine` |  | |  |  |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `ProcessOrder` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  | `cast(I_PurReqnAcctAssgmt.ProfitabilitySegment as rkeobjnr_numc )` |  |  |
+| `ProfitabilitySegment_2` |  | |  | `cast(I_PurReqnAcctAssgmt.ProfitabilitySegment as rkeobjnr_char )` |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  | `cast( I_PurReqnAcctAssgmt.WBSElementInternalID_2 as ps_psp_pnr )` |  |  |
+| `WBSElementInternalID_2` |  | |  |  |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |  |  |
+| `CommitmentItem` |  | |  | `cast(I_PurReqnAcctAssgmt.CommitmentItemShortID as fipos)` |  |  |
+| `CommitmentItemShortID` |  | |  |  |  |  |
+| `FundsCenter` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `RealEstateObject` |  | |  |  |  |  |
+| `REInternalFinNumber` |  | |  |  |  |  |
+| `NetworkActivityInternalID` |  | |  |  |  |  |
+| `PartnerAccountNumber` |  | |  |  |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |  |  |
+| `ServiceDocID` |  | |  |  |  |  |
+| `ServiceDocItemID` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `ValidityDate` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementExternalID_2` |  | |  |  |  |  |
+| `ProcmtHubWBSElementExternalID` |  | |  |  |  |  |
+| `PurchaseRequisitionType` |  | | `_PurchaseRequisition_Api01` | `PurchaseRequisitionType` |  |  |
+| `Plant` |  | | `_PurchaseRequisition_Api01` | `Plant` |  |  |
+| `PurchasingOrganization` |  | | `_PurchaseRequisition_Api01` | `PurchasingOrganization` |  |  |
+| `PurchasingGroup` |  | | `_PurchaseRequisition_Api01` | `PurchasingGroup` |  |  |
+| `_PurchaseRequisitionItem` |  | |  | `_PurchaseRequisition_Api01` |  |  |
+| `_PurchaseRequisition_Api01` | | ✓ | | | | |
+| `_CommitmentItemShortID` | | ✓ | | | | |
+| `_REObjectByIntFinNumber` | | ✓ | | | | |
 
 ## Associations
 

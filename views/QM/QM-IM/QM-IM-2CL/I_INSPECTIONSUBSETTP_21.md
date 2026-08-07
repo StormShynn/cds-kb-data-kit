@@ -29,53 +29,53 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `InspectionSubsetInternalID` | ✓ | |  |  |
-| `InspPlanOperationInternalID` | ✓ | |  |  |
-| `InspectionSubsetSortKey` |  | |  |  |
-| `MaterialSample` |  | |  |  |
-| `InspSbstMatlSmplProperty` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `InspSbstEquipProperty` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `InspSbstFuncnlLocProperty` |  | |  |  |
-| `ShopFloorItem` |  | |  |  |
-| `InspSbstShopFloorItemProperty` |  | |  |  |
-| `SelectedCodeSetPlant` |  | |  |  |
-| `SelectedCodeSet` |  | |  |  |
-| `InspSubsetUsageDcsnCodeGroup` |  | |  |  |
-| `InspSubsetUsageDcsnCode` |  | |  |  |
-| `InspSubsetUsageDcsnValuation` |  | |  |  |
-| `InspectionSubsetTime` |  | |  |  |
-| `InspSbstTimeFldProperty` |  | |  |  |
-| `InspectionSubsetDate` |  | |  |  |
-| `InspSbstDateFldProperty` |  | |  |  |
-| `InspSubsetLongNumericKey` |  | |  |  |
-| `InspSbstLongNmbrFldProperty` |  | |  |  |
-| `InspSubsetShortNumericKey` |  | |  |  |
-| `InspSbstShrtNmbrFldProperty` |  | |  |  |
-| `InspectionSubsetLongCharKey` |  | |  |  |
-| `InspSbstLongTxtFldProperty` |  | |  |  |
-| `InspectionSubsetShortCharKey` |  | |  |  |
-| `InspSbstShrtTxtFldProperty` |  | |  |  |
-| `InspectionPartialLot` |  | |  |  |
-| `InspectionSubsetYieldQty` |  | |  |  |
-| `InspectionSubsetScrapQty` |  | |  |  |
-| `InspectionSubsetReworkQty` |  | |  |  |
-| `InspectionSubsetQtyUnit` |  | |  |  |
-| `Inspector` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_InspectionOperation` | | ✓ | | |
-| `_InspectionLot` | | ✓ | | |
-| `_InspSubsetCharacteristic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `InspectionSubsetInternalID` | ✓ | |  |  |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |  |  |
+| `InspectionSubsetSortKey` |  | |  |  |  |  |
+| `MaterialSample` |  | |  |  |  |  |
+| `InspSbstMatlSmplProperty` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `InspSbstEquipProperty` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `InspSbstFuncnlLocProperty` |  | |  |  |  |  |
+| `ShopFloorItem` |  | |  |  |  |  |
+| `InspSbstShopFloorItemProperty` |  | |  |  |  |  |
+| `SelectedCodeSetPlant` |  | |  |  |  |  |
+| `SelectedCodeSet` |  | |  |  |  |  |
+| `InspSubsetUsageDcsnCodeGroup` |  | |  |  |  |  |
+| `InspSubsetUsageDcsnCode` |  | |  |  |  |  |
+| `InspSubsetUsageDcsnValuation` |  | |  |  |  |  |
+| `InspectionSubsetTime` |  | |  |  |  |  |
+| `InspSbstTimeFldProperty` |  | |  |  |  |  |
+| `InspectionSubsetDate` |  | |  |  |  |  |
+| `InspSbstDateFldProperty` |  | |  |  |  |  |
+| `InspSubsetLongNumericKey` |  | |  |  |  |  |
+| `InspSbstLongNmbrFldProperty` |  | |  |  |  |  |
+| `InspSubsetShortNumericKey` |  | |  |  |  |  |
+| `InspSbstShrtNmbrFldProperty` |  | |  |  |  |  |
+| `InspectionSubsetLongCharKey` |  | |  |  |  |  |
+| `InspSbstLongTxtFldProperty` |  | |  |  |  |  |
+| `InspectionSubsetShortCharKey` |  | |  |  |  |  |
+| `InspSbstShrtTxtFldProperty` |  | |  |  |  |  |
+| `InspectionPartialLot` |  | |  |  |  |  |
+| `InspectionSubsetYieldQty` |  | |  |  |  |  |
+| `InspectionSubsetScrapQty` |  | |  |  |  |  |
+| `InspectionSubsetReworkQty` |  | |  |  |  |  |
+| `InspectionSubsetQtyUnit` |  | |  |  |  |  |
+| `Inspector` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_InspectionOperation` | | ✓ | | | | |
+| `_InspectionLot` | | ✓ | | | | |
+| `_InspSubsetCharacteristic` | | ✓ | | | | |
 
 ## Source Code
 

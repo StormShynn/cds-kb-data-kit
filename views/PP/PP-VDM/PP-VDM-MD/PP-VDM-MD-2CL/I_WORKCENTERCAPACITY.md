@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterInternalID` | ✓ | |  | `objid` |
-| `WorkCenterTypeCode` | ✓ | |  | `objty` |
-| `CapacityCategoryAllocation` | ✓ | |  | `cast(crca.canum as pph_cr_capnum preserving type)` |
-| `LastChangeDate` |  | |  | `aedat_kapa` |
-| `LastChangedByUser` |  | |  | `aenam_kapa` |
-| `Plant` |  | | `_WorkCenter` | `Plant` |
-| `WorkCenter` |  | | `_WorkCenter` | `WorkCenter` |
-| `WorkCenterCategoryCode` |  | | `_WorkCenter` | `WorkCenterCategoryCode` |
-| `WorkCenterResponsible` |  | | `_WorkCenter` | `WorkCenterResponsible` |
-| `CapacityInternalID` |  | |  | `kapid` |
-| `CapacityCategoryCode` |  | | `_Capacity` | `CapacityCategoryCode` |
-| `Capacity` |  | | `_Capacity` | `Capacity` |
-| `SetupCapRequirementFormula` |  | |  | `fork1` |
-| `ProcgCapRequirementFormula` |  | |  | `fork2` |
-| `TeardownCapRequirementFormula` |  | |  | `fork3` |
-| `OtherCapRequirementFormula` |  | |  | `forkn` |
-| `ValidityStartDate` |  | |  | `begda` |
-| `ValidityEndDate` |  | |  | `endda` |
-| `CapacityQuantityUnit` |  | | `_Capacity` | `CapacityQuantityUnit` |
-| `WorkCenterLastChangeDateTime` |  | |  | `case when _WorkCenter.WorkCenterLastChangeDateTime is null then cast(dats_tims_to_tstmp(cast('20190101' as dats), cast('120000'as tims), 'UTC', $session.client, 'NULL') as cr_lastchange_datetime) else _WorkCenter.WorkCenterLastChangeDateTime end` |
-| `_Plant` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_WorkCenterBySemanticKey` | | ✓ | | |
-| `_WorkCenterTypeCode` | | ✓ | | |
-| `_WorkCenterCategory` | | ✓ | | |
-| `_Capacity` | | ✓ | | |
-| `_CapacityCategory` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_CapacityQuantityUnit` | | ✓ | | |
-| `_WorkCenterResponsible` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  | `objid` |  |  |
+| `WorkCenterTypeCode` | ✓ | |  | `objty` |  |  |
+| `CapacityCategoryAllocation` | ✓ | |  | `cast(crca.canum as pph_cr_capnum preserving type)` |  |  |
+| `LastChangeDate` |  | |  | `aedat_kapa` |  |  |
+| `LastChangedByUser` |  | |  | `aenam_kapa` |  |  |
+| `Plant` |  | | `_WorkCenter` | `Plant` |  |  |
+| `WorkCenter` |  | | `_WorkCenter` | `WorkCenter` |  |  |
+| `WorkCenterCategoryCode` |  | | `_WorkCenter` | `WorkCenterCategoryCode` |  |  |
+| `WorkCenterResponsible` |  | | `_WorkCenter` | `WorkCenterResponsible` |  |  |
+| `CapacityInternalID` |  | |  | `kapid` |  |  |
+| `CapacityCategoryCode` |  | | `_Capacity` | `CapacityCategoryCode` |  |  |
+| `Capacity` |  | | `_Capacity` | `Capacity` |  |  |
+| `SetupCapRequirementFormula` |  | |  | `fork1` |  |  |
+| `ProcgCapRequirementFormula` |  | |  | `fork2` |  |  |
+| `TeardownCapRequirementFormula` |  | |  | `fork3` |  |  |
+| `OtherCapRequirementFormula` |  | |  | `forkn` |  |  |
+| `ValidityStartDate` |  | |  | `begda` |  |  |
+| `ValidityEndDate` |  | |  | `endda` |  |  |
+| `CapacityQuantityUnit` |  | | `_Capacity` | `CapacityQuantityUnit` |  |  |
+| `WorkCenterLastChangeDateTime` |  | |  | `case when _WorkCenter.WorkCenterLastChangeDateTime is null then cast(dats_tims_to_tstmp(cast('20190101' as dats), cast('120000'as tims), 'UTC', $session.client, 'NULL') as cr_lastchange_datetime) else _WorkCenter.WorkCenterLastChangeDateTime end` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_WorkCenterBySemanticKey` | | ✓ | | | | |
+| `_WorkCenterTypeCode` | | ✓ | | | | |
+| `_WorkCenterCategory` | | ✓ | | | | |
+| `_Capacity` | | ✓ | | | | |
+| `_CapacityCategory` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_CapacityQuantityUnit` | | ✓ | | | | |
+| `_WorkCenterResponsible` | | ✓ | | | | |
 
 ## Associations
 

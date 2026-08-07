@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankPowerOfAttorneyUUID` | ✓ | |  |  |
-| `BkPOAAuthzdRepresentativeUUID` | ✓ | |  |  |
-| `BkPOAAuthzdRepresentative` |  | |  |  |
-| `PaymentApproverGroup` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `_BankPowerOfAttorney` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` | ✓ | |  |  |  |  |
+| `BkPOAAuthzdRepresentativeUUID` | ✓ | |  |  |  |  |
+| `BkPOAAuthzdRepresentative` |  | |  |  |  |  |
+| `PaymentApproverGroup` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `_BankPowerOfAttorney` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
 

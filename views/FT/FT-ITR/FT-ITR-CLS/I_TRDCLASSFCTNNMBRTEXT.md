@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrdClassfctnNmbrSchmCntnt` | ✓ | |  | `nosct` |
-| `TrdClassfctnNmbr` | ✓ | |  | `ccngn` |
-| `ValidityStartDate` | ✓ | |  | `datab` |
-| `TrdClassfctnNmbrTextType` | ✓ | |  | `ctstt` |
-| `Language` | ✓ | |  | `langu` |
-| `ValidityEndDate` |  | |  | `datbi` |
-| `TrdClassfctnNmbrName` |  | |  | `text` |
-| `TrdClassfctnNmbrText` |  | |  | `text` |
-| `TrdClassfctnNmbrSchmType` |  | | `_Content` | `TrdClassfctnNmbrSchmType` |
-| `_TrdClassfctnNmbrSchmCntnt` | | ✓ | | |
-| `_TrdClassfctnNmbrTextType` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Date` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdClassfctnNmbrSchmCntnt` | ✓ | |  | `nosct` |  |  |
+| `TrdClassfctnNmbr` | ✓ | |  | `ccngn` |  |  |
+| `ValidityStartDate` | ✓ | |  | `datab` |  |  |
+| `TrdClassfctnNmbrTextType` | ✓ | |  | `ctstt` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ValidityEndDate` |  | |  | `datbi` |  |  |
+| `TrdClassfctnNmbrName` |  | |  | `text` |  |  |
+| `TrdClassfctnNmbrText` |  | |  | `text` |  |  |
+| `TrdClassfctnNmbrSchmType` |  | | `_Content` | `TrdClassfctnNmbrSchmType` |  |  |
+| `_TrdClassfctnNmbrSchmCntnt` | | ✓ | | | | |
+| `_TrdClassfctnNmbrTextType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Date` | | ✓ | | | | |
 
 ## Associations
 

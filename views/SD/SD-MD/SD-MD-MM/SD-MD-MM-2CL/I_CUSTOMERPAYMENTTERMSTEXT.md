@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerPaymentTerms` | ✓ | |  | `zterm` |
-| `Language` | ✓ | |  | `spras` |
-| `CustomerPaymentTermsName` |  | |  | `vtext` |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerPaymentTerms` | ✓ | |  | `zterm` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CustomerPaymentTermsName` |  | |  | `vtext` |  |  |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

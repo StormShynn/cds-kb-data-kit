@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationRateTableUUID` | ✓ | |  |  |
-| `TranspCalculationSheetUUID` |  | |  |  |
-| `TranspCalcSheetItemUUID` |  | |  |  |
-| `TransportationAgreementUUID` |  | |  |  |
-| `TranspRateTableID` |  | |  |  |
-| `TranspRateTableDesc` |  | |  |  |
-| `TranspRateTableValueType` |  | |  |  |
-| `TranspChargeType` |  | |  |  |
-| `TranspRateTableSignType` |  | |  |  |
-| `TranspRateTableTimeZone` |  | |  |  |
-| `I_FreightAgreementTP` |  | |  | `FreightAgreementRateTable._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FrtAgrmtCalcSheetItemTP` |  | |  | `FreightAgreementRateTable._FrtAgrmtCalcSheetItem : redirected to parent I_FrtAgrmtCalcSheetItemTP` |
-| `I_FrtAgrmtRateTableScaleRefTP` |  | |  | `FreightAgreementRateTable._FrtAgrmtRateTableScaleRef : redirected to composition child I_FrtAgrmtRateTableScaleRefTP` |
-| `I_FrtAgrmtRateTableValidityTP` |  | |  | `FreightAgreementRateTable._FrtAgrmtRateTableValidity : redirected to composition child I_FrtAgrmtRateTableValidityTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationRateTableUUID` | ✓ | |  |  |  |  |
+| `TranspCalculationSheetUUID` |  | |  |  |  |  |
+| `TranspCalcSheetItemUUID` |  | |  |  |  |  |
+| `TransportationAgreementUUID` |  | |  |  |  |  |
+| `TranspRateTableID` |  | |  |  |  |  |
+| `TranspRateTableDesc` |  | |  |  |  |  |
+| `TranspRateTableValueType` |  | |  |  |  |  |
+| `TranspChargeType` |  | |  |  |  |  |
+| `TranspRateTableSignType` |  | |  |  |  |  |
+| `TranspRateTableTimeZone` |  | |  |  |  |  |
+| `I_FreightAgreementTP` |  | |  | `FreightAgreementRateTable._FreightAgreement : redirected to I_FreightAgreementTP` |  |  |
+| `I_FrtAgrmtCalcSheetItemTP` |  | |  | `FreightAgreementRateTable._FrtAgrmtCalcSheetItem : redirected to parent I_FrtAgrmtCalcSheetItemTP` |  |  |
+| `I_FrtAgrmtRateTableScaleRefTP` |  | |  | `FreightAgreementRateTable._FrtAgrmtRateTableScaleRef : redirected to composition child I_FrtAgrmtRateTableScaleRefTP` |  |  |
+| `I_FrtAgrmtRateTableValidityTP` |  | |  | `FreightAgreementRateTable._FrtAgrmtRateTableValidity : redirected to composition child I_FrtAgrmtRateTableValidityTP` |  |  |
 
 ## Source Code
 

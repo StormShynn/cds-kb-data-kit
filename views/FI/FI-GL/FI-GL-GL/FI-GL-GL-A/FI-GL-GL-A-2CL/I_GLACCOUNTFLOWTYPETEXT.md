@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountFlowType` | ✓ | |  | `cast( dd07t.domvalue_l as fis_glaccount_flow_type preserving type )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `GLAccountFlowTypeName` |  | |  | `cast(dd07t.ddtext as fis_val_text preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountFlowType` | ✓ | |  | `cast( dd07t.domvalue_l as fis_glaccount_flow_type preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `GLAccountFlowTypeName` |  | |  | `cast(dd07t.ddtext as fis_val_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

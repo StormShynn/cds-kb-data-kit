@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land` |
-| `Language` | ✓ | |  | `spras` |
-| `NationalClassification` | ✓ | |  | `glo_natl_clfn_code` |
-| `NationalClassificationDesc` |  | |  | `glo_natl_clfn_code_text` |
-| `_Country` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `NationalClassification` | ✓ | |  | `glo_natl_clfn_code` |  |  |
+| `NationalClassificationDesc` |  | |  | `glo_natl_clfn_code_text` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

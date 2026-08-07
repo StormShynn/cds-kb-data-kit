@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMCntxtCatGroupUUID` | ✓ | |  |  |
-| `LglCntntMContextUUID` |  | |  |  |
-| `LglCntntMCatGroupTitle` |  | |  |  |
-| `_LCMContextTP` | | ✓ | | |
-| `_LCMContextParentCategoryTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMCntxtCatGroupUUID` | ✓ | |  |  |  |  |
+| `LglCntntMContextUUID` |  | |  |  |  |  |
+| `LglCntntMCatGroupTitle` |  | |  |  |  |  |
+| `_LCMContextTP` | | ✓ | | | | |
+| `_LCMContextParentCategoryTP` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialDocument` | ✓ | |  |  |
-| `MaterialDocumentYear` | ✓ | |  |  |
-| `MaterialDocumentItem` | ✓ | |  |  |
-| `SuplrCsgnmtPplineWthdrwlStatus` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `IssgOrRcvgStkIdfgSpclStkType` |  | |  |  |
-| `ConsignmentPipelineSupplier` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Material` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `SuplrCsgnmtPplineWthdrwlAmount` |  | |  | `} SuplrCsgnmtPplineWthdrwlAmount` |
-| `SupCsgnmtPplineWthdrwlQtyUnit` |  | |  |  |
-| `SuplrCsgnmtPplineWthdrwlQty` |  | |  | `} SuplrCsgnmtPplineWthdrwlQty` |
-| `GLAccount` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `NonDeductibleInputTaxAmount` |  | |  | `} NonDeductibleInputTaxAmount` |
-| `ProfitCenter` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `_SupCsgnmtPplineInvcHistAPI01` | | ✓ | | |
-| `_SupplierCompany` | | ✓ | | |
-| `_Currency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialDocument` | ✓ | |  |  |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |  |  |
+| `SuplrCsgnmtPplineWthdrwlStatus` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `IssgOrRcvgStkIdfgSpclStkType` |  | |  |  |  |  |
+| `ConsignmentPipelineSupplier` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `SuplrCsgnmtPplineWthdrwlAmount` |  | |  |  |  |  |
+| `SupCsgnmtPplineWthdrwlQtyUnit` |  | |  |  |  |  |
+| `SuplrCsgnmtPplineWthdrwlQty` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `_SupCsgnmtPplineInvcHistAPI01` | | ✓ | | | | |
+| `_SupplierCompany` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
 
 ## Associations
 

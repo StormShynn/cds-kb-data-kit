@@ -29,133 +29,133 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Reservation` | ✓ | |  |  |
-| `ReservationItem` | ✓ | |  |  |
-| `ReservationRecordType` | ✓ | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Material` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ProcessOrder` |  | |  |  |
-| `ProcessOrderPhase` |  | |  |  |
-| `ProcessOrderOperation` |  | |  |  |
-| `OrderInternalID` |  | |  |  |
-| `OrderPhaseInternalID` |  | |  |  |
-| `OrderOperationInternalID` |  | |  |  |
-| `MaterialComponentText` |  | |  |  |
-| `MaterialComponentSecondText` |  | |  |  |
-| `MaterialComponentHasLongText` |  | |  |  |
-| `LongTextLanguage` |  | |  |  |
-| `MatlCompRequirementDate` |  | |  |  |
-| `MatlCompRequirementTime` |  | |  |  |
-| `LatestRequirementDate` |  | |  |  |
-| `ReservationItemCreationCode` |  | |  |  |
-| `ReservationIsFinallyIssued` |  | |  |  |
-| `MatlCompIsMarkedForDeletion` |  | |  |  |
-| `MaterialComponentIsMissing` |  | |  |  |
-| `IsBulkMaterialComponent` |  | |  |  |
-| `MatlCompIsMarkedForBackflush` |  | |  |  |
-| `MatlCompIsTextItem` |  | |  |  |
-| `MaterialPlanningRelevance` |  | |  |  |
-| `MatlCompIsConfigurable` |  | |  |  |
-| `MaterialCompCostingRelevancy` |  | |  |  |
-| `MaterialComponentIsClassified` |  | |  |  |
-| `MaterialCompIsIntraMaterial` |  | |  |  |
-| `MaterialIsDirectlyProduced` |  | |  |  |
-| `MaterialIsDirectlyProcured` |  | |  |  |
-| `RequirementType` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `ProductConfiguration` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `EffectivityParameterVariant` |  | |  |  |
-| `MatlCompFreeDefinedAttribute` |  | |  |  |
-| `BillOfMaterialCategory` |  | |  |  |
-| `BillOfMaterialInternalID` |  | |  |  |
-| `BillOfMaterialVariant` |  | |  |  |
-| `BillOfMaterialItemNodeNumber` |  | |  |  |
-| `BillOfMaterialVersion` |  | |  |  |
-| `BOMItemInternalChangeCount` |  | |  |  |
-| `InheritedBOMItemNode` |  | |  |  |
-| `BillOfMaterialItemCategory` |  | |  |  |
-| `BillOfMaterialItemNumber` |  | |  |  |
-| `BOMExplosionDateID` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `DeliveryDurationInDays` |  | |  |  |
-| `MaterialGoodsReceiptDuration` |  | |  |  |
-| `ExternalProcessingPrice` |  | |  |  |
-| `NumberOfPriceUnits` |  | |  |  |
-| `GoodsMovementIsAllowed` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Batch` |  | |  |  |
-| `BatchSplitType` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `GoodsMovementType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `SupplyArea` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `StockSegment` |  | |  |  |
-| `RequirementSegment` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `MaterialCompIsVariableSized` |  | |  |  |
-| `VariableSizeItemUnit` |  | |  |  |
-| `VariableSizeItemQuantity` |  | |  |  |
-| `VariableSizeComponentUnit` |  | |  |  |
-| `VariableSizeComponentQuantity` |  | |  |  |
-| `VariableSizeDimensionUnit` |  | |  |  |
-| `VariableSizeDimension1` |  | |  |  |
-| `VariableSizeDimension2` |  | |  |  |
-| `VariableSizeDimension3` |  | |  |  |
-| `VariableSizeCompFormulaKey` |  | |  |  |
-| `MaterialComponentIsPhantomItem` |  | |  |  |
-| `OrderPathValue` |  | |  |  |
-| `OrderLevelValue` |  | |  |  |
-| `DiscontinuationGroup` |  | |  |  |
-| `MatlCompDiscontinuationType` |  | |  |  |
-| `MatlCompIsFollowUpMaterial` |  | |  |  |
-| `FollowUpGroup` |  | |  |  |
-| `FollowUpMaterial` |  | |  |  |
-| `FollowUpMaterialIsActive` |  | |  |  |
-| `MaterialCompIsAlternativeItem` |  | |  |  |
-| `AlternativeItemGroup` |  | |  |  |
-| `AlternativeItemStrategy` |  | |  |  |
-| `AlternativeItemPriority` |  | |  |  |
-| `UsageProbabilityPercent` |  | |  |  |
-| `MatlComponentSparePartType` |  | |  |  |
-| `MaterialProvisionType` |  | |  |  |
-| `LeadTimeOffset` |  | |  |  |
-| `PhaseLeadTimeOffsetUnit` |  | |  |  |
-| `PhaseLeadTimeOffset` |  | |  |  |
-| `QuantityIsFixed` |  | |  |  |
-| `IsNetScrap` |  | |  |  |
-| `ComponentScrapInPercent` |  | |  |  |
-| `PhaseScrapPercent` |  | |  |  |
-| `MaterialQtyToBaseQtyNmrtr` |  | |  |  |
-| `MaterialQtyToBaseQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `RequiredQuantity` |  | |  |  |
-| `WithdrawnQuantity` |  | |  |  |
-| `ConfirmedAvailableQuantity` |  | |  |  |
-| `MaterialCompOriginalQuantity` |  | |  |  |
-| `EntryUnit` |  | |  |  |
-| `GoodsMovementEntryQty` |  | |  |  |
-| `Currency` |  | |  |  |
-| `WithdrawnQuantityAmount` |  | |  |  |
-| `_Order` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Reservation` | ✓ | |  |  |  |  |
+| `ReservationItem` | ✓ | |  |  |  |  |
+| `ReservationRecordType` | ✓ | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ProcessOrder` |  | |  |  |  |  |
+| `ProcessOrderPhase` |  | |  |  |  |  |
+| `ProcessOrderOperation` |  | |  |  |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `OrderPhaseInternalID` |  | |  |  |  |  |
+| `OrderOperationInternalID` |  | |  |  |  |  |
+| `MaterialComponentText` |  | |  |  |  |  |
+| `MaterialComponentSecondText` |  | |  |  |  |  |
+| `MaterialComponentHasLongText` |  | |  |  |  |  |
+| `LongTextLanguage` |  | |  |  |  |  |
+| `MatlCompRequirementDate` |  | |  |  |  |  |
+| `MatlCompRequirementTime` |  | |  |  |  |  |
+| `LatestRequirementDate` |  | |  |  |  |  |
+| `ReservationItemCreationCode` |  | |  |  |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |  |  |
+| `MatlCompIsMarkedForDeletion` |  | |  |  |  |  |
+| `MaterialComponentIsMissing` |  | |  |  |  |  |
+| `IsBulkMaterialComponent` |  | |  |  |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |  |  |
+| `MatlCompIsTextItem` |  | |  |  |  |  |
+| `MaterialPlanningRelevance` |  | |  |  |  |  |
+| `MatlCompIsConfigurable` |  | |  |  |  |  |
+| `MaterialCompCostingRelevancy` |  | |  |  |  |  |
+| `MaterialComponentIsClassified` |  | |  |  |  |  |
+| `MaterialCompIsIntraMaterial` |  | |  |  |  |  |
+| `MaterialIsDirectlyProduced` |  | |  |  |  |  |
+| `MaterialIsDirectlyProcured` |  | |  |  |  |  |
+| `RequirementType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `ProductConfiguration` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `EffectivityParameterVariant` |  | |  |  |  |  |
+| `MatlCompFreeDefinedAttribute` |  | |  |  |  |  |
+| `BillOfMaterialCategory` |  | |  |  |  |  |
+| `BillOfMaterialInternalID` |  | |  |  |  |  |
+| `BillOfMaterialVariant` |  | |  |  |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  |  |  |  |
+| `BillOfMaterialVersion` |  | |  |  |  |  |
+| `BOMItemInternalChangeCount` |  | |  |  |  |  |
+| `InheritedBOMItemNode` |  | |  |  |  |  |
+| `BillOfMaterialItemCategory` |  | |  |  |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |  |  |
+| `BOMExplosionDateID` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `DeliveryDurationInDays` |  | |  |  |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |  |  |
+| `ExternalProcessingPrice` |  | |  |  |  |  |
+| `NumberOfPriceUnits` |  | |  |  |  |  |
+| `GoodsMovementIsAllowed` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `BatchSplitType` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `SupplyArea` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `StockSegment` |  | |  |  |  |  |
+| `RequirementSegment` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `MaterialCompIsVariableSized` |  | |  |  |  |  |
+| `VariableSizeItemUnit` |  | |  |  |  |  |
+| `VariableSizeItemQuantity` |  | |  |  |  |  |
+| `VariableSizeComponentUnit` |  | |  |  |  |  |
+| `VariableSizeComponentQuantity` |  | |  |  |  |  |
+| `VariableSizeDimensionUnit` |  | |  |  |  |  |
+| `VariableSizeDimension1` |  | |  |  |  |  |
+| `VariableSizeDimension2` |  | |  |  |  |  |
+| `VariableSizeDimension3` |  | |  |  |  |  |
+| `VariableSizeCompFormulaKey` |  | |  |  |  |  |
+| `MaterialComponentIsPhantomItem` |  | |  |  |  |  |
+| `OrderPathValue` |  | |  |  |  |  |
+| `OrderLevelValue` |  | |  |  |  |  |
+| `DiscontinuationGroup` |  | |  |  |  |  |
+| `MatlCompDiscontinuationType` |  | |  |  |  |  |
+| `MatlCompIsFollowUpMaterial` |  | |  |  |  |  |
+| `FollowUpGroup` |  | |  |  |  |  |
+| `FollowUpMaterial` |  | |  |  |  |  |
+| `FollowUpMaterialIsActive` |  | |  |  |  |  |
+| `MaterialCompIsAlternativeItem` |  | |  |  |  |  |
+| `AlternativeItemGroup` |  | |  |  |  |  |
+| `AlternativeItemStrategy` |  | |  |  |  |  |
+| `AlternativeItemPriority` |  | |  |  |  |  |
+| `UsageProbabilityPercent` |  | |  |  |  |  |
+| `MatlComponentSparePartType` |  | |  |  |  |  |
+| `MaterialProvisionType` |  | |  |  |  |  |
+| `LeadTimeOffset` |  | |  |  |  |  |
+| `PhaseLeadTimeOffsetUnit` |  | |  |  |  |  |
+| `PhaseLeadTimeOffset` |  | |  |  |  |  |
+| `QuantityIsFixed` |  | |  |  |  |  |
+| `IsNetScrap` |  | |  |  |  |  |
+| `ComponentScrapInPercent` |  | |  |  |  |  |
+| `PhaseScrapPercent` |  | |  |  |  |  |
+| `MaterialQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `MaterialQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `RequiredQuantity` |  | |  |  |  |  |
+| `WithdrawnQuantity` |  | |  |  |  |  |
+| `ConfirmedAvailableQuantity` |  | |  |  |  |  |
+| `MaterialCompOriginalQuantity` |  | |  |  |  |  |
+| `EntryUnit` |  | |  |  |  |  |
+| `GoodsMovementEntryQty` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `WithdrawnQuantityAmount` |  | |  |  |  |  |
+| `_Order` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ValuationArea` | ✓ | |  |  |
-| `ValuationType` | ✓ | |  |  |
-| `CurrencyRole` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `ProductPriceControl` |  | |  |  |
-| `ProductPriceUnitQuantity` |  | |  |  |
-| `Currency` |  | |  |  |
-| `MovingAveragePrice` |  | |  |  |
-| `StandardPrice` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProductValuation` | | ✓ | | |
-| `_ProdValnPriceControlText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ValuationArea` | ✓ | |  |  |  |  |
+| `ValuationType` | ✓ | |  |  |  |  |
+| `CurrencyRole` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `ProductPriceControl` |  | |  |  |  |  |
+| `ProductPriceUnitQuantity` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `MovingAveragePrice` |  | |  |  |  |  |
+| `StandardPrice` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductValuation` | | ✓ | | | | |
+| `_ProdValnPriceControlText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
 
 ## Source Code
 

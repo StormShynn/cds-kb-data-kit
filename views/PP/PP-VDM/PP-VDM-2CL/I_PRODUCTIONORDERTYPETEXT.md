@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionOrderType` | ✓ | |  | `cast(txt.OrderType as vdm_prodnordertype preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.Language as spras preserving type)` |
-| `ProductionOrderTypeName` |  | |  | `OrderTypeName` |
-| `_Language` | | ✓ | | |
-| `_ProductionOrderType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionOrderType` | ✓ | |  | `cast(txt.OrderType as vdm_prodnordertype preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.Language as spras preserving type)` |  |  |
+| `ProductionOrderTypeName` |  | |  | `OrderTypeName` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProductionOrderType` | | ✓ | | | | |
 
 ## Associations
 

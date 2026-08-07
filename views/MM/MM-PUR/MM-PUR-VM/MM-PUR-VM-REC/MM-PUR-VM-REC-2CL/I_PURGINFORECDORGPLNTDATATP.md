@@ -29,67 +29,67 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingInfoRecord` | ✓ | |  |  |
-| `PurchasingInfoRecordCategory` | ✓ | |  |  |
-| `PurchasingOrganization` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Currency` |  | |  |  |
-| `MinimumPurchaseOrderQuantity` |  | |  |  |
-| `StandardPurchaseOrderQuantity` |  | |  |  |
-| `MaterialPlannedDeliveryDurn` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `LastReferencingPurchaseOrder` |  | |  |  |
-| `LastReferencingPurOrderItem` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `MaterialPriceUnitQty` |  | |  |  |
-| `PurchaseOrderPriceUnit` |  | |  |  |
-| `PriceValidityEndDate` |  | |  |  |
-| `InvoiceIsGoodsReceiptBased` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `MaximumOrderQuantity` |  | |  |  |
-| `IsRelevantForAutomSrcg` |  | |  |  |
-| `SupplierQuotation` |  | |  |  |
-| `SupplierQuotationDate` |  | |  |  |
-| `MinRemainingShelfLife` |  | |  |  |
-| `IsEvaluatedRcptSettlmtAllowed` |  | |  |  |
-| `IsPurOrderAllwdForInbDeliv` |  | |  |  |
-| `IsOrderAcknRqd` |  | |  |  |
-| `IsRetMatlAuthznRqdBySupplier` |  | |  |  |
-| `IsCashDiscountGranted` |  | |  |  |
-| `MaterialConditionGroup` |  | |  |  |
-| `PurchasingDocumentDate` |  | |  |  |
-| `ShelfLifeExpirationDatePeriod` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `SupplierConfirmationControlKey` |  | |  |  |
-| `PricingDateControl` |  | |  |  |
-| `TimeDependentTaxValidFromDate` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `Material` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurgDocOrderQuantityUnit` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Country` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchaseOrderPriceUnit` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_TaxCode` | | ✓ | | |
-| `_PurgInfoRecdPrcgCndnValdty` | | ✓ | | |
-| `_PurchasingInfoRecord` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |  |  |
+| `PurchasingInfoRecordCategory` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `MinimumPurchaseOrderQuantity` |  | |  |  |  |  |
+| `StandardPurchaseOrderQuantity` |  | |  |  |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `LastReferencingPurchaseOrder` |  | |  |  |  |  |
+| `LastReferencingPurOrderItem` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `MaterialPriceUnitQty` |  | |  |  |  |  |
+| `PurchaseOrderPriceUnit` |  | |  |  |  |  |
+| `PriceValidityEndDate` |  | |  |  |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `MaximumOrderQuantity` |  | |  |  |  |  |
+| `IsRelevantForAutomSrcg` |  | |  |  |  |  |
+| `SupplierQuotation` |  | |  |  |  |  |
+| `SupplierQuotationDate` |  | |  |  |  |  |
+| `MinRemainingShelfLife` |  | |  |  |  |  |
+| `IsEvaluatedRcptSettlmtAllowed` |  | |  |  |  |  |
+| `IsPurOrderAllwdForInbDeliv` |  | |  |  |  |  |
+| `IsOrderAcknRqd` |  | |  |  |  |  |
+| `IsRetMatlAuthznRqdBySupplier` |  | |  |  |  |  |
+| `IsCashDiscountGranted` |  | |  |  |  |  |
+| `MaterialConditionGroup` |  | |  |  |  |  |
+| `PurchasingDocumentDate` |  | |  |  |  |  |
+| `ShelfLifeExpirationDatePeriod` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |  |  |
+| `PricingDateControl` |  | |  |  |  |  |
+| `TimeDependentTaxValidFromDate` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurgDocOrderQuantityUnit` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Country` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchaseOrderPriceUnit` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_TaxCode` | | ✓ | | | | |
+| `_PurgInfoRecdPrcgCndnValdty` | | ✓ | | | | |
+| `_PurchasingInfoRecord` | | ✓ | | | | |
 
 ## Source Code
 

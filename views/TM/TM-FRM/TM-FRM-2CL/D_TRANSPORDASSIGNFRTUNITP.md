@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `/scmtms/toritmuuid` |  | |  | `key TransportationOrderItemUUID : /scmtms/toritmuuid` |
-| `D_FreightUnitAssignParameter` |  | |  | `_FreightUnits : composition [0..*] of D_FreightUnitAssignParameter` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `/scmtms/toritmuuid` |  | |  | `key TransportationOrderItemUUID : /scmtms/toritmuuid` |  |  |
+| `D_FreightUnitAssignParameter` |  | |  | `_FreightUnits : composition [0..*] of D_FreightUnitAssignParameter` |  |  |
 
 ## Source Code
 

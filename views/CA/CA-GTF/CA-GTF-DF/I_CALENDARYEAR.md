@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CalendarYear` | ✓ | |  | `calendaryear` |
-| `IsLeapYear` |  | |  | `isleapyear` |
-| `NumberOfDays` |  | |  | `numberofdays` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalendarYear` | ✓ | |  | `calendaryear` |  |  |
+| `IsLeapYear` |  | |  | `isleapyear` |  |  |
+| `NumberOfDays` |  | |  | `numberofdays` |  |  |
 
 ## Source Code
 

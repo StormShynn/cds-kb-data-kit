@@ -28,33 +28,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrganizationalChange` | ✓ | |  | `orgl_change` |
-| `OrganizationalChangeActivity` |  | |  | `last_activity` |
-| `OrglChangeEffectiveDate` |  | |  | `effective_date` |
-| `OrglChangeCreationDateTime` |  | |  | `creation_timestamp` |
-| `OrglChangeCreatedByUser` |  | |  | `created_by_user` |
-| `OrglChangeLastChangeDateTime` |  | |  | `last_change_timestamp` |
-| `OrglChangeLastChangedByUser` |  | |  | `last_changed_by_user` |
-| `OrglChangeProcessingStatus` |  | |  | `processing_status` |
-| `OrglChangeApplicationVersion` |  | |  | `appl_version` |
-| `OrganizationalChangeJobType` |  | | `_LastActivity` | `OrganizationalChangeJobType` |
-| `ApplicationLog` |  | | `_LastActivity` | `ApplicationLog` |
-| `StatusCode` |  | | `_LastActivity` | `JobStatusValue` |
-| `NumberOfUniqueWarnings` |  | | `_LastActivity` | `NumberOfUniqueWarnings` |
-| `NumberOfUniqueErrors` |  | | `_LastActivity` | `NumberOfUniqueErrors` |
-| `ApplicationJob` |  | | `_LastActivity` | `ApplicationJob` |
-| `ApplicationJobName` |  | | `_LastActivity` | `ApplicationJobName` |
-| `_LastActivity` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_ProjectBasicData` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_CoCodeSelection` | | ✓ | | |
-| `_PrftCtrSelection` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrganizationalChange` | ✓ | |  | `orgl_change` |  |  |
+| `OrganizationalChangeActivity` |  | |  | `last_activity` |  |  |
+| `OrglChangeEffectiveDate` |  | |  | `effective_date` |  |  |
+| `OrglChangeCreationDateTime` |  | |  | `creation_timestamp` |  |  |
+| `OrglChangeCreatedByUser` |  | |  | `created_by_user` |  |  |
+| `OrglChangeLastChangeDateTime` |  | |  | `last_change_timestamp` |  |  |
+| `OrglChangeLastChangedByUser` |  | |  | `last_changed_by_user` |  |  |
+| `OrglChangeProcessingStatus` |  | |  | `processing_status` |  |  |
+| `OrglChangeApplicationVersion` |  | |  | `appl_version` |  |  |
+| `OrganizationalChangeJobType` |  | | `_LastActivity` | `OrganizationalChangeJobType` |  |  |
+| `ApplicationLog` |  | | `_LastActivity` | `ApplicationLog` |  |  |
+| `StatusCode` |  | | `_LastActivity` | `JobStatusValue` |  |  |
+| `NumberOfUniqueWarnings` |  | | `_LastActivity` | `NumberOfUniqueWarnings` |  |  |
+| `NumberOfUniqueErrors` |  | | `_LastActivity` | `NumberOfUniqueErrors` |  |  |
+| `ApplicationJob` |  | | `_LastActivity` | `ApplicationJob` |  |  |
+| `ApplicationJobName` |  | | `_LastActivity` | `ApplicationJobName` |  |  |
+| `_LastActivity` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_ProjectBasicData` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_CoCodeSelection` | | ✓ | | | | |
+| `_PrftCtrSelection` | | ✓ | | | | |
 
 ## Associations
 

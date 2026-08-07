@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HandlingUnitExternalID` | ✓ | |  |  |
-| `Warehouse` | ✓ | |  |  |
-| `StockItemUUID` | ✓ | |  |  |
-| `HandlingUnitItem` |  | |  |  |
-| `HandlingUnitTypeOfContent` |  | |  |  |
-| `HandlingUnitNestedExternalID` |  | |  |  |
-| `HandlingUnitReferenceDocument` |  | |  |  |
-| `HandlingUnitRefDocumentItem` |  | |  |  |
-| `HandlingUnitQuantity` |  | |  |  |
-| `HandlingUnitQuantityUnit` |  | |  |  |
-| `HandlingUnitAltUnitOfMeasure` |  | |  |  |
-| `Material` |  | |  |  |
-| `Batch` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `HandlingUnitGoodsReceiptDate` |  | |  |  |
-| `CountryOfOrigin` |  | |  |  |
-| `HandlingUnitNrOfAuxPackgMat` |  | |  |  |
-| `HandlingUnitNumberOfSerialNumb` |  | |  |  |
-| `SerialNumberProfile` |  | |  |  |
-| `SpecialStockIdfgSalesOrder` |  | |  |  |
-| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
-| `_HandlingUnit` | | ✓ | | |
-| `_HandlingUnitItemSerialNumber` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HandlingUnitExternalID` | ✓ | |  |  |  |  |
+| `Warehouse` | ✓ | |  |  |  |  |
+| `StockItemUUID` | ✓ | |  |  |  |  |
+| `HandlingUnitItem` |  | |  |  |  |  |
+| `HandlingUnitTypeOfContent` |  | |  |  |  |  |
+| `HandlingUnitNestedExternalID` |  | |  |  |  |  |
+| `HandlingUnitReferenceDocument` |  | |  |  |  |  |
+| `HandlingUnitRefDocumentItem` |  | |  |  |  |  |
+| `HandlingUnitQuantity` |  | |  |  |  |  |
+| `HandlingUnitQuantityUnit` |  | |  |  |  |  |
+| `HandlingUnitAltUnitOfMeasure` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `HandlingUnitGoodsReceiptDate` |  | |  |  |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `HandlingUnitNrOfAuxPackgMat` |  | |  |  |  |  |
+| `HandlingUnitNumberOfSerialNumb` |  | |  |  |  |  |
+| `SerialNumberProfile` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |  |  |
+| `_HandlingUnit` | | ✓ | | | | |
+| `_HandlingUnitItemSerialNumber` | | ✓ | | | | |
 
 ## Source Code
 

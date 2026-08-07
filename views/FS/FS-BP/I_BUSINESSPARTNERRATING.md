@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |
-| `BPRatingValidityEndDate` | ✓ | |  | `date_to` |
-| `BusinessPartnerRatingGrade` |  | |  | `grade` |
-| `BusinessPartnerRatingTrend` |  | |  | `tendency` |
-| `BPRatingValidityStartDate` |  | |  | `date_from` |
-| `BPRatingCreationDate` |  | |  | `date_when` |
-| `BusinessPartnerRatingComment` |  | |  | `text` |
-| `BusinessPartnerRatingIsAllowed` |  | |  | `flg_permit` |
-| `BPRatingLongComment` |  | |  | `longtext` |
-| `BPRatingIsValidOnKeyDate` |  | |  | `cast ( case when bp1012.date_to >= tstmp_to_dats( tstmp_current_utctimestamp(), abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') and bp1012.date_from <=tstmp_to_dats( tstmp_current_utctimestamp(), abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') then 'X' else '' end as bp_rat_valid preserving type)` |
-| `BusinessPartnerRatingKeyDate` |  | |  | `cast ( tstmp_to_dats( tstmp_current_utctimestamp(), abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') as bp_rat_key_date preserving type)` |
-| `BusinessPartnerRatingIsExpired` |  | |  | `cast ( case left(cast(( dats_days_between(bp1012.date_to, tstmp_to_dats( tstmp_current_utctimestamp(), abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )) - cast(_BPRatingProcedure.BPRatingStandardAccessDays as abap.int4) ) as abap.char( 16 )),1) when '-' then '' when '0' then '' else 'X' end as bp_rat_expired preserving type)` |
-| `_BusinessPartner` | | ✓ | | |
-| `_BPFinancialServicesExtn` | | ✓ | | |
-| `_BPRatingTrend` | | ✓ | | |
-| `_BPRatingProcedure` | | ✓ | | |
-| `_BPRatingProcedureGrade` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |  |  |
+| `BPRatingValidityEndDate` | ✓ | |  | `date_to` |  |  |
+| `BusinessPartnerRatingGrade` |  | |  | `grade` |  |  |
+| `BusinessPartnerRatingTrend` |  | |  | `tendency` |  |  |
+| `BPRatingValidityStartDate` |  | |  | `date_from` |  |  |
+| `BPRatingCreationDate` |  | |  | `date_when` |  |  |
+| `BusinessPartnerRatingComment` |  | |  | `text` |  |  |
+| `BusinessPartnerRatingIsAllowed` |  | |  | `flg_permit` |  |  |
+| `BPRatingLongComment` |  | |  | `longtext` |  |  |
+| `BPRatingIsValidOnKeyDate` |  | |  | `cast ( case when bp1012.date_to >= tstmp_to_dats( tstmp_current_utctimestamp(), abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') and bp1012.date_from <=tstmp_to_dats( tstmp_current_utctimestamp(), abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') then 'X' else '' end as bp_rat_valid preserving type)` |  |  |
+| `BusinessPartnerRatingKeyDate` |  | |  | `cast ( tstmp_to_dats( tstmp_current_utctimestamp(), abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') as bp_rat_key_date preserving type)` |  |  |
+| `BusinessPartnerRatingIsExpired` |  | |  | `cast ( case left(cast(( dats_days_between(bp1012.date_to, tstmp_to_dats( tstmp_current_utctimestamp(), abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )) - cast(_BPRatingProcedure.BPRatingStandardAccessDays as abap.int4) ) as abap.char( 16 )),1) when '-' then '' when '0' then '' else 'X' end as bp_rat_expired preserving type)` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BPFinancialServicesExtn` | | ✓ | | | | |
+| `_BPRatingTrend` | | ✓ | | | | |
+| `_BPRatingProcedure` | | ✓ | | | | |
+| `_BPRatingProcedureGrade` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrsyHedgingRelshpScenario` | ✓ | |  | `cast(TrsyHedgingRelshpScenario.hrel_scene_cat as ftr_gen_hrel_scenario preserving type)` |
-| `HedgingRelationshipCategory` |  | |  | `cast(TrsyHedgingRelshpScenario.hedge_category as ftr_gen_hrel_category preserving type)` |
-| `TrsyHedgingRelshpRiskCategory` |  | |  | `cast (case when TrsyHedgingRelshpScenario.fx_risk is not initial then '01' when TrsyHedgingRelshpScenario.ir_risk is not initial then '02' when TrsyHedgingRelshpScenario.price_risk is not initial then '03' else ' ' end as ftr_gen_hrel_risk_category preserving type)` |
-| `TrsyHedgeAccountingRule` |  | |  | `cast(TrsyHedgingRelshpScenario.hacc_rule as ftr_gen_hacc_rule preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrsyHedgingRelshpScenario` | ✓ | |  | `cast(TrsyHedgingRelshpScenario.hrel_scene_cat as ftr_gen_hrel_scenario preserving type)` |  |  |
+| `HedgingRelationshipCategory` |  | |  | `cast(TrsyHedgingRelshpScenario.hedge_category as ftr_gen_hrel_category preserving type)` |  |  |
+| `TrsyHedgingRelshpRiskCategory` |  | |  | `cast (case when TrsyHedgingRelshpScenario.fx_risk is not initial then '01' when TrsyHedgingRelshpScenario.ir_risk is not initial then '02' when TrsyHedgingRelshpScenario.price_risk is not initial then '03' else ' ' end as ftr_gen_hrel_risk_category preserving type)` |  |  |
+| `TrsyHedgeAccountingRule` |  | |  | `cast(TrsyHedgingRelshpScenario.hacc_rule as ftr_gen_hacc_rule preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

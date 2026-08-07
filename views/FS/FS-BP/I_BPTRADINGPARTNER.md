@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TradingPartner` | ✓ | |  | `rcomp` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TradingPartner` | ✓ | |  | `rcomp` |  |  |
 
 ## Source Code
 

@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `EmrkdFndsDecisionReasonType` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as reasontyp preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `EmrkdFndsDecisionReasonTypeTxt` |  | |  | `cast ( ddtext as fmis_efd_decisionreasontypetxt preserving type )` |
-| `_Language` | | ✓ | | |
-| `_EarmarkedFundsDcsnRsnType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `EmrkdFndsDecisionReasonType` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as reasontyp preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `EmrkdFndsDecisionReasonTypeTxt` |  | |  | `cast ( ddtext as fmis_efd_decisionreasontypetxt preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_EarmarkedFundsDcsnRsnType` | | ✓ | | | | |
 
 ## Associations
 

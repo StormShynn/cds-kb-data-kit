@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GrantID` | ✓ | | `_Source` | `GrantID` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` | ✓ | | `_Source` | `GrantID` |  |  |
 
 ## Source Code
 

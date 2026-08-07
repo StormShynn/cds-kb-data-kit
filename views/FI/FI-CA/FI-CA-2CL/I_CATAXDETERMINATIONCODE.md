@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |
-| `CATaxDeterminationCode` | ✓ | |  | `ermwskz` |
-| `CATaxDetnCodeValidFromDate` | ✓ | |  | `ab` |
-| `CATaxDetnCodeValidToDate` |  | |  | `bis` |
-| `TaxCode` |  | |  | `mwskz` |
-| `TaxCalculationProcedure` |  | | `_Country` | `TaxCalculationProcedure` |
-| `_Country` | | ✓ | | |
-| `_TaxCalculationProcedure` | | ✓ | | |
-| `_TaxCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |  |  |
+| `CATaxDeterminationCode` | ✓ | |  | `ermwskz` |  |  |
+| `CATaxDetnCodeValidFromDate` | ✓ | |  | `ab` |  |  |
+| `CATaxDetnCodeValidToDate` |  | |  | `bis` |  |  |
+| `TaxCode` |  | |  | `mwskz` |  |  |
+| `TaxCalculationProcedure` |  | | `_Country` | `TaxCalculationProcedure` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_TaxCalculationProcedure` | | ✓ | | | | |
+| `_TaxCode` | | ✓ | | | | |
 
 ## Associations
 

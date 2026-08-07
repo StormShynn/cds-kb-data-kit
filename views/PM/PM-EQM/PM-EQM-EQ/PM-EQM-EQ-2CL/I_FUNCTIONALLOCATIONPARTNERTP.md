@@ -30,35 +30,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalLocation` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  | `cast(PartnerFunction as parvw_unv preserving type )` |
-| `FuncnlLocPartnerObjectNmbr` | ✓ | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `Partner` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `MaintObjectInternalID` |  | |  |  |
-| `PartnerFunctionType` |  | |  |  |
-| `CntctPersnIsBusPrpsCompleted` |  | |  |  |
-| `CntctPersnCustomerAccountGroup` |  | |  |  |
-| `CntctPersnCustomerAuthznGroup` |  | |  |  |
-| `CntctPersnSupplierAccountGroup` |  | |  |  |
-| `CntctPersnSupplierAuthznGroup` |  | |  |  |
-| `CustomerIsBusPrpsCmpltd` |  | |  |  |
-| `CustomerAccountGroup` |  | |  |  |
-| `CustomerAuthznGrp` |  | |  |  |
-| `EmployeeIsBusPrpsCmpltd` |  | |  |  |
-| `EmployeeAuthznGroup` |  | |  |  |
-| `SupplierIsBusPrpsCmpltd` |  | |  |  |
-| `SupplierAccountGroup` |  | |  |  |
-| `SupplierAuthznGrp` |  | |  |  |
-| `_FunctionalLocation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  | `cast(PartnerFunction as parvw_unv preserving type )` |  |  |
+| `FuncnlLocPartnerObjectNmbr` | ✓ | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `Partner` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `MaintObjectInternalID` |  | |  |  |  |  |
+| `PartnerFunctionType` |  | |  |  |  |  |
+| `CntctPersnIsBusPrpsCompleted` |  | |  |  |  |  |
+| `CntctPersnCustomerAccountGroup` |  | |  |  |  |  |
+| `CntctPersnCustomerAuthznGroup` |  | |  |  |  |  |
+| `CntctPersnSupplierAccountGroup` |  | |  |  |  |  |
+| `CntctPersnSupplierAuthznGroup` |  | |  |  |  |  |
+| `CustomerIsBusPrpsCmpltd` |  | |  |  |  |  |
+| `CustomerAccountGroup` |  | |  |  |  |  |
+| `CustomerAuthznGrp` |  | |  |  |  |  |
+| `EmployeeIsBusPrpsCmpltd` |  | |  |  |  |  |
+| `EmployeeAuthznGroup` |  | |  |  |  |  |
+| `SupplierIsBusPrpsCmpltd` |  | |  |  |  |  |
+| `SupplierAccountGroup` |  | |  |  |  |  |
+| `SupplierAuthznGrp` |  | |  |  |  |  |
+| `_FunctionalLocation` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrActyTaskUUID` | ✓ | |  |  |
-| `SupplierActivityTask` |  | |  | `cast(ltrim(Task.SupplierActivityTask,'0') as /srmsmc/task_id )` |
-| `SuplrActyTaskName` |  | |  |  |
-| `EndDate` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  | `cast(Task.CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  | `cast(Task.LastChangedByUser as /srmsmc/last_changed_by )` |
-| `Language` |  | |  |  |
-| `CreatedByUserDescription` |  | |  | `cast(Task._CreatedByUser._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/created_by_user_desc)` |
-| `LastChangedByUserName` |  | |  | `cast(Task._LastChangedByUser._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/last_changed_by_desc)` |
-| `SuplrActyName` |  | |  |  |
-| `FormOfAddressName` |  | |  |  |
-| `FirstName` |  | |  |  |
-| `FamilyName` |  | |  | `LastName` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrActyTaskUUID` | ✓ | |  |  |  |  |
+| `SupplierActivityTask` |  | |  | `cast(ltrim(Task.SupplierActivityTask,'0') as /srmsmc/task_id )` |  |  |
+| `SuplrActyTaskName` |  | |  |  |  |  |
+| `EndDate` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  | `cast(Task.CreatedByUser as /srmsmc/created_by )` |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  | `cast(Task.LastChangedByUser as /srmsmc/last_changed_by )` |  |  |
+| `Language` |  | |  |  |  |  |
+| `CreatedByUserDescription` |  | |  | `cast(Task._CreatedByUser._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/created_by_user_desc)` |  |  |
+| `LastChangedByUserName` |  | |  | `cast(Task._LastChangedByUser._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/last_changed_by_desc)` |  |  |
+| `SuplrActyName` |  | |  |  |  |  |
+| `FormOfAddressName` |  | |  |  |  |  |
+| `FirstName` |  | |  |  |  |  |
+| `FamilyName` |  | |  | `LastName` |  |  |
 
 ## Source Code
 

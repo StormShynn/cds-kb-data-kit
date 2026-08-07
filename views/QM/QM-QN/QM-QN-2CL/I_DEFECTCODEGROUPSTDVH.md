@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DefectCodeGroup` | ✓ | |  |  |
-| `CodeGroupStatus` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DefectCodeGroup` | ✓ | |  |  |  |  |
+| `CodeGroupStatus` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

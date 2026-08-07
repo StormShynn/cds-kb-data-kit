@@ -29,46 +29,46 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PhysicalInventoryDocument` | ✓ | |  | `cast(ikpf.iblnr as pi_document preserving type)` |
-| `FiscalYear` | ✓ | |  | `gjahr` |
-| `InventoryTransactionType` |  | |  | `cast(ikpf.vgart as pi_transaction_type preserving type)` |
-| `Plant` |  | |  | `werks` |
-| `StorageLocation` |  | |  | `lgort` |
-| `InventorySpecialStockType` |  | |  | `sobkz` |
-| `DocumentDate` |  | |  | `bldat` |
-| `PhysInventoryPlannedCountDate` |  | |  | `gidat` |
-| `PhysicalInventoryLastCountDate` |  | |  | `zldat` |
-| `PostingDate` |  | |  | `cast(ikpf.budat as mmim_postingdate preserving type)` |
-| `FiscalPeriod` |  | |  | `cast(ikpf.monat as pi_monat preserving type)` |
-| `CreatedByUserName` |  | |  | `cast(ikpf.usnam as pi_created_by_user preserving type)` |
-| `PostingIsBlockedForPhysInvtry` |  | |  | `sperr` |
-| `PhysicalInventoryCountStatus` |  | |  | `zstat` |
-| `PhysInvtryAdjustmentPostingSts` |  | |  | `dstat` |
-| `PhysInventoryReferenceNumber` |  | |  | `cast(ikpf.xblni as pi_reference preserving type)` |
-| `PhysInvtryDeletionStatus` |  | |  | `lstat` |
-| `PhysInvtryDocHasQtySnapshot` |  | |  | `cast(ikpf.xbufi as pi_book_inventory_freeze preserving type)` |
-| `PhysicalInventoryGroupType` |  | |  | `keord` |
-| `PhysicalInventoryGroup` |  | |  | `ordng` |
-| `PhysicalInventoryNumber` |  | |  | `cast(ikpf.invnu as pi_number preserving type)` |
-| `PhysicalInventoryDocumentDesc` |  | |  | `ibltxt` |
-| `PhysicalInventoryType` |  | |  | `cast(ikpf.invart as pi_type preserving type)` |
-| `LastChangeDateTime` |  | |  | `lastchange_datetime` |
-| `SalesPriceValuationIsActive` |  | |  | `cast(t001k.xvkbw as pi_is_sp_valuation_active preserving type)` |
-| `ValuationArea` |  | |  | `bwkey` |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_PhysInvtryDocItem` | | ✓ | | |
-| `_PhysInvtryGroupType` | | ✓ | | |
-| `_PhysInvtryType` | | ✓ | | |
-| `_InventoryTransactionType` | | ✓ | | |
-| `_PhysInvtryCountSts` | | ✓ | | |
-| `_PhysInvtryDeletionSts` | | ✓ | | |
-| `_PhysInvtryPostSts` | | ✓ | | |
-| `_PhysInvtryDocFiscalYear` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhysicalInventoryDocument` | ✓ | |  | `cast(ikpf.iblnr as pi_document preserving type)` |  |  |
+| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
+| `InventoryTransactionType` |  | |  | `cast(ikpf.vgart as pi_transaction_type preserving type)` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `StorageLocation` |  | |  | `lgort` |  |  |
+| `InventorySpecialStockType` |  | |  | `sobkz` |  |  |
+| `DocumentDate` |  | |  | `bldat` |  |  |
+| `PhysInventoryPlannedCountDate` |  | |  | `gidat` |  |  |
+| `PhysicalInventoryLastCountDate` |  | |  | `zldat` |  |  |
+| `PostingDate` |  | |  | `cast(ikpf.budat as mmim_postingdate preserving type)` |  |  |
+| `FiscalPeriod` |  | |  | `cast(ikpf.monat as pi_monat preserving type)` |  |  |
+| `CreatedByUserName` |  | |  | `cast(ikpf.usnam as pi_created_by_user preserving type)` |  |  |
+| `PostingIsBlockedForPhysInvtry` |  | |  | `sperr` |  |  |
+| `PhysicalInventoryCountStatus` |  | |  | `zstat` |  |  |
+| `PhysInvtryAdjustmentPostingSts` |  | |  | `dstat` |  |  |
+| `PhysInventoryReferenceNumber` |  | |  | `cast(ikpf.xblni as pi_reference preserving type)` |  |  |
+| `PhysInvtryDeletionStatus` |  | |  | `lstat` |  |  |
+| `PhysInvtryDocHasQtySnapshot` |  | |  | `cast(ikpf.xbufi as pi_book_inventory_freeze preserving type)` |  |  |
+| `PhysicalInventoryGroupType` |  | |  | `keord` |  |  |
+| `PhysicalInventoryGroup` |  | |  | `ordng` |  |  |
+| `PhysicalInventoryNumber` |  | |  | `cast(ikpf.invnu as pi_number preserving type)` |  |  |
+| `PhysicalInventoryDocumentDesc` |  | |  | `ibltxt` |  |  |
+| `PhysicalInventoryType` |  | |  | `cast(ikpf.invart as pi_type preserving type)` |  |  |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` |  |  |
+| `SalesPriceValuationIsActive` |  | |  | `cast(t001k.xvkbw as pi_is_sp_valuation_active preserving type)` |  |  |
+| `ValuationArea` |  | |  | `bwkey` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_PhysInvtryDocItem` | | ✓ | | | | |
+| `_PhysInvtryGroupType` | | ✓ | | | | |
+| `_PhysInvtryType` | | ✓ | | | | |
+| `_InventoryTransactionType` | | ✓ | | | | |
+| `_PhysInvtryCountSts` | | ✓ | | | | |
+| `_PhysInvtryDeletionSts` | | ✓ | | | | |
+| `_PhysInvtryPostSts` | | ✓ | | | | |
+| `_PhysInvtryDocFiscalYear` | | ✓ | | | | |
 
 ## Associations
 

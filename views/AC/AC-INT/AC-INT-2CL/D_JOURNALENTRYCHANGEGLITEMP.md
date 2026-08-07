@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountLineItem` |  | |  | `docln6` |
-| `DocumentItemText` |  | |  | `sgtxt` |
-| `AssignmentReference` |  | |  | `dzuonr` |
-| `StateCentralBankPaymentReason` |  | |  | `lzbkz` |
-| `SupplyingCountry` |  | |  | `landl` |
-| `Reference1IDByBusinessPartner` |  | |  | `xref1` |
-| `Reference2IDByBusinessPartner` |  | |  | `xref2` |
-| `Reference3IDByBusinessPartner` |  | |  | `xref3` |
-| `PaymentDifferenceReason` |  | |  | `rstgr` |
-| `_JournalEntryChange` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountLineItem` |  | |  | `docln6` |  |  |
+| `DocumentItemText` |  | |  | `sgtxt` |  |  |
+| `AssignmentReference` |  | |  | `dzuonr` |  |  |
+| `StateCentralBankPaymentReason` |  | |  | `lzbkz` |  |  |
+| `SupplyingCountry` |  | |  | `landl` |  |  |
+| `Reference1IDByBusinessPartner` |  | |  | `xref1` |  |  |
+| `Reference2IDByBusinessPartner` |  | |  | `xref2` |  |  |
+| `Reference3IDByBusinessPartner` |  | |  | `xref3` |  |  |
+| `PaymentDifferenceReason` |  | |  | `rstgr` |  |  |
+| `_JournalEntryChange` | | ✓ | | | | |
 
 ## Source Code
 

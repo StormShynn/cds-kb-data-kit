@@ -29,41 +29,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressPersonID` | ✓ | |  | `persnumber` |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |
-| `FormOfAddress` |  | |  | `title` |
-| `GivenName` |  | |  | `name_first` |
-| `FamilyName` |  | |  | `name_last` |
-| `PersonBirthName` |  | |  | `name2` |
-| `PersonMiddleName` |  | |  | `namemiddle` |
-| `SecondFamilyName` |  | |  | `name_last2` |
-| `AcademicTitle` |  | |  | `title_aca1` |
-| `AcademicTitle2` |  | |  | `title_aca2` |
-| `FamilyNamePrefix` |  | |  | `prefix1` |
-| `FamilyNameSecondPrefix` |  | |  | `prefix2` |
-| `PersonNameSupplementCode` |  | |  | `title_sppl` |
-| `PersonNickname` |  | |  | `nickname` |
-| `NameInitials` |  | |  | `initials` |
-| `PersonFullName` |  | |  | `name_text` |
-| `CorrespondenceLanguage` |  | |  | `langu` |
-| `AddressPersonSearchTerm1` |  | |  | `sort1` |
-| `AddressPersonSearchTerm2` |  | |  | `sort2` |
-| `PersonFullNameFormattingCode` |  | |  | `nameformat` |
-| `PersonFullNameFormattingCntry` |  | |  | `namcountry` |
-| `addresscreatedbyuser` |  | |  |  |
-| `addresscreatedondatetime` |  | |  |  |
-| `addresschangedbyuser` |  | |  |  |
-| `addresschangedondatetime` |  | |  |  |
-| `converted` |  | |  |  |
-| `_FormOfAddress` | | ✓ | | |
-| `_NameSupplement` | | ✓ | | |
-| `_FamilyNamePrefix` | | ✓ | | |
-| `_FamilyNameSecondPrefix` | | ✓ | | |
-| `_AcademicTitle` | | ✓ | | |
-| `_AcademicTitle2` | | ✓ | | |
-| `_AddressRepresentationCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
+| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
+| `FormOfAddress` |  | |  | `title` |  |  |
+| `GivenName` |  | |  | `name_first` |  |  |
+| `FamilyName` |  | |  | `name_last` |  |  |
+| `PersonBirthName` |  | |  | `name2` |  |  |
+| `PersonMiddleName` |  | |  | `namemiddle` |  |  |
+| `SecondFamilyName` |  | |  | `name_last2` |  |  |
+| `AcademicTitle` |  | |  | `title_aca1` |  |  |
+| `AcademicTitle2` |  | |  | `title_aca2` |  |  |
+| `FamilyNamePrefix` |  | |  | `prefix1` |  |  |
+| `FamilyNameSecondPrefix` |  | |  | `prefix2` |  |  |
+| `PersonNameSupplementCode` |  | |  | `title_sppl` |  |  |
+| `PersonNickname` |  | |  | `nickname` |  |  |
+| `NameInitials` |  | |  | `initials` |  |  |
+| `PersonFullName` |  | |  | `name_text` |  |  |
+| `CorrespondenceLanguage` |  | |  | `langu` |  |  |
+| `AddressPersonSearchTerm1` |  | |  | `sort1` |  |  |
+| `AddressPersonSearchTerm2` |  | |  | `sort2` |  |  |
+| `PersonFullNameFormattingCode` |  | |  | `nameformat` |  |  |
+| `PersonFullNameFormattingCntry` |  | |  | `namcountry` |  |  |
+| `addresscreatedbyuser` |  | |  |  |  |  |
+| `addresscreatedondatetime` |  | |  |  |  |  |
+| `addresschangedbyuser` |  | |  |  |  |  |
+| `addresschangedondatetime` |  | |  |  |  |  |
+| `converted` |  | |  |  |  |  |
+| `_FormOfAddress` | | ✓ | | | | |
+| `_NameSupplement` | | ✓ | | | | |
+| `_FamilyNamePrefix` | | ✓ | | | | |
+| `_FamilyNameSecondPrefix` | | ✓ | | | | |
+| `_AcademicTitle` | | ✓ | | | | |
+| `_AcademicTitle2` | | ✓ | | | | |
+| `_AddressRepresentationCode` | | ✓ | | | | |
 
 ## Associations
 

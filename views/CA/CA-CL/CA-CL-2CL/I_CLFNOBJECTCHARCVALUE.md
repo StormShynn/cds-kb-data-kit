@@ -27,39 +27,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClfnObjectID` | ✓ | |  |  |
-| `ClfnObjectTable` | ✓ | |  |  |
-| `CharcInternalID` | ✓ | |  |  |
-| `CharcValuePositionNumber` | ✓ | |  |  |
-| `ClfnObjectType` | ✓ | |  |  |
-| `ClassType` | ✓ | |  |  |
-| `TimeIntervalNumber` | ✓ | |  |  |
-| `ClfnObjectInternalID` |  | |  |  |
-| `CharcValueIntervalType` |  | |  |  |
-| `CharcValue` |  | |  |  |
-| `CharcFromNumericValue` |  | |  |  |
-| `CharcFromNumericValueUnit` |  | |  |  |
-| `CharcToNumericValue` |  | |  |  |
-| `CharcToNumericValueUnit` |  | |  |  |
-| `CharcFromDecimalValue` |  | |  |  |
-| `CharcToDecimalValue` |  | |  |  |
-| `CharcFromAmount` |  | |  |  |
-| `CharcToAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `CharcFromDate` |  | |  |  |
-| `CharcToDate` |  | |  |  |
-| `CharcFromTime` |  | |  |  |
-| `CharcToTime` |  | |  |  |
-| `CharacteristicAuthor` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `CharcValueSortPosition` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Characteristic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClfnObjectID` | ✓ | |  |  |  |  |
+| `ClfnObjectTable` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `CharcValuePositionNumber` | ✓ | |  |  |  |  |
+| `ClfnObjectType` | ✓ | |  |  |  |  |
+| `ClassType` | ✓ | |  |  |  |  |
+| `TimeIntervalNumber` | ✓ | |  |  |  |  |
+| `ClfnObjectInternalID` |  | |  |  |  |  |
+| `CharcValueIntervalType` |  | |  |  |  |  |
+| `CharcValue` |  | |  |  |  |  |
+| `CharcFromNumericValue` |  | |  |  |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |  |  |
+| `CharcToNumericValue` |  | |  |  |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |  |  |
+| `CharcFromDecimalValue` |  | |  |  |  |  |
+| `CharcToDecimalValue` |  | |  |  |  |  |
+| `CharcFromAmount` |  | |  |  |  |  |
+| `CharcToAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `CharcFromDate` |  | |  |  |  |  |
+| `CharcToDate` |  | |  |  |  |  |
+| `CharcFromTime` |  | |  |  |  |  |
+| `CharcToTime` |  | |  |  |  |  |
+| `CharacteristicAuthor` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `CharcValueSortPosition` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Characteristic` | | ✓ | | | | |
 
 ## Associations
 

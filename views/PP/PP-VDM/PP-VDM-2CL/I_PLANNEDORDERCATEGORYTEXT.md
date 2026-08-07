@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlannedOrderCategory` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as plannedordercategory preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
-| `PlannedOrderCategoryName` |  | |  | `cast(txt.ddtext as plannedordercategoryname preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_Category` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlannedOrderCategory` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as plannedordercategory preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |  |  |
+| `PlannedOrderCategoryName` |  | |  | `cast(txt.ddtext as plannedordercategoryname preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Category` | | ✓ | | | | |
 
 ## Associations
 

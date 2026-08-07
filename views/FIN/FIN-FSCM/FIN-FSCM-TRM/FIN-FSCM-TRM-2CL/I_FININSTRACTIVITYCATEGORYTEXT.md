@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `FinancialInstrProductCategory` | ✓ | |  | `sanlfor` |
-| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |
-| `FinancialInstrActivityCategory` | ✓ | |  | `sfgzustt` |
-| `FinInstrActivityCategoryName` |  | |  | `xtext` |
-| `_Language` | | ✓ | | |
-| `_ProductCategory` | | ✓ | | |
-| `_TransactionCategory` | | ✓ | | |
-| `_ActivityCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlfor` |  |  |
+| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |  |  |
+| `FinancialInstrActivityCategory` | ✓ | |  | `sfgzustt` |  |  |
+| `FinInstrActivityCategoryName` |  | |  | `xtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProductCategory` | | ✓ | | | | |
+| `_TransactionCategory` | | ✓ | | | | |
+| `_ActivityCategory` | | ✓ | | | | |
 
 ## Associations
 

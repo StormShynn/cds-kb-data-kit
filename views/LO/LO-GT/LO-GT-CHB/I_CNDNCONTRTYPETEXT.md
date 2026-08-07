@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CndnContrType` |  | |  | `}] } key CndnContrType` |
-| `Language` | ✓ | |  |  |
-| `CndnContrTypeDesc` |  | |  |  |
-| `_CndnContrType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `CndnContrTypeDesc` |  | |  |  |  |  |
+| `_CndnContrType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

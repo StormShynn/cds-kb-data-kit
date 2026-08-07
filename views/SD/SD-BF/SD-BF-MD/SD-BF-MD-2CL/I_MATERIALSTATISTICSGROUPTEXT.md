@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialStatisticsGroup` | ✓ | |  | `stgma` |
-| `Language` | ✓ | |  | `spras` |
-| `MaterialStatisticsGroupDesc` |  | |  | `bezei20` |
-| `_MaterialStatisticsGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialStatisticsGroup` | ✓ | |  | `stgma` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaterialStatisticsGroupDesc` |  | |  | `bezei20` |  |  |
+| `_MaterialStatisticsGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

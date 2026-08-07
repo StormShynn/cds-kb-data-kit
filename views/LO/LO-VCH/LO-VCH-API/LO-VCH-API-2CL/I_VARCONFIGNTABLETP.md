@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarConfignTblName` | ✓ | |  |  |
-| `VarConfignTblStatus` |  | |  |  |
-| `VarConfignTblGroup` |  | |  |  |
-| `VarConfignTblCustomStorageName` |  | |  |  |
-| `VarConfignTblCstmStorIsActive` |  | |  |  |
-| `VarConfignTblIsDecisionTable` |  | |  |  |
-| `EngineProcessingMode` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `VarCnfTblCstmStorLnkLstChgDate` |  | |  |  |
-| `VarCnfTblCstmStorLnkLstChgTime` |  | |  |  |
-| `VarCnfTblCstmStorLnkLastChgdBy` |  | |  |  |
-| `VarConfignTblLstChgDateTime` |  | |  |  |
-| `_Column` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ValueAssignmentAlternative` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |  |  |
+| `VarConfignTblStatus` |  | |  |  |  |  |
+| `VarConfignTblGroup` |  | |  |  |  |  |
+| `VarConfignTblCustomStorageName` |  | |  |  |  |  |
+| `VarConfignTblCstmStorIsActive` |  | |  |  |  |  |
+| `VarConfignTblIsDecisionTable` |  | |  |  |  |  |
+| `EngineProcessingMode` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `VarCnfTblCstmStorLnkLstChgDate` |  | |  |  |  |  |
+| `VarCnfTblCstmStorLnkLstChgTime` |  | |  |  |  |  |
+| `VarCnfTblCstmStorLnkLastChgdBy` |  | |  |  |  |  |
+| `VarConfignTblLstChgDateTime` |  | |  |  |  |  |
+| `_Column` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ValueAssignmentAlternative` | | ✓ | | | | |
 
 ## Source Code
 

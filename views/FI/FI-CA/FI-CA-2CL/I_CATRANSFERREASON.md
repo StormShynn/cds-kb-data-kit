@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CATransferReason` | ✓ | |  | `umgrd` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CATransferReason` | ✓ | |  | `umgrd` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

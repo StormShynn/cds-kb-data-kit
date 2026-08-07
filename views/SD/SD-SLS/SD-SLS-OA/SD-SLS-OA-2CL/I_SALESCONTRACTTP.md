@@ -31,45 +31,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContract` | ✓ | |  |  |
-| `SalesContractType` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SDDocumentReason` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `SalesContractValidityStartDate` |  | |  |  |
-| `SalesContractValidityEndDate` |  | |  |  |
-| `SalesContractValidityPerdCat` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `SalesContractApprovalReason` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `SalesDocApprovalStatus` |  | |  |  |
-| `SalesContractDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_PricingElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |  |  |
+| `SalesContractType` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `SalesContractValidityStartDate` |  | |  |  |  |  |
+| `SalesContractValidityEndDate` |  | |  |  |  |  |
+| `SalesContractValidityPerdCat` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `SalesContractApprovalReason` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |  |  |
+| `SalesContractDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_PricingElement` | | ✓ | | | | |
 
 ## Source Code
 

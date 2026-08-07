@@ -32,24 +32,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandServiceUUID` | ✓ | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `MaterialPlannedDeliveryDurn` |  | |  |  |
-| `_MaterialText` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_MaterialGroupText` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_PurchasingInfoRecord` | | ✓ | | |
-| `_RootTP` | | ✓ | | |
-| `_ServiceSupply` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandServiceUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  |  |  |  |
+| `_MaterialText` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_MaterialGroupText` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_PurchasingInfoRecord` | | ✓ | | | | |
+| `_RootTP` | | ✓ | | | | |
+| `_ServiceSupply` | | ✓ | | | | |
 
 ## Source Code
 

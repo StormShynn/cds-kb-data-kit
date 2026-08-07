@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CndnContrProcVar` | ✓ | |  | `process_variant` |
-| `SettlmtDfltApplSts` |  | |  | `default_estatus` |
-| `SettlmtApplStsGrp` |  | |  | `status_group` |
-| `CndnContrApprvlProc` |  | |  | `approval_process` |
-| `_Text` | | ✓ | | |
-| `_CndnContrApprvlProc` | | ✓ | | |
-| `_SettlmtApplStsGrp` | | ✓ | | |
-| `_SettlmtApplSts` | | ✓ | | |
-| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | |
-| `_CndnContrProcVarTypeAssgmt` | | ✓ | | |
-| `_CndnContrProcVarPurAssgmt` | | ✓ | | |
-| `_CndnContrProcVarSlsAssgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrProcVar` | ✓ | |  | `process_variant` |  |  |
+| `SettlmtDfltApplSts` |  | |  | `default_estatus` |  |  |
+| `SettlmtApplStsGrp` |  | |  | `status_group` |  |  |
+| `CndnContrApprvlProc` |  | |  | `approval_process` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CndnContrApprvlProc` | | ✓ | | | | |
+| `_SettlmtApplStsGrp` | | ✓ | | | | |
+| `_SettlmtApplSts` | | ✓ | | | | |
+| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | | | |
+| `_CndnContrProcVarTypeAssgmt` | | ✓ | | | | |
+| `_CndnContrProcVarPurAssgmt` | | ✓ | | | | |
+| `_CndnContrProcVarSlsAssgmt` | | ✓ | | | | |
 
 ## Associations
 

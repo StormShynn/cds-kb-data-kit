@@ -29,58 +29,58 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesSchedulingAgreement` | ✓ | |  |  |
-| `SalesSchedulingAgreementItem` | ✓ | |  |  |
-| `SchedulingAgreementReleaseType` | ✓ | |  |  |
-| `SalesSchedgAgrmtType` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |
-| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |
-| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `PartnerCompany` |  | |  | `TradingPartner` |
-| `SoldToParty` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `ShipToParty` |  | |  | `cast(coalesce(ItemPartner.ShipToParty, HeaderPartner.ShipToParty) as kunwe)` |
-| `BillToParty` |  | |  | `cast(coalesce(ItemPartner.BillToParty, HeaderPartner.BillToParty) as kunre)` |
-| `PayerParty` |  | |  | `cast(coalesce(ItemPartner.PayerParty, HeaderPartner.PayerParty) as kunrg)` |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `Division` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Product` |  | |  | `cast( SalesSchedgAgrmtItem.Material as productnumber preserving type )` |
-| `ProductGroup` |  | |  | `cast( SalesSchedgAgrmtItem.MaterialGroup as productgroup preserving type )` |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `BillingCompanyCode` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `CustomerFiscalYear` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `CumulativeDeliveredQuantity` |  | |  |  |
-| `CumulativeIssuedQuantity` |  | |  |  |
-| `CumulativeReceiptQuantity` |  | |  |  |
-| `_ShipToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  |  |  |  |
+| `SalesSchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `SchedulingAgreementReleaseType` | ✓ | |  |  |  |  |
+| `SalesSchedgAgrmtType` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |  |  |
+| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |  |  |
+| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  | `TradingPartner` |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `ShipToParty` |  | |  | `cast(coalesce(ItemPartner.ShipToParty, HeaderPartner.ShipToParty) as kunwe)` |  |  |
+| `BillToParty` |  | |  | `cast(coalesce(ItemPartner.BillToParty, HeaderPartner.BillToParty) as kunre)` |  |  |
+| `PayerParty` |  | |  | `cast(coalesce(ItemPartner.PayerParty, HeaderPartner.PayerParty) as kunrg)` |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Product` |  | |  | `cast( SalesSchedgAgrmtItem.Material as productnumber preserving type )` |  |  |
+| `ProductGroup` |  | |  | `cast( SalesSchedgAgrmtItem.MaterialGroup as productgroup preserving type )` |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `BillingCompanyCode` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `CustomerFiscalYear` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `CumulativeDeliveredQuantity` |  | |  |  |  |  |
+| `CumulativeIssuedQuantity` |  | |  |  |  |  |
+| `CumulativeReceiptQuantity` |  | |  |  |  |  |
+| `_ShipToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
 
 ## Associations
 

@@ -26,13 +26,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SelectedCodeSetPlant` |  | |  | `qwerkausw` |
-| `InspLotUsgeDcsnSelectedSet` |  | |  | `qvmenge` |
-| `InspLotUsageDecisionCodeGroup` |  | |  | `qvgruppe` |
-| `InspectionLotUsageDecisionCode` |  | |  | `qvcode` |
-| `InspLotIsCompletionForced` |  | |  | `vdm_qinsp_completion_forced` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SelectedCodeSetPlant` |  | |  | `qwerkausw` |  |  |
+| `InspLotUsgeDcsnSelectedSet` |  | |  | `qvmenge` |  |  |
+| `InspLotUsageDecisionCodeGroup` |  | |  | `qvgruppe` |  |  |
+| `InspectionLotUsageDecisionCode` |  | |  | `qvcode` |  |  |
+| `InspLotIsCompletionForced` |  | |  | `vdm_qinsp_completion_forced` |  |  |
 
 ## Source Code
 

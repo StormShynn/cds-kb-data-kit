@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ArchitecturalObjectNumber` | ✓ | |  |  |
-| `TechnicalObjectType` | ✓ | |  |  |
-| `DocumentText` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `PurchaseContract` | ✓ | |  |  |
-| `NoteDescription` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurchaseContract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ArchitecturalObjectNumber` | ✓ | |  |  |  |  |
+| `TechnicalObjectType` | ✓ | |  |  |  |  |
+| `DocumentText` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `NoteDescription` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurchaseContract` | | ✓ | | | | |
 
 ## Source Code
 

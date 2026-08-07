@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MeansOfTransportType` | ✓ | |  | `traty` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeansOfTransportType` | ✓ | |  | `traty` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationMethod` | ✓ | |  | `cast(cmeth as fincs_method preserving type )` |
-| `ConsolidationTaskCategory` |  | |  | `cast(cactt as fincs_taskcategory preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationMethod` | ✓ | |  | `cast(cmeth as fincs_method preserving type )` |  |  |
+| `ConsolidationTaskCategory` |  | |  | `cast(cactt as fincs_taskcategory preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

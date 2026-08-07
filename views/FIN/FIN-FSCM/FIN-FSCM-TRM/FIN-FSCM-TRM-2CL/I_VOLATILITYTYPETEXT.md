@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `VolatilityType` | ✓ | |  | `volart` |
-| `TextDescription` |  | |  | `xtext` |
-| `_Language` | | ✓ | | |
-| `_VolatilityType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `VolatilityType` | ✓ | |  | `volart` |  |  |
+| `TextDescription` |  | |  | `xtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_VolatilityType` | | ✓ | | | | |
 
 ## Associations
 

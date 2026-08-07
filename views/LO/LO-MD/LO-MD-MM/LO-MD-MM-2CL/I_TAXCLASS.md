@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaxClassificationCategory` | ✓ | |  | `tatyp` |
-| `TaxClassification` | ✓ | |  | `taxkm` |
-| `_Text` | | ✓ | | |
-| `_TaxClassificationCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxClassificationCategory` | ✓ | |  | `tatyp` |  |  |
+| `TaxClassification` | ✓ | |  | `taxkm` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_TaxClassificationCategory` | | ✓ | | | | |
 
 ## Associations
 

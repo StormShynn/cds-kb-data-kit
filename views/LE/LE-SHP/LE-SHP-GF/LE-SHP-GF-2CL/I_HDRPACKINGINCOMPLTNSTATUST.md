@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HeaderPackingIncompletionSts` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `HdrPackingIncompltnStatusDesc` |  | |  | `bezei` |
-| `_HeaderPackingIncompletionSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HeaderPackingIncompletionSts` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `HdrPackingIncompltnStatusDesc` |  | |  | `bezei` |  |  |
+| `_HeaderPackingIncompletionSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

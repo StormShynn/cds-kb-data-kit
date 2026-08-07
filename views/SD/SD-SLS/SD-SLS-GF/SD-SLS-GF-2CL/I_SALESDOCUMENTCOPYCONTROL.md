@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TargetSalesDocumentType` | ✓ | |  | `auarn` |
-| `SourceSalesDocumentType` | ✓ | |  | `auarv` |
-| `SourceBillingDocumentType` | ✓ | |  | `fkarv` |
-| `ReferenceScheduleLineCategory` | ✓ | |  | `ettyv` |
-| `ReferenceItemCategory` | ✓ | |  | `pstyv` |
-| `_TargetSalesDocumentType` | | ✓ | | |
-| `_SourceSalesDocumentType` | | ✓ | | |
-| `_SourceBillingDocumentType` | | ✓ | | |
-| `_ReferenceScheduleLineCategory` | | ✓ | | |
-| `_ReferenceItemCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TargetSalesDocumentType` | ✓ | |  | `auarn` |  |  |
+| `SourceSalesDocumentType` | ✓ | |  | `auarv` |  |  |
+| `SourceBillingDocumentType` | ✓ | |  | `fkarv` |  |  |
+| `ReferenceScheduleLineCategory` | ✓ | |  | `ettyv` |  |  |
+| `ReferenceItemCategory` | ✓ | |  | `pstyv` |  |  |
+| `_TargetSalesDocumentType` | | ✓ | | | | |
+| `_SourceSalesDocumentType` | | ✓ | | | | |
+| `_SourceBillingDocumentType` | | ✓ | | | | |
+| `_ReferenceScheduleLineCategory` | | ✓ | | | | |
+| `_ReferenceItemCategory` | | ✓ | | | | |
 
 ## Associations
 

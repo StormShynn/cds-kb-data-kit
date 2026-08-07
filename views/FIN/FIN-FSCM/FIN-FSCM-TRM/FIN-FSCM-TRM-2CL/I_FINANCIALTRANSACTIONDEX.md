@@ -29,145 +29,145 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `FinancialTransaction` | ✓ | |  |  |
-| `FinTransCreationDate` |  | |  |  |
-| `FinTransCreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `FinInstrumentLastChangedTime` |  | |  |  |
-| `TreasuryContractType` |  | |  |  |
-| `FinancialInstrProductCategory` |  | |  |  |
-| `FinancialInstrumentProductType` |  | |  |  |
-| `FinInstrTransactionCategory` |  | |  |  |
-| `FinancialInstrTransactionType` |  | |  |  |
-| `TermStartDate` |  | |  |  |
-| `FinTransNoticePeriod` |  | |  |  |
-| `FinTransNoticePeriodUnit` |  | |  |  |
-| `FinTransFactoryCalendar1` |  | |  |  |
-| `FinTransFactoryCalendar2` |  | |  |  |
-| `Counterparty` |  | |  |  |
-| `FinancialInstrumentGuarantor` |  | |  |  |
-| `Portfolio` |  | |  |  |
-| `TreasuryFinanceProject` |  | |  |  |
-| `FinancialInstrumentAssignment` |  | |  |  |
-| `FinancialInstrumentReference` |  | |  |  |
-| `FinancialInstrCharacteristic` |  | |  |  |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
-| `CostCenter` |  | |  |  |
-| `HedgingClassification` |  | |  |  |
-| `HedgeRequestIdentifier` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `TreasuryFacilityCompanyCode` |  | |  |  |
-| `TreasuryFacility` |  | |  |  |
-| `FinancialInstrumentStatus` |  | |  |  |
-| `FinTransReleaseStatus` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `FinInstrumentOutgoingCurrency` |  | |  |  |
-| `FinInstrumentIncomingCurrency` |  | |  |  |
-| `TradedCurrency` |  | |  |  |
-| `SecurityClass` |  | |  |  |
-| `ClassificationOfFinInstr` |  | |  |  |
-| `SecurityAccount` |  | |  |  |
-| `FinTransIsRiskMitigating` |  | |  |  |
-| `FinInstrLastActiveActivity` |  | |  |  |
-| `TrsyTradedAmountBuySellCode` |  | |  |  |
-| `Segment` |  | |  |  |
-| `OnBehalfOfCompany` |  | |  |  |
-| `MarketIdentifierCode` |  | |  |  |
-| `FinTransRoundingCategory` |  | |  |  |
-| `FinTransGeneralValuationClass` |  | |  |  |
-| `Fund` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `FinTransAuthorizationGroup` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `TrsyPosCustomDiffntnTerm1` |  | |  |  |
-| `TrsyPosCustomDiffntnTerm2` |  | |  |  |
-| `TrsyPosCustomDiffntnTerm3` |  | |  |  |
-| `TrsyPosCustomDiffntnTerm4` |  | |  |  |
-| `TrsyPosCustomDiffntnTerm5` |  | |  |  |
-| `UniqueProductIdentifier` |  | |  |  |
-| `InternationalSecuritiesIdnNmbr` |  | |  |  |
-| `ReportTrackingNumber` |  | |  |  |
-| `FinTransOptionNumber` |  | |  |  |
-| `FinancialInstrActivityCategory` |  | |  |  |
-| `TermEndDate` |  | |  |  |
-| `FinTransTermCategory` |  | |  |  |
-| `FinTransTermStartEndInclusive` |  | |  |  |
-| `FinTransNoticeDate` |  | |  |  |
-| `FinTransActyConclusionDate` |  | |  |  |
-| `FinTransActyConclusionTime` |  | |  |  |
-| `FinTransActyConclusionTimeZone` |  | |  |  |
-| `FinTransRolloverDate` |  | |  |  |
-| `FinTransExerciseDate` |  | |  |  |
-| `FinTransOrderValidityEndDate` |  | |  |  |
-| `FinTransFixingDate` |  | |  |  |
-| `ForeignExchangeFixingReference` |  | |  |  |
-| `Trader` |  | |  |  |
-| `FinancialInstrContactPerson` |  | |  |  |
-| `FinInstrExternalReference` |  | |  |  |
-| `TreasuryReversalReason` |  | |  |  |
-| `LeadingCurrency` |  | |  |  |
-| `FollowingCurrency` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `SpotExchangeRate` |  | |  |  |
-| `SwapExchangeRate` |  | |  |  |
-| `LiquidityEffectValue` |  | |  |  |
-| `CurrencyPair` |  | |  |  |
-| `EffectiveInterestRate` |  | |  |  |
-| `EffectiveInterestMethod` |  | |  |  |
-| `LetterOfCredit` |  | |  |  |
-| `TreasuryApplicant` |  | |  |  |
-| `TreasuryBeneficiary` |  | |  |  |
-| `TrsyMnllyEnteredBnfcyName` |  | |  |  |
-| `TrsyMnllyEnteredApplcntName` |  | |  |  |
-| `TreasuryAdvisingBank` |  | |  |  |
-| `TreasuryIssuingBank` |  | |  |  |
-| `BankGuaranteeNumber` |  | |  |  |
-| `BankGuaranteeType` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_ContractType` | | ✓ | | |
-| `_FinancialInstrProdCat` | | ✓ | | |
-| `_FinancialInstrProdType` | | ✓ | | |
-| `_FinInstrTransCat` | | ✓ | | |
-| `_FinancialInstrTransType` | | ✓ | | |
-| `_NoticePeriodUnit` | | ✓ | | |
-| `_Calendar` | | ✓ | | |
-| `_Calendar2` | | ✓ | | |
-| `_Counterparty` | | ✓ | | |
-| `_Guarantor` | | ✓ | | |
-| `_Portfolio` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_Assignment` | | ✓ | | |
-| `_Reference` | | ✓ | | |
-| `_Characteristics` | | ✓ | | |
-| `_GeneralValuationClass` | | ✓ | | |
-| `_TreasuryHedgingClassfctn` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_FacilityCompanyCode` | | ✓ | | |
-| `_Status` | | ✓ | | |
-| `_ReleaseStatus` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_OutgoingCurrency` | | ✓ | | |
-| `_IncomingCurrency` | | ✓ | | |
-| `_TradedCurrency` | | ✓ | | |
-| `_SecurityClass` | | ✓ | | |
-| `_SecurityAccount` | | ✓ | | |
-| `_TimeZone` | | ✓ | | |
-| `_FixingReference` | | ✓ | | |
-| `_ReversalReason` | | ✓ | | |
-| `_LeadingCurrency` | | ✓ | | |
-| `_FollowingCurrency` | | ✓ | | |
-| `_Applicant` | | ✓ | | |
-| `_Beneficiary` | | ✓ | | |
-| `_AdvisingBank` | | ✓ | | |
-| `_IssuingBank` | | ✓ | | |
-| `_ActivityCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FinancialTransaction` | ✓ | |  |  |  |  |
+| `FinTransCreationDate` |  | |  |  |  |  |
+| `FinTransCreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `FinInstrumentLastChangedTime` |  | |  |  |  |  |
+| `TreasuryContractType` |  | |  |  |  |  |
+| `FinancialInstrProductCategory` |  | |  |  |  |  |
+| `FinancialInstrumentProductType` |  | |  |  |  |  |
+| `FinInstrTransactionCategory` |  | |  |  |  |  |
+| `FinancialInstrTransactionType` |  | |  |  |  |  |
+| `TermStartDate` |  | |  |  |  |  |
+| `FinTransNoticePeriod` |  | |  |  |  |  |
+| `FinTransNoticePeriodUnit` |  | |  |  |  |  |
+| `FinTransFactoryCalendar1` |  | |  |  |  |  |
+| `FinTransFactoryCalendar2` |  | |  |  |  |  |
+| `Counterparty` |  | |  |  |  |  |
+| `FinancialInstrumentGuarantor` |  | |  |  |  |  |
+| `Portfolio` |  | |  |  |  |  |
+| `TreasuryFinanceProject` |  | |  |  |  |  |
+| `FinancialInstrumentAssignment` |  | |  |  |  |  |
+| `FinancialInstrumentReference` |  | |  |  |  |  |
+| `FinancialInstrCharacteristic` |  | |  |  |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `HedgingClassification` |  | |  |  |  |  |
+| `HedgeRequestIdentifier` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `TreasuryFacilityCompanyCode` |  | |  |  |  |  |
+| `TreasuryFacility` |  | |  |  |  |  |
+| `FinancialInstrumentStatus` |  | |  |  |  |  |
+| `FinTransReleaseStatus` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `FinInstrumentOutgoingCurrency` |  | |  |  |  |  |
+| `FinInstrumentIncomingCurrency` |  | |  |  |  |  |
+| `TradedCurrency` |  | |  |  |  |  |
+| `SecurityClass` |  | |  |  |  |  |
+| `ClassificationOfFinInstr` |  | |  |  |  |  |
+| `SecurityAccount` |  | |  |  |  |  |
+| `FinTransIsRiskMitigating` |  | |  |  |  |  |
+| `FinInstrLastActiveActivity` |  | |  |  |  |  |
+| `TrsyTradedAmountBuySellCode` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `OnBehalfOfCompany` |  | |  |  |  |  |
+| `MarketIdentifierCode` |  | |  |  |  |  |
+| `FinTransRoundingCategory` |  | |  |  |  |  |
+| `FinTransGeneralValuationClass` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `FinTransAuthorizationGroup` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `TrsyPosCustomDiffntnTerm1` |  | |  |  |  |  |
+| `TrsyPosCustomDiffntnTerm2` |  | |  |  |  |  |
+| `TrsyPosCustomDiffntnTerm3` |  | |  |  |  |  |
+| `TrsyPosCustomDiffntnTerm4` |  | |  |  |  |  |
+| `TrsyPosCustomDiffntnTerm5` |  | |  |  |  |  |
+| `UniqueProductIdentifier` |  | |  |  |  |  |
+| `InternationalSecuritiesIdnNmbr` |  | |  |  |  |  |
+| `ReportTrackingNumber` |  | |  |  |  |  |
+| `FinTransOptionNumber` |  | |  |  |  |  |
+| `FinancialInstrActivityCategory` |  | |  |  |  |  |
+| `TermEndDate` |  | |  |  |  |  |
+| `FinTransTermCategory` |  | |  |  |  |  |
+| `FinTransTermStartEndInclusive` |  | |  |  |  |  |
+| `FinTransNoticeDate` |  | |  |  |  |  |
+| `FinTransActyConclusionDate` |  | |  |  |  |  |
+| `FinTransActyConclusionTime` |  | |  |  |  |  |
+| `FinTransActyConclusionTimeZone` |  | |  |  |  |  |
+| `FinTransRolloverDate` |  | |  |  |  |  |
+| `FinTransExerciseDate` |  | |  |  |  |  |
+| `FinTransOrderValidityEndDate` |  | |  |  |  |  |
+| `FinTransFixingDate` |  | |  |  |  |  |
+| `ForeignExchangeFixingReference` |  | |  |  |  |  |
+| `Trader` |  | |  |  |  |  |
+| `FinancialInstrContactPerson` |  | |  |  |  |  |
+| `FinInstrExternalReference` |  | |  |  |  |  |
+| `TreasuryReversalReason` |  | |  |  |  |  |
+| `LeadingCurrency` |  | |  |  |  |  |
+| `FollowingCurrency` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `SpotExchangeRate` |  | |  |  |  |  |
+| `SwapExchangeRate` |  | |  |  |  |  |
+| `LiquidityEffectValue` |  | |  |  |  |  |
+| `CurrencyPair` |  | |  |  |  |  |
+| `EffectiveInterestRate` |  | |  |  |  |  |
+| `EffectiveInterestMethod` |  | |  |  |  |  |
+| `LetterOfCredit` |  | |  |  |  |  |
+| `TreasuryApplicant` |  | |  |  |  |  |
+| `TreasuryBeneficiary` |  | |  |  |  |  |
+| `TrsyMnllyEnteredBnfcyName` |  | |  |  |  |  |
+| `TrsyMnllyEnteredApplcntName` |  | |  |  |  |  |
+| `TreasuryAdvisingBank` |  | |  |  |  |  |
+| `TreasuryIssuingBank` |  | |  |  |  |  |
+| `BankGuaranteeNumber` |  | |  |  |  |  |
+| `BankGuaranteeType` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ContractType` | | ✓ | | | | |
+| `_FinancialInstrProdCat` | | ✓ | | | | |
+| `_FinancialInstrProdType` | | ✓ | | | | |
+| `_FinInstrTransCat` | | ✓ | | | | |
+| `_FinancialInstrTransType` | | ✓ | | | | |
+| `_NoticePeriodUnit` | | ✓ | | | | |
+| `_Calendar` | | ✓ | | | | |
+| `_Calendar2` | | ✓ | | | | |
+| `_Counterparty` | | ✓ | | | | |
+| `_Guarantor` | | ✓ | | | | |
+| `_Portfolio` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_Assignment` | | ✓ | | | | |
+| `_Reference` | | ✓ | | | | |
+| `_Characteristics` | | ✓ | | | | |
+| `_GeneralValuationClass` | | ✓ | | | | |
+| `_TreasuryHedgingClassfctn` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_FacilityCompanyCode` | | ✓ | | | | |
+| `_Status` | | ✓ | | | | |
+| `_ReleaseStatus` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_OutgoingCurrency` | | ✓ | | | | |
+| `_IncomingCurrency` | | ✓ | | | | |
+| `_TradedCurrency` | | ✓ | | | | |
+| `_SecurityClass` | | ✓ | | | | |
+| `_SecurityAccount` | | ✓ | | | | |
+| `_TimeZone` | | ✓ | | | | |
+| `_FixingReference` | | ✓ | | | | |
+| `_ReversalReason` | | ✓ | | | | |
+| `_LeadingCurrency` | | ✓ | | | | |
+| `_FollowingCurrency` | | ✓ | | | | |
+| `_Applicant` | | ✓ | | | | |
+| `_Beneficiary` | | ✓ | | | | |
+| `_AdvisingBank` | | ✓ | | | | |
+| `_IssuingBank` | | ✓ | | | | |
+| `_ActivityCategory` | | ✓ | | | | |
 
 ## Associations
 

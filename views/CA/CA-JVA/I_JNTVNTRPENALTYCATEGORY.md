@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |
-| `_CompanyCode` | | ✓ | | |
-| `_JntVntrPenaltyCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntVntrPenaltyCategoryText` | | ✓ | | | | |
 
 ## Associations
 

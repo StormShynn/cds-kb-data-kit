@@ -34,19 +34,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WBSElementInternalID` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `BillOfMaterialVariantUsage` | ✓ | |  |  |
-| `BillOfMaterial` | ✓ | |  |  |
-| `BillOfMaterialVariant` | ✓ | |  |  |
-| `BillOfMaterialCategory` |  | |  |  |
-| `RecordCreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WBSElementInternalID` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |  |  |
+| `BillOfMaterial` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |  |  |
+| `BillOfMaterialCategory` |  | |  |  |  |  |
+| `RecordCreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
 
 ## Source Code
 

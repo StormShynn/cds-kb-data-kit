@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RECndnCalculationUUID` | ✓ | |  | `calcguid` |
-| `REConditionUUID` |  | |  | `condguid` |
-| `InternalRealEstateNumber` |  | |  | `intreno` |
-| `REStatusObjectCalculation` |  | |  | `objnr` |
-| `REConditionType` |  | |  | `condtype` |
-| `REConditionValidityStartDate` |  | |  | `condvalidfrom` |
-| `ValidityStartDate` |  | |  | `cast(valuevalidfrom as rebdvdmvalidfrom preserving type)` |
-| `ValidityEndDate` |  | |  | `cast(valuevalidto as rebdvdmvalidto preserving type)` |
-| `REConditionCalculationFactor` |  | |  | `calcvalue` |
-| `REConditionItemAmount` |  | |  | `condvalue` |
-| `REConditionItemTaxAmount` |  | |  | `taxvalue` |
-| `REConditionNetAmount` |  | |  | `condvaluenet` |
-| `REConditionGrossAmount` |  | |  | `condvaluegross` |
-| `REConditionCurrency` |  | |  | `condcurr` |
-| `RENumberOfCalculation` |  | |  | `calcnumber` |
-| `BusinessPartner` |  | |  | `partner` |
-| `REPartnerStatusObject` |  | |  | `partnerobjnr` |
-| `REConditionDueDate` |  | |  | `duedate` |
-| `_REContract` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_REConditionType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RECndnCalculationUUID` | ✓ | |  | `calcguid` |  |  |
+| `REConditionUUID` |  | |  | `condguid` |  |  |
+| `InternalRealEstateNumber` |  | |  | `intreno` |  |  |
+| `REStatusObjectCalculation` |  | |  | `objnr` |  |  |
+| `REConditionType` |  | |  | `condtype` |  |  |
+| `REConditionValidityStartDate` |  | |  | `condvalidfrom` |  |  |
+| `ValidityStartDate` |  | |  | `cast(valuevalidfrom as rebdvdmvalidfrom preserving type)` |  |  |
+| `ValidityEndDate` |  | |  | `cast(valuevalidto as rebdvdmvalidto preserving type)` |  |  |
+| `REConditionCalculationFactor` |  | |  | `calcvalue` |  |  |
+| `REConditionItemAmount` |  | |  | `condvalue` |  |  |
+| `REConditionItemTaxAmount` |  | |  | `taxvalue` |  |  |
+| `REConditionNetAmount` |  | |  | `condvaluenet` |  |  |
+| `REConditionGrossAmount` |  | |  | `condvaluegross` |  |  |
+| `REConditionCurrency` |  | |  | `condcurr` |  |  |
+| `RENumberOfCalculation` |  | |  | `calcnumber` |  |  |
+| `BusinessPartner` |  | |  | `partner` |  |  |
+| `REPartnerStatusObject` |  | |  | `partnerobjnr` |  |  |
+| `REConditionDueDate` |  | |  | `duedate` |  |  |
+| `_REContract` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_REConditionType` | | ✓ | | | | |
 
 ## Associations
 

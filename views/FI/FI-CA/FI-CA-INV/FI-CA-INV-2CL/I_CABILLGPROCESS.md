@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgProcess` | ✓ | | `_tfk8110` | `bill_process` |
-| `_CABillgProcessText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgProcess` | ✓ | | `_tfk8110` | `bill_process` |  |  |
+| `_CABillgProcessText` | | ✓ | | | | |
 
 ## Associations
 

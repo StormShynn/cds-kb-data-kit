@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChmlCmplncIdfrUUID` | ✓ | |  | `chmlcmplncidfruuid` |
-| `CreationUTCDateTime` |  | |  | `creationutcdatetime` |
-| `CreatedByUser` |  | |  | `createdbyuser` |
-| `LastChangeUTCDateTime` |  | |  | `lastchangeutcdatetime` |
-| `LastChangedByUser` |  | |  | `lastchangedbyuser` |
-| `ChmlCmplncIdfrParentID` |  | |  | `cast( chmlcmplncidfrparentid as ehfnd_internal_nr_nc preserving type )` |
-| `ChmlCmplncIdfrParentUUID` |  | |  | `chmlcmplncidfrparentuuid` |
-| `ChmlCmplncIdfrParentType` |  | |  | `chmlcmplncidfrparenttype` |
-| `ChmlCmplncIdfrProcgStatus` |  | |  | `chmlcmplncidfrprocgstatus` |
-| `ChmlCmplncIdfrProcessor` |  | |  | `chmlcmplncidfrprocessor` |
-| `ChmlCmplncIdfrReldByUser` |  | |  | `chmlcmplncidfrreldbyuser` |
-| `ValidityStartDateTime` |  | |  | `validitystartdatetime` |
-| `ValidityEndDateTime` |  | |  | `validityenddatetime` |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_ChmlCmplncInfo` | | ✓ | | |
-| `_Processor` | | ✓ | | |
-| `_ReleasedByUser` | | ✓ | | |
-| `_ChmlCmplncIdfrValue` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChmlCmplncIdfrUUID` | ✓ | |  | `chmlcmplncidfruuid` |  |  |
+| `CreationUTCDateTime` |  | |  | `creationutcdatetime` |  |  |
+| `CreatedByUser` |  | |  | `createdbyuser` |  |  |
+| `LastChangeUTCDateTime` |  | |  | `lastchangeutcdatetime` |  |  |
+| `LastChangedByUser` |  | |  | `lastchangedbyuser` |  |  |
+| `ChmlCmplncIdfrParentID` |  | |  | `cast( chmlcmplncidfrparentid as ehfnd_internal_nr_nc preserving type )` |  |  |
+| `ChmlCmplncIdfrParentUUID` |  | |  | `chmlcmplncidfrparentuuid` |  |  |
+| `ChmlCmplncIdfrParentType` |  | |  | `chmlcmplncidfrparenttype` |  |  |
+| `ChmlCmplncIdfrProcgStatus` |  | |  | `chmlcmplncidfrprocgstatus` |  |  |
+| `ChmlCmplncIdfrProcessor` |  | |  | `chmlcmplncidfrprocessor` |  |  |
+| `ChmlCmplncIdfrReldByUser` |  | |  | `chmlcmplncidfrreldbyuser` |  |  |
+| `ValidityStartDateTime` |  | |  | `validitystartdatetime` |  |  |
+| `ValidityEndDateTime` |  | |  | `validityenddatetime` |  |  |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_ChmlCmplncInfo` | | ✓ | | | | |
+| `_Processor` | | ✓ | | | | |
+| `_ReleasedByUser` | | ✓ | | | | |
+| `_ChmlCmplncIdfrValue` | | ✓ | | | | |
 
 ## Associations
 

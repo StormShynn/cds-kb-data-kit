@@ -29,75 +29,75 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `InspPlanOperationInternalID` | ✓ | |  |  |
-| `InspectionCharacteristic` | ✓ | |  |  |
-| `Inspector` |  | |  |  |
-| `InspectionResultStatus` |  | |  |  |
-| `InspResultIsCompletionForced` |  | |  |  |
-| `InspectionResultAttribute` |  | |  |  |
-| `InspectionResultOrigin` |  | |  |  |
-| `InspectionValuationResult` |  | |  |  |
-| `InspResultDynModifValuation` |  | |  |  |
-| `InspectionResultMeanValue` |  | |  |  |
-| `InspectionResultHasMeanValue` |  | |  |  |
-| `InspectionResultMaximumValue` |  | |  |  |
-| `InspResultHasMaximumValue` |  | |  |  |
-| `InspectionResultMinimumValue` |  | |  |  |
-| `InspResultHasMinimumValue` |  | |  |  |
-| `InspectionResultOriginalValue` |  | |  |  |
-| `InspResultValidValuesNumber` |  | |  |  |
-| `InspResultNmbrOfRecordedRslts` |  | |  |  |
-| `InspectionResultText` |  | |  |  |
-| `InspectionResultHasLongText` |  | |  |  |
-| `CharacteristicAttributeCodeGrp` |  | |  |  |
-| `CharacteristicAttributeCode` |  | |  |  |
-| `CharcAttributeCodeVers` |  | |  |  |
-| `InspRsltFreeDefinedTestEquip` |  | |  |  |
-| `InspRsltBelowToleranceValsNmbr` |  | |  |  |
-| `InspRsltAboveToleranceValsNmbr` |  | |  |  |
-| `InspRsltNonconformingValsNmbr` |  | |  |  |
-| `InspectionNumberOfDefects` |  | |  |  |
-| `InspRsltAboveToleranceFraction` |  | |  |  |
-| `InspRsltBelowToleranceFraction` |  | |  |  |
-| `InspResultVariance` |  | |  |  |
-| `InspResultHasVariance` |  | |  |  |
-| `CharacteristicAttributeCatalog` |  | |  |  |
-| `InspectionResultCatalog2` |  | |  |  |
-| `InspectionResultCatalog3` |  | |  |  |
-| `InspectionResultCatalog4` |  | |  |  |
-| `InspectionResultCatalog5` |  | |  |  |
-| `InspectionResultCode2` |  | |  |  |
-| `InspectionResultCode3` |  | |  |  |
-| `InspectionResultCode4` |  | |  |  |
-| `InspectionResultCode5` |  | |  |  |
-| `InspectionResultCode2Vers` |  | |  |  |
-| `InspectionResultCode3Vers` |  | |  |  |
-| `InspectionResultCode4Vers` |  | |  |  |
-| `InspectionResultCode5Vers` |  | |  |  |
-| `InspectionResultCodeGroup2` |  | |  |  |
-| `InspectionResultCodeGroup3` |  | |  |  |
-| `InspectionResultCodeGroup4` |  | |  |  |
-| `InspectionResultCodeGroup5` |  | |  |  |
-| `DefectClass` |  | |  |  |
-| `InspectionPartialSampleSize` |  | |  |  |
-| `InspectionStartDate` |  | |  |  |
-| `InspectionStartTime` |  | |  |  |
-| `InspectionEndDate` |  | |  |  |
-| `InspectionEndTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `ChangedTime` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `_InspectionCharacteristic` | | ✓ | | |
-| `_InspectionLot` | | ✓ | | |
-| `_InspectionResultValue` | | ✓ | | |
-| `_InspectionOperation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |  |  |
+| `InspectionCharacteristic` | ✓ | |  |  |  |  |
+| `Inspector` |  | |  |  |  |  |
+| `InspectionResultStatus` |  | |  |  |  |  |
+| `InspResultIsCompletionForced` |  | |  |  |  |  |
+| `InspectionResultAttribute` |  | |  |  |  |  |
+| `InspectionResultOrigin` |  | |  |  |  |  |
+| `InspectionValuationResult` |  | |  |  |  |  |
+| `InspResultDynModifValuation` |  | |  |  |  |  |
+| `InspectionResultMeanValue` |  | |  |  |  |  |
+| `InspectionResultHasMeanValue` |  | |  |  |  |  |
+| `InspectionResultMaximumValue` |  | |  |  |  |  |
+| `InspResultHasMaximumValue` |  | |  |  |  |  |
+| `InspectionResultMinimumValue` |  | |  |  |  |  |
+| `InspResultHasMinimumValue` |  | |  |  |  |  |
+| `InspectionResultOriginalValue` |  | |  |  |  |  |
+| `InspResultValidValuesNumber` |  | |  |  |  |  |
+| `InspResultNmbrOfRecordedRslts` |  | |  |  |  |  |
+| `InspectionResultText` |  | |  |  |  |  |
+| `InspectionResultHasLongText` |  | |  |  |  |  |
+| `CharacteristicAttributeCodeGrp` |  | |  |  |  |  |
+| `CharacteristicAttributeCode` |  | |  |  |  |  |
+| `CharcAttributeCodeVers` |  | |  |  |  |  |
+| `InspRsltFreeDefinedTestEquip` |  | |  |  |  |  |
+| `InspRsltBelowToleranceValsNmbr` |  | |  |  |  |  |
+| `InspRsltAboveToleranceValsNmbr` |  | |  |  |  |  |
+| `InspRsltNonconformingValsNmbr` |  | |  |  |  |  |
+| `InspectionNumberOfDefects` |  | |  |  |  |  |
+| `InspRsltAboveToleranceFraction` |  | |  |  |  |  |
+| `InspRsltBelowToleranceFraction` |  | |  |  |  |  |
+| `InspResultVariance` |  | |  |  |  |  |
+| `InspResultHasVariance` |  | |  |  |  |  |
+| `CharacteristicAttributeCatalog` |  | |  |  |  |  |
+| `InspectionResultCatalog2` |  | |  |  |  |  |
+| `InspectionResultCatalog3` |  | |  |  |  |  |
+| `InspectionResultCatalog4` |  | |  |  |  |  |
+| `InspectionResultCatalog5` |  | |  |  |  |  |
+| `InspectionResultCode2` |  | |  |  |  |  |
+| `InspectionResultCode3` |  | |  |  |  |  |
+| `InspectionResultCode4` |  | |  |  |  |  |
+| `InspectionResultCode5` |  | |  |  |  |  |
+| `InspectionResultCode2Vers` |  | |  |  |  |  |
+| `InspectionResultCode3Vers` |  | |  |  |  |  |
+| `InspectionResultCode4Vers` |  | |  |  |  |  |
+| `InspectionResultCode5Vers` |  | |  |  |  |  |
+| `InspectionResultCodeGroup2` |  | |  |  |  |  |
+| `InspectionResultCodeGroup3` |  | |  |  |  |  |
+| `InspectionResultCodeGroup4` |  | |  |  |  |  |
+| `InspectionResultCodeGroup5` |  | |  |  |  |  |
+| `DefectClass` |  | |  |  |  |  |
+| `InspectionPartialSampleSize` |  | |  |  |  |  |
+| `InspectionStartDate` |  | |  |  |  |  |
+| `InspectionStartTime` |  | |  |  |  |  |
+| `InspectionEndDate` |  | |  |  |  |  |
+| `InspectionEndTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `ChangedTime` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `_InspectionCharacteristic` | | ✓ | | | | |
+| `_InspectionLot` | | ✓ | | | | |
+| `_InspectionResultValue` | | ✓ | | | | |
+| `_InspectionOperation` | | ✓ | | | | |
 
 ## Source Code
 

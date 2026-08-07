@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |
-| `CentralSupplierConfirmation` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |
-| `PurchasingDocumentType` |  | | `_CntrlSupplierConfirmation` | `PurchasingDocumentType` |
-| `PurchaseOrder` |  | | `_CntrlSupplierConfirmation` | `CntrlSuplrConfRefPrmtHbRpldPO` |
-| `PurchaseOrderNetAmount` |  | | `_CntrlSupplierConfirmation._PurchaseOrder` | `PurchaseOrderNetAmount` |
-| `DocumentCurrency` |  | | `_CntrlSupplierConfirmation._PurchaseOrder` | `DocumentCurrency` |
-| `ExtSourceSystem` |  | | `_CntrlSupplierConfirmation` | `ProcurementHubSourceSystem` |
-| `CreatedByUserName` |  | | `_CntrlSupplierConfirmation` | `CreatedByUser` |
-| `CreationDate` |  | | `_CntrlSupplierConfirmation` | `CreationDate` |
-| `Supplier` |  | | `_CntrlSupplierConfirmation` | `Supplier` |
-| `PrmtHbWrkflwTskCrtnUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `PrmtHbWrkflwTskCrtnUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `PrmtHbWrkflwTskDuUTCDte` |  | |  | `cast(tstmp_to_dats( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
-| `PrmtHbWrkflwTskDuUTCTme` |  | |  | `cast(tstmp_to_tims( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
-| `WorkflowTaskResult` |  | | `_Workflowtask` | `WorkflowTaskResult` |
-| `WorkflowTaskResultReasonText` |  | | `_Workflowtask._WorkflowTaskResult._WorkflowTaskResultReason._WorkflowTaskResultReasonText` | `WorkflowTaskResultReasonText` |
-| `WorkflowTaskResultComment` |  | | `_Workflowtask._WorkflowTaskResult` | `WorkflowTaskResultComment` |
-| `ApprovedByUserFullName` |  | | `_Workflowtask` | `WorkflowTaskCurrentUser` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |  |  |
+| `CentralSupplierConfirmation` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |  |  |
+| `PurchasingDocumentType` |  | | `_CntrlSupplierConfirmation` | `PurchasingDocumentType` |  |  |
+| `PurchaseOrder` |  | | `_CntrlSupplierConfirmation` | `CntrlSuplrConfRefPrmtHbRpldPO` |  |  |
+| `PurchaseOrderNetAmount` |  | | `_CntrlSupplierConfirmation._PurchaseOrder` | `PurchaseOrderNetAmount` |  |  |
+| `DocumentCurrency` |  | | `_CntrlSupplierConfirmation._PurchaseOrder` | `DocumentCurrency` |  |  |
+| `ExtSourceSystem` |  | | `_CntrlSupplierConfirmation` | `ProcurementHubSourceSystem` |  |  |
+| `CreatedByUserName` |  | | `_CntrlSupplierConfirmation` | `CreatedByUser` |  |  |
+| `CreationDate` |  | | `_CntrlSupplierConfirmation` | `CreationDate` |  |  |
+| `Supplier` |  | | `_CntrlSupplierConfirmation` | `Supplier` |  |  |
+| `PrmtHbWrkflwTskCrtnUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |  |  |
+| `PrmtHbWrkflwTskCrtnUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |  |  |
+| `PrmtHbWrkflwTskDuUTCDte` |  | |  | `cast(tstmp_to_dats( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |  |  |
+| `PrmtHbWrkflwTskDuUTCTme` |  | |  | `cast(tstmp_to_tims( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |  |  |
+| `WorkflowTaskResult` |  | | `_Workflowtask` | `WorkflowTaskResult` |  |  |
+| `WorkflowTaskResultReasonText` |  | | `_Workflowtask._WorkflowTaskResult._WorkflowTaskResultReason._WorkflowTaskResultReasonText` | `WorkflowTaskResultReasonText` |  |  |
+| `WorkflowTaskResultComment` |  | | `_Workflowtask._WorkflowTaskResult` | `WorkflowTaskResultComment` |  |  |
+| `ApprovedByUserFullName` |  | | `_Workflowtask` | `WorkflowTaskCurrentUser` |  |  |
 
 ## Source Code
 

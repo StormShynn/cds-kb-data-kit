@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `VarConfigurationProfileName` | ✓ | |  |  |
-| `_HistoricalProfile` | | ✓ | | |
-| `_ProcedureAssignment` | | ✓ | | |
-| `_ConstraintNetAssignment` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `VarConfigurationProfileName` | ✓ | |  |  |  |  |
+| `_HistoricalProfile` | | ✓ | | | | |
+| `_ProcedureAssignment` | | ✓ | | | | |
+| `_ConstraintNetAssignment` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Source Code
 

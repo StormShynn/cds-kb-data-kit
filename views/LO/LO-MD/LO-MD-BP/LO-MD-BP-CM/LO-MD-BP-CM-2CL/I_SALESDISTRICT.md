@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDistrict` | ✓ | |  | `bzirk` |
-| `_Text` | | ✓ | | |
-| `_SalesDistrictHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDistrict` | ✓ | |  | `bzirk` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SalesDistrictHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

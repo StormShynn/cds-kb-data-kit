@@ -30,65 +30,65 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Reservation` | ✓ | | `_ReservationItem` | `Reservation` |
-| `ReservationItem` | ✓ | | `_ReservationItem` | `ReservationItem` |
-| `RecordType` | ✓ | | `_ReservationItem` | `RecordType` |
-| `Plant` |  | | `_ReservationItem` | `Plant` |
-| `StorageLocation` |  | | `_ReservationItem` | `StorageLocation` |
-| `Product` |  | | `_ReservationItem` | `Material` |
-| `Batch` |  | | `_ReservationItem` | `Batch` |
-| `RealProductBatch` |  | |  | `cast( case when ( _ProductPlant.ValuationCategory <> '' and _ProductPlant.IsBatchManagementRequired = '' ) then ( '' ) else ( _BatchPlant.Batch ) end as charg_d )` |
-| `ValuationType` |  | |  | `cast( case when _ProductPlant.ValuationCategory <> '' and _ProductPlant.IsBatchManagementRequired = '' then _ReservationItem.Batch when _ProductPlant.ValuationCategory <> '' and _ProductPlant.IsBatchManagementRequired = 'X' then _BatchPlant.InventoryValuationType else '' end as bwtar_d preserving type )` |
-| `InventorySpecialStockType` |  | | `_ReservationItem` | `InventorySpecialStockType` |
-| `SpecialStockIdfgWBSElement` |  | | `_ReservationItem` | `SpecialStockIdfgWBSElement` |
-| `GoodsMovementType` |  | | `_ReservationItem` | `GoodsMovementType` |
-| `RequirementType` |  | | `_ReservationItem` | `RequirementType` |
-| `ReservationItemCreationCode` |  | | `_ReservationItem` | `ReservationItemCreationCode` |
-| `MatlCompRequirementDate` |  | | `_ReservationItem` | `MatlCompRequirementDate` |
-| `ManufacturingOrderOperation` |  | | `_ReservationItem` | `ManufacturingOrderOperation` |
-| `GoodsMovementIsAllowed` |  | | `_ReservationItem` | `GoodsMovementIsAllowed` |
-| `DebitCreditCode` |  | | `_ReservationItem` | `DebitCreditCode` |
-| `BaseUnit` |  | | `_ReservationItem` | `BaseUnit` |
-| `GLAccount` |  | | `_ReservationItem` | `GLAccount` |
-| `ResvnAccountIsEnteredManually` |  | | `_ReservationItem` | `ResvnAccountIsEnteredManually` |
-| `EntryUnit` |  | | `_ReservationItem` | `EntryUnit` |
-| `QuantityIsFixed` |  | | `_ReservationItem` | `QuantityIsFixed` |
-| `CompanyCodeCurrency` |  | | `_ReservationItem` | `CompanyCodeCurrency` |
-| `IssuingOrReceivingPlant` |  | | `_ReservationItem` | `IssuingOrReceivingPlant` |
-| `IssuingOrReceivingStorageLoc` |  | | `_ReservationItem` | `IssuingOrReceivingStorageLoc` |
-| `PurchasingDocument` |  | | `_ReservationItem` | `PurchasingDocument` |
-| `PurchasingDocumentItem` |  | | `_ReservationItem` | `PurchasingDocumentItem` |
-| `ResvnItmRequiredQtyInBaseUnit` |  | | `_ReservationItem` | `ResvnItmRequiredQtyInBaseUnit` |
-| `ConfdQtyForATPInBaseUoM` |  | | `_ReservationItem` | `ConfdQtyForATPInBaseUoM` |
-| `ReservationItemIsFinallyIssued` |  | | `_ReservationItem` | `ReservationItemIsFinallyIssued` |
-| `ReservationItmIsMarkedForDeltn` |  | | `_ReservationItem` | `ReservationItmIsMarkedForDeltn` |
-| `ResvnItmRequiredQtyInEntryUnit` |  | | `_ReservationItem` | `ResvnItmRequiredQtyInEntryUnit` |
-| `ResvnItmWithdrawnQtyInBaseUnit` |  | | `_ReservationItem` | `ResvnItmWithdrawnQtyInBaseUnit` |
-| `ResvnItmWithdrawnAmtInCCCrcy` |  | | `_ReservationItem` | `ResvnItmWithdrawnAmtInCCCrcy` |
-| `Supplier` |  | | `_ReservationItem` | `Supplier` |
-| `MaterialGroup` |  | | `_ReservationItem` | `MaterialGroup` |
-| `MaterialCompIsProcuredDirectly` |  | | `_ReservationItem` | `MaterialCompIsProcuredDirectly` |
-| `GoodsRecipientName` |  | | `_ReservationItem` | `GoodsRecipientName` |
-| `UnloadingPointName` |  | | `_ReservationItem` | `UnloadingPointName` |
-| `ReservationItemText` |  | | `_ReservationItem` | `ReservationItemText` |
-| `RecipientLocationCode` |  | | `_ReservationItem` | `RecipientLocationCode` |
-| `MatlCompIsMarkedForBackflush` |  | | `_ReservationItem` | `MatlCompIsMarkedForBackflush` |
-| `ServiceObjectType` |  | | `_ReservationItem` | `ServiceObjectType` |
-| `ServiceDocument` |  | | `_ReservationItem` | `ServiceDocument` |
-| `ServiceDocumentItem` |  | | `_ReservationItem` | `ServiceDocumentItem` |
-| `ResvnItmSrvcDocTypeAsAcctAsgt` |  | | `_ReservationItem` | `ResvnItmSrvcDocTypeAsAcctAsgt` |
-| `ResvnItmSrvcDocAsAcctAsgt` |  | | `_ReservationItem` | `ResvnItmSrvcDocAsAcctAsgt` |
-| `ResvnItmSrvcDocItmAsAcctAsgt` |  | | `_ReservationItem` | `ResvnItmSrvcDocItmAsAcctAsgt` |
-| `AccountAssignmentCategory` |  | | `_ReservationItem` | `AccountAssignmentCategory` |
-| `ConsumptionPosting` |  | | `_ReservationItem` | `ConsumptionPosting` |
-| `InventorySpecialStockValnType` |  | | `_ReservationItem` | `InventorySpecialStockValnType` |
-| `PurchaseRequisition` |  | | `_ReservationItem` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` |  | | `_ReservationItem` | `PurchaseRequisitionItem` |
-| `_ReservationDocumentHeader` | | ✓ | | |
-| `_ReservationDocRecordType` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Reservation` | ✓ | | `_ReservationItem` | `Reservation` |  |  |
+| `ReservationItem` | ✓ | | `_ReservationItem` | `ReservationItem` |  |  |
+| `RecordType` | ✓ | | `_ReservationItem` | `RecordType` |  |  |
+| `Plant` |  | | `_ReservationItem` | `Plant` |  |  |
+| `StorageLocation` |  | | `_ReservationItem` | `StorageLocation` |  |  |
+| `Product` |  | | `_ReservationItem` | `Material` |  |  |
+| `Batch` |  | | `_ReservationItem` | `Batch` |  |  |
+| `RealProductBatch` |  | |  | `cast( case when ( _ProductPlant.ValuationCategory <> '' and _ProductPlant.IsBatchManagementRequired = '' ) then ( '' ) else ( _BatchPlant.Batch ) end as charg_d )` |  |  |
+| `ValuationType` |  | |  | `cast( case when _ProductPlant.ValuationCategory <> '' and _ProductPlant.IsBatchManagementRequired = '' then _ReservationItem.Batch when _ProductPlant.ValuationCategory <> '' and _ProductPlant.IsBatchManagementRequired = 'X' then _BatchPlant.InventoryValuationType else '' end as bwtar_d preserving type )` |  |  |
+| `InventorySpecialStockType` |  | | `_ReservationItem` | `InventorySpecialStockType` |  |  |
+| `SpecialStockIdfgWBSElement` |  | | `_ReservationItem` | `SpecialStockIdfgWBSElement` |  |  |
+| `GoodsMovementType` |  | | `_ReservationItem` | `GoodsMovementType` |  |  |
+| `RequirementType` |  | | `_ReservationItem` | `RequirementType` |  |  |
+| `ReservationItemCreationCode` |  | | `_ReservationItem` | `ReservationItemCreationCode` |  |  |
+| `MatlCompRequirementDate` |  | | `_ReservationItem` | `MatlCompRequirementDate` |  |  |
+| `ManufacturingOrderOperation` |  | | `_ReservationItem` | `ManufacturingOrderOperation` |  |  |
+| `GoodsMovementIsAllowed` |  | | `_ReservationItem` | `GoodsMovementIsAllowed` |  |  |
+| `DebitCreditCode` |  | | `_ReservationItem` | `DebitCreditCode` |  |  |
+| `BaseUnit` |  | | `_ReservationItem` | `BaseUnit` |  |  |
+| `GLAccount` |  | | `_ReservationItem` | `GLAccount` |  |  |
+| `ResvnAccountIsEnteredManually` |  | | `_ReservationItem` | `ResvnAccountIsEnteredManually` |  |  |
+| `EntryUnit` |  | | `_ReservationItem` | `EntryUnit` |  |  |
+| `QuantityIsFixed` |  | | `_ReservationItem` | `QuantityIsFixed` |  |  |
+| `CompanyCodeCurrency` |  | | `_ReservationItem` | `CompanyCodeCurrency` |  |  |
+| `IssuingOrReceivingPlant` |  | | `_ReservationItem` | `IssuingOrReceivingPlant` |  |  |
+| `IssuingOrReceivingStorageLoc` |  | | `_ReservationItem` | `IssuingOrReceivingStorageLoc` |  |  |
+| `PurchasingDocument` |  | | `_ReservationItem` | `PurchasingDocument` |  |  |
+| `PurchasingDocumentItem` |  | | `_ReservationItem` | `PurchasingDocumentItem` |  |  |
+| `ResvnItmRequiredQtyInBaseUnit` |  | | `_ReservationItem` | `ResvnItmRequiredQtyInBaseUnit` |  |  |
+| `ConfdQtyForATPInBaseUoM` |  | | `_ReservationItem` | `ConfdQtyForATPInBaseUoM` |  |  |
+| `ReservationItemIsFinallyIssued` |  | | `_ReservationItem` | `ReservationItemIsFinallyIssued` |  |  |
+| `ReservationItmIsMarkedForDeltn` |  | | `_ReservationItem` | `ReservationItmIsMarkedForDeltn` |  |  |
+| `ResvnItmRequiredQtyInEntryUnit` |  | | `_ReservationItem` | `ResvnItmRequiredQtyInEntryUnit` |  |  |
+| `ResvnItmWithdrawnQtyInBaseUnit` |  | | `_ReservationItem` | `ResvnItmWithdrawnQtyInBaseUnit` |  |  |
+| `ResvnItmWithdrawnAmtInCCCrcy` |  | | `_ReservationItem` | `ResvnItmWithdrawnAmtInCCCrcy` |  |  |
+| `Supplier` |  | | `_ReservationItem` | `Supplier` |  |  |
+| `MaterialGroup` |  | | `_ReservationItem` | `MaterialGroup` |  |  |
+| `MaterialCompIsProcuredDirectly` |  | | `_ReservationItem` | `MaterialCompIsProcuredDirectly` |  |  |
+| `GoodsRecipientName` |  | | `_ReservationItem` | `GoodsRecipientName` |  |  |
+| `UnloadingPointName` |  | | `_ReservationItem` | `UnloadingPointName` |  |  |
+| `ReservationItemText` |  | | `_ReservationItem` | `ReservationItemText` |  |  |
+| `RecipientLocationCode` |  | | `_ReservationItem` | `RecipientLocationCode` |  |  |
+| `MatlCompIsMarkedForBackflush` |  | | `_ReservationItem` | `MatlCompIsMarkedForBackflush` |  |  |
+| `ServiceObjectType` |  | | `_ReservationItem` | `ServiceObjectType` |  |  |
+| `ServiceDocument` |  | | `_ReservationItem` | `ServiceDocument` |  |  |
+| `ServiceDocumentItem` |  | | `_ReservationItem` | `ServiceDocumentItem` |  |  |
+| `ResvnItmSrvcDocTypeAsAcctAsgt` |  | | `_ReservationItem` | `ResvnItmSrvcDocTypeAsAcctAsgt` |  |  |
+| `ResvnItmSrvcDocAsAcctAsgt` |  | | `_ReservationItem` | `ResvnItmSrvcDocAsAcctAsgt` |  |  |
+| `ResvnItmSrvcDocItmAsAcctAsgt` |  | | `_ReservationItem` | `ResvnItmSrvcDocItmAsAcctAsgt` |  |  |
+| `AccountAssignmentCategory` |  | | `_ReservationItem` | `AccountAssignmentCategory` |  |  |
+| `ConsumptionPosting` |  | | `_ReservationItem` | `ConsumptionPosting` |  |  |
+| `InventorySpecialStockValnType` |  | | `_ReservationItem` | `InventorySpecialStockValnType` |  |  |
+| `PurchaseRequisition` |  | | `_ReservationItem` | `PurchaseRequisition` |  |  |
+| `PurchaseRequisitionItem` |  | | `_ReservationItem` | `PurchaseRequisitionItem` |  |  |
+| `_ReservationDocumentHeader` | | ✓ | | | | |
+| `_ReservationDocRecordType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Associations
 

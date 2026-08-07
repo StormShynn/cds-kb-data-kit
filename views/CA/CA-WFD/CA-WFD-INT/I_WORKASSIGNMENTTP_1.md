@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | |  |  |
-| `WorkAssignmentExternalID` | ✓ | |  |  |
-| `Country2DigitISOCode` | ✓ | |  |  |
-| `WorkAssignmentStartDate` |  | |  |  |
-| `WorkAssignmentEndDate` |  | |  |  |
-| `IsContingentWorker` |  | |  |  |
-| `IsBlocked` |  | |  |  |
-| `_WorkforcePerson` | | ✓ | | |
-| `_JobDetails` | | ✓ | | |
-| `_ServiceCostLevel` | | ✓ | | |
-| `_AddressDetails` | | ✓ | | |
-| `_WorkOrderDetails` | | ✓ | | |
-| `_PaymentDetails` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |  |  |
+| `WorkAssignmentExternalID` | ✓ | |  |  |  |  |
+| `Country2DigitISOCode` | ✓ | |  |  |  |  |
+| `WorkAssignmentStartDate` |  | |  |  |  |  |
+| `WorkAssignmentEndDate` |  | |  |  |  |  |
+| `IsContingentWorker` |  | |  |  |  |  |
+| `IsBlocked` |  | |  |  |  |  |
+| `_WorkforcePerson` | | ✓ | | | | |
+| `_JobDetails` | | ✓ | | | | |
+| `_ServiceCostLevel` | | ✓ | | | | |
+| `_AddressDetails` | | ✓ | | | | |
+| `_WorkOrderDetails` | | ✓ | | | | |
+| `_PaymentDetails` | | ✓ | | | | |
 
 ## Source Code
 

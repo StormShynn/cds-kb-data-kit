@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `AddressID` | ✓ | |  | `adrnr` |
-| `CustomerExternalRefID` |  | |  | `ext_ref_id` |
-| `_Customer` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
-| `_BusinessPartnerCustomer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `AddressID` | ✓ | |  | `adrnr` |  |  |
+| `CustomerExternalRefID` |  | |  | `ext_ref_id` |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
+| `_BusinessPartnerCustomer` | | ✓ | | | | |
 
 ## Associations
 

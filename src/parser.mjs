@@ -95,6 +95,61 @@ function findSelectListStart(ddl) {
 // ── Field / Association extraction from DDL ─────────────────────────────────
 
 /**
+ * Strip every leading "@Annotation" (optionally ": value") prefix off
+ * `text`, returning { clean, annotations }. Value scanning tracks bracket
+ * depth for `[...]`/`{...}` (skipping over quoted strings so a literal
+ * bracket character inside one doesn't throw the count off) instead of a
+ * single non-nested regex — an annotation value can itself contain a
+ * nested array/object, e.g. `@Consumption.valueHelpDefinition: [{
+ * additionalBinding: [{...}, {...}] }]` (a real, common UI-annotation
+ * shape). A regex like `\[[^\]]*\]` stops at the FIRST `]` it finds — the
+ * inner array's, not the outer one's — leaving the rest of the value
+ * (here, a trailing "}]") as leftover text glued onto whatever field
+ * declaration follows, corrupting its parsed name/expression.
+ */
+function stripLeadingAnnotations(text) {
+  const annotations = [];
+  let i = 0;
+  while (i < text.length) {
+    while (i < text.length && /\s/.test(text[i])) i++;
+    if (text[i] !== '@') break;
+    const start = i;
+    i++; // '@'
+    while (i < text.length && /[\w.]/.test(text[i])) i++; // annotation name
+    while (i < text.length && (text[i] === ' ' || text[i] === '\t')) i++;
+    if (text[i] === ':') {
+      i++;
+      while (i < text.length && (text[i] === ' ' || text[i] === '\t')) i++;
+      if (text[i] === "'" || text[i] === '"') {
+        const quote = text[i];
+        i++;
+        while (i < text.length && text[i] !== quote) { if (text[i] === '\\') i++; i++; }
+        i++; // closing quote
+      } else if (text[i] === '[' || text[i] === '{') {
+        const open = text[i];
+        const close = open === '[' ? ']' : '}';
+        let depth = 0;
+        do {
+          if (text[i] === "'" || text[i] === '"') {
+            const q = text[i];
+            i++;
+            while (i < text.length && text[i] !== q) { if (text[i] === '\\') i++; i++; }
+          } else if (text[i] === open) depth++;
+          else if (text[i] === close) depth--;
+          i++;
+        } while (i < text.length && depth > 0);
+      } else {
+        // bare value: #Word, word, or number (allow dots for decimals)
+        while (i < text.length && /[#\w.]/.test(text[i])) i++;
+      }
+    }
+    annotations.push(text.slice(start, i).trim());
+    while (i < text.length && /\s/.test(text[i])) i++;
+  }
+  return { clean: text.slice(i).trim(), annotations };
+}
+
+/**
  * Parse the select list inside `{ ... }` of a CDS view definition.
  */
 function parseSelectList(ddl) {
@@ -125,18 +180,9 @@ function parseSelectList(ddl) {
     const trimmed = item.trim();
     if (!trimmed || trimmed.startsWith('//')) continue;
 
-    // Strip leading annotations. The bare-word value alternative allows a
-    // dot too (not just \w+) — a decimal like "0.8" (@Search.fuzzinessThreshold:
-    // 0.8 is a real, common annotation value) would otherwise only match
-    // the "0", leaving a stray ".8" to pollute whatever follows.
-    const annotations = [];
-    const clean = trimmed.replace(
-      /@[\w.]+(?:\s*:\s*(?:'(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*"|#?[\w.]+|\[[^\]]*\]|\{[^}]*\}))?\s*/g,
-      (match) => {
-        annotations.push(match.trim());
-        return '';
-      }
-    ).trim();
+    // Strip leading annotations (see stripLeadingAnnotations for why this
+    // needs real bracket-depth tracking, not a single non-nested regex).
+    const { clean, annotations } = stripLeadingAnnotations(trimmed);
 
     if (!clean) continue;
 

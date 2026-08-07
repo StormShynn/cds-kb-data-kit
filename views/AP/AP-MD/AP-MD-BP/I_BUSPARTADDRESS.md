@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `AddressID` | ✓ | |  | `addrnumber` |
-| `AddressUUID` |  | |  | `address_guid` |
-| `ValidityStartDate` |  | |  | `addr_valid_from` |
-| `ValidityEndDate` |  | |  | `addr_valid_to` |
-| `AddressIDByExternalSystem` |  | |  | `adext` |
-| `BPTargetAddressID` |  | |  | `move_addr` |
-| `BPAddressMoveDateTime` |  | |  | `addr_move_date` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` |
-| `_Address` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_BPProtectedAddress` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
-| `_AddressInternationalVersions` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` |  |  |
+| `AddressUUID` |  | |  | `address_guid` |  |  |
+| `ValidityStartDate` |  | |  | `addr_valid_from` |  |  |
+| `ValidityEndDate` |  | |  | `addr_valid_to` |  |  |
+| `AddressIDByExternalSystem` |  | |  | `adext` |  |  |
+| `BPTargetAddressID` |  | |  | `move_addr` |  |  |
+| `BPAddressMoveDateTime` |  | |  | `addr_move_date` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` |  |  |
+| `_Address` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BPProtectedAddress` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
+| `_AddressInternationalVersions` | | ✓ | | | | |
 
 ## Associations
 

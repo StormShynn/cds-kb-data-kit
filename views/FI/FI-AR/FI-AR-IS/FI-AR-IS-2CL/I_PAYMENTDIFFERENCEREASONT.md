@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` |
-| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` |
-| `Language` | ✓ | |  | `spras` |
-| `PaymentDifferenceReasonName` |  | |  | `txt20` |
-| `PaymentDifferenceReasonDesc` |  | |  | `txt40` |
-| `_Language` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` |  |  |
+| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PaymentDifferenceReasonName` |  | |  | `txt20` |  |  |
+| `PaymentDifferenceReasonDesc` |  | |  | `txt40` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

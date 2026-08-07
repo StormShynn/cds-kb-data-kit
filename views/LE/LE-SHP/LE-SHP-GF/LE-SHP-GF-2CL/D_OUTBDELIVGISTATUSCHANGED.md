@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryDocumentType` |  | |  | `lfart` |
-| `OverallGoodsMovementStatus` |  | |  | `wbstk` |
-| `PrevOverallGoodsMovementStatus` |  | |  | `wbstk` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `SDDocumentCategory` |  | |  | `vbtypl` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocumentType` |  | |  | `lfart` |  |  |
+| `OverallGoodsMovementStatus` |  | |  | `wbstk` |  |  |
+| `PrevOverallGoodsMovementStatus` |  | |  | `wbstk` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `SDDocumentCategory` |  | |  | `vbtypl` |  |  |
 
 ## Source Code
 

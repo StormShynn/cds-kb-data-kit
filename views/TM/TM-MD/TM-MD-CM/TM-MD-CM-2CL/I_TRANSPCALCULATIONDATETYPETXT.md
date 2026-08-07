@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspCalculationDateType` | ✓ | |  | `cast(domvalue_l as /scmtms/vdm_tcm_calc_date_type preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspCalculationDateTypeDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tcm_calc_dte_typt preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspCalculationDateType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspCalculationDateType` | ✓ | |  | `cast(domvalue_l as /scmtms/vdm_tcm_calc_date_type preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspCalculationDateTypeDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tcm_calc_dte_typt preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspCalculationDateType` | | ✓ | | | | |
 
 ## Associations
 

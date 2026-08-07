@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjBillgElmntEntrItmUUID` | ✓ | |  | `projbillgelmntentritmuuid` |
-| `Ledger` |  | |  | `ledger` |
-| `CompanyCode` |  | |  | `companycode` |
-| `FiscalYear` |  | |  | `fiscalyear` |
-| `AccountingDocument` |  | |  | `accountingdocument` |
-| `LedgerGLLineItem` |  | |  | `ledgergllineitem` |
-| `ReferenceDocument` |  | |  | `referencedocument` |
-| `ReversalReferenceDocument` |  | |  | `reversalreferencedocument` |
-| `CreatedByUser` |  | |  | `createdbyuser` |
-| `CreationDateTime` |  | |  | `creationdatetime` |
-| `LastChangedByUser` |  | |  | `lastchangedbyuser` |
-| `LastChangeDateTime` |  | |  | `lastchangedatetime` |
-| `_ProjectBillingElementEntry` | | ✓ | | |
-| `_GLAccountLineItemRawData` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_AccountingDocument` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjBillgElmntEntrItmUUID` | ✓ | |  | `projbillgelmntentritmuuid` |  |  |
+| `Ledger` |  | |  | `ledger` |  |  |
+| `CompanyCode` |  | |  | `companycode` |  |  |
+| `FiscalYear` |  | |  | `fiscalyear` |  |  |
+| `AccountingDocument` |  | |  | `accountingdocument` |  |  |
+| `LedgerGLLineItem` |  | |  | `ledgergllineitem` |  |  |
+| `ReferenceDocument` |  | |  | `referencedocument` |  |  |
+| `ReversalReferenceDocument` |  | |  | `reversalreferencedocument` |  |  |
+| `CreatedByUser` |  | |  | `createdbyuser` |  |  |
+| `CreationDateTime` |  | |  | `creationdatetime` |  |  |
+| `LastChangedByUser` |  | |  | `lastchangedbyuser` |  |  |
+| `LastChangeDateTime` |  | |  | `lastchangedatetime` |  |  |
+| `_ProjectBillingElementEntry` | | ✓ | | | | |
+| `_GLAccountLineItemRawData` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_AccountingDocument` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
 
 ## Associations
 

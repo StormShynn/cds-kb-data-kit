@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityControlChartType` | ✓ | |  | `qrkart` |
-| `ControlChartAxisType` |  | |  | `xgroup` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityControlChartType` | ✓ | |  | `qrkart` |  |  |
+| `ControlChartAxisType` |  | |  | `xgroup` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

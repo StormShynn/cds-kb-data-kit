@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceProfile` | ✓ | |  | `srv_serwi` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceProfile` | ✓ | |  | `srv_serwi` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

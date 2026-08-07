@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  |  |
-| `BusinessPartner` | ✓ | |  |  |
-| `CABusinessProcess` | ✓ | |  |  |
-| `CABusinessLockReason` | ✓ | |  |  |
-| `CABusinessLockValidFrom` | ✓ | |  |  |
-| `CABusinessLockValidTo` | ✓ | |  |  |
-| `CABusinessLockText` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `CABusinessProcessForEdit` |  | |  |  |
-| `CABusinessLockReasonForEdit` |  | |  |  |
-| `CABusinessLockValidFromForEdit` |  | |  |  |
-| `CABusinessLockValidToForEdit` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_CABusinessLockReason` | | ✓ | | |
-| `_CABusinessProcess` | | ✓ | | |
-| `_ContractAccount` | | ✓ | | |
-| `_ContractAccountPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `CABusinessProcess` | ✓ | |  |  |  |  |
+| `CABusinessLockReason` | ✓ | |  |  |  |  |
+| `CABusinessLockValidFrom` | ✓ | |  |  |  |  |
+| `CABusinessLockValidTo` | ✓ | |  |  |  |  |
+| `CABusinessLockText` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `CABusinessProcessForEdit` |  | |  |  |  |  |
+| `CABusinessLockReasonForEdit` |  | |  |  |  |  |
+| `CABusinessLockValidFromForEdit` |  | |  |  |  |  |
+| `CABusinessLockValidToForEdit` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CABusinessLockReason` | | ✓ | | | | |
+| `_CABusinessProcess` | | ✓ | | | | |
+| `_ContractAccount` | | ✓ | | | | |
+| `_ContractAccountPartner` | | ✓ | | | | |
 
 ## Source Code
 

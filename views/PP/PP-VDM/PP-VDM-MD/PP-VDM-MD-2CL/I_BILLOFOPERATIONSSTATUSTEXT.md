@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsStatus` | ✓ | |  | `plnst` |
-| `Language` | ✓ | |  | `spras` |
-| `BillOfOperationsStatusDesc` |  | |  | `txt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsStatus` | ✓ | |  | `plnst` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BillOfOperationsStatusDesc` |  | |  | `txt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

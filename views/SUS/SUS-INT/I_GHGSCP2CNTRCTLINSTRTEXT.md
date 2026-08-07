@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( sufndd_ghg_s2cit.langu as spras preserving type )` |
-| `GHGScope2ContractualInstrument` | ✓ | |  | `code` |
-| `GHGScp2CntrctlInstrName` |  | |  | `cast( sufndd_ghg_s2cit.name as sufnd_vdm_ghgscp2contrinstrnam preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( sufndd_ghg_s2cit.langu as spras preserving type )` |  |  |
+| `GHGScope2ContractualInstrument` | ✓ | |  | `code` |  |  |
+| `GHGScp2CntrctlInstrName` |  | |  | `cast( sufndd_ghg_s2cit.name as sufnd_vdm_ghgscp2contrinstrnam preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

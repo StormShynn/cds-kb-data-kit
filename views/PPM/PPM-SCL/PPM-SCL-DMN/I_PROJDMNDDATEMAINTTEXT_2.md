@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ProjectDemandDateMaintenance` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as tv_dmnd_date_maint preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ProjDemandDateMaintenanceText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_ProjectDemandDateMaintenance` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ProjectDemandDateMaintenance` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as tv_dmnd_date_maint preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProjDemandDateMaintenanceText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProjectDemandDateMaintenance` | | ✓ | | | | |
 
 ## Associations
 

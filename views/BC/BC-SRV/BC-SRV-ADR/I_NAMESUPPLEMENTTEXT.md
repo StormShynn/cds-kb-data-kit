@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `PersonNameSupplementCode` | ✓ | |  | `title_key` |
-| `NameSupplementDescription` |  | |  | `title_dscr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `PersonNameSupplementCode` | ✓ | |  | `title_key` |  |  |
+| `NameSupplementDescription` |  | |  | `title_dscr` |  |  |
 
 ## Source Code
 

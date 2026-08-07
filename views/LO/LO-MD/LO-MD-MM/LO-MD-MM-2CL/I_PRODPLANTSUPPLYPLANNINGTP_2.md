@@ -31,100 +31,100 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `FixedLotSizeQuantity` |  | |  |  |
-| `MaximumLotSizeQuantity` |  | |  |  |
-| `MinimumLotSizeQuantity` |  | |  |  |
-| `LotSizeRoundingQuantity` |  | |  |  |
-| `LotSizingProcedure` |  | |  |  |
-| `MRPType` |  | |  |  |
-| `MRPResponsible` |  | |  |  |
-| `SafetyStockQuantity` |  | |  |  |
-| `MinimumSafetyStockQuantity` |  | |  |  |
-| `PlanningTimeFence` |  | |  |  |
-| `ConsumptionValueCategory` |  | |  |  |
-| `MaximumStockQuantity` |  | |  |  |
-| `ReorderThresholdQuantity` |  | |  |  |
-| `PlannedDeliveryDurationInDays` |  | |  |  |
-| `SafetySupplyDurationInDays` |  | |  |  |
-| `PlanningStrategyGroup` |  | |  |  |
-| `TotalReplenishmentLeadTime` |  | |  |  |
-| `ProcurementType` |  | |  |  |
-| `ProcurementSubType` |  | |  |  |
-| `AssemblyScrapPercent` |  | |  |  |
-| `AvailabilityCheckType` |  | |  |  |
-| `GoodsReceiptDuration` |  | |  |  |
-| `PlanAndOrderDayDetermination` |  | |  |  |
-| `RoundingProfile` |  | |  |  |
-| `DfltStorageLocationExtProcmt` |  | |  |  |
-| `MRPGroup` |  | |  |  |
-| `LotSizeIndependentCosts` |  | |  |  |
-| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  |  |
-| `MRPPlanningCalendar` |  | |  |  |
-| `RangeOfCvrgPrflCode` |  | |  |  |
-| `ProductSafetyTimeMRPRelevance` |  | |  |  |
-| `SafetyTimePeriodProfile` |  | |  |  |
-| `DependentRqmtMRPRelevance` |  | |  |  |
-| `ProductServiceLevelInPercent` |  | |  |  |
-| `ProdInhProdnDurationInWorkDays` |  | |  |  |
-| `MRPAvailabilityType` |  | |  |  |
-| `CrossProjectProduct` |  | |  |  |
-| `StorageCostsPercentageCode` |  | |  |  |
-| `FollowUpProduct` |  | |  |  |
-| `RepetitiveManufacturingIsAllwd` |  | |  |  |
-| `DependentRequirementsType` |  | |  |  |
-| `ProductIsBulkComponent` |  | |  |  |
-| `RepetitiveManufacturingProfile` |  | |  |  |
-| `BackwardCnsmpnPeriodInWorkDays` |  | |  |  |
-| `FwdConsumptionPeriodInWorkDays` |  | |  |  |
-| `ProdRqmtsConsumptionMode` |  | |  |  |
-| `ProdFcstRequirementsSplitCode` |  | |  |  |
-| `EffectiveOutDate` |  | |  |  |
-| `SchedulingFloatProfile` |  | |  |  |
-| `ComponentScrapInPercent` |  | |  |  |
-| `ProductDiscontinuationCode` |  | |  |  |
-| `ProductRequirementsGrouping` |  | |  |  |
-| `ProductionInvtryManagedLoc` |  | |  |  |
-| `ProductComponentBackflushCode` |  | |  |  |
-| `ProposedProductSupplyArea` |  | |  |  |
-| `MRPSafetyStockMethod` |  | |  |  |
-| `JITProdnConfProfile` |  | |  |  |
-| `PlannedOrderActionControl` |  | |  |  |
-| `Currency` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `MRPProfile` |  | |  |  |
-| `ProdnPlngAndControlCalendar` |  | |  |  |
-| `GoodIssueProcessingDays` |  | |  |  |
-| `ConsignmentControl` |  | |  |  |
-| `ProductUnitGroup` |  | |  |  |
-| `ATPCheckHorizonInDays` |  | |  |  |
-| `ATPCheckHorizonFactoryCalendar` |  | |  |  |
-| `_ProductPlant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ABCIndicatorText` | | ✓ | | |
-| `_SafetyTimePeriodProfileText` | | ✓ | | |
-| `_ProdSafetyTimeMRPRlvnceText` | | ✓ | | |
-| `_DepdntRqmtMRPRelevanceText` | | ✓ | | |
-| `_ProdDepdntRqmtsTypeText` | | ✓ | | |
-| `_ProdRqmtsConsumptionModeText` | | ✓ | | |
-| `_ProdRequirementsGroupingText` | | ✓ | | |
-| `_ProdComponentBackflushCodeT` | | ✓ | | |
-| `_MRPSafetyStockMethodText` | | ✓ | | |
-| `_ConsignmentControlText` | | ✓ | | |
-| `_LotSizingProcedureText` | | ✓ | | |
-| `_MRPTypeText` | | ✓ | | |
-| `_ProductionSupplyAreaText` | | ✓ | | |
-| `_MRPGroupText` | | ✓ | | |
-| `_RangeOfCvrgPrflCodeText` | | ✓ | | |
-| `_RepetitiveMfgProfileText` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_PlanningStrategyGroupText` | | ✓ | | |
-| `_ProductMRPAvailabilityTypeT` | | ✓ | | |
-| `_ProdProcurementTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `FixedLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |  |  |
+| `LotSizeRoundingQuantity` |  | |  |  |  |  |
+| `LotSizingProcedure` |  | |  |  |  |  |
+| `MRPType` |  | |  |  |  |  |
+| `MRPResponsible` |  | |  |  |  |  |
+| `SafetyStockQuantity` |  | |  |  |  |  |
+| `MinimumSafetyStockQuantity` |  | |  |  |  |  |
+| `PlanningTimeFence` |  | |  |  |  |  |
+| `ConsumptionValueCategory` |  | |  |  |  |  |
+| `MaximumStockQuantity` |  | |  |  |  |  |
+| `ReorderThresholdQuantity` |  | |  |  |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |  |  |
+| `SafetySupplyDurationInDays` |  | |  |  |  |  |
+| `PlanningStrategyGroup` |  | |  |  |  |  |
+| `TotalReplenishmentLeadTime` |  | |  |  |  |  |
+| `ProcurementType` |  | |  |  |  |  |
+| `ProcurementSubType` |  | |  |  |  |  |
+| `AssemblyScrapPercent` |  | |  |  |  |  |
+| `AvailabilityCheckType` |  | |  |  |  |  |
+| `GoodsReceiptDuration` |  | |  |  |  |  |
+| `PlanAndOrderDayDetermination` |  | |  |  |  |  |
+| `RoundingProfile` |  | |  |  |  |  |
+| `DfltStorageLocationExtProcmt` |  | |  |  |  |  |
+| `MRPGroup` |  | |  |  |  |  |
+| `LotSizeIndependentCosts` |  | |  |  |  |  |
+| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  |  |  |  |
+| `MRPPlanningCalendar` |  | |  |  |  |  |
+| `RangeOfCvrgPrflCode` |  | |  |  |  |  |
+| `ProductSafetyTimeMRPRelevance` |  | |  |  |  |  |
+| `SafetyTimePeriodProfile` |  | |  |  |  |  |
+| `DependentRqmtMRPRelevance` |  | |  |  |  |  |
+| `ProductServiceLevelInPercent` |  | |  |  |  |  |
+| `ProdInhProdnDurationInWorkDays` |  | |  |  |  |  |
+| `MRPAvailabilityType` |  | |  |  |  |  |
+| `CrossProjectProduct` |  | |  |  |  |  |
+| `StorageCostsPercentageCode` |  | |  |  |  |  |
+| `FollowUpProduct` |  | |  |  |  |  |
+| `RepetitiveManufacturingIsAllwd` |  | |  |  |  |  |
+| `DependentRequirementsType` |  | |  |  |  |  |
+| `ProductIsBulkComponent` |  | |  |  |  |  |
+| `RepetitiveManufacturingProfile` |  | |  |  |  |  |
+| `BackwardCnsmpnPeriodInWorkDays` |  | |  |  |  |  |
+| `FwdConsumptionPeriodInWorkDays` |  | |  |  |  |  |
+| `ProdRqmtsConsumptionMode` |  | |  |  |  |  |
+| `ProdFcstRequirementsSplitCode` |  | |  |  |  |  |
+| `EffectiveOutDate` |  | |  |  |  |  |
+| `SchedulingFloatProfile` |  | |  |  |  |  |
+| `ComponentScrapInPercent` |  | |  |  |  |  |
+| `ProductDiscontinuationCode` |  | |  |  |  |  |
+| `ProductRequirementsGrouping` |  | |  |  |  |  |
+| `ProductionInvtryManagedLoc` |  | |  |  |  |  |
+| `ProductComponentBackflushCode` |  | |  |  |  |  |
+| `ProposedProductSupplyArea` |  | |  |  |  |  |
+| `MRPSafetyStockMethod` |  | |  |  |  |  |
+| `JITProdnConfProfile` |  | |  |  |  |  |
+| `PlannedOrderActionControl` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `MRPProfile` |  | |  |  |  |  |
+| `ProdnPlngAndControlCalendar` |  | |  |  |  |  |
+| `GoodIssueProcessingDays` |  | |  |  |  |  |
+| `ConsignmentControl` |  | |  |  |  |  |
+| `ProductUnitGroup` |  | |  |  |  |  |
+| `ATPCheckHorizonInDays` |  | |  |  |  |  |
+| `ATPCheckHorizonFactoryCalendar` |  | |  |  |  |  |
+| `_ProductPlant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ABCIndicatorText` | | ✓ | | | | |
+| `_SafetyTimePeriodProfileText` | | ✓ | | | | |
+| `_ProdSafetyTimeMRPRlvnceText` | | ✓ | | | | |
+| `_DepdntRqmtMRPRelevanceText` | | ✓ | | | | |
+| `_ProdDepdntRqmtsTypeText` | | ✓ | | | | |
+| `_ProdRqmtsConsumptionModeText` | | ✓ | | | | |
+| `_ProdRequirementsGroupingText` | | ✓ | | | | |
+| `_ProdComponentBackflushCodeT` | | ✓ | | | | |
+| `_MRPSafetyStockMethodText` | | ✓ | | | | |
+| `_ConsignmentControlText` | | ✓ | | | | |
+| `_LotSizingProcedureText` | | ✓ | | | | |
+| `_MRPTypeText` | | ✓ | | | | |
+| `_ProductionSupplyAreaText` | | ✓ | | | | |
+| `_MRPGroupText` | | ✓ | | | | |
+| `_RangeOfCvrgPrflCodeText` | | ✓ | | | | |
+| `_RepetitiveMfgProfileText` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_PlanningStrategyGroupText` | | ✓ | | | | |
+| `_ProductMRPAvailabilityTypeT` | | ✓ | | | | |
+| `_ProdProcurementTypeText` | | ✓ | | | | |
 
 ## Source Code
 

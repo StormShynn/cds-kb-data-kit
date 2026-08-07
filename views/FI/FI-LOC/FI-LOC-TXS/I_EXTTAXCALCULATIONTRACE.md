@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ExtTaxCalculationTraceUUID` | ✓ | |  | `guid` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `ConditionApplication` | ✓ | |  | `kappl` |
-| `ExtTaxCalcDocumentCategory` | ✓ | |  | `doc_category` |
-| `ExtTaxCalcDocumentNumber` | ✓ | |  | `doc_number` |
-| `ExtTaxCalculationFiscalYear` | ✓ | |  | `doc_fiscal_year` |
-| `ExtTaxCalculationItemNumber` | ✓ | |  | `doc_item` |
-| `ExtTaxCalculationDateTime` |  | |  | `cast(timestamp as tzntstmps preserving type)` |
-| `ConditionTaxCode` |  | |  | `tax_type_code` |
-| `ExtTaxCalcTaxJurisdiction` |  | |  | `tax_jurisdiction_code` |
-| `PricingDate` |  | |  | `tax_date` |
-| `ExtTaxCalcRequestPayloadText` |  | |  | `request` |
-| `ExtTaxCalcResponsePayloadText` |  | |  | `response` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExtTaxCalculationTraceUUID` | ✓ | |  | `guid` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `ConditionApplication` | ✓ | |  | `kappl` |  |  |
+| `ExtTaxCalcDocumentCategory` | ✓ | |  | `doc_category` |  |  |
+| `ExtTaxCalcDocumentNumber` | ✓ | |  | `doc_number` |  |  |
+| `ExtTaxCalculationFiscalYear` | ✓ | |  | `doc_fiscal_year` |  |  |
+| `ExtTaxCalculationItemNumber` | ✓ | |  | `doc_item` |  |  |
+| `ExtTaxCalculationDateTime` |  | |  | `cast(timestamp as tzntstmps preserving type)` |  |  |
+| `ConditionTaxCode` |  | |  | `tax_type_code` |  |  |
+| `ExtTaxCalcTaxJurisdiction` |  | |  | `tax_jurisdiction_code` |  |  |
+| `PricingDate` |  | |  | `tax_date` |  |  |
+| `ExtTaxCalcRequestPayloadText` |  | |  | `request` |  |  |
+| `ExtTaxCalcResponsePayloadText` |  | |  | `response` |  |  |
 
 ## Source Code
 

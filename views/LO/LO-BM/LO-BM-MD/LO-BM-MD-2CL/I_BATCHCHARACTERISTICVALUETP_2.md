@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `BatchIdentifyingPlant` | ✓ | |  |  |
-| `Batch` | ✓ | |  |  |
-| `CharcInternalID` | ✓ | |  |  |
-| `ClfnCharcValuePositionNumber` | ✓ | |  |  |
-| `CharcValueIntervalType` |  | |  |  |
-| `CharcValue` |  | |  |  |
-| `CharcFromNumericValue` |  | |  |  |
-| `CharcFromNumericValueUnit` |  | |  |  |
-| `CharcToNumericValue` |  | |  |  |
-| `CharcToNumericValueUnit` |  | |  |  |
-| `CharcFromDecimalValue` |  | |  |  |
-| `CharcToDecimalValue` |  | |  |  |
-| `CharcFromAmount` |  | |  |  |
-| `CharcToAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `CharcFromDate` |  | |  |  |
-| `CharcToDate` |  | |  |  |
-| `CharcFromTime` |  | |  |  |
-| `CharcToTime` |  | |  |  |
-| `CharcAuthor` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `ClassType` |  | |  |  |
-| `_BatchCharacteristicTP` | | ✓ | | |
-| `_BatchTP` | | ✓ | | |
-| `_ClfnCharacteristic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `BatchIdentifyingPlant` | ✓ | |  |  |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `ClfnCharcValuePositionNumber` | ✓ | |  |  |  |  |
+| `CharcValueIntervalType` |  | |  |  |  |  |
+| `CharcValue` |  | |  |  |  |  |
+| `CharcFromNumericValue` |  | |  |  |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |  |  |
+| `CharcToNumericValue` |  | |  |  |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |  |  |
+| `CharcFromDecimalValue` |  | |  |  |  |  |
+| `CharcToDecimalValue` |  | |  |  |  |  |
+| `CharcFromAmount` |  | |  |  |  |  |
+| `CharcToAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `CharcFromDate` |  | |  |  |  |  |
+| `CharcToDate` |  | |  |  |  |  |
+| `CharcFromTime` |  | |  |  |  |  |
+| `CharcToTime` |  | |  |  |  |  |
+| `CharcAuthor` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `ClassType` |  | |  |  |  |  |
+| `_BatchCharacteristicTP` | | ✓ | | | | |
+| `_BatchTP` | | ✓ | | | | |
+| `_ClfnCharacteristic` | | ✓ | | | | |
 
 ## Source Code
 

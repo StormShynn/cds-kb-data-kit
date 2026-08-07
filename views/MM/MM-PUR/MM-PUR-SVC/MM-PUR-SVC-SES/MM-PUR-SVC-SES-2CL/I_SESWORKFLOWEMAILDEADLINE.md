@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | | `_WorkflowTask` | `WorkflowTaskInternalID` |
-| `SAPObjectNodeRepresentation` |  | | `_WorkflowTaskApplObject` | `SAPObjectNodeRepresentation` |
-| `SuplrInvcWrkflwTaskDesc` |  | |  | `_WorkflowTask._TaskTitle[1:Language=$session.system_language].WorkflowTaskName` |
-| `SuplrInvcWrkflwTaskType` |  | | `_WorkflowTask` | `WorkflowTaskType` |
-| `SuplrInvcWrkflwTskTypeDesc` |  | |  | `_WorkflowTask._TaskType._Text[1:Language=$session.system_language].WorkflowTaskTypeDesc` |
-| `SuplrInvcWrkflwTaskStatus` |  | | `_WorkflowTask` | `WorkflowTaskStatus` |
-| `SuplrInvcWrkflwTskStatusDesc` |  | |  | `_WorkflowTask._TaskStatus._Text[1:Language=$session.system_language].WorkflowTaskStatusDesc` |
-| `WorkflowTaskCreatedByUser` |  | | `_WorkflowTask` | `WorkflowTaskCreatedByUser` |
-| `SuplrInvcWrkflwTskCrtnDateTime` |  | | `_WorkflowTask` | `WrkflwTskCreationUTCDateTime` |
-| `WorkflowTaskCurrentUser` |  | | `_WorkflowTask` | `WorkflowTaskCurrentUser` |
-| `FullName` |  | | `_User` | `UserDescription` |
-| `WorkflowTaskDefinition` |  | | `_WorkflowTask` | `WorkflowTaskDefinition` |
-| `WorkflowTaskDueUTCDateTime` |  | | `_TaskDueDate` | `WorkflowTaskDueUTCDateTime` |
-| `ServiceEntrySheet` |  | | `_ServiceEntrySheet` | `ServiceEntrySheet` |
-| `ServiceEntrySheetName` |  | | `_ServiceEntrySheet` | `ServiceEntrySheetName` |
-| `PurchasingOrganization` |  | | `_ServiceEntrySheet` | `PurchasingOrganization` |
-| `PurchasingGroup` |  | | `_ServiceEntrySheet` | `PurchasingGroup` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_WorkflowTask` | `WorkflowTaskInternalID` |  |  |
+| `SAPObjectNodeRepresentation` |  | | `_WorkflowTaskApplObject` | `SAPObjectNodeRepresentation` |  |  |
+| `SuplrInvcWrkflwTaskDesc` |  | |  | `_WorkflowTask._TaskTitle[1:Language=$session.system_language].WorkflowTaskName` |  |  |
+| `SuplrInvcWrkflwTaskType` |  | | `_WorkflowTask` | `WorkflowTaskType` |  |  |
+| `SuplrInvcWrkflwTskTypeDesc` |  | |  | `_WorkflowTask._TaskType._Text[1:Language=$session.system_language].WorkflowTaskTypeDesc` |  |  |
+| `SuplrInvcWrkflwTaskStatus` |  | | `_WorkflowTask` | `WorkflowTaskStatus` |  |  |
+| `SuplrInvcWrkflwTskStatusDesc` |  | |  | `_WorkflowTask._TaskStatus._Text[1:Language=$session.system_language].WorkflowTaskStatusDesc` |  |  |
+| `WorkflowTaskCreatedByUser` |  | | `_WorkflowTask` | `WorkflowTaskCreatedByUser` |  |  |
+| `SuplrInvcWrkflwTskCrtnDateTime` |  | | `_WorkflowTask` | `WrkflwTskCreationUTCDateTime` |  |  |
+| `WorkflowTaskCurrentUser` |  | | `_WorkflowTask` | `WorkflowTaskCurrentUser` |  |  |
+| `FullName` |  | | `_User` | `UserDescription` |  |  |
+| `WorkflowTaskDefinition` |  | | `_WorkflowTask` | `WorkflowTaskDefinition` |  |  |
+| `WorkflowTaskDueUTCDateTime` |  | | `_TaskDueDate` | `WorkflowTaskDueUTCDateTime` |  |  |
+| `ServiceEntrySheet` |  | | `_ServiceEntrySheet` | `ServiceEntrySheet` |  |  |
+| `ServiceEntrySheetName` |  | | `_ServiceEntrySheet` | `ServiceEntrySheetName` |  |  |
+| `PurchasingOrganization` |  | | `_ServiceEntrySheet` | `PurchasingOrganization` |  |  |
+| `PurchasingGroup` |  | | `_ServiceEntrySheet` | `PurchasingGroup` |  |  |
 
 ## Associations
 

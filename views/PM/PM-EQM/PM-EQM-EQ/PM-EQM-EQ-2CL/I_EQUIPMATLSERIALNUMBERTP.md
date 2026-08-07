@@ -30,75 +30,75 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `SerialNumber` | ✓ | |  |  |
-| `Equipment` |  | |  |  |
-| `EquipmentCategory` |  | |  |  |
-| `UniqueItemIdentifier` |  | |  |  |
-| `UniqueItemIdentifierStrucType` |  | |  |  |
-| `UniqueItemIdentifierRespPlant` |  | |  |  |
-| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
-| `MaintObjectInternalID` |  | |  |  |
-| `HasEquipmentData` |  | |  |  |
-| `TechnicalObject` |  | |  |  |
-| `EquipmentHasStockInformation` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `MatlSrlNmbrMasterBatch` |  | |  |  |
-| `EquipMaterialLastSerialNumber` |  | |  |  |
-| `MatlSrlNmbrLastGdsMvtDte` |  | |  |  |
-| `MaterialSerialNumberStockBatch` |  | |  |  |
-| `InventoryStockType` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `StockOwner` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CompanyCodeName` |  | |  |  |
-| `EquipmentName` |  | |  |  |
-| `TechnicalObjectDescription` |  | |  |  |
-| `MatlSrlNmbrIsAvailable` |  | |  |  |
-| `MatlSrlNmbrIsDeleted` |  | |  |  |
-| `MatlSrlNmbrIsMrkdForDeltn` |  | |  |  |
-| `MatlSrlNmbrIsInactive` |  | |  |  |
-| `MatlSrlNmbrIsInstalled` |  | |  |  |
-| `MatlSrlNmbrIsAllcToParent` |  | |  |  |
-| `MatlSrlNmbrIsInWarehouse` |  | |  |  |
-| `MatlSrlNmbrIsAssgdToDeliv` |  | |  |  |
-| `MatlSrlNmbrIsAtCustomer` |  | |  |  |
-| `MatlSrlNmbrIsUndrCnstrctn` |  | |  |  |
-| `MatlSrlNmbrIsOnHold` |  | |  |  |
-| `MatlSrlNmbrIsLocked` |  | |  |  |
-| `MatlSrlNmbrIsIDUndefined` |  | |  |  |
-| `MatlSrlNmbrIsAssgdToJITCall` |  | |  |  |
-| `MatlSrlNmbrDocIsCreated` |  | |  |  |
-| `MatlSrlNmbrHndlgUntIsAssgd` |  | |  |  |
-| `MatlSrlNmbrInvtryIsActv` |  | |  |  |
-| `MatlSrlNmbrUUIDIsGnrtd` |  | |  |  |
-| `MatlSrlNmbrUUIDIsAttached` |  | |  |  |
-| `MatlSrlNmbrUUIDIsSent` |  | |  |  |
-| `MatlSrlNmbrUUIDIsConfd` |  | |  |  |
-| `_Customer` | | ✓ | | |
-| `_EquipmentCategory` | | ✓ | | |
-| `_EquipmentText` | | ✓ | | |
-| `_InventoryStockType` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_Warranty` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `SerialNumber` | ✓ | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `EquipmentCategory` |  | |  |  |  |  |
+| `UniqueItemIdentifier` |  | |  |  |  |  |
+| `UniqueItemIdentifierStrucType` |  | |  |  |  |  |
+| `UniqueItemIdentifierRespPlant` |  | |  |  |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |  |  |
+| `MaintObjectInternalID` |  | |  |  |  |  |
+| `HasEquipmentData` |  | |  |  |  |  |
+| `TechnicalObject` |  | |  |  |  |  |
+| `EquipmentHasStockInformation` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `MatlSrlNmbrMasterBatch` |  | |  |  |  |  |
+| `EquipMaterialLastSerialNumber` |  | |  |  |  |  |
+| `MatlSrlNmbrLastGdsMvtDte` |  | |  |  |  |  |
+| `MaterialSerialNumberStockBatch` |  | |  |  |  |  |
+| `InventoryStockType` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `StockOwner` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CompanyCodeName` |  | |  |  |  |  |
+| `EquipmentName` |  | |  |  |  |  |
+| `TechnicalObjectDescription` |  | |  |  |  |  |
+| `MatlSrlNmbrIsAvailable` |  | |  |  |  |  |
+| `MatlSrlNmbrIsDeleted` |  | |  |  |  |  |
+| `MatlSrlNmbrIsMrkdForDeltn` |  | |  |  |  |  |
+| `MatlSrlNmbrIsInactive` |  | |  |  |  |  |
+| `MatlSrlNmbrIsInstalled` |  | |  |  |  |  |
+| `MatlSrlNmbrIsAllcToParent` |  | |  |  |  |  |
+| `MatlSrlNmbrIsInWarehouse` |  | |  |  |  |  |
+| `MatlSrlNmbrIsAssgdToDeliv` |  | |  |  |  |  |
+| `MatlSrlNmbrIsAtCustomer` |  | |  |  |  |  |
+| `MatlSrlNmbrIsUndrCnstrctn` |  | |  |  |  |  |
+| `MatlSrlNmbrIsOnHold` |  | |  |  |  |  |
+| `MatlSrlNmbrIsLocked` |  | |  |  |  |  |
+| `MatlSrlNmbrIsIDUndefined` |  | |  |  |  |  |
+| `MatlSrlNmbrIsAssgdToJITCall` |  | |  |  |  |  |
+| `MatlSrlNmbrDocIsCreated` |  | |  |  |  |  |
+| `MatlSrlNmbrHndlgUntIsAssgd` |  | |  |  |  |  |
+| `MatlSrlNmbrInvtryIsActv` |  | |  |  |  |  |
+| `MatlSrlNmbrUUIDIsGnrtd` |  | |  |  |  |  |
+| `MatlSrlNmbrUUIDIsAttached` |  | |  |  |  |  |
+| `MatlSrlNmbrUUIDIsSent` |  | |  |  |  |  |
+| `MatlSrlNmbrUUIDIsConfd` |  | |  |  |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_EquipmentCategory` | | ✓ | | | | |
+| `_EquipmentText` | | ✓ | | | | |
+| `_InventoryStockType` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_Warranty` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
 
 ## Source Code
 

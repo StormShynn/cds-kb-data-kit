@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionResourceType` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 2) as productionresourcetype preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
-| `ProductionResourceTypeName` |  | |  | `cast(txt.ddtext as productionresourcetypename preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionResourceType` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 2) as productionresourcetype preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |  |  |
+| `ProductionResourceTypeName` |  | |  | `cast(txt.ddtext as productionresourcetypename preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

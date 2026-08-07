@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `BillingDocumentType` | ✓ | |  | `cast ( _Source.BillingDocumentType as fincs_billingdocumenttype preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast ( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `BillingDocumentTypeName` |  | |  | `cast ( _Source.BillingDocumentTypeName as fincs_billingdocumenttypename preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_BillingDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `BillingDocumentType` | ✓ | |  | `cast ( _Source.BillingDocumentType as fincs_billingdocumenttype preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast ( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `BillingDocumentTypeName` |  | |  | `cast ( _Source.BillingDocumentTypeName as fincs_billingdocumenttypename preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
 
 ## Associations
 

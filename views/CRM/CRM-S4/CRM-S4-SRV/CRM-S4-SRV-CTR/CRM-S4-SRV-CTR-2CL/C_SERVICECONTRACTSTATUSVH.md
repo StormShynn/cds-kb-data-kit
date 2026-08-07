@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContractStatus` | ✓ | |  | `cast( ServiceDocumentStatus as crms4_stat_lifecycle )` |
-| `ServiceContractStatusName` |  | |  | `ServiceDocumentStatusName` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContractStatus` | ✓ | |  | `cast( ServiceDocumentStatus as crms4_stat_lifecycle )` |  |  |
+| `ServiceContractStatusName` |  | |  | `ServiceDocumentStatusName` |  |  |
 
 ## Source Code
 

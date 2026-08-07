@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgSourceDocumentCat` |  | |  | `srcdoccat_kk` |
-| `CAInvcgSourceDocumentNumber` |  | |  | `srcdocno_kk` |
-| `_Parent` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgSourceDocumentCat` |  | |  | `srcdoccat_kk` |  |  |
+| `CAInvcgSourceDocumentNumber` |  | |  | `srcdocno_kk` |  |  |
+| `_Parent` | | ✓ | | | | |
 
 ## Source Code
 

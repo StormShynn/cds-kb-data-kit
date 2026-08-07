@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SamplingType` | ✓ | |  | `stichprart` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SamplingType` | ✓ | |  | `stichprart` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `cast( mlan.matnr as productnumber preserving type )` |
-| `SourceLocationCountry` | ✓ | |  | `aland` |
-| `TaxIndicator` |  | |  | `taxim` |
-| `_Product` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_CountryText` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast( mlan.matnr as productnumber preserving type )` |  |  |
+| `SourceLocationCountry` | ✓ | |  | `aland` |  |  |
+| `TaxIndicator` |  | |  | `taxim` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Associations
 

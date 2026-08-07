@@ -31,32 +31,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `AlternativeUnit` | ✓ | |  |  |
-| `QuantityNumerator` |  | |  |  |
-| `QuantityDenominator` |  | |  |  |
-| `ProductVolume` |  | |  |  |
-| `VolumeUnit` |  | |  |  |
-| `GrossWeight` |  | |  |  |
-| `WeightUnit` |  | |  |  |
-| `GlobalTradeItemNumber` |  | |  |  |
-| `GlobalTradeItemNumberCategory` |  | |  |  |
-| `UnitSpecificProductLength` |  | |  |  |
-| `UnitSpecificProductWidth` |  | |  |  |
-| `UnitSpecificProductHeight` |  | |  |  |
-| `ProductMeasurementUnit` |  | |  |  |
-| `LowerLevelPackagingUnit` |  | |  |  |
-| `MaximumStackingFactor` |  | |  |  |
-| `CapacityUsage` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `_ProductUnitOfMeasureEAN` | | ✓ | | |
-| `_ProdUoMSuplrEAN` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
-| `_GlobalTradeItemNumberText` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `AlternativeUnit` | ✓ | |  |  |  |  |
+| `QuantityNumerator` |  | |  |  |  |  |
+| `QuantityDenominator` |  | |  |  |  |  |
+| `ProductVolume` |  | |  |  |  |  |
+| `VolumeUnit` |  | |  |  |  |  |
+| `GrossWeight` |  | |  |  |  |  |
+| `WeightUnit` |  | |  |  |  |  |
+| `GlobalTradeItemNumber` |  | |  |  |  |  |
+| `GlobalTradeItemNumberCategory` |  | |  |  |  |  |
+| `UnitSpecificProductLength` |  | |  |  |  |  |
+| `UnitSpecificProductWidth` |  | |  |  |  |  |
+| `UnitSpecificProductHeight` |  | |  |  |  |  |
+| `ProductMeasurementUnit` |  | |  |  |  |  |
+| `LowerLevelPackagingUnit` |  | |  |  |  |  |
+| `MaximumStackingFactor` |  | |  |  |  |  |
+| `CapacityUsage` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `_ProductUnitOfMeasureEAN` | | ✓ | | | | |
+| `_ProdUoMSuplrEAN` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
+| `_GlobalTradeItemNumberText` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
 
 ## Source Code
 

@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialManagementArea` | ✓ | |  | `fm_area` |
-| `FundType` | ✓ | |  | `fund_type` |
-| `GranteeMgmtFundType` |  | |  | `gm_fundtype` |
-| `_FinMgmtArea` | | ✓ | | |
-| `_GranteeMgmtFundType` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  | `fm_area` |  |  |
+| `FundType` | ✓ | |  | `fund_type` |  |  |
+| `GranteeMgmtFundType` |  | |  | `gm_fundtype` |  |  |
+| `_FinMgmtArea` | | ✓ | | | | |
+| `_GranteeMgmtFundType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

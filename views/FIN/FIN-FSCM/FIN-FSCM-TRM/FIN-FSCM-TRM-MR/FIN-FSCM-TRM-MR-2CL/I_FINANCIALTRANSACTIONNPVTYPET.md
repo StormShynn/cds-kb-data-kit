@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `FinancialTransactionNPVType` | ✓ | |  | `okuart` |
-| `FinancialTransactionNPVTypeTxt` |  | |  | `xtext` |
-| `_Language` | | ✓ | | |
-| `_NPVType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FinancialTransactionNPVType` | ✓ | |  | `okuart` |  |  |
+| `FinancialTransactionNPVTypeTxt` |  | |  | `xtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_NPVType` | | ✓ | | | | |
 
 ## Associations
 

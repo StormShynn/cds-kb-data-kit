@@ -29,59 +29,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SourceCompanyCode` | ✓ | |  | `ausbk` |
-| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs preserving type )` |
-| `SourceAccountingDocument` | ✓ | |  | `cast( belnr as fis_belnr preserving type )` |
-| `SourceFiscalYear` | ✓ | |  | `cast( gjahr as fis_gjahr_no_conv )` |
-| `AccountingDocumentCategory` |  | |  | `cast( bstat as farp_bstat_d preserving type )` |
-| `AccountingDocumentType` |  | |  | `cast( blart as farp_blart preserving type )` |
-| `DocumentDate` |  | |  | `cast( bldat as fis_bldat preserving type )` |
-| `PostingDate` |  | |  | `cast( budat as fis_budat preserving type )` |
-| `FiscalPeriod` |  | |  | `cast( cast( concat( '0', monat ) as abap.numc( 3 ) ) as fins_fiscalperiod )` |
-| `ExchangeRateDate` |  | |  | `cast( wwert as vdm_v_exchange_rate_date preserving type)` |
-| `AccountingDocumentCreationDate` |  | |  | `cast( cpudt as farp_cpudt preserving type )` |
-| `CreationTime` |  | |  | `cast( cputm as ttet_dt_cr_time preserving type )` |
-| `LastManualChangeDate` |  | |  | `cast ( aedat as fis_lastmanualchangedate preserving type )` |
-| `LastAutomaticChangeDate` |  | |  | `cast ( upddt as fis_lastautomaticchangedate preserving type )` |
-| `LastChangeDate` |  | |  | `cast ( case when ( upddt is not initial and upddt > aedat ) then upddt when aedat is not initial then cast ( aedat as ttet_dt_chg_date preserving type ) else cast ( cpudt as ttet_dt_chg_date preserving type ) end as ttet_dt_chg_date )` |
-| `AccountingDocCreatedByUser` |  | |  | `cast( usnam as fis_usnam preserving type)` |
-| `TransactionCode` |  | |  | `tcode` |
-| `IntercompanyTransaction` |  | |  | `cast( bvorg as fac_bvorg preserving type )` |
-| `DocumentReferenceID` |  | |  | `cast( xblnr as fis_xblnr1 preserving type )` |
-| `AccountingDocumentHeaderText` |  | |  | `bktxt` |
-| `FinancialManagementArea` |  | |  | `fikrs` |
-| `TransactionCurrency` |  | |  | `waers` |
-| `CompanyCodeCurrency` |  | |  | `cast( hwaer as fis_hwaer )` |
-| `AdditionalCurrency1` |  | |  | `cast( hwae2 as fis_hwae2 )` |
-| `AdditionalCurrency2` |  | |  | `cast( hwae3 as fis_hwae3 )` |
-| `AdditionalCurrency1Role` |  | |  | `cast( curt2 as fis_adl1_currole )` |
-| `AdditionalCurrency2Role` |  | |  | `cast( curt3 as fis_adl2_currole )` |
-| `ReferenceDocumentType` |  | |  | `cast( awtyp as fis_awtyp preserving type )` |
-| `OriginalReferenceDocument` |  | |  | `cast( awkey as fac_awkey preserving type )` |
-| `ReferenceDocumentLogicalSystem` |  | |  | `cast(awsys as fis_awsys preserving type)` |
-| `Branch` |  | |  | `cast( brnch as fis_j_1abrnch preserving type)` |
-| `InvoiceReceiptDate` |  | |  | `cast( reindat as fis_reindat )` |
-| `LedgerGroup` |  | |  | `ldgrp` |
-| `PartnerCompany` |  | |  | `vbund` |
-| `TaxReportingDate` |  | |  | `vatdate` |
-| `TaxIsCalculatedAutomatically` |  | |  | `cast( xmwst as fis_xmwst )` |
-| `_SourceCompanyCode` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_SourceFiscalYear` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_AdditionalCurrency1` | | ✓ | | |
-| `_AdditionalCurrency2` | | ✓ | | |
-| `_AdditionalCurrency1Role` | | ✓ | | |
-| `_AdditionalCurrency2Role` | | ✓ | | |
-| `_AccountingDocumentCategory` | | ✓ | | |
-| `_FinancialManagementArea` | | ✓ | | |
-| `_ReferenceDocumentType` | | ✓ | | |
-| `_RefDocumentLogicalSystem` | | ✓ | | |
-| `_LedgerGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SourceCompanyCode` | ✓ | |  | `ausbk` |  |  |
+| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs preserving type )` |  |  |
+| `SourceAccountingDocument` | ✓ | |  | `cast( belnr as fis_belnr preserving type )` |  |  |
+| `SourceFiscalYear` | ✓ | |  | `cast( gjahr as fis_gjahr_no_conv )` |  |  |
+| `AccountingDocumentCategory` |  | |  | `cast( bstat as farp_bstat_d preserving type )` |  |  |
+| `AccountingDocumentType` |  | |  | `cast( blart as farp_blart preserving type )` |  |  |
+| `DocumentDate` |  | |  | `cast( bldat as fis_bldat preserving type )` |  |  |
+| `PostingDate` |  | |  | `cast( budat as fis_budat preserving type )` |  |  |
+| `FiscalPeriod` |  | |  | `cast( cast( concat( '0', monat ) as abap.numc( 3 ) ) as fins_fiscalperiod )` |  |  |
+| `ExchangeRateDate` |  | |  | `cast( wwert as vdm_v_exchange_rate_date preserving type)` |  |  |
+| `AccountingDocumentCreationDate` |  | |  | `cast( cpudt as farp_cpudt preserving type )` |  |  |
+| `CreationTime` |  | |  | `cast( cputm as ttet_dt_cr_time preserving type )` |  |  |
+| `LastManualChangeDate` |  | |  | `cast ( aedat as fis_lastmanualchangedate preserving type )` |  |  |
+| `LastAutomaticChangeDate` |  | |  | `cast ( upddt as fis_lastautomaticchangedate preserving type )` |  |  |
+| `LastChangeDate` |  | |  | `cast ( case when ( upddt is not initial and upddt > aedat ) then upddt when aedat is not initial then cast ( aedat as ttet_dt_chg_date preserving type ) else cast ( cpudt as ttet_dt_chg_date preserving type ) end as ttet_dt_chg_date )` |  |  |
+| `AccountingDocCreatedByUser` |  | |  | `cast( usnam as fis_usnam preserving type)` |  |  |
+| `TransactionCode` |  | |  | `tcode` |  |  |
+| `IntercompanyTransaction` |  | |  | `cast( bvorg as fac_bvorg preserving type )` |  |  |
+| `DocumentReferenceID` |  | |  | `cast( xblnr as fis_xblnr1 preserving type )` |  |  |
+| `AccountingDocumentHeaderText` |  | |  | `bktxt` |  |  |
+| `FinancialManagementArea` |  | |  | `fikrs` |  |  |
+| `TransactionCurrency` |  | |  | `waers` |  |  |
+| `CompanyCodeCurrency` |  | |  | `cast( hwaer as fis_hwaer )` |  |  |
+| `AdditionalCurrency1` |  | |  | `cast( hwae2 as fis_hwae2 )` |  |  |
+| `AdditionalCurrency2` |  | |  | `cast( hwae3 as fis_hwae3 )` |  |  |
+| `AdditionalCurrency1Role` |  | |  | `cast( curt2 as fis_adl1_currole )` |  |  |
+| `AdditionalCurrency2Role` |  | |  | `cast( curt3 as fis_adl2_currole )` |  |  |
+| `ReferenceDocumentType` |  | |  | `cast( awtyp as fis_awtyp preserving type )` |  |  |
+| `OriginalReferenceDocument` |  | |  | `cast( awkey as fac_awkey preserving type )` |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  | `cast(awsys as fis_awsys preserving type)` |  |  |
+| `Branch` |  | |  | `cast( brnch as fis_j_1abrnch preserving type)` |  |  |
+| `InvoiceReceiptDate` |  | |  | `cast( reindat as fis_reindat )` |  |  |
+| `LedgerGroup` |  | |  | `ldgrp` |  |  |
+| `PartnerCompany` |  | |  | `vbund` |  |  |
+| `TaxReportingDate` |  | |  | `vatdate` |  |  |
+| `TaxIsCalculatedAutomatically` |  | |  | `cast( xmwst as fis_xmwst )` |  |  |
+| `_SourceCompanyCode` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_SourceFiscalYear` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_AdditionalCurrency1` | | ✓ | | | | |
+| `_AdditionalCurrency2` | | ✓ | | | | |
+| `_AdditionalCurrency1Role` | | ✓ | | | | |
+| `_AdditionalCurrency2Role` | | ✓ | | | | |
+| `_AccountingDocumentCategory` | | ✓ | | | | |
+| `_FinancialManagementArea` | | ✓ | | | | |
+| `_ReferenceDocumentType` | | ✓ | | | | |
+| `_RefDocumentLogicalSystem` | | ✓ | | | | |
+| `_LedgerGroup` | | ✓ | | | | |
 
 ## Associations
 

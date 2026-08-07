@@ -31,37 +31,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankCountry` |  | |  | `], selectionField: [ { position: 10 } ] } key BankCountry` |
-| `BankInternalID` |  | |  | `], selectionField: [ { position: 20 } ] } key BankInternalID` |
-| `LongBankName` |  | |  | `], selectionField: [ { position: 30 } ] } LongBankName` |
-| `LongBankBranch` |  | |  | `], selectionField: [ { position: 60 } ] } LongBankBranch` |
-| `SWIFTCode` |  | |  | `], selectionField: [ { position: 40 } ] } SWIFTCode` |
-| `BankCode` |  | |  | `], selectionField: [ { position: 50 } ] } cast(BankNumber as bf_bank_bankcode preserving type )` |
-| `BankCategoryDescription` |  | | `_BankCategoryText` | `BankCategoryDescription` |
-| `BankCategory` |  | |  | `], selectionField: [ { position: 70 } ] } BankCategory` |
-| `BankNetworkGrouping` |  | |  |  |
-| `StreetName` |  | |  | `], selectionField: [ { position: 100 } ] } StreetName` |
-| `CityName` |  | |  | `], selectionField: [ { position: 80 } ] } CityName` |
-| `AddressRegion` |  | |  | `], selectionField: [ { position: 90 } ] } AddressRegion` |
-| `ShortStreetName` |  | |  |  |
-| `ShortCityName` |  | |  |  |
-| `Region` |  | |  |  |
-| `BankName` |  | |  |  |
-| `BankBranch` |  | |  |  |
-| `NotSglEuroPaytsAreaBkCat` |  | |  | `cast( case when BankCategory <> '4' or BankCategory is null then 'X' else ' ' end as bf_is_not_sepa_bank_category preserving type )` |
-| `IsPostBankAccount` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `PostOfficeBankAccount` |  | |  |  |
-| `CheckDigitCalculationMethod` |  | |  |  |
-| `BankDataFileFormat` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `_BankCategoryText` | | ✓ | | |
-| `_BankAddress` | | ✓ | | |
-| `_Country` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankCountry` | ✓ | |  |  |  |  |
+| `BankInternalID` | ✓ | |  |  |  |  |
+| `LongBankName` |  | |  |  |  |  |
+| `LongBankBranch` |  | |  |  |  |  |
+| `SWIFTCode` |  | |  |  |  |  |
+| `BankCode` |  | |  | `cast(BankNumber as bf_bank_bankcode preserving type )` |  |  |
+| `BankCategoryDescription` |  | | `_BankCategoryText` | `BankCategoryDescription` |  |  |
+| `BankCategory` |  | |  |  |  |  |
+| `BankNetworkGrouping` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `AddressRegion` |  | |  |  |  |  |
+| `ShortStreetName` |  | |  |  |  |  |
+| `ShortCityName` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `BankName` |  | |  |  |  |  |
+| `BankBranch` |  | |  |  |  |  |
+| `NotSglEuroPaytsAreaBkCat` |  | |  | `cast( case when BankCategory <> '4' or BankCategory is null then 'X' else ' ' end as bf_is_not_sepa_bank_category preserving type )` |  |  |
+| `IsPostBankAccount` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `PostOfficeBankAccount` |  | |  |  |  |  |
+| `CheckDigitCalculationMethod` |  | |  |  |  |  |
+| `BankDataFileFormat` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `_BankCategoryText` | | ✓ | | | | |
+| `_BankAddress` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
 
 ## Associations
 

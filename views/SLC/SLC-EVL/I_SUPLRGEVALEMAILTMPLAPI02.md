@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalRspUUID` | ✓ | |  |  |
-| `SupplierEvalResponse` |  | |  | `cast(ltrim(response.SupplierEvalResponse,'0') as /srmsmc/evaluation_response_id)` |
-| `SuplrEvalRspName` |  | |  |  |
-| `SuplrEvalStartDate` |  | |  |  |
-| `SuplrEvalEndDate` |  | |  |  |
-| `CreatedByUser` |  | |  | `cast(response.CreatedByUser as /srmsmc/created_by )` |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  | `cast(response.LastChangedByUser as /srmsmc/last_changed_by )` |
-| `LastChangeDateTime` |  | |  |  |
-| `Language` |  | |  |  |
-| `CreatedByUserDescription` |  | |  | `cast(response._CreatedByUser._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/created_by_user_desc)` |
-| `LastChangedByUserName` |  | |  | `cast(response._LastChangedByUser._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/last_changed_by_desc)` |
-| `FormOfAddressName` |  | |  |  |
-| `FirstName` |  | |  |  |
-| `FamilyName` |  | |  | `LastName` |
-| `BusinessPartnerFullName` |  | |  | `cast(response._Supplier._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/company_name )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalRspUUID` | ✓ | |  |  |  |  |
+| `SupplierEvalResponse` |  | |  | `cast(ltrim(response.SupplierEvalResponse,'0') as /srmsmc/evaluation_response_id)` |  |  |
+| `SuplrEvalRspName` |  | |  |  |  |  |
+| `SuplrEvalStartDate` |  | |  |  |  |  |
+| `SuplrEvalEndDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  | `cast(response.CreatedByUser as /srmsmc/created_by )` |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  | `cast(response.LastChangedByUser as /srmsmc/last_changed_by )` |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `CreatedByUserDescription` |  | |  | `cast(response._CreatedByUser._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/created_by_user_desc)` |  |  |
+| `LastChangedByUserName` |  | |  | `cast(response._LastChangedByUser._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/last_changed_by_desc)` |  |  |
+| `FormOfAddressName` |  | |  |  |  |  |
+| `FirstName` |  | |  |  |  |  |
+| `FamilyName` |  | |  | `LastName` |  |  |
+| `BusinessPartnerFullName` |  | |  | `cast(response._Supplier._BusinessPartner[IsBusinessPurposeCompleted = ''].BusinessPartnerFullName as /srmsmc/company_name )` |  |  |
 
 ## Source Code
 

@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialAccountType` | ✓ | |  | `cast(koart as farp_koart preserving type )` |
-| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type )` |
-| `BlockedFinancialAccount` | ✓ | |  | `cast(konko as farp_blocked_acc preserving type )` |
-| `PaymentRunDate` | ✓ | |  | `laufd` |
-| `PaymentRunID` | ✓ | |  | `cast(laufi as farp_laufi preserving type )` |
-| `ConsideredSpecialGLCodes` |  | |  | `umskl` |
-| `_CompanyCode` | | ✓ | | |
-| `_FinancialAccountType` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_PaymentProposalPayment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialAccountType` | ✓ | |  | `cast(koart as farp_koart preserving type )` |  |  |
+| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type )` |  |  |
+| `BlockedFinancialAccount` | ✓ | |  | `cast(konko as farp_blocked_acc preserving type )` |  |  |
+| `PaymentRunDate` | ✓ | |  | `laufd` |  |  |
+| `PaymentRunID` | ✓ | |  | `cast(laufi as farp_laufi preserving type )` |  |  |
+| `ConsideredSpecialGLCodes` |  | |  | `umskl` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_PaymentProposalPayment` | | ✓ | | | | |
 
 ## Associations
 

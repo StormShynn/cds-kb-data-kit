@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REArchitectureObjMsmtUsageUUID` | ✓ | |  |  |
-| `REArchitectureObjectUsageUUID` |  | |  |  |
-| `REGenericRentalObjectType` |  | |  |  |
-| `RealEstateRentableObjectUUID` |  | |  | `REGenericRentalObjectUUID` |
-| `REArchitectureObjectUUID` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `REMeasurementType` |  | |  |  |
-| `REMeasurementUnit` |  | |  |  |
-| `REMeasurementQuantity` |  | |  |  |
-| `_RERentableObject` | | ✓ | | |
-| `_REArchitectureObject` | | ✓ | | |
-| `_REGenericRentalObject` | | ✓ | | |
-| `_REMeasurementType` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REArchitectureObjMsmtUsageUUID` | ✓ | |  |  |  |  |
+| `REArchitectureObjectUsageUUID` |  | |  |  |  |  |
+| `REGenericRentalObjectType` |  | |  |  |  |  |
+| `RealEstateRentableObjectUUID` |  | |  | `REGenericRentalObjectUUID` |  |  |
+| `REArchitectureObjectUUID` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `REMeasurementType` |  | |  |  |  |  |
+| `REMeasurementUnit` |  | |  |  |  |  |
+| `REMeasurementQuantity` |  | |  |  |  |  |
+| `_RERentableObject` | | ✓ | | | | |
+| `_REArchitectureObject` | | ✓ | | | | |
+| `_REGenericRentalObject` | | ✓ | | | | |
+| `_REMeasurementType` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
 
 ## Associations
 

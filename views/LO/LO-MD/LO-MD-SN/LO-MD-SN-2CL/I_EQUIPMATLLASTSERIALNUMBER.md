@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  | `matnr` |
-| `EquipMaterialLastSerialNumber` |  | |  | `lsernr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  | `matnr` |  |  |
+| `EquipMaterialLastSerialNumber` |  | |  | `lsernr` |  |  |
 
 ## Source Code
 

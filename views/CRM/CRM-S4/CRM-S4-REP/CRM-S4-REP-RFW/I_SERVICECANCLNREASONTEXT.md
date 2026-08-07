@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContrCancellationReason` | ✓ | |  | `canc_reason` |
-| `Language` | ✓ | |  | `langu` |
-| `ServiceContrCanclnReasonName` |  | |  | `canc_reason_t` |
-| `_ServiceCancellationReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContrCancellationReason` | ✓ | |  | `canc_reason` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ServiceContrCanclnReasonName` |  | |  | `canc_reason_t` |  |  |
+| `_ServiceCancellationReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

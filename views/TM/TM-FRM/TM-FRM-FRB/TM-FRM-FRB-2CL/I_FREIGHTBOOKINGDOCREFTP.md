@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderDocRefUUID` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `TranspOrdDocReferenceID` |  | |  |  |
-| `TranspOrdDocReferenceType` |  | |  |  |
-| `TranspOrdDocReferenceItmID` |  | |  |  |
-| `TranspOrdDocReferenceItmType` |  | |  |  |
-| `TranspOrdDocumentReferenceDate` |  | |  |  |
-| `TranspOrdDocRefIssuerName` |  | |  |  |
-| `I_FreightBookingTP` |  | |  | `FreightBookingDocRef._TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderDocRefUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `TranspOrdDocReferenceID` |  | |  |  |  |  |
+| `TranspOrdDocReferenceType` |  | |  |  |  |  |
+| `TranspOrdDocReferenceItmID` |  | |  |  |  |  |
+| `TranspOrdDocReferenceItmType` |  | |  |  |  |  |
+| `TranspOrdDocumentReferenceDate` |  | |  |  |  |  |
+| `TranspOrdDocRefIssuerName` |  | |  |  |  |  |
+| `I_FreightBookingTP` |  | |  | `FreightBookingDocRef._TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |  |  |
 
 ## Source Code
 

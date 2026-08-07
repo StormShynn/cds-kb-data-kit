@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARevenueDistributionStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as rdstat_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CARevenueDistributionStatusTxt` |  | |  | `cast( ddtext as rdstat_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARevenueDistributionStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as rdstat_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CARevenueDistributionStatusTxt` |  | |  | `cast( ddtext as rdstat_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

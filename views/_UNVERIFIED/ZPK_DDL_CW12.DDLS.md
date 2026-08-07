@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `airline_id` | ✓ | |  | `carrid` |
-| `airline_name` |  | |  | `carrname` |
-| `curr_code` |  | |  | `currcode` |
-| `website` |  | |  | `url` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `airline_id` | ✓ | |  | `carrid` |  |  |
+| `airline_name` |  | |  | `carrname` |  |  |
+| `curr_code` |  | |  | `currcode` |  |  |
+| `website` |  | |  | `url` |  |  |
 
 ## Source Code
 

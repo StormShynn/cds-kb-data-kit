@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionResultAttribute` | ✓ | |  | `attribut` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionResultAttributeText` |  | |  | `kurztext` |
-| `_Language` | | ✓ | | |
-| `_InspectionResultAttribute` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionResultAttribute` | ✓ | |  | `attribut` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionResultAttributeText` |  | |  | `kurztext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspectionResultAttribute` | | ✓ | | | | |
 
 ## Associations
 

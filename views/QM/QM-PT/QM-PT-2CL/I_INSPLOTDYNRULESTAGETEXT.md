@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspLotDynamicRule` | ✓ | |  | `cast( dynregel as vdm_qdynregel preserving type )` |
-| `InspLotDynRuleStage` | ✓ | |  | `prstufe` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspLotDynRuleStageText` |  | |  | `kurztext` |
-| `_Language` | | ✓ | | |
-| `_InspLotDynamicRule` | | ✓ | | |
-| `_InspLotDynRuleStage` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspLotDynamicRule` | ✓ | |  | `cast( dynregel as vdm_qdynregel preserving type )` |  |  |
+| `InspLotDynRuleStage` | ✓ | |  | `prstufe` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspLotDynRuleStageText` |  | |  | `kurztext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspLotDynamicRule` | | ✓ | | | | |
+| `_InspLotDynRuleStage` | | ✓ | | | | |
 
 ## Associations
 

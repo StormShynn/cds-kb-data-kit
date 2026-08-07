@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `ChartOfAccounts` | ✓ | |  | `cast( _Source.ChartOfAccounts as fincs_chartofaccounts preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast( _Source.ChartOfAccountsName as fincs_description_text_50 preserving type )` |
-| `ChartOfAccountsName` |  | |  | `cast( _Source.ChartOfAccountsName as fincs_chartofaccountsname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `ChartOfAccounts` | ✓ | |  | `cast( _Source.ChartOfAccounts as fincs_chartofaccounts preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.ChartOfAccountsName as fincs_description_text_50 preserving type )` |  |  |
+| `ChartOfAccountsName` |  | |  | `cast( _Source.ChartOfAccountsName as fincs_chartofaccountsname preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
 
 ## Associations
 

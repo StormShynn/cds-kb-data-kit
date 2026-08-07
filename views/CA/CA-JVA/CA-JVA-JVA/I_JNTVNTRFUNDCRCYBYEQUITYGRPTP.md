@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JointVenture` | ✓ | |  |  |
-| `JointVentureEquityGroup` | ✓ | |  |  |
-| `JointVentureFundingCrcy` | ✓ | |  |  |
-| `HouseBank` |  | |  |  |
-| `HouseBankAccount` |  | |  |  |
-| `JntVntrFundingGroup` |  | |  |  |
-| `JVAVentureIntrstCalcGrpID` |  | |  |  |
-| `_JointVentureEquityGroup` | | ✓ | | |
-| `_JointVenture` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JointVenture` | ✓ | |  |  |  |  |
+| `JointVentureEquityGroup` | ✓ | |  |  |  |  |
+| `JointVentureFundingCrcy` | ✓ | |  |  |  |  |
+| `HouseBank` |  | |  |  |  |  |
+| `HouseBankAccount` |  | |  |  |  |  |
+| `JntVntrFundingGroup` |  | |  |  |  |  |
+| `JVAVentureIntrstCalcGrpID` |  | |  |  |  |  |
+| `_JointVentureEquityGroup` | | ✓ | | | | |
+| `_JointVenture` | | ✓ | | | | |
 
 ## Source Code
 

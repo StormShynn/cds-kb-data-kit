@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgReferenceObject` | ✓ | |  | `refobjname` |
-| `CAReferenceObjectID` | ✓ | |  | `refobjvalue` |
-| `CAInvcgCreationDate` | ✓ | |  | `crdate` |
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |
-| `CAInvcgIsDocumentPosted` |  | |  | `invoiced` |
-| `CAInvcgIsDocumentSimulated` |  | |  | `simulated` |
-| `CAInvcgIsDocumentPreliminary` |  | |  | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` |
-| `CAReferenceObjectAddlText` |  | |  | `cast(refobjvalue2 as inv_refobjvalue2_gfn_kk preserving type)` |
-| `_CAInvcgReferenceObj` | | ✓ | | |
-| `_CAInvcgDocHeader` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgReferenceObject` | ✓ | |  | `refobjname` |  |  |
+| `CAReferenceObjectID` | ✓ | |  | `refobjvalue` |  |  |
+| `CAInvcgCreationDate` | ✓ | |  | `crdate` |  |  |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
+| `CAInvcgIsDocumentPosted` |  | |  | `invoiced` |  |  |
+| `CAInvcgIsDocumentSimulated` |  | |  | `simulated` |  |  |
+| `CAInvcgIsDocumentPreliminary` |  | |  | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` |  |  |
+| `CAReferenceObjectAddlText` |  | |  | `cast(refobjvalue2 as inv_refobjvalue2_gfn_kk preserving type)` |  |  |
+| `_CAInvcgReferenceObj` | | ✓ | | | | |
+| `_CAInvcgDocHeader` | | ✓ | | | | |
 
 ## Associations
 

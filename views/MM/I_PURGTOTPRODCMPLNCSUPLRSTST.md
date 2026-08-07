@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `PurgAggrgdProdCmplncSuplrSts` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_total_status_pcs )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PurgTotProdCmplncSuplrStsName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_total_status_pcs_dscr preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PurgAggrgdProdCmplncSuplrSts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `PurgAggrgdProdCmplncSuplrSts` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_total_status_pcs )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PurgTotProdCmplncSuplrStsName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_total_status_pcs_dscr preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PurgAggrgdProdCmplncSuplrSts` | | ✓ | | | | |
 
 ## Associations
 

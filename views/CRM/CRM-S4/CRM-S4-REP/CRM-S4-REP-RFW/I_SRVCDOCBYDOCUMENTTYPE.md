@@ -27,117 +27,117 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  |  |
-| `ServiceDocument` | ✓ | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceDocumentUUID` |  | |  |  |
-| `ServiceDocumentDescription` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `PricingProcedure` |  | |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ServiceTeam` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `ServiceEmployee` |  | |  |  |
-| `ContactPerson` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
-| `SoldToPartyCountry` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `ServiceDocumentStatus` |  | |  |  |
-| `ServiceDocumentHasError` |  | |  |  |
-| `ServiceDocBillingStatus` |  | |  |  |
-| `ServiceDocIsReleasedForBilling` |  | |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `ResponsibleServiceOrganization` |  | |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |
-| `ServiceDocumentCreationDate` |  | |  | `cast( cast(substring( cast(ServiceDocCreationDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |
-| `ServiceDocumentChangedDate` |  | |  | `cast( cast(substring( cast(ServiceDocChangedDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_changed_on )` |
-| `ServiceDocumentCreatedByUser` |  | |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |
-| `ServiceContractStartDateTime` |  | |  |  |
-| `ServiceContractEndDateTime` |  | |  |  |
-| `ServiceContractStartDate` |  | |  | `cast( cast(substring( cast(ServiceContractStartDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |
-| `ServiceContractEndDate` |  | |  | `cast( cast(substring( cast(ServiceContractEndDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `RequestedServiceStartDate` |  | |  | `cast( cast(substring( cast(RequestedServiceStartDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |
-| `RequestedServiceEndDate` |  | |  | `cast( cast(substring( cast(RequestedServiceEndDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_changed_on )` |
-| `BillingBlockReason` |  | |  |  |
-| `BusinessActivityCategory` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `Language` |  | |  |  |
-| `ServiceDocumentRejectionReason` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `ServiceDocumentIsReleased` |  | |  |  |
-| `ServiceDocumentIsRejected` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
-| `ServiceDefectSchema` |  | |  |  |
-| `ServiceDefectCategory` |  | |  |  |
-| `ServiceFirstResponseByDateTime` |  | |  |  |
-| `ServiceDueByDateTime` |  | |  |  |
-| `RecommendedServicePriority` |  | |  |  |
-| `ServiceDocumentUrgency` |  | |  |  |
-| `ServiceDocumentImpact` |  | |  |  |
-| `ServiceDocumentProblemCategory` |  | |  |  |
-| `ServiceReasonSchema` |  | |  |  |
-| `ServiceReasonCategory` |  | |  |  |
-| `ServiceConfirmationIsFinal` |  | |  |  |
-| `Region` |  | |  |  |
-| `ServiceRisk` |  | |  |  |
-| `_ActivityCategory` | | ✓ | | |
-| `_BillingBlockReason` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ServiceDocBillingStatus` | | ✓ | | |
-| `_ServiceDocHasError` | | ✓ | | |
-| `_ServiceDocumentPriority` | | ✓ | | |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_SrvcDocLifecycleStatus` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceEmployee` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceTeam` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_SrvcDocIsRelForBillgSts` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_ServiceDocumentIsOpen` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_FixedPrice` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesOrganizationOrgUnit` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_ServiceRisk` | | ✓ | | |
-| `_SrvcDocumentRejectionReason` | | ✓ | | |
-| `_ServiceDocProblemCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentType` | ✓ | |  |  |  |  |
+| `ServiceDocument` | ✓ | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceDocumentUUID` |  | |  |  |  |  |
+| `ServiceDocumentDescription` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ServiceTeam` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `ServiceEmployee` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `ServiceDocumentStatus` |  | |  |  |  |  |
+| `ServiceDocumentHasError` |  | |  |  |  |  |
+| `ServiceDocBillingStatus` |  | |  |  |  |  |
+| `ServiceDocIsReleasedForBilling` |  | |  |  |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `ResponsibleServiceOrganization` |  | |  |  |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocumentCreationDate` |  | |  | `cast( cast(substring( cast(ServiceDocCreationDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |  |  |
+| `ServiceDocumentChangedDate` |  | |  | `cast( cast(substring( cast(ServiceDocChangedDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_changed_on )` |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
+| `ServiceContractStartDateTime` |  | |  |  |  |  |
+| `ServiceContractEndDateTime` |  | |  |  |  |  |
+| `ServiceContractStartDate` |  | |  | `cast( cast(substring( cast(ServiceContractStartDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |  |  |
+| `ServiceContractEndDate` |  | |  | `cast( cast(substring( cast(ServiceContractEndDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `RequestedServiceStartDate` |  | |  | `cast( cast(substring( cast(RequestedServiceStartDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |  |  |
+| `RequestedServiceEndDate` |  | |  | `cast( cast(substring( cast(RequestedServiceEndDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_changed_on )` |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `BusinessActivityCategory` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `ServiceDocumentRejectionReason` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `ServiceDocumentIsReleased` |  | |  |  |  |  |
+| `ServiceDocumentIsRejected` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `ServiceDefectSchema` |  | |  |  |  |  |
+| `ServiceDefectCategory` |  | |  |  |  |  |
+| `ServiceFirstResponseByDateTime` |  | |  |  |  |  |
+| `ServiceDueByDateTime` |  | |  |  |  |  |
+| `RecommendedServicePriority` |  | |  |  |  |  |
+| `ServiceDocumentUrgency` |  | |  |  |  |  |
+| `ServiceDocumentImpact` |  | |  |  |  |  |
+| `ServiceDocumentProblemCategory` |  | |  |  |  |  |
+| `ServiceReasonSchema` |  | |  |  |  |  |
+| `ServiceReasonCategory` |  | |  |  |  |  |
+| `ServiceConfirmationIsFinal` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `ServiceRisk` |  | |  |  |  |  |
+| `_ActivityCategory` | | ✓ | | | | |
+| `_BillingBlockReason` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ServiceDocBillingStatus` | | ✓ | | | | |
+| `_ServiceDocHasError` | | ✓ | | | | |
+| `_ServiceDocumentPriority` | | ✓ | | | | |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceEmployee` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceTeam` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_SrvcDocIsRelForBillgSts` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_FixedPrice` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_ServiceRisk` | | ✓ | | | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | | | |
+| `_ServiceDocProblemCategory` | | ✓ | | | | |
 
 ## Associations
 

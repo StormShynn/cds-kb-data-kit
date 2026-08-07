@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintNotifDetectionCatalog` | ✓ | |  | `detectioncatalog` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintNotifDetectionCatalog` | ✓ | |  | `detectioncatalog` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

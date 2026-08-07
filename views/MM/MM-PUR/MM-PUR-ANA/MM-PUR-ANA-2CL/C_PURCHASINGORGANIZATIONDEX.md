@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingOrganization` | ✓ | |  |  |
-| `PurchasingOrganizationName` |  | |  |  |
-| `CompanyCode` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `PurchasingOrganizationName` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
 
 ## Source Code
 

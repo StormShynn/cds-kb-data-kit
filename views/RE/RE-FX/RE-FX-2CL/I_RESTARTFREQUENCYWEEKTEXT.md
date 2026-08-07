@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `REStartFrequencyWeek` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmweekfrom )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `REStartFrequencyWeekName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_REStartFrequencyWeek` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `REStartFrequencyWeek` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmweekfrom )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `REStartFrequencyWeekName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_REStartFrequencyWeek` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `IndustrySystemType` | ✓ | |  | `istype` |
-| `IndustrySystemName` |  | |  | `bez30` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `IndustrySystemType` | ✓ | |  | `istype` |  |  |
+| `IndustrySystemName` |  | |  | `bez30` |  |  |
 
 ## Source Code
 

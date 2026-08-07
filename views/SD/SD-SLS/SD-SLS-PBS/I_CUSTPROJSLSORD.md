@@ -28,39 +28,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerProject` | ✓ | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderType` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `HeaderBillingBlockReason` |  | |  |  |
-| `_CustProjSlsOrdItem` | | ✓ | | |
-| `_CustProjSlsOrdPartner` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_CustomerProject` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_CustomerAccountAssgmtGroup` | | ✓ | | |
-| `_HeaderBillingBlockReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerProject` | ✓ | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderType` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |  |  |
+| `_CustProjSlsOrdItem` | | ✓ | | | | |
+| `_CustProjSlsOrdPartner` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_CustomerProject` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | | | |
+| `_HeaderBillingBlockReason` | | ✓ | | | | |
 
 ## Associations
 

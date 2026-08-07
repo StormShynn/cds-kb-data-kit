@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InventorySpecialStockType` | ✓ | |  | `sobkz` |
-| `Language` | ✓ | |  | `spras` |
-| `InventorySpecialStockTypeName` |  | |  | `cast ( sotxt as nsdm_spcl_stock_type_name preserving type )` |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InventorySpecialStockType` | ✓ | |  | `sobkz` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `InventorySpecialStockTypeName` |  | |  | `cast ( sotxt as nsdm_spcl_stock_type_name preserving type )` |  |  |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

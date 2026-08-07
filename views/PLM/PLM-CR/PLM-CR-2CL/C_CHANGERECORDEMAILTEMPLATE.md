@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeRecordUUID` | ✓ | |  |  |
-| `ProcessRouteTask` | ✓ | | `_ProcessRouteTask` | `ProcessRouteTask` |
-| `ChangeRecord` |  | |  |  |
-| `ProcessRoute` |  | |  |  |
-| `ProcessRouteActivityArea` |  | |  |  |
-| `ChgRecordDescriptionText` |  | |  |  |
-| `ChangeRecordType` |  | |  |  |
-| `ChangeRecordTypeDesc` |  | | `_ChangeRecordTypeVH` | `ChangeRecordTypeDesc` |
-| `ChangeRecordStatus` |  | |  |  |
-| `ChangeRecordStatusDescription` |  | | `_UserStatusVH` | `ChangeRecordStatusDescription` |
-| `PersonFullName` |  | | `_ChangeRecordContactPerson` | `PersonFullName` |
-| `ChgRecdExpectedCompletionDate` |  | |  |  |
-| `ChgRecdAddlAttribDetailDesc` |  | |  | `ChangeRecordDetailDescription` |
-| `Partner` |  | |  |  |
-| `_ChangeRecordType` | | ✓ | | |
-| `_ChangeRecordTypeVH` | | ✓ | | |
-| `_UserStatusVH` | | ✓ | | |
-| `_ChangeRecordContactPerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeRecordUUID` | ✓ | |  |  |  |  |
+| `ProcessRouteTask` | ✓ | | `_ProcessRouteTask` | `ProcessRouteTask` |  |  |
+| `ChangeRecord` |  | |  |  |  |  |
+| `ProcessRoute` |  | |  |  |  |  |
+| `ProcessRouteActivityArea` |  | |  |  |  |  |
+| `ChgRecordDescriptionText` |  | |  |  |  |  |
+| `ChangeRecordType` |  | |  |  |  |  |
+| `ChangeRecordTypeDesc` |  | | `_ChangeRecordTypeVH` | `ChangeRecordTypeDesc` |  |  |
+| `ChangeRecordStatus` |  | |  |  |  |  |
+| `ChangeRecordStatusDescription` |  | | `_UserStatusVH` | `ChangeRecordStatusDescription` |  |  |
+| `PersonFullName` |  | | `_ChangeRecordContactPerson` | `PersonFullName` |  |  |
+| `ChgRecdExpectedCompletionDate` |  | |  |  |  |  |
+| `ChgRecdAddlAttribDetailDesc` |  | |  | `ChangeRecordDetailDescription` |  |  |
+| `Partner` |  | |  |  |  |  |
+| `_ChangeRecordType` | | ✓ | | | | |
+| `_ChangeRecordTypeVH` | | ✓ | | | | |
+| `_UserStatusVH` | | ✓ | | | | |
+| `_ChangeRecordContactPerson` | | ✓ | | | | |
 
 ## Associations
 

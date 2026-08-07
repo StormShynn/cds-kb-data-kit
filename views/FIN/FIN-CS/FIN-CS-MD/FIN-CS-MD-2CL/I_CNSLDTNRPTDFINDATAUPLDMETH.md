@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnRptdFinDataUploadMethod` | ✓ | |  | `cast ( _Source.meth as fincs_rptdfindatauploadmethod preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnRptdFinDataUploadMethod` | ✓ | |  | `cast ( _Source.meth as fincs_rptdfindatauploadmethod preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UnitOfMeasureDimension` | ✓ | |  | `dimid` |
-| `LengthExponent` |  | |  | `leng` |
-| `MassExponent` |  | |  | `mass` |
-| `TimeExponent` |  | |  | `timex` |
-| `ElectricCurrentExponent` |  | |  | `ecurr` |
-| `TemperatureExponent` |  | |  | `temp` |
-| `MoleQuantityExponent` |  | |  | `molqu` |
-| `LuminosityExponent` |  | |  | `light` |
-| `UnitOFMeasureSiUnit` |  | |  | `mssie` |
-| `HasUnitsWithTemperatureSpec` |  | |  | `temp_dep` |
-| `HasUnitsWithPressureSpec` |  | |  | `press_dep` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UnitOfMeasureDimension` | ✓ | |  | `dimid` |  |  |
+| `LengthExponent` |  | |  | `leng` |  |  |
+| `MassExponent` |  | |  | `mass` |  |  |
+| `TimeExponent` |  | |  | `timex` |  |  |
+| `ElectricCurrentExponent` |  | |  | `ecurr` |  |  |
+| `TemperatureExponent` |  | |  | `temp` |  |  |
+| `MoleQuantityExponent` |  | |  | `molqu` |  |  |
+| `LuminosityExponent` |  | |  | `light` |  |  |
+| `UnitOFMeasureSiUnit` |  | |  | `mssie` |  |  |
+| `HasUnitsWithTemperatureSpec` |  | |  | `temp_dep` |  |  |
+| `HasUnitsWithPressureSpec` |  | |  | `press_dep` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

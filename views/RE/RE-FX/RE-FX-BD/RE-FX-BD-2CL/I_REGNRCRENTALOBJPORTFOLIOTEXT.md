@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REGnrcRentalObjPortfolioID` | ✓ | |  | `portfolioid` |
-| `Language` | ✓ | |  | `spras` |
-| `REGnrcRentalObjPortfolioIDText` |  | |  | `description` |
-| `_REGnrcRentalObjPortfolio` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REGnrcRentalObjPortfolioID` | ✓ | |  | `portfolioid` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `REGnrcRentalObjPortfolioIDText` |  | |  | `description` |  |  |
+| `_REGnrcRentalObjPortfolio` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

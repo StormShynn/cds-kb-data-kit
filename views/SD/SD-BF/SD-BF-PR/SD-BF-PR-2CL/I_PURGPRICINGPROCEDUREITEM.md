@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionUsage` | ✓ | |  |  |
-| `ConditionApplication` | ✓ | |  |  |
-| `PricingProcedure` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionType` |  | |  |  |
-| `PrcgProcedItemFromRefStep` |  | |  |  |
-| `PrcgProcedItemToRefStep` |  | |  |  |
-| `ConditionIsManuallyDtmnd` |  | |  |  |
-| `PrcgProcedItemSubtotal` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `AccountKeyForGLAccount` |  | |  |  |
-| `AcctKeyForAccrualsGLAccount` |  | |  |  |
-| `PricingProcedureItemPrintType` |  | |  |  |
-| `ConditionIsMandatory` |  | |  |  |
-| `CndnIsAcctDetnRelevant` |  | |  |  |
-| `InclusionPointFromToIsCopied` |  | |  |  |
-| `_ConditionUsage` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
-| `_ConditionType` | | ✓ | | |
-| `_PrcgProcedItemPrntType` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_PurchasingPricingProcedure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  |  |  |  |
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `PricingProcedure` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `PrcgProcedItemFromRefStep` |  | |  |  |  |  |
+| `PrcgProcedItemToRefStep` |  | |  |  |  |  |
+| `ConditionIsManuallyDtmnd` |  | |  |  |  |  |
+| `PrcgProcedItemSubtotal` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |  |  |
+| `AcctKeyForAccrualsGLAccount` |  | |  |  |  |  |
+| `PricingProcedureItemPrintType` |  | |  |  |  |  |
+| `ConditionIsMandatory` |  | |  |  |  |  |
+| `CndnIsAcctDetnRelevant` |  | |  |  |  |  |
+| `InclusionPointFromToIsCopied` |  | |  |  |  |  |
+| `_ConditionUsage` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_ConditionType` | | ✓ | | | | |
+| `_PrcgProcedItemPrntType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_PurchasingPricingProcedure` | | ✓ | | | | |
 
 ## Associations
 

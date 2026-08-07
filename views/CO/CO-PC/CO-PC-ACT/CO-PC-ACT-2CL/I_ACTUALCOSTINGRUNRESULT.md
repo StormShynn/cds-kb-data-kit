@@ -28,38 +28,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostEstimate` | ✓ | |  |  |
-| `CurrencyRole` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `MaterialLedgerCategory` | ✓ | |  |  |
-| `ProcessCategory` | ✓ | |  |  |
-| `ValuationArea` |  | |  |  |
-| `Material` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `MaterialLedgerCategoryText` |  | |  |  |
-| `ProcessCategoryName` |  | |  |  |
-| `InventorySpecialStockTypeName` |  | |  |  |
-| `TotalVltdStockQuantity` |  | |  |  |
-| `ValuationQuantityUnit` |  | |  |  |
-| `InventoryAmtInDspCrcy` |  | |  |  |
-| `InvtryTransacAmtInDisplayCrcy` |  | |  |  |
-| `PriceDiffAmtInDisplayCrcy` |  | |  |  |
-| `ExchRateDiffAmtInDspCurrency` |  | |  |  |
-| `Currency` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ControllingValuationType` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_QuantityUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostEstimate` | ✓ | |  |  |  |  |
+| `CurrencyRole` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `MaterialLedgerCategory` | ✓ | |  |  |  |  |
+| `ProcessCategory` | ✓ | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `MaterialLedgerCategoryText` |  | |  |  |  |  |
+| `ProcessCategoryName` |  | |  |  |  |  |
+| `InventorySpecialStockTypeName` |  | |  |  |  |  |
+| `TotalVltdStockQuantity` |  | |  |  |  |  |
+| `ValuationQuantityUnit` |  | |  |  |  |  |
+| `InventoryAmtInDspCrcy` |  | |  |  |  |  |
+| `InvtryTransacAmtInDisplayCrcy` |  | |  |  |  |  |
+| `PriceDiffAmtInDisplayCrcy` |  | |  |  |  |  |
+| `ExchRateDiffAmtInDspCurrency` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ControllingValuationType` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_QuantityUnit` | | ✓ | | | | |
 
 ## Associations
 

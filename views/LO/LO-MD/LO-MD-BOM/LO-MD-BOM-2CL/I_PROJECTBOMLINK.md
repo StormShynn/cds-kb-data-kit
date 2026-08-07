@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WBSElementInternalID` | ✓ | |  | `pspnr` |
-| `Material` | ✓ | |  | `matnr` |
-| `Plant` | ✓ | |  | `werks` |
-| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
-| `BillOfMaterial` | ✓ | |  | `stlnr` |
-| `BillOfMaterialVariant` | ✓ | |  | `stlal` |
-| `BillOfMaterialCategory` |  | |  | `cast ('P' as stlty preserving type)` |
-| `_BillOfMaterialUsage` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WBSElementInternalID` | ✓ | |  | `pspnr` |  |  |
+| `Material` | ✓ | |  | `matnr` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |  |  |
+| `BillOfMaterial` | ✓ | |  | `stlnr` |  |  |
+| `BillOfMaterialVariant` | ✓ | |  | `stlal` |  |  |
+| `BillOfMaterialCategory` |  | |  | `cast ('P' as stlty preserving type)` |  |  |
+| `_BillOfMaterialUsage` | | ✓ | | | | |
 
 ## Associations
 

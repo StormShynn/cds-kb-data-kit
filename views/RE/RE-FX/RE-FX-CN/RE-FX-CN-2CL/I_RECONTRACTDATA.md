@@ -29,90 +29,90 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InternalRealEstateNumber` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `RealEstateContract` |  | |  |  |
-| `REStatusObject` |  | |  |  |
-| `REInternalFinNumber` |  | |  |  |
-| `RECreationType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `RESourceOfCreation` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `RESourceOfChange` |  | |  |  |
-| `Responsible` |  | |  |  |
-| `REUserExclusive` |  | |  |  |
-| `REAuthorizationGroup` |  | |  |  |
-| `REContractType` |  | |  |  |
-| `ContractStartDate` |  | |  |  |
-| `ContractEndDate` |  | |  |  |
-| `REContractName` |  | |  |  |
-| `REContractActivateDate` |  | |  |  |
-| `RETenancyLaw` |  | |  |  |
-| `REContractNumberOld` |  | |  |  |
-| `REMainContractCompanyCode` |  | |  |  |
-| `REMainContract` |  | |  |  |
-| `REContractCurrency` |  | |  |  |
-| `REIndustrySector` |  | |  |  |
-| `REIsSalesRelevant` |  | |  |  |
-| `REContractDepositType` |  | |  |  |
-| `REContractSignDate` |  | |  |  |
-| `REContract2SignDate` |  | |  |  |
-| `REContractCashFlowDate` |  | |  |  |
-| `REContractFirstEndDate` |  | |  |  |
-| `REContractNoticeDate` |  | |  |  |
-| `REContractNoticeInDate` |  | |  |  |
-| `REContractNoticeReason` |  | |  |  |
-| `REContractNoticeActivationDate` |  | |  |  |
-| `RECashFlowArchivedToDate` |  | |  |  |
-| `RECashFlowLockedToDate` |  | |  |  |
-| `RECashFlowPostingFromDate` |  | |  |  |
-| `REBusinessEntity` |  | |  |  |
-| `REObjectAvailableFromDate` |  | |  |  |
-| `REObjectAvailableToDate` |  | |  |  |
-| `REHasMultipleAssignments` |  | |  |  |
-| `REPossessionStartDate` |  | |  |  |
-| `REPossessionEndDate` |  | |  |  |
-| `ValuationRelevance` |  | |  |  |
-| `RealEstateObjectType` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_MainContractCompanyCode` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_ChangedByUser` | | ✓ | | |
-| `_ResponsibleUser` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_REIndustry` | | ✓ | | |
-| `_RECreationType` | | ✓ | | |
-| `_REContractType` | | ✓ | | |
-| `_RETenancyLaw` | | ✓ | | |
-| `_REContractDepositType` | | ✓ | | |
-| `_REContractNoticeReason` | | ✓ | | |
-| `_REAuthorizationGroup` | | ✓ | | |
-| `_REValuationRelevance` | | ✓ | | |
-| `_REKeyAssgmt` | | ✓ | | |
-| `_StatusObject` | | ✓ | | |
-| `_StatusObjectStatus` | | ✓ | | |
-| `_REObjectType` | | ✓ | | |
-| `_REPartnerAssgmt` | | ✓ | | |
-| `_REObjectAssgmt` | | ✓ | | |
-| `_RERenewalTerm` | | ✓ | | |
-| `_RENoticeTerm` | | ✓ | | |
-| `_REOrganizationalAssgmtTerm` | | ✓ | | |
-| `_REPostingTerm` | | ✓ | | |
-| `_RERhythmTerm` | | ✓ | | |
-| `_RECondition` | | ✓ | | |
-| `_REReminderRule` | | ✓ | | |
-| `_REValuationTerm` | | ✓ | | |
-| `_REValuationRuleCondition` | | ✓ | | |
-| `_REAdjustmentTerm` | | ✓ | | |
-| `_RESalesRuleTerm` | | ✓ | | |
-| `_RESalesReportingTerm` | | ✓ | | |
-| `_RESalesRuleFrqcyTerm` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `RealEstateContract` |  | |  |  |  |  |
+| `REStatusObject` |  | |  |  |  |  |
+| `REInternalFinNumber` |  | |  |  |  |  |
+| `RECreationType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `RESourceOfCreation` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `RESourceOfChange` |  | |  |  |  |  |
+| `Responsible` |  | |  |  |  |  |
+| `REUserExclusive` |  | |  |  |  |  |
+| `REAuthorizationGroup` |  | |  |  |  |  |
+| `REContractType` |  | |  |  |  |  |
+| `ContractStartDate` |  | |  |  |  |  |
+| `ContractEndDate` |  | |  |  |  |  |
+| `REContractName` |  | |  |  |  |  |
+| `REContractActivateDate` |  | |  |  |  |  |
+| `RETenancyLaw` |  | |  |  |  |  |
+| `REContractNumberOld` |  | |  |  |  |  |
+| `REMainContractCompanyCode` |  | |  |  |  |  |
+| `REMainContract` |  | |  |  |  |  |
+| `REContractCurrency` |  | |  |  |  |  |
+| `REIndustrySector` |  | |  |  |  |  |
+| `REIsSalesRelevant` |  | |  |  |  |  |
+| `REContractDepositType` |  | |  |  |  |  |
+| `REContractSignDate` |  | |  |  |  |  |
+| `REContract2SignDate` |  | |  |  |  |  |
+| `REContractCashFlowDate` |  | |  |  |  |  |
+| `REContractFirstEndDate` |  | |  |  |  |  |
+| `REContractNoticeDate` |  | |  |  |  |  |
+| `REContractNoticeInDate` |  | |  |  |  |  |
+| `REContractNoticeReason` |  | |  |  |  |  |
+| `REContractNoticeActivationDate` |  | |  |  |  |  |
+| `RECashFlowArchivedToDate` |  | |  |  |  |  |
+| `RECashFlowLockedToDate` |  | |  |  |  |  |
+| `RECashFlowPostingFromDate` |  | |  |  |  |  |
+| `REBusinessEntity` |  | |  |  |  |  |
+| `REObjectAvailableFromDate` |  | |  |  |  |  |
+| `REObjectAvailableToDate` |  | |  |  |  |  |
+| `REHasMultipleAssignments` |  | |  |  |  |  |
+| `REPossessionStartDate` |  | |  |  |  |  |
+| `REPossessionEndDate` |  | |  |  |  |  |
+| `ValuationRelevance` |  | |  |  |  |  |
+| `RealEstateObjectType` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MainContractCompanyCode` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_ResponsibleUser` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_REIndustry` | | ✓ | | | | |
+| `_RECreationType` | | ✓ | | | | |
+| `_REContractType` | | ✓ | | | | |
+| `_RETenancyLaw` | | ✓ | | | | |
+| `_REContractDepositType` | | ✓ | | | | |
+| `_REContractNoticeReason` | | ✓ | | | | |
+| `_REAuthorizationGroup` | | ✓ | | | | |
+| `_REValuationRelevance` | | ✓ | | | | |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_StatusObject` | | ✓ | | | | |
+| `_StatusObjectStatus` | | ✓ | | | | |
+| `_REObjectType` | | ✓ | | | | |
+| `_REPartnerAssgmt` | | ✓ | | | | |
+| `_REObjectAssgmt` | | ✓ | | | | |
+| `_RERenewalTerm` | | ✓ | | | | |
+| `_RENoticeTerm` | | ✓ | | | | |
+| `_REOrganizationalAssgmtTerm` | | ✓ | | | | |
+| `_REPostingTerm` | | ✓ | | | | |
+| `_RERhythmTerm` | | ✓ | | | | |
+| `_RECondition` | | ✓ | | | | |
+| `_REReminderRule` | | ✓ | | | | |
+| `_REValuationTerm` | | ✓ | | | | |
+| `_REValuationRuleCondition` | | ✓ | | | | |
+| `_REAdjustmentTerm` | | ✓ | | | | |
+| `_RESalesRuleTerm` | | ✓ | | | | |
+| `_RESalesReportingTerm` | | ✓ | | | | |
+| `_RESalesRuleFrqcyTerm` | | ✓ | | | | |
 
 ## Associations
 

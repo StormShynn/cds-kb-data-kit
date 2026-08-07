@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContactPersonDepartment` | ✓ | |  | `abtnr` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContactPersonDepartment` | ✓ | |  | `abtnr` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

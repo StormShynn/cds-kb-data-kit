@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrder` | ✓ | |  |  |
-| `ServiceOrderItem` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `SrvcDocLogTextIdentifier` | ✓ | |  |  |
-| `TextObjectCategory` |  | |  |  |
-| `SrvcDocLongTextMimeType` |  | |  |  |
-| `ServiceOrderItemLongText` |  | |  |  |
-| `ReferenceTextObjectCategory` |  | |  |  |
-| `ReferenceTextObjectType` |  | |  |  |
-| `ReferenceLongTextKey` |  | |  |  |
-| `ReferenceServiceObjectType` |  | |  |  |
-| `ReferenceServiceDocument` |  | |  |  |
-| `ReferenceServiceDocumentItem` |  | |  |  |
-| `SrvcDocLongTxtCreationDateTime` |  | |  |  |
-| `SrvcDocLongTextCreatedByUser` |  | |  |  |
-| `SrvcDocLongTextChangedDateTime` |  | |  |  |
-| `SrvcDocLongTextChangedByUser` |  | |  |  |
-| `_Language` | | ✓ | | |
-| `_ReferenceTextObjectCategory` | | ✓ | | |
-| `_ReferenceTextObjectType` | | ✓ | | |
-| `_TextObjectCategory` | | ✓ | | |
-| `_TextObjectType` | | ✓ | | |
-| `_ServiceOrderItemTP` | | ✓ | | |
-| `_ServiceOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `SrvcDocLogTextIdentifier` | ✓ | |  |  |  |  |
+| `TextObjectCategory` |  | |  |  |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |  |  |
+| `ServiceOrderItemLongText` |  | |  |  |  |  |
+| `ReferenceTextObjectCategory` |  | |  |  |  |  |
+| `ReferenceTextObjectType` |  | |  |  |  |  |
+| `ReferenceLongTextKey` |  | |  |  |  |  |
+| `ReferenceServiceObjectType` |  | |  |  |  |  |
+| `ReferenceServiceDocument` |  | |  |  |  |  |
+| `ReferenceServiceDocumentItem` |  | |  |  |  |  |
+| `SrvcDocLongTxtCreationDateTime` |  | |  |  |  |  |
+| `SrvcDocLongTextCreatedByUser` |  | |  |  |  |  |
+| `SrvcDocLongTextChangedDateTime` |  | |  |  |  |  |
+| `SrvcDocLongTextChangedByUser` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ReferenceTextObjectCategory` | | ✓ | | | | |
+| `_ReferenceTextObjectType` | | ✓ | | | | |
+| `_TextObjectCategory` | | ✓ | | | | |
+| `_TextObjectType` | | ✓ | | | | |
+| `_ServiceOrderItemTP` | | ✓ | | | | |
+| `_ServiceOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

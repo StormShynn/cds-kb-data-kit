@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentDate` |  | |  | `fkdat` |
-| `BillingDocumentType` |  | |  | `fkart` |
-| `D_BillgDocCrteFrmBillgDocRefIP` |  | |  | `_Reference : composition [1..*] of D_BillgDocCrteFrmBillgDocRefIP` |
-| `D_BlgDcCrteFrmBillgDocCtrlIP` |  | |  | `_Control : composition [0..1] of D_BlgDcCrteFrmBillgDocCtrlIP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentDate` |  | |  | `fkdat` |  |  |
+| `BillingDocumentType` |  | |  | `fkart` |  |  |
+| `D_BillgDocCrteFrmBillgDocRefIP` |  | |  | `_Reference : composition [1..*] of D_BillgDocCrteFrmBillgDocRefIP` |  |  |
+| `D_BlgDcCrteFrmBillgDocCtrlIP` |  | |  | `_Control : composition [0..1] of D_BlgDcCrteFrmBillgDocCtrlIP` |  |  |
 
 ## Source Code
 

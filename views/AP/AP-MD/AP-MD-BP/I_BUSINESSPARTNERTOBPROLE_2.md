@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `mandt` |  | |  |  |
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BusinessPartnerRole` | ✓ | |  | `rltyp` |
-| `BusinessPartnerDiffTypeValue` | ✓ | |  | `dfval` |
-| `ValidFrom` |  | |  | `valid_from` |
-| `ValidTo` |  | |  | `valid_to` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartnerRole` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_BusinessPartnerDiffValue` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `mandt` |  | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BusinessPartnerRole` | ✓ | |  | `rltyp` |  |  |
+| `BusinessPartnerDiffTypeValue` | ✓ | |  | `dfval` |  |  |
+| `ValidFrom` |  | |  | `valid_from` |  |  |
+| `ValidTo` |  | |  | `valid_to` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartnerRole` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BusinessPartnerDiffValue` | | ✓ | | | | |
 
 ## Associations
 

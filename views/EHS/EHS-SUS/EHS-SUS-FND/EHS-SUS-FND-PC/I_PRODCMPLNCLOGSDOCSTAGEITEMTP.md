@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |
-| `ProdCmplncLogsDocumentStage` | ✓ | |  |  |
-| `ProdCmplncLogsDocumentItem` | ✓ | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ProdCmplncLogicalTransportUnit` |  | |  |  |
-| `_Document` | | ✓ | | |
-| `_Item` | | ✓ | | |
-| `_Stage` | | ✓ | | |
-| `_EUADR` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |  |  |
+| `ProdCmplncLogsDocumentStage` | ✓ | |  |  |  |  |
+| `ProdCmplncLogsDocumentItem` | ✓ | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ProdCmplncLogicalTransportUnit` |  | |  |  |  |  |
+| `_Document` | | ✓ | | | | |
+| `_Item` | | ✓ | | | | |
+| `_Stage` | | ✓ | | | | |
+| `_EUADR` | | ✓ | | | | |
 
 ## Source Code
 

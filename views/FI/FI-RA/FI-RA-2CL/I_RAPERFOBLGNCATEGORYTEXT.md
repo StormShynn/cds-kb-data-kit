@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
-| `RAPerfOblgnCategory` | ✓ | |  | `cast(dd07t.domvalue_l as farr_cds_pob_category)` |
-| `RAPerfOblgnCategoryName` |  | |  | `ddtext` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_RAPerfOblgnCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |  |  |
+| `RAPerfOblgnCategory` | ✓ | |  | `cast(dd07t.domvalue_l as farr_cds_pob_category)` |  |  |
+| `RAPerfOblgnCategoryName` |  | |  | `ddtext` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_RAPerfOblgnCategory` | | ✓ | | | | |
 
 ## Associations
 

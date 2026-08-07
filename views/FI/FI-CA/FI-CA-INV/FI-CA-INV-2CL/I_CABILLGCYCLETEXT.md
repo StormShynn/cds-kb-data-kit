@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgCycle` | ✓ | | `_tfk2607t` | `cycle` |
-| `Language` | ✓ | | `_tfk2607t` | `langu` |
-| `CABillgCycleText` |  | | `_tfk2607t` | `text` |
-| `_CABillgCycle` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgCycle` | ✓ | | `_tfk2607t` | `cycle` |  |  |
+| `Language` | ✓ | | `_tfk2607t` | `langu` |  |  |
+| `CABillgCycleText` |  | | `_tfk2607t` | `text` |  |  |
+| `_CABillgCycle` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

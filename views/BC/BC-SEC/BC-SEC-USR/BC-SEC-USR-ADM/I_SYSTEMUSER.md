@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserID` | ✓ | |  | `cast( _usr02.bname as vdm_userid preserving type )` |
-| `UserDescription` |  | |  | `cast( _usr21.techdesc as vdm_userdescription preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserID` | ✓ | |  | `cast( _usr02.bname as vdm_userid preserving type )` |  |  |
+| `UserDescription` |  | |  | `cast( _usr21.techdesc as vdm_userdescription preserving type )` |  |  |
 
 ## Source Code
 

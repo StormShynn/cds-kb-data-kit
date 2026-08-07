@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `ConsolidationChartOfAccounts` | ✓ | |  |  |
-| `ConsolidationBreakdownCategory` |  | |  | `}] key cast(ConsolidationBreakdownCategory as fincs_breakdowncategory preserving type )` |
-| `CnsldtnBreakdownCategoryText` |  | |  | `cast(CnsldtnBreakdownCategoryText as fincs_breakdowncategory_text preserving type )` |
-| `_BreakdownCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `ConsolidationChartOfAccounts` | ✓ | |  |  |  |  |
+| `ConsolidationBreakdownCategory` | ✓ | |  | `cast(ConsolidationBreakdownCategory as fincs_breakdowncategory preserving type )` |  |  |
+| `CnsldtnBreakdownCategoryText` |  | |  | `cast(CnsldtnBreakdownCategoryText as fincs_breakdowncategory_text preserving type )` |  |  |
+| `_BreakdownCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
 
 ## Associations
 

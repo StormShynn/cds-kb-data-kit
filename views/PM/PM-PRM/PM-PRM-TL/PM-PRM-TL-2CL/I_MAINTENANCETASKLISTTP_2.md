@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  |  |
-| `TaskListGroup` | ✓ | |  |  |
-| `TaskListGroupCounter` | ✓ | |  |  |
-| `BillOfOperationsVersionType` |  | |  |  |
-| `BillOfOperationsSubtype` |  | |  |  |
-| `LastUsageDate` |  | |  |  |
-| `NumberOfUsages` |  | |  |  |
-| `HasChangeNumber` |  | |  |  |
-| `HasParameterEffectivity` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `RoutingIsReworkRouting` |  | |  |  |
-| `ProdnProcgIsFlexible` |  | |  |  |
-| `_TaskList` | | ✓ | | |
-| `_NonHistOp` | | ✓ | | |
-| `_LongText` | | ✓ | | |
-| `_MaintPackage` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |  |  |
+| `TaskListGroup` | ✓ | |  |  |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |  |  |
+| `BillOfOperationsVersionType` |  | |  |  |  |  |
+| `BillOfOperationsSubtype` |  | |  |  |  |  |
+| `LastUsageDate` |  | |  |  |  |  |
+| `NumberOfUsages` |  | |  |  |  |  |
+| `HasChangeNumber` |  | |  |  |  |  |
+| `HasParameterEffectivity` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `RoutingIsReworkRouting` |  | |  |  |  |  |
+| `ProdnProcgIsFlexible` |  | |  |  |  |  |
+| `_TaskList` | | ✓ | | | | |
+| `_NonHistOp` | | ✓ | | | | |
+| `_LongText` | | ✓ | | | | |
+| `_MaintPackage` | | ✓ | | | | |
 
 ## Source Code
 

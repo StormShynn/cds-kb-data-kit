@@ -29,131 +29,131 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  | `ServiceDocument` |
-| `ServiceContractItem` | ✓ | |  | `ServiceDocumentItem` |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceContractItemCategory` |  | |  | `ServiceDocItemCategory` |
-| `ServiceContractDescription` |  | |  | `ServiceDocumentDescription` |
-| `ServiceDocumentType` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServiceContractItemUUID` |  | |  | `ServiceDocumentItemUUID` |
-| `ServiceContractItemCharUUID` |  | |  | `cast( ServiceDocumentItemCharUUID as sysuuid_c preserving type )` |
-| `ServiceDocumentItemObjectType` |  | |  |  |
-| `ServiceContractUUID` |  | |  | `ServiceDocumentUUID` |
-| `ServiceContractItemDescription` |  | |  | `ServiceDocumentItemDescription` |
-| `Language` |  | |  |  |
-| `ServiceDocItemCreationDateTime` |  | |  |  |
-| `ServiceDocItemChangedDateTime` |  | |  |  |
-| `ServiceDocItemCreatedByUser` |  | |  |  |
-| `ServiceDocItemChangedByUser` |  | |  |  |
-| `Product` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ProfitCenterDeterminationDate` |  | |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |
-| `RefBusinessSolutionOrderItem` |  | |  |  |
-| `ServiceContractItemQuantity` |  | |  | `} ServiceDocumentItemQuantity` |
-| `ServiceContrItemQuantityUnit` |  | |  | `ServiceDocItemQuantityUnit` |
-| `BillingPlanTimeZone` |  | |  |  |
-| `BillingPriceSourceName` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SoldToPartyCountry` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  | `cast( ResponsibleEmployee as crmt_person_resp preserving type )` |
-| `ServiceEmployee` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  | `cast( ContactPerson as crmt_contact_person preserving type )` |
-| `PayerParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `ServiceContractItemStatus` |  | |  | `ServiceDocumentItemStatus` |
-| `ServiceContractItemHasError` |  | |  | `ServiceDocumentItemHasError` |
-| `ServiceContrItemBillingStatus` |  | |  | `ServiceDocItemBillingStatus` |
-| `ServiceDocumentItemIsOpen` |  | |  |  |
-| `ServiceContractItemIsReleased` |  | |  | `ServiceDocumentItemIsReleased` |
-| `ServiceContractItemIsRejected` |  | |  | `ServiceDocumentItemIsRejected` |
-| `SrvcDocItemTransferStatus` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `BillableControl` |  | |  |  |
-| `ServiceContractItemNetAmount` |  | |  | `} ServiceDocumentItemNetAmount` |
-| `ServiceDocumentItemTaxAmount` |  | |  | `} ServiceDocumentItemTaxAmount` |
-| `ServiceContractItemGrossAmount` |  | |  | `} ServiceDocItemGrossAmount` |
-| `BillingBlockReason` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `PurchaseOrderByShipToParty` |  | |  |  |
-| `SrvcContrItemRejectionReason` |  | |  | `ServiceDocItemRejectionReason` |
-| `SettlementPeriodRuleUUID` |  | |  |  |
-| `BillingPlanBillingDateRuleUUID` |  | |  |  |
-| `BillingPlanPriceDateRule` |  | |  |  |
-| `BillingPlanIsFinalized` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `ServiceContrItemStartDateTime` |  | |  |  |
-| `ServiceContrItemEndDateTime` |  | |  |  |
-| `SrvcContrItemRenewalDateTime` |  | |  |  |
-| `SrvcContrItemRnwlDuration` |  | |  | `} SrvcContrItemRnwlDuration` |
-| `SrvcContrItemRnwlDurationUnit` |  | |  |  |
-| `SrvcContrItemExtensionDuration` |  | |  | `} SrvcContrItemExtensionDuration` |
-| `SrvcContrItemExtnDurationUnit` |  | |  |  |
-| `ResponseProfile` |  | |  |  |
-| `ServiceProfile` |  | |  |  |
-| `SubscrpnContrTrmsAreSpecified` |  | |  |  |
-| `MidBillgCycExprtnIsAllowed` |  | |  |  |
-| `ServiceContractItemCanclnParty` |  | |  | `ServiceDocumentItemCanclnParty` |
-| `ServiceContractItmCanclnReason` |  | |  | `ServiceDocumentItmCanclnReason` |
-| `SrvcContrItmCanclnProcedure` |  | |  | `SrvcDocItmCanclnProcedure` |
-| `SrvcContrRenewalDuration` |  | |  | `} ServiceDocumentRnwlDuration` |
-| `SrvcContrRenewalDurationUnit` |  | |  | `ServiceDocRnwlDurationUnit` |
-| `SrvcContrExtensionDuration` |  | |  | `} ServiceDocExtensionDuration` |
-| `SrvcContrExtensionDurationUnit` |  | |  | `ServiceDocExtnDurationUnit` |
-| `SrvcContrItemCreditStatus` |  | |  | `SrvcDocItemCreditStatus` |
-| `WBSElementInternalID` |  | |  |  |
-| `SrvcDocItmPartReferenceItem` |  | |  |  |
-| `_ServiceContractItemCategory` |  | |  | `_ServiceDocItemCategory` |
-| `_ServiceContractItemHasError` |  | |  | `_ServiceDocItemHasError` |
-| `_ServiceContrItemBillingStatus` |  | |  | `_ServiceDocItemBillingStatus` |
-| `_SrvcContrItemRejectionReason` |  | |  | `_ServiceDocItemRejectionReason` |
-| `_SrvcContrItemCreditStatus` |  | |  | `_SrvcDocItemCreditStatus` |
-| `_ServiceContract` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_ServiceEmployee` | | ✓ | | |
-| `_ServiceDocumentIsOpen` | | ✓ | | |
-| `_SrvcDocItemTransferStatus` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_SrvcSEPAMandateRelevance` | | ✓ | | |
-| `_BillingBlockReason` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SrvcContrItemRnwlDurationUnit` | | ✓ | | |
-| `_SrvcContrItemExtnDurationUnit` | | ✓ | | |
-| `_ResponseProfile` | | ✓ | | |
-| `_ServiceProfile` | | ✓ | | |
-| `_BillableControl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  | `ServiceDocument` |  |  |
+| `ServiceContractItem` | ✓ | |  | `ServiceDocumentItem` |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceContractItemCategory` |  | |  | `ServiceDocItemCategory` |  |  |
+| `ServiceContractDescription` |  | |  | `ServiceDocumentDescription` |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceContractItemUUID` |  | |  | `ServiceDocumentItemUUID` |  |  |
+| `ServiceContractItemCharUUID` |  | |  | `cast( ServiceDocumentItemCharUUID as sysuuid_c preserving type )` |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
+| `ServiceContractUUID` |  | |  | `ServiceDocumentUUID` |  |  |
+| `ServiceContractItemDescription` |  | |  | `ServiceDocumentItemDescription` |  |  |
+| `Language` |  | |  |  |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ProfitCenterDeterminationDate` |  | |  |  |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |  |  |
+| `RefBusinessSolutionOrderItem` |  | |  |  |  |  |
+| `ServiceContractItemQuantity` |  | |  | `ServiceDocumentItemQuantity` |  |  |
+| `ServiceContrItemQuantityUnit` |  | |  | `ServiceDocItemQuantityUnit` |  |  |
+| `BillingPlanTimeZone` |  | |  |  |  |  |
+| `BillingPriceSourceName` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  | `cast( ResponsibleEmployee as crmt_person_resp preserving type )` |  |  |
+| `ServiceEmployee` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  | `cast( ContactPerson as crmt_contact_person preserving type )` |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `ServiceContractItemStatus` |  | |  | `ServiceDocumentItemStatus` |  |  |
+| `ServiceContractItemHasError` |  | |  | `ServiceDocumentItemHasError` |  |  |
+| `ServiceContrItemBillingStatus` |  | |  | `ServiceDocItemBillingStatus` |  |  |
+| `ServiceDocumentItemIsOpen` |  | |  |  |  |  |
+| `ServiceContractItemIsReleased` |  | |  | `ServiceDocumentItemIsReleased` |  |  |
+| `ServiceContractItemIsRejected` |  | |  | `ServiceDocumentItemIsRejected` |  |  |
+| `SrvcDocItemTransferStatus` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `BillableControl` |  | |  |  |  |  |
+| `ServiceContractItemNetAmount` |  | |  | `ServiceDocumentItemNetAmount` |  |  |
+| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
+| `ServiceContractItemGrossAmount` |  | |  | `ServiceDocItemGrossAmount` |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `PurchaseOrderByShipToParty` |  | |  |  |  |  |
+| `SrvcContrItemRejectionReason` |  | |  | `ServiceDocItemRejectionReason` |  |  |
+| `SettlementPeriodRuleUUID` |  | |  |  |  |  |
+| `BillingPlanBillingDateRuleUUID` |  | |  |  |  |  |
+| `BillingPlanPriceDateRule` |  | |  |  |  |  |
+| `BillingPlanIsFinalized` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `ServiceContrItemStartDateTime` |  | |  |  |  |  |
+| `ServiceContrItemEndDateTime` |  | |  |  |  |  |
+| `SrvcContrItemRenewalDateTime` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDuration` |  | |  |  |  |  |
+| `SrvcContrItemRnwlDurationUnit` |  | |  |  |  |  |
+| `SrvcContrItemExtensionDuration` |  | |  |  |  |  |
+| `SrvcContrItemExtnDurationUnit` |  | |  |  |  |  |
+| `ResponseProfile` |  | |  |  |  |  |
+| `ServiceProfile` |  | |  |  |  |  |
+| `SubscrpnContrTrmsAreSpecified` |  | |  |  |  |  |
+| `MidBillgCycExprtnIsAllowed` |  | |  |  |  |  |
+| `ServiceContractItemCanclnParty` |  | |  | `ServiceDocumentItemCanclnParty` |  |  |
+| `ServiceContractItmCanclnReason` |  | |  | `ServiceDocumentItmCanclnReason` |  |  |
+| `SrvcContrItmCanclnProcedure` |  | |  | `SrvcDocItmCanclnProcedure` |  |  |
+| `SrvcContrRenewalDuration` |  | |  | `ServiceDocumentRnwlDuration` |  |  |
+| `SrvcContrRenewalDurationUnit` |  | |  | `ServiceDocRnwlDurationUnit` |  |  |
+| `SrvcContrExtensionDuration` |  | |  | `ServiceDocExtensionDuration` |  |  |
+| `SrvcContrExtensionDurationUnit` |  | |  | `ServiceDocExtnDurationUnit` |  |  |
+| `SrvcContrItemCreditStatus` |  | |  | `SrvcDocItemCreditStatus` |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `SrvcDocItmPartReferenceItem` |  | |  |  |  |  |
+| `_ServiceContractItemCategory` |  | |  | `_ServiceDocItemCategory` |  |  |
+| `_ServiceContractItemHasError` |  | |  | `_ServiceDocItemHasError` |  |  |
+| `_ServiceContrItemBillingStatus` |  | |  | `_ServiceDocItemBillingStatus` |  |  |
+| `_SrvcContrItemRejectionReason` |  | |  | `_ServiceDocItemRejectionReason` |  |  |
+| `_SrvcContrItemCreditStatus` |  | |  | `_SrvcDocItemCreditStatus` |  |  |
+| `_ServiceContract` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_ServiceEmployee` | | ✓ | | | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | | | |
+| `_SrvcDocItemTransferStatus` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | | | |
+| `_BillingBlockReason` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SrvcContrItemRnwlDurationUnit` | | ✓ | | | | |
+| `_SrvcContrItemExtnDurationUnit` | | ✓ | | | | |
+| `_ResponseProfile` | | ✓ | | | | |
+| `_ServiceProfile` | | ✓ | | | | |
+| `_BillableControl` | | ✓ | | | | |
 
 ## Associations
 

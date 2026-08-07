@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanCalcDelInitCtns` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as loewg preserving type)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `KanbanCalcDelInitCtnsName` |  | |  | `cast(ddtext as vdm_delinitctns_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KnbnCalcDelInitialCtn` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanCalcDelInitCtns` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as loewg preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `KanbanCalcDelInitCtnsName` |  | |  | `cast(ddtext as vdm_delinitctns_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KnbnCalcDelInitialCtn` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

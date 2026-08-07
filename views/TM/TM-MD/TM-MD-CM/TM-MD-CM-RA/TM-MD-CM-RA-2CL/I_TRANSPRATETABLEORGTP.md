@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateTableOrgUUID` | ✓ | |  |  |
-| `TransportationRateTableUUID` |  | |  |  |
-| `TranspPurgOrgExtID` |  | |  |  |
-| `I_TransportationRateTableTP` |  | |  | `TranspRateTableOrganization._TransportationRateTable : redirected to parent I_TransportationRateTableTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateTableOrgUUID` | ✓ | |  |  |  |  |
+| `TransportationRateTableUUID` |  | |  |  |  |  |
+| `TranspPurgOrgExtID` |  | |  |  |  |  |
+| `I_TransportationRateTableTP` |  | |  | `TranspRateTableOrganization._TransportationRateTable : redirected to parent I_TransportationRateTableTP` |  |  |
 
 ## Source Code
 

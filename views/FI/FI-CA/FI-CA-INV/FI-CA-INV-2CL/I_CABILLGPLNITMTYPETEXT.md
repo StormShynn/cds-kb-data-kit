@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnItmType` | ✓ | |  | `bipitemtype` |
-| `Language` | ✓ | |  | `langu` |
-| `CABillgPlnItmTypeText` |  | |  | `cast( text as bipitemtype_txt_gfn_kk preserving type )` |
-| `_CABillgPlnItmType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnItmType` | ✓ | |  | `bipitemtype` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CABillgPlnItmTypeText` |  | |  | `cast( text as bipitemtype_txt_gfn_kk preserving type )` |  |  |
+| `_CABillgPlnItmType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

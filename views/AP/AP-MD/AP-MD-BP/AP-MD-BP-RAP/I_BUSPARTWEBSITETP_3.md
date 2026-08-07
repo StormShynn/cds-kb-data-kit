@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `AddressNumber` | ✓ | |  |  |
-| `Person` | ✓ | |  |  |
-| `OrdinalNumber` | ✓ | |  |  |
-| `IsDefaultURLAddress` |  | |  |  |
-| `SearchURLAddress` |  | |  |  |
-| `URLFieldLength` |  | |  |  |
-| `WebsiteURL` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `_BPProtectedAddress` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_BusinessPartnerAddress` | | ✓ | | |
-| `_AuthorizationGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `AddressNumber` | ✓ | |  |  |  |  |
+| `Person` | ✓ | |  |  |  |  |
+| `OrdinalNumber` | ✓ | |  |  |  |  |
+| `IsDefaultURLAddress` |  | |  |  |  |  |
+| `SearchURLAddress` |  | |  |  |  |  |
+| `URLFieldLength` |  | |  |  |  |  |
+| `WebsiteURL` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `_BPProtectedAddress` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BusinessPartnerAddress` | | ✓ | | | | |
+| `_AuthorizationGroup` | | ✓ | | | | |
 
 ## Source Code
 

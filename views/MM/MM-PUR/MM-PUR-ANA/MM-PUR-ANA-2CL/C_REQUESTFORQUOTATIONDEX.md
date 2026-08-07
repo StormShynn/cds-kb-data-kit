@@ -29,56 +29,56 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RequestForQuotation` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `Language` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `RFQPublishingDate` |  | |  |  |
-| `QuotationLatestSubmissionDate` |  | |  |  |
-| `BindingPeriodValidityEndDate` |  | |  |  |
-| `TargetAmount` |  | |  |  |
-| `RFQLifecycleStatus` |  | |  |  |
-| `RequestForQuotationName` |  | |  |  |
-| `QuotationEarliestSubmsnDate` |  | |  |  |
-| `LatestRegistrationDate` |  | |  |  |
-| `CorrespncInternalReference` |  | |  |  |
-| `FollowOnDocumentCategory` |  | |  |  |
-| `PurgDocFollowOnDocumentType` |  | |  | `FollowOnDocumentType` |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_PurchasingDocumentCategory` | | ✓ | | |
-| `_PurchasingDocumentType` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_FollowOnDocumentCategory` | | ✓ | | |
-| `_PurgDocFollowOnDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RequestForQuotation` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `RFQPublishingDate` |  | |  |  |  |  |
+| `QuotationLatestSubmissionDate` |  | |  |  |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |  |  |
+| `TargetAmount` |  | |  |  |  |  |
+| `RFQLifecycleStatus` |  | |  |  |  |  |
+| `RequestForQuotationName` |  | |  |  |  |  |
+| `QuotationEarliestSubmsnDate` |  | |  |  |  |  |
+| `LatestRegistrationDate` |  | |  |  |  |  |
+| `CorrespncInternalReference` |  | |  |  |  |  |
+| `FollowOnDocumentCategory` |  | |  |  |  |  |
+| `PurgDocFollowOnDocumentType` |  | |  | `FollowOnDocumentType` |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
+| `_PurchasingDocumentType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_FollowOnDocumentCategory` | | ✓ | | | | |
+| `_PurgDocFollowOnDocumentType` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` |  | |  | `kunnr` |
-| `CustomerGroup` |  | |  | `kdgrp` |
-| `CustomerSupplierIndustry` |  | |  | `brsch` |
-| `CustomerSupplierCountry` |  | |  | `land1` |
-| `SalesDistrict` |  | |  | `bzirk` |
-| `SoldProduct` |  | |  | `artnr` |
-| `SoldProductGroup` |  | |  | `matkl` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `Division` |  | |  | `spart` |
-| `BillToParty` |  | |  | `kunre` |
-| `ShipToParty` |  | |  | `kunwe` |
-| `WBSElement` |  | |  | `ps_posid_edit` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `ServiceDocumentType` |  | |  | `fco_srvdoc_type` |
-| `ServiceDocument` |  | |  | `fco_srvdoc_id` |
-| `ServiceDocumentItem` |  | |  | `fco_srvdoc_item_id` |
-| `BillingDocumentType` |  | |  | `fkart` |
-| `SalesOrder` |  | |  | `vbeln_va` |
-| `SalesOrderItem` |  | |  | `posnr_va` |
-| `Plant` |  | |  | `werks_ext` |
-| `CostCenter` |  | |  | `kostl` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `_JournalEntryPost` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` |  | |  | `kunnr` |  |  |
+| `CustomerGroup` |  | |  | `kdgrp` |  |  |
+| `CustomerSupplierIndustry` |  | |  | `brsch` |  |  |
+| `CustomerSupplierCountry` |  | |  | `land1` |  |  |
+| `SalesDistrict` |  | |  | `bzirk` |  |  |
+| `SoldProduct` |  | |  | `artnr` |  |  |
+| `SoldProductGroup` |  | |  | `matkl` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `BillToParty` |  | |  | `kunre` |  |  |
+| `ShipToParty` |  | |  | `kunwe` |  |  |
+| `WBSElement` |  | |  | `ps_posid_edit` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `ServiceDocumentType` |  | |  | `fco_srvdoc_type` |  |  |
+| `ServiceDocument` |  | |  | `fco_srvdoc_id` |  |  |
+| `ServiceDocumentItem` |  | |  | `fco_srvdoc_item_id` |  |  |
+| `BillingDocumentType` |  | |  | `fkart` |  |  |
+| `SalesOrder` |  | |  | `vbeln_va` |  |  |
+| `SalesOrderItem` |  | |  | `posnr_va` |  |  |
+| `Plant` |  | |  | `werks_ext` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `_JournalEntryPost` | | ✓ | | | | |
 
 ## Source Code
 

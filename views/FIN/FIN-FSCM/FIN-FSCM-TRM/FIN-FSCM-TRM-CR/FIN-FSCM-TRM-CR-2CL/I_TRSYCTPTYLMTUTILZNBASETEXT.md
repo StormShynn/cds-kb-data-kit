@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `LimitUtilizationBase` | ✓ | |  | `sli` |
-| `LimitUtilizationBaseName` |  | |  | `cast( text as ftr_cra_lmt_utilzn_base_name preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `LimitUtilizationBase` | ✓ | |  | `sli` |  |  |
+| `LimitUtilizationBaseName` |  | |  | `cast( text as ftr_cra_lmt_utilzn_base_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

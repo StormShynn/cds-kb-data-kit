@@ -28,44 +28,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocument` | ✓ | |  |  |
-| `SalesDocumentItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `SDDocumentCategory` |  | |  |  |
-| `ATPRelevantDocumentCategory` |  | |  |  |
-| `SalesDocumentType` |  | |  |  |
-| `RequirementType` |  | |  |  |
-| `Product` |  | |  |  |
-| `Plant` |  | |  |  |
-| `MRPArea` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Batch` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `IndependentRqmtMRPRelevancy` |  | |  |  |
-| `PlndIndepRqmtUsage` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `ProductAvailabilityDate` |  | |  |  |
-| `RequestedQuantityInBaseUnit` |  | |  |  |
-| `ConfirmedQuantityInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
-| `_SalesDocumentScheduleLine` | | ✓ | | |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_SalesDocumentType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_MRPArea` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  |  |  |  |
+| `SalesDocumentItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `ATPRelevantDocumentCategory` |  | |  |  |  |  |
+| `SalesDocumentType` |  | |  |  |  |  |
+| `RequirementType` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `MRPArea` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `IndependentRqmtMRPRelevancy` |  | |  |  |  |  |
+| `PlndIndepRqmtUsage` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `ProductAvailabilityDate` |  | |  |  |  |  |
+| `RequestedQuantityInBaseUnit` |  | |  |  |  |  |
+| `ConfirmedQuantityInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
+| `_SalesDocumentScheduleLine` | | ✓ | | | | |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_SalesDocumentType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_MRPArea` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
 
 ## Source Code
 

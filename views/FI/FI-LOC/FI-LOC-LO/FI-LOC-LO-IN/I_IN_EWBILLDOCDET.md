@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `IN_DocumentType` | ✓ | |  | `doctyp` |
-| `IN_DocumentNumber` | ✓ | |  | `docno` |
-| `FiscalYear` | ✓ | |  | `gjahr` |
-| `IN_ElectronicWaybillNumber` | ✓ | |  | `ebillno` |
-| `IN_EWbillGnrtdDate` |  | |  | `egen_dat` |
-| `IN_EWbillGnrtdTime` |  | |  | `egen_time` |
-| `IN_ValidFromDate` |  | |  | `vdfmdate` |
-| `IN_ValidFromTime` |  | |  | `vdfmtime` |
-| `IN_ValidToDate` |  | |  | `vdtodate` |
-| `IN_ValidToTime` |  | |  | `vdtotime` |
-| `IN_EWbillDocStatus` |  | |  | `status` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `CreatedAtDate` |  | |  | `erdat` |
-| `LastChangeByUser` |  | |  | `aenam` |
-| `LastChangedDate` |  | |  | `aedat` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `IN_DocumentType` | ✓ | |  | `doctyp` |  |  |
+| `IN_DocumentNumber` | ✓ | |  | `docno` |  |  |
+| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
+| `IN_ElectronicWaybillNumber` | ✓ | |  | `ebillno` |  |  |
+| `IN_EWbillGnrtdDate` |  | |  | `egen_dat` |  |  |
+| `IN_EWbillGnrtdTime` |  | |  | `egen_time` |  |  |
+| `IN_ValidFromDate` |  | |  | `vdfmdate` |  |  |
+| `IN_ValidFromTime` |  | |  | `vdfmtime` |  |  |
+| `IN_ValidToDate` |  | |  | `vdtodate` |  |  |
+| `IN_ValidToTime` |  | |  | `vdtotime` |  |  |
+| `IN_EWbillDocStatus` |  | |  | `status` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `CreatedAtDate` |  | |  | `erdat` |  |  |
+| `LastChangeByUser` |  | |  | `aenam` |  |  |
+| `LastChangedDate` |  | |  | `aedat` |  |  |
 
 ## Source Code
 

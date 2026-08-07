@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `ProductGroup` | ✓ | | `_Text` | `ProductGroup` |
-| `ProductGroupName` |  | | `_Text` | `ProductGroupName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnProductGroupTP` |  | |  | `_ProductGroup as _ProductGroup : redirected to parent I_CnsldtnProductGroupTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `ProductGroup` | ✓ | | `_Text` | `ProductGroup` |  |  |
+| `ProductGroupName` |  | | `_Text` | `ProductGroupName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnProductGroupTP` |  | |  | `_ProductGroup as _ProductGroup : redirected to parent I_CnsldtnProductGroupTP` |  |  |
 
 ## Source Code
 

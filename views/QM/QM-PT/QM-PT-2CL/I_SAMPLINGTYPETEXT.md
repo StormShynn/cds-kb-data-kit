@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `sprache` |
-| `SamplingType` | ✓ | |  | `stichprart` |
-| `SamplingTypeText` |  | |  | `kurztext` |
-| `_SamplingType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `SamplingType` | ✓ | |  | `stichprart` |  |  |
+| `SamplingTypeText` |  | |  | `kurztext` |  |  |
+| `_SamplingType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

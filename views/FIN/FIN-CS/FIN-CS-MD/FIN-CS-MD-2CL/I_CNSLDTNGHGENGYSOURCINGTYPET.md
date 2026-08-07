@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
-| `GHGEnergySourcingType` | ✓ | |  | `cast( _Source.GHGEnergySourcingType as fincs_ghgenergysourcingtype preserving type )` |
-| `GHGEnergySourcingTypeName` |  | |  | `cast( _Source.GHGEnergySourcingTypeName as fincs_ghgengysourcingtypename preserving type )` |
-| `_Language` | | ✓ | | |
-| `_GHGEnergySourcingType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |  |  |
+| `GHGEnergySourcingType` | ✓ | |  | `cast( _Source.GHGEnergySourcingType as fincs_ghgenergysourcingtype preserving type )` |  |  |
+| `GHGEnergySourcingTypeName` |  | |  | `cast( _Source.GHGEnergySourcingTypeName as fincs_ghgengysourcingtypename preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_GHGEnergySourcingType` | | ✓ | | | | |
 
 ## Associations
 

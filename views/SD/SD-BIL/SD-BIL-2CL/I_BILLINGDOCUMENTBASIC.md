@@ -31,182 +31,182 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocument` | ✓ | |  | `vbeln` |
-| `SDDocumentCategory` |  | |  | `vbtyp` |
-| `BillingDocumentCategory` |  | |  | `fktyp` |
-| `BillingDocumentType` |  | |  | `fkart` |
-| `ProposedBillingDocumentType` |  | |  | `fkara` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `erzet` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `LastChangeDateTime` |  | |  | `changed_on` |
-| `LogicalSystem` |  | |  | `logsys` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `Division` |  | |  | `spart` |
-| `BillingDocumentDate` |  | |  | `fkdat` |
-| `BillingDocumentIsCancelled` |  | |  | `fksto` |
-| `CancelledBillingDocument` |  | |  | `sfakn` |
-| `BillingDocCombinationCriteria` |  | |  | `zukri` |
-| `ManualInvoiceMaintIsRelevant` |  | |  | `mrnkz` |
-| `NmbrOfPages` |  | |  | `numpg` |
-| `IsIntrastatReportingRelevant` |  | |  | `intra_rel` |
-| `IsIntrastatReportingExcluded` |  | |  | `intra_excl` |
-| `BillingDocumentIsTemporary` |  | |  | `draft` |
-| `TotalNetAmount` |  | |  | `netwr` |
-| `TransactionCurrency` |  | |  | `waerk` |
-| `StatisticsCurrency` |  | |  | `stwae` |
-| `TotalTaxAmount` |  | |  | `mwsbk` |
-| `CustomerPriceGroup` |  | |  | `konda` |
-| `PriceListType` |  | |  | `pltyp` |
-| `TaxDepartureCountry` |  | |  | `landtx` |
-| `VATRegistration` |  | |  | `stceg` |
-| `VATRegistrationOrigin` |  | |  | `stceg_h` |
-| `VATRegistrationCountry` |  | |  | `stceg_l` |
-| `HierarchyTypePricing` |  | |  | `hityp_pr` |
-| `CustomerTaxClassification1` |  | |  | `taxk1` |
-| `CustomerTaxClassification2` |  | |  | `taxk2` |
-| `CustomerTaxClassification3` |  | |  | `taxk3` |
-| `CustomerTaxClassification4` |  | |  | `taxk4` |
-| `CustomerTaxClassification5` |  | |  | `taxk5` |
-| `CustomerTaxClassification6` |  | |  | `taxk6` |
-| `CustomerTaxClassification7` |  | |  | `taxk7` |
-| `CustomerTaxClassification8` |  | |  | `taxk8` |
-| `CustomerTaxClassification9` |  | |  | `taxk9` |
-| `IsEUTriangularDeal` |  | |  | `xegdr` |
-| `SDPricingProcedure` |  | |  | `kalsm` |
-| `ShippingCondition` |  | |  | `vsbed` |
-| `PlantSupplier` |  | |  | `ico_lifnr` |
-| `IncotermsVersion` |  | |  | `incov` |
-| `IncotermsClassification` |  | |  | `inco1` |
-| `IncotermsTransferLocation` |  | |  | `inco2` |
-| `IncotermsLocation1` |  | |  | `inco2_l` |
-| `IncotermsLocation2` |  | |  | `inco3_l` |
-| `PayerParty` |  | |  | `kunrg` |
-| `ContractAccount` |  | |  | `vkont` |
-| `CustomerPaymentTerms` |  | |  | `zterm` |
-| `PaymentMethod` |  | |  | `zlsch` |
-| `PaymentReference` |  | |  | `kidno` |
-| `FixedValueDate` |  | |  | `valdt` |
-| `AdditionalValueDays` |  | |  | `valtg` |
-| `SEPAMandate` |  | |  | `mndid` |
-| `DeviatingPostingDate` |  | |  | `deviating_posting_date` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `FiscalYear` |  | |  | `gjahr` |
-| `AccountingDocument` |  | |  | `} ] belnr` |
-| `FiscalPeriod` |  | |  | `poper` |
-| `CustomerAccountAssignmentGroup` |  | |  | `ktgrd` |
-| `AccountingExchangeRateIsSet` |  | |  | `cpkur` |
-| `AccountingExchangeRate` |  | |  | `cast(kurrf as kurrf_not_converted preserving type)` |
-| `ExchangeRateDate` |  | |  | `kurrf_dat` |
-| `ExchangeRateType` |  | |  | `kurst` |
-| `DocumentReferenceID` |  | |  | `xblnr` |
-| `AssignmentReference` |  | |  | `zuonr` |
-| `ReversalReason` |  | |  | `stgrd` |
-| `DunningArea` |  | |  | `} ] maber` |
-| `DunningBlockingReason` |  | |  | `mansp` |
-| `DunningKey` |  | |  | `mschl` |
-| `InternalFinancialDocument` |  | |  | `lcnum` |
-| `IsRelevantForAccrual` |  | |  | `accrrel` |
-| `InvoiceListType` |  | |  | `fkart_rl` |
-| `InvoiceListBillingDate` |  | |  | `fkdat_rl` |
-| `BillingDocRequestReference` |  | |  | `bdr_ref` |
-| `BillgDocReqRefLgclSyst` |  | |  | `bdr_ref_logsys` |
-| `BillgDocReqRefSDDocCategory` |  | |  | `bdr_ref_vbtyp` |
-| `SoldToParty` |  | |  | `kunag` |
-| `PartnerCompany` |  | |  | `vbund` |
-| `PurchaseOrderByCustomer` |  | |  | `bstnk_vf` |
-| `CustomerGroup` |  | |  | `kdgrp` |
-| `Country` |  | |  | `land1` |
-| `CityCode` |  | |  | `cityc` |
-| `SalesDistrict` |  | |  | `bzirk` |
-| `Region` |  | |  | `regio` |
-| `County` |  | |  | `counc` |
-| `CreditControlArea` |  | |  | `kkber` |
-| `CustomerRebateAgreement` |  | |  | `knuma` |
-| `PricingDocument` |  | |  | `knumv` |
-| `OverallSDProcessStatus` |  | |  | `gbstk` |
-| `OverallBillingStatus` |  | |  | `vf_status` |
-| `AccountingPostingStatus` |  | |  | `buchk` |
-| `AccountingTransferStatus` |  | |  | `rfbsk` |
-| `BillingIssueType` |  | |  | `vf_todo` |
-| `OverallBillingDocReqStatus` |  | |  | `bdr_status` |
-| `InvoiceListStatus` |  | |  | `relik` |
-| `OvrlItmGeneralIncompletionSts` |  | |  | `uvals` |
-| `OverallPricingIncompletionSts` |  | |  | `uvprs` |
-| `OverallDocumentBillingStatus` |  | |  | `fksak` |
-| `PrelimBillingDocumentStatus` |  | |  | `pbd_status` |
-| `InvoiceClearingStatus` |  | |  | `clrst` |
-| `BillgProcDocApprovalStatus` |  | |  | `apm_approval_status` |
-| `BillgProcDocApprovalReason` |  | |  | `apm_approval_reason` |
-| `PricingIsIncomplete` |  | |  | `cast(uvprs as uvprs preserving type)` |
-| `_DunningAreaText` | | ✓ | | |
-| `_CreditControlAreaText` | | ✓ | | |
-| `_ItemBasic` | | ✓ | | |
-| `_PartnerBasic` | | ✓ | | |
-| `_PricingElementBasic` | | ✓ | | |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_BillgDocReqRefSDDocCategory` | | ✓ | | |
-| `_BillingDocumentCategory` | | ✓ | | |
-| `_BillingDocumentType` | | ✓ | | |
-| `_ProposedBillingDocumentType` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LogicalSystem` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_CancelledBillingDocumentBasic` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_StatisticsCurrency` | | ✓ | | |
-| `_CustomerPriceGroup` | | ✓ | | |
-| `_PriceListType` | | ✓ | | |
-| `_TaxDepartureCountry` | | ✓ | | |
-| `_VATRegistrationOrigin` | | ✓ | | |
-| `_VATRegistrationCountry` | | ✓ | | |
-| `_SDPricingProcedure` | | ✓ | | |
-| `_ShippingCondition` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_AccountingDocument` | | ✓ | | |
-| `_CustomerAccountAssgmtGroup` | | ✓ | | |
-| `_ExchangeRateType` | | ✓ | | |
-| `_ReversalReason` | | ✓ | | |
-| `_DunningArea` | | ✓ | | |
-| `_DunningBlockingReason` | | ✓ | | |
-| `_DunningKey` | | ✓ | | |
-| `_InvoiceListType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_CityCode` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_County` | | ✓ | | |
-| `_County_2` | | ✓ | | |
-| `_CreditControlArea` | | ✓ | | |
-| `_OverallSDProcessStatus` | | ✓ | | |
-| `_OverallBillingStatus` | | ✓ | | |
-| `_OvrlBillingDocReqStatus` | | ✓ | | |
-| `_PrelimBillingDocumentStatus` | | ✓ | | |
-| `_AccountingPostingStatus` | | ✓ | | |
-| `_AccountingTransferStatus` | | ✓ | | |
-| `_BillingIssueType` | | ✓ | | |
-| `_InvoiceListStatus` | | ✓ | | |
-| `_OvrlItmGeneralIncompletionSts` | | ✓ | | |
-| `_OverallPricingIncompletionSts` | | ✓ | | |
-| `_BillgProcDocApprovalStatus` | | ✓ | | |
-| `_BillgProcDocApprovalReason` | | ✓ | | |
-| `_BillgProcDocApprovalStatusT` | | ✓ | | |
-| `_BillgProcDocApprovalReasonT` | | ✓ | | |
-| `_InvoiceClearingStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  | `vbeln` |  |  |
+| `SDDocumentCategory` |  | |  | `vbtyp` |  |  |
+| `BillingDocumentCategory` |  | |  | `fktyp` |  |  |
+| `BillingDocumentType` |  | |  | `fkart` |  |  |
+| `ProposedBillingDocumentType` |  | |  | `fkara` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `erzet` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `LastChangeDateTime` |  | |  | `changed_on` |  |  |
+| `LogicalSystem` |  | |  | `logsys` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `BillingDocumentDate` |  | |  | `fkdat` |  |  |
+| `BillingDocumentIsCancelled` |  | |  | `fksto` |  |  |
+| `CancelledBillingDocument` |  | |  | `sfakn` |  |  |
+| `BillingDocCombinationCriteria` |  | |  | `zukri` |  |  |
+| `ManualInvoiceMaintIsRelevant` |  | |  | `mrnkz` |  |  |
+| `NmbrOfPages` |  | |  | `numpg` |  |  |
+| `IsIntrastatReportingRelevant` |  | |  | `intra_rel` |  |  |
+| `IsIntrastatReportingExcluded` |  | |  | `intra_excl` |  |  |
+| `BillingDocumentIsTemporary` |  | |  | `draft` |  |  |
+| `TotalNetAmount` |  | |  | `netwr` |  |  |
+| `TransactionCurrency` |  | |  | `waerk` |  |  |
+| `StatisticsCurrency` |  | |  | `stwae` |  |  |
+| `TotalTaxAmount` |  | |  | `mwsbk` |  |  |
+| `CustomerPriceGroup` |  | |  | `konda` |  |  |
+| `PriceListType` |  | |  | `pltyp` |  |  |
+| `TaxDepartureCountry` |  | |  | `landtx` |  |  |
+| `VATRegistration` |  | |  | `stceg` |  |  |
+| `VATRegistrationOrigin` |  | |  | `stceg_h` |  |  |
+| `VATRegistrationCountry` |  | |  | `stceg_l` |  |  |
+| `HierarchyTypePricing` |  | |  | `hityp_pr` |  |  |
+| `CustomerTaxClassification1` |  | |  | `taxk1` |  |  |
+| `CustomerTaxClassification2` |  | |  | `taxk2` |  |  |
+| `CustomerTaxClassification3` |  | |  | `taxk3` |  |  |
+| `CustomerTaxClassification4` |  | |  | `taxk4` |  |  |
+| `CustomerTaxClassification5` |  | |  | `taxk5` |  |  |
+| `CustomerTaxClassification6` |  | |  | `taxk6` |  |  |
+| `CustomerTaxClassification7` |  | |  | `taxk7` |  |  |
+| `CustomerTaxClassification8` |  | |  | `taxk8` |  |  |
+| `CustomerTaxClassification9` |  | |  | `taxk9` |  |  |
+| `IsEUTriangularDeal` |  | |  | `xegdr` |  |  |
+| `SDPricingProcedure` |  | |  | `kalsm` |  |  |
+| `ShippingCondition` |  | |  | `vsbed` |  |  |
+| `PlantSupplier` |  | |  | `ico_lifnr` |  |  |
+| `IncotermsVersion` |  | |  | `incov` |  |  |
+| `IncotermsClassification` |  | |  | `inco1` |  |  |
+| `IncotermsTransferLocation` |  | |  | `inco2` |  |  |
+| `IncotermsLocation1` |  | |  | `inco2_l` |  |  |
+| `IncotermsLocation2` |  | |  | `inco3_l` |  |  |
+| `PayerParty` |  | |  | `kunrg` |  |  |
+| `ContractAccount` |  | |  | `vkont` |  |  |
+| `CustomerPaymentTerms` |  | |  | `zterm` |  |  |
+| `PaymentMethod` |  | |  | `zlsch` |  |  |
+| `PaymentReference` |  | |  | `kidno` |  |  |
+| `FixedValueDate` |  | |  | `valdt` |  |  |
+| `AdditionalValueDays` |  | |  | `valtg` |  |  |
+| `SEPAMandate` |  | |  | `mndid` |  |  |
+| `DeviatingPostingDate` |  | |  | `deviating_posting_date` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `FiscalYear` |  | |  | `gjahr` |  |  |
+| `AccountingDocument` |  | |  | `belnr` |  |  |
+| `FiscalPeriod` |  | |  | `poper` |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  | `ktgrd` |  |  |
+| `AccountingExchangeRateIsSet` |  | |  | `cpkur` |  |  |
+| `AccountingExchangeRate` |  | |  | `cast(kurrf as kurrf_not_converted preserving type)` |  |  |
+| `ExchangeRateDate` |  | |  | `kurrf_dat` |  |  |
+| `ExchangeRateType` |  | |  | `kurst` |  |  |
+| `DocumentReferenceID` |  | |  | `xblnr` |  |  |
+| `AssignmentReference` |  | |  | `zuonr` |  |  |
+| `ReversalReason` |  | |  | `stgrd` |  |  |
+| `DunningArea` |  | |  | `maber` |  |  |
+| `DunningBlockingReason` |  | |  | `mansp` |  |  |
+| `DunningKey` |  | |  | `mschl` |  |  |
+| `InternalFinancialDocument` |  | |  | `lcnum` |  |  |
+| `IsRelevantForAccrual` |  | |  | `accrrel` |  |  |
+| `InvoiceListType` |  | |  | `fkart_rl` |  |  |
+| `InvoiceListBillingDate` |  | |  | `fkdat_rl` |  |  |
+| `BillingDocRequestReference` |  | |  | `bdr_ref` |  |  |
+| `BillgDocReqRefLgclSyst` |  | |  | `bdr_ref_logsys` |  |  |
+| `BillgDocReqRefSDDocCategory` |  | |  | `bdr_ref_vbtyp` |  |  |
+| `SoldToParty` |  | |  | `kunag` |  |  |
+| `PartnerCompany` |  | |  | `vbund` |  |  |
+| `PurchaseOrderByCustomer` |  | |  | `bstnk_vf` |  |  |
+| `CustomerGroup` |  | |  | `kdgrp` |  |  |
+| `Country` |  | |  | `land1` |  |  |
+| `CityCode` |  | |  | `cityc` |  |  |
+| `SalesDistrict` |  | |  | `bzirk` |  |  |
+| `Region` |  | |  | `regio` |  |  |
+| `County` |  | |  | `counc` |  |  |
+| `CreditControlArea` |  | |  | `kkber` |  |  |
+| `CustomerRebateAgreement` |  | |  | `knuma` |  |  |
+| `PricingDocument` |  | |  | `knumv` |  |  |
+| `OverallSDProcessStatus` |  | |  | `gbstk` |  |  |
+| `OverallBillingStatus` |  | |  | `vf_status` |  |  |
+| `AccountingPostingStatus` |  | |  | `buchk` |  |  |
+| `AccountingTransferStatus` |  | |  | `rfbsk` |  |  |
+| `BillingIssueType` |  | |  | `vf_todo` |  |  |
+| `OverallBillingDocReqStatus` |  | |  | `bdr_status` |  |  |
+| `InvoiceListStatus` |  | |  | `relik` |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  | `uvals` |  |  |
+| `OverallPricingIncompletionSts` |  | |  | `uvprs` |  |  |
+| `OverallDocumentBillingStatus` |  | |  | `fksak` |  |  |
+| `PrelimBillingDocumentStatus` |  | |  | `pbd_status` |  |  |
+| `InvoiceClearingStatus` |  | |  | `clrst` |  |  |
+| `BillgProcDocApprovalStatus` |  | |  | `apm_approval_status` |  |  |
+| `BillgProcDocApprovalReason` |  | |  | `apm_approval_reason` |  |  |
+| `PricingIsIncomplete` |  | |  | `cast(uvprs as uvprs preserving type)` |  |  |
+| `_DunningAreaText` | | ✓ | | | | |
+| `_CreditControlAreaText` | | ✓ | | | | |
+| `_ItemBasic` | | ✓ | | | | |
+| `_PartnerBasic` | | ✓ | | | | |
+| `_PricingElementBasic` | | ✓ | | | | |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_BillgDocReqRefSDDocCategory` | | ✓ | | | | |
+| `_BillingDocumentCategory` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_ProposedBillingDocumentType` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LogicalSystem` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_CancelledBillingDocumentBasic` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_StatisticsCurrency` | | ✓ | | | | |
+| `_CustomerPriceGroup` | | ✓ | | | | |
+| `_PriceListType` | | ✓ | | | | |
+| `_TaxDepartureCountry` | | ✓ | | | | |
+| `_VATRegistrationOrigin` | | ✓ | | | | |
+| `_VATRegistrationCountry` | | ✓ | | | | |
+| `_SDPricingProcedure` | | ✓ | | | | |
+| `_ShippingCondition` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_AccountingDocument` | | ✓ | | | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | | | |
+| `_ExchangeRateType` | | ✓ | | | | |
+| `_ReversalReason` | | ✓ | | | | |
+| `_DunningArea` | | ✓ | | | | |
+| `_DunningBlockingReason` | | ✓ | | | | |
+| `_DunningKey` | | ✓ | | | | |
+| `_InvoiceListType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_CityCode` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_County` | | ✓ | | | | |
+| `_County_2` | | ✓ | | | | |
+| `_CreditControlArea` | | ✓ | | | | |
+| `_OverallSDProcessStatus` | | ✓ | | | | |
+| `_OverallBillingStatus` | | ✓ | | | | |
+| `_OvrlBillingDocReqStatus` | | ✓ | | | | |
+| `_PrelimBillingDocumentStatus` | | ✓ | | | | |
+| `_AccountingPostingStatus` | | ✓ | | | | |
+| `_AccountingTransferStatus` | | ✓ | | | | |
+| `_BillingIssueType` | | ✓ | | | | |
+| `_InvoiceListStatus` | | ✓ | | | | |
+| `_OvrlItmGeneralIncompletionSts` | | ✓ | | | | |
+| `_OverallPricingIncompletionSts` | | ✓ | | | | |
+| `_BillgProcDocApprovalStatus` | | ✓ | | | | |
+| `_BillgProcDocApprovalReason` | | ✓ | | | | |
+| `_BillgProcDocApprovalStatusT` | | ✓ | | | | |
+| `_BillgProcDocApprovalReasonT` | | ✓ | | | | |
+| `_InvoiceClearingStatus` | | ✓ | | | | |
 
 ## Associations
 

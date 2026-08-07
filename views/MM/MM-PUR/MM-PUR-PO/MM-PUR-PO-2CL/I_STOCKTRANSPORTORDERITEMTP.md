@@ -31,75 +31,75 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StockTransportOrder` | ✓ | |  |  |
-| `StockTransportOrderItem` | ✓ | |  |  |
-| `STOItemUniqueID` |  | |  |  |
-| `StockTransportOrderItemText` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductTypeCode` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `OutwardDeliveryIsComplete` |  | |  |  |
-| `InvoiceIsExpected` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `RequisitionerName` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `STOItemCategory` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `DeliveryDocumentType` |  | |  |  |
-| `IssuingStorageLocation` |  | |  |  |
-| `IsStatisticalItem` |  | |  |  |
-| `PurchasingParentItem` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `EffectiveAmount` |  | |  |  |
-| `OrderQuantity` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `MultipleAcctAssgmtDistribution` |  | |  |  |
-| `PartialInvoiceDistribution` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `GoodsReceiptDurationInDays` |  | |  |  |
-| `InventoryUsabilityCode` |  | |  |  |
-| `PurgDocSubitemCategory` |  | |  |  |
-| `StockTransportOrderType` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `SupplierConfirmationControlKey` |  | |  |  |
-| `Subcontractor` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Batch` |  | |  |  |
-| `ValuationType` |  | |  |  |
-| `ValuationCategory` |  | |  |  |
-| `_StockTransportOrder` | | ✓ | | |
-| `_STOScheduleLine` | | ✓ | | |
-| `_STOShipping` | | ✓ | | |
-| `_STOItemNote` | | ✓ | | |
-| `_STOItemPricingElement` | | ✓ | | |
-| `_STOAccountAssignment` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurgDocumentItemCategory` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_ValuationCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |  |  |
+| `StockTransportOrderItem` | ✓ | |  |  |  |  |
+| `STOItemUniqueID` |  | |  |  |  |  |
+| `StockTransportOrderItemText` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `OutwardDeliveryIsComplete` |  | |  |  |  |  |
+| `InvoiceIsExpected` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `RequisitionerName` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `STOItemCategory` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `DeliveryDocumentType` |  | |  |  |  |  |
+| `IssuingStorageLocation` |  | |  |  |  |  |
+| `IsStatisticalItem` |  | |  |  |  |  |
+| `PurchasingParentItem` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `EffectiveAmount` |  | |  |  |  |  |
+| `OrderQuantity` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |  |  |
+| `PartialInvoiceDistribution` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `GoodsReceiptDurationInDays` |  | |  |  |  |  |
+| `InventoryUsabilityCode` |  | |  |  |  |  |
+| `PurgDocSubitemCategory` |  | |  |  |  |  |
+| `StockTransportOrderType` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |  |  |
+| `Subcontractor` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `ValuationCategory` |  | |  |  |  |  |
+| `_StockTransportOrder` | | ✓ | | | | |
+| `_STOScheduleLine` | | ✓ | | | | |
+| `_STOShipping` | | ✓ | | | | |
+| `_STOItemNote` | | ✓ | | | | |
+| `_STOItemPricingElement` | | ✓ | | | | |
+| `_STOAccountAssignment` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurgDocumentItemCategory` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_ValuationCategoryText` | | ✓ | | | | |
 
 ## Source Code
 

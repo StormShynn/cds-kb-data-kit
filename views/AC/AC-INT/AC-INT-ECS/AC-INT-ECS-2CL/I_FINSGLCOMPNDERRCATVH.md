@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinSGLCompoundErrorCategory` | ✓ | | `_CompoundErrorCategory` | `cmp_err_cat` |
-| `FinSGLCompndErrCatDesc` |  | | `_text` | `kbez` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinSGLCompoundErrorCategory` | ✓ | | `_CompoundErrorCategory` | `cmp_err_cat` | `CHAR(5)` | Compound Error Category |
+| `FinSGLCompndErrCatDesc` |  | | `_text` | `kbez` | `CHAR(60)` | Short Description |
 
 ## Source Code
 

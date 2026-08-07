@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrganizationalChange` | ✓ | |  |  |
-| `OrganizationalChangeForEdit` |  | |  |  |
-| `OrganizationalChangeActivity` |  | |  |  |
-| `OrglChangeEffectiveDate` |  | |  |  |
-| `OrglChangeProcessingStatus` |  | |  |  |
-| `OrglChangeApplicationVersion` |  | |  |  |
-| `OrglChangeLastChangeDateTime` |  | |  |  |
-| `OrglChangeLastChangedByUser` |  | |  |  |
-| `OrglChangeCreationDateTime` |  | |  |  |
-| `OrglChangeCreatedByUser` |  | |  |  |
-| `_WBSElement` | | ✓ | | |
-| `_OrglChangeText` | | ✓ | | |
-| `_Project` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_NetworkActivity` | | ✓ | | |
-| `_CoCodeSelection` | | ✓ | | |
-| `_PrftCtrSelection` | | ✓ | | |
-| `_UserCrtedContactCard` | | ✓ | | |
-| `_UserLastChgdContactCard` | | ✓ | | |
-| `_SitnInstceIndicator` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrganizationalChange` | ✓ | |  |  |  |  |
+| `OrganizationalChangeForEdit` |  | |  |  |  |  |
+| `OrganizationalChangeActivity` |  | |  |  |  |  |
+| `OrglChangeEffectiveDate` |  | |  |  |  |  |
+| `OrglChangeProcessingStatus` |  | |  |  |  |  |
+| `OrglChangeApplicationVersion` |  | |  |  |  |  |
+| `OrglChangeLastChangeDateTime` |  | |  |  |  |  |
+| `OrglChangeLastChangedByUser` |  | |  |  |  |  |
+| `OrglChangeCreationDateTime` |  | |  |  |  |  |
+| `OrglChangeCreatedByUser` |  | |  |  |  |  |
+| `_WBSElement` | | ✓ | | | | |
+| `_OrglChangeText` | | ✓ | | | | |
+| `_Project` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_NetworkActivity` | | ✓ | | | | |
+| `_CoCodeSelection` | | ✓ | | | | |
+| `_PrftCtrSelection` | | ✓ | | | | |
+| `_UserCrtedContactCard` | | ✓ | | | | |
+| `_UserLastChgdContactCard` | | ✓ | | | | |
+| `_SitnInstceIndicator` | | ✓ | | | | |
 
 ## Source Code
 

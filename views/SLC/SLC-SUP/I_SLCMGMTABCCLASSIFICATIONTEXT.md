@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierABCClassificationCode` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as /srmsmc/abc_classification preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SLCTranslationStatusName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type )` |
-| `_Language` | | ✓ | | |
-| `_SLCMgmtABCClassification` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierABCClassificationCode` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as /srmsmc/abc_classification preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SLCTranslationStatusName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SLCMgmtABCClassification` | | ✓ | | | | |
 
 ## Associations
 

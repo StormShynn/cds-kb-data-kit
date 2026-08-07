@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACollectionsMasterDataGroup` | ✓ | |  | `cmgrp` |
-| `CACollMasterDataGroupLevel` |  | |  | `grplvl` |
-| `CAAuthorizationGroup` |  | |  | `begru` |
-| `CAIsUsedForSpcfcMasterDataCat` |  | |  | `xassignmd` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACollectionsMasterDataGroup` | ✓ | |  | `cmgrp` |  |  |
+| `CACollMasterDataGroupLevel` |  | |  | `grplvl` |  |  |
+| `CAAuthorizationGroup` |  | |  | `begru` |  |  |
+| `CAIsUsedForSpcfcMasterDataCat` |  | |  | `xassignmd` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

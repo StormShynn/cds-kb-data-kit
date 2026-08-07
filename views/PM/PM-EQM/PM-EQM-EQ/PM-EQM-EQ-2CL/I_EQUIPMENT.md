@@ -29,80 +29,80 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | |  | `equnr` |
-| `EquipmentOID` |  | |  | `equipmentoid` |
-| `EquipmentCategory` |  | |  | `eqtyp` |
-| `TechnicalObjectType` |  | |  | `eqart` |
-| `Plant` |  | |  | `werk` |
-| `Division` |  | |  | `sparte` |
-| `StorageLocation` |  | |  | `lager` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `LastChangedByUser` |  | |  | `aenam` |
-| `CreationDate` |  | |  | `erdat` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `AssetManufacturerName` |  | |  | `herst` |
-| `ManufacturerPartTypeName` |  | |  | `typbz` |
-| `ManufacturerCountry` |  | |  | `herld` |
-| `ConstructionYear` |  | |  | `baujj` |
-| `ConstructionMonth` |  | |  | `baumm` |
-| `AcquisitionDate` |  | |  | `ansdt` |
-| `Currency` |  | |  | `waers` |
-| `AcquisitionValue` |  | |  | `answt` |
-| `MaintObjectInternalID` |  | |  | `objnr` |
-| `SerialNumber` |  | |  | `sernr` |
-| `EquipUsagePeriodSequenceNumber` |  | |  | `eqlfn` |
-| `Material` |  | |  | `matnr` |
-| `Customer` |  | |  | `kunde` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `ManufacturerSerialNumber` |  | |  | `serge` |
-| `UniqueItemIdentifier` |  | |  | `uii` |
-| `UniqueItemIdentifierStrucType` |  | |  | `iuid_type` |
-| `UniqueItemIdentifierRespPlant` |  | |  | `uii_plant` |
-| `AssetSynchronizationRule` |  | |  | `act_change_aa` |
-| `InventoryNumber` |  | |  | `invnr` |
-| `GrossWeight` |  | |  | `brgew` |
-| `GrossWeightUnit` |  | |  | `gewei` |
-| `SizeOrDimensionText` |  | |  | `groes` |
-| `Batch` |  | |  | `charge` |
-| `OperationStartDate` |  | |  | `inbdt` |
-| `Supplier` |  | |  | `elief` |
-| `HasEquipmentData` |  | |  | `s_equi` |
-| `EquipmentHasStockInformation` |  | |  | `cast( equi.s_eqbs as equipmenthasstockinformation preserving type )` |
-| `MasterWarranty` |  | |  | `mganr` |
-| `LastChangeDateTime` |  | |  | `changeddatetime` |
-| `EquipmentFirstDeliveryDate` |  | |  | `auldt` |
-| `ValidityStartDate` |  | | `_CurrentTimeSegment` | `ValidityStartDate` |
-| `ValidityEndDate` |  | | `_CurrentTimeSegment` | `ValidityEndDate` |
-| `MatlSrlNmbrLastGdsMvtDte` |  | |  | `datlwb` |
-| `EquipmentEndOfUseDate` |  | |  | `endofuse` |
-| `MaintenancePlan` |  | |  | `warpl` |
-| `MeasuringPoint` |  | |  | `imrc_point` |
-| `_EquipmentCategory` | | ✓ | | |
-| `_TechnicalObjectType` | | ✓ | | |
-| `_EquipmentText` | | ✓ | | |
-| `_EquipmentTimeSeg` | | ✓ | | |
-| `_CurrentTimeSegment` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_SerialNumberStockSegment` | | ✓ | | |
-| `_StockSegment` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_ManufacturerCountry` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_MasterWarranty` | | ✓ | | |
-| `_PlantMaintenancePartner` | | ✓ | | |
-| `_MasterWrntyObjectAssgmt` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_GrossWeightUnit` | | ✓ | | |
-| `_LinearAssetManagementData` | | ✓ | | |
-| `_Status` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | |  | `equnr` |  |  |
+| `EquipmentOID` |  | |  | `equipmentoid` |  |  |
+| `EquipmentCategory` |  | |  | `eqtyp` |  |  |
+| `TechnicalObjectType` |  | |  | `eqart` |  |  |
+| `Plant` |  | |  | `werk` |  |  |
+| `Division` |  | |  | `sparte` |  |  |
+| `StorageLocation` |  | |  | `lager` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `LastChangedByUser` |  | |  | `aenam` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `AssetManufacturerName` |  | |  | `herst` |  |  |
+| `ManufacturerPartTypeName` |  | |  | `typbz` |  |  |
+| `ManufacturerCountry` |  | |  | `herld` |  |  |
+| `ConstructionYear` |  | |  | `baujj` |  |  |
+| `ConstructionMonth` |  | |  | `baumm` |  |  |
+| `AcquisitionDate` |  | |  | `ansdt` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `AcquisitionValue` |  | |  | `answt` |  |  |
+| `MaintObjectInternalID` |  | |  | `objnr` |  |  |
+| `SerialNumber` |  | |  | `sernr` |  |  |
+| `EquipUsagePeriodSequenceNumber` |  | |  | `eqlfn` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `Customer` |  | |  | `kunde` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `ManufacturerSerialNumber` |  | |  | `serge` |  |  |
+| `UniqueItemIdentifier` |  | |  | `uii` |  |  |
+| `UniqueItemIdentifierStrucType` |  | |  | `iuid_type` |  |  |
+| `UniqueItemIdentifierRespPlant` |  | |  | `uii_plant` |  |  |
+| `AssetSynchronizationRule` |  | |  | `act_change_aa` |  |  |
+| `InventoryNumber` |  | |  | `invnr` |  |  |
+| `GrossWeight` |  | |  | `brgew` |  |  |
+| `GrossWeightUnit` |  | |  | `gewei` |  |  |
+| `SizeOrDimensionText` |  | |  | `groes` |  |  |
+| `Batch` |  | |  | `charge` |  |  |
+| `OperationStartDate` |  | |  | `inbdt` |  |  |
+| `Supplier` |  | |  | `elief` |  |  |
+| `HasEquipmentData` |  | |  | `s_equi` |  |  |
+| `EquipmentHasStockInformation` |  | |  | `cast( equi.s_eqbs as equipmenthasstockinformation preserving type )` |  |  |
+| `MasterWarranty` |  | |  | `mganr` |  |  |
+| `LastChangeDateTime` |  | |  | `changeddatetime` |  |  |
+| `EquipmentFirstDeliveryDate` |  | |  | `auldt` |  |  |
+| `ValidityStartDate` |  | | `_CurrentTimeSegment` | `ValidityStartDate` |  |  |
+| `ValidityEndDate` |  | | `_CurrentTimeSegment` | `ValidityEndDate` |  |  |
+| `MatlSrlNmbrLastGdsMvtDte` |  | |  | `datlwb` |  |  |
+| `EquipmentEndOfUseDate` |  | |  | `endofuse` |  |  |
+| `MaintenancePlan` |  | |  | `warpl` |  |  |
+| `MeasuringPoint` |  | |  | `imrc_point` |  |  |
+| `_EquipmentCategory` | | ✓ | | | | |
+| `_TechnicalObjectType` | | ✓ | | | | |
+| `_EquipmentText` | | ✓ | | | | |
+| `_EquipmentTimeSeg` | | ✓ | | | | |
+| `_CurrentTimeSegment` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_SerialNumberStockSegment` | | ✓ | | | | |
+| `_StockSegment` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_ManufacturerCountry` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_MasterWarranty` | | ✓ | | | | |
+| `_PlantMaintenancePartner` | | ✓ | | | | |
+| `_MasterWrntyObjectAssgmt` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_GrossWeightUnit` | | ✓ | | | | |
+| `_LinearAssetManagementData` | | ✓ | | | | |
+| `_Status` | | ✓ | | | | |
 
 ## Associations
 

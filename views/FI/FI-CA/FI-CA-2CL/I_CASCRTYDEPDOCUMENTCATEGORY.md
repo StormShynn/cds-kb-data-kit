@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASecurityDepositDocCategory` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as secdep_doc_category_kk preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASecurityDepositDocCategory` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as secdep_doc_category_kk preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

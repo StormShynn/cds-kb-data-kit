@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjElmntDlvbrlDistrUUID` | ✓ | |  | `entprojelmntdlvbrldistruuid` |
-| `EntProjElmntDeliverableUUID` |  | |  | `entprojelmntdeliverableuuid` |
-| `ProjectElementUUID` |  | |  | `projectelementuuid` |
-| `ProjectUUID` |  | |  | `projectuuid` |
-| `EntProjElmntDlvbrlDistrYearVal` |  | |  | `entprojelmntdlvbrldistryearval` |
-| `EntProjElmntDlvbrlDistrPerdVal` |  | |  | `entprojelmntdlvbrldistrperdval` |
-| `EntProjElmntDlvbrlDistrQty` |  | |  | `entprojelmntdlvbrldistrqty` |
-| `EntProjElmntDlvbrlDistrQtyUnit` |  | |  | `entprojelmntdlvbrldistrqtyunit` |
-| `_EntProjElmntDlvbrl` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntDlvbrlDistrUUID` | ✓ | |  | `entprojelmntdlvbrldistruuid` |  |  |
+| `EntProjElmntDeliverableUUID` |  | |  | `entprojelmntdeliverableuuid` |  |  |
+| `ProjectElementUUID` |  | |  | `projectelementuuid` |  |  |
+| `ProjectUUID` |  | |  | `projectuuid` |  |  |
+| `EntProjElmntDlvbrlDistrYearVal` |  | |  | `entprojelmntdlvbrldistryearval` |  |  |
+| `EntProjElmntDlvbrlDistrPerdVal` |  | |  | `entprojelmntdlvbrldistrperdval` |  |  |
+| `EntProjElmntDlvbrlDistrQty` |  | |  | `entprojelmntdlvbrldistrqty` |  |  |
+| `EntProjElmntDlvbrlDistrQtyUnit` |  | |  | `entprojelmntdlvbrldistrqtyunit` |  |  |
+| `_EntProjElmntDlvbrl` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
 
 ## Associations
 

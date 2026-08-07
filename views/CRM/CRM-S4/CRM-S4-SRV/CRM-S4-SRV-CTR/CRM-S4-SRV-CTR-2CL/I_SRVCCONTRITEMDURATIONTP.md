@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `ServiceContractItem` | ✓ | |  |  |
-| `SrvcDocDurationType` | ✓ | |  |  |
-| `SrvcDocDurationValue` |  | |  |  |
-| `SrvcDocDurationUnit` |  | |  |  |
-| `_DurationText` | | ✓ | | |
-| `_ServiceContractItemTP` | | ✓ | | |
-| `_ServiceContractTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `ServiceContractItem` | ✓ | |  |  |  |  |
+| `SrvcDocDurationType` | ✓ | |  |  |  |  |
+| `SrvcDocDurationValue` |  | |  |  |  |  |
+| `SrvcDocDurationUnit` |  | |  |  |  |  |
+| `_DurationText` | | ✓ | | | | |
+| `_ServiceContractItemTP` | | ✓ | | | | |
+| `_ServiceContractTP` | | ✓ | | | | |
 
 ## Source Code
 

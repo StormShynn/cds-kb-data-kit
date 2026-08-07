@@ -29,67 +29,67 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMWarehouse` | ✓ | | `_PIHeader` | `EWMWarehouse` |
-| `PhysicalInventoryDocNumber` | ✓ | | `_PIHeader` | `PhysicalInventoryDocNumber` |
-| `PhysicalInventoryDocYear` | ✓ | | `_PIHeader` | `PhysicalInventoryDocYear` |
-| `PhysicalInventoryItemNumber` | ✓ | |  |  |
-| `LineIndexOfPInvItem` | ✓ | |  |  |
-| `EWMStorageType` |  | | `_storagebin` | `EWMStorageType` |
-| `EWMStorageBin` |  | | `_storagebin` | `EWMStorageBin` |
-| `EWMPhysicalInventoryStatus` |  | |  |  |
-| `ActivityArea` |  | | `_PIAreaMapping` | `ActivityArea` |
-| `EWMStorageBinIsEmpty` |  | |  | `cast( _PIItemBinEmpty.EWMStorageBinIsEmpty as boole_d )` |
-| `HandlingUnitNumber` |  | |  | `case when item.HandlingUnitVirtual = 'A' then '' when _parent.ParentHandlingUnitNumber is not initial then _parent.ParentHandlingUnitNumber when item.ParentHandlingUnitNumber is not initial then item.ParentHandlingUnitNumber else item.HandlingUnitNumber end` |
-| `HndlgUnitItemCountedIsComplete` |  | |  | `case when _parent.HandlingUnitNumber is not initial then _parent.HndlgUnitItemCountedIsComplete else item.HndlgUnitItemCountedIsComplete end` |
-| `HndlgUnitItemCountedIsEmpty` |  | |  | `case when _parent.HandlingUnitNumber is not initial then _parent.HndlgUnitItemCountedIsEmpty else item.HndlgUnitItemCountedIsEmpty end` |
-| `HndlgUnitItemCountedIsNotExist` |  | |  | `case when _parent.HandlingUnitNumber is not initial then _parent.HndlgUnitItemCountedIsNotExist else item.HndlgUnitItemCountedIsNotExist end` |
-| `PackagingMaterial` |  | | `_parent` | `PackagingMaterial` |
-| `HandlingUnitType` |  | | `_parent` | `HandlingUnitType` |
-| `EWMPInvHasExtraHndlgUnitLevel` |  | |  | `cast ( case when _parent.ParentHandlingUnitNumber is not initial and item.ParentHandlingUnitNumber is not initial then 'X' else '' end as boole_d )` |
-| `Product` |  | | `_PIItemBusKey` | `Product` |
-| `ProductUUID` |  | | `_PIItemBusKey` | `ProductUUID` |
-| `Batch` |  | | `_PIItemBusKey` | `Batch` |
-| `BatchUUID` |  | | `_PIItemBusKey` | `BatchUUID` |
-| `SerialNumberRequiredLevel` |  | | `_PIItemBusKey` | `SerialNumberRequiredLevel` |
-| `EWMStockType` |  | | `_PIItemBusKey` | `EWMStockType` |
-| `EWMStockOwner` |  | | `_PIItemBusKey` | `EWMStockOwner` |
-| `StockOwnerPartnerRole` |  | | `_PIItemBusKey` | `StockOwnerPartnerRole` |
-| `EWMStockUsage` |  | | `_PIItemBusKey` | `EWMStockUsage` |
-| `EntitledToDisposeParty` |  | | `_PIItemBusKey` | `EntitledToDisposeParty` |
-| `EntitledToDisposePartnerRole` |  | | `_PIItemBusKey` | `EntitledToDisposePartnerRole` |
-| `StockDocumentCategory` |  | | `_PIItemBusKey` | `StockDocumentCategory` |
-| `WBSElementInternalID` |  | | `_PIItemBusKey` | `WBSElementInternalID` |
-| `WBSElementExternalID` |  | | `_PIItemBusKey` | `WBSElementExternalID` |
-| `SpecialStockIdfgSalesOrder` |  | | `_PIItemBusKey` | `SpecialStockIdfgSalesOrder` |
-| `SpecialStockIdfgSalesOrderItem` |  | | `_PIItemBusKey` | `SpecialStockIdfgSalesOrderItem` |
-| `WhseQualityInspectionType` |  | |  |  |
-| `QualityInspectionDocUUID` |  | |  |  |
-| `QualityInspectionDocument` |  | | `_QualityInspection` | `QualityInspectionDocument` |
-| `StockIdentificationNumber` |  | |  |  |
-| `EWMStockReferenceDocCategory` |  | |  |  |
-| `EWMStockRefDocumentUUID` |  | |  |  |
-| `EWMStockRefDocItemUUID` |  | |  |  |
-| `EWMStockReferenceDocument` |  | |  | `case item.EWMStockReferenceDocCategory when 'PDI' then cast(_WarehouseRequestInbHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PDO' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'SPC' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'WMR' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PWR' then cast(_ProdnMatlReqHeader.EWMProductionMaterialRequest as ewm_de_referencedocument preserving type ) else cast( cast('' as /scdl/dl_docno_int) as ewm_de_referencedocument preserving type ) end` |
-| `EWMStockReferenceDocumentItem` |  | |  | `case item.EWMStockReferenceDocCategory when 'PDI' then cast(_InbDeliveryItem.EWMInboundDeliveryItem as ewm_de_referencedocumentitem preserving type ) when 'PDO' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'SPC' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'WMR' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'PWR' then cast(_ProdnMatlReqItem.EWMProductionMaterialReqItem as ewm_de_referencedocumentitem preserving type ) else cast( cast('' as /scdl/dl_itemno) as ewm_de_referencedocumentitem preserving type ) end` |
-| `EWMGoodsReceiptDateTime` |  | |  |  |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `CountryOfOrigin` |  | |  |  |
-| `MatlBatchIsInRstrcdUseStock` |  | |  |  |
-| `PInvIsZeroCount` |  | |  | `cast( _PIItemCountedQuan.PInvIsZeroCount as boole_d )` |
-| `PInvQuantitySequence` |  | |  | `case when _PIItemCountedQuan.PInvQuantitySequence is not initial then _PIItemCountedQuan.PInvQuantitySequence else _PIItemProposedQuan.PInvQuantitySequence end` |
-| `EWMPhysInvtrySuggestedQty` |  | |  | `} cast(_PIItemProposedQuan.QuantityOfPInvItemInBaseUoM as ewm_de_pi_suggestedquantity preserving type )` |
-| `EWMPhysInvtrySuggestedQtyUnit` |  | |  | `cast(_PIItemProposedQuan.UnitOfMeasure as ewm_de_pi_suggestedquantityuom preserving type )` |
-| `EWMPhysInvtryBookQuantity` |  | |  | `} cast(_PIItemProposedQuan.QuantityOfPInvItemInBaseUoM as ewm_de_pi_bookedquantity preserving type )` |
-| `EWMPhysInvtryBookQtyUnit` |  | |  | `cast(_PIItemProposedQuan.UnitOfMeasure as ewm_de_pi_bookedquantityuom preserving type )` |
-| `EWMPhysInvtryCountedQuantity` |  | |  | `} cast( case when _PIItemCountedQuan.UnitOfMeasure <> '' then _PIItemCountedQuan.QuantityOfPInvItemInBaseUoM else case when item.PInvDocumentItemType = 'B' then _PIItemProposedQuan.QuantityOfPInvItemInBaseUoM end end as ewm_de_pi_countedquantity preserving type )` |
-| `EWMPhysInvtryCountedQtyUnit` |  | |  | `cast( case when _PIItemCountedQuan.UnitOfMeasure <> '' then _PIItemCountedQuan.UnitOfMeasure else case when item.PInvDocumentItemType = 'B' then _PIItemProposedQuan.UnitOfMeasure end end as ewm_de_pi_countedquantityuom preserving type )` |
-| `EWMPhysInvtryEnteredQuantity` |  | |  | `} cast(_PIItemCountedQuan.EnteredQuantityOfPInvItem as ewm_de_pi_enteredquanity preserving type )` |
-| `EWMPhysInvtryEnteredQtyUnit` |  | |  | `cast(_PIItemCountedQuan.EnteredUoMOfPInv as ewm_de_pi_enteredquanityuom preserving type )` |
-| `EWMPhysInvtryDiffQuantity` |  | |  | `} cast(_PIItemDiffQuan.EWMPhysInvtryDiffQuantity as ewm_de_pi_differencequantity preserving type )` |
-| `EWMPhysInvtryDiffQuantityUnit` |  | |  | `cast(_PIItemDiffQuan.EWMPhysInvtryDiffQuantityUnit as ewm_de_pi_differenceqtyuom preserving type )` |
-| `PhysicalInventoryStockUUID` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | | `_PIHeader` | `EWMWarehouse` |  |  |
+| `PhysicalInventoryDocNumber` | ✓ | | `_PIHeader` | `PhysicalInventoryDocNumber` |  |  |
+| `PhysicalInventoryDocYear` | ✓ | | `_PIHeader` | `PhysicalInventoryDocYear` |  |  |
+| `PhysicalInventoryItemNumber` | ✓ | |  |  |  |  |
+| `LineIndexOfPInvItem` | ✓ | |  |  |  |  |
+| `EWMStorageType` |  | | `_storagebin` | `EWMStorageType` |  |  |
+| `EWMStorageBin` |  | | `_storagebin` | `EWMStorageBin` |  |  |
+| `EWMPhysicalInventoryStatus` |  | |  |  |  |  |
+| `ActivityArea` |  | | `_PIAreaMapping` | `ActivityArea` |  |  |
+| `EWMStorageBinIsEmpty` |  | |  | `cast( _PIItemBinEmpty.EWMStorageBinIsEmpty as boole_d )` |  |  |
+| `HandlingUnitNumber` |  | |  | `case when item.HandlingUnitVirtual = 'A' then '' when _parent.ParentHandlingUnitNumber is not initial then _parent.ParentHandlingUnitNumber when item.ParentHandlingUnitNumber is not initial then item.ParentHandlingUnitNumber else item.HandlingUnitNumber end` |  |  |
+| `HndlgUnitItemCountedIsComplete` |  | |  | `case when _parent.HandlingUnitNumber is not initial then _parent.HndlgUnitItemCountedIsComplete else item.HndlgUnitItemCountedIsComplete end` |  |  |
+| `HndlgUnitItemCountedIsEmpty` |  | |  | `case when _parent.HandlingUnitNumber is not initial then _parent.HndlgUnitItemCountedIsEmpty else item.HndlgUnitItemCountedIsEmpty end` |  |  |
+| `HndlgUnitItemCountedIsNotExist` |  | |  | `case when _parent.HandlingUnitNumber is not initial then _parent.HndlgUnitItemCountedIsNotExist else item.HndlgUnitItemCountedIsNotExist end` |  |  |
+| `PackagingMaterial` |  | | `_parent` | `PackagingMaterial` |  |  |
+| `HandlingUnitType` |  | | `_parent` | `HandlingUnitType` |  |  |
+| `EWMPInvHasExtraHndlgUnitLevel` |  | |  | `cast ( case when _parent.ParentHandlingUnitNumber is not initial and item.ParentHandlingUnitNumber is not initial then 'X' else '' end as boole_d )` |  |  |
+| `Product` |  | | `_PIItemBusKey` | `Product` |  |  |
+| `ProductUUID` |  | | `_PIItemBusKey` | `ProductUUID` |  |  |
+| `Batch` |  | | `_PIItemBusKey` | `Batch` |  |  |
+| `BatchUUID` |  | | `_PIItemBusKey` | `BatchUUID` |  |  |
+| `SerialNumberRequiredLevel` |  | | `_PIItemBusKey` | `SerialNumberRequiredLevel` |  |  |
+| `EWMStockType` |  | | `_PIItemBusKey` | `EWMStockType` |  |  |
+| `EWMStockOwner` |  | | `_PIItemBusKey` | `EWMStockOwner` |  |  |
+| `StockOwnerPartnerRole` |  | | `_PIItemBusKey` | `StockOwnerPartnerRole` |  |  |
+| `EWMStockUsage` |  | | `_PIItemBusKey` | `EWMStockUsage` |  |  |
+| `EntitledToDisposeParty` |  | | `_PIItemBusKey` | `EntitledToDisposeParty` |  |  |
+| `EntitledToDisposePartnerRole` |  | | `_PIItemBusKey` | `EntitledToDisposePartnerRole` |  |  |
+| `StockDocumentCategory` |  | | `_PIItemBusKey` | `StockDocumentCategory` |  |  |
+| `WBSElementInternalID` |  | | `_PIItemBusKey` | `WBSElementInternalID` |  |  |
+| `WBSElementExternalID` |  | | `_PIItemBusKey` | `WBSElementExternalID` |  |  |
+| `SpecialStockIdfgSalesOrder` |  | | `_PIItemBusKey` | `SpecialStockIdfgSalesOrder` |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | | `_PIItemBusKey` | `SpecialStockIdfgSalesOrderItem` |  |  |
+| `WhseQualityInspectionType` |  | |  |  |  |  |
+| `QualityInspectionDocUUID` |  | |  |  |  |  |
+| `QualityInspectionDocument` |  | | `_QualityInspection` | `QualityInspectionDocument` |  |  |
+| `StockIdentificationNumber` |  | |  |  |  |  |
+| `EWMStockReferenceDocCategory` |  | |  |  |  |  |
+| `EWMStockRefDocumentUUID` |  | |  |  |  |  |
+| `EWMStockRefDocItemUUID` |  | |  |  |  |  |
+| `EWMStockReferenceDocument` |  | |  | `case item.EWMStockReferenceDocCategory when 'PDI' then cast(_WarehouseRequestInbHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PDO' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'SPC' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'WMR' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PWR' then cast(_ProdnMatlReqHeader.EWMProductionMaterialRequest as ewm_de_referencedocument preserving type ) else cast( cast('' as /scdl/dl_docno_int) as ewm_de_referencedocument preserving type ) end` |  |  |
+| `EWMStockReferenceDocumentItem` |  | |  | `case item.EWMStockReferenceDocCategory when 'PDI' then cast(_InbDeliveryItem.EWMInboundDeliveryItem as ewm_de_referencedocumentitem preserving type ) when 'PDO' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'SPC' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'WMR' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'PWR' then cast(_ProdnMatlReqItem.EWMProductionMaterialReqItem as ewm_de_referencedocumentitem preserving type ) else cast( cast('' as /scdl/dl_itemno) as ewm_de_referencedocumentitem preserving type ) end` |  |  |
+| `EWMGoodsReceiptDateTime` |  | |  |  |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `MatlBatchIsInRstrcdUseStock` |  | |  |  |  |  |
+| `PInvIsZeroCount` |  | |  | `cast( _PIItemCountedQuan.PInvIsZeroCount as boole_d )` |  |  |
+| `PInvQuantitySequence` |  | |  | `case when _PIItemCountedQuan.PInvQuantitySequence is not initial then _PIItemCountedQuan.PInvQuantitySequence else _PIItemProposedQuan.PInvQuantitySequence end` |  |  |
+| `EWMPhysInvtrySuggestedQty` |  | |  | `cast(_PIItemProposedQuan.QuantityOfPInvItemInBaseUoM as ewm_de_pi_suggestedquantity preserving type )` |  |  |
+| `EWMPhysInvtrySuggestedQtyUnit` |  | |  | `cast(_PIItemProposedQuan.UnitOfMeasure as ewm_de_pi_suggestedquantityuom preserving type )` |  |  |
+| `EWMPhysInvtryBookQuantity` |  | |  | `cast(_PIItemProposedQuan.QuantityOfPInvItemInBaseUoM as ewm_de_pi_bookedquantity preserving type )` |  |  |
+| `EWMPhysInvtryBookQtyUnit` |  | |  | `cast(_PIItemProposedQuan.UnitOfMeasure as ewm_de_pi_bookedquantityuom preserving type )` |  |  |
+| `EWMPhysInvtryCountedQuantity` |  | |  | `cast( case when _PIItemCountedQuan.UnitOfMeasure <> '' then _PIItemCountedQuan.QuantityOfPInvItemInBaseUoM else case when item.PInvDocumentItemType = 'B' then _PIItemProposedQuan.QuantityOfPInvItemInBaseUoM end end as ewm_de_pi_countedquantity preserving type )` |  |  |
+| `EWMPhysInvtryCountedQtyUnit` |  | |  | `cast( case when _PIItemCountedQuan.UnitOfMeasure <> '' then _PIItemCountedQuan.UnitOfMeasure else case when item.PInvDocumentItemType = 'B' then _PIItemProposedQuan.UnitOfMeasure end end as ewm_de_pi_countedquantityuom preserving type )` |  |  |
+| `EWMPhysInvtryEnteredQuantity` |  | |  | `cast(_PIItemCountedQuan.EnteredQuantityOfPInvItem as ewm_de_pi_enteredquanity preserving type )` |  |  |
+| `EWMPhysInvtryEnteredQtyUnit` |  | |  | `cast(_PIItemCountedQuan.EnteredUoMOfPInv as ewm_de_pi_enteredquanityuom preserving type )` |  |  |
+| `EWMPhysInvtryDiffQuantity` |  | |  | `cast(_PIItemDiffQuan.EWMPhysInvtryDiffQuantity as ewm_de_pi_differencequantity preserving type )` |  |  |
+| `EWMPhysInvtryDiffQuantityUnit` |  | |  | `cast(_PIItemDiffQuan.EWMPhysInvtryDiffQuantityUnit as ewm_de_pi_differenceqtyuom preserving type )` |  |  |
+| `PhysicalInventoryStockUUID` |  | |  |  |  |  |
 
 ## Associations
 

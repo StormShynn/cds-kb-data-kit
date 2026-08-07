@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusPartnerInvoiceItemStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l,2 ) as inv_item_status_dc_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusPartnerInvoiceItemStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l,2 ) as inv_item_status_dc_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

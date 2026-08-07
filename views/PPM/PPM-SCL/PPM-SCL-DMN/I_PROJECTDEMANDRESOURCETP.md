@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandWorkUUID` | ✓ | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ReferencedObjectUUID` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ActivityType` |  | |  |  |
-| `ProjDmndAssgmtStatus` |  | |  |  |
-| `ProjectElementWorkItem` |  | |  |  |
-| `ProjDmndBillingControlCategory` |  | |  |  |
-| `ProjDmndRequestedDeliveryOrg` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_ResourceAssignment` | | ✓ | | |
-| `_ResourceRequest` | | ✓ | | |
-| `_CostCenterActType` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CostCenterText` | | ✓ | | |
-| `_ActivityTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandWorkUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ReferencedObjectUUID` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ActivityType` |  | |  |  |  |  |
+| `ProjDmndAssgmtStatus` |  | |  |  |  |  |
+| `ProjectElementWorkItem` |  | |  |  |  |  |
+| `ProjDmndBillingControlCategory` |  | |  |  |  |  |
+| `ProjDmndRequestedDeliveryOrg` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_ResourceAssignment` | | ✓ | | | | |
+| `_ResourceRequest` | | ✓ | | | | |
+| `_CostCenterActType` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CostCenterText` | | ✓ | | | | |
+| `_ActivityTypeText` | | ✓ | | | | |
 
 ## Source Code
 

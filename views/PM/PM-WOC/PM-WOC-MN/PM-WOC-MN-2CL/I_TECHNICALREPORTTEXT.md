@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CatalogProfile` | ✓ | |  | `rbnr` |
-| `Language` | ✓ | |  | `spras` |
-| `CatalogProfileText` |  | |  | `rbnrx` |
-| `_Language` | | ✓ | | |
-| `_TechnicalReport` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CatalogProfile` | ✓ | |  | `rbnr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CatalogProfileText` |  | |  | `rbnrx` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TechnicalReport` | | ✓ | | | | |
 
 ## Associations
 

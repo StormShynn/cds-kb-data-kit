@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgTechnicalDocumentType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as techdoctype_gfn_kk preserving type )` |
-| `_CAInvcgDocTechDocTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgTechnicalDocumentType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as techdoctype_gfn_kk preserving type )` |  |  |
+| `_CAInvcgDocTechDocTypeText` | | ✓ | | | | |
 
 ## Associations
 

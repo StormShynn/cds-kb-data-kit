@@ -28,50 +28,50 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnNumber` | ✓ | |  | `billplanno` |
-| `CABillgPlnCategory` |  | |  | `cast(bipcat as bipcat_gfn_kk preserving type )` |
-| `CABillgPlnType` |  | |  | `biptype` |
-| `CABillgPlnStatus` |  | |  | `status` |
-| `CABillgPlnStartDate` |  | |  | `valid_from` |
-| `CABillgPlnEndDate` |  | |  | `valid_to` |
-| `CABillgPlnLastRequestDate` |  | |  | `requestdate_last` |
-| `CABillgPlnNextRequestDate` |  | |  | `requestdate_next` |
-| `CABillgPlnDescription` |  | |  | `biptext` |
-| `CABillgPlnExternalReference` |  | |  | `bipref` |
-| `LogicalSystem` |  | |  | `logsys` |
-| `CAApplicationArea` |  | |  | `applk` |
-| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type )` |
-| `ContractAccount` |  | |  | `vkont` |
-| `CAInvcgMasterDataType` |  | |  | `mdcat` |
-| `CAContract` |  | |  | `vtref` |
-| `CAProviderContractItemUUID` |  | |  | `vtpid` |
-| `CASubApplication` |  | |  | `subap` |
-| `CAMasterAgreement` |  | |  | `makey` |
-| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |
-| `CABillgPlnCreatedByUser` |  | |  | `crname` |
-| `CABillgPlnCreationDate` |  | |  | `crdate` |
-| `CABillgPlnCreationTime` |  | |  | `crtime` |
-| `CABillgPlnChangedByUser` |  | |  | `chname` |
-| `CABillgPlnChangeDate` |  | |  | `chdate` |
-| `CABillgPlnChangeTime` |  | |  | `chtime` |
-| `CABillgPlnCreationMode` |  | |  | `crmode` |
-| `CABillgPlnNumberBllbleItm` |  | |  | `bit_number` |
-| `CABillgPlnCompletionDate` |  | |  | `completion_date` |
-| `CABillgPlnIsTemplate` |  | |  | `xtemp` |
-| `CABillgPlnVersion` |  | |  | `version` |
-| `_CABillgPlnCategory` | | ✓ | | |
-| `_CABillgPlnType` | | ✓ | | |
-| `_CABillgPlnStatus` | | ✓ | | |
-| `_CABillgPlnCreationMode` | | ✓ | | |
-| `_CAInvcgMasterDataType` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_ContractAccount` | | ✓ | | |
-| `_CAApplicationArea` | | ✓ | | |
-| `_CASubApplication` | | ✓ | | |
-| `_CAMasterAgreement` | | ✓ | | |
-| `_ContractAccountPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnNumber` | ✓ | |  | `billplanno` |  |  |
+| `CABillgPlnCategory` |  | |  | `cast(bipcat as bipcat_gfn_kk preserving type )` |  |  |
+| `CABillgPlnType` |  | |  | `biptype` |  |  |
+| `CABillgPlnStatus` |  | |  | `status` |  |  |
+| `CABillgPlnStartDate` |  | |  | `valid_from` |  |  |
+| `CABillgPlnEndDate` |  | |  | `valid_to` |  |  |
+| `CABillgPlnLastRequestDate` |  | |  | `requestdate_last` |  |  |
+| `CABillgPlnNextRequestDate` |  | |  | `requestdate_next` |  |  |
+| `CABillgPlnDescription` |  | |  | `biptext` |  |  |
+| `CABillgPlnExternalReference` |  | |  | `bipref` |  |  |
+| `LogicalSystem` |  | |  | `logsys` |  |  |
+| `CAApplicationArea` |  | |  | `applk` |  |  |
+| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type )` |  |  |
+| `ContractAccount` |  | |  | `vkont` |  |  |
+| `CAInvcgMasterDataType` |  | |  | `mdcat` |  |  |
+| `CAContract` |  | |  | `vtref` |  |  |
+| `CAProviderContractItemUUID` |  | |  | `vtpid` |  |  |
+| `CASubApplication` |  | |  | `subap` |  |  |
+| `CAMasterAgreement` |  | |  | `makey` |  |  |
+| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |  |  |
+| `CABillgPlnCreatedByUser` |  | |  | `crname` |  |  |
+| `CABillgPlnCreationDate` |  | |  | `crdate` |  |  |
+| `CABillgPlnCreationTime` |  | |  | `crtime` |  |  |
+| `CABillgPlnChangedByUser` |  | |  | `chname` |  |  |
+| `CABillgPlnChangeDate` |  | |  | `chdate` |  |  |
+| `CABillgPlnChangeTime` |  | |  | `chtime` |  |  |
+| `CABillgPlnCreationMode` |  | |  | `crmode` |  |  |
+| `CABillgPlnNumberBllbleItm` |  | |  | `bit_number` |  |  |
+| `CABillgPlnCompletionDate` |  | |  | `completion_date` |  |  |
+| `CABillgPlnIsTemplate` |  | |  | `xtemp` |  |  |
+| `CABillgPlnVersion` |  | |  | `version` |  |  |
+| `_CABillgPlnCategory` | | ✓ | | | | |
+| `_CABillgPlnType` | | ✓ | | | | |
+| `_CABillgPlnStatus` | | ✓ | | | | |
+| `_CABillgPlnCreationMode` | | ✓ | | | | |
+| `_CAInvcgMasterDataType` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_ContractAccount` | | ✓ | | | | |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_CASubApplication` | | ✓ | | | | |
+| `_CAMasterAgreement` | | ✓ | | | | |
+| `_ContractAccountPartner` | | ✓ | | | | |
 
 ## Associations
 

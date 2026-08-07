@@ -30,94 +30,94 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMInboundDelivery` | ✓ | |  |  |
-| `EWMInboundDeliveryItem` | ✓ | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `WarehouseTimeZone` |  | | `_Header` | `WarehouseTimeZone` |
-| `EWMDeliveryDocumentCategory` |  | |  | `DeliveryDocumentCategory` |
-| `EWMInboundDeliveryItemCategory` |  | |  | `DeliveryItemCategory` |
-| `EWMInboundDeliveryItemType` |  | |  | `InboundDeliveryItemType` |
-| `Product` |  | |  | `cast(Product as char40 preserving type)` |
-| `ProductUUID` |  | |  |  |
-| `ProductExternalID` |  | |  | `cast(ProductExternalID as char40 preserving type)` |
-| `Batch` |  | |  | `cast(Batch as charg_d)` |
-| `EWMBatchBySupplierPlanned` |  | | `_ExtProdBatch` | `EWMBatchBySupplierPlanned` |
-| `EWMProductBySupplier` |  | | `_ExtProdBatch` | `EWMProductBySupplier` |
-| `CountryOfOrigin` |  | |  |  |
-| `ProductQuantity` |  | |  |  |
-| `EWMWhseReqItmProductUIQuantity` |  | |  | `cast(ProductQuantity as ewm_de_whsereqitmproductuiquan)` |
-| `QuantityUnit` |  | |  | `cast(QuantityUnit as /scwm/de_base_uom preserving type)` |
-| `SerialNumberRequiredLevel` |  | |  |  |
-| `EWMWhseReqItmBBDSLEDUTCDteTme` |  | |  |  |
-| `EWMWhseReqItmProdnDteTme` |  | |  |  |
-| `EWMInbDelivItmQuantitySAPCode` |  | | `_UnitOfMeasure` | `UnitOfMeasureSAPCode` |
-| `EWMInbDelivItmQuantityISOCode` |  | | `_UnitOfMeasure` | `UnitOfMeasureISOCode` |
-| `EWMWhseReqItmBatSpltParentItem` |  | |  | `cast(case when _BatchSplitDetail.InboundDeliveryUUID is not null and _BatchSplitDetail.EWMWhseReqItmBatSpltParentItem is null then EWMInboundDeliveryItem else _BatchSplitDetail.EWMWhseReqItmBatSpltParentItem end as ewm_de_whsereqitmbatspltparitm preserving type)` |
-| `EWMWhseReqItmHierParentItem` |  | |  | `cast(case when _BatchSplitDetail.EWMWhseReqItmBatSpltParentItem is not null then _BatchSplitDetail.EWMWhseReqItmBatSpltParentItem else EWMInboundDeliveryItem end as ewm_de_whsereqitmhierparitm preserving type)` |
-| `StagingAreaGroup` |  | |  |  |
-| `StagingArea` |  | |  |  |
-| `StagingBay` |  | |  |  |
-| `GoodsReceiptStatus` |  | |  |  |
-| `EWMGoodsReceiptAndDistrStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DDD'].Status` |
-| `PlanningPutawayStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DEU'].Status` |
-| `EWMPlndPutawayAndDistrStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DAD'].Status` |
-| `PutawayStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DPT'].Status` |
-| `EWMPutawayAndDistrStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DYD'].Status` |
-| `OverallBlockStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DBO'].Status` |
-| `CompletionStatus` |  | |  |  |
-| `FldLogsStatus` |  | |  |  |
-| `WarehouseProcessType` |  | |  |  |
-| `GoodsMovementBin` |  | |  |  |
-| `EWMProductionSupplyArea` |  | |  |  |
-| `EWMDelivLastChangeUTCDateTime` |  | |  | `case when EWMDelivLastChangeUTCDateTime is initial then cast(InbDelivItemCrtnUTCDateTime as tzntstmps preserving type) else cast(EWMDelivLastChangeUTCDateTime as tzntstmps preserving type) end` |
-| `EntitledToDisposeParty` |  | |  |  |
-| `EntitledToDisposePartyName` |  | |  | `case when (_EWMEntitledToDisposeDetails.IsBusinessPurposeCompleted <> 'X' or _EWMEntitledToDisposeDetails.IsBusinessPurposeCompleted is null) then _EWMEntitledToDisposeDetails.BusinessPartnerName else cast('' as bu_nameor1) end` |
-| `EWMStockUsage` |  | |  | `StockUsage` |
-| `EWMStockType` |  | |  | `StockType` |
-| `EWMStockOwner` |  | |  | `cast(StockOwner as char10 preserving type)` |
-| `DeliveryItemStockTypeDetnCode` |  | |  |  |
-| `EWMStockOwnerName` |  | |  | `case when (_EWMStockOwnerDetails.IsBusinessPurposeCompleted <> 'X' or _EWMStockOwnerDetails.IsBusinessPurposeCompleted is null) then _EWMStockOwnerDetails.BusinessPartnerName else cast('' as bu_nameor1) end` |
-| `EWMGoodsRecipient` |  | |  |  |
-| `EWMRecipientLocationName` |  | |  |  |
-| `QualityInspectionDocument` |  | |  | `cast(_QualityInspectionLot.QualityInspectionDocument as /scwm/de_qentity_extid preserving type)` |
-| `ExternalStockDocumentNumber` |  | |  | `cast(case StockDocumentCategory when 'PJS' then _ProjectStockEmbedded.WBSElementExternalID else StockDocumentNumber end as ewm_de_stockdocumentnumber)` |
-| `StockDocumentCategory` |  | |  | `cast(StockDocumentCategory as ewm_de_stockdocumentcat preserving type)` |
-| `StockDocumentNumber` |  | |  |  |
-| `StockItemNumber` |  | |  |  |
-| `WBSElementInternalID` |  | |  | `case StockDocumentCategory when 'PJS' then _ProjectStockEmbedded.WBSElementInternalID else cast('00000000' as ps_s4_pspnr preserving type) end` |
-| `WBSElementExternalID` |  | |  | `case StockDocumentCategory when 'PJS' then _ProjectStockEmbedded.WBSElementExternalID else cast(' ' as ps_posid_edit preserving type) end` |
-| `SpecialStockIdfgSalesOrder` |  | |  | `cast(SpecialStockIdfgSalesOrder as ewm_de_special_stock_idfg_hdr)` |
-| `SpecialStockIdfgSalesOrderItem` |  | |  | `cast(SpecialStockIdfgSalesOrderItem as ewm_de_special_stock_idfg_item)` |
-| `PurchasingDocument` |  | |  | `cast(PurchasingDocument as fis_ebeln)` |
-| `PurchasingDocumentItem` |  | |  | `cast(PurchasingDocumentItem as ewm_de_purchase_order_item)` |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `ManufacturingOrder` |  | |  | `cast(_ManufacturingOrder.EWMRefDeliveryDocumentNumber as manufacturingorder)` |
-| `MaintenanceOrder` |  | |  | `cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'PMO'].EWMRefDeliveryDocumentNumber as ewm_de_maintenance_order)` |
-| `MaintenanceOrderOperation` |  | |  | `cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'POO'].EWMRefDeliveryDocumentItem as ewm_de_maintenance_order_op)` |
-| `Reservation` |  | |  | `cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'RES'].EWMRefDeliveryDocumentNumber as rsnum)` |
-| `InboundDelivery` |  | |  | `cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'ERP'].EWMRefDeliveryDocumentNumber as /scwm/sp_docno_erp)` |
-| `InboundDeliveryItem` |  | |  | `cast(substring(cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'ERP'].EWMRefDeliveryDocumentItem as abap.numc(10)), 5, 6) as ewm_de_inb_deliv_item_aconv)` |
-| `InboundDeliveryUUID` |  | |  |  |
-| `InboundDeliveryItemUUID` |  | |  |  |
-| `_WarehouseText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_CountryText` | | ✓ | | |
-| `_WhseProcTypeText` | | ✓ | | |
-| `_StockTypeText` | | ✓ | | |
-| `_EWMStockUsageText` | | ✓ | | |
-| `_StockDocCategoryText` | | ✓ | | |
-| `_PutawayStatusText` | | ✓ | | |
-| `_GoodsReceiptStatusText` | | ✓ | | |
-| `_OverallBlockStatusText` | | ✓ | | |
-| `_CompletionStatusText` | | ✓ | | |
-| `_PlanningPutawayStatusText` | | ✓ | | |
-| `_ItemCatText` | | ✓ | | |
-| `_ItemTypeText` | | ✓ | | |
-| `_SerialNumberLevelText` | | ✓ | | |
-| `_FldLogsStatusTxt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMInboundDelivery` | ✓ | |  |  |  |  |
+| `EWMInboundDeliveryItem` | ✓ | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `WarehouseTimeZone` |  | | `_Header` | `WarehouseTimeZone` |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  | `DeliveryDocumentCategory` |  |  |
+| `EWMInboundDeliveryItemCategory` |  | |  | `DeliveryItemCategory` |  |  |
+| `EWMInboundDeliveryItemType` |  | |  | `InboundDeliveryItemType` |  |  |
+| `Product` |  | |  | `cast(Product as char40 preserving type)` |  |  |
+| `ProductUUID` |  | |  |  |  |  |
+| `ProductExternalID` |  | |  | `cast(ProductExternalID as char40 preserving type)` |  |  |
+| `Batch` |  | |  | `cast(Batch as charg_d)` |  |  |
+| `EWMBatchBySupplierPlanned` |  | | `_ExtProdBatch` | `EWMBatchBySupplierPlanned` |  |  |
+| `EWMProductBySupplier` |  | | `_ExtProdBatch` | `EWMProductBySupplier` |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `ProductQuantity` |  | |  |  |  |  |
+| `EWMWhseReqItmProductUIQuantity` |  | |  | `cast(ProductQuantity as ewm_de_whsereqitmproductuiquan)` |  |  |
+| `QuantityUnit` |  | |  | `cast(QuantityUnit as /scwm/de_base_uom preserving type)` |  |  |
+| `SerialNumberRequiredLevel` |  | |  |  |  |  |
+| `EWMWhseReqItmBBDSLEDUTCDteTme` |  | |  |  |  |  |
+| `EWMWhseReqItmProdnDteTme` |  | |  |  |  |  |
+| `EWMInbDelivItmQuantitySAPCode` |  | | `_UnitOfMeasure` | `UnitOfMeasureSAPCode` |  |  |
+| `EWMInbDelivItmQuantityISOCode` |  | | `_UnitOfMeasure` | `UnitOfMeasureISOCode` |  |  |
+| `EWMWhseReqItmBatSpltParentItem` |  | |  | `cast(case when _BatchSplitDetail.InboundDeliveryUUID is not null and _BatchSplitDetail.EWMWhseReqItmBatSpltParentItem is null then EWMInboundDeliveryItem else _BatchSplitDetail.EWMWhseReqItmBatSpltParentItem end as ewm_de_whsereqitmbatspltparitm preserving type)` |  |  |
+| `EWMWhseReqItmHierParentItem` |  | |  | `cast(case when _BatchSplitDetail.EWMWhseReqItmBatSpltParentItem is not null then _BatchSplitDetail.EWMWhseReqItmBatSpltParentItem else EWMInboundDeliveryItem end as ewm_de_whsereqitmhierparitm preserving type)` |  |  |
+| `StagingAreaGroup` |  | |  |  |  |  |
+| `StagingArea` |  | |  |  |  |  |
+| `StagingBay` |  | |  |  |  |  |
+| `GoodsReceiptStatus` |  | |  |  |  |  |
+| `EWMGoodsReceiptAndDistrStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DDD'].Status` |  |  |
+| `PlanningPutawayStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DEU'].Status` |  |  |
+| `EWMPlndPutawayAndDistrStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DAD'].Status` |  |  |
+| `PutawayStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DPT'].Status` |  |  |
+| `EWMPutawayAndDistrStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DYD'].Status` |  |  |
+| `OverallBlockStatus` |  | |  | `_ItemStatus[1: DeliveryStatusType = 'DBO'].Status` |  |  |
+| `CompletionStatus` |  | |  |  |  |  |
+| `FldLogsStatus` |  | |  |  |  |  |
+| `WarehouseProcessType` |  | |  |  |  |  |
+| `GoodsMovementBin` |  | |  |  |  |  |
+| `EWMProductionSupplyArea` |  | |  |  |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  | `case when EWMDelivLastChangeUTCDateTime is initial then cast(InbDelivItemCrtnUTCDateTime as tzntstmps preserving type) else cast(EWMDelivLastChangeUTCDateTime as tzntstmps preserving type) end` |  |  |
+| `EntitledToDisposeParty` |  | |  |  |  |  |
+| `EntitledToDisposePartyName` |  | |  | `case when (_EWMEntitledToDisposeDetails.IsBusinessPurposeCompleted <> 'X' or _EWMEntitledToDisposeDetails.IsBusinessPurposeCompleted is null) then _EWMEntitledToDisposeDetails.BusinessPartnerName else cast('' as bu_nameor1) end` |  |  |
+| `EWMStockUsage` |  | |  | `StockUsage` |  |  |
+| `EWMStockType` |  | |  | `StockType` |  |  |
+| `EWMStockOwner` |  | |  | `cast(StockOwner as char10 preserving type)` |  |  |
+| `DeliveryItemStockTypeDetnCode` |  | |  |  |  |  |
+| `EWMStockOwnerName` |  | |  | `case when (_EWMStockOwnerDetails.IsBusinessPurposeCompleted <> 'X' or _EWMStockOwnerDetails.IsBusinessPurposeCompleted is null) then _EWMStockOwnerDetails.BusinessPartnerName else cast('' as bu_nameor1) end` |  |  |
+| `EWMGoodsRecipient` |  | |  |  |  |  |
+| `EWMRecipientLocationName` |  | |  |  |  |  |
+| `QualityInspectionDocument` |  | |  | `cast(_QualityInspectionLot.QualityInspectionDocument as /scwm/de_qentity_extid preserving type)` |  |  |
+| `ExternalStockDocumentNumber` |  | |  | `cast(case StockDocumentCategory when 'PJS' then _ProjectStockEmbedded.WBSElementExternalID else StockDocumentNumber end as ewm_de_stockdocumentnumber)` |  |  |
+| `StockDocumentCategory` |  | |  | `cast(StockDocumentCategory as ewm_de_stockdocumentcat preserving type)` |  |  |
+| `StockDocumentNumber` |  | |  |  |  |  |
+| `StockItemNumber` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  | `case StockDocumentCategory when 'PJS' then _ProjectStockEmbedded.WBSElementInternalID else cast('00000000' as ps_s4_pspnr preserving type) end` |  |  |
+| `WBSElementExternalID` |  | |  | `case StockDocumentCategory when 'PJS' then _ProjectStockEmbedded.WBSElementExternalID else cast(' ' as ps_posid_edit preserving type) end` |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  | `cast(SpecialStockIdfgSalesOrder as ewm_de_special_stock_idfg_hdr)` |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  | `cast(SpecialStockIdfgSalesOrderItem as ewm_de_special_stock_idfg_item)` |  |  |
+| `PurchasingDocument` |  | |  | `cast(PurchasingDocument as fis_ebeln)` |  |  |
+| `PurchasingDocumentItem` |  | |  | `cast(PurchasingDocumentItem as ewm_de_purchase_order_item)` |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `ManufacturingOrder` |  | |  | `cast(_ManufacturingOrder.EWMRefDeliveryDocumentNumber as manufacturingorder)` |  |  |
+| `MaintenanceOrder` |  | |  | `cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'PMO'].EWMRefDeliveryDocumentNumber as ewm_de_maintenance_order)` |  |  |
+| `MaintenanceOrderOperation` |  | |  | `cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'POO'].EWMRefDeliveryDocumentItem as ewm_de_maintenance_order_op)` |  |  |
+| `Reservation` |  | |  | `cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'RES'].EWMRefDeliveryDocumentNumber as rsnum)` |  |  |
+| `InboundDelivery` |  | |  | `cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'ERP'].EWMRefDeliveryDocumentNumber as /scwm/sp_docno_erp)` |  |  |
+| `InboundDeliveryItem` |  | |  | `cast(substring(cast(_ReferenceDocuments[1: EWMReferenceDocumentCategory = 'ERP'].EWMRefDeliveryDocumentItem as abap.numc(10)), 5, 6) as ewm_de_inb_deliv_item_aconv)` |  |  |
+| `InboundDeliveryUUID` |  | |  |  |  |  |
+| `InboundDeliveryItemUUID` |  | |  |  |  |  |
+| `_WarehouseText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
+| `_WhseProcTypeText` | | ✓ | | | | |
+| `_StockTypeText` | | ✓ | | | | |
+| `_EWMStockUsageText` | | ✓ | | | | |
+| `_StockDocCategoryText` | | ✓ | | | | |
+| `_PutawayStatusText` | | ✓ | | | | |
+| `_GoodsReceiptStatusText` | | ✓ | | | | |
+| `_OverallBlockStatusText` | | ✓ | | | | |
+| `_CompletionStatusText` | | ✓ | | | | |
+| `_PlanningPutawayStatusText` | | ✓ | | | | |
+| `_ItemCatText` | | ✓ | | | | |
+| `_ItemTypeText` | | ✓ | | | | |
+| `_SerialNumberLevelText` | | ✓ | | | | |
+| `_FldLogsStatusTxt` | | ✓ | | | | |
 
 ## Associations
 

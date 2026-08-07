@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `SerialNumber` | ✓ | |  |  |
-| `Equipment` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  | `}] ess.SalesOrderItem` |
-| `InventorySpecialStockType` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `Batch` |  | |  |  |
-| `InventoryStockType` |  | |  |  |
-| `StockOwner` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `SerialNumber` | ✓ | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `InventoryStockType` |  | |  |  |  |  |
+| `StockOwner` |  | |  |  |  |  |
 
 ## Source Code
 

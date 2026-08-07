@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContactPersonFunction` | ✓ | |  | `pafkt` |
-| `Language` | ✓ | |  | `spras` |
-| `ContactPersonFunctionName` |  | |  | `bez30` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContactPersonFunction` | ✓ | |  | `pafkt` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ContactPersonFunctionName` |  | |  | `bez30` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

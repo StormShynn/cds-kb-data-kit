@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialABCClassification` | ✓ | |  | `cast(maabc as abcindicator preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialABCClassification` | ✓ | |  | `cast(maabc as abcindicator preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SrvcDocCreditStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_credit_h )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_SrvcDocCreditStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcDocCreditStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_credit_h )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_SrvcDocCreditStatusText` | | ✓ | | | | |
 
 ## Associations
 

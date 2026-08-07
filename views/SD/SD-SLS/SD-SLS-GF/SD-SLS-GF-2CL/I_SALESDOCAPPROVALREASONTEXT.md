@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `SalesDocApprovalReason` | ✓ | |  | `cast( SalesDocApprovalReasonText.SDApprovalReason as sd_apm_approval_reason preserving type )` |
-| `SDDocumentCategory` | ✓ | |  |  |
-| `SalesDocApprovalReasonName` |  | |  | `SDApprovalReasonName` |
-| `_SalesDocApprovalReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `SalesDocApprovalReason` | ✓ | |  | `cast( SalesDocApprovalReasonText.SDApprovalReason as sd_apm_approval_reason preserving type )` |  |  |
+| `SDDocumentCategory` | ✓ | |  |  |  |  |
+| `SalesDocApprovalReasonName` |  | |  | `SDApprovalReasonName` |  |  |
+| `_SalesDocApprovalReason` | | ✓ | | | | |
 
 ## Associations
 

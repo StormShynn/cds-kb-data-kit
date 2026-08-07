@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |
-| `CAAuthorizationGroup` | ✓ | |  | `begru` |
-| `_AuthznGroupObject` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |  |  |
+| `CAAuthorizationGroup` | ✓ | |  | `begru` |  |  |
+| `_AuthznGroupObject` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

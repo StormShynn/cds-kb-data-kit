@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalScorecardRefUUID` | ✓ | |  |  |
-| `SuplrEvalScorecardUUID` |  | |  |  |
-| `SuplrEvalTemplateUUID` |  | |  |  |
-| `SupplierEvalTemplate` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalScorecardRefUUID` | ✓ | |  |  |  |  |
+| `SuplrEvalScorecardUUID` |  | |  |  |  |  |
+| `SuplrEvalTemplateUUID` |  | |  |  |  |  |
+| `SupplierEvalTemplate` |  | |  |  |  |  |
 
 ## Source Code
 

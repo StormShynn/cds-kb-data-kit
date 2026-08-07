@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanCardPrintControl` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pkdrs preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
-| `KanbanCardPrintControlName` |  | |  | `cast(txt.ddtext as vdm_knbacardprintcontrolname preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KanbanCardPrintCtrl` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanCardPrintControl` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pkdrs preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |  |  |
+| `KanbanCardPrintControlName` |  | |  | `cast(txt.ddtext as vdm_knbacardprintcontrolname preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KanbanCardPrintCtrl` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

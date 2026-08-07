@@ -30,92 +30,92 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProcessOrder` | ✓ | |  |  |
-| `ProcessOrderItem` | ✓ | |  |  |
-| `ManufacturingOrderCategory` |  | |  |  |
-| `ProcessOrderType` |  | |  |  |
-| `OrderIsReleased` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `OrderItemIsNotRelevantForMRP` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `PlanningPlant` |  | |  |  |
-| `ProductionVersion` |  | |  |  |
-| `MRPArea` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SalesOrderScheduleLine` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `QuotaArrangement` |  | |  |  |
-| `QuotaArrangementItem` |  | |  |  |
-| `SettlementReservation` |  | |  |  |
-| `SettlementReservationItem` |  | |  |  |
-| `CoProductReservation` |  | |  |  |
-| `CoProductReservationItem` |  | |  |  |
-| `MaterialProcurementCategory` |  | |  |  |
-| `MaterialProcurementType` |  | |  |  |
-| `SerialNumberProfile` |  | |  |  |
-| `NumberOfSerialNumbers` |  | |  |  |
-| `ReplenishmentElementType` |  | |  |  |
-| `ProductConfiguration` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `QuantityDistributionKey` |  | |  |  |
-| `EffectivityParameterVariant` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `MaterialGoodsReceiptDuration` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Batch` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `InventoryValuationCategory` |  | |  |  |
-| `InventoryUsabilityCode` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `StockSegment` |  | |  |  |
-| `PlannedEndDate` |  | |  |  |
-| `ScheduledEndDate` |  | |  |  |
-| `PlannedDeliveryDate` |  | |  |  |
-| `ActualDeliveryDate` |  | |  |  |
-| `TotalCommitmentDate` |  | |  |  |
-| `ProductionUnit` |  | |  |  |
-| `PlannedTotalQty` |  | |  |  |
-| `PlannedScrapQuantity` |  | |  |  |
-| `PlannedYieldQuantity` |  | |  |  |
-| `GoodsReceiptQty` |  | |  |  |
-| `ActualDeviationQty` |  | |  |  |
-| `OpenYieldQuantity` |  | |  |  |
-| `PlannedOrder` |  | |  |  |
-| `PlndOrderPlannedStartDate` |  | |  |  |
-| `PlannedOrderOpeningDate` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `PlndOrderPlannedTotalQty` |  | |  |  |
-| `PlndOrderPlannedScrapQty` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `GoodsReceiptAmountInCoCodeCrcy` |  | |  |  |
-| `BillOfMaterialItemNumber` |  | |  |  |
-| `MaterialComponentText` |  | |  |  |
-| `MatlCompFreeDefinedAttribute` |  | |  |  |
-| `LeadTimeOffset` |  | |  |  |
-| `OperationLeadTimeOffsetUnit` |  | |  |  |
-| `OperationLeadTimeOffset` |  | |  |  |
-| `BillOfMaterialItemCategory` |  | |  |  |
-| `ProcessOrderOperation` |  | |  |  |
-| `Plant` |  | |  |  |
-| `_Order` | | ✓ | | |
-| `_CoProductReservationItem` | | ✓ | | |
-| `_SerialNumber` | | ✓ | | |
-| `_PostingRule` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessOrder` | ✓ | |  |  |  |  |
+| `ProcessOrderItem` | ✓ | |  |  |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |  |  |
+| `ProcessOrderType` |  | |  |  |  |  |
+| `OrderIsReleased` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `OrderItemIsNotRelevantForMRP` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `PlanningPlant` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `MRPArea` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `QuotaArrangement` |  | |  |  |  |  |
+| `QuotaArrangementItem` |  | |  |  |  |  |
+| `SettlementReservation` |  | |  |  |  |  |
+| `SettlementReservationItem` |  | |  |  |  |  |
+| `CoProductReservation` |  | |  |  |  |  |
+| `CoProductReservationItem` |  | |  |  |  |  |
+| `MaterialProcurementCategory` |  | |  |  |  |  |
+| `MaterialProcurementType` |  | |  |  |  |  |
+| `SerialNumberProfile` |  | |  |  |  |  |
+| `NumberOfSerialNumbers` |  | |  |  |  |  |
+| `ReplenishmentElementType` |  | |  |  |  |  |
+| `ProductConfiguration` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `QuantityDistributionKey` |  | |  |  |  |  |
+| `EffectivityParameterVariant` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `InventoryValuationCategory` |  | |  |  |  |  |
+| `InventoryUsabilityCode` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `StockSegment` |  | |  |  |  |  |
+| `PlannedEndDate` |  | |  |  |  |  |
+| `ScheduledEndDate` |  | |  |  |  |  |
+| `PlannedDeliveryDate` |  | |  |  |  |  |
+| `ActualDeliveryDate` |  | |  |  |  |  |
+| `TotalCommitmentDate` |  | |  |  |  |  |
+| `ProductionUnit` |  | |  |  |  |  |
+| `PlannedTotalQty` |  | |  |  |  |  |
+| `PlannedScrapQuantity` |  | |  |  |  |  |
+| `PlannedYieldQuantity` |  | |  |  |  |  |
+| `GoodsReceiptQty` |  | |  |  |  |  |
+| `ActualDeviationQty` |  | |  |  |  |  |
+| `OpenYieldQuantity` |  | |  |  |  |  |
+| `PlannedOrder` |  | |  |  |  |  |
+| `PlndOrderPlannedStartDate` |  | |  |  |  |  |
+| `PlannedOrderOpeningDate` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `PlndOrderPlannedTotalQty` |  | |  |  |  |  |
+| `PlndOrderPlannedScrapQty` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `GoodsReceiptAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |  |  |
+| `MaterialComponentText` |  | |  |  |  |  |
+| `MatlCompFreeDefinedAttribute` |  | |  |  |  |  |
+| `LeadTimeOffset` |  | |  |  |  |  |
+| `OperationLeadTimeOffsetUnit` |  | |  |  |  |  |
+| `OperationLeadTimeOffset` |  | |  |  |  |  |
+| `BillOfMaterialItemCategory` |  | |  |  |  |  |
+| `ProcessOrderOperation` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `_Order` | | ✓ | | | | |
+| `_CoProductReservationItem` | | ✓ | | | | |
+| `_SerialNumber` | | ✓ | | | | |
+| `_PostingRule` | | ✓ | | | | |
 
 ## Source Code
 

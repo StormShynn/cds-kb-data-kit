@@ -27,52 +27,52 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `MasterFixedAsset` | ✓ | |  |  |
-| `FixedAsset` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `AssetRealDepreciationArea` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `AcqnProdnCostScrapPercent` |  | |  |  |
-| `ScrapAmountInCoCodeCrcy` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `ScrapAmountInGlobCrcy` |  | |  |  |
-| `GlobalCurrency` |  | |  |  |
-| `ScrapAmountInFreeDefinedCrcy1` |  | |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |
-| `ScrapAmountInFreeDefinedCrcy2` |  | |  |  |
-| `FreeDefinedCurrency2` |  | |  |  |
-| `ScrapAmountInFreeDefinedCrcy3` |  | |  |  |
-| `FreeDefinedCurrency3` |  | |  |  |
-| `ScrapAmountInFreeDefinedCrcy4` |  | |  |  |
-| `FreeDefinedCurrency4` |  | |  |  |
-| `ScrapAmountInFreeDefinedCrcy5` |  | |  |  |
-| `FreeDefinedCurrency5` |  | |  |  |
-| `ScrapAmountInFreeDefinedCrcy6` |  | |  |  |
-| `FreeDefinedCurrency6` |  | |  |  |
-| `ScrapAmountInFreeDefinedCrcy7` |  | |  |  |
-| `FreeDefinedCurrency7` |  | |  |  |
-| `ScrapAmountInFreeDefinedCrcy8` |  | |  |  |
-| `FreeDefinedCurrency8` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_AssetValuationForLedger` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_DepreciationArea` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_GlobalCurrency` | | ✓ | | |
-| `_FreeDefinedCurrency1` | | ✓ | | |
-| `_FreeDefinedCurrency2` | | ✓ | | |
-| `_FreeDefinedCurrency3` | | ✓ | | |
-| `_FreeDefinedCurrency4` | | ✓ | | |
-| `_FreeDefinedCurrency5` | | ✓ | | |
-| `_FreeDefinedCurrency6` | | ✓ | | |
-| `_FreeDefinedCurrency7` | | ✓ | | |
-| `_FreeDefinedCurrency8` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `MasterFixedAsset` | ✓ | |  |  |  |  |
+| `FixedAsset` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `AssetRealDepreciationArea` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `AcqnProdnCostScrapPercent` |  | |  |  |  |  |
+| `ScrapAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `ScrapAmountInGlobCrcy` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  |  |  |  |
+| `ScrapAmountInFreeDefinedCrcy1` |  | |  |  |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |  |  |
+| `ScrapAmountInFreeDefinedCrcy2` |  | |  |  |  |  |
+| `FreeDefinedCurrency2` |  | |  |  |  |  |
+| `ScrapAmountInFreeDefinedCrcy3` |  | |  |  |  |  |
+| `FreeDefinedCurrency3` |  | |  |  |  |  |
+| `ScrapAmountInFreeDefinedCrcy4` |  | |  |  |  |  |
+| `FreeDefinedCurrency4` |  | |  |  |  |  |
+| `ScrapAmountInFreeDefinedCrcy5` |  | |  |  |  |  |
+| `FreeDefinedCurrency5` |  | |  |  |  |  |
+| `ScrapAmountInFreeDefinedCrcy6` |  | |  |  |  |  |
+| `FreeDefinedCurrency6` |  | |  |  |  |  |
+| `ScrapAmountInFreeDefinedCrcy7` |  | |  |  |  |  |
+| `FreeDefinedCurrency7` |  | |  |  |  |  |
+| `ScrapAmountInFreeDefinedCrcy8` |  | |  |  |  |  |
+| `FreeDefinedCurrency8` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_AssetValuationForLedger` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_DepreciationArea` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_GlobalCurrency` | | ✓ | | | | |
+| `_FreeDefinedCurrency1` | | ✓ | | | | |
+| `_FreeDefinedCurrency2` | | ✓ | | | | |
+| `_FreeDefinedCurrency3` | | ✓ | | | | |
+| `_FreeDefinedCurrency4` | | ✓ | | | | |
+| `_FreeDefinedCurrency5` | | ✓ | | | | |
+| `_FreeDefinedCurrency6` | | ✓ | | | | |
+| `_FreeDefinedCurrency7` | | ✓ | | | | |
+| `_FreeDefinedCurrency8` | | ✓ | | | | |
 
 ## Associations
 

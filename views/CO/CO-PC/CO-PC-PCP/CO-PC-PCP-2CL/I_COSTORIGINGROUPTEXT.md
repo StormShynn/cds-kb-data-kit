@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostOriginGroup` | ✓ | |  | `hrkft` |
-| `CostOriginType` | ✓ | |  | `koaty` |
-| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `CostOriginGroupName` |  | |  | `hrktx` |
-| `_Language` | | ✓ | | |
-| `_CostOriginType` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostOriginGroup` | ✓ | |  | `hrkft` |  |  |
+| `CostOriginType` | ✓ | |  | `koaty` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CostOriginGroupName` |  | |  | `hrktx` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CostOriginType` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CITClassificationUUID` | ✓ | |  | `uuid` |
-| `SourceLedger` |  | |  | `sourceledger` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `FiscalYear` |  | |  | `gjahr` |
-| `AccountingDocument` |  | |  | `belnr` |
-| `LedgerGLLineItem` |  | |  | `docln` |
-| `Ledger` |  | |  | `ledger` |
-| `CITReportingDate` |  | |  | `repdate` |
-| `CorporateIncomeTaxHierarchy` |  | |  | `hryid` |
-| `CITClassificationCode` |  | |  | `clsfcode` |
-| `CITItemAmountInDisplayCurrency` |  | |  | `amount` |
-| `Currency` |  | |  | `currency` |
-| `ReferenceDocument` |  | |  | `awref` |
-| `BalanceCarryforwardStatus` |  | |  | `bcf` |
-| `CreationDateTime` |  | |  | `cast(created_at as creation_date_time preserving type )` |
-| `CreatedByUserName` |  | |  | `cast (created_by as cruser preserving type )` |
-| `ChangedDateTime` |  | |  | `cast (changed_at as last_changed_date_time preserving type )` |
-| `LastChangedByUserName` |  | |  | `cast (changed_by as last_changed_by_user preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CITClassificationUUID` | ✓ | |  | `uuid` |  |  |
+| `SourceLedger` |  | |  | `sourceledger` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `FiscalYear` |  | |  | `gjahr` |  |  |
+| `AccountingDocument` |  | |  | `belnr` |  |  |
+| `LedgerGLLineItem` |  | |  | `docln` |  |  |
+| `Ledger` |  | |  | `ledger` |  |  |
+| `CITReportingDate` |  | |  | `repdate` |  |  |
+| `CorporateIncomeTaxHierarchy` |  | |  | `hryid` |  |  |
+| `CITClassificationCode` |  | |  | `clsfcode` |  |  |
+| `CITItemAmountInDisplayCurrency` |  | |  | `amount` |  |  |
+| `Currency` |  | |  | `currency` |  |  |
+| `ReferenceDocument` |  | |  | `awref` |  |  |
+| `BalanceCarryforwardStatus` |  | |  | `bcf` |  |  |
+| `CreationDateTime` |  | |  | `cast(created_at as creation_date_time preserving type )` |  |  |
+| `CreatedByUserName` |  | |  | `cast (created_by as cruser preserving type )` |  |  |
+| `ChangedDateTime` |  | |  | `cast (changed_at as last_changed_date_time preserving type )` |  |  |
+| `LastChangedByUserName` |  | |  | `cast (changed_by as last_changed_by_user preserving type )` |  |  |
 
 ## Associations
 

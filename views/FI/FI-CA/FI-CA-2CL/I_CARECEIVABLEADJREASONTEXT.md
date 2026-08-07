@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAReceivableAdjustmentReason` | ✓ | |  | `grund` |
-| `Language` | ✓ | |  | `spras` |
-| `CAReceivableAdjustReasonName` |  | |  | `txt30` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAReceivableAdjustmentReason` | ✓ | |  | `grund` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAReceivableAdjustReasonName` |  | |  | `txt30` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

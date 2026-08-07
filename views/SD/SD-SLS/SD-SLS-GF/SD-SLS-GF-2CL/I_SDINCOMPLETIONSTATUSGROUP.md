@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IncompletionStatusGroup` | ✓ | |  | `statg` |
-| `OverallIsIncomplete` |  | |  | `uvall` |
-| `DeliveryIsIncomplete` |  | |  | `uvvlk` |
-| `BillingIsIncomplete` |  | |  | `uvfak` |
-| `PricingIsIncomplete` |  | |  | `uvprs` |
-| `GoodsMovementIsIncomplete` |  | |  | `uvwak` |
-| `PickingIsIncomplete` |  | |  | `uvpik` |
-| `PackingIsIncomplete` |  | |  | `uvpak` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncompletionStatusGroup` | ✓ | |  | `statg` |  |  |
+| `OverallIsIncomplete` |  | |  | `uvall` |  |  |
+| `DeliveryIsIncomplete` |  | |  | `uvvlk` |  |  |
+| `BillingIsIncomplete` |  | |  | `uvfak` |  |  |
+| `PricingIsIncomplete` |  | |  | `uvprs` |  |  |
+| `GoodsMovementIsIncomplete` |  | |  | `uvwak` |  |  |
+| `PickingIsIncomplete` |  | |  | `uvpik` |  |  |
+| `PackingIsIncomplete` |  | |  | `uvpak` |  |  |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UsageDecisionCodeGroup` | ✓ | |  |  |
-| `CodeGroupStatus` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UsageDecisionCodeGroup` | ✓ | |  |  |  |  |
+| `CodeGroupStatus` |  | |  |  |  |  |
 
 ## Source Code
 

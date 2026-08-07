@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `CustomerConditionGroup` | ✓ | |  | `kdkgr` |
-| `CustomerConditionGroupText` |  | |  | `vtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CustomerConditionGroup` | ✓ | |  | `kdkgr` |  |  |
+| `CustomerConditionGroupText` |  | |  | `vtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjDemandMaterialSupplyUUID` | ✓ | |  |  |
-| `ProjectDemandMaterialUUID` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `ProjectDemandReservation` |  | |  |  |
-| `ProjectDemandReservationItem` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `_Material` | | ✓ | | |
-| `_Root` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjDemandMaterialSupplyUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandMaterialUUID` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `ProjectDemandReservation` |  | |  |  |  |  |
+| `ProjectDemandReservationItem` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `_Material` | | ✓ | | | | |
+| `_Root` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,72 +29,72 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |
-| `AddressPersonID` | ✓ | |  |  |
-| `AddressRepresentationCode` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `GivenName` |  | |  |  |
-| `FamilyName` |  | |  |  |
-| `PersonBirthName` |  | |  |  |
-| `PersonMiddleName` |  | |  |  |
-| `SecondFamilyName` |  | |  |  |
-| `AcademicTitle` |  | |  |  |
-| `AcademicTitle2` |  | |  |  |
-| `FamilyNamePrefix` |  | |  |  |
-| `FamilyNameSecondPrefix` |  | |  |  |
-| `PersonNameSupplementCode` |  | |  |  |
-| `PersonNickname` |  | |  |  |
-| `NameInitials` |  | |  |  |
-| `PersonFullName` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `AddressPersonSearchTerm1` |  | |  |  |
-| `AddressPersonSearchTerm2` |  | |  |  |
-| `PrfrdCommMediumType` |  | |  |  |
-| `CityNumber` |  | |  |  |
-| `CityName` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `VillageName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `CompanyPostalCode` |  | |  |  |
-| `Street` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetAddrNonDeliverableReason` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TransportZone` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxAddrNonDeliverableReason` |  | |  |  |
-| `POBoxIsWithoutNumber` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `POBoxLobbyName` |  | |  |  |
-| `POBoxDeviatingCityName` |  | |  |  |
-| `POBoxDeviatingCityCode` |  | |  |  |
-| `POBoxDeviatingRegion` |  | |  |  |
-| `POBoxDeviatingCountry` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `DeliveryServiceTypeCode` |  | |  |  |
-| `DeliveryServiceNumber` |  | |  |  |
-| `AddressTimeZone` |  | |  |  |
-| `SecondaryRegion` |  | |  |  |
-| `SecondaryRegionName` |  | |  |  |
-| `TertiaryRegion` |  | |  |  |
-| `TertiaryRegionName` |  | |  |  |
-| `RegionalStructureCheckStatus` |  | |  |  |
-| `AddressGroup` |  | |  |  |
-| `_DfltPersonAddress` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |  |  |
+| `AddressPersonID` | ✓ | |  |  |  |  |
+| `AddressRepresentationCode` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `GivenName` |  | |  |  |  |  |
+| `FamilyName` |  | |  |  |  |  |
+| `PersonBirthName` |  | |  |  |  |  |
+| `PersonMiddleName` |  | |  |  |  |  |
+| `SecondFamilyName` |  | |  |  |  |  |
+| `AcademicTitle` |  | |  |  |  |  |
+| `AcademicTitle2` |  | |  |  |  |  |
+| `FamilyNamePrefix` |  | |  |  |  |  |
+| `FamilyNameSecondPrefix` |  | |  |  |  |  |
+| `PersonNameSupplementCode` |  | |  |  |  |  |
+| `PersonNickname` |  | |  |  |  |  |
+| `NameInitials` |  | |  |  |  |  |
+| `PersonFullName` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `AddressPersonSearchTerm1` |  | |  |  |  |  |
+| `AddressPersonSearchTerm2` |  | |  |  |  |  |
+| `PrfrdCommMediumType` |  | |  |  |  |  |
+| `CityNumber` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `VillageName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `CompanyPostalCode` |  | |  |  |  |  |
+| `Street` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetAddrNonDeliverableReason` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TransportZone` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxAddrNonDeliverableReason` |  | |  |  |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `POBoxLobbyName` |  | |  |  |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |  |  |
+| `POBoxDeviatingCityCode` |  | |  |  |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |  |  |
+| `DeliveryServiceNumber` |  | |  |  |  |  |
+| `AddressTimeZone` |  | |  |  |  |  |
+| `SecondaryRegion` |  | |  |  |  |  |
+| `SecondaryRegionName` |  | |  |  |  |  |
+| `TertiaryRegion` |  | |  |  |  |  |
+| `TertiaryRegionName` |  | |  |  |  |  |
+| `RegionalStructureCheckStatus` |  | |  |  |  |  |
+| `AddressGroup` |  | |  |  |  |  |
+| `_DfltPersonAddress` | | ✓ | | | | |
 
 ## Associations
 

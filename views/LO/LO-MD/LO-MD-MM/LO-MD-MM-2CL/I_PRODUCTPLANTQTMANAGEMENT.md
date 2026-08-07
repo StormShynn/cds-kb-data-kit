@@ -31,24 +31,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `MaximumStoragePeriod` |  | |  |  |
-| `QualityMgmtCtrlKey` |  | |  |  |
-| `MatlQualityAuthorizationGroup` |  | |  |  |
-| `HasPostToInspectionStock` |  | |  | `PlantQualityMgmt. HasPostToInspectionStock` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `InspLotDocumentationIsRequired` |  | |  |  |
-| `SuplrQualityManagementSystem` |  | |  |  |
-| `RecrrgInspIntervalTimeInDays` |  | |  |  |
-| `ProductQualityCertificateType` |  | |  |  |
-| `ProductPlantHasInspectionSetup` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_QualityMgmtCtrlKey` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `MaximumStoragePeriod` |  | |  |  |  |  |
+| `QualityMgmtCtrlKey` |  | |  |  |  |  |
+| `MatlQualityAuthorizationGroup` |  | |  |  |  |  |
+| `HasPostToInspectionStock` |  | |  | `PlantQualityMgmt. HasPostToInspectionStock` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `InspLotDocumentationIsRequired` |  | |  |  |  |  |
+| `SuplrQualityManagementSystem` |  | |  |  |  |  |
+| `RecrrgInspIntervalTimeInDays` |  | |  |  |  |  |
+| `ProductQualityCertificateType` |  | |  |  |  |  |
+| `ProductPlantHasInspectionSetup` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_QualityMgmtCtrlKey` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Associations
 

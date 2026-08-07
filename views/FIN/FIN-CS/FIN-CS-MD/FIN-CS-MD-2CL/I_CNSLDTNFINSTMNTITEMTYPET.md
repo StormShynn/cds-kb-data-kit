@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(_DomainText.Language as spras preserving type )` |
-| `ConsolidationFSItemType` | ✓ | |  | `cast ( _DomainText.DomainValue as fincs_fsitemtype preserving type )` |
-| `ConsolidationFSItemTypeText` |  | |  | `cast(_DomainText.DomainValueText as fincs_fsitemtype_desc preserving type )` |
-| `_FSItemType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainText.Language as spras preserving type )` |  |  |
+| `ConsolidationFSItemType` | ✓ | |  | `cast ( _DomainText.DomainValue as fincs_fsitemtype preserving type )` |  |  |
+| `ConsolidationFSItemTypeText` |  | |  | `cast(_DomainText.DomainValueText as fincs_fsitemtype_desc preserving type )` |  |  |
+| `_FSItemType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

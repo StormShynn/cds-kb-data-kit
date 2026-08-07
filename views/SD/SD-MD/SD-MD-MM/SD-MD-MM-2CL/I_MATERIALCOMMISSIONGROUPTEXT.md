@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialCommissionGroup` | ✓ | |  | `provg` |
-| `Language` | ✓ | |  | `spras` |
-| `MaterialCommissionGroupName` |  | |  | `vtext` |
-| `_MaterialCommissionGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialCommissionGroup` | ✓ | |  | `provg` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaterialCommissionGroupName` |  | |  | `vtext` |  |  |
+| `_MaterialCommissionGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

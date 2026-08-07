@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RevnAcctgContractCategory` | ✓ | |  | `contract_cat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RevnAcctgContractCategory` | ✓ | |  | `contract_cat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

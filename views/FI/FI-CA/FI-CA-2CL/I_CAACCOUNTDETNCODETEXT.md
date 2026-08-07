@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAAccountDeterminationCode` | ✓ | |  | `cast( kofiz as kofiz_kk preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `CAAccountDeterminationCodeName` |  | |  | `text50` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAAccountDeterminationCode` | ✓ | |  | `cast( kofiz as kofiz_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAAccountDeterminationCodeName` |  | |  | `text50` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

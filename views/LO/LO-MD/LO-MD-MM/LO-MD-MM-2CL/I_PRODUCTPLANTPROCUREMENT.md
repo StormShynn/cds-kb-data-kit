@@ -31,23 +31,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `IsAutoPurOrdCreationAllowed` |  | |  |  |
-| `IsSourceListRequired` |  | |  |  |
-| `IsPurgAcrossPurgGroup` |  | |  |  |
-| `SourceOfSupplyCategory` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `ProposedProductSupplyArea` |  | |  |  |
-| `ItmIsRlvtToJITDelivSchedules` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_SourceOfSupplyCategory` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `IsAutoPurOrdCreationAllowed` |  | |  |  |  |  |
+| `IsSourceListRequired` |  | |  |  |  |  |
+| `IsPurgAcrossPurgGroup` |  | |  |  |  |  |
+| `SourceOfSupplyCategory` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `ProposedProductSupplyArea` |  | |  |  |  |  |
+| `ItmIsRlvtToJITDelivSchedules` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_SourceOfSupplyCategory` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Associations
 

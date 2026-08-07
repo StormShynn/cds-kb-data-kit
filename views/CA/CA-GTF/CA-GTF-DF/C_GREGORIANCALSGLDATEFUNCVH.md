@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DateFunction` | ✓ | |  |  |
-| `DateFunctionStartDate` |  | |  |  |
-| `DateFunctionEndDate` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DateFunction` | ✓ | |  |  |  |  |
+| `DateFunctionStartDate` |  | |  |  |  |  |
+| `DateFunctionEndDate` |  | |  |  |  |  |
 
 ## Source Code
 

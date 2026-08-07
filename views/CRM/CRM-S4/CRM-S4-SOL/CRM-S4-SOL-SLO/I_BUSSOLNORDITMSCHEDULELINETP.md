@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `Quantity` |  | |  |  |
-| `RequestedDeliveryUTCDateTime` |  | |  |  |
-| `ProductQuantity` |  | |  |  |
-| `ConfirmedDeliveryDateTime` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `_BusinessSolutionOrderItemTP` | | ✓ | | |
-| `_BusinessSolutionOrderTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `RequestedDeliveryUTCDateTime` |  | |  |  |  |  |
+| `ProductQuantity` |  | |  |  |  |  |
+| `ConfirmedDeliveryDateTime` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | | | |
 
 ## Source Code
 

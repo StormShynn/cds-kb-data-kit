@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReturnsRefundExtent` | ✓ | |  | `cast (returns_refund as returns_refund_extent)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReturnsRefundExtent` | ✓ | |  | `cast (returns_refund as returns_refund_extent)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

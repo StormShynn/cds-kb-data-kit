@@ -31,125 +31,125 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintenanceOrderOperation` | ✓ | |  |  |
-| `MaintenanceOrderSubOperation` | ✓ | |  |  |
-| `MaintOrderRoutingNumber` |  | |  |  |
-| `MaintenanceOrderRoutingNode` |  | |  |  |
-| `SuperiorOperationInternalID` |  | |  |  |
-| `OperationControlKey` |  | |  |  |
-| `OperationDescription` |  | |  |  |
-| `OperationWorkCenterInternalID` |  | |  |  |
-| `OperationWorkCenterTypeCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `OperationStandardTextCode` |  | |  |  |
-| `Language` |  | |  |  |
-| `NumberOfTimeTickets` |  | |  |  |
-| `OperationPurgInfoRecdSearchTxt` |  | |  |  |
-| `OperationSupplier` |  | |  |  |
-| `OpExternalProcessingPrice` |  | |  |  |
-| `OpExternalProcessingPriceUnit` |  | |  |  |
-| `OpExternalProcessingCurrency` |  | |  |  |
-| `CostElement` |  | |  |  |
-| `OperationPurchasingInfoRecord` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `OpPurchaseOutlineAgreement` |  | |  |  |
-| `OpPurchaseOutlineAgreementItem` |  | |  |  |
-| `OperationRequisitionerName` |  | |  |  |
-| `OperationTrackingNumber` |  | |  |  |
-| `NumberOfCapacities` |  | |  |  |
-| `OperationWorkPercent` |  | |  |  |
-| `OperationCalculationControl` |  | |  |  |
-| `ActivityType` |  | |  |  |
-| `OperationSystemCondition` |  | |  |  |
-| `OperationGoodsRecipientName` |  | |  |  |
-| `OperationUnloadingPointName` |  | |  |  |
-| `OperationPersonResponsible` |  | |  |  |
-| `EAMPlannedDeliveryDurnInDays` |  | |  |  |
-| `MaintOrderOperationDuration` |  | |  |  |
-| `MaintOrdOperationDurationUnit` |  | |  |  |
-| `OpErlstSchedldExecStrtDteTme` |  | |  |  |
-| `OpErlstSchedldExecEndDteTme` |  | |  |  |
-| `OpLtstSchedldExecStrtDteTme` |  | |  |  |
-| `OpLtstSchedldExecEndDteTme` |  | |  |  |
-| `OpActualExecutionStartDateTime` |  | |  |  |
-| `OpActualExecutionEndDateTime` |  | |  |  |
-| `OpBscStartDateConstraintType` |  | |  |  |
-| `OpBscEndDateConstraintType` |  | |  |  |
-| `MaintOrdOperationWorkDuration` |  | |  |  |
-| `MaintOrdOpWorkDurationUnit` |  | |  |  |
-| `MaintOrdOpConstraintStrtDteTme` |  | |  |  |
-| `ConstraintDateForBscStartDate` |  | |  |  |
-| `ConstraintTimeForBscStartTime` |  | |  |  |
-| `MaintOrdOpCstrtFinishDteTme` |  | |  |  |
-| `ConstraintDateForBscFinishDate` |  | |  |  |
-| `ConstraintTimeForBscFinishTime` |  | |  |  |
-| `MaintOrdOperationExecutionRate` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `OpErlstSchedldExecStrtDte` |  | |  |  |
-| `OpErlstSchedldExecStrtTme` |  | |  |  |
-| `OpErlstSchedldExecEndDte` |  | |  |  |
-| `OpErlstSchedldExecEndTme` |  | |  |  |
-| `OpLtstSchedldExecStrtDte` |  | |  |  |
-| `OpLtstSchedldExecStrtTme` |  | |  |  |
-| `OpLtstSchedldExecEndDte` |  | |  |  |
-| `OpLtstSchedldExecEndTme` |  | |  |  |
-| `OpActualExecutionStartDate` |  | |  |  |
-| `OpActualExecutionStartTime` |  | |  |  |
-| `OpActualExecutionEndDate` |  | |  |  |
-| `OpActualExecutionEndTime` |  | |  |  |
-| `ActyConfFcstdEndDate` |  | |  |  |
-| `ActyConfFcstdEndTime` |  | |  |  |
-| `ActyConfForecastedEndDateTime` |  | |  |  |
-| `ForecastWorkQuantity` |  | |  |  |
-| `ActualWorkQuantity` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CostingSheet` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `MaintOrdOperationIsMRPRelevant` |  | |  |  |
-| `MaintControllingObjectClass` |  | |  |  |
-| `WrkCtrIntCapRqmtsDistr` |  | |  |  |
-| `MaintOrdOperationOverheadCode` |  | |  |  |
-| `MaintOrderOperationQuantity` |  | |  |  |
-| `MaintOrdOperationQuantityUnit` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `MaintOperationExecStageCode` |  | |  |  |
-| `MaintOrdOpAssgdWBSElmntInt` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `MaintOrderOperationInternalID` |  | |  |  |
-| `MaintenanceObjectListItem` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `MaintOrdOpProcessPhaseCode` |  | |  |  |
-| `MaintOrdOpProcessSubPhaseCode` |  | |  |  |
-| `AllMaintOrdCompCmtdQtsAreKept` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `MaintOrderConfirmation` |  | |  |  |
-| `MaintOrderConfCntrValue` |  | |  |  |
-| `MaintOrdOpHasNoRemainingWork` |  | |  |  |
-| `MaintOrdOpHasLeanServices` |  | |  |  |
-| `MaintOrdOpDelivDateAdjustment` |  | |  |  |
-| `TaskListType` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `_OperationWorkCenter` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_PersonResponsible` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintOrderOpLongText` | | ✓ | | |
-| `_MaintOrderOpRelationship` | | ✓ | | |
-| `_MaintOrderOpProdnRsceTool` | | ✓ | | |
-| `_MaintOrderOpPhaseControl` | | ✓ | | |
-| `_MaintOrderOpComponent` | | ✓ | | |
-| `_MaintOrderOpComponent_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintenanceOrderOperation` | ✓ | |  |  |  |  |
+| `MaintenanceOrderSubOperation` | ✓ | |  |  |  |  |
+| `MaintOrderRoutingNumber` |  | |  |  |  |  |
+| `MaintenanceOrderRoutingNode` |  | |  |  |  |  |
+| `SuperiorOperationInternalID` |  | |  |  |  |  |
+| `OperationControlKey` |  | |  |  |  |  |
+| `OperationDescription` |  | |  |  |  |  |
+| `OperationWorkCenterInternalID` |  | |  |  |  |  |
+| `OperationWorkCenterTypeCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `OperationStandardTextCode` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `NumberOfTimeTickets` |  | |  |  |  |  |
+| `OperationPurgInfoRecdSearchTxt` |  | |  |  |  |  |
+| `OperationSupplier` |  | |  |  |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |  |  |
+| `OpExternalProcessingPriceUnit` |  | |  |  |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |  |  |
+| `CostElement` |  | |  |  |  |  |
+| `OperationPurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `OpPurchaseOutlineAgreement` |  | |  |  |  |  |
+| `OpPurchaseOutlineAgreementItem` |  | |  |  |  |  |
+| `OperationRequisitionerName` |  | |  |  |  |  |
+| `OperationTrackingNumber` |  | |  |  |  |  |
+| `NumberOfCapacities` |  | |  |  |  |  |
+| `OperationWorkPercent` |  | |  |  |  |  |
+| `OperationCalculationControl` |  | |  |  |  |  |
+| `ActivityType` |  | |  |  |  |  |
+| `OperationSystemCondition` |  | |  |  |  |  |
+| `OperationGoodsRecipientName` |  | |  |  |  |  |
+| `OperationUnloadingPointName` |  | |  |  |  |  |
+| `OperationPersonResponsible` |  | |  |  |  |  |
+| `EAMPlannedDeliveryDurnInDays` |  | |  |  |  |  |
+| `MaintOrderOperationDuration` |  | |  |  |  |  |
+| `MaintOrdOperationDurationUnit` |  | |  |  |  |  |
+| `OpErlstSchedldExecStrtDteTme` |  | |  |  |  |  |
+| `OpErlstSchedldExecEndDteTme` |  | |  |  |  |  |
+| `OpLtstSchedldExecStrtDteTme` |  | |  |  |  |  |
+| `OpLtstSchedldExecEndDteTme` |  | |  |  |  |  |
+| `OpActualExecutionStartDateTime` |  | |  |  |  |  |
+| `OpActualExecutionEndDateTime` |  | |  |  |  |  |
+| `OpBscStartDateConstraintType` |  | |  |  |  |  |
+| `OpBscEndDateConstraintType` |  | |  |  |  |  |
+| `MaintOrdOperationWorkDuration` |  | |  |  |  |  |
+| `MaintOrdOpWorkDurationUnit` |  | |  |  |  |  |
+| `MaintOrdOpConstraintStrtDteTme` |  | |  |  |  |  |
+| `ConstraintDateForBscStartDate` |  | |  |  |  |  |
+| `ConstraintTimeForBscStartTime` |  | |  |  |  |  |
+| `MaintOrdOpCstrtFinishDteTme` |  | |  |  |  |  |
+| `ConstraintDateForBscFinishDate` |  | |  |  |  |  |
+| `ConstraintTimeForBscFinishTime` |  | |  |  |  |  |
+| `MaintOrdOperationExecutionRate` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `OpErlstSchedldExecStrtDte` |  | |  |  |  |  |
+| `OpErlstSchedldExecStrtTme` |  | |  |  |  |  |
+| `OpErlstSchedldExecEndDte` |  | |  |  |  |  |
+| `OpErlstSchedldExecEndTme` |  | |  |  |  |  |
+| `OpLtstSchedldExecStrtDte` |  | |  |  |  |  |
+| `OpLtstSchedldExecStrtTme` |  | |  |  |  |  |
+| `OpLtstSchedldExecEndDte` |  | |  |  |  |  |
+| `OpLtstSchedldExecEndTme` |  | |  |  |  |  |
+| `OpActualExecutionStartDate` |  | |  |  |  |  |
+| `OpActualExecutionStartTime` |  | |  |  |  |  |
+| `OpActualExecutionEndDate` |  | |  |  |  |  |
+| `OpActualExecutionEndTime` |  | |  |  |  |  |
+| `ActyConfFcstdEndDate` |  | |  |  |  |  |
+| `ActyConfFcstdEndTime` |  | |  |  |  |  |
+| `ActyConfForecastedEndDateTime` |  | |  |  |  |  |
+| `ForecastWorkQuantity` |  | |  |  |  |  |
+| `ActualWorkQuantity` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CostingSheet` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `MaintOrdOperationIsMRPRelevant` |  | |  |  |  |  |
+| `MaintControllingObjectClass` |  | |  |  |  |  |
+| `WrkCtrIntCapRqmtsDistr` |  | |  |  |  |  |
+| `MaintOrdOperationOverheadCode` |  | |  |  |  |  |
+| `MaintOrderOperationQuantity` |  | |  |  |  |  |
+| `MaintOrdOperationQuantityUnit` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `MaintOperationExecStageCode` |  | |  |  |  |  |
+| `MaintOrdOpAssgdWBSElmntInt` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `MaintOrderOperationInternalID` |  | |  |  |  |  |
+| `MaintenanceObjectListItem` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `MaintOrdOpProcessPhaseCode` |  | |  |  |  |  |
+| `MaintOrdOpProcessSubPhaseCode` |  | |  |  |  |  |
+| `AllMaintOrdCompCmtdQtsAreKept` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `MaintOrderConfirmation` |  | |  |  |  |  |
+| `MaintOrderConfCntrValue` |  | |  |  |  |  |
+| `MaintOrdOpHasNoRemainingWork` |  | |  |  |  |  |
+| `MaintOrdOpHasLeanServices` |  | |  |  |  |  |
+| `MaintOrdOpDelivDateAdjustment` |  | |  |  |  |  |
+| `TaskListType` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `_OperationWorkCenter` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_PersonResponsible` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintOrderOpLongText` | | ✓ | | | | |
+| `_MaintOrderOpRelationship` | | ✓ | | | | |
+| `_MaintOrderOpProdnRsceTool` | | ✓ | | | | |
+| `_MaintOrderOpPhaseControl` | | ✓ | | | | |
+| `_MaintOrderOpComponent` | | ✓ | | | | |
+| `_MaintOrderOpComponent_2` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InventoryStockType` | ✓ | |  | `cast(substring( domvalue_l, 1, 2 ) as nsdm_lbbsa)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `InventoryStockTypeName` |  | |  | `cast(ddtext as nsdm_stock_type_name)` |
-| `_InventoryStockType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InventoryStockType` | ✓ | |  | `cast(substring( domvalue_l, 1, 2 ) as nsdm_lbbsa)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `InventoryStockTypeName` |  | |  | `cast(ddtext as nsdm_stock_type_name)` |  |  |
+| `_InventoryStockType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

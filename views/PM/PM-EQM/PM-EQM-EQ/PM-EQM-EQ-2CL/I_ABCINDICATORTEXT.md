@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ABCIndicator` | ✓ | |  | `abckz` |
-| `Language` | ✓ | |  | `spras` |
-| `ABCIndicatorDesc` |  | |  | `cast( t370c_t.abctx as eams_abctx preserving type )` |
-| `_ABCIndicator` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ABCIndicator` | ✓ | |  | `abckz` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ABCIndicatorDesc` |  | |  | `cast( t370c_t.abctx as eams_abctx preserving type )` |  |  |
+| `_ABCIndicator` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

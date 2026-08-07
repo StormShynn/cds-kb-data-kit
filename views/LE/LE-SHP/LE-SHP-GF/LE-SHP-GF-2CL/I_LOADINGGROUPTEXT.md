@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LoadingGroup` | ✓ | |  | `ladgr` |
-| `Language` | ✓ | |  | `spras` |
-| `LoadingGroupName` |  | |  | `vtext` |
-| `_LoadingGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoadingGroup` | ✓ | |  | `ladgr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `LoadingGroupName` |  | |  | `vtext` |  |  |
+| `_LoadingGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

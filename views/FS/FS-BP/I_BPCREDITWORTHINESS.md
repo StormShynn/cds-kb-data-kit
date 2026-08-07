@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partnr` |
-| `BusPartCreditStanding` |  | |  | `solvncy` |
-| `BPCreditStandingStatus` |  | |  | `sol_inf` |
-| `CreditRatingAgency` |  | |  | `sol_ins` |
-| `BPCreditStandingComment` |  | |  | `sol_txt` |
-| `BPCreditStandingDate` |  | |  | `sol_i_d` |
-| `BPCreditStandingRating` |  | |  | `rating` |
-| `BPLegalProceedingStatus` |  | |  | `lgl_proc` |
-| `BPLglProceedingInitiationDate` |  | |  | `lgl_proc_d` |
-| `BusinessPartnerIsUnderOath` |  | |  | `de_oath` |
-| `BusinessPartnerOathDate` |  | |  | `de_oa_d` |
-| `BusinessPartnerIsBankrupt` |  | |  | `bankrup` |
-| `BusinessPartnerBankruptcyDate` |  | |  | `bnkry_d` |
-| `BPForeclosureIsInitiated` |  | |  | `foreclo` |
-| `BPForeclosureDate` |  | |  | `forcl_d` |
-| `BPCrdtWrthnssAccessChkIsActive` |  | |  | `''` |
-| `_BusinessPartner` | | ✓ | | |
-| `_BPFinancialServicesExtn` | | ✓ | | |
-| `_BPCreditStanding` | | ✓ | | |
-| `_BPCreditStandingStatus` | | ✓ | | |
-| `_CreditRatingAgency` | | ✓ | | |
-| `_BPCreditWorthinessRating` | | ✓ | | |
-| `_BPLegalProceedingStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partnr` |  |  |
+| `BusPartCreditStanding` |  | |  | `solvncy` |  |  |
+| `BPCreditStandingStatus` |  | |  | `sol_inf` |  |  |
+| `CreditRatingAgency` |  | |  | `sol_ins` |  |  |
+| `BPCreditStandingComment` |  | |  | `sol_txt` |  |  |
+| `BPCreditStandingDate` |  | |  | `sol_i_d` |  |  |
+| `BPCreditStandingRating` |  | |  | `rating` |  |  |
+| `BPLegalProceedingStatus` |  | |  | `lgl_proc` |  |  |
+| `BPLglProceedingInitiationDate` |  | |  | `lgl_proc_d` |  |  |
+| `BusinessPartnerIsUnderOath` |  | |  | `de_oath` |  |  |
+| `BusinessPartnerOathDate` |  | |  | `de_oa_d` |  |  |
+| `BusinessPartnerIsBankrupt` |  | |  | `bankrup` |  |  |
+| `BusinessPartnerBankruptcyDate` |  | |  | `bnkry_d` |  |  |
+| `BPForeclosureIsInitiated` |  | |  | `foreclo` |  |  |
+| `BPForeclosureDate` |  | |  | `forcl_d` |  |  |
+| `BPCrdtWrthnssAccessChkIsActive` |  | |  | `''` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BPFinancialServicesExtn` | | ✓ | | | | |
+| `_BPCreditStanding` | | ✓ | | | | |
+| `_BPCreditStandingStatus` | | ✓ | | | | |
+| `_CreditRatingAgency` | | ✓ | | | | |
+| `_BPCreditWorthinessRating` | | ✓ | | | | |
+| `_BPLegalProceedingStatus` | | ✓ | | | | |
 
 ## Associations
 

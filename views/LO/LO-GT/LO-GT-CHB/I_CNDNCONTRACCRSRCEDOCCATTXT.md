@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccrSrceDocCategory` | ✓ | |  | `cast( dd07t.domvalue_l as wcb_accdoc_category )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `AccrSrceDocCategoryName` |  | |  | `cast( dd07t.ddtext as wcb_accr_srce_doc_cat_descr preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CndnContrAccrSrceDocCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccrSrceDocCategory` | ✓ | |  | `cast( dd07t.domvalue_l as wcb_accdoc_category )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `AccrSrceDocCategoryName` |  | |  | `cast( dd07t.ddtext as wcb_accr_srce_doc_cat_descr preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CndnContrAccrSrceDocCat` | | ✓ | | | | |
 
 ## Associations
 

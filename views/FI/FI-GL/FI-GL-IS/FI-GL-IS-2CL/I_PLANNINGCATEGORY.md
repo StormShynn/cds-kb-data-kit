@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlanningCategory` | ✓ | |  | `category` |
-| `PlngCategoryApplicationType` |  | |  | `application_type` |
-| `ExchangeRateType` |  | |  | `kurst` |
-| `PlanDataUploadIsAllowed` |  | |  | `upload_allowed` |
-| `CopyToPlngCategoryIsAllowed` |  | |  | `copy_allowed` |
-| `PlanDataDeletionIsAllowed` |  | |  | `delete_allowed` |
-| `PlanDataCompressionIsAllowed` |  | |  | `compression_allowed` |
-| `PlanningCategoryUsage` |  | |  | `category_usage` |
-| `PlanningCatIsForAvailyCtrl` |  | |  | `availability_control` |
-| `PlngCatIsCommlProjMgmtBslnPlng` |  | |  | `baseline` |
-| `PlngCatIsCommlProjMgmtOngPlng` |  | |  | `ongoing` |
-| `PlngCatIsForProdnCostOrdPlng` |  | |  | `planord` |
-| `PlngCatIsForProdnCostMatlPlng` |  | |  | `preplanord` |
-| `PlngCatIsForProdnCostSlsPlng` |  | |  | `prediction` |
-| `PlngCatIsForMaintOrdBslnPlng` |  | |  | `pm_order_baseline_planned_cost` |
-| `PlngCatIsForMaintOrdOngPlng` |  | |  | `pm_order_planned_cost` |
-| `PlngCatIsForMaintOrdEstPlng` |  | |  | `pm_order_estimated_cost` |
-| `PlngCatIsForSrvcDocBslnPlng` |  | |  | `sd_baseline` |
-| `PlngCatIsForSrvcDocOngPlng` |  | |  | `sd_ongoing` |
-| `PlngCatIsForApplSpcfcPlngPrps1` |  | |  | `cat_purpose01` |
-| `PlngCatIsForApplSpcfcPlngPrps2` |  | |  | `cat_purpose02` |
-| `PlngCatIsForApplSpcfcPlngPrps3` |  | |  | `cat_purpose03` |
-| `_Text` | | ✓ | | |
-| `_VirtualPlanningCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanningCategory` | ✓ | |  | `category` |  |  |
+| `PlngCategoryApplicationType` |  | |  | `application_type` |  |  |
+| `ExchangeRateType` |  | |  | `kurst` |  |  |
+| `PlanDataUploadIsAllowed` |  | |  | `upload_allowed` |  |  |
+| `CopyToPlngCategoryIsAllowed` |  | |  | `copy_allowed` |  |  |
+| `PlanDataDeletionIsAllowed` |  | |  | `delete_allowed` |  |  |
+| `PlanDataCompressionIsAllowed` |  | |  | `compression_allowed` |  |  |
+| `PlanningCategoryUsage` |  | |  | `category_usage` |  |  |
+| `PlanningCatIsForAvailyCtrl` |  | |  | `availability_control` |  |  |
+| `PlngCatIsCommlProjMgmtBslnPlng` |  | |  | `baseline` |  |  |
+| `PlngCatIsCommlProjMgmtOngPlng` |  | |  | `ongoing` |  |  |
+| `PlngCatIsForProdnCostOrdPlng` |  | |  | `planord` |  |  |
+| `PlngCatIsForProdnCostMatlPlng` |  | |  | `preplanord` |  |  |
+| `PlngCatIsForProdnCostSlsPlng` |  | |  | `prediction` |  |  |
+| `PlngCatIsForMaintOrdBslnPlng` |  | |  | `pm_order_baseline_planned_cost` |  |  |
+| `PlngCatIsForMaintOrdOngPlng` |  | |  | `pm_order_planned_cost` |  |  |
+| `PlngCatIsForMaintOrdEstPlng` |  | |  | `pm_order_estimated_cost` |  |  |
+| `PlngCatIsForSrvcDocBslnPlng` |  | |  | `sd_baseline` |  |  |
+| `PlngCatIsForSrvcDocOngPlng` |  | |  | `sd_ongoing` |  |  |
+| `PlngCatIsForApplSpcfcPlngPrps1` |  | |  | `cat_purpose01` |  |  |
+| `PlngCatIsForApplSpcfcPlngPrps2` |  | |  | `cat_purpose02` |  |  |
+| `PlngCatIsForApplSpcfcPlngPrps3` |  | |  | `cat_purpose03` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_VirtualPlanningCategory` | | ✓ | | | | |
 
 ## Associations
 

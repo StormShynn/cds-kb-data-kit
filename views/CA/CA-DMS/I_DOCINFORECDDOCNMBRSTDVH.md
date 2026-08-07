@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
-| `_DocType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
+| `_DocType` | | ✓ | | | | |
 
 ## Source Code
 

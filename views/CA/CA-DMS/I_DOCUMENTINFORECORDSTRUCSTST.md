@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `IsDocInfoRecordStructure` | ✓ | |  | `domvalue_l` |
-| `DocInfoRecdStrucDescription` |  | |  | `ddtext` |
-| `_DocumentInfoRecordStrucSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `IsDocInfoRecordStructure` | ✓ | |  | `domvalue_l` |  |  |
+| `DocInfoRecdStrucDescription` |  | |  | `ddtext` |  |  |
+| `_DocumentInfoRecordStrucSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

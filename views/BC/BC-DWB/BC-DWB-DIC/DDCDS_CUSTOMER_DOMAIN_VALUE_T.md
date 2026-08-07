@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `domain_name` | ✓ | |  | `cast(dd07t.domname as abap.char(30))` |
-| `value_position` | ✓ | |  | `cast(dd07t.valpos as abap.numc(4))` |
-| `language` | ✓ | |  | `ddlanguage` |
-| `value_low` |  | |  | `domvalue_l` |
-| `text` |  | |  | `ddtext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `domain_name` | ✓ | |  | `cast(dd07t.domname as abap.char(30))` |  |  |
+| `value_position` | ✓ | |  | `cast(dd07t.valpos as abap.numc(4))` |  |  |
+| `language` | ✓ | |  | `ddlanguage` |  |  |
+| `value_low` |  | |  | `domvalue_l` |  |  |
+| `text` |  | |  | `ddtext` |  |  |
 
 ## Source Code
 

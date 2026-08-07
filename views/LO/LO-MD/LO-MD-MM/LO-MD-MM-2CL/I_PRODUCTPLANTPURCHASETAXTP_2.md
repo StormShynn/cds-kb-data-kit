@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `DepartureCountry` | ✓ | |  |  |
-| `ProdPurchaseTaxClassification` |  | |  |  |
-| `_ProductPlant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
-| `_CountryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `DepartureCountry` | ✓ | |  |  |  |  |
+| `ProdPurchaseTaxClassification` |  | |  |  |  |  |
+| `_ProductPlant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
 
 ## Source Code
 

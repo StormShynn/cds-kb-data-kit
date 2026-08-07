@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerLoanToManager` | ✓ | |  | `kwg_org` |
-| `_Text` | | ✓ | | |
-| `_BPFinancialServicesReporting` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerLoanToManager` | ✓ | |  | `kwg_org` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_BPFinancialServicesReporting` | | ✓ | | | | |
 
 ## Associations
 

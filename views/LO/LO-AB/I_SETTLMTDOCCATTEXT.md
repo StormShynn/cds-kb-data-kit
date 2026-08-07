@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SettlmtDocCat` | ✓ | |  | `cast( dd07t.domvalue_l as wlf_settlmt_doc_cat )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SettlmtDocCatName` |  | |  | `cast( dd07t.ddtext as wlf_lftyp_name preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_SettlmtDocCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocCat` | ✓ | |  | `cast( dd07t.domvalue_l as wlf_settlmt_doc_cat )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SettlmtDocCatName` |  | |  | `cast( dd07t.ddtext as wlf_lftyp_name preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SettlmtDocCat` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BusinessPartnerAddressID` | ✓ | |  | `adrnr` |
-| `BPTaxType` | ✓ | |  | `taxtype` |
-| `BPTaxNumber` |  | |  | `taxnum` |
-| `BPTaxLongNumber` |  | |  | `taxnumxl` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartner` | | ✓ | | |
-| `_TaxCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BusinessPartnerAddressID` | ✓ | |  | `adrnr` |  |  |
+| `BPTaxType` | ✓ | |  | `taxtype` |  |  |
+| `BPTaxNumber` |  | |  | `taxnum` |  |  |
+| `BPTaxLongNumber` |  | |  | `taxnumxl` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_TaxCategoryText` | | ✓ | | | | |
 
 ## Associations
 

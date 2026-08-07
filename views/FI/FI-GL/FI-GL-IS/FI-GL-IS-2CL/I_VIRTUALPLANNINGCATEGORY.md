@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlanningCategory` | ✓ | |  | `cast (fcomc_cat_assgmt.virtual_category as fcom_category preserving type)` |
-| `SourcePlanningCategory` | ✓ | |  | `source_category` |
-| `_Text` | | ✓ | | |
-| `_SourcePlanningCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanningCategory` | ✓ | |  | `cast (fcomc_cat_assgmt.virtual_category as fcom_category preserving type)` |  |  |
+| `SourcePlanningCategory` | ✓ | |  | `source_category` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SourcePlanningCategory` | | ✓ | | | | |
 
 ## Associations
 

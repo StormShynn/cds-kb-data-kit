@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `Currency` |  | |  |  |
-| `LanguageISOCode` |  | |  |  |
-| `TimeZoneText` |  | |  | `cast( _IANATimeZone.TimeZoneIANACode as cimic_time_zone )` |
-| `EndDateFiscalYearPeriod` |  | |  | `cast( concat( substring(_FiscalYearCC.FiscalYearEndDate, 5, 2), concat('-', substring(_FiscalYearCC.FiscalYearEndDate, 7, 2) )) as cimic_fyear_enddate )` |
-| `TaxCalculationProcedure` |  | |  |  |
-| `ExternalTaxSystem` |  | |  | `cast( _TxJxProced.ExternalTaxSystem as cimic_external_tax_system )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `LanguageISOCode` |  | |  |  |  |  |
+| `TimeZoneText` |  | |  | `cast( _IANATimeZone.TimeZoneIANACode as cimic_time_zone )` |  |  |
+| `EndDateFiscalYearPeriod` |  | |  | `cast( concat( substring(_FiscalYearCC.FiscalYearEndDate, 5, 2), concat('-', substring(_FiscalYearCC.FiscalYearEndDate, 7, 2) )) as cimic_fyear_enddate )` |  |  |
+| `TaxCalculationProcedure` |  | |  |  |  |  |
+| `ExternalTaxSystem` |  | |  | `cast( _TxJxProced.ExternalTaxSystem as cimic_external_tax_system )` |  |  |
 
 ## Associations
 

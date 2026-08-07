@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StockTransportOrder` | ✓ | |  |  |
-| `StockTransportOrderType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `StockTransportOrderDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `Language` |  | |  |  |
-| `ReleaseIsNotCompleted` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `IsIntrastatReportingRelevant` |  | |  |  |
-| `IsIntrastatReportingExcluded` |  | |  |  |
-| `_StockTransportOrderItem` | | ✓ | | |
-| `_StockTransportOrderNote` | | ✓ | | |
-| `_StockTransportOrderPartner` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_SupplyingPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |  |  |
+| `StockTransportOrderType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `StockTransportOrderDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `IsIntrastatReportingRelevant` |  | |  |  |  |  |
+| `IsIntrastatReportingExcluded` |  | |  |  |  |  |
+| `_StockTransportOrderItem` | | ✓ | | | | |
+| `_StockTransportOrderNote` | | ✓ | | | | |
+| `_StockTransportOrderPartner` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_SupplyingPlant` | | ✓ | | | | |
 
 ## Source Code
 

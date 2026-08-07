@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MrchdsCategoryHierarchyNode` | ✓ | |  | `cast(MrchdsCatHierNode.class as rfm_mrchdcathiernode preserving type )` |
-| `Characteristic` | ✓ | |  | `atnam` |
-| `CharcInternalID` |  | |  | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |
-| `_Characteristic` | | ✓ | | |
-| `_CharacteristicDesc` | | ✓ | | |
-| `_MrchdsCategoryHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MrchdsCategoryHierarchyNode` | ✓ | |  | `cast(MrchdsCatHierNode.class as rfm_mrchdcathiernode preserving type )` |  |  |
+| `Characteristic` | ✓ | |  | `atnam` |  |  |
+| `CharcInternalID` |  | |  | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |  |  |
+| `_Characteristic` | | ✓ | | | | |
+| `_CharacteristicDesc` | | ✓ | | | | |
+| `_MrchdsCategoryHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

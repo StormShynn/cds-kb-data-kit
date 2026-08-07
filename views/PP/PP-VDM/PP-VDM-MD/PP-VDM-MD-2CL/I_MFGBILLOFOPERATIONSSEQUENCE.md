@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsType` | ✓ | |  |  |
-| `BillOfOperationsGroup` | ✓ | |  |  |
-| `BillOfOperationsVariant` | ✓ | |  |  |
-| `BillOfOperationsSequence` | ✓ | |  |  |
-| `_BillOfOperations` | | ✓ | | |
-| `_BOOSequenceChangeState` | | ✓ | | |
-| `_BillOfOperationsOperation` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |  |  |
+| `BillOfOperationsSequence` | ✓ | |  |  |  |  |
+| `_BillOfOperations` | | ✓ | | | | |
+| `_BOOSequenceChangeState` | | ✓ | | | | |
+| `_BillOfOperationsOperation` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
 
 ## Associations
 

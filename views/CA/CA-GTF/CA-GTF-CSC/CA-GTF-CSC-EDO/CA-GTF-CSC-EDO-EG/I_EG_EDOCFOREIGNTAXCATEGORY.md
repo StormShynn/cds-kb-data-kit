@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EG_EDocCountryCode` | ✓ | |  |  |
-| `EG_EDocBPPerson` | ✓ | |  |  |
-| `EG_EDocTaxNumberCategory` |  | |  |  |
-| `EG_EDocPrefixCountryCode` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EG_EDocCountryCode` | ✓ | |  |  |  |  |
+| `EG_EDocBPPerson` | ✓ | |  |  |  |  |
+| `EG_EDocTaxNumberCategory` |  | |  |  |  |  |
+| `EG_EDocPrefixCountryCode` |  | |  |  |  |  |
 
 ## Source Code
 

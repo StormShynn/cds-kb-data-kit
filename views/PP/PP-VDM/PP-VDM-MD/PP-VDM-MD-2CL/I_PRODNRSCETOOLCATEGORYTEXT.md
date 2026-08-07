@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdnRsceToolCategory` | ✓ | |  | `fhmar` |
-| `Language` | ✓ | |  | `spras` |
-| `ProdnRsceToolCategoryName` |  | |  | `faktx` |
-| `ProdnRsceToolCategoryExtCode` |  | |  | `fhmar_ext` |
-| `_ProdnRsceToolCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdnRsceToolCategory` | ✓ | |  | `fhmar` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProdnRsceToolCategoryName` |  | |  | `faktx` |  |  |
+| `ProdnRsceToolCategoryExtCode` |  | |  | `fhmar_ext` |  |  |
+| `_ProdnRsceToolCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

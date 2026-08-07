@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_BillOfLadingType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as logbr_bill_lading_type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_BillOfLadingType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as logbr_bill_lading_type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

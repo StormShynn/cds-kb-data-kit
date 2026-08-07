@@ -29,47 +29,47 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfAccounts` | ✓ | |  | `ktopl` |
-| `GLAccount` | ✓ | |  | `saknr` |
-| `IsBalanceSheetAccount` |  | |  | `cast( ska1.xbilk as isbalancesheetaccount )` |
-| `GLAccountGroup` |  | |  | `}] ska1.ktoks` |
-| `CorporateGroupChartOfAccounts` |  | | `_ChartOfAccounts` | `CorporateGroupChartOfAccounts` |
-| `CorporateGroupAccount` |  | |  | `bilkt` |
-| `ProfitLossAccountType` |  | |  | `gvtyp` |
-| `SampleGLAccount` |  | |  | `mustr` |
-| `AccountIsMarkedForDeletion` |  | |  | `xloev` |
-| `AccountIsBlockedForCreation` |  | |  | `xspea` |
-| `AccountIsBlockedForPosting` |  | |  | `xspeb` |
-| `AccountIsBlockedForPlanning` |  | |  | `xspep` |
-| `PartnerCompany` |  | |  | `vbund` |
-| `FunctionalArea` |  | |  | `func_area` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `LastChangeDateTime` |  | |  | `last_changed_ts` |
-| `GLAccountType` |  | |  | `glaccount_type` |
-| `GLAccountSubtype` |  | |  | `glaccount_subtype` |
-| `GLAccountExternal` |  | |  | `cast( ska1.sakan as fac_sakan )` |
-| `BankReconciliationAccount` |  | |  | `main_saknr` |
-| `IsProfitLossAccount` |  | |  | `cast(case when ska1.xbilk = 'X' then ' ' else 'X' end as xbilk)` |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_GLAccountGroupText` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_GLAccountType` | | ✓ | | |
-| `_GLAccountSubtype` | | ✓ | | |
-| `_RetainedEarningsGLAccount` | | ✓ | | |
-| `_GLAccountHierarchyNode` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_User` | | ✓ | | |
-| `_GlobalCompany` | | ✓ | | |
-| `_GLAccountGroup` | | ✓ | | |
-| `_GLAcctInChartOfAcctsProdn` | | ✓ | | |
-| `_GLAcctInChartOfAcctsStatus` | | ✓ | | |
-| `_PublicSector` | | ✓ | | |
-| `_CorporateGroupChartOfAccounts` | | ✓ | | |
-| `_CorporateGroupAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `ktopl` |  |  |
+| `GLAccount` | ✓ | |  | `saknr` |  |  |
+| `IsBalanceSheetAccount` |  | |  | `cast( ska1.xbilk as isbalancesheetaccount )` |  |  |
+| `GLAccountGroup` |  | |  | `ktoks` |  |  |
+| `CorporateGroupChartOfAccounts` |  | | `_ChartOfAccounts` | `CorporateGroupChartOfAccounts` |  |  |
+| `CorporateGroupAccount` |  | |  | `bilkt` |  |  |
+| `ProfitLossAccountType` |  | |  | `gvtyp` |  |  |
+| `SampleGLAccount` |  | |  | `mustr` |  |  |
+| `AccountIsMarkedForDeletion` |  | |  | `xloev` |  |  |
+| `AccountIsBlockedForCreation` |  | |  | `xspea` |  |  |
+| `AccountIsBlockedForPosting` |  | |  | `xspeb` |  |  |
+| `AccountIsBlockedForPlanning` |  | |  | `xspep` |  |  |
+| `PartnerCompany` |  | |  | `vbund` |  |  |
+| `FunctionalArea` |  | |  | `func_area` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `LastChangeDateTime` |  | |  | `last_changed_ts` |  |  |
+| `GLAccountType` |  | |  | `glaccount_type` |  |  |
+| `GLAccountSubtype` |  | |  | `glaccount_subtype` |  |  |
+| `GLAccountExternal` |  | |  | `cast( ska1.sakan as fac_sakan )` |  |  |
+| `BankReconciliationAccount` |  | |  | `main_saknr` |  |  |
+| `IsProfitLossAccount` |  | |  | `cast(case when ska1.xbilk = 'X' then ' ' else 'X' end as xbilk)` |  |  |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_GLAccountGroupText` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_GLAccountType` | | ✓ | | | | |
+| `_GLAccountSubtype` | | ✓ | | | | |
+| `_RetainedEarningsGLAccount` | | ✓ | | | | |
+| `_GLAccountHierarchyNode` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_User` | | ✓ | | | | |
+| `_GlobalCompany` | | ✓ | | | | |
+| `_GLAccountGroup` | | ✓ | | | | |
+| `_GLAcctInChartOfAcctsProdn` | | ✓ | | | | |
+| `_GLAcctInChartOfAcctsStatus` | | ✓ | | | | |
+| `_PublicSector` | | ✓ | | | | |
+| `_CorporateGroupChartOfAccounts` | | ✓ | | | | |
+| `_CorporateGroupAccount` | | ✓ | | | | |
 
 ## Associations
 

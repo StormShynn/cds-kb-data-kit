@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LegalTransactionIntCntctUUID` | ✓ | |  |  |
-| `LglCntntMRank` |  | |  |  |
-| `LglCntntMIntCntctUser` |  | |  |  |
-| `LglCntntMIntContactTeam` |  | |  |  |
-| `LglCntntMIntCntctType` |  | |  |  |
-| `LglCntntMIntContactUserType` |  | |  |  |
-| `LegalTransactionUUID` |  | |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |
-| `_LegalTransaction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionIntCntctUUID` | ✓ | |  |  |  |  |
+| `LglCntntMRank` |  | |  |  |  |  |
+| `LglCntntMIntCntctUser` |  | |  |  |  |  |
+| `LglCntntMIntContactTeam` |  | |  |  |  |  |
+| `LglCntntMIntCntctType` |  | |  |  |  |  |
+| `LglCntntMIntContactUserType` |  | |  |  |  |  |
+| `LegalTransactionUUID` |  | |  |  |  |  |
+| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `_LegalTransaction` | | ✓ | | | | |
 
 ## Source Code
 

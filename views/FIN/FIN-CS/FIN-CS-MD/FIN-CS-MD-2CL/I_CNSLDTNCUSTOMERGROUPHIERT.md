@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `CnsldtnCustomerGroupHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_customergrouphierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `CnsldtnCustomerGroupHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_customergrouphiertext preserving type )` |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `CnsldtnCustomerGroupHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_customergrouphierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `CnsldtnCustomerGroupHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_customergrouphiertext preserving type )` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
-| `CnsldtnDocTypeBusinessAppl` | ✓ | |  | `cast(left(_DomainT.DomainValue, 1) as fincs_doctypebusinessappl preserving type)` |
-| `CnsldtnDocTypeBusinessApplText` |  | | `_DomainT` | `DomainValueText` |
-| `DomainValue` |  | | `_DomainT` | `DomainValue` |
-| `_DocTypeBusinessApplication` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |  |  |
+| `CnsldtnDocTypeBusinessAppl` | ✓ | |  | `cast(left(_DomainT.DomainValue, 1) as fincs_doctypebusinessappl preserving type)` |  |  |
+| `CnsldtnDocTypeBusinessApplText` |  | | `_DomainT` | `DomainValueText` |  |  |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |  |  |
+| `_DocTypeBusinessApplication` | | ✓ | | | | |
 
 ## Associations
 

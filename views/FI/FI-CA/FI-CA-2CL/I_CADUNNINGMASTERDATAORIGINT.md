@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAOriginOfDunningMasterData` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as dunn_par_orig_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAOriginOfDunningMstrDataText` |  | |  | `cast( ddtext as dunn_par_orig_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAOriginOfDunningMasterData` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as dunn_par_orig_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAOriginOfDunningMstrDataText` |  | |  | `cast( ddtext as dunn_par_orig_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

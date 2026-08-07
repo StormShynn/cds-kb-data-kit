@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ArchitecturalObjectNumber` | ✓ | |  |  |
-| `TechnicalObjectType` | ✓ | |  |  |
-| `DocumentText` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractItem` | ✓ | |  |  |
-| `NoteDescription` |  | |  |  |
-| `FixedIndicator` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurchaseContractItem` | | ✓ | | |
-| `_PurContract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ArchitecturalObjectNumber` | ✓ | |  |  |  |  |
+| `TechnicalObjectType` | ✓ | |  |  |  |  |
+| `DocumentText` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |  |  |
+| `NoteDescription` |  | |  |  |  |  |
+| `FixedIndicator` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurchaseContractItem` | | ✓ | | | | |
+| `_PurContract` | | ✓ | | | | |
 
 ## Source Code
 

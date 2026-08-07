@@ -32,24 +32,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `LoadingGroup` |  | |  |  |
-| `CapPlanningQuantityInBaseUoM` |  | |  |  |
-| `ProdShipgProcgDurationInDays` |  | |  |  |
-| `WrkCentersShipgSetupTimeInDays` |  | |  |  |
-| `ReplacementPartType` |  | |  |  |
-| `AvailabilityCheckType` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_LoadingGroupText` | | ✓ | | |
-| `_ProductReplacementPartTypeT` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `LoadingGroup` |  | |  |  |  |  |
+| `CapPlanningQuantityInBaseUoM` |  | |  |  |  |  |
+| `ProdShipgProcgDurationInDays` |  | |  |  |  |  |
+| `WrkCentersShipgSetupTimeInDays` |  | |  |  |  |  |
+| `ReplacementPartType` |  | |  |  |  |  |
+| `AvailabilityCheckType` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_LoadingGroupText` | | ✓ | | | | |
+| `_ProductReplacementPartTypeT` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
 
 ## Source Code
 

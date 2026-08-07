@@ -27,26 +27,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |
-| `CAMainTransaction` | ✓ | |  | `hvorg` |
-| `CASubTransaction` | ✓ | |  | `tvorg` |
-| `CAMainTransactionForReversal` |  | |  | `hvorg_rev` |
-| `CASubTransactionForReversal` |  | |  | `tvorg_rev` |
-| `CADueDateDeterminationRule` |  | |  | `faetp` |
-| `CAWithholdingTaxAmountType` |  | |  | `qsvtp` |
-| `CARuleForAddlReceivables` |  | |  | `rladdr` |
-| `CAIsPaymentTransaction` |  | |  | `xpayt` |
-| `_ApplArea` |  | |  | `_CAApplicationArea` |
-| `_MainTransaction` |  | |  | `_CAMainTransaction` |
-| `_MainTransactionRev` |  | |  | `_CAReversalMainTransaction` |
-| `_SubTransactionRev` |  | |  | `_CAReversalSubTransaction` |
-| `_CAApplicationArea` | | ✓ | | |
-| `_CAMainTransaction` | | ✓ | | |
-| `_CAReversalMainTransaction` | | ✓ | | |
-| `_CAReversalSubTransaction` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
+| `CAMainTransaction` | ✓ | |  | `hvorg` |  |  |
+| `CASubTransaction` | ✓ | |  | `tvorg` |  |  |
+| `CAMainTransactionForReversal` |  | |  | `hvorg_rev` |  |  |
+| `CASubTransactionForReversal` |  | |  | `tvorg_rev` |  |  |
+| `CADueDateDeterminationRule` |  | |  | `faetp` |  |  |
+| `CAWithholdingTaxAmountType` |  | |  | `qsvtp` |  |  |
+| `CARuleForAddlReceivables` |  | |  | `rladdr` |  |  |
+| `CAIsPaymentTransaction` |  | |  | `xpayt` |  |  |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
+| `_MainTransaction` |  | |  | `_CAMainTransaction` |  |  |
+| `_MainTransactionRev` |  | |  | `_CAReversalMainTransaction` |  |  |
+| `_SubTransactionRev` |  | |  | `_CAReversalSubTransaction` |  |  |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_CAMainTransaction` | | ✓ | | | | |
+| `_CAReversalMainTransaction` | | ✓ | | | | |
+| `_CAReversalSubTransaction` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

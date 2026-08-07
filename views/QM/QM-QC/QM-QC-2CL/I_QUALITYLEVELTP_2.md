@@ -28,57 +28,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `BillOfOperationsType` | ✓ | |  |  |
-| `BillOfOperationsGroup` | ✓ | |  |  |
-| `BillOfOperationsVariant` | ✓ | |  |  |
-| `BOOOperationInternalID` | ✓ | |  |  |
-| `Sequence` | ✓ | |  |  |
-| `QualityLevelInternalID` | ✓ | |  |  |
-| `Supplier` |  | |  |  |
-| `Manufacturer` |  | |  |  |
-| `Customer` |  | |  |  |
-| `InspectionLotType` |  | |  |  |
-| `InspectionOperation` |  | |  |  |
-| `InspectionCharacteristic` |  | |  |  |
-| `QltyLvlIndirectlyChangedBy` |  | |  |  |
-| `QltyLvlManuallyChangedBy` |  | |  |  |
-| `QltyLvlIndirectlyChangedOn` |  | |  |  |
-| `QltyLvlManuallyChangedOn` |  | |  |  |
-| `InspectionLot` |  | |  |  |
-| `InspLotUsageDecisionValuation` |  | |  |  |
-| `InspLotUsgeDcsnDynValuation` |  | |  |  |
-| `SamplingProcedure` |  | |  |  |
-| `InspLotDynamicRule` |  | |  |  |
-| `QltyLevelNextDynRuleStage` |  | |  |  |
-| `InspLotsWithoutUsageDecision` |  | |  |  |
-| `InspLotsSinceStageChg` |  | |  |  |
-| `RjctdInspLotsSinceStgeChg` |  | |  |  |
-| `InspResultDynModifValuation` |  | |  |  |
-| `InspectionValuationResult` |  | |  |  |
-| `QualityLevelLastOpenInspLot` |  | |  |  |
-| `QualityLevelLastInspectionOn` |  | |  |  |
-| `QltyLevelCanceledInspections` |  | |  |  |
-| `QualityLevelDeletionOn` |  | |  |  |
-| `QualityLevelResetOn` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_Plant` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BillOfOperations` | | ✓ | | |
-| `_BOOOperationInternalID` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_NextInspLotDynRuleStage` | | ✓ | | |
-| `_InspLotDynamicRule` | | ✓ | | |
-| `_InspectionLot` | | ✓ | | |
-| `_Manufacturer` | | ✓ | | |
-| `_QualityLevelLastOpenInspLot` | | ✓ | | |
-| `_ProductPlantQtManagement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `BillOfOperationsType` | ✓ | |  |  |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |  |  |
+| `Sequence` | ✓ | |  |  |  |  |
+| `QualityLevelInternalID` | ✓ | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Manufacturer` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `InspectionLotType` |  | |  |  |  |  |
+| `InspectionOperation` |  | |  |  |  |  |
+| `InspectionCharacteristic` |  | |  |  |  |  |
+| `QltyLvlIndirectlyChangedBy` |  | |  |  |  |  |
+| `QltyLvlManuallyChangedBy` |  | |  |  |  |  |
+| `QltyLvlIndirectlyChangedOn` |  | |  |  |  |  |
+| `QltyLvlManuallyChangedOn` |  | |  |  |  |  |
+| `InspectionLot` |  | |  |  |  |  |
+| `InspLotUsageDecisionValuation` |  | |  |  |  |  |
+| `InspLotUsgeDcsnDynValuation` |  | |  |  |  |  |
+| `SamplingProcedure` |  | |  |  |  |  |
+| `InspLotDynamicRule` |  | |  |  |  |  |
+| `QltyLevelNextDynRuleStage` |  | |  |  |  |  |
+| `InspLotsWithoutUsageDecision` |  | |  |  |  |  |
+| `InspLotsSinceStageChg` |  | |  |  |  |  |
+| `RjctdInspLotsSinceStgeChg` |  | |  |  |  |  |
+| `InspResultDynModifValuation` |  | |  |  |  |  |
+| `InspectionValuationResult` |  | |  |  |  |  |
+| `QualityLevelLastOpenInspLot` |  | |  |  |  |  |
+| `QualityLevelLastInspectionOn` |  | |  |  |  |  |
+| `QltyLevelCanceledInspections` |  | |  |  |  |  |
+| `QualityLevelDeletionOn` |  | |  |  |  |  |
+| `QualityLevelResetOn` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperations` | | ✓ | | | | |
+| `_BOOOperationInternalID` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_NextInspLotDynRuleStage` | | ✓ | | | | |
+| `_InspLotDynamicRule` | | ✓ | | | | |
+| `_InspectionLot` | | ✓ | | | | |
+| `_Manufacturer` | | ✓ | | | | |
+| `_QualityLevelLastOpenInspLot` | | ✓ | | | | |
+| `_ProductPlantQtManagement` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `EWMDeliveryDocumentType` | ✓ | |  | `type` |
-| `EWMDeliveryDocumentCategory` | ✓ | |  | `category` |
-| `DeliveryTypeName` |  | |  | `description` |
-| `_DeliveryCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `EWMDeliveryDocumentType` | ✓ | |  | `type` |  |  |
+| `EWMDeliveryDocumentCategory` | ✓ | |  | `category` |  |  |
+| `DeliveryTypeName` |  | |  | `description` |  |  |
+| `_DeliveryCategory` | | ✓ | | | | |
 
 ## Associations
 

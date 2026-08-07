@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerGroupType` | ✓ | |  | `partgrptyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerGroupType` | ✓ | |  | `partgrptyp` | `CHAR(4)` | Group type |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

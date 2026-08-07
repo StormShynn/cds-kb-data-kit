@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectType` | ✓ | |  | `prart` |
-| `Language` | ✓ | |  | `langu` |
-| `ProjectTypeName` |  | |  | `pratx` |
-| `_ProjectType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectType` | ✓ | |  | `prart` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ProjectTypeName` |  | |  | `pratx` |  |  |
+| `_ProjectType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

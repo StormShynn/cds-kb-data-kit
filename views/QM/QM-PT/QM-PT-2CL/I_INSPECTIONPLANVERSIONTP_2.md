@@ -29,41 +29,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionPlanGroup` | ✓ | |  |  |
-| `InspectionPlan` | ✓ | |  |  |
-| `InspectionPlanInternalVersion` | ✓ | |  |  |
-| `BillOfOperationsStatus` |  | |  |  |
-| `BillOfOperationsUsage` |  | |  |  |
-| `BillOfOperationsDesc` |  | |  |  |
-| `Plant` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ResponsiblePlannerGroup` |  | |  |  |
-| `MinimumLotSizeQuantity` |  | |  |  |
-| `MaximumLotSizeQuantity` |  | |  |  |
-| `BillOfOperationsUnit` |  | |  |  |
-| `ReplacedBillOfOperations` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `InspPlanHasMultipleSpec` |  | |  |  |
-| `InspSubsetFieldCombination` |  | |  |  |
-| `InspectionPartialLotAssignment` |  | |  |  |
-| `SmplDrawingProcedure` |  | |  |  |
-| `SmplDrawingProcedureVersion` |  | |  |  |
-| `InspectionLotDynamicLevel` |  | |  |  |
-| `InspLotDynamicRule` |  | |  |  |
-| `InspExternalNumberingOfValues` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_InspPlan` | | ✓ | | |
-| `_InspPlanMatlAssgmtVers` | | ✓ | | |
-| `_InspPlanOpVersion` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  |  |  |  |
+| `InspectionPlan` | ✓ | |  |  |  |  |
+| `InspectionPlanInternalVersion` | ✓ | |  |  |  |  |
+| `BillOfOperationsStatus` |  | |  |  |  |  |
+| `BillOfOperationsUsage` |  | |  |  |  |  |
+| `BillOfOperationsDesc` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |  |  |
+| `BillOfOperationsUnit` |  | |  |  |  |  |
+| `ReplacedBillOfOperations` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `InspPlanHasMultipleSpec` |  | |  |  |  |  |
+| `InspSubsetFieldCombination` |  | |  |  |  |  |
+| `InspectionPartialLotAssignment` |  | |  |  |  |  |
+| `SmplDrawingProcedure` |  | |  |  |  |  |
+| `SmplDrawingProcedureVersion` |  | |  |  |  |  |
+| `InspectionLotDynamicLevel` |  | |  |  |  |  |
+| `InspLotDynamicRule` |  | |  |  |  |  |
+| `InspExternalNumberingOfValues` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_InspPlan` | | ✓ | | | | |
+| `_InspPlanMatlAssgmtVers` | | ✓ | | | | |
+| `_InspPlanOpVersion` | | ✓ | | | | |
 
 ## Source Code
 

@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerTaxCategory` | ✓ | |  | `tatyp` |
-| `CustomerTaxClassification` | ✓ | |  | `taxkd` |
-| `Language` | ✓ | |  | `spras` |
-| `CustomerTaxClassificationName` |  | |  | `vtext` |
-| `_ConditionType` | | ✓ | | |
-| `_CustomerTaxClassification` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerTaxCategory` | ✓ | |  | `tatyp` |  |  |
+| `CustomerTaxClassification` | ✓ | |  | `taxkd` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CustomerTaxClassificationName` |  | |  | `vtext` |  |  |
+| `_ConditionType` | | ✓ | | | | |
+| `_CustomerTaxClassification` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

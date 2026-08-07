@@ -33,18 +33,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UUID` | ✓ | |  |  |
-| `ParentUUID` |  | |  |  |
-| `OrderItemID` |  | |  |  |
-| `ProductName` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `UnitPrice` |  | |  |  |
-| `QuantityUOM` |  | |  | `] } QuantityUOM` |
-| `CurrencyCode` |  | |  | `] } CurrencyCode` |
-| `_BaseEntity` | | ✓ | | |
-| `_Order000` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UUID` | ✓ | |  |  |  |  |
+| `ParentUUID` |  | |  |  |  |  |
+| `OrderItemID` |  | |  |  |  |  |
+| `ProductName` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `UnitPrice` |  | |  |  |  |  |
+| `QuantityUOM` |  | |  |  |  |  |
+| `CurrencyCode` |  | |  |  |  |  |
+| `_BaseEntity` | | ✓ | | | | |
+| `_Order000` | | ✓ | | | | |
 
 ## Associations
 

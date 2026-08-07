@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
-| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( left(_HierarchyNodeText.HierarchyNodeClass, 2) as fincs_conschartofaccounts preserving type )` |
-| `ConsolidationReportingItemHier` | ✓ | |  | `cast( substring(_HierarchyNodeText.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
-| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
-| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
-| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
-| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
-| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |  |  |
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( left(_HierarchyNodeText.HierarchyNodeClass, 2) as fincs_conschartofaccounts preserving type )` |  |  |
+| `ConsolidationReportingItemHier` | ✓ | |  | `cast( substring(_HierarchyNodeText.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |  |  |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |  |  |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |  |  |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |  |  |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |  |  |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

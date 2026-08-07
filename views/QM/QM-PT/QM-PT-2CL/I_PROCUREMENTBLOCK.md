@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProcurementBlock` | ✓ | |  | `sperrfkt` |
-| `_ProcurementBlockText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcurementBlock` | ✓ | |  | `sperrfkt` |  |  |
+| `_ProcurementBlockText` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinSGLErrorItemUUID` | ✓ | |  | `item_id` |
-| `Ledger` |  | |  | `rldnr` |
-| `LedgerGroup` |  | |  | `ldgrp` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `AccountingDocument` |  | |  | `belnr` |
-| `FiscalYear` |  | |  | `cast( gjahr as fis_gjahr_no_conv )` |
-| `PostingDate` |  | |  | `budat` |
-| `GLAccount` |  | |  | `hkont` |
-| `PartnerCompany` |  | |  | `vbund` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `PartnerProfitCenter` |  | |  | `pprctr` |
-| `CostCenter` |  | |  | `kostl` |
-| `DocumentItemText` |  | |  | `sgtxt` |
-| `FinancialServicesProductGroup` |  | |  | `fs_product_group` |
-| `FinancialServicesBranch` |  | |  | `branch_id` |
-| `FinancialDataSource` |  | |  | `datasource_id` |
-| `CustomerSupplierIndustry` |  | |  | `brsch` |
-| `CustomerGroup` |  | |  | `kdgrp` |
-| `Country` |  | |  | `landl` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinSGLErrorItemUUID` | ✓ | |  | `item_id` | `RAW(16)` | ID of Error Correction Item |
+| `Ledger` |  | |  | `rldnr` | `CHAR(2)` | Ledger |
+| `LedgerGroup` |  | |  | `ldgrp` | `CHAR(4)` | Ledger Group |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `AccountingDocument` |  | |  | `belnr` | `CHAR(10)` | Document Number of an Accounting Document |
+| `FiscalYear` |  | |  | `cast( gjahr as fis_gjahr_no_conv )` | `NUMC(4)` | Fiscal Year |
+| `PostingDate` |  | |  | `budat` | `DATS(8)` | Posting Date in the Document |
+| `GLAccount` |  | |  | `hkont` | `CHAR(10)` | General Ledger Account |
+| `PartnerCompany` |  | |  | `vbund` | `CHAR(6)` | Company ID of Trading Partner |
+| `ProfitCenter` |  | |  | `prctr` | `CHAR(10)` | Profit Center |
+| `PartnerProfitCenter` |  | |  | `pprctr` | `CHAR(10)` | Partner Profit Center |
+| `CostCenter` |  | |  | `kostl` | `CHAR(10)` | Cost Center |
+| `DocumentItemText` |  | |  | `sgtxt` | `CHAR(50)` | Item Text |
+| `FinancialServicesProductGroup` |  | |  | `fs_product_group` | `CHAR(10)` | Product Group (Financial Services) |
+| `FinancialServicesBranch` |  | |  | `branch_id` | `CHAR(10)` | Branch (Financial Services) |
+| `FinancialDataSource` |  | |  | `datasource_id` | `CHAR(10)` | Data Source |
+| `CustomerSupplierIndustry` |  | |  | `brsch` | `CHAR(4)` | Industry Key |
+| `CustomerGroup` |  | |  | `kdgrp` | `CHAR(2)` | Customer Group |
+| `Country` |  | |  | `landl` | `CHAR(3)` | Supplying Country/Region |
 
 ## Source Code
 

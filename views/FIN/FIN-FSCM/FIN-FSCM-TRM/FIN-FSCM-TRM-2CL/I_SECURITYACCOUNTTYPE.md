@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SecurityAccountType` | ✓ | |  | `secacc_type` |
-| `SecurityAccountCategory` |  | |  | `secacc_cat` |
-| `_Text` | | ✓ | | |
-| `_SecurityAccountCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityAccountType` | ✓ | |  | `secacc_type` |  |  |
+| `SecurityAccountCategory` |  | |  | `secacc_cat` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SecurityAccountCategory` | | ✓ | | | | |
 
 ## Associations
 

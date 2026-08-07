@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'CAWN'` |  | |  | `table: 'CAWN'` |
-| `'ADZHL']` |  | |  | `tableElement: ['ATINN','ATZHL','ADZHL']` |
-| `'TimeIntervalNumber']` |  | |  | `viewElement: ['CharcInternalID','CharcValuePositionNumber','TimeIntervalNumber']` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'CAWN'` |  | |  | `table: 'CAWN'` |  |  |
+| `'ADZHL']` |  | |  | `tableElement: ['ATINN','ATZHL','ADZHL']` |  |  |
+| `'TimeIntervalNumber']` |  | |  | `viewElement: ['CharcInternalID','CharcValuePositionNumber','TimeIntervalNumber']` |  |  |
 
 ## Source Code
 

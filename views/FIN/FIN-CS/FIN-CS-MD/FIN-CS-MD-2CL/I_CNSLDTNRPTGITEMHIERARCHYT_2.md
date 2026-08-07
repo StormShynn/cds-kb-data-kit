@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( left( _HierarchyText.HierarchyClass, 2) as fincs_conschartofaccounts preserving type )` |
-| `ConsolidationReportingItemHier` | ✓ | |  | `cast( substring( _HierarchyText.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `ConsolidationRptgItemHierText` |  | | `_HierarchyText` | `UniversalHierarchyText` |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( left( _HierarchyText.HierarchyClass, 2) as fincs_conschartofaccounts preserving type )` |  |  |
+| `ConsolidationReportingItemHier` | ✓ | |  | `cast( substring( _HierarchyText.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `ConsolidationRptgItemHierText` |  | | `_HierarchyText` | `UniversalHierarchyText` |  |  |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

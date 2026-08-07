@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PricingIncompletionStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `PricingIncompletionStatusDesc` |  | |  | `bezei` |
-| `_PricingIncompletionStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingIncompletionStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PricingIncompletionStatusDesc` |  | |  | `bezei` |  |  |
+| `_PricingIncompletionStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

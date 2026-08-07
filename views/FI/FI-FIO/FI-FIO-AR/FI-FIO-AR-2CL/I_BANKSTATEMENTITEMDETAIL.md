@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankStatementShortID` | ✓ | |  |  |
-| `BankStatementItem` | ✓ | |  |  |
-| `BkStmntItemTransactionDetailID` | ✓ | |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `PaymentTransactionText` |  | |  |  |
-| `PaymentFileMsgIdentification` |  | |  |  |
-| `AccountServicerReference` |  | |  |  |
-| `PaytInformationIdentification` |  | |  |  |
-| `PaytInstructionIdentification` |  | |  |  |
-| `PaymentEndToEndIdentification` |  | |  |  |
-| `SWIFTTransactionReferenceUUID` |  | |  |  |
-| `PaytTransactionIdentification` |  | |  |  |
-| `BankStatementSEPAMandate` |  | |  |  |
-| `BankStatementCheque` |  | |  |  |
-| `PaytProcessingIdentification` |  | |  |  |
-| `PaymentProprietaryType` |  | |  |  |
-| `PaymentProprietaryReference` |  | |  |  |
-| `PaymentAdditionalInfoString` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_BankStatement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankStatementShortID` | ✓ | |  |  |  |  |
+| `BankStatementItem` | ✓ | |  |  |  |  |
+| `BkStmntItemTransactionDetailID` | ✓ | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `PaymentTransactionText` |  | |  |  |  |  |
+| `PaymentFileMsgIdentification` |  | |  |  |  |  |
+| `AccountServicerReference` |  | |  |  |  |  |
+| `PaytInformationIdentification` |  | |  |  |  |  |
+| `PaytInstructionIdentification` |  | |  |  |  |  |
+| `PaymentEndToEndIdentification` |  | |  |  |  |  |
+| `SWIFTTransactionReferenceUUID` |  | |  |  |  |  |
+| `PaytTransactionIdentification` |  | |  |  |  |  |
+| `BankStatementSEPAMandate` |  | |  |  |  |  |
+| `BankStatementCheque` |  | |  |  |  |  |
+| `PaytProcessingIdentification` |  | |  |  |  |  |
+| `PaymentProprietaryType` |  | |  |  |  |  |
+| `PaymentProprietaryReference` |  | |  |  |  |  |
+| `PaymentAdditionalInfoString` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_BankStatement` | | ✓ | | | | |
 
 ## Associations
 

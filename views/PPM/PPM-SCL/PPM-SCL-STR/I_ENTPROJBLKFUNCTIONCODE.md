@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EnterpriseProjectBlockFunction` | ✓ | |  | `cast( dd07l.domvalue_l as entobj_function_id )` |
-| `DomainValueLow` |  | |  | `domvalue_l` |
-| `_EntProjBlkFunctionCodeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EnterpriseProjectBlockFunction` | ✓ | |  | `cast( dd07l.domvalue_l as entobj_function_id )` |  |  |
+| `DomainValueLow` |  | |  | `domvalue_l` |  |  |
+| `_EntProjBlkFunctionCodeText` | | ✓ | | | | |
 
 ## Source Code
 

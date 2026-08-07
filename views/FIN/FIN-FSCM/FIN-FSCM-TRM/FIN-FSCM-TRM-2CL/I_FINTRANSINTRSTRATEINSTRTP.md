@@ -29,54 +29,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `FinancialTransaction` | ✓ | |  |  |
-| `TreasuryFinancialObject` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `FinTransCreationDate` |  | |  |  |
-| `FinTransCreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `FinInstrumentLastChangedTime` |  | |  |  |
-| `TreasuryContractType` |  | |  |  |
-| `FinancialInstrProductCategory` |  | |  |  |
-| `FinancialInstrumentProductType` |  | |  |  |
-| `FinInstrTransactionCategory` |  | |  |  |
-| `FinancialInstrTransactionType` |  | |  |  |
-| `FinTransProcessingCategory` |  | |  |  |
-| `TermStartDate` |  | |  |  |
-| `TermStartDateIsInclusive` |  | |  |  |
-| `FinTransNoticePeriod` |  | |  |  |
-| `FinTransNoticePeriodUnit` |  | |  |  |
-| `FinTransFactoryCalendar1` |  | |  |  |
-| `FinTransFactoryCalendar2` |  | |  |  |
-| `Counterparty` |  | |  |  |
-| `FinancialInstrumentGuarantor` |  | |  |  |
-| `Portfolio` |  | |  |  |
-| `TreasuryFinanceProject` |  | |  |  |
-| `FinancialInstrumentAssignment` |  | |  |  |
-| `FinancialInstrumentReference` |  | |  |  |
-| `FinancialInstrCharacteristic` |  | |  |  |
-| `TreasuryValuationClass` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `HedgingClassification` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `TreasuryFacilityCompanyCode` |  | |  |  |
-| `TreasuryFacility` |  | |  |  |
-| `FinancialInstrumentStatus` |  | |  |  |
-| `FinTransReleaseStatus` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `FinInstrLastActiveActivity` |  | |  |  |
-| `FinTransIsRiskMitigating` |  | |  |  |
-| `TermEndDate` |  | |  |  |
-| `ClassificationOfFinInstr` |  | |  |  |
-| `FinTransIntrstHndlgAtRollover` |  | |  |  |
-| `RolloverDfrrdIntrstPyoutDte` |  | |  |  |
-| `_FinTransCondition` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FinancialTransaction` | ✓ | |  |  |  |  |
+| `TreasuryFinancialObject` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `FinTransCreationDate` |  | |  |  |  |  |
+| `FinTransCreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `FinInstrumentLastChangedTime` |  | |  |  |  |  |
+| `TreasuryContractType` |  | |  |  |  |  |
+| `FinancialInstrProductCategory` |  | |  |  |  |  |
+| `FinancialInstrumentProductType` |  | |  |  |  |  |
+| `FinInstrTransactionCategory` |  | |  |  |  |  |
+| `FinancialInstrTransactionType` |  | |  |  |  |  |
+| `FinTransProcessingCategory` |  | |  |  |  |  |
+| `TermStartDate` |  | |  |  |  |  |
+| `TermStartDateIsInclusive` |  | |  |  |  |  |
+| `FinTransNoticePeriod` |  | |  |  |  |  |
+| `FinTransNoticePeriodUnit` |  | |  |  |  |  |
+| `FinTransFactoryCalendar1` |  | |  |  |  |  |
+| `FinTransFactoryCalendar2` |  | |  |  |  |  |
+| `Counterparty` |  | |  |  |  |  |
+| `FinancialInstrumentGuarantor` |  | |  |  |  |  |
+| `Portfolio` |  | |  |  |  |  |
+| `TreasuryFinanceProject` |  | |  |  |  |  |
+| `FinancialInstrumentAssignment` |  | |  |  |  |  |
+| `FinancialInstrumentReference` |  | |  |  |  |  |
+| `FinancialInstrCharacteristic` |  | |  |  |  |  |
+| `TreasuryValuationClass` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `HedgingClassification` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `TreasuryFacilityCompanyCode` |  | |  |  |  |  |
+| `TreasuryFacility` |  | |  |  |  |  |
+| `FinancialInstrumentStatus` |  | |  |  |  |  |
+| `FinTransReleaseStatus` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `FinInstrLastActiveActivity` |  | |  |  |  |  |
+| `FinTransIsRiskMitigating` |  | |  |  |  |  |
+| `TermEndDate` |  | |  |  |  |  |
+| `ClassificationOfFinInstr` |  | |  |  |  |  |
+| `FinTransIntrstHndlgAtRollover` |  | |  |  |  |  |
+| `RolloverDfrrdIntrstPyoutDte` |  | |  |  |  |  |
+| `_FinTransCondition` | | ✓ | | | | |
 
 ## Source Code
 

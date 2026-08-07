@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SecurityClassStockCategory` | ✓ | |  | `domvalue_l` |
-| `SecurityClassStockCategoryName` |  | |  | `cast(dd07t.ddtext as ftr_gen_stock_category_name)` |
-| `_SecurityClassStockCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SecurityClassStockCategory` | ✓ | |  | `domvalue_l` |  |  |
+| `SecurityClassStockCategoryName` |  | |  | `cast(dd07t.ddtext as ftr_gen_stock_category_name)` |  |  |
+| `_SecurityClassStockCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

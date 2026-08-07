@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CaseStatusProfile` | ✓ | |  | `profile_id` |
-| `Language` | ✓ | |  | `langu` |
-| `CaseStatusProfileName` |  | |  | `stat_prof_descr` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseStatusProfile` | ✓ | |  | `profile_id` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CaseStatusProfileName` |  | |  | `stat_prof_descr` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

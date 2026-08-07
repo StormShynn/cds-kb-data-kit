@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
-| `StockChangeCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 2 ) as abap.char( 2 ) ) as nsdm_stock_change_category )` |
-| `StockChangeCategoryName` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as nsdm_stock_change_cat_name )` |
-| `_Language` | | ✓ | | |
-| `_StockChangeCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |  |  |
+| `StockChangeCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 2 ) as abap.char( 2 ) ) as nsdm_stock_change_category )` |  |  |
+| `StockChangeCategoryName` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as nsdm_stock_change_cat_name )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_StockChangeCategory` | | ✓ | | | | |
 
 ## Associations
 

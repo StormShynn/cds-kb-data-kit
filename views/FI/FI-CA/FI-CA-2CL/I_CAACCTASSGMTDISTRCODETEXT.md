@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACtrlFieldForAcctAssgmtDistr` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as aasta_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CACtrlFldForAcctAssgmtDistrTxt` |  | |  | `cast( ddtext as aasta_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACtrlFieldForAcctAssgmtDistr` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as aasta_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CACtrlFldForAcctAssgmtDistrTxt` |  | |  | `cast( ddtext as aasta_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BPGoodsReceivingHoursCode` | ✓ | |  | `wanid` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPGoodsReceivingHoursCode` | ✓ | |  | `wanid` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

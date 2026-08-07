@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CATaxDetnType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l, 1, 2 ) as tax_det_type_kk preserving type )` |
-| `_CATaxDetnTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CATaxDetnType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l, 1, 2 ) as tax_det_type_kk preserving type )` |  |  |
+| `_CATaxDetnTypeText` | | ✓ | | | | |
 
 ## Associations
 

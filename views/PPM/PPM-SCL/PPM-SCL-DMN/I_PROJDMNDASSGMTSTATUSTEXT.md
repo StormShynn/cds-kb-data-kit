@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ProjDmndAssgmtStatus` | ✓ | |  | `cast( substring(domvalue_l, 1, 2 ) as tv_proj_dmnd_assgmt_status )` |
-| `ProjDmndAssgmtStatusText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_AssignmentStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ProjDmndAssgmtStatus` | ✓ | |  | `cast( substring(domvalue_l, 1, 2 ) as tv_proj_dmnd_assgmt_status )` |  |  |
+| `ProjDmndAssgmtStatusText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_AssignmentStatus` | | ✓ | | | | |
 
 ## Associations
 

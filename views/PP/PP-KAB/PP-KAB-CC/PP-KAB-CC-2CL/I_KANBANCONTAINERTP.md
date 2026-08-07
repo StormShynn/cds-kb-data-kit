@@ -29,57 +29,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanContainer` | ✓ | |  |  |
-| `KanbanControlCycle` |  | |  |  |
-| `KanbanControlCycleItem` |  | |  |  |
-| `KanbanContainerStatus` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `PreviousKanbanContainerStatus` |  | |  |  |
-| `PreviousLastChangeDate` |  | |  |  |
-| `PreviousLastChangeTime` |  | |  |  |
-| `IsLocked` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ChangedPackgInstrnDataIsAvail` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ActualQuantityInBaseUnit` |  | |  |  |
-| `RequestedQuantityInBaseUnit` |  | |  |  |
-| `PlannedReceiptDateTime` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PlannedOrder` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `SequentialNmbrOfSuplrConf` |  | |  |  |
-| `SalesDocument` |  | |  |  |
-| `SalesDocumentItem` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `ReservationItem` |  | |  |  |
-| `TransferRequirementNumber` |  | |  |  |
-| `TransferRequirementItem` |  | |  |  |
-| `JITCallNumber` |  | |  |  |
-| `JITCallItemNumber` |  | |  |  |
-| `BackflushReportingPoint` |  | |  |  |
-| `Warehouse` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `WarehouseTask` |  | |  |  |
-| `EWMWarehouseRequest` |  | |  |  |
-| `EWMWarehouseRequestItem` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `WhseGoodsMovementDocument` |  | |  |  |
-| `WhseGoodsMovementDocumentItem` |  | |  |  |
-| `RepetitiveMfgConfirmation` |  | |  |  |
-| `_KanbanControlCycle` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanContainer` | ✓ | |  |  |  |  |
+| `KanbanControlCycle` |  | |  |  |  |  |
+| `KanbanControlCycleItem` |  | |  |  |  |  |
+| `KanbanContainerStatus` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `PreviousKanbanContainerStatus` |  | |  |  |  |  |
+| `PreviousLastChangeDate` |  | |  |  |  |  |
+| `PreviousLastChangeTime` |  | |  |  |  |  |
+| `IsLocked` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ChangedPackgInstrnDataIsAvail` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ActualQuantityInBaseUnit` |  | |  |  |  |  |
+| `RequestedQuantityInBaseUnit` |  | |  |  |  |  |
+| `PlannedReceiptDateTime` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PlannedOrder` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `SequentialNmbrOfSuplrConf` |  | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `ReservationItem` |  | |  |  |  |  |
+| `TransferRequirementNumber` |  | |  |  |  |  |
+| `TransferRequirementItem` |  | |  |  |  |  |
+| `JITCallNumber` |  | |  |  |  |  |
+| `JITCallItemNumber` |  | |  |  |  |  |
+| `BackflushReportingPoint` |  | |  |  |  |  |
+| `Warehouse` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `WarehouseTask` |  | |  |  |  |  |
+| `EWMWarehouseRequest` |  | |  |  |  |  |
+| `EWMWarehouseRequestItem` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `WhseGoodsMovementDocument` |  | |  |  |  |  |
+| `WhseGoodsMovementDocumentItem` |  | |  |  |  |  |
+| `RepetitiveMfgConfirmation` |  | |  |  |  |  |
+| `_KanbanControlCycle` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
 
 ## Source Code
 

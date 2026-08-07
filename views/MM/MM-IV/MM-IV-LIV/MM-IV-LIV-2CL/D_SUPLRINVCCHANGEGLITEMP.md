@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoiceItem` |  | |  | `cobl_nr` |
-| `GLAccount` |  | |  | `saknr` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `SupplierInvoiceItemText` |  | |  | `sgtxt` |
-| `CostCenter` |  | |  | `kostl` |
-| `SalesOrder` |  | |  | `vbeln` |
-| `SalesOrderItem` |  | |  | `vbelp` |
-| `InternalOrder` |  | |  | `aufnr` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `BusinessArea` |  | |  | `gsber` |
-| `CostObject` |  | |  | `kstrg` |
-| `WBSElementInternalID` |  | |  | `ps_s4_pspnr` |
-| `CostCtrActivityType` |  | |  | `lstar` |
-| `PersonnelNumber` |  | |  | `pernr_d` |
-| `BusinessProcess` |  | |  | `co_prznr` |
-| `AssignmentReference` |  | |  | `dzuonr` |
-| `IsNotCashDiscountLiable` |  | |  | `xskrl` |
-| `WorkItem` |  | |  | `/cpd/pfp_workitem_id` |
-| `FinancialTransactionType` |  | |  | `rmvct` |
-| `_SupplierInvoice` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoiceItem` |  | |  | `cobl_nr` |  |  |
+| `GLAccount` |  | |  | `saknr` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `SupplierInvoiceItemText` |  | |  | `sgtxt` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `SalesOrder` |  | |  | `vbeln` |  |  |
+| `SalesOrderItem` |  | |  | `vbelp` |  |  |
+| `InternalOrder` |  | |  | `aufnr` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `CostObject` |  | |  | `kstrg` |  |  |
+| `WBSElementInternalID` |  | |  | `ps_s4_pspnr` |  |  |
+| `CostCtrActivityType` |  | |  | `lstar` |  |  |
+| `PersonnelNumber` |  | |  | `pernr_d` |  |  |
+| `BusinessProcess` |  | |  | `co_prznr` |  |  |
+| `AssignmentReference` |  | |  | `dzuonr` |  |  |
+| `IsNotCashDiscountLiable` |  | |  | `xskrl` |  |  |
+| `WorkItem` |  | |  | `/cpd/pfp_workitem_id` |  |  |
+| `FinancialTransactionType` |  | |  | `rmvct` |  |  |
+| `_SupplierInvoice` | | ✓ | | | | |
 
 ## Source Code
 

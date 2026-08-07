@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarConfignTblLineNumber` |  | |  | `vtlin` |
-| `ChangeNumber` |  | |  | `aennr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarConfignTblLineNumber` |  | |  | `vtlin` |  |  |
+| `ChangeNumber` |  | |  | `aennr` |  |  |
 
 ## Source Code
 

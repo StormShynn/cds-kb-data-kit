@@ -28,62 +28,62 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |
-| `AddressRepresentationCode` |  | |  |  |
-| `AddressIsPersonAddress` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `PrfrdCommMediumType` |  | |  |  |
-| `CityNumber` |  | |  |  |
-| `CityName` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `VillageName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `CompanyPostalCode` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxAddrNonDeliverableReason` |  | |  |  |
-| `POBoxIsWithoutNumber` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `POBoxLobbyName` |  | |  |  |
-| `POBoxDeviatingCityName` |  | |  |  |
-| `POBoxDeviatingCityCode` |  | |  |  |
-| `POBoxDeviatingRegion` |  | |  |  |
-| `POBoxDeviatingCountry` |  | |  |  |
-| `Street` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetAddrNonDeliverableReason` |  | |  |  |
-| `StreetPrefixName1` |  | |  |  |
-| `StreetPrefixName2` |  | |  |  |
-| `StreetSuffixName1` |  | |  |  |
-| `StreetSuffixName2` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `AddresseeName1` |  | |  |  |
-| `AddresseeName2` |  | |  |  |
-| `AddresseeName3` |  | |  |  |
-| `AddresseeName4` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TransportZone` |  | |  |  |
-| `DeliveryServiceTypeCode` |  | |  |  |
-| `DeliveryServiceNumber` |  | |  |  |
-| `AddressTimeZone` |  | |  |  |
-| `SecondaryRegion` |  | |  |  |
-| `SecondaryRegionName` |  | |  |  |
-| `TertiaryRegion` |  | |  |  |
-| `TertiaryRegionName` |  | |  |  |
-| `AddressSearchTerm1` |  | |  |  |
-| `AddressSearchTerm2` |  | |  |  |
-| `RegionalStructureCheckStatus` |  | |  |  |
-| `AddressGroup` |  | |  |  |
-| `_DfltRprstnPostalAddress` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |  |  |
+| `AddressRepresentationCode` |  | |  |  |  |  |
+| `AddressIsPersonAddress` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `PrfrdCommMediumType` |  | |  |  |  |  |
+| `CityNumber` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `VillageName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `CompanyPostalCode` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxAddrNonDeliverableReason` |  | |  |  |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `POBoxLobbyName` |  | |  |  |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |  |  |
+| `POBoxDeviatingCityCode` |  | |  |  |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |  |  |
+| `Street` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetAddrNonDeliverableReason` |  | |  |  |  |  |
+| `StreetPrefixName1` |  | |  |  |  |  |
+| `StreetPrefixName2` |  | |  |  |  |  |
+| `StreetSuffixName1` |  | |  |  |  |  |
+| `StreetSuffixName2` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `AddresseeName1` |  | |  |  |  |  |
+| `AddresseeName2` |  | |  |  |  |  |
+| `AddresseeName3` |  | |  |  |  |  |
+| `AddresseeName4` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TransportZone` |  | |  |  |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |  |  |
+| `DeliveryServiceNumber` |  | |  |  |  |  |
+| `AddressTimeZone` |  | |  |  |  |  |
+| `SecondaryRegion` |  | |  |  |  |  |
+| `SecondaryRegionName` |  | |  |  |  |  |
+| `TertiaryRegion` |  | |  |  |  |  |
+| `TertiaryRegionName` |  | |  |  |  |  |
+| `AddressSearchTerm1` |  | |  |  |  |  |
+| `AddressSearchTerm2` |  | |  |  |  |  |
+| `RegionalStructureCheckStatus` |  | |  |  |  |  |
+| `AddressGroup` |  | |  |  |  |  |
+| `_DfltRprstnPostalAddress` | | ✓ | | | | |
 
 ## Associations
 

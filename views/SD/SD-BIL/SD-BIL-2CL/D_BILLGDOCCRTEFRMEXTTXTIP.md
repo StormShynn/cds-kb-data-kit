@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LongTextID` |  | |  | `tdid` |
-| `Language` |  | |  | `spras` |
-| `LongText` |  | |  | `systring` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LongTextID` |  | |  | `tdid` |  |  |
+| `Language` |  | |  | `spras` |  |  |
+| `LongText` |  | |  | `systring` |  |  |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrdPrefStmntInternalOriginCode` | ✓ | |  | `cast(domvalue_l as /sapsll/prene_r3)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdPrefStmntInternalOriginCode` | ✓ | |  | `cast(domvalue_l as /sapsll/prene_r3)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

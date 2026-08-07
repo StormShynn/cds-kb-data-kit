@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REValuationConditionGroup` | ✓ | |  | `cdgroup` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REValuationConditionGroup` | ✓ | |  | `cdgroup` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

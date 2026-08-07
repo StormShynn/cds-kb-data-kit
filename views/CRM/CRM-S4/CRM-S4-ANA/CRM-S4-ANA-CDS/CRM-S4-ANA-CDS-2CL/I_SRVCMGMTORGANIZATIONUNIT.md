@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrgUnitTypeIDConcatenated` | ✓ | |  | `otjid` |
-| `OrganizationalUnit` |  | |  | `objid` |
-| `Language` |  | |  | `langu` |
-| `StartDate` |  | |  | `begda` |
-| `EndDate` |  | |  | `endda` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrgUnitTypeIDConcatenated` | ✓ | |  | `otjid` |  |  |
+| `OrganizationalUnit` |  | |  | `objid` |  |  |
+| `Language` |  | |  | `langu` |  |  |
+| `StartDate` |  | |  | `begda` |  |  |
+| `EndDate` |  | |  | `endda` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

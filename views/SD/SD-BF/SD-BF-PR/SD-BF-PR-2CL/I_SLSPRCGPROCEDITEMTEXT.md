@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `PricingProcedure` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionUsage` |  | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionTypeName` |  | |  |  |
-| `_ConditionApplication` | | ✓ | | |
-| `_ConditionUsage` | | ✓ | | |
-| `_SlsPricingProcedureItem` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `PricingProcedure` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionUsage` |  | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionTypeName` |  | |  |  |  |  |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_ConditionUsage` | | ✓ | | | | |
+| `_SlsPricingProcedureItem` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

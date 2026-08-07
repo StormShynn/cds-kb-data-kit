@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnTaskLogUUID` | ✓ | |  |  |
-| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |
-| `CnsldtnTaskLogItemType` |  | |  |  |
-| `CnsldtnGroupJrnlEntry` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `PostingFiscalYear` |  | |  |  |
-| `ConsolidationDocumentNumber` |  | |  |  |
-| `ConsolidationPostingItem` |  | |  |  |
-| `ConsolidationGroup` |  | |  |  |
-| `SubItemCategory` |  | |  |  |
-| `SubItem` |  | |  |  |
-| `ConsolidationUnit` |  | |  |  |
-| `CnsldtnTskLgItmRowNmbr` |  | |  |  |
-| `CnsldtnFinancialStatementItem` |  | |  |  |
-| `PartnerConsolidationUnit` |  | |  |  |
-| `ConsolidationChartOfAccounts` |  | |  |  |
-| `ConsolidationVersion` |  | |  |  |
-| `_ConsolidationTaskLog` | | ✓ | | |
-| `_CnsldtnGroup` | | ✓ | | |
-| `_CnsldtnSubitemCategory` | | ✓ | | |
-| `_CnsldtnSubItem` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
-| `_CnsldtnFSItem` | | ✓ | | |
-| `_CnsldtnUnitPartner` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_CnsldtnVersion` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  |  |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |  |  |
+| `CnsldtnTaskLogItemType` |  | |  |  |  |  |
+| `CnsldtnGroupJrnlEntry` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `PostingFiscalYear` |  | |  |  |  |  |
+| `ConsolidationDocumentNumber` |  | |  |  |  |  |
+| `ConsolidationPostingItem` |  | |  |  |  |  |
+| `ConsolidationGroup` |  | |  |  |  |  |
+| `SubItemCategory` |  | |  |  |  |  |
+| `SubItem` |  | |  |  |  |  |
+| `ConsolidationUnit` |  | |  |  |  |  |
+| `CnsldtnTskLgItmRowNmbr` |  | |  |  |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |  |  |
+| `ConsolidationVersion` |  | |  |  |  |  |
+| `_ConsolidationTaskLog` | | ✓ | | | | |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | | | |
+| `_CnsldtnSubItem` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
+| `_CnsldtnFSItem` | | ✓ | | | | |
+| `_CnsldtnUnitPartner` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_CnsldtnVersion` | | ✓ | | | | |
 
 ## Associations
 

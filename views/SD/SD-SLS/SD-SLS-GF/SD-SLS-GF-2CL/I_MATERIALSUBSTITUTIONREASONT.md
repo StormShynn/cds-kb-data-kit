@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialSubstitutionReason` | ✓ | |  | `sugrd` |
-| `Language` | ✓ | |  | `spras` |
-| `MaterialSubstitutionReasonName` |  | |  | `vtext` |
-| `_MaterialSubstitutionReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialSubstitutionReason` | ✓ | |  | `sugrd` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaterialSubstitutionReasonName` |  | |  | `vtext` |  |  |
+| `_MaterialSubstitutionReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

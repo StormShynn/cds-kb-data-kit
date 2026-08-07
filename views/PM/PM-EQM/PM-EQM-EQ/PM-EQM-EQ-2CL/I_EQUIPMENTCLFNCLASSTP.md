@@ -30,24 +30,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | |  |  |
-| `ClassInternalID` | ✓ | |  |  |
-| `ClassType` | ✓ | |  |  |
-| `KeyDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ClfnStatus` |  | |  |  |
-| `ClassPositionNumber` |  | |  |  |
-| `ClassIsStandardClass` |  | |  |  |
-| `ClfnObjectInternalID` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `EquipmentValidityEndDate` |  | |  |  |
-| `ClassMaintAuthGrp` |  | |  |  |
-| `ClassClassfctnAuthGrp` |  | |  |  |
-| `Class` |  | |  |  |
-| `_Characteristic` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |  |  |
+| `ClassInternalID` | ✓ | |  |  |  |  |
+| `ClassType` | ✓ | |  |  |  |  |
+| `KeyDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ClfnStatus` |  | |  |  |  |  |
+| `ClassPositionNumber` |  | |  |  |  |  |
+| `ClassIsStandardClass` |  | |  |  |  |  |
+| `ClfnObjectInternalID` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `EquipmentValidityEndDate` |  | |  |  |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |  |  |
+| `Class` |  | |  |  |  |  |
+| `_Characteristic` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
 
 ## Source Code
 

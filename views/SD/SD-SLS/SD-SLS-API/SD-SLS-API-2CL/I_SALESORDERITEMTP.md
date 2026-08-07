@@ -32,96 +32,96 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  |  |
-| `SalesOrderItem` | ✓ | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `SalesOrderItemCategory` |  | |  |  |
-| `SalesOrderItemText` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `ConfirmedDeliveryDate` |  | |  |  |
-| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `Batch` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `Route` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `MaxNmbrOfPartialDelivery` |  | |  |  |
-| `DeliveryDateQuantityIsFixed` |  | |  |  |
-| `DeliveryDateTypeRule` |  | |  |  |
-| `ReceivingPoint` |  | |  |  |
-| `DeliveryGroup` |  | |  |  |
-| `ProductConfiguration` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `OrderCombinationIsAllowed` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `TaxAmount` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `DeliveryStatus` |  | |  |  |
-| `BillingBlockStatus` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  |  |
-| `DeliveryBlockStatus` |  | |  |  |
-| `SlsOrderItemDownPaymentStatus` |  | |  |  |
-| `OrderRelatedBillingStatus` |  | |  |  |
-| `ChmlCmplncStatus` |  | |  |  |
-| `DangerousGoodsStatus` |  | |  |  |
-| `SafetyDataSheetStatus` |  | |  |  |
-| `TrdCmplncEmbargoSts` |  | |  |  |
-| `TrdCmplncSnctndListChkSts` |  | |  |  |
-| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `MatlAccountAssignmentGroup` |  | |  |  |
-| `SDPricingProcedure` |  | |  |  |
-| `ItemCategoryGroup` |  | |  |  |
-| `SDDocumentItemUsage` |  | |  |  |
-| `HigherLevelItemCategory` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `SalesOrderType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_SalesOrder` | | ✓ | | |
-| `_ItemPartner` | | ✓ | | |
-| `_ItemText` | | ✓ | | |
-| `_ItemPricingElement` | | ✓ | | |
-| `_ScheduleLine` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |  |  |
+| `SalesOrderItem` | ✓ | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `SalesOrderItemCategory` |  | |  |  |  |  |
+| `SalesOrderItemText` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `ConfirmedDeliveryDate` |  | |  |  |  |  |
+| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `Route` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `MaxNmbrOfPartialDelivery` |  | |  |  |  |  |
+| `DeliveryDateQuantityIsFixed` |  | |  |  |  |  |
+| `DeliveryDateTypeRule` |  | |  |  |  |  |
+| `ReceivingPoint` |  | |  |  |  |  |
+| `DeliveryGroup` |  | |  |  |  |  |
+| `ProductConfiguration` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `OrderCombinationIsAllowed` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `DeliveryStatus` |  | |  |  |  |  |
+| `BillingBlockStatus` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |  |  |
+| `DeliveryBlockStatus` |  | |  |  |  |  |
+| `SlsOrderItemDownPaymentStatus` |  | |  |  |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |  |  |
+| `ChmlCmplncStatus` |  | |  |  |  |  |
+| `DangerousGoodsStatus` |  | |  |  |  |  |
+| `SafetyDataSheetStatus` |  | |  |  |  |  |
+| `TrdCmplncEmbargoSts` |  | |  |  |  |  |
+| `TrdCmplncSnctndListChkSts` |  | |  |  |  |  |
+| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `MatlAccountAssignmentGroup` |  | |  |  |  |  |
+| `SDPricingProcedure` |  | |  |  |  |  |
+| `ItemCategoryGroup` |  | |  |  |  |  |
+| `SDDocumentItemUsage` |  | |  |  |  |  |
+| `HigherLevelItemCategory` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `SalesOrderType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_ItemPartner` | | ✓ | | | | |
+| `_ItemText` | | ✓ | | | | |
+| `_ItemPricingElement` | | ✓ | | | | |
+| `_ScheduleLine` | | ✓ | | | | |
 
 ## Source Code
 

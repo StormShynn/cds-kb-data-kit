@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `EarmarkedFundsDocumentCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 3 ) as abap.numc( 3 ) ) as kbltyp preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `EarmarkedFundsDocCategoryText` |  | |  | `cast ( ddtext as fmis_efd_doccategorytext preserving type )` |
-| `_Language` | | ✓ | | |
-| `_EarmarkedFundsDocCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `EarmarkedFundsDocumentCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 3 ) as abap.numc( 3 ) ) as kbltyp preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `EarmarkedFundsDocCategoryText` |  | |  | `cast ( ddtext as fmis_efd_doccategorytext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_EarmarkedFundsDocCategory` | | ✓ | | | | |
 
 ## Associations
 

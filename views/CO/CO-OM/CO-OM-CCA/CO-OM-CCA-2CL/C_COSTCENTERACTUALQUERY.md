@@ -31,66 +31,66 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` |  | |  |  |
-| `IsStatisticalCostCenter` |  | |  |  |
-| `CostCenter` |  | |  | `, {type :#PARAMETER,value :'P_CostCenterHierarchy' }], hierarchyInitialLevel: 2, keyDisplay : #NOT_COMPOUND } CostCenter` |
-| `GLAccount` |  | |  | `], mandatory : false } GLAccount` |
-| `CostCtrActivityType` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `ActualPlanCode` |  | |  |  |
-| `SourceLedger` |  | |  |  |
-| `AccountingDocument` |  | |  |  |
-| `FinancialPlanningReqTransSqnc` |  | |  |  |
-| `FinancialPlanningDataPacket` |  | |  |  |
-| `ActualPlanJournalEntryItem` |  | |  |  |
-| `PlanningCategory` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalQuarter` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `FiscalYearQuarter` |  | |  |  |
-| `LedgerFiscalYear` |  | |  |  |
-| `GlobalCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AccountAssignmentType` |  | |  |  |
-| `PartnerAccountAssignmentType` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `PartnerCostCtrActivityType` |  | |  |  |
-| `PartnerCostCenter` |  | |  |  |
-| `PartnerProjectInternalID` |  | |  |  |
-| `PartnerProjectExternalID` |  | |  |  |
-| `PartnerWBSElementExternalID` |  | |  |  |
-| `PartnerFunctionalArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |
-| `AmountInGlobalCurrency` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `RatioUnit` |  | |  | `cast( '%' as abap.unit )` |
-| `CurrentFiscalYearValue` |  | |  | `] } cast( case when ( LedgerFiscalYear = $parameters.P_LedgerFiscalYear ) then 1 end as abap.dec( 23, 2 ) )` |
-| `PrevFiscalYearValue` |  | |  | `] } cast( case when ( LedgerFiscalYear = $parameters.P_ComparisonLedgerFiscalYear ) then 1 end as abap.dec( 23, 2 ) )` |
-| `CurrentFYPeriodValue` |  | |  | `] } cast( case when ( FiscalYearPeriod = $parameters.P_FiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |
-| `PreviousFYPeriodValue` |  | |  | `] } cast( case when ( FiscalYearPeriod = $parameters.P_PreviousFiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |
-| `DeltaCurPrevFYPeriodValue` |  | |  | `, { index: 2, parameter: 'P_PreviousFiscalYearPeriod'}] } cast( $projection.CurrentFYPeriodValue - $projection.PreviousFYPeriodValue as abap.dec( 23, 2 ) )` |
-| `DeltaCurPrevFYPeriodRatio` |  | |  | `, { index: 2, parameter: 'P_PreviousFiscalYearPeriod'}] } ratio_of( portion=>$projection.DeltaCurPrevFYPeriodValue, total=>$projection.PreviousFYPeriodValue ) * 100` |
-| `PrevYearCurrentFYPeriodValue` |  | |  | `] } cast( case when ( FiscalYearPeriod = $parameters.P_FiscalYearPeriodPrevYear ) then 1 end as abap.dec( 23, 2 ) )` |
-| `DeltaCurFYPerPreFYPerValue` |  | |  | `, { index: 2, parameter: 'P_FiscalYearPeriodPrevYear'}] } cast( $projection.CurrentFYPeriodValue - $projection.PrevYearCurrentFYPeriodValue as abap.dec( 23, 2 ) )` |
-| `DeltaCurFYPerPreFYPerRatio` |  | |  | `, { index: 2, parameter: 'P_FiscalYearPeriodPrevYear'}] } ratio_of( portion=>$projection.DeltaCurFYPerPreFYPerValue, total=>$projection.PrevYearCurrentFYPeriodValue ) * 100` |
-| `CurrentFYYearToDateValue` |  | |  | `] } cast( case when ( LedgerFiscalYear = $parameters.P_LedgerFiscalYear and PostingDate <= $parameters.P_ReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |
-| `PreviousFYYearToDateValue` |  | |  | `] } cast( case when ( LedgerFiscalYear = $parameters.P_ComparisonLedgerFiscalYear and PostingDate <= $parameters.P_ComparisonReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |
-| `DeltaCurYTDPrevYTDValue` |  | |  | `, { index: 2, parameter: 'P_ComparisonLedgerFiscalYear'}] } cast( $projection.CurrentFYYearToDateValue - $projection.PreviousFYYearToDateValue as abap.dec( 23, 2 ) )` |
-| `DeltaCurYTDPrevYTDRatio` |  | |  | `, { index: 2, parameter: 'P_ComparisonLedgerFiscalYear'}] } ratio_of( portion=>$projection.DeltaCurYTDPrevYTDValue, total=>$projection.PreviousFYYearToDateValue ) * 100` |
-| `CurrentFiscalQuarterValue` |  | |  | `, { index: 2, parameter: 'P_FiscalYearQuarter', length: 4, format: #KEY_INTERNAL }] } cast( case when ( FiscalYearQuarter = $parameters.P_FiscalYearQuarter ) then 1 end as abap.dec( 23, 2 ) )` |
-| `PrevFiscalQuarterValue` |  | |  | `, { index: 2, parameter: 'P_PreviousFiscalYearQuarter', length: 4, format: #KEY_INTERNAL }] } cast( case when ( FiscalYearQuarter = $parameters.P_PreviousFiscalYearQuarter ) then 1 end as abap.dec( 23, 2 ) )` |
-| `DeltaCurPrevFiscalQtrValue` |  | |  | `, { index: 2, parameter: 'P_FiscalYearQuarter', length: 4, format: #KEY_INTERNAL }, { index: 3, parameter: 'P_PreviousFiscalYearQuarter', offset: 4, length: 1, format: #KEY_INTERNAL }, { index: 4, parameter: 'P_PreviousFiscalYearQuarter', length: 4, format: #KEY_INTERNAL }] } cast( $projection.CurrentFiscalQuarterValue - $projection.PrevFiscalQuarterValue as abap.dec( 23, 2 ) )` |
-| `DeltaCurPrevFiscalQtrRatio` |  | |  | `, { index: 2, parameter: 'P_FiscalYearQuarter', length: 4, format: #KEY_INTERNAL }, { index: 3, parameter: 'P_PreviousFiscalYearQuarter', offset: 4, length: 1, format: #KEY_INTERNAL }, { index: 4, parameter: 'P_PreviousFiscalYearQuarter', length: 4, format: #KEY_INTERNAL }] } ratio_of( portion=>$projection.DeltaCurPrevFiscalQtrValue, total=>$projection.PrevFiscalQuarterValue ) * 100` |
-| `PrevYearCurrentFYQuarterValue` |  | |  | `, { index: 2, parameter: 'P_FiscalYearQuarterPrevYear', length: 4, format: #KEY_INTERNAL }] } cast( case when ( FiscalYearQuarter = $parameters.P_FiscalYearQuarterPrevYear ) then 1 end as abap.dec( 23, 2 ) )` |
-| `DeltaCurPrevFYQuarterValue` |  | |  | `, { index: 2, parameter: 'P_FiscalYearQuarter', length: 4, format: #KEY_INTERNAL }, { index: 3, parameter: 'P_FiscalYearQuarterPrevYear', offset: 4, length: 1, format: #KEY_INTERNAL }, { index: 4, parameter: 'P_FiscalYearQuarterPrevYear', length: 4, format: #KEY_INTERNAL }] } cast( $projection.CurrentFiscalQuarterValue - $projection.PrevYearCurrentFYQuarterValue as abap.dec( 23, 2 ) )` |
-| `DeltaCurPrevFYQuarterRatio` |  | |  | `, { index: 2, parameter: 'P_FiscalYearQuarter', length: 4, format: #KEY_INTERNAL }, { index: 3, parameter: 'P_FiscalYearQuarterPrevYear', offset: 4, length: 1, format: #KEY_INTERNAL }, { index: 4, parameter: 'P_FiscalYearQuarterPrevYear', length: 4, format: #KEY_INTERNAL }] } ratio_of( portion=>$projection.DeltaCurPrevFYQuarterValue, total=>$projection.PrevYearCurrentFYQuarterValue ) * 100` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  |  |  |
+| `IsStatisticalCostCenter` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `ActualPlanCode` |  | |  |  |  |  |
+| `SourceLedger` |  | |  |  |  |  |
+| `AccountingDocument` |  | |  |  |  |  |
+| `FinancialPlanningReqTransSqnc` |  | |  |  |  |  |
+| `FinancialPlanningDataPacket` |  | |  |  |  |  |
+| `ActualPlanJournalEntryItem` |  | |  |  |  |  |
+| `PlanningCategory` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalQuarter` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `FiscalYearQuarter` |  | |  |  |  |  |
+| `LedgerFiscalYear` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AccountAssignmentType` |  | |  |  |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `PartnerCostCtrActivityType` |  | |  |  |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `PartnerProjectInternalID` |  | |  |  |  |  |
+| `PartnerProjectExternalID` |  | |  |  |  |  |
+| `PartnerWBSElementExternalID` |  | |  |  |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInGlobalCurrency` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `RatioUnit` |  | |  | `cast( '%' as abap.unit )` |  |  |
+| `CurrentFiscalYearValue` |  | |  | `cast( case when ( LedgerFiscalYear = $parameters.P_LedgerFiscalYear ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `PrevFiscalYearValue` |  | |  | `cast( case when ( LedgerFiscalYear = $parameters.P_ComparisonLedgerFiscalYear ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `CurrentFYPeriodValue` |  | |  | `cast( case when ( FiscalYearPeriod = $parameters.P_FiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `PreviousFYPeriodValue` |  | |  | `cast( case when ( FiscalYearPeriod = $parameters.P_PreviousFiscalYearPeriod ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurPrevFYPeriodValue` |  | |  | `cast( $projection.CurrentFYPeriodValue - $projection.PreviousFYPeriodValue as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurPrevFYPeriodRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurPrevFYPeriodValue, total=>$projection.PreviousFYPeriodValue ) * 100` |  |  |
+| `PrevYearCurrentFYPeriodValue` |  | |  | `cast( case when ( FiscalYearPeriod = $parameters.P_FiscalYearPeriodPrevYear ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurFYPerPreFYPerValue` |  | |  | `cast( $projection.CurrentFYPeriodValue - $projection.PrevYearCurrentFYPeriodValue as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurFYPerPreFYPerRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurFYPerPreFYPerValue, total=>$projection.PrevYearCurrentFYPeriodValue ) * 100` |  |  |
+| `CurrentFYYearToDateValue` |  | |  | `cast( case when ( LedgerFiscalYear = $parameters.P_LedgerFiscalYear and PostingDate <= $parameters.P_ReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `PreviousFYYearToDateValue` |  | |  | `cast( case when ( LedgerFiscalYear = $parameters.P_ComparisonLedgerFiscalYear and PostingDate <= $parameters.P_ComparisonReportingDate ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurYTDPrevYTDValue` |  | |  | `cast( $projection.CurrentFYYearToDateValue - $projection.PreviousFYYearToDateValue as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurYTDPrevYTDRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurYTDPrevYTDValue, total=>$projection.PreviousFYYearToDateValue ) * 100` |  |  |
+| `CurrentFiscalQuarterValue` |  | |  | `cast( case when ( FiscalYearQuarter = $parameters.P_FiscalYearQuarter ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `PrevFiscalQuarterValue` |  | |  | `cast( case when ( FiscalYearQuarter = $parameters.P_PreviousFiscalYearQuarter ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurPrevFiscalQtrValue` |  | |  | `cast( $projection.CurrentFiscalQuarterValue - $projection.PrevFiscalQuarterValue as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurPrevFiscalQtrRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurPrevFiscalQtrValue, total=>$projection.PrevFiscalQuarterValue ) * 100` |  |  |
+| `PrevYearCurrentFYQuarterValue` |  | |  | `cast( case when ( FiscalYearQuarter = $parameters.P_FiscalYearQuarterPrevYear ) then 1 end as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurPrevFYQuarterValue` |  | |  | `cast( $projection.CurrentFiscalQuarterValue - $projection.PrevYearCurrentFYQuarterValue as abap.dec( 23, 2 ) )` |  |  |
+| `DeltaCurPrevFYQuarterRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurPrevFYQuarterValue, total=>$projection.PrevYearCurrentFYQuarterValue ) * 100` |  |  |
 
 ## Source Code
 

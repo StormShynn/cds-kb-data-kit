@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ManufacturingOrder` | ✓ | |  |  |
-| `ManufacturingOrderSequence` | ✓ | |  |  |
-| `ManufacturingOrderOperation` | ✓ | |  |  |
-| `OperationIsSubOperation` |  | |  | `cast(OperationIsSubOperation as vdm_subop_flag preserving type)` |
-| `ManufacturingOrderText` |  | | `_MfgOrder` | `ManufacturingOrderText` |
-| `MfgOrderOperationText` |  | |  |  |
-| `ManufacturingOrderCategory` |  | |  |  |
-| `ManufacturingOrderType` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `OrderInternalID` |  | |  |  |
-| `OrderOperationInternalID` |  | |  |  |
-| `Material` |  | | `_MfgOrder` | `Material` |
-| `_ManufacturingOrder` |  | |  | `_MfgOrder` |
-| `_MfgOrder` | | ✓ | | |
-| `_MfgOrderSequence` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  |  |  |  |
+| `ManufacturingOrderSequence` | ✓ | |  |  |  |  |
+| `ManufacturingOrderOperation` | ✓ | |  |  |  |  |
+| `OperationIsSubOperation` |  | |  | `cast(OperationIsSubOperation as vdm_subop_flag preserving type)` |  |  |
+| `ManufacturingOrderText` |  | | `_MfgOrder` | `ManufacturingOrderText` |  |  |
+| `MfgOrderOperationText` |  | |  |  |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |  |  |
+| `ManufacturingOrderType` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `OrderOperationInternalID` |  | |  |  |  |  |
+| `Material` |  | | `_MfgOrder` | `Material` |  |  |
+| `_ManufacturingOrder` |  | |  | `_MfgOrder` |  |  |
+| `_MfgOrder` | | ✓ | | | | |
+| `_MfgOrderSequence` | | ✓ | | | | |
 
 ## Source Code
 

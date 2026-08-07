@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandStatus` | ✓ | |  | `status` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandStatus` | ✓ | |  | `status` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

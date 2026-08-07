@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BillOfMaterialCategory` | ✓ | |  | `cast (dd07t.domvalue_l as pph_stlty)` |
-| `BillOfMaterialCategoryDesc` | ✓ | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BillOfMaterialCategory` | ✓ | |  | `cast (dd07t.domvalue_l as pph_stlty)` |  |  |
+| `BillOfMaterialCategoryDesc` | ✓ | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

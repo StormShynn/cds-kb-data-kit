@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `Correspondence` | ✓ | |  | `event` |
-| `CorrespondenceName` |  | |  | `ltext` |
-| `CorrespondenceFirstDateName` |  | |  | `dtex1` |
-| `CorrespondenceSecondDateName` |  | |  | `dtex2` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `Correspondence` | ✓ | |  | `event` |  |  |
+| `CorrespondenceName` |  | |  | `ltext` |  |  |
+| `CorrespondenceFirstDateName` |  | |  | `dtex1` |  |  |
+| `CorrespondenceSecondDateName` |  | |  | `dtex2` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `BatchIdentifyingPlant` | ✓ | |  |  |
-| `Batch` | ✓ | |  |  |
-| `BatchIsMarkedForDeletion` |  | |  |  |
-| `MatlBatchIsInRstrcdUseStock` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `BatchBySupplier` |  | |  |  |
-| `CountryOfOrigin` |  | |  |  |
-| `RegionOfOrigin` |  | |  |  |
-| `MatlBatchAvailabilityDate` |  | |  |  |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `ManufactureDate` |  | |  |  |
-| `FreeDefinedDate1` |  | |  |  |
-| `FreeDefinedDate2` |  | |  |  |
-| `FreeDefinedDate3` |  | |  |  |
-| `FreeDefinedDate4` |  | |  |  |
-| `FreeDefinedDate5` |  | |  |  |
-| `FreeDefinedDate6` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `BatchExtWhseMgmtInternalId` |  | |  |  |
-| `_BatchPlantTP` | | ✓ | | |
-| `_BatchClassTP` | | ✓ | | |
-| `_BatchCharacteristicTP` | | ✓ | | |
-| `_BatchTextTP` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `BatchIdentifyingPlant` | ✓ | |  |  |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `BatchIsMarkedForDeletion` |  | |  |  |  |  |
+| `MatlBatchIsInRstrcdUseStock` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `BatchBySupplier` |  | |  |  |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `RegionOfOrigin` |  | |  |  |  |  |
+| `MatlBatchAvailabilityDate` |  | |  |  |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `ManufactureDate` |  | |  |  |  |  |
+| `FreeDefinedDate1` |  | |  |  |  |  |
+| `FreeDefinedDate2` |  | |  |  |  |  |
+| `FreeDefinedDate3` |  | |  |  |  |  |
+| `FreeDefinedDate4` |  | |  |  |  |  |
+| `FreeDefinedDate5` |  | |  |  |  |  |
+| `FreeDefinedDate6` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `BatchExtWhseMgmtInternalId` |  | |  |  |  |  |
+| `_BatchPlantTP` | | ✓ | | | | |
+| `_BatchClassTP` | | ✓ | | | | |
+| `_BatchCharacteristicTP` | | ✓ | | | | |
+| `_BatchTextTP` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMIntCntctType` | ✓ | |  |  |
-| `_LglCntntMIntCntctTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMIntCntctType` | ✓ | |  |  |  |  |
+| `_LglCntntMIntCntctTypeText` | | ✓ | | | | |
 
 ## Associations
 

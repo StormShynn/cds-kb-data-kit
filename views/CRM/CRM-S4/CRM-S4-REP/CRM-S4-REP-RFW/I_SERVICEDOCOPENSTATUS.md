@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentIsOpen` | ✓ | |  | `domvalue_l` |
-| `_ServiceDocOpenStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentIsOpen` | ✓ | |  | `domvalue_l` |  |  |
+| `_ServiceDocOpenStatusText` | | ✓ | | | | |
 
 ## Associations
 

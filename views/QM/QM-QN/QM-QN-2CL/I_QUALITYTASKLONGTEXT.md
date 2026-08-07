@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityTaskInternalId` | ✓ | |  | `qmnum` |
-| `Language` | ✓ | |  | `langu` |
-| `LongTextInternalNumber` | ✓ | |  | `counter` |
-| `LongTextID` |  | |  | `textid` |
-| `QualityTaskLongText` |  | |  | `content` |
-| `LongTextCreatedByUser` |  | |  | `created_by` |
-| `LongTextCreatedAt` |  | |  | `cast( created_at as qlt_longtext_created_at preserving type )` |
-| `LongTextLastChangedByUser` |  | |  | `changed_by` |
-| `LongTextLastChangedAt` |  | |  | `cast( changed_at as qlt_longtext_changed_at preserving type )` |
-| `MimeType` |  | |  | `cast( mimetype as w3conttype )` |
-| `_QualityTask` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityTaskInternalId` | ✓ | |  | `qmnum` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `LongTextInternalNumber` | ✓ | |  | `counter` |  |  |
+| `LongTextID` |  | |  | `textid` |  |  |
+| `QualityTaskLongText` |  | |  | `content` |  |  |
+| `LongTextCreatedByUser` |  | |  | `created_by` |  |  |
+| `LongTextCreatedAt` |  | |  | `cast( created_at as qlt_longtext_created_at preserving type )` |  |  |
+| `LongTextLastChangedByUser` |  | |  | `changed_by` |  |  |
+| `LongTextLastChangedAt` |  | |  | `cast( changed_at as qlt_longtext_changed_at preserving type )` |  |  |
+| `MimeType` |  | |  | `cast( mimetype as w3conttype )` |  |  |
+| `_QualityTask` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -32,18 +32,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `PhysInventoryForCycleCounting` |  | |  |  |
-| `MaximumStoragePeriod` |  | |  |  |
-| `ProdMaximumStoragePeriodUnit` |  | |  |  |
-| `CycleCountingIndicatorIsFixed` |  | |  |  |
-| `ProvisioningServiceLevel` |  | |  |  |
-| `_ProductPlant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProdMaxStoragePeriodUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `PhysInventoryForCycleCounting` |  | |  |  |  |  |
+| `MaximumStoragePeriod` |  | |  |  |  |  |
+| `ProdMaximumStoragePeriodUnit` |  | |  |  |  |  |
+| `CycleCountingIndicatorIsFixed` |  | |  |  |  |  |
+| `ProvisioningServiceLevel` |  | |  |  |  |  |
+| `_ProductPlant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProdMaxStoragePeriodUnit` | | ✓ | | | | |
 
 ## Source Code
 

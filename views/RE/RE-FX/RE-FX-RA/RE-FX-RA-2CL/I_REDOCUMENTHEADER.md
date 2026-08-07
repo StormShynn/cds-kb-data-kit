@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateDocumentUUID` | ✓ | |  | `docguid` |
-| `REProcessUUID` |  | |  | `processguid` |
-| `RealEstateProcess` |  | |  | `cast(processid as recavdmprocessid preserving type )` |
-| `FiscalYear` |  | |  | `fisc_year` |
-| `PostingDate` |  | |  | `pstngdate` |
-| `DocumentDate` |  | |  | `docdate` |
-| `OriginalReferenceDocument` |  | |  | `refdocid` |
-| `LogicalSystem` |  | |  | `logsystem` |
-| `REDocumentReversalStatus` |  | |  | `revid` |
-| `REReversalDocumentUUID` |  | |  | `revdocguid` |
-| `CreatedByUser` |  | |  | `rerf` |
-| `CreationDate` |  | |  | `derf` |
-| `CreationTime` |  | |  | `terf` |
-| `RESourceOfCreation` |  | |  | `reher` |
-| `LastChangedByUser` |  | |  | `rbear` |
-| `LastChangeDate` |  | |  | `dbear` |
-| `LastChangeTime` |  | |  | `tbear` |
-| `RESourceOfChange` |  | |  | `rbher` |
-| `RECurrencyTranslationRule` |  | |  | `ctrule` |
-| `REIsPostInConditionCurrency` |  | |  | `postcdcurr` |
-| `REPlndTranslationDate` |  | |  | `ctdatereq` |
-| `REActlTranslationDate` |  | |  | `ctdateact` |
-| `ForeignCurrency` |  | |  | `ctfccurrkey` |
-| `REValuationRule` |  | |  | `cerule` |
-| `AccountingPrinciple` |  | |  | `accprinciple` |
-| `_REProcess` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_ChangedByUser` | | ✓ | | |
-| `_AccountingDocument` | | ✓ | | |
-| `_AccountingPrinciple` | | ✓ | | |
-| `_RECurrencyTranslationRule` | | ✓ | | |
-| `_REValuationRule` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateDocumentUUID` | ✓ | |  | `docguid` |  |  |
+| `REProcessUUID` |  | |  | `processguid` |  |  |
+| `RealEstateProcess` |  | |  | `cast(processid as recavdmprocessid preserving type )` |  |  |
+| `FiscalYear` |  | |  | `fisc_year` |  |  |
+| `PostingDate` |  | |  | `pstngdate` |  |  |
+| `DocumentDate` |  | |  | `docdate` |  |  |
+| `OriginalReferenceDocument` |  | |  | `refdocid` |  |  |
+| `LogicalSystem` |  | |  | `logsystem` |  |  |
+| `REDocumentReversalStatus` |  | |  | `revid` |  |  |
+| `REReversalDocumentUUID` |  | |  | `revdocguid` |  |  |
+| `CreatedByUser` |  | |  | `rerf` |  |  |
+| `CreationDate` |  | |  | `derf` |  |  |
+| `CreationTime` |  | |  | `terf` |  |  |
+| `RESourceOfCreation` |  | |  | `reher` |  |  |
+| `LastChangedByUser` |  | |  | `rbear` |  |  |
+| `LastChangeDate` |  | |  | `dbear` |  |  |
+| `LastChangeTime` |  | |  | `tbear` |  |  |
+| `RESourceOfChange` |  | |  | `rbher` |  |  |
+| `RECurrencyTranslationRule` |  | |  | `ctrule` |  |  |
+| `REIsPostInConditionCurrency` |  | |  | `postcdcurr` |  |  |
+| `REPlndTranslationDate` |  | |  | `ctdatereq` |  |  |
+| `REActlTranslationDate` |  | |  | `ctdateact` |  |  |
+| `ForeignCurrency` |  | |  | `ctfccurrkey` |  |  |
+| `REValuationRule` |  | |  | `cerule` |  |  |
+| `AccountingPrinciple` |  | |  | `accprinciple` |  |  |
+| `_REProcess` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_AccountingDocument` | | ✓ | | | | |
+| `_AccountingPrinciple` | | ✓ | | | | |
+| `_RECurrencyTranslationRule` | | ✓ | | | | |
+| `_REValuationRule` | | ✓ | | | | |
 
 ## Associations
 

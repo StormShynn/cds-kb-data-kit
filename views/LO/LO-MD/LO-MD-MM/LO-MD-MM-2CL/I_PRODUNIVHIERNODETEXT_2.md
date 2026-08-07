@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ProdUnivHierarchy` | ✓ | |  | `cast(substring( nodet.hryid, 6, 26 ) as prod_hier_id )` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `ProdHierarchyValidityEndDate` | ✓ | |  | `cast(nodet.hryvalto as prodhierarchyvalidityenddate preserving type )` |
-| `ProdHierarchyValidityStartDate` |  | |  | `cast(nodet.hryvalfrom as prodhierarchyvaliditystartdate preserving type )` |
-| `ProdUnivHierarchyNodeText` |  | |  | `cast(nodetxt as prod_hier_node_value_text)` |
-| `_ProductHierarchy` | | ✓ | | |
-| `_ProductHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProdUnivHierarchy` | ✓ | |  | `cast(substring( nodet.hryid, 6, 26 ) as prod_hier_id )` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `ProdHierarchyValidityEndDate` | ✓ | |  | `cast(nodet.hryvalto as prodhierarchyvalidityenddate preserving type )` |  |  |
+| `ProdHierarchyValidityStartDate` |  | |  | `cast(nodet.hryvalfrom as prodhierarchyvaliditystartdate preserving type )` |  |  |
+| `ProdUnivHierarchyNodeText` |  | |  | `cast(nodetxt as prod_hier_node_value_text)` |  |  |
+| `_ProductHierarchy` | | ✓ | | | | |
+| `_ProductHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

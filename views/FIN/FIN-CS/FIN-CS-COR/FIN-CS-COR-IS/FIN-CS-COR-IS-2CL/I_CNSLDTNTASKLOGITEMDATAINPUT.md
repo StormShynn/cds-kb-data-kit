@@ -29,184 +29,184 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnTaskLogUUID` | ✓ | |  | `cnsldtnlognumber` |
-| `CnsldtnTaskLogItemUUID` | ✓ | |  | `cnsldtnlogitemnumber` |
-| `CnsldtnTaskLogItemType` |  | |  | `cnsldtnlineitemtype` |
-| `AssignmentReference` |  | |  | `assignmentreference` |
-| `PostingFiscalYear` |  | |  | `fiscalyear` |
-| `ConsolidationDocumentNumber` |  | |  | `cast(cnsldtndocumentnumber as fincs_docnr preserving type)` |
-| `ConsolidationVersion` |  | |  | `cnsldtnversion` |
-| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  | `cast(cnsldtnlocalcurrency as fincs_lcurr_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  | `cast(amountincnsldtnlocalcrcy as fincs_lc_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  | `cast(cnsldtngroupcurrency as fincs_gcurr_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  | `cast(amountincnsldtngroupcrcy as fincs_gc_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  | `cast(transactioncurrency as fincs_tcurr_doc preserving type)` |
-| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  | `cast(amountintransactioncurrency as fincs_tc_doc preserving type)` |
-| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  | `cast(baseunit as fincs_base_unit_doc preserving type)` |
-| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  | `cast(quantityinbaseunit as fincs_quan_doc preserving type)` |
-| `CnsldtnTriggeringAmtLoclCrcy` |  | |  | `cast(cnsldtnlocalcurrency as fincs_lcurr_tri preserving type)` |
-| `CnsldtnTriggeringAmtInLoclCrcy` |  | |  | `cast(amountincnsldtnlocalcrcy as fincs_lc_tri preserving type)` |
-| `CnsldtnTriggeringAmtGrpCrcy` |  | |  | `cast(cnsldtngroupcurrency as fincs_gcurr_tri preserving type)` |
-| `CnsldtnTriggeringAmtInGrpCrcy` |  | |  | `cast(amountincnsldtngroupcrcy as fincs_gc_tri preserving type)` |
-| `CnsldtnTriggeringAmtTransCrcy` |  | |  | `cast(transactioncurrency as fincs_tcurr_tri preserving type)` |
-| `CnsldtnTriggeringAmtInTC` |  | |  | `cast(amountintransactioncurrency as fincs_tc_tri preserving type)` |
-| `CnsldtnTriggeringQtyBaseUnit` |  | |  | `cast(baseunit as fincs_base_unit_tri preserving type)` |
-| `CnsldtnTriggeringQtyInBsUnt` |  | |  | `cast(quantityinbaseunit as fincs_quan_tri preserving type)` |
-| `ConsolidationUnit` |  | |  | `cast(cnsldtnunit as fincs_consolidationunit preserving type)` |
-| `ConsolidationChartOfAccounts` |  | |  | `cast(cnsldtnchartofaccounts as fincs_conschartofaccounts preserving type)` |
-| `CnsldtnFinancialStatementItem` |  | |  | `cast(cnsldtnfinstmntitm as fincs_md_finstatementitem preserving type)` |
-| `PartnerConsolidationUnit` |  | |  | `cast(cnsldtnpartnerunit as fincs_consolidationunit preserving type)` |
-| `ConsolidationGroup` |  | |  | `cast(cnsldtngroup as fincs_md_congr preserving type)` |
-| `CompanyCode` |  | |  | `companycode` |
-| `SubItemCategory` |  | |  | `cast(cnsldtnfinstmntsubitmcat as fincs_subitemcategory preserving type)` |
-| `SubItem` |  | |  | `cast(cnsldtnfinstmntsubitm as fincs_subitem preserving type)` |
-| `PostingLevel` |  | |  | `cast(cnsldtnpostinglevel as fincs_postinglevel preserving type)` |
-| `ConsolidationApportionment` |  | |  | `cast(cnsldtnapportionment as fincs_apportionment preserving type)` |
-| `CurrencyConversionsDiffType` |  | |  | `cast(cnsldtncrcycnvrsndifftype as fincs_currencycnvrsnsdifftype preserving type)` |
-| `ConsolidationDocumentType` |  | |  | `cast(cnsldtndocumenttype as fincs_documenttype preserving type)` |
-| `InvesteeConsolidationUnit` |  | |  | `cast(cnsldtninvesteeunit as fincs_consolidationunit preserving type)` |
-| `InvestmentActivityType` |  | |  | `cast(cnsldtninvmtactivitytype as fincs_coiac preserving type)` |
-| `InvestmentActivity` |  | |  | `cast(cnsldtninvmtactivity as fincs_coinr preserving type)` |
-| `PostingDate` |  | |  | `postingdate` |
-| `PartnerCostCenter` |  | |  | `cast(partnercostcenter as fincs_skost preserving type)` |
-| `FinancialTransactionType` |  | |  | `cast(financialtransactiontype as fincs_financialtransactiontype preserving type)` |
-| `CustomerGroup` |  | |  | `cast(customergroup as fincs_customergroup preserving type)` |
-| `CnsldtnTskLgItmRowNmbr` |  | |  | `raw_rowid` |
-| `FiscalPeriod` |  | |  | `fiscalperiod` |
-| `FinancialServicesBranch` |  | |  | `cast(branch_id as fincs_financialservicesbranch preserving type)` |
-| `GHGScope2CalculationMethod` |  | |  | `cast(ghgscp2calcmeth as fincs_ghgscp2calculationmethod preserving type)` |
-| `CashLedgerAccount` |  | |  | `re_account` |
-| `CnsldtnCashLedgerChartOfAccts` |  | |  | `cast(re_ktopl as fincs_re_ktopl preserving type)` |
-| `GHGScope2ContractualInstrument` |  | |  | `cast(ghgscp2contrinstr as fincs_ghgscp2cntrctlinstrument preserving type)` |
-| `CustomerSupplierCountry` |  | |  | `customersuppliercountry` |
-| `FinancialDataSource` |  | |  | `cast(datasource_id as fincs_financialdatasource preserving type)` |
-| `CnsldtnLogHeaderDateTime` |  | |  | `logdate` |
-| `Fund` |  | |  | `rfund` |
-| `GHGCategory` |  | |  | `cast(ghgcategory as fincs_ghgcategory preserving type)` |
-| `GHGScope` |  | |  | `cast(ghgscope as fincs_ghgscope preserving type)` |
-| `GrantID` |  | |  | `rgrant_nbr` |
-| `SustainabilityModeOfTransport` |  | |  | `cast(susmodeoftransport as fincs_sustmodeoftransport preserving type)` |
-| `FinancialServicesProductGroup` |  | |  | `fs_product_group` |
-| `SoldProduct` |  | |  | `soldproduct` |
-| `SoldProductGroup` |  | |  | `soldproductgroup` |
-| `WBSElementExternalID` |  | |  | `cast(wbselement as ps_posid_edit preserving type)` |
-| `ConsolidationLedger` |  | |  | `cnsldtnledger` |
-| `CnsldtnGroupJrnlEntry` |  | |  | `cast(entryid as fincs_group_jrnl_entry)` |
-| `ConsolidationPostingItem` |  | |  | `cnsldtnpostingitem` |
-| `BillingDocumentType` |  | |  | `cast(billingdocumenttype as fincs_billingdocumenttype preserving type)` |
-| `BillToParty` |  | |  | `billtoparty` |
-| `BusinessArea` |  | |  | `cast(businessarea as fincs_businessarea preserving type)` |
-| `ChartOfAccounts` |  | |  | `chartofaccounts` |
-| `Customer` |  | |  | `cast(customer as fincs_customer preserving type)` |
-| `Material` |  | |  | `cast(material as fincs_material preserving type )` |
-| `Plant` |  | |  | `cast(plant as fincs_plant preserving type )` |
-| `Segment` |  | |  | `cast(segment as fincs_segment preserving type)` |
-| `CnsldtnTaskLogItemLatestRecord` |  | |  | `latest_indi` |
-| `CnsldtnTskLgNode` |  | |  | `node` |
-| `CnsldtnTskLgParNode` |  | |  | `parentnode` |
-| `ConsolidationAcquisitionPeriod` |  | |  | `cnsldtnacquisitionperiod` |
-| `ConsolidationAcquisitionYear` |  | |  | `cnsldtnacquisitionyear` |
-| `ConsolidationDimension` |  | |  | `cnsldtndimension` |
-| `ControllingArea` |  | |  | `cast(controllingarea as fincs_controllingarea preserving type)` |
-| `CostCenter` |  | |  | `cast(costcenter as fincs_costcenter preserving type)` |
-| `CustomerSupplierCorporateGroup` |  | |  | `customersuppliercorporategroup` |
-| `CustomerSupplierIndustry` |  | |  | `customersupplierindustry` |
-| `DistributionChannel` |  | |  | `cast(distributionchannel as fincs_distributionchannel preserving type)` |
-| `FinancialManagementArea` |  | |  | `cast(fikrs as fincs_financialmanagementarea preserving type)` |
-| `FunctionalArea` |  | |  | `cast(functionalarea as fincs_functionalarea preserving type)` |
-| `GLAccount` |  | |  | `glaccount` |
-| `MaterialGroup` |  | |  | `cast(materialgroup as fincs_materialgroup preserving type)` |
-| `OrderID` |  | |  | `cast(orderid as fincs_order preserving type)` |
-| `Division` |  | |  | `cast(organizationdivision as fincs_division preserving type)` |
-| `PartnerBusinessArea` |  | |  | `cast(partnerbusinessarea as fincs_businessarea preserving type)` |
-| `PartnerCompany` |  | |  | `cast(partnercompany as fis_rassc preserving type)` |
-| `PartnerFunctionalArea` |  | |  | `cast(partnerfunctionalarea as fis_sfkber preserving type)` |
-| `PartnerProfitCenter` |  | |  | `cast(partnerprofitcenter as fincs_partnerprofitcenter preserving type )` |
-| `PartnerSegment` |  | |  | `cast(partnersegment as fincs_psegment preserving type)` |
-| `PartnerWBSElementExternalID` |  | |  | `cast(partnerwbselement as fis_par_psp_pnr_ext preserving type)` |
-| `ProfitCenter` |  | |  | `cast(profitcenter as fincs_profitcenter preserving type )` |
-| `SalesDistrict` |  | |  | `cast(salesdistrict as fincs_salesdistrict preserving type)` |
-| `SalesOrganization` |  | |  | `cast(salesorganization as fincs_salesorganization preserving type)` |
-| `ShipToParty` |  | |  | `shiptoparty` |
-| `Supplier` |  | |  | `cast(supplier as fincs_supplier preserving type)` |
-| `GHGDataQualityCharacteristic` |  | |  | `cast(ghgdtaqltycharc as fincs_ghgdtaqltycharc preserving type)` |
-| `GHGEnergyClassification` |  | |  | `cast(ghgenergyclass as fincs_ghgenergyclassification preserving type)` |
-| `GHGEnergyMix` |  | |  | `cast(ghgenergymix as fincs_ghgenergymix preserving type)` |
-| `GHGEnergySourcingType` |  | |  | `cast(ghgengysrcgtype as fincs_ghgenergysourcingtype preserving type)` |
-| `WBSElementInternalID` |  | |  | `cast(wbselementinternalid as ps_s4_pspnr preserving type)` |
-| `ProjectExternalID` |  | |  | `cast(project as ps_pspid_edit preserving type)` |
-| `CnsldtnAdhocItem` |  | |  | `adhocitem` |
-| `CnsldtnAdhocSet` |  | |  | `adhocset` |
-| `CnsldtnAdhocSetItem` |  | |  | `adhocsetitem` |
-| `_CnsldtnVersion` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | |
-| `_CnsldtnTriggeringAmtLoclCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringAmtGrpCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringAmtTransCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringQtyBaseUnit` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_CnsldtnFSItem` | | ✓ | | |
-| `_CnsldtnUnitPartner` | | ✓ | | |
-| `_CnsldtnGroup` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_CnsldtnSubitemCategory` | | ✓ | | |
-| `_CnsldtnSubItem` | | ✓ | | |
-| `_CnsldtnPostingLevel` | | ✓ | | |
-| `_CnsldtnApportionment` | | ✓ | | |
-| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | |
-| `_CnsldtnDocumentType` | | ✓ | | |
-| `_CnsldtnUnitInvestee` | | ✓ | | |
-| `_CnsldtnInvmtActy` | | ✓ | | |
-| `_CnsldtnFinTransType` | | ✓ | | |
-| `_CnsldtnCustomerGroup` | | ✓ | | |
-| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | |
-| `_CnsldtnCashLedgerAccount` | | ✓ | | |
-| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | |
-| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | |
-| `_CnsldtnCountry` | | ✓ | | |
-| `_CnsldtnGHGCategory` | | ✓ | | |
-| `_CnsldtnGHGScope` | | ✓ | | |
-| `_CnsldtnSustModeOfTransport` | | ✓ | | |
-| `_CnsldtnProduct` | | ✓ | | |
-| `_CnsldtnProductGroup` | | ✓ | | |
-| `_CnsldtnBillingDocumentType` | | ✓ | | |
-| `_CnsldtnBusinessArea` | | ✓ | | |
-| `_CnsldtnCustomer` | | ✓ | | |
-| `_CnsldtnMaterial` | | ✓ | | |
-| `_CnsldtnPlant` | | ✓ | | |
-| `_CnsldtnSegment` | | ✓ | | |
-| `_CnsldtnTaskLogItemType` | | ✓ | | |
-| `_CnsldtnDimension` | | ✓ | | |
-| `_CnsldtnControllingArea` | | ✓ | | |
-| `_CnsldtnCostCenter` | | ✓ | | |
-| `_CnsldtnDistributionChannel` | | ✓ | | |
-| `_CnsldtnFinancialDataSource` | | ✓ | | |
-| `_CnsldtnFinManagementArea` | | ✓ | | |
-| `_CnsldtnFinServicesBranch` | | ✓ | | |
-| `_CnsldtnFunctionalArea` | | ✓ | | |
-| `_CnsldtnFund` | | ✓ | | |
-| `_CnsldtnGrant` | | ✓ | | |
-| `_CnsldtnMaterialGroup` | | ✓ | | |
-| `_CnsldtnOrder` | | ✓ | | |
-| `_CnsldtnDivision` | | ✓ | | |
-| `_CnsldtnBusinessAreaPartner` | | ✓ | | |
-| `_CnsldtnFunctionalAreaPartner` | | ✓ | | |
-| `_CnsldtnProfitCenterPartner` | | ✓ | | |
-| `_CnsldtnSegmentPartner` | | ✓ | | |
-| `_CnsldtnProfitCenter` | | ✓ | | |
-| `_CnsldtnSalesDistrict` | | ✓ | | |
-| `_CnsldtnSalesOrganization` | | ✓ | | |
-| `_CnsldtnSupplier` | | ✓ | | |
-| `_CnsldtnGHGDtaQltyCharc` | | ✓ | | |
-| `_CnsldtnGHGEngyClassification` | | ✓ | | |
-| `_CnsldtnGHGEnergyMix` | | ✓ | | |
-| `_CnsldtnGHGEnergySourcingType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  | `cnsldtnlognumber` |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  | `cnsldtnlogitemnumber` |  |  |
+| `CnsldtnTaskLogItemType` |  | |  | `cnsldtnlineitemtype` |  |  |
+| `AssignmentReference` |  | |  | `assignmentreference` |  |  |
+| `PostingFiscalYear` |  | |  | `fiscalyear` |  |  |
+| `ConsolidationDocumentNumber` |  | |  | `cast(cnsldtndocumentnumber as fincs_docnr preserving type)` |  |  |
+| `ConsolidationVersion` |  | |  | `cnsldtnversion` |  |  |
+| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  | `cast(cnsldtnlocalcurrency as fincs_lcurr_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  | `cast(amountincnsldtnlocalcrcy as fincs_lc_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  | `cast(cnsldtngroupcurrency as fincs_gcurr_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  | `cast(amountincnsldtngroupcrcy as fincs_gc_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  | `cast(transactioncurrency as fincs_tcurr_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  | `cast(amountintransactioncurrency as fincs_tc_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  | `cast(baseunit as fincs_base_unit_doc preserving type)` |  |  |
+| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  | `cast(quantityinbaseunit as fincs_quan_doc preserving type)` |  |  |
+| `CnsldtnTriggeringAmtLoclCrcy` |  | |  | `cast(cnsldtnlocalcurrency as fincs_lcurr_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtInLoclCrcy` |  | |  | `cast(amountincnsldtnlocalcrcy as fincs_lc_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtGrpCrcy` |  | |  | `cast(cnsldtngroupcurrency as fincs_gcurr_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtInGrpCrcy` |  | |  | `cast(amountincnsldtngroupcrcy as fincs_gc_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtTransCrcy` |  | |  | `cast(transactioncurrency as fincs_tcurr_tri preserving type)` |  |  |
+| `CnsldtnTriggeringAmtInTC` |  | |  | `cast(amountintransactioncurrency as fincs_tc_tri preserving type)` |  |  |
+| `CnsldtnTriggeringQtyBaseUnit` |  | |  | `cast(baseunit as fincs_base_unit_tri preserving type)` |  |  |
+| `CnsldtnTriggeringQtyInBsUnt` |  | |  | `cast(quantityinbaseunit as fincs_quan_tri preserving type)` |  |  |
+| `ConsolidationUnit` |  | |  | `cast(cnsldtnunit as fincs_consolidationunit preserving type)` |  |  |
+| `ConsolidationChartOfAccounts` |  | |  | `cast(cnsldtnchartofaccounts as fincs_conschartofaccounts preserving type)` |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  | `cast(cnsldtnfinstmntitm as fincs_md_finstatementitem preserving type)` |  |  |
+| `PartnerConsolidationUnit` |  | |  | `cast(cnsldtnpartnerunit as fincs_consolidationunit preserving type)` |  |  |
+| `ConsolidationGroup` |  | |  | `cast(cnsldtngroup as fincs_md_congr preserving type)` |  |  |
+| `CompanyCode` |  | |  | `companycode` |  |  |
+| `SubItemCategory` |  | |  | `cast(cnsldtnfinstmntsubitmcat as fincs_subitemcategory preserving type)` |  |  |
+| `SubItem` |  | |  | `cast(cnsldtnfinstmntsubitm as fincs_subitem preserving type)` |  |  |
+| `PostingLevel` |  | |  | `cast(cnsldtnpostinglevel as fincs_postinglevel preserving type)` |  |  |
+| `ConsolidationApportionment` |  | |  | `cast(cnsldtnapportionment as fincs_apportionment preserving type)` |  |  |
+| `CurrencyConversionsDiffType` |  | |  | `cast(cnsldtncrcycnvrsndifftype as fincs_currencycnvrsnsdifftype preserving type)` |  |  |
+| `ConsolidationDocumentType` |  | |  | `cast(cnsldtndocumenttype as fincs_documenttype preserving type)` |  |  |
+| `InvesteeConsolidationUnit` |  | |  | `cast(cnsldtninvesteeunit as fincs_consolidationunit preserving type)` |  |  |
+| `InvestmentActivityType` |  | |  | `cast(cnsldtninvmtactivitytype as fincs_coiac preserving type)` |  |  |
+| `InvestmentActivity` |  | |  | `cast(cnsldtninvmtactivity as fincs_coinr preserving type)` |  |  |
+| `PostingDate` |  | |  | `postingdate` |  |  |
+| `PartnerCostCenter` |  | |  | `cast(partnercostcenter as fincs_skost preserving type)` |  |  |
+| `FinancialTransactionType` |  | |  | `cast(financialtransactiontype as fincs_financialtransactiontype preserving type)` |  |  |
+| `CustomerGroup` |  | |  | `cast(customergroup as fincs_customergroup preserving type)` |  |  |
+| `CnsldtnTskLgItmRowNmbr` |  | |  | `raw_rowid` |  |  |
+| `FiscalPeriod` |  | |  | `fiscalperiod` |  |  |
+| `FinancialServicesBranch` |  | |  | `cast(branch_id as fincs_financialservicesbranch preserving type)` |  |  |
+| `GHGScope2CalculationMethod` |  | |  | `cast(ghgscp2calcmeth as fincs_ghgscp2calculationmethod preserving type)` |  |  |
+| `CashLedgerAccount` |  | |  | `re_account` |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  | `cast(re_ktopl as fincs_re_ktopl preserving type)` |  |  |
+| `GHGScope2ContractualInstrument` |  | |  | `cast(ghgscp2contrinstr as fincs_ghgscp2cntrctlinstrument preserving type)` |  |  |
+| `CustomerSupplierCountry` |  | |  | `customersuppliercountry` |  |  |
+| `FinancialDataSource` |  | |  | `cast(datasource_id as fincs_financialdatasource preserving type)` |  |  |
+| `CnsldtnLogHeaderDateTime` |  | |  | `logdate` |  |  |
+| `Fund` |  | |  | `rfund` |  |  |
+| `GHGCategory` |  | |  | `cast(ghgcategory as fincs_ghgcategory preserving type)` |  |  |
+| `GHGScope` |  | |  | `cast(ghgscope as fincs_ghgscope preserving type)` |  |  |
+| `GrantID` |  | |  | `rgrant_nbr` |  |  |
+| `SustainabilityModeOfTransport` |  | |  | `cast(susmodeoftransport as fincs_sustmodeoftransport preserving type)` |  |  |
+| `FinancialServicesProductGroup` |  | |  | `fs_product_group` |  |  |
+| `SoldProduct` |  | |  | `soldproduct` |  |  |
+| `SoldProductGroup` |  | |  | `soldproductgroup` |  |  |
+| `WBSElementExternalID` |  | |  | `cast(wbselement as ps_posid_edit preserving type)` |  |  |
+| `ConsolidationLedger` |  | |  | `cnsldtnledger` |  |  |
+| `CnsldtnGroupJrnlEntry` |  | |  | `cast(entryid as fincs_group_jrnl_entry)` |  |  |
+| `ConsolidationPostingItem` |  | |  | `cnsldtnpostingitem` |  |  |
+| `BillingDocumentType` |  | |  | `cast(billingdocumenttype as fincs_billingdocumenttype preserving type)` |  |  |
+| `BillToParty` |  | |  | `billtoparty` |  |  |
+| `BusinessArea` |  | |  | `cast(businessarea as fincs_businessarea preserving type)` |  |  |
+| `ChartOfAccounts` |  | |  | `chartofaccounts` |  |  |
+| `Customer` |  | |  | `cast(customer as fincs_customer preserving type)` |  |  |
+| `Material` |  | |  | `cast(material as fincs_material preserving type )` |  |  |
+| `Plant` |  | |  | `cast(plant as fincs_plant preserving type )` |  |  |
+| `Segment` |  | |  | `cast(segment as fincs_segment preserving type)` |  |  |
+| `CnsldtnTaskLogItemLatestRecord` |  | |  | `latest_indi` |  |  |
+| `CnsldtnTskLgNode` |  | |  | `node` |  |  |
+| `CnsldtnTskLgParNode` |  | |  | `parentnode` |  |  |
+| `ConsolidationAcquisitionPeriod` |  | |  | `cnsldtnacquisitionperiod` |  |  |
+| `ConsolidationAcquisitionYear` |  | |  | `cnsldtnacquisitionyear` |  |  |
+| `ConsolidationDimension` |  | |  | `cnsldtndimension` |  |  |
+| `ControllingArea` |  | |  | `cast(controllingarea as fincs_controllingarea preserving type)` |  |  |
+| `CostCenter` |  | |  | `cast(costcenter as fincs_costcenter preserving type)` |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  | `customersuppliercorporategroup` |  |  |
+| `CustomerSupplierIndustry` |  | |  | `customersupplierindustry` |  |  |
+| `DistributionChannel` |  | |  | `cast(distributionchannel as fincs_distributionchannel preserving type)` |  |  |
+| `FinancialManagementArea` |  | |  | `cast(fikrs as fincs_financialmanagementarea preserving type)` |  |  |
+| `FunctionalArea` |  | |  | `cast(functionalarea as fincs_functionalarea preserving type)` |  |  |
+| `GLAccount` |  | |  | `glaccount` |  |  |
+| `MaterialGroup` |  | |  | `cast(materialgroup as fincs_materialgroup preserving type)` |  |  |
+| `OrderID` |  | |  | `cast(orderid as fincs_order preserving type)` |  |  |
+| `Division` |  | |  | `cast(organizationdivision as fincs_division preserving type)` |  |  |
+| `PartnerBusinessArea` |  | |  | `cast(partnerbusinessarea as fincs_businessarea preserving type)` |  |  |
+| `PartnerCompany` |  | |  | `cast(partnercompany as fis_rassc preserving type)` |  |  |
+| `PartnerFunctionalArea` |  | |  | `cast(partnerfunctionalarea as fis_sfkber preserving type)` |  |  |
+| `PartnerProfitCenter` |  | |  | `cast(partnerprofitcenter as fincs_partnerprofitcenter preserving type )` |  |  |
+| `PartnerSegment` |  | |  | `cast(partnersegment as fincs_psegment preserving type)` |  |  |
+| `PartnerWBSElementExternalID` |  | |  | `cast(partnerwbselement as fis_par_psp_pnr_ext preserving type)` |  |  |
+| `ProfitCenter` |  | |  | `cast(profitcenter as fincs_profitcenter preserving type )` |  |  |
+| `SalesDistrict` |  | |  | `cast(salesdistrict as fincs_salesdistrict preserving type)` |  |  |
+| `SalesOrganization` |  | |  | `cast(salesorganization as fincs_salesorganization preserving type)` |  |  |
+| `ShipToParty` |  | |  | `shiptoparty` |  |  |
+| `Supplier` |  | |  | `cast(supplier as fincs_supplier preserving type)` |  |  |
+| `GHGDataQualityCharacteristic` |  | |  | `cast(ghgdtaqltycharc as fincs_ghgdtaqltycharc preserving type)` |  |  |
+| `GHGEnergyClassification` |  | |  | `cast(ghgenergyclass as fincs_ghgenergyclassification preserving type)` |  |  |
+| `GHGEnergyMix` |  | |  | `cast(ghgenergymix as fincs_ghgenergymix preserving type)` |  |  |
+| `GHGEnergySourcingType` |  | |  | `cast(ghgengysrcgtype as fincs_ghgenergysourcingtype preserving type)` |  |  |
+| `WBSElementInternalID` |  | |  | `cast(wbselementinternalid as ps_s4_pspnr preserving type)` |  |  |
+| `ProjectExternalID` |  | |  | `cast(project as ps_pspid_edit preserving type)` |  |  |
+| `CnsldtnAdhocItem` |  | |  | `adhocitem` |  |  |
+| `CnsldtnAdhocSet` |  | |  | `adhocset` |  |  |
+| `CnsldtnAdhocSetItem` |  | |  | `adhocsetitem` |  |  |
+| `_CnsldtnVersion` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtLoclCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtGrpCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtTransCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringQtyBaseUnit` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_CnsldtnFSItem` | | ✓ | | | | |
+| `_CnsldtnUnitPartner` | | ✓ | | | | |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | | | |
+| `_CnsldtnSubItem` | | ✓ | | | | |
+| `_CnsldtnPostingLevel` | | ✓ | | | | |
+| `_CnsldtnApportionment` | | ✓ | | | | |
+| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | | | |
+| `_CnsldtnDocumentType` | | ✓ | | | | |
+| `_CnsldtnUnitInvestee` | | ✓ | | | | |
+| `_CnsldtnInvmtActy` | | ✓ | | | | |
+| `_CnsldtnFinTransType` | | ✓ | | | | |
+| `_CnsldtnCustomerGroup` | | ✓ | | | | |
+| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | | | |
+| `_CnsldtnCashLedgerAccount` | | ✓ | | | | |
+| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | | | |
+| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | | | |
+| `_CnsldtnCountry` | | ✓ | | | | |
+| `_CnsldtnGHGCategory` | | ✓ | | | | |
+| `_CnsldtnGHGScope` | | ✓ | | | | |
+| `_CnsldtnSustModeOfTransport` | | ✓ | | | | |
+| `_CnsldtnProduct` | | ✓ | | | | |
+| `_CnsldtnProductGroup` | | ✓ | | | | |
+| `_CnsldtnBillingDocumentType` | | ✓ | | | | |
+| `_CnsldtnBusinessArea` | | ✓ | | | | |
+| `_CnsldtnCustomer` | | ✓ | | | | |
+| `_CnsldtnMaterial` | | ✓ | | | | |
+| `_CnsldtnPlant` | | ✓ | | | | |
+| `_CnsldtnSegment` | | ✓ | | | | |
+| `_CnsldtnTaskLogItemType` | | ✓ | | | | |
+| `_CnsldtnDimension` | | ✓ | | | | |
+| `_CnsldtnControllingArea` | | ✓ | | | | |
+| `_CnsldtnCostCenter` | | ✓ | | | | |
+| `_CnsldtnDistributionChannel` | | ✓ | | | | |
+| `_CnsldtnFinancialDataSource` | | ✓ | | | | |
+| `_CnsldtnFinManagementArea` | | ✓ | | | | |
+| `_CnsldtnFinServicesBranch` | | ✓ | | | | |
+| `_CnsldtnFunctionalArea` | | ✓ | | | | |
+| `_CnsldtnFund` | | ✓ | | | | |
+| `_CnsldtnGrant` | | ✓ | | | | |
+| `_CnsldtnMaterialGroup` | | ✓ | | | | |
+| `_CnsldtnOrder` | | ✓ | | | | |
+| `_CnsldtnDivision` | | ✓ | | | | |
+| `_CnsldtnBusinessAreaPartner` | | ✓ | | | | |
+| `_CnsldtnFunctionalAreaPartner` | | ✓ | | | | |
+| `_CnsldtnProfitCenterPartner` | | ✓ | | | | |
+| `_CnsldtnSegmentPartner` | | ✓ | | | | |
+| `_CnsldtnProfitCenter` | | ✓ | | | | |
+| `_CnsldtnSalesDistrict` | | ✓ | | | | |
+| `_CnsldtnSalesOrganization` | | ✓ | | | | |
+| `_CnsldtnSupplier` | | ✓ | | | | |
+| `_CnsldtnGHGDtaQltyCharc` | | ✓ | | | | |
+| `_CnsldtnGHGEngyClassification` | | ✓ | | | | |
+| `_CnsldtnGHGEnergyMix` | | ✓ | | | | |
+| `_CnsldtnGHGEnergySourcingType` | | ✓ | | | | |
 
 ## Associations
 

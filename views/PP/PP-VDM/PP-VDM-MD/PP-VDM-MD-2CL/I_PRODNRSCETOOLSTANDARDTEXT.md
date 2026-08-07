@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdnRsceToolStandardTextCode` | ✓ | |  | `cast(t435.vlsch as cf_ktsch preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdnRsceToolStandardTextCode` | ✓ | |  | `cast(t435.vlsch as cf_ktsch preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

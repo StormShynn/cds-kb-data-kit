@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserID` | ✓ | |  |  |
-| `UserName` |  | |  |  |
-| `UserGroup` |  | |  |  |
-| `UserValidFrom` |  | |  | `ValidFrom` |
-| `UserValidTo` |  | |  | `ValidTo` |
-| `UserIsLocked` |  | |  | `IsLocked` |
-| `UserLockStatus` |  | |  | `LockStatus` |
-| `UserLogonLanguage` |  | |  | `LogonLanguage` |
-| `UserDecimalFormat` |  | |  | `DecimalFormat` |
-| `UserDateFormat` |  | |  | `DateFormat` |
-| `UserTimeFormat` |  | |  | `TimeFormat` |
-| `UserLocalTimeZone` |  | |  | `LocalTimeZone` |
-| `UserLastLogonDate` |  | |  | `LastLogonDate` |
-| `UserLastLogonTime` |  | |  | `LastLogonTime` |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangedDate` |  | |  |  |
-| `LastChangedTime` |  | |  |  |
-| `_BusinessUser` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_TimeZone` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserID` | ✓ | |  |  |  |  |
+| `UserName` |  | |  |  |  |  |
+| `UserGroup` |  | |  |  |  |  |
+| `UserValidFrom` |  | |  | `ValidFrom` |  |  |
+| `UserValidTo` |  | |  | `ValidTo` |  |  |
+| `UserIsLocked` |  | |  | `IsLocked` |  |  |
+| `UserLockStatus` |  | |  | `LockStatus` |  |  |
+| `UserLogonLanguage` |  | |  | `LogonLanguage` |  |  |
+| `UserDecimalFormat` |  | |  | `DecimalFormat` |  |  |
+| `UserDateFormat` |  | |  | `DateFormat` |  |  |
+| `UserTimeFormat` |  | |  | `TimeFormat` |  |  |
+| `UserLocalTimeZone` |  | |  | `LocalTimeZone` |  |  |
+| `UserLastLogonDate` |  | |  | `LastLogonDate` |  |  |
+| `UserLastLogonTime` |  | |  | `LastLogonTime` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangedDate` |  | |  |  |  |  |
+| `LastChangedTime` |  | |  |  |  |  |
+| `_BusinessUser` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_TimeZone` | | ✓ | | | | |
 
 ## Associations
 

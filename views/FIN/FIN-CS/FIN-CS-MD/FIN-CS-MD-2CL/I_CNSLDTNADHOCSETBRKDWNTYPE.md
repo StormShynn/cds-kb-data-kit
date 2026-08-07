@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnAdhocSetBrkdwnType` | ✓ | |  | `cast(left(_Domain.DomainValue, 1) as fincs_adhocsetbrkdwntype preserving type )` |
-| `DomainValue` |  | | `_Domain` | `DomainValue` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnAdhocSetBrkdwnType` | ✓ | |  | `cast(left(_Domain.DomainValue, 1) as fincs_adhocsetbrkdwntype preserving type )` |  |  |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

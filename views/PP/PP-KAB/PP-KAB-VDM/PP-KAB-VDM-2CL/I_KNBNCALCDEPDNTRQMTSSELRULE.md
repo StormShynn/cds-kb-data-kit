@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanControlCycle` | ✓ | |  | `pknum` |
-| `KnbnCalcDepdntRqmtsSelRule` | ✓ | |  | `lfdzl` |
-| `Plant` |  | |  | `werks` |
-| `StorageLocation` |  | |  | `lgort` |
-| `ProductionSupplyArea` |  | |  | `prvbe` |
-| `Supplier` |  | | `_KanbanControlCycle` | `Supplier` |
-| `_KanbanControlCycle` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanControlCycle` | ✓ | |  | `pknum` |  |  |
+| `KnbnCalcDepdntRqmtsSelRule` | ✓ | |  | `lfdzl` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `StorageLocation` |  | |  | `lgort` |  |  |
+| `ProductionSupplyArea` |  | |  | `prvbe` |  |  |
+| `Supplier` |  | | `_KanbanControlCycle` | `Supplier` |  |  |
+| `_KanbanControlCycle` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
 
 ## Associations
 

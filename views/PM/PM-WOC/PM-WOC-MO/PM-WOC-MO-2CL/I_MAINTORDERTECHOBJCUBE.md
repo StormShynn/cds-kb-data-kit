@@ -29,113 +29,113 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintenanceOrderIsHistorical` |  | |  | `cast( ' ' as eam_is_historical_order preserving type )` |
-| `MaintenanceOrderType` |  | |  |  |
-| `MaintenanceOrderDesc` |  | |  |  |
-| `MaintPriority` |  | |  |  |
-| `MaintPriorityType` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `Material` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `MaintenanceNotification` |  | |  |  |
-| `LeadingOrder` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintOrdPersonResponsible` |  | |  | `cast( '' as i_parnr_vera )` |
-| `MaintenanceRevision` |  | |  |  |
-| `MaintenancePlan` |  | |  |  |
-| `MaintenanceItem` |  | |  |  |
-| `TaskListType` |  | |  | `BillOfOperationsType` |
-| `TaskListGroup` |  | |  | `BillOfOperations` |
-| `TaskListGroupCounter` |  | |  | `BillOfOperationsVariant` |
-| `MaintenanceOrderPlanningCode` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `ABCIndicator` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `AssetLocation` |  | |  |  |
-| `AssetRoom` |  | |  |  |
-| `MaintenanceProcessingPhase` |  | |  |  |
-| `OperationSystemCondition` |  | |  |  |
-| `PlantSection` |  | |  |  |
-| `MainWorkCenter` |  | |  | `cast( I_MaintenanceOrder._MainWorkCenter.WorkCenter as gewrk preserving type )` |
-| `MainWorkCenterPlant` |  | |  | `cast( I_MaintenanceOrder._MainWorkCenter.Plant as wergw preserving type )` |
-| `WorkCenter` |  | |  |  |
-| `WorkCenterPlant` |  | |  | `Plant` |
-| `ReferenceElement` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `SuperiorProjectNetwork` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `SettlementOrder` |  | |  |  |
-| `MaintenanceOrderInternalID` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `PlannedStartDate` |  | |  |  |
-| `PlannedStartTime` |  | |  |  |
-| `PlannedEndDate` |  | |  |  |
-| `PlannedEndTime` |  | |  |  |
-| `ScheduledBasicStartDate` |  | |  |  |
-| `ScheduledBasicStartTime` |  | |  |  |
-| `ScheduledBasicEndDate` |  | |  |  |
-| `ScheduledBasicEndTime` |  | |  |  |
-| `ActualStartDate` |  | |  |  |
-| `ActualStartTime` |  | |  |  |
-| `ConfirmedEndDate` |  | |  |  |
-| `ConfirmedEndTime` |  | |  |  |
-| `MaintOrderReferenceDate` |  | |  |  |
-| `CreationDateTime` |  | |  | `cast( dats_tims_to_tstmp( I_MaintenanceOrder._Order.CreationDate, I_MaintenanceOrder._Order.CreationTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as creation_timestamp )` |
-| `LastChangeDateTime` |  | |  | `cast( I_MaintenanceOrder.LastChangeDateTime as rslastchangedat preserving type )` |
-| `ScheduledBasicEndDateTime` |  | |  | `cast( dats_tims_to_tstmp( I_MaintenanceOrder._Order.ScheduledBasicEndDate, I_MaintenanceOrder._Order.ScheduledBasicEndTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as sched_basic_end_timestamp )` |
-| `ConfirmedEndDateTime` |  | |  | `cast( dats_tims_to_tstmp( I_MaintenanceOrder._Order.ConfirmedEndDate, I_MaintenanceOrder._Order.ConfirmedEndTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as conf_end_timestamp )` |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `TechnicalObject` |  | |  | `case when Equipment = '' then cast( _LocationAccountAssignment.FunctionalLocation as eams_tec_obj ) else cast( Equipment as eams_tec_obj ) end` |
-| `TechnicalObjectType` |  | |  | `coalesce( _Equipment.TechnicalObjectType, _LocationAccountAssignment._FunctionalLocation.TechnicalObjectType )` |
-| `TechObjIsEquipOrFuncnlLoc` |  | |  | `cast( case when Equipment = '' and _LocationAccountAssignment.FunctionalLocation = '' then '' else case when Equipment = '' then 'EAMS_FL' else 'EAMS_EQUI' end end as eams_tec_obj_type_value )` |
-| `OrderLeadTimeDuration` |  | |  | `DLZNetto` |
-| `OrderRuntimeDuration` |  | |  | `DLZBrutto` |
-| `OrderDurationUnit` |  | |  | `cast( 'TAG' as qeinhtag )` |
-| `NumberOfCreatedMaintOrders` |  | |  | `cast( 1 as eam_num_orders_created )` |
-| `NumberOfOrders` |  | |  | `cast( case when I_MaintenanceOrder._Order.IsMarkedForDeletion != 'X' then 1 else 0 end as eam_num_orders )` |
-| `NumberOfCompletedMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceProcessingPhase = '3' or ( I_MaintenanceOrder.MaintenanceProcessingPhase = '4' and (I_MaintenanceOrder._StatusObjectStatus[1: IsUserStatus='' and StatusIsInactive = '' and StatusCode = 'I0015' ].StatusCode is null ) ) or I_MaintenanceOrder.MaintenanceProcessingPhase = '5' or ( I_MaintenanceOrder.MaintenanceProcessingPhase = '6' and I_MaintenanceOrder._Order.TechnicalCompletionDate != '00000000' ) then 1 else 0 end as eam_num_orders_compl )` |
-| `NumberOfPlannedMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceOrderPlanningCode = '1' then 1 else 0 end as eam_num_orders_planned )` |
-| `NumberOfUnplannedMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceOrderPlanningCode = ' ' then 1 else 0 end as eam_num_orders_unplanned )` |
-| `NumberOfImmediateMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceOrderPlanningCode = '2' then 1 else 0 end as eam_num_orders_immediate )` |
-| `NmbrOfMaintOrdsNotToBeExecuted` |  | |  | `cast( case when ( I_MaintenanceOrder.MaintenanceProcessingPhase = '4' and I_MaintenanceOrder._StatusObjectStatus[1: IsUserStatus='' and StatusIsInactive='' and StatusCode = 'I0015' ].StatusCode != '' ) or ( I_MaintenanceOrder.MaintenanceProcessingPhase = '6' and I_MaintenanceOrder._Order.TechnicalCompletionDate = '00000000' ) then 1 else 0 end as eam_num_orders_not_to_be_exec )` |
-| `NmbrOfOutstandingMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceProcessingPhase = '0' or I_MaintenanceOrder.MaintenanceProcessingPhase = '2' then 1 else 0 end as eam_num_orders_outstanding )` |
-| `NmbrOfMaintOrdsCompletedOnTime` |  | |  | `cast( case when ( I_MaintenanceOrder._Order.ConfirmedEndDate != '00000000' and I_MaintenanceOrder._Order.ScheduledBasicEndDate != '00000000' and ( I_MaintenanceOrder._Order.ConfirmedEndDate < I_MaintenanceOrder._Order.ScheduledBasicEndDate or ( I_MaintenanceOrder._Order.ConfirmedEndDate = I_MaintenanceOrder._Order.ScheduledBasicEndDate and I_MaintenanceOrder._Order.ConfirmedEndTime <= I_MaintenanceOrder._Order.ScheduledBasicEndTime ) ) ) then 1 else 0 end as eam_num_orders_compl_on_time )` |
-| `NmbrOfHistoricalOrders` |  | |  | `cast( 0 as eam_num_orders_historical)` |
-| `MaintOrdProcessPhaseCode` |  | |  |  |
-| `MaintOrdProcessSubPhaseCode` |  | |  |  |
-| `LatestAcceptableCompletionDate` |  | |  |  |
-| `PrevLtstAccptblCompletionDate` |  | |  |  |
-| `MaintOrderProcessingContext` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  | `WorkCenterInternalID` |
-| `WorkCenterInternalID` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `_WorkCenterPlant` |  | |  | `_Plant` |
-| `_MainWorkCenterPlant` |  | |  | `_Plant` |
-| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | |
-| `_TechnicalObjectType` | | ✓ | | |
-| `_MainWorkCenterBySemanticKey` | | ✓ | | |
-| `_WorkCenterBySemanticKey` | | ✓ | | |
-| `_EquipmentData` | | ✓ | | |
-| `_FunctionalLocationData` | | ✓ | | |
-| `_OrderDurationUnit` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_MaintenancePlanPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintenanceOrderIsHistorical` |  | |  | `cast( ' ' as eam_is_historical_order preserving type )` |  |  |
+| `MaintenanceOrderType` |  | |  |  |  |  |
+| `MaintenanceOrderDesc` |  | |  |  |  |  |
+| `MaintPriority` |  | |  |  |  |  |
+| `MaintPriorityType` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `MaintenanceNotification` |  | |  |  |  |  |
+| `LeadingOrder` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintOrdPersonResponsible` |  | |  | `cast( '' as i_parnr_vera )` |  |  |
+| `MaintenanceRevision` |  | |  |  |  |  |
+| `MaintenancePlan` |  | |  |  |  |  |
+| `MaintenanceItem` |  | |  |  |  |  |
+| `TaskListType` |  | |  | `BillOfOperationsType` |  |  |
+| `TaskListGroup` |  | |  | `BillOfOperations` |  |  |
+| `TaskListGroupCounter` |  | |  | `BillOfOperationsVariant` |  |  |
+| `MaintenanceOrderPlanningCode` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `ABCIndicator` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `AssetLocation` |  | |  |  |  |  |
+| `AssetRoom` |  | |  |  |  |  |
+| `MaintenanceProcessingPhase` |  | |  |  |  |  |
+| `OperationSystemCondition` |  | |  |  |  |  |
+| `PlantSection` |  | |  |  |  |  |
+| `MainWorkCenter` |  | |  | `cast( I_MaintenanceOrder._MainWorkCenter.WorkCenter as gewrk preserving type )` |  |  |
+| `MainWorkCenterPlant` |  | |  | `cast( I_MaintenanceOrder._MainWorkCenter.Plant as wergw preserving type )` |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `WorkCenterPlant` |  | |  | `Plant` |  |  |
+| `ReferenceElement` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `SuperiorProjectNetwork` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `SettlementOrder` |  | |  |  |  |  |
+| `MaintenanceOrderInternalID` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `PlannedStartDate` |  | |  |  |  |  |
+| `PlannedStartTime` |  | |  |  |  |  |
+| `PlannedEndDate` |  | |  |  |  |  |
+| `PlannedEndTime` |  | |  |  |  |  |
+| `ScheduledBasicStartDate` |  | |  |  |  |  |
+| `ScheduledBasicStartTime` |  | |  |  |  |  |
+| `ScheduledBasicEndDate` |  | |  |  |  |  |
+| `ScheduledBasicEndTime` |  | |  |  |  |  |
+| `ActualStartDate` |  | |  |  |  |  |
+| `ActualStartTime` |  | |  |  |  |  |
+| `ConfirmedEndDate` |  | |  |  |  |  |
+| `ConfirmedEndTime` |  | |  |  |  |  |
+| `MaintOrderReferenceDate` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  | `cast( dats_tims_to_tstmp( I_MaintenanceOrder._Order.CreationDate, I_MaintenanceOrder._Order.CreationTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as creation_timestamp )` |  |  |
+| `LastChangeDateTime` |  | |  | `cast( I_MaintenanceOrder.LastChangeDateTime as rslastchangedat preserving type )` |  |  |
+| `ScheduledBasicEndDateTime` |  | |  | `cast( dats_tims_to_tstmp( I_MaintenanceOrder._Order.ScheduledBasicEndDate, I_MaintenanceOrder._Order.ScheduledBasicEndTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as sched_basic_end_timestamp )` |  |  |
+| `ConfirmedEndDateTime` |  | |  | `cast( dats_tims_to_tstmp( I_MaintenanceOrder._Order.ConfirmedEndDate, I_MaintenanceOrder._Order.ConfirmedEndTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as conf_end_timestamp )` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `TechnicalObject` |  | |  | `case when Equipment = '' then cast( _LocationAccountAssignment.FunctionalLocation as eams_tec_obj ) else cast( Equipment as eams_tec_obj ) end` |  |  |
+| `TechnicalObjectType` |  | |  | `coalesce( _Equipment.TechnicalObjectType, _LocationAccountAssignment._FunctionalLocation.TechnicalObjectType )` |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  | `cast( case when Equipment = '' and _LocationAccountAssignment.FunctionalLocation = '' then '' else case when Equipment = '' then 'EAMS_FL' else 'EAMS_EQUI' end end as eams_tec_obj_type_value )` |  |  |
+| `OrderLeadTimeDuration` |  | |  | `DLZNetto` |  |  |
+| `OrderRuntimeDuration` |  | |  | `DLZBrutto` |  |  |
+| `OrderDurationUnit` |  | |  | `cast( 'TAG' as qeinhtag )` |  |  |
+| `NumberOfCreatedMaintOrders` |  | |  | `cast( 1 as eam_num_orders_created )` |  |  |
+| `NumberOfOrders` |  | |  | `cast( case when I_MaintenanceOrder._Order.IsMarkedForDeletion != 'X' then 1 else 0 end as eam_num_orders )` |  |  |
+| `NumberOfCompletedMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceProcessingPhase = '3' or ( I_MaintenanceOrder.MaintenanceProcessingPhase = '4' and (I_MaintenanceOrder._StatusObjectStatus[1: IsUserStatus='' and StatusIsInactive = '' and StatusCode = 'I0015' ].StatusCode is null ) ) or I_MaintenanceOrder.MaintenanceProcessingPhase = '5' or ( I_MaintenanceOrder.MaintenanceProcessingPhase = '6' and I_MaintenanceOrder._Order.TechnicalCompletionDate != '00000000' ) then 1 else 0 end as eam_num_orders_compl )` |  |  |
+| `NumberOfPlannedMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceOrderPlanningCode = '1' then 1 else 0 end as eam_num_orders_planned )` |  |  |
+| `NumberOfUnplannedMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceOrderPlanningCode = ' ' then 1 else 0 end as eam_num_orders_unplanned )` |  |  |
+| `NumberOfImmediateMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceOrderPlanningCode = '2' then 1 else 0 end as eam_num_orders_immediate )` |  |  |
+| `NmbrOfMaintOrdsNotToBeExecuted` |  | |  | `cast( case when ( I_MaintenanceOrder.MaintenanceProcessingPhase = '4' and I_MaintenanceOrder._StatusObjectStatus[1: IsUserStatus='' and StatusIsInactive='' and StatusCode = 'I0015' ].StatusCode != '' ) or ( I_MaintenanceOrder.MaintenanceProcessingPhase = '6' and I_MaintenanceOrder._Order.TechnicalCompletionDate = '00000000' ) then 1 else 0 end as eam_num_orders_not_to_be_exec )` |  |  |
+| `NmbrOfOutstandingMaintOrders` |  | |  | `cast( case when I_MaintenanceOrder.MaintenanceProcessingPhase = '0' or I_MaintenanceOrder.MaintenanceProcessingPhase = '2' then 1 else 0 end as eam_num_orders_outstanding )` |  |  |
+| `NmbrOfMaintOrdsCompletedOnTime` |  | |  | `cast( case when ( I_MaintenanceOrder._Order.ConfirmedEndDate != '00000000' and I_MaintenanceOrder._Order.ScheduledBasicEndDate != '00000000' and ( I_MaintenanceOrder._Order.ConfirmedEndDate < I_MaintenanceOrder._Order.ScheduledBasicEndDate or ( I_MaintenanceOrder._Order.ConfirmedEndDate = I_MaintenanceOrder._Order.ScheduledBasicEndDate and I_MaintenanceOrder._Order.ConfirmedEndTime <= I_MaintenanceOrder._Order.ScheduledBasicEndTime ) ) ) then 1 else 0 end as eam_num_orders_compl_on_time )` |  |  |
+| `NmbrOfHistoricalOrders` |  | |  | `cast( 0 as eam_num_orders_historical)` |  |  |
+| `MaintOrdProcessPhaseCode` |  | |  |  |  |  |
+| `MaintOrdProcessSubPhaseCode` |  | |  |  |  |  |
+| `LatestAcceptableCompletionDate` |  | |  |  |  |  |
+| `PrevLtstAccptblCompletionDate` |  | |  |  |  |  |
+| `MaintOrderProcessingContext` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  | `WorkCenterInternalID` |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `_WorkCenterPlant` |  | |  | `_Plant` |  |  |
+| `_MainWorkCenterPlant` |  | |  | `_Plant` |  |  |
+| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | | | |
+| `_TechnicalObjectType` | | ✓ | | | | |
+| `_MainWorkCenterBySemanticKey` | | ✓ | | | | |
+| `_WorkCenterBySemanticKey` | | ✓ | | | | |
+| `_EquipmentData` | | ✓ | | | | |
+| `_FunctionalLocationData` | | ✓ | | | | |
+| `_OrderDurationUnit` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_MaintenancePlanPlant` | | ✓ | | | | |
 
 ## Associations
 

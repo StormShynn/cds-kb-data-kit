@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingPrinciple` | ✓ | |  | `acc_principle` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingPrinciple` | ✓ | |  | `acc_principle` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

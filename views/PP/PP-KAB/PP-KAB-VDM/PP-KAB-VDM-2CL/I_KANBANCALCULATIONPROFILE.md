@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `KanbanContainerCalcProfile` | ✓ | |  | `kcprf` |
-| `KanbanContainerCalculationType` |  | |  | `kcart` |
-| `KanbanCtnCalcSafetyFactor` |  | |  | `kcsaf` |
-| `KanbanCtnCalculationConstant` |  | |  | `kccon` |
-| `KanbanCalcRqmtsSmoothingType` |  | |  | `kcgla` |
-| `QuantityDistributionKey` |  | |  | `verti` |
-| `SupplySourceShiftGrouping` |  | |  | `schgrup` |
-| `SupplySourceShiftSequence` |  | |  | `sprog` |
-| `SupplySourceFactoryCalendar` |  | |  | `fabkl` |
-| `ReplnmtLeadTimeInWorkdays` |  | |  | `kwbzd` |
-| `ReplnmtLeadTimeInHoursAndMins` |  | |  | `cast(tpkbp.kwbzm as vdm_kwbzm preserving type)` |
-| `ConsumerShiftGrouping` |  | |  | `schgrupv` |
-| `ConsumerShiftSequence` |  | |  | `sprogv` |
-| `ConsumerFactoryCalendar` |  | |  | `fabklv` |
-| `PullIntervalInWorkdays` |  | |  | `cast(tpkbp.pintvd as vdm_pintvd preserving type)` |
-| `PullIntervalInHoursAndMinutes` |  | |  | `cast(tpkbp.pintvm as vdm_pintvm preserving type)` |
-| `KnbnCtnCalcRqmtBufferInPercent` |  | |  | `kdmbuf` |
-| `KnbnCtnCalcSupplySrceBufInPct` |  | |  | `kspbuf` |
-| `RqmtFluctuationsAreConsdrd` |  | |  | `kdmvol` |
-| `MRPPlanningCalendar` |  | |  | `mrppp` |
-| `NonWorkingDaysAreConsdrd` |  | |  | `abftb` |
-| `_Text` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `KanbanContainerCalcProfile` | ✓ | |  | `kcprf` |  |  |
+| `KanbanContainerCalculationType` |  | |  | `kcart` |  |  |
+| `KanbanCtnCalcSafetyFactor` |  | |  | `kcsaf` |  |  |
+| `KanbanCtnCalculationConstant` |  | |  | `kccon` |  |  |
+| `KanbanCalcRqmtsSmoothingType` |  | |  | `kcgla` |  |  |
+| `QuantityDistributionKey` |  | |  | `verti` |  |  |
+| `SupplySourceShiftGrouping` |  | |  | `schgrup` |  |  |
+| `SupplySourceShiftSequence` |  | |  | `sprog` |  |  |
+| `SupplySourceFactoryCalendar` |  | |  | `fabkl` |  |  |
+| `ReplnmtLeadTimeInWorkdays` |  | |  | `kwbzd` |  |  |
+| `ReplnmtLeadTimeInHoursAndMins` |  | |  | `cast(tpkbp.kwbzm as vdm_kwbzm preserving type)` |  |  |
+| `ConsumerShiftGrouping` |  | |  | `schgrupv` |  |  |
+| `ConsumerShiftSequence` |  | |  | `sprogv` |  |  |
+| `ConsumerFactoryCalendar` |  | |  | `fabklv` |  |  |
+| `PullIntervalInWorkdays` |  | |  | `cast(tpkbp.pintvd as vdm_pintvd preserving type)` |  |  |
+| `PullIntervalInHoursAndMinutes` |  | |  | `cast(tpkbp.pintvm as vdm_pintvm preserving type)` |  |  |
+| `KnbnCtnCalcRqmtBufferInPercent` |  | |  | `kdmbuf` |  |  |
+| `KnbnCtnCalcSupplySrceBufInPct` |  | |  | `kspbuf` |  |  |
+| `RqmtFluctuationsAreConsdrd` |  | |  | `kdmvol` |  |  |
+| `MRPPlanningCalendar` |  | |  | `mrppp` |  |  |
+| `NonWorkingDaysAreConsdrd` |  | |  | `abftb` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

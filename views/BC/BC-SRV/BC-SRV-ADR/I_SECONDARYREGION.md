@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `country` |
-| `Region` | ✓ | |  | `region` |
-| `SecondaryRegion` | ✓ | |  | `county_code` |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `country` |  |  |
+| `Region` | ✓ | |  | `region` |  |  |
+| `SecondaryRegion` | ✓ | |  | `county_code` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

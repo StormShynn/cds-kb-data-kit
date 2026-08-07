@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SLCQnaireTranslationUUID` | ✓ | |  |  |
-| `SLCQnaireUUID` |  | |  |  |
-| `SLCQnaireTgtTranslationLang` |  | |  |  |
-| `SLCQnaireTgtTranslationLangSts` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SLCQnaireTranslationUUID` | ✓ | |  |  |  |  |
+| `SLCQnaireUUID` |  | |  |  |  |  |
+| `SLCQnaireTgtTranslationLang` |  | |  |  |  |  |
+| `SLCQnaireTgtTranslationLangSts` |  | |  |  |  |  |
 
 ## Source Code
 

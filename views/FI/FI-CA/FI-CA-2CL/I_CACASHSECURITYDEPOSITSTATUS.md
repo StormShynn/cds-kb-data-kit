@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACashSecurityDepositStatus` | ✓ | |  | `cast( left( domvalue_l,2 ) as c_status_kk )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACashSecurityDepositStatus` | ✓ | |  | `cast( left( domvalue_l,2 ) as c_status_kk )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

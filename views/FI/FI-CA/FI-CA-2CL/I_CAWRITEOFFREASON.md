@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAWriteOffReason` | ✓ | |  | `abgrd` |
-| `CACreditWorthinessRatingValue` |  | |  | `bonit` |
-| `CAPartialWriteOffIsAllowed` |  | |  | `xtabg` |
-| `CARvslOfDfrrdRevnIsForbidden` |  | |  | `notrg` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAWriteOffReason` | ✓ | |  | `abgrd` |  |  |
+| `CACreditWorthinessRatingValue` |  | |  | `bonit` |  |  |
+| `CAPartialWriteOffIsAllowed` |  | |  | `xtabg` |  |  |
+| `CARvslOfDfrrdRevnIsForbidden` |  | |  | `notrg` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

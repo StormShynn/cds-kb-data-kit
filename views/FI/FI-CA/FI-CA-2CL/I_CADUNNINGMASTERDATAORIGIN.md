@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAOriginOfDunningMasterData` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as dunn_par_orig_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAOriginOfDunningMasterData` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as dunn_par_orig_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

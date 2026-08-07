@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QltyMstrDataAuthorizationGroup` | ✓ | |  | `qmastauth` |
-| `Language` | ✓ | |  | `spras` |
-| `QltyMstrDataAuthznGroupTxt` |  | |  | `cast( tq01e.kurztext as vdm_qmastauth_text preserving type )` |
-| `_QltyMstrDataAuthorizationGrp` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QltyMstrDataAuthorizationGroup` | ✓ | |  | `qmastauth` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `QltyMstrDataAuthznGroupTxt` |  | |  | `cast( tq01e.kurztext as vdm_qmastauth_text preserving type )` |  |  |
+| `_QltyMstrDataAuthorizationGrp` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

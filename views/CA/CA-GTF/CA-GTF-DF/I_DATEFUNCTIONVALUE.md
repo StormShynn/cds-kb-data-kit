@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DateFunction` | ✓ | |  | `datefunction` |
-| `DateFunctionValidityDate` | ✓ | |  | `valid_for_date` |
-| `DateFunctionStartDate` |  | |  | `datefunctionstartdate` |
-| `DateFunctionEndDate` |  | |  | `datefunctionenddate` |
-| `_Datefunction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DateFunction` | ✓ | |  | `datefunction` |  |  |
+| `DateFunctionValidityDate` | ✓ | |  | `valid_for_date` |  |  |
+| `DateFunctionStartDate` |  | |  | `datefunctionstartdate` |  |  |
+| `DateFunctionEndDate` |  | |  | `datefunctionenddate` |  |  |
+| `_Datefunction` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierConfirmationCategory` | ✓ | |  | `ebtyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierConfirmationCategory` | ✓ | |  | `ebtyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

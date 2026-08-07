@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `SchedulingFloatProfile` | ✓ | |  | `cast(fhori as vdm_fhori preserving type)` |
-| `OpeningPeriodInWorkDays` |  | |  | `erhor` |
-| `ReleasePeriodInWorkDays` |  | |  | `cast(freiz as vdm_freiz preserving type)` |
-| `FloatAfterProductionInWorkDays` |  | |  | `cast(sichz as vdm_sichz preserving type)` |
-| `FloatBeforeProductionInWrkDays` |  | |  | `cast(vorgz as vdm_vorgz preserving type)` |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `SchedulingFloatProfile` | ✓ | |  | `cast(fhori as vdm_fhori preserving type)` |  |  |
+| `OpeningPeriodInWorkDays` |  | |  | `erhor` |  |  |
+| `ReleasePeriodInWorkDays` |  | |  | `cast(freiz as vdm_freiz preserving type)` |  |  |
+| `FloatAfterProductionInWorkDays` |  | |  | `cast(sichz as vdm_sichz preserving type)` |  |  |
+| `FloatBeforeProductionInWrkDays` |  | |  | `cast(vorgz as vdm_vorgz preserving type)` |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

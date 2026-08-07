@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingType` |  | |  | `ppopdispatchschedulingtype` |
-| `OperationDispatchDate` |  | |  | `dats` |
-| `OperationDispatchTime` |  | |  | `tims` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingType` |  | |  | `ppopdispatchschedulingtype` |  |  |
+| `OperationDispatchDate` |  | |  | `dats` |  |  |
+| `OperationDispatchTime` |  | |  | `tims` |  |  |
 
 ## Source Code
 

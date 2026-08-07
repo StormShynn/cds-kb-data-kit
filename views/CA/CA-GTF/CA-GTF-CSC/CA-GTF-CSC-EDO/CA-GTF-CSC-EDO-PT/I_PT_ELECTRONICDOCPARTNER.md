@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` |
-| `ElectronicDocBPType` | ✓ | |  | `partner_type` |
-| `PT_ElectronicDocIsRelevant` |  | |  | `is_relevant` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` |  |  |
+| `ElectronicDocBPType` | ✓ | |  | `partner_type` |  |  |
+| `PT_ElectronicDocIsRelevant` |  | |  | `is_relevant` |  |  |
 
 ## Source Code
 

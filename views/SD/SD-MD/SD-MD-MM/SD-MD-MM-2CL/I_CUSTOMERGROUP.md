@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerGroup` | ✓ | |  | `kdgrp` |
-| `_Text` | | ✓ | | |
-| `_CustomerGroupHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerGroup` | ✓ | |  | `kdgrp` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CustomerGroupHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

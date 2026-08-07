@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerGroupHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_customergroup preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `CustomerGroupHierarchyName` |  | |  | `hrytxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerGroupHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_customergroup preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |  |  |
+| `CustomerGroupHierarchyName` |  | |  | `hrytxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -33,48 +33,48 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterialCategory` | ✓ | |  |  |
-| `BillOfMaterial` | ✓ | |  |  |
-| `BillOfMaterialVariant` | ✓ | |  |  |
-| `BOMHeaderInternalChangeCount` | ✓ | |  |  |
-| `BillOfMaterialVariantUsage` |  | |  |  |
-| `BillOfMaterialVersion` |  | |  |  |
-| `BillOfMaterialAuthsnGrp` |  | |  |  |
-| `BOMIsConfigurable` |  | |  |  |
-| `IsConfiguredMaterial` |  | |  |  |
-| `IsVersionBillOfMaterial` |  | |  |  |
-| `BOMTechnicalType` |  | |  |  |
-| `BOMHeaderText` |  | |  |  |
-| `BOMGroup` |  | |  |  |
-| `IndicatorIsBOMWithDateHistory` |  | |  |  |
-| `IndicatorIsBOMChangedWithHist` |  | |  |  |
-| `HeaderValidityStartDate` |  | |  |  |
-| `HeaderEngineeringChgNmbrDoc` |  | |  |  |
-| `DeletionIndicator` |  | |  |  |
-| `BOMIsArchivedForDeletion` |  | |  |  |
-| `RecordCreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `BOMHeaderBaseUnit` |  | |  |  |
-| `BOMHeaderQuantityInBaseUnit` |  | |  |  |
-| `DocumentIsCreatedByCAD` |  | |  |  |
-| `LaboratoryOrDesignOffice` |  | |  |  |
-| `LongTextLanguage` |  | |  |  |
-| `BOMAlternativeText` |  | |  |  |
-| `BillOfMaterialStatus` |  | |  |  |
-| `BOMOrBOMAltvCrtedInPlnt` |  | |  |  |
-| `IsALE` |  | |  |  |
-| `BillOfMaterialHeaderUUID` |  | |  |  |
-| `HeaderValidityEndDate` |  | |  |  |
-| `ChgToEngineeringChgDocument` |  | |  |  |
-| `BOMVersionStatus` |  | |  |  |
-| `IsLatestBOMVersion` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |
-| `BOMPredecessorVersion` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterialCategory` | ✓ | |  |  |  |  |
+| `BillOfMaterial` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |  |  |
+| `BOMHeaderInternalChangeCount` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |  |  |
+| `BillOfMaterialVersion` |  | |  |  |  |  |
+| `BillOfMaterialAuthsnGrp` |  | |  |  |  |  |
+| `BOMIsConfigurable` |  | |  |  |  |  |
+| `IsConfiguredMaterial` |  | |  |  |  |  |
+| `IsVersionBillOfMaterial` |  | |  |  |  |  |
+| `BOMTechnicalType` |  | |  |  |  |  |
+| `BOMHeaderText` |  | |  |  |  |  |
+| `BOMGroup` |  | |  |  |  |  |
+| `IndicatorIsBOMWithDateHistory` |  | |  |  |  |  |
+| `IndicatorIsBOMChangedWithHist` |  | |  |  |  |  |
+| `HeaderValidityStartDate` |  | |  |  |  |  |
+| `HeaderEngineeringChgNmbrDoc` |  | |  |  |  |  |
+| `DeletionIndicator` |  | |  |  |  |  |
+| `BOMIsArchivedForDeletion` |  | |  |  |  |  |
+| `RecordCreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |  |  |
+| `BOMHeaderQuantityInBaseUnit` |  | |  |  |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |  |  |
+| `LongTextLanguage` |  | |  |  |  |  |
+| `BOMAlternativeText` |  | |  |  |  |  |
+| `BillOfMaterialStatus` |  | |  |  |  |  |
+| `BOMOrBOMAltvCrtedInPlnt` |  | |  |  |  |  |
+| `IsALE` |  | |  |  |  |  |
+| `BillOfMaterialHeaderUUID` |  | |  |  |  |  |
+| `HeaderValidityEndDate` |  | |  |  |  |  |
+| `ChgToEngineeringChgDocument` |  | |  |  |  |  |
+| `BOMVersionStatus` |  | |  |  |  |  |
+| `IsLatestBOMVersion` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |  |  |
+| `BOMPredecessorVersion` |  | |  |  |  |  |
 
 ## Source Code
 

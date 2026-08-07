@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `MRPSafetyStockMethod` | ✓ | |  | `cast( dd07t.domvalue_l as mrp_sstock_method )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `MRPSafetyStockMethodText` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_MRPSafetyStockMethod` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `MRPSafetyStockMethod` | ✓ | |  | `cast( dd07t.domvalue_l as mrp_sstock_method )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `MRPSafetyStockMethodText` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_MRPSafetyStockMethod` | | ✓ | | | | |
 
 ## Associations
 

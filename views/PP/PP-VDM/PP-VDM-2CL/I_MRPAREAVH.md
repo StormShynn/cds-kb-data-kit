@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPArea` | ✓ | |  |  |
-| `MRPAreaCategory` |  | |  |  |
-| `MRPAreaText` |  | |  |  |
-| `_MRPAreaCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPArea` | ✓ | |  |  |  |  |
+| `MRPAreaCategory` |  | |  |  |  |  |
+| `MRPAreaText` |  | |  |  |  |  |
+| `_MRPAreaCategory` | | ✓ | | | | |
 
 ## Source Code
 

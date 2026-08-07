@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CommitmentItemShortID` | ✓ | |  | `cast( fipos as fmis_ci_internalname preserving type )` |
-| `CommitmentItem` |  | |  | `fipex` |
-| `_CommitmentItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CommitmentItemShortID` | ✓ | |  | `cast( fipos as fmis_ci_internalname preserving type )` |  |  |
+| `CommitmentItem` |  | |  | `fipex` |  |  |
+| `_CommitmentItem` | | ✓ | | | | |
 
 ## Associations
 

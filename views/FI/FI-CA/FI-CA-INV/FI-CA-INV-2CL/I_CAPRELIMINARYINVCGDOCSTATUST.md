@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPreliminaryInvcgDocStatus` | ✓ | |  | `cast( dd07t.domvalue_l as prlinv_status_kk )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `CAPreliminaryInvcgDocStatusTxt` |  | |  | `cast( dd07t.ddtext as prlinv_status_txt_gfn_kk preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CAPreliminaryInvcgDocStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPreliminaryInvcgDocStatus` | ✓ | |  | `cast( dd07t.domvalue_l as prlinv_status_kk )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CAPreliminaryInvcgDocStatusTxt` |  | |  | `cast( dd07t.ddtext as prlinv_status_txt_gfn_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CAPreliminaryInvcgDocStatus` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAFactoringCheckStsForClrgInfo` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as pasta_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAFactoringCheckStsForClrgInfo` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as pasta_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

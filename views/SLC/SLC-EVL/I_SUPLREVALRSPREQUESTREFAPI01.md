@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalRspReferenceUUID` | ✓ | |  |  |
-| `SuplrEvalRspUUID` |  | |  |  |
-| `SuplrEvalReqUUID` |  | |  |  |
-| `SupplierEvalRequest` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalRspReferenceUUID` | ✓ | |  |  |  |  |
+| `SuplrEvalRspUUID` |  | |  |  |  |  |
+| `SuplrEvalReqUUID` |  | |  |  |  |  |
+| `SupplierEvalRequest` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ComplianceRequirement` |  | |  | `ehfnd_req_identifier` |
-| `DangerousGoodsTransportCat` |  | |  | `dangerousgoodstransportcat` |
-| `DngrsGdsEnclosureTotalQuantity` |  | |  | `dngrsgdsenclosuretotalquantity` |
-| `DngrsGdsEnclosureQuantityText` |  | |  | `dngrsgdsenclosurequantitytext` |
-| `DangerousGoodsEnclosureSapUnit` |  | |  | `ehfnd_vdm_component_unit_sap` |
-| `DangerousGoodsEnclosureISOUnit` |  | |  | `ehfnd_vdm_component_unit_iso` |
-| `DangerousGoodsQtyFactorText` |  | |  | `dangerousgoodsqtyfactortext` |
-| `DangerousGoodsPointTotalText` |  | |  | `dangerousgoodspointtotaltext` |
-| `DngrsGdsQtyExemptionIsPossible` |  | |  | `dngrsgdsqtyexemptionispossible` |
-| `_Root` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ComplianceRequirement` |  | |  | `ehfnd_req_identifier` |  |  |
+| `DangerousGoodsTransportCat` |  | |  | `dangerousgoodstransportcat` |  |  |
+| `DngrsGdsEnclosureTotalQuantity` |  | |  | `dngrsgdsenclosuretotalquantity` |  |  |
+| `DngrsGdsEnclosureQuantityText` |  | |  | `dngrsgdsenclosurequantitytext` |  |  |
+| `DangerousGoodsEnclosureSapUnit` |  | |  | `ehfnd_vdm_component_unit_sap` |  |  |
+| `DangerousGoodsEnclosureISOUnit` |  | |  | `ehfnd_vdm_component_unit_iso` |  |  |
+| `DangerousGoodsQtyFactorText` |  | |  | `dangerousgoodsqtyfactortext` |  |  |
+| `DangerousGoodsPointTotalText` |  | |  | `dangerousgoodspointtotaltext` |  |  |
+| `DngrsGdsQtyExemptionIsPossible` |  | |  | `dngrsgdsqtyexemptionispossible` |  |  |
+| `_Root` | | ✓ | | | | |
 
 ## Source Code
 

@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingDocumentType` | ✓ | |  | `cast ( blart as farp_blart preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `AccountingDocumentTypeName` |  | |  | `cast ( ltext as farp_ltext_003t preserving type )` |
-| `_DocumentType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocumentType` | ✓ | |  | `cast ( blart as farp_blart preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `AccountingDocumentTypeName` |  | |  | `cast ( ltext as farp_ltext_003t preserving type )` |  |  |
+| `_DocumentType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

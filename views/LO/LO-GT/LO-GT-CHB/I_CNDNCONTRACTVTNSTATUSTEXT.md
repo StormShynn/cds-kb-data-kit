@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `CndnContrActvtnStatus` | ✓ | |  | `cast( dd07t.domvalue_l as wcb_cc_state )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `CndnContrActvtnStatusName` |  | |  | `cast( dd07t.ddtext as wcb_cc_state_name preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CndnContrActvtnStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `CndnContrActvtnStatus` | ✓ | |  | `cast( dd07t.domvalue_l as wcb_cc_state )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CndnContrActvtnStatusName` |  | |  | `cast( dd07t.ddtext as wcb_cc_state_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CndnContrActvtnStatus` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInstallmentPlan` | ✓ | |  | `rpnum` |
-| `CADocumentNumber` | ✓ | |  | `opbel` |
-| `CARepetitionItemNumber` | ✓ | |  | `opupw` |
-| `CABPItemNumber` | ✓ | |  | `opupk` |
-| `CASubItemNumber` | ✓ | |  | `opupz` |
-| `TransactionCurrency` |  | |  | `waers` |
-| `CACreationOpenAmountInTC` |  | |  | `betro` |
-| `CAInstlmntPlnItmDocOriginType` |  | |  | `histyp` |
-| `CAOriglDocItmClrgPriorityValue` |  | |  | `augnr` |
-| `_CADocumentBPItem` | | ✓ | | |
-| `_CAInstallmentPlan` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInstallmentPlan` | ✓ | |  | `rpnum` |  |  |
+| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` |  |  |
+| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
+| `CASubItemNumber` | ✓ | |  | `opupz` |  |  |
+| `TransactionCurrency` |  | |  | `waers` |  |  |
+| `CACreationOpenAmountInTC` |  | |  | `betro` |  |  |
+| `CAInstlmntPlnItmDocOriginType` |  | |  | `histyp` |  |  |
+| `CAOriglDocItmClrgPriorityValue` |  | |  | `augnr` |  |  |
+| `_CADocumentBPItem` | | ✓ | | | | |
+| `_CAInstallmentPlan` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `ProdAllocCheckMethod` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodalloccheckmethod preserving type )` |
-| `ProdAllocCheckMethodDesc` |  | |  | `cast( ddtext as prodalloccheckmethoddesc preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_ProdAllocCheckMethod` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `ProdAllocCheckMethod` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodalloccheckmethod preserving type )` |  |  |
+| `ProdAllocCheckMethodDesc` |  | |  | `cast( ddtext as prodalloccheckmethoddesc preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProdAllocCheckMethod` | | ✓ | | | | |
 
 ## Associations
 

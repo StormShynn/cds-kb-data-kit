@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |
-| `SupplierConfirmation` |  | | `_SupplierConfirmation` | `SupplierConfirmation` |
-| `CreationDate` |  | | `_SupplierConfirmation` | `CreationDate` |
-| `CreatedByUser` |  | | `_SupplierConfirmation` | `CreatedByUser` |
-| `CreatedByUserName` |  | |  | `cast(_User.UserDescription as mm_oa_user_fullname )` |
-| `Supplier` |  | | `_SupplierConfirmation` | `Supplier` |
-| `SupplierName` |  | | `_Supplier` | `SupplierName` |
-| `PurchaseOrder` |  | | `_SupplierConfirmation` | `SuplrConfRefPurchaseOrder` |
-| `PurchasingDocumentType` |  | | `_SupplierConfirmation` | `PurchasingDocumentType` |
-| `DocumentCurrency` |  | | `_PurchaseOrder` | `DocumentCurrency` |
-| `PurchaseOrderNetAmount` |  | |  | `cast((_PurchaseOrderNetAmount.PurchaseOrderNetAmount) as mm_pur_order_tot_net_amount )` |
-| `SuplrConfWrkflwTskCrtnUTCDate` |  | |  | `cast(tstmp_to_dats( cast( _Workflowtask.WrkflwTskCreationUTCDateTime as tzntstmps ), 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `SuplrConfWrkflwTskCrtnUTCTime` |  | |  | `cast(tstmp_to_tims( cast( _Workflowtask.WrkflwTskCreationUTCDateTime as tzntstmps ), 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `SuplrConfWrkflwTskDueUTCDate` |  | |  | `cast(tstmp_to_dats( cast( _Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime as tzntstmps ), 'UTC', $session.client, 'NULL' ) as sww_led )` |
-| `SuplrConfWrkflwTskDueUTCTime` |  | |  | `cast(tstmp_to_tims( cast( _Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime as tzntstmps ), 'UTC', $session.client, 'NULL' ) as sww_let )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |  |  |
+| `SupplierConfirmation` |  | | `_SupplierConfirmation` | `SupplierConfirmation` |  |  |
+| `CreationDate` |  | | `_SupplierConfirmation` | `CreationDate` |  |  |
+| `CreatedByUser` |  | | `_SupplierConfirmation` | `CreatedByUser` |  |  |
+| `CreatedByUserName` |  | |  | `cast(_User.UserDescription as mm_oa_user_fullname )` |  |  |
+| `Supplier` |  | | `_SupplierConfirmation` | `Supplier` |  |  |
+| `SupplierName` |  | | `_Supplier` | `SupplierName` |  |  |
+| `PurchaseOrder` |  | | `_SupplierConfirmation` | `SuplrConfRefPurchaseOrder` |  |  |
+| `PurchasingDocumentType` |  | | `_SupplierConfirmation` | `PurchasingDocumentType` |  |  |
+| `DocumentCurrency` |  | | `_PurchaseOrder` | `DocumentCurrency` |  |  |
+| `PurchaseOrderNetAmount` |  | |  | `cast((_PurchaseOrderNetAmount.PurchaseOrderNetAmount) as mm_pur_order_tot_net_amount )` |  |  |
+| `SuplrConfWrkflwTskCrtnUTCDate` |  | |  | `cast(tstmp_to_dats( cast( _Workflowtask.WrkflwTskCreationUTCDateTime as tzntstmps ), 'UTC', $session.client, 'NULL' ) as sww_lsd )` |  |  |
+| `SuplrConfWrkflwTskCrtnUTCTime` |  | |  | `cast(tstmp_to_tims( cast( _Workflowtask.WrkflwTskCreationUTCDateTime as tzntstmps ), 'UTC', $session.client, 'NULL' ) as sww_lst )` |  |  |
+| `SuplrConfWrkflwTskDueUTCDate` |  | |  | `cast(tstmp_to_dats( cast( _Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime as tzntstmps ), 'UTC', $session.client, 'NULL' ) as sww_led )` |  |  |
+| `SuplrConfWrkflwTskDueUTCTime` |  | |  | `cast(tstmp_to_tims( cast( _Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime as tzntstmps ), 'UTC', $session.client, 'NULL' ) as sww_let )` |  |  |
 
 ## Source Code
 

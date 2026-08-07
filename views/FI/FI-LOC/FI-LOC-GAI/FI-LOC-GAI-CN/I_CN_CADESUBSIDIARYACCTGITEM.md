@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `GLAccount` | ✓ | |  | `saknr` |
-| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |
-| `CN_CADESubsidiaryAcctgItem` | ✓ | |  | `cade_archive_code` |
-| `DebitCreditCode` |  | |  | `bldir` |
-| `CN_CADEGeneralLedgerAcctType` |  | |  | `accty` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `GLAccount` | ✓ | |  | `saknr` |  |  |
+| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |  |  |
+| `CN_CADESubsidiaryAcctgItem` | ✓ | |  | `cade_archive_code` |  |  |
+| `DebitCreditCode` |  | |  | `bldir` |  |  |
+| `CN_CADEGeneralLedgerAcctType` |  | |  | `accty` |  |  |
 
 ## Source Code
 

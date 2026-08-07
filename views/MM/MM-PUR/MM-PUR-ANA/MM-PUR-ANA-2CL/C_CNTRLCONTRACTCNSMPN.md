@@ -29,57 +29,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralPurchaseContract` | ✓ | |  |  |
-| `CentralPurchaseContractItem` | ✓ | |  |  |
-| `DistributionKey` | ✓ | |  |  |
-| `PurchaseContractType` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `ProcmtHubPurchasingOrg` |  | |  |  |
-| `ProcmtHubPurchasingGroup` |  | |  |  |
-| `ProcmtHubPlant` |  | |  |  |
-| `CompanyCodeName` |  | |  | `ProcmtHubCompanyCode` |
-| `ProcmtHubCompanyCode` |  | |  |  |
-| `CalendarYear` |  | | `_RelevantDates` | `CalendarYear` |
-| `CalendarQuarter` |  | | `_RelevantDates` | `CalendarQuarter` |
-| `CalendarMonth` |  | | `_RelevantDates` | `CalendarMonth` |
-| `CalendarWeek` |  | | `_RelevantDates` | `CalendarWeek` |
-| `ProcmtHubPurchasingGroupName` |  | | `_HubPurchasingGroup` | `ProcmtHubPurchasingGroupName` |
-| `ProcmtHubPlantName` |  | | `_HubPlant` | `ProcmtHubPlantName` |
-| `ProcmtHubCompanyCodeName` |  | | `_HubCompanyCode` | `ProcmtHubCompanyCodeName` |
-| `ProcmtHubPurgOrgName` |  | | `_HubPurchasingOrg` | `ProcmtHubPurgOrgName` |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `DisplayCurrency` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetAmount` |  | |  |  |
-| `ReleaseOrderItemNetAmount` |  | |  |  |
-| `ReleaseOrderItemOrderQuantity` |  | |  |  |
-| `ProcurementHubSourceSystem` |  | |  |  |
-| `PurgDocChangeRequestStatus` |  | |  |  |
-| `_HubPurchasingOrg` | | ✓ | | |
-| `_HubPurchasingGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_HubPlant` | | ✓ | | |
-| `_HubPlant_2` | | ✓ | | |
-| `_HubCompanyCode` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_BackendSourceSystem` | | ✓ | | |
-| `_VersionType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |  |  |
+| `CentralPurchaseContractItem` | ✓ | |  |  |  |  |
+| `DistributionKey` | ✓ | |  |  |  |  |
+| `PurchaseContractType` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `ProcmtHubPurchasingOrg` |  | |  |  |  |  |
+| `ProcmtHubPurchasingGroup` |  | |  |  |  |  |
+| `ProcmtHubPlant` |  | |  |  |  |  |
+| `CompanyCodeName` |  | |  | `ProcmtHubCompanyCode` |  |  |
+| `ProcmtHubCompanyCode` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_RelevantDates` | `CalendarYear` |  |  |
+| `CalendarQuarter` |  | | `_RelevantDates` | `CalendarQuarter` |  |  |
+| `CalendarMonth` |  | | `_RelevantDates` | `CalendarMonth` |  |  |
+| `CalendarWeek` |  | | `_RelevantDates` | `CalendarWeek` |  |  |
+| `ProcmtHubPurchasingGroupName` |  | | `_HubPurchasingGroup` | `ProcmtHubPurchasingGroupName` |  |  |
+| `ProcmtHubPlantName` |  | | `_HubPlant` | `ProcmtHubPlantName` |  |  |
+| `ProcmtHubCompanyCodeName` |  | | `_HubCompanyCode` | `ProcmtHubCompanyCodeName` |  |  |
+| `ProcmtHubPurgOrgName` |  | | `_HubPurchasingOrg` | `ProcmtHubPurgOrgName` |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetAmount` |  | |  |  |  |  |
+| `ReleaseOrderItemNetAmount` |  | |  |  |  |  |
+| `ReleaseOrderItemOrderQuantity` |  | |  |  |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |  |  |
+| `PurgDocChangeRequestStatus` |  | |  |  |  |  |
+| `_HubPurchasingOrg` | | ✓ | | | | |
+| `_HubPurchasingGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_HubPlant` | | ✓ | | | | |
+| `_HubPlant_2` | | ✓ | | | | |
+| `_HubCompanyCode` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_BackendSourceSystem` | | ✓ | | | | |
+| `_VersionType` | | ✓ | | | | |
 
 ## Associations
 

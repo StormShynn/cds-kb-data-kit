@@ -29,51 +29,51 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `PurgDocMigrtnIsCmpltdForAnlyts` | ✓ | |  |  |
-| `SuplrEvalRelevantDocCategory` | ✓ | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |
-| `PurchasingGroup` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Region` |  | | `_Supplier` | `Region` |
-| `PurchasingOrganization` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingCategory` |  | |  |  |
-| `PurgCatName` |  | |  |  |
-| `CalendarYear` |  | | `_Date` | `CalendarYear` |
-| `CalendarQuarter` |  | | `_Date` | `CalendarQuarter` |
-| `CalendarMonth` |  | | `_Date` | `CalendarMonth` |
-| `CalendarWeek` |  | | `_Date` | `CalendarWeek` |
-| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |
-| `PurchaseOrderDate` |  | |  |  |
-| `NmbrOfPOItemWithQltyNotifScr` |  | |  | `case when Scoring.SuplrEvalCriterion is null then 0 else POWithQualityNotif end` |
-| `PurchaseOrderItemUniqueID` |  | |  |  |
-| `NmbrOfPurchaseOrderItemsWithGR` |  | |  | `cast(1 as mm_pur_ana_numbrofpurorditms )` |
-| `NumberOfPurchaseOrderItems` |  | |  | `cast(1 as mm_pur_ana_numbrofpurorditms )` |
-| `UniqueIntSourcingRequest` |  | |  |  |
-| `NumberOfPurchaseOrders` |  | |  | `cast(1 as mm_pur_ana_numbrofpurords )` |
-| `QualityNotificationCount` |  | |  |  |
-| `SuplrEvalCalculatedScoreValue` |  | |  | `cast( case when UpdatedScore.IsScoreChanged = 'X' then UpdatedScore.QualityNotificationScore when Scoring.SuplrEvalCriterion is null and QualityNotificationCount = 0 then 100 when Scoring.SuplrEvalCriterion is null then 0 else SupplierEvaluationScore end as /srmsmc/calculated_score )` |
-| `_Plant` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Date` | | ✓ | | |
-| `_PurchasingCategory` | | ✓ | | |
-| `_PurchasingDocumentCatName` | | ✓ | | |
-| `_DocConfigCatText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `PurgDocMigrtnIsCmpltdForAnlyts` | ✓ | |  |  |  |  |
+| `SuplrEvalRelevantDocCategory` | ✓ | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Region` |  | | `_Supplier` | `Region` |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingCategory` |  | |  |  |  |  |
+| `PurgCatName` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_Date` | `CalendarYear` |  |  |
+| `CalendarQuarter` |  | | `_Date` | `CalendarQuarter` |  |  |
+| `CalendarMonth` |  | | `_Date` | `CalendarMonth` |  |  |
+| `CalendarWeek` |  | | `_Date` | `CalendarWeek` |  |  |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `NmbrOfPOItemWithQltyNotifScr` |  | |  | `case when Scoring.SuplrEvalCriterion is null then 0 else POWithQualityNotif end` |  |  |
+| `PurchaseOrderItemUniqueID` |  | |  |  |  |  |
+| `NmbrOfPurchaseOrderItemsWithGR` |  | |  | `cast(1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `NumberOfPurchaseOrderItems` |  | |  | `cast(1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `UniqueIntSourcingRequest` |  | |  |  |  |  |
+| `NumberOfPurchaseOrders` |  | |  | `cast(1 as mm_pur_ana_numbrofpurords )` |  |  |
+| `QualityNotificationCount` |  | |  |  |  |  |
+| `SuplrEvalCalculatedScoreValue` |  | |  | `cast( case when UpdatedScore.IsScoreChanged = 'X' then UpdatedScore.QualityNotificationScore when Scoring.SuplrEvalCriterion is null and QualityNotificationCount = 0 then 100 when Scoring.SuplrEvalCriterion is null then 0 else SupplierEvaluationScore end as /srmsmc/calculated_score )` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Date` | | ✓ | | | | |
+| `_PurchasingCategory` | | ✓ | | | | |
+| `_PurchasingDocumentCatName` | | ✓ | | | | |
+| `_DocConfigCatText` | | ✓ | | | | |
 
 ## Associations
 

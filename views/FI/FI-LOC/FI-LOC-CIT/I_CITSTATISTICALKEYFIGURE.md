@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CITKeyFigureUUID` | ✓ | |  | `uuid` |
-| `CompanyCode` |  | |  | `companycode` |
-| `CITStatisticalKeyFigure` | ✓ | |  | `keyfigure` |
-| `CITStatisticalKeyFigureType` | ✓ | |  | `keyfiguretype` |
-| `UnitOfMeasure` |  | |  | `unitofmeasure` |
-| `Currency` |  | |  | `currency` |
-| `CreatedByUserName` |  | |  | `cast(created_by as cruser preserving type)` |
-| `CreationDateTime` |  | |  | `cast(created_at as creation_date_time preserving type)` |
-| `LastChangedByUserName` |  | |  | `cast(changed_by as last_changed_by_user preserving type)` |
-| `ChangedDateTime` |  | |  | `cast(changed_at as last_changed_date_time preserving type)` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CITKeyFigureUUID` | ✓ | |  | `uuid` |  |  |
+| `CompanyCode` |  | |  | `companycode` |  |  |
+| `CITStatisticalKeyFigure` | ✓ | |  | `keyfigure` |  |  |
+| `CITStatisticalKeyFigureType` | ✓ | |  | `keyfiguretype` |  |  |
+| `UnitOfMeasure` |  | |  | `unitofmeasure` |  |  |
+| `Currency` |  | |  | `currency` |  |  |
+| `CreatedByUserName` |  | |  | `cast(created_by as cruser preserving type)` |  |  |
+| `CreationDateTime` |  | |  | `cast(created_at as creation_date_time preserving type)` |  |  |
+| `LastChangedByUserName` |  | |  | `cast(changed_by as last_changed_by_user preserving type)` |  |  |
+| `ChangedDateTime` |  | |  | `cast(changed_at as last_changed_date_time preserving type)` |  |  |
 
 ## Associations
 

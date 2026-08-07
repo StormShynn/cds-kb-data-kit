@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfAccounts` | ✓ | |  |  |
-| `GLAccount` | ✓ | |  |  |
-| `GLAccountExternal` |  | |  | `cast( GLAccountExternal as fac_sakan )` |
-| `_Text` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  |  |  |  |
+| `GLAccount` | ✓ | |  |  |  |  |
+| `GLAccountExternal` |  | |  | `cast( GLAccountExternal as fac_sakan )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
 
 ## Source Code
 

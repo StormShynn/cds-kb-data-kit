@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportCheckRule` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2) as ehdgm_transport_check_rule preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TransportCheckRuleName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportCheckRule` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2) as ehdgm_transport_check_rule preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TransportCheckRuleName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

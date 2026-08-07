@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `DeliveryCompletedIsDefault` |  | |  | `xelik` |
-| `BookSrlNmbrIsVisibleDuringCnt` |  | |  | `xsera` |
-| `IsChangeDocumentsEnabled` |  | |  | `xaebl` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `DeliveryCompletedIsDefault` |  | |  | `xelik` |  |  |
+| `BookSrlNmbrIsVisibleDuringCnt` |  | |  | `xsera` |  |  |
+| `IsChangeDocumentsEnabled` |  | |  | `xaebl` |  |  |
 
 ## Source Code
 

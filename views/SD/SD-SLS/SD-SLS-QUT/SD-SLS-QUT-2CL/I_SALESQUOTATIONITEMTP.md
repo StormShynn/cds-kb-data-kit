@@ -31,55 +31,55 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesQuotation` | ✓ | |  |  |
-| `SalesQuotationItem` | ✓ | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `SalesQuotationItemCategory` |  | |  |  |
-| `SalesQuotationItemText` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `ItemOrderProbabilityInPercent` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `AlternativeToItem` |  | |  |  |
-| `Batch` |  | |  |  |
-| `Plant` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  |  |
-| `TotalSDDocReferenceStatus` |  | |  |  |
-| `SDDocReferenceStatus` |  | |  |  |
-| `PricingIncompletionStatus` |  | |  |  |
-| `SalesQuotationType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_SalesQuotation` | | ✓ | | |
-| `_ItemPartner` | | ✓ | | |
-| `_ItemText` | | ✓ | | |
-| `_ItemPricingElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |  |  |
+| `SalesQuotationItem` | ✓ | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `SalesQuotationItemCategory` |  | |  |  |  |  |
+| `SalesQuotationItemText` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `ItemOrderProbabilityInPercent` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `AlternativeToItem` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |  |  |
+| `SDDocReferenceStatus` |  | |  |  |  |  |
+| `PricingIncompletionStatus` |  | |  |  |  |  |
+| `SalesQuotationType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_SalesQuotation` | | ✓ | | | | |
+| `_ItemPartner` | | ✓ | | | | |
+| `_ItemText` | | ✓ | | | | |
+| `_ItemPricingElement` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionSchedulingProfile` | ✓ | |  | `cast(tco43.co_prodprf as pph_prodprf preserving type)` |
-| `Plant` | ✓ | |  | `werks` |
-| `OrderCategory` |  | |  | `cast(tco43.autyp as pph_autyp preserving type)` |
-| `GRIsPostedAutomatically` |  | |  | `autwe` |
-| `MfgOrderEWMSynchronousPosting` |  | |  | `sync_gm_for_ewm` |
-| `_Plant` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionSchedulingProfile` | ✓ | |  | `cast(tco43.co_prodprf as pph_prodprf preserving type)` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `OrderCategory` |  | |  | `cast(tco43.autyp as pph_autyp preserving type)` |  |  |
+| `GRIsPostedAutomatically` |  | |  | `autwe` |  |  |
+| `MfgOrderEWMSynchronousPosting` |  | |  | `sync_gm_for_ewm` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

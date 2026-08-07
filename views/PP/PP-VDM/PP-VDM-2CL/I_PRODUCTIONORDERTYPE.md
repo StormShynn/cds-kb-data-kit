@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionOrderType` | ✓ | |  | `cast(type.OrderType as vdm_prodnordertype preserving type)` |
-| `OrderNumberRange` |  | |  |  |
-| `StatusProfile` |  | |  |  |
-| `OperationStatusProfile` |  | |  |  |
-| `ControllingSettlementProfile` |  | |  |  |
-| `PlanningProfile` |  | |  |  |
-| `BudgetProfile` |  | |  |  |
-| `ResidenceTime1` |  | |  |  |
-| `ResidenceTime2` |  | |  |  |
-| `OrderIsToBeClassified` |  | |  |  |
-| `OrderIsReleasedUponCreation` |  | |  |  |
-| `OrderHasStatusChangeDocuments` |  | |  |  |
-| `SettlementIsNotRequired` |  | |  |  |
-| `CollectiveOrderHasAutoGoodsMvt` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionOrderType` | ✓ | |  | `cast(type.OrderType as vdm_prodnordertype preserving type)` |  |  |
+| `OrderNumberRange` |  | |  |  |  |  |
+| `StatusProfile` |  | |  |  |  |  |
+| `OperationStatusProfile` |  | |  |  |  |  |
+| `ControllingSettlementProfile` |  | |  |  |  |  |
+| `PlanningProfile` |  | |  |  |  |  |
+| `BudgetProfile` |  | |  |  |  |  |
+| `ResidenceTime1` |  | |  |  |  |  |
+| `ResidenceTime2` |  | |  |  |  |  |
+| `OrderIsToBeClassified` |  | |  |  |  |  |
+| `OrderIsReleasedUponCreation` |  | |  |  |  |  |
+| `OrderHasStatusChangeDocuments` |  | |  |  |  |  |
+| `SettlementIsNotRequired` |  | |  |  |  |  |
+| `CollectiveOrderHasAutoGoodsMvt` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

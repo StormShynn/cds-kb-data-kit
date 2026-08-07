@@ -26,15 +26,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocContentType` |  | |  | `lcm_doc_content_type` |
-| `DocumentDescription` |  | |  | `lcm_description` |
-| `LglCntntMLanguage` |  | |  | `lcm_language` |
-| `FileName` |  | |  | `lcm_filename` |
-| `LglCntntMTmplUUID` |  | |  | `lcm_tmpl_uuid` |
-| `LglCntntMDocAccessLvl` |  | |  | `lcm_access_lvl` |
-| `LglCntntMDocPaperType` |  | |  | `lcm_doc_paper_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocContentType` |  | |  | `lcm_doc_content_type` |  |  |
+| `DocumentDescription` |  | |  | `lcm_description` |  |  |
+| `LglCntntMLanguage` |  | |  | `lcm_language` |  |  |
+| `FileName` |  | |  | `lcm_filename` |  |  |
+| `LglCntntMTmplUUID` |  | |  | `lcm_tmpl_uuid` |  |  |
+| `LglCntntMDocAccessLvl` |  | |  | `lcm_access_lvl` |  |  |
+| `LglCntntMDocPaperType` |  | |  | `lcm_doc_paper_type` |  |  |
 
 ## Source Code
 

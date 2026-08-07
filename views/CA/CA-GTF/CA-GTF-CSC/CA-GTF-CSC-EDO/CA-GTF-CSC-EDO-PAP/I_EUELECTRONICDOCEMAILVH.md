@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EU_EDocEmail` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_email)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `EU_EDocEmailText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EU_EDocEmail` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_email)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `EU_EDocEmailText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

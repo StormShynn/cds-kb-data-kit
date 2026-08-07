@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |
-| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |
-| `ValidityEndDate` | ✓ | |  | `valid_to_date` |
-| `ValidityStartDate` |  | |  | `valid_from_date` |
-| `PeriodPlannedQtyInProdnUnit` |  | |  | `period_units` |
-| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` |
-| `_UsageObject` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |  |  |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` |  |  |
+| `ValidityStartDate` |  | |  | `valid_from_date` |  |  |
+| `PeriodPlannedQtyInProdnUnit` |  | |  | `period_units` |  |  |
+| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` |  |  |
+| `_UsageObject` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

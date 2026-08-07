@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesProductHierarchyPurpose` | ✓ | |  | `substring(domvalue_l, 1, 2)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SalesProductHierarchyPrpsDesc` |  | |  | `ddtext` |
-| `_SalesProductHierarchyPurpose` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesProductHierarchyPurpose` | ✓ | |  | `substring(domvalue_l, 1, 2)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SalesProductHierarchyPrpsDesc` |  | |  | `ddtext` |  |  |
+| `_SalesProductHierarchyPurpose` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

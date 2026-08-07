@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressType` | ✓ | |  | `adr_kind` |
-| `Language` | ✓ | |  | `spras` |
-| `AddressUsageName` |  | |  | `textlong` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressType` | ✓ | |  | `adr_kind` | `CHAR(10)` | Address Type |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `AddressUsageName` |  | |  | `textlong` | `CHAR(40)` | Name of Address Type |
 
 ## Source Code
 

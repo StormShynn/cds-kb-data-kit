@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAClearingRestrictionCode` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as augrs_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAClearingRestrictionCodeName` |  | |  | `cast( ddtext as augrs_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAClearingRestrictionCode` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as augrs_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAClearingRestrictionCodeName` |  | |  | `cast( ddtext as augrs_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

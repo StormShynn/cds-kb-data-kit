@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `langu` |
-| `CnsldtnFSItemMapping` | ✓ | |  | `cast ( _Source.mapping_id as fincs_fsitemmapping preserving type )` |
-| `CnsldtnFSItemMappingText` |  | |  | `cast ( _Source.mapping_text as fincs_fsitemmappingtext preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `langu` |  |  |
+| `CnsldtnFSItemMapping` | ✓ | |  | `cast ( _Source.mapping_id as fincs_fsitemmapping preserving type )` |  |  |
+| `CnsldtnFSItemMappingText` |  | |  | `cast ( _Source.mapping_text as fincs_fsitemmappingtext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

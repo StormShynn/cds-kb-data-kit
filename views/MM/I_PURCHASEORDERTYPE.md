@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrderType` | ✓ | |  | `PurchasingDocumentType` |
-| `PurchasingDocumentSubtype` |  | |  |  |
-| `PurgDocFieldSelControlKey` |  | |  |  |
-| `PurgHasFlxblWorkflowApproval` |  | |  |  |
-| `PartnerDeterminationProcedure` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrderType` | ✓ | |  | `PurchasingDocumentType` |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |  |  |
+| `PurgDocFieldSelControlKey` |  | |  |  |  |  |
+| `PurgHasFlxblWorkflowApproval` |  | |  |  |  |  |
+| `PartnerDeterminationProcedure` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

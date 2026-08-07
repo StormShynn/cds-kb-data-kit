@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterInternalID` | ✓ | |  |  |
-| `WorkCenterTypeCode` | ✓ | |  |  |
-| `CapacityCategoryAllocation` | ✓ | |  |  |
-| `CapacityInternalID` | ✓ | |  |  |
-| `CapacityActiveVersion` | ✓ | |  |  |
-| `IntervalEndDate` | ✓ | |  |  |
-| `IntervalStartDate` |  | |  |  |
-| `StdAvailableCapacityIsValid` |  | |  |  |
-| `AvailableCapacityIntervalDurn` |  | |  |  |
-| `ShiftSequence` |  | |  |  |
-| `WorkDayRule` |  | |  |  |
-| `CapacityNumberOfShifts` |  | |  |  |
-| `CapacityNumberOfCapacities` |  | |  |  |
-| `CapacityPlanUtilizationPercent` |  | |  |  |
-| `CapacityLastChangeDateTime` |  | |  |  |
-| `_CapHeader` | | ✓ | | |
-| `_Shift` | | ✓ | | |
-| `_Header` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |  |  |
+| `CapacityCategoryAllocation` | ✓ | |  |  |  |  |
+| `CapacityInternalID` | ✓ | |  |  |  |  |
+| `CapacityActiveVersion` | ✓ | |  |  |  |  |
+| `IntervalEndDate` | ✓ | |  |  |  |  |
+| `IntervalStartDate` |  | |  |  |  |  |
+| `StdAvailableCapacityIsValid` |  | |  |  |  |  |
+| `AvailableCapacityIntervalDurn` |  | |  |  |  |  |
+| `ShiftSequence` |  | |  |  |  |  |
+| `WorkDayRule` |  | |  |  |  |  |
+| `CapacityNumberOfShifts` |  | |  |  |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |  |  |
+| `_CapHeader` | | ✓ | | | | |
+| `_Shift` | | ✓ | | | | |
+| `_Header` | | ✓ | | | | |
 
 ## Source Code
 

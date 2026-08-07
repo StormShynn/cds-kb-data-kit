@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ValuationArea` | ✓ | |  |  |
-| `ValuationType` | ✓ | |  |  |
-| `CommercialPrice1InCoCodeCrcy` |  | |  |  |
-| `CommercialPrice2InCoCodeCrcy` |  | |  |  |
-| `CommercialPrice3InCoCodeCrcy` |  | |  |  |
-| `DevaluationYearCount` |  | |  |  |
-| `FuturePrice` |  | |  |  |
-| `FuturePriceValidityStartDate` |  | |  |  |
-| `IsLIFOAndFIFORelevant` |  | |  |  |
-| `LIFOValuationPoolNumber` |  | |  |  |
-| `StandardPricePrevYear` |  | |  |  |
-| `TaxPricel1InCoCodeCrcy` |  | |  |  |
-| `TaxPrice2InCoCodeCrcy` |  | |  |  |
-| `TaxPrice3InCoCodeCrcy` |  | |  |  |
-| `TaxBasedPricesPriceUnitQty` |  | |  |  |
-| `CompanyCode` |  | |  | `bukrs` |
-| `Currency` |  | |  | `waers` |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `_Product` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ValuationArea` | ✓ | |  |  |  |  |
+| `ValuationType` | ✓ | |  |  |  |  |
+| `CommercialPrice1InCoCodeCrcy` |  | |  |  |  |  |
+| `CommercialPrice2InCoCodeCrcy` |  | |  |  |  |  |
+| `CommercialPrice3InCoCodeCrcy` |  | |  |  |  |  |
+| `DevaluationYearCount` |  | |  |  |  |  |
+| `FuturePrice` |  | |  |  |  |  |
+| `FuturePriceValidityStartDate` |  | |  |  |  |  |
+| `IsLIFOAndFIFORelevant` |  | |  |  |  |  |
+| `LIFOValuationPoolNumber` |  | |  |  |  |  |
+| `StandardPricePrevYear` |  | |  |  |  |  |
+| `TaxPricel1InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxPrice2InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxPrice3InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxBasedPricesPriceUnitQty` |  | |  |  |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
 
 ## Associations
 

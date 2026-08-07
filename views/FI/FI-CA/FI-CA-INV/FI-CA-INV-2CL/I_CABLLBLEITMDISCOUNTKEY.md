@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABllbleItmDiscountKey` | ✓ | | `_tfk8117` | `disckey` |
-| `CABllbleItmDiscUtilzn` |  | | `_tfk8117` | `utilization` |
-| `_CABllbleItmDiscountKeyText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABllbleItmDiscountKey` | ✓ | | `_tfk8117` | `disckey` |  |  |
+| `CABllbleItmDiscUtilzn` |  | | `_tfk8117` | `utilization` |  |  |
+| `_CABllbleItmDiscountKeyText` | | ✓ | | | | |
 
 ## Associations
 

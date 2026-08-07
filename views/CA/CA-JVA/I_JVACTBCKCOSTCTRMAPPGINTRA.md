@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JVAFromCostCenter` | ✓ | |  |  |
-| `JVAToCostCenter` |  | |  |  |
-| `JVACutbackCostCenter` |  | |  |  |
-| `JVACutbackOrder` |  | |  |  |
-| `JVACutbackWBS` |  | |  |  |
-| `JVACutbackWBSExt` |  | | `_CutbackWBS` | `WBSElementExternalID` |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
-| `_CompanyCode` | | ✓ | | |
-| `_FromCostCenter` | | ✓ | | |
-| `_ToCostCenter` | | ✓ | | |
-| `_CutbackCostCenter` | | ✓ | | |
-| `_CutbackOrder` | | ✓ | | |
-| `_CutbackWBS` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JVAFromCostCenter` | ✓ | |  |  |  |  |
+| `JVAToCostCenter` |  | |  |  |  |  |
+| `JVACutbackCostCenter` |  | |  |  |  |  |
+| `JVACutbackOrder` |  | |  |  |  |  |
+| `JVACutbackWBS` |  | |  |  |  |  |
+| `JVACutbackWBSExt` |  | | `_CutbackWBS` | `WBSElementExternalID` |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FromCostCenter` | | ✓ | | | | |
+| `_ToCostCenter` | | ✓ | | | | |
+| `_CutbackCostCenter` | | ✓ | | | | |
+| `_CutbackOrder` | | ✓ | | | | |
+| `_CutbackWBS` | | ✓ | | | | |
 
 ## Associations
 

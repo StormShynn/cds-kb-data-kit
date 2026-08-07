@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationTaskGroup` | ✓ | |  | `cast( acgr as fincs_taskgroup preserving type )` |
-| `Language` | ✓ | |  | `langu` |
-| `ConsolidationTaskGroupText` |  | |  | `cast(txt as fincs_taskgroup_txt preserving type )` |
-| `_CnsldtnTaskGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationTaskGroup` | ✓ | |  | `cast( acgr as fincs_taskgroup preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ConsolidationTaskGroupText` |  | |  | `cast(txt as fincs_taskgroup_txt preserving type )` |  |  |
+| `_CnsldtnTaskGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

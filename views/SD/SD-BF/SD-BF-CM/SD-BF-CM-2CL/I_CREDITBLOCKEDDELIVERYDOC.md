@@ -31,44 +31,44 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryDocument` | ✓ | |  |  |
-| `SDDocumentCategory` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `CustomerCreditAccount` |  | |  |  |
-| `ControllingAreaCurrency` |  | |  |  |
-| `ReleasedCreditAmount` |  | |  |  |
-| `CreditBlockReleaseDate` |  | |  |  |
-| `NextShippingDate` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  | `cast( ' ' as abgru_va )` |
-| `CentralCreditChkTechErrSts` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `OverallGoodsMovementStatus` |  | |  |  |
-| `TotalCreditCheckStatus` |  | |  |  |
-| `FinDocCreditCheckStatus` |  | |  |  |
-| `CentralCreditCheckStatus` |  | |  |  |
-| `_SoldToParty` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_CentralCreditChkTechErrSts` | | ✓ | | |
-| `_OverallSDProcessStatus` | | ✓ | | |
-| `_OverallGoodsMovementStatus` | | ✓ | | |
-| `_TotalCreditCheckStatus` | | ✓ | | |
-| `_FinDocCreditCheckStatus` | | ✓ | | |
-| `_CentralCreditCheckStatus` | | ✓ | | |
-| `_ControllingAreaCurrency` | | ✓ | | |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_SalesDocumentRjcnReason` | | ✓ | | |
-| `_CustomerCreditAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocument` | ✓ | |  |  |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `CustomerCreditAccount` |  | |  |  |  |  |
+| `ControllingAreaCurrency` |  | |  |  |  |  |
+| `ReleasedCreditAmount` |  | |  |  |  |  |
+| `CreditBlockReleaseDate` |  | |  |  |  |  |
+| `NextShippingDate` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  | `cast( ' ' as abgru_va )` |  |  |
+| `CentralCreditChkTechErrSts` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `OverallGoodsMovementStatus` |  | |  |  |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |  |  |
+| `FinDocCreditCheckStatus` |  | |  |  |  |  |
+| `CentralCreditCheckStatus` |  | |  |  |  |  |
+| `_SoldToParty` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_CentralCreditChkTechErrSts` | | ✓ | | | | |
+| `_OverallSDProcessStatus` | | ✓ | | | | |
+| `_OverallGoodsMovementStatus` | | ✓ | | | | |
+| `_TotalCreditCheckStatus` | | ✓ | | | | |
+| `_FinDocCreditCheckStatus` | | ✓ | | | | |
+| `_CentralCreditCheckStatus` | | ✓ | | | | |
+| `_ControllingAreaCurrency` | | ✓ | | | | |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_SalesDocumentRjcnReason` | | ✓ | | | | |
+| `_CustomerCreditAccount` | | ✓ | | | | |
 
 ## Associations
 

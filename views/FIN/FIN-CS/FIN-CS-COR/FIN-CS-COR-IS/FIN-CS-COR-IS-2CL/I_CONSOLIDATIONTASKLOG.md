@@ -29,46 +29,46 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnTaskLogUUID` | ✓ | |  | `cnsldtnlognumber` |
-| `ConsolidationChartOfAccounts` |  | |  | `cast(cnsldtnchartofaccounts as fincs_conschartofaccounts preserving type)` |
-| `ConsolidationGroup` |  | |  | `cast(cnsldtngroup as fincs_md_congr preserving type)` |
-| `ConsolidationUnit` |  | |  | `cast(cnsldtnunit as fincs_consolidationunit preserving type)` |
-| `ConsolidationVersion` |  | |  | `cast(cnsldtnversion as fincs_consolidationversion preserving type)` |
-| `ConsolidationTaskCategory` |  | |  | `cast(cnsldtntasktype as fincs_taskcategory preserving type)` |
-| `CnsldtnTaskLogExternalId` |  | |  | `cast(externalid as fincs_extid preserving type)` |
-| `CnsldtnTskRunBackgroundJobName` |  | |  | `cast(applicationjobname as fincs_taskrun_jobname_id preserving type)` |
-| `CnsldtnTaskRunBackgroundJob` |  | |  | `cast(applicationjobcount as fincs_taskrun_job_id preserving type)` |
-| `FiscalPeriod` |  | |  | `cast(fiscalperiod as fins_fiscalperiod preserving type)` |
-| `FiscalYear` |  | |  | `cast(fiscalyear as fis_gjahr_no_conv preserving type)` |
-| `CnsldtnTaskLogCreatedByUser` |  | |  | `cast(userid as fincs_tasklog_created_by preserving type)` |
-| `ConsolidationTask` |  | |  | `cast(cnsldtntask as fincs_tsk preserving type)` |
-| `ConsolidationDocumentType` |  | |  | `cast(cnsldtndocumenttype as fincs_documenttype preserving type)` |
-| `ConsolidationGroupCurrency` |  | |  | `cast(cnsldtngroupcurrency as fincs_groupcurrency preserving type)` |
-| `ConsolidationTaskStatus` |  | |  | `cast(status as fincs_taskrun_sts)` |
-| `CnsldtnTaskLogMessageType` |  | |  | `cast(status as fincs_msg_type preserving type)` |
-| `ConsolidationMethod` |  | |  | `cast(cnsldtnmethod as fincs_method preserving type)` |
-| `CnsldtnIsCumulative` |  | |  | `cast(is_cumulative as fincs_cum_indi preserving type)` |
-| `CnsldtnRptdDataUpdateMode` |  | |  | `cast(update_mode as fincs_rptdata_updmode preserving type)` |
-| `CnsldtnTskLgCreatedDateTime` |  | |  | `cast(createddatetime as fincs_tasklog_created_at preserving type)` |
-| `CnsldtnTaskLogHeaderDateTime` |  | |  | `cast(timestamp as fincs_timestamp preserving type)` |
-| `ConsolidationTaskRunIsTest` |  | |  | `cast(iscnsldtntestrun as fincs_taskrun_is_test preserving type)` |
-| `_ConsolidationTaskLogMessage` | | ✓ | | |
-| `_CnsldtnTskLgItmRclassfctn` | | ✓ | | |
-| `_CnsldtnTskLgItmCrcyTrnsltn` | | ✓ | | |
-| `_CnsldtnTskLgItmManualPosting` | | ✓ | | |
-| `_CnsldtnTaskLogItemDataEntry` | | ✓ | | |
-| `_CnsldtnTskLgItmLineValdtn` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_CnsldtnGroup` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
-| `_CnsldtnVersion` | | ✓ | | |
-| `_CnsldtnTaskCategory` | | ✓ | | |
-| `_CnsldtnTask` | | ✓ | | |
-| `_CnsldtnDocumentType` | | ✓ | | |
-| `_ConsolidationGroupCurrency` | | ✓ | | |
-| `_CnsldtnMethod` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  | `cnsldtnlognumber` |  |  |
+| `ConsolidationChartOfAccounts` |  | |  | `cast(cnsldtnchartofaccounts as fincs_conschartofaccounts preserving type)` |  |  |
+| `ConsolidationGroup` |  | |  | `cast(cnsldtngroup as fincs_md_congr preserving type)` |  |  |
+| `ConsolidationUnit` |  | |  | `cast(cnsldtnunit as fincs_consolidationunit preserving type)` |  |  |
+| `ConsolidationVersion` |  | |  | `cast(cnsldtnversion as fincs_consolidationversion preserving type)` |  |  |
+| `ConsolidationTaskCategory` |  | |  | `cast(cnsldtntasktype as fincs_taskcategory preserving type)` |  |  |
+| `CnsldtnTaskLogExternalId` |  | |  | `cast(externalid as fincs_extid preserving type)` |  |  |
+| `CnsldtnTskRunBackgroundJobName` |  | |  | `cast(applicationjobname as fincs_taskrun_jobname_id preserving type)` |  |  |
+| `CnsldtnTaskRunBackgroundJob` |  | |  | `cast(applicationjobcount as fincs_taskrun_job_id preserving type)` |  |  |
+| `FiscalPeriod` |  | |  | `cast(fiscalperiod as fins_fiscalperiod preserving type)` |  |  |
+| `FiscalYear` |  | |  | `cast(fiscalyear as fis_gjahr_no_conv preserving type)` |  |  |
+| `CnsldtnTaskLogCreatedByUser` |  | |  | `cast(userid as fincs_tasklog_created_by preserving type)` |  |  |
+| `ConsolidationTask` |  | |  | `cast(cnsldtntask as fincs_tsk preserving type)` |  |  |
+| `ConsolidationDocumentType` |  | |  | `cast(cnsldtndocumenttype as fincs_documenttype preserving type)` |  |  |
+| `ConsolidationGroupCurrency` |  | |  | `cast(cnsldtngroupcurrency as fincs_groupcurrency preserving type)` |  |  |
+| `ConsolidationTaskStatus` |  | |  | `cast(status as fincs_taskrun_sts)` |  |  |
+| `CnsldtnTaskLogMessageType` |  | |  | `cast(status as fincs_msg_type preserving type)` |  |  |
+| `ConsolidationMethod` |  | |  | `cast(cnsldtnmethod as fincs_method preserving type)` |  |  |
+| `CnsldtnIsCumulative` |  | |  | `cast(is_cumulative as fincs_cum_indi preserving type)` |  |  |
+| `CnsldtnRptdDataUpdateMode` |  | |  | `cast(update_mode as fincs_rptdata_updmode preserving type)` |  |  |
+| `CnsldtnTskLgCreatedDateTime` |  | |  | `cast(createddatetime as fincs_tasklog_created_at preserving type)` |  |  |
+| `CnsldtnTaskLogHeaderDateTime` |  | |  | `cast(timestamp as fincs_timestamp preserving type)` |  |  |
+| `ConsolidationTaskRunIsTest` |  | |  | `cast(iscnsldtntestrun as fincs_taskrun_is_test preserving type)` |  |  |
+| `_ConsolidationTaskLogMessage` | | ✓ | | | | |
+| `_CnsldtnTskLgItmRclassfctn` | | ✓ | | | | |
+| `_CnsldtnTskLgItmCrcyTrnsltn` | | ✓ | | | | |
+| `_CnsldtnTskLgItmManualPosting` | | ✓ | | | | |
+| `_CnsldtnTaskLogItemDataEntry` | | ✓ | | | | |
+| `_CnsldtnTskLgItmLineValdtn` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
+| `_CnsldtnVersion` | | ✓ | | | | |
+| `_CnsldtnTaskCategory` | | ✓ | | | | |
+| `_CnsldtnTask` | | ✓ | | | | |
+| `_CnsldtnDocumentType` | | ✓ | | | | |
+| `_ConsolidationGroupCurrency` | | ✓ | | | | |
+| `_CnsldtnMethod` | | ✓ | | | | |
 
 ## Associations
 

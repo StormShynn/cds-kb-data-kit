@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InvoiceStatusAndOrigin` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `InvoiceStatusAndOriginDesc` |  | |  |  |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvoiceStatusAndOrigin` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `InvoiceStatusAndOriginDesc` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Source Code
 

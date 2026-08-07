@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `MaintenanceItemObjectList` | ✓ | |  |  |
-| `MaintenanceItemObject` | ✓ | |  |  |
-| `SerialNumber` |  | |  |  |
-| `_InspectionLot` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `MaintenanceItemObjectList` | ✓ | |  |  |  |  |
+| `MaintenanceItemObject` | ✓ | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `_InspectionLot` | | ✓ | | | | |
 
 ## Source Code
 

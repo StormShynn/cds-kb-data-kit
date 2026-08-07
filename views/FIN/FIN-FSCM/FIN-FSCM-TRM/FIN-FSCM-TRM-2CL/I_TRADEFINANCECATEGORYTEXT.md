@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TradeFinanceCategory` | ✓ | |  | `cast(DomainText.domvalue_l as ftr_tf_cat)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TradeFinanceCategoryName` |  | |  | `cast( DomainText.ddtext as trade_finance_category_name preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TradeFinanceCategory` | ✓ | |  | `cast(DomainText.domvalue_l as ftr_tf_cat)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TradeFinanceCategoryName` |  | |  | `cast( DomainText.ddtext as trade_finance_category_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

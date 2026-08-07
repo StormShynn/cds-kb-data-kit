@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdStopHndlgExecStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_s_hdl_exec_status preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspOrdStopHndlgExecStsDesc` |  | |  | `ddtext` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspStopHndlgExecStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStopHndlgExecStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_s_hdl_exec_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspOrdStopHndlgExecStsDesc` |  | |  | `ddtext` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspStopHndlgExecStatus` | | ✓ | | | | |
 
 ## Associations
 

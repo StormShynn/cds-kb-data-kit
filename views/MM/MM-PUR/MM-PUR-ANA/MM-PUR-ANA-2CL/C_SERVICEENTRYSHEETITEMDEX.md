@@ -31,49 +31,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceEntrySheet` | ✓ | |  |  |
-| `ServiceEntrySheetItem` | ✓ | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `Service` |  | |  |  |
-| `ServiceEntrySheetItemDesc` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `MultipleAcctAssgmtDistribution` |  | |  |  |
-| `WorkItem` |  | |  |  |
-| `ConfirmedQuantity` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `ServicePerformanceDate` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `PurgDocItemExternalReference` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_ServiceEntrySheetDEX` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_AccountAssignmentCategory` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_PurchaseContract` | | ✓ | | |
-| `_PurchaseContractItem` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_ServiceEntrySheet` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `Service` |  | |  |  |  |  |
+| `ServiceEntrySheetItemDesc` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |  |  |
+| `WorkItem` |  | |  |  |  |  |
+| `ConfirmedQuantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `ServicePerformanceDate` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `PurgDocItemExternalReference` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_ServiceEntrySheetDEX` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_AccountAssignmentCategory` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_PurchaseContract` | | ✓ | | | | |
+| `_PurchaseContractItem` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ServiceEntrySheet` | | ✓ | | | | |
 
 ## Associations
 

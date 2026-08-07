@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesPerformanceDataSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as sd_sp_data_source )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SalesPerformanceDataSourceText` |  | |  | `cast( ddtext as sd_sp_data_source_text )` |
-| `_Language` | | ✓ | | |
-| `_DataSource` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesPerformanceDataSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as sd_sp_data_source )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SalesPerformanceDataSourceText` |  | |  | `cast( ddtext as sd_sp_data_source_text )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_DataSource` | | ✓ | | | | |
 
 ## Associations
 

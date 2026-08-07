@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
-| `FinancialServicesProductGroup` | ✓ | |  | `cast( _Source.FinancialServicesProductGroup as fincs_finsrvcsproductgroup preserving type )` |
-| `FinServicesProductGroupName` |  | |  | `cast( _Source.FinServicesProductGroupName as fincs_finsrvcsproductgroupname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_FinancialServicesProductGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |  |  |
+| `FinancialServicesProductGroup` | ✓ | |  | `cast( _Source.FinancialServicesProductGroup as fincs_finsrvcsproductgroup preserving type )` |  |  |
+| `FinServicesProductGroupName` |  | |  | `cast( _Source.FinServicesProductGroupName as fincs_finsrvcsproductgroupname preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FinancialServicesProductGroup` | | ✓ | | | | |
 
 ## Associations
 

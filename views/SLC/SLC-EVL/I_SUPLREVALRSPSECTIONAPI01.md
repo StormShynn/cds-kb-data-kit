@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalRspSectionUUID` | ✓ | |  |  |
-| `SuplrEvalRspUUID` |  | |  |  |
-| `SuplrEvalRspQuestionnaireUUID` |  | |  |  |
-| `SupplierEvalResponseSection` |  | |  |  |
-| `SupplierEvalResponseSctnAltv` |  | |  |  |
-| `QuestionnaireSectionName` |  | |  |  |
-| `WeightingFactor` |  | |  |  |
-| `MinimalScore` |  | |  |  |
-| `TargetScore` |  | |  |  |
-| `CalculatedScore` |  | |  |  |
-| `NumberOfResponses` |  | |  |  |
-| `SuplrEvalReqSectionUUID` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalRspSectionUUID` | ✓ | |  |  |  |  |
+| `SuplrEvalRspUUID` |  | |  |  |  |  |
+| `SuplrEvalRspQuestionnaireUUID` |  | |  |  |  |  |
+| `SupplierEvalResponseSection` |  | |  |  |  |  |
+| `SupplierEvalResponseSctnAltv` |  | |  |  |  |  |
+| `QuestionnaireSectionName` |  | |  |  |  |  |
+| `WeightingFactor` |  | |  |  |  |  |
+| `MinimalScore` |  | |  |  |  |  |
+| `TargetScore` |  | |  |  |  |  |
+| `CalculatedScore` |  | |  |  |  |  |
+| `NumberOfResponses` |  | |  |  |  |  |
+| `SuplrEvalReqSectionUUID` |  | |  |  |  |  |
 
 ## Source Code
 

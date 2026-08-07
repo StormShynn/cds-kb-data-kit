@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionUsage` | ✓ | |  | `kvewe` |
-| `ConditionApplication` | ✓ | |  | `kappl` |
-| `AccessSequence` | ✓ | |  | `kozgf` |
-| `AccessNumberOfAccessSequence` | ✓ | |  | `kolnr` |
-| `ConditionTable` |  | |  | `cast ( kotabnr as char03 )` |
-| `ConditionRequirement` |  | |  | `kobed` |
-| `PrcgConditionAccessIsExclusive` |  | |  | `kzexl` |
-| `_PricingAccessSequence` | | ✓ | | |
-| `_PricingAccessField` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |  |  |
+| `ConditionApplication` | ✓ | |  | `kappl` |  |  |
+| `AccessSequence` | ✓ | |  | `kozgf` |  |  |
+| `AccessNumberOfAccessSequence` | ✓ | |  | `kolnr` |  |  |
+| `ConditionTable` |  | |  | `cast ( kotabnr as char03 )` |  |  |
+| `ConditionRequirement` |  | |  | `kobed` |  |  |
+| `PrcgConditionAccessIsExclusive` |  | |  | `kzexl` |  |  |
+| `_PricingAccessSequence` | | ✓ | | | | |
+| `_PricingAccessField` | | ✓ | | | | |
 
 ## Associations
 

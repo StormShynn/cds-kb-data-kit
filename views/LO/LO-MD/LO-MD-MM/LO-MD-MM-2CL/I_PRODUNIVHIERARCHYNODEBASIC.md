@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdUnivHierarchy` | ✓ | |  | `cast(substring( node.hryid, 6, 26 ) as prod_hier_id )` |
-| `HierarchyNode` | ✓ | |  | `hrynode` |
-| `ProdHierarchyValidityEndDate` | ✓ | |  | `cast(node.hryvalto as prodhierarchyvalidityenddate preserving type )` |
-| `ProdHierarchyValidityStartDate` |  | |  | `cast(node.hryvalfrom as prodhierarchyvaliditystartdate preserving type )` |
-| `ParentNode` |  | |  | `parnode` |
-| `ProdUnivHierarchyNode` |  | |  | `cast( case node.nodetype when 'R' then node.nodevalue when 'N' then node.nodevalue else '' end as prod_hier_node_value )` |
-| `Product` |  | |  | `cast( case node.hrytype when 'MD01' then case node.nodetype when 'L' then node.nodevalue else '' end else case node.nodetype when 'L' then node.nodevalue when 'N' then node.nodevalue else '' end end as productnumber )` |
-| `HierarchyNodeSequence` |  | |  | `hryseqnbr` |
-| `NodeType` |  | |  | `nodetype` |
-| `HierarchyNodeLevel` |  | |  | `hrylevel` |
-| `HierarchyType` |  | |  | `hrytype` |
-| `_ProductHierarchy` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdUnivHierarchy` | ✓ | |  | `cast(substring( node.hryid, 6, 26 ) as prod_hier_id )` |  |  |
+| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
+| `ProdHierarchyValidityEndDate` | ✓ | |  | `cast(node.hryvalto as prodhierarchyvalidityenddate preserving type )` |  |  |
+| `ProdHierarchyValidityStartDate` |  | |  | `cast(node.hryvalfrom as prodhierarchyvaliditystartdate preserving type )` |  |  |
+| `ParentNode` |  | |  | `parnode` |  |  |
+| `ProdUnivHierarchyNode` |  | |  | `cast( case node.nodetype when 'R' then node.nodevalue when 'N' then node.nodevalue else '' end as prod_hier_node_value )` |  |  |
+| `Product` |  | |  | `cast( case node.hrytype when 'MD01' then case node.nodetype when 'L' then node.nodevalue else '' end else case node.nodetype when 'L' then node.nodevalue when 'N' then node.nodevalue else '' end end as productnumber )` |  |  |
+| `HierarchyNodeSequence` |  | |  | `hryseqnbr` |  |  |
+| `NodeType` |  | |  | `nodetype` |  |  |
+| `HierarchyNodeLevel` |  | |  | `hrylevel` |  |  |
+| `HierarchyType` |  | |  | `hrytype` |  |  |
+| `_ProductHierarchy` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Associations
 

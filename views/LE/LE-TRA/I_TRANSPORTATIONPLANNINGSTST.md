@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationPlanningStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `TransportationPlanningStsDesc` |  | |  | `bezei` |
-| `_TransportationPlanningSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationPlanningStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TransportationPlanningStsDesc` |  | |  | `bezei` |  |  |
+| `_TransportationPlanningSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

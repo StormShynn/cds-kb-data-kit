@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `VarConfigurationProfileName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ConfignCharacteristicGroup` | ✓ | |  |  |
-| `VarCnfChGrpAsgtSrtgOrderValue` |  | |  |  |
-| `_HistoricalProfile` | | ✓ | | |
-| `_Profile` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `VarConfigurationProfileName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ConfignCharacteristicGroup` | ✓ | |  |  |  |  |
+| `VarCnfChGrpAsgtSrtgOrderValue` |  | |  |  |  |  |
+| `_HistoricalProfile` | | ✓ | | | | |
+| `_Profile` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Source Code
 

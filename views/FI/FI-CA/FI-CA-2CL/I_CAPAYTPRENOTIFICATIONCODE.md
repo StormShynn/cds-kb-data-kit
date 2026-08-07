@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPaymentPreNotificationCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as xpyor_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPaymentPreNotificationCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as xpyor_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

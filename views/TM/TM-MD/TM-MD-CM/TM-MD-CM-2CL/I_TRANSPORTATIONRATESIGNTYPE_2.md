@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateSignType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_rate_sign_ind preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateSignType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_rate_sign_ind preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

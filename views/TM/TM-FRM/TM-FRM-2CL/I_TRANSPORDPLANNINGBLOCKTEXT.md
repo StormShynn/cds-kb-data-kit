@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdPlanningBlock` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_block_planning preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspOrdPlanningBlockDesc` |  | |  | `cast(ddtext as /scmtms/vdm_block_planng_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdPlanningBlock` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdPlanningBlock` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_block_planning preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspOrdPlanningBlockDesc` |  | |  | `cast(ddtext as /scmtms/vdm_block_planng_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdPlanningBlock` | | ✓ | | | | |
 
 ## Associations
 

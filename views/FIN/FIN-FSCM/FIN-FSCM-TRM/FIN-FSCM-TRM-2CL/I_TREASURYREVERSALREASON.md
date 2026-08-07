@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryReversalReason` | ✓ | |  | `sstogrd` |
-| `_ReversalReasonText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryReversalReason` | ✓ | |  | `sstogrd` |  |  |
+| `_ReversalReasonText` | | ✓ | | | | |
 
 ## Associations
 

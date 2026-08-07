@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partnr` |
-| `BPEmploymentStartDate` | ✓ | |  | `empl_since` |
-| `BPEmploymentEndDate` |  | |  | `empl_until` |
-| `BPEmploymentStatus` |  | |  | `employment` |
-| `BusPartEmplrIndstryCode` |  | |  | `emp_sector_zgp` |
-| `BusinessPartnerEmployerName` |  | |  | `employer` |
-| `BusinessPartnerOccupationGroup` |  | |  | `jobgr_zgp` |
-| `_BusinessPartner` | | ✓ | | |
-| `_BPFinancialServicesExtn` | | ✓ | | |
-| `_BPEmploymentStatus` | | ✓ | | |
-| `_BPOccupationGroup` | | ✓ | | |
-| `_BPEmploymentIndustry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partnr` |  |  |
+| `BPEmploymentStartDate` | ✓ | |  | `empl_since` |  |  |
+| `BPEmploymentEndDate` |  | |  | `empl_until` |  |  |
+| `BPEmploymentStatus` |  | |  | `employment` |  |  |
+| `BusPartEmplrIndstryCode` |  | |  | `emp_sector_zgp` |  |  |
+| `BusinessPartnerEmployerName` |  | |  | `employer` |  |  |
+| `BusinessPartnerOccupationGroup` |  | |  | `jobgr_zgp` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BPFinancialServicesExtn` | | ✓ | | | | |
+| `_BPEmploymentStatus` | | ✓ | | | | |
+| `_BPOccupationGroup` | | ✓ | | | | |
+| `_BPEmploymentIndustry` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FundPeriodicity` | ✓ | |  | `periodicity` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FundPeriodicity` | ✓ | |  | `periodicity` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

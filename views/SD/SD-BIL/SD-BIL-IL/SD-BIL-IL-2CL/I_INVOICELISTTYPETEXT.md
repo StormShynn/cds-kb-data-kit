@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InvoiceListType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `InvoiceListTypeName` |  | |  | `cast(Text.BillingProcessDocumentTypeName as invoicelisttypename preserving type)` |
-| `_InvoiceListType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvoiceListType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `InvoiceListTypeName` |  | |  | `cast(Text.BillingProcessDocumentTypeName as invoicelisttypename preserving type)` |  |  |
+| `_InvoiceListType` | | ✓ | | | | |
 
 ## Source Code
 

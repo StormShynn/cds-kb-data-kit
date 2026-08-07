@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerClassification` | ✓ | |  | `kukla` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerClassification` | ✓ | |  | `kukla` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

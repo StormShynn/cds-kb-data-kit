@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ItemPickingIncompletionStatus` | ✓ | |  | `substring(dd07l.domvalue_l, 1, 1)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ItemPickingIncompletionStatus` | ✓ | |  | `substring(dd07l.domvalue_l, 1, 1)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

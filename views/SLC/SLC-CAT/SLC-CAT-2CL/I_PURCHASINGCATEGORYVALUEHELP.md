@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingCategory` | ✓ | |  | `cast(I_PurchasingCategory.PurchasingCategory as /srmsmc/generic_id preserving type)` |
-| `PurgCatName` |  | |  | `cast(I_PurchasingCategory.PurgCatName as /srmsmc/medium_name preserving type)` |
-| `PurgCatDescription` |  | |  | `cast(I_PurchasingCategory._PurchasingCategoryDesc[1: Language = $session.system_language].PurgCatDescription as /srmsmc/description_char60 preserving type)` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingCategory` | ✓ | |  | `cast(I_PurchasingCategory.PurchasingCategory as /srmsmc/generic_id preserving type)` |  |  |
+| `PurgCatName` |  | |  | `cast(I_PurchasingCategory.PurgCatName as /srmsmc/medium_name preserving type)` |  |  |
+| `PurgCatDescription` |  | |  | `cast(I_PurchasingCategory._PurchasingCategoryDesc[1: Language = $session.system_language].PurgCatDescription as /srmsmc/description_char60 preserving type)` |  |  |
 
 ## Source Code
 

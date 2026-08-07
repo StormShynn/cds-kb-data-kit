@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RERntblObjToUsblObjAssgmtUUID` | ✓ | |  |  |
-| `RealEstateRentableObjectUUID` |  | |  |  |
-| `RealEstateUsableObjectUUID` |  | |  |  |
-| `RealEstateUsableObjectNumber` |  | | `_REUsableObject` | `RealEstateUsableObjectNumber` |
-| `ValidityEndDate` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `_RERentableObject` | | ✓ | | |
-| `_REUsableObject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RERntblObjToUsblObjAssgmtUUID` | ✓ | |  |  |  |  |
+| `RealEstateRentableObjectUUID` |  | |  |  |  |  |
+| `RealEstateUsableObjectUUID` |  | |  |  |  |  |
+| `RealEstateUsableObjectNumber` |  | | `_REUsableObject` | `RealEstateUsableObjectNumber` |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `_RERentableObject` | | ✓ | | | | |
+| `_REUsableObject` | | ✓ | | | | |
 
 ## Associations
 

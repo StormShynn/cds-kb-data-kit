@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLRecordType` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as rrcty )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLRecordType` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as rrcty )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

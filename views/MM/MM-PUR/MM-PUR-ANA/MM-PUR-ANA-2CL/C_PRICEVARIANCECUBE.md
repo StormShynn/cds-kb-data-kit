@@ -29,53 +29,53 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  | `cast( PriceVariance.PurchaseOrder as vdm_purchaseorder )` |
-| `PurchaseOrderItem` | ✓ | |  | `cast(PriceVariance.PurchaseOrderItem as vdm_purchaseorderitem)` |
-| `PurgDocMigrtnIsCmpltdForAnlyts` | ✓ | |  |  |
-| `SuplrEvalRelevantDocCategory` | ✓ | |  |  |
-| `PurchaseOrderDate` |  | |  |  |
-| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |
-| `CalendarQuarter` |  | | `_Calendar` | `CalendarQuarter` |
-| `CalendarMonth` |  | | `_Calendar` | `CalendarMonth` |
-| `CalendarWeek` |  | | `_Calendar` | `CalendarWeek` |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |
-| `Region` |  | | `_Supplier` | `Region` |
-| `Plant` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingCategory` |  | |  |  |
-| `PurgCatName` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `Currency` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `DisplayCurrency` |  | |  |  |
-| `PriceVarianceInPct` |  | |  | `cast(PriceVarianceInPct as mm_ana_price_var_pct)` |
-| `PriceVarianceAmount` |  | |  | `cast(PriceVarianceAmount as abap.curr(13,3))` |
-| `PurchaseOrderNetPriceAmount` |  | |  | `cast(PurchaseOrderNetPriceAmount as abap.curr(13,3))` |
-| `InvoicePrice` |  | |  | `cast(InvoicePrice as abap.curr(13,3))` |
-| `DeliveredQuantity` |  | |  |  |
-| `OrderedQuantity` |  | |  |  |
-| `PriceVarianceScore` |  | |  |  |
-| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |
-| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
-| `_Material` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_SupplierRegion` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingCategory` | | ✓ | | |
-| `_PurchasingDocumentCatName` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  | `cast( PriceVariance.PurchaseOrder as vdm_purchaseorder )` |  |  |
+| `PurchaseOrderItem` | ✓ | |  | `cast(PriceVariance.PurchaseOrderItem as vdm_purchaseorderitem)` |  |  |
+| `PurgDocMigrtnIsCmpltdForAnlyts` | ✓ | |  |  |  |  |
+| `SuplrEvalRelevantDocCategory` | ✓ | |  |  |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |  |  |
+| `CalendarQuarter` |  | | `_Calendar` | `CalendarQuarter` |  |  |
+| `CalendarMonth` |  | | `_Calendar` | `CalendarMonth` |  |  |
+| `CalendarWeek` |  | | `_Calendar` | `CalendarWeek` |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |  |  |
+| `Region` |  | | `_Supplier` | `Region` |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingCategory` |  | |  |  |  |  |
+| `PurgCatName` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  |  |  |  |
+| `PriceVarianceInPct` |  | |  | `cast(PriceVarianceInPct as mm_ana_price_var_pct)` |  |  |
+| `PriceVarianceAmount` |  | |  | `cast(PriceVarianceAmount as abap.curr(13,3))` |  |  |
+| `PurchaseOrderNetPriceAmount` |  | |  | `cast(PurchaseOrderNetPriceAmount as abap.curr(13,3))` |  |  |
+| `InvoicePrice` |  | |  | `cast(InvoicePrice as abap.curr(13,3))` |  |  |
+| `DeliveredQuantity` |  | |  |  |  |  |
+| `OrderedQuantity` |  | |  |  |  |  |
+| `PriceVarianceScore` |  | |  |  |  |  |
+| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |  |  |
+| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `_Material` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_SupplierRegion` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingCategory` | | ✓ | | | | |
+| `_PurchasingDocumentCatName` | | ✓ | | | | |
 
 ## Associations
 

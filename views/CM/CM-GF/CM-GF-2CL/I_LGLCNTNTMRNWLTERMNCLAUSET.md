@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMClauseID` | ✓ | |  | `lglcntntmclauseid` |
-| `Language` | ✓ | |  | `language` |
-| `LglCntntMRnwlTermnClauseName` |  | |  | `lglcntntmclausename` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMClauseID` | ✓ | |  | `lglcntntmclauseid` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `LglCntntMRnwlTermnClauseName` |  | |  | `lglcntntmclausename` |  |  |
 
 ## Source Code
 

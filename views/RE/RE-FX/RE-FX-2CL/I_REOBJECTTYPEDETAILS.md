@@ -27,26 +27,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REStatusObject` | ✓ | |  |  |
-| `InternalRealEstateNumber` |  | |  |  |
-| `RealEstateObjectType` |  | |  |  |
-| `REIdentificationKey` |  | |  |  |
-| `REIdentification` |  | |  | `cast( concat_with_space(_REObjectTypeText.REObjectTypePrefix, REIdentificationKey,1 ) as recaident)` |
-| `REAccountingObjectName` |  | |  | `cast( concat_with_space(_REObjectTypeText.RealEstateObjectTypeName, REIdentificationKey,1 ) as recaident)` |
-| `_REKeyAssgmt` | | ✓ | | |
-| `_REContract` | | ✓ | | |
-| `_REBusinessEntity` | | ✓ | | |
-| `_REBuilding` | | ✓ | | |
-| `_REProperty` | | ✓ | | |
-| `_RERentalObject` | | ✓ | | |
-| `_RESettlementUnit` | | ✓ | | |
-| `_REIntegrationObject` | | ✓ | | |
-| `_REServiceGroup` | | ✓ | | |
-| `_REUsableObject` | | ✓ | | |
-| `_RERentableObject` | | ✓ | | |
-| `_REGenericRentalObject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REStatusObject` | ✓ | |  |  |  |  |
+| `InternalRealEstateNumber` |  | |  |  |  |  |
+| `RealEstateObjectType` |  | |  |  |  |  |
+| `REIdentificationKey` |  | |  |  |  |  |
+| `REIdentification` |  | |  | `cast( concat_with_space(_REObjectTypeText.REObjectTypePrefix, REIdentificationKey,1 ) as recaident)` |  |  |
+| `REAccountingObjectName` |  | |  | `cast( concat_with_space(_REObjectTypeText.RealEstateObjectTypeName, REIdentificationKey,1 ) as recaident)` |  |  |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_REContract` | | ✓ | | | | |
+| `_REBusinessEntity` | | ✓ | | | | |
+| `_REBuilding` | | ✓ | | | | |
+| `_REProperty` | | ✓ | | | | |
+| `_RERentalObject` | | ✓ | | | | |
+| `_RESettlementUnit` | | ✓ | | | | |
+| `_REIntegrationObject` | | ✓ | | | | |
+| `_REServiceGroup` | | ✓ | | | | |
+| `_REUsableObject` | | ✓ | | | | |
+| `_RERentableObject` | | ✓ | | | | |
+| `_REGenericRentalObject` | | ✓ | | | | |
 
 ## Associations
 

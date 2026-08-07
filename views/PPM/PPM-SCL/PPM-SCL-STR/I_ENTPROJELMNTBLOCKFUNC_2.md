@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjElementFunctionUUID` | ✓ | |  | `guid` |
-| `ProjectUUID` |  | |  | `project_guid` |
-| `ProjectElementUUID` |  | |  | `parent_object_guid` |
-| `EntProjElementFunctionID` |  | |  | `function_id` |
-| `EntProjElementFunctionIsBlkd` |  | |  | `is_blocked` |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElementFunctionUUID` | ✓ | |  | `guid` |  |  |
+| `ProjectUUID` |  | |  | `project_guid` |  |  |
+| `ProjectElementUUID` |  | |  | `parent_object_guid` |  |  |
+| `EntProjElementFunctionID` |  | |  | `function_id` |  |  |
+| `EntProjElementFunctionIsBlkd` |  | |  | `is_blocked` |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
 
 ## Source Code
 

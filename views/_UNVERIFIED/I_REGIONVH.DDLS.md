@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  |  |
-| `Region` | ✓ | |  |  |
-| `_RegionText` | | ✓ | | |
-| `_Country` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  |  |  |  |
+| `Region` | ✓ | |  |  |  |  |
+| `_RegionText` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
 
 ## Source Code
 

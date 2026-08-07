@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustMgmtObjectType` |  | |  | `crmt_subobject_category_db` |
-| `ServiceOrderUUID` |  | |  | `crmt_object_guid` |
-| `ServiceOrderDescription` |  | |  | `crmt_process_description` |
-| `ServiceOrderType` |  | |  | `crmt_process_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtObjectType` |  | |  | `crmt_subobject_category_db` |  |  |
+| `ServiceOrderUUID` |  | |  | `crmt_object_guid` |  |  |
+| `ServiceOrderDescription` |  | |  | `crmt_process_description` |  |  |
+| `ServiceOrderType` |  | |  | `crmt_process_type` |  |  |
 
 ## Source Code
 

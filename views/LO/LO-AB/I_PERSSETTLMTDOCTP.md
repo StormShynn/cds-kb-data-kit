@@ -28,76 +28,76 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PersonnelSettlementDocument` | ✓ | |  |  |
-| `SettlmtDocType` |  | |  | `}] } SettlmtDocType` |
-| `SettlmtDocCat` |  | |  | `}] } SettlmtDocCat` |
-| `SettlmtProcessType` |  | |  | `, useAsTemplate: true }] } SettlmtProcessType` |
-| `SettlmtProcessCat` |  | |  | `, useAsTemplate: true }] } SettlmtProcessCat` |
-| `LogisticsDataEntryCat` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PersSettlmtAcctgTransfSts` |  | |  | `, useAsTemplate: true }] } PersSettlmtAcctgTransfSts` |
-| `DocumentDate` |  | |  |  |
-| `DocumentReferenceID` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `SettlmtApplSts` |  | |  | `, useAsTemplate: true }] } SettlmtApplSts` |
-| `SettlmtApplStsGrp` |  | |  |  |
-| `PricingProcedure` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `PersonWorkAgreement` |  | |  |  |
-| `PersonnelCostCenter` |  | |  | `, additionalBinding: [{ localElement: 'PersonnelControllingArea', element: 'ControllingArea' }] }] } PersonnelCostCenter` |
-| `PersonnelControllingArea` |  | |  |  |
-| `CompanyCode` |  | |  | `, useAsTemplate: true }] } CompanyCode` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `PersSettlmtDocCurrency` |  | |  | `, useAsTemplate: true }] } PersSettlmtDocCurrency` |
-| `ExchangeRate` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `TotalNetAmount` |  | |  |  |
-| `PersSettlmtDocIsReversed` |  | |  |  |
-| `RvsdPersSettlmtDoc` |  | |  |  |
-| `PersSettlmtDocActivityReason` |  | |  |  |
-| `PaymentReference` |  | |  |  |
-| `CndnContrType` |  | |  |  |
-| `SettlmtReltdCndnContr` |  | |  |  |
-| `CndnContrProcVar` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `SettlmtDateCat` |  | |  |  |
-| `ActualSettlmtDate` |  | |  |  |
-| `SettlmtDateSequentialID` |  | |  |  |
-| `SettlmtDate` |  | |  |  |
-| `PersSettlmtDocIncmpltnsRsn` |  | |  |  |
-| `SettlmtBusProcVar` |  | |  |  |
-| `SettlmtBusProcCat` |  | |  | `, useAsTemplate: true }] } SettlmtBusProcCat` |
-| `TotalSettlmtQuantity` |  | |  |  |
-| `TotalSettlmtQuantityUnit` |  | |  |  |
-| `TotalSettlmtNetWeight` |  | |  |  |
-| `TotalSettlmtGrossWeight` |  | |  |  |
-| `TotalSettlmtWeightUnit` |  | |  |  |
-| `TotalSettlmtVolume` |  | |  |  |
-| `TotalSettlmtVolumeUnit` |  | |  |  |
-| `SettlmtPeriodStartDate` |  | |  |  |
-| `SettlmtPeriodEndDate` |  | |  |  |
-| `CndnContrProcessCategory` |  | |  |  |
-| `PostingPartnerCat` |  | |  |  |
-| `JournalEntryCreationDate` |  | |  |  |
-| `JournalEntryCreationTime` |  | |  |  |
-| `SettlmtCompensationReason` |  | |  |  |
-| `SettlmtCompnVar` |  | |  |  |
-| `ApplElmntBehaviorGrp` |  | |  |  |
-| `PersSettlmtDocChangeState` |  | |  |  |
-| `_PersonWorkAgreement` | | ✓ | | |
-| `_PersSettlmtDocItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonnelSettlementDocument` | ✓ | |  |  |  |  |
+| `SettlmtDocType` |  | |  |  |  |  |
+| `SettlmtDocCat` |  | |  |  |  |  |
+| `SettlmtProcessType` |  | |  |  |  |  |
+| `SettlmtProcessCat` |  | |  |  |  |  |
+| `LogisticsDataEntryCat` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PersSettlmtAcctgTransfSts` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `DocumentReferenceID` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `SettlmtApplSts` |  | |  |  |  |  |
+| `SettlmtApplStsGrp` |  | |  |  |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `PersonWorkAgreement` |  | |  |  |  |  |
+| `PersonnelCostCenter` |  | |  |  |  |  |
+| `PersonnelControllingArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `PersSettlmtDocCurrency` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `TotalNetAmount` |  | |  |  |  |  |
+| `PersSettlmtDocIsReversed` |  | |  |  |  |  |
+| `RvsdPersSettlmtDoc` |  | |  |  |  |  |
+| `PersSettlmtDocActivityReason` |  | |  |  |  |  |
+| `PaymentReference` |  | |  |  |  |  |
+| `CndnContrType` |  | |  |  |  |  |
+| `SettlmtReltdCndnContr` |  | |  |  |  |  |
+| `CndnContrProcVar` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `SettlmtDateCat` |  | |  |  |  |  |
+| `ActualSettlmtDate` |  | |  |  |  |  |
+| `SettlmtDateSequentialID` |  | |  |  |  |  |
+| `SettlmtDate` |  | |  |  |  |  |
+| `PersSettlmtDocIncmpltnsRsn` |  | |  |  |  |  |
+| `SettlmtBusProcVar` |  | |  |  |  |  |
+| `SettlmtBusProcCat` |  | |  |  |  |  |
+| `TotalSettlmtQuantity` |  | |  |  |  |  |
+| `TotalSettlmtQuantityUnit` |  | |  |  |  |  |
+| `TotalSettlmtNetWeight` |  | |  |  |  |  |
+| `TotalSettlmtGrossWeight` |  | |  |  |  |  |
+| `TotalSettlmtWeightUnit` |  | |  |  |  |  |
+| `TotalSettlmtVolume` |  | |  |  |  |  |
+| `TotalSettlmtVolumeUnit` |  | |  |  |  |  |
+| `SettlmtPeriodStartDate` |  | |  |  |  |  |
+| `SettlmtPeriodEndDate` |  | |  |  |  |  |
+| `CndnContrProcessCategory` |  | |  |  |  |  |
+| `PostingPartnerCat` |  | |  |  |  |  |
+| `JournalEntryCreationDate` |  | |  |  |  |  |
+| `JournalEntryCreationTime` |  | |  |  |  |  |
+| `SettlmtCompensationReason` |  | |  |  |  |  |
+| `SettlmtCompnVar` |  | |  |  |  |  |
+| `ApplElmntBehaviorGrp` |  | |  |  |  |  |
+| `PersSettlmtDocChangeState` |  | |  |  |  |  |
+| `_PersonWorkAgreement` | | ✓ | | | | |
+| `_PersSettlmtDocItem` | | ✓ | | | | |
 
 ## Source Code
 

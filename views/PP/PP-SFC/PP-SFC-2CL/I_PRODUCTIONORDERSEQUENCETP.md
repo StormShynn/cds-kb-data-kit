@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionOrder` | ✓ | |  |  |
-| `ProductionOrderSequence` | ✓ | |  |  |
-| `OrderInternalID` |  | |  |  |
-| `SequenceInternalID` |  | |  |  |
-| `SequenceText` |  | |  |  |
-| `SequenceHasLongText` |  | |  |  |
-| `LongTextLanguage` |  | |  |  |
-| `SequenceBranchOperation` |  | |  |  |
-| `SequenceReturnOperation` |  | |  |  |
-| `SequenceCategory` |  | |  |  |
-| `ReferenceSequence` |  | |  |  |
-| `SequenceSchedulingAlignment` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `BillOfOperationsUnit` |  | |  |  |
-| `MinimumLotSizeQuantity` |  | |  |  |
-| `MaximumLotSizeQuantity` |  | |  |  |
-| `_ProductionOrder` | | ✓ | | |
-| `_Operation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionOrder` | ✓ | |  |  |  |  |
+| `ProductionOrderSequence` | ✓ | |  |  |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `SequenceInternalID` |  | |  |  |  |  |
+| `SequenceText` |  | |  |  |  |  |
+| `SequenceHasLongText` |  | |  |  |  |  |
+| `LongTextLanguage` |  | |  |  |  |  |
+| `SequenceBranchOperation` |  | |  |  |  |  |
+| `SequenceReturnOperation` |  | |  |  |  |  |
+| `SequenceCategory` |  | |  |  |  |  |
+| `ReferenceSequence` |  | |  |  |  |  |
+| `SequenceSchedulingAlignment` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `BillOfOperationsUnit` |  | |  |  |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |  |  |
+| `_ProductionOrder` | | ✓ | | | | |
+| `_Operation` | | ✓ | | | | |
 
 ## Source Code
 

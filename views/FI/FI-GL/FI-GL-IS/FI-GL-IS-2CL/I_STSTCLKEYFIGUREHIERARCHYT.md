@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `hrycls` |
-| `StatisticalKeyFigureHierarchy` | ✓ | |  | `hryid_42` |
-| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `StatKeyFigureHierarchyName` |  | |  | `hrytxt` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `hrycls` |  |  |
+| `StatisticalKeyFigureHierarchy` | ✓ | |  | `hryid_42` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |  |  |
+| `StatKeyFigureHierarchyName` |  | |  | `hrytxt` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

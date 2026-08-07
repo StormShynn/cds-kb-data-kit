@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `SalesDistrict` | ✓ | | `_Text` | `SalesDistrict` |
-| `SalesDistrictName` |  | | `_Text` | `SalesDistrictName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnSalesDistrictTP` |  | |  | `_SalesDistrict as _SalesDistrict : redirected to parent I_CnsldtnSalesDistrictTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `SalesDistrict` | ✓ | | `_Text` | `SalesDistrict` |  |  |
+| `SalesDistrictName` |  | | `_Text` | `SalesDistrictName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnSalesDistrictTP` |  | |  | `_SalesDistrict as _SalesDistrict : redirected to parent I_CnsldtnSalesDistrictTP` |  |  |
 
 ## Source Code
 

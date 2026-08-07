@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `ProdQltyManagementControlKey` |  | |  |  |
-| `HasPostToInspectionStock` |  | |  |  |
-| `InspLotDocumentationIsRequired` |  | |  |  |
-| `QualityMgmtSystemForSupplier` |  | |  |  |
-| `RecrrgInspIntervalTimeInDays` |  | |  |  |
-| `ProductQualityCertificateType` |  | |  |  |
-| `ProdQualityAuthorizationGroup` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ProdQltyManagementControlKey` |  | |  |  |  |  |
+| `HasPostToInspectionStock` |  | |  |  |  |  |
+| `InspLotDocumentationIsRequired` |  | |  |  |  |  |
+| `QualityMgmtSystemForSupplier` |  | |  |  |  |  |
+| `RecrrgInspIntervalTimeInDays` |  | |  |  |  |  |
+| `ProductQualityCertificateType` |  | |  |  |  |  |
+| `ProdQualityAuthorizationGroup` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Source Code
 

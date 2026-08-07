@@ -27,37 +27,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SettlmtDocType` | ✓ | |  |  |
-| `SAPObjectType` |  | |  |  |
-| `SettlmtDocCat` |  | |  |  |
-| `SettlmtCat` |  | |  |  |
-| `SettlmtBusProcVar` |  | |  |  |
-| `SettlmtBusProcCat` |  | |  |  |
-| `SettlmtRptgDisplayVariant` |  | |  |  |
-| `SettlmtMgmtPrcgApplCat` |  | |  |  |
-| `SettlmtTxCodeTxTypeChkCat` |  | |  |  |
-| `SettlmtDataXtrctnCat` |  | |  |  |
-| `SettlmtHdrTxtDetnProced` |  | |  |  |
-| `SettlmtItmTxtDetnProced` |  | |  |  |
-| `JournalEntryType` |  | |  |  |
-| `AltvJournalEntryType` |  | |  |  |
-| `SettlmtDocTypeOfCollection` |  | |  |  |
-| `SettlmtMgmtDocItemDistrCat` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_SettlmtDocCat` | | ✓ | | |
-| `_SettlmtCat` | | ✓ | | |
-| `_SettlmtBusProcVar` | | ✓ | | |
-| `_SettlmtBusProcCat` | | ✓ | | |
-| `_SettlmtRptgDisplayVariant` | | ✓ | | |
-| `_SettlmtMgmtPrcgApplCat` | | ✓ | | |
-| `_SettlmtTxCodeTxTypeChkCat` | | ✓ | | |
-| `_SettlmtHdrTxtDetnProced` | | ✓ | | |
-| `_SettlmtItmTxtDetnProced` | | ✓ | | |
-| `_SettlmtDocTypeOfCollection` | | ✓ | | |
-| `_SettlmtMgmtDocItemDistrCat` | | ✓ | | |
-| `_SettlmtDataXtrctnCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocType` | ✓ | |  |  |  |  |
+| `SAPObjectType` |  | |  |  |  |  |
+| `SettlmtDocCat` |  | |  |  |  |  |
+| `SettlmtCat` |  | |  |  |  |  |
+| `SettlmtBusProcVar` |  | |  |  |  |  |
+| `SettlmtBusProcCat` |  | |  |  |  |  |
+| `SettlmtRptgDisplayVariant` |  | |  |  |  |  |
+| `SettlmtMgmtPrcgApplCat` |  | |  |  |  |  |
+| `SettlmtTxCodeTxTypeChkCat` |  | |  |  |  |  |
+| `SettlmtDataXtrctnCat` |  | |  |  |  |  |
+| `SettlmtHdrTxtDetnProced` |  | |  |  |  |  |
+| `SettlmtItmTxtDetnProced` |  | |  |  |  |  |
+| `JournalEntryType` |  | |  |  |  |  |
+| `AltvJournalEntryType` |  | |  |  |  |  |
+| `SettlmtDocTypeOfCollection` |  | |  |  |  |  |
+| `SettlmtMgmtDocItemDistrCat` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SettlmtDocCat` | | ✓ | | | | |
+| `_SettlmtCat` | | ✓ | | | | |
+| `_SettlmtBusProcVar` | | ✓ | | | | |
+| `_SettlmtBusProcCat` | | ✓ | | | | |
+| `_SettlmtRptgDisplayVariant` | | ✓ | | | | |
+| `_SettlmtMgmtPrcgApplCat` | | ✓ | | | | |
+| `_SettlmtTxCodeTxTypeChkCat` | | ✓ | | | | |
+| `_SettlmtHdrTxtDetnProced` | | ✓ | | | | |
+| `_SettlmtItmTxtDetnProced` | | ✓ | | | | |
+| `_SettlmtDocTypeOfCollection` | | ✓ | | | | |
+| `_SettlmtMgmtDocItemDistrCat` | | ✓ | | | | |
+| `_SettlmtDataXtrctnCat` | | ✓ | | | | |
 
 ## Associations
 

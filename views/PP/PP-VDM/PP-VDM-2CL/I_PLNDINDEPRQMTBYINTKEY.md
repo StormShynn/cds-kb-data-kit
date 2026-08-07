@@ -27,48 +27,48 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlndIndepRqmtInternalID` | ✓ | |  | `bdzei` |
-| `PlndIndepRqmtVersion` |  | |  | `versb` |
-| `Product` |  | |  | `matnr` |
-| `Plant` |  | |  | `werks` |
-| `MRPArea` |  | |  | `cast(werks as berid)` |
-| `PlndIndepRqmtType` |  | |  | `cast(bedae as pph_bedae preserving type)` |
-| `RequirementPlan` |  | |  | `pbdnr` |
-| `ExternalRequirementPlan` |  | |  | `pbdnr_ext` |
-| `RequirementSegment` |  | |  | `sgt_rcat` |
-| `PlndIndepRqmtConsumptionStrgy` |  | |  | `zuvkz` |
-| `PlndIndepRqmtIsActive` |  | |  | `cast(vervs as pph_vervs preserving type)` |
-| `PlndIndepRqmtConsumptionAssgmt` |  | |  | `cast(verkz as pph_vervp preserving type)` |
-| `PlndIndepRqmtUsage` |  | |  | `plnkz` |
-| `PlndIndepRqmtIsToBeDeleted` |  | |  | `cast(case loevr when '' then '' else 'X' end as pph_loevr preserving type)` |
-| `PlannedIndepRqmtDeletionCode` |  | |  | `loevr` |
-| `SalesOrder` |  | |  | `kdauf` |
-| `SalesOrderItem` |  | |  | `cast(kdpos as co_kdpos preserving type)` |
-| `WBSElementInternalID` |  | |  | `pspel` |
-| `WBSElementInternalID_2` |  | |  | `cast(pspel as ps_s4_pspnr preserving type)` |
-| `InventorySpecialStockType` |  | |  | `cast(sobkz as pph_sobkz preserving type)` |
-| `InventorySpecialStockValnType` |  | |  | `cast(kzbws as pph_kzbws preserving type)` |
-| `ConsumptionPosting` |  | |  | `cast(kzvbr as pph_kzvbr preserving type)` |
-| `AccountAssignmentCategory` |  | |  | `cast(knttp as pph_knttp preserving type)` |
-| `PlndIndepRqmtLastChgdDateTime` |  | |  | `cast(lastchangedts as vdm_lastchangedatetime preserving type)` |
-| `_PlndIndepRqmtItem` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductPlant2` | | ✓ | | |
-| `_ProductMRPArea` | | ✓ | | |
-| `_MRPArea` | | ✓ | | |
-| `_PlndIndepRqmtType` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_WBSElementBasic` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_InventorySpecialStockValnType` | | ✓ | | |
-| `_ConsumptionPosting` | | ✓ | | |
-| `_AccountAssignmentCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlndIndepRqmtInternalID` | ✓ | |  | `bdzei` |  |  |
+| `PlndIndepRqmtVersion` |  | |  | `versb` |  |  |
+| `Product` |  | |  | `matnr` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `MRPArea` |  | |  | `cast(werks as berid)` |  |  |
+| `PlndIndepRqmtType` |  | |  | `cast(bedae as pph_bedae preserving type)` |  |  |
+| `RequirementPlan` |  | |  | `pbdnr` |  |  |
+| `ExternalRequirementPlan` |  | |  | `pbdnr_ext` |  |  |
+| `RequirementSegment` |  | |  | `sgt_rcat` |  |  |
+| `PlndIndepRqmtConsumptionStrgy` |  | |  | `zuvkz` |  |  |
+| `PlndIndepRqmtIsActive` |  | |  | `cast(vervs as pph_vervs preserving type)` |  |  |
+| `PlndIndepRqmtConsumptionAssgmt` |  | |  | `cast(verkz as pph_vervp preserving type)` |  |  |
+| `PlndIndepRqmtUsage` |  | |  | `plnkz` |  |  |
+| `PlndIndepRqmtIsToBeDeleted` |  | |  | `cast(case loevr when '' then '' else 'X' end as pph_loevr preserving type)` |  |  |
+| `PlannedIndepRqmtDeletionCode` |  | |  | `loevr` |  |  |
+| `SalesOrder` |  | |  | `kdauf` |  |  |
+| `SalesOrderItem` |  | |  | `cast(kdpos as co_kdpos preserving type)` |  |  |
+| `WBSElementInternalID` |  | |  | `pspel` |  |  |
+| `WBSElementInternalID_2` |  | |  | `cast(pspel as ps_s4_pspnr preserving type)` |  |  |
+| `InventorySpecialStockType` |  | |  | `cast(sobkz as pph_sobkz preserving type)` |  |  |
+| `InventorySpecialStockValnType` |  | |  | `cast(kzbws as pph_kzbws preserving type)` |  |  |
+| `ConsumptionPosting` |  | |  | `cast(kzvbr as pph_kzvbr preserving type)` |  |  |
+| `AccountAssignmentCategory` |  | |  | `cast(knttp as pph_knttp preserving type)` |  |  |
+| `PlndIndepRqmtLastChgdDateTime` |  | |  | `cast(lastchangedts as vdm_lastchangedatetime preserving type)` |  |  |
+| `_PlndIndepRqmtItem` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductPlant2` | | ✓ | | | | |
+| `_ProductMRPArea` | | ✓ | | | | |
+| `_MRPArea` | | ✓ | | | | |
+| `_PlndIndepRqmtType` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementBasic` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_InventorySpecialStockValnType` | | ✓ | | | | |
+| `_ConsumptionPosting` | | ✓ | | | | |
+| `_AccountAssignmentCategory` | | ✓ | | | | |
 
 ## Associations
 

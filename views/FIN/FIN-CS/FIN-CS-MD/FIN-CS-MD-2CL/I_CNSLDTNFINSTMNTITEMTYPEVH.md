@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationFSItemType` | ✓ | |  |  |
-| `ConsolidationFSItemTypeText` |  | |  | `cast(_Text[1: Language=$session.system_language].ConsolidationFSItemTypeText as fincs_description_text_60 preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationFSItemType` | ✓ | |  |  |  |  |
+| `ConsolidationFSItemTypeText` |  | |  | `cast(_Text[1: Language=$session.system_language].ConsolidationFSItemTypeText as fincs_description_text_60 preserving type )` |  |  |
 
 ## Source Code
 

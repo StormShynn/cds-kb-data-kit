@@ -28,35 +28,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationVersion` | ✓ | |  | `cast ( _tf200.rvers as fincs_consolidationversion preserving type )` |
-| `ConsolidationInvestmentVersion` |  | |  | `cast ( _tf200.invvs as fincs_investmentversion preserving type )` |
-| `ConsolidationStructureVersion` |  | |  | `cast ( _tf200.strvs as fincs_structureversion preserving type )` |
-| `ConsolidationDataEntryVersion` |  | |  | `cast ( _tf200.inpvs as fincs_dataentryversion preserving type )` |
-| `ConsolidationLedgerVersion` |  | |  | `cast ( _tf200.ldrvs as fincs_ledgerversion preserving type )` |
-| `ConsolidationTaxRateVersion` |  | |  | `cast ( _tf200.taxvs as fincs_taxrateversion preserving type )` |
-| `ConsolidationReportingRuleVers` |  | |  | `cast ( _tf200.rrlvs as fincs_reportingruleversion preserving type )` |
-| `CnsldtnFSItemAttributeVersion` |  | |  | `cast ( _tf200.iatvs as fincs_fsitemattributeversion preserving type )` |
-| `CnsldtnUnitAttributeVersion` |  | |  | `cast ( _tf200.cuavs as fincs_cnsldtnunitattributevers preserving type )` |
-| `FSItemMappingVersion` |  | |  | `cast ( _tf200.impvs as fincs_fsitemmappingversion preserving type )` |
-| `FiscalYearVariant` |  | |  | `cast ( case _tf200.periv when '' then 'K4' else _tf200.periv end as fincs_fiscalyearvariant preserving type )` |
-| `CnsldtnIsPlanVersion` |  | |  | `cast ( _tf200.planvers as fincs_isplanningversion preserving type )` |
-| `ConsolidationLedger` |  | |  | `cast ( _tf200.rldnr_cons as fincs_consolidationledger preserving type )` |
-| `GroupCurrency` |  | |  | `cast ( _tf200.group_curr as fincs_md_groupcurrency preserving type )` |
-| `CnsldtnSourceLedger` |  | |  | `cast ( _tf200.rldnr_source as fincs_sourceledger preserving type )` |
-| `CnsldtnVersionType` |  | |  | `cast ( _tf200.ext_version_type as fincs_cnsldtnversiontype preserving type )` |
-| `CnsldtnReferenceVersion` |  | |  | `cast ( _tf200.ref_version as fincs_cnsldtnreferenceversion preserving type )` |
-| `CnsldtnAccountingSourceLedger` |  | |  | `cast ( _tf200.rldnr_source_acc_int as fincs_rldnr_source_acc_int preserving type )` |
-| `CnsldtnVersionGroupCrcySource` |  | |  | `cast ( _tf200.source_kf_gc as fincs_group_curr_source preserving type )` |
-| `CnsldtnSourcePlanCategory` |  | |  | `cast ( _tf200.category_src as fincs_category_src preserving type )` |
-| `CnsldtnVersionRunMode` |  | |  | `cast ( _tf200.exec_mode as fincs_versionrunmode preserving type )` |
-| `CnsldtnVersionHasAllKeyFigures` |  | |  | `cast ( _tf200.ext_vers_all_kf as fincs_versionhasallkeyfigures preserving type )` |
-| `CnsldtnVersionLocalCrcySource` |  | |  | `cast ( _tf200.source_kf_lc as fincs_local_curr_source preserving type )` |
-| `CnsldtnVersionQuantitySource` |  | |  | `cast ( _tf200.source_kf_qty as fincs_quantity_source preserving type )` |
-| `CnsldtnSelectedFSItemsVersion` |  | |  | `cast ( _tf200.fixvs as fincs_selectedfsitemsversion preserving type )` |
-| `CnsldtnReclassificationVersion` |  | |  | `cast ( _tf200.rclvs as fincs_reclassificationversion preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationVersion` | ✓ | |  | `cast ( _tf200.rvers as fincs_consolidationversion preserving type )` |  |  |
+| `ConsolidationInvestmentVersion` |  | |  | `cast ( _tf200.invvs as fincs_investmentversion preserving type )` |  |  |
+| `ConsolidationStructureVersion` |  | |  | `cast ( _tf200.strvs as fincs_structureversion preserving type )` |  |  |
+| `ConsolidationDataEntryVersion` |  | |  | `cast ( _tf200.inpvs as fincs_dataentryversion preserving type )` |  |  |
+| `ConsolidationLedgerVersion` |  | |  | `cast ( _tf200.ldrvs as fincs_ledgerversion preserving type )` |  |  |
+| `ConsolidationTaxRateVersion` |  | |  | `cast ( _tf200.taxvs as fincs_taxrateversion preserving type )` |  |  |
+| `ConsolidationReportingRuleVers` |  | |  | `cast ( _tf200.rrlvs as fincs_reportingruleversion preserving type )` |  |  |
+| `CnsldtnFSItemAttributeVersion` |  | |  | `cast ( _tf200.iatvs as fincs_fsitemattributeversion preserving type )` |  |  |
+| `CnsldtnUnitAttributeVersion` |  | |  | `cast ( _tf200.cuavs as fincs_cnsldtnunitattributevers preserving type )` |  |  |
+| `FSItemMappingVersion` |  | |  | `cast ( _tf200.impvs as fincs_fsitemmappingversion preserving type )` |  |  |
+| `FiscalYearVariant` |  | |  | `cast ( case _tf200.periv when '' then 'K4' else _tf200.periv end as fincs_fiscalyearvariant preserving type )` |  |  |
+| `CnsldtnIsPlanVersion` |  | |  | `cast ( _tf200.planvers as fincs_isplanningversion preserving type )` |  |  |
+| `ConsolidationLedger` |  | |  | `cast ( _tf200.rldnr_cons as fincs_consolidationledger preserving type )` |  |  |
+| `GroupCurrency` |  | |  | `cast ( _tf200.group_curr as fincs_md_groupcurrency preserving type )` |  |  |
+| `CnsldtnSourceLedger` |  | |  | `cast ( _tf200.rldnr_source as fincs_sourceledger preserving type )` |  |  |
+| `CnsldtnVersionType` |  | |  | `cast ( _tf200.ext_version_type as fincs_cnsldtnversiontype preserving type )` |  |  |
+| `CnsldtnReferenceVersion` |  | |  | `cast ( _tf200.ref_version as fincs_cnsldtnreferenceversion preserving type )` |  |  |
+| `CnsldtnAccountingSourceLedger` |  | |  | `cast ( _tf200.rldnr_source_acc_int as fincs_rldnr_source_acc_int preserving type )` |  |  |
+| `CnsldtnVersionGroupCrcySource` |  | |  | `cast ( _tf200.source_kf_gc as fincs_group_curr_source preserving type )` |  |  |
+| `CnsldtnSourcePlanCategory` |  | |  | `cast ( _tf200.category_src as fincs_category_src preserving type )` |  |  |
+| `CnsldtnVersionRunMode` |  | |  | `cast ( _tf200.exec_mode as fincs_versionrunmode preserving type )` |  |  |
+| `CnsldtnVersionHasAllKeyFigures` |  | |  | `cast ( _tf200.ext_vers_all_kf as fincs_versionhasallkeyfigures preserving type )` |  |  |
+| `CnsldtnVersionLocalCrcySource` |  | |  | `cast ( _tf200.source_kf_lc as fincs_local_curr_source preserving type )` |  |  |
+| `CnsldtnVersionQuantitySource` |  | |  | `cast ( _tf200.source_kf_qty as fincs_quantity_source preserving type )` |  |  |
+| `CnsldtnSelectedFSItemsVersion` |  | |  | `cast ( _tf200.fixvs as fincs_selectedfsitemsversion preserving type )` |  |  |
+| `CnsldtnReclassificationVersion` |  | |  | `cast ( _tf200.rclvs as fincs_reclassificationversion preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

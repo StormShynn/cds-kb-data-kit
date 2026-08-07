@@ -30,101 +30,101 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `cast (mvke.matnr as productnumber preserving type )` |
-| `ProductSalesOrg` | ✓ | |  | `vkorg` |
-| `ProductDistributionChnl` | ✓ | |  | `vtweg` |
-| `MinimumOrderQuantity` |  | |  | `aumng` |
-| `SupplyingPlant` |  | |  | `dwerk` |
-| `PriceSpecificationProductGroup` |  | |  | `cast (mvke.kondm as pricespecificationproductgroup preserving type )` |
-| `AccountDetnProductGroup` |  | |  | `ktgrm` |
-| `DeliveryNoteProcMinDelivQty` |  | |  | `lfmng` |
-| `ItemCategoryGroup` |  | |  | `mtpos` |
-| `DeliveryQuantityUnit` |  | |  | `schme` |
-| `DeliveryQuantity` |  | |  | `scmng` |
-| `ProductSalesStatus` |  | |  | `vmsta` |
-| `ProductSalesStatusValidityDate` |  | |  | `vmstd` |
-| `SalesMeasureUnit` |  | |  | `vrkme` |
-| `IsMarkedForDeletion` |  | |  | `lvorm` |
-| `ProductHierarchy` |  | |  | `prodh` |
-| `FirstSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr1 as firstsalesspecproductgroup preserving type )` |
-| `SecondSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr2 as secondsalesspecproductgroup preserving type )` |
-| `ThirdSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr3 as thirdsalesspecproductgroup preserving type )` |
-| `FourthSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr4 as fourthsalesspecproductgroup preserving type )` |
-| `FifthSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr5 as fifthsalesspecproductgroup preserving type )` |
-| `MinimumMakeToOrderOrderQty` |  | |  | `efmng` |
-| `LogisticsStatisticsGroup` |  | |  | `versg` |
-| `VolumeRebateGroup` |  | |  | `bonus` |
-| `ProductCommissionGroup` |  | |  | `provg` |
-| `CashDiscountIsDeductible` |  | |  | `sktof` |
-| `PricingReferenceProduct` |  | |  | `pmatn` |
-| `AssortmentGrade` |  | |  | `sstuf` |
-| `StoreListingProcedure` |  | |  | `lstfl` |
-| `DistrCntrListingProcedure` |  | |  | `lstvz` |
-| `StoreListingStartDate` |  | |  | `cast(mvke.ldvfl as storelistingstartdate )` |
-| `StoreListingEndDate` |  | |  | `cast(mvke.ldbfl as storelistingenddate )` |
-| `DistrCntrListingStartDate` |  | |  | `cast(mvke.ldvzl as distrcntrlistingstartdate )` |
-| `DistrCntrListingEndDate` |  | |  | `cast(mvke.ldbzl as distrcntrlistingenddate )` |
-| `StoreSaleStartDate` |  | |  | `cast (mvke.vdvfl as storesalestartdate )` |
-| `StoreSaleEndDate` |  | |  | `cast(mvke.vdbfl as storesaleenddate )` |
-| `DistrCntrSaleStartDate` |  | |  | `cast (mvke.vdvzl as distrcntrsalestartdate )` |
-| `DistrCntrSaleEndDate` |  | |  | `cast(mvke.vdbzl as distrcntrsaleenddate )` |
-| `RoundingProfile` |  | |  | `rdprf` |
-| `ProductUnitGroup` |  | |  | `megru` |
-| `MaxDeliveryQtyStoreOrder` |  | |  | `lfmax` |
-| `PriceFixingCategory` |  | |  | `pbind` |
-| `VariableSalesUnitIsNotAllowed` |  | |  | `vavme` |
-| `CompetitionPressureCategory` |  | |  | `matkc` |
-| `ProductHasAttributeID01` |  | |  | `cast( mvke.prat1 as producthasattributeid01 preserving type )` |
-| `ProductHasAttributeID02` |  | |  | `cast( mvke.prat2 as producthasattributeid02 preserving type )` |
-| `ProductHasAttributeID03` |  | |  | `cast( mvke.prat3 as producthasattributeid03 preserving type )` |
-| `ProductHasAttributeID04` |  | |  | `cast( mvke.prat4 as producthasattributeid04 preserving type )` |
-| `ProductHasAttributeID05` |  | |  | `cast( mvke.prat5 as producthasattributeid05 preserving type )` |
-| `ProductHasAttributeID06` |  | |  | `cast( mvke.prat6 as producthasattributeid06 preserving type )` |
-| `ProductHasAttributeID07` |  | |  | `cast( mvke.prat7 as producthasattributeid07 preserving type )` |
-| `ProductHasAttributeID08` |  | |  | `cast( mvke.prat8 as producthasattributeid08 preserving type )` |
-| `ProductHasAttributeID09` |  | |  | `cast( mvke.prat9 as producthasattributeid09 preserving type )` |
-| `ProductHasAttributeID10` |  | |  | `cast( mvke.prata as producthasattributeid10 preserving type )` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `ProdExtAssortmentPriority` |  | |  | `pflks` |
-| `ProdIsEntlmntRlvt` |  | |  | `is_entlmnt_rlvt` |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `_Product` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_MaterialPricingGroup` | | ✓ | | |
-| `_MaterialPricingGroupText` | | ✓ | | |
-| `_ItemCategoryGroup` | | ✓ | | |
-| `_ItemCategoryGroupText` | | ✓ | | |
-| `_AssortmentGrade` | | ✓ | | |
-| `_AssortmentGradeT` | | ✓ | | |
-| `_ProdExtAssortmentPriority` | | ✓ | | |
-| `_ProdExtAssortmentPriorityText` | | ✓ | | |
-| `_ProductCommissionGroup` | | ✓ | | |
-| `_ProductCommissionGroupText` | | ✓ | | |
-| `_ProductSalesStatus` | | ✓ | | |
-| `_ProductSalesStatusText` | | ✓ | | |
-| `_DeliveryQuantityUnit` | | ✓ | | |
-| `_DeliveryQuantityUnitText` | | ✓ | | |
-| `_SalesUnit` | | ✓ | | |
-| `_SalesUnitText` | | ✓ | | |
-| `_SalesOrganizationText` | | ✓ | | |
-| `_StoreListingProcedure` | | ✓ | | |
-| `_StoreListingProcedureT` | | ✓ | | |
-| `_DistrCntrListingProcedure` | | ✓ | | |
-| `_DistrCntrListingProcedureT` | | ✓ | | |
-| `_MatlAccountAssignmentGroup` | | ✓ | | |
-| `_MatlAccountAssignmentGroupT` | | ✓ | | |
-| `_PriceFixingCategory` | | ✓ | | |
-| `_PriceFixingCategoryText` | | ✓ | | |
-| `_CompetitionPressureCategory` | | ✓ | | |
-| `_CompetitionPressureCategoryT` | | ✓ | | |
-| `_MaterialStatisticsGroup` | | ✓ | | |
-| `_MaterialStatisticsGroupText` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
-| `_PricingReferenceProduct` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast (mvke.matnr as productnumber preserving type )` |  |  |
+| `ProductSalesOrg` | ✓ | |  | `vkorg` |  |  |
+| `ProductDistributionChnl` | ✓ | |  | `vtweg` |  |  |
+| `MinimumOrderQuantity` |  | |  | `aumng` |  |  |
+| `SupplyingPlant` |  | |  | `dwerk` |  |  |
+| `PriceSpecificationProductGroup` |  | |  | `cast (mvke.kondm as pricespecificationproductgroup preserving type )` |  |  |
+| `AccountDetnProductGroup` |  | |  | `ktgrm` |  |  |
+| `DeliveryNoteProcMinDelivQty` |  | |  | `lfmng` |  |  |
+| `ItemCategoryGroup` |  | |  | `mtpos` |  |  |
+| `DeliveryQuantityUnit` |  | |  | `schme` |  |  |
+| `DeliveryQuantity` |  | |  | `scmng` |  |  |
+| `ProductSalesStatus` |  | |  | `vmsta` |  |  |
+| `ProductSalesStatusValidityDate` |  | |  | `vmstd` |  |  |
+| `SalesMeasureUnit` |  | |  | `vrkme` |  |  |
+| `IsMarkedForDeletion` |  | |  | `lvorm` |  |  |
+| `ProductHierarchy` |  | |  | `prodh` |  |  |
+| `FirstSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr1 as firstsalesspecproductgroup preserving type )` |  |  |
+| `SecondSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr2 as secondsalesspecproductgroup preserving type )` |  |  |
+| `ThirdSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr3 as thirdsalesspecproductgroup preserving type )` |  |  |
+| `FourthSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr4 as fourthsalesspecproductgroup preserving type )` |  |  |
+| `FifthSalesSpecProductGroup` |  | |  | `cast (mvke.mvgr5 as fifthsalesspecproductgroup preserving type )` |  |  |
+| `MinimumMakeToOrderOrderQty` |  | |  | `efmng` |  |  |
+| `LogisticsStatisticsGroup` |  | |  | `versg` |  |  |
+| `VolumeRebateGroup` |  | |  | `bonus` |  |  |
+| `ProductCommissionGroup` |  | |  | `provg` |  |  |
+| `CashDiscountIsDeductible` |  | |  | `sktof` |  |  |
+| `PricingReferenceProduct` |  | |  | `pmatn` |  |  |
+| `AssortmentGrade` |  | |  | `sstuf` |  |  |
+| `StoreListingProcedure` |  | |  | `lstfl` |  |  |
+| `DistrCntrListingProcedure` |  | |  | `lstvz` |  |  |
+| `StoreListingStartDate` |  | |  | `cast(mvke.ldvfl as storelistingstartdate )` |  |  |
+| `StoreListingEndDate` |  | |  | `cast(mvke.ldbfl as storelistingenddate )` |  |  |
+| `DistrCntrListingStartDate` |  | |  | `cast(mvke.ldvzl as distrcntrlistingstartdate )` |  |  |
+| `DistrCntrListingEndDate` |  | |  | `cast(mvke.ldbzl as distrcntrlistingenddate )` |  |  |
+| `StoreSaleStartDate` |  | |  | `cast (mvke.vdvfl as storesalestartdate )` |  |  |
+| `StoreSaleEndDate` |  | |  | `cast(mvke.vdbfl as storesaleenddate )` |  |  |
+| `DistrCntrSaleStartDate` |  | |  | `cast (mvke.vdvzl as distrcntrsalestartdate )` |  |  |
+| `DistrCntrSaleEndDate` |  | |  | `cast(mvke.vdbzl as distrcntrsaleenddate )` |  |  |
+| `RoundingProfile` |  | |  | `rdprf` |  |  |
+| `ProductUnitGroup` |  | |  | `megru` |  |  |
+| `MaxDeliveryQtyStoreOrder` |  | |  | `lfmax` |  |  |
+| `PriceFixingCategory` |  | |  | `pbind` |  |  |
+| `VariableSalesUnitIsNotAllowed` |  | |  | `vavme` |  |  |
+| `CompetitionPressureCategory` |  | |  | `matkc` |  |  |
+| `ProductHasAttributeID01` |  | |  | `cast( mvke.prat1 as producthasattributeid01 preserving type )` |  |  |
+| `ProductHasAttributeID02` |  | |  | `cast( mvke.prat2 as producthasattributeid02 preserving type )` |  |  |
+| `ProductHasAttributeID03` |  | |  | `cast( mvke.prat3 as producthasattributeid03 preserving type )` |  |  |
+| `ProductHasAttributeID04` |  | |  | `cast( mvke.prat4 as producthasattributeid04 preserving type )` |  |  |
+| `ProductHasAttributeID05` |  | |  | `cast( mvke.prat5 as producthasattributeid05 preserving type )` |  |  |
+| `ProductHasAttributeID06` |  | |  | `cast( mvke.prat6 as producthasattributeid06 preserving type )` |  |  |
+| `ProductHasAttributeID07` |  | |  | `cast( mvke.prat7 as producthasattributeid07 preserving type )` |  |  |
+| `ProductHasAttributeID08` |  | |  | `cast( mvke.prat8 as producthasattributeid08 preserving type )` |  |  |
+| `ProductHasAttributeID09` |  | |  | `cast( mvke.prat9 as producthasattributeid09 preserving type )` |  |  |
+| `ProductHasAttributeID10` |  | |  | `cast( mvke.prata as producthasattributeid10 preserving type )` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `ProdExtAssortmentPriority` |  | |  | `pflks` |  |  |
+| `ProdIsEntlmntRlvt` |  | |  | `is_entlmnt_rlvt` |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_MaterialPricingGroup` | | ✓ | | | | |
+| `_MaterialPricingGroupText` | | ✓ | | | | |
+| `_ItemCategoryGroup` | | ✓ | | | | |
+| `_ItemCategoryGroupText` | | ✓ | | | | |
+| `_AssortmentGrade` | | ✓ | | | | |
+| `_AssortmentGradeT` | | ✓ | | | | |
+| `_ProdExtAssortmentPriority` | | ✓ | | | | |
+| `_ProdExtAssortmentPriorityText` | | ✓ | | | | |
+| `_ProductCommissionGroup` | | ✓ | | | | |
+| `_ProductCommissionGroupText` | | ✓ | | | | |
+| `_ProductSalesStatus` | | ✓ | | | | |
+| `_ProductSalesStatusText` | | ✓ | | | | |
+| `_DeliveryQuantityUnit` | | ✓ | | | | |
+| `_DeliveryQuantityUnitText` | | ✓ | | | | |
+| `_SalesUnit` | | ✓ | | | | |
+| `_SalesUnitText` | | ✓ | | | | |
+| `_SalesOrganizationText` | | ✓ | | | | |
+| `_StoreListingProcedure` | | ✓ | | | | |
+| `_StoreListingProcedureT` | | ✓ | | | | |
+| `_DistrCntrListingProcedure` | | ✓ | | | | |
+| `_DistrCntrListingProcedureT` | | ✓ | | | | |
+| `_MatlAccountAssignmentGroup` | | ✓ | | | | |
+| `_MatlAccountAssignmentGroupT` | | ✓ | | | | |
+| `_PriceFixingCategory` | | ✓ | | | | |
+| `_PriceFixingCategoryText` | | ✓ | | | | |
+| `_CompetitionPressureCategory` | | ✓ | | | | |
+| `_CompetitionPressureCategoryT` | | ✓ | | | | |
+| `_MaterialStatisticsGroup` | | ✓ | | | | |
+| `_MaterialStatisticsGroupText` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
+| `_PricingReferenceProduct` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
 
 ## Associations
 

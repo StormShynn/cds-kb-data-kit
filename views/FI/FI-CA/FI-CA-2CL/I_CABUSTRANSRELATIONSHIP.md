@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusTransRelationship` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 2 ) as evl_objrl_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusTransRelationship` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 2 ) as evl_objrl_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,99 +31,99 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintOrderRoutingNumber` |  | |  |  |
-| `MaintenanceOrderType` |  | |  |  |
-| `MaintenanceOrderDesc` |  | |  |  |
-| `MaintOrdBasicStartDate` |  | |  |  |
-| `MaintOrdBasicStartTime` |  | |  |  |
-| `MaintOrdBasicEndDate` |  | |  |  |
-| `MaintOrdBasicEndTime` |  | |  |  |
-| `ScheduledBasicStartDate` |  | |  |  |
-| `ScheduledBasicStartTime` |  | |  |  |
-| `ScheduledBasicEndDate` |  | |  |  |
-| `ScheduledBasicEndTime` |  | |  |  |
-| `MaintOrderReferenceDate` |  | |  |  |
-| `MaintOrderReferenceTime` |  | |  |  |
-| `MainWorkCompletedDateTime` |  | |  |  |
-| `MaintenanceNotification` |  | |  |  |
-| `OrdIsNotSchedldAutomatically` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  | `WorkCenterInternalID` |
-| `MainWorkCenterTypeCode` |  | |  | `WorkCenterTypeCode` |
-| `MainWorkCenter` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `WorkCenterInternalID` |  | | `_LocationAccountAssignment` | `WorkCenterInternalID` |
-| `WorkCenterTypeCode` |  | | `_LocationAccountAssignment` | `WorkCenterTypeCode` |
-| `WorkCenter` |  | | `_LocationAccountAssignment._WorkCenter` | `WorkCenter` |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintenancePlant` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `MaintOrdProcessPhaseCode` |  | |  |  |
-| `MaintOrdProcessSubPhaseCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CostCenter` |  | | `_LocationAccountAssignment` | `CostCenter` |
-| `CostingSheet` |  | |  |  |
-| `ReferenceElement` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `AdditionalDeviceData` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | |  | `cast ( _LocationAccountAssignment.FunctionalLocation as vdm_eam_tplnr )` |
-| `MaintenanceOrderPlanningCode` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `MaintPriority` |  | |  |  |
-| `MaintPriorityType` |  | |  |  |
-| `OrderProcessingGroup` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ResponsibleCostCenter` |  | |  |  |
-| `Currency` |  | |  |  |
-| `MaintenanceRevision` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `Product` |  | |  | `Material` |
-| `SuperiorProjectNetwork` |  | |  |  |
-| `OperationSystemCondition` |  | |  |  |
-| `WBSElement` |  | | `_WBSElement` | `WBSElementExternalID` |
-| `WBSElementInternalID` |  | |  |  |
-| `ProjectInternalID` |  | |  | `cast( ProjectInternalID as ps_s4_proj_pspnr )` |
-| `ControllingObjectClass` |  | |  |  |
-| `MaintenanceOrderInternalID` |  | |  |  |
-| `MaintenanceObjectList` |  | |  | `MaintenanceItemObjectList` |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
-| `AssetLocation` |  | | `_LocationAccountAssignment` | `AssetLocation` |
-| `AssetRoom` |  | | `_LocationAccountAssignment` | `AssetRoom` |
-| `PlantSection` |  | | `_LocationAccountAssignment` | `PlantSection` |
-| `ABCIndicator` |  | | `_LocationAccountAssignment` | `ABCIndicator` |
-| `MaintObjectFreeDefinedAttrib` |  | | `_LocationAccountAssignment` | `MaintObjectFreeDefinedAttrib` |
-| `BasicSchedulingType` |  | |  |  |
-| `LatestAcceptableCompletionDate` |  | |  |  |
-| `MaintOrdPersonResponsible` |  | |  |  |
-| `LastChangeByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  | `cast( LastChangeDateTime as rslastchangedat preserving type )` |
-| `CreatedByUser` |  | |  |  |
-| `OrderHasLongText` |  | |  |  |
-| `MaintenanceOrderOverheadCode` |  | |  |  |
-| `PlannedCostsCostingVariant` |  | |  |  |
-| `ActualCostsCostingVariant` |  | |  |  |
-| `MaintenancePlan` |  | |  |  |
-| `MaintenanceCall` |  | |  |  |
-| `MaintenanceItem` |  | |  |  |
-| `LeadingOrder` |  | |  |  |
-| `TaskListType` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `LocAcctAssgmtWBSElement` |  | | `_LocationAccountAssignment._WBSElementBasicData` | `WBSElementExternalID` |
-| `LocAcctAssgmtWBSElmntIntID` |  | |  | `cast ( _LocationAccountAssignment.WBSElementInternalID as ps_s4_pspnr preserving type )` |
-| `ControllingSettlementProfile` |  | | `_CtrlgObjectSettlementRule` | `ControllingSettlementProfile` |
-| `LocAcctAssgmtBusinessArea` |  | | `_LocationAccountAssignment` | `BusinessArea` |
-| `LocAcctAssgmtControllingArea` |  | | `_LocationAccountAssignment` | `ControllingArea` |
-| `LocAcctAssgmtCompanyCode` |  | | `_LocationAccountAssignment` | `CompanyCode` |
-| `MaintOrderProcessingContext` |  | |  |  |
-| `_FunctionalLocation` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintOrderRoutingNumber` |  | |  |  |  |  |
+| `MaintenanceOrderType` |  | |  |  |  |  |
+| `MaintenanceOrderDesc` |  | |  |  |  |  |
+| `MaintOrdBasicStartDate` |  | |  |  |  |  |
+| `MaintOrdBasicStartTime` |  | |  |  |  |  |
+| `MaintOrdBasicEndDate` |  | |  |  |  |  |
+| `MaintOrdBasicEndTime` |  | |  |  |  |  |
+| `ScheduledBasicStartDate` |  | |  |  |  |  |
+| `ScheduledBasicStartTime` |  | |  |  |  |  |
+| `ScheduledBasicEndDate` |  | |  |  |  |  |
+| `ScheduledBasicEndTime` |  | |  |  |  |  |
+| `MaintOrderReferenceDate` |  | |  |  |  |  |
+| `MaintOrderReferenceTime` |  | |  |  |  |  |
+| `MainWorkCompletedDateTime` |  | |  |  |  |  |
+| `MaintenanceNotification` |  | |  |  |  |  |
+| `OrdIsNotSchedldAutomatically` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  | `WorkCenterInternalID` |  |  |
+| `MainWorkCenterTypeCode` |  | |  | `WorkCenterTypeCode` |  |  |
+| `MainWorkCenter` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | | `_LocationAccountAssignment` | `WorkCenterInternalID` |  |  |
+| `WorkCenterTypeCode` |  | | `_LocationAccountAssignment` | `WorkCenterTypeCode` |  |  |
+| `WorkCenter` |  | | `_LocationAccountAssignment._WorkCenter` | `WorkCenter` |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintenancePlant` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `MaintOrdProcessPhaseCode` |  | |  |  |  |  |
+| `MaintOrdProcessSubPhaseCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CostCenter` |  | | `_LocationAccountAssignment` | `CostCenter` |  |  |
+| `CostingSheet` |  | |  |  |  |  |
+| `ReferenceElement` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `AdditionalDeviceData` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  | `cast ( _LocationAccountAssignment.FunctionalLocation as vdm_eam_tplnr )` |  |  |
+| `MaintenanceOrderPlanningCode` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `MaintPriority` |  | |  |  |  |  |
+| `MaintPriorityType` |  | |  |  |  |  |
+| `OrderProcessingGroup` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ResponsibleCostCenter` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `MaintenanceRevision` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `Product` |  | |  | `Material` |  |  |
+| `SuperiorProjectNetwork` |  | |  |  |  |  |
+| `OperationSystemCondition` |  | |  |  |  |  |
+| `WBSElement` |  | | `_WBSElement` | `WBSElementExternalID` |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `ProjectInternalID` |  | |  | `cast( ProjectInternalID as ps_s4_proj_pspnr )` |  |  |
+| `ControllingObjectClass` |  | |  |  |  |  |
+| `MaintenanceOrderInternalID` |  | |  |  |  |  |
+| `MaintenanceObjectList` |  | |  | `MaintenanceItemObjectList` |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |  |  |
+| `AssetLocation` |  | | `_LocationAccountAssignment` | `AssetLocation` |  |  |
+| `AssetRoom` |  | | `_LocationAccountAssignment` | `AssetRoom` |  |  |
+| `PlantSection` |  | | `_LocationAccountAssignment` | `PlantSection` |  |  |
+| `ABCIndicator` |  | | `_LocationAccountAssignment` | `ABCIndicator` |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | | `_LocationAccountAssignment` | `MaintObjectFreeDefinedAttrib` |  |  |
+| `BasicSchedulingType` |  | |  |  |  |  |
+| `LatestAcceptableCompletionDate` |  | |  |  |  |  |
+| `MaintOrdPersonResponsible` |  | |  |  |  |  |
+| `LastChangeByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  | `cast( LastChangeDateTime as rslastchangedat preserving type )` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `OrderHasLongText` |  | |  |  |  |  |
+| `MaintenanceOrderOverheadCode` |  | |  |  |  |  |
+| `PlannedCostsCostingVariant` |  | |  |  |  |  |
+| `ActualCostsCostingVariant` |  | |  |  |  |  |
+| `MaintenancePlan` |  | |  |  |  |  |
+| `MaintenanceCall` |  | |  |  |  |  |
+| `MaintenanceItem` |  | |  |  |  |  |
+| `LeadingOrder` |  | |  |  |  |  |
+| `TaskListType` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `LocAcctAssgmtWBSElement` |  | | `_LocationAccountAssignment._WBSElementBasicData` | `WBSElementExternalID` |  |  |
+| `LocAcctAssgmtWBSElmntIntID` |  | |  | `cast ( _LocationAccountAssignment.WBSElementInternalID as ps_s4_pspnr preserving type )` |  |  |
+| `ControllingSettlementProfile` |  | | `_CtrlgObjectSettlementRule` | `ControllingSettlementProfile` |  |  |
+| `LocAcctAssgmtBusinessArea` |  | | `_LocationAccountAssignment` | `BusinessArea` |  |  |
+| `LocAcctAssgmtControllingArea` |  | | `_LocationAccountAssignment` | `ControllingArea` |  |  |
+| `LocAcctAssgmtCompanyCode` |  | | `_LocationAccountAssignment` | `CompanyCode` |  |  |
+| `MaintOrderProcessingContext` |  | |  |  |  |  |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
 
 ## Associations
 

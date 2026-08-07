@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |
-| `ConfigurableCodesCodeGroup` | ✓ | |  | `codegruppe` |
-| `ConfigurableCodesCode` | ✓ | |  | `code` |
-| `Language` | ✓ | |  | `sprache` |
-| `ConfigurableCodesCodeText` |  | |  | `cast( kurztext as vdm_qtxt_code preserving type )` |
-| `_ConfigurableCodesCatalog` | | ✓ | | |
-| `_ConfigurableCodesCodeGroup` | | ✓ | | |
-| `_ConfigurableCodesCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |  |  |
+| `ConfigurableCodesCodeGroup` | ✓ | |  | `codegruppe` |  |  |
+| `ConfigurableCodesCode` | ✓ | |  | `code` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `ConfigurableCodesCodeText` |  | |  | `cast( kurztext as vdm_qtxt_code preserving type )` |  |  |
+| `_ConfigurableCodesCatalog` | | ✓ | | | | |
+| `_ConfigurableCodesCodeGroup` | | ✓ | | | | |
+| `_ConfigurableCodesCode` | | ✓ | | | | |
 
 ## Associations
 

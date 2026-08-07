@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `AddressID` | ✓ | |  | `addrnumber` |
-| `InternationalLocationNumber1` |  | |  | `location_1` |
-| `InternationalLocationNumber2` |  | |  | `location_2` |
-| `InternationalLocationNumber3` |  | |  | `location_3` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartner` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` |  |  |
+| `InternationalLocationNumber1` |  | |  | `location_1` |  |  |
+| `InternationalLocationNumber2` |  | |  | `location_2` |  |  |
+| `InternationalLocationNumber3` |  | |  | `location_3` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
 
 ## Associations
 

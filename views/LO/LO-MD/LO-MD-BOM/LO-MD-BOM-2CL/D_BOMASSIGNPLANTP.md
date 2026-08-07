@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlantToBeAssigned` |  | |  | `werks_d` |
-| `BillOfMaterialVariantUsage` |  | |  | `stlan` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlantToBeAssigned` |  | |  | `werks_d` |  |  |
+| `BillOfMaterialVariantUsage` |  | |  | `stlan` |  |  |
 
 ## Source Code
 

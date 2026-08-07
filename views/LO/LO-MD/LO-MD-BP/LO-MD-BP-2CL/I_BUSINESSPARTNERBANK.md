@@ -33,37 +33,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BankIdentification` | ✓ | |  | `bkvid` |
-| `BankCountryKey` |  | |  | `banks` |
-| `BankName` |  | | `_Bank` | `BankName` |
-| `BankNumber` |  | |  | `bankl` |
-| `SWIFTCode` |  | | `_Bank` | `SWIFTCode` |
-| `BankControlKey` |  | |  | `bkont` |
-| `BankAccountHolderName` |  | |  | `koinh` |
-| `BankAccountName` |  | |  | `accname` |
-| `ValidityStartDate` |  | |  | `bk_valid_from` |
-| `ValidityEndDate` |  | |  | `bk_valid_to` |
-| `IsActualDate` |  | |  | `case when BusinessPartnerBank.bk_valid_from <= tstmp_current_utctimestamp() and BusinessPartnerBank.bk_valid_to >= tstmp_current_utctimestamp() then cast('X' as boole_d) else cast(' ' as boole_d) end` |
-| `BPIsActualDate` |  | |  | `case when BusinessPartnerBank.bk_valid_from <= tstmp_current_utctimestamp() and BusinessPartnerBank.bk_valid_to >= tstmp_current_utctimestamp() then cast('X' as boole_d) else cast(' ' as boole_d) end` |
-| `IBAN` |  | |  | `case when BusinessPartnerBank.bankn <> '' then _IBAN.IBAN else BusinessPartnerBank.iban end` |
-| `IBANValidityStartDate` |  | | `_IBAN` | `IBANValidityStartDate` |
-| `BankAccount` |  | |  | `bankn` |
-| `BankAccountReferenceText` |  | |  | `bkref` |
-| `CollectionAuthInd` |  | |  | `xezer` |
-| `BusinessPartnerExternalBankID` |  | |  | `bkext` |
-| `BPBankDetailsChangeDate` |  | |  | `bk_move_date` |
-| `BPBankDetailsChangeTargetID` |  | |  | `move_bkvid` |
-| `BPBankIsProtected` |  | |  | `protect` |
-| `BPBankUUID` |  | |  | `bp_bank_guid` |
-| `CityName` |  | | `_Bank` | `CityName` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartner` | | ✓ | | |
-| `_Bank` | | ✓ | | |
-| `_IBAN` | | ✓ | | |
-| `_BusinessPartnerBankAlias` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BankIdentification` | ✓ | |  | `bkvid` |  |  |
+| `BankCountryKey` |  | |  | `banks` |  |  |
+| `BankName` |  | | `_Bank` | `BankName` |  |  |
+| `BankNumber` |  | |  | `bankl` |  |  |
+| `SWIFTCode` |  | | `_Bank` | `SWIFTCode` |  |  |
+| `BankControlKey` |  | |  | `bkont` |  |  |
+| `BankAccountHolderName` |  | |  | `koinh` |  |  |
+| `BankAccountName` |  | |  | `accname` |  |  |
+| `ValidityStartDate` |  | |  | `bk_valid_from` |  |  |
+| `ValidityEndDate` |  | |  | `bk_valid_to` |  |  |
+| `IsActualDate` |  | |  | `case when BusinessPartnerBank.bk_valid_from <= tstmp_current_utctimestamp() and BusinessPartnerBank.bk_valid_to >= tstmp_current_utctimestamp() then cast('X' as boole_d) else cast(' ' as boole_d) end` |  |  |
+| `BPIsActualDate` |  | |  | `case when BusinessPartnerBank.bk_valid_from <= tstmp_current_utctimestamp() and BusinessPartnerBank.bk_valid_to >= tstmp_current_utctimestamp() then cast('X' as boole_d) else cast(' ' as boole_d) end` |  |  |
+| `IBAN` |  | |  | `case when BusinessPartnerBank.bankn <> '' then _IBAN.IBAN else BusinessPartnerBank.iban end` |  |  |
+| `IBANValidityStartDate` |  | | `_IBAN` | `IBANValidityStartDate` |  |  |
+| `BankAccount` |  | |  | `bankn` |  |  |
+| `BankAccountReferenceText` |  | |  | `bkref` |  |  |
+| `CollectionAuthInd` |  | |  | `xezer` |  |  |
+| `BusinessPartnerExternalBankID` |  | |  | `bkext` |  |  |
+| `BPBankDetailsChangeDate` |  | |  | `bk_move_date` |  |  |
+| `BPBankDetailsChangeTargetID` |  | |  | `move_bkvid` |  |  |
+| `BPBankIsProtected` |  | |  | `protect` |  |  |
+| `BPBankUUID` |  | |  | `bp_bank_guid` |  |  |
+| `CityName` |  | | `_Bank` | `CityName` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_Bank` | | ✓ | | | | |
+| `_IBAN` | | ✓ | | | | |
+| `_BusinessPartnerBankAlias` | | ✓ | | | | |
 
 ## Associations
 

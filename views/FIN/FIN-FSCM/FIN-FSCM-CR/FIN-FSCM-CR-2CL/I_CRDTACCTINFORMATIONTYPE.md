@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CrdtAcctInformationCategory` | ✓ | |  | `infocategory` |
-| `CrdtAcctInformationType` | ✓ | |  | `infotype` |
-| `_Text` | | ✓ | | |
-| `_CrdtAcctInfoCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CrdtAcctInformationCategory` | ✓ | |  | `infocategory` |  |  |
+| `CrdtAcctInformationType` | ✓ | |  | `infotype` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CrdtAcctInfoCategory` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MultiCurrencyAccountingCode` | ✓ | |  | `mcakey` |
-| `Language` | ✓ | |  | `langu` |
-| `MultiCurrencyAcctgCodeName` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MultiCurrencyAccountingCode` | ✓ | |  | `mcakey` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `MultiCurrencyAcctgCodeName` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

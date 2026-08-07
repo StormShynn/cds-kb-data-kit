@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductType` | ✓ | |  | `cast(t134.mtart as producttype preserving type )` |
-| `ProductTypeCode` |  | |  | `prod_type_code` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `NumberRangeForExtIDAssignment` |  | |  | `cast(t134.numke as externalnr preserving type )` |
-| `NumberRangeForIntIDAssignment` |  | |  | `cast(t134.numki as internalnr preserving type )` |
-| `ProductTypeOID` |  | |  | `cast( t134.mtart as producttype_oid )` |
-| `_Text` | | ✓ | | |
-| `_ProductTypeCode` | | ✓ | | |
-| `_ProductTypeCodeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` | ✓ | |  | `cast(t134.mtart as producttype preserving type )` |  |  |
+| `ProductTypeCode` |  | |  | `prod_type_code` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `NumberRangeForExtIDAssignment` |  | |  | `cast(t134.numke as externalnr preserving type )` |  |  |
+| `NumberRangeForIntIDAssignment` |  | |  | `cast(t134.numki as internalnr preserving type )` |  |  |
+| `ProductTypeOID` |  | |  | `cast( t134.mtart as producttype_oid )` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ProductTypeCode` | | ✓ | | | | |
+| `_ProductTypeCodeText` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SubItemCategory` | ✓ | |  | `cast(sityp as fincs_subitemcategory preserving type )` |
-| `Language` | ✓ | |  | `cast(langu as spras preserving type )` |
-| `SubItem` |  | |  | `}] key cast(sitem as fincs_subitem preserving type )` |
-| `SubItemText` |  | |  | `cast(txtsh as fincs_description_text_15 preserving type )` |
-| `SubItemMediumText` |  | |  | `cast(txtmi as fincs_medium_text_30 preserving type )` |
-| `_Language` | | ✓ | | |
-| `_SubItem` | | ✓ | | |
-| `_SubItemCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubItemCategory` | ✓ | |  | `cast(sityp as fincs_subitemcategory preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast(langu as spras preserving type )` |  |  |
+| `SubItem` | ✓ | |  | `cast(sitem as fincs_subitem preserving type )` |  |  |
+| `SubItemText` |  | |  | `cast(txtsh as fincs_description_text_15 preserving type )` |  |  |
+| `SubItemMediumText` |  | |  | `cast(txtmi as fincs_medium_text_30 preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SubItem` | | ✓ | | | | |
+| `_SubItemCategory` | | ✓ | | | | |
 
 ## Associations
 

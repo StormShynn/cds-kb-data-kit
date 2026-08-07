@@ -29,40 +29,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingDocument` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `CostEstimate` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `FiscalPeriod` | ✓ | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderItem` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProductionProcess` |  | |  |  |
-| `PostingPeriod` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `ActualCostingObjectType` |  | |  |  |
-| `ActualCostingObjectTypeName` |  | |  |  |
-| `Material` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `InventorySpecialStockTypeName` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `WIPQuantity` |  | |  |  |
-| `DeltaQuantity` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_QuantityUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingDocument` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `CostEstimate` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `FiscalPeriod` | ✓ | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderItem` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProductionProcess` |  | |  |  |  |  |
+| `PostingPeriod` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `ActualCostingObjectType` |  | |  |  |  |  |
+| `ActualCostingObjectTypeName` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `InventorySpecialStockTypeName` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `WIPQuantity` |  | |  |  |  |  |
+| `DeltaQuantity` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_QuantityUnit` | | ✓ | | | | |
 
 ## Associations
 

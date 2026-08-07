@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TextObjectType` | ✓ | |  | `tdid` |
-| `TextObjectCategory` | ✓ | |  | `tdobject` |
-| `_TextObjectTypeText` | | ✓ | | |
-| `_TextObjectCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TextObjectType` | ✓ | |  | `tdid` |  |  |
+| `TextObjectCategory` | ✓ | |  | `tdobject` |  |  |
+| `_TextObjectTypeText` | | ✓ | | | | |
+| `_TextObjectCategory` | | ✓ | | | | |
 
 ## Associations
 

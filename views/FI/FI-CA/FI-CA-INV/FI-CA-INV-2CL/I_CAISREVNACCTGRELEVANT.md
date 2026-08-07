@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAIsRevenueAccountingRelevant` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as rarel_kk preserving type )` |
-| `_CAIsRevnAcctgRelevantText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAIsRevenueAccountingRelevant` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as rarel_kk preserving type )` |  |  |
+| `_CAIsRevnAcctgRelevantText` | | ✓ | | | | |
 
 ## Associations
 

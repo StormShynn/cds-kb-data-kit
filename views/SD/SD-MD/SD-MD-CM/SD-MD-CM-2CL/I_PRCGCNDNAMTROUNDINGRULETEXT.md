@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
-| `PrcgCndnAmountRoundingRule` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as txprf )` |
-| `PrcgCndnAmountRoundingRuleText` |  | |  | `cast ( ddtext as val_text )` |
-| `_PrcgCndnAmountRoundingRule` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |  |  |
+| `PrcgCndnAmountRoundingRule` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as txprf )` |  |  |
+| `PrcgCndnAmountRoundingRuleText` |  | |  | `cast ( ddtext as val_text )` |  |  |
+| `_PrcgCndnAmountRoundingRule` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

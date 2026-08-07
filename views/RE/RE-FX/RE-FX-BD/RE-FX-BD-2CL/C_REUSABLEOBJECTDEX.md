@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateUsableObjectUUID` | ✓ | |  |  |
-| `REGenericRentalObjectType` |  | |  |  |
-| `InternalRealEstateNumber` |  | |  |  |
-| `REStatusObject` |  | |  |  |
-| `RealEstateUsableObjectOID` |  | |  |  |
-| `REGnrcRntlObjectAlternativeID` |  | |  |  |
-| `RealEstateUsableObjectNumber` |  | |  |  |
-| `REUsableObjectName` |  | |  |  |
-| `REIdentificationKey` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `REAuthorizationGroup` |  | |  |  |
-| `REGnrcRentalObjUsageCategory` |  | |  |  |
-| `REGenericRentalObjectUsageType` |  | |  |  |
-| `REGenericRentalObjParentUUID` |  | |  |  |
-| `REGnrcRentalObjPortfolioID` |  | |  |  |
-| `REGnrcRentalObjOwnershipID` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateUsableObjectUUID` | ✓ | |  |  |  |  |
+| `REGenericRentalObjectType` |  | |  |  |  |  |
+| `InternalRealEstateNumber` |  | |  |  |  |  |
+| `REStatusObject` |  | |  |  |  |  |
+| `RealEstateUsableObjectOID` |  | |  |  |  |  |
+| `REGnrcRntlObjectAlternativeID` |  | |  |  |  |  |
+| `RealEstateUsableObjectNumber` |  | |  |  |  |  |
+| `REUsableObjectName` |  | |  |  |  |  |
+| `REIdentificationKey` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `REAuthorizationGroup` |  | |  |  |  |  |
+| `REGnrcRentalObjUsageCategory` |  | |  |  |  |  |
+| `REGenericRentalObjectUsageType` |  | |  |  |  |  |
+| `REGenericRentalObjParentUUID` |  | |  |  |  |  |
+| `REGnrcRentalObjPortfolioID` |  | |  |  |  |  |
+| `REGnrcRentalObjOwnershipID` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
 
 ## Source Code
 

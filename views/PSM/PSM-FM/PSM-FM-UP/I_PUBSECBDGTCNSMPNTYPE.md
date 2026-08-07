@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PubSecBudgetCnsmpnType` | ✓ | |  | `bdgt_cnsmpn_type` |
-| `PubSecBdgtCnsmpnTypeIsBdgtRlvt` |  | |  | `bdgt_relevant_for_cnsty` |
-| `PubSecBudgetCnsmpnTypeGroup` |  | |  | `bdgt_cnsmpn_type_grp` |
-| `_Text` | | ✓ | | |
-| `_PubSecBudgetCnsmpnTypeGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PubSecBudgetCnsmpnType` | ✓ | |  | `bdgt_cnsmpn_type` |  |  |
+| `PubSecBdgtCnsmpnTypeIsBdgtRlvt` |  | |  | `bdgt_relevant_for_cnsty` |  |  |
+| `PubSecBudgetCnsmpnTypeGroup` |  | |  | `bdgt_cnsmpn_type_grp` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_PubSecBudgetCnsmpnTypeGroup` | | ✓ | | | | |
 
 ## Associations
 

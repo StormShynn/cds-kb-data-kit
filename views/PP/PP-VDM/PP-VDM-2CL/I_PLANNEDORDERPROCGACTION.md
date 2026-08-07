@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlannedOrderProcgAction` | ✓ | |  | `cast(mdacc as vdm_mdacc preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlannedOrderProcgAction` | ✓ | |  | `cast(mdacc as vdm_mdacc preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

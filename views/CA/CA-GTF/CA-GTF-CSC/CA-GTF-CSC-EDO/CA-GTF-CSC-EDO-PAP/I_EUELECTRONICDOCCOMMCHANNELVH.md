@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EU_EDocCommChannel` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_comm_channel)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `EU_EDocCommChannelText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EU_EDocCommChannel` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_comm_channel)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `EU_EDocCommChannelText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

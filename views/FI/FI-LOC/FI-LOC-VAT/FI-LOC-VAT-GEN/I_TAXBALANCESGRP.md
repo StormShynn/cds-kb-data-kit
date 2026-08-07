@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `cast(t007l.land1 as land1_gp)` |
-| `TaxItemGroupingVersion` | ✓ | |  | `version` |
-| `TaxCode` | ✓ | |  | `cast(t007l.mwskz as fis_mwskz)` |
-| `TransactionTypeDetermination` | ✓ | |  | `cast(t007l.ktosl as fac_ktosl)` |
-| `DebitCreditCode` | ✓ | |  | `cast(t007l.shkzg_umsv as fis_shkzg)` |
-| `TaxBalancesGrp` | ✓ | |  | `cast(t007l.stegruno as fis_taxbalgrp)` |
-| `TaxGroupOperation` |  | |  | `cast(t007l.opera as txgrpgopera)` |
-| `HasNegativeSign` |  | |  | `case opera when '-' then cast ( 'X' as oper_type preserving type ) else cast ('' as oper_type preserving type ) end` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `cast(t007l.land1 as land1_gp)` |  |  |
+| `TaxItemGroupingVersion` | ✓ | |  | `version` |  |  |
+| `TaxCode` | ✓ | |  | `cast(t007l.mwskz as fis_mwskz)` |  |  |
+| `TransactionTypeDetermination` | ✓ | |  | `cast(t007l.ktosl as fac_ktosl)` |  |  |
+| `DebitCreditCode` | ✓ | |  | `cast(t007l.shkzg_umsv as fis_shkzg)` |  |  |
+| `TaxBalancesGrp` | ✓ | |  | `cast(t007l.stegruno as fis_taxbalgrp)` |  |  |
+| `TaxGroupOperation` |  | |  | `cast(t007l.opera as txgrpgopera)` |  |  |
+| `HasNegativeSign` |  | |  | `case opera when '-' then cast ( 'X' as oper_type preserving type ) else cast ('' as oper_type preserving type ) end` |  |  |
 
 ## Source Code
 

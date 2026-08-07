@@ -29,40 +29,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `MaterialBaseQuantity` |  | |  |  |
-| `UnlimitedOverDelivIsAllowed` |  | |  |  |
-| `OverDelivToleranceLimit` |  | |  |  |
-| `UnderDelivToleranceLimit` |  | |  |  |
-| `ProductionInvtryManagedLoc` |  | |  |  |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `ProdnOrderIsBatchRequired` |  | |  |  |
-| `ProdIsWithdrawnFrmProdnBin` |  | |  |  |
-| `TransitionMatrixProductsGroup` |  | |  |  |
-| `OrderChangeManagementProfile` |  | |  |  |
-| `MatlCompIsMarkedForBackflush` |  | |  |  |
-| `SetupAndTeardownTime` |  | |  |  |
-| `ProductionSchedulingProfile` |  | |  |  |
-| `TransitionTime` |  | |  |  |
-| `ProcessingTimeInDays` |  | |  |  |
-| `ProductionSupervisor` |  | |  |  |
-| `ProductProductionQuantityUnit` |  | |  |  |
-| `HasProductionVersion` |  | |  |  |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `_Product` | | ✓ | | |
-| `_ProductionInvtryManagedLoc` | | ✓ | | |
-| `_ProductionSupervisor` | | ✓ | | |
-| `_ProductionSchedulingProfile` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_ProductProductionQuantityUnit` | | ✓ | | |
-| `_ProdnOrdBatDetnCodeText` | | ✓ | | |
-| `_ProdComponentBackflushCodeT` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
-| `_ProdProdnQuantityUnitText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `MaterialBaseQuantity` |  | |  |  |  |  |
+| `UnlimitedOverDelivIsAllowed` |  | |  |  |  |  |
+| `OverDelivToleranceLimit` |  | |  |  |  |  |
+| `UnderDelivToleranceLimit` |  | |  |  |  |  |
+| `ProductionInvtryManagedLoc` |  | |  |  |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `ProdnOrderIsBatchRequired` |  | |  |  |  |  |
+| `ProdIsWithdrawnFrmProdnBin` |  | |  |  |  |  |
+| `TransitionMatrixProductsGroup` |  | |  |  |  |  |
+| `OrderChangeManagementProfile` |  | |  |  |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |  |  |
+| `SetupAndTeardownTime` |  | |  |  |  |  |
+| `ProductionSchedulingProfile` |  | |  |  |  |  |
+| `TransitionTime` |  | |  |  |  |  |
+| `ProcessingTimeInDays` |  | |  |  |  |  |
+| `ProductionSupervisor` |  | |  |  |  |  |
+| `ProductProductionQuantityUnit` |  | |  |  |  |  |
+| `HasProductionVersion` |  | |  |  |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductionInvtryManagedLoc` | | ✓ | | | | |
+| `_ProductionSupervisor` | | ✓ | | | | |
+| `_ProductionSchedulingProfile` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ProductProductionQuantityUnit` | | ✓ | | | | |
+| `_ProdnOrdBatDetnCodeText` | | ✓ | | | | |
+| `_ProdComponentBackflushCodeT` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
+| `_ProdProdnQuantityUnitText` | | ✓ | | | | |
 
 ## Associations
 

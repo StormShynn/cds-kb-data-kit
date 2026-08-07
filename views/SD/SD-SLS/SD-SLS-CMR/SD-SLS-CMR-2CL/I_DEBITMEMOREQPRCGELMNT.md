@@ -28,73 +28,73 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DebitMemoRequest` | ✓ | |  | `cast(SalesDocument as debit_memo_request preserving type)` |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `PricingDateTime` |  | |  |  |
-| `PriceConditionDeterminationDte` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionBaseValue` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionCurrency` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionCategory` |  | |  |  |
-| `ConditionIsForStatistics` |  | |  |  |
-| `PricingScaleType` |  | |  |  |
-| `IsRelevantForAccrual` |  | |  |  |
-| `CndnIsRelevantForInvoiceList` |  | |  |  |
-| `ConditionOrigin` |  | |  |  |
-| `IsGroupCondition` |  | |  |  |
-| `ConditionRecord` |  | |  |  |
-| `ConditionSequentialNumber` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `WithholdingTaxCode` |  | |  |  |
-| `CndnRoundingOffDiffAmount` |  | |  |  |
-| `ConditionAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ConditionControl` |  | |  |  |
-| `ConditionInactiveReason` |  | |  |  |
-| `ConditionClass` |  | |  |  |
-| `PrcgProcedureCounterForHeader` |  | |  |  |
-| `FactorForConditionBasisValue` |  | |  |  |
-| `StructureCondition` |  | |  |  |
-| `PeriodFactorForCndnBasisValue` |  | |  |  |
-| `PricingScaleBasis` |  | |  |  |
-| `ConditionScaleBasisValue` |  | |  |  |
-| `ConditionScaleBasisUnit` |  | |  |  |
-| `ConditionScaleBasisCurrency` |  | |  |  |
-| `CndnIsRelevantForIntcoBilling` |  | |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |
-| `ConditionIsForConfiguration` |  | |  |  |
-| `VariantCondition` |  | |  |  |
-| `ConditionRateAmount` |  | |  |  |
-| `ConditionRateRatio` |  | |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |
-| `ConditionBaseAmount` |  | |  |  |
-| `ConditionBaseQuantity` |  | |  |  |
-| `_DebitMemoRequest` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
-| `_PricingConditionType` | | ✓ | | |
-| `_ConditionCalculationType` | | ✓ | | |
-| `_ConditionCurrency` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_ConditionQuantityUnit` | | ✓ | | |
-| `_ConditionCategory` | | ✓ | | |
-| `_ConditionOrigin` | | ✓ | | |
-| `_ConditionControl` | | ✓ | | |
-| `_ConditionInactiveReason` | | ✓ | | |
-| `_ConditionClass` | | ✓ | | |
-| `_PricingScaleBasis` | | ✓ | | |
-| `_ScaleUnitOfMeasure` | | ✓ | | |
-| `_ScaleCurrency` | | ✓ | | |
-| `_VariantCondition` | | ✓ | | |
-| `_StructureCondition` | | ✓ | | |
-| `_ConditionRateRatioUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  | `cast(SalesDocument as debit_memo_request preserving type)` |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `PricingDateTime` |  | |  |  |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionBaseValue` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionCurrency` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionCategory` |  | |  |  |  |  |
+| `ConditionIsForStatistics` |  | |  |  |  |  |
+| `PricingScaleType` |  | |  |  |  |  |
+| `IsRelevantForAccrual` |  | |  |  |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |  |  |
+| `ConditionOrigin` |  | |  |  |  |  |
+| `IsGroupCondition` |  | |  |  |  |  |
+| `ConditionRecord` |  | |  |  |  |  |
+| `ConditionSequentialNumber` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `WithholdingTaxCode` |  | |  |  |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |  |  |
+| `ConditionAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ConditionControl` |  | |  |  |  |  |
+| `ConditionInactiveReason` |  | |  |  |  |  |
+| `ConditionClass` |  | |  |  |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |  |  |
+| `StructureCondition` |  | |  |  |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |  |  |
+| `PricingScaleBasis` |  | |  |  |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |  |  |
+| `VariantCondition` |  | |  |  |  |  |
+| `ConditionRateAmount` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | |  |  |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |  |  |
+| `ConditionBaseAmount` |  | |  |  |  |  |
+| `ConditionBaseQuantity` |  | |  |  |  |  |
+| `_DebitMemoRequest` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_PricingConditionType` | | ✓ | | | | |
+| `_ConditionCalculationType` | | ✓ | | | | |
+| `_ConditionCurrency` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_ConditionQuantityUnit` | | ✓ | | | | |
+| `_ConditionCategory` | | ✓ | | | | |
+| `_ConditionOrigin` | | ✓ | | | | |
+| `_ConditionControl` | | ✓ | | | | |
+| `_ConditionInactiveReason` | | ✓ | | | | |
+| `_ConditionClass` | | ✓ | | | | |
+| `_PricingScaleBasis` | | ✓ | | | | |
+| `_ScaleUnitOfMeasure` | | ✓ | | | | |
+| `_ScaleCurrency` | | ✓ | | | | |
+| `_VariantCondition` | | ✓ | | | | |
+| `_StructureCondition` | | ✓ | | | | |
+| `_ConditionRateRatioUnit` | | ✓ | | | | |
 
 ## Associations
 

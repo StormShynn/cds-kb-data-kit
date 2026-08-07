@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SecurityClassFundType` | ✓ | |  | `sfoty` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityClassFundType` | ✓ | |  | `sfoty` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

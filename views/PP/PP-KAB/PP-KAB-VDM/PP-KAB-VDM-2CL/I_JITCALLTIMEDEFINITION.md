@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITCallTimeDefinition` | ✓ | |  | `timdef` |
-| `ShiftGrouping` |  | |  | `schgrup` |
-| `ShiftSequence` |  | |  | `sprog` |
-| `FactoryCalendar` |  | |  | `fabkl` |
-| `Plant` |  | |  | `werks` |
-| `ProdnPlngAndControlCalendar` |  | |  | `mrppp` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITCallTimeDefinition` | ✓ | |  | `timdef` |  |  |
+| `ShiftGrouping` |  | |  | `schgrup` |  |  |
+| `ShiftSequence` |  | |  | `sprog` |  |  |
+| `FactoryCalendar` |  | |  | `fabkl` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `ProdnPlngAndControlCalendar` |  | |  | `mrppp` |  |  |
 
 ## Source Code
 

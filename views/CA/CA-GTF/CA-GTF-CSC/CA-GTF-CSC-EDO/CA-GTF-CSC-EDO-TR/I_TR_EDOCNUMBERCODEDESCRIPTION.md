@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TR_EDocLanguageKey` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |
-| `TR_ElectronicDocumentUnivCode` | ✓ | |  |  |
-| `TR_EDocUnivCodeText` |  | |  |  |
-| `TR_ElectronicDocCompanyCode` |  | | `_CompanyCode` | `CompanyCode` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TR_EDocLanguageKey` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |  |  |
+| `TR_ElectronicDocumentUnivCode` | ✓ | |  |  |  |  |
+| `TR_EDocUnivCodeText` |  | |  |  |  |  |
+| `TR_ElectronicDocCompanyCode` |  | | `_CompanyCode` | `CompanyCode` |  |  |
 
 ## Associations
 

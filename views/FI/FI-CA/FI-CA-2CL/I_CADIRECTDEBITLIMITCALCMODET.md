@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADirectDebitLimitCalcMode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as ddlxg_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CADirectDebitLimitCalcModeText` |  | |  | `cast( ddtext as ddlxg_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADirectDebitLimitCalcMode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as ddlxg_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CADirectDebitLimitCalcModeText` |  | |  | `cast( ddtext as ddlxg_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

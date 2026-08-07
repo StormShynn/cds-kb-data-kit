@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityCategoryCode` | ✓ | |  | `cast(txt.kapar as pph_kapart preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
-| `CapacityCategoryName` |  | |  | `cast(txt.txt as kaparttext preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityCategoryCode` | ✓ | |  | `cast(txt.kapar as pph_kapart preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |  |  |
+| `CapacityCategoryName` |  | |  | `cast(txt.txt as kaparttext preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

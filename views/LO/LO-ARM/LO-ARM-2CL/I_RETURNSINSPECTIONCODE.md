@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReturnsInspectionCode` | ✓ | |  | `code` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReturnsInspectionCode` | ✓ | |  | `code` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

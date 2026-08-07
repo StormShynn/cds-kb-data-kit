@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RepetitiveMfgConfirmation` | ✓ | |  |  |
-| `Plant` | ✓ | |  | `cast(Batch.Plant as werks_bp preserving type)` |
-| `Material` | ✓ | |  | `cast(Batch.Material as matnr preserving type)` |
-| `Batch` | ✓ | |  |  |
-| `CharcInternalID` | ✓ | |  |  |
-| `ClfnCharcValuePositionNumber` | ✓ | |  | `CharcValuePositionNumber` |
-| `DefinitionOfBatchLevel` |  | |  |  |
-| `BatchIsMarkedForDeletion` |  | |  |  |
-| `ClfnObjectTable` |  | |  |  |
-| `ClassType` |  | |  | `cast(CharcVal.ClassType as klassenart preserving type)` |
-| `ClfnObjectType` |  | |  |  |
-| `$session.system_date).Characteristic` |  | |  | `CharcVal._Characteristic(P_KeyDate: $session.system_date).Characteristic` |
-| `CharcValue` |  | |  |  |
-| `_RepetitiveMfgConfirmation` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_BatchPlant` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_ClassType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RepetitiveMfgConfirmation` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  | `cast(Batch.Plant as werks_bp preserving type)` |  |  |
+| `Material` | ✓ | |  | `cast(Batch.Material as matnr preserving type)` |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `ClfnCharcValuePositionNumber` | ✓ | |  | `CharcValuePositionNumber` |  |  |
+| `DefinitionOfBatchLevel` |  | |  |  |  |  |
+| `BatchIsMarkedForDeletion` |  | |  |  |  |  |
+| `ClfnObjectTable` |  | |  |  |  |  |
+| `ClassType` |  | |  | `cast(CharcVal.ClassType as klassenart preserving type)` |  |  |
+| `ClfnObjectType` |  | |  |  |  |  |
+| `$session.system_date).Characteristic` |  | |  | `CharcVal._Characteristic(P_KeyDate: $session.system_date).Characteristic` |  |  |
+| `CharcValue` |  | |  |  |  |  |
+| `_RepetitiveMfgConfirmation` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_BatchPlant` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_ClassType` | | ✓ | | | | |
 
 ## Associations
 

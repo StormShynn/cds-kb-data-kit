@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSpecAdditionalCatalog` | ✓ | |  | `katalogart` |
-| `InspSpecAdditionalCodeGroup` | ✓ | |  | `codegruppe` |
-| `CodeGroupIsInactive` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |
-| `CodeGroupStatus` |  | |  | `status` |
-| `_InspSpecAdditionalCatalog` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSpecAdditionalCatalog` | ✓ | |  | `katalogart` |  |  |
+| `InspSpecAdditionalCodeGroup` | ✓ | |  | `codegruppe` |  |  |
+| `CodeGroupIsInactive` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |  |  |
+| `CodeGroupStatus` |  | |  | `status` |  |  |
+| `_InspSpecAdditionalCatalog` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

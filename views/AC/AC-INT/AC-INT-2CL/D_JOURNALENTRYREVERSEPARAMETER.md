@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PostingDate` |  | |  | `budat` |
-| `ReversalReason` |  | |  | `acpi_stgrd` |
-| `CreatedByUser` |  | |  | `usnam` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PostingDate` |  | |  | `budat` |  |  |
+| `ReversalReason` |  | |  | `acpi_stgrd` |  |  |
+| `CreatedByUser` |  | |  | `usnam` |  |  |
 
 ## Source Code
 

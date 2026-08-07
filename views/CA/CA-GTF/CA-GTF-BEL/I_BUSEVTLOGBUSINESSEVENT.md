@@ -28,46 +28,46 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessEventUUID` | ✓ | |  |  |
-| `SAPObjectType` | ✓ | |  |  |
-| `BusEvtLogCreationDate` | ✓ | |  |  |
-| `SAPObjectNodeType` |  | |  |  |
-| `EventOperation` |  | |  |  |
-| `SAPBusinessObjectNodeKey1` |  | |  |  |
-| `SAPBusinessObjectNodeKey2` |  | |  |  |
-| `SAPBusinessObjectNodeKey3` |  | |  |  |
-| `SAPBusinessObjectNodeKey4` |  | |  |  |
-| `SAPBusinessObjectNodeKey5` |  | |  |  |
-| `SAPBusinessObjectNodeKey6` |  | |  |  |
-| `SAPBusinessObjectNodeKey7` |  | |  |  |
-| `SAPBusinessObjectNodeKey8` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `BusEvtLogCreationDateTime` |  | |  |  |
-| `BusinessEventLogLogicalSystem` |  | |  |  |
-| `BusEvtLogIsDeleted` |  | |  |  |
-| `BusinessEventLogEventVersion` |  | |  |  |
-| `BusEvtLogTransactionID` |  | |  |  |
-| `BusEvtLogLastChangedDateTime` |  | |  |  |
-| `IsTechnicalUser` |  | |  |  |
-| `BusinessEventLogSource` |  | |  |  |
-| `EventProducerNamespace` |  | |  |  |
-| `BusEvtLogEventHasFullPayload` |  | |  |  |
-| `BusEvtLogUserInteractionType` |  | |  |  |
-| `BusEvtLgUsrIntactnTypeValue` |  | |  |  |
-| `ChangeDocument` |  | |  |  |
-| `ChangeDocItemChangeType` |  | |  |  |
-| `SAPBusinessObjectNodeKey1Name` |  | |  |  |
-| `SAPBusinessObjectNodeKey2Name` |  | |  |  |
-| `SAPBusinessObjectNodeKey3Name` |  | |  |  |
-| `SAPBusinessObjectNodeKey4Name` |  | |  |  |
-| `SAPBusinessObjectNodeKey5Name` |  | |  |  |
-| `SAPBusinessObjectNodeKey6Name` |  | |  |  |
-| `SAPBusinessObjectNodeKey7Name` |  | |  |  |
-| `SAPBusinessObjectNodeKey8Name` |  | |  |  |
-| `BusEvtLogReferenceEventUUID` |  | |  |  |
-| `BusEvtLogBusinessActivity` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessEventUUID` | ✓ | |  |  |  |  |
+| `SAPObjectType` | ✓ | |  |  |  |  |
+| `BusEvtLogCreationDate` | ✓ | |  |  |  |  |
+| `SAPObjectNodeType` |  | |  |  |  |  |
+| `EventOperation` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey1` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey2` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey3` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey4` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey5` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey6` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey7` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey8` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `BusEvtLogCreationDateTime` |  | |  |  |  |  |
+| `BusinessEventLogLogicalSystem` |  | |  |  |  |  |
+| `BusEvtLogIsDeleted` |  | |  |  |  |  |
+| `BusinessEventLogEventVersion` |  | |  |  |  |  |
+| `BusEvtLogTransactionID` |  | |  |  |  |  |
+| `BusEvtLogLastChangedDateTime` |  | |  |  |  |  |
+| `IsTechnicalUser` |  | |  |  |  |  |
+| `BusinessEventLogSource` |  | |  |  |  |  |
+| `EventProducerNamespace` |  | |  |  |  |  |
+| `BusEvtLogEventHasFullPayload` |  | |  |  |  |  |
+| `BusEvtLogUserInteractionType` |  | |  |  |  |  |
+| `BusEvtLgUsrIntactnTypeValue` |  | |  |  |  |  |
+| `ChangeDocument` |  | |  |  |  |  |
+| `ChangeDocItemChangeType` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey1Name` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey2Name` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey3Name` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey4Name` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey5Name` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey6Name` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey7Name` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey8Name` |  | |  |  |  |  |
+| `BusEvtLogReferenceEventUUID` |  | |  |  |  |  |
+| `BusEvtLogBusinessActivity` |  | |  |  |  |  |
 
 ## Source Code
 

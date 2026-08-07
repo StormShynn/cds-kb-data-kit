@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REArchitectureObjectRltnUUID` | ✓ | |  |  |
-| `REArchitectureObjectOID` |  | |  |  |
-| `REArchitectureObjectParentOID` |  | |  |  |
-| `REArchitectureObjectUUID` |  | |  |  |
-| `REArchitectureObjectNumber` |  | |  |  |
-| `REArchitectureObjectName` |  | |  |  |
-| `REArchitectureObjectType` |  | |  |  |
-| `REArchitectureObjectTypeText` |  | |  |  |
-| `REAuthorizationGroup` |  | |  |  |
-| `REArchitectureObjectCategory` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REArchitectureObjectRltnUUID` | ✓ | |  |  |  |  |
+| `REArchitectureObjectOID` |  | |  |  |  |  |
+| `REArchitectureObjectParentOID` |  | |  |  |  |  |
+| `REArchitectureObjectUUID` |  | |  |  |  |  |
+| `REArchitectureObjectNumber` |  | |  |  |  |  |
+| `REArchitectureObjectName` |  | |  |  |  |  |
+| `REArchitectureObjectType` |  | |  |  |  |  |
+| `REArchitectureObjectTypeText` |  | |  |  |  |  |
+| `REAuthorizationGroup` |  | |  |  |  |  |
+| `REArchitectureObjectCategory` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
 
 ## Source Code
 

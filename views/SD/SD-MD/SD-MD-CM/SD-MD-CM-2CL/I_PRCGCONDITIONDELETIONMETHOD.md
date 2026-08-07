@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PrcgConditionDeletionMethod` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kdele )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PrcgConditionDeletionMethod` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kdele )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

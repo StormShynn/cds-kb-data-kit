@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalLocation` | ✓ | |  | `cast(FunctionalLocation as tplnr_unconverted preserving type )` |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `_FunctionalLocationText` | | ✓ | | |
-| `_LocationAccountAssignment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  | `cast(FunctionalLocation as tplnr_unconverted preserving type )` |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `_FunctionalLocationText` | | ✓ | | | | |
+| `_LocationAccountAssignment` | | ✓ | | | | |
 
 ## Source Code
 

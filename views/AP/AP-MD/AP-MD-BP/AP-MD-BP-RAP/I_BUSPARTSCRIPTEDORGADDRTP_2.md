@@ -30,65 +30,65 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `AddressNumber` | ✓ | |  |  |
-| `AddressRepresentationCode` | ✓ | |  |  |
-| `AddrRepCodeForEditValue` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `BusinessPartnerAddressUUID` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `AdditionalStreetSuffixName` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `PrfrdCommMediumType` |  | |  |  |
-| `POBoxLobbyName` |  | |  |  |
-| `AddressTimeZone` |  | |  |  |
-| `FullName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `District` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `HomeCityName` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetPrefixName` |  | |  |  |
-| `AdditionalStreetPrefixName` |  | |  |  |
-| `StreetSuffixName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `County` |  | |  |  |
-| `BPCountyText` |  | |  |  |
-| `FormattedAddress` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `BusinessPartnerName1` |  | |  |  |
-| `BusinessPartnerName2` |  | |  |  |
-| `BusinessPartnerName3` |  | |  |  |
-| `BusinessPartnerName4` |  | |  |  |
-| `SearchTerm1` |  | |  |  |
-| `SearchTerm2` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `BPAddressIsProtected` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_BusinessPartnerAddress` | | ✓ | | |
-| `_BPProtectedAddress` | | ✓ | | |
-| `_AddressRepresentation` | | ✓ | | |
-| `_FormOfAddress` | | ✓ | | |
-| `_AuthorizationGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `AddressNumber` | ✓ | |  |  |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  |  |  |
+| `AddrRepCodeForEditValue` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `BusinessPartnerAddressUUID` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `AdditionalStreetSuffixName` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `PrfrdCommMediumType` |  | |  |  |  |  |
+| `POBoxLobbyName` |  | |  |  |  |  |
+| `AddressTimeZone` |  | |  |  |  |  |
+| `FullName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `District` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `HomeCityName` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetPrefixName` |  | |  |  |  |  |
+| `AdditionalStreetPrefixName` |  | |  |  |  |  |
+| `StreetSuffixName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `County` |  | |  |  |  |  |
+| `BPCountyText` |  | |  |  |  |  |
+| `FormattedAddress` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `BusinessPartnerName1` |  | |  |  |  |  |
+| `BusinessPartnerName2` |  | |  |  |  |  |
+| `BusinessPartnerName3` |  | |  |  |  |  |
+| `BusinessPartnerName4` |  | |  |  |  |  |
+| `SearchTerm1` |  | |  |  |  |  |
+| `SearchTerm2` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `BPAddressIsProtected` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_BusinessPartnerAddress` | | ✓ | | | | |
+| `_BPProtectedAddress` | | ✓ | | | | |
+| `_AddressRepresentation` | | ✓ | | | | |
+| `_FormOfAddress` | | ✓ | | | | |
+| `_AuthorizationGroup` | | ✓ | | | | |
 
 ## Source Code
 

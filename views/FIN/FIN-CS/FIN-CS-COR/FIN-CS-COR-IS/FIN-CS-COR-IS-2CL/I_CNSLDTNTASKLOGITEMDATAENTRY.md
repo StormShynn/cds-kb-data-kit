@@ -29,184 +29,184 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnTaskLogUUID` | ✓ | |  |  |
-| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |
-| `CnsldtnTaskLogItemType` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `PostingFiscalYear` |  | |  |  |
-| `ConsolidationDocumentNumber` |  | |  |  |
-| `ConsolidationVersion` |  | |  |  |
-| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  |  |
-| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  |  |
-| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  |  |
-| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  |  |
-| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  |  |
-| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  |  |
-| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  |  |
-| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  |  |
-| `CnsldtnTriggeringAmtLoclCrcy` |  | |  |  |
-| `CnsldtnTriggeringAmtInLoclCrcy` |  | |  |  |
-| `CnsldtnTriggeringAmtGrpCrcy` |  | |  |  |
-| `CnsldtnTriggeringAmtInGrpCrcy` |  | |  |  |
-| `CnsldtnTriggeringAmtTransCrcy` |  | |  |  |
-| `CnsldtnTriggeringAmtInTC` |  | |  |  |
-| `CnsldtnTriggeringQtyBaseUnit` |  | |  |  |
-| `CnsldtnTriggeringQtyInBsUnt` |  | |  |  |
-| `ConsolidationUnit` |  | |  |  |
-| `ConsolidationChartOfAccounts` |  | |  |  |
-| `CnsldtnFinancialStatementItem` |  | |  |  |
-| `PartnerConsolidationUnit` |  | |  |  |
-| `ConsolidationGroup` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `SubItemCategory` |  | |  |  |
-| `SubItem` |  | |  |  |
-| `PostingLevel` |  | |  |  |
-| `ConsolidationApportionment` |  | |  |  |
-| `CurrencyConversionsDiffType` |  | |  |  |
-| `ConsolidationDocumentType` |  | |  |  |
-| `InvesteeConsolidationUnit` |  | |  |  |
-| `InvestmentActivityType` |  | |  |  |
-| `InvestmentActivity` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PartnerCostCenter` |  | |  |  |
-| `FinancialTransactionType` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CnsldtnTskLgItmRowNmbr` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FinancialServicesBranch` |  | |  |  |
-| `GHGScope2CalculationMethod` |  | |  |  |
-| `CashLedgerAccount` |  | |  |  |
-| `CnsldtnCashLedgerChartOfAccts` |  | |  |  |
-| `GHGScope2ContractualInstrument` |  | |  |  |
-| `CustomerSupplierCountry` |  | |  |  |
-| `FinancialDataSource` |  | |  |  |
-| `CnsldtnLogHeaderDateTime` |  | |  |  |
-| `Fund` |  | |  |  |
-| `GHGCategory` |  | |  |  |
-| `GHGScope` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `SustainabilityModeOfTransport` |  | |  |  |
-| `FinancialServicesProductGroup` |  | |  |  |
-| `SoldProduct` |  | |  |  |
-| `SoldProductGroup` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `ConsolidationLedger` |  | |  |  |
-| `BillingDocumentType` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Material` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Segment` |  | |  |  |
-| `CnsldtnTaskLogItemLatestRecord` |  | |  |  |
-| `CnsldtnTskLgNode` |  | |  |  |
-| `CnsldtnTskLgParNode` |  | |  |  |
-| `ConsolidationAcquisitionPeriod` |  | |  |  |
-| `ConsolidationAcquisitionYear` |  | |  |  |
-| `ConsolidationDimension` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `CustomerSupplierCorporateGroup` |  | |  |  |
-| `CustomerSupplierIndustry` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `FinancialManagementArea` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `Division` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `PartnerFunctionalArea` |  | |  |  |
-| `PartnerProfitCenter` |  | |  |  |
-| `PartnerSegment` |  | |  |  |
-| `PartnerWBSElementExternalID` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `GHGDataQualityCharacteristic` |  | |  |  |
-| `GHGEnergyClassification` |  | |  |  |
-| `GHGEnergyMix` |  | |  |  |
-| `GHGEnergySourcingType` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `ProjectExternalID` |  | |  |  |
-| `CnsldtnAdhocItem` |  | |  |  |
-| `CnsldtnAdhocSet` |  | |  |  |
-| `CnsldtnAdhocSetItem` |  | |  |  |
-| `_ConsolidationTaskLog` | | ✓ | | |
-| `_ConsolidationTaskLogMessage` | | ✓ | | |
-| `_CnsldtnVersion` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | |
-| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | |
-| `_CnsldtnTriggeringAmtLoclCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringAmtGrpCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringAmtTransCrcy` | | ✓ | | |
-| `_CnsldtnTriggeringQtyBaseUnit` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_CnsldtnFSItem` | | ✓ | | |
-| `_CnsldtnUnitPartner` | | ✓ | | |
-| `_CnsldtnGroup` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_CnsldtnSubitemCategory` | | ✓ | | |
-| `_CnsldtnSubItem` | | ✓ | | |
-| `_CnsldtnPostingLevel` | | ✓ | | |
-| `_CnsldtnApportionment` | | ✓ | | |
-| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | |
-| `_CnsldtnDocumentType` | | ✓ | | |
-| `_CnsldtnUnitInvestee` | | ✓ | | |
-| `_CnsldtnInvmtActy` | | ✓ | | |
-| `_CnsldtnFinTransType` | | ✓ | | |
-| `_CnsldtnCustomerGroup` | | ✓ | | |
-| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | |
-| `_CnsldtnCashLedgerAccount` | | ✓ | | |
-| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | |
-| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | |
-| `_CnsldtnCountry` | | ✓ | | |
-| `_CnsldtnGHGCategory` | | ✓ | | |
-| `_CnsldtnGHGScope` | | ✓ | | |
-| `_CnsldtnSustModeOfTransport` | | ✓ | | |
-| `_CnsldtnProduct` | | ✓ | | |
-| `_CnsldtnProductGroup` | | ✓ | | |
-| `_CnsldtnBillingDocumentType` | | ✓ | | |
-| `_CnsldtnBusinessArea` | | ✓ | | |
-| `_CnsldtnCustomer` | | ✓ | | |
-| `_CnsldtnMaterial` | | ✓ | | |
-| `_CnsldtnPlant` | | ✓ | | |
-| `_CnsldtnSegment` | | ✓ | | |
-| `_CnsldtnTaskLogItemType` | | ✓ | | |
-| `_CnsldtnDimension` | | ✓ | | |
-| `_CnsldtnControllingArea` | | ✓ | | |
-| `_CnsldtnCostCenter` | | ✓ | | |
-| `_CnsldtnDistributionChannel` | | ✓ | | |
-| `_CnsldtnFinancialDataSource` | | ✓ | | |
-| `_CnsldtnFinManagementArea` | | ✓ | | |
-| `_CnsldtnFinServicesBranch` | | ✓ | | |
-| `_CnsldtnFunctionalArea` | | ✓ | | |
-| `_CnsldtnFund` | | ✓ | | |
-| `_CnsldtnGrant` | | ✓ | | |
-| `_CnsldtnMaterialGroup` | | ✓ | | |
-| `_CnsldtnOrder` | | ✓ | | |
-| `_CnsldtnDivision` | | ✓ | | |
-| `_CnsldtnBusinessAreaPartner` | | ✓ | | |
-| `_CnsldtnFunctionalAreaPartner` | | ✓ | | |
-| `_CnsldtnProfitCenterPartner` | | ✓ | | |
-| `_CnsldtnSegmentPartner` | | ✓ | | |
-| `_CnsldtnProfitCenter` | | ✓ | | |
-| `_CnsldtnSalesDistrict` | | ✓ | | |
-| `_CnsldtnSalesOrganization` | | ✓ | | |
-| `_CnsldtnSupplier` | | ✓ | | |
-| `_CnsldtnGHGDtaQltyCharc` | | ✓ | | |
-| `_CnsldtnGHGEngyClassification` | | ✓ | | |
-| `_CnsldtnGHGEnergyMix` | | ✓ | | |
-| `_CnsldtnGHGEnergySourcingType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  |  |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |  |  |
+| `CnsldtnTaskLogItemType` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `PostingFiscalYear` |  | |  |  |  |  |
+| `ConsolidationDocumentNumber` |  | |  |  |  |  |
+| `ConsolidationVersion` |  | |  |  |  |  |
+| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  |  |  |  |
+| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  |  |  |  |
+| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  |  |  |  |
+| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  |  |  |  |
+| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  |  |  |  |
+| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  |  |  |  |
+| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  |  |  |  |
+| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  |  |  |  |
+| `CnsldtnTriggeringAmtLoclCrcy` |  | |  |  |  |  |
+| `CnsldtnTriggeringAmtInLoclCrcy` |  | |  |  |  |  |
+| `CnsldtnTriggeringAmtGrpCrcy` |  | |  |  |  |  |
+| `CnsldtnTriggeringAmtInGrpCrcy` |  | |  |  |  |  |
+| `CnsldtnTriggeringAmtTransCrcy` |  | |  |  |  |  |
+| `CnsldtnTriggeringAmtInTC` |  | |  |  |  |  |
+| `CnsldtnTriggeringQtyBaseUnit` |  | |  |  |  |  |
+| `CnsldtnTriggeringQtyInBsUnt` |  | |  |  |  |  |
+| `ConsolidationUnit` |  | |  |  |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |  |  |
+| `ConsolidationGroup` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `SubItemCategory` |  | |  |  |  |  |
+| `SubItem` |  | |  |  |  |  |
+| `PostingLevel` |  | |  |  |  |  |
+| `ConsolidationApportionment` |  | |  |  |  |  |
+| `CurrencyConversionsDiffType` |  | |  |  |  |  |
+| `ConsolidationDocumentType` |  | |  |  |  |  |
+| `InvesteeConsolidationUnit` |  | |  |  |  |  |
+| `InvestmentActivityType` |  | |  |  |  |  |
+| `InvestmentActivity` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `FinancialTransactionType` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `CnsldtnTskLgItmRowNmbr` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FinancialServicesBranch` |  | |  |  |  |  |
+| `GHGScope2CalculationMethod` |  | |  |  |  |  |
+| `CashLedgerAccount` |  | |  |  |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  |  |  |  |
+| `GHGScope2ContractualInstrument` |  | |  |  |  |  |
+| `CustomerSupplierCountry` |  | |  |  |  |  |
+| `FinancialDataSource` |  | |  |  |  |  |
+| `CnsldtnLogHeaderDateTime` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `GHGCategory` |  | |  |  |  |  |
+| `GHGScope` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `SustainabilityModeOfTransport` |  | |  |  |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |  |  |
+| `SoldProduct` |  | |  |  |  |  |
+| `SoldProductGroup` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `ConsolidationLedger` |  | |  |  |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `CnsldtnTaskLogItemLatestRecord` |  | |  |  |  |  |
+| `CnsldtnTskLgNode` |  | |  |  |  |  |
+| `CnsldtnTskLgParNode` |  | |  |  |  |  |
+| `ConsolidationAcquisitionPeriod` |  | |  |  |  |  |
+| `ConsolidationAcquisitionYear` |  | |  |  |  |  |
+| `ConsolidationDimension` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  |  |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `FinancialManagementArea` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `PartnerProfitCenter` |  | |  |  |  |  |
+| `PartnerSegment` |  | |  |  |  |  |
+| `PartnerWBSElementExternalID` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `GHGDataQualityCharacteristic` |  | |  |  |  |  |
+| `GHGEnergyClassification` |  | |  |  |  |  |
+| `GHGEnergyMix` |  | |  |  |  |  |
+| `GHGEnergySourcingType` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `ProjectExternalID` |  | |  |  |  |  |
+| `CnsldtnAdhocItem` |  | |  |  |  |  |
+| `CnsldtnAdhocSet` |  | |  |  |  |  |
+| `CnsldtnAdhocSetItem` |  | |  |  |  |  |
+| `_ConsolidationTaskLog` | | ✓ | | | | |
+| `_ConsolidationTaskLogMessage` | | ✓ | | | | |
+| `_CnsldtnVersion` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | | | |
+| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtLoclCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtGrpCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringAmtTransCrcy` | | ✓ | | | | |
+| `_CnsldtnTriggeringQtyBaseUnit` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_CnsldtnFSItem` | | ✓ | | | | |
+| `_CnsldtnUnitPartner` | | ✓ | | | | |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | | | |
+| `_CnsldtnSubItem` | | ✓ | | | | |
+| `_CnsldtnPostingLevel` | | ✓ | | | | |
+| `_CnsldtnApportionment` | | ✓ | | | | |
+| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | | | |
+| `_CnsldtnDocumentType` | | ✓ | | | | |
+| `_CnsldtnUnitInvestee` | | ✓ | | | | |
+| `_CnsldtnInvmtActy` | | ✓ | | | | |
+| `_CnsldtnFinTransType` | | ✓ | | | | |
+| `_CnsldtnCustomerGroup` | | ✓ | | | | |
+| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | | | |
+| `_CnsldtnCashLedgerAccount` | | ✓ | | | | |
+| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | | | |
+| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | | | |
+| `_CnsldtnCountry` | | ✓ | | | | |
+| `_CnsldtnGHGCategory` | | ✓ | | | | |
+| `_CnsldtnGHGScope` | | ✓ | | | | |
+| `_CnsldtnSustModeOfTransport` | | ✓ | | | | |
+| `_CnsldtnProduct` | | ✓ | | | | |
+| `_CnsldtnProductGroup` | | ✓ | | | | |
+| `_CnsldtnBillingDocumentType` | | ✓ | | | | |
+| `_CnsldtnBusinessArea` | | ✓ | | | | |
+| `_CnsldtnCustomer` | | ✓ | | | | |
+| `_CnsldtnMaterial` | | ✓ | | | | |
+| `_CnsldtnPlant` | | ✓ | | | | |
+| `_CnsldtnSegment` | | ✓ | | | | |
+| `_CnsldtnTaskLogItemType` | | ✓ | | | | |
+| `_CnsldtnDimension` | | ✓ | | | | |
+| `_CnsldtnControllingArea` | | ✓ | | | | |
+| `_CnsldtnCostCenter` | | ✓ | | | | |
+| `_CnsldtnDistributionChannel` | | ✓ | | | | |
+| `_CnsldtnFinancialDataSource` | | ✓ | | | | |
+| `_CnsldtnFinManagementArea` | | ✓ | | | | |
+| `_CnsldtnFinServicesBranch` | | ✓ | | | | |
+| `_CnsldtnFunctionalArea` | | ✓ | | | | |
+| `_CnsldtnFund` | | ✓ | | | | |
+| `_CnsldtnGrant` | | ✓ | | | | |
+| `_CnsldtnMaterialGroup` | | ✓ | | | | |
+| `_CnsldtnOrder` | | ✓ | | | | |
+| `_CnsldtnDivision` | | ✓ | | | | |
+| `_CnsldtnBusinessAreaPartner` | | ✓ | | | | |
+| `_CnsldtnFunctionalAreaPartner` | | ✓ | | | | |
+| `_CnsldtnProfitCenterPartner` | | ✓ | | | | |
+| `_CnsldtnSegmentPartner` | | ✓ | | | | |
+| `_CnsldtnProfitCenter` | | ✓ | | | | |
+| `_CnsldtnSalesDistrict` | | ✓ | | | | |
+| `_CnsldtnSalesOrganization` | | ✓ | | | | |
+| `_CnsldtnSupplier` | | ✓ | | | | |
+| `_CnsldtnGHGDtaQltyCharc` | | ✓ | | | | |
+| `_CnsldtnGHGEngyClassification` | | ✓ | | | | |
+| `_CnsldtnGHGEnergyMix` | | ✓ | | | | |
+| `_CnsldtnGHGEnergySourcingType` | | ✓ | | | | |
 
 ## Associations
 

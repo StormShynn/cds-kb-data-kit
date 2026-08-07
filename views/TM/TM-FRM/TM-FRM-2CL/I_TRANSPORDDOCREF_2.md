@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderDocRefUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_docref_key preserving type )` |
-| `TransportationOrderUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_db_key preserving type)` |
-| `TranspOrdDocReferenceID` |  | |  | `btd_id` |
-| `TranspOrdDocReferenceType` |  | |  | `btd_tco` |
-| `TranspOrdOrigRefRootUUID` |  | |  | `cast(orig_ref_root as /scmtms/orig_ref_root_key preserving type )` |
-| `TranspOrdDocReferenceItmType` |  | |  | `cast(btditem_tco as /scmtms/base_btd_item_tco preserving type )` |
-| `TranspOrdDocReferenceItmID` |  | |  | `btditem_id` |
-| `TranspOrdDocumentReferenceDate` |  | |  | `btd_date` |
-| `TranspOrdDocRefIssuerName` |  | |  | `btd_issuer` |
-| `TranspOrdDocReferenceOrigin` |  | |  | `cast(origin as /scmtms/vdm_docref_origin preserving type )` |
-| `_BusTransDocTypeCode` | | ✓ | | |
-| `_BusTransDocItemTypeCode` | | ✓ | | |
-| `_TransportationOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderDocRefUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_docref_key preserving type )` |  |  |
+| `TransportationOrderUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_db_key preserving type)` |  |  |
+| `TranspOrdDocReferenceID` |  | |  | `btd_id` |  |  |
+| `TranspOrdDocReferenceType` |  | |  | `btd_tco` |  |  |
+| `TranspOrdOrigRefRootUUID` |  | |  | `cast(orig_ref_root as /scmtms/orig_ref_root_key preserving type )` |  |  |
+| `TranspOrdDocReferenceItmType` |  | |  | `cast(btditem_tco as /scmtms/base_btd_item_tco preserving type )` |  |  |
+| `TranspOrdDocReferenceItmID` |  | |  | `btditem_id` |  |  |
+| `TranspOrdDocumentReferenceDate` |  | |  | `btd_date` |  |  |
+| `TranspOrdDocRefIssuerName` |  | |  | `btd_issuer` |  |  |
+| `TranspOrdDocReferenceOrigin` |  | |  | `cast(origin as /scmtms/vdm_docref_origin preserving type )` |  |  |
+| `_BusTransDocTypeCode` | | ✓ | | | | |
+| `_BusTransDocItemTypeCode` | | ✓ | | | | |
+| `_TransportationOrder` | | ✓ | | | | |
 
 ## Associations
 

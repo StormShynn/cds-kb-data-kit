@@ -28,42 +28,42 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |
-| `ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |
-| `ElectronicDocCountry` |  | | `_ElectronicDoc` | `ElectronicDocCountry` |
-| `ElectronicDocSourceType` |  | | `_ElectronicDoc` | `ElectronicDocSourceType` |
-| `ElectronicDocSourceKey` |  | | `_ElectronicDoc` | `ElectronicDocSourceKey` |
-| `ElectronicDocType` |  | | `_ElectronicDoc` | `ElectronicDocType` |
-| `ElectronicDocProcessStatus` |  | | `_ElectronicDoc` | `ElectronicDocProcessStatus` |
-| `ElectronicDocProcess` |  | | `_ElectronicDoc` | `ElectronicDocProcess` |
-| `IN_EDocEInvcExtNmbr` |  | |  |  |
-| `IN_EDocEInvcBusinessPlace` |  | |  |  |
-| `IN_ElectronicDocInvcRefNmbr` |  | |  |  |
-| `IN_ElectronicDocAcknNmbr` |  | |  |  |
-| `IN_ElectronicDocAcknDate` |  | |  |  |
-| `IN_ElectronicDocAcknTime` |  | |  |  |
-| `IN_ElectronicDocCancelDate` |  | |  |  |
-| `IN_ElectronicDocCancelTime` |  | |  |  |
-| `IN_ElectronicDocCancReasonCode` |  | |  |  |
-| `IN_EDocCancelRemarksTxt` |  | |  |  |
-| `IN_ElectronicDocQRCodeTxt` |  | |  |  |
-| `IN_EDocEInvcEWbillNmbr` |  | |  |  |
-| `IN_EDocEInvcEWbillCreateDate` |  | |  |  |
-| `IN_EDocEInvcEWbillCreateTime` |  | |  |  |
-| `IN_EDocEInvcEWbillValidityDate` |  | |  |  |
-| `IN_EDocEInvcEWbillValidityTime` |  | |  |  |
-| `IN_EDocEWbillStatus` |  | |  |  |
-| `IN_EDocEInvcEditActionFlag` |  | |  |  |
-| `IN_EDocEInvcTransptDocNmbr` |  | |  |  |
-| `IN_EDocEInvcTransptDocDate` |  | |  |  |
-| `IN_EDocEInvcTransptDstncVal` |  | |  |  |
-| `IN_EDocEInvcVehicleNumber` |  | |  |  |
-| `IN_EDocEInvcVehicleType` |  | |  |  |
-| `IN_EDocEInvcTransptMode` |  | |  |  |
-| `IN_EDocEInvcTransptrName` |  | |  |  |
-| `IN_EDocEInvcTransptrGSTIN` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |  |  |
+| `ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |  |  |
+| `ElectronicDocCountry` |  | | `_ElectronicDoc` | `ElectronicDocCountry` |  |  |
+| `ElectronicDocSourceType` |  | | `_ElectronicDoc` | `ElectronicDocSourceType` |  |  |
+| `ElectronicDocSourceKey` |  | | `_ElectronicDoc` | `ElectronicDocSourceKey` |  |  |
+| `ElectronicDocType` |  | | `_ElectronicDoc` | `ElectronicDocType` |  |  |
+| `ElectronicDocProcessStatus` |  | | `_ElectronicDoc` | `ElectronicDocProcessStatus` |  |  |
+| `ElectronicDocProcess` |  | | `_ElectronicDoc` | `ElectronicDocProcess` |  |  |
+| `IN_EDocEInvcExtNmbr` |  | |  |  |  |  |
+| `IN_EDocEInvcBusinessPlace` |  | |  |  |  |  |
+| `IN_ElectronicDocInvcRefNmbr` |  | |  |  |  |  |
+| `IN_ElectronicDocAcknNmbr` |  | |  |  |  |  |
+| `IN_ElectronicDocAcknDate` |  | |  |  |  |  |
+| `IN_ElectronicDocAcknTime` |  | |  |  |  |  |
+| `IN_ElectronicDocCancelDate` |  | |  |  |  |  |
+| `IN_ElectronicDocCancelTime` |  | |  |  |  |  |
+| `IN_ElectronicDocCancReasonCode` |  | |  |  |  |  |
+| `IN_EDocCancelRemarksTxt` |  | |  |  |  |  |
+| `IN_ElectronicDocQRCodeTxt` |  | |  |  |  |  |
+| `IN_EDocEInvcEWbillNmbr` |  | |  |  |  |  |
+| `IN_EDocEInvcEWbillCreateDate` |  | |  |  |  |  |
+| `IN_EDocEInvcEWbillCreateTime` |  | |  |  |  |  |
+| `IN_EDocEInvcEWbillValidityDate` |  | |  |  |  |  |
+| `IN_EDocEInvcEWbillValidityTime` |  | |  |  |  |  |
+| `IN_EDocEWbillStatus` |  | |  |  |  |  |
+| `IN_EDocEInvcEditActionFlag` |  | |  |  |  |  |
+| `IN_EDocEInvcTransptDocNmbr` |  | |  |  |  |  |
+| `IN_EDocEInvcTransptDocDate` |  | |  |  |  |  |
+| `IN_EDocEInvcTransptDstncVal` |  | |  |  |  |  |
+| `IN_EDocEInvcVehicleNumber` |  | |  |  |  |  |
+| `IN_EDocEInvcVehicleType` |  | |  |  |  |  |
+| `IN_EDocEInvcTransptMode` |  | |  |  |  |  |
+| `IN_EDocEInvcTransptrName` |  | |  |  |  |  |
+| `IN_EDocEInvcTransptrGSTIN` |  | |  |  |  |  |
 
 ## Source Code
 

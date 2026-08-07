@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land` |
-| `NationalClassification` | ✓ | |  | `glo_natl_clfn_code` |
-| `_Country` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land` |  |  |
+| `NationalClassification` | ✓ | |  | `glo_natl_clfn_code` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

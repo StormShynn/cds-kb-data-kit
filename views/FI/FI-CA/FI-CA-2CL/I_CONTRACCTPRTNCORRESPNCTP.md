@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  |  |
-| `BusinessPartner` | ✓ | |  |  |
-| `ContrAcctPrtnCorrespncUUID` | ✓ | |  |  |
-| `AddrIDOfCorrespncRcpnt` |  | |  |  |
-| `CorrespncRcpntAddrIsSpecified` |  | |  |  |
-| `CACorrespondenceType` |  | |  |  |
-| `CorrespondenceRole` |  | |  |  |
-| `CorrespondenceRecipient` |  | |  |  |
-| `CAOriglPartIsNotRcvgCorrespnc` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_CACorrespondenceType` | | ✓ | | |
-| `_ContractAccount` | | ✓ | | |
-| `_ContractAccountPartner` | | ✓ | | |
-| `_CorrespncRole` | | ✓ | | |
-| `_CorrespondenceRecipient` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `ContrAcctPrtnCorrespncUUID` | ✓ | |  |  |  |  |
+| `AddrIDOfCorrespncRcpnt` |  | |  |  |  |  |
+| `CorrespncRcpntAddrIsSpecified` |  | |  |  |  |  |
+| `CACorrespondenceType` |  | |  |  |  |  |
+| `CorrespondenceRole` |  | |  |  |  |  |
+| `CorrespondenceRecipient` |  | |  |  |  |  |
+| `CAOriglPartIsNotRcvgCorrespnc` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CACorrespondenceType` | | ✓ | | | | |
+| `_ContractAccount` | | ✓ | | | | |
+| `_ContractAccountPartner` | | ✓ | | | | |
+| `_CorrespncRole` | | ✓ | | | | |
+| `_CorrespondenceRecipient` | | ✓ | | | | |
 
 ## Source Code
 

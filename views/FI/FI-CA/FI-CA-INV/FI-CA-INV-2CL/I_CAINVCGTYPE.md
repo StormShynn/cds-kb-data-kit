@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgType` | ✓ | | `_tfk2603a` | `inv_type` |
-| `CAApplicationArea` | ✓ | | `_tfk2603a` | `applk` |
-| `_CAInvcgTypeText` | | ✓ | | |
-| `_CAApplicationArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgType` | ✓ | | `_tfk2603a` | `inv_type` |  |  |
+| `CAApplicationArea` | ✓ | | `_tfk2603a` | `applk` |  |  |
+| `_CAInvcgTypeText` | | ✓ | | | | |
+| `_CAApplicationArea` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharacteristicAttributeCodeGrp` | ✓ | |  |  |
-| `CodeGroupStatus` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharacteristicAttributeCodeGrp` | ✓ | |  |  |  |  |
+| `CodeGroupStatus` |  | |  |  |  |  |
 
 ## Source Code
 

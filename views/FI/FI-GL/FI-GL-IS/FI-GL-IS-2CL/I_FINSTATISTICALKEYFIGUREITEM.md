@@ -29,81 +29,81 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` | ✓ | |  | `rldnr` |
-| `CompanyCode` | ✓ | |  | `rbukrs` |
-| `StatisticalKeyFigure` | ✓ | |  | `stagr` |
-| `FiscalYear` | ✓ | |  | `RYEAR` |
-| `FiscalPeriod` | ✓ | |  | `poper` |
-| `StatisticalKeyFigureItem` | ✓ | |  | `recid` |
-| `FiscalYearPeriod` |  | |  | `FISCYEARPER` |
-| `FiscalYearVariant` |  | |  | `periv` |
-| `IsSpecialPeriod` |  | |  |  |
-| `StatisticalKeyFigureCategory` |  | |  | `grtyp` |
-| `StatisticalKeyFigQtyUnit` |  | |  | `runit` |
-| `StatisticalKeyFigureQuantity` |  | |  | `} cast( P_FinStatisticalKeyFigureItem.msl as fis_smexxx_long )` |
-| `StatisticalKeyFigFixedQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_fixed_smexxx_long preserving type )` |
-| `StatisticalKeyFigSumQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_sum_smexxx_long preserving type )` |
-| `StatisticalKeyFigureActlQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_smexxx_long preserving type )` |
-| `StatisticalKeyFigurePlanQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_smexxx_long preserving type )` |
-| `StatisticalKeyFigActlFixedQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then ( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_fixed_smexxx_long preserving type )` |
-| `StatisticalKeyFigPlanFixedQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then ( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_fixed_smexxx_long preserving type )` |
-| `StatisticalKeyFigActlSumQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then ( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_sum_smexxx_long preserving type )` |
-| `StatisticalKeyFigPlanSumQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then ( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_sum_smexxx_long preserving type )` |
-| `IntmdStatisticalKeyFigFixedQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_fixed_smexxx_long preserving type )` |
-| `IntmdStatisticalKeyFigSumQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_sum_smexxx_long preserving type )` |
-| `StstclKeyFigIntmdActlFixedQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then ( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_fixed_smexxx_long preserving type )` |
-| `StstclKeyFigIntmdPlanFixedQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then ( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_fixed_smexxx_long preserving type )` |
-| `StstclKeyFigIntmdActlSumQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then ( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_sum_smexxx_long preserving type )` |
-| `StstclKeyFigIntmdPlanSumQty` |  | |  | `} cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then ( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_sum_smexxx_long preserving type )` |
-| `GLRecordType` |  | |  | `rrcty` |
-| `PlanningCategory` |  | |  | `category` |
-| `CostCenter` |  | |  | `rcntr` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `FunctionalArea` |  | |  | `rfarea` |
-| `BusinessArea` |  | |  | `rbusa` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `Segment` |  | |  | `segment` |
-| `ControllingBusTransacType` |  | |  | `vorgn` |
-| `AccountAssignmentType` |  | |  | `accasty` |
-| `ControllingObject` |  | |  | `objnr` |
-| `ControllingObjectClass` |  | |  | `scope` |
-| `OrderID` |  | |  | `aufnr` |
-| `OrderCategory` |  | |  | `autyp` |
-| `WBSElement` |  | |  | `cast( P_FinStatisticalKeyFigureItem.ps_posid as fis_wbs preserving type )` |
-| `WBSElementExternalID` |  | |  |  |
-| `Fund` |  | |  | `rfund` |
-| `GrantID` |  | |  | `rgrant_nbr` |
-| `BudgetPeriod` |  | |  | `rbudget_pd` |
-| `SalesOrder` |  | |  | `kdauf` |
-| `SalesOrderItem` |  | |  | `kdpos` |
-| `CostCtrActivityType` |  | |  | `lstar` |
-| `ServiceDocumentType` |  | |  | `service_doc_type` |
-| `ServiceDocument` |  | |  | `service_doc_id` |
-| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |
-| `_ControllingArea` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_LedgerCompanyCodeVH` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_StatisticalKeyFigure` | | ✓ | | |
-| `_StatisticalKeyFigureCat` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_FiscalPeriod` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
-| `_ControllingObject` | | ✓ | | |
-| `_BudgetPeriod` | | ✓ | | |
-| `_PlanningCategory` | | ✓ | | |
-| `_WBSElementExternalID` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` | ✓ | |  | `rldnr` |  |  |
+| `CompanyCode` | ✓ | |  | `rbukrs` |  |  |
+| `StatisticalKeyFigure` | ✓ | |  | `stagr` |  |  |
+| `FiscalYear` | ✓ | |  | `RYEAR` |  |  |
+| `FiscalPeriod` | ✓ | |  | `poper` |  |  |
+| `StatisticalKeyFigureItem` | ✓ | |  | `recid` |  |  |
+| `FiscalYearPeriod` |  | |  | `FISCYEARPER` |  |  |
+| `FiscalYearVariant` |  | |  | `periv` |  |  |
+| `IsSpecialPeriod` |  | |  |  |  |  |
+| `StatisticalKeyFigureCategory` |  | |  | `grtyp` |  |  |
+| `StatisticalKeyFigQtyUnit` |  | |  | `runit` |  |  |
+| `StatisticalKeyFigureQuantity` |  | |  | `cast( P_FinStatisticalKeyFigureItem.msl as fis_smexxx_long )` |  |  |
+| `StatisticalKeyFigFixedQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_fixed_smexxx_long preserving type )` |  |  |
+| `StatisticalKeyFigSumQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_sum_smexxx_long preserving type )` |  |  |
+| `StatisticalKeyFigureActlQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_smexxx_long preserving type )` |  |  |
+| `StatisticalKeyFigurePlanQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_smexxx_long preserving type )` |  |  |
+| `StatisticalKeyFigActlFixedQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then ( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_fixed_smexxx_long preserving type )` |  |  |
+| `StatisticalKeyFigPlanFixedQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then ( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_fixed_smexxx_long preserving type )` |  |  |
+| `StatisticalKeyFigActlSumQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then ( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_sum_smexxx_long preserving type )` |  |  |
+| `StatisticalKeyFigPlanSumQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then ( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_sum_smexxx_long preserving type )` |  |  |
+| `IntmdStatisticalKeyFigFixedQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_fixed_smexxx_long preserving type )` |  |  |
+| `IntmdStatisticalKeyFigSumQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_sum_smexxx_long preserving type )` |  |  |
+| `StstclKeyFigIntmdActlFixedQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then ( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_fixed_smexxx_long preserving type )` |  |  |
+| `StstclKeyFigIntmdPlanFixedQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '1' then ( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_fixed_smexxx_long preserving type )` |  |  |
+| `StstclKeyFigIntmdActlSumQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then ( case P_FinStatisticalKeyFigureItem.rrcty when '0' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_act_sum_smexxx_long preserving type )` |  |  |
+| `StstclKeyFigIntmdPlanSumQty` |  | |  | `cast( case P_FinStatisticalKeyFigureItem.grtyp when '2' then ( case P_FinStatisticalKeyFigureItem.rrcty when '1' then P_FinStatisticalKeyFigureItem.msl else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end ) else cast( cast(0 as abap.quan(23,3)) as fis_smexxx_long ) end as fis_pln_sum_smexxx_long preserving type )` |  |  |
+| `GLRecordType` |  | |  | `rrcty` |  |  |
+| `PlanningCategory` |  | |  | `category` |  |  |
+| `CostCenter` |  | |  | `rcntr` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `FunctionalArea` |  | |  | `rfarea` |  |  |
+| `BusinessArea` |  | |  | `rbusa` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `ControllingBusTransacType` |  | |  | `vorgn` |  |  |
+| `AccountAssignmentType` |  | |  | `accasty` |  |  |
+| `ControllingObject` |  | |  | `objnr` |  |  |
+| `ControllingObjectClass` |  | |  | `scope` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `OrderCategory` |  | |  | `autyp` |  |  |
+| `WBSElement` |  | |  | `cast( P_FinStatisticalKeyFigureItem.ps_posid as fis_wbs preserving type )` |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `Fund` |  | |  | `rfund` |  |  |
+| `GrantID` |  | |  | `rgrant_nbr` |  |  |
+| `BudgetPeriod` |  | |  | `rbudget_pd` |  |  |
+| `SalesOrder` |  | |  | `kdauf` |  |  |
+| `SalesOrderItem` |  | |  | `kdpos` |  |  |
+| `CostCtrActivityType` |  | |  | `lstar` |  |  |
+| `ServiceDocumentType` |  | |  | `service_doc_type` |  |  |
+| `ServiceDocument` |  | |  | `service_doc_id` |  |  |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |  |  |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_LedgerCompanyCodeVH` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_StatisticalKeyFigure` | | ✓ | | | | |
+| `_StatisticalKeyFigureCat` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_FiscalPeriod` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
+| `_ControllingObject` | | ✓ | | | | |
+| `_BudgetPeriod` | | ✓ | | | | |
+| `_PlanningCategory` | | ✓ | | | | |
+| `_WBSElementExternalID` | | ✓ | | | | |
 
 ## Associations
 

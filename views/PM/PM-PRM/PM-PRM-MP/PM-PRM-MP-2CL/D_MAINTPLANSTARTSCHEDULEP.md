@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingStartDate` |  | |  | `stadt` |
-| `SchedulingStartTime` |  | |  | `time_start` |
-| `MaintPlanStartCntrReadingValue` |  | |  | `szaehc` |
-| `MaintPlnSchedgCallObjUpToDte` |  | |  | `syst_datum` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingStartDate` |  | |  | `stadt` |  |  |
+| `SchedulingStartTime` |  | |  | `time_start` |  |  |
+| `MaintPlanStartCntrReadingValue` |  | |  | `szaehc` |  |  |
+| `MaintPlnSchedgCallObjUpToDte` |  | |  | `syst_datum` |  |  |
 
 ## Source Code
 

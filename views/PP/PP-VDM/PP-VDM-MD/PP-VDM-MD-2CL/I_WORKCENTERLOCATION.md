@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterPlant` | ✓ | |  | `Plant` |
-| `WorkCenterLocation` | ✓ | |  | `Location` |
-| `AddressID` |  | |  |  |
-| `WorkCenterLocationName` |  | |  | `LocationName` |
-| `_Plant` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_Address_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterPlant` | ✓ | |  | `Plant` |  |  |
+| `WorkCenterLocation` | ✓ | |  | `Location` |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `WorkCenterLocationName` |  | |  | `LocationName` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_Address_2` | | ✓ | | | | |
 
 ## Associations
 

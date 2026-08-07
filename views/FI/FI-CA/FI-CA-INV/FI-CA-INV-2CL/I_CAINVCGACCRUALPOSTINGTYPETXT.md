@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgAccrualPostingType` | ✓ | |  | `cast( tfk2715t.billac_type as billac_type_gfn_kk preserving type )` |
-| `Language` | ✓ | |  | `langu` |
-| `CAInvcgAccrualPostingTypeTxt` |  | |  | `cast( tfk2715t.text as billac_type_txt_gfn_kk preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CAInvcgAccrualPostingType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgAccrualPostingType` | ✓ | |  | `cast( tfk2715t.billac_type as billac_type_gfn_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CAInvcgAccrualPostingTypeTxt` |  | |  | `cast( tfk2715t.text as billac_type_txt_gfn_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CAInvcgAccrualPostingType` | | ✓ | | | | |
 
 ## Associations
 

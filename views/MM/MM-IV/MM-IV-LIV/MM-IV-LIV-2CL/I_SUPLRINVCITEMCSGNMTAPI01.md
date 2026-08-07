@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `SupplierInvoiceItem` | ✓ | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `Material` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `SupplierInvoiceItemAmount` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `_SupplierInvoiceAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | | | |
 
 ## Associations
 

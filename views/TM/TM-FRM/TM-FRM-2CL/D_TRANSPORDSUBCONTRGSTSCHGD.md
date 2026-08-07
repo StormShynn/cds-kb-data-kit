@@ -26,16 +26,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrder` |  | |  | `/scmtms/tor_id` |
-| `TransportationOrderType` |  | |  | `/scmtms/tor_type` |
-| `TransportationMode` |  | |  | `/scmtms/trmodcode` |
-| `TransportationShippingType` |  | |  | `/scmtms/shipping_type` |
-| `Carrier` |  | |  | `/scmtms/pty_carrier` |
-| `TranspPurgOrgExtID` |  | |  | `/scmtms/vdm_pur_org_ext_id` |
-| `TranspOrderSubcontrgSts` |  | |  | `/scmtms/tor_subcontr_status` |
-| `D_TranspOrdSubcontrgStsBfr` |  | |  | `__before : composition [1..1] of D_TranspOrdSubcontrgStsBfr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrder` |  | |  | `/scmtms/tor_id` |  |  |
+| `TransportationOrderType` |  | |  | `/scmtms/tor_type` |  |  |
+| `TransportationMode` |  | |  | `/scmtms/trmodcode` |  |  |
+| `TransportationShippingType` |  | |  | `/scmtms/shipping_type` |  |  |
+| `Carrier` |  | |  | `/scmtms/pty_carrier` |  |  |
+| `TranspPurgOrgExtID` |  | |  | `/scmtms/vdm_pur_org_ext_id` |  |  |
+| `TranspOrderSubcontrgSts` |  | |  | `/scmtms/tor_subcontr_status` |  |  |
+| `D_TranspOrdSubcontrgStsBfr` |  | |  | `__before : composition [1..1] of D_TranspOrdSubcontrgStsBfr` |  |  |
 
 ## Source Code
 

@@ -27,23 +27,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `exidv` |  | |  | `key HandlingUnitExternalID : exidv` |
-| `Warehouse` |  | |  | `lgnum` |
-| `HandlingUnitCharUUID` |  | |  | `lo_hu_uuid_char32` |
-| `PackagingMaterial` |  | |  | `vhilm` |
-| `PackagingMaterialType` |  | |  | `vhart` |
-| `HandlingUnitReferenceDocument` |  | |  | `vpobjkey` |
-| `ParentHandlingUnitNumber` |  | |  | `ewm_de_hu_no_conv` |
-| `HandlingUnitInternalStatus` |  | |  | `hu_status` |
-| `GrossWeight` |  | |  | `brgew_vekp` |
-| `WeightUnit` |  | |  | `gewei` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `CreationDateTime` |  | |  | `vdm_creationdatetime` |
-| `Plant` |  | |  | `hum_werks` |
-| `ReceivingStorageLocation` |  | |  | `umlgo` |
-| `ReceivingStorageBin` |  | |  | `/scwm/lgpla` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `exidv` |  | |  | `key HandlingUnitExternalID : exidv` |  |  |
+| `Warehouse` |  | |  | `lgnum` |  |  |
+| `HandlingUnitCharUUID` |  | |  | `lo_hu_uuid_char32` |  |  |
+| `PackagingMaterial` |  | |  | `vhilm` |  |  |
+| `PackagingMaterialType` |  | |  | `vhart` |  |  |
+| `HandlingUnitReferenceDocument` |  | |  | `vpobjkey` |  |  |
+| `ParentHandlingUnitNumber` |  | |  | `ewm_de_hu_no_conv` |  |  |
+| `HandlingUnitInternalStatus` |  | |  | `hu_status` |  |  |
+| `GrossWeight` |  | |  | `brgew_vekp` |  |  |
+| `WeightUnit` |  | |  | `gewei` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `CreationDateTime` |  | |  | `vdm_creationdatetime` |  |  |
+| `Plant` |  | |  | `hum_werks` |  |  |
+| `ReceivingStorageLocation` |  | |  | `umlgo` |  |  |
+| `ReceivingStorageBin` |  | |  | `/scwm/lgpla` |  |  |
 
 ## Source Code
 

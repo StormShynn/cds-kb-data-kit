@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JointVenture` | ✓ | |  | `vname` |
-| `JointVentureEquityGroup` | ✓ | |  | `egrup` |
-| `JointVentureCarriedPartner` | ✓ | |  | `carrowner` |
-| `JointVentureCarryingPartner` | ✓ | |  | `carryowner` |
-| `JVACarriedSharePercent` |  | |  | `carrshare` |
-| `_CompanyCode` | | ✓ | | |
-| `_JointVentureMasterFld` | | ✓ | | |
-| `_JointVentureDesc` | | ✓ | | |
-| `_JntVntrEquityGrp` | | ✓ | | |
-| `_JntVntrEquityGrpText` | | ✓ | | |
-| `_JVACarriedPartner` | | ✓ | | |
-| `_JVACarryOwner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JointVenture` | ✓ | |  | `vname` |  |  |
+| `JointVentureEquityGroup` | ✓ | |  | `egrup` |  |  |
+| `JointVentureCarriedPartner` | ✓ | |  | `carrowner` |  |  |
+| `JointVentureCarryingPartner` | ✓ | |  | `carryowner` |  |  |
+| `JVACarriedSharePercent` |  | |  | `carrshare` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JointVentureMasterFld` | | ✓ | | | | |
+| `_JointVentureDesc` | | ✓ | | | | |
+| `_JntVntrEquityGrp` | | ✓ | | | | |
+| `_JntVntrEquityGrpText` | | ✓ | | | | |
+| `_JVACarriedPartner` | | ✓ | | | | |
+| `_JVACarryOwner` | | ✓ | | | | |
 
 ## Associations
 

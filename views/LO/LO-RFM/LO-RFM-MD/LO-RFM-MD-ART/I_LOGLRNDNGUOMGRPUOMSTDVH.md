@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LogisticalRoundingUoMGroup` | ✓ | |  |  |
-| `LogisticalRoundingUoMGroupUoM` | ✓ | |  |  |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_LogisticalRoundingUoMGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LogisticalRoundingUoMGroup` | ✓ | |  |  |  |  |
+| `LogisticalRoundingUoMGroupUoM` | ✓ | |  |  |  |  |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_LogisticalRoundingUoMGroup` | | ✓ | | | | |
 
 ## Source Code
 

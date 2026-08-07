@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `InspPlanOperationInternalID` | ✓ | |  |  |
-| `InspectionOperation` |  | |  |  |
-| `OperationText` |  | |  |  |
-| `InspectionOperationPlant` |  | |  |  |
-| `_InspectionLot` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |  |  |
+| `InspectionOperation` |  | |  |  |  |  |
+| `OperationText` |  | |  |  |  |  |
+| `InspectionOperationPlant` |  | |  |  |  |  |
+| `_InspectionLot` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WithholdingTaxType` |  | |  | `witht` |
-| `WithholdingTaxCode` |  | |  | `wt_withcd` |
-| `DocumentCurrency` |  | |  | `waers` |
-| `wt_bs1_cs` |  | |  | `} WhldgTxBaseAmtInDocCry : wt_bs1_cs` |
-| `wt_qbuihb_cs` |  | |  | `} MnllyEnteredWhldgTxAmtInDocCry : wt_qbuihb_cs` |
-| `WhldgTaxIsEnteredManually` |  | |  | `wt_amnman` |
-| `WhldgTaxBaseIsEnteredManually` |  | |  | `wt_basman` |
-| `_SupplierInvoice` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WithholdingTaxType` |  | |  | `witht` |  |  |
+| `WithholdingTaxCode` |  | |  | `wt_withcd` |  |  |
+| `DocumentCurrency` |  | |  | `waers` |  |  |
+| `WhldgTxBaseAmtInDocCry` |  | |  | `wt_bs1_cs` |  |  |
+| `MnllyEnteredWhldgTxAmtInDocCry` |  | |  | `wt_qbuihb_cs` |  |  |
+| `WhldgTaxIsEnteredManually` |  | |  | `wt_amnman` |  |  |
+| `WhldgTaxBaseIsEnteredManually` |  | |  | `wt_basman` |  |  |
+| `_SupplierInvoice` | | ✓ | | | | |
 
 ## Source Code
 

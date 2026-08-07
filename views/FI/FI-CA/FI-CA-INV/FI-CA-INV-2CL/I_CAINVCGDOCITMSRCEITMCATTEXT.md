@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgDocItemSourceItmCat` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,5 ) as srcitemcat_kk preserving type )` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgDocItmSrceItmCatText` |  | |  | `cast ( ddtext as srcitemcat_txt_gfn_kk preserving type )` |
-| `_CAInvcgDocItmSrceItmCat` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgDocItemSourceItmCat` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,5 ) as srcitemcat_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
+| `CAInvcgDocItmSrceItmCatText` |  | |  | `cast ( ddtext as srcitemcat_txt_gfn_kk preserving type )` |  |  |
+| `_CAInvcgDocItmSrceItmCat` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

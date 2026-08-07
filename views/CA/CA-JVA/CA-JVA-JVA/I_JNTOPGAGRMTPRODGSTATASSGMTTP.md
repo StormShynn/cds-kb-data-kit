@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JntOpgAgrmt` | ✓ | |  |  |
-| `JntVntrProducingStstclRatioID` | ✓ | |  |  |
-| `JntVntrDrillingFromDepth` |  | |  |  |
-| `JntVntrDrillingToDepth` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_JntVntrProdgStstclRatio` | | ✓ | | |
-| `_JntOpgAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |  |  |
+| `JntVntrProducingStstclRatioID` | ✓ | |  |  |  |  |
+| `JntVntrDrillingFromDepth` |  | |  |  |  |  |
+| `JntVntrDrillingToDepth` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntVntrProdgStstclRatio` | | ✓ | | | | |
+| `_JntOpgAgrmt` | | ✓ | | | | |
 
 ## Source Code
 

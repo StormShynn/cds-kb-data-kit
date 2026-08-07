@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SettlmtDoc` |  | |  | `}] } key SettlmtDoc` |
-| `PartnerFunction` | ✓ | |  |  |
-| `PartnerCounter` | ✓ | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `Supplier` |  | |  | `}] } Supplier` |
-| `Customer` |  | |  | `}] } Customer` |
-| `ContactPerson` |  | |  |  |
-| `Personnel` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `AddressPersonID` |  | |  |  |
-| `ReferenceBusinessPartner` |  | |  |  |
-| `SettlmtDocPartAddrRefType` |  | |  |  |
-| `AddressObjectType` |  | |  |  |
-| `BPAddrDeterminationTransaction` |  | |  |  |
-| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `_SettlmtDoc` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_DfltAddrRprstn` | | ✓ | | |
-| `_BusinessPartnerAddress` | | ✓ | | |
-| `_PersonWorkplaceAddrDfltRprstn` | | ✓ | | |
-| `_BPRefAddressForDocSpcfcAddr` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDoc` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `PartnerCounter` | ✓ | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `ContactPerson` |  | |  |  |  |  |
+| `Personnel` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `AddressPersonID` |  | |  |  |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |  |  |
+| `SettlmtDocPartAddrRefType` |  | |  |  |  |  |
+| `AddressObjectType` |  | |  |  |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `_SettlmtDoc` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_DfltAddrRprstn` | | ✓ | | | | |
+| `_BusinessPartnerAddress` | | ✓ | | | | |
+| `_PersonWorkplaceAddrDfltRprstn` | | ✓ | | | | |
+| `_BPRefAddressForDocSpcfcAddr` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,24 +30,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChrgExchangeRateUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tcc_exch_rate_uuid preserving type )` |
-| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type )` |
-| `TranspChargeItemUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_itm_db_key preserving type )` |
-| `SourceCurrency` |  | |  | `cast(unitcurncy as fcurr_curr preserving type )` |
-| `TargetCurrency` |  | |  | `cast(quotedcurncy as tcurr_curr preserving type )` |
-| `TranspChrgExchangeRate` |  | |  | `rate` |
-| `TranspExchRateIsManuallyChgd` |  | |  | `cast(fixed as transpexchrateismanuallychgd preserving type )` |
-| `TranspChrgExchangeRateType` |  | |  | `exchgratetco05_i` |
-| `TranspChrgIsLoclExchRate` |  | |  | `cast(doc_to_lcl_curr as /scmtms/vdm_tcc_exch_rt_is_lcl preserving type )` |
-| `ExchangeRateDate` |  | |  | `quotedate` |
-| `TranspExchRateDateIsMnllyChgd` |  | |  | `fix_exchrate_date` |
-| `_TransportationCharge` | | ✓ | | |
-| `_TranspChrgExchangeRateType` | | ✓ | | |
-| `_SourceCurrency` | | ✓ | | |
-| `_TargetCurrency` | | ✓ | | |
-| `_TranspChrgItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChrgExchangeRateUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tcc_exch_rate_uuid preserving type )` |  |  |
+| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type )` |  |  |
+| `TranspChargeItemUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_itm_db_key preserving type )` |  |  |
+| `SourceCurrency` |  | |  | `cast(unitcurncy as fcurr_curr preserving type )` |  |  |
+| `TargetCurrency` |  | |  | `cast(quotedcurncy as tcurr_curr preserving type )` |  |  |
+| `TranspChrgExchangeRate` |  | |  | `rate` |  |  |
+| `TranspExchRateIsManuallyChgd` |  | |  | `cast(fixed as transpexchrateismanuallychgd preserving type )` |  |  |
+| `TranspChrgExchangeRateType` |  | |  | `exchgratetco05_i` |  |  |
+| `TranspChrgIsLoclExchRate` |  | |  | `cast(doc_to_lcl_curr as /scmtms/vdm_tcc_exch_rt_is_lcl preserving type )` |  |  |
+| `ExchangeRateDate` |  | |  | `quotedate` |  |  |
+| `TranspExchRateDateIsMnllyChgd` |  | |  | `fix_exchrate_date` |  |  |
+| `_TransportationCharge` | | ✓ | | | | |
+| `_TranspChrgExchangeRateType` | | ✓ | | | | |
+| `_SourceCurrency` | | ✓ | | | | |
+| `_TargetCurrency` | | ✓ | | | | |
+| `_TranspChrgItem` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryDocumentType` |  | |  | `lfart` |
-| `OverallPickingStatus` |  | |  | `kostk` |
-| `PreviousOverallPickingStatus` |  | |  | `kostk` |
-| `OverallPickingConfStatus` |  | |  | `koquk` |
-| `PrevOverallPickingConfStatus` |  | |  | `koquk` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `SDDocumentCategory` |  | |  | `vbtypl` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocumentType` |  | |  | `lfart` |  |  |
+| `OverallPickingStatus` |  | |  | `kostk` |  |  |
+| `PreviousOverallPickingStatus` |  | |  | `kostk` |  |  |
+| `OverallPickingConfStatus` |  | |  | `koquk` |  |  |
+| `PrevOverallPickingConfStatus` |  | |  | `koquk` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `SDDocumentCategory` |  | |  | `vbtypl` |  |  |
 
 ## Source Code
 

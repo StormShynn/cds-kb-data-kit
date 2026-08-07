@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `ProdUnivHierarchy` | ✓ | |  |  |
-| `ProdHierarchyValidityEndDate` | ✓ | |  |  |
-| `ProdHierarchyValidityStartDate` |  | |  |  |
-| `ProdUnivHierarchyText` |  | |  |  |
-| `_ProdUniversalHierarchy` | | ✓ | | |
-| `_LanguageText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `ProdUnivHierarchy` | ✓ | |  |  |  |  |
+| `ProdHierarchyValidityEndDate` | ✓ | |  |  |  |  |
+| `ProdHierarchyValidityStartDate` |  | |  |  |  |  |
+| `ProdUnivHierarchyText` |  | |  |  |  |  |
+| `_ProdUniversalHierarchy` | | ✓ | | | | |
+| `_LanguageText` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DefectCodeGroup` | ✓ | |  | `cast( qpct.codegruppe as vdm_qfegrp preserving type )` |
-| `DefectCode` | ✓ | |  | `cast( qpct.code as vdm_qfecod preserving type )` |
-| `Language` | ✓ | |  | `sprache` |
-| `DefectCodeText` |  | |  | `cast( qpct.kurztext as vdm_qfecod_text preserving type )` |
-| `_DefectCodeGroup` | | ✓ | | |
-| `_DefectCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DefectCodeGroup` | ✓ | |  | `cast( qpct.codegruppe as vdm_qfegrp preserving type )` |  |  |
+| `DefectCode` | ✓ | |  | `cast( qpct.code as vdm_qfecod preserving type )` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `DefectCodeText` |  | |  | `cast( qpct.kurztext as vdm_qfecod_text preserving type )` |  |  |
+| `_DefectCodeGroup` | | ✓ | | | | |
+| `_DefectCode` | | ✓ | | | | |
 
 ## Associations
 

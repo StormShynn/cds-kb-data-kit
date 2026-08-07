@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateTableDescUUID` | ✓ | |  | `cast(db_key as /scmtms/transprate_text_uuid preserving type)` |
-| `TransportationRateUUID` |  | |  | `cast(parent_key as /scmtms/transpratetable_uuid preserving type)` |
-| `TranspRateTableDesc` |  | |  | `cast(description as /scmtms/vdm_rt_desc preserving type)` |
-| `_TransportationRate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateTableDescUUID` | ✓ | |  | `cast(db_key as /scmtms/transprate_text_uuid preserving type)` |  |  |
+| `TransportationRateUUID` |  | |  | `cast(parent_key as /scmtms/transpratetable_uuid preserving type)` |  |  |
+| `TranspRateTableDesc` |  | |  | `cast(description as /scmtms/vdm_rt_desc preserving type)` |  |  |
+| `_TransportationRate` | | ✓ | | | | |
 
 ## Source Code
 

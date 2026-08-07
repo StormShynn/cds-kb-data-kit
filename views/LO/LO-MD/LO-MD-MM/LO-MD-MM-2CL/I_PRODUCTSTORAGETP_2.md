@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `StorageConditions` |  | |  |  |
-| `ProdTemperatureConditionCode` |  | |  |  |
-| `HazardousProduct` |  | |  |  |
-| `NmbrOfGROrGISlipsToPrintQty` |  | |  |  |
-| `LabelType` |  | |  |  |
-| `LabelForm` |  | |  |  |
-| `MinRemainingShelfLife` |  | |  |  |
-| `ProductExpirationDateType` |  | |  |  |
-| `StorageBinInstruction` |  | |  |  |
-| `ShelfLifeExpirationDatePeriod` |  | |  |  |
-| `ShelfLifeExprtnDateRndngRule` |  | |  |  |
-| `TotalShelfLifeStoragePercent` |  | |  |  |
-| `TotalShelfLife` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_TemperatureConditionText` | | ✓ | | |
-| `_LabelType` | | ✓ | | |
-| `_LabelForm` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_ShelfLifeExpirationDatePeriod` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
-| `_ShelfLifeExprtnDatePeriodText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `StorageConditions` |  | |  |  |  |  |
+| `ProdTemperatureConditionCode` |  | |  |  |  |  |
+| `HazardousProduct` |  | |  |  |  |  |
+| `NmbrOfGROrGISlipsToPrintQty` |  | |  |  |  |  |
+| `LabelType` |  | |  |  |  |  |
+| `LabelForm` |  | |  |  |  |  |
+| `MinRemainingShelfLife` |  | |  |  |  |  |
+| `ProductExpirationDateType` |  | |  |  |  |  |
+| `StorageBinInstruction` |  | |  |  |  |  |
+| `ShelfLifeExpirationDatePeriod` |  | |  |  |  |  |
+| `ShelfLifeExprtnDateRndngRule` |  | |  |  |  |  |
+| `TotalShelfLifeStoragePercent` |  | |  |  |  |  |
+| `TotalShelfLife` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_TemperatureConditionText` | | ✓ | | | | |
+| `_LabelType` | | ✓ | | | | |
+| `_LabelForm` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_ShelfLifeExpirationDatePeriod` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
+| `_ShelfLifeExprtnDatePeriodText` | | ✓ | | | | |
 
 ## Source Code
 

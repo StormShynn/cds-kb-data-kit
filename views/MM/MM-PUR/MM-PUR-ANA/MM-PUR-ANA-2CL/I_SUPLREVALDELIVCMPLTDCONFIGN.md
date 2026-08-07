@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalCritraDelivCompleted` | ✓ | |  | `cast ( dd07l.domvalue_l as mm_pur_ana_de_delivery_compind )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalCritraDelivCompleted` | ✓ | |  | `cast ( dd07l.domvalue_l as mm_pur_ana_de_delivery_compind )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

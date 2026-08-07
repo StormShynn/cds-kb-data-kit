@@ -30,56 +30,56 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ChangeDocObjectClass` | ✓ | |  |  |
-| `ChangeDocument` | ✓ | |  |  |
-| `DatabaseTable` | ✓ | |  |  |
-| `ChangeDocTableKey` | ✓ | |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |
-| `ChangeDocItemChangeType` | ✓ | |  |  |
-| `ChangeDocObject` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `FirstName` |  | |  |  |
-| `LastName` |  | |  |  |
-| `Department` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `ChangeTransactionCode` |  | |  |  |
-| `DatabaseTableText` |  | |  |  |
-| `ChangeDocFieldNameDesc` |  | |  |  |
-| `ChangeDocPreviousUnit` |  | |  |  |
-| `ChangeDocNewUnit` |  | |  |  |
-| `ChangeDocPreviousCurrency` |  | |  |  |
-| `ChangeDocNewCurrency` |  | |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |
-| `ChangeDocChangeTypeText` |  | |  |  |
-| `ChangeDocTextIsChanged` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ProductSalesOrg` |  | |  |  |
-| `ProductDistributionChnl` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `WarehouseNumber` |  | |  |  |
-| `MaintenanceStatus` |  | |  |  |
-| `MaintenanceStatus1` |  | |  |  |
-| `MaintenanceStatus2` |  | |  |  |
-| `MaintenanceStatus3` |  | |  |  |
-| `MaintenanceStatus4` |  | |  |  |
-| `MaintenanceStatus5` |  | |  |  |
-| `MaintenanceStatus6` |  | |  |  |
-| `MaintenanceStatus7` |  | |  |  |
-| `MaintenanceStatus8` |  | |  |  |
-| `MaintenanceStatus9` |  | |  |  |
-| `MaintenanceStatus10` |  | |  |  |
-| `MaintenanceStatus11` |  | |  |  |
-| `MaintenanceStatus12` |  | |  |  |
-| `MaintenanceStatus13` |  | |  |  |
-| `MaintenanceStatus14` |  | |  |  |
-| `MaintenanceStatus15` |  | |  |  |
-| `_CreatedByUserContactCard` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |  |  |
+| `ChangeDocument` | ✓ | |  |  |  |  |
+| `DatabaseTable` | ✓ | |  |  |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |  |  |
+| `ChangeDocObject` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `FirstName` |  | |  |  |  |  |
+| `LastName` |  | |  |  |  |  |
+| `Department` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `ChangeTransactionCode` |  | |  |  |  |  |
+| `DatabaseTableText` |  | |  |  |  |  |
+| `ChangeDocFieldNameDesc` |  | |  |  |  |  |
+| `ChangeDocPreviousUnit` |  | |  |  |  |  |
+| `ChangeDocNewUnit` |  | |  |  |  |  |
+| `ChangeDocPreviousCurrency` |  | |  |  |  |  |
+| `ChangeDocNewCurrency` |  | |  |  |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |  |  |
+| `ChangeDocChangeTypeText` |  | |  |  |  |  |
+| `ChangeDocTextIsChanged` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ProductSalesOrg` |  | |  |  |  |  |
+| `ProductDistributionChnl` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `WarehouseNumber` |  | |  |  |  |  |
+| `MaintenanceStatus` |  | |  |  |  |  |
+| `MaintenanceStatus1` |  | |  |  |  |  |
+| `MaintenanceStatus2` |  | |  |  |  |  |
+| `MaintenanceStatus3` |  | |  |  |  |  |
+| `MaintenanceStatus4` |  | |  |  |  |  |
+| `MaintenanceStatus5` |  | |  |  |  |  |
+| `MaintenanceStatus6` |  | |  |  |  |  |
+| `MaintenanceStatus7` |  | |  |  |  |  |
+| `MaintenanceStatus8` |  | |  |  |  |  |
+| `MaintenanceStatus9` |  | |  |  |  |  |
+| `MaintenanceStatus10` |  | |  |  |  |  |
+| `MaintenanceStatus11` |  | |  |  |  |  |
+| `MaintenanceStatus12` |  | |  |  |  |  |
+| `MaintenanceStatus13` |  | |  |  |  |  |
+| `MaintenanceStatus14` |  | |  |  |  |  |
+| `MaintenanceStatus15` |  | |  |  |  |  |
+| `_CreatedByUserContactCard` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrderType` |  | |  | `vdm_esart` |
-| `PurchasingOrganization` |  | |  | `ekorg` |
-| `PurchasingGroup` |  | |  | `ekgrp` |
-| `Supplier` |  | |  | `vdm_supplierref` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrderType` |  | |  | `vdm_esart` |  |  |
+| `PurchasingOrganization` |  | |  | `ekorg` |  |  |
+| `PurchasingGroup` |  | |  | `ekgrp` |  |  |
+| `Supplier` |  | |  | `vdm_supplierref` |  |  |
 
 ## Source Code
 

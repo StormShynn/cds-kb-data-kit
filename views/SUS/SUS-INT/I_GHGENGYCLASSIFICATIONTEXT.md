@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `GHGEnergyClassification` | ✓ | |  | `cast( dd07t.domvalue_l as sufnd_vdm_ghgenergyclass )` |
-| `GHGEnergyClassificationName` |  | |  | `cast( dd07t.ddtext as sufnd_vdm_ghgenergyclassname preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `GHGEnergyClassification` | ✓ | |  | `cast( dd07t.domvalue_l as sufnd_vdm_ghgenergyclass )` |  |  |
+| `GHGEnergyClassificationName` |  | |  | `cast( dd07t.ddtext as sufnd_vdm_ghgenergyclassname preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

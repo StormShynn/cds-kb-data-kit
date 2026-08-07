@@ -32,38 +32,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |
-| `BillingPlan` | ✓ | |  |  |
-| `BillingPlanItem` | ✓ | |  |  |
-| `BillingPlanBillingDate` |  | |  |  |
-| `BillingPlanServiceStartDate` |  | |  |  |
-| `BillingPlanServiceEndDate` |  | |  |  |
-| `BillingPlanAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `BillingPlanRelatedBillgStatus` |  | |  |  |
-| `BillingPlanType` |  | |  |  |
-| `BillingPlanDateCategory` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `ProposedBillingDocumentType` |  | |  |  |
-| `AdoptingBillingDateID` |  | |  |  |
-| `BillingPlanBillingRule` |  | |  |  |
-| `BillingPlanDateDescriptionCode` |  | |  |  |
-| `BillingPlanMilestoneUsage` |  | |  |  |
-| `BillingPlanAmountPercent` |  | |  |  |
-| `BillgPlnDteCorrectionRfndType` |  | |  |  |
-| `AccountingExchangeRate` |  | |  |  |
-| `PostponementReason` |  | |  |  |
-| `BillingPlanItemUsage` |  | |  |  |
-| `BillingPlanItemDescription` |  | |  |  |
-| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
-| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
-| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
-| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderBillingPlan` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |  |  |
+| `BillingPlan` | ✓ | |  |  |  |  |
+| `BillingPlanItem` | ✓ | |  |  |  |  |
+| `BillingPlanBillingDate` |  | |  |  |  |  |
+| `BillingPlanServiceStartDate` |  | |  |  |  |  |
+| `BillingPlanServiceEndDate` |  | |  |  |  |  |
+| `BillingPlanAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `BillingPlanRelatedBillgStatus` |  | |  |  |  |  |
+| `BillingPlanType` |  | |  |  |  |  |
+| `BillingPlanDateCategory` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `ProposedBillingDocumentType` |  | |  |  |  |  |
+| `AdoptingBillingDateID` |  | |  |  |  |  |
+| `BillingPlanBillingRule` |  | |  |  |  |  |
+| `BillingPlanDateDescriptionCode` |  | |  |  |  |  |
+| `BillingPlanMilestoneUsage` |  | |  |  |  |  |
+| `BillingPlanAmountPercent` |  | |  |  |  |  |
+| `BillgPlnDteCorrectionRfndType` |  | |  |  |  |  |
+| `AccountingExchangeRate` |  | |  |  |  |  |
+| `PostponementReason` |  | |  |  |  |  |
+| `BillingPlanItemUsage` |  | |  |  |  |  |
+| `BillingPlanItemDescription` |  | |  |  |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |  |  |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |  |  |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |  |  |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderBillingPlan` | | ✓ | | | | |
 
 ## Associations
 

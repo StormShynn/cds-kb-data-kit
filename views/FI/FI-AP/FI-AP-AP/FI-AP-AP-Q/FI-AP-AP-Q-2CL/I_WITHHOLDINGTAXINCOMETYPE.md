@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |
-| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` |
-| `_Country` | | ✓ | | |
-| `_IncomeTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |  |  |
+| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_IncomeTypeText` | | ✓ | | | | |
 
 ## Associations
 

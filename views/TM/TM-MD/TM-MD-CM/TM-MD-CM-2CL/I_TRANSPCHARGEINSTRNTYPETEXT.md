@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChargeInstrnType` | ✓ | |  | `cast(substring(domvalue_l, 1, 6) as /scmtms/trcharg_clc_res_instr preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspChargeInstrnTypeDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tcm_instrn_typt preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspChargeInstrnType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChargeInstrnType` | ✓ | |  | `cast(substring(domvalue_l, 1, 6) as /scmtms/trcharg_clc_res_instr preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspChargeInstrnTypeDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tcm_instrn_typt preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspChargeInstrnType` | | ✓ | | | | |
 
 ## Associations
 

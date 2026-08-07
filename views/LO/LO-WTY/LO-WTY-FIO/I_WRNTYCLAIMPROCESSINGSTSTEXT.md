@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyClaimProcessingStatus` | ✓ | |  | `astate` |
-| `Language` | ✓ | |  | `spras` |
-| `WrntyClaimProcessingStatusText` |  | |  | `abdes` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyClaimProcessingStatus` | ✓ | |  | `astate` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `WrntyClaimProcessingStatusText` |  | |  | `abdes` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

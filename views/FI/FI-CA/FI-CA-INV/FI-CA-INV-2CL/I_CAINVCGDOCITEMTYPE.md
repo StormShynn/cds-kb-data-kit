@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgDocumentItemType` | ✓ | | `_CAInvcgDocItemType0` | `CAInvcgDocumentItemType` |
-| `_CAInvcgDocItemTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgDocumentItemType` | ✓ | | `_CAInvcgDocItemType0` | `CAInvcgDocumentItemType` |  |  |
+| `_CAInvcgDocItemTypeText` | | ✓ | | | | |
 
 ## Associations
 

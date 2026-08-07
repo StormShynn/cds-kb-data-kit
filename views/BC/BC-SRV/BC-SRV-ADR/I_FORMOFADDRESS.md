@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FormOfAddress` | ✓ | |  | `title` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FormOfAddress` | ✓ | |  | `title` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

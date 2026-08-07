@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITCallNumber` | ✓ | |  |  |
-| `Plant` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SumzdJITCallPlndDelivDateTime` |  | |  |  |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITCallNumber` | ✓ | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SumzdJITCallPlndDelivDateTime` |  | |  |  |  |  |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
 
 ## Source Code
 

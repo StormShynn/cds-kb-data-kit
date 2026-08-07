@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |
-| `ConsolidationGroupText` |  | | `_Source` | `ConsolidationGroupText` |
-| `ConsolidationGroupMediumText` |  | | `_Source` | `ConsolidationGroupMediumText` |
-| `I_CnsldtnGroupTP` |  | |  | `_ConsolidationGroup as _ConsolidationGroup : redirected to parent I_CnsldtnGroupTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |  |  |
+| `ConsolidationGroupText` |  | | `_Source` | `ConsolidationGroupText` |  |  |
+| `ConsolidationGroupMediumText` |  | | `_Source` | `ConsolidationGroupMediumText` |  |  |
+| `I_CnsldtnGroupTP` |  | |  | `_ConsolidationGroup as _ConsolidationGroup : redirected to parent I_CnsldtnGroupTP` |  |  |
 
 ## Source Code
 

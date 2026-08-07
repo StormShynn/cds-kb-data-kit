@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportRequestID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `TransportRequestDescription` |  | |  | `cast( substring( RelevantText, 2, 60 ) as as4text preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportRequestID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `TransportRequestDescription` |  | |  | `cast( substring( RelevantText, 2, 60 ) as as4text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

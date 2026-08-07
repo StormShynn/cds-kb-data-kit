@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
-| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |
-| `DocInfoRecdNumberAssignType` |  | |  | `numvg` |
-| `DocInfoRecdInternalNumberRange` |  | |  | `inumnr` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |  |  |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |  |  |
+| `DocInfoRecdNumberAssignType` |  | |  | `numvg` |  |  |
+| `DocInfoRecdInternalNumberRange` |  | |  | `inumnr` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

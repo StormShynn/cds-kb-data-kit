@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgCycle` | ✓ | | `_tfk2607` | `cycle` |
-| `CALastDayOfBillingPeriod` |  | | `_tfk2607` | `cycle_day` |
-| `CABillgCyclePeriodCategory` |  | | `_tfk2607` | `cycle_periodcat` |
-| `CABillgCycleIsIndividual` |  | | `_tfk2607` | `individual` |
-| `_CALastDayOfBillingPeriod` | | ✓ | | |
-| `_CABillgCycleText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgCycle` | ✓ | | `_tfk2607` | `cycle` |  |  |
+| `CALastDayOfBillingPeriod` |  | | `_tfk2607` | `cycle_day` |  |  |
+| `CABillgCyclePeriodCategory` |  | | `_tfk2607` | `cycle_periodcat` |  |  |
+| `CABillgCycleIsIndividual` |  | | `_tfk2607` | `individual` |  |  |
+| `_CALastDayOfBillingPeriod` | | ✓ | | | | |
+| `_CABillgCycleText` | | ✓ | | | | |
 
 ## Associations
 

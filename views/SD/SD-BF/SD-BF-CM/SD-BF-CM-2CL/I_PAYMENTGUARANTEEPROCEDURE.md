@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentGuaranteeProcedure` | ✓ | |  | `abssc` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentGuaranteeProcedure` | ✓ | |  | `abssc` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

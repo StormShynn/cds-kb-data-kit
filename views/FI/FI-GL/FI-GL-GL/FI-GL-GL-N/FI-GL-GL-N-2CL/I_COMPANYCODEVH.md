@@ -31,29 +31,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `CompanyCodeName` |  | |  | `butxt` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CityName` |  | |  | `ort01` |
-| `Country` |  | |  | `land1` |
-| `Currency` |  | |  | `waers` |
-| `Language` |  | |  | `spras` |
-| `ChartOfAccounts` |  | |  | `ktopl` |
-| `FiscalYearVariant` |  | |  | `periv` |
-| `Company` |  | |  | `rcomp` |
-| `CreditControlArea` |  | |  | `kkber` |
-| `CountryChartOfAccounts` |  | |  | `cast(t001.ktop2 as fis_ktop2 preserving type)` |
-| `FinancialManagementArea` |  | |  | `fikrs` |
-| `_Currency` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_CountryChartOfAccounts` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_CreditControlArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `CompanyCodeName` |  | |  | `butxt` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CityName` |  | |  | `ort01` |  |  |
+| `Country` |  | |  | `land1` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `Language` |  | |  | `spras` |  |  |
+| `ChartOfAccounts` |  | |  | `ktopl` |  |  |
+| `FiscalYearVariant` |  | |  | `periv` |  |  |
+| `Company` |  | |  | `rcomp` |  |  |
+| `CreditControlArea` |  | |  | `kkber` |  |  |
+| `CountryChartOfAccounts` |  | |  | `cast(t001.ktop2 as fis_ktop2 preserving type)` |  |  |
+| `FinancialManagementArea` |  | |  | `fikrs` |  |  |
+| `_Currency` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_CountryChartOfAccounts` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CreditControlArea` | | ✓ | | | | |
 
 ## Associations
 

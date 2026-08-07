@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( langu as spras)` |
-| `AccountingPrinciple` | ✓ | |  | `acc_principle` |
-| `AccountingPrincipleName` |  | |  | `acc_princtxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( langu as spras)` |  |  |
+| `AccountingPrinciple` | ✓ | |  | `acc_principle` |  |  |
+| `AccountingPrincipleName` |  | |  | `acc_princtxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

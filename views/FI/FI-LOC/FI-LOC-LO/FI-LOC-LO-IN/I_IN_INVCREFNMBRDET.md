@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `IN_DocumentNumber` | ✓ | |  | `docno` |
-| `FiscalYear` | ✓ | |  | `doc_year` |
-| `IN_DocumentType` | ✓ | |  | `doc_type` |
-| `IN_OfficialDocumentNumber` | ✓ | |  | `ltrim( odn, '0')` |
-| `IN_InvoiceReferenceNumber` | ✓ | |  | `irn` |
-| `IN_Version` | ✓ | |  | `version` |
-| `BusinessPlace` |  | |  | `bupla` |
-| `IN_OfficialDocumentNumberDate` |  | |  | `odn_date` |
-| `IN_AcknowledgmentNumber` |  | |  | `ack_no` |
-| `IN_AcknowledgmentDateTimeValue` |  | |  | `ack_date` |
-| `IN_InvcRefNmbrStatus` |  | |  | `irn_status` |
-| `IN_CancellationDateTimeValue` |  | |  | `cancel_date` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `CreatedAtDate` |  | |  | `erdat` |
-| `TimeEntry` |  | |  | `erzet` |
-| `IN_SignedInvoiceValue` |  | |  | `signed_inv` |
-| `IN_SignedQRCodeValue` |  | |  | `signed_qrcode` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `IN_DocumentNumber` | ✓ | |  | `docno` |  |  |
+| `FiscalYear` | ✓ | |  | `doc_year` |  |  |
+| `IN_DocumentType` | ✓ | |  | `doc_type` |  |  |
+| `IN_OfficialDocumentNumber` | ✓ | |  | `ltrim( odn, '0')` |  |  |
+| `IN_InvoiceReferenceNumber` | ✓ | |  | `irn` |  |  |
+| `IN_Version` | ✓ | |  | `version` |  |  |
+| `BusinessPlace` |  | |  | `bupla` |  |  |
+| `IN_OfficialDocumentNumberDate` |  | |  | `odn_date` |  |  |
+| `IN_AcknowledgmentNumber` |  | |  | `ack_no` |  |  |
+| `IN_AcknowledgmentDateTimeValue` |  | |  | `ack_date` |  |  |
+| `IN_InvcRefNmbrStatus` |  | |  | `irn_status` |  |  |
+| `IN_CancellationDateTimeValue` |  | |  | `cancel_date` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `CreatedAtDate` |  | |  | `erdat` |  |  |
+| `TimeEntry` |  | |  | `erzet` |  |  |
+| `IN_SignedInvoiceValue` |  | |  | `signed_inv` |  |  |
+| `IN_SignedQRCodeValue` |  | |  | `signed_qrcode` |  |  |
 
 ## Source Code
 

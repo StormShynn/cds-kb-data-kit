@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnDocTypeBusinessAppl` | ✓ | |  | `cast(left(_Domain.DomainValue, 1) as fincs_doctypebusinessappl )` |
-| `DomainValue` |  | | `_Domain` | `DomainValue` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnDocTypeBusinessAppl` | ✓ | |  | `cast(left(_Domain.DomainValue, 1) as fincs_doctypebusinessappl )` |  |  |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

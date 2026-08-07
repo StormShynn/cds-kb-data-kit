@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlannedOrderProcgAction` | ✓ | |  | `cast(txt.mdacc as vdm_mdacc preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `PlannedOrderProcgActionName` |  | |  | `cast(txt.mdacs as vdm_mdacs preserving type)` |
-| `_Language` | | ✓ | | |
-| `_ProcgAction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlannedOrderProcgAction` | ✓ | |  | `cast(txt.mdacc as vdm_mdacc preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PlannedOrderProcgActionName` |  | |  | `cast(txt.mdacs as vdm_mdacs preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProcgAction` | | ✓ | | | | |
 
 ## Associations
 

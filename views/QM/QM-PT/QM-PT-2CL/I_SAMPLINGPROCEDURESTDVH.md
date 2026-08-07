@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SamplingProcedure` | ✓ | |  |  |
-| `SamplingProcedureText` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SamplingProcedure` | ✓ | |  |  |  |  |
+| `SamplingProcedureText` |  | |  |  |  |  |
 
 ## Source Code
 

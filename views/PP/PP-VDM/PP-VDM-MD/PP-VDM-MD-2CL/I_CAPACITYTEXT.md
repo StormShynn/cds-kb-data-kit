@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityInternalID` | ✓ | |  | `kapid` |
-| `Language` | ✓ | |  | `spras` |
-| `CapacityText` |  | |  | `ktext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  | `kapid` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CapacityText` |  | |  | `ktext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

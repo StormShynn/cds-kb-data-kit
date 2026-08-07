@@ -29,20 +29,20 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Carrid` | ✓ | |  | `carrid` |
-| `Connid` | ✓ | |  | `connid` |
-| `carrname` |  | |  |  |
-| `user_default` |  | |  | `cast(case when p.UserParameterValue = c.carrid then 'X' else '' end as boolean)` |
-| `Countryfr` |  | |  | `countryfr` |
-| `Cityfrom` |  | |  | `cityfrom` |
-| `Airpfrom` |  | |  | `airpfrom` |
-| `Countryto` |  | |  | `countryto` |
-| `Cityto` |  | |  | `cityto` |
-| `Airpto` |  | |  | `airpto` |
-| `Deptime` |  | |  | `deptime` |
-| `Arrtime` |  | |  | `arrtime` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Carrid` | ✓ | |  | `carrid` |  |  |
+| `Connid` | ✓ | |  | `connid` |  |  |
+| `carrname` |  | |  |  |  |  |
+| `user_default` |  | |  | `cast(case when p.UserParameterValue = c.carrid then 'X' else '' end as boolean)` |  |  |
+| `Countryfr` |  | |  | `countryfr` |  |  |
+| `Cityfrom` |  | |  | `cityfrom` |  |  |
+| `Airpfrom` |  | |  | `airpfrom` |  |  |
+| `Countryto` |  | |  | `countryto` |  |  |
+| `Cityto` |  | |  | `cityto` |  |  |
+| `Airpto` |  | |  | `airpto` |  |  |
+| `Deptime` |  | |  | `deptime` |  |  |
+| `Arrtime` |  | |  | `arrtime` |  |  |
 
 ## Source Code
 

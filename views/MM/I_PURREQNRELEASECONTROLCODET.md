@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurReqnReleaseControlCode` | ✓ | |  | `frgkz` |
-| `Language` | ✓ | |  | `spras` |
-| `PurReqnRelStrgyControlCodeName` |  | |  | `fkztx` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurReqnReleaseControlCode` | ✓ | |  | `frgkz` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PurReqnRelStrgyControlCodeName` |  | |  | `fkztx` |  |  |
 
 ## Source Code
 

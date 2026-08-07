@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingCategory` | ✓ | |  | `purchasingcategory` |
-| `PurchasingOrganization` | ✓ | |  | `purchasingorganization` |
-| `SupplierEvalTimeWeighting` |  | |  | `evaluationtimeweight` |
-| `SupplierEvalQuantityWeighting` |  | |  | `evaluationquantityweight` |
-| `SupplierEvalQualityWeighting` |  | |  | `evaluationqualityweight` |
-| `SupplierEvalPriceWeighting` |  | |  | `evaluationpriceweight` |
-| `SupplierEvalQnaireWeighting` |  | |  | `evaluationquestionareweight` |
-| `SupplierEvalQltyNotifWeighting` |  | |  | `evaluationqltynotifweight` |
-| `SupplierEvalUsrCriteria1Wgtg` |  | |  | `evaluationusercriteria1weight` |
-| `SupplierEvalUsrCriteria2Wgtg` |  | |  | `evaluationusercriteria2weight` |
-| `SupplierEvalUsrCriteria3Wgtg` |  | |  | `evaluationusercriteria3weight` |
-| `SupplierEvalUsrCriteria4Wgtg` |  | |  | `evaluationusercriteria4weight` |
-| `SupplierEvalUsrCriteria5Wgtg` |  | |  | `evaluationusercriteria5weight` |
-| `SuplrEvalUsrCriteria6WgtgValue` |  | |  | `evaluationusercriteria6weight` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingCategory` | ✓ | |  | `purchasingcategory` |  |  |
+| `PurchasingOrganization` | ✓ | |  | `purchasingorganization` |  |  |
+| `SupplierEvalTimeWeighting` |  | |  | `evaluationtimeweight` |  |  |
+| `SupplierEvalQuantityWeighting` |  | |  | `evaluationquantityweight` |  |  |
+| `SupplierEvalQualityWeighting` |  | |  | `evaluationqualityweight` |  |  |
+| `SupplierEvalPriceWeighting` |  | |  | `evaluationpriceweight` |  |  |
+| `SupplierEvalQnaireWeighting` |  | |  | `evaluationquestionareweight` |  |  |
+| `SupplierEvalQltyNotifWeighting` |  | |  | `evaluationqltynotifweight` |  |  |
+| `SupplierEvalUsrCriteria1Wgtg` |  | |  | `evaluationusercriteria1weight` |  |  |
+| `SupplierEvalUsrCriteria2Wgtg` |  | |  | `evaluationusercriteria2weight` |  |  |
+| `SupplierEvalUsrCriteria3Wgtg` |  | |  | `evaluationusercriteria3weight` |  |  |
+| `SupplierEvalUsrCriteria4Wgtg` |  | |  | `evaluationusercriteria4weight` |  |  |
+| `SupplierEvalUsrCriteria5Wgtg` |  | |  | `evaluationusercriteria5weight` |  |  |
+| `SuplrEvalUsrCriteria6WgtgValue` |  | |  | `evaluationusercriteria6weight` |  |  |
 
 ## Source Code
 

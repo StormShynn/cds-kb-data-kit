@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WarrantyObjectType` | ✓ | |  | `relty` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarrantyObjectType` | ✓ | |  | `relty` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

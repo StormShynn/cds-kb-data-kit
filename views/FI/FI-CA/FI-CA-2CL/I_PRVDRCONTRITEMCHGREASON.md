@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPrvdrContrItmChgReason` | ✓ | |  | `change_reason` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPrvdrContrItmChgReason` | ✓ | |  | `change_reason` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

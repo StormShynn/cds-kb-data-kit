@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` |  | |  | `: #('ASSOCIATED_TEXT_UI_HIDDEN') key document.DocumentInfoRecordDocType` |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
-| `DocumentInfoRecordDocVersion` |  | |  | `}] key document.DocumentInfoRecordDocVersion` |
-| `DocumentInfoRecordDocPart` |  | |  | `}] key document.DocumentInfoRecordDocPart` |
-| `ResponsiblePersonName` | ✓ | |  |  |
-| `FirstName` |  | |  | `name_first` |
-| `LastName` |  | |  | `name_last` |
-| `ResponsiblePersonFullName` |  | |  | `UserDescription` |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangedByUserFullName` |  | |  | `UserDescription` |
-| `PersonNumber` |  | |  | `AddressPersonID` |
-| `_DocTypeText` | | ✓ | | |
-| `_DocType` | | ✓ | | |
-| `_DocNumber` | | ✓ | | |
-| `_DocVersion` | | ✓ | | |
-| `_DocPart` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` |  | |  | `('ASSOCIATED_TEXT_UI_HIDDEN') @ObjectModel.foreignKey.association: '_DocType' @EndUserText.label:'Document Type' @Search.ranking: #MEDIUM @Search.fuzzinessThreshold: 0.8 @Search.defaultSearchElement: true key document.DocumentInfoRecordDocType` |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
+| `ResponsiblePersonName` | ✓ | |  |  |  |  |
+| `FirstName` |  | |  | `name_first` |  |  |
+| `LastName` |  | |  | `name_last` |  |  |
+| `ResponsiblePersonFullName` |  | |  | `UserDescription` |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangedByUserFullName` |  | |  | `UserDescription` |  |  |
+| `PersonNumber` |  | |  | `AddressPersonID` |  |  |
+| `_DocTypeText` | | ✓ | | | | |
+| `_DocType` | | ✓ | | | | |
+| `_DocNumber` | | ✓ | | | | |
+| `_DocVersion` | | ✓ | | | | |
+| `_DocPart` | | ✓ | | | | |
 
 ## Associations
 

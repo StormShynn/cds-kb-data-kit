@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlanningCategory` | ✓ | |  | `category` |
-| `PlanningCategoryUsage` |  | |  | `category_usage` |
-| `AvailabilityControlIsActive` |  | |  | `availability_control` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanningCategory` | ✓ | |  | `category` |  |  |
+| `PlanningCategoryUsage` |  | |  | `category_usage` |  |  |
+| `AvailabilityControlIsActive` |  | |  | `availability_control` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

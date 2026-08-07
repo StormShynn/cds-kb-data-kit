@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SLCPreferredAnswer` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as /srmsmc/qlb_pref_answer)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SLCQuestionTypeName` |  | |  | `cast(ddtext as /srmsmc/type_descr preserving type)` |
-| `_Language` | | ✓ | | |
-| `_SLCPreferredAnswer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SLCPreferredAnswer` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as /srmsmc/qlb_pref_answer)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SLCQuestionTypeName` |  | |  | `cast(ddtext as /srmsmc/type_descr preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SLCPreferredAnswer` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ProjectDemandSourceOfSupply` | ✓ | |  | `cast( substring(domvalue_l, 1, 2 ) as tv_proj_dmnd_source_of_supply )` |
-| `ProjDmndSourceOfSupplyText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_SourceOfSupply` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ProjectDemandSourceOfSupply` | ✓ | |  | `cast( substring(domvalue_l, 1, 2 ) as tv_proj_dmnd_source_of_supply )` |  |  |
+| `ProjDmndSourceOfSupplyText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SourceOfSupply` | | ✓ | | | | |
 
 ## Associations
 

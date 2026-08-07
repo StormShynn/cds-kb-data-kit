@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryServiceTypeCode` | ✓ | |  | `deli_serv_type` |
-| `DeliveryServiceTypeName` |  | |  | `deli_serv_text` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryServiceTypeCode` | ✓ | |  | `deli_serv_type` |  |  |
+| `DeliveryServiceTypeName` |  | |  | `deli_serv_text` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

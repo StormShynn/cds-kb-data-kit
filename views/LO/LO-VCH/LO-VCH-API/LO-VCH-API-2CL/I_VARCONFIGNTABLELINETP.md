@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarConfignTblName` | ✓ | |  |  |
-| `VarConfignTblLineNumber` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `VarConfignTblTmpLinePosition` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `_Table` | | ✓ | | |
-| `_Value` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |  |  |
+| `VarConfignTblLineNumber` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `VarConfignTblTmpLinePosition` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `_Table` | | ✓ | | | | |
+| `_Value` | | ✓ | | | | |
 
 ## Source Code
 

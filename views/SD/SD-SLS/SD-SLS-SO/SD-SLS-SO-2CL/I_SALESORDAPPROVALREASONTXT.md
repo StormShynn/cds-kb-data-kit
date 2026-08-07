@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `SalesOrderApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
-| `SalesOrderApprovalReasonName` |  | |  | `SalesDocApprovalReasonName` |
-| `_SalesOrderApprovalReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `SalesOrderApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |  |  |
+| `SalesOrderApprovalReasonName` |  | |  | `SalesDocApprovalReasonName` |  |  |
+| `_SalesOrderApprovalReason` | | ✓ | | | | |
 
 ## Associations
 

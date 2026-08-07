@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  | `cast( PersonWorkAgreement as persno preserving type )` |
-| `KeyDate` | ✓ | |  | `cast( $parameters.P_KeyDate as dats preserving type )` |
-| `ManagerPersonWorkAgreement` | ✓ | |  | `cast( ManagerPersonWorkAgreement as mstbr preserving type )` |
-| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast( PersonWorkAgrmtAuthznGrpg as vdsk1 preserving type )` |
-| `_ManagerPersonWorkAgreement` | | ✓ | | |
-| `_ManagerPersonWorkAgreement_1` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonWorkAgreement` | ✓ | |  | `cast( PersonWorkAgreement as persno preserving type )` |  |  |
+| `KeyDate` | ✓ | |  | `cast( $parameters.P_KeyDate as dats preserving type )` |  |  |
+| `ManagerPersonWorkAgreement` | ✓ | |  | `cast( ManagerPersonWorkAgreement as mstbr preserving type )` |  |  |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast( PersonWorkAgrmtAuthznGrpg as vdsk1 preserving type )` |  |  |
+| `_ManagerPersonWorkAgreement` | | ✓ | | | | |
+| `_ManagerPersonWorkAgreement_1` | | ✓ | | | | |
 
 ## Associations
 

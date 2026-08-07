@@ -27,36 +27,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ExemptionID` | ✓ | |  | `exemption_id` |
-| `FindingObjectType` |  | |  | `objtype` |
-| `FindingObjectName` |  | |  | `objname` |
-| `FindingSubObjectType` |  | |  | `subobjtype` |
-| `FindingSubObjectName` |  | |  | `subobjname` |
-| `FindingChecksumVersion` |  | |  | `checksum_version` |
-| `FindingChecksum` |  | |  | `checksum` |
-| `FindingObjectScope` |  | |  | `cast( ATCExemptionsAll.object_scope as I_SATC_API_OBJECT_SCOPE preserving type )` |
-| `CheckScope` |  | |  | `cast( ATCExemptionsAll.check_scope as I_SATC_API_CHECK_SCOPE preserving type )` |
-| `CheckClass` |  | |  | `chkclass` |
-| `CheckCode` |  | |  | `chkcode` |
-| `ExemptionValidRelease` |  | |  | `valid_release` |
-| `ExemptionValidUntil` |  | |  | `valid_until` |
-| `ExemptionState` |  | |  | `cast( ATCExemptionsAll.state as I_SATC_API_EXEMPTION_STATE_C1 preserving type )` |
-| `ExemptionPreviousState` |  | |  | `cast( ATCExemptionsAll.prev_state as I_SATC_API_EXEMPTION_STATE_C1 preserving type )` |
-| `ExemptionApplicant` |  | |  | `applicant` |
-| `ExemptionApplicantComment` |  | |  | `appl_comment` |
-| `ExemptionApplicantLastChgdOn` |  | |  | `appl_last` |
-| `ExemptionReason` |  | |  | `reason` |
-| `ExemptionApprover` |  | |  | `approver` |
-| `ExemptionApproverArea` |  | |  | `appr_area` |
-| `ExemptionApproverComment` |  | |  | `appr_comment` |
-| `ExemptionApproverLastChgdOn` |  | |  | `appl_last` |
-| `AffectedSoftwareComponent` |  | |  | `affected_software_component` |
-| `SystemGroupID` |  | |  | `ds_group_id` |
-| `DataSourceID` |  | |  | `data_source_id` |
-| `ExemptionApproverNotification` |  | |  | `notification_request` |
-| `ExemptionArchived` |  | |  | `deleted` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExemptionID` | ✓ | |  | `exemption_id` |  |  |
+| `FindingObjectType` |  | |  | `objtype` |  |  |
+| `FindingObjectName` |  | |  | `objname` |  |  |
+| `FindingSubObjectType` |  | |  | `subobjtype` |  |  |
+| `FindingSubObjectName` |  | |  | `subobjname` |  |  |
+| `FindingChecksumVersion` |  | |  | `checksum_version` |  |  |
+| `FindingChecksum` |  | |  | `checksum` |  |  |
+| `FindingObjectScope` |  | |  | `cast( ATCExemptionsAll.object_scope as I_SATC_API_OBJECT_SCOPE preserving type )` |  |  |
+| `CheckScope` |  | |  | `cast( ATCExemptionsAll.check_scope as I_SATC_API_CHECK_SCOPE preserving type )` |  |  |
+| `CheckClass` |  | |  | `chkclass` |  |  |
+| `CheckCode` |  | |  | `chkcode` |  |  |
+| `ExemptionValidRelease` |  | |  | `valid_release` |  |  |
+| `ExemptionValidUntil` |  | |  | `valid_until` |  |  |
+| `ExemptionState` |  | |  | `cast( ATCExemptionsAll.state as I_SATC_API_EXEMPTION_STATE_C1 preserving type )` |  |  |
+| `ExemptionPreviousState` |  | |  | `cast( ATCExemptionsAll.prev_state as I_SATC_API_EXEMPTION_STATE_C1 preserving type )` |  |  |
+| `ExemptionApplicant` |  | |  | `applicant` |  |  |
+| `ExemptionApplicantComment` |  | |  | `appl_comment` |  |  |
+| `ExemptionApplicantLastChgdOn` |  | |  | `appl_last` |  |  |
+| `ExemptionReason` |  | |  | `reason` |  |  |
+| `ExemptionApprover` |  | |  | `approver` |  |  |
+| `ExemptionApproverArea` |  | |  | `appr_area` |  |  |
+| `ExemptionApproverComment` |  | |  | `appr_comment` |  |  |
+| `ExemptionApproverLastChgdOn` |  | |  | `appl_last` |  |  |
+| `AffectedSoftwareComponent` |  | |  | `affected_software_component` |  |  |
+| `SystemGroupID` |  | |  | `ds_group_id` |  |  |
+| `DataSourceID` |  | |  | `data_source_id` |  |  |
+| `ExemptionApproverNotification` |  | |  | `notification_request` |  |  |
+| `ExemptionArchived` |  | |  | `deleted` |  |  |
 
 ## Source Code
 

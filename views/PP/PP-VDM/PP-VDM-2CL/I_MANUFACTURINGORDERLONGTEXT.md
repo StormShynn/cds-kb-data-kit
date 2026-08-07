@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ManufacturingOrder` | ✓ | |  | `cast(text.OrderID as manufacturingorder preserving type)` |
-| `LongTextLanguage` | ✓ | |  |  |
-| `ManufacturingOrderText` |  | |  | `OrderDescription` |
-| `ManufacturingOrderLongText` |  | |  | `PlainLongText` |
-| `_LongTextLanguage` | | ✓ | | |
-| `_MfgOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  | `cast(text.OrderID as manufacturingorder preserving type)` |  |  |
+| `LongTextLanguage` | ✓ | |  |  |  |  |
+| `ManufacturingOrderText` |  | |  | `OrderDescription` |  |  |
+| `ManufacturingOrderLongText` |  | |  | `PlainLongText` |  |  |
+| `_LongTextLanguage` | | ✓ | | | | |
+| `_MfgOrder` | | ✓ | | | | |
 
 ## Associations
 

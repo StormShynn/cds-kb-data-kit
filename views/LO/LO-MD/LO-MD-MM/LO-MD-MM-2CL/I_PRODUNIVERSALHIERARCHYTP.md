@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdUnivHierarchy` | ✓ | |  |  |
-| `ProdHierarchyValidityEndDate` | ✓ | |  |  |
-| `ProdHierarchyValidityStartDate` |  | |  |  |
-| `ProdUnivHierLastChangeDateTime` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_ProdUnivHierNodeByHierID` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdUnivHierarchy` | ✓ | |  |  |  |  |
+| `ProdHierarchyValidityEndDate` | ✓ | |  |  |  |  |
+| `ProdHierarchyValidityStartDate` |  | |  |  |  |  |
+| `ProdUnivHierLastChangeDateTime` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ProdUnivHierNodeByHierID` | | ✓ | | | | |
 
 ## Source Code
 

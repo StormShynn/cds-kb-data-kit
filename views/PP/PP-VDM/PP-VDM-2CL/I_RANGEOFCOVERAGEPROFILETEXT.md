@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `RangeOfCoverageProfile` | ✓ | |  | `cast(rwpro as pph_rwpro preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `RangeOfCoverageProfileName` |  | |  | `cast(txt.text40 as pph_rwprotxt preserving type)` |
-| `_Plant` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Profile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `RangeOfCoverageProfile` | ✓ | |  | `cast(rwpro as pph_rwpro preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `RangeOfCoverageProfileName` |  | |  | `cast(txt.text40 as pph_rwprotxt preserving type)` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Profile` | | ✓ | | | | |
 
 ## Associations
 

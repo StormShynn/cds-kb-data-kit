@@ -34,25 +34,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InvoiceUuid` | ✓ | |  | `invoice_uuid` |
-| `InvoiceId` |  | |  | `invoice_id` |
-| `SoId` |  | |  | `so_id` |
-| `Customer` |  | |  | `customer` |
-| `NetAmount` |  | |  | `net_amount` |
-| `TaxAmount` |  | |  | `tax_amount` |
-| `GrossAmount` |  | |  | `gross_amount` |
-| `Currency` |  | |  | `currency` |
-| `InvoiceDate` |  | |  | `invoice_date` |
-| `DueDate` |  | |  | `due_date` |
-| `PaymentStatus` |  | |  | `payment_status` |
-| `Status` |  | |  | `status` |
-| `CreatedBy` |  | |  | `created_by` |
-| `CreatedAt` |  | |  | `created_at` |
-| `LastChangedBy` |  | |  | `last_changed_by` |
-| `LastChangedAt` |  | |  | `last_changed_at` |
-| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvoiceUuid` | ✓ | |  | `invoice_uuid` |  |  |
+| `InvoiceId` |  | |  | `invoice_id` |  |  |
+| `SoId` |  | |  | `so_id` |  |  |
+| `Customer` |  | |  | `customer` |  |  |
+| `NetAmount` |  | |  | `net_amount` |  |  |
+| `TaxAmount` |  | |  | `tax_amount` |  |  |
+| `GrossAmount` |  | |  | `gross_amount` |  |  |
+| `Currency` |  | |  | `currency` |  |  |
+| `InvoiceDate` |  | |  | `invoice_date` |  |  |
+| `DueDate` |  | |  | `due_date` |  |  |
+| `PaymentStatus` |  | |  | `payment_status` |  |  |
+| `Status` |  | |  | `status` |  |  |
+| `CreatedBy` |  | |  | `created_by` |  |  |
+| `CreatedAt` |  | |  | `created_at` |  |  |
+| `LastChangedBy` |  | |  | `last_changed_by` |  |  |
+| `LastChangedAt` |  | |  | `last_changed_at` |  |  |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |  |  |
 
 ## Source Code
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |
-| `BusinessPartner` |  | |  | `partner` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `CreationDateTime` |  | |  | `created_at` |
-| `LocalInstanceLastChangedByUser` |  | |  | `local_last_changed_by` |
-| `LoclInstanceLastChangeDateTime` |  | |  | `local_last_changed_at` |
-| `LastChangedByUser` |  | |  | `last_changed_by` |
-| `LastChangeDateTime` |  | |  | `last_changed_at` |
-| `_CompanyCode` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
+| `BusinessPartner` |  | |  | `partner` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `CreationDateTime` |  | |  | `created_at` |  |  |
+| `LocalInstanceLastChangedByUser` |  | |  | `local_last_changed_by` |  |  |
+| `LoclInstanceLastChangeDateTime` |  | |  | `local_last_changed_at` |  |  |
+| `LastChangedByUser` |  | |  | `last_changed_by` |  |  |
+| `LastChangeDateTime` |  | |  | `last_changed_at` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

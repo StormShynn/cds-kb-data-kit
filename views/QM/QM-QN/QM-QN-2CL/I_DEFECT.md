@@ -27,105 +27,105 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DefectInternalID` | ✓ | |  | `cast( I_NotificationItem.Notification as qdefectinternalid preserving type )` |
-| `Defect` |  | |  | `cast( substring(I_NotificationItem.Notification,2,11) as qdefectid preserving type )` |
-| `DefectCategory` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `DefectText` |  | |  | `cast(I_NotificationItem.NotificationItemText as vdm_qfetxt preserving type )` |
-| `DefectCodeCatalog` |  | |  |  |
-| `DefectCodeGroup` |  | |  | `cast( I_NotificationItem.DefectCodeGroup as vdm_qfegrp preserving type )` |
-| `DefectCode` |  | |  | `cast( I_NotificationItem.DefectCode as vdm_qfecod preserving type )` |
-| `DefectCodeVersion` |  | |  |  |
-| `DefectObjectCodeCatalog` |  | |  | `cast(I_NotificationItem.NotifItmObjectPartCodeCtlg as vdm_qfeocat preserving type )` |
-| `DefectObjectCodeGroup` |  | |  | `cast(I_NotificationItem.NotifItmObjectPartCodeGroup as vdm_qfeogrp preserving type )` |
-| `DefectObjectCode` |  | |  | `cast(I_NotificationItem.NotifItmObjectPartCode as vdm_qfeocod preserving type )` |
-| `DefectObjectCodeVersion` |  | |  | `NotifItmObjectPartVersion` |
-| `DefectCauseCodeCatalog` |  | |  | `cast(I_NotificationItem.DefectCauseCodeCatalog as vdm_qinitdefcausecodecat preserving type )` |
-| `DefectCauseCodeGroup` |  | |  | `cast(I_NotificationItem.DefectCauseCodeGroup as vdm_qinitdefcausecodegroup preserving type )` |
-| `DefectCauseCode` |  | |  | `cast(I_NotificationItem.DefectCauseCode as vdm_qinitdefcausecode preserving type )` |
-| `DefectCauseCodeVersion` |  | |  |  |
-| `DefectiveQuantity` |  | |  | `cast( I_NotificationItem.DefectiveQuantity as vdm_qmgpos preserving type )` |
-| `DefectiveQuantityUnit` |  | |  |  |
-| `DefectIsCreatedAutomatically` |  | |  |  |
-| `ProductionOrderOperationActy` |  | |  |  |
-| `ProductionOrderOpActyVers` |  | |  |  |
-| `Batch` |  | |  |  |
-| `DefectiveSingleUnit` |  | |  |  |
-| `ProductionOrder` |  | |  | `cast( I_NotificationItem.ProductionOrder as vdm_qm_fertaufnr preserving type )` |
-| `OrderInternalID` |  | |  |  |
-| `CreationTime` |  | |  | `cast( I_NotificationItem.CreationTime as vdm_qerstezeit preserving type )` |
-| `LastChangeTime` |  | |  | `cast( I_NotificationItem.LastChangeTime as vdm_qaendezeit preserving type )` |
-| `DefectClass` |  | |  |  |
-| `NumberOfDefects` |  | |  |  |
-| `InspPlanOperationInternalID` |  | |  |  |
-| `InspectionCharacteristic` |  | |  |  |
-| `InspectionSubsetInternalID` |  | |  |  |
-| `MaterialSample` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  | `cast( I_NotificationItem.MainWorkCenterPlant as vdm_qarbpwerks preserving type )` |
-| `MainWorkCenter` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `IsDeleted` |  | |  | `cast( I_NotificationItem.IsDeleted as vdm_qdefisdeleted preserving type )` |
-| `DefectOrigin` |  | |  |  |
-| `Material` |  | |  | `cast( I_NotificationItem.Material as vdm_defective_material preserving type )` |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `WarehouseLogicalSystem` |  | |  |  |
-| `InspectionLot` |  | |  |  |
-| `CatalogProfile` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `DefectLifecycleStatus` |  | |  |  |
-| `DefectArchivingStatus` |  | |  |  |
-| `ProblemAnalysisStatus` |  | |  |  |
-| `QualityIssueReference` |  | |  |  |
-| `MasterLanguage` |  | |  |  |
-| `DefectUUID` |  | |  |  |
-| `ProductionSupplyArea` |  | |  |  |
-| `Warehouse` |  | |  | `EWMWarehouse` |
-| `EWMWarehouse` |  | |  |  |
-| `StorageType` |  | |  | `SourceStorageType` |
-| `SourceStorageType` |  | |  |  |
-| `SourceStorageBin` |  | |  |  |
-| `DefectCausedBy` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `BOMItemInstanceUUID` |  | |  |  |
-| `ProducedMaterial` |  | |  |  |
-| `ProducedSerialNumber` |  | |  |  |
-| `_DefectCodeGroup` | | ✓ | | |
-| `_DefectCode` | | ✓ | | |
-| `_DefectCauseCodeCatalog` | | ✓ | | |
-| `_DefectCauseCodeGroup` | | ✓ | | |
-| `_DefectCauseCode` | | ✓ | | |
-| `_DefectObjectCodeCatalog` | | ✓ | | |
-| `_DefectObjectPartCodeGroup` | | ✓ | | |
-| `_DefectObjectCode` | | ✓ | | |
-| `_DefectStatus` | | ✓ | | |
-| `_DefectArchivingStatus` | | ✓ | | |
-| `_ProblemAnalysisStatus` | | ✓ | | |
-| `_EWM_WarehouseNumber_2` | | ✓ | | |
-| `_EWM_SourceStorageType` | | ✓ | | |
-| `_EWM_SourceStorageBin` | | ✓ | | |
-| `_ProductionSupplyArea` | | ✓ | | |
-| `_DefectCausedBy` | | ✓ | | |
-| `_InspectionOperation` | | ✓ | | |
-| `_ManufacturingOrder` | | ✓ | | |
-| `_ManufacturingOrderOperation` | | ✓ | | |
-| `_DefectLongText` | | ✓ | | |
-| `_DefectSerialNumber` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProducedMaterial` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_DefectClass` | | ✓ | | |
-| `_CreatedByUserContactCard` | | ✓ | | |
-| `_LastChangedByUserContactCard` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DefectInternalID` | ✓ | |  | `cast( I_NotificationItem.Notification as qdefectinternalid preserving type )` |  |  |
+| `Defect` |  | |  | `cast( substring(I_NotificationItem.Notification,2,11) as qdefectid preserving type )` |  |  |
+| `DefectCategory` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `DefectText` |  | |  | `cast(I_NotificationItem.NotificationItemText as vdm_qfetxt preserving type )` |  |  |
+| `DefectCodeCatalog` |  | |  |  |  |  |
+| `DefectCodeGroup` |  | |  | `cast( I_NotificationItem.DefectCodeGroup as vdm_qfegrp preserving type )` |  |  |
+| `DefectCode` |  | |  | `cast( I_NotificationItem.DefectCode as vdm_qfecod preserving type )` |  |  |
+| `DefectCodeVersion` |  | |  |  |  |  |
+| `DefectObjectCodeCatalog` |  | |  | `cast(I_NotificationItem.NotifItmObjectPartCodeCtlg as vdm_qfeocat preserving type )` |  |  |
+| `DefectObjectCodeGroup` |  | |  | `cast(I_NotificationItem.NotifItmObjectPartCodeGroup as vdm_qfeogrp preserving type )` |  |  |
+| `DefectObjectCode` |  | |  | `cast(I_NotificationItem.NotifItmObjectPartCode as vdm_qfeocod preserving type )` |  |  |
+| `DefectObjectCodeVersion` |  | |  | `NotifItmObjectPartVersion` |  |  |
+| `DefectCauseCodeCatalog` |  | |  | `cast(I_NotificationItem.DefectCauseCodeCatalog as vdm_qinitdefcausecodecat preserving type )` |  |  |
+| `DefectCauseCodeGroup` |  | |  | `cast(I_NotificationItem.DefectCauseCodeGroup as vdm_qinitdefcausecodegroup preserving type )` |  |  |
+| `DefectCauseCode` |  | |  | `cast(I_NotificationItem.DefectCauseCode as vdm_qinitdefcausecode preserving type )` |  |  |
+| `DefectCauseCodeVersion` |  | |  |  |  |  |
+| `DefectiveQuantity` |  | |  | `cast( I_NotificationItem.DefectiveQuantity as vdm_qmgpos preserving type )` |  |  |
+| `DefectiveQuantityUnit` |  | |  |  |  |  |
+| `DefectIsCreatedAutomatically` |  | |  |  |  |  |
+| `ProductionOrderOperationActy` |  | |  |  |  |  |
+| `ProductionOrderOpActyVers` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `DefectiveSingleUnit` |  | |  |  |  |  |
+| `ProductionOrder` |  | |  | `cast( I_NotificationItem.ProductionOrder as vdm_qm_fertaufnr preserving type )` |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `CreationTime` |  | |  | `cast( I_NotificationItem.CreationTime as vdm_qerstezeit preserving type )` |  |  |
+| `LastChangeTime` |  | |  | `cast( I_NotificationItem.LastChangeTime as vdm_qaendezeit preserving type )` |  |  |
+| `DefectClass` |  | |  |  |  |  |
+| `NumberOfDefects` |  | |  |  |  |  |
+| `InspPlanOperationInternalID` |  | |  |  |  |  |
+| `InspectionCharacteristic` |  | |  |  |  |  |
+| `InspectionSubsetInternalID` |  | |  |  |  |  |
+| `MaterialSample` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  | `cast( I_NotificationItem.MainWorkCenterPlant as vdm_qarbpwerks preserving type )` |  |  |
+| `MainWorkCenter` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `IsDeleted` |  | |  | `cast( I_NotificationItem.IsDeleted as vdm_qdefisdeleted preserving type )` |  |  |
+| `DefectOrigin` |  | |  |  |  |  |
+| `Material` |  | |  | `cast( I_NotificationItem.Material as vdm_defective_material preserving type )` |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `WarehouseLogicalSystem` |  | |  |  |  |  |
+| `InspectionLot` |  | |  |  |  |  |
+| `CatalogProfile` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `DefectLifecycleStatus` |  | |  |  |  |  |
+| `DefectArchivingStatus` |  | |  |  |  |  |
+| `ProblemAnalysisStatus` |  | |  |  |  |  |
+| `QualityIssueReference` |  | |  |  |  |  |
+| `MasterLanguage` |  | |  |  |  |  |
+| `DefectUUID` |  | |  |  |  |  |
+| `ProductionSupplyArea` |  | |  |  |  |  |
+| `Warehouse` |  | |  | `EWMWarehouse` |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `StorageType` |  | |  | `SourceStorageType` |  |  |
+| `SourceStorageType` |  | |  |  |  |  |
+| `SourceStorageBin` |  | |  |  |  |  |
+| `DefectCausedBy` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `BOMItemInstanceUUID` |  | |  |  |  |  |
+| `ProducedMaterial` |  | |  |  |  |  |
+| `ProducedSerialNumber` |  | |  |  |  |  |
+| `_DefectCodeGroup` | | ✓ | | | | |
+| `_DefectCode` | | ✓ | | | | |
+| `_DefectCauseCodeCatalog` | | ✓ | | | | |
+| `_DefectCauseCodeGroup` | | ✓ | | | | |
+| `_DefectCauseCode` | | ✓ | | | | |
+| `_DefectObjectCodeCatalog` | | ✓ | | | | |
+| `_DefectObjectPartCodeGroup` | | ✓ | | | | |
+| `_DefectObjectCode` | | ✓ | | | | |
+| `_DefectStatus` | | ✓ | | | | |
+| `_DefectArchivingStatus` | | ✓ | | | | |
+| `_ProblemAnalysisStatus` | | ✓ | | | | |
+| `_EWM_WarehouseNumber_2` | | ✓ | | | | |
+| `_EWM_SourceStorageType` | | ✓ | | | | |
+| `_EWM_SourceStorageBin` | | ✓ | | | | |
+| `_ProductionSupplyArea` | | ✓ | | | | |
+| `_DefectCausedBy` | | ✓ | | | | |
+| `_InspectionOperation` | | ✓ | | | | |
+| `_ManufacturingOrder` | | ✓ | | | | |
+| `_ManufacturingOrderOperation` | | ✓ | | | | |
+| `_DefectLongText` | | ✓ | | | | |
+| `_DefectSerialNumber` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProducedMaterial` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_DefectClass` | | ✓ | | | | |
+| `_CreatedByUserContactCard` | | ✓ | | | | |
+| `_LastChangedByUserContactCard` | | ✓ | | | | |
 
 ## Associations
 

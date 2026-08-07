@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `HedgingInstrumentUUID` | ✓ | |  | `cast(hinst.os_guid as ftr_gen_hinst preserving type)` |
-| `HedgingInstr` |  | |  | `cast(hinst.hinst_number as ftr_gen_hinst_number preserving type)` |
-| `HedgingInstrumentFiscalYear` |  | |  | `cast(hinst.fiscal_year as ftr_gen_hinst_fiscal_year preserving type)` |
-| `CompanyCode` |  | |  | `cast(hinst.tr_acc_code as bukrs preserving type)` |
-| `TreasuryValuationArea` |  | |  | `cast(hinst.valuation_area as tpm_val_area preserving type)` |
-| `HedgingInstrumentName` |  | |  | `cast(hinst.description as ftr_gen_hinst_descr preserving type)` |
-| `HedgingRelationshipUUID` |  | |  | `cast(hinst.hrel_oid as ftr_gen_hrel_uuid preserving type)` |
-| `_HedgingRelationship` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_TreasuryValuationArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HedgingInstrumentUUID` | ✓ | |  | `cast(hinst.os_guid as ftr_gen_hinst preserving type)` |  |  |
+| `HedgingInstr` |  | |  | `cast(hinst.hinst_number as ftr_gen_hinst_number preserving type)` |  |  |
+| `HedgingInstrumentFiscalYear` |  | |  | `cast(hinst.fiscal_year as ftr_gen_hinst_fiscal_year preserving type)` |  |  |
+| `CompanyCode` |  | |  | `cast(hinst.tr_acc_code as bukrs preserving type)` |  |  |
+| `TreasuryValuationArea` |  | |  | `cast(hinst.valuation_area as tpm_val_area preserving type)` |  |  |
+| `HedgingInstrumentName` |  | |  | `cast(hinst.description as ftr_gen_hinst_descr preserving type)` |  |  |
+| `HedgingRelationshipUUID` |  | |  | `cast(hinst.hrel_oid as ftr_gen_hrel_uuid preserving type)` |  |  |
+| `_HedgingRelationship` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_TreasuryValuationArea` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UserStatus` | ✓ | |  | `estat` |
-| `StatusProfile` | ✓ | |  | `stsma` |
-| `Language` | ✓ | |  | `spras` |
-| `UserStatusName` |  | |  | `txt30` |
-| `UserStatusShortName` |  | |  | `txt04` |
-| `_UserStatus` | | ✓ | | |
-| `_StatusProfile` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UserStatus` | ✓ | |  | `estat` |  |  |
+| `StatusProfile` | ✓ | |  | `stsma` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `UserStatusName` |  | |  | `txt30` |  |  |
+| `UserStatusShortName` |  | |  | `txt04` |  |  |
+| `_UserStatus` | | ✓ | | | | |
+| `_StatusProfile` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

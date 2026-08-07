@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EarmarkedFundsDocumentCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 3 ) as abap.numc( 3 ) ) as fmis_efd_doccategory preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EarmarkedFundsDocumentCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 3 ) as abap.numc( 3 ) ) as fmis_efd_doccategory preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

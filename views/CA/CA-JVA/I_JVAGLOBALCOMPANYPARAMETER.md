@@ -27,93 +27,93 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JVAInceptionToDateActiveVal` |  | |  | `itd` |
-| `JVANetAccountActiveVal` |  | |  | `netaccopt` |
-| `JVARegionVal` |  | |  | `int_us` |
-| `JVAOperator` |  | |  | `opaccnumb` |
-| `JVABillingBasis` |  | |  | `billbasis` |
-| `JVADefaultVenture` |  | |  | `corpvent` |
-| `JVADefaultEquityGroup` |  | |  | `corpeqgp` |
-| `JVADefaultCostRecoveryCode` |  | |  | `corprecind` |
-| `JVARecIndVntrFunded` |  | |  | `corpvbacri` |
-| `JVABalancedVenturesActiveVal` |  | |  | `balancvent` |
-| `JVAVentureBankAccountVal` |  | |  | `vbank` |
-| `JVAInputTaxCode` |  | |  | `taxin` |
-| `JVAInvoiceLevel` |  | |  | `invlevel` |
-| `JVAOutputTaxCode` |  | |  | `taxout` |
-| `JVATaxJurisdictionCode` |  | |  | `txjcd` |
-| `JVACorpTaxCode` |  | |  | `crptaxcode` |
-| `JVABillingStructure` |  | |  | `bstruct` |
-| `JVAAcctsExclCnstrctnOvhdVal` |  | |  | `xsetcon` |
-| `JVAAcctsExclCatastropheOvhdVal` |  | |  | `xsetcat` |
-| `JVAAcctsExclPctg1OvhdRateVal` |  | |  | `xper1` |
-| `JVAAcctsExclPctg2OvhdRateVal` |  | |  | `xper2` |
-| `JVAAccountsExclCptlOvhdVal` |  | |  | `xsetcap` |
-| `JVADefaultOffsetCostCenterVal` |  | |  | `offcc` |
-| `JVALineItmsUncompressedActvVal` |  | |  | `expand` |
-| `JVATxExpndtrDetailsActvVal` |  | |  | `taxexpdtl` |
-| `JVAPostTaxInNextPeriodActvVal` |  | |  | `taxper` |
-| `JVAMaxNmbrEquityGrpsPerVntrVal` |  | |  | `eqgnum` |
-| `JVAOperationalMonthActiveVal` |  | |  | `pomact` |
-| `JVARegnGSTNumberVal` |  | |  | `gstno` |
-| `JVADeprAreaForBookDeprVal` |  | |  | `afabe_han` |
-| `JVADeprAreaForNonBillVal` |  | |  | `afabe_nb` |
-| `JVADeprAreaForGrossVal` |  | |  | `afabe_bi` |
-| `JVACstmRtlPrcCalcActvVal` |  | |  | `crpcal` |
-| `JVAPostgRuleForAstPostingsVal` |  | |  | `am_meth` |
-| `JVAIndexForEstBookCostVal` |  | |  | `wbind` |
-| `JVATblForAddlSelFldVal` |  | |  | `seltab` |
-| `JVAAddSelForCRPTransfersVal` |  | |  | `selfld` |
-| `JVACutbackYearDateVal` |  | |  | `cbyear` |
-| `JVACutbackPeriodVal` |  | |  | `cbperi` |
-| `JVAExchangeRateTypeVal` |  | |  | `kurst` |
-| `JVACorpParCoOvhdCostCtrVal` |  | |  | `offpcocc` |
-| `JVACorpParCoOvhdProjectVal` |  | |  | `cast(offpcoproj as ps_s4_pspnr preserving type)` |
-| `JVACorpParCoOvhdOrderVal` |  | |  | `offpcoornr` |
-| `JVAPostToDefaultVentureActvVal` |  | |  | `postcorp` |
-| `JVAVntrDerivationTypeAssetsVal` |  | |  | `asstvent` |
-| `JVAGrssPostToIntrstPrtnActvVal` |  | |  | `ci_gross` |
-| `JVACarriedIntrstPostings01Val` |  | |  | `ci_fb01` |
-| `JVAUseTransCrcyCutbackPostsVal` |  | |  | `cb_tcurr` |
-| `JVAFldStsTypeCostCtrVal` |  | |  | `fsjvct` |
-| `JVAFieldStatusTypeOrderVal` |  | |  | `fsjvot` |
-| `JVAFieldStatusTypeProjectVal` |  | |  | `fsjvpt` |
-| `JVAMessageImpactActiveVal` |  | |  | `budgetmess` |
-| `JVAVentureDistrAssetLinesVal` |  | |  | `vidist` |
-| `JVAOperatorAsPartnerActiveVal` |  | |  | `op_as_part` |
-| `JVADefaultCostCenterVal` |  | |  | `kostl_corp` |
-| `JVADfltCostRcvryCodeForAstVal` |  | |  | `am_corp_ri` |
-| `JVACostRecCodeForBkSwitchVal` |  | |  | `bank_ri_sw` |
-| `JVADefaultBillingCrcyVal` |  | |  | `bcurr` |
-| `JVABankAccountSwitchActiveVal` |  | |  | `xvba` |
-| `JVANoCostObjOnAstActvVal` |  | |  | `xasst_co` |
-| `Currency` |  | | `_CompanyCode` | `Currency` |
-| `JVABillingThresholdDebitAmt` |  | |  | `} billthres` |
-| `JVABillingThresholdCreditAmt` |  | |  | `} billthresc` |
-| `JVATransVarInterCompAstVal` |  | |  | `tvarcurr` |
-| `JVASplitByLineItemVal` |  | |  | `split_by_li` |
-| `JVARtlPrCalcActvVal` |  | |  | `ec_use` |
-| `JVASprtRptSpprsdPerdsVal` |  | |  | `billthress` |
-| `JVAProductionMonthActiveVal` |  | |  | `pm_act` |
-| `JVADeriveEquityGrpProdnMnthVal` |  | |  | `pm_eg` |
-| `JVAProductionMonthFromYearVal` |  | |  | `pm_act_year` |
-| `JVAFundingActvVal` |  | |  | `funding_active` |
-| `JVAIntrstCalcActvVal` |  | |  | `intcalc_active` |
-| `JVAIntrstCalcAutoGrpgTypeVal` |  | |  | `ic_auto_group` |
-| `JVAInterestCalcRefGroupVal` |  | |  | `ic_group_ref` |
-| `JVALedgerVal` |  | |  | `rldnr` |
-| `JVAFromYearVal` |  | |  | `coalesce(_MasterData.JVAFromYearVal, _t8jz.fryear)` |
-| `JVAFromPeriodVal` |  | |  | `coalesce(_MasterData.JVAFromYearVal, _t8jz.frperiod)` |
-| `JVAToYearVal` |  | |  | `coalesce(_MasterData.JVAToYearVal, _t8jz.toyear)` |
-| `JVAToPeriodVal` |  | |  | `coalesce(_MasterData.JVAToPeriodVal, _t8jz.toperiod)` |
-| `JVAStandardPaymentVal` |  | |  | `coalesce(_MasterData.JVAStandardPaymentRate, _t8jz.stpay)` |
-| `JVANonCompulsoryBenefitsVal` |  | |  | `coalesce(_MasterData.JVANonCompulsoryBenefitsRate, _t8jz.noncomp)` |
-| `JVACompulsoryBenefitsVal` |  | |  | `coalesce(_MasterData.JVACompulsoryBenefitsRate, _t8jz.compuls)` |
-| `_CompanyCode` | | ✓ | | |
-| `_MasterData` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JVAInceptionToDateActiveVal` |  | |  | `itd` |  |  |
+| `JVANetAccountActiveVal` |  | |  | `netaccopt` |  |  |
+| `JVARegionVal` |  | |  | `int_us` |  |  |
+| `JVAOperator` |  | |  | `opaccnumb` |  |  |
+| `JVABillingBasis` |  | |  | `billbasis` |  |  |
+| `JVADefaultVenture` |  | |  | `corpvent` |  |  |
+| `JVADefaultEquityGroup` |  | |  | `corpeqgp` |  |  |
+| `JVADefaultCostRecoveryCode` |  | |  | `corprecind` |  |  |
+| `JVARecIndVntrFunded` |  | |  | `corpvbacri` |  |  |
+| `JVABalancedVenturesActiveVal` |  | |  | `balancvent` |  |  |
+| `JVAVentureBankAccountVal` |  | |  | `vbank` |  |  |
+| `JVAInputTaxCode` |  | |  | `taxin` |  |  |
+| `JVAInvoiceLevel` |  | |  | `invlevel` |  |  |
+| `JVAOutputTaxCode` |  | |  | `taxout` |  |  |
+| `JVATaxJurisdictionCode` |  | |  | `txjcd` |  |  |
+| `JVACorpTaxCode` |  | |  | `crptaxcode` |  |  |
+| `JVABillingStructure` |  | |  | `bstruct` |  |  |
+| `JVAAcctsExclCnstrctnOvhdVal` |  | |  | `xsetcon` |  |  |
+| `JVAAcctsExclCatastropheOvhdVal` |  | |  | `xsetcat` |  |  |
+| `JVAAcctsExclPctg1OvhdRateVal` |  | |  | `xper1` |  |  |
+| `JVAAcctsExclPctg2OvhdRateVal` |  | |  | `xper2` |  |  |
+| `JVAAccountsExclCptlOvhdVal` |  | |  | `xsetcap` |  |  |
+| `JVADefaultOffsetCostCenterVal` |  | |  | `offcc` |  |  |
+| `JVALineItmsUncompressedActvVal` |  | |  | `expand` |  |  |
+| `JVATxExpndtrDetailsActvVal` |  | |  | `taxexpdtl` |  |  |
+| `JVAPostTaxInNextPeriodActvVal` |  | |  | `taxper` |  |  |
+| `JVAMaxNmbrEquityGrpsPerVntrVal` |  | |  | `eqgnum` |  |  |
+| `JVAOperationalMonthActiveVal` |  | |  | `pomact` |  |  |
+| `JVARegnGSTNumberVal` |  | |  | `gstno` |  |  |
+| `JVADeprAreaForBookDeprVal` |  | |  | `afabe_han` |  |  |
+| `JVADeprAreaForNonBillVal` |  | |  | `afabe_nb` |  |  |
+| `JVADeprAreaForGrossVal` |  | |  | `afabe_bi` |  |  |
+| `JVACstmRtlPrcCalcActvVal` |  | |  | `crpcal` |  |  |
+| `JVAPostgRuleForAstPostingsVal` |  | |  | `am_meth` |  |  |
+| `JVAIndexForEstBookCostVal` |  | |  | `wbind` |  |  |
+| `JVATblForAddlSelFldVal` |  | |  | `seltab` |  |  |
+| `JVAAddSelForCRPTransfersVal` |  | |  | `selfld` |  |  |
+| `JVACutbackYearDateVal` |  | |  | `cbyear` |  |  |
+| `JVACutbackPeriodVal` |  | |  | `cbperi` |  |  |
+| `JVAExchangeRateTypeVal` |  | |  | `kurst` |  |  |
+| `JVACorpParCoOvhdCostCtrVal` |  | |  | `offpcocc` |  |  |
+| `JVACorpParCoOvhdProjectVal` |  | |  | `cast(offpcoproj as ps_s4_pspnr preserving type)` |  |  |
+| `JVACorpParCoOvhdOrderVal` |  | |  | `offpcoornr` |  |  |
+| `JVAPostToDefaultVentureActvVal` |  | |  | `postcorp` |  |  |
+| `JVAVntrDerivationTypeAssetsVal` |  | |  | `asstvent` |  |  |
+| `JVAGrssPostToIntrstPrtnActvVal` |  | |  | `ci_gross` |  |  |
+| `JVACarriedIntrstPostings01Val` |  | |  | `ci_fb01` |  |  |
+| `JVAUseTransCrcyCutbackPostsVal` |  | |  | `cb_tcurr` |  |  |
+| `JVAFldStsTypeCostCtrVal` |  | |  | `fsjvct` |  |  |
+| `JVAFieldStatusTypeOrderVal` |  | |  | `fsjvot` |  |  |
+| `JVAFieldStatusTypeProjectVal` |  | |  | `fsjvpt` |  |  |
+| `JVAMessageImpactActiveVal` |  | |  | `budgetmess` |  |  |
+| `JVAVentureDistrAssetLinesVal` |  | |  | `vidist` |  |  |
+| `JVAOperatorAsPartnerActiveVal` |  | |  | `op_as_part` |  |  |
+| `JVADefaultCostCenterVal` |  | |  | `kostl_corp` |  |  |
+| `JVADfltCostRcvryCodeForAstVal` |  | |  | `am_corp_ri` |  |  |
+| `JVACostRecCodeForBkSwitchVal` |  | |  | `bank_ri_sw` |  |  |
+| `JVADefaultBillingCrcyVal` |  | |  | `bcurr` |  |  |
+| `JVABankAccountSwitchActiveVal` |  | |  | `xvba` |  |  |
+| `JVANoCostObjOnAstActvVal` |  | |  | `xasst_co` |  |  |
+| `Currency` |  | | `_CompanyCode` | `Currency` |  |  |
+| `JVABillingThresholdDebitAmt` |  | |  | `billthres` |  |  |
+| `JVABillingThresholdCreditAmt` |  | |  | `billthresc` |  |  |
+| `JVATransVarInterCompAstVal` |  | |  | `tvarcurr` |  |  |
+| `JVASplitByLineItemVal` |  | |  | `split_by_li` |  |  |
+| `JVARtlPrCalcActvVal` |  | |  | `ec_use` |  |  |
+| `JVASprtRptSpprsdPerdsVal` |  | |  | `billthress` |  |  |
+| `JVAProductionMonthActiveVal` |  | |  | `pm_act` |  |  |
+| `JVADeriveEquityGrpProdnMnthVal` |  | |  | `pm_eg` |  |  |
+| `JVAProductionMonthFromYearVal` |  | |  | `pm_act_year` |  |  |
+| `JVAFundingActvVal` |  | |  | `funding_active` |  |  |
+| `JVAIntrstCalcActvVal` |  | |  | `intcalc_active` |  |  |
+| `JVAIntrstCalcAutoGrpgTypeVal` |  | |  | `ic_auto_group` |  |  |
+| `JVAInterestCalcRefGroupVal` |  | |  | `ic_group_ref` |  |  |
+| `JVALedgerVal` |  | |  | `rldnr` |  |  |
+| `JVAFromYearVal` |  | |  | `coalesce(_MasterData.JVAFromYearVal, _t8jz.fryear)` |  |  |
+| `JVAFromPeriodVal` |  | |  | `coalesce(_MasterData.JVAFromYearVal, _t8jz.frperiod)` |  |  |
+| `JVAToYearVal` |  | |  | `coalesce(_MasterData.JVAToYearVal, _t8jz.toyear)` |  |  |
+| `JVAToPeriodVal` |  | |  | `coalesce(_MasterData.JVAToPeriodVal, _t8jz.toperiod)` |  |  |
+| `JVAStandardPaymentVal` |  | |  | `coalesce(_MasterData.JVAStandardPaymentRate, _t8jz.stpay)` |  |  |
+| `JVANonCompulsoryBenefitsVal` |  | |  | `coalesce(_MasterData.JVANonCompulsoryBenefitsRate, _t8jz.noncomp)` |  |  |
+| `JVACompulsoryBenefitsVal` |  | |  | `coalesce(_MasterData.JVACompulsoryBenefitsRate, _t8jz.compuls)` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MasterData` | | ✓ | | | | |
 
 ## Associations
 

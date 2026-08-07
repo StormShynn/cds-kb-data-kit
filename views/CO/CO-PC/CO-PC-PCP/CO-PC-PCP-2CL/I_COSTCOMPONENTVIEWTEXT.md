@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `CostComponentView` | ✓ | |  | `sicht` |
-| `CostComponentViewName` |  | |  | `txsic` |
-| `_Language` | | ✓ | | |
-| `_CostComponentView` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CostComponentView` | ✓ | |  | `sicht` |  |  |
+| `CostComponentViewName` |  | |  | `txsic` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CostComponentView` | | ✓ | | | | |
 
 ## Associations
 

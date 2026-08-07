@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `BR_BillOfLadingType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as logbr_bill_lading_type )` |
-| `BR_BillOfLadingTypeDesc` |  | |  | `ddtext` |
-| `_BR_BillOfLadingType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `BR_BillOfLadingType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as logbr_bill_lading_type )` |  |  |
+| `BR_BillOfLadingTypeDesc` |  | |  | `ddtext` |  |  |
+| `_BR_BillOfLadingType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

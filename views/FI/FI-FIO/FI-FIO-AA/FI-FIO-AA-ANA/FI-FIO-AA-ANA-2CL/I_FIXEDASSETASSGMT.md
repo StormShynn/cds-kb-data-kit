@@ -28,65 +28,65 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |
-| `MasterFixedAsset` | ✓ | |  | `asset_no` |
-| `FixedAsset` | ✓ | |  | `asset_subno` |
-| `ValidityEndDate` | ✓ | |  | `valid_to_date` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `ValidityStartDate` |  | |  | `valid_from_date` |
-| `VehicleLicensePlateNumber` |  | |  | `car_license_plate` |
-| `CostCenter` |  | |  | `cost_center` |
-| `Plant` |  | |  | `plant` |
-| `BusinessArea` |  | |  | `business_area` |
-| `AssetLocation` |  | |  | `location` |
-| `Room` |  | |  | `room` |
-| `CostCtrActivityType` |  | |  | `activity_type` |
-| `InternalOrder` |  | |  | `internal_order` |
-| `IsShutDown` |  | |  | `cast( '' as xstil )` |
-| `ResponsibleCostCenter` |  | |  | `responsible_cost_center` |
-| `PersonnelNumber` |  | |  | `personnel_number` |
-| `MaintenanceOrder` |  | |  | `cast( '' as iaufn )` |
-| `TaxJurisdiction` |  | |  | `tax_jurisdiction` |
-| `Fund` |  | |  | `fund` |
-| `WBSElementInternalID_2` |  | |  | `wbs_element` |
-| `WBSElementInternalID` |  | |  | `cast( faat_md_tdd.wbs_element as am_ipsnr preserving type )` |
-| `REInternalFinNumber` |  | |  | `cast( faat_md_tdd.real_estate_key as recaimkeyfi preserving type )` |
-| `RealEstateObject` |  | |  | `cast( faat_md_tdd.real_estate_key as faa_deprecated_real_estate_obj preserving type )` |
-| `ProfitCenter` |  | |  | `profit_center` |
-| `Segment` |  | |  | `segment` |
-| `FunctionalArea` |  | |  | `functional_area` |
-| `ShiftOperationFactor` |  | |  | `cast( '0' as msfak )` |
-| `GrantID` |  | |  | `grant_id` |
-| `BudgetPeriod` |  | |  | `budget_period` |
-| `FundsCenter` |  | |  | `funds_center` |
-| `FunctionalLocation` |  | |  | `cast( '' as tplnr )` |
-| `BusinessPlace` |  | |  | `business_place` |
-| `AssetAuthorizationContext` |  | |  | `cast( 'NEW' as faa_authcntxt )` |
-| `ReferenceDocumentType` |  | |  | `awtyp` |
-| `LogicalSystem` |  | |  | `awsys` |
-| `ReferenceDocumentContext` |  | |  | `aworg` |
-| `ReferenceDocument` |  | |  | `awref` |
-| `_FixedAsset` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_ResponsibleCostCenter` | | ✓ | | |
-| `_CostCenterActivityType` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_InternalOrder` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_AssetLocation` | | ✓ | | |
-| `_RealEstateObject` | | ✓ | | |
-| `_Employment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
+| `MasterFixedAsset` | ✓ | |  | `asset_no` |  |  |
+| `FixedAsset` | ✓ | |  | `asset_subno` |  |  |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `ValidityStartDate` |  | |  | `valid_from_date` |  |  |
+| `VehicleLicensePlateNumber` |  | |  | `car_license_plate` |  |  |
+| `CostCenter` |  | |  | `cost_center` |  |  |
+| `Plant` |  | |  | `plant` |  |  |
+| `BusinessArea` |  | |  | `business_area` |  |  |
+| `AssetLocation` |  | |  | `location` |  |  |
+| `Room` |  | |  | `room` |  |  |
+| `CostCtrActivityType` |  | |  | `activity_type` |  |  |
+| `InternalOrder` |  | |  | `internal_order` |  |  |
+| `IsShutDown` |  | |  | `cast( '' as xstil )` |  |  |
+| `ResponsibleCostCenter` |  | |  | `responsible_cost_center` |  |  |
+| `PersonnelNumber` |  | |  | `personnel_number` |  |  |
+| `MaintenanceOrder` |  | |  | `cast( '' as iaufn )` |  |  |
+| `TaxJurisdiction` |  | |  | `tax_jurisdiction` |  |  |
+| `Fund` |  | |  | `fund` |  |  |
+| `WBSElementInternalID_2` |  | |  | `wbs_element` |  |  |
+| `WBSElementInternalID` |  | |  | `cast( faat_md_tdd.wbs_element as am_ipsnr preserving type )` |  |  |
+| `REInternalFinNumber` |  | |  | `cast( faat_md_tdd.real_estate_key as recaimkeyfi preserving type )` |  |  |
+| `RealEstateObject` |  | |  | `cast( faat_md_tdd.real_estate_key as faa_deprecated_real_estate_obj preserving type )` |  |  |
+| `ProfitCenter` |  | |  | `profit_center` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `FunctionalArea` |  | |  | `functional_area` |  |  |
+| `ShiftOperationFactor` |  | |  | `cast( '0' as msfak )` |  |  |
+| `GrantID` |  | |  | `grant_id` |  |  |
+| `BudgetPeriod` |  | |  | `budget_period` |  |  |
+| `FundsCenter` |  | |  | `funds_center` |  |  |
+| `FunctionalLocation` |  | |  | `cast( '' as tplnr )` |  |  |
+| `BusinessPlace` |  | |  | `business_place` |  |  |
+| `AssetAuthorizationContext` |  | |  | `cast( 'NEW' as faa_authcntxt )` |  |  |
+| `ReferenceDocumentType` |  | |  | `awtyp` |  |  |
+| `LogicalSystem` |  | |  | `awsys` |  |  |
+| `ReferenceDocumentContext` |  | |  | `aworg` |  |  |
+| `ReferenceDocument` |  | |  | `awref` |  |  |
+| `_FixedAsset` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_ResponsibleCostCenter` | | ✓ | | | | |
+| `_CostCenterActivityType` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_InternalOrder` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_AssetLocation` | | ✓ | | | | |
+| `_RealEstateObject` | | ✓ | | | | |
+| `_Employment` | | ✓ | | | | |
 
 ## Associations
 

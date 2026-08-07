@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditMemoReqApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
-| `_SDApprovalReason` | | ✓ | | |
-| `_SDApprovalReasonT` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditMemoReqApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |  |  |
+| `_SDApprovalReason` | | ✓ | | | | |
+| `_SDApprovalReasonT` | | ✓ | | | | |
 
 ## Source Code
 

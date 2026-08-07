@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeRecordReferenceUUID` | ✓ | |  |  |
-| `ChangeRecordUUID` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeRecordReferenceUUID` | ✓ | |  |  |  |  |
+| `ChangeRecordUUID` |  | |  |  |  |  |
 
 ## Source Code
 

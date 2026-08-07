@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Bank` | ✓ | |  |  |
-| `BankCountry` | ✓ | |  |  |
-| `BankName` |  | |  |  |
-| `CreditRating` |  | |  |  |
-| `NumberOfBankAccounts` |  | |  |  |
-| `NumberOfCompanyCodes` |  | |  |  |
-| `NrOfBanksRated` |  | |  | `1` |
-| `_Country` | | ✓ | | |
-| `_BPCreditWorthinessRating` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Bank` | ✓ | |  |  |  |  |
+| `BankCountry` | ✓ | |  |  |  |  |
+| `BankName` |  | |  |  |  |  |
+| `CreditRating` |  | |  |  |  |  |
+| `NumberOfBankAccounts` |  | |  |  |  |  |
+| `NumberOfCompanyCodes` |  | |  |  |  |  |
+| `NrOfBanksRated` |  | |  | `1` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_BPCreditWorthinessRating` | | ✓ | | | | |
 
 ## Source Code
 

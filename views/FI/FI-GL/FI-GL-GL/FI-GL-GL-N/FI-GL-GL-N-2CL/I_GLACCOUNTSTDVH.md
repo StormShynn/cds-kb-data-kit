@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccount` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `GLAccountExternal` |  | |  | `cast( GLAccountExternal as fac_sakan )` |
-| `AlternativeGLAccount` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `GLAccountGroup` |  | |  |  |
-| `GLAccountType` |  | |  |  |
-| `ReconciliationAccountType` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccount` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `GLAccountExternal` |  | |  | `cast( GLAccountExternal as fac_sakan )` |  |  |
+| `AlternativeGLAccount` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `GLAccountGroup` |  | |  |  |  |  |
+| `GLAccountType` |  | |  |  |  |  |
+| `ReconciliationAccountType` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

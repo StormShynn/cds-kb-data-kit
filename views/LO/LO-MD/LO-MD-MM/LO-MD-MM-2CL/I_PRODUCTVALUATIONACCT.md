@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ValuationArea` | ✓ | |  |  |
-| `ValuationType` | ✓ | |  |  |
-| `CommercialPrice1InCoCodeCrcy` |  | |  |  |
-| `CommercialPrice2InCoCodeCrcy` |  | |  |  |
-| `CommercialPrice3InCoCodeCrcy` |  | |  |  |
-| `DevaluationYearCount` |  | |  |  |
-| `FutureEvaluatedAmountValue` |  | |  | `FuturePrice` |
-| `FuturePriceValidityStartDate` |  | |  |  |
-| `IsLIFOAndFIFORelevant` |  | |  |  |
-| `LIFOValuationPoolNumber` |  | |  |  |
-| `StandardPricePrevYear` |  | |  |  |
-| `TaxPricel1InCoCodeCrcy` |  | |  |  |
-| `TaxPrice2InCoCodeCrcy` |  | |  |  |
-| `TaxPrice3InCoCodeCrcy` |  | |  |  |
-| `TaxBasedPricesPriceUnitQty` |  | |  |  |
-| `CompanyCode` |  | |  | `bukrs` |
-| `Currency` |  | |  | `waers` |
-| `ProdCostEstNumber` |  | |  |  |
-| `MLIsActiveAtProductLevel` |  | |  |  |
-| `ValuationCategory` |  | |  |  |
-| `ProdPrcControlInPreviousPeriod` |  | |  |  |
-| `MvgAvgPriceInPreviousPeriod` |  | |  |  |
-| `StandardPriceInPreviousPeriod` |  | |  |  |
-| `ProdPrcUntQtyInPreviousPeriod` |  | |  |  |
-| `ValuationClassPreviousPeriod` |  | |  |  |
-| `ProdPriceControlInPreviousYear` |  | |  |  |
-| `MvgAveragePriceInPreviousYear` |  | |  |  |
-| `ProdPrcUntQtyInPreviousYear` |  | |  |  |
-| `ValuationClassPreviousYear` |  | |  |  |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `_Product` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_InvtryValnProcedPrevPerd` | | ✓ | | |
-| `_InvtryValnProcedLastYr` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ValuationArea` | ✓ | |  |  |  |  |
+| `ValuationType` | ✓ | |  |  |  |  |
+| `CommercialPrice1InCoCodeCrcy` |  | |  |  |  |  |
+| `CommercialPrice2InCoCodeCrcy` |  | |  |  |  |  |
+| `CommercialPrice3InCoCodeCrcy` |  | |  |  |  |  |
+| `DevaluationYearCount` |  | |  |  |  |  |
+| `FutureEvaluatedAmountValue` |  | |  | `FuturePrice` |  |  |
+| `FuturePriceValidityStartDate` |  | |  |  |  |  |
+| `IsLIFOAndFIFORelevant` |  | |  |  |  |  |
+| `LIFOValuationPoolNumber` |  | |  |  |  |  |
+| `StandardPricePrevYear` |  | |  |  |  |  |
+| `TaxPricel1InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxPrice2InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxPrice3InCoCodeCrcy` |  | |  |  |  |  |
+| `TaxBasedPricesPriceUnitQty` |  | |  |  |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `ProdCostEstNumber` |  | |  |  |  |  |
+| `MLIsActiveAtProductLevel` |  | |  |  |  |  |
+| `ValuationCategory` |  | |  |  |  |  |
+| `ProdPrcControlInPreviousPeriod` |  | |  |  |  |  |
+| `MvgAvgPriceInPreviousPeriod` |  | |  |  |  |  |
+| `StandardPriceInPreviousPeriod` |  | |  |  |  |  |
+| `ProdPrcUntQtyInPreviousPeriod` |  | |  |  |  |  |
+| `ValuationClassPreviousPeriod` |  | |  |  |  |  |
+| `ProdPriceControlInPreviousYear` |  | |  |  |  |  |
+| `MvgAveragePriceInPreviousYear` |  | |  |  |  |  |
+| `ProdPrcUntQtyInPreviousYear` |  | |  |  |  |  |
+| `ValuationClassPreviousYear` |  | |  |  |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_InvtryValnProcedPrevPerd` | | ✓ | | | | |
+| `_InvtryValnProcedLastYr` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Associations
 

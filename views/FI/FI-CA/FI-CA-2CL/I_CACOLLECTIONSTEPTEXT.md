@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACollectionStep` | ✓ | |  | `step` |
-| `Language` | ✓ | |  | `spras` |
-| `CACollectionStepName` |  | |  | `stept` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACollectionStep` | ✓ | |  | `step` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CACollectionStepName` |  | |  | `stept` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

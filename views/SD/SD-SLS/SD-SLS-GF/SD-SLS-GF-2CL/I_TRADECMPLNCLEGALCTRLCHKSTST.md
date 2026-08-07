@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TradeCmplncLegalCtrlChkSts` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TradeCmplncLegalCtrlChkStsDesc` |  | |  | `ddtext` |
-| `_TradeCmplncLegalCtrlChkSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TradeCmplncLegalCtrlChkSts` | ✓ | |  | `substring(domvalue_l, 1, 1)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TradeCmplncLegalCtrlChkStsDesc` |  | |  | `ddtext` |  |  |
+| `_TradeCmplncLegalCtrlChkSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

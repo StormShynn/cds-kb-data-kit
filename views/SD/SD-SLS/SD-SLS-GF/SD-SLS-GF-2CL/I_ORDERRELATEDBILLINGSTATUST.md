@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderRelatedBillingStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OrderRelatedBillingStatusDesc` |  | |  | `bezei` |
-| `_OrderRelatedBillingStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderRelatedBillingStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OrderRelatedBillingStatusDesc` |  | |  | `bezei` |  |  |
+| `_OrderRelatedBillingStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

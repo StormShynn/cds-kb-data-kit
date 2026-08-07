@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `GHGEnergyMix` | ✓ | |  | `cast( dd07t.domvalue_l as sufnd_vdm_ghgenergymix )` |
-| `GHGEnergyMixName` |  | |  | `cast( dd07t.ddtext as sufnd_vdm_ghgenergymixname preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `GHGEnergyMix` | ✓ | |  | `cast( dd07t.domvalue_l as sufnd_vdm_ghgenergymix )` |  |  |
+| `GHGEnergyMixName` |  | |  | `cast( dd07t.ddtext as sufnd_vdm_ghgenergymixname preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

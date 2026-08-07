@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LimitType` | ✓ | |  | `sla` |
-| `LimitUtilznDetnProcedure` |  | |  | `sle` |
-| `RelationshipCategory` |  | |  | `spr` |
-| `CtptyLmtBPAttributionDirection` |  | |  | `spd` |
-| `CtptyLmtWrngThresholdCategory` |  | |  | `sigtyp` |
-| `_LimitTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LimitType` | ✓ | |  | `sla` |  |  |
+| `LimitUtilznDetnProcedure` |  | |  | `sle` |  |  |
+| `RelationshipCategory` |  | |  | `spr` |  |  |
+| `CtptyLmtBPAttributionDirection` |  | |  | `spd` |  |  |
+| `CtptyLmtWrngThresholdCategory` |  | |  | `sigtyp` |  |  |
+| `_LimitTypeText` | | ✓ | | | | |
 
 ## Associations
 

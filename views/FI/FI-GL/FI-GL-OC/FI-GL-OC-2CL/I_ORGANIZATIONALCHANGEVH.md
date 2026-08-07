@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrganizationalChange` | ✓ | |  | `orgl_change` |
-| `OrganizationalChangeName` |  | |  | `_Text[1:Language=$session.system_language].OrganizationalChangeName` |
-| `OrglChangeEffectiveDate` |  | |  | `effective_date` |
-| `OrglChangeCreatedByUser` |  | |  | `created_by_user` |
-| `OrglChangeLastChangedByUser` |  | |  | `last_changed_by_user` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrganizationalChange` | ✓ | |  | `orgl_change` |  |  |
+| `OrganizationalChangeName` |  | |  | `_Text[1:Language=$session.system_language].OrganizationalChangeName` |  |  |
+| `OrglChangeEffectiveDate` |  | |  | `effective_date` |  |  |
+| `OrglChangeCreatedByUser` |  | |  | `created_by_user` |  |  |
+| `OrglChangeLastChangedByUser` |  | |  | `last_changed_by_user` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

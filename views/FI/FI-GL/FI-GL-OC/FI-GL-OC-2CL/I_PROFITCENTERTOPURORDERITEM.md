@@ -31,38 +31,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocument` | ✓ | |  | `ebeln` |
-| `PurchasingDocumentItem` | ✓ | |  | `ebelp` |
-| `AccountAssignmentNumber` | ✓ | |  | `zekkn` |
-| `ValidityStartDate` | ✓ | |  | `valid_from` |
-| `ValidityEndDate` |  | |  | `valid_to` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `OrganizationalChange` |  | |  | `orgl_change` |
-| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |
-| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |
-| `SourceWBSElementInternalID` |  | |  | `srce_ps_psp_pnr` |
-| `SourceProjectInternalID` |  | |  | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |
-| `SourceProduct` |  | |  | `srce_matnr` |
-| `SourcePlant` |  | |  | `srce_werks` |
-| `SourceSalesDocument` |  | |  | `cast(srce_kdauf as vbeln_va preserving type)` |
-| `SourceSalesDocumentItem` |  | |  | `cast(srce_kdpos as posnr_va preserving type)` |
-| `SourceCostCenter` |  | |  | `cast(srce_kostl as kostl preserving type)` |
-| `SourceMasterFixedAsset` |  | |  | `cast(srce_anln1 as anln1 preserving type)` |
-| `SourceFixedAsset` |  | |  | `cast(srce_anln2 as anln2 preserving type)` |
-| `SourceOrder` |  | |  | `cast(srce_aufnr as aufnr preserving type)` |
-| `SourceNetworkActivity` |  | |  | `cast(srce_vornr as fis_networkactivity_no_conv preserving type)` |
-| `_OrglChgReassignmentStatus` | | ✓ | | |
-| `_ProfitCtrDerivationSrceType` | | ✓ | | |
-| `_OrglChange` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ProfitCtr` | | ✓ | | |
-| `_ProfitCenterBeforeOrglChange` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocument` | ✓ | |  | `ebeln` |  |  |
+| `PurchasingDocumentItem` | ✓ | |  | `ebelp` |  |  |
+| `AccountAssignmentNumber` | ✓ | |  | `zekkn` |  |  |
+| `ValidityStartDate` | ✓ | |  | `valid_from` |  |  |
+| `ValidityEndDate` |  | |  | `valid_to` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `OrganizationalChange` |  | |  | `orgl_change` |  |  |
+| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |  |  |
+| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |  |  |
+| `SourceWBSElementInternalID` |  | |  | `srce_ps_psp_pnr` |  |  |
+| `SourceProjectInternalID` |  | |  | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |  |  |
+| `SourceProduct` |  | |  | `srce_matnr` |  |  |
+| `SourcePlant` |  | |  | `srce_werks` |  |  |
+| `SourceSalesDocument` |  | |  | `cast(srce_kdauf as vbeln_va preserving type)` |  |  |
+| `SourceSalesDocumentItem` |  | |  | `cast(srce_kdpos as posnr_va preserving type)` |  |  |
+| `SourceCostCenter` |  | |  | `cast(srce_kostl as kostl preserving type)` |  |  |
+| `SourceMasterFixedAsset` |  | |  | `cast(srce_anln1 as anln1 preserving type)` |  |  |
+| `SourceFixedAsset` |  | |  | `cast(srce_anln2 as anln2 preserving type)` |  |  |
+| `SourceOrder` |  | |  | `cast(srce_aufnr as aufnr preserving type)` |  |  |
+| `SourceNetworkActivity` |  | |  | `cast(srce_vornr as fis_networkactivity_no_conv preserving type)` |  |  |
+| `_OrglChgReassignmentStatus` | | ✓ | | | | |
+| `_ProfitCtrDerivationSrceType` | | ✓ | | | | |
+| `_OrglChange` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ProfitCtr` | | ✓ | | | | |
+| `_ProfitCenterBeforeOrglChange` | | ✓ | | | | |
 
 ## Associations
 

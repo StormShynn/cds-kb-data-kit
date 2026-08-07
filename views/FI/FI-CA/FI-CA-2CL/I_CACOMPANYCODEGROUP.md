@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACompanyCodeGroup` | ✓ | |  | `opbuk` |
-| `CAPaymentCompanyCode` |  | |  | `pybuk` |
-| `_Text` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACompanyCodeGroup` | ✓ | |  | `opbuk` |  |  |
+| `CAPaymentCompanyCode` |  | |  | `pybuk` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

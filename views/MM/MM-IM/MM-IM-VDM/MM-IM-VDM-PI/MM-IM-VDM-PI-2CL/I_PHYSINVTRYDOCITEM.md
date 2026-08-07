@@ -29,95 +29,95 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FiscalYear` | ✓ | |  | `gjahr` |
-| `PhysicalInventoryDocument` | ✓ | |  | `cast(iseg.iblnr as pi_item_document preserving type)` |
-| `PhysicalInventoryDocumentItem` | ✓ | |  | `cast(iseg.zeili as pi_item_number preserving type)` |
-| `Material` |  | |  | `matnr` |
-| `Plant` |  | |  | `werks` |
-| `StorageLocation` |  | |  | `lgort` |
-| `Batch` |  | |  | `charg` |
-| `RealProductBatch` |  | |  | `cast( case when ( _ProductPlantBasic.ValuationCategory <> '' and _ProductPlantBasic.IsBatchManagementRequired = '' ) then ( '' ) else ( iseg.charg ) end as charg_d )` |
-| `ValuationType` |  | | `_BatchPlant` | `InventoryValuationType` |
-| `InventorySpecialStockType` |  | |  | `cast(iseg.sobkz as nsdm_spcl_stock_type preserving type)` |
-| `PhysicalInventoryStockType` |  | |  | `bstar` |
-| `SalesOrder` |  | |  | `kdauf` |
-| `SalesOrderItem` |  | |  | `cast(iseg.kdpos as pi_sales_order_item preserving type)` |
-| `ScheduleLine` |  | |  | `cast(iseg.kdein as pi_sales_order_sched_line preserving type)` |
-| `Supplier` |  | |  | `cast(iseg.lifnr as mmim_supplier preserving type)` |
-| `Customer` |  | |  | `cast(iseg.kunnr as mmim_customer preserving type)` |
-| `StockOwner` |  | |  | `disub_owner` |
-| `LastChangeUser` |  | |  | `usnam` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `CountedByUser` |  | |  | `usnaz` |
-| `PhysicalInventoryLastCountDate` |  | |  | `zldat` |
-| `AdjustmentPostingMadeByUser` |  | |  | `cast(iseg.usnad as pi_item_adjustment_posting_usr preserving type)` |
-| `PostingDate` |  | |  | `cast(iseg.budat as mmim_postingdate preserving type)` |
-| `PhysInventoryReferenceNumber` |  | |  | `cast(iseg.xblni as pi_item_reference preserving type )` |
-| `PhysicalInventoryItemIsCounted` |  | |  | `cast(iseg.xzael as pi_is_item_counted preserving type)` |
-| `PhysInvtryDifferenceIsPosted` |  | |  | `cast(iseg.xdiff as pi_is_item_difference_posted preserving type)` |
-| `PhysInvtryItemIsRecounted` |  | |  | `cast(iseg.xnzae as pi_is_item_recounted preserving type)` |
-| `PhysInvtryItemIsDeleted` |  | |  | `cast(iseg.xloek as pi_is_item_deleted preserving type)` |
-| `IsHandledInAltvUnitOfMsr` |  | |  | `cast(iseg.xamei as pi_item_is_handled_in_altv_uom preserving type)` |
-| `BookQtyBfrCountInMatlBaseUnit` |  | |  | `buchm` |
-| `PhysicalInventoryItemIsZero` |  | |  | `cast(iseg.xnull as pi_item_is_zero_count preserving type)` |
-| `Quantity` |  | |  | `cast(iseg.menge as pi_item_cntd_qty preserving type)` |
-| `MaterialBaseUnit` |  | |  | `meins` |
-| `QuantityInUnitOfEntry` |  | |  | `cast(iseg.erfmg as pi_item_qty_in_entry_uom preserving type)` |
-| `UnitOfEntry` |  | |  | `cast(iseg.erfme as pi_item_entry_uom preserving type)` |
-| `MaterialDocumentYear` |  | |  | `cast(iseg.mjahr as nsdm_mjahr preserving type)` |
-| `MaterialDocument` |  | |  | `mblnr` |
-| `MaterialDocumentItem` |  | |  | `cast(iseg.zeile as nsdm_mblpo preserving type)` |
-| `PhysInvtryRecountDocument` |  | |  | `nblnr` |
-| `DifferenceAmountInCoCodeCrcy` |  | |  | `cast(iseg.dmbtr as pi_item_diff_value preserving type)` |
-| `Currency` |  | |  | `cast(iseg.waers as nsdm_comp_code_currency preserving type)` |
-| `CycleCountType` |  | |  | `cast(iseg.abcin as pi_item_cycle_count_type preserving type)` |
-| `WBSElementInternalID` |  | |  | `ps_psp_pnr` |
-| `WBSElementInternalID_2` |  | |  | `cast ( iseg.ps_psp_pnr as ps_s4_pspnr )` |
-| `SlsPrcAmtInclVATInCoCodeCrcy` |  | |  | `vkwrt` |
-| `SlsPrcAmtExclVATInCoCodeCrcy` |  | |  | `vkwra` |
-| `DiffAmountOnCountEntryInCCCrcy` |  | |  | `diwzl` |
-| `EnteredSlsAmtInCoCodeCrcy` |  | |  | `cast(iseg.exvkw as pi_item_ext_value_sp preserving type)` |
-| `SlsPriceAmountInCoCodeCrcy` |  | |  | `cast(iseg.buchw as pi_item_sp_of_book_qty preserving type)` |
-| `IsValueOnlyMaterial` |  | |  | `cast(iseg.kwart as pi_item_is_value_only_mat preserving type)` |
-| `PhysInvtryCtAmtInCoCodeCrcy` |  | |  | `cast(iseg.wrtzl as pi_item_counted_qty_value preserving type)` |
-| `BookQtyAmountInCoCodeCrcy` |  | |  | `cast(iseg.wrtbm as pi_item_book_value preserving type)` |
-| `ProductCategory` |  | |  | `cast(iseg.attyp as prodcategory preserving type)` |
-| `ReasonForPhysInvtryDifference` |  | |  | `cast(iseg.grund as pi_item_difference_reason preserving type)` |
-| `CrossPlantConfigurableMaterial` |  | |  | `cast(iseg.samat as pi_item_cross_plant_cnf_mat preserving type)` |
-| `PhysInvtryDiffIsDistributed` |  | |  | `cast(iseg.xdispatch as pi_item_is_diff_distributed preserving type)` |
-| `_Material` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductPlantBasic` | | ✓ | | |
-| `_ProductStorageLocation` | | ✓ | | |
-| `_BatchPlant` | | ✓ | | |
-| `_CrossPlantConfigurableMatl` | | ✓ | | |
-| `_CrossPlantConfigurableProd` | | ✓ | | |
-| `_LastChangeUser` | | ✓ | | |
-| `_CountedByUser` | | ✓ | | |
-| `_AdjustmentPostingMadeByUser` | | ✓ | | |
-| `_MaterialBaseUnit` | | ✓ | | |
-| `_UnitOfEntry` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_CustomerCompanyByPlant` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_SalesOrderScheduleLine` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_PhysInvtryStatusT` | | ✓ | | |
-| `_PhysInvtryDocHeader` | | ✓ | | |
-| `_PhysicalInventoryStockType` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_ProductCategory` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_WBSElementBasic` | | ✓ | | |
-| `_PhysInvtryDocFiscalYear` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
+| `PhysicalInventoryDocument` | ✓ | |  | `cast(iseg.iblnr as pi_item_document preserving type)` |  |  |
+| `PhysicalInventoryDocumentItem` | ✓ | |  | `cast(iseg.zeili as pi_item_number preserving type)` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `StorageLocation` |  | |  | `lgort` |  |  |
+| `Batch` |  | |  | `charg` |  |  |
+| `RealProductBatch` |  | |  | `cast( case when ( _ProductPlantBasic.ValuationCategory <> '' and _ProductPlantBasic.IsBatchManagementRequired = '' ) then ( '' ) else ( iseg.charg ) end as charg_d )` |  |  |
+| `ValuationType` |  | | `_BatchPlant` | `InventoryValuationType` |  |  |
+| `InventorySpecialStockType` |  | |  | `cast(iseg.sobkz as nsdm_spcl_stock_type preserving type)` |  |  |
+| `PhysicalInventoryStockType` |  | |  | `bstar` |  |  |
+| `SalesOrder` |  | |  | `kdauf` |  |  |
+| `SalesOrderItem` |  | |  | `cast(iseg.kdpos as pi_sales_order_item preserving type)` |  |  |
+| `ScheduleLine` |  | |  | `cast(iseg.kdein as pi_sales_order_sched_line preserving type)` |  |  |
+| `Supplier` |  | |  | `cast(iseg.lifnr as mmim_supplier preserving type)` |  |  |
+| `Customer` |  | |  | `cast(iseg.kunnr as mmim_customer preserving type)` |  |  |
+| `StockOwner` |  | |  | `disub_owner` |  |  |
+| `LastChangeUser` |  | |  | `usnam` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `CountedByUser` |  | |  | `usnaz` |  |  |
+| `PhysicalInventoryLastCountDate` |  | |  | `zldat` |  |  |
+| `AdjustmentPostingMadeByUser` |  | |  | `cast(iseg.usnad as pi_item_adjustment_posting_usr preserving type)` |  |  |
+| `PostingDate` |  | |  | `cast(iseg.budat as mmim_postingdate preserving type)` |  |  |
+| `PhysInventoryReferenceNumber` |  | |  | `cast(iseg.xblni as pi_item_reference preserving type )` |  |  |
+| `PhysicalInventoryItemIsCounted` |  | |  | `cast(iseg.xzael as pi_is_item_counted preserving type)` |  |  |
+| `PhysInvtryDifferenceIsPosted` |  | |  | `cast(iseg.xdiff as pi_is_item_difference_posted preserving type)` |  |  |
+| `PhysInvtryItemIsRecounted` |  | |  | `cast(iseg.xnzae as pi_is_item_recounted preserving type)` |  |  |
+| `PhysInvtryItemIsDeleted` |  | |  | `cast(iseg.xloek as pi_is_item_deleted preserving type)` |  |  |
+| `IsHandledInAltvUnitOfMsr` |  | |  | `cast(iseg.xamei as pi_item_is_handled_in_altv_uom preserving type)` |  |  |
+| `BookQtyBfrCountInMatlBaseUnit` |  | |  | `buchm` |  |  |
+| `PhysicalInventoryItemIsZero` |  | |  | `cast(iseg.xnull as pi_item_is_zero_count preserving type)` |  |  |
+| `Quantity` |  | |  | `cast(iseg.menge as pi_item_cntd_qty preserving type)` |  |  |
+| `MaterialBaseUnit` |  | |  | `meins` |  |  |
+| `QuantityInUnitOfEntry` |  | |  | `cast(iseg.erfmg as pi_item_qty_in_entry_uom preserving type)` |  |  |
+| `UnitOfEntry` |  | |  | `cast(iseg.erfme as pi_item_entry_uom preserving type)` |  |  |
+| `MaterialDocumentYear` |  | |  | `cast(iseg.mjahr as nsdm_mjahr preserving type)` |  |  |
+| `MaterialDocument` |  | |  | `mblnr` |  |  |
+| `MaterialDocumentItem` |  | |  | `cast(iseg.zeile as nsdm_mblpo preserving type)` |  |  |
+| `PhysInvtryRecountDocument` |  | |  | `nblnr` |  |  |
+| `DifferenceAmountInCoCodeCrcy` |  | |  | `cast(iseg.dmbtr as pi_item_diff_value preserving type)` |  |  |
+| `Currency` |  | |  | `cast(iseg.waers as nsdm_comp_code_currency preserving type)` |  |  |
+| `CycleCountType` |  | |  | `cast(iseg.abcin as pi_item_cycle_count_type preserving type)` |  |  |
+| `WBSElementInternalID` |  | |  | `ps_psp_pnr` |  |  |
+| `WBSElementInternalID_2` |  | |  | `cast ( iseg.ps_psp_pnr as ps_s4_pspnr )` |  |  |
+| `SlsPrcAmtInclVATInCoCodeCrcy` |  | |  | `vkwrt` |  |  |
+| `SlsPrcAmtExclVATInCoCodeCrcy` |  | |  | `vkwra` |  |  |
+| `DiffAmountOnCountEntryInCCCrcy` |  | |  | `diwzl` |  |  |
+| `EnteredSlsAmtInCoCodeCrcy` |  | |  | `cast(iseg.exvkw as pi_item_ext_value_sp preserving type)` |  |  |
+| `SlsPriceAmountInCoCodeCrcy` |  | |  | `cast(iseg.buchw as pi_item_sp_of_book_qty preserving type)` |  |  |
+| `IsValueOnlyMaterial` |  | |  | `cast(iseg.kwart as pi_item_is_value_only_mat preserving type)` |  |  |
+| `PhysInvtryCtAmtInCoCodeCrcy` |  | |  | `cast(iseg.wrtzl as pi_item_counted_qty_value preserving type)` |  |  |
+| `BookQtyAmountInCoCodeCrcy` |  | |  | `cast(iseg.wrtbm as pi_item_book_value preserving type)` |  |  |
+| `ProductCategory` |  | |  | `cast(iseg.attyp as prodcategory preserving type)` |  |  |
+| `ReasonForPhysInvtryDifference` |  | |  | `cast(iseg.grund as pi_item_difference_reason preserving type)` |  |  |
+| `CrossPlantConfigurableMaterial` |  | |  | `cast(iseg.samat as pi_item_cross_plant_cnf_mat preserving type)` |  |  |
+| `PhysInvtryDiffIsDistributed` |  | |  | `cast(iseg.xdispatch as pi_item_is_diff_distributed preserving type)` |  |  |
+| `_Material` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductPlantBasic` | | ✓ | | | | |
+| `_ProductStorageLocation` | | ✓ | | | | |
+| `_BatchPlant` | | ✓ | | | | |
+| `_CrossPlantConfigurableMatl` | | ✓ | | | | |
+| `_CrossPlantConfigurableProd` | | ✓ | | | | |
+| `_LastChangeUser` | | ✓ | | | | |
+| `_CountedByUser` | | ✓ | | | | |
+| `_AdjustmentPostingMadeByUser` | | ✓ | | | | |
+| `_MaterialBaseUnit` | | ✓ | | | | |
+| `_UnitOfEntry` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerCompanyByPlant` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_SalesOrderScheduleLine` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_PhysInvtryStatusT` | | ✓ | | | | |
+| `_PhysInvtryDocHeader` | | ✓ | | | | |
+| `_PhysicalInventoryStockType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_ProductCategory` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementBasic` | | ✓ | | | | |
+| `_PhysInvtryDocFiscalYear` | | ✓ | | | | |
 
 ## Associations
 

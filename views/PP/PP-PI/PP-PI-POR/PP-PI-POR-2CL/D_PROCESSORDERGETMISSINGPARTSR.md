@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProcessOrder` |  | |  | `aufnr` |
-| `BillOfMaterialItemNumber` |  | |  | `vdm_sposn` |
-| `Material` |  | |  | `matnr` |
-| `Plant` |  | |  | `werks_d` |
-| `StorageLocation` |  | |  | `lgort_d` |
-| `Batch` |  | |  | `charg_d` |
-| `ProcessOrderPhase` |  | |  | `vdm_vornr` |
-| `RequirementDate` |  | |  | `bdter` |
-| `CommittedAvailabilityDate` |  | |  | `dat05` |
-| `BaseUnit` |  | |  | `ausme` |
-| `RequiredQuantity` |  | |  | `bdmng` |
-| `ConfirmedAvailableQuantity` |  | |  | `co_vmeng` |
-| `ActualAvailableQuantity` |  | |  | `pp_atpmg` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessOrder` |  | |  | `aufnr` |  |  |
+| `BillOfMaterialItemNumber` |  | |  | `vdm_sposn` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `Plant` |  | |  | `werks_d` |  |  |
+| `StorageLocation` |  | |  | `lgort_d` |  |  |
+| `Batch` |  | |  | `charg_d` |  |  |
+| `ProcessOrderPhase` |  | |  | `vdm_vornr` |  |  |
+| `RequirementDate` |  | |  | `bdter` |  |  |
+| `CommittedAvailabilityDate` |  | |  | `dat05` |  |  |
+| `BaseUnit` |  | |  | `ausme` |  |  |
+| `RequiredQuantity` |  | |  | `bdmng` |  |  |
+| `ConfirmedAvailableQuantity` |  | |  | `co_vmeng` |  |  |
+| `ActualAvailableQuantity` |  | |  | `pp_atpmg` |  |  |
 
 ## Source Code
 

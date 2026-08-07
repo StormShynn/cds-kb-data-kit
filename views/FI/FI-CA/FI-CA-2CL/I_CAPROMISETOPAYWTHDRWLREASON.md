@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` |
-| `CAIntrstHndlgForWthdrwlPrms2P` |  | |  | `ppinw` |
-| `CAChrgHndlgForWthdrwlPrmsToPay` |  | |  | `ppchw` |
-| `CACreditWorthinessIsUpdated` |  | |  | `xupcw` |
-| `CARsetRsnCanBeUsedInBillerDrct` |  | |  | `xebpp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` |  |  |
+| `CAIntrstHndlgForWthdrwlPrms2P` |  | |  | `ppinw` |  |  |
+| `CAChrgHndlgForWthdrwlPrmsToPay` |  | |  | `ppchw` |  |  |
+| `CACreditWorthinessIsUpdated` |  | |  | `xupcw` |  |  |
+| `CARsetRsnCanBeUsedInBillerDrct` |  | |  | `xebpp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

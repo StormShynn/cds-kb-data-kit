@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `FinancialServicesProductGroup` | ✓ | | `_Text` | `FinancialServicesProductGroup` |
-| `FinServicesProductGroupName` |  | | `_Text` | `FinServicesProductGroupName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinSrvcsProdGroupTP` |  | |  | `_FinancialServicesProductGroup as _FinancialServicesProductGroup : redirected to parent I_CnsldtnFinSrvcsProdGroupTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `FinancialServicesProductGroup` | ✓ | | `_Text` | `FinancialServicesProductGroup` |  |  |
+| `FinServicesProductGroupName` |  | | `_Text` | `FinServicesProductGroupName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFinSrvcsProdGroupTP` |  | |  | `_FinancialServicesProductGroup as _FinancialServicesProductGroup : redirected to parent I_CnsldtnFinSrvcsProdGroupTP` |  |  |
 
 ## Source Code
 

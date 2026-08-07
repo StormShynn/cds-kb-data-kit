@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingType` | ✓ | |  | `cast(txt.termkz as pph_termkz preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
-| `SchedulingTypeName` |  | |  | `cast(txt.txt as termkz_txt preserving type)` |
-| `_SchedulingType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingType` | ✓ | |  | `cast(txt.termkz as pph_termkz preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |  |  |
+| `SchedulingTypeName` |  | |  | `cast(txt.txt as termkz_txt preserving type)` |  |  |
+| `_SchedulingType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinSGLErrorItemStatus` | ✓ | |  | `cast( domvalue_l as char1 )` |
-| `FinSGLErrorItemStatusText` |  | |  | `cast( ddtext as char10 )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinSGLErrorItemStatus` | ✓ | |  | `cast( domvalue_l as char1 )` | `CHAR(1)` | Single-Character Flag |
+| `FinSGLErrorItemStatusText` |  | |  | `cast( ddtext as char10 )` | `CHAR(10)` | Character Field with Length 10 |
 
 ## Source Code
 

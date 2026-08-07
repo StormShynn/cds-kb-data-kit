@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `CommunicationMediumType` | ✓ | |  | `comm_type` |
-| `CommunicationMediumTypeName` |  | |  | `comm_text` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CommunicationMediumType` | ✓ | |  | `comm_type` |  |  |
+| `CommunicationMediumTypeName` |  | |  | `comm_text` |  |  |
 
 ## Source Code
 

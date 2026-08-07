@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BPMinimumReserve` | ✓ | |  | `cast ( dd07l.domvalue_l as bnk_min_rsv )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPMinimumReserve` | ✓ | |  | `cast ( dd07l.domvalue_l as bnk_min_rsv )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

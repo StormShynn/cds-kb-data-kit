@@ -30,76 +30,76 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `ReservationItem` | ✓ | |  |  |
-| `RecordType` | ✓ | |  |  |
-| `Material` |  | |  |  |
-| `IsMaterialProvision` |  | |  |  |
-| `MaterialProvisionType` |  | |  |  |
-| `MaterialQtyToBaseQtyNmrtr` |  | |  |  |
-| `MaterialQtyToBaseQtyDnmntr` |  | |  |  |
-| `MaterialRevisionLevel` |  | |  |  |
-| `MaterialCompIsVariableSized` |  | |  |  |
-| `MaterialComponentIsPhantomItem` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `RequiredQuantity` |  | |  |  |
-| `RequirementDate` |  | |  |  |
-| `RequirementTime` |  | |  |  |
-| `ReservationIsFinallyIssued` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `QuantityInEntryUnit` |  | |  |  |
-| `EntryUnit` |  | |  |  |
-| `VariableSizeItemQuantity` |  | |  |  |
-| `VariableSizeItemUnit` |  | |  |  |
-| `VariableSizeComponentUnit` |  | |  |  |
-| `VariableSizeComponentQuantity` |  | |  |  |
-| `UnitOfMeasureForSize1To3` |  | |  |  |
-| `Size1` |  | |  |  |
-| `Size2` |  | |  |  |
-| `Size3` |  | |  |  |
-| `Plant` |  | |  |  |
-| `LatestRequirementDate` |  | |  |  |
-| `OrderLevelValue` |  | |  |  |
-| `OrderPathValue` |  | |  |  |
-| `BillOfMaterialItemNumber` |  | |  |  |
-| `MatlCompFreeDefinedAttribute` |  | |  |  |
-| `BOMItemCategory` |  | |  |  |
-| `IsBulkMaterialComponent` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `WithdrawnQuantity` |  | |  |  |
-| `QuantityIsFixed` |  | |  |  |
-| `ComponentScrapInPercent` |  | |  |  |
-| `OperationScrapInPercent` |  | |  |  |
-| `IsNetScrap` |  | |  |  |
-| `LeadTimeOffset` |  | |  |  |
-| `QuantityDistributionKey` |  | |  |  |
-| `FormulaKey` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `ProductionSupplyArea` |  | |  |  |
-| `Batch` |  | |  |  |
-| `BOMItemDescription` |  | |  |  |
-| `BOMItemText2` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `_ScheduleLine` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_EntryUnit` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_VariableSize1To3Unit` | | ✓ | | |
-| `_VariableSizeCompUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `ReservationItem` | ✓ | |  |  |  |  |
+| `RecordType` | ✓ | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `IsMaterialProvision` |  | |  |  |  |  |
+| `MaterialProvisionType` |  | |  |  |  |  |
+| `MaterialQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `MaterialQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `MaterialRevisionLevel` |  | |  |  |  |  |
+| `MaterialCompIsVariableSized` |  | |  |  |  |  |
+| `MaterialComponentIsPhantomItem` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `RequiredQuantity` |  | |  |  |  |  |
+| `RequirementDate` |  | |  |  |  |  |
+| `RequirementTime` |  | |  |  |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `QuantityInEntryUnit` |  | |  |  |  |  |
+| `EntryUnit` |  | |  |  |  |  |
+| `VariableSizeItemQuantity` |  | |  |  |  |  |
+| `VariableSizeItemUnit` |  | |  |  |  |  |
+| `VariableSizeComponentUnit` |  | |  |  |  |  |
+| `VariableSizeComponentQuantity` |  | |  |  |  |  |
+| `UnitOfMeasureForSize1To3` |  | |  |  |  |  |
+| `Size1` |  | |  |  |  |  |
+| `Size2` |  | |  |  |  |  |
+| `Size3` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `LatestRequirementDate` |  | |  |  |  |  |
+| `OrderLevelValue` |  | |  |  |  |  |
+| `OrderPathValue` |  | |  |  |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |  |  |
+| `MatlCompFreeDefinedAttribute` |  | |  |  |  |  |
+| `BOMItemCategory` |  | |  |  |  |  |
+| `IsBulkMaterialComponent` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `WithdrawnQuantity` |  | |  |  |  |  |
+| `QuantityIsFixed` |  | |  |  |  |  |
+| `ComponentScrapInPercent` |  | |  |  |  |  |
+| `OperationScrapInPercent` |  | |  |  |  |  |
+| `IsNetScrap` |  | |  |  |  |  |
+| `LeadTimeOffset` |  | |  |  |  |  |
+| `QuantityDistributionKey` |  | |  |  |  |  |
+| `FormulaKey` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `ProductionSupplyArea` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `BOMItemDescription` |  | |  |  |  |  |
+| `BOMItemText2` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `_ScheduleLine` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_EntryUnit` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_VariableSize1To3Unit` | | ✓ | | | | |
+| `_VariableSizeCompUnit` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditCardBrand` | ✓ | |  | `cast (t_band as logbr_tband preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditCardBrand` | ✓ | |  | `cast (t_band as logbr_tband preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

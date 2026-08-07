@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentCardType` | ✓ | |  | `ccins` |
-| `PaymentCardAuthznPeriodDays` |  | |  | `cast( tgval as int4)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentCardType` | ✓ | |  | `ccins` |  |  |
+| `PaymentCardAuthznPeriodDays` |  | |  | `cast( tgval as int4)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

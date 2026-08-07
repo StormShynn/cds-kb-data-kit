@@ -28,49 +28,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  |  |
-| `DocumentInfoRecord` |  | |  |  |
-| `InternalDocumentStatus` |  | |  |  |
-| `ExternalDocumentStatus` |  | | `_DocStatusVH` | `ExternalDocumentStatus` |
-| `LaboratoryOrDesignOffice` |  | |  |  |
-| `Plant` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |
-| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |
-| `IsDocInfoRecdStructure` |  | |  |  |
-| `DocInfoRecdSourceDocNumber` |  | |  |  |
-| `DocInfoRecdSourceDocPart` |  | |  |  |
-| `DocInfoRecdSourceDocVersion` |  | |  |  |
-| `ResponsiblePersonName` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `DocumentInfoRecordIsFrozen` |  | |  |  |
-| `_DocType` | | ✓ | | |
-| `_DocNumber` | | ✓ | | |
-| `_DocVersion` | | ✓ | | |
-| `_DocPart` | | ✓ | | |
-| `_CreatedUser` | | ✓ | | |
-| `_ChangedUser` | | ✓ | | |
-| `_UserDetails` | | ✓ | | |
-| `_CreatedUserVH` | | ✓ | | |
-| `_ChangedUserVH` | | ✓ | | |
-| `_UserDetailsVH` | | ✓ | | |
-| `_DocDesc` | | ✓ | | |
-| `_DocStatus` | | ✓ | | |
-| `_LabOffice` | | ✓ | | |
-| `_AuthGroup` | | ✓ | | |
-| `_Indicator` | | ✓ | | |
-| `_LogAccMObjectTypeActive` | | ✓ | | |
-| `_LogAccMObjSecureIDAssgmt` | | ✓ | | |
-| `_LogAccMObjectUserAuthzn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
+| `DocumentInfoRecord` |  | |  |  |  |  |
+| `InternalDocumentStatus` |  | |  |  |  |  |
+| `ExternalDocumentStatus` |  | | `_DocStatusVH` | `ExternalDocumentStatus` |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |  |  |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |  |  |
+| `IsDocInfoRecdStructure` |  | |  |  |  |  |
+| `DocInfoRecdSourceDocNumber` |  | |  |  |  |  |
+| `DocInfoRecdSourceDocPart` |  | |  |  |  |  |
+| `DocInfoRecdSourceDocVersion` |  | |  |  |  |  |
+| `ResponsiblePersonName` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `DocumentInfoRecordIsFrozen` |  | |  |  |  |  |
+| `_DocType` | | ✓ | | | | |
+| `_DocNumber` | | ✓ | | | | |
+| `_DocVersion` | | ✓ | | | | |
+| `_DocPart` | | ✓ | | | | |
+| `_CreatedUser` | | ✓ | | | | |
+| `_ChangedUser` | | ✓ | | | | |
+| `_UserDetails` | | ✓ | | | | |
+| `_CreatedUserVH` | | ✓ | | | | |
+| `_ChangedUserVH` | | ✓ | | | | |
+| `_UserDetailsVH` | | ✓ | | | | |
+| `_DocDesc` | | ✓ | | | | |
+| `_DocStatus` | | ✓ | | | | |
+| `_LabOffice` | | ✓ | | | | |
+| `_AuthGroup` | | ✓ | | | | |
+| `_Indicator` | | ✓ | | | | |
+| `_LogAccMObjectTypeActive` | | ✓ | | | | |
+| `_LogAccMObjSecureIDAssgmt` | | ✓ | | | | |
+| `_LogAccMObjectUserAuthzn` | | ✓ | | | | |
 
 ## Associations
 

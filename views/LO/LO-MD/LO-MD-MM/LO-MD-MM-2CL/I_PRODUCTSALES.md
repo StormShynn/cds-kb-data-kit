@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `matnr` |
-| `SalesStatus` |  | |  | `mstav` |
-| `SalesStatusValidityDate` |  | |  | `cast(mara.mstdv as salesstatusvaliditydate)` |
-| `TaxClassification` |  | |  | `taklv` |
-| `TransportationGroup` |  | |  | `tragr` |
-| `AllowedPackagingWeightQty` |  | |  | `ergew` |
-| `AllowedPackagingWeightQtyUnit` |  | |  | `cast(mara.ergei as allowedpackagingweightqtyunit)` |
-| `AllowedPackagingVolumeQty` |  | |  | `ervol` |
-| `AllowedPackagingVolumeQtyUnit` |  | |  | `cast(mara.ervoe as allowedpackagingvolumeqtyunit)` |
-| `PricingReferenceProduct` |  | |  | `pmata` |
-| `VariantsPricingProfile` |  | |  | `sprof` |
-| `IsVariantPriceAllowed` |  | |  | `allow_pmat_igno` |
-| `LoadingGroup` |  | | `_ProductRetail` | `LoadingGroup` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `ExcessWeightTolerance` |  | |  | `cast(mara.gewto as excessweighttolerance preserving type )` |
-| `ExcessVolumeTolerance` |  | |  | `cast(mara.volto as excessvolumetolerance preserving type )` |
-| `PackagingMaterialType` |  | |  | `cast(mara.vhart as packagingmaterialtype preserving type )` |
-| `IsClosedPackagingMaterial` |  | |  | `kzgvh` |
-| `VolumeMaximumLevel` |  | |  | `fuelg` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `MaterialFreightGroup` |  | |  | `mfrgr` |
-| `StackingFactor` |  | |  | `stfak` |
-| `_Product` | | ✓ | | |
-| `_ProductRetail` | | ✓ | | |
-| `_SalesStatus` | | ✓ | | |
-| `_SalesStatusText` | | ✓ | | |
-| `_PricingReferenceProduct` | | ✓ | | |
-| `_PricingReferenceProductText` | | ✓ | | |
-| `_PricingReferenceProductText_2` | | ✓ | | |
-| `_Weight` | | ✓ | | |
-| `_WeightText` | | ✓ | | |
-| `_Volume` | | ✓ | | |
-| `_VolumeText` | | ✓ | | |
-| `_TransportationGroup` | | ✓ | | |
-| `_TransportationGroupText` | | ✓ | | |
-| `_PackagingMaterialType` | | ✓ | | |
-| `_PackagingMaterialTypeText` | | ✓ | | |
-| `_VariantsPricingProfile` | | ✓ | | |
-| `_VariantsPricingProfileText` | | ✓ | | |
-| `_TaxClass` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `SalesStatus` |  | |  | `mstav` |  |  |
+| `SalesStatusValidityDate` |  | |  | `cast(mara.mstdv as salesstatusvaliditydate)` |  |  |
+| `TaxClassification` |  | |  | `taklv` |  |  |
+| `TransportationGroup` |  | |  | `tragr` |  |  |
+| `AllowedPackagingWeightQty` |  | |  | `ergew` |  |  |
+| `AllowedPackagingWeightQtyUnit` |  | |  | `cast(mara.ergei as allowedpackagingweightqtyunit)` |  |  |
+| `AllowedPackagingVolumeQty` |  | |  | `ervol` |  |  |
+| `AllowedPackagingVolumeQtyUnit` |  | |  | `cast(mara.ervoe as allowedpackagingvolumeqtyunit)` |  |  |
+| `PricingReferenceProduct` |  | |  | `pmata` |  |  |
+| `VariantsPricingProfile` |  | |  | `sprof` |  |  |
+| `IsVariantPriceAllowed` |  | |  | `allow_pmat_igno` |  |  |
+| `LoadingGroup` |  | | `_ProductRetail` | `LoadingGroup` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `ExcessWeightTolerance` |  | |  | `cast(mara.gewto as excessweighttolerance preserving type )` |  |  |
+| `ExcessVolumeTolerance` |  | |  | `cast(mara.volto as excessvolumetolerance preserving type )` |  |  |
+| `PackagingMaterialType` |  | |  | `cast(mara.vhart as packagingmaterialtype preserving type )` |  |  |
+| `IsClosedPackagingMaterial` |  | |  | `kzgvh` |  |  |
+| `VolumeMaximumLevel` |  | |  | `fuelg` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `MaterialFreightGroup` |  | |  | `mfrgr` |  |  |
+| `StackingFactor` |  | |  | `stfak` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductRetail` | | ✓ | | | | |
+| `_SalesStatus` | | ✓ | | | | |
+| `_SalesStatusText` | | ✓ | | | | |
+| `_PricingReferenceProduct` | | ✓ | | | | |
+| `_PricingReferenceProductText` | | ✓ | | | | |
+| `_PricingReferenceProductText_2` | | ✓ | | | | |
+| `_Weight` | | ✓ | | | | |
+| `_WeightText` | | ✓ | | | | |
+| `_Volume` | | ✓ | | | | |
+| `_VolumeText` | | ✓ | | | | |
+| `_TransportationGroup` | | ✓ | | | | |
+| `_TransportationGroupText` | | ✓ | | | | |
+| `_PackagingMaterialType` | | ✓ | | | | |
+| `_PackagingMaterialTypeText` | | ✓ | | | | |
+| `_VariantsPricingProfile` | | ✓ | | | | |
+| `_VariantsPricingProfileText` | | ✓ | | | | |
+| `_TaxClass` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
-| `FinancialManagementArea` | ✓ | |  | `cast (left(_HierarchyNodeText.HierarchyNodeClass, 4 ) as fincs_financialmanagementarea preserving type )` |
-| `CnsldtnFundHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.UniversalHierarchy as fincs_fundhierarchy preserving type )` |
-| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
-| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
-| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
-| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
-| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
-| `_FinancialManagementArea` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |  |  |
+| `FinancialManagementArea` | ✓ | |  | `cast (left(_HierarchyNodeText.HierarchyNodeClass, 4 ) as fincs_financialmanagementarea preserving type )` |  |  |
+| `CnsldtnFundHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.UniversalHierarchy as fincs_fundhierarchy preserving type )` |  |  |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |  |  |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |  |  |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |  |  |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |  |  |
+| `_FinancialManagementArea` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

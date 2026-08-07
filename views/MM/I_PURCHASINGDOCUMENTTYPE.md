@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocumentCategory` | ✓ | |  | `bstyp` |
-| `PurchasingDocumentType` | ✓ | |  | `bsart` |
-| `PurchasingDocumentSubtype` |  | |  | `bsakz` |
-| `PurgDocFieldSelControlKey` |  | |  | `brefn` |
-| `PurgHasFlxblWorkflowApproval` |  | |  | `scnr_based_wfl` |
-| `IsPurReqnOvrlRel` |  | |  | `gsfrg` |
-| `PartnerDeterminationProcedure` |  | |  | `pargr` |
-| `_Category` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocumentCategory` | ✓ | |  | `bstyp` |  |  |
+| `PurchasingDocumentType` | ✓ | |  | `bsart` |  |  |
+| `PurchasingDocumentSubtype` |  | |  | `bsakz` |  |  |
+| `PurgDocFieldSelControlKey` |  | |  | `brefn` |  |  |
+| `PurgHasFlxblWorkflowApproval` |  | |  | `scnr_based_wfl` |  |  |
+| `IsPurReqnOvrlRel` |  | |  | `gsfrg` |  |  |
+| `PartnerDeterminationProcedure` |  | |  | `pargr` |  |  |
+| `_Category` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

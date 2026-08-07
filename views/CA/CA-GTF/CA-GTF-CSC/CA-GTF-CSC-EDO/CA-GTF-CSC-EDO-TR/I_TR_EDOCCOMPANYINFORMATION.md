@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |
-| `TR_ElectronicDocTaxID` | ✓ | |  |  |
-| `TR_ElectronicDocumentRole` | ✓ | |  |  |
-| `TR_EDocTaxpayerName` |  | |  |  |
-| `TR_EDocTaxpayerType` |  | |  |  |
-| `TR_EDocFirstAliasRegnDateData` |  | |  |  |
-| `TR_EDocFirstAliasRegnTimeData` |  | |  |  |
-| `TR_EDocIsDefaultAlias` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |  |  |
+| `TR_ElectronicDocTaxID` | ✓ | |  |  |  |  |
+| `TR_ElectronicDocumentRole` | ✓ | |  |  |  |  |
+| `TR_EDocTaxpayerName` |  | |  |  |  |  |
+| `TR_EDocTaxpayerType` |  | |  |  |  |  |
+| `TR_EDocFirstAliasRegnDateData` |  | |  |  |  |  |
+| `TR_EDocFirstAliasRegnTimeData` |  | |  |  |  |  |
+| `TR_EDocIsDefaultAlias` |  | |  |  |  |  |
 
 ## Source Code
 

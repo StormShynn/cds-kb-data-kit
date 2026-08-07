@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `IsAutoPurOrdCreationAllowed` |  | |  |  |
-| `IsSourceListRequired` |  | |  |  |
-| `JustInTimeDeliveryScheduleCode` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `SourceOfSupplyCategory` |  | |  |  |
-| `PurgIsAcrossPurchasingGroup` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `IsAutoPurOrdCreationAllowed` |  | |  |  |  |  |
+| `IsSourceListRequired` |  | |  |  |  |  |
+| `JustInTimeDeliveryScheduleCode` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `SourceOfSupplyCategory` |  | |  |  |  |  |
+| `PurgIsAcrossPurchasingGroup` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Source Code
 

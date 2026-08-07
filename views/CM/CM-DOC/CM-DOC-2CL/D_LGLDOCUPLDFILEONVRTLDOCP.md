@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocumentLinkedObjKey` |  | |  | `lcm_uuid_c32` |
-| `DocumentDescription` |  | |  | `lcm_description` |
-| `FileName` |  | |  | `abap.char(200)` |
-| `LglCntntMDocPaperType` |  | |  | `lcm_doc_paper_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocumentLinkedObjKey` |  | |  | `lcm_uuid_c32` |  |  |
+| `DocumentDescription` |  | |  | `lcm_description` |  |  |
+| `FileName` |  | |  | `abap.char(200)` |  |  |
+| `LglCntntMDocPaperType` |  | |  | `lcm_doc_paper_type` |  |  |
 
 ## Source Code
 

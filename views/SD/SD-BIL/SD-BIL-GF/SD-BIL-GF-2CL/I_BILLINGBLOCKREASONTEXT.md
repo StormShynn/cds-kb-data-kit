@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingBlockReason` | ✓ | |  | `faksp` |
-| `Language` | ✓ | |  | `spras` |
-| `BillingBlockReasonDescription` |  | |  | `vtext` |
-| `_BillingBlockReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingBlockReason` | ✓ | |  | `faksp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BillingBlockReasonDescription` |  | |  | `vtext` |  |  |
+| `_BillingBlockReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

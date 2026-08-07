@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdGoodsMovementStatus` |  | |  | `/scmtms/dlv_goods_movem_status` |
-| `_DummyAssociation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdGoodsMovementStatus` |  | |  | `/scmtms/dlv_goods_movem_status` |  |  |
+| `_DummyAssociation` | | ✓ | | | | |
 
 ## Source Code
 

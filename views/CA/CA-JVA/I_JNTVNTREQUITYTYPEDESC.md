@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `Language` | ✓ | |  | `spras` |
-| `JointVentureEquityType` | ✓ | |  | `etype` |
-| `JointVentureEquityTypeName` |  | |  | `etext` |
-| `_Language` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_JntVntrEquityType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `JointVentureEquityType` | ✓ | |  | `etype` |  |  |
+| `JointVentureEquityTypeName` |  | |  | `etext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntVntrEquityType` | | ✓ | | | | |
 
 ## Associations
 

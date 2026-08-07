@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessTransactionType` | ✓ | |  | `vrgng` |
-| `Language` | ✓ | |  | `spras` |
-| `BusinessTransactionTypeName` |  | |  | `txt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransactionType` | ✓ | |  | `vrgng` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BusinessTransactionTypeName` |  | |  | `txt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

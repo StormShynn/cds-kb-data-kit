@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdItemSerialNumberUUID` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `TransportationOrderItemUUID` |  | |  |  |
-| `TranspOrdItemSerialNumber` |  | |  |  |
-| `I_FreightBookingTP` |  | |  | `FrtBookingItemSerialNumber._TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
-| `I_FreightBookingItemTP` |  | |  | `FrtBookingItemSerialNumber._TransportationOrderItem as _FreightBookingItem : redirected to parent I_FreightBookingItemTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemSerialNumberUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |  |  |
+| `TranspOrdItemSerialNumber` |  | |  |  |  |  |
+| `I_FreightBookingTP` |  | |  | `FrtBookingItemSerialNumber._TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |  |  |
+| `I_FreightBookingItemTP` |  | |  | `FrtBookingItemSerialNumber._TransportationOrderItem as _FreightBookingItem : redirected to parent I_FreightBookingItemTP` |  |  |
 
 ## Source Code
 

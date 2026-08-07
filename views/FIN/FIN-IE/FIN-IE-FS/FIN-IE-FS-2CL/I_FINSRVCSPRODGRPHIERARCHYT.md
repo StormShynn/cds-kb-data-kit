@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinSrvcsProductGroupHierarchy` | ✓ | |  | `cast( HierDirectory.HierarchyShortID as ffs_hryid_product_group preserving type )` |
-| `ValidityEndDate` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `FinSrvcsProdGroupHierarchyName` |  | |  | `HierarchyName` |
-| `_ProdGroupHierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinSrvcsProductGroupHierarchy` | ✓ | |  | `cast( HierDirectory.HierarchyShortID as ffs_hryid_product_group preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `FinSrvcsProdGroupHierarchyName` |  | |  | `HierarchyName` |  |  |
+| `_ProdGroupHierarchy` | | ✓ | | | | |
 
 ## Source Code
 

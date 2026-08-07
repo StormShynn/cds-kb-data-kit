@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `spras` |
-| `ConsolidationDocTypeHierarchy` | ✓ | |  | `cast(_HierarchyText.hryid as fincs_doctypehierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `cast(_HierarchyText.hryvalto as fincs_validityenddate preserving type )` |
-| `ValidityStartDate` |  | |  | `cast(_HierarchyText.hryvalfrom as fincs_validitystartdate preserving type )` |
-| `ConsolidationDocTypeHierTxt` |  | |  | `cast(_HierarchyText.hrytxt as fincs_hierarchytext preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `spras` |  |  |
+| `ConsolidationDocTypeHierarchy` | ✓ | |  | `cast(_HierarchyText.hryid as fincs_doctypehierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(_HierarchyText.hryvalto as fincs_validityenddate preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast(_HierarchyText.hryvalfrom as fincs_validitystartdate preserving type )` |  |  |
+| `ConsolidationDocTypeHierTxt` |  | |  | `cast(_HierarchyText.hrytxt as fincs_hierarchytext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MainWrkCmpltdDateTimeIsUsed` |  | |  | `abap_boolean` |
-| `MaintOrderReferenceDateTime` |  | |  | `timestamp` |
-| `AssignedMaintNotifIsToBeClosed` |  | |  | `abap_boolean` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MainWrkCmpltdDateTimeIsUsed` |  | |  | `abap_boolean` |  |  |
+| `MaintOrderReferenceDateTime` |  | |  | `timestamp` |  |  |
+| `AssignedMaintNotifIsToBeClosed` |  | |  | `abap_boolean` |  |  |
 
 ## Source Code
 

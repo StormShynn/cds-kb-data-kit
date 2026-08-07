@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
-| `CreditMemoRequestType` |  | |  | `auart_unv` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `OrganizationDivision` |  | |  | `spart` |
-| `SoldToParty` |  | |  | `kunnr` |
-| `CreditMemoRequestItemCategory` |  | |  | `pstyv` |
-| `Product` |  | |  | `matnr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |  |  |
+| `CreditMemoRequestType` |  | |  | `auart_unv` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `OrganizationDivision` |  | |  | `spart` |  |  |
+| `SoldToParty` |  | |  | `kunnr` |  |  |
+| `CreditMemoRequestItemCategory` |  | |  | `pstyv` |  |  |
+| `Product` |  | |  | `matnr` |  |  |
 
 ## Source Code
 

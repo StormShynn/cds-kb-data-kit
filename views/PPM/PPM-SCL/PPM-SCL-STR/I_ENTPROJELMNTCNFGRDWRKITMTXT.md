@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjElmntWorkItem` | ✓ | |  | `workitem_id` |
-| `Language` | ✓ | |  | `spras` |
-| `EntProjElmntCnfgrdWrkItmName` |  | |  | `workitem_name` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntWorkItem` | ✓ | |  | `workitem_id` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `EntProjElmntCnfgrdWrkItmName` |  | |  | `workitem_name` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

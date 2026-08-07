@@ -27,41 +27,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinTransFlowCreationDate` |  | |  | `tb_crdat` |
-| `FinTransFlowCreationTime` |  | |  | `ftr_flow_creation_time` |
-| `FinTransFlowNumber` |  | |  | `tb_rfhazb` |
-| `FinancialInstrumentActivity` |  | |  | `tb_rfhazu` |
-| `FinancialTransactionDirection` |  | |  | `tb_rkondgr` |
-| `FinTransFlowType` |  | |  | `tb_sfhazba` |
-| `FinTransFlowPaytAmtDirection` |  | |  | `ftr_flow_payment_amt_direction` |
-| `FinTransFlowPaymentDate` |  | |  | `ftr_flow_payment_date` |
-| `FinTransFlowPaytAmt` |  | |  | `ftr_payment_amount` |
-| `FinTransFlowPaytAmtCrcy` |  | |  | `tb_wzbetr` |
-| `FinTransFlowLoclCrcyCnvrsnRate` |  | |  | `ftr_flow_rate_in_locl_crcy` |
-| `FinTransFlowInLoclCrcyPaytAmt` |  | |  | `ftr_payt_amt_in_local_currency` |
-| `LocalCurrency` |  | |  | `waers` |
-| `AmtInLoclCrcyIsCnvrtdByCurRate` |  | |  | `ftr_local_amt_in_cur_rate_ind` |
-| `AmtInLoclCrcyIsCnvrtdByFxdRate` |  | |  | `ftr_local_amt_in_fxd_rate_ind` |
-| `AmountInLocalCurrencyIsFixed` |  | |  | `ftr_local_amt_fxd_ind` |
-| `CalculationPeriodStartDate` |  | |  | `dbervon` |
-| `CalcPeriodStartDateIsInclusive` |  | |  | `tb_sinclv` |
-| `CalcPeriodStartDateIsMonthEnd` |  | |  | `vvsultvon` |
-| `CalculationPeriodEndDate` |  | |  | `dberbis` |
-| `CalcPeriodEndDateIsInclusive` |  | |  | `tb_sinclb` |
-| `CalcPeriodEndDateIsMonthEnd` |  | |  | `vvsultbis` |
-| `InterestCalculationMethod` |  | |  | `szbmeth` |
-| `IntrstCalcMethFactoryCalendar` |  | |  | `tfmskalidwt` |
-| `NumberOfCalculationDays` |  | |  | `vvatage` |
-| `NrOfBaseDaysPerCalcPeriod` |  | |  | `abastage` |
-| `FinTransFlowCalcBaseAmount` |  | |  | `ftr_calc_base_amount` |
-| `FinTransFlowCalcBaseAmountCrcy` |  | |  | `tb_wbasis` |
-| `ConditionPercentageRate` |  | |  | `pkond` |
-| `AssignmentReference` |  | |  | `fis_zuonr` |
-| `FinTransFlowPostingStatus` |  | |  | `tb_sbewebe` |
-| `FinTransFlowCalculationDate` |  | |  | `ftr_flow_calculation_date` |
-| `_IntrstRateInstr` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinTransFlowCreationDate` |  | |  | `tb_crdat` |  |  |
+| `FinTransFlowCreationTime` |  | |  | `ftr_flow_creation_time` |  |  |
+| `FinTransFlowNumber` |  | |  | `tb_rfhazb` |  |  |
+| `FinancialInstrumentActivity` |  | |  | `tb_rfhazu` |  |  |
+| `FinancialTransactionDirection` |  | |  | `tb_rkondgr` |  |  |
+| `FinTransFlowType` |  | |  | `tb_sfhazba` |  |  |
+| `FinTransFlowPaytAmtDirection` |  | |  | `ftr_flow_payment_amt_direction` |  |  |
+| `FinTransFlowPaymentDate` |  | |  | `ftr_flow_payment_date` |  |  |
+| `FinTransFlowPaytAmt` |  | |  | `ftr_payment_amount` |  |  |
+| `FinTransFlowPaytAmtCrcy` |  | |  | `tb_wzbetr` |  |  |
+| `FinTransFlowLoclCrcyCnvrsnRate` |  | |  | `ftr_flow_rate_in_locl_crcy` |  |  |
+| `FinTransFlowInLoclCrcyPaytAmt` |  | |  | `ftr_payt_amt_in_local_currency` |  |  |
+| `LocalCurrency` |  | |  | `waers` |  |  |
+| `AmtInLoclCrcyIsCnvrtdByCurRate` |  | |  | `ftr_local_amt_in_cur_rate_ind` |  |  |
+| `AmtInLoclCrcyIsCnvrtdByFxdRate` |  | |  | `ftr_local_amt_in_fxd_rate_ind` |  |  |
+| `AmountInLocalCurrencyIsFixed` |  | |  | `ftr_local_amt_fxd_ind` |  |  |
+| `CalculationPeriodStartDate` |  | |  | `dbervon` |  |  |
+| `CalcPeriodStartDateIsInclusive` |  | |  | `tb_sinclv` |  |  |
+| `CalcPeriodStartDateIsMonthEnd` |  | |  | `vvsultvon` |  |  |
+| `CalculationPeriodEndDate` |  | |  | `dberbis` |  |  |
+| `CalcPeriodEndDateIsInclusive` |  | |  | `tb_sinclb` |  |  |
+| `CalcPeriodEndDateIsMonthEnd` |  | |  | `vvsultbis` |  |  |
+| `InterestCalculationMethod` |  | |  | `szbmeth` |  |  |
+| `IntrstCalcMethFactoryCalendar` |  | |  | `tfmskalidwt` |  |  |
+| `NumberOfCalculationDays` |  | |  | `vvatage` |  |  |
+| `NrOfBaseDaysPerCalcPeriod` |  | |  | `abastage` |  |  |
+| `FinTransFlowCalcBaseAmount` |  | |  | `ftr_calc_base_amount` |  |  |
+| `FinTransFlowCalcBaseAmountCrcy` |  | |  | `tb_wbasis` |  |  |
+| `ConditionPercentageRate` |  | |  | `pkond` |  |  |
+| `AssignmentReference` |  | |  | `fis_zuonr` |  |  |
+| `FinTransFlowPostingStatus` |  | |  | `tb_sbewebe` |  |  |
+| `FinTransFlowCalculationDate` |  | |  | `ftr_flow_calculation_date` |  |  |
+| `_IntrstRateInstr` | | ✓ | | | | |
 
 ## Source Code
 

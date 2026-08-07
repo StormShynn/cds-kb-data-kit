@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'MilestoneApprovalStatus'` |  | |  | `representativeKey: 'MilestoneApprovalStatus'` |
-| `]` |  | |  | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #EXTRACTION_DATA_SOURCE, #ANALYTICAL_DIMENSION ]` |
-| `}` |  | |  | `usageType: { serviceQuality: #B, dataClass: #MASTER, sizeCategory: #S }` |
-| `'EntProjMilestoneApprovalStatus'` |  | |  | `sapObjectNodeType.name: 'EntProjMilestoneApprovalStatus'` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'MilestoneApprovalStatus'` |  | |  | `representativeKey: 'MilestoneApprovalStatus'` |  |  |
+| `]` |  | |  | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #EXTRACTION_DATA_SOURCE, #ANALYTICAL_DIMENSION ]` |  |  |
+| `}` |  | |  | `usageType: { serviceQuality: #B, dataClass: #MASTER, sizeCategory: #S }` |  |  |
+| `'EntProjMilestoneApprovalStatus'` |  | |  | `sapObjectNodeType.name: 'EntProjMilestoneApprovalStatus'` |  |  |
 
 ## Source Code
 

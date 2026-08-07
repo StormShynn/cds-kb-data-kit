@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlantCategory` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as vlfkz)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `PlantCategoryName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlantCategory` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as vlfkz)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `PlantCategoryName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

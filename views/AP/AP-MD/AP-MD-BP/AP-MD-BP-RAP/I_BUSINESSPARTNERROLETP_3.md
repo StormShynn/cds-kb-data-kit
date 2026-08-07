@@ -32,29 +32,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `BusinessPartnerRole` | ✓ | |  |  |
-| `ValidFrom` |  | |  |  |
-| `ValidTo` |  | |  |  |
-| `BusinessPartnerRoleForEdit` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_AuthorizationGroup` | | ✓ | | |
-| `_BusinessPartnerRoleVH` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `BusinessPartnerRole` | ✓ | |  |  |  |  |
+| `ValidFrom` |  | |  |  |  |  |
+| `ValidTo` |  | |  |  |  |  |
+| `BusinessPartnerRoleForEdit` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_AuthorizationGroup` | | ✓ | | | | |
+| `_BusinessPartnerRoleVH` | | ✓ | | | | |
 
 ## Source Code
 

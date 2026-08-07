@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TechObjInspectionLevelCode` | ✓ | |  | `cast(dd07t.domvalue_l as eame_idms_type)` |
-| `TechObjInspectionLevelDesc` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TechObjInspectionLevelCode` | ✓ | |  | `cast(dd07t.domvalue_l as eame_idms_type)` |  |  |
+| `TechObjInspectionLevelDesc` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessTransactionType` | ✓ | |  | `cast(cbttype as fis_custbttype preserving type )` |
-| `BusinessTransactionCategory` |  | |  | `cast(bttype as fis_bttype preserving type )` |
-| `BusTransIsSubjToPerdControl` |  | |  | `xperiodcontrol` |
-| `PeriodControlIsLedgerSpecific` |  | |  | `xperiodbyledger` |
-| `BusinessTransTypeIsInactive` |  | |  | `inactive` |
-| `_Text` | | ✓ | | |
-| `_BusTransacTypeHierNode` | | ✓ | | |
-| `_BusinessTransactionCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransactionType` | ✓ | |  | `cast(cbttype as fis_custbttype preserving type )` |  |  |
+| `BusinessTransactionCategory` |  | |  | `cast(bttype as fis_bttype preserving type )` |  |  |
+| `BusTransIsSubjToPerdControl` |  | |  | `xperiodcontrol` |  |  |
+| `PeriodControlIsLedgerSpecific` |  | |  | `xperiodbyledger` |  |  |
+| `BusinessTransTypeIsInactive` |  | |  | `inactive` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_BusTransacTypeHierNode` | | ✓ | | | | |
+| `_BusinessTransactionCategory` | | ✓ | | | | |
 
 ## Associations
 

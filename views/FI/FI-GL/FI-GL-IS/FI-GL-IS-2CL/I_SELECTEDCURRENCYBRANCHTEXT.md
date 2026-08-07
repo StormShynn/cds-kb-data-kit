@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(ddlanguage as spras)` |
-| `SelectedCurrencyBranch` | ✓ | |  | `cast(domvalue_l as fis_selected_currency_branch)` |
-| `SelectedCurrencyBranchName` |  | |  | `cast(ddtext as fis_sel_currency_branch_name)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(ddlanguage as spras)` |  |  |
+| `SelectedCurrencyBranch` | ✓ | |  | `cast(domvalue_l as fis_selected_currency_branch)` |  |  |
+| `SelectedCurrencyBranchName` |  | |  | `cast(ddtext as fis_sel_currency_branch_name)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

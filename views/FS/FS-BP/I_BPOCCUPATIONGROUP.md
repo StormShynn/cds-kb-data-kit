@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerOccupationGroup` | ✓ | |  | `jobgr` |
-| `_Text` | | ✓ | | |
-| `_BPEmployment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerOccupationGroup` | ✓ | |  | `jobgr` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_BPEmployment` | | ✓ | | | | |
 
 ## Associations
 

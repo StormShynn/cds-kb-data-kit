@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnFSItemMapping` | ✓ | | `_Source` | `CnsldtnFSItemMapping` |
-| `CnsldtnFSItemMappingText` |  | |  | `cast( _Source._Text[1: Language=$session.system_language].CnsldtnFSItemMappingText as fincs_description_text_60 preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnFSItemMapping` | ✓ | | `_Source` | `CnsldtnFSItemMapping` |  |  |
+| `CnsldtnFSItemMappingText` |  | |  | `cast( _Source._Text[1: Language=$session.system_language].CnsldtnFSItemMappingText as fincs_description_text_60 preserving type )` |  |  |
 
 ## Source Code
 

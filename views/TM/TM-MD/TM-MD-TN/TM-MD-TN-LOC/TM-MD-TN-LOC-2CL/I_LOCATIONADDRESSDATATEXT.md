@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LocationUUID` | ✓ | |  |  |
-| `LocationAdditionalUUID` |  | |  |  |
-| `Location` |  | |  |  |
-| `LocationAddressDataText` |  | |  | `case when loc_basic._Text[1: Language = $session.system_language ].LocationDescription is not initial then concat_with_space( concat_with_space( concat_with_space( loc_basic._Text[1: Language = $session.system_language ].LocationDescription, '/' , 1), concat_with_space( concat_with_space( loc_basic._PostalAddrDfltRprstn.StreetName, loc_basic._PostalAddrDfltRprstn.HouseNumber , 1), concat_with_space( '/' , concat_with_space( loc_basic._PostalAddrDfltRprstn.PostalCode , loc_basic._PostalAddrDfltRprstn.CityName, 1), 1), 1), 3 ), concat( concat( '(' , loc_basic.Location) , ')' ), 1 ) else concat_with_space( concat_with_space(loc_basic._PostalAddrDfltRprstn.PostalCode, loc_basic._PostalAddrDfltRprstn.CityName, 1), concat( concat( '(' , loc_basic.Location) , ')' ), 1 ) end` |
-| `BusinessPartnerUUID` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LocationUUID` | ✓ | |  |  |  |  |
+| `LocationAdditionalUUID` |  | |  |  |  |  |
+| `Location` |  | |  |  |  |  |
+| `LocationAddressDataText` |  | |  | `case when loc_basic._Text[1: Language = $session.system_language ].LocationDescription is not initial then concat_with_space( concat_with_space( concat_with_space( loc_basic._Text[1: Language = $session.system_language ].LocationDescription, '/' , 1), concat_with_space( concat_with_space( loc_basic._PostalAddrDfltRprstn.StreetName, loc_basic._PostalAddrDfltRprstn.HouseNumber , 1), concat_with_space( '/' , concat_with_space( loc_basic._PostalAddrDfltRprstn.PostalCode , loc_basic._PostalAddrDfltRprstn.CityName, 1), 1), 1), 3 ), concat( concat( '(' , loc_basic.Location) , ')' ), 1 ) else concat_with_space( concat_with_space(loc_basic._PostalAddrDfltRprstn.PostalCode, loc_basic._PostalAddrDfltRprstn.CityName, 1), concat( concat( '(' , loc_basic.Location) , ')' ), 1 ) end` |  |  |
+| `BusinessPartnerUUID` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReferenceDocument` |  | |  | `sdbil_odata_source_document` |
-| `ReferenceDocSDDocCategory` |  | |  | `sdbil_odata_src_doc_cat` |
-| `D_BDRCrteFrmExtBllbleDocItemP` |  | |  | `_Item : composition [1..*] of D_BDRCrteFrmExtBllbleDocItemP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReferenceDocument` |  | |  | `sdbil_odata_source_document` |  |  |
+| `ReferenceDocSDDocCategory` |  | |  | `sdbil_odata_src_doc_cat` |  |  |
+| `D_BDRCrteFrmExtBllbleDocItemP` |  | |  | `_Item : composition [1..*] of D_BDRCrteFrmExtBllbleDocItemP` |  |  |
 
 ## Source Code
 

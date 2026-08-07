@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationTask` | ✓ | |  | `cast( ConsolidationTask as fincs_tsk preserving type )` |
-| `ConsolidationVersion` | ✓ | |  | `cast( ConsolidationVersion as fincs_consolidationversion preserving type )` |
-| `CnsldtnDocTypeValdFrmFsclYear` | ✓ | |  | `cast( CnsldtnDocTypeValdFrmFsclYear as fincs_doctype_fromyear preserving type )` |
-| `CnsldtnDocTypeValdFrmFsclPerd` | ✓ | |  | `cast( CnsldtnDocTypeValdFrmFsclPerd as fincs_doctype_fromperiod preserving type )` |
-| `CnsldtnDocTypeSequenceValue` | ✓ | |  | `cast( CnsldtnDocTypeSequenceValue as fincs_doctype_sequence preserving type )` |
-| `ConsolidationDocumentType` |  | |  | `cast( ConsolidationDocumentType as fincs_documenttype preserving type )` |
-| `_CnsldtnTask` | | ✓ | | |
-| `_CnsldtnVersion` | | ✓ | | |
-| `_CnsldtnDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationTask` | ✓ | |  | `cast( ConsolidationTask as fincs_tsk preserving type )` |  |  |
+| `ConsolidationVersion` | ✓ | |  | `cast( ConsolidationVersion as fincs_consolidationversion preserving type )` |  |  |
+| `CnsldtnDocTypeValdFrmFsclYear` | ✓ | |  | `cast( CnsldtnDocTypeValdFrmFsclYear as fincs_doctype_fromyear preserving type )` |  |  |
+| `CnsldtnDocTypeValdFrmFsclPerd` | ✓ | |  | `cast( CnsldtnDocTypeValdFrmFsclPerd as fincs_doctype_fromperiod preserving type )` |  |  |
+| `CnsldtnDocTypeSequenceValue` | ✓ | |  | `cast( CnsldtnDocTypeSequenceValue as fincs_doctype_sequence preserving type )` |  |  |
+| `ConsolidationDocumentType` |  | |  | `cast( ConsolidationDocumentType as fincs_documenttype preserving type )` |  |  |
+| `_CnsldtnTask` | | ✓ | | | | |
+| `_CnsldtnVersion` | | ✓ | | | | |
+| `_CnsldtnDocumentType` | | ✓ | | | | |
 
 ## Associations
 

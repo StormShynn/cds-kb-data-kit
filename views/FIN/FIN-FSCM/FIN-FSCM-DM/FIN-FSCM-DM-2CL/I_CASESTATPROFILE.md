@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CaseStatusProfile` | ✓ | |  | `profile_id` |
-| `CaseStatusObjectType` |  | |  | `stat_obj_type` |
-| `CaseUserStatusSchema` |  | |  | `stat_cust_scheme` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseStatusProfile` | ✓ | |  | `profile_id` |  |  |
+| `CaseStatusObjectType` |  | |  | `stat_obj_type` |  |  |
+| `CaseUserStatusSchema` |  | |  | `stat_cust_scheme` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

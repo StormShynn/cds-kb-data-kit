@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITRawMaterialUUID` | ✓ | |  | `db_key` |
-| `JITHeaderUUID` |  | |  | `root_key` |
-| `JITCallComponentUUID` |  | |  | `parent_key` |
-| `RawMaterial` |  | |  | `rawmaterial` |
-| `Quantity` |  | |  | `cast( cast( quantity as abap.numc( 18 ) ) as abap.quan( 18 ) )` |
-| `BaseUnitofMeasure` |  | |  | `uom` |
-| `Plant` |  | |  | `plant` |
-| `StorageLocation` |  | |  | `storagelocation` |
-| `SupplyArea` |  | |  | `supplyarea` |
-| `_JITInboundCall` | | ✓ | | |
-| `_ProductRawMaterial` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_JITInbCallComponent` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITRawMaterialUUID` | ✓ | |  | `db_key` |  |  |
+| `JITHeaderUUID` |  | |  | `root_key` |  |  |
+| `JITCallComponentUUID` |  | |  | `parent_key` |  |  |
+| `RawMaterial` |  | |  | `rawmaterial` |  |  |
+| `Quantity` |  | |  | `cast( cast( quantity as abap.numc( 18 ) ) as abap.quan( 18 ) )` |  |  |
+| `BaseUnitofMeasure` |  | |  | `uom` |  |  |
+| `Plant` |  | |  | `plant` |  |  |
+| `StorageLocation` |  | |  | `storagelocation` |  |  |
+| `SupplyArea` |  | |  | `supplyarea` |  |  |
+| `_JITInboundCall` | | ✓ | | | | |
+| `_ProductRawMaterial` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_JITInbCallComponent` | | ✓ | | | | |
 
 ## Associations
 

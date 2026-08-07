@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BusinessPartnerGroupType` | ✓ | |  | `partgrptyp` |
-| `BusPartGroupTypeShortDesc` |  | |  | `textshort` |
-| `BusinessPartnerGroupTypeDesc` |  | |  | `textlong` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `BusinessPartnerGroupType` | ✓ | |  | `partgrptyp` | `CHAR(4)` | Group type |
+| `BusPartGroupTypeShortDesc` |  | |  | `textshort` | `CHAR(15)` | Short name |
+| `BusinessPartnerGroupTypeDesc` |  | |  | `textlong` | `CHAR(40)` | Description |
 
 ## Source Code
 

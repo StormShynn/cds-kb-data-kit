@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnItmCat` | ✓ | |  | `bipitemcat` |
-| `Language` | ✓ | |  | `langu` |
-| `CABillgPlnItmCatText` |  | |  | `cast( text as bipitemcat_txt_gfn_kk preserving type )` |
-| `_CABillgPlnItmCat` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnItmCat` | ✓ | |  | `bipitemcat` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CABillgPlnItmCatText` |  | |  | `cast( text as bipitemcat_txt_gfn_kk preserving type )` |  |  |
+| `_CABillgPlnItmCat` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

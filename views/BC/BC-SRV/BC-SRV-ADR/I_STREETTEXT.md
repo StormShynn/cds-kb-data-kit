@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `Country` | ✓ | |  | `country` |
-| `Street` | ✓ | |  | `strt_code` |
-| `CityNumber` |  | |  | `city_code` |
-| `StreetName` |  | |  | `street` |
-| `_Country` | | ✓ | | |
-| `_Street` | | ✓ | | |
-| `_PostalCity` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `Country` | ✓ | |  | `country` |  |  |
+| `Street` | ✓ | |  | `strt_code` |  |  |
+| `CityNumber` |  | |  | `city_code` |  |  |
+| `StreetName` |  | |  | `street` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Street` | | ✓ | | | | |
+| `_PostalCity` | | ✓ | | | | |
 
 ## Associations
 

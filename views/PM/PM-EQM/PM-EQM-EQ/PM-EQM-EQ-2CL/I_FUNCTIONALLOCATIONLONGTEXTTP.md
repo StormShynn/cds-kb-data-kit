@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FunctionalLocation` | ✓ | |  |  |
-| `Language` |  | |  |  |
-| `FunctionalLocationLabelName` |  | |  |  |
-| `TextObjectKey` |  | |  | `cast(TextObjectKey as tplnr_unconverted preserving type)` |
-| `TextObjectCategory` |  | |  |  |
-| `TextObjectType` |  | |  |  |
-| `FuncnlLocLongText` |  | |  |  |
-| `_FunctionalLocation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |  |  |
+| `TextObjectKey` |  | |  | `cast(TextObjectKey as tplnr_unconverted preserving type)` |  |  |
+| `TextObjectCategory` |  | |  |  |  |  |
+| `TextObjectType` |  | |  |  |  |  |
+| `FuncnlLocLongText` |  | |  |  |  |  |
+| `_FunctionalLocation` | | ✓ | | | | |
 
 ## Source Code
 

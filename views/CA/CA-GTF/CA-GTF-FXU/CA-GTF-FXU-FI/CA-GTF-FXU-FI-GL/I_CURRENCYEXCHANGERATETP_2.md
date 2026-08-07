@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ExchangeRateType` | ✓ | |  |  |
-| `SourceCurrency` | ✓ | |  |  |
-| `TargetCurrency` | ✓ | |  |  |
-| `ExchangeRateEffectiveDate` | ✓ | |  |  |
-| `ExchangeRateTypeForEdit` |  | |  |  |
-| `SourceCurrencyForEdit` |  | |  |  |
-| `TargetCurrencyForEdit` |  | |  |  |
-| `ExchangeRateEffectiveDateFoEd` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `AlternativeExchangeRateType` |  | |  |  |
-| `NumberOfSourceCurrencyUnits` |  | |  |  |
-| `NumberOfTargetCurrencyUnits` |  | |  |  |
-| `ExchangeRateQuotation` |  | |  |  |
-| `AbsoluteExchangeRate` |  | |  |  |
-| `DirectQuotedEffectiveExchRate` |  | |  |  |
-| `IndirectQuotedEffctvExchRate` |  | |  |  |
-| `CurrencyPair` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExchangeRateType` | ✓ | |  |  |  |  |
+| `SourceCurrency` | ✓ | |  |  |  |  |
+| `TargetCurrency` | ✓ | |  |  |  |  |
+| `ExchangeRateEffectiveDate` | ✓ | |  |  |  |  |
+| `ExchangeRateTypeForEdit` |  | |  |  |  |  |
+| `SourceCurrencyForEdit` |  | |  |  |  |  |
+| `TargetCurrencyForEdit` |  | |  |  |  |  |
+| `ExchangeRateEffectiveDateFoEd` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `AlternativeExchangeRateType` |  | |  |  |  |  |
+| `NumberOfSourceCurrencyUnits` |  | |  |  |  |  |
+| `NumberOfTargetCurrencyUnits` |  | |  |  |  |  |
+| `ExchangeRateQuotation` |  | |  |  |  |  |
+| `AbsoluteExchangeRate` |  | |  |  |  |  |
+| `DirectQuotedEffectiveExchRate` |  | |  |  |  |  |
+| `IndirectQuotedEffctvExchRate` |  | |  |  |  |  |
+| `CurrencyPair` |  | |  |  |  |  |
 
 ## Source Code
 

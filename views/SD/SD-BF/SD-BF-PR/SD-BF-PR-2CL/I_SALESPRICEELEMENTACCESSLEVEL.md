@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionApplication` | ✓ | |  |  |
-| `PriceElementAccessLevel` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
-| `_ConditionApplication` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `PriceElementAccessLevel` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ConditionApplication` | | ✓ | | | | |
 
 ## Associations
 

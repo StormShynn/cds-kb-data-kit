@@ -30,10 +30,10 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `apc_appl_path` |  | |  | `key ServicePath : apc_appl_path` |
-| `Value` |  | |  | `abap_boolean` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `apc_appl_path` |  | |  | `key ServicePath : apc_appl_path` |  |  |
+| `Value` |  | |  | `abap_boolean` |  |  |
 
 ## Source Code
 

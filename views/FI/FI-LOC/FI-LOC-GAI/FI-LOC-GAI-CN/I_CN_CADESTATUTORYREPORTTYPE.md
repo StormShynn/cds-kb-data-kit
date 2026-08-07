@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |
-| `CN_CADEReportType` | ✓ | |  | `cade_report_type` |
-| `Language` | ✓ | | `_StatutoryReportDesc` | `Language` |
-| `FinStmntFormStruc` |  | |  | `idcn_fsckey` |
-| `FinancialStatementVariant` |  | |  | `versn_011` |
-| `ProductHierarchyName` |  | |  | `fclm_hier_name` |
-| `ReportingName` |  | | `_StatutoryReportDesc` | `DomainText` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |  |  |
+| `CN_CADEReportType` | ✓ | |  | `cade_report_type` |  |  |
+| `Language` | ✓ | | `_StatutoryReportDesc` | `Language` |  |  |
+| `FinStmntFormStruc` |  | |  | `idcn_fsckey` |  |  |
+| `FinancialStatementVariant` |  | |  | `versn_011` |  |  |
+| `ProductHierarchyName` |  | |  | `fclm_hier_name` |  |  |
+| `ReportingName` |  | | `_StatutoryReportDesc` | `DomainText` |  |  |
 
 ## Associations
 

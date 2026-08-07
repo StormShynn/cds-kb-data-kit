@@ -28,36 +28,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationAgreementUUID` | ✓ | |  | `cast(db_key as /scmtms/transpagrmt_uuid preserving type)` |
-| `TransportationAgreement` |  | |  | `cast(fagrmntid044 as /scmtms/vdm_fag_id preserving type)` |
-| `TranspExternalAgreement` |  | |  | `cast(external_fa_id as /scmtms/vdm_fag_ext_id preserving type)` |
-| `TranspAgreementValidFromDate` |  | |  | `cast(validity_start as /scmtms/vdm_fag_valdty_strt_dt preserving type)` |
-| `TranspAgreementValidToDate` |  | |  | `cast(validity_end as /scmtms/vdm_fag_valdty_end_dt preserving type)` |
-| `TransportationAgreementDocCrcy` |  | |  | `cast(doc_currency as /scmtms/vdm_fag_doc_currency preserving type)` |
-| `TransportationAgreementStatus` |  | |  | `cast(status as /scmtms/vdm_fag_root_status preserving type)` |
-| `TranspDimnWeightProfile` |  | |  | `dim_wt_profile` |
-| `TransportationMode` |  | |  | `mode_of_transp` |
-| `TransportationShippingType` |  | |  | `shipping_type` |
-| `CreationDateTime` |  | |  | `cast(created_on as log_created_on preserving type)` |
-| `CreatedByUser` |  | |  | `cast(created_by as vdm_createdbyuserid preserving type)` |
-| `ChangedDateTime` |  | |  | `cast(changed_on as /scmtms/vdm_tm_tstmp_cht preserving type)` |
-| `LastChangedByUser` |  | |  | `cast(changed_by as vdm_lastchangedbyuserid preserving type)` |
-| `TranspAgreementTimeZone` |  | |  | `cast(timezone as /scmtms/vdm_fag_tzone preserving type)` |
-| `TransportationAgreementType` |  | |  | `fagtypeid103` |
-| `_TranspAgrmtCurrency` | | ✓ | | |
-| `_TranspAgrmtCreatedBy` | | ✓ | | |
-| `_TranspAgrmtChangedBy` | | ✓ | | |
-| `_TranspAgreementStatus` | | ✓ | | |
-| `_TranspDimnWeightProfile` | | ✓ | | |
-| `_TransportationMode` | | ✓ | | |
-| `_TransportationShippingType` | | ✓ | | |
-| `_TranspAgreementType` | | ✓ | | |
-| `_TranspAgreementItem` | | ✓ | | |
-| `_TranspAgrmtOrganization` | | ✓ | | |
-| `_TranspAgreementParty` | | ✓ | | |
-| `_TranspAgreementDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationAgreementUUID` | ✓ | |  | `cast(db_key as /scmtms/transpagrmt_uuid preserving type)` |  |  |
+| `TransportationAgreement` |  | |  | `cast(fagrmntid044 as /scmtms/vdm_fag_id preserving type)` |  |  |
+| `TranspExternalAgreement` |  | |  | `cast(external_fa_id as /scmtms/vdm_fag_ext_id preserving type)` |  |  |
+| `TranspAgreementValidFromDate` |  | |  | `cast(validity_start as /scmtms/vdm_fag_valdty_strt_dt preserving type)` |  |  |
+| `TranspAgreementValidToDate` |  | |  | `cast(validity_end as /scmtms/vdm_fag_valdty_end_dt preserving type)` |  |  |
+| `TransportationAgreementDocCrcy` |  | |  | `cast(doc_currency as /scmtms/vdm_fag_doc_currency preserving type)` |  |  |
+| `TransportationAgreementStatus` |  | |  | `cast(status as /scmtms/vdm_fag_root_status preserving type)` |  |  |
+| `TranspDimnWeightProfile` |  | |  | `dim_wt_profile` |  |  |
+| `TransportationMode` |  | |  | `mode_of_transp` |  |  |
+| `TransportationShippingType` |  | |  | `shipping_type` |  |  |
+| `CreationDateTime` |  | |  | `cast(created_on as log_created_on preserving type)` |  |  |
+| `CreatedByUser` |  | |  | `cast(created_by as vdm_createdbyuserid preserving type)` |  |  |
+| `ChangedDateTime` |  | |  | `cast(changed_on as /scmtms/vdm_tm_tstmp_cht preserving type)` |  |  |
+| `LastChangedByUser` |  | |  | `cast(changed_by as vdm_lastchangedbyuserid preserving type)` |  |  |
+| `TranspAgreementTimeZone` |  | |  | `cast(timezone as /scmtms/vdm_fag_tzone preserving type)` |  |  |
+| `TransportationAgreementType` |  | |  | `fagtypeid103` |  |  |
+| `_TranspAgrmtCurrency` | | ✓ | | | | |
+| `_TranspAgrmtCreatedBy` | | ✓ | | | | |
+| `_TranspAgrmtChangedBy` | | ✓ | | | | |
+| `_TranspAgreementStatus` | | ✓ | | | | |
+| `_TranspDimnWeightProfile` | | ✓ | | | | |
+| `_TransportationMode` | | ✓ | | | | |
+| `_TransportationShippingType` | | ✓ | | | | |
+| `_TranspAgreementType` | | ✓ | | | | |
+| `_TranspAgreementItem` | | ✓ | | | | |
+| `_TranspAgrmtOrganization` | | ✓ | | | | |
+| `_TranspAgreementParty` | | ✓ | | | | |
+| `_TranspAgreementDescription` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PublicHolidayCalendarID` | ✓ | |  |  |
-| `PublicHolidayCalendarLegacyID` |  | |  |  |
-| `PublHldayCalValidityStartDate` |  | |  |  |
-| `PublHldayCalValidityEndDate` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_Assgn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCalendarID` | ✓ | |  |  |  |  |
+| `PublicHolidayCalendarLegacyID` |  | |  |  |  |  |
+| `PublHldayCalValidityStartDate` |  | |  |  |  |  |
+| `PublHldayCalValidityEndDate` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Assgn` | | ✓ | | | | |
 
 ## Associations
 

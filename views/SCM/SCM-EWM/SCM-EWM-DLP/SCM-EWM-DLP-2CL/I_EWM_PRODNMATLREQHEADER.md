@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMProductionMaterialRequest` | ✓ | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `EWMProdnMatlReqDocCategory` |  | |  |  |
-| `EWMProdnMatlReqDocumentType` |  | |  |  |
-| `ManufacturingOrder` |  | |  | `cast( _ManufacturingOrder.EWMWhseReqRefDocumentNumber as manufacturingorder )` |
-| `EWMProductionInformation` |  | |  |  |
-| `EWMProdnMatlReqPriority` |  | |  |  |
-| `EWMManufacturingOrderStatus` |  | |  |  |
-| `EWMInconsistencyBlockStatus` |  | |  |  |
-| `EWMArchivingStatus` |  | |  |  |
-| `EWMProdnMatlReqCrtnUTCDateTime` |  | |  |  |
-| `EWMProdnMatlReqCreatedByUser` |  | |  |  |
-| `EWMProdnMatlReqLstChgUTCDteTme` |  | |  |  |
-| `EWMProdnMatlReqLastChgdByUser` |  | |  |  |
-| `EWMPlndProdnStartUTCDateTime` |  | | `_EWMPlndProdnStartUTCDateTime` | `DeliveryRelatedStartDateTime` |
-| `EWMPlndProdnEndUTCDateTime` |  | | `_EWMPlndProdnEndUTCDateTime` | `DeliveryRelatedEndDateTime` |
-| `EWMProductionMaterialReqUUID` |  | |  |  |
-| `_ManufacturingOrder` | | ✓ | | |
-| `_EWMProdnMatlReqDocumentType` | | ✓ | | |
-| `_EWMManufacturingOrdStatusTxt` | | ✓ | | |
-| `_EWMInconstcyBlockStatusTxt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMProductionMaterialRequest` | ✓ | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `EWMProdnMatlReqDocCategory` |  | |  |  |  |  |
+| `EWMProdnMatlReqDocumentType` |  | |  |  |  |  |
+| `ManufacturingOrder` |  | |  | `cast( _ManufacturingOrder.EWMWhseReqRefDocumentNumber as manufacturingorder )` |  |  |
+| `EWMProductionInformation` |  | |  |  |  |  |
+| `EWMProdnMatlReqPriority` |  | |  |  |  |  |
+| `EWMManufacturingOrderStatus` |  | |  |  |  |  |
+| `EWMInconsistencyBlockStatus` |  | |  |  |  |  |
+| `EWMArchivingStatus` |  | |  |  |  |  |
+| `EWMProdnMatlReqCrtnUTCDateTime` |  | |  |  |  |  |
+| `EWMProdnMatlReqCreatedByUser` |  | |  |  |  |  |
+| `EWMProdnMatlReqLstChgUTCDteTme` |  | |  |  |  |  |
+| `EWMProdnMatlReqLastChgdByUser` |  | |  |  |  |  |
+| `EWMPlndProdnStartUTCDateTime` |  | | `_EWMPlndProdnStartUTCDateTime` | `DeliveryRelatedStartDateTime` |  |  |
+| `EWMPlndProdnEndUTCDateTime` |  | | `_EWMPlndProdnEndUTCDateTime` | `DeliveryRelatedEndDateTime` |  |  |
+| `EWMProductionMaterialReqUUID` |  | |  |  |  |  |
+| `_ManufacturingOrder` | | ✓ | | | | |
+| `_EWMProdnMatlReqDocumentType` | | ✓ | | | | |
+| `_EWMManufacturingOrdStatusTxt` | | ✓ | | | | |
+| `_EWMInconstcyBlockStatusTxt` | | ✓ | | | | |
 
 ## Associations
 

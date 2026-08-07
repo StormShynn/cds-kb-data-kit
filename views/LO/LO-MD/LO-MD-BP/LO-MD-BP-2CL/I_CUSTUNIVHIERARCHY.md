@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UniversalHierarchy` | ✓ | |  | `hryid` |
-| `CustUnivHierarchyValidEndDate` | ✓ | |  | `hryvalto` |
-| `CustUnivHierarchyValidStartDte` |  | |  | `hryvalfrom` |
-| `CustUnivHierarchyShortID` |  | |  | `hrysid` |
-| `SalesOrganization` |  | |  | `salesorganization` |
-| `DistributionChannel` |  | |  | `distributionchannel` |
-| `Division` |  | |  | `division` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UniversalHierarchy` | ✓ | |  | `hryid` |  |  |
+| `CustUnivHierarchyValidEndDate` | ✓ | |  | `hryvalto` |  |  |
+| `CustUnivHierarchyValidStartDte` |  | |  | `hryvalfrom` |  |  |
+| `CustUnivHierarchyShortID` |  | |  | `hrysid` |  |  |
+| `SalesOrganization` |  | |  | `salesorganization` |  |  |
+| `DistributionChannel` |  | |  | `distributionchannel` |  |  |
+| `Division` |  | |  | `division` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

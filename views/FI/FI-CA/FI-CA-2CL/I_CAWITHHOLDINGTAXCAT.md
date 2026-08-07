@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAWithholdingTaxCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as qsptp_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAWithholdingTaxCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as qsptp_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

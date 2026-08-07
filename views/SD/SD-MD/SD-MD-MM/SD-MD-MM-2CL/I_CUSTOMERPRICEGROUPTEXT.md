@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerPriceGroup` | ✓ | |  | `konda` |
-| `Language` | ✓ | |  | `spras` |
-| `CustomerPriceGroupName` |  | |  | `vtext` |
-| `_CustomerPriceGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerPriceGroup` | ✓ | |  | `konda` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CustomerPriceGroupName` |  | |  | `vtext` |  |  |
+| `_CustomerPriceGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjElmntDlvbrlDistrUUID` | ✓ | |  | `entprojelmntdlvbrldistruuid` |
-| `EntProjElmntDeliverableUUID` |  | |  | `entprojelmntdeliverableuuid` |
-| `ProjectElementUUID` |  | |  | `projectelementuuid` |
-| `ProjectUUID` |  | |  | `projectuuid` |
-| `EntProjElmntDlvbrlDistrYearVal` |  | |  | `entprojelmntdlvbrldistryearval` |
-| `EntProjElmntDlvbrlDistrPerdVal` |  | |  | `entprojelmntdlvbrldistrperdval` |
-| `EntProjElmntDlvbrlDistrQty` |  | |  | `entprojelmntdlvbrldistrqty` |
-| `EntProjElmntDlvbrlDistrQtyUnit` |  | |  | `entprojelmntdlvbrldistrqtyunit` |
-| `EntProjElmntDlvbrlDistrRevenue` |  | |  | `entprojelmntdlvdistrrevenue` |
-| `EntPrjElmntDlvbrlDistrRevnCrcy` |  | |  | `entprojelmntdlvdistrrevncurr` |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_EntProjElmntDlvbrlRevenue` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntDlvbrlDistrUUID` | ✓ | |  | `entprojelmntdlvbrldistruuid` |  |  |
+| `EntProjElmntDeliverableUUID` |  | |  | `entprojelmntdeliverableuuid` |  |  |
+| `ProjectElementUUID` |  | |  | `projectelementuuid` |  |  |
+| `ProjectUUID` |  | |  | `projectuuid` |  |  |
+| `EntProjElmntDlvbrlDistrYearVal` |  | |  | `entprojelmntdlvbrldistryearval` |  |  |
+| `EntProjElmntDlvbrlDistrPerdVal` |  | |  | `entprojelmntdlvbrldistrperdval` |  |  |
+| `EntProjElmntDlvbrlDistrQty` |  | |  | `entprojelmntdlvbrldistrqty` |  |  |
+| `EntProjElmntDlvbrlDistrQtyUnit` |  | |  | `entprojelmntdlvbrldistrqtyunit` |  |  |
+| `EntProjElmntDlvbrlDistrRevenue` |  | |  | `entprojelmntdlvdistrrevenue` |  |  |
+| `EntPrjElmntDlvbrlDistrRevnCrcy` |  | |  | `entprojelmntdlvdistrrevncurr` |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_EntProjElmntDlvbrlRevenue` | | ✓ | | | | |
 
 ## Associations
 

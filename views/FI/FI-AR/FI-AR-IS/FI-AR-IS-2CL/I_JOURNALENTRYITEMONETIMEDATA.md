@@ -31,55 +31,55 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `AccountingDocument` | ✓ | |  | `belnr` |
-| `FiscalYear` | ✓ | |  | `cast( bsec.gjahr as fis_gjahr_no_conv preserving type )` |
-| `AccountingDocumentItem` | ✓ | |  | `buzei` |
-| `BusinessPartnerName1` |  | |  | `cast(bsec.name1 as ad_name1)` |
-| `BusinessPartnerName2` |  | |  | `cast(bsec.name2 as ad_name2)` |
-| `BusinessPartnerName3` |  | |  | `cast(bsec.name3 as ad_name3)` |
-| `BusinessPartnerName4` |  | |  | `cast(bsec.name4 as ad_name4)` |
-| `Country` |  | |  | `land1` |
-| `CityName` |  | |  | `cast(bsec.ort01 as ad_city1)` |
-| `POBox` |  | |  | `pfach` |
-| `POBoxPostalCode` |  | |  | `pstl2` |
-| `PostalCode` |  | |  | `pstlz` |
-| `IsVATLiable` |  | |  | `stkzu` |
-| `Region` |  | |  | `regio` |
-| `TaxID1` |  | |  | `stcd1` |
-| `TaxID2` |  | |  | `stcd2` |
-| `TaxID3` |  | |  | `stcd3` |
-| `TaxID4` |  | |  | `stcd4` |
-| `TaxID5` |  | |  | `stcd5` |
-| `StreetAddressName` |  | |  | `stras` |
-| `ResponsibleType` |  | |  | `fityp` |
-| `TaxNumberType` |  | |  | `stcdt` |
-| `BusinessType` |  | |  | `j_1kftbus` |
-| `IndustryType` |  | |  | `j_1kftind` |
-| `OneTimeAccountBPSalutationText` |  | |  | `anred` |
-| `AddressID` |  | |  | `adrnr` |
-| `AccountingClerkInternetAddress` |  | |  | `intad` |
-| `BankAccount` |  | |  | `bankn` |
-| `BankNumber` |  | |  | `bankl` |
-| `BankCountry` |  | |  | `banks` |
-| `PostOfficeBankAccount` |  | |  | `pskto` |
-| `PaymentSystem` |  | |  | `payment_system` |
-| `AliasType` |  | |  | `alias_type` |
-| `BPBankAccountAliasName` |  | |  | `bank_alias` |
-| `IsNaturalPerson` |  | |  | `cast(bsec.stkzn as bu_natural_person)` |
-| `IsOneTimeAccount` |  | |  | `xcpdk` |
-| `BankControlKey` |  | |  | `bkont` |
-| `OneTimeAcctCntrySpecificRef1` |  | |  | `glo_re1_ot` |
-| `DataExchangeInstructionKey` |  | |  | `cast(bsec.dtaws as farp_dtaws preserving type)` |
-| `DataMediumExchangeControl` |  | |  | `dtams` |
-| `_CompanyCode` | | ✓ | | |
-| `_AccountingDocument` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_IBAN` | | ✓ | | |
-| `_Bank` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `AccountingDocument` | ✓ | |  | `belnr` |  |  |
+| `FiscalYear` | ✓ | |  | `cast( bsec.gjahr as fis_gjahr_no_conv preserving type )` |  |  |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` |  |  |
+| `BusinessPartnerName1` |  | |  | `cast(bsec.name1 as ad_name1)` |  |  |
+| `BusinessPartnerName2` |  | |  | `cast(bsec.name2 as ad_name2)` |  |  |
+| `BusinessPartnerName3` |  | |  | `cast(bsec.name3 as ad_name3)` |  |  |
+| `BusinessPartnerName4` |  | |  | `cast(bsec.name4 as ad_name4)` |  |  |
+| `Country` |  | |  | `land1` |  |  |
+| `CityName` |  | |  | `cast(bsec.ort01 as ad_city1)` |  |  |
+| `POBox` |  | |  | `pfach` |  |  |
+| `POBoxPostalCode` |  | |  | `pstl2` |  |  |
+| `PostalCode` |  | |  | `pstlz` |  |  |
+| `IsVATLiable` |  | |  | `stkzu` |  |  |
+| `Region` |  | |  | `regio` |  |  |
+| `TaxID1` |  | |  | `stcd1` |  |  |
+| `TaxID2` |  | |  | `stcd2` |  |  |
+| `TaxID3` |  | |  | `stcd3` |  |  |
+| `TaxID4` |  | |  | `stcd4` |  |  |
+| `TaxID5` |  | |  | `stcd5` |  |  |
+| `StreetAddressName` |  | |  | `stras` |  |  |
+| `ResponsibleType` |  | |  | `fityp` |  |  |
+| `TaxNumberType` |  | |  | `stcdt` |  |  |
+| `BusinessType` |  | |  | `j_1kftbus` |  |  |
+| `IndustryType` |  | |  | `j_1kftind` |  |  |
+| `OneTimeAccountBPSalutationText` |  | |  | `anred` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `AccountingClerkInternetAddress` |  | |  | `intad` |  |  |
+| `BankAccount` |  | |  | `bankn` |  |  |
+| `BankNumber` |  | |  | `bankl` |  |  |
+| `BankCountry` |  | |  | `banks` |  |  |
+| `PostOfficeBankAccount` |  | |  | `pskto` |  |  |
+| `PaymentSystem` |  | |  | `payment_system` |  |  |
+| `AliasType` |  | |  | `alias_type` |  |  |
+| `BPBankAccountAliasName` |  | |  | `bank_alias` |  |  |
+| `IsNaturalPerson` |  | |  | `cast(bsec.stkzn as bu_natural_person)` |  |  |
+| `IsOneTimeAccount` |  | |  | `xcpdk` |  |  |
+| `BankControlKey` |  | |  | `bkont` |  |  |
+| `OneTimeAcctCntrySpecificRef1` |  | |  | `glo_re1_ot` |  |  |
+| `DataExchangeInstructionKey` |  | |  | `cast(bsec.dtaws as farp_dtaws preserving type)` |  |  |
+| `DataMediumExchangeControl` |  | |  | `dtams` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_AccountingDocument` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_IBAN` | | ✓ | | | | |
+| `_Bank` | | ✓ | | | | |
 
 ## Associations
 

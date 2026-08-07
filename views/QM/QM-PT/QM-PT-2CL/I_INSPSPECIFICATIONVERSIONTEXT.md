@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionSpecificationPlant` | ✓ | |  | `zaehler` |
-| `InspectionSpecification` | ✓ | |  | `cast( qpmt.mkmnr as vdm_qmerknr preserving type )` |
-| `InspectionSpecificationVersion` | ✓ | |  | `version` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionSpecificationText` |  | |  | `cast( qpmt.kurztext as vdm_qmerknr_text preserving type )` |
-| `_InspSpecificationPlant` | | ✓ | | |
-| `_InspectionSpecification` | | ✓ | | |
-| `_InspSpecificationVersion` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionSpecificationPlant` | ✓ | |  | `zaehler` |  |  |
+| `InspectionSpecification` | ✓ | |  | `cast( qpmt.mkmnr as vdm_qmerknr preserving type )` |  |  |
+| `InspectionSpecificationVersion` | ✓ | |  | `version` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionSpecificationText` |  | |  | `cast( qpmt.kurztext as vdm_qmerknr_text preserving type )` |  |  |
+| `_InspSpecificationPlant` | | ✓ | | | | |
+| `_InspectionSpecification` | | ✓ | | | | |
+| `_InspSpecificationVersion` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

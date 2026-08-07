@@ -30,84 +30,84 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `AccountingClerk` |  | |  | `busab` |
-| `ReconciliationAccount` |  | |  | `akont` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `CustomerHeadOffice` |  | |  | `knrze` |
-| `AlternativePayerAccount` |  | |  | `knrzb` |
-| `PaymentBlockingReason` |  | |  | `zahls` |
-| `InterestCalculationCode` |  | |  | `vzskz` |
-| `InterestCalculationDate` |  | |  | `zindt` |
-| `IntrstCalcFrequencyInMonths` |  | |  | `zinrt` |
-| `CustomerAccountNote` |  | |  | `kverm` |
-| `APARToleranceGroup` |  | |  | `togru` |
-| `HouseBank` |  | |  | `hbkid` |
-| `ItemIsToBePaidSeparately` |  | |  | `xpore` |
-| `PaytAdviceIsSentbyEDI` |  | |  | `xedip` |
-| `PhysicalInventoryBlockInd` |  | |  | `sperr` |
-| `UserAtCustomer` |  | |  | `zsabe` |
-| `AccountingClerkPhoneNumber` |  | |  | `tlfns` |
-| `AccountingClerkFaxNumber` |  | |  | `tlfxs` |
-| `AccountingClerkInternetAddress` |  | |  | `intad` |
-| `AccountByCustomer` |  | |  | `eikto` |
-| `IsToBeLocallyProcessed` |  | |  | `xdezv` |
-| `CollectiveInvoiceVariant` |  | |  | `perkz` |
-| `LayoutSortingRule` |  | |  | `zuawa` |
-| `PaymentTerms` |  | |  | `zterm` |
-| `CustomerSupplierClearingIsUsed` |  | |  | `xverr` |
-| `RecordPaymentHistoryIndicator` |  | |  | `xzver` |
-| `PaymentMethodsList` |  | |  | `zwels` |
-| `DeletionIndicator` |  | |  | `loevm` |
-| `CreditMemoPaymentTerms` |  | |  | `guzte` |
-| `DunningNoticeGroup` |  | |  | `mgrup` |
-| `LastInterestCalcRunDate` |  | |  | `datlz` |
-| `CustPreviousMasterRecordNumber` |  | |  | `altkn` |
-| `ValueAdjustmentKey` |  | |  | `wbrsl` |
-| `CashPlanningGroup` |  | |  | `fdgrv` |
-| `SupplierReleaseGroup` |  | |  | `frgrp` |
-| `PersonnelNumber` |  | |  | `pernr` |
-| `BuyingGroupAccountNumber` |  | |  | `ekvbd` |
-| `BillExchChargePaymentTerms` |  | |  | `wakon` |
-| `CheckPaidDurationInDays` |  | |  | `kultg` |
-| `CustomerPaymentBlockingReason` |  | |  | `zahls` |
-| `PaymentMethodSupplement` |  | |  | `uzawe` |
-| `AcctsReceivablePledgingCode` |  | |  | `cession_kz` |
-| `LockboxInternalID` |  | |  | `lockb` |
-| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck_b` |
-| `WithholdingTaxCountry` |  | |  | `qland` |
-| `KnownOrNegotiatedLeave` |  | |  | `urlid` |
-| `DeletionIsBlocked` |  | |  | `nodel` |
-| `PaymentClearingGroup` |  | |  | `paymentclearinggrpid` |
-| `PaymentReason` |  | |  | `paytrsn` |
-| `BPPeriodicAccountStatement` |  | |  | `xausz` |
-| `US_FrgnAcctTaxRcpntCntry` |  | |  | `us_rec_country` |
-| `US_GlobIntermediaryIdnNumber` |  | |  | `us_giin` |
-| `US_RecipientForeignTaxID` |  | |  | `us_ftid` |
-| `US_LobTreatyCode` |  | |  | `us_lob_code` |
-| `US_FW8BENReceiveDate` |  | |  | `us_w8_recvdate` |
-| `US_FW9ReceiveDate` |  | |  | `us_w9_recvdate` |
-| `US_SecondTINNoticeIsIssued` |  | |  | `us_tin_notice` |
-| `US_FrgnRecipientHasPartnership` |  | |  | `us_partnership_ind` |
-| `US_FrgnAcctTaxFilingIsRequired` |  | |  | `us_fatca_ind` |
-| `US_Chapter4StatusCode` |  | |  | `us_chap4_status_code` |
-| `LastDunnedOn` |  | | `_CustomerDefaultDunning` | `LastDunnedOn` |
-| `DunningProcedure` |  | | `_CustomerDefaultDunning` | `DunningProcedure` |
-| `DunningLevel` |  | | `_CustomerDefaultDunning` | `DunningLevel` |
-| `DunningBlock` |  | | `_CustomerDefaultDunning` | `DunningBlock` |
-| `DunningRecipient` |  | | `_CustomerDefaultDunning` | `DunningRecipient` |
-| `LegDunningProcedureOn` |  | | `_CustomerDefaultDunning` | `LegDunningProcedureOn` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `_Customer` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_CustomerDunning` | | ✓ | | |
-| `_CustomerDefaultDunning` | | ✓ | | |
-| `_PaymentBlockValueHelp` | | ✓ | | |
-| `_PaymentBlockingReasonText` | | ✓ | | |
-| `_CashPlanningGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `AccountingClerk` |  | |  | `busab` |  |  |
+| `ReconciliationAccount` |  | |  | `akont` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `CustomerHeadOffice` |  | |  | `knrze` |  |  |
+| `AlternativePayerAccount` |  | |  | `knrzb` |  |  |
+| `PaymentBlockingReason` |  | |  | `zahls` |  |  |
+| `InterestCalculationCode` |  | |  | `vzskz` |  |  |
+| `InterestCalculationDate` |  | |  | `zindt` |  |  |
+| `IntrstCalcFrequencyInMonths` |  | |  | `zinrt` |  |  |
+| `CustomerAccountNote` |  | |  | `kverm` |  |  |
+| `APARToleranceGroup` |  | |  | `togru` |  |  |
+| `HouseBank` |  | |  | `hbkid` |  |  |
+| `ItemIsToBePaidSeparately` |  | |  | `xpore` |  |  |
+| `PaytAdviceIsSentbyEDI` |  | |  | `xedip` |  |  |
+| `PhysicalInventoryBlockInd` |  | |  | `sperr` |  |  |
+| `UserAtCustomer` |  | |  | `zsabe` |  |  |
+| `AccountingClerkPhoneNumber` |  | |  | `tlfns` |  |  |
+| `AccountingClerkFaxNumber` |  | |  | `tlfxs` |  |  |
+| `AccountingClerkInternetAddress` |  | |  | `intad` |  |  |
+| `AccountByCustomer` |  | |  | `eikto` |  |  |
+| `IsToBeLocallyProcessed` |  | |  | `xdezv` |  |  |
+| `CollectiveInvoiceVariant` |  | |  | `perkz` |  |  |
+| `LayoutSortingRule` |  | |  | `zuawa` |  |  |
+| `PaymentTerms` |  | |  | `zterm` |  |  |
+| `CustomerSupplierClearingIsUsed` |  | |  | `xverr` |  |  |
+| `RecordPaymentHistoryIndicator` |  | |  | `xzver` |  |  |
+| `PaymentMethodsList` |  | |  | `zwels` |  |  |
+| `DeletionIndicator` |  | |  | `loevm` |  |  |
+| `CreditMemoPaymentTerms` |  | |  | `guzte` |  |  |
+| `DunningNoticeGroup` |  | |  | `mgrup` |  |  |
+| `LastInterestCalcRunDate` |  | |  | `datlz` |  |  |
+| `CustPreviousMasterRecordNumber` |  | |  | `altkn` |  |  |
+| `ValueAdjustmentKey` |  | |  | `wbrsl` |  |  |
+| `CashPlanningGroup` |  | |  | `fdgrv` |  |  |
+| `SupplierReleaseGroup` |  | |  | `frgrp` |  |  |
+| `PersonnelNumber` |  | |  | `pernr` |  |  |
+| `BuyingGroupAccountNumber` |  | |  | `ekvbd` |  |  |
+| `BillExchChargePaymentTerms` |  | |  | `wakon` |  |  |
+| `CheckPaidDurationInDays` |  | |  | `kultg` |  |  |
+| `CustomerPaymentBlockingReason` |  | |  | `zahls` |  |  |
+| `PaymentMethodSupplement` |  | |  | `uzawe` |  |  |
+| `AcctsReceivablePledgingCode` |  | |  | `cession_kz` |  |  |
+| `LockboxInternalID` |  | |  | `lockb` |  |  |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck_b` |  |  |
+| `WithholdingTaxCountry` |  | |  | `qland` |  |  |
+| `KnownOrNegotiatedLeave` |  | |  | `urlid` |  |  |
+| `DeletionIsBlocked` |  | |  | `nodel` |  |  |
+| `PaymentClearingGroup` |  | |  | `paymentclearinggrpid` |  |  |
+| `PaymentReason` |  | |  | `paytrsn` |  |  |
+| `BPPeriodicAccountStatement` |  | |  | `xausz` |  |  |
+| `US_FrgnAcctTaxRcpntCntry` |  | |  | `us_rec_country` |  |  |
+| `US_GlobIntermediaryIdnNumber` |  | |  | `us_giin` |  |  |
+| `US_RecipientForeignTaxID` |  | |  | `us_ftid` |  |  |
+| `US_LobTreatyCode` |  | |  | `us_lob_code` |  |  |
+| `US_FW8BENReceiveDate` |  | |  | `us_w8_recvdate` |  |  |
+| `US_FW9ReceiveDate` |  | |  | `us_w9_recvdate` |  |  |
+| `US_SecondTINNoticeIsIssued` |  | |  | `us_tin_notice` |  |  |
+| `US_FrgnRecipientHasPartnership` |  | |  | `us_partnership_ind` |  |  |
+| `US_FrgnAcctTaxFilingIsRequired` |  | |  | `us_fatca_ind` |  |  |
+| `US_Chapter4StatusCode` |  | |  | `us_chap4_status_code` |  |  |
+| `LastDunnedOn` |  | | `_CustomerDefaultDunning` | `LastDunnedOn` |  |  |
+| `DunningProcedure` |  | | `_CustomerDefaultDunning` | `DunningProcedure` |  |  |
+| `DunningLevel` |  | | `_CustomerDefaultDunning` | `DunningLevel` |  |  |
+| `DunningBlock` |  | | `_CustomerDefaultDunning` | `DunningBlock` |  |  |
+| `DunningRecipient` |  | | `_CustomerDefaultDunning` | `DunningRecipient` |  |  |
+| `LegDunningProcedureOn` |  | | `_CustomerDefaultDunning` | `LegDunningProcedureOn` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CustomerDunning` | | ✓ | | | | |
+| `_CustomerDefaultDunning` | | ✓ | | | | |
+| `_PaymentBlockValueHelp` | | ✓ | | | | |
+| `_PaymentBlockingReasonText` | | ✓ | | | | |
+| `_CashPlanningGroup` | | ✓ | | | | |
 
 ## Associations
 

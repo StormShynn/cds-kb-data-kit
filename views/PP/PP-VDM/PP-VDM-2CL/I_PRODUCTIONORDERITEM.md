@@ -31,103 +31,103 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionOrder` | ✓ | |  | `cast(item.OrderID as vdm_manufacturingorder preserving type)` |
-| `ProductionOrderItem` | ✓ | |  | `OrderItem` |
-| `OrderIsReleased` |  | |  | `cast(item.OrderIsReleased as orderisreleased preserving type)` |
-| `IsMarkedForDeletion` |  | |  |  |
-| `OrderItemIsNotRelevantForMRP` |  | |  | `cast(item.OrderItemIsNotRelevantForMRP as vdm_dnrel preserving type)` |
-| `ProductionOrderType` |  | |  | `cast(item.OrderType as vdm_prodnordertype preserving type)` |
-| `Product` |  | |  | `cast(item.Material as productnumber preserving type)` |
-| `ProductionPlant` |  | |  |  |
-| `PlanningPlant` |  | |  | `MRPPlant` |
-| `ProductionVersion` |  | |  |  |
-| `MRPArea` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SalesOrderScheduleLine` |  | |  |  |
-| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |
-| `QuotaArrangement` |  | |  |  |
-| `QuotaArrangementItem` |  | |  |  |
-| `SettlementReservation` |  | |  |  |
-| `SettlementReservationItem` |  | |  |  |
-| `CoProductReservation` |  | |  |  |
-| `CoProductReservationItem` |  | |  |  |
-| `SerialNumberProfile` |  | |  | `SerialNumberAssgmtProfile` |
-| `NumberOfSerialNumbers` |  | |  |  |
-| `ReplenishmentElementType` |  | |  | `MfgOrderItemReplnmtElmntType` |
-| `ProductConfiguration` |  | |  | `cast(item.ProductConfiguration as product_configuration preserving type)` |
-| `ObjectInternalID` |  | |  |  |
-| `QuantityDistributionKey` |  | |  |  |
-| `EffectivityParameterVariant` |  | |  |  |
-| `OriginalEffctyParameterVariant` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `MaterialGoodsReceiptDuration` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `Batch` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `InventoryValuationCategory` |  | |  |  |
-| `InventoryUsabilityCode` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `PlannedEndDate` |  | |  | `cast(item.PlannedEndDate as mfgorderitemplannedenddate preserving type)` |
-| `ScheduledEndDate` |  | |  | `cast(item.ScheduledBasicEndDate as mfgorderitemscheduledenddate preserving type)` |
-| `ActualDeliveryDate` |  | |  |  |
-| `TotalCommitmentDate` |  | |  |  |
-| `ProductionUnit` |  | |  |  |
-| `PlannedTotalQty` |  | |  | `cast(item.ItemQuantity as co_psmng preserving type)` |
-| `PlannedScrapQuantity` |  | |  | `cast(item.MfgOrderItemPlannedScrapQty as co_psamg preserving type)` |
-| `PlannedYieldQuantity` |  | |  | `cast(item.ItemQuantity - item.MfgOrderItemPlannedScrapQty as plannedyieldquantity)` |
-| `GoodsReceiptQty` |  | |  | `cast(item.MfgOrderItemGoodsReceiptQty as co_wemng preserving type)` |
-| `ActualDeviationQty` |  | |  | `cast(item.MfgOrderItemActualDeviationQty as co_iamng preserving type)` |
-| `OpenYieldQuantity` |  | |  | `cast(item.MfgOrderItemOpenYieldQty as openyieldquantity preserving type)` |
-| `BaseUnit` |  | |  |  |
-| `PlannedTotalQtyInBaseUnit` |  | |  | `cast(item.OrderPlannedTotalQty as vdm_pgmng preserving type)` |
-| `PlannedScrapQtyInBaseUnit` |  | |  | `cast(item.OrderPlannedScrapQty as vdm_pamng preserving type)` |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `PlannedOrder` |  | |  |  |
-| `PlannedOrderPlannedDeliveryDte` |  | |  | `PlannedDeliveryDate` |
-| `PlndOrderPlannedStartDate` |  | |  | `cast(item.PlndOrderPlannedStartDate as vdm_strmp preserving type)` |
-| `PlannedOrderOpeningDate` |  | |  | `cast(item.PlannedOrderOpeningDate as vdm_etrmp preserving type)` |
-| `CompanyCodeCurrency` |  | |  | `Currency` |
-| `GoodsReceiptAmountInCoCodeCrcy` |  | |  |  |
-| `_PlanningPlant` |  | |  | `_MRPPlant` |
-| `_StatusObject` |  | |  | `_StatusObjectItem` |
-| `_ProductionOrderType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductPlanningPlant` | | ✓ | | |
-| `_ProductSupplyPlanning` | | ✓ | | |
-| `_ProductStorageLocation` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_ProductMRPArea` | | ✓ | | |
-| `_ProductPlantMRPArea` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_ProductionOrderText` | | ✓ | | |
-| `_ProductionPlantText` | | ✓ | | |
-| `_PlanningPlantText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_ProductionVersionText` | | ✓ | | |
-| `_MRPAreaText` | | ✓ | | |
-| `_WBSElementText` | | ✓ | | |
-| `_StorageLocationText` | | ✓ | | |
-| `_BusinessAreaText` | | ✓ | | |
-| `_CompanyCodeText` | | ✓ | | |
-| `_ProductionOrderHeader` | | ✓ | | |
-| `_SerialNumber` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionOrder` | ✓ | |  | `cast(item.OrderID as vdm_manufacturingorder preserving type)` |  |  |
+| `ProductionOrderItem` | ✓ | |  | `OrderItem` |  |  |
+| `OrderIsReleased` |  | |  | `cast(item.OrderIsReleased as orderisreleased preserving type)` |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `OrderItemIsNotRelevantForMRP` |  | |  | `cast(item.OrderItemIsNotRelevantForMRP as vdm_dnrel preserving type)` |  |  |
+| `ProductionOrderType` |  | |  | `cast(item.OrderType as vdm_prodnordertype preserving type)` |  |  |
+| `Product` |  | |  | `cast(item.Material as productnumber preserving type)` |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `PlanningPlant` |  | |  | `MRPPlant` |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `MRPArea` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |  |  |
+| `QuotaArrangement` |  | |  |  |  |  |
+| `QuotaArrangementItem` |  | |  |  |  |  |
+| `SettlementReservation` |  | |  |  |  |  |
+| `SettlementReservationItem` |  | |  |  |  |  |
+| `CoProductReservation` |  | |  |  |  |  |
+| `CoProductReservationItem` |  | |  |  |  |  |
+| `SerialNumberProfile` |  | |  | `SerialNumberAssgmtProfile` |  |  |
+| `NumberOfSerialNumbers` |  | |  |  |  |  |
+| `ReplenishmentElementType` |  | |  | `MfgOrderItemReplnmtElmntType` |  |  |
+| `ProductConfiguration` |  | |  | `cast(item.ProductConfiguration as product_configuration preserving type)` |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `QuantityDistributionKey` |  | |  |  |  |  |
+| `EffectivityParameterVariant` |  | |  |  |  |  |
+| `OriginalEffctyParameterVariant` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `InventoryValuationCategory` |  | |  |  |  |  |
+| `InventoryUsabilityCode` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `PlannedEndDate` |  | |  | `cast(item.PlannedEndDate as mfgorderitemplannedenddate preserving type)` |  |  |
+| `ScheduledEndDate` |  | |  | `cast(item.ScheduledBasicEndDate as mfgorderitemscheduledenddate preserving type)` |  |  |
+| `ActualDeliveryDate` |  | |  |  |  |  |
+| `TotalCommitmentDate` |  | |  |  |  |  |
+| `ProductionUnit` |  | |  |  |  |  |
+| `PlannedTotalQty` |  | |  | `cast(item.ItemQuantity as co_psmng preserving type)` |  |  |
+| `PlannedScrapQuantity` |  | |  | `cast(item.MfgOrderItemPlannedScrapQty as co_psamg preserving type)` |  |  |
+| `PlannedYieldQuantity` |  | |  | `cast(item.ItemQuantity - item.MfgOrderItemPlannedScrapQty as plannedyieldquantity)` |  |  |
+| `GoodsReceiptQty` |  | |  | `cast(item.MfgOrderItemGoodsReceiptQty as co_wemng preserving type)` |  |  |
+| `ActualDeviationQty` |  | |  | `cast(item.MfgOrderItemActualDeviationQty as co_iamng preserving type)` |  |  |
+| `OpenYieldQuantity` |  | |  | `cast(item.MfgOrderItemOpenYieldQty as openyieldquantity preserving type)` |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `PlannedTotalQtyInBaseUnit` |  | |  | `cast(item.OrderPlannedTotalQty as vdm_pgmng preserving type)` |  |  |
+| `PlannedScrapQtyInBaseUnit` |  | |  | `cast(item.OrderPlannedScrapQty as vdm_pamng preserving type)` |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `PlannedOrder` |  | |  |  |  |  |
+| `PlannedOrderPlannedDeliveryDte` |  | |  | `PlannedDeliveryDate` |  |  |
+| `PlndOrderPlannedStartDate` |  | |  | `cast(item.PlndOrderPlannedStartDate as vdm_strmp preserving type)` |  |  |
+| `PlannedOrderOpeningDate` |  | |  | `cast(item.PlannedOrderOpeningDate as vdm_etrmp preserving type)` |  |  |
+| `CompanyCodeCurrency` |  | |  | `Currency` |  |  |
+| `GoodsReceiptAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `_PlanningPlant` |  | |  | `_MRPPlant` |  |  |
+| `_StatusObject` |  | |  | `_StatusObjectItem` |  |  |
+| `_ProductionOrderType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductPlanningPlant` | | ✓ | | | | |
+| `_ProductSupplyPlanning` | | ✓ | | | | |
+| `_ProductStorageLocation` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_ProductMRPArea` | | ✓ | | | | |
+| `_ProductPlantMRPArea` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_ProductionOrderText` | | ✓ | | | | |
+| `_ProductionPlantText` | | ✓ | | | | |
+| `_PlanningPlantText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_ProductionVersionText` | | ✓ | | | | |
+| `_MRPAreaText` | | ✓ | | | | |
+| `_WBSElementText` | | ✓ | | | | |
+| `_StorageLocationText` | | ✓ | | | | |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_CompanyCodeText` | | ✓ | | | | |
+| `_ProductionOrderHeader` | | ✓ | | | | |
+| `_SerialNumber` | | ✓ | | | | |
 
 ## Associations
 

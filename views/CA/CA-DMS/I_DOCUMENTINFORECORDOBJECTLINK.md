@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocType` | ✓ | |  |  |
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  |  |
-| `LinkedSAPObject` | ✓ | |  |  |
-| `LinkedSAPObjectKey` | ✓ | |  |  |
-| `DocObjectLinkCounter` | ✓ | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `DocInfoRecdLinkStatus` |  | |  |  |
-| `DocInfoRecdObjectLinkStatus` |  | |  |  |
-| `ObjectTypeDatabaseTable` |  | |  |  |
-| `DocInfoRecdAdditionalObjectKey` |  | |  |  |
-| `DocLinkDirectionIsActive` |  | |  |  |
-| `IsDefaultDocument` |  | |  |  |
-| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |
-| `DocInfoRecdLongTextUUID` |  | |  |  |
-| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |
-| `DocInfoRecdConfignMgmtFixed` |  | |  |  |
-| `IsArchived` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_CreatedUser` | | ✓ | | |
-| `_ChangedUser` | | ✓ | | |
-| `_DocumentInfoRecordDesc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
+| `LinkedSAPObject` | ✓ | |  |  |  |  |
+| `LinkedSAPObjectKey` | ✓ | |  |  |  |  |
+| `DocObjectLinkCounter` | ✓ | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `DocInfoRecdLinkStatus` |  | |  |  |  |  |
+| `DocInfoRecdObjectLinkStatus` |  | |  |  |  |  |
+| `ObjectTypeDatabaseTable` |  | |  |  |  |  |
+| `DocInfoRecdAdditionalObjectKey` |  | |  |  |  |  |
+| `DocLinkDirectionIsActive` |  | |  |  |  |  |
+| `IsDefaultDocument` |  | |  |  |  |  |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |  |  |
+| `DocInfoRecdLongTextUUID` |  | |  |  |  |  |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |  |  |
+| `DocInfoRecdConfignMgmtFixed` |  | |  |  |  |  |
+| `IsArchived` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_CreatedUser` | | ✓ | | | | |
+| `_ChangedUser` | | ✓ | | | | |
+| `_DocumentInfoRecordDesc` | | ✓ | | | | |
 
 ## Associations
 

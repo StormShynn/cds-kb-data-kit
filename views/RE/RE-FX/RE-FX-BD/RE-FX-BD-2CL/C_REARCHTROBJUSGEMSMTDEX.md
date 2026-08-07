@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REArchitectureObjMsmtUsageUUID` | ✓ | |  |  |
-| `REArchitectureObjectUsageUUID` |  | |  |  |
-| `REGenericRentalObjectType` |  | |  |  |
-| `REGenericRentalObjectUUID` |  | |  |  |
-| `REArchitectureObjectUUID` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `REMeasurementType` |  | |  |  |
-| `REMeasurementUnit` |  | |  |  |
-| `REMeasurementQuantity` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REArchitectureObjMsmtUsageUUID` | ✓ | |  |  |  |  |
+| `REArchitectureObjectUsageUUID` |  | |  |  |  |  |
+| `REGenericRentalObjectType` |  | |  |  |  |  |
+| `REGenericRentalObjectUUID` |  | |  |  |  |  |
+| `REArchitectureObjectUUID` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `REMeasurementType` |  | |  |  |  |  |
+| `REMeasurementUnit` |  | |  |  |  |  |
+| `REMeasurementQuantity` |  | |  |  |  |  |
 
 ## Source Code
 

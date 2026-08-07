@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeDocObject` | ✓ | |  |  |
-| `ChangeDocObjectClass` | ✓ | |  |  |
-| `ChangeDocument` | ✓ | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `FullName` |  | |  |  |
-| `FirstName` |  | |  |  |
-| `LastName` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `_SuplrInvcChgDocItmAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeDocObject` | ✓ | |  |  |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |  |  |
+| `ChangeDocument` | ✓ | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `FullName` |  | |  |  |  |  |
+| `FirstName` |  | |  |  |  |  |
+| `LastName` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `_SuplrInvcChgDocItmAPI01` | | ✓ | | | | |
 
 ## Associations
 

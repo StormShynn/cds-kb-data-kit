@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ResponseProfile` | ✓ | |  | `srv_escal` |
-| `Language` | ✓ | |  | `langu` |
-| `ServiceProfileName` |  | |  | `description` |
-| `_Language` | | ✓ | | |
-| `_ResponseProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ResponseProfile` | ✓ | |  | `srv_escal` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ServiceProfileName` |  | |  | `description` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ResponseProfile` | | ✓ | | | | |
 
 ## Associations
 

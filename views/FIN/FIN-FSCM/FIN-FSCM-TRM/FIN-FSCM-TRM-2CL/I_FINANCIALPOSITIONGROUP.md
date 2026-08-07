@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialPositionGroup` | ✓ | |  | `fin_pos_grp` |
-| `FinancialPositionGroupName` |  | |  | `fin_pos_grp_name` |
-| `FinPositionAssetLiabilityCode` |  | |  | `asset_or_lblty` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialPositionGroup` | ✓ | |  | `fin_pos_grp` |  |  |
+| `FinancialPositionGroupName` |  | |  | `fin_pos_grp_name` |  |  |
+| `FinPositionAssetLiabilityCode` |  | |  | `asset_or_lblty` |  |  |
 
 ## Source Code
 

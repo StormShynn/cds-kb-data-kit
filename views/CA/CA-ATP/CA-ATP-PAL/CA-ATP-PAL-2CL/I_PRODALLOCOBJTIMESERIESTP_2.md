@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdAllocationTimeSeriesUUID` | ✓ | |  |  |
-| `ProductAllocationObjectUUID` |  | |  |  |
-| `CharcValueCombinationUUID` |  | |  |  |
-| `ProdAllocPerdStartUTCDateTime` |  | |  |  |
-| `ProdAllocPeriodStartTimeZone` |  | |  |  |
-| `ProdAllocPeriodEndUTCDateTime` |  | |  |  |
-| `ProdAllocPeriodEndTimeZone` |  | |  |  |
-| `ProductAllocationQuantity` |  | |  |  |
-| `ProductAllocationQuantityUnit` |  | |  |  |
-| `_ProdAllocationObjectTP` | | ✓ | | |
-| `_ProdAllocCharcValCombnTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdAllocationTimeSeriesUUID` | ✓ | |  |  |  |  |
+| `ProductAllocationObjectUUID` |  | |  |  |  |  |
+| `CharcValueCombinationUUID` |  | |  |  |  |  |
+| `ProdAllocPerdStartUTCDateTime` |  | |  |  |  |  |
+| `ProdAllocPeriodStartTimeZone` |  | |  |  |  |  |
+| `ProdAllocPeriodEndUTCDateTime` |  | |  |  |  |  |
+| `ProdAllocPeriodEndTimeZone` |  | |  |  |  |  |
+| `ProductAllocationQuantity` |  | |  |  |  |  |
+| `ProductAllocationQuantityUnit` |  | |  |  |  |  |
+| `_ProdAllocationObjectTP` | | ✓ | | | | |
+| `_ProdAllocCharcValCombnTP` | | ✓ | | | | |
 
 ## Source Code
 

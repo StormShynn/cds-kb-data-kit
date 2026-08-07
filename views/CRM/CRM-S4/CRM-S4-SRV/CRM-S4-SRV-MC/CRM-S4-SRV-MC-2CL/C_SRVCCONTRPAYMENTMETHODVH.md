@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingCompanyCode` | ✓ | | `_CompanyCode` | `CompanyCode` |
-| `PaymentMethod` | ✓ | | `_PaymentMethod` | `PaymentMethod` |
-| `PaymentMethodName` |  | | `_PaymentMethod` | `PaymentMethodName` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingCompanyCode` | ✓ | | `_CompanyCode` | `CompanyCode` |  |  |
+| `PaymentMethod` | ✓ | | `_PaymentMethod` | `PaymentMethod` |  |  |
+| `PaymentMethodName` |  | | `_PaymentMethod` | `PaymentMethodName` |  |  |
 
 ## Source Code
 

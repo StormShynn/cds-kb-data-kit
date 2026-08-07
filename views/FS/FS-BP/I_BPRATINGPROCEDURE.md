@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |
-| `BPRatingIsRequired` |  | |  | `flg_required` |
-| `BusinessPartnerRatingIsDefault` |  | |  | `flg_default` |
-| `BPRatingStandardAccessDays` |  | |  | `grade_meth_permitted_period` |
-| `BPRatgPermittedPerdIsRelevant` |  | |  | `''` |
-| `_Text` | | ✓ | | |
-| `_BPRating` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |  |  |
+| `BPRatingIsRequired` |  | |  | `flg_required` |  |  |
+| `BusinessPartnerRatingIsDefault` |  | |  | `flg_default` |  |  |
+| `BPRatingStandardAccessDays` |  | |  | `grade_meth_permitted_period` |  |  |
+| `BPRatgPermittedPerdIsRelevant` |  | |  | `''` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_BPRating` | | ✓ | | | | |
 
 ## Associations
 

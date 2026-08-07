@@ -26,57 +26,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentCompanyCode` | ✓ | |  |  |
-| `HouseBank` | ✓ | |  |  |
-| `HouseBankAccount` | ✓ | |  |  |
-| `PaymentMethod` | ✓ | |  |  |
-| `OutgoingCheque` | ✓ | |  |  |
-| `IsIntercompanyPayment` |  | |  |  |
-| `ChequeIsManuallyIssued` |  | |  |  |
-| `ChequebookFirstCheque` |  | |  |  |
-| `PaymentDocument` |  | |  |  |
-| `ChequePaymentDate` |  | |  |  |
-| `PaymentCurrency` |  | |  |  |
-| `PaidAmountInPaytCurrency` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PaymentDocPrintDate` |  | |  |  |
-| `PaymentDocPrintTime` |  | |  |  |
-| `ChequePrintDateTime` |  | |  |  |
-| `PaymentDocPrintedByUser` |  | |  |  |
-| `ChequeEncashmentDate` |  | |  |  |
-| `ChequeLastExtractDate` |  | |  |  |
-| `ChequeLastExtractDateTime` |  | |  |  |
-| `PayeeTitle` |  | |  |  |
-| `PayeeName` |  | |  |  |
-| `PayeeAdditionalName` |  | |  |  |
-| `PayeePostalCode` |  | |  |  |
-| `PayeeCityName` |  | |  |  |
-| `PayeeStreet` |  | |  |  |
-| `PayeePOBox` |  | |  |  |
-| `PayeePOBoxPostalCode` |  | |  |  |
-| `PayeePOBoxCityName` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `ChequeVoidReason` |  | |  |  |
-| `ChequeVoidedDate` |  | |  |  |
-| `ChequeVoidedByUser` |  | |  |  |
-| `ChequeIsCashed` |  | |  |  |
-| `CashDiscountAmount` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `ChequeType` |  | |  |  |
-| `VoidedChequeUsage` |  | |  |  |
-| `ChequeStatus` |  | |  |  |
-| `ChequeIssuingType` |  | |  |  |
-| `BankName` |  | | `_HouseBank._Bank` | `BankName` |
-| `CompanyCodeCountry` |  | | `_Company` | `Country` |
-| `CompanyCodeName` |  | | `_Company` | `CompanyCodeName` |
-| `_Company` | | ✓ | | |
-| `_HouseBank` | | ✓ | | |
-| `_VoidReason` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentCompanyCode` | ✓ | |  |  |  |  |
+| `HouseBank` | ✓ | |  |  |  |  |
+| `HouseBankAccount` | ✓ | |  |  |  |  |
+| `PaymentMethod` | ✓ | |  |  |  |  |
+| `OutgoingCheque` | ✓ | |  |  |  |  |
+| `IsIntercompanyPayment` |  | |  |  |  |  |
+| `ChequeIsManuallyIssued` |  | |  |  |  |  |
+| `ChequebookFirstCheque` |  | |  |  |  |  |
+| `PaymentDocument` |  | |  |  |  |  |
+| `ChequePaymentDate` |  | |  |  |  |  |
+| `PaymentCurrency` |  | |  |  |  |  |
+| `PaidAmountInPaytCurrency` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PaymentDocPrintDate` |  | |  |  |  |  |
+| `PaymentDocPrintTime` |  | |  |  |  |  |
+| `ChequePrintDateTime` |  | |  |  |  |  |
+| `PaymentDocPrintedByUser` |  | |  |  |  |  |
+| `ChequeEncashmentDate` |  | |  |  |  |  |
+| `ChequeLastExtractDate` |  | |  |  |  |  |
+| `ChequeLastExtractDateTime` |  | |  |  |  |  |
+| `PayeeTitle` |  | |  |  |  |  |
+| `PayeeName` |  | |  |  |  |  |
+| `PayeeAdditionalName` |  | |  |  |  |  |
+| `PayeePostalCode` |  | |  |  |  |  |
+| `PayeeCityName` |  | |  |  |  |  |
+| `PayeeStreet` |  | |  |  |  |  |
+| `PayeePOBox` |  | |  |  |  |  |
+| `PayeePOBoxPostalCode` |  | |  |  |  |  |
+| `PayeePOBoxCityName` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `ChequeVoidReason` |  | |  |  |  |  |
+| `ChequeVoidedDate` |  | |  |  |  |  |
+| `ChequeVoidedByUser` |  | |  |  |  |  |
+| `ChequeIsCashed` |  | |  |  |  |  |
+| `CashDiscountAmount` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `ChequeType` |  | |  |  |  |  |
+| `VoidedChequeUsage` |  | |  |  |  |  |
+| `ChequeStatus` |  | |  |  |  |  |
+| `ChequeIssuingType` |  | |  |  |  |  |
+| `BankName` |  | | `_HouseBank._Bank` | `BankName` |  |  |
+| `CompanyCodeCountry` |  | | `_Company` | `Country` |  |  |
+| `CompanyCodeName` |  | | `_Company` | `CompanyCodeName` |  |  |
+| `_Company` | | ✓ | | | | |
+| `_HouseBank` | | ✓ | | | | |
+| `_VoidReason` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

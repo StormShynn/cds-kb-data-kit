@@ -29,40 +29,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLotType` | ✓ | |  |  |
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `InspLotIsTaskListRequired` |  | |  |  |
-| `InspLotHasMaterialSpec` |  | |  |  |
-| `InspLotHasConfignSpecification` |  | |  |  |
-| `InspLotHasBatchCharc` |  | |  |  |
-| `InspLotHasAutomSpecAssgmt` |  | |  |  |
-| `InspLotHasCharc` |  | |  |  |
-| `HasPostToInspectionStock` |  | |  |  |
-| `InspLotIsAutomUsgeDcsnPossible` |  | |  |  |
-| `SamplingProcedure` |  | |  |  |
-| `InspLotDynamicRule` |  | |  |  |
-| `InspLotSampleQuantityInPercent` |  | |  |  |
-| `InspectionLotIsFullInspection` |  | |  |  |
-| `InspLotSkipIsAllowed` |  | |  |  |
-| `InspLotHasManualSampleSize` |  | |  |  |
-| `InspLotIsSmplCalcMnlTriggered` |  | |  |  |
-| `InspLotIsSerialNmbrPossible` |  | |  |  |
-| `InspLotDurationInDays` |  | |  |  |
-| `InspLotSummaryControl` |  | |  |  |
-| `InspQualityScoreProcedure` |  | |  |  |
-| `InspLotAcceptedScrapRatioInPct` |  | |  |  |
-| `InspectionLotHasAppraisalCosts` |  | |  |  |
-| `QualityCostCollector` |  | |  |  |
-| `ProdInspTypeSettingIsActive` |  | |  |  |
-| `InspTypeIsPrfrd` |  | |  |  |
-| `InspLotHasHandlingUnit` |  | |  |  |
-| `InspLotHasMultipleSpec` |  | |  |  |
-| `InspLotOfEWMSummaryControl` |  | |  |  |
-| `_ProductPlant` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLotType` | ✓ | |  |  |  |  |
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `InspLotIsTaskListRequired` |  | |  |  |  |  |
+| `InspLotHasMaterialSpec` |  | |  |  |  |  |
+| `InspLotHasConfignSpecification` |  | |  |  |  |  |
+| `InspLotHasBatchCharc` |  | |  |  |  |  |
+| `InspLotHasAutomSpecAssgmt` |  | |  |  |  |  |
+| `InspLotHasCharc` |  | |  |  |  |  |
+| `HasPostToInspectionStock` |  | |  |  |  |  |
+| `InspLotIsAutomUsgeDcsnPossible` |  | |  |  |  |  |
+| `SamplingProcedure` |  | |  |  |  |  |
+| `InspLotDynamicRule` |  | |  |  |  |  |
+| `InspLotSampleQuantityInPercent` |  | |  |  |  |  |
+| `InspectionLotIsFullInspection` |  | |  |  |  |  |
+| `InspLotSkipIsAllowed` |  | |  |  |  |  |
+| `InspLotHasManualSampleSize` |  | |  |  |  |  |
+| `InspLotIsSmplCalcMnlTriggered` |  | |  |  |  |  |
+| `InspLotIsSerialNmbrPossible` |  | |  |  |  |  |
+| `InspLotDurationInDays` |  | |  |  |  |  |
+| `InspLotSummaryControl` |  | |  |  |  |  |
+| `InspQualityScoreProcedure` |  | |  |  |  |  |
+| `InspLotAcceptedScrapRatioInPct` |  | |  |  |  |  |
+| `InspectionLotHasAppraisalCosts` |  | |  |  |  |  |
+| `QualityCostCollector` |  | |  |  |  |  |
+| `ProdInspTypeSettingIsActive` |  | |  |  |  |  |
+| `InspTypeIsPrfrd` |  | |  |  |  |  |
+| `InspLotHasHandlingUnit` |  | |  |  |  |  |
+| `InspLotHasMultipleSpec` |  | |  |  |  |  |
+| `InspLotOfEWMSummaryControl` |  | |  |  |  |  |
+| `_ProductPlant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Source Code
 

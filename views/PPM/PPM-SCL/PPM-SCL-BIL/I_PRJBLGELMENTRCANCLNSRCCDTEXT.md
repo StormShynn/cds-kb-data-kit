@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `PrjBlgElmEntrCanclnSrceCode` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbee_cancellingsrc preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PrjBlgElmEntrCanclnSrcCdText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_PrjBlgElmEntrCanclnSrceCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `PrjBlgElmEntrCanclnSrceCode` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbee_cancellingsrc preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PrjBlgElmEntrCanclnSrcCdText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PrjBlgElmEntrCanclnSrceCode` | | ✓ | | | | |
 
 ## Associations
 

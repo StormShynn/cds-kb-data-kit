@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StatisticalKeyFigure` | ✓ | |  | `cast(stagr as fis_stagr preserving type )` |
-| `ControllingArea` | ✓ | |  | `cast(kokrs as fis_kokrs preserving type )` |
-| `StstcKeyFigQuantityUnit` |  | |  | `msehi` |
-| `StstcKeyFigCategory` |  | |  | `grtyp` |
-| `StstclKeyFigCreatedAtDateTime` |  | |  | `created_on` |
-| `StstclKeyFigLastChgdAtDteTme` |  | |  | `last_changed_on` |
-| `StstclKeyFigureCreatedByUser` |  | |  | `created_by` |
-| `StstclKeyFigLastChangedByUser` |  | |  | `last_changed_by` |
-| `StstclKeyFigureOrigin` |  | |  | `hktyp` |
-| `LogsInformationSystemTable` |  | |  | `struct` |
-| `LogsInfoSystemKeyFigure` |  | |  | `kennz` |
-| `StstclKeyFigureIsCurrency` |  | |  | `w_flag` |
-| `StstclKeyFigProcgPlndValType` |  | |  | `m_plan` |
-| `StstclKeyFigProcgActlValType` |  | |  | `m_ist` |
-| `_Text` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_StatisticalKeyFigureCat` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_StstclKeyFigureHierNode` | | ✓ | | |
-| `_UserCrtedContactCard` | | ✓ | | |
-| `_LastChangedByUserContactCard` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatisticalKeyFigure` | ✓ | |  | `cast(stagr as fis_stagr preserving type )` |  |  |
+| `ControllingArea` | ✓ | |  | `cast(kokrs as fis_kokrs preserving type )` |  |  |
+| `StstcKeyFigQuantityUnit` |  | |  | `msehi` |  |  |
+| `StstcKeyFigCategory` |  | |  | `grtyp` |  |  |
+| `StstclKeyFigCreatedAtDateTime` |  | |  | `created_on` |  |  |
+| `StstclKeyFigLastChgdAtDteTme` |  | |  | `last_changed_on` |  |  |
+| `StstclKeyFigureCreatedByUser` |  | |  | `created_by` |  |  |
+| `StstclKeyFigLastChangedByUser` |  | |  | `last_changed_by` |  |  |
+| `StstclKeyFigureOrigin` |  | |  | `hktyp` |  |  |
+| `LogsInformationSystemTable` |  | |  | `struct` |  |  |
+| `LogsInfoSystemKeyFigure` |  | |  | `kennz` |  |  |
+| `StstclKeyFigureIsCurrency` |  | |  | `w_flag` |  |  |
+| `StstclKeyFigProcgPlndValType` |  | |  | `m_plan` |  |  |
+| `StstclKeyFigProcgActlValType` |  | |  | `m_ist` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_StatisticalKeyFigureCat` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_StstclKeyFigureHierNode` | | ✓ | | | | |
+| `_UserCrtedContactCard` | | ✓ | | | | |
+| `_LastChangedByUserContactCard` | | ✓ | | | | |
 
 ## Associations
 

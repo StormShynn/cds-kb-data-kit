@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SustainabilityModeOfTransport` | ✓ | |  | `cast( dd07l.domvalue_l as sufnd_vdm_susmodeoftransport )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SustainabilityModeOfTransport` | ✓ | |  | `cast( dd07l.domvalue_l as sufnd_vdm_susmodeoftransport )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

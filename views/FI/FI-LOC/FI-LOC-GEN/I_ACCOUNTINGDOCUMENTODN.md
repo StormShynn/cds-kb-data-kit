@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast(AFDFDocumentKey1 as bukrs )` |
-| `AccountingDocument` | ✓ | |  | `cast(AFDFDocumentKey2 as farp_belnr_d )` |
-| `FiscalYear` | ✓ | |  | `cast(AFDFDocumentKey3 as gjahr )` |
-| `OfficialDocumentNumberType` | ✓ | |  |  |
-| `AFDFUniqueKeyUUID` |  | |  |  |
-| `AFDFDocumentType` |  | |  |  |
-| `AFDFRecordType` |  | |  |  |
-| `OfficialDocumentNumberCountry` |  | |  |  |
-| `OfficialDocumentNumber` |  | |  |  |
-| `ODNLegalDateTimeText` |  | |  |  |
-| `OfficialDocumentNumberIntType` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast(AFDFDocumentKey1 as bukrs )` |  |  |
+| `AccountingDocument` | ✓ | |  | `cast(AFDFDocumentKey2 as farp_belnr_d )` |  |  |
+| `FiscalYear` | ✓ | |  | `cast(AFDFDocumentKey3 as gjahr )` |  |  |
+| `OfficialDocumentNumberType` | ✓ | |  |  |  |  |
+| `AFDFUniqueKeyUUID` |  | |  |  |  |  |
+| `AFDFDocumentType` |  | |  |  |  |  |
+| `AFDFRecordType` |  | |  |  |  |  |
+| `OfficialDocumentNumberCountry` |  | |  |  |  |  |
+| `OfficialDocumentNumber` |  | |  |  |  |  |
+| `ODNLegalDateTimeText` |  | |  |  |  |  |
+| `OfficialDocumentNumberIntType` |  | |  |  |  |  |
 
 ## Source Code
 

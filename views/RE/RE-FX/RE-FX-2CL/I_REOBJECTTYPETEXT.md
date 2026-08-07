@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `RealEstateObjectType` | ✓ | |  | `cast(obart as recaobjtype preserving type )` |
-| `REObjectTypePrefix` |  | |  | `obart_ld` |
-| `RealEstateObjectTypeName` |  | |  | `cast(txt20 as recavdmxobjtype preserving type )` |
-| `RealEstateObjectTypeDesc` |  | |  | `cast (txt60 as recadesc60 preserving type )` |
-| `_REObjectType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `RealEstateObjectType` | ✓ | |  | `cast(obart as recaobjtype preserving type )` |  |  |
+| `REObjectTypePrefix` |  | |  | `obart_ld` |  |  |
+| `RealEstateObjectTypeName` |  | |  | `cast(txt20 as recavdmxobjtype preserving type )` |  |  |
+| `RealEstateObjectTypeDesc` |  | |  | `cast (txt60 as recadesc60 preserving type )` |  |  |
+| `_REObjectType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

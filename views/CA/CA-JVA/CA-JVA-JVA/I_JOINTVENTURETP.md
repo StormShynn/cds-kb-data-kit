@@ -29,59 +29,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JointVenture` | ✓ | |  |  |
-| `JointVentureName` |  | |  |  |
-| `JointVenturePaymentTerms` |  | |  |  |
-| `JointVentureBillingMethod` |  | |  |  |
-| `JointVentureType` |  | |  |  |
-| `JointVentureOperator` |  | |  |  |
-| `JVAVentureClass` |  | |  |  |
-| `JntOpgAgrmt` |  | |  |  |
-| `JntVntrBillgCutbackIsBlk` |  | |  |  |
-| `JntVntrInceptionToDateData` |  | |  |  |
-| `JntVntrCurrentMonthBillg` |  | |  |  |
-| `JntVntrYearToDateBillg` |  | |  |  |
-| `JntVntrInceptionToDateBillg` |  | |  |  |
-| `JntVntrFundingGroup` |  | |  |  |
-| `JointVentureCreatedByUser` |  | |  |  |
-| `JntVntrTimeCreated` |  | |  |  |
-| `JntVntrDateCreated` |  | |  |  |
-| `JntVntrCreationDateTime` |  | |  |  |
-| `JointVentureLastChangedByUser` |  | |  |  |
-| `JntVntrTimeLastChanged` |  | |  |  |
-| `JntVntrDateLastChanged` |  | |  |  |
-| `JntVntrLastChangedDateTime` |  | |  |  |
-| `JntVntrBillgFrqcy` |  | |  |  |
-| `JntVntrBillgFormat` |  | |  |  |
-| `JntVntrNonBillgFormat` |  | |  |  |
-| `JointVentureTaxCode` |  | |  |  |
-| `JntVntrTaxJurisdiction` |  | |  |  |
-| `JntVntrOutTaxCode` |  | |  |  |
-| `JntVntrOutTaxJurisdiction` |  | |  |  |
-| `JntVntrOutPaymentTerms` |  | |  |  |
-| `JntVntrDrillingPayRate` |  | |  |  |
-| `JntVntrNonDrillingPayRate` |  | |  |  |
-| `JntVntrParentCoOvhdExpnCostCtr` |  | |  |  |
-| `JntVntrParentCoOvhdProject` |  | |  |  |
-| `JntVntrParentCoOvhdExpnOrder` |  | |  |  |
-| `JntVntrSubstituteCostCtr` |  | |  |  |
-| `JntVntrCrcyIsFundingCrcy` |  | |  |  |
-| `JntVntrProperty` |  | |  |  |
-| `Currency` |  | |  |  |
-| `JntVntrBillgThldDebit` |  | |  | `} JntVntrBillgThldDebit` |
-| `JntVntrBillgThldCredit` |  | |  | `} JntVntrBillgThldCredit` |
-| `JntVntrBillgThldIsActive` |  | |  |  |
-| `JntVntrPaymentTermSchema` |  | |  |  |
-| `JVAVentureIntrstCalcGrpID` |  | |  |  |
-| `_Currency` | | ✓ | | |
-| `_JointVentureEquityGroup` | | ✓ | | |
-| `_JointVentureDescription` | | ✓ | | |
-| `_JointVentureEquityType` | | ✓ | | |
-| `_JntVntrParCompanyOverhead` | | ✓ | | |
-| `_JntVntrOvhdBurdenRatePct` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JointVenture` | ✓ | |  |  |  |  |
+| `JointVentureName` |  | |  |  |  |  |
+| `JointVenturePaymentTerms` |  | |  |  |  |  |
+| `JointVentureBillingMethod` |  | |  |  |  |  |
+| `JointVentureType` |  | |  |  |  |  |
+| `JointVentureOperator` |  | |  |  |  |  |
+| `JVAVentureClass` |  | |  |  |  |  |
+| `JntOpgAgrmt` |  | |  |  |  |  |
+| `JntVntrBillgCutbackIsBlk` |  | |  |  |  |  |
+| `JntVntrInceptionToDateData` |  | |  |  |  |  |
+| `JntVntrCurrentMonthBillg` |  | |  |  |  |  |
+| `JntVntrYearToDateBillg` |  | |  |  |  |  |
+| `JntVntrInceptionToDateBillg` |  | |  |  |  |  |
+| `JntVntrFundingGroup` |  | |  |  |  |  |
+| `JointVentureCreatedByUser` |  | |  |  |  |  |
+| `JntVntrTimeCreated` |  | |  |  |  |  |
+| `JntVntrDateCreated` |  | |  |  |  |  |
+| `JntVntrCreationDateTime` |  | |  |  |  |  |
+| `JointVentureLastChangedByUser` |  | |  |  |  |  |
+| `JntVntrTimeLastChanged` |  | |  |  |  |  |
+| `JntVntrDateLastChanged` |  | |  |  |  |  |
+| `JntVntrLastChangedDateTime` |  | |  |  |  |  |
+| `JntVntrBillgFrqcy` |  | |  |  |  |  |
+| `JntVntrBillgFormat` |  | |  |  |  |  |
+| `JntVntrNonBillgFormat` |  | |  |  |  |  |
+| `JointVentureTaxCode` |  | |  |  |  |  |
+| `JntVntrTaxJurisdiction` |  | |  |  |  |  |
+| `JntVntrOutTaxCode` |  | |  |  |  |  |
+| `JntVntrOutTaxJurisdiction` |  | |  |  |  |  |
+| `JntVntrOutPaymentTerms` |  | |  |  |  |  |
+| `JntVntrDrillingPayRate` |  | |  |  |  |  |
+| `JntVntrNonDrillingPayRate` |  | |  |  |  |  |
+| `JntVntrParentCoOvhdExpnCostCtr` |  | |  |  |  |  |
+| `JntVntrParentCoOvhdProject` |  | |  |  |  |  |
+| `JntVntrParentCoOvhdExpnOrder` |  | |  |  |  |  |
+| `JntVntrSubstituteCostCtr` |  | |  |  |  |  |
+| `JntVntrCrcyIsFundingCrcy` |  | |  |  |  |  |
+| `JntVntrProperty` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `JntVntrBillgThldDebit` |  | |  |  |  |  |
+| `JntVntrBillgThldCredit` |  | |  |  |  |  |
+| `JntVntrBillgThldIsActive` |  | |  |  |  |  |
+| `JntVntrPaymentTermSchema` |  | |  |  |  |  |
+| `JVAVentureIntrstCalcGrpID` |  | |  |  |  |  |
+| `_Currency` | | ✓ | | | | |
+| `_JointVentureEquityGroup` | | ✓ | | | | |
+| `_JointVentureDescription` | | ✓ | | | | |
+| `_JointVentureEquityType` | | ✓ | | | | |
+| `_JntVntrParCompanyOverhead` | | ✓ | | | | |
+| `_JntVntrOvhdBurdenRatePct` | | ✓ | | | | |
 
 ## Source Code
 

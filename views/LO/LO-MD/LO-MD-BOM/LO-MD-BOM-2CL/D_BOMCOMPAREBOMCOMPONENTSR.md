@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ComparisonFieldName` |  | |  | `fieldname` |
-| `ComparisonFieldNameText` |  | |  | `as4text` |
-| `PrimaryBOMFieldValue` |  | |  | `bom_detail_field` |
-| `SecondaryBOMFieldValue` |  | |  | `bom_detail_field` |
-| `FieldIsRelevantFlag` |  | |  | `cs_comparison_type` |
-| `FieldIsDifferentFlag` |  | |  | `cs_comparison_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ComparisonFieldName` |  | |  | `fieldname` |  |  |
+| `ComparisonFieldNameText` |  | |  | `as4text` |  |  |
+| `PrimaryBOMFieldValue` |  | |  | `bom_detail_field` |  |  |
+| `SecondaryBOMFieldValue` |  | |  | `bom_detail_field` |  |  |
+| `FieldIsRelevantFlag` |  | |  | `cs_comparison_type` |  |  |
+| `FieldIsDifferentFlag` |  | |  | `cs_comparison_type` |  |  |
 
 ## Source Code
 

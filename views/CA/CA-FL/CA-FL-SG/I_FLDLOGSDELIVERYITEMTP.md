@@ -31,64 +31,64 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsShptItemUUID` | ✓ | |  |  |
-| `FldLogsReferenceDocCategory` |  | |  |  |
-| `DeliveryDocument` |  | |  |  |
-| `DeliveryDocumentItem` |  | |  |  |
-| `FldLogsReferenceDocumentNumber` |  | |  |  |
-| `FldLogsShptItmWrkOrdItmID` |  | |  |  |
-| `FldLogsShptItmProjDmndItmID` |  | |  |  |
-| `FldLogsShptItmSTOItmID` |  | |  |  |
-| `FldLogsShptItmOutbDelivItmID` |  | |  |  |
-| `FldLogsShptItmODOItemID` |  | |  |  |
-| `FldLogsShptItmHndlgUnitID` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `PackagingMaterial` |  | |  |  |
-| `GrossVolume` |  | |  |  |
-| `VolumeUnit` |  | |  |  |
-| `GrossWeight` |  | |  |  |
-| `WeightUnit` |  | |  |  |
-| `MaterialName` |  | |  |  |
-| `FldLogsContainerUnitUUID` |  | |  |  |
-| `FldLogsShptItmStsCode` |  | |  |  |
-| `FldLogsShptItmStsText` |  | |  |  |
-| `FldLogsSrceStorLocID` |  | |  |  |
-| `FldLogsSrcePlnt` |  | |  |  |
-| `FldLogsDestStorLocID` |  | |  |  |
-| `FldLogsDestPlnt` |  | |  |  |
-| `FldLogsDelivDueDate` |  | |  |  |
-| `FldLogsGrossVolume` |  | |  |  |
-| `FldLogsGrossVolumeUnit` |  | |  |  |
-| `ProductGrossWeight` |  | |  |  |
-| `ProductWeightUnit` |  | |  |  |
-| `QuantityInBaseUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `FldLogsShptItmChangedDateTime` |  | |  |  |
-| `FldLogsContainerID` |  | |  |  |
-| `FldLogsShptItemActualWeight` |  | |  |  |
-| `FldLogsShptItemActlWeightUnit` |  | |  |  |
-| `ValuationType` |  | |  |  |
-| `FldLogsShipmentItemTypeCode` |  | |  |  |
-| `FldLogsShptItmIsAssgdToCtn` |  | |  |  |
-| `HandlingUnitIsDsp` |  | |  |  |
-| `FldLogsShptItmIsAssgdToVoy` |  | |  |  |
-| `FldLogsVoyageSrceStage` |  | |  |  |
-| `FldLogsVoyageDestStage` |  | |  |  |
-| `FldLogsVoyAssgmtStatusCritlty` |  | |  |  |
-| `FldLogsVoyageAssignmentStatus` |  | |  |  |
-| `FldLogsVoyAssgmtStatusText` |  | |  |  |
-| `FldLogsShptItemCurrentPlant` |  | |  |  |
-| `FldLogsShptItemCurShipgPoint` |  | |  |  |
-| `FldLogsShptItemActnID` |  | |  |  |
-| `FldLogsCtnPackgStsCode` |  | |  |  |
-| `FieldLogisticsKitIdentifier` |  | |  |  |
-| `Material` |  | |  |  |
-| `_ShptStgeAssgmt` | | ✓ | | |
-| `_ShptHandlingUnitItem` | | ✓ | | |
-| `_SrcePlantText` | | ✓ | | |
-| `_DestPlantText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsShptItemUUID` | ✓ | |  |  |  |  |
+| `FldLogsReferenceDocCategory` |  | |  |  |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `DeliveryDocumentItem` |  | |  |  |  |  |
+| `FldLogsReferenceDocumentNumber` |  | |  |  |  |  |
+| `FldLogsShptItmWrkOrdItmID` |  | |  |  |  |  |
+| `FldLogsShptItmProjDmndItmID` |  | |  |  |  |  |
+| `FldLogsShptItmSTOItmID` |  | |  |  |  |  |
+| `FldLogsShptItmOutbDelivItmID` |  | |  |  |  |  |
+| `FldLogsShptItmODOItemID` |  | |  |  |  |  |
+| `FldLogsShptItmHndlgUnitID` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `PackagingMaterial` |  | |  |  |  |  |
+| `GrossVolume` |  | |  |  |  |  |
+| `VolumeUnit` |  | |  |  |  |  |
+| `GrossWeight` |  | |  |  |  |  |
+| `WeightUnit` |  | |  |  |  |  |
+| `MaterialName` |  | |  |  |  |  |
+| `FldLogsContainerUnitUUID` |  | |  |  |  |  |
+| `FldLogsShptItmStsCode` |  | |  |  |  |  |
+| `FldLogsShptItmStsText` |  | |  |  |  |  |
+| `FldLogsSrceStorLocID` |  | |  |  |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |  |  |
+| `FldLogsDestStorLocID` |  | |  |  |  |  |
+| `FldLogsDestPlnt` |  | |  |  |  |  |
+| `FldLogsDelivDueDate` |  | |  |  |  |  |
+| `FldLogsGrossVolume` |  | |  |  |  |  |
+| `FldLogsGrossVolumeUnit` |  | |  |  |  |  |
+| `ProductGrossWeight` |  | |  |  |  |  |
+| `ProductWeightUnit` |  | |  |  |  |  |
+| `QuantityInBaseUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `FldLogsShptItmChangedDateTime` |  | |  |  |  |  |
+| `FldLogsContainerID` |  | |  |  |  |  |
+| `FldLogsShptItemActualWeight` |  | |  |  |  |  |
+| `FldLogsShptItemActlWeightUnit` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `FldLogsShipmentItemTypeCode` |  | |  |  |  |  |
+| `FldLogsShptItmIsAssgdToCtn` |  | |  |  |  |  |
+| `HandlingUnitIsDsp` |  | |  |  |  |  |
+| `FldLogsShptItmIsAssgdToVoy` |  | |  |  |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |  |  |
+| `FldLogsVoyAssgmtStatusCritlty` |  | |  |  |  |  |
+| `FldLogsVoyageAssignmentStatus` |  | |  |  |  |  |
+| `FldLogsVoyAssgmtStatusText` |  | |  |  |  |  |
+| `FldLogsShptItemCurrentPlant` |  | |  |  |  |  |
+| `FldLogsShptItemCurShipgPoint` |  | |  |  |  |  |
+| `FldLogsShptItemActnID` |  | |  |  |  |  |
+| `FldLogsCtnPackgStsCode` |  | |  |  |  |  |
+| `FieldLogisticsKitIdentifier` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `_ShptStgeAssgmt` | | ✓ | | | | |
+| `_ShptHandlingUnitItem` | | ✓ | | | | |
+| `_SrcePlantText` | | ✓ | | | | |
+| `_DestPlantText` | | ✓ | | | | |
 
 ## Source Code
 

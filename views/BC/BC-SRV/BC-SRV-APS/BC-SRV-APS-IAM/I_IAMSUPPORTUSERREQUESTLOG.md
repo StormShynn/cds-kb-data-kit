@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAMSupportUserRequestUUID` | ✓ | | `_SupportUserRequestLog` | `UUID` |
-| `CAMSuppUserValdtyStartDateTime` |  | | `_SupportUserRequestLog` | `RequestedAt` |
-| `CAMSupportUser` |  | | `_SupportUserRequestLog` | `Bname` |
-| `CAMSupportAccessLevel` |  | | `_SupportUserRequestLog` | `AccessLevelID` |
-| `CAMSupportAccessCategory` |  | | `_SupportUserRequestLog` | `AccessCategory` |
-| `CAMSupportAccessCategoryText` |  | | `_AccessCategory` | `ddtext` |
-| `CAMSuppAddedAuthorizationMode` |  | | `_SupportUserRequestLog` | `AbaMode` |
-| `CAMSuppAddedAuthznModeText` |  | | `_AbaMode` | `ddtext` |
-| `CAMSuppAddedAuthorizationUser` |  | | `_SupportUserRequestLog` | `AbaBname` |
-| `CAMSupportIncident` |  | | `_SupportUserRequestLog` | `IncidentID` |
-| `CAMSupportIncidentSystem` |  | | `_SupportUserRequestLog` | `IncidentSystemType` |
-| `CAMSupportIncidentSystemText` |  | | `_IncidentSystemType` | `ddtext` |
-| `CAMSupportIncidentSystemNumber` |  | | `_SupportUserRequestLog` | `IncidentSystemNumber` |
-| `CAMSupportIncidentTicketNumber` |  | | `_SupportUserRequestLog` | `IncidentNumber` |
-| `CAMSupportIncidentTicketYear` |  | | `_SupportUserRequestLog` | `IncidentYear` |
-| `CAMSuppUserValdtyEndDateTime` |  | | `_SupportUserRequestLog` | `ValidTo` |
-| `_SupportUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAMSupportUserRequestUUID` | ✓ | | `_SupportUserRequestLog` | `UUID` |  |  |
+| `CAMSuppUserValdtyStartDateTime` |  | | `_SupportUserRequestLog` | `RequestedAt` |  |  |
+| `CAMSupportUser` |  | | `_SupportUserRequestLog` | `Bname` |  |  |
+| `CAMSupportAccessLevel` |  | | `_SupportUserRequestLog` | `AccessLevelID` |  |  |
+| `CAMSupportAccessCategory` |  | | `_SupportUserRequestLog` | `AccessCategory` |  |  |
+| `CAMSupportAccessCategoryText` |  | | `_AccessCategory` | `ddtext` |  |  |
+| `CAMSuppAddedAuthorizationMode` |  | | `_SupportUserRequestLog` | `AbaMode` |  |  |
+| `CAMSuppAddedAuthznModeText` |  | | `_AbaMode` | `ddtext` |  |  |
+| `CAMSuppAddedAuthorizationUser` |  | | `_SupportUserRequestLog` | `AbaBname` |  |  |
+| `CAMSupportIncident` |  | | `_SupportUserRequestLog` | `IncidentID` |  |  |
+| `CAMSupportIncidentSystem` |  | | `_SupportUserRequestLog` | `IncidentSystemType` |  |  |
+| `CAMSupportIncidentSystemText` |  | | `_IncidentSystemType` | `ddtext` |  |  |
+| `CAMSupportIncidentSystemNumber` |  | | `_SupportUserRequestLog` | `IncidentSystemNumber` |  |  |
+| `CAMSupportIncidentTicketNumber` |  | | `_SupportUserRequestLog` | `IncidentNumber` |  |  |
+| `CAMSupportIncidentTicketYear` |  | | `_SupportUserRequestLog` | `IncidentYear` |  |  |
+| `CAMSuppUserValdtyEndDateTime` |  | | `_SupportUserRequestLog` | `ValidTo` |  |  |
+| `_SupportUser` | | ✓ | | | | |
 
 ## Associations
 

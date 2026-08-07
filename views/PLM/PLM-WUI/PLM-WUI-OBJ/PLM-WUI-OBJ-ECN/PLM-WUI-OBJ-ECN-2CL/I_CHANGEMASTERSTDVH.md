@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumber` | ✓ | |  |  |
-| `ChangeNumberDescription` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `ChangeNumberFunction` |  | |  |  |
-| `ChangeNumberReleaseKey` |  | |  |  |
-| `ChangeNumberStatus` |  | |  |  |
-| `ChangeNumberIsMrkdForDeletion` |  | |  |  |
-| `ChangeNumberValidFromDate` |  | |  |  |
-| `_LogAccMObjectTypeActive` | | ✓ | | |
-| `_LogAccMObjectUserAuthzn` | | ✓ | | |
-| `_LogAccMObjSecureIDAssgmt` | | ✓ | | |
-| `_ChangeMasterLogAccMActive` | | ✓ | | |
-| `_ChgMstrLogAccMSecureIDAssgmt` | | ✓ | | |
-| `_ChangeMstrLogAccMUserAuthzn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ChangeNumberDescription` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `ChangeNumberFunction` |  | |  |  |  |  |
+| `ChangeNumberReleaseKey` |  | |  |  |  |  |
+| `ChangeNumberStatus` |  | |  |  |  |  |
+| `ChangeNumberIsMrkdForDeletion` |  | |  |  |  |  |
+| `ChangeNumberValidFromDate` |  | |  |  |  |  |
+| `_LogAccMObjectTypeActive` | | ✓ | | | | |
+| `_LogAccMObjectUserAuthzn` | | ✓ | | | | |
+| `_LogAccMObjSecureIDAssgmt` | | ✓ | | | | |
+| `_ChangeMasterLogAccMActive` | | ✓ | | | | |
+| `_ChgMstrLogAccMSecureIDAssgmt` | | ✓ | | | | |
+| `_ChangeMstrLogAccMUserAuthzn` | | ✓ | | | | |
 
 ## Source Code
 

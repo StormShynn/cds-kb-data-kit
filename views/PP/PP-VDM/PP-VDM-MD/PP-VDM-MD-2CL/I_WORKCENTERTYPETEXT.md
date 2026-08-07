@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenterTypeCode` | ✓ | |  | `ProductionResourceType` |
-| `Language` | ✓ | |  |  |
-| `WorkCenterTypeName` |  | |  | `ProductionResourceTypeName` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterTypeCode` | ✓ | |  | `ProductionResourceType` |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `WorkCenterTypeName` |  | |  | `ProductionResourceTypeName` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

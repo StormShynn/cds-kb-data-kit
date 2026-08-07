@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventBasedProcessingKey` | ✓ | |  | `ebw_key` |
-| `EventBasedWIPCalculationMethod` |  | |  | `ebw_method` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventBasedProcessingKey` | ✓ | |  | `ebw_key` |  |  |
+| `EventBasedWIPCalculationMethod` |  | |  | `ebw_method` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

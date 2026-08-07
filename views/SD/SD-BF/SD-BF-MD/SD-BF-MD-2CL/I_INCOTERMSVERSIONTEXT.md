@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IncotermsVersion` | ✓ | |  | `incov` |
-| `Language` | ✓ | |  | `spras` |
-| `IncotermsVersionName` |  | |  | `bezei` |
-| `_IncotermsVersion` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncotermsVersion` | ✓ | |  | `incov` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `IncotermsVersionName` |  | |  | `bezei` |  |  |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

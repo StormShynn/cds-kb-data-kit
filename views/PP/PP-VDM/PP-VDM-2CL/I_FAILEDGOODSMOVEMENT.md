@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FailedGoodsMovement` | ✓ | |  | `cast(affw.GoodsMovementException as pph_weblnr preserving type)` |
-| `OrderCategory` |  | |  | `cast(affw.OrderCategory as pph_autyp preserving type)` |
-| `_FailedGoodsMovementItem` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FailedGoodsMovement` | ✓ | |  | `cast(affw.GoodsMovementException as pph_weblnr preserving type)` |  |  |
+| `OrderCategory` |  | |  | `cast(affw.OrderCategory as pph_autyp preserving type)` |  |  |
+| `_FailedGoodsMovementItem` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ProjectDemandLastUpdateSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as tv_proj_dmnd_upd_source )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ProjDmndLastUpdateSourceText` |  | |  | `cast ( ddtext as tv_proj_dmnd_upd_src_txt )` |
-| `_Language` | | ✓ | | |
-| `_UpdateSource` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ProjectDemandLastUpdateSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as tv_proj_dmnd_upd_source )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ProjDmndLastUpdateSourceText` |  | |  | `cast ( ddtext as tv_proj_dmnd_upd_src_txt )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_UpdateSource` | | ✓ | | | | |
 
 ## Associations
 

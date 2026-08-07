@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPaymentBillingStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as xsett_kk preserving type )` |
-| `_CAPaymentBillingStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPaymentBillingStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as xsett_kk preserving type )` |  |  |
+| `_CAPaymentBillingStatusText` | | ✓ | | | | |
 
 ## Associations
 

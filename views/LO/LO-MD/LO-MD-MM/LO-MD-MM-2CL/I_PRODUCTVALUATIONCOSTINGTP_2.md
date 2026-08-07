@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ValuationArea` | ✓ | |  |  |
-| `ValuationType` | ✓ | |  |  |
-| `ProductIsCostedWithQtyStruc` |  | |  |  |
-| `IsMaterialRelatedOrigin` |  | |  |  |
-| `CostOriginGroup` |  | |  |  |
-| `CostingOverheadGroup` |  | |  |  |
-| `PlannedPrice1InCoCodeCrcy` |  | |  |  |
-| `PlannedPrice2InCoCodeCrcy` |  | |  |  |
-| `PlannedPrice3InCoCodeCrcy` |  | |  |  |
-| `FuturePlndPrice1ValdtyDate` |  | |  |  |
-| `FuturePlndPrice2ValdtyDate` |  | |  |  |
-| `FuturePlndPrice3ValdtyDate` |  | |  |  |
-| `Currency` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProductValuation` | | ✓ | | |
-| `_CostOriginGroupText` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ValuationArea` | ✓ | |  |  |  |  |
+| `ValuationType` | ✓ | |  |  |  |  |
+| `ProductIsCostedWithQtyStruc` |  | |  |  |  |  |
+| `IsMaterialRelatedOrigin` |  | |  |  |  |  |
+| `CostOriginGroup` |  | |  |  |  |  |
+| `CostingOverheadGroup` |  | |  |  |  |  |
+| `PlannedPrice1InCoCodeCrcy` |  | |  |  |  |  |
+| `PlannedPrice2InCoCodeCrcy` |  | |  |  |  |  |
+| `PlannedPrice3InCoCodeCrcy` |  | |  |  |  |  |
+| `FuturePlndPrice1ValdtyDate` |  | |  |  |  |  |
+| `FuturePlndPrice2ValdtyDate` |  | |  |  |  |  |
+| `FuturePlndPrice3ValdtyDate` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductValuation` | | ✓ | | | | |
+| `_CostOriginGroupText` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
 
 ## Source Code
 

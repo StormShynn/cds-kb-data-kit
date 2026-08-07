@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumberStatus` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ChangeNumberStatusText` |  | |  |  |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberStatus` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ChangeNumberStatusText` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Source Code
 

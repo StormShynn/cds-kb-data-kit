@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `CreditSegment` | ✓ | |  | `cast( credit_sgmnt as ukm_credit_sgmnt preserving type )` |
-| `CreditSegmentCurrency` |  | | `_CreditSegment` | `CreditSegmentCurrency` |
-| `CustomerCreditLimitAmount` |  | |  | `credit_limit` |
-| `CreditLimitCalculatedAmount` |  | |  | `cred_lim_calc` |
-| `CreditLimitRequestedAmount` |  | |  | `cred_lim_req` |
-| `CreditAccountIsBlocked` |  | |  | `xblocked` |
-| `CreditLimitValidityEndDate` |  | |  | `limit_valid_date` |
-| `CreditLimitLastChangeDate` |  | |  | `limit_chg_date` |
-| `CreditCoordinator` |  | |  | `coordinator` |
-| `CreditAccountResubmissionDate` |  | |  | `follow_up_dt` |
-| `BusinessPartnerIsCritical` |  | |  | `cast( xcritical as ukm_critical_account preserving type )` |
-| `CreditLimitIsZero` |  | |  | `x_limit_zero` |
-| `CreditAccountBlockReason` |  | |  | `block_reason` |
-| `CrdtLmtIsReqdFrmAutomCalc` |  | |  | `automatic_req` |
-| `CreditLimitReqdValidityEndDate` |  | |  | `lim_val_date_req` |
-| `CreditLimitRequestDate` |  | |  | `req_date` |
-| `_BusinessPartner` | | ✓ | | |
-| `_CreditAccount` | | ✓ | | |
-| `_CreditSegment` | | ✓ | | |
-| `_CreditBlockReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `CreditSegment` | ✓ | |  | `cast( credit_sgmnt as ukm_credit_sgmnt preserving type )` |  |  |
+| `CreditSegmentCurrency` |  | | `_CreditSegment` | `CreditSegmentCurrency` |  |  |
+| `CustomerCreditLimitAmount` |  | |  | `credit_limit` |  |  |
+| `CreditLimitCalculatedAmount` |  | |  | `cred_lim_calc` |  |  |
+| `CreditLimitRequestedAmount` |  | |  | `cred_lim_req` |  |  |
+| `CreditAccountIsBlocked` |  | |  | `xblocked` |  |  |
+| `CreditLimitValidityEndDate` |  | |  | `limit_valid_date` |  |  |
+| `CreditLimitLastChangeDate` |  | |  | `limit_chg_date` |  |  |
+| `CreditCoordinator` |  | |  | `coordinator` |  |  |
+| `CreditAccountResubmissionDate` |  | |  | `follow_up_dt` |  |  |
+| `BusinessPartnerIsCritical` |  | |  | `cast( xcritical as ukm_critical_account preserving type )` |  |  |
+| `CreditLimitIsZero` |  | |  | `x_limit_zero` |  |  |
+| `CreditAccountBlockReason` |  | |  | `block_reason` |  |  |
+| `CrdtLmtIsReqdFrmAutomCalc` |  | |  | `automatic_req` |  |  |
+| `CreditLimitReqdValidityEndDate` |  | |  | `lim_val_date_req` |  |  |
+| `CreditLimitRequestDate` |  | |  | `req_date` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CreditAccount` | | ✓ | | | | |
+| `_CreditSegment` | | ✓ | | | | |
+| `_CreditBlockReason` | | ✓ | | | | |
 
 ## Associations
 

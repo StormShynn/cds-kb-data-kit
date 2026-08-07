@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyClaimCoverageType` | ✓ | |  | `cast( domvalue_l as wty_coverage_type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyClaimCoverageType` | ✓ | |  | `cast( domvalue_l as wty_coverage_type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

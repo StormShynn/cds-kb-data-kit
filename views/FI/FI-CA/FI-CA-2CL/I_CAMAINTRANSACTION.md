@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |
-| `CAMainTransaction` | ✓ | |  | `hvorg` |
-| `_ApplArea` |  | |  | `_CAApplicationArea` |
-| `_CAApplicationArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
+| `CAMainTransaction` | ✓ | |  | `hvorg` |  |  |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

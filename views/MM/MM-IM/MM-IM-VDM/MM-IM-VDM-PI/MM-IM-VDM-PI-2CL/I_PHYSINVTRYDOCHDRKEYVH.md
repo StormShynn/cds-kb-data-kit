@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PhysicalInventoryDocument` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `Plant` |  | |  |  |
-| `_PhysInvtryDocHdrFiscalYearVH` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhysicalInventoryDocument` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `_PhysInvtryDocHdrFiscalYearVH` | | ✓ | | | | |
 
 ## Associations
 

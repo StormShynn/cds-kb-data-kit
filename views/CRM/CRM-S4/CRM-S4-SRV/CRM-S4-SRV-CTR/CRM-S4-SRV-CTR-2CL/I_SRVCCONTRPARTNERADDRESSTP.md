@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `CustMgmtPartnerFunction` | ✓ | |  |  |
-| `CustMgmtBusinessPartner` | ✓ | |  |  |
-| `CityName` |  | |  |  |
-| `Country` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `FaxAreaCodeSubscriberNumber` |  | |  |  |
-| `FaxExtensionNumber` |  | |  |  |
-| `FaxNumberCountry` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `MobileNumber` |  | |  |  |
-| `MobilePhoneCountry` |  | |  |  |
-| `OrganizationName1` |  | |  |  |
-| `OrganizationName2` |  | |  |  |
-| `OrganizationName3` |  | |  |  |
-| `OrganizationName4` |  | |  |  |
-| `PhoneExtensionNumber` |  | |  |  |
-| `PhoneNumber` |  | |  |  |
-| `PhoneNumberCountry` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `Region` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `_SrvcContrPartnerTP` | | ✓ | | |
-| `_ServiceContractTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |  |  |
+| `FaxExtensionNumber` |  | |  |  |  |  |
+| `FaxNumberCountry` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `MobileNumber` |  | |  |  |  |  |
+| `MobilePhoneCountry` |  | |  |  |  |  |
+| `OrganizationName1` |  | |  |  |  |  |
+| `OrganizationName2` |  | |  |  |  |  |
+| `OrganizationName3` |  | |  |  |  |  |
+| `OrganizationName4` |  | |  |  |  |  |
+| `PhoneExtensionNumber` |  | |  |  |  |  |
+| `PhoneNumber` |  | |  |  |  |  |
+| `PhoneNumberCountry` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `_SrvcContrPartnerTP` | | ✓ | | | | |
+| `_ServiceContractTP` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPGroup` | ✓ | |  | `mtart` |
-| `MRPPlant` | ✓ | |  | `werks` |
-| `_MRPPlant` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPGroup` | ✓ | |  | `mtart` |  |  |
+| `MRPPlant` | ✓ | |  | `werks` |  |  |
+| `_MRPPlant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

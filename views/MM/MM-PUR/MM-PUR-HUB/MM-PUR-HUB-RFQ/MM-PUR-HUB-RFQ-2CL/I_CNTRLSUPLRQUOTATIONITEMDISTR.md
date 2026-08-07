@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralSupplierQuotation` | ✓ | |  |  |
-| `CentralSupplierQuotationItem` | ✓ | |  |  |
-| `DistributionKey` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `Currency` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `CntrlPurgDistributionInPercent` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetAmount` |  | |  |  |
-| `PurgDocItemDistributionStatus` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `PurgDocItmDistrLineDeltnCode` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `DistributionType` |  | |  |  |
-| `DistrResponseMessageUUID` |  | |  |  |
-| `ItemDistributionIsRelevant` |  | |  |  |
-| `PurgDocItemDistrRelevanceCode` |  | |  |  |
-| `ReferenceHeaderDistributionKey` |  | |  |  |
-| `ProcurementHubSourceSystem` |  | |  |  |
-| `ProcmtHubPurchaseRequisition` |  | |  |  |
-| `ProcmtHubPurRequisitionItem` |  | |  |  |
-| `PurReqnReleaseStatus` |  | |  |  |
-| `_CentralSupplierQuotation` | | ✓ | | |
-| `_CntrlSupplierQuotationItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralSupplierQuotation` | ✓ | |  |  |  |  |
+| `CentralSupplierQuotationItem` | ✓ | |  |  |  |  |
+| `DistributionKey` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `CntrlPurgDistributionInPercent` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetAmount` |  | |  |  |  |  |
+| `PurgDocItemDistributionStatus` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `PurgDocItmDistrLineDeltnCode` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `DistributionType` |  | |  |  |  |  |
+| `DistrResponseMessageUUID` |  | |  |  |  |  |
+| `ItemDistributionIsRelevant` |  | |  |  |  |  |
+| `PurgDocItemDistrRelevanceCode` |  | |  |  |  |  |
+| `ReferenceHeaderDistributionKey` |  | |  |  |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |  |  |
+| `ProcmtHubPurchaseRequisition` |  | |  |  |  |  |
+| `ProcmtHubPurRequisitionItem` |  | |  |  |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |  |  |
+| `_CentralSupplierQuotation` | | ✓ | | | | |
+| `_CntrlSupplierQuotationItem` | | ✓ | | | | |
 
 ## Associations
 

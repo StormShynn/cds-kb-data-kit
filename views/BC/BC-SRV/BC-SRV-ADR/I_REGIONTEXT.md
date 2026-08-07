@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |
-| `Region` | ✓ | |  | `bland` |
-| `Language` | ✓ | |  | `spras` |
-| `RegionName` |  | |  | `bezei` |
-| `_Region` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Country` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |  |  |
+| `Region` | ✓ | |  | `bland` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `RegionName` |  | |  | `bezei` |  |  |
+| `_Region` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
 
 ## Associations
 

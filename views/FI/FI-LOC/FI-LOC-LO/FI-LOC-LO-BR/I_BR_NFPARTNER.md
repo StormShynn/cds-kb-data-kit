@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NotaFiscal` | ✓ | |  | `docnum` |
-| `BR_NFPartnerFunction` | ✓ | |  | `cast(NFPartner.parvw as logbr_parvw preserving type)` |
-| `BR_NFPartner` |  | |  | `parid` |
-| `BR_NFPartnerTitle` |  | |  | `cast(NFPartner.anred as logbr_anred preserving type)` |
-| `BR_NFPartnerName1` |  | |  | `name1` |
-| `BR_NFPartnerName2` |  | |  | `name2` |
-| `BR_NFPartnerName3` |  | |  | `name3` |
-| `BR_NFPartnerName4` |  | |  | `name4` |
-| `BR_NFPartnerType` |  | |  | `cast(NFPartner.partyp as logbr_nfpartnertype preserving type)` |
-| `BR_NFPartnerStreetName` |  | |  | `stras` |
-| `BR_NFPartnerCityName` |  | |  | `ort01` |
-| `BR_NFPartnerRegionCode` |  | |  | `regio` |
-| `BR_NFPartnerDistrictName` |  | |  | `ort02` |
-| `BR_NFPartnerCountryCode` |  | |  | `land1` |
-| `BR_NFPartnerPostalCode` |  | |  | `pstlz` |
-| `BR_NFPartnerCFOPCategory` |  | |  | `cast(NFPartner.indust as logbr_indus1 preserving type)` |
-| `BR_NFPartnerIsNaturalPerson` |  | |  | `stkzn` |
-| `BR_NFPartnerCNPJ` |  | |  | `cast(case when NFPartner.cgc > '99999999999999' then '00000000000000' else NFPartner.cgc end as logbr_cnpj_numc )` |
-| `BR_NFPartnerCNPJ_2` |  | |  | `cast(NFPartner.cgc as logbr_cnpj preserving type)` |
-| `BR_NFPartnerCPF` |  | |  | `cast(NFPartner.cpf as logbr_cpf preserving type)` |
-| `PhoneNumber` |  | |  | `telf1` |
-| `BR_NFPartnerStateTaxNumber` |  | |  | `stains` |
-| `BR_NFPartnerMunicipalTaxNumber` |  | |  | `cast(NFPartner.munins as logbr_munins preserving type)` |
-| `TaxJurisdiction` |  | |  | `cast(NFPartner.txjcd as logbr_txjcd preserving type)` |
-| `BR_CTeFiscalDocumentPartner` |  | |  | `cte_partner` |
-| `BR_NFPartnerPlaceType` |  | |  | `cast(NFPartner.partner_role as logbr_part_role preserving type )` |
-| `IsBusinessPurposeCompleted` |  | |  | `case when _Supplier.IsBusinessPurposeCompleted = 'X' or _Customer.IsBusinessPurposeCompleted = 'X' then 'X' else '' end` |
-| `CountryShortName` |  | | `_CountryText` | `CountryShortName` |
-| `_BR_NFPartnerType` | | ✓ | | |
-| `_BR_PartnerPlaceType` | | ✓ | | |
-| `_BR_CTeFiscalDocPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |  |  |
+| `BR_NFPartnerFunction` | ✓ | |  | `cast(NFPartner.parvw as logbr_parvw preserving type)` |  |  |
+| `BR_NFPartner` |  | |  | `parid` |  |  |
+| `BR_NFPartnerTitle` |  | |  | `cast(NFPartner.anred as logbr_anred preserving type)` |  |  |
+| `BR_NFPartnerName1` |  | |  | `name1` |  |  |
+| `BR_NFPartnerName2` |  | |  | `name2` |  |  |
+| `BR_NFPartnerName3` |  | |  | `name3` |  |  |
+| `BR_NFPartnerName4` |  | |  | `name4` |  |  |
+| `BR_NFPartnerType` |  | |  | `cast(NFPartner.partyp as logbr_nfpartnertype preserving type)` |  |  |
+| `BR_NFPartnerStreetName` |  | |  | `stras` |  |  |
+| `BR_NFPartnerCityName` |  | |  | `ort01` |  |  |
+| `BR_NFPartnerRegionCode` |  | |  | `regio` |  |  |
+| `BR_NFPartnerDistrictName` |  | |  | `ort02` |  |  |
+| `BR_NFPartnerCountryCode` |  | |  | `land1` |  |  |
+| `BR_NFPartnerPostalCode` |  | |  | `pstlz` |  |  |
+| `BR_NFPartnerCFOPCategory` |  | |  | `cast(NFPartner.indust as logbr_indus1 preserving type)` |  |  |
+| `BR_NFPartnerIsNaturalPerson` |  | |  | `stkzn` |  |  |
+| `BR_NFPartnerCNPJ` |  | |  | `cast(case when NFPartner.cgc > '99999999999999' then '00000000000000' else NFPartner.cgc end as logbr_cnpj_numc )` |  |  |
+| `BR_NFPartnerCNPJ_2` |  | |  | `cast(NFPartner.cgc as logbr_cnpj preserving type)` |  |  |
+| `BR_NFPartnerCPF` |  | |  | `cast(NFPartner.cpf as logbr_cpf preserving type)` |  |  |
+| `PhoneNumber` |  | |  | `telf1` |  |  |
+| `BR_NFPartnerStateTaxNumber` |  | |  | `stains` |  |  |
+| `BR_NFPartnerMunicipalTaxNumber` |  | |  | `cast(NFPartner.munins as logbr_munins preserving type)` |  |  |
+| `TaxJurisdiction` |  | |  | `cast(NFPartner.txjcd as logbr_txjcd preserving type)` |  |  |
+| `BR_CTeFiscalDocumentPartner` |  | |  | `cte_partner` |  |  |
+| `BR_NFPartnerPlaceType` |  | |  | `cast(NFPartner.partner_role as logbr_part_role preserving type )` |  |  |
+| `IsBusinessPurposeCompleted` |  | |  | `case when _Supplier.IsBusinessPurposeCompleted = 'X' or _Customer.IsBusinessPurposeCompleted = 'X' then 'X' else '' end` |  |  |
+| `CountryShortName` |  | | `_CountryText` | `CountryShortName` |  |  |
+| `_BR_NFPartnerType` | | ✓ | | | | |
+| `_BR_PartnerPlaceType` | | ✓ | | | | |
+| `_BR_CTeFiscalDocPartner` | | ✓ | | | | |
 
 ## Associations
 

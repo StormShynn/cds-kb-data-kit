@@ -31,54 +31,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectElementUUID` | ✓ | |  |  |
-| `ProjectElement` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ProjectElementDescription` |  | |  |  |
-| `ParentObjectUUID` |  | |  |  |
-| `ProjectElementOrdinalNumber` |  | |  |  |
-| `ProcessingStatus` |  | |  |  |
-| `EntProjectElementType` |  | |  |  |
-| `PlannedStartDate` |  | |  |  |
-| `PlannedEndDate` |  | |  |  |
-| `ActualStartDate` |  | |  |  |
-| `ActualEndDate` |  | |  |  |
-| `ResponsibleCostCenter` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Location` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `CostingSheet` |  | |  |  |
-| `InvestmentProfile` |  | |  |  |
-| `WBSIsStatisticalWBSElement` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `WBSElementIsBillingElement` |  | |  |  |
-| `ResultAnalysisInternalID` |  | |  |  |
-| `IsProjectMilestone` |  | |  |  |
-| `ForecastedEndDate` |  | |  |  |
-| `MilestoneApprovalStatus` |  | |  |  |
-| `IsMainMilestone` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_EnterpriseProject` | | ✓ | | |
-| `_SubProjElement` | | ✓ | | |
-| `_ParentProjElement` | | ✓ | | |
-| `_EntProjectElementJVA` | | ✓ | | |
-| `_EntProjElmntBlkFunc` | | ✓ | | |
-| `_EntProjectElmntPublicSector` | | ✓ | | |
-| `_EntProjElmntDlvbrl` | | ✓ | | |
-| `_EntProjElmntWorkItem` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectElementUUID` | ✓ | |  |  |  |  |
+| `ProjectElement` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ProjectElementDescription` |  | |  |  |  |  |
+| `ParentObjectUUID` |  | |  |  |  |  |
+| `ProjectElementOrdinalNumber` |  | |  |  |  |  |
+| `ProcessingStatus` |  | |  |  |  |  |
+| `EntProjectElementType` |  | |  |  |  |  |
+| `PlannedStartDate` |  | |  |  |  |  |
+| `PlannedEndDate` |  | |  |  |  |  |
+| `ActualStartDate` |  | |  |  |  |  |
+| `ActualEndDate` |  | |  |  |  |  |
+| `ResponsibleCostCenter` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Location` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `CostingSheet` |  | |  |  |  |  |
+| `InvestmentProfile` |  | |  |  |  |  |
+| `WBSIsStatisticalWBSElement` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `WBSElementIsBillingElement` |  | |  |  |  |  |
+| `ResultAnalysisInternalID` |  | |  |  |  |  |
+| `IsProjectMilestone` |  | |  |  |  |  |
+| `ForecastedEndDate` |  | |  |  |  |  |
+| `MilestoneApprovalStatus` |  | |  |  |  |  |
+| `IsMainMilestone` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_SubProjElement` | | ✓ | | | | |
+| `_ParentProjElement` | | ✓ | | | | |
+| `_EntProjectElementJVA` | | ✓ | | | | |
+| `_EntProjElmntBlkFunc` | | ✓ | | | | |
+| `_EntProjectElmntPublicSector` | | ✓ | | | | |
+| `_EntProjElmntDlvbrl` | | ✓ | | | | |
+| `_EntProjElmntWorkItem` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Source Code
 

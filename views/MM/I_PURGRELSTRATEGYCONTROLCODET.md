@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgReleaseStrategyControlCode` | ✓ | |  | `frgke` |
-| `Language` | ✓ | |  | `spras` |
-| `PurgRelStrategyControlCodeName` |  | |  | `frget` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgReleaseStrategyControlCode` | ✓ | |  | `frgke` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PurgRelStrategyControlCodeName` |  | |  | `frget` |  |  |
 
 ## Source Code
 

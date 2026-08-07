@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `CostBreakdownStructure` | ✓ | |  | `cost_comp_struc` |
-| `CostBreakdownComponent` | ✓ | |  | `cost_component` |
-| `CostBreakdownComponentName` |  | |  | `name` |
-| `_Structure` | | ✓ | | |
-| `_Component` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CostBreakdownStructure` | ✓ | |  | `cost_comp_struc` |  |  |
+| `CostBreakdownComponent` | ✓ | |  | `cost_component` |  |  |
+| `CostBreakdownComponentName` |  | |  | `name` |  |  |
+| `_Structure` | | ✓ | | | | |
+| `_Component` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

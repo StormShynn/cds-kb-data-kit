@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BPGroupAssignmentCategory` | ✓ | |  | `cast ( dd07l.domvalue_l as vvgidtype_at )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPGroupAssignmentCategory` | ✓ | |  | `cast ( dd07l.domvalue_l as vvgidtype_at )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

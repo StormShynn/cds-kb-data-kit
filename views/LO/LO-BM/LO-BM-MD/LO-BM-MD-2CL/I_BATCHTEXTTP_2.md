@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `BatchIdentifyingPlant` | ✓ | |  |  |
-| `Batch` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `BatchDescription` |  | |  |  |
-| `_BatchTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `BatchIdentifyingPlant` | ✓ | |  |  |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `BatchDescription` |  | |  |  |  |  |
+| `_BatchTP` | | ✓ | | | | |
 
 ## Source Code
 

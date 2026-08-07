@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgCatTranslationUUID` | ✓ | |  |  |
-| `PurgCatUUID` |  | |  |  |
-| `PurgCatTranslationTgtLang` |  | |  |  |
-| `PurgCatTranslationTgtLangSts` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgCatTranslationUUID` | ✓ | |  |  |  |  |
+| `PurgCatUUID` |  | |  |  |  |  |
+| `PurgCatTranslationTgtLang` |  | |  |  |  |  |
+| `PurgCatTranslationTgtLangSts` |  | |  |  |  |  |
 
 ## Source Code
 

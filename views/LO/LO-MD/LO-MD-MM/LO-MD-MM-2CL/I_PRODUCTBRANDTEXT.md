@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductBrand` | ✓ | |  | `cast ( brand_id as wrf_brand_id preserving type )` |
-| `Language` | ✓ | |  | `cast ( language as spras preserving type )` |
-| `ProductBrandName` |  | |  | `brand_descr` |
-| `_ProductBrand` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductBrand` | ✓ | |  | `cast ( brand_id as wrf_brand_id preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast ( language as spras preserving type )` |  |  |
+| `ProductBrandName` |  | |  | `brand_descr` |  |  |
+| `_ProductBrand` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

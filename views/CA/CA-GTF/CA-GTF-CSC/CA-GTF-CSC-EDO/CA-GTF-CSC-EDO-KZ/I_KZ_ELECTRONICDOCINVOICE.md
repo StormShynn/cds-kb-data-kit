@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |
-| `KZ_EDocRegistrationNumber` |  | |  |  |
-| `KZ_ElectronicDocumentInvoiceID` |  | |  |  |
-| `KZ_ElectronicDocumentVATDate` |  | |  |  |
-| `KZ_ElectronicDocTurnoverDate` |  | |  |  |
-| `KZ_EDocCancellationReasonText` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |  |  |
+| `KZ_EDocRegistrationNumber` |  | |  |  |  |  |
+| `KZ_ElectronicDocumentInvoiceID` |  | |  |  |  |  |
+| `KZ_ElectronicDocumentVATDate` |  | |  |  |  |  |
+| `KZ_ElectronicDocTurnoverDate` |  | |  |  |  |  |
+| `KZ_EDocCancellationReasonText` |  | |  |  |  |  |
 
 ## Source Code
 

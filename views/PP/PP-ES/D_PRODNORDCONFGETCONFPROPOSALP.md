@@ -26,24 +26,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConfirmationGroup` |  | |  | `pph_rueck` |
-| `OrderID` |  | |  | `manufacturingorder` |
-| `OrderOperation` |  | |  | `vdm_vornr` |
-| `Sequence` |  | |  | `manufacturingordersequence` |
-| `OrderSuboperation` |  | |  | `vdm_uvorn` |
-| `OrderConfirmationRecordType` |  | |  | `co_satza` |
-| `ConfirmationUnit` |  | |  | `meinh` |
-| `ConfirmationUnitISOCode` |  | |  | `isocd_unit` |
-| `ConfirmationUnitSAPCode` |  | |  | `meinsint` |
-| `ConfirmationYieldQuantity` |  | |  | `ru_lmnga` |
-| `ConfirmationScrapQuantity` |  | |  | `ru_xmnga` |
-| `ConfirmationReworkQuantity` |  | |  | `ru_rmnga` |
-| `QuantityIsToBeProposed` |  | |  | `vssmg` |
-| `ActivityIsToBeProposed` |  | |  | `vssle` |
-| `DateAndTimeIsToBeProposed` |  | |  | `vsszt` |
-| `PersonnelIsToBeProposed` |  | |  | `vsszu` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConfirmationGroup` |  | |  | `pph_rueck` |  |  |
+| `OrderID` |  | |  | `manufacturingorder` |  |  |
+| `OrderOperation` |  | |  | `vdm_vornr` |  |  |
+| `Sequence` |  | |  | `manufacturingordersequence` |  |  |
+| `OrderSuboperation` |  | |  | `vdm_uvorn` |  |  |
+| `OrderConfirmationRecordType` |  | |  | `co_satza` |  |  |
+| `ConfirmationUnit` |  | |  | `meinh` |  |  |
+| `ConfirmationUnitISOCode` |  | |  | `isocd_unit` |  |  |
+| `ConfirmationUnitSAPCode` |  | |  | `meinsint` |  |  |
+| `ConfirmationYieldQuantity` |  | |  | `ru_lmnga` |  |  |
+| `ConfirmationScrapQuantity` |  | |  | `ru_xmnga` |  |  |
+| `ConfirmationReworkQuantity` |  | |  | `ru_rmnga` |  |  |
+| `QuantityIsToBeProposed` |  | |  | `vssmg` |  |  |
+| `ActivityIsToBeProposed` |  | |  | `vssle` |  |  |
+| `DateAndTimeIsToBeProposed` |  | |  | `vsszt` |  |  |
+| `PersonnelIsToBeProposed` |  | |  | `vsszu` |  |  |
 
 ## Source Code
 

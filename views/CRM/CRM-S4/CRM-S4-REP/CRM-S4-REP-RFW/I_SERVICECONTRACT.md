@@ -28,92 +28,92 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  | `ServiceDocument` |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceContractUUID` |  | |  | `ServiceDocumentUUID` |
-| `ServiceContractCharUUID` |  | |  | `cast( ServiceDocumentCharUUID as sysuuid_c preserving type )` |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceContractDescription` |  | |  | `ServiceDocumentDescription` |
-| `Language` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |
-| `ServiceContractNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `ServiceContractGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
-| `SoldToParty` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `SoldToPartyCountry` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  | `cast( ResponsibleEmployee as crmt_person_resp preserving type )` |
-| `ContactPersonBusinessPartnerId` |  | |  | `cast( ContactPerson as crmt_contact_person preserving type )` |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ServiceContractStartDateTime` |  | |  |  |
-| `ServiceContractEndDateTime` |  | |  |  |
-| `SrvcContrEarliestStartDateTime` |  | |  |  |
-| `SrvcContrLatestEndDateTime` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `ServiceContractRejectionReason` |  | |  | `ServiceDocumentRejectionReason` |
-| `Region` |  | |  |  |
-| `ServiceContractStatus` |  | |  | `ServiceDocumentStatus` |
-| `ServiceContractIsReleased` |  | |  | `ServiceDocumentIsReleased` |
-| `ServiceContractHasError` |  | |  | `ServiceDocumentHasError` |
-| `SrvcContrBillingStatus` |  | |  | `ServiceDocBillingStatus` |
-| `ServiceContractIsRejected` |  | |  | `ServiceDocumentIsRejected` |
-| `ServiceContractIsOpen` |  | |  | `ServiceDocumentIsOpen` |
-| `ServiceContractCanclnSts` |  | |  |  |
-| `SrvcContrRejectionStatus` |  | |  | `SrvcDocRejectionStatus` |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `Division` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `ServiceContractCanclnParty` |  | |  | `ServiceDocumentCanclnParty` |
-| `ServiceContrCancellationReason` |  | |  | `ServiceDocumentCanclnReason` |
-| `SrvcContrCreditStatus` |  | |  | `SrvcDocCreditStatus` |
-| `_RespEmployee` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_SrvcSEPAMandateRelevance` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_SrvcDocumentRejectionReason` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_SrvcDocLifecycleStatus` | | ✓ | | |
-| `_ServiceDocHasError` | | ✓ | | |
-| `_ServiceDocBillingStatus` | | ✓ | | |
-| `_ServiceDocumentIsOpen` | | ✓ | | |
-| `_ServiceContractCanclnSts` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_BillingBlockReason` | | ✓ | | |
-| `_SrvcDocCreditStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  | `ServiceDocument` |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceContractUUID` |  | |  | `ServiceDocumentUUID` |  |  |
+| `ServiceContractCharUUID` |  | |  | `cast( ServiceDocumentCharUUID as sysuuid_c preserving type )` |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceContractDescription` |  | |  | `ServiceDocumentDescription` |  |  |
+| `Language` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |  |  |
+| `ServiceContractNetAmount` |  | |  | `ServiceDocNetAmount` |  |  |
+| `ServiceContractGrossAmount` |  | |  | `ServiceDocGrossAmount` |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  | `cast( ResponsibleEmployee as crmt_person_resp preserving type )` |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  | `cast( ContactPerson as crmt_contact_person preserving type )` |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ServiceContractStartDateTime` |  | |  |  |  |  |
+| `ServiceContractEndDateTime` |  | |  |  |  |  |
+| `SrvcContrEarliestStartDateTime` |  | |  |  |  |  |
+| `SrvcContrLatestEndDateTime` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `ServiceContractRejectionReason` |  | |  | `ServiceDocumentRejectionReason` |  |  |
+| `Region` |  | |  |  |  |  |
+| `ServiceContractStatus` |  | |  | `ServiceDocumentStatus` |  |  |
+| `ServiceContractIsReleased` |  | |  | `ServiceDocumentIsReleased` |  |  |
+| `ServiceContractHasError` |  | |  | `ServiceDocumentHasError` |  |  |
+| `SrvcContrBillingStatus` |  | |  | `ServiceDocBillingStatus` |  |  |
+| `ServiceContractIsRejected` |  | |  | `ServiceDocumentIsRejected` |  |  |
+| `ServiceContractIsOpen` |  | |  | `ServiceDocumentIsOpen` |  |  |
+| `ServiceContractCanclnSts` |  | |  |  |  |  |
+| `SrvcContrRejectionStatus` |  | |  | `SrvcDocRejectionStatus` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `ServiceContractCanclnParty` |  | |  | `ServiceDocumentCanclnParty` |  |  |
+| `ServiceContrCancellationReason` |  | |  | `ServiceDocumentCanclnReason` |  |  |
+| `SrvcContrCreditStatus` |  | |  | `SrvcDocCreditStatus` |  |  |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | | | |
+| `_ServiceDocHasError` | | ✓ | | | | |
+| `_ServiceDocBillingStatus` | | ✓ | | | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | | | |
+| `_ServiceContractCanclnSts` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_BillingBlockReason` | | ✓ | | | | |
+| `_SrvcDocCreditStatus` | | ✓ | | | | |
 
 ## Associations
 

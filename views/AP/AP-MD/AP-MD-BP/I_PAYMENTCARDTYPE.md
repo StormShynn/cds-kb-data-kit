@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentCardType` | ✓ | |  | `ccins` |
-| `PaymentCardNumber` | ✓ | |  | `ccnum` |
-| `ValidityDate` |  | |  | `datab` |
-| `ValidityEndDate` |  | |  | `datbi` |
-| `CardHolder` |  | |  | `ccname` |
-| `PaymentCardCategory` |  | |  | `cctyp` |
-| `CardIssuingBank` |  | |  | `issbank` |
-| `CardIssueDate` |  | |  | `ausgdat` |
-| `PaymentCardLock` |  | |  | `cclock` |
-| `MaskedCardNumber` |  | |  | `masked_id` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentCardType` | ✓ | |  | `ccins` |  |  |
+| `PaymentCardNumber` | ✓ | |  | `ccnum` |  |  |
+| `ValidityDate` |  | |  | `datab` |  |  |
+| `ValidityEndDate` |  | |  | `datbi` |  |  |
+| `CardHolder` |  | |  | `ccname` |  |  |
+| `PaymentCardCategory` |  | |  | `cctyp` |  |  |
+| `CardIssuingBank` |  | |  | `issbank` |  |  |
+| `CardIssueDate` |  | |  | `ausgdat` |  |  |
+| `PaymentCardLock` |  | |  | `cclock` |  |  |
+| `MaskedCardNumber` |  | |  | `masked_id` |  |  |
 
 ## Source Code
 

@@ -30,91 +30,91 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostingReferenceObject` | ✓ | |  |  |
-| `CostEstimate` | ✓ | |  |  |
-| `CostingType` | ✓ | |  |  |
-| `CostingDate` | ✓ | |  |  |
-| `CostingVersion` | ✓ | |  |  |
-| `ValuationVariant` | ✓ | |  |  |
-| `CostIsEnteredManually` | ✓ | |  |  |
-| `CostingItem` | ✓ | |  |  |
-| `CostingItemCategory` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Product` |  | |  |  |
-| `ValuationType` |  | |  |  |
-| `ControllingAreaCurrency` |  | |  |  |
-| `TotalPriceInInCtrlgAreaCrcy` |  | |  |  |
-| `FixedPriceInCtrlgAreaCrcy` |  | |  |  |
-| `TotalAmountInCtrlgAreaCrcy` |  | |  |  |
-| `FixedAmountInCtrlgAreaCrcy` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `TotalPriceInCompanyCodeCrcy` |  | |  |  |
-| `FixedPriceInCompanyCodeCrcy` |  | |  |  |
-| `TotalAmountInCoCodeCrcy` |  | |  |  |
-| `FixedAmountInCoCodeCrcy` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `QuantityInBaseUnit` |  | |  |  |
-| `AssyScrapQuantityInValnQtyUnit` |  | |  |  |
-| `CompScrapQuantityInValnQtyUnit` |  | |  |  |
-| `CostingPriceUnitQty` |  | |  |  |
-| `CostingPriceQtyUnit` |  | |  |  |
-| `CostElement` |  | |  |  |
-| `CostOriginGroup` |  | |  |  |
-| `CostComponent` |  | |  |  |
-| `AuxiliaryCostComponent` |  | |  |  |
-| `Creditor` |  | |  |  |
-| `TransferCostEstimate` |  | |  |  |
-| `TransferCostingType` |  | |  |  |
-| `TransferCostingDate` |  | |  |  |
-| `TransferCostingVersion` |  | |  |  |
-| `TransferValuationVariant` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `CostingObject` |  | |  |  |
-| `Operation` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingInfoRecordCategory` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `CostingValuationStrategy` |  | |  |  |
-| `ProductValnPurgInfoRecdStrgy` |  | |  |  |
-| `BillOfMaterialItemNumber` |  | |  |  |
-| `CostEstIsMixedCosting` |  | |  |  |
-| `CostgMixingRatioValue` |  | |  |  |
-| `ProcmtAltvCostEstimate` |  | |  |  |
-| `CostingItemIsAssembly` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `CostCompSplitIsExisting` |  | |  |  |
-| `HasError` |  | |  |  |
-| `_CostEstimate` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_CostingType` | | ✓ | | |
-| `_CostingTypeText` | | ✓ | | |
-| `_TransferCostingTypeText` | | ✓ | | |
-| `_CostingVersion` | | ✓ | | |
-| `_CostingVersionText` | | ✓ | | |
-| `_CostingVersionText_2` | | ✓ | | |
-| `_TransferCostingVersionText` | | ✓ | | |
-| `_ValuationVariant` | | ✓ | | |
-| `_CostingValuationVarText` | | ✓ | | |
-| `_TransferValuationVarText` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_ControllingAreaCurrency` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_CostingUnitOfMeasure` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_CostOriginGroupText` | | ✓ | | |
-| `_CostComponentText` | | ✓ | | |
-| `_CostCenterText` | | ✓ | | |
-| `_ProfitCenterText` | | ✓ | | |
-| `_BusinessAreaText` | | ✓ | | |
-| `_PlantText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostingReferenceObject` | ✓ | |  |  |  |  |
+| `CostEstimate` | ✓ | |  |  |  |  |
+| `CostingType` | ✓ | |  |  |  |  |
+| `CostingDate` | ✓ | |  |  |  |  |
+| `CostingVersion` | ✓ | |  |  |  |  |
+| `ValuationVariant` | ✓ | |  |  |  |  |
+| `CostIsEnteredManually` | ✓ | |  |  |  |  |
+| `CostingItem` | ✓ | |  |  |  |  |
+| `CostingItemCategory` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `ControllingAreaCurrency` |  | |  |  |  |  |
+| `TotalPriceInInCtrlgAreaCrcy` |  | |  |  |  |  |
+| `FixedPriceInCtrlgAreaCrcy` |  | |  |  |  |  |
+| `TotalAmountInCtrlgAreaCrcy` |  | |  |  |  |  |
+| `FixedAmountInCtrlgAreaCrcy` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `TotalPriceInCompanyCodeCrcy` |  | |  |  |  |  |
+| `FixedPriceInCompanyCodeCrcy` |  | |  |  |  |  |
+| `TotalAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `FixedAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `QuantityInBaseUnit` |  | |  |  |  |  |
+| `AssyScrapQuantityInValnQtyUnit` |  | |  |  |  |  |
+| `CompScrapQuantityInValnQtyUnit` |  | |  |  |  |  |
+| `CostingPriceUnitQty` |  | |  |  |  |  |
+| `CostingPriceQtyUnit` |  | |  |  |  |  |
+| `CostElement` |  | |  |  |  |  |
+| `CostOriginGroup` |  | |  |  |  |  |
+| `CostComponent` |  | |  |  |  |  |
+| `AuxiliaryCostComponent` |  | |  |  |  |  |
+| `Creditor` |  | |  |  |  |  |
+| `TransferCostEstimate` |  | |  |  |  |  |
+| `TransferCostingType` |  | |  |  |  |  |
+| `TransferCostingDate` |  | |  |  |  |  |
+| `TransferCostingVersion` |  | |  |  |  |  |
+| `TransferValuationVariant` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `CostingObject` |  | |  |  |  |  |
+| `Operation` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingInfoRecordCategory` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `CostingValuationStrategy` |  | |  |  |  |  |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |  |  |
+| `CostEstIsMixedCosting` |  | |  |  |  |  |
+| `CostgMixingRatioValue` |  | |  |  |  |  |
+| `ProcmtAltvCostEstimate` |  | |  |  |  |  |
+| `CostingItemIsAssembly` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `CostCompSplitIsExisting` |  | |  |  |  |  |
+| `HasError` |  | |  |  |  |  |
+| `_CostEstimate` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_CostingType` | | ✓ | | | | |
+| `_CostingTypeText` | | ✓ | | | | |
+| `_TransferCostingTypeText` | | ✓ | | | | |
+| `_CostingVersion` | | ✓ | | | | |
+| `_CostingVersionText` | | ✓ | | | | |
+| `_CostingVersionText_2` | | ✓ | | | | |
+| `_TransferCostingVersionText` | | ✓ | | | | |
+| `_ValuationVariant` | | ✓ | | | | |
+| `_CostingValuationVarText` | | ✓ | | | | |
+| `_TransferValuationVarText` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_ControllingAreaCurrency` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_CostingUnitOfMeasure` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_CostOriginGroupText` | | ✓ | | | | |
+| `_CostComponentText` | | ✓ | | | | |
+| `_CostCenterText` | | ✓ | | | | |
+| `_ProfitCenterText` | | ✓ | | | | |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_PlantText` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,131 +31,131 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseRequisition` | ✓ | |  |  |
-| `PurchaseRequisitionItem` | ✓ | |  |  |
-| `PurchaseReqnItemUniqueID` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `PurReqnReleaseStatus` |  | |  |  |
-| `PurchaseRequisitionType` |  | |  |  |
-| `PurchasingDocumentSubtype` |  | |  |  |
-| `PurchasingDocumentItemCategory` |  | |  |  |
-| `PurchaseRequisitionItemText` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchaseRequisitionPrice` |  | |  |  |
-| `MaterialGoodsReceiptDuration` |  | |  |  |
-| `ReleaseCode` |  | |  |  |
-| `PurchaseRequisitionReleaseDate` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `SourceOfSupplyIsAssigned` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `PurReqnLimitConsumptionAmt` |  | |  |  |
-| `DeliveryDate` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `ProcessingStatus` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `FixedSupplier` |  | |  |  |
-| `RequisitionerName` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `PurReqCreationDate` |  | |  |  |
-| `DeliveryAddressID` |  | |  | `cast ( DeliveryAddressID as adrn2_ll preserving type)` |
-| `ManualDeliveryAddressID` |  | |  |  |
-| `PurReqnItemCurrency` |  | |  |  |
-| `MaterialPlannedDeliveryDurn` |  | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `MultipleAcctAssgmtDistribution` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `PurReqnSSPRequestor` |  | |  |  |
-| `PurReqnSSPAuthor` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `PurReqnSourceOfSupplyType` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `PurReqnOrigin` |  | |  |  |
-| `PurReqnSSPCatalog` |  | |  |  |
-| `PurReqnSSPCatalogItem` |  | |  |  |
-| `PurReqnSSPCrossCatalogItem` |  | |  |  |
-| `IsPurReqnBlocked` |  | |  |  |
-| `ItemDeliveryAddressID` |  | |  |  |
-| `Language` |  | |  |  |
-| `IsClosed` |  | |  |  |
-| `ReleaseIsNotCompleted` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `ProductType` |  | |  | `cast(ProductType as abap.char(4))` |
-| `PurchaseRequisitionStatus` |  | |  |  |
-| `ReleaseStrategy` |  | |  |  |
-| `PerformancePeriodStartDate` |  | |  |  |
-| `PerformancePeriodEndDate` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `Batch` |  | |  |  |
-| `MaterialRevisionLevel` |  | |  | `MaterialRevisionLevel_2` |
-| `MinRemainingShelfLife` |  | |  |  |
-| `ItemNetAmount` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `InvoiceIsExpected` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `RequirementTracking` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `PurchaseRequisitionIsFixed` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `ProcurementHubSourceSystem` |  | |  |  |
-| `ExtPurgOrgForPurg` |  | |  |  |
-| `ExtCompanyCodeForPurg` |  | |  |  |
-| `ExtPlantForPurg` |  | |  |  |
-| `ExtInfoRecordForPurg` |  | |  |  |
-| `ExtContractItemForPurg` |  | |  |  |
-| `ExtContractForPurg` |  | |  |  |
-| `ExtDesiredSupplierForPurg` |  | |  |  |
-| `ExtFixedSupplierForPurg` |  | |  |  |
-| `ExtMaterialForPurg` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `PurReqnPriceQuantity` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `IsPurReqnCmplt` |  | |  |  |
-| `PurReqnItemBlockingReasonText` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `QuotaArrangement` |  | |  |  |
-| `QuotaArrangementItem` |  | |  |  |
-| `_PurchasingDocumentType` | | ✓ | | |
-| `_PurgDocumentItemCategory` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_PurchasingObjectCategory` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_SupplyingPlant` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_FixedSupplier` | | ✓ | | |
-| `_DeliveryAddress` | | ✓ | | |
-| `_ManualDeliveryAddress` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_ItemDeliveryAddress` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_ProductTypeCode` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_MRPController` | | ✓ | | |
-| `_Address` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_PurchaseContract` | | ✓ | | |
-| `_PurchaseContractItem` | | ✓ | | |
-| `_PurchasingInfoRecord` | | ✓ | | |
-| `_PurchaseRequisition` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |  |  |
+| `PurchaseRequisitionItem` | ✓ | |  |  |  |  |
+| `PurchaseReqnItemUniqueID` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |  |  |
+| `PurchaseRequisitionType` |  | |  |  |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |  |  |
+| `PurchaseRequisitionItemText` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchaseRequisitionPrice` |  | |  |  |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |  |  |
+| `ReleaseCode` |  | |  |  |  |  |
+| `PurchaseRequisitionReleaseDate` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `SourceOfSupplyIsAssigned` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `PurReqnLimitConsumptionAmt` |  | |  |  |  |  |
+| `DeliveryDate` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `ProcessingStatus` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `FixedSupplier` |  | |  |  |  |  |
+| `RequisitionerName` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `PurReqCreationDate` |  | |  |  |  |  |
+| `DeliveryAddressID` |  | |  | `cast ( DeliveryAddressID as adrn2_ll preserving type)` |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |  |  |
+| `PurReqnItemCurrency` |  | |  |  |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `PurReqnSSPRequestor` |  | |  |  |  |  |
+| `PurReqnSSPAuthor` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `PurReqnSourceOfSupplyType` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `PurReqnOrigin` |  | |  |  |  |  |
+| `PurReqnSSPCatalog` |  | |  |  |  |  |
+| `PurReqnSSPCatalogItem` |  | |  |  |  |  |
+| `PurReqnSSPCrossCatalogItem` |  | |  |  |  |  |
+| `IsPurReqnBlocked` |  | |  |  |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `IsClosed` |  | |  |  |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `ProductType` |  | |  | `cast(ProductType as abap.char(4))` |  |  |
+| `PurchaseRequisitionStatus` |  | |  |  |  |  |
+| `ReleaseStrategy` |  | |  |  |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `MaterialRevisionLevel` |  | |  | `MaterialRevisionLevel_2` |  |  |
+| `MinRemainingShelfLife` |  | |  |  |  |  |
+| `ItemNetAmount` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `InvoiceIsExpected` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `RequirementTracking` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `PurchaseRequisitionIsFixed` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |  |  |
+| `ExtPurgOrgForPurg` |  | |  |  |  |  |
+| `ExtCompanyCodeForPurg` |  | |  |  |  |  |
+| `ExtPlantForPurg` |  | |  |  |  |  |
+| `ExtInfoRecordForPurg` |  | |  |  |  |  |
+| `ExtContractItemForPurg` |  | |  |  |  |  |
+| `ExtContractForPurg` |  | |  |  |  |  |
+| `ExtDesiredSupplierForPurg` |  | |  |  |  |  |
+| `ExtFixedSupplierForPurg` |  | |  |  |  |  |
+| `ExtMaterialForPurg` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `PurReqnPriceQuantity` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `IsPurReqnCmplt` |  | |  |  |  |  |
+| `PurReqnItemBlockingReasonText` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `QuotaArrangement` |  | |  |  |  |  |
+| `QuotaArrangementItem` |  | |  |  |  |  |
+| `_PurchasingDocumentType` | | ✓ | | | | |
+| `_PurgDocumentItemCategory` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_PurchasingObjectCategory` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_SupplyingPlant` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_FixedSupplier` | | ✓ | | | | |
+| `_DeliveryAddress` | | ✓ | | | | |
+| `_ManualDeliveryAddress` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_ItemDeliveryAddress` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_ProductTypeCode` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MRPController` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_PurchaseContract` | | ✓ | | | | |
+| `_PurchaseContractItem` | | ✓ | | | | |
+| `_PurchasingInfoRecord` | | ✓ | | | | |
+| `_PurchaseRequisition` | | ✓ | | | | |
 
 ## Associations
 

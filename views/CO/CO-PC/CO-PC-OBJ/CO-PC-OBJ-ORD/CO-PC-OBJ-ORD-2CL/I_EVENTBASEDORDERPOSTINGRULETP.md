@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventBasedDistrPostingRuleUUID` | ✓ | |  |  |
-| `SAPObjectNodeType` |  | |  |  |
-| `ControllingObject` |  | |  |  |
-| `ControllingObjectType` |  | |  |  |
-| `EventBasedDistributionRuleSqnc` |  | |  |  |
-| `EventBasedDistributionType` |  | |  |  |
-| `EvtBsdDistrSourceStructure` |  | |  |  |
-| `EvtBsdDistrSourceAssignment` |  | |  |  |
-| `EventBasedDistrRateInPercent` |  | |  |  |
-| `EvtBsdDistrEquivalenceFactor` |  | |  |  |
-| `EventBasedDistributionDfltRule` |  | |  |  |
-| `EvtBsdDistrTracingFctrDetnMeth` |  | |  |  |
-| `MfgOrdNonMatlRcvrAcctDetnMeth` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderItem` |  | |  |  |
-| `OrderCategory` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `PartnerControllingObjectType` |  | |  |  |
-| `EvtBsdPostingRuleReceiver` |  | |  |  |
-| `EvtBsdPostingRuleReceiverText` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `RecentlyChangedDateTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventBasedDistrPostingRuleUUID` | ✓ | |  |  |  |  |
+| `SAPObjectNodeType` |  | |  |  |  |  |
+| `ControllingObject` |  | |  |  |  |  |
+| `ControllingObjectType` |  | |  |  |  |  |
+| `EventBasedDistributionRuleSqnc` |  | |  |  |  |  |
+| `EventBasedDistributionType` |  | |  |  |  |  |
+| `EvtBsdDistrSourceStructure` |  | |  |  |  |  |
+| `EvtBsdDistrSourceAssignment` |  | |  |  |  |  |
+| `EventBasedDistrRateInPercent` |  | |  |  |  |  |
+| `EvtBsdDistrEquivalenceFactor` |  | |  |  |  |  |
+| `EventBasedDistributionDfltRule` |  | |  |  |  |  |
+| `EvtBsdDistrTracingFctrDetnMeth` |  | |  |  |  |  |
+| `MfgOrdNonMatlRcvrAcctDetnMeth` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderItem` |  | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `PartnerControllingObjectType` |  | |  |  |  |  |
+| `EvtBsdPostingRuleReceiver` |  | |  |  |  |  |
+| `EvtBsdPostingRuleReceiverText` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `RecentlyChangedDateTime` |  | |  |  |  |  |
 
 ## Source Code
 

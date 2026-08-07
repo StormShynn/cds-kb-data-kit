@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfAccounts` | ✓ | |  | `ktopl` |
-| `Language` | ✓ | |  | `spras` |
-| `ChartOfAccountsName` |  | |  | `ktplt` |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `ktopl` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ChartOfAccountsName` |  | |  | `ktplt` |  |  |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

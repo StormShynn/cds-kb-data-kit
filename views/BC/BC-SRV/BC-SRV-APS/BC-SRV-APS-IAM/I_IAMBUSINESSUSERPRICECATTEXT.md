@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `UserID` | ✓ | |  | `cast( pc.UserID as aps_userid preserving type )` |
-| `BusinessUserPriceCategory` | ✓ | |  | `usrprc_id` |
-| `BusinessUserPriceCategoryName` |  | |  | `text` |
-| `_BusinessUserPriceCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `UserID` | ✓ | |  | `cast( pc.UserID as aps_userid preserving type )` |  |  |
+| `BusinessUserPriceCategory` | ✓ | |  | `usrprc_id` |  |  |
+| `BusinessUserPriceCategoryName` |  | |  | `text` |  |  |
+| `_BusinessUserPriceCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

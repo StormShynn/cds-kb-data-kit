@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingInfoRecord` | ✓ | |  |  |
-| `PurchasingInfoRecordCategory` | ✓ | |  |  |
-| `PurchasingOrganization` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `ConditionRecord` | ✓ | |  |  |
-| `ConditionValidityEndDate` | ✓ | |  |  |
-| `ConditionValidityStartDate` |  | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `PurgDocOrderQuantityUnit` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Material` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurgInfoRecdCndnRecord` | | ✓ | | |
-| `_PurgInfoRecdOrgPlntData` | | ✓ | | |
-| `_PurgInfoRecd` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |  |  |
+| `PurchasingInfoRecordCategory` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ConditionRecord` | ✓ | |  |  |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |  |  |
+| `ConditionValidityStartDate` |  | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `PurgDocOrderQuantityUnit` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurgInfoRecdCndnRecord` | | ✓ | | | | |
+| `_PurgInfoRecdOrgPlntData` | | ✓ | | | | |
+| `_PurgInfoRecd` | | ✓ | | | | |
 
 ## Source Code
 

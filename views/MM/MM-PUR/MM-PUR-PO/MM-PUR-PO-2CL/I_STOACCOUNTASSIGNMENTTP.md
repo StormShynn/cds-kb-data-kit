@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StockTransportOrder` | ✓ | |  |  |
-| `StockTransportOrderItem` | ✓ | |  |  |
-| `AccountAssignmentNumber` | ✓ | |  |  |
-| `CostCenter` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SalesOrderScheduleLine` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `ProjectNetworkInternalID` |  | |  |  |
-| `NetworkActivityInternalID` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `_StockTransportOrderItem` | | ✓ | | |
-| `_StockTransportOrder` | | ✓ | | |
-| `_GLAccount` | | ✓ | | |
-| `_SalesDocumentScheduleLine` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_OrderQuantityUnitText` | | ✓ | | |
-| `_DocumentCurrencyText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |  |  |
+| `StockTransportOrderItem` | ✓ | |  |  |  |  |
+| `AccountAssignmentNumber` | ✓ | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |  |  |
+| `NetworkActivityInternalID` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `_StockTransportOrderItem` | | ✓ | | | | |
+| `_StockTransportOrder` | | ✓ | | | | |
+| `_GLAccount` | | ✓ | | | | |
+| `_SalesDocumentScheduleLine` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_OrderQuantityUnitText` | | ✓ | | | | |
+| `_DocumentCurrencyText` | | ✓ | | | | |
 
 ## Source Code
 

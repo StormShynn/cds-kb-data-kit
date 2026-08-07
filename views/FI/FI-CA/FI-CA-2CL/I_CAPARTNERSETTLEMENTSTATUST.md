@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPartnerSettlementStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as ptitm_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAPartnerSettlementStatusName` |  | |  | `cast( ddtext as ptitm_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPartnerSettlementStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as ptitm_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAPartnerSettlementStatusName` |  | |  | `cast( ddtext as ptitm_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `REProRataMethodCalc` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmcalcmethper )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `REProRataMethodCalcName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_REProRataMethodCalc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `REProRataMethodCalc` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmcalcmethper )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `REProRataMethodCalcName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_REProRataMethodCalc` | | ✓ | | | | |
 
 ## Associations
 

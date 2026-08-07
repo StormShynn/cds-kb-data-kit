@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `CABillgDocumentInvcgStatus` | ✓ | |  | `cast( dd07t.domvalue_l as invstatus_kk )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `CABillgDocumentInvcgStatusText` |  | |  | `cast( dd07t.ddtext as invstatus_txt_gfn_kk preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CABillgDocInvcgStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `CABillgDocumentInvcgStatus` | ✓ | |  | `cast( dd07t.domvalue_l as invstatus_kk )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CABillgDocumentInvcgStatusText` |  | |  | `cast( dd07t.ddtext as invstatus_txt_gfn_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CABillgDocInvcgStatus` | | ✓ | | | | |
 
 ## Associations
 

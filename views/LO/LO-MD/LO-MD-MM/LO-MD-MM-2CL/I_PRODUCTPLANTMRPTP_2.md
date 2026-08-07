@@ -32,57 +32,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `MRPArea` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `MRPType` |  | |  |  |
-| `MRPResponsible` |  | |  |  |
-| `MRPGroup` |  | |  |  |
-| `ReorderThresholdQuantity` |  | |  |  |
-| `PlanAndOrderDayDetermination` |  | |  |  |
-| `PlanningTimeFence` |  | |  |  |
-| `LotSizingProcedure` |  | |  |  |
-| `RoundingProfile` |  | |  |  |
-| `LotSizeRoundingQuantity` |  | |  |  |
-| `MinimumLotSizeQuantity` |  | |  |  |
-| `MaximumLotSizeQuantity` |  | |  |  |
-| `MaximumStockQuantity` |  | |  |  |
-| `AssemblyScrapPercent` |  | |  |  |
-| `ProcurementSubType` |  | |  |  |
-| `ProductionInvtryManagedLoc` |  | |  |  |
-| `DfltStorageLocationExtProcmt` |  | |  |  |
-| `MRPPlanningCalendar` |  | |  |  |
-| `SafetyStockQuantity` |  | |  |  |
-| `RangeOfCvrgPrflCode` |  | |  |  |
-| `SafetySupplyDurationInDays` |  | |  |  |
-| `FixedLotSizeQuantity` |  | |  |  |
-| `LotSizeIndependentCosts` |  | |  |  |
-| `StorageCostsPercentageCode` |  | |  |  |
-| `ProductServiceLevelInPercent` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `SafetyTimePeriodProfile` |  | |  |  |
-| `DependentRqmtMRPRelevance` |  | |  |  |
-| `ProductSafetyTimeMRPRelevance` |  | |  |  |
-| `PlannedDeliveryDurationInDays` |  | |  |  |
-| `IsPlannedDeliveryTime` |  | |  |  |
-| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  |  |
-| `MRPSafetyStockMethod` |  | |  |  |
-| `Currency` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `_ProductPlant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_MRPGroupText` | | ✓ | | |
-| `_MRPTypeName` | | ✓ | | |
-| `_LotSizingProcedureText` | | ✓ | | |
-| `_RangeOfCvrgPrflCodeText` | | ✓ | | |
-| `_SafetyTimePeriodProfileText` | | ✓ | | |
-| `_DepdntRqmtMRPRelevanceText` | | ✓ | | |
-| `_ProdSafetyTimeMRPRlvnceText` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_MRPSafetyStockMethodText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `MRPArea` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `MRPType` |  | |  |  |  |  |
+| `MRPResponsible` |  | |  |  |  |  |
+| `MRPGroup` |  | |  |  |  |  |
+| `ReorderThresholdQuantity` |  | |  |  |  |  |
+| `PlanAndOrderDayDetermination` |  | |  |  |  |  |
+| `PlanningTimeFence` |  | |  |  |  |  |
+| `LotSizingProcedure` |  | |  |  |  |  |
+| `RoundingProfile` |  | |  |  |  |  |
+| `LotSizeRoundingQuantity` |  | |  |  |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumStockQuantity` |  | |  |  |  |  |
+| `AssemblyScrapPercent` |  | |  |  |  |  |
+| `ProcurementSubType` |  | |  |  |  |  |
+| `ProductionInvtryManagedLoc` |  | |  |  |  |  |
+| `DfltStorageLocationExtProcmt` |  | |  |  |  |  |
+| `MRPPlanningCalendar` |  | |  |  |  |  |
+| `SafetyStockQuantity` |  | |  |  |  |  |
+| `RangeOfCvrgPrflCode` |  | |  |  |  |  |
+| `SafetySupplyDurationInDays` |  | |  |  |  |  |
+| `FixedLotSizeQuantity` |  | |  |  |  |  |
+| `LotSizeIndependentCosts` |  | |  |  |  |  |
+| `StorageCostsPercentageCode` |  | |  |  |  |  |
+| `ProductServiceLevelInPercent` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `SafetyTimePeriodProfile` |  | |  |  |  |  |
+| `DependentRqmtMRPRelevance` |  | |  |  |  |  |
+| `ProductSafetyTimeMRPRelevance` |  | |  |  |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |  |  |
+| `IsPlannedDeliveryTime` |  | |  |  |  |  |
+| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  |  |  |  |
+| `MRPSafetyStockMethod` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `_ProductPlant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_MRPGroupText` | | ✓ | | | | |
+| `_MRPTypeName` | | ✓ | | | | |
+| `_LotSizingProcedureText` | | ✓ | | | | |
+| `_RangeOfCvrgPrflCodeText` | | ✓ | | | | |
+| `_SafetyTimePeriodProfileText` | | ✓ | | | | |
+| `_DepdntRqmtMRPRelevanceText` | | ✓ | | | | |
+| `_ProdSafetyTimeMRPRlvnceText` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_MRPSafetyStockMethodText` | | ✓ | | | | |
 
 ## Source Code
 

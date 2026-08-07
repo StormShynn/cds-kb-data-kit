@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'ISRVCDOCEXECST'` |  | |  | `sqlViewName: 'ISRVCDOCEXECST'` |
-| `true` |  | |  | `compiler.compareFilter: true` |
-| `}` |  | |  | `buffering: { status: #ACTIVE, type: #FULL }` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'ISRVCDOCEXECST'` |  | |  | `sqlViewName: 'ISRVCDOCEXECST'` |  |  |
+| `true` |  | |  | `compiler.compareFilter: true` |  |  |
+| `}` |  | |  | `buffering: { status: #ACTIVE, type: #FULL }` |  |  |
 
 ## Source Code
 

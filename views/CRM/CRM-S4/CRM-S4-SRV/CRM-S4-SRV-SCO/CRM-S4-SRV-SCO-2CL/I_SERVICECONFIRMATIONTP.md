@@ -28,88 +28,88 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceConfirmation` | ✓ | |  |  |
-| `ServiceConfirmationType` |  | |  |  |
-| `ServiceConfirmationUUID` |  | |  |  |
-| `ServiceConfirmationDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |
-| `ServiceEmployee` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `RespyMgmtServiceTeam` |  | |  |  |
-| `RespyMgmtGlobalTeamID` |  | |  |  |
-| `ServiceConfirmationIsNew` |  | |  |  |
-| `ServiceConfirmationIsCompleted` |  | |  |  |
-| `ServiceConfirmationIsCanceled` |  | |  |  |
-| `ServiceConfirmationStatus` |  | |  |  |
-| `SrvcConfReldForBillingStatus` |  | |  |  |
-| `SrvcConfBillingStatus` |  | |  |  |
-| `ServiceConfirmationIsFinal` |  | |  |  |
-| `ServiceConfirmationHasError` |  | |  |  |
-| `SrvcDocTransferStatus` |  | |  |  |
-| `SrvcDocRejectionStatus` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
-| `PricingDocument` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `SrvcConfExtReference` |  | |  |  |
-| `ReferenceServiceOrder` |  | |  |  |
-| `ShippingCondition` |  | |  |  |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ServiceEmployee` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
-| `_ServiceDocumentPriority` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceConfirmationItemTP` | | ✓ | | |
-| `_SrvcConfReferenceObjectTP` | | ✓ | | |
-| `_SrvcConfPartnerTP` | | ✓ | | |
-| `_SrvcConfUserStatusTP` | | ✓ | | |
-| `_SrvcConfAppointmentTP` | | ✓ | | |
-| `_SrvcConfDurationTP` | | ✓ | | |
-| `_BillingDocumentFollowupTP` | | ✓ | | |
-| `_TimeSheetFollowupTP` | | ✓ | | |
-| `_SrvcConfLongTextTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |  |  |
+| `ServiceConfirmationType` |  | |  |  |  |  |
+| `ServiceConfirmationUUID` |  | |  |  |  |  |
+| `ServiceConfirmationDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
+| `ServiceEmployee` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |  |  |
+| `ServiceConfirmationIsNew` |  | |  |  |  |  |
+| `ServiceConfirmationIsCompleted` |  | |  |  |  |  |
+| `ServiceConfirmationIsCanceled` |  | |  |  |  |  |
+| `ServiceConfirmationStatus` |  | |  |  |  |  |
+| `SrvcConfReldForBillingStatus` |  | |  |  |  |  |
+| `SrvcConfBillingStatus` |  | |  |  |  |  |
+| `ServiceConfirmationIsFinal` |  | |  |  |  |  |
+| `ServiceConfirmationHasError` |  | |  |  |  |  |
+| `SrvcDocTransferStatus` |  | |  |  |  |  |
+| `SrvcDocRejectionStatus` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `SrvcConfExtReference` |  | |  |  |  |  |
+| `ReferenceServiceOrder` |  | |  |  |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ServiceEmployee` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_ServiceDocumentPriority` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceConfirmationItemTP` | | ✓ | | | | |
+| `_SrvcConfReferenceObjectTP` | | ✓ | | | | |
+| `_SrvcConfPartnerTP` | | ✓ | | | | |
+| `_SrvcConfUserStatusTP` | | ✓ | | | | |
+| `_SrvcConfAppointmentTP` | | ✓ | | | | |
+| `_SrvcConfDurationTP` | | ✓ | | | | |
+| `_BillingDocumentFollowupTP` | | ✓ | | | | |
+| `_TimeSheetFollowupTP` | | ✓ | | | | |
+| `_SrvcConfLongTextTP` | | ✓ | | | | |
 
 ## Source Code
 

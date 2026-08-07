@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  |  |
-| `MRPController` | ✓ | |  |  |
-| `MRPControllerName` |  | |  |  |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |  |  |
+| `MRPController` | ✓ | |  |  |  |  |
+| `MRPControllerName` |  | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  |  |
-| `TaskListGroup` | ✓ | |  |  |
-| `TaskListGroupCounter` | ✓ | |  |  |
-| `TaskListSequence` | ✓ | |  |  |
-| `TaskListOperationInternalId` | ✓ | |  |  |
-| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |
-| `MaintenanceTaskListOperation` |  | |  |  |
-| `TextObjectKey` |  | |  |  |
-| `Language` |  | |  |  |
-| `PlainLongText` |  | |  |  |
-| `_Header` | | ✓ | | |
-| `_Operation` | | ✓ | | |
-| `_NonHistOp` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |  |  |
+| `TaskListGroup` | ✓ | |  |  |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |  |  |
+| `TaskListSequence` | ✓ | |  |  |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |  |  |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |  |  |
+| `TextObjectKey` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PlainLongText` |  | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
+| `_Operation` | | ✓ | | | | |
+| `_NonHistOp` | | ✓ | | | | |
 
 ## Source Code
 

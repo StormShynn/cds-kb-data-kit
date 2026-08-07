@@ -30,57 +30,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `kokrs` |
-| `ProfitCenter` | ✓ | |  | `prctr` |
-| `ValidityEndDate` | ✓ | |  | `datbi` |
-| `ProfitCtrResponsiblePersonName` |  | |  | `verak` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ProfitCtrResponsibleUser` |  | |  | `verak_user` |
-| `ValidityStartDate` |  | |  | `datab` |
-| `Department` |  | |  | `abtei` |
-| `ProfitCenterStandardHierarchy` |  | |  | `khinr` |
-| `Segment` |  | |  | `segment` |
-| `ProfitCenterIsBlocked` |  | |  | `lock_ind` |
-| `FormulaPlanningTemplate` |  | |  | `pca_template` |
-| `FormOfAddress` |  | |  | `anred` |
-| `AddressName` |  | |  | `name1` |
-| `AdditionalName` |  | |  | `name2` |
-| `ProfitCenterAddrName3` |  | |  | `name3` |
-| `ProfitCenterAddrName4` |  | |  | `name4` |
-| `StreetAddressName` |  | |  | `stras` |
-| `POBox` |  | |  | `pfach` |
-| `CityName` |  | |  | `ort01` |
-| `PostalCode` |  | |  | `pstlz` |
-| `POBoxPostalCode` |  | |  | `pstl2` |
-| `District` |  | |  | `ort02` |
-| `Country` |  | |  | `land1` |
-| `Region` |  | |  | `regio` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `Language` |  | |  | `spras` |
-| `PhoneNumber1` |  | |  | `telf1` |
-| `PhoneNumber2` |  | |  | `telf2` |
-| `TeleboxNumber` |  | |  | `telbx` |
-| `TelexNumber` |  | |  | `telx1` |
-| `FaxNumber` |  | |  | `telfx` |
-| `TeletexNumber` |  | |  | `teltx` |
-| `DataCommunicationPhoneNumber` |  | |  | `datlt` |
-| `ProfitCenterPrinterName` |  | |  | `drnam` |
-| `ProfitCenterCreatedByUser` |  | |  | `usnam` |
-| `ProfitCenterCreationDate` |  | |  | `ersda` |
-| `LogicalSystem` |  | |  | `logsystem` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_SegmentText` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ProfitCenterHierarchyNode` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Company` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_PrftCtrCompanyCodeAssignment` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `kokrs` |  |  |
+| `ProfitCenter` | ✓ | |  | `prctr` |  |  |
+| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
+| `ProfitCtrResponsiblePersonName` |  | |  | `verak` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ProfitCtrResponsibleUser` |  | |  | `verak_user` |  |  |
+| `ValidityStartDate` |  | |  | `datab` |  |  |
+| `Department` |  | |  | `abtei` |  |  |
+| `ProfitCenterStandardHierarchy` |  | |  | `khinr` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `ProfitCenterIsBlocked` |  | |  | `lock_ind` |  |  |
+| `FormulaPlanningTemplate` |  | |  | `pca_template` |  |  |
+| `FormOfAddress` |  | |  | `anred` |  |  |
+| `AddressName` |  | |  | `name1` |  |  |
+| `AdditionalName` |  | |  | `name2` |  |  |
+| `ProfitCenterAddrName3` |  | |  | `name3` |  |  |
+| `ProfitCenterAddrName4` |  | |  | `name4` |  |  |
+| `StreetAddressName` |  | |  | `stras` |  |  |
+| `POBox` |  | |  | `pfach` |  |  |
+| `CityName` |  | |  | `ort01` |  |  |
+| `PostalCode` |  | |  | `pstlz` |  |  |
+| `POBoxPostalCode` |  | |  | `pstl2` |  |  |
+| `District` |  | |  | `ort02` |  |  |
+| `Country` |  | |  | `land1` |  |  |
+| `Region` |  | |  | `regio` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `Language` |  | |  | `spras` |  |  |
+| `PhoneNumber1` |  | |  | `telf1` |  |  |
+| `PhoneNumber2` |  | |  | `telf2` |  |  |
+| `TeleboxNumber` |  | |  | `telbx` |  |  |
+| `TelexNumber` |  | |  | `telx1` |  |  |
+| `FaxNumber` |  | |  | `telfx` |  |  |
+| `TeletexNumber` |  | |  | `teltx` |  |  |
+| `DataCommunicationPhoneNumber` |  | |  | `datlt` |  |  |
+| `ProfitCenterPrinterName` |  | |  | `drnam` |  |  |
+| `ProfitCenterCreatedByUser` |  | |  | `usnam` |  |  |
+| `ProfitCenterCreationDate` |  | |  | `ersda` |  |  |
+| `LogicalSystem` |  | |  | `logsystem` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_SegmentText` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ProfitCenterHierarchyNode` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Company` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_PrftCtrCompanyCodeAssignment` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

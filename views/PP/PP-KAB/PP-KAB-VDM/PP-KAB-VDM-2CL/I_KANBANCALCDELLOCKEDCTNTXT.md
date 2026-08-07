@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanCalcDelLockedCtns` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as loewg preserving type)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `KanbanCalcDelLockedCtnsName` |  | |  | `cast(ddtext as vdm_dellockedctns_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KnbnCalcDelLockedCtn` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanCalcDelLockedCtns` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as loewg preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `KanbanCalcDelLockedCtnsName` |  | |  | `cast(ddtext as vdm_dellockedctns_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KnbnCalcDelLockedCtn` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,43 +30,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrderTemplate` | ✓ | |  |  |
-| `ServiceOrderTemplateItem` | ✓ | |  |  |
-| `ServiceOrderTemplateItemUUID` |  | |  |  |
-| `SrvcOrdTmplItmDescription` |  | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `SrvcOrdTmplItmCategory` |  | |  |  |
-| `ServiceDocumentItemObjectType` |  | |  |  |
-| `Language` |  | |  |  |
-| `SrvcOrdTmplItmValdtyStrtDteTme` |  | |  |  |
-| `SrvcOrdTmplItmValdtyEndDteTme` |  | |  |  |
-| `ServiceDocItemChangedDateTime` |  | |  |  |
-| `ServiceDocItemCreationDateTime` |  | |  |  |
-| `ServiceDocItemCreatedByUser` |  | |  |  |
-| `ServiceDocItemChangedByUser` |  | |  |  |
-| `Product` |  | |  |  |
-| `Quantity` |  | |  | `} Quantity` |
-| `QuantityUnit` |  | |  |  |
-| `ParentServiceOrderTemplateItem` |  | |  |  |
-| `SrvcOrdTmplItmIsNew` |  | |  |  |
-| `SrvcOrdTmplItmIsInProcess` |  | |  |  |
-| `SrvcOrdTmplItmIsReleased` |  | |  |  |
-| `SrvcOrdTmplItmIsCompleted` |  | |  |  |
-| `SrvcDocItmPartReferenceItem` |  | |  |  |
-| `SrvcDocItmApptReferenceItem` |  | |  |  |
-| `SrvcDocItmApptRefObjectUUID` |  | |  |  |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocument` | | ✓ | | |
-| `_SrvcOrdTmplItmStatus` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ServiceOrderTemplateTP` | | ✓ | | |
-| `_SrvcOrdTmplItmRefObjectTP` | | ✓ | | |
-| `_SrvcOrdTmplItemUserStatusTP` | | ✓ | | |
-| `_SrvcOrdTmplItemLongTextTP` | | ✓ | | |
-| `_SrvcOrdTmplItemAppointmentTP` | | ✓ | | |
-| `_SrvcOrdTmplItemDurationTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrderTemplate` | ✓ | |  |  |  |  |
+| `ServiceOrderTemplateItem` | ✓ | |  |  |  |  |
+| `ServiceOrderTemplateItemUUID` |  | |  |  |  |  |
+| `SrvcOrdTmplItmDescription` |  | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `SrvcOrdTmplItmCategory` |  | |  |  |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `SrvcOrdTmplItmValdtyStrtDteTme` |  | |  |  |  |  |
+| `SrvcOrdTmplItmValdtyEndDteTme` |  | |  |  |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `ParentServiceOrderTemplateItem` |  | |  |  |  |  |
+| `SrvcOrdTmplItmIsNew` |  | |  |  |  |  |
+| `SrvcOrdTmplItmIsInProcess` |  | |  |  |  |  |
+| `SrvcOrdTmplItmIsReleased` |  | |  |  |  |  |
+| `SrvcOrdTmplItmIsCompleted` |  | |  |  |  |  |
+| `SrvcDocItmPartReferenceItem` |  | |  |  |  |  |
+| `SrvcDocItmApptReferenceItem` |  | |  |  |  |  |
+| `SrvcDocItmApptRefObjectUUID` |  | |  |  |  |  |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_SrvcOrdTmplItmStatus` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ServiceOrderTemplateTP` | | ✓ | | | | |
+| `_SrvcOrdTmplItmRefObjectTP` | | ✓ | | | | |
+| `_SrvcOrdTmplItemUserStatusTP` | | ✓ | | | | |
+| `_SrvcOrdTmplItemLongTextTP` | | ✓ | | | | |
+| `_SrvcOrdTmplItemAppointmentTP` | | ✓ | | | | |
+| `_SrvcOrdTmplItemDurationTP` | | ✓ | | | | |
 
 ## Source Code
 

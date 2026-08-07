@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASubstituteDocumentCategory` | ✓ | |  | `cast( left( domvalue_l,1 ) as abwtp_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CASubstituteDocCategoryName` |  | |  | `cast( ddtext as abwtp_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASubstituteDocumentCategory` | ✓ | |  | `cast( left( domvalue_l,1 ) as abwtp_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CASubstituteDocCategoryName` |  | |  | `cast( ddtext as abwtp_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

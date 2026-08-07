@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SrvcDocTransferStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_transfer )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SrvcDocTransferStatusText` |  | |  | `ddtext` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_ServiceDocTransferStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcDocTransferStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_transfer )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SrvcDocTransferStatusText` |  | |  | `ddtext` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_ServiceDocTransferStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

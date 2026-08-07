@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialManagementArea` | ✓ | | `_Source` | `FinancialManagementArea` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `i_cnsldtnfinmgmtareatexttp` |  | |  | `_Text as _Text : redirected to composition child i_cnsldtnfinmgmtareatexttp` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | | `_Source` | `FinancialManagementArea` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `i_cnsldtnfinmgmtareatexttp` |  | |  | `_Text as _Text : redirected to composition child i_cnsldtnfinmgmtareatexttp` |  |  |
 
 ## Source Code
 

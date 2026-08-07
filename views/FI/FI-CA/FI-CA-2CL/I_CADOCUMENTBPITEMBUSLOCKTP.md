@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADocumentNumber` | ✓ | |  |  |
-| `CARepetitionItemNumber` | ✓ | |  |  |
-| `CABPItemNumber` | ✓ | |  |  |
-| `CASubItemNumber` | ✓ | |  |  |
-| `CABusinessProcess` | ✓ | |  |  |
-| `CABusinessLockReason` | ✓ | |  |  |
-| `CABusinessLockValidFrom` | ✓ | |  |  |
-| `CABusinessLockValidTo` | ✓ | |  |  |
-| `_DocHeader` | | ✓ | | |
-| `_BPItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  |  |  |  |
+| `CARepetitionItemNumber` | ✓ | |  |  |  |  |
+| `CABPItemNumber` | ✓ | |  |  |  |  |
+| `CASubItemNumber` | ✓ | |  |  |  |  |
+| `CABusinessProcess` | ✓ | |  |  |  |  |
+| `CABusinessLockReason` | ✓ | |  |  |  |  |
+| `CABusinessLockValidFrom` | ✓ | |  |  |  |  |
+| `CABusinessLockValidTo` | ✓ | |  |  |  |  |
+| `_DocHeader` | | ✓ | | | | |
+| `_BPItem` | | ✓ | | | | |
 
 ## Source Code
 

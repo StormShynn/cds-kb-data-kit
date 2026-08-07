@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UnitedStatesTaxCategory` | ✓ | |  | `cast(domvalue_l as txind_007a )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UnitedStatesTaxCategory` | ✓ | |  | `cast(domvalue_l as txind_007a )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

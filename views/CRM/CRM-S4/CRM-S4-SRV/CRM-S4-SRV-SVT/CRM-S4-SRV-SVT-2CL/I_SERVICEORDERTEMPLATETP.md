@@ -29,55 +29,55 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceOrderTemplate` | ✓ | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceOrderTemplateType` |  | |  |  |
-| `ServiceOrderTemplateUUID` |  | |  |  |
-| `SrvcOrdTmplDescription` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `SrvcDocTmplValdtyStartDateTime` |  | |  |  |
-| `SrvcDocTmplValdtyEndDateTime` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `Division` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |
-| `EnterpriseServiceOrganization` |  | |  |  |
-| `ServiceDocumentTemplateType` |  | |  |  |
-| `SrvcDocTemplateSearchTermText` |  | |  |  |
-| `Language` |  | |  |  |
-| `SrvcOrdTmplIsNew` |  | |  |  |
-| `SrvcOrdTmplIsInProcess` |  | |  |  |
-| `SrvcOrdTmplIsReleased` |  | |  |  |
-| `SrvcOrdTmplIsCompleted` |  | |  |  |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceDocumentPriority` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SrvcOrdTmplStatus` | | ✓ | | |
-| `_ServiceOrderTemplateItemTP` | | ✓ | | |
-| `_SrvcOrdTmplReferenceObjectTP` | | ✓ | | |
-| `_SrvcOrdTmplUserStatusTP` | | ✓ | | |
-| `_SrvcOrdTmplLongTextTP` | | ✓ | | |
-| `_SrvcOrdTmplAppointmentTP` | | ✓ | | |
-| `_SrvcOrdTmplDurationTP` | | ✓ | | |
-| `_SrvcOrdTmplPartnerTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceOrderTemplate` | ✓ | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceOrderTemplateType` |  | |  |  |  |  |
+| `ServiceOrderTemplateUUID` |  | |  |  |  |  |
+| `SrvcOrdTmplDescription` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `SrvcDocTmplValdtyStartDateTime` |  | |  |  |  |  |
+| `SrvcDocTmplValdtyEndDateTime` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
+| `EnterpriseServiceOrganization` |  | |  |  |  |  |
+| `ServiceDocumentTemplateType` |  | |  |  |  |  |
+| `SrvcDocTemplateSearchTermText` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `SrvcOrdTmplIsNew` |  | |  |  |  |  |
+| `SrvcOrdTmplIsInProcess` |  | |  |  |  |  |
+| `SrvcOrdTmplIsReleased` |  | |  |  |  |  |
+| `SrvcOrdTmplIsCompleted` |  | |  |  |  |  |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocumentPriority` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SrvcOrdTmplStatus` | | ✓ | | | | |
+| `_ServiceOrderTemplateItemTP` | | ✓ | | | | |
+| `_SrvcOrdTmplReferenceObjectTP` | | ✓ | | | | |
+| `_SrvcOrdTmplUserStatusTP` | | ✓ | | | | |
+| `_SrvcOrdTmplLongTextTP` | | ✓ | | | | |
+| `_SrvcOrdTmplAppointmentTP` | | ✓ | | | | |
+| `_SrvcOrdTmplDurationTP` | | ✓ | | | | |
+| `_SrvcOrdTmplPartnerTP` | | ✓ | | | | |
 
 ## Source Code
 

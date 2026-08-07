@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintNotifDetectionCodeGroup` | ✓ | |  | `detectioncodegroup` |
-| `Language` | ✓ | |  | `language` |
-| `MaintNotifDetectionCodeGrpTxt` |  | |  | `detectioncodegrouptext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintNotifDetectionCodeGroup` | ✓ | |  | `detectioncodegroup` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `MaintNotifDetectionCodeGrpTxt` |  | |  | `detectioncodegrouptext` |  |  |
 
 ## Source Code
 

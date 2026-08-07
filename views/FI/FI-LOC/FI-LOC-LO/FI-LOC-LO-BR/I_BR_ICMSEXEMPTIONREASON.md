@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_ICMSExemptionReason` | ✓ | |  | `cast( substring(domvalue_l, 1, 2) as logbr_icmsexemptionreason preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_ICMSExemptionReason` | ✓ | |  | `cast( substring(domvalue_l, 1, 2) as logbr_icmsexemptionreason preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

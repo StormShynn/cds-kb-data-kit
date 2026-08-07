@@ -28,97 +28,97 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PersonnelSettlementDocument` | ✓ | |  |  |
-| `PersSettlmtDocItem` | ✓ | |  |  |
-| `PersSettlmtDocCurrency` |  | |  |  |
-| `PricingDocument` |  | |  |  |
-| `Product` |  | |  | `}] } Product` |
-| `ProductGroup` |  | |  | `}] } ProductGroup` |
-| `Plant` |  | |  | `}] } Plant` |
-| `PricingDate` |  | |  |  |
-| `SettlmtQuantity` |  | |  |  |
-| `SettlmtQuantityUnit` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `NetPriceQuantityUnit` |  | |  |  |
-| `SettlmtToBaseQuantityNmrtr` |  | |  |  |
-| `SettlmtToBaseQuantityDnmntr` |  | |  |  |
-| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |
-| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ItemNetAmount` |  | |  | `PersSettlmtDocItemNetAmount` |
-| `Subtotal1Amount` |  | |  | `PersSettlmtDocSubtotal1Amount` |
-| `Subtotal2Amount` |  | |  | `PersSettlmtDocSubtotal2Amount` |
-| `Subtotal3Amount` |  | |  | `PersSettlmtDocSubtotal3Amount` |
-| `Subtotal4Amount` |  | |  | `PersSettlmtDocSubtotal4Amount` |
-| `Subtotal5Amount` |  | |  | `PersSettlmtDocSubtotal5Amount` |
-| `Subtotal6Amount` |  | |  | `PersSettlmtDocSubtotal6Amount` |
-| `RebateBasisAmount` |  | |  | `PersSettlmtDocRbteBasisAmount` |
-| `SettlmtItmStatisticalPrpty` |  | |  | `PersSettlmtDocItmStstclPrpty` |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `SettlmtItemActivityReason` |  | |  | `PersSettlmtDocItmActyReason` |
-| `PersSettlmtDocItemText` |  | |  |  |
-| `BusinessArea` |  | |  | `}] } BusinessArea` |
-| `ControllingArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElementInternalID` |  | |  | `}] } WBSElementInternalID` |
-| `SettlementOrder` |  | |  | `PersSettlmtDocOrder` |
-| `PrcDetnIsIncmplt` |  | |  |  |
-| `PersSettlmtDocItemCat` |  | |  |  |
-| `SettlmtItemReltdCndnContr` |  | |  | `}] } SettlmtItemReltdCndnContr` |
-| `PersSettlmtDocItemStatus` |  | |  |  |
-| `PersSettlmtDocItemRvsd` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SettlementFiscalYear` |  | |  |  |
-| `CompanyCode` |  | |  | `}] } CompanyCode` |
-| `GLAccount` |  | |  | `}] } GLAccount` |
-| `ProductHierarchy` |  | |  |  |
-| `SalesSpcfcProductGroup1` |  | |  |  |
-| `SalesSpcfcProductGroup2` |  | |  |  |
-| `SalesSpcfcProductGroup3` |  | |  |  |
-| `SalesSpcfcProductGroup4` |  | |  |  |
-| `SalesSpcfcProductGroup5` |  | |  |  |
-| `BusTransDocReferenceID` |  | |  |  |
-| `BusTransDocReferenceItemID` |  | |  |  |
-| `PersSettlmtDocItemChangeState` |  | |  | `cast( ' ' as wlf_change_state_item preserving type )` |
-| `_PersSettlmtDoc` | | ✓ | | |
-| `_PersSettlmtDocItmPrcgElmnt` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_SettlmtItmStatisticalPrpty` | | ✓ | | |
-| `_SettlmtItemActivityReason` | | ✓ | | |
-| `_BusinessAreaText` | | ✓ | | |
-| `_SettlmtItemReltdCndnContr` | | ✓ | | |
-| `_PersSettlmtDocCurrency` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_SettlmtQuantityUnit` | | ✓ | | |
-| `_NetPriceQuantityUnit` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_ItemWeightUnit` | | ✓ | | |
-| `_ItemVolumeUnit` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_PersSettlmtDocItemCat` | | ✓ | | |
-| `_PersSettlmtDocItemStatus` | | ✓ | | |
-| `_PersSettlmtDocItemRvsd` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_SalesSpcfcProductGroup1` | | ✓ | | |
-| `_SalesSpcfcProductGroup2` | | ✓ | | |
-| `_SalesSpcfcProductGroup3` | | ✓ | | |
-| `_SalesSpcfcProductGroup4` | | ✓ | | |
-| `_SalesSpcfcProductGroup5` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonnelSettlementDocument` | ✓ | |  |  |  |  |
+| `PersSettlmtDocItem` | ✓ | |  |  |  |  |
+| `PersSettlmtDocCurrency` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `SettlmtQuantity` |  | |  |  |  |  |
+| `SettlmtQuantityUnit` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |  |  |
+| `SettlmtToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `SettlmtToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |  |  |
+| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ItemNetAmount` |  | |  | `PersSettlmtDocItemNetAmount` |  |  |
+| `Subtotal1Amount` |  | |  | `PersSettlmtDocSubtotal1Amount` |  |  |
+| `Subtotal2Amount` |  | |  | `PersSettlmtDocSubtotal2Amount` |  |  |
+| `Subtotal3Amount` |  | |  | `PersSettlmtDocSubtotal3Amount` |  |  |
+| `Subtotal4Amount` |  | |  | `PersSettlmtDocSubtotal4Amount` |  |  |
+| `Subtotal5Amount` |  | |  | `PersSettlmtDocSubtotal5Amount` |  |  |
+| `Subtotal6Amount` |  | |  | `PersSettlmtDocSubtotal6Amount` |  |  |
+| `RebateBasisAmount` |  | |  | `PersSettlmtDocRbteBasisAmount` |  |  |
+| `SettlmtItmStatisticalPrpty` |  | |  | `PersSettlmtDocItmStstclPrpty` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `SettlmtItemActivityReason` |  | |  | `PersSettlmtDocItmActyReason` |  |  |
+| `PersSettlmtDocItemText` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `SettlementOrder` |  | |  | `PersSettlmtDocOrder` |  |  |
+| `PrcDetnIsIncmplt` |  | |  |  |  |  |
+| `PersSettlmtDocItemCat` |  | |  |  |  |  |
+| `SettlmtItemReltdCndnContr` |  | |  |  |  |  |
+| `PersSettlmtDocItemStatus` |  | |  |  |  |  |
+| `PersSettlmtDocItemRvsd` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SettlementFiscalYear` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `ProductHierarchy` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup1` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup2` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup3` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup4` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup5` |  | |  |  |  |  |
+| `BusTransDocReferenceID` |  | |  |  |  |  |
+| `BusTransDocReferenceItemID` |  | |  |  |  |  |
+| `PersSettlmtDocItemChangeState` |  | |  | `cast( ' ' as wlf_change_state_item preserving type )` |  |  |
+| `_PersSettlmtDoc` | | ✓ | | | | |
+| `_PersSettlmtDocItmPrcgElmnt` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_SettlmtItmStatisticalPrpty` | | ✓ | | | | |
+| `_SettlmtItemActivityReason` | | ✓ | | | | |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_SettlmtItemReltdCndnContr` | | ✓ | | | | |
+| `_PersSettlmtDocCurrency` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_SettlmtQuantityUnit` | | ✓ | | | | |
+| `_NetPriceQuantityUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_ItemWeightUnit` | | ✓ | | | | |
+| `_ItemVolumeUnit` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_PersSettlmtDocItemCat` | | ✓ | | | | |
+| `_PersSettlmtDocItemStatus` | | ✓ | | | | |
+| `_PersSettlmtDocItemRvsd` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup1` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup2` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup3` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup4` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup5` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NodeName` | ✓ | |  |  |
-| `FieldName` | ✓ | |  |  |
-| `CodeValue` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NodeName` | ✓ | |  |  |  |  |
+| `FieldName` | ✓ | |  |  |  |  |
+| `CodeValue` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

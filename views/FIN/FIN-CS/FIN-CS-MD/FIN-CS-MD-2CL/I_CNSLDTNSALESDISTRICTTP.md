@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDistrict` | ✓ | | `_CnsldtnSalesDistrict` | `SalesDistrict` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnSalesDistrict` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnSalesDistrictTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnSalesDistrictTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDistrict` | ✓ | | `_CnsldtnSalesDistrict` | `SalesDistrict` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnSalesDistrict` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnSalesDistrictTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnSalesDistrictTextTP` |  |  |
 
 ## Source Code
 

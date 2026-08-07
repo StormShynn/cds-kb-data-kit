@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `GoodsMovementType` | ✓ | |  | `bwart` |
-| `GoodsMovementReasonCode` | ✓ | |  | `grund` |
-| `GoodsMovementReasonName` |  | |  | `grtxt` |
-| `_Language` | | ✓ | | |
-| `_GoodsMovementType` | | ✓ | | |
-| `_GoodsMovementReasonCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `GoodsMovementType` | ✓ | |  | `bwart` |  |  |
+| `GoodsMovementReasonCode` | ✓ | |  | `grund` |  |  |
+| `GoodsMovementReasonName` |  | |  | `grtxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_GoodsMovementReasonCode` | | ✓ | | | | |
 
 ## Associations
 

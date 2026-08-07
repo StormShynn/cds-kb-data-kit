@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JntOpgAgrmt` | ✓ | |  | `joa` |
-| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |
-| `JntVntrNonSignatoryRcvryPct` |  | |  | `nosigrp` |
-| `JntVntrNonConsentRcvryPnltyPct` |  | |  | `noconrp` |
-| `_CompanyCode` | | ✓ | | |
-| `_JntOpgAgrmt` | | ✓ | | |
-| `_JntVntrPenaltyCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JntOpgAgrmt` | ✓ | |  | `joa` |  |  |
+| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |  |  |
+| `JntVntrNonSignatoryRcvryPct` |  | |  | `nosigrp` |  |  |
+| `JntVntrNonConsentRcvryPnltyPct` |  | |  | `noconrp` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntOpgAgrmt` | | ✓ | | | | |
+| `_JntVntrPenaltyCategory` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `CnsldtnFinTransTypeHierarchy` | ✓ | |  | `cast(_Source.CnsldtnUniversalHierarchy as fincs_fintransactiontypehier preserving type )` |
-| `HierarchyNode` | ✓ | | `_Source` | `HierarchyNode` |
-| `ValidityEndDate` | ✓ | | `_Source` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_Source` | `ValidityStartDate` |
-| `ParentNode` |  | | `_Source` | `ParentNode` |
-| `HierarchyVersion` |  | | `_Source` | `HierarchyVersion` |
-| `HierarchyNodeText` |  | | `_Source` | `HierarchyNodeText` |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `CnsldtnFinTransTypeHierarchy` | ✓ | |  | `cast(_Source.CnsldtnUniversalHierarchy as fincs_fintransactiontypehier preserving type )` |  |  |
+| `HierarchyNode` | ✓ | | `_Source` | `HierarchyNode` |  |  |
+| `ValidityEndDate` | ✓ | | `_Source` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_Source` | `ValidityStartDate` |  |  |
+| `ParentNode` |  | | `_Source` | `ParentNode` |  |  |
+| `HierarchyVersion` |  | | `_Source` | `HierarchyVersion` |  |  |
+| `HierarchyNodeText` |  | | `_Source` | `HierarchyNodeText` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

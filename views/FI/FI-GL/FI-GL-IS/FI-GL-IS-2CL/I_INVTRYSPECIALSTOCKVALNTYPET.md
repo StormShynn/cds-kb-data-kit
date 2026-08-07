@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `InventorySpecialStockValnType` | ✓ | |  | `cast( dd07t.domvalue_l as fis_inventoryspclstockvalntype )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `InventorySpclStkValnTypeName` |  | |  | `cast( dd07t.ddtext as fis_invtryspclstkvalntypename preserving type )` |
-| `_Language` | | ✓ | | |
-| `_InvtrySpecialStockValnType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `InventorySpecialStockValnType` | ✓ | |  | `cast( dd07t.domvalue_l as fis_inventoryspclstockvalntype )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `InventorySpclStkValnTypeName` |  | |  | `cast( dd07t.ddtext as fis_invtryspclstkvalntypename preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InvtrySpecialStockValnType` | | ✓ | | | | |
 
 ## Associations
 

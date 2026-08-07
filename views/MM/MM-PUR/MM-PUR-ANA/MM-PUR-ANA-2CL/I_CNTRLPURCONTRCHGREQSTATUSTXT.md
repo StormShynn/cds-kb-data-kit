@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `PurgDocChangeRequestStatus` | ✓ | |  | `cast( dd07t.domvalue_l as abap.char( 2 ) )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ChangeRequestNote` |  | |  | `cast( dd07t.ddtext as abap.char(60) )` |
-| `_Language` | | ✓ | | |
-| `_ChangeRequestStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `PurgDocChangeRequestStatus` | ✓ | |  | `cast( dd07t.domvalue_l as abap.char( 2 ) )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ChangeRequestNote` |  | |  | `cast( dd07t.ddtext as abap.char(60) )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ChangeRequestStatus` | | ✓ | | | | |
 
 ## Associations
 

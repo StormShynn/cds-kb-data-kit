@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FreightBookingItemUUID` |  | |  | `/scmtms/vdm_frt_bkg_item_uuid` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FreightBookingItemUUID` |  | |  | `/scmtms/vdm_frt_bkg_item_uuid` |  |  |
 
 ## Source Code
 

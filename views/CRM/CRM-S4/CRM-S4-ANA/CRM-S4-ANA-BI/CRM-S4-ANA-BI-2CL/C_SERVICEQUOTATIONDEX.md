@@ -28,40 +28,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |
-| `ServiceDocument` | ✓ | |  |  |
-| `ServiceDocumentDescription` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `SrvcQtanValidityStartDateTime` |  | |  |  |
-| `SrvcQtanValidityEndDateTime` |  | |  |  |
-| `ServiceDocumentIsReleased` |  | |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |
-| `ServiceDocumentIsRejected` |  | |  |  |
-| `ServiceDocumentStatus` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |
-| `RespyMgmtGlobalTeamID` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `ServiceDocumentRejectionReason` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocGrossAmount` |  | |  | `} ServiceQuotation.ServiceDocGrossAmount` |
-| `ServiceDocNetAmount` |  | |  | `} ServiceQuotation.ServiceDocNetAmount` |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceQuotation.ServiceDocTaxAmount` |
-| `ReferenceInHouseRepair` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `SrvcQtanFunctionalLocation` |  | |  | `cast ( ServiceQtanRefObj.FunctionalLocation as functionallocation preserving type )` |
-| `ProductID` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |  |  |
+| `ServiceDocument` | ✓ | |  |  |  |  |
+| `ServiceDocumentDescription` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `SrvcQtanValidityStartDateTime` |  | |  |  |  |  |
+| `SrvcQtanValidityEndDateTime` |  | |  |  |  |  |
+| `ServiceDocumentIsReleased` |  | |  |  |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |  |  |
+| `ServiceDocumentIsRejected` |  | |  |  |  |  |
+| `ServiceDocumentStatus` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `ServiceDocumentRejectionReason` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `ReferenceInHouseRepair` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `SrvcQtanFunctionalLocation` |  | |  | `cast ( ServiceQtanRefObj.FunctionalLocation as functionallocation preserving type )` |  |  |
+| `ProductID` |  | |  |  |  |  |
 
 ## Associations
 

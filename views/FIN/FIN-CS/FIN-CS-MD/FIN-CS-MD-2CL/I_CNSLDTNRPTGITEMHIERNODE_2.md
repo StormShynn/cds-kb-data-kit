@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( left( _HierarchyNode.HierarchyNodeClass, 2) as fincs_conschartofaccounts preserving type )` |
-| `ConsolidationReportingItemHier` | ✓ | |  | `cast( substring( _HierarchyNode.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |
-| `HierarchyNode` | ✓ | | `_HierarchyNode` | `HierarchyNode` |
-| `ValidityEndDate` | ✓ | | `_HierarchyNode` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyNode` | `ValidityStartDate` |
-| `ParentNode` |  | | `_HierarchyNode` | `ParentNode` |
-| `HierarchyVersion` |  | | `_HierarchyNode` | `HierarchyVersion` |
-| `ConsolidationReportingItem` |  | |  | `cast( left(_HierarchyNode.UniversalHierarchyLeafValue, 10) as fincs_reportingitem preserving type )` |
-| `HierarchyNodeSequence` |  | | `_HierarchyNode` | `HierarchyNodeSequence` |
-| `HierarchyNodeLevel` |  | | `_HierarchyNode` | `HierarchyNodeLevel` |
-| `NodeType` |  | | `_HierarchyNode` | `NodeType` |
-| `_ReportingItem` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( left( _HierarchyNode.HierarchyNodeClass, 2) as fincs_conschartofaccounts preserving type )` |  |  |
+| `ConsolidationReportingItemHier` | ✓ | |  | `cast( substring( _HierarchyNode.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |  |  |
+| `HierarchyNode` | ✓ | | `_HierarchyNode` | `HierarchyNode` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyNode` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyNode` | `ValidityStartDate` |  |  |
+| `ParentNode` |  | | `_HierarchyNode` | `ParentNode` |  |  |
+| `HierarchyVersion` |  | | `_HierarchyNode` | `HierarchyVersion` |  |  |
+| `ConsolidationReportingItem` |  | |  | `cast( left(_HierarchyNode.UniversalHierarchyLeafValue, 10) as fincs_reportingitem preserving type )` |  |  |
+| `HierarchyNodeSequence` |  | | `_HierarchyNode` | `HierarchyNodeSequence` |  |  |
+| `HierarchyNodeLevel` |  | | `_HierarchyNode` | `HierarchyNodeLevel` |  |  |
+| `NodeType` |  | | `_HierarchyNode` | `NodeType` |  |  |
+| `_ReportingItem` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

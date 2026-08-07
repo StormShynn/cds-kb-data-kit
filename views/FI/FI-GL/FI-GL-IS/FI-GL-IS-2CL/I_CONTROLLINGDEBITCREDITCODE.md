@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingDebitCreditCode` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 1) as fins_co_belkz preserving type)` |
-| `DomainValue` |  | |  | `substring(dd07l.domvalue_l, 1, 1)` |
-| `DomainValue_2` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingDebitCreditCode` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 1) as fins_co_belkz preserving type)` |  |  |
+| `DomainValue` |  | |  | `substring(dd07l.domvalue_l, 1, 1)` |  |  |
+| `DomainValue_2` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

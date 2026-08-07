@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateValidityLfcycStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tcmm_life_cycle_status preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspRateValidityLfcycStsText` |  | |  | `cast(ddtext as /scmtms/vdm_rate_lfcyc_sts_txt preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspRateTableValdtySts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateValidityLfcycStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tcmm_life_cycle_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspRateValidityLfcycStsText` |  | |  | `cast(ddtext as /scmtms/vdm_rate_lfcyc_sts_txt preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspRateTableValdtySts` | | ✓ | | | | |
 
 ## Associations
 

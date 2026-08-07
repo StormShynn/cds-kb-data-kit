@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocumentStamp` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LglCntntMDocumentStampName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocumentStamp` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LglCntntMDocumentStampName` |  | |  |  |  |  |
 
 ## Source Code
 

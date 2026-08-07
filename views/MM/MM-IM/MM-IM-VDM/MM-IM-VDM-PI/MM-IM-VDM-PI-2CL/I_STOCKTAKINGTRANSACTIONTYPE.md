@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InventoryTransactionType` | ✓ | |  |  |
-| `IsPhysicalInventoryRelevant` |  | |  |  |
-| `IsMaterialDocumentRelevant` |  | |  |  |
-| `IsReservationRelevant` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InventoryTransactionType` | ✓ | |  |  |  |  |
+| `IsPhysicalInventoryRelevant` |  | |  |  |  |  |
+| `IsMaterialDocumentRelevant` |  | |  |  |  |  |
+| `IsReservationRelevant` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

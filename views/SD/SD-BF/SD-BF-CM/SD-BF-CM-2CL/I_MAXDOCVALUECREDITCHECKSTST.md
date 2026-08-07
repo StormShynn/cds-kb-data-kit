@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaxDocValueCreditCheckStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `MaxDocValueCreditCheckStsDesc` |  | |  | `bezei` |
-| `_MaxDocValueCreditCheckStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaxDocValueCreditCheckStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MaxDocValueCreditCheckStsDesc` |  | |  | `bezei` |  |  |
+| `_MaxDocValueCreditCheckStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

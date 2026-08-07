@@ -31,56 +31,56 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectUUID` | ✓ | |  |  |
-| `ProjectSummaryTaskUUID` |  | |  |  |
-| `ProjectInternalID` |  | |  |  |
-| `Project` |  | |  |  |
-| `ProjectCategory` |  | |  |  |
-| `ProjectDescription` |  | |  |  |
-| `EnterpriseProjectType` |  | |  |  |
-| `PriorityCode` |  | |  |  |
-| `ProjectStartDate` |  | |  |  |
-| `ProjectEndDate` |  | |  |  |
-| `ActualStartDate` |  | |  |  |
-| `ActualEndDate` |  | |  |  |
-| `CustomerUUID` |  | |  |  |
-| `EnterpriseProjectServiceOrg` |  | |  |  |
-| `EntProjectIsConfidential` |  | |  |  |
-| `RestrictedTimePosting` |  | |  |  |
-| `ProcessingStatus` |  | |  |  |
-| `ResponsibleCostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ProjectProfileCode` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Location` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `ProjectCurrency` |  | |  |  |
-| `AvailabilityControlProfile` |  | |  |  |
-| `AvailabilityControlIsActive` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `IsBillingRelevant` |  | |  |  |
-| `InvestmentProfile` |  | |  |  |
-| `ProjectLastChangedDateTime` |  | |  |  |
-| `EntProjIsMultiSlsOrdItmsEnbld` |  | |  |  |
-| `ResultAnalysisInternalID` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `EntProjHasProjectStockEnabled` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_EnterpriseProjectJVA` | | ✓ | | |
-| `_EntProjectPublicSector` | | ✓ | | |
-| `_EntProjBlkFunc` | | ✓ | | |
-| `_EntProjRole` | | ✓ | | |
-| `_EntProjTeamMember` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  |  |  |  |
+| `ProjectSummaryTaskUUID` |  | |  |  |  |  |
+| `ProjectInternalID` |  | |  |  |  |  |
+| `Project` |  | |  |  |  |  |
+| `ProjectCategory` |  | |  |  |  |  |
+| `ProjectDescription` |  | |  |  |  |  |
+| `EnterpriseProjectType` |  | |  |  |  |  |
+| `PriorityCode` |  | |  |  |  |  |
+| `ProjectStartDate` |  | |  |  |  |  |
+| `ProjectEndDate` |  | |  |  |  |  |
+| `ActualStartDate` |  | |  |  |  |  |
+| `ActualEndDate` |  | |  |  |  |  |
+| `CustomerUUID` |  | |  |  |  |  |
+| `EnterpriseProjectServiceOrg` |  | |  |  |  |  |
+| `EntProjectIsConfidential` |  | |  |  |  |  |
+| `RestrictedTimePosting` |  | |  |  |  |  |
+| `ProcessingStatus` |  | |  |  |  |  |
+| `ResponsibleCostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ProjectProfileCode` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Location` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `ProjectCurrency` |  | |  |  |  |  |
+| `AvailabilityControlProfile` |  | |  |  |  |  |
+| `AvailabilityControlIsActive` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `IsBillingRelevant` |  | |  |  |  |  |
+| `InvestmentProfile` |  | |  |  |  |  |
+| `ProjectLastChangedDateTime` |  | |  |  |  |  |
+| `EntProjIsMultiSlsOrdItmsEnbld` |  | |  |  |  |  |
+| `ResultAnalysisInternalID` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `EntProjHasProjectStockEnabled` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_EnterpriseProjectJVA` | | ✓ | | | | |
+| `_EntProjectPublicSector` | | ✓ | | | | |
+| `_EntProjBlkFunc` | | ✓ | | | | |
+| `_EntProjRole` | | ✓ | | | | |
+| `_EntProjTeamMember` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Source Code
 

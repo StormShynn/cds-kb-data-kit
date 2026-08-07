@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ABCIndicator` | ✓ | |  | `abckz` |
-| `ABCIndicatorCodeOID` |  | |  | `cast( t370c.abckz as abcindicator_oid )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ABCIndicator` | ✓ | |  | `abckz` |  |  |
+| `ABCIndicatorCodeOID` |  | |  | `cast( t370c.abckz as abcindicator_oid )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

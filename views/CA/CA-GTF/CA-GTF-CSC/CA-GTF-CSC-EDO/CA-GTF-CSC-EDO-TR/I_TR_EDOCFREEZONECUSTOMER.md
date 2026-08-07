@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TR_ElectronicDocumentCustomer` | ✓ | |  |  |
-| `TR_EDocMarkFreeZoneCustomer` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TR_ElectronicDocumentCustomer` | ✓ | |  |  |  |  |
+| `TR_EDocMarkFreeZoneCustomer` |  | |  |  |  |  |
 
 ## Source Code
 

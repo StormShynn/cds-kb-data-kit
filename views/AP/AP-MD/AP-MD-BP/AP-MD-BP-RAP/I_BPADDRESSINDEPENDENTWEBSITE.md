@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |
-| `AddressID` | ✓ | |  |  |
-| `Person` | ✓ | |  | `AddressPersonID` |
-| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |
-| `ValidityStartDate` |  | |  | `cast ( '00010101' as abap.dats)` |
-| `IsDefaultURLAddress` |  | |  | `URLIsCurrentDefault` |
-| `CommNumberIsNotUsed` |  | |  | `cast ( '' as ad_flnouse )` |
-| `UniformResourceIdentifierType` |  | |  | `AddressManagementURIType` |
-| `SearchURLAddress` |  | |  | `cast ( '' as ad_uri2 )` |
-| `URLFieldLength` |  | |  | `cast ('00000' as abap.int4 )` |
-| `WebsiteURL` |  | |  | `UniformResourceIdentifier` |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `Person` | ✓ | |  | `AddressPersonID` | `CHAR(10)` | Person Number |
+| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` | `NUMC(3)` | Sequence Number |
+| `ValidityStartDate` |  | |  | `cast ( '00010101' as abap.dats)` | `DATS(8)` |  |
+| `IsDefaultURLAddress` |  | |  | `URLIsCurrentDefault` | `CHAR(1)` | Flag: this address is the default address |
+| `CommNumberIsNotUsed` |  | |  | `cast ( '' as ad_flnouse )` | `CHAR(1)` | Flag: This Communication Number is Not Used |
+| `UniformResourceIdentifierType` |  | |  | `AddressManagementURIType` | `CHAR(3)` | URI type flag |
+| `SearchURLAddress` |  | |  | `cast ( '' as ad_uri2 )` | `CHAR(50)` | URI address search field |
+| `URLFieldLength` |  | |  | `cast ('00000' as abap.int4 )` | `INT4(10)` |  |
+| `WebsiteURL` |  | |  | `UniformResourceIdentifier` | `STRI(2048)` |  |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

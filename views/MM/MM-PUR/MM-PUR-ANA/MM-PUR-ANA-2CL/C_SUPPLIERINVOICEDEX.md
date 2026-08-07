@@ -31,32 +31,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `SupplierInvoiceIDByInvcgParty` |  | |  |  |
-| `InvoicingParty` |  | |  |  |
-| `IsInvoice` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `InvoiceGrossAmount` |  | |  |  |
-| `SuplrInvcAutomReducedAmount` |  | |  |  |
-| `UnplannedDeliveryCost` |  | |  |  |
-| `DocumentHeaderText` |  | |  |  |
-| `SupplierInvoiceOrigin` |  | |  |  |
-| `SuplrInvcManuallyReducedAmount` |  | |  |  |
-| `UnplannedDeliveryCostTaxCode` |  | |  |  |
-| `SupplierInvoiceStatus` |  | |  |  |
-| `ReverseDocument` |  | |  |  |
-| `ReverseDocumentFiscalYear` |  | |  |  |
-| `_SupplierInvoiceItemDEX` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_InvoicingParty` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_SupplierInvoiceStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `SupplierInvoiceIDByInvcgParty` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `IsInvoice` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `InvoiceGrossAmount` |  | |  |  |  |  |
+| `SuplrInvcAutomReducedAmount` |  | |  |  |  |  |
+| `UnplannedDeliveryCost` |  | |  |  |  |  |
+| `DocumentHeaderText` |  | |  |  |  |  |
+| `SupplierInvoiceOrigin` |  | |  |  |  |  |
+| `SuplrInvcManuallyReducedAmount` |  | |  |  |  |  |
+| `UnplannedDeliveryCostTaxCode` |  | |  |  |  |  |
+| `SupplierInvoiceStatus` |  | |  |  |  |  |
+| `ReverseDocument` |  | |  |  |  |  |
+| `ReverseDocumentFiscalYear` |  | |  |  |  |  |
+| `_SupplierInvoiceItemDEX` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_InvoicingParty` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_SupplierInvoiceStatus` | | ✓ | | | | |
 
 ## Associations
 

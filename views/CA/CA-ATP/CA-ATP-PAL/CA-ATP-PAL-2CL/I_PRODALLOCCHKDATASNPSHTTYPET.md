@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `ProdAllocChkDataSnapshotType` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkdatasnapshottype preserving type )` |
-| `ProdAllocChkDataSnpshtTypeDesc` |  | |  | `cast( ddtext as prodallocchkdatasnpshttypedesc preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_ProdAllocChkDataSnpshtType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `ProdAllocChkDataSnapshotType` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkdatasnapshottype preserving type )` |  |  |
+| `ProdAllocChkDataSnpshtTypeDesc` |  | |  | `cast( ddtext as prodallocchkdatasnpshttypedesc preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProdAllocChkDataSnpshtType` | | ✓ | | | | |
 
 ## Associations
 

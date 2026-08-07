@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPPlant` | ✓ | |  | `werks` |
-| `MRPPlanningCalendar` | ✓ | |  | `mrppp` |
-| `MRPPlanningCalendarCalcRule` |  | |  | `mrpps` |
-| `ValidityStartDate` |  | |  | `datuv` |
-| `ValidityEndDate` |  | |  | `datub` |
-| `CreationDate` |  | |  | `erfdt` |
-| `_Plant` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ScheduleLine` | | ✓ | | |
-| `_CalculationRule` | | ✓ | | |
-| `_ValidityStartDate` | | ✓ | | |
-| `_ValidityEndDate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPPlant` | ✓ | |  | `werks` |  |  |
+| `MRPPlanningCalendar` | ✓ | |  | `mrppp` |  |  |
+| `MRPPlanningCalendarCalcRule` |  | |  | `mrpps` |  |  |
+| `ValidityStartDate` |  | |  | `datuv` |  |  |
+| `ValidityEndDate` |  | |  | `datub` |  |  |
+| `CreationDate` |  | |  | `erfdt` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ScheduleLine` | | ✓ | | | | |
+| `_CalculationRule` | | ✓ | | | | |
+| `_ValidityStartDate` | | ✓ | | | | |
+| `_ValidityEndDate` | | ✓ | | | | |
 
 ## Associations
 

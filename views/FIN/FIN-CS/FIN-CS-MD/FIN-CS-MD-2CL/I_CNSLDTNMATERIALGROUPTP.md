@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialGroup` | ✓ | | `_CnsldtnMaterialGroup` | `MaterialGroup` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnMaterialGroup` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnMaterialGroupTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnMaterialGroupTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialGroup` | ✓ | | `_CnsldtnMaterialGroup` | `MaterialGroup` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnMaterialGroup` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnMaterialGroupTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnMaterialGroupTextTP` |  |  |
 
 ## Source Code
 

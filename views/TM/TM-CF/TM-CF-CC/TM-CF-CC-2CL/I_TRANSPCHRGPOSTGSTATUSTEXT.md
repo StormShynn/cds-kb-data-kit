@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChargePostingStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/vdm_posting_status preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspChargePostingStatusDesc` |  | |  | `cast(ddtext as /scmtms/vdm_chrg_postg_st_desc preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TranspChargePostingStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChargePostingStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/vdm_posting_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspChargePostingStatusDesc` |  | |  | `cast(ddtext as /scmtms/vdm_chrg_postg_st_desc preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspChargePostingStatus` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressGroup` | ✓ | |  | `addr_group` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressGroup` | ✓ | |  | `addr_group` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

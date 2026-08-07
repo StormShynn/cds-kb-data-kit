@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EG_EDocSalesOrg` | ✓ | |  |  |
-| `EG_EDocPartnerFunction` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EG_EDocSalesOrg` | ✓ | |  |  |  |  |
+| `EG_EDocPartnerFunction` |  | |  |  |  |  |
 
 ## Source Code
 

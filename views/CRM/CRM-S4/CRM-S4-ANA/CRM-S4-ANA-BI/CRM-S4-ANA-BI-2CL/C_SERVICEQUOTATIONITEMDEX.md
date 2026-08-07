@@ -29,46 +29,46 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |
-| `ServiceDocument` | ✓ | |  |  |
-| `ServiceDocumentItem` | ✓ | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocumentItemDescription` |  | |  |  |
-| `ServiceDocumentItemIsRejected` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  | `ResponsibleEmployee` |
-| `RespyMgmtGlobalTeamID` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `Product` |  | |  |  |
-| `ServiceDocumentItemQuantity` |  | |  | `} ServiceQuotationItem.ServiceDocumentItemQuantity` |
-| `ServiceDocItemQuantityUnit` |  | |  |  |
-| `ServiceDuration` |  | |  |  |
-| `ServiceDurationUnit` |  | |  |  |
-| `ServiceDocumentItemIsQuotation` |  | |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |
-| `ServiceDocumentItemStatus` |  | |  |  |
-| `ServiceDocItemCategory` |  | |  |  |
-| `ServiceDocItemGrossAmount` |  | |  | `} ServiceQuotationItem.ServiceDocItemGrossAmount` |
-| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceQuotationItem.ServiceDocumentItemNetAmount` |
-| `ServiceDocumentItemTaxAmount` |  | |  | `} ServiceQuotationItem.ServiceDocumentItemTaxAmount` |
-| `ServiceDocItemRejectionReason` |  | |  |  |
-| `ParentServiceQuotationItem` |  | |  | `ServiceDocumentItem` |
-| `ServiceDocumentItemObjectType` |  | |  |  |
-| `ReferenceServiceContract` |  | |  | `ServiceDocument` |
-| `ReferenceServiceContractItem` |  | |  | `ServiceDocumentItem` |
-| `SerialNumber` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `SrvcQtanItemFunctionalLocation` |  | |  | `cast ( ServiceQtanItemRefObj.FunctionalLocation as functionallocation preserving type )` |
-| `ProductID` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |  |  |
+| `ServiceDocument` | ✓ | |  |  |  |  |
+| `ServiceDocumentItem` | ✓ | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocumentItemDescription` |  | |  |  |  |  |
+| `ServiceDocumentItemIsRejected` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  | `ResponsibleEmployee` |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ServiceDocumentItemQuantity` |  | |  |  |  |  |
+| `ServiceDocItemQuantityUnit` |  | |  |  |  |  |
+| `ServiceDuration` |  | |  |  |  |  |
+| `ServiceDurationUnit` |  | |  |  |  |  |
+| `ServiceDocumentItemIsQuotation` |  | |  |  |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
+| `ServiceDocumentItemStatus` |  | |  |  |  |  |
+| `ServiceDocItemCategory` |  | |  |  |  |  |
+| `ServiceDocItemGrossAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
+| `ServiceDocItemRejectionReason` |  | |  |  |  |  |
+| `ParentServiceQuotationItem` |  | |  | `ServiceDocumentItem` |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
+| `ReferenceServiceContract` |  | |  | `ServiceDocument` |  |  |
+| `ReferenceServiceContractItem` |  | |  | `ServiceDocumentItem` |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `SrvcQtanItemFunctionalLocation` |  | |  | `cast ( ServiceQtanItemRefObj.FunctionalLocation as functionallocation preserving type )` |  |  |
+| `ProductID` |  | |  |  |  |  |
 
 ## Associations
 

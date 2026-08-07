@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentDate` |  | |  | `fkdat` |
-| `ReversalReason` |  | |  | `stgrd` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentDate` |  | |  | `fkdat` |  |  |
+| `ReversalReason` |  | |  | `stgrd` |  |  |
 
 ## Source Code
 

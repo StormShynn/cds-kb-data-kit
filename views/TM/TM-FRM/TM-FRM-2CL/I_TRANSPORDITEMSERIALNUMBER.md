@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdItemSerialNumberUUID` | ✓ | |  | `cast(TranspOrdItemSerialNumber.db_key as /scmtms/vdm_itm_serial_nr_uuid preserving type)` |
-| `TransportationOrderUUID` |  | |  | `cast(TranspOrdItemSerialNumber.root_key as /scmtms/vdm_tor_db_key preserving type)` |
-| `TransportationOrderItemUUID` |  | |  | `cast(TranspOrdItemSerialNumber.parent_key as /scmtms/vdm_tor_item_db_key preserving type)` |
-| `TranspOrdItemSerialNumber` |  | |  | `cast(TranspOrdItemSerialNumber.serial_id as /scmtms/vdm_itm_serial_nr_id preserving type)` |
-| `_TransportationOrder` | | ✓ | | |
-| `_TransportationOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemSerialNumberUUID` | ✓ | |  | `cast(TranspOrdItemSerialNumber.db_key as /scmtms/vdm_itm_serial_nr_uuid preserving type)` |  |  |
+| `TransportationOrderUUID` |  | |  | `cast(TranspOrdItemSerialNumber.root_key as /scmtms/vdm_tor_db_key preserving type)` |  |  |
+| `TransportationOrderItemUUID` |  | |  | `cast(TranspOrdItemSerialNumber.parent_key as /scmtms/vdm_tor_item_db_key preserving type)` |  |  |
+| `TranspOrdItemSerialNumber` |  | |  | `cast(TranspOrdItemSerialNumber.serial_id as /scmtms/vdm_itm_serial_nr_id preserving type)` |  |  |
+| `_TransportationOrder` | | ✓ | | | | |
+| `_TransportationOrderItem` | | ✓ | | | | |
 
 ## Associations
 

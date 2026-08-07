@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InternationalArticleNumberCat` | ✓ | |  | `cast(numtp as internationalarticlenumbercat preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternationalArticleNumberCat` | ✓ | |  | `cast(numtp as internationalarticlenumbercat preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,62 +31,62 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralPurchaseContract` | ✓ | |  |  |
-| `CentralPurchaseContractItem` | ✓ | |  |  |
-| `PurchaseContractItemText` |  | |  |  |
-| `ContractNetPriceAmount` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `VolumeUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
-| `PurchasingDocumentItemCategory` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `PriceIsToBePrinted` |  | |  |  |
-| `SupplierConfirmationControlKey` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `InvoiceIsExpected` |  | |  |  |
-| `InvoiceIsGoodsReceiptBased` |  | |  |  |
-| `PurchasingInfoRecordUpdateCode` |  | |  |  |
-| `PurgDocReleaseOrderQuantity` |  | |  |  |
-| `PurgDocOrderAcknNumber` |  | |  |  |
-| `PurchasingPriceIsEstimated` |  | |  |  |
-| `IsInfoAtRegistration` |  | |  |  |
-| `NoDaysReminder1` |  | |  |  |
-| `NoDaysReminder2` |  | |  |  |
-| `NoDaysReminder3` |  | |  |  |
-| `StockType` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `RequirementTracking` |  | |  |  |
-| `IsOrderAcknRqd` |  | |  |  |
-| `ShippingInstruction` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `PurgDocProductType` |  | |  |  |
-| `ProductTypeCode` |  | |  |  |
-| `PurchasingContractDeletionCode` |  | |  |  |
-| `PurchasingCentralMaterial` |  | |  |  |
-| `CntrlPurContrItmTargetAmount` |  | |  |  |
-| `ActivePurchasingDocument` |  | |  |  |
-| `PurgDocItmBlkRsnCode` |  | |  |  |
-| `PurchasingParentItem` |  | |  |  |
-| `IsOutline` |  | |  |  |
-| `PurgConfigurableItemNumber` |  | |  |  |
-| `ProcmtHubRefcdConnectedSystem` |  | |  |  |
-| `_CntrlPurchaseContract` | | ✓ | | |
-| `_CentralPurchaseContItemDist` | | ✓ | | |
-| `_CentrlPurContrItmCndnValdty` | | ✓ | | |
-| `_CntrlPurContrItmNotes` | | ✓ | | |
-| `_CntrlPurContrItmCmmdtyQty` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |  |  |
+| `CentralPurchaseContractItem` | ✓ | |  |  |  |  |
+| `PurchaseContractItemText` |  | |  |  |  |  |
+| `ContractNetPriceAmount` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `VolumeUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `PriceIsToBePrinted` |  | |  |  |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `InvoiceIsExpected` |  | |  |  |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |  |  |
+| `PurchasingInfoRecordUpdateCode` |  | |  |  |  |  |
+| `PurgDocReleaseOrderQuantity` |  | |  |  |  |  |
+| `PurgDocOrderAcknNumber` |  | |  |  |  |  |
+| `PurchasingPriceIsEstimated` |  | |  |  |  |  |
+| `IsInfoAtRegistration` |  | |  |  |  |  |
+| `NoDaysReminder1` |  | |  |  |  |  |
+| `NoDaysReminder2` |  | |  |  |  |  |
+| `NoDaysReminder3` |  | |  |  |  |  |
+| `StockType` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `RequirementTracking` |  | |  |  |  |  |
+| `IsOrderAcknRqd` |  | |  |  |  |  |
+| `ShippingInstruction` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `PurgDocProductType` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  |  |  |  |
+| `PurchasingContractDeletionCode` |  | |  |  |  |  |
+| `PurchasingCentralMaterial` |  | |  |  |  |  |
+| `CntrlPurContrItmTargetAmount` |  | |  |  |  |  |
+| `ActivePurchasingDocument` |  | |  |  |  |  |
+| `PurgDocItmBlkRsnCode` |  | |  |  |  |  |
+| `PurchasingParentItem` |  | |  |  |  |  |
+| `IsOutline` |  | |  |  |  |  |
+| `PurgConfigurableItemNumber` |  | |  |  |  |  |
+| `ProcmtHubRefcdConnectedSystem` |  | |  |  |  |  |
+| `_CntrlPurchaseContract` | | ✓ | | | | |
+| `_CentralPurchaseContItemDist` | | ✓ | | | | |
+| `_CentrlPurContrItmCndnValdty` | | ✓ | | | | |
+| `_CntrlPurContrItmNotes` | | ✓ | | | | |
+| `_CntrlPurContrItmCmmdtyQty` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialAccountType` | ✓ | |  | `cast( substring( domvalue_l, 1, 1) as farp_koart )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
-| `FinancialAccountTypeName` |  | |  | `cast(ddtext as fis_fin_acc_type_name)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialAccountType` | ✓ | |  | `cast( substring( domvalue_l, 1, 1) as farp_koart )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |  |  |
+| `FinancialAccountTypeName` |  | |  | `cast(ddtext as fis_fin_acc_type_name)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

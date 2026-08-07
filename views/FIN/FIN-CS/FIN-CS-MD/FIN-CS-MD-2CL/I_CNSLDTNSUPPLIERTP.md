@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | | `_CnsldtnSupplier` | `Supplier` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnSupplier` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnSupplierTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnSupplierTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | | `_CnsldtnSupplier` | `Supplier` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnSupplier` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnSupplierTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnSupplierTextTP` |  |  |
 
 ## Source Code
 

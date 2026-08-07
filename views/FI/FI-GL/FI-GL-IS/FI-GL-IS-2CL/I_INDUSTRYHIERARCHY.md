@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IndustryHierarchy` | ✓ | |  | `cast(hrrp_dir_n.hryid as fis_hryid_industry preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
-| `ValidityStartDate` |  | |  | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |
-| `LastChangedByUser` |  | |  | `upduser` |
-| `LastChangeDateTime` |  | |  | `updtime` |
-| `HierarchyShortID` |  | |  | `hrysid` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndustryHierarchy` | ✓ | |  | `cast(hrrp_dir_n.hryid as fis_hryid_industry preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |  |  |
+| `LastChangedByUser` |  | |  | `upduser` |  |  |
+| `LastChangeDateTime` |  | |  | `updtime` |  |  |
+| `HierarchyShortID` |  | |  | `hrysid` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

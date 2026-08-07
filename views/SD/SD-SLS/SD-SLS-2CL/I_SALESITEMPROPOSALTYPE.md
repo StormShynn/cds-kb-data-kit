@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesItemProposalType` | ✓ | |  | `cast( SalesDocumentType as sales_item_proposal_type preserving type )` |
-| `SalesItemProposalProcgType` |  | |  | `SalesDocumentProcessingType` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesItemProposalType` | ✓ | |  | `cast( SalesDocumentType as sales_item_proposal_type preserving type )` |  |  |
+| `SalesItemProposalProcgType` |  | |  | `SalesDocumentProcessingType` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

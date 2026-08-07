@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `HouseBank` | ✓ | |  | `hbkid` |
-| `HouseBankAccount` | ✓ | |  | `hktid` |
-| `BankAccountInternalID` |  | |  | `acc_id` |
-| `BankInternalID` |  | | `_HouseBank` | `BankInternalID` |
-| `BankCountry` |  | | `_HouseBank` | `BankCountry` |
-| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |
-| `SWIFTCode` |  | | `_HouseBank._Bank` | `SWIFTCode` |
-| `BankName` |  | | `_HouseBank._Bank` | `BankName` |
-| `BankNumber` |  | | `_HouseBank._Bank` | `Bank` |
-| `BankAccount` |  | |  | `bankn` |
-| `BankAccountAlternative` |  | |  | `bnkn2` |
-| `ReferenceInfo` |  | |  | `refzl` |
-| `BankControlKey` |  | |  | `bkont` |
-| `BankAccountCurrency` |  | |  | `waers` |
-| `IBAN` |  | | `_BankAccount` | `IBAN` |
-| `BankAccountDescription` |  | |  | `_BankAccount._Text[1: Language = $session.system_language].BankAccountDescription` |
-| `GLAccount` |  | |  | `hkont` |
-| `BankAccountHolderName` |  | | `_BankAccount` | `BankAccountHolderName` |
-| `BankAccountNumber` |  | | `_BankAccount` | `BankAccountNumber` |
-| `_BankAccount` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_HouseBank` | | ✓ | | |
-| `_CountryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `HouseBank` | ✓ | |  | `hbkid` |  |  |
+| `HouseBankAccount` | ✓ | |  | `hktid` |  |  |
+| `BankAccountInternalID` |  | |  | `acc_id` |  |  |
+| `BankInternalID` |  | | `_HouseBank` | `BankInternalID` |  |  |
+| `BankCountry` |  | | `_HouseBank` | `BankCountry` |  |  |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |  |  |
+| `SWIFTCode` |  | | `_HouseBank._Bank` | `SWIFTCode` |  |  |
+| `BankName` |  | | `_HouseBank._Bank` | `BankName` |  |  |
+| `BankNumber` |  | | `_HouseBank._Bank` | `Bank` |  |  |
+| `BankAccount` |  | |  | `bankn` |  |  |
+| `BankAccountAlternative` |  | |  | `bnkn2` |  |  |
+| `ReferenceInfo` |  | |  | `refzl` |  |  |
+| `BankControlKey` |  | |  | `bkont` |  |  |
+| `BankAccountCurrency` |  | |  | `waers` |  |  |
+| `IBAN` |  | | `_BankAccount` | `IBAN` |  |  |
+| `BankAccountDescription` |  | |  | `_BankAccount._Text[1: Language = $session.system_language].BankAccountDescription` |  |  |
+| `GLAccount` |  | |  | `hkont` |  |  |
+| `BankAccountHolderName` |  | | `_BankAccount` | `BankAccountHolderName` |  |  |
+| `BankAccountNumber` |  | | `_BankAccount` | `BankAccountNumber` |  |  |
+| `_BankAccount` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_HouseBank` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
 
 ## Associations
 

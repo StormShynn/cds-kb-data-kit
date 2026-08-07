@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankCountry` | ✓ | |  |  |
-| `BankInternalID` | ✓ | |  |  |
-| `ChangeDocument` | ✓ | |  |  |
-| `ChangeDocTableKey` | ✓ | |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |
-| `DatabaseTableFieldName` | ✓ | |  |  |
-| `ChangeDocItemChangeTypeText` | ✓ | |  |  |
-| `DatabaseTable` | ✓ | |  |  |
-| `ChangeDocTransactionCode` | ✓ | |  |  |
-| `ChangeDocItemChangeType` |  | |  |  |
-| `ChangeDocObjectClass` |  | |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |
-| `DatabaseFieldTechnicalName` |  | |  | `cast(ChangeDocDatabaseTableField as bf_bank_change_doc_tech_field preserving type )` |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `CreationDateTime` |  | |  | `cast(dats_tims_to_tstmp(CreationDate, CreationTime, abap_system_timezone($session.client, 'NULL'), $session.client, 'NULL') as timestamp preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankCountry` | ✓ | |  |  |  |  |
+| `BankInternalID` | ✓ | |  |  |  |  |
+| `ChangeDocument` | ✓ | |  |  |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
+| `DatabaseTableFieldName` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeTypeText` | ✓ | |  |  |  |  |
+| `DatabaseTable` | ✓ | |  |  |  |  |
+| `ChangeDocTransactionCode` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeType` |  | |  |  |  |  |
+| `ChangeDocObjectClass` |  | |  |  |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
+| `DatabaseFieldTechnicalName` |  | |  | `cast(ChangeDocDatabaseTableField as bf_bank_change_doc_tech_field preserving type )` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  | `cast(dats_tims_to_tstmp(CreationDate, CreationTime, abap_system_timezone($session.client, 'NULL'), $session.client, 'NULL') as timestamp preserving type )` |  |  |
 
 ## Source Code
 

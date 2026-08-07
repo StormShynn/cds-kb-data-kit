@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SecurityClassPositionUUID` | ✓ | |  | `os_guid` |
-| `CompanyCode` |  | |  | `company_code` |
-| `SecurityAccount` |  | |  | `security_account` |
-| `SecurityClass` |  | |  | `security_id` |
-| `Portfolio` |  | |  | `portfolio` |
-| `TreasuryFinancialObject` |  | |  | `objnr` |
-| `_SecurityClass` | | ✓ | | |
-| `_SecurityAccount` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_TreasuryPortfolio` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityClassPositionUUID` | ✓ | |  | `os_guid` |  |  |
+| `CompanyCode` |  | |  | `company_code` |  |  |
+| `SecurityAccount` |  | |  | `security_account` |  |  |
+| `SecurityClass` |  | |  | `security_id` |  |  |
+| `Portfolio` |  | |  | `portfolio` |  |  |
+| `TreasuryFinancialObject` |  | |  | `objnr` |  |  |
+| `_SecurityClass` | | ✓ | | | | |
+| `_SecurityAccount` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_TreasuryPortfolio` | | ✓ | | | | |
 
 ## Associations
 

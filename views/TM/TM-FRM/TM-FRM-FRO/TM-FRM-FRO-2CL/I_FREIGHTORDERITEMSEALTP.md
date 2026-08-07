@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdItemSealUUID` | ✓ | |  |  |
-| `TransportationOrderItemUUID` |  | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `TranspOrdItemSealNumber` |  | |  |  |
-| `TranspOrdItemSealingDateTime` |  | |  |  |
-| `I_FreightOrderTP` |  | |  | `FreightOrderItemSeal._TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `I_FreightOrderItemTP` |  | |  | `FreightOrderItemSeal._TransportationOrderItem as _FreightOrderItem : redirected to parent I_FreightOrderItemTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemSealUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `TranspOrdItemSealNumber` |  | |  |  |  |  |
+| `TranspOrdItemSealingDateTime` |  | |  |  |  |  |
+| `I_FreightOrderTP` |  | |  | `FreightOrderItemSeal._TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |  |  |
+| `I_FreightOrderItemTP` |  | |  | `FreightOrderItemSeal._TransportationOrderItem as _FreightOrderItem : redirected to parent I_FreightOrderItemTP` |  |  |
 
 ## Source Code
 

@@ -27,38 +27,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |
-| `CharcValuePositionNumber` | ✓ | |  |  |
-| `CharcValueParentPositionNumber` |  | |  |  |
-| `CharcValueHasChild` |  | |  |  |
-| `CharcValueDependency` |  | |  | `CharcValueIntervalType` |
-| `CharcValue` |  | |  |  |
-| `CharcFromNumericValue` |  | |  |  |
-| `CharcToNumericValue` |  | |  |  |
-| `IsDefaultValue` |  | |  |  |
-| `CharcFromNumericValueUnit` |  | |  |  |
-| `CharcToNumericValueUnit` |  | |  |  |
-| `CharcFromDecimalValue` |  | |  |  |
-| `CharcToDecimalValue` |  | |  |  |
-| `CharcFromDate` |  | |  |  |
-| `CharcToDate` |  | |  |  |
-| `CharcFromTime` |  | |  |  |
-| `CharcToTime` |  | |  |  |
-| `CharcFromAmount` |  | |  |  |
-| `CharcToAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `LongTextID` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `DocumentInfoRecordDocNumber` |  | |  |  |
-| `DocumentInfoRecordDocPart` |  | |  |  |
-| `DocumentInfoRecordDocVersion` |  | |  |  |
-| `DocumentInfoRecordDocType` |  | |  |  |
-| `_Characteristic` | | ✓ | | |
-| `_CharacteristicValueDesc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `CharcValuePositionNumber` | ✓ | |  |  |  |  |
+| `CharcValueParentPositionNumber` |  | |  |  |  |  |
+| `CharcValueHasChild` |  | |  |  |  |  |
+| `CharcValueDependency` |  | |  | `CharcValueIntervalType` |  |  |
+| `CharcValue` |  | |  |  |  |  |
+| `CharcFromNumericValue` |  | |  |  |  |  |
+| `CharcToNumericValue` |  | |  |  |  |  |
+| `IsDefaultValue` |  | |  |  |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |  |  |
+| `CharcFromDecimalValue` |  | |  |  |  |  |
+| `CharcToDecimalValue` |  | |  |  |  |  |
+| `CharcFromDate` |  | |  |  |  |  |
+| `CharcToDate` |  | |  |  |  |  |
+| `CharcFromTime` |  | |  |  |  |  |
+| `CharcToTime` |  | |  |  |  |  |
+| `CharcFromAmount` |  | |  |  |  |  |
+| `CharcToAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `LongTextID` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `DocumentInfoRecordDocNumber` |  | |  |  |  |  |
+| `DocumentInfoRecordDocPart` |  | |  |  |  |  |
+| `DocumentInfoRecordDocVersion` |  | |  |  |  |  |
+| `DocumentInfoRecordDocType` |  | |  |  |  |  |
+| `_Characteristic` | | ✓ | | | | |
+| `_CharacteristicValueDesc` | | ✓ | | | | |
 
 ## Associations
 

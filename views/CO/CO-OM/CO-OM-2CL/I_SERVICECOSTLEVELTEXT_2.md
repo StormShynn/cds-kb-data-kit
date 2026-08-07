@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceCostLevel` | ✓ | |  | `srv_cost_level` |
-| `Language` | ✓ | |  | `langu` |
-| `ServiceCostLevelName` |  | |  | `name` |
-| `ServiceCostLevelShortName` |  | |  | `short_name` |
-| `ValidityStartDate` |  | |  | `start_date` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceCostLevel` | ✓ | |  | `srv_cost_level` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ServiceCostLevelName` |  | |  | `name` |  |  |
+| `ServiceCostLevelShortName` |  | |  | `short_name` |  |  |
+| `ValidityStartDate` |  | |  | `start_date` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

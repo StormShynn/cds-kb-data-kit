@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VariantCondition` | ✓ | |  | `varcond` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VariantCondition` | ✓ | |  | `varcond` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

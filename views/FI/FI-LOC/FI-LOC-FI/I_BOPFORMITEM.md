@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BOPRptgCntry` | ✓ | |  | `country` |
-| `BOPForm` | ✓ | |  | `form` |
-| `BOPFormItem` | ✓ | |  | `item` |
-| `_text` | | ✓ | | |
-| `_BOPRptgCntry` | | ✓ | | |
-| `_BOPForm` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BOPRptgCntry` | ✓ | |  | `country` |  |  |
+| `BOPForm` | ✓ | |  | `form` |  |  |
+| `BOPFormItem` | ✓ | |  | `item` |  |  |
+| `_text` | | ✓ | | | | |
+| `_BOPRptgCntry` | | ✓ | | | | |
+| `_BOPForm` | | ✓ | | | | |
 
 ## Associations
 

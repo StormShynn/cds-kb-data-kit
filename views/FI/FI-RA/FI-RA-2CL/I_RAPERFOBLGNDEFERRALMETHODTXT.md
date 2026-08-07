@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_DeferralMethodText` | `langu` |
-| `PerfObligationDeferralMethod` | ✓ | | `_BADIFilterCondition` | `value1` |
-| `PerfOblgnDeferralMethodText` |  | | `_DeferralMethodText` | `text` |
-| `_DeferralMethod` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_DeferralMethodText` | `langu` |  |  |
+| `PerfObligationDeferralMethod` | ✓ | | `_BADIFilterCondition` | `value1` |  |  |
+| `PerfOblgnDeferralMethodText` |  | | `_DeferralMethodText` | `text` |  |  |
+| `_DeferralMethod` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

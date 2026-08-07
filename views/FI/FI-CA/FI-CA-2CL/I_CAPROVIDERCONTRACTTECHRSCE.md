@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAProviderContract` | ✓ | |  | `ProviderContract` |
-| `CATechnicalResourceGroup` | ✓ | |  |  |
-| `CATechnicalResourceIDType` | ✓ | |  |  |
-| `CATechnicalResourceID` | ✓ | |  |  |
-| `CATechRsceValidFromDateTime` | ✓ | |  |  |
-| `CATechRsceValidToDateTime` |  | |  |  |
-| `CANormalizedTechnicalResource` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_PrvdrContr` | | ✓ | | |
-| `_TechRsceIDType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAProviderContract` | ✓ | |  | `ProviderContract` |  |  |
+| `CATechnicalResourceGroup` | ✓ | |  |  |  |  |
+| `CATechnicalResourceIDType` | ✓ | |  |  |  |  |
+| `CATechnicalResourceID` | ✓ | |  |  |  |  |
+| `CATechRsceValidFromDateTime` | ✓ | |  |  |  |  |
+| `CATechRsceValidToDateTime` |  | |  |  |  |  |
+| `CANormalizedTechnicalResource` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_PrvdrContr` | | ✓ | | | | |
+| `_TechRsceIDType` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgOffsettingCategory` | ✓ | |  | `offset_cat` |
-| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgOffsettingCategory` | ✓ | |  | `offset_cat` |  |  |
+| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

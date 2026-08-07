@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DefectClass` | ✓ | |  | `fehlklasse` |
-| `InspectionLotQualityScore` |  | |  | `kennzahl` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DefectClass` | ✓ | |  | `fehlklasse` |  |  |
+| `InspectionLotQualityScore` |  | |  | `kennzahl` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

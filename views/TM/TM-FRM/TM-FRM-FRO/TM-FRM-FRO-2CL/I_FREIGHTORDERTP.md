@@ -30,58 +30,58 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderUUID` | ✓ | |  |  |
-| `TransportationOrder` |  | |  |  |
-| `TransportationOrderType` |  | |  |  |
-| `TransportationOrderCategory` |  | |  |  |
-| `TransportationShippingType` |  | |  |  |
-| `TransportationMode` |  | |  |  |
-| `TransportationModeCategory` |  | |  |  |
-| `CarrierUUID` |  | |  |  |
-| `Carrier` |  | |  |  |
-| `StandardCarrierAlphaCode` |  | |  |  |
-| `TranspOrdExecutingCarrierUUID` |  | |  |  |
-| `TranspOrdExecutingCarrier` |  | |  |  |
-| `ShipperUUID` |  | |  |  |
-| `Shipper` |  | |  |  |
-| `ShipperAddressID` |  | |  |  |
-| `ConsigneeUUID` |  | |  |  |
-| `Consignee` |  | |  |  |
-| `ConsigneeAddressID` |  | |  |  |
-| `TranspPurgOrg` |  | |  |  |
-| `TranspPurgOrgExtID` |  | |  |  |
-| `TranspPurgGroup` |  | |  |  |
-| `TranspPurgGroupExtID` |  | |  |  |
-| `PurgOrgCompanyCode` |  | |  |  |
-| `CarrierAccountNumber` |  | |  |  |
-| `TranspMeansOfTransport` |  | |  |  |
-| `TranspOrdPartnerReference` |  | |  |  |
-| `TranspOrdResponsiblePerson` |  | |  |  |
-| `TranspOrdHasMltplExectgPties` |  | |  |  |
-| `TranspOrdInvoicingCarrierLevel` |  | |  |  |
-| `TranspOrdOrderDateTime` |  | |  |  |
-| `TranspOrdLifeCycleStatus` |  | |  |  |
-| `TranspOrderSubcontrgSts` |  | |  |  |
-| `TransportationOrderConfSts` |  | |  |  |
-| `TransportationOrderExecSts` |  | |  |  |
-| `TranspOrdGoodsMovementStatus` |  | |  |  |
-| `TranspOrdWhseProcessingStatus` |  | |  |  |
-| `TranspOrderDngrsGdsSts` |  | |  |  |
-| `TranspOrdExecutionIsBlocked` |  | |  |  |
-| `TransportationOrderCrtnType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `I_FreightOrderBPTP` |  | |  | `FreightOrder._TransportationOrderBP as _FreightOrderBusinessPartner : redirected to composition child I_FreightOrderBPTP` |
-| `I_FreightOrderDocRefTP` |  | |  | `FreightOrder._TranspOrdDocumentReference as _FreightOrderDocumentReference : redirected to composition child I_FreightOrderDocRefTP` |
-| `I_FreightOrderItemTP` |  | |  | `FreightOrder._TransportationOrderItem as _FreightOrderItem : redirected to composition child I_FreightOrderItemTP` |
-| `I_FreightOrderStopTP` |  | |  | `FreightOrder._TransportationOrderStop as _FreightOrderStop : redirected to composition child I_FreightOrderStopTP` |
-| `I_FreightOrderEventTP` |  | |  | `FreightOrder._TransportationOrderEvent as _FreightOrderEvent : redirected to composition child I_FreightOrderEventTP` |
-| `I_FreightOrderChargeTP` |  | |  | `FreightOrder._TransportationOrderCharge as _FreightOrderCharge : redirected to composition child I_FreightOrderChargeTP` |
-| `I_FrtOrdMainBPAddrDfltRprstnTP` |  | |  | `FreightOrder._TrOrdMainBPAddrDfltRprstn as _FrtOrdMainBPAddrDfltRprstn : redirected to composition child I_FrtOrdMainBPAddrDfltRprstnTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderUUID` | ✓ | |  |  |  |  |
+| `TransportationOrder` |  | |  |  |  |  |
+| `TransportationOrderType` |  | |  |  |  |  |
+| `TransportationOrderCategory` |  | |  |  |  |  |
+| `TransportationShippingType` |  | |  |  |  |  |
+| `TransportationMode` |  | |  |  |  |  |
+| `TransportationModeCategory` |  | |  |  |  |  |
+| `CarrierUUID` |  | |  |  |  |  |
+| `Carrier` |  | |  |  |  |  |
+| `StandardCarrierAlphaCode` |  | |  |  |  |  |
+| `TranspOrdExecutingCarrierUUID` |  | |  |  |  |  |
+| `TranspOrdExecutingCarrier` |  | |  |  |  |  |
+| `ShipperUUID` |  | |  |  |  |  |
+| `Shipper` |  | |  |  |  |  |
+| `ShipperAddressID` |  | |  |  |  |  |
+| `ConsigneeUUID` |  | |  |  |  |  |
+| `Consignee` |  | |  |  |  |  |
+| `ConsigneeAddressID` |  | |  |  |  |  |
+| `TranspPurgOrg` |  | |  |  |  |  |
+| `TranspPurgOrgExtID` |  | |  |  |  |  |
+| `TranspPurgGroup` |  | |  |  |  |  |
+| `TranspPurgGroupExtID` |  | |  |  |  |  |
+| `PurgOrgCompanyCode` |  | |  |  |  |  |
+| `CarrierAccountNumber` |  | |  |  |  |  |
+| `TranspMeansOfTransport` |  | |  |  |  |  |
+| `TranspOrdPartnerReference` |  | |  |  |  |  |
+| `TranspOrdResponsiblePerson` |  | |  |  |  |  |
+| `TranspOrdHasMltplExectgPties` |  | |  |  |  |  |
+| `TranspOrdInvoicingCarrierLevel` |  | |  |  |  |  |
+| `TranspOrdOrderDateTime` |  | |  |  |  |  |
+| `TranspOrdLifeCycleStatus` |  | |  |  |  |  |
+| `TranspOrderSubcontrgSts` |  | |  |  |  |  |
+| `TransportationOrderConfSts` |  | |  |  |  |  |
+| `TransportationOrderExecSts` |  | |  |  |  |  |
+| `TranspOrdGoodsMovementStatus` |  | |  |  |  |  |
+| `TranspOrdWhseProcessingStatus` |  | |  |  |  |  |
+| `TranspOrderDngrsGdsSts` |  | |  |  |  |  |
+| `TranspOrdExecutionIsBlocked` |  | |  |  |  |  |
+| `TransportationOrderCrtnType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `I_FreightOrderBPTP` |  | |  | `FreightOrder._TransportationOrderBP as _FreightOrderBusinessPartner : redirected to composition child I_FreightOrderBPTP` |  |  |
+| `I_FreightOrderDocRefTP` |  | |  | `FreightOrder._TranspOrdDocumentReference as _FreightOrderDocumentReference : redirected to composition child I_FreightOrderDocRefTP` |  |  |
+| `I_FreightOrderItemTP` |  | |  | `FreightOrder._TransportationOrderItem as _FreightOrderItem : redirected to composition child I_FreightOrderItemTP` |  |  |
+| `I_FreightOrderStopTP` |  | |  | `FreightOrder._TransportationOrderStop as _FreightOrderStop : redirected to composition child I_FreightOrderStopTP` |  |  |
+| `I_FreightOrderEventTP` |  | |  | `FreightOrder._TransportationOrderEvent as _FreightOrderEvent : redirected to composition child I_FreightOrderEventTP` |  |  |
+| `I_FreightOrderChargeTP` |  | |  | `FreightOrder._TransportationOrderCharge as _FreightOrderCharge : redirected to composition child I_FreightOrderChargeTP` |  |  |
+| `I_FrtOrdMainBPAddrDfltRprstnTP` |  | |  | `FreightOrder._TrOrdMainBPAddrDfltRprstn as _FrtOrdMainBPAddrDfltRprstn : redirected to composition child I_FrtOrdMainBPAddrDfltRprstnTP` |  |  |
 
 ## Source Code
 

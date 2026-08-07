@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesSchedgAgrmtType` | ✓ | |  | `SalesDocumentType` |
-| `SalesSchedgAgrmtProcessingType` |  | |  | `SalesDocumentProcessingType` |
-| `OrderTypeForBillingRequest` |  | |  |  |
-| `_Text` | | ✓ | | |
-| `_OrderTypeForBillingRequest` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesSchedgAgrmtType` | ✓ | |  | `SalesDocumentType` |  |  |
+| `SalesSchedgAgrmtProcessingType` |  | |  | `SalesDocumentProcessingType` |  |  |
+| `OrderTypeForBillingRequest` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_OrderTypeForBillingRequest` | | ✓ | | | | |
 
 ## Source Code
 

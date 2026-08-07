@@ -28,247 +28,247 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  | `prueflos` |
-| `Material` |  | |  | `matnr` |
-| `Batch` |  | |  | `charg` |
-| `Plant` |  | |  | `werk` |
-| `InspectionLotOrigin` |  | |  | `cast( qals.herkunft as vdm_qherk preserving type )` |
-| `OrderInternalBillOfOperations` |  | |  | `aufpl` |
-| `ManufacturingOrder` |  | |  | `cast( qals.aufnr as vdm_qm_fertaufnr preserving type )` |
-| `InspectionLotText` |  | |  | `cast( qals.ktextlos as vdm_qplos_text preserving type )` |
-| `InspectionLotType` |  | |  | `art` |
-| `InspectionLotQuantity` |  | |  | `cast( qals.losmenge as vdm_qlosmenge preserving type )` |
-| `InspectionLotActualQuantity` |  | |  | `cast( qals.lmengeist as vdm_qlmengeist preserving type )` |
-| `InspectionLotDefectiveQuantity` |  | |  | `cast( qals.lmengesch as vdm_qlmengesch preserving type )` |
-| `InspectionLotQuantityUnit` |  | |  | `mengeneinh` |
-| `InspLotCreatedOnLocalDate` |  | |  | `enstehdat` |
-| `InspSubsetFieldCombination` |  | |  | `slwbez` |
-| `InspLotNmbrOpenLongTermCharc` |  | |  | `cast( qals.offen_lzmk as vdm_qoffelzmk preserving type )` |
-| `StatusObject` |  | |  | `objnr` |
-| `StatusObjectCategory` |  | |  | `obtyp` |
-| `InspectionLotObjectText` |  | |  | `ktextmat` |
-| `Equipment` |  | |  | `ls_equnr` |
-| `FunctionalLocation` |  | |  | `ls_tplnr` |
-| `StatusProfile` |  | |  | `stsma` |
-| `MatlQualityAuthorizationGroup` |  | |  | `cast( qals.qmatauth as vdm_qmatauth preserving type )` |
-| `InspectionLotHasQuantity` |  | |  | `cast( qals.insmk as vdm_qvinsmk preserving type )` |
-| `InspLotIsCreatedAutomatically` |  | |  | `stat01` |
-| `InspectionLotHasPartialLots` |  | |  | `stat02` |
-| `InspectionLotHasAppraisalCosts` |  | |  | `stat06` |
-| `InspLotHasSubsets` |  | |  | `stat07` |
-| `InspLotIsAutomUsgeDcsnPossible` |  | |  | `cast( qals.stat08 as vdm_qauto_ve preserving type )` |
-| `PurchasingDocumentCategory` |  | |  | `stat09` |
-| `InspLotHasConfignSpecification` |  | |  | `stat10` |
-| `GoodsReceiptIsMovedToBlkdStock` |  | |  | `stat11` |
-| `InspLotSummaryControl` |  | |  | `stat18` |
-| `InspLotIsDocumentationRequired` |  | |  | `cast( qals.stat19 as vdm_qstat19 preserving type )` |
-| `InspLotIsTaskListRequired` |  | |  | `cast( qals.stat20 as vdm_qstat20 preserving type )` |
-| `InspLotHasManualSampleSize` |  | |  | `stat21` |
-| `InspLotHasMaterialSpec` |  | |  | `cast( qals.stat22 as vdm_qspezueber preserving type )` |
-| `InspectionLotApproval` |  | |  | `cast( qals.stat23 as vdm_qkzgenlos preserving type )` |
-| `InspLotDigitalSgntrResultsRecg` |  | |  | `stat24` |
-| `InspLotDigitalSgntrInUsgeDcsn` |  | |  | `cast( qals.stat25 as vdm_qdgtlsgntrusgedcsn preserving type )` |
-| `InspLotIsBatchRequired` |  | |  | `stat26` |
-| `InspLotUsageInStabilityStudy` |  | |  | `stat32` |
-| `InspLotHasMultipleSpec` |  | |  | `stat33` |
-| `InspLotHasPrtlLotsToSplitQty` |  | |  | `stat36` |
-| `InspLotIsStockPostingCompleted` |  | |  | `cast( qals.stat34 as vdm_qstat34 preserving type )` |
-| `InspectionLotHasUsageDecision` |  | |  | `cast( qals.stat35 as vdm_qstat35 preserving type )` |
-| `NumberOfSerialNumbers` |  | |  | `anzsn` |
-| `InspLotIsSerialNmbrPossible` |  | |  | `ein` |
-| `InspectionLotIsSkipped` |  | |  | `cast( qals.kzskiplot as vdm_qkzskiplot preserving type )` |
-| `InspectionLotIsFullInspection` |  | |  | `hpz` |
-| `InspectionLotDynamicLevel` |  | |  | `cast( qals.dynhead as vdm_qdynhead preserving type )` |
-| `SamplingProcedure` |  | |  | `stprver` |
-| `InspLotCreatedOnLocalTime` |  | |  | `cast( qals.entstezeit as vdm_qentstzeit preserving type )` |
-| `InspectionLotCreatedBy` |  | |  | `ersteller` |
-| `InspectionLotCreatedOn` |  | |  | `ersteldat` |
-| `InspectionLotCreatedOnTime` |  | |  | `cast( qals.erstelzeit as vdm_qerstezeit preserving type )` |
-| `InspectionLotChangedBy` |  | |  | `aenderer` |
-| `InspectionLotChangeDate` |  | |  | `aenderdat` |
-| `InspectionLotChangeTime` |  | |  | `cast( qals.aenderzeit as vdm_qaendezeit preserving type )` |
-| `ChangedDateTime` |  | |  | `case qals.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qals.changeddatetime end` |
-| `InspectionLotStartDate` |  | |  | `pastrterm` |
-| `InspectionLotStartTime` |  | |  | `cast( qals.pastrzeit as vdm_qstartzeit preserving type )` |
-| `InspectionLotEndDate` |  | |  | `paendterm` |
-| `InspectionLotEndTime` |  | |  | `cast( qals.paendzeit as vdm_qendezeit preserving type )` |
-| `BillOfOperationsType` |  | |  | `cast( qals.plnty as vdm_plnty preserving type )` |
-| `BillOfOperationsGroup` |  | |  | `cast( qals.plnnr as vdm_plnnr preserving type )` |
-| `BillOfOperationsUsage` |  | |  | `cast( qals.pplverw as vdm_pln_verwe preserving type )` |
-| `BillOfOperationsVariant` |  | |  | `cast( qals.plnal as vdm_plnal preserving type )` |
-| `BillOfOperationsChangeStateID` |  | |  | `zaehl` |
-| `InspectionSubsetType` |  | |  | `cast( qals.stat13 as vdm_qppkttyp preserving type )` |
-| `SmplDrawingProcedure` |  | |  | `cast( qals.prbnaverf as vdm_qprziehver preserving type )` |
-| `SmplDrawingProcedureVersion` |  | |  | `prbnavv` |
-| `SmplDrwgProcedIsConfRequired` |  | |  | `cast( qals.stat12 as vdm_qkzquit preserving type )` |
-| `InspLotSelectionMaterial` |  | |  | `selmatnr` |
-| `InspLotSelMatlRevisionLvl` |  | |  | `selrevlv` |
-| `InspLotSelectionPlant` |  | |  | `selwerk` |
-| `InspLotSelectionSupplier` |  | |  | `sellifnr` |
-| `InspLotSelectionManufacturer` |  | |  | `selherst` |
-| `InspLotSelectionCustomer` |  | |  | `selkunnr` |
-| `InspLotSelBillOfOperationsUsge` |  | |  | `selpplverw` |
-| `InspLotSelectionValidFromDate` |  | |  | `gueltigab` |
-| `ProductionVersion` |  | |  | `verid` |
-| `SalesOperationsPlanningOrder` |  | |  | `cast( qals.sa_aufnr as vdm_sa_aufnr preserving type )` |
-| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck` |
-| `Customer` |  | |  | `cast( qals.kunnr as vdm_qkunwe preserving type )` |
-| `Supplier` |  | |  | `lifnr` |
-| `BatchBySupplier` |  | |  | `lichn` |
-| `Manufacturer` |  | |  | `hersteller` |
-| `ManufacturerPartNmbr` |  | |  | `cast( qals.ematnr as vdm_ematn preserving type )` |
-| `MaterialRevisionLevel` |  | |  | `revlv` |
-| `MaterialIsBatchManaged` |  | |  | `cast( qals.xchpf as vdm_xchpf preserving type )` |
-| `BatchStorageLocation` |  | |  | `cast( qals.lagortchrg as vdm_qlgortchar preserving type )` |
-| `MaterialCompIsSpecialStock` |  | |  | `sobkz` |
-| `PurchasingOrganization` |  | |  | `cast( qals.ekorg as ekorg_ll preserving type )` |
-| `PurchasingDocument` |  | |  | `cast( qals.ebeln as fis_ebeln preserving type )` |
-| `PurchasingDocumentItem` |  | |  | `cast( qals.ebelp as vdm_ebelp preserving type )` |
-| `ScheduleLine` |  | |  | `etenr` |
-| `AccountingDocumentType` |  | |  | `cast( qals.blart as vdm_blart preserving type )` |
-| `MaterialDocumentYear` |  | |  | `cast( qals.mjahr as vdm_mjahr preserving type )` |
-| `MaterialDocument` |  | |  | `mblnr` |
-| `MaterialDocumentItem` |  | |  | `cast( qals.zeile as vdm_mblpo preserving type )` |
-| `MatlDocLatestPostgDate` |  | |  | `budat` |
-| `GoodsMovementType` |  | |  | `bwart` |
-| `InspectionLotPlant` |  | |  | `cast( qals.werkvorg as vdm_qwerkvorg preserving type )` |
-| `InspectionLotStorageLocation` |  | |  | `cast( qals.lagortvorg as vdm_qlgortvorg preserving type )` |
-| `Warehouse` |  | |  | `lgnum` |
-| `StorageType` |  | |  | `lgtyp` |
-| `StorageBin` |  | |  | `lgpla` |
-| `SalesOrder` |  | |  | `ls_kdauf` |
-| `SalesOrderItem` |  | |  | `cast( qals.ls_kdpos as vdm_kdpos preserving type )` |
-| `DeliveryDocument` |  | |  | `cast( qals.ls_vbeln as vdm_deliverydocument preserving type )` |
-| `DeliveryDocumentItem` |  | |  | `cast( qals.ls_posnr as vdm_posnr_vl preserving type )` |
-| `DeliveryCategory` |  | |  | `ls_abrvw` |
-| `InspectionDeliveryCategory` |  | |  | `ls_abrvw` |
-| `Route` |  | |  | `ls_route` |
-| `BillToPartyCountry` |  | |  | `ls_lland` |
-| `SoldToParty` |  | |  | `cast( qals.ls_kunag as vdm_kunag preserving type )` |
-| `SalesOrganization` |  | |  | `ls_vkorg` |
-| `MaterialByCustomer` |  | |  | `ls_kdmat` |
-| `Language` |  | |  | `sprache` |
-| `InspLotNmbrAddlRecordedCharc` |  | |  | `zusmkzaehl` |
-| `InspLotNmbrOpenShortTermCharc` |  | |  | `offennlzmk` |
-| `InspectionLotContainer` |  | |  | `anzgeb` |
-| `InspectionLotContainerUnit` |  | |  | `gebeh` |
-| `InspectionLotSampleQuantity` |  | |  | `gesstichpr` |
-| `InspectionLotSampleUnit` |  | |  | `cast( qals.einhprobe as vdm_qprobemgeh preserving type )` |
-| `InspLotDynamicRule` |  | |  | `cast( qals.dynregel as vdm_qdynregel preserving type )` |
-| `InspLotDynamicTrggrPoint` |  | |  | `stat44` |
-| `InspectionDynamicStage` |  | |  | `prstufe` |
-| `InspectionSeverity` |  | |  | `prschaerfe` |
-| `InspLotQtyToFree` |  | |  | `cast( qals.lmenge01 as vdm_qlmenge01f preserving type )` |
-| `InspLotQtyToScrap` |  | |  | `cast( qals.lmenge02 as vdm_qlmenge02f preserving type )` |
-| `InspLotQtyToSample` |  | |  | `lmenge03` |
-| `InspLotQtyToBlocked` |  | |  | `cast( qals.lmenge04 as vdm_qlmenge04f preserving type )` |
-| `InspLotQtyToReserves` |  | |  | `lmenge05` |
-| `InspLotQtyToAnotherMaterial` |  | |  | `cast( qals.lmenge06 as vdm_qlmenge06f preserving type )` |
-| `InspLotMaterialPostedTo` |  | |  | `cast( qals.matnrneu as vdm_qmatnrneu preserving type )` |
-| `InspLotBatchTransferredTo` |  | |  | `cast( qals.chargneu as vdm_qchargneu preserving type )` |
-| `InspLotQtyReturnedToSupplier` |  | |  | `cast( qals.lmenge07 as vdm_qlmenge07f preserving type )` |
-| `InspLotQtyToSpecialStock` |  | |  | `cast( qals.lmenge08 as vdm_qlmenge08f preserving type )` |
-| `InspLotQtyToOtherStock` |  | |  | `cast( qals.lmenge09 as vdm_qlmenge09f preserving type )` |
-| `InspLotQtyToBePosted` |  | |  | `cast( qals.lmengezub as vdm_qlmengezub preserving type )` |
-| `InspLotSmplQtyForLongTermChar` |  | |  | `cast( qals.lmengelz as vdm_qlmengelz preserving type )` |
-| `InspLotQtyInspected` |  | |  | `cast( qals.lmengepr as vdm_qlmengepr preserving type )` |
-| `InspLotQtyDestroyed` |  | |  | `cast( qals.lmengezer as vdm_qlmengezer preserving type )` |
-| `InspectionLotScrapRatio` |  | |  | `anteil` |
-| `InspLotUsageDecisionTool` |  | |  | `stat03` |
-| `InspectionLotAllowedScrapRatio` |  | |  | `qpmatlos` |
-| `QualityCostCollector` |  | |  | `aufnr_co` |
-| `ConsumptionPosting` |  | |  | `kzvbr` |
-| `AccountAssignmentCategory` |  | |  | `knttp` |
-| `PurchasingDocumentItemCategory` |  | |  | `pstyp` |
-| `InspLotAcctAssgmtKey` |  | |  | `stat05` |
-| `CostCenter` |  | |  | `kostl` |
-| `ReservationItem` |  | |  | `aufps` |
-| `MasterFixedAsset` |  | |  | `anln1` |
-| `FixedAsset` |  | |  | `anln2` |
-| `SalesOrdStockWBSElement` |  | |  | `ps_psp_pnr` |
-| `ProjectNetwork` |  | |  | `nplnr` |
-| `NetworkActivityInternalID` |  | |  | `aplzl` |
-| `InventorySpclStkSalesDocument` |  | |  | `cast( qals.kdauf as vdm_mat_kdauf preserving type )` |
-| `InventorySpclStkSalesDocItm` |  | |  | `kdpos` |
-| `ProfitabilitySegment` |  | |  | `cast( case when paobjnr > '9999999999' then '9999999999' else lpad( qals.paobjnr, 10, '0' ) end as rkeobjnr_numc )` |
-| `ProfitabilitySegment_2` |  | |  | `cast( qals.paobjnr as rkeobjnr_char )` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `BusinessArea` |  | |  | `gsber` |
-| `GLAccount` |  | |  | `konto` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `SerialNumberProfile` |  | |  | `sernp` |
-| `InspLotCostCollectorSalesOrder` |  | |  | `kont_kdauf` |
-| `InspLotCostCollectorSlsOrdItem` |  | |  | `kont_kdpos` |
-| `InspLotCostCollectorWBSElement` |  | |  | `kont_pspnr` |
-| `InspLotExternalNumber` |  | |  | `cast( qals.insp_doc_number as vdm_qinsp_doc_number preserving type )` |
-| `InspectionLotPriorityPoints` |  | |  | `prio_punkte` |
-| `MaintenancePlan` |  | |  | `warpl` |
-| `MaintenancePlanItemIntID` |  | |  | `wapos` |
-| `MaintenanceStrategy` |  | |  | `strat` |
-| `InspLotForFirstArticleInsp` |  | |  | `stat43` |
-| `InspectionLotUUID` |  | |  | `lot_guid` |
-| `InspUsgeDcsnDgtlSgntrType` |  | |  | `cast( qals.sign_type_ud as vdm_qsign_type_ud preserving type )` |
-| `InspUsgeDcsnDgtlSgntrStrgy` |  | |  | `cast( qals.signstrat_ud as vdm_qsignstrat_ud preserving type )` |
-| `_InspectionLotType` | | ✓ | | |
-| `_InspectionLotOrigin` | | ✓ | | |
-| `_InspSubsetFieldCombination` | | ✓ | | |
-| `_QltyMgmtPlantLvlConfign` | | ✓ | | |
-| `_InspLotSummaryControl` | | ✓ | | |
-| `_InspectionOperation` | | ✓ | | |
-| `_InspLotUsageDecision` | | ✓ | | |
-| `_MaterialSampleDrawing` | | ✓ | | |
-| `_InspLotMatlDocItem` | | ✓ | | |
-| `_MatlQualityAuthGroup` | | ✓ | | |
-| `_InspectionSubsetType` | | ✓ | | |
-| `_InspectionSubsetTypeText` | | ✓ | | |
-| `_InspectionLotApproval` | | ✓ | | |
-| `_InspectionLotApprovalText` | | ✓ | | |
-| `_InspLotSgntrInUsgeDcsn` | | ✓ | | |
-| `_InspLotSgntrInUsgeDcsnText` | | ✓ | | |
-| `_InspectionLotLongText` | | ✓ | | |
-| `_InspectionLotAllLongText` | | ✓ | | |
-| `_InspectionLotHasQuantity` | | ✓ | | |
-| `_InspectionLotHasQuantityT` | | ✓ | | |
-| `_IsStockPostgCmpltd` | | ✓ | | |
-| `_IsStockPostgCmpltdTxt` | | ✓ | | |
-| `_SmplDrwgProcedIsConfRqd` | | ✓ | | |
-| `_SmplDrwgProcedIsConfRqdTxt` | | ✓ | | |
-| `_IsAutomUsgeDcsnPossible` | | ✓ | | |
-| `_IsAutomUsgeDcsnPossibleTxt` | | ✓ | | |
-| `_IsDocumentationRqd` | | ✓ | | |
-| `_IsDocumentationRqdTxt` | | ✓ | | |
-| `_InspLotIsBatchRequired` | | ✓ | | |
-| `_InspLotIsBatchRequiredTxt` | | ✓ | | |
-| `_InspectionLotHasUsgeDcsn` | | ✓ | | |
-| `_InspectionLotHasUsgeDcsnTxt` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_InspLotSelectionMaterial` | | ✓ | | |
-| `_BillOfOperationsChangeState` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_MaintenancePlan` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Manufacturer` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_InspLotSelectionSupplier` | | ✓ | | |
-| `_InspLotSelManufacturer` | | ✓ | | |
-| `_InspLotSelectionCustomer` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOrdStockWBSElement` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_InspectionLotCreatedBy` | | ✓ | | |
-| `_InspectionLotChangedBy` | | ✓ | | |
-| `_InspectionLotQuantityUnit` | | ✓ | | |
-| `_InspectionLotSampleUnit` | | ✓ | | |
-| `_InspectionLotContainerUnit` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_ManufacturerPartNmbr` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `Batch` |  | |  | `charg` |  |  |
+| `Plant` |  | |  | `werk` |  |  |
+| `InspectionLotOrigin` |  | |  | `cast( qals.herkunft as vdm_qherk preserving type )` |  |  |
+| `OrderInternalBillOfOperations` |  | |  | `aufpl` |  |  |
+| `ManufacturingOrder` |  | |  | `cast( qals.aufnr as vdm_qm_fertaufnr preserving type )` |  |  |
+| `InspectionLotText` |  | |  | `cast( qals.ktextlos as vdm_qplos_text preserving type )` |  |  |
+| `InspectionLotType` |  | |  | `art` |  |  |
+| `InspectionLotQuantity` |  | |  | `cast( qals.losmenge as vdm_qlosmenge preserving type )` |  |  |
+| `InspectionLotActualQuantity` |  | |  | `cast( qals.lmengeist as vdm_qlmengeist preserving type )` |  |  |
+| `InspectionLotDefectiveQuantity` |  | |  | `cast( qals.lmengesch as vdm_qlmengesch preserving type )` |  |  |
+| `InspectionLotQuantityUnit` |  | |  | `mengeneinh` |  |  |
+| `InspLotCreatedOnLocalDate` |  | |  | `enstehdat` |  |  |
+| `InspSubsetFieldCombination` |  | |  | `slwbez` |  |  |
+| `InspLotNmbrOpenLongTermCharc` |  | |  | `cast( qals.offen_lzmk as vdm_qoffelzmk preserving type )` |  |  |
+| `StatusObject` |  | |  | `objnr` |  |  |
+| `StatusObjectCategory` |  | |  | `obtyp` |  |  |
+| `InspectionLotObjectText` |  | |  | `ktextmat` |  |  |
+| `Equipment` |  | |  | `ls_equnr` |  |  |
+| `FunctionalLocation` |  | |  | `ls_tplnr` |  |  |
+| `StatusProfile` |  | |  | `stsma` |  |  |
+| `MatlQualityAuthorizationGroup` |  | |  | `cast( qals.qmatauth as vdm_qmatauth preserving type )` |  |  |
+| `InspectionLotHasQuantity` |  | |  | `cast( qals.insmk as vdm_qvinsmk preserving type )` |  |  |
+| `InspLotIsCreatedAutomatically` |  | |  | `stat01` |  |  |
+| `InspectionLotHasPartialLots` |  | |  | `stat02` |  |  |
+| `InspectionLotHasAppraisalCosts` |  | |  | `stat06` |  |  |
+| `InspLotHasSubsets` |  | |  | `stat07` |  |  |
+| `InspLotIsAutomUsgeDcsnPossible` |  | |  | `cast( qals.stat08 as vdm_qauto_ve preserving type )` |  |  |
+| `PurchasingDocumentCategory` |  | |  | `stat09` |  |  |
+| `InspLotHasConfignSpecification` |  | |  | `stat10` |  |  |
+| `GoodsReceiptIsMovedToBlkdStock` |  | |  | `stat11` |  |  |
+| `InspLotSummaryControl` |  | |  | `stat18` |  |  |
+| `InspLotIsDocumentationRequired` |  | |  | `cast( qals.stat19 as vdm_qstat19 preserving type )` |  |  |
+| `InspLotIsTaskListRequired` |  | |  | `cast( qals.stat20 as vdm_qstat20 preserving type )` |  |  |
+| `InspLotHasManualSampleSize` |  | |  | `stat21` |  |  |
+| `InspLotHasMaterialSpec` |  | |  | `cast( qals.stat22 as vdm_qspezueber preserving type )` |  |  |
+| `InspectionLotApproval` |  | |  | `cast( qals.stat23 as vdm_qkzgenlos preserving type )` |  |  |
+| `InspLotDigitalSgntrResultsRecg` |  | |  | `stat24` |  |  |
+| `InspLotDigitalSgntrInUsgeDcsn` |  | |  | `cast( qals.stat25 as vdm_qdgtlsgntrusgedcsn preserving type )` |  |  |
+| `InspLotIsBatchRequired` |  | |  | `stat26` |  |  |
+| `InspLotUsageInStabilityStudy` |  | |  | `stat32` |  |  |
+| `InspLotHasMultipleSpec` |  | |  | `stat33` |  |  |
+| `InspLotHasPrtlLotsToSplitQty` |  | |  | `stat36` |  |  |
+| `InspLotIsStockPostingCompleted` |  | |  | `cast( qals.stat34 as vdm_qstat34 preserving type )` |  |  |
+| `InspectionLotHasUsageDecision` |  | |  | `cast( qals.stat35 as vdm_qstat35 preserving type )` |  |  |
+| `NumberOfSerialNumbers` |  | |  | `anzsn` |  |  |
+| `InspLotIsSerialNmbrPossible` |  | |  | `ein` |  |  |
+| `InspectionLotIsSkipped` |  | |  | `cast( qals.kzskiplot as vdm_qkzskiplot preserving type )` |  |  |
+| `InspectionLotIsFullInspection` |  | |  | `hpz` |  |  |
+| `InspectionLotDynamicLevel` |  | |  | `cast( qals.dynhead as vdm_qdynhead preserving type )` |  |  |
+| `SamplingProcedure` |  | |  | `stprver` |  |  |
+| `InspLotCreatedOnLocalTime` |  | |  | `cast( qals.entstezeit as vdm_qentstzeit preserving type )` |  |  |
+| `InspectionLotCreatedBy` |  | |  | `ersteller` |  |  |
+| `InspectionLotCreatedOn` |  | |  | `ersteldat` |  |  |
+| `InspectionLotCreatedOnTime` |  | |  | `cast( qals.erstelzeit as vdm_qerstezeit preserving type )` |  |  |
+| `InspectionLotChangedBy` |  | |  | `aenderer` |  |  |
+| `InspectionLotChangeDate` |  | |  | `aenderdat` |  |  |
+| `InspectionLotChangeTime` |  | |  | `cast( qals.aenderzeit as vdm_qaendezeit preserving type )` |  |  |
+| `ChangedDateTime` |  | |  | `case qals.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qals.changeddatetime end` |  |  |
+| `InspectionLotStartDate` |  | |  | `pastrterm` |  |  |
+| `InspectionLotStartTime` |  | |  | `cast( qals.pastrzeit as vdm_qstartzeit preserving type )` |  |  |
+| `InspectionLotEndDate` |  | |  | `paendterm` |  |  |
+| `InspectionLotEndTime` |  | |  | `cast( qals.paendzeit as vdm_qendezeit preserving type )` |  |  |
+| `BillOfOperationsType` |  | |  | `cast( qals.plnty as vdm_plnty preserving type )` |  |  |
+| `BillOfOperationsGroup` |  | |  | `cast( qals.plnnr as vdm_plnnr preserving type )` |  |  |
+| `BillOfOperationsUsage` |  | |  | `cast( qals.pplverw as vdm_pln_verwe preserving type )` |  |  |
+| `BillOfOperationsVariant` |  | |  | `cast( qals.plnal as vdm_plnal preserving type )` |  |  |
+| `BillOfOperationsChangeStateID` |  | |  | `zaehl` |  |  |
+| `InspectionSubsetType` |  | |  | `cast( qals.stat13 as vdm_qppkttyp preserving type )` |  |  |
+| `SmplDrawingProcedure` |  | |  | `cast( qals.prbnaverf as vdm_qprziehver preserving type )` |  |  |
+| `SmplDrawingProcedureVersion` |  | |  | `prbnavv` |  |  |
+| `SmplDrwgProcedIsConfRequired` |  | |  | `cast( qals.stat12 as vdm_qkzquit preserving type )` |  |  |
+| `InspLotSelectionMaterial` |  | |  | `selmatnr` |  |  |
+| `InspLotSelMatlRevisionLvl` |  | |  | `selrevlv` |  |  |
+| `InspLotSelectionPlant` |  | |  | `selwerk` |  |  |
+| `InspLotSelectionSupplier` |  | |  | `sellifnr` |  |  |
+| `InspLotSelectionManufacturer` |  | |  | `selherst` |  |  |
+| `InspLotSelectionCustomer` |  | |  | `selkunnr` |  |  |
+| `InspLotSelBillOfOperationsUsge` |  | |  | `selpplverw` |  |  |
+| `InspLotSelectionValidFromDate` |  | |  | `gueltigab` |  |  |
+| `ProductionVersion` |  | |  | `verid` |  |  |
+| `SalesOperationsPlanningOrder` |  | |  | `cast( qals.sa_aufnr as vdm_sa_aufnr preserving type )` |  |  |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck` |  |  |
+| `Customer` |  | |  | `cast( qals.kunnr as vdm_qkunwe preserving type )` |  |  |
+| `Supplier` |  | |  | `lifnr` |  |  |
+| `BatchBySupplier` |  | |  | `lichn` |  |  |
+| `Manufacturer` |  | |  | `hersteller` |  |  |
+| `ManufacturerPartNmbr` |  | |  | `cast( qals.ematnr as vdm_ematn preserving type )` |  |  |
+| `MaterialRevisionLevel` |  | |  | `revlv` |  |  |
+| `MaterialIsBatchManaged` |  | |  | `cast( qals.xchpf as vdm_xchpf preserving type )` |  |  |
+| `BatchStorageLocation` |  | |  | `cast( qals.lagortchrg as vdm_qlgortchar preserving type )` |  |  |
+| `MaterialCompIsSpecialStock` |  | |  | `sobkz` |  |  |
+| `PurchasingOrganization` |  | |  | `cast( qals.ekorg as ekorg_ll preserving type )` |  |  |
+| `PurchasingDocument` |  | |  | `cast( qals.ebeln as fis_ebeln preserving type )` |  |  |
+| `PurchasingDocumentItem` |  | |  | `cast( qals.ebelp as vdm_ebelp preserving type )` |  |  |
+| `ScheduleLine` |  | |  | `etenr` |  |  |
+| `AccountingDocumentType` |  | |  | `cast( qals.blart as vdm_blart preserving type )` |  |  |
+| `MaterialDocumentYear` |  | |  | `cast( qals.mjahr as vdm_mjahr preserving type )` |  |  |
+| `MaterialDocument` |  | |  | `mblnr` |  |  |
+| `MaterialDocumentItem` |  | |  | `cast( qals.zeile as vdm_mblpo preserving type )` |  |  |
+| `MatlDocLatestPostgDate` |  | |  | `budat` |  |  |
+| `GoodsMovementType` |  | |  | `bwart` |  |  |
+| `InspectionLotPlant` |  | |  | `cast( qals.werkvorg as vdm_qwerkvorg preserving type )` |  |  |
+| `InspectionLotStorageLocation` |  | |  | `cast( qals.lagortvorg as vdm_qlgortvorg preserving type )` |  |  |
+| `Warehouse` |  | |  | `lgnum` |  |  |
+| `StorageType` |  | |  | `lgtyp` |  |  |
+| `StorageBin` |  | |  | `lgpla` |  |  |
+| `SalesOrder` |  | |  | `ls_kdauf` |  |  |
+| `SalesOrderItem` |  | |  | `cast( qals.ls_kdpos as vdm_kdpos preserving type )` |  |  |
+| `DeliveryDocument` |  | |  | `cast( qals.ls_vbeln as vdm_deliverydocument preserving type )` |  |  |
+| `DeliveryDocumentItem` |  | |  | `cast( qals.ls_posnr as vdm_posnr_vl preserving type )` |  |  |
+| `DeliveryCategory` |  | |  | `ls_abrvw` |  |  |
+| `InspectionDeliveryCategory` |  | |  | `ls_abrvw` |  |  |
+| `Route` |  | |  | `ls_route` |  |  |
+| `BillToPartyCountry` |  | |  | `ls_lland` |  |  |
+| `SoldToParty` |  | |  | `cast( qals.ls_kunag as vdm_kunag preserving type )` |  |  |
+| `SalesOrganization` |  | |  | `ls_vkorg` |  |  |
+| `MaterialByCustomer` |  | |  | `ls_kdmat` |  |  |
+| `Language` |  | |  | `sprache` |  |  |
+| `InspLotNmbrAddlRecordedCharc` |  | |  | `zusmkzaehl` |  |  |
+| `InspLotNmbrOpenShortTermCharc` |  | |  | `offennlzmk` |  |  |
+| `InspectionLotContainer` |  | |  | `anzgeb` |  |  |
+| `InspectionLotContainerUnit` |  | |  | `gebeh` |  |  |
+| `InspectionLotSampleQuantity` |  | |  | `gesstichpr` |  |  |
+| `InspectionLotSampleUnit` |  | |  | `cast( qals.einhprobe as vdm_qprobemgeh preserving type )` |  |  |
+| `InspLotDynamicRule` |  | |  | `cast( qals.dynregel as vdm_qdynregel preserving type )` |  |  |
+| `InspLotDynamicTrggrPoint` |  | |  | `stat44` |  |  |
+| `InspectionDynamicStage` |  | |  | `prstufe` |  |  |
+| `InspectionSeverity` |  | |  | `prschaerfe` |  |  |
+| `InspLotQtyToFree` |  | |  | `cast( qals.lmenge01 as vdm_qlmenge01f preserving type )` |  |  |
+| `InspLotQtyToScrap` |  | |  | `cast( qals.lmenge02 as vdm_qlmenge02f preserving type )` |  |  |
+| `InspLotQtyToSample` |  | |  | `lmenge03` |  |  |
+| `InspLotQtyToBlocked` |  | |  | `cast( qals.lmenge04 as vdm_qlmenge04f preserving type )` |  |  |
+| `InspLotQtyToReserves` |  | |  | `lmenge05` |  |  |
+| `InspLotQtyToAnotherMaterial` |  | |  | `cast( qals.lmenge06 as vdm_qlmenge06f preserving type )` |  |  |
+| `InspLotMaterialPostedTo` |  | |  | `cast( qals.matnrneu as vdm_qmatnrneu preserving type )` |  |  |
+| `InspLotBatchTransferredTo` |  | |  | `cast( qals.chargneu as vdm_qchargneu preserving type )` |  |  |
+| `InspLotQtyReturnedToSupplier` |  | |  | `cast( qals.lmenge07 as vdm_qlmenge07f preserving type )` |  |  |
+| `InspLotQtyToSpecialStock` |  | |  | `cast( qals.lmenge08 as vdm_qlmenge08f preserving type )` |  |  |
+| `InspLotQtyToOtherStock` |  | |  | `cast( qals.lmenge09 as vdm_qlmenge09f preserving type )` |  |  |
+| `InspLotQtyToBePosted` |  | |  | `cast( qals.lmengezub as vdm_qlmengezub preserving type )` |  |  |
+| `InspLotSmplQtyForLongTermChar` |  | |  | `cast( qals.lmengelz as vdm_qlmengelz preserving type )` |  |  |
+| `InspLotQtyInspected` |  | |  | `cast( qals.lmengepr as vdm_qlmengepr preserving type )` |  |  |
+| `InspLotQtyDestroyed` |  | |  | `cast( qals.lmengezer as vdm_qlmengezer preserving type )` |  |  |
+| `InspectionLotScrapRatio` |  | |  | `anteil` |  |  |
+| `InspLotUsageDecisionTool` |  | |  | `stat03` |  |  |
+| `InspectionLotAllowedScrapRatio` |  | |  | `qpmatlos` |  |  |
+| `QualityCostCollector` |  | |  | `aufnr_co` |  |  |
+| `ConsumptionPosting` |  | |  | `kzvbr` |  |  |
+| `AccountAssignmentCategory` |  | |  | `knttp` |  |  |
+| `PurchasingDocumentItemCategory` |  | |  | `pstyp` |  |  |
+| `InspLotAcctAssgmtKey` |  | |  | `stat05` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `ReservationItem` |  | |  | `aufps` |  |  |
+| `MasterFixedAsset` |  | |  | `anln1` |  |  |
+| `FixedAsset` |  | |  | `anln2` |  |  |
+| `SalesOrdStockWBSElement` |  | |  | `ps_psp_pnr` |  |  |
+| `ProjectNetwork` |  | |  | `nplnr` |  |  |
+| `NetworkActivityInternalID` |  | |  | `aplzl` |  |  |
+| `InventorySpclStkSalesDocument` |  | |  | `cast( qals.kdauf as vdm_mat_kdauf preserving type )` |  |  |
+| `InventorySpclStkSalesDocItm` |  | |  | `kdpos` |  |  |
+| `ProfitabilitySegment` |  | |  | `cast( case when paobjnr > '9999999999' then '9999999999' else lpad( qals.paobjnr, 10, '0' ) end as rkeobjnr_numc )` |  |  |
+| `ProfitabilitySegment_2` |  | |  | `cast( qals.paobjnr as rkeobjnr_char )` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `GLAccount` |  | |  | `konto` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `SerialNumberProfile` |  | |  | `sernp` |  |  |
+| `InspLotCostCollectorSalesOrder` |  | |  | `kont_kdauf` |  |  |
+| `InspLotCostCollectorSlsOrdItem` |  | |  | `kont_kdpos` |  |  |
+| `InspLotCostCollectorWBSElement` |  | |  | `kont_pspnr` |  |  |
+| `InspLotExternalNumber` |  | |  | `cast( qals.insp_doc_number as vdm_qinsp_doc_number preserving type )` |  |  |
+| `InspectionLotPriorityPoints` |  | |  | `prio_punkte` |  |  |
+| `MaintenancePlan` |  | |  | `warpl` |  |  |
+| `MaintenancePlanItemIntID` |  | |  | `wapos` |  |  |
+| `MaintenanceStrategy` |  | |  | `strat` |  |  |
+| `InspLotForFirstArticleInsp` |  | |  | `stat43` |  |  |
+| `InspectionLotUUID` |  | |  | `lot_guid` |  |  |
+| `InspUsgeDcsnDgtlSgntrType` |  | |  | `cast( qals.sign_type_ud as vdm_qsign_type_ud preserving type )` |  |  |
+| `InspUsgeDcsnDgtlSgntrStrgy` |  | |  | `cast( qals.signstrat_ud as vdm_qsignstrat_ud preserving type )` |  |  |
+| `_InspectionLotType` | | ✓ | | | | |
+| `_InspectionLotOrigin` | | ✓ | | | | |
+| `_InspSubsetFieldCombination` | | ✓ | | | | |
+| `_QltyMgmtPlantLvlConfign` | | ✓ | | | | |
+| `_InspLotSummaryControl` | | ✓ | | | | |
+| `_InspectionOperation` | | ✓ | | | | |
+| `_InspLotUsageDecision` | | ✓ | | | | |
+| `_MaterialSampleDrawing` | | ✓ | | | | |
+| `_InspLotMatlDocItem` | | ✓ | | | | |
+| `_MatlQualityAuthGroup` | | ✓ | | | | |
+| `_InspectionSubsetType` | | ✓ | | | | |
+| `_InspectionSubsetTypeText` | | ✓ | | | | |
+| `_InspectionLotApproval` | | ✓ | | | | |
+| `_InspectionLotApprovalText` | | ✓ | | | | |
+| `_InspLotSgntrInUsgeDcsn` | | ✓ | | | | |
+| `_InspLotSgntrInUsgeDcsnText` | | ✓ | | | | |
+| `_InspectionLotLongText` | | ✓ | | | | |
+| `_InspectionLotAllLongText` | | ✓ | | | | |
+| `_InspectionLotHasQuantity` | | ✓ | | | | |
+| `_InspectionLotHasQuantityT` | | ✓ | | | | |
+| `_IsStockPostgCmpltd` | | ✓ | | | | |
+| `_IsStockPostgCmpltdTxt` | | ✓ | | | | |
+| `_SmplDrwgProcedIsConfRqd` | | ✓ | | | | |
+| `_SmplDrwgProcedIsConfRqdTxt` | | ✓ | | | | |
+| `_IsAutomUsgeDcsnPossible` | | ✓ | | | | |
+| `_IsAutomUsgeDcsnPossibleTxt` | | ✓ | | | | |
+| `_IsDocumentationRqd` | | ✓ | | | | |
+| `_IsDocumentationRqdTxt` | | ✓ | | | | |
+| `_InspLotIsBatchRequired` | | ✓ | | | | |
+| `_InspLotIsBatchRequiredTxt` | | ✓ | | | | |
+| `_InspectionLotHasUsgeDcsn` | | ✓ | | | | |
+| `_InspectionLotHasUsgeDcsnTxt` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_InspLotSelectionMaterial` | | ✓ | | | | |
+| `_BillOfOperationsChangeState` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_MaintenancePlan` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Manufacturer` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_InspLotSelectionSupplier` | | ✓ | | | | |
+| `_InspLotSelManufacturer` | | ✓ | | | | |
+| `_InspLotSelectionCustomer` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOrdStockWBSElement` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_InspectionLotCreatedBy` | | ✓ | | | | |
+| `_InspectionLotChangedBy` | | ✓ | | | | |
+| `_InspectionLotQuantityUnit` | | ✓ | | | | |
+| `_InspectionLotSampleUnit` | | ✓ | | | | |
+| `_InspectionLotContainerUnit` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_ManufacturerPartNmbr` | | ✓ | | | | |
 
 ## Associations
 

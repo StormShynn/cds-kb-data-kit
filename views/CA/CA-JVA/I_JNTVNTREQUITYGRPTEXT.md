@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JointVenture` | ✓ | |  | `cast( vname as jv_name_cds preserving type )` |
-| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |
-| `JntOpgAgrmtEquityGrpText` |  | |  | `cast( egtxt as jv_egtxt_cds preserving type )` |
-| `_CompanyCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_JntVntrEquityGrp` | | ✓ | | |
-| `_JointVentureMasterFld` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name_cds preserving type )` |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |  |  |
+| `JntOpgAgrmtEquityGrpText` |  | |  | `cast( egtxt as jv_egtxt_cds preserving type )` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_JntVntrEquityGrp` | | ✓ | | | | |
+| `_JointVentureMasterFld` | | ✓ | | | | |
 
 ## Associations
 

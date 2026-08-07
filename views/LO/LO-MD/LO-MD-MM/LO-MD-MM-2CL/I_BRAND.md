@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Brand` | ✓ | |  | `brand_id` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Brand` | ✓ | |  | `brand_id` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

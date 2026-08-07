@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TreasuryLedgerTransaction` | ✓ | |  | `cast(os_guid as ftr_gen_trl_trans preserving type )` |
-| `TreasuryBusinessTransCategory` |  | |  | `cast( bustranscat as ftr_gen_business_trans_categ preserving type )` |
-| `TreasuryPositionLedgerDate` |  | |  | `trldate` |
-| `TreasuryBusinessTransaction` |  | |  | `cast( bustransid as ftr_gen_business_transaction preserving type )` |
-| `TrsyBusTransactionCreationDate` |  | |  | `cast( create_date as tpm_bt_create_date preserving type )` |
-| `TrsyBusTransactionCreationTime` |  | |  | `cast( create_time as tpm_bt_create_time preserving type )` |
-| `TrsyDerivedBusinessTransStatus` |  | |  | `cast( bustransstate as ftr_gen_trltranstate preserving type )` |
-| `TreasuryBusinessTransStatus` |  | |  | `cast( booking_state as ftr_gen_trl_bookingstate preserving type )` |
-| `TreasuryValuationArea` |  | |  | `valuation_area` |
-| `CompanyCode` |  | |  | `cast( tr_acc_code as bukrs preserving type )` |
-| `OriglTrsyBusinessTransaction` |  | |  | `cast( refbustransid as ftr_gen_bustransid_orig preserving type )` |
-| `PostingDate` |  | |  | `fi_post_date` |
-| `PostingReversalDate` |  | |  | `fi_rev_date` |
-| `TrsyIntragroupTransacStatus` |  | |  | `cast( igt_status as ftr_gen_igt_status preserving type )` |
-| `TreasuryUserStatisticsUUID` |  | |  | `cast( user_data_oid as ftr_gen_user_data_guid preserving type )` |
-| `_TrlFlow` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryLedgerTransaction` | ✓ | |  | `cast(os_guid as ftr_gen_trl_trans preserving type )` |  |  |
+| `TreasuryBusinessTransCategory` |  | |  | `cast( bustranscat as ftr_gen_business_trans_categ preserving type )` |  |  |
+| `TreasuryPositionLedgerDate` |  | |  | `trldate` |  |  |
+| `TreasuryBusinessTransaction` |  | |  | `cast( bustransid as ftr_gen_business_transaction preserving type )` |  |  |
+| `TrsyBusTransactionCreationDate` |  | |  | `cast( create_date as tpm_bt_create_date preserving type )` |  |  |
+| `TrsyBusTransactionCreationTime` |  | |  | `cast( create_time as tpm_bt_create_time preserving type )` |  |  |
+| `TrsyDerivedBusinessTransStatus` |  | |  | `cast( bustransstate as ftr_gen_trltranstate preserving type )` |  |  |
+| `TreasuryBusinessTransStatus` |  | |  | `cast( booking_state as ftr_gen_trl_bookingstate preserving type )` |  |  |
+| `TreasuryValuationArea` |  | |  | `valuation_area` |  |  |
+| `CompanyCode` |  | |  | `cast( tr_acc_code as bukrs preserving type )` |  |  |
+| `OriglTrsyBusinessTransaction` |  | |  | `cast( refbustransid as ftr_gen_bustransid_orig preserving type )` |  |  |
+| `PostingDate` |  | |  | `fi_post_date` |  |  |
+| `PostingReversalDate` |  | |  | `fi_rev_date` |  |  |
+| `TrsyIntragroupTransacStatus` |  | |  | `cast( igt_status as ftr_gen_igt_status preserving type )` |  |  |
+| `TreasuryUserStatisticsUUID` |  | |  | `cast( user_data_oid as ftr_gen_user_data_guid preserving type )` |  |  |
+| `_TrlFlow` | | ✓ | | | | |
 
 ## Associations
 

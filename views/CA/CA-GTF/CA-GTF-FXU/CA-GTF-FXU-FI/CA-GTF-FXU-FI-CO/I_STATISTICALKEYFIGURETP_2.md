@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StatisticalKeyFigure` | ✓ | |  |  |
-| `ControllingArea` | ✓ | |  |  |
-| `StatisticalKeyFigureForEdit` |  | |  |  |
-| `ControllingAreaForEdit` |  | |  |  |
-| `StatisticalKeyFigureName` |  | |  |  |
-| `StstcKeyFigQuantityUnit` |  | |  |  |
-| `StstcKeyFigCategory` |  | |  |  |
-| `StstclKeyFigCreatedAtDateTime` |  | |  |  |
-| `StstclKeyFigLastChgdAtDteTme` |  | |  |  |
-| `StstclKeyFigureCreatedByUser` |  | |  |  |
-| `StstclKeyFigLastChangedByUser` |  | |  |  |
-| `_StatisticalKeyFigureTextTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatisticalKeyFigure` | ✓ | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `StatisticalKeyFigureForEdit` |  | |  |  |  |  |
+| `ControllingAreaForEdit` |  | |  |  |  |  |
+| `StatisticalKeyFigureName` |  | |  |  |  |  |
+| `StstcKeyFigQuantityUnit` |  | |  |  |  |  |
+| `StstcKeyFigCategory` |  | |  |  |  |  |
+| `StstclKeyFigCreatedAtDateTime` |  | |  |  |  |  |
+| `StstclKeyFigLastChgdAtDteTme` |  | |  |  |  |  |
+| `StstclKeyFigureCreatedByUser` |  | |  |  |  |  |
+| `StstclKeyFigLastChangedByUser` |  | |  |  |  |  |
+| `_StatisticalKeyFigureTextTP` | | ✓ | | | | |
 
 ## Source Code
 

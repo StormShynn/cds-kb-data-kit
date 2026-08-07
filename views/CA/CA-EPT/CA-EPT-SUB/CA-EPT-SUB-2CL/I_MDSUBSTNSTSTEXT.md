@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
-| `MDSubstnStatus` | ✓ | |  | `cast ( domvalue_l as md_substn_status )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `MDSubstnStatusDescription` |  | |  | `cast( ddtext as md_substn_status_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_Status` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |  |  |
+| `MDSubstnStatus` | ✓ | |  | `cast ( domvalue_l as md_substn_status )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `MDSubstnStatusDescription` |  | |  | `cast( ddtext as md_substn_status_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Status` | | ✓ | | | | |
 
 ## Associations
 

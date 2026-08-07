@@ -28,78 +28,78 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |
-| `ServiceOrder` | ✓ | |  |  |
-| `ServiceOrderDescription` |  | |  |  |
-| `ServiceOrderStatus` |  | |  |  |
-| `ServiceOrderStatusName` |  | |  | `_SrvcDocLifecycleStatus._ServiceDocumentStatusText [1: Language=$session.system_language].ServiceDocumentStatusName` |
-| `ServiceDocumentType` |  | |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |
-| `RequestedServiceEndDate` |  | |  |  |
-| `ServiceDocumentCreationDate` |  | |  |  |
-| `SrvcOrdCreationQuarter` |  | |  |  |
-| `SrvcOrdCreationMonth` |  | |  |  |
-| `SrvcOrdCreationYear` |  | |  |  |
-| `ServiceDocumentPriority` |  | |  |  |
-| `ServiceDocumentHasError` |  | |  |  |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `NumberOfIncomingServiceOrders` |  | |  |  |
-| `NumberOfOpenServiceOrders` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `NmbrOfIncompleteServiceOrders` |  | |  |  |
-| `NumberOfOverdueServiceOrders` |  | |  |  |
-| `SrvcOrdHasConfdItem` |  | |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |
-| `ServiceReferenceObjectType` |  | |  |  |
-| `SrvcRefObjIsMainObject` |  | |  |  |
-| `ProductID` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `RespyMgmtServiceTeam` |  | |  |  |
-| `RespyMgmtServiceTeamDesc` |  | |  |  |
-| `TeamName` |  | |  |  |
-| `_ServiceDocumentIsOpen` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_SrvcDocLifecycleStatus` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceDocumentPriority` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_ServiceDocHasError` | | ✓ | | |
-| `_SrvcOrdConfStatus` | | ✓ | | |
-| `_SalesOrganizationOrgUnit` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_Period` | | ✓ | | |
-| `_ServiceDocRefObj` | | ✓ | | |
-| `_ServiceTeamHeader` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |  |  |
+| `ServiceOrder` | ✓ | |  |  |  |  |
+| `ServiceOrderDescription` |  | |  |  |  |  |
+| `ServiceOrderStatus` |  | |  |  |  |  |
+| `ServiceOrderStatusName` |  | |  | `_SrvcDocLifecycleStatus._ServiceDocumentStatusText [1: Language=$session.system_language].ServiceDocumentStatusName` |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |  |  |
+| `RequestedServiceEndDate` |  | |  |  |  |  |
+| `ServiceDocumentCreationDate` |  | |  |  |  |  |
+| `SrvcOrdCreationQuarter` |  | |  |  |  |  |
+| `SrvcOrdCreationMonth` |  | |  |  |  |  |
+| `SrvcOrdCreationYear` |  | |  |  |  |  |
+| `ServiceDocumentPriority` |  | |  |  |  |  |
+| `ServiceDocumentHasError` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `NumberOfIncomingServiceOrders` |  | |  |  |  |  |
+| `NumberOfOpenServiceOrders` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `NmbrOfIncompleteServiceOrders` |  | |  |  |  |  |
+| `NumberOfOverdueServiceOrders` |  | |  |  |  |  |
+| `SrvcOrdHasConfdItem` |  | |  |  |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |  |  |
+| `ServiceReferenceObjectType` |  | |  |  |  |  |
+| `SrvcRefObjIsMainObject` |  | |  |  |  |  |
+| `ProductID` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |  |  |
+| `RespyMgmtServiceTeamDesc` |  | |  |  |  |  |
+| `TeamName` |  | |  |  |  |  |
+| `_ServiceDocumentIsOpen` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocumentPriority` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_ServiceDocHasError` | | ✓ | | | | |
+| `_SrvcOrdConfStatus` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_Period` | | ✓ | | | | |
+| `_ServiceDocRefObj` | | ✓ | | | | |
+| `_ServiceTeamHeader` | | ✓ | | | | |
 
 ## Associations
 

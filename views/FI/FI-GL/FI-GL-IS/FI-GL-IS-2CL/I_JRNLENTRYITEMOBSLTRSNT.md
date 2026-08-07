@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JrnlEntryItemObsoleteReason` | ✓ | |  | `cast( substring( dd07t.domvalue_l, 1, 1) as fins_obsolete_item_reason preserving type )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `JrnlEntryItemObsoleteRsnName` |  | |  | `cast( dd07t.ddtext as fis_fin_acc_type_name preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JrnlEntryItemObsoleteReason` | ✓ | |  | `cast( substring( dd07t.domvalue_l, 1, 1) as fins_obsolete_item_reason preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `JrnlEntryItemObsoleteRsnName` |  | |  | `cast( dd07t.ddtext as fis_fin_acc_type_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,83 +30,83 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `)` |  | |  | `key Customer : abap.char( 10 )` |
-| `AuthorizationGroup` |  | |  | `abap.char( 4 )` |
-| `AuthorizationGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `BillingIsBlockedForCustomer` |  | |  | `abap.char( 2 )` |
-| `BillingIsBlockedForCustomer_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CreatedByUser` |  | |  | `abap.char( 12 )` |
-| `CreatedByUser_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CreationDate` |  | |  | `RAP_CP_ODATA_V2_EDM_DATETIME` |
-| `CreationDate_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CustomerAccountGroup` |  | |  | `abap.char( 4 )` |
-| `CustomerAccountGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CustomerClassification` |  | |  | `abap.char( 2 )` |
-| `CustomerClassification_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CustomerFullName` |  | |  | `abap.char( 220 )` |
-| `CustomerFullName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CustomerName` |  | |  | `abap.char( 80 )` |
-| `CustomerName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `DeliveryIsBlocked` |  | |  | `abap.char( 2 )` |
-| `DeliveryIsBlocked_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `NFPartnerIsNaturalPerson` |  | |  | `abap.char( 1 )` |
-| `NFPartnerIsNaturalPerson_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `OrderIsBlockedForCustomer` |  | |  | `abap.char( 2 )` |
-| `OrderIsBlockedForCustomer_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `PostingIsBlocked` |  | |  | `abap_boolean` |
-| `PostingIsBlocked_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `Supplier` |  | |  | `abap.char( 10 )` |
-| `Supplier_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CustomerCorporateGroup` |  | |  | `abap.char( 10 )` |
-| `CustomerCorporateGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `FiscalAddress` |  | |  | `abap.char( 10 )` |
-| `FiscalAddress_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `Industry` |  | |  | `abap.char( 4 )` |
-| `Industry_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `IndustryCode1` |  | |  | `abap.char( 10 )` |
-| `IndustryCode1_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `IndustryCode2` |  | |  | `abap.char( 10 )` |
-| `IndustryCode2_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `IndustryCode3` |  | |  | `abap.char( 10 )` |
-| `IndustryCode3_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `IndustryCode4` |  | |  | `abap.char( 10 )` |
-| `IndustryCode4_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `IndustryCode5` |  | |  | `abap.char( 10 )` |
-| `IndustryCode5_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `InternationalLocationNumber1` |  | |  | `abap.numc( 7 )` |
-| `InternationalLocationNumber_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `NielsenRegion` |  | |  | `abap.char( 2 )` |
-| `NielsenRegion_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `ResponsibleType` |  | |  | `abap.char( 2 )` |
-| `ResponsibleType_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber1` |  | |  | `abap.char( 16 )` |
-| `TaxNumber1_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber2` |  | |  | `abap.char( 11 )` |
-| `TaxNumber2_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber3` |  | |  | `abap.char( 18 )` |
-| `TaxNumber3_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber4` |  | |  | `abap.char( 18 )` |
-| `TaxNumber4_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber5` |  | |  | `abap.char( 60 )` |
-| `TaxNumber5_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumberType` |  | |  | `abap.char( 2 )` |
-| `TaxNumberType_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `VATRegistration` |  | |  | `abap.char( 20 )` |
-| `VATRegistration_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `DeletionIndicator` |  | |  | `abap_boolean` |
-| `DeletionIndicator_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `ExpressTrainStationName` |  | |  | `abap.char( 25 )` |
-| `ExpressTrainStationName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TrainStationName` |  | |  | `abap.char( 25 )` |
-| `TrainStationName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CityCode` |  | |  | `abap.char( 4 )` |
-| `CityCode_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `County` |  | |  | `abap.char( 3 )` |
-| `County_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `YY1_shipment_cus` |  | |  | `abap.char( 3 )` |
-| `YY1_shipment_cus_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `)` |  | |  | `key Customer : abap.char( 10 )` |  |  |
+| `AuthorizationGroup` |  | |  | `abap.char( 4 )` |  |  |
+| `AuthorizationGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `BillingIsBlockedForCustomer` |  | |  | `abap.char( 2 )` |  |  |
+| `BillingIsBlockedForCustomer_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `CreatedByUser` |  | |  | `abap.char( 12 )` |  |  |
+| `CreatedByUser_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `CreationDate` |  | |  | `RAP_CP_ODATA_V2_EDM_DATETIME` |  |  |
+| `CreationDate_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `CustomerAccountGroup` |  | |  | `abap.char( 4 )` |  |  |
+| `CustomerAccountGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `CustomerClassification` |  | |  | `abap.char( 2 )` |  |  |
+| `CustomerClassification_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `CustomerFullName` |  | |  | `abap.char( 220 )` |  |  |
+| `CustomerFullName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `CustomerName` |  | |  | `abap.char( 80 )` |  |  |
+| `CustomerName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `DeliveryIsBlocked` |  | |  | `abap.char( 2 )` |  |  |
+| `DeliveryIsBlocked_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `NFPartnerIsNaturalPerson` |  | |  | `abap.char( 1 )` |  |  |
+| `NFPartnerIsNaturalPerson_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `OrderIsBlockedForCustomer` |  | |  | `abap.char( 2 )` |  |  |
+| `OrderIsBlockedForCustomer_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `PostingIsBlocked` |  | |  | `abap_boolean` |  |  |
+| `PostingIsBlocked_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `Supplier` |  | |  | `abap.char( 10 )` |  |  |
+| `Supplier_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `CustomerCorporateGroup` |  | |  | `abap.char( 10 )` |  |  |
+| `CustomerCorporateGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `FiscalAddress` |  | |  | `abap.char( 10 )` |  |  |
+| `FiscalAddress_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `Industry` |  | |  | `abap.char( 4 )` |  |  |
+| `Industry_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `IndustryCode1` |  | |  | `abap.char( 10 )` |  |  |
+| `IndustryCode1_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `IndustryCode2` |  | |  | `abap.char( 10 )` |  |  |
+| `IndustryCode2_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `IndustryCode3` |  | |  | `abap.char( 10 )` |  |  |
+| `IndustryCode3_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `IndustryCode4` |  | |  | `abap.char( 10 )` |  |  |
+| `IndustryCode4_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `IndustryCode5` |  | |  | `abap.char( 10 )` |  |  |
+| `IndustryCode5_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `InternationalLocationNumber1` |  | |  | `abap.numc( 7 )` |  |  |
+| `InternationalLocationNumber_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `NielsenRegion` |  | |  | `abap.char( 2 )` |  |  |
+| `NielsenRegion_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `ResponsibleType` |  | |  | `abap.char( 2 )` |  |  |
+| `ResponsibleType_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `TaxNumber1` |  | |  | `abap.char( 16 )` |  |  |
+| `TaxNumber1_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `TaxNumber2` |  | |  | `abap.char( 11 )` |  |  |
+| `TaxNumber2_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `TaxNumber3` |  | |  | `abap.char( 18 )` |  |  |
+| `TaxNumber3_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `TaxNumber4` |  | |  | `abap.char( 18 )` |  |  |
+| `TaxNumber4_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `TaxNumber5` |  | |  | `abap.char( 60 )` |  |  |
+| `TaxNumber5_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `TaxNumberType` |  | |  | `abap.char( 2 )` |  |  |
+| `TaxNumberType_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `VATRegistration` |  | |  | `abap.char( 20 )` |  |  |
+| `VATRegistration_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `DeletionIndicator` |  | |  | `abap_boolean` |  |  |
+| `DeletionIndicator_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `ExpressTrainStationName` |  | |  | `abap.char( 25 )` |  |  |
+| `ExpressTrainStationName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `TrainStationName` |  | |  | `abap.char( 25 )` |  |  |
+| `TrainStationName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `CityCode` |  | |  | `abap.char( 4 )` |  |  |
+| `CityCode_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `County` |  | |  | `abap.char( 3 )` |  |  |
+| `County_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
+| `YY1_shipment_cus` |  | |  | `abap.char( 3 )` |  |  |
+| `YY1_shipment_cus_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |  |  |
 
 ## Source Code
 

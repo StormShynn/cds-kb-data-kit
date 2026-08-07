@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SLCPartyRole` | ✓ | |  | `cast ( substring( domvalue_l, 1, 3 ) as /srmsmc/party_role_code preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `SLCPartyRoleName` |  | |  | `cast(ddtext as /srmsmc/role_description preserving type)` |
-| `_Language` | | ✓ | | |
-| `_SLCPartyRole` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SLCPartyRole` | ✓ | |  | `cast ( substring( domvalue_l, 1, 3 ) as /srmsmc/party_role_code preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `SLCPartyRoleName` |  | |  | `cast(ddtext as /srmsmc/role_description preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SLCPartyRole` | | ✓ | | | | |
 
 ## Associations
 

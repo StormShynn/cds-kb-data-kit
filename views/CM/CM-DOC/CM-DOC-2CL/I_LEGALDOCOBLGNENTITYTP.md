@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocOblgnEntityUUID` | ✓ | |  |  |
-| `LglCntntMDocOblgnUUID` |  | |  |  |
-| `LglCntntMDocumentUUID` |  | |  |  |
-| `LglCntntMDocObligation` |  | |  |  |
-| `LglCntntMEntity` |  | |  |  |
-| `LglCntntMEntityType` |  | |  |  |
-| `LglCntntMTechEntityType` |  | |  |  |
-| `_Document` | | ✓ | | |
-| `_LegalDocObligation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocOblgnEntityUUID` | ✓ | |  |  |  |  |
+| `LglCntntMDocOblgnUUID` |  | |  |  |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |  |  |
+| `LglCntntMDocObligation` |  | |  |  |  |  |
+| `LglCntntMEntity` |  | |  |  |  |  |
+| `LglCntntMEntityType` |  | |  |  |  |  |
+| `LglCntntMTechEntityType` |  | |  |  |  |  |
+| `_Document` | | ✓ | | | | |
+| `_LegalDocObligation` | | ✓ | | | | |
 
 ## Source Code
 

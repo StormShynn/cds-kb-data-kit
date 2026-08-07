@@ -27,32 +27,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TimeSheetRecordUUID` | ✓ | |  |  |
-| `TimeSheetRecord` |  | |  |  |
-| `WorkAssignment` |  | |  |  |
-| `TimeSheetDate` |  | |  |  |
-| `RecordedHours` |  | |  |  |
-| `HoursUnitOfMeasure` |  | |  |  |
-| `TimeSheetRecordLongText` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `ActivityType` |  | |  |  |
-| `WorkItem` |  | |  |  |
-| `BillableControl` |  | |  |  |
-| `TimeSheetStatus` |  | |  |  |
-| `TimeSheetPredecessorRecord` |  | |  |  |
-| `TimeSheetAccountingDocument` |  | |  |  |
-| `WorkflowTaskInternalID` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `TimeSheetApprovedByUser` |  | |  |  |
-| `TimeSheetApprovedDate` |  | |  |  |
-| `TimeSheetCreationDate` |  | |  |  |
-| `TimeSheetEntryTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `TimeSheetLastChangedDate` |  | |  |  |
-| `TimeSheetLastChangedTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TimeSheetRecordUUID` | ✓ | |  |  |  |  |
+| `TimeSheetRecord` |  | |  |  |  |  |
+| `WorkAssignment` |  | |  |  |  |  |
+| `TimeSheetDate` |  | |  |  |  |  |
+| `RecordedHours` |  | |  |  |  |  |
+| `HoursUnitOfMeasure` |  | |  |  |  |  |
+| `TimeSheetRecordLongText` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `ActivityType` |  | |  |  |  |  |
+| `WorkItem` |  | |  |  |  |  |
+| `BillableControl` |  | |  |  |  |  |
+| `TimeSheetStatus` |  | |  |  |  |  |
+| `TimeSheetPredecessorRecord` |  | |  |  |  |  |
+| `TimeSheetAccountingDocument` |  | |  |  |  |  |
+| `WorkflowTaskInternalID` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `TimeSheetApprovedByUser` |  | |  |  |  |  |
+| `TimeSheetApprovedDate` |  | |  |  |  |  |
+| `TimeSheetCreationDate` |  | |  |  |  |  |
+| `TimeSheetEntryTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `TimeSheetLastChangedDate` |  | |  |  |  |  |
+| `TimeSheetLastChangedTime` |  | |  |  |  |  |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CndnContrSettlmtCalcMethod` | ✓ | |  | `cast( dd07t.domvalue_l as wb2_settlmt_calc_method )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `CndnContrSettlmtCalcMethodName` |  | |  | `cast( dd07t.ddtext as wb2_settlmt_calc_method_descr preserving type )` |
-| `_Language` | | ✓ | | |
-| `_CndnContrSettlmtCalcMethod` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrSettlmtCalcMethod` | ✓ | |  | `cast( dd07t.domvalue_l as wb2_settlmt_calc_method )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CndnContrSettlmtCalcMethodName` |  | |  | `cast( dd07t.ddtext as wb2_settlmt_calc_method_descr preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CndnContrSettlmtCalcMethod` | | ✓ | | | | |
 
 ## Associations
 

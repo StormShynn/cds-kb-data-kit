@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClassType` | ✓ | |  | `klart` |
-| `ClfnObjectTable` |  | |  | `obtab` |
-| `MultipleObjTableClfnIsAllowed` |  | |  | `multobj` |
-| `ClfnNewNumberingIsAllowed` |  | |  | `ausp_new` |
-| `ClassTypeIsInternal` |  | |  | `intklart` |
-| `EngChangeMgmtIsAllowed` |  | |  | `aediezuord` |
-| `MultipleClassIsAllowed` |  | |  | `mfkls` |
-| `ClassTypeIsUsableInVarConfign` |  | |  | `varklart` |
-| `_ClassTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassType` | ✓ | |  | `klart` |  |  |
+| `ClfnObjectTable` |  | |  | `obtab` |  |  |
+| `MultipleObjTableClfnIsAllowed` |  | |  | `multobj` |  |  |
+| `ClfnNewNumberingIsAllowed` |  | |  | `ausp_new` |  |  |
+| `ClassTypeIsInternal` |  | |  | `intklart` |  |  |
+| `EngChangeMgmtIsAllowed` |  | |  | `aediezuord` |  |  |
+| `MultipleClassIsAllowed` |  | |  | `mfkls` |  |  |
+| `ClassTypeIsUsableInVarConfign` |  | |  | `varklart` |  |  |
+| `_ClassTypeText` | | ✓ | | | | |
 
 ## Source Code
 

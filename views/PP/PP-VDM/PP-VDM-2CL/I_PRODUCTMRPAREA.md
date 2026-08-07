@@ -28,70 +28,70 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `cast(matnr as productnumber preserving type)` |
-| `MRPArea` | ✓ | |  | `berid` |
-| `MRPPlant` |  | |  | `werks` |
-| `MRPGroup` |  | |  | `disgr` |
-| `MRPType` |  | |  | `dismm` |
-| `MRPController` |  | |  | `cast(dispo as pph_dispo preserving type)` |
-| `MRPProfile` |  | |  | `cast(dispr as vdm_dispr preserving type)` |
-| `LotSizingProcedure` |  | |  | `disls` |
-| `MRPPlanningCalendar` |  | |  | `mrppp` |
-| `MRPPlanningCycle` |  | |  | `lfrhy` |
-| `MRPSafetyStockMethod` |  | |  | `sfty_stk_meth` |
-| `MaterialProcurementProfile` |  | |  | `cast(sobsl as pph_sobsl preserving type)` |
-| `ProductionStorageLocation` |  | |  | `cast(lgpro as vdm_lgpro preserving type)` |
-| `DfltStorLocForExtProcmt` |  | |  | `cast(lgfsb as vdm_lgfsb preserving type)` |
-| `RangeOfCoverageProfile` |  | |  | `cast(rwpro as pph_rwpro preserving type)` |
-| `SafetyTimePeriodProfile` |  | |  | `cast(shpro as pph_shpro preserving type)` |
-| `ProductSafetyTimeMRPRelevance` |  | |  | `cast(shflg as pph_shflg preserving type)` |
-| `DependentRqmtMRPRelevance` |  | |  | `cast(ahdis as pph_ahdis preserving type)` |
-| `StorageCostsPercentageCode` |  | |  | `lagpr` |
-| `RoundingProfile` |  | |  | `rdprf` |
-| `MaintenanceStatus` |  | |  | `pstat` |
-| `IsMarkedForDeletion` |  | |  | `loekz` |
-| `LastChangedByUser` |  | |  | `aenam` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `LastChangeTime` |  | |  | `aezeit` |
-| `PlannedDeliveryDurationInDays` |  | |  | `plifz` |
-| `PlanningTimeFenceInDays` |  | |  | `cast(fxhor as vdm_fxhor preserving type)` |
-| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  | `takzt` |
-| `AssemblyScrapPercent` |  | |  | `ausss` |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `MinimumLotSizeQuantity` |  | |  | `bstmi` |
-| `MaximumLotSizeQuantity` |  | |  | `bstma` |
-| `MaterialMaxStockLevelQuantity` |  | |  | `mabst` |
-| `SafetyStockQuantity` |  | |  | `eisbe` |
-| `LotSizeRoundingQuantity` |  | |  | `cast(bstrf as vdm_bstrf preserving type)` |
-| `ReorderThresholdQuantity` |  | |  | `minbe` |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProductPlantMRPArea` | | ✓ | | |
-| `_MRPArea` | | ✓ | | |
-| `_MRPType` | | ✓ | | |
-| `_MRPGroup` | | ✓ | | |
-| `_MRPResponsible` | | ✓ | | |
-| `_MRPProfile` | | ✓ | | |
-| `_MRPPlanningCalendar` | | ✓ | | |
-| `_MRPPlanningCycle` | | ✓ | | |
-| `_ProductionStorageLocation` | | ✓ | | |
-| `_ExtProcmtStorageLocation` | | ✓ | | |
-| `_MRPLotSizingProcedure` | | ✓ | | |
-| `_MatlProcurementProfile` | | ✓ | | |
-| `_RangeOfCoverageProfile` | | ✓ | | |
-| `_SafetyTimePeriodProfile` | | ✓ | | |
-| `_ProdSafetyTimeMRPRelevance` | | ✓ | | |
-| `_DependentRqmtMRPRelevance` | | ✓ | | |
-| `_StorageCostsPercentage` | | ✓ | | |
-| `_MRPSafetyStockMethod` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_MRPPlantText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_MRPAreaText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast(matnr as productnumber preserving type)` |  |  |
+| `MRPArea` | ✓ | |  | `berid` |  |  |
+| `MRPPlant` |  | |  | `werks` |  |  |
+| `MRPGroup` |  | |  | `disgr` |  |  |
+| `MRPType` |  | |  | `dismm` |  |  |
+| `MRPController` |  | |  | `cast(dispo as pph_dispo preserving type)` |  |  |
+| `MRPProfile` |  | |  | `cast(dispr as vdm_dispr preserving type)` |  |  |
+| `LotSizingProcedure` |  | |  | `disls` |  |  |
+| `MRPPlanningCalendar` |  | |  | `mrppp` |  |  |
+| `MRPPlanningCycle` |  | |  | `lfrhy` |  |  |
+| `MRPSafetyStockMethod` |  | |  | `sfty_stk_meth` |  |  |
+| `MaterialProcurementProfile` |  | |  | `cast(sobsl as pph_sobsl preserving type)` |  |  |
+| `ProductionStorageLocation` |  | |  | `cast(lgpro as vdm_lgpro preserving type)` |  |  |
+| `DfltStorLocForExtProcmt` |  | |  | `cast(lgfsb as vdm_lgfsb preserving type)` |  |  |
+| `RangeOfCoverageProfile` |  | |  | `cast(rwpro as pph_rwpro preserving type)` |  |  |
+| `SafetyTimePeriodProfile` |  | |  | `cast(shpro as pph_shpro preserving type)` |  |  |
+| `ProductSafetyTimeMRPRelevance` |  | |  | `cast(shflg as pph_shflg preserving type)` |  |  |
+| `DependentRqmtMRPRelevance` |  | |  | `cast(ahdis as pph_ahdis preserving type)` |  |  |
+| `StorageCostsPercentageCode` |  | |  | `lagpr` |  |  |
+| `RoundingProfile` |  | |  | `rdprf` |  |  |
+| `MaintenanceStatus` |  | |  | `pstat` |  |  |
+| `IsMarkedForDeletion` |  | |  | `loekz` |  |  |
+| `LastChangedByUser` |  | |  | `aenam` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `LastChangeTime` |  | |  | `aezeit` |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  | `plifz` |  |  |
+| `PlanningTimeFenceInDays` |  | |  | `cast(fxhor as vdm_fxhor preserving type)` |  |  |
+| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  | `takzt` |  |  |
+| `AssemblyScrapPercent` |  | |  | `ausss` |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `MinimumLotSizeQuantity` |  | |  | `bstmi` |  |  |
+| `MaximumLotSizeQuantity` |  | |  | `bstma` |  |  |
+| `MaterialMaxStockLevelQuantity` |  | |  | `mabst` |  |  |
+| `SafetyStockQuantity` |  | |  | `eisbe` |  |  |
+| `LotSizeRoundingQuantity` |  | |  | `cast(bstrf as vdm_bstrf preserving type)` |  |  |
+| `ReorderThresholdQuantity` |  | |  | `minbe` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductPlantMRPArea` | | ✓ | | | | |
+| `_MRPArea` | | ✓ | | | | |
+| `_MRPType` | | ✓ | | | | |
+| `_MRPGroup` | | ✓ | | | | |
+| `_MRPResponsible` | | ✓ | | | | |
+| `_MRPProfile` | | ✓ | | | | |
+| `_MRPPlanningCalendar` | | ✓ | | | | |
+| `_MRPPlanningCycle` | | ✓ | | | | |
+| `_ProductionStorageLocation` | | ✓ | | | | |
+| `_ExtProcmtStorageLocation` | | ✓ | | | | |
+| `_MRPLotSizingProcedure` | | ✓ | | | | |
+| `_MatlProcurementProfile` | | ✓ | | | | |
+| `_RangeOfCoverageProfile` | | ✓ | | | | |
+| `_SafetyTimePeriodProfile` | | ✓ | | | | |
+| `_ProdSafetyTimeMRPRelevance` | | ✓ | | | | |
+| `_DependentRqmtMRPRelevance` | | ✓ | | | | |
+| `_StorageCostsPercentage` | | ✓ | | | | |
+| `_MRPSafetyStockMethod` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_MRPPlantText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_MRPAreaText` | | ✓ | | | | |
 
 ## Associations
 

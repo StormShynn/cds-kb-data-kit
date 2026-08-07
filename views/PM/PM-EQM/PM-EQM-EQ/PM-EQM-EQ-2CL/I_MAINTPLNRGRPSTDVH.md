@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenancePlannerGroup` | ✓ | |  |  |
-| `MaintenancePlanningPlant` | ✓ | |  |  |
-| `MaintenancePlannerGroupName` |  | |  |  |
-| `_MaintenancePlanningPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlannerGroup` | ✓ | |  |  |  |  |
+| `MaintenancePlanningPlant` | ✓ | |  |  |  |  |
+| `MaintenancePlannerGroupName` |  | |  |  |  |  |
+| `_MaintenancePlanningPlant` | | ✓ | | | | |
 
 ## Source Code
 

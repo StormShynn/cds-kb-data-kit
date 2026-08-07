@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ExchangeRateType` | ✓ | |  | `kurst` |
-| `ReferenceCurrency` |  | |  | `cast(tcurv.bwaer as fis_bwaer_curv preserving type )` |
-| `BuyingRateAvgExchangeRateType` |  | |  | `cast(tcurv.gkuzu as fis_gkuzu_cur preserving type )` |
-| `InvertedExchangeRateIsAllowed` |  | |  | `cast(tcurv.xinvr as fis_xinvr_curv preserving type )` |
-| `SellingRateAvgExchangeRateType` |  | |  | `cast(bkuzu as fis_bkuzu_cur preserving type )` |
-| `FixedExchangeRateIsUsed` |  | |  | `cast(xfixd as fis_xfixd_curv preserving type )` |
-| `SpecialConversionIsUsed` |  | |  | `cast(xeuro as fis_xeuro_curv preserving type )` |
-| `SourceCurrencyIsBaseCurrency` |  | |  | `xbwrl` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExchangeRateType` | ✓ | |  | `kurst` |  |  |
+| `ReferenceCurrency` |  | |  | `cast(tcurv.bwaer as fis_bwaer_curv preserving type )` |  |  |
+| `BuyingRateAvgExchangeRateType` |  | |  | `cast(tcurv.gkuzu as fis_gkuzu_cur preserving type )` |  |  |
+| `InvertedExchangeRateIsAllowed` |  | |  | `cast(tcurv.xinvr as fis_xinvr_curv preserving type )` |  |  |
+| `SellingRateAvgExchangeRateType` |  | |  | `cast(bkuzu as fis_bkuzu_cur preserving type )` |  |  |
+| `FixedExchangeRateIsUsed` |  | |  | `cast(xfixd as fis_xfixd_curv preserving type )` |  |  |
+| `SpecialConversionIsUsed` |  | |  | `cast(xeuro as fis_xeuro_curv preserving type )` |  |  |
+| `SourceCurrencyIsBaseCurrency` |  | |  | `xbwrl` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

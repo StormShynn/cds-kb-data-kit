@@ -32,126 +32,126 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsSuplrItemUUID` | ✓ | |  |  |
-| `FldLogsSuplrItemType` |  | |  |  |
-| `FldLogsSuplrParentItemUUID` |  | |  |  |
-| `FldLogsSuplrItemSerialNumber` |  | |  |  |
-| `FldLogsSuplrItemName` |  | |  |  |
-| `PreferredSupplier` |  | |  |  |
-| `FldLogsSuplrBasePlant` |  | |  |  |
-| `FldLogsRemotePlant` |  | |  |  |
-| `FldLogsSuplrItmPOItmUniqueID` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `FldLogsSupplyProcess` |  | |  |  |
-| `FldLogsSuplrItemVislInspCode` |  | |  |  |
-| `PurgDocNetPriceAmount` |  | |  |  |
-| `FldLogsSuplrItemRateUnit` |  | |  |  |
-| `FldLogsSuplrItemQuantity` |  | |  |  |
-| `FldLogsSuplrItemQuantityUnit` |  | |  |  |
-| `FldLogsSuplrItemGrossVolume` |  | |  |  |
-| `FldLogsSuplrItmGrossVolumeUnit` |  | |  |  |
-| `ProductGrossWeight` |  | |  |  |
-| `ProductWeightUnit` |  | |  |  |
-| `FldLogsSuplrItemLength` |  | |  |  |
-| `FldLogsSuplrItemWidth` |  | |  |  |
-| `FldLogsSuplrItemHeight` |  | |  |  |
-| `FldLogsSuplrItemMeasureUnit` |  | |  |  |
-| `FldLogsSuplrItemStatusID` |  | |  |  |
-| `ItemIsDangerousGood` |  | |  |  |
-| `FldLogsSuplrItemDngrsGdsCat` |  | |  |  |
-| `FldLogsIsWorkOrderOnHold` |  | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `ProcmtHubPOItemUniqueID` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `FldLogsSuplrItmGRDocID` |  | |  |  |
-| `FldLogsSuplrItmRvslGRDocID` |  | |  |  |
-| `OutboundDelivery` |  | |  |  |
-| `OutboundDeliveryItem` |  | |  |  |
-| `FldLogsPlndSrvcStartDate` |  | |  |  |
-| `FldLogsPlndSrvcEndDate` |  | |  |  |
-| `FldLogsActlSrvcStartDate` |  | |  |  |
-| `FldLogsActlSrvcEndDate` |  | |  |  |
-| `FldLogsSuplrItemPlndDelivDate` |  | |  |  |
-| `FldLogsSuplrItmChangeDateTime` |  | |  |  |
-| `FldLogsLoadingPointID` |  | |  |  |
-| `FldLogsUnloadingPointID` |  | |  |  |
-| `FldLogsStorageLocationID` |  | |  |  |
-| `FldLogsLtstMilestoneEventID` |  | |  |  |
-| `FldLogsMilestoneEventType` |  | |  |  |
-| `EWMStorageBin` |  | |  |  |
-| `FldLogsContainerID` |  | |  |  |
-| `FldLogsTranspContainerID` |  | |  |  |
-| `Project` |  | |  |  |
-| `ProjectDemand` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `HandlingUnitId` |  | |  |  |
-| `FldLogsExtWorkerIdentifier` |  | |  |  |
-| `FldLogsSupplierItemSource` |  | |  |  |
-| `FldLogsGRQty` |  | |  |  |
-| `ReturnQuantity` |  | |  |  |
-| `OpenQtyInPurchaseOrderUnit` |  | |  |  |
-| `FldLogsSuplrItemPriorityCode` |  | |  |  |
-| `PriorityCode` |  | |  |  |
-| `FldLogsSuplrItmPackggTypeCode` |  | |  |  |
-| `FldLogsSuplrItmPackggTypeTxt` |  | |  |  |
-| `FldLogsMaintOrdPrioCriticality` |  | |  |  |
-| `FldLogsSuplrItmDelivCritlty` |  | |  |  |
-| `FldLogsSuplrItmDelivStatusText` |  | |  |  |
-| `FldLogsSuplrItemTypeText` |  | |  |  |
-| `FldLogsSuplrItemDimnInfoText` |  | |  |  |
-| `FldLogsSuplrItmDimnInfoCritlty` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `DeliveryNote` |  | |  |  |
-| `MaterialDocumentHeaderText` |  | |  |  |
-| `FldLogsSuplrItmLstChgSource` |  | |  |  |
-| `PackagingMaterial` |  | |  |  |
-| `FldLogsContainerOwner` |  | |  |  |
-| `FldLogsSealNumber1` |  | |  |  |
-| `FldLogsSealNumber2` |  | |  |  |
-| `FldLogsSealNumber3` |  | |  |  |
-| `FldLogsSealNumber4` |  | |  |  |
-| `FldLogsSealNumber5` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `SuplrCoIsBusPrpsCmpltd` |  | |  |  |
-| `RetblQtyInOrderUnit` |  | |  |  |
-| `FldLogsRecommendedAction` |  | |  |  |
-| `FldLogsReturnComment` |  | |  |  |
-| `FldLogsCtnInfoSecIsHidden` |  | |  |  |
-| `FldLogsRetPOOutbDelivIsCreated` |  | |  |  |
-| `FldLogsWarehouseTaskID` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `DangerousGoodsClassDescription` |  | |  |  |
-| `RemoteStorageLocation` |  | |  |  |
-| `FldLogsTransferType` |  | |  |  |
-| `FieldLogisticsTransferPlant` |  | |  |  |
-| `ReferenceDocumentItemText` |  | |  |  |
-| `FldLogsSuplrItmIsAttchAssigned` |  | |  |  |
-| `MaintenanceOrderOperation` |  | |  |  |
-| `MaintenanceOrderComponent` |  | |  |  |
-| `_BasePlantText` | | ✓ | | |
-| `_DngrsGdsText` | | ✓ | | |
-| `_HandlingUnit` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MlstnEvt` | | ✓ | | |
-| `_PPMTask` | | ✓ | | |
-| `_QtyUnitOfMeasureText` | | ✓ | | |
-| `_RemotePlantText` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_SuplrItemPriorityText` | | ✓ | | |
-| `_SuplrItemStatusText` | | ✓ | | |
-| `_SuplrItemTypeCncDesc` | | ✓ | | |
-| `_SuplrItmAux` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_VolUnitOfMeasureText` | | ✓ | | |
-| `_WgtUnitOfMeasureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsSuplrItemUUID` | ✓ | |  |  |  |  |
+| `FldLogsSuplrItemType` |  | |  |  |  |  |
+| `FldLogsSuplrParentItemUUID` |  | |  |  |  |  |
+| `FldLogsSuplrItemSerialNumber` |  | |  |  |  |  |
+| `FldLogsSuplrItemName` |  | |  |  |  |  |
+| `PreferredSupplier` |  | |  |  |  |  |
+| `FldLogsSuplrBasePlant` |  | |  |  |  |  |
+| `FldLogsRemotePlant` |  | |  |  |  |  |
+| `FldLogsSuplrItmPOItmUniqueID` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `FldLogsSupplyProcess` |  | |  |  |  |  |
+| `FldLogsSuplrItemVislInspCode` |  | |  |  |  |  |
+| `PurgDocNetPriceAmount` |  | |  |  |  |  |
+| `FldLogsSuplrItemRateUnit` |  | |  |  |  |  |
+| `FldLogsSuplrItemQuantity` |  | |  |  |  |  |
+| `FldLogsSuplrItemQuantityUnit` |  | |  |  |  |  |
+| `FldLogsSuplrItemGrossVolume` |  | |  |  |  |  |
+| `FldLogsSuplrItmGrossVolumeUnit` |  | |  |  |  |  |
+| `ProductGrossWeight` |  | |  |  |  |  |
+| `ProductWeightUnit` |  | |  |  |  |  |
+| `FldLogsSuplrItemLength` |  | |  |  |  |  |
+| `FldLogsSuplrItemWidth` |  | |  |  |  |  |
+| `FldLogsSuplrItemHeight` |  | |  |  |  |  |
+| `FldLogsSuplrItemMeasureUnit` |  | |  |  |  |  |
+| `FldLogsSuplrItemStatusID` |  | |  |  |  |  |
+| `ItemIsDangerousGood` |  | |  |  |  |  |
+| `FldLogsSuplrItemDngrsGdsCat` |  | |  |  |  |  |
+| `FldLogsIsWorkOrderOnHold` |  | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `ProcmtHubPOItemUniqueID` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `FldLogsSuplrItmGRDocID` |  | |  |  |  |  |
+| `FldLogsSuplrItmRvslGRDocID` |  | |  |  |  |  |
+| `OutboundDelivery` |  | |  |  |  |  |
+| `OutboundDeliveryItem` |  | |  |  |  |  |
+| `FldLogsPlndSrvcStartDate` |  | |  |  |  |  |
+| `FldLogsPlndSrvcEndDate` |  | |  |  |  |  |
+| `FldLogsActlSrvcStartDate` |  | |  |  |  |  |
+| `FldLogsActlSrvcEndDate` |  | |  |  |  |  |
+| `FldLogsSuplrItemPlndDelivDate` |  | |  |  |  |  |
+| `FldLogsSuplrItmChangeDateTime` |  | |  |  |  |  |
+| `FldLogsLoadingPointID` |  | |  |  |  |  |
+| `FldLogsUnloadingPointID` |  | |  |  |  |  |
+| `FldLogsStorageLocationID` |  | |  |  |  |  |
+| `FldLogsLtstMilestoneEventID` |  | |  |  |  |  |
+| `FldLogsMilestoneEventType` |  | |  |  |  |  |
+| `EWMStorageBin` |  | |  |  |  |  |
+| `FldLogsContainerID` |  | |  |  |  |  |
+| `FldLogsTranspContainerID` |  | |  |  |  |  |
+| `Project` |  | |  |  |  |  |
+| `ProjectDemand` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `HandlingUnitId` |  | |  |  |  |  |
+| `FldLogsExtWorkerIdentifier` |  | |  |  |  |  |
+| `FldLogsSupplierItemSource` |  | |  |  |  |  |
+| `FldLogsGRQty` |  | |  |  |  |  |
+| `ReturnQuantity` |  | |  |  |  |  |
+| `OpenQtyInPurchaseOrderUnit` |  | |  |  |  |  |
+| `FldLogsSuplrItemPriorityCode` |  | |  |  |  |  |
+| `PriorityCode` |  | |  |  |  |  |
+| `FldLogsSuplrItmPackggTypeCode` |  | |  |  |  |  |
+| `FldLogsSuplrItmPackggTypeTxt` |  | |  |  |  |  |
+| `FldLogsMaintOrdPrioCriticality` |  | |  |  |  |  |
+| `FldLogsSuplrItmDelivCritlty` |  | |  |  |  |  |
+| `FldLogsSuplrItmDelivStatusText` |  | |  |  |  |  |
+| `FldLogsSuplrItemTypeText` |  | |  |  |  |  |
+| `FldLogsSuplrItemDimnInfoText` |  | |  |  |  |  |
+| `FldLogsSuplrItmDimnInfoCritlty` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DeliveryNote` |  | |  |  |  |  |
+| `MaterialDocumentHeaderText` |  | |  |  |  |  |
+| `FldLogsSuplrItmLstChgSource` |  | |  |  |  |  |
+| `PackagingMaterial` |  | |  |  |  |  |
+| `FldLogsContainerOwner` |  | |  |  |  |  |
+| `FldLogsSealNumber1` |  | |  |  |  |  |
+| `FldLogsSealNumber2` |  | |  |  |  |  |
+| `FldLogsSealNumber3` |  | |  |  |  |  |
+| `FldLogsSealNumber4` |  | |  |  |  |  |
+| `FldLogsSealNumber5` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `SuplrCoIsBusPrpsCmpltd` |  | |  |  |  |  |
+| `RetblQtyInOrderUnit` |  | |  |  |  |  |
+| `FldLogsRecommendedAction` |  | |  |  |  |  |
+| `FldLogsReturnComment` |  | |  |  |  |  |
+| `FldLogsCtnInfoSecIsHidden` |  | |  |  |  |  |
+| `FldLogsRetPOOutbDelivIsCreated` |  | |  |  |  |  |
+| `FldLogsWarehouseTaskID` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `DangerousGoodsClassDescription` |  | |  |  |  |  |
+| `RemoteStorageLocation` |  | |  |  |  |  |
+| `FldLogsTransferType` |  | |  |  |  |  |
+| `FieldLogisticsTransferPlant` |  | |  |  |  |  |
+| `ReferenceDocumentItemText` |  | |  |  |  |  |
+| `FldLogsSuplrItmIsAttchAssigned` |  | |  |  |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |  |  |
+| `MaintenanceOrderComponent` |  | |  |  |  |  |
+| `_BasePlantText` | | ✓ | | | | |
+| `_DngrsGdsText` | | ✓ | | | | |
+| `_HandlingUnit` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MlstnEvt` | | ✓ | | | | |
+| `_PPMTask` | | ✓ | | | | |
+| `_QtyUnitOfMeasureText` | | ✓ | | | | |
+| `_RemotePlantText` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_SuplrItemPriorityText` | | ✓ | | | | |
+| `_SuplrItemStatusText` | | ✓ | | | | |
+| `_SuplrItemTypeCncDesc` | | ✓ | | | | |
+| `_SuplrItmAux` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_VolUnitOfMeasureText` | | ✓ | | | | |
+| `_WgtUnitOfMeasureText` | | ✓ | | | | |
 
 ## Source Code
 

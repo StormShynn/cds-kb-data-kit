@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateTableValidityUUID` | ✓ | |  |  |
-| `TransportationRateTableUUID` |  | |  |  |
-| `TransportationAgreementUUID` |  | |  |  |
-| `TranspRateTblValidityCurrency` |  | |  |  |
-| `TranspRateTblValdtyLfcycStatus` |  | |  |  |
-| `TranspRateTblValidityStartDate` |  | |  |  |
-| `TranspRateTblValidityEndDate` |  | |  |  |
-| `TranspRateTblValidityPctUnit` |  | |  |  |
-| `I_FreightAgreementTP` |  | |  | `FrtAgrmtRateTableValidity._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FrtAgrmtRateTableRateTP` |  | |  | `FrtAgrmtRateTableValidity._FrtAgrmtRateTableRate : redirected to composition child I_FrtAgrmtRateTableRateTP` |
-| `I_FrtAgrmtRateTableCalcRuleTP` |  | |  | `FrtAgrmtRateTableValidity._FrtAgrmtRateTableCalcRule : redirected to composition child I_FrtAgrmtRateTableCalcRuleTP` |
-| `I_FreightAgreementRateTableTP` |  | |  | `FrtAgrmtRateTableValidity._FreightAgreementRateTable : redirected to parent I_FreightAgreementRateTableTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateTableValidityUUID` | ✓ | |  |  |  |  |
+| `TransportationRateTableUUID` |  | |  |  |  |  |
+| `TransportationAgreementUUID` |  | |  |  |  |  |
+| `TranspRateTblValidityCurrency` |  | |  |  |  |  |
+| `TranspRateTblValdtyLfcycStatus` |  | |  |  |  |  |
+| `TranspRateTblValidityStartDate` |  | |  |  |  |  |
+| `TranspRateTblValidityEndDate` |  | |  |  |  |  |
+| `TranspRateTblValidityPctUnit` |  | |  |  |  |  |
+| `I_FreightAgreementTP` |  | |  | `FrtAgrmtRateTableValidity._FreightAgreement : redirected to I_FreightAgreementTP` |  |  |
+| `I_FrtAgrmtRateTableRateTP` |  | |  | `FrtAgrmtRateTableValidity._FrtAgrmtRateTableRate : redirected to composition child I_FrtAgrmtRateTableRateTP` |  |  |
+| `I_FrtAgrmtRateTableCalcRuleTP` |  | |  | `FrtAgrmtRateTableValidity._FrtAgrmtRateTableCalcRule : redirected to composition child I_FrtAgrmtRateTableCalcRuleTP` |  |  |
+| `I_FreightAgreementRateTableTP` |  | |  | `FrtAgrmtRateTableValidity._FreightAgreementRateTable : redirected to parent I_FreightAgreementRateTableTP` |  |  |
 
 ## Source Code
 

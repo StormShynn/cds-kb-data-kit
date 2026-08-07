@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspAgrmtPaymentTermUUID` | ✓ | |  |  |
-| `TranspAgreementItemUUID` |  | |  |  |
-| `TransportationAgreementUUID` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `I_FreightAgreementTP` |  | |  | `FrtAgrmtItemPaymentTerm._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FreightAgreementItemTP` |  | |  | `FrtAgrmtItemPaymentTerm._FreightAgreementItem : redirected to parent I_FreightAgreementItemTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspAgrmtPaymentTermUUID` | ✓ | |  |  |  |  |
+| `TranspAgreementItemUUID` |  | |  |  |  |  |
+| `TransportationAgreementUUID` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `I_FreightAgreementTP` |  | |  | `FrtAgrmtItemPaymentTerm._FreightAgreement : redirected to I_FreightAgreementTP` |  |  |
+| `I_FreightAgreementItemTP` |  | |  | `FrtAgrmtItemPaymentTerm._FreightAgreementItem : redirected to parent I_FreightAgreementItemTP` |  |  |
 
 ## Source Code
 

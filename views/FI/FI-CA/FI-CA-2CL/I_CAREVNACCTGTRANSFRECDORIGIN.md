@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARevnAcctgTransfRecordOrigin` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as ra_oi_orig_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARevnAcctgTransfRecordOrigin` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as ra_oi_orig_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

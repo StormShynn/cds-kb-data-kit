@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ProductLogisticsHandlingGroup` | ✓ | |  | `loggr` |
-| `Name` |  | |  | `ltext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProductLogisticsHandlingGroup` | ✓ | |  | `loggr` |  |  |
+| `Name` |  | |  | `ltext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdCmplncMarketabilityStatus` |  | |  | `ehfnd_cci_logistics_status` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdCmplncMarketabilityStatus` |  | |  | `ehfnd_cci_logistics_status` |  |  |
 
 ## Source Code
 

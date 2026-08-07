@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NoteContent` |  | |  | `nte_cont` |
-| `_ChildToParent` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NoteContent` |  | |  | `nte_cont` |  |  |
+| `_ChildToParent` | | ✓ | | | | |
 
 ## Source Code
 

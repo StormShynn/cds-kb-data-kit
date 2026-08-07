@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `OperationSetupType` | ✓ | |  | `cast(txt.rasch as pph_rasch preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `OperationSetupTypeName` |  | |  | `txt` |
-| `_Language` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `OperationSetupType` | ✓ | |  | `cast(txt.rasch as pph_rasch preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OperationSetupTypeName` |  | |  | `txt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

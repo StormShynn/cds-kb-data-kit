@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPType` | ✓ | |  | `dismm` |
-| `Language` | ✓ | |  | `spras` |
-| `MRPTypeName` |  | |  | `dibez` |
-| `_MRPType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPType` | ✓ | |  | `dismm` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MRPTypeName` |  | |  | `dibez` |  |  |
+| `_MRPType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

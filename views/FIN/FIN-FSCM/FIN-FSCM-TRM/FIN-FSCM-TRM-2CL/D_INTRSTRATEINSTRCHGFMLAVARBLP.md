@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialTransactionDirection` |  | |  | `tb_rkondgr` |
-| `FinConditionItem` |  | |  | `tb_kond` |
-| `ConditionItemValidityStartDate` |  | |  | `dguel_kp` |
-| `FinCndnFormulaVariable` |  | |  | `tb_varname` |
-| `FinInstrConditionLogicGroup` |  | |  | `ftr_instr_cndn_logic_group` |
-| `ConditionPercentageRate` |  | |  | `pkond` |
-| `ReferenceInterestRate` |  | |  | `szsref` |
-| `_Condition` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialTransactionDirection` |  | |  | `tb_rkondgr` |  |  |
+| `FinConditionItem` |  | |  | `tb_kond` |  |  |
+| `ConditionItemValidityStartDate` |  | |  | `dguel_kp` |  |  |
+| `FinCndnFormulaVariable` |  | |  | `tb_varname` |  |  |
+| `FinInstrConditionLogicGroup` |  | |  | `ftr_instr_cndn_logic_group` |  |  |
+| `ConditionPercentageRate` |  | |  | `pkond` |  |  |
+| `ReferenceInterestRate` |  | |  | `szsref` |  |  |
+| `_Condition` | | ✓ | | | | |
 
 ## Source Code
 

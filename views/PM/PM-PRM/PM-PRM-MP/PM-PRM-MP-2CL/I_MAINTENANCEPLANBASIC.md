@@ -29,72 +29,72 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenancePlan` | ✓ | |  | `warpl` |
-| `MaintenancePlanDesc` |  | |  | `wptxt` |
-| `CreationDate` |  | |  | `ersdt` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `LastChangedByUser` |  | |  | `aenam` |
-| `MaintenanceStrategy` |  | |  | `strat` |
-| `SchedulingDuration` |  | |  | `abrho` |
-| `Equipment` |  | |  | `equnr` |
-| `FunctionalLocation` |  | |  | `tplnr` |
-| `Customer` |  | |  | `kunum` |
-| `NumberOfMaintenanceItems` |  | |  | `anzps` |
-| `Language` |  | |  | `langu` |
-| `CycleModificationRatio` |  | |  | `sfakt` |
-| `MaintPlanSchedgIndicator` |  | |  | `stich` |
-| `CallHorizonPercent` |  | |  | `horiz` |
-| `CallHorizonInDays` |  | |  | `horiz_days` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `MaintenancePlanInternalID` |  | |  | `objnr` |
-| `MaintenanceCall` |  | |  | `abnum` |
-| `MaintenancePlanCategory` |  | |  | `mptyp` |
-| `SchedulingDurationUnit` |  | |  | `hunit` |
-| `BasicStartDate` |  | |  | `stadt` |
-| `MaintPlanFreeDefinedAttrib` |  | |  | `plan_sort` |
-| `FactoryCalendar` |  | |  | `fabkl` |
-| `MaintPlanIsLockedAgainstCalls` |  | |  | `lvorm` |
-| `LastChangeDateTime` |  | |  | `changeddatetime` |
-| `LateCompletionShiftInPercent` |  | |  | `vspos` |
-| `EarlyCompletionShiftInPercent` |  | |  | `vsneg` |
-| `LateCompletionTolerancePercent` |  | |  | `topos` |
-| `EarlyCompletionTolerancePct` |  | |  | `toneg` |
-| `MaintenanceCallHorizonCalcType` |  | |  | `cast (mpla.horiz_qualifier as eam_cc_callhorizon_calc_type preserving type)` |
-| `MaintPlanLogicalOperatorCode` |  | |  | `andor` |
-| `MultipleCounterPlanShiftFactor` |  | |  | `mcp_sf` |
-| `MaintPlanStartCntrReadingValue` |  | |  | `szaeh` |
-| `SchedulingStartDate` |  | |  | `start_date` |
-| `SchedulingStartTime` |  | |  | `start_time` |
-| `MaintPlanEndCntrReadingValue` |  | |  | `end_counter` |
-| `SchedulingEndDate` |  | |  | `enddt_for_sched` |
-| `MaintenanceLeadFloatInDays` |  | |  | `puffp` |
-| `MaintPlnStrtBufDurationInDays` |  | |  | `tgoon` |
-| `MaintPlanStartBufferUnit` |  | |  | `cast('TAG' as hunit)` |
-| `PrdcssrCallObjCompltnIsRqd` |  | |  | `call_confirm` |
-| `MaintenancePlanHasLongText` |  | |  | `ltknz` |
-| `MaintenancePlanCallObject` |  | | `_MaintenancePlanCatParam` | `MaintenancePlanCallObject` |
-| `_StatusObjectActiveStatus` | | ✓ | | |
-| `_MaintenanceItem` | | ✓ | | |
-| `_MaintenancePlanCatParam` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_FunctionalLocationLabel` | | ✓ | | |
-| `_MaintenanceCall` | | ✓ | | |
-| `_MaintPlanCallHistory` | | ✓ | | |
-| `_MaintenanceStrategy` | | ✓ | | |
-| `_FactoryCalendar` | | ✓ | | |
-| `_MaintenanceCycle` | | ✓ | | |
-| `_MaintenancePlanCycle` | | ✓ | | |
-| `_SchedulingIndicator` | | ✓ | | |
-| `_SchedulingDurationUnit` | | ✓ | | |
-| `_LogicalOperator` | | ✓ | | |
-| `_AuthorizationGroup` | | ✓ | | |
-| `_MaintCallConfIsRequired` | | ✓ | | |
-| `_MaintenancePlanSortField` | | ✓ | | |
-| `_MaintPlanStartBufferUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlan` | ✓ | |  | `warpl` |  |  |
+| `MaintenancePlanDesc` |  | |  | `wptxt` |  |  |
+| `CreationDate` |  | |  | `ersdt` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `LastChangedByUser` |  | |  | `aenam` |  |  |
+| `MaintenanceStrategy` |  | |  | `strat` |  |  |
+| `SchedulingDuration` |  | |  | `abrho` |  |  |
+| `Equipment` |  | |  | `equnr` |  |  |
+| `FunctionalLocation` |  | |  | `tplnr` |  |  |
+| `Customer` |  | |  | `kunum` |  |  |
+| `NumberOfMaintenanceItems` |  | |  | `anzps` |  |  |
+| `Language` |  | |  | `langu` |  |  |
+| `CycleModificationRatio` |  | |  | `sfakt` |  |  |
+| `MaintPlanSchedgIndicator` |  | |  | `stich` |  |  |
+| `CallHorizonPercent` |  | |  | `horiz` |  |  |
+| `CallHorizonInDays` |  | |  | `horiz_days` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `MaintenancePlanInternalID` |  | |  | `objnr` |  |  |
+| `MaintenanceCall` |  | |  | `abnum` |  |  |
+| `MaintenancePlanCategory` |  | |  | `mptyp` |  |  |
+| `SchedulingDurationUnit` |  | |  | `hunit` |  |  |
+| `BasicStartDate` |  | |  | `stadt` |  |  |
+| `MaintPlanFreeDefinedAttrib` |  | |  | `plan_sort` |  |  |
+| `FactoryCalendar` |  | |  | `fabkl` |  |  |
+| `MaintPlanIsLockedAgainstCalls` |  | |  | `lvorm` |  |  |
+| `LastChangeDateTime` |  | |  | `changeddatetime` |  |  |
+| `LateCompletionShiftInPercent` |  | |  | `vspos` |  |  |
+| `EarlyCompletionShiftInPercent` |  | |  | `vsneg` |  |  |
+| `LateCompletionTolerancePercent` |  | |  | `topos` |  |  |
+| `EarlyCompletionTolerancePct` |  | |  | `toneg` |  |  |
+| `MaintenanceCallHorizonCalcType` |  | |  | `cast (mpla.horiz_qualifier as eam_cc_callhorizon_calc_type preserving type)` |  |  |
+| `MaintPlanLogicalOperatorCode` |  | |  | `andor` |  |  |
+| `MultipleCounterPlanShiftFactor` |  | |  | `mcp_sf` |  |  |
+| `MaintPlanStartCntrReadingValue` |  | |  | `szaeh` |  |  |
+| `SchedulingStartDate` |  | |  | `start_date` |  |  |
+| `SchedulingStartTime` |  | |  | `start_time` |  |  |
+| `MaintPlanEndCntrReadingValue` |  | |  | `end_counter` |  |  |
+| `SchedulingEndDate` |  | |  | `enddt_for_sched` |  |  |
+| `MaintenanceLeadFloatInDays` |  | |  | `puffp` |  |  |
+| `MaintPlnStrtBufDurationInDays` |  | |  | `tgoon` |  |  |
+| `MaintPlanStartBufferUnit` |  | |  | `cast('TAG' as hunit)` |  |  |
+| `PrdcssrCallObjCompltnIsRqd` |  | |  | `call_confirm` |  |  |
+| `MaintenancePlanHasLongText` |  | |  | `ltknz` |  |  |
+| `MaintenancePlanCallObject` |  | | `_MaintenancePlanCatParam` | `MaintenancePlanCallObject` |  |  |
+| `_StatusObjectActiveStatus` | | ✓ | | | | |
+| `_MaintenanceItem` | | ✓ | | | | |
+| `_MaintenancePlanCatParam` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocationLabel` | | ✓ | | | | |
+| `_MaintenanceCall` | | ✓ | | | | |
+| `_MaintPlanCallHistory` | | ✓ | | | | |
+| `_MaintenanceStrategy` | | ✓ | | | | |
+| `_FactoryCalendar` | | ✓ | | | | |
+| `_MaintenanceCycle` | | ✓ | | | | |
+| `_MaintenancePlanCycle` | | ✓ | | | | |
+| `_SchedulingIndicator` | | ✓ | | | | |
+| `_SchedulingDurationUnit` | | ✓ | | | | |
+| `_LogicalOperator` | | ✓ | | | | |
+| `_AuthorizationGroup` | | ✓ | | | | |
+| `_MaintCallConfIsRequired` | | ✓ | | | | |
+| `_MaintenancePlanSortField` | | ✓ | | | | |
+| `_MaintPlanStartBufferUnit` | | ✓ | | | | |
 
 ## Associations
 

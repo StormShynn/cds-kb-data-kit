@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentRelationUUID` | ✓ | |  | `relationid` |
-| `ServiceDocRltnSequenceNumber` | ✓ | |  | `posno` |
-| `ServiceDocumentRelationType` |  | |  | `breltyp` |
-| `ServiceDocumentUUID` |  | |  | `objguid_a_sel` |
-| `ServiceObjectType` |  | |  | `objtype_a_sel` |
-| `ServiceDocumentRelationKind` |  | |  | `vona_kind` |
-| `ServiceDocumentSuccessorUUID` |  | |  | `objguid_b_sel` |
-| `ServiceDocSuccessor` |  | |  | `objkey_b_sel` |
-| `ServiceDocSuccessorBusObjType` |  | |  | `objtype_b_sel` |
-| `_ServiceDoc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentRelationUUID` | ✓ | |  | `relationid` |  |  |
+| `ServiceDocRltnSequenceNumber` | ✓ | |  | `posno` |  |  |
+| `ServiceDocumentRelationType` |  | |  | `breltyp` |  |  |
+| `ServiceDocumentUUID` |  | |  | `objguid_a_sel` |  |  |
+| `ServiceObjectType` |  | |  | `objtype_a_sel` |  |  |
+| `ServiceDocumentRelationKind` |  | |  | `vona_kind` |  |  |
+| `ServiceDocumentSuccessorUUID` |  | |  | `objguid_b_sel` |  |  |
+| `ServiceDocSuccessor` |  | |  | `objkey_b_sel` |  |  |
+| `ServiceDocSuccessorBusObjType` |  | |  | `objtype_b_sel` |  |  |
+| `_ServiceDoc` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdAllocSqncConstraintUUID` | ✓ | |  |  |
-| `ProdAllocSequenceConstraint` |  | |  |  |
-| `ProductAllocationSequenceGroup` |  | |  |  |
-| `ProductAllocationSequence` |  | |  |  |
-| `ProductAllocationSequenceUUID` |  | |  |  |
-| `ProdAllocSequenceGroupUUID` |  | |  |  |
-| `ValidityStartUTCDateTime` |  | |  |  |
-| `ValidityStartTimeZone` |  | |  |  |
-| `ValidityEndUTCDateTime` |  | |  |  |
-| `ValidityEndTimeZone` |  | |  |  |
-| `ProductAllocationObjectUUID` |  | |  |  |
-| `ProductAllocationRate` |  | |  |  |
-| `ProdAllocLeadTimeDuration` |  | |  |  |
-| `ProdAllocLeadTimeDurationUnit` |  | |  |  |
-| `NumberOfBackwardCnsmpnPeriods` |  | |  |  |
-| `NumberOfForwardCnsmpnPeriods` |  | |  |  |
-| `HorizontalConsumptionDirection` |  | |  |  |
-| `ProdAllocSqncCstrtCnsmpnUnit` |  | |  |  |
-| `PastPeriodIsAllowed` |  | |  |  |
-| `ProdAllocCheckDateTimeType` |  | |  |  |
-| `ProdAllocationConstraintStatus` |  | |  |  |
-| `AfterValidityConstraintStatus` |  | |  |  |
-| `BeforeValidityConstraintStatus` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_ProdAllocationSequenceTP` | | ✓ | | |
-| `_ProdAllocSqncCstrtTTP` | | ✓ | | |
-| `_ProdAllocSqncGroupTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdAllocSqncConstraintUUID` | ✓ | |  |  |  |  |
+| `ProdAllocSequenceConstraint` |  | |  |  |  |  |
+| `ProductAllocationSequenceGroup` |  | |  |  |  |  |
+| `ProductAllocationSequence` |  | |  |  |  |  |
+| `ProductAllocationSequenceUUID` |  | |  |  |  |  |
+| `ProdAllocSequenceGroupUUID` |  | |  |  |  |  |
+| `ValidityStartUTCDateTime` |  | |  |  |  |  |
+| `ValidityStartTimeZone` |  | |  |  |  |  |
+| `ValidityEndUTCDateTime` |  | |  |  |  |  |
+| `ValidityEndTimeZone` |  | |  |  |  |  |
+| `ProductAllocationObjectUUID` |  | |  |  |  |  |
+| `ProductAllocationRate` |  | |  |  |  |  |
+| `ProdAllocLeadTimeDuration` |  | |  |  |  |  |
+| `ProdAllocLeadTimeDurationUnit` |  | |  |  |  |  |
+| `NumberOfBackwardCnsmpnPeriods` |  | |  |  |  |  |
+| `NumberOfForwardCnsmpnPeriods` |  | |  |  |  |  |
+| `HorizontalConsumptionDirection` |  | |  |  |  |  |
+| `ProdAllocSqncCstrtCnsmpnUnit` |  | |  |  |  |  |
+| `PastPeriodIsAllowed` |  | |  |  |  |  |
+| `ProdAllocCheckDateTimeType` |  | |  |  |  |  |
+| `ProdAllocationConstraintStatus` |  | |  |  |  |  |
+| `AfterValidityConstraintStatus` |  | |  |  |  |  |
+| `BeforeValidityConstraintStatus` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_ProdAllocationSequenceTP` | | ✓ | | | | |
+| `_ProdAllocSqncCstrtTTP` | | ✓ | | | | |
+| `_ProdAllocSqncGroupTP` | | ✓ | | | | |
 
 ## Source Code
 

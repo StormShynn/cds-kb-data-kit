@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityTaskInternalId` | ✓ | | `_QualityTaskLongText` | `QualityTaskInternalId` |
-| `LongTextInternalNumber` | ✓ | | `_QualityTaskLongText` | `LongTextInternalNumber` |
-| `Language` | ✓ | | `_QualityTaskLongText` | `Language` |
-| `LongTextID` |  | | `_QualityTaskLongText` | `LongTextID` |
-| `QualityTaskLongText` |  | | `_QualityTaskLongText` | `QualityTaskLongText` |
-| `LongTextCreatedByUser` |  | | `_QualityTaskLongText` | `LongTextCreatedByUser` |
-| `LongTextCreatedAt` |  | | `_QualityTaskLongText` | `LongTextCreatedAt` |
-| `LongTextLastChangedByUser` |  | | `_QualityTaskLongText` | `LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` |  | | `_QualityTaskLongText` | `LongTextLastChangedAt` |
-| `_QualityTask` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityTaskInternalId` | ✓ | | `_QualityTaskLongText` | `QualityTaskInternalId` |  |  |
+| `LongTextInternalNumber` | ✓ | | `_QualityTaskLongText` | `LongTextInternalNumber` |  |  |
+| `Language` | ✓ | | `_QualityTaskLongText` | `Language` |  |  |
+| `LongTextID` |  | | `_QualityTaskLongText` | `LongTextID` |  |  |
+| `QualityTaskLongText` |  | | `_QualityTaskLongText` | `QualityTaskLongText` |  |  |
+| `LongTextCreatedByUser` |  | | `_QualityTaskLongText` | `LongTextCreatedByUser` |  |  |
+| `LongTextCreatedAt` |  | | `_QualityTaskLongText` | `LongTextCreatedAt` |  |  |
+| `LongTextLastChangedByUser` |  | | `_QualityTaskLongText` | `LongTextLastChangedByUser` |  |  |
+| `LongTextLastChangedAt` |  | | `_QualityTaskLongText` | `LongTextLastChangedAt` |  |  |
+| `_QualityTask` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Source Code
 

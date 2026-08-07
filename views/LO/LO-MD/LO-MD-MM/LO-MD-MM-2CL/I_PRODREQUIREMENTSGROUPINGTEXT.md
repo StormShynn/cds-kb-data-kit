@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `ProductRequirementsGrouping` | ✓ | |  | `cast ( domvalue_l as kzbed )` |
-| `Name` |  | |  | `cast ( ddtext as val_text )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `ProductRequirementsGrouping` | ✓ | |  | `cast ( domvalue_l as kzbed )` |  |  |
+| `Name` |  | |  | `cast ( ddtext as val_text )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralRequestForQuotation` | ✓ | |  |  |
-| `PartnerCounter` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `Supplier` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_CentralRequestForQuotation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralRequestForQuotation` | ✓ | |  |  |  |  |
+| `PartnerCounter` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_CentralRequestForQuotation` | | ✓ | | | | |
 
 ## Source Code
 

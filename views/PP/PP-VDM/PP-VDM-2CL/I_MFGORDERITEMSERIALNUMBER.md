@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ManufacturingOrder` | ✓ | |  |  |
-| `ManufacturingOrderItem` | ✓ | |  |  |
-| `SerialNumber` | ✓ | |  | `cast(objk.SerialNumber as gernr preserving type)` |
-| `MaintenanceItemObjectList` |  | |  |  |
-| `MaintenanceItemObject` |  | |  |  |
-| `Equipment` |  | |  |  |
-| `Equipment_2` |  | |  | `cast(objk.Equipment as equnr preserving type)` |
-| `Product` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `PlanningPlant` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `ProductionSupervisor` |  | |  |  |
-| `ManufacturingOrderCategory` |  | |  |  |
-| `ManufacturingOrderType` |  | |  |  |
-| `SerialNumberProfile` |  | |  | `SerialNumberAssgmtProfile` |
-| `DocumentDate` |  | |  | `SerialNumberAssignmentDate` |
-| `_MfgOrderItem` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_Equipment_2` | | ✓ | | |
-| `_EquipmentText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  |  |  |  |
+| `ManufacturingOrderItem` | ✓ | |  |  |  |  |
+| `SerialNumber` | ✓ | |  | `cast(objk.SerialNumber as gernr preserving type)` |  |  |
+| `MaintenanceItemObjectList` |  | |  |  |  |  |
+| `MaintenanceItemObject` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `Equipment_2` |  | |  | `cast(objk.Equipment as equnr preserving type)` |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `PlanningPlant` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `ProductionSupervisor` |  | |  |  |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |  |  |
+| `ManufacturingOrderType` |  | |  |  |  |  |
+| `SerialNumberProfile` |  | |  | `SerialNumberAssgmtProfile` |  |  |
+| `DocumentDate` |  | |  | `SerialNumberAssignmentDate` |  |  |
+| `_MfgOrderItem` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_Equipment_2` | | ✓ | | | | |
+| `_EquipmentText` | | ✓ | | | | |
 
 ## Associations
 

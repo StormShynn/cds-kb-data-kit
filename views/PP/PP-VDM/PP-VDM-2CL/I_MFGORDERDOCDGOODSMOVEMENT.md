@@ -27,90 +27,90 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GoodsMovement` | ✓ | |  |  |
-| `GoodsMovementYear` | ✓ | |  |  |
-| `GoodsMovementItem` | ✓ | |  |  |
-| `ManufacturingOrder` |  | |  | `cast(OrderID as manufacturingorder preserving type)` |
-| `ManufacturingOrderCategory` |  | |  | `OrderCategory` |
-| `ManufacturingOrderType` |  | |  | `cast(OrderType as manufacturingordertype preserving type)` |
-| `ProductionPlant` |  | |  | `cast(Plant as pwwrk preserving type)` |
-| `Material` |  | |  | `cast(Material as matnr preserving type)` |
-| `GoodsMovementPlant` |  | |  | `cast(GoodsMovementPlant as werks_d preserving type)` |
-| `Reservation` |  | |  | `cast(Reservation as rsnum preserving type)` |
-| `ReservationItem` |  | |  |  |
-| `ReservationRecordType` |  | |  |  |
-| `ReservationIsFinallyIssued` |  | |  |  |
-| `StorageLocation` |  | |  | `cast(StorageLocation as pph_lgort preserving type)` |
-| `Batch` |  | |  | `cast(Batch as charg_d preserving type)` |
-| `InventoryValuationType` |  | |  | `cast(InventoryValuationType as pph_bwtar preserving type)` |
-| `DebitCreditCode` |  | |  |  |
-| `GoodsMovementType` |  | |  | `cast(GoodsMovementType as bwart preserving type)` |
-| `GoodsMovementRefDocType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  | `cast(InventorySpecialStockType as pph_sobkz preserving type)` |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `PurchaseOrder` |  | |  | `cast(PurchaseOrder as vdm_purchaseorder preserving type)` |
-| `PurchaseOrderItem` |  | |  | `cast(PurchaseOrderItem as vdm_purchaseorderitem preserving type)` |
-| `Supplier` |  | |  | `cast(Supplier as lifnr preserving type)` |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `GoodsReceiptIsCmpltlyDelivered` |  | |  |  |
-| `ControllingArea` |  | |  | `cast(ControllingArea as kokrs preserving type)` |
-| `GLAccount` |  | |  | `cast(GLAccount as saknr preserving type)` |
-| `PostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `BaseUnit` |  | |  | `cast(BaseUnit as meins preserving type)` |
-| `QuantityInBaseUnit` |  | |  |  |
-| `EntryUnit` |  | |  | `cast(EntryUnit as erfme preserving type)` |
-| `QuantityInEntryUnit` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  | `cast(CompanyCodeCurrency as cccrcy preserving type)` |
-| `TotalGoodsMvtAmtInCCCrcy` |  | |  |  |
-| `_MfgOrder` | | ✓ | | |
-| `_MfgOrderCategory` | | ✓ | | |
-| `_MfgOrderType` | | ✓ | | |
-| `_ProductionPlant` | | ✓ | | |
-| `_ProductionPlantText` | | ✓ | | |
-| `_GoodsMovementPlantText` | | ✓ | | |
-| `_MaterialText` | | ✓ | | |
-| `_MfgOrderText` | | ✓ | | |
-| `_WBSElementText` | | ✓ | | |
-| `_StorageLocationText` | | ✓ | | |
-| `_SupplierText` | | ✓ | | |
-| `_ControllingAreaText` | | ✓ | | |
-| `_GoodsMovementYear` | | ✓ | | |
-| `_GoodsMovementHeader` | | ✓ | | |
-| `_GoodsMovementItem` | | ✓ | | |
-| `_DocumentDate` | | ✓ | | |
-| `_PostingDate` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_GoodsMovementPlant` | | ✓ | | |
-| `_Reservation` | | ✓ | | |
-| `_ReservationItem` | | ✓ | | |
-| `_ReservationRecordType` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_EntryUnit` | | ✓ | | |
-| `_GoodsMovementType` | | ✓ | | |
-| `_GoodsMovementRefDocType` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_PurchaseOrder` | | ✓ | | |
-| `_PurchaseOrderItem` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
-| `_GLAccount` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Currency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GoodsMovement` | ✓ | |  |  |  |  |
+| `GoodsMovementYear` | ✓ | |  |  |  |  |
+| `GoodsMovementItem` | ✓ | |  |  |  |  |
+| `ManufacturingOrder` |  | |  | `cast(OrderID as manufacturingorder preserving type)` |  |  |
+| `ManufacturingOrderCategory` |  | |  | `OrderCategory` |  |  |
+| `ManufacturingOrderType` |  | |  | `cast(OrderType as manufacturingordertype preserving type)` |  |  |
+| `ProductionPlant` |  | |  | `cast(Plant as pwwrk preserving type)` |  |  |
+| `Material` |  | |  | `cast(Material as matnr preserving type)` |  |  |
+| `GoodsMovementPlant` |  | |  | `cast(GoodsMovementPlant as werks_d preserving type)` |  |  |
+| `Reservation` |  | |  | `cast(Reservation as rsnum preserving type)` |  |  |
+| `ReservationItem` |  | |  |  |  |  |
+| `ReservationRecordType` |  | |  |  |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |  |  |
+| `StorageLocation` |  | |  | `cast(StorageLocation as pph_lgort preserving type)` |  |  |
+| `Batch` |  | |  | `cast(Batch as charg_d preserving type)` |  |  |
+| `InventoryValuationType` |  | |  | `cast(InventoryValuationType as pph_bwtar preserving type)` |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `GoodsMovementType` |  | |  | `cast(GoodsMovementType as bwart preserving type)` |  |  |
+| `GoodsMovementRefDocType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  | `cast(InventorySpecialStockType as pph_sobkz preserving type)` |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  | `cast(PurchaseOrder as vdm_purchaseorder preserving type)` |  |  |
+| `PurchaseOrderItem` |  | |  | `cast(PurchaseOrderItem as vdm_purchaseorderitem preserving type)` |  |  |
+| `Supplier` |  | |  | `cast(Supplier as lifnr preserving type)` |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `GoodsReceiptIsCmpltlyDelivered` |  | |  |  |  |  |
+| `ControllingArea` |  | |  | `cast(ControllingArea as kokrs preserving type)` |  |  |
+| `GLAccount` |  | |  | `cast(GLAccount as saknr preserving type)` |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `BaseUnit` |  | |  | `cast(BaseUnit as meins preserving type)` |  |  |
+| `QuantityInBaseUnit` |  | |  |  |  |  |
+| `EntryUnit` |  | |  | `cast(EntryUnit as erfme preserving type)` |  |  |
+| `QuantityInEntryUnit` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  | `cast(CompanyCodeCurrency as cccrcy preserving type)` |  |  |
+| `TotalGoodsMvtAmtInCCCrcy` |  | |  |  |  |  |
+| `_MfgOrder` | | ✓ | | | | |
+| `_MfgOrderCategory` | | ✓ | | | | |
+| `_MfgOrderType` | | ✓ | | | | |
+| `_ProductionPlant` | | ✓ | | | | |
+| `_ProductionPlantText` | | ✓ | | | | |
+| `_GoodsMovementPlantText` | | ✓ | | | | |
+| `_MaterialText` | | ✓ | | | | |
+| `_MfgOrderText` | | ✓ | | | | |
+| `_WBSElementText` | | ✓ | | | | |
+| `_StorageLocationText` | | ✓ | | | | |
+| `_SupplierText` | | ✓ | | | | |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_GoodsMovementYear` | | ✓ | | | | |
+| `_GoodsMovementHeader` | | ✓ | | | | |
+| `_GoodsMovementItem` | | ✓ | | | | |
+| `_DocumentDate` | | ✓ | | | | |
+| `_PostingDate` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_GoodsMovementPlant` | | ✓ | | | | |
+| `_Reservation` | | ✓ | | | | |
+| `_ReservationItem` | | ✓ | | | | |
+| `_ReservationRecordType` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_EntryUnit` | | ✓ | | | | |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_GoodsMovementRefDocType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_PurchaseOrder` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
+| `_GLAccount` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
 
 ## Associations
 

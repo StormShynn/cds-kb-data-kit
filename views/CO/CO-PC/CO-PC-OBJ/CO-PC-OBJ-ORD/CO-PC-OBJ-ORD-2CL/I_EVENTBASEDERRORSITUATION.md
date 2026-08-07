@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventbasedProductCostgErrorID` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `SystemMessageClass` |  | |  |  |
-| `SystemMessageNumber` |  | |  |  |
-| `LogMessageText` |  | |  | `cast ( Text as le_msg_text)` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventbasedProductCostgErrorID` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `SystemMessageClass` |  | |  |  |  |  |
+| `SystemMessageNumber` |  | |  |  |  |  |
+| `LogMessageText` |  | |  | `cast ( Text as le_msg_text)` |  |  |
 
 ## Source Code
 

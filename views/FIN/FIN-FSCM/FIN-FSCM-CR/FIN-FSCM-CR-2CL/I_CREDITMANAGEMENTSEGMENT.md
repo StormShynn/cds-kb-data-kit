@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditSegment` | ✓ | |  | `cast( credit_sgmnt as farp_credit_segment preserving type )` |
-| `CreditSegmentCurrency` |  | |  | `cast( currency as farp_sgm_currency preserving type )` |
-| `ExchangeRateType` |  | |  | `kurst` |
-| `CrdtSgmtIsMainCreditSegment` |  | |  | `main_cred_sgmnt` |
-| `CrdtSgmtIsAddedToMainSgmt` |  | |  | `main_credsgm_add` |
-| `_Text` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_CreditSegmentAddlConfign` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditSegment` | ✓ | |  | `cast( credit_sgmnt as farp_credit_segment preserving type )` |  |  |
+| `CreditSegmentCurrency` |  | |  | `cast( currency as farp_sgm_currency preserving type )` |  |  |
+| `ExchangeRateType` |  | |  | `kurst` |  |  |
+| `CrdtSgmtIsMainCreditSegment` |  | |  | `main_cred_sgmnt` |  |  |
+| `CrdtSgmtIsAddedToMainSgmt` |  | |  | `main_credsgm_add` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_CreditSegmentAddlConfign` | | ✓ | | | | |
 
 ## Associations
 

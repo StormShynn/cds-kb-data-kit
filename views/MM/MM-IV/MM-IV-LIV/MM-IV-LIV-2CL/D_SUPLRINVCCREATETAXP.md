@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaxCode` |  | |  | `mwskz` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `TaxCountry` |  | |  | `fot_tax_country` |
-| `DocumentCurrency` |  | |  | `waers` |
-| `CompanyCodeCurrency` |  | |  | `hwaer` |
-| `fwstev` |  | |  | `} TaxAmountInDocCry : fwstev` |
-| `fwbas_bses_cs` |  | |  | `} TaxBaseAmountInDocCry : fwbas_bses_cs` |
-| `hwste_cs` |  | |  | `} TaxAmountInCoCodeCrcy : hwste_cs` |
-| `hwbas_bses_cs` |  | |  | `} TaxBaseAmountInCoCodeCrcy : hwbas_bses_cs` |
-| `_SupplierInvoice` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxCode` |  | |  | `mwskz` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `TaxCountry` |  | |  | `fot_tax_country` |  |  |
+| `DocumentCurrency` |  | |  | `waers` |  |  |
+| `CompanyCodeCurrency` |  | |  | `hwaer` |  |  |
+| `TaxAmountInDocCry` |  | |  | `fwstev` |  |  |
+| `TaxBaseAmountInDocCry` |  | |  | `fwbas_bses_cs` |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  | `hwste_cs` |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `hwbas_bses_cs` |  |  |
+| `_SupplierInvoice` | | ✓ | | | | |
 
 ## Source Code
 

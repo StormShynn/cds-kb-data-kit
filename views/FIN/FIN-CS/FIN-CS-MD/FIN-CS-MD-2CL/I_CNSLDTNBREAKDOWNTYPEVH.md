@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationBreakdownType` | ✓ | |  |  |
-| `ConsolidationBreakdownTypeText` |  | |  | `cast(_BreakdownType._Text[1: Language=$session.system_language].ConsolidationBreakdownTypeText as fincs_description_text_60 preserving type )` |
-| `DomainValue` |  | | `_BreakdownType` | `DomainValue` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationBreakdownType` | ✓ | |  |  |  |  |
+| `ConsolidationBreakdownTypeText` |  | |  | `cast(_BreakdownType._Text[1: Language=$session.system_language].ConsolidationBreakdownTypeText as fincs_description_text_60 preserving type )` |  |  |
+| `DomainValue` |  | | `_BreakdownType` | `DomainValue` |  |  |
 
 ## Source Code
 

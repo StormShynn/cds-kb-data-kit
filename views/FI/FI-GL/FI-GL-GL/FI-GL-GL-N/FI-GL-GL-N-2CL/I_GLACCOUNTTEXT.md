@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfAccounts` | ✓ | |  | `ktopl` |
-| `GLAccount` | ✓ | |  | `saknr` |
-| `Language` | ✓ | |  | `spras` |
-| `GLAccountName` |  | |  | `cast( txt20 as fis_txt20_skat_20 preserving type )` |
-| `GLAccountLongName` |  | |  | `cast( txt50 as fis_txt50_skat preserving type )` |
-| `LastChangeDateTime` |  | |  | `last_changed_ts` |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `ktopl` |  |  |
+| `GLAccount` | ✓ | |  | `saknr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `GLAccountName` |  | |  | `cast( txt20 as fis_txt20_skat_20 preserving type )` |  |  |
+| `GLAccountLongName` |  | |  | `cast( txt50 as fis_txt50_skat preserving type )` |  |  |
+| `LastChangeDateTime` |  | |  | `last_changed_ts` |  |  |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
 
 ## Associations
 

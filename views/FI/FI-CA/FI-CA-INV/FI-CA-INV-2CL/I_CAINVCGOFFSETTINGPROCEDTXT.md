@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgOffsettingProcedure` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1,2 ) as inv_offset_proc_kk preserving type )` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgOffsettingProcedText` |  | |  | `cast( ddtext as inv_offset_proc_txt_gfn_kk preserving type )` |
-| `_CAInvcgOffsettingProcedure` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgOffsettingProcedure` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1,2 ) as inv_offset_proc_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
+| `CAInvcgOffsettingProcedText` |  | |  | `cast( ddtext as inv_offset_proc_txt_gfn_kk preserving type )` |  |  |
+| `_CAInvcgOffsettingProcedure` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

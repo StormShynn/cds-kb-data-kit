@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TextObjectKey` | ✓ | |  |  |
-| `TextObjectType` | ✓ | |  |  |
-| `TextObjectCategory` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ServiceDocumentItemUUID` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `ServiceOrderNoteText` |  | | `_inotetemp` | `text` |
-| `_Language` | | ✓ | | |
-| `_TextObjectCategory` | | ✓ | | |
-| `_TextObjectType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TextObjectKey` | ✓ | |  |  |  |  |
+| `TextObjectType` | ✓ | |  |  |  |  |
+| `TextObjectCategory` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ServiceDocumentItemUUID` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `ServiceOrderNoteText` |  | | `_inotetemp` | `text` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TextObjectCategory` | | ✓ | | | | |
+| `_TextObjectType` | | ✓ | | | | |
 
 ## Associations
 

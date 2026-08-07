@@ -28,93 +28,93 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TechnicalObject` | ✓ | |  |  |
-| `TechObjIsEquipOrFuncnlLoc` | ✓ | |  |  |
-| `TechnicalObjectLabel` |  | |  | `cast( case when P_EquipmentFuncnlLocUnion.TechObjIsEquipOrFuncnlLoc = 'EAMS_FL' then _FunctionalLocationLabel.FunctionalLocationLabelName else P_EquipmentFuncnlLocUnion.TechnicalObject end as eams_tech_obj_conv )` |
-| `SuperiorObjIsEquipOrFuncnlLoc` |  | |  | `cast( case when SuperordinateEquipment <> '' then 'EAMS_EQUI' when SuperiorFunctionalLocation <> '' then 'EAMS_FL' end as eams_tec_obj_type_value )` |
-| `SuperiorTechnicalObject` |  | |  |  |
-| `TechnicalObjectCategory` |  | |  | `}] P_EquipmentFuncnlLocUnion.TechnicalObjectCategory` |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `TechnicalObjectType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `AssetManufacturerName` |  | |  |  |
-| `ManufacturerPartTypeName` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  | `}] P_EquipmentFuncnlLocUnion.MaintenancePlannerGroup` |
-| `CatalogProfile` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `WorkCenterInternalID` |  | |  | `}] P_EquipmentFuncnlLocUnion.WorkCenterInternalID` |
-| `WorkCenterTypeCode` |  | |  |  |
-| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
-| `ManufacturerCountry` |  | |  |  |
-| `ConstructionYear` |  | |  |  |
-| `ConstructionMonth` |  | |  |  |
-| `ConstructionMaterial` |  | |  |  |
-| `AcquisitionDate` |  | |  |  |
-| `Currency` |  | |  |  |
-| `AcquisitionValue` |  | |  |  |
-| `TechnicalObjectSortCode` |  | |  |  |
-| `MaintObjectInternalID` |  | |  |  |
-| `SizeOrDimensionText` |  | |  |  |
-| `InventoryNumber` |  | |  |  |
-| `GrossWeight` |  | |  |  |
-| `GrossWeightUnit` |  | |  |  |
-| `ManufacturerPartNmbr` |  | |  |  |
-| `ManufacturerSerialNumber` |  | |  |  |
-| `OperationStartDate` |  | |  |  |
-| `FuncLocStrucIdentifyingLevel` |  | |  |  |
-| `FuncLocStruc2ndIdentifyingLvl` |  | |  |  |
-| `FuncLocationStructure` |  | |  |  |
-| `SuperiorFunctionalLocation` |  | |  |  |
-| `TechnicalObjectDescription` |  | |  |  |
-| `TechnicalObjectHasLongText` |  | |  |  |
-| `SuperiorTechnicalObjectName` |  | |  |  |
-| `SuperiorTechnicalObjectLabel` |  | |  |  |
-| `IsDeleted` |  | |  | `cast(case when _StatusObjectActiveStatus[1: StatusCode = 'I0076'].StatusCode is not null and _StatusObjectActiveStatus[1: StatusCode = 'I0076'].StatusCode = 'I0076' then 'X' else '' end as lkenz )` |
-| `TechObjStatusIsInactive` |  | |  | `cast(case when _StatusObjectActiveStatus[1: StatusCode = 'I0320'].StatusCode is not null and _StatusObjectActiveStatus[1: StatusCode = 'I0320'].StatusCode = 'I0320' then 'X' else '' end as eam_inactive )` |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `Material` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_WorkCenterType` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_LocationAccountAssignment` | | ✓ | | |
-| `_TechnicalObjectType` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_SuperiorFunctionalLocation` | | ✓ | | |
-| `_FunctionalLocationLabel` | | ✓ | | |
-| `_MaintenancePlanningPlant` | | ✓ | | |
-| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | |
-| `_TechnicalObjectText` | | ✓ | | |
-| `_TechnicalObjectCategory` | | ✓ | | |
-| `_MaintenancePlannerGroup` | | ✓ | | |
-| `_ManufacturerCountry` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_IsDeleted` | | ✓ | | |
-| `_TechObjStatusIsInactive` | | ✓ | | |
-| `_StatusObjectActiveStatus` | | ✓ | | |
-| `_TechobjNumberOfSubobjects` | | ✓ | | |
-| `_TechnicalObjectCodeCatalog` | | ✓ | | |
-| `_TechnicalObjectHierarchy` | | ✓ | | |
-| `_ConstructionMaterial` | | ✓ | | |
-| `_CustWrntyObjAssgmt` | | ✓ | | |
-| `_VndrWrntyObjAssgmt` | | ✓ | | |
-| `_SuperFunctionalLocationLabel` | | ✓ | | |
-| `_MaintenancePlanPlant` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_GrossWeightUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TechnicalObject` | ✓ | |  |  |  |  |
+| `TechObjIsEquipOrFuncnlLoc` | ✓ | |  |  |  |  |
+| `TechnicalObjectLabel` |  | |  | `cast( case when P_EquipmentFuncnlLocUnion.TechObjIsEquipOrFuncnlLoc = 'EAMS_FL' then _FunctionalLocationLabel.FunctionalLocationLabelName else P_EquipmentFuncnlLocUnion.TechnicalObject end as eams_tech_obj_conv )` |  |  |
+| `SuperiorObjIsEquipOrFuncnlLoc` |  | |  | `cast( case when SuperordinateEquipment <> '' then 'EAMS_EQUI' when SuperiorFunctionalLocation <> '' then 'EAMS_FL' end as eams_tec_obj_type_value )` |  |  |
+| `SuperiorTechnicalObject` |  | |  |  |  |  |
+| `TechnicalObjectCategory` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `TechnicalObjectType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `AssetManufacturerName` |  | |  |  |  |  |
+| `ManufacturerPartTypeName` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `CatalogProfile` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |  |  |
+| `ManufacturerCountry` |  | |  |  |  |  |
+| `ConstructionYear` |  | |  |  |  |  |
+| `ConstructionMonth` |  | |  |  |  |  |
+| `ConstructionMaterial` |  | |  |  |  |  |
+| `AcquisitionDate` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `AcquisitionValue` |  | |  |  |  |  |
+| `TechnicalObjectSortCode` |  | |  |  |  |  |
+| `MaintObjectInternalID` |  | |  |  |  |  |
+| `SizeOrDimensionText` |  | |  |  |  |  |
+| `InventoryNumber` |  | |  |  |  |  |
+| `GrossWeight` |  | |  |  |  |  |
+| `GrossWeightUnit` |  | |  |  |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |  |  |
+| `ManufacturerSerialNumber` |  | |  |  |  |  |
+| `OperationStartDate` |  | |  |  |  |  |
+| `FuncLocStrucIdentifyingLevel` |  | |  |  |  |  |
+| `FuncLocStruc2ndIdentifyingLvl` |  | |  |  |  |  |
+| `FuncLocationStructure` |  | |  |  |  |  |
+| `SuperiorFunctionalLocation` |  | |  |  |  |  |
+| `TechnicalObjectDescription` |  | |  |  |  |  |
+| `TechnicalObjectHasLongText` |  | |  |  |  |  |
+| `SuperiorTechnicalObjectName` |  | |  |  |  |  |
+| `SuperiorTechnicalObjectLabel` |  | |  |  |  |  |
+| `IsDeleted` |  | |  | `cast(case when _StatusObjectActiveStatus[1: StatusCode = 'I0076'].StatusCode is not null and _StatusObjectActiveStatus[1: StatusCode = 'I0076'].StatusCode = 'I0076' then 'X' else '' end as lkenz )` |  |  |
+| `TechObjStatusIsInactive` |  | |  | `cast(case when _StatusObjectActiveStatus[1: StatusCode = 'I0320'].StatusCode is not null and _StatusObjectActiveStatus[1: StatusCode = 'I0320'].StatusCode = 'I0320' then 'X' else '' end as eam_inactive )` |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_WorkCenterType` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_LocationAccountAssignment` | | ✓ | | | | |
+| `_TechnicalObjectType` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_SuperiorFunctionalLocation` | | ✓ | | | | |
+| `_FunctionalLocationLabel` | | ✓ | | | | |
+| `_MaintenancePlanningPlant` | | ✓ | | | | |
+| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | | | |
+| `_TechnicalObjectText` | | ✓ | | | | |
+| `_TechnicalObjectCategory` | | ✓ | | | | |
+| `_MaintenancePlannerGroup` | | ✓ | | | | |
+| `_ManufacturerCountry` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_IsDeleted` | | ✓ | | | | |
+| `_TechObjStatusIsInactive` | | ✓ | | | | |
+| `_StatusObjectActiveStatus` | | ✓ | | | | |
+| `_TechobjNumberOfSubobjects` | | ✓ | | | | |
+| `_TechnicalObjectCodeCatalog` | | ✓ | | | | |
+| `_TechnicalObjectHierarchy` | | ✓ | | | | |
+| `_ConstructionMaterial` | | ✓ | | | | |
+| `_CustWrntyObjAssgmt` | | ✓ | | | | |
+| `_VndrWrntyObjAssgmt` | | ✓ | | | | |
+| `_SuperFunctionalLocationLabel` | | ✓ | | | | |
+| `_MaintenancePlanPlant` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_GrossWeightUnit` | | ✓ | | | | |
 
 ## Associations
 

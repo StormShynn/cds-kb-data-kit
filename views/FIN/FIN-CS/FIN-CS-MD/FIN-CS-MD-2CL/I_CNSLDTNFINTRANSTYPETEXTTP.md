@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `FinancialTransactionType` | ✓ | | `_Text` | `FinancialTransactionType` |
-| `FinancialTransactionTypeName` |  | | `_Text` | `FinancialTransactionTypeName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinTransactionTypeTP` |  | |  | `_FinancialTransactionType as _FinancialTransactionType : redirected to parent I_CnsldtnFinTransactionTypeTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `FinancialTransactionType` | ✓ | | `_Text` | `FinancialTransactionType` |  |  |
+| `FinancialTransactionTypeName` |  | | `_Text` | `FinancialTransactionTypeName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFinTransactionTypeTP` |  | |  | `_FinancialTransactionType as _FinancialTransactionType : redirected to parent I_CnsldtnFinTransactionTypeTP` |  |  |
 
 ## Source Code
 

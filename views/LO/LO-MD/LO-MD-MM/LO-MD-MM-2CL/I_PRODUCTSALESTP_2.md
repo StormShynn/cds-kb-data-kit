@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `SalesStatus` |  | |  |  |
-| `SalesStatusValidityDate` |  | |  |  |
-| `TransportationGroup` |  | |  |  |
-| `PackagingProductType` |  | |  |  |
-| `AllowedPackagingWeightQty` |  | |  |  |
-| `AllowedPackagingWeightQtyUnit` |  | |  |  |
-| `AllowedPackagingVolumeQty` |  | |  |  |
-| `AllowedPackagingVolumeQtyUnit` |  | |  |  |
-| `MaximumLevelByVolumeInPercent` |  | |  |  |
-| `ExcessWeightToleranceValue` |  | |  |  |
-| `PackggProductIsClosedPackaging` |  | |  |  |
-| `ProductStackingFactor` |  | |  |  |
-| `ProdExcessVolumeToleranceValue` |  | |  |  |
-| `ProductTaxClassification` |  | |  |  |
-| `PricingReferenceProduct` |  | |  |  |
-| `LoadingGroup` |  | |  |  |
-| `StoreSaleEndDate` |  | |  |  |
-| `DistributionCenterSaleEndDate` |  | |  |  |
-| `StoreSaleStartDate` |  | |  |  |
-| `DistrCenterSaleStartDate` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_TransportationGroupText` | | ✓ | | |
-| `_ProductRetail` | | ✓ | | |
-| `_TaxClass` | | ✓ | | |
-| `_PricingReferenceProductText` | | ✓ | | |
-| `_WeightText` | | ✓ | | |
-| `_VolumeText` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `SalesStatus` |  | |  |  |  |  |
+| `SalesStatusValidityDate` |  | |  |  |  |  |
+| `TransportationGroup` |  | |  |  |  |  |
+| `PackagingProductType` |  | |  |  |  |  |
+| `AllowedPackagingWeightQty` |  | |  |  |  |  |
+| `AllowedPackagingWeightQtyUnit` |  | |  |  |  |  |
+| `AllowedPackagingVolumeQty` |  | |  |  |  |  |
+| `AllowedPackagingVolumeQtyUnit` |  | |  |  |  |  |
+| `MaximumLevelByVolumeInPercent` |  | |  |  |  |  |
+| `ExcessWeightToleranceValue` |  | |  |  |  |  |
+| `PackggProductIsClosedPackaging` |  | |  |  |  |  |
+| `ProductStackingFactor` |  | |  |  |  |  |
+| `ProdExcessVolumeToleranceValue` |  | |  |  |  |  |
+| `ProductTaxClassification` |  | |  |  |  |  |
+| `PricingReferenceProduct` |  | |  |  |  |  |
+| `LoadingGroup` |  | |  |  |  |  |
+| `StoreSaleEndDate` |  | |  |  |  |  |
+| `DistributionCenterSaleEndDate` |  | |  |  |  |  |
+| `StoreSaleStartDate` |  | |  |  |  |  |
+| `DistrCenterSaleStartDate` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_TransportationGroupText` | | ✓ | | | | |
+| `_ProductRetail` | | ✓ | | | | |
+| `_TaxClass` | | ✓ | | | | |
+| `_PricingReferenceProductText` | | ✓ | | | | |
+| `_WeightText` | | ✓ | | | | |
+| `_VolumeText` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
 
 ## Source Code
 

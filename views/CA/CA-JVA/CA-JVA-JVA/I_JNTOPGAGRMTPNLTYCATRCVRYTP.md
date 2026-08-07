@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JntOpgAgrmt` | ✓ | |  |  |
-| `JntVntrPenaltyCategory` | ✓ | |  |  |
-| `JntVntrNonSignatoryRcvryPct` |  | |  |  |
-| `JntVntrNonConsentRcvryPnltyPct` |  | |  |  |
-| `_JntOpgAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |  |  |
+| `JntVntrPenaltyCategory` | ✓ | |  |  |  |  |
+| `JntVntrNonSignatoryRcvryPct` |  | |  |  |  |  |
+| `JntVntrNonConsentRcvryPnltyPct` |  | |  |  |  |  |
+| `_JntOpgAgrmt` | | ✓ | | | | |
 
 ## Source Code
 

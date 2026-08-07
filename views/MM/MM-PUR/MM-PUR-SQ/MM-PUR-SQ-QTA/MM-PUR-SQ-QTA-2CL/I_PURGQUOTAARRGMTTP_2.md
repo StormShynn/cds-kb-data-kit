@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QuotaArrangement` | ✓ | |  |  |
-| `Material` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `UserDescription` |  | |  |  |
-| `MaterialBaseUnit` |  | |  |  |
-| `MinQtyForSpltQuota` |  | |  |  |
-| `_PurgQuotaArrgmtItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QuotaArrangement` | ✓ | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `UserDescription` |  | |  |  |  |  |
+| `MaterialBaseUnit` |  | |  |  |  |  |
+| `MinQtyForSpltQuota` |  | |  |  |  |  |
+| `_PurgQuotaArrgmtItem` | | ✓ | | | | |
 
 ## Source Code
 

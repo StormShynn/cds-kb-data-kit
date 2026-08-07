@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `CACreditWorthinessOrigin` | ✓ | |  | `herkf` |
-| `CACreditWorthinessOriginText` |  | |  | `htext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CACreditWorthinessOrigin` | ✓ | |  | `herkf` |  |  |
+| `CACreditWorthinessOriginText` |  | |  | `htext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

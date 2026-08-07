@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingObjectClass` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 2) as fis_scope_cv_conv_co )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingObjectClass` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 2) as fis_scope_cv_conv_co )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

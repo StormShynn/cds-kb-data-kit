@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `FunctionalArea` | ✓ | |  | `cast( _Source.FunctionalArea as fincs_functionalarea preserving type )` |
-| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` |  | |  | `cast( _Source.FunctionalAreaName as fincs_description_text_25 preserving type )` |
-| `FunctionalAreaName` |  | |  | `cast( _Source.FunctionalAreaName as fincs_functionalareaname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
-| `_Language` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `FunctionalArea` | ✓ | |  | `cast( _Source.FunctionalArea as fincs_functionalarea preserving type )` |  |  |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |  |  |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.FunctionalAreaName as fincs_description_text_25 preserving type )` |  |  |
+| `FunctionalAreaName` |  | |  | `cast( _Source.FunctionalAreaName as fincs_functionalareaname preserving type )` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
 
 ## Associations
 

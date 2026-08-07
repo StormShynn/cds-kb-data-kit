@@ -29,40 +29,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClearingCompanyCode` | ✓ | |  | `cast( bukrs_clr as fis_bukrs_clr preserving type )` |
-| `ClearingAccountingDocument` | ✓ | |  | `cast( belnr_clr as fis_belnr_clr preserving type )` |
-| `ClearingFiscalYear` | ✓ | |  | `cast( gjahr_clr as fis_gjahr_clr preserving type )` |
-| `ClearingIndex` | ✓ | |  | `cast( index_clr as fis_index_clr preserving type )` |
-| `ClearedCompanyCode` |  | |  | `cast( bukrs as fis_bukrs_clrd preserving type )` |
-| `ClearedAccountingDocument` |  | |  | `cast( belnr as fis_belnr_clrd preserving type )` |
-| `ClearedFiscalYear` |  | |  | `cast( gjahr as fis_gjahr_clrd preserving type )` |
-| `ClearedAccountingDocumentItem` |  | |  | `cast( buzei as fis_buzei_clrd preserving type )` |
-| `ClearingItem` |  | |  | `agzei` |
-| `ClearingDownPaymentItem` |  | |  | `cast( agbuz as fis_agbuz preserving type )` |
-| `ClearingType` |  | |  | `cast( clrin as fis_clrin preserving type )` |
-| `ClearingTransactionCurrency` |  | |  | `cast( waers as fis_waers_clr preserving type )` |
-| `ClearingCompanyCodeCurrency` |  | |  | `cast( _ClearingCompanyCode.Currency as fis_hwaer_clr preserving type )` |
-| `FinancialAccountType` |  | |  | `cast( koart as farp_koart preserving type )` |
-| `AmountInCompanyCodeCurrency` |  | |  | `cast(dmbtr as fis_hsl preserving type )` |
-| `AmountInInClrgTransCrcy` |  | |  | `cast( wrbtr as fis_wrbtr_clr preserving type )` |
-| `DifferenceAmtInCoCodeCrcy` |  | |  | `cast( difhw as fis_diff_amt_hsl preserving type )` |
-| `DifferenceAmtInClrgTransCrcy` |  | |  | `cast( diffw as fis_diffw_clr preserving type )` |
-| `CashDiscountAmtInCoCodeCrcy` |  | |  | `cast( sknto as fis_sknto preserving type )` |
-| `CashDiscountAmtInClrgTransCrcy` |  | |  | `cast( wskto as fis_wskto_clr preserving type )` |
-| `ExchRateDiffAmtInCoCodeCrcy` |  | |  | `rdiff` |
-| `_ClearingCompanyCode` | | ✓ | | |
-| `_ClearedCompanyCode` | | ✓ | | |
-| `_ClearingDocument` | | ✓ | | |
-| `_ClearedAccountingDocument` | | ✓ | | |
-| `_ClearedItem` | | ✓ | | |
-| `_ClearingFiscalYear` | | ✓ | | |
-| `_ClearedFiscalYear` | | ✓ | | |
-| `_ClearingType` | | ✓ | | |
-| `_FinancialAccountType` | | ✓ | | |
-| `_ClearingCompanyCodeCurrency` | | ✓ | | |
-| `_ClearingTransactionCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClearingCompanyCode` | ✓ | |  | `cast( bukrs_clr as fis_bukrs_clr preserving type )` |  |  |
+| `ClearingAccountingDocument` | ✓ | |  | `cast( belnr_clr as fis_belnr_clr preserving type )` |  |  |
+| `ClearingFiscalYear` | ✓ | |  | `cast( gjahr_clr as fis_gjahr_clr preserving type )` |  |  |
+| `ClearingIndex` | ✓ | |  | `cast( index_clr as fis_index_clr preserving type )` |  |  |
+| `ClearedCompanyCode` |  | |  | `cast( bukrs as fis_bukrs_clrd preserving type )` |  |  |
+| `ClearedAccountingDocument` |  | |  | `cast( belnr as fis_belnr_clrd preserving type )` |  |  |
+| `ClearedFiscalYear` |  | |  | `cast( gjahr as fis_gjahr_clrd preserving type )` |  |  |
+| `ClearedAccountingDocumentItem` |  | |  | `cast( buzei as fis_buzei_clrd preserving type )` |  |  |
+| `ClearingItem` |  | |  | `agzei` |  |  |
+| `ClearingDownPaymentItem` |  | |  | `cast( agbuz as fis_agbuz preserving type )` |  |  |
+| `ClearingType` |  | |  | `cast( clrin as fis_clrin preserving type )` |  |  |
+| `ClearingTransactionCurrency` |  | |  | `cast( waers as fis_waers_clr preserving type )` |  |  |
+| `ClearingCompanyCodeCurrency` |  | |  | `cast( _ClearingCompanyCode.Currency as fis_hwaer_clr preserving type )` |  |  |
+| `FinancialAccountType` |  | |  | `cast( koart as farp_koart preserving type )` |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `cast(dmbtr as fis_hsl preserving type )` |  |  |
+| `AmountInInClrgTransCrcy` |  | |  | `cast( wrbtr as fis_wrbtr_clr preserving type )` |  |  |
+| `DifferenceAmtInCoCodeCrcy` |  | |  | `cast( difhw as fis_diff_amt_hsl preserving type )` |  |  |
+| `DifferenceAmtInClrgTransCrcy` |  | |  | `cast( diffw as fis_diffw_clr preserving type )` |  |  |
+| `CashDiscountAmtInCoCodeCrcy` |  | |  | `cast( sknto as fis_sknto preserving type )` |  |  |
+| `CashDiscountAmtInClrgTransCrcy` |  | |  | `cast( wskto as fis_wskto_clr preserving type )` |  |  |
+| `ExchRateDiffAmtInCoCodeCrcy` |  | |  | `rdiff` |  |  |
+| `_ClearingCompanyCode` | | ✓ | | | | |
+| `_ClearedCompanyCode` | | ✓ | | | | |
+| `_ClearingDocument` | | ✓ | | | | |
+| `_ClearedAccountingDocument` | | ✓ | | | | |
+| `_ClearedItem` | | ✓ | | | | |
+| `_ClearingFiscalYear` | | ✓ | | | | |
+| `_ClearedFiscalYear` | | ✓ | | | | |
+| `_ClearingType` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_ClearingCompanyCodeCurrency` | | ✓ | | | | |
+| `_ClearingTransactionCurrency` | | ✓ | | | | |
 
 ## Associations
 

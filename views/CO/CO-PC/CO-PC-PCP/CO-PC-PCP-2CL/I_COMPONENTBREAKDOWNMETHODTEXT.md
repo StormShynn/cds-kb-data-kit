@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `ComponentBreakdownMethod` | ✓ | |  | `ucb_method` |
-| `ComponentBreakdownMethodName` |  | |  | `name` |
-| `_ComponentBreakdownMethod` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `ComponentBreakdownMethod` | ✓ | |  | `ucb_method` |  |  |
+| `ComponentBreakdownMethodName` |  | |  | `name` |  |  |
+| `_ComponentBreakdownMethod` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

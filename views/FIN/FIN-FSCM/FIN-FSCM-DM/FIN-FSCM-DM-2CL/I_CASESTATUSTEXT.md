@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Status` | ✓ | |  | `cast( stat_para as scmgstatpara preserving type )` |
-| `Language` | ✓ | |  | `langu` |
-| `StatusName` |  | |  | `stat_para_descr` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Status` | ✓ | |  | `cast( stat_para as scmgstatpara preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `StatusName` |  | |  | `stat_para_descr` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

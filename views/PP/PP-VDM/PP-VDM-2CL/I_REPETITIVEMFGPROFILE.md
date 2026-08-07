@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RepetitiveManufacturingProfile` | ✓ | |  | `sfpro` |
-| `RepetitiveMfgProductionType` |  | |  | `auart` |
-| `ProductCostCtrlgOrderType` |  | |  | `cast(prof.ksart as pph_ksaar preserving type)` |
-| `GoodsIssueMovementType` |  | |  | `cast(prof.bwawa as nsdm_gi_bwart preserving type)` |
-| `GoodsReceiptMovementType` |  | |  | `cast(prof.bwawe as nsdm_gr_bwart preserving type)` |
-| `_OrderType` | | ✓ | | |
-| `_ProductionType` | | ✓ | | |
-| `_GoodsIssueMovementType` | | ✓ | | |
-| `_GoodsReceiptMovementType` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RepetitiveManufacturingProfile` | ✓ | |  | `sfpro` |  |  |
+| `RepetitiveMfgProductionType` |  | |  | `auart` |  |  |
+| `ProductCostCtrlgOrderType` |  | |  | `cast(prof.ksart as pph_ksaar preserving type)` |  |  |
+| `GoodsIssueMovementType` |  | |  | `cast(prof.bwawa as nsdm_gi_bwart preserving type)` |  |  |
+| `GoodsReceiptMovementType` |  | |  | `cast(prof.bwawe as nsdm_gr_bwart preserving type)` |  |  |
+| `_OrderType` | | ✓ | | | | |
+| `_ProductionType` | | ✓ | | | | |
+| `_GoodsIssueMovementType` | | ✓ | | | | |
+| `_GoodsReceiptMovementType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

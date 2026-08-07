@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |
-| `CountryThreeLetterISOCode` |  | |  | `intca3` |
-| `CountryThreeDigitISOCode` |  | |  | `intcn3` |
-| `CountryISOCode` |  | |  | `intca` |
-| `IsEuropeanUnionMember` |  | |  | `xegld` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |  |  |
+| `CountryThreeLetterISOCode` |  | |  | `intca3` |  |  |
+| `CountryThreeDigitISOCode` |  | |  | `intcn3` |  |  |
+| `CountryISOCode` |  | |  | `intca` |  |  |
+| `IsEuropeanUnionMember` |  | |  | `xegld` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

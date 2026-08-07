@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACrdtWorthinessItemStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as bonis_kk preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `CACrdtWorthinessItemStatusText` |  | |  | `cast( ddtext as bonis_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACrdtWorthinessItemStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as bonis_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `CACrdtWorthinessItemStatusText` |  | |  | `cast( ddtext as bonis_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnFSItemScope` | ✓ | | `_CnsldtnFSItemScope` | `CnsldtnFSItemScope` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnFSItemScope` | ✓ | | `_CnsldtnFSItemScope` | `CnsldtnFSItemScope` |  |  |
 
 ## Source Code
 

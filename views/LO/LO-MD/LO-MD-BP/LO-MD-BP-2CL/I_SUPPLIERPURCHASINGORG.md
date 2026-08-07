@@ -30,63 +30,63 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  | `lifnr` |
-| `PurchasingOrganization` | ✓ | |  | `ekorg` |
-| `PurchasingGroup` |  | |  | `ekgrp` |
-| `MaterialPlannedDeliveryDurn` |  | |  | `plifz` |
-| `PurchasingIsBlockedForSupplier` |  | |  | `sperm` |
-| `SupplierRespSalesPersonName` |  | |  | `verkf` |
-| `SupplierPhoneNumber` |  | |  | `telf1` |
-| `PurchaseOrderCurrency` |  | |  | `waers` |
-| `MinimumOrderAmount` |  | |  | `minbw` |
-| `CalculationSchemaGroupCode` |  | |  | `kalsk` |
-| `PaymentTerms` |  | |  | `zterm` |
-| `PricingDateControl` |  | |  | `meprf` |
-| `SupplierABCClassificationCode` |  | |  | `lfabc` |
-| `ShippingCondition` |  | |  | `vsbed` |
-| `PurOrdAutoGenerationIsAllowed` |  | |  | `kzaut` |
-| `InvoiceIsGoodsReceiptBased` |  | |  | `webre` |
-| `IncotermsClassification` |  | |  | `inco1` |
-| `IncotermsTransferLocation` |  | |  | `inco2` |
-| `IncotermsVersion` |  | |  | `incov` |
-| `IncotermsLocation1` |  | |  | `inco2_l` |
-| `IncotermsLocation2` |  | |  | `inco3_l` |
-| `DeletionIndicator` |  | |  | `loevm` |
-| `PlannedDeliveryDurationInDays` |  | |  | `plifz` |
-| `ContactPersonPhoneNumber` |  | |  | `telf1` |
-| `SupplierConfirmationControlKey` |  | |  | `bstae` |
-| `IsOrderAcknRqd` |  | |  | `kzabs` |
-| `EvaldReceiptSettlementIsActive` |  | |  | `xersy` |
-| `AutomaticEvaluatedRcptSettlmt` |  | |  | `xersr` |
-| `SupplierAccountNumber` |  | |  | `eikto` |
-| `SuplrIsSubjToSubsqntSettlement` |  | |  | `bolre` |
-| `SuplrPurgOrgAgrmtOfBusVolIsRqd` |  | |  | `umsae` |
-| `SuplrInvcRevalIsAllowed` |  | |  | `xnbwy` |
-| `SuplrPurgOrgIsRlvtForPriceDetn` |  | |  | `prfre` |
-| `IntrastatCrsBorderTrMode` |  | |  | `expvz` |
-| `ProductUnitGroup` |  | |  | `megru` |
-| `RoundingProfile` |  | |  | `rdprf` |
-| `PlanningCycle` |  | |  | `lfrhy` |
-| `SuplrDiscountInKindIsGranted` |  | |  | `cast ( nrgew as xfeld preserving type )` |
-| `SuplrIsRlvtForSettlmtMgmt` |  | |  | `agrel` |
-| `InvoiceIsMMServiceEntryBased` |  | |  | `lebre` |
-| `ProdStockAndSlsDataTransfPrfl` |  | |  | `paprf` |
-| `EvaldRcptSettlementProfile` |  | |  | `valid_pro` |
-| `AbsoluteHandlingSurchargeAmt` |  | |  | `hscabs` |
-| `PercentageHandlingSurchargeAmt` |  | |  | `hscpe` |
-| `MinimumHandlingSurchargeAmt` |  | |  | `hscmin` |
-| `MaximumHandlingSurchargeAmt` |  | |  | `hscmax` |
-| `AutomDebitCrtnIsEnbldOnGI` |  | |  | `aubel` |
-| `SupplierIsReturnsSupplier` |  | |  | `kzret` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `IncotermsSupChnLoc1AddlUUID` |  | |  | `cast( inco2_key as /sapapo/location_uuid)` |
-| `IncotermsSupChnLoc2AddlUUID` |  | |  | `cast( inco3_key as /sapapo/location_uuid)` |
-| `IncotermsSupChnDvtgLocAddlUUID` |  | |  | `cast( inco4_key as /sapapo/location_uuid)` |
-| `AuthorizationGroup` |  | | `_Supplier` | `AuthorizationGroup` |
-| `_IncotermsClassification` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |  |  |
+| `PurchasingOrganization` | ✓ | |  | `ekorg` |  |  |
+| `PurchasingGroup` |  | |  | `ekgrp` |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  | `plifz` |  |  |
+| `PurchasingIsBlockedForSupplier` |  | |  | `sperm` |  |  |
+| `SupplierRespSalesPersonName` |  | |  | `verkf` |  |  |
+| `SupplierPhoneNumber` |  | |  | `telf1` |  |  |
+| `PurchaseOrderCurrency` |  | |  | `waers` |  |  |
+| `MinimumOrderAmount` |  | |  | `minbw` |  |  |
+| `CalculationSchemaGroupCode` |  | |  | `kalsk` |  |  |
+| `PaymentTerms` |  | |  | `zterm` |  |  |
+| `PricingDateControl` |  | |  | `meprf` |  |  |
+| `SupplierABCClassificationCode` |  | |  | `lfabc` |  |  |
+| `ShippingCondition` |  | |  | `vsbed` |  |  |
+| `PurOrdAutoGenerationIsAllowed` |  | |  | `kzaut` |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  | `webre` |  |  |
+| `IncotermsClassification` |  | |  | `inco1` |  |  |
+| `IncotermsTransferLocation` |  | |  | `inco2` |  |  |
+| `IncotermsVersion` |  | |  | `incov` |  |  |
+| `IncotermsLocation1` |  | |  | `inco2_l` |  |  |
+| `IncotermsLocation2` |  | |  | `inco3_l` |  |  |
+| `DeletionIndicator` |  | |  | `loevm` |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  | `plifz` |  |  |
+| `ContactPersonPhoneNumber` |  | |  | `telf1` |  |  |
+| `SupplierConfirmationControlKey` |  | |  | `bstae` |  |  |
+| `IsOrderAcknRqd` |  | |  | `kzabs` |  |  |
+| `EvaldReceiptSettlementIsActive` |  | |  | `xersy` |  |  |
+| `AutomaticEvaluatedRcptSettlmt` |  | |  | `xersr` |  |  |
+| `SupplierAccountNumber` |  | |  | `eikto` |  |  |
+| `SuplrIsSubjToSubsqntSettlement` |  | |  | `bolre` |  |  |
+| `SuplrPurgOrgAgrmtOfBusVolIsRqd` |  | |  | `umsae` |  |  |
+| `SuplrInvcRevalIsAllowed` |  | |  | `xnbwy` |  |  |
+| `SuplrPurgOrgIsRlvtForPriceDetn` |  | |  | `prfre` |  |  |
+| `IntrastatCrsBorderTrMode` |  | |  | `expvz` |  |  |
+| `ProductUnitGroup` |  | |  | `megru` |  |  |
+| `RoundingProfile` |  | |  | `rdprf` |  |  |
+| `PlanningCycle` |  | |  | `lfrhy` |  |  |
+| `SuplrDiscountInKindIsGranted` |  | |  | `cast ( nrgew as xfeld preserving type )` |  |  |
+| `SuplrIsRlvtForSettlmtMgmt` |  | |  | `agrel` |  |  |
+| `InvoiceIsMMServiceEntryBased` |  | |  | `lebre` |  |  |
+| `ProdStockAndSlsDataTransfPrfl` |  | |  | `paprf` |  |  |
+| `EvaldRcptSettlementProfile` |  | |  | `valid_pro` |  |  |
+| `AbsoluteHandlingSurchargeAmt` |  | |  | `hscabs` |  |  |
+| `PercentageHandlingSurchargeAmt` |  | |  | `hscpe` |  |  |
+| `MinimumHandlingSurchargeAmt` |  | |  | `hscmin` |  |  |
+| `MaximumHandlingSurchargeAmt` |  | |  | `hscmax` |  |  |
+| `AutomDebitCrtnIsEnbldOnGI` |  | |  | `aubel` |  |  |
+| `SupplierIsReturnsSupplier` |  | |  | `kzret` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `IncotermsSupChnLoc1AddlUUID` |  | |  | `cast( inco2_key as /sapapo/location_uuid)` |  |  |
+| `IncotermsSupChnLoc2AddlUUID` |  | |  | `cast( inco3_key as /sapapo/location_uuid)` |  |  |
+| `IncotermsSupChnDvtgLocAddlUUID` |  | |  | `cast( inco4_key as /sapapo/location_uuid)` |  |  |
+| `AuthorizationGroup` |  | | `_Supplier` | `AuthorizationGroup` |  |  |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,41 +27,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SAPClient` | ✓ | |  | `mandt` |
-| `MaterialDocument` | ✓ | |  | `cast( document.MaterialDocument as mblnr preserving type )` |
-| `MaterialDocumentYear` | ✓ | |  | `cast( document.MaterialDocumentYear as nsdm_mjahr preserving type )` |
-| `MaterialDocumentItem` | ✓ | |  | `cast( document.MaterialDocumentItem as nsdm_mblpo preserving type )` |
-| `matdockey` |  | |  | `concat( document.MaterialDocument, concat (document.MaterialDocumentYear, document.MaterialDocumentItem ) )` |
-| `PurchasingDocument` |  | |  | `cast( document.PurchaseOrder as bstnr preserving type )` |
-| `InventoryTransactionType` |  | |  | `cast( document.InventoryTransactionType as vgart preserving type )` |
-| `VersionForPrintingSlip` |  | |  | `cast( document.VersionForPrintingSlip as wever preserving type )` |
-| `CreationUserName` |  | |  | `cast( document.CreatedByUser as usnam preserving type )` |
-| `QuantityDebitCreditCode` |  | |  | `cast( document.DebitCreditCode as shkzg preserving type )` |
-| `GoodsReceiptIsMovedToBlkdStock` |  | |  | `cast( printind.kzwes as kzwes preserving type )` |
-| `Plant` |  | |  | `cast( document.Plant as werks_d preserving type )` |
-| `StorageLocation` |  | |  | `cast( document.StorageLocation as lgort_d preserving type )` |
-| `GoodsMovementType` |  | |  | `cast( document.GoodsMovementType as bwart preserving type )` |
-| `NmbrOfGROrGISlipsToPrintQty` |  | |  | `cast( document.NumberOfSlipsToBePrinted as weanz preserving type )` |
-| `MatlDocLatestPostgDate` |  | |  | `cast( document.PostingDate as budat preserving type )` |
-| `PrintingOfDocumentItem` |  | |  | `cast( printind.kzdru as kzdru preserving type )` |
-| `IndGoodsReceiptMessage` |  | |  | `cast( printpo.weakt as weakt preserving type )` |
-| `OperationIsPrinted` |  | |  | `case when document.VersionForPrintingSlip = '3' and printind.kzdru = '3' then printlf.xprint when document.IsAutomaticallyCreated = 'X' then ' ' else document.ManualPrintIsTriggered end` |
-| `CompanyCode` |  | |  | `cast( document.CompanyCode as bukrs )` |
-| `Supplier` |  | |  | `cast( document.Supplier as elifn )` |
-| `LabelForm` |  | |  | `cast( master.etifo as etifo )` |
-| `LabelType` |  | |  | `cast( master.etiar as etiar )` |
-| `UnderOverdelivery` |  | |  | `case when pudocum.weakt = 'X' then printpd.lmbmv else ' ' end` |
-| `PercentageVarcInOrdPrcUnit` |  | |  | `case when pudocum.weakt = 'X' then printpv.pabpm else 00.00 end` |
-| `MaterialComponentIsMissing` |  | |  | `xfmat` |
-| `Material` |  | |  | `cast( document.Material as matnr preserving type )` |
-| `TransactionCode` |  | |  | `cast( document.TransactionCode as nsdm_tcode preserving type )` |
-| `SpecialStockType` |  | |  | `cast( document.InventorySpecialStockType as nsdm_spcl_stock_type preserving type )` |
-| `ProductTypeCode` |  | |  | `cast( mattype.prod_type_code as product_type preserving type )` |
-| `PrintKanbanCard` |  | |  | `cast ( ' ' as pk_print_kanban_card )` |
-| `PrintKanbanCardByGoodsMovement` |  | |  | `cast ( ' ' as pk_print_kanban_card_by_gm )` |
-| `_MaterialDocumentItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SAPClient` | ✓ | |  | `mandt` |  |  |
+| `MaterialDocument` | ✓ | |  | `cast( document.MaterialDocument as mblnr preserving type )` |  |  |
+| `MaterialDocumentYear` | ✓ | |  | `cast( document.MaterialDocumentYear as nsdm_mjahr preserving type )` |  |  |
+| `MaterialDocumentItem` | ✓ | |  | `cast( document.MaterialDocumentItem as nsdm_mblpo preserving type )` |  |  |
+| `matdockey` |  | |  | `concat( document.MaterialDocument, concat (document.MaterialDocumentYear, document.MaterialDocumentItem ) )` |  |  |
+| `PurchasingDocument` |  | |  | `cast( document.PurchaseOrder as bstnr preserving type )` |  |  |
+| `InventoryTransactionType` |  | |  | `cast( document.InventoryTransactionType as vgart preserving type )` |  |  |
+| `VersionForPrintingSlip` |  | |  | `cast( document.VersionForPrintingSlip as wever preserving type )` |  |  |
+| `CreationUserName` |  | |  | `cast( document.CreatedByUser as usnam preserving type )` |  |  |
+| `QuantityDebitCreditCode` |  | |  | `cast( document.DebitCreditCode as shkzg preserving type )` |  |  |
+| `GoodsReceiptIsMovedToBlkdStock` |  | |  | `cast( printind.kzwes as kzwes preserving type )` |  |  |
+| `Plant` |  | |  | `cast( document.Plant as werks_d preserving type )` |  |  |
+| `StorageLocation` |  | |  | `cast( document.StorageLocation as lgort_d preserving type )` |  |  |
+| `GoodsMovementType` |  | |  | `cast( document.GoodsMovementType as bwart preserving type )` |  |  |
+| `NmbrOfGROrGISlipsToPrintQty` |  | |  | `cast( document.NumberOfSlipsToBePrinted as weanz preserving type )` |  |  |
+| `MatlDocLatestPostgDate` |  | |  | `cast( document.PostingDate as budat preserving type )` |  |  |
+| `PrintingOfDocumentItem` |  | |  | `cast( printind.kzdru as kzdru preserving type )` |  |  |
+| `IndGoodsReceiptMessage` |  | |  | `cast( printpo.weakt as weakt preserving type )` |  |  |
+| `OperationIsPrinted` |  | |  | `case when document.VersionForPrintingSlip = '3' and printind.kzdru = '3' then printlf.xprint when document.IsAutomaticallyCreated = 'X' then ' ' else document.ManualPrintIsTriggered end` |  |  |
+| `CompanyCode` |  | |  | `cast( document.CompanyCode as bukrs )` |  |  |
+| `Supplier` |  | |  | `cast( document.Supplier as elifn )` |  |  |
+| `LabelForm` |  | |  | `cast( master.etifo as etifo )` |  |  |
+| `LabelType` |  | |  | `cast( master.etiar as etiar )` |  |  |
+| `UnderOverdelivery` |  | |  | `case when pudocum.weakt = 'X' then printpd.lmbmv else ' ' end` |  |  |
+| `PercentageVarcInOrdPrcUnit` |  | |  | `case when pudocum.weakt = 'X' then printpv.pabpm else 00.00 end` |  |  |
+| `MaterialComponentIsMissing` |  | |  | `xfmat` |  |  |
+| `Material` |  | |  | `cast( document.Material as matnr preserving type )` |  |  |
+| `TransactionCode` |  | |  | `cast( document.TransactionCode as nsdm_tcode preserving type )` |  |  |
+| `SpecialStockType` |  | |  | `cast( document.InventorySpecialStockType as nsdm_spcl_stock_type preserving type )` |  |  |
+| `ProductTypeCode` |  | |  | `cast( mattype.prod_type_code as product_type preserving type )` |  |  |
+| `PrintKanbanCard` |  | |  | `cast ( ' ' as pk_print_kanban_card )` |  |  |
+| `PrintKanbanCardByGoodsMovement` |  | |  | `cast ( ' ' as pk_print_kanban_card_by_gm )` |  |  |
+| `_MaterialDocumentItem` | | ✓ | | | | |
 
 ## Associations
 

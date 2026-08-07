@@ -27,56 +27,56 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( jv.bukrs as fis_bukrs preserving type )` |
-| `JointVenture` | ✓ | |  | `vname` |
-| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |
-| `JointVenturePartner` | ✓ | |  | `partn` |
-| `JointVentureType` |  | |  | `vtype` |
-| `Operator` |  | |  | `operator` |
-| `TaxCode` |  | |  | `taxcode` |
-| `JointVentureClass` |  | |  | `vclass` |
-| `JntOpgAgrmt` |  | |  | `joa` |
-| `JntVntrFundingGroup` |  | |  | `fundgroup` |
-| `PaymentTerms` |  | |  | `payterms` |
-| `JointVentureBillingType` |  | |  | `bmethod` |
-| `JntVntrInceptionToDateBillg` |  | |  | `itd` |
-| `CreatedByUser` |  | |  | `cruser` |
-| `JntVntrTimeCreated` |  | |  | `crtime` |
-| `JntVntrDateCreated` |  | |  | `crdate` |
-| `LastChangedByUser` |  | |  | `chuser` |
-| `JntVntrTimeLastChanged` |  | |  | `chtime` |
-| `JntVntrDateLastChanged` |  | |  | `chdate` |
-| `JntVntrBillgFormat` |  | |  | `bformat` |
-| `JntVntrBillgCutbackIsBlk` |  | |  | `vactive` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `JntVntrOutPaymentTerms` |  | |  | `outpayterm` |
-| `JntVntrOutTaxCode` |  | |  | `outtaxcode` |
-| `JntVntrTaxJurisdiction` |  | |  | `txjcd2` |
-| `JntVntrNonBillgFormat` |  | |  | `nbformat` |
-| `JntVntrBillgFrqcy` |  | |  | `bfreq` |
-| `JntVntrDrillingPayRate` |  | |  | `ovrdf` |
-| `JntVntrNonDrillingPayRate` |  | |  | `ovrnd` |
-| `JntVntrParentCoOvhdExpnCostCtr` |  | |  | `pcocostc` |
-| `JntVntrParentCoOvhdProject` |  | |  | `pcoprojk` |
-| `JntVntrParentCoOvhdExpnOrder` |  | |  | `pcoordnr` |
-| `JntVntrSubstituteCostCtr` |  | |  | `kostl` |
-| `JntVntrCrcyIsFundingCrcy` |  | |  | `checkfc` |
-| `JntVntrProperty` |  | |  | `property` |
-| `Currency` |  | | `_CompanyCode` | `Currency` |
-| `JntVntrBillgThldDebit` |  | |  | `} jv.billthres` |
-| `JntVntrBillgThldCredit` |  | |  | `} jv.billthresc` |
-| `JntVntrBillgThldIsActive` |  | |  | `billthresa` |
-| `JntVntrPaymentTermSchema` |  | |  | `pschem` |
-| `_CompanyCode` | | ✓ | | |
-| `_JntOpgAgrmt` | | ✓ | | |
-| `_JntOpgAgrmtText` | | ✓ | | |
-| `_JntVntrEquityGrp` | | ✓ | | |
-| `_JntVntrEquityGrpText` | | ✓ | | |
-| `_JntVntrPartOwnrEquityShr` | | ✓ | | |
-| `_JointVentureDesc` | | ✓ | | |
-| `_JointVentureMasterFld` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( jv.bukrs as fis_bukrs preserving type )` |  |  |
+| `JointVenture` | ✓ | |  | `vname` |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |  |  |
+| `JointVenturePartner` | ✓ | |  | `partn` |  |  |
+| `JointVentureType` |  | |  | `vtype` |  |  |
+| `Operator` |  | |  | `operator` |  |  |
+| `TaxCode` |  | |  | `taxcode` |  |  |
+| `JointVentureClass` |  | |  | `vclass` |  |  |
+| `JntOpgAgrmt` |  | |  | `joa` |  |  |
+| `JntVntrFundingGroup` |  | |  | `fundgroup` |  |  |
+| `PaymentTerms` |  | |  | `payterms` |  |  |
+| `JointVentureBillingType` |  | |  | `bmethod` |  |  |
+| `JntVntrInceptionToDateBillg` |  | |  | `itd` |  |  |
+| `CreatedByUser` |  | |  | `cruser` |  |  |
+| `JntVntrTimeCreated` |  | |  | `crtime` |  |  |
+| `JntVntrDateCreated` |  | |  | `crdate` |  |  |
+| `LastChangedByUser` |  | |  | `chuser` |  |  |
+| `JntVntrTimeLastChanged` |  | |  | `chtime` |  |  |
+| `JntVntrDateLastChanged` |  | |  | `chdate` |  |  |
+| `JntVntrBillgFormat` |  | |  | `bformat` |  |  |
+| `JntVntrBillgCutbackIsBlk` |  | |  | `vactive` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `JntVntrOutPaymentTerms` |  | |  | `outpayterm` |  |  |
+| `JntVntrOutTaxCode` |  | |  | `outtaxcode` |  |  |
+| `JntVntrTaxJurisdiction` |  | |  | `txjcd2` |  |  |
+| `JntVntrNonBillgFormat` |  | |  | `nbformat` |  |  |
+| `JntVntrBillgFrqcy` |  | |  | `bfreq` |  |  |
+| `JntVntrDrillingPayRate` |  | |  | `ovrdf` |  |  |
+| `JntVntrNonDrillingPayRate` |  | |  | `ovrnd` |  |  |
+| `JntVntrParentCoOvhdExpnCostCtr` |  | |  | `pcocostc` |  |  |
+| `JntVntrParentCoOvhdProject` |  | |  | `pcoprojk` |  |  |
+| `JntVntrParentCoOvhdExpnOrder` |  | |  | `pcoordnr` |  |  |
+| `JntVntrSubstituteCostCtr` |  | |  | `kostl` |  |  |
+| `JntVntrCrcyIsFundingCrcy` |  | |  | `checkfc` |  |  |
+| `JntVntrProperty` |  | |  | `property` |  |  |
+| `Currency` |  | | `_CompanyCode` | `Currency` |  |  |
+| `JntVntrBillgThldDebit` |  | |  | `billthres` |  |  |
+| `JntVntrBillgThldCredit` |  | |  | `billthresc` |  |  |
+| `JntVntrBillgThldIsActive` |  | |  | `billthresa` |  |  |
+| `JntVntrPaymentTermSchema` |  | |  | `pschem` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JntOpgAgrmt` | | ✓ | | | | |
+| `_JntOpgAgrmtText` | | ✓ | | | | |
+| `_JntVntrEquityGrp` | | ✓ | | | | |
+| `_JntVntrEquityGrpText` | | ✓ | | | | |
+| `_JntVntrPartOwnrEquityShr` | | ✓ | | | | |
+| `_JointVentureDesc` | | ✓ | | | | |
+| `_JointVentureMasterFld` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,32 +31,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `US_TaxPartnerTaxDocument` | ✓ | |  | `cast(etxdch.docnr as fis_externaltaxdocument preserving type)` |
-| `ReferenceDocument` |  | |  | `awref` |
-| `ReferenceDocumentContext` |  | |  | `cast(etxdch.aworg as fis_aworg preserving type)` |
-| `US_TxPartnerTxDocumentSentDate` |  | |  | `cast(etxdch.docstatuschanged as fis_externaltaxdatesent preserving type)` |
-| `US_TaxPartnerTaxTransaction` |  | |  | `cast(etxdch.tid as fis_etxdc_ukey preserving type)` |
-| `ReferenceDocumentType` |  | |  | `cast(etxdch.awtyp as fis_awtyp preserving type)` |
-| `CompanyCode` |  | |  | `cast(etxdch.comp_code as fis_bukrs preserving type)` |
-| `AccountingDocument` |  | |  | `cast(etxdcf.belnr as farp_belnr_d preserving type)` |
-| `FiscalYear` |  | |  | `cast(etxdcf.gjahr as fis_gjahr_no_conv preserving type)` |
-| `TransactionCurrency` |  | |  | `cast(etxdch.currency as fis_rwcur preserving type)` |
-| `CompanyCodeCurrency` |  | |  | `cast(etxdch.gl_currency as fis_hwaer preserving type)` |
-| `DefaultTaxDate` |  | |  | `cast(etxdch.rep_date as fis_etxtaxdefaulttaxdate preserving type)` |
-| `TaxCalculationProcedure` |  | |  | `cast(etxdch.tax_procedure as kalsm_d preserving type)` |
-| `US_TaxPartTaxDocUpdateType` |  | |  | `cast(etxdch.uflag as fis_etxdc_upd_type preserving type)` |
-| `US_TaxPartTaxDocUpdateStatus` |  | |  | `cast( '' as fis_etxdc_upd_status preserving type)` |
-| `US_TxPartnerTxDocSentByUsr` |  | |  | `cast(etxdch.usnam as fis_update_user preserving type)` |
-| `PostingDate` |  | | `_AccountingDocument` | `PostingDate` |
-| `DocumentDate` |  | | `_AccountingDocument` | `DocumentDate` |
-| `_CompanyCode` | | ✓ | | |
-| `_Type` | | ✓ | | |
-| `_TaxDocItem` | | ✓ | | |
-| `_AccountingDocument` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `US_TaxPartnerTaxDocument` | ✓ | |  | `cast(etxdch.docnr as fis_externaltaxdocument preserving type)` |  |  |
+| `ReferenceDocument` |  | |  | `awref` |  |  |
+| `ReferenceDocumentContext` |  | |  | `cast(etxdch.aworg as fis_aworg preserving type)` |  |  |
+| `US_TxPartnerTxDocumentSentDate` |  | |  | `cast(etxdch.docstatuschanged as fis_externaltaxdatesent preserving type)` |  |  |
+| `US_TaxPartnerTaxTransaction` |  | |  | `cast(etxdch.tid as fis_etxdc_ukey preserving type)` |  |  |
+| `ReferenceDocumentType` |  | |  | `cast(etxdch.awtyp as fis_awtyp preserving type)` |  |  |
+| `CompanyCode` |  | |  | `cast(etxdch.comp_code as fis_bukrs preserving type)` |  |  |
+| `AccountingDocument` |  | |  | `cast(etxdcf.belnr as farp_belnr_d preserving type)` |  |  |
+| `FiscalYear` |  | |  | `cast(etxdcf.gjahr as fis_gjahr_no_conv preserving type)` |  |  |
+| `TransactionCurrency` |  | |  | `cast(etxdch.currency as fis_rwcur preserving type)` |  |  |
+| `CompanyCodeCurrency` |  | |  | `cast(etxdch.gl_currency as fis_hwaer preserving type)` |  |  |
+| `DefaultTaxDate` |  | |  | `cast(etxdch.rep_date as fis_etxtaxdefaulttaxdate preserving type)` |  |  |
+| `TaxCalculationProcedure` |  | |  | `cast(etxdch.tax_procedure as kalsm_d preserving type)` |  |  |
+| `US_TaxPartTaxDocUpdateType` |  | |  | `cast(etxdch.uflag as fis_etxdc_upd_type preserving type)` |  |  |
+| `US_TaxPartTaxDocUpdateStatus` |  | |  | `cast( '' as fis_etxdc_upd_status preserving type)` |  |  |
+| `US_TxPartnerTxDocSentByUsr` |  | |  | `cast(etxdch.usnam as fis_update_user preserving type)` |  |  |
+| `PostingDate` |  | | `_AccountingDocument` | `PostingDate` |  |  |
+| `DocumentDate` |  | | `_AccountingDocument` | `DocumentDate` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Type` | | ✓ | | | | |
+| `_TaxDocItem` | | ✓ | | | | |
+| `_AccountingDocument` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
 
 ## Associations
 

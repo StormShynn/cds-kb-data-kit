@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ValidityEndDate` | ✓ | |  | `datbi` |
-| `ControllingArea` | ✓ | |  | `cast( cslt.kokrs as fis_kokrs preserving type )` |
-| `CostCtrActivityType` | ✓ | |  | `lstar` |
-| `Language` | ✓ | |  | `spras` |
-| `CostCtrActivityTypeName` |  | |  | `cast( ktext as fis_costctractivitytypename preserving type )` |
-| `CostCtrActivityTypeDesc` |  | |  | `cast( ltext as fis_costctractivitytypedesc preserving type )` |
-| `ValidityStartDate` |  | |  | `datab` |
-| `CostCtrActyTypeTxtSearchTerm` |  | |  | `mctxt` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( cslt.kokrs as fis_kokrs preserving type )` |  |  |
+| `CostCtrActivityType` | ✓ | |  | `lstar` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CostCtrActivityTypeName` |  | |  | `cast( ktext as fis_costctractivitytypename preserving type )` |  |  |
+| `CostCtrActivityTypeDesc` |  | |  | `cast( ltext as fis_costctractivitytypedesc preserving type )` |  |  |
+| `ValidityStartDate` |  | |  | `datab` |  |  |
+| `CostCtrActyTypeTxtSearchTerm` |  | |  | `mctxt` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
 
 ## Associations
 

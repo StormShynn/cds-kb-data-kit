@@ -32,28 +32,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectBillingRequestUUID` | ✓ | |  |  |
-| `ProjectBillingRequest` |  | |  |  |
-| `ProjectBillingRequestStatus` |  | |  |  |
-| `ProjBillgReqApprovalStatus` |  | |  |  |
-| `SalesDocument` |  | |  |  |
-| `ProjBillgReqLastChgdBy` |  | |  |  |
-| `ProjBillgReqLastChgdAtDteTme` |  | |  |  |
-| `ProjBillgReqCreatedBy` |  | |  |  |
-| `ProjBillgReqCreatedAtDteTme` |  | |  |  |
-| `ProjectBillingCategory` |  | |  |  |
-| `ProjectInternalID` |  | |  |  |
-| `_EnterpriseProject` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_ProjectBillingCategory` | | ✓ | | |
-| `_ProjectBillingCategoryText` | | ✓ | | |
-| `_ProjectBillingRequestStatus` | | ✓ | | |
-| `_ProjectBillingReqStatusText` | | ✓ | | |
-| `_ProjBillgReqApprovalStatus` | | ✓ | | |
-| `_ProjBillgReqApprvlStatusText` | | ✓ | | |
-| `_ProjectBillingReqItemTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectBillingRequestUUID` | ✓ | |  |  |  |  |
+| `ProjectBillingRequest` |  | |  |  |  |  |
+| `ProjectBillingRequestStatus` |  | |  |  |  |  |
+| `ProjBillgReqApprovalStatus` |  | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `ProjBillgReqLastChgdBy` |  | |  |  |  |  |
+| `ProjBillgReqLastChgdAtDteTme` |  | |  |  |  |  |
+| `ProjBillgReqCreatedBy` |  | |  |  |  |  |
+| `ProjBillgReqCreatedAtDteTme` |  | |  |  |  |  |
+| `ProjectBillingCategory` |  | |  |  |  |  |
+| `ProjectInternalID` |  | |  |  |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_ProjectBillingCategory` | | ✓ | | | | |
+| `_ProjectBillingCategoryText` | | ✓ | | | | |
+| `_ProjectBillingRequestStatus` | | ✓ | | | | |
+| `_ProjectBillingReqStatusText` | | ✓ | | | | |
+| `_ProjBillgReqApprovalStatus` | | ✓ | | | | |
+| `_ProjBillgReqApprvlStatusText` | | ✓ | | | | |
+| `_ProjectBillingReqItemTP` | | ✓ | | | | |
 
 ## Source Code
 

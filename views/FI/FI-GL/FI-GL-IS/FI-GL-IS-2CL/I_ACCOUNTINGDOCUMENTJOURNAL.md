@@ -30,214 +30,214 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `AccountingDocument` |  | |  | `}] key AccountingDocument` |
-| `Ledger` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `AccountingDocCreatedByUser` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `PostingKey` |  | |  |  |
-| `FinancialTransactionType` |  | |  |  |
-| `Segment` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `BalanceTransactionCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `DebitAmountInCoCodeCrcy` |  | |  | `} DebitAmountInCoCodeCrcy` |
-| `CreditAmountInCoCodeCrcy` |  | |  | `} CreditAmountInCoCodeCrcy` |
-| `FunctionalCurrency` |  | |  |  |
-| `DebitAmountInFunctionalCrcy` |  | |  | `} DebitAmountInFunctionalCrcy` |
-| `CreditAmountInFunctionalCrcy` |  | |  | `} CreditAmountInFunctionalCrcy` |
-| `DebitAmountInTransCrcy` |  | |  | `} DebitAmountInTransCrcy` |
-| `CreditAmountInTransCrcy` |  | |  | `} CreditAmountInTransCrcy` |
-| `CreditAmountInBalanceTransCrcy` |  | |  | `} CreditAmountInBalanceTransCrcy` |
-| `DebitAmountInBalanceTransCrcy` |  | |  | `} DebitAmountInBalanceTransCrcy` |
-| `BaseUnit` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `AccountingDocumentItem` |  | |  |  |
-| `AccountingDocumentCategory` |  | |  |  |
-| `AccountAssignmentNumber` |  | |  |  |
-| `AccountAssignmentType` |  | |  |  |
-| `AccountAssignment` |  | |  |  |
-| `AssetValueDate` |  | |  |  |
-| `AssetTransactionType` |  | |  |  |
-| `AssetAcctTransClassfctn` |  | |  |  |
-| `AlternativeGLAccount` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `AssetDepreciationArea` |  | |  |  |
-| `BudgetPeriod` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `BillingDocumentType` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ControllingObjectDebitType` |  | |  |  |
-| `ClearingDate` |  | |  |  |
-| `ClearingAccountingDocument` |  | |  |  |
-| `ClearingDocFiscalYear` |  | |  |  |
-| `Customer` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `CountryChartOfAccounts` |  | |  |  |
-| `CostObject` |  | |  |  |
-| `CostEstimate` |  | |  |  |
-| `CustomerServiceNotification` |  | |  |  |
-| `ControllingObjectClass` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `DepreciationFiscalPeriod` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `EliminationProfitCenter` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |
-| `FreeDefinedCurrency2` |  | |  |  |
-| `FreeDefinedCurrency3` |  | |  |  |
-| `FinancialManagementArea` |  | |  |  |
-| `Fund` |  | |  |  |
-| `FollowOnDocumentType` |  | |  |  |
-| `FinancialAccountType` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `GLAccountType` |  | |  |  |
-| `GroupMasterFixedAsset` |  | |  |  |
-| `GroupFixedAsset` |  | |  |  |
-| `HouseBank` |  | |  |  |
-| `HouseBankAccount` |  | |  |  |
-| `InvoiceReference` |  | |  |  |
-| `InvoiceReferenceFiscalYear` |  | |  |  |
-| `InvoiceItemReference` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `InventorySpclStkSalesDocument` |  | |  |  |
-| `InventorySpclStkSalesDocItm` |  | |  |  |
-| `InventorySpclStockWBSElement` |  | |  |  |
-| `InventorySpecialStockSupplier` |  | |  |  |
-| `IsReversal` |  | |  |  |
-| `IsReversed` |  | |  |  |
-| `IsSettlement` |  | |  |  |
-| `IsSettled` |  | |  |  |
-| `IsOpenItemManaged` |  | |  |  |
-| `JointVenture` |  | |  |  |
-| `JointVentureEquityGroup` |  | |  |  |
-| `JointVentureCostRecoveryCode` |  | |  |  |
-| `JointVentureEquityType` |  | |  |  |
-| `LedgerFiscalYear` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `LineItemIsCompleted` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Material` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `OffsettingAccount` |  | |  |  |
-| `OffsettingAccountType` |  | |  |  |
-| `OriginCostCenter` |  | |  |  |
-| `OriginCostCtrActivityType` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `OrderCategory` |  | |  |  |
-| `OperatingConcern` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `OriginObjectType` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `PartnerCompanyCode` |  | |  |  |
-| `PartnerControllingObjectClass` |  | |  |  |
-| `Project` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `PartnerCostCtrActivityType` |  | |  |  |
-| `PartnerOrder` |  | |  |  |
-| `PartnerOrder_2` |  | |  |  |
-| `PartnerOrderCategory` |  | |  |  |
-| `PartnerWBSElement` |  | |  |  |
-| `PartnerProject` |  | |  |  |
-| `PartnerSalesDocument` |  | |  |  |
-| `PartnerSalesDocumentItem` |  | |  |  |
-| `PartnerAccountAssignment` |  | |  |  |
-| `PartnerAccountAssignmentType` |  | |  |  |
-| `PartnerProjectNetwork` |  | |  |  |
-| `PartnerProjectNetworkActivity` |  | |  |  |
-| `PartnerBusinessProcess` |  | |  |  |
-| `PartnerCostObject` |  | |  |  |
-| `PartnerCostCenter` |  | |  |  |
-| `PartnerProfitCenter` |  | |  |  |
-| `PartnerFunctionalArea` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `PartnerSegment` |  | |  |  |
-| `PredecessorReferenceDocType` |  | |  |  |
-| `PredecessorReferenceDocCntxt` |  | |  |  |
-| `PredecessorReferenceDocument` |  | |  |  |
-| `PredecessorReferenceDocItem` |  | |  |  |
-| `PartnerFund` |  | |  |  |
-| `PartnerGrant` |  | |  |  |
-| `PartnerBudgetPeriod` |  | |  |  |
-| `QuantityIsIncomplete` |  | |  |  |
-| `RelatedNetworkActivity` |  | |  |  |
-| `ReferencePurchaseOrderCategory` |  | |  |  |
-| `ReferenceDocumentContext` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `ReferenceDocumentType` |  | |  |  |
-| `ReferenceDocumentItem` |  | |  |  |
-| `ReferenceDocumentItemGroup` |  | |  |  |
-| `ReversalReferenceDocumentCntxt` |  | |  |  |
-| `ReversalReferenceDocument` |  | |  |  |
-| `SoldMaterial` |  | |  |  |
-| `SourceLedger` |  | |  |  |
-| `SenderGLAccount` |  | |  |  |
-| `SenderAccountAssignment` |  | |  |  |
-| `SenderAccountAssignmentType` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SpecialGLCode` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `TransactionTypeDetermination` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `PartnerProjectExternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `InvtrySpclStockWBSElmntExtID` |  | |  |  |
-| `ProjectExternalID` |  | |  |  |
-| `PartnerWBSElementExternalID` |  | |  |  |
-| `CostCenterHierarchyNode` |  | |  | `cast('' as fis_cctr_hrynid_50)` |
-| `CostCenterHierarchy` |  | |  | `cast('' as fis_cctr_hryid_42)` |
-| `GLAccountHierarchyNode` |  | |  | `cast('' as fis_glacct_hrynid_50)` |
-| `GLAccountHierarchy` |  | |  | `cast('' as fis_glaccthier)` |
-| `ProfitCenterHierarchyNode` |  | |  | `cast('' as fis_cctr_hrynid_50)` |
-| `ProfitCenterHierarchy` |  | |  | `cast('' as fis_prctr_hryid_42 )` |
-| `DocumentReferenceID` |  | | `_JournalEntry` | `DocumentReferenceID` |
-| `AccountingDocumentHeaderText` |  | | `_JournalEntry` | `AccountingDocumentHeaderText` |
-| `_LedgerText` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_JournalEntry` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_FunctionalCurrency` | | ✓ | | |
-| `_BalanceTransactionCurrency` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_FreeDefinedCurrency1` | | ✓ | | |
-| `_FreeDefinedCurrency2` | | ✓ | | |
-| `_FreeDefinedCurrency3` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `AccountingDocCreatedByUser` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `PostingKey` |  | |  |  |  |  |
+| `FinancialTransactionType` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `BalanceTransactionCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `DebitAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `CreditAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `FunctionalCurrency` |  | |  |  |  |  |
+| `DebitAmountInFunctionalCrcy` |  | |  |  |  |  |
+| `CreditAmountInFunctionalCrcy` |  | |  |  |  |  |
+| `DebitAmountInTransCrcy` |  | |  |  |  |  |
+| `CreditAmountInTransCrcy` |  | |  |  |  |  |
+| `CreditAmountInBalanceTransCrcy` |  | |  |  |  |  |
+| `DebitAmountInBalanceTransCrcy` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `AccountingDocumentItem` |  | |  |  |  |  |
+| `AccountingDocumentCategory` |  | |  |  |  |  |
+| `AccountAssignmentNumber` |  | |  |  |  |  |
+| `AccountAssignmentType` |  | |  |  |  |  |
+| `AccountAssignment` |  | |  |  |  |  |
+| `AssetValueDate` |  | |  |  |  |  |
+| `AssetTransactionType` |  | |  |  |  |  |
+| `AssetAcctTransClassfctn` |  | |  |  |  |  |
+| `AlternativeGLAccount` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `AssetDepreciationArea` |  | |  |  |  |  |
+| `BudgetPeriod` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingObjectDebitType` |  | |  |  |  |  |
+| `ClearingDate` |  | |  |  |  |  |
+| `ClearingAccountingDocument` |  | |  |  |  |  |
+| `ClearingDocFiscalYear` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `CountryChartOfAccounts` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `CostEstimate` |  | |  |  |  |  |
+| `CustomerServiceNotification` |  | |  |  |  |  |
+| `ControllingObjectClass` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `DepreciationFiscalPeriod` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `EliminationProfitCenter` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |  |  |
+| `FreeDefinedCurrency2` |  | |  |  |  |  |
+| `FreeDefinedCurrency3` |  | |  |  |  |  |
+| `FinancialManagementArea` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `FollowOnDocumentType` |  | |  |  |  |  |
+| `FinancialAccountType` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `GLAccountType` |  | |  |  |  |  |
+| `GroupMasterFixedAsset` |  | |  |  |  |  |
+| `GroupFixedAsset` |  | |  |  |  |  |
+| `HouseBank` |  | |  |  |  |  |
+| `HouseBankAccount` |  | |  |  |  |  |
+| `InvoiceReference` |  | |  |  |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  |  |  |  |
+| `InvoiceItemReference` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `InventorySpclStkSalesDocument` |  | |  |  |  |  |
+| `InventorySpclStkSalesDocItm` |  | |  |  |  |  |
+| `InventorySpclStockWBSElement` |  | |  |  |  |  |
+| `InventorySpecialStockSupplier` |  | |  |  |  |  |
+| `IsReversal` |  | |  |  |  |  |
+| `IsReversed` |  | |  |  |  |  |
+| `IsSettlement` |  | |  |  |  |  |
+| `IsSettled` |  | |  |  |  |  |
+| `IsOpenItemManaged` |  | |  |  |  |  |
+| `JointVenture` |  | |  |  |  |  |
+| `JointVentureEquityGroup` |  | |  |  |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |  |  |
+| `JointVentureEquityType` |  | |  |  |  |  |
+| `LedgerFiscalYear` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `LineItemIsCompleted` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `OffsettingAccount` |  | |  |  |  |  |
+| `OffsettingAccountType` |  | |  |  |  |  |
+| `OriginCostCenter` |  | |  |  |  |  |
+| `OriginCostCtrActivityType` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `OperatingConcern` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `OriginObjectType` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `PartnerCompanyCode` |  | |  |  |  |  |
+| `PartnerControllingObjectClass` |  | |  |  |  |  |
+| `Project` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `PartnerCostCtrActivityType` |  | |  |  |  |  |
+| `PartnerOrder` |  | |  |  |  |  |
+| `PartnerOrder_2` |  | |  |  |  |  |
+| `PartnerOrderCategory` |  | |  |  |  |  |
+| `PartnerWBSElement` |  | |  |  |  |  |
+| `PartnerProject` |  | |  |  |  |  |
+| `PartnerSalesDocument` |  | |  |  |  |  |
+| `PartnerSalesDocumentItem` |  | |  |  |  |  |
+| `PartnerAccountAssignment` |  | |  |  |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |  |  |
+| `PartnerProjectNetwork` |  | |  |  |  |  |
+| `PartnerProjectNetworkActivity` |  | |  |  |  |  |
+| `PartnerBusinessProcess` |  | |  |  |  |  |
+| `PartnerCostObject` |  | |  |  |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `PartnerProfitCenter` |  | |  |  |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `PartnerSegment` |  | |  |  |  |  |
+| `PredecessorReferenceDocType` |  | |  |  |  |  |
+| `PredecessorReferenceDocCntxt` |  | |  |  |  |  |
+| `PredecessorReferenceDocument` |  | |  |  |  |  |
+| `PredecessorReferenceDocItem` |  | |  |  |  |  |
+| `PartnerFund` |  | |  |  |  |  |
+| `PartnerGrant` |  | |  |  |  |  |
+| `PartnerBudgetPeriod` |  | |  |  |  |  |
+| `QuantityIsIncomplete` |  | |  |  |  |  |
+| `RelatedNetworkActivity` |  | |  |  |  |  |
+| `ReferencePurchaseOrderCategory` |  | |  |  |  |  |
+| `ReferenceDocumentContext` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `ReferenceDocumentItem` |  | |  |  |  |  |
+| `ReferenceDocumentItemGroup` |  | |  |  |  |  |
+| `ReversalReferenceDocumentCntxt` |  | |  |  |  |  |
+| `ReversalReferenceDocument` |  | |  |  |  |  |
+| `SoldMaterial` |  | |  |  |  |  |
+| `SourceLedger` |  | |  |  |  |  |
+| `SenderGLAccount` |  | |  |  |  |  |
+| `SenderAccountAssignment` |  | |  |  |  |  |
+| `SenderAccountAssignmentType` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SpecialGLCode` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `TransactionTypeDetermination` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `PartnerProjectExternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `InvtrySpclStockWBSElmntExtID` |  | |  |  |  |  |
+| `ProjectExternalID` |  | |  |  |  |  |
+| `PartnerWBSElementExternalID` |  | |  |  |  |  |
+| `CostCenterHierarchyNode` |  | |  | `cast('' as fis_cctr_hrynid_50)` |  |  |
+| `CostCenterHierarchy` |  | |  | `cast('' as fis_cctr_hryid_42)` |  |  |
+| `GLAccountHierarchyNode` |  | |  | `cast('' as fis_glacct_hrynid_50)` |  |  |
+| `GLAccountHierarchy` |  | |  | `cast('' as fis_glaccthier)` |  |  |
+| `ProfitCenterHierarchyNode` |  | |  | `cast('' as fis_cctr_hrynid_50)` |  |  |
+| `ProfitCenterHierarchy` |  | |  | `cast('' as fis_prctr_hryid_42 )` |  |  |
+| `DocumentReferenceID` |  | | `_JournalEntry` | `DocumentReferenceID` |  |  |
+| `AccountingDocumentHeaderText` |  | | `_JournalEntry` | `AccountingDocumentHeaderText` |  |  |
+| `_LedgerText` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_FunctionalCurrency` | | ✓ | | | | |
+| `_BalanceTransactionCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_FreeDefinedCurrency1` | | ✓ | | | | |
+| `_FreeDefinedCurrency2` | | ✓ | | | | |
+| `_FreeDefinedCurrency3` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MrchdsCategoryHierarchyNode` | ✓ | |  | `cast(MrchdsCatHiernode .class as rfm_mrchdcathiernode preserving type )` |
-| `ParentMrchdsCatHierarchyNode` |  | |  | `class` |
-| `_MrchdsCategoryHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MrchdsCategoryHierarchyNode` | ✓ | |  | `cast(MrchdsCatHiernode .class as rfm_mrchdcathiernode preserving type )` |  |  |
+| `ParentMrchdsCatHierarchyNode` |  | |  | `class` |  |  |
+| `_MrchdsCategoryHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

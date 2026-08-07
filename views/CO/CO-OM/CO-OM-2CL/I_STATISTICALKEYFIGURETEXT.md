@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ControllingArea` | ✓ | |  | `cast(kokrs as fis_kokrs preserving type )` |
-| `StatisticalKeyFigure` | ✓ | |  | `cast(stagr as fis_stagr preserving type )` |
-| `StatisticalKeyFigureName` |  | |  | `cast(bezei as fis_ui_stagr_text preserving type )` |
-| `_ControllingArea` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ControllingArea` | ✓ | |  | `cast(kokrs as fis_kokrs preserving type )` |  |  |
+| `StatisticalKeyFigure` | ✓ | |  | `cast(stagr as fis_stagr preserving type )` |  |  |
+| `StatisticalKeyFigureName` |  | |  | `cast(bezei as fis_ui_stagr_text preserving type )` |  |  |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnItmExcptnReason` | ✓ | |  | `item_excreason` |
-| `Language` | ✓ | |  | `langu` |
-| `CABillgPlnItmExcptnRsnText` |  | |  | `cast(text as bip_item_excreason_txt_gfn_kk preserving type )` |
-| `_CABillgPlnItmExcptnReason` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnItmExcptnReason` | ✓ | |  | `item_excreason` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CABillgPlnItmExcptnRsnText` |  | |  | `cast(text as bip_item_excreason_txt_gfn_kk preserving type )` |  |  |
+| `_CABillgPlnItmExcptnReason` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

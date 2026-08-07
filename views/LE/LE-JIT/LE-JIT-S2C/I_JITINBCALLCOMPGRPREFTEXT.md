@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITReferenceTextUUID` | ✓ | |  | `db_key` |
-| `RootDraftKey` |  | |  | `root_key` |
-| `ParentDraftKey` |  | |  | `parent_key` |
-| `InternalJITCallNumber` |  | |  | `int_call_num` |
-| `JITCallItemNumber` |  | |  | `call_item_num` |
-| `JITRefType` |  | |  | `refty` |
-| `CompGrpNumber` |  | |  | `comp_grp_num` |
-| `JITAdditionalReferenceText` |  | |  | `referencetext` |
-| `_JITInboundCall` | | ✓ | | |
-| `_JITReferenceType` | | ✓ | | |
-| `_JITInbCallComponentGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITReferenceTextUUID` | ✓ | |  | `db_key` |  |  |
+| `RootDraftKey` |  | |  | `root_key` |  |  |
+| `ParentDraftKey` |  | |  | `parent_key` |  |  |
+| `InternalJITCallNumber` |  | |  | `int_call_num` |  |  |
+| `JITCallItemNumber` |  | |  | `call_item_num` |  |  |
+| `JITRefType` |  | |  | `refty` |  |  |
+| `CompGrpNumber` |  | |  | `comp_grp_num` |  |  |
+| `JITAdditionalReferenceText` |  | |  | `referencetext` |  |  |
+| `_JITInboundCall` | | ✓ | | | | |
+| `_JITReferenceType` | | ✓ | | | | |
+| `_JITInbCallComponentGroup` | | ✓ | | | | |
 
 ## Associations
 

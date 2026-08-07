@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CaseStatusProfile` | ✓ | |  | `profile_id` |
-| `Language` | ✓ | |  | `langu` |
-| `CaseStatus` | ✓ | |  | `stat_orderno` |
-| `CaseStatusName` |  | |  | `stat_ordno_descr` |
-| `_Language` | | ✓ | | |
-| `_CaseStatusProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseStatusProfile` | ✓ | |  | `profile_id` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CaseStatus` | ✓ | |  | `stat_orderno` |  |  |
+| `CaseStatusName` |  | |  | `stat_ordno_descr` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CaseStatusProfile` | | ✓ | | | | |
 
 ## Associations
 

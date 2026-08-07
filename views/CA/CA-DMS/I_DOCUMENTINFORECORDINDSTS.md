@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
-| `DocumentInfoRecordDocType` | ✓ | |  |  |
-| `DocumentInfoRecordDocVersion` | ✓ | |  |  |
-| `DocumentInfoRecordDocPart` | ✓ | |  |  |
-| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |
-| `IsDocInfoRecdStructure` |  | |  |  |
-| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocType` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  |  |  |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  |  |  |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |  |  |
+| `IsDocInfoRecdStructure` |  | |  |  |  |  |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

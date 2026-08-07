@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `Segment` | ✓ | |  |  |
-| `SegmentName` |  | |  |  |
-| `_Segment` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `Segment` | ✓ | |  |  |  |  |
+| `SegmentName` |  | |  |  |  |  |
+| `_Segment` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

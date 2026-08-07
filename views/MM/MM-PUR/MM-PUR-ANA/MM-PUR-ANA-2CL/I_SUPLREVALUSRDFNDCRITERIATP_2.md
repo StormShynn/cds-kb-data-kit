@@ -29,32 +29,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalUsrDfndCritraUUID` | ✓ | |  |  |
-| `Supplier` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingCategory` |  | |  |  |
-| `SuplrEvalUserDefinedCriteria` |  | |  |  |
-| `SuplrEvalUserDfndCriteriaDesc` |  | |  |  |
-| `SuplrEvalUsrCritraValidFrmDte` |  | |  |  |
-| `SuplrEvalUsrCritraValidToDte` |  | |  |  |
-| `SuplrEvalUsrDfndCritraRptdDte` |  | |  |  |
-| `SuplrEvalUsrDfndCritraCrtedBy` |  | |  |  |
-| `SuplrEvalUserDfndCritraCrtnDte` |  | |  |  |
-| `SuplrEvalUsrDfndCritraChgdBy` |  | |  |  |
-| `SuplrEvalUserDfndCritraChgDate` |  | |  |  |
-| `TotNmbrOfSuplrUsrDfndCritra` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `SuplrEvalUsrCritraCommentText` |  | |  |  |
-| `SupplierAccountGroup` |  | |  |  |
-| `SuplrEvalUsrCritraChgDteTme` |  | |  |  |
-| `_CreatedBy` | | ✓ | | |
-| `_LastChangedBy` | | ✓ | | |
-| `_MatGroup` | | ✓ | | |
-| `_StatusVH` | | ✓ | | |
-| `_SuplrEvalUserDfndCriteria` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalUsrDfndCritraUUID` | ✓ | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingCategory` |  | |  |  |  |  |
+| `SuplrEvalUserDefinedCriteria` |  | |  |  |  |  |
+| `SuplrEvalUserDfndCriteriaDesc` |  | |  |  |  |  |
+| `SuplrEvalUsrCritraValidFrmDte` |  | |  |  |  |  |
+| `SuplrEvalUsrCritraValidToDte` |  | |  |  |  |  |
+| `SuplrEvalUsrDfndCritraRptdDte` |  | |  |  |  |  |
+| `SuplrEvalUsrDfndCritraCrtedBy` |  | |  |  |  |  |
+| `SuplrEvalUserDfndCritraCrtnDte` |  | |  |  |  |  |
+| `SuplrEvalUsrDfndCritraChgdBy` |  | |  |  |  |  |
+| `SuplrEvalUserDfndCritraChgDate` |  | |  |  |  |  |
+| `TotNmbrOfSuplrUsrDfndCritra` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `SuplrEvalUsrCritraCommentText` |  | |  |  |  |  |
+| `SupplierAccountGroup` |  | |  |  |  |  |
+| `SuplrEvalUsrCritraChgDteTme` |  | |  |  |  |  |
+| `_CreatedBy` | | ✓ | | | | |
+| `_LastChangedBy` | | ✓ | | | | |
+| `_MatGroup` | | ✓ | | | | |
+| `_StatusVH` | | ✓ | | | | |
+| `_SuplrEvalUserDfndCriteria` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Source Code
 

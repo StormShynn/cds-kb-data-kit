@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DSD_TourNumber` | ✓ | | `_Documents` | `tour_id` |
-| `DSD_RouteAccountingVisitNumber` | ✓ | | `_Documents` | `visit_id` |
-| `DSD_CancellationDocumentType` | ✓ | | `_Documents` | `doc_type` |
-| `DSD_ExtDeliveryOrOrderNumber` | ✓ | | `_Documents` | `hh_ref_no` |
-| `DSD_ExtDocSequentialNumber` | ✓ | | `_Documents` | `counter` |
-| `SDDocument` |  | | `_Documents` | `be_vbeln` |
-| `Plant` |  | | `_Header` | `plant` |
-| `_CancellationDocumentType` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DSD_TourNumber` | ✓ | | `_Documents` | `tour_id` |  |  |
+| `DSD_RouteAccountingVisitNumber` | ✓ | | `_Documents` | `visit_id` |  |  |
+| `DSD_CancellationDocumentType` | ✓ | | `_Documents` | `doc_type` |  |  |
+| `DSD_ExtDeliveryOrOrderNumber` | ✓ | | `_Documents` | `hh_ref_no` |  |  |
+| `DSD_ExtDocSequentialNumber` | ✓ | | `_Documents` | `counter` |  |  |
+| `SDDocument` |  | | `_Documents` | `be_vbeln` |  |  |
+| `Plant` |  | | `_Header` | `plant` |  |  |
+| `_CancellationDocumentType` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
 
 ## Associations
 

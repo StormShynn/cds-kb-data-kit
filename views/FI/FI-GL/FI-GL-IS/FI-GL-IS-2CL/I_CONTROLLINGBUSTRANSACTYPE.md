@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessTransactionType` | ✓ | |  | `vrgng` |
-| `ControllingValueClassification` |  | |  | `psikz` |
-| `ControllingValueCategory` |  | |  | `wtkat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransactionType` | ✓ | |  | `vrgng` |  |  |
+| `ControllingValueClassification` |  | |  | `psikz` |  |  |
+| `ControllingValueCategory` |  | |  | `wtkat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  |  |
-| `CharcPositionNumber` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `TimeIntervalNumber` |  | |  |  |
-| `CharcInternalID` |  | |  |  |
-| `OverwrittenCharcInternalID` |  | |  |  |
-| `ClfnOrganizationalArea` |  | |  |  |
-| `ClassType` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `CharcOriginText` |  | |  |  |
-| `CharcIsProposalRelevant` |  | |  |  |
-| `CharcIsPrptnOrProdUnitRelevant` |  | |  |  |
-| `CharcIsPrintRelevant` |  | |  |  |
-| `CharcIsSearchRelevant` |  | |  |  |
-| `CharcIsDisplayRelevant` |  | |  |  |
-| `_Class` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassInternalID` | ✓ | |  |  |  |  |
+| `CharcPositionNumber` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `TimeIntervalNumber` |  | |  |  |  |  |
+| `CharcInternalID` |  | |  |  |  |  |
+| `OverwrittenCharcInternalID` |  | |  |  |  |  |
+| `ClfnOrganizationalArea` |  | |  |  |  |  |
+| `ClassType` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `CharcOriginText` |  | |  |  |  |  |
+| `CharcIsProposalRelevant` |  | |  |  |  |  |
+| `CharcIsPrptnOrProdUnitRelevant` |  | |  |  |  |  |
+| `CharcIsPrintRelevant` |  | |  |  |  |  |
+| `CharcIsSearchRelevant` |  | |  |  |  |  |
+| `CharcIsDisplayRelevant` |  | |  |  |  |  |
+| `_Class` | | ✓ | | | | |
 
 ## Associations
 

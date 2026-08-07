@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `trkorr` |  | |  | `key TransportRequestID : trkorr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `trkorr` |  | |  | `[ { entity.name : 'C_OpenCustomizingRequestVH', entity.element : 'TransportRequestID', label : 'Select Customizing Transport Request' } ] @EndUserText.label: 'Customizing Transport Request' key TransportRequestID : trkorr` |  |  |
 
 ## Source Code
 

@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateUsableObjectUUID` | ✓ | |  |  |
-| `REObjectAssignmentType` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `RealEstateContract` | ✓ | |  |  |
-| `ValidityStartEndDateValue` | ✓ | |  |  |
-| `REStatusObjectSource` |  | |  |  |
-| `REStatusObjectTarget` |  | |  |  |
-| `ValidityStartDate` |  | |  | `cast( coalesce(ValidityStartDate, '00000000') as rebdvdmvalidfrom )` |
-| `ValidityEndDate` |  | |  | `cast( coalesce(ValidityEndDate, '99991231') as rebdvdmvalidto )` |
-| `REOnlyInfoAssgmt` |  | |  |  |
-| `REStatusObjectSourceIsArchived` |  | |  |  |
-| `REObjectPossessionStartDate` |  | |  |  |
-| `REObjectPossessionEndDate` |  | |  |  |
-| `_REUsableObject` | | ✓ | | |
-| `_REContract` | | ✓ | | |
-| `_REObjectAssignmentType` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateUsableObjectUUID` | ✓ | |  |  |  |  |
+| `REObjectAssignmentType` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `RealEstateContract` | ✓ | |  |  |  |  |
+| `ValidityStartEndDateValue` | ✓ | |  |  |  |  |
+| `REStatusObjectSource` |  | |  |  |  |  |
+| `REStatusObjectTarget` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  | `cast( coalesce(ValidityStartDate, '00000000') as rebdvdmvalidfrom )` |  |  |
+| `ValidityEndDate` |  | |  | `cast( coalesce(ValidityEndDate, '99991231') as rebdvdmvalidto )` |  |  |
+| `REOnlyInfoAssgmt` |  | |  |  |  |  |
+| `REStatusObjectSourceIsArchived` |  | |  |  |  |  |
+| `REObjectPossessionStartDate` |  | |  |  |  |  |
+| `REObjectPossessionEndDate` |  | |  |  |  |  |
+| `_REUsableObject` | | ✓ | | | | |
+| `_REContract` | | ✓ | | | | |
+| `_REObjectAssignmentType` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

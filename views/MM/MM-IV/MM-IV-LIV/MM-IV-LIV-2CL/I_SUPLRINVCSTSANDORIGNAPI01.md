@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | | `_SupplierInvoiceStsAndOrign` | `SupplierInvoice` |
-| `FiscalYear` | ✓ | | `_SupplierInvoiceStsAndOrign` | `FiscalYear` |
-| `InvoiceStatusAndOrigin` |  | | `_SupplierInvoiceStsAndOrign` | `InvoiceStatusAndOrigin` |
-| `_SupplierInvoiceAPI01` | | ✓ | | |
-| `_SuplrInvcStsOrignTxtAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | | `_SupplierInvoiceStsAndOrign` | `SupplierInvoice` |  |  |
+| `FiscalYear` | ✓ | | `_SupplierInvoiceStsAndOrign` | `FiscalYear` |  |  |
+| `InvoiceStatusAndOrigin` |  | | `_SupplierInvoiceStsAndOrign` | `InvoiceStatusAndOrigin` |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | | | |
+| `_SuplrInvcStsOrignTxtAPI01` | | ✓ | | | | |
 
 ## Associations
 

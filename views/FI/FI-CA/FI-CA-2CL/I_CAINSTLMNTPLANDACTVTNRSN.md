@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInstlmntPlanDactvtnRsn` | ✓ | |  | `deagd` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInstlmntPlanDactvtnRsn` | ✓ | |  | `deagd` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

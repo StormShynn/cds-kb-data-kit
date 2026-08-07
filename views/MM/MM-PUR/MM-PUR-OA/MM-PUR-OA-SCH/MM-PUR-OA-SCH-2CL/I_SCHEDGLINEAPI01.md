@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `SchedLineStscDeliveryDate` |  | |  |  |
-| `ScheduleLineDeliveryTime` |  | |  |  |
-| `OrderQuantityUnit` |  | | `_SchedgAgrmtItm` | `OrderQuantityUnit` |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `RoughGoodsReceiptQty` |  | |  |  |
-| `ScheduleLineIsFixed` |  | |  |  |
-| `NoOfRemindersOfScheduleLine` |  | |  |  |
-| `PrevDelivQtyOfScheduleLine` |  | |  |  |
-| `SourceOfCreation` |  | |  |  |
-| `_SchedgagrmthdrApi01` | | ✓ | | |
-| `_SchedgAgrmtItmApi01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | | `_SchedgAgrmtItm` | `OrderQuantityUnit` |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |  |  |
+| `ScheduleLineIsFixed` |  | |  |  |  |  |
+| `NoOfRemindersOfScheduleLine` |  | |  |  |  |  |
+| `PrevDelivQtyOfScheduleLine` |  | |  |  |  |  |
+| `SourceOfCreation` |  | |  |  |  |  |
+| `_SchedgagrmthdrApi01` | | ✓ | | | | |
+| `_SchedgAgrmtItmApi01` | | ✓ | | | | |
 
 ## Associations
 

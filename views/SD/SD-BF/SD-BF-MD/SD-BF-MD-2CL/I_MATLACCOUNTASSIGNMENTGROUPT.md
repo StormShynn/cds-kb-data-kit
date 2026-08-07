@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MatlAccountAssignmentGroup` | ✓ | |  | `ktgrm` |
-| `Language` | ✓ | |  | `spras` |
-| `MatlAccountAssignmentGroupName` |  | |  | `vtext` |
-| `_MatlAccountAssignmentGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MatlAccountAssignmentGroup` | ✓ | |  | `ktgrm` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MatlAccountAssignmentGroupName` |  | |  | `vtext` |  |  |
+| `_MatlAccountAssignmentGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

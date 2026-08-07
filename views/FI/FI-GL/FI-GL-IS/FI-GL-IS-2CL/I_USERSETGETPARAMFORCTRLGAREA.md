@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessUser` | ✓ | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CtrlgStdFinStatementVersion` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessUser` | ✓ | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CtrlgStdFinStatementVersion` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
 
 ## Source Code
 

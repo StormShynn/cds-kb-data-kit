@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGDataQualityCharacteristic` | ✓ | |  | `cast( dd07l.domvalue_l as sufnd_vdm_ghgdtaqltycharc )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGDataQualityCharacteristic` | ✓ | |  | `cast( dd07l.domvalue_l as sufnd_vdm_ghgdtaqltycharc )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

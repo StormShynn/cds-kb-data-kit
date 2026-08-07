@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerMaterialItemUsage` | ✓ | |  | `vwpos` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerMaterialItemUsage` | ✓ | |  | `vwpos` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

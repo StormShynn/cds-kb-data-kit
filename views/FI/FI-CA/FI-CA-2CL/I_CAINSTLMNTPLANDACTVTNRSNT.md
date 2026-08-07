@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInstlmntPlanDactvtnRsn` | ✓ | |  | `deagd` |
-| `Language` | ✓ | |  | `spras` |
-| `CAInstlmntPlanDactvtnRsnName` |  | |  | `rpctxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInstlmntPlanDactvtnRsn` | ✓ | |  | `deagd` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAInstlmntPlanDactvtnRsnName` |  | |  | `rpctxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

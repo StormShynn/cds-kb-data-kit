@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ConditionUsage` | ✓ | |  | `kvewe` |
-| `ConditionApplication` | ✓ | |  | `kappl` |
-| `ConditionType` | ✓ | |  | `kschl` |
-| `ConditionTypeName` |  | |  | `cast(vtext as vtxtm )` |
-| `_ConditionApplication` | | ✓ | | |
-| `_ConditionUsage` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ConditionUsage` | ✓ | |  | `kvewe` |  |  |
+| `ConditionApplication` | ✓ | |  | `kappl` |  |  |
+| `ConditionType` | ✓ | |  | `kschl` |  |  |
+| `ConditionTypeName` |  | |  | `cast(vtext as vtxtm )` |  |  |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_ConditionUsage` | | ✓ | | | | |
 
 ## Associations
 

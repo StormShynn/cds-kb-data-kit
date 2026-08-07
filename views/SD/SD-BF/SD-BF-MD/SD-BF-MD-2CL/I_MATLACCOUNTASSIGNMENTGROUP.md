@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MatlAccountAssignmentGroup` | ✓ | |  | `ktgrm` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MatlAccountAssignmentGroup` | ✓ | |  | `ktgrm` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

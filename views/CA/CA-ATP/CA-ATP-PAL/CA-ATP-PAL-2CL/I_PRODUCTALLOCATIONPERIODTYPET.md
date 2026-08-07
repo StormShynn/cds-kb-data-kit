@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductAllocationPeriodType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as productallocationperiodtype preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `ProdAllocationPeriodTypeDesc` |  | |  | `cast( ddtext as prodallocationperiodtypedesc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_ProductAllocationPeriodType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductAllocationPeriodType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as productallocationperiodtype preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `ProdAllocationPeriodTypeDesc` |  | |  | `cast( ddtext as prodallocationperiodtypedesc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ProductAllocationPeriodType` | | ✓ | | | | |
 
 ## Associations
 

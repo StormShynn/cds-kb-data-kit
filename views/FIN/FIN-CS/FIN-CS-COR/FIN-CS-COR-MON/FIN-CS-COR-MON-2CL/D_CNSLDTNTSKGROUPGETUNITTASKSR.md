@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationTaskGroup` |  | |  | `fincs_taskgroup` |
-| `ConsolidationTask` |  | |  | `fincs_tsk` |
-| `ConsolidationTaskText` |  | |  | `fincs_task_txt` |
-| `ConsolidationTaskCategory` |  | |  | `fincs_taskcategory` |
-| `ConsolidationTaskCategoryText` |  | |  | `fincs_description_text_60` |
-| `CnsldtnTskIsBlkdAutomatically` |  | |  | `fincs_task_blockauto` |
-| `ConsolidationTaskIsMilestone` |  | |  | `fincs_task_milestone` |
-| `ConsolidationTaskSequenceValue` |  | |  | `fincs_task_sequence` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationTaskGroup` |  | |  | `fincs_taskgroup` |  |  |
+| `ConsolidationTask` |  | |  | `fincs_tsk` |  |  |
+| `ConsolidationTaskText` |  | |  | `fincs_task_txt` |  |  |
+| `ConsolidationTaskCategory` |  | |  | `fincs_taskcategory` |  |  |
+| `ConsolidationTaskCategoryText` |  | |  | `fincs_description_text_60` |  |  |
+| `CnsldtnTskIsBlkdAutomatically` |  | |  | `fincs_task_blockauto` |  |  |
+| `ConsolidationTaskIsMilestone` |  | |  | `fincs_task_milestone` |  |  |
+| `ConsolidationTaskSequenceValue` |  | |  | `fincs_task_sequence` |  |  |
 
 ## Source Code
 

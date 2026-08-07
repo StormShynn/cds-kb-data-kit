@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContactPersonFunction` | ✓ | |  | `pafkt` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContactPersonFunction` | ✓ | |  | `pafkt` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

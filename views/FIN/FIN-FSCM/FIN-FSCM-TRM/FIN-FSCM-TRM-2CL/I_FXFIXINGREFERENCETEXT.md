@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ForeignExchangeFixingReference` | ✓ | |  | `fix_id` |
-| `FXFixingReferenceName` |  | |  | `fix_id_text` |
-| `_Language` | | ✓ | | |
-| `_FixingReference` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ForeignExchangeFixingReference` | ✓ | |  | `fix_id` |  |  |
+| `FXFixingReferenceName` |  | |  | `fix_id_text` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FixingReference` | | ✓ | | | | |
 
 ## Associations
 

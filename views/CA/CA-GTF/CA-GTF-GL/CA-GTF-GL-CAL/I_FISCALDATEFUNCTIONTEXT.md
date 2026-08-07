@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DateFunction` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `DateFunctionName` |  | |  |  |
-| `DateFunctionDescription` |  | |  |  |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DateFunction` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `DateFunctionName` |  | |  |  |  |  |
+| `DateFunctionDescription` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

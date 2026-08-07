@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |
-| `CAInvcgDocOffsettingItem` | ✓ | |  | `invdocoitem` |
-| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |
-| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` |
-| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |
-| `CAInvcgOffsettingGroup` |  | |  | `offset_invgr` |
-| `CAInvcgOffsettingStatus` |  | |  | `offset_status` |
-| `CAContract` |  | |  | `vtref` |
-| `CAProviderContractItemNumber` |  | |  | `vtpos` |
-| `CASubApplication` |  | |  | `subap` |
-| `CAInvcgDocumentReqd` |  | |  | `invdocno_req` |
-| `CAItemReqdPeriodStartDate` |  | |  | `date_from_req` |
-| `CAItemReqdPeriodEndDate` |  | |  | `date_to_req` |
-| `CADocumentNumberReqd` |  | |  | `cast(opbel_req as opbel_gfn_kk preserving type )` |
-| `CARepetitionItemNumberReqd` |  | |  | `opupw_req` |
-| `CABusinessPartnerItemNmbrReqd` |  | |  | `opupk_req` |
-| `_CAInvcgDocHeader` | | ✓ | | |
-| `_CAInvcgOffsettingCategory` | | ✓ | | |
-| `_CAInvcgOffsettingProcedure` | | ✓ | | |
-| `_CAInvcgOffsettingStatus` | | ✓ | | |
-| `_CASubApplication` | | ✓ | | |
-| `_CAInvcgDocumentReqd` | | ✓ | | |
-| `_CADocumentNumberReqd` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
+| `CAInvcgDocOffsettingItem` | ✓ | |  | `invdocoitem` |  |  |
+| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |  |  |
+| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` |  |  |
+| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |  |  |
+| `CAInvcgOffsettingGroup` |  | |  | `offset_invgr` |  |  |
+| `CAInvcgOffsettingStatus` |  | |  | `offset_status` |  |  |
+| `CAContract` |  | |  | `vtref` |  |  |
+| `CAProviderContractItemNumber` |  | |  | `vtpos` |  |  |
+| `CASubApplication` |  | |  | `subap` |  |  |
+| `CAInvcgDocumentReqd` |  | |  | `invdocno_req` |  |  |
+| `CAItemReqdPeriodStartDate` |  | |  | `date_from_req` |  |  |
+| `CAItemReqdPeriodEndDate` |  | |  | `date_to_req` |  |  |
+| `CADocumentNumberReqd` |  | |  | `cast(opbel_req as opbel_gfn_kk preserving type )` |  |  |
+| `CARepetitionItemNumberReqd` |  | |  | `opupw_req` |  |  |
+| `CABusinessPartnerItemNmbrReqd` |  | |  | `opupk_req` |  |  |
+| `_CAInvcgDocHeader` | | ✓ | | | | |
+| `_CAInvcgOffsettingCategory` | | ✓ | | | | |
+| `_CAInvcgOffsettingProcedure` | | ✓ | | | | |
+| `_CAInvcgOffsettingStatus` | | ✓ | | | | |
+| `_CASubApplication` | | ✓ | | | | |
+| `_CAInvcgDocumentReqd` | | ✓ | | | | |
+| `_CADocumentNumberReqd` | | ✓ | | | | |
 
 ## Associations
 

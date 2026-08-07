@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusPartnerAddlLockExstcCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as bpl_xaddl_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CABusPrtnAddlLockExstcCodeText` |  | |  | `cast( ddtext as bpl_xaddl_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusPartnerAddlLockExstcCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as bpl_xaddl_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CABusPrtnAddlLockExstcCodeText` |  | |  | `cast( ddtext as bpl_xaddl_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

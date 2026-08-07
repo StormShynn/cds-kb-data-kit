@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostingType` | ✓ | |  | `kalka` |
-| `ControllingValuationType` |  | |  | `valuation` |
-| `CostingReferenceObject` |  | |  | `bzobj` |
-| `Ledger` |  | |  | `rldnr` |
-| `_CostingTypeText` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_ValuationViewText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostingType` | ✓ | |  | `kalka` |  |  |
+| `ControllingValuationType` |  | |  | `valuation` |  |  |
+| `CostingReferenceObject` |  | |  | `bzobj` |  |  |
+| `Ledger` |  | |  | `rldnr` |  |  |
+| `_CostingTypeText` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_ValuationViewText` | | ✓ | | | | |
 
 ## Associations
 

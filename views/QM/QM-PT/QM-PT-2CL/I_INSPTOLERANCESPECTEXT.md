@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspToleranceSpecification` | ✓ | |  | `toleranzsl` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspToleranceSpecificationText` |  | |  | `kurztext` |
-| `_Language` | | ✓ | | |
-| `_InspToleranceSpecification` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspToleranceSpecification` | ✓ | |  | `toleranzsl` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspToleranceSpecificationText` |  | |  | `kurztext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspToleranceSpecification` | | ✓ | | | | |
 
 ## Associations
 

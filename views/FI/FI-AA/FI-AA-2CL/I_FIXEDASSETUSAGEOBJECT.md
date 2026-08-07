@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |
-| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |
-| `FixedAssetUsageObjectDesc` |  | |  | `description` |
-| `BaseUnit` |  | |  | `base_uom` |
-| `FixedAssetUsageObjLfcycSts` |  | |  | `lifecycle_status` |
-| `CreationDateTime` |  | |  | `creation_datetime` |
-| `CreatedByUser` |  | |  | `creation_user` |
-| `LastChangeDateTime` |  | |  | `lastchange_datetime` |
-| `LastChangedByUser` |  | |  | `lastchange_user` |
-| `DraftLastChangedDateTime` |  | |  | `draft_lastchange_datetime` |
-| `_UsageObjectPeriod` | | ✓ | | |
-| `_UsageObjectTotal` | | ✓ | | |
-| `_UsageObjectWhereUsd` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_UsageObjectLifecycleStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |  |  |
+| `FixedAssetUsageObjectDesc` |  | |  | `description` |  |  |
+| `BaseUnit` |  | |  | `base_uom` |  |  |
+| `FixedAssetUsageObjLfcycSts` |  | |  | `lifecycle_status` |  |  |
+| `CreationDateTime` |  | |  | `creation_datetime` |  |  |
+| `CreatedByUser` |  | |  | `creation_user` |  |  |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` |  |  |
+| `LastChangedByUser` |  | |  | `lastchange_user` |  |  |
+| `DraftLastChangedDateTime` |  | |  | `draft_lastchange_datetime` |  |  |
+| `_UsageObjectPeriod` | | ✓ | | | | |
+| `_UsageObjectTotal` | | ✓ | | | | |
+| `_UsageObjectWhereUsd` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_UsageObjectLifecycleStatus` | | ✓ | | | | |
 
 ## Associations
 

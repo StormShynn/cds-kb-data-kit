@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'ISLSPRCGCNDNRECD'` |  | |  | `sqlViewName: 'ISLSPRCGCNDNRECD'` |
-| `true` |  | |  | `compiler.compareFilter: true` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'ISLSPRCGCNDNRECD'` |  | |  | `sqlViewName: 'ISLSPRCGCNDNRECD'` |  |  |
+| `true` |  | |  | `compiler.compareFilter: true` |  |  |
 
 ## Source Code
 

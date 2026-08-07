@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MktDataBasisSpreadID` | ✓ | |  | `cast( BasisSpreadID.bsprd_id as ftr_mdm_mkt_data_bsprd_id preserving type )` |
-| `TextDescription` |  | |  | `text_long` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MktDataBasisSpreadID` | ✓ | |  | `cast( BasisSpreadID.bsprd_id as ftr_mdm_mkt_data_bsprd_id preserving type )` |  |  |
+| `TextDescription` |  | |  | `text_long` |  |  |
 
 ## Source Code
 

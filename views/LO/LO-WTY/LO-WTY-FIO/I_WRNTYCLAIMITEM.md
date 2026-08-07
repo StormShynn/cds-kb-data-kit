@@ -28,54 +28,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyItemUUID` | ✓ | |  | `pvguid` |
-| `WrntyVersionUUID` |  | |  | `version_guid` |
-| `WarrantyClaimItemNumber` |  | |  | `posnr` |
-| `WrntyControllingItemType` |  | |  | `poskt` |
-| `WarrantyItemType` |  | |  | `poskt_cust` |
-| `WarrantyClaimItemDefectCode` |  | |  | `defct` |
-| `WarrantyItemKey` |  | |  | `itmno` |
-| `WrntyClaimQuantity` |  | |  | `quant` |
-| `QuantityUnit` |  | |  | `meinh` |
-| `WrntyCurrencyCode` |  | |  | `cast (_WrntyClaimVersion.WrntyCurrencyCode as wty_crncy preserving type )` |
-| `WarrantyClaimItemDecisionCode` |  | |  | `rejcd` |
-| `WrntyReturnPartsFrmCustStatus` |  | |  | `retpa` |
-| `WrntyClmPartsIsCausingDamage` |  | |  | `causp` |
-| `WrntyClaimItemShortText` |  | |  | `pvtxt` |
-| `WrntyClaimantClaimAmount` |  | |  | `valic` |
-| `WrntyReimburserClaimAmount` |  | |  | `valov` |
-| `WrntyReimburseApprovedAmount` |  | |  | `valiv` |
-| `WrntyClaimedApprovedAmount` |  | |  | `valoc` |
-| `Material` |  | |  | `matnr` |
-| `WrntyReturnPartsToSuplrStatus` |  | |  | `retpa_v` |
-| `WarrantyClaimItemTaxCode` |  | |  | `tax_code` |
-| `WrntyItemCustRetPartsDate` |  | |  | `retpa_date` |
-| `WrntyItemSuplrRetPartsDate` |  | |  | `retpa_date_v` |
-| `WrntyItmCustRetPartsDelivDate` |  | |  | `retpa_delv_date` |
-| `WrntyItmSuplrRetPartsDelivDate` |  | |  | `retpa_delv_date_v` |
-| `WarrantyClaimCatalog` |  | |  | `wrntycatalog_id` |
-| `WarrantyClaimItemPricingStatus` |  | |  | `pricing_ok` |
-| `WarrantyClaimChangeDateTime` |  | |  | `timstmp` |
-| `WrntyClaimCreationDate` |  | |  | `creadat` |
-| `CreatedByUser` |  | |  | `creaby` |
-| `WrntyClaimChangedDate` |  | |  | `chngdat` |
-| `LastChangedByUser` |  | |  | `chngby` |
-| `WrntyClaimHeaderUUID` |  | | `_WrntyClaimVersion` | `WrntyClaimHeaderUUID` |
-| `WrntyPriceExchangeRateDate` |  | | `_WrntyClaimVersion` | `WrntyPriceExchangeRateDate` |
-| `WrntyDocumentCondition` |  | | `_WrntyClaimVersion` | `WrntyDocumentCondition` |
-| `WrntyClmItmDfltCndnType` |  | |  | `case poskt when 'MAT' then case _WrntyClaimVersion.WarrantyClaimVersionCategory when 'IV' then _DfltCndnType.MatlItmCndnTypeInbFrmRmbsr when 'OV' then _DfltCndnType.MatlItmCndnTypeOutbToRmbsr when 'IC' then _DfltCndnType.MatlItmCndnTypeInbFrmClmnt when 'OC' then _DfltCndnType.MatlItmCndnTypeOutbToClmnt else'' end when 'FR' then case _WrntyClaimVersion.WarrantyClaimVersionCategory when 'IV' then _DfltCndnType.LabItmCndnTypeInbFrmRmbsr when 'OV' then _DfltCndnType.LabItmCndnTypeOutbToRmbsr when 'IC' then _DfltCndnType.LabItmCndnTypeForInbFrmClmnt when 'OC' then _DfltCndnType.LabItmCndnTypeOutbToClmnt else'' end when 'SUBL' then case _WrntyClaimVersion.WarrantyClaimVersionCategory when 'IV' then _DfltCndnType.ExtItmCndnTypeInbFrmRmbsr when 'OV' then _DfltCndnType.ExtItmCndnTypeOutbToRmbsr when 'IC' then _DfltCndnType.ExtItmCndnTypeInbFrmClmnt when 'OC' then _DfltCndnType.ExtItmCndnTypeOutbToClmnt else'' end else '' end` |
-| `_WrntyClaimVersion` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_DfltCndnType` | | ✓ | | |
-| `_ItemType` | | ✓ | | |
-| `_ItemCtrlgType` | | ✓ | | |
-| `_DecisionCode` | | ✓ | | |
-| `_SupRetPartsSts` | | ✓ | | |
-| `_CustRetPartsSts` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyItemUUID` | ✓ | |  | `pvguid` |  |  |
+| `WrntyVersionUUID` |  | |  | `version_guid` |  |  |
+| `WarrantyClaimItemNumber` |  | |  | `posnr` |  |  |
+| `WrntyControllingItemType` |  | |  | `poskt` |  |  |
+| `WarrantyItemType` |  | |  | `poskt_cust` |  |  |
+| `WarrantyClaimItemDefectCode` |  | |  | `defct` |  |  |
+| `WarrantyItemKey` |  | |  | `itmno` |  |  |
+| `WrntyClaimQuantity` |  | |  | `quant` |  |  |
+| `QuantityUnit` |  | |  | `meinh` |  |  |
+| `WrntyCurrencyCode` |  | |  | `cast (_WrntyClaimVersion.WrntyCurrencyCode as wty_crncy preserving type )` |  |  |
+| `WarrantyClaimItemDecisionCode` |  | |  | `rejcd` |  |  |
+| `WrntyReturnPartsFrmCustStatus` |  | |  | `retpa` |  |  |
+| `WrntyClmPartsIsCausingDamage` |  | |  | `causp` |  |  |
+| `WrntyClaimItemShortText` |  | |  | `pvtxt` |  |  |
+| `WrntyClaimantClaimAmount` |  | |  | `valic` |  |  |
+| `WrntyReimburserClaimAmount` |  | |  | `valov` |  |  |
+| `WrntyReimburseApprovedAmount` |  | |  | `valiv` |  |  |
+| `WrntyClaimedApprovedAmount` |  | |  | `valoc` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `WrntyReturnPartsToSuplrStatus` |  | |  | `retpa_v` |  |  |
+| `WarrantyClaimItemTaxCode` |  | |  | `tax_code` |  |  |
+| `WrntyItemCustRetPartsDate` |  | |  | `retpa_date` |  |  |
+| `WrntyItemSuplrRetPartsDate` |  | |  | `retpa_date_v` |  |  |
+| `WrntyItmCustRetPartsDelivDate` |  | |  | `retpa_delv_date` |  |  |
+| `WrntyItmSuplrRetPartsDelivDate` |  | |  | `retpa_delv_date_v` |  |  |
+| `WarrantyClaimCatalog` |  | |  | `wrntycatalog_id` |  |  |
+| `WarrantyClaimItemPricingStatus` |  | |  | `pricing_ok` |  |  |
+| `WarrantyClaimChangeDateTime` |  | |  | `timstmp` |  |  |
+| `WrntyClaimCreationDate` |  | |  | `creadat` |  |  |
+| `CreatedByUser` |  | |  | `creaby` |  |  |
+| `WrntyClaimChangedDate` |  | |  | `chngdat` |  |  |
+| `LastChangedByUser` |  | |  | `chngby` |  |  |
+| `WrntyClaimHeaderUUID` |  | | `_WrntyClaimVersion` | `WrntyClaimHeaderUUID` |  |  |
+| `WrntyPriceExchangeRateDate` |  | | `_WrntyClaimVersion` | `WrntyPriceExchangeRateDate` |  |  |
+| `WrntyDocumentCondition` |  | | `_WrntyClaimVersion` | `WrntyDocumentCondition` |  |  |
+| `WrntyClmItmDfltCndnType` |  | |  | `case poskt when 'MAT' then case _WrntyClaimVersion.WarrantyClaimVersionCategory when 'IV' then _DfltCndnType.MatlItmCndnTypeInbFrmRmbsr when 'OV' then _DfltCndnType.MatlItmCndnTypeOutbToRmbsr when 'IC' then _DfltCndnType.MatlItmCndnTypeInbFrmClmnt when 'OC' then _DfltCndnType.MatlItmCndnTypeOutbToClmnt else'' end when 'FR' then case _WrntyClaimVersion.WarrantyClaimVersionCategory when 'IV' then _DfltCndnType.LabItmCndnTypeInbFrmRmbsr when 'OV' then _DfltCndnType.LabItmCndnTypeOutbToRmbsr when 'IC' then _DfltCndnType.LabItmCndnTypeForInbFrmClmnt when 'OC' then _DfltCndnType.LabItmCndnTypeOutbToClmnt else'' end when 'SUBL' then case _WrntyClaimVersion.WarrantyClaimVersionCategory when 'IV' then _DfltCndnType.ExtItmCndnTypeInbFrmRmbsr when 'OV' then _DfltCndnType.ExtItmCndnTypeOutbToRmbsr when 'IC' then _DfltCndnType.ExtItmCndnTypeInbFrmClmnt when 'OC' then _DfltCndnType.ExtItmCndnTypeOutbToClmnt else'' end else '' end` |  |  |
+| `_WrntyClaimVersion` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_DfltCndnType` | | ✓ | | | | |
+| `_ItemType` | | ✓ | | | | |
+| `_ItemCtrlgType` | | ✓ | | | | |
+| `_DecisionCode` | | ✓ | | | | |
+| `_SupRetPartsSts` | | ✓ | | | | |
+| `_CustRetPartsSts` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
 
 ## Associations
 

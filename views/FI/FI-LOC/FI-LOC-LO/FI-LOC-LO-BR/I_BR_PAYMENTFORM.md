@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentForm` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_indpag preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentForm` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_indpag preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

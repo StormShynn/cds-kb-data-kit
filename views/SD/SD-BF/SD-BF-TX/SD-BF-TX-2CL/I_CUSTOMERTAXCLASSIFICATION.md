@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerTaxCategory` | ✓ | |  | `tatyp` |
-| `CustomerTaxClassification` | ✓ | |  | `taxkd` |
-| `_ConditionType` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerTaxCategory` | ✓ | |  | `tatyp` |  |  |
+| `CustomerTaxClassification` | ✓ | |  | `taxkd` |  |  |
+| `_ConditionType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

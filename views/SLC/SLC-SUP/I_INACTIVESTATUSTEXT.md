@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgCatIsInactive` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as /srmsmc/inactive_status preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `PurgCatIsInactiveName` |  | |  | `cast( ddtext as /srmsmc/status_descr preserving type)` |
-| `_Language` | | ✓ | | |
-| `_InactiveStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgCatIsInactive` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as /srmsmc/inactive_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `PurgCatIsInactiveName` |  | |  | `cast( ddtext as /srmsmc/status_descr preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InactiveStatus` | | ✓ | | | | |
 
 ## Associations
 

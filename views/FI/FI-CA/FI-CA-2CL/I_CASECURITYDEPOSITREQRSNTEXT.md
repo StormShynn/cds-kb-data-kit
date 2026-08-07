@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASecurityDepositRequestReason` | ✓ | |  | `reason` |
-| `Language` | ✓ | |  | `spras` |
-| `CASecurityDepositReqReasonText` |  | |  | `cast ( text as req_reason_txt_kk )` |
-| `_CASecurityDepositRequestRsn` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASecurityDepositRequestReason` | ✓ | |  | `reason` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CASecurityDepositReqReasonText` |  | |  | `cast ( text as req_reason_txt_kk )` |  |  |
+| `_CASecurityDepositRequestRsn` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

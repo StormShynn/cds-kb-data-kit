@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |
-| `AddressPersonID` | ✓ | |  |  |
-| `AddressRepresentationCode` | ✓ | |  |  |
-| `CorrespondenceLanguage` |  | | `_PersonName` | `CorrespondenceLanguage` |
-| `GivenName` |  | | `_PersonName` | `GivenName` |
-| `FamilyName` |  | | `_PersonName` | `FamilyName` |
-| `PersonBirthName` |  | | `_PersonName` | `PersonBirthName` |
-| `PersonMiddleName` |  | | `_PersonName` | `PersonMiddleName` |
-| `SecondFamilyName` |  | | `_PersonName` | `SecondFamilyName` |
-| `AcademicTitle` |  | | `_PersonName` | `AcademicTitle` |
-| `AcademicTitle2` |  | | `_PersonName` | `AcademicTitle2` |
-| `FamilyNamePrefix` |  | | `_PersonName` | `FamilyNamePrefix` |
-| `FamilyNameSecondPrefix` |  | | `_PersonName` | `FamilyNameSecondPrefix` |
-| `PersonNameSupplementCode` |  | | `_PersonName` | `PersonNameSupplementCode` |
-| `PersonNickname` |  | | `_PersonName` | `PersonNickname` |
-| `NameInitials` |  | | `_PersonName` | `NameInitials` |
-| `PersonFullName` |  | | `_PersonName` | `PersonFullName` |
-| `FormOfAddress` |  | | `_PersonName` | `FormOfAddress` |
-| `WorkplaceBuilding` |  | |  |  |
-| `WorkplaceFloor` |  | |  |  |
-| `WorkplaceRoomNumber` |  | |  |  |
-| `WorkplaceFunctionalTitleName` |  | |  |  |
-| `WorkplaceDepartmentName` |  | |  |  |
-| `WorkplacePrfrdCommMediumType` |  | |  |  |
-| `WorkplaceCorrespncShortName` |  | |  |  |
-| `WorkplaceInhouseMail` |  | |  |  |
-| `_OrganizationAddress` | | ✓ | | |
-| `_EmailAddress` | | ✓ | | |
-| `_CurrentDfltEmailAddress` | | ✓ | | |
-| `_PhoneNumber` | | ✓ | | |
-| `_CurrentDfltLandlinePhoneNmbr` | | ✓ | | |
-| `_CurrentDfltMobilePhoneNumber` | | ✓ | | |
-| `_FaxNumber` | | ✓ | | |
-| `_CurrentDfltFaxNumber` | | ✓ | | |
-| `_UniformResourceIdentifier` | | ✓ | | |
-| `_MainWebsiteURL` | | ✓ | | |
-| `_NameSupplement` | | ✓ | | |
-| `_FamilyNamePrefix` | | ✓ | | |
-| `_FamilyNameSecondPrefix` | | ✓ | | |
-| `_AcademicTitle` | | ✓ | | |
-| `_AcademicTitle2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |  |  |
+| `AddressPersonID` | ✓ | |  |  |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  |  |  |
+| `CorrespondenceLanguage` |  | | `_PersonName` | `CorrespondenceLanguage` |  |  |
+| `GivenName` |  | | `_PersonName` | `GivenName` |  |  |
+| `FamilyName` |  | | `_PersonName` | `FamilyName` |  |  |
+| `PersonBirthName` |  | | `_PersonName` | `PersonBirthName` |  |  |
+| `PersonMiddleName` |  | | `_PersonName` | `PersonMiddleName` |  |  |
+| `SecondFamilyName` |  | | `_PersonName` | `SecondFamilyName` |  |  |
+| `AcademicTitle` |  | | `_PersonName` | `AcademicTitle` |  |  |
+| `AcademicTitle2` |  | | `_PersonName` | `AcademicTitle2` |  |  |
+| `FamilyNamePrefix` |  | | `_PersonName` | `FamilyNamePrefix` |  |  |
+| `FamilyNameSecondPrefix` |  | | `_PersonName` | `FamilyNameSecondPrefix` |  |  |
+| `PersonNameSupplementCode` |  | | `_PersonName` | `PersonNameSupplementCode` |  |  |
+| `PersonNickname` |  | | `_PersonName` | `PersonNickname` |  |  |
+| `NameInitials` |  | | `_PersonName` | `NameInitials` |  |  |
+| `PersonFullName` |  | | `_PersonName` | `PersonFullName` |  |  |
+| `FormOfAddress` |  | | `_PersonName` | `FormOfAddress` |  |  |
+| `WorkplaceBuilding` |  | |  |  |  |  |
+| `WorkplaceFloor` |  | |  |  |  |  |
+| `WorkplaceRoomNumber` |  | |  |  |  |  |
+| `WorkplaceFunctionalTitleName` |  | |  |  |  |  |
+| `WorkplaceDepartmentName` |  | |  |  |  |  |
+| `WorkplacePrfrdCommMediumType` |  | |  |  |  |  |
+| `WorkplaceCorrespncShortName` |  | |  |  |  |  |
+| `WorkplaceInhouseMail` |  | |  |  |  |  |
+| `_OrganizationAddress` | | ✓ | | | | |
+| `_EmailAddress` | | ✓ | | | | |
+| `_CurrentDfltEmailAddress` | | ✓ | | | | |
+| `_PhoneNumber` | | ✓ | | | | |
+| `_CurrentDfltLandlinePhoneNmbr` | | ✓ | | | | |
+| `_CurrentDfltMobilePhoneNumber` | | ✓ | | | | |
+| `_FaxNumber` | | ✓ | | | | |
+| `_CurrentDfltFaxNumber` | | ✓ | | | | |
+| `_UniformResourceIdentifier` | | ✓ | | | | |
+| `_MainWebsiteURL` | | ✓ | | | | |
+| `_NameSupplement` | | ✓ | | | | |
+| `_FamilyNamePrefix` | | ✓ | | | | |
+| `_FamilyNameSecondPrefix` | | ✓ | | | | |
+| `_AcademicTitle` | | ✓ | | | | |
+| `_AcademicTitle2` | | ✓ | | | | |
 
 ## Associations
 

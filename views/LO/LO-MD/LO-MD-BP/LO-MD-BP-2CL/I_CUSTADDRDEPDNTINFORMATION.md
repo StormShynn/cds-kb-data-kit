@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `AddressID` | ✓ | |  | `adrnr` |
-| `ExpressTrainStationName` |  | |  | `bahne` |
-| `TrainStationName` |  | |  | `bahns` |
-| `CityCode` |  | |  | `cityc` |
-| `County` |  | |  | `counc` |
-| `CustomerHasUnloadingPoint` |  | |  | `exabl` |
-| `_Customer` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `AddressID` | ✓ | |  | `adrnr` |  |  |
+| `ExpressTrainStationName` |  | |  | `bahne` |  |  |
+| `TrainStationName` |  | |  | `bahns` |  |  |
+| `CityCode` |  | |  | `cityc` |  |  |
+| `County` |  | |  | `counc` |  |  |
+| `CustomerHasUnloadingPoint` |  | |  | `exabl` |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
 
 ## Associations
 

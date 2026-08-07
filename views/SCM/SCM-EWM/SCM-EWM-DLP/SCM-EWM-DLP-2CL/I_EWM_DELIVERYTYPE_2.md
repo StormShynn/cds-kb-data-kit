@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMDeliveryDocumentCategory` | ✓ | |  | `category` |
-| `EWMDeliveryDocumentType` | ✓ | |  | `type` |
-| `_DeliveryCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMDeliveryDocumentCategory` | ✓ | |  | `category` |  |  |
+| `EWMDeliveryDocumentType` | ✓ | |  | `type` |  |  |
+| `_DeliveryCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

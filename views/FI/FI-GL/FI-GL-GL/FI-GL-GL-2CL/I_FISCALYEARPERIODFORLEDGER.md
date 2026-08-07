@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( finsc_ld_cmp.bukrs as fis_bukrs preserving type )` |
-| `Ledger` | ✓ | |  | `cast( finsc_ld_cmp.rldnr as fis_rldnr preserving type )` |
-| `FiscalYear` | ✓ | |  |  |
-| `FiscalPeriod` | ✓ | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `FiscalPeriodStartDate` |  | |  |  |
-| `FiscalPeriodEndDate` |  | |  |  |
-| `IsSpecialPeriod` |  | |  |  |
-| `FiscalYearStartDate` |  | |  |  |
-| `FiscalYearEndDate` |  | |  |  |
-| `NextFiscalPeriod` |  | |  |  |
-| `NextFiscalPeriodFiscalYear` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `_LedgerText` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_FiscalYearForVariant` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_FiscalYearForLedger` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( finsc_ld_cmp.bukrs as fis_bukrs preserving type )` |  |  |
+| `Ledger` | ✓ | |  | `cast( finsc_ld_cmp.rldnr as fis_rldnr preserving type )` |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `FiscalPeriod` | ✓ | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `FiscalPeriodStartDate` |  | |  |  |  |  |
+| `FiscalPeriodEndDate` |  | |  |  |  |  |
+| `IsSpecialPeriod` |  | |  |  |  |  |
+| `FiscalYearStartDate` |  | |  |  |  |  |
+| `FiscalYearEndDate` |  | |  |  |  |  |
+| `NextFiscalPeriod` |  | |  |  |  |  |
+| `NextFiscalPeriodFiscalYear` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `_LedgerText` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_FiscalYearForVariant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_FiscalYearForLedger` | | ✓ | | | | |
 
 ## Associations
 

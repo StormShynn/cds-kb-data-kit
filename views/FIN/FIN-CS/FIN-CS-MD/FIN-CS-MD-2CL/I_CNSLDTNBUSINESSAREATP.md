@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessArea` | ✓ | | `_CnsldtnBusinessArea` | `BusinessArea` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnBusinessArea` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnBusinessAreaTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnBusinessAreaTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessArea` | ✓ | | `_CnsldtnBusinessArea` | `BusinessArea` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnBusinessArea` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnBusinessAreaTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnBusinessAreaTextTP` |  |  |
 
 ## Source Code
 

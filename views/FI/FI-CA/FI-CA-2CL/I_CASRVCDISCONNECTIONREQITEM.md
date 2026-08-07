@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |
-| `CADocumentNumber` | ✓ | |  | `opbel` |
-| `CARepetitionItemNumber` | ✓ | |  | `opupw` |
-| `CABPItemNumber` | ✓ | |  | `opupk` |
-| `CASubItemNumber` | ✓ | |  | `opupz` |
-| `CADunningAmount` |  | |  | `mbetm` |
-| `TransactionCurrency` |  | |  | `waers` |
-| `CADunningAmountInLocalCurrency` |  | |  | `mbetc` |
-| `LocalCurrency` |  | |  | `wersc` |
-| `_TransactionCurrency` | | ✓ | | |
-| `_LocalCurrency` | | ✓ | | |
-| `_CADocumentBPItem_2` | | ✓ | | |
-| `_CADocument_2` | | ✓ | | |
-| `_CADocumentBPItem` | | ✓ | | |
-| `_CADocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |  |  |
+| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` |  |  |
+| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
+| `CASubItemNumber` | ✓ | |  | `opupz` |  |  |
+| `CADunningAmount` |  | |  | `mbetm` |  |  |
+| `TransactionCurrency` |  | |  | `waers` |  |  |
+| `CADunningAmountInLocalCurrency` |  | |  | `mbetc` |  |  |
+| `LocalCurrency` |  | |  | `wersc` |  |  |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_LocalCurrency` | | ✓ | | | | |
+| `_CADocumentBPItem_2` | | ✓ | | | | |
+| `_CADocument_2` | | ✓ | | | | |
+| `_CADocumentBPItem` | | ✓ | | | | |
+| `_CADocument` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ExchangeRateType` | ✓ | |  | `kurst` |
-| `SourceCurrency` | ✓ | |  | `fcurr` |
-| `TargetCurrency` | ✓ | |  | `tcurr` |
-| `ValidityStartDate` | ✓ | |  | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |
-| `NumberOfSourceCurrencyUnits` |  | |  | `ffact` |
-| `NumberOfTargetCurrencyUnits` |  | |  | `tfact` |
-| `AlternativeExchangeRateType` |  | |  | `abwct` |
-| `AltvExchangeRateTypeValdtyDate` |  | |  | `abwga` |
-| `_ExchangeRateType` | | ✓ | | |
-| `_SourceCurrency` | | ✓ | | |
-| `_TargetCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExchangeRateType` | ✓ | |  | `kurst` |  |  |
+| `SourceCurrency` | ✓ | |  | `fcurr` |  |  |
+| `TargetCurrency` | ✓ | |  | `tcurr` |  |  |
+| `ValidityStartDate` | ✓ | |  | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |  |  |
+| `NumberOfSourceCurrencyUnits` |  | |  | `ffact` |  |  |
+| `NumberOfTargetCurrencyUnits` |  | |  | `tfact` |  |  |
+| `AlternativeExchangeRateType` |  | |  | `abwct` |  |  |
+| `AltvExchangeRateTypeValdtyDate` |  | |  | `abwga` |  |  |
+| `_ExchangeRateType` | | ✓ | | | | |
+| `_SourceCurrency` | | ✓ | | | | |
+| `_TargetCurrency` | | ✓ | | | | |
 
 ## Associations
 

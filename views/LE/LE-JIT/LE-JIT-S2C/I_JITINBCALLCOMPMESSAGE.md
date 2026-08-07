@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JITBackflushUUID` | ✓ | |  | `db_key` |
-| `JITHeaderUUID` |  | |  | `root_key` |
-| `JITCallComponentUUID` |  | |  | `parent_key` |
-| `JITCallCompMatlMessageType` |  | |  | `jitcallcompmatlmessagetype` |
-| `JITCallCompMatlMessageClass` |  | |  | `jitcallcompmatlmessageclass` |
-| `JITCallCompMatlMessageNumber` |  | |  | `jitcallcompmatlmessagenumber` |
-| `JITCallCompMatlMessageValue1` |  | |  | `jitcallcompmatlmessagevalue1` |
-| `JITCallCompMatlMessageValue2` |  | |  | `jitcallcompmatlmessagevalue2` |
-| `JITCallCompMatlMessageValue3` |  | |  | `jitcallcompmatlmessagevalue3` |
-| `JITCallCompMatlMessageValue4` |  | |  | `jitcallcompmatlmessagevalue4` |
-| `_JITInboundCall` | | ✓ | | |
-| `_JITSystemMessageType` | | ✓ | | |
-| `_JITInbCallComponent` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITBackflushUUID` | ✓ | |  | `db_key` |  |  |
+| `JITHeaderUUID` |  | |  | `root_key` |  |  |
+| `JITCallComponentUUID` |  | |  | `parent_key` |  |  |
+| `JITCallCompMatlMessageType` |  | |  | `jitcallcompmatlmessagetype` |  |  |
+| `JITCallCompMatlMessageClass` |  | |  | `jitcallcompmatlmessageclass` |  |  |
+| `JITCallCompMatlMessageNumber` |  | |  | `jitcallcompmatlmessagenumber` |  |  |
+| `JITCallCompMatlMessageValue1` |  | |  | `jitcallcompmatlmessagevalue1` |  |  |
+| `JITCallCompMatlMessageValue2` |  | |  | `jitcallcompmatlmessagevalue2` |  |  |
+| `JITCallCompMatlMessageValue3` |  | |  | `jitcallcompmatlmessagevalue3` |  |  |
+| `JITCallCompMatlMessageValue4` |  | |  | `jitcallcompmatlmessagevalue4` |  |  |
+| `_JITInboundCall` | | ✓ | | | | |
+| `_JITSystemMessageType` | | ✓ | | | | |
+| `_JITInbCallComponent` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InventoryValuationType` | ✓ | |  |  |
-| `AcctCategoryRef` |  | |  |  |
-| `InternalPurchasingRule` |  | |  |  |
-| `ExternalPurchasingRule` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InventoryValuationType` | ✓ | |  |  |  |  |
+| `AcctCategoryRef` |  | |  |  |  |  |
+| `InternalPurchasingRule` |  | |  |  |  |  |
+| `ExternalPurchasingRule` |  | |  |  |  |  |
 
 ## Source Code
 

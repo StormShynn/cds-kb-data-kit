@@ -27,23 +27,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustMgmtObjectType` | ✓ | |  | `objtype_h` |
-| `CustMgmtDocument` | ✓ | |  | `object_id` |
-| `CustMgmtDocumentItem` | ✓ | |  | `number_int` |
-| `CustMgmtPartnerFunction` | ✓ | |  | `partner_fct` |
-| `CustMgmtPartner` | ✓ | |  | `partner_no` |
-| `CustMgmtPartnerNumberType` | ✓ | |  | `no_type` |
-| `CustMgmtPartFunctionCategory` |  | |  | `partner_pft` |
-| `CustMgmtBusinessPartner` |  | |  | `partner_id` |
-| `CustMgmtPartnerIsMainPartner` |  | |  | `mainpartner` |
-| `AddressID` |  | |  | `addr_nr` |
-| `AddressPersonID` |  | |  | `addr_np` |
-| `AddressObjectType` |  | |  | `addr_type` |
-| `_CustMgmtObjectType` | | ✓ | | |
-| `_PartnerFunction` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtObjectType` | ✓ | |  | `objtype_h` |  |  |
+| `CustMgmtDocument` | ✓ | |  | `object_id` |  |  |
+| `CustMgmtDocumentItem` | ✓ | |  | `number_int` |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  | `partner_fct` |  |  |
+| `CustMgmtPartner` | ✓ | |  | `partner_no` |  |  |
+| `CustMgmtPartnerNumberType` | ✓ | |  | `no_type` |  |  |
+| `CustMgmtPartFunctionCategory` |  | |  | `partner_pft` |  |  |
+| `CustMgmtBusinessPartner` |  | |  | `partner_id` |  |  |
+| `CustMgmtPartnerIsMainPartner` |  | |  | `mainpartner` |  |  |
+| `AddressID` |  | |  | `addr_nr` |  |  |
+| `AddressPersonID` |  | |  | `addr_np` |  |  |
+| `AddressObjectType` |  | |  | `addr_type` |  |  |
+| `_CustMgmtObjectType` | | ✓ | | | | |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

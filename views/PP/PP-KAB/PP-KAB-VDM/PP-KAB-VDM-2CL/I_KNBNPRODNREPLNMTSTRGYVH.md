@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InHouseProductionReplnmtStrgy` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InHouseProductionReplnmtStrgy` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Source Code
 

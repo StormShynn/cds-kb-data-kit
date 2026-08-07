@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_ICMSBaseDetn` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_icms_base_det preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_ICMSBaseDetn` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_icms_base_det preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjElmntDeliverableUUID` | ✓ | |  |  |
-| `ProjectElementUUID` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `EntProjElmntDeliverableType` |  | |  |  |
-| `EntProjElmntDlvbrlQuantity` |  | |  |  |
-| `EntProjElmntDlvbrlQuantityUnit` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EntProjElmntDlvDistr` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntDeliverableUUID` | ✓ | |  |  |  |  |
+| `ProjectElementUUID` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `EntProjElmntDeliverableType` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlQuantity` |  | |  |  |  |  |
+| `EntProjElmntDlvbrlQuantityUnit` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EntProjElmntDlvDistr` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `MRPArea` | ✓ | |  |  |
-| `PlndIndepRqmtType` | ✓ | |  |  |
-| `PlndIndepRqmtVersion` | ✓ | |  |  |
-| `RequirementPlan` | ✓ | |  |  |
-| `RequirementSegment` | ✓ | |  |  |
-| `RequirementPlanIsExternal` |  | |  |  |
-| `PlndIndepRqmtInternalID` |  | |  |  |
-| `PlndIndepRqmtIsActive` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `PlndIndepRqmtAcctAssgmtCat` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `ConsumptionPosting` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |
-| `PlndIndepRqmtOwningApplication` |  | |  |  |
-| `PlndIndepRqmtLastChgdDateTime` |  | |  |  |
-| `_PlndIndepRqmtItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `MRPArea` | ✓ | |  |  |  |  |
+| `PlndIndepRqmtType` | ✓ | |  |  |  |  |
+| `PlndIndepRqmtVersion` | ✓ | |  |  |  |  |
+| `RequirementPlan` | ✓ | |  |  |  |  |
+| `RequirementSegment` | ✓ | |  |  |  |  |
+| `RequirementPlanIsExternal` |  | |  |  |  |  |
+| `PlndIndepRqmtInternalID` |  | |  |  |  |  |
+| `PlndIndepRqmtIsActive` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `PlndIndepRqmtAcctAssgmtCat` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `ConsumptionPosting` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |  |  |
+| `PlndIndepRqmtOwningApplication` |  | |  |  |  |  |
+| `PlndIndepRqmtLastChgdDateTime` |  | |  |  |  |  |
+| `_PlndIndepRqmtItem` | | ✓ | | | | |
 
 ## Source Code
 

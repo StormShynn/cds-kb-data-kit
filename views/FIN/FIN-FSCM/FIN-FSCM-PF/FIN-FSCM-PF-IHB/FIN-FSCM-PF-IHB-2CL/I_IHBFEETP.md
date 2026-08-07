@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IHBAcctFeeUUID` | ✓ | |  |  |
-| `IHBObjectUUID` |  | |  |  |
-| `IHBAcctFeeRefUUID` |  | |  |  |
-| `IHBAcctFeeType` |  | |  |  |
-| `IHBAcctFeeIsScaleFlag` |  | |  |  |
-| `IHBAcctFeeScaleType` |  | |  |  |
-| `IHBAcctFeeAmount` |  | |  |  |
-| `IHBAcctFeeCurrency` |  | |  |  |
-| `IHBAcctFeeValidFromDate` |  | |  |  |
-| `IHBAcctFeeValidToDate` |  | |  |  |
-| `IHBObjectTotalChangedDateTime` |  | |  |  |
-| `IHBObjectCreatedDateTime` |  | |  |  |
-| `IHBObjectCreatedByUser` |  | |  |  |
-| `IHBObjectChangedDateTime` |  | |  |  |
-| `IHBObjectChangedByUser` |  | |  |  |
-| `_IHBFeeDetailTP` | | ✓ | | |
-| `_IHBFeeScaleType` | | ✓ | | |
-| `_IHBFeeType` | | ✓ | | |
-| `_IHBMasterDataObjectTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IHBAcctFeeUUID` | ✓ | |  |  |  |  |
+| `IHBObjectUUID` |  | |  |  |  |  |
+| `IHBAcctFeeRefUUID` |  | |  |  |  |  |
+| `IHBAcctFeeType` |  | |  |  |  |  |
+| `IHBAcctFeeIsScaleFlag` |  | |  |  |  |  |
+| `IHBAcctFeeScaleType` |  | |  |  |  |  |
+| `IHBAcctFeeAmount` |  | |  |  |  |  |
+| `IHBAcctFeeCurrency` |  | |  |  |  |  |
+| `IHBAcctFeeValidFromDate` |  | |  |  |  |  |
+| `IHBAcctFeeValidToDate` |  | |  |  |  |  |
+| `IHBObjectTotalChangedDateTime` |  | |  |  |  |  |
+| `IHBObjectCreatedDateTime` |  | |  |  |  |  |
+| `IHBObjectCreatedByUser` |  | |  |  |  |  |
+| `IHBObjectChangedDateTime` |  | |  |  |  |  |
+| `IHBObjectChangedByUser` |  | |  |  |  |  |
+| `_IHBFeeDetailTP` | | ✓ | | | | |
+| `_IHBFeeScaleType` | | ✓ | | | | |
+| `_IHBFeeType` | | ✓ | | | | |
+| `_IHBMasterDataObjectTP` | | ✓ | | | | |
 
 ## Source Code
 

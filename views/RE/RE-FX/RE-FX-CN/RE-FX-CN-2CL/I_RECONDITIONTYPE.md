@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REConditionType` | ✓ | |  | `condtype` |
-| `REConditionAttribute` |  | |  | `condprop` |
-| `REFlowType` |  | |  | `flowtype` |
-| `RECalculationRule` |  | |  | `calcruleext` |
-| `RECalculationRuleParam1` |  | |  | `calcrulepara1` |
-| `RECalculationRuleParam2` |  | |  | `calcrulepara2` |
-| `REDistributionRule` |  | |  | `distruleext` |
-| `REDistributionRuleParam1` |  | |  | `distrulepara1` |
-| `REDistributionRuleParam2` |  | |  | `distrulepara2` |
-| `REAdvancePaytIsPostedAsRevenue` |  | |  | `bookasrevenue` |
-| `REUnitPrice` |  | |  | `unitprice` |
-| `_REConditionAttribute` | | ✓ | | |
-| `_REFlowType` | | ✓ | | |
-| `_RECndnCalculationRuleExt` | | ✓ | | |
-| `_RECndnDistributionRuleExt` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REConditionType` | ✓ | |  | `condtype` |  |  |
+| `REConditionAttribute` |  | |  | `condprop` |  |  |
+| `REFlowType` |  | |  | `flowtype` |  |  |
+| `RECalculationRule` |  | |  | `calcruleext` |  |  |
+| `RECalculationRuleParam1` |  | |  | `calcrulepara1` |  |  |
+| `RECalculationRuleParam2` |  | |  | `calcrulepara2` |  |  |
+| `REDistributionRule` |  | |  | `distruleext` |  |  |
+| `REDistributionRuleParam1` |  | |  | `distrulepara1` |  |  |
+| `REDistributionRuleParam2` |  | |  | `distrulepara2` |  |  |
+| `REAdvancePaytIsPostedAsRevenue` |  | |  | `bookasrevenue` |  |  |
+| `REUnitPrice` |  | |  | `unitprice` |  |  |
+| `_REConditionAttribute` | | ✓ | | | | |
+| `_REFlowType` | | ✓ | | | | |
+| `_RECndnCalculationRuleExt` | | ✓ | | | | |
+| `_RECndnDistributionRuleExt` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

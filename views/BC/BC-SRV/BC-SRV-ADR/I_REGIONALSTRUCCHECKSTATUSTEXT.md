@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RegionalStructureCheckStatus` | ✓ | |  | `cast(domvalue_l as AD_CHECKST)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `RegionalStrucCheckStatusText` |  | |  | `ddtext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RegionalStructureCheckStatus` | ✓ | |  | `cast(domvalue_l as AD_CHECKST)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `RegionalStrucCheckStatusText` |  | |  | `ddtext` |  |  |
 
 ## Source Code
 

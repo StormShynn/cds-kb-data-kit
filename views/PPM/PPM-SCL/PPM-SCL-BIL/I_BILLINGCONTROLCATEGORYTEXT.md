@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BillingControlCategory` | ✓ | |  | `substring( domvalue_l, 1, 8 )` |
-| `BillingControlCategoryText` |  | |  | `ddtext` |
-| `_BillingControlCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BillingControlCategory` | ✓ | |  | `substring( domvalue_l, 1, 8 )` |  |  |
+| `BillingControlCategoryText` |  | |  | `ddtext` |  |  |
+| `_BillingControlCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `PaymentCardID` | ✓ | |  | `ccard_id` |
-| `PaymentCardType` | ✓ | |  | `ccins` |
-| `CardNumber` | ✓ | |  | `ccnum` |
-| `IsStandardCard` |  | |  | `ccdef` |
-| `CardDescription` |  | |  | `ccaccname` |
-| `CollectionIsAuthorized` |  | |  | `cc_coll_auth` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartner` | | ✓ | | |
-| `_CardType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `PaymentCardID` | ✓ | |  | `ccard_id` |  |  |
+| `PaymentCardType` | ✓ | |  | `ccins` |  |  |
+| `CardNumber` | ✓ | |  | `ccnum` |  |  |
+| `IsStandardCard` |  | |  | `ccdef` |  |  |
+| `CardDescription` |  | |  | `ccaccname` |  |  |
+| `CollectionIsAuthorized` |  | |  | `cc_coll_auth` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CardType` | | ✓ | | | | |
 
 ## Associations
 

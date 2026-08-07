@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
-| `PhysicalInventoryCountStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as pi_hdr_count_status_code )` |
-| `PhysicalInventoryCountStsTxt` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as val_text )` |
-| `_PhysInvtryCountSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |  |  |
+| `PhysicalInventoryCountStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as pi_hdr_count_status_code )` |  |  |
+| `PhysicalInventoryCountStsTxt` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as val_text )` |  |  |
+| `_PhysInvtryCountSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

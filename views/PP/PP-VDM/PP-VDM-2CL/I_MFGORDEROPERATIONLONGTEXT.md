@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MfgOrderInternalID` | ✓ | |  | `OrderInternalBillOfOperations` |
-| `OrderOperationInternalID` | ✓ | |  | `OrderIntBillOfOperationsItem` |
-| `LongTextLanguage` | ✓ | |  | `cast(oper.Language as pph_longtextlang preserving type)` |
-| `ManufacturingOrder` |  | |  | `cast(oper.ManufacturingOrder as co_aufnr preserving type)` |
-| `ManufacturingOrderSequence` |  | |  |  |
-| `ManufacturingOrderOperation` |  | |  | `ManufacturingOrderOperation_2` |
-| `MfgOrderOperationText` |  | |  |  |
-| `OrderOperationLongText` |  | |  |  |
-| `_LongTextLanguage` | | ✓ | | |
-| `_MfgOrder` | | ✓ | | |
-| `_MfgOrderOperation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MfgOrderInternalID` | ✓ | |  | `OrderInternalBillOfOperations` |  |  |
+| `OrderOperationInternalID` | ✓ | |  | `OrderIntBillOfOperationsItem` |  |  |
+| `LongTextLanguage` | ✓ | |  | `cast(oper.Language as pph_longtextlang preserving type)` |  |  |
+| `ManufacturingOrder` |  | |  | `cast(oper.ManufacturingOrder as co_aufnr preserving type)` |  |  |
+| `ManufacturingOrderSequence` |  | |  |  |  |  |
+| `ManufacturingOrderOperation` |  | |  | `ManufacturingOrderOperation_2` |  |  |
+| `MfgOrderOperationText` |  | |  |  |  |  |
+| `OrderOperationLongText` |  | |  |  |  |  |
+| `_LongTextLanguage` | | ✓ | | | | |
+| `_MfgOrder` | | ✓ | | | | |
+| `_MfgOrderOperation` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MeasuringPointCategory` | ✓ | |  | `mptyp` |
-| `Language` | ✓ | |  | `spras` |
-| `MeasuringPointCategoryDesc` |  | |  | `mpttx` |
-| `_MeasuringPointCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeasuringPointCategory` | ✓ | |  | `mptyp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MeasuringPointCategoryDesc` |  | |  | `mpttx` |  |  |
+| `_MeasuringPointCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

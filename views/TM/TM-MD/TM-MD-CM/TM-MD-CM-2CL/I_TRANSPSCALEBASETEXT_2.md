@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationScaleBase` | ✓ | |  | `scalebase` |
-| `Language` | ✓ | |  | `spras` |
-| `TransportationScaleBaseText` |  | |  | `scbasetext` |
-| `_Language` | | ✓ | | |
-| `_TransportationScaleBase` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationScaleBase` | ✓ | |  | `scalebase` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TransportationScaleBaseText` |  | |  | `scbasetext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TransportationScaleBase` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `locnr` |
-| `AddressID` | ✓ | |  | `adrnr` |
-| `CustomerDepartment` | ✓ | |  | `abtnr` |
-| `ReceivingPoint` |  | |  | `empst` |
-| `RetailLocationSellingAreaSize` |  | |  | `verfl` |
-| `RetailLocationSellingAreaUnit` |  | |  | `verfe` |
-| `DepartmentLayout` |  | |  | `layvr` |
-| `DepartmentLayoutAreaSchema` |  | |  | `flvar` |
-| `_Customer` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `locnr` |  |  |
+| `AddressID` | ✓ | |  | `adrnr` |  |  |
+| `CustomerDepartment` | ✓ | |  | `abtnr` |  |  |
+| `ReceivingPoint` |  | |  | `empst` |  |  |
+| `RetailLocationSellingAreaSize` |  | |  | `verfl` |  |  |
+| `RetailLocationSellingAreaUnit` |  | |  | `verfe` |  |  |
+| `DepartmentLayout` |  | |  | `layvr` |  |  |
+| `DepartmentLayoutAreaSchema` |  | |  | `flvar` |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
 
 ## Associations
 

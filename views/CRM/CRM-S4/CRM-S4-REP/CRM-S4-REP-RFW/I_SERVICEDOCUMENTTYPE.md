@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  | `process_type` |
-| `ServiceObjectType` |  | |  | `object_type` |
-| `CustMgmtServiceTeamProfile` |  | |  | `service_team_profile` |
-| `SrvcProcessStepOverviewProfile` |  | |  | `proc_stp_ovw_prfl` |
-| `ServiceDocumentTemplateType` |  | |  | `template_type` |
-| `SrvcDocTypeBlockingStatus` |  | |  | `process_blocked` |
-| `StatusProfile` |  | |  | `user_stat_proc` |
-| `SrvcRejectionReasonProfile` |  | |  | `rejprofile` |
-| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` |
-| `_ServiceDocumentTypeText` | | ✓ | | |
-| `_ServiceObjectTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentType` | ✓ | |  | `process_type` |  |  |
+| `ServiceObjectType` |  | |  | `object_type` |  |  |
+| `CustMgmtServiceTeamProfile` |  | |  | `service_team_profile` |  |  |
+| `SrvcProcessStepOverviewProfile` |  | |  | `proc_stp_ovw_prfl` |  |  |
+| `ServiceDocumentTemplateType` |  | |  | `template_type` |  |  |
+| `SrvcDocTypeBlockingStatus` |  | |  | `process_blocked` |  |  |
+| `StatusProfile` |  | |  | `user_stat_proc` |  |  |
+| `SrvcRejectionReasonProfile` |  | |  | `rejprofile` |  |  |
+| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` |  |  |
+| `_ServiceDocumentTypeText` | | ✓ | | | | |
+| `_ServiceObjectTypeText` | | ✓ | | | | |
 
 ## Associations
 

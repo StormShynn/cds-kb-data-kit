@@ -30,139 +30,139 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `FiscalYear` | ✓ | |  | `gjahr` |
-| `AccountingDocument` | ✓ | |  | `belnr` |
-| `AccountingDocumentType` |  | |  | `blart` |
-| `DocumentDate` |  | |  | `bldat` |
-| `PostingDate` |  | |  | `budat` |
-| `FiscalPeriod` |  | |  | `cast( P_BKPF_COM.monat as fins_fiscalperiod )` |
-| `AccountingDocumentCreationDate` |  | |  | `cpudt` |
-| `CreationTime` |  | |  | `cputm` |
-| `LastManualChangeDate` |  | |  | `cast ( P_BKPF_COM.aedat as fis_lastmanualchangedate preserving type )` |
-| `LastAutomaticChangeDate` |  | |  | `cast ( P_BKPF_COM.upddt as fis_lastautomaticchangedate preserving type )` |
-| `LastChangeDate` |  | |  | `case when ( P_BKPF_COM.upddt is not initial and P_BKPF_COM.upddt > P_BKPF_COM.aedat ) then upddt when P_BKPF_COM.aedat is not initial then cast ( P_BKPF_COM.aedat as ttet_dt_chg_date preserving type ) else cast ( P_BKPF_COM.cpudt as ttet_dt_chg_date preserving type ) end` |
-| `ExchangeRateDate` |  | |  | `wwert` |
-| `AccountingDocCreatedByUser` |  | |  | `usnam` |
-| `TransactionCode` |  | |  | `tcode` |
-| `IntercompanyTransaction` |  | |  | `bvorg` |
-| `DocumentReferenceID` |  | |  | `xblnr` |
-| `RecurringAccountingDocument` |  | |  | `dbblg` |
-| `RecrrgJournalEntryCompanyCode` |  | |  | `dbblg_bukrs` |
-| `RecrrgJournalEntryFiscalYear` |  | |  | `dbblg_gjahr` |
-| `ReverseDocument` |  | |  | `stblg` |
-| `ReverseDocumentFiscalYear` |  | |  | `stjah` |
-| `AccountingDocumentHeaderText` |  | |  | `bktxt` |
-| `TransactionCurrency` |  | |  | `waers` |
-| `AbsoluteExchangeRate` |  | |  | `cast(abs(P_BKPF_COM.kursf) as fis_absolute_exchangerate preserving type)` |
-| `ExchangeRate` |  | |  | `kursf` |
-| `ExchRateIsIndirectQuotation` |  | |  | `cast(case when P_BKPF_COM.kursf < 0 then 'X' when P_BKPF_COM.kursf >= 0 then ' ' end as fis_indirect_quotation preserving type)` |
-| `EffectiveExchangeRate` |  | |  | `cast(case when P_BKPF_COM.kursf < 0 then division(1,abs(P_BKPF_COM.kursf),5) when P_BKPF_COM.kursf >= 0 then P_BKPF_COM.kursf end as fis_effective_exchangerate)` |
-| `AccountingDocumentCategory` |  | |  | `bstat` |
-| `NetAmountIsPosted` |  | |  | `xnetb` |
-| `JrnlEntryIsPostedToPrevPeriod` |  | |  | `xrueb` |
-| `BusinessTransactionType` |  | |  | `glvor` |
-| `JrnlEntryBusinessTransType` |  | |  | `cbttype` |
-| `BatchInputSession` |  | |  | `grpid` |
-| `ReferenceDocumentType` |  | |  | `awtyp` |
-| `OriginalReferenceDocument` |  | |  | `awkey` |
-| `FinancialManagementArea` |  | |  | `fikrs` |
-| `CompanyCodeCurrency` |  | |  | `hwaer` |
-| `AdditionalCurrency1` |  | |  | `hwae2` |
-| `AdditionalCurrency2` |  | |  | `hwae3` |
-| `ReversalIsPlanned` |  | |  | `xstov` |
-| `PlannedReversalDate` |  | |  | `stodt` |
-| `TaxIsCalculatedAutomatically` |  | |  | `xmwst` |
-| `AdditionalCurrency1Role` |  | |  | `curt2` |
-| `AdditionalCurrency2Role` |  | |  | `curt3` |
-| `TaxBaseAmountIsNetAmount` |  | |  | `xsnet` |
-| `SourceCompanyCode` |  | |  | `ausbk` |
-| `LogicalSystem` |  | |  | `awsys` |
-| `ReferenceDocumentLogicalSystem` |  | |  | `cast(P_BKPF_COM.awsys as fis_awsys preserving type)` |
-| `TaxAbsoluteExchangeRate` |  | |  | `cast(abs(P_BKPF_COM.txkrs) as fis_absolute_txkrs_bkpf preserving type)` |
-| `TaxExchangeRate` |  | |  | `txkrs` |
-| `TaxExchRateIsIndirectQuotation` |  | |  | `cast(case when P_BKPF_COM.txkrs < 0 then 'X' when P_BKPF_COM.txkrs >= 0 then ' ' end as fis_tax_indirect_quotation preserving type)` |
-| `TaxEffectiveExchangeRate` |  | |  | `cast(case when P_BKPF_COM.txkrs < 0 then division(1,abs(P_BKPF_COM.txkrs),5) when P_BKPF_COM.txkrs >= 0 then P_BKPF_COM.txkrs end as fis_tax_effective_exchangerate)` |
-| `CtryCrcyTxAbsoluteExchangeRate` |  | |  | `cast(abs(P_BKPF_COM.ctxkrs) as ctrycrcytxabsoluteexchangerate preserving type)` |
-| `CtryCrcyTaxEffctvExchangeRate` |  | |  | `cast(case when P_BKPF_COM.ctxkrs < 0 then division(1,abs(P_BKPF_COM.ctxkrs),5) when P_BKPF_COM.ctxkrs >= 0 then P_BKPF_COM.ctxkrs end as ctrycrcytaxeffctvexchangerate)` |
-| `ReversalReason` |  | |  | `stgrd` |
-| `ParkedByUser` |  | |  | `cast(P_BKPF_COM.ppnam as fis_ppnam preserving type )` |
-| `ParkingDate` |  | |  | `ppdat` |
-| `ParkingTime` |  | |  | `pptme` |
-| `ParkingTransactionCode` |  | |  | `PPTCOD` |
-| `Branch` |  | |  | `brnch` |
-| `NmbrOfPages` |  | |  | `numpg` |
-| `IsDiscountDocument` |  | |  | `adisc` |
-| `Reference1InDocumentHeader` |  | |  | `xref1_hd` |
-| `Reference2InDocumentHeader` |  | |  | `xref2_hd` |
-| `InvoiceReceiptDate` |  | |  | `reindat` |
-| `Ledger` |  | |  | `rldnr` |
-| `LedgerGroup` |  | |  | `ldgrp` |
-| `AlternativeReferenceDocument` |  | |  | `cast(P_BKPF_COM.xblnr_alt as fis_xblnr_alt_alpha preserving type )` |
-| `TaxReportingDate` |  | |  | `vatdate` |
-| `TaxFulfillmentDate` |  | |  | `fulfilldate` |
-| `AccountingDocumentClass` |  | |  | `doccat` |
-| `ExchangeRateType` |  | |  | `kurst` |
-| `MarketDataAbsoluteExchangeRate` |  | |  | `cast(abs(P_BKPF_COM.kursx) as marketdataabsoluteexchangerate preserving type)` |
-| `MktDataEffectiveExchangeRate` |  | |  | `cast(case when P_BKPF_COM.kursx < 0 then division(1,abs(P_BKPF_COM.kursx),5) when P_BKPF_COM.kursx >= 0 then P_BKPF_COM.kursx end as mktdataeffectiveexchangerate)` |
-| `SenderLogicalSystem` |  | |  | `logsystem_sender` |
-| `SenderCompanyCode` |  | |  | `bukrs_sender` |
-| `SenderAccountingDocument` |  | |  | `belnr_sender` |
-| `SenderFiscalYear` |  | |  | `gjahr_sender` |
-| `ReversalReferenceDocumentCntxt` |  | |  | `aworg_rev` |
-| `ReversalReferenceDocument` |  | |  | `awref_rev` |
-| `LatePaymentReason` |  | |  | `penrc` |
-| `SalesDocumentCondition` |  | |  | `knumv` |
-| `IsReversal` |  | |  | `xreversing` |
-| `IsReversed` |  | |  | `xreversed` |
-| `GLBusinessTransactionGroup` |  | |  | `glbtgrp` |
-| `CostAccountingValuationDate` |  | |  | `co_valdt` |
-| `TaxCountry` |  | |  | `TAX_COUNTRY_HD` |
-| `JournalEntryLastChangeDateTime` |  | |  | `last_change_datetime` |
-| `JournalEntryIsSecondaryEntry` |  | |  | `XSECONDARY` |
-| `JournalEntryReprocessingStatus` |  | |  | `reprocessing_status_code` |
-| `JrnlEntryCntrySpecificRef1` |  | |  | `glo_ref1_hd` |
-| `JrnlEntryCntrySpecificDate1` |  | |  | `glo_dat1_hd` |
-| `JrnlEntryCntrySpecificRef2` |  | |  | `glo_ref2_hd` |
-| `JrnlEntryCntrySpecificDate2` |  | |  | `glo_dat2_hd` |
-| `JrnlEntryCntrySpecificRef3` |  | |  | `glo_ref3_hd` |
-| `JrnlEntryCntrySpecificDate3` |  | |  | `glo_dat3_hd` |
-| `JrnlEntryCntrySpecificRef4` |  | |  | `glo_ref4_hd` |
-| `JrnlEntryCntrySpecificDate4` |  | |  | `glo_dat4_hd` |
-| `JrnlEntryCntrySpecificRef5` |  | |  | `glo_ref5_hd` |
-| `JrnlEntryCntrySpecificDate5` |  | |  | `glo_dat5_hd` |
-| `JrnlEntryCntrySpecificBP1` |  | |  | `glo_bp1_hd` |
-| `JrnlEntryCntrySpecificBP2` |  | |  | `glo_bp2_hd` |
-| `WithholdingTaxReportingDate` |  | |  | `whtdate` |
-| `EntryViewPostingControl` |  | |  | `ev_postng_ctrl` |
-| `_AccountingDocumentTypeText` | | ✓ | | |
-| `_BusinessTransactionTypeText` | | ✓ | | |
-| `_FinancialManagementAreaText` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_AdditionalCurrency1` | | ✓ | | |
-| `_AdditionalCurrency2` | | ✓ | | |
-| `_FiscalPeriod` | | ✓ | | |
-| `_AccountingDocumentCategory` | | ✓ | | |
-| `_BusinessTransactionType` | | ✓ | | |
-| `_FinancialManagementArea` | | ✓ | | |
-| `_ReferenceDocumentType` | | ✓ | | |
-| `_LogicalSystem` | | ✓ | | |
-| `_RefDocumentLogicalSystem` | | ✓ | | |
-| `_User` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_LedgerGroup` | | ✓ | | |
-| `_AdditionalCurrency1Role` | | ✓ | | |
-| `_AdditionalCurrency2Role` | | ✓ | | |
-| `_JournalEntryItem` | | ✓ | | |
-| `_OperationalAcctgDocItem` | | ✓ | | |
-| `_AddlLedgerOplAcctgDocItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
+| `AccountingDocument` | ✓ | |  | `belnr` |  |  |
+| `AccountingDocumentType` |  | |  | `blart` |  |  |
+| `DocumentDate` |  | |  | `bldat` |  |  |
+| `PostingDate` |  | |  | `budat` |  |  |
+| `FiscalPeriod` |  | |  | `cast( P_BKPF_COM.monat as fins_fiscalperiod )` |  |  |
+| `AccountingDocumentCreationDate` |  | |  | `cpudt` |  |  |
+| `CreationTime` |  | |  | `cputm` |  |  |
+| `LastManualChangeDate` |  | |  | `cast ( P_BKPF_COM.aedat as fis_lastmanualchangedate preserving type )` |  |  |
+| `LastAutomaticChangeDate` |  | |  | `cast ( P_BKPF_COM.upddt as fis_lastautomaticchangedate preserving type )` |  |  |
+| `LastChangeDate` |  | |  | `case when ( P_BKPF_COM.upddt is not initial and P_BKPF_COM.upddt > P_BKPF_COM.aedat ) then upddt when P_BKPF_COM.aedat is not initial then cast ( P_BKPF_COM.aedat as ttet_dt_chg_date preserving type ) else cast ( P_BKPF_COM.cpudt as ttet_dt_chg_date preserving type ) end` |  |  |
+| `ExchangeRateDate` |  | |  | `wwert` |  |  |
+| `AccountingDocCreatedByUser` |  | |  | `usnam` |  |  |
+| `TransactionCode` |  | |  | `tcode` |  |  |
+| `IntercompanyTransaction` |  | |  | `bvorg` |  |  |
+| `DocumentReferenceID` |  | |  | `xblnr` |  |  |
+| `RecurringAccountingDocument` |  | |  | `dbblg` |  |  |
+| `RecrrgJournalEntryCompanyCode` |  | |  | `dbblg_bukrs` |  |  |
+| `RecrrgJournalEntryFiscalYear` |  | |  | `dbblg_gjahr` |  |  |
+| `ReverseDocument` |  | |  | `stblg` |  |  |
+| `ReverseDocumentFiscalYear` |  | |  | `stjah` |  |  |
+| `AccountingDocumentHeaderText` |  | |  | `bktxt` |  |  |
+| `TransactionCurrency` |  | |  | `waers` |  |  |
+| `AbsoluteExchangeRate` |  | |  | `cast(abs(P_BKPF_COM.kursf) as fis_absolute_exchangerate preserving type)` |  |  |
+| `ExchangeRate` |  | |  | `kursf` |  |  |
+| `ExchRateIsIndirectQuotation` |  | |  | `cast(case when P_BKPF_COM.kursf < 0 then 'X' when P_BKPF_COM.kursf >= 0 then ' ' end as fis_indirect_quotation preserving type)` |  |  |
+| `EffectiveExchangeRate` |  | |  | `cast(case when P_BKPF_COM.kursf < 0 then division(1,abs(P_BKPF_COM.kursf),5) when P_BKPF_COM.kursf >= 0 then P_BKPF_COM.kursf end as fis_effective_exchangerate)` |  |  |
+| `AccountingDocumentCategory` |  | |  | `bstat` |  |  |
+| `NetAmountIsPosted` |  | |  | `xnetb` |  |  |
+| `JrnlEntryIsPostedToPrevPeriod` |  | |  | `xrueb` |  |  |
+| `BusinessTransactionType` |  | |  | `glvor` |  |  |
+| `JrnlEntryBusinessTransType` |  | |  | `cbttype` |  |  |
+| `BatchInputSession` |  | |  | `grpid` |  |  |
+| `ReferenceDocumentType` |  | |  | `awtyp` |  |  |
+| `OriginalReferenceDocument` |  | |  | `awkey` |  |  |
+| `FinancialManagementArea` |  | |  | `fikrs` |  |  |
+| `CompanyCodeCurrency` |  | |  | `hwaer` |  |  |
+| `AdditionalCurrency1` |  | |  | `hwae2` |  |  |
+| `AdditionalCurrency2` |  | |  | `hwae3` |  |  |
+| `ReversalIsPlanned` |  | |  | `xstov` |  |  |
+| `PlannedReversalDate` |  | |  | `stodt` |  |  |
+| `TaxIsCalculatedAutomatically` |  | |  | `xmwst` |  |  |
+| `AdditionalCurrency1Role` |  | |  | `curt2` |  |  |
+| `AdditionalCurrency2Role` |  | |  | `curt3` |  |  |
+| `TaxBaseAmountIsNetAmount` |  | |  | `xsnet` |  |  |
+| `SourceCompanyCode` |  | |  | `ausbk` |  |  |
+| `LogicalSystem` |  | |  | `awsys` |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  | `cast(P_BKPF_COM.awsys as fis_awsys preserving type)` |  |  |
+| `TaxAbsoluteExchangeRate` |  | |  | `cast(abs(P_BKPF_COM.txkrs) as fis_absolute_txkrs_bkpf preserving type)` |  |  |
+| `TaxExchangeRate` |  | |  | `txkrs` |  |  |
+| `TaxExchRateIsIndirectQuotation` |  | |  | `cast(case when P_BKPF_COM.txkrs < 0 then 'X' when P_BKPF_COM.txkrs >= 0 then ' ' end as fis_tax_indirect_quotation preserving type)` |  |  |
+| `TaxEffectiveExchangeRate` |  | |  | `cast(case when P_BKPF_COM.txkrs < 0 then division(1,abs(P_BKPF_COM.txkrs),5) when P_BKPF_COM.txkrs >= 0 then P_BKPF_COM.txkrs end as fis_tax_effective_exchangerate)` |  |  |
+| `CtryCrcyTxAbsoluteExchangeRate` |  | |  | `cast(abs(P_BKPF_COM.ctxkrs) as ctrycrcytxabsoluteexchangerate preserving type)` |  |  |
+| `CtryCrcyTaxEffctvExchangeRate` |  | |  | `cast(case when P_BKPF_COM.ctxkrs < 0 then division(1,abs(P_BKPF_COM.ctxkrs),5) when P_BKPF_COM.ctxkrs >= 0 then P_BKPF_COM.ctxkrs end as ctrycrcytaxeffctvexchangerate)` |  |  |
+| `ReversalReason` |  | |  | `stgrd` |  |  |
+| `ParkedByUser` |  | |  | `cast(P_BKPF_COM.ppnam as fis_ppnam preserving type )` |  |  |
+| `ParkingDate` |  | |  | `ppdat` |  |  |
+| `ParkingTime` |  | |  | `pptme` |  |  |
+| `ParkingTransactionCode` |  | |  | `PPTCOD` |  |  |
+| `Branch` |  | |  | `brnch` |  |  |
+| `NmbrOfPages` |  | |  | `numpg` |  |  |
+| `IsDiscountDocument` |  | |  | `adisc` |  |  |
+| `Reference1InDocumentHeader` |  | |  | `xref1_hd` |  |  |
+| `Reference2InDocumentHeader` |  | |  | `xref2_hd` |  |  |
+| `InvoiceReceiptDate` |  | |  | `reindat` |  |  |
+| `Ledger` |  | |  | `rldnr` |  |  |
+| `LedgerGroup` |  | |  | `ldgrp` |  |  |
+| `AlternativeReferenceDocument` |  | |  | `cast(P_BKPF_COM.xblnr_alt as fis_xblnr_alt_alpha preserving type )` |  |  |
+| `TaxReportingDate` |  | |  | `vatdate` |  |  |
+| `TaxFulfillmentDate` |  | |  | `fulfilldate` |  |  |
+| `AccountingDocumentClass` |  | |  | `doccat` |  |  |
+| `ExchangeRateType` |  | |  | `kurst` |  |  |
+| `MarketDataAbsoluteExchangeRate` |  | |  | `cast(abs(P_BKPF_COM.kursx) as marketdataabsoluteexchangerate preserving type)` |  |  |
+| `MktDataEffectiveExchangeRate` |  | |  | `cast(case when P_BKPF_COM.kursx < 0 then division(1,abs(P_BKPF_COM.kursx),5) when P_BKPF_COM.kursx >= 0 then P_BKPF_COM.kursx end as mktdataeffectiveexchangerate)` |  |  |
+| `SenderLogicalSystem` |  | |  | `logsystem_sender` |  |  |
+| `SenderCompanyCode` |  | |  | `bukrs_sender` |  |  |
+| `SenderAccountingDocument` |  | |  | `belnr_sender` |  |  |
+| `SenderFiscalYear` |  | |  | `gjahr_sender` |  |  |
+| `ReversalReferenceDocumentCntxt` |  | |  | `aworg_rev` |  |  |
+| `ReversalReferenceDocument` |  | |  | `awref_rev` |  |  |
+| `LatePaymentReason` |  | |  | `penrc` |  |  |
+| `SalesDocumentCondition` |  | |  | `knumv` |  |  |
+| `IsReversal` |  | |  | `xreversing` |  |  |
+| `IsReversed` |  | |  | `xreversed` |  |  |
+| `GLBusinessTransactionGroup` |  | |  | `glbtgrp` |  |  |
+| `CostAccountingValuationDate` |  | |  | `co_valdt` |  |  |
+| `TaxCountry` |  | |  | `TAX_COUNTRY_HD` |  |  |
+| `JournalEntryLastChangeDateTime` |  | |  | `last_change_datetime` |  |  |
+| `JournalEntryIsSecondaryEntry` |  | |  | `XSECONDARY` |  |  |
+| `JournalEntryReprocessingStatus` |  | |  | `reprocessing_status_code` |  |  |
+| `JrnlEntryCntrySpecificRef1` |  | |  | `glo_ref1_hd` |  |  |
+| `JrnlEntryCntrySpecificDate1` |  | |  | `glo_dat1_hd` |  |  |
+| `JrnlEntryCntrySpecificRef2` |  | |  | `glo_ref2_hd` |  |  |
+| `JrnlEntryCntrySpecificDate2` |  | |  | `glo_dat2_hd` |  |  |
+| `JrnlEntryCntrySpecificRef3` |  | |  | `glo_ref3_hd` |  |  |
+| `JrnlEntryCntrySpecificDate3` |  | |  | `glo_dat3_hd` |  |  |
+| `JrnlEntryCntrySpecificRef4` |  | |  | `glo_ref4_hd` |  |  |
+| `JrnlEntryCntrySpecificDate4` |  | |  | `glo_dat4_hd` |  |  |
+| `JrnlEntryCntrySpecificRef5` |  | |  | `glo_ref5_hd` |  |  |
+| `JrnlEntryCntrySpecificDate5` |  | |  | `glo_dat5_hd` |  |  |
+| `JrnlEntryCntrySpecificBP1` |  | |  | `glo_bp1_hd` |  |  |
+| `JrnlEntryCntrySpecificBP2` |  | |  | `glo_bp2_hd` |  |  |
+| `WithholdingTaxReportingDate` |  | |  | `whtdate` |  |  |
+| `EntryViewPostingControl` |  | |  | `ev_postng_ctrl` |  |  |
+| `_AccountingDocumentTypeText` | | ✓ | | | | |
+| `_BusinessTransactionTypeText` | | ✓ | | | | |
+| `_FinancialManagementAreaText` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_AdditionalCurrency1` | | ✓ | | | | |
+| `_AdditionalCurrency2` | | ✓ | | | | |
+| `_FiscalPeriod` | | ✓ | | | | |
+| `_AccountingDocumentCategory` | | ✓ | | | | |
+| `_BusinessTransactionType` | | ✓ | | | | |
+| `_FinancialManagementArea` | | ✓ | | | | |
+| `_ReferenceDocumentType` | | ✓ | | | | |
+| `_LogicalSystem` | | ✓ | | | | |
+| `_RefDocumentLogicalSystem` | | ✓ | | | | |
+| `_User` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_LedgerGroup` | | ✓ | | | | |
+| `_AdditionalCurrency1Role` | | ✓ | | | | |
+| `_AdditionalCurrency2Role` | | ✓ | | | | |
+| `_JournalEntryItem` | | ✓ | | | | |
+| `_OperationalAcctgDocItem` | | ✓ | | | | |
+| `_AddlLedgerOplAcctgDocItem` | | ✓ | | | | |
 
 ## Associations
 

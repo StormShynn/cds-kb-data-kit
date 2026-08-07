@@ -27,58 +27,58 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InternalRealEstateNumber` | ✓ | | `_ValuationTerm` | `intreno` |
-| `REValuationRuleUUID` | ✓ | | `_ValuationTerm` | `ruleguid` |
-| `RETermNumber` |  | | `_ValuationTerm` | `termno` |
-| `RETermType` |  | | `_ValuationTerm` | `termtype` |
-| `ValidityStartDate` |  | |  | `cast( _ValuationTerm.validfrom as rebdvdmvalidfrom preserving type )` |
-| `ValidityEndDate` |  | |  | `cast( _ValuationTerm.validto as rebdvdmvalidto preserving type )` |
-| `REStatusObject` |  | | `_ValuationTerm` | `objnr` |
-| `ObjectValidFrom` |  | |  | `cast(_ValuationTerm.objvalidfrom as rebdvdmrelvalidfrom preserving type )` |
-| `REValuationRule` |  | | `_ValuationTerm` | `cerule` |
-| `REConsiderationStartDate` |  | |  | `cast(_ValuationTerm.consbeg as recevdmconsbeg preserving type )` |
-| `RECashFlowPostingFromDate` |  | |  | `cast(_ValuationTerm.postbeg as recevdmpostbeg preserving type )` |
-| `REStatusObjectAsset` |  | |  | `cast(_ValuationTerm.assetobjnr as recevdmasobjnr preserving type )` |
-| `REValuationClassification` |  | | `_ValuationTerm` | `cesltype` |
-| `REInterestRate` |  | | `_ValuationTerm` | `interestrate` |
-| `REFrequencyTerm` |  | | `_ValuationTerm` | `termnorh` |
-| `REDistributionRule` |  | | `_ValuationTerm` | `distrule` |
-| `REDistributionRuleParam1` |  | | `_ValuationTerm` | `distrulepara1` |
-| `REDistributionRuleParam2` |  | | `_ValuationTerm` | `distrulepara2` |
-| `REProbableEndDate` |  | |  | `cast( _ValuationTerm.probableend as recevdmprobableend preserving type )` |
-| `REAssetRightOfUseEndDate` |  | |  | `cast( _ValuationTerm.usefullifeend as recevdmusefullifeend preserving type )` |
-| `REValuationRuleStatus` |  | |  | `cast( _ValuationTerm.statusrule as recevdmstatusrule preserving type )` |
-| `REValuationStatus` |  | |  | `cast( _ValuationTerm.statuseval as recevdmstatusevaluation preserving type )` |
-| `REValuationStatusReason` |  | |  | `cast( _ValuationTerm.statusreason as recevdmstatusreason preserving type )` |
-| `REValuationBehavior` |  | | `_ValuationTerm` | `processbehavior` |
-| `RETaxType` |  | | `_ValuationTerm` | `taxtype` |
-| `TaxGroup` |  | | `_ValuationTerm` | `taxgroup` |
-| `REAccountingObject` |  | |  | `cast(_ValuationTerm.acctobjnr as recevdmacctobjnr preserving type )` |
-| `REInfoText` |  | | `_ValuationTerm` | `note` |
-| `REValuationFactorNumerator` |  | | `_ValuationTerm` | `scopenum` |
-| `REValuationFactorDenominator` |  | | `_ValuationTerm` | `scopedenom` |
-| `REValuationCurrency` |  | |  | `cast(_ValuationTerm.rulecurr as recevdmrulecurr preserving type )` |
-| `REValuationQuestionnaireUUID` |  | | `_ValuationTerm` | `queryguid` |
-| `Country` |  | | `_REContract._CompanyCode` | `Country` |
-| `_REContract` | | ✓ | | |
-| `_REKeyAssgmt` | | ✓ | | |
-| `_RETerm` | | ✓ | | |
-| `_RETermType` | | ✓ | | |
-| `_REValuationObject` | | ✓ | | |
-| `_REValuationRule` | | ✓ | | |
-| `_REFixedAssetRelation` | | ✓ | | |
-| `_REValuationClassification` | | ✓ | | |
-| `_RERhythmTerm` | | ✓ | | |
-| `_RECndnDistributionRuleExt` | | ✓ | | |
-| `_REValuationRuleStatus` | | ✓ | | |
-| `_REValuationStatus` | | ✓ | | |
-| `_REValuationStatusReason` | | ✓ | | |
-| `_REValuationBehavior` | | ✓ | | |
-| `_RETaxType` | | ✓ | | |
-| `_RETaxGroup` | | ✓ | | |
-| `_Currency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | | `_ValuationTerm` | `intreno` |  |  |
+| `REValuationRuleUUID` | ✓ | | `_ValuationTerm` | `ruleguid` |  |  |
+| `RETermNumber` |  | | `_ValuationTerm` | `termno` |  |  |
+| `RETermType` |  | | `_ValuationTerm` | `termtype` |  |  |
+| `ValidityStartDate` |  | |  | `cast( _ValuationTerm.validfrom as rebdvdmvalidfrom preserving type )` |  |  |
+| `ValidityEndDate` |  | |  | `cast( _ValuationTerm.validto as rebdvdmvalidto preserving type )` |  |  |
+| `REStatusObject` |  | | `_ValuationTerm` | `objnr` |  |  |
+| `ObjectValidFrom` |  | |  | `cast(_ValuationTerm.objvalidfrom as rebdvdmrelvalidfrom preserving type )` |  |  |
+| `REValuationRule` |  | | `_ValuationTerm` | `cerule` |  |  |
+| `REConsiderationStartDate` |  | |  | `cast(_ValuationTerm.consbeg as recevdmconsbeg preserving type )` |  |  |
+| `RECashFlowPostingFromDate` |  | |  | `cast(_ValuationTerm.postbeg as recevdmpostbeg preserving type )` |  |  |
+| `REStatusObjectAsset` |  | |  | `cast(_ValuationTerm.assetobjnr as recevdmasobjnr preserving type )` |  |  |
+| `REValuationClassification` |  | | `_ValuationTerm` | `cesltype` |  |  |
+| `REInterestRate` |  | | `_ValuationTerm` | `interestrate` |  |  |
+| `REFrequencyTerm` |  | | `_ValuationTerm` | `termnorh` |  |  |
+| `REDistributionRule` |  | | `_ValuationTerm` | `distrule` |  |  |
+| `REDistributionRuleParam1` |  | | `_ValuationTerm` | `distrulepara1` |  |  |
+| `REDistributionRuleParam2` |  | | `_ValuationTerm` | `distrulepara2` |  |  |
+| `REProbableEndDate` |  | |  | `cast( _ValuationTerm.probableend as recevdmprobableend preserving type )` |  |  |
+| `REAssetRightOfUseEndDate` |  | |  | `cast( _ValuationTerm.usefullifeend as recevdmusefullifeend preserving type )` |  |  |
+| `REValuationRuleStatus` |  | |  | `cast( _ValuationTerm.statusrule as recevdmstatusrule preserving type )` |  |  |
+| `REValuationStatus` |  | |  | `cast( _ValuationTerm.statuseval as recevdmstatusevaluation preserving type )` |  |  |
+| `REValuationStatusReason` |  | |  | `cast( _ValuationTerm.statusreason as recevdmstatusreason preserving type )` |  |  |
+| `REValuationBehavior` |  | | `_ValuationTerm` | `processbehavior` |  |  |
+| `RETaxType` |  | | `_ValuationTerm` | `taxtype` |  |  |
+| `TaxGroup` |  | | `_ValuationTerm` | `taxgroup` |  |  |
+| `REAccountingObject` |  | |  | `cast(_ValuationTerm.acctobjnr as recevdmacctobjnr preserving type )` |  |  |
+| `REInfoText` |  | | `_ValuationTerm` | `note` |  |  |
+| `REValuationFactorNumerator` |  | | `_ValuationTerm` | `scopenum` |  |  |
+| `REValuationFactorDenominator` |  | | `_ValuationTerm` | `scopedenom` |  |  |
+| `REValuationCurrency` |  | |  | `cast(_ValuationTerm.rulecurr as recevdmrulecurr preserving type )` |  |  |
+| `REValuationQuestionnaireUUID` |  | | `_ValuationTerm` | `queryguid` |  |  |
+| `Country` |  | | `_REContract._CompanyCode` | `Country` |  |  |
+| `_REContract` | | ✓ | | | | |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_RETerm` | | ✓ | | | | |
+| `_RETermType` | | ✓ | | | | |
+| `_REValuationObject` | | ✓ | | | | |
+| `_REValuationRule` | | ✓ | | | | |
+| `_REFixedAssetRelation` | | ✓ | | | | |
+| `_REValuationClassification` | | ✓ | | | | |
+| `_RERhythmTerm` | | ✓ | | | | |
+| `_RECndnDistributionRuleExt` | | ✓ | | | | |
+| `_REValuationRuleStatus` | | ✓ | | | | |
+| `_REValuationStatus` | | ✓ | | | | |
+| `_REValuationStatusReason` | | ✓ | | | | |
+| `_REValuationBehavior` | | ✓ | | | | |
+| `_RETaxType` | | ✓ | | | | |
+| `_RETaxGroup` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
 
 ## Associations
 

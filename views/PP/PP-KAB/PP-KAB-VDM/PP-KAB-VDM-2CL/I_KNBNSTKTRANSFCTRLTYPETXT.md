@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KnbnCtrlCycStkTransfCtrlType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pksau)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `KnbnStkTransfCtrlTypeName` |  | |  | `cast(ddtext as vdm_pksau_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KnbnStkTransfCtrlType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KnbnCtrlCycStkTransfCtrlType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pksau)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `KnbnStkTransfCtrlTypeName` |  | |  | `cast(ddtext as vdm_pksau_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KnbnStkTransfCtrlType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

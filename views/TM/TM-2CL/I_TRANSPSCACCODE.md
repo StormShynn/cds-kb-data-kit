@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspSCACCode` | ✓ | |  | `scac` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspSCACCode` | ✓ | |  | `scac` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

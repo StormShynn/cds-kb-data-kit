@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceEntrySheet` | ✓ | |  |  |
-| `ServiceEntrySheetItem` | ✓ | |  |  |
-| `NoteBasicUUID` | ✓ | |  |  |
-| `ServiceEntrySheetItemUniqueID` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `NoteBasicObjectNodeType` |  | |  |  |
-| `NoteBasicType` |  | |  |  |
-| `NoteBasicLanguage` |  | |  |  |
-| `NoteBasicContent` |  | |  |  |
-| `_ServiceEntrySheet` | | ✓ | | |
-| `_ServiceEntrySheetItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |  |  |
+| `NoteBasicUUID` | ✓ | |  |  |  |  |
+| `ServiceEntrySheetItemUniqueID` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `NoteBasicObjectNodeType` |  | |  |  |  |  |
+| `NoteBasicType` |  | |  |  |  |  |
+| `NoteBasicLanguage` |  | |  |  |  |  |
+| `NoteBasicContent` |  | |  |  |  |  |
+| `_ServiceEntrySheet` | | ✓ | | | | |
+| `_ServiceEntrySheetItem` | | ✓ | | | | |
 
 ## Source Code
 

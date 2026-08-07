@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UsageDecisionCodeGroup` | ✓ | |  |  |
-| `UsageDecisionCode` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
-| `_UsageDecisionCodeGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UsageDecisionCodeGroup` | ✓ | |  |  |  |  |
+| `UsageDecisionCode` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_UsageDecisionCodeGroup` | | ✓ | | | | |
 
 ## Source Code
 

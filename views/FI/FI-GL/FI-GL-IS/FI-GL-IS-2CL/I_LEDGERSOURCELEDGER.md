@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` | ✓ | |  | `rldnr` |
-| `SourceLedger` | ✓ | |  | `rldnr_pers` |
-| `_Ledger` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` | ✓ | |  | `rldnr` |  |  |
+| `SourceLedger` | ✓ | |  | `rldnr_pers` |  |  |
+| `_Ledger` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

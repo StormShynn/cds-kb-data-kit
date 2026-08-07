@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductGroup` | ✓ | |  | `cast(t023t.matkl as productgroup preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `ProductGroupName` |  | |  | `cast(t023t.wgbez as productgroupname preserving type )` |
-| `ProductGroupText` |  | |  | `wgbez60` |
-| `_ProductGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductGroup` | ✓ | |  | `cast(t023t.matkl as productgroup preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProductGroupName` |  | |  | `cast(t023t.wgbez as productgroupname preserving type )` |  |  |
+| `ProductGroupText` |  | |  | `wgbez60` |  |  |
+| `_ProductGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

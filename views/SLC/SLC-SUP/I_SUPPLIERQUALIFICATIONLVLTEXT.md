@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierQualificationLevel` | ✓ | |  | `qualification` |
-| `Language` | ✓ | |  | `spras` |
-| `SupplierQualificationLevelName` |  | |  | `qualification_d` |
-| `_Language` | | ✓ | | |
-| `_SupplierQualificationLvl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierQualificationLevel` | ✓ | |  | `qualification` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SupplierQualificationLevelName` |  | |  | `qualification_d` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SupplierQualificationLvl` | | ✓ | | | | |
 
 ## Associations
 

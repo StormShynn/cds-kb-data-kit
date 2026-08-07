@@ -35,24 +35,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CourseId` | ✓ | |  | `course_id` |
-| `CourseKey` |  | |  | `course_key` |
-| `Name` |  | |  | `name` |
-| `Type` |  | |  | `type` |
-| `SkillCategory` |  | |  | `skill_category` |
-| `Moderator` |  | |  | `moderator` |
-| `Duration` |  | |  | `duration` |
-| `Released` |  | |  | `released` |
-| `LocalCreatedAt` |  | |  | `local_created_at` |
-| `LocalCreatedBy` |  | |  | `local_created_by` |
-| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
-| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |
-| `LastChangedAt` |  | |  | `last_changed_at` |
-| `_moderator` | | ✓ | | |
-| `_createdBy` | | ✓ | | |
-| `_changedBy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CourseId` | ✓ | |  | `course_id` |  |  |
+| `CourseKey` |  | |  | `course_key` |  |  |
+| `Name` |  | |  | `name` |  |  |
+| `Type` |  | |  | `type` |  |  |
+| `SkillCategory` |  | |  | `skill_category` |  |  |
+| `Moderator` |  | |  | `moderator` |  |  |
+| `Duration` |  | |  | `duration` |  |  |
+| `Released` |  | |  | `released` |  |  |
+| `LocalCreatedAt` |  | |  | `local_created_at` |  |  |
+| `LocalCreatedBy` |  | |  | `local_created_by` |  |  |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |  |  |
+| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |  |  |
+| `LastChangedAt` |  | |  | `last_changed_at` |  |  |
+| `_moderator` | | ✓ | | | | |
+| `_createdBy` | | ✓ | | | | |
+| `_changedBy` | | ✓ | | | | |
 
 ## Associations
 

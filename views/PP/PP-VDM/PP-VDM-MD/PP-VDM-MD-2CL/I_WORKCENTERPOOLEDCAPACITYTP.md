@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityInternalID` | ✓ | |  |  |
-| `Plant` |  | |  |  |
-| `Capacity` |  | |  |  |
-| `CapacityCategoryCode` |  | |  |  |
-| `CapacityActiveVersion` |  | |  |  |
-| `CapacityIsFinite` |  | |  |  |
-| `CapacityIsPooled` |  | |  |  |
-| `CapacityHasIndivCapacities` |  | |  |  |
-| `CapacityIsExcldFrmLongTermPlng` |  | |  |  |
-| `CapacityNumberOfCapacities` |  | |  |  |
-| `CapacityResponsiblePlanner` |  | |  |  |
-| `CapacityPlanUtilizationPercent` |  | |  |  |
-| `CapacityBreakDuration` |  | |  |  |
-| `CapIsUsedInMultiOperations` |  | |  |  |
-| `ReferencedCapacityInternalID` |  | |  |  |
-| `CapOverloadThresholdInPercent` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `ShiftGroup` |  | |  |  |
-| `CapacityStartTimeID` |  | |  |  |
-| `CapacityEndTimeID` |  | |  |  |
-| `CapacityQuantityUnit` |  | |  |  |
-| `CapacityBaseQtyUnit` |  | |  |  |
-| `CapacityLastChangeDateTime` |  | |  |  |
-| `_Interval` | | ✓ | | |
-| `_Description` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Capacity` |  | |  |  |  |  |
+| `CapacityCategoryCode` |  | |  |  |  |  |
+| `CapacityActiveVersion` |  | |  |  |  |  |
+| `CapacityIsFinite` |  | |  |  |  |  |
+| `CapacityIsPooled` |  | |  |  |  |  |
+| `CapacityHasIndivCapacities` |  | |  |  |  |  |
+| `CapacityIsExcldFrmLongTermPlng` |  | |  |  |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |  |  |
+| `CapacityResponsiblePlanner` |  | |  |  |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |  |  |
+| `CapacityBreakDuration` |  | |  |  |  |  |
+| `CapIsUsedInMultiOperations` |  | |  |  |  |  |
+| `ReferencedCapacityInternalID` |  | |  |  |  |  |
+| `CapOverloadThresholdInPercent` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `ShiftGroup` |  | |  |  |  |  |
+| `CapacityStartTimeID` |  | |  |  |  |  |
+| `CapacityEndTimeID` |  | |  |  |  |  |
+| `CapacityQuantityUnit` |  | |  |  |  |  |
+| `CapacityBaseQtyUnit` |  | |  |  |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |  |  |
+| `_Interval` | | ✓ | | | | |
+| `_Description` | | ✓ | | | | |
 
 ## Source Code
 

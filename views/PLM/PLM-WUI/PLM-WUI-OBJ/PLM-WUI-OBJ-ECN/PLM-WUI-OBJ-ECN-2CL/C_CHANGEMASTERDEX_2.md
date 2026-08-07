@@ -30,42 +30,42 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumber` | ✓ | |  |  |
-| `ChangeNumberStatus` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `ChangeNumberFunction` |  | |  |  |
-| `ChangeNumberReleaseKey` |  | |  |  |
-| `ReasonForChangeText` |  | |  |  |
-| `ChangeNumberDescription` |  | |  |  |
-| `LeadingChangeNumber` |  | | `_LeadingChangeNumber` | `PackageChangeNumber` |
-| `ChangeNumberValidFromDate` |  | |  |  |
-| `ChangeNumberCreationDate` |  | |  |  |
-| `ChangeNumberCreatedByUser` |  | |  |  |
-| `ChangeNumberLastChangedDate` |  | |  |  |
-| `ChangeNumberLastChangedByUser` |  | |  |  |
-| `ChangeNumberLastChgdDateTime` |  | |  |  |
-| `IsTechnicallyReleased` |  | |  |  |
-| `IsUsedForDataDefinition` |  | |  |  |
-| `ChangeNumberIsMrkdForDeletion` |  | |  |  |
-| `IsGloballyReleased` |  | | `_ChangeNumberReleaseKey` | `IsGloballyReleased` |
-| `IsReleasedForCosting` |  | | `_ChangeNumberReleaseKey` | `IsReleasedForCosting` |
-| `IsReleasedForPlanning` |  | | `_ChangeNumberReleaseKey` | `IsReleasedForPlanning` |
-| `IsReleasedForProduction` |  | | `_ChangeNumberReleaseKey` | `IsReleasedForProduction` |
-| `IsReleasedForSimulation` |  | | `_ChangeNumberReleaseKey` | `IsReleasedForSimulation` |
-| `IsDateShiftCreatedOCMPresel` |  | | `_ChangeNumberReleaseKey` | `IsDateShiftCreatedOCMPresel` |
-| `IsReleaseKeyCreatedOCMPresel` |  | | `_ChangeNumberReleaseKey` | `IsReleaseKeyCreatedOCMPresel` |
-| `ChangeIsAllowed` |  | | `_ChangeNumberStatus` | `ChangeIsAllowed` |
-| `DateChangeIsAllowed` |  | | `_ChangeNumberStatus` | `DateChangeIsAllowed` |
-| `DistributionIsLocked` |  | | `_ChangeNumberStatus` | `DistributionIsLocked` |
-| `_ChangeMstrObjMgmtRecord` | | ✓ | | |
-| `_ChangeNumberStatus` | | ✓ | | |
-| `_ChangeNumberFunction` | | ✓ | | |
-| `_ChangeNumberReleaseKey` | | ✓ | | |
-| `_LeadingChangeNumber` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ChangeNumberStatus` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `ChangeNumberFunction` |  | |  |  |  |  |
+| `ChangeNumberReleaseKey` |  | |  |  |  |  |
+| `ReasonForChangeText` |  | |  |  |  |  |
+| `ChangeNumberDescription` |  | |  |  |  |  |
+| `LeadingChangeNumber` |  | | `_LeadingChangeNumber` | `PackageChangeNumber` |  |  |
+| `ChangeNumberValidFromDate` |  | |  |  |  |  |
+| `ChangeNumberCreationDate` |  | |  |  |  |  |
+| `ChangeNumberCreatedByUser` |  | |  |  |  |  |
+| `ChangeNumberLastChangedDate` |  | |  |  |  |  |
+| `ChangeNumberLastChangedByUser` |  | |  |  |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |  |  |
+| `IsTechnicallyReleased` |  | |  |  |  |  |
+| `IsUsedForDataDefinition` |  | |  |  |  |  |
+| `ChangeNumberIsMrkdForDeletion` |  | |  |  |  |  |
+| `IsGloballyReleased` |  | | `_ChangeNumberReleaseKey` | `IsGloballyReleased` |  |  |
+| `IsReleasedForCosting` |  | | `_ChangeNumberReleaseKey` | `IsReleasedForCosting` |  |  |
+| `IsReleasedForPlanning` |  | | `_ChangeNumberReleaseKey` | `IsReleasedForPlanning` |  |  |
+| `IsReleasedForProduction` |  | | `_ChangeNumberReleaseKey` | `IsReleasedForProduction` |  |  |
+| `IsReleasedForSimulation` |  | | `_ChangeNumberReleaseKey` | `IsReleasedForSimulation` |  |  |
+| `IsDateShiftCreatedOCMPresel` |  | | `_ChangeNumberReleaseKey` | `IsDateShiftCreatedOCMPresel` |  |  |
+| `IsReleaseKeyCreatedOCMPresel` |  | | `_ChangeNumberReleaseKey` | `IsReleaseKeyCreatedOCMPresel` |  |  |
+| `ChangeIsAllowed` |  | | `_ChangeNumberStatus` | `ChangeIsAllowed` |  |  |
+| `DateChangeIsAllowed` |  | | `_ChangeNumberStatus` | `DateChangeIsAllowed` |  |  |
+| `DistributionIsLocked` |  | | `_ChangeNumberStatus` | `DistributionIsLocked` |  |  |
+| `_ChangeMstrObjMgmtRecord` | | ✓ | | | | |
+| `_ChangeNumberStatus` | | ✓ | | | | |
+| `_ChangeNumberFunction` | | ✓ | | | | |
+| `_ChangeNumberReleaseKey` | | ✓ | | | | |
+| `_LeadingChangeNumber` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
 
 ## Associations
 

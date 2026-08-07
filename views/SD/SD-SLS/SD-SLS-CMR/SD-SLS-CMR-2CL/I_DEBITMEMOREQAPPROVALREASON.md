@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DebitMemoReqApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DebitMemoReqApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |  |  |
 
 ## Source Code
 

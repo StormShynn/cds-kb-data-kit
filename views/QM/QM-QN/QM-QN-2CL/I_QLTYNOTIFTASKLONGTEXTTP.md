@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | | `_QltyNotificationTaskLongText` | `QualityNotification` |
-| `NotificationTask` | ✓ | | `_QltyNotificationTaskLongText` | `NotificationTask` |
-| `Language` | ✓ | | `_QltyNotificationTaskLongText` | `Language` |
-| `LongTextInternalNumber` | ✓ | | `_QltyNotificationTaskLongText` | `LongTextInternalNumber` |
-| `LongTextID` |  | | `_QltyNotificationTaskLongText` | `LongTextID` |
-| `QltyNotificationTaskLongText` |  | | `_QltyNotificationTaskLongText` | `QltyNotificationTaskLongText` |
-| `MimeType` |  | | `_QltyNotificationTaskLongText` | `MimeType` |
-| `LongTextCreatedByUser` |  | | `_QltyNotificationTaskLongText` | `LongTextCreatedByUser` |
-| `LongTextCreatedAt` |  | | `_QltyNotificationTaskLongText` | `LongTextCreatedAt` |
-| `LongTextLastChangedByUser` |  | | `_QltyNotificationTaskLongText` | `LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` |  | | `_QltyNotificationTaskLongText` | `LongTextLastChangedAt` |
-| `I_QltyNotificationTaskTP` |  | |  | `_QltyNotificationTaskLongText._QltyNotificationTask : redirected to parent I_QltyNotificationTaskTP` |
-| `I_QltyNotificationTP` |  | |  | `_QltyNotificationTaskLongText._QltyNotification : redirected to I_QltyNotificationTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | | `_QltyNotificationTaskLongText` | `QualityNotification` |  |  |
+| `NotificationTask` | ✓ | | `_QltyNotificationTaskLongText` | `NotificationTask` |  |  |
+| `Language` | ✓ | | `_QltyNotificationTaskLongText` | `Language` |  |  |
+| `LongTextInternalNumber` | ✓ | | `_QltyNotificationTaskLongText` | `LongTextInternalNumber` |  |  |
+| `LongTextID` |  | | `_QltyNotificationTaskLongText` | `LongTextID` |  |  |
+| `QltyNotificationTaskLongText` |  | | `_QltyNotificationTaskLongText` | `QltyNotificationTaskLongText` |  |  |
+| `MimeType` |  | | `_QltyNotificationTaskLongText` | `MimeType` |  |  |
+| `LongTextCreatedByUser` |  | | `_QltyNotificationTaskLongText` | `LongTextCreatedByUser` |  |  |
+| `LongTextCreatedAt` |  | | `_QltyNotificationTaskLongText` | `LongTextCreatedAt` |  |  |
+| `LongTextLastChangedByUser` |  | | `_QltyNotificationTaskLongText` | `LongTextLastChangedByUser` |  |  |
+| `LongTextLastChangedAt` |  | | `_QltyNotificationTaskLongText` | `LongTextLastChangedAt` |  |  |
+| `I_QltyNotificationTaskTP` |  | |  | `_QltyNotificationTaskLongText._QltyNotificationTask : redirected to parent I_QltyNotificationTaskTP` |  |  |
+| `I_QltyNotificationTP` |  | |  | `_QltyNotificationTaskLongText._QltyNotification : redirected to I_QltyNotificationTP` |  |  |
 
 ## Source Code
 

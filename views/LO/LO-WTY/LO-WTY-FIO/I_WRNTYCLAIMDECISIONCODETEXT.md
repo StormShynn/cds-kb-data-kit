@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WarrantyClaimItemDecisionCode` | ✓ | |  | `rejcd` |
-| `Language` | ✓ | |  | `spras` |
-| `WrntyDecisionCodeText` |  | |  | `rejcd_txt` |
-| `_WrntyClaimDecisionCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarrantyClaimItemDecisionCode` | ✓ | |  | `rejcd` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `WrntyDecisionCodeText` |  | |  | `rejcd_txt` |  |  |
+| `_WrntyClaimDecisionCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `ValidityEndDate` | ✓ | |  | `valid_to` |
-| `AddressUsage` | ✓ | |  | `adr_kind` |
-| `AddressNumber` | ✓ | |  | `addrnumber` |
-| `ValidityStartDate` |  | |  | `valid_from` |
-| `StandardUsage` |  | |  | `xdfadu` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `ValidityEndDate` | ✓ | |  | `valid_to` |  |  |
+| `AddressUsage` | ✓ | |  | `adr_kind` |  |  |
+| `AddressNumber` | ✓ | |  | `addrnumber` |  |  |
+| `ValidityStartDate` |  | |  | `valid_from` |  |  |
+| `StandardUsage` |  | |  | `xdfadu` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

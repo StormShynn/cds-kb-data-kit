@@ -29,41 +29,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnNumber` | ✓ | |  |  |
-| `CABillgPlnCategory` |  | |  |  |
-| `CABillgPlnType` |  | |  |  |
-| `CABillgPlnStatus` |  | |  |  |
-| `CABillgPlnStartDate` |  | |  |  |
-| `CABillgPlnEndDate` |  | |  |  |
-| `CABillgPlnLastRequestDate` |  | |  |  |
-| `CABillgPlnNextRequestDate` |  | |  |  |
-| `CABillgPlnDescription` |  | |  |  |
-| `CABillgPlnExternalReference` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `CAApplicationArea` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `CAInvcgMasterDataType` |  | |  |  |
-| `CAContract` |  | |  |  |
-| `CAProviderContractItemUUID` |  | |  |  |
-| `CASubApplication` |  | |  |  |
-| `CAMasterAgreement` |  | |  |  |
-| `CAInvcgOffsettingReferenceKey` |  | |  |  |
-| `CABillgPlnCreatedByUser` |  | |  |  |
-| `CABillgPlnCreationDate` |  | |  |  |
-| `CABillgPlnCreationTime` |  | |  |  |
-| `CABillgPlnChangedByUser` |  | |  |  |
-| `CABillgPlnChangeDate` |  | |  |  |
-| `CABillgPlnChangeTime` |  | |  |  |
-| `CABillgPlnCreationMode` |  | |  |  |
-| `CABillgPlnNumberBllbleItm` |  | |  |  |
-| `CABillgPlnCompletionDate` |  | |  |  |
-| `CABillgPlnIsTemplate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_ContractAccountPartner` | | ✓ | | |
-| `_CABillgPlnItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnNumber` | ✓ | |  |  |  |  |
+| `CABillgPlnCategory` |  | |  |  |  |  |
+| `CABillgPlnType` |  | |  |  |  |  |
+| `CABillgPlnStatus` |  | |  |  |  |  |
+| `CABillgPlnStartDate` |  | |  |  |  |  |
+| `CABillgPlnEndDate` |  | |  |  |  |  |
+| `CABillgPlnLastRequestDate` |  | |  |  |  |  |
+| `CABillgPlnNextRequestDate` |  | |  |  |  |  |
+| `CABillgPlnDescription` |  | |  |  |  |  |
+| `CABillgPlnExternalReference` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `CAApplicationArea` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `CAInvcgMasterDataType` |  | |  |  |  |  |
+| `CAContract` |  | |  |  |  |  |
+| `CAProviderContractItemUUID` |  | |  |  |  |  |
+| `CASubApplication` |  | |  |  |  |  |
+| `CAMasterAgreement` |  | |  |  |  |  |
+| `CAInvcgOffsettingReferenceKey` |  | |  |  |  |  |
+| `CABillgPlnCreatedByUser` |  | |  |  |  |  |
+| `CABillgPlnCreationDate` |  | |  |  |  |  |
+| `CABillgPlnCreationTime` |  | |  |  |  |  |
+| `CABillgPlnChangedByUser` |  | |  |  |  |  |
+| `CABillgPlnChangeDate` |  | |  |  |  |  |
+| `CABillgPlnChangeTime` |  | |  |  |  |  |
+| `CABillgPlnCreationMode` |  | |  |  |  |  |
+| `CABillgPlnNumberBllbleItm` |  | |  |  |  |  |
+| `CABillgPlnCompletionDate` |  | |  |  |  |  |
+| `CABillgPlnIsTemplate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_ContractAccountPartner` | | ✓ | | | | |
+| `_CABillgPlnItem` | | ✓ | | | | |
 
 ## Source Code
 

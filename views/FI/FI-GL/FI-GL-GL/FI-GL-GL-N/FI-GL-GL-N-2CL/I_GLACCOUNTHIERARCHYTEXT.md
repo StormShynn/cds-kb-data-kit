@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountHierarchy` | ✓ | |  | `cast ( hrrp_dirt_n.hryid_42 as fis_glaccthier preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `hryvalto` |
-| `Language` | ✓ | |  | `spras` |
-| `ValidityStartDate` |  | |  | `hryvalfrom` |
-| `GLAccountHierarchyName` |  | |  | `hrytxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountHierarchy` | ✓ | |  | `cast ( hrrp_dirt_n.hryid_42 as fis_glaccthier preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |  |  |
+| `GLAccountHierarchyName` |  | |  | `hrytxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

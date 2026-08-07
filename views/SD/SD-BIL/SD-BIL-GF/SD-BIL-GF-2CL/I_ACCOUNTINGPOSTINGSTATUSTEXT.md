@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingPostingStatus` | ✓ | |  | `cast( statu as buchk preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `AccountingPostingStatusDesc` |  | |  | `bezei` |
-| `_AccountingPostingStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingPostingStatus` | ✓ | |  | `cast( statu as buchk preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `AccountingPostingStatusDesc` |  | |  | `bezei` |  |  |
+| `_AccountingPostingStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

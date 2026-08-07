@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialProcurementType` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pph_sobes preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
-| `MaterialProcurementTypeName` |  | |  | `cast(txt.ddtext as materialprocurementtypename preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_Type` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialProcurementType` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pph_sobes preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |  |  |
+| `MaterialProcurementTypeName` |  | |  | `cast(txt.ddtext as materialprocurementtypename preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Type` | | ✓ | | | | |
 
 ## Associations
 

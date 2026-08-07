@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ConditionApplication` | ✓ | |  | `kappl` |
-| `ConditionApplicationName` |  | |  | `vtext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ConditionApplication` | ✓ | |  | `kappl` |  |  |
+| `ConditionApplicationName` |  | |  | `vtext` |  |  |
 
 ## Source Code
 

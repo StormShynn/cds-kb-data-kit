@@ -29,41 +29,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `ConditionRecord` | ✓ | |  |  |
-| `ConditionValidityEndDate` | ✓ | |  |  |
-| `ConditionSequentialNumber` | ✓ | |  |  |
-| `ConditionValidityStartDate` |  | |  |  |
-| `ConditionApplication` |  | |  |  |
-| `ConditionType` |  | |  |  |
-| `ConditionTextID` |  | |  |  |
-| `ConditionCalculationType` |  | |  |  |
-| `ConditionRateValue` |  | |  |  |
-| `ConditionRateValueUnit` |  | |  |  |
-| `ConditionQuantity` |  | |  |  |
-| `ConditionQuantityUnit` |  | |  |  |
-| `ConditionToBaseQtyNmrtr` |  | |  |  |
-| `ConditionToBaseQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ConditionLowerLimit` |  | |  |  |
-| `ConditionUpperLimit` |  | |  |  |
-| `ConditionAlternativeCurrency` |  | |  |  |
-| `ConditionExclusion` |  | |  |  |
-| `ConditionIsDeleted` |  | |  |  |
-| `AdditionalValueDays` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CndnMaxNumberOfSalesOrders` |  | |  |  |
-| `MinimumConditionBasisValue` |  | |  |  |
-| `MaximumConditionBasisValue` |  | |  |  |
-| `MaximumConditionAmount` |  | |  |  |
-| `ConditionReleaseStatus` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_SchedgAgrmtItmCndnValdty` | | ✓ | | |
-| `_PurSchedgAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `ConditionRecord` | ✓ | |  |  |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |  |  |
+| `ConditionSequentialNumber` | ✓ | |  |  |  |  |
+| `ConditionValidityStartDate` |  | |  |  |  |  |
+| `ConditionApplication` |  | |  |  |  |  |
+| `ConditionType` |  | |  |  |  |  |
+| `ConditionTextID` |  | |  |  |  |  |
+| `ConditionCalculationType` |  | |  |  |  |  |
+| `ConditionRateValue` |  | |  |  |  |  |
+| `ConditionRateValueUnit` |  | |  |  |  |  |
+| `ConditionQuantity` |  | |  |  |  |  |
+| `ConditionQuantityUnit` |  | |  |  |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ConditionLowerLimit` |  | |  |  |  |  |
+| `ConditionUpperLimit` |  | |  |  |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |  |  |
+| `ConditionExclusion` |  | |  |  |  |  |
+| `ConditionIsDeleted` |  | |  |  |  |  |
+| `AdditionalValueDays` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CndnMaxNumberOfSalesOrders` |  | |  |  |  |  |
+| `MinimumConditionBasisValue` |  | |  |  |  |  |
+| `MaximumConditionBasisValue` |  | |  |  |  |  |
+| `MaximumConditionAmount` |  | |  |  |  |  |
+| `ConditionReleaseStatus` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_SchedgAgrmtItmCndnValdty` | | ✓ | | | | |
+| `_PurSchedgAgrmt` | | ✓ | | | | |
 
 ## Source Code
 

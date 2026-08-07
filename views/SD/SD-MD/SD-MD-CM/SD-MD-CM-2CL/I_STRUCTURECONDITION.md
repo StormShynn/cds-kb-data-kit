@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StructureCondition` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kdupl )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StructureCondition` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kdupl )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

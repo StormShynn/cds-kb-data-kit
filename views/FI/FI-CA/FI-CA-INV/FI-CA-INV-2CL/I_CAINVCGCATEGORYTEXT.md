@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgCategory` | ✓ | | `_tfk2604t` | `inv_category` |
-| `Language` | ✓ | | `_tfk2604t` | `langu` |
-| `CAInvcgCategoryText` |  | |  | `cast( _tfk2604t.text as inv_category_txt_gfn_kk preserving type )` |
-| `_CAInvcgCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgCategory` | ✓ | | `_tfk2604t` | `inv_category` |  |  |
+| `Language` | ✓ | | `_tfk2604t` | `langu` |  |  |
+| `CAInvcgCategoryText` |  | |  | `cast( _tfk2604t.text as inv_category_txt_gfn_kk preserving type )` |  |  |
+| `_CAInvcgCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

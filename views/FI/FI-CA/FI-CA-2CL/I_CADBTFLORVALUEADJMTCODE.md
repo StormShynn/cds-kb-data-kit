@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADoubtfulOrValueAdjmtCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as infoz_kk )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADoubtfulOrValueAdjmtCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as infoz_kk )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

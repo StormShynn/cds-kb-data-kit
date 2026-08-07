@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PutawayStatus` | ✓ | |  | `cast(substring(dd07t.domvalue_l,1,1) as le_putaway_status preserving type )` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
-| `PutawayStatusName` |  | |  | `ddtext` |
-| `_PutawayStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PutawayStatus` | ✓ | |  | `cast(substring(dd07t.domvalue_l,1,1) as le_putaway_status preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |  |  |
+| `PutawayStatusName` |  | |  | `ddtext` |  |  |
+| `_PutawayStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

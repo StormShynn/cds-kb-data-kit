@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSpecAdditionalCatalog` | ✓ | |  | `katalogart` |
-| `InspSpecAdditionalCodeGroup` | ✓ | |  | `codegruppe` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspSpecAddlCodeGroupText` |  | |  | `kurztext` |
-| `_InspSpecAdditionalCatalog` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_InspSpecAddlCodeGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSpecAdditionalCatalog` | ✓ | |  | `katalogart` |  |  |
+| `InspSpecAdditionalCodeGroup` | ✓ | |  | `codegruppe` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspSpecAddlCodeGroupText` |  | |  | `kurztext` |  |  |
+| `_InspSpecAdditionalCatalog` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_InspSpecAddlCodeGroup` | | ✓ | | | | |
 
 ## Associations
 

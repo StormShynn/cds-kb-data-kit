@@ -29,226 +29,226 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NotaFiscal` | ✓ | |  | `docnum` |
-| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |
-| `BR_ICMSTaxSituation` |  | |  | `cast(case NFItem.taxsit when 'A' then '41' when 'B' then '51' else concat(NFItem.taxsit, '0') end as logbr_taxsit preserving type)` |
-| `BR_IPITaxSituation` |  | |  | `cast(NFItem.taxsi2 as logbr_taxsi2 preserving type)` |
-| `BR_ISSTaxSituation` |  | |  | `cast(NFItem.taxsi3 as logbr_isstaxsituation)` |
-| `BR_COFINSTaxSituation` |  | |  | `cast(NFItem.taxsi4 as logbr_taxsi4 preserving type)` |
-| `BR_PISTaxSituation` |  | |  | `cast(NFItem.taxsi5 as logbr_taxsi5 preserving type)` |
-| `BR_ICMSBaseDetn` |  | |  | `cast(NFItem.modbc as logbr_icms_base_det preserving type)` |
-| `BR_ICMSSTBaseDetermination` |  | |  | `cast(NFItem.modbcst as logbr_icst_base_det preserving type)` |
-| `BR_ICMSSTLegalClassfctn` |  | |  | `cast(NFItem.cest as logbr_cest preserving type)` |
-| `BR_SubstituteICMSAmount` |  | |  | `cast(NFItem.vicmssubstituto as logbr_vicmssubstituto preserving type)` |
-| `BR_ICMSExemptionReason` |  | |  | `cast(NFItem.motdesicms as logbr_icmsexemptionreason preserving type)` |
-| `BR_ICMSDefermentAmount` |  | |  | `cast(NFItem.vicmsdif as logbr_nfe_rfc_vicmsdif preserving type)` |
-| `BR_ICMSDeferralTaxRate` |  | |  | `cast(NFItem.picmsdef as logbr_picmsdef preserving type)` |
-| `BR_WithholdingICMSSTBaseAmount` |  | |  | `cast(NFItem.vbcstret as logbr_nfe_rfc_icmsstretbase preserving type)` |
-| `BR_WithholdingICMSSTAmount` |  | |  | `cast(NFItem.vicmsstret as logbr_nfe_rfc_icmsstrettaxval preserving type)` |
-| `BR_IPILegalClassification` |  | |  | `cast(NFItem.cenq as logbr_ipi_legal_class_code preserving type)` |
-| `BR_TobaccoBeverageIPIClassfctn` |  | |  | `cast(NFItem.clenq as logbr_ipi_class_tbc_bev preserving type)` |
-| `BR_IPIControlSealCode` |  | |  | `cast(NFItem.cselo as logbr_ipi_contr_seal_code preserving type)` |
-| `BR_IPIControlSealQuantityValue` |  | |  | `cast(NFItem.qselo as logbr_ipi_contr_seal_quan preserving type)` |
-| `CostCenter` |  | |  | `kostl` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `InternalOrder` |  | |  | `aufnr` |
-| `ProjectNetwork` |  | |  | `nplnr` |
-| `WBSElementInternalID` |  | |  | `ps_psp_pnr` |
-| `CostObject` |  | |  | `kstrg` |
-| `Segment` |  | |  | `segment` |
-| `BR_NFNetFreightAmount` |  | |  | `netfre` |
-| `BR_NFNetInsuranceAmount` |  | |  | `netins` |
-| `BR_NFNetOtherExpensesAmount` |  | |  | `netoth` |
-| `NetPriceAmount` |  | |  | `cast(NFItem.netpr as j_1bnfpri preserving type)` |
-| `NetValueAmount` |  | |  | `cast(NFItem.netwr as logbr_netamount preserving type)` |
-| `BR_NFItemType` |  | |  | `cast(NFItem.itmtyp as logbr_itmtyp preserving type)` |
-| `BR_ICMSOrISSIsIncludedInPrice` |  | |  | `incltx` |
-| `BR_NFItemIsStatistical` |  | |  | `cast(NFItem.statit as logbr_statit preserving type)` |
-| `BR_NFIsServiceItem` |  | |  | `tmiss` |
-| `Material` |  | |  | `matnr` |
-| `MaterialName` |  | |  | `maktx` |
-| `ValuationArea` |  | |  | `bwkey` |
-| `ValuationType` |  | |  | `cast(NFItem.bwtar as logbr_bwtar_d preserving type)` |
-| `MaterialGroup` |  | |  | `cast(NFItem.matkl as logbr_matkl preserving type)` |
-| `BR_CFOPCategory` |  | |  | `indus3` |
-| `QuantityInBaseUnit` |  | |  | `menge` |
-| `BaseUnit` |  | |  | `meins` |
-| `Plant` |  | |  | `werks` |
-| `Batch` |  | |  | `charg` |
-| `BR_NFSourceDocumentType` |  | |  | `reftyp` |
-| `BR_NFSourceDocumentNumber` |  | |  | `cast(NFItem.refkey as logbr_refkey preserving type)` |
-| `BR_NFSourceDocumentItem` |  | |  | `refitm` |
-| `BR_ReferenceNFNumber` |  | |  | `cast(NFItem.docref as logbr_docref preserving type)` |
-| `BR_ReferenceNFItem` |  | |  | `cast(NFItem.itmref as logbr_itmref preserving type)` |
-| `BR_NFPercentReturned` |  | |  | `cast(NFItem.pipidevol as logbr_nfe_pret preserving type)` |
-| `BR_NFNetDiscountAmount` |  | |  | `cast(NFItem.netdis as logbr_nfnetdiscountamount)` |
-| `BR_ExemptedICMSAmount` |  | |  | `cast(NFItem.vicmsdeson as logbr_nfe_vicmsdeson preserving type)` |
-| `BR_ICMSStatisticalExemptionAmt` |  | |  | `cast(NFItem.ststcl_vicmsdeson as logbr_ststcl_vicmsdeson preserving type)` |
-| `BR_ICMSSTMarginAddedPercent` |  | |  | `cast(NFItem.p_mvast as logbr_pmvast preserving type)` |
-| `BR_CPRBIsRelevant` |  | |  | `cprb` |
-| `BR_NFTotalAmount` |  | |  | `netwrt` |
-| `BR_CFOPCode` |  | |  | `cast(NFItem.cfop as logbr_cfopcode preserving type)` |
-| `BR_MaterialOrigin` |  | |  | `cast(NFItem.matorg as logbr_matorg preserving type)` |
-| `BR_MaterialUsage` |  | |  | `cast(NFItem.matuse as logbr_matuse preserving type)` |
-| `IsProducedInhouse` |  | |  | `cast(NFItem.ownpro as logbr_ownpro preserving type)` |
-| `NCMCode` |  | |  | `cast(NFItem.nbm as logbr_steuc preserving type)` |
-| `BR_NBSCode` |  | |  | `cast(NFItem.nbs as logbr_nbs preserving type)` |
-| `BR_EFDREINFServiceCode` |  | |  | `reinf_service_code` |
-| `BR_LC116ServiceCode` |  | |  | `lc116_service_code` |
-| `BR_ISSBenefitCode` |  | |  | `cbenef_iss` |
-| `BR_CSTISSCode` |  | |  | `municipal_iss_taxsit` |
-| `BR_NFApproximateTotalTaxAmount` |  | |  | `cast(NFItem.vtottrib as logbr_nf_vtottrib)` |
-| `BR_FCINumber` |  | |  | `cast(NFItem.nfci as logbr_nfe_nfci preserving type)` |
-| `BR_ICMSTaxLaw` |  | |  | `cast(NFItem.taxlw1 as logbr_taxlw1 preserving type)` |
-| `BR_IPITaxLaw` |  | |  | `cast(NFItem.taxlw2 as logbr_taxlw2 preserving type)` |
-| `BR_ISSTaxLaw` |  | |  | `taxlw3` |
-| `BR_COFINSTaxLaw` |  | |  | `taxlw4` |
-| `BR_PISTaxLaw` |  | |  | `cast(NFItem.taxlw5 as logbr_taxlw5 preserving type)` |
-| `GLAccount` |  | |  | `cast(NFItem.cod_cta as logbr_gl_account preserving type)` |
-| `PurchaseOrder` |  | |  | `xped` |
-| `PurchaseOrderItem` |  | |  | `cast(NFItem.nitemped as logbr_purch_ord_item_ext preserving type)` |
-| `InternationalArticleNumber` |  | |  | `cast(NFItem.cean as logbr_article_number preserving type)` |
-| `BR_NFExternalItemNumber` |  | |  | `cast(NFItem.num_item as logbr_ext_item_num preserving type)` |
-| `BR_RECOPINumber` |  | |  | `cast(NFItem.nrecopi as logbr_recopi preserving type)` |
-| `BR_ISSSuspensionProcess` |  | |  | `cast(NFItem.nprocesso as logbr_nfe_nprocesso preserving type)` |
-| `BR_NFTributaryQuantity` |  | |  | `cast(NFItem.menge_trib as logbr_qtdtrb preserving type)` |
-| `BR_NFTributaryUnit` |  | |  | `cast(NFItem.meins_trib as logbr_unttrb preserving type)` |
-| `BR_NFIsPhysicalMvtOfMaterial` |  | |  | `cast(NFItem.ind_mov as logbr_phys_move_mat preserving type)` |
-| `BR_NFItemHasTaxIncentive` |  | |  | `indincentivo` |
-| `BR_NFPriceAmountWithTaxes` |  | |  | `cast(NFItem.nfpri as j_1bnfpri preserving type)` |
-| `BR_NFValueAmountWithTaxes` |  | |  | `nfnet` |
-| `BR_NFDiscountAmountWithTaxes` |  | |  | `nfdis` |
-| `BR_NFFreightAmountWithTaxes` |  | |  | `nffre` |
-| `BR_NFInsuranceAmountWithTaxes` |  | |  | `nfins` |
-| `BR_NFExpensesAmountWithTaxes` |  | |  | `nfoth` |
-| `BR_NFExemptedICMSWithTaxes` |  | |  | `nficmsdeson` |
-| `BR_NFTotalAmountWithTaxes` |  | |  | `nfnett` |
-| `BR_TaxCode` |  | |  | `mwskz` |
-| `ActivityNumber` |  | |  | `srvnr` |
-| `CreditCalculationBaseCode` |  | |  | `nat_bc_cred` |
-| `BR_ReducnPctEffctvCalcBasis` |  | |  | `cast(NFItem.predbcefet as logbr_predbcefet preserving type)` |
-| `BR_EffctvCalcBasisAmount` |  | |  | `cast(NFItem.vbcefet as logbr_vbcefet preserving type)` |
-| `BR_EffectiveICMSRate` |  | |  | `picmsefet` |
-| `BR_EffectiveICMSAmount` |  | |  | `cast(NFItem.vicmsefet as logbr_vicmsefet preserving type)` |
-| `ProductionIsInRelevantScale` |  | |  | `cast(NFItem.indescala as logbr_indescala preserving type)` |
-| `BR_ManufacturerCNPJ` |  | |  | `cast(case when NFItem.cnpjfab > '99999999999999' then '00000000000000' else NFItem.cnpjfab end as logbr_cnpj_numc)` |
-| `BR_ManufacturerCNPJ_2` |  | |  | `cast(NFItem.cnpjfab as logbr_cnpjfab preserving type)` |
-| `TaxIncentiveCode` |  | |  | `cast(NFItem.cbenef as logbr_cbenef preserving type)` |
-| `BR_ICMSSTDestTaxBaseAmount` |  | |  | `cast(NFItem.vbcstdest as logbr_vbcstdest preserving type)` |
-| `BR_ICMSSTDestTaxAmount` |  | |  | `cast(NFItem.vicmsstdest as logbr_vicmsstdest preserving type)` |
-| `BR_FCPOnICMSSTWithheldBaseAmt` |  | |  | `cast(NFItem.vbcfcpstret as logbr_vbcfcpstret preserving type)` |
-| `BR_FCPonICMSSTWithheldRate` |  | |  | `cast(NFItem.pfcpstret as logbr_pfcpstret preserving type)` |
-| `CustomsChargesAmount` |  | |  | `cast(NFItem.vdespadu as logbr_vdespadu preserving type)` |
-| `BR_FCPOnICMSSTWithheldAmount` |  | |  | `cast(NFItem.vfcpstret as logbr_vfcpstret preserving type)` |
-| `BR_IOFTaxAmount` |  | |  | `cast(NFItem.viof as logbr_viof preserving type)` |
-| `BR_ICMSSTRateIncludingFCP` |  | |  | `pst` |
-| `BR_NFeStatisticalAmount` |  | |  | `voutro` |
-| `SalesDocumentCurrency` |  | | `_BR_NFDocumentCurrency` | `SalesDocumentCurrency` |
-| `BR_NFPartnerCNAE` |  | |  | `item_cnae_partner` |
-| `BR_BusinessPlaceCNAE` |  | |  | `item_cnae_bupla` |
-| `BR_NFFreightNature` |  | |  | `ind_nat_frt` |
-| `BR_InternalBarcode` |  | |  | `cast(NFItem.cbarra as logbr_cbarra preserving type)` |
-| `BR_InternalTributaryBarcode` |  | |  | `cast(NFItem.cbarra_trib as logbr_cbarra_trib preserving type)` |
-| `BR_NFIsPISSTInTotalAmount` |  | |  | `cast(NFItem.indsomapisst as logbr_indsomapisst preserving type)` |
-| `BR_PISSTInNFTotal` |  | |  | `cast(NFItem.indsomapisst as logbr_indsomapisst preserving type)` |
-| `BR_PISSTTaxAmount` |  | |  | `cast(NFItem.pisst as logbr_pisst preserving type)` |
-| `BR_PISSTTaxIncludedTaxAmount` |  | |  | `cast(NFItem.nfpisst as logbr_nfpisst preserving type)` |
-| `BR_NFIsCOFINSSTInTotalAmount` |  | |  | `cast(NFItem.indsomacofinsst as logbr_indsomacofinsst preserving type)` |
-| `BR_COFINSSTInNFTotal` |  | |  | `cast(NFItem.indsomacofinsst as logbr_indsomacofinsst preserving type)` |
-| `BR_COFINSSTTaxAmount` |  | |  | `cast(NFItem.cofinsst as logbr_cofinsst preserving type)` |
-| `BR_COFINSSTTxIncludedTaxAmount` |  | |  | `cast(NFItem.nfcofinsst as logbr_nfcofinsst preserving type)` |
-| `BR_ExclICMSAmtFromPISAndCOFINS` |  | |  | `cast(NFItem.excluded_icms_from_piscofins as logbr_exc_icms_piscof preserving type)` |
-| `BR_ICMSDefermentPercent` |  | |  | `cast(NFItem.pdif as logbr_pdif preserving type)` |
-| `BR_FCPOnICMSDefermentAmount` |  | |  | `cast(NFItem.vfcpdif as logbr_vfcpdif preserving type)` |
-| `BR_FCPOnICMSDeferralTaxRate` |  | |  | `cast(NFItem.pfcpdef as logbr_pfcpdef preserving type)` |
-| `BR_FCPOnICMSDefermentPercent` |  | |  | `cast(NFItem.pfcpdif as logbr_pfcpdif preserving type)` |
-| `BR_ExemptedICMSSTAmount` |  | |  | `cast(NFItem.vicmsstdeson as logbr_vicmsstdeson preserving type)` |
-| `BR_ICMSSTExemptionReason` |  | |  | `cast(NFItem.motdesicmsst as logbr_motdesicmsst preserving type)` |
-| `BR_NFMonoICMSDeferredAmount` |  | |  | `cast(NFItem.vicmsmonodif as logbr_vicmsmonodif preserving type)` |
-| `BR_NFAdRemICMSRetainedTaxRate` |  | |  | `cast(NFItem.adremicmsret as logbr_adremicmsret preserving type)` |
-| `BR_NFMonoICMSRetainedAmount` |  | |  | `cast(NFItem.vicmsmonoret as logbr_vicmsmonoret preserving type)` |
-| `BR_NFMonoRetainedTaxedQuantity` |  | |  | `cast(NFItem.qbcmonoret as logbr_qbcmonoret preserving type)` |
-| `BR_NFAdRemICMSReductionReason` |  | |  | `cast(NFItem.motredadrem as logbr_motredadrem preserving type)` |
-| `BR_NFAdRemICMSReductionRate` |  | |  | `cast(NFItem.predadrem as logbr_predadrem preserving type)` |
-| `BR_NFMonoICMSOperationAmount` |  | |  | `cast(NFItem.vicmsmonoop as logbr_vicmsmonoop preserving type)` |
-| `BR_NFAdRemICMSDeferralPercent` |  | |  | `cast(NFItem.adremicmspdif as logbr_adremicmspdif preserving type )` |
-| `BR_FsclBnftCodeTxBaseReduction` |  | |  | `cast(NFItem.cbenef_rbc as logbr_rbcfiscalbenefitcode preserving type)` |
-| `BR_IsICMSDdctdNFTotal` |  | |  | `cast(NFItem.inddeduzdeson as logbr_inddeduzdeson preserving type)` |
-| `BR_IBSAndCBSIntTaxSitnCode` |  | |  | `cast(NFItem.taxsituation as logbr_tax_situation preserving type)` |
-| `BR_IBSAndCBSTaxSituationCode` |  | |  | `cast(NFItem.cst as logbr_cbs_ibs_cst preserving type)` |
-| `BR_IBSAndCBSTaxClfnCode` |  | |  | `cast(NFItem.cclasstrib as logbr_cbs_ibs_cclasstrib preserving type )` |
-| `BR_StateIBSRate` |  | |  | `pibsuf` |
-| `BR_StateIBSDeferralPercent` |  | |  | `pdifibsuf` |
-| `BR_StateIBSDeferralAmount` |  | |  | `vdifibsuf` |
-| `BR_StateIBSTaxRefundAmount` |  | |  | `vdevtribibsuf` |
-| `BR_StateIBSRateReducnPercent` |  | |  | `predaliqibsuf` |
-| `BR_MunicipalIBSRate` |  | |  | `pibsmun` |
-| `BR_MncplIBSDeferralPercent` |  | |  | `pdifibsmun` |
-| `BR_MncplIBSDeferralAmount` |  | |  | `vdifibsmun` |
-| `BR_MncplIBSTaxRefundAmount` |  | |  | `vdevtribibsmun` |
-| `BR_MncplIBSRateReducnPercent` |  | |  | `predaliqibsmun` |
-| `BR_CBSRate` |  | |  | `cast(NFItem.pcbs as logbr_pcbs preserving type )` |
-| `BR_CBSDeferralPercent` |  | |  | `pdifcbs` |
-| `BR_CBSDeferralAmount` |  | |  | `vdifcbs` |
-| `BR_CBSTaxRefundAmount` |  | |  | `vdevtribcbs` |
-| `BR_CBSRateReducnPercent` |  | |  | `cast(NFItem.predaliqcbs as logbr_cbs_rate_reduction preserving type )` |
-| `BR_IBSAndCBSRegularIntSitnCode` |  | |  | `cast(NFItem.taxsituationreg as logbr_tax_situation preserving type)` |
-| `BR_IBSAndCBSRegularTaxSitnCode` |  | |  | `cstreg` |
-| `BR_IBSAndCBSRegularTaxClfnCode` |  | |  | `cclasstribreg` |
-| `BR_StateIBSEffectiveRate` |  | |  | `paliqefetregibsuf` |
-| `BR_StateIBSAmount` |  | |  | `vtribregibsuf` |
-| `BR_MunicipalIBSEffectiveRate` |  | |  | `paliqefetregibsmun` |
-| `BR_MunicipalIBSAmount` |  | |  | `vtribregibsmun` |
-| `BR_CBSEffectiveRate` |  | |  | `paliqefetregcbs` |
-| `BR_CBSAmount` |  | |  | `vtribregcbs` |
-| `BR_IBSPresumedCreditClfnCode` |  | |  | `ccredpresibs` |
-| `BR_IBSPresumedCreditPercent` |  | |  | `pcredpresibs` |
-| `BR_IBSPresumedCreditAmount` |  | |  | `vcredpresibs` |
-| `BR_IBSPrsmdCrdtSuspCndnAmount` |  | |  | `vcredprescondsusibs` |
-| `BR_CBSPresumedCrdtClfnCode` |  | |  | `ccredprescbs` |
-| `BR_CBSPresumedCreditPercent` |  | |  | `pcredprescbs` |
-| `BR_CBSPresumedCreditAmount` |  | |  | `vcredprescbs` |
-| `BR_CBSPrsmdCrdtSuspCndnAmount` |  | |  | `vcredprescondsuscbs` |
-| `BR_ReferencedDFeAccessKey` |  | |  | `chavedeacessodfe` |
-| `BR_ReferencedDFeItemNumber` |  | |  | `nitemdfe` |
-| `BR_UsedMovableAsset` |  | |  | `indbemmovelusado` |
-| `BR_GvmntProcmtStateIBSRate` |  | |  | `pibsufgovpur` |
-| `BR_GvmntProcmtStateIBSFullAmt` |  | |  | `vibsufgovpur` |
-| `BR_GvmntProcmtMncplIBSRate` |  | |  | `pibsmungovpur` |
-| `BR_GvmntProcmtMncplIBSFullAmt` |  | |  | `vibsmungovpur` |
-| `BR_GvmntProcmtCBSRate` |  | |  | `pcbsgovpur` |
-| `BR_GvmntProcmtCBSFullAmount` |  | |  | `vcbsgovpur` |
-| `BR_CreditTransferIBSAmount` |  | |  | `vibstransfcred` |
-| `BR_CreditTransferCBSAmount` |  | |  | `vcbstransfcred` |
-| `BR_FreeTxZoneIBSPrsmdCrdtClfn` |  | |  | `tpcredpresibszfm` |
-| `BR_FreeTxZoneIBSPrsmdCrdtAmt` |  | |  | `vcredpresibszfm` |
-| `BR_FreeTxZoneIBSSbcalcClfnCode` |  | |  | `tpcredpresibszfmprod` |
-| `BR_NatureOfDonationOperation` |  | |  | `inddoacao` |
-| `BR_ValidationAdjustmentPeriod` |  | |  | `competapurajustecompet` |
-| `BR_IBSValdtnAdjustmentAmount` |  | |  | `vibsajustecompet` |
-| `BR_CBSValdtnAdjustmentAmount` |  | |  | `vcbsajustecompet` |
-| `BR_IBSReversalAmount` |  | |  | `vibsestcred` |
-| `BR_CBSReversalAmount` |  | |  | `vcbsestcred` |
-| `BR_PresumedCreditBaseAmount` |  | |  | `vbccredpres` |
-| `BR_PresumedCreditClfnCode` |  | |  | `ccredpres` |
-| `BR_FreeTxZoneIBSValdtnPerd` |  | |  | `competapurcredpresibszfm` |
-| `_BaseUnit` | | ✓ | | |
-| `_NFTributaryUnit` | | ✓ | | |
-| `_SalesDocumentCurrency` | | ✓ | | |
-| `_BR_NotaFiscal` | | ✓ | | |
-| `_BR_ICMSBaseDetn` | | ✓ | | |
-| `_BR_ICMSExemptionReason` | | ✓ | | |
-| `_BR_ICMSSTBaseDetn` | | ✓ | | |
-| `_BR_ICMSTaxSituation` | | ✓ | | |
-| `_MaterialOrigin` | | ✓ | | |
-| `_MaterialUsage` | | ✓ | | |
-| `_BR_CNAEPartner` | | ✓ | | |
-| `_BR_CNAEBusinessPlace` | | ✓ | | |
-| `_BR_NFFreightNature` | | ✓ | | |
-| `_BR_ICMSSTExemptionReason` | | ✓ | | |
-| `_BR_NFAdRemICMSReducnReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |  |  |
+| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |  |  |
+| `BR_ICMSTaxSituation` |  | |  | `cast(case NFItem.taxsit when 'A' then '41' when 'B' then '51' else concat(NFItem.taxsit, '0') end as logbr_taxsit preserving type)` |  |  |
+| `BR_IPITaxSituation` |  | |  | `cast(NFItem.taxsi2 as logbr_taxsi2 preserving type)` |  |  |
+| `BR_ISSTaxSituation` |  | |  | `cast(NFItem.taxsi3 as logbr_isstaxsituation)` |  |  |
+| `BR_COFINSTaxSituation` |  | |  | `cast(NFItem.taxsi4 as logbr_taxsi4 preserving type)` |  |  |
+| `BR_PISTaxSituation` |  | |  | `cast(NFItem.taxsi5 as logbr_taxsi5 preserving type)` |  |  |
+| `BR_ICMSBaseDetn` |  | |  | `cast(NFItem.modbc as logbr_icms_base_det preserving type)` |  |  |
+| `BR_ICMSSTBaseDetermination` |  | |  | `cast(NFItem.modbcst as logbr_icst_base_det preserving type)` |  |  |
+| `BR_ICMSSTLegalClassfctn` |  | |  | `cast(NFItem.cest as logbr_cest preserving type)` |  |  |
+| `BR_SubstituteICMSAmount` |  | |  | `cast(NFItem.vicmssubstituto as logbr_vicmssubstituto preserving type)` |  |  |
+| `BR_ICMSExemptionReason` |  | |  | `cast(NFItem.motdesicms as logbr_icmsexemptionreason preserving type)` |  |  |
+| `BR_ICMSDefermentAmount` |  | |  | `cast(NFItem.vicmsdif as logbr_nfe_rfc_vicmsdif preserving type)` |  |  |
+| `BR_ICMSDeferralTaxRate` |  | |  | `cast(NFItem.picmsdef as logbr_picmsdef preserving type)` |  |  |
+| `BR_WithholdingICMSSTBaseAmount` |  | |  | `cast(NFItem.vbcstret as logbr_nfe_rfc_icmsstretbase preserving type)` |  |  |
+| `BR_WithholdingICMSSTAmount` |  | |  | `cast(NFItem.vicmsstret as logbr_nfe_rfc_icmsstrettaxval preserving type)` |  |  |
+| `BR_IPILegalClassification` |  | |  | `cast(NFItem.cenq as logbr_ipi_legal_class_code preserving type)` |  |  |
+| `BR_TobaccoBeverageIPIClassfctn` |  | |  | `cast(NFItem.clenq as logbr_ipi_class_tbc_bev preserving type)` |  |  |
+| `BR_IPIControlSealCode` |  | |  | `cast(NFItem.cselo as logbr_ipi_contr_seal_code preserving type)` |  |  |
+| `BR_IPIControlSealQuantityValue` |  | |  | `cast(NFItem.qselo as logbr_ipi_contr_seal_quan preserving type)` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `InternalOrder` |  | |  | `aufnr` |  |  |
+| `ProjectNetwork` |  | |  | `nplnr` |  |  |
+| `WBSElementInternalID` |  | |  | `ps_psp_pnr` |  |  |
+| `CostObject` |  | |  | `kstrg` |  |  |
+| `Segment` |  | |  | `segment` |  |  |
+| `BR_NFNetFreightAmount` |  | |  | `netfre` |  |  |
+| `BR_NFNetInsuranceAmount` |  | |  | `netins` |  |  |
+| `BR_NFNetOtherExpensesAmount` |  | |  | `netoth` |  |  |
+| `NetPriceAmount` |  | |  | `cast(NFItem.netpr as j_1bnfpri preserving type)` |  |  |
+| `NetValueAmount` |  | |  | `cast(NFItem.netwr as logbr_netamount preserving type)` |  |  |
+| `BR_NFItemType` |  | |  | `cast(NFItem.itmtyp as logbr_itmtyp preserving type)` |  |  |
+| `BR_ICMSOrISSIsIncludedInPrice` |  | |  | `incltx` |  |  |
+| `BR_NFItemIsStatistical` |  | |  | `cast(NFItem.statit as logbr_statit preserving type)` |  |  |
+| `BR_NFIsServiceItem` |  | |  | `tmiss` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `MaterialName` |  | |  | `maktx` |  |  |
+| `ValuationArea` |  | |  | `bwkey` |  |  |
+| `ValuationType` |  | |  | `cast(NFItem.bwtar as logbr_bwtar_d preserving type)` |  |  |
+| `MaterialGroup` |  | |  | `cast(NFItem.matkl as logbr_matkl preserving type)` |  |  |
+| `BR_CFOPCategory` |  | |  | `indus3` |  |  |
+| `QuantityInBaseUnit` |  | |  | `menge` |  |  |
+| `BaseUnit` |  | |  | `meins` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `Batch` |  | |  | `charg` |  |  |
+| `BR_NFSourceDocumentType` |  | |  | `reftyp` |  |  |
+| `BR_NFSourceDocumentNumber` |  | |  | `cast(NFItem.refkey as logbr_refkey preserving type)` |  |  |
+| `BR_NFSourceDocumentItem` |  | |  | `refitm` |  |  |
+| `BR_ReferenceNFNumber` |  | |  | `cast(NFItem.docref as logbr_docref preserving type)` |  |  |
+| `BR_ReferenceNFItem` |  | |  | `cast(NFItem.itmref as logbr_itmref preserving type)` |  |  |
+| `BR_NFPercentReturned` |  | |  | `cast(NFItem.pipidevol as logbr_nfe_pret preserving type)` |  |  |
+| `BR_NFNetDiscountAmount` |  | |  | `cast(NFItem.netdis as logbr_nfnetdiscountamount)` |  |  |
+| `BR_ExemptedICMSAmount` |  | |  | `cast(NFItem.vicmsdeson as logbr_nfe_vicmsdeson preserving type)` |  |  |
+| `BR_ICMSStatisticalExemptionAmt` |  | |  | `cast(NFItem.ststcl_vicmsdeson as logbr_ststcl_vicmsdeson preserving type)` |  |  |
+| `BR_ICMSSTMarginAddedPercent` |  | |  | `cast(NFItem.p_mvast as logbr_pmvast preserving type)` |  |  |
+| `BR_CPRBIsRelevant` |  | |  | `cprb` |  |  |
+| `BR_NFTotalAmount` |  | |  | `netwrt` |  |  |
+| `BR_CFOPCode` |  | |  | `cast(NFItem.cfop as logbr_cfopcode preserving type)` |  |  |
+| `BR_MaterialOrigin` |  | |  | `cast(NFItem.matorg as logbr_matorg preserving type)` |  |  |
+| `BR_MaterialUsage` |  | |  | `cast(NFItem.matuse as logbr_matuse preserving type)` |  |  |
+| `IsProducedInhouse` |  | |  | `cast(NFItem.ownpro as logbr_ownpro preserving type)` |  |  |
+| `NCMCode` |  | |  | `cast(NFItem.nbm as logbr_steuc preserving type)` |  |  |
+| `BR_NBSCode` |  | |  | `cast(NFItem.nbs as logbr_nbs preserving type)` |  |  |
+| `BR_EFDREINFServiceCode` |  | |  | `reinf_service_code` |  |  |
+| `BR_LC116ServiceCode` |  | |  | `lc116_service_code` |  |  |
+| `BR_ISSBenefitCode` |  | |  | `cbenef_iss` |  |  |
+| `BR_CSTISSCode` |  | |  | `municipal_iss_taxsit` |  |  |
+| `BR_NFApproximateTotalTaxAmount` |  | |  | `cast(NFItem.vtottrib as logbr_nf_vtottrib)` |  |  |
+| `BR_FCINumber` |  | |  | `cast(NFItem.nfci as logbr_nfe_nfci preserving type)` |  |  |
+| `BR_ICMSTaxLaw` |  | |  | `cast(NFItem.taxlw1 as logbr_taxlw1 preserving type)` |  |  |
+| `BR_IPITaxLaw` |  | |  | `cast(NFItem.taxlw2 as logbr_taxlw2 preserving type)` |  |  |
+| `BR_ISSTaxLaw` |  | |  | `taxlw3` |  |  |
+| `BR_COFINSTaxLaw` |  | |  | `taxlw4` |  |  |
+| `BR_PISTaxLaw` |  | |  | `cast(NFItem.taxlw5 as logbr_taxlw5 preserving type)` |  |  |
+| `GLAccount` |  | |  | `cast(NFItem.cod_cta as logbr_gl_account preserving type)` |  |  |
+| `PurchaseOrder` |  | |  | `xped` |  |  |
+| `PurchaseOrderItem` |  | |  | `cast(NFItem.nitemped as logbr_purch_ord_item_ext preserving type)` |  |  |
+| `InternationalArticleNumber` |  | |  | `cast(NFItem.cean as logbr_article_number preserving type)` |  |  |
+| `BR_NFExternalItemNumber` |  | |  | `cast(NFItem.num_item as logbr_ext_item_num preserving type)` |  |  |
+| `BR_RECOPINumber` |  | |  | `cast(NFItem.nrecopi as logbr_recopi preserving type)` |  |  |
+| `BR_ISSSuspensionProcess` |  | |  | `cast(NFItem.nprocesso as logbr_nfe_nprocesso preserving type)` |  |  |
+| `BR_NFTributaryQuantity` |  | |  | `cast(NFItem.menge_trib as logbr_qtdtrb preserving type)` |  |  |
+| `BR_NFTributaryUnit` |  | |  | `cast(NFItem.meins_trib as logbr_unttrb preserving type)` |  |  |
+| `BR_NFIsPhysicalMvtOfMaterial` |  | |  | `cast(NFItem.ind_mov as logbr_phys_move_mat preserving type)` |  |  |
+| `BR_NFItemHasTaxIncentive` |  | |  | `indincentivo` |  |  |
+| `BR_NFPriceAmountWithTaxes` |  | |  | `cast(NFItem.nfpri as j_1bnfpri preserving type)` |  |  |
+| `BR_NFValueAmountWithTaxes` |  | |  | `nfnet` |  |  |
+| `BR_NFDiscountAmountWithTaxes` |  | |  | `nfdis` |  |  |
+| `BR_NFFreightAmountWithTaxes` |  | |  | `nffre` |  |  |
+| `BR_NFInsuranceAmountWithTaxes` |  | |  | `nfins` |  |  |
+| `BR_NFExpensesAmountWithTaxes` |  | |  | `nfoth` |  |  |
+| `BR_NFExemptedICMSWithTaxes` |  | |  | `nficmsdeson` |  |  |
+| `BR_NFTotalAmountWithTaxes` |  | |  | `nfnett` |  |  |
+| `BR_TaxCode` |  | |  | `mwskz` |  |  |
+| `ActivityNumber` |  | |  | `srvnr` |  |  |
+| `CreditCalculationBaseCode` |  | |  | `nat_bc_cred` |  |  |
+| `BR_ReducnPctEffctvCalcBasis` |  | |  | `cast(NFItem.predbcefet as logbr_predbcefet preserving type)` |  |  |
+| `BR_EffctvCalcBasisAmount` |  | |  | `cast(NFItem.vbcefet as logbr_vbcefet preserving type)` |  |  |
+| `BR_EffectiveICMSRate` |  | |  | `picmsefet` |  |  |
+| `BR_EffectiveICMSAmount` |  | |  | `cast(NFItem.vicmsefet as logbr_vicmsefet preserving type)` |  |  |
+| `ProductionIsInRelevantScale` |  | |  | `cast(NFItem.indescala as logbr_indescala preserving type)` |  |  |
+| `BR_ManufacturerCNPJ` |  | |  | `cast(case when NFItem.cnpjfab > '99999999999999' then '00000000000000' else NFItem.cnpjfab end as logbr_cnpj_numc)` |  |  |
+| `BR_ManufacturerCNPJ_2` |  | |  | `cast(NFItem.cnpjfab as logbr_cnpjfab preserving type)` |  |  |
+| `TaxIncentiveCode` |  | |  | `cast(NFItem.cbenef as logbr_cbenef preserving type)` |  |  |
+| `BR_ICMSSTDestTaxBaseAmount` |  | |  | `cast(NFItem.vbcstdest as logbr_vbcstdest preserving type)` |  |  |
+| `BR_ICMSSTDestTaxAmount` |  | |  | `cast(NFItem.vicmsstdest as logbr_vicmsstdest preserving type)` |  |  |
+| `BR_FCPOnICMSSTWithheldBaseAmt` |  | |  | `cast(NFItem.vbcfcpstret as logbr_vbcfcpstret preserving type)` |  |  |
+| `BR_FCPonICMSSTWithheldRate` |  | |  | `cast(NFItem.pfcpstret as logbr_pfcpstret preserving type)` |  |  |
+| `CustomsChargesAmount` |  | |  | `cast(NFItem.vdespadu as logbr_vdespadu preserving type)` |  |  |
+| `BR_FCPOnICMSSTWithheldAmount` |  | |  | `cast(NFItem.vfcpstret as logbr_vfcpstret preserving type)` |  |  |
+| `BR_IOFTaxAmount` |  | |  | `cast(NFItem.viof as logbr_viof preserving type)` |  |  |
+| `BR_ICMSSTRateIncludingFCP` |  | |  | `pst` |  |  |
+| `BR_NFeStatisticalAmount` |  | |  | `voutro` |  |  |
+| `SalesDocumentCurrency` |  | | `_BR_NFDocumentCurrency` | `SalesDocumentCurrency` |  |  |
+| `BR_NFPartnerCNAE` |  | |  | `item_cnae_partner` |  |  |
+| `BR_BusinessPlaceCNAE` |  | |  | `item_cnae_bupla` |  |  |
+| `BR_NFFreightNature` |  | |  | `ind_nat_frt` |  |  |
+| `BR_InternalBarcode` |  | |  | `cast(NFItem.cbarra as logbr_cbarra preserving type)` |  |  |
+| `BR_InternalTributaryBarcode` |  | |  | `cast(NFItem.cbarra_trib as logbr_cbarra_trib preserving type)` |  |  |
+| `BR_NFIsPISSTInTotalAmount` |  | |  | `cast(NFItem.indsomapisst as logbr_indsomapisst preserving type)` |  |  |
+| `BR_PISSTInNFTotal` |  | |  | `cast(NFItem.indsomapisst as logbr_indsomapisst preserving type)` |  |  |
+| `BR_PISSTTaxAmount` |  | |  | `cast(NFItem.pisst as logbr_pisst preserving type)` |  |  |
+| `BR_PISSTTaxIncludedTaxAmount` |  | |  | `cast(NFItem.nfpisst as logbr_nfpisst preserving type)` |  |  |
+| `BR_NFIsCOFINSSTInTotalAmount` |  | |  | `cast(NFItem.indsomacofinsst as logbr_indsomacofinsst preserving type)` |  |  |
+| `BR_COFINSSTInNFTotal` |  | |  | `cast(NFItem.indsomacofinsst as logbr_indsomacofinsst preserving type)` |  |  |
+| `BR_COFINSSTTaxAmount` |  | |  | `cast(NFItem.cofinsst as logbr_cofinsst preserving type)` |  |  |
+| `BR_COFINSSTTxIncludedTaxAmount` |  | |  | `cast(NFItem.nfcofinsst as logbr_nfcofinsst preserving type)` |  |  |
+| `BR_ExclICMSAmtFromPISAndCOFINS` |  | |  | `cast(NFItem.excluded_icms_from_piscofins as logbr_exc_icms_piscof preserving type)` |  |  |
+| `BR_ICMSDefermentPercent` |  | |  | `cast(NFItem.pdif as logbr_pdif preserving type)` |  |  |
+| `BR_FCPOnICMSDefermentAmount` |  | |  | `cast(NFItem.vfcpdif as logbr_vfcpdif preserving type)` |  |  |
+| `BR_FCPOnICMSDeferralTaxRate` |  | |  | `cast(NFItem.pfcpdef as logbr_pfcpdef preserving type)` |  |  |
+| `BR_FCPOnICMSDefermentPercent` |  | |  | `cast(NFItem.pfcpdif as logbr_pfcpdif preserving type)` |  |  |
+| `BR_ExemptedICMSSTAmount` |  | |  | `cast(NFItem.vicmsstdeson as logbr_vicmsstdeson preserving type)` |  |  |
+| `BR_ICMSSTExemptionReason` |  | |  | `cast(NFItem.motdesicmsst as logbr_motdesicmsst preserving type)` |  |  |
+| `BR_NFMonoICMSDeferredAmount` |  | |  | `cast(NFItem.vicmsmonodif as logbr_vicmsmonodif preserving type)` |  |  |
+| `BR_NFAdRemICMSRetainedTaxRate` |  | |  | `cast(NFItem.adremicmsret as logbr_adremicmsret preserving type)` |  |  |
+| `BR_NFMonoICMSRetainedAmount` |  | |  | `cast(NFItem.vicmsmonoret as logbr_vicmsmonoret preserving type)` |  |  |
+| `BR_NFMonoRetainedTaxedQuantity` |  | |  | `cast(NFItem.qbcmonoret as logbr_qbcmonoret preserving type)` |  |  |
+| `BR_NFAdRemICMSReductionReason` |  | |  | `cast(NFItem.motredadrem as logbr_motredadrem preserving type)` |  |  |
+| `BR_NFAdRemICMSReductionRate` |  | |  | `cast(NFItem.predadrem as logbr_predadrem preserving type)` |  |  |
+| `BR_NFMonoICMSOperationAmount` |  | |  | `cast(NFItem.vicmsmonoop as logbr_vicmsmonoop preserving type)` |  |  |
+| `BR_NFAdRemICMSDeferralPercent` |  | |  | `cast(NFItem.adremicmspdif as logbr_adremicmspdif preserving type )` |  |  |
+| `BR_FsclBnftCodeTxBaseReduction` |  | |  | `cast(NFItem.cbenef_rbc as logbr_rbcfiscalbenefitcode preserving type)` |  |  |
+| `BR_IsICMSDdctdNFTotal` |  | |  | `cast(NFItem.inddeduzdeson as logbr_inddeduzdeson preserving type)` |  |  |
+| `BR_IBSAndCBSIntTaxSitnCode` |  | |  | `cast(NFItem.taxsituation as logbr_tax_situation preserving type)` |  |  |
+| `BR_IBSAndCBSTaxSituationCode` |  | |  | `cast(NFItem.cst as logbr_cbs_ibs_cst preserving type)` |  |  |
+| `BR_IBSAndCBSTaxClfnCode` |  | |  | `cast(NFItem.cclasstrib as logbr_cbs_ibs_cclasstrib preserving type )` |  |  |
+| `BR_StateIBSRate` |  | |  | `pibsuf` |  |  |
+| `BR_StateIBSDeferralPercent` |  | |  | `pdifibsuf` |  |  |
+| `BR_StateIBSDeferralAmount` |  | |  | `vdifibsuf` |  |  |
+| `BR_StateIBSTaxRefundAmount` |  | |  | `vdevtribibsuf` |  |  |
+| `BR_StateIBSRateReducnPercent` |  | |  | `predaliqibsuf` |  |  |
+| `BR_MunicipalIBSRate` |  | |  | `pibsmun` |  |  |
+| `BR_MncplIBSDeferralPercent` |  | |  | `pdifibsmun` |  |  |
+| `BR_MncplIBSDeferralAmount` |  | |  | `vdifibsmun` |  |  |
+| `BR_MncplIBSTaxRefundAmount` |  | |  | `vdevtribibsmun` |  |  |
+| `BR_MncplIBSRateReducnPercent` |  | |  | `predaliqibsmun` |  |  |
+| `BR_CBSRate` |  | |  | `cast(NFItem.pcbs as logbr_pcbs preserving type )` |  |  |
+| `BR_CBSDeferralPercent` |  | |  | `pdifcbs` |  |  |
+| `BR_CBSDeferralAmount` |  | |  | `vdifcbs` |  |  |
+| `BR_CBSTaxRefundAmount` |  | |  | `vdevtribcbs` |  |  |
+| `BR_CBSRateReducnPercent` |  | |  | `cast(NFItem.predaliqcbs as logbr_cbs_rate_reduction preserving type )` |  |  |
+| `BR_IBSAndCBSRegularIntSitnCode` |  | |  | `cast(NFItem.taxsituationreg as logbr_tax_situation preserving type)` |  |  |
+| `BR_IBSAndCBSRegularTaxSitnCode` |  | |  | `cstreg` |  |  |
+| `BR_IBSAndCBSRegularTaxClfnCode` |  | |  | `cclasstribreg` |  |  |
+| `BR_StateIBSEffectiveRate` |  | |  | `paliqefetregibsuf` |  |  |
+| `BR_StateIBSAmount` |  | |  | `vtribregibsuf` |  |  |
+| `BR_MunicipalIBSEffectiveRate` |  | |  | `paliqefetregibsmun` |  |  |
+| `BR_MunicipalIBSAmount` |  | |  | `vtribregibsmun` |  |  |
+| `BR_CBSEffectiveRate` |  | |  | `paliqefetregcbs` |  |  |
+| `BR_CBSAmount` |  | |  | `vtribregcbs` |  |  |
+| `BR_IBSPresumedCreditClfnCode` |  | |  | `ccredpresibs` |  |  |
+| `BR_IBSPresumedCreditPercent` |  | |  | `pcredpresibs` |  |  |
+| `BR_IBSPresumedCreditAmount` |  | |  | `vcredpresibs` |  |  |
+| `BR_IBSPrsmdCrdtSuspCndnAmount` |  | |  | `vcredprescondsusibs` |  |  |
+| `BR_CBSPresumedCrdtClfnCode` |  | |  | `ccredprescbs` |  |  |
+| `BR_CBSPresumedCreditPercent` |  | |  | `pcredprescbs` |  |  |
+| `BR_CBSPresumedCreditAmount` |  | |  | `vcredprescbs` |  |  |
+| `BR_CBSPrsmdCrdtSuspCndnAmount` |  | |  | `vcredprescondsuscbs` |  |  |
+| `BR_ReferencedDFeAccessKey` |  | |  | `chavedeacessodfe` |  |  |
+| `BR_ReferencedDFeItemNumber` |  | |  | `nitemdfe` |  |  |
+| `BR_UsedMovableAsset` |  | |  | `indbemmovelusado` |  |  |
+| `BR_GvmntProcmtStateIBSRate` |  | |  | `pibsufgovpur` |  |  |
+| `BR_GvmntProcmtStateIBSFullAmt` |  | |  | `vibsufgovpur` |  |  |
+| `BR_GvmntProcmtMncplIBSRate` |  | |  | `pibsmungovpur` |  |  |
+| `BR_GvmntProcmtMncplIBSFullAmt` |  | |  | `vibsmungovpur` |  |  |
+| `BR_GvmntProcmtCBSRate` |  | |  | `pcbsgovpur` |  |  |
+| `BR_GvmntProcmtCBSFullAmount` |  | |  | `vcbsgovpur` |  |  |
+| `BR_CreditTransferIBSAmount` |  | |  | `vibstransfcred` |  |  |
+| `BR_CreditTransferCBSAmount` |  | |  | `vcbstransfcred` |  |  |
+| `BR_FreeTxZoneIBSPrsmdCrdtClfn` |  | |  | `tpcredpresibszfm` |  |  |
+| `BR_FreeTxZoneIBSPrsmdCrdtAmt` |  | |  | `vcredpresibszfm` |  |  |
+| `BR_FreeTxZoneIBSSbcalcClfnCode` |  | |  | `tpcredpresibszfmprod` |  |  |
+| `BR_NatureOfDonationOperation` |  | |  | `inddoacao` |  |  |
+| `BR_ValidationAdjustmentPeriod` |  | |  | `competapurajustecompet` |  |  |
+| `BR_IBSValdtnAdjustmentAmount` |  | |  | `vibsajustecompet` |  |  |
+| `BR_CBSValdtnAdjustmentAmount` |  | |  | `vcbsajustecompet` |  |  |
+| `BR_IBSReversalAmount` |  | |  | `vibsestcred` |  |  |
+| `BR_CBSReversalAmount` |  | |  | `vcbsestcred` |  |  |
+| `BR_PresumedCreditBaseAmount` |  | |  | `vbccredpres` |  |  |
+| `BR_PresumedCreditClfnCode` |  | |  | `ccredpres` |  |  |
+| `BR_FreeTxZoneIBSValdtnPerd` |  | |  | `competapurcredpresibszfm` |  |  |
+| `_BaseUnit` | | ✓ | | | | |
+| `_NFTributaryUnit` | | ✓ | | | | |
+| `_SalesDocumentCurrency` | | ✓ | | | | |
+| `_BR_NotaFiscal` | | ✓ | | | | |
+| `_BR_ICMSBaseDetn` | | ✓ | | | | |
+| `_BR_ICMSExemptionReason` | | ✓ | | | | |
+| `_BR_ICMSSTBaseDetn` | | ✓ | | | | |
+| `_BR_ICMSTaxSituation` | | ✓ | | | | |
+| `_MaterialOrigin` | | ✓ | | | | |
+| `_MaterialUsage` | | ✓ | | | | |
+| `_BR_CNAEPartner` | | ✓ | | | | |
+| `_BR_CNAEBusinessPlace` | | ✓ | | | | |
+| `_BR_NFFreightNature` | | ✓ | | | | |
+| `_BR_ICMSSTExemptionReason` | | ✓ | | | | |
+| `_BR_NFAdRemICMSReducnReason` | | ✓ | | | | |
 
 ## Associations
 

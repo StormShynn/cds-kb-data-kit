@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_BR_CNAEText` | `spras` |
-| `BR_CNAE` | ✓ | | `_BR_CNAEText` | `j_1bcnae` |
-| `BR_CNAEDesc` |  | |  | `cast(_BR_CNAEText.j_1bcnaex as logbr_cnae_desc)` |
-| `_BR_CNAE` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_BR_CNAEText` | `spras` |  |  |
+| `BR_CNAE` | ✓ | | `_BR_CNAEText` | `j_1bcnae` |  |  |
+| `BR_CNAEDesc` |  | |  | `cast(_BR_CNAEText.j_1bcnaex as logbr_cnae_desc)` |  |  |
+| `_BR_CNAE` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

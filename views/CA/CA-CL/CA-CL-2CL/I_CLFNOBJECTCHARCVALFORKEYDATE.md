@@ -27,37 +27,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClfnObjectID` | ✓ | |  |  |
-| `ClfnObjectTable` | ✓ | |  |  |
-| `CharcInternalID` | ✓ | |  |  |
-| `CharcValuePositionNumber` | ✓ | |  |  |
-| `ClfnObjectType` | ✓ | |  |  |
-| `ClassType` | ✓ | |  |  |
-| `ClfnObjectInternalID` |  | |  |  |
-| `CharcValueDependency` |  | |  | `CharcValueIntervalType` |
-| `CharcValue` |  | |  |  |
-| `CharcFromNumericValue` |  | |  |  |
-| `CharcFromNumericValueUnit` |  | |  |  |
-| `CharcToNumericValue` |  | |  |  |
-| `CharcToNumericValueUnit` |  | |  |  |
-| `CharcFromDecimalValue` |  | |  |  |
-| `CharcToDecimalValue` |  | |  |  |
-| `CharcFromAmount` |  | |  |  |
-| `CharcToAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `CharcFromDate` |  | |  |  |
-| `CharcToDate` |  | |  |  |
-| `CharcFromTime` |  | |  |  |
-| `CharcToTime` |  | |  |  |
-| `CharacteristicAuthor` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Characteristic` | | ✓ | | |
-| `_CharacteristicValue` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClfnObjectID` | ✓ | |  |  |  |  |
+| `ClfnObjectTable` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `CharcValuePositionNumber` | ✓ | |  |  |  |  |
+| `ClfnObjectType` | ✓ | |  |  |  |  |
+| `ClassType` | ✓ | |  |  |  |  |
+| `ClfnObjectInternalID` |  | |  |  |  |  |
+| `CharcValueDependency` |  | |  | `CharcValueIntervalType` |  |  |
+| `CharcValue` |  | |  |  |  |  |
+| `CharcFromNumericValue` |  | |  |  |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |  |  |
+| `CharcToNumericValue` |  | |  |  |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |  |  |
+| `CharcFromDecimalValue` |  | |  |  |  |  |
+| `CharcToDecimalValue` |  | |  |  |  |  |
+| `CharcFromAmount` |  | |  |  |  |  |
+| `CharcToAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `CharcFromDate` |  | |  |  |  |  |
+| `CharcToDate` |  | |  |  |  |  |
+| `CharcFromTime` |  | |  |  |  |  |
+| `CharcToTime` |  | |  |  |  |  |
+| `CharacteristicAuthor` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Characteristic` | | ✓ | | | | |
+| `_CharacteristicValue` | | ✓ | | | | |
 
 ## Associations
 

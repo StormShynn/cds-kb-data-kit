@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMWarehouse` | ✓ | |  | `lgnum` |
-| `WarehouseOrder` | ✓ | |  | `cast ( whohu.who as /scwm/de_who_conv_alpha preserving type )` |
-| `EWMWhseOrderNmbrOfHndlgUnits` | ✓ | |  | `hukng` |
-| `PackagingMaterialUUID` |  | |  | `cast(whohu.pmat_guid as matid_no_conv preserving type )` |
-| `PackagingMaterial` |  | | `_Material` | `Product` |
-| `HandlingUnitUUID` |  | |  | `huid` |
-| `HandlingUnitNumber` |  | |  | `huident` |
-| `HndlgUnitIsShippingHndlgUnit` |  | |  | `shiphu` |
-| `HndlgUnitIsCreatedByWhseOrder` |  | |  | `flgwcr` |
-| `StorageProcess` |  | |  | `prces` |
-| `EWMConsolidationGroup` |  | |  | `dstgrp` |
-| `EWMStorageType` |  | |  | `wstyp` |
-| `EWMStorageSection` |  | |  | `wssec` |
-| `EWMStorageBin` |  | |  | `wsbin` |
-| `WarehouseOrderCreationRule` |  | |  | `wcr` |
-| `HndlgUnitIsUsedInWhseOrder` |  | |  | `used` |
-| `PlannedShippingHndlgUnitUUID` |  | |  | `pohu_guid` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  | `lgnum` |  |  |
+| `WarehouseOrder` | ✓ | |  | `cast ( whohu.who as /scwm/de_who_conv_alpha preserving type )` |  |  |
+| `EWMWhseOrderNmbrOfHndlgUnits` | ✓ | |  | `hukng` |  |  |
+| `PackagingMaterialUUID` |  | |  | `cast(whohu.pmat_guid as matid_no_conv preserving type )` |  |  |
+| `PackagingMaterial` |  | | `_Material` | `Product` |  |  |
+| `HandlingUnitUUID` |  | |  | `huid` |  |  |
+| `HandlingUnitNumber` |  | |  | `huident` |  |  |
+| `HndlgUnitIsShippingHndlgUnit` |  | |  | `shiphu` |  |  |
+| `HndlgUnitIsCreatedByWhseOrder` |  | |  | `flgwcr` |  |  |
+| `StorageProcess` |  | |  | `prces` |  |  |
+| `EWMConsolidationGroup` |  | |  | `dstgrp` |  |  |
+| `EWMStorageType` |  | |  | `wstyp` |  |  |
+| `EWMStorageSection` |  | |  | `wssec` |  |  |
+| `EWMStorageBin` |  | |  | `wsbin` |  |  |
+| `WarehouseOrderCreationRule` |  | |  | `wcr` |  |  |
+| `HndlgUnitIsUsedInWhseOrder` |  | |  | `used` |  |  |
+| `PlannedShippingHndlgUnitUUID` |  | |  | `pohu_guid` |  |  |
 
 ## Associations
 

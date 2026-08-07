@@ -30,47 +30,47 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShippingPoint` | ✓ | |  | `vstel` |
-| `DeliveryCreationDate` | ✓ | |  | `ledat` |
-| `DeliveryPriority` | ✓ | |  | `lprio` |
-| `Route` | ✓ | |  | `route` |
-| `ForwardingAgent` | ✓ | |  | `spdnr` |
-| `GoodsIssueDate` | ✓ | |  | `wadat` |
-| `ShipToParty` | ✓ | |  | `kunwe` |
-| `SDDocument` | ✓ | |  | `vbeln` |
-| `DeliveryBlockReason` | ✓ | |  | `lifsp` |
-| `SoldToParty` |  | |  | `kunnr` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `Division` |  | |  | `spart` |
-| `SalesOffice` |  | |  | `vkbur` |
-| `SalesGroup` |  | |  | `vkgrp` |
-| `CompleteDeliveryIsDefined` |  | |  | `autlf` |
-| `HeaderGrossWeight` |  | |  | `brgew` |
-| `HeaderWeightUnit` |  | |  | `gewei` |
-| `HeaderVolume` |  | |  | `volum` |
-| `HeaderVolumeUnit` |  | |  | `voleh` |
-| `ProcessingTimeInDays` |  | |  | `bearz` |
-| `SoldToPartyAddressID` |  | |  | `adrnr_ag` |
-| `ShipToPartyAddressID` |  | |  | `adrnr_we` |
-| `SalesDocumentType` |  | |  | `auart` |
-| `OrderCombinationIsAllowed` |  | |  | `kzazu` |
-| `_HeaderWeightUnit` | | ✓ | | |
-| `_HeaderVolumeUnit` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_Route` | | ✓ | | |
-| `_DeliveryPriority` | | ✓ | | |
-| `_DeliveryBlockReason` | | ✓ | | |
-| `_SalesDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShippingPoint` | ✓ | |  | `vstel` |  |  |
+| `DeliveryCreationDate` | ✓ | |  | `ledat` |  |  |
+| `DeliveryPriority` | ✓ | |  | `lprio` |  |  |
+| `Route` | ✓ | |  | `route` |  |  |
+| `ForwardingAgent` | ✓ | |  | `spdnr` |  |  |
+| `GoodsIssueDate` | ✓ | |  | `wadat` |  |  |
+| `ShipToParty` | ✓ | |  | `kunwe` |  |  |
+| `SDDocument` | ✓ | |  | `vbeln` |  |  |
+| `DeliveryBlockReason` | ✓ | |  | `lifsp` |  |  |
+| `SoldToParty` |  | |  | `kunnr` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `SalesOffice` |  | |  | `vkbur` |  |  |
+| `SalesGroup` |  | |  | `vkgrp` |  |  |
+| `CompleteDeliveryIsDefined` |  | |  | `autlf` |  |  |
+| `HeaderGrossWeight` |  | |  | `brgew` |  |  |
+| `HeaderWeightUnit` |  | |  | `gewei` |  |  |
+| `HeaderVolume` |  | |  | `volum` |  |  |
+| `HeaderVolumeUnit` |  | |  | `voleh` |  |  |
+| `ProcessingTimeInDays` |  | |  | `bearz` |  |  |
+| `SoldToPartyAddressID` |  | |  | `adrnr_ag` |  |  |
+| `ShipToPartyAddressID` |  | |  | `adrnr_we` |  |  |
+| `SalesDocumentType` |  | |  | `auart` |  |  |
+| `OrderCombinationIsAllowed` |  | |  | `kzazu` |  |  |
+| `_HeaderWeightUnit` | | ✓ | | | | |
+| `_HeaderVolumeUnit` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_Route` | | ✓ | | | | |
+| `_DeliveryPriority` | | ✓ | | | | |
+| `_DeliveryBlockReason` | | ✓ | | | | |
+| `_SalesDocumentType` | | ✓ | | | | |
 
 ## Associations
 

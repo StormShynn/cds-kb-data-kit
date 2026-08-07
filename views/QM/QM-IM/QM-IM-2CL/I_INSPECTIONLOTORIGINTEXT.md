@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLotOrigin` | ✓ | |  | `herkunft` |
-| `Language` | ✓ | |  | `sprache` |
-| `InspectionLotOriginText` |  | |  | `herktxt` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLotOrigin` | ✓ | |  | `herkunft` |  |  |
+| `Language` | ✓ | |  | `sprache` |  |  |
+| `InspectionLotOriginText` |  | |  | `herktxt` |  |  |
 
 ## Source Code
 

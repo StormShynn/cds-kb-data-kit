@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccount` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `GLAccountGroup` |  | | `_GLAccountInChartOfAccounts` | `GLAccountGroup` |
-| `CorporateGroupAccount` |  | | `_GLAccountInChartOfAccounts` | `CorporateGroupAccount` |
-| `AccountIsBlockedForPosting` |  | |  |  |
-| `AccountIsBlockedForPlanning` |  | | `_GLAccountInChartOfAccounts` | `AccountIsBlockedForPlanning` |
-| `AccountIsBlockedForCreation` |  | | `_GLAccountInChartOfAccounts` | `AccountIsBlockedForCreation` |
-| `IsBalanceSheetAccount` |  | | `_GLAccountInChartOfAccounts` | `IsBalanceSheetAccount` |
-| `AccountIsMarkedForDeletion` |  | |  |  |
-| `PartnerCompany` |  | | `_GLAccountInChartOfAccounts` | `PartnerCompany` |
-| `FunctionalArea` |  | | `_GLAccountInChartOfAccounts` | `FunctionalArea` |
-| `CreationDate` |  | |  |  |
-| `SampleGLAccount` |  | | `_GLAccountInChartOfAccounts` | `SampleGLAccount` |
-| `IsProfitLossAccount` |  | | `_GLAccountInChartOfAccounts` | `IsProfitLossAccount` |
-| `GLAccountType` |  | | `_GLAccountInChartOfAccounts` | `GLAccountType` |
-| `CreatedByUser` |  | |  |  |
-| `ProfitLossAccountType` |  | | `_GLAccountInChartOfAccounts` | `ProfitLossAccountType` |
-| `ReconciliationAccountType` |  | |  |  |
-| `LineItemDisplayIsEnabled` |  | |  |  |
-| `IsOpenItemManaged` |  | |  |  |
-| `AlternativeGLAccount` |  | |  |  |
-| `AcctgDocItmDisplaySequenceRule` |  | |  |  |
-| `GLAccountExternal` |  | |  | `cast( _GLAccountInChartOfAccounts.GLAccountExternal as fac_sakan preserving type )` |
-| `CountryChartOfAccounts` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `TaxCategory` |  | |  |  |
-| `IsAutomaticallyPosted` |  | |  |  |
-| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_GLAccountHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccount` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `GLAccountGroup` |  | | `_GLAccountInChartOfAccounts` | `GLAccountGroup` |  |  |
+| `CorporateGroupAccount` |  | | `_GLAccountInChartOfAccounts` | `CorporateGroupAccount` |  |  |
+| `AccountIsBlockedForPosting` |  | |  |  |  |  |
+| `AccountIsBlockedForPlanning` |  | | `_GLAccountInChartOfAccounts` | `AccountIsBlockedForPlanning` |  |  |
+| `AccountIsBlockedForCreation` |  | | `_GLAccountInChartOfAccounts` | `AccountIsBlockedForCreation` |  |  |
+| `IsBalanceSheetAccount` |  | | `_GLAccountInChartOfAccounts` | `IsBalanceSheetAccount` |  |  |
+| `AccountIsMarkedForDeletion` |  | |  |  |  |  |
+| `PartnerCompany` |  | | `_GLAccountInChartOfAccounts` | `PartnerCompany` |  |  |
+| `FunctionalArea` |  | | `_GLAccountInChartOfAccounts` | `FunctionalArea` |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `SampleGLAccount` |  | | `_GLAccountInChartOfAccounts` | `SampleGLAccount` |  |  |
+| `IsProfitLossAccount` |  | | `_GLAccountInChartOfAccounts` | `IsProfitLossAccount` |  |  |
+| `GLAccountType` |  | | `_GLAccountInChartOfAccounts` | `GLAccountType` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `ProfitLossAccountType` |  | | `_GLAccountInChartOfAccounts` | `ProfitLossAccountType` |  |  |
+| `ReconciliationAccountType` |  | |  |  |  |  |
+| `LineItemDisplayIsEnabled` |  | |  |  |  |  |
+| `IsOpenItemManaged` |  | |  |  |  |  |
+| `AlternativeGLAccount` |  | |  |  |  |  |
+| `AcctgDocItmDisplaySequenceRule` |  | |  |  |  |  |
+| `GLAccountExternal` |  | |  | `cast( _GLAccountInChartOfAccounts.GLAccountExternal as fac_sakan preserving type )` |  |  |
+| `CountryChartOfAccounts` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `TaxCategory` |  | |  |  |  |  |
+| `IsAutomaticallyPosted` |  | |  |  |  |  |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |  |  |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_GLAccountHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

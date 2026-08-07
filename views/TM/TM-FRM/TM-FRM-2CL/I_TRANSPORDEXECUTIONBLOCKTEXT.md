@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdExecutionIsBlocked` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_block_execution)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TranspOrdExecutionBlockDesc` |  | |  | `cast(ddtext as /scmtms/vdm_block_exectn_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdExecutionIsBlocked` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdExecutionIsBlocked` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_block_execution)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TranspOrdExecutionBlockDesc` |  | |  | `cast(ddtext as /scmtms/vdm_block_exectn_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdExecutionIsBlocked` | | ✓ | | | | |
 
 ## Associations
 

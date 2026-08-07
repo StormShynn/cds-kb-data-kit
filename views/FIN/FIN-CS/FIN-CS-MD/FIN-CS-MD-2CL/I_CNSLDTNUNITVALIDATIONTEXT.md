@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_UnitAttributeValueT` | `Language` |
-| `ConsolidationUnitValidation` | ✓ | |  | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitvalidation preserving type )` |
-| `CnsldtnUnitValidationText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValText` |
-| `CnsldtnUnitValidationLongText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValLongText` |
-| `_CnsldtnUnitValidation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_UnitAttributeValueT` | `Language` |  |  |
+| `ConsolidationUnitValidation` | ✓ | |  | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitvalidation preserving type )` |  |  |
+| `CnsldtnUnitValidationText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValText` |  |  |
+| `CnsldtnUnitValidationLongText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValLongText` |  |  |
+| `_CnsldtnUnitValidation` | | ✓ | | | | |
 
 ## Associations
 

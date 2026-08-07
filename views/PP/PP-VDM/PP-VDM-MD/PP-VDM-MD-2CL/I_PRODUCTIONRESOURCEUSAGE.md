@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionResourceUsage` | ✓ | |  | `planv` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionResourceUsage` | ✓ | |  | `planv` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

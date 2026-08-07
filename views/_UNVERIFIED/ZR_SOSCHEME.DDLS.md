@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Bukrs` | ✓ | |  | `bukrs` |
-| `Salesorder` | ✓ | |  | `salesorder` |
-| `Schemecode` | ✓ | |  | `schemecode` |
-| `Schemegroupcode` | ✓ | |  | `schemegroupcode` |
-| `Schemecheckcode` |  | |  | `schemecheckcode` |
-| `Orderqty` |  | |  | `orderqty` |
-| `Freeqty` |  | |  | `freeqty` |
-| `Appliedqty` |  | |  | `appliedqty` |
-| `CreatedBy` |  | |  | `created_by` |
-| `CreatedAt` |  | |  | `created_at` |
-| `LastChangedBy` |  | |  | `last_changed_by` |
-| `LastChangedAt` |  | |  | `last_changed_at` |
-| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Bukrs` | ✓ | |  | `bukrs` |  |  |
+| `Salesorder` | ✓ | |  | `salesorder` |  |  |
+| `Schemecode` | ✓ | |  | `schemecode` |  |  |
+| `Schemegroupcode` | ✓ | |  | `schemegroupcode` |  |  |
+| `Schemecheckcode` |  | |  | `schemecheckcode` |  |  |
+| `Orderqty` |  | |  | `orderqty` |  |  |
+| `Freeqty` |  | |  | `freeqty` |  |  |
+| `Appliedqty` |  | |  | `appliedqty` |  |  |
+| `CreatedBy` |  | |  | `created_by` |  |  |
+| `CreatedAt` |  | |  | `created_at` |  |  |
+| `LastChangedBy` |  | |  | `last_changed_by` |  |  |
+| `LastChangedAt` |  | |  | `last_changed_at` |  |  |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |  |  |
 
 ## Source Code
 

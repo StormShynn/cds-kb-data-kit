@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | |  |  |
-| `WorkflowTaskRecipient` | ✓ | |  |  |
-| `WorkflowTaskSubstitutedUser` | ✓ | |  |  |
-| `WorkflowInternalID` |  | |  | `top_wi_id` |
-| `WorkflowTaskIsForwarded` |  | |  |  |
-| `WorkflowTaskIsVisibleInInbox` |  | |  |  |
-| `_WorkflowTaskRecipient` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | |  |  |  |  |
+| `WorkflowTaskRecipient` | ✓ | |  |  |  |  |
+| `WorkflowTaskSubstitutedUser` | ✓ | |  |  |  |  |
+| `WorkflowInternalID` |  | |  | `top_wi_id` |  |  |
+| `WorkflowTaskIsForwarded` |  | |  |  |  |  |
+| `WorkflowTaskIsVisibleInInbox` |  | |  |  |  |  |
+| `_WorkflowTaskRecipient` | | ✓ | | | | |
 
 ## Associations
 

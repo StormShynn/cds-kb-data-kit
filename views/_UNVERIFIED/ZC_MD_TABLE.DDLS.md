@@ -35,17 +35,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Frame1` | ✓ | |  |  |
-| `AirportID` |  | |  |  |
-| `Frame2` |  | |  |  |
-| `Name` |  | |  |  |
-| `Frame3` |  | |  |  |
-| `City` |  | |  |  |
-| `Frame4` |  | |  |  |
-| `Country` |  | |  |  |
-| `Frame5` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Frame1` | ✓ | |  |  |  |  |
+| `AirportID` |  | |  |  |  |  |
+| `Frame2` |  | |  |  |  |  |
+| `Name` |  | |  |  |  |  |
+| `Frame3` |  | |  |  |  |  |
+| `City` |  | |  |  |  |  |
+| `Frame4` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Frame5` |  | |  |  |  |  |
 
 ## Source Code
 

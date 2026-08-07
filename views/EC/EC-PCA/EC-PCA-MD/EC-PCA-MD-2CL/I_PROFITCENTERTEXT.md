@@ -32,18 +32,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ControllingArea` | ✓ | |  | `kokrs` |
-| `ProfitCenter` | ✓ | |  | `prctr` |
-| `ValidityEndDate` | ✓ | |  | `datbi` |
-| `ValidityStartDate` |  | |  | `datab` |
-| `ProfitCenterName` |  | |  | `cast (ktext as fis_prctr_shorttext preserving type)` |
-| `ProfitCenterLongName` |  | |  | `cast (ltext as fac_prctr_ltext preserving type )` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ControllingArea` | ✓ | |  | `kokrs` |  |  |
+| `ProfitCenter` | ✓ | |  | `prctr` |  |  |
+| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
+| `ValidityStartDate` |  | |  | `datab` |  |  |
+| `ProfitCenterName` |  | |  | `cast (ktext as fis_prctr_shorttext preserving type)` |  |  |
+| `ProfitCenterLongName` |  | |  | `cast (ltext as fac_prctr_ltext preserving type )` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
 
 ## Associations
 

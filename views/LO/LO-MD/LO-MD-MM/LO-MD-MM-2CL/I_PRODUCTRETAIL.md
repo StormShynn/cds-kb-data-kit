@@ -29,61 +29,61 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `cast (maw1.matnr as productnumber preserving type )` |
-| `ServiceAgreement` |  | |  | `servv` |
-| `ConsumptionValueCategory` |  | |  | `wmaab` |
-| `GoodsIssueUnit` |  | |  | `wausm` |
-| `CountryOfOrigin` |  | |  | `cast( maw1.wherl as cmd_prd_countryoforigin preserving type )` |
-| `RegionOfOrigin` |  | |  | `wherr` |
-| `AssortmentGrade` |  | |  | `sstuf` |
-| `StoreListingProcedure` |  | |  | `lstfl` |
-| `DistrCntrListingProcedure` |  | |  | `lstvz` |
-| `StoreListingStartDate` |  | |  | `cast(maw1.ldvfl as storelistingstartdate )` |
-| `StoreListingEndDate` |  | |  | `cast(maw1.ldbfl as storelistingenddate )` |
-| `DistrCntrListingStartDate` |  | |  | `cast(maw1.ldvzl as distrcntrlistingstartdate )` |
-| `DistrCntrListingEndDate` |  | |  | `cast(maw1.ldbzl as distrcntrlistingenddate )` |
-| `StoreSaleStartDate` |  | |  | `cast(maw1.vdvfl as storesalestartdate )` |
-| `StoreSaleEndDate` |  | |  | `cast(maw1.vdbfl as storesaleenddate )` |
-| `DistrCntrSaleStartDate` |  | |  | `cast(maw1.vdvzl as distrcntrsalestartdate )` |
-| `DistrCntrSaleEndDate` |  | |  | `cast(maw1.vdbzl as distrcntrsaleenddate )` |
-| `ValuationClass` |  | |  | `wbkla` |
-| `CommodityCode` |  | |  | `wstaw` |
-| `ValuationMargin` |  | |  | `wbwsp` |
-| `CommoditiyCodeNumberUnit` |  | |  | `wexpm` |
-| `SalesUnit` |  | |  | `wvrkm` |
-| `PurchasingGroup` |  | |  | `wekgr` |
-| `LoadingGroup` |  | |  | `wladg` |
-| `ProdExtAssortmentPriority` |  | |  | `pflks` |
-| `AssortmentListType` |  | |  | `bbtyp` |
-| `_CountryOfOrigin` | | ✓ | | |
-| `_CountryText` | | ✓ | | |
-| `_RegionOfOrigin` | | ✓ | | |
-| `_RegionText` | | ✓ | | |
-| `_GoodsIssueUnit` | | ✓ | | |
-| `_GoodsIssueText` | | ✓ | | |
-| `_ConsumptionValueCategory` | | ✓ | | |
-| `_ConsumptionValueCategoryText` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_LoadingGroup` | | ✓ | | |
-| `_LoadingGroupText` | | ✓ | | |
-| `_ProdExtAssortmentPriority` | | ✓ | | |
-| `_ProdExtAssortmentPriorityText` | | ✓ | | |
-| `_StoreListingProcedure` | | ✓ | | |
-| `_StoreListingProcedureT` | | ✓ | | |
-| `_DistrCntrListingProcedure` | | ✓ | | |
-| `_DistrCntrListingProcedureT` | | ✓ | | |
-| `_AssortmentGrade` | | ✓ | | |
-| `_AssortmentGradeT` | | ✓ | | |
-| `_SalesUnit` | | ✓ | | |
-| `_SalesUnitText` | | ✓ | | |
-| `_ProductServiceAgreement` | | ✓ | | |
-| `_ProductServiceAgreementT` | | ✓ | | |
-| `_ValuationClass` | | ✓ | | |
-| `_ValuationClassText` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
-| `_CommodityCodeNumberUnitText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast (maw1.matnr as productnumber preserving type )` |  |  |
+| `ServiceAgreement` |  | |  | `servv` |  |  |
+| `ConsumptionValueCategory` |  | |  | `wmaab` |  |  |
+| `GoodsIssueUnit` |  | |  | `wausm` |  |  |
+| `CountryOfOrigin` |  | |  | `cast( maw1.wherl as cmd_prd_countryoforigin preserving type )` |  |  |
+| `RegionOfOrigin` |  | |  | `wherr` |  |  |
+| `AssortmentGrade` |  | |  | `sstuf` |  |  |
+| `StoreListingProcedure` |  | |  | `lstfl` |  |  |
+| `DistrCntrListingProcedure` |  | |  | `lstvz` |  |  |
+| `StoreListingStartDate` |  | |  | `cast(maw1.ldvfl as storelistingstartdate )` |  |  |
+| `StoreListingEndDate` |  | |  | `cast(maw1.ldbfl as storelistingenddate )` |  |  |
+| `DistrCntrListingStartDate` |  | |  | `cast(maw1.ldvzl as distrcntrlistingstartdate )` |  |  |
+| `DistrCntrListingEndDate` |  | |  | `cast(maw1.ldbzl as distrcntrlistingenddate )` |  |  |
+| `StoreSaleStartDate` |  | |  | `cast(maw1.vdvfl as storesalestartdate )` |  |  |
+| `StoreSaleEndDate` |  | |  | `cast(maw1.vdbfl as storesaleenddate )` |  |  |
+| `DistrCntrSaleStartDate` |  | |  | `cast(maw1.vdvzl as distrcntrsalestartdate )` |  |  |
+| `DistrCntrSaleEndDate` |  | |  | `cast(maw1.vdbzl as distrcntrsaleenddate )` |  |  |
+| `ValuationClass` |  | |  | `wbkla` |  |  |
+| `CommodityCode` |  | |  | `wstaw` |  |  |
+| `ValuationMargin` |  | |  | `wbwsp` |  |  |
+| `CommoditiyCodeNumberUnit` |  | |  | `wexpm` |  |  |
+| `SalesUnit` |  | |  | `wvrkm` |  |  |
+| `PurchasingGroup` |  | |  | `wekgr` |  |  |
+| `LoadingGroup` |  | |  | `wladg` |  |  |
+| `ProdExtAssortmentPriority` |  | |  | `pflks` |  |  |
+| `AssortmentListType` |  | |  | `bbtyp` |  |  |
+| `_CountryOfOrigin` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
+| `_RegionOfOrigin` | | ✓ | | | | |
+| `_RegionText` | | ✓ | | | | |
+| `_GoodsIssueUnit` | | ✓ | | | | |
+| `_GoodsIssueText` | | ✓ | | | | |
+| `_ConsumptionValueCategory` | | ✓ | | | | |
+| `_ConsumptionValueCategoryText` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_LoadingGroup` | | ✓ | | | | |
+| `_LoadingGroupText` | | ✓ | | | | |
+| `_ProdExtAssortmentPriority` | | ✓ | | | | |
+| `_ProdExtAssortmentPriorityText` | | ✓ | | | | |
+| `_StoreListingProcedure` | | ✓ | | | | |
+| `_StoreListingProcedureT` | | ✓ | | | | |
+| `_DistrCntrListingProcedure` | | ✓ | | | | |
+| `_DistrCntrListingProcedureT` | | ✓ | | | | |
+| `_AssortmentGrade` | | ✓ | | | | |
+| `_AssortmentGradeT` | | ✓ | | | | |
+| `_SalesUnit` | | ✓ | | | | |
+| `_SalesUnitText` | | ✓ | | | | |
+| `_ProductServiceAgreement` | | ✓ | | | | |
+| `_ProductServiceAgreementT` | | ✓ | | | | |
+| `_ValuationClass` | | ✓ | | | | |
+| `_ValuationClassText` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
+| `_CommodityCodeNumberUnitText` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoiceStatus` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `DomainValue` |  | |  |  |
-| `SupplierInvoiceStatusDesc` |  | |  |  |
-| `_Language` | | ✓ | | |
-| `_SupplierInvoiceStatusAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoiceStatus` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `DomainValue` |  | |  |  |  |  |
+| `SupplierInvoiceStatusDesc` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SupplierInvoiceStatusAPI01` | | ✓ | | | | |
 
 ## Associations
 

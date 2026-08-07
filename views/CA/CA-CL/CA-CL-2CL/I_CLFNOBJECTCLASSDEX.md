@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'KSSK'` |  | |  | `table: 'KSSK'` |
-| `'ADZHL']` |  | |  | `tableElement: ['OBJEK','MAFID','KLART','CLINT','ADZHL']` |
-| `'TimeIntervalNumber']` |  | |  | `viewElement: ['ClfnObjectID','ClfnObjectType','ClassType','ClassInternalID','TimeIntervalNumber']` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'KSSK'` |  | |  | `table: 'KSSK'` |  |  |
+| `'ADZHL']` |  | |  | `tableElement: ['OBJEK','MAFID','KLART','CLINT','ADZHL']` |  |  |
+| `'TimeIntervalNumber']` |  | |  | `viewElement: ['ClfnObjectID','ClfnObjectType','ClassType','ClassInternalID','TimeIntervalNumber']` |  |  |
 
 ## Source Code
 

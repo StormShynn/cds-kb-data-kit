@@ -28,57 +28,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMWarehouse` | ✓ | |  | `lgnum` |
-| `EWMStorageBin` | ✓ | |  | `lgpla` |
-| `EWMStorageType` |  | |  | `lgtyp` |
-| `EWMStorageSection` |  | |  | `lgber` |
-| `EWMStorageBinType` |  | |  | `lptyp` |
-| `EWMStorageBinAccessType` |  | |  | `bin_at` |
-| `EWMStorageBinSection` |  | |  | `plauf` |
-| `EWMStorageBinPosition` |  | |  | `plpos` |
-| `EWMStorageBinSubdivision` |  | |  | `flgsbin` |
-| `EWMStorageBinMaximumWeight` |  | |  | `max_weight` |
-| `WeightUnit` |  | |  | `unit_w` |
-| `EWMStorageBinUsedWeight` |  | |  | `weight` |
-| `EWMStorageBinMaximumVolume` |  | |  | `max_volume` |
-| `VolumeUnit` |  | |  | `unit_v` |
-| `EWMStorageBinOccupiedVolume` |  | |  | `volum` |
-| `EWMStorBinTotalCapacityValue` |  | |  | `max_capa` |
-| `EWMStorBinAvailCapacityValue` |  | |  | `fcapa` |
-| `EWMStorBinFreeDefinedAisleText` |  | |  | `aisle` |
-| `EWMStorBinFreeDefinedStackText` |  | |  | `stack` |
-| `EWMStorBinFreeDefinedLevelText` |  | |  | `lvl_v` |
-| `EWMStorBinIsBlockedForRemoval` |  | |  | `skzua` |
-| `EWMStorBinIsBlockedForPutaway` |  | |  | `skzue` |
-| `EWMStorBinIsBlockedDueToPInv` |  | |  | `skzsi` |
-| `EWMStorageBinIsEmpty` |  | |  | `kzler` |
-| `EWMStorageBinIsFull` |  | |  | `kzvol` |
-| `EWMStorBinFreeDfndSectionText` |  | |  | `binsc` |
-| `EWMStorageBinRemainDepthValue` |  | |  | `cast(rem_bin_depth as ewm_de_rem_bin_depth_no_conv)` |
-| `EWMStorageBinMaxDepthValue` |  | |  | `cast(max_bin_depth as ewm_de_max_bin_depth_no_conv)` |
-| `EWMStorBinWidthCoordinateValue` |  | |  | `x_cord` |
-| `EWMStorBinLengthCoordinateVal` |  | |  | `y_cord` |
-| `EWMStorBinHeightCoordinateVal` |  | |  | `z_cord` |
-| `EWMStorBinVerifiedByMobileID` |  | |  | `verif` |
-| `EWMPhysicalInventoryType` |  | |  | `kzinv` |
-| `PhysicalInventoryDocNumber` |  | |  | `ivnum` |
-| `PhysicalInventoryItemNumber` |  | |  | `ivpos` |
-| `PInvCountedUTCDateTime` |  | |  | `idatu` |
-| `EWMStorageBinLastChangedByUser` |  | |  | `uname` |
-| `EWMStorageBinLastChgDateTime` |  | |  | `cast(laedt as timestamp preserving type)` |
-| `EWMStorageBinLastWarehouseTask` |  | |  | `cast(btanr as /scwm/tanum_noconv preserving type)` |
-| `EWMStorageBinFirstPutawayDate` |  | |  | `ptwy_date` |
-| `EWMStorageBinLastMvtDateTime` |  | |  | `moved_at` |
-| `EWMStorageBinLastClrgDateTime` |  | |  | `cleared_at` |
-| `EWMStorageBinFixedBinType` |  | |  | `fixbintyp` |
-| `EWMStorageBinAngleValue` |  | |  | `angle` |
-| `EWMStorBinNumberOfHndlgUnits` |  | |  | `anzle` |
-| `EWMStorBinMaxNmbrOfHndlgUnits` |  | |  | `maxle` |
-| `EWMFireContainmentSection` |  | |  | `brand` |
-| `EWMStorageGroup` |  | |  | `lgber_lgst` |
-| `_Warehouse` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  | `lgnum` |  |  |
+| `EWMStorageBin` | ✓ | |  | `lgpla` |  |  |
+| `EWMStorageType` |  | |  | `lgtyp` |  |  |
+| `EWMStorageSection` |  | |  | `lgber` |  |  |
+| `EWMStorageBinType` |  | |  | `lptyp` |  |  |
+| `EWMStorageBinAccessType` |  | |  | `bin_at` |  |  |
+| `EWMStorageBinSection` |  | |  | `plauf` |  |  |
+| `EWMStorageBinPosition` |  | |  | `plpos` |  |  |
+| `EWMStorageBinSubdivision` |  | |  | `flgsbin` |  |  |
+| `EWMStorageBinMaximumWeight` |  | |  | `max_weight` |  |  |
+| `WeightUnit` |  | |  | `unit_w` |  |  |
+| `EWMStorageBinUsedWeight` |  | |  | `weight` |  |  |
+| `EWMStorageBinMaximumVolume` |  | |  | `max_volume` |  |  |
+| `VolumeUnit` |  | |  | `unit_v` |  |  |
+| `EWMStorageBinOccupiedVolume` |  | |  | `volum` |  |  |
+| `EWMStorBinTotalCapacityValue` |  | |  | `max_capa` |  |  |
+| `EWMStorBinAvailCapacityValue` |  | |  | `fcapa` |  |  |
+| `EWMStorBinFreeDefinedAisleText` |  | |  | `aisle` |  |  |
+| `EWMStorBinFreeDefinedStackText` |  | |  | `stack` |  |  |
+| `EWMStorBinFreeDefinedLevelText` |  | |  | `lvl_v` |  |  |
+| `EWMStorBinIsBlockedForRemoval` |  | |  | `skzua` |  |  |
+| `EWMStorBinIsBlockedForPutaway` |  | |  | `skzue` |  |  |
+| `EWMStorBinIsBlockedDueToPInv` |  | |  | `skzsi` |  |  |
+| `EWMStorageBinIsEmpty` |  | |  | `kzler` |  |  |
+| `EWMStorageBinIsFull` |  | |  | `kzvol` |  |  |
+| `EWMStorBinFreeDfndSectionText` |  | |  | `binsc` |  |  |
+| `EWMStorageBinRemainDepthValue` |  | |  | `cast(rem_bin_depth as ewm_de_rem_bin_depth_no_conv)` |  |  |
+| `EWMStorageBinMaxDepthValue` |  | |  | `cast(max_bin_depth as ewm_de_max_bin_depth_no_conv)` |  |  |
+| `EWMStorBinWidthCoordinateValue` |  | |  | `x_cord` |  |  |
+| `EWMStorBinLengthCoordinateVal` |  | |  | `y_cord` |  |  |
+| `EWMStorBinHeightCoordinateVal` |  | |  | `z_cord` |  |  |
+| `EWMStorBinVerifiedByMobileID` |  | |  | `verif` |  |  |
+| `EWMPhysicalInventoryType` |  | |  | `kzinv` |  |  |
+| `PhysicalInventoryDocNumber` |  | |  | `ivnum` |  |  |
+| `PhysicalInventoryItemNumber` |  | |  | `ivpos` |  |  |
+| `PInvCountedUTCDateTime` |  | |  | `idatu` |  |  |
+| `EWMStorageBinLastChangedByUser` |  | |  | `uname` |  |  |
+| `EWMStorageBinLastChgDateTime` |  | |  | `cast(laedt as timestamp preserving type)` |  |  |
+| `EWMStorageBinLastWarehouseTask` |  | |  | `cast(btanr as /scwm/tanum_noconv preserving type)` |  |  |
+| `EWMStorageBinFirstPutawayDate` |  | |  | `ptwy_date` |  |  |
+| `EWMStorageBinLastMvtDateTime` |  | |  | `moved_at` |  |  |
+| `EWMStorageBinLastClrgDateTime` |  | |  | `cleared_at` |  |  |
+| `EWMStorageBinFixedBinType` |  | |  | `fixbintyp` |  |  |
+| `EWMStorageBinAngleValue` |  | |  | `angle` |  |  |
+| `EWMStorBinNumberOfHndlgUnits` |  | |  | `anzle` |  |  |
+| `EWMStorBinMaxNmbrOfHndlgUnits` |  | |  | `maxle` |  |  |
+| `EWMFireContainmentSection` |  | |  | `brand` |  |  |
+| `EWMStorageGroup` |  | |  | `lgber_lgst` |  |  |
+| `_Warehouse` | | ✓ | | | | |
 
 ## Associations
 

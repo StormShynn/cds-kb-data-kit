@@ -29,61 +29,61 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocumentCategory` | ✓ | |  | `fktyp` |
-| `BillingDocumentType` | ✓ | |  | `fkart` |
-| `BillingDocumentDate` | ✓ | |  | `fkdat` |
-| `SalesOrganization` | ✓ | |  | `vkorg` |
-| `Customer` | ✓ | |  | `cast(kunnr as kunnr preserving type)` |
-| `DestinationCountry` | ✓ | |  | `lland` |
-| `ReferenceSDDocument` | ✓ | |  | `vbeln` |
-| `ReferenceSDDocumentCategory` |  | |  | `vbtyp` |
-| `ReferenceSDDocumentType` |  | |  | `vbart` |
-| `AddressID` |  | |  | `cast(adrnr as adrnr preserving type)` |
-| `AddressPersonID` |  | |  | `adrnp` |
-| `AddressObjectType` |  | |  | `addr_type` |
-| `HeaderBillingBlockReason` |  | |  | `faksk` |
-| `SortCriterion` |  | |  | `sortkri` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `Division` |  | |  | `spart` |
-| `ShippingPoint` |  | |  | `vstel` |
-| `OverallProofOfDeliveryStatus` |  | |  | `pdstk` |
-| `NetAmount` |  | |  | `netwr` |
-| `TransactionCurrency` |  | |  | `waerk` |
-| `BillgDocReqRefLgclSyst` |  | |  | `bdr_ref_logsys` |
-| `BillingDocRequestReference` |  | |  | `bdr_ref` |
-| `BusinessSolutionOrder` |  | |  | `solution_order_id` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `erzet` |
-| `_BillingDocumentCategory` | | ✓ | | |
-| `_BillingDocumentType` | | ✓ | | |
-| `_ReferenceSDDocumentCategory` | | ✓ | | |
-| `_ReferenceSDDocumentType` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_DfltAddrRprstn` | | ✓ | | |
-| `_DestinationCountry` | | ✓ | | |
-| `_HeaderBillingBlockReason` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
-| `_OverallProofOfDelivStatus` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_BusinessSolutionOrder` | | ✓ | | |
-| `_ShippingPointText` | | ✓ | | |
-| `_BillingDocumentCategoryText` | | ✓ | | |
-| `_BillingDocumentTypeText` | | ✓ | | |
-| `_SalesOrganizationText` | | ✓ | | |
-| `_DestinationCountryText` | | ✓ | | |
-| `_RefSDDocumentCategoryText` | | ✓ | | |
-| `_ReferenceSDDocumentTypeText` | | ✓ | | |
-| `_HeaderBillingBlockReasonText` | | ✓ | | |
-| `_DistributionChannelText` | | ✓ | | |
-| `_DivisionText` | | ✓ | | |
-| `_OverallProofOfDelivStatusText` | | ✓ | | |
-| `_TransactionCurrencyText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentCategory` | ✓ | |  | `fktyp` |  |  |
+| `BillingDocumentType` | ✓ | |  | `fkart` |  |  |
+| `BillingDocumentDate` | ✓ | |  | `fkdat` |  |  |
+| `SalesOrganization` | ✓ | |  | `vkorg` |  |  |
+| `Customer` | ✓ | |  | `cast(kunnr as kunnr preserving type)` |  |  |
+| `DestinationCountry` | ✓ | |  | `lland` |  |  |
+| `ReferenceSDDocument` | ✓ | |  | `vbeln` |  |  |
+| `ReferenceSDDocumentCategory` |  | |  | `vbtyp` |  |  |
+| `ReferenceSDDocumentType` |  | |  | `vbart` |  |  |
+| `AddressID` |  | |  | `cast(adrnr as adrnr preserving type)` |  |  |
+| `AddressPersonID` |  | |  | `adrnp` |  |  |
+| `AddressObjectType` |  | |  | `addr_type` |  |  |
+| `HeaderBillingBlockReason` |  | |  | `faksk` |  |  |
+| `SortCriterion` |  | |  | `sortkri` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `ShippingPoint` |  | |  | `vstel` |  |  |
+| `OverallProofOfDeliveryStatus` |  | |  | `pdstk` |  |  |
+| `NetAmount` |  | |  | `netwr` |  |  |
+| `TransactionCurrency` |  | |  | `waerk` |  |  |
+| `BillgDocReqRefLgclSyst` |  | |  | `bdr_ref_logsys` |  |  |
+| `BillingDocRequestReference` |  | |  | `bdr_ref` |  |  |
+| `BusinessSolutionOrder` |  | |  | `solution_order_id` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `erzet` |  |  |
+| `_BillingDocumentCategory` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | | | |
+| `_ReferenceSDDocumentType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_DfltAddrRprstn` | | ✓ | | | | |
+| `_DestinationCountry` | | ✓ | | | | |
+| `_HeaderBillingBlockReason` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_OverallProofOfDelivStatus` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_BusinessSolutionOrder` | | ✓ | | | | |
+| `_ShippingPointText` | | ✓ | | | | |
+| `_BillingDocumentCategoryText` | | ✓ | | | | |
+| `_BillingDocumentTypeText` | | ✓ | | | | |
+| `_SalesOrganizationText` | | ✓ | | | | |
+| `_DestinationCountryText` | | ✓ | | | | |
+| `_RefSDDocumentCategoryText` | | ✓ | | | | |
+| `_ReferenceSDDocumentTypeText` | | ✓ | | | | |
+| `_HeaderBillingBlockReasonText` | | ✓ | | | | |
+| `_DistributionChannelText` | | ✓ | | | | |
+| `_DivisionText` | | ✓ | | | | |
+| `_OverallProofOfDelivStatusText` | | ✓ | | | | |
+| `_TransactionCurrencyText` | | ✓ | | | | |
 
 ## Associations
 

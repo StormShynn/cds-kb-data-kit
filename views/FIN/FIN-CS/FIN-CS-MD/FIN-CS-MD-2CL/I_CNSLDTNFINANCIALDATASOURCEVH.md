@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialDataSource` | ✓ | | `_Source` | `FinancialDataSource` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialDataSource` | ✓ | | `_Source` | `FinancialDataSource` |  |  |
 
 ## Source Code
 

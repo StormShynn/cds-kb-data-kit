@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `LanguageCode` | ✓ | |  | `sprsl` |
-| `LanguageName` |  | |  | `sptxt` |
-| `_Language` | | ✓ | | |
-| `_LanguageCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `LanguageCode` | ✓ | |  | `sprsl` |  |  |
+| `LanguageName` |  | |  | `sptxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_LanguageCode` | | ✓ | | | | |
 
 ## Associations
 

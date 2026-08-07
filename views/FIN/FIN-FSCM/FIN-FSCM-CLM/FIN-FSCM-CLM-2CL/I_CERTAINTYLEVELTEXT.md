@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `CertaintyLevel` | ✓ | |  | `cast( dd07t.domvalue_l as fqm_certainty_level )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `CertaintyLevelName` |  | |  | `cast( dd07t.ddtext as fclm_cl_name preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `CertaintyLevel` | ✓ | |  | `cast( dd07t.domvalue_l as fqm_certainty_level )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CertaintyLevelName` |  | |  | `cast( dd07t.ddtext as fclm_cl_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

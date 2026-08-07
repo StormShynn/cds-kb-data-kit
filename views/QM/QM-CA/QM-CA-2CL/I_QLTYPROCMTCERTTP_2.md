@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityProcurementCertificate` | ✓ | |  |  |
-| `QualityCertificateType` |  | |  |  |
-| `QltyProcmtCertStatus` |  | |  |  |
-| `PurchaseOrder` |  | |  |  |
-| `PurchaseOrderItem` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `Material` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Plant` |  | |  |  |
-| `GoodsReceiptPostingDate` |  | |  |  |
-| `QltyProcmtCertReceiptDate` |  | |  |  |
-| `BatchBySupplier` |  | |  |  |
-| `Batch` |  | |  |  |
-| `DeliveryNote` |  | |  |  |
-| `QltyProcmtCertCrtedByUsr` |  | |  |  |
-| `QltyProcmtCertCrtnDte` |  | |  |  |
-| `QltyProcmtCertCrtnTme` |  | |  |  |
-| `QltyProcmtCertCrtnTmeZn` |  | |  |  |
-| `QltyProcmtCertCrtnDateTime` |  | |  |  |
-| `QltyProcmtCertChgdBy` |  | |  |  |
-| `QltyProcmtCertChgDte` |  | |  |  |
-| `QltyProcmtCertChgTme` |  | |  |  |
-| `QltyProcmtCertChgDteTme` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityProcurementCertificate` | ✓ | |  |  |  |  |
+| `QualityCertificateType` |  | |  |  |  |  |
+| `QltyProcmtCertStatus` |  | |  |  |  |  |
+| `PurchaseOrder` |  | |  |  |  |  |
+| `PurchaseOrderItem` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `GoodsReceiptPostingDate` |  | |  |  |  |  |
+| `QltyProcmtCertReceiptDate` |  | |  |  |  |  |
+| `BatchBySupplier` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `DeliveryNote` |  | |  |  |  |  |
+| `QltyProcmtCertCrtedByUsr` |  | |  |  |  |  |
+| `QltyProcmtCertCrtnDte` |  | |  |  |  |  |
+| `QltyProcmtCertCrtnTme` |  | |  |  |  |  |
+| `QltyProcmtCertCrtnTmeZn` |  | |  |  |  |  |
+| `QltyProcmtCertCrtnDateTime` |  | |  |  |  |  |
+| `QltyProcmtCertChgdBy` |  | |  |  |  |  |
+| `QltyProcmtCertChgDte` |  | |  |  |  |  |
+| `QltyProcmtCertChgTme` |  | |  |  |  |  |
+| `QltyProcmtCertChgDteTme` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
 
 ## Source Code
 

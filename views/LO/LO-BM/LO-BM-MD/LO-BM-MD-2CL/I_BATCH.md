@@ -29,47 +29,47 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `Batch` | ✓ | |  |  |
-| `BatchIsMarkedForDeletion` |  | |  |  |
-| `MatlBatchIsInRstrcdUseStock` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `BatchBySupplier` |  | |  |  |
-| `CountryOfOrigin` |  | |  |  |
-| `RegionOfOrigin` |  | |  |  |
-| `MatlBatchAvailabilityDate` |  | |  |  |
-| `ShelfLifeExpirationDate` |  | |  |  |
-| `ManufactureDate` |  | |  |  |
-| `NextInspectionDate` |  | |  |  |
-| `LastGoodsReceiptDate` |  | |  |  |
-| `FreeDefinedDate1` |  | |  |  |
-| `FreeDefinedDate2` |  | |  |  |
-| `FreeDefinedDate3` |  | |  |  |
-| `FreeDefinedDate4` |  | |  |  |
-| `FreeDefinedDate5` |  | |  |  |
-| `FreeDefinedDate6` |  | |  |  |
-| `BatchCertificationDate` |  | |  |  |
-| `DefinitionOfBatchLevel` |  | |  |  |
-| `IsSubordinateBatch` |  | |  | `cast(' ' as subordinate_batch preserving type )` |
-| `BatchIdentifyingPlant` |  | |  | `Plant` |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `ClfnObjectInternalID` |  | |  |  |
-| `BatchExtWhseMgmtInternalId` |  | |  |  |
-| `StockSegment` |  | |  |  |
-| `ExportAndImportProductGroup` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `_Plant` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_CountryOfOrigin` | | ✓ | | |
-| `_RegionOfOrigin` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ClfnObjectClassForKeyDate` | | ✓ | | |
-| `_ClfnObjectCharcValForKeyDate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `BatchIsMarkedForDeletion` |  | |  |  |  |  |
+| `MatlBatchIsInRstrcdUseStock` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `BatchBySupplier` |  | |  |  |  |  |
+| `CountryOfOrigin` |  | |  |  |  |  |
+| `RegionOfOrigin` |  | |  |  |  |  |
+| `MatlBatchAvailabilityDate` |  | |  |  |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |  |  |
+| `ManufactureDate` |  | |  |  |  |  |
+| `NextInspectionDate` |  | |  |  |  |  |
+| `LastGoodsReceiptDate` |  | |  |  |  |  |
+| `FreeDefinedDate1` |  | |  |  |  |  |
+| `FreeDefinedDate2` |  | |  |  |  |  |
+| `FreeDefinedDate3` |  | |  |  |  |  |
+| `FreeDefinedDate4` |  | |  |  |  |  |
+| `FreeDefinedDate5` |  | |  |  |  |  |
+| `FreeDefinedDate6` |  | |  |  |  |  |
+| `BatchCertificationDate` |  | |  |  |  |  |
+| `DefinitionOfBatchLevel` |  | |  |  |  |  |
+| `IsSubordinateBatch` |  | |  | `cast(' ' as subordinate_batch preserving type )` |  |  |
+| `BatchIdentifyingPlant` |  | |  | `Plant` |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `ClfnObjectInternalID` |  | |  |  |  |  |
+| `BatchExtWhseMgmtInternalId` |  | |  |  |  |  |
+| `StockSegment` |  | |  |  |  |  |
+| `ExportAndImportProductGroup` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_CountryOfOrigin` | | ✓ | | | | |
+| `_RegionOfOrigin` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ClfnObjectClassForKeyDate` | | ✓ | | | | |
+| `_ClfnObjectCharcValForKeyDate` | | ✓ | | | | |
 
 ## Source Code
 

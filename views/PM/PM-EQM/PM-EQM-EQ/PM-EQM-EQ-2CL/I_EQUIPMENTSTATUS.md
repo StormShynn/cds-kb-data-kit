@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Equipment` | ✓ | | `_EquipmentStatus` | `Equipment` |
-| `MaintObjectInternalID` |  | | `_EquipmentStatus` | `MaintObjectInternalID` |
-| `EquipmentIsAtCustomer` |  | |  | `cast(_EquipmentStatus.EquipmentIsAtCustomer as xfeld preserving type)` |
-| `EquipmentIsAvailable` |  | |  | `cast(_EquipmentStatus.EquipmentIsAvailable as xfeld preserving type)` |
-| `EquipmentIsInWarehouse` |  | |  | `cast(_EquipmentStatus.EquipmentIsInWarehouse as xfeld preserving type)` |
-| `EquipmentIsAssignedToDelivery` |  | |  | `cast(_EquipmentStatus.EquipmentIsAssignedToDelivery as xfeld preserving type)` |
-| `EquipmentIsMarkedForDeletion` |  | |  | `cast(_EquipmentStatus.EquipmentIsMarkedForDeletion as xfeld preserving type)` |
-| `EquipmentIsInstalled` |  | |  | `cast(_EquipmentStatus.EquipmentIsInstalled as xfeld preserving type )` |
-| `EquipIsAllocToSuperiorEquip` |  | |  | `cast(_EquipmentStatus.EquipIsAllocToSuperiorEquip as xfeld preserving type )` |
-| `EquipmentIsInactive` |  | |  | `cast(_EquipmentStatus.EquipmentIsInactive as xfeld preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Equipment` | ✓ | | `_EquipmentStatus` | `Equipment` |  |  |
+| `MaintObjectInternalID` |  | | `_EquipmentStatus` | `MaintObjectInternalID` |  |  |
+| `EquipmentIsAtCustomer` |  | |  | `cast(_EquipmentStatus.EquipmentIsAtCustomer as xfeld preserving type)` |  |  |
+| `EquipmentIsAvailable` |  | |  | `cast(_EquipmentStatus.EquipmentIsAvailable as xfeld preserving type)` |  |  |
+| `EquipmentIsInWarehouse` |  | |  | `cast(_EquipmentStatus.EquipmentIsInWarehouse as xfeld preserving type)` |  |  |
+| `EquipmentIsAssignedToDelivery` |  | |  | `cast(_EquipmentStatus.EquipmentIsAssignedToDelivery as xfeld preserving type)` |  |  |
+| `EquipmentIsMarkedForDeletion` |  | |  | `cast(_EquipmentStatus.EquipmentIsMarkedForDeletion as xfeld preserving type)` |  |  |
+| `EquipmentIsInstalled` |  | |  | `cast(_EquipmentStatus.EquipmentIsInstalled as xfeld preserving type )` |  |  |
+| `EquipIsAllocToSuperiorEquip` |  | |  | `cast(_EquipmentStatus.EquipIsAllocToSuperiorEquip as xfeld preserving type )` |  |  |
+| `EquipmentIsInactive` |  | |  | `cast(_EquipmentStatus.EquipmentIsInactive as xfeld preserving type )` |  |  |
 
 ## Source Code
 

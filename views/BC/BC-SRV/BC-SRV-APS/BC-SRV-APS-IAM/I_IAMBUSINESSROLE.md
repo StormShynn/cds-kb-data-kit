@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessRoleUUID` | ✓ | |  | `uuid` |
-| `BusinessRole` |  | |  | `id` |
-| `BusinessRoleGroup` |  | |  | `brole_group` |
-| `BusinessRoleTemplate` |  | |  | `brt_id` |
-| `CreatedByUser` |  | |  | `creation_user_name` |
-| `CreationDateTime` |  | |  | `creation_date_time` |
-| `LastChangedByUser` |  | |  | `last_change_user_name` |
-| `LastChangeDateTime` |  | |  | `last_change_date_time` |
-| `_User` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessRoleUUID` | ✓ | |  | `uuid` |  |  |
+| `BusinessRole` |  | |  | `id` |  |  |
+| `BusinessRoleGroup` |  | |  | `brole_group` |  |  |
+| `BusinessRoleTemplate` |  | |  | `brt_id` |  |  |
+| `CreatedByUser` |  | |  | `creation_user_name` |  |  |
+| `CreationDateTime` |  | |  | `creation_date_time` |  |  |
+| `LastChangedByUser` |  | |  | `last_change_user_name` |  |  |
+| `LastChangeDateTime` |  | |  | `last_change_date_time` |  |  |
+| `_User` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

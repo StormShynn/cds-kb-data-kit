@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StandardWorkFormulaParamGroup` | ✓ | |  | `vgwts` |
-| `StandardWorkFormulaParam1` |  | |  | `par01` |
-| `StandardWorkFormulaParam2` |  | |  | `par02` |
-| `StandardWorkFormulaParam3` |  | |  | `par03` |
-| `StandardWorkFormulaParam4` |  | |  | `par04` |
-| `StandardWorkFormulaParam5` |  | |  | `par05` |
-| `StandardWorkFormulaParam6` |  | |  | `par06` |
-| `_Text` | | ✓ | | |
-| `_StandardWorkFormulaParameter1` | | ✓ | | |
-| `_StandardWorkFormulaParameter2` | | ✓ | | |
-| `_StandardWorkFormulaParameter3` | | ✓ | | |
-| `_StandardWorkFormulaParameter4` | | ✓ | | |
-| `_StandardWorkFormulaParameter5` | | ✓ | | |
-| `_StandardWorkFormulaParameter6` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StandardWorkFormulaParamGroup` | ✓ | |  | `vgwts` |  |  |
+| `StandardWorkFormulaParam1` |  | |  | `par01` |  |  |
+| `StandardWorkFormulaParam2` |  | |  | `par02` |  |  |
+| `StandardWorkFormulaParam3` |  | |  | `par03` |  |  |
+| `StandardWorkFormulaParam4` |  | |  | `par04` |  |  |
+| `StandardWorkFormulaParam5` |  | |  | `par05` |  |  |
+| `StandardWorkFormulaParam6` |  | |  | `par06` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_StandardWorkFormulaParameter1` | | ✓ | | | | |
+| `_StandardWorkFormulaParameter2` | | ✓ | | | | |
+| `_StandardWorkFormulaParameter3` | | ✓ | | | | |
+| `_StandardWorkFormulaParameter4` | | ✓ | | | | |
+| `_StandardWorkFormulaParameter5` | | ✓ | | | | |
+| `_StandardWorkFormulaParameter6` | | ✓ | | | | |
 
 ## Associations
 

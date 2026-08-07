@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdCmplncLogsDocumentUUID` |  | |  | `ehfnd_log_doc_uuid` |
-| `D_PCLGSDCGETDAGDSEDIINFOITEMP` |  | |  | `_Items : composition [0..*] of D_PCLGSDCGETDAGDSEDIINFOITEMP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdCmplncLogsDocumentUUID` |  | |  | `ehfnd_log_doc_uuid` |  |  |
+| `D_PCLGSDCGETDAGDSEDIINFOITEMP` |  | |  | `_Items : composition [0..*] of D_PCLGSDCGETDAGDSEDIINFOITEMP` |  |  |
 
 ## Source Code
 

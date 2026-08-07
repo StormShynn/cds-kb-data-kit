@@ -29,54 +29,54 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  | `cast( QuantityVariance.PurchaseOrder as vdm_purchaseorder )` |
-| `PurchaseOrderItem` | ✓ | |  | `cast( QuantityVariance.PurchaseOrderItem as vdm_purchaseorderitem)` |
-| `SuplrEvalCritraDelivCompleted` |  | |  | `, derivation: { lookupEntity: 'F_SuplrEvalCriteriaGenConfign', resultElement: 'SuplrEvalCritraDelivCompleted' } } SuplrEvalCritraDelivCompleted` |
-| `PurgDocMigrtnIsCmpltdForAnlyts` |  | |  | `, derivation: { lookupEntity: 'F_ProcmtAnalyticsDataSelMeth', resultElement: 'PurgDocMigrtnIsCmpltdForAnlyts' } } PurgDocMigrtnIsCmpltdForAnlyts` |
-| `SuplrEvalRelevantDocCategory` |  | |  | `, derivation: { lookupEntity: 'F_SuplrEvalDocCatConfign', resultElement: 'SuplrEvalRelevantDocCategory' } } SuplrEvalRelevantDocCategory` |
-| `PurOrdItmFirstGRPostingDate` |  | |  |  |
-| `PurOrdItmFinalGRPostingDate` |  | |  |  |
-| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |
-| `CalendarQuarter` |  | | `_Calendar` | `CalendarQuarter` |
-| `CalendarMonth` |  | | `_Calendar` | `CalendarMonth` |
-| `CalendarWeek` |  | | `_Calendar` | `CalendarWeek` |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Country` |  | | `_Supplier` | `Country` |
-| `Region` |  | | `_Supplier` | `Region` |
-| `CompanyCode` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingCategory` |  | |  |  |
-| `PurgCatName` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `DisplayCurrency` |  | |  | `cast( DisplayCurrency as displaycurrency )` |
-| `OrderedQuantity` |  | |  | `cast( OrderedQuantity as mm_a_ordered_quantity )` |
-| `GoodsReceiptQty` |  | |  | `DeliveredQuantity` |
-| `QuantityVarianceInOrdUnit` |  | |  | `cast ( QuantityVarianceInOrdUnit as mm_a_quantity_variance )` |
-| `QuantityVarianceInDspCrcy` |  | |  | `cast( QuantityVarianceInDspCrcy as mm_a_quantity_var_amount )` |
-| `QuantityVarianceScore` |  | |  | `cast( case when _UpdatedScore.IsScoreChanged = 'X' then _UpdatedScore.QuantityVarianceScore else SupplierEvaluationScore end as mm_a_variance_score )` |
-| `QuantityVarianceInPctValue` |  | |  | `cast ( QuantityVarianceInPct as mmpur_ana_de_quantityvar_pct )` |
-| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |
-| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
-| `_Supplier` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingCategory` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_SupplierRegion` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PurchasingDocumentCategory` | | ✓ | | |
-| `_DocConfigCategory` | | ✓ | | |
-| `_DelivCmpltdConfign` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  | `cast( QuantityVariance.PurchaseOrder as vdm_purchaseorder )` |  |  |
+| `PurchaseOrderItem` | ✓ | |  | `cast( QuantityVariance.PurchaseOrderItem as vdm_purchaseorderitem)` |  |  |
+| `SuplrEvalCritraDelivCompleted` |  | |  |  |  |  |
+| `PurgDocMigrtnIsCmpltdForAnlyts` |  | |  |  |  |  |
+| `SuplrEvalRelevantDocCategory` |  | |  |  |  |  |
+| `PurOrdItmFirstGRPostingDate` |  | |  |  |  |  |
+| `PurOrdItmFinalGRPostingDate` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |  |  |
+| `CalendarQuarter` |  | | `_Calendar` | `CalendarQuarter` |  |  |
+| `CalendarMonth` |  | | `_Calendar` | `CalendarMonth` |  |  |
+| `CalendarWeek` |  | | `_Calendar` | `CalendarWeek` |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Country` |  | | `_Supplier` | `Country` |  |  |
+| `Region` |  | | `_Supplier` | `Region` |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingCategory` |  | |  |  |  |  |
+| `PurgCatName` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `cast( DisplayCurrency as displaycurrency )` |  |  |
+| `OrderedQuantity` |  | |  | `cast( OrderedQuantity as mm_a_ordered_quantity )` |  |  |
+| `GoodsReceiptQty` |  | |  | `DeliveredQuantity` |  |  |
+| `QuantityVarianceInOrdUnit` |  | |  | `cast ( QuantityVarianceInOrdUnit as mm_a_quantity_variance )` |  |  |
+| `QuantityVarianceInDspCrcy` |  | |  | `cast( QuantityVarianceInDspCrcy as mm_a_quantity_var_amount )` |  |  |
+| `QuantityVarianceScore` |  | |  | `cast( case when _UpdatedScore.IsScoreChanged = 'X' then _UpdatedScore.QuantityVarianceScore else SupplierEvaluationScore end as mm_a_variance_score )` |  |  |
+| `QuantityVarianceInPctValue` |  | |  | `cast ( QuantityVarianceInPct as mmpur_ana_de_quantityvar_pct )` |  |  |
+| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |  |  |
+| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |  |  |
+| `_Supplier` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingCategory` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_SupplierRegion` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
+| `_DocConfigCategory` | | ✓ | | | | |
+| `_DelivCmpltdConfign` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DCoDisputeUUID` |  | |  | `} key DCoDisputeUUID` |
-| `DCoDsputReltdAcctgDocumentUUID` | ✓ | |  |  |
-| `DCoAccountingDocumentUUID` |  | |  |  |
-| `DCoDisputeAcctgDocCurrency` |  | |  |  |
-| `DCoDsputAcctgDocDsputdAmt` |  | |  | `} DCoDsputAcctgDocDsputdAmt` |
-| `DCoDsputAcctgDocToBeColltdAmt` |  | |  | `} DCoDsputAcctgDocToBeColltdAmt` |
-| `DCoDsputAcctgDocCrrtnAmt` |  | |  | `} DCoDsputAcctgDocCrrtnAmt` |
-| `DCoDsputAcctgDocWrtOffAmt` |  | |  | `} DCoDsputAcctgDocWrtOffAmt` |
-| `DCoDisputeAcctgDocumentReason` |  | |  |  |
-| `DCoDisputeAcctgDocDecision` |  | |  |  |
-| `DCoDisputeAcctgDocCategory` |  | |  |  |
-| `DCoDisputeAcctgDocCreationUser` |  | |  | `} DCoDisputeAcctgDocCreationUser` |
-| `DCoDsputAcctgDocCrtnDateTime` |  | |  | `} DCoDsputAcctgDocCrtnDateTime` |
-| `DCoDsputAcctgDocLastChgdByUsr` |  | |  | `} DCoDsputAcctgDocLastChgdByUsr` |
-| `DCoDsputAcctgDocLstChgDateTime` |  | |  | `} DCoDsputAcctgDocLstChgDateTime` |
-| `_Dispute` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoDisputeUUID` | ✓ | |  |  |  |  |
+| `DCoDsputReltdAcctgDocumentUUID` | ✓ | |  |  |  |  |
+| `DCoAccountingDocumentUUID` |  | |  |  |  |  |
+| `DCoDisputeAcctgDocCurrency` |  | |  |  |  |  |
+| `DCoDsputAcctgDocDsputdAmt` |  | |  |  |  |  |
+| `DCoDsputAcctgDocToBeColltdAmt` |  | |  |  |  |  |
+| `DCoDsputAcctgDocCrrtnAmt` |  | |  |  |  |  |
+| `DCoDsputAcctgDocWrtOffAmt` |  | |  |  |  |  |
+| `DCoDisputeAcctgDocumentReason` |  | |  |  |  |  |
+| `DCoDisputeAcctgDocDecision` |  | |  |  |  |  |
+| `DCoDisputeAcctgDocCategory` |  | |  |  |  |  |
+| `DCoDisputeAcctgDocCreationUser` |  | |  |  |  |  |
+| `DCoDsputAcctgDocCrtnDateTime` |  | |  |  |  |  |
+| `DCoDsputAcctgDocLastChgdByUsr` |  | |  |  |  |  |
+| `DCoDsputAcctgDocLstChgDateTime` |  | |  |  |  |  |
+| `_Dispute` | | ✓ | | | | |
 
 ## Source Code
 

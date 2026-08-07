@@ -27,45 +27,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClassInternalID` | ✓ | |  | `clint` |
-| `ClassType` |  | |  | `klart` |
-| `Class` |  | |  | `class` |
-| `ClassStatus` |  | |  | `statu` |
-| `ClassGroup` |  | |  | `klagr` |
-| `ClassSearchAuthGrp` |  | |  | `bgrse` |
-| `ClassClassfctnAuthGrp` |  | |  | `bgrkl` |
-| `ClassMaintAuthGrp` |  | |  | `bgrkp` |
-| `CreatedByUser` |  | |  | `aname` |
-| `CreationDate` |  | |  | `adatu` |
-| `LastChangedByUser` |  | |  | `vname` |
-| `LastChangeDate` |  | |  | `vdatu` |
-| `ValidityStartDate` |  | |  | `vondt` |
-| `ValidityEndDate` |  | |  | `bisdt` |
-| `SameClassfctnReaction` |  | |  | `cast( Class.praus as char1 preserving type )` |
-| `ClfnOrganizationalArea` |  | |  | `cast( Class.sicht as clfnorganizationalarea preserving type )` |
-| `DocumentInfoRecordDocNumber` |  | |  | `doknr` |
-| `DocumentInfoRecordDocType` |  | |  | `dokar` |
-| `DocumentInfoRecordDocPart` |  | |  | `doktl` |
-| `DocumentInfoRecordDocVersion` |  | |  | `dokvr` |
-| `ClassStandardOrgName` |  | |  | `nnorm` |
-| `ClassStandardNumber` |  | |  | `normn` |
-| `ClassStandardStartDate` |  | |  | `ausgd` |
-| `ClassStandardVersionStartDate` |  | |  | `versd` |
-| `ClassStandardVersion` |  | |  | `versi` |
-| `ClassStandardCharcTable` |  | |  | `leist` |
-| `ClassBaseUnit` |  | |  | `meins` |
-| `ClassIsUsableInBOM` |  | |  | `vwstl` |
-| `ClassIsLocal` |  | |  | `locla` |
-| `ClassLastChangedDateTime` |  | |  | `lastchangeddatetime` |
-| `_ClassDescription` | | ✓ | | |
-| `_ClassKeyword` | | ✓ | | |
-| `_ClassStatus` | | ✓ | | |
-| `_ClassGroup` | | ✓ | | |
-| `_ClassType` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassInternalID` | ✓ | |  | `clint` |  |  |
+| `ClassType` |  | |  | `klart` |  |  |
+| `Class` |  | |  | `class` |  |  |
+| `ClassStatus` |  | |  | `statu` |  |  |
+| `ClassGroup` |  | |  | `klagr` |  |  |
+| `ClassSearchAuthGrp` |  | |  | `bgrse` |  |  |
+| `ClassClassfctnAuthGrp` |  | |  | `bgrkl` |  |  |
+| `ClassMaintAuthGrp` |  | |  | `bgrkp` |  |  |
+| `CreatedByUser` |  | |  | `aname` |  |  |
+| `CreationDate` |  | |  | `adatu` |  |  |
+| `LastChangedByUser` |  | |  | `vname` |  |  |
+| `LastChangeDate` |  | |  | `vdatu` |  |  |
+| `ValidityStartDate` |  | |  | `vondt` |  |  |
+| `ValidityEndDate` |  | |  | `bisdt` |  |  |
+| `SameClassfctnReaction` |  | |  | `cast( Class.praus as char1 preserving type )` |  |  |
+| `ClfnOrganizationalArea` |  | |  | `cast( Class.sicht as clfnorganizationalarea preserving type )` |  |  |
+| `DocumentInfoRecordDocNumber` |  | |  | `doknr` |  |  |
+| `DocumentInfoRecordDocType` |  | |  | `dokar` |  |  |
+| `DocumentInfoRecordDocPart` |  | |  | `doktl` |  |  |
+| `DocumentInfoRecordDocVersion` |  | |  | `dokvr` |  |  |
+| `ClassStandardOrgName` |  | |  | `nnorm` |  |  |
+| `ClassStandardNumber` |  | |  | `normn` |  |  |
+| `ClassStandardStartDate` |  | |  | `ausgd` |  |  |
+| `ClassStandardVersionStartDate` |  | |  | `versd` |  |  |
+| `ClassStandardVersion` |  | |  | `versi` |  |  |
+| `ClassStandardCharcTable` |  | |  | `leist` |  |  |
+| `ClassBaseUnit` |  | |  | `meins` |  |  |
+| `ClassIsUsableInBOM` |  | |  | `vwstl` |  |  |
+| `ClassIsLocal` |  | |  | `locla` |  |  |
+| `ClassLastChangedDateTime` |  | |  | `lastchangeddatetime` |  |  |
+| `_ClassDescription` | | ✓ | | | | |
+| `_ClassKeyword` | | ✓ | | | | |
+| `_ClassStatus` | | ✓ | | | | |
+| `_ClassGroup` | | ✓ | | | | |
+| `_ClassType` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
 
 ## Associations
 

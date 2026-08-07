@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentTerms` | ✓ | |  | `cast( _PaymentTerms.zterm as farp_dzterm preserving type )` |
-| `PaymentIsInstallment` |  | | `_PaymentTermsInstallCondition` | `PaymentIsInstallment` |
-| `_PaymentTermsConditions` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_InstallmentPaymentTermsItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentTerms` | ✓ | |  | `cast( _PaymentTerms.zterm as farp_dzterm preserving type )` |  |  |
+| `PaymentIsInstallment` |  | | `_PaymentTermsInstallCondition` | `PaymentIsInstallment` |  |  |
+| `_PaymentTermsConditions` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_InstallmentPaymentTermsItem` | | ✓ | | | | |
 
 ## Associations
 

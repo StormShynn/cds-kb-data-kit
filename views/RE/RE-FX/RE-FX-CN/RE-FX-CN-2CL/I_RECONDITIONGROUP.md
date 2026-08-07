@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REConditionGroup` | ✓ | |  | `condgroup` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REConditionGroup` | ✓ | |  | `condgroup` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

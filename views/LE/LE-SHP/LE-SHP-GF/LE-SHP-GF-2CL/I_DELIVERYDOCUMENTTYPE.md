@@ -32,37 +32,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryDocumentType` | ✓ | |  | `lfart` |
-| `SDDocumentCategory` |  | |  | `vbtyp` |
-| `PrecedingDocumentRequirement` |  | |  | `aufer` |
-| `TradeComplianceIsActive` |  | |  | `itmac` |
-| `NumberRangeForIntIDAssignment` |  | |  | `numki` |
-| `NumberRangeForExtIDAssignment` |  | |  | `numke` |
-| `IncrementItemNumber` |  | |  | `incpo` |
-| `DefaultOrderType` |  | |  | `daart` |
-| `StorageLocationRule` |  | |  | `reglg` |
-| `TextDeterminationProcedure` |  | |  | `txtgr` |
-| `RouteDetermination` |  | |  | `routf` |
-| `DeliveryIsSplitByWarehouse` |  | |  | `lnspl` |
-| `DeliveryIsSplitByPartner` |  | |  | `dsfad` |
-| `DeliveryIsPackedAutomatically` |  | |  | `averp` |
-| `DelivItmsAreGnrtdForPackggMatl` |  | |  | `pm_item_gen` |
-| `PartnerDeterminationProcedure` |  | |  | `pargr` |
-| `RescheduleDeliveries` |  | |  | `neute` |
-| `IntTransfOfControlDateOffset` |  | |  | `int_tocd_offset` |
-| `IntTransfOfCtrlDateOffsetUnit` |  | |  | `int_tocd_offset_unit` |
-| `ExtTransfOfControlDateOffset` |  | |  | `ext_tocd_offset` |
-| `ExtTransfOfCtrlDateOffsetUnit` |  | |  | `ext_tocd_offset_unit` |
-| `AR_ElectronicDocDocumentClass` |  | |  | `j_1adoccls` |
-| `_Text` | | ✓ | | |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_SDDocumentType` | | ✓ | | |
-| `_TextDeterminationProcedure` | | ✓ | | |
-| `_PartnerDeterminationProcedure` | | ✓ | | |
-| `_ExtTransfOfCtrlDateOffsetUnit` | | ✓ | | |
-| `_IntTransfOfCtrlDateOffsetUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocumentType` | ✓ | |  | `lfart` |  |  |
+| `SDDocumentCategory` |  | |  | `vbtyp` |  |  |
+| `PrecedingDocumentRequirement` |  | |  | `aufer` |  |  |
+| `TradeComplianceIsActive` |  | |  | `itmac` |  |  |
+| `NumberRangeForIntIDAssignment` |  | |  | `numki` |  |  |
+| `NumberRangeForExtIDAssignment` |  | |  | `numke` |  |  |
+| `IncrementItemNumber` |  | |  | `incpo` |  |  |
+| `DefaultOrderType` |  | |  | `daart` |  |  |
+| `StorageLocationRule` |  | |  | `reglg` |  |  |
+| `TextDeterminationProcedure` |  | |  | `txtgr` |  |  |
+| `RouteDetermination` |  | |  | `routf` |  |  |
+| `DeliveryIsSplitByWarehouse` |  | |  | `lnspl` |  |  |
+| `DeliveryIsSplitByPartner` |  | |  | `dsfad` |  |  |
+| `DeliveryIsPackedAutomatically` |  | |  | `averp` |  |  |
+| `DelivItmsAreGnrtdForPackggMatl` |  | |  | `pm_item_gen` |  |  |
+| `PartnerDeterminationProcedure` |  | |  | `pargr` |  |  |
+| `RescheduleDeliveries` |  | |  | `neute` |  |  |
+| `IntTransfOfControlDateOffset` |  | |  | `int_tocd_offset` |  |  |
+| `IntTransfOfCtrlDateOffsetUnit` |  | |  | `int_tocd_offset_unit` |  |  |
+| `ExtTransfOfControlDateOffset` |  | |  | `ext_tocd_offset` |  |  |
+| `ExtTransfOfCtrlDateOffsetUnit` |  | |  | `ext_tocd_offset_unit` |  |  |
+| `AR_ElectronicDocDocumentClass` |  | |  | `j_1adoccls` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_SDDocumentType` | | ✓ | | | | |
+| `_TextDeterminationProcedure` | | ✓ | | | | |
+| `_PartnerDeterminationProcedure` | | ✓ | | | | |
+| `_ExtTransfOfCtrlDateOffsetUnit` | | ✓ | | | | |
+| `_IntTransfOfCtrlDateOffsetUnit` | | ✓ | | | | |
 
 ## Associations
 

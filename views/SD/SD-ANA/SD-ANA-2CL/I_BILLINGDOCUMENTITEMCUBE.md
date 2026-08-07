@@ -33,342 +33,342 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingDocument` | ✓ | |  |  |
-| `BillingDocumentItem` | ✓ | |  |  |
-| `SDDocumentCategory` |  | |  |  |
-| `BillingDocumentCategory` |  | |  |  |
-| `BillingDocumentType` |  | |  |  |
-| `SalesDocumentItemCategory` |  | |  |  |
-| `SalesDocumentItemType` |  | |  |  |
-| `ReturnItemProcessingType` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreatedByUserName` |  | |  | `cast(CreatedByUserName as created_by_user_name preserving type)` |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |
-| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |
-| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |
-| `BillingDocumentDateYear` |  | |  | `cast(CalendarDateBillingDoc.CalendarYear as billing_document_date_year)` |
-| `BillingDocDateYearQuarter` |  | |  | `cast(CalendarDateBillingDoc.YearQuarter as billing_doc_date_year_quarter)` |
-| `BillingDocDateYearMonth` |  | |  | `cast(CalendarDateBillingDoc.YearMonth as billing_doc_date_year_month)` |
-| `BillingDocDateCalendarMonth` |  | |  | `cast(CalendarDateBillingDoc.CalendarMonth as billing_doc_date_cal_month)` |
-| `BillingDocumentDateCalendarDay` |  | |  | `cast(CalendarDateBillingDoc.CalendarDay as billing_doc_date_cal_day)` |
-| `SoldToParty` |  | |  |  |
-| `SoldToPartyName` |  | |  |  |
-| `Customer` |  | |  | `cast (Item.SoldToParty as kunnr)` |
-| `SoldToPartyClassification` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `ShipToPartyName` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `BillToPartyName` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `PayerPartyName` |  | |  |  |
-| `SalesEmployee` |  | |  | `cast(Item.SalesEmployee as sales_empl)` |
-| `SalesEmployeeName` |  | |  | `cast(SalesEmployeeWorkAgreement.PersonFullName as sales_empl_name)` |
-| `ResponsibleEmployee` |  | |  | `cast(Item.ResponsibleEmployee as resp_empl)` |
-| `ResponsibleEmployeeName` |  | |  | `cast(RespEmployeeWorkAgreement.PersonFullName as resp_empl_name)` |
-| `SalesEmployeeWorkAgreement` |  | |  | `cast(Item.SalesEmployee as sales_empl_wrk_agrmt)` |
-| `ResponsibleEmployeeWorkAgrmt` |  | |  | `cast(Item.ResponsibleEmployee as resp_empl_wrk_agrmt)` |
-| `PartnerCompany` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `CityCode` |  | |  |  |
-| `County` |  | |  |  |
-| `County_2` |  | |  |  |
-| `CreditControlArea` |  | |  |  |
-| `CustomerRebateAgreement` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `SDDocumentReason` |  | |  |  |
-| `RetailPromotion` |  | |  |  |
-| `RebateBasisAmount` |  | |  |  |
-| `VolumeRebateGroup` |  | |  |  |
-| `ItemIsRelevantForCredit` |  | |  |  |
-| `CreditRelatedPrice` |  | |  |  |
-| `SalesDeal` |  | |  |  |
-| `SalesDealDescription` |  | |  |  |
-| `SalesPromotion` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  | `cast( Material as productnumber preserving type )` |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `PricingReferenceMaterial` |  | |  |  |
-| `Batch` |  | |  | `, additionalBinding: [{ localElement: 'Plant', element: 'Plant' }, { localElement: 'Material', element: 'Material' } ] }] } Batch` |
-| `ProductHierarchyNode` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `ProductGroup` |  | |  | `cast (MaterialGroup as productgroup preserving type)` |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `MaterialCommissionGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PlantName` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `StorageLocationName` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `BillingDocumentIsCancelled` |  | |  |  |
-| `CancelledBillingDocument` |  | |  |  |
-| `ForeignTrade` |  | |  |  |
-| `IsExportDelivery` |  | |  |  |
-| `BillingDocCombinationCriteria` |  | |  |  |
-| `ManualInvoiceMaintIsRelevant` |  | |  |  |
-| `BillingDocumentItemText` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `BillingQuantity` |  | |  |  |
-| `BillingQuantityUnit` |  | |  |  |
-| `BillingQuantityInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `MRPRequiredQuantityInBaseUnit` |  | |  |  |
-| `BillingToBaseQuantityDnmntr` |  | |  |  |
-| `BillingToBaseQuantityNmrtr` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `BillToPartyCountry` |  | |  |  |
-| `BillToPartyRegion` |  | |  |  |
-| `BillingPlanRule` |  | |  |  |
-| `BillingPlan` |  | |  |  |
-| `BillingPlanItem` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `PriceListType` |  | |  |  |
-| `TaxDepartureCountry` |  | |  |  |
-| `VATRegistration` |  | |  |  |
-| `VATRegistrationOrigin` |  | |  |  |
-| `VATRegistrationCountry` |  | |  |  |
-| `CustomerTaxClassification1` |  | |  |  |
-| `CustomerTaxClassification2` |  | |  |  |
-| `CustomerTaxClassification3` |  | |  |  |
-| `CustomerTaxClassification4` |  | |  |  |
-| `CustomerTaxClassification5` |  | |  |  |
-| `CustomerTaxClassification6` |  | |  |  |
-| `CustomerTaxClassification7` |  | |  |  |
-| `CustomerTaxClassification8` |  | |  |  |
-| `CustomerTaxClassification9` |  | |  |  |
-| `SDPricingProcedure` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ItemNetAmountOfBillingDoc` |  | |  |  |
-| `ItemNetAmountOfBillingDoc_2` |  | |  |  |
-| `ItemGrossAmountOfBillingDoc` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `PricingScaleQuantityInBaseUnit` |  | |  |  |
-| `TaxAmount` |  | |  |  |
-| `CostAmount` |  | |  |  |
-| `Subtotal1Amount` |  | |  |  |
-| `Subtotal2Amount` |  | |  |  |
-| `Subtotal3Amount` |  | |  |  |
-| `Subtotal4Amount` |  | |  |  |
-| `Subtotal5Amount` |  | |  |  |
-| `Subtotal6Amount` |  | |  |  |
-| `StatisticalValueControl` |  | |  |  |
-| `StatisticalValue` |  | |  | `StatisticalValueControl` |
-| `MainItemPricingRefMaterial` |  | |  |  |
-| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
-| `NetAmountInDisplayCurrency` |  | |  | `cast ( currency_conversion( amount => ItemNetAmountOfBillingDoc_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as net_amount_in_dsp_crcy)` |
-| `ShippingCondition` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `PaymentMethodName` |  | |  |  |
-| `PaymentReference` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `AdditionalValueDays` |  | |  |  |
-| `EligibleAmountForCashDiscount` |  | |  |  |
-| `CustomerProject` |  | |  | `EngagementProject` |
-| `CompanyCode` |  | |  |  |
-| `CompanyCodeName` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `AccountingDocument` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `AccountingExchangeRateIsSet` |  | |  |  |
-| `AccountingExchangeRate` |  | |  |  |
-| `ExchangeRateType` |  | |  | `cast(ExchangeRateType as doc_exchange_rate_type preserving type )` |
-| `DocumentReferenceID` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `DunningArea` |  | |  | `}] DunningArea` |
-| `DunningBlockingReason` |  | |  |  |
-| `DunningKey` |  | |  |  |
-| `InternalFinancialDocument` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElement` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | | `_WBSElementBasicData` | `WBSElementExternalID` |
-| `ControllingArea` |  | |  |  |
-| `ControllingAreaName` |  | |  |  |
-| `ProfitabilitySegment` |  | |  | `cast( case when ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad( ProfitabilitySegment_2, 10, '0' ) end as rkeobjnr_numc )` |
-| `ProfitabilitySegment_2` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `OriginSDDocument` |  | |  |  |
-| `OriginSDDocumentItem` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `SalesDocument` |  | |  |  |
-| `SalesDocumentItem` |  | |  | `}] SalesDocumentItem` |
-| `SalesSDDocumentCategory` |  | |  |  |
-| `HigherLevelItem` |  | |  | `}] HigherLevelItem` |
-| `BillingDocumentItemInPartSgmt` |  | |  |  |
-| `PropagatePrftbltySgmt2BOM` |  | |  |  |
-| `CostDeterminationIsRequired` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `BusinessSolutionOrderItem` |  | |  |  |
-| `OverallSDProcessStatus` |  | |  |  |
-| `OverallBillingStatus` |  | |  |  |
-| `AccountingPostingStatus` |  | |  |  |
-| `AccountingTransferStatus` |  | |  |  |
-| `BillingIssueType` |  | |  |  |
-| `InvoiceListStatus` |  | |  |  |
-| `OvrlItmGeneralIncompletionSts` |  | |  |  |
-| `OverallPricingIncompletionSts` |  | |  |  |
-| `StatisticsCurrency` |  | |  |  |
-| `SalesVolumeNetAmount` |  | |  |  |
-| `SalesVolumeNetAmount_2` |  | |  |  |
-| `SlsVolumeNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => SalesVolumeNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as mc_umnetwr )` |
-| `CancldSlsVolumeNetAmt` |  | |  |  |
-| `CancldSlsVolumeNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => CancldSlsVolumeNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cancld_sls_vol_net_amt_idc )` |
-| `SalesProfitMarginNetAmount` |  | |  |  |
-| `SlsProfitMargNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => SalesProfitMarginNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as prf_marg_net_amt_idc )` |
-| `CustomerCreditMemoNetAmount` |  | |  |  |
-| `CustomerCreditMemoNetAmount_2` |  | |  |  |
-| `CustCrdtMemoNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => CustomerCreditMemoNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as mc_gunetwr )` |
-| `CustCrdtMemoPrftMargNetAmt` |  | |  |  |
-| `CustCrdtMemoPrftMargNetAmtInDC` |  | |  | `cast ( currency_conversion( amount => CustCrdtMemoPrftMargNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cm_prf_marg_net_amt_idc )` |
-| `SalesVolumeQuantity` |  | |  |  |
-| `CustCreditMemoQuantity` |  | |  |  |
-| `_CustomerProject` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_SalesEmployee` | | ✓ | | |
-| `_ResponsibleEmployee` | | ✓ | | |
-| `_SalesEmployee_2` | | ✓ | | |
-| `_ResponsibleEmployee_2` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_WBSElementExternalID` | | ✓ | | |
-| `_BillingDocument` | | ✓ | | |
-| `_SDDocumentCategory` | | ✓ | | |
-| `_BillingDocumentCategory` | | ✓ | | |
-| `_BillingDocumentType` | | ✓ | | |
-| `_SalesDocumentItemCategory` | | ✓ | | |
-| `_SalesDocumentItemType` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LogicalSystem` | | ✓ | | |
-| `_SoldToPartyClassification` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_CityCode` | | ✓ | | |
-| `_County` | | ✓ | | |
-| `_County_2` | | ✓ | | |
-| `_CreditControlArea` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_SDDocumentReason` | | ✓ | | |
-| `_SalesDeal` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_OrganizationDivision` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_OriginallyRequestedMaterial` | | ✓ | | |
-| `_PricingReferenceMaterial` | | ✓ | | |
-| `_Batch` | | ✓ | | |
-| `_ProductHierarchyNode` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_AdditionalMaterialGroup1` | | ✓ | | |
-| `_AdditionalMaterialGroup2` | | ✓ | | |
-| `_AdditionalMaterialGroup3` | | ✓ | | |
-| `_AdditionalMaterialGroup4` | | ✓ | | |
-| `_AdditionalMaterialGroup5` | | ✓ | | |
-| `_MaterialCommissionGroup` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StorageLocation` | | ✓ | | |
-| `_BillingQuantityUnit` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_ItemWeightUnit` | | ✓ | | |
-| `_ItemVolumeUnit` | | ✓ | | |
-| `_BillToPartyCountry` | | ✓ | | |
-| `_BillToPartyRegion` | | ✓ | | |
-| `_BillingPlanRule` | | ✓ | | |
-| `_StatisticalValueControl` | | ✓ | | |
-| `_CustomerPriceGroup` | | ✓ | | |
-| `_PriceListType` | | ✓ | | |
-| `_TaxDepartureCountry` | | ✓ | | |
-| `_VATRegistrationOrigin` | | ✓ | | |
-| `_VATRegistrationCountry` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_ShippingCondition` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_CustomerAccountAssgmtGroup` | | ✓ | | |
-| `_ExchangeRateType` | | ✓ | | |
-| `_DunningArea` | | ✓ | | |
-| `_DunningBlockingReason` | | ✓ | | |
-| `_DunningKey` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_OrderID` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_ReferenceSDDocumentCategory` | | ✓ | | |
-| `_SalesSDDocumentCategory` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
-| `_HigherLevelItem` | | ✓ | | |
-| `_MainItemPricingRefMaterial` | | ✓ | | |
-| `_OverallSDProcessStatus` | | ✓ | | |
-| `_OverallBillingStatus` | | ✓ | | |
-| `_AccountingPostingStatus` | | ✓ | | |
-| `_AccountingTransferStatus` | | ✓ | | |
-| `_BillingIssueType` | | ✓ | | |
-| `_InvoiceListStatus` | | ✓ | | |
-| `_OvrlItmGeneralIncompletionSts` | | ✓ | | |
-| `_OverallPricingIncompletionSts` | | ✓ | | |
-| `_StatisticsCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |  |  |
+| `BillingDocumentItem` | ✓ | |  |  |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `BillingDocumentCategory` |  | |  |  |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `SalesDocumentItemCategory` |  | |  |  |  |  |
+| `SalesDocumentItemType` |  | |  |  |  |  |
+| `ReturnItemProcessingType` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreatedByUserName` |  | |  | `cast(CreatedByUserName as created_by_user_name preserving type)` |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |  |  |
+| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |  |  |
+| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |  |  |
+| `BillingDocumentDateYear` |  | |  | `cast(CalendarDateBillingDoc.CalendarYear as billing_document_date_year)` |  |  |
+| `BillingDocDateYearQuarter` |  | |  | `cast(CalendarDateBillingDoc.YearQuarter as billing_doc_date_year_quarter)` |  |  |
+| `BillingDocDateYearMonth` |  | |  | `cast(CalendarDateBillingDoc.YearMonth as billing_doc_date_year_month)` |  |  |
+| `BillingDocDateCalendarMonth` |  | |  | `cast(CalendarDateBillingDoc.CalendarMonth as billing_doc_date_cal_month)` |  |  |
+| `BillingDocumentDateCalendarDay` |  | |  | `cast(CalendarDateBillingDoc.CalendarDay as billing_doc_date_cal_day)` |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SoldToPartyName` |  | |  |  |  |  |
+| `Customer` |  | |  | `cast (Item.SoldToParty as kunnr)` |  |  |
+| `SoldToPartyClassification` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `ShipToPartyName` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `BillToPartyName` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `PayerPartyName` |  | |  |  |  |  |
+| `SalesEmployee` |  | |  | `cast(Item.SalesEmployee as sales_empl)` |  |  |
+| `SalesEmployeeName` |  | |  | `cast(SalesEmployeeWorkAgreement.PersonFullName as sales_empl_name)` |  |  |
+| `ResponsibleEmployee` |  | |  | `cast(Item.ResponsibleEmployee as resp_empl)` |  |  |
+| `ResponsibleEmployeeName` |  | |  | `cast(RespEmployeeWorkAgreement.PersonFullName as resp_empl_name)` |  |  |
+| `SalesEmployeeWorkAgreement` |  | |  | `cast(Item.SalesEmployee as sales_empl_wrk_agrmt)` |  |  |
+| `ResponsibleEmployeeWorkAgrmt` |  | |  | `cast(Item.ResponsibleEmployee as resp_empl_wrk_agrmt)` |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `CityCode` |  | |  |  |  |  |
+| `County` |  | |  |  |  |  |
+| `County_2` |  | |  |  |  |  |
+| `CreditControlArea` |  | |  |  |  |  |
+| `CustomerRebateAgreement` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `SDDocumentReason` |  | |  |  |  |  |
+| `RetailPromotion` |  | |  |  |  |  |
+| `RebateBasisAmount` |  | |  |  |  |  |
+| `VolumeRebateGroup` |  | |  |  |  |  |
+| `ItemIsRelevantForCredit` |  | |  |  |  |  |
+| `CreditRelatedPrice` |  | |  |  |  |  |
+| `SalesDeal` |  | |  |  |  |  |
+| `SalesDealDescription` |  | |  |  |  |  |
+| `SalesPromotion` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  | `cast( Material as productnumber preserving type )` |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `PricingReferenceMaterial` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ProductHierarchyNode` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `ProductGroup` |  | |  | `cast (MaterialGroup as productgroup preserving type)` |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `MaterialCommissionGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PlantName` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `StorageLocationName` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `BillingDocumentIsCancelled` |  | |  |  |  |  |
+| `CancelledBillingDocument` |  | |  |  |  |  |
+| `ForeignTrade` |  | |  |  |  |  |
+| `IsExportDelivery` |  | |  |  |  |  |
+| `BillingDocCombinationCriteria` |  | |  |  |  |  |
+| `ManualInvoiceMaintIsRelevant` |  | |  |  |  |  |
+| `BillingDocumentItemText` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `BillingQuantity` |  | |  |  |  |  |
+| `BillingQuantityUnit` |  | |  |  |  |  |
+| `BillingQuantityInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `MRPRequiredQuantityInBaseUnit` |  | |  |  |  |  |
+| `BillingToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `BillingToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `BillToPartyCountry` |  | |  |  |  |  |
+| `BillToPartyRegion` |  | |  |  |  |  |
+| `BillingPlanRule` |  | |  |  |  |  |
+| `BillingPlan` |  | |  |  |  |  |
+| `BillingPlanItem` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `PriceListType` |  | |  |  |  |  |
+| `TaxDepartureCountry` |  | |  |  |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `VATRegistrationOrigin` |  | |  |  |  |  |
+| `VATRegistrationCountry` |  | |  |  |  |  |
+| `CustomerTaxClassification1` |  | |  |  |  |  |
+| `CustomerTaxClassification2` |  | |  |  |  |  |
+| `CustomerTaxClassification3` |  | |  |  |  |  |
+| `CustomerTaxClassification4` |  | |  |  |  |  |
+| `CustomerTaxClassification5` |  | |  |  |  |  |
+| `CustomerTaxClassification6` |  | |  |  |  |  |
+| `CustomerTaxClassification7` |  | |  |  |  |  |
+| `CustomerTaxClassification8` |  | |  |  |  |  |
+| `CustomerTaxClassification9` |  | |  |  |  |  |
+| `SDPricingProcedure` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ItemNetAmountOfBillingDoc` |  | |  |  |  |  |
+| `ItemNetAmountOfBillingDoc_2` |  | |  |  |  |  |
+| `ItemGrossAmountOfBillingDoc` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `PricingScaleQuantityInBaseUnit` |  | |  |  |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `CostAmount` |  | |  |  |  |  |
+| `Subtotal1Amount` |  | |  |  |  |  |
+| `Subtotal2Amount` |  | |  |  |  |  |
+| `Subtotal3Amount` |  | |  |  |  |  |
+| `Subtotal4Amount` |  | |  |  |  |  |
+| `Subtotal5Amount` |  | |  |  |  |  |
+| `Subtotal6Amount` |  | |  |  |  |  |
+| `StatisticalValueControl` |  | |  |  |  |  |
+| `StatisticalValue` |  | |  | `StatisticalValueControl` |  |  |
+| `MainItemPricingRefMaterial` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |  |  |
+| `NetAmountInDisplayCurrency` |  | |  | `cast ( currency_conversion( amount => ItemNetAmountOfBillingDoc_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as net_amount_in_dsp_crcy)` |  |  |
+| `ShippingCondition` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `PaymentMethodName` |  | |  |  |  |  |
+| `PaymentReference` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `AdditionalValueDays` |  | |  |  |  |  |
+| `EligibleAmountForCashDiscount` |  | |  |  |  |  |
+| `CustomerProject` |  | |  | `EngagementProject` |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CompanyCodeName` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `AccountingDocument` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `AccountingExchangeRateIsSet` |  | |  |  |  |  |
+| `AccountingExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  | `cast(ExchangeRateType as doc_exchange_rate_type preserving type )` |  |  |
+| `DocumentReferenceID` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `DunningArea` |  | |  |  |  |  |
+| `DunningBlockingReason` |  | |  |  |  |  |
+| `DunningKey` |  | |  |  |  |  |
+| `InternalFinancialDocument` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElement` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | | `_WBSElementBasicData` | `WBSElementExternalID` |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ControllingAreaName` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  | `cast( case when ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad( ProfitabilitySegment_2, 10, '0' ) end as rkeobjnr_numc )` |  |  |
+| `ProfitabilitySegment_2` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `OriginSDDocument` |  | |  |  |  |  |
+| `OriginSDDocumentItem` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `SalesSDDocumentCategory` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `BillingDocumentItemInPartSgmt` |  | |  |  |  |  |
+| `PropagatePrftbltySgmt2BOM` |  | |  |  |  |  |
+| `CostDeterminationIsRequired` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |  |  |
+| `OverallSDProcessStatus` |  | |  |  |  |  |
+| `OverallBillingStatus` |  | |  |  |  |  |
+| `AccountingPostingStatus` |  | |  |  |  |  |
+| `AccountingTransferStatus` |  | |  |  |  |  |
+| `BillingIssueType` |  | |  |  |  |  |
+| `InvoiceListStatus` |  | |  |  |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |  |  |
+| `OverallPricingIncompletionSts` |  | |  |  |  |  |
+| `StatisticsCurrency` |  | |  |  |  |  |
+| `SalesVolumeNetAmount` |  | |  |  |  |  |
+| `SalesVolumeNetAmount_2` |  | |  |  |  |  |
+| `SlsVolumeNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => SalesVolumeNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as mc_umnetwr )` |  |  |
+| `CancldSlsVolumeNetAmt` |  | |  |  |  |  |
+| `CancldSlsVolumeNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => CancldSlsVolumeNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cancld_sls_vol_net_amt_idc )` |  |  |
+| `SalesProfitMarginNetAmount` |  | |  |  |  |  |
+| `SlsProfitMargNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => SalesProfitMarginNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as prf_marg_net_amt_idc )` |  |  |
+| `CustomerCreditMemoNetAmount` |  | |  |  |  |  |
+| `CustomerCreditMemoNetAmount_2` |  | |  |  |  |  |
+| `CustCrdtMemoNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => CustomerCreditMemoNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as mc_gunetwr )` |  |  |
+| `CustCrdtMemoPrftMargNetAmt` |  | |  |  |  |  |
+| `CustCrdtMemoPrftMargNetAmtInDC` |  | |  | `cast ( currency_conversion( amount => CustCrdtMemoPrftMargNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cm_prf_marg_net_amt_idc )` |  |  |
+| `SalesVolumeQuantity` |  | |  |  |  |  |
+| `CustCreditMemoQuantity` |  | |  |  |  |  |
+| `_CustomerProject` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_SalesEmployee` | | ✓ | | | | |
+| `_ResponsibleEmployee` | | ✓ | | | | |
+| `_SalesEmployee_2` | | ✓ | | | | |
+| `_ResponsibleEmployee_2` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementExternalID` | | ✓ | | | | |
+| `_BillingDocument` | | ✓ | | | | |
+| `_SDDocumentCategory` | | ✓ | | | | |
+| `_BillingDocumentCategory` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_SalesDocumentItemCategory` | | ✓ | | | | |
+| `_SalesDocumentItemType` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LogicalSystem` | | ✓ | | | | |
+| `_SoldToPartyClassification` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_CityCode` | | ✓ | | | | |
+| `_County` | | ✓ | | | | |
+| `_County_2` | | ✓ | | | | |
+| `_CreditControlArea` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_SDDocumentReason` | | ✓ | | | | |
+| `_SalesDeal` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_OrganizationDivision` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_OriginallyRequestedMaterial` | | ✓ | | | | |
+| `_PricingReferenceMaterial` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_ProductHierarchyNode` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | | | |
+| `_MaterialCommissionGroup` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_BillingQuantityUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_ItemWeightUnit` | | ✓ | | | | |
+| `_ItemVolumeUnit` | | ✓ | | | | |
+| `_BillToPartyCountry` | | ✓ | | | | |
+| `_BillToPartyRegion` | | ✓ | | | | |
+| `_BillingPlanRule` | | ✓ | | | | |
+| `_StatisticalValueControl` | | ✓ | | | | |
+| `_CustomerPriceGroup` | | ✓ | | | | |
+| `_PriceListType` | | ✓ | | | | |
+| `_TaxDepartureCountry` | | ✓ | | | | |
+| `_VATRegistrationOrigin` | | ✓ | | | | |
+| `_VATRegistrationCountry` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_ShippingCondition` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | | | |
+| `_ExchangeRateType` | | ✓ | | | | |
+| `_DunningArea` | | ✓ | | | | |
+| `_DunningBlockingReason` | | ✓ | | | | |
+| `_DunningKey` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_OrderID` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | | | |
+| `_SalesSDDocumentCategory` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
+| `_HigherLevelItem` | | ✓ | | | | |
+| `_MainItemPricingRefMaterial` | | ✓ | | | | |
+| `_OverallSDProcessStatus` | | ✓ | | | | |
+| `_OverallBillingStatus` | | ✓ | | | | |
+| `_AccountingPostingStatus` | | ✓ | | | | |
+| `_AccountingTransferStatus` | | ✓ | | | | |
+| `_BillingIssueType` | | ✓ | | | | |
+| `_InvoiceListStatus` | | ✓ | | | | |
+| `_OvrlItmGeneralIncompletionSts` | | ✓ | | | | |
+| `_OverallPricingIncompletionSts` | | ✓ | | | | |
+| `_StatisticsCurrency` | | ✓ | | | | |
 
 ## Associations
 

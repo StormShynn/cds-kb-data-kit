@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  | `lifnr` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `SupplierAlternativePayee` | ✓ | |  | `empfk` |
-| `_CompanyCode` | | ✓ | | |
-| `_SupplierCompany` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `SupplierAlternativePayee` | ✓ | |  | `empfk` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_SupplierCompany` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

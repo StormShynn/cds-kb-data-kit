@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |
-| `PurchaseOrder` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |
-| `PurchaseOrderType` |  | | `_PurchaseOrder` | `PurchaseOrderType` |
-| `DocumentCurrency` |  | | `_PurchaseOrder` | `DocumentCurrency` |
-| `PurchaseOrderNetAmount` |  | |  | `cast((_PurchaseOrderNetAmount.PurchaseOrderNetAmount) as mm_pur_order_tot_net_amount preserving type )` |
-| `WorkflowTaskResult` |  | |  | `case _WorkitemDet.WorkflowTaskType when 'W' then case _Workflowtask._WorkflowTaskResult.WorkflowTaskResult when 'requestApproved' then 'Approved' when 'requestRejected' then 'Rejected' else _Workflowtask._WorkflowTaskResult.WorkflowTaskResult end when 'B' then 'Automatically Approved' else _Workflowtask._WorkflowTaskResult.WorkflowTaskResult end` |
-| `PurOrdWrkflwTskCreationUTCDate` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `PurOrdWrkflwTskCreationUTCTime` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `PurOrdWrkflwTaskEndUTCDate` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCompletionUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
-| `PurOrdWrkflwTaskEndUTCTime` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCompletionUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
-| `Supplier` |  | | `_PurchaseOrder` | `Supplier` |
-| `CreatedByUserName` |  | |  | `cast(_User.UserDescription as mm_oa_user_fullname )` |
-| `SupplierName` |  | | `_Supplier` | `SupplierName` |
-| `POHeaderTextPlainLongText` |  | | `_PurchaseOrderPlainLongText` | `PlainLongText` |
-| `POHeaderNotePlainLongText` |  | | `_PurchaseOrderNoteLongText` | `PlainLongText` |
-| `ApprovedByUserFullName` |  | |  | `case _WorkitemDet.WorkflowTaskType when 'B' then 'Automatically Approved' else cast(_ApproverUser.UserDescription as mm_oa_user_fullname ) end` |
-| `WorkflowTaskResultComment` |  | | `_WorkflowTaskResultComment` | `WorkflowTaskResultComment` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |  |  |
+| `PurchaseOrder` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |  |  |
+| `PurchaseOrderType` |  | | `_PurchaseOrder` | `PurchaseOrderType` |  |  |
+| `DocumentCurrency` |  | | `_PurchaseOrder` | `DocumentCurrency` |  |  |
+| `PurchaseOrderNetAmount` |  | |  | `cast((_PurchaseOrderNetAmount.PurchaseOrderNetAmount) as mm_pur_order_tot_net_amount preserving type )` |  |  |
+| `WorkflowTaskResult` |  | |  | `case _WorkitemDet.WorkflowTaskType when 'W' then case _Workflowtask._WorkflowTaskResult.WorkflowTaskResult when 'requestApproved' then 'Approved' when 'requestRejected' then 'Rejected' else _Workflowtask._WorkflowTaskResult.WorkflowTaskResult end when 'B' then 'Automatically Approved' else _Workflowtask._WorkflowTaskResult.WorkflowTaskResult end` |  |  |
+| `PurOrdWrkflwTskCreationUTCDate` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |  |  |
+| `PurOrdWrkflwTskCreationUTCTime` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |  |  |
+| `PurOrdWrkflwTaskEndUTCDate` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCompletionUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |  |  |
+| `PurOrdWrkflwTaskEndUTCTime` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCompletionUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |  |  |
+| `Supplier` |  | | `_PurchaseOrder` | `Supplier` |  |  |
+| `CreatedByUserName` |  | |  | `cast(_User.UserDescription as mm_oa_user_fullname )` |  |  |
+| `SupplierName` |  | | `_Supplier` | `SupplierName` |  |  |
+| `POHeaderTextPlainLongText` |  | | `_PurchaseOrderPlainLongText` | `PlainLongText` |  |  |
+| `POHeaderNotePlainLongText` |  | | `_PurchaseOrderNoteLongText` | `PlainLongText` |  |  |
+| `ApprovedByUserFullName` |  | |  | `case _WorkitemDet.WorkflowTaskType when 'B' then 'Automatically Approved' else cast(_ApproverUser.UserDescription as mm_oa_user_fullname ) end` |  |  |
+| `WorkflowTaskResultComment` |  | | `_WorkflowTaskResultComment` | `WorkflowTaskResultComment` |  |  |
 
 ## Source Code
 

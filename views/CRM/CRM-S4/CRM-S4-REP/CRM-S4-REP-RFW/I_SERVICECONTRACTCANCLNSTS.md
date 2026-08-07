@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContractCanclnSts` | ✓ | |  | `domvalue_l` |
-| `_ServiceContractCanclnStsTxt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContractCanclnSts` | ✓ | |  | `domvalue_l` |  |  |
+| `_ServiceContractCanclnStsTxt` | | ✓ | | | | |
 
 ## Associations
 

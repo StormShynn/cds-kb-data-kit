@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusinessTransactionProcess` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 8 ) as evl_proid_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusinessTransactionProcess` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 8 ) as evl_proid_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

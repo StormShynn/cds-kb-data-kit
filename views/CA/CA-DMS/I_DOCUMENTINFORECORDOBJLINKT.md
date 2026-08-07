@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `LinkedSAPObject` | ✓ | |  | `dokob` |
-| `ObjectDescription` |  | |  | `ktxt` |
-| `ObjectType` |  | |  | `objab` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `LinkedSAPObject` | ✓ | |  | `dokob` |  |  |
+| `ObjectDescription` |  | |  | `ktxt` |  |  |
+| `ObjectType` |  | |  | `objab` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

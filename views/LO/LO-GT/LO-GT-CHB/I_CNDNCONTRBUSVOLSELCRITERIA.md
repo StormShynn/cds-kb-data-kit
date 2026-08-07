@@ -28,128 +28,128 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionContract` |  | |  | `}] } key ConditionContract` |
-| `CndnContrBusVolUUID` | ✓ | |  |  |
-| `BusVolFieldCombnType` |  | |  |  |
-| `BusVolFldCombnGroup` |  | |  |  |
-| `CndnContrBusVolSign` |  | |  |  |
-| `BusVolSelectionGroup` |  | |  |  |
-| `CndnContrSupplier` |  | |  | `}] } CndnContrSupplier` |
-| `CndnContrCustomer` |  | |  | `}] } CndnContrCustomer` |
-| `CndnContrBusVolValidFrom` |  | |  |  |
-| `CndnContrBusVolValidTo` |  | |  |  |
-| `Supplier` |  | |  | `}] } Supplier` |
-| `Customer` |  | |  | `}] } Customer` |
-| `CompanyCode` |  | |  | `}] } CompanyCode` |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `Plant` |  | |  | `}] } Plant` |
-| `SupplierSubrange` |  | |  |  |
-| `ProductGroup` |  | |  | `}] } ProductGroup` |
-| `Product` |  | |  | `}] } Product` |
-| `ProductType` |  | |  |  |
-| `CndnContrCustomerList` |  | |  | `}] } CndnContrCustomerList` |
-| `CndnContrSupplierList` |  | |  | `}] } CndnContrSupplierList` |
-| `CndnContrPlantList` |  | |  | `}] } CndnContrPlantList` |
-| `CustomerHierarchy` |  | |  | `}] } CustomerHierarchy` |
-| `ProductHierarchy` |  | |  |  |
-| `SalesSpcfcProductGroup1` |  | |  |  |
-| `SalesSpcfcProductGroup2` |  | |  |  |
-| `SalesSpcfcProductGroup3` |  | |  |  |
-| `SalesSpcfcProductGroup4` |  | |  |  |
-| `SalesSpcfcProductGroup5` |  | |  |  |
-| `CndnContrBusVolList` |  | |  |  |
-| `SalesOrderReason` |  | |  |  |
-| `Manufacturer` |  | |  | `}] } Manufacturer` |
-| `RoyaltyRecipient` |  | |  | `}] } RoyaltyRecipient` |
-| `CommissionRecipient` |  | |  | `}] } CommissionRecipient` |
-| `WorkerCommissionRecipient` |  | |  | `}] } WorkerCommissionRecipient` |
-| `ShipToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CustomerConditionGroup1` |  | |  |  |
-| `CustomerConditionGroup2` |  | |  |  |
-| `CustomerConditionGroup3` |  | |  |  |
-| `CustomerConditionGroup4` |  | |  |  |
-| `CustomerConditionGroup5` |  | |  |  |
-| `ProdUnivHierarchyNode` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `ProductCommissionGroup` |  | |  |  |
-| `PricingReferenceProduct` |  | |  |  |
-| `SoldProduct` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `ProductPricingGroup` |  | |  |  |
-| `SalesVolumeRebateGroup` |  | |  |  |
-| `BizVolSelCndnContrProcVar` |  | |  |  |
-| `BizVolSelConditionContract` |  | |  |  |
-| `CndnContrSuplrInvcDlvCostCat` |  | |  |  |
-| `CustomerHierarchyRootNode` |  | |  |  |
-| `CustomerHierarchyNodeID` |  | |  |  |
-| `CustomerHierarchyNodeType` |  | |  |  |
-| `CndnContrSourceBusVolUUID` |  | |  |  |
-| `_BusVolFieldCombnType` | | ✓ | | |
-| `_CndnContrBusVolSign` | | ✓ | | |
-| `_BusVolSelectionGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_CustomerHierarchy` | | ✓ | | |
-| `_ProductHierarchy` | | ✓ | | |
-| `_SalesSpcfcProductGroup1` | | ✓ | | |
-| `_SalesSpcfcProductGroup2` | | ✓ | | |
-| `_SalesSpcfcProductGroup3` | | ✓ | | |
-| `_SalesSpcfcProductGroup4` | | ✓ | | |
-| `_SalesSpcfcProductGroup5` | | ✓ | | |
-| `_ConditionContract` | | ✓ | | |
-| `_ProductType` | | ✓ | | |
-| `_SalesOrderReason` | | ✓ | | |
-| `_Manufacturer` | | ✓ | | |
-| `_RoyaltyRecipient` | | ✓ | | |
-| `_CommissionRecipient` | | ✓ | | |
-| `_CndnContrSupplier` | | ✓ | | |
-| `_CndnContrCustomer` | | ✓ | | |
-| `_CndnContrCustomerList` | | ✓ | | |
-| `_CndnContrSupplierList` | | ✓ | | |
-| `_CndnContrPlantList` | | ✓ | | |
-| `_BizVolSelConditionContract` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_WorkerCommissionRecipient` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_AdditionalCustomerGroup1` | | ✓ | | |
-| `_AdditionalCustomerGroup2` | | ✓ | | |
-| `_AdditionalCustomerGroup3` | | ✓ | | |
-| `_AdditionalCustomerGroup4` | | ✓ | | |
-| `_AdditionalCustomerGroup5` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_PricingReferenceProduct` | | ✓ | | |
-| `_SoldProduct` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_BizVolSelCndnContrProcVar` | | ✓ | | |
-| `_CndnContrSuplrInvcDlvCostCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionContract` | ✓ | |  |  |  |  |
+| `CndnContrBusVolUUID` | ✓ | |  |  |  |  |
+| `BusVolFieldCombnType` |  | |  |  |  |  |
+| `BusVolFldCombnGroup` |  | |  |  |  |  |
+| `CndnContrBusVolSign` |  | |  |  |  |  |
+| `BusVolSelectionGroup` |  | |  |  |  |  |
+| `CndnContrSupplier` |  | |  |  |  |  |
+| `CndnContrCustomer` |  | |  |  |  |  |
+| `CndnContrBusVolValidFrom` |  | |  |  |  |  |
+| `CndnContrBusVolValidTo` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `SupplierSubrange` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductType` |  | |  |  |  |  |
+| `CndnContrCustomerList` |  | |  |  |  |  |
+| `CndnContrSupplierList` |  | |  |  |  |  |
+| `CndnContrPlantList` |  | |  |  |  |  |
+| `CustomerHierarchy` |  | |  |  |  |  |
+| `ProductHierarchy` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup1` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup2` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup3` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup4` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup5` |  | |  |  |  |  |
+| `CndnContrBusVolList` |  | |  |  |  |  |
+| `SalesOrderReason` |  | |  |  |  |  |
+| `Manufacturer` |  | |  |  |  |  |
+| `RoyaltyRecipient` |  | |  |  |  |  |
+| `CommissionRecipient` |  | |  |  |  |  |
+| `WorkerCommissionRecipient` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `CustomerConditionGroup1` |  | |  |  |  |  |
+| `CustomerConditionGroup2` |  | |  |  |  |  |
+| `CustomerConditionGroup3` |  | |  |  |  |  |
+| `CustomerConditionGroup4` |  | |  |  |  |  |
+| `CustomerConditionGroup5` |  | |  |  |  |  |
+| `ProdUnivHierarchyNode` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `ProductCommissionGroup` |  | |  |  |  |  |
+| `PricingReferenceProduct` |  | |  |  |  |  |
+| `SoldProduct` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `ProductPricingGroup` |  | |  |  |  |  |
+| `SalesVolumeRebateGroup` |  | |  |  |  |  |
+| `BizVolSelCndnContrProcVar` |  | |  |  |  |  |
+| `BizVolSelConditionContract` |  | |  |  |  |  |
+| `CndnContrSuplrInvcDlvCostCat` |  | |  |  |  |  |
+| `CustomerHierarchyRootNode` |  | |  |  |  |  |
+| `CustomerHierarchyNodeID` |  | |  |  |  |  |
+| `CustomerHierarchyNodeType` |  | |  |  |  |  |
+| `CndnContrSourceBusVolUUID` |  | |  |  |  |  |
+| `_BusVolFieldCombnType` | | ✓ | | | | |
+| `_CndnContrBusVolSign` | | ✓ | | | | |
+| `_BusVolSelectionGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_CustomerHierarchy` | | ✓ | | | | |
+| `_ProductHierarchy` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup1` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup2` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup3` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup4` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup5` | | ✓ | | | | |
+| `_ConditionContract` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
+| `_SalesOrderReason` | | ✓ | | | | |
+| `_Manufacturer` | | ✓ | | | | |
+| `_RoyaltyRecipient` | | ✓ | | | | |
+| `_CommissionRecipient` | | ✓ | | | | |
+| `_CndnContrSupplier` | | ✓ | | | | |
+| `_CndnContrCustomer` | | ✓ | | | | |
+| `_CndnContrCustomerList` | | ✓ | | | | |
+| `_CndnContrSupplierList` | | ✓ | | | | |
+| `_CndnContrPlantList` | | ✓ | | | | |
+| `_BizVolSelConditionContract` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_WorkerCommissionRecipient` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_PricingReferenceProduct` | | ✓ | | | | |
+| `_SoldProduct` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_BizVolSelCndnContrProcVar` | | ✓ | | | | |
+| `_CndnContrSuplrInvcDlvCostCat` | | ✓ | | | | |
 
 ## Associations
 

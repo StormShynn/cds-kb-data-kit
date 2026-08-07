@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ExternalIdentificationType` | ✓ | |  | `cast (left(dd07l.domvalue_l, 1 ) as /spe/de_lifex_type preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExternalIdentificationType` | ✓ | |  | `cast (left(dd07l.domvalue_l, 1 ) as /spe/de_lifex_type preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

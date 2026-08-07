@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(_DomainText.Language as spras preserving type )` |
-| `CurrencyConversionsDiffType` | ✓ | |  | `cast(left(_DomainText.DomainValue, 1) as fincs_currencycnvrsnsdifftype)` |
-| `CurrencyConversionsDiffTypeTxt` |  | | `_DomainText` | `DomainValueText` |
-| `DomainValue` |  | | `_DomainText` | `DomainValue` |
-| `_CrcyCnvrsnDiffType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainText.Language as spras preserving type )` |  |  |
+| `CurrencyConversionsDiffType` | ✓ | |  | `cast(left(_DomainText.DomainValue, 1) as fincs_currencycnvrsnsdifftype)` |  |  |
+| `CurrencyConversionsDiffTypeTxt` |  | | `_DomainText` | `DomainValueText` |  |  |
+| `DomainValue` |  | | `_DomainText` | `DomainValue` |  |  |
+| `_CrcyCnvrsnDiffType` | | ✓ | | | | |
 
 ## Associations
 

@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `Batch` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `BatchIdentifyingPlant` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_BatchTP` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `BatchIdentifyingPlant` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_BatchTP` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Source Code
 

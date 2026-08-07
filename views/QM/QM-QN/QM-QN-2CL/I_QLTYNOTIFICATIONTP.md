@@ -28,59 +28,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | |  |  |
-| `MasterLanguage` |  | |  |  |
-| `NotificationOrigin` |  | |  |  |
-| `NotificationType` |  | |  |  |
-| `NotifProcessingPhase` |  | |  |  |
-| `NotificationText` |  | |  |  |
-| `NotificationPriorityType` |  | |  |  |
-| `NotificationPriority` |  | |  |  |
-| `NotificationStatusObject` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `NotificationCatalog` |  | |  |  |
-| `NotificationCodeGroup` |  | |  |  |
-| `NotificationCodeID` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangedDate` |  | |  |  |
-| `NotificationReportingDate` |  | |  |  |
-| `NotificationCompletionDate` |  | |  |  |
-| `NotificationRequiredStartDate` |  | |  |  |
-| `NotificationRequiredStartTime` |  | |  |  |
-| `NotificationRequiredEndDate` |  | |  |  |
-| `NotificationRequiredEndTime` |  | |  |  |
-| `NotificationTimeZone` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `ActiveDivision` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `MainWorkCenterInternalID` |  | |  |  |
-| `MainWorkCenterPlant` |  | |  |  |
-| `InspectionLot` |  | |  |  |
-| `Batch` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `_QltyNotificationLongText` | | ✓ | | |
-| `_QltyNotificationPartner` | | ✓ | | |
-| `_QualityNotificationItem` | | ✓ | | |
-| `_QltyNotificationTask` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  |  |  |  |
+| `MasterLanguage` |  | |  |  |  |  |
+| `NotificationOrigin` |  | |  |  |  |  |
+| `NotificationType` |  | |  |  |  |  |
+| `NotifProcessingPhase` |  | |  |  |  |  |
+| `NotificationText` |  | |  |  |  |  |
+| `NotificationPriorityType` |  | |  |  |  |  |
+| `NotificationPriority` |  | |  |  |  |  |
+| `NotificationStatusObject` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `NotificationCatalog` |  | |  |  |  |  |
+| `NotificationCodeGroup` |  | |  |  |  |  |
+| `NotificationCodeID` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangedDate` |  | |  |  |  |  |
+| `NotificationReportingDate` |  | |  |  |  |  |
+| `NotificationCompletionDate` |  | |  |  |  |  |
+| `NotificationRequiredStartDate` |  | |  |  |  |  |
+| `NotificationRequiredStartTime` |  | |  |  |  |  |
+| `NotificationRequiredEndDate` |  | |  |  |  |  |
+| `NotificationRequiredEndTime` |  | |  |  |  |  |
+| `NotificationTimeZone` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `ActiveDivision` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |  |  |
+| `MainWorkCenterPlant` |  | |  |  |  |  |
+| `InspectionLot` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `_QltyNotificationLongText` | | ✓ | | | | |
+| `_QltyNotificationPartner` | | ✓ | | | | |
+| `_QualityNotificationItem` | | ✓ | | | | |
+| `_QltyNotificationTask` | | ✓ | | | | |
 
 ## Source Code
 

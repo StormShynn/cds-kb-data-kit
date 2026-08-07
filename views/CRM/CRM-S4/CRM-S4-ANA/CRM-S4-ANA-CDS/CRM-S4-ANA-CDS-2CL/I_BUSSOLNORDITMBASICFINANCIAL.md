@@ -26,77 +26,77 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  | `ServiceDocument` |
-| `BusinessSolutionOrderItem` | ✓ | |  | `ServiceDocumentItem` |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceDocumentDescription` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `BusinessSolutionOrderItemUUID` |  | |  | `ServiceDocumentItemUUID` |
-| `ServiceDocumentItemObjectType` |  | |  |  |
-| `BusinessSolutionOrderUUID` |  | |  | `ServiceDocumentUUID` |
-| `ParentServiceDocumentItemUUID` |  | |  |  |
-| `ServiceDocumentItemDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `OriginallyRequestedProduct` |  | |  |  |
-| `ServiceDocItemCategory` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceDocumentItemNetAmount` |
-| `ServiceDocumentItemTaxAmount` |  | |  | `} ServiceDocumentItemTaxAmount` |
-| `ServiceDocItemGrossAmount` |  | |  | `} ServiceDocItemGrossAmount` |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocumentItemQuantity` |  | |  | `} ServiceDocumentItemQuantity` |
-| `ServiceDocItemQuantityUnit` |  | |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |
-| `ServiceContrItemStartDateTime` |  | |  |  |
-| `ServiceContrItemEndDateTime` |  | |  |  |
-| `SoldToPartyCountry` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ResponsibleEmployee` |  | |  |  |
-| `ServiceDocumentItemStatus` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `ResponsibleServiceOrganization` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `_ServiceDocument` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_SalesUnit` | | ✓ | | |
-| `_ServiceDocItemCategory` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_ServiceDocItemStatus` | | ✓ | | |
-| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
-| `_SalesOrganizationOrgUnit` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOfficeOrgUnit` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesGroupOrgUnit` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
-| `_RespSrvcOrganizationOrgUnit` | | ✓ | | |
-| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  | `ServiceDocument` |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  | `ServiceDocumentItem` |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceDocumentDescription` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `BusinessSolutionOrderItemUUID` |  | |  | `ServiceDocumentItemUUID` |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
+| `BusinessSolutionOrderUUID` |  | |  | `ServiceDocumentUUID` |  |  |
+| `ParentServiceDocumentItemUUID` |  | |  |  |  |  |
+| `ServiceDocumentItemDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `OriginallyRequestedProduct` |  | |  |  |  |  |
+| `ServiceDocItemCategory` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
+| `ServiceDocItemGrossAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocumentItemQuantity` |  | |  |  |  |  |
+| `ServiceDocItemQuantityUnit` |  | |  |  |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |  |  |
+| `ServiceContrItemStartDateTime` |  | |  |  |  |  |
+| `ServiceContrItemEndDateTime` |  | |  |  |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ResponsibleEmployee` |  | |  |  |  |  |
+| `ServiceDocumentItemStatus` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `ResponsibleServiceOrganization` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_SalesUnit` | | ✓ | | | | |
+| `_ServiceDocItemCategory` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_ServiceDocItemStatus` | | ✓ | | | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesGroupOrgUnit` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_RespSrvcOrganizationOrgUnit` | | ✓ | | | | |
+| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
 
 ## Source Code
 

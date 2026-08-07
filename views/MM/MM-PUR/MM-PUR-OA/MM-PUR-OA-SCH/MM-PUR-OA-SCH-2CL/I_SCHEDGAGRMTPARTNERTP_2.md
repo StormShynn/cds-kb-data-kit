@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `PurchasingOrganization` | ✓ | |  |  |
-| `SupplierSubrange` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `PartnerCounter` | ✓ | |  |  |
-| `SchedgAgrmtPartner` |  | |  |  |
-| `SchedgAgrmtPartnerName` |  | |  |  |
-| `SchedgAgrmtType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierContact` |  | |  |  |
-| `EmploymentInternalID` |  | |  |  |
-| `PersonWorkAgreement` |  | |  |  |
-| `DefaultPartner` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_SchedgAgrmtHdr` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `SupplierSubrange` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `PartnerCounter` | ✓ | |  |  |  |  |
+| `SchedgAgrmtPartner` |  | |  |  |  |  |
+| `SchedgAgrmtPartnerName` |  | |  |  |  |  |
+| `SchedgAgrmtType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierContact` |  | |  |  |  |  |
+| `EmploymentInternalID` |  | |  |  |  |  |
+| `PersonWorkAgreement` |  | |  |  |  |  |
+| `DefaultPartner` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_SchedgAgrmtHdr` | | ✓ | | | | |
 
 ## Source Code
 

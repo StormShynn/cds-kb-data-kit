@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
-| `CnsldtnVersionType` | ✓ | |  | `cast(left(_DomainT.DomainValue, 1) as fincs_cnsldtnversiontype)` |
-| `CnsldtnVersionTypeText` |  | | `_DomainT` | `DomainValueText` |
-| `DomainValue` |  | | `_DomainT` | `DomainValue` |
-| `_CnsldtnVersionType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |  |  |
+| `CnsldtnVersionType` | ✓ | |  | `cast(left(_DomainT.DomainValue, 1) as fincs_cnsldtnversiontype)` |  |  |
+| `CnsldtnVersionTypeText` |  | | `_DomainT` | `DomainValueText` |  |  |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |  |  |
+| `_CnsldtnVersionType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

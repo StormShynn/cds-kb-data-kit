@@ -32,34 +32,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionRoutingGroup` | ✓ | |  |  |
-| `ProductionRouting` | ✓ | |  |  |
-| `ProductionRoutingInternalVers` | ✓ | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `BillOfOperationsDesc` |  | |  |  |
-| `Plant` |  | |  |  |
-| `BillOfOperationsUsage` |  | |  |  |
-| `BillOfOperationsStatus` |  | |  |  |
-| `ResponsiblePlannerGroup` |  | |  |  |
-| `MinimumLotSizeQuantity` |  | |  |  |
-| `MaximumLotSizeQuantity` |  | |  |  |
-| `BillOfOperationsUnit` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `PlainLongText` |  | |  |  |
-| `PlanningWorkCenter` |  | |  |  |
-| `ReplacedBillOfOperations` |  | |  |  |
-| `_ProdnRtgTP` | | ✓ | | |
-| `_MatlAssgmt` | | ✓ | | |
-| `_Sequence` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |  |  |
+| `ProductionRouting` | ✓ | |  |  |  |  |
+| `ProductionRoutingInternalVers` | ✓ | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `BillOfOperationsDesc` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `BillOfOperationsUsage` |  | |  |  |  |  |
+| `BillOfOperationsStatus` |  | |  |  |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |  |  |
+| `BillOfOperationsUnit` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `PlainLongText` |  | |  |  |  |  |
+| `PlanningWorkCenter` |  | |  |  |  |  |
+| `ReplacedBillOfOperations` |  | |  |  |  |  |
+| `_ProdnRtgTP` | | ✓ | | | | |
+| `_MatlAssgmt` | | ✓ | | | | |
+| `_Sequence` | | ✓ | | | | |
 
 ## Source Code
 

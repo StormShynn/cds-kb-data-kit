@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |
-| `FiscalYear` | ✓ | |  |  |
-| `FiscalPeriod` | ✓ | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `FiscalPeriodStartDate` |  | |  |  |
-| `FiscalPeriodEndDate` |  | |  |  |
-| `IsSpecialPeriod` |  | |  |  |
-| `FiscalYearStartDate` |  | |  |  |
-| `FiscalYearEndDate` |  | |  |  |
-| `NextFiscalPeriod` |  | |  |  |
-| `NextFiscalPeriodFiscalYear` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `FiscalPeriod` | ✓ | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `FiscalPeriodStartDate` |  | |  |  |  |  |
+| `FiscalPeriodEndDate` |  | |  |  |  |  |
+| `IsSpecialPeriod` |  | |  |  |  |  |
+| `FiscalYearStartDate` |  | |  |  |  |  |
+| `FiscalYearEndDate` |  | |  |  |  |  |
+| `NextFiscalPeriod` |  | |  |  |  |  |
+| `NextFiscalPeriodFiscalYear` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

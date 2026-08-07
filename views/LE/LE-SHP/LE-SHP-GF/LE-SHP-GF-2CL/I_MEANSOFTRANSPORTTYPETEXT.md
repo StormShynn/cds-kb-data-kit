@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MeansOfTransportType` | ✓ | |  | `traty` |
-| `Language` | ✓ | |  | `spras` |
-| `MeansOfTransportTypeName` |  | |  | `vtext` |
-| `_MeansOfTransportType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeansOfTransportType` | ✓ | |  | `traty` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MeansOfTransportTypeName` |  | |  | `vtext` |  |  |
+| `_MeansOfTransportType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

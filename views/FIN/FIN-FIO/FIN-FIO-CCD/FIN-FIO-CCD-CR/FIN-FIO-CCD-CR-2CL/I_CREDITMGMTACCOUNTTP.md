@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `CreditSegment` | ✓ | |  |  |
-| `BusinessPartnerIsCritical` |  | |  |  |
-| `CreditAccountIsBlocked` |  | |  |  |
-| `CreditAccountBlockReason` |  | |  |  |
-| `CreditAccountResubmissionDate` |  | |  |  |
-| `CreditLimitAmount` |  | |  | `} CreditLimitAmount` |
-| `CreditLimitValidityEndDate` |  | |  |  |
-| `CreditLimitLastChangeDate` |  | |  |  |
-| `CreditLimitCalculatedAmount` |  | |  | `} CreditLimitCalculatedAmount` |
-| `CreditLimitIsZero` |  | |  |  |
-| `CreditLimitRequestedAmount` |  | |  | `} CreditLimitRequestedAmount` |
-| `CrdtLmtIsReqdFrmAutomCalc` |  | |  |  |
-| `CreditLimitReqdValidityEndDate` |  | |  |  |
-| `CreditLimitRequestDate` |  | |  |  |
-| `CreditSegmentCurrency` |  | |  |  |
-| `_CrdtMBusinessPartnerTP` | | ✓ | | |
-| `_CrdtMAcctCrdtInsuranceTP` | | ✓ | | |
-| `_CrdtMAcctCollateralTP` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `CreditSegment` | ✓ | |  |  |  |  |
+| `BusinessPartnerIsCritical` |  | |  |  |  |  |
+| `CreditAccountIsBlocked` |  | |  |  |  |  |
+| `CreditAccountBlockReason` |  | |  |  |  |  |
+| `CreditAccountResubmissionDate` |  | |  |  |  |  |
+| `CreditLimitAmount` |  | |  |  |  |  |
+| `CreditLimitValidityEndDate` |  | |  |  |  |  |
+| `CreditLimitLastChangeDate` |  | |  |  |  |  |
+| `CreditLimitCalculatedAmount` |  | |  |  |  |  |
+| `CreditLimitIsZero` |  | |  |  |  |  |
+| `CreditLimitRequestedAmount` |  | |  |  |  |  |
+| `CrdtLmtIsReqdFrmAutomCalc` |  | |  |  |  |  |
+| `CreditLimitReqdValidityEndDate` |  | |  |  |  |  |
+| `CreditLimitRequestDate` |  | |  |  |  |  |
+| `CreditSegmentCurrency` |  | |  |  |  |  |
+| `_CrdtMBusinessPartnerTP` | | ✓ | | | | |
+| `_CrdtMAcctCrdtInsuranceTP` | | ✓ | | | | |
+| `_CrdtMAcctCollateralTP` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
 

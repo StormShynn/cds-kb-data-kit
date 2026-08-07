@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPArea` | ✓ | |  | `berid` |
-| `MRPAreaPlant` | ✓ | |  | `werks` |
-| `MRPAreaSubcontractor` | ✓ | |  | `lbear` |
-| `_MRPArea` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPArea` | ✓ | |  | `berid` |  |  |
+| `MRPAreaPlant` | ✓ | |  | `werks` |  |  |
+| `MRPAreaSubcontractor` | ✓ | |  | `lbear` |  |  |
+| `_MRPArea` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

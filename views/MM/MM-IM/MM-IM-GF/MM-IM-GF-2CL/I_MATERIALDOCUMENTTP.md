@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialDocumentYear` | ✓ | |  |  |
-| `MaterialDocument` | ✓ | |  |  |
-| `DocumentDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `GoodsMovementCode` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `MaterialDocumentHeaderText` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `ManualPrintIsTriggered` |  | |  |  |
-| `VersionForPrintingSlip` |  | |  |  |
-| `_MaterialDocumentItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialDocumentYear` | ✓ | |  |  |  |  |
+| `MaterialDocument` | ✓ | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `GoodsMovementCode` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `MaterialDocumentHeaderText` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `ManualPrintIsTriggered` |  | |  |  |  |  |
+| `VersionForPrintingSlip` |  | |  |  |  |  |
+| `_MaterialDocumentItem` | | ✓ | | | | |
 
 ## Source Code
 

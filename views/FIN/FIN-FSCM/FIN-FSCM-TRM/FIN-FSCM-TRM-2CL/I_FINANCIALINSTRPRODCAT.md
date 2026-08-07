@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialInstrProductCategory` | ✓ | |  | `sanlf` |
-| `TreasuryContractType` |  | |  | `rantyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlf` |  |  |
+| `TreasuryContractType` |  | |  | `rantyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

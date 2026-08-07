@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountAssignmentCategory` | ✓ | |  | `knttp` |
-| `Language` | ✓ | |  | `spras` |
-| `AcctAssignmentCategoryName` |  | |  | `knttx` |
-| `_Language` | | ✓ | | |
-| `_AccountAssignmentCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountAssignmentCategory` | ✓ | |  | `knttp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `AcctAssignmentCategoryName` |  | |  | `knttx` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_AccountAssignmentCat` | | ✓ | | | | |
 
 ## Associations
 

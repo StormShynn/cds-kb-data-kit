@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASEPAPreNotifOriginCode` | ✓ | |  | `cast( left( domvalue_l,2 ) as pnhkf_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CASEPAPreNotifOriginCodeText` |  | |  | `cast( ddtext as pnhkf_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASEPAPreNotifOriginCode` | ✓ | |  | `cast( left( domvalue_l,2 ) as pnhkf_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CASEPAPreNotifOriginCodeText` |  | |  | `cast( ddtext as pnhkf_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

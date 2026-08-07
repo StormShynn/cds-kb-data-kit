@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARevenueAccountingRefType` | ✓ | |  | `reference_type` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARevenueAccountingRefType` | ✓ | |  | `reference_type` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

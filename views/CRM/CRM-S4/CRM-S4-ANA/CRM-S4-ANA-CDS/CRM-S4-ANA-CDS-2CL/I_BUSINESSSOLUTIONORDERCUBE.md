@@ -27,47 +27,47 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |
-| `BusinessSolutionOrder` | ✓ | |  |  |
-| `BusSolnOrdType` |  | |  |  |
-| `BusSolnOrdDescription` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `SoldToPartyCountry` |  | |  |  |
-| `SoldToPartyRegion` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `BusSolnOrdStatus` |  | |  |  |
-| `NrOfOpenBusSolnOrders` |  | |  |  |
-| `NrOfReldBusSolnOrders` |  | |  |  |
-| `NrOfCmpltdBusSolnOrders` |  | |  |  |
-| `NrOfCrtedBusSolnOrders` |  | |  |  |
-| `ServiceDocumentCreationDate` |  | |  |  |
-| `BusSolnOrdCreationQuarter` |  | |  |  |
-| `BusSolnOrdCreationMonth` |  | |  |  |
-| `BusSolnOrdCreationYear` |  | |  |  |
-| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `PostingDate` |  | |  |  |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_Period` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_SrvcDocLifecycleStatus` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_SoldToPartyCountry` | | ✓ | | |
-| `_SoldToPartyRegion` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |  |  |
+| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
+| `BusSolnOrdType` |  | |  |  |  |  |
+| `BusSolnOrdDescription` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `SoldToPartyCountry` |  | |  |  |  |  |
+| `SoldToPartyRegion` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `BusSolnOrdStatus` |  | |  |  |  |  |
+| `NrOfOpenBusSolnOrders` |  | |  |  |  |  |
+| `NrOfReldBusSolnOrders` |  | |  |  |  |  |
+| `NrOfCmpltdBusSolnOrders` |  | |  |  |  |  |
+| `NrOfCrtedBusSolnOrders` |  | |  |  |  |  |
+| `ServiceDocumentCreationDate` |  | |  |  |  |  |
+| `BusSolnOrdCreationQuarter` |  | |  |  |  |  |
+| `BusSolnOrdCreationMonth` |  | |  |  |  |  |
+| `BusSolnOrdCreationYear` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_Period` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_SoldToPartyCountry` | | ✓ | | | | |
+| `_SoldToPartyRegion` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
 
 ## Source Code
 

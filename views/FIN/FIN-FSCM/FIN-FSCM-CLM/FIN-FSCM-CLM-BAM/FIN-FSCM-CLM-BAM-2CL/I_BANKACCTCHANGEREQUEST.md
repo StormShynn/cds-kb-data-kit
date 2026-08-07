@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankAccountChangeRequest` | ✓ | |  | `request_id` |
-| `BankAcctChangeReqHeadingText` |  | |  | `title` |
-| `BankAccountAction` |  | |  | `account_action` |
-| `BankAccountActionText` |  | | `_actionText` | `BankAccountActionText` |
-| `BankAccountChangeRequestStatus` |  | |  | `request_status` |
-| `BankAccountReqStatusText` |  | | `_requestStatusText` | `BankAccountReqStatusText` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `CreationDate` |  | |  | `created_on` |
-| `BankAcctChangeRequestDueDate` |  | |  | `duedate` |
-| `LastChangedByUser` |  | |  | `lastchged_by` |
-| `BankAcctRequestProcess` |  | |  | `request_process` |
-| `BankAccountChangeRequestStep` |  | |  | `request_step` |
-| `LastChangeDate` |  | |  | `lastchged_on` |
-| `LastChangeTime` |  | |  | `lastchged_tm` |
-| `CreationTime` |  | |  | `created_tm` |
-| `ChangeRequestIsBypassCheck` |  | |  | `bypass_check_mass` |
-| `ChgReqBypassChkIsHidn` |  | |  | `cast ( case when bypass_check_mass = 'X' then '' else 'X' end as boolean preserving type )` |
-| `_Bankaccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountChangeRequest` | ✓ | |  | `request_id` |  |  |
+| `BankAcctChangeReqHeadingText` |  | |  | `title` |  |  |
+| `BankAccountAction` |  | |  | `account_action` |  |  |
+| `BankAccountActionText` |  | | `_actionText` | `BankAccountActionText` |  |  |
+| `BankAccountChangeRequestStatus` |  | |  | `request_status` |  |  |
+| `BankAccountReqStatusText` |  | | `_requestStatusText` | `BankAccountReqStatusText` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `CreationDate` |  | |  | `created_on` |  |  |
+| `BankAcctChangeRequestDueDate` |  | |  | `duedate` |  |  |
+| `LastChangedByUser` |  | |  | `lastchged_by` |  |  |
+| `BankAcctRequestProcess` |  | |  | `request_process` |  |  |
+| `BankAccountChangeRequestStep` |  | |  | `request_step` |  |  |
+| `LastChangeDate` |  | |  | `lastchged_on` |  |  |
+| `LastChangeTime` |  | |  | `lastchged_tm` |  |  |
+| `CreationTime` |  | |  | `created_tm` |  |  |
+| `ChangeRequestIsBypassCheck` |  | |  | `bypass_check_mass` |  |  |
+| `ChgReqBypassChkIsHidn` |  | |  | `cast ( case when bypass_check_mass = 'X' then '' else 'X' end as boolean preserving type )` |  |  |
+| `_Bankaccount` | | ✓ | | | | |
 
 ## Associations
 

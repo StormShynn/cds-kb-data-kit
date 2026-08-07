@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PredecessorOrderInternalID` | ✓ | |  |  |
-| `PredecessorPhaseInternalID` | ✓ | |  |  |
-| `SuccessorOrderInternalID` | ✓ | |  |  |
-| `SuccessorPhaseInternalID` | ✓ | |  |  |
-| `OrderPhaseRelationshipIntType` | ✓ | |  |  |
-| `MaxTimeIntvlIsUsedForSchedg` | ✓ | |  |  |
-| `PredecessorOrder` |  | |  |  |
-| `PredecessorOrderPhase` |  | |  |  |
-| `SuccessorOrder` |  | |  |  |
-| `SuccessorOrderPhase` |  | |  |  |
-| `ManufacturingOrderCategory` |  | |  |  |
-| `PhaseRelshpTimeIntervalUnit` |  | |  |  |
-| `PhaseRelshpTimeIntervalDurn` |  | |  |  |
-| `PhaseRelshpTimeIntervalDurnMax` |  | |  |  |
-| `TimeIntvlBtwnRelshpInPct` |  | |  |  |
-| `TimeInterval` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `ObjectIsDeleted` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ProductionResourceInternalID` |  | |  |  |
-| `ProductionResource` |  | |  |  |
-| `_SuccessorPhase` | | ✓ | | |
-| `_SuccessorOrder` | | ✓ | | |
-| `_PredecessorPhase` | | ✓ | | |
-| `_PredecessorOrder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PredecessorOrderInternalID` | ✓ | |  |  |  |  |
+| `PredecessorPhaseInternalID` | ✓ | |  |  |  |  |
+| `SuccessorOrderInternalID` | ✓ | |  |  |  |  |
+| `SuccessorPhaseInternalID` | ✓ | |  |  |  |  |
+| `OrderPhaseRelationshipIntType` | ✓ | |  |  |  |  |
+| `MaxTimeIntvlIsUsedForSchedg` | ✓ | |  |  |  |  |
+| `PredecessorOrder` |  | |  |  |  |  |
+| `PredecessorOrderPhase` |  | |  |  |  |  |
+| `SuccessorOrder` |  | |  |  |  |  |
+| `SuccessorOrderPhase` |  | |  |  |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |  |  |
+| `PhaseRelshpTimeIntervalUnit` |  | |  |  |  |  |
+| `PhaseRelshpTimeIntervalDurn` |  | |  |  |  |  |
+| `PhaseRelshpTimeIntervalDurnMax` |  | |  |  |  |  |
+| `TimeIntvlBtwnRelshpInPct` |  | |  |  |  |  |
+| `TimeInterval` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `ObjectIsDeleted` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ProductionResourceInternalID` |  | |  |  |  |  |
+| `ProductionResource` |  | |  |  |  |  |
+| `_SuccessorPhase` | | ✓ | | | | |
+| `_SuccessorOrder` | | ✓ | | | | |
+| `_PredecessorPhase` | | ✓ | | | | |
+| `_PredecessorOrder` | | ✓ | | | | |
 
 ## Source Code
 

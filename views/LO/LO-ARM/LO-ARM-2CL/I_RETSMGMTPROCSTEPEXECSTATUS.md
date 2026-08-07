@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RetsMgmtProcStepExecStatus` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 1) as msr_exec_step_status)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RetsMgmtProcStepExecStatus` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 1) as msr_exec_step_status)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

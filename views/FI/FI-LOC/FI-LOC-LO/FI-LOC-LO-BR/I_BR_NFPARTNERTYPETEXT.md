@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `BR_NFPartnerType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_nfpartnertype preserving type )` |
-| `BR_NFPartnerTypeDesc` |  | |  | `cast(ddtext as logbr_nfpartnertypedescription preserving type )` |
-| `_BR_NFPartnerType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `BR_NFPartnerType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_nfpartnertype preserving type )` |  |  |
+| `BR_NFPartnerTypeDesc` |  | |  | `cast(ddtext as logbr_nfpartnertypedescription preserving type )` |  |  |
+| `_BR_NFPartnerType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

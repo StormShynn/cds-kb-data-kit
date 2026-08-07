@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfDepreciation` | ✓ | |  | `afapl` |
-| `Language` | ✓ | |  | `spras` |
-| `ChartOfDepreciationName` |  | |  | `ktext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfDepreciation` | ✓ | |  | `afapl` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ChartOfDepreciationName` |  | |  | `ktext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

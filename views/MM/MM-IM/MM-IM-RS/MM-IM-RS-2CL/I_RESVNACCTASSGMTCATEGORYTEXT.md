@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ResvnAcctAssgmtCategory` | ✓ | |  | `cast( dd07t.domvalue_l as rstyp )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ResvnAcctAssgmtCategoryName` |  | |  | `cast( dd07t.ddtext as imrs_acct_assgmt_cat_name )` |
-| `_Language` | | ✓ | | |
-| `_ResvnAcctAssgmtCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `ResvnAcctAssgmtCategory` | ✓ | |  | `cast( dd07t.domvalue_l as rstyp )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ResvnAcctAssgmtCategoryName` |  | |  | `cast( dd07t.ddtext as imrs_acct_assgmt_cat_name )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ResvnAcctAssgmtCategory` | | ✓ | | | | |
 
 ## Associations
 

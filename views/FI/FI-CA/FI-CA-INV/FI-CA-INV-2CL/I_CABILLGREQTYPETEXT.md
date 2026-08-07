@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgReqType` | ✓ | |  | `billreqtype` |
-| `Language` | ✓ | |  | `langu` |
-| `CABillgReqTypeText` |  | |  | `cast( billreqtype_txt as billreqtype_txt_gfn_kk )` |
-| `_CABillgReqType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgReqType` | ✓ | |  | `billreqtype` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CABillgReqTypeText` |  | |  | `cast( billreqtype_txt as billreqtype_txt_gfn_kk )` |  |  |
+| `_CABillgReqType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

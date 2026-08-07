@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountAssignmentType` | ✓ | |  | `cast(obart as fis_obart preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountAssignmentType` | ✓ | |  | `cast(obart as fis_obart preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

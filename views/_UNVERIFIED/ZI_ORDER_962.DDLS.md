@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderID` | ✓ | |  | `order_id` |
-| `OemID` | ✓ | |  | `oem_id` |
-| `Model` | ✓ | |  | `model` |
-| `Grade` | ✓ | |  | `grade` |
-| `ModelYear` | ✓ | |  | `model_year` |
-| `Color` | ✓ | |  | `color` |
-| `OrderDate` |  | |  | `order_date` |
-| `CustomerID` |  | |  | `customer_id` |
-| `Price` |  | |  | `price` |
-| `CurrencyCode` |  | |  | `currency_code` |
-| `DeliveryDate` |  | |  | `delivery_date` |
-| `CreatedBy` |  | |  | `created_by` |
-| `LastChangedBy` |  | |  | `last_changed_by` |
-| `LastChangedAt` |  | |  | `local_last_changed_at` |
-| `_Oem` | | ✓ | | |
-| `_Models` | | ✓ | | |
-| `_Inventory` | | ✓ | | |
-| `_Customer` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderID` | ✓ | |  | `order_id` |  |  |
+| `OemID` | ✓ | |  | `oem_id` |  |  |
+| `Model` | ✓ | |  | `model` |  |  |
+| `Grade` | ✓ | |  | `grade` |  |  |
+| `ModelYear` | ✓ | |  | `model_year` |  |  |
+| `Color` | ✓ | |  | `color` |  |  |
+| `OrderDate` |  | |  | `order_date` |  |  |
+| `CustomerID` |  | |  | `customer_id` |  |  |
+| `Price` |  | |  | `price` |  |  |
+| `CurrencyCode` |  | |  | `currency_code` |  |  |
+| `DeliveryDate` |  | |  | `delivery_date` |  |  |
+| `CreatedBy` |  | |  | `created_by` |  |  |
+| `LastChangedBy` |  | |  | `last_changed_by` |  |  |
+| `LastChangedAt` |  | |  | `local_last_changed_at` |  |  |
+| `_Oem` | | ✓ | | | | |
+| `_Models` | | ✓ | | | | |
+| `_Inventory` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
 
 ## Associations
 

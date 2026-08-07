@@ -29,43 +29,43 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FiscalYear` | ✓ | |  |  |
-| `ReferenceDocument` | ✓ | |  |  |
-| `ControllingArea` | ✓ | |  |  |
-| `ReferenceDocumentItem` | ✓ | |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |
-| `ReferenceDocumentType` | ✓ | |  |  |
-| `ReferenceDocumentContext` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `TransactionSubitem` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `SourceLedger` |  | |  |  |
-| `Customer` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CustomerSupplierIndustry` |  | |  |  |
-| `CustomerSupplierCountry` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `SoldProduct` |  | |  |  |
-| `SoldProductGroup` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocument` |  | |  |  |
-| `ServiceDocumentItem` |  | |  |  |
-| `SalesDocument` |  | |  |  |
-| `SalesDocumentItem` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `PartnerProfitCenter` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `ControllingBusTransacType` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_CRReassgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `ReferenceDocument` | ✓ | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `ReferenceDocumentItem` | ✓ | |  |  |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |  |  |
+| `ReferenceDocumentType` | ✓ | |  |  |  |  |
+| `ReferenceDocumentContext` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `TransactionSubitem` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `SourceLedger` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |  |  |
+| `CustomerSupplierCountry` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `SoldProduct` |  | |  |  |  |  |
+| `SoldProductGroup` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocument` |  | |  |  |  |  |
+| `ServiceDocumentItem` |  | |  |  |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `PartnerProfitCenter` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `ControllingBusTransacType` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_CRReassgmt` | | ✓ | | | | |
 
 ## Source Code
 

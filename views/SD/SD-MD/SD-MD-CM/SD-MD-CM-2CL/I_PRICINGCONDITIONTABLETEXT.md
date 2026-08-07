@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ConditionUsage` | ✓ | |  | `kvewe` |
-| `ConditionApplication` | ✓ | |  | `kappl` |
-| `ConditionTable` | ✓ | |  | `cast ( t681.kotabnr as char03 )` |
-| `ConditionTableText` |  | |  | `gstxt` |
-| `_PricingConditionTable` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ConditionUsage` | ✓ | |  | `kvewe` |  |  |
+| `ConditionApplication` | ✓ | |  | `kappl` |  |  |
+| `ConditionTable` | ✓ | |  | `cast ( t681.kotabnr as char03 )` |  |  |
+| `ConditionTableText` |  | |  | `gstxt` |  |  |
+| `_PricingConditionTable` | | ✓ | | | | |
 
 ## Associations
 

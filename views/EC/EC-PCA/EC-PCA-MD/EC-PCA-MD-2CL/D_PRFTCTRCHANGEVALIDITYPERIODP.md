@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NewValidityStartDate` |  | |  | `datab` |
-| `NewValidityEndDate` |  | |  | `datbi` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NewValidityStartDate` |  | |  | `datab` |  |  |
+| `NewValidityEndDate` |  | |  | `datbi` |  |  |
 
 ## Source Code
 

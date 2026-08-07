@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingParentDocument` | ✓ | |  |  |
-| `SubordCntrlPurContract` | ✓ | |  |  |
-| `ProcmtHubCompanyCodeGroupingID` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchaseContractType` |  | |  |  |
-| `PurchasingDocumentSubtype` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CntrlPurContrDescription` |  | |  |  |
-| `SubordCntrlPurContrLastUpdtSts` |  | |  |  |
-| `SubordCntrlContrLastUpdtDteTme` |  | |  |  |
-| `DistrResponseMessageUUID` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Cntrlpurchasecontract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingParentDocument` | ✓ | |  |  |  |  |
+| `SubordCntrlPurContract` | ✓ | |  |  |  |  |
+| `ProcmtHubCompanyCodeGroupingID` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchaseContractType` |  | |  |  |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CntrlPurContrDescription` |  | |  |  |  |  |
+| `SubordCntrlPurContrLastUpdtSts` |  | |  |  |  |  |
+| `SubordCntrlContrLastUpdtDteTme` |  | |  |  |  |  |
+| `DistrResponseMessageUUID` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Cntrlpurchasecontract` | | ✓ | | | | |
 
 ## Source Code
 

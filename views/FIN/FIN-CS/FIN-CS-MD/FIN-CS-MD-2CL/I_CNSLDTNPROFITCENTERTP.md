@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | | `_CnsldtnProfitCenter` | `ControllingArea` |
-| `ProfitCenter` | ✓ | | `_CnsldtnProfitCenter` | `ProfitCenter` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnProfitCenter` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnProfitCenterTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnProfitCenterTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | | `_CnsldtnProfitCenter` | `ControllingArea` |  |  |
+| `ProfitCenter` | ✓ | | `_CnsldtnProfitCenter` | `ProfitCenter` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnProfitCenter` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnProfitCenterTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnProfitCenterTextTP` |  |  |
 
 ## Source Code
 

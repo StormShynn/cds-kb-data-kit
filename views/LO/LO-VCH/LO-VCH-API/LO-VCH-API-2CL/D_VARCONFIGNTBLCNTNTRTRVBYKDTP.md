@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KeyDate` |  | |  | `vdm_v_key_date` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KeyDate` |  | |  | `vdm_v_key_date` |  |  |
 
 ## Source Code
 

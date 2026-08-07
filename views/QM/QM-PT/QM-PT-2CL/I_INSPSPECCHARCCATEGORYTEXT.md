@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSpecCharcCategory` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qrzwang preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `InspSpecCharcCategoryText` |  | |  | `cast( ddtext as vdm_qrzwang_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_InspSpecCharcCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSpecCharcCategory` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qrzwang preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `InspSpecCharcCategoryText` |  | |  | `cast( ddtext as vdm_qrzwang_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspSpecCharcCategory` | | ✓ | | | | |
 
 ## Associations
 

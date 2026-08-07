@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` |
-| `LaboratoryOrDesignOfficeName` |  | |  | `lbtxt` |
-| `_Language` | | ✓ | | |
-| `_LabOffice` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` |  |  |
+| `LaboratoryOrDesignOfficeName` |  | |  | `lbtxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_LabOffice` | | ✓ | | | | |
 
 ## Associations
 

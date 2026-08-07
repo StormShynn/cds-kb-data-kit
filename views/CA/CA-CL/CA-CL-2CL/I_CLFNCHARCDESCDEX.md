@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharcInternalID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `TimeIntervalNumber` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `CharcDescription` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_Language` | | ✓ | | |
-| `_Characteristic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `TimeIntervalNumber` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `CharcDescription` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Characteristic` | | ✓ | | | | |
 
 ## Associations
 

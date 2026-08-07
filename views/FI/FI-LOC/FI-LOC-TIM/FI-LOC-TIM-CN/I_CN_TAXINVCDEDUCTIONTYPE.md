@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CN_TaxInvcDeductionType` | ✓ | |  |  |
-| `StatusIsActive` |  | |  | `IsEnabled` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CN_TaxInvcDeductionType` | ✓ | |  |  |  |  |
+| `StatusIsActive` |  | |  | `IsEnabled` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

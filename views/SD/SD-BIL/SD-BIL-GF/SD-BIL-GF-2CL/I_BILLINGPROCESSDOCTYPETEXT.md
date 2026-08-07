@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingProcessDocumentType` | ✓ | |  | `cast( fkart as billingprocessdocumenttype preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `BillingProcessDocumentTypeName` |  | |  | `cast( vtext as billingprocessdocumenttypename preserving type )` |
-| `_Language` | | ✓ | | |
-| `_BillingProcessDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingProcessDocumentType` | ✓ | |  | `cast( fkart as billingprocessdocumenttype preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BillingProcessDocumentTypeName` |  | |  | `cast( vtext as billingprocessdocumenttypename preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_BillingProcessDocumentType` | | ✓ | | | | |
 
 ## Source Code
 

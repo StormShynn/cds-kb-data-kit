@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryDocumentType` |  | |  | `lfart` |
-| `DeliveryBlockReason` |  | |  | `lifsk` |
-| `PreviousDeliveryBlockReason` |  | |  | `lifsk` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `SDDocumentCategory` |  | |  | `vbtypl` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocumentType` |  | |  | `lfart` |  |  |
+| `DeliveryBlockReason` |  | |  | `lifsk` |  |  |
+| `PreviousDeliveryBlockReason` |  | |  | `lifsk` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `SDDocumentCategory` |  | |  | `vbtypl` |  |  |
 
 ## Source Code
 

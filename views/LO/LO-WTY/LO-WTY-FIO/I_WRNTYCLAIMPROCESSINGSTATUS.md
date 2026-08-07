@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrntyClaimProcessingStatus` | ✓ | |  | `astate` |
-| `WarrantyClaimVersionCategory` |  | |  | `kateg` |
-| `WarrantyClaimMigratedStatus` |  | |  | `migratedstatus` |
-| `WrntyClmStatusIsFocusStatus` |  | |  | `focusstatus` |
-| `WrntyClmProcStsClassfctn` |  | |  | `procstatusclsfcn` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrntyClaimProcessingStatus` | ✓ | |  | `astate` |  |  |
+| `WarrantyClaimVersionCategory` |  | |  | `kateg` |  |  |
+| `WarrantyClaimMigratedStatus` |  | |  | `migratedstatus` |  |  |
+| `WrntyClmStatusIsFocusStatus` |  | |  | `focusstatus` |  |  |
+| `WrntyClmProcStsClassfctn` |  | |  | `procstatusclsfcn` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

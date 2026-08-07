@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BusinessPartnerBirthDateStatus` | ✓ | |  | `domvalue_l` |
-| `BusPartBirthDateStatusText` |  | |  | `ddtext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BusinessPartnerBirthDateStatus` | ✓ | |  | `domvalue_l` |  |  |
+| `BusPartBirthDateStatusText` |  | |  | `ddtext` |  |  |
 
 ## Source Code
 

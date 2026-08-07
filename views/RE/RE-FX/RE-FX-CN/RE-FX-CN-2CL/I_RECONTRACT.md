@@ -29,97 +29,97 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InternalRealEstateNumber` | ✓ | |  | `intreno` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `RealEstateContract` |  | |  | `cast(recnnr as recnvdmcnnr preserving type )` |
-| `REStatusObject` |  | |  | `objnr` |
-| `REInternalFinNumber` |  | |  | `cast(imkey as recaimkeyfi preserving type )` |
-| `RealEstateContractOID` |  | |  | `oid` |
-| `REContractAlternativeID` |  | |  | `alternativeid` |
-| `RECreationType` |  | |  | `creationtype` |
-| `CreatedByUser` |  | |  | `rerf` |
-| `CreationDate` |  | |  | `derf` |
-| `CreationTime` |  | |  | `terf` |
-| `RESourceOfCreation` |  | |  | `reher` |
-| `LastChangedByUser` |  | |  | `rbear` |
-| `LastChangeDate` |  | |  | `dbear` |
-| `LastChangeTime` |  | |  | `tbear` |
-| `RESourceOfChange` |  | |  | `rbher` |
-| `Responsible` |  | |  | `responsible` |
-| `REUserExclusive` |  | |  | `userexclusive` |
-| `REAuthorizationGroup` |  | |  | `authgrp` |
-| `REContractType` |  | |  | `recntype` |
-| `ContractStartDate` |  | |  | `cast( recnbeg as recnvdmcnbeg preserving type )` |
-| `ContractEndDate` |  | |  | `cast( recnendabs as recnvdmcnendabs preserving type )` |
-| `REContractName` |  | |  | `cast( recntxt as recnvdmcnname preserving type )` |
-| `REContractActivateDate` |  | |  | `cast(recndactiv as recnvdmdaktv preserving type )` |
-| `RETenancyLaw` |  | |  | `cast( recntlaw as recnvdmcntlaw preserving type)` |
-| `REContractNumberOld` |  | |  | `cast( recntxtold as recnvdmcntxtold preserving type)` |
-| `REMainContractCompanyCode` |  | |  | `cast( recnbukrscollect as recnvdmcnbukrscode preserving type)` |
-| `REMainContract` |  | |  | `recnnrcollect` |
-| `REContractCurrency` |  | |  | `recncncurr` |
-| `REIndustrySector` |  | |  | `industry` |
-| `REIsSalesRelevant` |  | |  | `srrelevant` |
-| `REContractDepositType` |  | |  | `cast(dptargettype as recnvdmdepotype preserving type)` |
-| `REContractSignDate` |  | |  | `recndat` |
-| `REContract2SignDate` |  | |  | `cast(recn2dat as recnvdm2date preserving type)` |
-| `REContractCashFlowDate` |  | |  | `recndpo` |
-| `REContractFirstEndDate` |  | |  | `cast(recnend1st as recnvdmcnend1st preserving type)` |
-| `REContractNoticeDate` |  | |  | `recnnotper` |
-| `REContractNoticeInDate` |  | |  | `recnnotreceipt` |
-| `REContractNoticeReason` |  | |  | `recnnotreason` |
-| `REContractNoticeActivationDate` |  | |  | `recndaktku` |
-| `RECashFlowArchivedToDate` |  | |  | `cfarchivedto` |
-| `RECashFlowLockedToDate` |  | |  | `cflockedto` |
-| `RECashFlowPostingFromDate` |  | |  | `cfpostingfrom` |
-| `REBusinessEntity` |  | |  | `cast(benocn as rebdvdmbeno preserving type)` |
-| `REObjectAvailableFromDate` |  | |  | `cast(transpossfrom as recnvdmtranspossfrom preserving type)` |
-| `REObjectAvailableToDate` |  | |  | `cast ( transpossto as recnvdmtranspossto preserving type )` |
-| `REHasMultipleAssignments` |  | |  | `hasmultiassign` |
-| `REPossessionStartDate` |  | |  | `possdatefrom` |
-| `REPossessionEndDate` |  | |  | `possdateto` |
-| `ValuationRelevance` |  | |  | `relevanteval` |
-| `RealEstateObjectType` |  | | `_REKeyAssgmt` | `RealEstateObjectType` |
-| `REIdentificationKey` |  | | `_REKeyAssgmt` | `REIdentificationKey` |
-| `REBusinessPartnerRole1` |  | | `_REContractType` | `REBusinessPartnerRole1` |
-| `_CompanyCode` | | ✓ | | |
-| `_MainContractCompanyCode` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_ChangedByUser` | | ✓ | | |
-| `_ResponsibleUser` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_REIndustry` | | ✓ | | |
-| `_RECreationType` | | ✓ | | |
-| `_REContractType` | | ✓ | | |
-| `_REContractType_2` | | ✓ | | |
-| `_RETenancyLaw` | | ✓ | | |
-| `_REContractDepositType` | | ✓ | | |
-| `_REContractNoticeReason` | | ✓ | | |
-| `_REKeyAssgmt` | | ✓ | | |
-| `_REObjectType` | | ✓ | | |
-| `_REAuthorizationGroup` | | ✓ | | |
-| `_REValuationRelevance` | | ✓ | | |
-| `_StatusObject` | | ✓ | | |
-| `_StatusObjectStatus` | | ✓ | | |
-| `_REPartnerAssgmt` | | ✓ | | |
-| `_REContrPartnerAssgmt` | | ✓ | | |
-| `_REObjectAssgmt` | | ✓ | | |
-| `_RERenewalTerm` | | ✓ | | |
-| `_RENoticeTerm` | | ✓ | | |
-| `_REOrganizationalAssgmtTerm` | | ✓ | | |
-| `_REPostingTerm` | | ✓ | | |
-| `_REContrPostgTrmNoSenstvDta` | | ✓ | | |
-| `_RERhythmTerm` | | ✓ | | |
-| `_RECondition` | | ✓ | | |
-| `_REReminderRule` | | ✓ | | |
-| `_REValuationTerm` | | ✓ | | |
-| `_REValuationRuleCondition` | | ✓ | | |
-| `_REAdjustmentTerm` | | ✓ | | |
-| `_RESalesRuleTerm` | | ✓ | | |
-| `_RESalesReportingTerm` | | ✓ | | |
-| `_RESalesRuleFrqcyTerm` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  | `intreno` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `RealEstateContract` |  | |  | `cast(recnnr as recnvdmcnnr preserving type )` |  |  |
+| `REStatusObject` |  | |  | `objnr` |  |  |
+| `REInternalFinNumber` |  | |  | `cast(imkey as recaimkeyfi preserving type )` |  |  |
+| `RealEstateContractOID` |  | |  | `oid` |  |  |
+| `REContractAlternativeID` |  | |  | `alternativeid` |  |  |
+| `RECreationType` |  | |  | `creationtype` |  |  |
+| `CreatedByUser` |  | |  | `rerf` |  |  |
+| `CreationDate` |  | |  | `derf` |  |  |
+| `CreationTime` |  | |  | `terf` |  |  |
+| `RESourceOfCreation` |  | |  | `reher` |  |  |
+| `LastChangedByUser` |  | |  | `rbear` |  |  |
+| `LastChangeDate` |  | |  | `dbear` |  |  |
+| `LastChangeTime` |  | |  | `tbear` |  |  |
+| `RESourceOfChange` |  | |  | `rbher` |  |  |
+| `Responsible` |  | |  | `responsible` |  |  |
+| `REUserExclusive` |  | |  | `userexclusive` |  |  |
+| `REAuthorizationGroup` |  | |  | `authgrp` |  |  |
+| `REContractType` |  | |  | `recntype` |  |  |
+| `ContractStartDate` |  | |  | `cast( recnbeg as recnvdmcnbeg preserving type )` |  |  |
+| `ContractEndDate` |  | |  | `cast( recnendabs as recnvdmcnendabs preserving type )` |  |  |
+| `REContractName` |  | |  | `cast( recntxt as recnvdmcnname preserving type )` |  |  |
+| `REContractActivateDate` |  | |  | `cast(recndactiv as recnvdmdaktv preserving type )` |  |  |
+| `RETenancyLaw` |  | |  | `cast( recntlaw as recnvdmcntlaw preserving type)` |  |  |
+| `REContractNumberOld` |  | |  | `cast( recntxtold as recnvdmcntxtold preserving type)` |  |  |
+| `REMainContractCompanyCode` |  | |  | `cast( recnbukrscollect as recnvdmcnbukrscode preserving type)` |  |  |
+| `REMainContract` |  | |  | `recnnrcollect` |  |  |
+| `REContractCurrency` |  | |  | `recncncurr` |  |  |
+| `REIndustrySector` |  | |  | `industry` |  |  |
+| `REIsSalesRelevant` |  | |  | `srrelevant` |  |  |
+| `REContractDepositType` |  | |  | `cast(dptargettype as recnvdmdepotype preserving type)` |  |  |
+| `REContractSignDate` |  | |  | `recndat` |  |  |
+| `REContract2SignDate` |  | |  | `cast(recn2dat as recnvdm2date preserving type)` |  |  |
+| `REContractCashFlowDate` |  | |  | `recndpo` |  |  |
+| `REContractFirstEndDate` |  | |  | `cast(recnend1st as recnvdmcnend1st preserving type)` |  |  |
+| `REContractNoticeDate` |  | |  | `recnnotper` |  |  |
+| `REContractNoticeInDate` |  | |  | `recnnotreceipt` |  |  |
+| `REContractNoticeReason` |  | |  | `recnnotreason` |  |  |
+| `REContractNoticeActivationDate` |  | |  | `recndaktku` |  |  |
+| `RECashFlowArchivedToDate` |  | |  | `cfarchivedto` |  |  |
+| `RECashFlowLockedToDate` |  | |  | `cflockedto` |  |  |
+| `RECashFlowPostingFromDate` |  | |  | `cfpostingfrom` |  |  |
+| `REBusinessEntity` |  | |  | `cast(benocn as rebdvdmbeno preserving type)` |  |  |
+| `REObjectAvailableFromDate` |  | |  | `cast(transpossfrom as recnvdmtranspossfrom preserving type)` |  |  |
+| `REObjectAvailableToDate` |  | |  | `cast ( transpossto as recnvdmtranspossto preserving type )` |  |  |
+| `REHasMultipleAssignments` |  | |  | `hasmultiassign` |  |  |
+| `REPossessionStartDate` |  | |  | `possdatefrom` |  |  |
+| `REPossessionEndDate` |  | |  | `possdateto` |  |  |
+| `ValuationRelevance` |  | |  | `relevanteval` |  |  |
+| `RealEstateObjectType` |  | | `_REKeyAssgmt` | `RealEstateObjectType` |  |  |
+| `REIdentificationKey` |  | | `_REKeyAssgmt` | `REIdentificationKey` |  |  |
+| `REBusinessPartnerRole1` |  | | `_REContractType` | `REBusinessPartnerRole1` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MainContractCompanyCode` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_ResponsibleUser` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_REIndustry` | | ✓ | | | | |
+| `_RECreationType` | | ✓ | | | | |
+| `_REContractType` | | ✓ | | | | |
+| `_REContractType_2` | | ✓ | | | | |
+| `_RETenancyLaw` | | ✓ | | | | |
+| `_REContractDepositType` | | ✓ | | | | |
+| `_REContractNoticeReason` | | ✓ | | | | |
+| `_REKeyAssgmt` | | ✓ | | | | |
+| `_REObjectType` | | ✓ | | | | |
+| `_REAuthorizationGroup` | | ✓ | | | | |
+| `_REValuationRelevance` | | ✓ | | | | |
+| `_StatusObject` | | ✓ | | | | |
+| `_StatusObjectStatus` | | ✓ | | | | |
+| `_REPartnerAssgmt` | | ✓ | | | | |
+| `_REContrPartnerAssgmt` | | ✓ | | | | |
+| `_REObjectAssgmt` | | ✓ | | | | |
+| `_RERenewalTerm` | | ✓ | | | | |
+| `_RENoticeTerm` | | ✓ | | | | |
+| `_REOrganizationalAssgmtTerm` | | ✓ | | | | |
+| `_REPostingTerm` | | ✓ | | | | |
+| `_REContrPostgTrmNoSenstvDta` | | ✓ | | | | |
+| `_RERhythmTerm` | | ✓ | | | | |
+| `_RECondition` | | ✓ | | | | |
+| `_REReminderRule` | | ✓ | | | | |
+| `_REValuationTerm` | | ✓ | | | | |
+| `_REValuationRuleCondition` | | ✓ | | | | |
+| `_REAdjustmentTerm` | | ✓ | | | | |
+| `_RESalesRuleTerm` | | ✓ | | | | |
+| `_RESalesReportingTerm` | | ✓ | | | | |
+| `_RESalesRuleFrqcyTerm` | | ✓ | | | | |
 
 ## Associations
 

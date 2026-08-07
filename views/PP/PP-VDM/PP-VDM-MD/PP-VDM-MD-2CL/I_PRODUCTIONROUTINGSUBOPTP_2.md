@@ -31,83 +31,83 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionRoutingGroup` | ✓ | |  |  |
-| `ProductionRouting` | ✓ | |  |  |
-| `ProductionRoutingSequence` | ✓ | |  |  |
-| `ProductionRoutingOpIntID` | ✓ | |  |  |
-| `ProdnRtgSubOpIntVersion` | ✓ | |  |  |
-| `SuperiorOperationInternalID` |  | |  |  |
-| `Operation` |  | |  |  |
-| `OperationText` |  | |  |  |
-| `LongTextLanguageCode` |  | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `Plant` |  | |  |  |
-| `OperationControlProfile` |  | |  |  |
-| `OperationStandardTextCode` |  | |  |  |
-| `OperationReferenceQuantity` |  | |  |  |
-| `OperationUnit` |  | |  |  |
-| `OpQtyToBaseQtyNmrtr` |  | |  |  |
-| `OpQtyToBaseQtyDnmntr` |  | |  |  |
-| `StandardWorkQuantity1` |  | |  |  |
-| `StandardWorkQuantityUnit1` |  | |  |  |
-| `CostCtrActivityType1` |  | |  |  |
-| `StandardWorkQuantity2` |  | |  |  |
-| `StandardWorkQuantityUnit2` |  | |  |  |
-| `CostCtrActivityType2` |  | |  |  |
-| `StandardWorkQuantity3` |  | |  |  |
-| `StandardWorkQuantityUnit3` |  | |  |  |
-| `CostCtrActivityType3` |  | |  |  |
-| `StandardWorkQuantity4` |  | |  |  |
-| `StandardWorkQuantityUnit4` |  | |  |  |
-| `CostCtrActivityType4` |  | |  |  |
-| `StandardWorkQuantity5` |  | |  |  |
-| `StandardWorkQuantityUnit5` |  | |  |  |
-| `CostCtrActivityType5` |  | |  |  |
-| `StandardWorkQuantity6` |  | |  |  |
-| `StandardWorkQuantityUnit6` |  | |  |  |
-| `CostCtrActivityType6` |  | |  |  |
-| `NumberOfTimeTickets` |  | |  |  |
-| `EmployeeWageType` |  | |  |  |
-| `EmployeeWageGroup` |  | |  |  |
-| `NumberOfConfirmationSlips` |  | |  |  |
-| `NumberOfEmployees` |  | |  |  |
-| `OperationCostingRelevancyType` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `OpIsExtlyProcdWithSubcontrg` |  | |  |  |
-| `InspectionLotType` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |
-| `PlannedDeliveryDuration` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `NumberOfOperationPriceUnits` |  | |  |  |
-| `CostElement` |  | |  |  |
-| `OpExternalProcessingPrice` |  | |  |  |
-| `OpExternalProcessingCurrency` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `OperationSetupType` |  | |  |  |
-| `OperationSetupGroupCategory` |  | |  |  |
-| `OperationSetupGroup` |  | |  |  |
-| `CapacityCategoryCode` |  | |  |  |
-| `OperationScrapPercent` |  | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `PlainLongText` |  | |  |  |
-| `_NonSqncTP` | | ✓ | | |
-| `_ProdnRtgTP` | | ✓ | | |
-| `_Header` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |  |  |
+| `ProductionRouting` | ✓ | |  |  |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |  |  |
+| `ProductionRoutingOpIntID` | ✓ | |  |  |  |  |
+| `ProdnRtgSubOpIntVersion` | ✓ | |  |  |  |  |
+| `SuperiorOperationInternalID` |  | |  |  |  |  |
+| `Operation` |  | |  |  |  |  |
+| `OperationText` |  | |  |  |  |  |
+| `LongTextLanguageCode` |  | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `OperationControlProfile` |  | |  |  |  |  |
+| `OperationStandardTextCode` |  | |  |  |  |  |
+| `OperationReferenceQuantity` |  | |  |  |  |  |
+| `OperationUnit` |  | |  |  |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `StandardWorkQuantity1` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit1` |  | |  |  |  |  |
+| `CostCtrActivityType1` |  | |  |  |  |  |
+| `StandardWorkQuantity2` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit2` |  | |  |  |  |  |
+| `CostCtrActivityType2` |  | |  |  |  |  |
+| `StandardWorkQuantity3` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit3` |  | |  |  |  |  |
+| `CostCtrActivityType3` |  | |  |  |  |  |
+| `StandardWorkQuantity4` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit4` |  | |  |  |  |  |
+| `CostCtrActivityType4` |  | |  |  |  |  |
+| `StandardWorkQuantity5` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit5` |  | |  |  |  |  |
+| `CostCtrActivityType5` |  | |  |  |  |  |
+| `StandardWorkQuantity6` |  | |  |  |  |  |
+| `StandardWorkQuantityUnit6` |  | |  |  |  |  |
+| `CostCtrActivityType6` |  | |  |  |  |  |
+| `NumberOfTimeTickets` |  | |  |  |  |  |
+| `EmployeeWageType` |  | |  |  |  |  |
+| `EmployeeWageGroup` |  | |  |  |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |  |  |
+| `NumberOfEmployees` |  | |  |  |  |  |
+| `OperationCostingRelevancyType` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `OpIsExtlyProcdWithSubcontrg` |  | |  |  |  |  |
+| `InspectionLotType` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |  |  |
+| `PlannedDeliveryDuration` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |  |  |
+| `CostElement` |  | |  |  |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `OperationSetupType` |  | |  |  |  |  |
+| `OperationSetupGroupCategory` |  | |  |  |  |  |
+| `OperationSetupGroup` |  | |  |  |  |  |
+| `CapacityCategoryCode` |  | |  |  |  |  |
+| `OperationScrapPercent` |  | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `PlainLongText` |  | |  |  |  |  |
+| `_NonSqncTP` | | ✓ | | | | |
+| `_ProdnRtgTP` | | ✓ | | | | |
+| `_Header` | | ✓ | | | | |
 
 ## Source Code
 

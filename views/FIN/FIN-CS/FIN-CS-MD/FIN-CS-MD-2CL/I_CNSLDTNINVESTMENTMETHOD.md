@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationInvestmentMethod` | ✓ | |  | `cast(_Source.coimeth as fincs_investmentmethod preserving type )` |
-| `AccountingTechnique` |  | |  | `cast(_Source.coitp as fincs_accountingtechnique preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationInvestmentMethod` | ✓ | |  | `cast(_Source.coimeth as fincs_investmentmethod preserving type )` |  |  |
+| `AccountingTechnique` |  | |  | `cast(_Source.coitp as fincs_accountingtechnique preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

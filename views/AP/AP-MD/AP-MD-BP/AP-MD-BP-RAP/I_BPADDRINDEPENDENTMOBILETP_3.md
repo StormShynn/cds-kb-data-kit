@@ -29,37 +29,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `AddressID` | ✓ | |  |  |
-| `Person` | ✓ | |  |  |
-| `OrdinalNumber` | ✓ | |  |  |
-| `AddressIDForEdit` |  | |  |  |
-| `OrdinalNumberForEdit` |  | |  |  |
-| `MobilePhoneCountry` |  | |  |  |
-| `IsDefaultPhoneNumber` |  | |  |  |
-| `CommNumberIsNotUsed` |  | |  |  |
-| `MobilePhoneNumber` |  | |  |  |
-| `PhoneNumberExtension` |  | |  |  |
-| `CompleteTelephoneNumber` |  | |  |  |
-| `PhoneIsSMSEnabled` |  | |  |  |
-| `PhoneNumberType` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `AddressCommunicationRemarkText` |  | |  |  |
-| `DataControllerSet` |  | |  |  |
-| `DataController1` |  | |  |  |
-| `DataController2` |  | |  |  |
-| `DataController3` |  | |  |  |
-| `DataController4` |  | |  |  |
-| `DataController5` |  | |  |  |
-| `DataController6` |  | |  |  |
-| `DataController7` |  | |  |  |
-| `DataController8` |  | |  |  |
-| `DataController9` |  | |  |  |
-| `DataController10` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_TelCountryPrefix` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `AddressID` | ✓ | |  |  |  |  |
+| `Person` | ✓ | |  |  |  |  |
+| `OrdinalNumber` | ✓ | |  |  |  |  |
+| `AddressIDForEdit` |  | |  |  |  |  |
+| `OrdinalNumberForEdit` |  | |  |  |  |  |
+| `MobilePhoneCountry` |  | |  |  |  |  |
+| `IsDefaultPhoneNumber` |  | |  |  |  |  |
+| `CommNumberIsNotUsed` |  | |  |  |  |  |
+| `MobilePhoneNumber` |  | |  |  |  |  |
+| `PhoneNumberExtension` |  | |  |  |  |  |
+| `CompleteTelephoneNumber` |  | |  |  |  |  |
+| `PhoneIsSMSEnabled` |  | |  |  |  |  |
+| `PhoneNumberType` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `AddressCommunicationRemarkText` |  | |  |  |  |  |
+| `DataControllerSet` |  | |  |  |  |  |
+| `DataController1` |  | |  |  |  |  |
+| `DataController2` |  | |  |  |  |  |
+| `DataController3` |  | |  |  |  |  |
+| `DataController4` |  | |  |  |  |  |
+| `DataController5` |  | |  |  |  |  |
+| `DataController6` |  | |  |  |  |  |
+| `DataController7` |  | |  |  |  |  |
+| `DataController8` |  | |  |  |  |  |
+| `DataController9` |  | |  |  |  |  |
+| `DataController10` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_TelCountryPrefix` | | ✓ | | | | |
 
 ## Source Code
 

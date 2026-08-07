@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeDocObject` | ✓ | |  |  |
-| `ChangeDocObjectClass` | ✓ | |  |  |
-| `ChangeDocument` | ✓ | |  |  |
-| `DatabaseTable` | ✓ | |  |  |
-| `ChangeDocTableKey` | ✓ | |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |
-| `ChangeDocItemChangeType` | ✓ | |  |  |
-| `ChangeDocGlobalFieldName` |  | |  | `case when ( DatabaseTable = 'VBAK' or DatabaseTable = 'VBAP' or DatabaseTable = 'VBEP' or DatabaseTable = 'VBPA' or DatabaseTable = 'VBKD' ) and ChangeDocDatabaseTableField = 'KEY' then cast('SalesDocument'as fieldname ) when ( DatabaseTable = 'VBAK' ) then FieldmapSDH.GFNName when ( DatabaseTable = 'VBAP' ) then FieldmapSDI.GFNName when ( DatabaseTable = 'VBKD' ) then FieldmapSDB.GFNName when ( DatabaseTable = 'VBPA' ) then FieldmapSDP.GFNName when ( DatabaseTable = 'VBEP' ) then FieldmapSDS.GFNName when ( DatabaseTable = 'FPLA') and ChangeDocDatabaseTableField = 'KEY' then cast('BillingPlan' as fieldname ) when ( DatabaseTable = 'KONVC') and ChangeDocDatabaseTableField = 'KEY' then cast('SalesDocumentCondition' as fieldname ) when ( DatabaseTable = 'KONVC' ) then FieldmapPRC.GFNName else ChangeDocDatabaseTableField end` |
-| `SalesDocument` |  | |  | `ChangeDocObject` |
-| `SalesDocumentItem` |  | |  | `case when DatabaseTable = 'VBAP' or DatabaseTable = 'VBPA' or DatabaseTable = 'VBEP' or DatabaseTable = 'VBKD' then substring(ChangeDocTableKey, 14, 6) else '000000' end` |
-| `ScheduleLine` |  | |  | `case when DatabaseTable = 'VBEP' then substring(ChangeDocTableKey, 20, 4) else '0000' end` |
-| `PartnerFunction` |  | |  | `case when DatabaseTable = 'VBPA' then substring(ChangeDocTableKey, 20, 4) else '0000' end` |
-| `SalesDocumentCondition` |  | |  | `case when DatabaseTable = 'KONVC' then SDI.SalesDocumentCondition else '0000000000' end` |
-| `ChangeDocPreviousUnit` |  | |  |  |
-| `ChangeDocNewUnit` |  | |  |  |
-| `ChangeDocPreviousCurrency` |  | |  |  |
-| `ChangeDocNewCurrency` |  | |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |
-| `ChangeDocTextIsChanged` |  | |  |  |
-| `CreationDate` |  | | `_ChangeDocument` | `CreationDate` |
-| `CreationTime` |  | | `_ChangeDocument` | `CreationTime` |
-| `_ChangeDocument` | | ✓ | | |
-| `_ChangeDocLongTableKey` | | ✓ | | |
-| `_ChangeDocumentItemExtension` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeDocObject` | ✓ | |  |  |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |  |  |
+| `ChangeDocument` | ✓ | |  |  |  |  |
+| `DatabaseTable` | ✓ | |  |  |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |  |  |
+| `ChangeDocGlobalFieldName` |  | |  | `case when ( DatabaseTable = 'VBAK' or DatabaseTable = 'VBAP' or DatabaseTable = 'VBEP' or DatabaseTable = 'VBPA' or DatabaseTable = 'VBKD' ) and ChangeDocDatabaseTableField = 'KEY' then cast('SalesDocument'as fieldname ) when ( DatabaseTable = 'VBAK' ) then FieldmapSDH.GFNName when ( DatabaseTable = 'VBAP' ) then FieldmapSDI.GFNName when ( DatabaseTable = 'VBKD' ) then FieldmapSDB.GFNName when ( DatabaseTable = 'VBPA' ) then FieldmapSDP.GFNName when ( DatabaseTable = 'VBEP' ) then FieldmapSDS.GFNName when ( DatabaseTable = 'FPLA') and ChangeDocDatabaseTableField = 'KEY' then cast('BillingPlan' as fieldname ) when ( DatabaseTable = 'KONVC') and ChangeDocDatabaseTableField = 'KEY' then cast('SalesDocumentCondition' as fieldname ) when ( DatabaseTable = 'KONVC' ) then FieldmapPRC.GFNName else ChangeDocDatabaseTableField end` |  |  |
+| `SalesDocument` |  | |  | `ChangeDocObject` |  |  |
+| `SalesDocumentItem` |  | |  | `case when DatabaseTable = 'VBAP' or DatabaseTable = 'VBPA' or DatabaseTable = 'VBEP' or DatabaseTable = 'VBKD' then substring(ChangeDocTableKey, 14, 6) else '000000' end` |  |  |
+| `ScheduleLine` |  | |  | `case when DatabaseTable = 'VBEP' then substring(ChangeDocTableKey, 20, 4) else '0000' end` |  |  |
+| `PartnerFunction` |  | |  | `case when DatabaseTable = 'VBPA' then substring(ChangeDocTableKey, 20, 4) else '0000' end` |  |  |
+| `SalesDocumentCondition` |  | |  | `case when DatabaseTable = 'KONVC' then SDI.SalesDocumentCondition else '0000000000' end` |  |  |
+| `ChangeDocPreviousUnit` |  | |  |  |  |  |
+| `ChangeDocNewUnit` |  | |  |  |  |  |
+| `ChangeDocPreviousCurrency` |  | |  |  |  |  |
+| `ChangeDocNewCurrency` |  | |  |  |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
+| `ChangeDocTextIsChanged` |  | |  |  |  |  |
+| `CreationDate` |  | | `_ChangeDocument` | `CreationDate` |  |  |
+| `CreationTime` |  | | `_ChangeDocument` | `CreationTime` |  |  |
+| `_ChangeDocument` | | ✓ | | | | |
+| `_ChangeDocLongTableKey` | | ✓ | | | | |
+| `_ChangeDocumentItemExtension` | | ✓ | | | | |
 
 ## Associations
 

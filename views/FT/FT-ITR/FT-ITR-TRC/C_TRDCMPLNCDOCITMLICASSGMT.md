@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrdCmplncDocItemUUID` | ✓ | |  |  |
-| `TrdCmplncLicenseUUID` | ✓ | |  |  |
-| `ReferenceDocumentCategory` |  | | `_DocItem` | `ReferenceDocumentCategory` |
-| `ReferenceDocument` |  | | `_DocItem` | `ReferenceDocument` |
-| `ReferenceDocumentItem` |  | | `_DocItem` | `ReferenceDocumentItem` |
-| `CompanyCode` |  | | `_DocItem` | `CompanyCode` |
-| `LegalRegulation` |  | | `_License` | `LegalRegulation` |
-| `TrdCmplncLicenseType` |  | | `_License` | `TrdCmplncLicenseType` |
-| `TrdCmplncLicenseOwner` |  | | `_License` | `TrdCmplncLicenseOwner` |
-| `TrdCmplncLicenseCategory` |  | | `_License` | `TrdCmplncLicenseCategory` |
-| `TrdCmplncLicense` |  | | `_License` | `TrdCmplncLicense` |
-| `ExtTrdCmplncLicense` |  | | `_License` | `ExtTrdCmplncLicense` |
-| `TrdCmplncLicenseRemark` |  | | `_License` | `TrdCmplncLicenseRemark` |
-| `TrdCmplncLicenseStatus` |  | | `_License` | `TrdCmplncLicenseStatus` |
-| `ValidityStartDate` |  | | `_License` | `ValidityStartDate` |
-| `ValidityEndDate` |  | | `_License` | `ValidityEndDate` |
-| `_DocItem` | | ✓ | | |
-| `_License` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdCmplncDocItemUUID` | ✓ | |  |  |  |  |
+| `TrdCmplncLicenseUUID` | ✓ | |  |  |  |  |
+| `ReferenceDocumentCategory` |  | | `_DocItem` | `ReferenceDocumentCategory` |  |  |
+| `ReferenceDocument` |  | | `_DocItem` | `ReferenceDocument` |  |  |
+| `ReferenceDocumentItem` |  | | `_DocItem` | `ReferenceDocumentItem` |  |  |
+| `CompanyCode` |  | | `_DocItem` | `CompanyCode` |  |  |
+| `LegalRegulation` |  | | `_License` | `LegalRegulation` |  |  |
+| `TrdCmplncLicenseType` |  | | `_License` | `TrdCmplncLicenseType` |  |  |
+| `TrdCmplncLicenseOwner` |  | | `_License` | `TrdCmplncLicenseOwner` |  |  |
+| `TrdCmplncLicenseCategory` |  | | `_License` | `TrdCmplncLicenseCategory` |  |  |
+| `TrdCmplncLicense` |  | | `_License` | `TrdCmplncLicense` |  |  |
+| `ExtTrdCmplncLicense` |  | | `_License` | `ExtTrdCmplncLicense` |  |  |
+| `TrdCmplncLicenseRemark` |  | | `_License` | `TrdCmplncLicenseRemark` |  |  |
+| `TrdCmplncLicenseStatus` |  | | `_License` | `TrdCmplncLicenseStatus` |  |  |
+| `ValidityStartDate` |  | | `_License` | `ValidityStartDate` |  |  |
+| `ValidityEndDate` |  | | `_License` | `ValidityEndDate` |  |  |
+| `_DocItem` | | ✓ | | | | |
+| `_License` | | ✓ | | | | |
 
 ## Associations
 

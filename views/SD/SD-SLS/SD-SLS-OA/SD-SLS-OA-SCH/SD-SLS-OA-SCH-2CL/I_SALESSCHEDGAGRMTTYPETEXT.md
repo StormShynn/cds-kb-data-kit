@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesSchedgAgrmtType` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `SalesSchedgAgrmtTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_sls_schedg_agrmt_type_name preserving type )` |
-| `_SalesSchedgAgrmtType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesSchedgAgrmtType` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `SalesSchedgAgrmtTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_sls_schedg_agrmt_type_name preserving type )` |  |  |
+| `_SalesSchedgAgrmtType` | | ✓ | | | | |
 
 ## Associations
 

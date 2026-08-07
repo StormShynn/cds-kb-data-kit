@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `SecurityAccountType` | ✓ | |  | `secacc_type` |
-| `SecurityAccountTypeName` |  | |  | `cast(SecurityAccountTypeText.secacc_type_text as ftr_gen_sec_account_type_name preserving type)` |
-| `_SecurityAccountType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SecurityAccountType` | ✓ | |  | `secacc_type` |  |  |
+| `SecurityAccountTypeName` |  | |  | `cast(SecurityAccountTypeText.secacc_type_text as ftr_gen_sec_account_type_name preserving type)` |  |  |
+| `_SecurityAccountType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

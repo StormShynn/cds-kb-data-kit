@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaytSlipWthRefSubscriber` | ✓ | |  | `teiln` |
-| `Customer` | ✓ | |  | `kunid` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `IsLeadingCompanyCode` |  | |  | `buflg` |
-| `AcctDetnFreeDefinedAttribute` |  | |  | `sakoz` |
-| `AccountingDocumentNumberOffset` |  | |  | `ofset` |
-| `AccountingDocumentNumberLength` |  | |  | `lblnr` |
-| `CustomerNumberOffset` |  | |  | `ofknd` |
-| `CustomerNumberLength` |  | |  | `lkdnr` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `Bank` |  | |  | `bankl` |
-| `PaytSlipWthRefIsNotPrinted` |  | |  | `notakt` |
-| `PaytSlipWthRefProcedure` |  | |  | `verfa` |
-| `DunningNoticeIsPrinted` |  | |  | `xmesr` |
-| `OriginApplication` |  | |  | `applk` |
-| `_Customer` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaytSlipWthRefSubscriber` | ✓ | |  | `teiln` |  |  |
+| `Customer` | ✓ | |  | `kunid` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `IsLeadingCompanyCode` |  | |  | `buflg` |  |  |
+| `AcctDetnFreeDefinedAttribute` |  | |  | `sakoz` |  |  |
+| `AccountingDocumentNumberOffset` |  | |  | `ofset` |  |  |
+| `AccountingDocumentNumberLength` |  | |  | `lblnr` |  |  |
+| `CustomerNumberOffset` |  | |  | `ofknd` |  |  |
+| `CustomerNumberLength` |  | |  | `lkdnr` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `Bank` |  | |  | `bankl` |  |  |
+| `PaytSlipWthRefIsNotPrinted` |  | |  | `notakt` |  |  |
+| `PaytSlipWthRefProcedure` |  | |  | `verfa` |  |  |
+| `DunningNoticeIsPrinted` |  | |  | `xmesr` |  |  |
+| `OriginApplication` |  | |  | `applk` |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
 
 ## Associations
 

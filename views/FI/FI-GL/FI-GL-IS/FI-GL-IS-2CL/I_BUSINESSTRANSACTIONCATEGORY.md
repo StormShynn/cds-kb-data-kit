@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessTransactionCategory` | ✓ | |  | `cast(finsc_bttype.bttype as fis_bttype preserving type )` |
-| `BusTransIsSubjToPerdControl` |  | |  | `xperiodcontrol` |
-| `PeriodControlIsLedgerSpecific` |  | |  | `xperiodbyledger` |
-| `PeriodIsCheckedByLeadingLedger` |  | |  | `xperiodbyleadingledger` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransactionCategory` | ✓ | |  | `cast(finsc_bttype.bttype as fis_bttype preserving type )` |  |  |
+| `BusTransIsSubjToPerdControl` |  | |  | `xperiodcontrol` |  |  |
+| `PeriodControlIsLedgerSpecific` |  | |  | `xperiodbyledger` |  |  |
+| `PeriodIsCheckedByLeadingLedger` |  | |  | `xperiodbyleadingledger` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

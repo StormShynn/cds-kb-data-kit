@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterialStatus` | ✓ | |  | `stlst` |
-| `_BillOfMaterialStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterialStatus` | ✓ | |  | `stlst` |  |  |
+| `_BillOfMaterialStatusText` | | ✓ | | | | |
 
 ## Associations
 

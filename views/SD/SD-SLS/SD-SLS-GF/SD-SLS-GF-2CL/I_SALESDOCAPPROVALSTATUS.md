@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocApprovalStatus` | ✓ | |  | `cast ( substring(dd07l.domvalue_l, 1, 1) as sd_apm_approval_status preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocApprovalStatus` | ✓ | |  | `cast ( substring(dd07l.domvalue_l, 1, 1) as sd_apm_approval_status preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

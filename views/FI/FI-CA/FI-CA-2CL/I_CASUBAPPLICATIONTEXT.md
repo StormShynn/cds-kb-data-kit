@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CASubApplication` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as subap_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
-| `CASubApplicationText` |  | |  | `cast( ddtext as subap_text_gfn_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CASubApplication` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as subap_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |  |  |
+| `CASubApplicationText` |  | |  | `cast( ddtext as subap_text_gfn_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

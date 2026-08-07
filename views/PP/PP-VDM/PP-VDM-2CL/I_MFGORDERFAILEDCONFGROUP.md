@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConfirmationApplicationOrigin` | ✓ | |  |  |
-| `FailedOrderConfirmationGroup` | ✓ | |  |  |
-| `FailedOrderConfirmationGrpText` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastConfirmationDate` |  | |  |  |
-| `LastConfirmedByUser` |  | |  |  |
-| `_FailedOrderConfirmation` | | ✓ | | |
-| `_ConfirmationApplOrigin` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_LastConfirmedByUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConfirmationApplicationOrigin` | ✓ | |  |  |  |  |
+| `FailedOrderConfirmationGroup` | ✓ | |  |  |  |  |
+| `FailedOrderConfirmationGrpText` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastConfirmationDate` |  | |  |  |  |  |
+| `LastConfirmedByUser` |  | |  |  |  |  |
+| `_FailedOrderConfirmation` | | ✓ | | | | |
+| `_ConfirmationApplOrigin` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_LastConfirmedByUser` | | ✓ | | | | |
 
 ## Associations
 

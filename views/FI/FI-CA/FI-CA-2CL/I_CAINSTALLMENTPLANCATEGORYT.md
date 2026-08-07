@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` |
-| `Language` | ✓ | |  | `spras` |
-| `CAInstallmentPlanCategoryName` |  | |  | `rpctxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAInstallmentPlanCategoryName` |  | |  | `rpctxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

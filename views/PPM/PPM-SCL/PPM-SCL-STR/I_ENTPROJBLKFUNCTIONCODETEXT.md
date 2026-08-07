@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `EnterpriseProjectBlockFunction` | ✓ | |  | `cast( dd07t.domvalue_l as entobj_function_id )` |
-| `DomainValueLow` |  | |  | `domvalue_l` |
-| `EntProjectBlockFunctionText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_EntProjectBlockFunction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `EnterpriseProjectBlockFunction` | ✓ | |  | `cast( dd07t.domvalue_l as entobj_function_id )` |  |  |
+| `DomainValueLow` |  | |  | `domvalue_l` |  |  |
+| `EntProjectBlockFunctionText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_EntProjectBlockFunction` | | ✓ | | | | |
 
 ## Associations
 

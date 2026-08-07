@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesGroup` | ✓ | |  | `vkgrp` |
-| `Language` | ✓ | |  | `spras` |
-| `SalesGroupName` |  | |  | `cast(bezei as salesgroupname preserving type)` |
-| `_SalesGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesGroup` | ✓ | |  | `vkgrp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SalesGroupName` |  | |  | `cast(bezei as salesgroupname preserving type)` |  |  |
+| `_SalesGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

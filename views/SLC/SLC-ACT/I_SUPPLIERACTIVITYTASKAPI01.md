@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrActyTaskUUID` | ✓ | |  |  |
-| `SupplierActivityTask` |  | |  |  |
-| `SuplrActyTaskName` |  | |  |  |
-| `EndDate` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `Language` |  | |  |  |
-| `SuplrActyTaskPriority` |  | |  |  |
-| `SuplrActyTaskLifecycleStatus` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrActyTaskUUID` | ✓ | |  |  |  |  |
+| `SupplierActivityTask` |  | |  |  |  |  |
+| `SuplrActyTaskName` |  | |  |  |  |  |
+| `EndDate` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |  |  |
+| `Language` |  | |  |  |  |  |
+| `SuplrActyTaskPriority` |  | |  |  |  |  |
+| `SuplrActyTaskLifecycleStatus` |  | |  |  |  |  |
 
 ## Source Code
 

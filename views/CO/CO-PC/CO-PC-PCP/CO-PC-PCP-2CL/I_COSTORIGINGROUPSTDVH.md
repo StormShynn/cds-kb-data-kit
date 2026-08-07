@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostOriginGroup` | ✓ | |  |  |
-| `CostOriginType` | ✓ | |  |  |
-| `ControllingArea` | ✓ | |  |  |
-| `_Text` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_CostOriginType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostOriginGroup` | ✓ | |  |  |  |  |
+| `CostOriginType` | ✓ | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CostOriginType` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DepartureCountry` | ✓ | |  | `aland` |
-| `DepartureZone` | ✓ | |  | `azone` |
-| `DestinationCountry` | ✓ | |  | `lland` |
-| `ReceivingZone` | ✓ | |  | `lzone` |
-| `ShippingCondition` | ✓ | |  | `vsbed` |
-| `TransportationGroup` | ✓ | |  | `tragr` |
-| `DeliveryWeightGroup` | ✓ | |  | `grulg` |
-| `DeliveryRoute` |  | |  | `cast(route as le_route preserving type)` |
-| `_DepartureCountry` | | ✓ | | |
-| `_DepartureZone` | | ✓ | | |
-| `_DestinationCountry` | | ✓ | | |
-| `_ReceivingZone` | | ✓ | | |
-| `_ShippingCondition` | | ✓ | | |
-| `_TransportationGroup` | | ✓ | | |
-| `_DeliveryRoute` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DepartureCountry` | ✓ | |  | `aland` |  |  |
+| `DepartureZone` | ✓ | |  | `azone` |  |  |
+| `DestinationCountry` | ✓ | |  | `lland` |  |  |
+| `ReceivingZone` | ✓ | |  | `lzone` |  |  |
+| `ShippingCondition` | ✓ | |  | `vsbed` |  |  |
+| `TransportationGroup` | ✓ | |  | `tragr` |  |  |
+| `DeliveryWeightGroup` | ✓ | |  | `grulg` |  |  |
+| `DeliveryRoute` |  | |  | `cast(route as le_route preserving type)` |  |  |
+| `_DepartureCountry` | | ✓ | | | | |
+| `_DepartureZone` | | ✓ | | | | |
+| `_DestinationCountry` | | ✓ | | | | |
+| `_ReceivingZone` | | ✓ | | | | |
+| `_ShippingCondition` | | ✓ | | | | |
+| `_TransportationGroup` | | ✓ | | | | |
+| `_DeliveryRoute` | | ✓ | | | | |
 
 ## Source Code
 

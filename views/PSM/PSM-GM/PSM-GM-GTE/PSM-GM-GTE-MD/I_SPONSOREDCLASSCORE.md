@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SponsoredClass` | ✓ | |  | `sponsored_class` |
-| `SponsoredClassType` |  | |  | `class_type` |
-| `SponsoredClassIsBillable` |  | |  | `cast(flg_billable as gm_flg_billable_ce preserving type )` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `CreationDate` |  | |  | `created_on` |
-| `LastChangedByUser` |  | |  | `modified_by` |
-| `LastChangeDate` |  | |  | `modified_on` |
-| `SponsoredClassAuthznGrp` |  | |  | `auth_group` |
-| `GteeMBdgtAcctForSpnsrdCl` |  | |  | `account_for_budget` |
-| `_Type` | | ✓ | | |
-| `_SponsoredClassHierarchyNode` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredClass` | ✓ | |  | `sponsored_class` |  |  |
+| `SponsoredClassType` |  | |  | `class_type` |  |  |
+| `SponsoredClassIsBillable` |  | |  | `cast(flg_billable as gm_flg_billable_ce preserving type )` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `CreationDate` |  | |  | `created_on` |  |  |
+| `LastChangedByUser` |  | |  | `modified_by` |  |  |
+| `LastChangeDate` |  | |  | `modified_on` |  |  |
+| `SponsoredClassAuthznGrp` |  | |  | `auth_group` |  |  |
+| `GteeMBdgtAcctForSpnsrdCl` |  | |  | `account_for_budget` |  |  |
+| `_Type` | | ✓ | | | | |
+| `_SponsoredClassHierarchyNode` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
 
 ## Associations
 

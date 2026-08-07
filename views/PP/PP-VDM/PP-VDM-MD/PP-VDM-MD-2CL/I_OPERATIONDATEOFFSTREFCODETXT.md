@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `OperationDateOffsetRefCode` | ✓ | |  | `bzoff` |
-| `OperationDateOffsetRefCodeName` |  | |  | `bztxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OperationDateOffsetRefCode` | ✓ | |  | `bzoff` |  |  |
+| `OperationDateOffsetRefCodeName` |  | |  | `bztxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ImpliedVolatilityIdentifier` | ✓ | |  | `vname` |
-| `_Text` | | ✓ | | |
-| `_Profile_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ImpliedVolatilityIdentifier` | ✓ | |  | `vname` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Profile_2` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Segment` | ✓ | | `_CnsldtnSegment` | `Segment` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnSegment` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnSegmentTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnSegmentTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Segment` | ✓ | | `_CnsldtnSegment` | `Segment` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnSegment` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnSegmentTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnSegmentTextTP` |  |  |
 
 ## Source Code
 

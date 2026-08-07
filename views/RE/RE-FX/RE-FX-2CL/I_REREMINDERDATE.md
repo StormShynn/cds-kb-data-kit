@@ -27,36 +27,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REReminderUUID` | ✓ | |  | `cast( rsdateguid as recavdmdateguid preserving type )` |
-| `InternalRealEstateNumber` |  | |  | `intreno` |
-| `REReminderNumber` |  | |  | `cast( rsno as recavdmrsno preserving type )` |
-| `REReminderRule` |  | |  | `cast( rsrule as recavdmrsrule preserving type )` |
-| `REReminderDate` |  | |  | `cast( rsdate as recavdmrsdate preserving type )` |
-| `REReminderReason` |  | |  | `cast( rsreason as recavdmrsreason preserving type )` |
-| `CreatedByUser` |  | |  | `rerf` |
-| `CreationDate` |  | |  | `derf` |
-| `CreationTime` |  | |  | `terf` |
-| `RESourceOfCreation` |  | |  | `reher` |
-| `LastChangedByUser` |  | |  | `rbear` |
-| `LastChangeDate` |  | |  | `dbear` |
-| `LastChangeTime` |  | |  | `tbear` |
-| `RESourceOfChange` |  | |  | `rbher` |
-| `Responsible` |  | |  | `responsible` |
-| `REReminderWrkflwDate` |  | |  | `cast( rswfdate as recavdmrswfdate preserving type )` |
-| `REReminderIsDone` |  | |  | `cast( rsdone as recavdmrsdone preserving type )` |
-| `REReminderIsFix` |  | |  | `rsfixed` |
-| `REReminderIsWrkflwSend` |  | |  | `rswfevent` |
-| `TextObjectKey` |  | |  | `cast(concat(intreno, concat('#', concat(rsdate, concat('#', rsno)))) as tdobname)` |
-| `REReminderInfoText` |  | |  | `cast( rsinfo as recavdmrsinfo preserving type )` |
-| `_CreatedByUser` | | ✓ | | |
-| `_ChangedByUser` | | ✓ | | |
-| `_ResponsibleUser` | | ✓ | | |
-| `_REReminderRule` | | ✓ | | |
-| `_REReminderReason` | | ✓ | | |
-| `_REReminderLongText` | | ✓ | | |
-| `_REKeyAssgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REReminderUUID` | ✓ | |  | `cast( rsdateguid as recavdmdateguid preserving type )` |  |  |
+| `InternalRealEstateNumber` |  | |  | `intreno` |  |  |
+| `REReminderNumber` |  | |  | `cast( rsno as recavdmrsno preserving type )` |  |  |
+| `REReminderRule` |  | |  | `cast( rsrule as recavdmrsrule preserving type )` |  |  |
+| `REReminderDate` |  | |  | `cast( rsdate as recavdmrsdate preserving type )` |  |  |
+| `REReminderReason` |  | |  | `cast( rsreason as recavdmrsreason preserving type )` |  |  |
+| `CreatedByUser` |  | |  | `rerf` |  |  |
+| `CreationDate` |  | |  | `derf` |  |  |
+| `CreationTime` |  | |  | `terf` |  |  |
+| `RESourceOfCreation` |  | |  | `reher` |  |  |
+| `LastChangedByUser` |  | |  | `rbear` |  |  |
+| `LastChangeDate` |  | |  | `dbear` |  |  |
+| `LastChangeTime` |  | |  | `tbear` |  |  |
+| `RESourceOfChange` |  | |  | `rbher` |  |  |
+| `Responsible` |  | |  | `responsible` |  |  |
+| `REReminderWrkflwDate` |  | |  | `cast( rswfdate as recavdmrswfdate preserving type )` |  |  |
+| `REReminderIsDone` |  | |  | `cast( rsdone as recavdmrsdone preserving type )` |  |  |
+| `REReminderIsFix` |  | |  | `rsfixed` |  |  |
+| `REReminderIsWrkflwSend` |  | |  | `rswfevent` |  |  |
+| `TextObjectKey` |  | |  | `cast(concat(intreno, concat('#', concat(rsdate, concat('#', rsno)))) as tdobname)` |  |  |
+| `REReminderInfoText` |  | |  | `cast( rsinfo as recavdmrsinfo preserving type )` |  |  |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_ResponsibleUser` | | ✓ | | | | |
+| `_REReminderRule` | | ✓ | | | | |
+| `_REReminderReason` | | ✓ | | | | |
+| `_REReminderLongText` | | ✓ | | | | |
+| `_REKeyAssgmt` | | ✓ | | | | |
 
 ## Associations
 

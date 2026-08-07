@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspResultIsDocumentationRqd` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qdokukz preserving type )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `InspResultIsDocnRqdText` |  | |  | `cast( ddtext as vdm_qdokukz_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_InspResultDocuRequired` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspResultIsDocumentationRqd` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qdokukz preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `InspResultIsDocnRqdText` |  | |  | `cast( ddtext as vdm_qdokukz_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_InspResultDocuRequired` | | ✓ | | | | |
 
 ## Associations
 

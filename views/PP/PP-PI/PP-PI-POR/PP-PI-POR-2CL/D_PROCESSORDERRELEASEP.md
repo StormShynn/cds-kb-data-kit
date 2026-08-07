@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrdRelIsPmtdDsptMisgParts` |  | |  | `abap_boolean` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrdRelIsPmtdDsptMisgParts` |  | |  | `abap_boolean` |  |  |
 
 ## Source Code
 

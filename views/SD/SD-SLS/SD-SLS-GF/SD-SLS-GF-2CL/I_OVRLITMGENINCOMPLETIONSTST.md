@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OvrlItmGeneralIncompletionSts` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OvrlItmGenIncompletionStsDesc` |  | |  | `cast(bezei as ovrlitmgenincompletionstsdesc )` |
-| `_OvrlItmGeneralIncompletionSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OvrlItmGeneralIncompletionSts` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OvrlItmGenIncompletionStsDesc` |  | |  | `cast(bezei as ovrlitmgenincompletionstsdesc )` |  |  |
+| `_OvrlItmGeneralIncompletionSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

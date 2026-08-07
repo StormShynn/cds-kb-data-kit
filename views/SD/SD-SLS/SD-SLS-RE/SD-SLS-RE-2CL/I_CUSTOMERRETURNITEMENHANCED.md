@@ -31,209 +31,209 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturn` | ✓ | |  |  |
-| `CustomerReturnItem` | ✓ | |  |  |
-| `CustomerReturnItemUUID` |  | |  |  |
-| `CustomerReturnItemCategory` |  | |  |  |
-| `CustomerReturnItemType` |  | |  |  |
-| `IsReturnsItem` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `Division` |  | |  |  |
-| `Material` |  | |  |  |
-| `Product` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `OriginallyRequestedMaterial` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `InternationalArticleNumber` |  | |  |  |
-| `Batch` |  | |  |  |
-| `ProductHierarchyNode` |  | |  |  |
-| `ProductCatalog` |  | |  |  |
-| `AdditionalMaterialGroup1` |  | |  |  |
-| `AdditionalMaterialGroup2` |  | |  |  |
-| `AdditionalMaterialGroup3` |  | |  |  |
-| `AdditionalMaterialGroup4` |  | |  |  |
-| `AdditionalMaterialGroup5` |  | |  |  |
-| `MatlAccountAssignmentGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `ProductConfiguration` |  | |  |  |
-| `BillOfMaterial` |  | |  |  |
-| `BOMExplosionDate` |  | |  |  |
-| `CustomerReturnItemText` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `PurchaseOrderByShipToParty` |  | |  |  |
-| `CorrespncExternalReference` |  | |  |  |
-| `CorrespncExtRefByShipToParty` |  | |  |  |
-| `UnderlyingPurchaseOrderItem` |  | |  |  |
-| `UndrlgPurOrdItmByShipToParty` |  | |  |  |
-| `CustPurOrdTypeByShipToParty` |  | |  |  |
-| `CustomerPurchaseOrderType` |  | |  |  |
-| `OrderQuantity` |  | |  |  |
-| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |
-| `TargetDelivQtyInOrderQtyUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `ConfdDeliveryQtyInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `OrderToBaseQuantityDnmntr` |  | |  |  |
-| `OrderToBaseQuantityNmrtr` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `RequestedQuantityInBaseUnit` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `SalesDeal` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `PriceDetnExchangeRate` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `NetPriceQuantityUnit` |  | |  |  |
-| `StatisticalValueControl` |  | |  |  |
-| `TaxAmount` |  | |  |  |
-| `CostAmount` |  | |  |  |
-| `Subtotal1Amount` |  | |  |  |
-| `Subtotal2Amount` |  | |  |  |
-| `Subtotal3Amount` |  | |  |  |
-| `Subtotal4Amount` |  | |  |  |
-| `Subtotal5Amount` |  | |  |  |
-| `Subtotal6Amount` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `ShippingType` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `Route` |  | |  |  |
-| `DeliveryDateQuantityIsFixed` |  | |  |  |
-| `PartialDeliveryIsAllowed` |  | |  |  |
-| `MaxNmbrOfPartialDelivery` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `MinDeliveryQtyInBaseUnit` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `ItemIsDeliveryRelevant` |  | |  |  |
-| `BillingDocumentDate` |  | |  |  |
-| `ItemIsBillingRelevant` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `CustomerPriceGroup` |  | |  |  |
-| `MaterialPricingGroup` |  | |  |  |
-| `FixedValueDate` |  | |  |  |
-| `ProductTaxClassification1` |  | |  |  |
-| `ProductTaxClassification2` |  | |  |  |
-| `ProductTaxClassification3` |  | |  |  |
-| `ProductTaxClassification4` |  | |  |  |
-| `ProductTaxClassification5` |  | |  |  |
-| `ProductTaxClassification6` |  | |  |  |
-| `ProductTaxClassification7` |  | |  |  |
-| `ProductTaxClassification8` |  | |  |  |
-| `ProductTaxClassification9` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `CustomerAccountAssignmentGroup` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `ControllingObject` |  | |  |  |
-| `ProfitabilitySegment` |  | |  |  |
-| `ProfitabilitySegment_2` |  | |  |  |
-| `OriginSDDocument` |  | |  |  |
-| `OriginSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  | `}] Item.ReferenceSDDocumentItem` |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `BusinessSolutionOrderItem` |  | |  |  |
-| `BusSolnOrdItemBundleItem` |  | |  |  |
-| `RetsMgmtProcess` |  | |  |  |
-| `RetsMgmtProcessItem` |  | |  |  |
-| `ReturnReason` |  | |  |  |
-| `ReturnsRefundExtent` |  | |  |  |
-| `RetsMgmtProcessingBlock` |  | |  |  |
-| `ReturnsRefundRjcnReason` |  | |  |  |
-| `CustRetMatlAuthzn` |  | |  |  |
-| `CustomerRetMatlInspResultCode` |  | |  |  |
-| `NextFllwUpActivityForMatlInsp` |  | |  |  |
-| `RetsMgmtItmLogProcgStatus` |  | |  |  |
-| `RetsMgmtItmCompnProcgStatus` |  | |  |  |
-| `RetsMgmtItmProcgStatus` |  | |  |  |
-| `CustRetReleaseStatus` |  | |  |  |
-| `CRMLogicalSystem` |  | |  |  |
-| `CRMObjectUUID` |  | |  |  |
-| `CRMObjectID` |  | |  |  |
-| `CRMObjectType` |  | |  |  |
-| `RetsMgmtProcItmQtySplit` |  | |  |  |
-| `RetsMgmtProcessStep` |  | |  |  |
-| `ReturnsDocumentType` |  | |  |  |
-| `ReturnsDocument` |  | |  |  |
-| `ReturnsDocumentItem` |  | |  |  |
-| `ReturnsReferenceDocumentType` |  | |  |  |
-| `ReturnsReferenceDocument` |  | |  |  |
-| `ReturnsReferenceDocumentItem` |  | |  |  |
-| `ReturnsDocumentStatus` |  | |  |  |
-| `ReturnsDocumentApprovalStatus` |  | |  |  |
-| `RetsMgmtProcItmExectdSequence` |  | |  |  |
-| `CustRetItmChainID` |  | |  |  |
-| `CustRetItmFollowUpActivity` |  | |  |  |
-| `ReturnsMaterialHasBeenReceived` |  | |  |  |
-| `NextPlantForFollowUpActivity` |  | |  |  |
-| `ReturnsTransshipmentPlant` |  | |  |  |
-| `ReturnsRefundType` |  | |  |  |
-| `ReturnsRefundProcgMode` |  | |  |  |
-| `RetsProdValnIsSuspended` |  | |  |  |
-| `RetsInspIsCrtedAutomly` |  | |  |  |
-| `RetsProdIsVltdWithRef` |  | |  |  |
-| `PrelimRefundIsDetermined` |  | |  |  |
-| `ReplacementMaterial` |  | |  |  |
-| `ReplacementMaterialQuantity` |  | |  |  |
-| `ReplacementMaterialQtyUnit` |  | |  |  |
-| `ReplacementMaterialIsRequested` |  | |  |  |
-| `ReplacementMatlSupplyingPlant` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `SupplierRetMatlAuthzn` |  | |  |  |
-| `SuplrRetMatlAuthznIsRequired` |  | |  |  |
-| `RetMatlInspResultCode` |  | |  |  |
-| `ProductIsInspectedAtCustSite` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `TotalDeliveryStatus` |  | |  |  |
-| `DeliveryStatus` |  | |  |  |
-| `DeliveryBlockStatus` |  | |  |  |
-| `OrderRelatedBillingStatus` |  | |  |  |
-| `BillingBlockStatus` |  | |  |  |
-| `ItemGeneralIncompletionStatus` |  | |  |  |
-| `ItemBillingIncompletionStatus` |  | |  |  |
-| `PricingIncompletionStatus` |  | |  |  |
-| `ItemDeliveryIncompletionStatus` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `TotalSDDocReferenceStatus` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `CustomerReturnType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_CustomerReturn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |  |  |
+| `CustomerReturnItem` | ✓ | |  |  |  |  |
+| `CustomerReturnItemUUID` |  | |  |  |  |  |
+| `CustomerReturnItemCategory` |  | |  |  |  |  |
+| `CustomerReturnItemType` |  | |  |  |  |  |
+| `IsReturnsItem` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `InternationalArticleNumber` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ProductHierarchyNode` |  | |  |  |  |  |
+| `ProductCatalog` |  | |  |  |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |  |  |
+| `MatlAccountAssignmentGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `ProductConfiguration` |  | |  |  |  |  |
+| `BillOfMaterial` |  | |  |  |  |  |
+| `BOMExplosionDate` |  | |  |  |  |  |
+| `CustomerReturnItemText` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `PurchaseOrderByShipToParty` |  | |  |  |  |  |
+| `CorrespncExternalReference` |  | |  |  |  |  |
+| `CorrespncExtRefByShipToParty` |  | |  |  |  |  |
+| `UnderlyingPurchaseOrderItem` |  | |  |  |  |  |
+| `UndrlgPurOrdItmByShipToParty` |  | |  |  |  |  |
+| `CustPurOrdTypeByShipToParty` |  | |  |  |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |  |  |
+| `OrderQuantity` |  | |  |  |  |  |
+| `ConfdDelivQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `TargetDelivQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `ConfdDeliveryQtyInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `OrderToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `OrderToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `RequestedQuantityInBaseUnit` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `SalesDeal` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |  |  |
+| `StatisticalValueControl` |  | |  |  |  |  |
+| `TaxAmount` |  | |  |  |  |  |
+| `CostAmount` |  | |  |  |  |  |
+| `Subtotal1Amount` |  | |  |  |  |  |
+| `Subtotal2Amount` |  | |  |  |  |  |
+| `Subtotal3Amount` |  | |  |  |  |  |
+| `Subtotal4Amount` |  | |  |  |  |  |
+| `Subtotal5Amount` |  | |  |  |  |  |
+| `Subtotal6Amount` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `ShippingType` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `Route` |  | |  |  |  |  |
+| `DeliveryDateQuantityIsFixed` |  | |  |  |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |  |  |
+| `MaxNmbrOfPartialDelivery` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `MinDeliveryQtyInBaseUnit` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `ItemIsDeliveryRelevant` |  | |  |  |  |  |
+| `BillingDocumentDate` |  | |  |  |  |  |
+| `ItemIsBillingRelevant` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `CustomerPriceGroup` |  | |  |  |  |  |
+| `MaterialPricingGroup` |  | |  |  |  |  |
+| `FixedValueDate` |  | |  |  |  |  |
+| `ProductTaxClassification1` |  | |  |  |  |  |
+| `ProductTaxClassification2` |  | |  |  |  |  |
+| `ProductTaxClassification3` |  | |  |  |  |  |
+| `ProductTaxClassification4` |  | |  |  |  |  |
+| `ProductTaxClassification5` |  | |  |  |  |  |
+| `ProductTaxClassification6` |  | |  |  |  |  |
+| `ProductTaxClassification7` |  | |  |  |  |  |
+| `ProductTaxClassification8` |  | |  |  |  |  |
+| `ProductTaxClassification9` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `ControllingObject` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  |  |  |  |
+| `ProfitabilitySegment_2` |  | |  |  |  |  |
+| `OriginSDDocument` |  | |  |  |  |  |
+| `OriginSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |  |  |
+| `BusSolnOrdItemBundleItem` |  | |  |  |  |  |
+| `RetsMgmtProcess` |  | |  |  |  |  |
+| `RetsMgmtProcessItem` |  | |  |  |  |  |
+| `ReturnReason` |  | |  |  |  |  |
+| `ReturnsRefundExtent` |  | |  |  |  |  |
+| `RetsMgmtProcessingBlock` |  | |  |  |  |  |
+| `ReturnsRefundRjcnReason` |  | |  |  |  |  |
+| `CustRetMatlAuthzn` |  | |  |  |  |  |
+| `CustomerRetMatlInspResultCode` |  | |  |  |  |  |
+| `NextFllwUpActivityForMatlInsp` |  | |  |  |  |  |
+| `RetsMgmtItmLogProcgStatus` |  | |  |  |  |  |
+| `RetsMgmtItmCompnProcgStatus` |  | |  |  |  |  |
+| `RetsMgmtItmProcgStatus` |  | |  |  |  |  |
+| `CustRetReleaseStatus` |  | |  |  |  |  |
+| `CRMLogicalSystem` |  | |  |  |  |  |
+| `CRMObjectUUID` |  | |  |  |  |  |
+| `CRMObjectID` |  | |  |  |  |  |
+| `CRMObjectType` |  | |  |  |  |  |
+| `RetsMgmtProcItmQtySplit` |  | |  |  |  |  |
+| `RetsMgmtProcessStep` |  | |  |  |  |  |
+| `ReturnsDocumentType` |  | |  |  |  |  |
+| `ReturnsDocument` |  | |  |  |  |  |
+| `ReturnsDocumentItem` |  | |  |  |  |  |
+| `ReturnsReferenceDocumentType` |  | |  |  |  |  |
+| `ReturnsReferenceDocument` |  | |  |  |  |  |
+| `ReturnsReferenceDocumentItem` |  | |  |  |  |  |
+| `ReturnsDocumentStatus` |  | |  |  |  |  |
+| `ReturnsDocumentApprovalStatus` |  | |  |  |  |  |
+| `RetsMgmtProcItmExectdSequence` |  | |  |  |  |  |
+| `CustRetItmChainID` |  | |  |  |  |  |
+| `CustRetItmFollowUpActivity` |  | |  |  |  |  |
+| `ReturnsMaterialHasBeenReceived` |  | |  |  |  |  |
+| `NextPlantForFollowUpActivity` |  | |  |  |  |  |
+| `ReturnsTransshipmentPlant` |  | |  |  |  |  |
+| `ReturnsRefundType` |  | |  |  |  |  |
+| `ReturnsRefundProcgMode` |  | |  |  |  |  |
+| `RetsProdValnIsSuspended` |  | |  |  |  |  |
+| `RetsInspIsCrtedAutomly` |  | |  |  |  |  |
+| `RetsProdIsVltdWithRef` |  | |  |  |  |  |
+| `PrelimRefundIsDetermined` |  | |  |  |  |  |
+| `ReplacementMaterial` |  | |  |  |  |  |
+| `ReplacementMaterialQuantity` |  | |  |  |  |  |
+| `ReplacementMaterialQtyUnit` |  | |  |  |  |  |
+| `ReplacementMaterialIsRequested` |  | |  |  |  |  |
+| `ReplacementMatlSupplyingPlant` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `SupplierRetMatlAuthzn` |  | |  |  |  |  |
+| `SuplrRetMatlAuthznIsRequired` |  | |  |  |  |  |
+| `RetMatlInspResultCode` |  | |  |  |  |  |
+| `ProductIsInspectedAtCustSite` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `TotalDeliveryStatus` |  | |  |  |  |  |
+| `DeliveryStatus` |  | |  |  |  |  |
+| `DeliveryBlockStatus` |  | |  |  |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |  |  |
+| `BillingBlockStatus` |  | |  |  |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |  |  |
+| `ItemBillingIncompletionStatus` |  | |  |  |  |  |
+| `PricingIncompletionStatus` |  | |  |  |  |  |
+| `ItemDeliveryIncompletionStatus` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `CustomerReturnType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_CustomerReturn` | | ✓ | | | | |
 
 ## Associations
 

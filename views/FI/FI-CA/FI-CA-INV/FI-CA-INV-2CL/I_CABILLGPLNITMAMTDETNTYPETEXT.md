@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnItemAmountDetnType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_amount_det_type_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CABillgPlnItmAmtDetnTypeText` |  | |  | `cast( ddtext as bip_amt_det_type_txt_gfn_kk preserving type )` |
-| `_CABillgPlnItmAmtDetnType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnItemAmountDetnType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_amount_det_type_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CABillgPlnItmAmtDetnTypeText` |  | |  | `cast( ddtext as bip_amt_det_type_txt_gfn_kk preserving type )` |  |  |
+| `_CABillgPlnItmAmtDetnType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

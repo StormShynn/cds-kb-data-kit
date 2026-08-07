@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |
-| `CN_CADEArchive` | ✓ | |  | `cade_archive_code` |
-| `CN_CADEArchiveVal` | ✓ | |  | `cade_archive_value_code` |
-| `CN_CADEArchiveValName` |  | |  | `cade_archive_value_name` |
-| `CN_CADEArchiveValDesc` |  | |  | `cade_archive_value_desc` |
-| `CN_CADEArchiveValUprNode` |  | |  | `cade_archive_value_upper_node` |
-| `CN_CADEArchiveValLvl` |  | |  | `cade_archive_value_level` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |  |  |
+| `CN_CADEArchive` | ✓ | |  | `cade_archive_code` |  |  |
+| `CN_CADEArchiveVal` | ✓ | |  | `cade_archive_value_code` |  |  |
+| `CN_CADEArchiveValName` |  | |  | `cade_archive_value_name` |  |  |
+| `CN_CADEArchiveValDesc` |  | |  | `cade_archive_value_desc` |  |  |
+| `CN_CADEArchiveValUprNode` |  | |  | `cade_archive_value_upper_node` |  |  |
+| `CN_CADEArchiveValLvl` |  | |  | `cade_archive_value_level` |  |  |
 
 ## Source Code
 

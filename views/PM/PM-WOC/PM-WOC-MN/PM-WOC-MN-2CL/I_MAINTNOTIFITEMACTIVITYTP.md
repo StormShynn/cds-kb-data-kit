@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintNotificationActivity` | ✓ | |  |  |
-| `MaintenanceNotification` | ✓ | |  |  |
-| `MaintenanceNotificationItem` | ✓ | |  |  |
-| `MaintNotifActivitySortNumber` |  | |  |  |
-| `MaintNotifActyTxt` |  | |  |  |
-| `MaintNotifActivityCodeGroup` |  | |  |  |
-| `MaintNotificationActivityCode` |  | |  |  |
-| `PlannedStartDate` |  | |  |  |
-| `PlannedStartTime` |  | |  |  |
-| `PlannedEndDate` |  | |  |  |
-| `PlannedEndTime` |  | |  |  |
-| `MaintNotifActivityCodeCatalog` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_MaintNotifActivityCodeGroup` | | ✓ | | |
-| `_MaintNotificationActivityCode` | | ✓ | | |
-| `_MaintenanceNotification` | | ✓ | | |
-| `_Item` | | ✓ | | |
-| `_Notif` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintNotificationActivity` | ✓ | |  |  |  |  |
+| `MaintenanceNotification` | ✓ | |  |  |  |  |
+| `MaintenanceNotificationItem` | ✓ | |  |  |  |  |
+| `MaintNotifActivitySortNumber` |  | |  |  |  |  |
+| `MaintNotifActyTxt` |  | |  |  |  |  |
+| `MaintNotifActivityCodeGroup` |  | |  |  |  |  |
+| `MaintNotificationActivityCode` |  | |  |  |  |  |
+| `PlannedStartDate` |  | |  |  |  |  |
+| `PlannedStartTime` |  | |  |  |  |  |
+| `PlannedEndDate` |  | |  |  |  |  |
+| `PlannedEndTime` |  | |  |  |  |  |
+| `MaintNotifActivityCodeCatalog` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_MaintNotifActivityCodeGroup` | | ✓ | | | | |
+| `_MaintNotificationActivityCode` | | ✓ | | | | |
+| `_MaintenanceNotification` | | ✓ | | | | |
+| `_Item` | | ✓ | | | | |
+| `_Notif` | | ✓ | | | | |
 
 ## Source Code
 

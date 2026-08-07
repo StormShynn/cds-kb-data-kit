@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TechObjIsEquipOrFuncnlLoc` | ✓ | |  | `cast( dd07t.domvalue_l as eams_tec_obj_type_value )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TechObjIsEquipOrFuncnlLocDesc` |  | |  | `cast( dd07t.ddtext as eams_tec_obj_type_desc )` |
-| `_Language` | | ✓ | | |
-| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TechObjIsEquipOrFuncnlLoc` | ✓ | |  | `cast( dd07t.domvalue_l as eams_tec_obj_type_value )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TechObjIsEquipOrFuncnlLocDesc` |  | |  | `cast( dd07t.ddtext as eams_tec_obj_type_desc )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | | | |
 
 ## Associations
 

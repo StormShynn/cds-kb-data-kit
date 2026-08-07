@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REFixedPeriod` | ✓ | |  | `fixper` |
-| `REMixedCalculationIsActive` |  | |  | `mixcalc` |
-| `RE365YearIsUsed` |  | |  | `day365` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REFixedPeriod` | ✓ | |  | `fixper` |  |  |
+| `REMixedCalculationIsActive` |  | |  | `mixcalc` |  |  |
+| `RE365YearIsUsed` |  | |  | `day365` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

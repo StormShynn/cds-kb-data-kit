@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationMode` | ✓ | |  | `cast(vktra as /scmtms/vdm_tor_trmodcode preserving type )` |
-| `TransportationModeCategory` |  | |  | `cast(trmodcat as /scmtms/vdm_tor_trmod_cat preserving type)` |
-| `_TransportationModeCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationMode` | ✓ | |  | `cast(vktra as /scmtms/vdm_tor_trmodcode preserving type )` |  |  |
+| `TransportationModeCategory` |  | |  | `cast(trmodcat as /scmtms/vdm_tor_trmod_cat preserving type)` |  |  |
+| `_TransportationModeCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

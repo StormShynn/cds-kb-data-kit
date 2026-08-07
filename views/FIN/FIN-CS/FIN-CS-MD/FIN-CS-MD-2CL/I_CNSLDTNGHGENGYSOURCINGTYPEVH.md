@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGEnergySourcingType` | ✓ | | `_Source` | `GHGEnergySourcingType` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGEnergySourcingType` | ✓ | | `_Source` | `GHGEnergySourcingType` |  |  |
 
 ## Source Code
 

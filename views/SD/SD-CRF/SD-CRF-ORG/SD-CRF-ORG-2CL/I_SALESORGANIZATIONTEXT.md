@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrganization` | ✓ | |  | `vkorg` |
-| `Language` | ✓ | |  | `spras` |
-| `SalesOrganizationName` |  | |  | `cast(vtext as salesorganizationname preserving type)` |
-| `_SalesOrganization` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  | `vkorg` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SalesOrganizationName` |  | |  | `cast(vtext as salesorganizationname preserving type)` |  |  |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

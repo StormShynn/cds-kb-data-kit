@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurReqnReleaseControlCode` | ✓ | |  | `frgkz` |
-| `_PurReqnReleaseControlCodeT` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurReqnReleaseControlCode` | ✓ | |  | `frgkz` |  |  |
+| `_PurReqnReleaseControlCodeT` | | ✓ | | | | |
 
 ## Associations
 

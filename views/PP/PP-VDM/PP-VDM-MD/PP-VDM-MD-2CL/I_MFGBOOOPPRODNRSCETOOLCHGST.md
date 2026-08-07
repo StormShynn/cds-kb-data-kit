@@ -28,65 +28,65 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsType` | ✓ | |  |  |
-| `BillOfOperationsGroup` | ✓ | |  |  |
-| `BillOfOperationsVariant` | ✓ | |  |  |
-| `BillOfOperationsSequence` | ✓ | |  |  |
-| `BOOOperationInternalID` | ✓ | |  |  |
-| `BOOOperationPRTInternalID` | ✓ | |  |  |
-| `BOOOperationPRTIntVersCounter` | ✓ | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `IsImplicitlyDeleted` |  | |  |  |
-| `ProductionResourceType` |  | |  |  |
-| `ProductionResourceInternalID` |  | |  |  |
-| `ProdnRsceToolItemNumber` |  | |  |  |
-| `ProdnRsceToolControlProfile` |  | |  |  |
-| `ProdnRsceToolStandardTextCode` |  | |  |  |
-| `ProdnRsceToolText` |  | |  |  |
-| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |
-| `ProdnRsceToolStandardWorkQty` |  | |  |  |
-| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |
-| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |
-| `ProdnRsceToolUsageQuantity` |  | |  |  |
-| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |
-| `StartDateOffsetReferenceCode` |  | |  |  |
-| `StartDateOffsetDurationUnit` |  | |  |  |
-| `StartDateOffsetDuration` |  | |  |  |
-| `EndDateOffsetReferenceCode` |  | |  |  |
-| `EndDateOffsetDurationUnit` |  | |  |  |
-| `EndDateOffsetDuration` |  | |  |  |
-| `_BillOfOperations` | | ✓ | | |
-| `_BillOfOperationsSequence` | | ✓ | | |
-| `_BillOfOperationsOperation` | | ✓ | | |
-| `_BillOfOperationsOperationPRT` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BOOOperationInternalID` | | ✓ | | |
-| `_BOOOperationPRTInternalID` | | ✓ | | |
-| `_ChangeMaster` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_ProductionResourceType` | | ✓ | | |
-| `_ProdnRsceToolMasterData` | | ✓ | | |
-| `_ProdnRsceToolControlProfile` | | ✓ | | |
-| `_ProdnRsceToolTotQtyCalcFmla` | | ✓ | | |
-| `_ProdnRsceToolUsageQtyCalcFmla` | | ✓ | | |
-| `_ProdnRsceToolStandardText` | | ✓ | | |
-| `_ProductionResourceToolUnit` | | ✓ | | |
-| `_ProdnResourceToolUsageUnit` | | ✓ | | |
-| `_EndDateOffsetReferenceCode` | | ✓ | | |
-| `_EndDateOffsetDurationUnit` | | ✓ | | |
-| `_StartDateOffsetReferenceCode` | | ✓ | | |
-| `_StartDateOffsetDurationUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |  |  |
+| `BillOfOperationsSequence` | ✓ | |  |  |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |  |  |
+| `BOOOperationPRTInternalID` | ✓ | |  |  |  |  |
+| `BOOOperationPRTIntVersCounter` | ✓ | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |  |  |
+| `ProductionResourceType` |  | |  |  |  |  |
+| `ProductionResourceInternalID` |  | |  |  |  |  |
+| `ProdnRsceToolItemNumber` |  | |  |  |  |  |
+| `ProdnRsceToolControlProfile` |  | |  |  |  |  |
+| `ProdnRsceToolStandardTextCode` |  | |  |  |  |  |
+| `ProdnRsceToolText` |  | |  |  |  |  |
+| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |  |  |
+| `ProdnRsceToolStandardWorkQty` |  | |  |  |  |  |
+| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQuantity` |  | |  |  |  |  |
+| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |  |  |
+| `StartDateOffsetReferenceCode` |  | |  |  |  |  |
+| `StartDateOffsetDurationUnit` |  | |  |  |  |  |
+| `StartDateOffsetDuration` |  | |  |  |  |  |
+| `EndDateOffsetReferenceCode` |  | |  |  |  |  |
+| `EndDateOffsetDurationUnit` |  | |  |  |  |  |
+| `EndDateOffsetDuration` |  | |  |  |  |  |
+| `_BillOfOperations` | | ✓ | | | | |
+| `_BillOfOperationsSequence` | | ✓ | | | | |
+| `_BillOfOperationsOperation` | | ✓ | | | | |
+| `_BillOfOperationsOperationPRT` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BOOOperationInternalID` | | ✓ | | | | |
+| `_BOOOperationPRTInternalID` | | ✓ | | | | |
+| `_ChangeMaster` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_ProductionResourceType` | | ✓ | | | | |
+| `_ProdnRsceToolMasterData` | | ✓ | | | | |
+| `_ProdnRsceToolControlProfile` | | ✓ | | | | |
+| `_ProdnRsceToolTotQtyCalcFmla` | | ✓ | | | | |
+| `_ProdnRsceToolUsageQtyCalcFmla` | | ✓ | | | | |
+| `_ProdnRsceToolStandardText` | | ✓ | | | | |
+| `_ProductionResourceToolUnit` | | ✓ | | | | |
+| `_ProdnResourceToolUsageUnit` | | ✓ | | | | |
+| `_EndDateOffsetReferenceCode` | | ✓ | | | | |
+| `_EndDateOffsetDurationUnit` | | ✓ | | | | |
+| `_StartDateOffsetReferenceCode` | | ✓ | | | | |
+| `_StartDateOffsetDurationUnit` | | ✓ | | | | |
 
 ## Associations
 

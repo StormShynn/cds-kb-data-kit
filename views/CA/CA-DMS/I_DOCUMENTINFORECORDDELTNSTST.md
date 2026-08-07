@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `DocInfoRecdIsMarkedForDeletion` | ✓ | |  | `domvalue_l` |
-| `DeleteStatusDescription` |  | |  | `ddtext` |
-| `_DocumentInfoRecordDeltnSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `DocInfoRecdIsMarkedForDeletion` | ✓ | |  | `domvalue_l` |  |  |
+| `DeleteStatusDescription` |  | |  | `ddtext` |  |  |
+| `_DocumentInfoRecordDeltnSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

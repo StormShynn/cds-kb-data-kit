@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AdditionalCustomerGroup2` | ✓ | |  | `kvgr2` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup2` | ✓ | |  | `kvgr2` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

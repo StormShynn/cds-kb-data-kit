@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumber` | ✓ | |  |  |
-| `DocumentType` | ✓ | |  |  |
-| `DocumentInfoRecord` | ✓ | |  |  |
-| `DocumentPart` | ✓ | |  |  |
-| `DocumentVersion` | ✓ | |  |  |
-| `ChgNmbrAlternativeDateID` |  | |  |  |
-| `SAPObjectTechnicalID` |  | |  |  |
-| `ObjMgmtRecdDescription` |  | |  |  |
-| `ObjMgmtRecdItemUUID` |  | |  |  |
-| `ObjMgmtRecdLastChangedAt` |  | |  |  |
-| `ObjMgmtRecdLastChangedBy` |  | |  |  |
-| `ObjMgmtRecdCreationDate` |  | |  |  |
-| `ObjMgmtRecdCreatedBy` |  | |  |  |
-| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |
-| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |
-| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |
-| `ObjMgmtRecdObjIsPlanned` |  | |  |  |
-| `ObjMgmtRecdObjRevisionLevel` |  | |  |  |
-| `ChgNmbrAlternativeDateCounter` |  | |  |  |
-| `ChangeNumberLastChgdDateTime` |  | |  |  |
-| `_ChangeMaster` | | ✓ | | |
-| `_ChangeMasterAltDate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `DocumentType` | ✓ | |  |  |  |  |
+| `DocumentInfoRecord` | ✓ | |  |  |  |  |
+| `DocumentPart` | ✓ | |  |  |  |  |
+| `DocumentVersion` | ✓ | |  |  |  |  |
+| `ChgNmbrAlternativeDateID` |  | |  |  |  |  |
+| `SAPObjectTechnicalID` |  | |  |  |  |  |
+| `ObjMgmtRecdDescription` |  | |  |  |  |  |
+| `ObjMgmtRecdItemUUID` |  | |  |  |  |  |
+| `ObjMgmtRecdLastChangedAt` |  | |  |  |  |  |
+| `ObjMgmtRecdLastChangedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdCreationDate` |  | |  |  |  |  |
+| `ObjMgmtRecdCreatedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |  |  |
+| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |  |  |
+| `ObjMgmtRecdObjIsPlanned` |  | |  |  |  |  |
+| `ObjMgmtRecdObjRevisionLevel` |  | |  |  |  |  |
+| `ChgNmbrAlternativeDateCounter` |  | |  |  |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |  |  |
+| `_ChangeMaster` | | ✓ | | | | |
+| `_ChangeMasterAltDate` | | ✓ | | | | |
 
 ## Source Code
 

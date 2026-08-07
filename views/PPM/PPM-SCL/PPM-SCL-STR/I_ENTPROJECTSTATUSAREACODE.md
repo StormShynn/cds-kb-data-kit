@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StatusArea` | ✓ | |  | `status_area_status` |
-| `StatusAreaSequence` |  | |  | `sequence` |
-| `IsOverallStatus` |  | |  | `overall_indicator` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatusArea` | ✓ | |  | `status_area_status` |  |  |
+| `StatusAreaSequence` |  | |  | `sequence` |  |  |
+| `IsOverallStatus` |  | |  | `overall_indicator` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

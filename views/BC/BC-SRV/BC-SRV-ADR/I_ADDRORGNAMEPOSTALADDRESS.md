@@ -29,73 +29,73 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |
-| `AddressIsPersonAddress` |  | |  | `pers_addr` |
-| `CorrespondenceLanguage` |  | |  | `langu` |
-| `PrfrdCommMediumType` |  | |  | `deflt_comm` |
-| `CityNumber` |  | |  | `city_code` |
-| `CityName` |  | |  | `city1` |
-| `DistrictName` |  | |  | `city2` |
-| `VillageName` |  | |  | `home_city` |
-| `PostalCode` |  | |  | `post_code1` |
-| `CompanyPostalCode` |  | |  | `post_code3` |
-| `POBox` |  | |  | `po_box` |
-| `POBoxAddrNonDeliverableReason` |  | |  | `dont_use_p` |
-| `POBoxIsWithoutNumber` |  | |  | `po_box_num` |
-| `POBoxPostalCode` |  | |  | `post_code2` |
-| `POBoxLobbyName` |  | |  | `po_box_lobby` |
-| `POBoxDeviatingCityName` |  | |  | `po_box_loc` |
-| `POBoxDeviatingCityCode` |  | |  | `city_code2` |
-| `POBoxDeviatingRegion` |  | |  | `po_box_reg` |
-| `POBoxDeviatingCountry` |  | |  | `po_box_cty` |
-| `Street` |  | |  | `streetcode` |
-| `StreetName` |  | |  | `street` |
-| `StreetAddrNonDeliverableReason` |  | |  | `dont_use_s` |
-| `StreetPrefixName1` |  | |  | `str_suppl1` |
-| `StreetPrefixName2` |  | |  | `str_suppl2` |
-| `StreetSuffixName1` |  | |  | `str_suppl3` |
-| `StreetSuffixName2` |  | |  | `location` |
-| `HouseNumber` |  | |  | `house_num1` |
-| `HouseNumberSupplementText` |  | |  | `house_num2` |
-| `Building` |  | |  | `building` |
-| `Floor` |  | |  | `floor` |
-| `RoomNumber` |  | |  | `roomnumber` |
-| `Country` |  | |  | `country` |
-| `Region` |  | |  | `region` |
-| `CareOfName` |  | |  | `name_co` |
-| `FormOfAddress` |  | |  | `title` |
-| `AddresseeName1` |  | |  | `name1` |
-| `AddresseeName2` |  | |  | `name2` |
-| `AddresseeName3` |  | |  | `name3` |
-| `AddresseeName4` |  | |  | `name4` |
-| `TaxJurisdiction` |  | |  | `taxjurcode` |
-| `TransportZone` |  | |  | `transpzone` |
-| `DeliveryServiceTypeCode` |  | |  | `deli_serv_type` |
-| `DeliveryServiceNumber` |  | |  | `deli_serv_number` |
-| `AddressTimeZone` |  | |  | `time_zone` |
-| `SecondaryRegion` |  | |  | `county_code` |
-| `SecondaryRegionName` |  | |  | `county` |
-| `TertiaryRegion` |  | |  | `township_code` |
-| `TertiaryRegionName` |  | |  | `township` |
-| `AddressSearchTerm1` |  | |  | `sort1` |
-| `AddressSearchTerm2` |  | |  | `sort2` |
-| `RegionalStructureCheckStatus` |  | |  | `chckstatus` |
-| `AddressGroup` |  | |  | `addr_group` |
-| `DistrictNumber` |  | |  | `cityp_code` |
-| `Village` |  | |  | `cityh_code` |
-| `RegionalStructureGroup` |  | |  | `regiogroup` |
-| `AddressCreatedByUser` |  | |  | `addresscreatedbyuser` |
-| `AddressCreatedOnDateTime` |  | |  | `addresscreatedondatetime` |
-| `AddressChangedByUser` |  | |  | `addresschangedbyuser` |
-| `AddressChangedOnDateTime` |  | |  | `addresschangedondatetime` |
-| `_Region` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_FormOfAddress` | | ✓ | | |
-| `_TransportationZone` | | ✓ | | |
-| `_AddressRepresentationCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  | `addrnumber` |  |  |
+| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
+| `AddressIsPersonAddress` |  | |  | `pers_addr` |  |  |
+| `CorrespondenceLanguage` |  | |  | `langu` |  |  |
+| `PrfrdCommMediumType` |  | |  | `deflt_comm` |  |  |
+| `CityNumber` |  | |  | `city_code` |  |  |
+| `CityName` |  | |  | `city1` |  |  |
+| `DistrictName` |  | |  | `city2` |  |  |
+| `VillageName` |  | |  | `home_city` |  |  |
+| `PostalCode` |  | |  | `post_code1` |  |  |
+| `CompanyPostalCode` |  | |  | `post_code3` |  |  |
+| `POBox` |  | |  | `po_box` |  |  |
+| `POBoxAddrNonDeliverableReason` |  | |  | `dont_use_p` |  |  |
+| `POBoxIsWithoutNumber` |  | |  | `po_box_num` |  |  |
+| `POBoxPostalCode` |  | |  | `post_code2` |  |  |
+| `POBoxLobbyName` |  | |  | `po_box_lobby` |  |  |
+| `POBoxDeviatingCityName` |  | |  | `po_box_loc` |  |  |
+| `POBoxDeviatingCityCode` |  | |  | `city_code2` |  |  |
+| `POBoxDeviatingRegion` |  | |  | `po_box_reg` |  |  |
+| `POBoxDeviatingCountry` |  | |  | `po_box_cty` |  |  |
+| `Street` |  | |  | `streetcode` |  |  |
+| `StreetName` |  | |  | `street` |  |  |
+| `StreetAddrNonDeliverableReason` |  | |  | `dont_use_s` |  |  |
+| `StreetPrefixName1` |  | |  | `str_suppl1` |  |  |
+| `StreetPrefixName2` |  | |  | `str_suppl2` |  |  |
+| `StreetSuffixName1` |  | |  | `str_suppl3` |  |  |
+| `StreetSuffixName2` |  | |  | `location` |  |  |
+| `HouseNumber` |  | |  | `house_num1` |  |  |
+| `HouseNumberSupplementText` |  | |  | `house_num2` |  |  |
+| `Building` |  | |  | `building` |  |  |
+| `Floor` |  | |  | `floor` |  |  |
+| `RoomNumber` |  | |  | `roomnumber` |  |  |
+| `Country` |  | |  | `country` |  |  |
+| `Region` |  | |  | `region` |  |  |
+| `CareOfName` |  | |  | `name_co` |  |  |
+| `FormOfAddress` |  | |  | `title` |  |  |
+| `AddresseeName1` |  | |  | `name1` |  |  |
+| `AddresseeName2` |  | |  | `name2` |  |  |
+| `AddresseeName3` |  | |  | `name3` |  |  |
+| `AddresseeName4` |  | |  | `name4` |  |  |
+| `TaxJurisdiction` |  | |  | `taxjurcode` |  |  |
+| `TransportZone` |  | |  | `transpzone` |  |  |
+| `DeliveryServiceTypeCode` |  | |  | `deli_serv_type` |  |  |
+| `DeliveryServiceNumber` |  | |  | `deli_serv_number` |  |  |
+| `AddressTimeZone` |  | |  | `time_zone` |  |  |
+| `SecondaryRegion` |  | |  | `county_code` |  |  |
+| `SecondaryRegionName` |  | |  | `county` |  |  |
+| `TertiaryRegion` |  | |  | `township_code` |  |  |
+| `TertiaryRegionName` |  | |  | `township` |  |  |
+| `AddressSearchTerm1` |  | |  | `sort1` |  |  |
+| `AddressSearchTerm2` |  | |  | `sort2` |  |  |
+| `RegionalStructureCheckStatus` |  | |  | `chckstatus` |  |  |
+| `AddressGroup` |  | |  | `addr_group` |  |  |
+| `DistrictNumber` |  | |  | `cityp_code` |  |  |
+| `Village` |  | |  | `cityh_code` |  |  |
+| `RegionalStructureGroup` |  | |  | `regiogroup` |  |  |
+| `AddressCreatedByUser` |  | |  | `addresscreatedbyuser` |  |  |
+| `AddressCreatedOnDateTime` |  | |  | `addresscreatedondatetime` |  |  |
+| `AddressChangedByUser` |  | |  | `addresschangedbyuser` |  |  |
+| `AddressChangedOnDateTime` |  | |  | `addresschangedondatetime` |  |  |
+| `_Region` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_FormOfAddress` | | ✓ | | | | |
+| `_TransportationZone` | | ✓ | | | | |
+| `_AddressRepresentationCode` | | ✓ | | | | |
 
 ## Associations
 

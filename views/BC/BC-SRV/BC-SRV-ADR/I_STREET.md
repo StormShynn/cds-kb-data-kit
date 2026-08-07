@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `country` |
-| `Street` | ✓ | |  | `strt_code` |
-| `CityNumber` |  | |  | `city_code` |
-| `_Country` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_PostalCity` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `country` |  |  |
+| `Street` | ✓ | |  | `strt_code` |  |  |
+| `CityNumber` |  | |  | `city_code` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_PostalCity` | | ✓ | | | | |
 
 ## Associations
 

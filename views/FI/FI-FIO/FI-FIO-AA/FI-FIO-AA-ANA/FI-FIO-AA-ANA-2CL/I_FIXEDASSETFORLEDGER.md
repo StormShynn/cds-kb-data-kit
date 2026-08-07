@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |
-| `MasterFixedAsset` | ✓ | |  | `asset_no` |
-| `FixedAsset` | ✓ | |  | `asset_subno` |
-| `Ledger` | ✓ | |  | `ledger` |
-| `AssetCapitalizationDate` |  | |  | `capitalization_date` |
-| `AssetDeactivationDate` |  | |  | `deactivation_date` |
-| `AcquisitionValueDate` |  | |  | `acquisition_date` |
-| `FirstAcquisitionFiscalYear` |  | |  | `acquisition_year` |
-| `FirstAcquisitionFiscalPeriod` |  | |  | `acquisition_period` |
-| `LastRevaluationDate` |  | |  | `last_reval_date` |
-| `_CompanyCode` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_AssetValuationForLedger` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
+| `MasterFixedAsset` | ✓ | |  | `asset_no` |  |  |
+| `FixedAsset` | ✓ | |  | `asset_subno` |  |  |
+| `Ledger` | ✓ | |  | `ledger` |  |  |
+| `AssetCapitalizationDate` |  | |  | `capitalization_date` |  |  |
+| `AssetDeactivationDate` |  | |  | `deactivation_date` |  |  |
+| `AcquisitionValueDate` |  | |  | `acquisition_date` |  |  |
+| `FirstAcquisitionFiscalYear` |  | |  | `acquisition_year` |  |  |
+| `FirstAcquisitionFiscalPeriod` |  | |  | `acquisition_period` |  |  |
+| `LastRevaluationDate` |  | |  | `last_reval_date` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_AssetValuationForLedger` | | ✓ | | | | |
 
 ## Associations
 

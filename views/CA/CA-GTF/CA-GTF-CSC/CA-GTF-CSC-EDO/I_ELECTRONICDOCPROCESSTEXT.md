@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ElectronicDocProcess` | ✓ | |  | `process` |
-| `ElectronicDocProcessText` |  | |  | `procdesc` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ElectronicDocProcess` | ✓ | |  | `process` |  |  |
+| `ElectronicDocProcessText` |  | |  | `procdesc` |  |  |
 
 ## Source Code
 

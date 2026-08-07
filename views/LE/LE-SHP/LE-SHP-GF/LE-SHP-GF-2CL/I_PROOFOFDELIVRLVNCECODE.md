@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProofOfDeliveryRelevanceCode` | ✓ | |  | `cast (left(dd07l.domvalue_l, 1 ) as podrel preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProofOfDeliveryRelevanceCode` | ✓ | |  | `cast (left(dd07l.domvalue_l, 1 ) as podrel preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

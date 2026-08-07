@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrQtnType` | ✓ | |  | `PurchasingDocumentType` |
-| `_SupplierQuotationTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrQtnType` | ✓ | |  | `PurchasingDocumentType` |  |  |
+| `_SupplierQuotationTypeText` | | ✓ | | | | |
 
 ## Associations
 

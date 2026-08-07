@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAIntcoType` | ✓ | |  | `cast( _tfk8250st.ico_type as ico_type_gfn_kk preserving type )` |
-| `CAIntcoSubtype` | ✓ | |  | `cast( _tfk8250st.ico_subtype as ico_subtype_gfn_kk preserving type )` |
-| `Language` | ✓ | | `_tfk8250st` | `langu` |
-| `CAIntcoSubtypeText` |  | |  | `cast( _tfk8250st.text as ico_subtype_txt_gfn_kk preserving type )` |
-| `_CAIntcoType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAIntcoType` | ✓ | |  | `cast( _tfk8250st.ico_type as ico_type_gfn_kk preserving type )` |  |  |
+| `CAIntcoSubtype` | ✓ | |  | `cast( _tfk8250st.ico_subtype as ico_subtype_gfn_kk preserving type )` |  |  |
+| `Language` | ✓ | | `_tfk8250st` | `langu` |  |  |
+| `CAIntcoSubtypeText` |  | |  | `cast( _tfk8250st.text as ico_subtype_txt_gfn_kk preserving type )` |  |  |
+| `_CAIntcoType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

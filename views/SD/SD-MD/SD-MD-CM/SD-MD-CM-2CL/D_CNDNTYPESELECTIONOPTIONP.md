@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PricingConditionTypeRangeSign` |  | |  | `tvarv_sign` |
-| `PrcgConditionTypeRangeOption` |  | |  | `tvarv_opti` |
-| `PricingConditionTypeRangeLow` |  | |  | `kschl` |
-| `PricingConditionTypeRangeHigh` |  | |  | `kschl` |
-| `_ConditionRecordCriteriaItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingConditionTypeRangeSign` |  | |  | `tvarv_sign` |  |  |
+| `PrcgConditionTypeRangeOption` |  | |  | `tvarv_opti` |  |  |
+| `PricingConditionTypeRangeLow` |  | |  | `kschl` |  |  |
+| `PricingConditionTypeRangeHigh` |  | |  | `kschl` |  |  |
+| `_ConditionRecordCriteriaItem` | | ✓ | | | | |
 
 ## Source Code
 

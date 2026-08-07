@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FuncLocationStructure` | ✓ | |  | `tplkz` |
-| `Language` | ✓ | |  | `spras` |
-| `FuncLocationStructureDesc` |  | |  | `tplxt` |
-| `IdentifyingLabel` |  | |  | `level_kz_desc` |
-| `SecondIdentifyingLabel` |  | |  | `level_kz2_desc` |
-| `_FuncLocationStructure` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FuncLocationStructure` | ✓ | |  | `tplkz` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FuncLocationStructureDesc` |  | |  | `tplxt` |  |  |
+| `IdentifyingLabel` |  | |  | `level_kz_desc` |  |  |
+| `SecondIdentifyingLabel` |  | |  | `level_kz2_desc` |  |  |
+| `_FuncLocationStructure` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

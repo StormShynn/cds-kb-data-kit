@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `RECashFlowOrigin` | ✓ | |  | `cast( dd07t.domvalue_l as reiscforigin )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `RECashFlowOriginName` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_RECashFlowOrigin` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `RECashFlowOrigin` | ✓ | |  | `cast( dd07t.domvalue_l as reiscforigin )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `RECashFlowOriginName` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_RECashFlowOrigin` | | ✓ | | | | |
 
 ## Associations
 

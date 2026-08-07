@@ -28,90 +28,90 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FreightCostAllocationDocument` |  | |  | `, useAsTemplate: true }] } key FreightCostAllocationDocument` |
-| `FrtCostAllocDocumentItem` |  | |  | `, useAsTemplate: true }] } key FrtCostAllocDocumentItem` |
-| `FrtCostAllocDocCurrency` |  | |  | `, useAsTemplate: true }] } FrtCostAllocDocCurrency` |
-| `PricingDocument` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `Product` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `SettlmtQuantity` |  | |  |  |
-| `SettlmtQuantityUnit` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `NetPriceQuantityUnit` |  | |  |  |
-| `SettlmtToBaseQuantityNmrtr` |  | |  |  |
-| `SettlmtToBaseQuantityDnmntr` |  | |  |  |
-| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |
-| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `FrtCostAllocItemGrossAmount` |  | |  |  |
-| `FrtCostAllocItemNetAmount` |  | |  |  |
-| `FrtCostAllocSubtotal1Amount` |  | |  |  |
-| `FrtCostAllocSubtotal2Amount` |  | |  |  |
-| `FrtCostAllocSubtotal3Amount` |  | |  |  |
-| `FrtCostAllocSubtotal4Amount` |  | |  |  |
-| `FrtCostAllocSubtotal5Amount` |  | |  |  |
-| `FrtCostAllocSubtotal6Amount` |  | |  |  |
-| `FrtCostAllocEffctvItemAmount` |  | |  |  |
-| `FrtCostAllocItmStstclPrpty` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `SettlmtSourceDoc` |  | |  |  |
-| `SettlmtSourceDocItem` |  | |  |  |
-| `SettlmtSourceDocCat` |  | |  |  |
-| `SettlmtSourceDocFiscalYear` |  | |  |  |
-| `FrtCostAllocItmActivityReason` |  | |  |  |
-| `BusinessArea` |  | |  | `, useAsTemplate: true }] } BusinessArea` |
-| `ControllingArea` |  | |  | `, useAsTemplate: true }] } ControllingArea` |
-| `CostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `FreightCostAllocationOrder` |  | |  |  |
-| `PrcDetnIsIncmplt` |  | |  |  |
-| `SettlmtPrecdgDoc` |  | |  |  |
-| `SettlmtPrecdgDocItem` |  | |  |  |
-| `SettlmtPrecdgDocCat` |  | |  |  |
-| `SettlmtPrecdgDocFiscalYear` |  | |  |  |
-| `FrtCostAllocDocItmCat` |  | |  |  |
-| `SettlmtItemReltdPurgDoc` |  | |  |  |
-| `SettlmtItemReltdPurgDocItem` |  | |  |  |
-| `SettlmtItemReltdBillgDoc` |  | |  |  |
-| `SettlmtItemReltdBillgDocItem` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `CompanyCode` |  | |  | `, useAsTemplate: true }] } CompanyCode` |
-| `GLAccount` |  | |  |  |
-| `FiscalYear` |  | |  |  |
-| `FrtCostAllocRefDocType` |  | |  |  |
-| `FrtCostAllocRefDoc` |  | |  |  |
-| `FrtCostAllocRefDocFsclYr` |  | |  |  |
-| `FrtCostAllocRefDocLgclSyst` |  | |  |  |
-| `FrtCostAllocRefDocCompanyCode` |  | |  |  |
-| `FrtCostAllocRefDocItem` |  | |  |  |
-| `FrtCostAllocRefDocCat` |  | |  |  |
-| `FrtCostAllocAddlRefDocType` |  | |  |  |
-| `FrtCostAllocAddlRefDoc` |  | |  |  |
-| `FrtCostAllocAddlRefDocFsclYr` |  | |  |  |
-| `FrtCostAllocAddlRefLgclSyst` |  | |  |  |
-| `FrtCostAllocAddlRefDocItem` |  | |  |  |
-| `FrtCostAllocAddlRefDocCat` |  | |  |  |
-| `ProductHierarchy` |  | |  |  |
-| `SalesSpcfcProductGroup1` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup1` |
-| `SalesSpcfcProductGroup2` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup2` |
-| `SalesSpcfcProductGroup3` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup3` |
-| `SalesSpcfcProductGroup4` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup4` |
-| `SalesSpcfcProductGroup5` |  | |  | `, useAsTemplate: true }] } SalesSpcfcProductGroup5` |
-| `_FrtCostAllocDoc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FreightCostAllocationDocument` | ✓ | |  |  |  |  |
+| `FrtCostAllocDocumentItem` | ✓ | |  |  |  |  |
+| `FrtCostAllocDocCurrency` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `SettlmtQuantity` |  | |  |  |  |  |
+| `SettlmtQuantityUnit` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |  |  |
+| `SettlmtToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `SettlmtToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |  |  |
+| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `FrtCostAllocItemGrossAmount` |  | |  |  |  |  |
+| `FrtCostAllocItemNetAmount` |  | |  |  |  |  |
+| `FrtCostAllocSubtotal1Amount` |  | |  |  |  |  |
+| `FrtCostAllocSubtotal2Amount` |  | |  |  |  |  |
+| `FrtCostAllocSubtotal3Amount` |  | |  |  |  |  |
+| `FrtCostAllocSubtotal4Amount` |  | |  |  |  |  |
+| `FrtCostAllocSubtotal5Amount` |  | |  |  |  |  |
+| `FrtCostAllocSubtotal6Amount` |  | |  |  |  |  |
+| `FrtCostAllocEffctvItemAmount` |  | |  |  |  |  |
+| `FrtCostAllocItmStstclPrpty` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `SettlmtSourceDoc` |  | |  |  |  |  |
+| `SettlmtSourceDocItem` |  | |  |  |  |  |
+| `SettlmtSourceDocCat` |  | |  |  |  |  |
+| `SettlmtSourceDocFiscalYear` |  | |  |  |  |  |
+| `FrtCostAllocItmActivityReason` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `FreightCostAllocationOrder` |  | |  |  |  |  |
+| `PrcDetnIsIncmplt` |  | |  |  |  |  |
+| `SettlmtPrecdgDoc` |  | |  |  |  |  |
+| `SettlmtPrecdgDocItem` |  | |  |  |  |  |
+| `SettlmtPrecdgDocCat` |  | |  |  |  |  |
+| `SettlmtPrecdgDocFiscalYear` |  | |  |  |  |  |
+| `FrtCostAllocDocItmCat` |  | |  |  |  |  |
+| `SettlmtItemReltdPurgDoc` |  | |  |  |  |  |
+| `SettlmtItemReltdPurgDocItem` |  | |  |  |  |  |
+| `SettlmtItemReltdBillgDoc` |  | |  |  |  |  |
+| `SettlmtItemReltdBillgDocItem` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `FrtCostAllocRefDocType` |  | |  |  |  |  |
+| `FrtCostAllocRefDoc` |  | |  |  |  |  |
+| `FrtCostAllocRefDocFsclYr` |  | |  |  |  |  |
+| `FrtCostAllocRefDocLgclSyst` |  | |  |  |  |  |
+| `FrtCostAllocRefDocCompanyCode` |  | |  |  |  |  |
+| `FrtCostAllocRefDocItem` |  | |  |  |  |  |
+| `FrtCostAllocRefDocCat` |  | |  |  |  |  |
+| `FrtCostAllocAddlRefDocType` |  | |  |  |  |  |
+| `FrtCostAllocAddlRefDoc` |  | |  |  |  |  |
+| `FrtCostAllocAddlRefDocFsclYr` |  | |  |  |  |  |
+| `FrtCostAllocAddlRefLgclSyst` |  | |  |  |  |  |
+| `FrtCostAllocAddlRefDocItem` |  | |  |  |  |  |
+| `FrtCostAllocAddlRefDocCat` |  | |  |  |  |  |
+| `ProductHierarchy` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup1` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup2` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup3` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup4` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup5` |  | |  |  |  |  |
+| `_FrtCostAllocDoc` | | ✓ | | | | |
 
 ## Source Code
 

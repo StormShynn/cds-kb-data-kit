@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PartnerCounter` | ✓ | |  | `parza` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PartnerCounter` | ✓ | |  | `parza` |  |  |
 
 ## Source Code
 

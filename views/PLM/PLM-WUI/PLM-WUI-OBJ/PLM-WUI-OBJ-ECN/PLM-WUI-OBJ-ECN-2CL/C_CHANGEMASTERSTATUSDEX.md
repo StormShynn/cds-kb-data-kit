@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumberStatus` | ✓ | |  |  |
-| `ChangeIsAllowed` |  | |  |  |
-| `DateChangeIsAllowed` |  | |  |  |
-| `DistributionIsLocked` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberStatus` | ✓ | |  |  |  |  |
+| `ChangeIsAllowed` |  | |  |  |  |  |
+| `DateChangeIsAllowed` |  | |  |  |  |  |
+| `DistributionIsLocked` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

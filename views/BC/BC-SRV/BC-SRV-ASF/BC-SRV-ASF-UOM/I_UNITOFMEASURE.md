@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UnitOfMeasure` | ✓ | |  | `cast ( msehi as msehiunit preserving type )` |
-| `UnitOfMeasureSAPCode` |  | |  | `cast ( msehi as meinsint )` |
-| `UnitOfMeasureISOCode` |  | |  | `isocode` |
-| `IsPrimaryUnitForISOCode` |  | |  | `primary` |
-| `UnitOfMeasureNumberOfDecimals` |  | |  | `andec` |
-| `UnitOfMeasureIsCommercial` |  | |  | `kzkeh` |
-| `UnitOfMeasureDimension` |  | |  | `dimid` |
-| `SIUnitCnvrsnRateNumerator` |  | |  | `zaehl` |
-| `SIUnitCnvrsnRateDenominator` |  | |  | `nennr` |
-| `SIUnitCnvrsnRateExponent` |  | |  | `exp10` |
-| `SIUnitCnvrsnAdditiveValue` |  | |  | `addko` |
-| `UnitOfMeasureDspExponent` |  | |  | `expon` |
-| `UnitOfMeasureDspNmbrOfDcmls` |  | |  | `decan` |
-| `UnitOfMeasureTemperature` |  | |  | `temp_value` |
-| `UnitOfMeasureTemperatureUnit` |  | |  | `temp_unit` |
-| `UnitOfMeasurePressure` |  | |  | `press_val` |
-| `UnitOfMeasurePressureUnit` |  | |  | `press_unit` |
-| `UnitOfMeasure_E` |  | |  | `_Text[ 1: Language = $session.system_language ].UnitOfMeasure_E` |
-| `_Text` | | ✓ | | |
-| `_Dimension` | | ✓ | | |
-| `_DimensionText` | | ✓ | | |
-| `_ISOCode` | | ✓ | | |
-| `_ISOCodeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UnitOfMeasure` | ✓ | |  | `cast ( msehi as msehiunit preserving type )` |  |  |
+| `UnitOfMeasureSAPCode` |  | |  | `cast ( msehi as meinsint )` |  |  |
+| `UnitOfMeasureISOCode` |  | |  | `isocode` |  |  |
+| `IsPrimaryUnitForISOCode` |  | |  | `primary` |  |  |
+| `UnitOfMeasureNumberOfDecimals` |  | |  | `andec` |  |  |
+| `UnitOfMeasureIsCommercial` |  | |  | `kzkeh` |  |  |
+| `UnitOfMeasureDimension` |  | |  | `dimid` |  |  |
+| `SIUnitCnvrsnRateNumerator` |  | |  | `zaehl` |  |  |
+| `SIUnitCnvrsnRateDenominator` |  | |  | `nennr` |  |  |
+| `SIUnitCnvrsnRateExponent` |  | |  | `exp10` |  |  |
+| `SIUnitCnvrsnAdditiveValue` |  | |  | `addko` |  |  |
+| `UnitOfMeasureDspExponent` |  | |  | `expon` |  |  |
+| `UnitOfMeasureDspNmbrOfDcmls` |  | |  | `decan` |  |  |
+| `UnitOfMeasureTemperature` |  | |  | `temp_value` |  |  |
+| `UnitOfMeasureTemperatureUnit` |  | |  | `temp_unit` |  |  |
+| `UnitOfMeasurePressure` |  | |  | `press_val` |  |  |
+| `UnitOfMeasurePressureUnit` |  | |  | `press_unit` |  |  |
+| `UnitOfMeasure_E` |  | |  | `_Text[ 1: Language = $session.system_language ].UnitOfMeasure_E` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Dimension` | | ✓ | | | | |
+| `_DimensionText` | | ✓ | | | | |
+| `_ISOCode` | | ✓ | | | | |
+| `_ISOCodeText` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SecurityClass` | ✓ | |  | `cast(ranl as ftr_gen_security_class preserving type)` |
-| `SecurityClassStockCategory` |  | |  | `sakar` |
-| `SecurityClassFundType` |  | |  | `sfoty` |
-| `SecurityClNmbrOfIssuedStocks` |  | |  | `aaaaktie` |
-| `SecurityClassNomPerStockValue` |  | |  | `kbnewe` |
-| `SecurityClassIssueStartDate` |  | |  | `debeg` |
-| `_SecurityClass` | | ✓ | | |
-| `_SecurityClassFundType` | | ✓ | | |
-| `_SecurityClassStockCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityClass` | ✓ | |  | `cast(ranl as ftr_gen_security_class preserving type)` |  |  |
+| `SecurityClassStockCategory` |  | |  | `sakar` |  |  |
+| `SecurityClassFundType` |  | |  | `sfoty` |  |  |
+| `SecurityClNmbrOfIssuedStocks` |  | |  | `aaaaktie` |  |  |
+| `SecurityClassNomPerStockValue` |  | |  | `kbnewe` |  |  |
+| `SecurityClassIssueStartDate` |  | |  | `debeg` |  |  |
+| `_SecurityClass` | | ✓ | | | | |
+| `_SecurityClassFundType` | | ✓ | | | | |
+| `_SecurityClassStockCategory` | | ✓ | | | | |
 
 ## Associations
 

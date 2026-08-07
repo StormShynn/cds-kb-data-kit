@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `BudgetScenario` | ✓ | |  | `cast( dd07t.domvalue_l as psm_s4c_budget_scenario )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `BudgetScenarioText` |  | |  | `cast ( dd07t.ddtext as psm_s4c_budget_scenario_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PubSecBudgetScenario` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `BudgetScenario` | ✓ | |  | `cast( dd07t.domvalue_l as psm_s4c_budget_scenario )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `BudgetScenarioText` |  | |  | `cast ( dd07t.ddtext as psm_s4c_budget_scenario_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PubSecBudgetScenario` | | ✓ | | | | |
 
 ## Associations
 

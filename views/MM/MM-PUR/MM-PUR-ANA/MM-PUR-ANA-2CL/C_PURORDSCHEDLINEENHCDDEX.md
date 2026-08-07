@@ -29,118 +29,118 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `ProcurementHubSourceSystem` | ✓ | |  |  |
-| `ScheduleLineUniqueID` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurgDocHdrCompanyCode` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchaseOrderItemText` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `AnalyticalReportingCurrency` |  | |  |  |
-| `AnalyticalReportingCurrency2` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AnlytlCrcyExchangeRateStatus` |  | |  |  |
-| `NetPriceInReportingCurrency` |  | |  |  |
-| `NetPriceInReportingCurrency2` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceInCompanyCodeCrcy` |  | |  |  |
-| `NetAmountInReportingCurrency` |  | |  |  |
-| `NetAmountInReportingCurrency2` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `NetAmountInCoCodeCurrency` |  | |  |  |
-| `OpenAmountInReportingCurrency` |  | |  |  |
-| `OpenAmountInReportingCurrency2` |  | |  |  |
-| `OpenAmountInDocumentCurrency` |  | |  |  |
-| `OpenAmountInCompanyCodeCrcy` |  | |  |  |
-| `ScheduleLineOpenQuantity` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `IsCompletelyDelivered` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `PurgDocumentItemDeletionCode` |  | |  |  |
-| `PurchasingCompletenessStatus` |  | |  |  |
-| `PurgDocSchdLnHasNextDelivery` |  | |  |  |
-| `PurchaseOrderCategory` |  | |  |  |
-| `PurchaseOrderType` |  | |  |  |
-| `PurchaseOrderItemCategory` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `PurchasingDocumentOrigin` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `PurchasingProcessingStatus` |  | |  |  |
-| `PurchaseOrderDate` |  | |  |  |
-| `PurchasingDocumentIsAged` |  | |  |  |
-| `ProductTypeCode` |  | |  |  |
-| `ReleaseIsNotCompleted` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `OrderQuantity` |  | |  |  |
-| `PurOrdItmFirstGRPostingDate` |  | |  |  |
-| `PurOrdItmFinalGRPostingDate` |  | |  |  |
-| `OriglPurOrdItm1stGRPostgDte` |  | |  |  |
-| `OriglPurOrdItmFnlGRPostgDte` |  | |  |  |
-| `POItmFinalScheduleLineIsActive` |  | |  |  |
-| `POPrevSchdLnTotalExpectedQty` |  | |  |  |
-| `POScheduleLineTotalExpectedQty` |  | |  |  |
-| `TimeVarianceInDays` |  | |  |  |
-| `TimeVarianceInPct` |  | |  |  |
-| `TimeVarianceInPctByDelivDate` |  | |  |  |
-| `TimeVarianceScore` |  | |  |  |
-| `TimeVarianceScoreByDelivDate` |  | |  |  |
-| `ScheduleLineDeliveryDate` |  | |  |  |
-| `SchedLineStscDeliveryDate` |  | |  |  |
-| `ScheduleLineOrderDate` |  | |  |  |
-| `OriglPOSchdLnDelivDte` |  | |  |  |
-| `OriglPOSchedLineStstclDelivDte` |  | |  |  |
-| `DelivDateCategory` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `PrevDelivQtyOfScheduleLine` |  | |  |  |
-| `GoodsReceiptQuantity` |  | |  |  |
-| `ScheduleLineIssuedQuantity` |  | |  |  |
-| `ScheduleLineDeliveryTime` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `SourceOfCreation` |  | |  |  |
-| `PurchasingSchdLnNrOfReminders` |  | |  |  |
-| `SchedulingAgreementReleaseType` |  | |  |  |
-| `ScheduleLineCommittedQuantity` |  | |  |  |
-| `ProductAvailabilityDate` |  | |  |  |
-| `ProductAvailabilityTime` |  | |  |  |
-| `LoadingDate` |  | |  |  |
-| `LoadingTime` |  | |  |  |
-| `TransportationPlanningDate` |  | |  |  |
-| `TransportationPlanningTime` |  | |  |  |
-| `GoodsIssueDate` |  | |  |  |
-| `GoodsIssueTime` |  | |  |  |
-| `STOLatestPossibleGRDate` |  | |  |  |
-| `STOLatestPossibleGRTime` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `MultipleAcctAssgmtDistribution` |  | |  |  |
-| `IsReturnsItem` |  | |  |  |
-| `SupplierConfirmationControlKey` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
-| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `MaterialDocumentYear` |  | |  |  |
-| `MaterialDocument` |  | |  |  |
-| `MaterialDocumentItem` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PurOrdItmAnlytsIndIsActv` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `ProcurementHubSourceSystem` | ✓ | |  |  |  |  |
+| `ScheduleLineUniqueID` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurgDocHdrCompanyCode` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchaseOrderItemText` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `AnalyticalReportingCurrency` |  | |  |  |  |  |
+| `AnalyticalReportingCurrency2` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AnlytlCrcyExchangeRateStatus` |  | |  |  |  |  |
+| `NetPriceInReportingCurrency` |  | |  |  |  |  |
+| `NetPriceInReportingCurrency2` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceInCompanyCodeCrcy` |  | |  |  |  |  |
+| `NetAmountInReportingCurrency` |  | |  |  |  |  |
+| `NetAmountInReportingCurrency2` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `NetAmountInCoCodeCurrency` |  | |  |  |  |  |
+| `OpenAmountInReportingCurrency` |  | |  |  |  |  |
+| `OpenAmountInReportingCurrency2` |  | |  |  |  |  |
+| `OpenAmountInDocumentCurrency` |  | |  |  |  |  |
+| `OpenAmountInCompanyCodeCrcy` |  | |  |  |  |  |
+| `ScheduleLineOpenQuantity` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `IsCompletelyDelivered` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `PurgDocumentItemDeletionCode` |  | |  |  |  |  |
+| `PurchasingCompletenessStatus` |  | |  |  |  |  |
+| `PurgDocSchdLnHasNextDelivery` |  | |  |  |  |  |
+| `PurchaseOrderCategory` |  | |  |  |  |  |
+| `PurchaseOrderType` |  | |  |  |  |  |
+| `PurchaseOrderItemCategory` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `PurchasingDocumentIsAged` |  | |  |  |  |  |
+| `ProductTypeCode` |  | |  |  |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `OrderQuantity` |  | |  |  |  |  |
+| `PurOrdItmFirstGRPostingDate` |  | |  |  |  |  |
+| `PurOrdItmFinalGRPostingDate` |  | |  |  |  |  |
+| `OriglPurOrdItm1stGRPostgDte` |  | |  |  |  |  |
+| `OriglPurOrdItmFnlGRPostgDte` |  | |  |  |  |  |
+| `POItmFinalScheduleLineIsActive` |  | |  |  |  |  |
+| `POPrevSchdLnTotalExpectedQty` |  | |  |  |  |  |
+| `POScheduleLineTotalExpectedQty` |  | |  |  |  |  |
+| `TimeVarianceInDays` |  | |  |  |  |  |
+| `TimeVarianceInPct` |  | |  |  |  |  |
+| `TimeVarianceInPctByDelivDate` |  | |  |  |  |  |
+| `TimeVarianceScore` |  | |  |  |  |  |
+| `TimeVarianceScoreByDelivDate` |  | |  |  |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |  |  |
+| `ScheduleLineOrderDate` |  | |  |  |  |  |
+| `OriglPOSchdLnDelivDte` |  | |  |  |  |  |
+| `OriglPOSchedLineStstclDelivDte` |  | |  |  |  |  |
+| `DelivDateCategory` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `PrevDelivQtyOfScheduleLine` |  | |  |  |  |  |
+| `GoodsReceiptQuantity` |  | |  |  |  |  |
+| `ScheduleLineIssuedQuantity` |  | |  |  |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `SourceOfCreation` |  | |  |  |  |  |
+| `PurchasingSchdLnNrOfReminders` |  | |  |  |  |  |
+| `SchedulingAgreementReleaseType` |  | |  |  |  |  |
+| `ScheduleLineCommittedQuantity` |  | |  |  |  |  |
+| `ProductAvailabilityDate` |  | |  |  |  |  |
+| `ProductAvailabilityTime` |  | |  |  |  |  |
+| `LoadingDate` |  | |  |  |  |  |
+| `LoadingTime` |  | |  |  |  |  |
+| `TransportationPlanningDate` |  | |  |  |  |  |
+| `TransportationPlanningTime` |  | |  |  |  |  |
+| `GoodsIssueDate` |  | |  |  |  |  |
+| `GoodsIssueTime` |  | |  |  |  |  |
+| `STOLatestPossibleGRDate` |  | |  |  |  |  |
+| `STOLatestPossibleGRTime` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |  |  |
+| `IsReturnsItem` |  | |  |  |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `MaterialDocumentYear` |  | |  |  |  |  |
+| `MaterialDocument` |  | |  |  |  |  |
+| `MaterialDocumentItem` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PurOrdItmAnlytsIndIsActv` |  | |  |  |  |  |
 
 ## Source Code
 

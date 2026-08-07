@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportZone` | ✓ | |  | `zone1` |
-| `CountryCode` | ✓ | |  | `land1` |
-| `_Text` | | ✓ | | |
-| `_Country` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportZone` | ✓ | |  | `zone1` |  |  |
+| `CountryCode` | ✓ | |  | `land1` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
 
 ## Associations
 

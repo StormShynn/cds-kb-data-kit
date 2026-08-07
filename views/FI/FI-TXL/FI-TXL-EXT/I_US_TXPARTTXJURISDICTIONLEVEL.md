@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `US_TaxPartnerTaxDocument` | ✓ | |  | `docnr` |
-| `US_TaxPartnerTaxDocumentItem` | ✓ | |  | `itemnr` |
-| `TaxJurisdictionLevel` | ✓ | |  | `cast(etxdcj.txjlv as txjcd_level preserving type)` |
-| `US_TaxState` |  | |  | `cast(etxdcj.tax_state as fis_externaltaxstate preserving type)` |
-| `UnitedStatesTaxSourcing` |  | |  | `cast(etxdcj.sourcing as fis_etxdc_sourcing preserving type)` |
-| `DebitCreditCode` |  | |  | `cast(etxdcj.gl_shkzg as fis_shkzg preserving type)` |
-| `TaxJurisdictionText` |  | |  | `cast(etxjcd.txjlvdesc as fot_txjcd_des preserving type)` |
-| `UserInputTaxRate` |  | |  | `cast(division(etxdcj.gl_taxpct,10,3)as fis_externaltgltaxrate)` |
-| `TaxAmountInCoCodeCrcy` |  | |  | `} cast(etxdcj.gl_taxamt as fis_mwsts preserving type)` |
-| `TaxBaseAmountInCoCodeCrcy` |  | |  | `} cast(etxdcj.gl_taxbas as hwbas_shl preserving type)` |
-| `TaxAmountInTransCrcy` |  | |  | `} cast(etxdcj.taxamt as wmwst_shl preserving type)` |
-| `TaxBaseAmountInTransCrcy` |  | |  | `} cast(etxdcj.taxbas as fwbas_shl preserving type)` |
-| `TaxRate` |  | |  | `cast(division(etxdcj.taxpct,10,3)as fis_externaltaxtaxrate)` |
-| `TaxJurisdiction` |  | |  | `cast(etxdcj.txjcd as fis_txjcd preserving type)` |
-| `GLAccount` |  | |  | `cast(etxdcj.hkont as fis_racct preserving type)` |
-| `TaxExemptionAmount` |  | |  | `} cast(etxdcj.examt as idpt_a03amount preserving type)` |
-| `US_JxTxExtExmpRsnCode` |  | |  | `cast(etxdcj.excode as exdetcode preserving type)` |
-| `CompanyCodeCurrency` |  | | `_TaxDoc` | `CompanyCodeCurrency` |
-| `TransactionCurrency` |  | | `_TaxDoc` | `TransactionCurrency` |
-| `CompanyCode` |  | | `_TaxDoc` | `CompanyCode` |
-| `_TaxDoc` | | ✓ | | |
-| `_TaxDocItem` | | ✓ | | |
-| `_GLAccount` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_State` | | ✓ | | |
-| `_Sourcing` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `US_TaxPartnerTaxDocument` | ✓ | |  | `docnr` |  |  |
+| `US_TaxPartnerTaxDocumentItem` | ✓ | |  | `itemnr` |  |  |
+| `TaxJurisdictionLevel` | ✓ | |  | `cast(etxdcj.txjlv as txjcd_level preserving type)` |  |  |
+| `US_TaxState` |  | |  | `cast(etxdcj.tax_state as fis_externaltaxstate preserving type)` |  |  |
+| `UnitedStatesTaxSourcing` |  | |  | `cast(etxdcj.sourcing as fis_etxdc_sourcing preserving type)` |  |  |
+| `DebitCreditCode` |  | |  | `cast(etxdcj.gl_shkzg as fis_shkzg preserving type)` |  |  |
+| `TaxJurisdictionText` |  | |  | `cast(etxjcd.txjlvdesc as fot_txjcd_des preserving type)` |  |  |
+| `UserInputTaxRate` |  | |  | `cast(division(etxdcj.gl_taxpct,10,3)as fis_externaltgltaxrate)` |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  | `cast(etxdcj.gl_taxamt as fis_mwsts preserving type)` |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `cast(etxdcj.gl_taxbas as hwbas_shl preserving type)` |  |  |
+| `TaxAmountInTransCrcy` |  | |  | `cast(etxdcj.taxamt as wmwst_shl preserving type)` |  |  |
+| `TaxBaseAmountInTransCrcy` |  | |  | `cast(etxdcj.taxbas as fwbas_shl preserving type)` |  |  |
+| `TaxRate` |  | |  | `cast(division(etxdcj.taxpct,10,3)as fis_externaltaxtaxrate)` |  |  |
+| `TaxJurisdiction` |  | |  | `cast(etxdcj.txjcd as fis_txjcd preserving type)` |  |  |
+| `GLAccount` |  | |  | `cast(etxdcj.hkont as fis_racct preserving type)` |  |  |
+| `TaxExemptionAmount` |  | |  | `cast(etxdcj.examt as idpt_a03amount preserving type)` |  |  |
+| `US_JxTxExtExmpRsnCode` |  | |  | `cast(etxdcj.excode as exdetcode preserving type)` |  |  |
+| `CompanyCodeCurrency` |  | | `_TaxDoc` | `CompanyCodeCurrency` |  |  |
+| `TransactionCurrency` |  | | `_TaxDoc` | `TransactionCurrency` |  |  |
+| `CompanyCode` |  | | `_TaxDoc` | `CompanyCode` |  |  |
+| `_TaxDoc` | | ✓ | | | | |
+| `_TaxDocItem` | | ✓ | | | | |
+| `_GLAccount` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_State` | | ✓ | | | | |
+| `_Sourcing` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
 
 ## Associations
 

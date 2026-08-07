@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocumentItemType` | ✓ | |  | `substring(dd07l.domvalue_l, 1, 1)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocumentItemType` | ✓ | |  | `substring(dd07l.domvalue_l, 1, 1)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

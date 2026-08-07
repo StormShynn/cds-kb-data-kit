@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `BusinessPlace` | ✓ | |  |  |
-| `BusinessPlaceDescription` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `BusinessPlace` | ✓ | |  |  |  |  |
+| `BusinessPlaceDescription` |  | |  |  |  |  |
 
 ## Source Code
 

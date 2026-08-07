@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShiftGrouping` | ✓ | |  | `schgrup` |
-| `WorkBreakSchedule` | ✓ | |  | `paplan` |
-| `WorkBreakNumber` | ✓ | |  | `paunr` |
-| `WorkBreakStartTime` |  | |  | `paubeg` |
-| `WorkBreakEndTime` |  | |  | `pauend` |
-| `DurnUntilWorkBreakInHours` |  | |  | `stdaz` |
-| `BreakDurationInSeconds` |  | |  | `padauer` |
-| `_ShiftGrouping` | | ✓ | | |
-| `_WorkBreakSchedule` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShiftGrouping` | ✓ | |  | `schgrup` |  |  |
+| `WorkBreakSchedule` | ✓ | |  | `paplan` |  |  |
+| `WorkBreakNumber` | ✓ | |  | `paunr` |  |  |
+| `WorkBreakStartTime` |  | |  | `paubeg` |  |  |
+| `WorkBreakEndTime` |  | |  | `pauend` |  |  |
+| `DurnUntilWorkBreakInHours` |  | |  | `stdaz` |  |  |
+| `BreakDurationInSeconds` |  | |  | `padauer` |  |  |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_WorkBreakSchedule` | | ✓ | | | | |
 
 ## Associations
 

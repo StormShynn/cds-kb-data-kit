@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `mmiv_rap_action_result_ok` |  | |  | `key SupplierInvoiceIsSimulated : mmiv_rap_action_result_ok` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `mmiv_rap_action_result_ok` |  | |  | `key SupplierInvoiceIsSimulated : mmiv_rap_action_result_ok` |  |  |
 
 ## Source Code
 

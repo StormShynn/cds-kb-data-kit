@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ValuationClass` | ✓ | |  | `bklas` |
-| `AcctCategoryRef` |  | |  | `kkref` |
-| `ProductValuationClassOID` |  | |  | `case when I_MdiOidConfiguration.Context is initial or I_MdiOidConfiguration.ComposeOid is initial then cast( t025.bklas as valuationclass_oid ) when I_MdiOidConfiguration.Context is not initial and I_MdiOidConfiguration.ComposeOid is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), t025.bklas ) as valuationclass_oid ) end` |
-| `_ValuationClassText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationClass` | ✓ | |  | `bklas` |  |  |
+| `AcctCategoryRef` |  | |  | `kkref` |  |  |
+| `ProductValuationClassOID` |  | |  | `case when I_MdiOidConfiguration.Context is initial or I_MdiOidConfiguration.ComposeOid is initial then cast( t025.bklas as valuationclass_oid ) when I_MdiOidConfiguration.Context is not initial and I_MdiOidConfiguration.ComposeOid is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), t025.bklas ) as valuationclass_oid ) end` |  |  |
+| `_ValuationClassText` | | ✓ | | | | |
 
 ## Associations
 

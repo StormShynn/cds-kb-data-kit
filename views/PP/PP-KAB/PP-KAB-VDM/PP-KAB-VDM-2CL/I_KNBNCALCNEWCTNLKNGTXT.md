@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KnbnCalcNewCtnLkng` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as nlock)` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `KnbnCalcNewCtnLkngName` |  | |  | `cast(ddtext as vdm_newctnlock_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KnbnCalcNewCtnLkng` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KnbnCalcNewCtnLkng` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as nlock)` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `KnbnCalcNewCtnLkngName` |  | |  | `cast(ddtext as vdm_newctnlock_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KnbnCalcNewCtnLkng` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

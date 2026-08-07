@@ -35,14 +35,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `TaxCalculationProcedure` | ✓ | |  | `kalsm` |
-| `TaxCode` | ✓ | |  | `mwskz` |
-| `BillingDocumentType` | ✓ | |  | `fkart` |
-| `TaxCodeDescription` |  | |  | `reason_text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TaxCalculationProcedure` | ✓ | |  | `kalsm` |  |  |
+| `TaxCode` | ✓ | |  | `mwskz` |  |  |
+| `BillingDocumentType` | ✓ | |  | `fkart` |  |  |
+| `TaxCodeDescription` |  | |  | `reason_text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

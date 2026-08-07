@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGDataQualityCharacteristic` | ✓ | | `_Source` | `GHGDataQualityCharacteristic` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGDataQualityCharacteristic` | ✓ | | `_Source` | `GHGDataQualityCharacteristic` |  |  |
 
 ## Source Code
 

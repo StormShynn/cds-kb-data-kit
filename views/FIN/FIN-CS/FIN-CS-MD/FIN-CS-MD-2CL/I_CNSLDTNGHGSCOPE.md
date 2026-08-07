@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGScope` | ✓ | |  | `cast( _Source.GHGScope as fincs_ghgscope preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGScope` | ✓ | |  | `cast( _Source.GHGScope as fincs_ghgscope preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

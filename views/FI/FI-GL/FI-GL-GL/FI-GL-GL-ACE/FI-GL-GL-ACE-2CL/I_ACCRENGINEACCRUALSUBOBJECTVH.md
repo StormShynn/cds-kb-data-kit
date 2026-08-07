@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccrualEngineAccrualObjectType` | ✓ | |  | `comp` |
-| `AccrualObjectLogicalSystem` | ✓ | |  | `logsys` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `AccrualObject` | ✓ | |  | `ref_key` |
-| `AccrualSubobject` | ✓ | |  | `ref_subkey` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccrualEngineAccrualObjectType` | ✓ | |  | `comp` |  |  |
+| `AccrualObjectLogicalSystem` | ✓ | |  | `logsys` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `AccrualObject` | ✓ | |  | `ref_key` |  |  |
+| `AccrualSubobject` | ✓ | |  | `ref_subkey` |  |  |
 
 ## Source Code
 

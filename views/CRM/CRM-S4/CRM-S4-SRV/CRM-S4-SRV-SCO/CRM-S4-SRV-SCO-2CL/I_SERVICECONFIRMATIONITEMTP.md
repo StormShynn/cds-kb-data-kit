@@ -29,78 +29,78 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceConfirmation` | ✓ | |  |  |
-| `ServiceConfirmationItem` | ✓ | |  |  |
-| `ServiceDocumentItemObjectType` |  | |  |  |
-| `ServiceConfItemCategory` |  | |  |  |
-| `ServiceConfirmationItemUUID` |  | |  |  |
-| `ParentServiceConfItem` |  | |  |  |
-| `ServiceConfItemDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `ServiceDocItemCreationDateTime` |  | |  |  |
-| `ServiceDocItemChangedDateTime` |  | |  |  |
-| `ServiceDocItemCreatedByUser` |  | |  |  |
-| `ServiceDocItemChangedByUser` |  | |  |  |
-| `Product` |  | |  |  |
-| `Quantity` |  | |  | `} Quantity` |
-| `QuantityUnit` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |
-| `ExecutingServiceEmployee` |  | |  |  |
-| `ServicePerformer` |  | |  |  |
-| `RespyMgmtServiceTeam` |  | |  |  |
-| `RespyMgmtGlobalTeamID` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |
-| `SrvcConfItemIsNew` |  | |  |  |
-| `ServiceConfItemIsCompleted` |  | |  |  |
-| `ServiceConfirmationItemStatus` |  | |  |  |
-| `SrvcConfItmReldForBillgStatus` |  | |  |  |
-| `SrvcConfItemBillingStatus` |  | |  |  |
-| `SrvcConfItemHasError` |  | |  |  |
-| `ActualServiceStartDateTime` |  | |  |  |
-| `ActualServiceEndDateTime` |  | |  |  |
-| `ActualServiceDuration` |  | |  | `} ActualServiceDuration` |
-| `ActualServiceDurationUnit` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocItemGrossAmount` |  | |  | `} ServiceDocItemGrossAmount` |
-| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceDocumentItemNetAmount` |
-| `ServiceDocumentItemTaxAmount` |  | |  | `} ServiceDocumentItemTaxAmount` |
-| `BillableControl` |  | |  |  |
-| `SrvcConfItemExtReference` |  | |  |  |
-| `SrvcConfExtReference` |  | |  |  |
-| `ReferenceServiceOrder` |  | |  |  |
-| `ReferenceServiceOrderItem` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_ActualServiceDurationUnit` | | ✓ | | |
-| `_ServiceDocOvertimeCat` | | ✓ | | |
-| `_SrvcConfItmStatus` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_BillableControl` | | ✓ | | |
-| `_ServiceConfirmationTP` | | ✓ | | |
-| `_SrvcConfItemPriceElementTP` | | ✓ | | |
-| `_SrvcConfItemPartnerTP` | | ✓ | | |
-| `_SrvcConfItemUserStatusTP` | | ✓ | | |
-| `_SrvcConfItemRefObjTP` | | ✓ | | |
-| `_SrvcConfItemAppointmentTP` | | ✓ | | |
-| `_SrvcConfItemDurationTP` | | ✓ | | |
-| `_SrvcConfItmFUPBillgDocTP` | | ✓ | | |
-| `_SrvcConfItmFUPTimeSheetTP` | | ✓ | | |
-| `_SrvcConfItemLongTextTP` | | ✓ | | |
-| `_SrvcConfItemSerialNumberTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |  |  |
+| `ServiceConfirmationItem` | ✓ | |  |  |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
+| `ServiceConfItemCategory` |  | |  |  |  |  |
+| `ServiceConfirmationItemUUID` |  | |  |  |  |  |
+| `ParentServiceConfItem` |  | |  |  |  |  |
+| `ServiceConfItemDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
+| `ExecutingServiceEmployee` |  | |  |  |  |  |
+| `ServicePerformer` |  | |  |  |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
+| `SrvcConfItemIsNew` |  | |  |  |  |  |
+| `ServiceConfItemIsCompleted` |  | |  |  |  |  |
+| `ServiceConfirmationItemStatus` |  | |  |  |  |  |
+| `SrvcConfItmReldForBillgStatus` |  | |  |  |  |  |
+| `SrvcConfItemBillingStatus` |  | |  |  |  |  |
+| `SrvcConfItemHasError` |  | |  |  |  |  |
+| `ActualServiceStartDateTime` |  | |  |  |  |  |
+| `ActualServiceEndDateTime` |  | |  |  |  |  |
+| `ActualServiceDuration` |  | |  |  |  |  |
+| `ActualServiceDurationUnit` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocItemGrossAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
+| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
+| `BillableControl` |  | |  |  |  |  |
+| `SrvcConfItemExtReference` |  | |  |  |  |  |
+| `SrvcConfExtReference` |  | |  |  |  |  |
+| `ReferenceServiceOrder` |  | |  |  |  |  |
+| `ReferenceServiceOrderItem` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_ActualServiceDurationUnit` | | ✓ | | | | |
+| `_ServiceDocOvertimeCat` | | ✓ | | | | |
+| `_SrvcConfItmStatus` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_BillableControl` | | ✓ | | | | |
+| `_ServiceConfirmationTP` | | ✓ | | | | |
+| `_SrvcConfItemPriceElementTP` | | ✓ | | | | |
+| `_SrvcConfItemPartnerTP` | | ✓ | | | | |
+| `_SrvcConfItemUserStatusTP` | | ✓ | | | | |
+| `_SrvcConfItemRefObjTP` | | ✓ | | | | |
+| `_SrvcConfItemAppointmentTP` | | ✓ | | | | |
+| `_SrvcConfItemDurationTP` | | ✓ | | | | |
+| `_SrvcConfItmFUPBillgDocTP` | | ✓ | | | | |
+| `_SrvcConfItmFUPTimeSheetTP` | | ✓ | | | | |
+| `_SrvcConfItemLongTextTP` | | ✓ | | | | |
+| `_SrvcConfItemSerialNumberTP` | | ✓ | | | | |
 
 ## Source Code
 

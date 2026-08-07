@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInternalPostingReasonCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as intbu_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInternalPostingReasonCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as intbu_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

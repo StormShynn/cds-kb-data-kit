@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CITClassfctnItemInconstcyCode` | ✓ | |  | `cast(dd07l.domvalue_l as ficite_amnt_inconsistency)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CITClassfctnItemInconstcyCode` | ✓ | |  | `cast(dd07l.domvalue_l as ficite_amnt_inconsistency)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

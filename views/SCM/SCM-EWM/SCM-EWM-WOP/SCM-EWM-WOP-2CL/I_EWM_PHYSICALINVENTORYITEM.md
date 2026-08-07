@@ -31,61 +31,61 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PhysicalInventoryDocNumber` | ✓ | | `_logHead` | `PhysicalInventoryDocNumber` |
-| `PhysicalInventoryDocYear` | ✓ | | `_logHead` | `PhysicalInventoryDocYear` |
-| `EWMWarehouse` | ✓ | | `_PIItem` | `EWMWarehouse` |
-| `PhysicalInventoryItemNumber` | ✓ | | `_PIItem` | `PhysicalInventoryItemNumber` |
-| `PhysicalInventoryDocumentUUID` |  | | `_PIItem` | `PhysicalInventoryDocumentUUID` |
-| `EWMPhysicalInventoryStatus` |  | | `_PIItem` | `EWMPhysicalInventoryStatus` |
-| `PhysicalInventoryDocumentType` |  | | `_PIItem` | `PhysicalInventoryDocumentType` |
-| `PInvCountedUTCDateTime` |  | | `_PIItem` | `PInvCountedUTCDateTime` |
-| `PhysicalInventoryCountUserName` |  | | `_PIItem` | `PhysicalInventoryCountUserName` |
-| `PhysInventoryCrtnUTCDateTime` |  | | `_PIItem` | `PhysInventoryCrtnUTCDateTime` |
-| `EWMPhysInvtryPostingDateTime` |  | | `_PIItem` | `EWMPhysInvtryPostingDateTime` |
-| `ActivityArea` |  | | `_PIItem` | `ActivityArea` |
-| `EWMPhysicalInventoryPriority` |  | | `_PIItem` | `EWMPhysicalInventoryPriority` |
-| `EWMPhysInvtryReason` |  | | `_PIItem` | `EWMPhysInvtryReason` |
-| `PInvDocumentItemIsPrinted` |  | | `_PIItem` | `PInvDocumentItemIsPrinted` |
-| `EWMPhysInvtryItemSequenceValue` |  | | `_PIItem` | `EWMPhysInvtryItemSequenceValue` |
-| `EWMStorageType` |  | | `_PIItem` | `EWMStorageType` |
-| `EWMStorageBin` |  | | `_PIItem` | `EWMStorageBin` |
-| `WhseQualityInspectionType` |  | | `_PIItem` | `WhseQualityInspectionType` |
-| `QualityInspectionDocUUID` |  | | `_PIItem` | `QualityInspectionDocUUID` |
-| `StockIdentificationNumber` |  | | `_PIItem` | `StockIdentificationNumber` |
-| `EWMStockReferenceDocCategory` |  | | `_PIItem` | `EWMStockReferenceDocCategory` |
-| `EWMStockRefDocumentUUID` |  | | `_PIItem` | `EWMStockRefDocumentUUID` |
-| `EWMStockRefDocItemUUID` |  | | `_PIItem` | `EWMStockRefDocItemUUID` |
-| `EWMStockReferenceDocument` |  | |  | `case _PIItem.EWMStockReferenceDocCategory when 'PDI' then cast(_InbDeliveryItem.InboundDelivery as ewm_de_referencedocument preserving type ) when 'PDO' then cast(_WarehouseRequestOutItem.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'SPC' then cast(_WarehouseRequestOutItem.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'WMR' then cast(_WarehouseRequestOutItem.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PWR' then cast(_ProdnMatlReqItem.EWMProductionMaterialRequest as ewm_de_referencedocument preserving type ) else cast( cast('' as /scdl/dl_docno_int) as ewm_de_referencedocument preserving type ) end` |
-| `EWMStockReferenceDocumentItem` |  | |  | `case _PIItem.EWMStockReferenceDocCategory when 'PDI' then cast(_InbDeliveryItem.EWMInboundDeliveryItem as ewm_de_referencedocumentitem preserving type ) when 'PDO' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'SPC' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'WMR' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'PWR' then cast(_ProdnMatlReqItem.EWMProductionMaterialReqItem as ewm_de_referencedocumentitem preserving type ) else cast( cast('' as /scdl/dl_itemno) as ewm_de_referencedocumentitem preserving type ) end` |
-| `EWMGoodsReceiptDateTime` |  | | `_PIItem` | `EWMGoodsReceiptDateTime` |
-| `ShelfLifeExpirationDate` |  | | `_PIItem` | `ShelfLifeExpirationDate` |
-| `CountryOfOrigin` |  | | `_PIItem` | `CountryOfOrigin` |
-| `MatlBatchIsInRstrcdUseStock` |  | | `_PIItem` | `MatlBatchIsInRstrcdUseStock` |
-| `ProductUUID` |  | | `_PIItem` | `ProductUUID` |
-| `Product` |  | | `_PIItem` | `Product` |
-| `BatchUUID` |  | | `_PIItem` | `BatchUUID` |
-| `Batch` |  | | `_PIItem` | `Batch` |
-| `EntitledToDisposeParty` |  | | `_PIItem` | `EntitledToDisposeParty` |
-| `EWMStockOwner` |  | | `_PIItem` | `EWMStockOwner` |
-| `EWMStockType` |  | | `_PIItem` | `EWMStockType` |
-| `EWMStockUsage` |  | | `_PIItem` | `EWMStockUsage` |
-| `StockDocumentCategory` |  | |  | `cast( _PIItem.StockDocumentCategory as ewm_de_stockdocumentcat preserving type )` |
-| `StockDocumentNumber` |  | | `_PIItem` | `StockDocumentNumber` |
-| `WBSElementInternalID` |  | |  | `case _PIItem.StockDocumentCategory when 'PJS' then _ProjectStock.WBSElementInternalID else cast( '00000000' as ps_s4_pspnr preserving type ) end` |
-| `WBSElementExternalID` |  | |  | `case _PIItem.StockDocumentCategory when 'PJS' then _ProjectStock.WBSElementExternalID else cast( '' as ps_posid_edit ) end` |
-| `SpecialStockIdfgSalesOrder` |  | |  | `case _PIItem.StockDocumentCategory when 'SOS' then cast( ltrim( _PIItem.StockDocumentNumber, '0' ) as ewm_de_special_stock_idfg_hdr ) else cast( '' as ewm_de_special_stock_idfg_hdr ) end` |
-| `SpecialStockIdfgSalesOrderItem` |  | |  | `case _PIItem.StockDocumentCategory when 'SOS' then cast(ltrim(_PIItem.StockItemNumber, '0') as mat_kdpos ) else cast( '000000' as mat_kdpos ) end` |
-| `EWMPhysInventoryCountingCycle` |  | | `_PIItem._ProductWhse` | `EWMPhysInventoryCountingCycle` |
-| `EWMPInvCycCountingIntvlValue` |  | | `_PIItem._ProductWhse` | `EWMPInvCycCountingIntvlValue` |
-| `EWMPInvCycCountingBufferValue` |  | | `_PIItem._ProductWhse` | `EWMPInvCycCountingBufferValue` |
-| `WarehouseOrder` |  | | `_PIItem` | `WarehouseOrder` |
-| `WarehouseTask` |  | | `_PIItem` | `WarehouseTask` |
-| `PhysicalInventoryRefDocYear` |  | |  | `cast(substring(_PIItem.PhysicalInventoryRefDocNumber ,5, 4) as /lime/pi_doc_year)` |
-| `EWMRefPhysicalInventoryDoc` |  | |  | `cast(substring(_PIItem.PhysicalInventoryRefDocNumber ,9, 20) as /lime/pi_doc_number)` |
-| `PhysicalInventoryRefDocItem` |  | |  | `cast(substring(_PIItem.PhysicalInventoryRefDocNumber ,29, 6) as /lime/line_item_id)` |
-| `PInvFreeDefinedRefText` |  | | `_PIItem` | `PInvFreeDefinedRefText` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhysicalInventoryDocNumber` | ✓ | | `_logHead` | `PhysicalInventoryDocNumber` |  |  |
+| `PhysicalInventoryDocYear` | ✓ | | `_logHead` | `PhysicalInventoryDocYear` |  |  |
+| `EWMWarehouse` | ✓ | | `_PIItem` | `EWMWarehouse` |  |  |
+| `PhysicalInventoryItemNumber` | ✓ | | `_PIItem` | `PhysicalInventoryItemNumber` |  |  |
+| `PhysicalInventoryDocumentUUID` |  | | `_PIItem` | `PhysicalInventoryDocumentUUID` |  |  |
+| `EWMPhysicalInventoryStatus` |  | | `_PIItem` | `EWMPhysicalInventoryStatus` |  |  |
+| `PhysicalInventoryDocumentType` |  | | `_PIItem` | `PhysicalInventoryDocumentType` |  |  |
+| `PInvCountedUTCDateTime` |  | | `_PIItem` | `PInvCountedUTCDateTime` |  |  |
+| `PhysicalInventoryCountUserName` |  | | `_PIItem` | `PhysicalInventoryCountUserName` |  |  |
+| `PhysInventoryCrtnUTCDateTime` |  | | `_PIItem` | `PhysInventoryCrtnUTCDateTime` |  |  |
+| `EWMPhysInvtryPostingDateTime` |  | | `_PIItem` | `EWMPhysInvtryPostingDateTime` |  |  |
+| `ActivityArea` |  | | `_PIItem` | `ActivityArea` |  |  |
+| `EWMPhysicalInventoryPriority` |  | | `_PIItem` | `EWMPhysicalInventoryPriority` |  |  |
+| `EWMPhysInvtryReason` |  | | `_PIItem` | `EWMPhysInvtryReason` |  |  |
+| `PInvDocumentItemIsPrinted` |  | | `_PIItem` | `PInvDocumentItemIsPrinted` |  |  |
+| `EWMPhysInvtryItemSequenceValue` |  | | `_PIItem` | `EWMPhysInvtryItemSequenceValue` |  |  |
+| `EWMStorageType` |  | | `_PIItem` | `EWMStorageType` |  |  |
+| `EWMStorageBin` |  | | `_PIItem` | `EWMStorageBin` |  |  |
+| `WhseQualityInspectionType` |  | | `_PIItem` | `WhseQualityInspectionType` |  |  |
+| `QualityInspectionDocUUID` |  | | `_PIItem` | `QualityInspectionDocUUID` |  |  |
+| `StockIdentificationNumber` |  | | `_PIItem` | `StockIdentificationNumber` |  |  |
+| `EWMStockReferenceDocCategory` |  | | `_PIItem` | `EWMStockReferenceDocCategory` |  |  |
+| `EWMStockRefDocumentUUID` |  | | `_PIItem` | `EWMStockRefDocumentUUID` |  |  |
+| `EWMStockRefDocItemUUID` |  | | `_PIItem` | `EWMStockRefDocItemUUID` |  |  |
+| `EWMStockReferenceDocument` |  | |  | `case _PIItem.EWMStockReferenceDocCategory when 'PDI' then cast(_InbDeliveryItem.InboundDelivery as ewm_de_referencedocument preserving type ) when 'PDO' then cast(_WarehouseRequestOutItem.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'SPC' then cast(_WarehouseRequestOutItem.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'WMR' then cast(_WarehouseRequestOutItem.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PWR' then cast(_ProdnMatlReqItem.EWMProductionMaterialRequest as ewm_de_referencedocument preserving type ) else cast( cast('' as /scdl/dl_docno_int) as ewm_de_referencedocument preserving type ) end` |  |  |
+| `EWMStockReferenceDocumentItem` |  | |  | `case _PIItem.EWMStockReferenceDocCategory when 'PDI' then cast(_InbDeliveryItem.EWMInboundDeliveryItem as ewm_de_referencedocumentitem preserving type ) when 'PDO' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'SPC' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'WMR' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'PWR' then cast(_ProdnMatlReqItem.EWMProductionMaterialReqItem as ewm_de_referencedocumentitem preserving type ) else cast( cast('' as /scdl/dl_itemno) as ewm_de_referencedocumentitem preserving type ) end` |  |  |
+| `EWMGoodsReceiptDateTime` |  | | `_PIItem` | `EWMGoodsReceiptDateTime` |  |  |
+| `ShelfLifeExpirationDate` |  | | `_PIItem` | `ShelfLifeExpirationDate` |  |  |
+| `CountryOfOrigin` |  | | `_PIItem` | `CountryOfOrigin` |  |  |
+| `MatlBatchIsInRstrcdUseStock` |  | | `_PIItem` | `MatlBatchIsInRstrcdUseStock` |  |  |
+| `ProductUUID` |  | | `_PIItem` | `ProductUUID` |  |  |
+| `Product` |  | | `_PIItem` | `Product` |  |  |
+| `BatchUUID` |  | | `_PIItem` | `BatchUUID` |  |  |
+| `Batch` |  | | `_PIItem` | `Batch` |  |  |
+| `EntitledToDisposeParty` |  | | `_PIItem` | `EntitledToDisposeParty` |  |  |
+| `EWMStockOwner` |  | | `_PIItem` | `EWMStockOwner` |  |  |
+| `EWMStockType` |  | | `_PIItem` | `EWMStockType` |  |  |
+| `EWMStockUsage` |  | | `_PIItem` | `EWMStockUsage` |  |  |
+| `StockDocumentCategory` |  | |  | `cast( _PIItem.StockDocumentCategory as ewm_de_stockdocumentcat preserving type )` |  |  |
+| `StockDocumentNumber` |  | | `_PIItem` | `StockDocumentNumber` |  |  |
+| `WBSElementInternalID` |  | |  | `case _PIItem.StockDocumentCategory when 'PJS' then _ProjectStock.WBSElementInternalID else cast( '00000000' as ps_s4_pspnr preserving type ) end` |  |  |
+| `WBSElementExternalID` |  | |  | `case _PIItem.StockDocumentCategory when 'PJS' then _ProjectStock.WBSElementExternalID else cast( '' as ps_posid_edit ) end` |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  | `case _PIItem.StockDocumentCategory when 'SOS' then cast( ltrim( _PIItem.StockDocumentNumber, '0' ) as ewm_de_special_stock_idfg_hdr ) else cast( '' as ewm_de_special_stock_idfg_hdr ) end` |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  | `case _PIItem.StockDocumentCategory when 'SOS' then cast(ltrim(_PIItem.StockItemNumber, '0') as mat_kdpos ) else cast( '000000' as mat_kdpos ) end` |  |  |
+| `EWMPhysInventoryCountingCycle` |  | | `_PIItem._ProductWhse` | `EWMPhysInventoryCountingCycle` |  |  |
+| `EWMPInvCycCountingIntvlValue` |  | | `_PIItem._ProductWhse` | `EWMPInvCycCountingIntvlValue` |  |  |
+| `EWMPInvCycCountingBufferValue` |  | | `_PIItem._ProductWhse` | `EWMPInvCycCountingBufferValue` |  |  |
+| `WarehouseOrder` |  | | `_PIItem` | `WarehouseOrder` |  |  |
+| `WarehouseTask` |  | | `_PIItem` | `WarehouseTask` |  |  |
+| `PhysicalInventoryRefDocYear` |  | |  | `cast(substring(_PIItem.PhysicalInventoryRefDocNumber ,5, 4) as /lime/pi_doc_year)` |  |  |
+| `EWMRefPhysicalInventoryDoc` |  | |  | `cast(substring(_PIItem.PhysicalInventoryRefDocNumber ,9, 20) as /lime/pi_doc_number)` |  |  |
+| `PhysicalInventoryRefDocItem` |  | |  | `cast(substring(_PIItem.PhysicalInventoryRefDocNumber ,29, 6) as /lime/line_item_id)` |  |  |
+| `PInvFreeDefinedRefText` |  | | `_PIItem` | `PInvFreeDefinedRefText` |  |  |
 
 ## Associations
 

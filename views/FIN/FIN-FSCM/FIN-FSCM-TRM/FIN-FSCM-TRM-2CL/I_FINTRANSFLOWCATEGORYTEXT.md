@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `FinTransFlowCategory` | ✓ | |  | `cast( sbktyp as ftr_flow_category preserving type )` |
-| `FinTransFlowCategoryName` |  | |  | `xbktyp` |
-| `_Language` | | ✓ | | |
-| `_FlowCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FinTransFlowCategory` | ✓ | |  | `cast( sbktyp as ftr_flow_category preserving type )` |  |  |
+| `FinTransFlowCategoryName` |  | |  | `xbktyp` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FlowCategory` | | ✓ | | | | |
 
 ## Associations
 

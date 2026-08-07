@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BillOfMaterialStatus` | ✓ | |  | `stlst` |
-| `BillOfMaterialStatusText` |  | |  | `sttxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BillOfMaterialStatus` | ✓ | |  | `stlst` |  |  |
+| `BillOfMaterialStatusText` |  | |  | `sttxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

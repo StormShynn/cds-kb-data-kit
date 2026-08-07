@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REExtConditionPurpose` | ✓ | |  | `condpurposeext` |
-| `REIntConditionPurpose` |  | |  | `condpurposeint` |
-| `REPrpsIsAllowedForRentalObject` |  | |  | `cppreroal` |
-| `REPrpsIsAllowedForContract` |  | |  | `cpprecnal` |
-| `REPurposeIsCopiedToObject` |  | |  | `cpprero` |
-| `REPurposeIsCopiedToContract` |  | |  | `cpprecn` |
-| `RETakeOvrToRentalObjIsPossible` |  | |  | `cptakeover` |
-| `_Text` | | ✓ | | |
-| `_REConditionPurposeInt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REExtConditionPurpose` | ✓ | |  | `condpurposeext` |  |  |
+| `REIntConditionPurpose` |  | |  | `condpurposeint` |  |  |
+| `REPrpsIsAllowedForRentalObject` |  | |  | `cppreroal` |  |  |
+| `REPrpsIsAllowedForContract` |  | |  | `cpprecnal` |  |  |
+| `REPurposeIsCopiedToObject` |  | |  | `cpprero` |  |  |
+| `REPurposeIsCopiedToContract` |  | |  | `cpprecn` |  |  |
+| `RETakeOvrToRentalObjIsPossible` |  | |  | `cptakeover` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_REConditionPurposeInt` | | ✓ | | | | |
 
 ## Associations
 

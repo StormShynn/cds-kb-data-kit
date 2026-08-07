@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TradeFinanceCategory` | ✓ | |  | `cast(DomainValue.domvalue_l as ftr_tf_cat)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TradeFinanceCategory` | ✓ | |  | `cast(DomainValue.domvalue_l as ftr_tf_cat)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

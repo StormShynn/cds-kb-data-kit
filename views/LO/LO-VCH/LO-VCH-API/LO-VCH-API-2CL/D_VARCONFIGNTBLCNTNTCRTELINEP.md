@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarConfignTblTgtLinePosition` |  | |  | `vtlin` |
-| `ChangeNumber` |  | |  | `aennr` |
-| `Characteristic` |  | |  | `atnam` |
-| `CharcValue` |  | |  | `atwrt` |
-| `CharcFromNumericValue` |  | |  | `atflv` |
-| `CharcToNumericValue` |  | |  | `atflb` |
-| `CharcValueIntervalType` |  | |  | `atcod` |
-| `CharcFromNumericValueUnit` |  | |  | `msehi` |
-| `CharcToNumericValueUnit` |  | |  | `msehi` |
-| `VarConfignTblAnyValueIsAllowed` |  | |  | `boole_d` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarConfignTblTgtLinePosition` |  | |  | `vtlin` |  |  |
+| `ChangeNumber` |  | |  | `aennr` |  |  |
+| `Characteristic` |  | |  | `atnam` |  |  |
+| `CharcValue` |  | |  | `atwrt` |  |  |
+| `CharcFromNumericValue` |  | |  | `atflv` |  |  |
+| `CharcToNumericValue` |  | |  | `atflb` |  |  |
+| `CharcValueIntervalType` |  | |  | `atcod` |  |  |
+| `CharcFromNumericValueUnit` |  | |  | `msehi` |  |  |
+| `CharcToNumericValueUnit` |  | |  | `msehi` |  |  |
+| `VarConfignTblAnyValueIsAllowed` |  | |  | `boole_d` |  |  |
 
 ## Source Code
 

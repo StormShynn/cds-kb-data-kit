@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesContractType` | ✓ | |  | `cast ( SalesDocumentType as sales_contract_type preserving type )` |
-| `ScreenSequenceGroup` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContractType` | ✓ | |  | `cast ( SalesDocumentType as sales_contract_type preserving type )` |  |  |
+| `ScreenSequenceGroup` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

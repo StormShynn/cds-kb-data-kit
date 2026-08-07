@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `ConsolidationUnit` | ✓ | |  | `cast ( _Source.ConsolidationUnit as fincs_consolidationunit preserving type )` |
-| `ConsolidationUnitText` |  | |  | `cast ( _Source.ConsolidationUnitText as fincs_consolidationunittext preserving type )` |
-| `ConsolidationUnitMdmText` |  | | `_Source` | `ConsolidationUnitMdmText` |
-| `ConsolidationUnitLongText` |  | |  | `cast ( _Source.ConsolidationUnitLongText as fincs_consunitlongtext preserving type )` |
-| `I_CnsldtnUnitTP` |  | |  | `_CnsldtnUnit as _CnsldtnUnit : redirected to parent I_CnsldtnUnitTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `ConsolidationUnit` | ✓ | |  | `cast ( _Source.ConsolidationUnit as fincs_consolidationunit preserving type )` |  |  |
+| `ConsolidationUnitText` |  | |  | `cast ( _Source.ConsolidationUnitText as fincs_consolidationunittext preserving type )` |  |  |
+| `ConsolidationUnitMdmText` |  | | `_Source` | `ConsolidationUnitMdmText` |  |  |
+| `ConsolidationUnitLongText` |  | |  | `cast ( _Source.ConsolidationUnitLongText as fincs_consunitlongtext preserving type )` |  |  |
+| `I_CnsldtnUnitTP` |  | |  | `_CnsldtnUnit as _CnsldtnUnit : redirected to parent I_CnsldtnUnitTP` |  |  |
 
 ## Source Code
 

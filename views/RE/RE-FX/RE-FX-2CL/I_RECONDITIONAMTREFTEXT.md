@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `REConditionAmountReference` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmcondvaluerefer )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `REConditionAmountReferenceName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_REConditionAmountReference` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `REConditionAmountReference` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmcondvaluerefer )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `REConditionAmountReferenceName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_REConditionAmountReference` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CaseType` | ✓ | |  | `cast( case_type as scmgcase_type preserving type )` |
-| `Language` | ✓ | |  | `langu` |
-| `CaseTypeName` |  | |  | `description` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseType` | ✓ | |  | `cast( case_type as scmgcase_type preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CaseTypeName` |  | |  | `description` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

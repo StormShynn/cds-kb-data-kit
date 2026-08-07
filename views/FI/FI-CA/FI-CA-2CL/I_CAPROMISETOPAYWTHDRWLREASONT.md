@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` |
-| `Language` | ✓ | |  | `spras` |
-| `CAPrmsToPayWthdrwlReasonName` |  | |  | `txt50` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAPrmsToPayWthdrwlReasonName` |  | |  | `txt50` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

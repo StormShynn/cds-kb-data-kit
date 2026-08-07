@@ -31,31 +31,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectBillingRequestUUID` | ✓ | |  | `projectbillingrequestuuid` |
-| `ProjectBillingRequest` |  | |  | `projectbillingrequest` |
-| `ProjectBillingRequestStatus` |  | |  | `projectbillingrequeststatus` |
-| `ProjBillgReqApprovalStatus` |  | |  | `projbillgreqapprovalstatus` |
-| `ProjectBillingRequestType` |  | |  | `projectbillingrequesttype` |
-| `SalesDocument` |  | |  | `salesdocument` |
-| `ProjectBillingCategory` |  | |  | `projectbillingcategory` |
-| `ProjBillgReqLastChgdBy` |  | |  | `projbillgreqlastchgdby` |
-| `ProjBillgReqLastChgdAtDteTme` |  | |  | `projbillgreqlastchgdatdtetme` |
-| `ProjBillgReqCreatedBy` |  | |  | `projbillgreqcreatedby` |
-| `ProjBillgReqCreatedAtDteTme` |  | |  | `projbillgreqcreatedatdtetme` |
-| `ProjectInternalID` |  | |  | `projectinternalid` |
-| `_ProjectBillingRequestItem` | | ✓ | | |
-| `_ProjectBillingRequestStatus` | | ✓ | | |
-| `_ProjectBillingReqStatusText` | | ✓ | | |
-| `_ProjBillgReqApprovalStatus` | | ✓ | | |
-| `_ProjBillgReqApprvlStatusText` | | ✓ | | |
-| `_ProjectBillingCategory` | | ✓ | | |
-| `_ProjectBillingCategoryText` | | ✓ | | |
-| `_ProjectBillingRequestType` | | ✓ | | |
-| `_ProjectBillingRequestTypeTxt` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_EnterpriseProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectBillingRequestUUID` | ✓ | |  | `projectbillingrequestuuid` |  |  |
+| `ProjectBillingRequest` |  | |  | `projectbillingrequest` |  |  |
+| `ProjectBillingRequestStatus` |  | |  | `projectbillingrequeststatus` |  |  |
+| `ProjBillgReqApprovalStatus` |  | |  | `projbillgreqapprovalstatus` |  |  |
+| `ProjectBillingRequestType` |  | |  | `projectbillingrequesttype` |  |  |
+| `SalesDocument` |  | |  | `salesdocument` |  |  |
+| `ProjectBillingCategory` |  | |  | `projectbillingcategory` |  |  |
+| `ProjBillgReqLastChgdBy` |  | |  | `projbillgreqlastchgdby` |  |  |
+| `ProjBillgReqLastChgdAtDteTme` |  | |  | `projbillgreqlastchgdatdtetme` |  |  |
+| `ProjBillgReqCreatedBy` |  | |  | `projbillgreqcreatedby` |  |  |
+| `ProjBillgReqCreatedAtDteTme` |  | |  | `projbillgreqcreatedatdtetme` |  |  |
+| `ProjectInternalID` |  | |  | `projectinternalid` |  |  |
+| `_ProjectBillingRequestItem` | | ✓ | | | | |
+| `_ProjectBillingRequestStatus` | | ✓ | | | | |
+| `_ProjectBillingReqStatusText` | | ✓ | | | | |
+| `_ProjBillgReqApprovalStatus` | | ✓ | | | | |
+| `_ProjBillgReqApprvlStatusText` | | ✓ | | | | |
+| `_ProjectBillingCategory` | | ✓ | | | | |
+| `_ProjectBillingCategoryText` | | ✓ | | | | |
+| `_ProjectBillingRequestType` | | ✓ | | | | |
+| `_ProjectBillingRequestTypeTxt` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_EnterpriseProject` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DateFunction` | ✓ | |  |  |
-| `DateFunctionType` |  | |  |  |
-| `DateFunctionGranularity` |  | |  |  |
-| `DateFunctionStartPoint` |  | |  |  |
-| `DateFunctionStartOffsetValue` |  | |  |  |
-| `DateFuncStartRelativeOffset` |  | |  |  |
-| `DateFunctionStartOffsetUnit` |  | |  |  |
-| `DateFunctionStartRelOffsetUnit` |  | |  |  |
-| `DateFunctionStartYearOffset` |  | |  |  |
-| `DateFunctionStartFixedDate` |  | |  |  |
-| `DateFunctionEndPoint` |  | |  |  |
-| `DateFunctionEndOffsetValue` |  | |  |  |
-| `DateFunctionEndRelativeOffset` |  | |  |  |
-| `DateFunctionEndOffsetUnit` |  | |  |  |
-| `DateFunctionEndRelOffsetUnit` |  | |  |  |
-| `DateFunctionEndYearOffset` |  | |  |  |
-| `DateFunctionEndFixedDate` |  | |  |  |
-| `_DateFunctionText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DateFunction` | ✓ | |  |  |  |  |
+| `DateFunctionType` |  | |  |  |  |  |
+| `DateFunctionGranularity` |  | |  |  |  |  |
+| `DateFunctionStartPoint` |  | |  |  |  |  |
+| `DateFunctionStartOffsetValue` |  | |  |  |  |  |
+| `DateFuncStartRelativeOffset` |  | |  |  |  |  |
+| `DateFunctionStartOffsetUnit` |  | |  |  |  |  |
+| `DateFunctionStartRelOffsetUnit` |  | |  |  |  |  |
+| `DateFunctionStartYearOffset` |  | |  |  |  |  |
+| `DateFunctionStartFixedDate` |  | |  |  |  |  |
+| `DateFunctionEndPoint` |  | |  |  |  |  |
+| `DateFunctionEndOffsetValue` |  | |  |  |  |  |
+| `DateFunctionEndRelativeOffset` |  | |  |  |  |  |
+| `DateFunctionEndOffsetUnit` |  | |  |  |  |  |
+| `DateFunctionEndRelOffsetUnit` |  | |  |  |  |  |
+| `DateFunctionEndYearOffset` |  | |  |  |  |  |
+| `DateFunctionEndFixedDate` |  | |  |  |  |  |
+| `_DateFunctionText` | | ✓ | | | | |
 
 ## Associations
 

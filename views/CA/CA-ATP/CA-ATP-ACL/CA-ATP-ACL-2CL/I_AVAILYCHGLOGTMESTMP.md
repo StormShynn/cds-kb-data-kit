@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AvailabilityChangeLogUUID` | ✓ | |  | `netchguuid` |
-| `AvailabilityChangeLogDateTime` | ✓ | |  | `netchgtstamp` |
-| `_AvailyChgLog` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AvailabilityChangeLogUUID` | ✓ | |  | `netchguuid` |  |  |
+| `AvailabilityChangeLogDateTime` | ✓ | |  | `netchgtstamp` |  |  |
+| `_AvailyChgLog` | | ✓ | | | | |
 
 ## Associations
 

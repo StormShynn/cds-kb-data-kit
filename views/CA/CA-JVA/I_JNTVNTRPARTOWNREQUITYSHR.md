@@ -27,40 +27,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JointVenture` | ✓ | |  | `vname` |
-| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |
-| `JointVenturePartner` | ✓ | |  | `partn` |
-| `JointVenturePartnerShortText` |  | | `_Customer` | `CustomerName` |
-| `JointVenturePartner2ShortText` |  | | `_Customer` | `BPCustomerName` |
-| `JointVenturePartnerLongText` |  | | `_Customer` | `BPCustomerFullName` |
-| `JntVntrEquityShare` |  | |  | `eqshare` |
-| `JntVntrOwnrIsSuspended` |  | |  | `ownsusp` |
-| `JntVntrOwnrSuspendedPerd` |  | |  | `ownsusper` |
-| `JntVntrOwnrSuspendedYr` |  | |  | `ownsusyear` |
-| `JntVntrOwnrIsNotSuspended` |  | |  | `ownunsus` |
-| `JntVntrOwnrNotSuspendedPerd` |  | |  | `ownususper` |
-| `JntVntrOwnrNotSuspendedYr` |  | |  | `ownususyr` |
-| `JntVntrInterestType` |  | |  | `inttype` |
-| `JntVntrDrillingRcvryPercent` |  | |  | `drillrecpc` |
-| `JntVntrOpgRcvryPercent` |  | |  | `operrecpc` |
-| `JntVntrPayIsStppd` |  | |  | `stoppay` |
-| `JntVntrPartWrkgIntrstPerd` |  | |  | `cioutper` |
-| `JntVntrPartWrkgIntrstYrValue` |  | |  | `cioutyear` |
-| `JntVntrCarriedIntrstGrp` |  | |  | `cigroup` |
-| `JntVntrNetProfitIntrstGrp` |  | |  | `npigroup` |
-| `JntVntrOperatorAddressArea` |  | |  | `regio` |
-| `JntOpgAgrmtEquityGrpText` |  | | `_JntVntrEquityGrpText` | `JntOpgAgrmtEquityGrpText` |
-| `_CompanyCode` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_JntVntrValueHelp` | | ✓ | | |
-| `_JntVntrEquityGrp` | | ✓ | | |
-| `_JntVntrEquityGrpText` | | ✓ | | |
-| `_JointVentureSuspenseText` | | ✓ | | |
-| `_JointVentureMasterFld` | | ✓ | | |
-| `_JointVentureDesc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JointVenture` | ✓ | |  | `vname` |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |  |  |
+| `JointVenturePartner` | ✓ | |  | `partn` |  |  |
+| `JointVenturePartnerShortText` |  | | `_Customer` | `CustomerName` |  |  |
+| `JointVenturePartner2ShortText` |  | | `_Customer` | `BPCustomerName` |  |  |
+| `JointVenturePartnerLongText` |  | | `_Customer` | `BPCustomerFullName` |  |  |
+| `JntVntrEquityShare` |  | |  | `eqshare` |  |  |
+| `JntVntrOwnrIsSuspended` |  | |  | `ownsusp` |  |  |
+| `JntVntrOwnrSuspendedPerd` |  | |  | `ownsusper` |  |  |
+| `JntVntrOwnrSuspendedYr` |  | |  | `ownsusyear` |  |  |
+| `JntVntrOwnrIsNotSuspended` |  | |  | `ownunsus` |  |  |
+| `JntVntrOwnrNotSuspendedPerd` |  | |  | `ownususper` |  |  |
+| `JntVntrOwnrNotSuspendedYr` |  | |  | `ownususyr` |  |  |
+| `JntVntrInterestType` |  | |  | `inttype` |  |  |
+| `JntVntrDrillingRcvryPercent` |  | |  | `drillrecpc` |  |  |
+| `JntVntrOpgRcvryPercent` |  | |  | `operrecpc` |  |  |
+| `JntVntrPayIsStppd` |  | |  | `stoppay` |  |  |
+| `JntVntrPartWrkgIntrstPerd` |  | |  | `cioutper` |  |  |
+| `JntVntrPartWrkgIntrstYrValue` |  | |  | `cioutyear` |  |  |
+| `JntVntrCarriedIntrstGrp` |  | |  | `cigroup` |  |  |
+| `JntVntrNetProfitIntrstGrp` |  | |  | `npigroup` |  |  |
+| `JntVntrOperatorAddressArea` |  | |  | `regio` |  |  |
+| `JntOpgAgrmtEquityGrpText` |  | | `_JntVntrEquityGrpText` | `JntOpgAgrmtEquityGrpText` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_JntVntrValueHelp` | | ✓ | | | | |
+| `_JntVntrEquityGrp` | | ✓ | | | | |
+| `_JntVntrEquityGrpText` | | ✓ | | | | |
+| `_JointVentureSuspenseText` | | ✓ | | | | |
+| `_JointVentureMasterFld` | | ✓ | | | | |
+| `_JointVentureDesc` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityNotification` | ✓ | | `_QltyNotificationItemCauseTP` | `QualityNotification` |
-| `NotificationItem` | ✓ | | `_QltyNotificationItemCauseTP` | `NotificationItem` |
-| `NotificationCauseID` | ✓ | | `_QltyNotificationItemCauseTP` | `NotificationCauseID` |
-| `NotificationCauseSortNumber` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseSortNumber` |
-| `MasterLanguage` |  | | `_QltyNotificationItemCauseTP` | `MasterLanguage` |
-| `NotificationCauseText` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseText` |
-| `NotificationCauseCodeCatalog` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseCodeCatalog` |
-| `NotificationCauseCodeGroup` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseCodeGroup` |
-| `NotificationCauseCode` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseCode` |
-| `NotificationRootCause` |  | | `_QltyNotificationItemCauseTP` | `NotificationRootCause` |
-| `IsDeleted` |  | | `_QltyNotificationItemCauseTP` | `IsDeleted` |
-| `IsBusinessPurposeCompleted` |  | | `_QltyNotificationItemCauseTP` | `IsBusinessPurposeCompleted` |
-| `CreatedByUser` |  | | `_QltyNotificationItemCauseTP` | `CreatedByUser` |
-| `CreationDate` |  | | `_QltyNotificationItemCauseTP` | `CreationDate` |
-| `CreationTime` |  | | `_QltyNotificationItemCauseTP` | `CreationTime` |
-| `LastChangedByUser` |  | | `_QltyNotificationItemCauseTP` | `LastChangedByUser` |
-| `LastChangeDate` |  | | `_QltyNotificationItemCauseTP` | `LastChangeDate` |
-| `LastChangeTime` |  | | `_QltyNotificationItemCauseTP` | `LastChangeTime` |
-| `I_QltyNotificationTP` |  | |  | `_QltyNotificationItemCauseTP._QltyNotification : redirected to I_QltyNotificationTP` |
-| `I_QualityNotificationItemTP` |  | |  | `_QltyNotificationItemCauseTP._QualityNotificationItem : redirected to parent I_QualityNotificationItemTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityNotification` | ✓ | | `_QltyNotificationItemCauseTP` | `QualityNotification` |  |  |
+| `NotificationItem` | ✓ | | `_QltyNotificationItemCauseTP` | `NotificationItem` |  |  |
+| `NotificationCauseID` | ✓ | | `_QltyNotificationItemCauseTP` | `NotificationCauseID` |  |  |
+| `NotificationCauseSortNumber` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseSortNumber` |  |  |
+| `MasterLanguage` |  | | `_QltyNotificationItemCauseTP` | `MasterLanguage` |  |  |
+| `NotificationCauseText` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseText` |  |  |
+| `NotificationCauseCodeCatalog` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseCodeCatalog` |  |  |
+| `NotificationCauseCodeGroup` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseCodeGroup` |  |  |
+| `NotificationCauseCode` |  | | `_QltyNotificationItemCauseTP` | `NotificationCauseCode` |  |  |
+| `NotificationRootCause` |  | | `_QltyNotificationItemCauseTP` | `NotificationRootCause` |  |  |
+| `IsDeleted` |  | | `_QltyNotificationItemCauseTP` | `IsDeleted` |  |  |
+| `IsBusinessPurposeCompleted` |  | | `_QltyNotificationItemCauseTP` | `IsBusinessPurposeCompleted` |  |  |
+| `CreatedByUser` |  | | `_QltyNotificationItemCauseTP` | `CreatedByUser` |  |  |
+| `CreationDate` |  | | `_QltyNotificationItemCauseTP` | `CreationDate` |  |  |
+| `CreationTime` |  | | `_QltyNotificationItemCauseTP` | `CreationTime` |  |  |
+| `LastChangedByUser` |  | | `_QltyNotificationItemCauseTP` | `LastChangedByUser` |  |  |
+| `LastChangeDate` |  | | `_QltyNotificationItemCauseTP` | `LastChangeDate` |  |  |
+| `LastChangeTime` |  | | `_QltyNotificationItemCauseTP` | `LastChangeTime` |  |  |
+| `I_QltyNotificationTP` |  | |  | `_QltyNotificationItemCauseTP._QltyNotification : redirected to I_QltyNotificationTP` |  |  |
+| `I_QualityNotificationItemTP` |  | |  | `_QltyNotificationItemCauseTP._QualityNotificationItem : redirected to parent I_QualityNotificationItemTP` |  |  |
 
 ## Source Code
 

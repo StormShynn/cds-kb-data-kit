@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GLAccountHierarchy` |  | |  |  |
-| `HierarchyNode` |  | |  | `cast ( '' as hrynode )` |
-| `SemanticTag` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `FunctionalAreaIsUsed` |  | |  |  |
-| `IsFunctionalAreaPermitted` |  | |  | `cast( case when SemanticTag = 'NTINC_ALAC' then '' else FunctionalAreaIsUsed end as xfber_011 )` |
-| `_GLAccountHierarchyNode` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
-| `_SemanticTag` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountHierarchy` |  | |  |  |  |  |
+| `HierarchyNode` |  | |  | `cast ( '' as hrynode )` |  |  |
+| `SemanticTag` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `FunctionalAreaIsUsed` |  | |  |  |  |  |
+| `IsFunctionalAreaPermitted` |  | |  | `cast( case when SemanticTag = 'NTINC_ALAC' then '' else FunctionalAreaIsUsed end as xfber_011 )` |  |  |
+| `_GLAccountHierarchyNode` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
+| `_SemanticTag` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,66 +28,66 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesSchedulingAgreement` | ✓ | |  | `vbeln` |
-| `SalesSchedulingAgreementItem` | ✓ | |  | `posnr` |
-| `IntDeliveryScheduleNumber` | ✓ | |  | `abrli` |
-| `SchedulingAgreementReleaseType` | ✓ | |  | `abart` |
-| `CumulativeReceiptQuantity` |  | |  | `abefz` |
-| `DeliveryScheduleStartDate` |  | |  | `abrab` |
-| `DeliveryScheduleEndDate` |  | |  | `abrbi` |
-| `CustomerDeliveryScheduleNumber` |  | |  | `cast(vblb.labnk as sd_schedg_agrmt_delivery_sched preserving type )` |
-| `DeliveryScheduleDate` |  | |  | `abrdt` |
-| `ScheduleLineDateKey` |  | |  | `cast(vblb.tersl as sd_schedg_agrmt_rel_date_key preserving type )` |
-| `LastDeliveryDocPostingDate` |  | |  | `cast(vblb.lfdkd as sd_schedg_agrmt_last_dlv_date preserving type )` |
-| `LastDeliveryDocument` |  | |  | `cast(vblb.lfnkd as sd_schedg_agrmt_last_delivery preserving type )` |
-| `LastIntDeliveryScheduleNumber` |  | |  | `ablli` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `erzei` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `LastDeliveryNoteSentByExtAgt` |  | |  | `edlls` |
-| `LastDeliveryNoteSentDate` |  | |  | `edldt` |
-| `JITHorizonEndDate` |  | |  | `cast(vblb.abhor as sd_schedg_agrmt_jit_horizon preserving type )` |
-| `CustomerFiscalYear` |  | |  | `cast(vblb.gjkun as sd_schedg_agrmt_cust_fscl_yr preserving type )` |
-| `PreviousCustomerFiscalYear` |  | |  | `cast(vblb.vjkun as sd_schedg_agrmt_cust_fscl_yr preserving type )` |
-| `RequirementsStatusKey` |  | |  | `labky` |
-| `LastReceiptQuantity` |  | |  | `lfmkd` |
-| `SalesQtyToBaseQtyNmrtr` |  | |  | `umvkz` |
-| `SalesQtyToBaseQtyDnmntr` |  | |  | `umvkn` |
-| `DelivSchedFreeDefinedAttrib01` |  | |  | `usr01` |
-| `DelivSchedFreeDefinedAttrib02` |  | |  | `usr02` |
-| `DelivSchedFreeDefinedAttrib03` |  | |  | `usr03` |
-| `DelivSchedFreeDefinedAttrib04` |  | |  | `usr04` |
-| `DelivSchedFreeDefinedAttrib05` |  | |  | `usr05` |
-| `DeliveryScheduleCreationDate` |  | |  | `abrdt_org` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `ProdnGoAheadPeriodStartDate` |  | |  | `abfda` |
-| `ProductionGoAheadPeriodEndDate` |  | |  | `abfde` |
-| `MaterialGoAheadPeriodStartDate` |  | |  | `abmda` |
-| `MaterialGoAheadPeriodEndDate` |  | |  | `abmde` |
-| `CustomerPointOfConsumption` |  | |  | `vbrst` |
-| `CustRcvdCumltvQtyByFsclYrChg` |  | |  | `cyefz` |
-| `CumltvQtyFsclYearRsetDate` |  | |  | `cydat` |
-| `MatlGoAheadValidityPeriod` |  | |  | `mflauf` |
-| `MatlGoAheadValidityPeriodUnit` |  | |  | `mfein` |
-| `ProdnGoAheadValidityPeriod` |  | |  | `fflauf` |
-| `ProdnGoAheadValidityPeriodUnit` |  | |  | `ffein` |
-| `HghstDelivGoAheadCumltvQty` |  | |  | `hilfz` |
-| `ActlMatlGoAheadCumltvQty` |  | |  | `akmfz` |
-| `ActlProdnGoAheadCumltvQty` |  | |  | `akffz` |
-| `ActlDelivGoAheadCumltvQty` |  | |  | `aklfz` |
-| `HighPriorityStockKey` |  | |  | `kritb` |
-| `HghstMatlGoAheadCumltvQty` |  | |  | `himfz` |
-| `OrderQuantityUnit` |  | |  | `vrkme` |
-| `_SalesSchedgAgrmt` | | ✓ | | |
-| `_SalesSchedgAgrmtItem` | | ✓ | | |
-| `_SalesSchedgAgrmtSchdLnHist` | | ✓ | | |
-| `_SalesSchedgAgrmtSchedLine` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_SalesSchedgAgrmtRelType` | | ✓ | | |
-| `_ScheduleLineDateKey` | | ✓ | | |
-| `_PartDesc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  | `vbeln` |  |  |
+| `SalesSchedulingAgreementItem` | ✓ | |  | `posnr` |  |  |
+| `IntDeliveryScheduleNumber` | ✓ | |  | `abrli` |  |  |
+| `SchedulingAgreementReleaseType` | ✓ | |  | `abart` |  |  |
+| `CumulativeReceiptQuantity` |  | |  | `abefz` |  |  |
+| `DeliveryScheduleStartDate` |  | |  | `abrab` |  |  |
+| `DeliveryScheduleEndDate` |  | |  | `abrbi` |  |  |
+| `CustomerDeliveryScheduleNumber` |  | |  | `cast(vblb.labnk as sd_schedg_agrmt_delivery_sched preserving type )` |  |  |
+| `DeliveryScheduleDate` |  | |  | `abrdt` |  |  |
+| `ScheduleLineDateKey` |  | |  | `cast(vblb.tersl as sd_schedg_agrmt_rel_date_key preserving type )` |  |  |
+| `LastDeliveryDocPostingDate` |  | |  | `cast(vblb.lfdkd as sd_schedg_agrmt_last_dlv_date preserving type )` |  |  |
+| `LastDeliveryDocument` |  | |  | `cast(vblb.lfnkd as sd_schedg_agrmt_last_delivery preserving type )` |  |  |
+| `LastIntDeliveryScheduleNumber` |  | |  | `ablli` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `erzei` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `LastDeliveryNoteSentByExtAgt` |  | |  | `edlls` |  |  |
+| `LastDeliveryNoteSentDate` |  | |  | `edldt` |  |  |
+| `JITHorizonEndDate` |  | |  | `cast(vblb.abhor as sd_schedg_agrmt_jit_horizon preserving type )` |  |  |
+| `CustomerFiscalYear` |  | |  | `cast(vblb.gjkun as sd_schedg_agrmt_cust_fscl_yr preserving type )` |  |  |
+| `PreviousCustomerFiscalYear` |  | |  | `cast(vblb.vjkun as sd_schedg_agrmt_cust_fscl_yr preserving type )` |  |  |
+| `RequirementsStatusKey` |  | |  | `labky` |  |  |
+| `LastReceiptQuantity` |  | |  | `lfmkd` |  |  |
+| `SalesQtyToBaseQtyNmrtr` |  | |  | `umvkz` |  |  |
+| `SalesQtyToBaseQtyDnmntr` |  | |  | `umvkn` |  |  |
+| `DelivSchedFreeDefinedAttrib01` |  | |  | `usr01` |  |  |
+| `DelivSchedFreeDefinedAttrib02` |  | |  | `usr02` |  |  |
+| `DelivSchedFreeDefinedAttrib03` |  | |  | `usr03` |  |  |
+| `DelivSchedFreeDefinedAttrib04` |  | |  | `usr04` |  |  |
+| `DelivSchedFreeDefinedAttrib05` |  | |  | `usr05` |  |  |
+| `DeliveryScheduleCreationDate` |  | |  | `abrdt_org` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `ProdnGoAheadPeriodStartDate` |  | |  | `abfda` |  |  |
+| `ProductionGoAheadPeriodEndDate` |  | |  | `abfde` |  |  |
+| `MaterialGoAheadPeriodStartDate` |  | |  | `abmda` |  |  |
+| `MaterialGoAheadPeriodEndDate` |  | |  | `abmde` |  |  |
+| `CustomerPointOfConsumption` |  | |  | `vbrst` |  |  |
+| `CustRcvdCumltvQtyByFsclYrChg` |  | |  | `cyefz` |  |  |
+| `CumltvQtyFsclYearRsetDate` |  | |  | `cydat` |  |  |
+| `MatlGoAheadValidityPeriod` |  | |  | `mflauf` |  |  |
+| `MatlGoAheadValidityPeriodUnit` |  | |  | `mfein` |  |  |
+| `ProdnGoAheadValidityPeriod` |  | |  | `fflauf` |  |  |
+| `ProdnGoAheadValidityPeriodUnit` |  | |  | `ffein` |  |  |
+| `HghstDelivGoAheadCumltvQty` |  | |  | `hilfz` |  |  |
+| `ActlMatlGoAheadCumltvQty` |  | |  | `akmfz` |  |  |
+| `ActlProdnGoAheadCumltvQty` |  | |  | `akffz` |  |  |
+| `ActlDelivGoAheadCumltvQty` |  | |  | `aklfz` |  |  |
+| `HighPriorityStockKey` |  | |  | `kritb` |  |  |
+| `HghstMatlGoAheadCumltvQty` |  | |  | `himfz` |  |  |
+| `OrderQuantityUnit` |  | |  | `vrkme` |  |  |
+| `_SalesSchedgAgrmt` | | ✓ | | | | |
+| `_SalesSchedgAgrmtItem` | | ✓ | | | | |
+| `_SalesSchedgAgrmtSchdLnHist` | | ✓ | | | | |
+| `_SalesSchedgAgrmtSchedLine` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_SalesSchedgAgrmtRelType` | | ✓ | | | | |
+| `_ScheduleLineDateKey` | | ✓ | | | | |
+| `_PartDesc` | | ✓ | | | | |
 
 ## Associations
 

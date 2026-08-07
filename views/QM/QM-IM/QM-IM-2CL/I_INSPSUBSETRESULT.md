@@ -27,85 +27,85 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  | `prueflos` |
-| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |
-| `InspectionCharacteristic` | ✓ | |  | `merknr` |
-| `InspectionSubsetInternalID` | ✓ | |  | `probenr` |
-| `Inspector` |  | |  | `pruefer` |
-| `InspectionResultStatus` |  | |  | `satzstatus` |
-| `InspectionResultOrigin` |  | |  | `qergdath` |
-| `InspectionStartDate` |  | |  | `pruefdatuv` |
-| `InspectionStartTime` |  | |  | `pruefzeitv` |
-| `InspectionEndDate` |  | |  | `pruefdatub` |
-| `InspectionEndTime` |  | |  | `pruefzeitb` |
-| `InspectionResultAttribute` |  | |  | `attribut` |
-| `InspectionValuationResult` |  | |  | `mbewertg` |
-| `InspResultDynModifValuation` |  | |  | `dbewertg` |
-| `InspectionResultMeanValue` |  | |  | `mittelwert` |
-| `InspectionResultHasMeanValue` |  | |  | `cast(case qasr.mittelwni when '*' then 'X' else qasr.mittelwni end as qninitial preserving type )` |
-| `InspectionResultMaximumValue` |  | |  | `maxwert` |
-| `InspResultHasMaximumValue` |  | |  | `cast(case qasr.maxwertni when '*' then 'X' else qasr.maxwertni end as qninitial preserving type )` |
-| `InspectionResultMinimumValue` |  | |  | `minwert` |
-| `InspResultHasMinimumValue` |  | |  | `cast(case qasr.minwertni when '*' then 'X' else qasr.minwertni end as qninitial preserving type )` |
-| `InspectionResultOriginalValue` |  | |  | `original_input` |
-| `InspResultValidValuesNumber` |  | |  | `anzwertg` |
-| `InspectionResultText` |  | |  | `cast( qasr.pruefbemkt as vdm_qinspectionsamplresultdesc preserving type )` |
-| `InspectionResultHasLongText` |  | |  | `prltextkz` |
-| `Language` |  | |  | `ltextspr` |
-| `InspRsltFreeDefinedTestEquip` |  | |  | `maschine` |
-| `InspRsltBelowToleranceValsNmbr` |  | |  | `anzwertu` |
-| `InspRsltAboveToleranceValsNmbr` |  | |  | `anzwerto` |
-| `InspResultNmbrOfRecordedRslts` |  | |  | `iststpumf` |
-| `InspRsltNonconformingValsNmbr` |  | |  | `anzfehleh` |
-| `InspectionNumberOfDefects` |  | |  | `anzfehler` |
-| `InspRsltAboveToleranceFraction` |  | |  | `anteilo` |
-| `InspRsltBelowToleranceFraction` |  | |  | `anteilu` |
-| `InspResultVariance` |  | |  | `varianz` |
-| `InspResultHasVariance` |  | |  | `cast(case qasr.varianzni when '*' then 'X' else qasr.varianzni end as vdm_varianzni preserving type )` |
-| `CharcAttributeCodeVers` |  | |  | `version1` |
-| `InspectionResultCode2Vers` |  | |  | `version2` |
-| `InspectionResultCode3Vers` |  | |  | `version3` |
-| `InspectionResultCode4Vers` |  | |  | `version4` |
-| `InspectionResultCode5Vers` |  | |  | `version5` |
-| `CharacteristicAttributeCodeGrp` |  | |  | `gruppe1` |
-| `InspectionResultCodeGroup2` |  | |  | `gruppe2` |
-| `InspectionResultCodeGroup3` |  | |  | `gruppe3` |
-| `InspectionResultCodeGroup4` |  | |  | `gruppe4` |
-| `InspectionResultCodeGroup5` |  | |  | `gruppe5` |
-| `CharacteristicAttributeCode` |  | |  | `code1` |
-| `InspectionResultCode2` |  | |  | `code2` |
-| `InspectionResultCode3` |  | |  | `code3` |
-| `InspectionResultCode4` |  | |  | `code4` |
-| `InspectionResultCode5` |  | |  | `code5` |
-| `CharacteristicAttributeCatalog` |  | |  | `katalgart1` |
-| `InspectionResultCatalog2` |  | |  | `katalgart2` |
-| `InspectionResultCatalog3` |  | |  | `katalgart3` |
-| `InspectionResultCatalog4` |  | |  | `katalgart4` |
-| `InspectionResultCatalog5` |  | |  | `katalgart5` |
-| `DefectClass` |  | |  | `fehlklas` |
-| `CreatedByUser` |  | |  | `ersteller` |
-| `CreationDate` |  | |  | `erstelldat` |
-| `LastChangedByUser` |  | |  | `aenderer` |
-| `LastChangeDate` |  | |  | `aenderdat` |
-| `ChangedDateTime` |  | |  | `case qasr.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qasr.changeddatetime end` |
-| `ChangedTime` |  | |  | `zeitaend` |
-| `CreationTime` |  | |  | `zeiterstl` |
-| `InspResultNrOfAddlDcmlsPlaces` |  | |  | `diff_dec_places` |
-| `InspSpecIsChgDocRequired` |  | |  | `aendbeleg` |
-| `_InspectionLot` | | ✓ | | |
-| `_InspectionOperation` | | ✓ | | |
-| `_InspectionCharacteristic` | | ✓ | | |
-| `_InspectionSubsetInternalID` | | ✓ | | |
-| `_CharcAttributeCode` | | ✓ | | |
-| `_InspectionResultStatus` | | ✓ | | |
-| `_InspectionResultAttribute` | | ✓ | | |
-| `_InspectionResultOrigin` | | ✓ | | |
-| `_InspectionValuationResult` | | ✓ | | |
-| `_InspResultDynModifValuation` | | ✓ | | |
-| `_InspectionValuationRsltTxt` | | ✓ | | |
-| `_InspSubsetResultLongText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |  |  |
+| `InspectionCharacteristic` | ✓ | |  | `merknr` |  |  |
+| `InspectionSubsetInternalID` | ✓ | |  | `probenr` |  |  |
+| `Inspector` |  | |  | `pruefer` |  |  |
+| `InspectionResultStatus` |  | |  | `satzstatus` |  |  |
+| `InspectionResultOrigin` |  | |  | `qergdath` |  |  |
+| `InspectionStartDate` |  | |  | `pruefdatuv` |  |  |
+| `InspectionStartTime` |  | |  | `pruefzeitv` |  |  |
+| `InspectionEndDate` |  | |  | `pruefdatub` |  |  |
+| `InspectionEndTime` |  | |  | `pruefzeitb` |  |  |
+| `InspectionResultAttribute` |  | |  | `attribut` |  |  |
+| `InspectionValuationResult` |  | |  | `mbewertg` |  |  |
+| `InspResultDynModifValuation` |  | |  | `dbewertg` |  |  |
+| `InspectionResultMeanValue` |  | |  | `mittelwert` |  |  |
+| `InspectionResultHasMeanValue` |  | |  | `cast(case qasr.mittelwni when '*' then 'X' else qasr.mittelwni end as qninitial preserving type )` |  |  |
+| `InspectionResultMaximumValue` |  | |  | `maxwert` |  |  |
+| `InspResultHasMaximumValue` |  | |  | `cast(case qasr.maxwertni when '*' then 'X' else qasr.maxwertni end as qninitial preserving type )` |  |  |
+| `InspectionResultMinimumValue` |  | |  | `minwert` |  |  |
+| `InspResultHasMinimumValue` |  | |  | `cast(case qasr.minwertni when '*' then 'X' else qasr.minwertni end as qninitial preserving type )` |  |  |
+| `InspectionResultOriginalValue` |  | |  | `original_input` |  |  |
+| `InspResultValidValuesNumber` |  | |  | `anzwertg` |  |  |
+| `InspectionResultText` |  | |  | `cast( qasr.pruefbemkt as vdm_qinspectionsamplresultdesc preserving type )` |  |  |
+| `InspectionResultHasLongText` |  | |  | `prltextkz` |  |  |
+| `Language` |  | |  | `ltextspr` |  |  |
+| `InspRsltFreeDefinedTestEquip` |  | |  | `maschine` |  |  |
+| `InspRsltBelowToleranceValsNmbr` |  | |  | `anzwertu` |  |  |
+| `InspRsltAboveToleranceValsNmbr` |  | |  | `anzwerto` |  |  |
+| `InspResultNmbrOfRecordedRslts` |  | |  | `iststpumf` |  |  |
+| `InspRsltNonconformingValsNmbr` |  | |  | `anzfehleh` |  |  |
+| `InspectionNumberOfDefects` |  | |  | `anzfehler` |  |  |
+| `InspRsltAboveToleranceFraction` |  | |  | `anteilo` |  |  |
+| `InspRsltBelowToleranceFraction` |  | |  | `anteilu` |  |  |
+| `InspResultVariance` |  | |  | `varianz` |  |  |
+| `InspResultHasVariance` |  | |  | `cast(case qasr.varianzni when '*' then 'X' else qasr.varianzni end as vdm_varianzni preserving type )` |  |  |
+| `CharcAttributeCodeVers` |  | |  | `version1` |  |  |
+| `InspectionResultCode2Vers` |  | |  | `version2` |  |  |
+| `InspectionResultCode3Vers` |  | |  | `version3` |  |  |
+| `InspectionResultCode4Vers` |  | |  | `version4` |  |  |
+| `InspectionResultCode5Vers` |  | |  | `version5` |  |  |
+| `CharacteristicAttributeCodeGrp` |  | |  | `gruppe1` |  |  |
+| `InspectionResultCodeGroup2` |  | |  | `gruppe2` |  |  |
+| `InspectionResultCodeGroup3` |  | |  | `gruppe3` |  |  |
+| `InspectionResultCodeGroup4` |  | |  | `gruppe4` |  |  |
+| `InspectionResultCodeGroup5` |  | |  | `gruppe5` |  |  |
+| `CharacteristicAttributeCode` |  | |  | `code1` |  |  |
+| `InspectionResultCode2` |  | |  | `code2` |  |  |
+| `InspectionResultCode3` |  | |  | `code3` |  |  |
+| `InspectionResultCode4` |  | |  | `code4` |  |  |
+| `InspectionResultCode5` |  | |  | `code5` |  |  |
+| `CharacteristicAttributeCatalog` |  | |  | `katalgart1` |  |  |
+| `InspectionResultCatalog2` |  | |  | `katalgart2` |  |  |
+| `InspectionResultCatalog3` |  | |  | `katalgart3` |  |  |
+| `InspectionResultCatalog4` |  | |  | `katalgart4` |  |  |
+| `InspectionResultCatalog5` |  | |  | `katalgart5` |  |  |
+| `DefectClass` |  | |  | `fehlklas` |  |  |
+| `CreatedByUser` |  | |  | `ersteller` |  |  |
+| `CreationDate` |  | |  | `erstelldat` |  |  |
+| `LastChangedByUser` |  | |  | `aenderer` |  |  |
+| `LastChangeDate` |  | |  | `aenderdat` |  |  |
+| `ChangedDateTime` |  | |  | `case qasr.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qasr.changeddatetime end` |  |  |
+| `ChangedTime` |  | |  | `zeitaend` |  |  |
+| `CreationTime` |  | |  | `zeiterstl` |  |  |
+| `InspResultNrOfAddlDcmlsPlaces` |  | |  | `diff_dec_places` |  |  |
+| `InspSpecIsChgDocRequired` |  | |  | `aendbeleg` |  |  |
+| `_InspectionLot` | | ✓ | | | | |
+| `_InspectionOperation` | | ✓ | | | | |
+| `_InspectionCharacteristic` | | ✓ | | | | |
+| `_InspectionSubsetInternalID` | | ✓ | | | | |
+| `_CharcAttributeCode` | | ✓ | | | | |
+| `_InspectionResultStatus` | | ✓ | | | | |
+| `_InspectionResultAttribute` | | ✓ | | | | |
+| `_InspectionResultOrigin` | | ✓ | | | | |
+| `_InspectionValuationResult` | | ✓ | | | | |
+| `_InspResultDynModifValuation` | | ✓ | | | | |
+| `_InspectionValuationRsltTxt` | | ✓ | | | | |
+| `_InspSubsetResultLongText` | | ✓ | | | | |
 
 ## Associations
 

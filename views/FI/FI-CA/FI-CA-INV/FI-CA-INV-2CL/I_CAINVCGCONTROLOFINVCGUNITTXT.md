@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgControlOfInvoicingUnit` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as separate_inv_kk preserving type )` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgControlOfInvcgUnitTxt` |  | |  | `cast ( ddtext as separate_inv_txt_gfn_kk preserving type )` |
-| `_CAInvcgControlOfInvcgUnit` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgControlOfInvoicingUnit` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as separate_inv_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
+| `CAInvcgControlOfInvcgUnitTxt` |  | |  | `cast ( ddtext as separate_inv_txt_gfn_kk preserving type )` |  |  |
+| `_CAInvcgControlOfInvcgUnit` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

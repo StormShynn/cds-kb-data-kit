@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterial` | ✓ | |  | `stlnr` |
-| `BillOfMaterialVariant` | ✓ | |  | `stlal` |
-| `Material` | ✓ | |  | `matnr` |
-| `Plant` | ✓ | |  | `werks` |
-| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
-| `SalesOrder` | ✓ | |  | `vbeln` |
-| `SalesOrderItem` | ✓ | |  | `vbpos` |
-| `BillOfMaterialCategory` |  | |  | `cast ('K' as stlty preserving type)` |
-| `_BillOfMaterialUsage` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  | `stlnr` |  |  |
+| `BillOfMaterialVariant` | ✓ | |  | `stlal` |  |  |
+| `Material` | ✓ | |  | `matnr` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |  |  |
+| `SalesOrder` | ✓ | |  | `vbeln` |  |  |
+| `SalesOrderItem` | ✓ | |  | `vbpos` |  |  |
+| `BillOfMaterialCategory` |  | |  | `cast ('K' as stlty preserving type)` |  |  |
+| `_BillOfMaterialUsage` | | ✓ | | | | |
 
 ## Associations
 

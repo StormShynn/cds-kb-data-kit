@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EquipmentCategory` |  | |  | `eqtyp` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EquipmentCategory` |  | |  | `eqtyp` |  |  |
 
 ## Source Code
 

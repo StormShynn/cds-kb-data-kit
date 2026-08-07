@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLotOrigin` | ✓ | |  | `cast( tq33.herkunft as vdm_qherk preserving type )` |
-| `BillOfOperationsType` |  | |  | `cast( tq33.plnty as vdm_plnty preserving type )` |
-| `BillOfOperationsStatus` |  | |  | `cast( tq33.plnst as vdm_qplnst preserving type )` |
-| `_InspectionLotOrigin` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_BillOfOperationsStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLotOrigin` | ✓ | |  | `cast( tq33.herkunft as vdm_qherk preserving type )` |  |  |
+| `BillOfOperationsType` |  | |  | `cast( tq33.plnty as vdm_plnty preserving type )` |  |  |
+| `BillOfOperationsStatus` |  | |  | `cast( tq33.plnst as vdm_qplnst preserving type )` |  |  |
+| `_InspectionLotOrigin` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BillOfOperationsStatus` | | ✓ | | | | |
 
 ## Associations
 

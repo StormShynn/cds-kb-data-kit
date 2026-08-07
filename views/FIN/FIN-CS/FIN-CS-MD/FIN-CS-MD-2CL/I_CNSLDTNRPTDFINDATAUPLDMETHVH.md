@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CnsldtnRptdFinDataUploadMethod` | ✓ | | `_Source` | `CnsldtnRptdFinDataUploadMethod` |
-| `CnsldtnRptdFinDataUpldMethText` |  | |  | `cast(_Source._Text[1: Language=$session.system_language].CnsldtnRptdFinDataUpldMethText as fincs_description_text_30 preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnRptdFinDataUploadMethod` | ✓ | | `_Source` | `CnsldtnRptdFinDataUploadMethod` |  |  |
+| `CnsldtnRptdFinDataUpldMethText` |  | |  | `cast(_Source._Text[1: Language=$session.system_language].CnsldtnRptdFinDataUpldMethText as fincs_description_text_30 preserving type )` |  |  |
 
 ## Source Code
 

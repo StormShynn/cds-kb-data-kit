@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADocumentType` | ✓ | |  | `blart` |
-| `Language` | ✓ | |  | `spras` |
-| `CAApplicationArea` | ✓ | |  | `applk` |
-| `CADocumentTypeName` |  | |  | `cast( ltext as blart_text_kk preserving type )` |
-| `_ApplArea` |  | |  | `_CAApplicationArea` |
-| `_Language` | | ✓ | | |
-| `_CAApplicationArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADocumentType` | ✓ | |  | `blart` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
+| `CADocumentTypeName` |  | |  | `cast( ltext as blart_text_kk preserving type )` |  |  |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CAApplicationArea` | | ✓ | | | | |
 
 ## Associations
 

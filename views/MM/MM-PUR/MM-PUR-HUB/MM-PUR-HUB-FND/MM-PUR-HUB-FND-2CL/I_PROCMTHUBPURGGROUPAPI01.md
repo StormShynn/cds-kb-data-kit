@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProcurementHubSourceSystem` | ✓ | |  | `extsourcesystem` |
-| `ProcmtHubPurchasingGroup` | ✓ | |  | `purchasinggroup` |
-| `ProcmtHubPurchasingGroupName` |  | |  | `purchasinggroupname` |
-| `ProcmtHubPurgGroupPhoneNumber` |  | |  | `purchasinggroupphonenumber` |
-| `ProcmtHubPhoneNumber` |  | |  | `phonenumber` |
-| `ProcmtHubPhoneNumberExtension` |  | |  | `phonenumberextension` |
-| `ProcmtHubEmailAddress` |  | |  | `emailaddress` |
-| `_ProcmtHubBackendSourceSystem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcurementHubSourceSystem` | ✓ | |  | `extsourcesystem` |  |  |
+| `ProcmtHubPurchasingGroup` | ✓ | |  | `purchasinggroup` |  |  |
+| `ProcmtHubPurchasingGroupName` |  | |  | `purchasinggroupname` |  |  |
+| `ProcmtHubPurgGroupPhoneNumber` |  | |  | `purchasinggroupphonenumber` |  |  |
+| `ProcmtHubPhoneNumber` |  | |  | `phonenumber` |  |  |
+| `ProcmtHubPhoneNumberExtension` |  | |  | `phonenumberextension` |  |  |
+| `ProcmtHubEmailAddress` |  | |  | `emailaddress` |  |  |
+| `_ProcmtHubBackendSourceSystem` | | ✓ | | | | |
 
 ## Associations
 

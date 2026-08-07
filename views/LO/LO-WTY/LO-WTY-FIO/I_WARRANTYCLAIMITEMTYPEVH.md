@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WarrantyItemType` | ✓ | |  | `poskt_cust` |
-| `WarrantyClaimType` | ✓ | | `_WrntyClaimType` | `clmty` |
-| `WrntyControllingItemType` |  | |  | `poskt` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarrantyItemType` | ✓ | |  | `poskt_cust` |  |  |
+| `WarrantyClaimType` | ✓ | | `_WrntyClaimType` | `clmty` |  |  |
+| `WrntyControllingItemType` |  | |  | `poskt` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

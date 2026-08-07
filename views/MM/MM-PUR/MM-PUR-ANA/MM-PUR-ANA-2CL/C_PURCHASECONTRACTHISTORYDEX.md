@@ -31,34 +31,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractItem` | ✓ | |  |  |
-| `ReleaseOrder` | ✓ | |  |  |
-| `ReleaseOrderItem` | ✓ | |  |  |
-| `ReleaseOrderItemOrderQuantity` |  | |  |  |
-| `ReleaseOrderItemNetAmount` |  | |  |  |
-| `ReleaseOrderItemIsDeleted` |  | |  |  |
-| `ReleaseOrderDate` |  | |  |  |
-| `ReleaseOrderItemQuantityUnit` |  | |  |  |
-| `ReleaseOrderCurrency` |  | |  |  |
-| `ReleaseOrderItemLastChgDate` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchaseContractType` |  | | `_PurchaseContractAPI01` | `PurchaseContractType` |
-| `PurchasingGroup` |  | | `_PurchaseContractAPI01` | `PurchasingGroup` |
-| `_PurchaseContract` | | ✓ | | |
-| `_PurchaseContractItem` | | ✓ | | |
-| `_ReleaseOrderItemQuantityUnit` | | ✓ | | |
-| `_ReleaseOrderCurrency` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingContractType` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |  |  |
+| `ReleaseOrder` | ✓ | |  |  |  |  |
+| `ReleaseOrderItem` | ✓ | |  |  |  |  |
+| `ReleaseOrderItemOrderQuantity` |  | |  |  |  |  |
+| `ReleaseOrderItemNetAmount` |  | |  |  |  |  |
+| `ReleaseOrderItemIsDeleted` |  | |  |  |  |  |
+| `ReleaseOrderDate` |  | |  |  |  |  |
+| `ReleaseOrderItemQuantityUnit` |  | |  |  |  |  |
+| `ReleaseOrderCurrency` |  | |  |  |  |  |
+| `ReleaseOrderItemLastChgDate` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchaseContractType` |  | | `_PurchaseContractAPI01` | `PurchaseContractType` |  |  |
+| `PurchasingGroup` |  | | `_PurchaseContractAPI01` | `PurchasingGroup` |  |  |
+| `_PurchaseContract` | | ✓ | | | | |
+| `_PurchaseContractItem` | | ✓ | | | | |
+| `_ReleaseOrderItemQuantityUnit` | | ✓ | | | | |
+| `_ReleaseOrderCurrency` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingContractType` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
 
 ## Associations
 

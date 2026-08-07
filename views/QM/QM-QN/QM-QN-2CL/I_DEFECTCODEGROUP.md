@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DefectCodeGroup` | ✓ | |  | `cast( qpgr.codegruppe as vdm_qfegrp preserving type )` |
-| `CodeGroupIsInactive` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |
-| `CodeGroupStatus` |  | |  | `status` |
-| `_Text` | | ✓ | | |
-| `_DefectCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DefectCodeGroup` | ✓ | |  | `cast( qpgr.codegruppe as vdm_qfegrp preserving type )` |  |  |
+| `CodeGroupIsInactive` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |  |  |
+| `CodeGroupStatus` |  | |  | `status` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_DefectCode` | | ✓ | | | | |
 
 ## Associations
 

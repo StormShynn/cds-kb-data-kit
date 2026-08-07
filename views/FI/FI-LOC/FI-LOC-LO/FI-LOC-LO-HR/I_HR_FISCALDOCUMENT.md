@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `BusinessSpaceCode` | ✓ | |  | `bus_space_code` |
-| `ChargingDeviceCode` | ✓ | |  | `chg_dev_code` |
-| `FiscalDocument` | ✓ | |  | `fisc_document` |
-| `PostingFiscalYear` | ✓ | |  | `fiscal_year` |
-| `HR_FiscalDocumentType` | ✓ | |  | `appli` |
-| `PostingDate` |  | |  | `budat` |
-| `HR_CompanyOIB` |  | |  | `comp_oib` |
-| `FiscalPaymentMethod` |  | |  | `fisc_pay_meth` |
-| `HR_FiscalInvoiceStatus` |  | |  | `status` |
-| `RecordCreatedDate` |  | |  | `erdat` |
-| `ObjectCreatedByUser` |  | |  | `ernam` |
-| `InvoiceIssueTime` |  | |  | `erzet` |
-| `HR_UserOIB` |  | |  | `usr_oib` |
-| `DocumentReferenceID` |  | |  | `fisc_number` |
-| `SuplrBillgDocTotalGrossAmount` |  | |  | `amount` |
-| `SalesDocumentCurrency` |  | |  | `fisck` |
-| `DeliveryIsChanged` |  | |  | `later_del` |
-| `HR_InvoiceIsParagonInvoice` |  | |  | `paragon_inv` |
-| `HR_ParagonInvoice` |  | |  | `paragon_num` |
-| `IssuerProtectionCode` |  | |  | `prot_code` |
-| `InvoiceUniqueIdentifier` |  | |  | `jir` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `BusinessSpaceCode` | ✓ | |  | `bus_space_code` |  |  |
+| `ChargingDeviceCode` | ✓ | |  | `chg_dev_code` |  |  |
+| `FiscalDocument` | ✓ | |  | `fisc_document` |  |  |
+| `PostingFiscalYear` | ✓ | |  | `fiscal_year` |  |  |
+| `HR_FiscalDocumentType` | ✓ | |  | `appli` |  |  |
+| `PostingDate` |  | |  | `budat` |  |  |
+| `HR_CompanyOIB` |  | |  | `comp_oib` |  |  |
+| `FiscalPaymentMethod` |  | |  | `fisc_pay_meth` |  |  |
+| `HR_FiscalInvoiceStatus` |  | |  | `status` |  |  |
+| `RecordCreatedDate` |  | |  | `erdat` |  |  |
+| `ObjectCreatedByUser` |  | |  | `ernam` |  |  |
+| `InvoiceIssueTime` |  | |  | `erzet` |  |  |
+| `HR_UserOIB` |  | |  | `usr_oib` |  |  |
+| `DocumentReferenceID` |  | |  | `fisc_number` |  |  |
+| `SuplrBillgDocTotalGrossAmount` |  | |  | `amount` |  |  |
+| `SalesDocumentCurrency` |  | |  | `fisck` |  |  |
+| `DeliveryIsChanged` |  | |  | `later_del` |  |  |
+| `HR_InvoiceIsParagonInvoice` |  | |  | `paragon_inv` |  |  |
+| `HR_ParagonInvoice` |  | |  | `paragon_num` |  |  |
+| `IssuerProtectionCode` |  | |  | `prot_code` |  |  |
+| `InvoiceUniqueIdentifier` |  | |  | `jir` |  |  |
 
 ## Source Code
 

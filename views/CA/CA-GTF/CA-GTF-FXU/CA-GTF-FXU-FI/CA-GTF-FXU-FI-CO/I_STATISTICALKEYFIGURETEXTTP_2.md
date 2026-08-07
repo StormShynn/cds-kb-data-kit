@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `ControllingArea` | ✓ | |  |  |
-| `StatisticalKeyFigure` | ✓ | |  |  |
-| `LanguageForEdit` |  | |  |  |
-| `StatisticalKeyFigureName` |  | |  |  |
-| `_StatisticalKeyFigureTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `StatisticalKeyFigure` | ✓ | |  |  |  |  |
+| `LanguageForEdit` |  | |  |  |  |  |
+| `StatisticalKeyFigureName` |  | |  |  |  |  |
+| `_StatisticalKeyFigureTP` | | ✓ | | | | |
 
 ## Source Code
 

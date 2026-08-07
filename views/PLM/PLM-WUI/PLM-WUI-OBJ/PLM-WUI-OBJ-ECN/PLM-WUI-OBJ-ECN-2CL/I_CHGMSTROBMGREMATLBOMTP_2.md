@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeNumber` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `BillOfMaterialVariantUsage` | ✓ | |  |  |
-| `ChgNmbrAlternativeDateID` |  | |  |  |
-| `SAPObjectTechnicalID` |  | |  |  |
-| `ObjMgmtRecdDescription` |  | |  |  |
-| `ObjMgmtRecdItemUUID` |  | |  |  |
-| `ObjMgmtRecdLastChangedAt` |  | |  |  |
-| `ObjMgmtRecdLastChangedBy` |  | |  |  |
-| `ObjMgmtRecdCreationDate` |  | |  |  |
-| `ObjMgmtRecdCreatedBy` |  | |  |  |
-| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |
-| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |
-| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |
-| `ObjMgmtRecdObjIsBaselined` |  | |  |  |
-| `ObjMgmtRecdObjIsPlanned` |  | |  |  |
-| `ChgNmbrAlternativeDateCounter` |  | |  |  |
-| `ChangeNumberLastChgdDateTime` |  | |  |  |
-| `_ChangeMaster` | | ✓ | | |
-| `_ChangeMasterAltDate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |  |  |
+| `ChgNmbrAlternativeDateID` |  | |  |  |  |  |
+| `SAPObjectTechnicalID` |  | |  |  |  |  |
+| `ObjMgmtRecdDescription` |  | |  |  |  |  |
+| `ObjMgmtRecdItemUUID` |  | |  |  |  |  |
+| `ObjMgmtRecdLastChangedAt` |  | |  |  |  |  |
+| `ObjMgmtRecdLastChangedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdCreationDate` |  | |  |  |  |  |
+| `ObjMgmtRecdCreatedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |  |  |
+| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |  |  |
+| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |  |  |
+| `ObjMgmtRecdObjIsBaselined` |  | |  |  |  |  |
+| `ObjMgmtRecdObjIsPlanned` |  | |  |  |  |  |
+| `ChgNmbrAlternativeDateCounter` |  | |  |  |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |  |  |
+| `_ChangeMaster` | | ✓ | | | | |
+| `_ChangeMasterAltDate` | | ✓ | | | | |
 
 ## Source Code
 

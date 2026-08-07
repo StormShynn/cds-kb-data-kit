@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlantHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_plant preserving type )` |
-| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `PlantHierarchyName` |  | |  | `hrytxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlantHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_plant preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |  |  |
+| `PlantHierarchyName` |  | |  | `hrytxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrganization` | ✓ | | `_CnsldtnSalesOrganization` | `SalesOrganization` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnSalesOrganization` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnSalesOrgTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnSalesOrgTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrganization` | ✓ | | `_CnsldtnSalesOrganization` | `SalesOrganization` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnSalesOrganization` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnSalesOrgTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnSalesOrgTextTP` |  |  |
 
 ## Source Code
 

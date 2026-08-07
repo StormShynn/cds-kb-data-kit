@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `hrycls` |
-| `CostCtrActivityTypeHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_cctracttytpe)` |
-| `ValidityEndDate` | ✓ | |  | `hryvalto` |
-| `Language` | ✓ | |  | `spras` |
-| `ValidityStartDate` |  | |  | `hryvalfrom` |
-| `CostCtrActivityTypeHierName` |  | |  | `hrytxt` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `hrycls` |  |  |
+| `CostCtrActivityTypeHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_cctracttytpe)` |  |  |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |  |  |
+| `CostCtrActivityTypeHierName` |  | |  | `hrytxt` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

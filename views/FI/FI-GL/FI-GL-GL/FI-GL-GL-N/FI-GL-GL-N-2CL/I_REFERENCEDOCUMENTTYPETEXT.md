@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReferenceDocumentType` | ✓ | |  | `cast(awtyp as fis_awtyp preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `ReferenceDocumentTypeName` |  | |  | `otext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReferenceDocumentType` | ✓ | |  | `cast(awtyp as fis_awtyp preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ReferenceDocumentTypeName` |  | |  | `otext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

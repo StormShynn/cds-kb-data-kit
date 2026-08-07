@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
-| `ConditionClass` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as koaid )` |
-| `ConditionClassName` |  | |  | `cast ( ddtext as price_element_class_descr )` |
-| `_ConditionClass` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |  |  |
+| `ConditionClass` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as koaid )` |  |  |
+| `ConditionClassName` |  | |  | `cast ( ddtext as price_element_class_descr )` |  |  |
+| `_ConditionClass` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

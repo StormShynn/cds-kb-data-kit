@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARequestedPeriodForGLTransfer` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2 ) as wnper_kk )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARequestedPeriodForGLTransfer` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2 ) as wnper_kk )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

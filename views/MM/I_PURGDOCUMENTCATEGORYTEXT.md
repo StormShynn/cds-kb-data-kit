@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocumentCategory` | ✓ | |  | `cast (cast(substring(dd07t.domvalue_l ,1,1) as abap.char( 1 ) ) as ebstyp )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PurchasingDocumentCategoryName` |  | |  | `cast (dd07t.ddtext as purchasingdocumentcategoryname preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PurchasingDocumentCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocumentCategory` | ✓ | |  | `cast (cast(substring(dd07t.domvalue_l ,1,1) as abap.char( 1 ) ) as ebstyp )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PurchasingDocumentCategoryName` |  | |  | `cast (dd07t.ddtext as purchasingdocumentcategoryname preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
 
 ## Associations
 

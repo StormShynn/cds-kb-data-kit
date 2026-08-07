@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DepartureCountry` | ✓ | |  | `aland` |
-| `DepartureZone` | ✓ | |  | `azone` |
-| `DestinationCountry` | ✓ | |  | `lland` |
-| `ReceivingZone` | ✓ | |  | `lzone` |
-| `_DepartureCountry` | | ✓ | | |
-| `_DepartureZone` | | ✓ | | |
-| `_DestinationCountry` | | ✓ | | |
-| `_ReceivingZone` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DepartureCountry` | ✓ | |  | `aland` |  |  |
+| `DepartureZone` | ✓ | |  | `azone` |  |  |
+| `DestinationCountry` | ✓ | |  | `lland` |  |  |
+| `ReceivingZone` | ✓ | |  | `lzone` |  |  |
+| `_DepartureCountry` | | ✓ | | | | |
+| `_DepartureZone` | | ✓ | | | | |
+| `_DestinationCountry` | | ✓ | | | | |
+| `_ReceivingZone` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdItemType` | ✓ | |  | `item_type` |
-| `Language` | ✓ | |  | `langu` |
-| `TranspOrdItemTypeDesc` |  | |  | `cast (description_s as /scmtms/vdm_tor_itm_type_descr preserving type)` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdItemType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemType` | ✓ | |  | `item_type` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `TranspOrdItemTypeDesc` |  | |  | `cast (description_s as /scmtms/vdm_tor_itm_type_descr preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdItemType` | | ✓ | | | | |
 
 ## Associations
 

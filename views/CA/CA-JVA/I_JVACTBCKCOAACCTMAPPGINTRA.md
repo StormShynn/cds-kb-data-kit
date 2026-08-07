@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `JVAChartOfAccounts` | ✓ | |  |  |
-| `FromGLAccount` | ✓ | |  |  |
-| `ToGLAccount` |  | |  |  |
-| `CutbackAccount` |  | |  |  |
-| `JVAIsToKeepOriginalAccount` |  | |  |  |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_FromGLAccount` | | ✓ | | |
-| `_ToGLAccount` | | ✓ | | |
-| `_CutbackAccount` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JVAChartOfAccounts` | ✓ | |  |  |  |  |
+| `FromGLAccount` | ✓ | |  |  |  |  |
+| `ToGLAccount` |  | |  |  |  |  |
+| `CutbackAccount` |  | |  |  |  |  |
+| `JVAIsToKeepOriginalAccount` |  | |  |  |  |  |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_FromGLAccount` | | ✓ | | | | |
+| `_ToGLAccount` | | ✓ | | | | |
+| `_CutbackAccount` | | ✓ | | | | |
 
 ## Associations
 

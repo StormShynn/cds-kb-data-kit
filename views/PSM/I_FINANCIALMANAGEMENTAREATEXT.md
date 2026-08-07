@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialManagementArea` | ✓ | |  | `fikrs` |
-| `Language` | ✓ | |  | `spras` |
-| `FinancialManagementAreaName` |  | |  | `fitxt` |
-| `_Language` | | ✓ | | |
-| `_FinancialManagementArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  | `fikrs` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `FinancialManagementAreaName` |  | |  | `fitxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_FinancialManagementArea` | | ✓ | | | | |
 
 ## Associations
 

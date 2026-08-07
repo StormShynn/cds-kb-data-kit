@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `CITClassfctnItemInconstcyCode` | ✓ | |  | `cast( dd07t.domvalue_l as ficite_amnt_inconsistency )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `CITClfnItemInconstcyCodeDesc` |  | |  | `cast( dd07t.ddtext as ficite_amnt_inconsistency_desc )` |
-| `_Language` | | ✓ | | |
-| `_Value` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `CITClassfctnItemInconstcyCode` | ✓ | |  | `cast( dd07t.domvalue_l as ficite_amnt_inconsistency )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CITClfnItemInconstcyCodeDesc` |  | |  | `cast( dd07t.ddtext as ficite_amnt_inconsistency_desc )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Value` | | ✓ | | | | |
 
 ## Associations
 

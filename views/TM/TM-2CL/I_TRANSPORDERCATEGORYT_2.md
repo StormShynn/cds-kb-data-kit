@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/vdm_tor_category preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TransportationOrderCatDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tor_cat_desc preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_TransportationOrderCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/vdm_tor_category preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TransportationOrderCatDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tor_cat_desc preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TransportationOrderCategory` | | ✓ | | | | |
 
 ## Associations
 

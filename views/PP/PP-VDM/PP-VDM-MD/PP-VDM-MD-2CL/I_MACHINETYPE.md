@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MachineType` | ✓ | |  | `matyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MachineType` | ✓ | |  | `matyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

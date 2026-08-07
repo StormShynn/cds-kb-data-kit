@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrderPlanningCode` | ✓ | |  | `cast(dd07l.domvalue_l as auf_plknz)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrderPlanningCode` | ✓ | |  | `cast(dd07l.domvalue_l as auf_plknz)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

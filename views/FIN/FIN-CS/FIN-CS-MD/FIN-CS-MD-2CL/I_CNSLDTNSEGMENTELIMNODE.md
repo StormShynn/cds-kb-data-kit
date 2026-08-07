@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Segment` | ✓ | |  | `cast(left(_node.nodevalue, 25) as fincs_elim_segment preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Segment` | ✓ | |  | `cast(left(_node.nodevalue, 25) as fincs_elim_segment preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

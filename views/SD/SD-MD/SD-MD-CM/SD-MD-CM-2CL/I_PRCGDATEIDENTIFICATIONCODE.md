@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PricingDateIdentificationCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kprdt )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingDateIdentificationCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kprdt )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,53 +29,53 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankStatementShortID` | ✓ | |  | `StatementShortID` |
-| `BankStatementItem` | ✓ | |  | `StatementItem` |
-| `CompanyCode` |  | |  |  |
-| `BankStatementPostingRule` |  | |  | `cast ( BankStmtItem.PostingRule as farp_vgint )` |
-| `PaymentTransaction` |  | |  | `cast ( BankStmtItem.PaymentTransaction as farp_vorgc )` |
-| `InterpretationAlgorithm` |  | |  |  |
-| `MemoLine` |  | | `_MemoLine` | `MemoLine` |
-| `ValueDate` |  | |  | `cast ( BankStmtItem.ValueDate as farp_valut )` |
-| `BankPostingDate` |  | |  | `cast ( BankStmtItem.BankPostingDate as farp_bvdat)` |
-| `PostingDate` |  | |  |  |
-| `ValueDateTime` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `OriginalCurrency` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  | `cast ( case BankStmtItem.DebitCreditCode when 'D' then - abs(BankStmtItem.AmountInAccountCurrency) when 'S' then - abs(BankStmtItem.AmountInAccountCurrency) else BankStmtItem.AmountInAccountCurrency end as kwbtr_eb)` |
-| `AmountInOriginalCurrency` |  | |  | `cast ( case BankStmtItem.DebitCreditCode when 'D' then - abs(BankStmtItem.ForeignCurrencyAmount) when 'S' then - abs(BankStmtItem.ForeignCurrencyAmount) else BankStmtItem.ForeignCurrencyAmount end as farp_fwbtr )` |
-| `ExchangeRate` |  | |  | `cast ( BankStmtItem.ExchangeRate as far_curr_rate )` |
-| `FeeAmountInTransactionCrcy` |  | |  |  |
-| `FeeAmountInOriginalCrcy` |  | |  | `cast ( BankStmtItem.FeeAmountInOriginalCrcy as farp_spesf )` |
-| `Supplier` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'K' then BankStmtItem.PaymentAdviceAccount else '' end as lifnr )` |
-| `Customer` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'D' then BankStmtItem.PaymentAdviceAccount else '' end as kunnr )` |
-| `GLAccount` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'S' then BankStmtItem.PaymentAdviceAccount else '' end as farp_hkont )` |
-| `BusinessPartnerName` |  | |  | `cast ( BankStmtItem.BusinessPartnerName as farp_partn )` |
-| `PaymentManualTransacType` |  | |  | `cast ( BankStmtItem.PaymentManualTransacType as far_vgman )` |
-| `PaymentExternalTransacType` |  | |  | `cast ( BankStmtItem.PaymentExternalTransacType as farp_vgext )` |
-| `PaymentAdvice` |  | |  |  |
-| `Cheque` |  | |  | `case when BankStmtItem.CheckType = 'C' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = 'C' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end` |
-| `PaymentMediumReference` |  | |  | `cast ( case when BankStmtItem.CheckType = 'D' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = 'D' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end as far_chect )` |
-| `CustomerReferenceNumber` |  | |  | `cast ( case when BankStmtItem.CheckType = '' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = '' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end as far_chect_orig )` |
-| `BankLedgerDocument` |  | |  | `cast ( BankStmtItem.BankLedgerDocument as farp_belnr_bank_ledger )` |
-| `SubledgerDocument` |  | |  | `cast ( BankStmtItem.SubledgerDocument as farp_nbbln )` |
-| `BankLedgerOnAccountDocument` |  | |  | `cast ( BankStmtItem.BankLedgerOnAccountDocument as farp_ak1bl )` |
-| `SubledgerOnAccountDocument` |  | |  | `cast ( BankStmtItem.SubledgerOnAccountDocument as farp_akbln )` |
-| `FiscalYear` |  | |  |  |
-| `PartnerBankCountry` |  | |  | `cast ( BankStmtItem.PartnerBankCountry as farp_pabks )` |
-| `PartnerBank` |  | |  | `cast ( BankStmtItem.PartnerBank as farp_pablz )` |
-| `PartnerBankSWIFTCode` |  | |  | `cast ( BankStmtItem.PartnerBankSWIFTCode as paswi_eb)` |
-| `PartnerBankAccount` |  | |  | `cast ( BankStmtItem.PartnerBankAccount as farp_pakto )` |
-| `BankStatementItemDescription1` |  | |  | `ItemDescription1` |
-| `BankStatementItemDescription2` |  | |  | `ItemDescription2` |
-| `PartnerBankIBAN` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `BankReference` |  | |  | `cast ( BankStmtItem.BankReference as farp_vgref )` |
-| `IsCompleted` |  | |  |  |
-| `_Currency` | | ✓ | | |
-| `_OriginalCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankStatementShortID` | ✓ | |  | `StatementShortID` |  |  |
+| `BankStatementItem` | ✓ | |  | `StatementItem` |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BankStatementPostingRule` |  | |  | `cast ( BankStmtItem.PostingRule as farp_vgint )` |  |  |
+| `PaymentTransaction` |  | |  | `cast ( BankStmtItem.PaymentTransaction as farp_vorgc )` |  |  |
+| `InterpretationAlgorithm` |  | |  |  |  |  |
+| `MemoLine` |  | | `_MemoLine` | `MemoLine` |  |  |
+| `ValueDate` |  | |  | `cast ( BankStmtItem.ValueDate as farp_valut )` |  |  |
+| `BankPostingDate` |  | |  | `cast ( BankStmtItem.BankPostingDate as farp_bvdat)` |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ValueDateTime` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `OriginalCurrency` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  | `cast ( case BankStmtItem.DebitCreditCode when 'D' then - abs(BankStmtItem.AmountInAccountCurrency) when 'S' then - abs(BankStmtItem.AmountInAccountCurrency) else BankStmtItem.AmountInAccountCurrency end as kwbtr_eb)` |  |  |
+| `AmountInOriginalCurrency` |  | |  | `cast ( case BankStmtItem.DebitCreditCode when 'D' then - abs(BankStmtItem.ForeignCurrencyAmount) when 'S' then - abs(BankStmtItem.ForeignCurrencyAmount) else BankStmtItem.ForeignCurrencyAmount end as farp_fwbtr )` |  |  |
+| `ExchangeRate` |  | |  | `cast ( BankStmtItem.ExchangeRate as far_curr_rate )` |  |  |
+| `FeeAmountInTransactionCrcy` |  | |  |  |  |  |
+| `FeeAmountInOriginalCrcy` |  | |  | `cast ( BankStmtItem.FeeAmountInOriginalCrcy as farp_spesf )` |  |  |
+| `Supplier` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'K' then BankStmtItem.PaymentAdviceAccount else '' end as lifnr )` |  |  |
+| `Customer` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'D' then BankStmtItem.PaymentAdviceAccount else '' end as kunnr )` |  |  |
+| `GLAccount` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'S' then BankStmtItem.PaymentAdviceAccount else '' end as farp_hkont )` |  |  |
+| `BusinessPartnerName` |  | |  | `cast ( BankStmtItem.BusinessPartnerName as farp_partn )` |  |  |
+| `PaymentManualTransacType` |  | |  | `cast ( BankStmtItem.PaymentManualTransacType as far_vgman )` |  |  |
+| `PaymentExternalTransacType` |  | |  | `cast ( BankStmtItem.PaymentExternalTransacType as farp_vgext )` |  |  |
+| `PaymentAdvice` |  | |  |  |  |  |
+| `Cheque` |  | |  | `case when BankStmtItem.CheckType = 'C' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = 'C' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end` |  |  |
+| `PaymentMediumReference` |  | |  | `cast ( case when BankStmtItem.CheckType = 'D' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = 'D' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end as far_chect )` |  |  |
+| `CustomerReferenceNumber` |  | |  | `cast ( case when BankStmtItem.CheckType = '' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = '' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end as far_chect_orig )` |  |  |
+| `BankLedgerDocument` |  | |  | `cast ( BankStmtItem.BankLedgerDocument as farp_belnr_bank_ledger )` |  |  |
+| `SubledgerDocument` |  | |  | `cast ( BankStmtItem.SubledgerDocument as farp_nbbln )` |  |  |
+| `BankLedgerOnAccountDocument` |  | |  | `cast ( BankStmtItem.BankLedgerOnAccountDocument as farp_ak1bl )` |  |  |
+| `SubledgerOnAccountDocument` |  | |  | `cast ( BankStmtItem.SubledgerOnAccountDocument as farp_akbln )` |  |  |
+| `FiscalYear` |  | |  |  |  |  |
+| `PartnerBankCountry` |  | |  | `cast ( BankStmtItem.PartnerBankCountry as farp_pabks )` |  |  |
+| `PartnerBank` |  | |  | `cast ( BankStmtItem.PartnerBank as farp_pablz )` |  |  |
+| `PartnerBankSWIFTCode` |  | |  | `cast ( BankStmtItem.PartnerBankSWIFTCode as paswi_eb)` |  |  |
+| `PartnerBankAccount` |  | |  | `cast ( BankStmtItem.PartnerBankAccount as farp_pakto )` |  |  |
+| `BankStatementItemDescription1` |  | |  | `ItemDescription1` |  |  |
+| `BankStatementItemDescription2` |  | |  | `ItemDescription2` |  |  |
+| `PartnerBankIBAN` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `BankReference` |  | |  | `cast ( BankStmtItem.BankReference as farp_vgref )` |  |  |
+| `IsCompleted` |  | |  |  |  |  |
+| `_Currency` | | ✓ | | | | |
+| `_OriginalCurrency` | | ✓ | | | | |
 
 ## Associations
 

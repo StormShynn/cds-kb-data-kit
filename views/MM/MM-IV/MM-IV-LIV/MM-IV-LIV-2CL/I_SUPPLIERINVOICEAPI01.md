@@ -30,98 +30,98 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `SupplierInvoiceWthnFiscalYear` |  | |  | `cast( concat(SupplierInvoice , FiscalYear) as mmiv_belnr_gjahr_internal )` |
-| `CompanyCode` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `InvoiceReceiptDate` |  | |  |  |
-| `SupplierInvoiceIDByInvcgParty` |  | |  |  |
-| `InvoicingParty` |  | |  |  |
-| `IsInvoice` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `InvoiceGrossAmount` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `SupplierInvoiceStatus` |  | |  |  |
-| `SupplierInvoiceOrigin` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `InvoiceReference` |  | |  |  |
-| `InvoiceReferenceFiscalYear` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `TaxIsCalculatedAutomatically` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `SuplrInvcLstChgDteTmeTxt` |  | |  | `cast( SuplrInvcLastChangeDateTime as mmiv_si_lastchangedatetime_txt )` |
-| `UnplannedDeliveryCost` |  | |  |  |
-| `UnplannedDeliveryCostTaxCode` |  | |  |  |
-| `UnplndDelivCostTaxJurisdiction` |  | |  |  |
-| `DocumentHeaderText` |  | |  |  |
-| `SupplierPostingLineItemText` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `DueCalculationBaseDate` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `ManualCashDiscount` |  | |  |  |
-| `FixedCashDiscount` |  | |  |  |
-| `StateCentralBankPaymentReason` |  | |  |  |
-| `SupplyingCountry` |  | |  |  |
-| `BPBankAccountInternalID` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `PaymentReference` |  | |  |  |
-| `PaytSlipWthRefSubscriber` |  | |  |  |
-| `PaytSlipWthRefCheckDigit` |  | |  |  |
-| `PaytSlipWthRefReference` |  | |  |  |
-| `PaymentReason` |  | |  |  |
-| `ReverseDocument` |  | |  |  |
-| `ReverseDocumentFiscalYear` |  | |  |  |
-| `SuplrInvcManuallyReducedAmount` |  | |  |  |
-| `SuplrInvcAutomReducedAmount` |  | |  |  |
-| `TaxDeterminationDate` |  | |  |  |
-| `TaxReportingDate` |  | |  |  |
-| `TaxFulfillmentDate` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `UnplndDeliveryCostTaxCountry` |  | |  |  |
-| `DeliveryOfGoodsReportingCntry` |  | |  |  |
-| `SupplierVATRegistration` |  | |  |  |
-| `IsEUTriangularDeal` |  | |  |  |
-| `SuplrInvcDebitCrdtCodeDelivery` |  | |  |  |
-| `SuplrInvcDebitCrdtCodeReturns` |  | |  |  |
-| `ElectronicInvoiceUUID` |  | |  |  |
-| `JrnlEntryCntrySpecificRef1` |  | |  |  |
-| `JrnlEntryCntrySpecificDate1` |  | |  |  |
-| `JrnlEntryCntrySpecificRef2` |  | |  |  |
-| `JrnlEntryCntrySpecificDate2` |  | |  |  |
-| `JrnlEntryCntrySpecificRef3` |  | |  |  |
-| `JrnlEntryCntrySpecificDate3` |  | |  |  |
-| `JrnlEntryCntrySpecificRef4` |  | |  |  |
-| `JrnlEntryCntrySpecificDate4` |  | |  |  |
-| `JrnlEntryCntrySpecificRef5` |  | |  |  |
-| `JrnlEntryCntrySpecificDate5` |  | |  |  |
-| `JrnlEntryCntrySpecificBP1` |  | |  |  |
-| `JrnlEntryCntrySpecificBP2` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_SuplrInvcItemPurOrdRefAPI01` | | ✓ | | |
-| `_SuplrInvoiceItemGLAcctAPI01` | | ✓ | | |
-| `_SuplrInvcItemMaterialAPI01` | | ✓ | | |
-| `_SuplrInvcItemAssetAPI01` | | ✓ | | |
-| `_SupplierInvoiceTaxAPI01` | | ✓ | | |
-| `_SuplrInvcHeaderWhldgTaxAPI01` | | ✓ | | |
-| `_SuplrInvcSeldPurgDocAPI01` | | ✓ | | |
-| `_SuplrInvcSeldDelivNoteAPI01` | | ✓ | | |
-| `_SuplrInvcSeldInbBOLAPI01` | | ✓ | | |
-| `_SuplrInvcSeldSESLeanAPI01` | | ✓ | | |
-| `_SuplrInvcItemCsgnmtAPI01` | | ✓ | | |
-| `_SupplierInvoiceBlockAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `SupplierInvoiceWthnFiscalYear` |  | |  | `cast( concat(SupplierInvoice , FiscalYear) as mmiv_belnr_gjahr_internal )` |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `InvoiceReceiptDate` |  | |  |  |  |  |
+| `SupplierInvoiceIDByInvcgParty` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `IsInvoice` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `InvoiceGrossAmount` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `SupplierInvoiceStatus` |  | |  |  |  |  |
+| `SupplierInvoiceOrigin` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `InvoiceReference` |  | |  |  |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `TaxIsCalculatedAutomatically` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `SuplrInvcLstChgDteTmeTxt` |  | |  | `cast( SuplrInvcLastChangeDateTime as mmiv_si_lastchangedatetime_txt )` |  |  |
+| `UnplannedDeliveryCost` |  | |  |  |  |  |
+| `UnplannedDeliveryCostTaxCode` |  | |  |  |  |  |
+| `UnplndDelivCostTaxJurisdiction` |  | |  |  |  |  |
+| `DocumentHeaderText` |  | |  |  |  |  |
+| `SupplierPostingLineItemText` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `DueCalculationBaseDate` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `ManualCashDiscount` |  | |  |  |  |  |
+| `FixedCashDiscount` |  | |  |  |  |  |
+| `StateCentralBankPaymentReason` |  | |  |  |  |  |
+| `SupplyingCountry` |  | |  |  |  |  |
+| `BPBankAccountInternalID` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `PaymentReference` |  | |  |  |  |  |
+| `PaytSlipWthRefSubscriber` |  | |  |  |  |  |
+| `PaytSlipWthRefCheckDigit` |  | |  |  |  |  |
+| `PaytSlipWthRefReference` |  | |  |  |  |  |
+| `PaymentReason` |  | |  |  |  |  |
+| `ReverseDocument` |  | |  |  |  |  |
+| `ReverseDocumentFiscalYear` |  | |  |  |  |  |
+| `SuplrInvcManuallyReducedAmount` |  | |  |  |  |  |
+| `SuplrInvcAutomReducedAmount` |  | |  |  |  |  |
+| `TaxDeterminationDate` |  | |  |  |  |  |
+| `TaxReportingDate` |  | |  |  |  |  |
+| `TaxFulfillmentDate` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `UnplndDeliveryCostTaxCountry` |  | |  |  |  |  |
+| `DeliveryOfGoodsReportingCntry` |  | |  |  |  |  |
+| `SupplierVATRegistration` |  | |  |  |  |  |
+| `IsEUTriangularDeal` |  | |  |  |  |  |
+| `SuplrInvcDebitCrdtCodeDelivery` |  | |  |  |  |  |
+| `SuplrInvcDebitCrdtCodeReturns` |  | |  |  |  |  |
+| `ElectronicInvoiceUUID` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef1` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate1` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef2` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate2` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef3` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate3` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef4` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate4` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef5` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate5` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificBP1` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificBP2` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_SuplrInvcItemPurOrdRefAPI01` | | ✓ | | | | |
+| `_SuplrInvoiceItemGLAcctAPI01` | | ✓ | | | | |
+| `_SuplrInvcItemMaterialAPI01` | | ✓ | | | | |
+| `_SuplrInvcItemAssetAPI01` | | ✓ | | | | |
+| `_SupplierInvoiceTaxAPI01` | | ✓ | | | | |
+| `_SuplrInvcHeaderWhldgTaxAPI01` | | ✓ | | | | |
+| `_SuplrInvcSeldPurgDocAPI01` | | ✓ | | | | |
+| `_SuplrInvcSeldDelivNoteAPI01` | | ✓ | | | | |
+| `_SuplrInvcSeldInbBOLAPI01` | | ✓ | | | | |
+| `_SuplrInvcSeldSESLeanAPI01` | | ✓ | | | | |
+| `_SuplrInvcItemCsgnmtAPI01` | | ✓ | | | | |
+| `_SupplierInvoiceBlockAPI01` | | ✓ | | | | |
 
 ## Associations
 

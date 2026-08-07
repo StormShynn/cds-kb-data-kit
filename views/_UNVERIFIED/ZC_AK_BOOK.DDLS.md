@@ -33,26 +33,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BookingUUID` | ✓ | |  |  |
-| `TravelUUID` |  | |  |  |
-| `BookingID` |  | |  |  |
-| `BookingDate` |  | |  |  |
-| `CustomerID` |  | |  |  |
-| `CustomerName` |  | | `_Customer` | `LastName` |
-| `CarrierID` |  | |  |  |
-| `CarrierName` |  | | `_Carrier` | `Name` |
-| `ConnectionID` |  | |  | `} ] ConnectionID` |
-| `FlightDate` |  | |  |  |
-| `FlightPrice` |  | |  |  |
-| `CurrencyCode` |  | |  |  |
-| `LocalLastChangedAt` |  | |  |  |
-| `_Travel` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Carrier` | | ✓ | | |
-| `_Connection` | | ✓ | | |
-| `_Flight` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BookingUUID` | ✓ | |  |  |  |  |
+| `TravelUUID` |  | |  |  |  |  |
+| `BookingID` |  | |  |  |  |  |
+| `BookingDate` |  | |  |  |  |  |
+| `CustomerID` |  | |  |  |  |  |
+| `CustomerName` |  | | `_Customer` | `LastName` |  |  |
+| `CarrierID` |  | |  |  |  |  |
+| `CarrierName` |  | | `_Carrier` | `Name` |  |  |
+| `ConnectionID` |  | |  |  |  |  |
+| `FlightDate` |  | |  |  |  |  |
+| `FlightPrice` |  | |  |  |  |  |
+| `CurrencyCode` |  | |  |  |  |  |
+| `LocalLastChangedAt` |  | |  |  |  |  |
+| `_Travel` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Carrier` | | ✓ | | | | |
+| `_Connection` | | ✓ | | | | |
+| `_Flight` | | ✓ | | | | |
 
 ## Source Code
 

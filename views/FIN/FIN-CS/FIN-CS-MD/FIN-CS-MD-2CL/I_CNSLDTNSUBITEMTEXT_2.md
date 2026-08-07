@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(_Source.langu as spras preserving type )` |
-| `CnsldtnSubitemCategory` | ✓ | |  | `cast(_Source.sityp as fincs_subitemcategory preserving type )` |
-| `CnsldtnSubitem` |  | |  | `}] key cast(_Source.sitem as fincs_subitem preserving type )` |
-| `CnsldtnSubitemText` |  | |  | `cast(_Source.txtsh as fincs_subitemtext preserving type )` |
-| `CnsldtnSubitemMediumText` |  | |  | `cast(_Source.txtmi as fincs_subitemmediumtext preserving type )` |
-| `_Language` | | ✓ | | |
-| `_SubitemCategory` | | ✓ | | |
-| `_Subitem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_Source.langu as spras preserving type )` |  |  |
+| `CnsldtnSubitemCategory` | ✓ | |  | `cast(_Source.sityp as fincs_subitemcategory preserving type )` |  |  |
+| `CnsldtnSubitem` | ✓ | |  | `cast(_Source.sitem as fincs_subitem preserving type )` |  |  |
+| `CnsldtnSubitemText` |  | |  | `cast(_Source.txtsh as fincs_subitemtext preserving type )` |  |  |
+| `CnsldtnSubitemMediumText` |  | |  | `cast(_Source.txtmi as fincs_subitemmediumtext preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_SubitemCategory` | | ✓ | | | | |
+| `_Subitem` | | ✓ | | | | |
 
 ## Associations
 

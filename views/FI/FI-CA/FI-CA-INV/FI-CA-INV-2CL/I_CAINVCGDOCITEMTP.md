@@ -30,98 +30,98 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  |  |
-| `CAInvcgDocItem` | ✓ | |  |  |
-| `CAInvcgDocumentItemType` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Division` |  | |  |  |
-| `CAContract` |  | |  |  |
-| `CAProviderContractItemNumber` |  | |  |  |
-| `CASubApplication` |  | |  |  |
-| `CAInvcgItmAltvBusinessPartner` |  | |  |  |
-| `CAInvcgItmAltvContractAccount` |  | |  |  |
-| `CAInvcgDocItmAltvMDCat` |  | |  |  |
-| `CAMainTransaction` |  | |  |  |
-| `CASubTransaction` |  | |  |  |
-| `CAIsDocItemSimulated` |  | |  |  |
-| `CAInvcgDocItemIsReversal` |  | |  |  |
-| `CAInvcgIsInFinalAmt` |  | |  |  |
-| `CAInvcgIsItemPostingRelevant` |  | |  |  |
-| `CAInvcgIsNotBPRelevant` |  | |  |  |
-| `CAInvcgIsItemPrintingRelevant` |  | |  |  |
-| `CAInvcgSubstituteGroupPrinting` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `CAAmountInTransactionCurrency` |  | |  |  |
-| `CAInvcgDocItmLoclCurrency` |  | |  |  |
-| `CAInvcgDocItmAmtInLoclCurrency` |  | |  |  |
-| `CAInvcgDocItmTaxBaseAmtInLCrcy` |  | |  |  |
-| `CACurrencySourceDocument` |  | |  |  |
-| `CAInvcgSourceDocumentAmount` |  | |  |  |
-| `CAGroupingCurrencyTranslation` |  | |  |  |
-| `CAAccountDeterminationCode` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CATaxIsIncluded` |  | |  |  |
-| `CATaxDetnType` |  | |  |  |
-| `CAInvcgTaxGroupingKey` |  | |  |  |
-| `CAOtherTaxCode` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `CATaxDeterminationCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `CATransactionKeyAccountDetn` |  | |  |  |
-| `CAConditionType` |  | |  |  |
-| `CATaxRateInPercent` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  |  |
-| `CAInvcgOffsettingCategory` |  | |  |  |
-| `CAInvcgOffsettingProcedure` |  | |  |  |
-| `CAInvcgOffsettingAction` |  | |  |  |
-| `CATaxDate` |  | |  |  |
-| `CATaxBaseAmount` |  | |  |  |
-| `CATaxAmountInTransCurrency` |  | |  |  |
-| `CATaxPortionInTransCurrency` |  | |  |  |
-| `WithholdingTaxCode` |  | |  |  |
-| `CAIsDownPaymentRequest` |  | |  |  |
-| `CAStatisticalItemCode` |  | |  |  |
-| `CAInvcgOffsettingGroup` |  | |  |  |
-| `CAInvcgDfrrdRevenueStatus` |  | |  |  |
-| `CAIsRevenueAccountingRelevant` |  | |  |  |
-| `CAInvcgRevenueGrouping` |  | |  |  |
-| `CARevenueAccountingServiceType` |  | |  |  |
-| `CAInvcgAccrualPostingType` |  | |  |  |
-| `CAIsPrepaid` |  | |  |  |
-| `UnitOfMeasure` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `CANetDueDate` |  | |  |  |
-| `CACashDiscountDueDate` |  | |  |  |
-| `CACashDiscountRate` |  | |  |  |
-| `CAInvcgDocItemDefStatus` |  | |  |  |
-| `CAItemPeriodStartDate` |  | |  |  |
-| `CAItemPeriodEndDate` |  | |  |  |
-| `CAInvcgRefPostingDocType` |  | |  |  |
-| `CADocumentNumber` |  | |  |  |
-| `CAGroupingKeyDocumentItems` |  | |  |  |
-| `CAInvcgGroupingKey` |  | |  |  |
-| `CAClearingDocumentNumber` |  | |  |  |
-| `CAClearingAmountInTransCrcy` |  | |  |  |
-| `CAInvcgDocItemCrtnMethod` |  | |  |  |
-| `CAInvcgFunction` |  | |  |  |
-| `CAInvcgSourceDocumentCat` |  | |  |  |
-| `CAInvcgSourceDocumentNumber` |  | |  |  |
-| `CAInvcgDocItemSourceItmCat` |  | |  |  |
-| `CAInvcgSourceDocumentItem` |  | |  |  |
-| `CABllbleItmDiscountKey` |  | |  |  |
-| `CABllbleItmDiscountVersion` |  | |  |  |
-| `CAInvcgCorrectionCategory` |  | |  |  |
-| `CABillToParty` |  | |  |  |
-| `CABillToRegion` |  | |  |  |
-| `CABillFromRegion` |  | |  |  |
-| `CAControlCode` |  | |  |  |
-| `CASupplyRegion` |  | |  |  |
-| `CABillToCountry` |  | |  |  |
-| `_CAInvcgDocument` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvoicingDocument` | ✓ | |  |  |  |  |
+| `CAInvcgDocItem` | ✓ | |  |  |  |  |
+| `CAInvcgDocumentItemType` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `CAContract` |  | |  |  |  |  |
+| `CAProviderContractItemNumber` |  | |  |  |  |  |
+| `CASubApplication` |  | |  |  |  |  |
+| `CAInvcgItmAltvBusinessPartner` |  | |  |  |  |  |
+| `CAInvcgItmAltvContractAccount` |  | |  |  |  |  |
+| `CAInvcgDocItmAltvMDCat` |  | |  |  |  |  |
+| `CAMainTransaction` |  | |  |  |  |  |
+| `CASubTransaction` |  | |  |  |  |  |
+| `CAIsDocItemSimulated` |  | |  |  |  |  |
+| `CAInvcgDocItemIsReversal` |  | |  |  |  |  |
+| `CAInvcgIsInFinalAmt` |  | |  |  |  |  |
+| `CAInvcgIsItemPostingRelevant` |  | |  |  |  |  |
+| `CAInvcgIsNotBPRelevant` |  | |  |  |  |  |
+| `CAInvcgIsItemPrintingRelevant` |  | |  |  |  |  |
+| `CAInvcgSubstituteGroupPrinting` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `CAAmountInTransactionCurrency` |  | |  |  |  |  |
+| `CAInvcgDocItmLoclCurrency` |  | |  |  |  |  |
+| `CAInvcgDocItmAmtInLoclCurrency` |  | |  |  |  |  |
+| `CAInvcgDocItmTaxBaseAmtInLCrcy` |  | |  |  |  |  |
+| `CACurrencySourceDocument` |  | |  |  |  |  |
+| `CAInvcgSourceDocumentAmount` |  | |  |  |  |  |
+| `CAGroupingCurrencyTranslation` |  | |  |  |  |  |
+| `CAAccountDeterminationCode` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CATaxIsIncluded` |  | |  |  |  |  |
+| `CATaxDetnType` |  | |  |  |  |  |
+| `CAInvcgTaxGroupingKey` |  | |  |  |  |  |
+| `CAOtherTaxCode` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `CATaxDeterminationCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `CATransactionKeyAccountDetn` |  | |  |  |  |  |
+| `CAConditionType` |  | |  |  |  |  |
+| `CATaxRateInPercent` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  |  |  |  |
+| `CAInvcgOffsettingCategory` |  | |  |  |  |  |
+| `CAInvcgOffsettingProcedure` |  | |  |  |  |  |
+| `CAInvcgOffsettingAction` |  | |  |  |  |  |
+| `CATaxDate` |  | |  |  |  |  |
+| `CATaxBaseAmount` |  | |  |  |  |  |
+| `CATaxAmountInTransCurrency` |  | |  |  |  |  |
+| `CATaxPortionInTransCurrency` |  | |  |  |  |  |
+| `WithholdingTaxCode` |  | |  |  |  |  |
+| `CAIsDownPaymentRequest` |  | |  |  |  |  |
+| `CAStatisticalItemCode` |  | |  |  |  |  |
+| `CAInvcgOffsettingGroup` |  | |  |  |  |  |
+| `CAInvcgDfrrdRevenueStatus` |  | |  |  |  |  |
+| `CAIsRevenueAccountingRelevant` |  | |  |  |  |  |
+| `CAInvcgRevenueGrouping` |  | |  |  |  |  |
+| `CARevenueAccountingServiceType` |  | |  |  |  |  |
+| `CAInvcgAccrualPostingType` |  | |  |  |  |  |
+| `CAIsPrepaid` |  | |  |  |  |  |
+| `UnitOfMeasure` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `CANetDueDate` |  | |  |  |  |  |
+| `CACashDiscountDueDate` |  | |  |  |  |  |
+| `CACashDiscountRate` |  | |  |  |  |  |
+| `CAInvcgDocItemDefStatus` |  | |  |  |  |  |
+| `CAItemPeriodStartDate` |  | |  |  |  |  |
+| `CAItemPeriodEndDate` |  | |  |  |  |  |
+| `CAInvcgRefPostingDocType` |  | |  |  |  |  |
+| `CADocumentNumber` |  | |  |  |  |  |
+| `CAGroupingKeyDocumentItems` |  | |  |  |  |  |
+| `CAInvcgGroupingKey` |  | |  |  |  |  |
+| `CAClearingDocumentNumber` |  | |  |  |  |  |
+| `CAClearingAmountInTransCrcy` |  | |  |  |  |  |
+| `CAInvcgDocItemCrtnMethod` |  | |  |  |  |  |
+| `CAInvcgFunction` |  | |  |  |  |  |
+| `CAInvcgSourceDocumentCat` |  | |  |  |  |  |
+| `CAInvcgSourceDocumentNumber` |  | |  |  |  |  |
+| `CAInvcgDocItemSourceItmCat` |  | |  |  |  |  |
+| `CAInvcgSourceDocumentItem` |  | |  |  |  |  |
+| `CABllbleItmDiscountKey` |  | |  |  |  |  |
+| `CABllbleItmDiscountVersion` |  | |  |  |  |  |
+| `CAInvcgCorrectionCategory` |  | |  |  |  |  |
+| `CABillToParty` |  | |  |  |  |  |
+| `CABillToRegion` |  | |  |  |  |  |
+| `CABillFromRegion` |  | |  |  |  |  |
+| `CAControlCode` |  | |  |  |  |  |
+| `CASupplyRegion` |  | |  |  |  |  |
+| `CABillToCountry` |  | |  |  |  |  |
+| `_CAInvcgDocument` | | ✓ | | | | |
 
 ## Source Code
 

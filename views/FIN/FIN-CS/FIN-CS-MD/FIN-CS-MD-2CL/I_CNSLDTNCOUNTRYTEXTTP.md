@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `Country` | ✓ | | `_Text` | `Country` |
-| `CountryName` |  | | `_Text` | `CountryName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnCountryTP` |  | |  | `_Country as _Country : redirected to parent I_CnsldtnCountryTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `Country` | ✓ | | `_Text` | `Country` |  |  |
+| `CountryName` |  | | `_Text` | `CountryName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnCountryTP` |  | |  | `_Country as _Country : redirected to parent I_CnsldtnCountryTP` |  |  |
 
 ## Source Code
 

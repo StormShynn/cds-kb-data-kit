@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OperationStandardTextCode` | ✓ | |  | `cast(t435.vlsch as pph_ktsch preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OperationStandardTextCode` | ✓ | |  | `cast(t435.vlsch as pph_ktsch preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

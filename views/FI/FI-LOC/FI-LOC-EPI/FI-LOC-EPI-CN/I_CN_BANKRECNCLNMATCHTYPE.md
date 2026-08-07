@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankReconciliationMatchType` | ✓ | |  | `cast(left(domvalue_l,1) as epic_brs_matched_indicator preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankReconciliationMatchType` | ✓ | |  | `cast(left(domvalue_l,1) as epic_brs_matched_indicator preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

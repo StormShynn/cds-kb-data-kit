@@ -30,17 +30,17 @@ keywords:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SkillId` | ✓ | |  |  |
-| `Name` |  | |  |  |
-| `Description` |  | |  |  |
-| `Category` |  | |  |  |
-| `CreatedBy` |  | |  |  |
-| `CretedAt` |  | |  |  |
-| `LastChangedBy` |  | |  |  |
-| `LastChangedAt` |  | |  |  |
-| `_category` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SkillId` | ✓ | |  |  |  |  |
+| `Name` |  | |  |  |  |  |
+| `Description` |  | |  |  |  |  |
+| `Category` |  | |  |  |  |  |
+| `CreatedBy` |  | |  |  |  |  |
+| `CretedAt` |  | |  |  |  |  |
+| `LastChangedBy` |  | |  |  |  |  |
+| `LastChangedAt` |  | |  |  |  |  |
+| `_category` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SerialNoExplicitnessLevel` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as serlv preserving type )` |
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
-| `SerialNoExplicitnessLevelText` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as val_text preserving type )` |
-| `_SerialNoExplicitnessLevel` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SerialNoExplicitnessLevel` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as serlv preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |  |  |
+| `SerialNoExplicitnessLevelText` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as val_text preserving type )` |  |  |
+| `_SerialNoExplicitnessLevel` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

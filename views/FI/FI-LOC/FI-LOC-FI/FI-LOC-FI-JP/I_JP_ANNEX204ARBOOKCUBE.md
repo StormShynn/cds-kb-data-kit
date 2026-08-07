@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` |  | |  | `}] key Customer` |
-| `SourceLedger` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `ClearingDate` |  | |  |  |
-| `DebitCreditCodeName` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `Product` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `Quantity` |  | |  | `} Quantity` |
-| `TransactionCurrency` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  | `} AmountInTransactionCurrency` |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  | `} AmountInCompanyCodeCurrency` |
-| `AcctsRblAmtInCCCrcy` |  | |  | `} AcctsRblAmtInCCCrcy` |
-| `NetPriceQuantityUnit` |  | | `_SOItem` | `NetPriceQuantityUnit` |
-| `NetPriceQuantity` |  | |  | `} cast( _SOItem.NetPriceQuantity as glo_jp_netpriceqty )` |
-| `NetPriceAmount` |  | |  | `} NetPriceAmount` |
-| `_BaseUnitFromBilling` | | ✓ | | |
-| `_NetPriceQuantityUnit` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_SourceLedger` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  |  |  |  |
+| `SourceLedger` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `ClearingDate` |  | |  |  |  |  |
+| `DebitCreditCodeName` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `AcctsRblAmtInCCCrcy` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | | `_SOItem` | `NetPriceQuantityUnit` |  |  |
+| `NetPriceQuantity` |  | |  | `cast( _SOItem.NetPriceQuantity as glo_jp_netpriceqty )` |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `_BaseUnitFromBilling` | | ✓ | | | | |
+| `_NetPriceQuantityUnit` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_SourceLedger` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
 
 ## Associations
 

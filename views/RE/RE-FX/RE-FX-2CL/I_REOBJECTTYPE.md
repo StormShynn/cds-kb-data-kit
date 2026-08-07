@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RealEstateObjectType` | ✓ | |  | `cast(obart as recaobjtype preserving type )` |
-| `SemanticObject` |  | |  | `cast (case obart when 'IS' then 'REContract' when 'I3' then 'REContract' when 'I6' then 'REContract' when 'IW' then 'REMasterData' when 'IB' then 'REMasterData' when 'IG' then 'REMasterData' when 'IM' then 'REMasterData' when 'I0' then 'REMasterData' when 'I5' then 'REMasterData' when 'I2' then 'REThirdParty' when 'I8' then 'RELandUse' when 'I9' then 'RELandUse' when 'J1' then 'RELandUse' when 'I1' then 'REServiceCharge' when 'I4' then 'REServiceCharge' when 'J5' then 'RealEstateIntegrationObject' when 'AN' then 'FixedAsset' when 'KS' then 'CostCenter' when 'PR' then 'WBSElement' when 'OR' then 'InternalOrder' when 'IE' then 'Equipment' when 'IF' then 'FunctionalLocation' else '' end as char40 )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RealEstateObjectType` | ✓ | |  | `cast(obart as recaobjtype preserving type )` |  |  |
+| `SemanticObject` |  | |  | `cast (case obart when 'IS' then 'REContract' when 'I3' then 'REContract' when 'I6' then 'REContract' when 'IW' then 'REMasterData' when 'IB' then 'REMasterData' when 'IG' then 'REMasterData' when 'IM' then 'REMasterData' when 'I0' then 'REMasterData' when 'I5' then 'REMasterData' when 'I2' then 'REThirdParty' when 'I8' then 'RELandUse' when 'I9' then 'RELandUse' when 'J1' then 'RELandUse' when 'I1' then 'REServiceCharge' when 'I4' then 'REServiceCharge' when 'J5' then 'RealEstateIntegrationObject' when 'AN' then 'FixedAsset' when 'KS' then 'CostCenter' when 'PR' then 'WBSElement' when 'OR' then 'InternalOrder' when 'IE' then 'Equipment' when 'IF' then 'FunctionalLocation' else '' end as char40 )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

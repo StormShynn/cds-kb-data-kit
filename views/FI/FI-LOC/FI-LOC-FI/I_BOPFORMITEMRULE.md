@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BOPRptgCntry` | ✓ | |  | `country` |
-| `BOPForm` | ✓ | |  | `form` |
-| `BOPFormItem` | ✓ | |  | `item` |
-| `BOPFormItemRule` | ✓ | |  | `rule_id` |
-| `BOPChtAccts` |  | |  | `chartofaccounts` |
-| `BOPLowrBndryGLAcct` |  | |  | `account_from` |
-| `BOPUprBndryGLAcct` |  | |  | `account_to` |
-| `BOPTaxCode` |  | |  | `taxcode` |
-| `BOPAcctgDocType` |  | |  | `doctype` |
-| `BOPTriangularDealRelevancy` |  | |  | `boptriangulardealrelevancy` |
-| `_BOPRptgCntry` | | ✓ | | |
-| `_BOPForm` | | ✓ | | |
-| `_BOPFormItem` | | ✓ | | |
-| `_BOPTriangularDealRelevancy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BOPRptgCntry` | ✓ | |  | `country` |  |  |
+| `BOPForm` | ✓ | |  | `form` |  |  |
+| `BOPFormItem` | ✓ | |  | `item` |  |  |
+| `BOPFormItemRule` | ✓ | |  | `rule_id` |  |  |
+| `BOPChtAccts` |  | |  | `chartofaccounts` |  |  |
+| `BOPLowrBndryGLAcct` |  | |  | `account_from` |  |  |
+| `BOPUprBndryGLAcct` |  | |  | `account_to` |  |  |
+| `BOPTaxCode` |  | |  | `taxcode` |  |  |
+| `BOPAcctgDocType` |  | |  | `doctype` |  |  |
+| `BOPTriangularDealRelevancy` |  | |  | `boptriangulardealrelevancy` |  |  |
+| `_BOPRptgCntry` | | ✓ | | | | |
+| `_BOPForm` | | ✓ | | | | |
+| `_BOPFormItem` | | ✓ | | | | |
+| `_BOPTriangularDealRelevancy` | | ✓ | | | | |
 
 ## Associations
 

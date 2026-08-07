@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `KanbanCtnUnlockingSequence` |  | |  | `rfent` |
-| `NmbrAssignmentForNewKanbanCtns` |  | |  | `nknum` |
-| `KanbanContainerLockingSequence` |  | |  | `rfspr` |
-| `InitKnbnCtnsAreDeltdFirst` |  | |  | `loewn` |
-| `LockedKnbnCtnsAreDeltdFirst` |  | |  | `loewg` |
-| `LockStrategyForNewKanbanCtns` |  | |  | `nlock` |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `KanbanCtnUnlockingSequence` |  | |  | `rfent` |  |  |
+| `NmbrAssignmentForNewKanbanCtns` |  | |  | `nknum` |  |  |
+| `KanbanContainerLockingSequence` |  | |  | `rfspr` |  |  |
+| `InitKnbnCtnsAreDeltdFirst` |  | |  | `loewn` |  |  |
+| `LockedKnbnCtnsAreDeltdFirst` |  | |  | `loewg` |  |  |
+| `LockStrategyForNewKanbanCtns` |  | |  | `nlock` |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

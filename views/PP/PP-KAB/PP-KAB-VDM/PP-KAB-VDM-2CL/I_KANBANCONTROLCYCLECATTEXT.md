@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanControlCycleCategory` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pph_rksta preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
-| `KanbanControlCycleCategoryName` |  | |  | `cast(txt.ddtext as controlcyclecategoryname preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanControlCycleCategory` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pph_rksta preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |  |  |
+| `KanbanControlCycleCategoryName` |  | |  | `cast(txt.ddtext as controlcyclecategoryname preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

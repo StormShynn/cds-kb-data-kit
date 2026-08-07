@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `OperationSetupGroupCategory` | ✓ | |  | `cast(rfgrp as pph_rfgrp preserving type)` |
-| `OperationSetupGroup` | ✓ | |  | `cast(rfsch as pph_rfsch preserving type)` |
-| `_Plant` | | ✓ | | |
-| `_OperationSetupGroupCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `OperationSetupGroupCategory` | ✓ | |  | `cast(rfgrp as pph_rfgrp preserving type)` |  |  |
+| `OperationSetupGroup` | ✓ | |  | `cast(rfsch as pph_rfsch preserving type)` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_OperationSetupGroupCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

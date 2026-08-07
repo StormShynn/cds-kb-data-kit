@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Customer` | ✓ | |  | `kunnr` |
-| `SalesOrganization` | ✓ | |  | `vkorg` |
-| `DistributionChannel` | ✓ | |  | `vtweg` |
-| `Division` | ✓ | |  | `spart` |
-| `DepartureCountry` | ✓ | |  | `aland` |
-| `CustomerTaxCategory` | ✓ | |  | `tatyp` |
-| `CustomerTaxClassification` |  | |  | `taxkd` |
-| `AuthorizationGroup` |  | | `_Customer` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` |  | | `_Customer` | `IsBusinessPurposeCompleted` |
-| `_Customer` | | ✓ | | |
-| `_CustomerSalesArea` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |  |  |
+| `SalesOrganization` | ✓ | |  | `vkorg` |  |  |
+| `DistributionChannel` | ✓ | |  | `vtweg` |  |  |
+| `Division` | ✓ | |  | `spart` |  |  |
+| `DepartureCountry` | ✓ | |  | `aland` |  |  |
+| `CustomerTaxCategory` | ✓ | |  | `tatyp` |  |  |
+| `CustomerTaxClassification` |  | |  | `taxkd` |  |  |
+| `AuthorizationGroup` |  | | `_Customer` | `AuthorizationGroup` |  |  |
+| `IsBusinessPurposeCompleted` |  | | `_Customer` | `IsBusinessPurposeCompleted` |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerSalesArea` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
 
 ## Associations
 

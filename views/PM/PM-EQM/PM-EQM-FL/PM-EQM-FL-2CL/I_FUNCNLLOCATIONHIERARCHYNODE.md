@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'SuperiorFunctionalLocation']` |  | |  | `parent: [ 'SuperiorFunctionalLocation']` |
-| `'FunctionalLocation']` |  | |  | `child: [ 'FunctionalLocation']` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'SuperiorFunctionalLocation']` |  | |  | `parent: [ 'SuperiorFunctionalLocation']` |  |  |
+| `'FunctionalLocation']` |  | |  | `child: [ 'FunctionalLocation']` |  |  |
 
 ## Source Code
 

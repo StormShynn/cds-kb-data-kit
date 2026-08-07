@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `ConditionUsage` | ✓ | |  |  |
-| `ConditionApplication` | ✓ | |  |  |
-| `PricingProcedure` | ✓ | |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |
-| `ConditionTypeName` |  | |  |  |
-| `_ConditionApplication` | | ✓ | | |
-| `_ConditionUsage` | | ✓ | | |
-| `_PurgPricingProcedureItem` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `ConditionUsage` | ✓ | |  |  |  |  |
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `PricingProcedure` | ✓ | |  |  |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |  |  |
+| `ConditionTypeName` |  | |  |  |  |  |
+| `_ConditionApplication` | | ✓ | | | | |
+| `_ConditionUsage` | | ✓ | | | | |
+| `_PurgPricingProcedureItem` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

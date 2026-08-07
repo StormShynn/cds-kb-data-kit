@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `AddressNonDeliverableReason` | ✓ | |  | `undeliver` |
-| `AddressNonDeliverableReasonTxt` |  | |  | `undeli_tx` |
-| `AddrNonDeliverableReasonDesc` |  | |  | `undeli_dc` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `AddressNonDeliverableReason` | ✓ | |  | `undeliver` |  |  |
+| `AddressNonDeliverableReasonTxt` |  | |  | `undeli_tx` |  |  |
+| `AddrNonDeliverableReasonDesc` |  | |  | `undeli_dc` |  |  |
 
 ## Source Code
 

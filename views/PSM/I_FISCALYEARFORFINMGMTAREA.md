@@ -26,15 +26,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialManagementArea` | ✓ | |  |  |
-| `FinMgmtAreaFiscalYear` | ✓ | |  | `cast( I_FiscalYearForVariant.FiscalYear as fmis_fma_fiscal_year preserving type )` |
-| `FinMgmtAreaFiscalYearVariant` |  | |  | `cast( I_FiscalYearForVariant.FiscalYearVariant as fmis_fma_fiscal_year_variant preserving type )` |
-| `FinMgmtAreaFiscalYearStartDate` |  | |  | `cast( I_FiscalYearForVariant.FiscalYearStartDate as fins_next_fyear_startdate preserving type )` |
-| `FinMgmtAreaFiscalYearEndDate` |  | |  | `cast( I_FiscalYearForVariant.FiscalYearEndDate as fins_next_fyear_enddate preserving type )` |
-| `CommitmentItemFiscalYear` |  | |  | `cast( ( case _FinMgmtArea.CommitmentItemIsYearDependent when 'X' then I_FiscalYearForVariant.FiscalYear else '0000' end ) as fmis_commititem_year preserving type )` |
-| `_FinMgmtArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  |  |  |  |
+| `FinMgmtAreaFiscalYear` | ✓ | |  | `cast( I_FiscalYearForVariant.FiscalYear as fmis_fma_fiscal_year preserving type )` |  |  |
+| `FinMgmtAreaFiscalYearVariant` |  | |  | `cast( I_FiscalYearForVariant.FiscalYearVariant as fmis_fma_fiscal_year_variant preserving type )` |  |  |
+| `FinMgmtAreaFiscalYearStartDate` |  | |  | `cast( I_FiscalYearForVariant.FiscalYearStartDate as fins_next_fyear_startdate preserving type )` |  |  |
+| `FinMgmtAreaFiscalYearEndDate` |  | |  | `cast( I_FiscalYearForVariant.FiscalYearEndDate as fins_next_fyear_enddate preserving type )` |  |  |
+| `CommitmentItemFiscalYear` |  | |  | `cast( ( case _FinMgmtArea.CommitmentItemIsYearDependent when 'X' then I_FiscalYearForVariant.FiscalYear else '0000' end ) as fmis_commititem_year preserving type )` |  |  |
+| `_FinMgmtArea` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialTransactionDirection` |  | |  | `tb_rkondgr` |
-| `FinConditionItem` |  | |  | `tb_kond` |
-| `ConditionItemValidityStartDate` |  | |  | `dguel_kp` |
-| `FinInstrConditionLogicGroup` |  | |  | `ftr_instr_cndn_logic_group` |
-| `FinCndnScaleLowerLimitAmount` |  | |  | `ftr_condition_lower_amount` |
-| `FinCndnScaleUpperLimitAmount` |  | |  | `ftr_condition_upper_amount` |
-| `FinCndnLimitAmountCurrency` |  | |  | `ftr_cndn_limit_amount_currency` |
-| `ConditionPercentageRate` |  | |  | `pkond` |
-| `ReferenceInterestRate` |  | |  | `szsref` |
-| `FinConditionFormulaReference` |  | |  | `tb_xformbe` |
-| `_Condition` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialTransactionDirection` |  | |  | `tb_rkondgr` |  |  |
+| `FinConditionItem` |  | |  | `tb_kond` |  |  |
+| `ConditionItemValidityStartDate` |  | |  | `dguel_kp` |  |  |
+| `FinInstrConditionLogicGroup` |  | |  | `ftr_instr_cndn_logic_group` |  |  |
+| `FinCndnScaleLowerLimitAmount` |  | |  | `ftr_condition_lower_amount` |  |  |
+| `FinCndnScaleUpperLimitAmount` |  | |  | `ftr_condition_upper_amount` |  |  |
+| `FinCndnLimitAmountCurrency` |  | |  | `ftr_cndn_limit_amount_currency` |  |  |
+| `ConditionPercentageRate` |  | |  | `pkond` |  |  |
+| `ReferenceInterestRate` |  | |  | `szsref` |  |  |
+| `FinConditionFormulaReference` |  | |  | `tb_xformbe` |  |  |
+| `_Condition` | | ✓ | | | | |
 
 ## Source Code
 

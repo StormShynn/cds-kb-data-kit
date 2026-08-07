@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SerialNoExplicitnessLevel` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as serialnoexplicitnesslevel preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SerialNoExplicitnessLevel` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as serialnoexplicitnesslevel preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

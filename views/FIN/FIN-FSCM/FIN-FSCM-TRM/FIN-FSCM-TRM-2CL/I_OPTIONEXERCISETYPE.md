@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OptionExerciseType` | ✓ | |  | `cast(DomainValue.domvalue_l as soptaus)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OptionExerciseType` | ✓ | |  | `cast(DomainValue.domvalue_l as soptaus)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

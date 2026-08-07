@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateTableScaleRefUUID` | ✓ | |  |  |
-| `TransportationRateTableUUID` |  | |  |  |
-| `TransportationScaleUUID` |  | |  |  |
-| `TransportationAgreementUUID` |  | |  |  |
-| `TranspRateTableDimensionIndex` |  | |  |  |
-| `TransportationCalculationBase` |  | |  |  |
-| `TranspRateTblScRefMinValIsSupp` |  | |  |  |
-| `TranspRateTblScRefMaxValIsSupp` |  | |  |  |
-| `TranspRateTblScaleRefScaleType` |  | |  |  |
-| `TranspRateTblScaleRefQtyUnit` |  | |  |  |
-| `TranspRateTblScaleRefCurrency` |  | |  |  |
-| `TranspRateTblScaleRefCalcType` |  | |  |  |
-| `TranspRateTblScRefNoValIsSupp` |  | |  |  |
-| `TranspRateScRefIsRlvtForBrkWgt` |  | |  |  |
-| `TranspCmmdtyCodeNmbrngSchm` |  | |  |  |
-| `I_FreightAgreementTP` |  | |  | `FrtAgrmtRateTableScaleRef._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FreightAgreementRateTableTP` |  | |  | `FrtAgrmtRateTableScaleRef._FreightAgreementRateTable : redirected to parent I_FreightAgreementRateTableTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateTableScaleRefUUID` | ✓ | |  |  |  |  |
+| `TransportationRateTableUUID` |  | |  |  |  |  |
+| `TransportationScaleUUID` |  | |  |  |  |  |
+| `TransportationAgreementUUID` |  | |  |  |  |  |
+| `TranspRateTableDimensionIndex` |  | |  |  |  |  |
+| `TransportationCalculationBase` |  | |  |  |  |  |
+| `TranspRateTblScRefMinValIsSupp` |  | |  |  |  |  |
+| `TranspRateTblScRefMaxValIsSupp` |  | |  |  |  |  |
+| `TranspRateTblScaleRefScaleType` |  | |  |  |  |  |
+| `TranspRateTblScaleRefQtyUnit` |  | |  |  |  |  |
+| `TranspRateTblScaleRefCurrency` |  | |  |  |  |  |
+| `TranspRateTblScaleRefCalcType` |  | |  |  |  |  |
+| `TranspRateTblScRefNoValIsSupp` |  | |  |  |  |  |
+| `TranspRateScRefIsRlvtForBrkWgt` |  | |  |  |  |  |
+| `TranspCmmdtyCodeNmbrngSchm` |  | |  |  |  |  |
+| `I_FreightAgreementTP` |  | |  | `FrtAgrmtRateTableScaleRef._FreightAgreement : redirected to I_FreightAgreementTP` |  |  |
+| `I_FreightAgreementRateTableTP` |  | |  | `FrtAgrmtRateTableScaleRef._FreightAgreementRateTable : redirected to parent I_FreightAgreementRateTableTP` |  |  |
 
 ## Source Code
 

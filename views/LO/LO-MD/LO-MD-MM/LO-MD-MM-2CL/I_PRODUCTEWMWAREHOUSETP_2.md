@@ -31,48 +31,48 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `EWMWarehouse` | ✓ | |  |  |
-| `EntitledToDisposeParty` | ✓ | |  |  |
-| `ProductInternalUUID` |  | |  |  |
-| `SupplyChainUnitUUID` |  | |  |  |
-| `EWMPartyEntitledToDisposeUUID` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `EWMProductProcessBlockProfile` |  | |  |  |
-| `EWMProcessTypeControlCode` |  | |  |  |
-| `EWMProductLoadCategory` |  | |  |  |
-| `EWMStggAreaDeterminationGroup` |  | |  |  |
-| `EWMIsCnsmpnRlvtForValAddedSrvc` |  | |  |  |
-| `RequiredMinShelfLife` |  | |  |  |
-| `EWMPtwyControlStrategy` |  | |  |  |
-| `EWMStorageSectionMethod` |  | |  |  |
-| `EWMStorageBinType` |  | |  |  |
-| `EWMBulkStorageMethod` |  | |  |  |
-| `EWMStockRemovalControlStrategy` |  | |  |  |
-| `EWMStockDeterminationGroup` |  | |  |  |
-| `EWMProdTwoStepPickingRelevant` |  | |  |  |
-| `EWMSltgRequirementQuantity` |  | |  |  |
-| `EWMSltgNumberOfSalesOrderItems` |  | |  |  |
-| `EWMSltgRecmddStorageQuantity` |  | |  |  |
-| `EWMSlottingWeightSizeCode` |  | |  |  |
-| `EWMSlottingVolumeSizeCode` |  | |  |  |
-| `EWMSlottingLengthSizeCode` |  | |  |  |
-| `EWMSlottingWidthSizeCode` |  | |  |  |
-| `EWMSlottingHeightSizeCode` |  | |  |  |
-| `EWMPhysInventoryCountingCycle` |  | |  |  |
-| `EWMProdBackflushWthdrwlMethod` |  | |  |  |
-| `EWMKitQuantityCorrelation` |  | |  |  |
-| `EWMQuantityAdjustmentProfile` |  | |  |  |
-| `EWMMrchdsDistrQtyClassfctn` |  | |  |  |
-| `EWMPreferredUnit` |  | |  |  |
-| `EWMQualityInspectionGroup` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProductEWMStorageType` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_UnitOfMeasureText_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `EWMWarehouse` | ✓ | |  |  |  |  |
+| `EntitledToDisposeParty` | ✓ | |  |  |  |  |
+| `ProductInternalUUID` |  | |  |  |  |  |
+| `SupplyChainUnitUUID` |  | |  |  |  |  |
+| `EWMPartyEntitledToDisposeUUID` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `EWMProductProcessBlockProfile` |  | |  |  |  |  |
+| `EWMProcessTypeControlCode` |  | |  |  |  |  |
+| `EWMProductLoadCategory` |  | |  |  |  |  |
+| `EWMStggAreaDeterminationGroup` |  | |  |  |  |  |
+| `EWMIsCnsmpnRlvtForValAddedSrvc` |  | |  |  |  |  |
+| `RequiredMinShelfLife` |  | |  |  |  |  |
+| `EWMPtwyControlStrategy` |  | |  |  |  |  |
+| `EWMStorageSectionMethod` |  | |  |  |  |  |
+| `EWMStorageBinType` |  | |  |  |  |  |
+| `EWMBulkStorageMethod` |  | |  |  |  |  |
+| `EWMStockRemovalControlStrategy` |  | |  |  |  |  |
+| `EWMStockDeterminationGroup` |  | |  |  |  |  |
+| `EWMProdTwoStepPickingRelevant` |  | |  |  |  |  |
+| `EWMSltgRequirementQuantity` |  | |  |  |  |  |
+| `EWMSltgNumberOfSalesOrderItems` |  | |  |  |  |  |
+| `EWMSltgRecmddStorageQuantity` |  | |  |  |  |  |
+| `EWMSlottingWeightSizeCode` |  | |  |  |  |  |
+| `EWMSlottingVolumeSizeCode` |  | |  |  |  |  |
+| `EWMSlottingLengthSizeCode` |  | |  |  |  |  |
+| `EWMSlottingWidthSizeCode` |  | |  |  |  |  |
+| `EWMSlottingHeightSizeCode` |  | |  |  |  |  |
+| `EWMPhysInventoryCountingCycle` |  | |  |  |  |  |
+| `EWMProdBackflushWthdrwlMethod` |  | |  |  |  |  |
+| `EWMKitQuantityCorrelation` |  | |  |  |  |  |
+| `EWMQuantityAdjustmentProfile` |  | |  |  |  |  |
+| `EWMMrchdsDistrQtyClassfctn` |  | |  |  |  |  |
+| `EWMPreferredUnit` |  | |  |  |  |  |
+| `EWMQualityInspectionGroup` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductEWMStorageType` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_UnitOfMeasureText_2` | | ✓ | | | | |
 
 ## Source Code
 

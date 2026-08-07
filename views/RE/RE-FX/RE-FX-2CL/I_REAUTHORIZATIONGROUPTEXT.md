@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REAuthorizationGroup` | ✓ | |  | `authgrp` |
-| `Language` | ✓ | |  | `spras` |
-| `RealEstateObjectType` | ✓ | |  | `obart` |
-| `REAuthorizationGroupName` |  | |  | `xauthgrp` |
-| `_Language` | | ✓ | | |
-| `_REObjectType` | | ✓ | | |
-| `_REAuthorizationGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REAuthorizationGroup` | ✓ | |  | `authgrp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `RealEstateObjectType` | ✓ | |  | `obart` |  |  |
+| `REAuthorizationGroupName` |  | |  | `xauthgrp` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_REObjectType` | | ✓ | | | | |
+| `_REAuthorizationGroup` | | ✓ | | | | |
 
 ## Associations
 

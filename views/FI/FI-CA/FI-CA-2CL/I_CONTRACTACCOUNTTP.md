@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  |  |
-| `ContractAccountForEdit` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CAApplicationArea` |  | |  |  |
-| `ContractAccountCategory` |  | |  |  |
-| `ContractAccountExtReference` |  | |  |  |
-| `ContractAccountName` |  | |  |  |
-| `PlannedChangeValidityDate` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_ContractAccountPartner` | | ✓ | | |
-| `_ContractAccountTaxExemption` | | ✓ | | |
-| `_ContractAccountChangeDocument` | | ✓ | | |
-| `_CreatedByContactCard` | | ✓ | | |
-| `_LastChangedByContactCard` | | ✓ | | |
-| `_CAApplicationArea` | | ✓ | | |
-| `_ContractAccountCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  |  |  |  |
+| `ContractAccountForEdit` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CAApplicationArea` |  | |  |  |  |  |
+| `ContractAccountCategory` |  | |  |  |  |  |
+| `ContractAccountExtReference` |  | |  |  |  |  |
+| `ContractAccountName` |  | |  |  |  |  |
+| `PlannedChangeValidityDate` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_ContractAccountPartner` | | ✓ | | | | |
+| `_ContractAccountTaxExemption` | | ✓ | | | | |
+| `_ContractAccountChangeDocument` | | ✓ | | | | |
+| `_CreatedByContactCard` | | ✓ | | | | |
+| `_LastChangedByContactCard` | | ✓ | | | | |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_ContractAccountCategory` | | ✓ | | | | |
 
 ## Source Code
 

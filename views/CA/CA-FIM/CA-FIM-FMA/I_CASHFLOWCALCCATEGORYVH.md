@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CashFlowCalculationCategory` | ✓ | |  | `cast( CashFlowCalcCategory.sberfima as tfm_calculation_category preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CashFlowCalculationCategory` | ✓ | |  | `cast( CashFlowCalcCategory.sberfima as tfm_calculation_category preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

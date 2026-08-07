@@ -27,46 +27,46 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ManufacturingOrder` | ✓ | |  | `cast(affl.OrderID as manufacturingorder preserving type)` |
-| `ManufacturingOrderSequence` | ✓ | |  | `cast(affl.Sequence as manufacturingordersequence preserving type)` |
-| `OrderInternalID` |  | |  |  |
-| `SequenceInternalID` |  | |  |  |
-| `MfgOrderSequenceText` |  | |  | `cast(affl.SequenceText as mfgordersequencetext preserving type)` |
-| `Language` |  | |  |  |
-| `MfgOrderSequenceBrnchOperation` |  | |  | `cast(vornr1.Operation as vornr1 preserving type)` |
-| `MfgOrderSqncBranchOperation_2` |  | |  | `cast(vornr1.Operation_2 as vdm_vornr1 preserving type)` |
-| `MfgOrderSequenceRetOperation` |  | |  | `cast(vornr2.Operation as vornr2 preserving type)` |
-| `MfgOrderSqncReturnOperation_2` |  | |  | `cast(vornr2.Operation_2 as vdm_vornr2 preserving type)` |
-| `ManufacturingOrderCategory` |  | |  | `cast(affl.OrderCategory as manufacturingordercategory preserving type)` |
-| `ManufacturingOrderType` |  | |  | `cast(affl.OrderType as manufacturingordertype preserving type)` |
-| `MfgOrderSequenceCategory` |  | |  | `SequenceCategory` |
-| `ProductionPlant` |  | |  |  |
-| `ReferenceSequence` |  | |  |  |
-| `BillOfOperationsType` |  | |  |  |
-| `BillOfOperations` |  | |  |  |
-| `BillOfOperationsGroup` |  | |  |  |
-| `BillOfOperationsVariant` |  | |  |  |
-| `SequenceSchedulingAlignment` |  | |  |  |
-| `ObjectInternalID` |  | |  |  |
-| `BillOfOperationsUnit` |  | |  |  |
-| `MinimumLotSizeQuantity` |  | |  |  |
-| `MaximumLotSizeQuantity` |  | |  |  |
-| `_MfgOrder` | | ✓ | | |
-| `_MfgOrderCategory` | | ✓ | | |
-| `_MfgOrderType` | | ✓ | | |
-| `_ReferenceSequence` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BillOfOperationsGroup2` | | ✓ | | |
-| `_BillOfOperations` | | ✓ | | |
-| `_BillOfOperations2` | | ✓ | | |
-| `_ManufacturingOrder` | | ✓ | | |
-| `_MfgOrderOperation` | | ✓ | | |
-| `_MfgOrderSequenceLongText` | | ✓ | | |
-| `_MfgOrderText` | | ✓ | | |
-| `_ProductionPlantText` | | ✓ | | |
-| `_StatusObjectText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  | `cast(affl.OrderID as manufacturingorder preserving type)` |  |  |
+| `ManufacturingOrderSequence` | ✓ | |  | `cast(affl.Sequence as manufacturingordersequence preserving type)` |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `SequenceInternalID` |  | |  |  |  |  |
+| `MfgOrderSequenceText` |  | |  | `cast(affl.SequenceText as mfgordersequencetext preserving type)` |  |  |
+| `Language` |  | |  |  |  |  |
+| `MfgOrderSequenceBrnchOperation` |  | |  | `cast(vornr1.Operation as vornr1 preserving type)` |  |  |
+| `MfgOrderSqncBranchOperation_2` |  | |  | `cast(vornr1.Operation_2 as vdm_vornr1 preserving type)` |  |  |
+| `MfgOrderSequenceRetOperation` |  | |  | `cast(vornr2.Operation as vornr2 preserving type)` |  |  |
+| `MfgOrderSqncReturnOperation_2` |  | |  | `cast(vornr2.Operation_2 as vdm_vornr2 preserving type)` |  |  |
+| `ManufacturingOrderCategory` |  | |  | `cast(affl.OrderCategory as manufacturingordercategory preserving type)` |  |  |
+| `ManufacturingOrderType` |  | |  | `cast(affl.OrderType as manufacturingordertype preserving type)` |  |  |
+| `MfgOrderSequenceCategory` |  | |  | `SequenceCategory` |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `ReferenceSequence` |  | |  |  |  |  |
+| `BillOfOperationsType` |  | |  |  |  |  |
+| `BillOfOperations` |  | |  |  |  |  |
+| `BillOfOperationsGroup` |  | |  |  |  |  |
+| `BillOfOperationsVariant` |  | |  |  |  |  |
+| `SequenceSchedulingAlignment` |  | |  |  |  |  |
+| `ObjectInternalID` |  | |  |  |  |  |
+| `BillOfOperationsUnit` |  | |  |  |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |  |  |
+| `_MfgOrder` | | ✓ | | | | |
+| `_MfgOrderCategory` | | ✓ | | | | |
+| `_MfgOrderType` | | ✓ | | | | |
+| `_ReferenceSequence` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsGroup2` | | ✓ | | | | |
+| `_BillOfOperations` | | ✓ | | | | |
+| `_BillOfOperations2` | | ✓ | | | | |
+| `_ManufacturingOrder` | | ✓ | | | | |
+| `_MfgOrderOperation` | | ✓ | | | | |
+| `_MfgOrderSequenceLongText` | | ✓ | | | | |
+| `_MfgOrderText` | | ✓ | | | | |
+| `_ProductionPlantText` | | ✓ | | | | |
+| `_StatusObjectText` | | ✓ | | | | |
 
 ## Associations
 

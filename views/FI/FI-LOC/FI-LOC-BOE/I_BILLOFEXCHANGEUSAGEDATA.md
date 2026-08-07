@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocumentItem` | ✓ | |  |  |
-| `Cheque` |  | |  |  |
-| `BillOfExchangeIssueDate` |  | |  |  |
-| `BillOfExchangeUsageDate` |  | |  |  |
-| `PlannedBillOfExchangeUsage` |  | |  |  |
-| `BillOfExchangeDrawer` |  | |  |  |
-| `BillOfExchangeDrawerCityName` |  | |  |  |
-| `BillOfExchangeDrawee` |  | |  |  |
-| `BillOfExchangeDraweeCityName` |  | |  |  |
-| `BillOfExchangeIsAccepted` |  | |  |  |
-| `Region` |  | |  |  |
-| `BillOfExchangeDocumentStatus` |  | |  |  |
-| `BillOfExchangeProtest` |  | |  |  |
-| `BillOfExchangeIsOnDemand` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `BusinessSectionCode` |  | |  |  |
-| `BillOfExchangePortfolio` |  | |  |  |
-| `BillOfExchangeDataAgingDate` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  | `cast ( IsBusinessPurposeCompleted as cvp_xblck preserving type )` |
-| `AuthorizationGroup` |  | |  | `cast ( AuthorizationGroup as brgru preserving type )` |
-| `BillOfExchangeUsageDocument` |  | | `_OperationalAcctgDocItem` | `BillOfExchangeUsageDocument` |
-| `BillOfExchangeUsage` |  | | `_OperationalAcctgDocItem` | `BillOfExchangeUsage` |
-| `_OperationalAcctgDocItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocumentItem` | ✓ | |  |  |  |  |
+| `Cheque` |  | |  |  |  |  |
+| `BillOfExchangeIssueDate` |  | |  |  |  |  |
+| `BillOfExchangeUsageDate` |  | |  |  |  |  |
+| `PlannedBillOfExchangeUsage` |  | |  |  |  |  |
+| `BillOfExchangeDrawer` |  | |  |  |  |  |
+| `BillOfExchangeDrawerCityName` |  | |  |  |  |  |
+| `BillOfExchangeDrawee` |  | |  |  |  |  |
+| `BillOfExchangeDraweeCityName` |  | |  |  |  |  |
+| `BillOfExchangeIsAccepted` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `BillOfExchangeDocumentStatus` |  | |  |  |  |  |
+| `BillOfExchangeProtest` |  | |  |  |  |  |
+| `BillOfExchangeIsOnDemand` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `BusinessSectionCode` |  | |  |  |  |  |
+| `BillOfExchangePortfolio` |  | |  |  |  |  |
+| `BillOfExchangeDataAgingDate` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  | `cast ( IsBusinessPurposeCompleted as cvp_xblck preserving type )` |  |  |
+| `AuthorizationGroup` |  | |  | `cast ( AuthorizationGroup as brgru preserving type )` |  |  |
+| `BillOfExchangeUsageDocument` |  | | `_OperationalAcctgDocItem` | `BillOfExchangeUsageDocument` |  |  |
+| `BillOfExchangeUsage` |  | | `_OperationalAcctgDocItem` | `BillOfExchangeUsage` |  |  |
+| `_OperationalAcctgDocItem` | | ✓ | | | | |
 
 ## Source Code
 

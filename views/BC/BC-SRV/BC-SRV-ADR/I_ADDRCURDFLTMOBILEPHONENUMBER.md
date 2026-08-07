@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |
-| `AddressPersonID` | ✓ | |  |  |
-| `CommMediumSequenceNumber` |  | |  |  |
-| `PhoneNumberCountry` |  | |  |  |
-| `PhoneAreaCodeSubscriberNumber` |  | |  |  |
-| `InternationalMobileNumber` |  | |  | `cast( InternationalPhoneNumber as ad_curdfltmobilephonenmbr preserving type )` |
-| `InternationalPhoneNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `_PhoneNumberCountry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |  |  |
+| `AddressPersonID` | ✓ | |  |  |  |  |
+| `CommMediumSequenceNumber` |  | |  |  |  |  |
+| `PhoneNumberCountry` |  | |  |  |  |  |
+| `PhoneAreaCodeSubscriberNumber` |  | |  |  |  |  |
+| `InternationalMobileNumber` |  | |  | `cast( InternationalPhoneNumber as ad_curdfltmobilephonenmbr preserving type )` |  |  |
+| `InternationalPhoneNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `_PhoneNumberCountry` | | ✓ | | | | |
 
 ## Source Code
 

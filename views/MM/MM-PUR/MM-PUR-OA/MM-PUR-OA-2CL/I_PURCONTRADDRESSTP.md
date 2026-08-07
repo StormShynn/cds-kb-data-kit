@@ -30,57 +30,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractItem` | ✓ | |  |  |
-| `AddressID` |  | |  |  |
-| `Plant` |  | |  |  |
-| `CareOfName` |  | |  |  |
-| `AdditionalStreetSuffixName` |  | |  |  |
-| `CorrespondenceLanguage` |  | |  |  |
-| `PrfrdCommMediumType` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxIsWithoutNumber` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `POBoxLobbyName` |  | |  |  |
-| `POBoxDeviatingCityName` |  | |  |  |
-| `POBoxDeviatingRegion` |  | |  |  |
-| `POBoxDeviatingCountry` |  | |  |  |
-| `DeliveryServiceTypeCode` |  | |  |  |
-| `DeliveryServiceNumber` |  | |  |  |
-| `AddressTimeZone` |  | |  |  |
-| `FullName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `DistrictName` |  | |  |  |
-| `ProcmtHubCityCode` |  | |  |  |
-| `HomeCityName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `CompanyPostalCode` |  | |  |  |
-| `StreetName` |  | |  |  |
-| `StreetPrefixName` |  | |  |  |
-| `AdditionalStreetPrefixName` |  | |  |  |
-| `StreetSuffixName` |  | |  |  |
-| `HouseNumber` |  | |  |  |
-| `HouseNumberSupplementText` |  | |  |  |
-| `Building` |  | |  |  |
-| `Floor` |  | |  |  |
-| `RoomNumber` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `PurContrCountyText` |  | |  |  |
-| `FormOfAddress` |  | |  |  |
-| `ConsigneeName3` |  | |  |  |
-| `ConsigneeName4` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `TransportZone` |  | |  |  |
-| `PhoneNumber` |  | |  |  |
-| `MobilePhoneNumber` |  | |  |  |
-| `AddressFaxNumber` |  | |  |  |
-| `EmailAddress` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurchaseContractItem` | | ✓ | | |
-| `_PurContract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `CareOfName` |  | |  |  |  |  |
+| `AdditionalStreetSuffixName` |  | |  |  |  |  |
+| `CorrespondenceLanguage` |  | |  |  |  |  |
+| `PrfrdCommMediumType` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `POBoxLobbyName` |  | |  |  |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |  |  |
+| `DeliveryServiceNumber` |  | |  |  |  |  |
+| `AddressTimeZone` |  | |  |  |  |  |
+| `FullName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `DistrictName` |  | |  |  |  |  |
+| `ProcmtHubCityCode` |  | |  |  |  |  |
+| `HomeCityName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `CompanyPostalCode` |  | |  |  |  |  |
+| `StreetName` |  | |  |  |  |  |
+| `StreetPrefixName` |  | |  |  |  |  |
+| `AdditionalStreetPrefixName` |  | |  |  |  |  |
+| `StreetSuffixName` |  | |  |  |  |  |
+| `HouseNumber` |  | |  |  |  |  |
+| `HouseNumberSupplementText` |  | |  |  |  |  |
+| `Building` |  | |  |  |  |  |
+| `Floor` |  | |  |  |  |  |
+| `RoomNumber` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `PurContrCountyText` |  | |  |  |  |  |
+| `FormOfAddress` |  | |  |  |  |  |
+| `ConsigneeName3` |  | |  |  |  |  |
+| `ConsigneeName4` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `TransportZone` |  | |  |  |  |  |
+| `PhoneNumber` |  | |  |  |  |  |
+| `MobilePhoneNumber` |  | |  |  |  |  |
+| `AddressFaxNumber` |  | |  |  |  |  |
+| `EmailAddress` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurchaseContractItem` | | ✓ | | | | |
+| `_PurContract` | | ✓ | | | | |
 
 ## Source Code
 

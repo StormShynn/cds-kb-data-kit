@@ -32,26 +32,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `kokrs` |
-| `CostCenter` | ✓ | |  | `kostl` |
-| `ValidityStartDate` | ✓ | |  | `valid_from` |
-| `ValidityEndDate` |  | |  | `valid_to` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `OrganizationalChange` |  | |  | `orgl_change` |
-| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |
-| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |
-| `_CostCenter` | | ✓ | | |
-| `_OrglChgReassignmentStatus` | | ✓ | | |
-| `_ProfitCtrDerivationSrceType` | | ✓ | | |
-| `_OrglChange` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_ProfitCtr` | | ✓ | | |
-| `_ProfitCenterBeforeOrglChange` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `kokrs` |  |  |
+| `CostCenter` | ✓ | |  | `kostl` |  |  |
+| `ValidityStartDate` | ✓ | |  | `valid_from` |  |  |
+| `ValidityEndDate` |  | |  | `valid_to` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `OrganizationalChange` |  | |  | `orgl_change` |  |  |
+| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |  |  |
+| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |  |  |
+| `_CostCenter` | | ✓ | | | | |
+| `_OrglChgReassignmentStatus` | | ✓ | | | | |
+| `_ProfitCtrDerivationSrceType` | | ✓ | | | | |
+| `_OrglChange` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_ProfitCtr` | | ✓ | | | | |
+| `_ProfitCenterBeforeOrglChange` | | ✓ | | | | |
 
 ## Associations
 

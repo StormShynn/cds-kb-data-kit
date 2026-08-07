@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  |  |
-| `ProductionVersionGroup` | ✓ | |  | `cast(RepetitiveMfgPlanningGroup as pph_mdv preserving type)` |
-| `ProductionVersionGroupDesc` |  | |  | `cast(RepetitiveMfgPlanningGroupText as pph_plid_text preserving type)` |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |  |  |
+| `ProductionVersionGroup` | ✓ | |  | `cast(RepetitiveMfgPlanningGroup as pph_mdv preserving type)` |  |  |
+| `ProductionVersionGroupDesc` |  | |  | `cast(RepetitiveMfgPlanningGroupText as pph_plid_text preserving type)` |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Source Code
 

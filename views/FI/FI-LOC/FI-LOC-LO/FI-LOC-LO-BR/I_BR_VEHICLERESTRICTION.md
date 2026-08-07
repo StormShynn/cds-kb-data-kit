@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VehicleRestriction` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehiclerestriction )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VehicleRestriction` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehiclerestriction )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

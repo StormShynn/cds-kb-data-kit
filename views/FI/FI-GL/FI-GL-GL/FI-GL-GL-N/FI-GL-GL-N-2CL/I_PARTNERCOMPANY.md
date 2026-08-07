@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PartnerCompany` | ✓ | |  | `Company` |
-| `CompanyName` |  | |  |  |
-| `Language` |  | |  | `CompanyLanguage` |
-| `_Language` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_GLAccount` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_GlobalCompanyHierNode` | | ✓ | | |
-| `_PartnerCompanySupplierAuthzn` | | ✓ | | |
-| `_PartnerCompanyCustomerAuthzn` | | ✓ | | |
-| `_PartnerCompanyGLAcctAuthzn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PartnerCompany` | ✓ | |  | `Company` |  |  |
+| `CompanyName` |  | |  |  |  |  |
+| `Language` |  | |  | `CompanyLanguage` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_GLAccount` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_GlobalCompanyHierNode` | | ✓ | | | | |
+| `_PartnerCompanySupplierAuthzn` | | ✓ | | | | |
+| `_PartnerCompanyCustomerAuthzn` | | ✓ | | | | |
+| `_PartnerCompanyGLAcctAuthzn` | | ✓ | | | | |
 
 ## Associations
 

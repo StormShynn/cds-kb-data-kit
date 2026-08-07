@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PredecessorObjectType` | ✓ | |  | `sub_object_type` |
-| `PredecessorObjectName` | ✓ | |  | `sub_object_name` |
-| `PredecessorObjectDirectoryType` | ✓ | |  | `object_type` |
-| `PredecessorObjectDirectoryName` | ✓ | |  | `object_name` |
-| `SuccessorObjectType` | ✓ | |  | `successor_object_type` |
-| `SuccessorObjectName` | ✓ | |  | `successor_object_key` |
-| `SuccessorObjectDirectoryType` | ✓ | |  | `successor_tadir_object` |
-| `SuccessorObjectDirectoryName` | ✓ | |  | `successor_tadir_obj_name` |
-| `SuccessorConceptName` |  | |  | `successor_concept_name` |
-| `SuccessorCategory` |  | |  | `cast('O' as ars_successor_category preserving type)` |
-| `PredecessorReleaseState` |  | |  | `release_state` |
-| `PredecessorReleaseStateDescr` |  | | `_text` | `description` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PredecessorObjectType` | ✓ | |  | `sub_object_type` |  |  |
+| `PredecessorObjectName` | ✓ | |  | `sub_object_name` |  |  |
+| `PredecessorObjectDirectoryType` | ✓ | |  | `object_type` |  |  |
+| `PredecessorObjectDirectoryName` | ✓ | |  | `object_name` |  |  |
+| `SuccessorObjectType` | ✓ | |  | `successor_object_type` |  |  |
+| `SuccessorObjectName` | ✓ | |  | `successor_object_key` |  |  |
+| `SuccessorObjectDirectoryType` | ✓ | |  | `successor_tadir_object` |  |  |
+| `SuccessorObjectDirectoryName` | ✓ | |  | `successor_tadir_obj_name` |  |  |
+| `SuccessorConceptName` |  | |  | `successor_concept_name` |  |  |
+| `SuccessorCategory` |  | |  | `cast('O' as ars_successor_category preserving type)` |  |  |
+| `PredecessorReleaseState` |  | |  | `release_state` |  |  |
+| `PredecessorReleaseStateDescr` |  | | `_text` | `description` |  |  |
 
 ## Associations
 

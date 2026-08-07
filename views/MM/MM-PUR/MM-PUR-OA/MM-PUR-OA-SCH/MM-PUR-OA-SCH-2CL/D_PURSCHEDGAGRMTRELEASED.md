@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` |  | |  | `md_supplier` |
-| `Material` |  | |  | `matnr` |
-| `ManufacturerMaterial` |  | |  | `ematnr` |
-| `SupplierMaterialNumber` |  | |  | `idnlf` |
-| `MaterialGroup` |  | |  | `matkl` |
-| `Plant` |  | |  | `ewerk` |
-| `SchedulingAgreementReleaseType` |  | |  | `meabart` |
-| `SchedulingAgreementRelease` |  | |  | `meabruf` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` |  | |  | `md_supplier` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `ManufacturerMaterial` |  | |  | `ematnr` |  |  |
+| `SupplierMaterialNumber` |  | |  | `idnlf` |  |  |
+| `MaterialGroup` |  | |  | `matkl` |  |  |
+| `Plant` |  | |  | `ewerk` |  |  |
+| `SchedulingAgreementReleaseType` |  | |  | `meabart` |  |  |
+| `SchedulingAgreementRelease` |  | |  | `meabruf` |  |  |
 
 ## Source Code
 

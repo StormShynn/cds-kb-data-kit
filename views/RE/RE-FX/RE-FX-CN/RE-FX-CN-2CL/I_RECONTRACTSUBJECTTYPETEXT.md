@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REContractSubjectType` | ✓ | |  | `cnsubjecttype` |
-| `Language` | ✓ | |  | `spras` |
-| `REContractSubjectTypeName` |  | |  | `xcnsubjecttype` |
-| `_REContractSubjectType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REContractSubjectType` | ✓ | |  | `cnsubjecttype` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `REContractSubjectTypeName` |  | |  | `xcnsubjecttype` |  |  |
+| `_REContractSubjectType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

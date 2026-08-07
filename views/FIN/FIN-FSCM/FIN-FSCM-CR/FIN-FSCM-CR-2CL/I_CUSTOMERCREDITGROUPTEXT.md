@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditAccountGroup` | ✓ | |  | `cred_group` |
-| `Language` | ✓ | |  | `langu` |
-| `CreditAccountGroupName` |  | |  | `cred_group_txt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditAccountGroup` | ✓ | |  | `cred_group` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CreditAccountGroupName` |  | |  | `cred_group_txt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

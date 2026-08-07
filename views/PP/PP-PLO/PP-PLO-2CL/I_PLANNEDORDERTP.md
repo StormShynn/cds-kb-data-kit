@@ -29,75 +29,75 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlannedOrder` | ✓ | |  |  |
-| `PlannedOrderType` |  | |  |  |
-| `PlannedOrderProfile` |  | |  |  |
-| `Material` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `MRPPlant` |  | |  |  |
-| `MRPArea` |  | |  |  |
-| `ProductionVersion` |  | |  |  |
-| `MaterialProcurementCategory` |  | |  |  |
-| `MaterialProcurementType` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `TotalQuantity` |  | |  |  |
-| `PlndOrderPlannedScrapQty` |  | |  |  |
-| `GoodsReceiptQty` |  | |  |  |
-| `IssuedQuantity` |  | |  |  |
-| `PlndOrderPlannedStartDate` |  | |  |  |
-| `PlndOrderPlannedStartTime` |  | |  |  |
-| `PlndOrderPlannedEndDate` |  | |  |  |
-| `PlndOrderPlannedEndTime` |  | |  |  |
-| `PlannedOrderOpeningDate` |  | |  |  |
-| `PlannedOrderLastChangeDateTime` |  | |  |  |
-| `ProductionStartDate` |  | |  |  |
-| `ProductionEndDate` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  | `, distinctValues: true }] PlannedOrder.SalesOrderItem` |
-| `Customer` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `WBSDescription` |  | |  |  |
-| `PlannedOrderLongText` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `Reservation` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `MRPControllerName` |  | |  |  |
-| `ProductionSupervisor` |  | |  | `, distinctValues: true }] PlannedOrder.ProductionSupervisor` |
-| `PurchasingOrganization` |  | |  |  |
-| `FixedSupplier` |  | |  |  |
-| `QuotaArrangement` |  | |  |  |
-| `QuotaArrangementItem` |  | |  |  |
-| `PlannedOrderIsFirm` |  | |  |  |
-| `PlannedOrderIsConvertible` |  | |  |  |
-| `PlannedOrderBOMIsFixed` |  | |  |  |
-| `PlannedOrderCapacityIsDsptchd` |  | |  |  |
-| `CapacityRequirement` |  | |  |  |
-| `BillOfOperationsVariant` |  | |  |  |
-| `ScheduledBasicStartDate` |  | |  |  |
-| `ScheduledBasicStartTime` |  | |  |  |
-| `ScheduledBasicEndDate` |  | |  |  |
-| `ScheduledBasicEndTime` |  | |  |  |
-| `MaterialGoodsReceiptDuration` |  | |  |  |
-| `MaterialName` |  | |  |  |
-| `PlannedOrderTypeName` |  | |  |  |
-| `MRPAreaText` |  | |  |  |
-| `MRPPlantName` |  | |  |  |
-| `ProductionPlantName` |  | |  |  |
-| `MaterialProcurementCatName` |  | |  |  |
-| `ProductionVersionText` |  | |  |  |
-| `ProductionSupervisorName` |  | |  |  |
-| `SupplierName` |  | |  |  |
-| `CustomerName` |  | |  |  |
-| `MaterialProcurementTypeName` |  | |  |  |
-| `PurchasingOrganizationName` |  | |  |  |
-| `StorageLocationName` |  | |  |  |
-| `AcctAssignmentCategoryName` |  | |  |  |
-| `I_PlannedOrderComponentTP` |  | |  | `PlannedOrder._PlannedOrderComponent : redirected to composition child I_PlannedOrderComponentTP` |
-| `I_PlannedOrderCapacityTP` |  | |  | `PlannedOrder._PlannedOrderCapacity : redirected to composition child I_PlannedOrderCapacityTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlannedOrder` | ✓ | |  |  |  |  |
+| `PlannedOrderType` |  | |  |  |  |  |
+| `PlannedOrderProfile` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `MRPPlant` |  | |  |  |  |  |
+| `MRPArea` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `MaterialProcurementCategory` |  | |  |  |  |  |
+| `MaterialProcurementType` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `TotalQuantity` |  | |  |  |  |  |
+| `PlndOrderPlannedScrapQty` |  | |  |  |  |  |
+| `GoodsReceiptQty` |  | |  |  |  |  |
+| `IssuedQuantity` |  | |  |  |  |  |
+| `PlndOrderPlannedStartDate` |  | |  |  |  |  |
+| `PlndOrderPlannedStartTime` |  | |  |  |  |  |
+| `PlndOrderPlannedEndDate` |  | |  |  |  |  |
+| `PlndOrderPlannedEndTime` |  | |  |  |  |  |
+| `PlannedOrderOpeningDate` |  | |  |  |  |  |
+| `PlannedOrderLastChangeDateTime` |  | |  |  |  |  |
+| `ProductionStartDate` |  | |  |  |  |  |
+| `ProductionEndDate` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `WBSDescription` |  | |  |  |  |  |
+| `PlannedOrderLongText` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `Reservation` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `MRPControllerName` |  | |  |  |  |  |
+| `ProductionSupervisor` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `FixedSupplier` |  | |  |  |  |  |
+| `QuotaArrangement` |  | |  |  |  |  |
+| `QuotaArrangementItem` |  | |  |  |  |  |
+| `PlannedOrderIsFirm` |  | |  |  |  |  |
+| `PlannedOrderIsConvertible` |  | |  |  |  |  |
+| `PlannedOrderBOMIsFixed` |  | |  |  |  |  |
+| `PlannedOrderCapacityIsDsptchd` |  | |  |  |  |  |
+| `CapacityRequirement` |  | |  |  |  |  |
+| `BillOfOperationsVariant` |  | |  |  |  |  |
+| `ScheduledBasicStartDate` |  | |  |  |  |  |
+| `ScheduledBasicStartTime` |  | |  |  |  |  |
+| `ScheduledBasicEndDate` |  | |  |  |  |  |
+| `ScheduledBasicEndTime` |  | |  |  |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |  |  |
+| `MaterialName` |  | |  |  |  |  |
+| `PlannedOrderTypeName` |  | |  |  |  |  |
+| `MRPAreaText` |  | |  |  |  |  |
+| `MRPPlantName` |  | |  |  |  |  |
+| `ProductionPlantName` |  | |  |  |  |  |
+| `MaterialProcurementCatName` |  | |  |  |  |  |
+| `ProductionVersionText` |  | |  |  |  |  |
+| `ProductionSupervisorName` |  | |  |  |  |  |
+| `SupplierName` |  | |  |  |  |  |
+| `CustomerName` |  | |  |  |  |  |
+| `MaterialProcurementTypeName` |  | |  |  |  |  |
+| `PurchasingOrganizationName` |  | |  |  |  |  |
+| `StorageLocationName` |  | |  |  |  |  |
+| `AcctAssignmentCategoryName` |  | |  |  |  |  |
+| `I_PlannedOrderComponentTP` |  | |  | `PlannedOrder._PlannedOrderComponent : redirected to composition child I_PlannedOrderComponentTP` |  |  |
+| `I_PlannedOrderCapacityTP` |  | |  | `PlannedOrder._PlannedOrderCapacity : redirected to composition child I_PlannedOrderCapacityTP` |  |  |
 
 ## Source Code
 

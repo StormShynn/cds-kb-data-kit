@@ -30,61 +30,61 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectElementUUID` | ✓ | |  | `guid` |
-| `ProjectElement` |  | |  | `cast ( task.external_id as /s4ppm/project_ele_id preserving type )` |
-| `ProjectUUID` |  | |  | `project_guid` |
-| `ProjectElementDescription` |  | |  | `name` |
-| `ProcessingStatus` |  | |  | `proc_status_own` |
-| `PlannedStartDate` |  | |  | `latest_start_date` |
-| `PlannedEndDate` |  | |  | `latest_finish_date` |
-| `ActualStartDate` |  | |  | `actualstart_date` |
-| `ActualFinishDate` |  | |  | `actualfinish_date` |
-| `SortingNumber` |  | |  | `sort_number` |
-| `EntProjectElementType` |  | |  | `task_type` |
-| `IsProjectMilestone` |  | |  | `milestone` |
-| `ForecastedEndDate` |  | |  | `forecast_finish_date` |
-| `MilestoneApprovalStatus` |  | |  | `mlstn_apprvl_status` |
-| `IsMainMilestone` |  | | `_tasktype` | `IsEssentialMilestone` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `FunctionalLocation` |  | |  | `tplnr` |
-| `WBSElementIsBillingElement` |  | |  | `fakkz` |
-| `WBSElementInternalID` |  | |  | `cast ( task.pspnr as ps_s4_pspnr preserving type )` |
-| `ProjectInternalID` |  | |  | `cast ( prps.psphi as ps_s4_proj_pspnr preserving type )` |
-| `ParentObjectUUID` |  | |  | `cast ( hiera.up as /s4ppm/tv_parent_entity_guid preserving type )` |
-| `ProjectElementOrdinalNumber` |  | |  | `cast (hiera.sort_number as /s4ppm/tv_sort_number preserving type )` |
-| `WBSIsStatisticalWBSElement` |  | |  | `xstat` |
-| `CompanyCode` |  | |  | `pbukr` |
-| `ControllingArea` |  | |  | `pkokr` |
-| `CostCenter` |  | |  | `kostl` |
-| `CostingSheet` |  | |  | `kalsm` |
-| `FactoryCalendar` |  | |  | `fabkl` |
-| `FunctionalArea` |  | |  | `func_area` |
-| `InvestmentProfile` |  | |  | `imprf` |
-| `Location` |  | |  | `stort` |
-| `Plant` |  | |  | `werks` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `ResponsibleCostCenter` |  | |  | `fkstl` |
-| `ResultAnalysisInternalID` |  | |  | `abgsl` |
-| `LeadingSalesOrder` |  | |  | `vbeln_prps` |
-| `LeadingSalesOrderItem` |  | |  | `posnr_prps` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `CreationDateTime` |  | |  | `created_on` |
-| `LastChangedByUser` |  | |  | `changed_by` |
-| `LastChangeDateTime` |  | |  | `changed_on` |
-| `HierarchyNodeUUID` |  | |  | `guid` |
-| `EntProjectSettlementElement` |  | |  | `entprojectsettlementelement` |
-| `EntProjIsSettlmtRuleInherited` |  | |  | `entprojissettlmtruleinherited` |
-| `EntProjProfitabilitySegment` |  | |  | `entprojprofitabilitysegment` |
-| `_Project` | | ✓ | | |
-| `_ParentElement` | | ✓ | | |
-| `_EntProjElmntDlvbrl` | | ✓ | | |
-| `_AuthUser` | | ✓ | | |
-| `_AuthSubst` | | ✓ | | |
-| `_AuthRole` | | ✓ | | |
-| `_AuthGroup` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectElementUUID` | ✓ | |  | `guid` |  |  |
+| `ProjectElement` |  | |  | `cast ( task.external_id as /s4ppm/project_ele_id preserving type )` |  |  |
+| `ProjectUUID` |  | |  | `project_guid` |  |  |
+| `ProjectElementDescription` |  | |  | `name` |  |  |
+| `ProcessingStatus` |  | |  | `proc_status_own` |  |  |
+| `PlannedStartDate` |  | |  | `{ quickInfo : 'Latest Planned Start', label : 'Latest Planned Start', heading : 'Latest Planned Start' } task.latest_start_date` |  |  |
+| `PlannedEndDate` |  | |  | `{ quickInfo : 'Latest Planned Finish', label : 'Latest Planned Finish', heading : 'Latest Planned Finish' } task.latest_finish_date` |  |  |
+| `ActualStartDate` |  | |  | `actualstart_date` |  |  |
+| `ActualFinishDate` |  | |  | `actualfinish_date` |  |  |
+| `SortingNumber` |  | |  | `sort_number` |  |  |
+| `EntProjectElementType` |  | |  | `task_type` |  |  |
+| `IsProjectMilestone` |  | |  | `milestone` |  |  |
+| `ForecastedEndDate` |  | |  | `forecast_finish_date` |  |  |
+| `MilestoneApprovalStatus` |  | |  | `mlstn_apprvl_status` |  |  |
+| `IsMainMilestone` |  | | `_tasktype` | `IsEssentialMilestone` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `FunctionalLocation` |  | |  | `tplnr` |  |  |
+| `WBSElementIsBillingElement` |  | |  | `fakkz` |  |  |
+| `WBSElementInternalID` |  | |  | `cast ( task.pspnr as ps_s4_pspnr preserving type )` |  |  |
+| `ProjectInternalID` |  | |  | `cast ( prps.psphi as ps_s4_proj_pspnr preserving type )` |  |  |
+| `ParentObjectUUID` |  | |  | `cast ( hiera.up as /s4ppm/tv_parent_entity_guid preserving type )` |  |  |
+| `ProjectElementOrdinalNumber` |  | |  | `cast (hiera.sort_number as /s4ppm/tv_sort_number preserving type )` |  |  |
+| `WBSIsStatisticalWBSElement` |  | |  | `xstat` |  |  |
+| `CompanyCode` |  | |  | `pbukr` |  |  |
+| `ControllingArea` |  | |  | `pkokr` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `CostingSheet` |  | |  | `kalsm` |  |  |
+| `FactoryCalendar` |  | |  | `fabkl` |  |  |
+| `FunctionalArea` |  | |  | `func_area` |  |  |
+| `InvestmentProfile` |  | |  | `imprf` |  |  |
+| `Location` |  | |  | `stort` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `ResponsibleCostCenter` |  | |  | `fkstl` |  |  |
+| `ResultAnalysisInternalID` |  | |  | `abgsl` |  |  |
+| `LeadingSalesOrder` |  | |  | `vbeln_prps` |  |  |
+| `LeadingSalesOrderItem` |  | |  | `posnr_prps` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `CreationDateTime` |  | |  | `created_on` |  |  |
+| `LastChangedByUser` |  | |  | `changed_by` |  |  |
+| `LastChangeDateTime` |  | |  | `changed_on` |  |  |
+| `HierarchyNodeUUID` |  | |  | `guid` |  |  |
+| `EntProjectSettlementElement` |  | |  | `entprojectsettlementelement` |  |  |
+| `EntProjIsSettlmtRuleInherited` |  | |  | `entprojissettlmtruleinherited` |  |  |
+| `EntProjProfitabilitySegment` |  | |  | `entprojprofitabilitysegment` |  |  |
+| `_Project` | | ✓ | | | | |
+| `_ParentElement` | | ✓ | | | | |
+| `_EntProjElmntDlvbrl` | | ✓ | | | | |
+| `_AuthUser` | | ✓ | | | | |
+| `_AuthSubst` | | ✓ | | | | |
+| `_AuthRole` | | ✓ | | | | |
+| `_AuthGroup` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Associations
 

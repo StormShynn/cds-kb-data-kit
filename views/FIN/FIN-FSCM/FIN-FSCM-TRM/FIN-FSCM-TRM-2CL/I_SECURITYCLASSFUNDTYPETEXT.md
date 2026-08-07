@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `SecurityClassFundType` | ✓ | |  | `sfoty` |
-| `SecurityClassFundTypeName` |  | |  | `cast(xkurzbez as ftr_gen_seccls_fund_type_sname preserving type )` |
-| `ScrtyClassFundTypeDescription` |  | |  | `cast(xlangbez as ftr_gen_seccls_fund_type_lname preserving type )` |
-| `_SecurityClassFundType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SecurityClassFundType` | ✓ | |  | `sfoty` |  |  |
+| `SecurityClassFundTypeName` |  | |  | `cast(xkurzbez as ftr_gen_seccls_fund_type_sname preserving type )` |  |  |
+| `ScrtyClassFundTypeDescription` |  | |  | `cast(xlangbez as ftr_gen_seccls_fund_type_lname preserving type )` |  |  |
+| `_SecurityClassFundType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

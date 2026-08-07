@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
-| `CustomerReturnType` |  | |  | `auart_unv` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `OrganizationDivision` |  | |  | `spart` |
-| `SoldToParty` |  | |  | `kunnr` |
-| `CustomerReturnItemCategory` |  | |  | `pstyv` |
-| `Product` |  | |  | `matnr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |  |  |
+| `CustomerReturnType` |  | |  | `auart_unv` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `OrganizationDivision` |  | |  | `spart` |  |  |
+| `SoldToParty` |  | |  | `kunnr` |  |  |
+| `CustomerReturnItemCategory` |  | |  | `pstyv` |  |  |
+| `Product` |  | |  | `matnr` |  |  |
 
 ## Source Code
 

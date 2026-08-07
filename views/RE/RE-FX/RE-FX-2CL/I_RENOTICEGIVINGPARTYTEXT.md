@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `RENoticeGivingParty` | ✓ | |  | `cast( dd07t.domvalue_l as retmntprocprty )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `RENoticeGivingPartyName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_RENoticeGivingParty` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `RENoticeGivingParty` | ✓ | |  | `cast( dd07t.domvalue_l as retmntprocprty )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `RENoticeGivingPartyName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_RENoticeGivingParty` | | ✓ | | | | |
 
 ## Associations
 

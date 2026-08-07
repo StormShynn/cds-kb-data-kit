@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContract` | ✓ | |  |  |
-| `PurchaseContractItem` | ✓ | |  |  |
-| `PurchasingOrganization` | ✓ | |  |  |
-| `SupplierSubrange` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `PartnerCounter` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchaseContractType` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierContact` |  | |  |  |
-| `EmploymentInternalID` |  | |  |  |
-| `DefaultPartner` |  | |  |  |
-| `PurchasingDocumentPartner` |  | |  |  |
-| `PurchasingDocumentPartnerName` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_PurchaseContract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |  |  |
+| `SupplierSubrange` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `PartnerCounter` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchaseContractType` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierContact` |  | |  |  |  |  |
+| `EmploymentInternalID` |  | |  |  |  |  |
+| `DefaultPartner` |  | |  |  |  |  |
+| `PurchasingDocumentPartner` |  | |  |  |  |  |
+| `PurchasingDocumentPartnerName` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_PurchaseContract` | | ✓ | | | | |
 
 ## Source Code
 

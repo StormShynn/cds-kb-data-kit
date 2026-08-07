@@ -34,74 +34,74 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterial` | ✓ | |  |  |
-| `BillOfMaterialCategory` | ✓ | |  |  |
-| `BillOfMaterialVariant` | ✓ | |  |  |
-| `BillOfMaterialVersion` | ✓ | |  |  |
-| `EngineeringChangeDocument` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `BillOfMaterialHeaderUUID` |  | |  |  |
-| `BillOfMaterialVariantUsage` |  | |  |  |
-| `EngineeringChangeDocForEdit` |  | |  |  |
-| `IsMultipleBOMAlt` |  | |  |  |
-| `BOMHeaderInternalChangeCount` |  | |  |  |
-| `BOMUsagePriority` |  | |  |  |
-| `BillOfMaterialAuthsnGrp` |  | |  |  |
-| `BOMVersionStatus` |  | |  |  |
-| `IsVersionBillOfMaterial` |  | |  |  |
-| `IsLatestBOMVersion` |  | |  |  |
-| `IsConfiguredMaterial` |  | |  |  |
-| `BOMTechnicalType` |  | |  |  |
-| `BOMGroup` |  | |  |  |
-| `BOMHeaderText` |  | |  |  |
-| `BOMAlternativeText` |  | |  |  |
-| `BillOfMaterialStatus` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ChgToEngineeringChgDocument` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `IsALE` |  | |  |  |
-| `MatFromLotSizeQuantity` |  | |  |  |
-| `MaterialToLotSizeQuantity` |  | |  |  |
-| `BOMHeaderBaseUnit` |  | |  |  |
-| `BOMHeaderQuantityInBaseUnit` |  | |  |  |
-| `RecordCreationDate` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `BOMIsToBeDeleted` |  | |  |  |
-| `DocumentIsCreatedByCAD` |  | |  |  |
-| `LaboratoryOrDesignOffice` |  | |  |  |
-| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `IndicatorIsBOMWithDateHistory` |  | |  |  |
-| `IndicatorIsBOMChangedWithHist` |  | |  |  |
-| `AlternativeUnit` |  | |  |  |
-| `BOMExplosionApplication` |  | |  |  |
-| `DefaultValidFromDate` |  | |  |  |
-| `BillOfMaterialHdrDetailsText` |  | |  |  |
-| `ProductDescription` |  | |  |  |
-| `PlantName` |  | |  |  |
-| `IsAttachmentsEnabled` |  | |  |  |
-| `QuantityInBaseUnitIsHidden` |  | |  |  |
-| `ProductIsConfigurable` |  | |  |  |
-| `MaterialType` |  | |  |  |
-| `MaterialName` |  | |  |  |
-| `MaterialBOMObjectID` |  | |  |  |
-| `LongTextLanguage` |  | |  |  |
-| `BOMPrioritizedVersion` |  | |  |  |
-| `BOMPredecessorVersion` |  | |  |  |
-| `BOMIsConfigurable` |  | |  |  |
-| `BOMIsArchivedForDeletion` |  | |  |  |
-| `_BillOfMaterialUsage` | | ✓ | | |
-| `_BillOfMaterialItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  |  |  |  |
+| `BillOfMaterialCategory` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |  |  |
+| `BillOfMaterialVersion` | ✓ | |  |  |  |  |
+| `EngineeringChangeDocument` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `BillOfMaterialHeaderUUID` |  | |  |  |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |  |  |
+| `EngineeringChangeDocForEdit` |  | |  |  |  |  |
+| `IsMultipleBOMAlt` |  | |  |  |  |  |
+| `BOMHeaderInternalChangeCount` |  | |  |  |  |  |
+| `BOMUsagePriority` |  | |  |  |  |  |
+| `BillOfMaterialAuthsnGrp` |  | |  |  |  |  |
+| `BOMVersionStatus` |  | |  |  |  |  |
+| `IsVersionBillOfMaterial` |  | |  |  |  |  |
+| `IsLatestBOMVersion` |  | |  |  |  |  |
+| `IsConfiguredMaterial` |  | |  |  |  |  |
+| `BOMTechnicalType` |  | |  |  |  |  |
+| `BOMGroup` |  | |  |  |  |  |
+| `BOMHeaderText` |  | |  |  |  |  |
+| `BOMAlternativeText` |  | |  |  |  |  |
+| `BillOfMaterialStatus` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ChgToEngineeringChgDocument` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `IsALE` |  | |  |  |  |  |
+| `MatFromLotSizeQuantity` |  | |  |  |  |  |
+| `MaterialToLotSizeQuantity` |  | |  |  |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |  |  |
+| `BOMHeaderQuantityInBaseUnit` |  | |  |  |  |  |
+| `RecordCreationDate` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `BOMIsToBeDeleted` |  | |  |  |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |  |  |
+| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `IndicatorIsBOMWithDateHistory` |  | |  |  |  |  |
+| `IndicatorIsBOMChangedWithHist` |  | |  |  |  |  |
+| `AlternativeUnit` |  | |  |  |  |  |
+| `BOMExplosionApplication` |  | |  |  |  |  |
+| `DefaultValidFromDate` |  | |  |  |  |  |
+| `BillOfMaterialHdrDetailsText` |  | |  |  |  |  |
+| `ProductDescription` |  | |  |  |  |  |
+| `PlantName` |  | |  |  |  |  |
+| `IsAttachmentsEnabled` |  | |  |  |  |  |
+| `QuantityInBaseUnitIsHidden` |  | |  |  |  |  |
+| `ProductIsConfigurable` |  | |  |  |  |  |
+| `MaterialType` |  | |  |  |  |  |
+| `MaterialName` |  | |  |  |  |  |
+| `MaterialBOMObjectID` |  | |  |  |  |  |
+| `LongTextLanguage` |  | |  |  |  |  |
+| `BOMPrioritizedVersion` |  | |  |  |  |  |
+| `BOMPredecessorVersion` |  | |  |  |  |  |
+| `BOMIsConfigurable` |  | |  |  |  |  |
+| `BOMIsArchivedForDeletion` |  | |  |  |  |  |
+| `_BillOfMaterialUsage` | | ✓ | | | | |
+| `_BillOfMaterialItem` | | ✓ | | | | |
 
 ## Source Code
 

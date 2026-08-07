@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EU_EDocDocCategory` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_doc_category)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `EU_EDocDocCategoryText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EU_EDocDocCategory` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_doc_category)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `EU_EDocDocCategoryText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionSupplyArea` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ProductionSupplyAreaName` |  | |  |  |
-| `ProdSupplyAreaUpperCaseName` |  | |  |  |
-| `_ProductionSupplyArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionSupplyArea` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ProductionSupplyAreaName` |  | |  |  |  |  |
+| `ProdSupplyAreaUpperCaseName` |  | |  |  |  |  |
+| `_ProductionSupplyArea` | | ✓ | | | | |
 
 ## Source Code
 

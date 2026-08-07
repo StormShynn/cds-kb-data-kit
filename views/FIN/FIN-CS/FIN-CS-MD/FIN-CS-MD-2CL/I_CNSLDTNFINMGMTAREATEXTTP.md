@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `FinancialManagementArea` | ✓ | | `_Text` | `FinancialManagementArea` |
-| `FinancialManagementAreaName` |  | | `_Text` | `FinancialManagementAreaName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinManagementAreaTP` |  | |  | `_FinancialManagementArea as _FinancialManagementArea : redirected to parent I_CnsldtnFinManagementAreaTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `FinancialManagementArea` | ✓ | | `_Text` | `FinancialManagementArea` |  |  |
+| `FinancialManagementAreaName` |  | | `_Text` | `FinancialManagementAreaName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnFinManagementAreaTP` |  | |  | `_FinancialManagementArea as _FinancialManagementArea : redirected to parent I_CnsldtnFinManagementAreaTP` |  |  |
 
 ## Source Code
 

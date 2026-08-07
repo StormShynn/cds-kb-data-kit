@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADisputeType` | ✓ | |  | `cast( left( dd07l.domvalue_l, 4 ) as fkkdm_int_reason preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADisputeType` | ✓ | |  | `cast( left( dd07l.domvalue_l, 4 ) as fkkdm_int_reason preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

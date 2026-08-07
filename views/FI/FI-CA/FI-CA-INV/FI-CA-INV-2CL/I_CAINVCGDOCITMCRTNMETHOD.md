@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as invitem_crmet_kk preserving type )` |
-| `_CAInvcgDocItmCrtnMethodText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as invitem_crmet_kk preserving type )` |  |  |
+| `_CAInvcgDocItmCrtnMethodText` | | ✓ | | | | |
 
 ## Associations
 

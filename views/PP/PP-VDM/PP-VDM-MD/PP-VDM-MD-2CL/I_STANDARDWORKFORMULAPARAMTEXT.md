@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StandardWorkFormulaParameter` | ✓ | |  | `cast(parid as pph_parid preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `StandardWorkFormulaParamName` |  | |  | `cast(txtlg as pph_partxt preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StandardWorkFormulaParameter` | ✓ | |  | `cast(parid as pph_parid preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `StandardWorkFormulaParamName` |  | |  | `cast(txtlg as pph_partxt preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,248 +27,248 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SettlmtDoc` | ✓ | |  |  |
-| `SettlmtDocType` |  | |  | `}] } SettlmtDocType` |
-| `SettlmtDocCat` |  | |  |  |
-| `SettlmtProcessType` |  | |  | `}] } SettlmtProcessType` |
-| `SettlmtProcessCat` |  | |  |  |
-| `LogisticsDataEntryCat` |  | |  |  |
-| `SettlmtCat` |  | |  |  |
-| `SupplierPricingProcedure` |  | |  |  |
-| `CustomerPricingProcedure` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `SettlmtMgmtAcctgTransfSts` |  | |  |  |
-| `InvoicingParty` |  | |  | `}] } InvoicingParty` |
-| `PayeeParty` |  | |  | `}] } PayeeParty` |
-| `BillToParty` |  | |  | `}] } BillToParty` |
-| `PayerParty` |  | |  | `}] } PayerParty` |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SuplrSettlmtCompanyCode` |  | |  | `}] } SuplrSettlmtCompanyCode` |
-| `CustSettlmtCompanyCode` |  | |  | `}] } CustSettlmtCompanyCode` |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `DocumentReferenceID` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `SettlmtDocCurrency` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `SupplierTotalGrossAmount` |  | |  |  |
-| `SupplierTotalNetAmount` |  | |  |  |
-| `CustomerTotalGrossAmount` |  | |  |  |
-| `CustomerTotalNetAmount` |  | |  |  |
-| `SupplierPaymentTerms` |  | |  |  |
-| `SupplierCashDiscount1Days` |  | |  |  |
-| `SupplierCashDiscount2Days` |  | |  |  |
-| `SupplierNetPaymentDays` |  | |  |  |
-| `SupplierCashDiscount1Percent` |  | |  |  |
-| `SupplierCashDiscount2Percent` |  | |  |  |
-| `SupplierPaymentMethod` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `CustomerCashDiscount1Days` |  | |  |  |
-| `CustomerCashDiscount2Days` |  | |  |  |
-| `CustomerNetPaymentDays` |  | |  |  |
-| `CustomerCashDiscount1Percent` |  | |  |  |
-| `CustomerCashDiscount2Percent` |  | |  |  |
-| `CustomerPaymentMethod` |  | |  |  |
-| `SuplrTotEligibleAmtForCshDisc` |  | |  |  |
-| `CustTotEligibleAmtForCshDisc` |  | |  |  |
-| `SettlmtDocIsCanceled` |  | |  |  |
-| `CanceledSettlmtDoc` |  | |  | `}] } CanceledSettlmtDoc` |
-| `SupplierPricingDocument` |  | |  |  |
-| `CustomerPricingDocument` |  | |  |  |
-| `SupplierAdditionalValueDays` |  | |  |  |
-| `SupplierFixedValueDate` |  | |  |  |
-| `CustomerAdditionalValueDays` |  | |  |  |
-| `CustomerFixedValueDate` |  | |  |  |
-| `SupplierTotalTaxAmount` |  | |  |  |
-| `CustomerTotalTaxAmount` |  | |  |  |
-| `TaxExchangeRate` |  | |  |  |
-| `IntercompanyTaxExchangeRate` |  | |  |  |
-| `SupplyingCountry` |  | |  |  |
-| `StateCentralBankPaymentReason` |  | |  |  |
-| `CreditControlArea` |  | |  | `}] } CreditControlArea` |
-| `SettlmtDocActivityReason` |  | |  |  |
-| `PaymentReference` |  | |  |  |
-| `SupplierPaymentCurrency` |  | |  |  |
-| `SupplierPaytCurrencyExchRate` |  | |  |  |
-| `CustomerPaymentCurrency` |  | |  |  |
-| `CustomerPaytCurrencyExchRate` |  | |  |  |
-| `SettlmtApplSts` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `OneTimeCustomerAddressID` |  | |  |  |
-| `OneTimeSupplierAddressID` |  | |  |  |
-| `SettlmtReltdCndnContr` |  | |  | `}] } SettlmtReltdCndnContr` |
-| `SettlmtReltdTrdgContr` |  | |  |  |
-| `SettlmtReltdPurgDoc` |  | |  | `}] } SettlmtReltdPurgDoc` |
-| `SettlmtReltdBillgDoc` |  | |  | `}] } SettlmtReltdBillgDoc` |
-| `SettlmtDocSmmrznCat` |  | |  |  |
-| `CreditControlAreaCurrency` |  | |  |  |
-| `ReleasedCreditAmount` |  | |  |  |
-| `SettlmtClassificationCat` |  | |  |  |
-| `SettlmtPartnerCat` |  | |  |  |
-| `SupplierSettlmtStatus` |  | |  |  |
-| `CustomerSettlmtStatus` |  | |  |  |
-| `SupplierSettlmtDocCat` |  | |  |  |
-| `CustomerSettlmtDocCat` |  | |  |  |
-| `SupplierSettlmtBlkgReason` |  | |  |  |
-| `CustomerSettlmtBlkgReason` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `TrdgExpnDocSettled` |  | |  |  |
-| `TrdgExpnCurrency` |  | |  |  |
-| `TrdgExpnAmount` |  | |  |  |
-| `TrdgExpnSupplier` |  | |  | `}] } TrdgExpnSupplier` |
-| `TrdgExpnCustomer` |  | |  | `}] } TrdgExpnCustomer` |
-| `CndnContrType` |  | |  | `}] } CndnContrType` |
-| `CndnContrProcVar` |  | |  | `}] } CndnContrProcVar` |
-| `SettlmtDateCat` |  | |  |  |
-| `ActualSettlmtDate` |  | |  |  |
-| `SettlmtDateSequentialID` |  | |  |  |
-| `SettlmtDocIncmpltnsRsn` |  | |  |  |
-| `AlternativeInvoicingParty` |  | |  | `}] } AlternativeInvoicingParty` |
-| `CombinedSettlmtPostgSts` |  | |  |  |
-| `DocIntrastatRelevance` |  | |  |  |
-| `TaxDepartureCountry` |  | |  |  |
-| `TaxDestinationCountry` |  | |  |  |
-| `IsEUTriangularDeal` |  | |  |  |
-| `SupplierVATRegistration` |  | |  |  |
-| `CustomerVATRegistration` |  | |  |  |
-| `IntrastatDeclnGdsFlwCat` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `SettlmtDate` |  | |  |  |
-| `RefSettlmtDate` |  | |  |  |
-| `SettlmtBusProcVar` |  | |  |  |
-| `SettlmtDocCollSts` |  | |  |  |
-| `SettlmtDocIsCollvDoc` |  | |  |  |
-| `CollSettlmtBlkgReason` |  | |  |  |
-| `SuplrSettlmtCoCodeTaxCountry` |  | |  |  |
-| `CustSettlmtCoCodeTaxCountry` |  | |  |  |
-| `SettlmtBusProcCat` |  | |  |  |
-| `SEPAMandate` |  | |  |  |
-| `TotalSettlmtQuantity` |  | |  |  |
-| `TotalSettlmtQuantityUnit` |  | |  |  |
-| `TotalSettlmtNetWeight` |  | |  |  |
-| `TotalSettlmtGrossWeight` |  | |  |  |
-| `TotalSettlmtWeightUnit` |  | |  |  |
-| `TotalSettlmtVolume` |  | |  |  |
-| `TotalSettlmtVolumeUnit` |  | |  |  |
-| `TotalSettlmtPointsQty` |  | |  |  |
-| `TotalSettlmtPointsQtyUnit` |  | |  |  |
-| `PostingPartnerCat` |  | |  |  |
-| `SettlmtPeriodStartDate` |  | |  |  |
-| `SettlmtPeriodEndDate` |  | |  |  |
-| `CndnContrProcessCategory` |  | |  |  |
-| `SettlmtApplStsGrp` |  | |  |  |
-| `SettlmtDocAuthznCat` |  | |  |  |
-| `ETag` |  | |  | `cast ( '0000' as wlf_entity_tag preserving type )` |
-| `SettlmtDocChangeState` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_BankData` | | ✓ | | |
-| `_CanceledSettlmtDoc` | | ✓ | | |
-| `_SettlmtDocIncmpltnsRsn` | | ✓ | | |
-| `_SettlmtDocCollSts` | | ✓ | | |
-| `_SettlmtDocIsCollvDoc` | | ✓ | | |
-| `_CustSettlmtCompanyCode` | | ✓ | | |
-| `_SuplrSettlmtCoCodeTaxCountry` | | ✓ | | |
-| `_CustSettlmtCoCodeTaxCountry` | | ✓ | | |
-| `_BillToPartyCompany` | | ✓ | | |
-| `_PayerPartyCompany` | | ✓ | | |
-| `_SupplierPricingElement` | | ✓ | | |
-| `_CustomerPricingElement` | | ✓ | | |
-| `_CreditControlAreaText` | | ✓ | | |
-| `_SettlmtDocPlainLongText` | | ✓ | | |
-| `_SettlmtReltdCndnContr` | | ✓ | | |
-| `_SettlmtDocType` | | ✓ | | |
-| `_SettlmtProcessType` | | ✓ | | |
-| `_CndnContrType` | | ✓ | | |
-| `_SettlmtBusProcVar` | | ✓ | | |
-| `_SettlmtApplSts` | | ✓ | | |
-| `_SettlmtApplStsGrp` | | ✓ | | |
-| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | |
-| `_TrdgExpnDocSettled` | | ✓ | | |
-| `_SettlmtDocCat` | | ✓ | | |
-| `_SettlmtProcessCat` | | ✓ | | |
-| `_LogisticsDataEntryCat` | | ✓ | | |
-| `_SettlmtCat` | | ✓ | | |
-| `_SettlmtMgmtAcctgTransfSts` | | ✓ | | |
-| `_InvoicingParty` | | ✓ | | |
-| `_PayeeParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SuplrSettlmtCompanyCode` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_SettlmtDocCurrency` | | ✓ | | |
-| `_SupplierPaymentTerms` | | ✓ | | |
-| `_CustomerPaymentTerms` | | ✓ | | |
-| `_SupplyingCountry` | | ✓ | | |
-| `_CreditControlArea` | | ✓ | | |
-| `_SettlmtDocActivityReason` | | ✓ | | |
-| `_SupplierPaymentCurrency` | | ✓ | | |
-| `_CustomerPaymentCurrency` | | ✓ | | |
-| `_ExchangeRateType` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_OneTimeSupplierAddress` | | ✓ | | |
-| `_OneTimeCustomerAddress` | | ✓ | | |
-| `_SettlmtReltdPurgDoc` | | ✓ | | |
-| `_SettlmtReltdBillgDoc` | | ✓ | | |
-| `_SettlmtDocSmmrznCat` | | ✓ | | |
-| `_CreditControlAreaCurrency` | | ✓ | | |
-| `_SettlmtClassificationCat` | | ✓ | | |
-| `_SettlmtPartnerCat` | | ✓ | | |
-| `_SupplierSettlmtStatus` | | ✓ | | |
-| `_CustomerSettlmtStatus` | | ✓ | | |
-| `_SupplierSettlmtDocCat` | | ✓ | | |
-| `_CustomerSettlmtDocCat` | | ✓ | | |
-| `_SupplierSettlmtBlkgReason` | | ✓ | | |
-| `_CustomerSettlmtBlkgReason` | | ✓ | | |
-| `_TrdgExpnCurrency` | | ✓ | | |
-| `_TrdgExpnSupplier` | | ✓ | | |
-| `_TrdgExpnCustomer` | | ✓ | | |
-| `_CndnContrProcVar` | | ✓ | | |
-| `_SettlmtDateCat` | | ✓ | | |
-| `_AlternativeInvoicingParty` | | ✓ | | |
-| `_CombinedSettlmtPostgSts` | | ✓ | | |
-| `_DocIntrastatRelevance` | | ✓ | | |
-| `_TaxDepartureCountry` | | ✓ | | |
-| `_TaxDestinationCountry` | | ✓ | | |
-| `_IntrastatDeclnGdsFlwCat` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_CollSettlmtBlkgReason` | | ✓ | | |
-| `_SettlmtBusProcCat` | | ✓ | | |
-| `_TotalSettlmtQuantityUnit` | | ✓ | | |
-| `_TotalSettlmtWeightUnit` | | ✓ | | |
-| `_TotalSettlmtVolumeUnit` | | ✓ | | |
-| `_TotalSettlmtPointsQtyUnit` | | ✓ | | |
-| `_PostingPartnerCat` | | ✓ | | |
-| `_InvoicingPartyCompany` | | ✓ | | |
-| `_PayeePartyCompany` | | ✓ | | |
-| `_AltvInvoicingPartyCompany` | | ✓ | | |
-| `_SalesArea` | | ✓ | | |
-| `_CndnContrProcessCategory` | | ✓ | | |
-| `_SettlmtDocAuthznCat` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDoc` | ✓ | |  |  |  |  |
+| `SettlmtDocType` |  | |  |  |  |  |
+| `SettlmtDocCat` |  | |  |  |  |  |
+| `SettlmtProcessType` |  | |  |  |  |  |
+| `SettlmtProcessCat` |  | |  |  |  |  |
+| `LogisticsDataEntryCat` |  | |  |  |  |  |
+| `SettlmtCat` |  | |  |  |  |  |
+| `SupplierPricingProcedure` |  | |  |  |  |  |
+| `CustomerPricingProcedure` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `SettlmtMgmtAcctgTransfSts` |  | |  |  |  |  |
+| `InvoicingParty` |  | |  |  |  |  |
+| `PayeeParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SuplrSettlmtCompanyCode` |  | |  |  |  |  |
+| `CustSettlmtCompanyCode` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `DocumentReferenceID` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `SettlmtDocCurrency` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `SupplierTotalGrossAmount` |  | |  |  |  |  |
+| `SupplierTotalNetAmount` |  | |  |  |  |  |
+| `CustomerTotalGrossAmount` |  | |  |  |  |  |
+| `CustomerTotalNetAmount` |  | |  |  |  |  |
+| `SupplierPaymentTerms` |  | |  |  |  |  |
+| `SupplierCashDiscount1Days` |  | |  |  |  |  |
+| `SupplierCashDiscount2Days` |  | |  |  |  |  |
+| `SupplierNetPaymentDays` |  | |  |  |  |  |
+| `SupplierCashDiscount1Percent` |  | |  |  |  |  |
+| `SupplierCashDiscount2Percent` |  | |  |  |  |  |
+| `SupplierPaymentMethod` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `CustomerCashDiscount1Days` |  | |  |  |  |  |
+| `CustomerCashDiscount2Days` |  | |  |  |  |  |
+| `CustomerNetPaymentDays` |  | |  |  |  |  |
+| `CustomerCashDiscount1Percent` |  | |  |  |  |  |
+| `CustomerCashDiscount2Percent` |  | |  |  |  |  |
+| `CustomerPaymentMethod` |  | |  |  |  |  |
+| `SuplrTotEligibleAmtForCshDisc` |  | |  |  |  |  |
+| `CustTotEligibleAmtForCshDisc` |  | |  |  |  |  |
+| `SettlmtDocIsCanceled` |  | |  |  |  |  |
+| `CanceledSettlmtDoc` |  | |  |  |  |  |
+| `SupplierPricingDocument` |  | |  |  |  |  |
+| `CustomerPricingDocument` |  | |  |  |  |  |
+| `SupplierAdditionalValueDays` |  | |  |  |  |  |
+| `SupplierFixedValueDate` |  | |  |  |  |  |
+| `CustomerAdditionalValueDays` |  | |  |  |  |  |
+| `CustomerFixedValueDate` |  | |  |  |  |  |
+| `SupplierTotalTaxAmount` |  | |  |  |  |  |
+| `CustomerTotalTaxAmount` |  | |  |  |  |  |
+| `TaxExchangeRate` |  | |  |  |  |  |
+| `IntercompanyTaxExchangeRate` |  | |  |  |  |  |
+| `SupplyingCountry` |  | |  |  |  |  |
+| `StateCentralBankPaymentReason` |  | |  |  |  |  |
+| `CreditControlArea` |  | |  |  |  |  |
+| `SettlmtDocActivityReason` |  | |  |  |  |  |
+| `PaymentReference` |  | |  |  |  |  |
+| `SupplierPaymentCurrency` |  | |  |  |  |  |
+| `SupplierPaytCurrencyExchRate` |  | |  |  |  |  |
+| `CustomerPaymentCurrency` |  | |  |  |  |  |
+| `CustomerPaytCurrencyExchRate` |  | |  |  |  |  |
+| `SettlmtApplSts` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `OneTimeCustomerAddressID` |  | |  |  |  |  |
+| `OneTimeSupplierAddressID` |  | |  |  |  |  |
+| `SettlmtReltdCndnContr` |  | |  |  |  |  |
+| `SettlmtReltdTrdgContr` |  | |  |  |  |  |
+| `SettlmtReltdPurgDoc` |  | |  |  |  |  |
+| `SettlmtReltdBillgDoc` |  | |  |  |  |  |
+| `SettlmtDocSmmrznCat` |  | |  |  |  |  |
+| `CreditControlAreaCurrency` |  | |  |  |  |  |
+| `ReleasedCreditAmount` |  | |  |  |  |  |
+| `SettlmtClassificationCat` |  | |  |  |  |  |
+| `SettlmtPartnerCat` |  | |  |  |  |  |
+| `SupplierSettlmtStatus` |  | |  |  |  |  |
+| `CustomerSettlmtStatus` |  | |  |  |  |  |
+| `SupplierSettlmtDocCat` |  | |  |  |  |  |
+| `CustomerSettlmtDocCat` |  | |  |  |  |  |
+| `SupplierSettlmtBlkgReason` |  | |  |  |  |  |
+| `CustomerSettlmtBlkgReason` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `TrdgExpnDocSettled` |  | |  |  |  |  |
+| `TrdgExpnCurrency` |  | |  |  |  |  |
+| `TrdgExpnAmount` |  | |  |  |  |  |
+| `TrdgExpnSupplier` |  | |  |  |  |  |
+| `TrdgExpnCustomer` |  | |  |  |  |  |
+| `CndnContrType` |  | |  |  |  |  |
+| `CndnContrProcVar` |  | |  |  |  |  |
+| `SettlmtDateCat` |  | |  |  |  |  |
+| `ActualSettlmtDate` |  | |  |  |  |  |
+| `SettlmtDateSequentialID` |  | |  |  |  |  |
+| `SettlmtDocIncmpltnsRsn` |  | |  |  |  |  |
+| `AlternativeInvoicingParty` |  | |  |  |  |  |
+| `CombinedSettlmtPostgSts` |  | |  |  |  |  |
+| `DocIntrastatRelevance` |  | |  |  |  |  |
+| `TaxDepartureCountry` |  | |  |  |  |  |
+| `TaxDestinationCountry` |  | |  |  |  |  |
+| `IsEUTriangularDeal` |  | |  |  |  |  |
+| `SupplierVATRegistration` |  | |  |  |  |  |
+| `CustomerVATRegistration` |  | |  |  |  |  |
+| `IntrastatDeclnGdsFlwCat` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `SettlmtDate` |  | |  |  |  |  |
+| `RefSettlmtDate` |  | |  |  |  |  |
+| `SettlmtBusProcVar` |  | |  |  |  |  |
+| `SettlmtDocCollSts` |  | |  |  |  |  |
+| `SettlmtDocIsCollvDoc` |  | |  |  |  |  |
+| `CollSettlmtBlkgReason` |  | |  |  |  |  |
+| `SuplrSettlmtCoCodeTaxCountry` |  | |  |  |  |  |
+| `CustSettlmtCoCodeTaxCountry` |  | |  |  |  |  |
+| `SettlmtBusProcCat` |  | |  |  |  |  |
+| `SEPAMandate` |  | |  |  |  |  |
+| `TotalSettlmtQuantity` |  | |  |  |  |  |
+| `TotalSettlmtQuantityUnit` |  | |  |  |  |  |
+| `TotalSettlmtNetWeight` |  | |  |  |  |  |
+| `TotalSettlmtGrossWeight` |  | |  |  |  |  |
+| `TotalSettlmtWeightUnit` |  | |  |  |  |  |
+| `TotalSettlmtVolume` |  | |  |  |  |  |
+| `TotalSettlmtVolumeUnit` |  | |  |  |  |  |
+| `TotalSettlmtPointsQty` |  | |  |  |  |  |
+| `TotalSettlmtPointsQtyUnit` |  | |  |  |  |  |
+| `PostingPartnerCat` |  | |  |  |  |  |
+| `SettlmtPeriodStartDate` |  | |  |  |  |  |
+| `SettlmtPeriodEndDate` |  | |  |  |  |  |
+| `CndnContrProcessCategory` |  | |  |  |  |  |
+| `SettlmtApplStsGrp` |  | |  |  |  |  |
+| `SettlmtDocAuthznCat` |  | |  |  |  |  |
+| `ETag` |  | |  | `cast ( '0000' as wlf_entity_tag preserving type )` |  |  |
+| `SettlmtDocChangeState` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_BankData` | | ✓ | | | | |
+| `_CanceledSettlmtDoc` | | ✓ | | | | |
+| `_SettlmtDocIncmpltnsRsn` | | ✓ | | | | |
+| `_SettlmtDocCollSts` | | ✓ | | | | |
+| `_SettlmtDocIsCollvDoc` | | ✓ | | | | |
+| `_CustSettlmtCompanyCode` | | ✓ | | | | |
+| `_SuplrSettlmtCoCodeTaxCountry` | | ✓ | | | | |
+| `_CustSettlmtCoCodeTaxCountry` | | ✓ | | | | |
+| `_BillToPartyCompany` | | ✓ | | | | |
+| `_PayerPartyCompany` | | ✓ | | | | |
+| `_SupplierPricingElement` | | ✓ | | | | |
+| `_CustomerPricingElement` | | ✓ | | | | |
+| `_CreditControlAreaText` | | ✓ | | | | |
+| `_SettlmtDocPlainLongText` | | ✓ | | | | |
+| `_SettlmtReltdCndnContr` | | ✓ | | | | |
+| `_SettlmtDocType` | | ✓ | | | | |
+| `_SettlmtProcessType` | | ✓ | | | | |
+| `_CndnContrType` | | ✓ | | | | |
+| `_SettlmtBusProcVar` | | ✓ | | | | |
+| `_SettlmtApplSts` | | ✓ | | | | |
+| `_SettlmtApplStsGrp` | | ✓ | | | | |
+| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | | | |
+| `_TrdgExpnDocSettled` | | ✓ | | | | |
+| `_SettlmtDocCat` | | ✓ | | | | |
+| `_SettlmtProcessCat` | | ✓ | | | | |
+| `_LogisticsDataEntryCat` | | ✓ | | | | |
+| `_SettlmtCat` | | ✓ | | | | |
+| `_SettlmtMgmtAcctgTransfSts` | | ✓ | | | | |
+| `_InvoicingParty` | | ✓ | | | | |
+| `_PayeeParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SuplrSettlmtCompanyCode` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_SettlmtDocCurrency` | | ✓ | | | | |
+| `_SupplierPaymentTerms` | | ✓ | | | | |
+| `_CustomerPaymentTerms` | | ✓ | | | | |
+| `_SupplyingCountry` | | ✓ | | | | |
+| `_CreditControlArea` | | ✓ | | | | |
+| `_SettlmtDocActivityReason` | | ✓ | | | | |
+| `_SupplierPaymentCurrency` | | ✓ | | | | |
+| `_CustomerPaymentCurrency` | | ✓ | | | | |
+| `_ExchangeRateType` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_OneTimeSupplierAddress` | | ✓ | | | | |
+| `_OneTimeCustomerAddress` | | ✓ | | | | |
+| `_SettlmtReltdPurgDoc` | | ✓ | | | | |
+| `_SettlmtReltdBillgDoc` | | ✓ | | | | |
+| `_SettlmtDocSmmrznCat` | | ✓ | | | | |
+| `_CreditControlAreaCurrency` | | ✓ | | | | |
+| `_SettlmtClassificationCat` | | ✓ | | | | |
+| `_SettlmtPartnerCat` | | ✓ | | | | |
+| `_SupplierSettlmtStatus` | | ✓ | | | | |
+| `_CustomerSettlmtStatus` | | ✓ | | | | |
+| `_SupplierSettlmtDocCat` | | ✓ | | | | |
+| `_CustomerSettlmtDocCat` | | ✓ | | | | |
+| `_SupplierSettlmtBlkgReason` | | ✓ | | | | |
+| `_CustomerSettlmtBlkgReason` | | ✓ | | | | |
+| `_TrdgExpnCurrency` | | ✓ | | | | |
+| `_TrdgExpnSupplier` | | ✓ | | | | |
+| `_TrdgExpnCustomer` | | ✓ | | | | |
+| `_CndnContrProcVar` | | ✓ | | | | |
+| `_SettlmtDateCat` | | ✓ | | | | |
+| `_AlternativeInvoicingParty` | | ✓ | | | | |
+| `_CombinedSettlmtPostgSts` | | ✓ | | | | |
+| `_DocIntrastatRelevance` | | ✓ | | | | |
+| `_TaxDepartureCountry` | | ✓ | | | | |
+| `_TaxDestinationCountry` | | ✓ | | | | |
+| `_IntrastatDeclnGdsFlwCat` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_CollSettlmtBlkgReason` | | ✓ | | | | |
+| `_SettlmtBusProcCat` | | ✓ | | | | |
+| `_TotalSettlmtQuantityUnit` | | ✓ | | | | |
+| `_TotalSettlmtWeightUnit` | | ✓ | | | | |
+| `_TotalSettlmtVolumeUnit` | | ✓ | | | | |
+| `_TotalSettlmtPointsQtyUnit` | | ✓ | | | | |
+| `_PostingPartnerCat` | | ✓ | | | | |
+| `_InvoicingPartyCompany` | | ✓ | | | | |
+| `_PayeePartyCompany` | | ✓ | | | | |
+| `_AltvInvoicingPartyCompany` | | ✓ | | | | |
+| `_SalesArea` | | ✓ | | | | |
+| `_CndnContrProcessCategory` | | ✓ | | | | |
+| `_SettlmtDocAuthznCat` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,262 +29,262 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `cast (mara.matnr as productnumber preserving type )` |
-| `ProductExternalID` |  | |  | `matnr_external` |
-| `ProductOID` |  | |  | `productoid` |
-| `ProductType` |  | |  | `cast (mara.mtart as producttype preserving type )` |
-| `CreationDate` |  | |  | `ersda` |
-| `CreationTime` |  | |  | `created_at_time` |
-| `CreationDateTime` |  | |  | `cast ( dats_tims_to_tstmp( mara.ersda, mara.created_at_time, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as cmd_prd_creation_date_time )` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `LastChangeDate` |  | |  | `laeda` |
-| `LastChangedByUser` |  | |  | `case when mara.aenam <> '' then mara.aenam else cast( mara.ernam as aenam preserving type ) end` |
-| `IsMarkedForDeletion` |  | |  | `cast (mara.lvorm as ismarkedfordeletion)` |
-| `CrossPlantStatus` |  | |  | `cast (mara.mstae as crossplantstatus)` |
-| `CrossPlantStatusValidityDate` |  | |  | `mstde` |
-| `ProductOldID` |  | |  | `cast (mara.bismt as productoldid)` |
-| `GrossWeight` |  | |  | `brgew` |
-| `PurchaseOrderQuantityUnit` |  | |  | `bstme` |
-| `SourceOfSupply` |  | |  | `bwscl` |
-| `WeightUnit` |  | |  | `gewei` |
-| `CountryOfOrigin` |  | |  | `herkl` |
-| `CompetitorID` |  | |  | `kunnr` |
-| `ProductGroup` |  | |  | `cast (mara.matkl as productgroup preserving type )` |
-| `BaseUnit` |  | |  | `meins` |
-| `ItemCategoryGroup` |  | |  | `mtpos_mara` |
-| `NetWeight` |  | |  | `ntgew` |
-| `ProductHierarchy` |  | |  | `prdha` |
-| `Division` |  | |  | `spart` |
-| `VarblPurOrdUnitIsActive` |  | |  | `vabme` |
-| `VolumeUnit` |  | |  | `voleh` |
-| `MaterialVolume` |  | |  | `cast (mara.volum as materialvolume)` |
-| `SalesStatus` |  | |  | `mstav` |
-| `TransportationGroup` |  | |  | `tragr` |
-| `SalesStatusValidityDate` |  | |  | `mstdv` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `ANPCode` |  | |  | `anp` |
-| `ProductCategory` |  | |  | `cast (mara.attyp as prodcategory preserving type )` |
-| `Brand` |  | |  | `brand_id` |
-| `ProcurementRule` |  | |  | `bwvor` |
-| `ValidityStartDate` |  | |  | `datab` |
-| `LowLevelCode` |  | |  | `disst` |
-| `ProdNoInGenProdInPrepackProd` |  | |  | `gennr` |
-| `SerialIdentifierAssgmtProfile` |  | |  | `serial` |
-| `SizeOrDimensionText` |  | |  | `groes` |
-| `IndustryStandardName` |  | |  | `normt` |
-| `ProductStandardID` |  | |  | `cast( mara.ean11 as globaltradeitemnumber)` |
-| `InternationalArticleNumberCat` |  | |  | `numtp` |
-| `ProductIsConfigurable` |  | |  | `cast( mara.kzkfg as productisconfigurable preserving type )` |
-| `IsBatchManagementRequired` |  | |  | `xchpf` |
-| `HasEmptiesBOM` |  | |  | `mlgut` |
-| `ExternalProductGroup` |  | |  | `cast (mara.extwg as externalproductgroup preserving type )` |
-| `CrossPlantConfigurableProduct` |  | |  | `cast (mara.satnr as crossplantconfigurableproduct preserving type )` |
-| `SerialNoExplicitnessLevel` |  | |  | `serlv` |
-| `ProductManufacturerNumber` |  | |  | `mfrpn` |
-| `ManufacturerNumber` |  | |  | `mfrnr` |
-| `ManufacturerPartProfile` |  | |  | `mprof` |
-| `QltyMgmtInProcmtIsActive` |  | |  | `qmpur` |
-| `IsApprovedBatchRecordReqd` |  | |  | `xgchp` |
-| `HandlingIndicator` |  | |  | `hndlcode` |
-| `WarehouseProductGroup` |  | |  | `whmatgr` |
-| `WarehouseStorageCondition` |  | |  | `whstc` |
-| `StandardHandlingUnitType` |  | |  | `hutyp_dflt` |
-| `SerialNumberProfile` |  | |  | `serial` |
-| `AdjustmentProfile` |  | |  | `adprof` |
-| `PreferredUnitOfMeasure` |  | |  | `scm_puom` |
-| `IsPilferable` |  | |  | `pilferable` |
-| `IsRelevantForHzdsSubstances` |  | |  | `hazmat` |
-| `QuarantinePeriod` |  | |  | `qqtime` |
-| `TimeUnitForQuarantinePeriod` |  | |  | `qqtimeuom` |
-| `QualityInspectionGroup` |  | |  | `qgrp` |
-| `HandlingUnitType` |  | |  | `hutyp` |
-| `HasVariableTareWeight` |  | |  | `tare_var` |
-| `MaximumPackagingLength` |  | |  | `maxl` |
-| `MaximumPackagingWidth` |  | |  | `maxb` |
-| `MaximumPackagingHeight` |  | |  | `maxh` |
-| `MaximumCapacity` |  | |  | `maxc` |
-| `OvercapacityTolerance` |  | |  | `maxc_tol` |
-| `UnitForMaxPackagingDimensions` |  | |  | `maxdim_uom` |
-| `BaseUnitSpecificProductLength` |  | |  | `laeng` |
-| `BaseUnitSpecificProductWidth` |  | |  | `breit` |
-| `BaseUnitSpecificProductHeight` |  | |  | `hoehe` |
-| `ProductMeasurementUnit` |  | |  | `meabm` |
-| `ProductValidStartDate` |  | |  | `datab` |
-| `ArticleCategory` |  | |  | `cast (mara.attyp as prodcategory preserving type )` |
-| `ContentUnit` |  | |  | `inhme` |
-| `NetContent` |  | |  | `inhal` |
-| `ComparisonPriceQuantity` |  | |  | `vpreh` |
-| `GrossContent` |  | |  | `inhbr` |
-| `ProductValidEndDate` |  | |  | `liqdt` |
-| `AssortmentListType` |  | |  | `bbtyp` |
-| `HasTextilePartsWthAnimalOrigin` |  | |  | `animal_origin` |
-| `ProductSeasonUsageCategory` |  | |  | `fsh_sealv` |
-| `IndustrySector` |  | |  | `mbrsh` |
-| `ChangeNumber` |  | |  | `cast('' as changenumber )` |
-| `MaterialRevisionLevel` |  | |  | `cast('' as productrevisionlevel)` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `LastChangeDateTime` |  | |  | `case when mara.aenam <> '' then cast(dats_tims_to_tstmp(mara.laeda, mara.last_changed_time, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') as changedatetime ) else cast(dats_tims_to_tstmp(mara.ersda, mara.last_changed_time, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') as changedatetime ) end` |
-| `LastChangeTime` |  | |  | `last_changed_time` |
-| `DangerousGoodsIndProfile` |  | |  | `profl` |
-| `ProductUUID` |  | |  | `scm_matid_guid16` |
-| `ProdSupChnMgmtUUID22` |  | |  | `scm_matid_guid22` |
-| `ProductDocumentChangeNumber` |  | |  | `aeszn` |
-| `ProductDocumentPageCount` |  | |  | `blanz` |
-| `ProductDocumentPageNumber` |  | |  | `blatt` |
-| `OwnInventoryManagedProduct` |  | |  | `bmatn` |
-| `DocumentIsCreatedByCAD` |  | |  | `cadkz` |
-| `ProductionOrInspectionMemoTxt` |  | |  | `ferth` |
-| `ProductionMemoPageFormat` |  | |  | `formt` |
-| `GlobalTradeItemNumberVariant` |  | |  | `gtin_variant` |
-| `ProductIsHighlyViscous` |  | |  | `ihivi` |
-| `TransportIsInBulk` |  | |  | `iloos` |
-| `ProdAllocDetnProcedure` |  | |  | `kosch` |
-| `ProdEffctyParamValsAreAssigned` |  | |  | `kzeff` |
-| `ProdIsEnvironmentallyRelevant` |  | |  | `kzumw` |
-| `LaboratoryOrDesignOffice` |  | |  | `labor` |
-| `PackagingMaterialGroup` |  | |  | `magrv` |
-| `ProductIsLocked` |  | |  | `cast( mara.matfi as productislocked preserving type )` |
-| `DiscountInKindEligibility` |  | |  | `nrfhg` |
-| `SmartFormName` |  | |  | `ps_smartform` |
-| `PackingReferenceProduct` |  | |  | `rmatp` |
-| `BasicMaterial` |  | |  | `wrkst` |
-| `ProductDocumentNumber` |  | |  | `zeinr` |
-| `ProductDocumentVersion` |  | |  | `zeivr` |
-| `ProductDocumentType` |  | |  | `zeiar` |
-| `ProductDocumentPageFormat` |  | |  | `zeifo` |
-| `ProductConfiguration` |  | |  | `cuobf` |
-| `SegmentationStrategy` |  | |  | `sgt_covsa` |
-| `SegmentationIsRelevant` |  | |  | `sgt_rel` |
-| `ProductCompositionIsRelevant` |  | |  | `przus` |
-| `IsChemicalComplianceRelevant` |  | |  | `cast( mara.chml_cmplnc_rlvnce_ind as chml_cmplnc_rlvnce_ind_pm )` |
-| `ManufacturerBookPartNumber` |  | |  | `msbookpartno` |
-| `LogisticalProductCategory` |  | |  | `logistical_mat_category` |
-| `SalesProduct` |  | |  | `sales_material` |
-| `ProdCharc1InternalNumber` |  | |  | `color_atinn` |
-| `ProdCharc2InternalNumber` |  | |  | `size1_atinn` |
-| `ProdCharc3InternalNumber` |  | |  | `size2_atinn` |
-| `ProductCharacteristic1` |  | |  | `color` |
-| `ProductCharacteristic2` |  | |  | `size1` |
-| `ProductCharacteristic3` |  | |  | `size2` |
-| `MaintenanceStatus` |  | |  | `pstat` |
-| `FashionProdInformationField1` |  | |  | `fsh_mg_at1` |
-| `FashionProdInformationField2` |  | |  | `fsh_mg_at2` |
-| `FashionProdInformationField3` |  | |  | `fsh_mg_at3` |
-| `_Text` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_ProductGroupText` | | ✓ | | |
-| `_ProductGroup_2` | | ✓ | | |
-| `_ProductGroupText_2` | | ✓ | | |
-| `_ProductRetail` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_DivisionText` | | ✓ | | |
-| `_ExternalProductGroup` | | ✓ | | |
-| `_ExtProdGrpText` | | ✓ | | |
-| `_ProductHierarchy` | | ✓ | | |
-| `_ProductHierarchyText` | | ✓ | | |
-| `_ProductType` | | ✓ | | |
-| `_ProductTypeName` | | ✓ | | |
-| `_InternationalArticleNumberCat` | | ✓ | | |
-| `_IntArticleNumberText` | | ✓ | | |
-| `_ProductCategory` | | ✓ | | |
-| `_ProductCategoryText` | | ✓ | | |
-| `_ArticleCategoryText` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
-| `_CrossPlantConfigurableProduct` | | ✓ | | |
-| `_Brand` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_CreatedByUserContactCard` | | ✓ | | |
-| `_LastChangedByUserContactCard` | | ✓ | | |
-| `_BasicMaterial` | | ✓ | | |
-| `_ContentUnit` | | ✓ | | |
-| `_ContentUnitText` | | ✓ | | |
-| `_ProductMeasurementUnit` | | ✓ | | |
-| `_ProductMeasurementUnitText` | | ✓ | | |
-| `_ProductProcurement` | | ✓ | | |
-| `_ProductSales` | | ✓ | | |
-| `_ProductStatus` | | ✓ | | |
-| `_ProductStatusText` | | ✓ | | |
-| `_WeightUnitValueHelp` | | ✓ | | |
-| `_WeightUnitText` | | ✓ | | |
-| `_QuantityUnitValueHelp` | | ✓ | | |
-| `_QuantityUnitText` | | ✓ | | |
-| `_UnitForMaxPackaging` | | ✓ | | |
-| `_UnitForMaxPackagingText` | | ✓ | | |
-| `_TimeUnitForQuarantinePeriod` | | ✓ | | |
-| `_TimeUnitQuarantinePeriodText` | | ✓ | | |
-| `_MaterialText` | | ✓ | | |
-| `_MDProductHierarchyNode` | | ✓ | | |
-| `_MaterialRevisionLevel` | | ✓ | | |
-| `_ChemicalComplianceRelevant` | | ✓ | | |
-| `_ChemicalComplianceRlvtText` | | ✓ | | |
-| `_ItemCategoryGroup` | | ✓ | | |
-| `_ItemCategoryGroupText` | | ✓ | | |
-| `_BrandText` | | ✓ | | |
-| `_ESHProductSalesDelivery` | | ✓ | | |
-| `_ESHSourceOfSupply` | | ✓ | | |
-| `_ESHSupplier` | | ✓ | | |
-| `_ESHTextObjectPlainLongText` | | ✓ | | |
-| `_ESHDocInfoRecordObjectLink` | | ✓ | | |
-| `_ESHPurOrderQuantityUnitText` | | ✓ | | |
-| `_ESHProductPlant` | | ✓ | | |
-| `_ESHCharValueAssignment` | | ✓ | | |
-| `_ESHClassAssignment` | | ✓ | | |
-| `_ProdUnivHierarchyNode` | | ✓ | | |
-| `_AssortmentListType` | | ✓ | | |
-| `_AssortmentListTypeText` | | ✓ | | |
-| `_BR_ANPCode` | | ✓ | | |
-| `_BR_ANPCodeText` | | ✓ | | |
-| `_HandlingIndicator` | | ✓ | | |
-| `_HandlingIndicatorText` | | ✓ | | |
-| `_WarehouseProductGroup` | | ✓ | | |
-| `_WarehouseProductGroupText` | | ✓ | | |
-| `_WarehouseStorageCondition` | | ✓ | | |
-| `_WarehouseStorageConditionText` | | ✓ | | |
-| `_StandardHandlingUnitType` | | ✓ | | |
-| `_StandardHandlingUnitTypeText` | | ✓ | | |
-| `_SerialNumberProfile` | | ✓ | | |
-| `_SerialNumberProfileText` | | ✓ | | |
-| `_AdjustmentProfile` | | ✓ | | |
-| `_AdjustmentProfileText` | | ✓ | | |
-| `_AdjustmentProfile_2` | | ✓ | | |
-| `_AdjustmentProfileText_2` | | ✓ | | |
-| `_QualityInspectionGroup` | | ✓ | | |
-| `_QualityInspectionGroupText` | | ✓ | | |
-| `_HandlingUnitType` | | ✓ | | |
-| `_HandlingUnitTypeText` | | ✓ | | |
-| `_ProductESPP` | | ✓ | | |
-| `_ProductSCM` | | ✓ | | |
-| `_ProductType_2` | | ✓ | | |
-| `_ProductTypeName_2` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
-| `_RetProdCharc1` | | ✓ | | |
-| `_RetProdCharc1Text` | | ✓ | | |
-| `_RetProdCharc2` | | ✓ | | |
-| `_RetProdCharc2Text` | | ✓ | | |
-| `_RetProdCharc3` | | ✓ | | |
-| `_RetProdCharc3Text` | | ✓ | | |
-| `_FashionProdInfoFld1` | | ✓ | | |
-| `_FashionProdInfoFld1Text` | | ✓ | | |
-| `_FashionProdInfoFld2` | | ✓ | | |
-| `_FashionProdInfoFld2Text` | | ✓ | | |
-| `_FashionProdInfoFld3` | | ✓ | | |
-| `_FashionProdInfoFld3Text` | | ✓ | | |
-| `_VarblPurOrdUnitActvStatusTxt` | | ✓ | | |
-| `_SerialNoExplicitnessLevelTxt` | | ✓ | | |
-| `_TransportationGroupText` | | ✓ | | |
-| `_IndustrySector` | | ✓ | | |
-| `_IndustrySectorText` | | ✓ | | |
-| `_CountryOfOriginText` | | ✓ | | |
-| `_PreferredUnitOfMeasureText` | | ✓ | | |
-| `_SalesProductDescription` | | ✓ | | |
-| `_GenericProductDescription` | | ✓ | | |
-| `_PackgRefProductDescription` | | ✓ | | |
-| `_OwnInvtryMngdProdDescription` | | ✓ | | |
-| `_MfrBookPartNumberDescription` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast (mara.matnr as productnumber preserving type )` |  |  |
+| `ProductExternalID` |  | |  | `matnr_external` |  |  |
+| `ProductOID` |  | |  | `productoid` |  |  |
+| `ProductType` |  | |  | `cast (mara.mtart as producttype preserving type )` |  |  |
+| `CreationDate` |  | |  | `ersda` |  |  |
+| `CreationTime` |  | |  | `created_at_time` |  |  |
+| `CreationDateTime` |  | |  | `cast ( dats_tims_to_tstmp( mara.ersda, mara.created_at_time, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as cmd_prd_creation_date_time )` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `LastChangeDate` |  | |  | `laeda` |  |  |
+| `LastChangedByUser` |  | |  | `case when mara.aenam <> '' then mara.aenam else cast( mara.ernam as aenam preserving type ) end` |  |  |
+| `IsMarkedForDeletion` |  | |  | `cast (mara.lvorm as ismarkedfordeletion)` |  |  |
+| `CrossPlantStatus` |  | |  | `cast (mara.mstae as crossplantstatus)` |  |  |
+| `CrossPlantStatusValidityDate` |  | |  | `mstde` |  |  |
+| `ProductOldID` |  | |  | `cast (mara.bismt as productoldid)` |  |  |
+| `GrossWeight` |  | |  | `brgew` |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  | `bstme` |  |  |
+| `SourceOfSupply` |  | |  | `bwscl` |  |  |
+| `WeightUnit` |  | |  | `gewei` |  |  |
+| `CountryOfOrigin` |  | |  | `herkl` |  |  |
+| `CompetitorID` |  | |  | `kunnr` |  |  |
+| `ProductGroup` |  | |  | `cast (mara.matkl as productgroup preserving type )` |  |  |
+| `BaseUnit` |  | |  | `meins` |  |  |
+| `ItemCategoryGroup` |  | |  | `mtpos_mara` |  |  |
+| `NetWeight` |  | |  | `ntgew` |  |  |
+| `ProductHierarchy` |  | |  | `prdha` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `VarblPurOrdUnitIsActive` |  | |  | `vabme` |  |  |
+| `VolumeUnit` |  | |  | `voleh` |  |  |
+| `MaterialVolume` |  | |  | `cast (mara.volum as materialvolume)` |  |  |
+| `SalesStatus` |  | |  | `mstav` |  |  |
+| `TransportationGroup` |  | |  | `tragr` |  |  |
+| `SalesStatusValidityDate` |  | |  | `mstdv` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `ANPCode` |  | |  | `anp` |  |  |
+| `ProductCategory` |  | |  | `cast (mara.attyp as prodcategory preserving type )` |  |  |
+| `Brand` |  | |  | `brand_id` |  |  |
+| `ProcurementRule` |  | |  | `bwvor` |  |  |
+| `ValidityStartDate` |  | |  | `datab` |  |  |
+| `LowLevelCode` |  | |  | `disst` |  |  |
+| `ProdNoInGenProdInPrepackProd` |  | |  | `gennr` |  |  |
+| `SerialIdentifierAssgmtProfile` |  | |  | `serial` |  |  |
+| `SizeOrDimensionText` |  | |  | `groes` |  |  |
+| `IndustryStandardName` |  | |  | `normt` |  |  |
+| `ProductStandardID` |  | |  | `cast( mara.ean11 as globaltradeitemnumber)` |  |  |
+| `InternationalArticleNumberCat` |  | |  | `numtp` |  |  |
+| `ProductIsConfigurable` |  | |  | `cast( mara.kzkfg as productisconfigurable preserving type )` |  |  |
+| `IsBatchManagementRequired` |  | |  | `xchpf` |  |  |
+| `HasEmptiesBOM` |  | |  | `mlgut` |  |  |
+| `ExternalProductGroup` |  | |  | `cast (mara.extwg as externalproductgroup preserving type )` |  |  |
+| `CrossPlantConfigurableProduct` |  | |  | `cast (mara.satnr as crossplantconfigurableproduct preserving type )` |  |  |
+| `SerialNoExplicitnessLevel` |  | |  | `serlv` |  |  |
+| `ProductManufacturerNumber` |  | |  | `mfrpn` |  |  |
+| `ManufacturerNumber` |  | |  | `mfrnr` |  |  |
+| `ManufacturerPartProfile` |  | |  | `mprof` |  |  |
+| `QltyMgmtInProcmtIsActive` |  | |  | `qmpur` |  |  |
+| `IsApprovedBatchRecordReqd` |  | |  | `xgchp` |  |  |
+| `HandlingIndicator` |  | |  | `hndlcode` |  |  |
+| `WarehouseProductGroup` |  | |  | `whmatgr` |  |  |
+| `WarehouseStorageCondition` |  | |  | `whstc` |  |  |
+| `StandardHandlingUnitType` |  | |  | `hutyp_dflt` |  |  |
+| `SerialNumberProfile` |  | |  | `serial` |  |  |
+| `AdjustmentProfile` |  | |  | `adprof` |  |  |
+| `PreferredUnitOfMeasure` |  | |  | `scm_puom` |  |  |
+| `IsPilferable` |  | |  | `pilferable` |  |  |
+| `IsRelevantForHzdsSubstances` |  | |  | `hazmat` |  |  |
+| `QuarantinePeriod` |  | |  | `qqtime` |  |  |
+| `TimeUnitForQuarantinePeriod` |  | |  | `qqtimeuom` |  |  |
+| `QualityInspectionGroup` |  | |  | `qgrp` |  |  |
+| `HandlingUnitType` |  | |  | `hutyp` |  |  |
+| `HasVariableTareWeight` |  | |  | `tare_var` |  |  |
+| `MaximumPackagingLength` |  | |  | `maxl` |  |  |
+| `MaximumPackagingWidth` |  | |  | `maxb` |  |  |
+| `MaximumPackagingHeight` |  | |  | `maxh` |  |  |
+| `MaximumCapacity` |  | |  | `maxc` |  |  |
+| `OvercapacityTolerance` |  | |  | `maxc_tol` |  |  |
+| `UnitForMaxPackagingDimensions` |  | |  | `maxdim_uom` |  |  |
+| `BaseUnitSpecificProductLength` |  | |  | `laeng` |  |  |
+| `BaseUnitSpecificProductWidth` |  | |  | `breit` |  |  |
+| `BaseUnitSpecificProductHeight` |  | |  | `hoehe` |  |  |
+| `ProductMeasurementUnit` |  | |  | `meabm` |  |  |
+| `ProductValidStartDate` |  | |  | `datab` |  |  |
+| `ArticleCategory` |  | |  | `cast (mara.attyp as prodcategory preserving type )` |  |  |
+| `ContentUnit` |  | |  | `inhme` |  |  |
+| `NetContent` |  | |  | `inhal` |  |  |
+| `ComparisonPriceQuantity` |  | |  | `vpreh` |  |  |
+| `GrossContent` |  | |  | `inhbr` |  |  |
+| `ProductValidEndDate` |  | |  | `liqdt` |  |  |
+| `AssortmentListType` |  | |  | `bbtyp` |  |  |
+| `HasTextilePartsWthAnimalOrigin` |  | |  | `animal_origin` |  |  |
+| `ProductSeasonUsageCategory` |  | |  | `fsh_sealv` |  |  |
+| `IndustrySector` |  | |  | `mbrsh` |  |  |
+| `ChangeNumber` |  | |  | `cast('' as changenumber )` |  |  |
+| `MaterialRevisionLevel` |  | |  | `cast('' as productrevisionlevel)` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `LastChangeDateTime` |  | |  | `case when mara.aenam <> '' then cast(dats_tims_to_tstmp(mara.laeda, mara.last_changed_time, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') as changedatetime ) else cast(dats_tims_to_tstmp(mara.ersda, mara.last_changed_time, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL') as changedatetime ) end` |  |  |
+| `LastChangeTime` |  | |  | `last_changed_time` |  |  |
+| `DangerousGoodsIndProfile` |  | |  | `profl` |  |  |
+| `ProductUUID` |  | |  | `scm_matid_guid16` |  |  |
+| `ProdSupChnMgmtUUID22` |  | |  | `scm_matid_guid22` |  |  |
+| `ProductDocumentChangeNumber` |  | |  | `aeszn` |  |  |
+| `ProductDocumentPageCount` |  | |  | `blanz` |  |  |
+| `ProductDocumentPageNumber` |  | |  | `blatt` |  |  |
+| `OwnInventoryManagedProduct` |  | |  | `bmatn` |  |  |
+| `DocumentIsCreatedByCAD` |  | |  | `cadkz` |  |  |
+| `ProductionOrInspectionMemoTxt` |  | |  | `ferth` |  |  |
+| `ProductionMemoPageFormat` |  | |  | `formt` |  |  |
+| `GlobalTradeItemNumberVariant` |  | |  | `gtin_variant` |  |  |
+| `ProductIsHighlyViscous` |  | |  | `ihivi` |  |  |
+| `TransportIsInBulk` |  | |  | `iloos` |  |  |
+| `ProdAllocDetnProcedure` |  | |  | `kosch` |  |  |
+| `ProdEffctyParamValsAreAssigned` |  | |  | `kzeff` |  |  |
+| `ProdIsEnvironmentallyRelevant` |  | |  | `kzumw` |  |  |
+| `LaboratoryOrDesignOffice` |  | |  | `labor` |  |  |
+| `PackagingMaterialGroup` |  | |  | `magrv` |  |  |
+| `ProductIsLocked` |  | |  | `cast( mara.matfi as productislocked preserving type )` |  |  |
+| `DiscountInKindEligibility` |  | |  | `nrfhg` |  |  |
+| `SmartFormName` |  | |  | `ps_smartform` |  |  |
+| `PackingReferenceProduct` |  | |  | `rmatp` |  |  |
+| `BasicMaterial` |  | |  | `wrkst` |  |  |
+| `ProductDocumentNumber` |  | |  | `zeinr` |  |  |
+| `ProductDocumentVersion` |  | |  | `zeivr` |  |  |
+| `ProductDocumentType` |  | |  | `zeiar` |  |  |
+| `ProductDocumentPageFormat` |  | |  | `zeifo` |  |  |
+| `ProductConfiguration` |  | |  | `cuobf` |  |  |
+| `SegmentationStrategy` |  | |  | `sgt_covsa` |  |  |
+| `SegmentationIsRelevant` |  | |  | `sgt_rel` |  |  |
+| `ProductCompositionIsRelevant` |  | |  | `przus` |  |  |
+| `IsChemicalComplianceRelevant` |  | |  | `cast( mara.chml_cmplnc_rlvnce_ind as chml_cmplnc_rlvnce_ind_pm )` |  |  |
+| `ManufacturerBookPartNumber` |  | |  | `msbookpartno` |  |  |
+| `LogisticalProductCategory` |  | |  | `logistical_mat_category` |  |  |
+| `SalesProduct` |  | |  | `sales_material` |  |  |
+| `ProdCharc1InternalNumber` |  | |  | `color_atinn` |  |  |
+| `ProdCharc2InternalNumber` |  | |  | `size1_atinn` |  |  |
+| `ProdCharc3InternalNumber` |  | |  | `size2_atinn` |  |  |
+| `ProductCharacteristic1` |  | |  | `color` |  |  |
+| `ProductCharacteristic2` |  | |  | `size1` |  |  |
+| `ProductCharacteristic3` |  | |  | `size2` |  |  |
+| `MaintenanceStatus` |  | |  | `pstat` |  |  |
+| `FashionProdInformationField1` |  | |  | `fsh_mg_at1` |  |  |
+| `FashionProdInformationField2` |  | |  | `fsh_mg_at2` |  |  |
+| `FashionProdInformationField3` |  | |  | `fsh_mg_at3` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_ProductGroupText` | | ✓ | | | | |
+| `_ProductGroup_2` | | ✓ | | | | |
+| `_ProductGroupText_2` | | ✓ | | | | |
+| `_ProductRetail` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_DivisionText` | | ✓ | | | | |
+| `_ExternalProductGroup` | | ✓ | | | | |
+| `_ExtProdGrpText` | | ✓ | | | | |
+| `_ProductHierarchy` | | ✓ | | | | |
+| `_ProductHierarchyText` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
+| `_ProductTypeName` | | ✓ | | | | |
+| `_InternationalArticleNumberCat` | | ✓ | | | | |
+| `_IntArticleNumberText` | | ✓ | | | | |
+| `_ProductCategory` | | ✓ | | | | |
+| `_ProductCategoryText` | | ✓ | | | | |
+| `_ArticleCategoryText` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
+| `_CrossPlantConfigurableProduct` | | ✓ | | | | |
+| `_Brand` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_CreatedByUserContactCard` | | ✓ | | | | |
+| `_LastChangedByUserContactCard` | | ✓ | | | | |
+| `_BasicMaterial` | | ✓ | | | | |
+| `_ContentUnit` | | ✓ | | | | |
+| `_ContentUnitText` | | ✓ | | | | |
+| `_ProductMeasurementUnit` | | ✓ | | | | |
+| `_ProductMeasurementUnitText` | | ✓ | | | | |
+| `_ProductProcurement` | | ✓ | | | | |
+| `_ProductSales` | | ✓ | | | | |
+| `_ProductStatus` | | ✓ | | | | |
+| `_ProductStatusText` | | ✓ | | | | |
+| `_WeightUnitValueHelp` | | ✓ | | | | |
+| `_WeightUnitText` | | ✓ | | | | |
+| `_QuantityUnitValueHelp` | | ✓ | | | | |
+| `_QuantityUnitText` | | ✓ | | | | |
+| `_UnitForMaxPackaging` | | ✓ | | | | |
+| `_UnitForMaxPackagingText` | | ✓ | | | | |
+| `_TimeUnitForQuarantinePeriod` | | ✓ | | | | |
+| `_TimeUnitQuarantinePeriodText` | | ✓ | | | | |
+| `_MaterialText` | | ✓ | | | | |
+| `_MDProductHierarchyNode` | | ✓ | | | | |
+| `_MaterialRevisionLevel` | | ✓ | | | | |
+| `_ChemicalComplianceRelevant` | | ✓ | | | | |
+| `_ChemicalComplianceRlvtText` | | ✓ | | | | |
+| `_ItemCategoryGroup` | | ✓ | | | | |
+| `_ItemCategoryGroupText` | | ✓ | | | | |
+| `_BrandText` | | ✓ | | | | |
+| `_ESHProductSalesDelivery` | | ✓ | | | | |
+| `_ESHSourceOfSupply` | | ✓ | | | | |
+| `_ESHSupplier` | | ✓ | | | | |
+| `_ESHTextObjectPlainLongText` | | ✓ | | | | |
+| `_ESHDocInfoRecordObjectLink` | | ✓ | | | | |
+| `_ESHPurOrderQuantityUnitText` | | ✓ | | | | |
+| `_ESHProductPlant` | | ✓ | | | | |
+| `_ESHCharValueAssignment` | | ✓ | | | | |
+| `_ESHClassAssignment` | | ✓ | | | | |
+| `_ProdUnivHierarchyNode` | | ✓ | | | | |
+| `_AssortmentListType` | | ✓ | | | | |
+| `_AssortmentListTypeText` | | ✓ | | | | |
+| `_BR_ANPCode` | | ✓ | | | | |
+| `_BR_ANPCodeText` | | ✓ | | | | |
+| `_HandlingIndicator` | | ✓ | | | | |
+| `_HandlingIndicatorText` | | ✓ | | | | |
+| `_WarehouseProductGroup` | | ✓ | | | | |
+| `_WarehouseProductGroupText` | | ✓ | | | | |
+| `_WarehouseStorageCondition` | | ✓ | | | | |
+| `_WarehouseStorageConditionText` | | ✓ | | | | |
+| `_StandardHandlingUnitType` | | ✓ | | | | |
+| `_StandardHandlingUnitTypeText` | | ✓ | | | | |
+| `_SerialNumberProfile` | | ✓ | | | | |
+| `_SerialNumberProfileText` | | ✓ | | | | |
+| `_AdjustmentProfile` | | ✓ | | | | |
+| `_AdjustmentProfileText` | | ✓ | | | | |
+| `_AdjustmentProfile_2` | | ✓ | | | | |
+| `_AdjustmentProfileText_2` | | ✓ | | | | |
+| `_QualityInspectionGroup` | | ✓ | | | | |
+| `_QualityInspectionGroupText` | | ✓ | | | | |
+| `_HandlingUnitType` | | ✓ | | | | |
+| `_HandlingUnitTypeText` | | ✓ | | | | |
+| `_ProductESPP` | | ✓ | | | | |
+| `_ProductSCM` | | ✓ | | | | |
+| `_ProductType_2` | | ✓ | | | | |
+| `_ProductTypeName_2` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
+| `_RetProdCharc1` | | ✓ | | | | |
+| `_RetProdCharc1Text` | | ✓ | | | | |
+| `_RetProdCharc2` | | ✓ | | | | |
+| `_RetProdCharc2Text` | | ✓ | | | | |
+| `_RetProdCharc3` | | ✓ | | | | |
+| `_RetProdCharc3Text` | | ✓ | | | | |
+| `_FashionProdInfoFld1` | | ✓ | | | | |
+| `_FashionProdInfoFld1Text` | | ✓ | | | | |
+| `_FashionProdInfoFld2` | | ✓ | | | | |
+| `_FashionProdInfoFld2Text` | | ✓ | | | | |
+| `_FashionProdInfoFld3` | | ✓ | | | | |
+| `_FashionProdInfoFld3Text` | | ✓ | | | | |
+| `_VarblPurOrdUnitActvStatusTxt` | | ✓ | | | | |
+| `_SerialNoExplicitnessLevelTxt` | | ✓ | | | | |
+| `_TransportationGroupText` | | ✓ | | | | |
+| `_IndustrySector` | | ✓ | | | | |
+| `_IndustrySectorText` | | ✓ | | | | |
+| `_CountryOfOriginText` | | ✓ | | | | |
+| `_PreferredUnitOfMeasureText` | | ✓ | | | | |
+| `_SalesProductDescription` | | ✓ | | | | |
+| `_GenericProductDescription` | | ✓ | | | | |
+| `_PackgRefProductDescription` | | ✓ | | | | |
+| `_OwnInvtryMngdProdDescription` | | ✓ | | | | |
+| `_MfrBookPartNumberDescription` | | ✓ | | | | |
 
 ## Associations
 

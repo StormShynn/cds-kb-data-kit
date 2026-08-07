@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MRPProfile` | ✓ | |  | `dispr` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MRPProfile` | ✓ | |  | `dispr` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

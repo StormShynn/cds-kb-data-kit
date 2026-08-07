@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  |  |
-| `SchedulingFloatProfile` | ✓ | |  |  |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |  |  |
+| `SchedulingFloatProfile` | ✓ | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Source Code
 

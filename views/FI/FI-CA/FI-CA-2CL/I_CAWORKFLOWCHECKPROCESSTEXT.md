@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAWorkflowCheckProcess` | ✓ | |  | `cast( left( domvalue_l, 1 ) as c4eyp_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAWorkflowCheckProcessName` |  | |  | `cast( ddtext as c4eyp_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAWorkflowCheckProcess` | ✓ | |  | `cast( left( domvalue_l, 1 ) as c4eyp_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAWorkflowCheckProcessName` |  | |  | `cast( ddtext as c4eyp_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,46 +29,46 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  |  |
-| `TaskListGroup` | ✓ | |  |  |
-| `TaskListGroupCounter` | ✓ | |  |  |
-| `TaskListSequence` | ✓ | |  |  |
-| `TaskListOperationInternalId` | ✓ | |  |  |
-| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |
-| `MaintOperationExecStageCode` |  | |  |  |
-| `MaintenanceTaskListOperation` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `SubOperation` |  | |  |  |
-| `SuperiorOperationInternalID` |  | |  |  |
-| `SubOperationText` |  | |  |  |
-| `LongTextLanguageCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `OperationControlProfile` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchaseContract` |  | |  |  |
-| `PurchaseContractItem` |  | |  |  |
-| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PlannedDeliveryDuration` |  | |  |  |
-| `NumberOfOperationPriceUnits` |  | |  |  |
-| `OpExternalProcessingPrice` |  | |  |  |
-| `OpExternalProcessingCurrency` |  | |  |  |
-| `OperationCostingRelevancyType` |  | |  |  |
-| `_Header` | | ✓ | | |
-| `_NonHistOp` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |  |  |
+| `TaskListGroup` | ✓ | |  |  |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |  |  |
+| `TaskListSequence` | ✓ | |  |  |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |  |  |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |  |  |
+| `MaintOperationExecStageCode` |  | |  |  |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `SubOperation` |  | |  |  |  |  |
+| `SuperiorOperationInternalID` |  | |  |  |  |  |
+| `SubOperationText` |  | |  |  |  |  |
+| `LongTextLanguageCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `OperationControlProfile` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchaseContract` |  | |  |  |  |  |
+| `PurchaseContractItem` |  | |  |  |  |  |
+| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PlannedDeliveryDuration` |  | |  |  |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |  |  |
+| `OperationCostingRelevancyType` |  | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
+| `_NonHistOp` | | ✓ | | | | |
 
 ## Source Code
 

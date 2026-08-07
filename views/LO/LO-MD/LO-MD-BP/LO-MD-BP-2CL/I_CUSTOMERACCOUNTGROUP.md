@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerAccountGroup` | ✓ | |  | `ktokd` |
-| `_CustomerAccountGroupText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerAccountGroup` | ✓ | |  | `ktokd` |  |  |
+| `_CustomerAccountGroupText` | | ✓ | | | | |
 
 ## Associations
 

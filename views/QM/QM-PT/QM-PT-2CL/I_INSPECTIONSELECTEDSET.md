@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SelectedCodeSetPlant` | ✓ | |  | `werks` |
-| `InspectionCatalog` | ✓ | |  | `katalogart` |
-| `SelectedCodeSet` | ✓ | |  | `auswahlmge` |
-| `Language` |  | |  | `case when qpamtxt.language is not null then qpamtxt.language else cast( $session.system_language as spras preserving type ) end` |
-| `SelectedCodeSetText` |  | |  | `case when qpamtxt.language is not null then cast( qpamtxt.ktx01 as vdm_qktextam preserving type ) else cast( qpam.ktx01 as vdm_qktextam preserving type ) end` |
-| `InspectionSelectedSetStatus` |  | |  | `status` |
-| `SelectedCodeSetDfltCodeGroup` |  | |  | `defaultcodegr` |
-| `SelectedCodeSetDefaultCode` |  | |  | `defaultcode` |
-| `_SelectedCodeSetPlant` | | ✓ | | |
-| `_InspectionCatalog` | | ✓ | | |
-| `_InspectionSelectedSetText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SelectedCodeSetPlant` | ✓ | |  | `werks` |  |  |
+| `InspectionCatalog` | ✓ | |  | `katalogart` |  |  |
+| `SelectedCodeSet` | ✓ | |  | `auswahlmge` |  |  |
+| `Language` |  | |  | `case when qpamtxt.language is not null then qpamtxt.language else cast( $session.system_language as spras preserving type ) end` |  |  |
+| `SelectedCodeSetText` |  | |  | `case when qpamtxt.language is not null then cast( qpamtxt.ktx01 as vdm_qktextam preserving type ) else cast( qpam.ktx01 as vdm_qktextam preserving type ) end` |  |  |
+| `InspectionSelectedSetStatus` |  | |  | `status` |  |  |
+| `SelectedCodeSetDfltCodeGroup` |  | |  | `defaultcodegr` |  |  |
+| `SelectedCodeSetDefaultCode` |  | |  | `defaultcode` |  |  |
+| `_SelectedCodeSetPlant` | | ✓ | | | | |
+| `_InspectionCatalog` | | ✓ | | | | |
+| `_InspectionSelectedSetText` | | ✓ | | | | |
 
 ## Associations
 

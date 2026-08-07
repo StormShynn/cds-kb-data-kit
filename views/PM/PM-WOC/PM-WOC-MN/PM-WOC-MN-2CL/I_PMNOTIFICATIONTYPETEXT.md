@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NotificationType` | ✓ | |  | `qmart` |
-| `Language` | ✓ | |  | `spras` |
-| `NotificationTypeName` |  | |  | `qmartx` |
-| `_PMNotificationType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NotificationType` | ✓ | |  | `qmart` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `NotificationTypeName` |  | |  | `qmartx` |  |  |
+| `_PMNotificationType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

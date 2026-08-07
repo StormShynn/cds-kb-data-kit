@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |
-| `CostCtrActivityType` | ✓ | |  | `lstar` |
-| `ValidityEndDate` | ✓ | |  | `datbi` |
-| `ValidityStartDate` |  | |  | `datab` |
-| `CostCtrActivityTypeQtyUnit` |  | |  | `leinh` |
-| `CostCtrActivityTypeCategory` |  | |  | `latyp` |
-| `AllocationCostElement` |  | |  | `vksta` |
-| `CostCtrActivityTypeOutpQtyUnit` |  | |  | `auseh` |
-| `CreationDate` |  | |  | `ersda` |
-| `EnteredByUser` |  | |  | `usnam` |
-| `CostOriginGroup` |  | |  | `hrkft` |
-| `ActlPostgCostCenterActyTypeCat` |  | |  | `latypi` |
-| `OutputQuantityFactor` |  | |  | `ausfk` |
-| `ActivityTypeIsBlocked` |  | |  | `sprkz` |
-| `FixedCostIsPredistributed` |  | |  | `fixvo` |
-| `PriceAllocationMethod` |  | |  | `tarkz` |
-| `PeriodPriceIsAverage` |  | |  | `yrate` |
-| `ActualPriceAllocationMethod` |  | |  | `tarkz_i` |
-| `ActualQuantityIsSetManually` |  | |  | `manist` |
-| `PlanQuantityIsSetManually` |  | |  | `manplan` |
-| `CostCtrActivityTypeValidCat` |  | |  | `kstty` |
-| `CostCtrActyTypeIsCtrlgRlvtComp` |  | |  | `lark1` |
-| `CostCtrActyTypeIsHumRsceRlvt` |  | |  | `lark2` |
-| `_ControllingAreaText` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_CostCenterCategory` | | ✓ | | |
-| `_CostCtrActivityTypeCategory` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_CostCtrActivityTypeHierNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |  |  |
+| `CostCtrActivityType` | ✓ | |  | `lstar` |  |  |
+| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
+| `ValidityStartDate` |  | |  | `datab` |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  | `leinh` |  |  |
+| `CostCtrActivityTypeCategory` |  | |  | `latyp` |  |  |
+| `AllocationCostElement` |  | |  | `vksta` |  |  |
+| `CostCtrActivityTypeOutpQtyUnit` |  | |  | `auseh` |  |  |
+| `CreationDate` |  | |  | `ersda` |  |  |
+| `EnteredByUser` |  | |  | `usnam` |  |  |
+| `CostOriginGroup` |  | |  | `hrkft` |  |  |
+| `ActlPostgCostCenterActyTypeCat` |  | |  | `latypi` |  |  |
+| `OutputQuantityFactor` |  | |  | `ausfk` |  |  |
+| `ActivityTypeIsBlocked` |  | |  | `sprkz` |  |  |
+| `FixedCostIsPredistributed` |  | |  | `fixvo` |  |  |
+| `PriceAllocationMethod` |  | |  | `tarkz` |  |  |
+| `PeriodPriceIsAverage` |  | |  | `yrate` |  |  |
+| `ActualPriceAllocationMethod` |  | |  | `tarkz_i` |  |  |
+| `ActualQuantityIsSetManually` |  | |  | `manist` |  |  |
+| `PlanQuantityIsSetManually` |  | |  | `manplan` |  |  |
+| `CostCtrActivityTypeValidCat` |  | |  | `kstty` |  |  |
+| `CostCtrActyTypeIsCtrlgRlvtComp` |  | |  | `lark1` |  |  |
+| `CostCtrActyTypeIsHumRsceRlvt` |  | |  | `lark2` |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CostCenterCategory` | | ✓ | | | | |
+| `_CostCtrActivityTypeCategory` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_CostCtrActivityTypeHierNode` | | ✓ | | | | |
 
 ## Associations
 

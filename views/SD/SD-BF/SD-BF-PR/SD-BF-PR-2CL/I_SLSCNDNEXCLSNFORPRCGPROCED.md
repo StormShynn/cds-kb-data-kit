@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConditionUsage` | ✓ | |  |  |
-| `ConditionApplication` | ✓ | |  |  |
-| `PricingProcedure` | ✓ | |  |  |
-| `CndnExclusionSequentialNumber` | ✓ | |  |  |
-| `ConditionExclusionProcedure` |  | |  |  |
-| `ConditionExclusionGroup1` |  | |  |  |
-| `ConditionExclusionGroup2` |  | |  |  |
-| `_SlsPrcgCndnExclusionGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  |  |  |  |
+| `ConditionApplication` | ✓ | |  |  |  |  |
+| `PricingProcedure` | ✓ | |  |  |  |  |
+| `CndnExclusionSequentialNumber` | ✓ | |  |  |  |  |
+| `ConditionExclusionProcedure` |  | |  |  |  |  |
+| `ConditionExclusionGroup1` |  | |  |  |  |  |
+| `ConditionExclusionGroup2` |  | |  |  |  |  |
+| `_SlsPrcgCndnExclusionGroup` | | ✓ | | | | |
 
 ## Associations
 

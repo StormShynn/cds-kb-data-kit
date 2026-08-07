@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAIntcoType` | ✓ | | `_tfk8250t` | `ico_type` |
-| `Language` | ✓ | | `_tfk8250t` | `langu` |
-| `CAIntcoTypeText` |  | |  | `cast ( _tfk8250t.text as ico_type_txt_gfn_kk preserving type )` |
-| `_CAIntcoType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAIntcoType` | ✓ | | `_tfk8250t` | `ico_type` |  |  |
+| `Language` | ✓ | | `_tfk8250t` | `langu` |  |  |
+| `CAIntcoTypeText` |  | |  | `cast ( _tfk8250t.text as ico_type_txt_gfn_kk preserving type )` |  |  |
+| `_CAIntcoType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

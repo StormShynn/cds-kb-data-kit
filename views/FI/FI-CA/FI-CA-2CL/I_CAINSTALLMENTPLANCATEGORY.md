@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` |
-| `CACreditWorthinessRatingValue` |  | |  | `bonit` |
-| `CAInstlmntPlnItmIntrstCalcType` |  | |  | `rpint` |
-| `CAInstlmntPlnItmSettlementType` |  | |  | `verart` |
-| `CAInstlmntPlanChargeType` |  | |  | `chgty` |
-| `CASurchargesAreCalcdAutomly` |  | |  | `autgeb` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` |  |  |
+| `CACreditWorthinessRatingValue` |  | |  | `bonit` |  |  |
+| `CAInstlmntPlnItmIntrstCalcType` |  | |  | `rpint` |  |  |
+| `CAInstlmntPlnItmSettlementType` |  | |  | `verart` |  |  |
+| `CAInstlmntPlanChargeType` |  | |  | `chgty` |  |  |
+| `CASurchargesAreCalcdAutomly` |  | |  | `autgeb` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

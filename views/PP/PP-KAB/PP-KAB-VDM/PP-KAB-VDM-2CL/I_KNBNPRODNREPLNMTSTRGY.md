@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `InHouseProductionReplnmtStrgy` | ✓ | |  | `pkste` |
-| `KnbnCtrlCycInhProdnCtrlType` |  | |  | `pksae` |
-| `OrderType` |  | |  | `auart` |
-| `SignalLockingTimeInMinutes` |  | |  | `aussp` |
-| `GoodsReceiptMovementType` |  | |  | `bwawe` |
-| `KnbnInhProdnIsCrossPlant` |  | |  | `pkwzw` |
-| `PostCnsmpnToCostCtrInhProdn` |  | |  | `cnscc` |
-| `PostCnsmpnToCostCtrMvtType` |  | |  | `bwacc` |
-| `KnbnReducingPlndOrdsForRptvMfg` |  | |  | `redst` |
-| `KnbnReducnPeriodForPlndOrders` |  | |  | `redhz` |
-| `KnbnPlndOrdCreationAfterCancel` |  | |  | `plgen` |
-| `KanbanReuseStrgyForPlndOrds` |  | |  | `reusest` |
-| `KanbanReuseHorizonForPlndOrds` |  | |  | `reusehz` |
-| `UsageOfPackingInstructions` |  | |  | `vpack` |
-| `KanbanCtrlCycPrintFormTemplate` |  | |  | `cc_print_form` |
-| `KanbanCtnPrintFormTemplate` |  | |  | `kbform` |
-| `CapIsConsdrdInCtrlCycCalc` |  | |  | `act_capa` |
-| `KnbnSDSchedgAgrmtDelivCrtnType` |  | |  | `sddkz` |
-| `_Text` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `InHouseProductionReplnmtStrgy` | ✓ | |  | `pkste` |  |  |
+| `KnbnCtrlCycInhProdnCtrlType` |  | |  | `pksae` |  |  |
+| `OrderType` |  | |  | `auart` |  |  |
+| `SignalLockingTimeInMinutes` |  | |  | `aussp` |  |  |
+| `GoodsReceiptMovementType` |  | |  | `bwawe` |  |  |
+| `KnbnInhProdnIsCrossPlant` |  | |  | `pkwzw` |  |  |
+| `PostCnsmpnToCostCtrInhProdn` |  | |  | `cnscc` |  |  |
+| `PostCnsmpnToCostCtrMvtType` |  | |  | `bwacc` |  |  |
+| `KnbnReducingPlndOrdsForRptvMfg` |  | |  | `redst` |  |  |
+| `KnbnReducnPeriodForPlndOrders` |  | |  | `redhz` |  |  |
+| `KnbnPlndOrdCreationAfterCancel` |  | |  | `plgen` |  |  |
+| `KanbanReuseStrgyForPlndOrds` |  | |  | `reusest` |  |  |
+| `KanbanReuseHorizonForPlndOrds` |  | |  | `reusehz` |  |  |
+| `UsageOfPackingInstructions` |  | |  | `vpack` |  |  |
+| `KanbanCtrlCycPrintFormTemplate` |  | |  | `cc_print_form` |  |  |
+| `KanbanCtnPrintFormTemplate` |  | |  | `kbform` |  |  |
+| `CapIsConsdrdInCtrlCycCalc` |  | |  | `act_capa` |  |  |
+| `KnbnSDSchedgAgrmtDelivCrtnType` |  | |  | `sddkz` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

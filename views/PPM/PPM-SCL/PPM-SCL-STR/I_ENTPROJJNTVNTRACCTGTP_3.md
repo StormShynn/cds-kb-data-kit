@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectUUID` | ✓ | |  |  |
-| `JointVenture` |  | |  |  |
-| `JointVentureCostRecoveryCode` |  | |  |  |
-| `JointVentureEquityType` |  | |  |  |
-| `JntVntrProjectType` |  | |  |  |
-| `JntIntrstBillgClass` |  | |  |  |
-| `JntIntrstBillgSubClass` |  | |  |  |
-| `_EnterpriseProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  |  |  |  |
+| `JointVenture` |  | |  |  |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |  |  |
+| `JointVentureEquityType` |  | |  |  |  |  |
+| `JntVntrProjectType` |  | |  |  |  |  |
+| `JntIntrstBillgClass` |  | |  |  |  |  |
+| `JntIntrstBillgSubClass` |  | |  |  |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
 
 ## Source Code
 

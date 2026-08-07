@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ConditionApplication` | ✓ | |  | `kappl` |
-| `ConditionType` | ✓ | |  | `kschl` |
-| `ConditionTypeName` |  | |  | `cast(vtext as vtxtm )` |
-| `_ConditionApplication` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ConditionApplication` | ✓ | |  | `kappl` |  |  |
+| `ConditionType` | ✓ | |  | `kschl` |  |  |
+| `ConditionTypeName` |  | |  | `cast(vtext as vtxtm )` |  |  |
+| `_ConditionApplication` | | ✓ | | | | |
 
 ## Associations
 

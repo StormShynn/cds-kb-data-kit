@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PlanningCategory` | ✓ | |  | `category` |
-| `PlanningCatIsForAvailyCtrl` |  | |  | `availability_control` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanningCategory` | ✓ | |  | `category` |  |  |
+| `PlanningCatIsForAvailyCtrl` |  | |  | `availability_control` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

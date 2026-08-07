@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `ExtProcurementReplnmtStrgy` | ✓ | |  | `pkstf` |
-| `KnbnCtrlCycExtProcmtCtrlType` |  | |  | `pksaf` |
-| `GoodsReceiptMovementType` |  | |  | `bwawe` |
-| `SignalLockingTimeInMinutes` |  | |  | `aussp` |
-| `PurchasingOrderType` |  | |  | `bsart` |
-| `PostCnsmpnToCostCtrExtProcmt` |  | |  | `cnscc` |
-| `PostCnsmpnToCostCtrMvtType` |  | |  | `bwacc` |
-| `SubDaySchedulingIsConsdrd` |  | |  | `uttrm` |
-| `UsageOfPackingInstructions` |  | |  | `vpack` |
-| `CostCenterAcctAsgtCategory` |  | |  | `knttp` |
-| `KanbanCtrlCycPrintFormTemplate` |  | |  | `cc_print_form` |
-| `KanbanCtnPrintFormTemplate` |  | |  | `kbform` |
-| `GoodsMvtIsPostedSynchronously` |  | |  | `post_sync_ewm_im` |
-| `SchedulingIsBasedOnCalcProfile` |  | |  | `kzakb` |
-| `KnbnSDSchedgAgrmtDelivCrtnType` |  | |  | `sddkz` |
-| `_Text` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `ExtProcurementReplnmtStrgy` | ✓ | |  | `pkstf` |  |  |
+| `KnbnCtrlCycExtProcmtCtrlType` |  | |  | `pksaf` |  |  |
+| `GoodsReceiptMovementType` |  | |  | `bwawe` |  |  |
+| `SignalLockingTimeInMinutes` |  | |  | `aussp` |  |  |
+| `PurchasingOrderType` |  | |  | `bsart` |  |  |
+| `PostCnsmpnToCostCtrExtProcmt` |  | |  | `cnscc` |  |  |
+| `PostCnsmpnToCostCtrMvtType` |  | |  | `bwacc` |  |  |
+| `SubDaySchedulingIsConsdrd` |  | |  | `uttrm` |  |  |
+| `UsageOfPackingInstructions` |  | |  | `vpack` |  |  |
+| `CostCenterAcctAsgtCategory` |  | |  | `knttp` |  |  |
+| `KanbanCtrlCycPrintFormTemplate` |  | |  | `cc_print_form` |  |  |
+| `KanbanCtnPrintFormTemplate` |  | |  | `kbform` |  |  |
+| `GoodsMvtIsPostedSynchronously` |  | |  | `post_sync_ewm_im` |  |  |
+| `SchedulingIsBasedOnCalcProfile` |  | |  | `kzakb` |  |  |
+| `KnbnSDSchedgAgrmtDelivCrtnType` |  | |  | `sddkz` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

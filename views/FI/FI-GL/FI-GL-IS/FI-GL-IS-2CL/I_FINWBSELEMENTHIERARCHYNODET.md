@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WBSElementHierarchy` | ✓ | |  |  |
-| `HierarchyNode` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `HierarchyNodeText` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `_Hierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WBSElementHierarchy` | ✓ | |  |  |  |  |
+| `HierarchyNode` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `HierarchyNodeText` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
 

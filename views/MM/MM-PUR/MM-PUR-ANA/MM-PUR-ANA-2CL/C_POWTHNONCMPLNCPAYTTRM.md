@@ -28,39 +28,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseOrder` | ✓ | |  |  |
-| `PurchaseOrderItem` | ✓ | |  |  |
-| `UniqueIntSourcingRequest` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |
-| `Region` |  | | `_Supplier` | `Region` |
-| `IncotermsClassification` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PurchaseOrderDate` |  | |  |  |
-| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |
-| `MinNrOfPOWithNonCompPaytTrm` |  | |  | `NrOfPOWithNonCompliantPaytTrm` |
-| `NrOfPOWithNonCompliantPaytTrm` |  | |  |  |
-| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |
-| `PurOrdNetAmountInDisplayCrcy` |  | |  |  |
-| `DisplayCurrency` |  | |  | `cast( :P_DisplayCurrency as displaycurrency preserving type )` |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Calendar` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |  |  |
+| `UniqueIntSourcingRequest` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `SupplierCountry` |  | |  | `cast( _Supplier.Country as mm_a_supplier_country )` |  |  |
+| `Region` |  | | `_Supplier` | `Region` |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PurchaseOrderDate` |  | |  |  |  |  |
+| `CalendarYear` |  | | `_Calendar` | `CalendarYear` |  |  |
+| `MinNrOfPOWithNonCompPaytTrm` |  | |  | `NrOfPOWithNonCompliantPaytTrm` |  |  |
+| `NrOfPOWithNonCompliantPaytTrm` |  | |  |  |  |  |
+| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |  |  |
+| `PurOrdNetAmountInDisplayCrcy` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `cast( :P_DisplayCurrency as displaycurrency preserving type )` |  |  |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Calendar` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
 
 ## Associations
 

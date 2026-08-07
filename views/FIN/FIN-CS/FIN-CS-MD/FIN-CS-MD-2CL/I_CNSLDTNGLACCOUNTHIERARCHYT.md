@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyText` | `Language` |
-| `ChartOfAccounts` | ✓ | | `_HierarchyText` | `ChartOfAccounts` |
-| `CnsldtnGLAccountHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_glaccounthierarchy preserving type )` |
-| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
-| `ConsolidationGLAccountHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_glaccounthierarchytext preserving type )` |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |  |  |
+| `ChartOfAccounts` | ✓ | | `_HierarchyText` | `ChartOfAccounts` |  |  |
+| `CnsldtnGLAccountHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_glaccounthierarchy preserving type )` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |  |  |
+| `ConsolidationGLAccountHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_glaccounthierarchytext preserving type )` |  |  |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

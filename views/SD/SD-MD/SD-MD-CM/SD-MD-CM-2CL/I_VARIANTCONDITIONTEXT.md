@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `VariantCondition` | ✓ | |  | `varcond` |
-| `VariantConditionName` |  | |  | `vctext` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `VariantCondition` | ✓ | |  | `varcond` |  |  |
+| `VariantConditionName` |  | |  | `vctext` |  |  |
 
 ## Source Code
 

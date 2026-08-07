@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  | `vkont` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreationTime` |  | |  | `ertim` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `IsMarkedForDeletion` |  | |  | `cast(loevm as loevm preserving type)` |
-| `LastChangeDate` |  | |  | `aedat` |
-| `LastChangeTime` |  | |  | `aetim` |
-| `LastChangedByUser` |  | |  | `aenam` |
-| `CAApplicationArea` |  | |  | `applk` |
-| `ContractAccountCategory` |  | |  | `vktyp` |
-| `ContractAccountExtReference` |  | |  | `vkona` |
-| `ContractAccountName` |  | |  | `vkbez` |
-| `ContractAccountUUID` |  | |  | `vkuuid` |
-| `_ApplArea` | | ✓ | | |
-| `_Category` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  | `vkont` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreationTime` |  | |  | `ertim` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `IsMarkedForDeletion` |  | |  | `cast(loevm as loevm preserving type)` |  |  |
+| `LastChangeDate` |  | |  | `aedat` |  |  |
+| `LastChangeTime` |  | |  | `aetim` |  |  |
+| `LastChangedByUser` |  | |  | `aenam` |  |  |
+| `CAApplicationArea` |  | |  | `applk` |  |  |
+| `ContractAccountCategory` |  | |  | `vktyp` |  |  |
+| `ContractAccountExtReference` |  | |  | `vkona` |  |  |
+| `ContractAccountName` |  | |  | `vkbez` |  |  |
+| `ContractAccountUUID` |  | |  | `vkuuid` |  |  |
+| `_ApplArea` | | ✓ | | | | |
+| `_Category` | | ✓ | | | | |
 
 ## Associations
 

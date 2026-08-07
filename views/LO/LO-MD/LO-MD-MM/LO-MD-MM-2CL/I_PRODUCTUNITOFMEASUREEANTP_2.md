@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `AlternativeUnit` | ✓ | |  |  |
-| `ConsecutiveNumber` | ✓ | |  |  |
-| `ProductStandardID` |  | |  |  |
-| `InternationalArticleNumberCat` |  | |  |  |
-| `IsMainGlobalTradeItemNumber` |  | |  |  |
-| `_ProductUnitOfMeasure` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_IntlArticleNumberCatText` | | ✓ | | |
-| `_AlternativeUnitText` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `AlternativeUnit` | ✓ | |  |  |  |  |
+| `ConsecutiveNumber` | ✓ | |  |  |  |  |
+| `ProductStandardID` |  | |  |  |  |  |
+| `InternationalArticleNumberCat` |  | |  |  |  |  |
+| `IsMainGlobalTradeItemNumber` |  | |  |  |  |  |
+| `_ProductUnitOfMeasure` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_IntlArticleNumberCatText` | | ✓ | | | | |
+| `_AlternativeUnitText` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
 
 ## Source Code
 

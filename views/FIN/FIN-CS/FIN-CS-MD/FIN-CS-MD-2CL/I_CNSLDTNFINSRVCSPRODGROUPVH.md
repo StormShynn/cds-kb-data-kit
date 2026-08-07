@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialServicesProductGroup` | ✓ | | `_Source` | `FinancialServicesProductGroup` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialServicesProductGroup` | ✓ | | `_Source` | `FinancialServicesProductGroup` |  |  |
 
 ## Source Code
 

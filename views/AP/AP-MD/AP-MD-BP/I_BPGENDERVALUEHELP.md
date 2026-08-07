@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GenderCodeName` | ✓ | |  | `gender` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GenderCodeName` | ✓ | |  | `gender` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

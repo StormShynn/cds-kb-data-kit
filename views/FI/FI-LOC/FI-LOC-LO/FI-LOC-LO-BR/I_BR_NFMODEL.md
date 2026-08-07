@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NFModel` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as logbr_model )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NFModel` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as logbr_model )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

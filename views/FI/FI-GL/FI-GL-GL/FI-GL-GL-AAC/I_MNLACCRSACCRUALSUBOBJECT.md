@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccrualEngineAccrualObjectType` | ✓ | | `_Accrual` | `AccrualEngineAccrualObjectType` |
-| `AccrualObjectLogicalSystem` | ✓ | | `_Accrual` | `AccrualObjectLogicalSystem` |
-| `CompanyCode` | ✓ | | `_Accrual` | `CompanyCode` |
-| `AccrualObject` | ✓ | | `_Accrual` | `AccrualObject` |
-| `AccrualSubobject` | ✓ | | `_ManualAccrual` | `ref_subkey` |
-| `ManualAccrualsAccrObjectType` |  | |  | `acac_objtype` |
-| `ManualAccrualsAccrSubobjType` |  | |  | `acac_subobjtype` |
-| `ManualAccrualsAccrObject` |  | |  | `acac_objnumber` |
-| `AccrualObjectDescription` |  | |  | `text` |
-| `PersonResponsible` |  | |  | `acac_resperson` |
-| `PersonResponsibleName` |  | |  | `acac_resperson` |
-| `AccrualObjectInternalID` |  | | `_Accrual` | `AccrualObjectInternalID` |
-| `AccrualSubobjectInternalID` |  | | `_Accrual` | `AccrualSubobjectInternalID` |
-| `AccrSubobjPrematureFinishDate` |  | | `_Accrual` | `AccrSubobjPrematureFinishDate` |
-| `AccrSubobjPauseDate` |  | | `_Accrual` | `AccrSubobjPauseDate` |
-| `AccrSubobjSuspensionDate` |  | | `_Accrual` | `AccrSubobjSuspensionDate` |
-| `AccrSubobjectLifeCycleStatus` |  | | `_Accrual` | `AccrSubobjectLifeCycleStatus` |
-| `AccrualSubobjectCreatedByUser` |  | | `_Accrual` | `AccrualSubobjectCreatedByUser` |
-| `AccrualSubobjectCreationDate` |  | | `_Accrual` | `AccrualSubobjectCreationDate` |
-| `AccrualSubobjectCreationTime` |  | | `_Accrual` | `AccrualSubobjectCreationTime` |
-| `AccrSubobjLastChangedByUser` |  | | `_Accrual` | `AccrSubobjLastChangedByUser` |
-| `AccrualSubobjectLastChangeDate` |  | | `_Accrual` | `AccrualSubobjectLastChangeDate` |
-| `AccrualSubobjectLastChangeTime` |  | | `_Accrual` | `AccrualSubobjectLastChangeTime` |
-| `AccrSubobjLastChangeDateTime` |  | | `_Accrual` | `AccrSubobjLastChangeDateTime` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccrualEngineAccrualObjectType` | ✓ | | `_Accrual` | `AccrualEngineAccrualObjectType` |  |  |
+| `AccrualObjectLogicalSystem` | ✓ | | `_Accrual` | `AccrualObjectLogicalSystem` |  |  |
+| `CompanyCode` | ✓ | | `_Accrual` | `CompanyCode` |  |  |
+| `AccrualObject` | ✓ | | `_Accrual` | `AccrualObject` |  |  |
+| `AccrualSubobject` | ✓ | | `_ManualAccrual` | `ref_subkey` |  |  |
+| `ManualAccrualsAccrObjectType` |  | |  | `acac_objtype` |  |  |
+| `ManualAccrualsAccrSubobjType` |  | |  | `acac_subobjtype` |  |  |
+| `ManualAccrualsAccrObject` |  | |  | `acac_objnumber` |  |  |
+| `AccrualObjectDescription` |  | |  | `text` |  |  |
+| `PersonResponsible` |  | |  | `acac_resperson` |  |  |
+| `PersonResponsibleName` |  | |  | `acac_resperson` |  |  |
+| `AccrualObjectInternalID` |  | | `_Accrual` | `AccrualObjectInternalID` |  |  |
+| `AccrualSubobjectInternalID` |  | | `_Accrual` | `AccrualSubobjectInternalID` |  |  |
+| `AccrSubobjPrematureFinishDate` |  | | `_Accrual` | `AccrSubobjPrematureFinishDate` |  |  |
+| `AccrSubobjPauseDate` |  | | `_Accrual` | `AccrSubobjPauseDate` |  |  |
+| `AccrSubobjSuspensionDate` |  | | `_Accrual` | `AccrSubobjSuspensionDate` |  |  |
+| `AccrSubobjectLifeCycleStatus` |  | | `_Accrual` | `AccrSubobjectLifeCycleStatus` |  |  |
+| `AccrualSubobjectCreatedByUser` |  | | `_Accrual` | `AccrualSubobjectCreatedByUser` |  |  |
+| `AccrualSubobjectCreationDate` |  | | `_Accrual` | `AccrualSubobjectCreationDate` |  |  |
+| `AccrualSubobjectCreationTime` |  | | `_Accrual` | `AccrualSubobjectCreationTime` |  |  |
+| `AccrSubobjLastChangedByUser` |  | | `_Accrual` | `AccrSubobjLastChangedByUser` |  |  |
+| `AccrualSubobjectLastChangeDate` |  | | `_Accrual` | `AccrualSubobjectLastChangeDate` |  |  |
+| `AccrualSubobjectLastChangeTime` |  | | `_Accrual` | `AccrualSubobjectLastChangeTime` |  |  |
+| `AccrSubobjLastChangeDateTime` |  | | `_Accrual` | `AccrSubobjLastChangeDateTime` |  |  |
 
 ## Source Code
 

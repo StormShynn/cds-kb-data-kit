@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `matnr` |
-| `MaturationDuration` |  | |  | `cast (ActiveDocument.scm_maturity_dur as cmd_prd_maturity_dur_n preserving type )` |
-| `RequiredMinShelfLife` |  | |  | `cast(0 as cmd_prd_shelf_life_req_min_n)` |
-| `RequiredMaxShelfLife` |  | |  | `cast (ActiveDocument.scm_shlf_lfe_req_max as cmd_prd_shelf_life_req_max_n preserving type )` |
-| `PreferredAlternativeUnit` |  | |  | `scm_puom` |
-| `TotalShelfLife` |  | |  | `mhdhb` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `PckgBuildingReferenceProduct` |  | |  | `rmatp_pb` |
-| `_Product` | | ✓ | | |
-| `_UnitOfMeasureValueHelp` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `MaturationDuration` |  | |  | `cast (ActiveDocument.scm_maturity_dur as cmd_prd_maturity_dur_n preserving type )` |  |  |
+| `RequiredMinShelfLife` |  | |  | `cast(0 as cmd_prd_shelf_life_req_min_n)` |  |  |
+| `RequiredMaxShelfLife` |  | |  | `cast (ActiveDocument.scm_shlf_lfe_req_max as cmd_prd_shelf_life_req_max_n preserving type )` |  |  |
+| `PreferredAlternativeUnit` |  | |  | `scm_puom` |  |  |
+| `TotalShelfLife` |  | |  | `mhdhb` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `PckgBuildingReferenceProduct` |  | |  | `rmatp_pb` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_UnitOfMeasureValueHelp` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
 
 ## Associations
 

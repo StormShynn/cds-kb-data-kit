@@ -29,52 +29,52 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinSGLErrorItemUUID` | ✓ | |  |  |
-| `FinSGLCompoundErrorCategory` |  | |  |  |
-| `FinSGLErrorItemStatus` |  | |  |  |
-| `FinSGLErrorItemSeverity` |  | |  |  |
-| `FinSGLPostedCompanyCode` |  | |  |  |
-| `FinSGLPostedDocument` |  | |  |  |
-| `FinSGLPostedFiscalYear` |  | |  |  |
-| `LedgerGLLineItem` |  | |  |  |
-| `FinSGLErrorDocument` |  | |  |  |
-| `FinSGLErrorFiscalYear` |  | |  |  |
-| `AccountType` |  | |  |  |
-| `FinSGLOriginalPostingDate` |  | |  |  |
-| `FinSGLOriginalAccount` |  | |  |  |
-| `FinSGLOriginalProfitCenter` |  | |  |  |
-| `FinSGLOriginalCostCenter` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `FinSGLPostedPostingDate` |  | |  |  |
-| `FinSGLPostedAccount` |  | |  |  |
-| `FinSGLPostedCostCenter` |  | |  |  |
-| `FinSGLPostedProfitCenter` |  | |  |  |
-| `FinSGLCorrectionCompanyCode` |  | |  |  |
-| `FinSGLCorrectionDocument` |  | |  |  |
-| `FinSGLCorrectionFiscalYear` |  | |  |  |
-| `FinSGLCrrtnRvslCompanyCode` |  | |  |  |
-| `FinSGLCrrtnReversalDocument` |  | |  |  |
-| `FinSGLCrrtnRvslFiscalYear` |  | |  |  |
-| `FinSGLErrCrrtnEnvrmt` |  | |  |  |
-| `FinSGLRunID` |  | |  |  |
-| `FinSGLErrorItemCreatedBy` |  | |  |  |
-| `FinSGLErrorItemCreatedOnDate` |  | |  |  |
-| `FinSGLErrorItemChangedBy` |  | |  |  |
-| `FinSGLErrorItemChangedOnDate` |  | |  |  |
-| `FinSGLErrorItemProcessor` |  | |  |  |
-| `FinSGLErrorItemTeamName` |  | |  |  |
-| `Note` |  | |  |  |
-| `_ModifiedItem` | | ✓ | | |
-| `_OriginalItem` | | ✓ | | |
-| `_PostedItem` | | ✓ | | |
-| `_ErrorMessage` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Severity` | | ✓ | | |
-| `_Status` | | ✓ | | |
-| `_ErrorCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinSGLErrorItemUUID` | ✓ | |  |  | `RAW(16)` | ID of Error Correction Item |
+| `FinSGLCompoundErrorCategory` |  | |  |  | `CHAR(5)` | Compound Error Category |
+| `FinSGLErrorItemStatus` |  | |  |  | `CHAR(1)` | Status of ECS Item |
+| `FinSGLErrorItemSeverity` |  | |  |  | `CHAR(1)` | Severity of Errors in ECS Items |
+| `FinSGLPostedCompanyCode` |  | |  |  | `CHAR(4)` | Company Code of Posted Document |
+| `FinSGLPostedDocument` |  | |  |  | `CHAR(10)` | Document Number of Posted (Suspense) Document |
+| `FinSGLPostedFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Posted Document |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` |  |
+| `FinSGLErrorDocument` |  | |  |  | `CHAR(10)` | ECS Internal Ref. for ECS Items in the Same FI Document |
+| `FinSGLErrorFiscalYear` |  | |  |  | `NUMC(4)` | Year in which ECS item was entered (rel. for int. doc. no.) |
+| `AccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `FinSGLOriginalPostingDate` |  | |  |  | `DATS(8)` | Original Posting Date of FI Document |
+| `FinSGLOriginalAccount` |  | |  |  | `CHAR(10)` | Original General Ledger Account of Imported Document |
+| `FinSGLOriginalProfitCenter` |  | |  |  | `CHAR(10)` | Original Profit Center of Imported Document |
+| `FinSGLOriginalCostCenter` |  | |  |  | `CHAR(10)` | Original Cost Center of Imported Document |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in document currency |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `FinSGLPostedPostingDate` |  | |  |  | `DATS(8)` | Posting Date of Posted FI Document |
+| `FinSGLPostedAccount` |  | |  |  | `CHAR(10)` | General Ledger Account of Posted Document |
+| `FinSGLPostedCostCenter` |  | |  |  | `CHAR(10)` | Cost Center of Posted Document |
+| `FinSGLPostedProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center of Posted Document |
+| `FinSGLCorrectionCompanyCode` |  | |  |  | `CHAR(4)` | Company Code of Correction Document |
+| `FinSGLCorrectionDocument` |  | |  |  | `CHAR(10)` | Document Number of Correction Document |
+| `FinSGLCorrectionFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Correction Document |
+| `FinSGLCrrtnRvslCompanyCode` |  | |  |  | `CHAR(4)` | Company Code of Correction Document for Reversal Document |
+| `FinSGLCrrtnReversalDocument` |  | |  |  | `CHAR(10)` | Document Number of Correction Document for Reversal Document |
+| `FinSGLCrrtnRvslFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Correction Document for Reversal Document |
+| `FinSGLErrCrrtnEnvrmt` |  | |  |  | `CHAR(10)` | ECS Environment |
+| `FinSGLRunID` |  | |  |  | `CHAR(12)` | Run ID |
+| `FinSGLErrorItemCreatedBy` |  | |  |  | `CHAR(12)` | Created By |
+| `FinSGLErrorItemCreatedOnDate` |  | |  |  | `DATS(8)` | Start Date |
+| `FinSGLErrorItemChangedBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `FinSGLErrorItemChangedOnDate` |  | |  |  | `DATS(8)` | Start Date |
+| `FinSGLErrorItemProcessor` |  | |  |  | `CHAR(12)` | ECS item owner for processing |
+| `FinSGLErrorItemTeamName` |  | |  |  | `CHAR(40)` | Data Element for Team |
+| `Note` |  | |  |  | `CHAR(40)` | Comments of Workflow |
+| `_ModifiedItem` | | ✓ | | | | |
+| `_OriginalItem` | | ✓ | | | | |
+| `_PostedItem` | | ✓ | | | | |
+| `_ErrorMessage` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Severity` | | ✓ | | | | |
+| `_Status` | | ✓ | | | | |
+| `_ErrorCategory` | | ✓ | | | | |
 
 ## Associations
 

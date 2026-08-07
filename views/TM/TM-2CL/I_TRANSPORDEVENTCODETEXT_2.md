@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdEventCode` | ✓ | |  | `tor_event` |
-| `Language` | ✓ | |  | `langu` |
-| `TranspOrdEventCodeDesc` |  | |  | `cast ( description_s as /scmtms/vdm_eventcode_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdEventCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdEventCode` | ✓ | |  | `tor_event` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `TranspOrdEventCodeDesc` |  | |  | `cast ( description_s as /scmtms/vdm_eventcode_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdEventCode` | | ✓ | | | | |
 
 ## Associations
 

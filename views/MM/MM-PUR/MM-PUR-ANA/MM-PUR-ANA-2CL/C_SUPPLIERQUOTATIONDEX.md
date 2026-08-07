@@ -31,59 +31,59 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierQuotation` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `Language` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `PricingProcedure` |  | |  |  |
-| `PricingDocument` |  | |  | `PurchasingDocumentCondition` |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchasingDocumentOrderDate` |  | |  |  |
-| `RequestForQuotation` |  | |  |  |
-| `SupplierQuotationExternalID` |  | |  |  |
-| `QuotationSubmissionDate` |  | |  |  |
-| `QuotationLatestSubmissionDate` |  | |  |  |
-| `BindingPeriodValidityEndDate` |  | |  |  |
-| `ExchangeRate` |  | |  |  |
-| `ExchangeRateIsFixed` |  | |  |  |
-| `QtnLifecycleStatus` |  | |  | `QTNLifecycleStatus` |
-| `FollowOnDocumentCategory` |  | |  |  |
-| `PurgDocFollowOnDocumentType` |  | |  | `FollowOnDocumentType` |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `_RequestForQuotation` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PurchasingDocumentCategory` | | ✓ | | |
-| `_PurchasingDocumentType` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_FollowOnDocumentCategory` | | ✓ | | |
-| `_PurgDocFollowOnDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierQuotation` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `PricingProcedure` |  | |  |  |  |  |
+| `PricingDocument` |  | |  | `PurchasingDocumentCondition` |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchasingDocumentOrderDate` |  | |  |  |  |  |
+| `RequestForQuotation` |  | |  |  |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |  |  |
+| `QuotationSubmissionDate` |  | |  |  |  |  |
+| `QuotationLatestSubmissionDate` |  | |  |  |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  |  |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |  |  |
+| `QtnLifecycleStatus` |  | |  | `QTNLifecycleStatus` |  |  |
+| `FollowOnDocumentCategory` |  | |  |  |  |  |
+| `PurgDocFollowOnDocumentType` |  | |  | `FollowOnDocumentType` |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `_RequestForQuotation` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PurchasingDocumentCategory` | | ✓ | | | | |
+| `_PurchasingDocumentType` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_FollowOnDocumentCategory` | | ✓ | | | | |
+| `_PurgDocFollowOnDocumentType` | | ✓ | | | | |
 
 ## Associations
 

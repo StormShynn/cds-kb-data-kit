@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SDDocReferenceStatus` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `SDDocReferenceStatusDesc` |  | |  | `bezei` |
-| `_SDDocReferenceStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SDDocReferenceStatus` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `SDDocReferenceStatusDesc` |  | |  | `bezei` |  |  |
+| `_SDDocReferenceStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

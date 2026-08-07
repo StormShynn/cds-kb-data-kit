@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `VarConfigurationProfileName` | ✓ | |  |  |
-| `ChangeNumber` | ✓ | |  |  |
-| `ClassType` |  | |  |  |
-| `VarConfigurationProfileStatus` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `BOMExplosionApplication` |  | |  |  |
-| `BOMExplosionLevel` |  | |  |  |
-| `VarConfigurationProfileProcess` |  | |  |  |
-| `VarCnfPrflOrderBOMFixatingMode` |  | |  |  |
-| `VarCnfProfilePriorityValue` |  | |  |  |
-| `ObjDpnAssignmentNumber` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_Profile` | | ✓ | | |
-| `_CharacteristicGroupAssignment` | | ✓ | | |
-| `_ProcedureAssignment` | | ✓ | | |
-| `_ConstraintNetAssignment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `VarConfigurationProfileName` | ✓ | |  |  |  |  |
+| `ChangeNumber` | ✓ | |  |  |  |  |
+| `ClassType` |  | |  |  |  |  |
+| `VarConfigurationProfileStatus` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `BOMExplosionApplication` |  | |  |  |  |  |
+| `BOMExplosionLevel` |  | |  |  |  |  |
+| `VarConfigurationProfileProcess` |  | |  |  |  |  |
+| `VarCnfPrflOrderBOMFixatingMode` |  | |  |  |  |  |
+| `VarCnfProfilePriorityValue` |  | |  |  |  |  |
+| `ObjDpnAssignmentNumber` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_Profile` | | ✓ | | | | |
+| `_CharacteristicGroupAssignment` | | ✓ | | | | |
+| `_ProcedureAssignment` | | ✓ | | | | |
+| `_ConstraintNetAssignment` | | ✓ | | | | |
 
 ## Source Code
 

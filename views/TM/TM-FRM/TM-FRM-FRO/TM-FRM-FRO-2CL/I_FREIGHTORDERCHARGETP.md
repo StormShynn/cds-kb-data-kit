@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationChargesObjUUID` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `TranspChargePostingStatus` |  | |  |  |
-| `TranspChargeCalcStatus` |  | |  |  |
-| `TranspChargeDocumentCurrency` |  | |  |  |
-| `TranspChrgTotalAmtInDocCrcy` |  | |  |  |
-| `TranspChargeLocalCurrency` |  | |  |  |
-| `TranspChrgTotalAmtInLoclCrcy` |  | |  |  |
-| `TranspChargeCalculationDateTme` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to parent I_FreightOrderTP` |
-| `I_FreightOrderChargeItemTP` |  | |  | `_TranspOrderChargeItem as _FreightOrderChargeItem : redirected to composition child I_FreightOrderChargeItemTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationChargesObjUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `TranspChargePostingStatus` |  | |  |  |  |  |
+| `TranspChargeCalcStatus` |  | |  |  |  |  |
+| `TranspChargeDocumentCurrency` |  | |  |  |  |  |
+| `TranspChrgTotalAmtInDocCrcy` |  | |  |  |  |  |
+| `TranspChargeLocalCurrency` |  | |  |  |  |  |
+| `TranspChrgTotalAmtInLoclCrcy` |  | |  |  |  |  |
+| `TranspChargeCalculationDateTme` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to parent I_FreightOrderTP` |  |  |
+| `I_FreightOrderChargeItemTP` |  | |  | `_TranspOrderChargeItem as _FreightOrderChargeItem : redirected to composition child I_FreightOrderChargeItemTP` |  |  |
 
 ## Source Code
 

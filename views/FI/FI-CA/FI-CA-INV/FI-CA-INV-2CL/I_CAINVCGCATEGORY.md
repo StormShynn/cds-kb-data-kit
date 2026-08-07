@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgCategory` | ✓ | | `_tfk2604` | `inv_category` |
-| `_CAInvcgCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgCategory` | ✓ | | `_tfk2604` | `inv_category` |  |  |
+| `_CAInvcgCategoryText` | | ✓ | | | | |
 
 ## Associations
 

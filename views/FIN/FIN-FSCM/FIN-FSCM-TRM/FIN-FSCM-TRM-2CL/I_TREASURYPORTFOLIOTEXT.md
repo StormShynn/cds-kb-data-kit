@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `Portfolio` | ✓ | |  | `rportb` |
-| `Language` | ✓ | |  | `spras` |
-| `PortfolioName` |  | |  | `cast(TreasuryPortfolioText.xportb as ftr_gen_portfolio_name preserving type)` |
-| `_TreasuryPortfolio` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `Portfolio` | ✓ | |  | `rportb` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PortfolioName` |  | |  | `cast(TreasuryPortfolioText.xportb as ftr_gen_portfolio_name preserving type)` |  |  |
+| `_TreasuryPortfolio` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

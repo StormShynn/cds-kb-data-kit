@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjDmndExpnDistributionUUID` | ✓ | |  |  |
-| `ProjectDemandExpenseUUID` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjDmndReferencedPlanDataUUID` |  | |  |  |
-| `ProjDmndExpnDistrPeriodVal` |  | |  |  |
-| `ProjDmndExpnDistrYearVal` |  | |  |  |
-| `ProjDmndExpnDistrAmount` |  | |  |  |
-| `ProjDmndExpnDistrRevenueAmt` |  | |  |  |
-| `ProjDmndExpnDistrAmountCrcy` |  | |  |  |
-| `ProjDmndExpnDistrRevnAmtCrcy` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_Expense` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjDmndExpnDistributionUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandExpenseUUID` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjDmndReferencedPlanDataUUID` |  | |  |  |  |  |
+| `ProjDmndExpnDistrPeriodVal` |  | |  |  |  |  |
+| `ProjDmndExpnDistrYearVal` |  | |  |  |  |  |
+| `ProjDmndExpnDistrAmount` |  | |  |  |  |  |
+| `ProjDmndExpnDistrRevenueAmt` |  | |  |  |  |  |
+| `ProjDmndExpnDistrAmountCrcy` |  | |  |  |  |  |
+| `ProjDmndExpnDistrRevnAmtCrcy` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_Expense` | | ✓ | | | | |
 
 ## Associations
 

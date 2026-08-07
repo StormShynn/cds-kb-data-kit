@@ -26,13 +26,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` |  | |  | `matnr` |
-| `MRPPlant` |  | |  | `werks_d` |
-| `MRPArea` |  | |  | `berid` |
-| `D_SupplyDemandItemGetItemR` |  | |  | `_SupplyDemandItemGetItemR : composition [0..*] of D_SupplyDemandItemGetItemR` |
-| `D_SupplyDemandItemGetPeggingR` |  | |  | `_SupplyDemandItemGetPeggingR : composition [0..*] of D_SupplyDemandItemGetPeggingR` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` |  | |  | `matnr` |  |  |
+| `MRPPlant` |  | |  | `werks_d` |  |  |
+| `MRPArea` |  | |  | `berid` |  |  |
+| `D_SupplyDemandItemGetItemR` |  | |  | `_SupplyDemandItemGetItemR : composition [0..*] of D_SupplyDemandItemGetItemR` |  |  |
+| `D_SupplyDemandItemGetPeggingR` |  | |  | `_SupplyDemandItemGetPeggingR : composition [0..*] of D_SupplyDemandItemGetPeggingR` |  |  |
 
 ## Source Code
 

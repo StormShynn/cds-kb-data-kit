@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentIsQuotation` | ✓ | |  | `domvalue_l` |
-| `_SrvcDocQuotationStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentIsQuotation` | ✓ | |  | `domvalue_l` |  |  |
+| `_SrvcDocQuotationStatusText` | | ✓ | | | | |
 
 ## Associations
 

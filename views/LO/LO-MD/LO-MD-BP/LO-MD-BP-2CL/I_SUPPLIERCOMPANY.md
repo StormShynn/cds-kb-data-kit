@@ -30,79 +30,79 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  | `lifnr` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |
-| `PaymentBlockingReason` |  | |  | `zahls` |
-| `SupplierIsBlockedForPosting` |  | |  | `sperr` |
-| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck_b` |
-| `AccountingClerk` |  | |  | `busab` |
-| `AccountingClerkFaxNumber` |  | |  | `tlfxs` |
-| `AccountingClerkPhoneNumber` |  | |  | `tlfns` |
-| `AccountingClerkInternetAddress` |  | |  | `intad` |
-| `SupplierClerk` |  | |  | `zsabe` |
-| `SupplierClerkURL` |  | |  | `intad` |
-| `PaymentMethodsList` |  | |  | `zwels` |
-| `PaymentTerms` |  | |  | `zterm` |
-| `ClearCustomerSupplier` |  | |  | `xverr` |
-| `IsToBeLocallyProcessed` |  | |  | `xdezv` |
-| `ItemIsToBePaidSeparately` |  | |  | `xpore` |
-| `PaymentIsToBeSentByEDI` |  | |  | `xedip` |
-| `HouseBank` |  | |  | `hbkid` |
-| `CheckPaidDurationInDays` |  | |  | `kultg` |
-| `Currency` |  | | `_CompanyCode` | `Currency` |
-| `BillOfExchLmtAmtInCoCodeCrcy` |  | |  | `webtr` |
-| `SupplierClerkIDBySupplier` |  | |  | `eikto` |
-| `IsDoubleInvoice` |  | |  | `reprf` |
-| `CustomerSupplierClearingIsUsed` |  | |  | `xverr` |
-| `ReconciliationAccount` |  | |  | `akont` |
-| `InterestCalculationCode` |  | |  | `vzskz` |
-| `InterestCalculationDate` |  | |  | `zindt` |
-| `IntrstCalcFrequencyInMonths` |  | |  | `zinrt` |
-| `SupplierHeadOffice` |  | |  | `lnrze` |
-| `AlternativePayee` |  | |  | `lnrzb` |
-| `LayoutSortingRule` |  | |  | `zuawa` |
-| `APARToleranceGroup` |  | |  | `togru` |
-| `SuplrInvcVerificatTolGroup` |  | |  | `togrr` |
-| `SupplierCertificationDate` |  | |  | `cerdt` |
-| `SupplierAccountNote` |  | |  | `kverm` |
-| `WithholdingTaxCountry` |  | |  | `qland` |
-| `DeletionIndicator` |  | |  | `loevm` |
-| `CashPlanningGroup` |  | |  | `fdgrv` |
-| `IsToBeCheckedForDuplicates` |  | |  | `reprf` |
-| `PersonnelNumber` |  | |  | `pernr` |
-| `PreviousAccountNumber` |  | |  | `altkn` |
-| `MinorityGroup` |  | |  | `mindk` |
-| `LastInterestCalcRunDate` |  | |  | `datlz` |
-| `US_ForeignSuplrHasPartnership` |  | |  | `us_partnership_ind` |
-| `US_SecondTINNoticeIsIssued` |  | |  | `us_tin_notice` |
-| `US_ForeignSuplrLmtnOnBnftCode` |  | |  | `us_lob_code` |
-| `SupplierReleaseGroup` |  | |  | `frgrp` |
-| `CreditMemoPaymentTerms` |  | |  | `guzte` |
-| `PaymentMethodSupplement` |  | |  | `uzawe` |
-| `US_FrgnAcctTaxFilingIsRequired` |  | |  | `us_fatca_ind` |
-| `US_RecipientForeignTaxID` |  | |  | `us_ftid` |
-| `US_FW9ReceiveDate` |  | |  | `us_w9_recvdate` |
-| `US_FW8BENReceiveDate` |  | |  | `us_w8_recvdate` |
-| `US_FrgnAcctTaxRcpntCntry` |  | |  | `us_rec_country` |
-| `US_GlobIntermediaryIdnNumber` |  | |  | `us_giin` |
-| `US_LobTreatyCode` |  | |  | `us_lob_code` |
-| `US_Chapter4StatusCode` |  | |  | `us_chap4_status_code` |
-| `PaymentClearingGroup` |  | |  | `paymentclearinggrpid` |
-| `PaymentReason` |  | |  | `paytrsn` |
-| `DeletionIsBlocked` |  | |  | `nodel` |
-| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
-| `BPPeriodicAccountStatement` |  | |  | `xausz` |
-| `_Supplier` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_PaymentBlockingReason` | | ✓ | | |
-| `_APARToleranceGroupName` | | ✓ | | |
-| `_PaymentTermsText` | | ✓ | | |
-| `_PaymentBlockingReasonText` | | ✓ | | |
-| `_WithholdingTax` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |  |  |
+| `PaymentBlockingReason` |  | |  | `zahls` |  |  |
+| `SupplierIsBlockedForPosting` |  | |  | `sperr` |  |  |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck_b` |  |  |
+| `AccountingClerk` |  | |  | `busab` |  |  |
+| `AccountingClerkFaxNumber` |  | |  | `tlfxs` |  |  |
+| `AccountingClerkPhoneNumber` |  | |  | `tlfns` |  |  |
+| `AccountingClerkInternetAddress` |  | |  | `intad` |  |  |
+| `SupplierClerk` |  | |  | `zsabe` |  |  |
+| `SupplierClerkURL` |  | |  | `intad` |  |  |
+| `PaymentMethodsList` |  | |  | `zwels` |  |  |
+| `PaymentTerms` |  | |  | `zterm` |  |  |
+| `ClearCustomerSupplier` |  | |  | `xverr` |  |  |
+| `IsToBeLocallyProcessed` |  | |  | `xdezv` |  |  |
+| `ItemIsToBePaidSeparately` |  | |  | `xpore` |  |  |
+| `PaymentIsToBeSentByEDI` |  | |  | `xedip` |  |  |
+| `HouseBank` |  | |  | `hbkid` |  |  |
+| `CheckPaidDurationInDays` |  | |  | `kultg` |  |  |
+| `Currency` |  | | `_CompanyCode` | `Currency` |  |  |
+| `BillOfExchLmtAmtInCoCodeCrcy` |  | |  | `webtr` |  |  |
+| `SupplierClerkIDBySupplier` |  | |  | `eikto` |  |  |
+| `IsDoubleInvoice` |  | |  | `reprf` |  |  |
+| `CustomerSupplierClearingIsUsed` |  | |  | `xverr` |  |  |
+| `ReconciliationAccount` |  | |  | `akont` |  |  |
+| `InterestCalculationCode` |  | |  | `vzskz` |  |  |
+| `InterestCalculationDate` |  | |  | `zindt` |  |  |
+| `IntrstCalcFrequencyInMonths` |  | |  | `zinrt` |  |  |
+| `SupplierHeadOffice` |  | |  | `lnrze` |  |  |
+| `AlternativePayee` |  | |  | `lnrzb` |  |  |
+| `LayoutSortingRule` |  | |  | `zuawa` |  |  |
+| `APARToleranceGroup` |  | |  | `togru` |  |  |
+| `SuplrInvcVerificatTolGroup` |  | |  | `togrr` |  |  |
+| `SupplierCertificationDate` |  | |  | `cerdt` |  |  |
+| `SupplierAccountNote` |  | |  | `kverm` |  |  |
+| `WithholdingTaxCountry` |  | |  | `qland` |  |  |
+| `DeletionIndicator` |  | |  | `loevm` |  |  |
+| `CashPlanningGroup` |  | |  | `fdgrv` |  |  |
+| `IsToBeCheckedForDuplicates` |  | |  | `reprf` |  |  |
+| `PersonnelNumber` |  | |  | `pernr` |  |  |
+| `PreviousAccountNumber` |  | |  | `altkn` |  |  |
+| `MinorityGroup` |  | |  | `mindk` |  |  |
+| `LastInterestCalcRunDate` |  | |  | `datlz` |  |  |
+| `US_ForeignSuplrHasPartnership` |  | |  | `us_partnership_ind` |  |  |
+| `US_SecondTINNoticeIsIssued` |  | |  | `us_tin_notice` |  |  |
+| `US_ForeignSuplrLmtnOnBnftCode` |  | |  | `us_lob_code` |  |  |
+| `SupplierReleaseGroup` |  | |  | `frgrp` |  |  |
+| `CreditMemoPaymentTerms` |  | |  | `guzte` |  |  |
+| `PaymentMethodSupplement` |  | |  | `uzawe` |  |  |
+| `US_FrgnAcctTaxFilingIsRequired` |  | |  | `us_fatca_ind` |  |  |
+| `US_RecipientForeignTaxID` |  | |  | `us_ftid` |  |  |
+| `US_FW9ReceiveDate` |  | |  | `us_w9_recvdate` |  |  |
+| `US_FW8BENReceiveDate` |  | |  | `us_w8_recvdate` |  |  |
+| `US_FrgnAcctTaxRcpntCntry` |  | |  | `us_rec_country` |  |  |
+| `US_GlobIntermediaryIdnNumber` |  | |  | `us_giin` |  |  |
+| `US_LobTreatyCode` |  | |  | `us_lob_code` |  |  |
+| `US_Chapter4StatusCode` |  | |  | `us_chap4_status_code` |  |  |
+| `PaymentClearingGroup` |  | |  | `paymentclearinggrpid` |  |  |
+| `PaymentReason` |  | |  | `paytrsn` |  |  |
+| `DeletionIsBlocked` |  | |  | `nodel` |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |  |  |
+| `BPPeriodicAccountStatement` |  | |  | `xausz` |  |  |
+| `_Supplier` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_PaymentBlockingReason` | | ✓ | | | | |
+| `_APARToleranceGroupName` | | ✓ | | | | |
+| `_PaymentTermsText` | | ✓ | | | | |
+| `_PaymentBlockingReasonText` | | ✓ | | | | |
+| `_WithholdingTax` | | ✓ | | | | |
 
 ## Associations
 

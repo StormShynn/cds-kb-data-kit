@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAStatisticalCodeOfOriginItem` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as astkz_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAStatisticalCodeOfOrignItmTxt` |  | |  | `cast( ddtext as astkz_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAStatisticalCodeOfOriginItem` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as astkz_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAStatisticalCodeOfOrignItmTxt` |  | |  | `cast( ddtext as astkz_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

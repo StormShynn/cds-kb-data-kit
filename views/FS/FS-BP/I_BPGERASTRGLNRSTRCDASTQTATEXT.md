@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BPGerAstRglnRestrictedAstQuota` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_entity_quota )` |
-| `BPGerAstRglnRstrcdAstQtaDesc` |  | |  | `ddtext` |
-| `_BPGerAstRglnRstrcdAstQta` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BPGerAstRglnRestrictedAstQuota` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_entity_quota )` |  |  |
+| `BPGerAstRglnRstrcdAstQtaDesc` |  | |  | `ddtext` |  |  |
+| `_BPGerAstRglnRstrcdAstQta` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

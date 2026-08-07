@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DocFlowPrecdgDocumentCategory` | ✓ | | `_DocumentFlow` | `pre_doc_type` |
-| `DocFlowPrecedingDocumentNumber` | ✓ | | `_DocumentFlow` | `pre_doc_id` |
-| `DocFlowPrecedingDocumentItem` | ✓ | | `_DocumentFlow` | `pre_doc_item` |
-| `DocFlowSubsqntDocumentCategory` | ✓ | | `_DocumentFlow` | `fol_doc_type` |
-| `DocFlowSubsqntDocumentNumber` | ✓ | | `_DocumentFlow` | `fol_doc_id` |
-| `DocFlowSubsequentDocumentItem` | ✓ | | `_DocumentFlow` | `fol_doc_item` |
-| `DSD_TourNumber` | ✓ | | `_DocumentFlow` | `tour_id` |
-| `DSD_RouteAccountingVisitNumber` | ✓ | | `_DocumentFlow` | `visit_id` |
-| `Plant` |  | | `_Header` | `plant` |
-| `_PrecedingDocumentType` | | ✓ | | |
-| `_SubsequentDocumentType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocFlowPrecdgDocumentCategory` | ✓ | | `_DocumentFlow` | `pre_doc_type` |  |  |
+| `DocFlowPrecedingDocumentNumber` | ✓ | | `_DocumentFlow` | `pre_doc_id` |  |  |
+| `DocFlowPrecedingDocumentItem` | ✓ | | `_DocumentFlow` | `pre_doc_item` |  |  |
+| `DocFlowSubsqntDocumentCategory` | ✓ | | `_DocumentFlow` | `fol_doc_type` |  |  |
+| `DocFlowSubsqntDocumentNumber` | ✓ | | `_DocumentFlow` | `fol_doc_id` |  |  |
+| `DocFlowSubsequentDocumentItem` | ✓ | | `_DocumentFlow` | `fol_doc_item` |  |  |
+| `DSD_TourNumber` | ✓ | | `_DocumentFlow` | `tour_id` |  |  |
+| `DSD_RouteAccountingVisitNumber` | ✓ | | `_DocumentFlow` | `visit_id` |  |  |
+| `Plant` |  | | `_Header` | `plant` |  |  |
+| `_PrecedingDocumentType` | | ✓ | | | | |
+| `_SubsequentDocumentType` | | ✓ | | | | |
 
 ## Associations
 

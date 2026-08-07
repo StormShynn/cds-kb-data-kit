@@ -31,27 +31,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `IsCoProduct` |  | |  |  |
-| `CostingLotSize` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListType` |  | |  |  |
-| `CostingSpecialProcurementType` |  | |  |  |
-| `SourceBOMAlternative` |  | |  |  |
-| `ProductBOMUsage` |  | |  |  |
-| `ProductIsCostingRelevant` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `VarianceKey` |  | |  |  |
-| `CostingProductionVersion` |  | |  |  |
-| `IsFixedPriceCoProduct` |  | |  |  |
-| `BaseUnit` |  | | `_Product` | `BaseUnit` |
-| `_Product` | | ✓ | | |
-| `_BillOfMaterialUsageText` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `IsCoProduct` |  | |  |  |  |  |
+| `CostingLotSize` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListType` |  | |  |  |  |  |
+| `CostingSpecialProcurementType` |  | |  |  |  |  |
+| `SourceBOMAlternative` |  | |  |  |  |  |
+| `ProductBOMUsage` |  | |  |  |  |  |
+| `ProductIsCostingRelevant` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `VarianceKey` |  | |  |  |  |  |
+| `CostingProductionVersion` |  | |  |  |  |  |
+| `IsFixedPriceCoProduct` |  | |  |  |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |  |  |
+| `_Product` | | ✓ | | | | |
+| `_BillOfMaterialUsageText` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
 
 ## Associations
 

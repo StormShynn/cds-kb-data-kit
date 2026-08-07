@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  |  |
-| `CAOutgoingPaymentMethod` | ✓ | |  | `CAPaymentMethod` |
-| `BankDetailsOfBPAreRequired` |  | |  |  |
-| `AddressDetailsAreRequired` |  | |  |  |
-| `IsPaytMethForIncomingPayments` |  | |  |  |
-| `CAIsPaytMethForPostOffcBkAcct` |  | |  |  |
-| `ChequeIsCreatedWithPaytMeth` |  | |  |  |
-| `IsPaytMethForEUInternalTransf` |  | |  |  |
-| `CAPaymentMethodProcessingType` |  | |  |  |
-| `CAPaymentMediumFormat` |  | |  |  |
-| `CAPaytMediumFormatSupplement` |  | |  |  |
-| `CAPaymentOrderIsCreated` |  | |  |  |
-| `CAPaytMethForBillerDirect` |  | |  |  |
-| `CAIsPaytSlipWithRefNmbrProced` |  | |  |  |
-| `CAPaytMethAddressIsNotRequired` |  | |  |  |
-| `BR_CABoletoAssignmentType` |  | |  |  |
-| `CAPaymentMethodNotificationCat` |  | |  |  |
-| `ContrAcctgIBANOrSWIFTRqmtCode` |  | |  |  |
-| `CASEPAMandateIsRequired` |  | |  |  |
-| `CASEPAPrenotificationIsCreated` |  | |  |  |
-| `CARealTimePaymentCategory` |  | |  |  |
-| `_Country` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  |  |  |  |
+| `CAOutgoingPaymentMethod` | ✓ | |  | `CAPaymentMethod` |  |  |
+| `BankDetailsOfBPAreRequired` |  | |  |  |  |  |
+| `AddressDetailsAreRequired` |  | |  |  |  |  |
+| `IsPaytMethForIncomingPayments` |  | |  |  |  |  |
+| `CAIsPaytMethForPostOffcBkAcct` |  | |  |  |  |  |
+| `ChequeIsCreatedWithPaytMeth` |  | |  |  |  |  |
+| `IsPaytMethForEUInternalTransf` |  | |  |  |  |  |
+| `CAPaymentMethodProcessingType` |  | |  |  |  |  |
+| `CAPaymentMediumFormat` |  | |  |  |  |  |
+| `CAPaytMediumFormatSupplement` |  | |  |  |  |  |
+| `CAPaymentOrderIsCreated` |  | |  |  |  |  |
+| `CAPaytMethForBillerDirect` |  | |  |  |  |  |
+| `CAIsPaytSlipWithRefNmbrProced` |  | |  |  |  |  |
+| `CAPaytMethAddressIsNotRequired` |  | |  |  |  |  |
+| `BR_CABoletoAssignmentType` |  | |  |  |  |  |
+| `CAPaymentMethodNotificationCat` |  | |  |  |  |  |
+| `ContrAcctgIBANOrSWIFTRqmtCode` |  | |  |  |  |  |
+| `CASEPAMandateIsRequired` |  | |  |  |  |  |
+| `CASEPAPrenotificationIsCreated` |  | |  |  |  |  |
+| `CARealTimePaymentCategory` |  | |  |  |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

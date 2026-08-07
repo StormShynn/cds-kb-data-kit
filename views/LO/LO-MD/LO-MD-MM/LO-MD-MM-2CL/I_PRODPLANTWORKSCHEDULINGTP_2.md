@@ -31,36 +31,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `ProductBaseQuantity` |  | |  |  |
-| `UnlimitedOverDelivIsAllowed` |  | |  |  |
-| `OverDeliveryTolerancePercent` |  | |  |  |
-| `UnderDeliveryTolerancePercent` |  | |  |  |
-| `ProductionInvtryManagedLoc` |  | |  |  |
-| `ProductionOrderBatchCode` |  | |  |  |
-| `ProdIsWithdrawnFrmProdnBin` |  | |  |  |
-| `TransitionMatrixProductsGroup` |  | |  |  |
-| `OrderChangeManagementProfile` |  | |  |  |
-| `ProductComponentBackflushCode` |  | |  |  |
-| `SetupAndTeardownTime` |  | |  |  |
-| `ProductionSchedulingProfile` |  | |  |  |
-| `TransitionTime` |  | |  |  |
-| `ProcessingTimeInDays` |  | |  |  |
-| `ProductionSupervisor` |  | |  |  |
-| `ProductProductionQuantityUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProductPlant` | | ✓ | | |
-| `_ProdnOrdBatDetnCodeText` | | ✓ | | |
-| `_ProdComponentBackflushCodeT` | | ✓ | | |
-| `_ProductProductionQuantityUnit` | | ✓ | | |
-| `_BaseUnitOfMeasure` | | ✓ | | |
-| `_ProductDescription` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
-| `_ProdProdnQuantityUnitText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ProductBaseQuantity` |  | |  |  |  |  |
+| `UnlimitedOverDelivIsAllowed` |  | |  |  |  |  |
+| `OverDeliveryTolerancePercent` |  | |  |  |  |  |
+| `UnderDeliveryTolerancePercent` |  | |  |  |  |  |
+| `ProductionInvtryManagedLoc` |  | |  |  |  |  |
+| `ProductionOrderBatchCode` |  | |  |  |  |  |
+| `ProdIsWithdrawnFrmProdnBin` |  | |  |  |  |  |
+| `TransitionMatrixProductsGroup` |  | |  |  |  |  |
+| `OrderChangeManagementProfile` |  | |  |  |  |  |
+| `ProductComponentBackflushCode` |  | |  |  |  |  |
+| `SetupAndTeardownTime` |  | |  |  |  |  |
+| `ProductionSchedulingProfile` |  | |  |  |  |  |
+| `TransitionTime` |  | |  |  |  |  |
+| `ProcessingTimeInDays` |  | |  |  |  |  |
+| `ProductionSupervisor` |  | |  |  |  |  |
+| `ProductProductionQuantityUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProdnOrdBatDetnCodeText` | | ✓ | | | | |
+| `_ProdComponentBackflushCodeT` | | ✓ | | | | |
+| `_ProductProductionQuantityUnit` | | ✓ | | | | |
+| `_BaseUnitOfMeasure` | | ✓ | | | | |
+| `_ProductDescription` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
+| `_ProdProdnQuantityUnitText` | | ✓ | | | | |
 
 ## Source Code
 

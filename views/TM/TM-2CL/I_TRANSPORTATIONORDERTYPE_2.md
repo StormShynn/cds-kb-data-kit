@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderType` | ✓ | |  | `cast(type as /scmtms/vdm_tor_type preserving type )` |
-| `TransportationOrderCategory` |  | |  | `cast(cat as /scmtms/vdm_tor_category preserving type )` |
-| `_TransportationOrderCategory` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderType` | ✓ | |  | `cast(type as /scmtms/vdm_tor_type preserving type )` |  |  |
+| `TransportationOrderCategory` |  | |  | `cast(cat as /scmtms/vdm_tor_category preserving type )` |  |  |
+| `_TransportationOrderCategory` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

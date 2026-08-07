@@ -30,45 +30,45 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |
-| `SalesOrderItem` | ✓ | |  | `cast(SalesDocumentItem as sales_order_item preserving type)` |
-| `BillingPlan` | ✓ | |  |  |
-| `BillingPlanItem` | ✓ | |  |  |
-| `BillingPlanBillingDate` |  | |  |  |
-| `BillingPlanServiceStartDate` |  | |  |  |
-| `BillingPlanServiceEndDate` |  | |  |  |
-| `BillingPlanAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `BillingBlockReason` |  | |  |  |
-| `BillingPlanRelatedBillgStatus` |  | |  |  |
-| `BillingPlanType` |  | |  |  |
-| `BillingPlanDateCategory` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `ProposedBillingDocumentType` |  | |  |  |
-| `AdoptingBillingDateID` |  | |  |  |
-| `BillingPlanBillingRule` |  | |  |  |
-| `BillingPlanDateDescriptionCode` |  | |  |  |
-| `BillingPlanMilestoneUsage` |  | |  |  |
-| `BillingPlanAmountPercent` |  | |  |  |
-| `BillgPlnDteCorrectionRfndType` |  | |  |  |
-| `AccountingExchangeRate` |  | |  |  |
-| `PostponementReason` |  | |  |  |
-| `BillingPlanItemUsage` |  | |  |  |
-| `BillingPlanItemUsage_2` |  | |  |  |
-| `BillingPlanUsageCategory` |  | |  |  |
-| `BillingPlanItemDescription` |  | |  |  |
-| `EnterpriseProjectMilestoneUUID` |  | |  |  |
-| `EnterpriseProjectMilestone` |  | |  |  |
-| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
-| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
-| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
-| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_SalesOrderItemBillingPlan` | | ✓ | | |
-| `_EntProjMlstnForSOItmBlgPln` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |  |  |
+| `SalesOrderItem` | ✓ | |  | `cast(SalesDocumentItem as sales_order_item preserving type)` |  |  |
+| `BillingPlan` | ✓ | |  |  |  |  |
+| `BillingPlanItem` | ✓ | |  |  |  |  |
+| `BillingPlanBillingDate` |  | |  |  |  |  |
+| `BillingPlanServiceStartDate` |  | |  |  |  |  |
+| `BillingPlanServiceEndDate` |  | |  |  |  |  |
+| `BillingPlanAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `BillingBlockReason` |  | |  |  |  |  |
+| `BillingPlanRelatedBillgStatus` |  | |  |  |  |  |
+| `BillingPlanType` |  | |  |  |  |  |
+| `BillingPlanDateCategory` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `ProposedBillingDocumentType` |  | |  |  |  |  |
+| `AdoptingBillingDateID` |  | |  |  |  |  |
+| `BillingPlanBillingRule` |  | |  |  |  |  |
+| `BillingPlanDateDescriptionCode` |  | |  |  |  |  |
+| `BillingPlanMilestoneUsage` |  | |  |  |  |  |
+| `BillingPlanAmountPercent` |  | |  |  |  |  |
+| `BillgPlnDteCorrectionRfndType` |  | |  |  |  |  |
+| `AccountingExchangeRate` |  | |  |  |  |  |
+| `PostponementReason` |  | |  |  |  |  |
+| `BillingPlanItemUsage` |  | |  |  |  |  |
+| `BillingPlanItemUsage_2` |  | |  |  |  |  |
+| `BillingPlanUsageCategory` |  | |  |  |  |  |
+| `BillingPlanItemDescription` |  | |  |  |  |  |
+| `EnterpriseProjectMilestoneUUID` |  | |  |  |  |  |
+| `EnterpriseProjectMilestone` |  | |  |  |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |  |  |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |  |  |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |  |  |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_SalesOrderItemBillingPlan` | | ✓ | | | | |
+| `_EntProjMlstnForSOItmBlgPln` | | ✓ | | | | |
 
 ## Associations
 

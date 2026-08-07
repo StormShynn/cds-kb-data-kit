@@ -28,70 +28,70 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Ledger` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `OrderID` | ✓ | |  |  |
-| `OrderItem` | ✓ | |  |  |
-| `OrderType` | ✓ | |  |  |
-| `OrderCategory` | ✓ | |  |  |
-| `ResultAnalysisInternalID` | ✓ | |  |  |
-| `ChartOfAccounts` | ✓ | |  |  |
-| `GLAccount` |  | |  | `, useAsTemplate: true } ] key GLAccount` |
-| `Plant` | ✓ | |  |  |
-| `ProducedProduct` | ✓ | |  |  |
-| `OriginProduct` | ✓ | |  |  |
-| `OriginCostCenter` | ✓ | |  |  |
-| `OriginCostCtrActivityType` | ✓ | |  |  |
-| `SalesOrder` | ✓ | |  |  |
-| `SalesOrderItem` |  | |  | `, useAsTemplate: true } ] key SalesOrderItem` |
-| `WBSElementInternalID` |  | |  | `cast(WBSElementInternalID as fco_ebpr_wbs_element_int_id preserving type )` |
-| `ControllingArea` |  | | `_Order` | `ControllingArea` |
-| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |
-| `OrderDescription` |  | | `_Order` | `OrderDescription` |
-| `PlantName` |  | | `_Plant` | `PlantName` |
-| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |
-| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` |
-| `DisplayCurrency` |  | |  |  |
-| `InptPrVarcAmtInDspCrcy` |  | |  |  |
-| `InptQtyVarcAmtInDspCrcy` |  | |  |  |
-| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  |
-| `OutpPrVarcAmtInDspCrcy` |  | |  |  |
-| `LotSizeVarcAmtInDspCrcy` |  | |  |  |
-| `RmngVarcAmtInDspCrcy` |  | |  |  |
-| `CostVarianceInDspCrcy` |  | |  |  |
-| `WIPCostInDspCrcy` |  | |  |  |
-| `UnrlzdCostRsrvAmtInDspCrcy` |  | |  |  |
-| `TotalWIPAmountInDspCrcy` |  | |  |  |
-| `_Ledger` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_OrderType` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Currency` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CostCenterActivityType` | | ✓ | | |
-| `_EventBasedProcessingKey` | | ✓ | | |
-| `_EventBasedProcessingKeyText` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_OrderTypeText` | | ✓ | | |
-| `_OrderCategoryText` | | ✓ | | |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_GLAccountText` | | ✓ | | |
-| `_ProducedProductText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_OriginCostCenterText` | | ✓ | | |
-| `_CostCenterActivityTypeText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `OrderID` | ✓ | |  |  |  |  |
+| `OrderItem` | ✓ | |  |  |  |  |
+| `OrderType` | ✓ | |  |  |  |  |
+| `OrderCategory` | ✓ | |  |  |  |  |
+| `ResultAnalysisInternalID` | ✓ | |  |  |  |  |
+| `ChartOfAccounts` | ✓ | |  |  |  |  |
+| `GLAccount` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ProducedProduct` | ✓ | |  |  |  |  |
+| `OriginProduct` | ✓ | |  |  |  |  |
+| `OriginCostCenter` | ✓ | |  |  |  |  |
+| `OriginCostCtrActivityType` | ✓ | |  |  |  |  |
+| `SalesOrder` | ✓ | |  |  |  |  |
+| `SalesOrderItem` | ✓ | |  |  |  |  |
+| `WBSElementInternalID` |  | |  | `cast(WBSElementInternalID as fco_ebpr_wbs_element_int_id preserving type )` |  |  |
+| `ControllingArea` |  | | `_Order` | `ControllingArea` |  |  |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |  |  |
+| `OrderDescription` |  | | `_Order` | `OrderDescription` |  |  |
+| `PlantName` |  | | `_Plant` | `PlantName` |  |  |
+| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |  |  |
+| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` |  |  |
+| `DisplayCurrency` |  | |  |  |  |  |
+| `InptPrVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `InptQtyVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `OutpPrVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `LotSizeVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `RmngVarcAmtInDspCrcy` |  | |  |  |  |  |
+| `CostVarianceInDspCrcy` |  | |  |  |  |  |
+| `WIPCostInDspCrcy` |  | |  |  |  |  |
+| `UnrlzdCostRsrvAmtInDspCrcy` |  | |  |  |  |  |
+| `TotalWIPAmountInDspCrcy` |  | |  |  |  |  |
+| `_Ledger` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_OrderType` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Currency` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CostCenterActivityType` | | ✓ | | | | |
+| `_EventBasedProcessingKey` | | ✓ | | | | |
+| `_EventBasedProcessingKeyText` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_OrderTypeText` | | ✓ | | | | |
+| `_OrderCategoryText` | | ✓ | | | | |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_GLAccountText` | | ✓ | | | | |
+| `_ProducedProductText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_OriginCostCenterText` | | ✓ | | | | |
+| `_CostCenterActivityTypeText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
 
 ## Associations
 

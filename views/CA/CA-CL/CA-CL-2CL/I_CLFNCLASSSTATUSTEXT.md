@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClassType` | ✓ | |  | `klart` |
-| `Language` | ✓ | |  | `spras` |
-| `ClassStatus` | ✓ | |  | `status` |
-| `ClassStatusName` |  | |  | `stext` |
-| `_Language` | | ✓ | | |
-| `_ClassType` | | ✓ | | |
-| `_ClassStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassType` | ✓ | |  | `klart` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ClassStatus` | ✓ | |  | `status` |  |  |
+| `ClassStatusName` |  | |  | `stext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ClassType` | | ✓ | | | | |
+| `_ClassStatus` | | ✓ | | | | |
 
 ## Associations
 

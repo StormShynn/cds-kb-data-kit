@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionPlanGroup` | ✓ | |  |  |
-| `BOOOperationInternalID` | ✓ | |  |  |
-| `InspectionPlan` | ✓ | |  |  |
-| `ChangedDateTime` |  | |  |  |
-| `IsDeleted` |  | |  |  |
-| `_InspPlanVersion` | | ✓ | | |
-| `_InspPlanOpVersion` | | ✓ | | |
-| `_InspPlanOpCharcVers` | | ✓ | | |
-| `_InspPlanDepdntCharcVers` | | ✓ | | |
-| `_InspPlan` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  |  |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |  |  |
+| `InspectionPlan` | ✓ | |  |  |  |  |
+| `ChangedDateTime` |  | |  |  |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `_InspPlanVersion` | | ✓ | | | | |
+| `_InspPlanOpVersion` | | ✓ | | | | |
+| `_InspPlanOpCharcVers` | | ✓ | | | | |
+| `_InspPlanDepdntCharcVers` | | ✓ | | | | |
+| `_InspPlan` | | ✓ | | | | |
 
 ## Source Code
 

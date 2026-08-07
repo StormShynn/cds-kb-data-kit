@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrsyTransacMgmtBizTransaction` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `FinancialTransaction` |  | |  |  |
-| `FinancialInstrProductCategory` |  | |  |  |
-| `PayingValuationArea` |  | |  |  |
-| `AccountingDocument` |  | |  |  |
-| `FiscalYear` |  | |  | `cast( AcctInfo.FiscalYear as fis_gjahr_no_conv preserving type )` |
-| `FinTransFlowPostingDate` |  | |  | `PostingDate` |
-| `PaymentRequest` |  | |  |  |
-| `PaytReqOriglReferenceDocument` |  | |  |  |
-| `TrsyPaytRequestReleaseStatus` |  | |  |  |
-| `TreasuryPaymentRequestStatus` |  | |  |  |
-| `_FinTrans` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrsyTransacMgmtBizTransaction` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `FinancialTransaction` |  | |  |  |  |  |
+| `FinancialInstrProductCategory` |  | |  |  |  |  |
+| `PayingValuationArea` |  | |  |  |  |  |
+| `AccountingDocument` |  | |  |  |  |  |
+| `FiscalYear` |  | |  | `cast( AcctInfo.FiscalYear as fis_gjahr_no_conv preserving type )` |  |  |
+| `FinTransFlowPostingDate` |  | |  | `PostingDate` |  |  |
+| `PaymentRequest` |  | |  |  |  |  |
+| `PaytReqOriglReferenceDocument` |  | |  |  |  |  |
+| `TrsyPaytRequestReleaseStatus` |  | |  |  |  |  |
+| `TreasuryPaymentRequestStatus` |  | |  |  |  |  |
+| `_FinTrans` | | ✓ | | | | |
 
 ## Associations
 

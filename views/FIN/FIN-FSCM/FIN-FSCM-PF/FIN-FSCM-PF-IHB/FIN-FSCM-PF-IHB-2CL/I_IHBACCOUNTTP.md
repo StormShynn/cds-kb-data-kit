@@ -29,91 +29,91 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IHBAccountUUID` | ✓ | |  |  |
-| `IHBAccountReferenceUUID` |  | |  |  |
-| `IHBBankArea` |  | |  |  |
-| `IHBAccountNumber` |  | |  |  |
-| `IHBBankAreaCountry` |  | |  |  |
-| `IHBBankKey` |  | |  |  |
-| `IHBAccountCurrency` |  | |  |  |
-| `IHBAccountAliasName` |  | |  |  |
-| `IHBAccountHolder` |  | |  |  |
-| `IHBAcctIdentifierIBAN` |  | |  |  |
-| `IHBAccountGroupName` |  | |  |  |
-| `IHBAccountStatus` |  | |  |  |
-| `IHBAccountDescription` |  | |  |  |
-| `IHBAccountPaymentIsBlocked` |  | |  |  |
-| `IHBAccountIsMrkdForDeletion` |  | |  |  |
-| `IHBAcctIsPreferredForAcctCrcy` |  | |  |  |
-| `IHBAccountBalancingIsNeeded` |  | |  |  |
-| `IHBAcctBalancingFrequency` |  | |  |  |
-| `IHBAcctBalancingKeyDay` |  | |  |  |
-| `IHBAcctBalcngFreqQtrMnthNmbr` |  | |  |  |
-| `IHBAcctBalcngFreqYearMnthNmbr` |  | |  |  |
-| `IHBNextAccountBalancingDate` |  | |  |  |
-| `IHBAccountGLGroup` |  | |  |  |
-| `IHBAcctBankStmntIsNeeded` |  | |  |  |
-| `IHBAcctBkStmntFrequency` |  | |  |  |
-| `IHBAcctBkStmntSendStartTime` |  | |  |  |
-| `IHBAcctBkStmntSendEndTime` |  | |  |  |
-| `IHBAcctBkStmntSendTmznCode` |  | |  |  |
-| `IHBAcctBankStmntWeeklyOccren` |  | |  |  |
-| `IHBAcctBkStmntIsWithinDay` |  | |  |  |
-| `IHBAcctBkStmntNoTrnovrIsNeeded` |  | |  |  |
-| `IHBAcctBkStmntKeyDay` |  | |  |  |
-| `IHBAcctBkStmntFreqYearMnthNmbr` |  | |  |  |
-| `IHBAcctBalanceNotifIsNeeded` |  | |  |  |
-| `IHBAcctBalNotifFrequency` |  | |  |  |
-| `IHBAcctBalNotifKeyDay` |  | |  |  |
-| `IHBAcctBalNotifFreqQtrMnthNmbr` |  | |  |  |
-| `IHBAcctBalNotifFreqYrMnthNmbr` |  | |  |  |
-| `IHBAcctIntrstScNotifIsNeeded` |  | |  |  |
-| `IHBAccountCloseFromDate` |  | |  |  |
-| `IHBAccountRefBkAreaCode` |  | |  |  |
-| `IHBAccountRefAcctNumber` |  | |  |  |
-| `IHBAcctClosingAccountCountry` |  | |  |  |
-| `IHBAcctClosingAccountBankKey` |  | |  |  |
-| `IHBAcctClosingAccountBIC` |  | |  |  |
-| `IHBAcctClosingAccountIBAN` |  | |  |  |
-| `IHBAcctClosingAccountNumber` |  | |  |  |
-| `IHBAcctClosingAccountCurrency` |  | |  |  |
-| `IHBAcctClosingAccountHolder` |  | |  |  |
-| `IHBAccountClosureLongText` |  | |  |  |
-| `IHBAccountDeletionLongText` |  | |  |  |
-| `IHBAccountIsTemplate` |  | |  |  |
-| `IHBAccountTemplateShortDesc` |  | |  |  |
-| `IHBAccountTemplateLongDesc` |  | |  |  |
-| `IHBAccountTemplateIsPrivate` |  | |  |  |
-| `IHBAccountTmplReferenceUUID` |  | |  |  |
-| `IHBAccountCreatedDateTime` |  | |  |  |
-| `IHBAccountCreatedByUser` |  | |  |  |
-| `IHBAccountChangedDateTime` |  | |  |  |
-| `IHBAccountChangedByUser` |  | |  |  |
-| `IHBAccountReleasedDateTime` |  | |  |  |
-| `IHBAccountReleasedByUser` |  | |  |  |
-| `IHBAccountOpenedDate` |  | |  |  |
-| `IHBAccountOpenedByUser` |  | |  |  |
-| `IHBAccountClosedDateTime` |  | |  |  |
-| `IHBAccountClosedByUser` |  | |  |  |
-| `IHBAccountDeletedDateTime` |  | |  |  |
-| `IHBAccountDeletedByUser` |  | |  |  |
-| `IHBAcctOpngBalPostDate` |  | |  |  |
-| `IHBAcctOpngBalValueDate` |  | |  |  |
-| `IHBAcctOpngBalAmount` |  | |  |  |
-| `IHBAccountTotalChangedDateTime` |  | |  |  |
-| `IHBAccountApprovalActivity` |  | |  |  |
-| `IHBAcctLastReviewVersionUUID` |  | |  |  |
-| `IHBAccountUploadedDateTime` |  | |  |  |
-| `IHBAccountUploadedByUser` |  | |  |  |
-| `IHBAccountExcelRowNumber` |  | |  |  |
-| `IHBAccountUploadIsInProgress` |  | |  |  |
-| `ApplicationLogHandle` |  | |  |  |
-| `_IHBAccountBPBalNotifTP` | | ✓ | | |
-| `_IHBAccountBPBkStmntTP` | | ✓ | | |
-| `_IHBAccountBPIntrstScNotifTP` | | ✓ | | |
-| `_IHBAccountTTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IHBAccountUUID` | ✓ | |  |  |  |  |
+| `IHBAccountReferenceUUID` |  | |  |  |  |  |
+| `IHBBankArea` |  | |  |  |  |  |
+| `IHBAccountNumber` |  | |  |  |  |  |
+| `IHBBankAreaCountry` |  | |  |  |  |  |
+| `IHBBankKey` |  | |  |  |  |  |
+| `IHBAccountCurrency` |  | |  |  |  |  |
+| `IHBAccountAliasName` |  | |  |  |  |  |
+| `IHBAccountHolder` |  | |  |  |  |  |
+| `IHBAcctIdentifierIBAN` |  | |  |  |  |  |
+| `IHBAccountGroupName` |  | |  |  |  |  |
+| `IHBAccountStatus` |  | |  |  |  |  |
+| `IHBAccountDescription` |  | |  |  |  |  |
+| `IHBAccountPaymentIsBlocked` |  | |  |  |  |  |
+| `IHBAccountIsMrkdForDeletion` |  | |  |  |  |  |
+| `IHBAcctIsPreferredForAcctCrcy` |  | |  |  |  |  |
+| `IHBAccountBalancingIsNeeded` |  | |  |  |  |  |
+| `IHBAcctBalancingFrequency` |  | |  |  |  |  |
+| `IHBAcctBalancingKeyDay` |  | |  |  |  |  |
+| `IHBAcctBalcngFreqQtrMnthNmbr` |  | |  |  |  |  |
+| `IHBAcctBalcngFreqYearMnthNmbr` |  | |  |  |  |  |
+| `IHBNextAccountBalancingDate` |  | |  |  |  |  |
+| `IHBAccountGLGroup` |  | |  |  |  |  |
+| `IHBAcctBankStmntIsNeeded` |  | |  |  |  |  |
+| `IHBAcctBkStmntFrequency` |  | |  |  |  |  |
+| `IHBAcctBkStmntSendStartTime` |  | |  |  |  |  |
+| `IHBAcctBkStmntSendEndTime` |  | |  |  |  |  |
+| `IHBAcctBkStmntSendTmznCode` |  | |  |  |  |  |
+| `IHBAcctBankStmntWeeklyOccren` |  | |  |  |  |  |
+| `IHBAcctBkStmntIsWithinDay` |  | |  |  |  |  |
+| `IHBAcctBkStmntNoTrnovrIsNeeded` |  | |  |  |  |  |
+| `IHBAcctBkStmntKeyDay` |  | |  |  |  |  |
+| `IHBAcctBkStmntFreqYearMnthNmbr` |  | |  |  |  |  |
+| `IHBAcctBalanceNotifIsNeeded` |  | |  |  |  |  |
+| `IHBAcctBalNotifFrequency` |  | |  |  |  |  |
+| `IHBAcctBalNotifKeyDay` |  | |  |  |  |  |
+| `IHBAcctBalNotifFreqQtrMnthNmbr` |  | |  |  |  |  |
+| `IHBAcctBalNotifFreqYrMnthNmbr` |  | |  |  |  |  |
+| `IHBAcctIntrstScNotifIsNeeded` |  | |  |  |  |  |
+| `IHBAccountCloseFromDate` |  | |  |  |  |  |
+| `IHBAccountRefBkAreaCode` |  | |  |  |  |  |
+| `IHBAccountRefAcctNumber` |  | |  |  |  |  |
+| `IHBAcctClosingAccountCountry` |  | |  |  |  |  |
+| `IHBAcctClosingAccountBankKey` |  | |  |  |  |  |
+| `IHBAcctClosingAccountBIC` |  | |  |  |  |  |
+| `IHBAcctClosingAccountIBAN` |  | |  |  |  |  |
+| `IHBAcctClosingAccountNumber` |  | |  |  |  |  |
+| `IHBAcctClosingAccountCurrency` |  | |  |  |  |  |
+| `IHBAcctClosingAccountHolder` |  | |  |  |  |  |
+| `IHBAccountClosureLongText` |  | |  |  |  |  |
+| `IHBAccountDeletionLongText` |  | |  |  |  |  |
+| `IHBAccountIsTemplate` |  | |  |  |  |  |
+| `IHBAccountTemplateShortDesc` |  | |  |  |  |  |
+| `IHBAccountTemplateLongDesc` |  | |  |  |  |  |
+| `IHBAccountTemplateIsPrivate` |  | |  |  |  |  |
+| `IHBAccountTmplReferenceUUID` |  | |  |  |  |  |
+| `IHBAccountCreatedDateTime` |  | |  |  |  |  |
+| `IHBAccountCreatedByUser` |  | |  |  |  |  |
+| `IHBAccountChangedDateTime` |  | |  |  |  |  |
+| `IHBAccountChangedByUser` |  | |  |  |  |  |
+| `IHBAccountReleasedDateTime` |  | |  |  |  |  |
+| `IHBAccountReleasedByUser` |  | |  |  |  |  |
+| `IHBAccountOpenedDate` |  | |  |  |  |  |
+| `IHBAccountOpenedByUser` |  | |  |  |  |  |
+| `IHBAccountClosedDateTime` |  | |  |  |  |  |
+| `IHBAccountClosedByUser` |  | |  |  |  |  |
+| `IHBAccountDeletedDateTime` |  | |  |  |  |  |
+| `IHBAccountDeletedByUser` |  | |  |  |  |  |
+| `IHBAcctOpngBalPostDate` |  | |  |  |  |  |
+| `IHBAcctOpngBalValueDate` |  | |  |  |  |  |
+| `IHBAcctOpngBalAmount` |  | |  |  |  |  |
+| `IHBAccountTotalChangedDateTime` |  | |  |  |  |  |
+| `IHBAccountApprovalActivity` |  | |  |  |  |  |
+| `IHBAcctLastReviewVersionUUID` |  | |  |  |  |  |
+| `IHBAccountUploadedDateTime` |  | |  |  |  |  |
+| `IHBAccountUploadedByUser` |  | |  |  |  |  |
+| `IHBAccountExcelRowNumber` |  | |  |  |  |  |
+| `IHBAccountUploadIsInProgress` |  | |  |  |  |  |
+| `ApplicationLogHandle` |  | |  |  |  |  |
+| `_IHBAccountBPBalNotifTP` | | ✓ | | | | |
+| `_IHBAccountBPBkStmntTP` | | ✓ | | | | |
+| `_IHBAccountBPIntrstScNotifTP` | | ✓ | | | | |
+| `_IHBAccountTTP` | | ✓ | | | | |
 
 ## Source Code
 

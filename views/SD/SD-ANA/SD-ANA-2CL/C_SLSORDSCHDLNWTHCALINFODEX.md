@@ -28,42 +28,42 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  |  |
-| `SalesOrderItem` | ✓ | |  |  |
-| `ScheduleLine` | ✓ | |  |  |
-| `SalesDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `Product` |  | |  |  |
-| `Plant` |  | |  |  |
-| `TransitPlant` |  | |  |  |
-| `IsRequestedDelivSchedLine` |  | |  |  |
-| `IsConfirmedDelivSchedLine` |  | |  |  |
-| `ScheduleLineOrderQuantity` |  | |  |  |
-| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |
-| `DeliveredQuantityInBaseUnit` |  | |  |  |
-| `DeliveredQtyInOrderQtyUnit` |  | |  |  |
-| `ValueChainCategory` |  | |  |  |
-| `RequestedDeliveryDate` |  | |  |  |
-| `ConfirmedDeliveryDate` |  | |  |  |
-| `DeliveryDate` |  | |  |  |
-| `FirstDayOfWeekDate` |  | |  |  |
-| `FirstDayOfMonthDate` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `OrderToBaseQuantityDnmntr` |  | |  |  |
-| `OrderToBaseQuantityNmrtr` |  | |  |  |
-| `OrderQuantityUnitSAPCode` |  | |  | `UnitOfMeasureSAPCode` |
-| `OrderQuantityUnitISOCode` |  | |  | `UnitOfMeasureISOCode` |
-| `BaseUnitSAPCode` |  | |  | `UnitOfMeasureSAPCode` |
-| `BaseUnitISOCode` |  | |  | `UnitOfMeasureISOCode` |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |  |  |
+| `SalesOrderItem` | ✓ | |  |  |  |  |
+| `ScheduleLine` | ✓ | |  |  |  |  |
+| `SalesDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `TransitPlant` |  | |  |  |  |  |
+| `IsRequestedDelivSchedLine` |  | |  |  |  |  |
+| `IsConfirmedDelivSchedLine` |  | |  |  |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |  |  |
+| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |  |  |
+| `DeliveredQuantityInBaseUnit` |  | |  |  |  |  |
+| `DeliveredQtyInOrderQtyUnit` |  | |  |  |  |  |
+| `ValueChainCategory` |  | |  |  |  |  |
+| `RequestedDeliveryDate` |  | |  |  |  |  |
+| `ConfirmedDeliveryDate` |  | |  |  |  |  |
+| `DeliveryDate` |  | |  |  |  |  |
+| `FirstDayOfWeekDate` |  | |  |  |  |  |
+| `FirstDayOfMonthDate` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `OrderToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `OrderToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `OrderQuantityUnitSAPCode` |  | |  | `UnitOfMeasureSAPCode` |  |  |
+| `OrderQuantityUnitISOCode` |  | |  | `UnitOfMeasureISOCode` |  |  |
+| `BaseUnitSAPCode` |  | |  | `UnitOfMeasureSAPCode` |  |  |
+| `BaseUnitISOCode` |  | |  | `UnitOfMeasureISOCode` |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
 
 ## Associations
 

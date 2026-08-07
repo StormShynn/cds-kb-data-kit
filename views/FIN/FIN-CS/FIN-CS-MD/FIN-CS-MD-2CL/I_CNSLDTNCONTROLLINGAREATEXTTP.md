@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `ControllingArea` | ✓ | | `_Text` | `ControllingArea` |
-| `ControllingAreaName` |  | | `_Text` | `ControllingAreaName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnControllingAreaTP` |  | |  | `_ControllingArea as _ControllingArea : redirected to parent I_CnsldtnControllingAreaTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `ControllingArea` | ✓ | | `_Text` | `ControllingArea` |  |  |
+| `ControllingAreaName` |  | | `_Text` | `ControllingAreaName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnControllingAreaTP` |  | |  | `_ControllingArea as _ControllingArea : redirected to parent I_CnsldtnControllingAreaTP` |  |  |
 
 ## Source Code
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusPartEmplrIndstryCode` | ✓ | |  | `ind_sector` |
-| `_Text` | | ✓ | | |
-| `_BPEmployment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusPartEmplrIndstryCode` | ✓ | |  | `ind_sector` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_BPEmployment` | | ✓ | | | | |
 
 ## Associations
 

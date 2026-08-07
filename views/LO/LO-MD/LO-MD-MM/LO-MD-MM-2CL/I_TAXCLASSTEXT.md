@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaxClassificationCategory` | ✓ | |  | `tatyp` |
-| `Language` | ✓ | |  | `spras` |
-| `TaxClassification` | ✓ | |  | `taxkm` |
-| `TaxClassificationName` |  | |  | `vtext` |
-| `_TaxClassificationCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxClassificationCategory` | ✓ | |  | `tatyp` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TaxClassification` | ✓ | |  | `taxkm` |  |  |
+| `TaxClassificationName` |  | |  | `vtext` |  |  |
+| `_TaxClassificationCategory` | | ✓ | | | | |
 
 ## Associations
 

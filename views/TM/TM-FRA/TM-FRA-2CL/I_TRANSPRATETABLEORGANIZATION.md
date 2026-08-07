@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspRateTableOrgUUID` | ✓ | |  | `cast(db_key as /scmtms/transprate_org_uuid preserving type)` |
-| `TransportationRateUUID` |  | |  | `cast(parent_key as /scmtms/transpratetable_uuid preserving type)` |
-| `TranspPurgOrg` |  | |  | `purch_org` |
-| `_TranspPurgOrg` | | ✓ | | |
-| `_TransportationRate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspRateTableOrgUUID` | ✓ | |  | `cast(db_key as /scmtms/transprate_org_uuid preserving type)` |  |  |
+| `TransportationRateUUID` |  | |  | `cast(parent_key as /scmtms/transpratetable_uuid preserving type)` |  |  |
+| `TranspPurgOrg` |  | |  | `purch_org` |  |  |
+| `_TranspPurgOrg` | | ✓ | | | | |
+| `_TransportationRate` | | ✓ | | | | |
 
 ## Associations
 

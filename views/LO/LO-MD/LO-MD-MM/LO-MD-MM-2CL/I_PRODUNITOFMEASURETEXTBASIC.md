@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  | `matnr` |
-| `Language` | ✓ | |  | `spras` |
-| `ProductUnit` | ✓ | |  | `meinh` |
-| `ProductUnitTextSeqNum` | ✓ | |  | `lfdnr` |
-| `ProductUnitShortTextCode` | ✓ | |  | `mtxid` |
-| `ProductDescription` |  | |  | `maktm` |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProductUnit` | ✓ | |  | `meinh` |  |  |
+| `ProductUnitTextSeqNum` | ✓ | |  | `lfdnr` |  |  |
+| `ProductUnitShortTextCode` | ✓ | |  | `mtxid` |  |  |
+| `ProductDescription` |  | |  | `maktm` |  |  |
+| `_Product` | | ✓ | | | | |
 
 ## Associations
 

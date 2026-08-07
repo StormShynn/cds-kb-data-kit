@@ -28,49 +28,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingDocument` |  | |  | `belnr_d` |
-| `BusinessTransactionType` |  | |  | `glvor` |
-| `AccountingDocumentType` |  | |  | `blart` |
-| `LedgerGroup` |  | |  | `fagl_ldgrp` |
-| `DocumentReferenceID` |  | |  | `xblnr` |
-| `AccountingDocumentHeaderText` |  | |  | `bktxt` |
-| `InvoiceReferenceDocument` |  | |  | `awkey_reb` |
-| `CreatedByUser` |  | |  | `usnam` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `DocumentDate` |  | |  | `bldat` |
-| `PostingDate` |  | |  | `budat` |
-| `TaxReportingDate` |  | |  | `vatdate` |
-| `TaxDeterminationDate` |  | |  | `txdat` |
-| `TaxFulfillmentDate` |  | |  | `fot_fulfilldate` |
-| `InvoiceReceiptDate` |  | |  | `reindat` |
-| `ExchangeRateDate` |  | |  | `wwert_d` |
-| `IsNegativePosting` |  | |  | `xnegp` |
-| `PostingFiscalPeriod` |  | |  | `monat` |
-| `Reference1InDocumentHeader` |  | |  | `fins_xref1_hd` |
-| `Reference2InDocumentHeader` |  | |  | `fins_xref2_hd` |
-| `JrnlEntryCntrySpecificRef1` |  | |  | `fac_glo_ref1_hd` |
-| `JrnlEntryCntrySpecificDate1` |  | |  | `fac_glo_dat1_hd` |
-| `JrnlEntryCntrySpecificRef2` |  | |  | `fac_glo_ref2_hd` |
-| `JrnlEntryCntrySpecificDate2` |  | |  | `fac_glo_dat2_hd` |
-| `JrnlEntryCntrySpecificRef3` |  | |  | `fac_glo_ref3_hd` |
-| `JrnlEntryCntrySpecificDate3` |  | |  | `fac_glo_dat3_hd` |
-| `JrnlEntryCntrySpecificRef4` |  | |  | `fac_glo_ref4_hd` |
-| `JrnlEntryCntrySpecificDate4` |  | |  | `fac_glo_dat4_hd` |
-| `JrnlEntryCntrySpecificRef5` |  | |  | `fac_glo_ref5_hd` |
-| `JrnlEntryCntrySpecificDate5` |  | |  | `fac_glo_dat5_hd` |
-| `JrnlEntryCntrySpecificBP1` |  | |  | `fac_glo_bp1_hd` |
-| `JrnlEntryCntrySpecificBP2` |  | |  | `fac_glo_bp2_hd` |
-| `ReversalReferenceDocumentKey` |  | |  | `awkey_rev` |
-| `ReversalReason` |  | |  | `acpi_stgrd` |
-| `PlannedReversalDate` |  | |  | `fis_stodt` |
-| `D_JournalEntryPostCPDP` |  | |  | `_OneTimeCustomerSupplier : composition [0..1] of D_JournalEntryPostCPDP` |
-| `D_JournalEntryPostGLItemP` |  | |  | `_GLItems : composition [0..*] of D_JournalEntryPostGLItemP` |
-| `D_JournalEntryPostARItemP` |  | |  | `_ARItems : composition [0..*] of D_JournalEntryPostARItemP` |
-| `D_JournalEntryPostAPItemP` |  | |  | `_APItems : composition [0..*] of D_JournalEntryPostAPItemP` |
-| `D_JournalEntryPostTaxItemP` |  | |  | `_TaxItems : composition [0..*] of D_JournalEntryPostTaxItemP` |
-| `D_JournalEntryPostWhgdItemP` |  | |  | `_WithHoldingTaxItems : composition [0..*] of D_JournalEntryPostWhgdItemP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocument` |  | |  | `belnr_d` |  |  |
+| `BusinessTransactionType` |  | |  | `glvor` |  |  |
+| `AccountingDocumentType` |  | |  | `blart` |  |  |
+| `LedgerGroup` |  | |  | `fagl_ldgrp` |  |  |
+| `DocumentReferenceID` |  | |  | `xblnr` |  |  |
+| `AccountingDocumentHeaderText` |  | |  | `bktxt` |  |  |
+| `InvoiceReferenceDocument` |  | |  | `awkey_reb` |  |  |
+| `CreatedByUser` |  | |  | `usnam` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `DocumentDate` |  | |  | `bldat` |  |  |
+| `PostingDate` |  | |  | `budat` |  |  |
+| `TaxReportingDate` |  | |  | `vatdate` |  |  |
+| `TaxDeterminationDate` |  | |  | `txdat` |  |  |
+| `TaxFulfillmentDate` |  | |  | `fot_fulfilldate` |  |  |
+| `InvoiceReceiptDate` |  | |  | `reindat` |  |  |
+| `ExchangeRateDate` |  | |  | `wwert_d` |  |  |
+| `IsNegativePosting` |  | |  | `xnegp` |  |  |
+| `PostingFiscalPeriod` |  | |  | `monat` |  |  |
+| `Reference1InDocumentHeader` |  | |  | `fins_xref1_hd` |  |  |
+| `Reference2InDocumentHeader` |  | |  | `fins_xref2_hd` |  |  |
+| `JrnlEntryCntrySpecificRef1` |  | |  | `fac_glo_ref1_hd` |  |  |
+| `JrnlEntryCntrySpecificDate1` |  | |  | `fac_glo_dat1_hd` |  |  |
+| `JrnlEntryCntrySpecificRef2` |  | |  | `fac_glo_ref2_hd` |  |  |
+| `JrnlEntryCntrySpecificDate2` |  | |  | `fac_glo_dat2_hd` |  |  |
+| `JrnlEntryCntrySpecificRef3` |  | |  | `fac_glo_ref3_hd` |  |  |
+| `JrnlEntryCntrySpecificDate3` |  | |  | `fac_glo_dat3_hd` |  |  |
+| `JrnlEntryCntrySpecificRef4` |  | |  | `fac_glo_ref4_hd` |  |  |
+| `JrnlEntryCntrySpecificDate4` |  | |  | `fac_glo_dat4_hd` |  |  |
+| `JrnlEntryCntrySpecificRef5` |  | |  | `fac_glo_ref5_hd` |  |  |
+| `JrnlEntryCntrySpecificDate5` |  | |  | `fac_glo_dat5_hd` |  |  |
+| `JrnlEntryCntrySpecificBP1` |  | |  | `fac_glo_bp1_hd` |  |  |
+| `JrnlEntryCntrySpecificBP2` |  | |  | `fac_glo_bp2_hd` |  |  |
+| `ReversalReferenceDocumentKey` |  | |  | `awkey_rev` |  |  |
+| `ReversalReason` |  | |  | `acpi_stgrd` |  |  |
+| `PlannedReversalDate` |  | |  | `fis_stodt` |  |  |
+| `D_JournalEntryPostCPDP` |  | |  | `_OneTimeCustomerSupplier : composition [0..1] of D_JournalEntryPostCPDP` |  |  |
+| `D_JournalEntryPostGLItemP` |  | |  | `_GLItems : composition [0..*] of D_JournalEntryPostGLItemP` |  |  |
+| `D_JournalEntryPostARItemP` |  | |  | `_ARItems : composition [0..*] of D_JournalEntryPostARItemP` |  |  |
+| `D_JournalEntryPostAPItemP` |  | |  | `_APItems : composition [0..*] of D_JournalEntryPostAPItemP` |  |  |
+| `D_JournalEntryPostTaxItemP` |  | |  | `_TaxItems : composition [0..*] of D_JournalEntryPostTaxItemP` |  |  |
+| `D_JournalEntryPostWhgdItemP` |  | |  | `_WithHoldingTaxItems : composition [0..*] of D_JournalEntryPostWhgdItemP` |  |  |
 
 ## Source Code
 

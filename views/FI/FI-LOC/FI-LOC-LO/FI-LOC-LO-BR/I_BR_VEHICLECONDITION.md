@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VehicleCondition` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehiclecondition )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VehicleCondition` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehiclecondition )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

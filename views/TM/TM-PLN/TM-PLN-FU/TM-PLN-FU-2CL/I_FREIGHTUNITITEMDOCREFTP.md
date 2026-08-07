@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdItemDocReferenceUUID` | ✓ | |  |  |
-| `TransportationOrderItemUUID` |  | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `TranspOrdItemDocReferenceID` |  | |  |  |
-| `TranspOrdItemDocReferenceType` |  | |  |  |
-| `TranspOrdItmDocReferenceItemID` |  | |  |  |
-| `TranspOrdItmDocRefItemType` |  | |  |  |
-| `TranspOrdItmDocRefDate` |  | |  |  |
-| `TranspOrdItemDocRefIssuerName` |  | |  |  |
-| `I_FreightUnitTP` |  | |  | `FreightUnitItemDocRef._TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |
-| `I_FreightUnitItemTP` |  | |  | `FreightUnitItemDocRef._TransportationOrderItem as _FreightUnitItem: redirected to parent I_FreightUnitItemTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemDocReferenceUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `TranspOrdItemDocReferenceID` |  | |  |  |  |  |
+| `TranspOrdItemDocReferenceType` |  | |  |  |  |  |
+| `TranspOrdItmDocReferenceItemID` |  | |  |  |  |  |
+| `TranspOrdItmDocRefItemType` |  | |  |  |  |  |
+| `TranspOrdItmDocRefDate` |  | |  |  |  |  |
+| `TranspOrdItemDocRefIssuerName` |  | |  |  |  |  |
+| `I_FreightUnitTP` |  | |  | `FreightUnitItemDocRef._TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |  |  |
+| `I_FreightUnitItemTP` |  | |  | `FreightUnitItemDocRef._TransportationOrderItem as _FreightUnitItem: redirected to parent I_FreightUnitItemTP` |  |  |
 
 ## Source Code
 

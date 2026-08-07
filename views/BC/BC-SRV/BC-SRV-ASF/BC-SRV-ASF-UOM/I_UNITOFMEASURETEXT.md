@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `UnitOfMeasure` | ✓ | |  | `msehi` |
-| `UnitOfMeasureLongName` |  | |  | `msehl` |
-| `UnitOfMeasureName` |  | |  | `mseht` |
-| `UnitOfMeasureTechnicalName` |  | |  | `mseh6` |
-| `UnitOfMeasure_E` |  | |  | `mseh3` |
-| `UnitOfMeasureCommercialName` |  | |  | `mseh3` |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `UnitOfMeasure` | ✓ | |  | `msehi` |  |  |
+| `UnitOfMeasureLongName` |  | |  | `msehl` |  |  |
+| `UnitOfMeasureName` |  | |  | `mseht` |  |  |
+| `UnitOfMeasureTechnicalName` |  | |  | `mseh6` |  |  |
+| `UnitOfMeasure_E` |  | |  | `mseh3` |  |  |
+| `UnitOfMeasureCommercialName` |  | |  | `mseh3` |  |  |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

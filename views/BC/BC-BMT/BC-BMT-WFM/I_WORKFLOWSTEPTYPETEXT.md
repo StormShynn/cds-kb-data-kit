@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WrkflwScen` | ✓ | |  | `wfd_id` |
-| `WrkflwScenVers` | ✓ | |  | `version` |
-| `WorkflowStepType` | ✓ | |  | `ruse_label` |
-| `Language` | ✓ | |  | `language` |
-| `WorkflowStepTypeSubject` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrkflwScen` | ✓ | |  | `wfd_id` |  |  |
+| `WrkflwScenVers` | ✓ | |  | `version` |  |  |
+| `WorkflowStepType` | ✓ | |  | `ruse_label` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `WorkflowStepTypeSubject` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

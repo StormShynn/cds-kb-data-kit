@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeliveryDocument` | ✓ | |  |  |
-| `PickedItemsLocation` |  | |  |  |
-| `HeaderGrossWeight` |  | |  |  |
-| `HeaderWeightUnit` |  | |  |  |
-| `PickingDate` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `LoadingDate` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `ProposedDeliveryRoute` |  | |  |  |
-| `HeaderVolumeUnit` |  | |  |  |
-| `HeaderVolume` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `WarehouseGate` |  | |  |  |
-| `WarehouseStagingArea` |  | |  |  |
-| `DeliveryDocumentBySupplier` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `DeliveryDate` |  | |  |  |
-| `SDDocumentCategory` |  | |  |  |
-| `OverallGoodsMovementStatus` |  | |  |  |
-| `OverallWarehouseActivityStatus` |  | |  |  |
-| `TotalCreditCheckStatus` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `OverallPickingStatus` |  | |  |  |
-| `PlantName` |  | |  |  |
-| `PlannedGoodsIssueDate` |  | |  |  |
-| `_DeliveryDocument` | | ✓ | | |
-| `_DeliveryDocumentFlow` | | ✓ | | |
-| `_DeliveryDocumentItem` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocument` | ✓ | |  |  |  |  |
+| `PickedItemsLocation` |  | |  |  |  |  |
+| `HeaderGrossWeight` |  | |  |  |  |  |
+| `HeaderWeightUnit` |  | |  |  |  |  |
+| `PickingDate` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `LoadingDate` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `ProposedDeliveryRoute` |  | |  |  |  |  |
+| `HeaderVolumeUnit` |  | |  |  |  |  |
+| `HeaderVolume` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `WarehouseGate` |  | |  |  |  |  |
+| `WarehouseStagingArea` |  | |  |  |  |  |
+| `DeliveryDocumentBySupplier` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `DeliveryDate` |  | |  |  |  |  |
+| `SDDocumentCategory` |  | |  |  |  |  |
+| `OverallGoodsMovementStatus` |  | |  |  |  |  |
+| `OverallWarehouseActivityStatus` |  | |  |  |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `OverallPickingStatus` |  | |  |  |  |  |
+| `PlantName` |  | |  |  |  |  |
+| `PlannedGoodsIssueDate` |  | |  |  |  |  |
+| `_DeliveryDocument` | | ✓ | | | | |
+| `_DeliveryDocumentFlow` | | ✓ | | | | |
+| `_DeliveryDocumentItem` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
 
 ## Associations
 

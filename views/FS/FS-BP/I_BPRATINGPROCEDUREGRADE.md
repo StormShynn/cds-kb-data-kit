@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |
-| `BusinessPartnerRatingGrade` | ✓ | |  | `grade` |
-| `BusinessPartnerRatingRanking` |  | |  | `ranking` |
-| `_Text` | | ✓ | | |
-| `_RatingProcedure` | | ✓ | | |
-| `_BPRating` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |  |  |
+| `BusinessPartnerRatingGrade` | ✓ | |  | `grade` |  |  |
+| `BusinessPartnerRatingRanking` |  | |  | `ranking` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_RatingProcedure` | | ✓ | | | | |
+| `_BPRating` | | ✓ | | | | |
 
 ## Associations
 

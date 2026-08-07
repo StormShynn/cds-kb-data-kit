@@ -30,27 +30,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOrder` | ✓ | |  | `SalesDocument` |
-| `SalesOrderItem` | ✓ | |  | `SalesDocumentItem` |
-| `DocRelationshipUUID` | ✓ | |  |  |
-| `SubsequentDocument` |  | |  |  |
-| `SubsequentDocumentItem` |  | |  |  |
-| `SubsequentDocumentCategory` |  | |  |  |
-| `ProcessFlowLevel` |  | |  |  |
-| `SubsqntDocItmPrecdgDocument` |  | |  |  |
-| `SubsqntDocItmPrecdgDocItem` |  | |  |  |
-| `SubsqntDocItmPrecdgDocCategory` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
-| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
-| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
-| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `SalesDocument` |  |  |
+| `SalesOrderItem` | ✓ | |  | `SalesDocumentItem` |  |  |
+| `DocRelationshipUUID` | ✓ | |  |  |  |  |
+| `SubsequentDocument` |  | |  |  |  |  |
+| `SubsequentDocumentItem` |  | |  |  |  |  |
+| `SubsequentDocumentCategory` |  | |  |  |  |  |
+| `ProcessFlowLevel` |  | |  |  |  |  |
+| `SubsqntDocItmPrecdgDocument` |  | |  |  |  |  |
+| `SubsqntDocItmPrecdgDocItem` |  | |  |  |  |  |
+| `SubsqntDocItmPrecdgDocCategory` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |  |  |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |  |  |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |  |  |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |  |  |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
 
 ## Associations
 

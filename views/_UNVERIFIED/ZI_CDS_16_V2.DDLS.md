@@ -37,11 +37,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TravelID` | ✓ | |  | `travel_id` |
-| `Price` |  | |  | `total_price` |
-| `Currency` |  | |  | `currency_code` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TravelID` | ✓ | |  | `travel_id` |  |  |
+| `Price` |  | |  | `total_price` |  |  |
+| `Currency` |  | |  | `currency_code` |  |  |
 
 ## Associations
 

@@ -25,9 +25,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PricingType` |  | |  | `crms4_pricing_type` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingType` |  | |  | `crms4_pricing_type` |  |  |
 
 ## Source Code
 

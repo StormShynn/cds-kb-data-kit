@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TimeSheetTaskType` | ✓ | |  | `tasktype` |
-| `TimeSheetTaskTypeRelevanceCode` |  | |  | `tasktype_relevance` |
-| `_TimeSheetTaskTypeText` | | ✓ | | |
-| `_TimeSheetTaskTypeRelevance` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TimeSheetTaskType` | ✓ | |  | `tasktype` |  |  |
+| `TimeSheetTaskTypeRelevanceCode` |  | |  | `tasktype_relevance` |  |  |
+| `_TimeSheetTaskTypeText` | | ✓ | | | | |
+| `_TimeSheetTaskTypeRelevance` | | ✓ | | | | |
 
 ## Associations
 

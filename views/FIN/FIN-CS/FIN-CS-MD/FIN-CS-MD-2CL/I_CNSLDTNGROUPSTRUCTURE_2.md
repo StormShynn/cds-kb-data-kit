@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |
-| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |
-| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |
-| `FromFiscalYearPeriod` | ✓ | |  | `cast( _Source.GroupStrucFromFiscalYearPeriod as fincs_fromfiscalyearperiod preserving type )` |
-| `ToFiscalYearPeriod` |  | |  | `cast( _Source.GroupStrucToFiscalYearPeriod as fincs_tofiscalyearperiod preserving type )` |
-| `YearOfFirstConsolidation` |  | | `_Source` | `YearOfFirstConsolidation` |
-| `PeriodOfFirstConsolidation` |  | | `_Source` | `PeriodOfFirstConsolidation` |
-| `FirstCnsldtnIsAtEndOfPeriod` |  | | `_Source` | `FirstCnsldtnIsAtEndOfPeriod` |
-| `YearOfDivestiture` |  | | `_Source` | `YearOfDivestiture` |
-| `PeriodOfDivestiture` |  | | `_Source` | `PeriodOfDivestiture` |
-| `DivestitureIsAtBeginOfPeriod` |  | | `_Source` | `DivestitureIsAtBeginOfPeriod` |
-| `ConsolidationMethod` |  | | `_Source` | `ConsolidationMethod` |
-| `AccountingTechnique` |  | | `_Source` | `AccountingTechnique` |
-| `DivestitureIsDueToMerger` |  | | `_Source` | `DivestitureIsDueToMerger` |
-| `ETag` |  | | `_Source` | `ETag` |
-| `_CnsldtnVersion` | | ✓ | | |
-| `_CnsldtnGroup` | | ✓ | | |
-| `_CnsldtnUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |  |  |
+| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |  |  |
+| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |  |  |
+| `FromFiscalYearPeriod` | ✓ | |  | `cast( _Source.GroupStrucFromFiscalYearPeriod as fincs_fromfiscalyearperiod preserving type )` |  |  |
+| `ToFiscalYearPeriod` |  | |  | `cast( _Source.GroupStrucToFiscalYearPeriod as fincs_tofiscalyearperiod preserving type )` |  |  |
+| `YearOfFirstConsolidation` |  | | `_Source` | `YearOfFirstConsolidation` |  |  |
+| `PeriodOfFirstConsolidation` |  | | `_Source` | `PeriodOfFirstConsolidation` |  |  |
+| `FirstCnsldtnIsAtEndOfPeriod` |  | | `_Source` | `FirstCnsldtnIsAtEndOfPeriod` |  |  |
+| `YearOfDivestiture` |  | | `_Source` | `YearOfDivestiture` |  |  |
+| `PeriodOfDivestiture` |  | | `_Source` | `PeriodOfDivestiture` |  |  |
+| `DivestitureIsAtBeginOfPeriod` |  | | `_Source` | `DivestitureIsAtBeginOfPeriod` |  |  |
+| `ConsolidationMethod` |  | | `_Source` | `ConsolidationMethod` |  |  |
+| `AccountingTechnique` |  | | `_Source` | `AccountingTechnique` |  |  |
+| `DivestitureIsDueToMerger` |  | | `_Source` | `DivestitureIsDueToMerger` |  |  |
+| `ETag` |  | | `_Source` | `ETag` |  |  |
+| `_CnsldtnVersion` | | ✓ | | | | |
+| `_CnsldtnGroup` | | ✓ | | | | |
+| `_CnsldtnUnit` | | ✓ | | | | |
 
 ## Source Code
 

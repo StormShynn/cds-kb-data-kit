@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |
-| `Country` | ✓ | |  | `country` |
-| `Region` | ✓ | |  | `region` |
-| `SecondaryRegion` | ✓ | |  | `county_code` |
-| `SecondaryRegionName` |  | |  | `county` |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_SecondaryRegion` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |  |  |
+| `Country` | ✓ | |  | `country` |  |  |
+| `Region` | ✓ | |  | `region` |  |  |
+| `SecondaryRegion` | ✓ | |  | `county_code` |  |  |
+| `SecondaryRegionName` |  | |  | `county` |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_SecondaryRegion` | | ✓ | | | | |
 
 ## Associations
 

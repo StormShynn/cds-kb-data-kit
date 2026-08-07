@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |
-| `IT_ElectronicDocDeliveredDate` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `IT_ElectronicDocInvoiceNumber` |  | |  |  |
-| `PurchasingDocumentAmount` |  | |  |  |
-| `PurchaseOrderCurrency` |  | |  |  |
-| `IT_ElectronicDocExchSystemID` |  | |  |  |
-| `IT_ElectronicDocRecipientTaxID` |  | |  |  |
-| `IT_ElectronicDocRcpntEmailAddr` |  | |  |  |
-| `IT_ElectronicDocExtDocType` |  | |  |  |
-| `IT_ElectronicDocRejectionCode` |  | |  |  |
-| `IT_ElectronicDocRejectionText` |  | |  |  |
-| `IT_ElectronicDocRjcnEmailAddr` |  | |  |  |
-| `IT_ElectronicDocSuplrCtryCode` |  | |  |  |
-| `IT_ElectronicDocSuplrTaxID` |  | |  |  |
-| `IT_ElectronicDocSupplierName` |  | |  |  |
-| `_ElectronicRejectCode` | | ✓ | | |
-| `_CountryText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |  |  |
+| `IT_ElectronicDocDeliveredDate` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `IT_ElectronicDocInvoiceNumber` |  | |  |  |  |  |
+| `PurchasingDocumentAmount` |  | |  |  |  |  |
+| `PurchaseOrderCurrency` |  | |  |  |  |  |
+| `IT_ElectronicDocExchSystemID` |  | |  |  |  |  |
+| `IT_ElectronicDocRecipientTaxID` |  | |  |  |  |  |
+| `IT_ElectronicDocRcpntEmailAddr` |  | |  |  |  |  |
+| `IT_ElectronicDocExtDocType` |  | |  |  |  |  |
+| `IT_ElectronicDocRejectionCode` |  | |  |  |  |  |
+| `IT_ElectronicDocRejectionText` |  | |  |  |  |  |
+| `IT_ElectronicDocRjcnEmailAddr` |  | |  |  |  |  |
+| `IT_ElectronicDocSuplrCtryCode` |  | |  |  |  |  |
+| `IT_ElectronicDocSuplrTaxID` |  | |  |  |  |  |
+| `IT_ElectronicDocSupplierName` |  | |  |  |  |  |
+| `_ElectronicRejectCode` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
 
 ## Source Code
 

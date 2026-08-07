@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `BR_MaterialOrigin` | ✓ | |  | `cast ( domvalue_l as logbr_matorg )` |
-| `BR_MaterialOriginDesc` |  | |  | `cast ( ddtext as logbr_matorgdesc preserving type)` |
-| `_BR_MaterialOrigin` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `BR_MaterialOrigin` | ✓ | |  | `cast ( domvalue_l as logbr_matorg )` |  |  |
+| `BR_MaterialOriginDesc` |  | |  | `cast ( ddtext as logbr_matorgdesc preserving type)` |  |  |
+| `_BR_MaterialOrigin` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

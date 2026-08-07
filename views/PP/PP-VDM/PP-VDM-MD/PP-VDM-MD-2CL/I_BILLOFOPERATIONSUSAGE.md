@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsUsage` | ✓ | |  | `cast(t411.verwe as billofoperationsusage preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsUsage` | ✓ | |  | `cast(t411.verwe as billofoperationsusage preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

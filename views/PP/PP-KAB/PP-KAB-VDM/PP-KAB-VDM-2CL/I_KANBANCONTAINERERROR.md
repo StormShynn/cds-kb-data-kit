@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanContainer` | ✓ | |  | `pkkey` |
-| `Plant` |  | | `_KanbanContainer._KanbanControlCycle` | `Plant` |
-| `SystemMessageClass` |  | |  | `msgid` |
-| `SystemMessageNumber` |  | |  | `msgnr` |
-| `SystemMessageType` |  | |  | `msgty` |
-| `SystemMessageVariable1` |  | |  | `cast(msgv1 as vdm_pk_msg_var_1 preserving type)` |
-| `SystemMessageVariable2` |  | |  | `cast(msgv2 as vdm_pk_msg_var_2 preserving type)` |
-| `SystemMessageVariable3` |  | |  | `cast(msgv3 as vdm_pk_msg_var_3 preserving type)` |
-| `SystemMessageVariable4` |  | |  | `cast(msgv4 as vdm_pk_msg_var_4 preserving type)` |
-| `ErrorOccurrenceDate` |  | |  | `saedt` |
-| `ErrorOccurrenceTime` |  | |  | `saeuz` |
-| `PreviousKanbanContainerStatus` |  | |  | `sfgsv` |
-| `TargetKanbanContainerStatus` |  | |  | `sfgsn` |
-| `Supplier` |  | | `_KanbanContainer` | `Supplier` |
-| `_KanbanContainer` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierCompanyByPlant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanContainer` | ✓ | |  | `pkkey` |  |  |
+| `Plant` |  | | `_KanbanContainer._KanbanControlCycle` | `Plant` |  |  |
+| `SystemMessageClass` |  | |  | `msgid` |  |  |
+| `SystemMessageNumber` |  | |  | `msgnr` |  |  |
+| `SystemMessageType` |  | |  | `msgty` |  |  |
+| `SystemMessageVariable1` |  | |  | `cast(msgv1 as vdm_pk_msg_var_1 preserving type)` |  |  |
+| `SystemMessageVariable2` |  | |  | `cast(msgv2 as vdm_pk_msg_var_2 preserving type)` |  |  |
+| `SystemMessageVariable3` |  | |  | `cast(msgv3 as vdm_pk_msg_var_3 preserving type)` |  |  |
+| `SystemMessageVariable4` |  | |  | `cast(msgv4 as vdm_pk_msg_var_4 preserving type)` |  |  |
+| `ErrorOccurrenceDate` |  | |  | `saedt` |  |  |
+| `ErrorOccurrenceTime` |  | |  | `saeuz` |  |  |
+| `PreviousKanbanContainerStatus` |  | |  | `sfgsv` |  |  |
+| `TargetKanbanContainerStatus` |  | |  | `sfgsn` |  |  |
+| `Supplier` |  | | `_KanbanContainer` | `Supplier` |  |  |
+| `_KanbanContainer` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
 
 ## Associations
 

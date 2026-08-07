@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentCondition` | ✓ | |  | `zahlkond` |
-| `PaymentTerms` |  | |  | `cast( zterm as farp_dzterm preserving type)` |
-| `FactoryCalendar` |  | |  | `cast( fcalid as cr_wfcid preserving type)` |
-| `CreditMemoPaymentTerms` |  | |  | `cast( gterm as guzte preserving type)` |
-| `_Text` | | ✓ | | |
-| `_FactoryCal` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentCondition` | ✓ | |  | `zahlkond` |  |  |
+| `PaymentTerms` |  | |  | `cast( zterm as farp_dzterm preserving type)` |  |  |
+| `FactoryCalendar` |  | |  | `cast( fcalid as cr_wfcid preserving type)` |  |  |
+| `CreditMemoPaymentTerms` |  | |  | `cast( gterm as guzte preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_FactoryCal` | | ✓ | | | | |
 
 ## Associations
 

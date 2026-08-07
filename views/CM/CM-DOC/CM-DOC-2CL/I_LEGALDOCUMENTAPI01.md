@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMDocumentUUID` | ✓ | |  |  |
-| `LglCntntMDocument` |  | |  |  |
-| `LglCntntMDocumentIsTopVersion` |  | |  |  |
-| `LegalTransaction` |  | |  |  |
-| `LegalTransactionUUID` |  | |  |  |
-| `LglCntntMDocContentType` |  | |  |  |
-| `LglCntntMDocAccessLvl` |  | |  |  |
-| `InternalDocumentStatus` |  | |  |  |
-| `LglCntntMLanguage` |  | |  |  |
-| `DocumentDescription` |  | |  |  |
-| `LglCntntMIsMandatory` |  | |  |  |
-| `DocumentVersion` |  | |  |  |
-| `LegalDocumentVersion` |  | |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |
-| `_LegalTransaction` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocumentUUID` | ✓ | |  |  |  |  |
+| `LglCntntMDocument` |  | |  |  |  |  |
+| `LglCntntMDocumentIsTopVersion` |  | |  |  |  |  |
+| `LegalTransaction` |  | |  |  |  |  |
+| `LegalTransactionUUID` |  | |  |  |  |  |
+| `LglCntntMDocContentType` |  | |  |  |  |  |
+| `LglCntntMDocAccessLvl` |  | |  |  |  |  |
+| `InternalDocumentStatus` |  | |  |  |  |  |
+| `LglCntntMLanguage` |  | |  |  |  |  |
+| `DocumentDescription` |  | |  |  |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |  |  |
+| `DocumentVersion` |  | |  |  |  |  |
+| `LegalDocumentVersion` |  | |  |  |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
+| `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `project_id` | ✓ | |  |  |
-| `object` | ✓ | |  |  |
-| `obj_name` | ✓ | |  |  |
-| `entry_point_type` | ✓ | |  |  |
-| `entry_point_name` | ✓ | |  |  |
-| `devclass` |  | |  |  |
-| `contact_person` |  | |  |  |
-| `usage_information` |  | |  |  |
-| `scope_information` |  | |  |  |
-| `_project` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `project_id` | ✓ | |  |  |  |  |
+| `object` | ✓ | |  |  |  |  |
+| `obj_name` | ✓ | |  |  |  |  |
+| `entry_point_type` | ✓ | |  |  |  |  |
+| `entry_point_name` | ✓ | |  |  |  |  |
+| `devclass` |  | |  |  |  |  |
+| `contact_person` |  | |  |  |  |  |
+| `usage_information` |  | |  |  |  |  |
+| `scope_information` |  | |  |  |  |  |
+| `_project` | | ✓ | | | | |
 
 ## Associations
 

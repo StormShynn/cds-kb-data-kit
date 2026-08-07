@@ -28,56 +28,56 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SupplierInvoice` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `SupplierInvoiceItem` | ✓ | |  |  |
-| `OrdinalNumber` | ✓ | |  |  |
-| `CostCenter` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `CostObject` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementInternalID_2` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `SupplierInvoiceItemAmount` |  | |  |  |
-| `PurchaseOrderQuantityUnit` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `AccountAssignmentNumber` |  | |  |  |
-| `AccountAssignmentIsUnplanned` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `WorkItem` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `InternalOrder` |  | |  |  |
-| `ProjectNetworkInternalID` |  | |  |  |
-| `NetworkActivityInternalID` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `NetworkActivity` |  | |  |  |
-| `CommitmentItem` |  | |  |  |
-| `FundsCenter` |  | |  |  |
-| `Fund` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `ServiceDocument` |  | |  |  |
-| `ServiceDocumentItem` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `_SupplierInvoiceAPI01` | | ✓ | | |
-| `_SuplrInvcItemPurOrdRefAPI01` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |  |  |
+| `OrdinalNumber` | ✓ | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementInternalID_2` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `AccountAssignmentNumber` |  | |  |  |  |  |
+| `AccountAssignmentIsUnplanned` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `WorkItem` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `InternalOrder` |  | |  |  |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |  |  |
+| `NetworkActivityInternalID` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `NetworkActivity` |  | |  |  |  |  |
+| `CommitmentItem` |  | |  |  |  |  |
+| `FundsCenter` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `ServiceDocument` |  | |  |  |  |  |
+| `ServiceDocumentItem` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | | | |
+| `_SuplrInvcItemPurOrdRefAPI01` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
 
 ## Associations
 

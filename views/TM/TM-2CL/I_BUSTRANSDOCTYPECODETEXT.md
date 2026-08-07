@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessTransactionDocType` | ✓ | |  | `btd_tco129` |
-| `Language` | ✓ | |  | `spras` |
-| `BusinessTransactionDocTypeName` |  | |  | `description` |
-| `_Language` | | ✓ | | |
-| `_BusinessTransactionDocType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransactionDocType` | ✓ | |  | `btd_tco129` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BusinessTransactionDocTypeName` |  | |  | `description` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_BusinessTransactionDocType` | | ✓ | | | | |
 
 ## Associations
 

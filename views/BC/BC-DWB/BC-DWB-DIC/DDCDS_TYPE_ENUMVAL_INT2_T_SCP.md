@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `simpleType` | ✓ | |  | `cast( enum_t.simpleType as abap.char(30) )` |
-| `enumIdentifier` | ✓ | |  | `cast( enum_t.enumIdentifier as abap.char(30) )` |
-| `enumValue` | ✓ | |  | `cast( enum_t.enumValue as abap.int2 )` |
-| `language` | ✓ | |  |  |
-| `enumTextName` | ✓ | |  | `cast( enum_t.enumTextName as abap.char(240) )` |
-| `enumText` |  | |  | `cast( enum_t.enumText as abap.char(255) )` |
-| `_EnumValue` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `simpleType` | ✓ | |  | `cast( enum_t.simpleType as abap.char(30) )` |  |  |
+| `enumIdentifier` | ✓ | |  | `cast( enum_t.enumIdentifier as abap.char(30) )` |  |  |
+| `enumValue` | ✓ | |  | `cast( enum_t.enumValue as abap.int2 )` |  |  |
+| `language` | ✓ | |  |  |  |  |
+| `enumTextName` | ✓ | |  | `cast( enum_t.enumTextName as abap.char(240) )` |  |  |
+| `enumText` |  | |  | `cast( enum_t.enumText as abap.char(255) )` |  |  |
+| `_EnumValue` | | ✓ | | | | |
 
 ## Source Code
 

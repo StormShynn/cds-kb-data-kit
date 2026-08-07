@@ -30,66 +30,66 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `ProductionVersion` | ✓ | |  |  |
-| `ProductionVersionText` |  | |  |  |
-| `ChangeHistoryCount` |  | |  |  |
-| `ChangeNumber` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `BillOfOperationsType` |  | |  |  |
-| `BillOfOperationsGroup` |  | |  |  |
-| `BillOfOperationsVariant` |  | |  |  |
-| `BillOfMaterialVariantUsage` |  | |  |  |
-| `BillOfMaterialVariant` |  | |  |  |
-| `ProductionLine` |  | |  |  |
-| `ProductionSupplyArea` |  | |  |  |
-| `ProductionVersionGroup` |  | |  |  |
-| `MainProduct` |  | |  |  |
-| `MaterialCostApportionmentStruc` |  | |  |  |
-| `IssuingStorageLocation` |  | |  |  |
-| `ReceivingStorageLocation` |  | |  |  |
-| `OriginalBatchReferenceMaterial` |  | |  |  |
-| `QuantityDistributionKey` |  | |  |  |
-| `ProductionVersionStatus` |  | |  |  |
-| `ProductionVersionLastCheckDate` |  | |  |  |
-| `RateBasedPlanningStatus` |  | |  |  |
-| `PreliminaryPlanningStatus` |  | |  |  |
-| `BOMCheckStatus` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `ProductionVersionLock` |  | |  |  |
-| `ProdnVersIsAllowedForRptvMfg` |  | |  |  |
-| `HasVersionCtrldBOMAndRouting` |  | |  |  |
-| `PlanningAndExecutionBOMIsDiff` |  | |  |  |
-| `ExecBillOfMaterialVariantUsage` |  | |  |  |
-| `ExecBillOfMaterialVariant` |  | |  |  |
-| `ExecBillOfOperationsType` |  | |  |  |
-| `ExecBillOfOperationsGroup` |  | |  |  |
-| `ExecBillOfOperationsVariant` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `DestinationStorageBin` |  | |  |  |
-| `ProcurementType` |  | |  |  |
-| `MaterialProcurementProfile` |  | |  |  |
-| `UsgeProbltyWthVersCtrlInPct` |  | |  |  |
-| `MaterialBaseUnit` |  | |  |  |
-| `MaterialMinLotSizeQuantity` |  | |  |  |
-| `MaterialMaxLotSizeQuantity` |  | |  |  |
-| `CostingLotSize` |  | |  |  |
-| `TargetProductionSupplyArea` |  | |  |  |
-| `MRPController` |  | |  |  |
-| `MaterialName` |  | |  |  |
-| `PlantName` |  | |  |  |
-| `MRPResponsible` |  | |  |  |
-| `RoutingCheckStatusText` |  | |  |  |
-| `ProductionVersionLockText` |  | |  |  |
-| `BillOfOperationsTypeName` |  | |  |  |
-| `OvrlProdnVersChkSts` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `ProductionVersion` | ✓ | |  |  |  |  |
+| `ProductionVersionText` |  | |  |  |  |  |
+| `ChangeHistoryCount` |  | |  |  |  |  |
+| `ChangeNumber` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `BillOfOperationsType` |  | |  |  |  |  |
+| `BillOfOperationsGroup` |  | |  |  |  |  |
+| `BillOfOperationsVariant` |  | |  |  |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |  |  |
+| `BillOfMaterialVariant` |  | |  |  |  |  |
+| `ProductionLine` |  | |  |  |  |  |
+| `ProductionSupplyArea` |  | |  |  |  |  |
+| `ProductionVersionGroup` |  | |  |  |  |  |
+| `MainProduct` |  | |  |  |  |  |
+| `MaterialCostApportionmentStruc` |  | |  |  |  |  |
+| `IssuingStorageLocation` |  | |  |  |  |  |
+| `ReceivingStorageLocation` |  | |  |  |  |  |
+| `OriginalBatchReferenceMaterial` |  | |  |  |  |  |
+| `QuantityDistributionKey` |  | |  |  |  |  |
+| `ProductionVersionStatus` |  | |  |  |  |  |
+| `ProductionVersionLastCheckDate` |  | |  |  |  |  |
+| `RateBasedPlanningStatus` |  | |  |  |  |  |
+| `PreliminaryPlanningStatus` |  | |  |  |  |  |
+| `BOMCheckStatus` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `ProductionVersionLock` |  | |  |  |  |  |
+| `ProdnVersIsAllowedForRptvMfg` |  | |  |  |  |  |
+| `HasVersionCtrldBOMAndRouting` |  | |  |  |  |  |
+| `PlanningAndExecutionBOMIsDiff` |  | |  |  |  |  |
+| `ExecBillOfMaterialVariantUsage` |  | |  |  |  |  |
+| `ExecBillOfMaterialVariant` |  | |  |  |  |  |
+| `ExecBillOfOperationsType` |  | |  |  |  |  |
+| `ExecBillOfOperationsGroup` |  | |  |  |  |  |
+| `ExecBillOfOperationsVariant` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `DestinationStorageBin` |  | |  |  |  |  |
+| `ProcurementType` |  | |  |  |  |  |
+| `MaterialProcurementProfile` |  | |  |  |  |  |
+| `UsgeProbltyWthVersCtrlInPct` |  | |  |  |  |  |
+| `MaterialBaseUnit` |  | |  |  |  |  |
+| `MaterialMinLotSizeQuantity` |  | |  |  |  |  |
+| `MaterialMaxLotSizeQuantity` |  | |  |  |  |  |
+| `CostingLotSize` |  | |  |  |  |  |
+| `TargetProductionSupplyArea` |  | |  |  |  |  |
+| `MRPController` |  | |  |  |  |  |
+| `MaterialName` |  | |  |  |  |  |
+| `PlantName` |  | |  |  |  |  |
+| `MRPResponsible` |  | |  |  |  |  |
+| `RoutingCheckStatusText` |  | |  |  |  |  |
+| `ProductionVersionLockText` |  | |  |  |  |  |
+| `BillOfOperationsTypeName` |  | |  |  |  |  |
+| `OvrlProdnVersChkSts` |  | |  |  |  |  |
 
 ## Source Code
 

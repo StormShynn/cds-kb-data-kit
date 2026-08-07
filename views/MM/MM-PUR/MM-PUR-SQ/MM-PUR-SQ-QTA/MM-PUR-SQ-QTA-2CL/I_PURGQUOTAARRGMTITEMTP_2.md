@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QuotaArrangement` | ✓ | |  |  |
-| `QuotaArrangementItem` | ✓ | |  |  |
-| `MaterialProcurementCategory` |  | |  |  |
-| `MaterialProcurementType` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `PurchasingSourceQuota` |  | |  |  |
-| `ProductionVersion` |  | |  |  |
-| `MaterialRoundingProfile` |  | |  |  |
-| `SourceOfSupplyIsAssignedOnce` |  | |  |  |
-| `QuotaReleasePeriodType` |  | |  |  |
-| `NumberOfPeriodsPerRelQuantity` |  | |  |  |
-| `QuotaDeterminationPriority` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `PlannedDeliveryDurationInDays` |  | |  |  |
-| `Plant` |  | |  |  |
-| `QuotaInPercent` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `QuotaBaseQuantity` |  | |  |  |
-| `QuotaAllocatedQuantity` |  | |  |  |
-| `QuotaMaximumQuantity` |  | |  |  |
-| `MaterialMaxLotSizeQuantity` |  | |  |  |
-| `MaterialMinLotSizeQuantity` |  | |  |  |
-| `MaximumReleaseQuantity` |  | |  |  |
-| `MaterialBaseUnit` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |
-| `_Supplier` | | ✓ | | |
-| `_PurgQuotaArrgmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QuotaArrangement` | ✓ | |  |  |  |  |
+| `QuotaArrangementItem` | ✓ | |  |  |  |  |
+| `MaterialProcurementCategory` |  | |  |  |  |  |
+| `MaterialProcurementType` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `PurchasingSourceQuota` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `MaterialRoundingProfile` |  | |  |  |  |  |
+| `SourceOfSupplyIsAssignedOnce` |  | |  |  |  |  |
+| `QuotaReleasePeriodType` |  | |  |  |  |  |
+| `NumberOfPeriodsPerRelQuantity` |  | |  |  |  |  |
+| `QuotaDeterminationPriority` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `QuotaInPercent` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `QuotaBaseQuantity` |  | |  |  |  |  |
+| `QuotaAllocatedQuantity` |  | |  |  |  |  |
+| `QuotaMaximumQuantity` |  | |  |  |  |  |
+| `MaterialMaxLotSizeQuantity` |  | |  |  |  |  |
+| `MaterialMinLotSizeQuantity` |  | |  |  |  |  |
+| `MaximumReleaseQuantity` |  | |  |  |  |  |
+| `MaterialBaseUnit` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
+| `_Supplier` | | ✓ | | | | |
+| `_PurgQuotaArrgmt` | | ✓ | | | | |
 
 ## Source Code
 

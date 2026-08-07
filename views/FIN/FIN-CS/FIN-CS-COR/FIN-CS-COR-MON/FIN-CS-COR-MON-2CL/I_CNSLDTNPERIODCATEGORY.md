@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationPeriodCategory` | ✓ | |  | `cast( pertp as fincs_periodcategory preserving type )` |
-| `CnsldtnPerdCatFormulaValue` |  | |  | `cast( forml as fincs_periodcategory_forml preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationPeriodCategory` | ✓ | |  | `cast( pertp as fincs_periodcategory preserving type )` |  |  |
+| `CnsldtnPerdCatFormulaValue` |  | |  | `cast( forml as fincs_periodcategory_forml preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

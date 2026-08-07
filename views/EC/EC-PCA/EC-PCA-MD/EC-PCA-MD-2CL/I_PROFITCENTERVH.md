@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |
-| `ProfitCenter` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `ProfitCenterStandardHierarchy` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ProfitCtrResponsiblePersonName` |  | |  |  |
-| `Segment` |  | |  |  |
-| `_ControllingAreaText` | | ✓ | | |
-| `_SegmentText` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_Segment` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `ProfitCenter` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `ProfitCenterStandardHierarchy` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ProfitCtrResponsiblePersonName` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_SegmentText` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
 
 ## Associations
 

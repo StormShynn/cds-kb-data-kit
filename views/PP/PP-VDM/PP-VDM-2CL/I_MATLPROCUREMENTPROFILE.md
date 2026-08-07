@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialProcurementProfile` | ✓ | |  | `cast(prfl.sobsl as pph_sobsl preserving type)` |
-| `Plant` | ✓ | |  | `werks` |
-| `MaterialProcurementCategory` |  | |  | `cast(prfl.beskz as pph_beskz preserving type)` |
-| `MaterialProcurementExtType` |  | |  | `cast(prfl.sobes as pph_esobs preserving type)` |
-| `SupplyingOrProductionPlant` |  | |  | `cast(prfl.wrk02 as vdm_wrk02 preserving type)` |
-| `IssuingPlant` |  | |  | `rewrk` |
-| `Language` |  | |  | `$session.system_language` |
-| `MaterialIsDirectlyProduced` |  | |  | `clcor` |
-| `MaterialIsDirectlyProcured` |  | |  | `dirpr` |
-| `IsPhantomItem` |  | |  | `dumps` |
-| `IsWithdrawnFrmAlternativePlant` |  | |  | `rewfg` |
-| `MRPStockTransfSelectionControl` |  | |  | `umldb` |
-| `MatlIsRlvtForMultiLvlSubcontrg` |  | |  | `mlscr` |
-| `_Plant` | | ✓ | | |
-| `_SupplyingOrProductionPlant` | | ✓ | | |
-| `_IssuingPlant` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_MaterialProcurementCategory` | | ✓ | | |
-| `_MaterialProcurementExtType` | | ✓ | | |
-| `_MaterialProcurementExtType_2` | | ✓ | | |
-| `_MaterialProcurementExtType_3` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialProcurementProfile` | ✓ | |  | `cast(prfl.sobsl as pph_sobsl preserving type)` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `MaterialProcurementCategory` |  | |  | `cast(prfl.beskz as pph_beskz preserving type)` |  |  |
+| `MaterialProcurementExtType` |  | |  | `cast(prfl.sobes as pph_esobs preserving type)` |  |  |
+| `SupplyingOrProductionPlant` |  | |  | `cast(prfl.wrk02 as vdm_wrk02 preserving type)` |  |  |
+| `IssuingPlant` |  | |  | `rewrk` |  |  |
+| `Language` |  | |  | `$session.system_language` |  |  |
+| `MaterialIsDirectlyProduced` |  | |  | `clcor` |  |  |
+| `MaterialIsDirectlyProcured` |  | |  | `dirpr` |  |  |
+| `IsPhantomItem` |  | |  | `dumps` |  |  |
+| `IsWithdrawnFrmAlternativePlant` |  | |  | `rewfg` |  |  |
+| `MRPStockTransfSelectionControl` |  | |  | `umldb` |  |  |
+| `MatlIsRlvtForMultiLvlSubcontrg` |  | |  | `mlscr` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_SupplyingOrProductionPlant` | | ✓ | | | | |
+| `_IssuingPlant` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_MaterialProcurementCategory` | | ✓ | | | | |
+| `_MaterialProcurementExtType` | | ✓ | | | | |
+| `_MaterialProcurementExtType_2` | | ✓ | | | | |
+| `_MaterialProcurementExtType_3` | | ✓ | | | | |
 
 ## Associations
 

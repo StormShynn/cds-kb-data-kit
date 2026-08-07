@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentRelationUUID` | ✓ | |  | `relationid` |
-| `ServiceDocRltnSequenceNumber` | ✓ | |  | `posno` |
-| `ServiceDocumentRelationType` |  | |  | `breltyp` |
-| `ServiceDocumentRelationKind` |  | |  | `vona_kind` |
-| `ServiceDocumentPredecessorUUID` |  | |  | `objguid_a_sel` |
-| `ServiceDocPrdcssrBusObjType` |  | |  | `objtype_a_sel` |
-| `CustMgmtPrdcssrTransactionKey` |  | |  | `objkey_a_sel` |
-| `ServiceDocumentUUID` |  | |  | `objguid_b_sel` |
-| `ServiceObjectType` |  | |  | `objtype_b_sel` |
-| `_ServiceDoc` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentRelationUUID` | ✓ | |  | `relationid` |  |  |
+| `ServiceDocRltnSequenceNumber` | ✓ | |  | `posno` |  |  |
+| `ServiceDocumentRelationType` |  | |  | `breltyp` |  |  |
+| `ServiceDocumentRelationKind` |  | |  | `vona_kind` |  |  |
+| `ServiceDocumentPredecessorUUID` |  | |  | `objguid_a_sel` |  |  |
+| `ServiceDocPrdcssrBusObjType` |  | |  | `objtype_a_sel` |  |  |
+| `CustMgmtPrdcssrTransactionKey` |  | |  | `objkey_a_sel` |  |  |
+| `ServiceDocumentUUID` |  | |  | `objguid_b_sel` |  |  |
+| `ServiceObjectType` |  | |  | `objtype_b_sel` |  |  |
+| `_ServiceDoc` | | ✓ | | | | |
 
 ## Associations
 

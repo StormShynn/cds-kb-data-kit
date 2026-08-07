@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WarrantyObjectType` | ✓ | |  | `relty` |
-| `Language` | ✓ | |  | `spras` |
-| `WrntyObjectTypeText` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarrantyObjectType` | ✓ | |  | `relty` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `WrntyObjectTypeText` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

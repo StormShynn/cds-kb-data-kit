@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPartnerSettlementRule` | ✓ | |  | `ptsrl` |
-| `CAInvcgPreliminaryCategory` |  | |  | `prlinv_cat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPartnerSettlementRule` | ✓ | |  | `ptsrl` |  |  |
+| `CAInvcgPreliminaryCategory` |  | |  | `prlinv_cat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

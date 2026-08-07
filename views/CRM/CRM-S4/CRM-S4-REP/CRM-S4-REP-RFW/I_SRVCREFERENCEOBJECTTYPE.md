@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceReferenceObjectType` | ✓ | |  | `cast(domvalue_l as abap.char(1))` |
-| `_SrvcReferenceObjectTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceReferenceObjectType` | ✓ | |  | `cast(domvalue_l as abap.char(1))` |  |  |
+| `_SrvcReferenceObjectTypeText` | | ✓ | | | | |
 
 ## Associations
 

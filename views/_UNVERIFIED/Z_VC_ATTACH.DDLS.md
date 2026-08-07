@@ -32,20 +32,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TravelId` | ✓ | |  | `travel_id` |
-| `Id` | ✓ | |  | `id` |
-| `Memo` |  | |  | `memo` |
-| `Attachment` |  | |  | `attachment` |
-| `Filename` |  | |  | `filename` |
-| `Filetype` |  | |  | `filetype` |
-| `LocalCreatedBy` |  | |  | `local_created_by` |
-| `LocalCreatedAt` |  | |  | `local_created_at` |
-| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |
-| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
-| `LastChangedAt` |  | |  | `last_changed_at` |
-| `_Travel` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TravelId` | ✓ | |  | `travel_id` |  |  |
+| `Id` | ✓ | |  | `id` |  |  |
+| `Memo` |  | |  | `memo` |  |  |
+| `Attachment` |  | |  | `{ mimeType:'Filetype', fileName:'Filename', contentDispositionPreference:#INLINE } @EndUserText.label: 'Attachment' attachment` |  |  |
+| `Filename` |  | |  | `filename` |  |  |
+| `Filetype` |  | |  | `filetype` |  |  |
+| `LocalCreatedBy` |  | |  | `local_created_by` |  |  |
+| `LocalCreatedAt` |  | |  | `local_created_at` |  |  |
+| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |  |  |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |  |  |
+| `LastChangedAt` |  | |  | `last_changed_at` |  |  |
+| `_Travel` | | ✓ | | | | |
 
 ## Source Code
 

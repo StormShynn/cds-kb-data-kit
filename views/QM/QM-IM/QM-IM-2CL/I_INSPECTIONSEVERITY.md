@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionSeverity` | ✓ | |  | `prschaerfe` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionSeverity` | ✓ | |  | `prschaerfe` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

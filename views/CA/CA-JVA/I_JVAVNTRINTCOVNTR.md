@@ -27,24 +27,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` |
-| `JointVentureEquityGroup` | ✓ | |  | `egrup` |
-| `JntVntrIntcoCode` | ✓ | |  | `intcocd` |
-| `JointVentureIntcoVenture` |  | |  | `intcomvent` |
-| `JointVentureIntcoEquityGrp` |  | |  | `intcompegp` |
-| `_CompanyCode` | | ✓ | | |
-| `_JointVentureMasterFld` | | ✓ | | |
-| `_JointVentureDesc` | | ✓ | | |
-| `_JntVntrEquityGrp` | | ✓ | | |
-| `_JntVntrEquityGrpText` | | ✓ | | |
-| `_IntCoCompanyCode` | | ✓ | | |
-| `_IntCoJointVentureMaster` | | ✓ | | |
-| `_IntCoJointVentureDesc` | | ✓ | | |
-| `_IntCoJntVntrEquityGrp` | | ✓ | | |
-| `_IntCoJntVntrEquityGrpText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` |  |  |
+| `JointVentureEquityGroup` | ✓ | |  | `egrup` |  |  |
+| `JntVntrIntcoCode` | ✓ | |  | `intcocd` |  |  |
+| `JointVentureIntcoVenture` |  | |  | `intcomvent` |  |  |
+| `JointVentureIntcoEquityGrp` |  | |  | `intcompegp` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JointVentureMasterFld` | | ✓ | | | | |
+| `_JointVentureDesc` | | ✓ | | | | |
+| `_JntVntrEquityGrp` | | ✓ | | | | |
+| `_JntVntrEquityGrpText` | | ✓ | | | | |
+| `_IntCoCompanyCode` | | ✓ | | | | |
+| `_IntCoJointVentureMaster` | | ✓ | | | | |
+| `_IntCoJointVentureDesc` | | ✓ | | | | |
+| `_IntCoJntVntrEquityGrp` | | ✓ | | | | |
+| `_IntCoJntVntrEquityGrpText` | | ✓ | | | | |
 
 ## Associations
 

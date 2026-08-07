@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `PaymentBlockingReason` | ✓ | |  | `cast (zahls as farp_dzlspr)` |
-| `PaymentBlockingReasonName` |  | |  | `cast (textl as farp_payment_block_reason_name )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PaymentBlockingReason` | ✓ | |  | `cast (zahls as farp_dzlspr)` |  |  |
+| `PaymentBlockingReasonName` |  | |  | `cast (textl as farp_payment_block_reason_name )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

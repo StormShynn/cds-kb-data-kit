@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerAccountAssignmentGroup` | ✓ | |  | `ktgrd` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerAccountAssignmentGroup` | ✓ | |  | `ktgrd` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

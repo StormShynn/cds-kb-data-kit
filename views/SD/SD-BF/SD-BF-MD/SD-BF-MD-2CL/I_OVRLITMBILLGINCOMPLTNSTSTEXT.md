@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OvrlItmBillingIncompletionSts` | ✓ | |  | `statu` |
-| `Language` | ✓ | |  | `spras` |
-| `OvrlItmBillgIncompltnStsDesc` |  | |  | `cast(bezei as ovrlitmbillgincompltnstsdesc preserving type)` |
-| `_OvrlItmBillingIncompletionSts` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OvrlItmBillingIncompletionSts` | ✓ | |  | `statu` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `OvrlItmBillgIncompltnStsDesc` |  | |  | `cast(bezei as ovrlitmbillgincompltnstsdesc preserving type)` |  |  |
+| `_OvrlItmBillingIncompletionSts` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

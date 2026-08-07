@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChrgCalcBaseUUID` | ✓ | |  |  |
-| `TranspChargeItemElementUUID` |  | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `TranspChrgCalculationBase` |  | |  |  |
-| `TranspScaleItemQuantityUnit` |  | |  |  |
-| `TranspScaleItemQuantity` |  | |  |  |
-| `TranspScaleItemCurrency` |  | |  |  |
-| `TranspScaleItemAmount` |  | |  |  |
-| `TranspScaleItemValueChar` |  | |  |  |
-| `TranspDataSourceQtyUnit` |  | |  |  |
-| `TranspDataSourceQuantity` |  | |  |  |
-| `TranspDataSourceCurrency` |  | |  |  |
-| `TranspDataSourceAmount` |  | |  |  |
-| `TranspDataSourceValueChar` |  | |  |  |
-| `I_FrtBkgChrgElementTP` |  | |  | `_TranspOrdChrgElmnt as _FreightBookingChrgElmnt : redirected to parent I_FrtBkgChrgElementTP` |
-| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChrgCalcBaseUUID` | ✓ | |  |  |  |  |
+| `TranspChargeItemElementUUID` |  | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `TranspChrgCalculationBase` |  | |  |  |  |  |
+| `TranspScaleItemQuantityUnit` |  | |  |  |  |  |
+| `TranspScaleItemQuantity` |  | |  |  |  |  |
+| `TranspScaleItemCurrency` |  | |  |  |  |  |
+| `TranspScaleItemAmount` |  | |  |  |  |  |
+| `TranspScaleItemValueChar` |  | |  |  |  |  |
+| `TranspDataSourceQtyUnit` |  | |  |  |  |  |
+| `TranspDataSourceQuantity` |  | |  |  |  |  |
+| `TranspDataSourceCurrency` |  | |  |  |  |  |
+| `TranspDataSourceAmount` |  | |  |  |  |  |
+| `TranspDataSourceValueChar` |  | |  |  |  |  |
+| `I_FrtBkgChrgElementTP` |  | |  | `_TranspOrdChrgElmnt as _FreightBookingChrgElmnt : redirected to parent I_FrtBkgChrgElementTP` |  |  |
+| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |  |  |
 
 ## Source Code
 

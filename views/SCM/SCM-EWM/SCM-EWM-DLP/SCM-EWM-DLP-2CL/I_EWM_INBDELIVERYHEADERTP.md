@@ -31,29 +31,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMInboundDelivery` | ✓ | |  |  |
-| `InboundDeliveryUUID` |  | |  |  |
-| `SAPObjectNodeType` |  | |  |  |
-| `EWMInboundDeliveryUUIDHex` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `EWMDeliveryDocumentCategory` |  | |  |  |
-| `EWMDeliveryDocumentType` |  | |  |  |
-| `ShipFromParty` |  | |  |  |
-| `ShipFromPartyName` |  | |  |  |
-| `EWMShipFromIsBusPurposeCmpltd` |  | |  |  |
-| `Carrier` |  | |  |  |
-| `CarrierName` |  | |  |  |
-| `EWMCarrierIsBusPurposeCmpltd` |  | |  |  |
-| `AdvancedShippingNotification` |  | |  |  |
-| `InboundDelivery` |  | |  |  |
-| `PlannedDeliveryUTCDateTime` |  | |  | `cast(PlannedDeliveryUTCDateTime as ewm_de_plan_dlv_date preserving type)` |
-| `ReceivingOffice` |  | |  |  |
-| `EWMDelivLastChangeUTCDateTime` |  | |  |  |
-| `WarehouseTimeZone` |  | |  |  |
-| `_WhseInbDeliveryItem` | | ✓ | | |
-| `_HDMRelation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMInboundDelivery` | ✓ | |  |  |  |  |
+| `InboundDeliveryUUID` |  | |  |  |  |  |
+| `SAPObjectNodeType` |  | |  |  |  |  |
+| `EWMInboundDeliveryUUIDHex` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  |  |  |  |
+| `EWMDeliveryDocumentType` |  | |  |  |  |  |
+| `ShipFromParty` |  | |  |  |  |  |
+| `ShipFromPartyName` |  | |  |  |  |  |
+| `EWMShipFromIsBusPurposeCmpltd` |  | |  |  |  |  |
+| `Carrier` |  | |  |  |  |  |
+| `CarrierName` |  | |  |  |  |  |
+| `EWMCarrierIsBusPurposeCmpltd` |  | |  |  |  |  |
+| `AdvancedShippingNotification` |  | |  |  |  |  |
+| `InboundDelivery` |  | |  |  |  |  |
+| `PlannedDeliveryUTCDateTime` |  | |  | `cast(PlannedDeliveryUTCDateTime as ewm_de_plan_dlv_date preserving type)` |  |  |
+| `ReceivingOffice` |  | |  |  |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  |  |  |  |
+| `WarehouseTimeZone` |  | |  |  |  |  |
+| `_WhseInbDeliveryItem` | | ✓ | | | | |
+| `_HDMRelation` | | ✓ | | | | |
 
 ## Source Code
 

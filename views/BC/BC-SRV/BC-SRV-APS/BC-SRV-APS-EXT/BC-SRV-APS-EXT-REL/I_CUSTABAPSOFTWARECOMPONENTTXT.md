@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ABAPSoftwareComponent` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ABAPSoftwareComponentName` |  | |  |  |
-| `_ABAPSoftwareComponent` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ABAPSoftwareComponent` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ABAPSoftwareComponentName` |  | |  |  |  |  |
+| `_ABAPSoftwareComponent` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Source Code
 

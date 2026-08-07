@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspLotDynamicRule` | ✓ | |  | `cast( dynregel as vdm_qdynregel preserving type )` |
-| `InspLotDynRuleInitStage` |  | |  | `prstufeanf` |
-| `_InspLotDynRuleStage` | | ✓ | | |
-| `_InspLotDynRuleInitStage` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspLotDynamicRule` | ✓ | |  | `cast( dynregel as vdm_qdynregel preserving type )` |  |  |
+| `InspLotDynRuleInitStage` |  | |  | `prstufeanf` |  |  |
+| `_InspLotDynRuleStage` | | ✓ | | | | |
+| `_InspLotDynRuleInitStage` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

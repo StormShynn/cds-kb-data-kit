@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMOutboundDeliveryOrder` | ✓ | | `_WhseOutbDeliveryOrderItem` | `EWMOutboundDeliveryOrder` |
-| `EWMOutboundDeliveryOrderItem` | ✓ | | `_WhseOutbDeliveryOrderItem` | `EWMOutboundDeliveryOrderItem` |
-| `EWMSerialNumber` | ✓ | |  | `cast( _SerialNumber.EWMSerialNumber as ewm_de_serialnumber )` |
-| `EWMWarehouse` |  | | `_WhseOutbDeliveryOrderItem` | `EWMWarehouse` |
-| `EWMDeliveryDocumentCategory` |  | | `_WhseOutbDeliveryOrderItem` | `EWMDeliveryDocumentCategory` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMOutboundDeliveryOrder` | ✓ | | `_WhseOutbDeliveryOrderItem` | `EWMOutboundDeliveryOrder` |  |  |
+| `EWMOutboundDeliveryOrderItem` | ✓ | | `_WhseOutbDeliveryOrderItem` | `EWMOutboundDeliveryOrderItem` |  |  |
+| `EWMSerialNumber` | ✓ | |  | `cast( _SerialNumber.EWMSerialNumber as ewm_de_serialnumber )` |  |  |
+| `EWMWarehouse` |  | | `_WhseOutbDeliveryOrderItem` | `EWMWarehouse` |  |  |
+| `EWMDeliveryDocumentCategory` |  | | `_WhseOutbDeliveryOrderItem` | `EWMDeliveryDocumentCategory` |  |  |
 
 ## Source Code
 

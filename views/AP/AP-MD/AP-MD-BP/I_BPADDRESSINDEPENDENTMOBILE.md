@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |
-| `AddressID` | ✓ | |  |  |
-| `Person` | ✓ | |  | `AddressPersonID` |
-| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |
-| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` |
-| `AddressIDForEdit` |  | |  | `AddressID` |
-| `MobilePhoneCountry` |  | |  | `PhoneNumberCountry` |
-| `CommNumberIsNotUsed` |  | |  | `cast ( '' as ad_flnouse )` |
-| `MobilePhoneNumber` |  | |  | `PhoneAreaCodeSubscriberNumber` |
-| `PhoneNumberExtension` |  | |  | `PhoneExtensionNumber` |
-| `CompleteTelephoneNumber` |  | |  | `InternationalPhoneNumber` |
-| `IsDefaultPhoneNumber` |  | |  | `case when PhoneNumberType = '3' then cast('X' as boole_d) else cast(' ' as boole_d) end` |
-| `PhoneIsSMSEnabled` |  | |  | `cast ('' as ad_flgsms)` |
-| `PhoneNumberType` |  | |  |  |
-| `ValidityStartDateTime` |  | |  | `cast ( BPAddressIndependentMobile.ValidityStartDate as ad_valfrom )` |
-| `ValidityEndDateTime` |  | |  | `cast ( BPAddressIndependentMobile.ValidityEndDate as ad_valto )` |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |  |  |
+| `AddressID` | ✓ | |  |  |  |  |
+| `Person` | ✓ | |  | `AddressPersonID` |  |  |
+| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |  |  |
+| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` |  |  |
+| `AddressIDForEdit` |  | |  | `AddressID` |  |  |
+| `MobilePhoneCountry` |  | |  | `PhoneNumberCountry` |  |  |
+| `CommNumberIsNotUsed` |  | |  | `cast ( '' as ad_flnouse )` |  |  |
+| `MobilePhoneNumber` |  | |  | `PhoneAreaCodeSubscriberNumber` |  |  |
+| `PhoneNumberExtension` |  | |  | `PhoneExtensionNumber` |  |  |
+| `CompleteTelephoneNumber` |  | |  | `InternationalPhoneNumber` |  |  |
+| `IsDefaultPhoneNumber` |  | |  | `case when PhoneNumberType = '3' then cast('X' as boole_d) else cast(' ' as boole_d) end` |  |  |
+| `PhoneIsSMSEnabled` |  | |  | `cast ('' as ad_flgsms)` |  |  |
+| `PhoneNumberType` |  | |  |  |  |  |
+| `ValidityStartDateTime` |  | |  | `cast ( BPAddressIndependentMobile.ValidityStartDate as ad_valfrom )` |  |  |
+| `ValidityEndDateTime` |  | |  | `cast ( BPAddressIndependentMobile.ValidityEndDate as ad_valto )` |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations
 

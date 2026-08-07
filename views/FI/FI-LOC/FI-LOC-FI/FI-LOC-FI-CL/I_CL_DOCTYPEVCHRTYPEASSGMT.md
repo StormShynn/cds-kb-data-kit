@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `AccountingDocumentType` | ✓ | |  | `blart` |
-| `CL_ReportingDocumentType` |  | |  | `vtyp` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `AccountingDocumentType` | ✓ | |  | `blart` |  |  |
+| `CL_ReportingDocumentType` |  | |  | `vtyp` |  |  |
 
 ## Source Code
 

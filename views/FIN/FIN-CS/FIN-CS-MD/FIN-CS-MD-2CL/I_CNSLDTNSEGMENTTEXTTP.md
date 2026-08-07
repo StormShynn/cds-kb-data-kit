@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Text` | `Language` |
-| `Segment` | ✓ | | `_Text` | `Segment` |
-| `SegmentName` |  | | `_Text` | `SegmentName` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnSegmentTP` |  | |  | `_Segment as _Segment : redirected to parent I_CnsldtnSegmentTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |  |  |
+| `Segment` | ✓ | | `_Text` | `Segment` |  |  |
+| `SegmentName` |  | | `_Text` | `SegmentName` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnSegmentTP` |  | |  | `_Segment as _Segment : redirected to parent I_CnsldtnSegmentTP` |  |  |
 
 ## Source Code
 

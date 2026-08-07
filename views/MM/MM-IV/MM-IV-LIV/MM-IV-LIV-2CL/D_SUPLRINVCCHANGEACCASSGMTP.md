@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrdinalNumber` |  | |  | `cobl_nr` |
-| `TaxCode` |  | |  | `mwskz` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `DocumentCurrency` |  | |  | `waers` |
-| `wrbtr_cs` |  | |  | `} SuplrInvcAcctAssignmentAmount : wrbtr_cs` |
-| `PurchaseOrderQuantityUnit` |  | |  | `bstme` |
-| `QuantityInPurchaseOrderUnit` |  | |  | `menge_d` |
-| `PurchaseOrderPriceUnit` |  | |  | `bprme` |
-| `QtyInPurchaseOrderPriceUnit` |  | |  | `bpmng` |
-| `GLAccount` |  | |  | `saknr` |
-| `CostCenter` |  | |  | `kostl` |
-| `SalesOrder` |  | |  | `vbeln` |
-| `SalesOrderItem` |  | |  | `vbelp` |
-| `MasterFixedAsset` |  | |  | `anln1` |
-| `FixedAsset` |  | |  | `anln2` |
-| `InternalOrder` |  | |  | `aufnr` |
-| `CommitmentItemShortID` |  | |  | `fmis_ci_internalname` |
-| `FundsCenter` |  | |  | `fistl` |
-| `FunctionalArea` |  | |  | `fkber` |
-| `Fund` |  | |  | `bp_geber` |
-| `BusinessArea` |  | |  | `gsber` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `CostObject` |  | |  | `kstrg` |
-| `WBSElementInternalID` |  | |  | `ps_s4_pspnr` |
-| `GrantID` |  | |  | `gm_grant_nbr` |
-| `SupplierInvoiceItemText` |  | |  | `sgtxt` |
-| `TaxCountry` |  | |  | `fot_tax_country` |
-| `BudgetPeriod` |  | |  | `fm_budget_period` |
-| `_SupplierInvoiceItemPurOrdRef` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrdinalNumber` |  | |  | `cobl_nr` |  |  |
+| `TaxCode` |  | |  | `mwskz` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `DocumentCurrency` |  | |  | `waers` |  |  |
+| `SuplrInvcAcctAssignmentAmount` |  | |  | `wrbtr_cs` |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  | `bstme` |  |  |
+| `QuantityInPurchaseOrderUnit` |  | |  | `menge_d` |  |  |
+| `PurchaseOrderPriceUnit` |  | |  | `bprme` |  |  |
+| `QtyInPurchaseOrderPriceUnit` |  | |  | `bpmng` |  |  |
+| `GLAccount` |  | |  | `saknr` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `SalesOrder` |  | |  | `vbeln` |  |  |
+| `SalesOrderItem` |  | |  | `vbelp` |  |  |
+| `MasterFixedAsset` |  | |  | `anln1` |  |  |
+| `FixedAsset` |  | |  | `anln2` |  |  |
+| `InternalOrder` |  | |  | `aufnr` |  |  |
+| `CommitmentItemShortID` |  | |  | `fmis_ci_internalname` |  |  |
+| `FundsCenter` |  | |  | `fistl` |  |  |
+| `FunctionalArea` |  | |  | `fkber` |  |  |
+| `Fund` |  | |  | `bp_geber` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `CostObject` |  | |  | `kstrg` |  |  |
+| `WBSElementInternalID` |  | |  | `ps_s4_pspnr` |  |  |
+| `GrantID` |  | |  | `gm_grant_nbr` |  |  |
+| `SupplierInvoiceItemText` |  | |  | `sgtxt` |  |  |
+| `TaxCountry` |  | |  | `fot_tax_country` |  |  |
+| `BudgetPeriod` |  | |  | `fm_budget_period` |  |  |
+| `_SupplierInvoiceItemPurOrdRef` | | ✓ | | | | |
 
 ## Source Code
 

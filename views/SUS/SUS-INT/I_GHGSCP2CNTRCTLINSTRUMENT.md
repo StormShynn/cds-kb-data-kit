@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GHGScope2ContractualInstrument` | ✓ | |  | `code` |
-| `_Text` | | ✓ | | |
-| `_GHGScope` | | ✓ | | |
-| `_GHGScp2CalcMethod` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GHGScope2ContractualInstrument` | ✓ | |  | `code` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_GHGScope` | | ✓ | | | | |
+| `_GHGScp2CalcMethod` | | ✓ | | | | |
 
 ## Associations
 

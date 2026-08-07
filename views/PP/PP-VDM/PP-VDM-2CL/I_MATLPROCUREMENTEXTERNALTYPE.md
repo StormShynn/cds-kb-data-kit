@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialProcurementExtType` | ✓ | |  | `cast(typ.esobs as pph_esobs preserving type)` |
-| `Language` | ✓ | |  | `cast(typ.spras as spras preserving type)` |
-| `MaterialProcurementType` |  | |  | `cast(typ.sobes as pph_sobes preserving type)` |
-| `MaterialProcurementExtTypeName` |  | |  | `sotxt` |
-| `_Language` | | ✓ | | |
-| `_MaterialProcurementType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialProcurementExtType` | ✓ | |  | `cast(typ.esobs as pph_esobs preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(typ.spras as spras preserving type)` |  |  |
+| `MaterialProcurementType` |  | |  | `cast(typ.sobes as pph_sobes preserving type)` |  |  |
+| `MaterialProcurementExtTypeName` |  | |  | `sotxt` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_MaterialProcurementType` | | ✓ | | | | |
 
 ## Associations
 

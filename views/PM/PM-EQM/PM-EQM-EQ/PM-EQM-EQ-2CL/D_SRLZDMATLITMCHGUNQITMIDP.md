@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `UniqueItemIdentifier` |  | |  | `vdm_uii_char72` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `UniqueItemIdentifier` |  | |  | `vdm_uii_char72` |  |  |
 
 ## Source Code
 

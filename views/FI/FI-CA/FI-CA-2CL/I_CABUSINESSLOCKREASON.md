@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusinessProcess` | ✓ | |  |  |
-| `CABusinessLockReason` | ✓ | |  | `CADunningLockReason` |
-| `CAAuthorizationGroup` |  | |  |  |
-| `_BusProcess` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusinessProcess` | ✓ | |  |  |  |  |
+| `CABusinessLockReason` | ✓ | |  | `CADunningLockReason` |  |  |
+| `CAAuthorizationGroup` |  | |  |  |  |  |
+| `_BusProcess` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

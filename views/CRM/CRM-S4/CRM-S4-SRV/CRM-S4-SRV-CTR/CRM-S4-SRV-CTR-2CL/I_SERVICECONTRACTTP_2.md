@@ -29,94 +29,94 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `ServiceObjectType` |  | |  |  |
-| `ServiceContractType` |  | |  |  |
-| `ServiceContractUUID` |  | |  |  |
-| `ServiceContractDescription` |  | |  |  |
-| `Language` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |
-| `SoldToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `PayerParty` |  | |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `Division` |  | |  |  |
-| `SalesOffice` |  | |  |  |
-| `SalesGroup` |  | |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |
-| `ServiceOrganization` |  | |  |  |
-| `ServiceContractIsNew` |  | |  |  |
-| `ServiceContractIsInProcess` |  | |  |  |
-| `ServiceContractIsReleased` |  | |  |  |
-| `ServiceContractIsCompleted` |  | |  |  |
-| `ServiceContractStatus` |  | |  |  |
-| `SrvcContrBillingStatus` |  | |  |  |
-| `SrvcDocRejectionStatus` |  | |  |  |
-| `ServiceContractHasError` |  | |  |  |
-| `SrvcDocTransferStatus` |  | |  |  |
-| `ServiceContractStartDateTime` |  | |  |  |
-| `ServiceContractEndDateTime` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
-| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
-| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
-| `PricingDocument` |  | |  |  |
-| `ServiceContractCanclnParty` |  | |  |  |
-| `ServiceContrCancellationReason` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `PaymentMethod` |  | |  |  |
-| `SrvcContrExternalReference` |  | |  |  |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceObjType` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_SoldToParty` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_PayerParty` | | ✓ | | |
-| `_ContactPerson` | | ✓ | | |
-| `_RespEmployee` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
-| `_SalesGroupOrgUnit_2` | | ✓ | | |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesOfficeOrgUnit_2` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
-| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
-| `_ExtRefServiceContract` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_SrvcContrStatus` | | ✓ | | |
-| `_PaymentTerms` | | ✓ | | |
-| `_PaymentMethod` | | ✓ | | |
-| `_ServiceDocumentTypeText` | | ✓ | | |
-| `_SrvcDocLifecycleStatusText` | | ✓ | | |
-| `_SalesOrganizationText` | | ✓ | | |
-| `_DistributionChannelText` | | ✓ | | |
-| `_DivisionText` | | ✓ | | |
-| `_SalesOfficeText` | | ✓ | | |
-| `_SalesGroupText` | | ✓ | | |
-| `_PaymentTermsText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_ServiceDocBillingStatusText` | | ✓ | | |
-| `_SrvcDocRejectionStatusText` | | ✓ | | |
-| `_ServiceDocTransferStatusText` | | ✓ | | |
-| `_ServiceCancellationPartyText` | | ✓ | | |
-| `_ServiceCanclnReasonText` | | ✓ | | |
-| `_ServiceContractItemTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceContractType` |  | |  |  |  |  |
+| `ServiceContractUUID` |  | |  |  |  |  |
+| `ServiceContractDescription` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
+| `SoldToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `PayerParty` |  | |  |  |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `SalesOffice` |  | |  |  |  |  |
+| `SalesGroup` |  | |  |  |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |  |  |
+| `ServiceOrganization` |  | |  |  |  |  |
+| `ServiceContractIsNew` |  | |  |  |  |  |
+| `ServiceContractIsInProcess` |  | |  |  |  |  |
+| `ServiceContractIsReleased` |  | |  |  |  |  |
+| `ServiceContractIsCompleted` |  | |  |  |  |  |
+| `ServiceContractStatus` |  | |  |  |  |  |
+| `SrvcContrBillingStatus` |  | |  |  |  |  |
+| `SrvcDocRejectionStatus` |  | |  |  |  |  |
+| `ServiceContractHasError` |  | |  |  |  |  |
+| `SrvcDocTransferStatus` |  | |  |  |  |  |
+| `ServiceContractStartDateTime` |  | |  |  |  |  |
+| `ServiceContractEndDateTime` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |  |  |
+| `ServiceDocNetAmount` |  | |  |  |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |  |  |
+| `PricingDocument` |  | |  |  |  |  |
+| `ServiceContractCanclnParty` |  | |  |  |  |  |
+| `ServiceContrCancellationReason` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `PaymentMethod` |  | |  |  |  |  |
+| `SrvcContrExternalReference` |  | |  |  |  |  |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceObjType` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_SoldToParty` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_PayerParty` | | ✓ | | | | |
+| `_ContactPerson` | | ✓ | | | | |
+| `_RespEmployee` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | | | |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | | | |
+| `_ExtRefServiceContract` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_SrvcContrStatus` | | ✓ | | | | |
+| `_PaymentTerms` | | ✓ | | | | |
+| `_PaymentMethod` | | ✓ | | | | |
+| `_ServiceDocumentTypeText` | | ✓ | | | | |
+| `_SrvcDocLifecycleStatusText` | | ✓ | | | | |
+| `_SalesOrganizationText` | | ✓ | | | | |
+| `_DistributionChannelText` | | ✓ | | | | |
+| `_DivisionText` | | ✓ | | | | |
+| `_SalesOfficeText` | | ✓ | | | | |
+| `_SalesGroupText` | | ✓ | | | | |
+| `_PaymentTermsText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_ServiceDocBillingStatusText` | | ✓ | | | | |
+| `_SrvcDocRejectionStatusText` | | ✓ | | | | |
+| `_ServiceDocTransferStatusText` | | ✓ | | | | |
+| `_ServiceCancellationPartyText` | | ✓ | | | | |
+| `_ServiceCanclnReasonText` | | ✓ | | | | |
+| `_ServiceContractItemTP` | | ✓ | | | | |
 
 ## Source Code
 

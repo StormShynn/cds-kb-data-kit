@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspOrdGoodsMovementStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_dlv_goods_mvt_sts preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdGoodsMovementStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_dlv_goods_mvt_sts preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

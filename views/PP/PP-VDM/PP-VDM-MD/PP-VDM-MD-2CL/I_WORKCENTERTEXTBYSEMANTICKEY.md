@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkCenter` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `WorkCenterTypeCode` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `WorkCenterCategoryCode` |  | |  |  |
-| `WorkCenterText` |  | |  |  |
-| `_Plant` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_WorkCenterCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenter` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `WorkCenterTypeCode` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |  |  |
+| `WorkCenterText` |  | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_WorkCenterCategory` | | ✓ | | | | |
 
 ## Associations
 

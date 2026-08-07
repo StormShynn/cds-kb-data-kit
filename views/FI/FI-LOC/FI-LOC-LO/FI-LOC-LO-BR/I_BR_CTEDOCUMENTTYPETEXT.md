@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `BR_CTeDocumentType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_type_cte preserving type )` |
-| `BR_CTeDocumentTypeDesc` |  | |  | `ddtext` |
-| `_BR_CTeDocumentType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `BR_CTeDocumentType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_type_cte preserving type )` |  |  |
+| `BR_CTeDocumentTypeDesc` |  | |  | `ddtext` |  |  |
+| `_BR_CTeDocumentType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

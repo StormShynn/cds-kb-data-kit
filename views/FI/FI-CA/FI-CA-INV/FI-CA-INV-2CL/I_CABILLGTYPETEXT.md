@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgType` | ✓ | | `_tfk8112t` | `bill_type` |
-| `Language` | ✓ | | `_tfk8112t` | `langu` |
-| `CABillgTypeText` |  | | `_tfk8112t` | `text` |
-| `_CABillgType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgType` | ✓ | | `_tfk8112t` | `bill_type` |  |  |
+| `Language` | ✓ | | `_tfk8112t` | `langu` |  |  |
+| `CABillgTypeText` |  | | `_tfk8112t` | `text` |  |  |
+| `_CABillgType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

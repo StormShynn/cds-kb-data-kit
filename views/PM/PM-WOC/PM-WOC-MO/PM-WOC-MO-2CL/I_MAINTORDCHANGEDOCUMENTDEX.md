@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeDocObject` | ✓ | |  |  |
-| `ChangeDocObjectClass` | ✓ | |  |  |
-| `ChangeDocument` | ✓ | |  |  |
-| `DatabaseTable` | ✓ | |  |  |
-| `ChangeDocTableKey` | ✓ | |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |
-| `ChangeDocItemChangeType` | ✓ | |  |  |
-| `MaintenanceOrder` |  | |  |  |
-| `MaintenancePlanningPlant` |  | |  |  |
-| `MaintenanceOrderType` |  | |  |  |
-| `MaintenancePlannerGroup` |  | |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |
-| `ChangeDocPreviousUnit` |  | |  | `cast ( ChangeDocumentItem.ChangeDocPreviousUnit as mmiv_chng_doc_old_unit preserving type )` |
-| `ChangeDocNewUnit` |  | |  | `cast ( ChangeDocumentItem.ChangeDocNewUnit as mmiv_chng_doc_new_unit preserving type )` |
-| `ChangeDocPreviousCurrency` |  | |  | `cast ( ChangeDocumentItem.ChangeDocPreviousCurrency as mmiv_chng_doc_old_currency preserving type )` |
-| `ChangeDocNewCurrency` |  | |  | `cast ( ChangeDocumentItem.ChangeDocNewCurrency as mmiv_chng_doc_new_currency preserving type )` |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeDocObject` | ✓ | |  |  |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |  |  |
+| `ChangeDocument` | ✓ | |  |  |  |  |
+| `DatabaseTable` | ✓ | |  |  |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |  |  |
+| `MaintenanceOrder` |  | |  |  |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |  |  |
+| `MaintenanceOrderType` |  | |  |  |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
+| `ChangeDocPreviousUnit` |  | |  | `cast ( ChangeDocumentItem.ChangeDocPreviousUnit as mmiv_chng_doc_old_unit preserving type )` |  |  |
+| `ChangeDocNewUnit` |  | |  | `cast ( ChangeDocumentItem.ChangeDocNewUnit as mmiv_chng_doc_new_unit preserving type )` |  |  |
+| `ChangeDocPreviousCurrency` |  | |  | `cast ( ChangeDocumentItem.ChangeDocPreviousCurrency as mmiv_chng_doc_old_currency preserving type )` |  |  |
+| `ChangeDocNewCurrency` |  | |  | `cast ( ChangeDocumentItem.ChangeDocNewCurrency as mmiv_chng_doc_new_currency preserving type )` |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
 
 ## Source Code
 

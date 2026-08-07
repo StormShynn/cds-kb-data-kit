@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ProdCmplncLogsDocument` |  | |  |  |
-| `BusinessSystemName` |  | |  |  |
-| `ProdCmplncLogsDocumentCategory` |  | |  |  |
-| `ProdCmplncLogsDocumentStatus` |  | |  |  |
-| `ProdMktbltyCheckIsRequested` |  | |  |  |
-| `SftyDtaShtCheckIsRequested` |  | |  |  |
-| `DangerousGoodsCheckIsRequested` |  | |  |  |
-| `ChmlSuplrCheckIsRequested` |  | |  |  |
-| `GoodsIssueIsPosted` |  | |  |  |
-| `ActualGoodsMovementDate` |  | |  |  |
-| `ActualGoodsMovementTime` |  | |  |  |
-| `ActualGoodsIssueTimeZone` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_Stage` | | ✓ | | |
-| `_StatusMessage` | | ✓ | | |
-| `_MnllyOvrwrtnAddr` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ProdCmplncLogsDocument` |  | |  |  |  |  |
+| `BusinessSystemName` |  | |  |  |  |  |
+| `ProdCmplncLogsDocumentCategory` |  | |  |  |  |  |
+| `ProdCmplncLogsDocumentStatus` |  | |  |  |  |  |
+| `ProdMktbltyCheckIsRequested` |  | |  |  |  |  |
+| `SftyDtaShtCheckIsRequested` |  | |  |  |  |  |
+| `DangerousGoodsCheckIsRequested` |  | |  |  |  |  |
+| `ChmlSuplrCheckIsRequested` |  | |  |  |  |  |
+| `GoodsIssueIsPosted` |  | |  |  |  |  |
+| `ActualGoodsMovementDate` |  | |  |  |  |  |
+| `ActualGoodsMovementTime` |  | |  |  |  |  |
+| `ActualGoodsIssueTimeZone` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_Stage` | | ✓ | | | | |
+| `_StatusMessage` | | ✓ | | | | |
+| `_MnllyOvrwrtnAddr` | | ✓ | | | | |
 
 ## Source Code
 

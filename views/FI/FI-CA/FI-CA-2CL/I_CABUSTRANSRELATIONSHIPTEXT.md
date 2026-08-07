@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABusTransRelationship` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2 ) as evl_objrl_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CABusTransRelationshipText` |  | |  | `cast( ddtext as evl_objrl_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABusTransRelationship` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2 ) as evl_objrl_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CABusTransRelationshipText` |  | |  | `cast( ddtext as evl_objrl_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

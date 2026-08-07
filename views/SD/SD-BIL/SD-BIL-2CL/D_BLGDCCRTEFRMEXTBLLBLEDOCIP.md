@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReferenceDocument` |  | |  | `sdbil_odata_source_document` |
-| `D_BlgDcCrteFrmExtBlblDocItmIP` |  | |  | `_Item : composition [1..*] of D_BlgDcCrteFrmExtBlblDocItmIP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReferenceDocument` |  | |  | `sdbil_odata_source_document` |  |  |
+| `D_BlgDcCrteFrmExtBlblDocItmIP` |  | |  | `_Item : composition [1..*] of D_BlgDcCrteFrmExtBlblDocItmIP` |  |  |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Status` | ✓ | |  | `cast( stat_para as scmgstatpara preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Status` | ✓ | |  | `cast( stat_para as scmgstatpara preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

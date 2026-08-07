@@ -34,50 +34,50 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfMaterialCategory` | ✓ | |  |  |
-| `BillOfMaterial` | ✓ | |  |  |
-| `BillOfMaterialVariant` | ✓ | |  |  |
-| `EngineeringChangeDocument` | ✓ | |  |  |
-| `Material` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `EngineeringChangeDocForEdit` |  | |  |  |
-| `BillOfMaterialHeaderUUID` |  | |  |  |
-| `BillOfMaterialVariantUsage` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `BOMHeaderInternalChangeCount` |  | |  |  |
-| `BOMHeaderText` |  | |  |  |
-| `BOMExplosionApplication` |  | |  |  |
-| `BOMUsagePriority` |  | |  |  |
-| `BillOfMaterialAuthsnGrp` |  | |  |  |
-| `BOMTechnicalType` |  | |  |  |
-| `BOMGroup` |  | |  |  |
-| `BOMAlternativeText` |  | |  |  |
-| `BillOfMaterialStatus` |  | |  |  |
-| `ChgToEngineeringChgDocument` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `BOMIsArchivedForDeletion` |  | |  |  |
-| `IsConfiguredMaterial` |  | |  |  |
-| `BOMIsConfigurable` |  | |  |  |
-| `IsALE` |  | |  |  |
-| `BOMHeaderBaseUnit` |  | |  |  |
-| `BOMHeaderQuantityInBaseUnit` |  | |  |  |
-| `RecordCreationDate` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `BOMIsToBeDeleted` |  | |  |  |
-| `DocumentIsCreatedByCAD` |  | |  |  |
-| `LaboratoryOrDesignOffice` |  | |  |  |
-| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |
-| `_Plant` | | ✓ | | |
-| `_BOMChangeNumbers` | | ✓ | | |
-| `_BillOfMaterialItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfMaterialCategory` | ✓ | |  |  |  |  |
+| `BillOfMaterial` | ✓ | |  |  |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |  |  |
+| `EngineeringChangeDocument` | ✓ | |  |  |  |  |
+| `Material` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `EngineeringChangeDocForEdit` |  | |  |  |  |  |
+| `BillOfMaterialHeaderUUID` |  | |  |  |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `BOMHeaderInternalChangeCount` |  | |  |  |  |  |
+| `BOMHeaderText` |  | |  |  |  |  |
+| `BOMExplosionApplication` |  | |  |  |  |  |
+| `BOMUsagePriority` |  | |  |  |  |  |
+| `BillOfMaterialAuthsnGrp` |  | |  |  |  |  |
+| `BOMTechnicalType` |  | |  |  |  |  |
+| `BOMGroup` |  | |  |  |  |  |
+| `BOMAlternativeText` |  | |  |  |  |  |
+| `BillOfMaterialStatus` |  | |  |  |  |  |
+| `ChgToEngineeringChgDocument` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `BOMIsArchivedForDeletion` |  | |  |  |  |  |
+| `IsConfiguredMaterial` |  | |  |  |  |  |
+| `BOMIsConfigurable` |  | |  |  |  |  |
+| `IsALE` |  | |  |  |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |  |  |
+| `BOMHeaderQuantityInBaseUnit` |  | |  |  |  |  |
+| `RecordCreationDate` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `BOMIsToBeDeleted` |  | |  |  |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |  |  |
+| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_BOMChangeNumbers` | | ✓ | | | | |
+| `_BillOfMaterialItem` | | ✓ | | | | |
 
 ## Source Code
 

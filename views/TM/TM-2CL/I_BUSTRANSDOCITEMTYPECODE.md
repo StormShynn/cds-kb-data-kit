@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessTransacDocItmTypeCode` | ✓ | |  | `cast (btditm_tco150 as njit_btd_item_type_code preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransacDocItmTypeCode` | ✓ | |  | `cast (btditm_tco150 as njit_btd_item_type_code preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

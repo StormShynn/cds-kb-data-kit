@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |
-| `CentralPurchaseContract` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |
-| `PurchaseContractType` |  | | `_CentralPurchaseContract` | `PurchaseContractType` |
-| `DocumentCurrency` |  | | `_CentralPurchaseContract` | `DocumentCurrency` |
-| `CntrlContrWrkflwTskCrtnUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `CntrlContrWrkflwTskCrtnUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `CntrlContrWrkflwTskDuUTCDte` |  | |  | `cast(tstmp_to_dats( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
-| `CntrlContrWrkflwTskDuUTCTme` |  | |  | `cast(tstmp_to_tims( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
-| `Supplier` |  | | `_CentralPurchaseContract` | `Supplier` |
-| `ActivePurchasingDocument` |  | | `_CentralPurchaseContract` | `ActivePurchasingDocument` |
-| `CreatedByUserDescription` |  | | `_User` | `UserDescription` |
-| `SupplierName` |  | | `_Supplier` | `SupplierName` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |  |  |
+| `CentralPurchaseContract` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |  |  |
+| `PurchaseContractType` |  | | `_CentralPurchaseContract` | `PurchaseContractType` |  |  |
+| `DocumentCurrency` |  | | `_CentralPurchaseContract` | `DocumentCurrency` |  |  |
+| `CntrlContrWrkflwTskCrtnUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |  |  |
+| `CntrlContrWrkflwTskCrtnUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |  |  |
+| `CntrlContrWrkflwTskDuUTCDte` |  | |  | `cast(tstmp_to_dats( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |  |  |
+| `CntrlContrWrkflwTskDuUTCTme` |  | |  | `cast(tstmp_to_tims( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |  |  |
+| `Supplier` |  | | `_CentralPurchaseContract` | `Supplier` |  |  |
+| `ActivePurchasingDocument` |  | | `_CentralPurchaseContract` | `ActivePurchasingDocument` |  |  |
+| `CreatedByUserDescription` |  | | `_User` | `UserDescription` |  |  |
+| `SupplierName` |  | | `_Supplier` | `SupplierName` |  |  |
 
 ## Source Code
 

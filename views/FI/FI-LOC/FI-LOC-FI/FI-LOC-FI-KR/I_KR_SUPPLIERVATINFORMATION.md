@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  | `lifnr` |
-| `TaxInvcNmbrValidityStartDate` | ✓ | |  | `datab` |
-| `TaxNumber1` |  | |  | `stcd1` |
-| `TaxNumber2` |  | |  | `stcd2` |
-| `BusinessType` |  | |  | `gestyp` |
-| `IndustryType` |  | |  | `indtyp` |
-| `TaxInvoiceRepresentativeName` |  | |  | `repres` |
-| `BusinessPlace` |  | |  | `business_place` |
-| `ResponsibleDepartmentName` |  | |  | `department_name` |
-| `ResponsiblePersonName` |  | |  | `person_name` |
-| `ResponsiblePersonEmailAddress1` |  | |  | `person_email1` |
-| `ResponsiblePersonEmailAddress2` |  | |  | `person_email2` |
-| `_I_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |  |  |
+| `TaxInvcNmbrValidityStartDate` | ✓ | |  | `datab` |  |  |
+| `TaxNumber1` |  | |  | `stcd1` |  |  |
+| `TaxNumber2` |  | |  | `stcd2` |  |  |
+| `BusinessType` |  | |  | `gestyp` |  |  |
+| `IndustryType` |  | |  | `indtyp` |  |  |
+| `TaxInvoiceRepresentativeName` |  | |  | `repres` |  |  |
+| `BusinessPlace` |  | |  | `business_place` |  |  |
+| `ResponsibleDepartmentName` |  | |  | `department_name` |  |  |
+| `ResponsiblePersonName` |  | |  | `person_name` |  |  |
+| `ResponsiblePersonEmailAddress1` |  | |  | `person_email1` |  |  |
+| `ResponsiblePersonEmailAddress2` |  | |  | `person_email2` |  |  |
+| `_I_Supplier` | | ✓ | | | | |
 
 ## Associations
 

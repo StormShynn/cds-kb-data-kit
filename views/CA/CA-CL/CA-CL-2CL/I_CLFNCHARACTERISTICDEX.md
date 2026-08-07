@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'CABN'` |  | |  | `table: 'CABN'` |
-| `'ADZHL']` |  | |  | `tableElement: ['ATINN','ADZHL']` |
-| `'TimeIntervalNumber']` |  | |  | `viewElement: ['CharcInternalID','TimeIntervalNumber']` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'CABN'` |  | |  | `table: 'CABN'` |  |  |
+| `'ADZHL']` |  | |  | `tableElement: ['ATINN','ADZHL']` |  |  |
+| `'TimeIntervalNumber']` |  | |  | `viewElement: ['CharcInternalID','TimeIntervalNumber']` |  |  |
 
 ## Source Code
 

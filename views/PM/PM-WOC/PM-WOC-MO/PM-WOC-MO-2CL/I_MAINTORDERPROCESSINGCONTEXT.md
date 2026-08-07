@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintOrderProcessingContext` | ✓ | |  | `cast( dd07l.domvalue_l as maintorderprocessingcontext )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrderProcessingContext` | ✓ | |  | `cast( dd07l.domvalue_l as maintorderprocessingcontext )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAInvcgDocumentReversalReason` | ✓ | | `_tfk2661` | `revreason` |
-| `_CAInvcgDocReversalReasonText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgDocumentReversalReason` | ✓ | | `_tfk2661` | `revreason` |  |  |
+| `_CAInvcgDocReversalReasonText` | | ✓ | | | | |
 
 ## Associations
 

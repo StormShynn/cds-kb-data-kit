@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionLine` | ✓ | |  |  |
-| `Plant` | ✓ | |  |  |
-| `_WorkCenterTextBySemanticKey` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionLine` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `_WorkCenterTextBySemanticKey` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `LedgerGroup` |  | |  |  |
-| `ReferenceDocumentType` |  | |  |  |
-| `OriginalReferenceDocument` |  | |  |  |
-| `ReferenceDocumentLogicalSystem` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `TaxReportingDate` |  | |  |  |
-| `InvoiceReceiptDate` |  | |  |  |
-| `ExchangeRateDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `AccountingDocCreatedByUser` |  | |  |  |
-| `DocumentReferenceID` |  | |  |  |
-| `AccountingDocumentHeaderText` |  | |  |  |
-| `JrnlEntryCntrySpecificRef1` |  | |  |  |
-| `JrnlEntryCntrySpecificDate1` |  | |  |  |
-| `JrnlEntryCntrySpecificRef2` |  | |  |  |
-| `JrnlEntryCntrySpecificDate2` |  | |  |  |
-| `JrnlEntryCntrySpecificRef3` |  | |  |  |
-| `JrnlEntryCntrySpecificDate3` |  | |  |  |
-| `JrnlEntryCntrySpecificRef4` |  | |  |  |
-| `JrnlEntryCntrySpecificDate4` |  | |  |  |
-| `JrnlEntryCntrySpecificRef5` |  | |  |  |
-| `JrnlEntryCntrySpecificDate5` |  | |  |  |
-| `JrnlEntryCntrySpecificBP1` |  | |  |  |
-| `JrnlEntryCntrySpecificBP2` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_BusinessTransactionTypeText` | | ✓ | | |
-| `_AccountingDocumentTypeText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `LedgerGroup` |  | |  |  |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `OriginalReferenceDocument` |  | |  |  |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `TaxReportingDate` |  | |  |  |  |  |
+| `InvoiceReceiptDate` |  | |  |  |  |  |
+| `ExchangeRateDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `AccountingDocCreatedByUser` |  | |  |  |  |  |
+| `DocumentReferenceID` |  | |  |  |  |  |
+| `AccountingDocumentHeaderText` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef1` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate1` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef2` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate2` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef3` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate3` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef4` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate4` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificRef5` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificDate5` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificBP1` |  | |  |  |  |  |
+| `JrnlEntryCntrySpecificBP2` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_BusinessTransactionTypeText` | | ✓ | | | | |
+| `_AccountingDocumentTypeText` | | ✓ | | | | |
 
 ## Source Code
 

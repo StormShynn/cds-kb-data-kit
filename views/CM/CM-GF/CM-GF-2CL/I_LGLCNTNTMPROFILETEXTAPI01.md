@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMProfile` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LglCntntMProfileName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMProfile` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LglCntntMProfileName` |  | |  |  |  |  |
 
 ## Source Code
 

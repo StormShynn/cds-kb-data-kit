@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjDmndRsceAssgmtUUID` | ✓ | |  |  |
-| `ProjectDemandWorkUUID` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjDmndRsceAssgmt` |  | |  |  |
-| `ProjDmndRsceAssgmtQuantity` |  | |  | `} ProjDmndRsceAssgmtQuantity` |
-| `ProjDmndRsceAssgmtQuantityUnit` |  | |  |  |
-| `ProjectDemandSupplyDeliveryOrg` |  | |  |  |
-| `ProjectDemandSourceOfSupply` |  | |  |  |
-| `ProjAssgmtLastUpdateSource` |  | |  |  |
-| `ProjDmndRsceAssgmtStartDate` |  | |  |  |
-| `ProjDmndRsceAssgmtEndDate` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_Work` | | ✓ | | |
-| `_AssgmtDistribution` | | ✓ | | |
-| `_RsceAssgmtQuantityUnit` | | ✓ | | |
-| `_PersonWorkAgreement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjDmndRsceAssgmtUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandWorkUUID` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmt` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtQuantity` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtQuantityUnit` |  | |  |  |  |  |
+| `ProjectDemandSupplyDeliveryOrg` |  | |  |  |  |  |
+| `ProjectDemandSourceOfSupply` |  | |  |  |  |  |
+| `ProjAssgmtLastUpdateSource` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtStartDate` |  | |  |  |  |  |
+| `ProjDmndRsceAssgmtEndDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_Work` | | ✓ | | | | |
+| `_AssgmtDistribution` | | ✓ | | | | |
+| `_RsceAssgmtQuantityUnit` | | ✓ | | | | |
+| `_PersonWorkAgreement` | | ✓ | | | | |
 
 ## Associations
 

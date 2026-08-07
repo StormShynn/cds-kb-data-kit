@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `GoodsMovementType` | ✓ | |  | `bwart` |
-| `InventoryTransactionCode` | ✓ | |  | `tcode` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GoodsMovementType` | ✓ | |  | `bwart` |  |  |
+| `InventoryTransactionCode` | ✓ | |  | `tcode` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

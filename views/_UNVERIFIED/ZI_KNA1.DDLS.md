@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerNumber` | ✓ | |  | `kunnr` |
-| `Name` |  | |  | `name1` |
-| `Country` |  | |  | `land1` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerNumber` | ✓ | |  | `kunnr` |  |  |
+| `Name` |  | |  | `name1` |  |  |
+| `Country` |  | |  | `land1` |  |  |
 
 ## Source Code
 

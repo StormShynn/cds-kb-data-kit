@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSpecAdditionalCatalog` | ✓ | |  | `InspectionCatalog` |
-| `_InspSpecAddlCatalogText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSpecAdditionalCatalog` | ✓ | |  | `InspectionCatalog` |  |  |
+| `_InspSpecAddlCatalogText` | | ✓ | | | | |
 
 ## Associations
 

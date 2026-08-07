@@ -28,152 +28,152 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  | `aufnr` |
-| `MaintenanceOrderOperation` | ✓ | |  | `coalesce( afvc_superior.vornr, afvc.vornr )` |
-| `MaintenanceOrderSubOperation` | ✓ | |  | `cast ( case when afvc.sumnr = '00000000' then ' ' else afvc.vornr end as maintenanceordersuboperation preserving type )` |
-| `MaintOrderOperationForEdit` |  | |  | `cast( afvc.vornr as maintenanceorderoperation preserving type )` |
-| `MaintOrderRoutingNumber` |  | |  | `aufpl` |
-| `MaintOrderOperationCounter` |  | |  | `aplzl` |
-| `SuperiorOperationInternalID` |  | |  | `sumnr` |
-| `MaintOrderOperationInternalID` |  | |  | `objnr` |
-| `OperationControlKey` |  | |  | `steus` |
-| `OperationDescription` |  | |  | `ltxa1` |
-| `OperationStandardTextCode` |  | |  | `ktsch` |
-| `NumberOfTimeTickets` |  | |  | `loanz` |
-| `OperationPersonResponsible` |  | |  | `pernr` |
-| `Plant` |  | |  | `werks` |
-| `OperationWorkCenterInternalID` |  | |  | `arbid` |
-| `OperationWorkCenterTypeCode` |  | |  | `'A'` |
-| `NumberOfCapacities` |  | |  | `anzzl` |
-| `MaintOrderConfirmation` |  | |  | `rueck` |
-| `Equipment` |  | |  | `equnr` |
-| `FunctionalLocation` |  | |  | `cast ( afvc.tplnr as vdm_eam_tplnr )` |
-| `OperationPurgInfoRecdSearchTxt` |  | |  | `sortl` |
-| `OperationRequisitionerName` |  | |  | `afnam` |
-| `OperationGoodsRecipientName` |  | |  | `wempf` |
-| `OperationQuantity` |  | |  | `bmsch` |
-| `OperationQuantityUnit` |  | |  | `meinh` |
-| `ActivityType` |  | |  | `larnt` |
-| `OpExternalProcessingPrice` |  | |  | `preis` |
-| `OpExternalProcessingPriceUnit` |  | |  | `peinh` |
-| `OpExternalProcessingCurrency` |  | |  | `waers` |
-| `OperationTrackingNumber` |  | |  | `bednr` |
-| `OperationPurchasingInfoRecord` |  | |  | `infnr` |
-| `OperationUnloadingPointName` |  | |  | `ablad` |
-| `OpPurchaseOutlineAgreement` |  | |  | `cast (afvc.ebeln as konnr)` |
-| `OpPurchaseOutlineAgreementItem` |  | |  | `cast (afvc.ebelp as ktpnr)` |
-| `OperationSupplier` |  | |  | `lifnr` |
-| `Assembly` |  | |  | `istru` |
-| `OperationSystemCondition` |  | |  | `anlzu` |
-| `CostCtrActivityType` |  | |  | `larnt` |
-| `ReqgCostCenterControllingArea` |  | |  | `anfkokrs` |
-| `OperationCalculationControl` |  | |  | `indet` |
-| `OperationWorkPercent` |  | |  | `prznt` |
-| `CapacityRequirement` |  | |  | `bedid` |
-| `PurchaseRequisition` |  | |  | `banfn` |
-| `PurchaseRequisitionItem` |  | |  | `bnfpo` |
-| `MaterialGroup` |  | |  | `matkl` |
-| `CostElement` |  | |  | `sakto` |
-| `PurchasingOrganization` |  | |  | `ekorg` |
-| `PurchasingGroup` |  | |  | `ekgrp` |
-| `Language` |  | |  | `cast(afvc.txtsp as spras preserving type)` |
-| `OperationHasLongText` |  | |  | `cast(case when afvc.txtsp = '' then '' else 'X' end as xfeld)` |
-| `EAMPlannedDeliveryDurnInDays` |  | |  | `plifz` |
-| `MaintOrderOperationDuration` |  | |  | `dauno` |
-| `MaintOrdOperationDurationUnit` |  | |  | `daune` |
-| `OpBscStartDateConstraintType` |  | |  | `einsa` |
-| `OpBscEndDateConstraintType` |  | |  | `einse` |
-| `MaintOrdOperationWorkDuration` |  | |  | `arbei` |
-| `MaintOrdOpWorkDurationUnit` |  | |  | `arbeh` |
-| `ConstraintDateForBscStartDate` |  | |  | `ntanf` |
-| `ConstraintTimeForBscStartTime` |  | |  | `ntanz` |
-| `ConstraintDateForBscFinishDate` |  | |  | `ntend` |
-| `ConstraintTimeForBscFinishTime` |  | |  | `ntenz` |
-| `MaintOrdOperationExecutionRate` |  | |  | `aufkt` |
-| `BusinessArea` |  | |  | `gsber` |
-| `MaintOrdOpAssgdWBSElmntInt` |  | |  | `cast( afvc.projn as ps_s4_pspnr preserving type )` |
-| `ProfitCenter` |  | |  | `prctr` |
-| `CostingSheet` |  | |  | `kalsm` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `FunctionalArea` |  | |  | `func_area` |
-| `FldLogsDelivHdrIsHeldOnShore` |  | |  | `fldlogsdelivisheldonshore` |
-| `MaintOrdOpFrameWorkOrder` |  | |  | `fordn` |
-| `MaintOrdOpFrameWorkOrderItem` |  | |  | `fordp` |
-| `ExtProcgOperationHasSubcontrg` |  | |  | `frdlb` |
-| `EmployeeWageType` |  | |  | `loart` |
-| `EmployeeWageGroup` |  | |  | `logrp` |
-| `EmployeeSuitability` |  | |  | `qualf` |
-| `MaintControllingObjectClass` |  | |  | `cast( afvc.scope as ps_s4_scope_cv preserving type )` |
-| `WrkCtrIntCapRqmtsDistr` |  | |  | `vertl` |
-| `MaintOrdOperationOverheadCode` |  | |  | `zschl` |
-| `MaintOrderOperationQuantity` |  | |  | `mgvrg` |
-| `MaintOrdOperationQuantityUnit` |  | |  | `meinh` |
-| `MaintOrdOperationIsMRPRelevant` |  | |  | `cast(case when afvc.no_disp = '' then '3' when afvc.no_disp = 'X' then '2' when afvc.no_disp = '1' then '1' else '1' end as audisp_plus )` |
-| `MaintOperationExecStageCode` |  | |  | `cast( afvc.maintopexecutionphasecode as eam_premainpost_cds preserving type )` |
-| `OperationMilestoneUsageCode` |  | |  | `mlstn` |
-| `MaintOrderConfCntrValue` |  | |  | `rmzhl` |
-| `ControllingArea` |  | |  | `kokrs` |
-| `IsMarkedForDeletion` |  | |  | `loekz` |
-| `OpErlstSchedldExecStrtDte` |  | |  | `fsavd` |
-| `OpErlstSchedldExecStrtTme` |  | |  | `fsavz` |
-| `OpErlstSchedldExecEndDte` |  | |  | `fsedd` |
-| `OpErlstSchedldExecEndTme` |  | |  | `fsedz` |
-| `OpLtstSchedldExecStrtDte` |  | |  | `ssavd` |
-| `OpLtstSchedldExecStrtTme` |  | |  | `ssavz` |
-| `OpLtstSchedldExecEndDte` |  | |  | `ssedd` |
-| `OpLtstSchedldExecEndTme` |  | |  | `ssedz` |
-| `OpActualExecutionStartDate` |  | |  | `isdd` |
-| `OpActualExecutionStartTime` |  | |  | `isdz` |
-| `OpActualExecutionEndDate` |  | |  | `iedd` |
-| `OpActualExecutionEndTime` |  | |  | `iedz` |
-| `ActyConfFcstdEndDate` |  | |  | `pedd` |
-| `ActyConfFcstdEndTime` |  | |  | `pedz` |
-| `ForecastWorkQuantity` |  | |  | `ofmnw` |
-| `ActualWorkQuantity` |  | |  | `ismnw` |
-| `MaintOrdOpDelivDateAdjustment` |  | |  | `cast(afvc.sched_end as cc4_delvry_date_adj_oper preserving type)` |
-| `MaintOrdOpProcessPhaseCode` |  | |  | `maintordopprocessphasecode` |
-| `MaintOrdOpProcessSubPhaseCode` |  | |  | `maintordopprocesssubphasecode` |
-| `AllMaintOrdCompCmtdQtsAreKept` |  | |  | `allmaintordcompcmtdqtsarekept` |
-| `MaintOrdOpHasNoRemainingWork` |  | |  | `leknw` |
-| `MaintOrdOpHasLeanServices` |  | |  | `maintordophasleanservices` |
-| `TaskListType` |  | |  | `plnty` |
-| `TaskListGroup` |  | |  | `plnnr` |
-| `TaskListGroupCounter` |  | |  | `plnal` |
-| `_MaintOrdOpAdditionalData` | | ✓ | | |
-| `_OperationPlanningValues` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_OperationControlKey` | | ✓ | | |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_StatusObjectActiveStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_MaintOrderProdnRsceTool` | | ✓ | | |
-| `_MaintOrderComponent` | | ✓ | | |
-| `_MaintOrderOperObjectListLink` | | ✓ | | |
-| `_PersonResponsible` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_MaintOperationExecStageCode` | | ✓ | | |
-| `_OpExternalProcessingCurrency` | | ✓ | | |
-| `_StatusObject` | | ✓ | | |
-| `_OperationSystemCondition` | | ✓ | | |
-| `_OperationCalculationControl` | | ✓ | | |
-| `_Assembly` | | ✓ | | |
-| `_OperationHasLongText` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_MaintenanceOrderConf` | | ✓ | | |
-| `_CostCenterActivityTypeText` | | ✓ | | |
-| `_PMContactEmployee` | | ✓ | | |
-| `_PersonWorkAgreement` | | ✓ | | |
-| `_WorkAssignment` | | ✓ | | |
-| `_EAMProcessPhase` | | ✓ | | |
-| `_EAMProcessSubPhase` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurReqnOrResvnGeneration` | | ✓ | | |
-| `_MaintOrdOpDeliveryDateAdjmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  | `aufnr` |  |  |
+| `MaintenanceOrderOperation` | ✓ | |  | `coalesce( afvc_superior.vornr, afvc.vornr )` |  |  |
+| `MaintenanceOrderSubOperation` | ✓ | |  | `cast ( case when afvc.sumnr = '00000000' then ' ' else afvc.vornr end as maintenanceordersuboperation preserving type )` |  |  |
+| `MaintOrderOperationForEdit` |  | |  | `cast( afvc.vornr as maintenanceorderoperation preserving type )` |  |  |
+| `MaintOrderRoutingNumber` |  | |  | `aufpl` |  |  |
+| `MaintOrderOperationCounter` |  | |  | `aplzl` |  |  |
+| `SuperiorOperationInternalID` |  | |  | `sumnr` |  |  |
+| `MaintOrderOperationInternalID` |  | |  | `objnr` |  |  |
+| `OperationControlKey` |  | |  | `steus` |  |  |
+| `OperationDescription` |  | |  | `ltxa1` |  |  |
+| `OperationStandardTextCode` |  | |  | `ktsch` |  |  |
+| `NumberOfTimeTickets` |  | |  | `loanz` |  |  |
+| `OperationPersonResponsible` |  | |  | `pernr` |  |  |
+| `Plant` |  | |  | `werks` |  |  |
+| `OperationWorkCenterInternalID` |  | |  | `arbid` |  |  |
+| `OperationWorkCenterTypeCode` |  | |  | `'A'` |  |  |
+| `NumberOfCapacities` |  | |  | `anzzl` |  |  |
+| `MaintOrderConfirmation` |  | |  | `rueck` |  |  |
+| `Equipment` |  | |  | `equnr` |  |  |
+| `FunctionalLocation` |  | |  | `cast ( afvc.tplnr as vdm_eam_tplnr )` |  |  |
+| `OperationPurgInfoRecdSearchTxt` |  | |  | `sortl` |  |  |
+| `OperationRequisitionerName` |  | |  | `afnam` |  |  |
+| `OperationGoodsRecipientName` |  | |  | `wempf` |  |  |
+| `OperationQuantity` |  | |  | `bmsch` |  |  |
+| `OperationQuantityUnit` |  | |  | `meinh` |  |  |
+| `ActivityType` |  | |  | `larnt` |  |  |
+| `OpExternalProcessingPrice` |  | |  | `preis` |  |  |
+| `OpExternalProcessingPriceUnit` |  | |  | `peinh` |  |  |
+| `OpExternalProcessingCurrency` |  | |  | `waers` |  |  |
+| `OperationTrackingNumber` |  | |  | `bednr` |  |  |
+| `OperationPurchasingInfoRecord` |  | |  | `infnr` |  |  |
+| `OperationUnloadingPointName` |  | |  | `ablad` |  |  |
+| `OpPurchaseOutlineAgreement` |  | |  | `cast (afvc.ebeln as konnr)` |  |  |
+| `OpPurchaseOutlineAgreementItem` |  | |  | `cast (afvc.ebelp as ktpnr)` |  |  |
+| `OperationSupplier` |  | |  | `lifnr` |  |  |
+| `Assembly` |  | |  | `istru` |  |  |
+| `OperationSystemCondition` |  | |  | `anlzu` |  |  |
+| `CostCtrActivityType` |  | |  | `larnt` |  |  |
+| `ReqgCostCenterControllingArea` |  | |  | `anfkokrs` |  |  |
+| `OperationCalculationControl` |  | |  | `indet` |  |  |
+| `OperationWorkPercent` |  | |  | `prznt` |  |  |
+| `CapacityRequirement` |  | |  | `bedid` |  |  |
+| `PurchaseRequisition` |  | |  | `banfn` |  |  |
+| `PurchaseRequisitionItem` |  | |  | `bnfpo` |  |  |
+| `MaterialGroup` |  | |  | `matkl` |  |  |
+| `CostElement` |  | |  | `sakto` |  |  |
+| `PurchasingOrganization` |  | |  | `ekorg` |  |  |
+| `PurchasingGroup` |  | |  | `ekgrp` |  |  |
+| `Language` |  | |  | `cast(afvc.txtsp as spras preserving type)` |  |  |
+| `OperationHasLongText` |  | |  | `cast(case when afvc.txtsp = '' then '' else 'X' end as xfeld)` |  |  |
+| `EAMPlannedDeliveryDurnInDays` |  | |  | `plifz` |  |  |
+| `MaintOrderOperationDuration` |  | |  | `dauno` |  |  |
+| `MaintOrdOperationDurationUnit` |  | |  | `daune` |  |  |
+| `OpBscStartDateConstraintType` |  | |  | `einsa` |  |  |
+| `OpBscEndDateConstraintType` |  | |  | `einse` |  |  |
+| `MaintOrdOperationWorkDuration` |  | |  | `arbei` |  |  |
+| `MaintOrdOpWorkDurationUnit` |  | |  | `arbeh` |  |  |
+| `ConstraintDateForBscStartDate` |  | |  | `ntanf` |  |  |
+| `ConstraintTimeForBscStartTime` |  | |  | `ntanz` |  |  |
+| `ConstraintDateForBscFinishDate` |  | |  | `ntend` |  |  |
+| `ConstraintTimeForBscFinishTime` |  | |  | `ntenz` |  |  |
+| `MaintOrdOperationExecutionRate` |  | |  | `aufkt` |  |  |
+| `BusinessArea` |  | |  | `gsber` |  |  |
+| `MaintOrdOpAssgdWBSElmntInt` |  | |  | `cast( afvc.projn as ps_s4_pspnr preserving type )` |  |  |
+| `ProfitCenter` |  | |  | `prctr` |  |  |
+| `CostingSheet` |  | |  | `kalsm` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `FunctionalArea` |  | |  | `func_area` |  |  |
+| `FldLogsDelivHdrIsHeldOnShore` |  | |  | `fldlogsdelivisheldonshore` |  |  |
+| `MaintOrdOpFrameWorkOrder` |  | |  | `fordn` |  |  |
+| `MaintOrdOpFrameWorkOrderItem` |  | |  | `fordp` |  |  |
+| `ExtProcgOperationHasSubcontrg` |  | |  | `frdlb` |  |  |
+| `EmployeeWageType` |  | |  | `loart` |  |  |
+| `EmployeeWageGroup` |  | |  | `logrp` |  |  |
+| `EmployeeSuitability` |  | |  | `qualf` |  |  |
+| `MaintControllingObjectClass` |  | |  | `cast( afvc.scope as ps_s4_scope_cv preserving type )` |  |  |
+| `WrkCtrIntCapRqmtsDistr` |  | |  | `vertl` |  |  |
+| `MaintOrdOperationOverheadCode` |  | |  | `zschl` |  |  |
+| `MaintOrderOperationQuantity` |  | |  | `mgvrg` |  |  |
+| `MaintOrdOperationQuantityUnit` |  | |  | `meinh` |  |  |
+| `MaintOrdOperationIsMRPRelevant` |  | |  | `cast(case when afvc.no_disp = '' then '3' when afvc.no_disp = 'X' then '2' when afvc.no_disp = '1' then '1' else '1' end as audisp_plus )` |  |  |
+| `MaintOperationExecStageCode` |  | |  | `cast( afvc.maintopexecutionphasecode as eam_premainpost_cds preserving type )` |  |  |
+| `OperationMilestoneUsageCode` |  | |  | `mlstn` |  |  |
+| `MaintOrderConfCntrValue` |  | |  | `rmzhl` |  |  |
+| `ControllingArea` |  | |  | `kokrs` |  |  |
+| `IsMarkedForDeletion` |  | |  | `loekz` |  |  |
+| `OpErlstSchedldExecStrtDte` |  | |  | `fsavd` |  |  |
+| `OpErlstSchedldExecStrtTme` |  | |  | `fsavz` |  |  |
+| `OpErlstSchedldExecEndDte` |  | |  | `fsedd` |  |  |
+| `OpErlstSchedldExecEndTme` |  | |  | `fsedz` |  |  |
+| `OpLtstSchedldExecStrtDte` |  | |  | `ssavd` |  |  |
+| `OpLtstSchedldExecStrtTme` |  | |  | `ssavz` |  |  |
+| `OpLtstSchedldExecEndDte` |  | |  | `ssedd` |  |  |
+| `OpLtstSchedldExecEndTme` |  | |  | `ssedz` |  |  |
+| `OpActualExecutionStartDate` |  | |  | `isdd` |  |  |
+| `OpActualExecutionStartTime` |  | |  | `isdz` |  |  |
+| `OpActualExecutionEndDate` |  | |  | `iedd` |  |  |
+| `OpActualExecutionEndTime` |  | |  | `iedz` |  |  |
+| `ActyConfFcstdEndDate` |  | |  | `pedd` |  |  |
+| `ActyConfFcstdEndTime` |  | |  | `pedz` |  |  |
+| `ForecastWorkQuantity` |  | |  | `ofmnw` |  |  |
+| `ActualWorkQuantity` |  | |  | `ismnw` |  |  |
+| `MaintOrdOpDelivDateAdjustment` |  | |  | `cast(afvc.sched_end as cc4_delvry_date_adj_oper preserving type)` |  |  |
+| `MaintOrdOpProcessPhaseCode` |  | |  | `maintordopprocessphasecode` |  |  |
+| `MaintOrdOpProcessSubPhaseCode` |  | |  | `maintordopprocesssubphasecode` |  |  |
+| `AllMaintOrdCompCmtdQtsAreKept` |  | |  | `allmaintordcompcmtdqtsarekept` |  |  |
+| `MaintOrdOpHasNoRemainingWork` |  | |  | `leknw` |  |  |
+| `MaintOrdOpHasLeanServices` |  | |  | `maintordophasleanservices` |  |  |
+| `TaskListType` |  | |  | `plnty` |  |  |
+| `TaskListGroup` |  | |  | `plnnr` |  |  |
+| `TaskListGroupCounter` |  | |  | `plnal` |  |  |
+| `_MaintOrdOpAdditionalData` | | ✓ | | | | |
+| `_OperationPlanningValues` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_OperationControlKey` | | ✓ | | | | |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_StatusObjectActiveStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_MaintOrderProdnRsceTool` | | ✓ | | | | |
+| `_MaintOrderComponent` | | ✓ | | | | |
+| `_MaintOrderOperObjectListLink` | | ✓ | | | | |
+| `_PersonResponsible` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_MaintOperationExecStageCode` | | ✓ | | | | |
+| `_OpExternalProcessingCurrency` | | ✓ | | | | |
+| `_StatusObject` | | ✓ | | | | |
+| `_OperationSystemCondition` | | ✓ | | | | |
+| `_OperationCalculationControl` | | ✓ | | | | |
+| `_Assembly` | | ✓ | | | | |
+| `_OperationHasLongText` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_MaintenanceOrderConf` | | ✓ | | | | |
+| `_CostCenterActivityTypeText` | | ✓ | | | | |
+| `_PMContactEmployee` | | ✓ | | | | |
+| `_PersonWorkAgreement` | | ✓ | | | | |
+| `_WorkAssignment` | | ✓ | | | | |
+| `_EAMProcessPhase` | | ✓ | | | | |
+| `_EAMProcessSubPhase` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurReqnOrResvnGeneration` | | ✓ | | | | |
+| `_MaintOrdOpDeliveryDateAdjmt` | | ✓ | | | | |
 
 ## Associations
 

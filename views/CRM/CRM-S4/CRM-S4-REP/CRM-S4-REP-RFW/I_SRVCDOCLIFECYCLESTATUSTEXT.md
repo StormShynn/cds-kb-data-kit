@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocumentStatus` | ✓ | |  | `cast(CustMgmtLifecycleUserStatus as crms4_stat_lifecycle preserving type )` |
-| `Language` | ✓ | |  |  |
-| `ServiceDocumentStatusName` |  | |  | `cast(CustMgmtLifecycleUserStsName as crms4_stat_lifecycle_desc )` |
-| `_ServiceDocumentStatus` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocumentStatus` | ✓ | |  | `cast(CustMgmtLifecycleUserStatus as crms4_stat_lifecycle preserving type )` |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ServiceDocumentStatusName` |  | |  | `cast(CustMgmtLifecycleUserStsName as crms4_stat_lifecycle_desc )` |  |  |
+| `_ServiceDocumentStatus` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

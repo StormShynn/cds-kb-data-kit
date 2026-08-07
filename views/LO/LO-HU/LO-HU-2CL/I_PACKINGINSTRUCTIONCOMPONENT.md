@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PackingInstructionItemSystUUID` | ✓ | |  | `cast( packitemid as packing_instruction_component preserving type )` |
-| `PackingInstructionSystemUUID` |  | |  | `cast( packnr as packing_instruction_number preserving type )` |
-| `PackingInstructionItem` |  | |  | `packitem` |
-| `PackingInstructionItemCategory` |  | |  | `paitemtype` |
-| `Material` |  | |  | `matnr` |
-| `ItemPackingInstructionSystUUID` |  | |  | `subpacknr` |
-| `PackingInstructionItmTargetQty` |  | |  | `trgqty` |
-| `PackingInstructionItemMinQty` |  | |  | `minqty` |
-| `PackingInstructionItemRndQty` |  | |  | `rndqty` |
-| `BaseUnitofMeasure` |  | |  | `baseunit` |
-| `UnitOfMeasure` |  | |  | `unitqty` |
-| `MaterialMixIsAllowed` |  | |  | `matmixawd` |
-| `BatchMixIsAllowed` |  | |  | `indchmix` |
-| `MaterialIsNotHandlingUnitRel` |  | |  | `indnohu` |
-| `PackingInstructionItemIsDel` |  | |  | `inddel` |
-| `_PackingInstructionHeader` | | ✓ | | |
-| `_BaseUnitofMeasure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PackingInstructionItemSystUUID` | ✓ | |  | `cast( packitemid as packing_instruction_component preserving type )` |  |  |
+| `PackingInstructionSystemUUID` |  | |  | `cast( packnr as packing_instruction_number preserving type )` |  |  |
+| `PackingInstructionItem` |  | |  | `packitem` |  |  |
+| `PackingInstructionItemCategory` |  | |  | `paitemtype` |  |  |
+| `Material` |  | |  | `matnr` |  |  |
+| `ItemPackingInstructionSystUUID` |  | |  | `subpacknr` |  |  |
+| `PackingInstructionItmTargetQty` |  | |  | `trgqty` |  |  |
+| `PackingInstructionItemMinQty` |  | |  | `minqty` |  |  |
+| `PackingInstructionItemRndQty` |  | |  | `rndqty` |  |  |
+| `BaseUnitofMeasure` |  | |  | `baseunit` |  |  |
+| `UnitOfMeasure` |  | |  | `unitqty` |  |  |
+| `MaterialMixIsAllowed` |  | |  | `matmixawd` |  |  |
+| `BatchMixIsAllowed` |  | |  | `indchmix` |  |  |
+| `MaterialIsNotHandlingUnitRel` |  | |  | `indnohu` |  |  |
+| `PackingInstructionItemIsDel` |  | |  | `inddel` |  |  |
+| `_PackingInstructionHeader` | | ✓ | | | | |
+| `_BaseUnitofMeasure` | | ✓ | | | | |
 
 ## Associations
 

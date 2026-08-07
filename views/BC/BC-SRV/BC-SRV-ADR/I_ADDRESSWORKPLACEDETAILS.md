@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |
-| `AddressPersonID` | ✓ | |  | `persnumber` |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |
-| `AddressIsWorkplaceAddress` |  | |  | `case comp_pers when 'C' then cast('X' as ad_isworkplaceaddress preserving type ) else cast(' ' as ad_isworkplaceaddress preserving type ) end` |
-| `PersonAddressObjectType` |  | |  | `comp_pers` |
-| `WorkplaceBuilding` |  | |  | `building` |
-| `WorkplaceFloor` |  | |  | `floor` |
-| `WorkplaceRoomNumber` |  | |  | `roomnumber` |
-| `WorkplaceFunctionalTitleName` |  | |  | `function` |
-| `WorkplaceDepartmentName` |  | |  | `department` |
-| `WorkplacePrfrdCommMediumType` |  | |  | `deflt_comm` |
-| `WorkplaceCorrespncShortName` |  | |  | `id_code` |
-| `WorkplaceInhouseMail` |  | |  | `ih_mail` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressID` | ✓ | |  | `addrnumber` |  |  |
+| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
+| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
+| `AddressIsWorkplaceAddress` |  | |  | `case comp_pers when 'C' then cast('X' as ad_isworkplaceaddress preserving type ) else cast(' ' as ad_isworkplaceaddress preserving type ) end` |  |  |
+| `PersonAddressObjectType` |  | |  | `comp_pers` |  |  |
+| `WorkplaceBuilding` |  | |  | `building` |  |  |
+| `WorkplaceFloor` |  | |  | `floor` |  |  |
+| `WorkplaceRoomNumber` |  | |  | `roomnumber` |  |  |
+| `WorkplaceFunctionalTitleName` |  | |  | `function` |  |  |
+| `WorkplaceDepartmentName` |  | |  | `department` |  |  |
+| `WorkplacePrfrdCommMediumType` |  | |  | `deflt_comm` |  |  |
+| `WorkplaceCorrespncShortName` |  | |  | `id_code` |  |  |
+| `WorkplaceInhouseMail` |  | |  | `ih_mail` |  |  |
 
 ## Source Code
 

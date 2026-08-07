@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocument` | ✓ | |  | `SubsequentDocument` |
-| `SalesDocumentItem` | ✓ | |  | `SubsequentDocumentItem` |
-| `DocRelationshipUUID` | ✓ | |  |  |
-| `SDDocumentCategory` |  | |  | `SubsequentDocumentCategory` |
-| `PrecedingDocument` |  | |  |  |
-| `PrecedingDocumentItem` |  | |  |  |
-| `PrecedingDocumentCategory` |  | |  |  |
-| `ProcessFlowLevel` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `SalesDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `SubsequentDocument` |  |  |
+| `SalesDocumentItem` | ✓ | |  | `SubsequentDocumentItem` |  |  |
+| `DocRelationshipUUID` | ✓ | |  |  |  |  |
+| `SDDocumentCategory` |  | |  | `SubsequentDocumentCategory` |  |  |
+| `PrecedingDocument` |  | |  |  |  |  |
+| `PrecedingDocumentItem` |  | |  |  |  |  |
+| `PrecedingDocumentCategory` |  | |  |  |  |  |
+| `ProcessFlowLevel` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `SalesDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
 
 ## Associations
 

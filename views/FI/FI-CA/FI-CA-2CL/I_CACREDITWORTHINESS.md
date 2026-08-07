@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |
-| `CAManualCreditWorthinessValue` |  | |  |  |
-| `CACreditWorthinessFactorInPct` |  | |  |  |
-| `CAManualCreditWorthinessDate` |  | |  |  |
-| `CAFrozenCreditWorthinessValue` |  | |  | `case CACreditWorthinessIsFrozen when 'X' then CAFrozenCreditWorthinessValue else '0000' end` |
-| `CAFrozenCreditWorthinessDate` |  | |  |  |
-| `CAUnfrozenCreditWorthinessDate` |  | |  |  |
-| `CAExternalCreditWorthinessVal` |  | |  |  |
-| `CAExternalCreditWorthinessDate` |  | |  |  |
-| `CALastReplicatedCrdtWrthnssVal` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangeTime` |  | |  |  |
-| `CACreditWorthinessIsFrozen` |  | |  |  |
-| `_BusinessPartner` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |  |  |
+| `CAManualCreditWorthinessValue` |  | |  |  |  |  |
+| `CACreditWorthinessFactorInPct` |  | |  |  |  |  |
+| `CAManualCreditWorthinessDate` |  | |  |  |  |  |
+| `CAFrozenCreditWorthinessValue` |  | |  | `case CACreditWorthinessIsFrozen when 'X' then CAFrozenCreditWorthinessValue else '0000' end` |  |  |
+| `CAFrozenCreditWorthinessDate` |  | |  |  |  |  |
+| `CAUnfrozenCreditWorthinessDate` |  | |  |  |  |  |
+| `CAExternalCreditWorthinessVal` |  | |  |  |  |  |
+| `CAExternalCreditWorthinessDate` |  | |  |  |  |  |
+| `CALastReplicatedCrdtWrthnssVal` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangeTime` |  | |  |  |  |  |
+| `CACreditWorthinessIsFrozen` |  | |  |  |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
 

@@ -29,64 +29,64 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChargeElementUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_chrg_element_uuid preserving type )` |
-| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type )` |
-| `TranspChargeItemUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_itm_db_key preserving type )` |
-| `TranspChrgElmntCalcShtLineNo` |  | |  | `linenr` |
-| `TranspChargeInstrnType` |  | |  | `tccalcresins040` |
-| `TranspChargeElementType` |  | |  | `tcet084` |
-| `TranspChrgElmntCalcResBase` |  | |  | `clcresbas036` |
-| `TranspChrgElmntCalcDateType` |  | |  | `calc_date_type` |
-| `TranspChrgElmntCalcDateTime` |  | |  | `calc_date_tstmp` |
-| `TranspChrgElmntIsInactive` |  | |  | `inactive` |
-| `TranspChrgElmntLoglRefDesc` |  | |  | `ref_desc` |
-| `TranspRateAmtIsManuallyChanged` |  | |  | `fixatincod179_i` |
-| `TranspChrgElmntIsMandatory` |  | |  | `mandatory` |
-| `TranspChrgElmntCalcAmount` |  | |  | `cast( cast( calc_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_calc_amount_ml )` |
-| `TranspChrgElmntCalcAmtCrcy` |  | |  | `cast(calc_amount_curr as /scmtms/vdm_calc_amount_crcy preserving type)` |
-| `TranspChrgElmntInvcdAmount` |  | |  | `cast( cast( invoiced_amt as abap.dec(31,6)) * 10000 as /scmtms/vdm_invc_amount_ml )` |
-| `TranspChrgElmntInvcdAmtCrcy` |  | |  | `cast( invoiced_amt_curr as /scmtms/vdm_invc_amount_crcy preserving type )` |
-| `TranspChrgElmntRateAmount` |  | |  | `cast( cast( rate_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_rate_amount_ml )` |
-| `TranspChrgElmntRateAmtCrcy` |  | |  | `cast(rate_amount_curr as /scmtms/vdm_rate_amount_crcy preserving type)` |
-| `TranspChrgElmntAmtInDocCrcy` |  | |  | `cast( cast( amount as abap.dec(31,6) ) * 10000 as transpchrgtotalamtindoccrcy )` |
-| `TranspChrgElmntDocCurrency` |  | |  | `cast(currcode016 as /scmtms/doc_currency preserving type)` |
-| `TranspChrgElmntAmtInLoclCrcy` |  | |  | `cast( cast( amountlcl as abap.dec(31,6) ) * 10000 as transpchrgtotalamtinloclcrcy )` |
-| `TranspChrgElmntLoclCurrency` |  | |  | `cast(currcode016lcl as /scmtms/vdm_local_amount_crcy preserving type)` |
-| `TranspChrgElmntLineNumber` |  | |  | `cast(my_tce_linenr as /scmtms/vdm_chrg_el_line_no preserving type)` |
-| `TranspChrgElmntRefFrmLineNmbr` |  | |  | `cast(calc_ref_line_no as /scmtms/vdm_tcc_ref_frm_item preserving type )` |
-| `TranspChrgElmntRefToLineNmbr` |  | |  | `cast(calc_ref_to_no as /scmtms/vdm_tcc_ref_to_item preserving type )` |
-| `TranspChrgElmntIndexBaseDteTme` |  | |  | `index_base_date_ts` |
-| `TranspChrgElmntRndngPrfl` |  | |  | `round_rule` |
-| `TranspDimnWeightProfile` |  | |  | `dim_wt_profile` |
-| `TranspChrgElmntCalcMethName` |  | |  | `calc_meth_name` |
-| `TranspChrgElmntCalcMethType` |  | |  | `calc_meth_code` |
-| `TranspChargeCalcStatus` |  | |  | `cast( case when exceptionind = 'X' then '03' when inactive = 'X' or ( calc_amount is initial and zero_rate is initial and manual_change is initial and manual_entry is initial and amount is initial) or (rate_amount_curr = '%' and tccs_curr = '%' and amount is initial and calc_amount is initial ) then '05' else '02' end as /scmtms/tcc_calc_status )` |
-| `TranspChargePostingStatus` |  | |  | `invoicing` |
-| `TranspChrgElmntRateUUID` |  | |  | `uuid026` |
-| `TranspRateTableID` |  | |  | `rate_id` |
-| `TranspChrgElmntIdxRateTblUUID` |  | |  | `uuid_index_rate` |
-| `TranspChrgElmntRefElmntUUID` |  | |  | `cast(ref_elem_key as /scmtms/vdm_ref_chrg_el_uuid preserving type )` |
-| `TranspChrgElmntIsDeleted` |  | |  | `cast(is_technical as /scmtms/vdm_tcc_el_is_del preserving type )` |
-| `_TransportationCharge` | | ✓ | | |
-| `_TranspChargeInstrnType` | | ✓ | | |
-| `_TranspChargeElementType` | | ✓ | | |
-| `_TranspChargeCalcReslnBase` | | ✓ | | |
-| `_TranspChrgElmntCalcAmtCrcy` | | ✓ | | |
-| `_TranspChrgElmntInvcdAmtCrcy` | | ✓ | | |
-| `_TranspChrgElmntRateAmtCrcy` | | ✓ | | |
-| `_TranspChrgElmntDocCurrency` | | ✓ | | |
-| `_TranspChrgElmntLoclCurrency` | | ✓ | | |
-| `_TranspDimnWeightProfile` | | ✓ | | |
-| `_TranspChrgElmntCalcMethType` | | ✓ | | |
-| `_TranspChargePostingStatus` | | ✓ | | |
-| `_TranspChrgElmntCalcDateType` | | ✓ | | |
-| `_TranspChrgElmntRate` | | ✓ | | |
-| `_TranspChargeItem` | | ✓ | | |
-| `_TranspChargeCalcBase` | | ✓ | | |
-| `_TranspChargeCalcRule` | | ✓ | | |
-| `_TranspChargeExchRate` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChargeElementUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_chrg_element_uuid preserving type )` |  |  |
+| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type )` |  |  |
+| `TranspChargeItemUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_itm_db_key preserving type )` |  |  |
+| `TranspChrgElmntCalcShtLineNo` |  | |  | `linenr` |  |  |
+| `TranspChargeInstrnType` |  | |  | `tccalcresins040` |  |  |
+| `TranspChargeElementType` |  | |  | `tcet084` |  |  |
+| `TranspChrgElmntCalcResBase` |  | |  | `clcresbas036` |  |  |
+| `TranspChrgElmntCalcDateType` |  | |  | `calc_date_type` |  |  |
+| `TranspChrgElmntCalcDateTime` |  | |  | `calc_date_tstmp` |  |  |
+| `TranspChrgElmntIsInactive` |  | |  | `inactive` |  |  |
+| `TranspChrgElmntLoglRefDesc` |  | |  | `ref_desc` |  |  |
+| `TranspRateAmtIsManuallyChanged` |  | |  | `fixatincod179_i` |  |  |
+| `TranspChrgElmntIsMandatory` |  | |  | `mandatory` |  |  |
+| `TranspChrgElmntCalcAmount` |  | |  | `cast( cast( calc_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_calc_amount_ml )` |  |  |
+| `TranspChrgElmntCalcAmtCrcy` |  | |  | `cast(calc_amount_curr as /scmtms/vdm_calc_amount_crcy preserving type)` |  |  |
+| `TranspChrgElmntInvcdAmount` |  | |  | `cast( cast( invoiced_amt as abap.dec(31,6)) * 10000 as /scmtms/vdm_invc_amount_ml )` |  |  |
+| `TranspChrgElmntInvcdAmtCrcy` |  | |  | `cast( invoiced_amt_curr as /scmtms/vdm_invc_amount_crcy preserving type )` |  |  |
+| `TranspChrgElmntRateAmount` |  | |  | `cast( cast( rate_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_rate_amount_ml )` |  |  |
+| `TranspChrgElmntRateAmtCrcy` |  | |  | `cast(rate_amount_curr as /scmtms/vdm_rate_amount_crcy preserving type)` |  |  |
+| `TranspChrgElmntAmtInDocCrcy` |  | |  | `cast( cast( amount as abap.dec(31,6) ) * 10000 as transpchrgtotalamtindoccrcy )` |  |  |
+| `TranspChrgElmntDocCurrency` |  | |  | `cast(currcode016 as /scmtms/doc_currency preserving type)` |  |  |
+| `TranspChrgElmntAmtInLoclCrcy` |  | |  | `cast( cast( amountlcl as abap.dec(31,6) ) * 10000 as transpchrgtotalamtinloclcrcy )` |  |  |
+| `TranspChrgElmntLoclCurrency` |  | |  | `cast(currcode016lcl as /scmtms/vdm_local_amount_crcy preserving type)` |  |  |
+| `TranspChrgElmntLineNumber` |  | |  | `cast(my_tce_linenr as /scmtms/vdm_chrg_el_line_no preserving type)` |  |  |
+| `TranspChrgElmntRefFrmLineNmbr` |  | |  | `cast(calc_ref_line_no as /scmtms/vdm_tcc_ref_frm_item preserving type )` |  |  |
+| `TranspChrgElmntRefToLineNmbr` |  | |  | `cast(calc_ref_to_no as /scmtms/vdm_tcc_ref_to_item preserving type )` |  |  |
+| `TranspChrgElmntIndexBaseDteTme` |  | |  | `index_base_date_ts` |  |  |
+| `TranspChrgElmntRndngPrfl` |  | |  | `round_rule` |  |  |
+| `TranspDimnWeightProfile` |  | |  | `dim_wt_profile` |  |  |
+| `TranspChrgElmntCalcMethName` |  | |  | `calc_meth_name` |  |  |
+| `TranspChrgElmntCalcMethType` |  | |  | `calc_meth_code` |  |  |
+| `TranspChargeCalcStatus` |  | |  | `cast( case when exceptionind = 'X' then '03' when inactive = 'X' or ( calc_amount is initial and zero_rate is initial and manual_change is initial and manual_entry is initial and amount is initial) or (rate_amount_curr = '%' and tccs_curr = '%' and amount is initial and calc_amount is initial ) then '05' else '02' end as /scmtms/tcc_calc_status )` |  |  |
+| `TranspChargePostingStatus` |  | |  | `invoicing` |  |  |
+| `TranspChrgElmntRateUUID` |  | |  | `uuid026` |  |  |
+| `TranspRateTableID` |  | |  | `rate_id` |  |  |
+| `TranspChrgElmntIdxRateTblUUID` |  | |  | `uuid_index_rate` |  |  |
+| `TranspChrgElmntRefElmntUUID` |  | |  | `cast(ref_elem_key as /scmtms/vdm_ref_chrg_el_uuid preserving type )` |  |  |
+| `TranspChrgElmntIsDeleted` |  | |  | `cast(is_technical as /scmtms/vdm_tcc_el_is_del preserving type )` |  |  |
+| `_TransportationCharge` | | ✓ | | | | |
+| `_TranspChargeInstrnType` | | ✓ | | | | |
+| `_TranspChargeElementType` | | ✓ | | | | |
+| `_TranspChargeCalcReslnBase` | | ✓ | | | | |
+| `_TranspChrgElmntCalcAmtCrcy` | | ✓ | | | | |
+| `_TranspChrgElmntInvcdAmtCrcy` | | ✓ | | | | |
+| `_TranspChrgElmntRateAmtCrcy` | | ✓ | | | | |
+| `_TranspChrgElmntDocCurrency` | | ✓ | | | | |
+| `_TranspChrgElmntLoclCurrency` | | ✓ | | | | |
+| `_TranspDimnWeightProfile` | | ✓ | | | | |
+| `_TranspChrgElmntCalcMethType` | | ✓ | | | | |
+| `_TranspChargePostingStatus` | | ✓ | | | | |
+| `_TranspChrgElmntCalcDateType` | | ✓ | | | | |
+| `_TranspChrgElmntRate` | | ✓ | | | | |
+| `_TranspChargeItem` | | ✓ | | | | |
+| `_TranspChargeCalcBase` | | ✓ | | | | |
+| `_TranspChargeCalcRule` | | ✓ | | | | |
+| `_TranspChargeExchRate` | | ✓ | | | | |
 
 ## Associations
 

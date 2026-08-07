@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_Source` | `Language` |
-| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |
-| `CnsldtnFinancialStatementItem` | ✓ | | `_Source` | `CnsldtnFinancialStatementItem` |
-| `CnsldtnFSItemText` |  | | `_Source` | `CnsldtnFSItemText` |
-| `CnsldtnFSItemMediumText` |  | | `_Source` | `CnsldtnFSItemMediumText` |
-| `CnsldtnFSItemLongText` |  | | `_Source` | `CnsldtnFSItemLongText` |
-| `_CnsldtnFSItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |  |  |
+| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |  |  |
+| `CnsldtnFinancialStatementItem` | ✓ | | `_Source` | `CnsldtnFinancialStatementItem` |  |  |
+| `CnsldtnFSItemText` |  | | `_Source` | `CnsldtnFSItemText` |  |  |
+| `CnsldtnFSItemMediumText` |  | | `_Source` | `CnsldtnFSItemMediumText` |  |  |
+| `CnsldtnFSItemLongText` |  | | `_Source` | `CnsldtnFSItemLongText` |  |  |
+| `_CnsldtnFSItem` | | ✓ | | | | |
 
 ## Source Code
 

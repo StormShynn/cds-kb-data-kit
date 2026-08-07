@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `'IPURGPRCGCNDNREC'` |  | |  | `sqlViewName: 'IPURGPRCGCNDNREC'` |
-| `true` |  | |  | `compiler.compareFilter: true` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `'IPURGPRCGCNDNREC'` |  | |  | `sqlViewName: 'IPURGPRCGCNDNREC'` |  |  |
+| `true` |  | |  | `compiler.compareFilter: true` |  |  |
 
 ## Source Code
 

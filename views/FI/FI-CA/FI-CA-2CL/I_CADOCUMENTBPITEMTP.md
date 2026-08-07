@@ -30,153 +30,153 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CADocumentNumber` | ✓ | |  |  |
-| `CARepetitionItemNumber` | ✓ | |  |  |
-| `CABPItemNumber` | ✓ | |  |  |
-| `CASubItemNumber` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `Segment` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `Division` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `BusinessPartner` |  | |  |  |
-| `CAContract` |  | |  |  |
-| `CAProviderContractItemNumber` |  | |  |  |
-| `CAAdditionalContract` |  | |  |  |
-| `ContractAccount` |  | |  |  |
-| `CASubApplication` |  | |  |  |
-| `AltvContractAcctForCollvBills` |  | |  |  |
-| `CAReconciliationAccount` |  | |  |  |
-| `CAApplicationArea` |  | |  |  |
-| `CAMainTransaction` |  | |  |  |
-| `CASubTransaction` |  | |  |  |
-| `CAAccountDeterminationCode` |  | |  |  |
-| `CADoubtfulOrValueAdjmtCode` |  | |  |  |
-| `CAAccountAssignmentCategory` |  | |  |  |
-| `CAAccountAssignment` |  | |  |  |
-| `CADocumentType` |  | |  |  |
-| `CAIsDownPaymentRequest` |  | |  |  |
-| `CAItemIsOnlyForSettlement` |  | |  |  |
-| `CAStatisticalItemCode` |  | |  |  |
-| `CABPItemText` |  | |  |  |
-| `CANumberOfRepetitionItems` |  | |  |  |
-| `CARepetitionGroup` |  | |  |  |
-| `CAStartDateOfBillingPeriod` |  | |  |  |
-| `CAEndDateOfBillingPeriod` |  | |  |  |
-| `CAGroupingCodeForBPItems` |  | |  |  |
-| `CAPeriodCode` |  | |  |  |
-| `CAChangeIsForbidden` |  | |  |  |
-| `CAInterestCode` |  | |  |  |
-| `CARoundingItemCode` |  | |  |  |
-| `CAReceivingCountry` |  | |  |  |
-| `CAInternalPostingReasonCode` |  | |  |  |
-| `CAWorkflowCheckReason` |  | |  |  |
-| `CAWorkflowCheckProcess` |  | |  |  |
-| `CANegativePostingControlCode` |  | |  |  |
-| `CAPartnerSettlementStatus` |  | |  |  |
-| `CAIsPartOfJointLiability` |  | |  |  |
-| `CADocumentOriginCode` |  | |  |  |
-| `CASubstituteDocumentNumber` |  | |  |  |
-| `CASubstituteDocumentCategory` |  | |  |  |
-| `CAStatisticalCodeOfOriginItem` |  | |  |  |
-| `CADocumentNumberOfOriginItem` |  | |  |  |
-| `CAReferenceDocument` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `CAPostingDate` |  | |  |  |
-| `CANetDueDate` |  | |  |  |
-| `CADeferralDate` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AdditionalCurrency1` |  | |  |  |
-| `AdditionalCurrency2` |  | |  |  |
-| `CAExchangeRate` |  | |  |  |
-| `ExchRateIsIndirectQuotation` |  | |  |  |
-| `CAAmountInLocalCurrency` |  | |  |  |
-| `CAAmountInTransactionCurrency` |  | |  |  |
-| `CAAmountInSecondCurrency` |  | |  |  |
-| `CAAmountInThirdCurrency` |  | |  |  |
-| `CACashDiscountDueDate` |  | |  |  |
-| `CACashDiscountRate` |  | |  |  |
-| `CAEligibleAmountForCshDiscount` |  | |  |  |
-| `CACashDiscAmountInClearingCrcy` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `CASupplementaryTaxCode` |  | |  |  |
-| `CATaxAmountInLocalCurrency` |  | |  |  |
-| `CATaxAmountInTransCurrency` |  | |  |  |
-| `CATaxAmountInSecondCurrency` |  | |  |  |
-| `CATaxAmountInThirdCurrency` |  | |  |  |
-| `CADownPaymentTaxAccount` |  | |  |  |
-| `CADownPaymentOffsetTaxAccount` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `CATaxDate` |  | |  |  |
-| `WithholdingTaxCode` |  | |  |  |
-| `CAWithholdingTaxSupplement` |  | |  |  |
-| `CAWithholdingTaxCategory` |  | |  |  |
-| `CABaseAmountForWithholdingTax` |  | |  |  |
-| `CAWithholdingTaxAmount` |  | |  |  |
-| `CAWithholdingTaxPercentage` |  | |  |  |
-| `WithholdingTaxCertificate` |  | |  |  |
-| `CAOtherTaxCode` |  | |  |  |
-| `CAGroupingCodeForTaxItems` |  | |  |  |
-| `CATaxPortionInLocalCurrency` |  | |  |  |
-| `CATaxPortionInTransCurrency` |  | |  |  |
-| `CATaxIsCalculatedExternally` |  | |  |  |
-| `CAPaymentMethod` |  | |  |  |
-| `CAPaymentCompanyCode` |  | |  |  |
-| `CAGroupingForPayment` |  | |  |  |
-| `CAPaymentSpecificationCategory` |  | |  |  |
-| `CAClearingStatus` |  | |  |  |
-| `CAClearingDate` |  | |  |  |
-| `CAClearingDocumentNumber` |  | |  |  |
-| `CAPostingDateOfClearingDoc` |  | |  |  |
-| `CAClearingReason` |  | |  |  |
-| `CAClearingCurrency` |  | |  |  |
-| `CAClearingAmountInClearingCrcy` |  | |  |  |
-| `CATaxAmountInClearingCrcy` |  | |  |  |
-| `CAValueDateForClearing` |  | |  |  |
-| `CAClearingRestrictionCode` |  | |  |  |
-| `CAClearingPostingIsReset` |  | |  |  |
-| `CAItemIsWithdrawn` |  | |  |  |
-| `CAItemIsExcludedFromDunning` |  | |  |  |
-| `CADunningProcedure` |  | |  |  |
-| `CAGrpgCodeForTransfToCollAgcy` |  | |  |  |
-| `CAIsIncludedInCollectionCase` |  | |  |  |
-| `CashPlanningGroup` |  | |  |  |
-| `PlanningLevel` |  | |  |  |
-| `CAAdditionalDaysForCashMgmt` |  | |  |  |
-| `PlannedAmtInTransactionCrcy` |  | |  |  |
-| `CAAltvBPForPayment` |  | |  |  |
-| `CABankOfAltvBPForPayment` |  | |  |  |
-| `CAAddressOfAltvBPForPayment` |  | |  |  |
-| `CACardOfAltvBPForPayment` |  | |  |  |
-| `CAGLPostingCurrency` |  | |  |  |
-| `CAGLPostingAmount` |  | |  |  |
-| `CAGLPostingTaxAmount` |  | |  |  |
-| `CAIsSeparateLineItemInGL` |  | |  |  |
-| `CAIsCashFlowItem` |  | |  |  |
-| `CACashFlowAccount` |  | |  |  |
-| `CACashFlowCompanyCode` |  | |  |  |
-| `CAPaymentPreNotificationCode` |  | |  |  |
-| `CASEPAPreNotificationNumber` |  | |  |  |
-| `CASEPAPreNotifOriginCode` |  | |  |  |
-| `CASEPAPreNotifExecutionDate` |  | |  |  |
-| `CASEPAPreNotificationRqmtCode` |  | |  |  |
-| `CARevenueDistrFinalRecipient` |  | |  |  |
-| `CARevenueDistrCurrentStatus` |  | |  |  |
-| `CARevenueDistrLastStatus` |  | |  |  |
-| `CACurrentFactoringStatusOfRbl` |  | |  |  |
-| `CAFactoringCheckStsForClrgInfo` |  | |  |  |
-| `SEPAMandateCAInternalID` |  | |  |  |
-| `_DocHeader` | | ✓ | | |
-| `_BPItemBusLock` | | ✓ | | |
-| `_BusinessPartner` | | ✓ | | |
-| `_CAPartner` | | ✓ | | |
-| `_ProviderContract` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  |  |  |  |
+| `CARepetitionItemNumber` | ✓ | |  |  |  |  |
+| `CABPItemNumber` | ✓ | |  |  |  |  |
+| `CASubItemNumber` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `Division` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `BusinessPartner` |  | |  |  |  |  |
+| `CAContract` |  | |  |  |  |  |
+| `CAProviderContractItemNumber` |  | |  |  |  |  |
+| `CAAdditionalContract` |  | |  |  |  |  |
+| `ContractAccount` |  | |  |  |  |  |
+| `CASubApplication` |  | |  |  |  |  |
+| `AltvContractAcctForCollvBills` |  | |  |  |  |  |
+| `CAReconciliationAccount` |  | |  |  |  |  |
+| `CAApplicationArea` |  | |  |  |  |  |
+| `CAMainTransaction` |  | |  |  |  |  |
+| `CASubTransaction` |  | |  |  |  |  |
+| `CAAccountDeterminationCode` |  | |  |  |  |  |
+| `CADoubtfulOrValueAdjmtCode` |  | |  |  |  |  |
+| `CAAccountAssignmentCategory` |  | |  |  |  |  |
+| `CAAccountAssignment` |  | |  |  |  |  |
+| `CADocumentType` |  | |  |  |  |  |
+| `CAIsDownPaymentRequest` |  | |  |  |  |  |
+| `CAItemIsOnlyForSettlement` |  | |  |  |  |  |
+| `CAStatisticalItemCode` |  | |  |  |  |  |
+| `CABPItemText` |  | |  |  |  |  |
+| `CANumberOfRepetitionItems` |  | |  |  |  |  |
+| `CARepetitionGroup` |  | |  |  |  |  |
+| `CAStartDateOfBillingPeriod` |  | |  |  |  |  |
+| `CAEndDateOfBillingPeriod` |  | |  |  |  |  |
+| `CAGroupingCodeForBPItems` |  | |  |  |  |  |
+| `CAPeriodCode` |  | |  |  |  |  |
+| `CAChangeIsForbidden` |  | |  |  |  |  |
+| `CAInterestCode` |  | |  |  |  |  |
+| `CARoundingItemCode` |  | |  |  |  |  |
+| `CAReceivingCountry` |  | |  |  |  |  |
+| `CAInternalPostingReasonCode` |  | |  |  |  |  |
+| `CAWorkflowCheckReason` |  | |  |  |  |  |
+| `CAWorkflowCheckProcess` |  | |  |  |  |  |
+| `CANegativePostingControlCode` |  | |  |  |  |  |
+| `CAPartnerSettlementStatus` |  | |  |  |  |  |
+| `CAIsPartOfJointLiability` |  | |  |  |  |  |
+| `CADocumentOriginCode` |  | |  |  |  |  |
+| `CASubstituteDocumentNumber` |  | |  |  |  |  |
+| `CASubstituteDocumentCategory` |  | |  |  |  |  |
+| `CAStatisticalCodeOfOriginItem` |  | |  |  |  |  |
+| `CADocumentNumberOfOriginItem` |  | |  |  |  |  |
+| `CAReferenceDocument` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `CAPostingDate` |  | |  |  |  |  |
+| `CANetDueDate` |  | |  |  |  |  |
+| `CADeferralDate` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AdditionalCurrency1` |  | |  |  |  |  |
+| `AdditionalCurrency2` |  | |  |  |  |  |
+| `CAExchangeRate` |  | |  |  |  |  |
+| `ExchRateIsIndirectQuotation` |  | |  |  |  |  |
+| `CAAmountInLocalCurrency` |  | |  |  |  |  |
+| `CAAmountInTransactionCurrency` |  | |  |  |  |  |
+| `CAAmountInSecondCurrency` |  | |  |  |  |  |
+| `CAAmountInThirdCurrency` |  | |  |  |  |  |
+| `CACashDiscountDueDate` |  | |  |  |  |  |
+| `CACashDiscountRate` |  | |  |  |  |  |
+| `CAEligibleAmountForCshDiscount` |  | |  |  |  |  |
+| `CACashDiscAmountInClearingCrcy` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `CASupplementaryTaxCode` |  | |  |  |  |  |
+| `CATaxAmountInLocalCurrency` |  | |  |  |  |  |
+| `CATaxAmountInTransCurrency` |  | |  |  |  |  |
+| `CATaxAmountInSecondCurrency` |  | |  |  |  |  |
+| `CATaxAmountInThirdCurrency` |  | |  |  |  |  |
+| `CADownPaymentTaxAccount` |  | |  |  |  |  |
+| `CADownPaymentOffsetTaxAccount` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `CATaxDate` |  | |  |  |  |  |
+| `WithholdingTaxCode` |  | |  |  |  |  |
+| `CAWithholdingTaxSupplement` |  | |  |  |  |  |
+| `CAWithholdingTaxCategory` |  | |  |  |  |  |
+| `CABaseAmountForWithholdingTax` |  | |  |  |  |  |
+| `CAWithholdingTaxAmount` |  | |  |  |  |  |
+| `CAWithholdingTaxPercentage` |  | |  |  |  |  |
+| `WithholdingTaxCertificate` |  | |  |  |  |  |
+| `CAOtherTaxCode` |  | |  |  |  |  |
+| `CAGroupingCodeForTaxItems` |  | |  |  |  |  |
+| `CATaxPortionInLocalCurrency` |  | |  |  |  |  |
+| `CATaxPortionInTransCurrency` |  | |  |  |  |  |
+| `CATaxIsCalculatedExternally` |  | |  |  |  |  |
+| `CAPaymentMethod` |  | |  |  |  |  |
+| `CAPaymentCompanyCode` |  | |  |  |  |  |
+| `CAGroupingForPayment` |  | |  |  |  |  |
+| `CAPaymentSpecificationCategory` |  | |  |  |  |  |
+| `CAClearingStatus` |  | |  |  |  |  |
+| `CAClearingDate` |  | |  |  |  |  |
+| `CAClearingDocumentNumber` |  | |  |  |  |  |
+| `CAPostingDateOfClearingDoc` |  | |  |  |  |  |
+| `CAClearingReason` |  | |  |  |  |  |
+| `CAClearingCurrency` |  | |  |  |  |  |
+| `CAClearingAmountInClearingCrcy` |  | |  |  |  |  |
+| `CATaxAmountInClearingCrcy` |  | |  |  |  |  |
+| `CAValueDateForClearing` |  | |  |  |  |  |
+| `CAClearingRestrictionCode` |  | |  |  |  |  |
+| `CAClearingPostingIsReset` |  | |  |  |  |  |
+| `CAItemIsWithdrawn` |  | |  |  |  |  |
+| `CAItemIsExcludedFromDunning` |  | |  |  |  |  |
+| `CADunningProcedure` |  | |  |  |  |  |
+| `CAGrpgCodeForTransfToCollAgcy` |  | |  |  |  |  |
+| `CAIsIncludedInCollectionCase` |  | |  |  |  |  |
+| `CashPlanningGroup` |  | |  |  |  |  |
+| `PlanningLevel` |  | |  |  |  |  |
+| `CAAdditionalDaysForCashMgmt` |  | |  |  |  |  |
+| `PlannedAmtInTransactionCrcy` |  | |  |  |  |  |
+| `CAAltvBPForPayment` |  | |  |  |  |  |
+| `CABankOfAltvBPForPayment` |  | |  |  |  |  |
+| `CAAddressOfAltvBPForPayment` |  | |  |  |  |  |
+| `CACardOfAltvBPForPayment` |  | |  |  |  |  |
+| `CAGLPostingCurrency` |  | |  |  |  |  |
+| `CAGLPostingAmount` |  | |  |  |  |  |
+| `CAGLPostingTaxAmount` |  | |  |  |  |  |
+| `CAIsSeparateLineItemInGL` |  | |  |  |  |  |
+| `CAIsCashFlowItem` |  | |  |  |  |  |
+| `CACashFlowAccount` |  | |  |  |  |  |
+| `CACashFlowCompanyCode` |  | |  |  |  |  |
+| `CAPaymentPreNotificationCode` |  | |  |  |  |  |
+| `CASEPAPreNotificationNumber` |  | |  |  |  |  |
+| `CASEPAPreNotifOriginCode` |  | |  |  |  |  |
+| `CASEPAPreNotifExecutionDate` |  | |  |  |  |  |
+| `CASEPAPreNotificationRqmtCode` |  | |  |  |  |  |
+| `CARevenueDistrFinalRecipient` |  | |  |  |  |  |
+| `CARevenueDistrCurrentStatus` |  | |  |  |  |  |
+| `CARevenueDistrLastStatus` |  | |  |  |  |  |
+| `CACurrentFactoringStatusOfRbl` |  | |  |  |  |  |
+| `CAFactoringCheckStsForClrgInfo` |  | |  |  |  |  |
+| `SEPAMandateCAInternalID` |  | |  |  |  |  |
+| `_DocHeader` | | ✓ | | | | |
+| `_BPItemBusLock` | | ✓ | | | | |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_CAPartner` | | ✓ | | | | |
+| `_ProviderContract` | | ✓ | | | | |
 
 ## Source Code
 

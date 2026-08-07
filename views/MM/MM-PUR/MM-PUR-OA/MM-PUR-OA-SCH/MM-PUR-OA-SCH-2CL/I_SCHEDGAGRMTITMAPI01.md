@@ -28,78 +28,78 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentItemText` |  | |  |  |
-| `Material` |  | |  |  |
-| `ManufacturerMaterial` |  | |  |  |
-| `SupplierMaterialNumber` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ManualDeliveryAddressID` |  | |  |  |
-| `ReferenceDeliveryAddressID` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `WeightUnit` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `SchedAgrmtAgreedCumQty` |  | |  |  |
-| `SchedAgrmtCumQtyReconcileDate` |  | |  |  |
-| `ItemLastTransmissionDate` |  | |  |  |
-| `NoDaysReminder1` |  | |  |  |
-| `NoDaysReminder2` |  | |  |  |
-| `NoDaysReminder3` |  | |  |  |
-| `SupplierConfirmationControlKey` |  | |  | `ConfirmationControl` |
-| `PurgDocOrderAcknNumber` |  | |  |  |
-| `RequirementTracking` |  | |  |  |
-| `IsOrderAcknRqd` |  | |  |  |
-| `PurgDocEstimatedPrice` |  | |  |  |
-| `PriceIsToBePrinted` |  | |  |  |
-| `AccountAssignmentCategory` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `OrderPriceUnit` |  | |  |  |
-| `ProductType` |  | |  |  |
-| `MaterialType` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `IsInfoRecordUpdated` |  | |  |  |
-| `PurchasingInfoRecord` |  | |  |  |
-| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
-| `PurchasingDocumentDeletionCode` |  | |  |  |
-| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
-| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
-| `StockType` |  | |  | `InventoryUsabilityCode` |
-| `TaxCode` |  | |  |  |
-| `ShippingInstruction` |  | |  |  |
-| `IsInfoAtRegistration` |  | |  |  |
-| `GoodsReceiptIsExpected` |  | |  |  |
-| `GoodsReceiptIsNonValuated` |  | |  |  |
-| `InvoiceIsExpected` |  | |  |  |
-| `InvoiceIsGoodsReceiptBased` |  | |  |  |
-| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
-| `MinRemainingShelfLife` |  | |  |  |
-| `QualityMgmtCtrlKey` |  | |  |  |
-| `QualityCertificateType` |  | |  |  |
-| `SchedAgrmtCumulativeQtyControl` |  | |  |  |
-| `CumulativeQuantityIsNotSent` |  | |  |  |
-| `SchedgAgrmtRelCreationProfile` |  | |  |  |
-| `IsRelevantForJITDelivSchedule` |  | |  |  |
-| `NextFcstDelivSchedSendingDate` |  | |  |  |
-| `NextJITDelivSchedSendingDate` |  | |  |  |
-| `ScheduleLineFirmOrderInDays` |  | |  |  |
-| `SchedLineSemiFirmOrderInDays` |  | |  |  |
-| `FirmTradeOffZoneBindMRP` |  | |  |  |
-| `_SchedgAgrmtHdrAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `ManufacturerMaterial` |  | |  |  |  |  |
+| `SupplierMaterialNumber` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `WeightUnit` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `SchedAgrmtAgreedCumQty` |  | |  |  |  |  |
+| `SchedAgrmtCumQtyReconcileDate` |  | |  |  |  |  |
+| `ItemLastTransmissionDate` |  | |  |  |  |  |
+| `NoDaysReminder1` |  | |  |  |  |  |
+| `NoDaysReminder2` |  | |  |  |  |  |
+| `NoDaysReminder3` |  | |  |  |  |  |
+| `SupplierConfirmationControlKey` |  | |  | `ConfirmationControl` |  |  |
+| `PurgDocOrderAcknNumber` |  | |  |  |  |  |
+| `RequirementTracking` |  | |  |  |  |  |
+| `IsOrderAcknRqd` |  | |  |  |  |  |
+| `PurgDocEstimatedPrice` |  | |  |  |  |  |
+| `PriceIsToBePrinted` |  | |  |  |  |  |
+| `AccountAssignmentCategory` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `OrderPriceUnit` |  | |  |  |  |  |
+| `ProductType` |  | |  |  |  |  |
+| `MaterialType` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `IsInfoRecordUpdated` |  | |  |  |  |  |
+| `PurchasingInfoRecord` |  | |  |  |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |  |  |
+| `StockType` |  | |  | `InventoryUsabilityCode` |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `ShippingInstruction` |  | |  |  |  |  |
+| `IsInfoAtRegistration` |  | |  |  |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |  |  |
+| `InvoiceIsExpected` |  | |  |  |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |  |  |
+| `MinRemainingShelfLife` |  | |  |  |  |  |
+| `QualityMgmtCtrlKey` |  | |  |  |  |  |
+| `QualityCertificateType` |  | |  |  |  |  |
+| `SchedAgrmtCumulativeQtyControl` |  | |  |  |  |  |
+| `CumulativeQuantityIsNotSent` |  | |  |  |  |  |
+| `SchedgAgrmtRelCreationProfile` |  | |  |  |  |  |
+| `IsRelevantForJITDelivSchedule` |  | |  |  |  |  |
+| `NextFcstDelivSchedSendingDate` |  | |  |  |  |  |
+| `NextJITDelivSchedSendingDate` |  | |  |  |  |  |
+| `ScheduleLineFirmOrderInDays` |  | |  |  |  |  |
+| `SchedLineSemiFirmOrderInDays` |  | |  |  |  |  |
+| `FirmTradeOffZoneBindMRP` |  | |  |  |  |  |
+| `_SchedgAgrmtHdrAPI01` | | ✓ | | | | |
 
 ## Associations
 

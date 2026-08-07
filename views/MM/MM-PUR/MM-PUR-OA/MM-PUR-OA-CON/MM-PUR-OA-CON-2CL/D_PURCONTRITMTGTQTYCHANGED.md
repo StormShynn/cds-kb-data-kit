@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchaseContractTargetQuantity` |  | |  | `ktmng` |
-| `PurContractOrderQuantityUnit` |  | |  | `meins` |
-| `PurContractPrevTargetQuantity` |  | |  | `ktmng` |
-| `PurContrPrevOrderQuantityUnit` |  | |  | `meins` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseContractTargetQuantity` |  | |  | `ktmng` |  |  |
+| `PurContractOrderQuantityUnit` |  | |  | `meins` |  |  |
+| `PurContractPrevTargetQuantity` |  | |  | `ktmng` |  |  |
+| `PurContrPrevOrderQuantityUnit` |  | |  | `meins` |  |  |
 
 ## Source Code
 

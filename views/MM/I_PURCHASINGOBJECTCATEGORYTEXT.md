@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocumentCategory` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as ebstyp )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `PurchasingDocumentCategoryName` |  | |  | `cast( ddtext as mmpur_object_category_name preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PurchasingObjectCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocumentCategory` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as ebstyp )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `PurchasingDocumentCategoryName` |  | |  | `cast( ddtext as mmpur_object_category_name preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PurchasingObjectCategory` | | ✓ | | | | |
 
 ## Associations
 

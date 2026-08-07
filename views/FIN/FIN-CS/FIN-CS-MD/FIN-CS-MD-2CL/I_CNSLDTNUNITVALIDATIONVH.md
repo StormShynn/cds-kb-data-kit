@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationUnitValidation` | ✓ | | `_CnsldtnUnitValidation` | `ConsolidationUnitValidation` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnitValidation` | ✓ | | `_CnsldtnUnitValidation` | `ConsolidationUnitValidation` |  |  |
 
 ## Source Code
 

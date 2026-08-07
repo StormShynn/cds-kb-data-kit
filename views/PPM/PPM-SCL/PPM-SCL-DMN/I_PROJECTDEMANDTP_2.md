@@ -31,58 +31,58 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandUUID` | ✓ | |  |  |
-| `ProjectDemand` |  | |  |  |
-| `ProjectDemandName` |  | |  |  |
-| `ProjectDemandDescription` |  | |  |  |
-| `ProjectDemandCategory` |  | |  |  |
-| `ProjectDemandType` |  | |  |  |
-| `ProjectUUID` |  | |  |  |
-| `ReferencedObjectUUID` |  | |  |  |
-| `ProjectDemandStatus` |  | |  |  |
-| `ProjectDemandDateMaintenance` |  | |  |  |
-| `ProjectDemandStartDate` |  | |  |  |
-| `ProjectDemandEndDate` |  | |  |  |
-| `ProjectDemandReleasedDateTime` |  | |  |  |
-| `ProjDmndActualSupplyDate` |  | |  |  |
-| `ProjectDemandPerUnitAmount` |  | |  | `} ProjectDemandPerUnitAmount` |
-| `ProjectDemandRequestCurrency` |  | |  |  |
-| `ProjDmndRequestedQuantityUnit` |  | |  |  |
-| `PriceUnitQty` |  | |  |  |
-| `ProjectDemandRequestNetAmount` |  | |  | `} ProjectDemandRequestNetAmount` |
-| `ProjDmndReqNetAmountCurrency` |  | |  |  |
-| `ProjectDemandOverallAmount` |  | |  | `} ProjectDemandOverallAmount` |
-| `ProjDmndRequestedQuantity` |  | |  | `} ProjDmndRequestedQuantity` |
-| `Plant` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `ProjectDemandLastChangedByUser` |  | |  |  |
-| `ProjDemandLastChangeDateTime` |  | |  |  |
-| `ProjectDemandOverallRevenue` |  | |  | `} ProjectDemandOverallRevenue` |
-| `ProjDmndOverallRevenueCurrency` |  | |  |  |
-| `ProjDmndDataModelVersion` |  | |  |  |
-| `_Material` | | ✓ | | |
-| `_Service` | | ✓ | | |
-| `_Work` | | ✓ | | |
-| `_Expense` | | ✓ | | |
-| `_WorkPackage` | | ✓ | | |
-| `_ProjectDemandCurrency` | | ✓ | | |
-| `_ProjectDemandNetCurrency` | | ✓ | | |
-| `_ProjDmndQuantityUnit` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_PurchasingGroup` | | ✓ | | |
-| `_PurchasingOrganisation` | | ✓ | | |
-| `_MngProjDmndSrvcPurReqnOrd` | | ✓ | | |
-| `_ProjDmndMatlPurReqnOrd` | | ✓ | | |
-| `_ProjectDemandVH` | | ✓ | | |
-| `_Project` | | ✓ | | |
-| `_EnterpriseProjectForUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandUUID` | ✓ | |  |  |  |  |
+| `ProjectDemand` |  | |  |  |  |  |
+| `ProjectDemandName` |  | |  |  |  |  |
+| `ProjectDemandDescription` |  | |  |  |  |  |
+| `ProjectDemandCategory` |  | |  |  |  |  |
+| `ProjectDemandType` |  | |  |  |  |  |
+| `ProjectUUID` |  | |  |  |  |  |
+| `ReferencedObjectUUID` |  | |  |  |  |  |
+| `ProjectDemandStatus` |  | |  |  |  |  |
+| `ProjectDemandDateMaintenance` |  | |  |  |  |  |
+| `ProjectDemandStartDate` |  | |  |  |  |  |
+| `ProjectDemandEndDate` |  | |  |  |  |  |
+| `ProjectDemandReleasedDateTime` |  | |  |  |  |  |
+| `ProjDmndActualSupplyDate` |  | |  |  |  |  |
+| `ProjectDemandPerUnitAmount` |  | |  |  |  |  |
+| `ProjectDemandRequestCurrency` |  | |  |  |  |  |
+| `ProjDmndRequestedQuantityUnit` |  | |  |  |  |  |
+| `PriceUnitQty` |  | |  |  |  |  |
+| `ProjectDemandRequestNetAmount` |  | |  |  |  |  |
+| `ProjDmndReqNetAmountCurrency` |  | |  |  |  |  |
+| `ProjectDemandOverallAmount` |  | |  |  |  |  |
+| `ProjDmndRequestedQuantity` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `ProjectDemandLastChangedByUser` |  | |  |  |  |  |
+| `ProjDemandLastChangeDateTime` |  | |  |  |  |  |
+| `ProjectDemandOverallRevenue` |  | |  |  |  |  |
+| `ProjDmndOverallRevenueCurrency` |  | |  |  |  |  |
+| `ProjDmndDataModelVersion` |  | |  |  |  |  |
+| `_Material` | | ✓ | | | | |
+| `_Service` | | ✓ | | | | |
+| `_Work` | | ✓ | | | | |
+| `_Expense` | | ✓ | | | | |
+| `_WorkPackage` | | ✓ | | | | |
+| `_ProjectDemandCurrency` | | ✓ | | | | |
+| `_ProjectDemandNetCurrency` | | ✓ | | | | |
+| `_ProjDmndQuantityUnit` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_PurchasingGroup` | | ✓ | | | | |
+| `_PurchasingOrganisation` | | ✓ | | | | |
+| `_MngProjDmndSrvcPurReqnOrd` | | ✓ | | | | |
+| `_ProjDmndMatlPurReqnOrd` | | ✓ | | | | |
+| `_ProjectDemandVH` | | ✓ | | | | |
+| `_Project` | | ✓ | | | | |
+| `_EnterpriseProjectForUser` | | ✓ | | | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAChargeType` | ✓ | |  | `chgty` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAChargeType` | ✓ | |  | `chgty` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

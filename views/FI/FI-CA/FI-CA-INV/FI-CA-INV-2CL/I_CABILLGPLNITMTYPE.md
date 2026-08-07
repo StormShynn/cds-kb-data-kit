@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CABillgPlnItmType` | ✓ | | `_tfk8213` | `bipitemtype` |
-| `CABillgPlnItmCat` |  | | `_tfk8213` | `bipitemcat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgPlnItmType` | ✓ | | `_tfk8213` | `bipitemtype` |  |  |
+| `CABillgPlnItmCat` |  | | `_tfk8213` | `bipitemcat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

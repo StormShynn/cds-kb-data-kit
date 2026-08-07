@@ -28,47 +28,47 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `QualityTaskInternalId` | ✓ | | `_QualityTask` | `QualityTaskInternalId` |
-| `QualityTask` |  | | `_QualityTask` | `QualityTask` |
-| `QualityTaskOrigin` |  | | `_QualityTask` | `QualityTaskOrigin` |
-| `QualityTaskText` |  | | `_QualityTask` | `QualityTaskText` |
-| `IsDeleted` |  | | `_QualityTask` | `IsDeleted` |
-| `QualityTaskProcessor` |  | | `_QualityTask` | `QualityTaskProcessor` |
-| `MasterLanguage` |  | | `_QualityTask` | `MasterLanguage` |
-| `NotifTaskCompletedByUser` |  | | `_QualityTask` | `NotifTaskCompletedByUser` |
-| `QualityTaskType` |  | | `_QualityTask` | `QualityTaskType` |
-| `QualityTaskCodeCatalog` |  | | `_QualityTask` | `QualityTaskCodeCatalog` |
-| `QualityTaskCodeGroup` |  | | `_QualityTask` | `QualityTaskCodeGroup` |
-| `QualityTaskCode` |  | | `_QualityTask` | `QualityTaskCode` |
-| `NotifTaskTimeZone` |  | | `_QualityTask` | `NotifTaskTimeZone` |
-| `NotifTaskPlannedEndDate` |  | | `_QualityTask` | `NotifTaskPlannedEndDate` |
-| `NotifTaskPlannedEndTime` |  | | `_QualityTask` | `NotifTaskPlannedEndTime` |
-| `NotifTaskCompletionDate` |  | | `_QualityTask` | `NotifTaskCompletionDate` |
-| `NotifTaskCompletionTime` |  | | `_QualityTask` | `NotifTaskCompletionTime` |
-| `NotifTaskResubmissionDate` |  | | `_QualityTask` | `NotifTaskResubmissionDate` |
-| `NotifTaskResubmissionTime` |  | | `_QualityTask` | `NotifTaskResubmissionTime` |
-| `DefectInternalID` |  | | `_QualityTask` | `DefectInternalID` |
-| `PredecessorQltyTaskIntNumber` |  | | `_QualityTask` | `PredecessorQltyTaskIntNumber` |
-| `ProbSolvingProc` |  | | `_QualityTask` | `ProbSolvingProc` |
-| `ProbSolvingProcStp` |  | | `_QualityTask` | `ProbSolvingProcStp` |
-| `ProbSolvingProcCause` |  | | `_QualityTask` | `ProbSolvingProcCause` |
-| `QltyTaskFollowUpAction` |  | | `_QualityTask` | `QltyTaskFollowUpAction` |
-| `QualityTaskLifecycleStatus` |  | | `_QualityTask` | `QualityTaskLifecycleStatus` |
-| `QualityTaskArchivingStatus` |  | | `_QualityTask` | `QualityTaskArchivingStatus` |
-| `QltyTaskFllwUpActionSts` |  | | `_QualityTask` | `QltyTaskFllwUpActionSts` |
-| `CreatedByUser` |  | | `_QualityTask` | `CreatedByUser` |
-| `CreationDate` |  | | `_QualityTask` | `CreationDate` |
-| `CreationTime` |  | | `_QualityTask` | `CreationTime` |
-| `ChangedDateTime` |  | | `_QualityTask` | `ChangedDateTime` |
-| `LastChangeDate` |  | | `_QualityTask` | `LastChangeDate` |
-| `LastChangeTime` |  | | `_QualityTask` | `LastChangeTime` |
-| `LastChangedByUser` |  | | `_QualityTask` | `LastChangedByUser` |
-| `QltyTskProcgIsCtrldByTskOrigin` |  | | `_QualityTask` | `QltyTskProcgIsCtrldByTskOrigin` |
-| `QltyTaskTimeBasedEffort` |  | | `_QualityTask` | `QltyTaskTimeBasedEffort` |
-| `QltyTaskTimeBasedEffortUoM` |  | | `_QualityTask` | `QltyTaskTimeBasedEffortUoM` |
-| `_QualityTaskLongText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `QualityTaskInternalId` | ✓ | | `_QualityTask` | `QualityTaskInternalId` |  |  |
+| `QualityTask` |  | | `_QualityTask` | `QualityTask` |  |  |
+| `QualityTaskOrigin` |  | | `_QualityTask` | `QualityTaskOrigin` |  |  |
+| `QualityTaskText` |  | | `_QualityTask` | `QualityTaskText` |  |  |
+| `IsDeleted` |  | | `_QualityTask` | `IsDeleted` |  |  |
+| `QualityTaskProcessor` |  | | `_QualityTask` | `QualityTaskProcessor` |  |  |
+| `MasterLanguage` |  | | `_QualityTask` | `MasterLanguage` |  |  |
+| `NotifTaskCompletedByUser` |  | | `_QualityTask` | `NotifTaskCompletedByUser` |  |  |
+| `QualityTaskType` |  | | `_QualityTask` | `QualityTaskType` |  |  |
+| `QualityTaskCodeCatalog` |  | | `_QualityTask` | `QualityTaskCodeCatalog` |  |  |
+| `QualityTaskCodeGroup` |  | | `_QualityTask` | `QualityTaskCodeGroup` |  |  |
+| `QualityTaskCode` |  | | `_QualityTask` | `QualityTaskCode` |  |  |
+| `NotifTaskTimeZone` |  | | `_QualityTask` | `NotifTaskTimeZone` |  |  |
+| `NotifTaskPlannedEndDate` |  | | `_QualityTask` | `NotifTaskPlannedEndDate` |  |  |
+| `NotifTaskPlannedEndTime` |  | | `_QualityTask` | `NotifTaskPlannedEndTime` |  |  |
+| `NotifTaskCompletionDate` |  | | `_QualityTask` | `NotifTaskCompletionDate` |  |  |
+| `NotifTaskCompletionTime` |  | | `_QualityTask` | `NotifTaskCompletionTime` |  |  |
+| `NotifTaskResubmissionDate` |  | | `_QualityTask` | `NotifTaskResubmissionDate` |  |  |
+| `NotifTaskResubmissionTime` |  | | `_QualityTask` | `NotifTaskResubmissionTime` |  |  |
+| `DefectInternalID` |  | | `_QualityTask` | `DefectInternalID` |  |  |
+| `PredecessorQltyTaskIntNumber` |  | | `_QualityTask` | `PredecessorQltyTaskIntNumber` |  |  |
+| `ProbSolvingProc` |  | | `_QualityTask` | `ProbSolvingProc` |  |  |
+| `ProbSolvingProcStp` |  | | `_QualityTask` | `ProbSolvingProcStp` |  |  |
+| `ProbSolvingProcCause` |  | | `_QualityTask` | `ProbSolvingProcCause` |  |  |
+| `QltyTaskFollowUpAction` |  | | `_QualityTask` | `QltyTaskFollowUpAction` |  |  |
+| `QualityTaskLifecycleStatus` |  | | `_QualityTask` | `QualityTaskLifecycleStatus` |  |  |
+| `QualityTaskArchivingStatus` |  | | `_QualityTask` | `QualityTaskArchivingStatus` |  |  |
+| `QltyTaskFllwUpActionSts` |  | | `_QualityTask` | `QltyTaskFllwUpActionSts` |  |  |
+| `CreatedByUser` |  | | `_QualityTask` | `CreatedByUser` |  |  |
+| `CreationDate` |  | | `_QualityTask` | `CreationDate` |  |  |
+| `CreationTime` |  | | `_QualityTask` | `CreationTime` |  |  |
+| `ChangedDateTime` |  | | `_QualityTask` | `ChangedDateTime` |  |  |
+| `LastChangeDate` |  | | `_QualityTask` | `LastChangeDate` |  |  |
+| `LastChangeTime` |  | | `_QualityTask` | `LastChangeTime` |  |  |
+| `LastChangedByUser` |  | | `_QualityTask` | `LastChangedByUser` |  |  |
+| `QltyTskProcgIsCtrldByTskOrigin` |  | | `_QualityTask` | `QltyTskProcgIsCtrldByTskOrigin` |  |  |
+| `QltyTaskTimeBasedEffort` |  | | `_QualityTask` | `QltyTaskTimeBasedEffort` |  |  |
+| `QltyTaskTimeBasedEffortUoM` |  | | `_QualityTask` | `QltyTaskTimeBasedEffortUoM` |  |  |
+| `_QualityTaskLongText` | | ✓ | | | | |
 
 ## Source Code
 

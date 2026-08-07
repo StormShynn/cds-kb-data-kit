@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `matnr` |  | |  | `}] Material : matnr` |
-| `EquipmentCategory` |  | |  | `eqtyp` |
-| `UniqueItemIdentifierRespPlant` |  | |  | `uii_plant` |
-| `EquipMaterialLastSerialNumber` |  | |  | `lsernr` |
-| `EquipmentNumberOfSerialNumbers` |  | |  | `anzser` |
-| `EquipmentFromSerialNumber` |  | |  | `servon` |
-| `EquipmentToSerialNumber` |  | |  | `serbis` |
-| `D_EquipCreateSerialNumberListP` |  | |  | `_SerialList : composition [0..*] of D_EquipCreateSerialNumberListP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` |  | |  | `matnr` |  |  |
+| `EquipmentCategory` |  | |  | `eqtyp` |  |  |
+| `UniqueItemIdentifierRespPlant` |  | |  | `uii_plant` |  |  |
+| `EquipMaterialLastSerialNumber` |  | |  | `lsernr` |  |  |
+| `EquipmentNumberOfSerialNumbers` |  | |  | `anzser` |  |  |
+| `EquipmentFromSerialNumber` |  | |  | `servon` |  |  |
+| `EquipmentToSerialNumber` |  | |  | `serbis` |  |  |
+| `D_EquipCreateSerialNumberListP` |  | |  | `_SerialList : composition [0..*] of D_EquipCreateSerialNumberListP` |  |  |
 
 ## Source Code
 

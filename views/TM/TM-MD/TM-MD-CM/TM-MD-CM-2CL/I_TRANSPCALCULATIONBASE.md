@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationCalculationBase` | ✓ | |  | `cast(calc_base as /scmtms/vdm_tcm_calc_base preserving type)` |
-| `TransportationScaleBase` |  | |  | `scale_base` |
-| `_TranspScaleBase` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationCalculationBase` | ✓ | |  | `cast(calc_base as /scmtms/vdm_tcm_calc_base preserving type)` |  |  |
+| `TransportationScaleBase` |  | |  | `scale_base` |  |  |
+| `_TranspScaleBase` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

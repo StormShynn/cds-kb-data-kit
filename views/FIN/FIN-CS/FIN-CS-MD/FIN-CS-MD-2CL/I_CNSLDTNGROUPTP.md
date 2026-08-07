@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |
-| `I_CnsldtnGroupTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnGroupTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |  |  |
+| `I_CnsldtnGroupTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnGroupTextTP` |  |  |
 
 ## Source Code
 

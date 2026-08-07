@@ -27,70 +27,70 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  | `matnr` |
-| `QltyInProcmtIntID` | ✓ | |  | `cast(qinf.zaehl as vdm_qm_qltyinprocmtintid preserving type )` |
-| `Supplier` |  | |  | `lieferant` |
-| `Plant` |  | |  | `werk` |
-| `MaterialRevisionLevel` |  | |  | `cast( qinf.revlv as vdm_qm_revlv preserving type )` |
-| `QltyInProcmtReleaseValidTo` |  | |  | `frei_dat` |
-| `QltyInProcmtRelQtyIsActive` |  | |  | `cast( qinf.frei_mgkz as vdm_qfreimgkz preserving type )` |
-| `BaseUnit` |  | |  | `me` |
-| `ReleasedQuantity` |  | |  | `frei_mng` |
-| `OrderedQuantity` |  | |  | `best_mg` |
-| `QltyInProcmtResetOnDate` |  | |  | `dat_rueck` |
-| `BlockReason` |  | |  | `sperrgrund` |
-| `ProcurementBlock` |  | |  | `sperrfkt` |
-| `QualityManagementSystem` |  | |  | `qssysfam` |
-| `QltyInProcmtCertfnValidTo` |  | |  | `qssysdat` |
-| `SupplierProcurementBlock` |  | | `_Supplier` | `SupplierProcurementBlock` |
-| `SuplrQualityManagementSystem` |  | | `_Supplier` | `SuplrQualityManagementSystem` |
-| `SuplrQltyInProcmtCertfnValidTo` |  | | `_Supplier` | `SuplrQltyInProcmtCertfnValidTo` |
-| `QltyInProcmtInspControl` |  | |  | `noinsp` |
-| `InspectionLotType` |  | |  | `variabnahm` |
-| `QltyInProcmtHasLongText` |  | |  | `ltextkz` |
-| `QltyInProcmtNoFurtherInsp` |  | |  | `cast( qinf.noinspabn as vdm_qnoweabn preserving type )` |
-| `QltyInProcmtLotCrtnLeadTime` |  | |  | `vorlabn` |
-| `IsDeleted` |  | |  | `loekz` |
-| `QltyInProcmtCertificateCtrl` |  | |  | `certcontrol` |
-| `QltyInProcmtHasAssuranceAgrmt` |  | |  | `cast( qinf.qvvorh as vdm_qqsvvorh preserving type )` |
-| `QltyInProcmtCurInspLot` |  | |  | `plos` |
-| `QltyInProcmtNextInspLot` |  | |  | `plos2` |
-| `ProdnPieceApprovalIsRequired` |  | |  | `ppap_is_required` |
-| `ProductionPieceApproval` |  | |  | `ppap_id` |
-| `ProductionPieceApprovalLevel` |  | |  | `ppap_level` |
-| `ProductionPieceApprovalStatus` |  | |  | `ppap_status` |
-| `StatusProfile` |  | |  | `stsma` |
-| `ControllingObject` |  | |  | `objnr` |
-| `CreatedByUser` |  | |  | `ersteller` |
-| `CreationDate` |  | |  | `erstelldat` |
-| `LastChangedByUser` |  | |  | `aenderer` |
-| `LastChangeDate` |  | |  | `aenderdat` |
-| `ChangedDateTime` |  | |  | `case qinf.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qinf.changeddatetime end` |
-| `Language` |  | |  | `spras` |
-| `LinkedSAPObjectKey` |  | | `_DocObjKeyForQltyInProcmt` | `LinkedSAPObjectKey` |
-| `DocumentInfoRecordDocType` |  | |  | `cast( 'Q01' as qdokart preserving type )` |
-| `_Plant` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_ProductPlantQtManagement` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_StatusProfile` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
-| `_LastChangedByUser` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_ProcurementBlock` | | ✓ | | |
-| `_SupplierProcurementBlock` | | ✓ | | |
-| `_QualityManagementSystem` | | ✓ | | |
-| `_SuplrQltyMgmtSystem` | | ✓ | | |
-| `_InspectionLotType` | | ✓ | | |
-| `_QltyInProcmtCurInspLot` | | ✓ | | |
-| `_QltyInProcmtNextInspLot` | | ✓ | | |
-| `_ControllingObject` | | ✓ | | |
-| `_QltyInProcmtInspControl` | | ✓ | | |
-| `_QltyInProcmtCertificateCtrl` | | ✓ | | |
-| `_QltyFirstArticleInsp` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  | `matnr` |  |  |
+| `QltyInProcmtIntID` | ✓ | |  | `cast(qinf.zaehl as vdm_qm_qltyinprocmtintid preserving type )` |  |  |
+| `Supplier` |  | |  | `lieferant` |  |  |
+| `Plant` |  | |  | `werk` |  |  |
+| `MaterialRevisionLevel` |  | |  | `cast( qinf.revlv as vdm_qm_revlv preserving type )` |  |  |
+| `QltyInProcmtReleaseValidTo` |  | |  | `frei_dat` |  |  |
+| `QltyInProcmtRelQtyIsActive` |  | |  | `cast( qinf.frei_mgkz as vdm_qfreimgkz preserving type )` |  |  |
+| `BaseUnit` |  | |  | `me` |  |  |
+| `ReleasedQuantity` |  | |  | `frei_mng` |  |  |
+| `OrderedQuantity` |  | |  | `best_mg` |  |  |
+| `QltyInProcmtResetOnDate` |  | |  | `dat_rueck` |  |  |
+| `BlockReason` |  | |  | `sperrgrund` |  |  |
+| `ProcurementBlock` |  | |  | `sperrfkt` |  |  |
+| `QualityManagementSystem` |  | |  | `qssysfam` |  |  |
+| `QltyInProcmtCertfnValidTo` |  | |  | `qssysdat` |  |  |
+| `SupplierProcurementBlock` |  | | `_Supplier` | `SupplierProcurementBlock` |  |  |
+| `SuplrQualityManagementSystem` |  | | `_Supplier` | `SuplrQualityManagementSystem` |  |  |
+| `SuplrQltyInProcmtCertfnValidTo` |  | | `_Supplier` | `SuplrQltyInProcmtCertfnValidTo` |  |  |
+| `QltyInProcmtInspControl` |  | |  | `noinsp` |  |  |
+| `InspectionLotType` |  | |  | `variabnahm` |  |  |
+| `QltyInProcmtHasLongText` |  | |  | `ltextkz` |  |  |
+| `QltyInProcmtNoFurtherInsp` |  | |  | `cast( qinf.noinspabn as vdm_qnoweabn preserving type )` |  |  |
+| `QltyInProcmtLotCrtnLeadTime` |  | |  | `vorlabn` |  |  |
+| `IsDeleted` |  | |  | `loekz` |  |  |
+| `QltyInProcmtCertificateCtrl` |  | |  | `certcontrol` |  |  |
+| `QltyInProcmtHasAssuranceAgrmt` |  | |  | `cast( qinf.qvvorh as vdm_qqsvvorh preserving type )` |  |  |
+| `QltyInProcmtCurInspLot` |  | |  | `plos` |  |  |
+| `QltyInProcmtNextInspLot` |  | |  | `plos2` |  |  |
+| `ProdnPieceApprovalIsRequired` |  | |  | `ppap_is_required` |  |  |
+| `ProductionPieceApproval` |  | |  | `ppap_id` |  |  |
+| `ProductionPieceApprovalLevel` |  | |  | `ppap_level` |  |  |
+| `ProductionPieceApprovalStatus` |  | |  | `ppap_status` |  |  |
+| `StatusProfile` |  | |  | `stsma` |  |  |
+| `ControllingObject` |  | |  | `objnr` |  |  |
+| `CreatedByUser` |  | |  | `ersteller` |  |  |
+| `CreationDate` |  | |  | `erstelldat` |  |  |
+| `LastChangedByUser` |  | |  | `aenderer` |  |  |
+| `LastChangeDate` |  | |  | `aenderdat` |  |  |
+| `ChangedDateTime` |  | |  | `case qinf.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qinf.changeddatetime end` |  |  |
+| `Language` |  | |  | `spras` |  |  |
+| `LinkedSAPObjectKey` |  | | `_DocObjKeyForQltyInProcmt` | `LinkedSAPObjectKey` |  |  |
+| `DocumentInfoRecordDocType` |  | |  | `cast( 'Q01' as qdokart preserving type )` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_ProductPlantQtManagement` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_StatusProfile` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
+| `_LastChangedByUser` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_ProcurementBlock` | | ✓ | | | | |
+| `_SupplierProcurementBlock` | | ✓ | | | | |
+| `_QualityManagementSystem` | | ✓ | | | | |
+| `_SuplrQltyMgmtSystem` | | ✓ | | | | |
+| `_InspectionLotType` | | ✓ | | | | |
+| `_QltyInProcmtCurInspLot` | | ✓ | | | | |
+| `_QltyInProcmtNextInspLot` | | ✓ | | | | |
+| `_ControllingObject` | | ✓ | | | | |
+| `_QltyInProcmtInspControl` | | ✓ | | | | |
+| `_QltyInProcmtCertificateCtrl` | | ✓ | | | | |
+| `_QltyFirstArticleInsp` | | ✓ | | | | |
 
 ## Associations
 

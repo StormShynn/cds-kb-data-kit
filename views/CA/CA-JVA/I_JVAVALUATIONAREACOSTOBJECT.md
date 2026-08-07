@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ValuationArea` | ✓ | |  | `bwkey` |
-| `ValuationType` | ✓ | |  | `bwtar` |
-| `CostCenter` |  | |  | `kostl` |
-| `WBSElementInternalID` |  | |  | `pspnr` |
-| `OrderID` |  | |  | `aufnr` |
-| `JointVentureConditionKey` |  | |  | `condcod` |
-| `_ValuationArea` | | ✓ | | |
-| `_JVAValuationType` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationArea` | ✓ | |  | `bwkey` |  |  |
+| `ValuationType` | ✓ | |  | `bwtar` |  |  |
+| `CostCenter` |  | |  | `kostl` |  |  |
+| `WBSElementInternalID` |  | |  | `pspnr` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `JointVentureConditionKey` |  | |  | `condcod` |  |  |
+| `_ValuationArea` | | ✓ | | | | |
+| `_JVAValuationType` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
 
 ## Associations
 

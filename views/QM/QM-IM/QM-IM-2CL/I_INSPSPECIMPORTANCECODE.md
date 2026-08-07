@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspSpecImportanceCode` | ✓ | |  | `merkklasse` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspSpecImportanceCode` | ✓ | |  | `merkklasse` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

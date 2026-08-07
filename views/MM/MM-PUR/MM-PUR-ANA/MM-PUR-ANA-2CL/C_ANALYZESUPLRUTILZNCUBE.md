@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  |  |
-| `SupplierAccountGroup` |  | |  |  |
-| `AuthorizationGroup` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `NmbrOfAvailableSuppliers` |  | |  |  |
-| `NumberOfContracts` |  | |  |  |
-| `_Country` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  |  |  |  |
+| `SupplierAccountGroup` |  | |  |  |  |  |
+| `AuthorizationGroup` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `NmbrOfAvailableSuppliers` |  | |  |  |  |  |
+| `NumberOfContracts` |  | |  |  |  |  |
+| `_Country` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
 
 ## Associations
 

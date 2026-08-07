@@ -31,29 +31,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `StockTransportOrder` | ✓ | |  |  |
-| `PartnerFunction` | ✓ | |  |  |
-| `SupplierSubrange` |  | |  |  |
-| `Plant` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PartnerCounter` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `PurchasingDocumentPartnerType` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierHierarchyCategory` |  | |  |  |
-| `SupplierContact` |  | |  |  |
-| `PersonWorkAgreement` |  | |  |  |
-| `_PartnerFunction` | | ✓ | | |
-| `_PartnerFunctionText` | | ✓ | | |
-| `_PersonWorkAgreement` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_StockTransportOrder` | | ✓ | | |
-| `_PurchasingOrganization` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_SupplierContact` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |  |  |
+| `PartnerFunction` | ✓ | |  |  |  |  |
+| `SupplierSubrange` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PartnerCounter` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `PurchasingDocumentPartnerType` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierHierarchyCategory` |  | |  |  |  |  |
+| `SupplierContact` |  | |  |  |  |  |
+| `PersonWorkAgreement` |  | |  |  |  |  |
+| `_PartnerFunction` | | ✓ | | | | |
+| `_PartnerFunctionText` | | ✓ | | | | |
+| `_PersonWorkAgreement` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StockTransportOrder` | | ✓ | | | | |
+| `_PurchasingOrganization` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_SupplierContact` | | ✓ | | | | |
 
 ## Source Code
 

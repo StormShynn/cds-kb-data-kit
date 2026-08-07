@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartnerRatingProcedure` | ✓ | |  |  |
-| `BPRatingIsRequired` |  | |  |  |
-| `BusinessPartnerRatingIsDefault` |  | |  |  |
-| `BPRatingStandardAccessDays` |  | |  |  |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerRatingProcedure` | ✓ | |  |  |  |  |
+| `BPRatingIsRequired` |  | |  |  |  |  |
+| `BusinessPartnerRatingIsDefault` |  | |  |  |  |  |
+| `BPRatingStandardAccessDays` |  | |  |  |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

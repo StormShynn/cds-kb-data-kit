@@ -30,27 +30,27 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkflowInternalID` | ✓ | |  | `WorkflowTaskInternalID` |
-| `WorkflowExternalStatus` |  | |  | `WorkflowTaskStatus` |
-| `WorkflowScenarioDefinition` |  | |  | `WorkflowTaskDefinition` |
-| `WorkflowScenarioDefinitionVers` |  | |  | `WorkflowTaskDefinitionVersion` |
-| `WrkflwTskCreationUTCDateTime` |  | |  |  |
-| `WrkflwTskCompletionUTCDateTime` |  | |  |  |
-| `SAPObjectNodeRepresentation` |  | |  |  |
-| `SAPBusinessObjectNodeKey1` |  | |  |  |
-| `SAPBusinessObjectNodeKey2` |  | |  |  |
-| `SAPBusinessObjectNodeKey3` |  | |  |  |
-| `SAPBusinessObjectNodeKey4` |  | |  |  |
-| `SAPBusinessObjectNodeKey5` |  | |  |  |
-| `SAPBusinessObjectNodeKey6` |  | |  |  |
-| `NmbrOfCmpltdWrkflwDialogTasks` |  | |  | `sum(case when Tasks.WorkflowTaskExternalStatus = 'COMPLETED' or WorkflowTaskExternalStatus = 'CANCELLED' then Tasks.NumberOfWorkflowDialogTasks else 0 end )` |
-| `NmbrOfActiveWrkflwDialogTasks` |  | |  | `sum(case when Tasks.WorkflowTaskExternalStatus != 'COMPLETED' and WorkflowTaskExternalStatus != 'CANCELLED' then Tasks.NumberOfWorkflowDialogTasks else 0 end )` |
-| `_WorkflowExternalStatus` | | ✓ | | |
-| `_WorkflowScenarioDefinition` | | ✓ | | |
-| `_WorkflowStatusDetails` | | ✓ | | |
-| `_WorkflowResult` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowInternalID` | ✓ | |  | `WorkflowTaskInternalID` |  |  |
+| `WorkflowExternalStatus` |  | |  | `WorkflowTaskStatus` |  |  |
+| `WorkflowScenarioDefinition` |  | |  | `WorkflowTaskDefinition` |  |  |
+| `WorkflowScenarioDefinitionVers` |  | |  | `WorkflowTaskDefinitionVersion` |  |  |
+| `WrkflwTskCreationUTCDateTime` |  | |  |  |  |  |
+| `WrkflwTskCompletionUTCDateTime` |  | |  |  |  |  |
+| `SAPObjectNodeRepresentation` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey1` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey2` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey3` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey4` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey5` |  | |  |  |  |  |
+| `SAPBusinessObjectNodeKey6` |  | |  |  |  |  |
+| `NmbrOfCmpltdWrkflwDialogTasks` |  | |  | `sum(case when Tasks.WorkflowTaskExternalStatus = 'COMPLETED' or WorkflowTaskExternalStatus = 'CANCELLED' then Tasks.NumberOfWorkflowDialogTasks else 0 end )` |  |  |
+| `NmbrOfActiveWrkflwDialogTasks` |  | |  | `sum(case when Tasks.WorkflowTaskExternalStatus != 'COMPLETED' and WorkflowTaskExternalStatus != 'CANCELLED' then Tasks.NumberOfWorkflowDialogTasks else 0 end )` |  |  |
+| `_WorkflowExternalStatus` | | ✓ | | | | |
+| `_WorkflowScenarioDefinition` | | ✓ | | | | |
+| `_WorkflowStatusDetails` | | ✓ | | | | |
+| `_WorkflowResult` | | ✓ | | | | |
 
 ## Associations
 

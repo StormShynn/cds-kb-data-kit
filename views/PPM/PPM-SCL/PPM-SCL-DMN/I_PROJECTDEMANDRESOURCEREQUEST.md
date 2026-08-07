@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjDmndResourceRequestUUID` | ✓ | |  |  |
-| `ProjectDemandWorkUUID` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `ProjectDemandRequestedResource` |  | |  |  |
-| `ProjDmndStfngInstructionText` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_Root` | | ✓ | | |
-| `_Work` | | ✓ | | |
-| `_ProjDmndRsceReqDistr` | | ✓ | | |
-| `_PersonWorkAgrmt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjDmndResourceRequestUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandWorkUUID` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `ProjectDemandRequestedResource` |  | |  |  |  |  |
+| `ProjDmndStfngInstructionText` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_Root` | | ✓ | | | | |
+| `_Work` | | ✓ | | | | |
+| `_ProjDmndRsceReqDistr` | | ✓ | | | | |
+| `_PersonWorkAgrmt` | | ✓ | | | | |
 
 ## Associations
 

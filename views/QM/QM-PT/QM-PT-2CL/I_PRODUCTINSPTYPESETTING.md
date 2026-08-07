@@ -28,41 +28,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLotType` | ✓ | |  | `art` |
-| `Product` | ✓ | |  | `matnr` |
-| `Plant` | ✓ | |  | `werks` |
-| `InspLotIsTaskListRequired` |  | |  | `ppl` |
-| `InspLotHasMaterialSpec` |  | |  | `spezueber` |
-| `InspLotHasConfignSpecification` |  | |  | `conf` |
-| `InspLotHasBatchCharc` |  | |  | `tls` |
-| `InspLotHasAutomSpecAssgmt` |  | |  | `app` |
-| `InspLotHasCharc` |  | |  | `mer` |
-| `HasPostToInspectionStock` |  | |  | `insmk` |
-| `InspLotIsAutomUsgeDcsnPossible` |  | |  | `ave` |
-| `SamplingProcedure` |  | |  | `stichprver` |
-| `InspLotDynamicRule` |  | |  | `dynregel` |
-| `InspLotSampleQuantityInPercent` |  | |  | `sproz` |
-| `InspectionLotIsFullInspection` |  | |  | `hpz` |
-| `InspLotSkipIsAllowed` |  | |  | `dyn` |
-| `InspLotHasManualSampleSize` |  | |  | `mpb` |
-| `InspLotIsSmplCalcMnlTriggered` |  | |  | `mst` |
-| `InspLotIsSerialNmbrPossible` |  | |  | `ein` |
-| `InspLotDurationInDays` |  | |  | `mpdau` |
-| `InspLotSummaryControl` |  | |  | `chg` |
-| `InspQualityScoreProcedure` |  | |  | `qkzverf` |
-| `InspLotAcceptedScrapRatioInPct` |  | |  | `qpmat` |
-| `InspectionLotHasAppraisalCosts` |  | |  | `kzprfkost` |
-| `QualityCostCollector` |  | |  | `aufnr_co` |
-| `ProdInspTypeSettingIsActive` |  | |  | `aktiv` |
-| `InspTypeIsPrfrd` |  | |  | `apa` |
-| `InspLotHasHandlingUnit` |  | |  | `afr` |
-| `InspLotHasMultipleSpec` |  | |  | `ms_flag` |
-| `InspLotOfEWMSummaryControl` |  | |  | `chg_orig_17` |
-| `_InspectionLotType` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLotType` | ✓ | |  | `art` |  |  |
+| `Product` | ✓ | |  | `matnr` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `InspLotIsTaskListRequired` |  | |  | `ppl` |  |  |
+| `InspLotHasMaterialSpec` |  | |  | `spezueber` |  |  |
+| `InspLotHasConfignSpecification` |  | |  | `conf` |  |  |
+| `InspLotHasBatchCharc` |  | |  | `tls` |  |  |
+| `InspLotHasAutomSpecAssgmt` |  | |  | `app` |  |  |
+| `InspLotHasCharc` |  | |  | `mer` |  |  |
+| `HasPostToInspectionStock` |  | |  | `insmk` |  |  |
+| `InspLotIsAutomUsgeDcsnPossible` |  | |  | `ave` |  |  |
+| `SamplingProcedure` |  | |  | `stichprver` |  |  |
+| `InspLotDynamicRule` |  | |  | `dynregel` |  |  |
+| `InspLotSampleQuantityInPercent` |  | |  | `sproz` |  |  |
+| `InspectionLotIsFullInspection` |  | |  | `hpz` |  |  |
+| `InspLotSkipIsAllowed` |  | |  | `dyn` |  |  |
+| `InspLotHasManualSampleSize` |  | |  | `mpb` |  |  |
+| `InspLotIsSmplCalcMnlTriggered` |  | |  | `mst` |  |  |
+| `InspLotIsSerialNmbrPossible` |  | |  | `ein` |  |  |
+| `InspLotDurationInDays` |  | |  | `mpdau` |  |  |
+| `InspLotSummaryControl` |  | |  | `chg` |  |  |
+| `InspQualityScoreProcedure` |  | |  | `qkzverf` |  |  |
+| `InspLotAcceptedScrapRatioInPct` |  | |  | `qpmat` |  |  |
+| `InspectionLotHasAppraisalCosts` |  | |  | `kzprfkost` |  |  |
+| `QualityCostCollector` |  | |  | `aufnr_co` |  |  |
+| `ProdInspTypeSettingIsActive` |  | |  | `aktiv` |  |  |
+| `InspTypeIsPrfrd` |  | |  | `apa` |  |  |
+| `InspLotHasHandlingUnit` |  | |  | `afr` |  |  |
+| `InspLotHasMultipleSpec` |  | |  | `ms_flag` |  |  |
+| `InspLotOfEWMSummaryControl` |  | |  | `chg_orig_17` |  |  |
+| `_InspectionLotType` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

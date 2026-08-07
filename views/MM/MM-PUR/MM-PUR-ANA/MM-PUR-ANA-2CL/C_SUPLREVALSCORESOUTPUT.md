@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalScoresOutputUUID` | ✓ | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierName` |  | | `_Supplier` | `SupplierName` |
-| `IdentifierOfScoreHistoryJobRun` |  | |  |  |
-| `SuplrEvalScoreOutputActionType` |  | |  |  |
-| `SuplrEvalScoreOutpActnTypeText` |  | |  | `_OutputScoreTypeText._Text[1: Language = $session.system_language].SuplrEvalScoreOutpActnTypeText` |
-| `SuplrEvalScoreOutputStatus` |  | |  |  |
-| `SuplrEvalScoreOutputStatusText` |  | |  | `_OutputStatusText._Text[1: Language = $session.system_language].SuplrEvalScoreOutputStatusText` |
-| `StartDate` |  | |  |  |
-| `EndDate` |  | |  |  |
-| `SuplrEvalScoreOutpTriggerDate` |  | |  |  |
-| `CreatedByUser` |  | |  | `UserDescription` |
-| `SuplrEvalScoreOutpCreationDate` |  | |  |  |
-| `DisplayCurrency` |  | |  | `cast('' as waers)` |
-| `_OutputScoreTypeText` | | ✓ | | |
-| `_OutputStatusText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalScoresOutputUUID` | ✓ | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierName` |  | | `_Supplier` | `SupplierName` |  |  |
+| `IdentifierOfScoreHistoryJobRun` |  | |  |  |  |  |
+| `SuplrEvalScoreOutputActionType` |  | |  |  |  |  |
+| `SuplrEvalScoreOutpActnTypeText` |  | |  | `_OutputScoreTypeText._Text[1: Language = $session.system_language].SuplrEvalScoreOutpActnTypeText` |  |  |
+| `SuplrEvalScoreOutputStatus` |  | |  |  |  |  |
+| `SuplrEvalScoreOutputStatusText` |  | |  | `_OutputStatusText._Text[1: Language = $session.system_language].SuplrEvalScoreOutputStatusText` |  |  |
+| `StartDate` |  | |  |  |  |  |
+| `EndDate` |  | |  |  |  |  |
+| `SuplrEvalScoreOutpTriggerDate` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  | `UserDescription` |  |  |
+| `SuplrEvalScoreOutpCreationDate` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  | `cast('' as waers)` |  |  |
+| `_OutputScoreTypeText` | | ✓ | | | | |
+| `_OutputStatusText` | | ✓ | | | | |
 
 ## Associations
 

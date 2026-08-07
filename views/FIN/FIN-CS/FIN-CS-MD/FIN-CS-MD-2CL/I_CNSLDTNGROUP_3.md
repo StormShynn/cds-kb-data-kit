@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationGroup` | ✓ | |  | `cast( _tf180.congr as fincs_md_congr preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationGroup` | ✓ | |  | `cast( _tf180.congr as fincs_md_congr preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

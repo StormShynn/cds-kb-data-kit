@@ -30,130 +30,130 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderConfirmationGroup` | ✓ | |  | `ConfirmationGroup` |
-| `OrderConfirmation` | ✓ | |  | `cast(conf.OrderConfirmation as vdm_prodnorderconf preserving type)` |
-| `ProductionOrder` |  | |  | `cast(conf.OrderID as vdm_manufacturingorder preserving type)` |
-| `ProductionOrderSequence` |  | |  | `cast(conf.Sequence as vdm_prodnordersequence preserving type)` |
-| `ProductionOrderOperation` |  | |  | `cast(conf.OrderOperation_2 as vdm_prodnorderoperation preserving type)` |
-| `OrderCategory` |  | |  |  |
-| `ProductionOrderType` |  | |  | `cast(conf.OrderType as vdm_prodnordertype preserving type)` |
-| `OrderInternalID` |  | |  |  |
-| `OrderOperationInternalID` |  | |  |  |
-| `SuperiorOperationInternalID` |  | |  |  |
-| `ConfirmationText` |  | |  |  |
-| `LongTextLanguage` |  | |  | `Language` |
-| `LongTextExists` |  | |  |  |
-| `ConfirmationEntryDate` |  | |  |  |
-| `ConfirmationEntryTime` |  | |  |  |
-| `EnteredByUser` |  | |  |  |
-| `LastChangeDate` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ConfirmationExternalEntryDate` |  | |  |  |
-| `ConfirmationExternalEntryTime` |  | |  |  |
-| `EnteredByExternalUser` |  | |  |  |
-| `FinalConfirmationType` |  | |  |  |
-| `OpenReservationsIsCleared` |  | |  |  |
-| `ConfirmationIsReversed` |  | |  | `IsReversed` |
-| `CancelledOrderConfirmation` |  | |  | `CancldMfgOrderConfCount` |
-| `APIConfHasNoGoodsMovements` |  | |  |  |
-| `ConfirmationApplicationOrigin` |  | |  |  |
-| `OrderConfirmationType` |  | |  |  |
-| `OrderConfirmationRecordType` |  | |  |  |
-| `MilestoneConfirmationType` |  | |  |  |
-| `IsConfirmedByMilestoneConf` |  | |  |  |
-| `MilestoneConfirmationGroup` |  | |  |  |
-| `MilestoneConfirmation` |  | |  |  |
-| `Plant` |  | |  |  |
-| `WorkCenterType` |  | |  | `WorkCenterTypeCode` |
-| `WorkCenterInternalID` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `CapacityInternalID` |  | |  |  |
-| `CapacityRequirementSplit` |  | |  |  |
-| `ShiftGrouping` |  | |  |  |
-| `ShiftDefinition` |  | |  |  |
-| `FailedGoodsMovement` |  | |  |  |
-| `PlantDataCollectionID` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `SenderCostCenter` |  | |  |  |
-| `HCMEmployeeAssignment` |  | |  | `Personnel` |
-| `TimeRecording` |  | |  |  |
-| `NumberOfEmployees` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `PostingDateYear` |  | |  |  |
-| `ConfirmedExecutionStartDate` |  | |  |  |
-| `ConfirmedExecutionStartTime` |  | |  |  |
-| `ConfirmedSetupEndDate` |  | |  |  |
-| `ConfirmedSetupEndTime` |  | |  |  |
-| `ConfirmedProcessingStartDate` |  | |  |  |
-| `ConfirmedProcessingStartTime` |  | |  |  |
-| `ConfirmedProcessingEndDate` |  | |  |  |
-| `ConfirmedProcessingEndTime` |  | |  |  |
-| `ConfirmedTeardownStartDate` |  | |  |  |
-| `ConfirmedTeardownStartTime` |  | |  |  |
-| `ConfirmedExecutionEndDate` |  | |  |  |
-| `ConfirmedExecutionEndTime` |  | |  |  |
-| `ConfirmationUnit` |  | |  |  |
-| `ConfirmationYieldQuantity` |  | |  |  |
-| `ConfirmationScrapQuantity` |  | |  |  |
-| `ConfirmationReworkQuantity` |  | |  |  |
-| `ConfirmationTotalQuantity` |  | |  |  |
-| `VarianceReasonCode` |  | |  |  |
-| `ProductionUnit` |  | |  | `cast(OrderQuantityUnit as productionunit preserving type)` |
-| `ConfYieldQtyInProductionUnit` |  | |  | `cast(ConfirmedYieldQtyInOrderUnit as ru_gmnga preserving type)` |
-| `OperationUnit` |  | |  |  |
-| `OpPlannedTotalQuantity` |  | |  |  |
-| `OpWorkQuantityUnit1` |  | |  |  |
-| `OpConfirmedWorkQuantity1` |  | |  |  |
-| `NoFurtherOpWorkQuantity1IsExpd` |  | |  |  |
-| `OpWorkQuantityUnit2` |  | |  |  |
-| `OpConfirmedWorkQuantity2` |  | |  |  |
-| `NoFurtherOpWorkQuantity2IsExpd` |  | |  |  |
-| `OpWorkQuantityUnit3` |  | |  |  |
-| `OpConfirmedWorkQuantity3` |  | |  |  |
-| `NoFurtherOpWorkQuantity3IsExpd` |  | |  |  |
-| `OpWorkQuantityUnit4` |  | |  |  |
-| `OpConfirmedWorkQuantity4` |  | |  |  |
-| `NoFurtherOpWorkQuantity4IsExpd` |  | |  |  |
-| `OpWorkQuantityUnit5` |  | |  |  |
-| `OpConfirmedWorkQuantity5` |  | |  |  |
-| `NoFurtherOpWorkQuantity5IsExpd` |  | |  |  |
-| `OpWorkQuantityUnit6` |  | |  |  |
-| `OpConfirmedWorkQuantity6` |  | |  |  |
-| `NoFurtherOpWorkQuantity6IsExpd` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `BusinessProcessEntryUnit` |  | |  |  |
-| `BusinessProcessConfirmedQty` |  | |  |  |
-| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |
-| `BusinessProcRemainingQtyUnit` |  | |  |  |
-| `BusinessProcessRemainingQty` |  | |  |  |
-| `BreakDurationUnit` |  | |  |  |
-| `ConfirmedBreakDuration` |  | |  |  |
-| `_LongTextLanguage` |  | |  | `_Language` |
-| `_ProductionOrder` | | ✓ | | |
-| `_ProductionOrderSequence` | | ✓ | | |
-| `_ProductionOrderOperation` | | ✓ | | |
-| `_ProductionOrderType` | | ✓ | | |
-| `_ProductionUnit` | | ✓ | | |
-| `_RmngBusinessProcessUnit` | | ✓ | | |
-| `_EnteredByUser` | | ✓ | | |
-| `_ChangedByUser` | | ✓ | | |
-| `_WorkCenterInternal` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_MaterialDocumentItem` | | ✓ | | |
-| `_FailedGoodsMovement` | | ✓ | | |
-| `_FailedGoodsMovementItem` | | ✓ | | |
-| `_FailedActualCost` | | ✓ | | |
-| `_PlantText` | | ✓ | | |
-| `_ProductionOrderText` | | ✓ | | |
-| `_WorkCenterText` | | ✓ | | |
-| `_BusinessAreaText` | | ✓ | | |
-| `_CompanyCodeText` | | ✓ | | |
-| `_ControllingAreaText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderConfirmationGroup` | ✓ | |  | `ConfirmationGroup` |  |  |
+| `OrderConfirmation` | ✓ | |  | `cast(conf.OrderConfirmation as vdm_prodnorderconf preserving type)` |  |  |
+| `ProductionOrder` |  | |  | `cast(conf.OrderID as vdm_manufacturingorder preserving type)` |  |  |
+| `ProductionOrderSequence` |  | |  | `cast(conf.Sequence as vdm_prodnordersequence preserving type)` |  |  |
+| `ProductionOrderOperation` |  | |  | `cast(conf.OrderOperation_2 as vdm_prodnorderoperation preserving type)` |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `ProductionOrderType` |  | |  | `cast(conf.OrderType as vdm_prodnordertype preserving type)` |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `OrderOperationInternalID` |  | |  |  |  |  |
+| `SuperiorOperationInternalID` |  | |  |  |  |  |
+| `ConfirmationText` |  | |  |  |  |  |
+| `LongTextLanguage` |  | |  | `Language` |  |  |
+| `LongTextExists` |  | |  |  |  |  |
+| `ConfirmationEntryDate` |  | |  |  |  |  |
+| `ConfirmationEntryTime` |  | |  |  |  |  |
+| `EnteredByUser` |  | |  |  |  |  |
+| `LastChangeDate` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ConfirmationExternalEntryDate` |  | |  |  |  |  |
+| `ConfirmationExternalEntryTime` |  | |  |  |  |  |
+| `EnteredByExternalUser` |  | |  |  |  |  |
+| `FinalConfirmationType` |  | |  |  |  |  |
+| `OpenReservationsIsCleared` |  | |  |  |  |  |
+| `ConfirmationIsReversed` |  | |  | `IsReversed` |  |  |
+| `CancelledOrderConfirmation` |  | |  | `CancldMfgOrderConfCount` |  |  |
+| `APIConfHasNoGoodsMovements` |  | |  |  |  |  |
+| `ConfirmationApplicationOrigin` |  | |  |  |  |  |
+| `OrderConfirmationType` |  | |  |  |  |  |
+| `OrderConfirmationRecordType` |  | |  |  |  |  |
+| `MilestoneConfirmationType` |  | |  |  |  |  |
+| `IsConfirmedByMilestoneConf` |  | |  |  |  |  |
+| `MilestoneConfirmationGroup` |  | |  |  |  |  |
+| `MilestoneConfirmation` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `WorkCenterType` |  | |  | `WorkCenterTypeCode` |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `CapacityInternalID` |  | |  |  |  |  |
+| `CapacityRequirementSplit` |  | |  |  |  |  |
+| `ShiftGrouping` |  | |  |  |  |  |
+| `ShiftDefinition` |  | |  |  |  |  |
+| `FailedGoodsMovement` |  | |  |  |  |  |
+| `PlantDataCollectionID` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `SenderCostCenter` |  | |  |  |  |  |
+| `HCMEmployeeAssignment` |  | |  | `Personnel` |  |  |
+| `TimeRecording` |  | |  |  |  |  |
+| `NumberOfEmployees` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `PostingDateYear` |  | |  |  |  |  |
+| `ConfirmedExecutionStartDate` |  | |  |  |  |  |
+| `ConfirmedExecutionStartTime` |  | |  |  |  |  |
+| `ConfirmedSetupEndDate` |  | |  |  |  |  |
+| `ConfirmedSetupEndTime` |  | |  |  |  |  |
+| `ConfirmedProcessingStartDate` |  | |  |  |  |  |
+| `ConfirmedProcessingStartTime` |  | |  |  |  |  |
+| `ConfirmedProcessingEndDate` |  | |  |  |  |  |
+| `ConfirmedProcessingEndTime` |  | |  |  |  |  |
+| `ConfirmedTeardownStartDate` |  | |  |  |  |  |
+| `ConfirmedTeardownStartTime` |  | |  |  |  |  |
+| `ConfirmedExecutionEndDate` |  | |  |  |  |  |
+| `ConfirmedExecutionEndTime` |  | |  |  |  |  |
+| `ConfirmationUnit` |  | |  |  |  |  |
+| `ConfirmationYieldQuantity` |  | |  |  |  |  |
+| `ConfirmationScrapQuantity` |  | |  |  |  |  |
+| `ConfirmationReworkQuantity` |  | |  |  |  |  |
+| `ConfirmationTotalQuantity` |  | |  |  |  |  |
+| `VarianceReasonCode` |  | |  |  |  |  |
+| `ProductionUnit` |  | |  | `cast(OrderQuantityUnit as productionunit preserving type)` |  |  |
+| `ConfYieldQtyInProductionUnit` |  | |  | `cast(ConfirmedYieldQtyInOrderUnit as ru_gmnga preserving type)` |  |  |
+| `OperationUnit` |  | |  |  |  |  |
+| `OpPlannedTotalQuantity` |  | |  |  |  |  |
+| `OpWorkQuantityUnit1` |  | |  |  |  |  |
+| `OpConfirmedWorkQuantity1` |  | |  |  |  |  |
+| `NoFurtherOpWorkQuantity1IsExpd` |  | |  |  |  |  |
+| `OpWorkQuantityUnit2` |  | |  |  |  |  |
+| `OpConfirmedWorkQuantity2` |  | |  |  |  |  |
+| `NoFurtherOpWorkQuantity2IsExpd` |  | |  |  |  |  |
+| `OpWorkQuantityUnit3` |  | |  |  |  |  |
+| `OpConfirmedWorkQuantity3` |  | |  |  |  |  |
+| `NoFurtherOpWorkQuantity3IsExpd` |  | |  |  |  |  |
+| `OpWorkQuantityUnit4` |  | |  |  |  |  |
+| `OpConfirmedWorkQuantity4` |  | |  |  |  |  |
+| `NoFurtherOpWorkQuantity4IsExpd` |  | |  |  |  |  |
+| `OpWorkQuantityUnit5` |  | |  |  |  |  |
+| `OpConfirmedWorkQuantity5` |  | |  |  |  |  |
+| `NoFurtherOpWorkQuantity5IsExpd` |  | |  |  |  |  |
+| `OpWorkQuantityUnit6` |  | |  |  |  |  |
+| `OpConfirmedWorkQuantity6` |  | |  |  |  |  |
+| `NoFurtherOpWorkQuantity6IsExpd` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `BusinessProcessEntryUnit` |  | |  |  |  |  |
+| `BusinessProcessConfirmedQty` |  | |  |  |  |  |
+| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |  |  |
+| `BusinessProcRemainingQtyUnit` |  | |  |  |  |  |
+| `BusinessProcessRemainingQty` |  | |  |  |  |  |
+| `BreakDurationUnit` |  | |  |  |  |  |
+| `ConfirmedBreakDuration` |  | |  |  |  |  |
+| `_LongTextLanguage` |  | |  | `_Language` |  |  |
+| `_ProductionOrder` | | ✓ | | | | |
+| `_ProductionOrderSequence` | | ✓ | | | | |
+| `_ProductionOrderOperation` | | ✓ | | | | |
+| `_ProductionOrderType` | | ✓ | | | | |
+| `_ProductionUnit` | | ✓ | | | | |
+| `_RmngBusinessProcessUnit` | | ✓ | | | | |
+| `_EnteredByUser` | | ✓ | | | | |
+| `_ChangedByUser` | | ✓ | | | | |
+| `_WorkCenterInternal` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_MaterialDocumentItem` | | ✓ | | | | |
+| `_FailedGoodsMovement` | | ✓ | | | | |
+| `_FailedGoodsMovementItem` | | ✓ | | | | |
+| `_FailedActualCost` | | ✓ | | | | |
+| `_PlantText` | | ✓ | | | | |
+| `_ProductionOrderText` | | ✓ | | | | |
+| `_WorkCenterText` | | ✓ | | | | |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_CompanyCodeText` | | ✓ | | | | |
+| `_ControllingAreaText` | | ✓ | | | | |
 
 ## Associations
 

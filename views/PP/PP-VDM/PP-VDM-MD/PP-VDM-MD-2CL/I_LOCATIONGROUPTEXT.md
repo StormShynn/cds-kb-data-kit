@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LocationGroup` | ✓ | |  | `ortgr` |
-| `Plant` | ✓ | |  | `werks` |
-| `Language` | ✓ | |  | `spras` |
-| `LocationGroupName` |  | |  | `txt` |
-| `_Plant` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LocationGroup` | ✓ | |  | `ortgr` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `LocationGroupName` |  | |  | `txt` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

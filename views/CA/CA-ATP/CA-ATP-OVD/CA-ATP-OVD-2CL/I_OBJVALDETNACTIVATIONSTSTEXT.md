@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
-| `ObjValDetnActivationStatus` | ✓ | |  | `cast ( domvalue_l as ovd_activation_status )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `ObjValDetnActivationStatusDesc` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_Status` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |  |  |
+| `ObjValDetnActivationStatus` | ✓ | |  | `cast ( domvalue_l as ovd_activation_status )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ObjValDetnActivationStatusDesc` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_Status` | | ✓ | | | | |
 
 ## Associations
 

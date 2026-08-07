@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAProviderContractSenderCat` | ✓ | |  | `cast( left ( dd07l.domvalue_l,1 ) as sendercat_kk preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAProviderContractSenderCat` | ✓ | |  | `cast( left ( dd07l.domvalue_l,1 ) as sendercat_kk preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

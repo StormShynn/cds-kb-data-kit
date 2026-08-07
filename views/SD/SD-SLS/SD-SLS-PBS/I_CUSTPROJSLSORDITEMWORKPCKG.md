@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerProject` | ✓ | |  |  |
-| `SalesOrderItem` | ✓ | |  |  |
-| `WorkPackage` | ✓ | |  |  |
-| `WorkPackageName` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `WorkPackageStartDate` |  | |  |  |
-| `WorkPackageEndDate` |  | |  |  |
-| `WorkPackageUUID` |  | |  |  |
-| `SalesOrderType` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `_CustProjSlsOrdItem` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_CustomerProject` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerProject` | ✓ | |  |  |  |  |
+| `SalesOrderItem` | ✓ | |  |  |  |  |
+| `WorkPackage` | ✓ | |  |  |  |  |
+| `WorkPackageName` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `WorkPackageStartDate` |  | |  |  |  |  |
+| `WorkPackageEndDate` |  | |  |  |  |  |
+| `WorkPackageUUID` |  | |  |  |  |  |
+| `SalesOrderType` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `_CustProjSlsOrdItem` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_CustomerProject` | | ✓ | | | | |
 
 ## Associations
 

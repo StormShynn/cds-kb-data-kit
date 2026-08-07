@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillingPlanCategory` | ✓ | |  | `cast( dd07t.domvalue_l as fptyp_fp )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BillingPlanCategoryName` |  | |  | `ddtext` |
-| `_BillingPlanCategory` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingPlanCategory` | ✓ | |  | `cast( dd07t.domvalue_l as fptyp_fp )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BillingPlanCategoryName` |  | |  | `ddtext` |  |  |
+| `_BillingPlanCategory` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,82 +30,82 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OrderID` | ✓ | |  |  |
-| `OrderItem` | ✓ | |  |  |
-| `WorkCenterInternalID` | ✓ | |  |  |
-| `OrderOperation` |  | |  | `, useAsTemplate: true } ] key OrderOperation` |
-| `GLAccount` |  | |  | `, useAsTemplate: true } ] key GLAccount` |
-| `PartnerCostCtrActivityType` |  | |  | `, useAsTemplate: true } ] key PartnerCostCtrActivityType` |
-| `PartnerCostCenter` |  | |  | `, useAsTemplate: true } ] key PartnerCostCenter` |
-| `Plant` | ✓ | |  |  |
-| `Product` | ✓ | |  |  |
-| `UnitOfMeasure` | ✓ | |  |  |
-| `CurPlanProjSlsOrdValnStrategy` | ✓ | |  |  |
-| `Ledger` |  | |  | `cast( :P_Ledger as fins_ledger )` |
-| `ControllingArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `ProducedProduct` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  | `, useAsTemplate: true } ] SalesOrderItem` |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | | `_WBSElement` | `WBSElementExternalID` |
-| `WorkCenter` |  | | `_WorkCenter` | `WorkCenter` |
-| `ChartOfAccounts` |  | |  |  |
-| `OrderType` |  | |  |  |
-| `OrderCategory` |  | |  |  |
-| `DisplayCurrency` |  | |  |  |
-| `OrderDescription` |  | | `_Order` | `OrderDescription` |
-| `MfgOrderOperationText` |  | | `_ManufacturingOrderOperation` | `MfgOrderOperationText` |
-| `PlantName` |  | | `_Plant` | `PlantName` |
-| `ControllingAreaName` |  | | `_ControllingArea` | `ControllingAreaName` |
-| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |
-| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |
-| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` |
-| `CreditActlCostInDspCrcy` |  | |  | `cast(CreditActlCostInDisplayCrcy as fis_cr_actlcost_in_dspcrcy)` |
-| `DebitActlCostInDspCrcy` |  | |  | `cast(DebitActlCostInDisplayCrcy as fis_dr_actlcost_in_dspcrcy)` |
-| `CrdtActlFxdCostInDspCrcy` |  | |  | `cast(CrdtActlFixedCostInDspCrcy as fis_cr_actlfxdcost_in_dspcrcy)` |
-| `DebitActlFxdCostInDspCrcy` |  | |  | `cast(DebitActlFixedCostInDspCrcy as fis_dr_actlfxdcost_in_dspcrcy)` |
-| `ActualQtyInCostSourceUnit` |  | |  | `} cast(ActualQtyInCostSourceUnit as fis_actlqty_in_costsrceunit)` |
-| `CreditPlanCostInDspCrcy` |  | |  | `cast(CreditPlanCostInDisplayCrcy as fis_cr_plancost_in_dspcrcy)` |
-| `DebitPlanCostInDspCrcy` |  | |  | `cast(DebitPlanCostInDisplayCrcy as fis_dr_plancost_in_dspcrcy)` |
-| `CrdtPlnFxdCostInDspCrcy` |  | |  | `cast(CrdtPlanFixedCostInDspCrcy as fis_cr_plnfxdcost_in_dspcrcy)` |
-| `DebitPlnFxdCostInDspCrcy` |  | |  | `cast(DebitPlanFixedCostInDspCrcy as fis_dr_plnfxdcost_in_dspcrcy)` |
-| `PlanQtyInCostSourceUnit` |  | |  | `} cast(PlanQtyInCostSourceUnit as fis_planqty_in_costsrceunit)` |
-| `CrdtTargetCostInDspCrcy` |  | |  | `cast(CreditTgtCostInDisplayCrcy as fis_cr_tgtcost_in_dspcrcy)` |
-| `DebitTargetCostInDspCrcy` |  | |  | `cast(DebitTgtCostInDisplayCrcy as fis_dr_tgtcost_in_dspcrcy)` |
-| `TargetQtyInCostSourceUnit` |  | |  | `} cast(TargetQtyInCostSourceUnit as fis_tgtqty_in_costsrceunit)` |
-| `_Plant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_ProducedProduct` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_OrderItem` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_PartnerCostCenter` | | ✓ | | |
-| `_PartnerCostCtrActivityType` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_WBSElement` | | ✓ | | |
-| `_ManufacturingOrderOperation` | | ✓ | | |
-| `_PartnerCostCenterText` | | ✓ | | |
-| `_WorkCenterText` | | ✓ | | |
-| `_GLAccountText` | | ✓ | | |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_ProducedProductText` | | ✓ | | |
-| `_CostCenterActivityTypeText` | | ✓ | | |
-| `_UnitOfMeasureText` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_OrderTypeText` | | ✓ | | |
-| `_OrderCategoryText` | | ✓ | | |
-| `_CurrencyText` | | ✓ | | |
-| `_SlsOrdProjValnStrategyText` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderID` | ✓ | |  |  |  |  |
+| `OrderItem` | ✓ | |  |  |  |  |
+| `WorkCenterInternalID` | ✓ | |  |  |  |  |
+| `OrderOperation` | ✓ | |  |  |  |  |
+| `GLAccount` | ✓ | |  |  |  |  |
+| `PartnerCostCtrActivityType` | ✓ | |  |  |  |  |
+| `PartnerCostCenter` | ✓ | |  |  |  |  |
+| `Plant` | ✓ | |  |  |  |  |
+| `Product` | ✓ | |  |  |  |  |
+| `UnitOfMeasure` | ✓ | |  |  |  |  |
+| `CurPlanProjSlsOrdValnStrategy` | ✓ | |  |  |  |  |
+| `Ledger` |  | |  | `cast( :P_Ledger as fins_ledger )` |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `ProducedProduct` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | | `_WBSElement` | `WBSElementExternalID` |  |  |
+| `WorkCenter` |  | | `_WorkCenter` | `WorkCenter` |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `OrderType` |  | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `DisplayCurrency` |  | |  |  |  |  |
+| `OrderDescription` |  | | `_Order` | `OrderDescription` |  |  |
+| `MfgOrderOperationText` |  | | `_ManufacturingOrderOperation` | `MfgOrderOperationText` |  |  |
+| `PlantName` |  | | `_Plant` | `PlantName` |  |  |
+| `ControllingAreaName` |  | | `_ControllingArea` | `ControllingAreaName` |  |  |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |  |  |
+| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |  |  |
+| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` |  |  |
+| `CreditActlCostInDspCrcy` |  | |  | `cast(CreditActlCostInDisplayCrcy as fis_cr_actlcost_in_dspcrcy)` |  |  |
+| `DebitActlCostInDspCrcy` |  | |  | `cast(DebitActlCostInDisplayCrcy as fis_dr_actlcost_in_dspcrcy)` |  |  |
+| `CrdtActlFxdCostInDspCrcy` |  | |  | `cast(CrdtActlFixedCostInDspCrcy as fis_cr_actlfxdcost_in_dspcrcy)` |  |  |
+| `DebitActlFxdCostInDspCrcy` |  | |  | `cast(DebitActlFixedCostInDspCrcy as fis_dr_actlfxdcost_in_dspcrcy)` |  |  |
+| `ActualQtyInCostSourceUnit` |  | |  | `cast(ActualQtyInCostSourceUnit as fis_actlqty_in_costsrceunit)` |  |  |
+| `CreditPlanCostInDspCrcy` |  | |  | `cast(CreditPlanCostInDisplayCrcy as fis_cr_plancost_in_dspcrcy)` |  |  |
+| `DebitPlanCostInDspCrcy` |  | |  | `cast(DebitPlanCostInDisplayCrcy as fis_dr_plancost_in_dspcrcy)` |  |  |
+| `CrdtPlnFxdCostInDspCrcy` |  | |  | `cast(CrdtPlanFixedCostInDspCrcy as fis_cr_plnfxdcost_in_dspcrcy)` |  |  |
+| `DebitPlnFxdCostInDspCrcy` |  | |  | `cast(DebitPlanFixedCostInDspCrcy as fis_dr_plnfxdcost_in_dspcrcy)` |  |  |
+| `PlanQtyInCostSourceUnit` |  | |  | `cast(PlanQtyInCostSourceUnit as fis_planqty_in_costsrceunit)` |  |  |
+| `CrdtTargetCostInDspCrcy` |  | |  | `cast(CreditTgtCostInDisplayCrcy as fis_cr_tgtcost_in_dspcrcy)` |  |  |
+| `DebitTargetCostInDspCrcy` |  | |  | `cast(DebitTgtCostInDisplayCrcy as fis_dr_tgtcost_in_dspcrcy)` |  |  |
+| `TargetQtyInCostSourceUnit` |  | |  | `cast(TargetQtyInCostSourceUnit as fis_tgtqty_in_costsrceunit)` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProducedProduct` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_OrderItem` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_PartnerCostCenter` | | ✓ | | | | |
+| `_PartnerCostCtrActivityType` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_ManufacturingOrderOperation` | | ✓ | | | | |
+| `_PartnerCostCenterText` | | ✓ | | | | |
+| `_WorkCenterText` | | ✓ | | | | |
+| `_GLAccountText` | | ✓ | | | | |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_ProducedProductText` | | ✓ | | | | |
+| `_CostCenterActivityTypeText` | | ✓ | | | | |
+| `_UnitOfMeasureText` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_OrderTypeText` | | ✓ | | | | |
+| `_OrderCategoryText` | | ✓ | | | | |
+| `_CurrencyText` | | ✓ | | | | |
+| `_SlsOrdProjValnStrategyText` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

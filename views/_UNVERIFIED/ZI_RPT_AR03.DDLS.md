@@ -40,20 +40,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `Customer` | ✓ | |  |  |
-| `LocalCurrency` | ✓ | |  |  |
-| `CustomerName` |  | |  |  |
-| `TotalAmount` |  | |  | `sum( OriginalAmount )` |
-| `Bucket_NotDue` |  | |  | `sum( Bucket_NotDue )` |
-| `Bucket_0_30` |  | |  | `sum( Bucket_0_30 )` |
-| `Bucket_31_60` |  | |  | `sum( Bucket_31_60 )` |
-| `Bucket_61_90` |  | |  | `sum( Bucket_61_90 )` |
-| `Bucket_Over_90` |  | |  | `sum( Bucket_Over_90 )` |
-| `NetDueDate` |  | |  | `max(NetDueDate)` |
-| `_Items` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `Customer` | ✓ | |  |  |  |  |
+| `LocalCurrency` | ✓ | |  |  |  |  |
+| `CustomerName` |  | |  |  |  |  |
+| `TotalAmount` |  | |  | `sum( OriginalAmount )` |  |  |
+| `Bucket_NotDue` |  | |  | `sum( Bucket_NotDue )` |  |  |
+| `Bucket_0_30` |  | |  | `sum( Bucket_0_30 )` |  |  |
+| `Bucket_31_60` |  | |  | `sum( Bucket_31_60 )` |  |  |
+| `Bucket_61_90` |  | |  | `sum( Bucket_61_90 )` |  |  |
+| `Bucket_Over_90` |  | |  | `sum( Bucket_Over_90 )` |  |  |
+| `NetDueDate` |  | |  | `max(NetDueDate)` |  |  |
+| `_Items` | | ✓ | | | | |
 
 ## Associations
 

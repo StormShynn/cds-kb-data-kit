@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectorQualification` | ✓ | |  | `prfql` |
-| `_InspectorQualificationText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectorQualification` | ✓ | |  | `prfql` |  |  |
+| `_InspectorQualificationText` | | ✓ | | | | |
 
 ## Associations
 

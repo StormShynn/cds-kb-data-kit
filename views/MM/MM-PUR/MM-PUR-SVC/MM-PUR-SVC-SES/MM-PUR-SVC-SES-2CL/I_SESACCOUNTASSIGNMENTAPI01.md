@@ -28,66 +28,66 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceEntrySheet` | ✓ | |  |  |
-| `ServiceEntrySheetItem` | ✓ | |  |  |
-| `AccountAssignmentNumber` | ✓ | |  | `AccountAssignment` |
-| `SESRefDocAccountAssignment` |  | |  | `RefDocAccountAssignment` |
-| `IsDeleted` |  | |  |  |
-| `Quantity` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `Currency` |  | |  |  |
-| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `SalesOrder` |  | |  |  |
-| `SalesOrderItem` |  | |  |  |
-| `SalesOrderScheduleLine` |  | |  |  |
-| `MasterFixedAsset` |  | |  |  |
-| `FixedAsset` |  | |  |  |
-| `OrderID` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CostObject` |  | |  |  |
-| `ProfitabilitySegment` |  | |  | `cast( ProfitabilitySegment as rkeobjnr_char )` |
-| `ProfitCenter` |  | |  |  |
-| `GLAccount` |  | |  |  |
-| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |
-| `ProjectNetwork` |  | |  |  |
-| `ProjectNetworkInternalID` |  | |  |  |
-| `REInternalFinNumber` |  | |  |  |
-| `NetworkActivityInternalID` |  | |  |  |
-| `PartnerAccountNumber` |  | |  |  |
-| `CostCtrActivityType` |  | |  |  |
-| `BusinessProcess` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `GoodsRecipientName` |  | |  |  |
-| `UnloadingPointName` |  | |  |  |
-| `OrderInternalID` |  | |  |  |
-| `OrderIntBillOfOperationsItem` |  | |  |  |
-| `CommitmentItemShortID` |  | |  |  |
-| `FundsCenter` |  | |  |  |
-| `Fund` |  | |  |  |
-| `FunctionalArea` |  | |  |  |
-| `EarmarkedFundsDocument` |  | |  |  |
-| `EarmarkedFundsDocumentItem` |  | |  |  |
-| `BudgetPeriod` |  | |  |  |
-| `GrantID` |  | |  |  |
-| `FundedProgram` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocument` |  | |  |  |
-| `ServiceDocumentItem` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `Plant` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  | `LastChangeUser` |
-| `_ServiceEntrySheet` | | ✓ | | |
-| `_ServiceEntrySheetItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |  |  |
+| `AccountAssignmentNumber` | ✓ | |  | `AccountAssignment` |  |  |
+| `SESRefDocAccountAssignment` |  | |  | `RefDocAccountAssignment` |  |  |
+| `IsDeleted` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `SalesOrder` |  | |  |  |  |  |
+| `SalesOrderItem` |  | |  |  |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `ProfitabilitySegment` |  | |  | `cast( ProfitabilitySegment as rkeobjnr_char )` |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |  |  |
+| `REInternalFinNumber` |  | |  |  |  |  |
+| `NetworkActivityInternalID` |  | |  |  |  |  |
+| `PartnerAccountNumber` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `GoodsRecipientName` |  | |  |  |  |  |
+| `UnloadingPointName` |  | |  |  |  |  |
+| `OrderInternalID` |  | |  |  |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |  |  |
+| `CommitmentItemShortID` |  | |  |  |  |  |
+| `FundsCenter` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |  |  |
+| `EarmarkedFundsDocumentItem` |  | |  |  |  |  |
+| `BudgetPeriod` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `FundedProgram` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocument` |  | |  |  |  |  |
+| `ServiceDocumentItem` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  | `LastChangeUser` |  |  |
+| `_ServiceEntrySheet` | | ✓ | | | | |
+| `_ServiceEntrySheetItem` | | ✓ | | | | |
 
 ## Associations
 

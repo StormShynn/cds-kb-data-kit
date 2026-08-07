@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |
-| `CustMgmtPartnerFunction` | ✓ | |  |  |
-| `CustMgmtBusinessPartner` | ✓ | |  |  |
-| `CustMgmtPartFunctionCategory` |  | |  |  |
-| `CustMgmtPartnerIsMainPartner` |  | |  |  |
-| `_ServiceContractTP` | | ✓ | | |
-| `_SrvcContrPartnerAddressTP` | | ✓ | | |
-| `_SrvcMgmtPartnerFunctionText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |  |  |
+| `CustMgmtPartFunctionCategory` |  | |  |  |  |  |
+| `CustMgmtPartnerIsMainPartner` |  | |  |  |  |  |
+| `_ServiceContractTP` | | ✓ | | | | |
+| `_SrvcContrPartnerAddressTP` | | ✓ | | | | |
+| `_SrvcMgmtPartnerFunctionText` | | ✓ | | | | |
 
 ## Source Code
 

@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContractAccountCategory` | ✓ | |  | `vktyp` |
-| `CAApplicationArea` | ✓ | |  | `applk` |
-| `CAOnlyOneBPIsAllowed` |  | |  | `xgein` |
-| `CAOnlyOneContractIsAllowed` |  | |  | `xvein` |
-| `CAIsCollectiveBillAccount` |  | |  | `samrg` |
-| `CAIsOneTimeAccount` |  | |  | `cpd` |
-| `_ApplArea` |  | |  | `_CAApplicationArea` |
-| `_CAApplicationArea` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContractAccountCategory` | ✓ | |  | `vktyp` |  |  |
+| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
+| `CAOnlyOneBPIsAllowed` |  | |  | `xgein` |  |  |
+| `CAOnlyOneContractIsAllowed` |  | |  | `xvein` |  |  |
+| `CAIsCollectiveBillAccount` |  | |  | `samrg` |  |  |
+| `CAIsOneTimeAccount` |  | |  | `cpd` |  |  |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
+| `_CAApplicationArea` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

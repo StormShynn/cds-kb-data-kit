@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_text` | `spras` |
-| `MaintComponentItemCategory` | ✓ | | `_text` | `postp` |
-| `MaintComponentItemCategoryDesc` |  | | `_text` | `ptext` |
-| `_Language` | | ✓ | | |
-| `_MaintComponentItemCategory` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_text` | `spras` |  |  |
+| `MaintComponentItemCategory` | ✓ | | `_text` | `postp` |  |  |
+| `MaintComponentItemCategoryDesc` |  | | `_text` | `ptext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_MaintComponentItemCategory` | | ✓ | | | | |
 
 ## Associations
 

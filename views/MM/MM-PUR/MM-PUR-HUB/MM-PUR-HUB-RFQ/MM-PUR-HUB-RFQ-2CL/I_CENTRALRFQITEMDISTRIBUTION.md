@@ -29,51 +29,51 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CentralRequestForQuotation` | ✓ | |  |  |
-| `CentralRequestForQuotationItem` | ✓ | |  |  |
-| `DistributionKey` | ✓ | |  |  |
-| `PurchasingDocumentCategory` |  | |  |  |
-| `PurchasingDocumentType` |  | |  |  |
-| `PurchasingOrganization` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `Plant` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `Currency` |  | |  |  |
-| `PurchasingGroup` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `PaymentTerms` |  | |  |  |
-| `CashDiscount1Days` |  | |  |  |
-| `CashDiscount2Days` |  | |  |  |
-| `NetPaymentDays` |  | |  |  |
-| `CashDiscount1Percent` |  | |  |  |
-| `CashDiscount2Percent` |  | |  |  |
-| `Material` |  | |  |  |
-| `MaterialGroup` |  | |  |  |
-| `CntrlPurgDistributionInPercent` |  | |  |  |
-| `TargetQuantity` |  | |  |  |
-| `TargetAmount` |  | |  |  |
-| `ExtContractForPurg` |  | |  |  |
-| `ExtContractItemForPurg` |  | |  |  |
-| `PurgDocItemDistributionStatus` |  | |  |  |
-| `IsDeleted` |  | |  | `PurgDocItmDistrLineDeltnCode` |
-| `OrderQuantityUnit` |  | |  |  |
-| `DistributionType` |  | |  |  |
-| `DistrResponseMessageUUID` |  | |  |  |
-| `ItemDistributionIsRelevant` |  | |  |  |
-| `PurgDocItemDistrRelevanceCode` |  | |  |  |
-| `ReferenceHeaderDistributionKey` |  | |  |  |
-| `ManualDeliveryAddressID` |  | |  |  |
-| `AddressType` |  | |  |  |
-| `ProcurementHubSourceSystem` |  | |  |  |
-| `ProcmtHubPurchaseRequisition` |  | |  |  |
-| `ProcmtHubPurRequisitionItem` |  | |  |  |
-| `PurReqnReleaseStatus` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `_CentralReqForQuotationItem` | | ✓ | | |
-| `_CentralRequestForQuotation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralRequestForQuotation` | ✓ | |  |  |  |  |
+| `CentralRequestForQuotationItem` | ✓ | |  |  |  |  |
+| `DistributionKey` | ✓ | |  |  |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |  |  |
+| `PurchasingDocumentType` |  | |  |  |  |  |
+| `PurchasingOrganization` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `PurchasingGroup` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `PaymentTerms` |  | |  |  |  |  |
+| `CashDiscount1Days` |  | |  |  |  |  |
+| `CashDiscount2Days` |  | |  |  |  |  |
+| `NetPaymentDays` |  | |  |  |  |  |
+| `CashDiscount1Percent` |  | |  |  |  |  |
+| `CashDiscount2Percent` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  |  |  |  |
+| `CntrlPurgDistributionInPercent` |  | |  |  |  |  |
+| `TargetQuantity` |  | |  |  |  |  |
+| `TargetAmount` |  | |  |  |  |  |
+| `ExtContractForPurg` |  | |  |  |  |  |
+| `ExtContractItemForPurg` |  | |  |  |  |  |
+| `PurgDocItemDistributionStatus` |  | |  |  |  |  |
+| `IsDeleted` |  | |  | `PurgDocItmDistrLineDeltnCode` |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `DistributionType` |  | |  |  |  |  |
+| `DistrResponseMessageUUID` |  | |  |  |  |  |
+| `ItemDistributionIsRelevant` |  | |  |  |  |  |
+| `PurgDocItemDistrRelevanceCode` |  | |  |  |  |  |
+| `ReferenceHeaderDistributionKey` |  | |  |  |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |  |  |
+| `AddressType` |  | |  |  |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |  |  |
+| `ProcmtHubPurchaseRequisition` |  | |  |  |  |  |
+| `ProcmtHubPurRequisitionItem` |  | |  |  |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `_CentralReqForQuotationItem` | | ✓ | | | | |
+| `_CentralRequestForQuotation` | | ✓ | | | | |
 
 ## Associations
 

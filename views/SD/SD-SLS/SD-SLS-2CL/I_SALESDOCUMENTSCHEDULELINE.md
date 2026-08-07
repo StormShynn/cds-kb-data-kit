@@ -30,81 +30,81 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesDocument` | ✓ | |  | `vbeln` |
-| `SalesDocumentItem` | ✓ | |  | `posnr` |
-| `ScheduleLine` | ✓ | |  | `etenr` |
-| `ScheduleLineCategory` |  | |  | `cast(ettyp as vdm_sd_schedule_line_cat preserving type )` |
-| `OrderQuantityUnit` |  | |  | `vrkme` |
-| `OrderToBaseQuantityDnmntr` |  | |  | `umvkn` |
-| `OrderToBaseQuantityNmrtr` |  | |  | `umvkz` |
-| `BaseUnit` |  | |  | `meins` |
-| `DeliveryDate` |  | |  | `edatu` |
-| `DelivDateCategory` |  | |  | `prgrs` |
-| `IsRequestedDelivSchedLine` |  | |  | `case when vbep.wmeng != 0 then 'X' else '' end` |
-| `RequestedDeliveryDate` |  | |  | `case when vbep.wmeng != 0 then vbep.edatu end` |
-| `RequestedDeliveryTime` |  | |  | `case when vbep.wmeng != 0 then vbep.ezeit end` |
-| `ScheduleLineOrderQuantity` |  | |  | `wmeng` |
-| `CorrectedQtyInOrderQtyUnit` |  | |  | `cmeng` |
-| `IsConfirmedDelivSchedLine` |  | |  | `case when vbep.bmeng != 0 then 'X' else '' end` |
-| `ConfirmedDeliveryDate` |  | |  | `case when vbep.bmeng != 0 then vbep.edatu end` |
-| `ConfirmedDeliveryTime` |  | |  | `case when vbep.bmeng != 0 then vbep.ezeit end` |
-| `ConfdOrderQtyByMatlAvailCheck` |  | |  | `bmeng` |
-| `ConfdSchedLineReqdDelivDate` |  | |  | `req_dlvdate` |
-| `ProductAvailabilityDate` |  | |  | `cast(mbdat as vdm_sd_prod_availy_date preserving type )` |
-| `ProductAvailabilityTime` |  | |  | `mbuhr` |
-| `ProductAvailCheckRqmtDate` |  | |  | `bddat` |
-| `ProdAvailabilityCheckRqmtType` |  | |  | `bdart` |
-| `ProdAvailyCheckPlanningType` |  | |  | `plart` |
-| `ScheduleLineConfirmationStatus` |  | |  | `wepos` |
-| `RequirementsClass` |  | |  | `bedar` |
-| `PlannedOrder` |  | |  | `plnum` |
-| `OrderID` |  | |  | `aufnr` |
-| `SchedulingAgreementReleaseType` |  | |  | `abart` |
-| `ScheduleLineByForecastDelivery` |  | |  | `abruf` |
-| `OrderSchedulingGroup` |  | |  | `fsh_os_id` |
-| `CustEngineeringChgStatus` |  | |  | `aeskd` |
-| `PurchaseRequisition` |  | |  | `cast(banfn as vdm_purchaserequisition preserving type )` |
-| `PurchaseRequisitionItem` |  | |  | `cast(bnfpo as mm_a_purchaserequisitionitem preserving type)` |
-| `PurchasingOrderType` |  | |  | `bsart` |
-| `PurchasingDocumentCategory` |  | |  | `bstyp` |
-| `DeliveryCreationDate` |  | |  | `crea_dlvdate` |
-| `TransportationPlanningDate` |  | |  | `cast(tddat as tddat_plan preserving type )` |
-| `TransportationPlanningTime` |  | |  | `tduhr` |
-| `GoodsIssueDate` |  | |  | `wadat` |
-| `LoadingDate` |  | |  | `lddat` |
-| `GoodsIssueTime` |  | |  | `wauhr` |
-| `LoadingTime` |  | |  | `lduhr` |
-| `ItemIsDeliveryRelevant` |  | |  | `lfrel` |
-| `DelivBlockReasonForSchedLine` |  | |  | `lifsp` |
-| `OpenReqdDelivQtyInOrdQtyUnit` |  | |  | `ordqty_su` |
-| `OpenReqdDelivQtyInBaseUnit` |  | |  | `ordqty_bu` |
-| `OpenConfdDelivQtyInOrdQtyUnit` |  | |  | `ocdqty_su` |
-| `OpenConfdDelivQtyInBaseUnit` |  | |  | `ocdqty_bu` |
-| `DeliveredQtyInOrderQtyUnit` |  | |  | `dlvqty_su` |
-| `DeliveredQuantityInBaseUnit` |  | |  | `dlvqty_bu` |
-| `RequestedRqmtQtyInBaseUnit` |  | |  | `rrqqty_bu` |
-| `ConfirmedRqmtQtyInBaseUnit` |  | |  | `crqqty_bu` |
-| `MRPRequiredQuantityInBaseUnit` |  | |  | `lmeng` |
-| `GoodsMovementType` |  | |  | `bwart` |
-| `RouteSchedule` |  | |  | `aulwe` |
-| `OpenDeliveryNetAmount` |  | |  | `odn_amount` |
-| `TransactionCurrency` |  | |  | `waerk` |
-| `TradeCmplncLegalCtrlChkSts` |  | |  | `lccst` |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
-| `_ScheduleLineCategory` | | ✓ | | |
-| `_ProdAvailabilityCheckRqmtType` | | ✓ | | |
-| `_ScheduleLineConfStatus` | | ✓ | | |
-| `_OrderID` | | ✓ | | |
-| `_ManufacturingOrder` | | ✓ | | |
-| `_OrderQuantityUnit` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_DelivBlockReasonForSchedLine` | | ✓ | | |
-| `_GoodsMovementType` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_TradeCmplncLegalCtrlChkSts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `vbeln` |  |  |
+| `SalesDocumentItem` | ✓ | |  | `posnr` |  |  |
+| `ScheduleLine` | ✓ | |  | `etenr` |  |  |
+| `ScheduleLineCategory` |  | |  | `cast(ettyp as vdm_sd_schedule_line_cat preserving type )` |  |  |
+| `OrderQuantityUnit` |  | |  | `vrkme` |  |  |
+| `OrderToBaseQuantityDnmntr` |  | |  | `umvkn` |  |  |
+| `OrderToBaseQuantityNmrtr` |  | |  | `umvkz` |  |  |
+| `BaseUnit` |  | |  | `meins` |  |  |
+| `DeliveryDate` |  | |  | `edatu` |  |  |
+| `DelivDateCategory` |  | |  | `prgrs` |  |  |
+| `IsRequestedDelivSchedLine` |  | |  | `case when vbep.wmeng != 0 then 'X' else '' end` |  |  |
+| `RequestedDeliveryDate` |  | |  | `case when vbep.wmeng != 0 then vbep.edatu end` |  |  |
+| `RequestedDeliveryTime` |  | |  | `case when vbep.wmeng != 0 then vbep.ezeit end` |  |  |
+| `ScheduleLineOrderQuantity` |  | |  | `wmeng` |  |  |
+| `CorrectedQtyInOrderQtyUnit` |  | |  | `cmeng` |  |  |
+| `IsConfirmedDelivSchedLine` |  | |  | `case when vbep.bmeng != 0 then 'X' else '' end` |  |  |
+| `ConfirmedDeliveryDate` |  | |  | `case when vbep.bmeng != 0 then vbep.edatu end` |  |  |
+| `ConfirmedDeliveryTime` |  | |  | `case when vbep.bmeng != 0 then vbep.ezeit end` |  |  |
+| `ConfdOrderQtyByMatlAvailCheck` |  | |  | `bmeng` |  |  |
+| `ConfdSchedLineReqdDelivDate` |  | |  | `req_dlvdate` |  |  |
+| `ProductAvailabilityDate` |  | |  | `cast(mbdat as vdm_sd_prod_availy_date preserving type )` |  |  |
+| `ProductAvailabilityTime` |  | |  | `mbuhr` |  |  |
+| `ProductAvailCheckRqmtDate` |  | |  | `bddat` |  |  |
+| `ProdAvailabilityCheckRqmtType` |  | |  | `bdart` |  |  |
+| `ProdAvailyCheckPlanningType` |  | |  | `plart` |  |  |
+| `ScheduleLineConfirmationStatus` |  | |  | `wepos` |  |  |
+| `RequirementsClass` |  | |  | `bedar` |  |  |
+| `PlannedOrder` |  | |  | `plnum` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `SchedulingAgreementReleaseType` |  | |  | `abart` |  |  |
+| `ScheduleLineByForecastDelivery` |  | |  | `abruf` |  |  |
+| `OrderSchedulingGroup` |  | |  | `fsh_os_id` |  |  |
+| `CustEngineeringChgStatus` |  | |  | `aeskd` |  |  |
+| `PurchaseRequisition` |  | |  | `cast(banfn as vdm_purchaserequisition preserving type )` |  |  |
+| `PurchaseRequisitionItem` |  | |  | `cast(bnfpo as mm_a_purchaserequisitionitem preserving type)` |  |  |
+| `PurchasingOrderType` |  | |  | `bsart` |  |  |
+| `PurchasingDocumentCategory` |  | |  | `bstyp` |  |  |
+| `DeliveryCreationDate` |  | |  | `crea_dlvdate` |  |  |
+| `TransportationPlanningDate` |  | |  | `cast(tddat as tddat_plan preserving type )` |  |  |
+| `TransportationPlanningTime` |  | |  | `tduhr` |  |  |
+| `GoodsIssueDate` |  | |  | `wadat` |  |  |
+| `LoadingDate` |  | |  | `lddat` |  |  |
+| `GoodsIssueTime` |  | |  | `wauhr` |  |  |
+| `LoadingTime` |  | |  | `lduhr` |  |  |
+| `ItemIsDeliveryRelevant` |  | |  | `lfrel` |  |  |
+| `DelivBlockReasonForSchedLine` |  | |  | `lifsp` |  |  |
+| `OpenReqdDelivQtyInOrdQtyUnit` |  | |  | `ordqty_su` |  |  |
+| `OpenReqdDelivQtyInBaseUnit` |  | |  | `ordqty_bu` |  |  |
+| `OpenConfdDelivQtyInOrdQtyUnit` |  | |  | `ocdqty_su` |  |  |
+| `OpenConfdDelivQtyInBaseUnit` |  | |  | `ocdqty_bu` |  |  |
+| `DeliveredQtyInOrderQtyUnit` |  | |  | `dlvqty_su` |  |  |
+| `DeliveredQuantityInBaseUnit` |  | |  | `dlvqty_bu` |  |  |
+| `RequestedRqmtQtyInBaseUnit` |  | |  | `rrqqty_bu` |  |  |
+| `ConfirmedRqmtQtyInBaseUnit` |  | |  | `crqqty_bu` |  |  |
+| `MRPRequiredQuantityInBaseUnit` |  | |  | `lmeng` |  |  |
+| `GoodsMovementType` |  | |  | `bwart` |  |  |
+| `RouteSchedule` |  | |  | `aulwe` |  |  |
+| `OpenDeliveryNetAmount` |  | |  | `odn_amount` |  |  |
+| `TransactionCurrency` |  | |  | `waerk` |  |  |
+| `TradeCmplncLegalCtrlChkSts` |  | |  | `lccst` |  |  |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
+| `_ScheduleLineCategory` | | ✓ | | | | |
+| `_ProdAvailabilityCheckRqmtType` | | ✓ | | | | |
+| `_ScheduleLineConfStatus` | | ✓ | | | | |
+| `_OrderID` | | ✓ | | | | |
+| `_ManufacturingOrder` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_DelivBlockReasonForSchedLine` | | ✓ | | | | |
+| `_GoodsMovementType` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_TradeCmplncLegalCtrlChkSts` | | ✓ | | | | |
 
 ## Associations
 

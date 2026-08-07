@@ -26,28 +26,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PaymentCompanyCode` | ✓ | |  |  |
-| `HouseBank` | ✓ | |  |  |
-| `HouseBankAccount` | ✓ | |  |  |
-| `Chequebook` | ✓ | |  |  |
-| `ChequebookFirstCheque` |  | |  |  |
-| `ChequebookLastCheque` |  | |  |  |
-| `NextChequebook` |  | |  |  |
-| `LastAssignedCheque` |  | |  |  |
-| `ChequebookName` |  | |  |  |
-| `ChequebookIsNonSequential` |  | |  |  |
-| `ChequebookPurchaseDate` |  | |  | `case cb.ChequebookPurchaseDate when '' then cast ( ' ' as abap.dats ) else cast ( cb.ChequebookPurchaseDate as abap.dats ) end` |
-| `ChequebookPaymentMethodList` |  | |  |  |
-| `ChequebookMinimalChequeCount` |  | |  |  |
-| `ChequebookPurchaser` |  | |  |  |
-| `ChequebookCreatedByUser` |  | |  |  |
-| `ChequebookCreationDate` |  | |  |  |
-| `ChequebookCreationTime` |  | |  |  |
-| `ChequeType` |  | |  |  |
-| `ChequebookStatus` |  | |  | `cast( ' ' as abap.char(10))` |
-| `BankAccountName` |  | | `_HouseBankAccount` | `HouseBankAccountDescription` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentCompanyCode` | ✓ | |  |  |  |  |
+| `HouseBank` | ✓ | |  |  |  |  |
+| `HouseBankAccount` | ✓ | |  |  |  |  |
+| `Chequebook` | ✓ | |  |  |  |  |
+| `ChequebookFirstCheque` |  | |  |  |  |  |
+| `ChequebookLastCheque` |  | |  |  |  |  |
+| `NextChequebook` |  | |  |  |  |  |
+| `LastAssignedCheque` |  | |  |  |  |  |
+| `ChequebookName` |  | |  |  |  |  |
+| `ChequebookIsNonSequential` |  | |  |  |  |  |
+| `ChequebookPurchaseDate` |  | |  | `case cb.ChequebookPurchaseDate when '' then cast ( ' ' as abap.dats ) else cast ( cb.ChequebookPurchaseDate as abap.dats ) end` |  |  |
+| `ChequebookPaymentMethodList` |  | |  |  |  |  |
+| `ChequebookMinimalChequeCount` |  | |  |  |  |  |
+| `ChequebookPurchaser` |  | |  |  |  |  |
+| `ChequebookCreatedByUser` |  | |  |  |  |  |
+| `ChequebookCreationDate` |  | |  |  |  |  |
+| `ChequebookCreationTime` |  | |  |  |  |  |
+| `ChequeType` |  | |  |  |  |  |
+| `ChequebookStatus` |  | |  | `cast( ' ' as abap.char(10))` |  |  |
+| `BankAccountName` |  | | `_HouseBankAccount` | `HouseBankAccountDescription` |  |  |
 
 ## Associations
 

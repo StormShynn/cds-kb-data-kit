@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `APARToleranceGroup` | ✓ | |  | `cast( tg.togru as farp_togru )` |
-| `GraceDays` |  | |  | `toler` |
-| `FixedCashDiscount` |  | |  | `cast( tg.sktre as farp_dzbfix )` |
-| `ArrearsDaysBaseDateDetn` |  | |  | `vrzde` |
-| `MaxPaytDiffExpnAmountInCCCrcy` |  | |  | `cast( tg.betrh as farp_betrh_043t )` |
-| `MaxPaytDiffRevnAmountInCCCrcy` |  | |  | `cast( tg.betrs as farp_betrs_043t )` |
-| `MaxPaymentDiffExpensePercent` |  | |  | `cast( tg.prozh as farp_prozh_043t )` |
-| `MaxPaymentDiffRevenuePercent` |  | |  | `cast( tg.prozs as farp_prozs_043t )` |
-| `CompanyCodeCurrency` |  | | `_t001` | `waers` |
-| `_CompanyCode` | | ✓ | | |
-| `_APARToleranceGroupText` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `APARToleranceGroup` | ✓ | |  | `cast( tg.togru as farp_togru )` |  |  |
+| `GraceDays` |  | |  | `toler` |  |  |
+| `FixedCashDiscount` |  | |  | `cast( tg.sktre as farp_dzbfix )` |  |  |
+| `ArrearsDaysBaseDateDetn` |  | |  | `vrzde` |  |  |
+| `MaxPaytDiffExpnAmountInCCCrcy` |  | |  | `cast( tg.betrh as farp_betrh_043t )` |  |  |
+| `MaxPaytDiffRevnAmountInCCCrcy` |  | |  | `cast( tg.betrs as farp_betrs_043t )` |  |  |
+| `MaxPaymentDiffExpensePercent` |  | |  | `cast( tg.prozh as farp_prozh_043t )` |  |  |
+| `MaxPaymentDiffRevenuePercent` |  | |  | `cast( tg.prozs as farp_prozs_043t )` |  |  |
+| `CompanyCodeCurrency` |  | | `_t001` | `waers` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_APARToleranceGroupText` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
 
 ## Associations
 

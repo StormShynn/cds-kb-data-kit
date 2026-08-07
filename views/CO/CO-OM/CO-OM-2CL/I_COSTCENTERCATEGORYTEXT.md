@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `CostCenterCategory` | ✓ | |  | `kosar` |
-| `CostCenterCategoryName` |  | |  | `cast(ktext as fis_kosar_name)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CostCenterCategory` | ✓ | |  | `kosar` |  |  |
+| `CostCenterCategoryName` |  | |  | `cast(ktext as fis_kosar_name)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

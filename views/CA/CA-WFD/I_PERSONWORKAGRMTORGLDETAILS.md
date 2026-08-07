@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  | `cast( dets.workforce_assgmt_id as persno preserving type )` |
-| `StartDate` | ✓ | |  | `cast( dets.start_date as begda preserving type )` |
-| `EndDate` | ✓ | |  | `cast( dets.end_date as endda preserving type )` |
-| `CompanyCode` |  | |  | `company_code` |
-| `CostCenter` |  | |  | `cost_center` |
-| `Job` |  | |  | `cast( dets.job_code as stell )` |
-| `OrganizationalUnit` |  | |  | `cast( '' as orgeh )` |
-| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast( '' as vdsk1 )` |
-| `_CompanyCode` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_PersonWorkAgrmtJobText` | | ✓ | | |
-| `_OrganizationalUnitText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonWorkAgreement` | ✓ | |  | `cast( dets.workforce_assgmt_id as persno preserving type )` |  |  |
+| `StartDate` | ✓ | |  | `cast( dets.start_date as begda preserving type )` |  |  |
+| `EndDate` | ✓ | |  | `cast( dets.end_date as endda preserving type )` |  |  |
+| `CompanyCode` |  | |  | `company_code` |  |  |
+| `CostCenter` |  | |  | `cost_center` |  |  |
+| `Job` |  | |  | `cast( dets.job_code as stell )` |  |  |
+| `OrganizationalUnit` |  | |  | `cast( '' as orgeh )` |  |  |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast( '' as vdsk1 )` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_PersonWorkAgrmtJobText` | | ✓ | | | | |
+| `_OrganizationalUnitText` | | ✓ | | | | |
 
 ## Associations
 

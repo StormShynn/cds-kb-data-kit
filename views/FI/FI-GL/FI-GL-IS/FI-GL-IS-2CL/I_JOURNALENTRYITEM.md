@@ -31,706 +31,706 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SourceLedger` | ✓ | |  |  |
-| `CompanyCode` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `AccountingDocument` |  | |  | `}] key I_GLAccountLineItemRawData.AccountingDocument` |
-| `LedgerGLLineItem` | ✓ | |  |  |
-| `Ledger` | ✓ | |  |  |
-| `LedgerFiscalYear` |  | |  |  |
-| `GLRecordType` |  | |  |  |
-| `JrnlEntrAltvFYConsecutiveID` |  | |  |  |
-| `ChartOfAccounts` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `FinancialTransactionType` |  | |  |  |
-| `BusinessTransactionCategory` |  | |  |  |
-| `BusinessTransactionType` |  | |  |  |
-| `FinancialClosingStep` |  | |  |  |
-| `ControllingBusTransacType` |  | |  |  |
-| `ReferenceDocumentType` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `ReferenceDocumentContext` |  | |  |  |
-| `ReferenceDocument` |  | |  |  |
-| `ReferenceDocumentItem` |  | |  |  |
-| `ReferenceDocumentItemGroup` |  | |  |  |
-| `IsReversal` |  | |  |  |
-| `IsReversed` |  | |  |  |
-| `ReversalReferenceDocumentCntxt` |  | |  |  |
-| `ReversalReferenceDocument` |  | |  |  |
-| `IsSettlement` |  | |  |  |
-| `IsSettled` |  | |  |  |
-| `PredecessorReferenceDocType` |  | |  |  |
-| `PredecessorReferenceDocCntxt` |  | |  |  |
-| `PredecessorReferenceDocument` |  | |  |  |
-| `PredecessorReferenceDocItem` |  | |  |  |
-| `PrdcssrJournalEntryCompanyCode` |  | |  |  |
-| `PrdcssrJournalEntryFiscalYear` |  | |  |  |
-| `PredecessorJournalEntry` |  | |  |  |
-| `PredecessorJournalEntryItem` |  | |  |  |
-| `SourceReferenceDocumentType` |  | |  |  |
-| `SourceLogicalSystem` |  | |  |  |
-| `SourceReferenceDocumentCntxt` |  | |  |  |
-| `SourceReferenceDocument` |  | |  |  |
-| `SourceReferenceDocumentItem` |  | |  |  |
-| `SourceReferenceDocSubitem` |  | |  |  |
-| `IsCommitment` |  | |  |  |
-| `JrnlEntryItemObsoleteReason` |  | |  |  |
-| `OrganizationalChange` |  | |  |  |
-| `AccountingNotificationUUID` |  | |  |  |
-| `GLAccount` |  | |  | `}] I_GLAccountLineItemRawData.GLAccount` |
-| `CostCenter` |  | |  | `}] I_GLAccountLineItemRawData.CostCenter` |
-| `ProfitCenter` |  | |  | `}] I_GLAccountLineItemRawData.ProfitCenter` |
-| `FunctionalArea` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `Segment` |  | |  |  |
-| `PartnerCostCenter` |  | |  | `}] I_GLAccountLineItemRawData.PartnerCostCenter` |
-| `PartnerProfitCenter` |  | |  | `}] I_GLAccountLineItemRawData.PartnerProfitCenter` |
-| `PartnerFunctionalArea` |  | |  |  |
-| `PartnerBusinessArea` |  | |  |  |
-| `PartnerCompany` |  | |  |  |
-| `PartnerSegment` |  | |  |  |
-| `BalanceTransactionCurrency` |  | |  |  |
-| `AmountInBalanceTransacCrcy` |  | |  | `} I_GLAccountLineItemRawData.AmountInBalanceTransacCrcy` |
-| `TransactionCurrency` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  | `} I_GLAccountLineItemRawData.AmountInTransactionCurrency` |
-| `CompanyCodeCurrency` |  | |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  | `} I_GLAccountLineItemRawData.AmountInCompanyCodeCurrency` |
-| `GlobalCurrency` |  | |  |  |
-| `AmountInGlobalCurrency` |  | |  | `} I_GLAccountLineItemRawData.AmountInGlobalCurrency` |
-| `FunctionalCurrency` |  | |  |  |
-| `AmountInFunctionalCurrency` |  | |  | `} I_GLAccountLineItemRawData.AmountInFunctionalCurrency` |
-| `FreeDefinedCurrency1` |  | |  |  |
-| `AmountInFreeDefinedCurrency1` |  | |  | `} I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency1` |
-| `FreeDefinedCurrency2` |  | |  |  |
-| `AmountInFreeDefinedCurrency2` |  | |  | `} I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency2` |
-| `FreeDefinedCurrency3` |  | |  |  |
-| `AmountInFreeDefinedCurrency3` |  | |  | `} I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency3` |
-| `FreeDefinedCurrency4` |  | |  |  |
-| `AmountInFreeDefinedCurrency4` |  | |  | `} I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency4` |
-| `FreeDefinedCurrency5` |  | |  |  |
-| `AmountInFreeDefinedCurrency5` |  | |  | `} I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency5` |
-| `FreeDefinedCurrency6` |  | |  |  |
-| `AmountInFreeDefinedCurrency6` |  | |  | `} I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency6` |
-| `FreeDefinedCurrency7` |  | |  |  |
-| `AmountInFreeDefinedCurrency7` |  | |  | `} I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency7` |
-| `FreeDefinedCurrency8` |  | |  |  |
-| `AmountInFreeDefinedCurrency8` |  | |  | `} I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency8` |
-| `FixedAmountInGlobalCrcy` |  | |  | `} I_GLAccountLineItemRawData.FixedAmountInGlobalCrcy` |
-| `FixedAmountInCoCodeCrcy` |  | |  | `} I_GLAccountLineItemRawData.FixedAmountInCoCodeCrcy` |
-| `GrpValnFixedAmtInGlobCrcy` |  | |  | `} I_GLAccountLineItemRawData.GrpValnFixedAmtInGlobCrcy` |
-| `PrftCtrValnFxdAmtInGlobCrcy` |  | |  | `} I_GLAccountLineItemRawData.PrftCtrValnFxdAmtInGlobCrcy` |
-| `TotalPriceVarcInGlobalCrcy` |  | |  | `} I_GLAccountLineItemRawData.TotalPriceVarcInGlobalCrcy` |
-| `GrpValnTotPrcVarcInGlobCrcy` |  | |  | `} I_GLAccountLineItemRawData.GrpValnTotPrcVarcInGlobCrcy` |
-| `PrftCtrValnTotPrcVarcInGlbCrcy` |  | |  | `} I_GLAccountLineItemRawData.PrftCtrValnTotPrcVarcInGlbCrcy` |
-| `FixedPriceVarcInGlobalCrcy` |  | |  | `} I_GLAccountLineItemRawData.FixedPriceVarcInGlobalCrcy` |
-| `GrpValnFixedPrcVarcInGlobCrcy` |  | |  | `} I_GLAccountLineItemRawData.GrpValnFixedPrcVarcInGlobCrcy` |
-| `PrftCtrValnFxdPrcVarcInGlbCrcy` |  | |  | `} I_GLAccountLineItemRawData.PrftCtrValnFxdPrcVarcInGlbCrcy` |
-| `ControllingObjectCurrency` |  | |  |  |
-| `AmountInObjectCurrency` |  | |  | `} I_GLAccountLineItemRawData.AmountInObjectCurrency` |
-| `GrantCurrency` |  | |  |  |
-| `AmountInGrantCurrency` |  | |  | `} I_GLAccountLineItemRawData.AmountInGrantCurrency` |
-| `BaseUnit` |  | |  |  |
-| `Quantity` |  | |  | `} I_GLAccountLineItemRawData.Quantity` |
-| `FixedQuantity` |  | |  | `} I_GLAccountLineItemRawData.FixedQuantity` |
-| `CostSourceUnit` |  | |  |  |
-| `ValuationQuantity` |  | |  | `} I_GLAccountLineItemRawData.ValuationQuantity` |
-| `ValuationFixedQuantity` |  | |  | `} I_GLAccountLineItemRawData.ValuationFixedQuantity` |
-| `ReferenceQuantityUnit` |  | |  |  |
-| `ReferenceQuantity` |  | |  | `} I_GLAccountLineItemRawData.ReferenceQuantity` |
-| `AdditionalQuantity1Unit` |  | |  |  |
-| `AdditionalQuantity1` |  | |  | `} I_GLAccountLineItemRawData.AdditionalQuantity1` |
-| `AdditionalQuantity2Unit` |  | |  |  |
-| `AdditionalQuantity2` |  | |  | `} I_GLAccountLineItemRawData.AdditionalQuantity2` |
-| `AdditionalQuantity3Unit` |  | |  |  |
-| `AdditionalQuantity3` |  | |  | `} I_GLAccountLineItemRawData.AdditionalQuantity3` |
-| `IncmpltSummableValnQtyUnt` |  | |  |  |
-| `IncmpltSummableValnQty` |  | |  | `} I_GLAccountLineItemRawData.IncmpltSummableValnQty` |
-| `IncmpltSummableValnFxdQty` |  | |  | `} I_GLAccountLineItemRawData.IncmpltSummableValnFxdQty` |
-| `DebitCreditCode` |  | |  |  |
-| `FiscalPeriod` |  | |  |  |
-| `FiscalYearVariant` |  | |  |  |
-| `FiscalYearPeriod` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `AccountingDocumentType` |  | |  |  |
-| `AccountingDocumentItem` |  | |  |  |
-| `AssignmentReference` |  | |  |  |
-| `AccountingDocumentCategory` |  | |  |  |
-| `JournalEntryItemCategory` |  | |  |  |
-| `PostingKey` |  | |  |  |
-| `TransactionTypeDetermination` |  | |  |  |
-| `SubLedgerAcctLineItemType` |  | |  |  |
-| `AccountingDocCreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `EliminationProfitCenter` |  | |  | `}] I_GLAccountLineItemRawData.EliminationProfitCenter` |
-| `OriginObjectType` |  | |  |  |
-| `GLAccountType` |  | |  |  |
-| `AlternativeGLAccount` |  | |  | `}] I_GLAccountLineItemRawData.AlternativeGLAccount` |
-| `CountryChartOfAccounts` |  | |  |  |
-| `ConsolidationUnit` |  | |  |  |
-| `PartnerConsolidationUnit` |  | |  |  |
-| `Company` |  | |  |  |
-| `ConsolidationChartOfAccounts` |  | |  |  |
-| `CnsldtnFinancialStatementItem` |  | |  |  |
-| `CnsldtnSubitemCategory` |  | |  |  |
-| `CnsldtnSubitem` |  | |  |  |
-| `InvoiceReference` |  | |  |  |
-| `InvoiceReferenceFiscalYear` |  | |  |  |
-| `FollowOnDocumentType` |  | |  |  |
-| `InvoiceItemReference` |  | |  |  |
-| `ReferencePurchaseOrderCategory` |  | |  |  |
-| `PurchasingDocument` |  | |  |  |
-| `PurchasingDocumentItem` |  | |  | `}] I_GLAccountLineItemRawData.PurchasingDocumentItem` |
-| `AccountAssignmentNumber` |  | |  |  |
-| `DocumentItemText` |  | |  |  |
-| `SalesOrder` |  | |  | `cast(I_GLAccountLineItemRawData.SalesDocument as vdm_sales_order preserving type )` |
-| `SalesOrderItem` |  | |  | `}] cast(I_GLAccountLineItemRawData.SalesDocumentItem as sales_order_item preserving type )` |
-| `SalesDocument` |  | |  |  |
-| `SalesDocumentItem` |  | |  | `}] I_GLAccountLineItemRawData.SalesDocumentItem` |
-| `Material` |  | |  | `cast(I_GLAccountLineItemRawData.Product as matnr preserving type )` |
-| `Product` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `Customer` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `PerformancePeriodStartDate` |  | |  |  |
-| `PerformancePeriodEndDate` |  | |  |  |
-| `ConditionContract` |  | |  |  |
-| `ComponentBreakdown` |  | |  |  |
-| `CompBreakdownScaleNumerator` |  | |  |  |
-| `FinancialAccountType` |  | |  |  |
-| `SpecialGLCode` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `HouseBank` |  | |  | `}] I_GLAccountLineItemRawData.HouseBank` |
-| `HouseBankAccount` |  | |  | `}] I_GLAccountLineItemRawData.HouseBankAccount` |
-| `IsOpenItemManaged` |  | |  |  |
-| `ClearingDate` |  | |  |  |
-| `ClearingDocFiscalYear` |  | |  | `cast( I_GLAccountLineItemRawData.ClearingJournalEntryFiscalYear as fis_auggj_no_conv_depre preserving type )` |
-| `ClearingAccountingDocument` |  | |  | `}] cast( I_GLAccountLineItemRawData.ClearingJournalEntry as fis_augbl_depre preserving type )` |
-| `ClearingJournalEntryFiscalYear` |  | |  |  |
-| `ClearingJournalEntry` |  | |  | `}] I_GLAccountLineItemRawData.ClearingJournalEntry` |
-| `ValueDate` |  | |  |  |
-| `GeneralLedgerAgingScope` |  | |  |  |
-| `GeneralLedgerAgingIncrement` |  | |  |  |
-| `AssetDepreciationArea` |  | |  |  |
-| `MasterFixedAsset` |  | |  | `}] I_GLAccountLineItemRawData.MasterFixedAsset` |
-| `FixedAsset` |  | |  | `}] I_GLAccountLineItemRawData.FixedAsset` |
-| `AssetValueDate` |  | |  |  |
-| `AssetTransactionType` |  | |  |  |
-| `AssetAcctTransClassfctn` |  | |  |  |
-| `DepreciationFiscalPeriod` |  | |  |  |
-| `GroupMasterFixedAsset` |  | |  | `}] I_GLAccountLineItemRawData.GroupMasterFixedAsset` |
-| `GroupFixedAsset` |  | |  | `}] I_GLAccountLineItemRawData.GroupFixedAsset` |
-| `AssetClass` |  | |  |  |
-| `PartnerMasterFixedAsset` |  | |  |  |
-| `PartnerFixedAsset` |  | |  |  |
-| `CostEstimate` |  | |  |  |
-| `InventorySpecialStockValnType` |  | |  | `cast( I_GLAccountLineItemRawData.InventorySpecialStockValnType as fis_invtryspclstockvalntype_d preserving type )` |
-| `InvtrySpecialStockValnType_2` |  | |  | `InventorySpecialStockValnType` |
-| `IsSupplierStockValuation` |  | |  |  |
-| `InventorySpecialStockType` |  | |  |  |
-| `InventorySpclStkSalesDocument` |  | |  |  |
-| `InventorySpclStkSalesDocItm` |  | |  | `}] I_GLAccountLineItemRawData.InventorySpclStkSalesDocItm` |
-| `InvtrySpclStockWBSElmntIntID` |  | |  | `cast( I_GLAccountLineItemRawData.InvtrySpclStockWBSElmntIntID as fis_invspstock_wbsint_no_conv preserving type )` |
-| `InventorySpclStockWBSElement` |  | |  | `cast( I_GLAccountLineItemRawData.InventorySpclStockWBSElement as fis_invspstock_wbs preserving type )` |
-| `InventorySpecialStockSupplier` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `MaterialLedgerProcessType` |  | |  |  |
-| `MaterialLedgerCategory` |  | |  |  |
-| `SlsPriceAmountInCoCodeCrcy` |  | |  | `} I_GLAccountLineItemRawData.SlsPriceAmountInCoCodeCrcy` |
-| `ProductPriceControl` |  | |  |  |
-| `CurPlanProjSlsOrdValnStrategy` |  | |  |  |
-| `SenderCompanyCode` |  | |  |  |
-| `SenderGLAccount` |  | |  |  |
-| `SenderAccountAssignment` |  | |  |  |
-| `SenderAccountAssignmentType` |  | |  |  |
-| `ControllingObject` |  | |  |  |
-| `CostOriginGroup` |  | |  |  |
-| `OriginSenderObject` |  | |  |  |
-| `ControllingDebitCreditCode` |  | |  |  |
-| `OriginCtrlgDebitCreditCode` |  | |  |  |
-| `ControllingObjectDebitType` |  | |  |  |
-| `QuantityIsIncomplete` |  | |  |  |
-| `OffsettingAccount` |  | |  |  |
-| `OffsettingAccountType` |  | |  |  |
-| `OffsettingChartOfAccounts` |  | |  |  |
-| `LineItemIsCompleted` |  | |  |  |
-| `PersonnelNumber` |  | |  |  |
-| `ControllingObjectClass` |  | |  |  |
-| `PartnerCompanyCode` |  | |  |  |
-| `PartnerControllingObjectClass` |  | |  |  |
-| `OriginCostCenter` |  | |  | `}] I_GLAccountLineItemRawData.OriginCostCenter` |
-| `OriginProfitCenter` |  | |  | `}] I_GLAccountLineItemRawData.OriginProfitCenter` |
-| `OriginOrder` |  | |  |  |
-| `OriginCostCtrActivityType` |  | |  | `}] I_GLAccountLineItemRawData.OriginCostCtrActivityType` |
-| `OriginProduct` |  | |  |  |
-| `VarianceOriginGLAccount` |  | |  |  |
-| `AccountAssignment` |  | |  |  |
-| `AccountAssignmentType` |  | |  |  |
-| `CostCtrActivityType` |  | |  | `}] I_GLAccountLineItemRawData.CostCtrActivityType` |
-| `OrderID` |  | |  |  |
-| `OrderCategory` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `PartnerWBSElementInternalID` |  | |  |  |
-| `WBSElement` |  | |  | `cast( I_GLAccountLineItemRawData.WBSElement as fis_wbs preserving type )` |
-| `ProjectInternalID` |  | |  |  |
-| `PartnerProjectInternalID` |  | |  |  |
-| `WorkPackage` |  | |  |  |
-| `Project` |  | |  | `cast( I_GLAccountLineItemRawData.Project as fis_project preserving type )` |
-| `OperatingConcern` |  | |  |  |
-| `ProjectNetwork` |  | |  |  |
-| `RelatedNetworkActivity` |  | |  |  |
-| `BusinessProcess` |  | |  | `}] I_GLAccountLineItemRawData.BusinessProcess` |
-| `CostObject` |  | |  |  |
-| `BillableControl` |  | |  |  |
-| `CostAnalysisResource` |  | |  | `}] I_GLAccountLineItemRawData.CostAnalysisResource` |
-| `CustomerServiceNotification` |  | |  |  |
-| `ServiceDocumentType` |  | |  |  |
-| `ServiceDocument` |  | |  |  |
-| `ServiceDocumentItem` |  | |  |  |
-| `PartnerServiceDocumentType` |  | |  |  |
-| `PartnerServiceDocument` |  | |  |  |
-| `PartnerServiceDocumentItem` |  | |  |  |
-| `ServiceContractType` |  | |  |  |
-| `ServiceContract` |  | |  |  |
-| `ServiceContractItem` |  | |  |  |
-| `BusinessSolutionOrder` |  | |  |  |
-| `BusinessSolutionOrderItem` |  | |  |  |
-| `ProviderContract` |  | |  |  |
-| `ProviderContractItem` |  | |  |  |
-| `RevenueAccountingContract` |  | |  |  |
-| `PerformanceObligation` |  | |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |
-| `PartnerAccountAssignment` |  | |  |  |
-| `PartnerAccountAssignmentType` |  | |  |  |
-| `PartnerCostCtrActivityType` |  | |  | `}] I_GLAccountLineItemRawData.PartnerCostCtrActivityType` |
-| `PartnerOrder` |  | |  | `cast(I_GLAccountLineItemRawData.PartnerOrder as fis_par_aufnr_depre preserving type )` |
-| `PartnerOrder_2` |  | |  | `cast(I_GLAccountLineItemRawData.PartnerOrder as fis_par_aufnr preserving type )` |
-| `PartnerOrderCategory` |  | |  |  |
-| `PartnerWBSElement` |  | |  | `cast( I_GLAccountLineItemRawData.PartnerWBSElement as fis_partner_wbs preserving type )` |
-| `PartnerProject` |  | |  | `cast( I_GLAccountLineItemRawData.PartnerProject as fis_part_project preserving type )` |
-| `PartnerSalesDocument` |  | |  |  |
-| `PartnerSalesDocumentItem` |  | |  | `}] I_GLAccountLineItemRawData.PartnerSalesDocumentItem` |
-| `PartnerProjectNetwork` |  | |  |  |
-| `PartnerProjectNetworkActivity` |  | |  |  |
-| `PartnerBusinessProcess` |  | |  | `}] I_GLAccountLineItemRawData.PartnerBusinessProcess` |
-| `PartnerCostObject` |  | |  |  |
-| `WorkItem` |  | |  | `}] I_GLAccountLineItemRawData.WorkItem` |
-| `VarianceOriginGroup` |  | |  |  |
-| `BillingDocumentType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `SoldMaterial` |  | |  | `cast(I_GLAccountLineItemRawData.SoldProduct as fis_sold_material preserving type )` |
-| `SoldProduct` |  | |  |  |
-| `MaterialGroup` |  | |  | `cast(I_GLAccountLineItemRawData.SoldProductGroup as fis_matkl_pa_depr preserving type )` |
-| `SoldProductGroup` |  | |  |  |
-| `CustomerGroup` |  | |  |  |
-| `CustomerSupplierCountry` |  | |  |  |
-| `CustomerSupplierIndustry` |  | |  |  |
-| `SalesDistrict` |  | |  |  |
-| `BillToParty` |  | |  |  |
-| `ShipToParty` |  | |  |  |
-| `CustomerSupplierCorporateGroup` |  | |  |  |
-| `CashLedgerCompanyCode` |  | |  |  |
-| `CashLedgerAccount` |  | |  |  |
-| `FinancialManagementArea` |  | |  |  |
-| `CommitmentItem` |  | |  |  |
-| `FundsCenter` |  | |  | `}] I_GLAccountLineItemRawData.FundsCenter` |
-| `FundedProgram` |  | |  |  |
-| `Fund` |  | |  | `}] I_GLAccountLineItemRawData.Fund` |
-| `GrantID` |  | |  |  |
-| `BudgetPeriod` |  | |  |  |
-| `PartnerFund` |  | |  | `}] I_GLAccountLineItemRawData.PartnerFund` |
-| `PartnerGrant` |  | |  |  |
-| `PartnerBudgetPeriod` |  | |  |  |
-| `PubSecBudgetAccount` |  | |  |  |
-| `PubSecBudgetAccountCoCode` |  | |  |  |
-| `PubSecBudgetCnsmpnDate` |  | |  |  |
-| `PubSecBudgetCnsmpnFsclPeriod` |  | |  |  |
-| `PubSecBudgetCnsmpnFsclYear` |  | |  |  |
-| `PubSecBudgetIsRelevant` |  | |  |  |
-| `PubSecBudgetCnsmpnType` |  | |  |  |
-| `PubSecBudgetCnsmpnAmtType` |  | |  |  |
-| `SponsoredProgram` |  | |  |  |
-| `SponsoredClass` |  | |  |  |
-| `EarmarkedFundsDocument` |  | |  |  |
-| `EarmarkedFundsDocumentItem` |  | |  |  |
-| `GteeMBudgetValidityNumber` |  | |  |  |
-| `FinancialServicesProductGroup` |  | |  |  |
-| `FinancialServicesBranch` |  | |  |  |
-| `FinancialDataSource` |  | |  |  |
-| `JointVenture` |  | |  |  |
-| `JointVentureEquityGroup` |  | |  |  |
-| `JointVentureCostRecoveryCode` |  | |  |  |
-| `JointVenturePartner` |  | |  |  |
-| `JointVentureBillingType` |  | |  |  |
-| `JointVentureEquityType` |  | |  |  |
-| `JointVentureProductionDate` |  | |  |  |
-| `JointVentureBillingDate` |  | |  |  |
-| `JointVentureOperationalDate` |  | |  |  |
-| `CutbackRun` |  | |  |  |
-| `JointVentureAccountingActivity` |  | |  |  |
-| `PartnerVenture` |  | |  |  |
-| `PartnerEquityGroup` |  | |  |  |
-| `SenderCostRecoveryCode` |  | |  |  |
-| `CutbackAccount` |  | |  |  |
-| `CutbackCostObject` |  | |  |  |
-| `REBusinessEntity` |  | |  |  |
-| `RealEstateBuilding` |  | |  |  |
-| `RealEstateProperty` |  | |  |  |
-| `RERentalObject` |  | |  |  |
-| `RealEstateContract` |  | |  |  |
-| `REServiceChargeKey` |  | |  |  |
-| `RESettlementUnitID` |  | |  |  |
-| `SettlementReferenceDate` |  | |  |  |
-| `REPartnerBusinessEntity` |  | |  |  |
-| `RealEstatePartnerBuilding` |  | |  |  |
-| `RealEstatePartnerProperty` |  | |  |  |
-| `REPartnerRentalObject` |  | |  |  |
-| `RealEstatePartnerContract` |  | |  |  |
-| `REPartnerServiceChargeKey` |  | |  |  |
-| `REPartnerSettlementUnitID` |  | |  |  |
-| `PartnerSettlementReferenceDate` |  | |  |  |
-| `AccrualObjectType` |  | |  |  |
-| `AccrualObjectLogicalSystem` |  | |  |  |
-| `AccrualObject` |  | |  |  |
-| `AccrualSubobject` |  | |  |  |
-| `AccrualItemType` |  | |  |  |
-| `AccrualReferenceObject` |  | |  |  |
-| `AccrualValueDate` |  | |  |  |
-| `FinancialValuationObjectType` |  | |  |  |
-| `FinancialValuationObject` |  | |  |  |
-| `FinancialValuationSubobject` |  | |  |  |
-| `NetDueDate` |  | |  |  |
-| `CreditRiskClass` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `OrderOperation` |  | |  |  |
-| `OrderItem` |  | |  |  |
-| `PartnerOrderItem` |  | |  |  |
-| `OrderSuboperation` |  | |  | `}] I_GLAccountLineItemRawData.OrderSuboperation` |
-| `Equipment` |  | |  |  |
-| `FunctionalLocation` |  | |  |  |
-| `Assembly` |  | |  |  |
-| `MaintenanceActivityType` |  | |  |  |
-| `MaintenanceOrderPlanningCode` |  | |  |  |
-| `MaintPriorityType` |  | |  |  |
-| `MaintPriority` |  | |  |  |
-| `SuperiorOrder` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `MaintenanceOrderIsPlanned` |  | |  |  |
-| `JrnlEntryItemMigrationSource` |  | |  |  |
-| `DebitAmountInCoCodeCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInCompanyCodeCurrency as fis_dr_hsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_hsl preserving type ) end` |
-| `CreditAmountInCoCodeCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInCompanyCodeCurrency as fis_cr_hsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_hsl preserving type ) end` |
-| `DebitAmountInTransCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInTransactionCurrency as fis_dr_wsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_wsl preserving type ) end` |
-| `CreditAmountInTransCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInTransactionCurrency as fis_cr_wsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_wsl preserving type ) end` |
-| `DebitAmountInBalanceTransCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInBalanceTransacCrcy as fis_dr_tsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_tsl preserving type ) end` |
-| `CreditAmountInBalanceTransCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInBalanceTransacCrcy as fis_cr_tsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_tsl preserving type ) end` |
-| `DebitAmountInGlobalCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInGlobalCurrency as fis_dr_ksl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_ksl preserving type ) end` |
-| `CreditAmountInGlobalCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInGlobalCurrency as fis_cr_ksl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_ksl preserving type ) end` |
-| `DebitAmountInFunctionalCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFunctionalCurrency as fis_dr_amt_funccrcy preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_amt_funccrcy preserving type ) end` |
-| `CreditAmountInFunctionalCrcy` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFunctionalCurrency as fis_cr_amt_funccrcy preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_amt_funccrcy preserving type ) end` |
-| `DebitAmountInFreeDefinedCrcy1` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency1 as fis_dr_osl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_osl preserving type ) end` |
-| `CreditAmountInFreeDefinedCrcy1` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency1 as fis_cr_osl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_osl preserving type ) end` |
-| `DebitAmountInFreeDefinedCrcy2` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency2 as fis_dr_vsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_vsl preserving type ) end` |
-| `CreditAmountInFreeDefinedCrcy2` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency2 as fis_cr_vsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_vsl preserving type ) end` |
-| `DebitAmountInFreeDefinedCrcy3` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency3 as fis_dr_bsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_bsl preserving type ) end` |
-| `CreditAmountInFreeDefinedCrcy3` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency3 as fis_cr_bsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_bsl preserving type ) end` |
-| `DebitAmountInFreeDefinedCrcy4` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency4 as fis_dr_csl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_csl preserving type ) end` |
-| `CreditAmountInFreeDefinedCrcy4` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency4 as fis_cr_csl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_csl preserving type ) end` |
-| `DebitAmountInFreeDefinedCrcy5` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency5 as fis_dr_dsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_dsl preserving type ) end` |
-| `CreditAmountInFreeDefinedCrcy5` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency5 as fis_cr_dsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_dsl preserving type ) end` |
-| `DebitAmountInFreeDefinedCrcy6` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency6 as fis_dr_esl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_esl preserving type ) end` |
-| `CreditAmountInFreeDefinedCrcy6` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency6 as fis_cr_esl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_esl preserving type ) end` |
-| `DebitAmountInFreeDefinedCrcy7` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency7 as fis_dr_fsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_fsl preserving type ) end` |
-| `CreditAmountInFreeDefinedCrcy7` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency7 as fis_cr_fsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_fsl preserving type ) end` |
-| `DebitAmountInFreeDefinedCrcy8` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency8 as fis_dr_gsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_gsl preserving type ) end` |
-| `CreditAmountInFreeDefinedCrcy8` |  | |  | `} case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency8 as fis_cr_gsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_gsl preserving type ) end` |
-| `IsStatisticalOrder` |  | |  | `cast( ( case when ( I_GLAccountLineItemRawData.AccountAssignmentType != 'OR' and I_GLAccountLineItemRawData.AccountAssignmentType != 'OP' and I_GLAccountLineItemRawData.AccountAssignmentType != 'OV' ) and I_GLAccountLineItemRawData.OrderID != '' then 'X' else ' ' end ) as fins_xaufnr_stat preserving type )` |
-| `IsStatisticalCostCenter` |  | |  | `cast( ( case when ( I_GLAccountLineItemRawData.AccountAssignmentType != 'KL' and I_GLAccountLineItemRawData.AccountAssignmentType != 'KS' ) and I_GLAccountLineItemRawData.CostCenter != '' then 'X' else ' ' end ) as fins_xkostl_stat preserving type )` |
-| `IsStatisticalSalesDocument` |  | |  | `cast( ( case when I_GLAccountLineItemRawData.AccountAssignmentType != 'VB' and I_GLAccountLineItemRawData.SalesDocument != '' then 'X' else ' ' end ) as fis_xkdpos_stat preserving type )` |
-| `WBSIsStatisticalWBSElement` |  | |  | `cast( ( case when ( I_GLAccountLineItemRawData.AccountAssignmentType != 'PR' ) and ( I_GLAccountLineItemRawData.WBSElementInternalID != '00000000' ) then 'X' else ' ' end ) as fins_xps_posid_stat preserving type )` |
-| `NumberOfItems` |  | |  | `cast( cast(1 as abap.dec( 12, 0 )) as fis_nbritm preserving type )` |
-| `GLAccountAuthorizationGroup` |  | |  | `cast( '' as fis_brgru_glaccount)` |
-| `SupplierBasicAuthorizationGrp` |  | |  | `cast( '' as fis_brgru_supplier)` |
-| `CustomerBasicAuthorizationGrp` |  | |  | `cast( '' as fis_brgru_customer)` |
-| `AcctgDocTypeAuthorizationGroup` |  | |  | `cast( '' as fis_brgru_acctgdoctype)` |
-| `OrderType` |  | |  | `cast( '' as aufart)` |
-| `SalesOrderType` |  | |  | `cast( '' as auart)` |
-| `_WBSElement` | | ✓ | | |
-| `_WBSElementText` | | ✓ | | |
-| `_PartnerWBSElement` | | ✓ | | |
-| `_PartnerWBSElementText` | | ✓ | | |
-| `_InventorySpclStockWBSElement` | | ✓ | | |
-| `_InvtrySpclStockWBSElmntText` | | ✓ | | |
-| `_WBSElementInternalID` | | ✓ | | |
-| `_WBSElementInternalIDText` | | ✓ | | |
-| `_InvtrySpclStockWBSElmntIntID` | | ✓ | | |
-| `_WBSElementBasicData` | | ✓ | | |
-| `_WBSElementBasicDataText` | | ✓ | | |
-| `_PartnerWBSElementBasicData` | | ✓ | | |
-| `_PartnerWBSElemntBasicDataText` | | ✓ | | |
-| `_PartnerWBSElmntBasicDataText` | | ✓ | | |
-| `_InvtrySpclStockWBSElmntBD` | | ✓ | | |
-| `_InvtrySpclStkWBSElmntBscData` | | ✓ | | |
-| `_InvtrySpclStkWBSElmntBscDataT` | | ✓ | | |
-| `_Project` | | ✓ | | |
-| `_ProjectText` | | ✓ | | |
-| `_PartnerProject` | | ✓ | | |
-| `_PartnerProjectText` | | ✓ | | |
-| `_ProjectInternalID` | | ✓ | | |
-| `_ProjectInternalIDText` | | ✓ | | |
-| `_ProjectBasicData` | | ✓ | | |
-| `_ProjectBasicDataText` | | ✓ | | |
-| `_PartnerProjectBasicData` | | ✓ | | |
-| `_PartnerProjectBasicDataText` | | ✓ | | |
-| `_AccountingDocumentTypeText` | | ✓ | | |
-| `_BudgetPeriodText` | | ✓ | | |
-| `_BusinessTransactionTypeText` | | ✓ | | |
-| `_BusinessAreaText` | | ✓ | | |
-| `_PartnerBusinessAreaText` | | ✓ | | |
-| `_BusinessProcessText` | | ✓ | | |
-| `_PartnerBusinessProcessText` | | ✓ | | |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_CountryChartOfAccountsText` | | ✓ | | |
-| `_OffsettingChartOfAccountsText` | | ✓ | | |
-| `_PartnerCompanyCodeText` | | ✓ | | |
-| `_ControllingAreaText` | | ✓ | | |
-| `_CostAnalysisResourceText` | | ✓ | | |
-| `_CustomerText` | | ✓ | | |
-| `_EquipmentText` | | ✓ | | |
-| `_FinancialManagementAreaText` | | ✓ | | |
-| `_FinancialAccountTypeText` | | ✓ | | |
-| `_OffsettingAccountTypeText` | | ✓ | | |
-| `_FixedAssetText` | | ✓ | | |
-| `_GroupFixedAssetText` | | ✓ | | |
-| `_FunctionalLocationText` | | ✓ | | |
-| `_FundText` | | ✓ | | |
-| `_PartnerFundText` | | ✓ | | |
-| `_AlternativeGLAccountText` | | ✓ | | |
-| `_GLAcctInChartOfAccountsText` | | ✓ | | |
-| `_HouseBankAccountText` | | ✓ | | |
-| `_PartnerOrderText` | | ✓ | | |
-| `_PartnerOrderText_2` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
-| `_SourceLedgerText` | | ✓ | | |
-| `_MaintenanceActivityTypeText` | | ✓ | | |
-| `_GroupMasterFixedAssetText` | | ✓ | | |
-| `_MasterFixedAssetText` | | ✓ | | |
-| `_OperatingConcernText` | | ✓ | | |
-| `_AssemblyText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_SoldProductText` | | ✓ | | |
-| `_ProjectNetworkText` | | ✓ | | |
-| `_PartnerSegmentText` | | ✓ | | |
-| `_SegmentText` | | ✓ | | |
-| `_InvtrySpclStockSupplierText` | | ✓ | | |
-| `_SupplierText` | | ✓ | | |
-| `_WorkPackageText` | | ✓ | | |
-| `_WorkPackageWorkItemText` | | ✓ | | |
-| `_DebitCreditCodeText` | | ✓ | | |
-| `_FunctionalAreaText` | | ✓ | | |
-| `_ProfitCenterText` | | ✓ | | |
-| `_CostCenterText` | | ✓ | | |
-| `_GLAccountText` | | ✓ | | |
-| `_ProfitCenterTxt` | | ✓ | | |
-| `_CostCenterTxt` | | ✓ | | |
-| `_GLAccountTxt` | | ✓ | | |
-| `_CompanyCodeText` | | ✓ | | |
-| `_OffsettingAccountText` | | ✓ | | |
-| `_JournalEntry` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_FiscalYearVariant` | | ✓ | | |
-| `_LedgerFiscalYear` | | ✓ | | |
-| `_FiscalPeriod` | | ✓ | | |
-| `_FiscalYearPeriod` | | ✓ | | |
-| `_FiscalYear` | | ✓ | | |
-| `_LedgerFiscalYearForVariant` | | ✓ | | |
-| `_FiscalPeriodForVariant` | | ✓ | | |
-| `_FiscalYearPeriodForVariant` | | ✓ | | |
-| `_CalendarDate` | | ✓ | | |
-| `_FiscalCalendarDate` | | ✓ | | |
-| `_ControllingArea` | | ✓ | | |
-| `_BalanceTransactionCurrency` | | ✓ | | |
-| `_TransactionCurrency` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
-| `_GlobalCurrency` | | ✓ | | |
-| `_FreeDefinedCurrency1` | | ✓ | | |
-| `_FreeDefinedCurrency2` | | ✓ | | |
-| `_FreeDefinedCurrency3` | | ✓ | | |
-| `_FreeDefinedCurrency4` | | ✓ | | |
-| `_FreeDefinedCurrency5` | | ✓ | | |
-| `_FreeDefinedCurrency6` | | ✓ | | |
-| `_FreeDefinedCurrency7` | | ✓ | | |
-| `_FreeDefinedCurrency8` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_CostSourceUnit` | | ✓ | | |
-| `_AdditionalQuantity1Unit` | | ✓ | | |
-| `_AdditionalQuantity2Unit` | | ✓ | | |
-| `_AdditionalQuantity3Unit` | | ✓ | | |
-| `_Segment` | | ✓ | | |
-| `_ProfitCenter` | | ✓ | | |
-| `_CurrentProfitCenter` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CurrentCostCenter` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_FunctionalArea` | | ✓ | | |
-| `_GLAccountInChartOfAccounts` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_AccountingDocumentType` | | ✓ | | |
-| `_FinancialAccountType` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_WorkPackageWorkItem` | | ✓ | | |
-| `_WorkPackage` | | ✓ | | |
-| `_Ledger` | | ✓ | | |
-| `_SourceLedger` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_CustomerGroup` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_MaterialGroup` | | ✓ | | |
-| `_SoldProductGroup` | | ✓ | | |
-| `_SoldProductGroup_2` | | ✓ | | |
-| `_ProductGroup` | | ✓ | | |
-| `_ProductGroup_2` | | ✓ | | |
-| `_SalesOrder` | | ✓ | | |
-| `_SalesOrderItem` | | ✓ | | |
-| `_SalesDocument` | | ✓ | | |
-| `_SalesDocumentItem` | | ✓ | | |
-| `_InternalOrder` | | ✓ | | |
-| `_Order` | | ✓ | | |
-| `_CostAnalysisResource` | | ✓ | | |
-| `_Employment` | | ✓ | | |
-| `_PersonWorkAgreement_1` | | ✓ | | |
-| `_FinancialTransactionType` | | ✓ | | |
-| `_BusinessTransactionType` | | ✓ | | |
-| `_ReferenceDocumentType` | | ✓ | | |
-| `_PredecessorReferenceDocType` | | ✓ | | |
-| `_PartnerCostCenter` | | ✓ | | |
-| `_PartnerProfitCenter` | | ✓ | | |
-| `_CurrentPartnerCostCenter` | | ✓ | | |
-| `_CurrentPartnerProfitCenter` | | ✓ | | |
-| `_PartnerBusinessArea` | | ✓ | | |
-| `_PartnerFunctionalArea` | | ✓ | | |
-| `_PartnerCompanyCode` | | ✓ | | |
-| `_PartnerSegment` | | ✓ | | |
-| `_AccountingDocumentCategory` | | ✓ | | |
-| `_PostingKey` | | ✓ | | |
-| `_SubLedgerAccLineItemType` | | ✓ | | |
-| `_User` | | ✓ | | |
-| `_EliminationProfitCenter` | | ✓ | | |
-| `_ControllingObject` | | ✓ | | |
-| `_GLAccountType` | | ✓ | | |
-| `_OffsettingAccountType` | | ✓ | | |
-| `_AlternativeGLAccount` | | ✓ | | |
-| `_OffsettingAccount` | | ✓ | | |
-| `_OffsettingAccountWithBP` | | ✓ | | |
-| `_OffsettingChartOfAccounts` | | ✓ | | |
-| `_CountryChartOfAccounts` | | ✓ | | |
-| `_PurchasingDocument` | | ✓ | | |
-| `_PurchasingDocumentItem` | | ✓ | | |
-| `_SpecialGLCode` | | ✓ | | |
-| `_TaxCode` | | ✓ | | |
-| `_HouseBank` | | ✓ | | |
-| `_ClearingAccountingDocument` | | ✓ | | |
-| `_ClearingJrnlEntryFiscalYear` | | ✓ | | |
-| `_ClearingJournalEntry` | | ✓ | | |
-| `_MasterFixedAsset` | | ✓ | | |
-| `_GroupMasterFixedAsset` | | ✓ | | |
-| `_FixedAsset` | | ✓ | | |
-| `_GroupFixedAsset` | | ✓ | | |
-| `_BusinessProcess` | | ✓ | | |
-| `_PartnerCostCtrActivityType` | | ✓ | | |
-| `_CurrentPartnerCostCtrActyType` | | ✓ | | |
-| `_PartnerOrder` | | ✓ | | |
-| `_PartnerOrder_2` | | ✓ | | |
-| `_PartnerOrderCategory` | | ✓ | | |
-| `_PartnerSalesDocument` | | ✓ | | |
-| `_PartnerSalesDocumentItem` | | ✓ | | |
-| `_PartnerBusinessProcess` | | ✓ | | |
-| `_BillingDocumentType` | | ✓ | | |
-| `_SalesOrganization` | | ✓ | | |
-| `_DistributionChannel` | | ✓ | | |
-| `_Division` | | ✓ | | |
-| `_SoldMaterial` | | ✓ | | |
-| `_SoldProduct` | | ✓ | | |
-| `_Fund` | | ✓ | | |
-| `_PartnerFund` | | ✓ | | |
-| `_FundsCenter` | | ✓ | | |
-| `_InventorySpecialStockValnType` | | ✓ | | |
-| `_InventorySpclStockValnType` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_InventorySpclStkSalesDocument` | | ✓ | | |
-| `_InventorySpclStkSalesDocItm` | | ✓ | | |
-| `_InventorySpecialStockSupplier` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
-| `_OriginSenderObject` | | ✓ | | |
-| `_ControllingObjectClass` | | ✓ | | |
-| `_PartnerCompany` | | ✓ | | |
-| `_PartnerControllingObjectClass` | | ✓ | | |
-| `_OriginCostCenter` | | ✓ | | |
-| `_OriginProfitCenter` | | ✓ | | |
-| `_CostCtrActivityType` | | ✓ | | |
-| `_CurrentCostCtrActyType` | | ✓ | | |
-| `_OriginCostCtrActivityType` | | ✓ | | |
-| `_OrderCategory` | | ✓ | | |
-| `_CustomerSupplierCountry` | | ✓ | | |
-| `_CustomerSupplierIndustryText` | | ✓ | | |
-| `_SalesDistrict` | | ✓ | | |
-| `_BillToParty` | | ✓ | | |
-| `_ShipToParty` | | ✓ | | |
-| `_MovementCategory` | | ✓ | | |
-| `_AssetTransactionType` | | ✓ | | |
-| `_BudgetPeriod` | | ✓ | | |
-| `_CostOriginGroup` | | ✓ | | |
-| `_FinancialManagementArea` | | ✓ | | |
-| `_HouseBankAccount` | | ✓ | | |
-| `_LogicalSystem` | | ✓ | | |
-| `_OperatingConcern` | | ✓ | | |
-| `_ProjectNetwork` | | ✓ | | |
-| `_PurReqValuationArea` | | ✓ | | |
-| `_LedgerCompanyCodeCrcyRoles` | | ✓ | | |
-| `_WorkCenter` | | ✓ | | |
-| `_BillableControl` | | ✓ | | |
-| `_ConditionContract` | | ✓ | | |
-| `_MaintenanceOrderSubOperation` | | ✓ | | |
-| `_Equipment` | | ✓ | | |
-| `_FunctionalLocation` | | ✓ | | |
-| `_Assembly` | | ✓ | | |
-| `_MaintenanceActivityType` | | ✓ | | |
-| `_MaintOrdPlngDegreeCode` | | ✓ | | |
-| `_PMNotificationPriorityType` | | ✓ | | |
-| `_PMNotificationPriority` | | ✓ | | |
-| `_SuperiorOrder` | | ✓ | | |
-| `_ServiceDocumentType` | | ✓ | | |
-| `_ServiceDocument` | | ✓ | | |
-| `_ServiceDocumentItem` | | ✓ | | |
-| `_PartnerServiceDocumentType` | | ✓ | | |
-| `_PartnerServiceDocument` | | ✓ | | |
-| `_PartnerServiceDocumentItem` | | ✓ | | |
-| `_ServiceContractType` | | ✓ | | |
-| `_ServiceContract` | | ✓ | | |
-| `_ServiceContractItem` | | ✓ | | |
-| `_TimeSheetOvertimeCat` | | ✓ | | |
-| `_AccrualObjectType` | | ✓ | | |
-| `_AccrualObject` | | ✓ | | |
-| `_AccrualSubobject` | | ✓ | | |
-| `_AccrualItemType` | | ✓ | | |
-| `_CreditRiskClass` | | ✓ | | |
-| `_FinValuationObjectType` | | ✓ | | |
-| `_SemTagGLAccount` | | ✓ | | |
-| `_SponsoredClass` | | ✓ | | |
-| `_SponsoredProgram` | | ✓ | | |
-| `_OrganizationalChange` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SourceLedger` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |  |  |
+| `Ledger` | ✓ | |  |  |  |  |
+| `LedgerFiscalYear` |  | |  |  |  |  |
+| `GLRecordType` |  | |  |  |  |  |
+| `JrnlEntrAltvFYConsecutiveID` |  | |  |  |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `FinancialTransactionType` |  | |  |  |  |  |
+| `BusinessTransactionCategory` |  | |  |  |  |  |
+| `BusinessTransactionType` |  | |  |  |  |  |
+| `FinancialClosingStep` |  | |  |  |  |  |
+| `ControllingBusTransacType` |  | |  |  |  |  |
+| `ReferenceDocumentType` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `ReferenceDocumentContext` |  | |  |  |  |  |
+| `ReferenceDocument` |  | |  |  |  |  |
+| `ReferenceDocumentItem` |  | |  |  |  |  |
+| `ReferenceDocumentItemGroup` |  | |  |  |  |  |
+| `IsReversal` |  | |  |  |  |  |
+| `IsReversed` |  | |  |  |  |  |
+| `ReversalReferenceDocumentCntxt` |  | |  |  |  |  |
+| `ReversalReferenceDocument` |  | |  |  |  |  |
+| `IsSettlement` |  | |  |  |  |  |
+| `IsSettled` |  | |  |  |  |  |
+| `PredecessorReferenceDocType` |  | |  |  |  |  |
+| `PredecessorReferenceDocCntxt` |  | |  |  |  |  |
+| `PredecessorReferenceDocument` |  | |  |  |  |  |
+| `PredecessorReferenceDocItem` |  | |  |  |  |  |
+| `PrdcssrJournalEntryCompanyCode` |  | |  |  |  |  |
+| `PrdcssrJournalEntryFiscalYear` |  | |  |  |  |  |
+| `PredecessorJournalEntry` |  | |  |  |  |  |
+| `PredecessorJournalEntryItem` |  | |  |  |  |  |
+| `SourceReferenceDocumentType` |  | |  |  |  |  |
+| `SourceLogicalSystem` |  | |  |  |  |  |
+| `SourceReferenceDocumentCntxt` |  | |  |  |  |  |
+| `SourceReferenceDocument` |  | |  |  |  |  |
+| `SourceReferenceDocumentItem` |  | |  |  |  |  |
+| `SourceReferenceDocSubitem` |  | |  |  |  |  |
+| `IsCommitment` |  | |  |  |  |  |
+| `JrnlEntryItemObsoleteReason` |  | |  |  |  |  |
+| `OrganizationalChange` |  | |  |  |  |  |
+| `AccountingNotificationUUID` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `FunctionalArea` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `PartnerCostCenter` |  | |  |  |  |  |
+| `PartnerProfitCenter` |  | |  |  |  |  |
+| `PartnerFunctionalArea` |  | |  |  |  |  |
+| `PartnerBusinessArea` |  | |  |  |  |  |
+| `PartnerCompany` |  | |  |  |  |  |
+| `PartnerSegment` |  | |  |  |  |  |
+| `BalanceTransactionCurrency` |  | |  |  |  |  |
+| `AmountInBalanceTransacCrcy` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
+| `GlobalCurrency` |  | |  |  |  |  |
+| `AmountInGlobalCurrency` |  | |  |  |  |  |
+| `FunctionalCurrency` |  | |  |  |  |  |
+| `AmountInFunctionalCurrency` |  | |  |  |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
+| `FreeDefinedCurrency2` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  |  |  |  |
+| `FreeDefinedCurrency3` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency3` |  | |  |  |  |  |
+| `FreeDefinedCurrency4` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency4` |  | |  |  |  |  |
+| `FreeDefinedCurrency5` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency5` |  | |  |  |  |  |
+| `FreeDefinedCurrency6` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency6` |  | |  |  |  |  |
+| `FreeDefinedCurrency7` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency7` |  | |  |  |  |  |
+| `FreeDefinedCurrency8` |  | |  |  |  |  |
+| `AmountInFreeDefinedCurrency8` |  | |  |  |  |  |
+| `FixedAmountInGlobalCrcy` |  | |  |  |  |  |
+| `FixedAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `GrpValnFixedAmtInGlobCrcy` |  | |  |  |  |  |
+| `PrftCtrValnFxdAmtInGlobCrcy` |  | |  |  |  |  |
+| `TotalPriceVarcInGlobalCrcy` |  | |  |  |  |  |
+| `GrpValnTotPrcVarcInGlobCrcy` |  | |  |  |  |  |
+| `PrftCtrValnTotPrcVarcInGlbCrcy` |  | |  |  |  |  |
+| `FixedPriceVarcInGlobalCrcy` |  | |  |  |  |  |
+| `GrpValnFixedPrcVarcInGlobCrcy` |  | |  |  |  |  |
+| `PrftCtrValnFxdPrcVarcInGlbCrcy` |  | |  |  |  |  |
+| `ControllingObjectCurrency` |  | |  |  |  |  |
+| `AmountInObjectCurrency` |  | |  |  |  |  |
+| `GrantCurrency` |  | |  |  |  |  |
+| `AmountInGrantCurrency` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `Quantity` |  | |  |  |  |  |
+| `FixedQuantity` |  | |  |  |  |  |
+| `CostSourceUnit` |  | |  |  |  |  |
+| `ValuationQuantity` |  | |  |  |  |  |
+| `ValuationFixedQuantity` |  | |  |  |  |  |
+| `ReferenceQuantityUnit` |  | |  |  |  |  |
+| `ReferenceQuantity` |  | |  |  |  |  |
+| `AdditionalQuantity1Unit` |  | |  |  |  |  |
+| `AdditionalQuantity1` |  | |  |  |  |  |
+| `AdditionalQuantity2Unit` |  | |  |  |  |  |
+| `AdditionalQuantity2` |  | |  |  |  |  |
+| `AdditionalQuantity3Unit` |  | |  |  |  |  |
+| `AdditionalQuantity3` |  | |  |  |  |  |
+| `IncmpltSummableValnQtyUnt` |  | |  |  |  |  |
+| `IncmpltSummableValnQty` |  | |  |  |  |  |
+| `IncmpltSummableValnFxdQty` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `FiscalPeriod` |  | |  |  |  |  |
+| `FiscalYearVariant` |  | |  |  |  |  |
+| `FiscalYearPeriod` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `AccountingDocumentType` |  | |  |  |  |  |
+| `AccountingDocumentItem` |  | |  |  |  |  |
+| `AssignmentReference` |  | |  |  |  |  |
+| `AccountingDocumentCategory` |  | |  |  |  |  |
+| `JournalEntryItemCategory` |  | |  |  |  |  |
+| `PostingKey` |  | |  |  |  |  |
+| `TransactionTypeDetermination` |  | |  |  |  |  |
+| `SubLedgerAcctLineItemType` |  | |  |  |  |  |
+| `AccountingDocCreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `EliminationProfitCenter` |  | |  |  |  |  |
+| `OriginObjectType` |  | |  |  |  |  |
+| `GLAccountType` |  | |  |  |  |  |
+| `AlternativeGLAccount` |  | |  |  |  |  |
+| `CountryChartOfAccounts` |  | |  |  |  |  |
+| `ConsolidationUnit` |  | |  |  |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |  |  |
+| `Company` |  | |  |  |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |  |  |
+| `CnsldtnSubitemCategory` |  | |  |  |  |  |
+| `CnsldtnSubitem` |  | |  |  |  |  |
+| `InvoiceReference` |  | |  |  |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  |  |  |  |
+| `FollowOnDocumentType` |  | |  |  |  |  |
+| `InvoiceItemReference` |  | |  |  |  |  |
+| `ReferencePurchaseOrderCategory` |  | |  |  |  |  |
+| `PurchasingDocument` |  | |  |  |  |  |
+| `PurchasingDocumentItem` |  | |  |  |  |  |
+| `AccountAssignmentNumber` |  | |  |  |  |  |
+| `DocumentItemText` |  | |  |  |  |  |
+| `SalesOrder` |  | |  | `cast(I_GLAccountLineItemRawData.SalesDocument as vdm_sales_order preserving type )` |  |  |
+| `SalesOrderItem` |  | |  | `cast(I_GLAccountLineItemRawData.SalesDocumentItem as sales_order_item preserving type )` |  |  |
+| `SalesDocument` |  | |  |  |  |  |
+| `SalesDocumentItem` |  | |  |  |  |  |
+| `Material` |  | |  | `cast(I_GLAccountLineItemRawData.Product as matnr preserving type )` |  |  |
+| `Product` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `Customer` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |  |  |
+| `ConditionContract` |  | |  |  |  |  |
+| `ComponentBreakdown` |  | |  |  |  |  |
+| `CompBreakdownScaleNumerator` |  | |  |  |  |  |
+| `FinancialAccountType` |  | |  |  |  |  |
+| `SpecialGLCode` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `HouseBank` |  | |  |  |  |  |
+| `HouseBankAccount` |  | |  |  |  |  |
+| `IsOpenItemManaged` |  | |  |  |  |  |
+| `ClearingDate` |  | |  |  |  |  |
+| `ClearingDocFiscalYear` |  | |  | `cast( I_GLAccountLineItemRawData.ClearingJournalEntryFiscalYear as fis_auggj_no_conv_depre preserving type )` |  |  |
+| `ClearingAccountingDocument` |  | |  | `cast( I_GLAccountLineItemRawData.ClearingJournalEntry as fis_augbl_depre preserving type )` |  |  |
+| `ClearingJournalEntryFiscalYear` |  | |  |  |  |  |
+| `ClearingJournalEntry` |  | |  |  |  |  |
+| `ValueDate` |  | |  |  |  |  |
+| `GeneralLedgerAgingScope` |  | |  |  |  |  |
+| `GeneralLedgerAgingIncrement` |  | |  |  |  |  |
+| `AssetDepreciationArea` |  | |  |  |  |  |
+| `MasterFixedAsset` |  | |  |  |  |  |
+| `FixedAsset` |  | |  |  |  |  |
+| `AssetValueDate` |  | |  |  |  |  |
+| `AssetTransactionType` |  | |  |  |  |  |
+| `AssetAcctTransClassfctn` |  | |  |  |  |  |
+| `DepreciationFiscalPeriod` |  | |  |  |  |  |
+| `GroupMasterFixedAsset` |  | |  |  |  |  |
+| `GroupFixedAsset` |  | |  |  |  |  |
+| `AssetClass` |  | |  |  |  |  |
+| `PartnerMasterFixedAsset` |  | |  |  |  |  |
+| `PartnerFixedAsset` |  | |  |  |  |  |
+| `CostEstimate` |  | |  |  |  |  |
+| `InventorySpecialStockValnType` |  | |  | `cast( I_GLAccountLineItemRawData.InventorySpecialStockValnType as fis_invtryspclstockvalntype_d preserving type )` |  |  |
+| `InvtrySpecialStockValnType_2` |  | |  | `InventorySpecialStockValnType` |  |  |
+| `IsSupplierStockValuation` |  | |  |  |  |  |
+| `InventorySpecialStockType` |  | |  |  |  |  |
+| `InventorySpclStkSalesDocument` |  | |  |  |  |  |
+| `InventorySpclStkSalesDocItm` |  | |  |  |  |  |
+| `InvtrySpclStockWBSElmntIntID` |  | |  | `cast( I_GLAccountLineItemRawData.InvtrySpclStockWBSElmntIntID as fis_invspstock_wbsint_no_conv preserving type )` |  |  |
+| `InventorySpclStockWBSElement` |  | |  | `cast( I_GLAccountLineItemRawData.InventorySpclStockWBSElement as fis_invspstock_wbs preserving type )` |  |  |
+| `InventorySpecialStockSupplier` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `MaterialLedgerProcessType` |  | |  |  |  |  |
+| `MaterialLedgerCategory` |  | |  |  |  |  |
+| `SlsPriceAmountInCoCodeCrcy` |  | |  |  |  |  |
+| `ProductPriceControl` |  | |  |  |  |  |
+| `CurPlanProjSlsOrdValnStrategy` |  | |  |  |  |  |
+| `SenderCompanyCode` |  | |  |  |  |  |
+| `SenderGLAccount` |  | |  |  |  |  |
+| `SenderAccountAssignment` |  | |  |  |  |  |
+| `SenderAccountAssignmentType` |  | |  |  |  |  |
+| `ControllingObject` |  | |  |  |  |  |
+| `CostOriginGroup` |  | |  |  |  |  |
+| `OriginSenderObject` |  | |  |  |  |  |
+| `ControllingDebitCreditCode` |  | |  |  |  |  |
+| `OriginCtrlgDebitCreditCode` |  | |  |  |  |  |
+| `ControllingObjectDebitType` |  | |  |  |  |  |
+| `QuantityIsIncomplete` |  | |  |  |  |  |
+| `OffsettingAccount` |  | |  |  |  |  |
+| `OffsettingAccountType` |  | |  |  |  |  |
+| `OffsettingChartOfAccounts` |  | |  |  |  |  |
+| `LineItemIsCompleted` |  | |  |  |  |  |
+| `PersonnelNumber` |  | |  |  |  |  |
+| `ControllingObjectClass` |  | |  |  |  |  |
+| `PartnerCompanyCode` |  | |  |  |  |  |
+| `PartnerControllingObjectClass` |  | |  |  |  |  |
+| `OriginCostCenter` |  | |  |  |  |  |
+| `OriginProfitCenter` |  | |  |  |  |  |
+| `OriginOrder` |  | |  |  |  |  |
+| `OriginCostCtrActivityType` |  | |  |  |  |  |
+| `OriginProduct` |  | |  |  |  |  |
+| `VarianceOriginGLAccount` |  | |  |  |  |  |
+| `AccountAssignment` |  | |  |  |  |  |
+| `AccountAssignmentType` |  | |  |  |  |  |
+| `CostCtrActivityType` |  | |  |  |  |  |
+| `OrderID` |  | |  |  |  |  |
+| `OrderCategory` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `PartnerWBSElementInternalID` |  | |  |  |  |  |
+| `WBSElement` |  | |  | `cast( I_GLAccountLineItemRawData.WBSElement as fis_wbs preserving type )` |  |  |
+| `ProjectInternalID` |  | |  |  |  |  |
+| `PartnerProjectInternalID` |  | |  |  |  |  |
+| `WorkPackage` |  | |  |  |  |  |
+| `Project` |  | |  | `cast( I_GLAccountLineItemRawData.Project as fis_project preserving type )` |  |  |
+| `OperatingConcern` |  | |  |  |  |  |
+| `ProjectNetwork` |  | |  |  |  |  |
+| `RelatedNetworkActivity` |  | |  |  |  |  |
+| `BusinessProcess` |  | |  |  |  |  |
+| `CostObject` |  | |  |  |  |  |
+| `BillableControl` |  | |  |  |  |  |
+| `CostAnalysisResource` |  | |  |  |  |  |
+| `CustomerServiceNotification` |  | |  |  |  |  |
+| `ServiceDocumentType` |  | |  |  |  |  |
+| `ServiceDocument` |  | |  |  |  |  |
+| `ServiceDocumentItem` |  | |  |  |  |  |
+| `PartnerServiceDocumentType` |  | |  |  |  |  |
+| `PartnerServiceDocument` |  | |  |  |  |  |
+| `PartnerServiceDocumentItem` |  | |  |  |  |  |
+| `ServiceContractType` |  | |  |  |  |  |
+| `ServiceContract` |  | |  |  |  |  |
+| `ServiceContractItem` |  | |  |  |  |  |
+| `BusinessSolutionOrder` |  | |  |  |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |  |  |
+| `ProviderContract` |  | |  |  |  |  |
+| `ProviderContractItem` |  | |  |  |  |  |
+| `RevenueAccountingContract` |  | |  |  |  |  |
+| `PerformanceObligation` |  | |  |  |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
+| `PartnerAccountAssignment` |  | |  |  |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |  |  |
+| `PartnerCostCtrActivityType` |  | |  |  |  |  |
+| `PartnerOrder` |  | |  | `cast(I_GLAccountLineItemRawData.PartnerOrder as fis_par_aufnr_depre preserving type )` |  |  |
+| `PartnerOrder_2` |  | |  | `cast(I_GLAccountLineItemRawData.PartnerOrder as fis_par_aufnr preserving type )` |  |  |
+| `PartnerOrderCategory` |  | |  |  |  |  |
+| `PartnerWBSElement` |  | |  | `cast( I_GLAccountLineItemRawData.PartnerWBSElement as fis_partner_wbs preserving type )` |  |  |
+| `PartnerProject` |  | |  | `cast( I_GLAccountLineItemRawData.PartnerProject as fis_part_project preserving type )` |  |  |
+| `PartnerSalesDocument` |  | |  |  |  |  |
+| `PartnerSalesDocumentItem` |  | |  |  |  |  |
+| `PartnerProjectNetwork` |  | |  |  |  |  |
+| `PartnerProjectNetworkActivity` |  | |  |  |  |  |
+| `PartnerBusinessProcess` |  | |  |  |  |  |
+| `PartnerCostObject` |  | |  |  |  |  |
+| `WorkItem` |  | |  |  |  |  |
+| `VarianceOriginGroup` |  | |  |  |  |  |
+| `BillingDocumentType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `SoldMaterial` |  | |  | `cast(I_GLAccountLineItemRawData.SoldProduct as fis_sold_material preserving type )` |  |  |
+| `SoldProduct` |  | |  |  |  |  |
+| `MaterialGroup` |  | |  | `cast(I_GLAccountLineItemRawData.SoldProductGroup as fis_matkl_pa_depr preserving type )` |  |  |
+| `SoldProductGroup` |  | |  |  |  |  |
+| `CustomerGroup` |  | |  |  |  |  |
+| `CustomerSupplierCountry` |  | |  |  |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |  |  |
+| `SalesDistrict` |  | |  |  |  |  |
+| `BillToParty` |  | |  |  |  |  |
+| `ShipToParty` |  | |  |  |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  |  |  |  |
+| `CashLedgerCompanyCode` |  | |  |  |  |  |
+| `CashLedgerAccount` |  | |  |  |  |  |
+| `FinancialManagementArea` |  | |  |  |  |  |
+| `CommitmentItem` |  | |  |  |  |  |
+| `FundsCenter` |  | |  |  |  |  |
+| `FundedProgram` |  | |  |  |  |  |
+| `Fund` |  | |  |  |  |  |
+| `GrantID` |  | |  |  |  |  |
+| `BudgetPeriod` |  | |  |  |  |  |
+| `PartnerFund` |  | |  |  |  |  |
+| `PartnerGrant` |  | |  |  |  |  |
+| `PartnerBudgetPeriod` |  | |  |  |  |  |
+| `PubSecBudgetAccount` |  | |  |  |  |  |
+| `PubSecBudgetAccountCoCode` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnDate` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnFsclPeriod` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnFsclYear` |  | |  |  |  |  |
+| `PubSecBudgetIsRelevant` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnType` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnAmtType` |  | |  |  |  |  |
+| `SponsoredProgram` |  | |  |  |  |  |
+| `SponsoredClass` |  | |  |  |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |  |  |
+| `EarmarkedFundsDocumentItem` |  | |  |  |  |  |
+| `GteeMBudgetValidityNumber` |  | |  |  |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |  |  |
+| `FinancialServicesBranch` |  | |  |  |  |  |
+| `FinancialDataSource` |  | |  |  |  |  |
+| `JointVenture` |  | |  |  |  |  |
+| `JointVentureEquityGroup` |  | |  |  |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |  |  |
+| `JointVenturePartner` |  | |  |  |  |  |
+| `JointVentureBillingType` |  | |  |  |  |  |
+| `JointVentureEquityType` |  | |  |  |  |  |
+| `JointVentureProductionDate` |  | |  |  |  |  |
+| `JointVentureBillingDate` |  | |  |  |  |  |
+| `JointVentureOperationalDate` |  | |  |  |  |  |
+| `CutbackRun` |  | |  |  |  |  |
+| `JointVentureAccountingActivity` |  | |  |  |  |  |
+| `PartnerVenture` |  | |  |  |  |  |
+| `PartnerEquityGroup` |  | |  |  |  |  |
+| `SenderCostRecoveryCode` |  | |  |  |  |  |
+| `CutbackAccount` |  | |  |  |  |  |
+| `CutbackCostObject` |  | |  |  |  |  |
+| `REBusinessEntity` |  | |  |  |  |  |
+| `RealEstateBuilding` |  | |  |  |  |  |
+| `RealEstateProperty` |  | |  |  |  |  |
+| `RERentalObject` |  | |  |  |  |  |
+| `RealEstateContract` |  | |  |  |  |  |
+| `REServiceChargeKey` |  | |  |  |  |  |
+| `RESettlementUnitID` |  | |  |  |  |  |
+| `SettlementReferenceDate` |  | |  |  |  |  |
+| `REPartnerBusinessEntity` |  | |  |  |  |  |
+| `RealEstatePartnerBuilding` |  | |  |  |  |  |
+| `RealEstatePartnerProperty` |  | |  |  |  |  |
+| `REPartnerRentalObject` |  | |  |  |  |  |
+| `RealEstatePartnerContract` |  | |  |  |  |  |
+| `REPartnerServiceChargeKey` |  | |  |  |  |  |
+| `REPartnerSettlementUnitID` |  | |  |  |  |  |
+| `PartnerSettlementReferenceDate` |  | |  |  |  |  |
+| `AccrualObjectType` |  | |  |  |  |  |
+| `AccrualObjectLogicalSystem` |  | |  |  |  |  |
+| `AccrualObject` |  | |  |  |  |  |
+| `AccrualSubobject` |  | |  |  |  |  |
+| `AccrualItemType` |  | |  |  |  |  |
+| `AccrualReferenceObject` |  | |  |  |  |  |
+| `AccrualValueDate` |  | |  |  |  |  |
+| `FinancialValuationObjectType` |  | |  |  |  |  |
+| `FinancialValuationObject` |  | |  |  |  |  |
+| `FinancialValuationSubobject` |  | |  |  |  |  |
+| `NetDueDate` |  | |  |  |  |  |
+| `CreditRiskClass` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `OrderOperation` |  | |  |  |  |  |
+| `OrderItem` |  | |  |  |  |  |
+| `PartnerOrderItem` |  | |  |  |  |  |
+| `OrderSuboperation` |  | |  |  |  |  |
+| `Equipment` |  | |  |  |  |  |
+| `FunctionalLocation` |  | |  |  |  |  |
+| `Assembly` |  | |  |  |  |  |
+| `MaintenanceActivityType` |  | |  |  |  |  |
+| `MaintenanceOrderPlanningCode` |  | |  |  |  |  |
+| `MaintPriorityType` |  | |  |  |  |  |
+| `MaintPriority` |  | |  |  |  |  |
+| `SuperiorOrder` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `MaintenanceOrderIsPlanned` |  | |  |  |  |  |
+| `JrnlEntryItemMigrationSource` |  | |  |  |  |  |
+| `DebitAmountInCoCodeCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInCompanyCodeCurrency as fis_dr_hsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_hsl preserving type ) end` |  |  |
+| `CreditAmountInCoCodeCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInCompanyCodeCurrency as fis_cr_hsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_hsl preserving type ) end` |  |  |
+| `DebitAmountInTransCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInTransactionCurrency as fis_dr_wsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_wsl preserving type ) end` |  |  |
+| `CreditAmountInTransCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInTransactionCurrency as fis_cr_wsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_wsl preserving type ) end` |  |  |
+| `DebitAmountInBalanceTransCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInBalanceTransacCrcy as fis_dr_tsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_tsl preserving type ) end` |  |  |
+| `CreditAmountInBalanceTransCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInBalanceTransacCrcy as fis_cr_tsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_tsl preserving type ) end` |  |  |
+| `DebitAmountInGlobalCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInGlobalCurrency as fis_dr_ksl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_ksl preserving type ) end` |  |  |
+| `CreditAmountInGlobalCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInGlobalCurrency as fis_cr_ksl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_ksl preserving type ) end` |  |  |
+| `DebitAmountInFunctionalCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFunctionalCurrency as fis_dr_amt_funccrcy preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_amt_funccrcy preserving type ) end` |  |  |
+| `CreditAmountInFunctionalCrcy` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFunctionalCurrency as fis_cr_amt_funccrcy preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_amt_funccrcy preserving type ) end` |  |  |
+| `DebitAmountInFreeDefinedCrcy1` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency1 as fis_dr_osl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_osl preserving type ) end` |  |  |
+| `CreditAmountInFreeDefinedCrcy1` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency1 as fis_cr_osl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_osl preserving type ) end` |  |  |
+| `DebitAmountInFreeDefinedCrcy2` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency2 as fis_dr_vsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_vsl preserving type ) end` |  |  |
+| `CreditAmountInFreeDefinedCrcy2` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency2 as fis_cr_vsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_vsl preserving type ) end` |  |  |
+| `DebitAmountInFreeDefinedCrcy3` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency3 as fis_dr_bsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_bsl preserving type ) end` |  |  |
+| `CreditAmountInFreeDefinedCrcy3` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency3 as fis_cr_bsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_bsl preserving type ) end` |  |  |
+| `DebitAmountInFreeDefinedCrcy4` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency4 as fis_dr_csl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_csl preserving type ) end` |  |  |
+| `CreditAmountInFreeDefinedCrcy4` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency4 as fis_cr_csl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_csl preserving type ) end` |  |  |
+| `DebitAmountInFreeDefinedCrcy5` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency5 as fis_dr_dsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_dsl preserving type ) end` |  |  |
+| `CreditAmountInFreeDefinedCrcy5` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency5 as fis_cr_dsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_dsl preserving type ) end` |  |  |
+| `DebitAmountInFreeDefinedCrcy6` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency6 as fis_dr_esl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_esl preserving type ) end` |  |  |
+| `CreditAmountInFreeDefinedCrcy6` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency6 as fis_cr_esl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_esl preserving type ) end` |  |  |
+| `DebitAmountInFreeDefinedCrcy7` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency7 as fis_dr_fsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_fsl preserving type ) end` |  |  |
+| `CreditAmountInFreeDefinedCrcy7` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency7 as fis_cr_fsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_fsl preserving type ) end` |  |  |
+| `DebitAmountInFreeDefinedCrcy8` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'S' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency8 as fis_dr_gsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_dr_gsl preserving type ) end` |  |  |
+| `CreditAmountInFreeDefinedCrcy8` |  | |  | `case I_GLAccountLineItemRawData.DebitCreditCode when 'H' then cast( I_GLAccountLineItemRawData.AmountInFreeDefinedCurrency8 as fis_cr_gsl preserving type ) else cast( cast( 0 as abap.curr( 23,2) ) as fis_cr_gsl preserving type ) end` |  |  |
+| `IsStatisticalOrder` |  | |  | `cast( ( case when ( I_GLAccountLineItemRawData.AccountAssignmentType != 'OR' and I_GLAccountLineItemRawData.AccountAssignmentType != 'OP' and I_GLAccountLineItemRawData.AccountAssignmentType != 'OV' ) and I_GLAccountLineItemRawData.OrderID != '' then 'X' else ' ' end ) as fins_xaufnr_stat preserving type )` |  |  |
+| `IsStatisticalCostCenter` |  | |  | `cast( ( case when ( I_GLAccountLineItemRawData.AccountAssignmentType != 'KL' and I_GLAccountLineItemRawData.AccountAssignmentType != 'KS' ) and I_GLAccountLineItemRawData.CostCenter != '' then 'X' else ' ' end ) as fins_xkostl_stat preserving type )` |  |  |
+| `IsStatisticalSalesDocument` |  | |  | `cast( ( case when I_GLAccountLineItemRawData.AccountAssignmentType != 'VB' and I_GLAccountLineItemRawData.SalesDocument != '' then 'X' else ' ' end ) as fis_xkdpos_stat preserving type )` |  |  |
+| `WBSIsStatisticalWBSElement` |  | |  | `cast( ( case when ( I_GLAccountLineItemRawData.AccountAssignmentType != 'PR' ) and ( I_GLAccountLineItemRawData.WBSElementInternalID != '00000000' ) then 'X' else ' ' end ) as fins_xps_posid_stat preserving type )` |  |  |
+| `NumberOfItems` |  | |  | `cast( cast(1 as abap.dec( 12, 0 )) as fis_nbritm preserving type )` |  |  |
+| `GLAccountAuthorizationGroup` |  | |  | `cast( '' as fis_brgru_glaccount)` |  |  |
+| `SupplierBasicAuthorizationGrp` |  | |  | `cast( '' as fis_brgru_supplier)` |  |  |
+| `CustomerBasicAuthorizationGrp` |  | |  | `cast( '' as fis_brgru_customer)` |  |  |
+| `AcctgDocTypeAuthorizationGroup` |  | |  | `cast( '' as fis_brgru_acctgdoctype)` |  |  |
+| `OrderType` |  | |  | `cast( '' as aufart)` |  |  |
+| `SalesOrderType` |  | |  | `cast( '' as auart)` |  |  |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementText` | | ✓ | | | | |
+| `_PartnerWBSElement` | | ✓ | | | | |
+| `_PartnerWBSElementText` | | ✓ | | | | |
+| `_InventorySpclStockWBSElement` | | ✓ | | | | |
+| `_InvtrySpclStockWBSElmntText` | | ✓ | | | | |
+| `_WBSElementInternalID` | | ✓ | | | | |
+| `_WBSElementInternalIDText` | | ✓ | | | | |
+| `_InvtrySpclStockWBSElmntIntID` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_WBSElementBasicDataText` | | ✓ | | | | |
+| `_PartnerWBSElementBasicData` | | ✓ | | | | |
+| `_PartnerWBSElemntBasicDataText` | | ✓ | | | | |
+| `_PartnerWBSElmntBasicDataText` | | ✓ | | | | |
+| `_InvtrySpclStockWBSElmntBD` | | ✓ | | | | |
+| `_InvtrySpclStkWBSElmntBscData` | | ✓ | | | | |
+| `_InvtrySpclStkWBSElmntBscDataT` | | ✓ | | | | |
+| `_Project` | | ✓ | | | | |
+| `_ProjectText` | | ✓ | | | | |
+| `_PartnerProject` | | ✓ | | | | |
+| `_PartnerProjectText` | | ✓ | | | | |
+| `_ProjectInternalID` | | ✓ | | | | |
+| `_ProjectInternalIDText` | | ✓ | | | | |
+| `_ProjectBasicData` | | ✓ | | | | |
+| `_ProjectBasicDataText` | | ✓ | | | | |
+| `_PartnerProjectBasicData` | | ✓ | | | | |
+| `_PartnerProjectBasicDataText` | | ✓ | | | | |
+| `_AccountingDocumentTypeText` | | ✓ | | | | |
+| `_BudgetPeriodText` | | ✓ | | | | |
+| `_BusinessTransactionTypeText` | | ✓ | | | | |
+| `_BusinessAreaText` | | ✓ | | | | |
+| `_PartnerBusinessAreaText` | | ✓ | | | | |
+| `_BusinessProcessText` | | ✓ | | | | |
+| `_PartnerBusinessProcessText` | | ✓ | | | | |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_CountryChartOfAccountsText` | | ✓ | | | | |
+| `_OffsettingChartOfAccountsText` | | ✓ | | | | |
+| `_PartnerCompanyCodeText` | | ✓ | | | | |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_CostAnalysisResourceText` | | ✓ | | | | |
+| `_CustomerText` | | ✓ | | | | |
+| `_EquipmentText` | | ✓ | | | | |
+| `_FinancialManagementAreaText` | | ✓ | | | | |
+| `_FinancialAccountTypeText` | | ✓ | | | | |
+| `_OffsettingAccountTypeText` | | ✓ | | | | |
+| `_FixedAssetText` | | ✓ | | | | |
+| `_GroupFixedAssetText` | | ✓ | | | | |
+| `_FunctionalLocationText` | | ✓ | | | | |
+| `_FundText` | | ✓ | | | | |
+| `_PartnerFundText` | | ✓ | | | | |
+| `_AlternativeGLAccountText` | | ✓ | | | | |
+| `_GLAcctInChartOfAccountsText` | | ✓ | | | | |
+| `_HouseBankAccountText` | | ✓ | | | | |
+| `_PartnerOrderText` | | ✓ | | | | |
+| `_PartnerOrderText_2` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
+| `_SourceLedgerText` | | ✓ | | | | |
+| `_MaintenanceActivityTypeText` | | ✓ | | | | |
+| `_GroupMasterFixedAssetText` | | ✓ | | | | |
+| `_MasterFixedAssetText` | | ✓ | | | | |
+| `_OperatingConcernText` | | ✓ | | | | |
+| `_AssemblyText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_SoldProductText` | | ✓ | | | | |
+| `_ProjectNetworkText` | | ✓ | | | | |
+| `_PartnerSegmentText` | | ✓ | | | | |
+| `_SegmentText` | | ✓ | | | | |
+| `_InvtrySpclStockSupplierText` | | ✓ | | | | |
+| `_SupplierText` | | ✓ | | | | |
+| `_WorkPackageText` | | ✓ | | | | |
+| `_WorkPackageWorkItemText` | | ✓ | | | | |
+| `_DebitCreditCodeText` | | ✓ | | | | |
+| `_FunctionalAreaText` | | ✓ | | | | |
+| `_ProfitCenterText` | | ✓ | | | | |
+| `_CostCenterText` | | ✓ | | | | |
+| `_GLAccountText` | | ✓ | | | | |
+| `_ProfitCenterTxt` | | ✓ | | | | |
+| `_CostCenterTxt` | | ✓ | | | | |
+| `_GLAccountTxt` | | ✓ | | | | |
+| `_CompanyCodeText` | | ✓ | | | | |
+| `_OffsettingAccountText` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_LedgerFiscalYear` | | ✓ | | | | |
+| `_FiscalPeriod` | | ✓ | | | | |
+| `_FiscalYearPeriod` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | | | |
+| `_FiscalPeriodForVariant` | | ✓ | | | | |
+| `_FiscalYearPeriodForVariant` | | ✓ | | | | |
+| `_CalendarDate` | | ✓ | | | | |
+| `_FiscalCalendarDate` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_BalanceTransactionCurrency` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_GlobalCurrency` | | ✓ | | | | |
+| `_FreeDefinedCurrency1` | | ✓ | | | | |
+| `_FreeDefinedCurrency2` | | ✓ | | | | |
+| `_FreeDefinedCurrency3` | | ✓ | | | | |
+| `_FreeDefinedCurrency4` | | ✓ | | | | |
+| `_FreeDefinedCurrency5` | | ✓ | | | | |
+| `_FreeDefinedCurrency6` | | ✓ | | | | |
+| `_FreeDefinedCurrency7` | | ✓ | | | | |
+| `_FreeDefinedCurrency8` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_CostSourceUnit` | | ✓ | | | | |
+| `_AdditionalQuantity1Unit` | | ✓ | | | | |
+| `_AdditionalQuantity2Unit` | | ✓ | | | | |
+| `_AdditionalQuantity3Unit` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_FinancialAccountType` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_WorkPackageWorkItem` | | ✓ | | | | |
+| `_WorkPackage` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_SourceLedger` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_MaterialGroup` | | ✓ | | | | |
+| `_SoldProductGroup` | | ✓ | | | | |
+| `_SoldProductGroup_2` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_ProductGroup_2` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
+| `_InternalOrder` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_CostAnalysisResource` | | ✓ | | | | |
+| `_Employment` | | ✓ | | | | |
+| `_PersonWorkAgreement_1` | | ✓ | | | | |
+| `_FinancialTransactionType` | | ✓ | | | | |
+| `_BusinessTransactionType` | | ✓ | | | | |
+| `_ReferenceDocumentType` | | ✓ | | | | |
+| `_PredecessorReferenceDocType` | | ✓ | | | | |
+| `_PartnerCostCenter` | | ✓ | | | | |
+| `_PartnerProfitCenter` | | ✓ | | | | |
+| `_CurrentPartnerCostCenter` | | ✓ | | | | |
+| `_CurrentPartnerProfitCenter` | | ✓ | | | | |
+| `_PartnerBusinessArea` | | ✓ | | | | |
+| `_PartnerFunctionalArea` | | ✓ | | | | |
+| `_PartnerCompanyCode` | | ✓ | | | | |
+| `_PartnerSegment` | | ✓ | | | | |
+| `_AccountingDocumentCategory` | | ✓ | | | | |
+| `_PostingKey` | | ✓ | | | | |
+| `_SubLedgerAccLineItemType` | | ✓ | | | | |
+| `_User` | | ✓ | | | | |
+| `_EliminationProfitCenter` | | ✓ | | | | |
+| `_ControllingObject` | | ✓ | | | | |
+| `_GLAccountType` | | ✓ | | | | |
+| `_OffsettingAccountType` | | ✓ | | | | |
+| `_AlternativeGLAccount` | | ✓ | | | | |
+| `_OffsettingAccount` | | ✓ | | | | |
+| `_OffsettingAccountWithBP` | | ✓ | | | | |
+| `_OffsettingChartOfAccounts` | | ✓ | | | | |
+| `_CountryChartOfAccounts` | | ✓ | | | | |
+| `_PurchasingDocument` | | ✓ | | | | |
+| `_PurchasingDocumentItem` | | ✓ | | | | |
+| `_SpecialGLCode` | | ✓ | | | | |
+| `_TaxCode` | | ✓ | | | | |
+| `_HouseBank` | | ✓ | | | | |
+| `_ClearingAccountingDocument` | | ✓ | | | | |
+| `_ClearingJrnlEntryFiscalYear` | | ✓ | | | | |
+| `_ClearingJournalEntry` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_GroupMasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_GroupFixedAsset` | | ✓ | | | | |
+| `_BusinessProcess` | | ✓ | | | | |
+| `_PartnerCostCtrActivityType` | | ✓ | | | | |
+| `_CurrentPartnerCostCtrActyType` | | ✓ | | | | |
+| `_PartnerOrder` | | ✓ | | | | |
+| `_PartnerOrder_2` | | ✓ | | | | |
+| `_PartnerOrderCategory` | | ✓ | | | | |
+| `_PartnerSalesDocument` | | ✓ | | | | |
+| `_PartnerSalesDocumentItem` | | ✓ | | | | |
+| `_PartnerBusinessProcess` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_SoldMaterial` | | ✓ | | | | |
+| `_SoldProduct` | | ✓ | | | | |
+| `_Fund` | | ✓ | | | | |
+| `_PartnerFund` | | ✓ | | | | |
+| `_FundsCenter` | | ✓ | | | | |
+| `_InventorySpecialStockValnType` | | ✓ | | | | |
+| `_InventorySpclStockValnType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_InventorySpclStkSalesDocument` | | ✓ | | | | |
+| `_InventorySpclStkSalesDocItm` | | ✓ | | | | |
+| `_InventorySpecialStockSupplier` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_OriginSenderObject` | | ✓ | | | | |
+| `_ControllingObjectClass` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_PartnerControllingObjectClass` | | ✓ | | | | |
+| `_OriginCostCenter` | | ✓ | | | | |
+| `_OriginProfitCenter` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
+| `_CurrentCostCtrActyType` | | ✓ | | | | |
+| `_OriginCostCtrActivityType` | | ✓ | | | | |
+| `_OrderCategory` | | ✓ | | | | |
+| `_CustomerSupplierCountry` | | ✓ | | | | |
+| `_CustomerSupplierIndustryText` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_MovementCategory` | | ✓ | | | | |
+| `_AssetTransactionType` | | ✓ | | | | |
+| `_BudgetPeriod` | | ✓ | | | | |
+| `_CostOriginGroup` | | ✓ | | | | |
+| `_FinancialManagementArea` | | ✓ | | | | |
+| `_HouseBankAccount` | | ✓ | | | | |
+| `_LogicalSystem` | | ✓ | | | | |
+| `_OperatingConcern` | | ✓ | | | | |
+| `_ProjectNetwork` | | ✓ | | | | |
+| `_PurReqValuationArea` | | ✓ | | | | |
+| `_LedgerCompanyCodeCrcyRoles` | | ✓ | | | | |
+| `_WorkCenter` | | ✓ | | | | |
+| `_BillableControl` | | ✓ | | | | |
+| `_ConditionContract` | | ✓ | | | | |
+| `_MaintenanceOrderSubOperation` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_Assembly` | | ✓ | | | | |
+| `_MaintenanceActivityType` | | ✓ | | | | |
+| `_MaintOrdPlngDegreeCode` | | ✓ | | | | |
+| `_PMNotificationPriorityType` | | ✓ | | | | |
+| `_PMNotificationPriority` | | ✓ | | | | |
+| `_SuperiorOrder` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_ServiceDocumentItem` | | ✓ | | | | |
+| `_PartnerServiceDocumentType` | | ✓ | | | | |
+| `_PartnerServiceDocument` | | ✓ | | | | |
+| `_PartnerServiceDocumentItem` | | ✓ | | | | |
+| `_ServiceContractType` | | ✓ | | | | |
+| `_ServiceContract` | | ✓ | | | | |
+| `_ServiceContractItem` | | ✓ | | | | |
+| `_TimeSheetOvertimeCat` | | ✓ | | | | |
+| `_AccrualObjectType` | | ✓ | | | | |
+| `_AccrualObject` | | ✓ | | | | |
+| `_AccrualSubobject` | | ✓ | | | | |
+| `_AccrualItemType` | | ✓ | | | | |
+| `_CreditRiskClass` | | ✓ | | | | |
+| `_FinValuationObjectType` | | ✓ | | | | |
+| `_SemTagGLAccount` | | ✓ | | | | |
+| `_SponsoredClass` | | ✓ | | | | |
+| `_SponsoredProgram` | | ✓ | | | | |
+| `_OrganizationalChange` | | ✓ | | | | |
 
 ## Associations
 

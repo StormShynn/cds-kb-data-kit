@@ -28,46 +28,46 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REMeasurementType` | ✓ | |  | `meas` |
-| `REMeasurementIsTotal` |  | |  | `issummeas` |
-| `RESettlmtBasicComponent` |  | |  | `baserate` |
-| `REMeasurementIsZeroForVacancy` |  | |  | `setzeroifvacant` |
-| `REValueIsPresentedAsPercentage` |  | |  | `ispercent` |
-| `REMsmtHasEqualApportionment` |  | |  | `ispropapport` |
-| `REMsmtIsDeterminedByCndnType` |  | |  | `getbycondtype` |
-| `REMsmtTypeIsUsedForConsumption` |  | |  | `isconsumption` |
-| `REMeterIsResettable` |  | |  | `isresetable` |
-| `REDefaultMeasurementUnit` |  | |  | `measunitdef` |
-| `REMsmtUsageForArchitecturalObj` |  | |  | `usageforao` |
-| `REMsmtUsageForRentalObject` |  | |  | `usageforro` |
-| `REMsmtUsageForBusinessEntity` |  | |  | `usageforbe` |
-| `REMsmtUsageForLand` |  | |  | `usageforpr` |
-| `REMsmtUsageForBuilding` |  | |  | `usageforbu` |
-| `REMsmtUsageForContract` |  | |  | `usageforcn` |
-| `REMsmtUsageForParcels` |  | |  | `usageforpl` |
-| `REMsmtUsageForGenericObject` |  | |  | `usageforgo` |
-| `REMsmtTypeIsAreaMeasurement` |  | |  | `isspcfactor` |
-| `REMsmtTypeIsUsedForApprtmt` |  | |  | `usedforapport` |
-| `REExcptnRntlObjIsNotPossible` |  | |  | `disableexceptro` |
-| `REExcptnArchlObjIsNotPossible` |  | |  | `disableexceptao` |
-| `REExcptnContrTypeIsNotPossible` |  | |  | `disableexceptcn` |
-| `REDifferingMeasurement` |  | |  | `objrelprop` |
-| `RETypeIsRprstvForOwnrShipShare` |  | |  | `iscoshare` |
-| `RERefFactorIsRelatedToKeyDate` |  | |  | `sckeydaterel` |
-| `RENoCompressionIsActive` |  | |  | `nocompression` |
-| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
-| `_Text` | | ✓ | | |
-| `_RESettlmtBasicComponent` | | ✓ | | |
-| `_REMsmtUsageForArchlObj` | | ✓ | | |
-| `_REMsmtUsageForRentalObj` | | ✓ | | |
-| `_REMsmtUsageForBusinessEntity` | | ✓ | | |
-| `_REMsmtUsageForLand` | | ✓ | | |
-| `_REMsmtUsageForBuilding` | | ✓ | | |
-| `_REMsmtUsageForContract` | | ✓ | | |
-| `_REMsmtUsageForParcels` | | ✓ | | |
-| `_REDifferingMeasurement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REMeasurementType` | ✓ | |  | `meas` |  |  |
+| `REMeasurementIsTotal` |  | |  | `issummeas` |  |  |
+| `RESettlmtBasicComponent` |  | |  | `baserate` |  |  |
+| `REMeasurementIsZeroForVacancy` |  | |  | `setzeroifvacant` |  |  |
+| `REValueIsPresentedAsPercentage` |  | |  | `ispercent` |  |  |
+| `REMsmtHasEqualApportionment` |  | |  | `ispropapport` |  |  |
+| `REMsmtIsDeterminedByCndnType` |  | |  | `getbycondtype` |  |  |
+| `REMsmtTypeIsUsedForConsumption` |  | |  | `isconsumption` |  |  |
+| `REMeterIsResettable` |  | |  | `isresetable` |  |  |
+| `REDefaultMeasurementUnit` |  | |  | `measunitdef` |  |  |
+| `REMsmtUsageForArchitecturalObj` |  | |  | `usageforao` |  |  |
+| `REMsmtUsageForRentalObject` |  | |  | `usageforro` |  |  |
+| `REMsmtUsageForBusinessEntity` |  | |  | `usageforbe` |  |  |
+| `REMsmtUsageForLand` |  | |  | `usageforpr` |  |  |
+| `REMsmtUsageForBuilding` |  | |  | `usageforbu` |  |  |
+| `REMsmtUsageForContract` |  | |  | `usageforcn` |  |  |
+| `REMsmtUsageForParcels` |  | |  | `usageforpl` |  |  |
+| `REMsmtUsageForGenericObject` |  | |  | `usageforgo` |  |  |
+| `REMsmtTypeIsAreaMeasurement` |  | |  | `isspcfactor` |  |  |
+| `REMsmtTypeIsUsedForApprtmt` |  | |  | `usedforapport` |  |  |
+| `REExcptnRntlObjIsNotPossible` |  | |  | `disableexceptro` |  |  |
+| `REExcptnArchlObjIsNotPossible` |  | |  | `disableexceptao` |  |  |
+| `REExcptnContrTypeIsNotPossible` |  | |  | `disableexceptcn` |  |  |
+| `REDifferingMeasurement` |  | |  | `objrelprop` |  |  |
+| `RETypeIsRprstvForOwnrShipShare` |  | |  | `iscoshare` |  |  |
+| `RERefFactorIsRelatedToKeyDate` |  | |  | `sckeydaterel` |  |  |
+| `RENoCompressionIsActive` |  | |  | `nocompression` |  |  |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_RESettlmtBasicComponent` | | ✓ | | | | |
+| `_REMsmtUsageForArchlObj` | | ✓ | | | | |
+| `_REMsmtUsageForRentalObj` | | ✓ | | | | |
+| `_REMsmtUsageForBusinessEntity` | | ✓ | | | | |
+| `_REMsmtUsageForLand` | | ✓ | | | | |
+| `_REMsmtUsageForBuilding` | | ✓ | | | | |
+| `_REMsmtUsageForContract` | | ✓ | | | | |
+| `_REMsmtUsageForParcels` | | ✓ | | | | |
+| `_REDifferingMeasurement` | | ✓ | | | | |
 
 ## Associations
 

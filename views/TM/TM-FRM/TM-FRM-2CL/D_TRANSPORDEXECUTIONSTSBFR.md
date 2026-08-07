@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderExecSts` |  | |  | `/scmtms/tor_execution_status` |
-| `_DummyAssociation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderExecSts` |  | |  | `/scmtms/tor_execution_status` |  |  |
+| `_DummyAssociation` | | ✓ | | | | |
 
 ## Source Code
 

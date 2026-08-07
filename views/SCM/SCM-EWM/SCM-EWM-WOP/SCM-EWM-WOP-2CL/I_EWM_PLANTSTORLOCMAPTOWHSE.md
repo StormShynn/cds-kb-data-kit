@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `plant` |
-| `StorageLocation` | ✓ | |  | `stge_loc` |
-| `ERPLogicalSystem` |  | | `_Client` | `LogicalSystem` |
-| `EWMWarehouse` |  | |  | `lgnum` |
-| `EWMAvailabilityGroup` |  | |  | `avlgrp` |
-| `_Plant` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `plant` |  |  |
+| `StorageLocation` | ✓ | |  | `stge_loc` |  |  |
+| `ERPLogicalSystem` |  | | `_Client` | `LogicalSystem` |  |  |
+| `EWMWarehouse` |  | |  | `lgnum` |  |  |
+| `EWMAvailabilityGroup` |  | |  | `avlgrp` |  |  |
+| `_Plant` | | ✓ | | | | |
 
 ## Associations
 

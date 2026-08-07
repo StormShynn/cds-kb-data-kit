@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SecurityClassTransferType` | ✓ | |  | `swerttyp` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityClassTransferType` | ✓ | |  | `swerttyp` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

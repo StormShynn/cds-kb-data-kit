@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | |  |  |
-| `WorkAssignmentExternalID` | ✓ | |  |  |
-| `Country2DigitISOCode` | ✓ | |  |  |
-| `BankIdentification` | ✓ | |  |  |
-| `BankAccountHolderName` |  | |  |  |
-| `BankAccountName` |  | |  |  |
-| `BankControlKey` |  | |  |  |
-| `BankCountryKey` |  | |  |  |
-| `BankNumber` |  | |  |  |
-| `BankName` |  | |  |  |
-| `BankAccount` |  | |  |  |
-| `IBAN` |  | |  |  |
-| `SWIFTCode` |  | |  |  |
-| `WorkAssignmentStartDate` |  | |  |  |
-| `WorkAssignmentEndDate` |  | |  |  |
-| `BankAccountReferenceText` |  | |  |  |
-| `WorkerPaymentMethod` |  | |  |  |
-| `WrkFrcPaymentCurrency` |  | |  |  |
-| `IsBlocked` |  | |  |  |
-| `_WorkAssignment` | | ✓ | | |
-| `_WorkforcePerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |  |  |
+| `WorkAssignmentExternalID` | ✓ | |  |  |  |  |
+| `Country2DigitISOCode` | ✓ | |  |  |  |  |
+| `BankIdentification` | ✓ | |  |  |  |  |
+| `BankAccountHolderName` |  | |  |  |  |  |
+| `BankAccountName` |  | |  |  |  |  |
+| `BankControlKey` |  | |  |  |  |  |
+| `BankCountryKey` |  | |  |  |  |  |
+| `BankNumber` |  | |  |  |  |  |
+| `BankName` |  | |  |  |  |  |
+| `BankAccount` |  | |  |  |  |  |
+| `IBAN` |  | |  |  |  |  |
+| `SWIFTCode` |  | |  |  |  |  |
+| `WorkAssignmentStartDate` |  | |  |  |  |  |
+| `WorkAssignmentEndDate` |  | |  |  |  |  |
+| `BankAccountReferenceText` |  | |  |  |  |  |
+| `WorkerPaymentMethod` |  | |  |  |  |  |
+| `WrkFrcPaymentCurrency` |  | |  |  |  |  |
+| `IsBlocked` |  | |  |  |  |  |
+| `_WorkAssignment` | | ✓ | | | | |
+| `_WorkforcePerson` | | ✓ | | | | |
 
 ## Source Code
 

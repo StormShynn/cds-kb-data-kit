@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChartOfAccounts` | ✓ | | `_CnsldtnGLChartOfAccounts` | `ChartOfAccounts` |
-| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnGLChartOfAccounts` | `CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnGLChartOfAcctsTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnGLChartOfAcctsTextTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | | `_CnsldtnGLChartOfAccounts` | `ChartOfAccounts` |  |  |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnGLChartOfAccounts` | `CnsldtnIsAdditionalMasterData` |  |  |
+| `I_CnsldtnGLChartOfAcctsTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnGLChartOfAcctsTextTP` |  |  |
 
 ## Source Code
 

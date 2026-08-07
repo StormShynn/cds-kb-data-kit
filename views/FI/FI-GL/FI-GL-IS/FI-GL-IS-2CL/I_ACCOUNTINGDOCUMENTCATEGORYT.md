@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingDocumentCategory` | ✓ | |  | `cast( domvalue_l as farp_bstat_d )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
-| `AccountingDocumentCategoryName` |  | |  | `cast(ddtext as fis_val_text preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocumentCategory` | ✓ | |  | `cast( domvalue_l as farp_bstat_d )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |  |  |
+| `AccountingDocumentCategoryName` |  | |  | `cast(ddtext as fis_val_text preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

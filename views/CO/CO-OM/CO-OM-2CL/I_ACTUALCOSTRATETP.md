@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingCostRateUUID` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ActivityType` |  | |  |  |
-| `Currency` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CurrencyRole` |  | |  |  |
-| `ValidityStartFiscalYear` |  | |  |  |
-| `ValidityStartFiscalPeriod` |  | |  |  |
-| `ValidityEndFiscalYear` |  | |  |  |
-| `ValidityEndFiscalPeriod` |  | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CostRateFixedAmount` |  | |  |  |
-| `CostRateVarblAmount` |  | |  |  |
-| `CostRateScaleFactor` |  | |  |  |
-| `CostCtrActivityTypeQtyUnit` |  | |  |  |
-| `Ledger` |  | |  |  |
-| `CostRateIsOverwriteMode` |  | |  |  |
-| `_CostCenter` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_ControllingAreaText` | | ✓ | | |
-| `_CostCtrActivityTypeText` | | ✓ | | |
-| `_LedgerText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingCostRateUUID` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ActivityType` |  | |  |  |  |  |
+| `Currency` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CurrencyRole` |  | |  |  |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CostRateFixedAmount` |  | |  |  |  |  |
+| `CostRateVarblAmount` |  | |  |  |  |  |
+| `CostRateScaleFactor` |  | |  |  |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  |  |  |
+| `Ledger` |  | |  |  |  |  |
+| `CostRateIsOverwriteMode` |  | |  |  |  |  |
+| `_CostCenter` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_CostCtrActivityTypeText` | | ✓ | | | | |
+| `_LedgerText` | | ✓ | | | | |
 
 ## Source Code
 

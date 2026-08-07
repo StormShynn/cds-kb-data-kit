@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspCalcSheetItemUUID` | ✓ | |  |  |
-| `TranspCalculationSheetUUID` |  | |  |  |
-| `TranspCalculationSheetItem` |  | |  |  |
-| `TransportationAgreementUUID` |  | |  |  |
-| `TranspChargeType` |  | |  |  |
-| `TranspCalcResolutionBase` |  | |  |  |
-| `TransportationRateTableUUID` |  | |  |  |
-| `TranspCalcSheetItemCurrency` |  | |  |  |
-| `TranspCalcSheetItemAmount` |  | |  | `cast( TranspCalcSheetItemAmount as /scmtms/calcsheet_item_amount preserving type )` |
-| `TranspCalcSheetItemPctUnit` |  | |  |  |
-| `TranspCalcSheetItemAmountPct` |  | |  | `cast( TranspCalcSheetItemAmountPct as /scmtms/calcshtitem_amount_pct preserving type )` |
-| `TranspCalculationMethodCode` |  | |  |  |
-| `TranspCalculationDateType` |  | |  |  |
-| `TranspCalcSheetItemIsMandatory` |  | |  |  |
-| `TranspCalcSheetItemRefFromUUID` |  | |  |  |
-| `TranspCalcSheetItemRefToUUID` |  | |  |  |
-| `TranspChargeInstrnType` |  | |  |  |
-| `TranspIndexRateTableUUID` |  | |  |  |
-| `TranspCalcShtItmIdxBaseDteTime` |  | |  |  |
-| `TranspChargeIsDependent` |  | |  |  |
-| `TranspRateTableID` |  | |  |  |
-| `TransportationStageCategory` |  | |  |  |
-| `TranspCalculationMethodName` |  | |  |  |
-| `TranspCalcShtItmIsManualCharge` |  | |  |  |
-| `TranspCalcSheetRefToItem` |  | |  |  |
-| `TranspCalcSheetRefFromItem` |  | |  |  |
-| `TranspIndexRateTable` |  | |  |  |
-| `I_FreightAgreementTP` |  | |  | `FrtAgrmtCalcSheetItem._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FreightAgrmtCalcSheetTP` |  | |  | `FrtAgrmtCalcSheetItem._FreightAgrmtCalculationSheet : redirected to parent I_FreightAgrmtCalcSheetTP` |
-| `I_FreightAgreementRateTableTP` |  | |  | `FrtAgrmtCalcSheetItem._FreightAgreementRateTable : redirected to composition child I_FreightAgreementRateTableTP` |
-| `I_FrtAgrmtCalcShtItmCalcRuleTP` |  | |  | `FrtAgrmtCalcSheetItem._FrtAgrmtCalcShtItmCalcRule : redirected to composition child I_FrtAgrmtCalcShtItmCalcRuleTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspCalcSheetItemUUID` | ✓ | |  |  |  |  |
+| `TranspCalculationSheetUUID` |  | |  |  |  |  |
+| `TranspCalculationSheetItem` |  | |  |  |  |  |
+| `TransportationAgreementUUID` |  | |  |  |  |  |
+| `TranspChargeType` |  | |  |  |  |  |
+| `TranspCalcResolutionBase` |  | |  |  |  |  |
+| `TransportationRateTableUUID` |  | |  |  |  |  |
+| `TranspCalcSheetItemCurrency` |  | |  |  |  |  |
+| `TranspCalcSheetItemAmount` |  | |  | `cast( TranspCalcSheetItemAmount as /scmtms/calcsheet_item_amount preserving type )` |  |  |
+| `TranspCalcSheetItemPctUnit` |  | |  |  |  |  |
+| `TranspCalcSheetItemAmountPct` |  | |  | `cast( TranspCalcSheetItemAmountPct as /scmtms/calcshtitem_amount_pct preserving type )` |  |  |
+| `TranspCalculationMethodCode` |  | |  |  |  |  |
+| `TranspCalculationDateType` |  | |  |  |  |  |
+| `TranspCalcSheetItemIsMandatory` |  | |  |  |  |  |
+| `TranspCalcSheetItemRefFromUUID` |  | |  |  |  |  |
+| `TranspCalcSheetItemRefToUUID` |  | |  |  |  |  |
+| `TranspChargeInstrnType` |  | |  |  |  |  |
+| `TranspIndexRateTableUUID` |  | |  |  |  |  |
+| `TranspCalcShtItmIdxBaseDteTime` |  | |  |  |  |  |
+| `TranspChargeIsDependent` |  | |  |  |  |  |
+| `TranspRateTableID` |  | |  |  |  |  |
+| `TransportationStageCategory` |  | |  |  |  |  |
+| `TranspCalculationMethodName` |  | |  |  |  |  |
+| `TranspCalcShtItmIsManualCharge` |  | |  |  |  |  |
+| `TranspCalcSheetRefToItem` |  | |  |  |  |  |
+| `TranspCalcSheetRefFromItem` |  | |  |  |  |  |
+| `TranspIndexRateTable` |  | |  |  |  |  |
+| `I_FreightAgreementTP` |  | |  | `FrtAgrmtCalcSheetItem._FreightAgreement : redirected to I_FreightAgreementTP` |  |  |
+| `I_FreightAgrmtCalcSheetTP` |  | |  | `FrtAgrmtCalcSheetItem._FreightAgrmtCalculationSheet : redirected to parent I_FreightAgrmtCalcSheetTP` |  |  |
+| `I_FreightAgreementRateTableTP` |  | |  | `FrtAgrmtCalcSheetItem._FreightAgreementRateTable : redirected to composition child I_FreightAgreementRateTableTP` |  |  |
+| `I_FrtAgrmtCalcShtItmCalcRuleTP` |  | |  | `FrtAgrmtCalcSheetItem._FrtAgrmtCalcShtItmCalcRule : redirected to composition child I_FrtAgrmtCalcShtItmCalcRuleTP` |  |  |
 
 ## Source Code
 

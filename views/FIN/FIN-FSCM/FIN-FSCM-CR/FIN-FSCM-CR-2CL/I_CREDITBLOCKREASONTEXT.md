@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditAccountBlockReason` | ✓ | |  | `block_reason` |
-| `Language` | ✓ | |  | `langu` |
-| `CrdtAcctBlockReasonDescription` |  | |  | `block_reason_txt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditAccountBlockReason` | ✓ | |  | `block_reason` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CrdtAcctBlockReasonDescription` |  | |  | `block_reason_txt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

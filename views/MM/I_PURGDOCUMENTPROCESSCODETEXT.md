@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocumentProcessCode` | ✓ | |  | `cast (cast(substring(dd07t.domvalue_l ,1,3) as abap.char( 3 ) ) as mmpur_process_indicator )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PurgDocumentProcessCodeName` |  | |  | `cast (dd07t.ddtext as purgdocumentprocesscodename preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PurgDocumentProcessCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocumentProcessCode` | ✓ | |  | `cast (cast(substring(dd07t.domvalue_l ,1,3) as abap.char( 3 ) ) as mmpur_process_indicator )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PurgDocumentProcessCodeName` |  | |  | `cast (dd07t.ddtext as purgdocumentprocesscodename preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PurgDocumentProcessCode` | | ✓ | | | | |
 
 ## Associations
 

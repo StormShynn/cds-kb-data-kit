@@ -33,15 +33,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenancePlan` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `TextObjectKey` |  | |  |  |
-| `TextObjectType` |  | |  |  |
-| `TextObjectCategory` |  | |  |  |
-| `MaintenancePlanLongText` |  | |  |  |
-| `_MaintenancePlan` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlan` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `TextObjectKey` |  | |  |  |  |  |
+| `TextObjectType` |  | |  |  |  |  |
+| `TextObjectCategory` |  | |  |  |  |  |
+| `MaintenancePlanLongText` |  | |  |  |  |  |
+| `_MaintenancePlan` | | ✓ | | | | |
 
 ## Source Code
 

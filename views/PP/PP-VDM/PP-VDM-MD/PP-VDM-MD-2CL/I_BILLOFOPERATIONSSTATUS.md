@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillOfOperationsStatus` | ✓ | |  | `plnst` |
-| `IsReleased` |  | |  | `freif` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsStatus` | ✓ | |  | `plnst` |  |  |
+| `IsReleased` |  | |  | `freif` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

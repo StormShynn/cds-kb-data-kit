@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPromiseToPayReason` | ✓ | |  | `pprsc` |
-| `Language` | ✓ | |  | `spras` |
-| `CAPromiseToPayReasonName` |  | |  | `txt50` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPromiseToPayReason` | ✓ | |  | `pprsc` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAPromiseToPayReasonName` |  | |  | `txt50` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

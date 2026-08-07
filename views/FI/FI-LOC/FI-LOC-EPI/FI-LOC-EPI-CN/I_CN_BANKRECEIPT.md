@@ -30,49 +30,49 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `HouseBank` | ✓ | |  |  |
-| `HouseBankAccount` | ✓ | |  |  |
-| `BankReceiptNumber` | ✓ | |  | `ebr_no` |
-| `BankReceiptStatus` |  | |  | `status` |
-| `BankReceiptEnterDate` |  | |  | `ebr_date` |
-| `BankReceiptSource` |  | |  | `source` |
-| `BankReceiptUsageText` |  | |  | `ebr_use` |
-| `BankReceiptSummaryText` |  | |  | `summary` |
-| `BankReceiptSerialNumber` |  | |  | `srl_no` |
-| `BankReceiptBankDateTime` |  | |  | `bank_timestamp` |
-| `BankReceiptBankBranchText` |  | |  | `bank_branch` |
-| `BankReceiptBankTellerText` |  | |  | `bank_teller` |
-| `BankReceiptBankRemarkText` |  | |  | `bank_remark` |
-| `CN_BankReceiptIsFoundInDoc` |  | |  | `fdflg` |
-| `BankReceiptIsReversal` |  | |  | `xreversal` |
-| `BankReceiptReferenceText` |  | |  | `reference` |
-| `ClsgBalAmtInBkAcctCrcy` |  | |  | `balance` |
-| `BankReceiptTransTime` |  | |  | `bank_time` |
-| `BankCountry` |  | |  | `part_bank_ctry` |
-| `BankInternalID` |  | |  | `part_bank_key` |
-| `BankName` |  | |  | `part_bank_name` |
-| `BusinessPartnerName` |  | |  |  |
-| `PartnerBankIBAN` |  | |  |  |
-| `ExchangeRate` |  | |  | `cast ( BankStmtItem.ExchangeRate as fis_exchange_rate )` |
-| `PaymentAdviceAccountType` |  | |  |  |
-| `PaymentAdviceAccount` |  | |  |  |
-| `BankStatementPostingRule` |  | |  | `PostingRule` |
-| `SubledgerDocument` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CostCenter` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `BankPostingDate` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `AmountInAccountCurrency` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `AmountInOriginalCurrency` |  | |  | `ForeignCurrencyAmount` |
-| `OriginalCurrency` |  | |  |  |
-| `PaymentExternalTransacType` |  | |  |  |
-| `BankAccountHolderName` |  | |  |  |
-| `IBAN` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `HouseBank` | ✓ | |  |  |  |  |
+| `HouseBankAccount` | ✓ | |  |  |  |  |
+| `BankReceiptNumber` | ✓ | |  | `ebr_no` |  |  |
+| `BankReceiptStatus` |  | |  | `status` |  |  |
+| `BankReceiptEnterDate` |  | |  | `ebr_date` |  |  |
+| `BankReceiptSource` |  | |  | `source` |  |  |
+| `BankReceiptUsageText` |  | |  | `ebr_use` |  |  |
+| `BankReceiptSummaryText` |  | |  | `summary` |  |  |
+| `BankReceiptSerialNumber` |  | |  | `srl_no` |  |  |
+| `BankReceiptBankDateTime` |  | |  | `bank_timestamp` |  |  |
+| `BankReceiptBankBranchText` |  | |  | `bank_branch` |  |  |
+| `BankReceiptBankTellerText` |  | |  | `bank_teller` |  |  |
+| `BankReceiptBankRemarkText` |  | |  | `bank_remark` |  |  |
+| `CN_BankReceiptIsFoundInDoc` |  | |  | `fdflg` |  |  |
+| `BankReceiptIsReversal` |  | |  | `xreversal` |  |  |
+| `BankReceiptReferenceText` |  | |  | `reference` |  |  |
+| `ClsgBalAmtInBkAcctCrcy` |  | |  | `balance` |  |  |
+| `BankReceiptTransTime` |  | |  | `bank_time` |  |  |
+| `BankCountry` |  | |  | `part_bank_ctry` |  |  |
+| `BankInternalID` |  | |  | `part_bank_key` |  |  |
+| `BankName` |  | |  | `part_bank_name` |  |  |
+| `BusinessPartnerName` |  | |  |  |  |  |
+| `PartnerBankIBAN` |  | |  |  |  |  |
+| `ExchangeRate` |  | |  | `cast ( BankStmtItem.ExchangeRate as fis_exchange_rate )` |  |  |
+| `PaymentAdviceAccountType` |  | |  |  |  |  |
+| `PaymentAdviceAccount` |  | |  |  |  |  |
+| `BankStatementPostingRule` |  | |  | `PostingRule` |  |  |
+| `SubledgerDocument` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CostCenter` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `BankPostingDate` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `AmountInAccountCurrency` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `AmountInOriginalCurrency` |  | |  | `ForeignCurrencyAmount` |  |  |
+| `OriginalCurrency` |  | |  |  |  |  |
+| `PaymentExternalTransacType` |  | |  |  |  |  |
+| `BankAccountHolderName` |  | |  |  |  |  |
+| `IBAN` |  | |  |  |  |  |
 
 ## Source Code
 

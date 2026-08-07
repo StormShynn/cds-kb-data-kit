@@ -34,18 +34,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LongTextID` | ✓ | |  |  |
-| `SalesOrganization` | ✓ | |  |  |
-| `DistributionChannel` | ✓ | |  |  |
-| `Customer` | ✓ | |  |  |
-| `Product` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LanguageForEdit` |  | |  |  |
-| `LongTextIDForEdit` |  | |  |  |
-| `LongText` |  | |  |  |
-| `_CustomerMaterial` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LongTextID` | ✓ | |  |  |  |  |
+| `SalesOrganization` | ✓ | |  |  |  |  |
+| `DistributionChannel` | ✓ | |  |  |  |  |
+| `Customer` | ✓ | |  |  |  |  |
+| `Product` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LanguageForEdit` |  | |  |  |  |  |
+| `LongTextIDForEdit` |  | |  |  |  |  |
+| `LongText` |  | |  |  |  |  |
+| `_CustomerMaterial` | | ✓ | | | | |
 
 ## Source Code
 

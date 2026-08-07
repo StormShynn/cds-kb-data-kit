@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `JITProdnConfProfile` | ✓ | |  | `cast( substring( domvalue_l, 1, 4 ) as njit_prodn_conf_profile preserving type )` |
-| `JITProdnConfProfileDesc` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_JITProdnConfProfile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `JITProdnConfProfile` | ✓ | |  | `cast( substring( domvalue_l, 1, 4 ) as njit_prodn_conf_profile preserving type )` |  |  |
+| `JITProdnConfProfileDesc` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_JITProdnConfProfile` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
-| `CnsldtnFunctionalAreaHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.CnsldtnUniversalHierarchy as fincs_functionalareahierarchy preserving type )` |
-| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
-| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
-| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
-| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
-| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
-| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
-| `_Hierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |  |  |
+| `CnsldtnFunctionalAreaHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.CnsldtnUniversalHierarchy as fincs_functionalareahierarchy preserving type )` |  |  |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |  |  |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |  |  |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |  |  |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |  |  |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |  |  |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |  |  |
+| `_Hierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

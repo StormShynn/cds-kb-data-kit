@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `DeviationProfile` | ✓ | |  | `deviationprofile` |
-| `DeviationProfileDescription` |  | |  | `deviationprofiledescription` |
-| `OrdQtyAlrtUprLmtRatioInPct` |  | |  | `ordqtyalrtuprlmtratioinpct` |
-| `OrdQtyAlrtLowrLmtRatioInPct` |  | |  | `ordqtyalrtlowrlmtratioinpct` |
-| `OrdQtyWrngUprLmtRatioInPct` |  | |  | `ordqtywrnguprlmtratioinpct` |
-| `OrdQtyWrngLowrLmtRatioInPct` |  | |  | `ordqtywrnglowrlmtratioinpct` |
-| `CumltvQtyAlrtUprLmtRatioInPct` |  | |  | `cumltvqtyalrtuprlmtratioinpct` |
-| `CumltvQtyAlrtLowrLmtRatioInPct` |  | |  | `cumltvqtyalrtlowrlmtratioinpct` |
-| `CumltvQtyWrngUprLmtRatioInPct` |  | |  | `cumltvqtywrnguprlmtratioinpct` |
-| `CumltvQtyWrngLowrLmtRatioInPct` |  | |  | `cumltvqtywrnglowrlmtratioinpct` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeviationProfile` | ✓ | |  | `deviationprofile` |  |  |
+| `DeviationProfileDescription` |  | |  | `deviationprofiledescription` |  |  |
+| `OrdQtyAlrtUprLmtRatioInPct` |  | |  | `ordqtyalrtuprlmtratioinpct` |  |  |
+| `OrdQtyAlrtLowrLmtRatioInPct` |  | |  | `ordqtyalrtlowrlmtratioinpct` |  |  |
+| `OrdQtyWrngUprLmtRatioInPct` |  | |  | `ordqtywrnguprlmtratioinpct` |  |  |
+| `OrdQtyWrngLowrLmtRatioInPct` |  | |  | `ordqtywrnglowrlmtratioinpct` |  |  |
+| `CumltvQtyAlrtUprLmtRatioInPct` |  | |  | `cumltvqtyalrtuprlmtratioinpct` |  |  |
+| `CumltvQtyAlrtLowrLmtRatioInPct` |  | |  | `cumltvqtyalrtlowrlmtratioinpct` |  |  |
+| `CumltvQtyWrngUprLmtRatioInPct` |  | |  | `cumltvqtywrnguprlmtratioinpct` |  |  |
+| `CumltvQtyWrngLowrLmtRatioInPct` |  | |  | `cumltvqtywrnglowrlmtratioinpct` |  |  |
 
 ## Source Code
 

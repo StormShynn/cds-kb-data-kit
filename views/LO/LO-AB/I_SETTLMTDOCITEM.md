@@ -28,246 +28,246 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SettlmtDoc` |  | |  | `}] } key SettlmtDoc` |
-| `SettlmtDocItem` | ✓ | |  |  |
-| `SettlmtDocCurrency` |  | |  |  |
-| `SupplierPricingDocument` |  | |  |  |
-| `CustomerPricingDocument` |  | |  |  |
-| `Product` |  | |  | `}] } Product` |
-| `ProductGroup` |  | |  | `}] } ProductGroup` |
-| `Plant` |  | |  | `}] } Plant` |
-| `SupplierTaxCode` |  | |  |  |
-| `CustomerTaxCode` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `IntercompanyTaxCountry` |  | |  |  |
-| `SuplrSettlmtTxRateValdFrmDate` |  | |  |  |
-| `CustSettlmtTxRateValdFrmDate` |  | |  |  |
-| `PricingDate` |  | |  |  |
-| `SettlmtQuantity` |  | |  |  |
-| `SettlmtQuantityUnit` |  | |  |  |
-| `NetPriceAmount` |  | |  |  |
-| `NetPriceQuantity` |  | |  |  |
-| `NetPriceQuantityUnit` |  | |  |  |
-| `SettlmtToBaseQuantityNmrtr` |  | |  |  |
-| `SettlmtToBaseQuantityDnmntr` |  | |  |  |
-| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |
-| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `SupplierItemGrossAmount` |  | |  |  |
-| `SupplierItemNetAmount` |  | |  |  |
-| `SupplierSubtotal1Amount` |  | |  |  |
-| `SupplierSubtotal2Amount` |  | |  |  |
-| `SupplierSubtotal3Amount` |  | |  |  |
-| `SupplierSubtotal4Amount` |  | |  |  |
-| `SupplierSubtotal5Amount` |  | |  |  |
-| `SupplierSubtotal6Amount` |  | |  |  |
-| `SupplierRebateBasisAmount` |  | |  |  |
-| `SupplierEffectiveItemAmount` |  | |  |  |
-| `SuplrItmEligibleAmtForCshDisc` |  | |  |  |
-| `SupplierItemTaxAmount` |  | |  |  |
-| `CustomerItemGrossAmount` |  | |  |  |
-| `CustomerItemNetAmount` |  | |  |  |
-| `CustomerSubtotal1Amount` |  | |  |  |
-| `CustomerSubtotal2Amount` |  | |  |  |
-| `CustomerSubtotal3Amount` |  | |  |  |
-| `CustomerSubtotal4Amount` |  | |  |  |
-| `CustomerSubtotal5Amount` |  | |  |  |
-| `CustomerSubtotal6Amount` |  | |  |  |
-| `CustomerRebateBasisAmount` |  | |  |  |
-| `CustomerEffectiveItemAmount` |  | |  |  |
-| `CustItmEligibleAmtForCshDisc` |  | |  |  |
-| `CustomerItemTaxAmount` |  | |  |  |
-| `SettlmtItmStatisticalPrpty` |  | |  |  |
-| `CashDiscountIsDeductible` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `SettlmtSourceDoc` |  | |  |  |
-| `SettlmtSourceDocItem` |  | |  |  |
-| `SettlmtSourceDocCat` |  | |  |  |
-| `SettlmtSourceDocFiscalYear` |  | |  |  |
-| `SettlmtItemActivityReason` |  | |  |  |
-| `SettlmtDocItemText` |  | |  |  |
-| `SupplierProductID` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `IntercompanyTaxJurisdiction` |  | |  |  |
-| `BusinessPlace` |  | |  |  |
-| `IntercompanyBusinessPlace` |  | |  |  |
-| `ProductPurchasePointsQtyUnit` |  | |  |  |
-| `ProductPurchasePointsQty` |  | |  |  |
-| `PriorSupplier` |  | |  | `}] } PriorSupplier` |
-| `NonDeductibleInputTaxAmount` |  | |  |  |
-| `InventoryValuationType` |  | |  |  |
-| `SuplrSettlmtBusinessArea` |  | |  | `}] } SuplrSettlmtBusinessArea` |
-| `CustSettlmtBusinessArea` |  | |  | `}] } CustSettlmtBusinessArea` |
-| `SuplrSettlmtControllingArea` |  | |  |  |
-| `SuplrSettlmtCostCenter` |  | |  |  |
-| `SuplrSettlmtProfitCenter` |  | |  |  |
-| `IncotermsVersion` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `CustSettlmtControllingArea` |  | |  |  |
-| `CustSettlmtCostCenter` |  | |  |  |
-| `CustSettlmtProfitCenter` |  | |  |  |
-| `Batch` |  | |  |  |
-| `SupplierPrcDetnIsIncmplt` |  | |  |  |
-| `CustomerPrcDetnIsIncmplt` |  | |  |  |
-| `SettlmtPrecdgDoc` |  | |  |  |
-| `SettlmtPrecdgDocItem` |  | |  |  |
-| `SettlmtPrecdgDocCat` |  | |  |  |
-| `SettlmtPrecdgDocFiscalYear` |  | |  |  |
-| `SettlmtDocItemCat` |  | |  |  |
-| `SettlmtItemReltdCndnContr` |  | |  | `}] } SettlmtItemReltdCndnContr` |
-| `SettlmtItemReltdTrdgContr` |  | |  |  |
-| `SettlmtItemReltdTrdgContrItem` |  | |  |  |
-| `SettlmtItemReltdPurgDoc` |  | |  | `}] } SettlmtItemReltdPurgDoc` |
-| `SettlmtItemReltdPurgDocItem` |  | |  |  |
-| `SettlmtItemReltdBillgDoc` |  | |  | `}] } SettlmtItemReltdBillgDoc` |
-| `SettlmtItemReltdBillgDocItem` |  | |  |  |
-| `SettlmtDocItemStatus` |  | |  |  |
-| `SettlmtDocItemCancld` |  | |  |  |
-| `SupplierSettlementOrder` |  | |  | `}] } SupplierSettlementOrder` |
-| `SupplierItemSettlmtStatus` |  | |  |  |
-| `CustomerItemSettlmtStatus` |  | |  |  |
-| `SupplierItemSettlmtBlkgReason` |  | |  |  |
-| `CustomerItemSettlmtBlkgReason` |  | |  |  |
-| `ItemSettlmtRelevance` |  | |  |  |
-| `ServicesRenderedDate` |  | |  |  |
-| `SuplrSettlmtCompanyCode` |  | |  | `}] } SuplrSettlmtCompanyCode` |
-| `GLAccount` |  | |  | `}] } GLAccount` |
-| `SettlementFiscalYear` |  | |  |  |
-| `HigherLevelItem` |  | |  | `}] } HigherLevelItem` |
-| `LowerLevelItemExists` |  | |  |  |
-| `ItemDistributionStatus` |  | |  |  |
-| `SettlmtRefDocType` |  | |  |  |
-| `SettlmtRefDoc` |  | |  |  |
-| `CndnContrType` |  | |  |  |
-| `CndnContrProcVar` |  | |  | `}] } CndnContrProcVar` |
-| `SettlmtDateCat` |  | |  |  |
-| `SettlmtDate` |  | |  |  |
-| `SettlmtDateSequentialID` |  | |  |  |
-| `ActualSettlmtDate` |  | |  |  |
-| `SettlmtPeriodStartDate` |  | |  |  |
-| `RefSettlmtDate` |  | |  |  |
-| `SettlmtRefDocFiscalYear` |  | |  |  |
-| `SettlmtRefDocLogicalSyst` |  | |  |  |
-| `SettlmtRefDocCompanyCode` |  | |  | `}] } SettlmtRefDocCompanyCode` |
-| `SettlmtRefDocItem` |  | |  |  |
-| `SettlmtRefDocCat` |  | |  |  |
-| `ItemIntrastatRelevance` |  | |  |  |
-| `CustomerSettlementOrder` |  | |  | `}] } CustomerSettlementOrder` |
-| `SuplrSettlmtWBSElmntInternalID` |  | |  | `}] } SuplrSettlmtWBSElmntInternalID` |
-| `CustSettlmtWBSElmntInternalID` |  | |  | `}] } CustSettlmtWBSElmntInternalID` |
-| `SettlmtDocItemCollSts` |  | |  |  |
-| `CollSettlmtItemBlkgReason` |  | |  |  |
-| `ItmSettlmtDocCollRelevance` |  | |  |  |
-| `SettlmtAddlRefDocType` |  | |  |  |
-| `SettlmtAddlRefDoc` |  | |  |  |
-| `SettlmtAddlRefDocFiscalYear` |  | |  |  |
-| `SettlmtAddlRefDocLogicalSyst` |  | |  |  |
-| `SettlmtAddlRefDocItem` |  | |  |  |
-| `SettlmtAddlRefDocCat` |  | |  |  |
-| `CustomerSettlmtRecipient` |  | |  | `}] } CustomerSettlmtRecipient` |
-| `SupplierSubrange` |  | |  |  |
-| `ProductHierarchy` |  | |  |  |
-| `SalesSpcfcProductGroup1` |  | |  |  |
-| `SalesSpcfcProductGroup2` |  | |  |  |
-| `SalesSpcfcProductGroup3` |  | |  |  |
-| `SalesSpcfcProductGroup4` |  | |  |  |
-| `SalesSpcfcProductGroup5` |  | |  |  |
-| `BusVolDocSalesOrganization` |  | |  |  |
-| `BusVolDocDistributionChannel` |  | |  |  |
-| `BusVolDocDivision` |  | |  |  |
-| `ProductCommissionGroup` |  | |  |  |
-| `PriceSpecificationProductGroup` |  | |  |  |
-| `SalesVolumeRebateGroup` |  | |  |  |
-| `BusTransDocReferenceID` |  | |  |  |
-| `BusTransDocReferenceItemID` |  | |  |  |
-| `ETag` |  | |  | `cast ( '0000' as wlf_entity_tag preserving type )` |
-| `SettlmtDocItemChangeState` |  | |  |  |
-| `_SettlmtDoc` | | ✓ | | |
-| `_Partner` | | ✓ | | |
-| `_SettlmtDocItemCat` | | ✓ | | |
-| `_SettlmtDocItemStatus` | | ✓ | | |
-| `_SettlmtDocItemCancld` | | ✓ | | |
-| `_HigherLevelItem` | | ✓ | | |
-| `_SettlmtDocItemCollSts` | | ✓ | | |
-| `_SupplierPricingElement` | | ✓ | | |
-| `_CustomerPricingElement` | | ✓ | | |
-| `_SuplrSettlmtBusinessAreaText` | | ✓ | | |
-| `_CustSettlmtBusinessAreaText` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_BusVolDocSalesOrganization` | | ✓ | | |
-| `_BusVolDocDistributionChannel` | | ✓ | | |
-| `_BusVolDocDivision` | | ✓ | | |
-| `_SettlmtDocItemPlainLongText` | | ✓ | | |
-| `_SettlmtRefDocCat` | | ✓ | | |
-| `_SettlmtAddlRefDocCat` | | ✓ | | |
-| `_CndnContrType` | | ✓ | | |
-| `_SettlmtItemReltdCndnContr` | | ✓ | | |
-| `_SettlmtDocCurrency` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_SettlmtQuantityUnit` | | ✓ | | |
-| `_NetPriceQuantityUnit` | | ✓ | | |
-| `_BaseUnit` | | ✓ | | |
-| `_ItemWeightUnit` | | ✓ | | |
-| `_ItemVolumeUnit` | | ✓ | | |
-| `_SettlmtItmStatisticalPrpty` | | ✓ | | |
-| `_SettlmtSourceDocCat` | | ✓ | | |
-| `_SettlmtItemActivityReason` | | ✓ | | |
-| `_ProductPurchasePointsQtyUnit` | | ✓ | | |
-| `_PriorSupplier` | | ✓ | | |
-| `_InventoryValuationType` | | ✓ | | |
-| `_SuplrSettlmtBusinessArea` | | ✓ | | |
-| `_CustSettlmtBusinessArea` | | ✓ | | |
-| `_SuplrSettlmtControllingArea` | | ✓ | | |
-| `_SuplrSettlmtCostCenter` | | ✓ | | |
-| `_SuplrSettlmtProfitCenter` | | ✓ | | |
-| `_IncotermsVersion` | | ✓ | | |
-| `_IncotermsClassification` | | ✓ | | |
-| `_CustSettlmtControllingArea` | | ✓ | | |
-| `_CustSettlmtCostCenter` | | ✓ | | |
-| `_CustSettlmtProfitCenter` | | ✓ | | |
-| `_SettlmtPrecdgDocCat` | | ✓ | | |
-| `_SettlmtItemReltdPurgDoc` | | ✓ | | |
-| `_SettlmtItemReltdBillgDoc` | | ✓ | | |
-| `_SupplierSettlementOrder` | | ✓ | | |
-| `_SupplierItemSettlmtStatus` | | ✓ | | |
-| `_CustomerItemSettlmtStatus` | | ✓ | | |
-| `_SupplierItemSettlmtBlkgReason` | | ✓ | | |
-| `_CustomerItemSettlmtBlkgReason` | | ✓ | | |
-| `_ItemSettlmtRelevance` | | ✓ | | |
-| `_SuplrSettlmtCompanyCode` | | ✓ | | |
-| `_GLAccountInCompanyCode` | | ✓ | | |
-| `_ItemDistributionStatus` | | ✓ | | |
-| `_SettlmtRefDocLogicalSyst` | | ✓ | | |
-| `_SettlmtRefDocCompanyCode` | | ✓ | | |
-| `_CndnContrProcVar` | | ✓ | | |
-| `_SettlmtDateCat` | | ✓ | | |
-| `_ItemIntrastatRelevance` | | ✓ | | |
-| `_CustomerSettlementOrder` | | ✓ | | |
-| `_SuplrSettlmtWBSElmntBasicData` | | ✓ | | |
-| `_CustSettlmtWBSElmntBasicData` | | ✓ | | |
-| `_CollSettlmtItemBlkgReason` | | ✓ | | |
-| `_ItmSettlmtDocCollRelevance` | | ✓ | | |
-| `_SettlmtAddlRefDocLogicalSyst` | | ✓ | | |
-| `_CustomerSettlmtRecipient` | | ✓ | | |
-| `_SalesSpcfcProductGroup1` | | ✓ | | |
-| `_SalesSpcfcProductGroup2` | | ✓ | | |
-| `_SalesSpcfcProductGroup3` | | ✓ | | |
-| `_SalesSpcfcProductGroup4` | | ✓ | | |
-| `_SalesSpcfcProductGroup5` | | ✓ | | |
-| `_CreatedByUser` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDoc` | ✓ | |  |  |  |  |
+| `SettlmtDocItem` | ✓ | |  |  |  |  |
+| `SettlmtDocCurrency` |  | |  |  |  |  |
+| `SupplierPricingDocument` |  | |  |  |  |  |
+| `CustomerPricingDocument` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `SupplierTaxCode` |  | |  |  |  |  |
+| `CustomerTaxCode` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `IntercompanyTaxCountry` |  | |  |  |  |  |
+| `SuplrSettlmtTxRateValdFrmDate` |  | |  |  |  |  |
+| `CustSettlmtTxRateValdFrmDate` |  | |  |  |  |  |
+| `PricingDate` |  | |  |  |  |  |
+| `SettlmtQuantity` |  | |  |  |  |  |
+| `SettlmtQuantityUnit` |  | |  |  |  |  |
+| `NetPriceAmount` |  | |  |  |  |  |
+| `NetPriceQuantity` |  | |  |  |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |  |  |
+| `SettlmtToBaseQuantityNmrtr` |  | |  |  |  |  |
+| `SettlmtToBaseQuantityDnmntr` |  | |  |  |  |  |
+| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |  |  |
+| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `SupplierItemGrossAmount` |  | |  |  |  |  |
+| `SupplierItemNetAmount` |  | |  |  |  |  |
+| `SupplierSubtotal1Amount` |  | |  |  |  |  |
+| `SupplierSubtotal2Amount` |  | |  |  |  |  |
+| `SupplierSubtotal3Amount` |  | |  |  |  |  |
+| `SupplierSubtotal4Amount` |  | |  |  |  |  |
+| `SupplierSubtotal5Amount` |  | |  |  |  |  |
+| `SupplierSubtotal6Amount` |  | |  |  |  |  |
+| `SupplierRebateBasisAmount` |  | |  |  |  |  |
+| `SupplierEffectiveItemAmount` |  | |  |  |  |  |
+| `SuplrItmEligibleAmtForCshDisc` |  | |  |  |  |  |
+| `SupplierItemTaxAmount` |  | |  |  |  |  |
+| `CustomerItemGrossAmount` |  | |  |  |  |  |
+| `CustomerItemNetAmount` |  | |  |  |  |  |
+| `CustomerSubtotal1Amount` |  | |  |  |  |  |
+| `CustomerSubtotal2Amount` |  | |  |  |  |  |
+| `CustomerSubtotal3Amount` |  | |  |  |  |  |
+| `CustomerSubtotal4Amount` |  | |  |  |  |  |
+| `CustomerSubtotal5Amount` |  | |  |  |  |  |
+| `CustomerSubtotal6Amount` |  | |  |  |  |  |
+| `CustomerRebateBasisAmount` |  | |  |  |  |  |
+| `CustomerEffectiveItemAmount` |  | |  |  |  |  |
+| `CustItmEligibleAmtForCshDisc` |  | |  |  |  |  |
+| `CustomerItemTaxAmount` |  | |  |  |  |  |
+| `SettlmtItmStatisticalPrpty` |  | |  |  |  |  |
+| `CashDiscountIsDeductible` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `SettlmtSourceDoc` |  | |  |  |  |  |
+| `SettlmtSourceDocItem` |  | |  |  |  |  |
+| `SettlmtSourceDocCat` |  | |  |  |  |  |
+| `SettlmtSourceDocFiscalYear` |  | |  |  |  |  |
+| `SettlmtItemActivityReason` |  | |  |  |  |  |
+| `SettlmtDocItemText` |  | |  |  |  |  |
+| `SupplierProductID` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `IntercompanyTaxJurisdiction` |  | |  |  |  |  |
+| `BusinessPlace` |  | |  |  |  |  |
+| `IntercompanyBusinessPlace` |  | |  |  |  |  |
+| `ProductPurchasePointsQtyUnit` |  | |  |  |  |  |
+| `ProductPurchasePointsQty` |  | |  |  |  |  |
+| `PriorSupplier` |  | |  |  |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |  |  |
+| `InventoryValuationType` |  | |  |  |  |  |
+| `SuplrSettlmtBusinessArea` |  | |  |  |  |  |
+| `CustSettlmtBusinessArea` |  | |  |  |  |  |
+| `SuplrSettlmtControllingArea` |  | |  |  |  |  |
+| `SuplrSettlmtCostCenter` |  | |  |  |  |  |
+| `SuplrSettlmtProfitCenter` |  | |  |  |  |  |
+| `IncotermsVersion` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `CustSettlmtControllingArea` |  | |  |  |  |  |
+| `CustSettlmtCostCenter` |  | |  |  |  |  |
+| `CustSettlmtProfitCenter` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `SupplierPrcDetnIsIncmplt` |  | |  |  |  |  |
+| `CustomerPrcDetnIsIncmplt` |  | |  |  |  |  |
+| `SettlmtPrecdgDoc` |  | |  |  |  |  |
+| `SettlmtPrecdgDocItem` |  | |  |  |  |  |
+| `SettlmtPrecdgDocCat` |  | |  |  |  |  |
+| `SettlmtPrecdgDocFiscalYear` |  | |  |  |  |  |
+| `SettlmtDocItemCat` |  | |  |  |  |  |
+| `SettlmtItemReltdCndnContr` |  | |  |  |  |  |
+| `SettlmtItemReltdTrdgContr` |  | |  |  |  |  |
+| `SettlmtItemReltdTrdgContrItem` |  | |  |  |  |  |
+| `SettlmtItemReltdPurgDoc` |  | |  |  |  |  |
+| `SettlmtItemReltdPurgDocItem` |  | |  |  |  |  |
+| `SettlmtItemReltdBillgDoc` |  | |  |  |  |  |
+| `SettlmtItemReltdBillgDocItem` |  | |  |  |  |  |
+| `SettlmtDocItemStatus` |  | |  |  |  |  |
+| `SettlmtDocItemCancld` |  | |  |  |  |  |
+| `SupplierSettlementOrder` |  | |  |  |  |  |
+| `SupplierItemSettlmtStatus` |  | |  |  |  |  |
+| `CustomerItemSettlmtStatus` |  | |  |  |  |  |
+| `SupplierItemSettlmtBlkgReason` |  | |  |  |  |  |
+| `CustomerItemSettlmtBlkgReason` |  | |  |  |  |  |
+| `ItemSettlmtRelevance` |  | |  |  |  |  |
+| `ServicesRenderedDate` |  | |  |  |  |  |
+| `SuplrSettlmtCompanyCode` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `SettlementFiscalYear` |  | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `LowerLevelItemExists` |  | |  |  |  |  |
+| `ItemDistributionStatus` |  | |  |  |  |  |
+| `SettlmtRefDocType` |  | |  |  |  |  |
+| `SettlmtRefDoc` |  | |  |  |  |  |
+| `CndnContrType` |  | |  |  |  |  |
+| `CndnContrProcVar` |  | |  |  |  |  |
+| `SettlmtDateCat` |  | |  |  |  |  |
+| `SettlmtDate` |  | |  |  |  |  |
+| `SettlmtDateSequentialID` |  | |  |  |  |  |
+| `ActualSettlmtDate` |  | |  |  |  |  |
+| `SettlmtPeriodStartDate` |  | |  |  |  |  |
+| `RefSettlmtDate` |  | |  |  |  |  |
+| `SettlmtRefDocFiscalYear` |  | |  |  |  |  |
+| `SettlmtRefDocLogicalSyst` |  | |  |  |  |  |
+| `SettlmtRefDocCompanyCode` |  | |  |  |  |  |
+| `SettlmtRefDocItem` |  | |  |  |  |  |
+| `SettlmtRefDocCat` |  | |  |  |  |  |
+| `ItemIntrastatRelevance` |  | |  |  |  |  |
+| `CustomerSettlementOrder` |  | |  |  |  |  |
+| `SuplrSettlmtWBSElmntInternalID` |  | |  |  |  |  |
+| `CustSettlmtWBSElmntInternalID` |  | |  |  |  |  |
+| `SettlmtDocItemCollSts` |  | |  |  |  |  |
+| `CollSettlmtItemBlkgReason` |  | |  |  |  |  |
+| `ItmSettlmtDocCollRelevance` |  | |  |  |  |  |
+| `SettlmtAddlRefDocType` |  | |  |  |  |  |
+| `SettlmtAddlRefDoc` |  | |  |  |  |  |
+| `SettlmtAddlRefDocFiscalYear` |  | |  |  |  |  |
+| `SettlmtAddlRefDocLogicalSyst` |  | |  |  |  |  |
+| `SettlmtAddlRefDocItem` |  | |  |  |  |  |
+| `SettlmtAddlRefDocCat` |  | |  |  |  |  |
+| `CustomerSettlmtRecipient` |  | |  |  |  |  |
+| `SupplierSubrange` |  | |  |  |  |  |
+| `ProductHierarchy` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup1` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup2` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup3` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup4` |  | |  |  |  |  |
+| `SalesSpcfcProductGroup5` |  | |  |  |  |  |
+| `BusVolDocSalesOrganization` |  | |  |  |  |  |
+| `BusVolDocDistributionChannel` |  | |  |  |  |  |
+| `BusVolDocDivision` |  | |  |  |  |  |
+| `ProductCommissionGroup` |  | |  |  |  |  |
+| `PriceSpecificationProductGroup` |  | |  |  |  |  |
+| `SalesVolumeRebateGroup` |  | |  |  |  |  |
+| `BusTransDocReferenceID` |  | |  |  |  |  |
+| `BusTransDocReferenceItemID` |  | |  |  |  |  |
+| `ETag` |  | |  | `cast ( '0000' as wlf_entity_tag preserving type )` |  |  |
+| `SettlmtDocItemChangeState` |  | |  |  |  |  |
+| `_SettlmtDoc` | | ✓ | | | | |
+| `_Partner` | | ✓ | | | | |
+| `_SettlmtDocItemCat` | | ✓ | | | | |
+| `_SettlmtDocItemStatus` | | ✓ | | | | |
+| `_SettlmtDocItemCancld` | | ✓ | | | | |
+| `_HigherLevelItem` | | ✓ | | | | |
+| `_SettlmtDocItemCollSts` | | ✓ | | | | |
+| `_SupplierPricingElement` | | ✓ | | | | |
+| `_CustomerPricingElement` | | ✓ | | | | |
+| `_SuplrSettlmtBusinessAreaText` | | ✓ | | | | |
+| `_CustSettlmtBusinessAreaText` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_BusVolDocSalesOrganization` | | ✓ | | | | |
+| `_BusVolDocDistributionChannel` | | ✓ | | | | |
+| `_BusVolDocDivision` | | ✓ | | | | |
+| `_SettlmtDocItemPlainLongText` | | ✓ | | | | |
+| `_SettlmtRefDocCat` | | ✓ | | | | |
+| `_SettlmtAddlRefDocCat` | | ✓ | | | | |
+| `_CndnContrType` | | ✓ | | | | |
+| `_SettlmtItemReltdCndnContr` | | ✓ | | | | |
+| `_SettlmtDocCurrency` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_SettlmtQuantityUnit` | | ✓ | | | | |
+| `_NetPriceQuantityUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_ItemWeightUnit` | | ✓ | | | | |
+| `_ItemVolumeUnit` | | ✓ | | | | |
+| `_SettlmtItmStatisticalPrpty` | | ✓ | | | | |
+| `_SettlmtSourceDocCat` | | ✓ | | | | |
+| `_SettlmtItemActivityReason` | | ✓ | | | | |
+| `_ProductPurchasePointsQtyUnit` | | ✓ | | | | |
+| `_PriorSupplier` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_SuplrSettlmtBusinessArea` | | ✓ | | | | |
+| `_CustSettlmtBusinessArea` | | ✓ | | | | |
+| `_SuplrSettlmtControllingArea` | | ✓ | | | | |
+| `_SuplrSettlmtCostCenter` | | ✓ | | | | |
+| `_SuplrSettlmtProfitCenter` | | ✓ | | | | |
+| `_IncotermsVersion` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_CustSettlmtControllingArea` | | ✓ | | | | |
+| `_CustSettlmtCostCenter` | | ✓ | | | | |
+| `_CustSettlmtProfitCenter` | | ✓ | | | | |
+| `_SettlmtPrecdgDocCat` | | ✓ | | | | |
+| `_SettlmtItemReltdPurgDoc` | | ✓ | | | | |
+| `_SettlmtItemReltdBillgDoc` | | ✓ | | | | |
+| `_SupplierSettlementOrder` | | ✓ | | | | |
+| `_SupplierItemSettlmtStatus` | | ✓ | | | | |
+| `_CustomerItemSettlmtStatus` | | ✓ | | | | |
+| `_SupplierItemSettlmtBlkgReason` | | ✓ | | | | |
+| `_CustomerItemSettlmtBlkgReason` | | ✓ | | | | |
+| `_ItemSettlmtRelevance` | | ✓ | | | | |
+| `_SuplrSettlmtCompanyCode` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_ItemDistributionStatus` | | ✓ | | | | |
+| `_SettlmtRefDocLogicalSyst` | | ✓ | | | | |
+| `_SettlmtRefDocCompanyCode` | | ✓ | | | | |
+| `_CndnContrProcVar` | | ✓ | | | | |
+| `_SettlmtDateCat` | | ✓ | | | | |
+| `_ItemIntrastatRelevance` | | ✓ | | | | |
+| `_CustomerSettlementOrder` | | ✓ | | | | |
+| `_SuplrSettlmtWBSElmntBasicData` | | ✓ | | | | |
+| `_CustSettlmtWBSElmntBasicData` | | ✓ | | | | |
+| `_CollSettlmtItemBlkgReason` | | ✓ | | | | |
+| `_ItmSettlmtDocCollRelevance` | | ✓ | | | | |
+| `_SettlmtAddlRefDocLogicalSyst` | | ✓ | | | | |
+| `_CustomerSettlmtRecipient` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup1` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup2` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup3` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup4` | | ✓ | | | | |
+| `_SalesSpcfcProductGroup5` | | ✓ | | | | |
+| `_CreatedByUser` | | ✓ | | | | |
 
 ## Associations
 

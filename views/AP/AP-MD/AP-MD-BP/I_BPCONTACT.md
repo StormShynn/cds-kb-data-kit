@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RelationshipNumber` | ✓ | |  | `relnr` |
-| `BusinessPartnerCompany` | ✓ | |  | `partner1` |
-| `BusinessPartnerPerson` | ✓ | |  | `partner2` |
-| `ValidityEndDate` | ✓ | |  | `date_to` |
-| `ValidityStartDate` |  | |  | `date_from` |
-| `IsStandardRelationship` |  | |  | `xdfrel` |
-| `RelationshipCategory` |  | |  | `reltyp` |
-| `_BusinessPartnerCompany` | | ✓ | | |
-| `_BusinessPartnerPerson` | | ✓ | | |
-| `_ContactAddress` | | ✓ | | |
-| `_ContactRelationship` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RelationshipNumber` | ✓ | |  | `relnr` |  |  |
+| `BusinessPartnerCompany` | ✓ | |  | `partner1` |  |  |
+| `BusinessPartnerPerson` | ✓ | |  | `partner2` |  |  |
+| `ValidityEndDate` | ✓ | |  | `date_to` |  |  |
+| `ValidityStartDate` |  | |  | `date_from` |  |  |
+| `IsStandardRelationship` |  | |  | `xdfrel` |  |  |
+| `RelationshipCategory` |  | |  | `reltyp` |  |  |
+| `_BusinessPartnerCompany` | | ✓ | | | | |
+| `_BusinessPartnerPerson` | | ✓ | | | | |
+| `_ContactAddress` | | ✓ | | | | |
+| `_ContactRelationship` | | ✓ | | | | |
 
 ## Associations
 

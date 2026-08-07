@@ -25,13 +25,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SrvcTransChgReqRcvdOnDateTime` |  | |  | `timestamp` |
-| `EffectiveDate` |  | |  | `datum` |
-| `SoldToParty` |  | |  | `crmt_sold_to_part` |
-| `PurchaseOrderByCustomer` |  | |  | `crmt_po_number_sold` |
-| `ServiceContractIsReleased` |  | |  | `crms4_stat_released` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcTransChgReqRcvdOnDateTime` |  | |  | `timestamp` |  |  |
+| `EffectiveDate` |  | |  | `datum` |  |  |
+| `SoldToParty` |  | |  | `crmt_sold_to_part` |  |  |
+| `PurchaseOrderByCustomer` |  | |  | `crmt_po_number_sold` |  |  |
+| `ServiceContractIsReleased` |  | |  | `crms4_stat_released` |  |  |
 
 ## Source Code
 

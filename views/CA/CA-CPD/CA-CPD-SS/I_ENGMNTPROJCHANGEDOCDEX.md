@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ChangeDocObject` | ✓ | |  |  |
-| `ChangeDocObjectClass` | ✓ | |  |  |
-| `ChangeDocument` | ✓ | |  |  |
-| `DatabaseTable` | ✓ | |  |  |
-| `ChangeDocTableKey` | ✓ | |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |
-| `ChangeDocItemChangeType` | ✓ | |  |  |
-| `ChangeDocItemChangeTypeText` |  | |  |  |
-| `DatabaseTableText` |  | |  |  |
-| `ChangeDocGlobalFieldName` |  | |  |  |
-| `ChangeTransactionCode` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `UserName` |  | |  |  |
-| `CreationDate` |  | |  |  |
-| `CreationTime` |  | |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |
-| `ChangeDocPreviousStrFieldValue` |  | |  |  |
-| `ChangeDocNewStrFieldValue` |  | |  |  |
-| `EngagementProject` |  | |  |  |
-| `WorkPackage` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeDocObject` | ✓ | |  |  |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |  |  |
+| `ChangeDocument` | ✓ | |  |  |  |  |
+| `DatabaseTable` | ✓ | |  |  |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |  |  |
+| `ChangeDocItemChangeTypeText` |  | |  |  |  |  |
+| `DatabaseTableText` |  | |  |  |  |  |
+| `ChangeDocGlobalFieldName` |  | |  |  |  |  |
+| `ChangeTransactionCode` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `UserName` |  | |  |  |  |  |
+| `CreationDate` |  | |  |  |  |  |
+| `CreationTime` |  | |  |  |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |  |  |
+| `ChangeDocPreviousStrFieldValue` |  | |  |  |  |  |
+| `ChangeDocNewStrFieldValue` |  | |  |  |  |  |
+| `EngagementProject` |  | |  |  |  |  |
+| `WorkPackage` |  | |  |  |  |  |
 
 ## Source Code
 

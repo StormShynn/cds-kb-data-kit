@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `PurgAggrgdProdMarketabilitySts` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_total_status_pma )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PurgTotMarketabilityStsName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_total_status_pma_dscr preserving type )` |
-| `_Language` | | ✓ | | |
-| `_PurgTotProdMarketabilitySts` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `PurgAggrgdProdMarketabilitySts` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_total_status_pma )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PurgTotMarketabilityStsName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_total_status_pma_dscr preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PurgTotProdMarketabilitySts` | | ✓ | | | | |
 
 ## Associations
 

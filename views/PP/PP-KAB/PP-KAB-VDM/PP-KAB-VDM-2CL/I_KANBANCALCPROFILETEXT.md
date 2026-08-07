@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanContainerCalcProfile` | ✓ | |  | `kcprf` |
-| `Language` | ✓ | |  | `spras` |
-| `Plant` | ✓ | |  | `werks` |
-| `KanbanContainerCalcProfileName` |  | |  | `kcprt` |
-| `_KanbanCalculationProfile` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanContainerCalcProfile` | ✓ | |  | `kcprf` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `KanbanContainerCalcProfileName` |  | |  | `kcprt` |  |  |
+| `_KanbanCalculationProfile` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

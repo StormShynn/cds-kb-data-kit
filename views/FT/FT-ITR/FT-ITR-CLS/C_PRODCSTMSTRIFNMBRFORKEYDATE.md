@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TrdClassfctnNmbrSchm` | ✓ | |  |  |
-| `TrdClassfctnNmbrSchmCntnt` | ✓ | |  |  |
-| `Product` | ✓ | |  |  |
-| `ValidityStartDate` | ✓ | |  |  |
-| `ValidityEndDate` |  | |  |  |
-| `CustomsTariffNumber` |  | |  | `cast (_CustomsTariffNumber.TrdClassfctnNmbr as /sapsll/tarno)` |
-| `Country` |  | | `_TrdClassfctnNmbrSchmUsge` | `Country` |
-| `CustomsUnitOfMeasure` |  | | `_CustomsTariffNumber` | `CustomsUnitOfMeasure` |
-| `UnitOfMeasureSystem` |  | | `_CustomsTariffNumber` | `UnitOfMeasureSystem` |
-| `SecondCustomsUnitOfMeasure` |  | | `_CustomsTariffNumber` | `SecondCustomsUnitOfMeasure` |
-| `SupplementaryUnit` |  | | `_CustomsTariffNumber` | `SupplementaryUnit` |
-| `_Text` | | ✓ | | |
-| `_TrdClassfctnNmbrSchm` | | ✓ | | |
-| `_Product` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdClassfctnNmbrSchm` | ✓ | |  |  |  |  |
+| `TrdClassfctnNmbrSchmCntnt` | ✓ | |  |  |  |  |
+| `Product` | ✓ | |  |  |  |  |
+| `ValidityStartDate` | ✓ | |  |  |  |  |
+| `ValidityEndDate` |  | |  |  |  |  |
+| `CustomsTariffNumber` |  | |  | `cast (_CustomsTariffNumber.TrdClassfctnNmbr as /sapsll/tarno)` |  |  |
+| `Country` |  | | `_TrdClassfctnNmbrSchmUsge` | `Country` |  |  |
+| `CustomsUnitOfMeasure` |  | | `_CustomsTariffNumber` | `CustomsUnitOfMeasure` |  |  |
+| `UnitOfMeasureSystem` |  | | `_CustomsTariffNumber` | `UnitOfMeasureSystem` |  |  |
+| `SecondCustomsUnitOfMeasure` |  | | `_CustomsTariffNumber` | `SecondCustomsUnitOfMeasure` |  |  |
+| `SupplementaryUnit` |  | | `_CustomsTariffNumber` | `SupplementaryUnit` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_TrdClassfctnNmbrSchm` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
 
 ## Associations
 

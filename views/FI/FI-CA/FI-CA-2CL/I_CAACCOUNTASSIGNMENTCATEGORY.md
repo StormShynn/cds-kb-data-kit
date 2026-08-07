@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAAccountAssignmentCategory` | ✓ | |  | `kontt` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAAccountAssignmentCategory` | ✓ | |  | `kontt` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectType` | ✓ | |  | `prart` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectType` | ✓ | |  | `prart` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAPeriodCode` | ✓ | |  | `persl` |
-| `Language` | ✓ | |  | `spras` |
-| `CAPeriodCodeName` |  | |  | `txt50` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAPeriodCode` | ✓ | |  | `persl` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CAPeriodCodeName` |  | |  | `txt50` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

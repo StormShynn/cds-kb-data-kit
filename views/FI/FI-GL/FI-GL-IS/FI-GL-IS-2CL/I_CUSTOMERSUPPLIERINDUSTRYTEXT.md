@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `Industry` | ✓ | |  | `cast(t016t.brsch as fis_brsch preserving type )` |
-| `CustomerSupplierIndustryName` |  | |  | `cast(t016t.brtxt as fis_customersupplierindustry_n preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `Industry` | ✓ | |  | `cast(t016t.brsch as fis_brsch preserving type )` |  |  |
+| `CustomerSupplierIndustryName` |  | |  | `cast(t016t.brtxt as fis_customersupplierindustry_n preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

@@ -27,24 +27,24 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurgOutputOperationCode` | ✓ | |  | `druvo` |
-| `PurchasingObjectCategory` | ✓ | |  | `bstyp` |
-| `PurchasingDocumentType` | ✓ | |  | `bsart` |
-| `PurchasingDocumentItemCategory` | ✓ | |  | `pstyp` |
-| `TextObjectCategory` | ✓ | |  | `tdobject` |
-| `TextObjectType` | ✓ | |  | `tdid` |
-| `PurgTextPrintSequenceValue` |  | |  | `drflg` |
-| `PurgTextPrintPriorityValue` |  | |  | `drpri` |
-| `TextObjectKey` |  | |  | `txnam` |
-| `PurgTextTitleIsPrinted` |  | |  | `titdr` |
-| `_PurgOutputOperationCode` | | ✓ | | |
-| `_PurchasingObjectCategory` | | ✓ | | |
-| `_PurchasingDocumentType` | | ✓ | | |
-| `_PurgDocumentItemCategory` | | ✓ | | |
-| `_TextObjectCategory` | | ✓ | | |
-| `_TextObjectType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgOutputOperationCode` | ✓ | |  | `druvo` |  |  |
+| `PurchasingObjectCategory` | ✓ | |  | `bstyp` |  |  |
+| `PurchasingDocumentType` | ✓ | |  | `bsart` |  |  |
+| `PurchasingDocumentItemCategory` | ✓ | |  | `pstyp` |  |  |
+| `TextObjectCategory` | ✓ | |  | `tdobject` |  |  |
+| `TextObjectType` | ✓ | |  | `tdid` |  |  |
+| `PurgTextPrintSequenceValue` |  | |  | `drflg` |  |  |
+| `PurgTextPrintPriorityValue` |  | |  | `drpri` |  |  |
+| `TextObjectKey` |  | |  | `txnam` |  |  |
+| `PurgTextTitleIsPrinted` |  | |  | `titdr` |  |  |
+| `_PurgOutputOperationCode` | | ✓ | | | | |
+| `_PurchasingObjectCategory` | | ✓ | | | | |
+| `_PurchasingDocumentType` | | ✓ | | | | |
+| `_PurgDocumentItemCategory` | | ✓ | | | | |
+| `_TextObjectCategory` | | ✓ | | | | |
+| `_TextObjectType` | | ✓ | | | | |
 
 ## Associations
 

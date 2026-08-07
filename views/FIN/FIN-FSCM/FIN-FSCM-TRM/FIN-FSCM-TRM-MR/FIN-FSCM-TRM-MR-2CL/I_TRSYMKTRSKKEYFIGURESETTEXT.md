@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `MarketRiskKeyFigureSet` | ✓ | |  | `mra_kf_set` |
-| `MarketRiskKeyFigureSetName` |  | |  | `text` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `MarketRiskKeyFigureSet` | ✓ | |  | `mra_kf_set` |  |  |
+| `MarketRiskKeyFigureSetName` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

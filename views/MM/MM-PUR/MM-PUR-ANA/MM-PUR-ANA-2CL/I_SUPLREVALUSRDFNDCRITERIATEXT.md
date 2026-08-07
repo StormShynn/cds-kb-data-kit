@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalUserDefinedCriteria` | ✓ | |  | `criterion_id` |
-| `Language` | ✓ | |  | `language` |
-| `SuplrEvalUserDfndCriteriaDesc` |  | |  | `critrion_desc` |
-| `_Userdefinedcriteria` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalUserDefinedCriteria` | ✓ | |  | `criterion_id` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `SuplrEvalUserDfndCriteriaDesc` |  | |  | `critrion_desc` |  |  |
+| `_Userdefinedcriteria` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

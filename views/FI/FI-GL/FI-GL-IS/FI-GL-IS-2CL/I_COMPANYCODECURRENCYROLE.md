@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `CurrencyRole` | ✓ | |  | `curtype` |
-| `Currency` |  | |  | `waers` |
-| `_Currency` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_CurrencyRole` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `CurrencyRole` | ✓ | |  | `curtype` |  |  |
+| `Currency` |  | |  | `waers` |  |  |
+| `_Currency` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_CurrencyRole` | | ✓ | | | | |
 
 ## Associations
 

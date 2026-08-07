@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductTypeCode` | ✓ | |  | `prod_type_code` |
-| `Language` | ✓ | |  | `spras` |
-| `Name` |  | |  | `description` |
-| `_ProductTypeCode` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductTypeCode` | ✓ | |  | `prod_type_code` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `Name` |  | |  | `description` |  |  |
+| `_ProductTypeCode` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

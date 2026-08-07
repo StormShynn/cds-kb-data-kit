@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrEvalScorecardQnaireUUID` | ✓ | |  |  |
-| `SuplrEvalScorecardUUID` |  | |  |  |
-| `QuestionnaireName` |  | |  |  |
-| `SupplierEvalScorecardQnaire` |  | |  |  |
-| `SuplrEvalScorecardRtQnaireUUID` |  | |  |  |
-| `MinimalScore` |  | |  |  |
-| `TargetScore` |  | |  |  |
-| `CalculatedScore` |  | |  |  |
-| `NumberOfResponses` |  | |  |  |
-| `WeightingFactor` |  | |  |  |
-| `SuplrEvalOrdinalNumber` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrEvalScorecardQnaireUUID` | ✓ | |  |  |  |  |
+| `SuplrEvalScorecardUUID` |  | |  |  |  |  |
+| `QuestionnaireName` |  | |  |  |  |  |
+| `SupplierEvalScorecardQnaire` |  | |  |  |  |  |
+| `SuplrEvalScorecardRtQnaireUUID` |  | |  |  |  |  |
+| `MinimalScore` |  | |  |  |  |  |
+| `TargetScore` |  | |  |  |  |  |
+| `CalculatedScore` |  | |  |  |  |  |
+| `NumberOfResponses` |  | |  |  |  |  |
+| `WeightingFactor` |  | |  |  |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |  |  |
 
 ## Source Code
 

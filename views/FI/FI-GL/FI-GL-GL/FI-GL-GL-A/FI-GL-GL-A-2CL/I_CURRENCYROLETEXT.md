@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CurrencyRole` | ✓ | |  | `curtype` |
-| `Language` | ✓ | |  | `langu` |
-| `CurrencyRoleName` |  | |  | `cast( name as fac_crcyrole_txt preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CurrencyRole` | ✓ | |  | `curtype` |  |  |
+| `Language` | ✓ | |  | `langu` |  |  |
+| `CurrencyRoleName` |  | |  | `cast( name as fac_crcyrole_txt preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

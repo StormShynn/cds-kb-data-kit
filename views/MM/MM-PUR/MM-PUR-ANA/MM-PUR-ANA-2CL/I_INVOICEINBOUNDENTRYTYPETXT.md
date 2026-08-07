@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `InvoiceInboundEntryType` | ✓ | |  | `cast( dd07t.domvalue_l as invoice_inbound_entry_type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `SourceTypeDesc` |  | |  | `cast( dd07t.ddtext as abap.char(60) )` |
-| `_EntryType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `InvoiceInboundEntryType` | ✓ | |  | `cast( dd07t.domvalue_l as invoice_inbound_entry_type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `SourceTypeDesc` |  | |  | `cast( dd07t.ddtext as abap.char(60) )` |  |  |
+| `_EntryType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

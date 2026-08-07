@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REGnrcRentalObjUsageCategory` | ✓ | |  | `usagecategory` |
-| `REGenericRentalObjectType` |  | |  | `objtype` |
-| `REGnrcRntlObjUsgeCatHasPrtflo` |  | |  | `hasportfolio` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REGnrcRentalObjUsageCategory` | ✓ | |  | `usagecategory` |  |  |
+| `REGenericRentalObjectType` |  | |  | `objtype` |  |  |
+| `REGnrcRntlObjUsgeCatHasPrtflo` |  | |  | `hasportfolio` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

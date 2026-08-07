@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` |  | |  | `matnr` |
-| `SerialNumber` |  | |  | `gernr` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` |  | |  | `matnr` |  |  |
+| `SerialNumber` |  | |  | `gernr` |  |  |
 
 ## Source Code
 

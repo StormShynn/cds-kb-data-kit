@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `REContractNoticeReason` | ✓ | |  | `ntreason` |
-| `REContractNoticeParty` |  | |  | `ntparty` |
-| `REIsExtraordinaryNotice` |  | |  | `ntextraord` |
-| `REVacancyReason` |  | |  | `vacreasondef` |
-| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
-| `_Text` | | ✓ | | |
-| `_REContractNoticeParty` | | ✓ | | |
-| `_REVacancyReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REContractNoticeReason` | ✓ | |  | `ntreason` |  |  |
+| `REContractNoticeParty` |  | |  | `ntparty` |  |  |
+| `REIsExtraordinaryNotice` |  | |  | `ntextraord` |  |  |
+| `REVacancyReason` |  | |  | `vacreasondef` |  |  |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_REContractNoticeParty` | | ✓ | | | | |
+| `_REVacancyReason` | | ✓ | | | | |
 
 ## Associations
 

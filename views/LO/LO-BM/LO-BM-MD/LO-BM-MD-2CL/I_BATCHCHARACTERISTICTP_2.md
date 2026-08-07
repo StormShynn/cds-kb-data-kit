@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Material` | ✓ | |  |  |
-| `BatchIdentifyingPlant` | ✓ | |  |  |
-| `Batch` | ✓ | |  |  |
-| `CharcInternalID` | ✓ | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `ClassType` |  | |  |  |
-| `ClassInternalID` |  | |  |  |
-| `_BatchTP` | | ✓ | | |
-| `_BatchCharacteristicValueTP` | | ✓ | | |
-| `_Characteristic` | | ✓ | | |
-| `_Class` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` | ✓ | |  |  |  |  |
+| `BatchIdentifyingPlant` | ✓ | |  |  |  |  |
+| `Batch` | ✓ | |  |  |  |  |
+| `CharcInternalID` | ✓ | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `ClassType` |  | |  |  |  |  |
+| `ClassInternalID` |  | |  |  |  |  |
+| `_BatchTP` | | ✓ | | | | |
+| `_BatchCharacteristicValueTP` | | ✓ | | | | |
+| `_Characteristic` | | ✓ | | | | |
+| `_Class` | | ✓ | | | | |
 
 ## Source Code
 

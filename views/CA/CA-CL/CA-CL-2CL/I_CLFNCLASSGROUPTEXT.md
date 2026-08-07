@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ClassGroup` | ✓ | |  | `klagr` |
-| `Language` | ✓ | |  | `spras` |
-| `ClassGroupName` |  | |  | `ktext` |
-| `_Language` | | ✓ | | |
-| `_ClassGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassGroup` | ✓ | |  | `klagr` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ClassGroupName` |  | |  | `ktext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ClassGroup` | | ✓ | | | | |
 
 ## Associations
 

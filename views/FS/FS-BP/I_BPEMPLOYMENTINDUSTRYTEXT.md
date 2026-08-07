@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BusPartEmplrIndstryCode` | ✓ | |  | `ind_sector` |
-| `BPEmploymentIndustryDesc` |  | |  | `text` |
-| `BPEmploymentIndustryShortDesc` |  | |  | `text_short` |
-| `_BPEmploymentIndustry` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BusPartEmplrIndstryCode` | ✓ | |  | `ind_sector` |  |  |
+| `BPEmploymentIndustryDesc` |  | |  | `text` |  |  |
+| `BPEmploymentIndustryShortDesc` |  | |  | `text_short` |  |  |
+| `_BPEmploymentIndustry` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

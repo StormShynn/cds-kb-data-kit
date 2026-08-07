@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaskListType` | ✓ | |  |  |
-| `TaskListGroup` | ✓ | |  |  |
-| `TaskListGroupCounter` | ✓ | |  |  |
-| `TaskListSequence` | ✓ | |  |  |
-| `TaskListOperationInternalId` | ✓ | |  |  |
-| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |
-| `SuccssrBOOGroup` |  | |  |  |
-| `SuccssrBOOOpInternalID` |  | |  |  |
-| `MaintenanceTaskListOperation` |  | |  |  |
-| `SuperiorOperation` |  | |  |  |
-| `OperationText` |  | |  |  |
-| `MasterRecipeRelationshipType` |  | |  |  |
-| `OperationIsSuccessor` |  | |  |  |
-| `FactoryCalendar` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `Plant` |  | |  |  |
-| `MaxTimeIntvlIsUsedForSchedg` |  | |  |  |
-| `TimeIntvlBtwnRelshp` |  | |  |  |
-| `TimeIntvlBtwnRelshpUnit` |  | |  |  |
-| `WorkCenterInternalID` |  | |  |  |
-| `_Header` | | ✓ | | |
-| `_Operation` | | ✓ | | |
-| `_NonHistOp` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |  |  |
+| `TaskListGroup` | ✓ | |  |  |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |  |  |
+| `TaskListSequence` | ✓ | |  |  |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |  |  |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |  |  |
+| `SuccssrBOOGroup` |  | |  |  |  |  |
+| `SuccssrBOOOpInternalID` |  | |  |  |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |  |  |
+| `SuperiorOperation` |  | |  |  |  |  |
+| `OperationText` |  | |  |  |  |  |
+| `MasterRecipeRelationshipType` |  | |  |  |  |  |
+| `OperationIsSuccessor` |  | |  |  |  |  |
+| `FactoryCalendar` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `MaxTimeIntvlIsUsedForSchedg` |  | |  |  |  |  |
+| `TimeIntvlBtwnRelshp` |  | |  |  |  |  |
+| `TimeIntvlBtwnRelshpUnit` |  | |  |  |  |  |
+| `WorkCenterInternalID` |  | |  |  |  |  |
+| `_Header` | | ✓ | | | | |
+| `_Operation` | | ✓ | | | | |
+| `_NonHistOp` | | ✓ | | | | |
 
 ## Source Code
 

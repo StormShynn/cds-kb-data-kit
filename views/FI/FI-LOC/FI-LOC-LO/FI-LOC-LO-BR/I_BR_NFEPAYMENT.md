@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NotaFiscal` | ✓ | |  | `docnum` |
-| `SequenceNumber` | ✓ | |  | `counter` |
-| `PaymentMethod` |  | |  | `cast(t_pag as logbr_tpag preserving type)` |
-| `BR_NFPaymentMethodManualDesc` |  | |  | `cast(x_pag as logbr_payment_descr preserving type)` |
-| `PaymentAmount` |  | |  | `cast(v_pag as logbr_vpag)` |
-| `PaymentSystemIntegrationType` |  | |  | `cast(tp_integra as logbr_tpintegra preserving type)` |
-| `BR_CreditCardCompanyCNPJ` |  | |  | `cast(concat(concat(concat(concat(concat( left( cnpj, 2), '.'), concat(right( left( cnpj, 5), 3), '.')), concat(right( left( cnpj, 8), 3), '/')), concat(left( right( cnpj, 6), 4), '-')), right( cnpj, 2)) as logbr_payment_cnpj preserving type)` |
-| `CreditCardBrand` |  | |  | `t_band` |
-| `CreditCardTransactionAuthznID` |  | |  | `cast( substring( c_aut, 1, 20 ) as logbr_caut_old)` |
-| `BR_NFPaytAuthorizationNumber` |  | |  | `c_aut` |
-| `PaymentForm` |  | |  | `cast(ind_pag as logbr_indpag preserving type)` |
-| `BR_CNPJPaymentRecipient` |  | |  | `cast(concat(concat(concat(concat(concat( left( cnpjreceb, 2), '.'), concat(right( left( cnpjreceb, 5), 3), '.')), concat(right( left( cnpjreceb, 8), 3), '/')), concat(left( right( cnpjreceb, 6), 4), '-')), right( cnpjreceb, 2)) as logbr_cnpjpaymentrecipient preserving type)` |
-| `BR_PaymentTerminalIdentifier` |  | |  | `cast(idtermpag as logbr_paymentterminalid preserving type)` |
-| `BR_PaymentDate` |  | |  | `cast(dpag as logbr_paymentdate preserving type)` |
-| `BR_CNPJPaymentTransactional` |  | |  | `cast(concat(concat(concat(concat(concat( left( cnpjpag, 2), '.'), concat(right( left( cnpjpag, 5), 3), '.')), concat(right( left( cnpjpag, 8), 3), '/')), concat(left( right( cnpjpag, 6), 4), '-')), right( cnpjpag, 2)) as logbr_paymenttransactionalcnpj preserving type)` |
-| `BR_RgnEstblmtCNPJPaytMade` |  | |  | `cast(ufpag as logbr_cnpjpaymentregion preserving type)` |
-| `SalesDocumentCurrency` |  | | `_BR_NFDocumentCurrency` | `SalesDocumentCurrency` |
-| `_SalesDocumentCurrency` | | ✓ | | |
-| `_BR_NotaFiscal` | | ✓ | | |
-| `_BR_PaymentMethod` | | ✓ | | |
-| `_BR_PaymentForm` | | ✓ | | |
-| `_BR_PaymentIntegrationType` | | ✓ | | |
-| `_BR_CreditCardCompany` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |  |  |
+| `SequenceNumber` | ✓ | |  | `counter` |  |  |
+| `PaymentMethod` |  | |  | `cast(t_pag as logbr_tpag preserving type)` |  |  |
+| `BR_NFPaymentMethodManualDesc` |  | |  | `cast(x_pag as logbr_payment_descr preserving type)` |  |  |
+| `PaymentAmount` |  | |  | `cast(v_pag as logbr_vpag)` |  |  |
+| `PaymentSystemIntegrationType` |  | |  | `cast(tp_integra as logbr_tpintegra preserving type)` |  |  |
+| `BR_CreditCardCompanyCNPJ` |  | |  | `cast(concat(concat(concat(concat(concat( left( cnpj, 2), '.'), concat(right( left( cnpj, 5), 3), '.')), concat(right( left( cnpj, 8), 3), '/')), concat(left( right( cnpj, 6), 4), '-')), right( cnpj, 2)) as logbr_payment_cnpj preserving type)` |  |  |
+| `CreditCardBrand` |  | |  | `t_band` |  |  |
+| `CreditCardTransactionAuthznID` |  | |  | `cast( substring( c_aut, 1, 20 ) as logbr_caut_old)` |  |  |
+| `BR_NFPaytAuthorizationNumber` |  | |  | `c_aut` |  |  |
+| `PaymentForm` |  | |  | `cast(ind_pag as logbr_indpag preserving type)` |  |  |
+| `BR_CNPJPaymentRecipient` |  | |  | `cast(concat(concat(concat(concat(concat( left( cnpjreceb, 2), '.'), concat(right( left( cnpjreceb, 5), 3), '.')), concat(right( left( cnpjreceb, 8), 3), '/')), concat(left( right( cnpjreceb, 6), 4), '-')), right( cnpjreceb, 2)) as logbr_cnpjpaymentrecipient preserving type)` |  |  |
+| `BR_PaymentTerminalIdentifier` |  | |  | `cast(idtermpag as logbr_paymentterminalid preserving type)` |  |  |
+| `BR_PaymentDate` |  | |  | `cast(dpag as logbr_paymentdate preserving type)` |  |  |
+| `BR_CNPJPaymentTransactional` |  | |  | `cast(concat(concat(concat(concat(concat( left( cnpjpag, 2), '.'), concat(right( left( cnpjpag, 5), 3), '.')), concat(right( left( cnpjpag, 8), 3), '/')), concat(left( right( cnpjpag, 6), 4), '-')), right( cnpjpag, 2)) as logbr_paymenttransactionalcnpj preserving type)` |  |  |
+| `BR_RgnEstblmtCNPJPaytMade` |  | |  | `cast(ufpag as logbr_cnpjpaymentregion preserving type)` |  |  |
+| `SalesDocumentCurrency` |  | | `_BR_NFDocumentCurrency` | `SalesDocumentCurrency` |  |  |
+| `_SalesDocumentCurrency` | | ✓ | | | | |
+| `_BR_NotaFiscal` | | ✓ | | | | |
+| `_BR_PaymentMethod` | | ✓ | | | | |
+| `_BR_PaymentForm` | | ✓ | | | | |
+| `_BR_PaymentIntegrationType` | | ✓ | | | | |
+| `_BR_CreditCardCompany` | | ✓ | | | | |
 
 ## Associations
 

@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProdUnivHierarchy` | ✓ | |  |  |
-| `HierarchyNode` | ✓ | |  |  |
-| `ProdHierarchyValidityEndDate` | ✓ | |  |  |
-| `ProdHierarchyValidityStartDate` |  | |  |  |
-| `ParentNode` |  | |  |  |
-| `NodeType` |  | |  |  |
-| `ProdUnivHierarchyNode` |  | |  |  |
-| `_ProdUniversalHierarchy` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProdUnivHierarchy` | ✓ | |  |  |  |  |
+| `HierarchyNode` | ✓ | |  |  |  |  |
+| `ProdHierarchyValidityEndDate` | ✓ | |  |  |  |  |
+| `ProdHierarchyValidityStartDate` |  | |  |  |  |  |
+| `ParentNode` |  | |  |  |  |  |
+| `NodeType` |  | |  |  |  |  |
+| `ProdUnivHierarchyNode` |  | |  |  |  |  |
+| `_ProdUniversalHierarchy` | | ✓ | | | | |
 
 ## Source Code
 

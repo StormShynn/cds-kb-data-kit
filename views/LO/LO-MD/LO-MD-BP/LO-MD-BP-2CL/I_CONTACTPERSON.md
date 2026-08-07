@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ContactPerson` | ✓ | |  | `parnr` |
-| `Customer` |  | |  | `kunnr` |
-| `Supplier` |  | |  | `lifnr` |
-| `ContactPersonFunction` |  | |  | `pafkt` |
-| `ContactPersonDepartment` |  | |  | `abtnr` |
-| `SearchTerm1` |  | |  | `sortl` |
-| `SearchTerm` |  | |  | `sortl` |
-| `PersonNumber` |  | |  | `prsnr` |
-| `UpperCaseFirstName` |  | |  | `mc_namefir` |
-| `UpperCaseLastName` |  | |  | `mc_namelas` |
-| `FirstName` |  | |  | `name_first` |
-| `LastName` |  | |  | `name_last` |
-| `PersonFullName` |  | |  | `name_text` |
-| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck_k` |
-| `_Customer` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_CustLink` | | ✓ | | |
-| `_SuppLink` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContactPerson` | ✓ | |  | `parnr` |  |  |
+| `Customer` |  | |  | `kunnr` |  |  |
+| `Supplier` |  | |  | `lifnr` |  |  |
+| `ContactPersonFunction` |  | |  | `pafkt` |  |  |
+| `ContactPersonDepartment` |  | |  | `abtnr` |  |  |
+| `SearchTerm1` |  | |  | `sortl` |  |  |
+| `SearchTerm` |  | |  | `sortl` |  |  |
+| `PersonNumber` |  | |  | `prsnr` |  |  |
+| `UpperCaseFirstName` |  | |  | `mc_namefir` |  |  |
+| `UpperCaseLastName` |  | |  | `mc_namelas` |  |  |
+| `FirstName` |  | |  | `name_first` |  |  |
+| `LastName` |  | |  | `name_last` |  |  |
+| `PersonFullName` |  | |  | `name_text` |  |  |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck_k` |  |  |
+| `_Customer` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_CustLink` | | ✓ | | | | |
+| `_SuppLink` | | ✓ | | | | |
 
 ## Associations
 

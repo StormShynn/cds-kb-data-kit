@@ -29,41 +29,41 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsShptItemUUID` | ✓ | |  |  |
-| `FldLogsReferenceDocumentNumber` |  | |  |  |
-| `DeliveryDocument` |  | |  |  |
-| `DeliveryDocumentItem` |  | |  |  |
-| `FldLogsShptItmOutbDelivItmID` |  | |  |  |
-| `FldLogsShptItmODOItemID` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `PackagingMaterial` |  | |  |  |
-| `GrossVolume` |  | |  |  |
-| `VolumeUnit` |  | |  |  |
-| `GrossWeight` |  | |  |  |
-| `WeightUnit` |  | |  |  |
-| `MaterialName` |  | |  |  |
-| `FldLogsContainerUnitUUID` |  | |  |  |
-| `FldLogsShptItmStsCode` |  | |  |  |
-| `FldLogsSrceStorLocID` |  | |  |  |
-| `FldLogsSrcePlnt` |  | |  |  |
-| `FldLogsDestStorLocID` |  | |  |  |
-| `FldLogsDestPlnt` |  | |  |  |
-| `FldLogsDelivDueDate` |  | |  |  |
-| `FldLogsGrossVolume` |  | |  |  |
-| `FldLogsGrossVolumeUnit` |  | |  |  |
-| `ProductGrossWeight` |  | |  |  |
-| `ProductWeightUnit` |  | |  |  |
-| `QuantityInBaseUnit` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `FldLogsVoyAssgmtStatusText` |  | |  |  |
-| `FldLogsShptItemCurrentPlant` |  | |  |  |
-| `FldLogsShptItemCurShipgPoint` |  | |  |  |
-| `FldLogsShptItemActualWeight` |  | |  |  |
-| `FldLogsShptItemActlWeightUnit` |  | |  |  |
-| `FieldLogisticsKitIdentifier` |  | |  |  |
-| `_ShptCtnUnit` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsShptItemUUID` | ✓ | |  |  |  |  |
+| `FldLogsReferenceDocumentNumber` |  | |  |  |  |  |
+| `DeliveryDocument` |  | |  |  |  |  |
+| `DeliveryDocumentItem` |  | |  |  |  |  |
+| `FldLogsShptItmOutbDelivItmID` |  | |  |  |  |  |
+| `FldLogsShptItmODOItemID` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `PackagingMaterial` |  | |  |  |  |  |
+| `GrossVolume` |  | |  |  |  |  |
+| `VolumeUnit` |  | |  |  |  |  |
+| `GrossWeight` |  | |  |  |  |  |
+| `WeightUnit` |  | |  |  |  |  |
+| `MaterialName` |  | |  |  |  |  |
+| `FldLogsContainerUnitUUID` |  | |  |  |  |  |
+| `FldLogsShptItmStsCode` |  | |  |  |  |  |
+| `FldLogsSrceStorLocID` |  | |  |  |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |  |  |
+| `FldLogsDestStorLocID` |  | |  |  |  |  |
+| `FldLogsDestPlnt` |  | |  |  |  |  |
+| `FldLogsDelivDueDate` |  | |  |  |  |  |
+| `FldLogsGrossVolume` |  | |  |  |  |  |
+| `FldLogsGrossVolumeUnit` |  | |  |  |  |  |
+| `ProductGrossWeight` |  | |  |  |  |  |
+| `ProductWeightUnit` |  | |  |  |  |  |
+| `QuantityInBaseUnit` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `FldLogsVoyAssgmtStatusText` |  | |  |  |  |  |
+| `FldLogsShptItemCurrentPlant` |  | |  |  |  |  |
+| `FldLogsShptItemCurShipgPoint` |  | |  |  |  |  |
+| `FldLogsShptItemActualWeight` |  | |  |  |  |  |
+| `FldLogsShptItemActlWeightUnit` |  | |  |  |  |  |
+| `FieldLogisticsKitIdentifier` |  | |  |  |  |  |
+| `_ShptCtnUnit` | | ✓ | | | | |
 
 ## Source Code
 

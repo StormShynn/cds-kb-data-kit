@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialLotSizingProcedure` | ✓ | |  | `disls` |
-| `LotSizingProcedureType` |  | |  | `cast(proc.losvf as vdm_losvf preserving type)` |
-| `LotSizeType` |  | |  | `loskz` |
-| `LotSizePeriodSchedulingType` |  | |  | `terbv` |
-| `LastLotIsPlannedExactly` |  | |  | `lastl` |
-| `UnderDeliveryTolIsChecked` |  | |  | `untkz` |
-| `_Text` | | ✓ | | |
-| `_LotSizingProcedureType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialLotSizingProcedure` | ✓ | |  | `disls` |  |  |
+| `LotSizingProcedureType` |  | |  | `cast(proc.losvf as vdm_losvf preserving type)` |  |  |
+| `LotSizeType` |  | |  | `loskz` |  |  |
+| `LotSizePeriodSchedulingType` |  | |  | `terbv` |  |  |
+| `LastLotIsPlannedExactly` |  | |  | `lastl` |  |  |
+| `UnderDeliveryTolIsChecked` |  | |  | `untkz` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_LotSizingProcedureType` | | ✓ | | | | |
 
 ## Associations
 

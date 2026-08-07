@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShippingPoint` | ✓ | |  | `vstel` |
-| `LoadingPoint` | ✓ | |  | `lstel` |
-| `_Text` | | ✓ | | |
-| `_ShippingPoint` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShippingPoint` | ✓ | |  | `vstel` |  |  |
+| `LoadingPoint` | ✓ | |  | `lstel` |  |  |
+| `_Text` | | ✓ | | | | |
+| `_ShippingPoint` | | ✓ | | | | |
 
 ## Associations
 

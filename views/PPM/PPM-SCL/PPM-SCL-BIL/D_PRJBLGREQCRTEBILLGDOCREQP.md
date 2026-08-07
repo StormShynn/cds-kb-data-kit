@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Action` |  | |  | `string` |
-| `OnAccountItemsAreIncluded` |  | |  | `boolean` |
-| `ProjBillgAdhcBillgPlnItmIsCrtd` |  | |  | `boolean` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Action` |  | |  | `string` |  |  |
+| `OnAccountItemsAreIncluded` |  | |  | `boolean` |  |  |
+| `ProjBillgAdhcBillgPlnItmIsCrtd` |  | |  | `boolean` |  |  |
 
 ## Source Code
 

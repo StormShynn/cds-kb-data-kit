@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TaxCalculationProcedure` | ✓ | |  | `kalsm` |
-| `TaxCode` | ✓ | |  | `cast(mwskz as fis_mwskz preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `TaxCodeName` |  | |  | `cast(text1 as fis_mwskz_name preserving type)` |
-| `_Language` | | ✓ | | |
-| `_TaxCalculationProcedure` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxCalculationProcedure` | ✓ | |  | `kalsm` |  |  |
+| `TaxCode` | ✓ | |  | `cast(mwskz as fis_mwskz preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `TaxCodeName` |  | |  | `cast(text1 as fis_mwskz_name preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TaxCalculationProcedure` | | ✓ | | | | |
 
 ## Associations
 

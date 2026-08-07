@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionOrder` |  | |  | `aufnr` |
-| `Quantity` |  | |  | `vemng` |
-| `UnitOfMeasure` |  | |  | `vemeh` |
-| `StorageLocation` |  | |  | `lgort_d` |
-| `Batch` |  | |  | `charg_d` |
-| `PackingInstructionNumber` |  | |  | `pl_pobjid` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionOrder` |  | |  | `aufnr` |  |  |
+| `Quantity` |  | |  | `vemng` |  |  |
+| `UnitOfMeasure` |  | |  | `vemeh` |  |  |
+| `StorageLocation` |  | |  | `lgort_d` |  |  |
+| `Batch` |  | |  | `charg_d` |  |  |
+| `PackingInstructionNumber` |  | |  | `pl_pobjid` |  |  |
 
 ## Source Code
 

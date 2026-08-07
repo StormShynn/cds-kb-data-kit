@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `ImpliedVolatilityIdentifier` | ✓ | |  | `vname` |
-| `TextDescription` |  | |  | `lbez` |
-| `_Language` | | ✓ | | |
-| `_ImpliedVolatilityIdentifier` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ImpliedVolatilityIdentifier` | ✓ | |  | `vname` |  |  |
+| `TextDescription` |  | |  | `lbez` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_ImpliedVolatilityIdentifier` | | ✓ | | | | |
 
 ## Associations
 

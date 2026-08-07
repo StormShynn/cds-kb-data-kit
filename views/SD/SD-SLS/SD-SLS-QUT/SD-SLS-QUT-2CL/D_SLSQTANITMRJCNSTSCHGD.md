@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
-| `SalesQuotationType` |  | |  | `auart_unv` |
-| `SalesOrganization` |  | |  | `vkorg` |
-| `DistributionChannel` |  | |  | `vtweg` |
-| `OrganizationDivision` |  | |  | `spart` |
-| `SoldToParty` |  | |  | `kunnr` |
-| `SalesQuotationItemCategory` |  | |  | `pstyv` |
-| `Product` |  | |  | `matnr` |
-| `SDDocumentRejectionStatus` |  | |  | `absta_vb` |
-| `PreviousSDDocRejectionStatus` |  | |  | `absta_vb` |
-| `SalesDocumentRjcnReason` |  | |  | `abgru_va` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |  |  |
+| `SalesQuotationType` |  | |  | `auart_unv` |  |  |
+| `SalesOrganization` |  | |  | `vkorg` |  |  |
+| `DistributionChannel` |  | |  | `vtweg` |  |  |
+| `OrganizationDivision` |  | |  | `spart` |  |  |
+| `SoldToParty` |  | |  | `kunnr` |  |  |
+| `SalesQuotationItemCategory` |  | |  | `pstyv` |  |  |
+| `Product` |  | |  | `matnr` |  |  |
+| `SDDocumentRejectionStatus` |  | |  | `absta_vb` |  |  |
+| `PreviousSDDocRejectionStatus` |  | |  | `absta_vb` |  |  |
+| `SalesDocumentRjcnReason` |  | |  | `abgru_va` |  |  |
 
 ## Source Code
 

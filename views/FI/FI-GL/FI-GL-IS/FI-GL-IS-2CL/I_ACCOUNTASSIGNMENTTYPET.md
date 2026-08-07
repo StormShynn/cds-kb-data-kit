@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `AccountAssignmentType` | ✓ | |  | `cast(obart as j_obart preserving type )` |
-| `AccountAssignmentTypeName` |  | |  | `cast(txt20 as fis_accasty_txt20 preserving type )` |
-| `AccountAssignmentTypeDesc` |  | |  | `cast (txt60 as fis_accasty_txt60 preserving type )` |
-| `AcctAsgtTypeLanguageDependent` |  | |  | `cast(obart_ld as fis_j_obart3 preserving type )` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `AccountAssignmentType` | ✓ | |  | `cast(obart as j_obart preserving type )` |  |  |
+| `AccountAssignmentTypeName` |  | |  | `cast(txt20 as fis_accasty_txt20 preserving type )` |  |  |
+| `AccountAssignmentTypeDesc` |  | |  | `cast (txt60 as fis_accasty_txt60 preserving type )` |  |  |
+| `AcctAsgtTypeLanguageDependent` |  | |  | `cast(obart_ld as fis_j_obart3 preserving type )` |  |  |
 
 ## Source Code
 

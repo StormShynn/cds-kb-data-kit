@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |
-| `BPMinimumReserve` | ✓ | |  | `cast ( dd07t.domvalue_l as bnk_min_rsv )` |
-| `BPMinimumReserveDescription` |  | |  | `ddtext` |
-| `_BPMinimumReserve` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `BPMinimumReserve` | ✓ | |  | `cast ( dd07t.domvalue_l as bnk_min_rsv )` |  |  |
+| `BPMinimumReserveDescription` |  | |  | `ddtext` |  |  |
+| `_BPMinimumReserve` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

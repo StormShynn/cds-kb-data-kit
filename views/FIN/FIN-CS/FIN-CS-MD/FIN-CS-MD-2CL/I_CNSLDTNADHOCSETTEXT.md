@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_AdhocSetT` | `langu` |
-| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(_AdhocSetT.itclg as fincs_conschartofaccounts preserving type )` |
-| `CnsldtnAdhocSet` |  | |  | `}] key _AdhocSetT.adhocset` |
-| `CnsldtnAdhocSetText` |  | | `_AdhocSetT` | `adhocsettext` |
-| `CnsldtnAdhocSetLongText` |  | | `_AdhocSetT` | `adhocsetlongtext` |
-| `_Language` | | ✓ | | |
-| `_CnsldtnChartOfAccounts` | | ✓ | | |
-| `_CnsldtnAdhocSet` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_AdhocSetT` | `langu` |  |  |
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(_AdhocSetT.itclg as fincs_conschartofaccounts preserving type )` |  |  |
+| `CnsldtnAdhocSet` | ✓ | | `_AdhocSetT` | `adhocset` |  |  |
+| `CnsldtnAdhocSetText` |  | | `_AdhocSetT` | `adhocsettext` |  |  |
+| `CnsldtnAdhocSetLongText` |  | | `_AdhocSetT` | `adhocsetlongtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | | | |
+| `_CnsldtnAdhocSet` | | ✓ | | | | |
 
 ## Associations
 

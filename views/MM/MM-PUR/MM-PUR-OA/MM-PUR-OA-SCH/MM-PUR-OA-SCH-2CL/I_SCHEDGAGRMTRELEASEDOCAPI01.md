@@ -29,32 +29,32 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SchedulingAgreement` | ✓ | |  |  |
-| `SchedulingAgreementItem` | ✓ | |  |  |
-| `SchedulingAgreementReleaseType` | ✓ | |  |  |
-| `ReleaseCode` | ✓ | |  |  |
-| `SchedulingAgreementRelease` |  | |  |  |
-| `SchedgAgreementItemRelText` |  | |  |  |
-| `SchedgAgreementItemRelStatus` |  | |  |  |
-| `SchedgAgreementItemRelStsText` |  | |  |  |
-| `SchedgAgrmtReleaseCreationDate` |  | |  |  |
-| `SchedgAgrmtReleaseCreationTime` |  | |  |  |
-| `SchedgAgreementItemNextRelDate` |  | |  |  |
-| `ProductionGoAheadPeriodEndDate` |  | |  |  |
-| `MaterialGoAheadPeriodEndDate` |  | |  |  |
-| `LastGoodsReceiptQuantity` |  | |  |  |
-| `LastGoodsReceiptDate` |  | |  |  |
-| `SchedgAgrmtRelTransmissionDate` |  | |  |  |
-| `SchedgAgrmtRelTransmissionTime` |  | |  |  |
-| `OrderQuantityUnit` |  | |  |  |
-| `IsSchedgAgreementItemReld` |  | |  |  |
-| `InboundDeliveryNote` |  | |  |  |
-| `SchedgAgrmtCumltvRcvdQty` |  | |  |  |
-| `_SchedgAgrmtHdrAPI01` | | ✓ | | |
-| `_SchedgAgrmtItmAPI01` | | ✓ | | |
-| `_SchedgAgrmtRelDocScLiAPI01` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |  |  |
+| `SchedulingAgreementReleaseType` | ✓ | |  |  |  |  |
+| `ReleaseCode` | ✓ | |  |  |  |  |
+| `SchedulingAgreementRelease` |  | |  |  |  |  |
+| `SchedgAgreementItemRelText` |  | |  |  |  |  |
+| `SchedgAgreementItemRelStatus` |  | |  |  |  |  |
+| `SchedgAgreementItemRelStsText` |  | |  |  |  |  |
+| `SchedgAgrmtReleaseCreationDate` |  | |  |  |  |  |
+| `SchedgAgrmtReleaseCreationTime` |  | |  |  |  |  |
+| `SchedgAgreementItemNextRelDate` |  | |  |  |  |  |
+| `ProductionGoAheadPeriodEndDate` |  | |  |  |  |  |
+| `MaterialGoAheadPeriodEndDate` |  | |  |  |  |  |
+| `LastGoodsReceiptQuantity` |  | |  |  |  |  |
+| `LastGoodsReceiptDate` |  | |  |  |  |  |
+| `SchedgAgrmtRelTransmissionDate` |  | |  |  |  |  |
+| `SchedgAgrmtRelTransmissionTime` |  | |  |  |  |  |
+| `OrderQuantityUnit` |  | |  |  |  |  |
+| `IsSchedgAgreementItemReld` |  | |  |  |  |  |
+| `InboundDeliveryNote` |  | |  |  |  |  |
+| `SchedgAgrmtCumltvRcvdQty` |  | |  |  |  |  |
+| `_SchedgAgrmtHdrAPI01` | | ✓ | | | | |
+| `_SchedgAgrmtItmAPI01` | | ✓ | | | | |
+| `_SchedgAgrmtRelDocScLiAPI01` | | ✓ | | | | |
 
 ## Associations
 

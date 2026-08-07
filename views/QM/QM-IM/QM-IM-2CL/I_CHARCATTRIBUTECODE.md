@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CharacteristicAttributeCodeGrp` | ✓ | |  | `codegruppe` |
-| `CharacteristicAttributeCode` | ✓ | |  | `code` |
-| `CharcAttributeCodeStatus` |  | |  | `inaktiv` |
-| `CharcAttribCodeCreatedBy` |  | |  | `ersteller` |
-| `CharcAttribCodeCreatedOn` |  | |  | `e_datum` |
-| `CharcAttribCodeLastChgdBy` |  | |  | `aenderer` |
-| `CharcAttribCodeLastChangedOn` |  | |  | `a_datum` |
-| `_CharcAttributeCodeGrp` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharacteristicAttributeCodeGrp` | ✓ | |  | `codegruppe` |  |  |
+| `CharacteristicAttributeCode` | ✓ | |  | `code` |  |  |
+| `CharcAttributeCodeStatus` |  | |  | `inaktiv` |  |  |
+| `CharcAttribCodeCreatedBy` |  | |  | `ersteller` |  |  |
+| `CharcAttribCodeCreatedOn` |  | |  | `e_datum` |  |  |
+| `CharcAttribCodeLastChgdBy` |  | |  | `aenderer` |  |  |
+| `CharcAttribCodeLastChangedOn` |  | |  | `a_datum` |  |  |
+| `_CharcAttributeCodeGrp` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

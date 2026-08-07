@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `NFVehicleType` | ✓ | |  | `cast( tpveic as logbr_vehicletype preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NFVehicleType` | ✓ | |  | `cast( tpveic as logbr_vehicletype preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

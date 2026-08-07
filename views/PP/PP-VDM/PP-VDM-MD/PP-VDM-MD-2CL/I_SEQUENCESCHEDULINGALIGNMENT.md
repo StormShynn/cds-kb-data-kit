@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SequenceSchedulingAlignment` | ✓ | |  | `auschl` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SequenceSchedulingAlignment` | ✓ | |  | `auschl` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

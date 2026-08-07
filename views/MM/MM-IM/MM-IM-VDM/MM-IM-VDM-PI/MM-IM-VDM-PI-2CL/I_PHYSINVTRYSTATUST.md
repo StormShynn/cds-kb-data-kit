@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `PhysicalInventoryItemIsCounted` | ✓ | |  | `xzael` |
-| `PhysInvtryDifferenceIsPosted` | ✓ | |  | `xdiff` |
-| `PhysInvtryItemIsRecounted` | ✓ | |  | `xnzae` |
-| `PhysInvtryItemIsDeleted` | ✓ | |  | `xloek` |
-| `PhysicalInventoryStatusText` |  | |  | `cast(stext as pi_item_status preserving type)` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PhysicalInventoryItemIsCounted` | ✓ | |  | `xzael` |  |  |
+| `PhysInvtryDifferenceIsPosted` | ✓ | |  | `xdiff` |  |  |
+| `PhysInvtryItemIsRecounted` | ✓ | |  | `xnzae` |  |  |
+| `PhysInvtryItemIsDeleted` | ✓ | |  | `xloek` |  |  |
+| `PhysicalInventoryStatusText` |  | |  | `cast(stext as pi_item_status preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

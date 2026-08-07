@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductAllocationObjectUUID` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `ProdAllocObjectDescription` |  | |  |  |
-| `_ProdAllocationObjectTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductAllocationObjectUUID` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `ProdAllocObjectDescription` |  | |  |  |  |  |
+| `_ProdAllocationObjectTP` | | ✓ | | | | |
 
 ## Source Code
 

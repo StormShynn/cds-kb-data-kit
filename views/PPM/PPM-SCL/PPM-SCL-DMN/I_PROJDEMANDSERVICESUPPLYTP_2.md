@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProjectDemandServiceSupplyUUID` | ✓ | |  |  |
-| `ProjectDemandServiceUUID` |  | |  |  |
-| `ProjectDemandUUID` |  | |  |  |
-| `PurchaseRequisition` |  | |  |  |
-| `PurchaseRequisitionItem` |  | |  |  |
-| `_Service` | | ✓ | | |
-| `_Root` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectDemandServiceSupplyUUID` | ✓ | |  |  |  |  |
+| `ProjectDemandServiceUUID` |  | |  |  |  |  |
+| `ProjectDemandUUID` |  | |  |  |  |  |
+| `PurchaseRequisition` |  | |  |  |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |  |  |
+| `_Service` | | ✓ | | | | |
+| `_Root` | | ✓ | | | | |
 
 ## Source Code
 

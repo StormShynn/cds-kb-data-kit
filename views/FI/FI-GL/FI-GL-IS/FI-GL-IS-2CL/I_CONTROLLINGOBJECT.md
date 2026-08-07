@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingObject` | ✓ | |  | `objnr` |
-| `OrderID` |  | |  | `aufnr` |
-| `BusinessProcess` |  | |  | `prznr` |
-| `CostCtrActivityType` |  | |  | `lstar` |
-| `SalesDocument` |  | |  | `vbeln` |
-| `SalesDocumentItem` |  | |  | `posnr` |
-| `ControllingArea` |  | |  | `cast ( COALESCE ( COALESCE( COALESCE(onrks.kokrs, onrbp.kokrs ), onrkl.kokrs), '') as fis_kokrs )` |
-| `CostCenter` |  | |  | `cast( COALESCE(onrks.kostl, onrkl.kostl) as fis_kostl )` |
-| `WBSElementInternalID` |  | |  | `cast( onrpr.pspnr as fis_wbsint_no_conv preserving type )` |
-| `ProjectInternalID` |  | |  | `cast( onrpd.pspnr as fis_projectint_no_conv preserving type)` |
-| `ControllingObjectType` |  | |  | `cast ( SUBSTRING( onr00.objnr, 1, 2) as j_obart)` |
-| `_ControllingArea` | | ✓ | | |
-| `_CostCenter` | | ✓ | | |
-| `_CostCtrActivityType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingObject` | ✓ | |  | `objnr` |  |  |
+| `OrderID` |  | |  | `aufnr` |  |  |
+| `BusinessProcess` |  | |  | `prznr` |  |  |
+| `CostCtrActivityType` |  | |  | `lstar` |  |  |
+| `SalesDocument` |  | |  | `vbeln` |  |  |
+| `SalesDocumentItem` |  | |  | `posnr` |  |  |
+| `ControllingArea` |  | |  | `cast ( COALESCE ( COALESCE( COALESCE(onrks.kokrs, onrbp.kokrs ), onrkl.kokrs), '') as fis_kokrs )` |  |  |
+| `CostCenter` |  | |  | `cast( COALESCE(onrks.kostl, onrkl.kostl) as fis_kostl )` |  |  |
+| `WBSElementInternalID` |  | |  | `cast( onrpr.pspnr as fis_wbsint_no_conv preserving type )` |  |  |
+| `ProjectInternalID` |  | |  | `cast( onrpd.pspnr as fis_projectint_no_conv preserving type)` |  |  |
+| `ControllingObjectType` |  | |  | `cast ( SUBSTRING( onr00.objnr, 1, 2) as j_obart)` |  |  |
+| `_ControllingArea` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
 
 ## Associations
 

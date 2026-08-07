@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesOffice` | ✓ | |  | `vkbur` |
-| `SalesGroup` | ✓ | |  | `vkgrp` |
-| `_SalesOffice` | | ✓ | | |
-| `_SalesGroup` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOffice` | ✓ | |  | `vkbur` |  |  |
+| `SalesGroup` | ✓ | |  | `vkgrp` |  |  |
+| `_SalesOffice` | | ✓ | | | | |
+| `_SalesGroup` | | ✓ | | | | |
 
 ## Associations
 

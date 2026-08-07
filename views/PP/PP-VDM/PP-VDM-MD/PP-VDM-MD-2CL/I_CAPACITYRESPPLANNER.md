@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CapacityResponsiblePlanner` | ✓ | |  | `cast(plnr.planr as kapplaner preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityResponsiblePlanner` | ✓ | |  | `cast(plnr.planr as kapplaner preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

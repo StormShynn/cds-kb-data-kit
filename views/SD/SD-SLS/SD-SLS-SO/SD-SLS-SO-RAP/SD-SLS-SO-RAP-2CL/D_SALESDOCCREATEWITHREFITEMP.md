@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReferenceSDDocumentItem` |  | |  | `vgpos` |
-| `RequestedQuantity` |  | |  | `reqd_qty` |
-| `RequestedQuantityUnit` |  | |  | `reqd_qty_unit` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReferenceSDDocumentItem` |  | |  | `vgpos` |  |  |
+| `RequestedQuantity` |  | |  | `reqd_qty` |  |  |
+| `RequestedQuantityUnit` |  | |  | `reqd_qty_unit` |  |  |
 
 ## Source Code
 

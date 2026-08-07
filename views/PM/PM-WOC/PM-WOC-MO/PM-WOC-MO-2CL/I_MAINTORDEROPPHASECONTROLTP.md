@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaintenanceOrder` | ✓ | |  |  |
-| `MaintenanceOrderOperation` | ✓ | |  |  |
-| `MaintenanceOrderSubOperation` | ✓ | |  |  |
-| `MaintenancePhaseControl` | ✓ | |  |  |
-| `MaintenancePhaseControlName` |  | |  |  |
-| `MaintenancePhaseControlText` |  | |  |  |
-| `MaintPhseCtrlIsSetAutomly` |  | |  |  |
-| `MaintPhaseControlAuthorityCode` |  | |  |  |
-| `MaintProcgPhseCtrlActvtnCode` |  | |  |  |
-| `EAMProcessPhaseCode` |  | |  |  |
-| `EAMProcessSubPhaseCode` |  | |  |  |
-| `MaintObjPhseCtrlStatusIsActive` |  | |  |  |
-| `_MaintenanceOrder` | | ✓ | | |
-| `_MaintenanceOrderOperation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |  |  |
+| `MaintenanceOrderOperation` | ✓ | |  |  |  |  |
+| `MaintenanceOrderSubOperation` | ✓ | |  |  |  |  |
+| `MaintenancePhaseControl` | ✓ | |  |  |  |  |
+| `MaintenancePhaseControlName` |  | |  |  |  |  |
+| `MaintenancePhaseControlText` |  | |  |  |  |  |
+| `MaintPhseCtrlIsSetAutomly` |  | |  |  |  |  |
+| `MaintPhaseControlAuthorityCode` |  | |  |  |  |  |
+| `MaintProcgPhseCtrlActvtnCode` |  | |  |  |  |  |
+| `EAMProcessPhaseCode` |  | |  |  |  |  |
+| `EAMProcessSubPhaseCode` |  | |  |  |  |  |
+| `MaintObjPhseCtrlStatusIsActive` |  | |  |  |  |  |
+| `_MaintenanceOrder` | | ✓ | | | | |
+| `_MaintenanceOrderOperation` | | ✓ | | | | |
 
 ## Source Code
 

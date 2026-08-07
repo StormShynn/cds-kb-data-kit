@@ -34,11 +34,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CarrierId` | ✓ | |  | `carrier_id` |
-| `Name` |  | |  | `name` |
-| `CurrencyCode` |  | |  | `currency_code` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CarrierId` | ✓ | |  | `carrier_id` |  |  |
+| `Name` |  | |  | `name` |  |  |
+| `CurrencyCode` |  | |  | `currency_code` |  |  |
 
 ## Source Code
 

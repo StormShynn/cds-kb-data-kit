@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinSGLErrorItemUUID` | ✓ | |  | `item_id` |
-| `FinSGLErrorSequenceNo` | ✓ | |  | `seq_no` |
-| `FinSGLErrorMessageType` |  | |  | `type` |
-| `FinSGLErrorMessageID` |  | |  | `id` |
-| `FinSGLErrorMessageNo` |  | |  | `message_no` |
-| `FinSGLErrMsgVarbl1Txt` |  | |  | `message_v1` |
-| `FinSGLErrMsgVarbl2Txt` |  | |  | `message_v2` |
-| `FinSGLErrMsgVarbl3Txt` |  | |  | `message_v3` |
-| `FinSGLErrMsgVarbl4Txt` |  | |  | `message_v4` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinSGLErrorItemUUID` | ✓ | |  | `item_id` | `RAW(16)` | ID of Error Correction Item |
+| `FinSGLErrorSequenceNo` | ✓ | |  | `seq_no` | `NUMC(6)` | Sequence Number |
+| `FinSGLErrorMessageType` |  | |  | `type` | `CHAR(1)` | Message type: S Success, E Error, W Warning, I Info, A Abort |
+| `FinSGLErrorMessageID` |  | |  | `id` | `CHAR(20)` | Message Class |
+| `FinSGLErrorMessageNo` |  | |  | `message_no` | `NUMC(3)` | Message Number |
+| `FinSGLErrMsgVarbl1Txt` |  | |  | `message_v1` | `CHAR(50)` | Message Variable |
+| `FinSGLErrMsgVarbl2Txt` |  | |  | `message_v2` | `CHAR(50)` | Message Variable |
+| `FinSGLErrMsgVarbl3Txt` |  | |  | `message_v3` | `CHAR(50)` | Message Variable |
+| `FinSGLErrMsgVarbl4Txt` |  | |  | `message_v4` | `CHAR(50)` | Message Variable |
 
 ## Source Code
 

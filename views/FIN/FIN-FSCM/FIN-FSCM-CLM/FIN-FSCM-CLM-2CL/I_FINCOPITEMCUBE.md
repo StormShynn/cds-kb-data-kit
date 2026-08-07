@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OriginSystem` | ✓ | |  |  |
-| `OriginApplication` | ✓ | |  |  |
-| `OriginDocument` | ✓ | |  |  |
-| `OriginTransaction` | ✓ | |  |  |
-| `OriginTransactionQualifier` | ✓ | |  |  |
-| `CashFlow` | ✓ | |  |  |
-| `ValidFrom` | ✓ | |  |  |
-| `ValidTo` | ✓ | |  |  |
-| `BankAccountInternalID` | ✓ | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CertaintyLevel` |  | |  |  |
-| `LiquidityItem` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `TransactionDate` |  | |  |  |
-| `AmountInTransactionCurrency` |  | |  | `} AmountInTransactionCurrency` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OriginSystem` | ✓ | |  |  |  |  |
+| `OriginApplication` | ✓ | |  |  |  |  |
+| `OriginDocument` | ✓ | |  |  |  |  |
+| `OriginTransaction` | ✓ | |  |  |  |  |
+| `OriginTransactionQualifier` | ✓ | |  |  |  |  |
+| `CashFlow` | ✓ | |  |  |  |  |
+| `ValidFrom` | ✓ | |  |  |  |  |
+| `ValidTo` | ✓ | |  |  |  |  |
+| `BankAccountInternalID` | ✓ | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CertaintyLevel` |  | |  |  |  |  |
+| `LiquidityItem` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `TransactionDate` |  | |  |  |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |  |  |
 
 ## Source Code
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `VarCnfConstraintNetName` | ✓ | |  |  |
-| `VarCnfConstraintName` | ✓ | |  |  |
-| `LocalLastChangeDateTime` |  | |  |  |
-| `_ConstraintNet` | | ✓ | | |
-| `_HistoricalConstraint` | | ✓ | | |
-| `_SourceCode` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VarCnfConstraintNetName` | ✓ | |  |  |  |  |
+| `VarCnfConstraintName` | ✓ | |  |  |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |  |  |
+| `_ConstraintNet` | | ✓ | | | | |
+| `_HistoricalConstraint` | | ✓ | | | | |
+| `_SourceCode` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

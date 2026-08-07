@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AddressNonDeliverableReason` | ✓ | |  | `undeliver` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AddressNonDeliverableReason` | ✓ | |  | `undeliver` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationRateUUID` | ✓ | |  | `cast(db_key as /scmtms/transpratetable_uuid preserving type)` |
-| `TransportationRate` |  | |  | `rate_id` |
-| `ChangedDateTime` |  | |  | `cast(changed_on as /scmtms/vdm_tm_tstmp_cht preserving type)` |
-| `CreationDateTime` |  | |  | `cast(created_on as log_created_on preserving type)` |
-| `LastChangedByUser` |  | |  | `cast(changed_by as vdm_lastchangedbyuserid preserving type)` |
-| `CreatedByUser` |  | |  | `cast(created_by as vdm_createdbyuserid preserving type)` |
-| `TransportationRateValueType` |  | |  | `cast(val_indicator as /scmtms/vdm_rt_value_type preserving type)` |
-| `TranspChargeType` |  | |  | `tcet` |
-| `TranspCalculationSheetUUID` |  | |  | `cast(owner_key as /scmtms/transpcalcsheet_uuid preserving type)` |
-| `TranspChargeUsage` |  | |  | `tcusagecd085` |
-| `TranspRateTableTimeZone` |  | |  | `cast(timezone as /scmtms/vdm_rt_tzone preserving type)` |
-| `TransportationRateType` |  | |  | `rate_tab_type` |
-| `TranspRateSignType` |  | | `_TranspChargeType` | `TranspRateSignType` |
-| `_TranspCalcSheetItem` | | ✓ | | |
-| `_TranspChargeType` | | ✓ | | |
-| `_TranspRateTableCreatedBy` | | ✓ | | |
-| `_TranspRateTableChangedBy` | | ✓ | | |
-| `_TranspRateValueType` | | ✓ | | |
-| `_TranspRateSignType` | | ✓ | | |
-| `_TranspRateTableOrganization` | | ✓ | | |
-| `_TranspRateScaleRef` | | ✓ | | |
-| `_TranspRateValidity` | | ✓ | | |
-| `_TranspRateTableText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationRateUUID` | ✓ | |  | `cast(db_key as /scmtms/transpratetable_uuid preserving type)` |  |  |
+| `TransportationRate` |  | |  | `rate_id` |  |  |
+| `ChangedDateTime` |  | |  | `cast(changed_on as /scmtms/vdm_tm_tstmp_cht preserving type)` |  |  |
+| `CreationDateTime` |  | |  | `cast(created_on as log_created_on preserving type)` |  |  |
+| `LastChangedByUser` |  | |  | `cast(changed_by as vdm_lastchangedbyuserid preserving type)` |  |  |
+| `CreatedByUser` |  | |  | `cast(created_by as vdm_createdbyuserid preserving type)` |  |  |
+| `TransportationRateValueType` |  | |  | `cast(val_indicator as /scmtms/vdm_rt_value_type preserving type)` |  |  |
+| `TranspChargeType` |  | |  | `tcet` |  |  |
+| `TranspCalculationSheetUUID` |  | |  | `cast(owner_key as /scmtms/transpcalcsheet_uuid preserving type)` |  |  |
+| `TranspChargeUsage` |  | |  | `tcusagecd085` |  |  |
+| `TranspRateTableTimeZone` |  | |  | `cast(timezone as /scmtms/vdm_rt_tzone preserving type)` |  |  |
+| `TransportationRateType` |  | |  | `rate_tab_type` |  |  |
+| `TranspRateSignType` |  | | `_TranspChargeType` | `TranspRateSignType` |  |  |
+| `_TranspCalcSheetItem` | | ✓ | | | | |
+| `_TranspChargeType` | | ✓ | | | | |
+| `_TranspRateTableCreatedBy` | | ✓ | | | | |
+| `_TranspRateTableChangedBy` | | ✓ | | | | |
+| `_TranspRateValueType` | | ✓ | | | | |
+| `_TranspRateSignType` | | ✓ | | | | |
+| `_TranspRateTableOrganization` | | ✓ | | | | |
+| `_TranspRateScaleRef` | | ✓ | | | | |
+| `_TranspRateValidity` | | ✓ | | | | |
+| `_TranspRateTableText` | | ✓ | | | | |
 
 ## Associations
 

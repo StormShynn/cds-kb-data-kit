@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `REValuationConditionGroup` | ✓ | |  | `cdgroup` |
-| `REValuationConditionGroupName` |  | |  | `xcdgroup` |
-| `_REValuationConditionGrp` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `REValuationConditionGroup` | ✓ | |  | `cdgroup` |  |  |
+| `REValuationConditionGroupName` |  | |  | `xcdgroup` |  |  |
+| `_REValuationConditionGrp` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

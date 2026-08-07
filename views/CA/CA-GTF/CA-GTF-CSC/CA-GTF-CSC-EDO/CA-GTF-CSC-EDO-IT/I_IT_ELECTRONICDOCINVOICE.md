@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ElectronicDocUUID` | ✓ | |  |  |
-| `IT_EDocProgressiveNumber` |  | |  |  |
-| `IT_ElectronicDocRequestID` |  | |  |  |
-| `IT_ElectronicDocPartnerStatus` |  | |  |  |
-| `IT_ElectronicDocSenderCtryCode` |  | |  |  |
-| `IT_ElectronicDocSenderTaxID` |  | |  |  |
-| `ElectronicDocBPType` |  | |  |  |
-| `ElectronicDocBPTypeText` |  | |  |  |
-| `IT_ElectronicDocCustEmailAddr` |  | |  |  |
-| `IT_ElectronicDocODN` |  | |  |  |
-| `CAOfficialDocumentNumber` |  | |  |  |
-| `ElectronicDocProcess` |  | |  |  |
-| `ElectronicDocCompanyCode` |  | |  |  |
-| `_EDCDocPartnerStatText` | | ✓ | | |
-| `_ElectronicDocProcessText` | | ✓ | | |
-| `_CountryText` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |  |  |
+| `IT_EDocProgressiveNumber` |  | |  |  |  |  |
+| `IT_ElectronicDocRequestID` |  | |  |  |  |  |
+| `IT_ElectronicDocPartnerStatus` |  | |  |  |  |  |
+| `IT_ElectronicDocSenderCtryCode` |  | |  |  |  |  |
+| `IT_ElectronicDocSenderTaxID` |  | |  |  |  |  |
+| `ElectronicDocBPType` |  | |  |  |  |  |
+| `ElectronicDocBPTypeText` |  | |  |  |  |  |
+| `IT_ElectronicDocCustEmailAddr` |  | |  |  |  |  |
+| `IT_ElectronicDocODN` |  | |  |  |  |  |
+| `CAOfficialDocumentNumber` |  | |  |  |  |  |
+| `ElectronicDocProcess` |  | |  |  |  |  |
+| `ElectronicDocCompanyCode` |  | |  |  |  |  |
+| `_EDCDocPartnerStatText` | | ✓ | | | | |
+| `_ElectronicDocProcessText` | | ✓ | | | | |
+| `_CountryText` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Source Code
 

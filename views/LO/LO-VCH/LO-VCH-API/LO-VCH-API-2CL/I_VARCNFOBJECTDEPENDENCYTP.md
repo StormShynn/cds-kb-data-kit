@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ObjectDependencyName` | ✓ | |  |  |
-| `ObjectDependencyIsLocal` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `_HistoricalObjectDependency` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_SourceCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectDependencyName` | ✓ | |  |  |  |  |
+| `ObjectDependencyIsLocal` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `_HistoricalObjectDependency` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_SourceCode` | | ✓ | | | | |
 
 ## Source Code
 

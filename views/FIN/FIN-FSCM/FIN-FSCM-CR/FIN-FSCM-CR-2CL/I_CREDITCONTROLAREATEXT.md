@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditControlArea` | ✓ | |  | `cast(kkber as farp_kkber preserving type)` |
-| `Language` | ✓ | |  | `spras` |
-| `CreditControlAreaName` |  | |  | `kkbtx` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditControlArea` | ✓ | |  | `cast(kkber as farp_kkber preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CreditControlAreaName` |  | |  | `kkbtx` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

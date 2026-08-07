@@ -30,30 +30,30 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `IHBObjectUUID` | ✓ | |  |  |
-| `IHBObjectReferenceUUID` |  | |  |  |
-| `IHBObjectType` |  | |  |  |
-| `IHBObjectCategory` |  | |  |  |
-| `IHBObjectKeyUUID` |  | |  |  |
-| `IHBReleaseStatus` |  | |  |  |
-| `IHBObjectApprovalActivity` |  | |  |  |
-| `IHBObjectDeadlineDateTime` |  | |  |  |
-| `IHBBankArea` |  | |  |  |
-| `IHBObjectLevel` |  | |  |  |
-| `IHBObjectReleaseDateTime` |  | |  |  |
-| `IHBObjectReleasedByUser` |  | |  |  |
-| `InhouseBankGroupID` |  | |  |  |
-| `IHBObjectTotalChangedDateTime` |  | |  |  |
-| `IHBObjectCreatedDateTime` |  | |  |  |
-| `IHBObjectCreatedByUser` |  | |  |  |
-| `IHBObjectChangedDateTime` |  | |  |  |
-| `IHBObjectChangedByUser` |  | |  |  |
-| `_IHBAccount` | | ✓ | | |
-| `_IHBGroupType` | | ✓ | | |
-| `_IHBGroupAssignmentTP` | | ✓ | | |
-| `_IHBConditionTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IHBObjectUUID` | ✓ | |  |  |  |  |
+| `IHBObjectReferenceUUID` |  | |  |  |  |  |
+| `IHBObjectType` |  | |  |  |  |  |
+| `IHBObjectCategory` |  | |  |  |  |  |
+| `IHBObjectKeyUUID` |  | |  |  |  |  |
+| `IHBReleaseStatus` |  | |  |  |  |  |
+| `IHBObjectApprovalActivity` |  | |  |  |  |  |
+| `IHBObjectDeadlineDateTime` |  | |  |  |  |  |
+| `IHBBankArea` |  | |  |  |  |  |
+| `IHBObjectLevel` |  | |  |  |  |  |
+| `IHBObjectReleaseDateTime` |  | |  |  |  |  |
+| `IHBObjectReleasedByUser` |  | |  |  |  |  |
+| `InhouseBankGroupID` |  | |  |  |  |  |
+| `IHBObjectTotalChangedDateTime` |  | |  |  |  |  |
+| `IHBObjectCreatedDateTime` |  | |  |  |  |  |
+| `IHBObjectCreatedByUser` |  | |  |  |  |  |
+| `IHBObjectChangedDateTime` |  | |  |  |  |  |
+| `IHBObjectChangedByUser` |  | |  |  |  |  |
+| `_IHBAccount` | | ✓ | | | | |
+| `_IHBGroupType` | | ✓ | | | | |
+| `_IHBGroupAssignmentTP` | | ✓ | | | | |
+| `_IHBConditionTP` | | ✓ | | | | |
 
 ## Source Code
 

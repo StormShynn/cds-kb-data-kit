@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `InspPlanOperationInternalID` | ✓ | |  |  |
-| `InspectionSubsetInternalID` | ✓ | |  |  |
-| `InspectionCharacteristic` | ✓ | |  |  |
-| `InspectionCharacteristicStatus` |  | |  |  |
-| `QualityControlChart` |  | |  |  |
-| `InspSampleAcceptanceNumber` |  | |  |  |
-| `InspSampleRejectionNumber` |  | |  |  |
-| `InspSampleValuationRule` |  | |  |  |
-| `InspectionSampleSize` |  | |  |  |
-| `InspCharacteristicSampleUnit` |  | |  |  |
-| `InspSpecSampleQuantityFactor` |  | |  |  |
-| `InspLotDynRuleStage` |  | |  |  |
-| `InspectionSeverity` |  | |  |  |
-| `InspSubsetCharcCreationDate` |  | |  |  |
-| `_InspectionSubset` | | ✓ | | |
-| `_InspectionLot` | | ✓ | | |
-| `_InspectionOperation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |  |  |
+| `InspectionSubsetInternalID` | ✓ | |  |  |  |  |
+| `InspectionCharacteristic` | ✓ | |  |  |  |  |
+| `InspectionCharacteristicStatus` |  | |  |  |  |  |
+| `QualityControlChart` |  | |  |  |  |  |
+| `InspSampleAcceptanceNumber` |  | |  |  |  |  |
+| `InspSampleRejectionNumber` |  | |  |  |  |  |
+| `InspSampleValuationRule` |  | |  |  |  |  |
+| `InspectionSampleSize` |  | |  |  |  |  |
+| `InspCharacteristicSampleUnit` |  | |  |  |  |  |
+| `InspSpecSampleQuantityFactor` |  | |  |  |  |  |
+| `InspLotDynRuleStage` |  | |  |  |  |  |
+| `InspectionSeverity` |  | |  |  |  |  |
+| `InspSubsetCharcCreationDate` |  | |  |  |  |  |
+| `_InspectionSubset` | | ✓ | | | | |
+| `_InspectionLot` | | ✓ | | | | |
+| `_InspectionOperation` | | ✓ | | | | |
 
 ## Source Code
 

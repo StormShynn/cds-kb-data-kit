@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EntProjElmntDeliverableUUID` | ✓ | |  | `entprojelmntdeliverableuuid` |
-| `ProjectElementUUID` |  | |  | `projectelementuuid` |
-| `ProjectUUID` |  | |  | `projectuuid` |
-| `EntProjElmntDeliverableType` |  | |  | `entprojelmntdeliverabletype` |
-| `EntProjElmntDlvbrlQuantity` |  | |  | `entprojelmntdlvbrlquantity` |
-| `EntProjElmntDlvbrlQuantityUnit` |  | |  | `entprojelmntdlvbrlquantityunit` |
-| `EntProjElmntDlvbrlRevnAmount` |  | |  | `entprojelmntdlvbrlrevnamount` |
-| `EntProjElmntDlvbrlRevnCurrency` |  | |  | `entprojelmntdlvbrlrevncurrency` |
-| `CreatedByUser` |  | |  | `created_by` |
-| `CreationDateTime` |  | |  | `created_on` |
-| `LastChangedByUser` |  | |  | `changed_by` |
-| `LastChangeDateTime` |  | |  | `changed_on` |
-| `_EnterpriseProject` | | ✓ | | |
-| `_EnterpriseProjectElement` | | ✓ | | |
-| `_EnPrjElmDlvbrlDistrRevn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntDeliverableUUID` | ✓ | |  | `entprojelmntdeliverableuuid` |  |  |
+| `ProjectElementUUID` |  | |  | `projectelementuuid` |  |  |
+| `ProjectUUID` |  | |  | `projectuuid` |  |  |
+| `EntProjElmntDeliverableType` |  | |  | `entprojelmntdeliverabletype` |  |  |
+| `EntProjElmntDlvbrlQuantity` |  | |  | `entprojelmntdlvbrlquantity` |  |  |
+| `EntProjElmntDlvbrlQuantityUnit` |  | |  | `entprojelmntdlvbrlquantityunit` |  |  |
+| `EntProjElmntDlvbrlRevnAmount` |  | |  | `entprojelmntdlvbrlrevnamount` |  |  |
+| `EntProjElmntDlvbrlRevnCurrency` |  | |  | `entprojelmntdlvbrlrevncurrency` |  |  |
+| `CreatedByUser` |  | |  | `created_by` |  |  |
+| `CreationDateTime` |  | |  | `created_on` |  |  |
+| `LastChangedByUser` |  | |  | `changed_by` |  |  |
+| `LastChangeDateTime` |  | |  | `changed_on` |  |  |
+| `_EnterpriseProject` | | ✓ | | | | |
+| `_EnterpriseProjectElement` | | ✓ | | | | |
+| `_EnPrjElmDlvbrlDistrRevn` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspChargeCalcReslnBase` | ✓ | |  | `cast(resolution_base as /scmtms/vdm_tcm_res_base preserving type)` |
-| `Language` | ✓ | |  | `language` |
-| `TranspChargeCalcReslnBaseDesc` |  | |  | `cast(description as /scmtms/vdm_tcm_res_base_desc preserving type)` |
-| `_Language` | | ✓ | | |
-| `_TranspChargeCalcReslnBase` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChargeCalcReslnBase` | ✓ | |  | `cast(resolution_base as /scmtms/vdm_tcm_res_base preserving type)` |  |  |
+| `Language` | ✓ | |  | `language` |  |  |
+| `TranspChargeCalcReslnBaseDesc` |  | |  | `cast(description as /scmtms/vdm_tcm_res_base_desc preserving type)` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspChargeCalcReslnBase` | | ✓ | | | | |
 
 ## Associations
 

@@ -28,40 +28,40 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OneTimeBPFormOfAddress` |  | |  | `anred` |
-| `Name` |  | |  | `name1_gp` |
-| `OneTimeBusinessPartnerName2` |  | |  | `name2_gp` |
-| `OneTimeBusinessPartnerName3` |  | |  | `name3_gp` |
-| `OneTimeBusinessPartnerName4` |  | |  | `name4_gp` |
-| `BusinessPartnerStreetName` |  | |  | `stras_gp` |
-| `OneTimeBPPostOfficeBox` |  | |  | `pfach` |
-| `PostOfficeBoxPostalCode` |  | |  | `pstl2` |
-| `PostalCode` |  | |  | `pstlz` |
-| `BPIsEqualizationTaxSubject` |  | |  | `acpi_stkza` |
-| `DataMediumExchangeKey` |  | |  | `dtaws` |
-| `DataMediumExchangeIndicator` |  | |  | `dtams` |
-| `LanguageISOCode` |  | |  | `laiso` |
-| `BankCountry` |  | |  | `banks` |
-| `BankAccount` |  | |  | `bankn` |
-| `BankControlKey` |  | |  | `bkont` |
-| `BankNumber` |  | |  | `bankl` |
-| `CityName` |  | |  | `ort01_gp` |
-| `Country` |  | |  | `land1_gp` |
-| `TaxNumber1` |  | |  | `stcd1` |
-| `TaxNumber2` |  | |  | `stcd2` |
-| `TaxNumber3` |  | |  | `stcd3` |
-| `TaxNumber4` |  | |  | `stcd4` |
-| `TaxNumber5` |  | |  | `stcd5` |
-| `IsNaturalPerson` |  | |  | `stkzn` |
-| `Region` |  | |  | `regio` |
-| `VATLiability` |  | |  | `stkzu` |
-| `TaxNumberType` |  | |  | `j_1atoid` |
-| `OneTimeBusinessPartnerEmail` |  | |  | `intad` |
-| `AccountTaxType` |  | |  | `j_1afitp_d` |
-| `BankDetailReference` |  | |  | `bkref` |
-| `_JournalEntryPost` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OneTimeBPFormOfAddress` |  | |  | `anred` |  |  |
+| `Name` |  | |  | `name1_gp` |  |  |
+| `OneTimeBusinessPartnerName2` |  | |  | `name2_gp` |  |  |
+| `OneTimeBusinessPartnerName3` |  | |  | `name3_gp` |  |  |
+| `OneTimeBusinessPartnerName4` |  | |  | `name4_gp` |  |  |
+| `BusinessPartnerStreetName` |  | |  | `stras_gp` |  |  |
+| `OneTimeBPPostOfficeBox` |  | |  | `pfach` |  |  |
+| `PostOfficeBoxPostalCode` |  | |  | `pstl2` |  |  |
+| `PostalCode` |  | |  | `pstlz` |  |  |
+| `BPIsEqualizationTaxSubject` |  | |  | `acpi_stkza` |  |  |
+| `DataMediumExchangeKey` |  | |  | `dtaws` |  |  |
+| `DataMediumExchangeIndicator` |  | |  | `dtams` |  |  |
+| `LanguageISOCode` |  | |  | `laiso` |  |  |
+| `BankCountry` |  | |  | `banks` |  |  |
+| `BankAccount` |  | |  | `bankn` |  |  |
+| `BankControlKey` |  | |  | `bkont` |  |  |
+| `BankNumber` |  | |  | `bankl` |  |  |
+| `CityName` |  | |  | `ort01_gp` |  |  |
+| `Country` |  | |  | `land1_gp` |  |  |
+| `TaxNumber1` |  | |  | `stcd1` |  |  |
+| `TaxNumber2` |  | |  | `stcd2` |  |  |
+| `TaxNumber3` |  | |  | `stcd3` |  |  |
+| `TaxNumber4` |  | |  | `stcd4` |  |  |
+| `TaxNumber5` |  | |  | `stcd5` |  |  |
+| `IsNaturalPerson` |  | |  | `stkzn` |  |  |
+| `Region` |  | |  | `regio` |  |  |
+| `VATLiability` |  | |  | `stkzu` |  |  |
+| `TaxNumberType` |  | |  | `j_1atoid` |  |  |
+| `OneTimeBusinessPartnerEmail` |  | |  | `intad` |  |  |
+| `AccountTaxType` |  | |  | `j_1afitp_d` |  |  |
+| `BankDetailReference` |  | |  | `bkref` |  |  |
+| `_JournalEntryPost` | | ✓ | | | | |
 
 ## Source Code
 

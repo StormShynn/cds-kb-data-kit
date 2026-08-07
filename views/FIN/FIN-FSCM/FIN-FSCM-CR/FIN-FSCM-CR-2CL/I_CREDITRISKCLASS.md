@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CreditRiskClass` | ✓ | |  | `cast(risk_class as farp_risk_class preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditRiskClass` | ✓ | |  | `cast(risk_class as farp_risk_class preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

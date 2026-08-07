@@ -29,36 +29,36 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Country` | ✓ | |  |  |
-| `TaxCalculationProcedure` | ✓ | |  |  |
-| `TaxCode` | ✓ | |  |  |
-| `CndnRecordValidityStartDate` | ✓ | |  |  |
-| `VATConditionType` | ✓ | |  |  |
-| `CndnRecordValidityEndDate` |  | |  |  |
-| `ConditionRateRatio` |  | | `_FinPrcgCndnRecordItem` | `ConditionRateRatio` |
-| `ConditionRateRatioUnit` |  | | `_FinPrcgCndnRecordItem` | `ConditionRateRatioUnit` |
-| `ConditionStep` |  | |  |  |
-| `ConditionFromRefStep` |  | |  |  |
-| `AccountKeyForGLAccount` |  | |  |  |
-| `TaxType` |  | |  |  |
-| `TargetTaxCode` |  | |  |  |
-| `EUTaxClassification` |  | |  |  |
-| `IsSalesTaxes` |  | |  |  |
-| `TaxCategory` |  | |  |  |
-| `UnitedStatesTaxCategory` |  | |  |  |
-| `TaxReturnCountry` |  | |  |  |
-| `TaxTolerancePercent` |  | |  |  |
-| `EUAcqnInputTaxCode` |  | |  |  |
-| `EUAcqnOutputTaxCode` |  | |  |  |
-| `TaxCodeIsInactive` |  | |  |  |
-| `MiniOneStopShopTxRptgCntry` |  | |  |  |
-| `OneStopShopTaxReportingCountry` |  | |  |  |
-| `OneStopShopScheme` |  | |  |  |
-| `_TaxCalculationProcedure` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_ConditionType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` | ✓ | |  |  |  |  |
+| `TaxCalculationProcedure` | ✓ | |  |  |  |  |
+| `TaxCode` | ✓ | |  |  |  |  |
+| `CndnRecordValidityStartDate` | ✓ | |  |  |  |  |
+| `VATConditionType` | ✓ | |  |  |  |  |
+| `CndnRecordValidityEndDate` |  | |  |  |  |  |
+| `ConditionRateRatio` |  | | `_FinPrcgCndnRecordItem` | `ConditionRateRatio` |  |  |
+| `ConditionRateRatioUnit` |  | | `_FinPrcgCndnRecordItem` | `ConditionRateRatioUnit` |  |  |
+| `ConditionStep` |  | |  |  |  |  |
+| `ConditionFromRefStep` |  | |  |  |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |  |  |
+| `TaxType` |  | |  |  |  |  |
+| `TargetTaxCode` |  | |  |  |  |  |
+| `EUTaxClassification` |  | |  |  |  |  |
+| `IsSalesTaxes` |  | |  |  |  |  |
+| `TaxCategory` |  | |  |  |  |  |
+| `UnitedStatesTaxCategory` |  | |  |  |  |  |
+| `TaxReturnCountry` |  | |  |  |  |  |
+| `TaxTolerancePercent` |  | |  |  |  |  |
+| `EUAcqnInputTaxCode` |  | |  |  |  |  |
+| `EUAcqnOutputTaxCode` |  | |  |  |  |  |
+| `TaxCodeIsInactive` |  | |  |  |  |  |
+| `MiniOneStopShopTxRptgCntry` |  | |  |  |  |  |
+| `OneStopShopTaxReportingCountry` |  | |  |  |  |  |
+| `OneStopShopScheme` |  | |  |  |  |  |
+| `_TaxCalculationProcedure` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_ConditionType` | | ✓ | | | | |
 
 ## Associations
 

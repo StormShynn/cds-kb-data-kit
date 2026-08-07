@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SalesInquiryType` | ✓ | |  | `SalesDocumentType` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesInquiryType` | ✓ | |  | `SalesDocumentType` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

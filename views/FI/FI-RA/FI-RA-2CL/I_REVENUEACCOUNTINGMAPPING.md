@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RevnAcctgSenderComponent` | ✓ | |  | `cast(srcdoc_comp as farr_cds_rai_srcco preserving type)` |
-| `RASndgCompLogicalSystem` | ✓ | |  | `srcdoc_logsys` |
-| `RASndgCompDocumentItemType` | ✓ | |  | `srcdoc_type` |
-| `RASndgCompDocumentItem` | ✓ | |  | `srcdoc_id` |
-| `PerformanceObligation` | ✓ | |  | `cast(pob_id as farr_cds_pob_id preserving type)` |
-| `RevenueAccountingContract` |  | |  | `cast(contract_id as farr_cds_contract_id preserving type)` |
-| `AccountingPrinciple` |  | |  | `acct_principle` |
-| `RevnAcctgOperationalDocument` |  | |  | `cast(header_id as farr_operational_doc preserving type)` |
-| `RAContractIsCreatedByContrMgr` |  | |  | `rar_version` |
-| `PerfOblgnIsSoftDeleted` |  | |  | `soft_deleted` |
-| `RevnAcctgContractArchivingDate` |  | |  | `archiving_date` |
-| `RevnAcctgItemArchivingDate` |  | |  | `archiving_date_rai` |
-| `RASenderComponentReferenceID` |  | |  | `reference_id` |
-| `RASenderComponentReferenceType` |  | |  | `reference_type` |
-| `CompanyCode` |  | | `_RAPerformanceObligation` | `CompanyCode` |
-| `_RevenueAccountingContract` | | ✓ | | |
-| `_RAPerformanceObligation` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RevnAcctgSenderComponent` | ✓ | |  | `cast(srcdoc_comp as farr_cds_rai_srcco preserving type)` |  |  |
+| `RASndgCompLogicalSystem` | ✓ | |  | `srcdoc_logsys` |  |  |
+| `RASndgCompDocumentItemType` | ✓ | |  | `srcdoc_type` |  |  |
+| `RASndgCompDocumentItem` | ✓ | |  | `srcdoc_id` |  |  |
+| `PerformanceObligation` | ✓ | |  | `cast(pob_id as farr_cds_pob_id preserving type)` |  |  |
+| `RevenueAccountingContract` |  | |  | `cast(contract_id as farr_cds_contract_id preserving type)` |  |  |
+| `AccountingPrinciple` |  | |  | `acct_principle` |  |  |
+| `RevnAcctgOperationalDocument` |  | |  | `cast(header_id as farr_operational_doc preserving type)` |  |  |
+| `RAContractIsCreatedByContrMgr` |  | |  | `rar_version` |  |  |
+| `PerfOblgnIsSoftDeleted` |  | |  | `soft_deleted` |  |  |
+| `RevnAcctgContractArchivingDate` |  | |  | `archiving_date` |  |  |
+| `RevnAcctgItemArchivingDate` |  | |  | `archiving_date_rai` |  |  |
+| `RASenderComponentReferenceID` |  | |  | `reference_id` |  |  |
+| `RASenderComponentReferenceType` |  | |  | `reference_type` |  |  |
+| `CompanyCode` |  | | `_RAPerformanceObligation` | `CompanyCode` |  |  |
+| `_RevenueAccountingContract` | | ✓ | | | | |
+| `_RAPerformanceObligation` | | ✓ | | | | |
 
 ## Associations
 

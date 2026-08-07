@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MeasuringPointCategory` |  | |  | `imrc_mptyp` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeasuringPointCategory` |  | |  | `imrc_mptyp` |  |  |
 
 ## Source Code
 

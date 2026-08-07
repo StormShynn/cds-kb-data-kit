@@ -31,76 +31,76 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Product` | ✓ | |  |  |
-| `ProductSalesOrg` | ✓ | |  |  |
-| `ProductDistributionChnl` | ✓ | |  |  |
-| `MinimumOrderQuantity` |  | |  |  |
-| `SupplyingPlant` |  | |  |  |
-| `PriceSpecificationProductGroup` |  | |  |  |
-| `AccountDetnProductGroup` |  | |  |  |
-| `DeliveryNoteProcMinDelivQty` |  | |  |  |
-| `ItemCategoryGroup` |  | |  |  |
-| `DeliveryQuantityUnit` |  | |  |  |
-| `DeliveryQuantity` |  | |  |  |
-| `ProductSalesStatus` |  | |  |  |
-| `ProductSalesStatusValidityDate` |  | |  |  |
-| `SalesMeasureUnit` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `FirstSalesSpecProductGroup` |  | |  |  |
-| `SecondSalesSpecProductGroup` |  | |  |  |
-| `ThirdSalesSpecProductGroup` |  | |  |  |
-| `FourthSalesSpecProductGroup` |  | |  |  |
-| `FifthSalesSpecProductGroup` |  | |  |  |
-| `LogisticsStatisticsGroup` |  | |  |  |
-| `VolumeRebateGroup` |  | |  |  |
-| `CashDiscountIsDeductible` |  | |  |  |
-| `ProductCommissionGroup` |  | |  |  |
-| `PricingReferenceProduct` |  | |  |  |
-| `RoundingProfile` |  | |  |  |
-| `VariableSalesUnitIsNotAllowed` |  | |  |  |
-| `ProductHasAttributeID01` |  | |  |  |
-| `ProductHasAttributeID02` |  | |  |  |
-| `ProductHasAttributeID03` |  | |  |  |
-| `ProductHasAttributeID04` |  | |  |  |
-| `ProductHasAttributeID05` |  | |  |  |
-| `ProductHasAttributeID06` |  | |  |  |
-| `ProductHasAttributeID07` |  | |  |  |
-| `ProductHasAttributeID08` |  | |  |  |
-| `ProductHasAttributeID09` |  | |  |  |
-| `ProductHasAttributeID10` |  | |  |  |
-| `ProdIsEntlmntRlvt` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `ProductHierarchy` |  | |  |  |
-| `ProdExtAssortmentPriority` |  | |  |  |
-| `AssortmentGrade` |  | |  |  |
-| `StoreListingProcedure` |  | |  |  |
-| `DistrCenterListingProcedure` |  | |  |  |
-| `StoreListingStartDate` |  | |  |  |
-| `StoreListingEndDate` |  | |  |  |
-| `DistrCenterListingStartDate` |  | |  |  |
-| `DistrCenterListingEndDate` |  | |  |  |
-| `StoreSaleStartDate` |  | |  |  |
-| `StoreSaleEndDate` |  | |  |  |
-| `DistrCenterSaleStartDate` |  | |  |  |
-| `DistributionCenterSaleEndDate` |  | |  |  |
-| `ProductUnitGroup` |  | |  |  |
-| `StoreOrderMaxDelivQty` |  | |  |  |
-| `PriceFixingCategory` |  | |  |  |
-| `CompetitionPressureCategory` |  | |  |  |
-| `_Product` | | ✓ | | |
-| `_ProdSalesDeliverySalesTax` | | ✓ | | |
-| `_ProdSlsDelivPointOfSale` | | ✓ | | |
-| `_ProductSalesDeliveryText` | | ✓ | | |
-| `_ProductDescription_2` | | ✓ | | |
-| `_DeliveryQuantityUnitText` | | ✓ | | |
-| `_SalesUnitText` | | ✓ | | |
-| `_PricingReferenceProduct` | | ✓ | | |
-| `_BaseUnitOfMeasureText` | | ✓ | | |
-| `_ProdExtAssortmentPriorityText` | | ✓ | | |
-| `_PriceFixingCategoryText` | | ✓ | | |
-| `_CompetitionPressureCategoryT` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` | ✓ | |  |  |  |  |
+| `ProductSalesOrg` | ✓ | |  |  |  |  |
+| `ProductDistributionChnl` | ✓ | |  |  |  |  |
+| `MinimumOrderQuantity` |  | |  |  |  |  |
+| `SupplyingPlant` |  | |  |  |  |  |
+| `PriceSpecificationProductGroup` |  | |  |  |  |  |
+| `AccountDetnProductGroup` |  | |  |  |  |  |
+| `DeliveryNoteProcMinDelivQty` |  | |  |  |  |  |
+| `ItemCategoryGroup` |  | |  |  |  |  |
+| `DeliveryQuantityUnit` |  | |  |  |  |  |
+| `DeliveryQuantity` |  | |  |  |  |  |
+| `ProductSalesStatus` |  | |  |  |  |  |
+| `ProductSalesStatusValidityDate` |  | |  |  |  |  |
+| `SalesMeasureUnit` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `FirstSalesSpecProductGroup` |  | |  |  |  |  |
+| `SecondSalesSpecProductGroup` |  | |  |  |  |  |
+| `ThirdSalesSpecProductGroup` |  | |  |  |  |  |
+| `FourthSalesSpecProductGroup` |  | |  |  |  |  |
+| `FifthSalesSpecProductGroup` |  | |  |  |  |  |
+| `LogisticsStatisticsGroup` |  | |  |  |  |  |
+| `VolumeRebateGroup` |  | |  |  |  |  |
+| `CashDiscountIsDeductible` |  | |  |  |  |  |
+| `ProductCommissionGroup` |  | |  |  |  |  |
+| `PricingReferenceProduct` |  | |  |  |  |  |
+| `RoundingProfile` |  | |  |  |  |  |
+| `VariableSalesUnitIsNotAllowed` |  | |  |  |  |  |
+| `ProductHasAttributeID01` |  | |  |  |  |  |
+| `ProductHasAttributeID02` |  | |  |  |  |  |
+| `ProductHasAttributeID03` |  | |  |  |  |  |
+| `ProductHasAttributeID04` |  | |  |  |  |  |
+| `ProductHasAttributeID05` |  | |  |  |  |  |
+| `ProductHasAttributeID06` |  | |  |  |  |  |
+| `ProductHasAttributeID07` |  | |  |  |  |  |
+| `ProductHasAttributeID08` |  | |  |  |  |  |
+| `ProductHasAttributeID09` |  | |  |  |  |  |
+| `ProductHasAttributeID10` |  | |  |  |  |  |
+| `ProdIsEntlmntRlvt` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `ProductHierarchy` |  | |  |  |  |  |
+| `ProdExtAssortmentPriority` |  | |  |  |  |  |
+| `AssortmentGrade` |  | |  |  |  |  |
+| `StoreListingProcedure` |  | |  |  |  |  |
+| `DistrCenterListingProcedure` |  | |  |  |  |  |
+| `StoreListingStartDate` |  | |  |  |  |  |
+| `StoreListingEndDate` |  | |  |  |  |  |
+| `DistrCenterListingStartDate` |  | |  |  |  |  |
+| `DistrCenterListingEndDate` |  | |  |  |  |  |
+| `StoreSaleStartDate` |  | |  |  |  |  |
+| `StoreSaleEndDate` |  | |  |  |  |  |
+| `DistrCenterSaleStartDate` |  | |  |  |  |  |
+| `DistributionCenterSaleEndDate` |  | |  |  |  |  |
+| `ProductUnitGroup` |  | |  |  |  |  |
+| `StoreOrderMaxDelivQty` |  | |  |  |  |  |
+| `PriceFixingCategory` |  | |  |  |  |  |
+| `CompetitionPressureCategory` |  | |  |  |  |  |
+| `_Product` | | ✓ | | | | |
+| `_ProdSalesDeliverySalesTax` | | ✓ | | | | |
+| `_ProdSlsDelivPointOfSale` | | ✓ | | | | |
+| `_ProductSalesDeliveryText` | | ✓ | | | | |
+| `_ProductDescription_2` | | ✓ | | | | |
+| `_DeliveryQuantityUnitText` | | ✓ | | | | |
+| `_SalesUnitText` | | ✓ | | | | |
+| `_PricingReferenceProduct` | | ✓ | | | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | | | |
+| `_ProdExtAssortmentPriorityText` | | ✓ | | | | |
+| `_PriceFixingCategoryText` | | ✓ | | | | |
+| `_CompetitionPressureCategoryT` | | ✓ | | | | |
 
 ## Source Code
 

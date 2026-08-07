@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `RetsMgmtProcessStep` | ✓ | |  | `cast( step_id as msr_step_id preserving type )` |
-| `Language` | ✓ | |  | `spras` |
-| `RetsMgmtProcessStepDescription` |  | |  | `step_text` |
-| `_ReturnsProcessStep` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RetsMgmtProcessStep` | ✓ | |  | `cast( step_id as msr_step_id preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `RetsMgmtProcessStepDescription` |  | |  | `step_text` |  |  |
+| `_ReturnsProcessStep` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

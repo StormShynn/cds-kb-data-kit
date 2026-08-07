@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SrvcProductHierarchy` | ✓ | |  | `cast ( ProductHierarchy as abap.char(20) )` |
-| `Language` | ✓ | |  |  |
-| `SrvcProductHierarchyText` |  | |  | `ProductHierarchyText` |
-| `_SrvcMgmtProductHierarchy` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcProductHierarchy` | ✓ | |  | `cast ( ProductHierarchy as abap.char(20) )` |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `SrvcProductHierarchyText` |  | |  | `ProductHierarchyText` |  |  |
+| `_SrvcMgmtProductHierarchy` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

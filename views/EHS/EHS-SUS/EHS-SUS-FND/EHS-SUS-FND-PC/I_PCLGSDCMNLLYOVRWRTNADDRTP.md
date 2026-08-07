@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PCLgsDcMnllyOvrwrtnAddrUUID` | ✓ | |  |  |
-| `CreationDateTime` |  | |  |  |
-| `CreatedByUser` |  | |  |  |
-| `LastChangeDateTime` |  | |  |  |
-| `LastChangedByUser` |  | |  |  |
-| `ProdCmplncLogsDocumentUUID` |  | |  |  |
-| `PartnerFunction` |  | |  |  |
-| `AddressLine1Text` |  | |  |  |
-| `AddressLine2Text` |  | |  |  |
-| `AddressLine3Text` |  | |  |  |
-| `AddressLine4Text` |  | |  |  |
-| `AddressLine5Text` |  | |  |  |
-| `AddressLine6Text` |  | |  |  |
-| `AddressLine7Text` |  | |  |  |
-| `AddressLine8Text` |  | |  |  |
-| `AddressLine9Text` |  | |  |  |
-| `AddressCorrespondenceLanguage` |  | |  |  |
-| `AddressCountry` |  | |  |  |
-| `SftyDataShtOutpReqManReqEmail` |  | |  |  |
-| `_Document` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PCLgsDcMnllyOvrwrtnAddrUUID` | ✓ | |  |  |  |  |
+| `CreationDateTime` |  | |  |  |  |  |
+| `CreatedByUser` |  | |  |  |  |  |
+| `LastChangeDateTime` |  | |  |  |  |  |
+| `LastChangedByUser` |  | |  |  |  |  |
+| `ProdCmplncLogsDocumentUUID` |  | |  |  |  |  |
+| `PartnerFunction` |  | |  |  |  |  |
+| `AddressLine1Text` |  | |  |  |  |  |
+| `AddressLine2Text` |  | |  |  |  |  |
+| `AddressLine3Text` |  | |  |  |  |  |
+| `AddressLine4Text` |  | |  |  |  |  |
+| `AddressLine5Text` |  | |  |  |  |  |
+| `AddressLine6Text` |  | |  |  |  |  |
+| `AddressLine7Text` |  | |  |  |  |  |
+| `AddressLine8Text` |  | |  |  |  |  |
+| `AddressLine9Text` |  | |  |  |  |  |
+| `AddressCorrespondenceLanguage` |  | |  |  |  |  |
+| `AddressCountry` |  | |  |  |  |  |
+| `SftyDataShtOutpReqManReqEmail` |  | |  |  |  |  |
+| `_Document` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAStatisticalItemCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as stakz_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAStatisticalItemCodeText` |  | |  | `cast( ddtext as stakz_txt_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAStatisticalItemCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as stakz_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAStatisticalItemCodeText` |  | |  | `cast( ddtext as stakz_txt_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

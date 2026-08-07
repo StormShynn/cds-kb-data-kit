@@ -32,90 +32,90 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CustomerReturn` | ✓ | |  |  |
-| `CustomerReturnItem` | ✓ | |  |  |
-| `HigherLevelItem` |  | |  |  |
-| `CustomerReturnItemCategory` |  | |  |  |
-| `CustomerReturnItemText` |  | |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |
-| `Product` |  | |  |  |
-| `MaterialByCustomer` |  | |  |  |
-| `ProductGroup` |  | |  |  |
-| `Batch` |  | |  |  |
-| `RequestedQuantity` |  | |  |  |
-| `RequestedQuantityUnit` |  | |  |  |
-| `ItemGrossWeight` |  | |  |  |
-| `ItemNetWeight` |  | |  |  |
-| `ItemWeightUnit` |  | |  |  |
-| `ItemVolume` |  | |  |  |
-| `ItemVolumeUnit` |  | |  |  |
-| `NetAmount` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `ProductionPlant` |  | |  |  |
-| `Plant` |  | |  |  |
-| `StorageLocation` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `DeliveryPriority` |  | |  |  |
-| `SalesDocumentRjcnReason` |  | |  |  |
-| `ItemBillingBlockReason` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `IncotermsClassification` |  | |  |  |
-| `IncotermsTransferLocation` |  | |  |  |
-| `IncotermsLocation1` |  | |  |  |
-| `IncotermsLocation2` |  | |  |  |
-| `CustomerPaymentTerms` |  | |  |  |
-| `RetsMgmtProcess` |  | |  |  |
-| `RetsMgmtProcessItem` |  | |  |  |
-| `ReturnReason` |  | |  |  |
-| `RetsMgmtProcessingBlock` |  | |  |  |
-| `CustRetItmFollowUpActivity` |  | |  |  |
-| `ReturnsMaterialHasBeenReceived` |  | |  |  |
-| `CustRetItmCustomerText` |  | |  |  |
-| `CustRetItmInspectionText` |  | |  |  |
-| `ReturnsRefundType` |  | |  |  |
-| `ReturnsRefundProcgMode` |  | |  |  |
-| `ReturnsRefundExtent` |  | |  |  |
-| `PrelimRefundIsDetermined` |  | |  |  |
-| `ReturnsRefundRjcnReason` |  | |  |  |
-| `ReplacementMaterial` |  | |  |  |
-| `ReplacementMaterialQuantity` |  | |  |  |
-| `ReplacementMaterialQtyUnit` |  | |  |  |
-| `ReplacementMaterialIsRequested` |  | |  |  |
-| `ReplacementMatlSupplyingPlant` |  | |  |  |
-| `NextPlantForFollowUpActivity` |  | |  |  |
-| `ReturnsTransshipmentPlant` |  | |  |  |
-| `Supplier` |  | |  |  |
-| `SupplierRetMatlAuthzn` |  | |  |  |
-| `SuplrRetMatlAuthznIsRequired` |  | |  |  |
-| `CustomerRetMatlInspResultCode` |  | |  |  |
-| `NextFllwUpActivityForMatlInsp` |  | |  |  |
-| `RetMatlInspResultCode` |  | |  |  |
-| `ProductIsInspectedAtCustSite` |  | |  |  |
-| `CustRetMatlAuthzn` |  | |  |  |
-| `CRMLogicalSystem` |  | |  |  |
-| `CRMObjectUUID` |  | |  |  |
-| `CRMObjectID` |  | |  |  |
-| `CRMObjectType` |  | |  |  |
-| `RetsMgmtItmLogProcgStatus` |  | |  |  |
-| `RetsMgmtItmCompnProcgStatus` |  | |  |  |
-| `RetsMgmtItmProcgStatus` |  | |  |  |
-| `ReturnsDocumentStatus` |  | |  |  |
-| `ReturnsDocumentApprovalStatus` |  | |  |  |
-| `ReferenceSDDocument` |  | |  |  |
-| `ReferenceSDDocumentItem` |  | |  |  |
-| `ReferenceSDDocumentCategory` |  | |  |  |
-| `SDProcessStatus` |  | |  |  |
-| `SDDocumentRejectionStatus` |  | |  |  |
-| `CustomerReturnType` |  | |  |  |
-| `SalesOrganization` |  | |  |  |
-| `DistributionChannel` |  | |  |  |
-| `OrganizationDivision` |  | |  |  |
-| `_CustomerReturn` | | ✓ | | |
-| `_ItemPartner` | | ✓ | | |
-| `_ItemText` | | ✓ | | |
-| `_ItemPricingElement` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |  |  |
+| `CustomerReturnItem` | ✓ | |  |  |  |  |
+| `HigherLevelItem` |  | |  |  |  |  |
+| `CustomerReturnItemCategory` |  | |  |  |  |  |
+| `CustomerReturnItemText` |  | |  |  |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `MaterialByCustomer` |  | |  |  |  |  |
+| `ProductGroup` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `RequestedQuantity` |  | |  |  |  |  |
+| `RequestedQuantityUnit` |  | |  |  |  |  |
+| `ItemGrossWeight` |  | |  |  |  |  |
+| `ItemNetWeight` |  | |  |  |  |  |
+| `ItemWeightUnit` |  | |  |  |  |  |
+| `ItemVolume` |  | |  |  |  |  |
+| `ItemVolumeUnit` |  | |  |  |  |  |
+| `NetAmount` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `ProductionPlant` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `StorageLocation` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `DeliveryPriority` |  | |  |  |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |  |  |
+| `ItemBillingBlockReason` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `IncotermsClassification` |  | |  |  |  |  |
+| `IncotermsTransferLocation` |  | |  |  |  |  |
+| `IncotermsLocation1` |  | |  |  |  |  |
+| `IncotermsLocation2` |  | |  |  |  |  |
+| `CustomerPaymentTerms` |  | |  |  |  |  |
+| `RetsMgmtProcess` |  | |  |  |  |  |
+| `RetsMgmtProcessItem` |  | |  |  |  |  |
+| `ReturnReason` |  | |  |  |  |  |
+| `RetsMgmtProcessingBlock` |  | |  |  |  |  |
+| `CustRetItmFollowUpActivity` |  | |  |  |  |  |
+| `ReturnsMaterialHasBeenReceived` |  | |  |  |  |  |
+| `CustRetItmCustomerText` |  | |  |  |  |  |
+| `CustRetItmInspectionText` |  | |  |  |  |  |
+| `ReturnsRefundType` |  | |  |  |  |  |
+| `ReturnsRefundProcgMode` |  | |  |  |  |  |
+| `ReturnsRefundExtent` |  | |  |  |  |  |
+| `PrelimRefundIsDetermined` |  | |  |  |  |  |
+| `ReturnsRefundRjcnReason` |  | |  |  |  |  |
+| `ReplacementMaterial` |  | |  |  |  |  |
+| `ReplacementMaterialQuantity` |  | |  |  |  |  |
+| `ReplacementMaterialQtyUnit` |  | |  |  |  |  |
+| `ReplacementMaterialIsRequested` |  | |  |  |  |  |
+| `ReplacementMatlSupplyingPlant` |  | |  |  |  |  |
+| `NextPlantForFollowUpActivity` |  | |  |  |  |  |
+| `ReturnsTransshipmentPlant` |  | |  |  |  |  |
+| `Supplier` |  | |  |  |  |  |
+| `SupplierRetMatlAuthzn` |  | |  |  |  |  |
+| `SuplrRetMatlAuthznIsRequired` |  | |  |  |  |  |
+| `CustomerRetMatlInspResultCode` |  | |  |  |  |  |
+| `NextFllwUpActivityForMatlInsp` |  | |  |  |  |  |
+| `RetMatlInspResultCode` |  | |  |  |  |  |
+| `ProductIsInspectedAtCustSite` |  | |  |  |  |  |
+| `CustRetMatlAuthzn` |  | |  |  |  |  |
+| `CRMLogicalSystem` |  | |  |  |  |  |
+| `CRMObjectUUID` |  | |  |  |  |  |
+| `CRMObjectID` |  | |  |  |  |  |
+| `CRMObjectType` |  | |  |  |  |  |
+| `RetsMgmtItmLogProcgStatus` |  | |  |  |  |  |
+| `RetsMgmtItmCompnProcgStatus` |  | |  |  |  |  |
+| `RetsMgmtItmProcgStatus` |  | |  |  |  |  |
+| `ReturnsDocumentStatus` |  | |  |  |  |  |
+| `ReturnsDocumentApprovalStatus` |  | |  |  |  |  |
+| `ReferenceSDDocument` |  | |  |  |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |  |  |
+| `SDProcessStatus` |  | |  |  |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |  |  |
+| `CustomerReturnType` |  | |  |  |  |  |
+| `SalesOrganization` |  | |  |  |  |  |
+| `DistributionChannel` |  | |  |  |  |  |
+| `OrganizationDivision` |  | |  |  |  |  |
+| `_CustomerReturn` | | ✓ | | | | |
+| `_ItemPartner` | | ✓ | | | | |
+| `_ItemText` | | ✓ | | | | |
+| `_ItemPricingElement` | | ✓ | | | | |
 
 ## Source Code
 

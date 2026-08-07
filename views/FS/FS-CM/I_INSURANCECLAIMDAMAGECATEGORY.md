@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InsurClmDamageCategory` | ✓ | |  |  |
-| `InsurClmInsuredObjectCategory` |  | |  |  |
-| `_InsurClmDamageCatT` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurClmDamageCategory` | ✓ | |  |  |  |  |
+| `InsurClmInsuredObjectCategory` |  | |  |  |  |  |
+| `_InsurClmDamageCatT` | | ✓ | | | | |
 
 ## Source Code
 

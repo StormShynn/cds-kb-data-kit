@@ -30,22 +30,22 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationRateTableUUID` | ✓ | |  |  |
-| `TranspRateTableID` |  | |  |  |
-| `TranspRateTableDesc` |  | |  |  |
-| `TranspRateTableChangedOnDteTme` |  | |  |  |
-| `TranspRateTblCreatedOnDateTime` |  | |  |  |
-| `TranspRateTableChangedBy` |  | |  |  |
-| `TranspRateTableCreatedBy` |  | |  |  |
-| `TranspRateTableValueType` |  | |  |  |
-| `TranspChargeType` |  | |  |  |
-| `TranspRateTableSignType` |  | |  |  |
-| `TranspRateTableTimeZone` |  | |  |  |
-| `I_TranspRateTableScaleRefTP` |  | |  | `TransportationRateTable._TranspRateTableScaleRef : redirected to composition child I_TranspRateTableScaleRefTP` |
-| `I_TranspRateTableValidityTP` |  | |  | `TransportationRateTable._TranspRateTableValidity : redirected to composition child I_TranspRateTableValidityTP` |
-| `I_TranspRateTableOrgTP` |  | |  | `TransportationRateTable._TranspRateTableOrganization : redirected to composition child I_TranspRateTableOrgTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationRateTableUUID` | ✓ | |  |  |  |  |
+| `TranspRateTableID` |  | |  |  |  |  |
+| `TranspRateTableDesc` |  | |  |  |  |  |
+| `TranspRateTableChangedOnDteTme` |  | |  |  |  |  |
+| `TranspRateTblCreatedOnDateTime` |  | |  |  |  |  |
+| `TranspRateTableChangedBy` |  | |  |  |  |  |
+| `TranspRateTableCreatedBy` |  | |  |  |  |  |
+| `TranspRateTableValueType` |  | |  |  |  |  |
+| `TranspChargeType` |  | |  |  |  |  |
+| `TranspRateTableSignType` |  | |  |  |  |  |
+| `TranspRateTableTimeZone` |  | |  |  |  |  |
+| `I_TranspRateTableScaleRefTP` |  | |  | `TransportationRateTable._TranspRateTableScaleRef : redirected to composition child I_TranspRateTableScaleRefTP` |  |  |
+| `I_TranspRateTableValidityTP` |  | |  | `TransportationRateTable._TranspRateTableValidity : redirected to composition child I_TranspRateTableValidityTP` |  |  |
+| `I_TranspRateTableOrgTP` |  | |  | `TransportationRateTable._TranspRateTableOrganization : redirected to composition child I_TranspRateTableOrgTP` |  |  |
 
 ## Source Code
 

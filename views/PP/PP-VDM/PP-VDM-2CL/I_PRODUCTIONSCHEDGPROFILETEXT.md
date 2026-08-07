@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ProductionSchedulingProfile` | ✓ | |  | `co_prodprf` |
-| `Plant` | ✓ | |  | `werks` |
-| `Language` | ✓ | |  | `spras` |
-| `ProductionSchedgProfileName` |  | |  | `prodprf_tx` |
-| `_Plant` | | ✓ | | |
-| `_Language` | | ✓ | | |
-| `_Profile` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionSchedulingProfile` | ✓ | |  | `co_prodprf` |  |  |
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ProductionSchedgProfileName` |  | |  | `prodprf_tx` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+| `_Profile` | | ✓ | | | | |
 
 ## Associations
 

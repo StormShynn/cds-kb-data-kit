@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CACollectionStrategy` | ✓ | |  | `strat` |
-| `Language` | ✓ | |  | `spras` |
-| `CACollectionStrategyName` |  | |  | `strattext` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CACollectionStrategy` | ✓ | |  | `strat` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `CACollectionStrategyName` |  | |  | `strattext` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

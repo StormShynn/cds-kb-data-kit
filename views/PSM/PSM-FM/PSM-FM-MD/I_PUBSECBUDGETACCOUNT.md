@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PubSecBudgetAccount` | ✓ | |  |  |
-| `PubSecBudgetAccountCoCode` | ✓ | |  | `cast( GLAccountInCompanyCode.CompanyCode as psm_bdgt_account_cocode preserving type )` |
-| `ChartOfAccounts` |  | |  |  |
-| `PubSecBudgetCnsmpnType` |  | |  |  |
-| `PubSecBdgtAcctRevnExpnCode` |  | |  |  |
-| `PubSecBudgetIsRelevant` |  | |  |  |
-| `PubSecBdgtAcctIsPostgAllowed` |  | |  |  |
-| `PubSecBdgtAcctIsBdgtAllowed` |  | |  |  |
-| `PubSecBdgtAcctIsCarryFwd` |  | |  |  |
-| `PubSecBdgtAcctCarryFwdTo` |  | |  |  |
-| `CashLedgerAccount` |  | |  |  |
-| `_CarryForwardBudgetAccount` |  | |  |  |
-| `_ChartOfAccountsText` | | ✓ | | |
-| `_ChartOfAccounts` | | ✓ | | |
-| `_BudgetAccountText` | | ✓ | | |
-| `_PubSecBudgetAccountText` | | ✓ | | |
-| `_PubSecBudgetAccountCoCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PubSecBudgetAccount` | ✓ | |  |  |  |  |
+| `PubSecBudgetAccountCoCode` | ✓ | |  | `cast( GLAccountInCompanyCode.CompanyCode as psm_bdgt_account_cocode preserving type )` |  |  |
+| `ChartOfAccounts` |  | |  |  |  |  |
+| `PubSecBudgetCnsmpnType` |  | |  |  |  |  |
+| `PubSecBdgtAcctRevnExpnCode` |  | |  |  |  |  |
+| `PubSecBudgetIsRelevant` |  | |  |  |  |  |
+| `PubSecBdgtAcctIsPostgAllowed` |  | |  |  |  |  |
+| `PubSecBdgtAcctIsBdgtAllowed` |  | |  |  |  |  |
+| `PubSecBdgtAcctIsCarryFwd` |  | |  |  |  |  |
+| `PubSecBdgtAcctCarryFwdTo` |  | |  |  |  |  |
+| `CashLedgerAccount` |  | |  |  |  |  |
+| `_CarryForwardBudgetAccount` |  | |  |  |  |  |
+| `_ChartOfAccountsText` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_BudgetAccountText` | | ✓ | | | | |
+| `_PubSecBudgetAccountText` | | ✓ | | | | |
+| `_PubSecBudgetAccountCoCode` | | ✓ | | | | |
 
 ## Associations
 

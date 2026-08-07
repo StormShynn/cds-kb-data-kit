@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `KanbanCtnReplnmtTriggerLogic` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pklog preserving type)` |
-| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
-| `KnbnCtnReplnmtTriggerLogicName` |  | |  | `cast(txt.ddtext as vdm_knbnreplnmttriggerlgcname preserving type)` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_KnbnCtnReplnmtTrggrLogic` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanCtnReplnmtTriggerLogic` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pklog preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |  |  |
+| `KnbnCtnReplnmtTriggerLogicName` |  | |  | `cast(txt.ddtext as vdm_knbnreplnmttriggerlgcname preserving type)` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_KnbnCtnReplnmtTrggrLogic` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

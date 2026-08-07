@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TranspAgreementItemDescUUID` | ✓ | |  | `cast(db_key as /scmtms/transpagritemtext_uuid preserving type)` |
-| `TransportationAgreementUUID` |  | |  | `cast(root_key as /scmtms/transpagrmt_uuid preserving type)` |
-| `TranspAgreementItemUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_itm_uuid preserving type)` |
-| `TranspAgreementItemDesc` |  | |  | `cast(description as /scmtms/vdm_fag_item_desc preserving type)` |
-| `_TranspAgreementItem` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspAgreementItemDescUUID` | ✓ | |  | `cast(db_key as /scmtms/transpagritemtext_uuid preserving type)` |  |  |
+| `TransportationAgreementUUID` |  | |  | `cast(root_key as /scmtms/transpagrmt_uuid preserving type)` |  |  |
+| `TranspAgreementItemUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_itm_uuid preserving type)` |  |  |
+| `TranspAgreementItemDesc` |  | |  | `cast(description as /scmtms/vdm_fag_item_desc preserving type)` |  |  |
+| `_TranspAgreementItem` | | ✓ | | | | |
 
 ## Source Code
 

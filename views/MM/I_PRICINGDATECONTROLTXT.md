@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PricingDateControl` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as meprf )` |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `PricingDateControlText` |  | |  | `ddtext` |
-| `_Language` | | ✓ | | |
-| `_PricingDateControl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingDateControl` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as meprf )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PricingDateControlText` |  | |  | `ddtext` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_PricingDateControl` | | ✓ | | | | |
 
 ## Associations
 

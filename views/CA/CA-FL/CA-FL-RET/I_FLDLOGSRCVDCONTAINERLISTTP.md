@@ -29,57 +29,57 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FldLogsContainerID` | ✓ | |  |  |
-| `DispatchedStartDate` | ✓ | |  |  |
-| `FldLogsDispatchPlant` | ✓ | |  |  |
-| `NumberOfCtnTripsPerDay` | ✓ | |  |  |
-| `FldLogsCtnProcessingStartDate` |  | |  |  |
-| `FldLogsCtnProcessingEndDate` |  | |  |  |
-| `SystemMessageTypeCriticality` |  | |  |  |
-| `FldLogsShipmentID` |  | |  |  |
-| `FldLogsContainerUUID` |  | |  |  |
-| `FieldLogisticsProcessType` |  | |  |  |
-| `FldLogsContainerUnitUUID` |  | |  |  |
-| `FldLogsShptVoyageUUID` |  | |  |  |
-| `FldLogsShptVoyageNumber` |  | |  |  |
-| `FldLogsVoyageSrceStage` |  | |  |  |
-| `FldLogsVoyageDestStage` |  | |  |  |
-| `FldLogsCtnChangeDateTime` |  | |  |  |
-| `FieldLogisticsReceivingPlant` |  | |  |  |
-| `FldLogsSealNumber1` |  | |  |  |
-| `FldLogsSealNumber2` |  | |  |  |
-| `FldLogsSealNumber3` |  | |  |  |
-| `FldLogsSealNumber4` |  | |  |  |
-| `FldLogsSealNumber5` |  | |  |  |
-| `FldLogsContainerStatus` |  | |  |  |
-| `FldLogsContainerOwner` |  | |  |  |
-| `FldLogsRcvdContainerIsReleased` |  | |  |  |
-| `LocationIsDestinationLocation` |  | |  |  |
-| `FldLogsShptCtnStsCriticality` |  | |  |  |
-| `Batch` |  | |  |  |
-| `SerialNumber` |  | |  |  |
-| `InboundDelivery` |  | |  |  |
-| `FldLogsContainerItemStatus` |  | |  |  |
-| `FldLogsReferenceDocumentNumber` |  | |  |  |
-| `Material` |  | |  |  |
-| `FldLogsShptItmHndlgUnitID` |  | |  |  |
-| `HandlingUnitExternalID` |  | |  |  |
-| `FieldLogisticsKitIdentifier` |  | |  |  |
-| `FldLogsItemType` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `IsMarkedForDeletion` |  | |  |  |
-| `FldLogsCtnActualDispatchPlant` |  | |  |  |
-| `FldLogsCtnActualReceivingPlant` |  | |  |  |
-| `GoodsReceivingPoint` |  | |  |  |
-| `ShippingPoint` |  | |  |  |
-| `_CtnStatText` | | ✓ | | |
-| `_DispatchPlantText` | | ✓ | | |
-| `_ItemStatText` | | ✓ | | |
-| `_ReceivingPlantText` | | ✓ | | |
-| `_CtnItemTP` | | ✓ | | |
-| `_RcvdPackggInCtn` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FldLogsContainerID` | ✓ | |  |  |  |  |
+| `DispatchedStartDate` | ✓ | |  |  |  |  |
+| `FldLogsDispatchPlant` | ✓ | |  |  |  |  |
+| `NumberOfCtnTripsPerDay` | ✓ | |  |  |  |  |
+| `FldLogsCtnProcessingStartDate` |  | |  |  |  |  |
+| `FldLogsCtnProcessingEndDate` |  | |  |  |  |  |
+| `SystemMessageTypeCriticality` |  | |  |  |  |  |
+| `FldLogsShipmentID` |  | |  |  |  |  |
+| `FldLogsContainerUUID` |  | |  |  |  |  |
+| `FieldLogisticsProcessType` |  | |  |  |  |  |
+| `FldLogsContainerUnitUUID` |  | |  |  |  |  |
+| `FldLogsShptVoyageUUID` |  | |  |  |  |  |
+| `FldLogsShptVoyageNumber` |  | |  |  |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |  |  |
+| `FldLogsCtnChangeDateTime` |  | |  |  |  |  |
+| `FieldLogisticsReceivingPlant` |  | |  |  |  |  |
+| `FldLogsSealNumber1` |  | |  |  |  |  |
+| `FldLogsSealNumber2` |  | |  |  |  |  |
+| `FldLogsSealNumber3` |  | |  |  |  |  |
+| `FldLogsSealNumber4` |  | |  |  |  |  |
+| `FldLogsSealNumber5` |  | |  |  |  |  |
+| `FldLogsContainerStatus` |  | |  |  |  |  |
+| `FldLogsContainerOwner` |  | |  |  |  |  |
+| `FldLogsRcvdContainerIsReleased` |  | |  |  |  |  |
+| `LocationIsDestinationLocation` |  | |  |  |  |  |
+| `FldLogsShptCtnStsCriticality` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `SerialNumber` |  | |  |  |  |  |
+| `InboundDelivery` |  | |  |  |  |  |
+| `FldLogsContainerItemStatus` |  | |  |  |  |  |
+| `FldLogsReferenceDocumentNumber` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `FldLogsShptItmHndlgUnitID` |  | |  |  |  |  |
+| `HandlingUnitExternalID` |  | |  |  |  |  |
+| `FieldLogisticsKitIdentifier` |  | |  |  |  |  |
+| `FldLogsItemType` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `IsMarkedForDeletion` |  | |  |  |  |  |
+| `FldLogsCtnActualDispatchPlant` |  | |  |  |  |  |
+| `FldLogsCtnActualReceivingPlant` |  | |  |  |  |  |
+| `GoodsReceivingPoint` |  | |  |  |  |  |
+| `ShippingPoint` |  | |  |  |  |  |
+| `_CtnStatText` | | ✓ | | | | |
+| `_DispatchPlantText` | | ✓ | | | | |
+| `_ItemStatText` | | ✓ | | | | |
+| `_ReceivingPlantText` | | ✓ | | | | |
+| `_CtnItemTP` | | ✓ | | | | |
+| `_RcvdPackggInCtn` | | ✓ | | | | |
 
 ## Source Code
 

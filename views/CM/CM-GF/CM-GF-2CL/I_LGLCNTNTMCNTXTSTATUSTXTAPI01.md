@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMStatus` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `LglCntntMStatusName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMStatus` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `LglCntntMStatusName` |  | |  |  |  |  |
 
 ## Source Code
 

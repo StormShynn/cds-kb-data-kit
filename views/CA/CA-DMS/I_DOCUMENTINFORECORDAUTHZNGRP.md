@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AuthorizationGroup` | ✓ | |  | `brgru` |
-| `DocInfoRecdAuthznObject` |  | |  | `brobj` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AuthorizationGroup` | ✓ | |  | `brgru` |  |  |
+| `DocInfoRecdAuthznObject` |  | |  | `brobj` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

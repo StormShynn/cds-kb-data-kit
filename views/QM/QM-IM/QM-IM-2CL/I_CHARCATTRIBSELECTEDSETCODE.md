@@ -27,23 +27,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SelectedCodeSetPlant` | ✓ | |  | `werks` |
-| `SelectedCodeSet` | ✓ | |  | `auswahlmge` |
-| `CharacteristicAttributeCodeGrp` | ✓ | |  | `codegruppe` |
-| `CharacteristicAttributeCode` | ✓ | |  | `code` |
-| `CharcAttributeValuation` |  | |  | `bewertung` |
-| `CodeIsInactive` |  | |  | `geloescht` |
-| `DefectClass` |  | |  | `fehlklasse` |
-| `CharcAttribSeldSetCodeCrtedBy` |  | |  | `ersteller` |
-| `CharcAttribSeldSetCodeCrtedOn` |  | |  | `e_datum` |
-| `CharcAttribSeldSetCodeChgdBy` |  | |  | `aenderer` |
-| `CharcAttribSeldSetCodeChgdOn` |  | |  | `a_datum` |
-| `_CharcAttributeCodeGrp` | | ✓ | | |
-| `_CharcAttributeCode` | | ✓ | | |
-| `_CodeIsInactive` | | ✓ | | |
-| `_CharcAttribSelectedCodeSet` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SelectedCodeSetPlant` | ✓ | |  | `werks` |  |  |
+| `SelectedCodeSet` | ✓ | |  | `auswahlmge` |  |  |
+| `CharacteristicAttributeCodeGrp` | ✓ | |  | `codegruppe` |  |  |
+| `CharacteristicAttributeCode` | ✓ | |  | `code` |  |  |
+| `CharcAttributeValuation` |  | |  | `bewertung` |  |  |
+| `CodeIsInactive` |  | |  | `geloescht` |  |  |
+| `DefectClass` |  | |  | `fehlklasse` |  |  |
+| `CharcAttribSeldSetCodeCrtedBy` |  | |  | `ersteller` |  |  |
+| `CharcAttribSeldSetCodeCrtedOn` |  | |  | `e_datum` |  |  |
+| `CharcAttribSeldSetCodeChgdBy` |  | |  | `aenderer` |  |  |
+| `CharcAttribSeldSetCodeChgdOn` |  | |  | `a_datum` |  |  |
+| `_CharcAttributeCodeGrp` | | ✓ | | | | |
+| `_CharcAttributeCode` | | ✓ | | | | |
+| `_CodeIsInactive` | | ✓ | | | | |
+| `_CharcAttribSelectedCodeSet` | | ✓ | | | | |
 
 ## Associations
 

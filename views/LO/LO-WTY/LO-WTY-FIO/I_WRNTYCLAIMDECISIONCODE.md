@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WarrantyClaimItemDecisionCode` | ✓ | |  | `rejcd` |
-| `WrntyClaimDecisionCodeCategory` |  | |  | `dcsncode_cat` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarrantyClaimItemDecisionCode` | ✓ | |  | `rejcd` |  |  |
+| `WrntyClaimDecisionCodeCategory` |  | |  | `dcsncode_cat` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

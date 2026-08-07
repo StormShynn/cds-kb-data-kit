@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MerchandiseCategory` | ✓ | |  | `cast ( MerchandiseCategory.matkl as rfm_mrchdscategory preserving type )` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `ContactPersonStdDepartment` |  | |  | `abtnr` |
-| `Division` |  | |  | `spart` |
-| `MaterialGroupRefMaterial` |  | |  | `wwgda` |
-| `PurchasingValueKey` |  | |  | `ekwsl` |
-| `ValuationClass` |  | |  | `bklas` |
-| `LastChangeDateTime` |  | |  | `last_changed_at` |
-| `ClassInternalID` |  | |  | `clint` |
-| `_ProductGroup` | | ✓ | | |
-| `_MerchandiseCategoryText` | | ✓ | | |
-| `_MrchdsCategoryCharacteristic` | | ✓ | | |
-| `_MrchdsCategoryHierarchyNode` | | ✓ | | |
-| `_MrchdsCatCharcValRestriction` | | ✓ | | |
-| `_MrchdsCmpltHierarchyNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MerchandiseCategory` | ✓ | |  | `cast ( MerchandiseCategory.matkl as rfm_mrchdscategory preserving type )` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `ContactPersonStdDepartment` |  | |  | `abtnr` |  |  |
+| `Division` |  | |  | `spart` |  |  |
+| `MaterialGroupRefMaterial` |  | |  | `wwgda` |  |  |
+| `PurchasingValueKey` |  | |  | `ekwsl` |  |  |
+| `ValuationClass` |  | |  | `bklas` |  |  |
+| `LastChangeDateTime` |  | |  | `last_changed_at` |  |  |
+| `ClassInternalID` |  | |  | `clint` |  |  |
+| `_ProductGroup` | | ✓ | | | | |
+| `_MerchandiseCategoryText` | | ✓ | | | | |
+| `_MrchdsCategoryCharacteristic` | | ✓ | | | | |
+| `_MrchdsCategoryHierarchyNode` | | ✓ | | | | |
+| `_MrchdsCatCharcValRestriction` | | ✓ | | | | |
+| `_MrchdsCmpltHierarchyNode` | | ✓ | | | | |
 
 ## Associations
 

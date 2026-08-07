@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `InspectionLot` | ✓ | |  |  |
-| `InspectionLotQualityScore` |  | |  |  |
-| `InspLotUsageDecisionCatalog` |  | |  |  |
-| `SelectedCodeSetPlant` |  | |  |  |
-| `InspLotUsgeDcsnSelectedSet` |  | |  |  |
-| `InspLotUsageDecisionCodeGroup` |  | |  |  |
-| `InspectionLotUsageDecisionCode` |  | |  |  |
-| `InspLotUsgeDcsnDynValuation` |  | |  |  |
-| `InspLotUsageDecisionValuation` |  | |  |  |
-| `InspLotUsgeDcsnFollowUpAction` |  | |  |  |
-| `InspectionLotUsageDecidedBy` |  | |  |  |
-| `InspectionLotUsageDecidedOn` |  | |  |  |
-| `InspLotUsageDecisionTime` |  | |  |  |
-| `InspLotUsageDecisionChangedBy` |  | |  |  |
-| `InspLotUsageDecisionChangedOn` |  | |  |  |
-| `InspLotUsgeDcsnChangedTime` |  | |  |  |
-| `InspLotUsgeDcsnHasLongText` |  | |  |  |
-| `_InspectionLot` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |  |  |
+| `InspectionLotQualityScore` |  | |  |  |  |  |
+| `InspLotUsageDecisionCatalog` |  | |  |  |  |  |
+| `SelectedCodeSetPlant` |  | |  |  |  |  |
+| `InspLotUsgeDcsnSelectedSet` |  | |  |  |  |  |
+| `InspLotUsageDecisionCodeGroup` |  | |  |  |  |  |
+| `InspectionLotUsageDecisionCode` |  | |  |  |  |  |
+| `InspLotUsgeDcsnDynValuation` |  | |  |  |  |  |
+| `InspLotUsageDecisionValuation` |  | |  |  |  |  |
+| `InspLotUsgeDcsnFollowUpAction` |  | |  |  |  |  |
+| `InspectionLotUsageDecidedBy` |  | |  |  |  |  |
+| `InspectionLotUsageDecidedOn` |  | |  |  |  |  |
+| `InspLotUsageDecisionTime` |  | |  |  |  |  |
+| `InspLotUsageDecisionChangedBy` |  | |  |  |  |  |
+| `InspLotUsageDecisionChangedOn` |  | |  |  |  |  |
+| `InspLotUsgeDcsnChangedTime` |  | |  |  |  |  |
+| `InspLotUsgeDcsnHasLongText` |  | |  |  |  |  |
+| `_InspectionLot` | | ✓ | | | | |
 
 ## Source Code
 

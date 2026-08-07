@@ -30,166 +30,165 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Supplier` | ✓ | |  | `cast(lfa1.lifnr as lifnr preserving type)` |
-| `SupplierAccountGroup` |  | |  | `ktokk` |
-| `SupplierName` |  | |  | `cast(substring(rtrim(replace(concat(name1, concat(' &@', name2)), '&@', ''),' '),1,80) as md_supplier_name)` |
-| `SupplierFullName` |  | |  | `cast(concat( concat( concat( concat( concat( concat_with_space( anred, name1, 1 ), name2 ), name3 ), name4 ), '/' ), concat_with_space( pstlz, ort01 , 1 ) ) as md_supplier_full_name)` |
-| `BPSupplierName` |  | |  | `cast(substring(rtrim(replace(concat(_AddressDefaultRepresentation.AddresseeName1, concat(' &@', _AddressDefaultRepresentation.AddresseeName2)), '&@', ''),' '),1,81) as suppliername_2)` |
-| `BPSupplierFullName` |  | |  | `cast(concat( concat_with_space( concat_with_space( concat_with_space(_AddressDefaultRepresentation.AddresseeName1, _AddressDefaultRepresentation.AddresseeName2,1 ), _AddressDefaultRepresentation.AddresseeName3,1 ), _AddressDefaultRepresentation.AddresseeName4,1 ), ' ' ) as supplierfullname_2)` |
-| `BusinessPartnerName1` |  | | `_AddressDefaultRepresentation` | `AddresseeName1` |
-| `BusinessPartnerName2` |  | | `_AddressDefaultRepresentation` | `AddresseeName2` |
-| `BusinessPartnerName3` |  | | `_AddressDefaultRepresentation` | `AddresseeName3` |
-| `BusinessPartnerName4` |  | | `_AddressDefaultRepresentation` | `AddresseeName4` |
-| `BPAddrCityName` |  | | `_AddressDefaultRepresentation` | `CityName` |
-| `BPAddrStreetName` |  | | `_AddressDefaultRepresentation` | `StreetName` |
-| `AddressSearchTerm1` |  | | `_AddressDefaultRepresentation` | `AddressSearchTerm1` |
-| `AddressSearchTerm2` |  | | `_AddressDefaultRepresentation` | `AddressSearchTerm2` |
-| `DistrictName` |  | | `_AddressDefaultRepresentation` | `DistrictName` |
-| `POBoxDeviatingCityName` |  | | `_AddressDefaultRepresentation` | `POBoxDeviatingCityName` |
-| `BusinessPartnerFormOfAddress` |  | | `_AddressDefaultRepresentation` | `FormOfAddress` |
-| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `CreationDate` |  | |  | `erdat` |
-| `IsOneTimeAccount` |  | |  | `xcpdk` |
-| `AuthorizationGroup` |  | |  | `begru` |
-| `VATRegistration` |  | |  | `stceg` |
-| `AccountIsBlockedForPosting` |  | |  | `sperr` |
-| `TaxJurisdiction` |  | |  | `txjcd` |
-| `SupplierStandardCarrierAccess` |  | |  | `scacd` |
-| `SupplierFwdAgentFreightGroup` |  | |  | `sfrgr` |
-| `SupplierAgentProcedureGroup` |  | |  | `dlgrp` |
-| `SupplIsSocialInsuranceRegtrd` |  | |  | `regss` |
-| `SocialInsuranceActivityCode` |  | |  | `actss` |
-| `SupplierCorporateGroup` |  | |  | `konzs` |
-| `Customer` |  | |  | `kunnr` |
-| `Industry` |  | |  | `brsch` |
-| `TaxNumber1` |  | |  | `stcd1` |
-| `TaxNumber2` |  | |  | `stcd2` |
-| `TaxNumber3` |  | |  | `stcd3` |
-| `TaxNumber4` |  | |  | `stcd4` |
-| `TaxNumber5` |  | |  | `stcd5` |
-| `TaxNumber6` |  | |  | `stcd6` |
-| `PostingIsBlocked` |  | |  | `sperr` |
-| `PurchasingIsBlocked` |  | |  | `sperm` |
-| `InternationalLocationNumber1` |  | |  | `bbbnr` |
-| `InternationalLocationNumber2` |  | |  | `bbsnr` |
-| `InternationalLocationNumber3` |  | |  | `bubkz` |
-| `AddressID` |  | |  | `adrnr` |
-| `Region` |  | |  | `regio` |
-| `OrganizationBPName1` |  | |  | `name1` |
-| `OrganizationBPName2` |  | |  | `name2` |
-| `CityName` |  | |  | `ort01` |
-| `PostalCode` |  | |  | `pstlz` |
-| `StreetName` |  | |  | `stras` |
-| `Country` |  | |  | `land1` |
-| `ConcatenatedInternationalLocNo` |  | |  | `cast((concat(concat(bbbnr,concat(' & ', bbsnr)),concat(' & ',bubkz))) as md_international_loc )` |
-| `SupplierProcurementBlock` |  | |  | `sperq` |
-| `SuplrQualityManagementSystem` |  | |  | `qssys` |
-| `SuplrQltyInProcmtCertfnValidTo` |  | |  | `qssysdat` |
-| `SupplierLanguage` |  | |  | `spras` |
-| `AlternativePayeeAccountNumber` |  | |  | `lnrza` |
-| `PhoneNumber1` |  | |  | `telf1` |
-| `FaxNumber` |  | |  | `telfx` |
-| `IsNaturalPerson` |  | |  | `stkzn` |
-| `TaxNumberResponsible` |  | |  | `stenr` |
-| `UK_ContractorBusinessType` |  | |  | `categ` |
-| `UK_PartnerTradingName` |  | |  | `partner_name` |
-| `UK_PartnerTaxReference` |  | |  | `partner_utr` |
-| `UK_VerificationStatus` |  | |  | `status` |
-| `UK_VerificationNumber` |  | |  | `vfnum` |
-| `UK_CompanyRegistrationNumber` |  | |  | `crn` |
-| `UK_VerifiedTaxStatus` |  | |  | `vfnid` |
-| `FormOfAddress` |  | |  | `anred` |
-| `ReferenceAccountGroup` |  | |  | `ktock` |
-| `VATLiability` |  | |  | `stkzu` |
-| `ResponsibleType` |  | |  | `fityp` |
-| `TaxNumberType` |  | |  | `stcdt` |
-| `FiscalAddress` |  | |  | `fiskn` |
-| `BusinessType` |  | |  | `j_1kftbus` |
-| `BirthDate` |  | |  | `gbdat` |
-| `CreditorInformationNumber` |  | |  | `kraus` |
-| `PaymentIsBlockedForSupplier` |  | |  | `sperz` |
-| `SortField` |  | |  | `sortl` |
-| `PhoneNumber2` |  | |  | `telf2` |
-| `DeletionIndicator` |  | |  | `loevm` |
-| `TaxInvoiceRepresentativeName` |  | |  | `j_1kfrepre` |
-| `IndustryType` |  | |  | `j_1kftind` |
-| `IN_GSTSupplierClassification` |  | |  | `ven_class` |
-| `SuplrProofOfDelivRlvtCode` |  | |  | `podkzb` |
-| `TradingPartner` |  | |  | `vbund` |
-| `BR_TaxIsSplit` |  | |  | `ipisp` |
-| `AU_PayerIsPayingToCarryOnEnt` |  | |  | `au_carrying_ent` |
-| `AU_IndividualIsUnder18` |  | |  | `au_ind_under_18` |
-| `AU_PaymentIsExceeding75` |  | |  | `au_payment_not_exceed_75` |
-| `AU_PaymentIsWhollyInputTaxed` |  | |  | `au_wholly_inp_taxed` |
-| `AU_PartnerIsSupplyWithoutGain` |  | |  | `au_partner_without_gain` |
-| `AU_SupplierIsEntitledToABN` |  | |  | `au_not_entitled_abn` |
-| `AU_PaymentIsIncomeExempted` |  | |  | `au_payment_exempt` |
-| `AU_SupplyIsMadeAsPrivateHobby` |  | |  | `au_private_hobby` |
-| `AU_SupplyMadeIsOfDmstcNature` |  | |  | `au_domestic_nature` |
-| `IsToBeAcceptedAtOrigin` |  | |  | `weora` |
-| `BPIsEqualizationTaxSubject` |  | |  | `cast (stkza as xfeld preserving type)` |
-| `BRSpcfcTaxBasePercentageCode` |  | |  | `taxbs` |
-| `SupplierProfession` |  | |  | `profs` |
-| `SuplrManufacturerExternalName` |  | |  | `emnfr` |
-| `DataMediumExchangeIndicator` |  | |  | `dtams` |
-| `DataExchangeInstructionKey` |  | |  | `dtaws` |
-| `SupplierIsSubRangeRelevant` |  | |  | `ltsna` |
-| `TrainStationName` |  | |  | `bahns` |
-| `AlternativePayeeIsAllowed` |  | |  | `xzemp` |
-| `PaytSlipWthRefSubscriber` |  | |  | `esrnr` |
-| `Grp` |  | |  | `: 'Stat. Grp` |
-| `TranspServiceAgentStstcGrp` |  | |  | `Agent' lfa1.stgdl` |
-| `SupplierIsPlantRelevant` |  | |  | `werkr` |
-| `SuplrTaxAuthorityAccountNumber` |  | |  | `fisku` |
-| `SuplrCarrierConfirmIsExpected` |  | |  | `carrier_conf` |
-| `SupplierPlant` |  | |  | `werks` |
-| `FactoryCalendar` |  | |  | `plkal` |
-| `PaymentReason` |  | |  | `paytrsn` |
-| `SupplierCentralDeletionIsBlock` |  | |  | `nodel` |
-| `DataControllerSet` |  | |  | `xdcset` |
-| `DataController1` |  | |  | `data_ctrlr1` |
-| `DataController2` |  | |  | `data_ctrlr2` |
-| `DataController3` |  | |  | `data_ctrlr3` |
-| `DataController4` |  | |  | `data_ctrlr4` |
-| `DataController5` |  | |  | `data_ctrlr5` |
-| `DataController6` |  | |  | `data_ctrlr6` |
-| `DataController7` |  | |  | `data_ctrlr7` |
-| `DataController8` |  | |  | `data_ctrlr8` |
-| `DataController9` |  | |  | `data_ctrlr9` |
-| `DataController10` |  | |  | `data_ctrlr10` |
-| `SupplierTransportationChain` |  | |  | `transport_chain` |
-| `SupplierStagingTimeInDays` |  | |  | `staging_time` |
-| `SupplierSchedulingProcedure` |  | |  | `scheduling_type` |
-| `CollectiveNumberingIsRelevant` |  | |  | `submi_relevant` |
-| `BusinessPartnerPanNumber` |  | |  | `j_1ipanno` |
-| `BPPanReferenceNumber` |  | |  | `j_1ipanref` |
-| `BPPanValidFromDate` |  | |  | `j_1ipanvaldt` |
-| `_SupplierToBusinessPartner` | | ✓ | | |
-| `_SupplierCompany` | | ✓ | | |
-| `_SupplierPurchasingOrg` | | ✓ | | |
-| `_SupplierBankDetails` | | ✓ | | |
-| `_SupplierAccountGroup` | | ✓ | | |
-| `_Industry` | | ✓ | | |
-| `_CorrespondingCustomer` | | ✓ | | |
-| `_SupplierAccountGroupText` | | ✓ | | |
-| `_SupplierIndustryText` | | ✓ | | |
-| `_ProcurementBlock` | | ✓ | | |
-| `_QualityManagementSystem` | | ✓ | | |
-| `_StandardAddress` | | ✓ | | |
-| `_AddressDefaultRepresentation` | | ✓ | | |
-| `_AddressRepresentation` | | ✓ | | |
-| `_EmailAddress` | | ✓ | | |
-| `_CurrentDfltEmailAddress` | | ✓ | | |
-| `_PhoneNumber` | | ✓ | | |
-| `_CurrentDfltLandlinePhoneNmbr` | | ✓ | | |
-| `_CurrentDfltMobilePhoneNumber` | | ✓ | | |
-| `_FaxNumber` | | ✓ | | |
-| `_CurrentDfltFaxNumber` | | ✓ | | |
-| `_UniformResourceIdentifier` | | ✓ | | |
-| `_MainWebsiteURL` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `cast(lfa1.lifnr as lifnr preserving type)` |  |  |
+| `SupplierAccountGroup` |  | |  | `ktokk` |  |  |
+| `SupplierName` |  | |  | `cast(substring(rtrim(replace(concat(name1, concat(' &@', name2)), '&@', ''),' '),1,80) as md_supplier_name)` |  |  |
+| `SupplierFullName` |  | |  | `cast(concat( concat( concat( concat( concat( concat_with_space( anred, name1, 1 ), name2 ), name3 ), name4 ), '/' ), concat_with_space( pstlz, ort01 , 1 ) ) as md_supplier_full_name)` |  |  |
+| `BPSupplierName` |  | |  | `cast(substring(rtrim(replace(concat(_AddressDefaultRepresentation.AddresseeName1, concat(' &@', _AddressDefaultRepresentation.AddresseeName2)), '&@', ''),' '),1,81) as suppliername_2)` |  |  |
+| `BPSupplierFullName` |  | |  | `cast(concat( concat_with_space( concat_with_space( concat_with_space(_AddressDefaultRepresentation.AddresseeName1, _AddressDefaultRepresentation.AddresseeName2,1 ), _AddressDefaultRepresentation.AddresseeName3,1 ), _AddressDefaultRepresentation.AddresseeName4,1 ), ' ' ) as supplierfullname_2)` |  |  |
+| `BusinessPartnerName1` |  | | `_AddressDefaultRepresentation` | `AddresseeName1` |  |  |
+| `BusinessPartnerName2` |  | | `_AddressDefaultRepresentation` | `AddresseeName2` |  |  |
+| `BusinessPartnerName3` |  | | `_AddressDefaultRepresentation` | `AddresseeName3` |  |  |
+| `BusinessPartnerName4` |  | | `_AddressDefaultRepresentation` | `AddresseeName4` |  |  |
+| `BPAddrCityName` |  | | `_AddressDefaultRepresentation` | `CityName` |  |  |
+| `BPAddrStreetName` |  | | `_AddressDefaultRepresentation` | `StreetName` |  |  |
+| `AddressSearchTerm1` |  | | `_AddressDefaultRepresentation` | `AddressSearchTerm1` |  |  |
+| `AddressSearchTerm2` |  | | `_AddressDefaultRepresentation` | `AddressSearchTerm2` |  |  |
+| `DistrictName` |  | | `_AddressDefaultRepresentation` | `DistrictName` |  |  |
+| `POBoxDeviatingCityName` |  | | `_AddressDefaultRepresentation` | `POBoxDeviatingCityName` |  |  |
+| `BusinessPartnerFormOfAddress` |  | | `_AddressDefaultRepresentation` | `FormOfAddress` |  |  |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `IsOneTimeAccount` |  | |  | `xcpdk` |  |  |
+| `AuthorizationGroup` |  | |  | `begru` |  |  |
+| `VATRegistration` |  | |  | `stceg` |  |  |
+| `AccountIsBlockedForPosting` |  | |  | `sperr` |  |  |
+| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
+| `SupplierStandardCarrierAccess` |  | |  | `scacd` |  |  |
+| `SupplierFwdAgentFreightGroup` |  | |  | `sfrgr` |  |  |
+| `SupplierAgentProcedureGroup` |  | |  | `dlgrp` |  |  |
+| `SupplIsSocialInsuranceRegtrd` |  | |  | `regss` |  |  |
+| `SocialInsuranceActivityCode` |  | |  | `actss` |  |  |
+| `SupplierCorporateGroup` |  | |  | `konzs` |  |  |
+| `Customer` |  | |  | `kunnr` |  |  |
+| `Industry` |  | |  | `brsch` |  |  |
+| `TaxNumber1` |  | |  | `stcd1` |  |  |
+| `TaxNumber2` |  | |  | `stcd2` |  |  |
+| `TaxNumber3` |  | |  | `stcd3` |  |  |
+| `TaxNumber4` |  | |  | `stcd4` |  |  |
+| `TaxNumber5` |  | |  | `stcd5` |  |  |
+| `TaxNumber6` |  | |  | `stcd6` |  |  |
+| `PostingIsBlocked` |  | |  | `sperr` |  |  |
+| `PurchasingIsBlocked` |  | |  | `sperm` |  |  |
+| `InternationalLocationNumber1` |  | |  | `bbbnr` |  |  |
+| `InternationalLocationNumber2` |  | |  | `bbsnr` |  |  |
+| `InternationalLocationNumber3` |  | |  | `bubkz` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `Region` |  | |  | `regio` |  |  |
+| `OrganizationBPName1` |  | |  | `name1` |  |  |
+| `OrganizationBPName2` |  | |  | `name2` |  |  |
+| `CityName` |  | |  | `ort01` |  |  |
+| `PostalCode` |  | |  | `pstlz` |  |  |
+| `StreetName` |  | |  | `stras` |  |  |
+| `Country` |  | |  | `land1` |  |  |
+| `ConcatenatedInternationalLocNo` |  | |  | `cast((concat(concat(bbbnr,concat(' & ', bbsnr)),concat(' & ',bubkz))) as md_international_loc )` |  |  |
+| `SupplierProcurementBlock` |  | |  | `sperq` |  |  |
+| `SuplrQualityManagementSystem` |  | |  | `qssys` |  |  |
+| `SuplrQltyInProcmtCertfnValidTo` |  | |  | `qssysdat` |  |  |
+| `SupplierLanguage` |  | |  | `spras` |  |  |
+| `AlternativePayeeAccountNumber` |  | |  | `lnrza` |  |  |
+| `PhoneNumber1` |  | |  | `telf1` |  |  |
+| `FaxNumber` |  | |  | `telfx` |  |  |
+| `IsNaturalPerson` |  | |  | `stkzn` |  |  |
+| `TaxNumberResponsible` |  | |  | `stenr` |  |  |
+| `UK_ContractorBusinessType` |  | |  | `categ` |  |  |
+| `UK_PartnerTradingName` |  | |  | `partner_name` |  |  |
+| `UK_PartnerTaxReference` |  | |  | `partner_utr` |  |  |
+| `UK_VerificationStatus` |  | |  | `status` |  |  |
+| `UK_VerificationNumber` |  | |  | `vfnum` |  |  |
+| `UK_CompanyRegistrationNumber` |  | |  | `crn` |  |  |
+| `UK_VerifiedTaxStatus` |  | |  | `vfnid` |  |  |
+| `FormOfAddress` |  | |  | `anred` |  |  |
+| `ReferenceAccountGroup` |  | |  | `ktock` |  |  |
+| `VATLiability` |  | |  | `stkzu` |  |  |
+| `ResponsibleType` |  | |  | `fityp` |  |  |
+| `TaxNumberType` |  | |  | `stcdt` |  |  |
+| `FiscalAddress` |  | |  | `fiskn` |  |  |
+| `BusinessType` |  | |  | `j_1kftbus` |  |  |
+| `BirthDate` |  | |  | `gbdat` |  |  |
+| `CreditorInformationNumber` |  | |  | `kraus` |  |  |
+| `PaymentIsBlockedForSupplier` |  | |  | `sperz` |  |  |
+| `SortField` |  | |  | `sortl` |  |  |
+| `PhoneNumber2` |  | |  | `telf2` |  |  |
+| `DeletionIndicator` |  | |  | `loevm` |  |  |
+| `TaxInvoiceRepresentativeName` |  | |  | `j_1kfrepre` |  |  |
+| `IndustryType` |  | |  | `j_1kftind` |  |  |
+| `IN_GSTSupplierClassification` |  | |  | `ven_class` |  |  |
+| `SuplrProofOfDelivRlvtCode` |  | |  | `podkzb` |  |  |
+| `TradingPartner` |  | |  | `vbund` |  |  |
+| `BR_TaxIsSplit` |  | |  | `ipisp` |  |  |
+| `AU_PayerIsPayingToCarryOnEnt` |  | |  | `au_carrying_ent` |  |  |
+| `AU_IndividualIsUnder18` |  | |  | `au_ind_under_18` |  |  |
+| `AU_PaymentIsExceeding75` |  | |  | `au_payment_not_exceed_75` |  |  |
+| `AU_PaymentIsWhollyInputTaxed` |  | |  | `au_wholly_inp_taxed` |  |  |
+| `AU_PartnerIsSupplyWithoutGain` |  | |  | `au_partner_without_gain` |  |  |
+| `AU_SupplierIsEntitledToABN` |  | |  | `au_not_entitled_abn` |  |  |
+| `AU_PaymentIsIncomeExempted` |  | |  | `au_payment_exempt` |  |  |
+| `AU_SupplyIsMadeAsPrivateHobby` |  | |  | `au_private_hobby` |  |  |
+| `AU_SupplyMadeIsOfDmstcNature` |  | |  | `au_domestic_nature` |  |  |
+| `IsToBeAcceptedAtOrigin` |  | |  | `weora` |  |  |
+| `BPIsEqualizationTaxSubject` |  | |  | `cast (stkza as xfeld preserving type)` |  |  |
+| `BRSpcfcTaxBasePercentageCode` |  | |  | `taxbs` |  |  |
+| `SupplierProfession` |  | |  | `profs` |  |  |
+| `SuplrManufacturerExternalName` |  | |  | `emnfr` |  |  |
+| `DataMediumExchangeIndicator` |  | |  | `dtams` |  |  |
+| `DataExchangeInstructionKey` |  | |  | `dtaws` |  |  |
+| `SupplierIsSubRangeRelevant` |  | |  | `ltsna` |  |  |
+| `TrainStationName` |  | |  | `bahns` |  |  |
+| `AlternativePayeeIsAllowed` |  | |  | `xzemp` |  |  |
+| `PaytSlipWthRefSubscriber` |  | |  | `esrnr` |  |  |
+| `TranspServiceAgentStstcGrp` |  | |  | `Agent' lfa1.stgdl` |  |  |
+| `SupplierIsPlantRelevant` |  | |  | `werkr` |  |  |
+| `SuplrTaxAuthorityAccountNumber` |  | |  | `fisku` |  |  |
+| `SuplrCarrierConfirmIsExpected` |  | |  | `carrier_conf` |  |  |
+| `SupplierPlant` |  | |  | `werks` |  |  |
+| `FactoryCalendar` |  | |  | `plkal` |  |  |
+| `PaymentReason` |  | |  | `paytrsn` |  |  |
+| `SupplierCentralDeletionIsBlock` |  | |  | `nodel` |  |  |
+| `DataControllerSet` |  | |  | `xdcset` |  |  |
+| `DataController1` |  | |  | `data_ctrlr1` |  |  |
+| `DataController2` |  | |  | `data_ctrlr2` |  |  |
+| `DataController3` |  | |  | `data_ctrlr3` |  |  |
+| `DataController4` |  | |  | `data_ctrlr4` |  |  |
+| `DataController5` |  | |  | `data_ctrlr5` |  |  |
+| `DataController6` |  | |  | `data_ctrlr6` |  |  |
+| `DataController7` |  | |  | `data_ctrlr7` |  |  |
+| `DataController8` |  | |  | `data_ctrlr8` |  |  |
+| `DataController9` |  | |  | `data_ctrlr9` |  |  |
+| `DataController10` |  | |  | `data_ctrlr10` |  |  |
+| `SupplierTransportationChain` |  | |  | `transport_chain` |  |  |
+| `SupplierStagingTimeInDays` |  | |  | `staging_time` |  |  |
+| `SupplierSchedulingProcedure` |  | |  | `scheduling_type` |  |  |
+| `CollectiveNumberingIsRelevant` |  | |  | `submi_relevant` |  |  |
+| `BusinessPartnerPanNumber` |  | |  | `j_1ipanno` |  |  |
+| `BPPanReferenceNumber` |  | |  | `j_1ipanref` |  |  |
+| `BPPanValidFromDate` |  | |  | `j_1ipanvaldt` |  |  |
+| `_SupplierToBusinessPartner` | | ✓ | | | | |
+| `_SupplierCompany` | | ✓ | | | | |
+| `_SupplierPurchasingOrg` | | ✓ | | | | |
+| `_SupplierBankDetails` | | ✓ | | | | |
+| `_SupplierAccountGroup` | | ✓ | | | | |
+| `_Industry` | | ✓ | | | | |
+| `_CorrespondingCustomer` | | ✓ | | | | |
+| `_SupplierAccountGroupText` | | ✓ | | | | |
+| `_SupplierIndustryText` | | ✓ | | | | |
+| `_ProcurementBlock` | | ✓ | | | | |
+| `_QualityManagementSystem` | | ✓ | | | | |
+| `_StandardAddress` | | ✓ | | | | |
+| `_AddressDefaultRepresentation` | | ✓ | | | | |
+| `_AddressRepresentation` | | ✓ | | | | |
+| `_EmailAddress` | | ✓ | | | | |
+| `_CurrentDfltEmailAddress` | | ✓ | | | | |
+| `_PhoneNumber` | | ✓ | | | | |
+| `_CurrentDfltLandlinePhoneNmbr` | | ✓ | | | | |
+| `_CurrentDfltMobilePhoneNumber` | | ✓ | | | | |
+| `_FaxNumber` | | ✓ | | | | |
+| `_CurrentDfltFaxNumber` | | ✓ | | | | |
+| `_UniformResourceIdentifier` | | ✓ | | | | |
+| `_MainWebsiteURL` | | ✓ | | | | |
 
 ## Associations
 

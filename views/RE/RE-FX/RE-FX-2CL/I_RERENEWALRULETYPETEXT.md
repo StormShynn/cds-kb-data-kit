@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `RERenewalRuleType` | ✓ | |  | `cast( dd07t.domvalue_l as retmrnruletype )` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `RERenewalRuleTypeName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | | ✓ | | |
-| `_RERenewalRuleType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
+| `RERenewalRuleType` | ✓ | |  | `cast( dd07t.domvalue_l as retmrnruletype )` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `RERenewalRuleTypeName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_RERenewalRuleType` | | ✓ | | | | |
 
 ## Associations
 

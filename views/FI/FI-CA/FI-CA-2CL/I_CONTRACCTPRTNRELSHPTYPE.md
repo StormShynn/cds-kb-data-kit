@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CARelationshipOfBPToContrAcct` | ✓ | |  | `vkpbz` |
-| `CABPIsAccountHolder` |  | |  | `xktin` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CARelationshipOfBPToContrAcct` | ✓ | |  | `vkpbz` |  |  |
+| `CABPIsAccountHolder` |  | |  | `xktin` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

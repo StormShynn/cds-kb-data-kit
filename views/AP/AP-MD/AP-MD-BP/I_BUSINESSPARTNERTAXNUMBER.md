@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |
-| `BPTaxType` | ✓ | |  | `taxtype` |
-| `BPTaxNumber` |  | |  | `taxnum` |
-| `BPTaxLongNumber` |  | |  | `taxnumxl` |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
-| `_BusinessPartner` | | ✓ | | |
-| `_TaxCategoryText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |  |  |
+| `BPTaxType` | ✓ | |  | `taxtype` |  |  |
+| `BPTaxNumber` |  | |  | `taxnum` |  |  |
+| `BPTaxLongNumber` |  | |  | `taxnumxl` |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `_BusinessPartner` | | ✓ | | | | |
+| `_TaxCategoryText` | | ✓ | | | | |
 
 ## Associations
 

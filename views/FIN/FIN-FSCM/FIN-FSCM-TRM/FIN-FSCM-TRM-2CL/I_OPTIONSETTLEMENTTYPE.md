@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OptionSettlementType` | ✓ | |  | `cast(DomainValue.domvalue_l as option_settlement_type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OptionSettlementType` | ✓ | |  | `cast(DomainValue.domvalue_l as option_settlement_type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

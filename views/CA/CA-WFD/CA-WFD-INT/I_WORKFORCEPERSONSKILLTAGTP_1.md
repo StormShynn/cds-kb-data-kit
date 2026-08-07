@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | |  |  |
-| `WorkforcePersonSkillTagID` | ✓ | |  |  |
-| `WorkforcePersonTagText` |  | |  |  |
-| `_WorkforcePerson` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |  |  |
+| `WorkforcePersonSkillTagID` | ✓ | |  |  |  |  |
+| `WorkforcePersonTagText` |  | |  |  |  |  |
+| `_WorkforcePerson` | | ✓ | | | | |
 
 ## Source Code
 

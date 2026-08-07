@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CAWithholdingTaxCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as qsptp_kk preserving type )` |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
-| `CAWithholdingTaxCategoryName` |  | |  | `cast( ddtext as qsptp_text_kk preserving type )` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAWithholdingTaxCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as qsptp_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
+| `CAWithholdingTaxCategoryName` |  | |  | `cast( ddtext as qsptp_text_kk preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

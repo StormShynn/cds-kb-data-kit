@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShiftDefinition` | ✓ | |  | `kaptprog` |
-| `ShiftGrouping` | ✓ | |  | `schgrup` |
-| `Language` | ✓ | |  | `spras` |
-| `ShiftDefinitionName` |  | |  | `ktext` |
-| `_ShiftGrouping` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShiftDefinition` | ✓ | |  | `kaptprog` |  |  |
+| `ShiftGrouping` | ✓ | |  | `schgrup` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ShiftDefinitionName` |  | |  | `ktext` |  |  |
+| `_ShiftGrouping` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

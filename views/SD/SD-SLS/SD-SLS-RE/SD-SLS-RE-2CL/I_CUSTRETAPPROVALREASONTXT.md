@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  |  |
-| `CustomerReturnApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
-| `CustReturnApprovalReasonName` |  | |  | `SalesDocApprovalReasonName` |
-| `_CustomerReturnApprovalReason` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  |  |  |  |
+| `CustomerReturnApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |  |  |
+| `CustReturnApprovalReasonName` |  | |  | `SalesDocApprovalReasonName` |  |  |
+| `_CustomerReturnApprovalReason` | | ✓ | | | | |
 
 ## Associations
 

@@ -31,52 +31,52 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |
-| `ProfitCenter` | ✓ | |  |  |
-| `ValidityEndDate` | ✓ | |  |  |
-| `ValidityStartDate` |  | |  |  |
-| `ControllingAreaForEdit` |  | |  |  |
-| `ProfitCenterForEdit` |  | |  |  |
-| `ValidityEndDateForEdit` |  | |  |  |
-| `ProfitCenterName` |  | |  |  |
-| `ProfitCenterLongName` |  | |  |  |
-| `ProfitCtrResponsiblePersonName` |  | |  |  |
-| `ProfitCtrResponsibleUser` |  | |  |  |
-| `ProfitCenterCreationDate` |  | |  |  |
-| `ProfitCenterCreatedByUser` |  | |  |  |
-| `ProfitCenterIsBlocked` |  | |  |  |
-| `ProfitCenterStandardHierarchy` |  | |  |  |
-| `Segment` |  | |  |  |
-| `ProfitCenterDepartment` |  | |  |  |
-| `ProfitCenterTitleName` |  | |  |  |
-| `AddressName` |  | |  |  |
-| `AdditionalName` |  | |  |  |
-| `ProfitCenterAddrName3` |  | |  |  |
-| `ProfitCenterAddrName4` |  | |  |  |
-| `StreetAddressName` |  | |  |  |
-| `CityName` |  | |  |  |
-| `PostalCode` |  | |  |  |
-| `District` |  | |  |  |
-| `Country` |  | |  |  |
-| `Region` |  | |  |  |
-| `TaxJurisdiction` |  | |  |  |
-| `POBox` |  | |  |  |
-| `POBoxPostalCode` |  | |  |  |
-| `Language` |  | |  |  |
-| `PhoneNumber1` |  | |  |  |
-| `PhoneNumber2` |  | |  |  |
-| `FaxNumber` |  | |  |  |
-| `TeleboxNumber` |  | |  |  |
-| `TelexNumber` |  | |  |  |
-| `TeletexNumber` |  | |  |  |
-| `DataCommunicationPhoneNumber` |  | |  |  |
-| `ProfitCenterPrinterName` |  | |  |  |
-| `LogicalSystem` |  | |  |  |
-| `ChangeDocObject` |  | |  |  |
-| `_ProfitCenterTextTP` | | ✓ | | |
-| `_PrftCtrCompCodeAssgmtTP` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |  |  |
+| `ProfitCenter` | ✓ | |  |  |  |  |
+| `ValidityEndDate` | ✓ | |  |  |  |  |
+| `ValidityStartDate` |  | |  |  |  |  |
+| `ControllingAreaForEdit` |  | |  |  |  |  |
+| `ProfitCenterForEdit` |  | |  |  |  |  |
+| `ValidityEndDateForEdit` |  | |  |  |  |  |
+| `ProfitCenterName` |  | |  |  |  |  |
+| `ProfitCenterLongName` |  | |  |  |  |  |
+| `ProfitCtrResponsiblePersonName` |  | |  |  |  |  |
+| `ProfitCtrResponsibleUser` |  | |  |  |  |  |
+| `ProfitCenterCreationDate` |  | |  |  |  |  |
+| `ProfitCenterCreatedByUser` |  | |  |  |  |  |
+| `ProfitCenterIsBlocked` |  | |  |  |  |  |
+| `ProfitCenterStandardHierarchy` |  | |  |  |  |  |
+| `Segment` |  | |  |  |  |  |
+| `ProfitCenterDepartment` |  | |  |  |  |  |
+| `ProfitCenterTitleName` |  | |  |  |  |  |
+| `AddressName` |  | |  |  |  |  |
+| `AdditionalName` |  | |  |  |  |  |
+| `ProfitCenterAddrName3` |  | |  |  |  |  |
+| `ProfitCenterAddrName4` |  | |  |  |  |  |
+| `StreetAddressName` |  | |  |  |  |  |
+| `CityName` |  | |  |  |  |  |
+| `PostalCode` |  | |  |  |  |  |
+| `District` |  | |  |  |  |  |
+| `Country` |  | |  |  |  |  |
+| `Region` |  | |  |  |  |  |
+| `TaxJurisdiction` |  | |  |  |  |  |
+| `POBox` |  | |  |  |  |  |
+| `POBoxPostalCode` |  | |  |  |  |  |
+| `Language` |  | |  |  |  |  |
+| `PhoneNumber1` |  | |  |  |  |  |
+| `PhoneNumber2` |  | |  |  |  |  |
+| `FaxNumber` |  | |  |  |  |  |
+| `TeleboxNumber` |  | |  |  |  |  |
+| `TelexNumber` |  | |  |  |  |  |
+| `TeletexNumber` |  | |  |  |  |  |
+| `DataCommunicationPhoneNumber` |  | |  |  |  |  |
+| `ProfitCenterPrinterName` |  | |  |  |  |  |
+| `LogicalSystem` |  | |  |  |  |  |
+| `ChangeDocObject` |  | |  |  |  |  |
+| `_ProfitCenterTextTP` | | ✓ | | | | |
+| `_PrftCtrCompCodeAssgmtTP` | | ✓ | | | | |
 
 ## Source Code
 

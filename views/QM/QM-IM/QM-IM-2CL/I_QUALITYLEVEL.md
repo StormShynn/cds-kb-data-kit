@@ -27,60 +27,60 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Plant` | ✓ | |  | `werks` |
-| `Material` | ✓ | |  | `matnr` |
-| `BillOfOperationsType` | ✓ | |  | `plnty` |
-| `BillOfOperationsGroup` | ✓ | |  | `plnnr` |
-| `BillOfOperationsVariant` | ✓ | |  | `plnal` |
-| `BOOOperationInternalID` | ✓ | |  | `plnkn` |
-| `Sequence` | ✓ | |  | `plnfl` |
-| `QualityLevelInternalID` | ✓ | |  | `zaehlerql` |
-| `Supplier` |  | |  | `lifnr` |
-| `Manufacturer` |  | |  | `hersteller` |
-| `Customer` |  | |  | `kunnr` |
-| `InspectionLotType` |  | |  | `pruefart` |
-| `InspectionOperation` |  | |  | `cast( vornr as qvornr_rap preserving type )` |
-| `InspectionCharacteristic` |  | |  | `merknr` |
-| `QltyLvlIndirectlyChangedBy` |  | |  | `aendlosa` |
-| `QltyLvlManuallyChangedBy` |  | |  | `aendlosm` |
-| `QltyLvlIndirectlyChangedOn` |  | |  | `aedatlosa` |
-| `QltyLvlManuallyChangedOn` |  | |  | `aedatlosm` |
-| `InspectionLot` |  | |  | `cast( prueflos as vdm_qplosql preserving type )` |
-| `InspLotUsageDecisionValuation` |  | |  | `bwlos` |
-| `InspLotUsgeDcsnDynValuation` |  | |  | `bwlosdyn` |
-| `SamplingProcedure` |  | |  | `stichprver` |
-| `InspLotDynamicRule` |  | |  | `cast( dynregel as vdm_qdynregel preserving type )` |
-| `QltyLevelNextDynRuleStage` |  | |  | `prstufenae` |
-| `InspLotsWithoutUsageDecision` |  | |  | `anzloseove` |
-| `InspLotsSinceStageChg` |  | |  | `anzpraen` |
-| `RjctdInspLotsSinceStgeChg` |  | |  | `anznioaen` |
-| `InspResultDynModifValuation` |  | |  | `dbewertg` |
-| `InspectionValuationResult` |  | |  | `mbewertg` |
-| `QualityLevelLastOpenInspLot` |  | |  | `plosove` |
-| `QualityLevelLastInspectionOn` |  | |  | `datlpruef` |
-| `QltyLevelCanceledInspections` |  | |  | `anzprstop` |
-| `QualityLevelDeletionOn` |  | |  | `deldatum` |
-| `QualityLevelResetOn` |  | |  | `resdatum` |
-| `ChangedDateTime` |  | |  | `case qdql.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qdql.changeddatetime end` |
-| `_Plant` | | ✓ | | |
-| `_Material` | | ✓ | | |
-| `_BillOfOperationsType` | | ✓ | | |
-| `_Supplier` | | ✓ | | |
-| `_Customer` | | ✓ | | |
-| `_Manufacturer` | | ✓ | | |
-| `_BOOCharacteristic` | | ✓ | | |
-| `_NextInspLotDynRuleStage` | | ✓ | | |
-| `_InspLotDynamicRule` | | ✓ | | |
-| `_InspectionLot` | | ✓ | | |
-| `_QualityLevelLastOpenInspLot` | | ✓ | | |
-| `_ProductPlantQtManagement` | | ✓ | | |
-| `_BillOfOperationsGroup` | | ✓ | | |
-| `_BOOOperationInternalID` | | ✓ | | |
-| `_BillOfOperations` | | ✓ | | |
-| `_BillOfOperationsOperation` | | ✓ | | |
-| `_BillOfOperationsSequence` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |  |  |
+| `Material` | ✓ | |  | `matnr` |  |  |
+| `BillOfOperationsType` | ✓ | |  | `plnty` |  |  |
+| `BillOfOperationsGroup` | ✓ | |  | `plnnr` |  |  |
+| `BillOfOperationsVariant` | ✓ | |  | `plnal` |  |  |
+| `BOOOperationInternalID` | ✓ | |  | `plnkn` |  |  |
+| `Sequence` | ✓ | |  | `plnfl` |  |  |
+| `QualityLevelInternalID` | ✓ | |  | `zaehlerql` |  |  |
+| `Supplier` |  | |  | `lifnr` |  |  |
+| `Manufacturer` |  | |  | `hersteller` |  |  |
+| `Customer` |  | |  | `kunnr` |  |  |
+| `InspectionLotType` |  | |  | `pruefart` |  |  |
+| `InspectionOperation` |  | |  | `cast( vornr as qvornr_rap preserving type )` |  |  |
+| `InspectionCharacteristic` |  | |  | `merknr` |  |  |
+| `QltyLvlIndirectlyChangedBy` |  | |  | `aendlosa` |  |  |
+| `QltyLvlManuallyChangedBy` |  | |  | `aendlosm` |  |  |
+| `QltyLvlIndirectlyChangedOn` |  | |  | `aedatlosa` |  |  |
+| `QltyLvlManuallyChangedOn` |  | |  | `aedatlosm` |  |  |
+| `InspectionLot` |  | |  | `cast( prueflos as vdm_qplosql preserving type )` |  |  |
+| `InspLotUsageDecisionValuation` |  | |  | `bwlos` |  |  |
+| `InspLotUsgeDcsnDynValuation` |  | |  | `bwlosdyn` |  |  |
+| `SamplingProcedure` |  | |  | `stichprver` |  |  |
+| `InspLotDynamicRule` |  | |  | `cast( dynregel as vdm_qdynregel preserving type )` |  |  |
+| `QltyLevelNextDynRuleStage` |  | |  | `prstufenae` |  |  |
+| `InspLotsWithoutUsageDecision` |  | |  | `anzloseove` |  |  |
+| `InspLotsSinceStageChg` |  | |  | `anzpraen` |  |  |
+| `RjctdInspLotsSinceStgeChg` |  | |  | `anznioaen` |  |  |
+| `InspResultDynModifValuation` |  | |  | `dbewertg` |  |  |
+| `InspectionValuationResult` |  | |  | `mbewertg` |  |  |
+| `QualityLevelLastOpenInspLot` |  | |  | `plosove` |  |  |
+| `QualityLevelLastInspectionOn` |  | |  | `datlpruef` |  |  |
+| `QltyLevelCanceledInspections` |  | |  | `anzprstop` |  |  |
+| `QualityLevelDeletionOn` |  | |  | `deldatum` |  |  |
+| `QualityLevelResetOn` |  | |  | `resdatum` |  |  |
+| `ChangedDateTime` |  | |  | `case qdql.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qdql.changeddatetime end` |  |  |
+| `_Plant` | | ✓ | | | | |
+| `_Material` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Manufacturer` | | ✓ | | | | |
+| `_BOOCharacteristic` | | ✓ | | | | |
+| `_NextInspLotDynRuleStage` | | ✓ | | | | |
+| `_InspLotDynamicRule` | | ✓ | | | | |
+| `_InspectionLot` | | ✓ | | | | |
+| `_QualityLevelLastOpenInspLot` | | ✓ | | | | |
+| `_ProductPlantQtManagement` | | ✓ | | | | |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BOOOperationInternalID` | | ✓ | | | | |
+| `_BillOfOperations` | | ✓ | | | | |
+| `_BillOfOperationsOperation` | | ✓ | | | | |
+| `_BillOfOperationsSequence` | | ✓ | | | | |
 
 ## Associations
 

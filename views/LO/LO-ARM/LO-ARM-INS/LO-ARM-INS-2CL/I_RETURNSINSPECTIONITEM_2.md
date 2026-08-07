@@ -30,35 +30,35 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ReturnsInspection` | ✓ | |  | `InspectionDocument` |
-| `ReturnsInspectionItem` | ✓ | |  | `InspectionDocumentItem` |
-| `Product` |  | |  |  |
-| `InspectionCode` |  | |  |  |
-| `InspectionDate` |  | |  |  |
-| `ProductInspectorName` |  | |  |  |
-| `InspectionLeadingUnitCode` |  | |  |  |
-| `InspectedProductQtyInBaseUnit` |  | |  |  |
-| `BaseUnit` |  | |  |  |
-| `InspectionDocumentIsDeleted` |  | |  |  |
-| `InspectionDocumentIsCancelled` |  | |  |  |
-| `ReturnsFollowUpActivity` |  | |  |  |
-| `InspectedProductQtyInSalesUnit` |  | |  |  |
-| `SalesUnit` |  | |  |  |
-| `InspectedProductQuantity` |  | |  | `case when ReturnsInspectionItem.InspectionLeadingUnitCode = '1' then cast (ReturnsInspectionItem.InspectedProductQtyInBaseUnit as /spe/inspqty preserving type ) when ReturnsInspectionItem.InspectionLeadingUnitCode = '2' then cast (ReturnsInspectionItem.InspectedProductQtyInSalesUnit as /spe/inspqty preserving type ) else cast (ReturnsInspectionItem.InspectedProductQtyInBaseUnit as /spe/inspqty preserving type ) end` |
-| `InspectedProductUnit` |  | |  | `case when ReturnsInspectionItem.InspectionLeadingUnitCode = '1' then cast (ReturnsInspectionItem.BaseUnit as meins preserving type ) when ReturnsInspectionItem.InspectionLeadingUnitCode = '2' then cast (ReturnsInspectionItem.SalesUnit as meins preserving type ) else cast (ReturnsInspectionItem.BaseUnit as meins preserving type ) end` |
-| `ReturnsInspectionItemStatus` |  | |  | `case when ReturnsInspectionItem.InspectionCode is not initial and ReturnsInspectionItem.InspectedProductQtyInBaseUnit > 0 then cast( '2' as msr_insp_insp_status) when ReturnsInspectionItem.InspectionCode is initial or ReturnsInspectionItem.InspectedProductQtyInBaseUnit <= 0 then cast( '1' as msr_insp_insp_status ) when ReturnsInspectionItem.InspectionDocumentIsDeleted is not initial then cast( '4' as msr_insp_insp_status ) else cast( '1' as msr_insp_insp_status ) end` |
-| `RetsFllwUpActyItmSts` |  | |  | `case when ReturnsInspection.RetsMgmtInspPubgSts = 'P' or ReturnsInspection.RetsMgmtInspPubgSts = 'C' then cast( '3' as msr_insp_ldm_status) when ReturnsInspection.RetsMgmtInspPubgSts <> 'P' and ReturnsInspection.RetsMgmtInspPubgSts <> 'C' and ReturnsInspectionItem.ReturnsFollowUpActivity is not initial then cast( '2' as msr_insp_ldm_status) when ReturnsInspection.RetsMgmtInspPubgSts <> 'P' and ReturnsInspection.RetsMgmtInspPubgSts <> 'C' and ReturnsInspectionItem.ReturnsFollowUpActivity is initial then cast( '1' as msr_insp_ldm_status) when ReturnsInspection.RetsMgmtInspPubgSts = 'P' and ReturnsInspectionItem.InspectionDocumentIsCancelled <> '' and ReturnsInspectionItem.ReturnsFollowUpActivity <> '0031' then cast( '2' as msr_insp_ldm_status) when ReturnsInspectionItem.InspectionDocumentIsDeleted <> '' then '4' else cast( '1' as msr_insp_ldm_status) end` |
-| `RetsMgmtProcess` |  | |  |  |
-| `TargetPlant` |  | | `_ReturnsInspectionExecuted` | `TargetPlant` |
-| `TargetStorageLocation` |  | | `_ReturnsInspectionExecuted` | `TargetStorageLocation` |
-| `TargetStockType` |  | | `_ReturnsInspectionExecuted` | `TargetStockType` |
-| `TgtProdForGdsMvtPostg` |  | | `_ReturnsInspectionExecuted` | `TgtProdForGdsMvtPostg` |
-| `Supplier` |  | | `_ReturnsInspectionExecuted` | `Supplier` |
-| `RetsFllwUpActyRespPersnName` |  | |  |  |
-| `RetsFllwUpActyReleasedDate` |  | |  |  |
-| `_ReturnsInspection` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReturnsInspection` | ✓ | |  | `InspectionDocument` |  |  |
+| `ReturnsInspectionItem` | ✓ | |  | `InspectionDocumentItem` |  |  |
+| `Product` |  | |  |  |  |  |
+| `InspectionCode` |  | |  |  |  |  |
+| `InspectionDate` |  | |  |  |  |  |
+| `ProductInspectorName` |  | |  |  |  |  |
+| `InspectionLeadingUnitCode` |  | |  |  |  |  |
+| `InspectedProductQtyInBaseUnit` |  | |  |  |  |  |
+| `BaseUnit` |  | |  |  |  |  |
+| `InspectionDocumentIsDeleted` |  | |  |  |  |  |
+| `InspectionDocumentIsCancelled` |  | |  |  |  |  |
+| `ReturnsFollowUpActivity` |  | |  |  |  |  |
+| `InspectedProductQtyInSalesUnit` |  | |  |  |  |  |
+| `SalesUnit` |  | |  |  |  |  |
+| `InspectedProductQuantity` |  | |  | `case when ReturnsInspectionItem.InspectionLeadingUnitCode = '1' then cast (ReturnsInspectionItem.InspectedProductQtyInBaseUnit as /spe/inspqty preserving type ) when ReturnsInspectionItem.InspectionLeadingUnitCode = '2' then cast (ReturnsInspectionItem.InspectedProductQtyInSalesUnit as /spe/inspqty preserving type ) else cast (ReturnsInspectionItem.InspectedProductQtyInBaseUnit as /spe/inspqty preserving type ) end` |  |  |
+| `InspectedProductUnit` |  | |  | `case when ReturnsInspectionItem.InspectionLeadingUnitCode = '1' then cast (ReturnsInspectionItem.BaseUnit as meins preserving type ) when ReturnsInspectionItem.InspectionLeadingUnitCode = '2' then cast (ReturnsInspectionItem.SalesUnit as meins preserving type ) else cast (ReturnsInspectionItem.BaseUnit as meins preserving type ) end` |  |  |
+| `ReturnsInspectionItemStatus` |  | |  | `case when ReturnsInspectionItem.InspectionCode is not initial and ReturnsInspectionItem.InspectedProductQtyInBaseUnit > 0 then cast( '2' as msr_insp_insp_status) when ReturnsInspectionItem.InspectionCode is initial or ReturnsInspectionItem.InspectedProductQtyInBaseUnit <= 0 then cast( '1' as msr_insp_insp_status ) when ReturnsInspectionItem.InspectionDocumentIsDeleted is not initial then cast( '4' as msr_insp_insp_status ) else cast( '1' as msr_insp_insp_status ) end` |  |  |
+| `RetsFllwUpActyItmSts` |  | |  | `case when ReturnsInspection.RetsMgmtInspPubgSts = 'P' or ReturnsInspection.RetsMgmtInspPubgSts = 'C' then cast( '3' as msr_insp_ldm_status) when ReturnsInspection.RetsMgmtInspPubgSts <> 'P' and ReturnsInspection.RetsMgmtInspPubgSts <> 'C' and ReturnsInspectionItem.ReturnsFollowUpActivity is not initial then cast( '2' as msr_insp_ldm_status) when ReturnsInspection.RetsMgmtInspPubgSts <> 'P' and ReturnsInspection.RetsMgmtInspPubgSts <> 'C' and ReturnsInspectionItem.ReturnsFollowUpActivity is initial then cast( '1' as msr_insp_ldm_status) when ReturnsInspection.RetsMgmtInspPubgSts = 'P' and ReturnsInspectionItem.InspectionDocumentIsCancelled <> '' and ReturnsInspectionItem.ReturnsFollowUpActivity <> '0031' then cast( '2' as msr_insp_ldm_status) when ReturnsInspectionItem.InspectionDocumentIsDeleted <> '' then '4' else cast( '1' as msr_insp_ldm_status) end` |  |  |
+| `RetsMgmtProcess` |  | |  |  |  |  |
+| `TargetPlant` |  | | `_ReturnsInspectionExecuted` | `TargetPlant` |  |  |
+| `TargetStorageLocation` |  | | `_ReturnsInspectionExecuted` | `TargetStorageLocation` |  |  |
+| `TargetStockType` |  | | `_ReturnsInspectionExecuted` | `TargetStockType` |  |  |
+| `TgtProdForGdsMvtPostg` |  | | `_ReturnsInspectionExecuted` | `TgtProdForGdsMvtPostg` |  |  |
+| `Supplier` |  | | `_ReturnsInspectionExecuted` | `Supplier` |  |  |
+| `RetsFllwUpActyRespPersnName` |  | |  |  |  |  |
+| `RetsFllwUpActyReleasedDate` |  | |  |  |  |  |
+| `_ReturnsInspection` | | ✓ | | | | |
 
 ## Associations
 

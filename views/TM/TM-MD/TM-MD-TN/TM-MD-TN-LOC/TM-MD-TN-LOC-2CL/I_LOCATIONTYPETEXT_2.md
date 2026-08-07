@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LocationType` | ✓ | |  | `cast( domvalue_l as /sapapo/c_loctype )` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `LocationTypeDesc` |  | |  | `cast( ddtext as /scmtms/vdm_loc_type_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_LocationType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LocationType` | ✓ | |  | `cast( domvalue_l as /sapapo/c_loctype )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `LocationTypeDesc` |  | |  | `cast( ddtext as /scmtms/vdm_loc_type_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_LocationType` | | ✓ | | | | |
 
 ## Associations
 

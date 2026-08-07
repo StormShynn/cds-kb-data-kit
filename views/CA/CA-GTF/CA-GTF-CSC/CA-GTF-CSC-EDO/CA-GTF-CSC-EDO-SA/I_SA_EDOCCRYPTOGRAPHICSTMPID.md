@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SA_EDocLgclSolnUUID` | ✓ | |  | `egs_id` |
-| `SA_EDocCryptographicSqncNmbr` | ✓ | |  | `csid_seq_no` |
-| `SA_EDocValidityStartDate` | ✓ | |  | `from_date` |
-| `SA_EDocValidityEndDate` |  | |  | `to_date` |
-| `SA_EDocInvoiceSequenceNumber` |  | |  | `icv` |
-| `SA_EDocPrevInvoiceHashBinary` |  | |  | `prev_inv_hash` |
-| `SA_EDocComplianceRequestId` |  | |  | `c_csid_req_id` |
-| `SA_EDocProductionRequestId` |  | |  | `p_csid_req_id` |
-| `SA_EDocElectronicGnrtdSolnSts` |  | |  | `status` |
-| `SA_EDocCertSigningReqDtaBinary` |  | |  | `csr` |
-| `SA_EDocComplianceStampIdBinary` |  | |  | `c_csid` |
-| `SA_EDocProdnStmpIdBinary` |  | |  | `p_csid` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SA_EDocLgclSolnUUID` | ✓ | |  | `egs_id` |  |  |
+| `SA_EDocCryptographicSqncNmbr` | ✓ | |  | `csid_seq_no` |  |  |
+| `SA_EDocValidityStartDate` | ✓ | |  | `from_date` |  |  |
+| `SA_EDocValidityEndDate` |  | |  | `to_date` |  |  |
+| `SA_EDocInvoiceSequenceNumber` |  | |  | `icv` |  |  |
+| `SA_EDocPrevInvoiceHashBinary` |  | |  | `prev_inv_hash` |  |  |
+| `SA_EDocComplianceRequestId` |  | |  | `c_csid_req_id` |  |  |
+| `SA_EDocProductionRequestId` |  | |  | `p_csid_req_id` |  |  |
+| `SA_EDocElectronicGnrtdSolnSts` |  | |  | `status` |  |  |
+| `SA_EDocCertSigningReqDtaBinary` |  | |  | `csr` |  |  |
+| `SA_EDocComplianceStampIdBinary` |  | |  | `c_csid` |  |  |
+| `SA_EDocProdnStmpIdBinary` |  | |  | `p_csid` |  |  |
 
 ## Source Code
 

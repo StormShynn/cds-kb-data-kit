@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationDocumentType` | ✓ | |  | `cast(docty as fincs_documenttype preserving type )` |
-| `PostingLevel` |  | |  | `cast(rlevl as fincs_postinglevel preserving type )` |
-| `ConsolidationBalanceCheck` |  | |  | `cast(blchk as fincs_balancecheck preserving type )` |
-| `CnsldtnOnlyManualPostgIsAllwd` |  | |  | `cast(mnpos as fincs_onlymanualpostgisallwd preserving type )` |
-| `CnsldtnDocTypeBusinessAppl` |  | |  | `cast(cacta as fincs_doctypebusinessappl preserving type )` |
-| `CnsldtnPostingIsInTransCrcy` |  | |  | `cast(tcind as fincs_postingisintranscrcy preserving type )` |
-| `CnsldtnPostingIsInLocalCrcy` |  | |  | `cast(lcind as fincs_postingisinlocalcrcy preserving type )` |
-| `CnsldtnPostingIsInGroupCrcy` |  | |  | `cast(gcind as fincs_postingisingroupcrcy preserving type )` |
-| `CnsldtnPostingIsWithQuantities` |  | |  | `cast(qntin as fincs_postingiswithquantities preserving type )` |
-| `ConsolidationPostingLevel` |  | |  | `cast(rlevl as fincs_postinglevel preserving type )` |
-| `_PostingLevel` | | ✓ | | |
-| `_PostingLevel_2` | | ✓ | | |
-| `_DocTypeBusinessAppl` | | ✓ | | |
-| `_Text` | | ✓ | | |
-| `_DocTypeHierNode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDocumentType` | ✓ | |  | `cast(docty as fincs_documenttype preserving type )` |  |  |
+| `PostingLevel` |  | |  | `cast(rlevl as fincs_postinglevel preserving type )` |  |  |
+| `ConsolidationBalanceCheck` |  | |  | `cast(blchk as fincs_balancecheck preserving type )` |  |  |
+| `CnsldtnOnlyManualPostgIsAllwd` |  | |  | `cast(mnpos as fincs_onlymanualpostgisallwd preserving type )` |  |  |
+| `CnsldtnDocTypeBusinessAppl` |  | |  | `cast(cacta as fincs_doctypebusinessappl preserving type )` |  |  |
+| `CnsldtnPostingIsInTransCrcy` |  | |  | `cast(tcind as fincs_postingisintranscrcy preserving type )` |  |  |
+| `CnsldtnPostingIsInLocalCrcy` |  | |  | `cast(lcind as fincs_postingisinlocalcrcy preserving type )` |  |  |
+| `CnsldtnPostingIsInGroupCrcy` |  | |  | `cast(gcind as fincs_postingisingroupcrcy preserving type )` |  |  |
+| `CnsldtnPostingIsWithQuantities` |  | |  | `cast(qntin as fincs_postingiswithquantities preserving type )` |  |  |
+| `ConsolidationPostingLevel` |  | |  | `cast(rlevl as fincs_postinglevel preserving type )` |  |  |
+| `_PostingLevel` | | ✓ | | | | |
+| `_PostingLevel_2` | | ✓ | | | | |
+| `_DocTypeBusinessAppl` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_DocTypeHierNode` | | ✓ | | | | |
 
 ## Associations
 

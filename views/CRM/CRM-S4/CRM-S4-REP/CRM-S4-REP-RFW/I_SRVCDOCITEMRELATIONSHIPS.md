@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ServiceDocument` | ✓ | |  | `object_id` |
-| `ServiceObjectType` | ✓ | |  | `objtype_h` |
-| `SrvcItemRelshpFromItemNumber` | ✓ | |  | `item_number_a` |
-| `SrvcItemRelshpType` | ✓ | |  | `item_relationship_type` |
-| `SrvcItemRelshpToItemNumber` | ✓ | |  | `item_number_b` |
-| `_ServiceDocumentItemFrom` | | ✓ | | |
-| `_ServiceDocumentItemTo` | | ✓ | | |
-| `_ServiceItemRelationshipType` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceDocument` | ✓ | |  | `object_id` |  |  |
+| `ServiceObjectType` | ✓ | |  | `objtype_h` |  |  |
+| `SrvcItemRelshpFromItemNumber` | ✓ | |  | `item_number_a` |  |  |
+| `SrvcItemRelshpType` | ✓ | |  | `item_relationship_type` |  |  |
+| `SrvcItemRelshpToItemNumber` | ✓ | |  | `item_number_b` |  |  |
+| `_ServiceDocumentItemFrom` | | ✓ | | | | |
+| `_ServiceDocumentItemTo` | | ✓ | | | | |
+| `_ServiceItemRelationshipType` | | ✓ | | | | |
 
 ## Associations
 

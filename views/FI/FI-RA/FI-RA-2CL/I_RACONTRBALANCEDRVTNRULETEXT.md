@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
-| `RAContrBalanceDerivationRule` | ✓ | |  | `cast(dd07t.domvalue_l as farr_create_liability_method)` |
-| `ContrBalanceDerivationRuleName` |  | |  | `ddtext` |
-| `DomainValue` |  | |  | `domvalue_l` |
-| `_Language` | | ✓ | | |
-| `_RAContrBalanceDerivationRule` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |  |  |
+| `RAContrBalanceDerivationRule` | ✓ | |  | `cast(dd07t.domvalue_l as farr_create_liability_method)` |  |  |
+| `ContrBalanceDerivationRuleName` |  | |  | `ddtext` |  |  |
+| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_RAContrBalanceDerivationRule` | | ✓ | | | | |
 
 ## Associations
 

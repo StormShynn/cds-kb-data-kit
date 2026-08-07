@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `AccountingDocument` | ✓ | |  |  |
-| `FiscalYear` | ✓ | |  |  |
-| `TaxItem` | ✓ | |  |  |
-| `TaxItemUUID` | ✓ | |  |  |
-| `TaxCode` |  | |  |  |
-| `TaxBaseAmountInCoCodeCrcy` |  | |  | `cast( TaxBaseAmountInCoCodeCrcy as hwbas_shl)` |
-| `TaxBaseAmountInTransCrcy` |  | |  | `cast( TaxBaseAmountInTransCrcy as fwbas_shl )` |
-| `TaxAmountInCoCodeCrcy` |  | |  | `cast( TaxAmountInCoCodeCrcy as fis_mwsts )` |
-| `TaxAmountInTransCrcy` |  | |  | `cast( TaxAmountInTransCrcy as wmwst_shl )` |
-| `TransactionTypeDetermination` |  | |  |  |
-| `TaxAmountInRptgCrcy` |  | |  | `cast ( case when TaxDataSource = '2' then TaxAmountInRptgCrcy else case when CompanyCodeCountry = ReportingCountry and CompanyCodeCurrency = ReportingCurrency then TaxAmountInCoCodeCrcy else TaxAmountInRptgCrcy end end as glo_tax_amount_rptg_crcy )` |
-| `TaxBaseAmountInRptgCrcy` |  | |  | `cast ( case when TaxDataSource = '2' then TaxBaseAmountInRptgCrcy else case when CompanyCodeCountry = ReportingCountry and CompanyCodeCurrency = ReportingCurrency then TaxBaseAmountInCoCodeCrcy else TaxBaseAmountInRptgCrcy end end as glo_taxbase_amount_rptg_crcy )` |
-| `ReportingCountry` |  | |  |  |
-| `ReportingCurrency` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `TransactionCurrency` |  | |  |  |
-| `TaxDataSource` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_JournalEntry` | | ✓ | | |
-| `_OperationalAcctgDocItem` | | ✓ | | |
-| `_CompanyCodeCurrency` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `AccountingDocument` | ✓ | |  |  |  |  |
+| `FiscalYear` | ✓ | |  |  |  |  |
+| `TaxItem` | ✓ | |  |  |  |  |
+| `TaxItemUUID` | ✓ | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `cast( TaxBaseAmountInCoCodeCrcy as hwbas_shl)` |  |  |
+| `TaxBaseAmountInTransCrcy` |  | |  | `cast( TaxBaseAmountInTransCrcy as fwbas_shl )` |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  | `cast( TaxAmountInCoCodeCrcy as fis_mwsts )` |  |  |
+| `TaxAmountInTransCrcy` |  | |  | `cast( TaxAmountInTransCrcy as wmwst_shl )` |  |  |
+| `TransactionTypeDetermination` |  | |  |  |  |  |
+| `TaxAmountInRptgCrcy` |  | |  | `cast ( case when TaxDataSource = '2' then TaxAmountInRptgCrcy else case when CompanyCodeCountry = ReportingCountry and CompanyCodeCurrency = ReportingCurrency then TaxAmountInCoCodeCrcy else TaxAmountInRptgCrcy end end as glo_tax_amount_rptg_crcy )` |  |  |
+| `TaxBaseAmountInRptgCrcy` |  | |  | `cast ( case when TaxDataSource = '2' then TaxBaseAmountInRptgCrcy else case when CompanyCodeCountry = ReportingCountry and CompanyCodeCurrency = ReportingCurrency then TaxBaseAmountInCoCodeCrcy else TaxBaseAmountInRptgCrcy end end as glo_taxbase_amount_rptg_crcy )` |  |  |
+| `ReportingCountry` |  | |  |  |  |  |
+| `ReportingCurrency` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `TransactionCurrency` |  | |  |  |  |  |
+| `TaxDataSource` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+| `_OperationalAcctgDocItem` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
 
 ## Source Code
 

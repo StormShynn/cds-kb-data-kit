@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |
-| `CompanyCodeParameterType` | ✓ | |  | `party` |
-| `CompanyCodeParameterValue` |  | |  | `paval` |
-| `_CompanyCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
+| `CompanyCodeParameterType` | ✓ | |  | `party` |  |  |
+| `CompanyCodeParameterValue` |  | |  | `paval` |  |  |
+| `_CompanyCode` | | ✓ | | | | |
 
 ## Associations
 

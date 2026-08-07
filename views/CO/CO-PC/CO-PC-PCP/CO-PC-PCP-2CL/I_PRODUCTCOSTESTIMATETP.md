@@ -30,84 +30,84 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CostingReferenceObject` | ✓ | |  |  |
-| `CostEstimate` | ✓ | |  |  |
-| `CostingType` | ✓ | |  |  |
-| `CostingDate` | ✓ | |  |  |
-| `CostingVersion` | ✓ | |  |  |
-| `ValuationVariant` | ✓ | |  |  |
-| `CostIsEnteredManually` | ✓ | |  |  |
-| `Product` |  | |  |  |
-| `Plant` |  | |  |  |
-| `ValuationArea` |  | |  |  |
-| `ValuationType` |  | |  |  |
-| `ControllingArea` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `CostEstimateValidityStartDate` |  | |  |  |
-| `CostEstimateValidityEndDate` |  | |  |  |
-| `ValuationDate` |  | |  |  |
-| `QuantityStructureDate` |  | |  |  |
-| `ProductionVersion` |  | |  |  |
-| `BillOfMaterial` |  | |  |  |
-| `ProductBOMUsage` |  | |  |  |
-| `AlternativeBillOfMaterial` |  | |  |  |
-| `TaskListGroup` |  | |  |  |
-| `TaskListType` |  | |  |  |
-| `TaskListGroupCounter` |  | |  |  |
-| `CostingLotSize` |  | |  |  |
-| `ValuationQuantityUnit` |  | |  |  |
-| `CostEstimateCreatedByUser` |  | |  |  |
-| `CostEstimateCreationDate` |  | |  |  |
-| `CostEstimateStatus` |  | |  |  |
-| `CostEstimateStatusCriticality` |  | |  |  |
-| `CostEstimateIsReleased` |  | |  |  |
-| `CostingSheet` |  | |  |  |
-| `CostingOverheadType` |  | |  |  |
-| `ProductValuationStrategy` |  | |  |  |
-| `ProductValnPurgInfoRecdStrgy` |  | |  |  |
-| `CostingVariant` |  | |  |  |
-| `CostingOverheadGroup` |  | |  |  |
-| `CostingOverhead` |  | |  |  |
-| `CostEstimateMarkingDate` |  | |  |  |
-| `CostEstimateMarkedByUser` |  | |  |  |
-| `CostEstimateMarkingUser` |  | |  |  |
-| `CostEstimateReleaseDate` |  | |  |  |
-| `CostEstimateReleasedByUser` |  | |  |  |
-| `CostEstimateReleaseUser` |  | |  |  |
-| `CostEstimateTransferControl` |  | |  |  |
-| `CostComponentStructure` |  | |  |  |
-| `ProfitCenter` |  | |  |  |
-| `CompanyCodeCurrency` |  | |  |  |
-| `ControllingAreaCurrency` |  | |  |  |
-| `ExchangeRateType` |  | |  |  |
-| `EstimatedCostCostingRun` |  | |  |  |
-| `EstimatedCostCostingRunDate` |  | |  |  |
-| `TotalCostInCompanyCodeCurrency` |  | |  |  |
-| `FixedCostInCompanyCodeCurrency` |  | |  |  |
-| `TotalCostInCtrlgAreaCurrency` |  | |  |  |
-| `FixedCostInCtrlgAreaCurrency` |  | |  |  |
-| `CO2eqEmissionUnit` |  | |  |  |
-| `CO2eqEmissionQuantity` |  | |  |  |
-| `_Item` | | ✓ | | |
-| `_CreatedByContactCard` | | ✓ | | |
-| `_MarkedByContactCard` | | ✓ | | |
-| `_ReleasedByContactCard` | | ✓ | | |
-| `_ProductText` | | ✓ | | |
-| `_PlantText` | | ✓ | | |
-| `_CostingVersionText` | | ✓ | | |
-| `_CostingVersionText_2` | | ✓ | | |
-| `_CostingVariantText` | | ✓ | | |
-| `_ValuationVariantText` | | ✓ | | |
-| `_CostingTypeText` | | ✓ | | |
-| `_CompanyCodeText` | | ✓ | | |
-| `_ProfitCenterText` | | ✓ | | |
-| `_ProfitCenterText_2` | | ✓ | | |
-| `_EstimatedCostCostingRunText` | | ✓ | | |
-| `_CostEstimateStatusText` | | ✓ | | |
-| `_CostingOverheadGroupText` | | ✓ | | |
-| `_ControllingAreaText` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostingReferenceObject` | ✓ | |  |  |  |  |
+| `CostEstimate` | ✓ | |  |  |  |  |
+| `CostingType` | ✓ | |  |  |  |  |
+| `CostingDate` | ✓ | |  |  |  |  |
+| `CostingVersion` | ✓ | |  |  |  |  |
+| `ValuationVariant` | ✓ | |  |  |  |  |
+| `CostIsEnteredManually` | ✓ | |  |  |  |  |
+| `Product` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `ValuationArea` |  | |  |  |  |  |
+| `ValuationType` |  | |  |  |  |  |
+| `ControllingArea` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `CostEstimateValidityStartDate` |  | |  |  |  |  |
+| `CostEstimateValidityEndDate` |  | |  |  |  |  |
+| `ValuationDate` |  | |  |  |  |  |
+| `QuantityStructureDate` |  | |  |  |  |  |
+| `ProductionVersion` |  | |  |  |  |  |
+| `BillOfMaterial` |  | |  |  |  |  |
+| `ProductBOMUsage` |  | |  |  |  |  |
+| `AlternativeBillOfMaterial` |  | |  |  |  |  |
+| `TaskListGroup` |  | |  |  |  |  |
+| `TaskListType` |  | |  |  |  |  |
+| `TaskListGroupCounter` |  | |  |  |  |  |
+| `CostingLotSize` |  | |  |  |  |  |
+| `ValuationQuantityUnit` |  | |  |  |  |  |
+| `CostEstimateCreatedByUser` |  | |  |  |  |  |
+| `CostEstimateCreationDate` |  | |  |  |  |  |
+| `CostEstimateStatus` |  | |  |  |  |  |
+| `CostEstimateStatusCriticality` |  | |  |  |  |  |
+| `CostEstimateIsReleased` |  | |  |  |  |  |
+| `CostingSheet` |  | |  |  |  |  |
+| `CostingOverheadType` |  | |  |  |  |  |
+| `ProductValuationStrategy` |  | |  |  |  |  |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  |  |  |
+| `CostingVariant` |  | |  |  |  |  |
+| `CostingOverheadGroup` |  | |  |  |  |  |
+| `CostingOverhead` |  | |  |  |  |  |
+| `CostEstimateMarkingDate` |  | |  |  |  |  |
+| `CostEstimateMarkedByUser` |  | |  |  |  |  |
+| `CostEstimateMarkingUser` |  | |  |  |  |  |
+| `CostEstimateReleaseDate` |  | |  |  |  |  |
+| `CostEstimateReleasedByUser` |  | |  |  |  |  |
+| `CostEstimateReleaseUser` |  | |  |  |  |  |
+| `CostEstimateTransferControl` |  | |  |  |  |  |
+| `CostComponentStructure` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `CompanyCodeCurrency` |  | |  |  |  |  |
+| `ControllingAreaCurrency` |  | |  |  |  |  |
+| `ExchangeRateType` |  | |  |  |  |  |
+| `EstimatedCostCostingRun` |  | |  |  |  |  |
+| `EstimatedCostCostingRunDate` |  | |  |  |  |  |
+| `TotalCostInCompanyCodeCurrency` |  | |  |  |  |  |
+| `FixedCostInCompanyCodeCurrency` |  | |  |  |  |  |
+| `TotalCostInCtrlgAreaCurrency` |  | |  |  |  |  |
+| `FixedCostInCtrlgAreaCurrency` |  | |  |  |  |  |
+| `CO2eqEmissionUnit` |  | |  |  |  |  |
+| `CO2eqEmissionQuantity` |  | |  |  |  |  |
+| `_Item` | | ✓ | | | | |
+| `_CreatedByContactCard` | | ✓ | | | | |
+| `_MarkedByContactCard` | | ✓ | | | | |
+| `_ReleasedByContactCard` | | ✓ | | | | |
+| `_ProductText` | | ✓ | | | | |
+| `_PlantText` | | ✓ | | | | |
+| `_CostingVersionText` | | ✓ | | | | |
+| `_CostingVersionText_2` | | ✓ | | | | |
+| `_CostingVariantText` | | ✓ | | | | |
+| `_ValuationVariantText` | | ✓ | | | | |
+| `_CostingTypeText` | | ✓ | | | | |
+| `_CompanyCodeText` | | ✓ | | | | |
+| `_ProfitCenterText` | | ✓ | | | | |
+| `_ProfitCenterText_2` | | ✓ | | | | |
+| `_EstimatedCostCostingRunText` | | ✓ | | | | |
+| `_CostEstimateStatusText` | | ✓ | | | | |
+| `_CostingOverheadGroupText` | | ✓ | | | | |
+| `_ControllingAreaText` | | ✓ | | | | |
 
 ## Source Code
 

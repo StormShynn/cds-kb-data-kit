@@ -29,84 +29,84 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EWMProductionMaterialRequest` | ✓ | |  |  |
-| `EWMProductionMaterialReqItem` | ✓ | |  |  |
-| `EWMProductionMaterialReqUUID` |  | |  |  |
-| `EWMProductionMatlReqItemUUID` |  | |  |  |
-| `EWMWarehouse` |  | |  |  |
-| `EWMProdnMatlReqDocCategory` |  | |  |  |
-| `EWMProdnMatlReqItemCategory` |  | |  |  |
-| `EWMProductionMatlReqItemType` |  | |  |  |
-| `EWMProdnMatlReqCrtnUTCDateTime` |  | |  |  |
-| `EWMProdnMatlReqCreatedByUser` |  | |  |  |
-| `EWMDelivLastChangeUTCDateTime` |  | |  |  |
-| `EWMProdnMatlReqLastChgdByUser` |  | |  |  |
-| `EWMPlndCompRqmtStrtUTCDateTime` |  | | `_PlndCompRqmtStrtUTCDateTime` | `DeliveryRelatedStartDateTime` |
-| `Product` |  | |  |  |
-| `ProductUUID` |  | |  |  |
-| `Batch` |  | |  |  |
-| `ProductQuantity` |  | |  |  |
-| `QuantityUnit` |  | |  |  |
-| `EWMStockUsage` |  | |  |  |
-| `EWMStockType` |  | |  |  |
-| `EntitledToDisposeParty` |  | |  |  |
-| `EntitledToDisposePartyName` |  | | `_Entitled` | `BusinessPartnerName` |
-| `EWMStockOwner` |  | |  |  |
-| `EWMStockOwnerName` |  | | `_StockOwner` | `BusinessPartnerName` |
-| `StockDocumentCategory` |  | |  |  |
-| `WBSElementInternalID` |  | |  |  |
-| `WBSElementExternalID` |  | |  |  |
-| `SpecialStockIdfgSalesOrder` |  | |  |  |
-| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
-| `ManufacturingOrder` |  | |  | `cast( _ManufacturingOrder.EWMWhseReqRefDocumentNumber as manufacturingorder )` |
-| `Reservation` |  | |  | `cast( ltrim( _Reservation.EWMWhseReqRefDocumentNumber, '0' ) as rsnum )` |
-| `ReservationItem` |  | |  | `cast( ltrim( _Reservation.EWMWhseRequestRefDocumentItem, '0' ) as pph_rspos )` |
-| `ReservationType` |  | |  |  |
-| `WarehouseProcessType` |  | |  |  |
-| `EWMMovementControl` |  | |  |  |
-| `EWMStagingMethod` |  | |  |  |
-| `EWMProductionSupplyArea` |  | |  |  |
-| `EWMGoodsMovementStorageBin` |  | |  |  |
-| `BatchClassification` |  | |  |  |
-| `BatchClass` |  | |  |  |
-| `EWMBackflushIsActive` |  | |  |  |
-| `Operation` |  | |  |  |
-| `OperationDescription` |  | |  |  |
-| `WorkCenter` |  | |  |  |
-| `EWMProdnMatlReqItemIsDeleted` |  | |  |  |
-| `GoodsIssueStatus` |  | |  |  |
-| `CompletionStatus` |  | |  |  |
-| `EWMPlannedStagingStatus` |  | |  |  |
-| `EWMStagingStatus` |  | |  |  |
-| `EWMManufacturingOrderStatus` |  | |  |  |
-| `EWMGoodsMovementLockStatus` |  | |  |  |
-| `EWMStagingLockStatus` |  | |  |  |
-| `EWMItmInconsistencyBlockStatus` |  | |  |  |
-| `OverallBlockStatus` |  | |  |  |
-| `_Entitled` | | ✓ | | |
-| `_StockOwner` | | ✓ | | |
-| `_ManufacturingOrder` | | ✓ | | |
-| `_Reservation` | | ✓ | | |
-| `_EWMProdnMatlReqItmCatTxt` | | ✓ | | |
-| `_EWMProdnMatlReqItemTypeTxt` | | ✓ | | |
-| `_ProductTxt` | | ✓ | | |
-| `_EWMStockTypeTxt` | | ✓ | | |
-| `_EWMStockUsageTxt` | | ✓ | | |
-| `_EWMWarehouseProcessTypeTxt` | | ✓ | | |
-| `_EWMStagingMethodTxt` | | ✓ | | |
-| `_EWMProductionSupplyAreaTxt` | | ✓ | | |
-| `_StockDocCategoryTxt` | | ✓ | | |
-| `_EWMPlannedStagingStatusTxt` | | ✓ | | |
-| `_EWMStagingStatusTxt` | | ✓ | | |
-| `_GoodsIssueStatusTxt` | | ✓ | | |
-| `_CompletionStatusTxt` | | ✓ | | |
-| `_EWMManufacturingOrdStatusTxt` | | ✓ | | |
-| `_EWMGoodsMvtLockStatusTxt` | | ✓ | | |
-| `_EWMStagingLockStatusTxt` | | ✓ | | |
-| `_EWMItmInconstcyBlkStsTxt` | | ✓ | | |
-| `_OverallBlockStatusTxt` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMProductionMaterialRequest` | ✓ | |  |  |  |  |
+| `EWMProductionMaterialReqItem` | ✓ | |  |  |  |  |
+| `EWMProductionMaterialReqUUID` |  | |  |  |  |  |
+| `EWMProductionMatlReqItemUUID` |  | |  |  |  |  |
+| `EWMWarehouse` |  | |  |  |  |  |
+| `EWMProdnMatlReqDocCategory` |  | |  |  |  |  |
+| `EWMProdnMatlReqItemCategory` |  | |  |  |  |  |
+| `EWMProductionMatlReqItemType` |  | |  |  |  |  |
+| `EWMProdnMatlReqCrtnUTCDateTime` |  | |  |  |  |  |
+| `EWMProdnMatlReqCreatedByUser` |  | |  |  |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  |  |  |  |
+| `EWMProdnMatlReqLastChgdByUser` |  | |  |  |  |  |
+| `EWMPlndCompRqmtStrtUTCDateTime` |  | | `_PlndCompRqmtStrtUTCDateTime` | `DeliveryRelatedStartDateTime` |  |  |
+| `Product` |  | |  |  |  |  |
+| `ProductUUID` |  | |  |  |  |  |
+| `Batch` |  | |  |  |  |  |
+| `ProductQuantity` |  | |  |  |  |  |
+| `QuantityUnit` |  | |  |  |  |  |
+| `EWMStockUsage` |  | |  |  |  |  |
+| `EWMStockType` |  | |  |  |  |  |
+| `EntitledToDisposeParty` |  | |  |  |  |  |
+| `EntitledToDisposePartyName` |  | | `_Entitled` | `BusinessPartnerName` |  |  |
+| `EWMStockOwner` |  | |  |  |  |  |
+| `EWMStockOwnerName` |  | | `_StockOwner` | `BusinessPartnerName` |  |  |
+| `StockDocumentCategory` |  | |  |  |  |  |
+| `WBSElementInternalID` |  | |  |  |  |  |
+| `WBSElementExternalID` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |  |  |
+| `ManufacturingOrder` |  | |  | `cast( _ManufacturingOrder.EWMWhseReqRefDocumentNumber as manufacturingorder )` |  |  |
+| `Reservation` |  | |  | `cast( ltrim( _Reservation.EWMWhseReqRefDocumentNumber, '0' ) as rsnum )` |  |  |
+| `ReservationItem` |  | |  | `cast( ltrim( _Reservation.EWMWhseRequestRefDocumentItem, '0' ) as pph_rspos )` |  |  |
+| `ReservationType` |  | |  |  |  |  |
+| `WarehouseProcessType` |  | |  |  |  |  |
+| `EWMMovementControl` |  | |  |  |  |  |
+| `EWMStagingMethod` |  | |  |  |  |  |
+| `EWMProductionSupplyArea` |  | |  |  |  |  |
+| `EWMGoodsMovementStorageBin` |  | |  |  |  |  |
+| `BatchClassification` |  | |  |  |  |  |
+| `BatchClass` |  | |  |  |  |  |
+| `EWMBackflushIsActive` |  | |  |  |  |  |
+| `Operation` |  | |  |  |  |  |
+| `OperationDescription` |  | |  |  |  |  |
+| `WorkCenter` |  | |  |  |  |  |
+| `EWMProdnMatlReqItemIsDeleted` |  | |  |  |  |  |
+| `GoodsIssueStatus` |  | |  |  |  |  |
+| `CompletionStatus` |  | |  |  |  |  |
+| `EWMPlannedStagingStatus` |  | |  |  |  |  |
+| `EWMStagingStatus` |  | |  |  |  |  |
+| `EWMManufacturingOrderStatus` |  | |  |  |  |  |
+| `EWMGoodsMovementLockStatus` |  | |  |  |  |  |
+| `EWMStagingLockStatus` |  | |  |  |  |  |
+| `EWMItmInconsistencyBlockStatus` |  | |  |  |  |  |
+| `OverallBlockStatus` |  | |  |  |  |  |
+| `_Entitled` | | ✓ | | | | |
+| `_StockOwner` | | ✓ | | | | |
+| `_ManufacturingOrder` | | ✓ | | | | |
+| `_Reservation` | | ✓ | | | | |
+| `_EWMProdnMatlReqItmCatTxt` | | ✓ | | | | |
+| `_EWMProdnMatlReqItemTypeTxt` | | ✓ | | | | |
+| `_ProductTxt` | | ✓ | | | | |
+| `_EWMStockTypeTxt` | | ✓ | | | | |
+| `_EWMStockUsageTxt` | | ✓ | | | | |
+| `_EWMWarehouseProcessTypeTxt` | | ✓ | | | | |
+| `_EWMStagingMethodTxt` | | ✓ | | | | |
+| `_EWMProductionSupplyAreaTxt` | | ✓ | | | | |
+| `_StockDocCategoryTxt` | | ✓ | | | | |
+| `_EWMPlannedStagingStatusTxt` | | ✓ | | | | |
+| `_EWMStagingStatusTxt` | | ✓ | | | | |
+| `_GoodsIssueStatusTxt` | | ✓ | | | | |
+| `_CompletionStatusTxt` | | ✓ | | | | |
+| `_EWMManufacturingOrdStatusTxt` | | ✓ | | | | |
+| `_EWMGoodsMvtLockStatusTxt` | | ✓ | | | | |
+| `_EWMStagingLockStatusTxt` | | ✓ | | | | |
+| `_EWMItmInconstcyBlkStsTxt` | | ✓ | | | | |
+| `_OverallBlockStatusTxt` | | ✓ | | | | |
 
 ## Associations
 

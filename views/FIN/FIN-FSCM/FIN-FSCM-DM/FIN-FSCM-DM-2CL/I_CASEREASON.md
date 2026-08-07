@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CaseType` | ✓ | |  | `cast( case_type as scmgcase_type preserving type )` |
-| `CaseReason` | ✓ | |  | `cast( reason_code as scmg_reason_code preserving type )` |
-| `_CaseType` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseType` | ✓ | |  | `cast( case_type as scmgcase_type preserving type )` |  |  |
+| `CaseReason` | ✓ | |  | `cast( reason_code as scmg_reason_code preserving type )` |  |  |
+| `_CaseType` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

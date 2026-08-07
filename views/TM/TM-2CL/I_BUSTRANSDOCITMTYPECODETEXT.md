@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `BusinessTransacDocItmTypeCode` | ✓ | |  | `cast ( btditm_tco150 as njit_btd_item_type_code preserving type )` |
-| `BizTransacDocumentItemTypeName` |  | |  | `description` |
-| `_Language` | | ✓ | | |
-| `_BusTransDocItemTypeCode` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `BusinessTransacDocItmTypeCode` | ✓ | |  | `cast ( btditm_tco150 as njit_btd_item_type_code preserving type )` |  |  |
+| `BizTransacDocumentItemTypeName` |  | |  | `description` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_BusTransDocItemTypeCode` | | ✓ | | | | |
 
 ## Associations
 

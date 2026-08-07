@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OperationExternalProcessing` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as lief preserving type)` |
-| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
-| `OperationExternalProcName` |  | |  | `ddtext` |
-| `_ExternalProcessing` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OperationExternalProcessing` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as lief preserving type)` |  |  |
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |  |  |
+| `OperationExternalProcName` |  | |  | `ddtext` |  |  |
+| `_ExternalProcessing` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

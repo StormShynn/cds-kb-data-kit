@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ShippingPoint` | ✓ | |  | `vstel` |
-| `Language` | ✓ | |  | `spras` |
-| `ShippingPointName` |  | |  | `vtext` |
-| `_ShippingPoint` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShippingPoint` | ✓ | |  | `vstel` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `ShippingPointName` |  | |  | `vtext` |  |  |
+| `_ShippingPoint` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

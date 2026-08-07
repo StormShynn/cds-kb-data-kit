@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationUnitPartner` | ✓ | | `_CnsldtnUnitPartner` | `ConsolidationUnitPartner` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnitPartner` | ✓ | | `_CnsldtnUnitPartner` | `ConsolidationUnitPartner` |  |  |
 
 ## Source Code
 

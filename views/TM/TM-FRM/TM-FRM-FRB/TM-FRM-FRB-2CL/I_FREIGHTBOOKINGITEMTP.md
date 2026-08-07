@@ -31,68 +31,68 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderItemUUID` | ✓ | |  |  |
-| `TransportationOrderUUID` |  | |  |  |
-| `TranspOrdItem` |  | |  |  |
-| `TranspOrdItemType` |  | |  |  |
-| `TranspOrdItemCategory` |  | |  |  |
-| `TranspOrdItemParentItemUUID` |  | |  |  |
-| `TranspOrdItemDesc` |  | |  |  |
-| `IsMainCargoItem` |  | |  |  |
-| `TranspOrdItemSorting` |  | |  |  |
-| `SourceStopUUID` |  | |  |  |
-| `DestinationStopUUID` |  | |  |  |
-| `ShipperUUID` |  | |  |  |
-| `Shipper` |  | |  |  |
-| `ShipperAddressID` |  | |  |  |
-| `ConsigneeUUID` |  | |  |  |
-| `Consignee` |  | |  |  |
-| `ConsigneeAddressID` |  | |  |  |
-| `FreightUnitUUID` |  | |  |  |
-| `PredecessorTransportationOrder` |  | |  |  |
-| `TranspBaseDocument` |  | |  |  |
-| `TranspBaseDocumentType` |  | |  |  |
-| `TranspBaseDocumentItem` |  | |  |  |
-| `TranspBaseDocumentItemType` |  | |  |  |
-| `TransportationEquipmentGroup` |  | |  |  |
-| `TransportationEquipmentType` |  | |  |  |
-| `TranspEquipmentIsShipperOwned` |  | |  |  |
-| `TranspEquipmentPlateNumber` |  | |  |  |
-| `TranspEquipRegistrationCountry` |  | |  |  |
-| `TranspEquipCapacityLength` |  | |  |  |
-| `TranspEquipCapacityWidth` |  | |  |  |
-| `TranspEquipCapacityHeight` |  | |  |  |
-| `TranspEquipCapacityUnit` |  | |  |  |
-| `TranspEquipCapacityWeight` |  | |  |  |
-| `TranspEquipCapacityWeightUnit` |  | |  |  |
-| `TranspEquipCapacityVolume` |  | |  |  |
-| `TranspEquipCapacityVolumeUnit` |  | |  |  |
-| `TranspOrdItemPackageID` |  | |  |  |
-| `ProductUUID` |  | |  |  |
-| `ProductID` |  | |  |  |
-| `MaterialFreightGroup` |  | |  |  |
-| `TransportationGroup` |  | |  |  |
-| `TranspOrdItmMinTemp` |  | |  |  |
-| `TranspOrdItmMaxTemp` |  | |  |  |
-| `TranspOrdItemTemperatureUnit` |  | |  |  |
-| `TranspOrdItemQuantity` |  | |  |  |
-| `TranspOrdItemQuantityUnit` |  | |  |  |
-| `TranspOrdItemGrossWeight` |  | |  |  |
-| `TranspOrdItemGrossWeightUnit` |  | |  |  |
-| `TranspOrdItemGrossVolume` |  | |  |  |
-| `TranspOrdItemGrossVolumeUnit` |  | |  |  |
-| `TranspOrdItemNetWeight` |  | |  |  |
-| `TranspOrdItemNetWeightUnit` |  | |  |  |
-| `TranspOrdItemDngrsGdsSts` |  | |  |  |
-| `I_FreightBookingTP` |  | |  | `FreightBookingItem._TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |
-| `I_FreightBookingItemDocRefTP` |  | |  | `FreightBookingItem._TranspOrdItemDocRef as _FreightBookingItemDocRef : redirected to composition child I_FreightBookingItemDocRefTP` |
-| `I_FreightBookingItemSealTP` |  | |  | `FreightBookingItem._TranspOrdItemSeal as _FreightBookingItemSeal : redirected to composition child I_FreightBookingItemSealTP` |
-| `I_FrtBkgItemCommodityCodeTP` |  | |  | `FreightBookingItem._TranspOrdItemCommodityCode as _FrtBookingItemCommodityCode : redirected to composition child I_FrtBkgItemCommodityCodeTP` |
-| `I_FrtBookingItemSerialNumberTP` |  | |  | `FreightBookingItem._TranspOrdItemSerialNumber as _FrtBookingItemSerialNumber : redirected to composition child I_FrtBookingItemSerialNumberTP` |
-| `I_FreightBookingItemBatchTP` |  | |  | `FreightBookingItem._TranspOrdItemBatch as _FreightBookingItemBatch : redirected to composition child I_FreightBookingItemBatchTP` |
-| `I_FrtBkgItmMainBPAdDfRpnTP` |  | |  | `FreightBookingItem._TrOrdItmMnBPAddrDfltRprstn as _FrtBkgItmMainBPAddrDfltRprstn : redirected to composition child I_FrtBkgItmMainBPAdDfRpnTP` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderItemUUID` | ✓ | |  |  |  |  |
+| `TransportationOrderUUID` |  | |  |  |  |  |
+| `TranspOrdItem` |  | |  |  |  |  |
+| `TranspOrdItemType` |  | |  |  |  |  |
+| `TranspOrdItemCategory` |  | |  |  |  |  |
+| `TranspOrdItemParentItemUUID` |  | |  |  |  |  |
+| `TranspOrdItemDesc` |  | |  |  |  |  |
+| `IsMainCargoItem` |  | |  |  |  |  |
+| `TranspOrdItemSorting` |  | |  |  |  |  |
+| `SourceStopUUID` |  | |  |  |  |  |
+| `DestinationStopUUID` |  | |  |  |  |  |
+| `ShipperUUID` |  | |  |  |  |  |
+| `Shipper` |  | |  |  |  |  |
+| `ShipperAddressID` |  | |  |  |  |  |
+| `ConsigneeUUID` |  | |  |  |  |  |
+| `Consignee` |  | |  |  |  |  |
+| `ConsigneeAddressID` |  | |  |  |  |  |
+| `FreightUnitUUID` |  | |  |  |  |  |
+| `PredecessorTransportationOrder` |  | |  |  |  |  |
+| `TranspBaseDocument` |  | |  |  |  |  |
+| `TranspBaseDocumentType` |  | |  |  |  |  |
+| `TranspBaseDocumentItem` |  | |  |  |  |  |
+| `TranspBaseDocumentItemType` |  | |  |  |  |  |
+| `TransportationEquipmentGroup` |  | |  |  |  |  |
+| `TransportationEquipmentType` |  | |  |  |  |  |
+| `TranspEquipmentIsShipperOwned` |  | |  |  |  |  |
+| `TranspEquipmentPlateNumber` |  | |  |  |  |  |
+| `TranspEquipRegistrationCountry` |  | |  |  |  |  |
+| `TranspEquipCapacityLength` |  | |  |  |  |  |
+| `TranspEquipCapacityWidth` |  | |  |  |  |  |
+| `TranspEquipCapacityHeight` |  | |  |  |  |  |
+| `TranspEquipCapacityUnit` |  | |  |  |  |  |
+| `TranspEquipCapacityWeight` |  | |  |  |  |  |
+| `TranspEquipCapacityWeightUnit` |  | |  |  |  |  |
+| `TranspEquipCapacityVolume` |  | |  |  |  |  |
+| `TranspEquipCapacityVolumeUnit` |  | |  |  |  |  |
+| `TranspOrdItemPackageID` |  | |  |  |  |  |
+| `ProductUUID` |  | |  |  |  |  |
+| `ProductID` |  | |  |  |  |  |
+| `MaterialFreightGroup` |  | |  |  |  |  |
+| `TransportationGroup` |  | |  |  |  |  |
+| `TranspOrdItmMinTemp` |  | |  |  |  |  |
+| `TranspOrdItmMaxTemp` |  | |  |  |  |  |
+| `TranspOrdItemTemperatureUnit` |  | |  |  |  |  |
+| `TranspOrdItemQuantity` |  | |  |  |  |  |
+| `TranspOrdItemQuantityUnit` |  | |  |  |  |  |
+| `TranspOrdItemGrossWeight` |  | |  |  |  |  |
+| `TranspOrdItemGrossWeightUnit` |  | |  |  |  |  |
+| `TranspOrdItemGrossVolume` |  | |  |  |  |  |
+| `TranspOrdItemGrossVolumeUnit` |  | |  |  |  |  |
+| `TranspOrdItemNetWeight` |  | |  |  |  |  |
+| `TranspOrdItemNetWeightUnit` |  | |  |  |  |  |
+| `TranspOrdItemDngrsGdsSts` |  | |  |  |  |  |
+| `I_FreightBookingTP` |  | |  | `FreightBookingItem._TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |  |  |
+| `I_FreightBookingItemDocRefTP` |  | |  | `FreightBookingItem._TranspOrdItemDocRef as _FreightBookingItemDocRef : redirected to composition child I_FreightBookingItemDocRefTP` |  |  |
+| `I_FreightBookingItemSealTP` |  | |  | `FreightBookingItem._TranspOrdItemSeal as _FreightBookingItemSeal : redirected to composition child I_FreightBookingItemSealTP` |  |  |
+| `I_FrtBkgItemCommodityCodeTP` |  | |  | `FreightBookingItem._TranspOrdItemCommodityCode as _FrtBookingItemCommodityCode : redirected to composition child I_FrtBkgItemCommodityCodeTP` |  |  |
+| `I_FrtBookingItemSerialNumberTP` |  | |  | `FreightBookingItem._TranspOrdItemSerialNumber as _FrtBookingItemSerialNumber : redirected to composition child I_FrtBookingItemSerialNumberTP` |  |  |
+| `I_FreightBookingItemBatchTP` |  | |  | `FreightBookingItem._TranspOrdItemBatch as _FreightBookingItemBatch : redirected to composition child I_FreightBookingItemBatchTP` |  |  |
+| `I_FrtBkgItmMainBPAdDfRpnTP` |  | |  | `FreightBookingItem._TrOrdItmMnBPAddrDfltRprstn as _FrtBkgItmMainBPAddrDfltRprstn : redirected to composition child I_FrtBkgItmMainBPAdDfRpnTP` |  |  |
 
 ## Source Code
 

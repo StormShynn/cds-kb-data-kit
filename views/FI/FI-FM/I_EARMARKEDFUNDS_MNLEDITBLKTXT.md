@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EarmarkedFundsManualEditBlock` | ✓ | |  | `locktype` |
-| `Language` | ✓ | |  | `spras` |
-| `EmrkdFundsManualEditBlockText` |  | |  | `text` |
-| `_Language` | | ✓ | | |
-| `_EarmarkedFundsMnlEditBlk` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EarmarkedFundsManualEditBlock` | ✓ | |  | `locktype` |  |  |
+| `Language` | ✓ | |  | `spras` |  |  |
+| `EmrkdFundsManualEditBlockText` |  | |  | `text` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_EarmarkedFundsMnlEditBlk` | | ✓ | | | | |
 
 ## Associations
 

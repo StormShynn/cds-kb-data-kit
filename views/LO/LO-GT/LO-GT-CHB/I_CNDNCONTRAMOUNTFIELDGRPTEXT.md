@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `AmountFieldGroup` | ✓ | |  | `af_group` |
-| `AmountFieldGroupDesc` |  | |  | `cast( wb2_c_af_groupt.text as wb2_amount_fields_group_txt preserving type )` |
-| `_AmountFieldGroup` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `AmountFieldGroup` | ✓ | |  | `af_group` |  |  |
+| `AmountFieldGroupDesc` |  | |  | `cast( wb2_c_af_groupt.text as wb2_amount_fields_group_txt preserving type )` |  |  |
+| `_AmountFieldGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

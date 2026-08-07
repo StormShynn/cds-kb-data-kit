@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CATaxDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as tax_date_type_kk preserving type )` |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
-| `CATaxDateTypeText` |  | |  | `cast ( ddtext as tax_date_type_txt_gfn_kk preserving type )` |
-| `_CATaxDateType` | | ✓ | | |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CATaxDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as tax_date_type_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
+| `CATaxDateTypeText` |  | |  | `cast ( ddtext as tax_date_type_txt_gfn_kk preserving type )` |  |  |
+| `_CATaxDateType` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

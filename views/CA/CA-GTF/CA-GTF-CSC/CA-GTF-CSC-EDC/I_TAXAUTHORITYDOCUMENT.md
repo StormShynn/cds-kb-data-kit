@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EDCTaxAuthRecordUUID` | ✓ | |  | `record_guid` |
-| `EDCTaxAuthSqncNmbr` |  | |  | `seq_nr` |
-| `EDCCompany` |  | |  | `bukrs` |
-| `EDCCountry` |  | |  | `country` |
-| `EDCCommonKey` |  | |  | `common_key` |
-| `EDCTaxAuthDocumentKey` |  | |  | `document_key` |
-| `EDCDocumentPeriod` |  | |  | `document_period` |
-| `EDCTaxAuthDocumentType` |  | |  | `document_type` |
-| `EDCBusinessPartnerID` |  | |  | `bptaxid` |
-| `EDCTaxAuthStatus` |  | |  | `status` |
-| `EDCStatusChangeDate` |  | |  | `status_change_date` |
-| `EDCApplicationLogID` |  | |  | `appl_log_id` |
-| `EDCCreatedByUser` |  | |  | `created_by` |
-| `EDCCreatedOnDateTime` |  | |  | `created_on` |
-| `EDCChangedByUser` |  | |  | `changed_by` |
-| `EDCChangedOnDateTime` |  | |  | `changed_on` |
-| `EDCTaxAuthStatusText` |  | | `_TaxAuthDocumentStatusText` | `EDCTaxAuthStatusText` |
-| `_TaxAuthDocHis` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EDCTaxAuthRecordUUID` | ✓ | |  | `record_guid` |  |  |
+| `EDCTaxAuthSqncNmbr` |  | |  | `seq_nr` |  |  |
+| `EDCCompany` |  | |  | `bukrs` |  |  |
+| `EDCCountry` |  | |  | `country` |  |  |
+| `EDCCommonKey` |  | |  | `common_key` |  |  |
+| `EDCTaxAuthDocumentKey` |  | |  | `document_key` |  |  |
+| `EDCDocumentPeriod` |  | |  | `document_period` |  |  |
+| `EDCTaxAuthDocumentType` |  | |  | `document_type` |  |  |
+| `EDCBusinessPartnerID` |  | |  | `bptaxid` |  |  |
+| `EDCTaxAuthStatus` |  | |  | `status` |  |  |
+| `EDCStatusChangeDate` |  | |  | `status_change_date` |  |  |
+| `EDCApplicationLogID` |  | |  | `appl_log_id` |  |  |
+| `EDCCreatedByUser` |  | |  | `created_by` |  |  |
+| `EDCCreatedOnDateTime` |  | |  | `created_on` |  |  |
+| `EDCChangedByUser` |  | |  | `changed_by` |  |  |
+| `EDCChangedOnDateTime` |  | |  | `changed_on` |  |  |
+| `EDCTaxAuthStatusText` |  | | `_TaxAuthDocumentStatusText` | `EDCTaxAuthStatusText` |  |  |
+| `_TaxAuthDocHis` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SuplrInvcUpldFileLifeCycStatus` | ✓ | |  |  |
-| `Language` | ✓ | |  |  |
-| `SuplrInvcUpldFileLfcycStsDesc` |  | |  |  |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrInvcUpldFileLifeCycStatus` | ✓ | |  |  |  |  |
+| `Language` | ✓ | |  |  |  |  |
+| `SuplrInvcUpldFileLfcycStsDesc` |  | |  |  |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

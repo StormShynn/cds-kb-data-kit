@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `JointVenture` | ✓ | |  |  |
-| `JntOpgAgrmtEquityGrp` | ✓ | |  |  |
-| `JointVenturePartner` | ✓ | |  |  |
-| `JointVenturePartnerShortText` |  | |  |  |
-| `JointVenturePartnerLongText` |  | |  |  |
-| `JntVntrEquityShare` |  | |  |  |
-| `JntVntrOwnrIsSuspended` |  | |  |  |
-| `JntVntrOwnrSuspendedPerd` |  | |  |  |
-| `JntVntrOwnrSuspendedYr` |  | |  |  |
-| `JntVntrOwnrIsNotSuspended` |  | |  |  |
-| `JntVntrOwnrNotSuspendedPerd` |  | |  |  |
-| `JntVntrOwnrNotSuspendedYr` |  | |  |  |
-| `JntVntrInterestType` |  | |  |  |
-| `JntVntrDrillingRcvryPercent` |  | |  |  |
-| `JntVntrOpgRcvryPercent` |  | |  |  |
-| `JntVntrPayIsStppd` |  | |  |  |
-| `JntVntrPartWrkgIntrstPerd` |  | |  |  |
-| `JntVntrPartWrkgIntrstYrValue` |  | |  |  |
-| `JntVntrCarriedIntrstGrp` |  | |  |  |
-| `JntVntrNetProfitIntrstGrp` |  | |  |  |
-| `JntVntrOperatorAddressArea` |  | |  |  |
-| `_JointVentureEquityGroup` | | ✓ | | |
-| `_JointVenture` | | ✓ | | |
-| `_JVACarriedInterest` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `JointVenture` | ✓ | |  |  |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  |  |  |  |
+| `JointVenturePartner` | ✓ | |  |  |  |  |
+| `JointVenturePartnerShortText` |  | |  |  |  |  |
+| `JointVenturePartnerLongText` |  | |  |  |  |  |
+| `JntVntrEquityShare` |  | |  |  |  |  |
+| `JntVntrOwnrIsSuspended` |  | |  |  |  |  |
+| `JntVntrOwnrSuspendedPerd` |  | |  |  |  |  |
+| `JntVntrOwnrSuspendedYr` |  | |  |  |  |  |
+| `JntVntrOwnrIsNotSuspended` |  | |  |  |  |  |
+| `JntVntrOwnrNotSuspendedPerd` |  | |  |  |  |  |
+| `JntVntrOwnrNotSuspendedYr` |  | |  |  |  |  |
+| `JntVntrInterestType` |  | |  |  |  |  |
+| `JntVntrDrillingRcvryPercent` |  | |  |  |  |  |
+| `JntVntrOpgRcvryPercent` |  | |  |  |  |  |
+| `JntVntrPayIsStppd` |  | |  |  |  |  |
+| `JntVntrPartWrkgIntrstPerd` |  | |  |  |  |  |
+| `JntVntrPartWrkgIntrstYrValue` |  | |  |  |  |  |
+| `JntVntrCarriedIntrstGrp` |  | |  |  |  |  |
+| `JntVntrNetProfitIntrstGrp` |  | |  |  |  |  |
+| `JntVntrOperatorAddressArea` |  | |  |  |  |  |
+| `_JointVentureEquityGroup` | | ✓ | | | | |
+| `_JointVenture` | | ✓ | | | | |
+| `_JVACarriedInterest` | | ✓ | | | | |
 
 ## Source Code
 

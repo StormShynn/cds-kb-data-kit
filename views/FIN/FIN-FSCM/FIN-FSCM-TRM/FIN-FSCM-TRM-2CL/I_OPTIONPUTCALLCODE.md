@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `OptionPutCallCode` | ✓ | |  | `cast(domvalue_l as ti_sputcal)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OptionPutCallCode` | ✓ | |  | `cast(domvalue_l as ti_sputcal)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

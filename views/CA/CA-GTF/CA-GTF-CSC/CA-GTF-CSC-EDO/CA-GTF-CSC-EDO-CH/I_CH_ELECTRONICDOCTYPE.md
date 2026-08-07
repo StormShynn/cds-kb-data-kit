@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CH_ElectronicDocAcctgDocType` | ✓ | |  | `blart` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CH_ElectronicDocAcctgDocType` | ✓ | |  | `blart` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

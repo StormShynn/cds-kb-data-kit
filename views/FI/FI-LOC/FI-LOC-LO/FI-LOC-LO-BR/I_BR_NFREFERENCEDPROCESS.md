@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BR_NotaFiscal` | ✓ | |  | `docnum` |
-| `BR_NFReferencedProcessSqncNmbr` | ✓ | |  | `counter` |
-| `BR_NFReferencedProcIdentifier` |  | |  | `cast(NFReferencedProcess.nproc as logbr_nf_process_id)` |
-| `BR_NFReferencedProcessOrigin` |  | |  | `indproc` |
-| `BR_NFTypeOfConcessionAct` |  | |  | `cast(NFReferencedProcess.tpato as logbr_type_concession_act preserving type )` |
-| `_BR_NFReferencedProcOrign` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |  |  |
+| `BR_NFReferencedProcessSqncNmbr` | ✓ | |  | `counter` |  |  |
+| `BR_NFReferencedProcIdentifier` |  | |  | `cast(NFReferencedProcess.nproc as logbr_nf_process_id)` |  |  |
+| `BR_NFReferencedProcessOrigin` |  | |  | `indproc` |  |  |
+| `BR_NFTypeOfConcessionAct` |  | |  | `cast(NFReferencedProcess.tpato as logbr_type_concession_act preserving type )` |  |  |
+| `_BR_NFReferencedProcOrign` | | ✓ | | | | |
 
 ## Associations
 

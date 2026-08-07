@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `US_TaxState` | ✓ | |  | `cast ( Region as fis_etxdc_region )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `US_TaxState` | ✓ | |  | `cast ( Region as fis_etxdc_region )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

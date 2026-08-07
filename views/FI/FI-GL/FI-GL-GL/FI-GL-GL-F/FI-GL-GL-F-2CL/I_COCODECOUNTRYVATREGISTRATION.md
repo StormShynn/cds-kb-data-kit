@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |
-| `VATRegistrationCountry` | ✓ | |  | `Country` |
-| `VATRegistration` |  | |  |  |
-| `CompanyCodeName` |  | |  |  |
-| `AddressID` |  | |  |  |
-| `_CompanyCode` | | ✓ | | |
-| `_Country` | | ✓ | | |
-| `_Address` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |  |  |
+| `VATRegistrationCountry` | ✓ | |  | `Country` |  |  |
+| `VATRegistration` |  | |  |  |  |  |
+| `CompanyCodeName` |  | |  |  |  |  |
+| `AddressID` |  | |  |  |  |  |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
+| `_Address` | | ✓ | | | | |
 
 ## Associations
 

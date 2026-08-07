@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `TransportationOrderConfSts` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_confirm_status preserving type)` |
-| `Language` | ✓ | |  | `ddlanguage` |
-| `TransportationOrderConfStsDesc` |  | |  | `cast(ddtext as /scmtms/vdm_confirm_sts_desc preserving type )` |
-| `_Language` | | ✓ | | |
-| `_TranspOrdConfirmationStatus` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderConfSts` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_confirm_status preserving type)` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` |  |  |
+| `TransportationOrderConfStsDesc` |  | |  | `cast(ddtext as /scmtms/vdm_confirm_sts_desc preserving type )` |  |  |
+| `_Language` | | ✓ | | | | |
+| `_TranspOrdConfirmationStatus` | | ✓ | | | | |
 
 ## Associations
 

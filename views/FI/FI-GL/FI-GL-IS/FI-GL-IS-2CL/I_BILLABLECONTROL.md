@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BillableControl` | ✓ | |  | `cast( bemot as fis_bemot preserving type )` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillableControl` | ✓ | |  | `cast( bemot as fis_bemot preserving type )` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

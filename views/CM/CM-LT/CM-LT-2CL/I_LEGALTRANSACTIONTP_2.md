@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LegalTransactionUUID` | ✓ | |  |  |
-| `LegalTransaction` |  | |  |  |
-| `LegalTransactionTitle` |  | |  |  |
-| `LglCntntMLanguage` |  | |  |  |
-| `LegalTransactionHealth` |  | |  |  |
-| `LglCntntMContextUUID` |  | |  |  |
-| `LglCntntMProfile` |  | |  |  |
-| `LegalTransactionSource` |  | |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |
-| `LglCntntMGovLaw` |  | |  |  |
-| `LglTransAccessLvl` |  | |  |  |
-| `LglCntntMMainOrgCoCode` |  | |  |  |
-| `LglCntntMMainOrgSalesOrg` |  | |  |  |
-| `LglCntntMMainOrgPurOrg` |  | |  |  |
-| `LglCntntMIntegrationType` |  | |  |  |
-| `_LegalTransCategoryGroup` | | ✓ | | |
-| `_LegalTransDate` | | ✓ | | |
-| `_LegalTransDocLink` | | ✓ | | |
-| `_LegalTransEntity` | | ✓ | | |
-| `_LegalTransExternalContact` | | ✓ | | |
-| `_LegalTransInternalContact` | | ✓ | | |
-| `_LegalTransLinkedObjects` | | ✓ | | |
-| `_LegalTransRelationship` | | ✓ | | |
-| `_LegalTransRnwlAndTermn` | | ✓ | | |
-| `_LegalTransactionReminder` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionUUID` | ✓ | |  |  |  |  |
+| `LegalTransaction` |  | |  |  |  |  |
+| `LegalTransactionTitle` |  | |  |  |  |  |
+| `LglCntntMLanguage` |  | |  |  |  |  |
+| `LegalTransactionHealth` |  | |  |  |  |  |
+| `LglCntntMContextUUID` |  | |  |  |  |  |
+| `LglCntntMProfile` |  | |  |  |  |  |
+| `LegalTransactionSource` |  | |  |  |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |  |  |
+| `LglCntntMGovLaw` |  | |  |  |  |  |
+| `LglTransAccessLvl` |  | |  |  |  |  |
+| `LglCntntMMainOrgCoCode` |  | |  |  |  |  |
+| `LglCntntMMainOrgSalesOrg` |  | |  |  |  |  |
+| `LglCntntMMainOrgPurOrg` |  | |  |  |  |  |
+| `LglCntntMIntegrationType` |  | |  |  |  |  |
+| `_LegalTransCategoryGroup` | | ✓ | | | | |
+| `_LegalTransDate` | | ✓ | | | | |
+| `_LegalTransDocLink` | | ✓ | | | | |
+| `_LegalTransEntity` | | ✓ | | | | |
+| `_LegalTransExternalContact` | | ✓ | | | | |
+| `_LegalTransInternalContact` | | ✓ | | | | |
+| `_LegalTransLinkedObjects` | | ✓ | | | | |
+| `_LegalTransRelationship` | | ✓ | | | | |
+| `_LegalTransRnwlAndTermn` | | ✓ | | | | |
+| `_LegalTransactionReminder` | | ✓ | | | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | | `_UnitAttributeValueT` | `Language` |
-| `CnsldtnUnitDataCollection` | ✓ | |  | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitdatacollection preserving type )` |
-| `CnsldtnUnitDataCollectionText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValText` |
-| `CnsldtnUnitDataCollLongText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValLongText` |
-| `_CnsldtnUnitDataColl` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | | `_UnitAttributeValueT` | `Language` |  |  |
+| `CnsldtnUnitDataCollection` | ✓ | |  | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitdatacollection preserving type )` |  |  |
+| `CnsldtnUnitDataCollectionText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValText` |  |  |
+| `CnsldtnUnitDataCollLongText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValLongText` |  |  |
+| `_CnsldtnUnitDataColl` | | ✓ | | | | |
 
 ## Associations
 

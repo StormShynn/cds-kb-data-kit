@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |
-| `PurchasingChangeTextID` | ✓ | |  | `ctxnr` |
-| `PurgChangeTextName` |  | |  | `chtxt` |
-| `_Language` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |  |  |
+| `PurchasingChangeTextID` | ✓ | |  | `ctxnr` |  |  |
+| `PurgChangeTextName` |  | |  | `chtxt` |  |  |
+| `_Language` | | ✓ | | | | |
 
 ## Associations
 

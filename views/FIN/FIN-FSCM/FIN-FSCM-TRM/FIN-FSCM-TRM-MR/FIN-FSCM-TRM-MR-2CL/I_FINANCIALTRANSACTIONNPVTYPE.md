@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `FinancialTransactionNPVType` | ✓ | |  | `okuart` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialTransactionNPVType` | ✓ | |  | `okuart` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

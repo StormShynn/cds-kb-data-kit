@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `Vbeln` | ✓ | |  | `vbeln` |
-| `Posnr` | ✓ | |  | `posnr` |
-| `Matnr` |  | |  | `matnr` |
-| `Arktx` |  | |  | `arktx` |
-| `Meins` |  | |  | `meins` |
-| `Netwr` |  | |  | `netwr` |
-| `Waerk` |  | |  | `waerk` |
-| `Kwmeng` |  | |  | `kwmeng` |
-| `Vrkme` |  | |  | `vrkme` |
-| `Werks` |  | |  | `werks` |
-| `Netpr` |  | |  | `netpr` |
-| `_Header` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Vbeln` | ✓ | |  | `vbeln` |  |  |
+| `Posnr` | ✓ | |  | `posnr` |  |  |
+| `Matnr` |  | |  | `matnr` |  |  |
+| `Arktx` |  | |  | `arktx` |  |  |
+| `Meins` |  | |  | `meins` |  |  |
+| `Netwr` |  | |  | `netwr` |  |  |
+| `Waerk` |  | |  | `waerk` |  |  |
+| `Kwmeng` |  | |  | `kwmeng` |  |  |
+| `Vrkme` |  | |  | `vrkme` |  |  |
+| `Werks` |  | |  | `werks` |  |  |
+| `Netpr` |  | |  | `netpr` |  |  |
+| `_Header` | | ✓ | | | | |
 
 ## Associations
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ConsolidationChartOfAccounts` | ✓ | | `_CnsldtnFSItem` | `ConsolidationChartOfAccounts` |
-| `CnsldtnFinancialStatementItem` | ✓ | | `_CnsldtnFSItem` | `CnsldtnFinancialStatementItem` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_CnsldtnFSItem` | `ConsolidationChartOfAccounts` |  |  |
+| `CnsldtnFinancialStatementItem` | ✓ | | `_CnsldtnFSItem` | `CnsldtnFinancialStatementItem` |  |  |
 
 ## Source Code
 

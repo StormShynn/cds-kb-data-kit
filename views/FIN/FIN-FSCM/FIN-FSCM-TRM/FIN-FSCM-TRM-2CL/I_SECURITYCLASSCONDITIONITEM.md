@@ -30,113 +30,113 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `SecurityClass` | ✓ | |  | `cast(ConditionItem.rkey1 as ftr_gen_security_class preserving type)` |
-| `FinConditionConditionType` | ✓ | |  | `skoart` |
-| `ConditionItemValidityStartDate` | ✓ | |  | `case when dats_is_valid(ConditionItem.dguel_kp) = 1 then ConditionItem.dguel_kp else '99991231' end` |
-| `FinConditionSubItem` | ✓ | |  | `nstufe` |
-| `FinancialInstrProductCategory` |  | |  | `cast(ConditionItem.sanlf as ftr_gen_fin_instr_prod_categ preserving type)` |
-| `CndnItmValdtyStrtDtIsInclusive` |  | |  | `cast(case when ConditionItem.sexclguel = '0' then 'X' else '' end as ftr_sc_cndn_strt_dte_incld_ind preserving type )` |
-| `FinConditionForm` |  | |  | `jnullkon` |
-| `FinCndnReferenceConditionType` |  | |  | `skoaref` |
-| `FinCndnRefAccumulatingCndnType` |  | |  | `sum_skoaref` |
-| `InterestCalculationMethod` |  | |  | `szbmeth` |
-| `InterestCalculationType` |  | |  | `cast ( case when ConditionItem.jexpozins = 'X' then '1' when ConditionItem.jprozr = 'X' then '2' when ConditionItem.jprozr = 'Y' then '3' when ConditionItem.jexpointfactor = 'X' then '4' when ConditionItem.jexpozins = 'L' then '5' when ConditionItem.jexpointfactor = 'L' then '6' when ConditionItem.jexpointfactor = 'A' then '7' else '0' end as tfmsintcalc preserving type )` |
-| `ExponentialIntrstSettlmtFrqcy` |  | |  | `ammrhyzv` |
-| `IntrstCalcMethFactoryCalendar` |  | |  | `skalidwt` |
-| `InterestFirstPeriodRate` |  | |  | `pkond1stper` |
-| `InterestRefRateOptrSign` |  | |  | `szsrefvz` |
-| `InterestReference` |  | |  | `szsref` |
-| `ConditionPercentageRate` |  | |  | `pkond` |
-| `FinCndnFluctuationMarginRate` |  | |  | `pfluct` |
-| `FinancialConditionPaymentRate` |  | |  | `ppayment` |
-| `FinConditionFormulaReference` |  | |  | `sformref` |
-| `FinCndnFormulaVariable` |  | |  | `svarname` |
-| `DividendFactorType` |  | |  | `factor_type` |
-| `FinCndnRateFactorRndngCategory` |  | |  | `sroundratefactor` |
-| `FinCndnRateFactorRndngDecimals` |  | |  | `rounddecratefactor` |
-| `FinCndnFactorRoundingCategory` |  | |  | `sroundfactor` |
-| `FinCndnFactorRoundingDecimals` |  | |  | `rounddecfactor` |
-| `FinCndnBaseFactorRndngCategory` |  | |  | `sroundbasefactor` |
-| `FinCndnBaseFactorRndngDecimals` |  | |  | `rounddecbasefactor` |
-| `FinCndnAmountRoundingCategory` |  | |  | `sround` |
-| `FinCndnAmountRoundingUnit` |  | |  | `broundunit` |
-| `RndngBaseUntAmtInCndnItmCrcy` |  | |  | `bbasisunit` |
-| `FinConditionIntrstBaseAmount` |  | |  | `cast(ConditionItem.bbasis as ftr_cndn_intrst_base_amount)` |
-| `FinCndnCalcBaseReference` |  | |  | `sbasis` |
-| `FinancialConditionItemAmount` |  | |  | `kbkond` |
-| `FinancialConditionItemCurrency` |  | |  | `swhrkond` |
-| `FinCndnAmountTimeUnit` |  | |  | `jbmonat` |
-| `ScrtyClCndnDrctExchRate` |  | |  | `cast( case when ConditionItem.kurs1 >= 0 then ConditionItem.kurs1 else 0 end as ftr_sc_exchange_rate_direct preserving type )` |
-| `ScrtyClCndnIndrctExchRate` |  | |  | `cast( case when ConditionItem.kurs1 < 0 then abs( ConditionItem.kurs1 ) else 0 end as ftr_sc_exchange_rate_indirect preserving type )` |
-| `FinConditionFactoryCalendar1` |  | |  | `skalid` |
-| `FinConditionFactoryCalendar2` |  | |  | `skalid2` |
-| `FinConditionFactoryCalendar3` |  | |  | `skalid3` |
-| `FinConditionFactoryCalendar4` |  | |  | `skalid4` |
-| `FinConditionFactoryCalendar5` |  | |  | `skalid5` |
-| `AverageIntrstRateWeightingCat` |  | |  | `savgweight` |
-| `AverageIntrstRateRndngCategory` |  | |  | `sroundavginterest` |
-| `AverageIntrstRateRndngDecimals` |  | |  | `rounddecavginterest` |
-| `AverageInterestRateSpreadValue` |  | |  | `pavgspread` |
-| `AvgIntrstRateHasUsedUpperLimit` |  | |  | `javgcap` |
-| `AverageInterestUpperLimitRate` |  | |  | `pavgcap` |
-| `AvgIntrstRateHasUsedLowerLimit` |  | |  | `javgfloor` |
-| `AverageInterestLowerLimitRate` |  | |  | `pavgfloor` |
-| `AverageIntrstRateResetCalcEvt` |  | |  | `sfactorreset` |
-| `FinCndnUpdateRuleEntryType` |  | |  | `case when ConditionType.sberfima <> 'ZA' then ConditionItem.update_rule_entry_type else null end` |
-| `FinCndnUpdateRuleFirstDate` |  | |  | `case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') then ConditionItem.dfaell else null end` |
-| `FinCndnUpdateRuleDateFrequency` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_codn_calc_dte_frequency preserving type )` |
-| `FinCndnUpdateRuleDateFrqcyUnit` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_codn_calc_dte_unit preserving type )` |
-| `UpdateRuleDateIsMonthEnd` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') then ConditionItem.sfult else null end as due_dte_as_end_date_month_end preserving type )` |
-| `FinCndnUpdtRuleDateWrkgDayShft` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') then ConditionItem.sfwerk else null end as ftr_cndn_due_date_wrk_day_sft preserving type )` |
-| `FinCndnCalcDteUpdateRule` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' then '0' when ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' then '0' when ConditionItem.svmeth = '3' or ConditionItem.svmeth = '4' then '1' when ConditionItem.svmeth = '5' then '2' else null end as ftr_cndn_calc_date_update_rule preserving type )` |
-| `CalculationDate` |  | |  | `case when ConditionType.sberfima <> 'ZA' then ConditionItem.dvalut else null end` |
-| `FinCndnCalcDteFrequency` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima <> 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_codn_calc_dte_frequency preserving type )` |
-| `FinCndnCalcDteFrqcyUnit` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima <> 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_codn_calc_dte_unit preserving type )` |
-| `CalcDateIsAsEndDateInclusive` |  | |  | `cast(case when ConditionType.sberfima = 'ZA' then '' when ConditionItem.sincl = '0' then '' else 'X' end as ftr_dateisinclusive preserving type )` |
-| `CalcDateIsAsEndDateMonthEnd` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' then ConditionItem.svult else null end as calc_dte_as_end_dte_month_end preserving type )` |
-| `FinCndnCalcDteWrkgDayShft` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' then ConditionItem.svwerk else null end as ftr_cndn_calc_date_wrk_day_sft preserving type )` |
-| `FinCndnCalcDteShftDrctn` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' then ConditionItem.avgstagevz else null end as ftr_cndn_calc_dte_shft_drctn preserving type )` |
-| `ScrtyClCndnCalcDteShftNrOfDays` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.avgstage else null end as ftr_sc_cndn_calc_dte_shft_days preserving type )` |
-| `CalcDteIsRegularWithVarblDte` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then '' when ConditionItem.svmeth = '2' then 'X' when ConditionItem.svmeth <> '2' then '' else null end as calc_dte_is_reg_with_varbl_dte preserving type )` |
-| `InterestCalculationDateRef` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then '0' when ConditionItem.svmeth = '4' then '0' when ConditionItem.svmeth = '3' then '1' else null end as reference_date_for_calc_dte preserving type )` |
-| `FinCndnDueDteUpdateRule` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' then '0' when ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' then '0' when ConditionItem.sfmeth = '3' or ConditionItem.sfmeth = '4' then '1' when ConditionItem.sfmeth = '5' then '2' else null end as ftr_cndn_due_date_update_rule preserving type )` |
-| `DueDate` |  | |  | `case when ConditionType.sberfima <> 'ZA' then ConditionItem.dfaell else null end` |
-| `FinCndnDueDteFrequency` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima <> 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_cndn_due_date_frequency preserving type )` |
-| `FinCndnDueDteFrqcyUnit` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima <> 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_cndn_due_date_frqcy_unit preserving type )` |
-| `DueDateIsAsEndDateInclusive` |  | |  | `cast (case when ConditionType.sberfima = 'ZA' then '' when ConditionItem.sfincl = '0' then '' else 'X' end as ftr_dateisinclusive preserving type )` |
-| `DueDateIsAsEndDateMonthEnd` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.sfult else null end as due_dte_as_end_date_month_end preserving type )` |
-| `FinCndnDueDteWrkgDayShft` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.sfwerk else null end as ftr_cndn_due_date_wrk_day_sft preserving type )` |
-| `FinCndnDueDteShftDrctn` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.afgstagevz else null end as ftr_cndn_due_date_shift_drctn preserving type )` |
-| `ScrtyClCndnDueDteShftNrOfDays` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.afgstage else null end as ftr_sc_cndn_due_dte_shft_days preserving type )` |
-| `DueDteIsRegularWithVarblDte` |  | |  | `cast ( case when ConditionItem.sfmeth = '2' and ConditionType.sberfima <> 'ZA' then 'X' when ConditionItem.sfmeth <> '2' and ConditionType.sberfima <> 'ZA' then '' else null end as due_dte_is_reg_with_varbl_dte preserving type )` |
-| `InterestDueDateReference` |  | |  | `cast ( case when ConditionType.sberfima <> 'ZA' then '0' when ConditionItem.sfmeth = '5' then '0' when ConditionItem.sfmeth = '4' then '0' when ConditionItem.sfmeth = '3' then '1' else null end as reference_date_for_due_dte preserving type )` |
-| `FinCndnPaytDateWrkgDayShft` |  | |  | `sdwerk` |
-| `FinCndnDueDteShiftToTermEnd` |  | |  | `cast( ConditionItem.sfranz as tb_sfranze_new )` |
-| `FinCndnDuDteIsFinMathCalcReltd` |  | |  | `cast( case when ConditionItem.sfant = '0' then '' else 'X' end as ftr_sc_vvsfant preserving type )` |
-| `FinCndnRpaytSettlmt` |  | |  | `jsofverr` |
-| `FinCndnFirstPeriodCalcMethod` |  | |  | `cast ( case ConditionItem.szeitant when '0' then '0' when '1' then '2' when '2' then '1' when '3' then '0' when '4' then '0' when '5' then '2' when '6' then '1' when '7' then '2' when '8' then '1' else '0' end as tfmsfstper preserving type )` |
-| `FinCndnLastPeriodCalcMethod` |  | |  | `cast ( case ConditionItem.szeitant when '0' then '0' when '1' then '2' when '2' then '1' when '3' then '2' when '4' then '1' when '5' then '0' when '6' then '0' when '7' then '1' when '8' then '2' else '0' end as tfmslstper preserving type )` |
-| `InterestRateAdjustmentDateRule` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ConditionItem.svmeth = '1' then '1' when ConditionType.sberfima = 'ZA' and ConditionItem.svmeth = '5' then '2' when ConditionType.sberfima = 'ZA' and ConditionItem.svmeth = '6' then '0' when ConditionType.sberfima = 'ZA' and ConditionItem.svmeth = '7' then '3' else null end as tfmsrhyzap preserving type )` |
-| `InterestRateAdjustmentDate` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.dvalut else null end as tbvaluza preserving type )` |
-| `IntrstRateAdjmtDateIsMonthEnd` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.svult else null end as adjmt_dte_as_end_dte_month_end preserving type )` |
-| `InterestRateAdjustmentFrqcy` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima = 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_cndn_adjmt_date_frequency preserving type )` |
-| `InterestRateAdjmtFrqcyUnit` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima = 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_cndn_adjmt_date_frqcy_unit preserving type )` |
-| `IntrstRateAdjmtDateWrkgDayShft` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.svwerk else null end as ftr_cndn_adjmt_dte_wrk_day_sft preserving type )` |
-| `FinCndnAdjmtDteShftDrctn` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.avgstagevz else null end as ftr_cndn_adjmt_dte_shft_drctn preserving type )` |
-| `ScrtyClIntrstRateAdjmtShftDays` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' then ConditionItem.avgstage else null end as ftr_sc_cndn_adj_dte_shft_days preserving type )` |
-| `InterestRateFixingDateRule` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '1' then '0' when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '5' then '2' when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '3' or ConditionItem.sfmeth = '6' or ConditionItem.sfmeth = '8' or ConditionItem.sfmeth = '9' ) then '1' else null end as tfmsrhy preserving type )` |
-| `InterestRateFixingDate` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.dfaell else null end as tbfaelza preserving type )` |
-| `IntrstRateFixingDateIsMonthEnd` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.sfult else null end as fixing_dte_as_end_dte_mnth_end preserving type )` |
-| `InterestRateFixingFrqcy` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_cndn_fixing_date_frequency preserving type )` |
-| `InterestRateFixingFrqcyUnit` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_cndn_fixing_dte_frqcy_unit preserving type )` |
-| `FinCndnFixingDteShftDrctn` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and (ConditionItem.sfwerk = '3' or ConditionItem.sfwerk = '4') then '-' when ConditionType.sberfima = 'ZA' and (ConditionItem.sfwerk = '1' or ConditionItem.sfwerk = '2') then '+' else null end as ftr_cndn_fixing_dte_shft_drctn preserving type )` |
-| `ScrtyClIntrstRateFixShftDays` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' then ConditionItem.afgstage else null end as ftr_sc_cndn_fix_dte_shft_days preserving type )` |
-| `FinCndnRateFixingLockoutPeriod` |  | |  | `adgstage` |
-| `IntrstRateFixDteShftIsModifd` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and (ConditionItem.sfwerk = '2' or ConditionItem.sfwerk = '4') then 'X' else null end as tfmjmodif preserving type )` |
-| `InterestRateFixingDateRef` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '5' or ConditionItem.sfmeth = '8' ) then '0' when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '3' then '1' when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '6' then '3' when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '9' then '2' else null end as tfmzreldat preserving type )` |
-| `_SecurityClassBasic` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityClass` | ✓ | |  | `cast(ConditionItem.rkey1 as ftr_gen_security_class preserving type)` |  |  |
+| `FinConditionConditionType` | ✓ | |  | `skoart` |  |  |
+| `ConditionItemValidityStartDate` | ✓ | |  | `case when dats_is_valid(ConditionItem.dguel_kp) = 1 then ConditionItem.dguel_kp else '99991231' end` |  |  |
+| `FinConditionSubItem` | ✓ | |  | `nstufe` |  |  |
+| `FinancialInstrProductCategory` |  | |  | `cast(ConditionItem.sanlf as ftr_gen_fin_instr_prod_categ preserving type)` |  |  |
+| `CndnItmValdtyStrtDtIsInclusive` |  | |  | `cast(case when ConditionItem.sexclguel = '0' then 'X' else '' end as ftr_sc_cndn_strt_dte_incld_ind preserving type )` |  |  |
+| `FinConditionForm` |  | |  | `jnullkon` |  |  |
+| `FinCndnReferenceConditionType` |  | |  | `skoaref` |  |  |
+| `FinCndnRefAccumulatingCndnType` |  | |  | `sum_skoaref` |  |  |
+| `InterestCalculationMethod` |  | |  | `szbmeth` |  |  |
+| `InterestCalculationType` |  | |  | `cast ( case when ConditionItem.jexpozins = 'X' then '1' when ConditionItem.jprozr = 'X' then '2' when ConditionItem.jprozr = 'Y' then '3' when ConditionItem.jexpointfactor = 'X' then '4' when ConditionItem.jexpozins = 'L' then '5' when ConditionItem.jexpointfactor = 'L' then '6' when ConditionItem.jexpointfactor = 'A' then '7' else '0' end as tfmsintcalc preserving type )` |  |  |
+| `ExponentialIntrstSettlmtFrqcy` |  | |  | `ammrhyzv` |  |  |
+| `IntrstCalcMethFactoryCalendar` |  | |  | `skalidwt` |  |  |
+| `InterestFirstPeriodRate` |  | |  | `pkond1stper` |  |  |
+| `InterestRefRateOptrSign` |  | |  | `szsrefvz` |  |  |
+| `InterestReference` |  | |  | `szsref` |  |  |
+| `ConditionPercentageRate` |  | |  | `pkond` |  |  |
+| `FinCndnFluctuationMarginRate` |  | |  | `pfluct` |  |  |
+| `FinancialConditionPaymentRate` |  | |  | `ppayment` |  |  |
+| `FinConditionFormulaReference` |  | |  | `sformref` |  |  |
+| `FinCndnFormulaVariable` |  | |  | `svarname` |  |  |
+| `DividendFactorType` |  | |  | `factor_type` |  |  |
+| `FinCndnRateFactorRndngCategory` |  | |  | `sroundratefactor` |  |  |
+| `FinCndnRateFactorRndngDecimals` |  | |  | `rounddecratefactor` |  |  |
+| `FinCndnFactorRoundingCategory` |  | |  | `sroundfactor` |  |  |
+| `FinCndnFactorRoundingDecimals` |  | |  | `rounddecfactor` |  |  |
+| `FinCndnBaseFactorRndngCategory` |  | |  | `sroundbasefactor` |  |  |
+| `FinCndnBaseFactorRndngDecimals` |  | |  | `rounddecbasefactor` |  |  |
+| `FinCndnAmountRoundingCategory` |  | |  | `sround` |  |  |
+| `FinCndnAmountRoundingUnit` |  | |  | `broundunit` |  |  |
+| `RndngBaseUntAmtInCndnItmCrcy` |  | |  | `bbasisunit` |  |  |
+| `FinConditionIntrstBaseAmount` |  | |  | `cast(ConditionItem.bbasis as ftr_cndn_intrst_base_amount)` |  |  |
+| `FinCndnCalcBaseReference` |  | |  | `sbasis` |  |  |
+| `FinancialConditionItemAmount` |  | |  | `kbkond` |  |  |
+| `FinancialConditionItemCurrency` |  | |  | `swhrkond` |  |  |
+| `FinCndnAmountTimeUnit` |  | |  | `jbmonat` |  |  |
+| `ScrtyClCndnDrctExchRate` |  | |  | `cast( case when ConditionItem.kurs1 >= 0 then ConditionItem.kurs1 else 0 end as ftr_sc_exchange_rate_direct preserving type )` |  |  |
+| `ScrtyClCndnIndrctExchRate` |  | |  | `cast( case when ConditionItem.kurs1 < 0 then abs( ConditionItem.kurs1 ) else 0 end as ftr_sc_exchange_rate_indirect preserving type )` |  |  |
+| `FinConditionFactoryCalendar1` |  | |  | `skalid` |  |  |
+| `FinConditionFactoryCalendar2` |  | |  | `skalid2` |  |  |
+| `FinConditionFactoryCalendar3` |  | |  | `skalid3` |  |  |
+| `FinConditionFactoryCalendar4` |  | |  | `skalid4` |  |  |
+| `FinConditionFactoryCalendar5` |  | |  | `skalid5` |  |  |
+| `AverageIntrstRateWeightingCat` |  | |  | `savgweight` |  |  |
+| `AverageIntrstRateRndngCategory` |  | |  | `sroundavginterest` |  |  |
+| `AverageIntrstRateRndngDecimals` |  | |  | `rounddecavginterest` |  |  |
+| `AverageInterestRateSpreadValue` |  | |  | `pavgspread` |  |  |
+| `AvgIntrstRateHasUsedUpperLimit` |  | |  | `javgcap` |  |  |
+| `AverageInterestUpperLimitRate` |  | |  | `pavgcap` |  |  |
+| `AvgIntrstRateHasUsedLowerLimit` |  | |  | `javgfloor` |  |  |
+| `AverageInterestLowerLimitRate` |  | |  | `pavgfloor` |  |  |
+| `AverageIntrstRateResetCalcEvt` |  | |  | `sfactorreset` |  |  |
+| `FinCndnUpdateRuleEntryType` |  | |  | `case when ConditionType.sberfima <> 'ZA' then ConditionItem.update_rule_entry_type else null end` |  |  |
+| `FinCndnUpdateRuleFirstDate` |  | |  | `case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') then ConditionItem.dfaell else null end` |  |  |
+| `FinCndnUpdateRuleDateFrequency` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_codn_calc_dte_frequency preserving type )` |  |  |
+| `FinCndnUpdateRuleDateFrqcyUnit` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_codn_calc_dte_unit preserving type )` |  |  |
+| `UpdateRuleDateIsMonthEnd` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') then ConditionItem.sfult else null end as due_dte_as_end_date_month_end preserving type )` |  |  |
+| `FinCndnUpdtRuleDateWrkgDayShft` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and (ConditionItem.update_rule_entry_type = '09' or ConditionItem.update_rule_entry_type = '10') then ConditionItem.sfwerk else null end as ftr_cndn_due_date_wrk_day_sft preserving type )` |  |  |
+| `FinCndnCalcDteUpdateRule` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' then '0' when ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' then '0' when ConditionItem.svmeth = '3' or ConditionItem.svmeth = '4' then '1' when ConditionItem.svmeth = '5' then '2' else null end as ftr_cndn_calc_date_update_rule preserving type )` |  |  |
+| `CalculationDate` |  | |  | `case when ConditionType.sberfima <> 'ZA' then ConditionItem.dvalut else null end` |  |  |
+| `FinCndnCalcDteFrequency` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima <> 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_codn_calc_dte_frequency preserving type )` |  |  |
+| `FinCndnCalcDteFrqcyUnit` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima <> 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_codn_calc_dte_unit preserving type )` |  |  |
+| `CalcDateIsAsEndDateInclusive` |  | |  | `cast(case when ConditionType.sberfima = 'ZA' then '' when ConditionItem.sincl = '0' then '' else 'X' end as ftr_dateisinclusive preserving type )` |  |  |
+| `CalcDateIsAsEndDateMonthEnd` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' then ConditionItem.svult else null end as calc_dte_as_end_dte_month_end preserving type )` |  |  |
+| `FinCndnCalcDteWrkgDayShft` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' then ConditionItem.svwerk else null end as ftr_cndn_calc_date_wrk_day_sft preserving type )` |  |  |
+| `FinCndnCalcDteShftDrctn` |  | |  | `cast(case when ConditionType.sberfima <> 'ZA' then ConditionItem.avgstagevz else null end as ftr_cndn_calc_dte_shft_drctn preserving type )` |  |  |
+| `ScrtyClCndnCalcDteShftNrOfDays` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.avgstage else null end as ftr_sc_cndn_calc_dte_shft_days preserving type )` |  |  |
+| `CalcDteIsRegularWithVarblDte` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then '' when ConditionItem.svmeth = '2' then 'X' when ConditionItem.svmeth <> '2' then '' else null end as calc_dte_is_reg_with_varbl_dte preserving type )` |  |  |
+| `InterestCalculationDateRef` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then '0' when ConditionItem.svmeth = '4' then '0' when ConditionItem.svmeth = '3' then '1' else null end as reference_date_for_calc_dte preserving type )` |  |  |
+| `FinCndnDueDteUpdateRule` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' then '0' when ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' then '0' when ConditionItem.sfmeth = '3' or ConditionItem.sfmeth = '4' then '1' when ConditionItem.sfmeth = '5' then '2' else null end as ftr_cndn_due_date_update_rule preserving type )` |  |  |
+| `DueDate` |  | |  | `case when ConditionType.sberfima <> 'ZA' then ConditionItem.dfaell else null end` |  |  |
+| `FinCndnDueDteFrequency` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima <> 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_cndn_due_date_frequency preserving type )` |  |  |
+| `FinCndnDueDteFrqcyUnit` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima <> 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_cndn_due_date_frqcy_unit preserving type )` |  |  |
+| `DueDateIsAsEndDateInclusive` |  | |  | `cast (case when ConditionType.sberfima = 'ZA' then '' when ConditionItem.sfincl = '0' then '' else 'X' end as ftr_dateisinclusive preserving type )` |  |  |
+| `DueDateIsAsEndDateMonthEnd` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.sfult else null end as due_dte_as_end_date_month_end preserving type )` |  |  |
+| `FinCndnDueDteWrkgDayShft` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.sfwerk else null end as ftr_cndn_due_date_wrk_day_sft preserving type )` |  |  |
+| `FinCndnDueDteShftDrctn` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.afgstagevz else null end as ftr_cndn_due_date_shift_drctn preserving type )` |  |  |
+| `ScrtyClCndnDueDteShftNrOfDays` |  | |  | `cast( case when ConditionType.sberfima <> 'ZA' then ConditionItem.afgstage else null end as ftr_sc_cndn_due_dte_shft_days preserving type )` |  |  |
+| `DueDteIsRegularWithVarblDte` |  | |  | `cast ( case when ConditionItem.sfmeth = '2' and ConditionType.sberfima <> 'ZA' then 'X' when ConditionItem.sfmeth <> '2' and ConditionType.sberfima <> 'ZA' then '' else null end as due_dte_is_reg_with_varbl_dte preserving type )` |  |  |
+| `InterestDueDateReference` |  | |  | `cast ( case when ConditionType.sberfima <> 'ZA' then '0' when ConditionItem.sfmeth = '5' then '0' when ConditionItem.sfmeth = '4' then '0' when ConditionItem.sfmeth = '3' then '1' else null end as reference_date_for_due_dte preserving type )` |  |  |
+| `FinCndnPaytDateWrkgDayShft` |  | |  | `sdwerk` |  |  |
+| `FinCndnDueDteShiftToTermEnd` |  | |  | `cast( ConditionItem.sfranz as tb_sfranze_new )` |  |  |
+| `FinCndnDuDteIsFinMathCalcReltd` |  | |  | `cast( case when ConditionItem.sfant = '0' then '' else 'X' end as ftr_sc_vvsfant preserving type )` |  |  |
+| `FinCndnRpaytSettlmt` |  | |  | `jsofverr` |  |  |
+| `FinCndnFirstPeriodCalcMethod` |  | |  | `cast ( case ConditionItem.szeitant when '0' then '0' when '1' then '2' when '2' then '1' when '3' then '0' when '4' then '0' when '5' then '2' when '6' then '1' when '7' then '2' when '8' then '1' else '0' end as tfmsfstper preserving type )` |  |  |
+| `FinCndnLastPeriodCalcMethod` |  | |  | `cast ( case ConditionItem.szeitant when '0' then '0' when '1' then '2' when '2' then '1' when '3' then '2' when '4' then '1' when '5' then '0' when '6' then '0' when '7' then '1' when '8' then '2' else '0' end as tfmslstper preserving type )` |  |  |
+| `InterestRateAdjustmentDateRule` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ConditionItem.svmeth = '1' then '1' when ConditionType.sberfima = 'ZA' and ConditionItem.svmeth = '5' then '2' when ConditionType.sberfima = 'ZA' and ConditionItem.svmeth = '6' then '0' when ConditionType.sberfima = 'ZA' and ConditionItem.svmeth = '7' then '3' else null end as tfmsrhyzap preserving type )` |  |  |
+| `InterestRateAdjustmentDate` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.dvalut else null end as tbvaluza preserving type )` |  |  |
+| `IntrstRateAdjmtDateIsMonthEnd` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.svult else null end as adjmt_dte_as_end_dte_month_end preserving type )` |  |  |
+| `InterestRateAdjustmentFrqcy` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima = 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_cndn_adjmt_date_frequency preserving type )` |  |  |
+| `InterestRateAdjmtFrqcyUnit` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima = 'ZA' and ( ConditionItem.svmeth = '1' or ConditionItem.svmeth = '2' or ConditionItem.svmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_cndn_adjmt_date_frqcy_unit preserving type )` |  |  |
+| `IntrstRateAdjmtDateWrkgDayShft` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.svwerk else null end as ftr_cndn_adjmt_dte_wrk_day_sft preserving type )` |  |  |
+| `FinCndnAdjmtDteShftDrctn` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.avgstagevz else null end as ftr_cndn_adjmt_dte_shft_drctn preserving type )` |  |  |
+| `ScrtyClIntrstRateAdjmtShftDays` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' then ConditionItem.avgstage else null end as ftr_sc_cndn_adj_dte_shft_days preserving type )` |  |  |
+| `InterestRateFixingDateRule` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '1' then '0' when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '5' then '2' when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '3' or ConditionItem.sfmeth = '6' or ConditionItem.sfmeth = '8' or ConditionItem.sfmeth = '9' ) then '1' else null end as tfmsrhy preserving type )` |  |  |
+| `InterestRateFixingDate` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.dfaell else null end as tbfaelza preserving type )` |  |  |
+| `IntrstRateFixingDateIsMonthEnd` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' then ConditionItem.sfult else null end as fixing_dte_as_end_dte_mnth_end preserving type )` |  |  |
+| `InterestRateFixingFrqcy` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.attrhy is not initial then ConditionItem.attrhy when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.ammrhy is not initial then ConditionItem.ammrhy else null end as ftr_cndn_fixing_date_frequency preserving type )` |  |  |
+| `InterestRateFixingFrqcyUnit` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.attrhy is not initial then '1' when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '2' or ConditionItem.sfmeth = '5' ) and ConditionItem.ammrhy is not initial then '0' else null end as ftr_cndn_fixing_dte_frqcy_unit preserving type )` |  |  |
+| `FinCndnFixingDteShftDrctn` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and (ConditionItem.sfwerk = '3' or ConditionItem.sfwerk = '4') then '-' when ConditionType.sberfima = 'ZA' and (ConditionItem.sfwerk = '1' or ConditionItem.sfwerk = '2') then '+' else null end as ftr_cndn_fixing_dte_shft_drctn preserving type )` |  |  |
+| `ScrtyClIntrstRateFixShftDays` |  | |  | `cast( case when ConditionType.sberfima = 'ZA' then ConditionItem.afgstage else null end as ftr_sc_cndn_fix_dte_shft_days preserving type )` |  |  |
+| `FinCndnRateFixingLockoutPeriod` |  | |  | `adgstage` |  |  |
+| `IntrstRateFixDteShftIsModifd` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and (ConditionItem.sfwerk = '2' or ConditionItem.sfwerk = '4') then 'X' else null end as tfmjmodif preserving type )` |  |  |
+| `InterestRateFixingDateRef` |  | |  | `cast ( case when ConditionType.sberfima = 'ZA' and ( ConditionItem.sfmeth = '1' or ConditionItem.sfmeth = '5' or ConditionItem.sfmeth = '8' ) then '0' when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '3' then '1' when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '6' then '3' when ConditionType.sberfima = 'ZA' and ConditionItem.sfmeth = '9' then '2' else null end as tfmzreldat preserving type )` |  |  |
+| `_SecurityClassBasic` | | ✓ | | | | |
 
 ## Associations
 

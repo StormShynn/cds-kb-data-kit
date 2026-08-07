@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `LglCntntMCatType` | ✓ | |  |  |
-| `LglCntntMCatTypeName` |  | |  |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMCatType` | ✓ | |  |  |  |  |
+| `LglCntntMCatTypeName` |  | |  |  |  |  |
 
 ## Source Code
 

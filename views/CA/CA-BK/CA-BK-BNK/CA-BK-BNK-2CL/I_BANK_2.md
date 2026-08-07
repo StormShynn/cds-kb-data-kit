@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `BankCountry` | ✓ | |  | `banks` |
-| `BankInternalID` | ✓ | |  | `bankl` |
-| `CreationDate` |  | |  | `erdat` |
-| `CreatedByUser` |  | |  | `ernam` |
-| `BankName` |  | |  | `banka` |
-| `Region` |  | |  | `provz` |
-| `StreetName` |  | |  | `stras` |
-| `ShortStreetName` |  | |  | `stras` |
-| `CityName` |  | |  | `ort01` |
-| `ShortCityName` |  | |  | `ort01` |
-| `SWIFTCode` |  | |  | `swift` |
-| `BankNetworkGrouping` |  | |  | `bgrup` |
-| `IsPostBankAccount` |  | |  | `xpgro` |
-| `IsMarkedForDeletion` |  | |  | `loevm` |
-| `Bank` |  | |  | `bnklz` |
-| `PostOfficeBankAccount` |  | |  | `pskto` |
-| `Branch` |  | |  | `brnch` |
-| `BankBranch` |  | |  | `brnch` |
-| `CheckDigitCalculationMethod` |  | |  | `chkme` |
-| `BankDataFileFormat` |  | |  | `vers` |
-| `AddressID` |  | |  | `adrnr` |
-| `BankCategory` |  | |  | `bintk` |
-| `_Address` | | ✓ | | |
-| `_BankAddress` | | ✓ | | |
-| `_Region` | | ✓ | | |
-| `_Country` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankCountry` | ✓ | |  | `banks` |  |  |
+| `BankInternalID` | ✓ | |  | `bankl` |  |  |
+| `CreationDate` |  | |  | `erdat` |  |  |
+| `CreatedByUser` |  | |  | `ernam` |  |  |
+| `BankName` |  | |  | `banka` |  |  |
+| `Region` |  | |  | `provz` |  |  |
+| `StreetName` |  | |  | `stras` |  |  |
+| `ShortStreetName` |  | |  | `stras` |  |  |
+| `CityName` |  | |  | `ort01` |  |  |
+| `ShortCityName` |  | |  | `ort01` |  |  |
+| `SWIFTCode` |  | |  | `swift` |  |  |
+| `BankNetworkGrouping` |  | |  | `bgrup` |  |  |
+| `IsPostBankAccount` |  | |  | `xpgro` |  |  |
+| `IsMarkedForDeletion` |  | |  | `loevm` |  |  |
+| `Bank` |  | |  | `bnklz` |  |  |
+| `PostOfficeBankAccount` |  | |  | `pskto` |  |  |
+| `Branch` |  | |  | `brnch` |  |  |
+| `BankBranch` |  | |  | `brnch` |  |  |
+| `CheckDigitCalculationMethod` |  | |  | `chkme` |  |  |
+| `BankDataFileFormat` |  | |  | `vers` |  |  |
+| `AddressID` |  | |  | `adrnr` |  |  |
+| `BankCategory` |  | |  | `bintk` |  |  |
+| `_Address` | | ✓ | | | | |
+| `_BankAddress` | | ✓ | | | | |
+| `_Region` | | ✓ | | | | |
+| `_Country` | | ✓ | | | | |
 
 ## Associations
 

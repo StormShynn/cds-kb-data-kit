@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `AccountingDocumentHeaderText` |  | |  | `bktxt` |
-| `DocumentDate` |  | |  | `fis_bldat` |
-| `PostingDate` |  | |  | `fis_budat` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocumentHeaderText` |  | |  | `bktxt` |  |  |
+| `DocumentDate` |  | |  | `fis_bldat` |  |  |
+| `PostingDate` |  | |  | `fis_budat` |  |  |
 
 ## Source Code
 

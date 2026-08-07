@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `PurchasingDocumentType` |  | |  | `esart` |
-| `CompanyCode` |  | |  | `bukrs` |
-| `PurchasingOrganization` |  | |  | `ekorg` |
-| `PurchasingGroup` |  | |  | `bkgrp` |
-| `Supplier` |  | |  | `md_supplier` |
-| `ValidityStartDate` |  | |  | `kdatb` |
-| `ValidityEndDate` |  | |  | `kdate` |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchasingDocumentType` |  | |  | `esart` |  |  |
+| `CompanyCode` |  | |  | `bukrs` |  |  |
+| `PurchasingOrganization` |  | |  | `ekorg` |  |  |
+| `PurchasingGroup` |  | |  | `bkgrp` |  |  |
+| `Supplier` |  | |  | `md_supplier` |  |  |
+| `ValidityStartDate` |  | |  | `kdatb` |  |  |
+| `ValidityEndDate` |  | |  | `kdate` |  |  |
 
 ## Source Code
 

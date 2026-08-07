@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `CaseStatusProfile` | ✓ | |  | `profile_id` |
-| `CaseStatus` | ✓ | |  | `stat_orderno` |
-| `CaseSystemStatus` |  | |  | `stat_para` |
-| `CaseLowestStatus` |  | |  | `stat_orderno_l` |
-| `CaseHighestStatus` |  | |  | `stat_orderno_h` |
-| `CaseEvent` |  | |  | `wf_event` |
-| `_StatProf` | | ✓ | | |
-| `_SystemStatus` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseStatusProfile` | ✓ | |  | `profile_id` |  |  |
+| `CaseStatus` | ✓ | |  | `stat_orderno` |  |  |
+| `CaseSystemStatus` |  | |  | `stat_para` |  |  |
+| `CaseLowestStatus` |  | |  | `stat_orderno_l` |  |  |
+| `CaseHighestStatus` |  | |  | `stat_orderno_h` |  |  |
+| `CaseEvent` |  | |  | `wf_event` |  |  |
+| `_StatProf` | | ✓ | | | | |
+| `_SystemStatus` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 

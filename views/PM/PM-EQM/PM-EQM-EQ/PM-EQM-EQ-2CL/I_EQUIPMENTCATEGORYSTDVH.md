@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `EquipmentCategory` | ✓ | |  |  |
-| `EquipmentCategoryStatusProfile` |  | |  |  |
-| `EquipmentCategoryViewProfile` |  | |  |  |
-| `EquipCatHasLinearAttributes` |  | |  |  |
-| `EquipmentCategoryOID` |  | |  |  |
-| `IsUtilitiesData` |  | |  |  |
-| `NumberRangeForIntIDAssignment` |  | |  |  |
-| `NumberRangeForExtIDAssignment` |  | |  |  |
-| `TechObjInspectionLevelCode` |  | |  |  |
-| `EquipmentCategoryReferenceType` |  | |  |  |
-| `_InspectionLevelText` | | ✓ | | |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EquipmentCategory` | ✓ | |  |  |  |  |
+| `EquipmentCategoryStatusProfile` |  | |  |  |  |  |
+| `EquipmentCategoryViewProfile` |  | |  |  |  |  |
+| `EquipCatHasLinearAttributes` |  | |  |  |  |  |
+| `EquipmentCategoryOID` |  | |  |  |  |  |
+| `IsUtilitiesData` |  | |  |  |  |  |
+| `NumberRangeForIntIDAssignment` |  | |  |  |  |  |
+| `NumberRangeForExtIDAssignment` |  | |  |  |  |  |
+| `TechObjInspectionLevelCode` |  | |  |  |  |  |
+| `EquipmentCategoryReferenceType` |  | |  |  |  |  |
+| `_InspectionLevelText` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
 
 ## Source Code
 

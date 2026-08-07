@@ -30,42 +30,42 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `MaterialDocument` | ✓ | |  |  |
-| `MaterialDocumentYear` | ✓ | |  |  |
-| `MaterialDocumentItem` | ✓ | |  |  |
-| `SuplrCsgnmtPplineWthdrwlStatus` |  | |  |  |
-| `DocumentDate` |  | |  |  |
-| `PostingDate` |  | |  |  |
-| `CompanyCode` |  | |  |  |
-| `IssgOrRcvgStkIdfgSpclStkType` |  | |  |  |
-| `ConsignmentPipelineSupplier` |  | |  |  |
-| `Plant` |  | |  |  |
-| `Material` |  | |  |  |
-| `DebitCreditCode` |  | |  |  |
-| `BusinessArea` |  | |  |  |
-| `DocumentCurrency` |  | |  |  |
-| `SuplrCsgnmtPplineWthdrwlAmount` |  | |  | `} SuplrCsgnmtPplineWthdrwlAmount` |
-| `SupCsgnmtPplineWthdrwlQtyUnit` |  | |  |  |
-| `SuplrCsgnmtPplineWthdrwlQty` |  | |  | `} SuplrCsgnmtPplineWthdrwlQty` |
-| `GLAccount` |  | |  |  |
-| `TaxCode` |  | |  |  |
-| `NonDeductibleInputTaxAmount` |  | |  | `} NonDeductibleInputTaxAmount` |
-| `ProfitCenter` |  | |  |  |
-| `TaxCountry` |  | |  |  |
-| `_SupCsgnmtPplineInvcHistDEX` | | ✓ | | |
-| `_CompanyCode` | | ✓ | | |
-| `_InventorySpecialStockType` | | ✓ | | |
-| `_ConsignmentPipelineSupplier` | | ✓ | | |
-| `_Plant` | | ✓ | | |
-| `_Product` | | ✓ | | |
-| `_DebitCreditCode` | | ✓ | | |
-| `_BusinessArea` | | ✓ | | |
-| `_DocumentCurrency` | | ✓ | | |
-| `_UnitOfMeasure` | | ✓ | | |
-| `_GLAccount` | | ✓ | | |
-| `_TaxCountry` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialDocument` | ✓ | |  |  |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |  |  |
+| `SuplrCsgnmtPplineWthdrwlStatus` |  | |  |  |  |  |
+| `DocumentDate` |  | |  |  |  |  |
+| `PostingDate` |  | |  |  |  |  |
+| `CompanyCode` |  | |  |  |  |  |
+| `IssgOrRcvgStkIdfgSpclStkType` |  | |  |  |  |  |
+| `ConsignmentPipelineSupplier` |  | |  |  |  |  |
+| `Plant` |  | |  |  |  |  |
+| `Material` |  | |  |  |  |  |
+| `DebitCreditCode` |  | |  |  |  |  |
+| `BusinessArea` |  | |  |  |  |  |
+| `DocumentCurrency` |  | |  |  |  |  |
+| `SuplrCsgnmtPplineWthdrwlAmount` |  | |  |  |  |  |
+| `SupCsgnmtPplineWthdrwlQtyUnit` |  | |  |  |  |  |
+| `SuplrCsgnmtPplineWthdrwlQty` |  | |  |  |  |  |
+| `GLAccount` |  | |  |  |  |  |
+| `TaxCode` |  | |  |  |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |  |  |
+| `ProfitCenter` |  | |  |  |  |  |
+| `TaxCountry` |  | |  |  |  |  |
+| `_SupCsgnmtPplineInvcHistDEX` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_ConsignmentPipelineSupplier` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_DebitCreditCode` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_UnitOfMeasure` | | ✓ | | | | |
+| `_GLAccount` | | ✓ | | | | |
+| `_TaxCountry` | | ✓ | | | | |
 
 ## Associations
 

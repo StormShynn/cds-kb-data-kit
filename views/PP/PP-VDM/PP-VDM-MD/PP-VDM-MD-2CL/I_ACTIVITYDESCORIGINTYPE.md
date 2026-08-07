@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Key | Association | Via | Source |
-|---|---|---|---|---|
-| `ActivityDescOriginType` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as actxy preserving type)` |
-| `_Text` | | ✓ | | |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ActivityDescOriginType` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as actxy preserving type)` |  |  |
+| `_Text` | | ✓ | | | | |
 
 ## Associations
 
