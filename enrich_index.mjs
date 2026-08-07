@@ -70,7 +70,22 @@ const viewFiles = await listViewFiles(viewsDir);
 const docs = [];
 const fieldsMap = {};
 const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo }]
+const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo }]
 let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
+
+// The immediate `as select from X` / `as projection on X` target isn't
+// rendered as its own table anywhere in the .md (only association targets
+// are, via the Associations table) — pull it straight out of the embedded
+// DDL fenced code block instead, same pattern src/parser.mjs's
+// findSelectListStart/readDDLContent use, but with no dependency on either
+// (this only needs the one line, not a full parse).
+const DDL_BLOCK_RE = /```(?:abap|sql)?\s*\r?\n([\s\S]*?)\r?\n```/;
+function extractSourceTable(content) {
+  const m = content.match(DDL_BLOCK_RE);
+  if (!m) return '';
+  const sm = m[1].match(/as\s+select\s+from\s+(\w+)/i) || m[1].match(/as\s+projection\s+on\s+(\w+)/i);
+  return sm ? sm[1] : '';
+}
 
 for (let i = 0; i < viewFiles.length; i++) {
   const { name, relPath } = viewFiles[i];
@@ -119,6 +134,23 @@ for (let i = 0; i < viewFiles.length; i++) {
       if (!fieldName) continue;
       const key = fieldName.toUpperCase();
       (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo });
+    }
+  }
+
+  // table-index.json: TABLE/VIEW NAME -> which views build on it (as their
+  // FROM source) or associate to it — the reverse lookup for "I found table
+  // BKPF / view I_JournalEntryItem in some ABAP code, which of our CDS
+  // views involve it" instead of grepping every DDL source block by hand.
+  const sourceTable = extractSourceTable(content);
+  if (sourceTable) {
+    const key = sourceTable.toUpperCase();
+    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo });
+  }
+  if (assocTable) {
+    for (const [alias, targetView] of assocTable.rows) {
+      if (!targetView) continue;
+      const key = targetView.toUpperCase();
+      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo });
     }
   }
 
@@ -236,3 +268,20 @@ const fieldIndexOutput = {
 };
 await fs.writeFile(fieldIndexFile, JSON.stringify(fieldIndexOutput), 'utf-8');
 console.log(`Wrote ${fieldIndexFile} (${Object.keys(fieldIndex).length} distinct field name(s))`);
+
+// ── table-index.json — TABLE/VIEW NAME -> [{view, relation, alias, appComponent, lob, bo}] ─
+// Same idea as field-index.json but keyed on what a view is built FROM
+// (its base source table/view) or associates TO, rather than what fields
+// it exposes — "which CDS views touch table/view X" instead of "which CDS
+// views have field X".
+for (const key of Object.keys(tableIndex)) {
+  tableIndex[key].sort((a, b) => a.view.localeCompare(b.view));
+}
+const tableIndexFile = path.join(dataRoot, 'index', 'table-index.json');
+const tableIndexOutput = {
+  builtAt: output.builtAt,
+  tableCount: Object.keys(tableIndex).length,
+  tables: tableIndex,
+};
+await fs.writeFile(tableIndexFile, JSON.stringify(tableIndexOutput), 'utf-8');
+console.log(`Wrote ${tableIndexFile} (${Object.keys(tableIndex).length} distinct table/view name(s))`);

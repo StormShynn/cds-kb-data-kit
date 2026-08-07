@@ -31,32 +31,32 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
-| `FormOfAddress` |  | |  | `title` |  |  |
-| `GivenName` |  | |  | `name_first` |  |  |
-| `FamilyName` |  | |  | `name_last` |  |  |
-| `PersonBirthName` |  | |  | `name2` |  |  |
-| `PersonMiddleName` |  | |  | `namemiddle` |  |  |
-| `SecondFamilyName` |  | |  | `name_last2` |  |  |
-| `AcademicTitle` |  | |  | `title_aca1` |  |  |
-| `AcademicTitle2` |  | |  | `title_aca2` |  |  |
-| `FamilyNamePrefix` |  | |  | `prefix1` |  |  |
-| `FamilyNameSecondPrefix` |  | |  | `prefix2` |  |  |
-| `PersonNameSupplementCode` |  | |  | `title_sppl` |  |  |
-| `PersonNickname` |  | |  | `nickname` |  |  |
-| `NameInitials` |  | |  | `initials` |  |  |
-| `PersonFullName` |  | |  | `name_text` |  |  |
-| `CorrespondenceLanguage` |  | |  | `langu` |  |  |
-| `AddressPersonSearchTerm1` |  | |  | `sort1` |  |  |
-| `AddressPersonSearchTerm2` |  | |  | `sort2` |  |  |
-| `PersonFullNameFormattingCode` |  | |  | `nameformat` |  |  |
-| `PersonFullNameFormattingCntry` |  | |  | `namcountry` |  |  |
-| `addresscreatedbyuser` |  | |  |  |  |  |
-| `addresscreatedondatetime` |  | |  |  |  |  |
-| `addresschangedbyuser` |  | |  |  |  |  |
-| `addresschangedondatetime` |  | |  |  |  |  |
-| `converted` |  | |  |  |  |  |
+| `AddressPersonID` | ✓ | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `AddressRepresentationCode` | ✓ | |  | `nation` | `CHAR(1)` | Version ID for International Addresses |
+| `FormOfAddress` |  | |  | `title` | `CHAR(4)` | Form-of-Address Key |
+| `GivenName` |  | |  | `name_first` | `CHAR(40)` | First Name |
+| `FamilyName` |  | |  | `name_last` | `CHAR(40)` | Last Name |
+| `PersonBirthName` |  | |  | `name2` | `CHAR(40)` | Name of person at birth |
+| `PersonMiddleName` |  | |  | `namemiddle` | `CHAR(40)` | Middle name or second forename of a person |
+| `SecondFamilyName` |  | |  | `name_last2` | `CHAR(40)` | Other Last Name of a Person |
+| `AcademicTitle` |  | |  | `title_aca1` | `CHAR(4)` | Academic Title: Key |
+| `AcademicTitle2` |  | |  | `title_aca2` | `CHAR(4)` | Second academic title (key) |
+| `FamilyNamePrefix` |  | |  | `prefix1` | `CHAR(4)` | Name Prefix (Key) |
+| `FamilyNameSecondPrefix` |  | |  | `prefix2` | `CHAR(4)` | 2nd name prefix (key) |
+| `PersonNameSupplementCode` |  | |  | `title_sppl` | `CHAR(4)` | Name supplement, e.g. noble title (key) |
+| `PersonNickname` |  | |  | `nickname` | `CHAR(40)` | Nickname or name used |
+| `NameInitials` |  | |  | `initials` | `CHAR(10)` | "Middle Initial" or personal initials |
+| `PersonFullName` |  | |  | `name_text` | `CHAR(80)` | Full Name of Person |
+| `CorrespondenceLanguage` |  | |  | `langu` | `LANG(1)` | Language Key |
+| `AddressPersonSearchTerm1` |  | |  | `sort1` | `CHAR(20)` | Search Term 1 |
+| `AddressPersonSearchTerm2` |  | |  | `sort2` | `CHAR(20)` | Search Term 2 |
+| `PersonFullNameFormattingCode` |  | |  | `nameformat` | `CHAR(2)` | Name format |
+| `PersonFullNameFormattingCntry` |  | |  | `namcountry` | `CHAR(3)` | Country/Region for Name Format Rule |
+| `addresscreatedbyuser` |  | |  |  | `CHAR(12)` | Created By User |
+| `addresscreatedondatetime` |  | |  |  | `UTCL(27)` | Creation Date Time |
+| `addresschangedbyuser` |  | |  |  | `CHAR(12)` | Last Changed By User |
+| `addresschangedondatetime` |  | |  |  | `UTCL(27)` | Last Change Date Time |
+| `converted` |  | |  |  | `CHAR(1)` | Generation Status of 'Full Name of Person' Field |
 | `_FormOfAddress` | | ✓ | | | | |
 | `_NameSupplement` | | ✓ | | | | |
 | `_FamilyNamePrefix` | | ✓ | | | | |

@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressRepresentationCode` | ✓ | |  |  |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  | `CHAR(1)` | Version ID for International Addresses |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

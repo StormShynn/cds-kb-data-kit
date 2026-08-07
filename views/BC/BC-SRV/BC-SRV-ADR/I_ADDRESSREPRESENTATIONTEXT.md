@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
-| `AddressRepresentationDesc` |  | |  | `nation_tex` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `AddressRepresentationCode` | ✓ | |  | `nation` | `CHAR(1)` | Version ID for International Addresses |
+| `AddressRepresentationDesc` |  | |  | `nation_tex` | `CHAR(16)` | International address version name |
 
 ## Source Code
 

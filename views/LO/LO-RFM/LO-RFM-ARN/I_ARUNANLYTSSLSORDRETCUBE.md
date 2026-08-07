@@ -5,9 +5,26 @@ app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSLSORDRETCUBE')/$value
 semantic_en: Sales Order Returns - Cube
+semantic_vi: Sales Order Returns - Cube — CDS view tổng hợp dựa trên I_ARunAnlytsSalesReturns.
+keywords:
+  - sales
+  - order
+  - returns
+  - cube
+  - requirement
+  - document
+  - number
+  - item
+  - supply
+  - schedule
+  - line
+  - assigned
+  - type
+  - assgmt
+  - source
 tags:
   - LO
   - bo:salesorder
@@ -18,7 +35,6 @@ tags:
   - lob:logistics general
   - order
   - sales-order
-  - metadata-only
 ---
 # I_ARUNANLYTSSLSORDRETCUBE
 
@@ -30,15 +46,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSLSORDRETCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSLSORDRETCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RequirementDocumentNumber` |  | |  |  | `CHAR(10)` | Sales Document |
-| `RequirementDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
-| `SupplyScheduleLine` |  | |  |  | `NUMC(4)` | Schedule Line Number |
+| `RequirementDocumentNumber` | ✓ | |  |  | `CHAR(10)` | Sales Document |
+| `RequirementDocumentItem` | ✓ | |  |  | `NUMC(6)` | Sales Document Item |
+| `SupplyScheduleLine` | ✓ | |  |  | `NUMC(4)` | Schedule Line Number |
 | `AssignedSupplyType` |  | |  |  | `CHAR(1)` |  |
 | `SupAssgmtSource` |  | |  |  | `CHAR(1)` |  |
 | `SupplyDeliveryDate` |  | |  |  | `DATS(8)` | Requested Delivery Date |
@@ -67,7 +83,189 @@ tags:
 | `SDDocumentReason` |  | |  |  | `CHAR(3)` | Order Reason (Reason for the Business Transaction) |
 | `SalesDocumentRjcnReason` |  | |  |  | `CHAR(2)` | Reason for Rejection of Sales Documents |
 | `NetPriceAmount` |  | |  |  | `CURR(11)` | Net Price |
-| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
-| `NetAmount` |  | |  |  | `CURR(19)` | Net Value in Display Currency |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` | `CUKY(5)` | Display Currency |
+| `NetAmount` |  | |  | `cast(currency_conversion( amount => NetAmount, source_currency => DocumentCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => cast($session.system_date as abap.dats), round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true, error_handling => 'SET_TO_NULL' )as net_amount_in_dsp_crcy)` | `CURR(19)` | Net Value in Display Currency |
 | `DocumentCurrency` |  | |  |  | `CUKY(5)` | SD Document Currency |
-| `NmbrOfItemsInOrder` |  | |  |  | `INT4(10)` | Item Issues in Order |
+| `NmbrOfItemsInOrder` |  | |  | `cast( 1 as item_issues )` | `INT4(10)` | Item Issues in Order |
+| `_DisplayCurrency` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_ProductType` | | ✓ | | | | |
+| `_SalesOrg` | | ✓ | | | | |
+| `_DistrChnl` | | ✓ | | | | |
+| `_Divn` | | ✓ | | | | |
+| `_SalesDist` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_SalesDocumentRjcnReason` | | ✓ | | | | |
+| `_SDDocumentReason` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_SalesDocumentItem` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_DisplayCurrency` | `I_Currency` | [0..1] |
+| `_Product` | `I_Product` | [0..1] |
+| `_ProductGroup` | `I_ProductGroup` | [0..1] |
+| `_ProductType` | `I_Producttype` | [0..1] |
+| `_SalesOrg` | `I_SalesOrganization` | [0..1] |
+| `_DistrChnl` | `I_DistributionChannel` | [0..1] |
+| `_Divn` | `I_Division` | [0..1] |
+| `_SalesDist` | `I_SalesDistrict` | [0..1] |
+| `_Plant` | `I_Plant` | [0..1] |
+| `_CompanyCode` | `I_CompanyCode` | [0..1] |
+| `_Customer` | `I_Customer` | [0..1] |
+| `_BaseUnit` | `I_UnitOfMeasure` | [0..1] |
+| `_SalesDocumentRjcnReason` | `I_SalesDocumentRjcnReason` | [0..1] |
+| `_SDDocumentReason` | `I_SDDocumentReason` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSLSORDRETCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSLSORDRETCUBE')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Analytics: {
+  dataCategory: #CUBE,
+  internalName:#LOCAL
+}
+@VDM: {
+  viewType: #COMPOSITE,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+@AccessControl: {
+  authorizationCheck: #CHECK,
+  personalData.blocking: #REQUIRED
+}
+@AbapCatalog: {
+  sqlViewName: 'IARNALYSSORETC',
+  compiler.compareFilter: true,
+  preserveKey:true
+ }
+@ObjectModel: {
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #L
+   },
+   supportedCapabilities: [ #ANALYTICAL_PROVIDER, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ],
+   modelingPattern: #ANALYTICAL_CUBE
+}
+@Metadata:{
+  allowExtensions:              true,
+  ignorePropagatedAnnotations:  true
+}
+@EndUserText.label: 'Sales Order Returns - Cube'
+define view I_ARunAnlytsSlsOrdRetCube
+  with parameters
+    @Consumption.defaultValue: 'USD'
+    P_DisplayCurrency : vdm_v_display_currency
+  as select from I_ARunAnlytsSalesReturns
+  association [0..1] to I_Currency                as _DisplayCurrency         on $projection.DisplayCurrency = _DisplayCurrency.Currency
+  association [0..1] to I_Product                 as _Product                 on $projection.Product = _Product.Product
+  association [0..1] to I_ProductGroup            as _ProductGroup            on $projection.ProductGroup = _ProductGroup.MaterialGroup
+  association [0..1] to I_Producttype             as _ProductType             on $projection.ProductType = _ProductType.ProductType
+  association [0..1] to I_SalesOrganization       as _SalesOrg                on $projection.SalesOrganization = _SalesOrg.SalesOrganization
+  association [0..1] to I_DistributionChannel     as _DistrChnl               on $projection.DistributionChannel = _DistrChnl.DistributionChannel
+  association [0..1] to I_Division                as _Divn                    on $projection.Division = _Divn.Division
+  association [0..1] to I_SalesDistrict           as _SalesDist               on $projection.SalesDistrict = _SalesDist.SalesDistrict
+  association [0..1] to I_Plant                   as _Plant                   on $projection.Plant = _Plant.Plant
+  association [0..1] to I_CompanyCode             as _CompanyCode             on $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..1] to I_Customer                as _Customer                on $projection.Customer = _Customer.Customer
+  association [0..1] to I_UnitOfMeasure           as _BaseUnit                on $projection.BaseUnit = _BaseUnit.UnitOfMeasure
+  association [0..1] to I_SalesDocumentRjcnReason as _SalesDocumentRjcnReason on $projection.SalesDocumentRjcnReason = _SalesDocumentRjcnReason.SalesDocumentRjcnReason
+  association [0..1] to I_SDDocumentReason        as _SDDocumentReason        on $projection.SDDocumentReason = _SDDocumentReason.SDDocumentReason
+{
+  key   RequirementDocumentNumber,
+  key   RequirementDocumentItem,
+  key   SupplyScheduleLine,
+        AssignedSupplyType,
+        SupAssgmtSource,
+        SupplyDeliveryDate,
+        ProductAvailabilityDate,
+        RequestedDeliveryDate,
+        @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+        @DefaultAggregation: #SUM
+        TotalQuantity,
+        @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+        @DefaultAggregation: #SUM
+        OpenSupplyQuantity,
+        @Semantics.unitOfMeasure: true
+        BaseUnit,
+        @ObjectModel.foreignKey.association: '_Product'
+        Product,
+        @ObjectModel.foreignKey.association: '_ProductGroup'
+        ProductGroup,
+        @ObjectModel.foreignKey.association: '_Plant'
+        Plant,
+        OrderType,
+        @ObjectModel.foreignKey.association: '_ProductType'
+        ProductType,
+        StockSegment,
+        @EndUserText.label: 'Generic Article'
+        CrossPlantConfigurableProduct,
+        @ObjectModel.foreignKey.association: '_SalesOrg'
+        SalesOrganization,
+        @ObjectModel.foreignKey.association: '_DistrChnl'
+        DistributionChannel,
+        @ObjectModel.foreignKey.association: '_Divn'
+        Division,
+        @ObjectModel.foreignKey.association: '_SalesDist'
+        SalesDistrict,
+        PurchasingOrganization,
+        PurchasingGroup,
+        Batch,
+        StorageLocation,
+        @ObjectModel.foreignKey.association: '_Customer'
+        Customer,
+        @ObjectModel.foreignKey.association: '_CompanyCode'
+        CompanyCode,
+        @ObjectModel.foreignKey.association: '_SDDocumentReason'
+        SDDocumentReason,
+        @ObjectModel.foreignKey.association: '_SalesDocumentRjcnReason'
+        SalesDocumentRjcnReason,
+        @Semantics.amount.currencyCode: 'DocumentCurrency'
+        NetPriceAmount,
+        @Semantics.currencyCode: true
+        @ObjectModel.foreignKey.association: '_DisplayCurrency'
+        cast(:P_DisplayCurrency as vdm_v_display_currency) as DisplayCurrency,
+        @Semantics.amount.currencyCode: 'DisplayCurrency'
+        @DefaultAggregation: #SUM
+        cast(currency_conversion(
+          amount => NetAmount,
+          source_currency => DocumentCurrency,
+          target_currency => :P_DisplayCurrency,
+          exchange_rate_date => cast($session.system_date as abap.dats),
+          round => #CDSBoolean.true,
+          decimal_shift => #CDSBoolean.true,
+          decimal_shift_back => #CDSBoolean.true,
+          error_handling => 'SET_TO_NULL'
+        )as net_amount_in_dsp_crcy)                        as NetAmount,
+        @Semantics.currencyCode: true
+        DocumentCurrency,
+        @DefaultAggregation: #SUM
+        cast( 1 as item_issues )                           as NmbrOfItemsInOrder,
+        //associations
+        _SalesDocument,
+        _SalesDocumentItem,
+        _Product,
+        _ProductGroup,
+        _ProductType,
+        _SalesOrg,
+        _DistrChnl,
+        _Divn,
+        _SalesDist,
+        _Plant,
+        _CompanyCode,
+        @ObjectModel.association.boundFields.dataMatchesSourceAndTargetTypes: true
+        _Customer,
+        _BaseUnit,
+        _DisplayCurrency,
+        _SalesDocumentRjcnReason,
+        _SDDocumentReason
+}
+```

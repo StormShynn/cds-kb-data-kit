@@ -32,19 +32,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
-| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |  |  |
-| `PhoneNumberCountry` |  | |  | `country` |  |  |
-| `PhNmbrIsCurrentOverallDefault` |  | |  | `cast (flgdefault as ad_phnmbrcurovrldflt preserving type)` |  |  |
-| `CommLineNotForUnsolicitedCntct` |  | |  | `cast (flg_nouse as ad_commlinenotforunslctdcntct preserving type)` |  |  |
-| `PhoneAreaCodeSubscriberNumber` |  | |  | `tel_number` |  |  |
-| `PhoneExtensionNumber` |  | |  | `tel_extens` |  |  |
-| `InternationalPhoneNumber` |  | |  | `telnr_long` |  |  |
-| `PhoneIsSMSEnabled` |  | |  | `dft_receiv` |  |  |
-| `PhoneNumberType` |  | |  | `cast (r3_user as ad_phonenumbertype preserving type)` |  |  |
-| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |  |  |
-| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` | `NUMC(3)` | Sequence Number |
+| `PhoneNumberCountry` |  | |  | `country` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `PhNmbrIsCurrentOverallDefault` |  | |  | `cast (flgdefault as ad_phnmbrcurovrldflt preserving type)` | `CHAR(1)` | Indicator : Current Overall Default Phone Number |
+| `CommLineNotForUnsolicitedCntct` |  | |  | `cast (flg_nouse as ad_commlinenotforunslctdcntct preserving type)` | `CHAR(1)` | Communication line is not to be used for unsolicited contact |
+| `PhoneAreaCodeSubscriberNumber` |  | |  | `tel_number` | `CHAR(30)` | Telephone No.: Dialing Code and Number |
+| `PhoneExtensionNumber` |  | |  | `tel_extens` | `CHAR(10)` | Telephone no.: Extension |
+| `InternationalPhoneNumber` |  | |  | `telnr_long` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `PhoneIsSMSEnabled` |  | |  | `dft_receiv` | `CHAR(1)` | Indicator: Telephone is SMS-Enabled |
+| `PhoneNumberType` |  | |  | `cast (r3_user as ad_phonenumbertype preserving type)` | `CHAR(1)` | Phone Number Type |
+| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` | `DATS(8)` |  |
 | `_AddressCommunicationRemark` | | ✓ | | | | |
 | `_AddressCommunicationUsage` | | ✓ | | | | |
 | `_PhoneNumberCountry` | | ✓ | | | | |

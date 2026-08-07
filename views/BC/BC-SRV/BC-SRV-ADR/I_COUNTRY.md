@@ -31,11 +31,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `CountryThreeLetterISOCode` |  | |  | `intca3` |  |  |
-| `CountryThreeDigitISOCode` |  | |  | `intcn3` |  |  |
-| `CountryISOCode` |  | |  | `intca` |  |  |
-| `IsEuropeanUnionMember` |  | |  | `xegld` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `CountryThreeLetterISOCode` |  | |  | `intca3` | `CHAR(3)` | ISO Country/Region Code 3 Characters |
+| `CountryThreeDigitISOCode` |  | |  | `intcn3` | `NUMC(3)` | ISO Country/Region Code Numeric 3-Characters |
+| `CountryISOCode` |  | |  | `intca` | `CHAR(2)` | ISO Code of the Country/Region |
+| `IsEuropeanUnionMember` |  | |  | `xegld` | `CHAR(1)` | Indicator: European Union Member? |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -5,9 +5,18 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSOBJTYPETEXT')/$value
 semantic_en: Business Object Type - Text
+semantic_vi: Business Object Type - Text — CDS view giao diện dựa trên tojtt.
+keywords:
+  - business
+  - object
+  - type
+  - text
+  - language
+  - name
+  - description
 tags:
   - LO
   - bo:salesorder
@@ -17,7 +26,6 @@ tags:
   - LO-CMM-BF
   - lob:logistics general
   - lob:sourcing & procurement
-  - metadata-only
 ---
 # I_BUSINESSOBJTYPETEXT
 
@@ -29,13 +37,62 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSOBJTYPETEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSOBJTYPETEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessObjectType` |  | |  |  | `CHAR(10)` | Object type |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `BusinessObjectTypeName` |  | |  |  | `CHAR(20)` | Name |
-| `BusinessObjectTypeDescription` |  | |  |  | `CHAR(80)` | Description |
+| `BusinessObjectType` | ✓ | |  | `name` | `CHAR(10)` | Object type |
+| `Language` | ✓ | |  | `language` | `LANG(1)` | Language Key |
+| `BusinessObjectTypeName` |  | |  | `stext` | `CHAR(20)` | Name |
+| `BusinessObjectTypeDescription` |  | |  | `ntext` | `CHAR(80)` | Description |
+| `_Language` | | ✓ | | | | |
+| `_BusinessObjectType` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_BusinessObjectType` | `I_BusinessObjType` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSOBJTYPETEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSOBJTYPETEXT')/$value)*
+
+```abap
+@EndUserText.label: 'Business Object Type - Text'
+//@Analytics.dataCategory: #TEXT
+@ObjectModel.dataCategory: #TEXT
+@VDM.viewType: #BASIC
+@AccessControl.authorizationCheck: #NOT_REQUIRED //or #CHECK
+@AbapCatalog.sqlViewName: 'IBOTYPET'
+@ObjectModel.representativeKey: 'BusinessObjectType'
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.dataClass: #CUSTOMIZING
+@ObjectModel.supportedCapabilities: [#SQL_DATA_SOURCE]
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+
+define view I_BusinessObjTypeText
+  as select from tojtt
+
+  association [0..1] to I_Language        as _Language           on $projection.Language = _Language.Language
+  association [1..1] to I_BusinessObjType as _BusinessObjectType on $projection.BusinessObjectType = _BusinessObjectType.BusinessObjectType
+
+{
+
+  key name     as BusinessObjectType,
+      @Semantics.language: true
+  key language as Language,
+      @Semantics.text: true
+      stext    as BusinessObjectTypeName,
+      @Semantics.text: true
+      ntext    as BusinessObjectTypeDescription,
+      _BusinessObjectType,
+      _Language
+
+}
+```

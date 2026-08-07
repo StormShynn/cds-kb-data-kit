@@ -30,25 +30,25 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressPersonID` | ✓ | |  |  |  |  |
-| `AddressRepresentationCode` |  | |  |  |  |  |
-| `FormOfAddress` |  | |  |  |  |  |
-| `GivenName` |  | |  |  |  |  |
-| `FamilyName` |  | |  |  |  |  |
-| `PersonBirthName` |  | |  |  |  |  |
-| `PersonMiddleName` |  | |  |  |  |  |
-| `SecondFamilyName` |  | |  |  |  |  |
-| `AcademicTitle` |  | |  |  |  |  |
-| `AcademicTitle2` |  | |  |  |  |  |
-| `FamilyNamePrefix` |  | |  |  |  |  |
-| `FamilyNameSecondPrefix` |  | |  |  |  |  |
-| `PersonNameSupplementCode` |  | |  |  |  |  |
-| `PersonNickname` |  | |  |  |  |  |
-| `NameInitials` |  | |  |  |  |  |
-| `PersonFullName` |  | |  |  |  |  |
-| `CorrespondenceLanguage` |  | |  |  |  |  |
-| `AddressPersonSearchTerm1` |  | |  |  |  |  |
-| `AddressPersonSearchTerm2` |  | |  |  |  |  |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `AddressRepresentationCode` |  | |  |  | `CHAR(1)` | Version ID for International Addresses |
+| `FormOfAddress` |  | |  |  | `CHAR(4)` | Form-of-Address Key |
+| `GivenName` |  | |  |  | `CHAR(40)` | First Name |
+| `FamilyName` |  | |  |  | `CHAR(40)` | Last Name |
+| `PersonBirthName` |  | |  |  | `CHAR(40)` | Name of person at birth |
+| `PersonMiddleName` |  | |  |  | `CHAR(40)` | Middle name or second forename of a person |
+| `SecondFamilyName` |  | |  |  | `CHAR(40)` | Other Last Name of a Person |
+| `AcademicTitle` |  | |  |  | `CHAR(4)` | Academic Title: Key |
+| `AcademicTitle2` |  | |  |  | `CHAR(4)` | Second academic title (key) |
+| `FamilyNamePrefix` |  | |  |  | `CHAR(4)` | Name Prefix (Key) |
+| `FamilyNameSecondPrefix` |  | |  |  | `CHAR(4)` | 2nd name prefix (key) |
+| `PersonNameSupplementCode` |  | |  |  | `CHAR(4)` | Name supplement, e.g. noble title (key) |
+| `PersonNickname` |  | |  |  | `CHAR(40)` | Nickname or name used |
+| `NameInitials` |  | |  |  | `CHAR(10)` | "Middle Initial" or personal initials |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | Full Name of Person |
+| `CorrespondenceLanguage` |  | |  |  | `LANG(1)` | Language Key |
+| `AddressPersonSearchTerm1` |  | |  |  | `CHAR(20)` | Search Term 1 |
+| `AddressPersonSearchTerm2` |  | |  |  | `CHAR(20)` | Search Term 2 |
 | `_DfltRprstnPerson` | | ✓ | | | | |
 
 ## Associations

@@ -31,12 +31,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |  |  |
-| `AddressPersonID` | ✓ | |  |  |  |  |
-| `CommMediumSequenceNumber` | ✓ | |  |  |  |  |
-| `AddressManagementURIType` |  | |  |  |  |  |
-| `URLIsCurrentDefault` |  | |  |  |  |  |
-| `UniformResourceIdentifier` |  | |  |  |  |  |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` | ✓ | |  |  | `NUMC(3)` | Sequence Number |
+| `AddressManagementURIType` |  | |  |  | `CHAR(3)` | URI type flag |
+| `URLIsCurrentDefault` |  | |  |  | `CHAR(1)` | Flag: this address is the default address |
+| `UniformResourceIdentifier` |  | |  |  | `STRI(2048)` |  |
 | `_AddressCommunicationRemark` | | ✓ | | | | |
 | `_AddressCommunicationUsage` | | ✓ | | | | |
 | `_AddressManagementURIType` | | ✓ | | | | |

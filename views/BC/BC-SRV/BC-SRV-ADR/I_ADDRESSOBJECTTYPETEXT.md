@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressObjectType` | ✓ | |  | `cast ( domvalue_l as ad_adrtype )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `AddressObjectTypeText` |  | |  | `ddtext` |  |  |
+| `AddressObjectType` | ✓ | |  | `cast ( domvalue_l as ad_adrtype )` | `CHAR(1)` | Address type (1=Organization, 2=Person, 3=Contact person) |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `AddressObjectTypeText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

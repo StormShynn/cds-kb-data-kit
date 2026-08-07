@@ -33,12 +33,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CountryName` |  | |  | `landx50` |  |  |
-| `NationalityName` |  | |  | `natio` |  |  |
-| `NationalityLongName` |  | |  | `natio50` |  |  |
-| `CountryShortName` |  | |  | `landx` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CountryName` |  | |  | `landx50` | `CHAR(50)` | Country/Region Name |
+| `NationalityName` |  | |  | `natio` | `CHAR(15)` | Nationality |
+| `NationalityLongName` |  | |  | `natio50` | `CHAR(50)` | Nationality (Max. 50 Characters) |
+| `CountryShortName` |  | |  | `landx` | `CHAR(15)` | Name of Country/Region (Short) |
 | `_Language` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 

@@ -31,19 +31,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
-| `AddressIsWorkplaceAddress` |  | |  | `case comp_pers when 'C' then cast('X' as ad_isworkplaceaddress preserving type ) else cast(' ' as ad_isworkplaceaddress preserving type ) end` |  |  |
-| `PersonAddressObjectType` |  | |  | `comp_pers` |  |  |
-| `WorkplaceBuilding` |  | |  | `building` |  |  |
-| `WorkplaceFloor` |  | |  | `floor` |  |  |
-| `WorkplaceRoomNumber` |  | |  | `roomnumber` |  |  |
-| `WorkplaceFunctionalTitleName` |  | |  | `function` |  |  |
-| `WorkplaceDepartmentName` |  | |  | `department` |  |  |
-| `WorkplacePrfrdCommMediumType` |  | |  | `deflt_comm` |  |  |
-| `WorkplaceCorrespncShortName` |  | |  | `id_code` |  |  |
-| `WorkplaceInhouseMail` |  | |  | `ih_mail` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `AddressRepresentationCode` | ✓ | |  | `nation` | `CHAR(1)` | Version ID for International Addresses |
+| `AddressIsWorkplaceAddress` |  | |  | `case comp_pers when 'C' then cast('X' as ad_isworkplaceaddress preserving type ) else cast(' ' as ad_isworkplaceaddress preserving type ) end` | `CHAR(1)` | Indicator: The address is a workplace address |
+| `PersonAddressObjectType` |  | |  | `comp_pers` | `CHAR(1)` | Flag: Person in company (C) or private (P) address |
+| `WorkplaceBuilding` |  | |  | `building` | `CHAR(10)` | Building (number or code) |
+| `WorkplaceFloor` |  | |  | `floor` | `CHAR(10)` | Floor in Building |
+| `WorkplaceRoomNumber` |  | |  | `roomnumber` | `CHAR(10)` | Room or Apartment Number |
+| `WorkplaceFunctionalTitleName` |  | |  | `function` | `CHAR(40)` | Function |
+| `WorkplaceDepartmentName` |  | |  | `department` | `CHAR(40)` | Department |
+| `WorkplacePrfrdCommMediumType` |  | |  | `deflt_comm` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `WorkplaceCorrespncShortName` |  | |  | `id_code` | `CHAR(10)` | Short name for correspondence |
+| `WorkplaceInhouseMail` |  | |  | `ih_mail` | `CHAR(10)` | Internal Mail Postal Code |
 
 ## Source Code
 

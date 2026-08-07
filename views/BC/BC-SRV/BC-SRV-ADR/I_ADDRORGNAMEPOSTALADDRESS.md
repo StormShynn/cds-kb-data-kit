@@ -31,66 +31,66 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
-| `AddressIsPersonAddress` |  | |  | `pers_addr` |  |  |
-| `CorrespondenceLanguage` |  | |  | `langu` |  |  |
-| `PrfrdCommMediumType` |  | |  | `deflt_comm` |  |  |
-| `CityNumber` |  | |  | `city_code` |  |  |
-| `CityName` |  | |  | `city1` |  |  |
-| `DistrictName` |  | |  | `city2` |  |  |
-| `VillageName` |  | |  | `home_city` |  |  |
-| `PostalCode` |  | |  | `post_code1` |  |  |
-| `CompanyPostalCode` |  | |  | `post_code3` |  |  |
-| `POBox` |  | |  | `po_box` |  |  |
-| `POBoxAddrNonDeliverableReason` |  | |  | `dont_use_p` |  |  |
-| `POBoxIsWithoutNumber` |  | |  | `po_box_num` |  |  |
-| `POBoxPostalCode` |  | |  | `post_code2` |  |  |
-| `POBoxLobbyName` |  | |  | `po_box_lobby` |  |  |
-| `POBoxDeviatingCityName` |  | |  | `po_box_loc` |  |  |
-| `POBoxDeviatingCityCode` |  | |  | `city_code2` |  |  |
-| `POBoxDeviatingRegion` |  | |  | `po_box_reg` |  |  |
-| `POBoxDeviatingCountry` |  | |  | `po_box_cty` |  |  |
-| `Street` |  | |  | `streetcode` |  |  |
-| `StreetName` |  | |  | `street` |  |  |
-| `StreetAddrNonDeliverableReason` |  | |  | `dont_use_s` |  |  |
-| `StreetPrefixName1` |  | |  | `str_suppl1` |  |  |
-| `StreetPrefixName2` |  | |  | `str_suppl2` |  |  |
-| `StreetSuffixName1` |  | |  | `str_suppl3` |  |  |
-| `StreetSuffixName2` |  | |  | `location` |  |  |
-| `HouseNumber` |  | |  | `house_num1` |  |  |
-| `HouseNumberSupplementText` |  | |  | `house_num2` |  |  |
-| `Building` |  | |  | `building` |  |  |
-| `Floor` |  | |  | `floor` |  |  |
-| `RoomNumber` |  | |  | `roomnumber` |  |  |
-| `Country` |  | |  | `country` |  |  |
-| `Region` |  | |  | `region` |  |  |
-| `CareOfName` |  | |  | `name_co` |  |  |
-| `FormOfAddress` |  | |  | `title` |  |  |
-| `AddresseeName1` |  | |  | `name1` |  |  |
-| `AddresseeName2` |  | |  | `name2` |  |  |
-| `AddresseeName3` |  | |  | `name3` |  |  |
-| `AddresseeName4` |  | |  | `name4` |  |  |
-| `TaxJurisdiction` |  | |  | `taxjurcode` |  |  |
-| `TransportZone` |  | |  | `transpzone` |  |  |
-| `DeliveryServiceTypeCode` |  | |  | `deli_serv_type` |  |  |
-| `DeliveryServiceNumber` |  | |  | `deli_serv_number` |  |  |
-| `AddressTimeZone` |  | |  | `time_zone` |  |  |
-| `SecondaryRegion` |  | |  | `county_code` |  |  |
-| `SecondaryRegionName` |  | |  | `county` |  |  |
-| `TertiaryRegion` |  | |  | `township_code` |  |  |
-| `TertiaryRegionName` |  | |  | `township` |  |  |
-| `AddressSearchTerm1` |  | |  | `sort1` |  |  |
-| `AddressSearchTerm2` |  | |  | `sort2` |  |  |
-| `RegionalStructureCheckStatus` |  | |  | `chckstatus` |  |  |
-| `AddressGroup` |  | |  | `addr_group` |  |  |
-| `DistrictNumber` |  | |  | `cityp_code` |  |  |
-| `Village` |  | |  | `cityh_code` |  |  |
-| `RegionalStructureGroup` |  | |  | `regiogroup` |  |  |
-| `AddressCreatedByUser` |  | |  | `addresscreatedbyuser` |  |  |
-| `AddressCreatedOnDateTime` |  | |  | `addresscreatedondatetime` |  |  |
-| `AddressChangedByUser` |  | |  | `addresschangedbyuser` |  |  |
-| `AddressChangedOnDateTime` |  | |  | `addresschangedondatetime` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressRepresentationCode` | ✓ | |  | `nation` | `CHAR(1)` | Version ID for International Addresses |
+| `AddressIsPersonAddress` |  | |  | `pers_addr` | `CHAR(1)` | Flag: This is a personal address |
+| `CorrespondenceLanguage` |  | |  | `langu` | `LANG(1)` | Language Key |
+| `PrfrdCommMediumType` |  | |  | `deflt_comm` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `CityNumber` |  | |  | `city_code` | `CHAR(12)` | City code for city/street file |
+| `CityName` |  | |  | `city1` | `CHAR(40)` | City |
+| `DistrictName` |  | |  | `city2` | `CHAR(40)` | District |
+| `VillageName` |  | |  | `home_city` | `CHAR(40)` | City (different from postal city) |
+| `PostalCode` |  | |  | `post_code1` | `CHAR(10)` | City Postal Code |
+| `CompanyPostalCode` |  | |  | `post_code3` | `CHAR(10)` | Company Postal Code (for Large Customers) |
+| `POBox` |  | |  | `po_box` | `CHAR(10)` | PO Box |
+| `POBoxAddrNonDeliverableReason` |  | |  | `dont_use_p` | `CHAR(4)` | PO Box Address Undeliverable Flag |
+| `POBoxIsWithoutNumber` |  | |  | `po_box_num` | `CHAR(1)` | Flag: PO Box Without Number |
+| `POBoxPostalCode` |  | |  | `post_code2` | `CHAR(10)` | PO Box Postal Code |
+| `POBoxLobbyName` |  | |  | `po_box_lobby` | `CHAR(40)` | PO Box Lobby |
+| `POBoxDeviatingCityName` |  | |  | `po_box_loc` | `CHAR(40)` | PO Box city |
+| `POBoxDeviatingCityCode` |  | |  | `city_code2` | `CHAR(12)` | City PO box code (City file) |
+| `POBoxDeviatingRegion` |  | |  | `po_box_reg` | `CHAR(3)` | Region for PO Box (Country/Region, State, Province, ...) |
+| `POBoxDeviatingCountry` |  | |  | `po_box_cty` | `CHAR(3)` | PO Box of Country/Region |
+| `Street` |  | |  | `streetcode` | `CHAR(12)` | Street Number for City/Street File |
+| `StreetName` |  | |  | `street` | `CHAR(60)` | Street |
+| `StreetAddrNonDeliverableReason` |  | |  | `dont_use_s` | `CHAR(4)` | Street Address Undeliverable Flag |
+| `StreetPrefixName1` |  | |  | `str_suppl1` | `CHAR(40)` | Street 2 |
+| `StreetPrefixName2` |  | |  | `str_suppl2` | `CHAR(40)` | Street 3 |
+| `StreetSuffixName1` |  | |  | `str_suppl3` | `CHAR(40)` | Street 4 |
+| `StreetSuffixName2` |  | |  | `location` | `CHAR(40)` | Street 5 |
+| `HouseNumber` |  | |  | `house_num1` | `CHAR(10)` | House Number |
+| `HouseNumberSupplementText` |  | |  | `house_num2` | `CHAR(10)` | House number supplement |
+| `Building` |  | |  | `building` | `CHAR(20)` | Building (Number or Code) |
+| `Floor` |  | |  | `floor` | `CHAR(10)` | Floor in Building |
+| `RoomNumber` |  | |  | `roomnumber` | `CHAR(10)` | Room or Apartment Number |
+| `Country` |  | |  | `country` | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  | `region` | `CHAR(3)` | Region (State, Province, County) |
+| `CareOfName` |  | |  | `name_co` | `CHAR(40)` | c/o name |
+| `FormOfAddress` |  | |  | `title` | `CHAR(4)` | Form-of-Address Key |
+| `AddresseeName1` |  | |  | `name1` | `CHAR(40)` | Name 1 |
+| `AddresseeName2` |  | |  | `name2` | `CHAR(40)` | Name 2 |
+| `AddresseeName3` |  | |  | `name3` | `CHAR(40)` | Name 3 |
+| `AddresseeName4` |  | |  | `name4` | `CHAR(40)` | Name 4 |
+| `TaxJurisdiction` |  | |  | `taxjurcode` | `CHAR(15)` | Tax Jurisdiction |
+| `TransportZone` |  | |  | `transpzone` | `CHAR(10)` | Transportation zone to or from which the goods are delivered |
+| `DeliveryServiceTypeCode` |  | |  | `deli_serv_type` | `CHAR(4)` | Type of Delivery Service |
+| `DeliveryServiceNumber` |  | |  | `deli_serv_number` | `CHAR(10)` | Number of Delivery Service |
+| `AddressTimeZone` |  | |  | `time_zone` | `CHAR(6)` | Address Time Zone |
+| `SecondaryRegion` |  | |  | `county_code` | `CHAR(8)` | County code for county |
+| `SecondaryRegionName` |  | |  | `county` | `CHAR(40)` | County |
+| `TertiaryRegion` |  | |  | `township_code` | `CHAR(8)` | Township code for Township |
+| `TertiaryRegionName` |  | |  | `township` | `CHAR(40)` | Township |
+| `AddressSearchTerm1` |  | |  | `sort1` | `CHAR(20)` | Search Term 1 |
+| `AddressSearchTerm2` |  | |  | `sort2` | `CHAR(20)` | Search Term 2 |
+| `RegionalStructureCheckStatus` |  | |  | `chckstatus` | `CHAR(1)` | City File Test Status |
+| `AddressGroup` |  | |  | `addr_group` | `CHAR(4)` | Address Group (Key) (Business Address Services) |
+| `DistrictNumber` |  | |  | `cityp_code` | `CHAR(8)` | District code for City and Street file |
+| `Village` |  | |  | `cityh_code` | `CHAR(12)` | Different city for city/street file |
+| `RegionalStructureGroup` |  | |  | `regiogroup` | `CHAR(8)` | Regional structure grouping |
+| `AddressCreatedByUser` |  | |  | `addresscreatedbyuser` | `CHAR(12)` | Created By User |
+| `AddressCreatedOnDateTime` |  | |  | `addresscreatedondatetime` | `UTCL(27)` | Creation Date Time |
+| `AddressChangedByUser` |  | |  | `addresschangedbyuser` | `CHAR(12)` | Last Changed By User |
+| `AddressChangedOnDateTime` |  | |  | `addresschangedondatetime` | `UTCL(27)` | Last Change Date Time |
 | `_Region` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 | `_FormOfAddress` | | ✓ | | | | |

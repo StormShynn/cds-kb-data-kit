@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressRepresentationCode` | ✓ | |  | `nation` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `AddressRemarkText` |  | |  | `remark` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressRepresentationCode` | ✓ | |  | `nation` | `CHAR(1)` | Version ID for International Addresses |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `AddressRemarkText` |  | |  | `remark` | `CHAR(50)` | Address notes |
 
 ## Source Code
 
