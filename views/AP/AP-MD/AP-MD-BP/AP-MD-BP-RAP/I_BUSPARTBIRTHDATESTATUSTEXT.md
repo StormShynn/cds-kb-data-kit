@@ -34,9 +34,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `BusinessPartnerBirthDateStatus` | ✓ | |  | `domvalue_l` |  |  |
-| `BusPartBirthDateStatusText` |  | |  | `ddtext` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `BusinessPartnerBirthDateStatus` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `BusPartBirthDateStatusText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

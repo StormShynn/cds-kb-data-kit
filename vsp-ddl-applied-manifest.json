@@ -1,0 +1,147 @@
+{
+  "C_ACTLPLNSRVCMARGITEMQUERY": {
+    "appliedAt": "2026-08-07T15:34:10.388Z",
+    "fields": 67,
+    "action": "updated"
+  },
+  "C_ANALYZESUPLRUTILZNQRY": {
+    "appliedAt": "2026-08-07T15:34:10.617Z",
+    "fields": 6,
+    "action": "updated"
+  },
+  "C_APDAYSPAYOUTST": {
+    "appliedAt": "2026-08-07T15:34:10.823Z",
+    "fields": 15,
+    "action": "updated"
+  },
+  "C_APFLEXIBLEAGING": {
+    "appliedAt": "2026-08-07T15:34:11.039Z",
+    "fields": 21,
+    "action": "updated"
+  },
+  "C_APJRNLENTRITMAGINGGRID": {
+    "appliedAt": "2026-08-07T15:34:11.249Z",
+    "fields": 39,
+    "action": "updated"
+  },
+  "C_ARAGINGGRIDGENLEDGERQRY": {
+    "appliedAt": "2026-08-07T15:34:11.465Z",
+    "fields": 47,
+    "action": "updated"
+  },
+  "C_ARBANKSTMTREPROCESSING": {
+    "appliedAt": "2026-08-07T15:34:11.680Z",
+    "fields": 22,
+    "action": "updated"
+  },
+  "C_ARJRNLENTRITMAGINGGRID": {
+    "appliedAt": "2026-08-07T15:34:11.902Z",
+    "fields": 42,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSALLASSGMTQUERY": {
+    "appliedAt": "2026-08-07T15:34:12.100Z",
+    "fields": 38,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSBLKDSLSORDQUERY": {
+    "appliedAt": "2026-08-07T15:34:12.313Z",
+    "fields": 20,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSOPENDELIVQUERY": {
+    "appliedAt": "2026-08-07T15:34:12.512Z",
+    "fields": 25,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSPURGCONTRQRY": {
+    "appliedAt": "2026-08-07T15:34:12.720Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSSALESRETURNS": {
+    "appliedAt": "2026-08-07T15:34:12.922Z",
+    "fields": 45,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSSALESRETURNSQRY": {
+    "appliedAt": "2026-08-07T15:34:13.123Z",
+    "fields": 35,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSSLSCONTRQRY": {
+    "appliedAt": "2026-08-07T15:34:13.325Z",
+    "fields": 51,
+    "action": "updated"
+  },
+  "C_BILLGITMPRCGELFORCOTYPQ": {
+    "appliedAt": "2026-08-07T15:34:13.517Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_CNTRLCONTRCNSMPNQRY": {
+    "appliedAt": "2026-08-07T15:34:13.722Z",
+    "fields": 34,
+    "action": "updated"
+  },
+  "C_COMARGINFORPERIODCOMPRNQRY": {
+    "appliedAt": "2026-08-07T15:34:13.956Z",
+    "fields": 100,
+    "action": "updated"
+  },
+  "C_COMARGPERDCOMPARISONQRY_2": {
+    "appliedAt": "2026-08-07T15:34:14.172Z",
+    "fields": 103,
+    "action": "updated"
+  },
+  "C_COMPANYMARGINQUERY": {
+    "appliedAt": "2026-08-07T15:34:14.391Z",
+    "fields": 81,
+    "action": "updated"
+  },
+  "C_COMPANYMARGINQUERY_2": {
+    "appliedAt": "2026-08-07T15:34:14.590Z",
+    "fields": 84,
+    "action": "updated"
+  },
+  "C_COSTCOMPONENTASSIGNMENTDEX": {
+    "appliedAt": "2026-08-07T15:34:14.785Z",
+    "fields": 6,
+    "action": "updated"
+  },
+  "C_CREDITMEMOREQUESTITEMQRY": {
+    "appliedAt": "2026-08-07T15:34:14.987Z",
+    "fields": 49,
+    "action": "updated"
+  },
+  "C_CUSTOMERRETURNITEMQRY_2": {
+    "appliedAt": "2026-08-07T15:34:15.186Z",
+    "fields": 61,
+    "action": "updated"
+  },
+  "C_CUSTOMERRETURNRATEQRY": {
+    "appliedAt": "2026-08-07T15:34:15.389Z",
+    "fields": 58,
+    "action": "updated"
+  },
+  "C_DEBITMEMOREQUESTITEMQRY": {
+    "appliedAt": "2026-08-07T15:34:15.586Z",
+    "fields": 49,
+    "action": "updated"
+  },
+  "C_MATERIALSTOCKACTUAL": {
+    "appliedAt": "2026-08-07T15:34:15.790Z",
+    "fields": 20,
+    "action": "updated"
+  },
+  "C_MATERIALSTOCKBYKEYDATE": {
+    "appliedAt": "2026-08-07T15:34:15.990Z",
+    "fields": 20,
+    "action": "updated"
+  },
+  "C_MATERIALSTOCKTIMESERIES": {
+    "appliedAt": "2026-08-07T15:34:16.187Z",
+    "fields": 23,
+    "action": "updated"
+  }
+}

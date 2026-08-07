@@ -39,15 +39,48 @@ const CHANGELOG_FILE = 'changelog.json';
  * @param {string} [entry.error] - Error message (for error actions)
  * @param {string} [entry.sourceUrl] - Source URL (for fetched views)
  */
+// addChangelogEntry does an unsynchronized read-modify-write of one shared
+// file. Callers that process a batch concurrently (e.g.
+// scripts/add_hub_metadata.mjs's runPool) can — and did, in production —
+// call this multiple times in an overlapping window: each call reads the
+// same starting content, appends its own entry to its own in-memory copy,
+// then writes back, so whichever write lands last wins and silently drops
+// every other concurrent call's entry; observed once as literally
+// interleaved/torn output (two different endings concatenated into one
+// invalid file) when write timing overlapped enough for that too. Every
+// call in the SAME process now goes through this one queue instead, so
+// they execute one at a time no matter how many the caller fires at once —
+// this does not protect against two SEPARATE `node ...` processes writing
+// concurrently, only concurrent calls within one process.
+let writeQueue = Promise.resolve();
 export async function addChangelogEntry(dataDir, entry) {
+  const result = writeQueue.then(() => appendEntryUnsafe(dataDir, entry));
+  // Chain onto the result (not just schedule it) so a rejected write
+  // doesn't wedge every subsequent call behind a permanently-rejected
+  // promise — each call still sees its own success/failure via `result`.
+  writeQueue = result.catch(() => {});
+  return result;
+}
+
+async function appendEntryUnsafe(dataDir, entry) {
   const filePath = path.join(dataDir, CHANGELOG_FILE);
 
   let log = [];
   try {
     const existing = await fs.readFile(filePath, 'utf-8');
     log = JSON.parse(existing);
-  } catch {
-    // File doesn't exist yet, start fresh
+  } catch (e) {
+    if (e.code !== 'ENOENT') {
+      // Corrupt, not just missing — back it up instead of silently
+      // discarding whatever history was in it, and make the loss visible
+      // in CI logs instead of swallowing it.
+      const backupPath = `${filePath}.corrupt-${Date.now()}`;
+      try {
+        await fs.copyFile(filePath, backupPath);
+        console.error(`⚠️  ${filePath} was not valid JSON — backed up to ${backupPath} and starting fresh. ${e.message}`);
+      } catch { /* copy failed too; nothing more we can do here */ }
+    }
+    // else: file doesn't exist yet, start fresh — the normal first-run case
   }
 
   log.push({

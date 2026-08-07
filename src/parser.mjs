@@ -46,7 +46,15 @@ function extractUsageType(ddl, key) {
 
 /**
  * Find the position of the first top-level `{` that starts the select list.
- * We need to skip annotation blocks that may contain `{` (like @AccessControl:{...}).
+ * We need to skip annotation blocks that may contain `{` (like @AccessControl:{...}),
+ * as well as `with parameters` annotations whose value is a `[...]` array (e.g.
+ * @Consumption.valueHelpDefinition: [{ entity:{name: 'X', element: 'Y'} }]) — these
+ * commonly span multiple lines and themselves nest a `{...}` object (the `entity:{...}`
+ * above). Skipping only up to the next newline (as a single-line heuristic would) or
+ * only matching a bare leading `{` misses that nested brace and mistakes it for the
+ * select-list's opening `{`, silently truncating every real field into a 2-field parse.
+ * So annotation values are scanned with the same bracket-depth + quote-aware walk as
+ * stripLeadingAnnotations, for both `{` and `[`-rooted values, regardless of newlines.
  */
 function findSelectListStart(ddl) {
   let i = 0;
@@ -59,27 +67,42 @@ function findSelectListStart(ddl) {
       while (j < ddl.length && /[\w.]/.test(ddl[j])) j++;
       // Skip whitespace before colon (handles @Foo :{ and @Foo : {)
       while (j < ddl.length && (ddl[j] === ' ' || ddl[j] === '\t')) j++;
-      // Skip optional colon
-      if (j < ddl.length && ddl[j] === ':') j++;
-      // Skip whitespace after colon (handles @Foo: {)
-      while (j < ddl.length && (ddl[j] === ' ' || ddl[j] === '\t')) j++;
 
-      if (j < ddl.length && ddl[j] === '{') {
-        // Annotation block with braces — find the matching closing brace
-        let depth = 1;
+      if (j < ddl.length && ddl[j] === ':') {
         j++;
-        while (j < ddl.length && depth > 0) {
-          if (ddl[j] === '{') depth++;
-          else if (ddl[j] === '}') depth--;
-          if (depth > 0) j++;
+        // Skip whitespace (including newlines) after colon
+        while (j < ddl.length && /\s/.test(ddl[j])) j++;
+
+        if (ddl[j] === "'" || ddl[j] === '"') {
+          const quote = ddl[j];
+          j++;
+          while (j < ddl.length && ddl[j] !== quote) { if (ddl[j] === '\\') j++; j++; }
+          j++; // closing quote
+        } else if (ddl[j] === '[' || ddl[j] === '{') {
+          const open = ddl[j];
+          const close = open === '[' ? ']' : '}';
+          let depth = 0;
+          do {
+            if (ddl[j] === "'" || ddl[j] === '"') {
+              const q = ddl[j];
+              j++;
+              while (j < ddl.length && ddl[j] !== q) { if (ddl[j] === '\\') j++; j++; }
+            } else if (ddl[j] === open) depth++;
+            else if (ddl[j] === close) depth--;
+            j++;
+          } while (j < ddl.length && depth > 0);
+        } else {
+          // bare value: #Word, word, or number — skip to end of line
+          const nlPos = ddl.indexOf('\n', j);
+          j = nlPos !== -1 ? nlPos + 1 : ddl.length;
         }
-        i = j + 1; // Move past the closing }
-        continue;
+      } else {
+        // No colon at all — simple flag annotation, skip to end of line
+        const nlPos = ddl.indexOf('\n', j);
+        j = nlPos !== -1 ? nlPos + 1 : ddl.length;
       }
 
-      // Simple annotation — skip to end of line
-      const nlPos = ddl.indexOf('\n', j);
-      i = nlPos !== -1 ? nlPos + 1 : ddl.length;
+      i = j;
       continue;
     }
 

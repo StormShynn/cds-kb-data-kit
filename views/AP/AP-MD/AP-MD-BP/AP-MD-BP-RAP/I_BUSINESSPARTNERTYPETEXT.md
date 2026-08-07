@@ -35,9 +35,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `BusinessPartnerType` | ✓ | |  | `bpkind` |  |  |
-| `BusinessPartnerTypeDesc` |  | |  | `text40` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `BusinessPartnerType` | ✓ | |  | `bpkind` | `CHAR(4)` | Business Partner Type |
+| `BusinessPartnerTypeDesc` |  | |  | `text40` | `CHAR(40)` | Description |
 
 ## Source Code
 

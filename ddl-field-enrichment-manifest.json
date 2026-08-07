@@ -258,5 +258,205 @@
     "attemptedAt": "2026-08-07T14:39:49.649Z",
     "found": true,
     "matched": 12
+  },
+  "C_ACTLPLNSRVCMARGITEMQUERY": {
+    "attemptedAt": "2026-08-07T15:36:16.885Z",
+    "found": true,
+    "matched": 67
+  },
+  "C_ANALYZESUPLRUTILZNQRY": {
+    "attemptedAt": "2026-08-07T15:36:17.990Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_APDAYSPAYOUTST": {
+    "attemptedAt": "2026-08-07T15:36:18.993Z",
+    "found": true,
+    "matched": 15
+  },
+  "C_APFLEXIBLEAGING": {
+    "attemptedAt": "2026-08-07T15:36:20.028Z",
+    "found": true,
+    "matched": 21
+  },
+  "C_APJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-08-07T15:36:21.249Z",
+    "found": true,
+    "matched": 39
+  },
+  "C_ARAGINGGRIDGENLEDGERQRY": {
+    "attemptedAt": "2026-08-07T15:36:22.894Z",
+    "found": true,
+    "matched": 47
+  },
+  "C_ARBANKSTMTREPROCESSING": {
+    "attemptedAt": "2026-08-07T15:36:24.020Z",
+    "found": true,
+    "matched": 22
+  },
+  "C_ARJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-08-07T15:36:25.173Z",
+    "found": true,
+    "matched": 42
+  },
+  "C_ARUNANLYTSALLASSGMTQUERY": {
+    "attemptedAt": "2026-08-07T15:36:26.248Z",
+    "found": true,
+    "matched": 38
+  },
+  "C_ARUNANLYTSBLKDSLSORDQUERY": {
+    "attemptedAt": "2026-08-07T15:36:27.298Z",
+    "found": true,
+    "matched": 20
+  },
+  "C_ARUNANLYTSOPENDELIVQUERY": {
+    "attemptedAt": "2026-08-07T15:36:29.340Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_ARUNANLYTSPURGCONTRQRY": {
+    "attemptedAt": "2026-08-07T15:36:30.473Z",
+    "found": true,
+    "matched": 37
+  },
+  "C_ARUNANLYTSSALESRETURNS": {
+    "attemptedAt": "2026-08-07T15:36:31.488Z",
+    "found": true,
+    "matched": 45
+  },
+  "C_ARUNANLYTSSALESRETURNSQRY": {
+    "attemptedAt": "2026-08-07T15:36:32.625Z",
+    "found": true,
+    "matched": 35
+  },
+  "C_ARUNANLYTSSLSCONTRQRY": {
+    "attemptedAt": "2026-08-07T15:36:34.067Z",
+    "found": true,
+    "matched": 51
+  },
+  "C_BILLGITMPRCGELFORCOTYPQ": {
+    "attemptedAt": "2026-08-07T15:36:35.188Z",
+    "found": true,
+    "matched": 37
+  },
+  "C_CNTRLCONTRCNSMPNQRY": {
+    "attemptedAt": "2026-08-07T15:36:36.297Z",
+    "found": true,
+    "matched": 34
+  },
+  "C_COMARGINFORPERIODCOMPRNQRY": {
+    "attemptedAt": "2026-08-07T15:36:37.326Z",
+    "found": true,
+    "matched": 99
+  },
+  "C_COMARGPERDCOMPARISONQRY_2": {
+    "attemptedAt": "2026-08-07T15:36:38.320Z",
+    "found": true,
+    "matched": 102
+  },
+  "C_COMPANYMARGINQUERY": {
+    "attemptedAt": "2026-08-07T15:36:39.330Z",
+    "found": true,
+    "matched": 81
+  },
+  "C_COMPANYMARGINQUERY_2": {
+    "attemptedAt": "2026-08-07T15:36:40.700Z",
+    "found": true,
+    "matched": 84
+  },
+  "C_COSTCOMPONENTASSIGNMENTDEX": {
+    "attemptedAt": "2026-08-07T15:36:41.931Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_CREDITMEMOREQUESTITEMQRY": {
+    "attemptedAt": "2026-08-07T15:36:49.609Z",
+    "found": true,
+    "matched": 49
+  },
+  "C_CUSTOMERRETURNITEMQRY_2": {
+    "attemptedAt": "2026-08-07T15:36:50.871Z",
+    "found": true,
+    "matched": 61
+  },
+  "C_CUSTOMERRETURNRATEQRY": {
+    "attemptedAt": "2026-08-07T15:36:51.967Z",
+    "found": true,
+    "matched": 58
+  },
+  "C_DEBITMEMOREQUESTITEMQRY": {
+    "attemptedAt": "2026-08-07T15:36:53.214Z",
+    "found": true,
+    "matched": 49
+  },
+  "C_MATERIALSTOCKACTUAL": {
+    "attemptedAt": "2026-08-07T15:36:54.534Z",
+    "found": true,
+    "matched": 20
+  },
+  "C_MATERIALSTOCKBYKEYDATE": {
+    "attemptedAt": "2026-08-07T15:36:55.626Z",
+    "found": true,
+    "matched": 20
+  },
+  "C_MATERIALSTOCKTIMESERIES": {
+    "attemptedAt": "2026-08-07T15:36:56.791Z",
+    "found": true,
+    "matched": 23
+  },
+  "I_BUSINESSPARTNERROLETP_3": {
+    "attemptedAt": "2026-08-07T15:36:57.189Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSINESSPARTNERROLETP_3\" (404)"
+  },
+  "I_BUSINESSPARTNERTAXNUMBERTP_3": {
+    "attemptedAt": "2026-08-07T15:36:57.911Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSINESSPARTNERTAXNUMBERTP_3\" (404)"
+  },
+  "I_BUSINESSPARTNERTP_3": {
+    "attemptedAt": "2026-08-07T15:36:58.628Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSINESSPARTNERTP_3\" (404)"
+  },
+  "I_BUSINESSPARTNERTYPE": {
+    "attemptedAt": "2026-08-07T15:37:00.066Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BUSINESSPARTNERTYPETEXT": {
+    "attemptedAt": "2026-08-07T15:37:00.999Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUSPARTBIRTHDATESTATUS": {
+    "attemptedAt": "2026-08-07T15:37:01.826Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BUSPARTBIRTHDATESTATUSTEXT": {
+    "attemptedAt": "2026-08-07T15:37:03.014Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUSPARTCATEGORY": {
+    "attemptedAt": "2026-08-07T15:37:04.044Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_BUSPARTCATEGORYTEXT": {
+    "attemptedAt": "2026-08-07T15:37:05.131Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_BUSPARTCUSTSELECTEDTAXTYPE": {
+    "attemptedAt": "2026-08-07T15:37:05.927Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BUSPARTEMAILADDRESSTP_3": {
+    "attemptedAt": "2026-08-07T15:37:06.236Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTEMAILADDRESSTP_3\" (404)"
   }
 }

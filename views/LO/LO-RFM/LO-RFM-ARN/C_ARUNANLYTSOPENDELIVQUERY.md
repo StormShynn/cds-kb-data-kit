@@ -5,9 +5,22 @@ app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSOPENDELIVQUERY')/$value
 semantic_en: Open Deliveries
+semantic_vi: Open Deliveries — CDS view tiêu dùng dựa trên I_ARunAnlytsOpenDelivCube.
+keywords:
+  - open
+  - deliveries
+  - delivery
+  - document
+  - item
+  - requirement
+  - type
+  - sales
+  - district
+  - shipping
+  - point
 tags:
   - LO
   - bo:salesorder
@@ -16,7 +29,6 @@ tags:
   - LO-RFM
   - LO-RFM-ARN
   - lob:logistics general
-  - metadata-only
 ---
 # C_ARUNANLYTSOPENDELIVQUERY
 
@@ -28,14 +40,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSOPENDELIVQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSOPENDELIVQUERY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DeliveryDocument` |  | |  |  | `CHAR(10)` | Delivery |
-| `DeliveryDocumentItem` |  | |  |  | `NUMC(6)` | Delivery Item |
+| `DeliveryDocument` | ✓ | |  |  | `CHAR(10)` | Delivery |
+| `DeliveryDocumentItem` | ✓ | |  |  | `NUMC(6)` | Delivery Item |
 | `RequirementType` |  | |  |  | `CHAR(2)` |  |
 | `SalesDistrict` |  | |  |  | `CHAR(6)` | Sales District |
 | `ShippingPoint` |  | |  |  | `CHAR(4)` | Shipping Point / Receiving Point |
@@ -59,3 +71,88 @@ tags:
 | `RequestedDeliveryDate` |  | |  |  | `DATS(8)` | Material Staging/Availability Date |
 | `DeliveredQuantityInBaseUnit` |  | |  |  | `QUAN(15)` |  |
 | `SupAssgmtAggrgQtyUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSOPENDELIVQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSOPENDELIVQUERY')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ClientHandling.type: #INHERITED
+@VDM.viewType: #CONSUMPTION
+@AccessControl: {
+  personalData.blocking: #REQUIRED
+}
+@AbapCatalog: {
+  sqlViewName: 'CARNALYTSOPDLV',
+  compiler.compareFilter: true,
+  preserveKey:true
+}
+@ObjectModel:{
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XXL
+   }
+}
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@Metadata.ignorePropagatedAnnotations:true
+@Analytics.query: true
+@ObjectModel.supportedCapabilities: #ANALYTICAL_QUERY
+@EndUserText.label: 'Open Deliveries'
+define view C_ARunAnlytsOpenDelivQuery
+  as select from I_ARunAnlytsOpenDelivCube
+{
+  key DeliveryDocument,
+  key DeliveryDocumentItem,
+      @EndUserText.label: 'Requirement Type'
+      RequirementType,
+      @EndUserText.label: 'Sales District'
+      SalesDistrict,
+      @EndUserText.label: 'Shipping Point'
+      ShippingPoint,
+      @EndUserText.label: 'Sales Organization'
+      SalesOrganization,
+      @EndUserText.label: 'Document Type'
+      DeliveryDocumentType,
+      @EndUserText.label: 'Billing Block'
+      HeaderBillingBlockReason,
+      @EndUserText.label: 'Delivery Block'
+      DeliveryBlockReason,
+      @EndUserText.label: 'Delivery Priority'
+      DeliveryPriority,
+      @EndUserText.label: 'Ship To Party'
+      ShipToParty,
+      @EndUserText.label: 'Sold To Party'
+      SoldToParty,
+      @EndUserText.label: 'Sales Office'
+      SalesOffice,
+      @EndUserText.label: 'Product'
+      Product,
+      @EndUserText.label: 'Plant'
+      Plant,
+      @EndUserText.label: 'Storage Location'
+      StorageLocation,
+      @EndUserText.label: 'Stock Segment'
+      @Feature:'SW:RFM_SEGMTN_UI'
+      StockSegment,
+      @EndUserText.label: 'Requirement Segment'
+      @Feature:'SW:RFM_SEGMTN_UI'
+      RequirementSegment,
+      @EndUserText.label: 'Distribution Channel'
+      DistributionChannel,
+      @EndUserText.label: 'Division'
+      Division,
+      @EndUserText.label: 'Product Group'
+      ProductGroup,
+      @EndUserText.label: 'Delivery Date'
+      ProductAvailabilityDate,
+      RequestedDeliveryDate,
+      @EndUserText.label: 'Delivery Quantity'
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'SupAssgmtAggrgQtyUnit'
+      DeliveredQuantityInBaseUnit,
+      @Semantics.unitOfMeasure: true
+      SupAssgmtAggrgQtyUnit
+}
+```

@@ -5,11 +5,23 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMARGPERDCOMPARISONQRY_2')/$value
 semantic_en: Company Margin Comparison Template Query
+semantic_vi: Company Margin Comparison Template Query — CDS view tiêu dùng dựa trên Company Margin Comparison Template Query.
 keywords:
   - Company Margin Comparison Template Query
+  - company
+  - margin
+  - comparison
+  - template
+  - query
+  - ledger
+  - source
+  - fiscal
+  - year
+  - variant
+  - period
 tags:
   - CO
   - bo:salesorder
@@ -20,7 +32,6 @@ tags:
   - consumption-view
   - lob:controlling
   - lob:finance
-  - metadata-only
 ---
 # C_COMARGPERDCOMPARISONQRY_2
 
@@ -32,7 +43,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMARGPERDCOMPARISONQRY_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMARGPERDCOMPARISONQRY_2')/$value) |
 
 ## Fields
 
@@ -83,61 +94,1132 @@ tags:
 | `ServiceDocumentItem` |  | |  |  | `NUMC(6)` | Service Document Item ID |
 | `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
 | `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
-| `RatioUnit` |  | |  |  | `UNIT(3)` |  |
-| `CurrentFiscalYearValue` |  | |  |  | `DEC(23)` |  |
-| `PrevFiscalYearValue` |  | |  |  | `DEC(23)` |  |
-| `CurrentFYPeriodValue` |  | |  |  | `DEC(23)` |  |
-| `PreviousFYPeriodValue` |  | |  |  | `DEC(23)` |  |
-| `DeltaCurPrevFYPeriodValue` |  | |  |  | `DEC(23)` |  |
-| `DeltaCurPrevFYPeriodRatio` |  | |  |  | `DECF(34)` |  |
-| `CurrentFYYearToDateValue` |  | |  |  | `DEC(23)` |  |
-| `PreviousFYYearToDateValue` |  | |  |  | `DEC(23)` |  |
-| `DeltaCurYTDPrevYTDValue` |  | |  |  | `DEC(23)` |  |
-| `DeltaCurYTDPrevYTDRatio` |  | |  |  | `DECF(34)` |  |
-| `CurrentFiscalQuarterValue` |  | |  |  | `DEC(23)` |  |
-| `PrevFiscalQuarterValue` |  | |  |  | `DEC(23)` |  |
-| `DeltaCurPrevFiscalQtrValue` |  | |  |  | `DEC(23)` |  |
-| `DeltaCurPrevFiscalQtrRatio` |  | |  |  | `DECF(34)` |  |
-| `PrevYearCurrentFYQuarterValue` |  | |  |  | `DEC(23)` |  |
-| `DeltaCurPrevFYQuarterValue` |  | |  |  | `DEC(23)` |  |
-| `DeltaCurPrevFYQuarterRatio` |  | |  |  | `DECF(34)` |  |
+| `unit` |  | |  | `virtual RatioUnit : abap.unit` |  |  |
+| `CurrentFiscalYearValue` |  | |  | `cast( case when ( LedgerFiscalYear = $parameters.P_LedgerFiscalYear ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `PrevFiscalYearValue` |  | |  | `cast( case when ( LedgerFiscalYear = $parameters.P_PreviousLedgerFiscalYear ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `CurrentFYPeriodValue` |  | |  | `cast( case when ( FiscalYearPeriod = $parameters.P_FiscalYearPeriod ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `PreviousFYPeriodValue` |  | |  | `cast( case when ( FiscalYearPeriod = $parameters.P_PreviousFiscalYearPeriod ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `DeltaCurPrevFYPeriodValue` |  | |  | `cast( $projection.CurrentFYPeriodValue - $projection.PreviousFYPeriodValue as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `DeltaCurPrevFYPeriodRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurPrevFYPeriodValue, total=>abs( $projection.PreviousFYPeriodValue ) ) * 100` | `DECF(34)` |  |
+| `CurrentFYYearToDateValue` |  | |  | `cast( case when ( LedgerFiscalYear = $parameters.P_LedgerFiscalYear and PostingDate <= $parameters.P_KeyDate ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `PreviousFYYearToDateValue` |  | |  | `cast( case when ( LedgerFiscalYear = $parameters.P_PreviousLedgerFiscalYear and PostingDate <= $parameters.P_ComparisonReportingDate ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `DeltaCurYTDPrevYTDValue` |  | |  | `cast( $projection.CurrentFYYearToDateValue - $projection.PreviousFYYearToDateValue as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `DeltaCurYTDPrevYTDRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurYTDPrevYTDValue, total=>abs( $projection.PreviousFYYearToDateValue ) ) * 100` | `DECF(34)` |  |
+| `CurrentFiscalQuarterValue` |  | |  | `cast( case when ( FiscalYearQuarter = $parameters.P_FiscalYearQuarter ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `PrevFiscalQuarterValue` |  | |  | `cast( case when ( FiscalYearQuarter = $parameters.P_PreviousFiscalYearQuarter ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `DeltaCurPrevFiscalQtrValue` |  | |  | `cast( $projection.CurrentFiscalQuarterValue - $projection.PrevFiscalQuarterValue as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `DeltaCurPrevFiscalQtrRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurPrevFiscalQtrValue, total=>abs( $projection.PrevFiscalQuarterValue ) ) * 100` | `DECF(34)` |  |
+| `PrevYearCurrentFYQuarterValue` |  | |  | `cast( case when ( FiscalYearQuarter = $parameters.P_FiscalYearQuarterPrevYear ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `DeltaCurPrevFYQuarterValue` |  | |  | `cast( $projection.CurrentFiscalQuarterValue - $projection.PrevYearCurrentFYQuarterValue as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `DeltaCurPrevFYQuarterRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurPrevFYQuarterValue, total=>abs( $projection.PrevYearCurrentFYQuarterValue ) ) * 100` | `DECF(34)` |  |
 | `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `NetRevenueAmountInDspCrcy` |  | |  |  | `CURR(23)` | Net Revenue in Display Currency |
-| `RevenueAmountInDisplayCrcy` |  | |  |  | `CURR(23)` | Revenue Amount in Display Currency |
-| `BilledRevenueAmtInDspCrcy` |  | |  |  | `CURR(23)` | Actual Revenue |
-| `RevenueAdjustmentAmtInDspCrcy` |  | |  |  | `CURR(23)` | Net Revenue in Display Currency |
-| `SalesDeductionAmountInDspCrcy` |  | |  |  | `CURR(23)` | Sales Deduction |
-| `VarblCOGSAmtInDspCrcy` |  | |  |  | `CURR(23)` | Cost of Goods Sold - Total |
-| `ContrbnMargin1AmtInDspCrcy` |  | |  |  | `CURR(23)` | Contribution Margin I |
-| `VarblMaterialCostInDspCrcy` |  | |  |  | `CURR(23)` | Variable Material Cost In Company Code Currency |
-| `VarblActivityCostInDspCrcy` |  | |  |  | `CURR(23)` | Variable Activity Cost in Display Currency |
-| `VarblPersonnelTmeCostInDspCrcy` |  | |  |  | `CURR(23)` | Variable Personnel Time Cost in Display Currency |
-| `VarblMachineTimeCostInDspCrcy` |  | |  |  | `CURR(23)` | Variable Machine Time Cost in Company Code Currency |
-| `VarblOverheadCostInDspCrcy` |  | |  |  | `CURR(23)` | Variable Overhead Cost in Display Currency |
-| `TravelCostAmountInDspCurrency` |  | |  |  | `CURR(23)` | Travel Cost Amount in Display Currency |
-| `PurchasedMaterialCostInDspCrcy` |  | |  |  | `CURR(23)` | Purchased Material Cost in Display Currency |
-| `VarblOtherCostInDspCrcy` |  | |  |  | `CURR(23)` | Variable Other Cost in Display Currency |
-| `FxdCOGSAmtInDspCrcy` |  | |  |  | `CURR(23)` | COGS - Fixed Amount in Display Currency |
-| `FixedMaterialCostInDspCrcy` |  | |  |  | `CURR(23)` | Fixed Material Cost In Display Currency |
-| `FixedActivityCostInDspCrcy` |  | |  |  | `CURR(23)` | Fixed Activity Cost in Display Currency |
-| `FxdPersCostsAmtInDspCurrency` |  | |  |  | `CURR(23)` | Fixed Personnel Time Cost in Display Currency |
-| `FxdMchnTmeAmtInDisplayCurrency` |  | |  |  | `CURR(23)` | Fixed Machine Time Cost in Display Currency |
-| `FixedOverheadCostInDspCrcy` |  | |  |  | `CURR(23)` | Fixed Overhead Cost in Display Currency |
-| `FixedOtherCostInDspCrcy` |  | |  |  | `CURR(23)` | Fixed Other Cost In Display Currency |
-| `PriceDiffAmtInDisplayCrcy` |  | |  |  | `CURR(23)` | COGS - Price Differences Amount in Display Currency |
-| `InptPrVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Input Price Variance in Display Currency |
-| `InptQtyVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Input Quantity Variance |
-| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Resource Usage Variance |
-| `LotSizeVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Lot Size Variance |
-| `OutpPrVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Output Price Variance |
-| `InptRmngVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Remaining Input Variance |
-| `WarrantyCostInDspCrcy` |  | |  |  | `CURR(23)` | Warranty Cost in Display Currency |
-| `ContrbnMargin2AmtInDspCrcy` |  | |  |  | `CURR(23)` | Contribution Margin II |
-| `PeriodicCostAmtInDspCrcy` |  | |  |  | `CURR(23)` | Periodic Cost in Display Currency |
-| `MarketingOvhdAmtInDspCrcy` |  | |  |  | `CURR(23)` | Marketing Overhead |
-| `SalesOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | Sales Overhead |
-| `AdminOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | Administration Overhead |
-| `RnDOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | COGS - Research and Dev Overhead Amount |
-| `ContrbnMargin3AmtInDspCrcy` |  | |  |  | `CURR(23)` | Contribution Margin III |
-| `BilledValnQtyInCostSourceUnit` |  | |  |  | `DEC(23)` |  |
+| `NetRevenueAmountInDspCrcy` |  | |  | `cast( $projection.RevenueAmountInDisplayCrcy + $projection.SalesDeductionAmountInDspCrcy as fcopa_net_revenue_dspcrcy )` | `CURR(23)` | Net Revenue in Display Currency |
+| `RevenueAmountInDisplayCrcy` |  | |  | `cast( $projection.BilledRevenueAmtInDspCrcy + $projection.RevenueAdjustmentAmtInDspCrcy as fis_revenue_amount_dsp_crcy )` | `CURR(23)` | Revenue Amount in Display Currency |
+| `BilledRevenueAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'BILL_REV' ) then ( InvertedAmountInDisplayCrcy ) else null end as fins_trr_actrevn preserving type )` | `CURR(23)` | Actual Revenue |
+| `RevenueAdjustmentAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'ADJ_REV' ) then ( InvertedAmountInDisplayCrcy ) else null end as fcopa_rev_adjustment_dspcrcy preserving type )` | `CURR(23)` | Net Revenue in Display Currency |
+| `SalesDeductionAmountInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'SALES_DED' ) then ( InvertedAmountInDisplayCrcy ) else null end as fins_sales_deduction preserving type )` | `CURR(23)` | Sales Deduction |
+| `VarblCOGSAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'RECO_COS' and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedVarblAmountInDspCrcy ) else null end as fins_cogs preserving type )` | `CURR(23)` | Cost of Goods Sold - Total |
+| `ContrbnMargin1AmtInDspCrcy` |  | |  | `cast ( $projection.NetRevenueAmountInDspCrcy + $projection.VarblCOGSAmtInDspCrcy as fins_contribution_margin_i )` | `CURR(23)` | Contribution Margin I |
+| `VarblMaterialCostInDspCrcy` |  | |  | `cast( case when ( ( SemanticTag = 'MATCST' or SemanticTag = 'COGS_3PAR' or SemanticTag = 'ICO_COST' ) and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedVarblAmountInDspCrcy ) else null end as fcopa_varmaterialcost_dspcrcy preserving type )` | `CURR(23)` | Variable Material Cost In Company Code Currency |
+| `VarblActivityCostInDspCrcy` |  | |  | `cast( $projection.VarblPersonnelTmeCostInDspCrcy + $projection.VarblMachineTimeCostInDspCrcy as fcopa_varactivitycost_dspcrcy )` | `CURR(23)` | Variable Activity Cost in Display Currency |
+| `VarblPersonnelTmeCostInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'COGS_PERT' and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedVarblAmountInDspCrcy ) else null end as fcopa_varperstimecost_dspcrcy )` | `CURR(23)` | Variable Personnel Time Cost in Display Currency |
+| `VarblMachineTimeCostInDspCrcy` |  | |  | `cast( case when ( ( SemanticTag = 'COGS_SUTI' or SemanticTag = 'COGS_MATI' ) and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedVarblAmountInDspCrcy ) else null end as fcopa_varmchntimecost_dspcrcy )` | `CURR(23)` | Variable Machine Time Cost in Company Code Currency |
+| `VarblOverheadCostInDspCrcy` |  | |  | `cast( case when ( ( SemanticTag = 'COGS_OMAT' or SemanticTag = 'COGS_OPRO' or SemanticTag = 'OVH_CSTADM' ) and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedVarblAmountInDspCrcy ) else null end as fcopa_varoverheadcost_dspcrcy )` | `CURR(23)` | Variable Overhead Cost in Display Currency |
+| `TravelCostAmountInDspCurrency` |  | |  | `cast( case when ( SemanticTag = 'TRAVELCST' and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedAmountInDisplayCrcy ) else null end as fins_trav_cost_dspcrcy preserving type )` | `CURR(23)` | Travel Cost Amount in Display Currency |
+| `PurchasedMaterialCostInDspCrcy` |  | |  | `cast( case when ( ( SemanticTag = 'LIC_COST' or SemanticTag = 'SERVICECST' or SemanticTag = 'HRD_COST' ) and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedAmountInDisplayCrcy ) else null end as fcopa_purchasedmatcost_dspcrcy preserving type )` | `CURR(23)` | Purchased Material Cost in Display Currency |
+| `VarblOtherCostInDspCrcy` |  | |  | `cast ( $projection.VarblCOGSAmtInDspCrcy - $projection.VarblMaterialCostInDspCrcy - $projection.VarblActivityCostInDspCrcy - $projection.VarblOverheadCostInDspCrcy - $projection.TravelCostAmountInDspCurrency - $projection.PurchasedMaterialCostInDspCrcy as fcopa_varothercost_dspcrcy )` | `CURR(23)` | Variable Other Cost in Display Currency |
+| `FxdCOGSAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'RECO_COS' and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedFixedAmtInDspCrcy ) else null end as fins_cogs_fixed_dsprcy preserving type )` | `CURR(23)` | COGS - Fixed Amount in Display Currency |
+| `FixedMaterialCostInDspCrcy` |  | |  | `cast( case when ( ( SemanticTag = 'MATCST' or SemanticTag = 'COGS_3PAR' or SemanticTag = 'ICO_COST' ) and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedFixedAmtInDspCrcy ) else null end as fcopa_fxdmaterialcost_dspcrcy preserving type )` | `CURR(23)` | Fixed Material Cost In Display Currency |
+| `FixedActivityCostInDspCrcy` |  | |  | `cast( $projection.FxdPersCostsAmtInDspCurrency + $projection.FxdMchnTmeAmtInDisplayCurrency as fcopa_fxdactivitycost_dspcrcy )` | `CURR(23)` | Fixed Activity Cost in Display Currency |
+| `FxdPersCostsAmtInDspCurrency` |  | |  | `cast( case when ( SemanticTag = 'COGS_PERT' and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedFixedAmtInDspCrcy ) else null end as fcopa_fxdperstimecost_dspcrcy preserving type )` | `CURR(23)` | Fixed Personnel Time Cost in Display Currency |
+| `FxdMchnTmeAmtInDisplayCurrency` |  | |  | `cast( case when ( ( SemanticTag = 'COGS_SUTI' or SemanticTag = 'COGS_MATI' ) and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedFixedAmtInDspCrcy ) else null end as fcopa_fxdmchntimecost_dspcrcy preserving type )` | `CURR(23)` | Fixed Machine Time Cost in Display Currency |
+| `FixedOverheadCostInDspCrcy` |  | |  | `cast( case when ( ( SemanticTag = 'COGS_OMAT' or SemanticTag = 'COGS_OPRO' or SemanticTag = 'OVH_CSTADM' ) and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' ) and BillableControl = ' ' ) then ( InvertedFixedAmtInDspCrcy ) else null end as fcopa_fxdoverheadcost_dspcrcy preserving type )` | `CURR(23)` | Fixed Overhead Cost in Display Currency |
+| `FixedOtherCostInDspCrcy` |  | |  | `cast ( $projection.FxdCOGSAmtInDspCrcy - $projection.FixedMaterialCostInDspCrcy - $projection.FixedActivityCostInDspCrcy - $projection.FixedOverheadCostInDspCrcy as fcopa_fixedothercost_dspcrcy )` | `CURR(23)` | Fixed Other Cost In Display Currency |
+| `PriceDiffAmtInDisplayCrcy` |  | |  | `cast( $projection.InptPrVarcAmtInDspCrcy + $projection.InptQtyVarcAmtInDspCrcy + $projection.RsceUsgeVarcAmtInDspCrcy + $projection.LotSizeVarcAmtInDspCrcy + $projection.OutpPrVarcAmtInDspCrcy + $projection.InptRmngVarcAmtInDspCrcy as fins_price_differences_dspcrcy )` | `CURR(23)` | COGS - Price Differences Amount in Display Currency |
+| `InptPrVarcAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and SubLedgerAcctLineItemType = '09130' ) then ( InvertedAmountInDisplayCrcy ) else null end as fis_inptprvarcamt_in_dspcrcy preserving type )` | `CURR(23)` | Input Price Variance in Display Currency |
+| `InptQtyVarcAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and SubLedgerAcctLineItemType = '09131' ) then ( InvertedAmountInDisplayCrcy ) else null end as fis_inptqtyvarcamt_in_dspcrcy preserving type )` | `CURR(23)` | Input Quantity Variance |
+| `RsceUsgeVarcAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and SubLedgerAcctLineItemType = '09132' ) then ( InvertedAmountInDisplayCrcy ) else null end as fis_rsceusgevarcamt_in_dspcrcy preserving type )` | `CURR(23)` | Resource Usage Variance |
+| `LotSizeVarcAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and SubLedgerAcctLineItemType = '09139' ) then ( InvertedAmountInDisplayCrcy ) else null end as fis_lotsizevarcamt_in_dspcrcy preserving type )` | `CURR(23)` | Lot Size Variance |
+| `OutpPrVarcAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and SubLedgerAcctLineItemType = '09138' ) then ( InvertedAmountInDisplayCrcy ) else null end as fis_outpprvarcamt_in_dspcrcy preserving type )` | `CURR(23)` | Output Price Variance |
+| `InptRmngVarcAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and SubLedgerAcctLineItemType = '09140' ) then ( InvertedAmountInDisplayCrcy ) else null end as fis_inptrmngvarcamt_in_dspcrcy preserving type )` | `CURR(23)` | Remaining Input Variance |
+| `WarrantyCostInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and BillableControl <> ' ' ) then ( InvertedAmountInDisplayCrcy ) else null end as fcopa_warrantycost_dspcrcy preserving type )` | `CURR(23)` | Warranty Cost in Display Currency |
+| `ContrbnMargin2AmtInDspCrcy` |  | |  | `cast ( $projection.ContrbnMargin1AmtInDspCrcy + $projection.FxdCOGSAmtInDspCrcy + $projection.PriceDiffAmtInDisplayCrcy + $projection.WarrantyCostInDspCrcy as fins_contribution_margin_ii )` | `CURR(23)` | Contribution Margin II |
+| `PeriodicCostAmtInDspCrcy` |  | |  | `cast( $projection.MarketingOvhdAmtInDspCrcy + $projection.SalesOverheadAmtInDspCrcy + $projection.AdminOverheadAmtInDspCrcy + $projection.RnDOverheadAmtInDspCrcy as fcopa_periodiccost_dspcrcy )` | `CURR(23)` | Periodic Cost in Display Currency |
+| `MarketingOvhdAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and FunctionalArea = 'YB35' ) then ( InvertedAmountInDisplayCrcy ) else null end as fins_marketing_overhead preserving type )` | `CURR(23)` | Marketing Overhead |
+| `SalesOverheadAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and FunctionalArea = 'YB30' ) then ( InvertedAmountInDisplayCrcy ) else null end as fins_sales_overhead preserving type )` | `CURR(23)` | Sales Overhead |
+| `AdminOverheadAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and FunctionalArea = 'YB40' ) then ( InvertedAmountInDisplayCrcy ) else null end as fins_administration_overhead preserving type )` | `CURR(23)` | Administration Overhead |
+| `RnDOverheadAmtInDspCrcy` |  | |  | `cast( case when ( SemanticTag = 'PL_RESULT' and FunctionalArea = 'YB50' ) then ( InvertedAmountInDisplayCrcy ) else null end as fins_rnd_overhead_dspcrcy preserving type )` | `CURR(23)` | COGS - Research and Dev Overhead Amount |
+| `ContrbnMargin3AmtInDspCrcy` |  | |  | `cast ( $projection.ContrbnMargin2AmtInDspCrcy + $projection.PeriodicCostAmtInDspCrcy as fins_contribution_margin_iii )` | `CURR(23)` | Contribution Margin III |
+| `BilledValnQtyInCostSourceUnit` |  | |  | `cast( case when SemanticTag = 'BILL_REV' then ValuationQuantity else null end as abap.dec(23,2) )` | `DEC(23)` |  |
+| `_DocumentStore` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMARGPERDCOMPARISONQRY_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMARGPERDCOMPARISONQRY_2')/$value)*
+
+```abap
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.modelingPattern:#ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities:[#ANALYTICAL_QUERY, #KEY_USER_COPYING_TEMPLATE]
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #MIXED
+@Analytics.settings.maxProcessingEffort: #HIGH
+@Analytics.document.defaultAssociationToStorage: '_DocumentStore'
+@Metadata.ignorePropagatedAnnotations: true //Not Supported
+@EndUserText.label: 'Company Margin Comparison Template Query'
+
+define transient view entity C_CoMargPerdComparisonQry_2
+  provider contract analytical_query
+  with parameters
+
+    // 'Financial Statement Version'      
+    @EndUserText.label:'Financial Statement Version'    
+    @AnalyticsDetails.variable.defaultValue: 'YPS2'
+    @Consumption.valueHelpDefinition: [{
+    entity: {
+     name:    'I_FINANCIALSTATEMENTHIERARCHY',
+     element: 'GLAccountHierarchy'
+         },
+    useForValidation: true
+    }]
+    P_GLAccountHierarchy : fins_sem_tag_hryid,
+    
+//    @AnalyticsDetails.variable.defaultValue: 'CCC'
+//    @AnalyticsDetails.variable : { usageType: #FILTER, selectionType: #SINGLE, multipleSelections: true, mandatory: true }
+//    @Consumption.valueHelpDefinition: [{
+//    entity: {
+//     name:    'I_CompanyMarginCurrencyField',
+//     element: 'CurrencyField'
+//         },
+//    useForValidation: true
+//    }]
+//    @EndUserText.label:'Currency Field' 
+//    P_CurrencyField : fis_crcy_role_field,
+    
+    @Consumption.derivation: { lookupEntity: 'F_LeadingLedger', resultElement: 'Ledger' }
+    @AnalyticsDetails.variable : { usageType: #FILTER, selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+    @EndUserText.label:'Ledger'    
+    P_Ledger    : fis_rldnr,
+    
+    @AnalyticsDetails.variable : { usageType: #FILTER, selectionType: #SINGLE, multipleSelections: true, mandatory: true }
+    @EndUserText.label:'Company Code'
+    P_CompanyCode : fis_bukrs,
+    
+    // 'Fiscal Year Variant'
+    @EndUserText.label:'Fiscal Year Variant'
+    @Consumption.derivation: {
+      lookupEntity     : 'F_LdgrCoCodeFsclYrVariant',
+      resultElement    : 'FiscalYearVariant',
+      resultAggregation:  #MAX,
+      binding          :  [
+        { targetElement: 'Ledger',      type: #PARAMETER, value: 'P_Ledger' },
+        { targetElement: 'CompanyCode', type: #PARAMETER, value: 'P_CompanyCode' }] 
+    }
+    @Consumption.hidden: true
+    @Semantics.fiscal.yearVariant: true
+    P_FiscalYearVariant  : fis_periv,
+    
+    // 'Reporting Date'
+    @Consumption.derivation: { lookupEntity: 'F_USERLOCALDATE',
+                               resultElement: 'UserLocalDate' }
+    @Semantics.businessDate.at: true
+    @EndUserText.label:'Reporting Date'    
+    P_KeyDate            : vdm_v_key_date,
+    
+    // 'Fiscal Year'    
+    @EndUserText.label:'Fiscal Year'    
+    @Consumption.derivation: {
+        lookupEntity: 'F_FISCALYEAR',
+        resultElement: 'FiscalYear',
+        binding: [
+            { targetParameter: 'P_CalendarDate', type : #PARAMETER, value: 'P_KeyDate' },
+            { targetParameter: 'P_FiscalYearVariant', type : #PARAMETER, value: 'P_FiscalYearVariant' } ]
+    }
+    @Consumption.hidden: true
+    @Semantics.fiscal.year: true
+    P_LedgerFiscalYear           : fis_gjahr_no_conv,
+
+    // 'Fiscal Period'
+    @EndUserText.label:'Fiscal Period'    
+    @Consumption.derivation: {
+        lookupEntity: 'F_FISCALPERIOD',
+        resultElement: 'FiscalPeriod',
+        binding: [
+            { targetParameter: 'P_CalendarDate', type : #PARAMETER, value: 'P_KeyDate' },
+            { targetParameter: 'P_FiscalYearVariant', type : #PARAMETER, value: 'P_FiscalYearVariant' } ]
+    }
+    @Consumption.hidden: true
+    @Semantics.fiscal.period: true
+    P_FiscalPeriod               : fins_fiscalperiod,
+
+    // 'Previous Fiscal Year'
+    @EndUserText.label: 'Previous Fiscal Year'
+    @Consumption.derivation: {
+    lookupEntity: 'F_FiscalYearShift',
+    resultElement: 'ShiftedFiscalYear',
+    binding : [
+        { targetParameter : 'P_FiscalYear', type: #PARAMETER, value: 'P_LedgerFiscalYear' },
+        { targetParameter : 'P_FiscalYearVariant', type: #PARAMETER, value: 'P_FiscalYearVariant' },
+        { targetParameter : 'P_FsclTimePeriodOffsetDuration', type: #CONSTANT, value: '-1' },
+        { targetParameter : 'P_FiscalTimePeriodOffsetUnit', type: #CONSTANT, value: 'Y' } ]
+    }
+    @Consumption.hidden :true
+    @Semantics.fiscal.year: true
+    P_PreviousLedgerFiscalYear : fis_gjahr_no_conv,
+
+    // 'Reporting Date in Previous Year'
+    @EndUserText.label: 'Reporting Date in Previous Year'
+    @Consumption.derivation: {
+    lookupEntity: 'F_PreviousYearCalendarDate',
+    resultElement: 'ShiftedCalendarDate',
+    binding : [
+        { targetParameter : 'P_CalendarDate', type: #PARAMETER, value: 'P_KeyDate' },
+        { targetParameter : 'P_FiscalYearVariant', type: #PARAMETER, value: 'P_FiscalYearVariant' } ]
+    }
+    @Consumption.hidden :true
+    P_ComparisonReportingDate    : vdm_v_key_date,
+
+    // 'Fiscal Year Period'
+    @EndUserText.label: 'Fiscal Year Period'
+    @Consumption.derivation: {
+    lookupEntity: 'F_FsclYearPeriodByFsclPeriod',
+    resultElement: 'FiscalYearPeriod',
+    binding: [
+        { targetParameter: 'P_FiscalYear', type : #PARAMETER, value: 'P_LedgerFiscalYear' },
+        { targetParameter: 'P_FiscalPeriod', type : #PARAMETER, value: 'P_FiscalPeriod' },
+        { targetParameter: 'P_FiscalYearVariant', type : #PARAMETER, value: 'P_FiscalYearVariant' } ]
+    }
+    @Consumption.hidden: true
+    @Semantics.fiscal.yearPeriod: true
+    P_FiscalYearPeriod           : fis_jahrper_conv,
+
+    // 'Previous Fiscal Year Period' 
+    @EndUserText.label: 'Previous Fiscal Year Period' 
+    @Consumption.derivation: {
+         lookupEntity: 'F_FiscalYearPeriodShift',
+         resultElement: 'ShiftedFiscalYearPeriod',
+         binding: [
+             { targetParameter: 'P_FiscalYearPeriod', type : #PARAMETER, value: 'P_FiscalYearPeriod' },
+             { targetParameter: 'P_FiscalYearVariant', type : #PARAMETER, value: 'P_FiscalYearVariant'},
+             { targetParameter: 'P_FsclTimePeriodOffsetDuration', type : #CONSTANT, value: '-1' },
+             { targetParameter: 'P_FiscalTimePeriodOffsetUnit', type : #CONSTANT, value: 'P' } ]
+     }
+    @Consumption.hidden: true
+    @Semantics.fiscal.yearPeriod: true
+    P_PreviousFiscalYearPeriod   : fis_jahrper_conv,
+
+    // 'Fiscal Year Quarter' 
+    @EndUserText.label: 'Fiscal Year Quarter' 
+    @Consumption.derivation: {
+        lookupEntity: 'F_FiscalYearQuarter',
+        resultElement: 'FiscalYearQuarter',
+        binding: [
+            { targetParameter: 'P_CalendarDate', type : #PARAMETER, value: 'P_KeyDate' },
+            { targetParameter: 'P_FiscalYearVariant', type : #PARAMETER, value: 'P_FiscalYearVariant' } ]
+    }
+    @Consumption.hidden: true
+    @Semantics.fiscal.yearQuarter: true
+    P_FiscalYearQuarter          : fins_fyearquarter,
+    
+    // 'Previous Fiscal Year Quarter' 
+    @EndUserText.label: 'Previous Fiscal Year Quarter' 
+    @Consumption.derivation: {
+        lookupEntity: 'F_FiscalYearQuarterShift',
+        resultElement: 'ShiftedFiscalYearQuarter',
+        binding: [
+            { targetParameter: 'P_FiscalYearQuarter', type : #PARAMETER, value: 'P_FiscalYearQuarter' },
+            { targetParameter: 'P_FiscalYearVariant', type : #PARAMETER, value: 'P_FiscalYearVariant' },
+            { targetParameter: 'P_FsclTimePeriodOffsetDuration', type : #CONSTANT, value: '-1' },
+            { targetParameter: 'P_FiscalTimePeriodOffsetUnit', type : #CONSTANT, value: 'Q' } ]
+    }
+    @Consumption.hidden: true
+    @Semantics.fiscal.yearQuarter: true
+    P_PreviousFiscalYearQuarter          : fins_fyearquarter, 
+    
+    // 'Reporting Quarter in Previous Year' 
+    @EndUserText.label: 'Reporting Quarter in Previous Year' 
+    @Consumption.derivation: {
+        lookupEntity: 'F_FiscalYearQuarterShift',
+        resultElement: 'ShiftedFiscalYearQuarter',
+        binding: [
+            { targetParameter: 'P_FiscalYearQuarter', type : #PARAMETER, value: 'P_FiscalYearQuarter' },
+            { targetParameter: 'P_FiscalYearVariant', type : #PARAMETER, value: 'P_FiscalYearVariant' },
+            { targetParameter: 'P_FsclTimePeriodOffsetDuration', type : #CONSTANT, value: '-1' },
+            { targetParameter: 'P_FiscalTimePeriodOffsetUnit', type : #CONSTANT, value: 'Y' } ]
+    }
+    @Consumption.hidden: true
+    @Semantics.fiscal.yearQuarter: true
+    P_FiscalYearQuarterPrevYear          : fins_fyearquarter 
+    
+  as projection on I_CompanyMarginCube_2 as I_CompanyMarginCube
+{
+
+  //////////////////
+  // Technical fields
+  //////////////////
+
+  @UI.textArrangement: #TEXT_LAST 
+  Ledger,
+  
+  @Consumption.filter.hidden: true
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: true}
+  @Consumption.derivation: { lookupEntity: 'F_SourceLedger',
+        resultElement: 'SourceLedger' , binding: [ { targetElement : 'Ledger' , type : #PARAMETER, value : 'P_Ledger' } ] }
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @EndUserText.label:'Source Ledger'    
+  @UI.textArrangement: #TEXT_LAST
+  SourceLedger,
+
+  @Semantics.fiscal.yearVariant: true
+  @EndUserText.label:'Fiscal Year Variant'  
+  @UI.textArrangement: #TEXT_LAST
+  FiscalYearVariant,
+
+  @Semantics.fiscal.year: true
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @EndUserText.label:'Fiscal Year'
+  @UI.textArrangement: #TEXT_LAST 
+  LedgerFiscalYear,
+
+  @Semantics.fiscal.period: true
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Fiscal Period'
+  @UI.textArrangement: #TEXT_LAST
+  FiscalPeriod,
+
+  @Semantics.fiscal.yearPeriod: true
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Fiscal Year Period'
+  @UI.textArrangement: #TEXT_ONLY
+  FiscalYearPeriod,
+
+  @Semantics.fiscal.quarter: true
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Fiscal Quarter'
+  @UI.textArrangement: #TEXT_LAST
+  FiscalQuarter,
+
+  @Semantics.fiscal.yearQuarter: true
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Fiscal Year Quarter'
+  @UI.textArrangement: #TEXT_LAST
+  FiscalYearQuarter,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  @EndUserText.label:'GL Account'
+  @UI.textArrangement: #TEXT_LAST
+  GLAccount,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Business Transaction Type'
+  @UI.textArrangement: #TEXT_LAST
+  BusinessTransactionType,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Reference Document Type'
+  @UI.textArrangement: #TEXT_LAST
+  ReferenceDocumentType,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Account Assignment Type'
+  @UI.textArrangement: #TEXT_LAST
+  AccountAssignmentType,
+    
+  @EndUserText.label:'Billable Control'
+  @UI.textArrangement: #TEXT_LAST
+  BillableControl,
+  
+  @Consumption.hidden: true
+  @EndUserText.label:'Semantic Tag'  
+  @UI.textArrangement: #TEXT_LAST
+  SemanticTag,  
+  
+
+  //////////////////
+  // Characteristics
+  //////////////////
+  
+  @UI.textArrangement: #TEXT_LAST
+  @EndUserText.label:'Company Code'
+  CompanyCode,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Customer'
+  @UI.textArrangement: #TEXT_LAST
+  Customer,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Customer Group'
+  @UI.textArrangement: #TEXT_LAST
+  CustomerGroup,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label: 'Country/Region'
+  @UI.textArrangement: #TEXT_LAST
+  CustomerSupplierCountry,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Customer Supplier Industry'
+  @UI.textArrangement: #TEXT_LAST
+  CustomerSupplierIndustry,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Sold Product'
+  @UI.textArrangement: #TEXT_LAST
+  SoldProduct,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Sold Product Group'
+  @UI.textArrangement: #TEXT_LAST
+  SoldProductGroup,
+  
+  @Consumption.hidden: true
+  CostSourceUnit,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Subledger Account Line Item Type'
+  @UI.textArrangement: #TEXT_LAST
+  SubLedgerAcctLineItemType,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }  
+  @EndUserText.label:'Product'
+  @UI.textArrangement: #TEXT_LAST
+  Product,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }  
+  @EndUserText.label:'Partner Cost Center Activity Type'
+  @UI.textArrangement: #TEXT_LAST
+  PartnerCostCtrActivityType,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }  
+  @EndUserText.label:'Company ID of Trading Partner'
+  @UI.textArrangement: #TEXT_LAST
+  PartnerCompany,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }  
+  @EndUserText.label:'Partner Company Code'
+  @UI.textArrangement: #TEXT_LAST
+  PartnerCompanyCode,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Project External Identifier'
+  @UI.textArrangement: #TEXT_LAST
+  ProjectExternalID,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'WBS Element External Identifier'
+  @UI.textArrangement: #TEXT_LAST
+  WBSElementExternalID,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  @EndUserText.label:'Profit Center'
+  @UI.textArrangement: #TEXT_LAST
+  ProfitCenter,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  @EndUserText.label:'Cost Center'
+  @UI.textArrangement: #TEXT_LAST
+  CostCenter,  
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Functional Area'
+  @UI.textArrangement: #TEXT_LAST
+  FunctionalArea,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Sales Organization'
+  @UI.textArrangement: #TEXT_LAST
+  SalesOrganization,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Sales Order'
+  @UI.textArrangement: #TEXT_LAST
+  SalesOrder,
+  
+  @EndUserText.label:'Sales Order Item'
+  @UI.textArrangement: #TEXT_LAST
+  SalesOrderItem,
+
+  @Consumption.hidden: true
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Provider Contract Category'
+  @UI.textArrangement: #TEXT_LAST
+  ProviderContract,
+
+  @Consumption.hidden: true
+  @EndUserText.label:'Provider Contract Item'
+  @UI.textArrangement: #TEXT_LAST
+  ProviderContractItem,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Business Solution Order'
+  @UI.textArrangement: #TEXT_LAST
+  BusinessSolutionOrder,
+
+  @EndUserText.label:'Business Solution Order Item'
+  @UI.textArrangement: #TEXT_LAST
+  BusinessSolutionOrderItem,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Plant'
+  @UI.textArrangement: #TEXT_LAST
+  Plant,
+  
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Service Document Type'
+  @UI.textArrangement: #TEXT_LAST
+  ServiceDocumentType,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Service Document'
+  @UI.textArrangement: #TEXT_LAST
+  ServiceDocument,
+  
+  @EndUserText.label:'Service Document Item'
+  @UI.textArrangement: #TEXT_LAST
+  ServiceDocumentItem,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Distribution Channel'
+  @UI.textArrangement: #TEXT_LAST
+  DistributionChannel,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label:'Division'
+  @UI.textArrangement: #TEXT_LAST
+  OrganizationDivision,  
+  
+  //////////////////
+  // Structures
+  ////////////////// 
+
+  @EndUserText.label: 'Ratio Unit %'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @UI.textArrangement: #TEXT_LAST
+  virtual RatioUnit : abap.unit,
+
+  //  ------ Fiscal Year Value --------
+        
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Reporting Year &1',
+                               binding: [{ index: 1, parameter: 'P_LedgerFiscalYear'}] }
+  @Semantics.amount.currencyCode: 'Currency'                               
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( case when
+    (
+      LedgerFiscalYear  = $parameters.P_LedgerFiscalYear
+    )  then 1
+    else null end as abap.dec( 23, 2 ) )                                        as CurrentFiscalYearValue,
+
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Previous Year &1',
+                               binding: [{ index: 1, parameter: 'P_PreviousLedgerFiscalYear'}] }
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( case when
+    (
+      LedgerFiscalYear  = $parameters.P_PreviousLedgerFiscalYear
+    )  then 1
+    else null end as abap.dec( 23, 2 )  )                                       as PrevFiscalYearValue,
+
+
+  //  ------ Fiscal Period --------
+
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Reporting Fiscal Period &1',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearPeriod'}] }
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( case when
+    (
+    FiscalYearPeriod  = $parameters.P_FiscalYearPeriod
+    )  then 1
+    else null end as abap.dec( 23, 2 ) )                                        as CurrentFYPeriodValue,
+
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Previous Fiscal Period &1',
+                               binding: [{ index: 1, parameter: 'P_PreviousFiscalYearPeriod'}] }
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( case when
+    (
+    FiscalYearPeriod  = $parameters.P_PreviousFiscalYearPeriod
+    )  then 1
+    else null end as abap.dec( 23, 2 ) )                                        as PreviousFYPeriodValue,
+
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @AnalyticsDetails.query.collisionHandling: {formula:#THIS}
+  @Consumption.dynamicLabel: { label: 'RP &1 △ PP &2',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearPeriod'},
+                                         { index: 2, parameter: 'P_PreviousFiscalYearPeriod'}] }
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( $projection.CurrentFYPeriodValue - $projection.PreviousFYPeriodValue as abap.dec( 23, 2 ) )       as DeltaCurPrevFYPeriodValue ,    
+  
+
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @AnalyticsDetails.query.collisionHandling.formula: #THIS
+  @Consumption.dynamicLabel: { label: '% RP &1 △ PP &2',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearPeriod'}, 
+                                         { index: 2, parameter: 'P_PreviousFiscalYearPeriod'}] }
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @AnalyticsDetails.query.decimals:2
+  @Semantics.quantity.unitOfMeasure: 'RatioUnit'
+  ratio_of( portion=>$projection.DeltaCurPrevFYPeriodValue, total=>abs( $projection.PreviousFYPeriodValue ) ) * 100          as DeltaCurPrevFYPeriodRatio,
+
+    
+    //  ------ Year-to-date: current year vs. previous year -----
+
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Reporting Year-to-Date &1',
+                               binding: [{ index: 1, parameter: 'P_LedgerFiscalYear'}] }
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast(
+    case
+    when
+    (
+          LedgerFiscalYear  = $parameters.P_LedgerFiscalYear
+      and PostingDate      <= $parameters.P_KeyDate
+    )  then 1
+    else null end as abap.dec( 23, 2 ) )                                        as CurrentFYYearToDateValue,
+    
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Previous Year-to-Date &1',
+                               binding: [{ index: 1, parameter: 'P_PreviousLedgerFiscalYear'}] }
+  @Semantics.amount.currencyCode: 'Currency'                               
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast(
+    case
+    when
+    (
+          LedgerFiscalYear  = $parameters.P_PreviousLedgerFiscalYear
+      and PostingDate      <= $parameters.P_ComparisonReportingDate
+    )  then 1
+    else null end as abap.dec( 23, 2 ) )                                        as PreviousFYYearToDateValue,
+    
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @AnalyticsDetails.query.collisionHandling: {formula:#THIS}
+  @Consumption.dynamicLabel: { label: 'RYtD &1 △ PYtD &2',
+                               binding: [{ index: 1, parameter: 'P_LedgerFiscalYear'},
+                                         { index: 2, parameter: 'P_PreviousLedgerFiscalYear'}] }
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'  
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( $projection.CurrentFYYearToDateValue - $projection.PreviousFYYearToDateValue as abap.dec( 23, 2 ) )           as DeltaCurYTDPrevYTDValue,
+  
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @AnalyticsDetails.query.collisionHandling.formula: #THIS
+  @Consumption.dynamicLabel: { label: '% RYtD &1 △ PYtD &2',
+                               binding: [{ index: 1, parameter: 'P_LedgerFiscalYear'},
+                                         { index: 2, parameter: 'P_PreviousLedgerFiscalYear'}] }
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @AnalyticsDetails.query.decimals:2
+  @Semantics.quantity.unitOfMeasure: 'RatioUnit'
+  ratio_of( portion=>$projection.DeltaCurYTDPrevYTDValue, total=>abs( $projection.PreviousFYYearToDateValue ) ) * 100        as DeltaCurYTDPrevYTDRatio,  
+    
+  //  ------ Fiscal Year Quarter --------    
+  
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Reporting Fiscal Quarter &1',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearQuarter'}] }
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( case when
+    (
+    FiscalYearQuarter  = $parameters.P_FiscalYearQuarter    
+    )  then 1
+    else null end as abap.dec( 23, 2 ) )                                        as CurrentFiscalQuarterValue,
+
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Previous Fiscal Quarter &1',
+                               binding: [{ index: 1, parameter: 'P_PreviousFiscalYearQuarter'}] }
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( case when
+    (
+    FiscalYearQuarter  = $parameters.P_PreviousFiscalYearQuarter
+    )  then 1
+    else null end as abap.dec( 23, 2 ) )                                        as PrevFiscalQuarterValue,
+    
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @AnalyticsDetails.query.collisionHandling: {formula:#THIS}
+  @Consumption.dynamicLabel: { label: 'RFYQ &1 △ PFYQ &2',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearQuarter'},
+                                         { index: 2, parameter: 'P_PreviousFiscalYearQuarter'}] }
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'  
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( $projection.CurrentFiscalQuarterValue - $projection.PrevFiscalQuarterValue as abap.dec( 23, 2 ) )           as DeltaCurPrevFiscalQtrValue,
+  
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @AnalyticsDetails.query.collisionHandling.formula: #THIS
+  @Consumption.dynamicLabel: { label: '% RFYQ &1 △ PFYQ &2',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearQuarter'},
+                                         { index: 2, parameter: 'P_PreviousFiscalYearQuarter'}] }
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @AnalyticsDetails.query.decimals:2
+  @Semantics.quantity.unitOfMeasure: 'RatioUnit'
+  ratio_of( portion=>$projection.DeltaCurPrevFiscalQtrValue, total=>abs( $projection.PrevFiscalQuarterValue ) ) * 100        as DeltaCurPrevFiscalQtrRatio,      
+
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @Consumption.dynamicLabel: { label: 'Previous Year Fiscal Quarter &1',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearQuarterPrevYear'}] }
+  @Semantics.amount.currencyCode: 'Currency'                               
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( case when
+    (
+    FiscalYearQuarter  = $parameters.P_FiscalYearQuarterPrevYear
+    )  then 1
+    else null end as abap.dec( 23, 2 ) )                                        as PrevYearCurrentFYQuarterValue,
+        
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @AnalyticsDetails.query.collisionHandling: {formula:#THIS}
+  @Consumption.dynamicLabel: { label: 'RFYQ &1 △ PYRFYQ &2',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearQuarter'},
+                                         { index: 2, parameter: 'P_FiscalYearQuarterPrevYear'}] }
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'  
+  @AnalyticsDetails.query.axis: #COLUMNS
+  cast( $projection.CurrentFiscalQuarterValue - $projection.PrevYearCurrentFYQuarterValue as abap.dec( 23, 2 ) )           as DeltaCurPrevFYQuarterValue,
+  
+  @AnalyticsDetails.query.onCharacteristicStructure: true
+  @AnalyticsDetails.query.collisionHandling.formula: #THIS
+  @Consumption.dynamicLabel: { label: '% RFYQ &1 △ PYRFYQ &2',
+                               binding: [{ index: 1, parameter: 'P_FiscalYearQuarter'},
+                                         { index: 2, parameter: 'P_FiscalYearQuarterPrevYear'}] }
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @AnalyticsDetails.query.decimals:2
+  @Semantics.quantity.unitOfMeasure: 'RatioUnit'
+  ratio_of( portion=>$projection.DeltaCurPrevFYQuarterValue, total=>abs( $projection.PrevYearCurrentFYQuarterValue ) ) * 100        as DeltaCurPrevFYQuarterRatio,      
+    
+    
+  //////////////////
+  // Key figures
+  //////////////////
+  
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: true, defaultValue: 'CCC' }
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label : 'Currency Field'
+  @UI.textArrangement: #TEXT_ONLY
+  CurrencyField,
+  
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label : 'Currency'
+//  @UI.textArrangement: #TEXT_ONLY
+  Currency,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'ContrbnMargin1AmtInDspCrcy'
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Net Revenue'
+  @UI.textArrangement: #TEXT_LAST
+  cast( $projection.RevenueAmountInDisplayCrcy
+        + $projection.SalesDeductionAmountInDspCrcy as fcopa_net_revenue_dspcrcy )                as NetRevenueAmountInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'NetRevenueAmountInDspCrcy'
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Revenue'
+  @UI.textArrangement: #TEXT_LAST
+  cast( $projection.BilledRevenueAmtInDspCrcy
+        + $projection.RevenueAdjustmentAmtInDspCrcy as fis_revenue_amount_dsp_crcy )              as RevenueAmountInDisplayCrcy,
+  
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'RevenueAmountInDisplayCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Billed Revenue'  
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'BILL_REV' )
+     then ( InvertedAmountInDisplayCrcy )
+     else null end as fins_trr_actrevn preserving type )                            as BilledRevenueAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'RevenueAmountInDisplayCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Revenue Adjustment'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'ADJ_REV' )
+      then ( InvertedAmountInDisplayCrcy )
+      else null end as fcopa_rev_adjustment_dspcrcy preserving type )                          as RevenueAdjustmentAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'NetRevenueAmountInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Sales Deduction'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'SALES_DED' )
+      then ( InvertedAmountInDisplayCrcy )
+      else null end as fins_sales_deduction preserving type )                         as SalesDeductionAmountInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'ContrbnMargin1AmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Cost of Goods Sold - Variable'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'RECO_COS'
+              and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                and BillableControl = ' ' )
+               then ( InvertedVarblAmountInDspCrcy )
+               else null end as fins_cogs preserving type )                          as VarblCOGSAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.elementHierarchy.parent: 'ContrbnMargin2AmtInDspCrcy'
+  @EndUserText.label : 'Contribution Margin I'
+  @UI.textArrangement: #TEXT_LAST
+  cast ( $projection.NetRevenueAmountInDspCrcy
+         + $projection.VarblCOGSAmtInDspCrcy as fins_contribution_margin_i )          as ContrbnMargin1AmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'VarblCOGSAmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Variable Material Cost'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( ( SemanticTag = 'MATCST' or SemanticTag = 'COGS_3PAR' or SemanticTag = 'ICO_COST' )
+                and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                  and BillableControl = ' ' )
+               then ( InvertedVarblAmountInDspCrcy )
+             else null end as fcopa_varmaterialcost_dspcrcy preserving type )           as VarblMaterialCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'VarblCOGSAmtInDspCrcy'
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Activity Cost - Variable'
+  @UI.textArrangement: #TEXT_LAST
+  cast( $projection.VarblPersonnelTmeCostInDspCrcy
+        + $projection.VarblMachineTimeCostInDspCrcy as fcopa_varactivitycost_dspcrcy ) as VarblActivityCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'VarblActivityCostInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Personnel Time Cost - Variable'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'COGS_PERT'
+              and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' )
+                and BillableControl = ' ' )
+             then ( InvertedVarblAmountInDspCrcy )
+       else null end as fcopa_varperstimecost_dspcrcy )                               as VarblPersonnelTmeCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'VarblActivityCostInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Machine Time Cost - Variable'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( ( SemanticTag = 'COGS_SUTI' or SemanticTag = 'COGS_MATI' )
+                and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                  and BillableControl = ' ' )
+               then ( InvertedVarblAmountInDspCrcy )
+       else null end as fcopa_varmchntimecost_dspcrcy )                               as VarblMachineTimeCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'VarblCOGSAmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Overhead Cost - Variable'
+  @UI.textArrangement: #TEXT_LAST
+  cast(  case when ( ( SemanticTag = 'COGS_OMAT' or SemanticTag = 'COGS_OPRO' or SemanticTag = 'OVH_CSTADM' )
+                 and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                   and BillableControl = ' ' )
+                then ( InvertedVarblAmountInDspCrcy )
+       else null end as fcopa_varoverheadcost_dspcrcy )                               as VarblOverheadCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'VarblCOGSAmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Travel Cost'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'TRAVELCST'
+              and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                and BillableControl = ' ' )
+             then ( InvertedAmountInDisplayCrcy )
+       else null end as fins_trav_cost_dspcrcy preserving type  )                     as TravelCostAmountInDspCurrency,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'VarblCOGSAmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Purchased Material Cost'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( ( SemanticTag = 'LIC_COST' or SemanticTag = 'SERVICECST' or SemanticTag = 'HRD_COST' )
+                and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18' )
+                  and BillableControl = ' ' )
+               then ( InvertedAmountInDisplayCrcy )
+        else null end as fcopa_purchasedmatcost_dspcrcy preserving type )             as PurchasedMaterialCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'VarblCOGSAmtInDspCrcy'
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Other Cost - Variable'
+  @UI.textArrangement: #TEXT_LAST
+  cast ( $projection.VarblCOGSAmtInDspCrcy
+          - $projection.VarblMaterialCostInDspCrcy
+          - $projection.VarblActivityCostInDspCrcy
+          - $projection.VarblOverheadCostInDspCrcy
+          - $projection.TravelCostAmountInDspCurrency
+          - $projection.PurchasedMaterialCostInDspCrcy as fcopa_varothercost_dspcrcy ) as VarblOtherCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'ContrbnMargin2AmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Cost of Goods Sold - Fixed'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'RECO_COS'
+              and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                and BillableControl = ' ' )
+             then ( InvertedFixedAmtInDspCrcy )
+             else null end as fins_cogs_fixed_dsprcy preserving type )                as FxdCOGSAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'FxdCOGSAmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Fixed Material Cost'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( ( SemanticTag = 'MATCST' or SemanticTag = 'COGS_3PAR' or SemanticTag = 'ICO_COST' )
+                and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                  and BillableControl = ' ' )
+               then ( InvertedFixedAmtInDspCrcy )
+             else null end as fcopa_fxdmaterialcost_dspcrcy preserving type )           as FixedMaterialCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'FxdCOGSAmtInDspCrcy'
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Activity Cost - Fixed'
+  @UI.textArrangement: #TEXT_LAST
+  cast( $projection.FxdPersCostsAmtInDspCurrency
+        + $projection.FxdMchnTmeAmtInDisplayCurrency as fcopa_fxdactivitycost_dspcrcy )   as FixedActivityCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'FixedActivityCostInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Personnel Time Cost - Fixed'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'COGS_PERT'
+              and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                and BillableControl = ' ' )
+             then ( InvertedFixedAmtInDspCrcy )
+       else null end as fcopa_fxdperstimecost_dspcrcy preserving type )               as FxdPersCostsAmtInDspCurrency,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'FixedActivityCostInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Machine Time Cost - Fixed'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( ( SemanticTag = 'COGS_SUTI' or SemanticTag = 'COGS_MATI' )
+                and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                  and BillableControl = ' ' )
+               then ( InvertedFixedAmtInDspCrcy )
+       else null end as fcopa_fxdmchntimecost_dspcrcy preserving type )               as FxdMchnTmeAmtInDisplayCurrency,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'FxdCOGSAmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Overhead Cost - Fixed'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( ( SemanticTag = 'COGS_OMAT' or SemanticTag = 'COGS_OPRO' or SemanticTag = 'OVH_CSTADM' )
+                 and ( FunctionalArea = 'YB25' or FunctionalArea = 'YB18'  )
+                   and BillableControl = ' ' )
+                then ( InvertedFixedAmtInDspCrcy  )
+        else null end as fcopa_fxdoverheadcost_dspcrcy preserving type )            as FixedOverheadCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'FxdCOGSAmtInDspCrcy'
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Other Cost - Fixed'
+  @UI.textArrangement: #TEXT_LAST
+  cast ( $projection.FxdCOGSAmtInDspCrcy
+         - $projection.FixedMaterialCostInDspCrcy
+         - $projection.FixedActivityCostInDspCrcy
+         - $projection.FixedOverheadCostInDspCrcy as  fcopa_fixedothercost_dspcrcy )   as FixedOtherCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.elementHierarchy.parent: 'ContrbnMargin2AmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Cost of Goods Sold - Price Differences'
+  @UI.textArrangement: #TEXT_LAST
+  cast( $projection.InptPrVarcAmtInDspCrcy
+        + $projection.InptQtyVarcAmtInDspCrcy
+        + $projection.RsceUsgeVarcAmtInDspCrcy
+        + $projection.LotSizeVarcAmtInDspCrcy
+        + $projection.OutpPrVarcAmtInDspCrcy
+        + $projection.InptRmngVarcAmtInDspCrcy as fins_price_differences_dspcrcy )            as PriceDiffAmtInDisplayCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PriceDiffAmtInDisplayCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Input Price Variance'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT'
+              and SubLedgerAcctLineItemType = '09130' )
+     then ( InvertedAmountInDisplayCrcy )
+     else null end as fis_inptprvarcamt_in_dspcrcy preserving type )                 as InptPrVarcAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PriceDiffAmtInDisplayCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Input Quantity Variance'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT'
+                and SubLedgerAcctLineItemType = '09131' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fis_inptqtyvarcamt_in_dspcrcy preserving type )                as InptQtyVarcAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PriceDiffAmtInDisplayCrcy'
+  @EndUserText.label : 'Resource Usage Variance'
+  @Semantics.amount.currencyCode: 'Currency'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT'
+                and SubLedgerAcctLineItemType = '09132' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fis_rsceusgevarcamt_in_dspcrcy preserving type )               as RsceUsgeVarcAmtInDspCrcy,
+
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PriceDiffAmtInDisplayCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Lot Size Variance'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT'
+                and SubLedgerAcctLineItemType = '09139' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fis_lotsizevarcamt_in_dspcrcy preserving type )                as LotSizeVarcAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PriceDiffAmtInDisplayCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Output Price Variance'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT'
+                and SubLedgerAcctLineItemType = '09138' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fis_outpprvarcamt_in_dspcrcy preserving type )                 as OutpPrVarcAmtInDspCrcy,
+
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PriceDiffAmtInDisplayCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Input Remaining Variance'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT'
+                and SubLedgerAcctLineItemType = '09140' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fis_inptrmngvarcamt_in_dspcrcy preserving type )               as InptRmngVarcAmtInDspCrcy,
+
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'ContrbnMargin2AmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Warranty Cost'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT'
+                and BillableControl <> ' ' )
+               then ( InvertedAmountInDisplayCrcy )
+       else null end as fcopa_warrantycost_dspcrcy preserving type )                  as WarrantyCostInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.elementHierarchy.parent: 'ContrbnMargin3AmtInDspCrcy'
+  @EndUserText.label : 'Contribution Margin II'
+  @UI.textArrangement: #TEXT_LAST
+  cast ( $projection.ContrbnMargin1AmtInDspCrcy
+         + $projection.FxdCOGSAmtInDspCrcy
+         + $projection.PriceDiffAmtInDisplayCrcy
+         + $projection.WarrantyCostInDspCrcy as fins_contribution_margin_ii )     as ContrbnMargin2AmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'ContrbnMargin3AmtInDspCrcy'
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Periodic Cost'
+  @UI.textArrangement: #TEXT_LAST
+  cast( $projection.MarketingOvhdAmtInDspCrcy
+        + $projection.SalesOverheadAmtInDspCrcy
+        + $projection.AdminOverheadAmtInDspCrcy
+        + $projection.RnDOverheadAmtInDspCrcy as fcopa_periodiccost_dspcrcy )          as PeriodicCostAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PeriodicCostAmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Marketing Overhead'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT' 
+                and FunctionalArea = 'YB35' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fins_marketing_overhead preserving type )                    as MarketingOvhdAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PeriodicCostAmtInDspCrcy'
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Sales Overhead'
+  @UI.textArrangement: #TEXT_LAST  
+  cast( case when ( SemanticTag = 'PL_RESULT' 
+                and FunctionalArea = 'YB30' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fins_sales_overhead preserving type )                        as SalesOverheadAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PeriodicCostAmtInDspCrcy' 
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Administration Overhead'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT' 
+                and FunctionalArea = 'YB40' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fins_administration_overhead preserving type )               as AdminOverheadAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.elementHierarchy.parent: 'PeriodicCostAmtInDspCrcy'  
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Research and Development Overhead'
+  @UI.textArrangement: #TEXT_LAST
+  cast( case when ( SemanticTag = 'PL_RESULT' 
+                and FunctionalArea = 'YB50' )
+       then ( InvertedAmountInDisplayCrcy )
+       else null end as fins_rnd_overhead_dspcrcy preserving type )             as RnDOverheadAmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @Aggregation.default: #FORMULA
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label : 'Contribution Margin III'
+  @UI.textArrangement: #TEXT_LAST
+  cast ( $projection.ContrbnMargin2AmtInDspCrcy
+         + $projection.PeriodicCostAmtInDspCrcy as fins_contribution_margin_iii )    as ContrbnMargin3AmtInDspCrcy,
+
+  @AnalyticsDetails.query.axis:  #ROWS
+  @AnalyticsDetails.query.hidden: false
+  @EndUserText.label: 'Billed Quantity'
+  @Semantics.quantity.unitOfMeasure: 'CostSourceUnit'
+  @AnalyticsDetails.query.reverseSign: true
+  cast( case when SemanticTag = 'BILL_REV' then ValuationQuantity else null end   as abap.dec(23,2) )    as BilledValnQtyInCostSourceUnit,
+                   
+  _DocumentStore
+
+}
+where
+      GLAccountHierarchy = $parameters.P_GLAccountHierarchy
+  and( LedgerFiscalYear  = $parameters.P_LedgerFiscalYear
+    or LedgerFiscalYear  = $parameters.P_PreviousLedgerFiscalYear )
+  and Ledger             = $parameters.P_Ledger
+  and CompanyCode        = $parameters.P_CompanyCode
+//  and CurrencyField      = $parameters.P_CurrencyField
+```

@@ -5,11 +5,20 @@ app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTOMERRETURNRATEQRY')/$value
 semantic_en: This CDS view provides customer return rates by various dimensions such as sales organization, customer group, sold-to-party, product, and time period, among others. The customer return rates are either value-based or quantity-based. The CDS view provides the prerequisites for answering the following business questions: What items have been returned? What are the top return reasons? How many items have been returned? What is the returned value? Are there customers with a very high return rate? Are there products with a very high return rate? How do customer return rates change over time?
+semantic_vi: Customer Return Rate - Query — CDS view tiêu dùng dựa trên I_CustomerReturnRateCube.
 keywords:
   - Customer Return Rate - Query
+  - customer
+  - return
+  - rate
+  - query
+  - sales
+  - document
+  - item
+  - category
 tags:
   - SD
   - bo:businesspartner
@@ -20,7 +29,6 @@ tags:
   - product
   - SD-ANA
   - SD-ANA-2CL
-  - metadata-only
 ---
 # C_CUSTOMERRETURNRATEQRY
 
@@ -32,14 +40,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTOMERRETURNRATEQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTOMERRETURNRATEQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
-| `SalesDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `SalesDocument` | ✓ | |  |  | `CHAR(10)` | Sales Document |
+| `SalesDocumentItem` | ✓ | |  |  | `NUMC(6)` | Sales Document Item |
 | `CustomerReturn` |  | |  |  | `CHAR(10)` | Customer Return |
 | `CustomerReturnItem` |  | |  |  | `NUMC(6)` | Customer Return Item |
 | `SDDocumentCategory` |  | |  |  | `CHAR(4)` | SD Document Category |
@@ -93,6 +101,198 @@ tags:
 | `IncomingSalesOrdersQuantity` |  | |  |  | `QUAN(15)` | Incoming Sales Orders Quantity |
 | `IncomingCustReturnsNetAmtInDC` |  | |  |  | `CURR(19)` | Net Amount of Customer Return Items in Display Currency |
 | `IncomingCustReturnsQuantity` |  | |  |  | `QUAN(15)` | Customer Return Item Quantity |
-| `CustomerReturnAmountReturnRate` |  | |  |  | `DEC(7)` | Return Rate (Value-Based) |
-| `CustomerReturnQtyReturnRate` |  | |  |  | `DEC(7)` | Return Rate (Quantity-Based) |
+| `CustomerReturnAmountReturnRate` |  | |  | `cast (1 as sd_amt_bsd_return_rate)` | `DEC(7)` | Return Rate (Value-Based) |
+| `CustomerReturnQtyReturnRate` |  | |  | `cast (1 as sd_qty_bsd_return_rate)` | `DEC(7)` | Return Rate (Quantity-Based) |
 | `NumberOfIncomingCustRetItems` |  | |  |  | `INT4(10)` | Number of Items in Customer Returns |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTOMERRETURNRATEQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTOMERRETURNRATEQRY')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Customer Return Rate - Query'
+@AbapCatalog: {
+  sqlViewName: 'CSDCUSTRETRATEQ',
+  compiler.compareFilter: true,
+  preserveKey: true
+}
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ObjectModel.usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XL
+}
+@VDM.viewType: #CONSUMPTION
+@Analytics.query:true
+@ObjectModel.supportedCapabilities: 
+   [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@OData.publish: true
+@Metadata.ignorePropagatedAnnotations: true
+
+define view C_CustomerReturnRateQry
+  with parameters
+    @Consumption.defaultValue: 'M'
+    @Consumption.valueHelpDefinition: [{
+      entity: {
+        name:'I_ExchangeRateType',
+        element:'ExchangeRateType'
+      }
+    }]      
+    P_ExchangeRateType : kurst,
+    @Consumption.valueHelpDefinition: [{
+       entity:{name: 'I_Currency', element :'Currency'}
+    }]
+    P_DisplayCurrency  : vdm_v_display_currency
+  as select from I_CustomerReturnRateCube(P_ExchangeRateType:$parameters.P_ExchangeRateType, P_DisplayCurrency: $parameters.P_DisplayCurrency) as CRRC
+{
+      // Key
+  key SalesDocument,
+  key SalesDocumentItem,
+
+      CustomerReturn,
+      CustomerReturnItem,
+
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDDocumentCategory,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDocumentType,
+
+      // Date
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      @Semantics.calendar.yearMonth
+      CreationDateYearMonth,
+      @Semantics.calendar.yearQuarter
+      CreationDateYearQuarter,
+      @Semantics.calendar.year
+      CreationDateYear,
+
+      // Reference
+      ReferenceSDDocument,
+      ReferenceSDDocumentItem,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ReferenceSDDocumentCategory,
+
+      // Sales Organization
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrganization,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DistributionChannel,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrganizationDivision,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOffice,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @Analytics.internalName: #LOCAL
+      PartnerCompany,
+      
+      // Partner
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShipToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PayerParty, 
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup5,
+
+      // Product
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Product,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProductGroup,
+      MaterialByCustomer,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup5,
+      ProductHierarchyNode,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Plant,
+
+      // Others
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ReturnReason,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillingCompanyCode,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDistrict,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProfitCenter,
+      CostCenter,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ControllingArea,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusinessArea,
+
+      @Semantics.currencyCode: true
+      @UI.hidden: true
+      DisplayCurrency,
+      @Semantics.unitOfMeasure: true
+      BaseUnit,
+      @Semantics.unitOfMeasure: true
+      ReferenceSlsDocItmBaseUnit,
+
+      // KPI: Reference Amount & Quantity
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      ReferenceSlsDocItmNetAmtInDC,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ReferenceSlsDocItmBaseUnit'
+      ReferenceSlsDocItmQuantity,
+
+      // KPI: Incoming Orders         
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      IncomingSalesOrdersNetAmtInDC,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      IncomingSalesOrdersQuantity,
+
+      // KPI: Incoming Returns
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      IncomingCustReturnsNetAmtInDC,
+                    
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      IncomingCustReturnsQuantity,
+
+      // KPI: Customer Returns Rate (Value based)
+      @EndUserText.label: 'Return Rate (Value-Based)'
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails.query.formula: 'NDIV0( $projection.IncomingCustReturnsNetAmtInDC / $projection.IncomingSalesOrdersNetAmtInDC )'
+      cast (1 as sd_amt_bsd_return_rate)  as CustomerReturnAmountReturnRate,
+
+      // KPI: Customer Returns Rate (quantity based)
+      @EndUserText.label: 'Return Rate (Quantity-Based)'
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails.query.formula: 'NDIV0( $projection.IncomingCustReturnsQuantity / $projection.IncomingSalesOrdersQuantity )'
+      cast (1 as sd_qty_bsd_return_rate)  as CustomerReturnQtyReturnRate,
+
+      @DefaultAggregation: #SUM
+      NumberOfIncomingCustRetItems
+}
+```

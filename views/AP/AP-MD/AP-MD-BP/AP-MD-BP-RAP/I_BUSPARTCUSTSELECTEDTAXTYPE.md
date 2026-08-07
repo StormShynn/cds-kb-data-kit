@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BPTaxType` | ✓ | |  | `taxtype` |  |  |
+| `BPTaxType` | ✓ | |  | `taxtype` | `CHAR(4)` | Tax Number Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

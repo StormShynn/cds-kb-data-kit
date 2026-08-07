@@ -33,7 +33,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartnerType` | ✓ | |  | `bpkind` |  |  |
+| `BusinessPartnerType` | ✓ | |  | `bpkind` | `CHAR(4)` | Business Partner Type |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -33,10 +33,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartnerCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as bu_type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `BusinessPartnerCategoryText` |  | |  | `ddtext` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `BusinessPartnerCategory` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as bu_type )` | `CHAR(1)` | Business Partner Category |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `BusinessPartnerCategoryText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_CategoryValueHelp` | | ✓ | | | | |
 
 ## Associations
