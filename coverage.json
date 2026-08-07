@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-07T16:11:02.188Z",
+  "generatedAt": "2026-08-07T16:15:43.645Z",
   "hubContainer": "SAPS4HANACloud",
   "hubTotal": 8864,
   "localTotal": 10616,
   "matchedTotal": 8822,
   "missingTotal": 42,
-  "metadataOnlyTotal": 3156,
-  "fullTotal": 5666,
+  "metadataOnlyTotal": 3154,
+  "fullTotal": 5668,
   "extraTotal": 1794,
   "rows": [
     {
@@ -1949,7 +1949,7 @@
       "createdAt": 1721818821633,
       "modifiedAt": 1784095852918,
       "inLocal": true,
-      "status": "metadata-only",
+      "status": "full",
       "lastFetchedAt": "2026-08-07T16:00:38.146Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ACTLPLNSRVCMARGITEMQUERY')/$value",
       "devExtStatus": "Not Released",
@@ -1977,7 +1977,7 @@
       "createdAt": 1721824966650,
       "modifiedAt": 1784095482780,
       "inLocal": true,
-      "status": "metadata-only",
+      "status": "full",
       "lastFetchedAt": "2026-08-07T16:00:38.294Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ANALYZESUPLRUTILZNQRY')/$value",
       "devExtStatus": "Not Released",
