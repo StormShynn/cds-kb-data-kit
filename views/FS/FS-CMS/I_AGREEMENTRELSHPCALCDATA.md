@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTRELSHPCALCDATA
-description: Calculation Results for CAG Relations
+description: "Calculation Results for CAG Relations"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTRELSHPCALCDATA')/$value
-semantic_en: Calculation Results for CAG Relations
+semantic_en: "Calculation Results for CAG Relations"
 tags:
   - FS
   - component:FS-CMS

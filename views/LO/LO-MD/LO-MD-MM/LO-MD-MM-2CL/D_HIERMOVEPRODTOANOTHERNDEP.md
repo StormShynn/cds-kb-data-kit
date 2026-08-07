@@ -1,6 +1,6 @@
 ---
 name: D_HIERMOVEPRODTOANOTHERNDEP
-description: D Hiermoveprodtoanotherndep
+description: "D Hiermoveprodtoanotherndep"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

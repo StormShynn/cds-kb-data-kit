@@ -1,13 +1,13 @@
 ---
 name: C_BANKPROFILEQUERY
-description: This CDS view provides the prerequisites for answering the following business questions: How many banks are there in the system for each bank rating? What are the top banks with most bank accounts? What are the top banks used in most company codes?
+description: "This CDS view provides the prerequisites for answering the following business questions: How many banks are there in the system for each bank rating? What are the top banks with most bank accounts? What are the top banks used in most company codes?"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BANKPROFILEQUERY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How many banks are there in the system for each bank rating? What are the top banks with most bank accounts? What are the top banks used in most company codes?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How many banks are there in the system for each bank rating? What are the top banks with most bank accounts? What are the top banks used in most company codes?"
 tags:
   - FIN
   - account

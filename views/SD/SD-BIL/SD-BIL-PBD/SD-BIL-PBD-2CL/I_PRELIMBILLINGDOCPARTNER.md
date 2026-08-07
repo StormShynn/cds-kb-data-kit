@@ -1,6 +1,6 @@
 ---
 name: I_PRELIMBILLINGDOCPARTNER
-description: PRELIMBilling DocumentPARTNER
+description: "PRELIMBilling DocumentPARTNER"
 app_component: SD-BIL-PBD-2CL
 software_component: SAPSCORE
 release_state: released

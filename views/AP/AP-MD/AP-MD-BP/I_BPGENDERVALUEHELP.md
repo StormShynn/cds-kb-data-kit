@@ -1,6 +1,6 @@
 ---
 name: I_BPGENDERVALUEHELP
-description: Bpgendervaluehelp
+description: "Bpgendervaluehelp"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

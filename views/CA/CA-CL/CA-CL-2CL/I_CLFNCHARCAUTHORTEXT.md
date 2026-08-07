@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCHARCAUTHORTEXT
-description: Clfncharcauthortext
+description: "Clfncharcauthortext"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

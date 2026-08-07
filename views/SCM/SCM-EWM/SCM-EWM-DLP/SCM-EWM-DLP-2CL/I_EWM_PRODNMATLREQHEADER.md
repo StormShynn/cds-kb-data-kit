@@ -1,6 +1,6 @@
 ---
 name: I_EWM_PRODNMATLREQHEADER
-description: Ewm Prodnmatlreqheader
+description: "Ewm Prodnmatlreqheader"
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CHGMSTROBJECTMGMTRECORDTP_2
-description: Chgmstrobjectmgmtrecordtp 2
+description: "Chgmstrobjectmgmtrecordtp 2"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

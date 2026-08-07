@@ -1,13 +1,13 @@
 ---
 name: I_INSURCONTRCANCLNREASON
-description: Contr Cancellation Reason in Insur Plcy
+description: "Contr Cancellation Reason in Insur Plcy"
 app_component: FS-PM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURCONTRCANCLNREASON')/$value
-semantic_en: Contr Cancellation Reason in Insur Plcy
+semantic_en: "Contr Cancellation Reason in Insur Plcy"
 tags:
   - FS
   - bo:salesorder

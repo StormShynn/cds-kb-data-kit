@@ -1,6 +1,6 @@
 ---
 name: I_PRJBLGELMENTRDOCBILLGSTATUS
-description: Prjblgelmentrdocbillgstatus
+description: "Prjblgelmentrdocbillgstatus"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

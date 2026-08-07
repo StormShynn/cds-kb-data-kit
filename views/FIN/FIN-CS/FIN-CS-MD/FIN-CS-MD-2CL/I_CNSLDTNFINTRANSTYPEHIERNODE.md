@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFINTRANSTYPEHIERNODE
-description: Cnsldtnfintranstypehiernode
+description: "Cnsldtnfintranstypehiernode"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

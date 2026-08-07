@@ -1,30 +1,30 @@
 ---
 name: C_PCCACTLTGTCOSTQRY
-description: This CDS view retrieves actual and target cost details of product cost collectors (order category 05) in your specified ledger, fiscal year periods, and currency. This CDS view provides the data to answer the following business questions: What are the event-based product cost collectors for my specified periods? What are the products and plants for the product cost collectors? What are the following values for each product cost collector? Target cost (credit and debit) Actual cost (credit and debit) Actual input quantity and output quantity What are the G/L accounts used for posting the values? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view retrieves actual and target cost details of product cost collectors (order category 05) in your specified ledger, fiscal year periods, and currency. This CDS view provides the data to answer the following business questions: What are the event-based product cost collectors for my specified periods? What are the products and plants for the product cost collectors? What are the following values for each product cost collector? Target cost (credit and debit) Actual cost (credit and debit) Actual input quantity and output quantity What are the G/L accounts used for posting the values? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-PC-OBJ-PER-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PCCACTLTGTCOSTQRY')/$value
-semantic_en: This CDS view retrieves actual and target cost details of product cost collectors (order category 05) in your specified ledger, fiscal year periods, and currency. This CDS view provides the data to answer the following business questions: What are the event-based product cost collectors for my specified periods? What are the products and plants for the product cost collectors? What are the following values for each product cost collector? Target cost (credit and debit) Actual cost (credit and debit) Actual input quantity and output quantity What are the G/L accounts used for posting the values? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Actual and Target Costs for PCC - Query — CDS view tiêu dùng dựa trên Actual and Target Costs for PCC - Query.
+semantic_en: "This CDS view retrieves actual and target cost details of product cost collectors (order category 05) in your specified ledger, fiscal year periods, and currency. This CDS view provides the data to answer the following business questions: What are the event-based product cost collectors for my specified periods? What are the products and plants for the product cost collectors? What are the following values for each product cost collector? Target cost (credit and debit) Actual cost (credit and debit) Actual input quantity and output quantity What are the G/L accounts used for posting the values? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Actual and Target Costs for PCC - Query — CDS view tiêu dùng dựa trên Actual and Target Costs for PCC - Query."
 keywords:
-  - actual
-  - and
-  - target
-  - costs
-  - for
-  - pcc
-  - query
-  - ledger
-  - order
-  - company
-  - code
-  - controlling
-  - area
-  - work
-  - center
+  - "actual"
+  - "and"
+  - "target"
+  - "costs"
+  - "for"
+  - "pcc"
+  - "query"
+  - "ledger"
+  - "order"
+  - "company"
+  - "code"
+  - "controlling"
+  - "area"
+  - "work"
+  - "center"
 tags:
   - CO
   - account

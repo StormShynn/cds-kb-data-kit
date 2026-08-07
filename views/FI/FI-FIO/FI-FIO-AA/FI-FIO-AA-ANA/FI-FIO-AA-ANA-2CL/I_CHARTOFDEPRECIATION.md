@@ -1,6 +1,6 @@
 ---
 name: I_CHARTOFDEPRECIATION
-description: Chartofdepreciation
+description: "Chartofdepreciation"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

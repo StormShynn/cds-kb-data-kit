@@ -1,6 +1,6 @@
 ---
 name: D_MAINTORDMAINWORKCOMPLETEP
-description: D Maintordmainworkcompletep
+description: "D Maintordmainworkcompletep"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

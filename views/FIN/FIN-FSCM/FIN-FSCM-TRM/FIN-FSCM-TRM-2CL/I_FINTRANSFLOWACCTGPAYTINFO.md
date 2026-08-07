@@ -1,6 +1,6 @@
 ---
 name: I_FINTRANSFLOWACCTGPAYTINFO
-description: Fintransflowacctgpaytinfo
+description: "Fintransflowacctgpaytinfo"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

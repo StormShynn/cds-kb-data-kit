@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTBILLINGCATEGORYTEXT
-description: Projectbillingcategorytext
+description: "Projectbillingcategorytext"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

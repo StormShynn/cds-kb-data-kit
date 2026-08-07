@@ -1,6 +1,6 @@
 ---
 name: I_KANBANCALCSMOOTHINGTYPETXT
-description: Kanbancalcsmoothingtypetxt
+description: "Kanbancalcsmoothingtypetxt"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

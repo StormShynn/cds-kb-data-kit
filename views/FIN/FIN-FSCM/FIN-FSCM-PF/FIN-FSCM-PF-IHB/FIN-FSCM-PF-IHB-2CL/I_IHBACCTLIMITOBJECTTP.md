@@ -1,6 +1,6 @@
 ---
 name: I_IHBACCTLIMITOBJECTTP
-description: Ihbacctlimitobjecttp
+description: "Ihbacctlimitobjecttp"
 app_component: FIN-FSCM-PF-IHB-2CL
 software_component: SAPSCORE
 release_state: released

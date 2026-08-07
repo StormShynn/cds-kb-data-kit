@@ -1,24 +1,24 @@
 ---
 name: ZI_PARAMETER.DDLS
-description: parameter
+description: "parameter"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/zzvikesh/ar2bkp_cust_attr/blob/9565b611d46041eb023988b772d3a1965dd3038f/src/zi_parameter.ddls.asddls
-semantic_en: parameter — CDS view.
-semantic_vi: parameter — CDS view dựa trên parameter.
+semantic_en: "parameter — CDS view."
+semantic_vi: "parameter — CDS view dựa trên parameter."
 keywords:
-  - parameter
-  - customer
-  - sales
-  - organization
-  - distribution
-  - channel
-  - division
-  - shipping
-  - point
+  - "parameter"
+  - "customer"
+  - "sales"
+  - "organization"
+  - "distribution"
+  - "channel"
+  - "division"
+  - "shipping"
+  - "point"
 ---
 # ZI_PARAMETER.DDLS
 

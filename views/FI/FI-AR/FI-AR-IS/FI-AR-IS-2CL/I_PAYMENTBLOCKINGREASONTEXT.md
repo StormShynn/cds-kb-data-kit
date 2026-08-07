@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTBLOCKINGREASONTEXT
-description: Paymentblockingreasontext
+description: "Paymentblockingreasontext"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

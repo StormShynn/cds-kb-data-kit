@@ -1,6 +1,6 @@
 ---
 name: VDMDEMOCDS_VIEWENTITY
-description: Vdmdemocds Viewentity
+description: "Vdmdemocds Viewentity"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

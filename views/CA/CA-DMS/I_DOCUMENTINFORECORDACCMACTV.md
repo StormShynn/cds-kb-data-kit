@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDACCMACTV
-description: Documentinforecordaccmactv
+description: "Documentinforecordaccmactv"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

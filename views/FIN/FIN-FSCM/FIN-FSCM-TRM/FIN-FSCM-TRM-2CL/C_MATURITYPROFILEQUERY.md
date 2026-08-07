@@ -1,13 +1,13 @@
 ---
 name: C_MATURITYPROFILEQUERY
-description: This CDS view provides the prerequisites for answering the following business questions: What is the maturity profile for financial transactions in the money market and security areas? What is the maturity profile for financial transactions before interest rate swap transactions are made on the key date? What is the maturity profile for financial transactions after interest rate swap transactions are made on the key date? What is the maturity profile for financial transactions before interest rate swap transactions are made for a specific currency? What is the maturity profile for financial transactions after interest rate swap transactions are made for a specific currency?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the maturity profile for financial transactions in the money market and security areas? What is the maturity profile for financial transactions before interest rate swap transactions are made on the key date? What is the maturity profile for financial transactions after interest rate swap transactions are made on the key date? What is the maturity profile for financial transactions before interest rate swap transactions are made for a specific currency? What is the maturity profile for financial transactions after interest rate swap transactions are made for a specific currency?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATURITYPROFILEQUERY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the maturity profile for financial transactions in the money market and security areas? What is the maturity profile for financial transactions before interest rate swap transactions are made on the key date? What is the maturity profile for financial transactions after interest rate swap transactions are made on the key date? What is the maturity profile for financial transactions before interest rate swap transactions are made for a specific currency? What is the maturity profile for financial transactions after interest rate swap transactions are made for a specific currency?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the maturity profile for financial transactions in the money market and security areas? What is the maturity profile for financial transactions before interest rate swap transactions are made on the key date? What is the maturity profile for financial transactions after interest rate swap transactions are made on the key date? What is the maturity profile for financial transactions before interest rate swap transactions are made for a specific currency? What is the maturity profile for financial transactions after interest rate swap transactions are made for a specific currency?"
 tags:
   - FIN
   - bo:companycode

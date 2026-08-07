@@ -1,28 +1,28 @@
 ---
 name: C_FINSTMNTCOMPARISON
-description: Balance Sheet/Income Statement - Multidimensional
+description: "Balance Sheet/Income Statement - Multidimensional"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FINSTMNTCOMPARISON')/$value
-semantic_en: Balance Sheet/Income Statement - Multidimensional
-semantic_vi: Balance Sheet/Income Statement - Multidimensional — CDS view tiêu dùng dựa trên I_FinancialStatementCube.
+semantic_en: "Balance Sheet/Income Statement - Multidimensional"
+semantic_vi: "Balance Sheet/Income Statement - Multidimensional — CDS view tiêu dùng dựa trên I_FinancialStatementCube."
 keywords:
-  - balance
-  - sheet/income
-  - statement
-  - multidimensional
-  - financial
-  - leaf
-  - item
-  - company
-  - code
-  - account
-  - profit
-  - center
-  - segment
+  - "balance"
+  - "sheet/income"
+  - "statement"
+  - "multidimensional"
+  - "financial"
+  - "leaf"
+  - "item"
+  - "company"
+  - "code"
+  - "account"
+  - "profit"
+  - "center"
+  - "segment"
 tags:
   - FI
   - bo:companycode

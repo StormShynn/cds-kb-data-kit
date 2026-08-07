@@ -1,6 +1,6 @@
 ---
 name: I_WBSBILLOFMATERIALHEADERDEX
-description: WBSBill of MaterialHEADERDEX
+description: "WBSBill of MaterialHEADERDEX"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

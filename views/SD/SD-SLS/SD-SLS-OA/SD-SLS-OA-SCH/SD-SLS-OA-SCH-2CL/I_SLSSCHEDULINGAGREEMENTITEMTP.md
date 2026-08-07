@@ -1,6 +1,6 @@
 ---
 name: I_SLSSCHEDULINGAGREEMENTITEMTP
-description: Slsschedulingagreementitemtp
+description: "Slsschedulingagreementitemtp"
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

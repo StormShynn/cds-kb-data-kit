@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECGRANTBUDGETALERT
-description: Grant Budget Alert Analysis
+description: "Grant Budget Alert Analysis"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGRANTBUDGETALERT')/$value
-semantic_en: Grant Budget Alert Analysis
+semantic_en: "Grant Budget Alert Analysis"
 tags:
   - PSM
   - budget

@@ -1,13 +1,13 @@
 ---
 name: I_SECONDCMMDTYGROUP
-description: Second Customer Specific Commodity Group
+description: "Second Customer Specific Commodity Group"
 app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SECONDCMMDTYGROUP')/$value
-semantic_en: Second Customer Specific Commodity Group
+semantic_en: "Second Customer Specific Commodity Group"
 tags:
   - FIN
   - bo:businesspartner

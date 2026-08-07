@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRSETTLMTLOCKTEXT
-description: This CDS view exposes fixed values of the field Settlement Lock Status. The following fixed values have been maintained: ' ' Not Locked X Locked
+description: "This CDS view exposes fixed values of the field Settlement Lock Status. The following fixed values have been maintained: ' ' Not Locked X Locked"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSETTLMTLOCKTEXT')/$value
-semantic_en: This CDS view exposes fixed values of the field Settlement Lock Status. The following fixed values have been maintained: ' ' Not Locked X Locked
+semantic_en: "This CDS view exposes fixed values of the field Settlement Lock Status. The following fixed values have been maintained: ' ' Not Locked X Locked"
 tags:
   - LO
   - bo:companycode

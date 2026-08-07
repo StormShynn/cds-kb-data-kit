@@ -1,13 +1,13 @@
 ---
 name: I_CREDITLIMITREQUESTCUBE
-description: Credit Limit Request - Cube
+description: "Credit Limit Request - Cube"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITLIMITREQUESTCUBE')/$value
-semantic_en: Credit Limit Request - Cube
+semantic_en: "Credit Limit Request - Cube"
 tags:
   - FIN
   - component:FIN-FSCM-CR-2CL

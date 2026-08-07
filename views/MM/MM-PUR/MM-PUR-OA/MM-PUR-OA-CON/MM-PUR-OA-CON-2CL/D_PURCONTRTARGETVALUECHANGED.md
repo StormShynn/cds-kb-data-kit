@@ -1,6 +1,6 @@
 ---
 name: D_PURCONTRTARGETVALUECHANGED
-description: D Purcontrtargetvaluechanged
+description: "D Purcontrtargetvaluechanged"
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

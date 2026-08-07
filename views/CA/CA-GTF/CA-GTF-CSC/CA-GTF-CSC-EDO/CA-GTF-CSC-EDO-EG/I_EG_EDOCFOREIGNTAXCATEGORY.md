@@ -1,6 +1,6 @@
 ---
 name: I_EG_EDOCFOREIGNTAXCATEGORY
-description: EG Edocforeigntaxcategory
+description: "EG Edocforeigntaxcategory"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

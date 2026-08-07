@@ -1,6 +1,6 @@
 ---
 name: I_BR_SDUSAGEPURPOSEVALUEHELP
-description: BR Sdusagepurposevaluehelp
+description: "BR Sdusagepurposevaluehelp"
 app_component: FI-LOC-TXS
 software_component: SAPSCORE
 release_state: released

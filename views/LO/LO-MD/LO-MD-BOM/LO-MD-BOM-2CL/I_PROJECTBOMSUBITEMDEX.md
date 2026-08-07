@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTBOMSUBITEMDEX
-description: Projectbomsubitemdex
+description: "Projectbomsubitemdex"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

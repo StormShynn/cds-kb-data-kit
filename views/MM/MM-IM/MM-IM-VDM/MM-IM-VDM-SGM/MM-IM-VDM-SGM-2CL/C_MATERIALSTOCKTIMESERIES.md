@@ -1,24 +1,24 @@
 ---
 name: C_MATERIALSTOCKTIMESERIES
-description: This CDS view provides the prerequisites for answering the following business question: How does the stock quantity evolve over a certain time period such as a day, week, or month?
+description: "This CDS view provides the prerequisites for answering the following business question: How does the stock quantity evolve over a certain time period such as a day, week, or month?"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATERIALSTOCKTIMESERIES')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: How does the stock quantity evolve over a certain time period such as a day, week, or month?
-semantic_vi: Material stock for periods by type — CDS view tiêu dùng (transactional data) dựa trên I_MaterialStockTimeSeries.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: How does the stock quantity evolve over a certain time period such as a day, week, or month?"
+semantic_vi: "Material stock for periods by type — CDS view tiêu dùng (transactional data) dựa trên I_MaterialStockTimeSeries."
 keywords:
-  - material
-  - stock
-  - for
-  - periods
-  - type
-  - period
-  - date
-  - year
-  - plant
+  - "material"
+  - "stock"
+  - "for"
+  - "periods"
+  - "type"
+  - "period"
+  - "date"
+  - "year"
+  - "plant"
 tags:
   - MM
   - bo:inventory

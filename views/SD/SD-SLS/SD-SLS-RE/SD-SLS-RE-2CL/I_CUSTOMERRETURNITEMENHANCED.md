@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERRETURNITEMENHANCED
-description: Customerreturnitemenhanced
+description: "Customerreturnitemenhanced"
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CHARCATTRIBSELECTEDCODESET
-description: Charcattribselectedcodeset
+description: "Charcattribselectedcodeset"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

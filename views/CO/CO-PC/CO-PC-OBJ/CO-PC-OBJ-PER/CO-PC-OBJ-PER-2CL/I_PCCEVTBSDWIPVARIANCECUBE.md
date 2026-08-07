@@ -1,6 +1,6 @@
 ---
 name: I_PCCEVTBSDWIPVARIANCECUBE
-description: Pccevtbsdwipvariancecube
+description: "Pccevtbsdwipvariancecube"
 app_component: CO-PC-OBJ-PER-2CL
 software_component: SAPSCORE
 release_state: released

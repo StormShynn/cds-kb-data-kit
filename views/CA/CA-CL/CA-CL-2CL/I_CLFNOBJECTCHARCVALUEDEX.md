@@ -1,6 +1,6 @@
 ---
 name: I_CLFNOBJECTCHARCVALUEDEX
-description: Clfnobjectcharcvaluedex
+description: "Clfnobjectcharcvaluedex"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

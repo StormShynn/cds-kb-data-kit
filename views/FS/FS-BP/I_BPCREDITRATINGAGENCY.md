@@ -1,6 +1,6 @@
 ---
 name: I_BPCREDITRATINGAGENCY
-description: Bpcreditratingagency
+description: "Bpcreditratingagency"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

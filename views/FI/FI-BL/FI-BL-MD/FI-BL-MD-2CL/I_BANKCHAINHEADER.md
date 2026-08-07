@@ -1,27 +1,27 @@
 ---
 name: I_BANKCHAINHEADER
-description: Bank Chain per Business Partner Account
+description: "Bank Chain per Business Partner Account"
 app_component: FI-BL-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKCHAINHEADER')/$value
-semantic_en: Bank Chain per Business Partner Account
-semantic_vi: Bank Chain per Business Partner Account — CDS view giao diện dựa trên Bank Chain per Business Partner Account.
+semantic_en: "Bank Chain per Business Partner Account"
+semantic_vi: "Bank Chain per Business Partner Account — CDS view giao diện dựa trên Bank Chain per Business Partner Account."
 keywords:
-  - bank
-  - chain
-  - per
-  - business
-  - partner
-  - account
-  - country
-  - recipient
-  - acct
-  - number
-  - currency
-  - sender
+  - "bank"
+  - "chain"
+  - "per"
+  - "business"
+  - "partner"
+  - "account"
+  - "country"
+  - "recipient"
+  - "acct"
+  - "number"
+  - "currency"
+  - "sender"
 tags:
   - FI
   - account

@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALADMINORGUNITATTRIB
-description: Collateral Administrative OrgUnit Attr
+description: "Collateral Administrative OrgUnit Attr"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALADMINORGUNITATTRIB')/$value
-semantic_en: Collateral Administrative OrgUnit Attr
+semantic_en: "Collateral Administrative OrgUnit Attr"
 tags:
   - FS
   - component:FS-CMS

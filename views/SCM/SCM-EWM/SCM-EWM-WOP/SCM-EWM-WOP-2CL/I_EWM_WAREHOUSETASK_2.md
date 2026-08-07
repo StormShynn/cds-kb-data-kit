@@ -1,6 +1,6 @@
 ---
 name: I_EWM_WAREHOUSETASK_2
-description: Ewm Warehousetask 2
+description: "Ewm Warehousetask 2"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

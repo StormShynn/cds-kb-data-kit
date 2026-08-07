@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDPARTNERADDRESSTP
-description: Bussolnordpartneraddresstp
+description: "Bussolnordpartneraddresstp"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

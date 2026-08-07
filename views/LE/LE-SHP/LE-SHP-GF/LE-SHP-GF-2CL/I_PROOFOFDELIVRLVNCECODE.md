@@ -1,6 +1,6 @@
 ---
 name: I_PROOFOFDELIVRLVNCECODE
-description: Proofofdelivrlvncecode
+description: "Proofofdelivrlvncecode"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

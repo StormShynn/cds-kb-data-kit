@@ -1,15 +1,15 @@
 ---
 name: I_TRDGCONTRSCHEDULELINE
-description: Trading Contract Schedule Line
+description: "Trading Contract Schedule Line"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRSCHEDULELINE')/$value
-semantic_en: Trading Contract Schedule Line
+semantic_en: "Trading Contract Schedule Line"
 keywords:
-  - Trading Contract Schedule Line
+  - "Trading Contract Schedule Line"
 tags:
   - LO
   - component:LO-GT

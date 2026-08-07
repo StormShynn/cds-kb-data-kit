@@ -1,6 +1,6 @@
 ---
 name: I_STOCKTRANSPORTORDERNOTETP
-description: Stocktransportordernotetp
+description: "Stocktransportordernotetp"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

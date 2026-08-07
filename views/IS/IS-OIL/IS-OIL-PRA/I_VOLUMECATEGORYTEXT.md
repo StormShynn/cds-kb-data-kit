@@ -1,13 +1,13 @@
 ---
 name: I_VOLUMECATEGORYTEXT
-description: Volume Category Name - Text
+description: "Volume Category Name - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VOLUMECATEGORYTEXT')/$value
-semantic_en: Volume Category Name - Text
+semantic_en: "Volume Category Name - Text"
 tags:
   - IS
   - component:IS-OIL-PRA

@@ -1,13 +1,13 @@
 ---
 name: I_SECURITIESACCTOBJMSTRDATA
-description: Securities Account Object Details
+description: "Securities Account Object Details"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SECURITIESACCTOBJMSTRDATA')/$value
-semantic_en: Securities Account Object Details
+semantic_en: "Securities Account Object Details"
 tags:
   - FS
   - account

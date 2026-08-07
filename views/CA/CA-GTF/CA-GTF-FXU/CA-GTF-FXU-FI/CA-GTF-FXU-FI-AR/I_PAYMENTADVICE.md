@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTADVICE
-description: Paymentadvice
+description: "Paymentadvice"
 app_component: CA-GTF-FXU-FI-AR
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: C_PAYFNWORKFLOWAPPROVERNOTIF
-description: Flex Workflow Approval Notification
+description: "Flex Workflow Approval Notification"
 app_component: FIN-FSCM-PF2-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PAYFNWORKFLOWAPPROVERNOTIF')/$value
-semantic_en: Flex Workflow Approval Notification
+semantic_en: "Flex Workflow Approval Notification"
 tags:
   - FIN
   - bo:companycode

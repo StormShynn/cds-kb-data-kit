@@ -1,15 +1,15 @@
 ---
 name: I_BUDGETPERIOD
-description: This CDS view provides the master data for budget periods, which can be used to answer the following business questions: What is the frequency for a budget period? Which funds are assigned to a budget period?
+description: "This CDS view provides the master data for budget periods, which can be used to answer the following business questions: What is the frequency for a budget period? Which funds are assigned to a budget period?"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETPERIOD')/$value
-semantic_en: This CDS view provides the master data for budget periods, which can be used to answer the following business questions: What is the frequency for a budget period? Which funds are assigned to a budget period?
+semantic_en: "This CDS view provides the master data for budget periods, which can be used to answer the following business questions: What is the frequency for a budget period? Which funds are assigned to a budget period?"
 keywords:
-  - Budget Period
+  - "Budget Period"
 tags:
   - PSM
   - bo:businesspartner

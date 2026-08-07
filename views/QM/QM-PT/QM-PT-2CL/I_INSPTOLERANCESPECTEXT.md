@@ -1,6 +1,6 @@
 ---
 name: I_INSPTOLERANCESPECTEXT
-description: Insptolerancespectext
+description: "Insptolerancespectext"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_EG_EDOCITEMCODEMATERIALGROUP
-description: EG EDOCITEMCODEMaterial Group
+description: "EG EDOCITEMCODEMaterial Group"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

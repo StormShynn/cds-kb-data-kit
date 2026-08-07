@@ -1,13 +1,13 @@
 ---
 name: I_MAINTENANCEORDERSTATUS
-description: Maintenance Order Status
+description: "Maintenance Order Status"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTENANCEORDERSTATUS')/$value
-semantic_en: Maintenance Order Status
+semantic_en: "Maintenance Order Status"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

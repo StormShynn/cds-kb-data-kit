@@ -1,13 +1,13 @@
 ---
 name: I_PERSONWORKAGRMTJOBTEXT
-description: This view provides the prerequisites for answering the following business questions: What is the short and long name of Job?
+description: "This view provides the prerequisites for answering the following business questions: What is the short and long name of Job?"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSONWORKAGRMTJOBTEXT')/$value
-semantic_en: This view provides the prerequisites for answering the following business questions: What is the short and long name of Job?
+semantic_en: "This view provides the prerequisites for answering the following business questions: What is the short and long name of Job?"
 tags:
   - CA
   - bo:plant

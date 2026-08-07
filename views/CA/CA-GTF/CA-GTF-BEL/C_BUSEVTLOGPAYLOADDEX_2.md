@@ -1,13 +1,13 @@
 ---
 name: C_BUSEVTLOGPAYLOADDEX_2
-description: This CDS view provides a subset of event payload details. This CDS view provides the answer to these business questions: What are the event qualifiers? What are the field changes? The CDS view supports #EXTRACTION_DATA_SOURCE.
+description: "This CDS view provides a subset of event payload details. This CDS view provides the answer to these business questions: What are the event qualifiers? What are the field changes? The CDS view supports #EXTRACTION_DATA_SOURCE."
 app_component: CA-GTF-BEL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGPAYLOADDEX_2')/$value
-semantic_en: This CDS view provides a subset of event payload details. This CDS view provides the answer to these business questions: What are the event qualifiers? What are the field changes? The CDS view supports #EXTRACTION_DATA_SOURCE.
+semantic_en: "This CDS view provides a subset of event payload details. This CDS view provides the answer to these business questions: What are the event qualifiers? What are the field changes? The CDS view supports #EXTRACTION_DATA_SOURCE."
 tags:
   - CA
   - bo:companycode

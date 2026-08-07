@@ -1,6 +1,6 @@
 ---
 name: I_HIERRUNTIMERPRSTNNODE
-description: Hierruntimerprstnnode
+description: "Hierruntimerprstnnode"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released

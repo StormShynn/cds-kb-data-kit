@@ -1,13 +1,13 @@
 ---
 name: I_PRIORPERIODADJUSTMENTREASONT
-description: Prior Period Adjustment Reason - Text
+description: "Prior Period Adjustment Reason - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIORPERIODADJUSTMENTREASONT')/$value
-semantic_en: Prior Period Adjustment Reason - Text
+semantic_en: "Prior Period Adjustment Reason - Text"
 tags:
   - IS
   - bo:salesorder

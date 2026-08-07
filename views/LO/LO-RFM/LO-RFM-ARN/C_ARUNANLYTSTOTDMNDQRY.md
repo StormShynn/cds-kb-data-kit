@@ -1,28 +1,28 @@
 ---
 name: C_ARUNANLYTSTOTDMNDQRY
-description: Consumption View for Total Demand
+description: "Consumption View for Total Demand"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSTOTDMNDQRY')/$value
-semantic_en: Consumption View for Total Demand
-semantic_vi: Consumption View for Total Demand — CDS view tiêu dùng dựa trên I_ARunAnlytsTotDmndCube.
+semantic_en: "Consumption View for Total Demand"
+semantic_vi: "Consumption View for Total Demand — CDS view tiêu dùng dựa trên I_ARunAnlytsTotDmndCube."
 keywords:
-  - consumption
-  - for
-  - total
-  - demand
-  - requirement
-  - document
-  - number
-  - item
-  - requested
-  - date
-  - product
-  - availability
-  - type
+  - "consumption"
+  - "for"
+  - "total"
+  - "demand"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "requested"
+  - "date"
+  - "product"
+  - "availability"
+  - "type"
 tags:
   - LO
   - component:LO-RFM-ARN

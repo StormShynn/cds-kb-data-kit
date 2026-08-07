@@ -1,29 +1,29 @@
 ---
 name: C_GLACCOUNTFLOWKPI
-description: KPIs based on G/L Account Flow
+description: "KPIs based on G/L Account Flow"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTFLOWKPI')/$value
-semantic_en: KPIs based on G/L Account Flow
-semantic_vi: KPIs based on G/L Account Flow — CDS view tiêu dùng dựa trên I_GLAccountFlowSemTag.
+semantic_en: "KPIs based on G/L Account Flow"
+semantic_vi: "KPIs based on G/L Account Flow — CDS view tiêu dùng dựa trên I_GLAccountFlowSemTag."
 keywords:
-  - kpis
-  - based
-  - g/l
-  - account
-  - flow
-  - hierarchy
-  - ledger
-  - company
-  - code
-  - planning
-  - category
-  - fiscal
-  - year
-  - period
+  - "kpis"
+  - "based"
+  - "g/l"
+  - "account"
+  - "flow"
+  - "hierarchy"
+  - "ledger"
+  - "company"
+  - "code"
+  - "planning"
+  - "category"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - FI
   - account

@@ -1,17 +1,17 @@
 ---
 name: I_MARGANLYSPRODANDSRVCCUBE
-description: Product and Service Margins - Cube
+description: "Product and Service Margins - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MARGANLYSPRODANDSRVCCUBE')/$value
-semantic_en: Product and Service Margins - Cube
+semantic_en: "Product and Service Margins - Cube"
 keywords:
-  - Product and Service Margins - Cube
-  - Product and Service Margins - Cube
-  - Product and Service Margins - Cube
+  - "Product and Service Margins - Cube"
+  - "Product and Service Margins - Cube"
+  - "Product and Service Margins - Cube"
 tags:
   - CO
   - bo:material

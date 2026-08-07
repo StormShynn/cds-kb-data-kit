@@ -1,6 +1,6 @@
 ---
 name: D_PCLGSDCGETDNGRSGOODSEDIINFOP
-description: D Pclgsdcgetdngrsgoodsediinfop
+description: "D Pclgsdcgetdngrsgoodsediinfop"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

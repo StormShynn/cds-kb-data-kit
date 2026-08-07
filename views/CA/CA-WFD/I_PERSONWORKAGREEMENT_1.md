@@ -1,6 +1,6 @@
 ---
 name: I_PERSONWORKAGREEMENT_1
-description: Personworkagreement 1
+description: "Personworkagreement 1"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released

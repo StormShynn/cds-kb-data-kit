@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDEVENTISRECALLEDTEXT
-description: Transpordeventisrecalledtext
+description: "Transpordeventisrecalledtext"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

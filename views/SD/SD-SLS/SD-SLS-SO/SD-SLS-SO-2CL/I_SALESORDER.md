@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDER
-description: Sales Order
+description: "Sales Order"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

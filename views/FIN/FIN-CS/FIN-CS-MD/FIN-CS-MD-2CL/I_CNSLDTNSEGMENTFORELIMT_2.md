@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSEGMENTFORELIMT_2
-description: Cnsldtnsegmentforelimt 2
+description: "Cnsldtnsegmentforelimt 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

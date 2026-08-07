@@ -1,6 +1,6 @@
 ---
 name: I_FIXEDASSETNATLCLFN
-description: Fixed AssetNATLCLFN
+description: "Fixed AssetNATLCLFN"
 app_component: FI-LOC-AA
 software_component: SAPSCORE
 release_state: released

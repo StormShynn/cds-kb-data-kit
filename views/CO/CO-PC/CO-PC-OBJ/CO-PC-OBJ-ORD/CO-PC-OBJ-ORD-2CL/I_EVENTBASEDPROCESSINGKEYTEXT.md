@@ -1,6 +1,6 @@
 ---
 name: I_EVENTBASEDPROCESSINGKEYTEXT
-description: Eventbasedprocessingkeytext
+description: "Eventbasedprocessingkeytext"
 app_component: CO-PC-OBJ-ORD-2CL
 software_component: SAPSCORE
 release_state: released

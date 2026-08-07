@@ -1,6 +1,6 @@
 ---
 name: I_SLCMGMTSTRATEGICIMPRTNCTEXT
-description: Slcmgmtstrategicimprtnctext
+description: "Slcmgmtstrategicimprtnctext"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

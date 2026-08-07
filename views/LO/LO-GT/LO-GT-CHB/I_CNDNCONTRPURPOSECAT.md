@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRPURPOSECAT
-description: This CDS view exposes fixed values of the field Condition Contract Purpose. The following fixed values have been maintained: '' Nothing P PMR-Integration C CRM-Integration
+description: "This CDS view exposes fixed values of the field Condition Contract Purpose. The following fixed values have been maintained: '' Nothing P PMR-Integration C CRM-Integration"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPURPOSECAT')/$value
-semantic_en: This CDS view exposes fixed values of the field Condition Contract Purpose. The following fixed values have been maintained: '' Nothing P PMR-Integration C CRM-Integration
+semantic_en: "This CDS view exposes fixed values of the field Condition Contract Purpose. The following fixed values have been maintained: '' Nothing P PMR-Integration C CRM-Integration"
 tags:
   - LO
   - bo:companycode

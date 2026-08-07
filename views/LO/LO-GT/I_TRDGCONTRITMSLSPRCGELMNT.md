@@ -1,13 +1,13 @@
 ---
 name: I_TRDGCONTRITMSLSPRCGELMNT
-description: Sales Pricing Element of Trdg Contr Item
+description: "Sales Pricing Element of Trdg Contr Item"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITMSLSPRCGELMNT')/$value
-semantic_en: Sales Pricing Element of Trdg Contr Item
+semantic_en: "Sales Pricing Element of Trdg Contr Item"
 tags:
   - LO
   - bo:pricingcondition

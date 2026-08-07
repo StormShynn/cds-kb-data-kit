@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDRSCEASSGMTDISTRTP
-description: Projdmndrsceassgmtdistrtp
+description: "Projdmndrsceassgmtdistrtp"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

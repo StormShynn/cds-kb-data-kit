@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPMEANSOFTRANSPORT
-description: Transpmeansoftransport
+description: "Transpmeansoftransport"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

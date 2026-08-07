@@ -1,13 +1,13 @@
 ---
 name: I_CRDTMBUSINESSPARTNERVH
-description: Business Partner in Credit Mgmt
+description: "Business Partner in Credit Mgmt"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRDTMBUSINESSPARTNERVH')/$value
-semantic_en: Business Partner in Credit Mgmt
+semantic_en: "Business Partner in Credit Mgmt"
 tags:
   - FIN
   - component:FIN-FSCM-CR-2CL

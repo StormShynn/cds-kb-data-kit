@@ -1,13 +1,13 @@
 ---
 name: I_PRODUCTSTRUCTUREVARIANTTEXT
-description: Product Structure Variant - Text
+description: "Product Structure Variant - Text"
 app_component: PLM-WUI-OBJ-PSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTSTRUCTUREVARIANTTEXT')/$value
-semantic_en: Product Structure Variant - Text
+semantic_en: "Product Structure Variant - Text"
 tags:
   - PLM
   - bo:material

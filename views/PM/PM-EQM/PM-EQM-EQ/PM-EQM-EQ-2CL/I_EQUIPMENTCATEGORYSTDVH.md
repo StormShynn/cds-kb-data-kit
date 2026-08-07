@@ -1,6 +1,6 @@
 ---
 name: I_EQUIPMENTCATEGORYSTDVH
-description: Equipmentcategorystdvh
+description: "Equipmentcategorystdvh"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

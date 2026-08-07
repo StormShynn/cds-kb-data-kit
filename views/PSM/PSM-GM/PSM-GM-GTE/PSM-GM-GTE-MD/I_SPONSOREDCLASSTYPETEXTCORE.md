@@ -1,13 +1,13 @@
 ---
 name: I_SPONSOREDCLASSTYPETEXTCORE
-description: Sponsored Class Type - Text
+description: "Sponsored Class Type - Text"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SPONSOREDCLASSTYPETEXTCORE')/$value
-semantic_en: Sponsored Class Type - Text
+semantic_en: "Sponsored Class Type - Text"
 tags:
   - PSM
   - bo:purchaseorder

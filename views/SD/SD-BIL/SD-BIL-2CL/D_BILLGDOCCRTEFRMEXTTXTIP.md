@@ -1,6 +1,6 @@
 ---
 name: D_BILLGDOCCRTEFRMEXTTXTIP
-description: D Billgdoccrtefrmexttxtip
+description: "D Billgdoccrtefrmexttxtip"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

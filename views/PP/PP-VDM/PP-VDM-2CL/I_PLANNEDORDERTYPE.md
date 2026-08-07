@@ -1,6 +1,6 @@
 ---
 name: I_PLANNEDORDERTYPE
-description: Planned OrderTYPE
+description: "Planned OrderTYPE"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

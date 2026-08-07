@@ -1,6 +1,6 @@
 ---
 name: I_SPONSOREDCLASSCORETEXT
-description: Sponsoredclasscoretext
+description: "Sponsoredclasscoretext"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released

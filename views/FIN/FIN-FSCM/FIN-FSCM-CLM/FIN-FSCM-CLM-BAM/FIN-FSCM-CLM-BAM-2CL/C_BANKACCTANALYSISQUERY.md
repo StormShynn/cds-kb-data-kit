@@ -1,13 +1,13 @@
 ---
 name: C_BANKACCTANALYSISQUERY
-description: This CDS view retrieves the number of rated banks and the number of bank accounts of certain bank groups. This CDS view provides the prerequisites for answering the following business questions: What is the total number of rated banks? What is the total number of bank accounts in a certain bank group?
+description: "This CDS view retrieves the number of rated banks and the number of bank accounts of certain bank groups. This CDS view provides the prerequisites for answering the following business questions: What is the total number of rated banks? What is the total number of bank accounts in a certain bank group?"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BANKACCTANALYSISQUERY')/$value
-semantic_en: This CDS view retrieves the number of rated banks and the number of bank accounts of certain bank groups. This CDS view provides the prerequisites for answering the following business questions: What is the total number of rated banks? What is the total number of bank accounts in a certain bank group?
+semantic_en: "This CDS view retrieves the number of rated banks and the number of bank accounts of certain bank groups. This CDS view provides the prerequisites for answering the following business questions: What is the total number of rated banks? What is the total number of bank accounts in a certain bank group?"
 tags:
   - FIN
   - account

@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNLEDGER
-description: This CDS view provides access to the master data for a consolidation ledger. This CDS view provides the prerequisites for answering the following business questions: What is the description of my consolidation ledges? What is the group currency for a certain consolidation ledger?
+description: "This CDS view provides access to the master data for a consolidation ledger. This CDS view provides the prerequisites for answering the following business questions: What is the description of my consolidation ledges? What is the group currency for a certain consolidation ledger?"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNLEDGER')/$value
-semantic_en: This CDS view provides access to the master data for a consolidation ledger. This CDS view provides the prerequisites for answering the following business questions: What is the description of my consolidation ledges? What is the group currency for a certain consolidation ledger?
+semantic_en: "This CDS view provides access to the master data for a consolidation ledger. This CDS view provides the prerequisites for answering the following business questions: What is the description of my consolidation ledges? What is the group currency for a certain consolidation ledger?"
 tags:
   - FIN
   - bo:businesspartner

@@ -1,6 +1,6 @@
 ---
 name: I_FINCS_HOME_FSITEM_MAPPING
-description: Fincs Home Fsitem Mapping
+description: "Fincs Home Fsitem Mapping"
 app_component: FIN-CS-2CL
 software_component: SAPPCORE_H
 release_state: released

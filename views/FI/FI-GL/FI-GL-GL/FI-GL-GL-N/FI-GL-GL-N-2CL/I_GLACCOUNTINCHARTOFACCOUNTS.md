@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTINCHARTOFACCOUNTS
-description: GL AccountINCHARTOFACCOUNTS
+description: "GL AccountINCHARTOFACCOUNTS"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

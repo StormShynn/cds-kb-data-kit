@@ -1,6 +1,6 @@
 ---
 name: VDMDEMOCDS_I_CODE
-description: Vdmdemocds I Code
+description: "Vdmdemocds I Code"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

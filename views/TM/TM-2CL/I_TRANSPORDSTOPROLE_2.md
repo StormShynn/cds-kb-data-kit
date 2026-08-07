@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDSTOPROLE_2
-description: Transpordstoprole 2
+description: "Transpordstoprole 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

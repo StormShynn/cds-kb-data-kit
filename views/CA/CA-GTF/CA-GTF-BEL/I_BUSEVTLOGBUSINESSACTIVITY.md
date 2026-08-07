@@ -1,6 +1,6 @@
 ---
 name: I_BUSEVTLOGBUSINESSACTIVITY
-description: Busevtlogbusinessactivity
+description: "Busevtlogbusinessactivity"
 app_component: CA-GTF-BEL
 software_component: SAP_BASIS
 release_state: released

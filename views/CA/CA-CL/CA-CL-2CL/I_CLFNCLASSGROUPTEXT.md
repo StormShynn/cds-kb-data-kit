@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCLASSGROUPTEXT
-description: Clfnclassgrouptext
+description: "Clfnclassgrouptext"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

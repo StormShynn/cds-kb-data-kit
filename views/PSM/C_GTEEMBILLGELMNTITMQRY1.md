@@ -1,13 +1,13 @@
 ---
 name: C_GTEEMBILLGELMNTITMQRY1
-description: Grantee Mgmt Billing Element Item - Query
+description: "Grantee Mgmt Billing Element Item - Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GTEEMBILLGELMNTITMQRY1')/$value
-semantic_en: Grantee Mgmt Billing Element Item - Query
+semantic_en: "Grantee Mgmt Billing Element Item - Query"
 tags:
   - PSM
   - billing

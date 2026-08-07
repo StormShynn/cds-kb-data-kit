@@ -1,6 +1,6 @@
 ---
 name: I_RAPOSTINGCATEGORY
-description: Rapostingcategory
+description: "Rapostingcategory"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

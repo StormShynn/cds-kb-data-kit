@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNTSKDOCTYPEDTACOLL
-description: Cnsldtntskdoctypedtacoll
+description: "Cnsldtntskdoctypedtacoll"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

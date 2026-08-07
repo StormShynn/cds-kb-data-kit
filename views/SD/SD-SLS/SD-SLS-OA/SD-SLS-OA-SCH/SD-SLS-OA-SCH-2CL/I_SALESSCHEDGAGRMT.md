@@ -1,6 +1,6 @@
 ---
 name: I_SALESSCHEDGAGRMT
-description: Salesschedgagrmt
+description: "Salesschedgagrmt"
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

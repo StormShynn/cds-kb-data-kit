@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTRBLCOMPONENTTYPE
-description: Agreement Rbl Component Type
+description: "Agreement Rbl Component Type"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTRBLCOMPONENTTYPE')/$value
-semantic_en: Agreement Rbl Component Type
+semantic_en: "Agreement Rbl Component Type"
 tags:
   - FS
   - bo:purchaseorder

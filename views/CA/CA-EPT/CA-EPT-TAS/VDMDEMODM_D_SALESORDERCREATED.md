@@ -1,6 +1,6 @@
 ---
 name: VDMDEMODM_D_SALESORDERCREATED
-description: Vdmdemodm D Sales OrderCREATED
+description: "Vdmdemodm D Sales OrderCREATED"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

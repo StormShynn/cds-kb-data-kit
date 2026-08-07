@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCETASKLISTTP_2
-description: Maintenancetasklisttp 2
+description: "Maintenancetasklisttp 2"
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

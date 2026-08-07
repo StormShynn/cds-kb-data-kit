@@ -1,6 +1,6 @@
 ---
 name: I_REVALUATIONLINEARTYPETEXT
-description: Revaluationlineartypetext
+description: "Revaluationlineartypetext"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

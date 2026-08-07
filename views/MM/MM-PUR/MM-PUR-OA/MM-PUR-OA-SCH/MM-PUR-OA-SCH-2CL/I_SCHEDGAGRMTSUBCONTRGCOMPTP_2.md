@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTSUBCONTRGCOMPTP_2
-description: Schedgagrmtsubcontrgcomptp 2
+description: "Schedgagrmtsubcontrgcomptp 2"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: HOME_TEST_V3_NO_SERVICE
-description: Home Test V 3 NO Service
+description: "Home Test V 3 NO Service"
 app_component: CA-GTF-ANL
 software_component: SAPPCORE_H
 release_state: released

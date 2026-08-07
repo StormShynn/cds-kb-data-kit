@@ -1,6 +1,6 @@
 ---
 name: I_IAMBUSINESSROLEPRICECATEGORY
-description: Iambusinessrolepricecategory
+description: "Iambusinessrolepricecategory"
 app_component: BC-SRV-APS-IAM
 software_component: SAP_CLOUD
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_EWM_STORAGEBINACCTYPETEXT
-description: Ewm Storagebinacctypetext
+description: "Ewm Storagebinacctypetext"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

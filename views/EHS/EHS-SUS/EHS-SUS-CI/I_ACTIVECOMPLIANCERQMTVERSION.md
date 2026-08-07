@@ -1,6 +1,6 @@
 ---
 name: I_ACTIVECOMPLIANCERQMTVERSION
-description: Activecompliancerqmtversion
+description: "Activecompliancerqmtversion"
 app_component: EHS-SUS-CI
 software_component: SAPSCORE
 release_state: released

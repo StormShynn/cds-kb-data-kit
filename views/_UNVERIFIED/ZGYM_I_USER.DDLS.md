@@ -1,19 +1,19 @@
 ---
 name: ZGYM_I_USER.DDLS
-description: cds view for users
+description: "cds view for users"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/alexliviustefanescu/gym_project/blob/15db5e59ef0c4ca4cad80d40a6816953e13a3e8d/src/zgym_i_user.ddls.asddls
-semantic_en: cds view for users — CDS view based on zgym_user.
-semantic_vi: cds view for users — CDS view dựa trên zgym_user.
+semantic_en: "cds view for users — CDS view based on zgym_user."
+semantic_vi: "cds view for users — CDS view dựa trên zgym_user."
 keywords:
-  - for
-  - users
-  - role
-  - name
+  - "for"
+  - "users"
+  - "role"
+  - "name"
 ---
 # ZGYM_I_USER.DDLS
 

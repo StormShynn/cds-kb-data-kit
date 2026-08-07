@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDLASTUPDTSOURCETXT
-description: Projdmndlastupdtsourcetxt
+description: "Projdmndlastupdtsourcetxt"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

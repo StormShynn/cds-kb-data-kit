@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALVALUATIONTYPEVH
-description: Materialvaluationtypevh
+description: "Materialvaluationtypevh"
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released

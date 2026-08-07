@@ -1,13 +1,13 @@
 ---
 name: I_LOANCONTRNTCADJMTTYPE
-description: Loan Contract Notice Adjustment Type
+description: "Loan Contract Notice Adjustment Type"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRNTCADJMTTYPE')/$value
-semantic_en: Loan Contract Notice Adjustment Type
+semantic_en: "Loan Contract Notice Adjustment Type"
 tags:
   - FS
   - component:FS-CML

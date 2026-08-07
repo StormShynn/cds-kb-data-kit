@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRBILLGDOCPARTNER
-description: Supplier Billing Document Partner
+description: "Supplier Billing Document Partner"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRBILLGDOCPARTNER')/$value
-semantic_en: Supplier Billing Document Partner
+semantic_en: "Supplier Billing Document Partner"
 tags:
   - LO
   - billing

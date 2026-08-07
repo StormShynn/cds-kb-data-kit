@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERCATEGORYTEXT
-description: Work CenterCATEGORYTEXT
+description: "Work CenterCATEGORYTEXT"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

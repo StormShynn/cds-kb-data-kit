@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTINDUSTRYKEY
-description: Business PartnerINDUSTRYKEY
+description: "Business PartnerINDUSTRYKEY"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDERITEMTP_2
-description: Purchase OrderITEMTP 2
+description: "Purchase OrderITEMTP 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

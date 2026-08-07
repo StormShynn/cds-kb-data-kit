@@ -1,6 +1,6 @@
 ---
 name: D_SALESORDERDELETED
-description: D Sales OrderDELETED
+description: "D Sales OrderDELETED"
 app_component: SD-SLS-GF-BET-2CL
 software_component: SAPSCORE
 release_state: released

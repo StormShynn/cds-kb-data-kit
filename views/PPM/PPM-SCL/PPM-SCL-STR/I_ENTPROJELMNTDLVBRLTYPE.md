@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJELMNTDLVBRLTYPE
-description: Entprojelmntdlvbrltype
+description: "Entprojelmntdlvbrltype"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

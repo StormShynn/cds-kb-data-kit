@@ -1,6 +1,6 @@
 ---
 name: C_CNTRLSUPLRCONFWRKFLWAPRVEML
-description: Cntrlsuplrconfwrkflwaprveml
+description: "Cntrlsuplrconfwrkflwaprveml"
 app_component: MM-PUR-HUB-CSC-2CL
 software_component: SAPSCORE
 release_state: released

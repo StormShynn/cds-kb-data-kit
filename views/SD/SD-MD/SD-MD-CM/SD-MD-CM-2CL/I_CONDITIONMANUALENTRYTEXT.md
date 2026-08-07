@@ -1,6 +1,6 @@
 ---
 name: I_CONDITIONMANUALENTRYTEXT
-description: Conditionmanualentrytext
+description: "Conditionmanualentrytext"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

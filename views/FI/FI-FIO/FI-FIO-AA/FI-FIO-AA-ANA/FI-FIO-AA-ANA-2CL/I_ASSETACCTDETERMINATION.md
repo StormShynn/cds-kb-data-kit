@@ -1,6 +1,6 @@
 ---
 name: I_ASSETACCTDETERMINATION
-description: Assetacctdetermination
+description: "Assetacctdetermination"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

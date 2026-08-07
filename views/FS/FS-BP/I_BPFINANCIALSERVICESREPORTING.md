@@ -1,6 +1,6 @@
 ---
 name: I_BPFINANCIALSERVICESREPORTING
-description: Bpfinancialservicesreporting
+description: "Bpfinancialservicesreporting"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

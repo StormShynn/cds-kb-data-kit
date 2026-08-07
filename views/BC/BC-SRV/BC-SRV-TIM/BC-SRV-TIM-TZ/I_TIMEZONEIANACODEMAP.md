@@ -1,6 +1,6 @@
 ---
 name: I_TIMEZONEIANACODEMAP
-description: Timezoneianacodemap
+description: "Timezoneianacodemap"
 app_component: BC-SRV-TIM-TZ
 software_component: SAP_BASIS
 release_state: released

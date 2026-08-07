@@ -1,6 +1,6 @@
 ---
 name: D_SUPPLYDEMANDITEMGETITEMR
-description: D Supplydemanditemgetitemr
+description: "D Supplydemanditemgetitemr"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

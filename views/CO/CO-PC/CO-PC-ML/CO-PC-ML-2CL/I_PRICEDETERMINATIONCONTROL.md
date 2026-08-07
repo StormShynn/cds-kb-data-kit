@@ -1,6 +1,6 @@
 ---
 name: I_PRICEDETERMINATIONCONTROL
-description: Pricedeterminationcontrol
+description: "Pricedeterminationcontrol"
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released

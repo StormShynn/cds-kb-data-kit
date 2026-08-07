@@ -1,6 +1,6 @@
 ---
 name: I_ASSETVALUATIONSCRAPAMOUNT
-description: Assetvaluationscrapamount
+description: "Assetvaluationscrapamount"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

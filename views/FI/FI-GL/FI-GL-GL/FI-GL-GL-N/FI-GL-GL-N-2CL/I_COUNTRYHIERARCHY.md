@@ -1,6 +1,6 @@
 ---
 name: I_COUNTRYHIERARCHY
-description: Countryhierarchy
+description: "Countryhierarchy"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: C_CHMLCMPLNCINFODEX
-description: Chemical Compliance Info
+description: "Chemical Compliance Info"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHMLCMPLNCINFODEX')/$value
-semantic_en: Chemical Compliance Info
+semantic_en: "Chemical Compliance Info"
 tags:
   - EHS
   - component:EHS-SUS-FND-PC

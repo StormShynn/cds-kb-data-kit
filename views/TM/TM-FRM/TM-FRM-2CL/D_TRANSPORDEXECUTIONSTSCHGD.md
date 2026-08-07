@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDEXECUTIONSTSCHGD
-description: D Transpordexecutionstschgd
+description: "D Transpordexecutionstschgd"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

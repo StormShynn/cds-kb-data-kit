@@ -1,6 +1,6 @@
 ---
 name: I_TRSYCTPTYLIMITTYPE
-description: Trsyctptylimittype
+description: "Trsyctptylimittype"
 app_component: FIN-FSCM-TRM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FINANCIALACCOUNTTYPESTDVH
-description: Financialaccounttypestdvh
+description: "Financialaccounttypestdvh"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

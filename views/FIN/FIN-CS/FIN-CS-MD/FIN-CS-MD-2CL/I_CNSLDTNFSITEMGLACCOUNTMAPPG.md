@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFSITEMGLACCOUNTMAPPG
-description: Cnsldtnfsitemgl AccountMAPPG
+description: "Cnsldtnfsitemgl AccountMAPPG"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

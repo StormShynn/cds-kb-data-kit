@@ -1,6 +1,6 @@
 ---
 name: I_FREIGHTUNITBUSINESSPARTNERTP
-description: FREIGHTUNITBusiness PartnerTP
+description: "FREIGHTUNITBusiness PartnerTP"
 app_component: TM-PLN-FU-2CL
 software_component: SAPSCORE
 release_state: released

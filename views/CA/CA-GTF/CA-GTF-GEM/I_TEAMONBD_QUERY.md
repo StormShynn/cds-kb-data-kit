@@ -1,6 +1,6 @@
 ---
 name: I_TEAMONBD_QUERY
-description: Teamonbd (Query)
+description: "Teamonbd (Query)"
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released

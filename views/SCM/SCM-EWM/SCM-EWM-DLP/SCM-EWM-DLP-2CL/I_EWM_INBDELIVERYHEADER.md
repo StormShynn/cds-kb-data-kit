@@ -1,6 +1,6 @@
 ---
 name: I_EWM_INBDELIVERYHEADER
-description: Ewm Inbdeliveryheader
+description: "Ewm Inbdeliveryheader"
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released

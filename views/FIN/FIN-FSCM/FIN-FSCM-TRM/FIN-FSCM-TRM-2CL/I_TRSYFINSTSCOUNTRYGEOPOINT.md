@@ -1,6 +1,6 @@
 ---
 name: I_TRSYFINSTSCOUNTRYGEOPOINT
-description: Trsyfinstscountrygeopoint
+description: "Trsyfinstscountrygeopoint"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

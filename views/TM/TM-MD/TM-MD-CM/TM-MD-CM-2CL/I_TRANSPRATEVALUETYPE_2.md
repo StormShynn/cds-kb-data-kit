@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPRATEVALUETYPE_2
-description: Transpratevaluetype 2
+description: "Transpratevaluetype 2"
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

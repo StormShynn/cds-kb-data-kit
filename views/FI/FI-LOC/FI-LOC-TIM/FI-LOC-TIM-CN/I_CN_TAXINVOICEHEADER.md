@@ -1,6 +1,6 @@
 ---
 name: I_CN_TAXINVOICEHEADER
-description: CN Taxinvoiceheader
+description: "CN Taxinvoiceheader"
 app_component: FI-LOC-TIM-CN
 software_component: SAPSCORE
 release_state: released

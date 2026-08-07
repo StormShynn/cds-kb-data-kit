@@ -1,6 +1,6 @@
 ---
 name: C_COMMODITYCODEFORKEYDATE
-description: Commoditycodeforkeydate
+description: "Commoditycodeforkeydate"
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

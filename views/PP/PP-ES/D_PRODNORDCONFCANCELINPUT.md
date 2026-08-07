@@ -1,6 +1,6 @@
 ---
 name: D_PRODNORDCONFCANCELINPUT
-description: D Prodnordconfcancelinput
+description: "D Prodnordconfcancelinput"
 app_component: PP-ES
 software_component: SAPSCORE
 release_state: released

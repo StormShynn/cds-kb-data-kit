@@ -1,13 +1,13 @@
 ---
 name: I_NEARMISSGROUPCODE
-description: Near Miss Group Code
+description: "Near Miss Group Code"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_NEARMISSGROUPCODE')/$value
-semantic_en: Near Miss Group Code
+semantic_en: "Near Miss Group Code"
 tags:
   - EHS
   - component:EHS-SUS-IM

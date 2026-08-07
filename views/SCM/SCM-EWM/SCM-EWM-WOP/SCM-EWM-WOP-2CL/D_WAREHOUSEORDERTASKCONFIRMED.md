@@ -1,6 +1,6 @@
 ---
 name: D_WAREHOUSEORDERTASKCONFIRMED
-description: D Warehouse OrderTASKCONFIRMED
+description: "D Warehouse OrderTASKCONFIRMED"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PURORDACCOUNTASSIGNMENTAPI01
-description: Purordaccountassignmentapi 01
+description: "Purordaccountassignmentapi 01"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

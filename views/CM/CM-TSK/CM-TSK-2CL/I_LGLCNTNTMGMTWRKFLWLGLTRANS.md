@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMGMTWRKFLWLGLTRANS
-description: Lglcntntmgmtwrkflwlgltrans
+description: "Lglcntntmgmtwrkflwlgltrans"
 app_component: CM-TSK-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SLSORDWITHOUTCHARGETYPETXT
-description: Slsordwithoutchargetypetxt
+description: "Slsordwithoutchargetypetxt"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

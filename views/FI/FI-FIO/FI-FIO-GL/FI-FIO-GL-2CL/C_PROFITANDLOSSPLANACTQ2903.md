@@ -1,27 +1,27 @@
 ---
 name: C_PROFITANDLOSSPLANACTQ2903
-description: This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each G/L account in company code currency? What are the actual and plan amounts for each G/L account in global currency? What are the absolute and relative differences of the actual and the plan amount in company code currency and global currency? For both currency types, you can drill down for further relevant characteristics.
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each G/L account in company code currency? What are the actual and plan amounts for each G/L account in global currency? What are the absolute and relative differences of the actual and the plan amount in company code currency and global currency? For both currency types, you can drill down for further relevant characteristics."
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROFITANDLOSSPLANACTQ2903')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each G/L account in company code currency? What are the actual and plan amounts for each G/L account in global currency? What are the absolute and relative differences of the actual and the plan amount in company code currency and global currency? For both currency types, you can drill down for further relevant characteristics.
-semantic_vi: PL Plan Actual — CDS view tiêu dùng dựa trên I_ActualPlanJrnlEntryItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each G/L account in company code currency? What are the actual and plan amounts for each G/L account in global currency? What are the absolute and relative differences of the actual and the plan amount in company code currency and global currency? For both currency types, you can drill down for further relevant characteristics."
+semantic_vi: "PL Plan Actual — CDS view tiêu dùng dựa trên I_ActualPlanJrnlEntryItemCube."
 keywords:
-  - PL Plan Actual
-  - plan
-  - actual
-  - account
-  - cost
-  - activity
-  - type
-  - business
-  - transaction
-  - calendar
-  - month
-  - quarter
+  - "PL Plan Actual"
+  - "plan"
+  - "actual"
+  - "account"
+  - "cost"
+  - "activity"
+  - "type"
+  - "business"
+  - "transaction"
+  - "calendar"
+  - "month"
+  - "quarter"
 tags:
   - FI
   - account

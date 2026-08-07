@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPORDBLOCKISOVERRULED
-description: Transportation Order Block is Overruled
+description: "Transportation Order Block is Overruled"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPORDBLOCKISOVERRULED')/$value
-semantic_en: Transportation Order Block is Overruled
+semantic_en: "Transportation Order Block is Overruled"
 tags:
   - TM
   - bo:purchaseorder

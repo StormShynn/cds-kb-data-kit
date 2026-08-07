@@ -1,6 +1,6 @@
 ---
 name: I_SRVCDOCHEADERLONGTEXT
-description: Srvcdocheaderlongtext
+description: "Srvcdocheaderlongtext"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

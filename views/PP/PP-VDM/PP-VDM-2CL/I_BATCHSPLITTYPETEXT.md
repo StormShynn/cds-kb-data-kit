@@ -1,6 +1,6 @@
 ---
 name: I_BATCHSPLITTYPETEXT
-description: Batchsplittypetext
+description: "Batchsplittypetext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

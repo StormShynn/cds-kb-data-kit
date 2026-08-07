@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTBRAND
-description: Productbrand
+description: "Productbrand"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

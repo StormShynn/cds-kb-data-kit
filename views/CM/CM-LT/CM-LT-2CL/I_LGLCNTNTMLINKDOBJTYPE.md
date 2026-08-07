@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMLINKDOBJTYPE
-description: Lglcntntmlinkdobjtype
+description: "Lglcntntmlinkdobjtype"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SALESCONTRACTFOLLOWUPACTION
-description: Salescontractfollowupaction
+description: "Salescontractfollowupaction"
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

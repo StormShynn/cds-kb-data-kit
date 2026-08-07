@@ -1,29 +1,29 @@
 ---
 name: C_ENTPROJMARGINOVERVIEWQRY
-description: This CDS view is designed to provide an overview of enterprise project margins, focusing on both recognized and planned financial metrics. It aggregates and presents data related to revenues, costs, margins, and other financial indicators associated with enterprise projects. The view is intended for analytical purposes, allowing users to filter and analyze project financial data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for enterprise projects within a specific fiscal year or company code? How does the recognized margin compare to the planned margin for enterprise projects? What is the margin percentage for enterprise projects, and how does it vary across different projects or fiscal periods? What are the adjustments made to revenue and cost, and how do they impact the overall project margin? How does the project stock value contribute to the financial overview of enterprise projects? What are the planned revenue and cost figures for enterprise projects, and how do they align with actual figures? How can project managers and stakeholders use this financial data to make informed decisions about project performance and future planning? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide an overview of enterprise project margins, focusing on both recognized and planned financial metrics. It aggregates and presents data related to revenues, costs, margins, and other financial indicators associated with enterprise projects. The view is intended for analytical purposes, allowing users to filter and analyze project financial data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for enterprise projects within a specific fiscal year or company code? How does the recognized margin compare to the planned margin for enterprise projects? What is the margin percentage for enterprise projects, and how does it vary across different projects or fiscal periods? What are the adjustments made to revenue and cost, and how do they impact the overall project margin? How does the project stock value contribute to the financial overview of enterprise projects? What are the planned revenue and cost figures for enterprise projects, and how do they align with actual figures? How can project managers and stakeholders use this financial data to make informed decisions about project performance and future planning? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJMARGINOVERVIEWQRY')/$value
-semantic_en: This CDS view is designed to provide an overview of enterprise project margins, focusing on both recognized and planned financial metrics. It aggregates and presents data related to revenues, costs, margins, and other financial indicators associated with enterprise projects. The view is intended for analytical purposes, allowing users to filter and analyze project financial data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for enterprise projects within a specific fiscal year or company code? How does the recognized margin compare to the planned margin for enterprise projects? What is the margin percentage for enterprise projects, and how does it vary across different projects or fiscal periods? What are the adjustments made to revenue and cost, and how do they impact the overall project margin? How does the project stock value contribute to the financial overview of enterprise projects? What are the planned revenue and cost figures for enterprise projects, and how do they align with actual figures? How can project managers and stakeholders use this financial data to make informed decisions about project performance and future planning? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Enterprise Project Margin Overview Query — CDS view tiêu dùng dựa trên Enterprise Project Margin Overview Query.
+semantic_en: "This CDS view is designed to provide an overview of enterprise project margins, focusing on both recognized and planned financial metrics. It aggregates and presents data related to revenues, costs, margins, and other financial indicators associated with enterprise projects. The view is intended for analytical purposes, allowing users to filter and analyze project financial data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for enterprise projects within a specific fiscal year or company code? How does the recognized margin compare to the planned margin for enterprise projects? What is the margin percentage for enterprise projects, and how does it vary across different projects or fiscal periods? What are the adjustments made to revenue and cost, and how do they impact the overall project margin? How does the project stock value contribute to the financial overview of enterprise projects? What are the planned revenue and cost figures for enterprise projects, and how do they align with actual figures? How can project managers and stakeholders use this financial data to make informed decisions about project performance and future planning? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Enterprise Project Margin Overview Query — CDS view tiêu dùng dựa trên Enterprise Project Margin Overview Query."
 keywords:
-  - Enterprise Project Margin Overview Query
-  - enterprise
-  - project
-  - margin
-  - overview
-  - query
-  - ledger
-  - company
-  - code
-  - account
-  - assignment
-  - type
-  - fiscal
-  - year
+  - "Enterprise Project Margin Overview Query"
+  - "enterprise"
+  - "project"
+  - "margin"
+  - "overview"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "account"
+  - "assignment"
+  - "type"
+  - "fiscal"
+  - "year"
 tags:
   - CO
   - bo:companycode

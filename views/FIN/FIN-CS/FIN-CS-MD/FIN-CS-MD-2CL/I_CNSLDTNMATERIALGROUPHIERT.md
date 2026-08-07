@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNMATERIALGROUPHIERT
-description: CNSLDTNMaterial GroupHIERT
+description: "CNSLDTNMaterial GroupHIERT"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENT
-description: Billing DocumentUMENT
+description: "Billing DocumentUMENT"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

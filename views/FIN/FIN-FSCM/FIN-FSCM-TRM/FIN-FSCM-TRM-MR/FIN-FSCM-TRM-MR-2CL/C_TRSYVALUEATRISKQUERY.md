@@ -1,13 +1,13 @@
 ---
 name: C_TRSYVALUEATRISKQUERY
-description: This CDS query view calculates the value at risk and mean excess loss market risk key figures based on the parameters of the market risk key figure sets. This CDS view provides the prerequisites for answering the following business questions: What is the overall value at risk for all company codes? What is the value at risk for a specific company code of lower aggregation levels? For market risk key figure sets with VaR calculation using simulation methods: What is the mean excess loss?
+description: "This CDS query view calculates the value at risk and mean excess loss market risk key figures based on the parameters of the market risk key figure sets. This CDS view provides the prerequisites for answering the following business questions: What is the overall value at risk for all company codes? What is the value at risk for a specific company code of lower aggregation levels? For market risk key figure sets with VaR calculation using simulation methods: What is the mean excess loss?"
 app_component: FIN-FSCM-TRM-MR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_TRSYVALUEATRISKQUERY')/$value
-semantic_en: This CDS query view calculates the value at risk and mean excess loss market risk key figures based on the parameters of the market risk key figure sets. This CDS view provides the prerequisites for answering the following business questions: What is the overall value at risk for all company codes? What is the value at risk for a specific company code of lower aggregation levels? For market risk key figure sets with VaR calculation using simulation methods: What is the mean excess loss?
+semantic_en: "This CDS query view calculates the value at risk and mean excess loss market risk key figures based on the parameters of the market risk key figure sets. This CDS view provides the prerequisites for answering the following business questions: What is the overall value at risk for all company codes? What is the value at risk for a specific company code of lower aggregation levels? For market risk key figure sets with VaR calculation using simulation methods: What is the mean excess loss?"
 tags:
   - FIN
   - bo:companycode

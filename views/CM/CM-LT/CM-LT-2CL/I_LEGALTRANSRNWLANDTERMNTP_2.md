@@ -1,6 +1,6 @@
 ---
 name: I_LEGALTRANSRNWLANDTERMNTP_2
-description: Legaltransrnwlandtermntp 2
+description: "Legaltransrnwlandtermntp 2"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

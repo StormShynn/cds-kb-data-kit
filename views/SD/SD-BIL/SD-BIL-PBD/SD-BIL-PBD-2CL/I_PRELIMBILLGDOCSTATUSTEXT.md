@@ -1,6 +1,6 @@
 ---
 name: I_PRELIMBILLGDOCSTATUSTEXT
-description: Prelimbillgdocstatustext
+description: "Prelimbillgdocstatustext"
 app_component: SD-BIL-PBD-2CL
 software_component: SAPSCORE
 release_state: released

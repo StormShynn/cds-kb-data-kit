@@ -1,6 +1,6 @@
 ---
 name: I_BPFISCALYEARINFORMATION
-description: Bpfiscalyearinformation
+description: "Bpfiscalyearinformation"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_SUPPLIERSETTLMTDOCCAT
-description: This CDS view exposes fixed values of the field Settlement Document Type - Supplier.
+description: "This CDS view exposes fixed values of the field Settlement Document Type - Supplier."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPPLIERSETTLMTDOCCAT')/$value
-semantic_en: This CDS view exposes fixed values of the field Settlement Document Type - Supplier.
+semantic_en: "This CDS view exposes fixed values of the field Settlement Document Type - Supplier."
 tags:
   - LO
   - bo:companycode

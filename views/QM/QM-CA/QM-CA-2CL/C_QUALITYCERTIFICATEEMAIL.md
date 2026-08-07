@@ -1,27 +1,27 @@
 ---
 name: C_QUALITYCERTIFICATEEMAIL
-description: Quality Certificate Email
+description: "Quality Certificate Email"
 app_component: QM-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_QUALITYCERTIFICATEEMAIL')/$value
-semantic_en: Quality Certificate Email
-semantic_vi: Quality Certificate Email — CDS view tiêu dùng dựa trên I_DeliveryDocumentItem.
+semantic_en: "Quality Certificate Email"
+semantic_vi: "Quality Certificate Email — CDS view tiêu dùng dựa trên I_DeliveryDocumentItem."
 keywords:
-  - quality
-  - certificate
-  - email
-  - delivery
-  - document
-  - item
-  - sales
-  - organization
-  - shipping
-  - point
-  - ship
-  - party
+  - "quality"
+  - "certificate"
+  - "email"
+  - "delivery"
+  - "document"
+  - "item"
+  - "sales"
+  - "organization"
+  - "shipping"
+  - "point"
+  - "ship"
+  - "party"
 tags:
   - QM
   - bo:companycode

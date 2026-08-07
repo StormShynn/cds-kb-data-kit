@@ -1,19 +1,19 @@
 ---
 name: I_BASISIDTEXT
-description: Basis ID - Text
+description: "Basis ID - Text"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BASISIDTEXT')/$value
-semantic_en: Basis ID - Text
-semantic_vi: Basis ID - Text — CDS view giao diện dựa trên tbacc_bas_id_t.
+semantic_en: "Basis ID - Text"
+semantic_vi: "Basis ID - Text — CDS view giao diện dựa trên tbacc_bas_id_t."
 keywords:
-  - basis
-  - text
-  - language
-  - name
+  - "basis"
+  - "text"
+  - "language"
+  - "name"
 tags:
   - LO
   - component:LO-CMM-BF

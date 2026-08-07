@@ -1,13 +1,13 @@
 ---
 name: I_LOANCONTRACTLDOCHDRDATA
-description: Actual Document Header for Loan Contract
+description: "Actual Document Header for Loan Contract"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRACTLDOCHDRDATA')/$value
-semantic_en: Actual Document Header for Loan Contract
+semantic_en: "Actual Document Header for Loan Contract"
 tags:
   - FS
   - component:FS-CML

@@ -1,13 +1,13 @@
 ---
 name: I_PLANTSECTION
-description: Plant Section
+description: "Plant Section"
 app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PLANTSECTION')/$value
-semantic_en: Plant Section
+semantic_en: "Plant Section"
 tags:
   - PM
   - component:PM-EQM-FL-2CL

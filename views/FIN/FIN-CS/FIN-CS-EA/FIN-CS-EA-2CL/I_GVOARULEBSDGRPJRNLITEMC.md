@@ -1,15 +1,15 @@
 ---
 name: I_GVOARULEBSDGRPJRNLITEMC
-description: Rule-Based GVoA GVOA - Cube
+description: "Rule-Based GVoA GVOA - Cube"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GVOARULEBSDGRPJRNLITEMC')/$value
-semantic_en: Rule-Based GVoA GVOA - Cube
+semantic_en: "Rule-Based GVoA GVOA - Cube"
 keywords:
-  - Rule-Based GVoA GVOA - Cube
+  - "Rule-Based GVoA GVOA - Cube"
 tags:
   - FIN
   - bo:salesorganization

@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTPARENTCOOVHDTP
-description: Jntopgagrmtparentcoovhdtp
+description: "Jntopgagrmtparentcoovhdtp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

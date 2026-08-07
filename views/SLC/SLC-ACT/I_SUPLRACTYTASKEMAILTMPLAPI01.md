@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRACTYTASKEMAILTMPLAPI01
-description: Suplractytaskemailtmplapi 01
+description: "Suplractytaskemailtmplapi 01"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

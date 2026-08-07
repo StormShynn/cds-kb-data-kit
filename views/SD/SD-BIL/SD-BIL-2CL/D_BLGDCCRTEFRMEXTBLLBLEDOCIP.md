@@ -1,6 +1,6 @@
 ---
 name: D_BLGDCCRTEFRMEXTBLLBLEDOCIP
-description: D Blgdccrtefrmextbllbledocip
+description: "D Blgdccrtefrmextbllbledocip"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

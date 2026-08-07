@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRCONDITIONUSAGE
-description: Cndncontrconditionusage
+description: "Cndncontrconditionusage"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

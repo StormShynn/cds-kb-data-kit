@@ -1,6 +1,6 @@
 ---
 name: I_PROCESSORDERITEMTP
-description: Processorderitemtp
+description: "Processorderitemtp"
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

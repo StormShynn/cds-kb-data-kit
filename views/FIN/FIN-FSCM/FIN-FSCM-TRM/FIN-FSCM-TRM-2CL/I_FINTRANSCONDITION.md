@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSCONDITION
-description: This CDS view shows the conditions of a financial transaction. This CDS view provides the prerequisites for answering the following business questions: What kinds of condition exist for a financial transaction? What kind of interest category does a condition have? Does the financial transaction have parallel interest conditions? How is the calculation date specified? How is the due date specified?
+description: "This CDS view shows the conditions of a financial transaction. This CDS view provides the prerequisites for answering the following business questions: What kinds of condition exist for a financial transaction? What kind of interest category does a condition have? Does the financial transaction have parallel interest conditions? How is the calculation date specified? How is the due date specified?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSCONDITION')/$value
-semantic_en: This CDS view shows the conditions of a financial transaction. This CDS view provides the prerequisites for answering the following business questions: What kinds of condition exist for a financial transaction? What kind of interest category does a condition have? Does the financial transaction have parallel interest conditions? How is the calculation date specified? How is the due date specified?
+semantic_en: "This CDS view shows the conditions of a financial transaction. This CDS view provides the prerequisites for answering the following business questions: What kinds of condition exist for a financial transaction? What kind of interest category does a condition have? Does the financial transaction have parallel interest conditions? How is the calculation date specified? How is the due date specified?"
 tags:
   - FIN
   - bo:companycode

@@ -1,26 +1,26 @@
 ---
 name: C_BOOMATLASSGMTCHGSTDEX
-description: Change State of Material Assgmt to BOO
+description: "Change State of Material Assgmt to BOO"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BOOMATLASSGMTCHGSTDEX')/$value
-semantic_en: Change State of Material Assgmt to BOO
-semantic_vi: Change State of Material Assgmt to BOO — CDS view tiêu dùng dựa trên I_BOOMaterialAssgmtChangeState.
+semantic_en: "Change State of Material Assgmt to BOO"
+semantic_vi: "Change State of Material Assgmt to BOO — CDS view tiêu dùng dựa trên I_BOOMaterialAssgmtChangeState."
 keywords:
-  - change
-  - state
-  - material
-  - assgmt
-  - boo
-  - plant
-  - bill
-  - operations
-  - type
-  - group
-  - variant
+  - "change"
+  - "state"
+  - "material"
+  - "assgmt"
+  - "boo"
+  - "plant"
+  - "bill"
+  - "operations"
+  - "type"
+  - "group"
+  - "variant"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEORDERDEX
-description: Maintenance OrderDEX
+description: "Maintenance OrderDEX"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

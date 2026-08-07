@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNSGMTHIERELIM
-description: Hierarchy Elimination for Segment
+description: "Hierarchy Elimination for Segment"
 app_component: FIN-CS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSGMTHIERELIM')/$value
-semantic_en: Hierarchy Elimination for Segment
+semantic_en: "Hierarchy Elimination for Segment"
 tags:
   - FIN
   - component:FIN-CS-2CL

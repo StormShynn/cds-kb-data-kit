@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTORDERCRTEFORPKUPITMP
-description: D Freightordercrteforpkupitmp
+description: "D Freightordercrteforpkupitmp"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

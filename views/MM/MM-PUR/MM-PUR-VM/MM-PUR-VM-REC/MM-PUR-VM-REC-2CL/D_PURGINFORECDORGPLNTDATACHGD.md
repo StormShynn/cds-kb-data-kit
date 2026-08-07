@@ -1,6 +1,6 @@
 ---
 name: D_PURGINFORECDORGPLNTDATACHGD
-description: D Purginforecdorgplntdatachgd
+description: "D Purginforecdorgplntdatachgd"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

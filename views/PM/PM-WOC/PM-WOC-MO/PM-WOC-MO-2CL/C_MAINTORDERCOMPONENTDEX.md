@@ -1,22 +1,22 @@
 ---
 name: C_MAINTORDERCOMPONENTDEX
-description: Maintenance Order Component
+description: "Maintenance Order Component"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERCOMPONENTDEX')/$value
-semantic_en: Maintenance Order Component
-semantic_vi: Maintenance Order Component — CDS view tiêu dùng dựa trên I_MaintenanceOrderComponent_2.
+semantic_en: "Maintenance Order Component"
+semantic_vi: "Maintenance Order Component — CDS view tiêu dùng dựa trên I_MaintenanceOrderComponent_2."
 keywords:
-  - maintenance
-  - order
-  - component
-  - reservation
-  - item
-  - type
-  - operation
+  - "maintenance"
+  - "order"
+  - "component"
+  - "reservation"
+  - "item"
+  - "type"
+  - "operation"
 tags:
   - PM
   - bo:purchaseorder

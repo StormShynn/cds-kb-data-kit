@@ -1,6 +1,6 @@
 ---
 name: D_PCLGSDCGETDNGRSGDSDOCINFOP
-description: D Pclgsdcgetdngrsgdsdocinfop
+description: "D Pclgsdcgetdngrsgdsdocinfop"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

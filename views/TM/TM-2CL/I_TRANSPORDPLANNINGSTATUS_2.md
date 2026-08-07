@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDPLANNINGSTATUS_2
-description: Transpordplanningstatus 2
+description: "Transpordplanningstatus 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

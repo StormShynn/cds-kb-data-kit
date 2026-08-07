@@ -1,6 +1,6 @@
 ---
 name: I_EWM_STORBINISAVAILABLETEXT
-description: Ewm Storbinisavailabletext
+description: "Ewm Storbinisavailabletext"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

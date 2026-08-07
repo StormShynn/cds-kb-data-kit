@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGPLNITEMTP_2
-description: Cabillgplnitemtp 2
+description: "Cabillgplnitemtp 2"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

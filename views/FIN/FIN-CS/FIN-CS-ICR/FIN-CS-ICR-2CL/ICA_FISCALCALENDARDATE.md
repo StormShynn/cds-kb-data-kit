@@ -1,6 +1,6 @@
 ---
 name: ICA_FISCALCALENDARDATE
-description: Ica Fiscalcalendardate
+description: "Ica Fiscalcalendardate"
 app_component: FIN-CS-ICR-2CL
 software_component: SAPSCORE
 release_state: released

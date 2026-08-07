@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERMATERIAL_2
-description: Customermaterial 2
+description: "Customermaterial 2"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

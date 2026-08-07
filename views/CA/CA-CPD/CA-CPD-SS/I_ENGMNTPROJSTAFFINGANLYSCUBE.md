@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJSTAFFINGANLYSCUBE
-description: This CDS view provides the prerequisites for answering the following business questions: Are my projects fully staffed? Have project resources posted their time sheets as per the planned effort? Are there time sheets that need my approval? How many hours have individuals posted against a project? Show me a comparison of actual efforts by role.
+description: "This CDS view provides the prerequisites for answering the following business questions: Are my projects fully staffed? Have project resources posted their time sheets as per the planned effort? Are there time sheets that need my approval? How many hours have individuals posted against a project? Show me a comparison of actual efforts by role."
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJSTAFFINGANLYSCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Are my projects fully staffed? Have project resources posted their time sheets as per the planned effort? Are there time sheets that need my approval? How many hours have individuals posted against a project? Show me a comparison of actual efforts by role.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Are my projects fully staffed? Have project resources posted their time sheets as per the planned effort? Are there time sheets that need my approval? How many hours have individuals posted against a project? Show me a comparison of actual efforts by role."
 tags:
   - CA
   - bo:companycode

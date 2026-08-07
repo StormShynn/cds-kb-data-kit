@@ -1,6 +1,6 @@
 ---
 name: I_PRODNRSCETOOLCATEGORYTEXT_2
-description: Prodnrscetoolcategorytext 2
+description: "Prodnrscetoolcategorytext 2"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

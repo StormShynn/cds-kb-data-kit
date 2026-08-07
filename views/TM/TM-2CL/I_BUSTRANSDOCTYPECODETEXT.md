@@ -1,6 +1,6 @@
 ---
 name: I_BUSTRANSDOCTYPECODETEXT
-description: Bustransdoctypecodetext
+description: "Bustransdoctypecodetext"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

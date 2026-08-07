@@ -1,6 +1,6 @@
 ---
 name: I_HDRGENINCOMPLETIONSTATUST
-description: Hdrgenincompletionstatust
+description: "Hdrgenincompletionstatust"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_POSTINGPARTNERCAT
-description: This CDS view is used to select the Posting Partner Category. Domains: WLF_POST_PARTY Values: ‘’ - Supplier and Customer Side ‘1’ - Only Supplier Side ‘2’ - Only Customer Side ‘3’ – None ‘4’ - Personnel Number This CDS view provides the prerequisites for answering the following business questions: What is the Posting Partner Category?
+description: "This CDS view is used to select the Posting Partner Category. Domains: WLF_POST_PARTY Values: ‘’ - Supplier and Customer Side ‘1’ - Only Supplier Side ‘2’ - Only Customer Side ‘3’ – None ‘4’ - Personnel Number This CDS view provides the prerequisites for answering the following business questions: What is the Posting Partner Category?"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_POSTINGPARTNERCAT')/$value
-semantic_en: This CDS view is used to select the Posting Partner Category. Domains: WLF_POST_PARTY Values: ‘’ - Supplier and Customer Side ‘1’ - Only Supplier Side ‘2’ - Only Customer Side ‘3’ – None ‘4’ - Personnel Number This CDS view provides the prerequisites for answering the following business questions: What is the Posting Partner Category?
+semantic_en: "This CDS view is used to select the Posting Partner Category. Domains: WLF_POST_PARTY Values: ‘’ - Supplier and Customer Side ‘1’ - Only Supplier Side ‘2’ - Only Customer Side ‘3’ – None ‘4’ - Personnel Number This CDS view provides the prerequisites for answering the following business questions: What is the Posting Partner Category?"
 tags:
   - LO
   - bo:businesspartner

@@ -1,6 +1,6 @@
 ---
 name: I_MX_SUPPLIERTRANSACTIONTYPE
-description: MX Suppliertransactiontype
+description: "MX Suppliertransactiontype"
 app_component: FI-LOC-FI-MX
 software_component: SAPSCORE
 release_state: released

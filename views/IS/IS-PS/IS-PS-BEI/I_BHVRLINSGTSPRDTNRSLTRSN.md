@@ -1,13 +1,13 @@
 ---
 name: I_BHVRLINSGTSPRDTNRSLTRSN
-description: Prediction Result Reason
+description: "Prediction Result Reason"
 app_component: IS-PS-BEI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BHVRLINSGTSPRDTNRSLTRSN')/$value
-semantic_en: Prediction Result Reason
+semantic_en: "Prediction Result Reason"
 tags:
   - IS
   - bo:salesorder

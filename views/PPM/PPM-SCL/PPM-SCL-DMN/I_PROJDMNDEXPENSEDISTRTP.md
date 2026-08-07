@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDEXPENSEDISTRTP
-description: Projdmndexpensedistrtp
+description: "Projdmndexpensedistrtp"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

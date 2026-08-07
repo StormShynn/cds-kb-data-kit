@@ -1,6 +1,6 @@
 ---
 name: D_PURCHASEREQNITEMCREATED
-description: D Purchase RequisitionNITEMCREATED
+description: "D Purchase RequisitionNITEMCREATED"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_UNITOFMEASURESTDVH
-description: Unit of MeasureSTDVH
+description: "Unit of MeasureSTDVH"
 app_component: BC-SRV-ASF-UOM
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGROUPSTRUCTURETP
-description: Cnsldtngroupstructuretp
+description: "Cnsldtngroupstructuretp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

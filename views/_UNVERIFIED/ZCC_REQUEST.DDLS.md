@@ -1,23 +1,23 @@
 ---
 name: ZCC_REQUEST.DDLS
-description: Projection View: Request
+description: "Projection View: Request"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/rayyeap/wbs/blob/0dec0ac357e366ed9bec93be465f259d7a91324f/src/zcc_request.ddls.asddls
-semantic_en: Projection View: Request — CDS view.
-semantic_vi: Projection View: Request — CDS view dựa trên Projection View: Request.
+semantic_en: "Projection View: Request — CDS view."
+semantic_vi: "Projection View: Request — CDS view dựa trên Projection View: Request."
 keywords:
-  - projection
-  - view:
-  - request
-  - uuid
-  - image
-  - type
-  - financial
-  - year
+  - "projection"
+  - "view:"
+  - "request"
+  - "uuid"
+  - "image"
+  - "type"
+  - "financial"
+  - "year"
 tags:
   - RE
   - bo:project

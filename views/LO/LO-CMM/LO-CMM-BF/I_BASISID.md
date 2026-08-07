@@ -1,16 +1,16 @@
 ---
 name: I_BASISID
-description: Basis ID
+description: "Basis ID"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BASISID')/$value
-semantic_en: Basis ID
-semantic_vi: Basis ID — CDS view giao diện dựa trên tbacc_bas_id.
+semantic_en: "Basis ID"
+semantic_vi: "Basis ID — CDS view giao diện dựa trên tbacc_bas_id."
 keywords:
-  - basis
+  - "basis"
 tags:
   - LO
   - component:LO-CMM-BF

@@ -1,6 +1,6 @@
 ---
 name: I_CN_CADEJOURNALENTRYDOCTYPE
-description: CN CADEJournal EntryDOCTYPE
+description: "CN CADEJournal EntryDOCTYPE"
 app_component: FI-LOC-GAI-CN
 software_component: SAPSCORE
 release_state: released

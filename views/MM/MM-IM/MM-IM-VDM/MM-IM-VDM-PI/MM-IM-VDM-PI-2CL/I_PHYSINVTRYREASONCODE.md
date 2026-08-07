@@ -1,6 +1,6 @@
 ---
 name: I_PHYSINVTRYREASONCODE
-description: Physinvtryreasoncode
+description: "Physinvtryreasoncode"
 app_component: MM-IM-VDM-PI-2CL
 software_component: SAPSCORE
 release_state: released

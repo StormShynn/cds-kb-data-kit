@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSUSERVH
-description: Businessuservh
+description: "Businessuservh"
 app_component: BC-SRV-BUM
 software_component: SAP_BASIS
 release_state: released

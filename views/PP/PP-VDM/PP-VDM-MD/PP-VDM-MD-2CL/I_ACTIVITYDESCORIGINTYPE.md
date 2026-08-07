@@ -1,6 +1,6 @@
 ---
 name: I_ACTIVITYDESCORIGINTYPE
-description: Activitydescorigintype
+description: "Activitydescorigintype"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

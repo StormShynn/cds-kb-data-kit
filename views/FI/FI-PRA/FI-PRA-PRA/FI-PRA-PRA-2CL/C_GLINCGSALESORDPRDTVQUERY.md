@@ -1,30 +1,30 @@
 ---
 name: C_GLINCGSALESORDPRDTVQUERY
-description: Incoming Sales Orders – Pred. Accounting
+description: "Incoming Sales Orders – Pred. Accounting"
 app_component: FI-PRA-PRA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLINCGSALESORDPRDTVQUERY')/$value
-semantic_en: Incoming Sales Orders – Pred. Accounting
-semantic_vi: Incoming Sales Orders – Pred. Accounting — CDS view tiêu dùng dựa trên I_GLIncgSalesOrdPrdtvCube.
+semantic_en: "Incoming Sales Orders – Pred. Accounting"
+semantic_vi: "Incoming Sales Orders – Pred. Accounting — CDS view tiêu dùng dựa trên I_GLIncgSalesOrdPrdtvCube."
 keywords:
-  - incoming
-  - sales
-  - orders
-  - pred.
-  - accounting
-  - jrnl
-  - entr
-  - derivd
-  - fiscal
-  - year
-  - period
-  - organization
-  - created
-  - user
-  - document
+  - "incoming"
+  - "sales"
+  - "orders"
+  - "pred."
+  - "accounting"
+  - "jrnl"
+  - "entr"
+  - "derivd"
+  - "fiscal"
+  - "year"
+  - "period"
+  - "organization"
+  - "created"
+  - "user"
+  - "document"
 tags:
   - FI
   - account

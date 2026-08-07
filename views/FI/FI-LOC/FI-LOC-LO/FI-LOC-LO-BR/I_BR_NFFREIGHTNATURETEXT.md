@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFFREIGHTNATURETEXT
-description: BR Nffreightnaturetext
+description: "BR Nffreightnaturetext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

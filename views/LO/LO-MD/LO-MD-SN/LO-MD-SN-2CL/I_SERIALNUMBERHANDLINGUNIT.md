@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERHANDLINGUNIT
-description: Serial NumberHANDLINGUNIT
+description: "Serial NumberHANDLINGUNIT"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_RU_ASSETOKOF
-description: RU Assetokof
+description: "RU Assetokof"
 app_component: FI-LOC-AA-RU
 software_component: SAPSCORE
 release_state: released

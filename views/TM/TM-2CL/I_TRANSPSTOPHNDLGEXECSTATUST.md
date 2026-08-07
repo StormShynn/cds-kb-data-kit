@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPSTOPHNDLGEXECSTATUST
-description: Transpstophndlgexecstatust
+description: "Transpstophndlgexecstatust"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

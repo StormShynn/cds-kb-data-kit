@@ -1,6 +1,6 @@
 ---
 name: I_DEFECTTP_2
-description: Defecttp 2
+description: "Defecttp 2"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released

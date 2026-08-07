@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTOPRODUCT
-description: Profit CenterTOPRODUCT
+description: "Profit CenterTOPRODUCT"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

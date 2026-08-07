@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECORDDEX
-description: Change RecordDEX
+description: "Change RecordDEX"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNTSKLGITMCRCYTRNSLTN
-description: Cnsldtntsklgitmcrcytrnsltn
+description: "Cnsldtntsklgitmcrcytrnsltn"
 app_component: FIN-CS-COR-IS-2CL
 software_component: SAPSCORE
 release_state: released

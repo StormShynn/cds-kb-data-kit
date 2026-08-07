@@ -1,6 +1,6 @@
 ---
 name: I_FINTRANSRELEASESTATUS
-description: Fintransreleasestatus
+description: "Fintransreleasestatus"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

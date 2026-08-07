@@ -1,6 +1,6 @@
 ---
 name: I_BKPOAPREDECESSORTP_2
-description: Bkpoapredecessortp 2
+description: "Bkpoapredecessortp 2"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

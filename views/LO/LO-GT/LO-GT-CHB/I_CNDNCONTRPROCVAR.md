@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRPROCVAR
-description: Cndncontrprocvar
+description: "Cndncontrprocvar"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_BUDGETGLACCTHIERGROUPT
-description: Budget GL Account Hierarchy Group - Text
+description: "Budget GL Account Hierarchy Group - Text"
 app_component: CO-OM-CCA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETGLACCTHIERGROUPT')/$value
-semantic_en: Budget GL Account Hierarchy Group - Text
+semantic_en: "Budget GL Account Hierarchy Group - Text"
 tags:
   - CO
   - account

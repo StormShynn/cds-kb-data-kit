@@ -1,26 +1,26 @@
 ---
 name: C_TIMEVARIANCEQUERY
-description: Time Variance
+description: "Time Variance"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_TIMEVARIANCEQUERY')/$value
-semantic_en: Time Variance
-semantic_vi: Time Variance — CDS view tiêu dùng dựa trên C_TimeVarianceCube.
+semantic_en: "Time Variance"
+semantic_vi: "Time Variance — CDS view tiêu dùng dựa trên C_TimeVarianceCube."
 keywords:
-  - time
-  - variance
-  - purchase
-  - order
-  - item
-  - schedule
-  - line
-  - delivery
-  - date
-  - sched
-  - stsc
+  - "time"
+  - "variance"
+  - "purchase"
+  - "order"
+  - "item"
+  - "schedule"
+  - "line"
+  - "delivery"
+  - "date"
+  - "sched"
+  - "stsc"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

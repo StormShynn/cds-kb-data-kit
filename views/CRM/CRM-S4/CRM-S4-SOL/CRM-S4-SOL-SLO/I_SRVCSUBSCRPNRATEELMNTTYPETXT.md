@@ -1,13 +1,13 @@
 ---
 name: I_SRVCSUBSCRPNRATEELMNTTYPETXT
-description: Subscription Rate Element Type - Text
+description: "Subscription Rate Element Type - Text"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCSUBSCRPNRATEELMNTTYPETXT')/$value
-semantic_en: Subscription Rate Element Type - Text
+semantic_en: "Subscription Rate Element Type - Text"
 tags:
   - CRM
   - component:CRM-S4-SOL-SLO

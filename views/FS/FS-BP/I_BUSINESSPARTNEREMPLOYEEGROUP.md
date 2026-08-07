@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNEREMPLOYEEGROUP
-description: Business PartnerEMPLOYEEGROUP
+description: "Business PartnerEMPLOYEEGROUP"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

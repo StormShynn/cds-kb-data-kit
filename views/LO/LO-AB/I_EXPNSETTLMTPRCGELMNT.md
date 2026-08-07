@@ -1,13 +1,13 @@
 ---
 name: I_EXPNSETTLMTPRCGELMNT
-description: Expense Settlement Pricing Element
+description: "Expense Settlement Pricing Element"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTPRCGELMNT')/$value
-semantic_en: Expense Settlement Pricing Element
+semantic_en: "Expense Settlement Pricing Element"
 tags:
   - LO
   - bo:pricingcondition

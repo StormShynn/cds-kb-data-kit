@@ -1,28 +1,28 @@
 ---
 name: I_BR_NFPRESUMEDCREDIT
-description: This CDS view displays the presumed credit for nota fiscal items. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view displays the presumed credit for nota fiscal items. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_NFPRESUMEDCREDIT')/$value
-semantic_en: This CDS view displays the presumed credit for nota fiscal items. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Brazil Nota Fiscal Presumed Credit — CDS view giao diện dựa trên j_1bnfprsmd_crdt.
+semantic_en: "This CDS view displays the presumed credit for nota fiscal items. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Brazil Nota Fiscal Presumed Credit — CDS view giao diện dựa trên j_1bnfprsmd_crdt."
 keywords:
-  - brazil
-  - nota
-  - fiscal
-  - presumed
-  - credit
-  - item
-  - prsmd
-  - sequence
-  - number
-  - fscl
-  - bnft
-  - code
-  - percent
+  - "brazil"
+  - "nota"
+  - "fiscal"
+  - "presumed"
+  - "credit"
+  - "item"
+  - "prsmd"
+  - "sequence"
+  - "number"
+  - "fscl"
+  - "bnft"
+  - "code"
+  - "percent"
 tags:
   - FI
   - bo:companycode

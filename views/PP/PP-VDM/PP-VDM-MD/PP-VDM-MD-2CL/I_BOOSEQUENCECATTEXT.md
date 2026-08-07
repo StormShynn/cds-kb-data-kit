@@ -1,23 +1,23 @@
 ---
 name: I_BOOSEQUENCECATTEXT
-description: Bill of Ops Sequence Category - Text
+description: "Bill of Ops Sequence Category - Text"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BOOSEQUENCECATTEXT')/$value
-semantic_en: Bill of Ops Sequence Category - Text
-semantic_vi: Bill of Ops Sequence Category - Text — CDS view giao diện dựa trên I_SequenceCategoryText.
+semantic_en: "Bill of Ops Sequence Category - Text"
+semantic_vi: "Bill of Ops Sequence Category - Text — CDS view giao diện dựa trên I_SequenceCategoryText."
 keywords:
-  - bill
-  - ops
-  - sequence
-  - category
-  - text
-  - operations
-  - language
-  - name
+  - "bill"
+  - "ops"
+  - "sequence"
+  - "category"
+  - "text"
+  - "operations"
+  - "language"
+  - "name"
 tags:
   - PP
   - bo:project

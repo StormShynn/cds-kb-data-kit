@@ -1,6 +1,6 @@
 ---
 name: D_LGLTRANSTRGGRLGLTRANSTSKGRPP
-description: D Lgltranstrggrlgltranstskgrpp
+description: "D Lgltranstrggrlgltranstskgrpp"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

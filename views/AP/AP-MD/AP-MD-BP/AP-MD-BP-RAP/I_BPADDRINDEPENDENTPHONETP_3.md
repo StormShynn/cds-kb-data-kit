@@ -1,6 +1,6 @@
 ---
 name: I_BPADDRINDEPENDENTPHONETP_3
-description: Bpaddrindependentphonetp 3
+description: "Bpaddrindependentphonetp 3"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

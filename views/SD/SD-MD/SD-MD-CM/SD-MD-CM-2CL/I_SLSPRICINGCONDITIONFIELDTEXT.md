@@ -1,6 +1,6 @@
 ---
 name: I_SLSPRICINGCONDITIONFIELDTEXT
-description: SLSPricing ConditionFIELDTEXT
+description: "SLSPricing ConditionFIELDTEXT"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

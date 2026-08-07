@@ -1,13 +1,13 @@
 ---
 name: I_CUSTSETTLMTLISTPLAINLONGTEXT
-description: Plain Long Text for Customer Settlement List
+description: "Plain Long Text for Customer Settlement List"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTLISTPLAINLONGTEXT')/$value
-semantic_en: Plain Long Text for Customer Settlement List
+semantic_en: "Plain Long Text for Customer Settlement List"
 tags:
   - LO
   - bo:businesspartner

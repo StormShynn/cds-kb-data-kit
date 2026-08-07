@@ -1,13 +1,13 @@
 ---
 name: I_PUBLICHOLIDAYCODETEXT
-description: Public Holiday Code - Text
+description: "Public Holiday Code - Text"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBLICHOLIDAYCODETEXT')/$value
-semantic_en: Public Holiday Code - Text
+semantic_en: "Public Holiday Code - Text"
 tags:
   - CA
   - CA-GTF

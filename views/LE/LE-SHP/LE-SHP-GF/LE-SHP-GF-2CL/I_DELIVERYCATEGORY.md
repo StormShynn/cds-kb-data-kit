@@ -1,6 +1,6 @@
 ---
 name: I_DELIVERYCATEGORY
-description: Deliverycategory
+description: "Deliverycategory"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

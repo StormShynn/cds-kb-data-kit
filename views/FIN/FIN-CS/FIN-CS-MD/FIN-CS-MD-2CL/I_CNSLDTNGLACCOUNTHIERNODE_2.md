@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGLACCOUNTHIERNODE_2
-description: Cnsldtngl AccountHIERNODE 2
+description: "Cnsldtngl AccountHIERNODE 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

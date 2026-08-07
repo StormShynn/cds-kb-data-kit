@@ -1,25 +1,25 @@
 ---
 name: I_ARUNANLYTSSUPASSGMTCUBE
-description: Assignment Results - Cube
+description: "Assignment Results - Cube"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSUPASSGMTCUBE')/$value
-semantic_en: Assignment Results - Cube
-semantic_vi: Assignment Results - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocAssgmt.
+semantic_en: "Assignment Results - Cube"
+semantic_vi: "Assignment Results - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocAssgmt."
 keywords:
-  - assignment
-  - results
-  - cube
-  - plant
-  - material
-  - storage
-  - location
-  - batch
-  - requirement
-  - type
+  - "assignment"
+  - "results"
+  - "cube"
+  - "plant"
+  - "material"
+  - "storage"
+  - "location"
+  - "batch"
+  - "requirement"
+  - "type"
 tags:
   - LO
   - component:LO-RFM-ARN

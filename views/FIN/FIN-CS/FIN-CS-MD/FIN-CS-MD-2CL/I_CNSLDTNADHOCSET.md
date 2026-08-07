@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNADHOCSET
-description: Cnsldtnadhocset
+description: "Cnsldtnadhocset"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

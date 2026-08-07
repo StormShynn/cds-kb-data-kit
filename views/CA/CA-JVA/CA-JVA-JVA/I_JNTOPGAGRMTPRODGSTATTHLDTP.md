@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTPRODGSTATTHLDTP
-description: Jntopgagrmtprodgstatthldtp
+description: "Jntopgagrmtprodgstatthldtp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

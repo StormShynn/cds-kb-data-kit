@@ -1,6 +1,6 @@
 ---
 name: I_CN_TAXINVCINPTPROCGSTS
-description: CN Taxinvcinptprocgsts
+description: "CN Taxinvcinptprocgsts"
 app_component: FI-LOC-TIM-CN
 software_component: SAPSCORE
 release_state: released

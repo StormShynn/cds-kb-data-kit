@@ -1,13 +1,13 @@
 ---
 name: I_COUNTRYGEOPOINT
-description: Geographical Location of a Country/Region
+description: "Geographical Location of a Country/Region"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COUNTRYGEOPOINT')/$value
-semantic_en: Geographical Location of a Country/Region
+semantic_en: "Geographical Location of a Country/Region"
 tags:
   - LO
   - bo:purchaseorder

@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERSCHEDULELINETP
-description: Sales OrderSchedule LineTP
+description: "Sales OrderSchedule LineTP"
 app_component: SD-SLS-API-2CL
 software_component: SAPSCORE
 release_state: released

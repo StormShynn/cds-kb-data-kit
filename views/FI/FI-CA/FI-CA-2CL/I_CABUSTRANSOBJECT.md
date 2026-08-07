@@ -1,6 +1,6 @@
 ---
 name: I_CABUSTRANSOBJECT
-description: Cabustransobject
+description: "Cabustransobject"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

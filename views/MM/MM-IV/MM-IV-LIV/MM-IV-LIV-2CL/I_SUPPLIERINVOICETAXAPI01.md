@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERINVOICETAXAPI01
-description: Supplier InvoiceTAXAPI 01
+description: "Supplier InvoiceTAXAPI 01"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,28 +1,28 @@
 ---
 name: C_GLJRNLENTRYTOBEVERIFIED
-description: This CDS view provides the prerequisites for answering the following business question: What is the General journal entry to be verified?
+description: "This CDS view provides the prerequisites for answering the following business question: What is the General journal entry to be verified?"
 app_component: FI-FIO-GL-TRA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLJRNLENTRYTOBEVERIFIED')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What is the General journal entry to be verified?
-semantic_vi: Inbox View of GL JE to be verified — CDS view tiêu dùng dựa trên I_GLJrnlEntryToBeVerified.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is the General journal entry to be verified?"
+semantic_vi: "Inbox View of GL JE to be verified — CDS view tiêu dùng dựa trên I_GLJrnlEntryToBeVerified."
 keywords:
-  - inbox
-  - verified
-  - accounting
-  - document
-  - company
-  - code
-  - fiscal
-  - year
-  - work
-  - item
-  - task
-  - processing
-  - status
+  - "inbox"
+  - "verified"
+  - "accounting"
+  - "document"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "work"
+  - "item"
+  - "task"
+  - "processing"
+  - "status"
 tags:
   - FI
   - bo:companycode

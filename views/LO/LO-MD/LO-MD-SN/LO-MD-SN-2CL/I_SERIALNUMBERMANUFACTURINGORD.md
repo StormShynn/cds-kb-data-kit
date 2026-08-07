@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERMANUFACTURINGORD
-description: Serial NumberMANUFACTURINGORD
+description: "Serial NumberMANUFACTURINGORD"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_PINVPOSTPINVDIFFERENCEP
-description: D Pinvpostpinvdifferencep
+description: "D Pinvpostpinvdifferencep"
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

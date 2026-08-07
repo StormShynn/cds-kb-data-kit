@@ -1,6 +1,6 @@
 ---
 name: I_BOMEXPLOSIONDATE
-description: Bomexplosiondate
+description: "Bomexplosiondate"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

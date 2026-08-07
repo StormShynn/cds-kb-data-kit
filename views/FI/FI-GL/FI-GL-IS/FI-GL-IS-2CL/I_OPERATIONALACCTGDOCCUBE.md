@@ -1,13 +1,13 @@
 ---
 name: I_OPERATIONALACCTGDOCCUBE
-description: Operational Journal Entry Item - Cube
+description: "Operational Journal Entry Item - Cube"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPERATIONALACCTGDOCCUBE')/$value
-semantic_en: Operational Journal Entry Item - Cube
+semantic_en: "Operational Journal Entry Item - Cube"
 tags:
   - FI
   - component:FI-GL-IS-2CL

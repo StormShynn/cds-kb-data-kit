@@ -1,21 +1,21 @@
 ---
 name: I_ALTERNATIVEGLACCOUNTISUSEDT
-description: Alternative GL Account Is Used - Text
+description: "Alternative GL Account Is Used - Text"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ALTERNATIVEGLACCOUNTISUSEDT')/$value
-semantic_en: Alternative GL Account Is Used - Text
-semantic_vi: Alternative GL Account Is Used - Text — CDS view giao diện dựa trên dd07t.
+semantic_en: "Alternative GL Account Is Used - Text"
+semantic_vi: "Alternative GL Account Is Used - Text — CDS view giao diện dựa trên dd07t."
 keywords:
-  - alternative
-  - account
-  - used
-  - text
-  - language
-  - long
+  - "alternative"
+  - "account"
+  - "used"
+  - "text"
+  - "language"
+  - "long"
 tags:
   - FI
   - account

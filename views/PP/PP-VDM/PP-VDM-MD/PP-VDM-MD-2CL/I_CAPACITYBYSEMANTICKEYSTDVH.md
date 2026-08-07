@@ -1,6 +1,6 @@
 ---
 name: I_CAPACITYBYSEMANTICKEYSTDVH
-description: Capacitybysemantickeystdvh
+description: "Capacitybysemantickeystdvh"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTDOCCATTEXT
-description: Settlmtdoccattext
+description: "Settlmtdoccattext"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

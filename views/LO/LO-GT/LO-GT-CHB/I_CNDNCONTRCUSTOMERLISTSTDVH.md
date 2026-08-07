@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRCUSTOMERLISTSTDVH
-description: Condition Contract Customer List
+description: "Condition Contract Customer List"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCUSTOMERLISTSTDVH')/$value
-semantic_en: Condition Contract Customer List
+semantic_en: "Condition Contract Customer List"
 tags:
   - LO
   - bo:businesspartner

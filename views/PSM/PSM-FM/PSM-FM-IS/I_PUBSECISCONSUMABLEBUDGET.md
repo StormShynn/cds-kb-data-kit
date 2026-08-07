@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECISCONSUMABLEBUDGET
-description: Indicator for Consumable Budget
+description: "Indicator for Consumable Budget"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECISCONSUMABLEBUDGET')/$value
-semantic_en: Indicator for Consumable Budget
+semantic_en: "Indicator for Consumable Budget"
 tags:
   - PSM
   - budget

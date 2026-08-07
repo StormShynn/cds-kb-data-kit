@@ -1,26 +1,26 @@
 ---
 name: C_GLACCTFLOWBYDATEFUNCKPIQ
-description: GL Account Flow by Date Function
+description: "GL Account Flow by Date Function"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCTFLOWBYDATEFUNCKPIQ')/$value
-semantic_en: GL Account Flow by Date Function
-semantic_vi: GL Account Flow by Date Function — CDS view tiêu dùng dựa trên I_GLAcctFlowSemTagByDateFuncC.
+semantic_en: "GL Account Flow by Date Function"
+semantic_vi: "GL Account Flow by Date Function — CDS view tiêu dùng dựa trên I_GLAcctFlowSemTagByDateFuncC."
 keywords:
-  - account
-  - flow
-  - date
-  - function
-  - hierarchy
-  - planning
-  - category
-  - ledger
-  - fiscal
-  - year
-  - variant
+  - "account"
+  - "flow"
+  - "date"
+  - "function"
+  - "hierarchy"
+  - "planning"
+  - "category"
+  - "ledger"
+  - "fiscal"
+  - "year"
+  - "variant"
 tags:
   - FI
   - account

@@ -1,13 +1,13 @@
 ---
 name: I_UNIVHIERLIQUIDITYITMHIERT
-description: Liquidity Item Hierarchy - Text
+description: "Liquidity Item Hierarchy - Text"
 app_component: FIN-FSCM-CLM-FQM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_UNIVHIERLIQUIDITYITMHIERT')/$value
-semantic_en: Liquidity Item Hierarchy - Text
+semantic_en: "Liquidity Item Hierarchy - Text"
 tags:
   - FIN
   - component:FIN-FSCM-CLM-FQM-2CL

@@ -1,6 +1,6 @@
 ---
 name: D_MODPRODSPECADDITEMP
-description: D Modprodspecadditemp
+description: "D Modprodspecadditemp"
 app_component: MM-PUR-MPS-2CL
 software_component: SAPSCORE
 release_state: released

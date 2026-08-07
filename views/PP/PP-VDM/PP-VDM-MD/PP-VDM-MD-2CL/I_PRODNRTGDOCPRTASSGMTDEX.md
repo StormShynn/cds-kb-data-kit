@@ -1,13 +1,13 @@
 ---
 name: I_PRODNRTGDOCPRTASSGMTDEX
-description: Prodn Routing Document PRT Assignment
+description: "Prodn Routing Document PRT Assignment"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGDOCPRTASSGMTDEX')/$value
-semantic_en: Prodn Routing Document PRT Assignment
+semantic_en: "Prodn Routing Document PRT Assignment"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

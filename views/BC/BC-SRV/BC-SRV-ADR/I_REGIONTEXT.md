@@ -1,6 +1,6 @@
 ---
 name: I_REGIONTEXT
-description: Regiontext
+description: "Regiontext"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEPLANTP_2
-description: Maintenance PlanTP 2
+description: "Maintenance PlanTP 2"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

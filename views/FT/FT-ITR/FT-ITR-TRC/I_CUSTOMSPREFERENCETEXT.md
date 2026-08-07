@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMSPREFERENCETEXT
-description: Customspreferencetext
+description: "Customspreferencetext"
 app_component: FT-ITR-TRC
 software_component: SAPSCORE
 release_state: released

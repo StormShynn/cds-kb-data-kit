@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTRELEASELISTITEMBASIC
-description: Paymentreleaselistitembasic
+description: "Paymentreleaselistitembasic"
 app_component: FI-LOC-EPI-CN
 software_component: SAPSCORE
 release_state: released

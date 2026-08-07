@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDITEMPRICEELEMENT
-description: Bussolnorditempriceelement
+description: "Bussolnorditempriceelement"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

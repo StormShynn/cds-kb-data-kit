@@ -1,6 +1,6 @@
 ---
 name: I_IHBACCOUNTBPBKSTMNTTP
-description: Ihbaccountbpbkstmnttp
+description: "Ihbaccountbpbkstmnttp"
 app_component: FIN-FSCM-PF-IHB-2CL
 software_component: SAPSCORE
 release_state: released

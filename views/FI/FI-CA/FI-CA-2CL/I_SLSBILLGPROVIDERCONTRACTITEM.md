@@ -1,6 +1,6 @@
 ---
 name: I_SLSBILLGPROVIDERCONTRACTITEM
-description: Slsbillgprovidercontractitem
+description: "Slsbillgprovidercontractitem"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

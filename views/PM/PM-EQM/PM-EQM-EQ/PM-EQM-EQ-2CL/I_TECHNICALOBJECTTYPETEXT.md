@@ -1,6 +1,6 @@
 ---
 name: I_TECHNICALOBJECTTYPETEXT
-description: Technicalobjecttypetext
+description: "Technicalobjecttypetext"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

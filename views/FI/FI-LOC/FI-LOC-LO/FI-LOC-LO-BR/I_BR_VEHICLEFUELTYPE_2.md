@@ -1,6 +1,6 @@
 ---
 name: I_BR_VEHICLEFUELTYPE_2
-description: BR Vehiclefueltype 2
+description: "BR Vehiclefueltype 2"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

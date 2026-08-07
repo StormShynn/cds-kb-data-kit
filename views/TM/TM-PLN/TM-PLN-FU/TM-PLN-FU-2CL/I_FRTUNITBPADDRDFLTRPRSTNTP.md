@@ -1,6 +1,6 @@
 ---
 name: I_FRTUNITBPADDRDFLTRPRSTNTP
-description: Frtunitbpaddrdfltrprstntp
+description: "Frtunitbpaddrdfltrprstntp"
 app_component: TM-PLN-FU-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_QUALITYTASKTP_2
-description: Qualitytasktp 2
+description: "Qualitytasktp 2"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released

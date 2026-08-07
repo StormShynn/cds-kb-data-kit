@@ -1,6 +1,6 @@
 ---
 name: I_MRPAREASUBCONTRACTOR
-description: Mrpareasubcontractor
+description: "Mrpareasubcontractor"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRSETTLMTITEMPARTNER
-description: Supplier Settlement Item Partner
+description: "Supplier Settlement Item Partner"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTITEMPARTNER')/$value
-semantic_en: Supplier Settlement Item Partner
+semantic_en: "Supplier Settlement Item Partner"
 tags:
   - LO
   - component:LO-AB

@@ -1,13 +1,13 @@
 ---
 name: I_SUPDMNDALLDOCSUPTYPE
-description: Description of Supply Types
+description: "Description of Supply Types"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPDMNDALLDOCSUPTYPE')/$value
-semantic_en: Description of Supply Types
+semantic_en: "Description of Supply Types"
 tags:
   - LO
   - component:LO-RFM-ARN

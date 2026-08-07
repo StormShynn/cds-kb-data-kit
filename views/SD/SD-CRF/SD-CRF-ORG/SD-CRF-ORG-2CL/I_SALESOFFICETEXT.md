@@ -1,6 +1,6 @@
 ---
 name: I_SALESOFFICETEXT
-description: Salesofficetext
+description: "Salesofficetext"
 app_component: SD-CRF-ORG-2CL
 software_component: SAPSCORE
 release_state: released

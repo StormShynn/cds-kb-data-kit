@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRSETTLMTPLAINLONGTEXT
-description: Plain Long Text for Supplier Settlement
+description: "Plain Long Text for Supplier Settlement"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTPLAINLONGTEXT')/$value
-semantic_en: Plain Long Text for Supplier Settlement
+semantic_en: "Plain Long Text for Supplier Settlement"
 tags:
   - LO
   - component:LO-AB

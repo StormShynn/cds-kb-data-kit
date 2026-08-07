@@ -1,6 +1,6 @@
 ---
 name: I_REFREQUENCYSTARTTEXT
-description: Refrequencystarttext
+description: "Refrequencystarttext"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

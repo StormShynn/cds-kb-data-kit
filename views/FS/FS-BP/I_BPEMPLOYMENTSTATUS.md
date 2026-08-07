@@ -1,6 +1,6 @@
 ---
 name: I_BPEMPLOYMENTSTATUS
-description: Bpemploymentstatus
+description: "Bpemploymentstatus"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

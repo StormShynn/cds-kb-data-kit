@@ -1,13 +1,13 @@
 ---
 name: I_OBJECTASSETDOCUMENT
-description: Object Asset Document Details
+description: "Object Asset Document Details"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OBJECTASSETDOCUMENT')/$value
-semantic_en: Object Asset Document Details
+semantic_en: "Object Asset Document Details"
 tags:
   - FS
   - component:FS-CMS

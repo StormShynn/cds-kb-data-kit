@@ -1,6 +1,6 @@
 ---
 name: I_FINALCONFIRMATIONTYPE
-description: Finalconfirmationtype
+description: "Finalconfirmationtype"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

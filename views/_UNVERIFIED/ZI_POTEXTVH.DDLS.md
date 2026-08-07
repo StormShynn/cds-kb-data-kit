@@ -1,21 +1,21 @@
 ---
 name: ZI_POTEXTVH.DDLS
-description: Search help po note
+description: "Search help po note"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/antt122/PO_CASPSTONE_BE/blob/dff8585e22b42e0f6a33790f1e479a2d238829aa/src/zi_potextvh.ddls.asddls
-semantic_en: Search help po note — CDS view based on ttxid.
-semantic_vi: Search help po note — CDS view dựa trên ttxid.
+semantic_en: "Search help po note — CDS view based on ttxid."
+semantic_vi: "Search help po note — CDS view dựa trên ttxid."
 keywords:
-  - search
-  - help
-  - note
-  - text
-  - description
-  - object
+  - "search"
+  - "help"
+  - "note"
+  - "text"
+  - "description"
+  - "object"
 tags:
   - bo:purchaseorder
 ---

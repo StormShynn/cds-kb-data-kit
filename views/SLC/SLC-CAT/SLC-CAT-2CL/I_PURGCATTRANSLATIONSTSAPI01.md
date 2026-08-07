@@ -1,6 +1,6 @@
 ---
 name: I_PURGCATTRANSLATIONSTSAPI01
-description: Purgcattranslationstsapi 01
+description: "Purgcattranslationstsapi 01"
 app_component: SLC-CAT-2CL
 software_component: SAPSCORE
 release_state: released

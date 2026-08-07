@@ -1,6 +1,6 @@
 ---
 name: I_KZ_ELECTRONICDOCINVOICE
-description: KZ Electronicdocinvoice
+description: "KZ Electronicdocinvoice"
 app_component: CA-GTF-CSC-EDO-KZ
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_OPENCLOSEDDISPUTECASE
-description: Open and Closed Dispute Cases - Cube
+description: "Open and Closed Dispute Cases - Cube"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPENCLOSEDDISPUTECASE')/$value
-semantic_en: Open and Closed Dispute Cases - Cube
+semantic_en: "Open and Closed Dispute Cases - Cube"
 tags:
   - FIN
   - component:FIN-FSCM-DM-2CL

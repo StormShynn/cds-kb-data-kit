@@ -1,6 +1,6 @@
 ---
 name: I_SDAPPROVALREASONT
-description: Sdapprovalreasont
+description: "Sdapprovalreasont"
 app_component: SD-BF
 software_component: SAPSCORE
 release_state: released

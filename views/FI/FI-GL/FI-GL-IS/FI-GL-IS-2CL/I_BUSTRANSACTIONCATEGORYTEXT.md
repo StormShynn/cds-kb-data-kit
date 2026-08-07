@@ -1,6 +1,6 @@
 ---
 name: I_BUSTRANSACTIONCATEGORYTEXT
-description: Bustransactioncategorytext
+description: "Bustransactioncategorytext"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

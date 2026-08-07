@@ -1,6 +1,6 @@
 ---
 name: I_SALESCONTRACTITEMTP
-description: Salescontractitemtp
+description: "Salescontractitemtp"
 app_component: SD-SLS-OA-2CL
 software_component: SAPSCORE
 release_state: released

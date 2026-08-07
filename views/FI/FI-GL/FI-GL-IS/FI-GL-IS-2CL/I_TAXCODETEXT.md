@@ -1,6 +1,6 @@
 ---
 name: I_TAXCODETEXT
-description: Taxcodetext
+description: "Taxcodetext"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

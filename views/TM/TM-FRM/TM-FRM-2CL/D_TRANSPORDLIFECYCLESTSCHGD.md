@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDLIFECYCLESTSCHGD
-description: D Transpordlifecyclestschgd
+description: "D Transpordlifecyclestschgd"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

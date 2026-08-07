@@ -1,6 +1,6 @@
 ---
 name: I_LEGALTRANSACTIONAPI01
-description: Legaltransactionapi 01
+description: "Legaltransactionapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

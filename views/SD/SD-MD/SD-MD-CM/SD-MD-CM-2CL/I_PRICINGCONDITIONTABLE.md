@@ -1,6 +1,6 @@
 ---
 name: I_PRICINGCONDITIONTABLE
-description: Pricing ConditionTABLE
+description: "Pricing ConditionTABLE"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

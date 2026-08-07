@@ -1,24 +1,24 @@
 ---
 name: C_ANALYZESUPLRUTILZNQRY
-description: Suppliers Utilization
+description: "Suppliers Utilization"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ANALYZESUPLRUTILZNQRY')/$value
-semantic_en: Suppliers Utilization
-semantic_vi: Suppliers Utilization — CDS view tiêu dùng dựa trên C_AnalyzeSuplrUtilznCube.
+semantic_en: "Suppliers Utilization"
+semantic_vi: "Suppliers Utilization — CDS view tiêu dùng dựa trên C_AnalyzeSuplrUtilznCube."
 keywords:
-  - suppliers
-  - utilization
-  - supplier
-  - country
-  - region
-  - nmbr
-  - available
-  - number
-  - contracts
+  - "suppliers"
+  - "utilization"
+  - "supplier"
+  - "country"
+  - "region"
+  - "nmbr"
+  - "available"
+  - "number"
+  - "contracts"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

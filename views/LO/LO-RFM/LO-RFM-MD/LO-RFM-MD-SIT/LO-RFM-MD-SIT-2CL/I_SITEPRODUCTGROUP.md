@@ -1,13 +1,13 @@
 ---
 name: I_SITEPRODUCTGROUP
-description: Product Group Assignment to Site
+description: "Product Group Assignment to Site"
 app_component: LO-RFM-MD-SIT-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SITEPRODUCTGROUP')/$value
-semantic_en: Product Group Assignment to Site
+semantic_en: "Product Group Assignment to Site"
 tags:
   - LO
   - bo:material

@@ -1,6 +1,6 @@
 ---
 name: I_KNBNREPLNMTSTRGYTYPE
-description: Knbnreplnmtstrgytype
+description: "Knbnreplnmtstrgytype"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

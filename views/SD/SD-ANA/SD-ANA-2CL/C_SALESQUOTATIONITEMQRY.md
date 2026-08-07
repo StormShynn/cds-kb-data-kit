@@ -1,22 +1,22 @@
 ---
 name: C_SALESQUOTATIONITEMQRY
-description: This CDS view provides prerequisites for analyzing sales quotations on a variety of dimensions. It answers the following business questions: What are the net amounts of my sales quotations on a month-to-month basis? What is the item quantity of my sales quotations? Have my quotations been converted to orders? To what extent? What are the current situations of my quotations? Are they expiring, expired, or rejected?
+description: "This CDS view provides prerequisites for analyzing sales quotations on a variety of dimensions. It answers the following business questions: What are the net amounts of my sales quotations on a month-to-month basis? What is the item quantity of my sales quotations? Have my quotations been converted to orders? To what extent? What are the current situations of my quotations? Are they expiring, expired, or rejected?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESQUOTATIONITEMQRY')/$value
-semantic_en: This CDS view provides prerequisites for analyzing sales quotations on a variety of dimensions. It answers the following business questions: What are the net amounts of my sales quotations on a month-to-month basis? What is the item quantity of my sales quotations? Have my quotations been converted to orders? To what extent? What are the current situations of my quotations? Are they expiring, expired, or rejected?
-semantic_vi: Sales Quotation Item - Query — CDS view tiêu dùng dựa trên I_SalesQuotationItemCube_2.
+semantic_en: "This CDS view provides prerequisites for analyzing sales quotations on a variety of dimensions. It answers the following business questions: What are the net amounts of my sales quotations on a month-to-month basis? What is the item quantity of my sales quotations? Have my quotations been converted to orders? To what extent? What are the current situations of my quotations? Are they expiring, expired, or rejected?"
+semantic_vi: "Sales Quotation Item - Query — CDS view tiêu dùng dựa trên I_SalesQuotationItemCube_2."
 keywords:
-  - Sales Quotation Item - Query
-  - sales
-  - quotation
-  - item
-  - query
-  - type
-  - category
+  - "Sales Quotation Item - Query"
+  - "sales"
+  - "quotation"
+  - "item"
+  - "query"
+  - "type"
+  - "category"
 tags:
   - SD
   - bo:plant

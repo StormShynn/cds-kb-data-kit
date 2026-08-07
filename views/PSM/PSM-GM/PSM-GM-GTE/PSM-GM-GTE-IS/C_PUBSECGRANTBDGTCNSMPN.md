@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECGRANTBDGTCNSMPN
-description: Grant Budget Overview
+description: "Grant Budget Overview"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGRANTBDGTCNSMPN')/$value
-semantic_en: Grant Budget Overview
+semantic_en: "Grant Budget Overview"
 tags:
   - PSM
   - budget

@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCCHKDATASNPSHTTYPE
-description: Prodallocchkdatasnpshttype
+description: "Prodallocchkdatasnpshttype"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

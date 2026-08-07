@@ -1,20 +1,20 @@
 ---
 name: I_BILLGPLNDTEDESCCODE
-description: Billing Plan Date Description
+description: "Billing Plan Date Description"
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BILLGPLNDTEDESCCODE')/$value
-semantic_en: Billing Plan Date Description
-semantic_vi: Billing Plan Date Description — CDS view giao diện dựa trên tvtb.
+semantic_en: "Billing Plan Date Description"
+semantic_vi: "Billing Plan Date Description — CDS view giao diện dựa trên tvtb."
 keywords:
-  - billing
-  - plan
-  - date
-  - description
-  - code
+  - "billing"
+  - "plan"
+  - "date"
+  - "description"
+  - "code"
 tags:
   - SD
   - billing

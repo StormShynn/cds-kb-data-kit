@@ -1,6 +1,6 @@
 ---
 name: I_SLSPRICINGPROCEDURE
-description: Slspricingprocedure
+description: "Slspricingprocedure"
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released

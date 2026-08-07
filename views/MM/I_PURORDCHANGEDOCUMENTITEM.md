@@ -1,6 +1,6 @@
 ---
 name: I_PURORDCHANGEDOCUMENTITEM
-description: Purordchangedocumentitem
+description: "Purordchangedocumentitem"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

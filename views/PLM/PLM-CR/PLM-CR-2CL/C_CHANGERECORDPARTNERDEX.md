@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECORDPARTNERDEX
-description: Change RecordPARTNERDEX
+description: "Change RecordPARTNERDEX"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

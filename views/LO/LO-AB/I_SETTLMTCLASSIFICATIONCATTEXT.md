@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTCLASSIFICATIONCATTEXT
-description: This CDS view is used to select the settlement classification category. The CDS view provides the parameters for the domain WSETTLE_CATEGORY with the following values: Standard Document V - Renumeration Settlement (Chargeback)
+description: "This CDS view is used to select the settlement classification category. The CDS view provides the parameters for the domain WSETTLE_CATEGORY with the following values: Standard Document V - Renumeration Settlement (Chargeback)"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTCLASSIFICATIONCATTEXT')/$value
-semantic_en: This CDS view is used to select the settlement classification category. The CDS view provides the parameters for the domain WSETTLE_CATEGORY with the following values: Standard Document V - Renumeration Settlement (Chargeback)
+semantic_en: "This CDS view is used to select the settlement classification category. The CDS view provides the parameters for the domain WSETTLE_CATEGORY with the following values: Standard Document V - Renumeration Settlement (Chargeback)"
 tags:
   - LO
   - bo:companycode

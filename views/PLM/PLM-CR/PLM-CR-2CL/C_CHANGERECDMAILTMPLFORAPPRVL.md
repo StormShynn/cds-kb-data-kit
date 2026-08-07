@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECDMAILTMPLFORAPPRVL
-description: Changerecdmailtmplforapprvl
+description: "Changerecdmailtmplforapprvl"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

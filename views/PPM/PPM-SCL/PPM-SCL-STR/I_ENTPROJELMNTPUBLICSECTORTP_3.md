@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJELMNTPUBLICSECTORTP_3
-description: Entprojelmntpublicsectortp 3
+description: "Entprojelmntpublicsectortp 3"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

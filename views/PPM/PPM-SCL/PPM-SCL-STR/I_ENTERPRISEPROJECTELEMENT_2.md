@@ -1,6 +1,6 @@
 ---
 name: I_ENTERPRISEPROJECTELEMENT_2
-description: Enterpriseprojectelement 2
+description: "Enterpriseprojectelement 2"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

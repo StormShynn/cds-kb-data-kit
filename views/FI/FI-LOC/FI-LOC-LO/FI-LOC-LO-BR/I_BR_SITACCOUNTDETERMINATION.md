@@ -1,24 +1,24 @@
 ---
 name: I_BR_SITACCOUNTDETERMINATION
-description: This CDS view provides you with a list of the assignments of the general ledger of the transit stock accounts to valuation classes and to chart of accounts for Stock Transfer (STO). To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view provides you with a list of the assignments of the general ledger of the transit stock accounts to valuation classes and to chart of accounts for Stock Transfer (STO). To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_SITACCOUNTDETERMINATION')/$value
-semantic_en: This CDS view provides you with a list of the assignments of the general ledger of the transit stock accounts to valuation classes and to chart of accounts for Stock Transfer (STO). To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Brazil SiT Account Determination — CDS view giao diện dựa trên logbr_sit_accdet.
+semantic_en: "This CDS view provides you with a list of the assignments of the general ledger of the transit stock accounts to valuation classes and to chart of accounts for Stock Transfer (STO). To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Brazil SiT Account Determination — CDS view giao diện dựa trên logbr_sit_accdet."
 keywords:
-  - brazil
-  - sit
-  - account
-  - determination
-  - chart
-  - accounts
-  - material
-  - valuation
-  - class
+  - "brazil"
+  - "sit"
+  - "account"
+  - "determination"
+  - "chart"
+  - "accounts"
+  - "material"
+  - "valuation"
+  - "class"
 tags:
   - FI
   - account

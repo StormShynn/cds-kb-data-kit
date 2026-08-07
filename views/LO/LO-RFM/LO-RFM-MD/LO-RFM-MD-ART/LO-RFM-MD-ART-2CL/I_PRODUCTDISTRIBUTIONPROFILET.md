@@ -1,13 +1,13 @@
 ---
 name: I_PRODUCTDISTRIBUTIONPROFILET
-description: Product Distribution Profile - Text
+description: "Product Distribution Profile - Text"
 app_component: LO-RFM-MD-ART-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTDISTRIBUTIONPROFILET')/$value
-semantic_en: Product Distribution Profile - Text
+semantic_en: "Product Distribution Profile - Text"
 tags:
   - LO
   - bo:companycode

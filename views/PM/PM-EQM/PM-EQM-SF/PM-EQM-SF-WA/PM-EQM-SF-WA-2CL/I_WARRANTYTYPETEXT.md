@@ -1,6 +1,6 @@
 ---
 name: I_WARRANTYTYPETEXT
-description: Warrantytypetext
+description: "Warrantytypetext"
 app_component: PM-EQM-SF-WA-2CL
 software_component: SAPSCORE
 release_state: released

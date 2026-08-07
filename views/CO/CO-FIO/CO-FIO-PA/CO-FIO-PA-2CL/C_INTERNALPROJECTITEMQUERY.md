@@ -1,26 +1,26 @@
 ---
 name: C_INTERNALPROJECTITEMQUERY
-description: This CDS view is designed to provide analytical insights into internal project items, specifically focusing on engagement project margin items. It is intended for consumption in analytical queries, allowing users to filter and analyze data related to internal projects, such as financial metrics, project details, and associated entities. This CDS view provides the data to answer the following business questions: What is the financial performance of internal projects in terms of amounts in display currency? How do different company codes and profit centers contribute to the overall project performance? What are the fiscal year and period-specific financial metrics for internal projects? How do different sold products and customer groups impact project margins? What is the role of specific project managers and their associated projects in financial outcomes? How do different functional areas and segments contribute to project financials? What are the quantities and valuation quantities associated with internal projects? How do different general ledger accounts impact the financial performance of projects? What is the distribution of financial metrics across different currencies and debit/credit codes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide analytical insights into internal project items, specifically focusing on engagement project margin items. It is intended for consumption in analytical queries, allowing users to filter and analyze data related to internal projects, such as financial metrics, project details, and associated entities. This CDS view provides the data to answer the following business questions: What is the financial performance of internal projects in terms of amounts in display currency? How do different company codes and profit centers contribute to the overall project performance? What are the fiscal year and period-specific financial metrics for internal projects? How do different sold products and customer groups impact project margins? What is the role of specific project managers and their associated projects in financial outcomes? How do different functional areas and segments contribute to project financials? What are the quantities and valuation quantities associated with internal projects? How do different general ledger accounts impact the financial performance of projects? What is the distribution of financial metrics across different currencies and debit/credit codes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INTERNALPROJECTITEMQUERY')/$value
-semantic_en: This CDS view is designed to provide analytical insights into internal project items, specifically focusing on engagement project margin items. It is intended for consumption in analytical queries, allowing users to filter and analyze data related to internal projects, such as financial metrics, project details, and associated entities. This CDS view provides the data to answer the following business questions: What is the financial performance of internal projects in terms of amounts in display currency? How do different company codes and profit centers contribute to the overall project performance? What are the fiscal year and period-specific financial metrics for internal projects? How do different sold products and customer groups impact project margins? What is the role of specific project managers and their associated projects in financial outcomes? How do different functional areas and segments contribute to project financials? What are the quantities and valuation quantities associated with internal projects? How do different general ledger accounts impact the financial performance of projects? What is the distribution of financial metrics across different currencies and debit/credit codes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Internal Project Item Query — CDS view tiêu dùng dựa trên Internal Project Item Query.
+semantic_en: "This CDS view is designed to provide analytical insights into internal project items, specifically focusing on engagement project margin items. It is intended for consumption in analytical queries, allowing users to filter and analyze data related to internal projects, such as financial metrics, project details, and associated entities. This CDS view provides the data to answer the following business questions: What is the financial performance of internal projects in terms of amounts in display currency? How do different company codes and profit centers contribute to the overall project performance? What are the fiscal year and period-specific financial metrics for internal projects? How do different sold products and customer groups impact project margins? What is the role of specific project managers and their associated projects in financial outcomes? How do different functional areas and segments contribute to project financials? What are the quantities and valuation quantities associated with internal projects? How do different general ledger accounts impact the financial performance of projects? What is the distribution of financial metrics across different currencies and debit/credit codes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Internal Project Item Query — CDS view tiêu dùng dựa trên Internal Project Item Query."
 keywords:
-  - Internal Project Item Query
-  - internal
-  - project
-  - item
-  - query
-  - ledger
-  - company
-  - code
-  - fiscal
-  - year
-  - period
+  - "Internal Project Item Query"
+  - "internal"
+  - "project"
+  - "item"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - CO
   - account

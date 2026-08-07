@@ -1,6 +1,6 @@
 ---
 name: I_SRVCCONFITEMAPPOINTMENTTP
-description: Srvcconfitemappointmenttp
+description: "Srvcconfitemappointmenttp"
 app_component: CRM-S4-SRV-SCO-2CL
 software_component: SAPSCORE
 release_state: released

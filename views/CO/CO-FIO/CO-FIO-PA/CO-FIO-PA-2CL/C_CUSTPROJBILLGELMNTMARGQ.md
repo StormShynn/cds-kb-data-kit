@@ -1,30 +1,30 @@
 ---
 name: C_CUSTPROJBILLGELMNTMARGQ
-description: Customer Proj with Billing Element Query
+description: "Customer Proj with Billing Element Query"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTPROJBILLGELMNTMARGQ')/$value
-semantic_en: Customer Proj with Billing Element Query
-semantic_vi: Customer Proj with Billing Element Query — CDS view tiêu dùng dựa trên Customer Proj with Billing Element Query.
+semantic_en: "Customer Proj with Billing Element Query"
+semantic_vi: "Customer Proj with Billing Element Query — CDS view tiêu dùng dựa trên Customer Proj with Billing Element Query."
 keywords:
-  - Customer Proj with Billing Element Query
-  - customer
-  - proj
-  - with
-  - billing
-  - element
-  - query
-  - company
-  - code
-  - currency
-  - field
-  - fiscal
-  - year
-  - ledger
-  - variant
+  - "Customer Proj with Billing Element Query"
+  - "customer"
+  - "proj"
+  - "with"
+  - "billing"
+  - "element"
+  - "query"
+  - "company"
+  - "code"
+  - "currency"
+  - "field"
+  - "fiscal"
+  - "year"
+  - "ledger"
+  - "variant"
 tags:
   - CO
   - billing

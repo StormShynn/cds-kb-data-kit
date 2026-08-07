@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMASTERLOGACCMACTIVE
-description: This CDS view provides information on whether access control management (ACM) is active for the change master object. This CDS view provides the prerequisites for answering the following business question: Is access control management (ACM) active for the change master object?
+description: "This CDS view provides information on whether access control management (ACM) is active for the change master object. This CDS view provides the prerequisites for answering the following business question: Is access control management (ACM) active for the change master object?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERLOGACCMACTIVE')/$value
-semantic_en: This CDS view provides information on whether access control management (ACM) is active for the change master object. This CDS view provides the prerequisites for answering the following business question: Is access control management (ACM) active for the change master object?
+semantic_en: "This CDS view provides information on whether access control management (ACM) is active for the change master object. This CDS view provides the prerequisites for answering the following business question: Is access control management (ACM) active for the change master object?"
 tags:
   - PLM
   - bo:plant

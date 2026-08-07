@@ -1,13 +1,13 @@
 ---
 name: I_MKTDATAFXRATECUBE
-description: This CDS view provides the prerequisites for answering the following business questions: What are the foreign exchange rates for a period of time? What are the currency pairs for the foreign exchange rates? What are exchange rate types for foreign exchange rates?
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the foreign exchange rates for a period of time? What are the currency pairs for the foreign exchange rates? What are exchange rate types for foreign exchange rates?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MKTDATAFXRATECUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the foreign exchange rates for a period of time? What are the currency pairs for the foreign exchange rates? What are exchange rate types for foreign exchange rates?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the foreign exchange rates for a period of time? What are the currency pairs for the foreign exchange rates? What are exchange rate types for foreign exchange rates?"
 tags:
   - FIN
   - bo:plant

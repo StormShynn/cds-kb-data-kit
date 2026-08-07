@@ -1,6 +1,6 @@
 ---
 name: I_LOGISTICSEXECUTIONSCENARIO
-description: Logisticsexecutionscenario
+description: "Logisticsexecutionscenario"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

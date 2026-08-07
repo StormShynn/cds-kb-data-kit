@@ -1,6 +1,6 @@
 ---
 name: I_CRDTSCRANDLMTCALCRULETXT
-description: Crdtscrandlmtcalcruletxt
+description: "Crdtscrandlmtcalcruletxt"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

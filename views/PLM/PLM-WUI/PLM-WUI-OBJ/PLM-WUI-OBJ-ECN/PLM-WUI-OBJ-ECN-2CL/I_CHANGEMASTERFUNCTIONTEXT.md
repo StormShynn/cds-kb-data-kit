@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMASTERFUNCTIONTEXT
-description: This CDS view provides the prerequisites for answering the following business question: Which are the possible functions that can be assigned to change numbers?
+description: "This CDS view provides the prerequisites for answering the following business question: Which are the possible functions that can be assigned to change numbers?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERFUNCTIONTEXT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: Which are the possible functions that can be assigned to change numbers?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: Which are the possible functions that can be assigned to change numbers?"
 tags:
   - PLM
   - bo:plant

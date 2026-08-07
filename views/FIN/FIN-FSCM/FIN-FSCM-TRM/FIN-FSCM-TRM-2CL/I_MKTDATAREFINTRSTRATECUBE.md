@@ -1,13 +1,13 @@
 ---
 name: I_MKTDATAREFINTRSTRATECUBE
-description: This CDS view provides the prerequisites for answering the following business questions: What is the reference interest rate for a specified currency in a period of time?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the reference interest rate for a specified currency in a period of time?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MKTDATAREFINTRSTRATECUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the reference interest rate for a specified currency in a period of time?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the reference interest rate for a specified currency in a period of time?"
 tags:
   - FIN
   - bo:companycode

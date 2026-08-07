@@ -1,6 +1,6 @@
 ---
 name: D_DEBITMEMOREQOVRLRJCNSTSCHGD
-description: D Debitmemoreqovrlrjcnstschgd
+description: "D Debitmemoreqovrlrjcnstschgd"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

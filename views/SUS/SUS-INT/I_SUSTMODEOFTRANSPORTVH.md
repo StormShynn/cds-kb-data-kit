@@ -1,6 +1,6 @@
 ---
 name: I_SUSTMODEOFTRANSPORTVH
-description: Sustmodeoftransportvh
+description: "Sustmodeoftransportvh"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

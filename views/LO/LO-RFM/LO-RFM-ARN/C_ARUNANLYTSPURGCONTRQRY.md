@@ -1,26 +1,26 @@
 ---
 name: C_ARUNANLYTSPURGCONTRQRY
-description: Purchasing Contract Details Query
+description: "Purchasing Contract Details Query"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSPURGCONTRQRY')/$value
-semantic_en: Purchasing Contract Details Query
-semantic_vi: Purchasing Contract Details Query — CDS view tiêu dùng dựa trên I_ARunAnlytsPurgContrCube.
+semantic_en: "Purchasing Contract Details Query"
+semantic_vi: "Purchasing Contract Details Query — CDS view tiêu dùng dựa trên I_ARunAnlytsPurgContrCube."
 keywords:
-  - purchasing
-  - contract
-  - details
-  - query
-  - product
-  - plant
-  - batch
-  - storage
-  - location
-  - supply
-  - number
+  - "purchasing"
+  - "contract"
+  - "details"
+  - "query"
+  - "product"
+  - "plant"
+  - "batch"
+  - "storage"
+  - "location"
+  - "supply"
+  - "number"
 tags:
   - LO
   - component:LO-RFM-ARN

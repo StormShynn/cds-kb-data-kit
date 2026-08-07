@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDOBJLINKVH
-description: Documentinforecordobjlinkvh
+description: "Documentinforecordobjlinkvh"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJWRKBRKDWNSTRUCELMNTVH
-description: Entprojwrkbrkdwnstrucelmntvh
+description: "Entprojwrkbrkdwnstrucelmntvh"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

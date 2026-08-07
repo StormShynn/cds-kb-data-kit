@@ -1,6 +1,6 @@
 ---
 name: D_CRDMMREQOVRLSDPROCSTSCHGD
-description: D Crdmmreqovrlsdprocstschgd
+description: "D Crdmmreqovrlsdprocstschgd"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CONTRACCTTAXEXEMPTIONTP
-description: Contraccttaxexemptiontp
+description: "Contraccttaxexemptiontp"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_CMPLNCOBLGNASSIGNMENTCUBE
-description: Compliance Obligations Assignment - Cube
+description: "Compliance Obligations Assignment - Cube"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLNCOBLGNASSIGNMENTCUBE')/$value
-semantic_en: Compliance Obligations Assignment - Cube
+semantic_en: "Compliance Obligations Assignment - Cube"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

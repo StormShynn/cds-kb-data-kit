@@ -1,6 +1,6 @@
 ---
 name: I_PRODCMPLNCLBLFLDVERSTXTTP_2
-description: Prodcmplnclblfldverstxttp 2
+description: "Prodcmplnclblfldverstxttp 2"
 app_component: EHS-SUS-SDS
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PRODNRTGOPEQUIPPRTASSGMTTP_2
-description: Prodnrtgopequipprtassgmttp 2
+description: "Prodnrtgopequipprtassgmttp 2"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

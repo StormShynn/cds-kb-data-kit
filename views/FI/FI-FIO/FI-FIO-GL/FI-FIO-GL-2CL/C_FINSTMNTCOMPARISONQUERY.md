@@ -1,27 +1,27 @@
 ---
 name: C_FINSTMNTCOMPARISONQUERY
-description: Financial Statement Comparison Query
+description: "Financial Statement Comparison Query"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FINSTMNTCOMPARISONQUERY')/$value
-semantic_en: Financial Statement Comparison Query
-semantic_vi: Financial Statement Comparison Query — CDS view tiêu dùng dựa trên Financial Statement Comparison Query.
+semantic_en: "Financial Statement Comparison Query"
+semantic_vi: "Financial Statement Comparison Query — CDS view tiêu dùng dựa trên Financial Statement Comparison Query."
 keywords:
-  - financial
-  - statement
-  - comparison
-  - query
-  - leaf
-  - item
-  - company
-  - code
-  - account
-  - profit
-  - center
-  - segment
+  - "financial"
+  - "statement"
+  - "comparison"
+  - "query"
+  - "leaf"
+  - "item"
+  - "company"
+  - "code"
+  - "account"
+  - "profit"
+  - "center"
+  - "segment"
 tags:
   - FI
   - bo:companycode

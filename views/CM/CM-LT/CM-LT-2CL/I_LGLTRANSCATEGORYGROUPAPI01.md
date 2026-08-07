@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSCATEGORYGROUPAPI01
-description: Lgltranscategorygroupapi 01
+description: "Lgltranscategorygroupapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

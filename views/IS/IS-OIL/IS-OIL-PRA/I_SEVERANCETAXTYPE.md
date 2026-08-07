@@ -1,13 +1,13 @@
 ---
 name: I_SEVERANCETAXTYPE
-description: Severance Tax Type
+description: "Severance Tax Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEVERANCETAXTYPE')/$value
-semantic_en: Severance Tax Type
+semantic_en: "Severance Tax Type"
 tags:
   - IS
   - component:IS-OIL-PRA

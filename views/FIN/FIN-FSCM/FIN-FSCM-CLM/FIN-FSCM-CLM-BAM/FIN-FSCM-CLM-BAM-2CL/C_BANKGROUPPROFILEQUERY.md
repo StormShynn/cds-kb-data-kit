@@ -1,13 +1,13 @@
 ---
 name: C_BANKGROUPPROFILEQUERY
-description: This CDS view provides the prerequisites for answering the following business questions: What are the bank groups that have most bank accounts? What are the bank groups that are used in most company codes?
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the bank groups that have most bank accounts? What are the bank groups that are used in most company codes?"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BANKGROUPPROFILEQUERY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the bank groups that have most bank accounts? What are the bank groups that are used in most company codes?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the bank groups that have most bank accounts? What are the bank groups that are used in most company codes?"
 tags:
   - FIN
   - account

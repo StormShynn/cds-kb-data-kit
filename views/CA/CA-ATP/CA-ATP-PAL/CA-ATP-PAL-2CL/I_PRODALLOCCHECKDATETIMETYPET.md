@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCCHECKDATETIMETYPET
-description: Prodalloccheckdatetimetypet
+description: "Prodalloccheckdatetimetypet"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNMATERIALGROUPTP
-description: CNSLDTNMaterial GroupTP
+description: "CNSLDTNMaterial GroupTP"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

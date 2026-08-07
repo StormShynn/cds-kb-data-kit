@@ -1,13 +1,13 @@
 ---
 name: I_EWM_STORAGETYPEROLETEXT
-description: Storage Type Role - Text
+description: "Storage Type Role - Text"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_STORAGETYPEROLETEXT')/$value
-semantic_en: Storage Type Role - Text
+semantic_en: "Storage Type Role - Text"
 tags:
   - SCM
   - component:SCM-EWM-WOP-2CL

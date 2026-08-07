@@ -1,13 +1,13 @@
 ---
 name: I_ENGAGEMENTPROJECTSRVCORGTEXT
-description: This CDS view provides the the descriptive name of a service organization.
+description: "This CDS view provides the the descriptive name of a service organization."
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGAGEMENTPROJECTSRVCORGTEXT')/$value
-semantic_en: This CDS view provides the the descriptive name of a service organization.
+semantic_en: "This CDS view provides the the descriptive name of a service organization."
 tags:
   - CA
   - bo:project

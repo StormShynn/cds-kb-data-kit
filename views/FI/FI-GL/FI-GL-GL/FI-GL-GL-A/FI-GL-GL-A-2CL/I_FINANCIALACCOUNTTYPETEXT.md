@@ -1,6 +1,6 @@
 ---
 name: I_FINANCIALACCOUNTTYPETEXT
-description: Financialaccounttypetext
+description: "Financialaccounttypetext"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

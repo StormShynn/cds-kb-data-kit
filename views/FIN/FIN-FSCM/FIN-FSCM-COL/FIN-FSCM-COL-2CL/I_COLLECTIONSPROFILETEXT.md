@@ -1,6 +1,6 @@
 ---
 name: I_COLLECTIONSPROFILETEXT
-description: Collectionsprofiletext
+description: "Collectionsprofiletext"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

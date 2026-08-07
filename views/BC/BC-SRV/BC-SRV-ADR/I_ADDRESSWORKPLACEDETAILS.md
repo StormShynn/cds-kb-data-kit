@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSWORKPLACEDETAILS
-description: Addressworkplacedetails
+description: "Addressworkplacedetails"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

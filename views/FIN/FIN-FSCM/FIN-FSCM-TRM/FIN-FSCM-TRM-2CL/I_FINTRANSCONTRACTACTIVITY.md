@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSCONTRACTACTIVITY
-description: This CDS view provides access to data of financial transaction contract activity. You can therefore use the data to analyze financial transactions by these attributes. This CDS view provides the prerequisites for answering the following business questions: When was the financial transaction contract activity concluded? Which exhange rate was aggreed on?
+description: "This CDS view provides access to data of financial transaction contract activity. You can therefore use the data to analyze financial transactions by these attributes. This CDS view provides the prerequisites for answering the following business questions: When was the financial transaction contract activity concluded? Which exhange rate was aggreed on?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSCONTRACTACTIVITY')/$value
-semantic_en: This CDS view provides access to data of financial transaction contract activity. You can therefore use the data to analyze financial transactions by these attributes. This CDS view provides the prerequisites for answering the following business questions: When was the financial transaction contract activity concluded? Which exhange rate was aggreed on?
+semantic_en: "This CDS view provides access to data of financial transaction contract activity. You can therefore use the data to analyze financial transactions by these attributes. This CDS view provides the prerequisites for answering the following business questions: When was the financial transaction contract activity concluded? Which exhange rate was aggreed on?"
 tags:
   - FIN
   - bo:companycode

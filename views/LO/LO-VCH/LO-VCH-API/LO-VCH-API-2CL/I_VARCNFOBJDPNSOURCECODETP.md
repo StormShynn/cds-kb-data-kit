@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFOBJDPNSOURCECODETP
-description: Varcnfobjdpnsourcecodetp
+description: "Varcnfobjdpnsourcecodetp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGISSUETYPE
-description: Billingissuetype
+description: "Billingissuetype"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

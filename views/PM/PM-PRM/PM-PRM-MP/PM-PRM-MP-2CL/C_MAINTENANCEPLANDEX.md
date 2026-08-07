@@ -1,26 +1,26 @@
 ---
 name: C_MAINTENANCEPLANDEX
-description: This CDS view provides the prerequisites for answering the following business questions: What is the description of the maintenance plan? What is the category of the maintenance plan? What is the creation date of the maintenance plan? Who created the maintenance plan? When was the last time the maintenance plan changed? Who changed the maintenance plan? What is the related maintenance strategy type if the maintenance plan is a strategy plan? What are the details of the maintenance cycle? How many maintenance items are in the maintenance plan? What are the scheduling parameters of the maintenance plan?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the description of the maintenance plan? What is the category of the maintenance plan? What is the creation date of the maintenance plan? Who created the maintenance plan? When was the last time the maintenance plan changed? Who changed the maintenance plan? What is the related maintenance strategy type if the maintenance plan is a strategy plan? What are the details of the maintenance cycle? How many maintenance items are in the maintenance plan? What are the scheduling parameters of the maintenance plan?"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEPLANDEX')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the description of the maintenance plan? What is the category of the maintenance plan? What is the creation date of the maintenance plan? Who created the maintenance plan? When was the last time the maintenance plan changed? Who changed the maintenance plan? What is the related maintenance strategy type if the maintenance plan is a strategy plan? What are the details of the maintenance cycle? How many maintenance items are in the maintenance plan? What are the scheduling parameters of the maintenance plan?
-semantic_vi: Maintenance Plan Data Extractor — CDS view tiêu dùng dựa trên I_MaintenancePlanCycle.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the description of the maintenance plan? What is the category of the maintenance plan? What is the creation date of the maintenance plan? Who created the maintenance plan? When was the last time the maintenance plan changed? Who changed the maintenance plan? What is the related maintenance strategy type if the maintenance plan is a strategy plan? What are the details of the maintenance cycle? How many maintenance items are in the maintenance plan? What are the scheduling parameters of the maintenance plan?"
+semantic_vi: "Maintenance Plan Data Extractor — CDS view tiêu dùng dựa trên I_MaintenancePlanCycle."
 keywords:
-  - Maintenance Plan Data Extractor
-  - maintenance
-  - plan
-  - data
-  - extractor
-  - cycle
-  - desc
-  - creation
-  - date
-  - created
-  - user
+  - "Maintenance Plan Data Extractor"
+  - "maintenance"
+  - "plan"
+  - "data"
+  - "extractor"
+  - "cycle"
+  - "desc"
+  - "creation"
+  - "date"
+  - "created"
+  - "user"
 tags:
   - PM
   - bo:plant

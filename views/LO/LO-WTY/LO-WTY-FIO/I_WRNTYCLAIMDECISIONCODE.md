@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMDECISIONCODE
-description: Wrntyclaimdecisioncode
+description: "Wrntyclaimdecisioncode"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

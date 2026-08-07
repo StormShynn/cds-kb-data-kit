@@ -1,13 +1,13 @@
 ---
 name: I_CRSCOSETTLMTCATTEXT
-description: This CDS view exposes fixed values of the Cross Company Settlement Status Item field.
+description: "This CDS view exposes fixed values of the Cross Company Settlement Status Item field."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRSCOSETTLMTCATTEXT')/$value
-semantic_en: This CDS view exposes fixed values of the Cross Company Settlement Status Item field.
+semantic_en: "This CDS view exposes fixed values of the Cross Company Settlement Status Item field."
 tags:
   - LO
   - bo:companycode

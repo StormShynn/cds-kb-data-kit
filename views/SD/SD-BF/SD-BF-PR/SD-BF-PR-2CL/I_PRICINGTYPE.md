@@ -1,6 +1,6 @@
 ---
 name: I_PRICINGTYPE
-description: Pricingtype
+description: "Pricingtype"
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released

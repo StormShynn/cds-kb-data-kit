@@ -1,6 +1,6 @@
 ---
 name: I_MAINTTASKLISTOPRELSHPTP
-description: Maintenance Task ListOPRELSHPTP
+description: "Maintenance Task ListOPRELSHPTP"
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

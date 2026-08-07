@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_DSPUTTOTPROCSTPSTSTEXT
-description: Custom and Strd Proc Step Stat - Text
+description: "Custom and Strd Proc Step Stat - Text"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DSPUTTOTPROCSTPSTSTEXT')/$value
-semantic_en: Custom and Strd Proc Step Stat - Text
+semantic_en: "Custom and Strd Proc Step Stat - Text"
 tags:
   - FIN
   - bo:project

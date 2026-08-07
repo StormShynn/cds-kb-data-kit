@@ -1,6 +1,6 @@
 ---
 name: I_BR_VEHICLEUSAGE_2
-description: BR Vehicleusage 2
+description: "BR Vehicleusage 2"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

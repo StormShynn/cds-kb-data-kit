@@ -1,6 +1,6 @@
 ---
 name: I_CALENDARDATE
-description: Calendardate
+description: "Calendardate"
 app_component: CA-GTF-DF
 software_component: SAP_BASIS
 release_state: released

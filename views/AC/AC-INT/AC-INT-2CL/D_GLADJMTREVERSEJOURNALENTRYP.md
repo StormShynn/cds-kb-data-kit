@@ -1,6 +1,6 @@
 ---
 name: D_GLADJMTREVERSEJOURNALENTRYP
-description: D GLADJMTREVERSEJournal EntryP
+description: "D GLADJMTREVERSEJournal EntryP"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

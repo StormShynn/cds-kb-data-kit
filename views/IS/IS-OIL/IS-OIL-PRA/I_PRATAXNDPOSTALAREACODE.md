@@ -1,13 +1,13 @@
 ---
 name: I_PRATAXNDPOSTALAREACODE
-description: Production Revenue Accounting Tax North Dakota Postal Area Code
+description: "Production Revenue Accounting Tax North Dakota Postal Area Code"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXNDPOSTALAREACODE')/$value
-semantic_en: Production Revenue Accounting Tax North Dakota Postal Area Code
+semantic_en: "Production Revenue Accounting Tax North Dakota Postal Area Code"
 tags:
   - IS
   - account

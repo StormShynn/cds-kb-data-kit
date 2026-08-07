@@ -1,6 +1,6 @@
 ---
 name: I_BR_VEHICLERESTRICTION
-description: BR Vehiclerestriction
+description: "BR Vehiclerestriction"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

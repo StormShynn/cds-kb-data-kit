@@ -1,6 +1,6 @@
 ---
 name: I_SALESSPCFCPRODUCTGROUP4TEXT
-description: Salesspcfcproductgroup 4TEXT
+description: "Salesspcfcproductgroup 4TEXT"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

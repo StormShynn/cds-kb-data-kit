@@ -1,13 +1,13 @@
 ---
 name: I_PERSONWORKAGRMTSTATUS
-description: This view provides the prerequisites for answering the following business questions: When is the workagreement active or inactive?
+description: "This view provides the prerequisites for answering the following business questions: When is the workagreement active or inactive?"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSONWORKAGRMTSTATUS')/$value
-semantic_en: This view provides the prerequisites for answering the following business questions: When is the workagreement active or inactive?
+semantic_en: "This view provides the prerequisites for answering the following business questions: When is the workagreement active or inactive?"
 tags:
   - CA
   - bo:plant

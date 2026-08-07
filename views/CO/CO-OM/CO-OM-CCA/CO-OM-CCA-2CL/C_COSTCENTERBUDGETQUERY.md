@@ -1,26 +1,26 @@
 ---
 name: C_COSTCENTERBUDGETQUERY
-description: Cost Center Budget - Query
+description: "Cost Center Budget - Query"
 app_component: CO-OM-CCA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COSTCENTERBUDGETQUERY')/$value
-semantic_en: Cost Center Budget - Query
-semantic_vi: Cost Center Budget - Query — CDS view tiêu dùng dựa trên Cost Center Budget - Query.
+semantic_en: "Cost Center Budget - Query"
+semantic_vi: "Cost Center Budget - Query — CDS view tiêu dùng dựa trên Cost Center Budget - Query."
 keywords:
-  - cost
-  - center
-  - budget
-  - query
-  - ledger
-  - statistical
-  - origin
-  - active
-  - controlling
-  - area
-  - hier
+  - "cost"
+  - "center"
+  - "budget"
+  - "query"
+  - "ledger"
+  - "statistical"
+  - "origin"
+  - "active"
+  - "controlling"
+  - "area"
+  - "hier"
 tags:
   - CO
   - budget

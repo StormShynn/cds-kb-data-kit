@@ -1,13 +1,13 @@
 ---
 name: I_BANKPAYMENTDOCUMENT
-description: Payment Documents C1 contract
+description: "Payment Documents C1 contract"
 app_component: FIN-FSCM-BNK-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKPAYMENTDOCUMENT')/$value
-semantic_en: Payment Documents C1 contract
+semantic_en: "Payment Documents C1 contract"
 tags:
   - FIN
   - component:FIN-FSCM-BNK-2CL

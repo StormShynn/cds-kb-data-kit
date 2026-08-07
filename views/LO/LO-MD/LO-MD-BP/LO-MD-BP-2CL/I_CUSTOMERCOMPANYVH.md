@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERCOMPANYVH
-description: Customer CompanyVH
+description: "Customer CompanyVH"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

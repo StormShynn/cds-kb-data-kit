@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDEROPCOMPONENTTP_2
-description: Maintorderopcomponenttp 2
+description: "Maintorderopcomponenttp 2"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

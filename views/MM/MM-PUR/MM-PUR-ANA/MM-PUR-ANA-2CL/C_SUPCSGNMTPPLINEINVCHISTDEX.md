@@ -1,6 +1,6 @@
 ---
 name: C_SUPCSGNMTPPLINEINVCHISTDEX
-description: Supcsgnmtpplineinvchistdex
+description: "Supcsgnmtpplineinvchistdex"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

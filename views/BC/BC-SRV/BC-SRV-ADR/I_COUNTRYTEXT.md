@@ -1,6 +1,6 @@
 ---
 name: I_COUNTRYTEXT
-description: Countrytext
+description: "Countrytext"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

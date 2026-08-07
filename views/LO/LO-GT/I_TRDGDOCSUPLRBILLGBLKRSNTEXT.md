@@ -1,13 +1,13 @@
 ---
 name: I_TRDGDOCSUPLRBILLGBLKRSNTEXT
-description: Blk Rsn for Suplr Billg in Trdg Doc - Txt
+description: "Blk Rsn for Suplr Billg in Trdg Doc - Txt"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGDOCSUPLRBILLGBLKRSNTEXT')/$value
-semantic_en: Blk Rsn for Suplr Billg in Trdg Doc - Txt
+semantic_en: "Blk Rsn for Suplr Billg in Trdg Doc - Txt"
 tags:
   - LO
   - component:LO-GT

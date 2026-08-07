@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERSTDVH
-description: Work CenterSTDVH
+description: "Work CenterSTDVH"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

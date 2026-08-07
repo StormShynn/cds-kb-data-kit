@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERTEXTBYSEMANTICKEY
-description: Work CenterTEXTBYSEMANTICKEY
+description: "Work CenterTEXTBYSEMANTICKEY"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_RETSMGMTPROCESS
-description: Retsmgmtprocess
+description: "Retsmgmtprocess"
 app_component: LO-ARM-2CL
 software_component: SAPSCORE
 release_state: released

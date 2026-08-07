@@ -1,6 +1,6 @@
 ---
 name: I_PRODNORDOPERATIONCAPACITYTP
-description: Prodnordoperationcapacitytp
+description: "Prodnordoperationcapacitytp"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

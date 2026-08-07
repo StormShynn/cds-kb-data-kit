@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMDOCSTATUSAPI01
-description: Lglcntntmdocstatusapi 01
+description: "Lglcntntmdocstatusapi 01"
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

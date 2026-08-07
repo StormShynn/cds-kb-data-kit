@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERWITHOUTCHARGETP
-description: Sales OrderWITHOUTCHARGETP
+description: "Sales OrderWITHOUTCHARGETP"
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: /DCO/I_DSPUTACCTGDOCUMENTTP
-description: Dsputacctgdocumenttp
+description: "Dsputacctgdocumenttp"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

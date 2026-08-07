@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERCAPACITYSHIFTTP
-description: Work CenterCAPACITYSHIFTTP
+description: "Work CenterCAPACITYSHIFTTP"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

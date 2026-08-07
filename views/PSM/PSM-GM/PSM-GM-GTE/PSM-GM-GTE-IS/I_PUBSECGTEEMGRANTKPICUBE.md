@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECGTEEMGRANTKPICUBE
-description: Grant Key Performance Indicators - Cube
+description: "Grant Key Performance Indicators - Cube"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECGTEEMGRANTKPICUBE')/$value
-semantic_en: Grant Key Performance Indicators - Cube
+semantic_en: "Grant Key Performance Indicators - Cube"
 tags:
   - PSM
   - component:PSM-GM-GTE-IS

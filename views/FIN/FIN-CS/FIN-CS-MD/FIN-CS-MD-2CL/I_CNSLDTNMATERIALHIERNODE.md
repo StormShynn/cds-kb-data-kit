@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNMATERIALHIERNODE
-description: Cnsldtnmaterialhiernode
+description: "Cnsldtnmaterialhiernode"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CN_BILLOFEXCHANGEBLOCKVH
-description: CN Billofexchangeblockvh
+description: "CN Billofexchangeblockvh"
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

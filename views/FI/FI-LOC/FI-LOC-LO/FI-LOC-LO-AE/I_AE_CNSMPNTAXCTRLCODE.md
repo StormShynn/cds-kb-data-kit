@@ -1,6 +1,6 @@
 ---
 name: I_AE_CNSMPNTAXCTRLCODE
-description: AE Cnsmpntaxctrlcode
+description: "AE Cnsmpntaxctrlcode"
 app_component: FI-LOC-LO-AE
 software_component: SAPSCORE
 release_state: released

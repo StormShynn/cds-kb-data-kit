@@ -1,6 +1,6 @@
 ---
 name: I_TAXCONDITIONTYPETEXT
-description: Taxconditiontypetext
+description: "Taxconditiontypetext"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

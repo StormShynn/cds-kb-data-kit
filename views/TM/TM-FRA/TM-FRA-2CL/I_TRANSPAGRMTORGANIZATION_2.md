@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPAGRMTORGANIZATION_2
-description: Transpagrmtorganization 2
+description: "Transpagrmtorganization 2"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

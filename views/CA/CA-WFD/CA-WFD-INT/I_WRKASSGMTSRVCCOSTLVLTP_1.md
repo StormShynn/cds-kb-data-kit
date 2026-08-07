@@ -1,6 +1,6 @@
 ---
 name: I_WRKASSGMTSRVCCOSTLVLTP_1
-description: Wrkassgmtsrvccostlvltp 1
+description: "Wrkassgmtsrvccostlvltp 1"
 app_component: CA-WFD-INT
 software_component: SAPSCORE
 release_state: released

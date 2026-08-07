@@ -1,6 +1,6 @@
 ---
 name: I_LANGUAGE
-description: Language
+description: "Language"
 app_component: BC-DOC-TTL
 software_component: SAP_BASIS
 release_state: released

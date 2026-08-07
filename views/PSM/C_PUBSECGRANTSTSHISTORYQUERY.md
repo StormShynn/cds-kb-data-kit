@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECGRANTSTSHISTORYQUERY
-description: Grant Status History - Query
+description: "Grant Status History - Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGRANTSTSHISTORYQUERY')/$value
-semantic_en: Grant Status History - Query
+semantic_en: "Grant Status History - Query"
 tags:
   - PSM
   - component:PSM

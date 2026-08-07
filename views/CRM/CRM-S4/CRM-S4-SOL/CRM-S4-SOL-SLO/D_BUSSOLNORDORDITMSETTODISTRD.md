@@ -1,6 +1,6 @@
 ---
 name: D_BUSSOLNORDORDITMSETTODISTRD
-description: D Bussolnordorditmsettodistrd
+description: "D Bussolnordorditmsettodistrd"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

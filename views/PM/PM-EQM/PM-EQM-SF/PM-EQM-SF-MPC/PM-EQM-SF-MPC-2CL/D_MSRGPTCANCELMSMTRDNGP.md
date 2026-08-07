@@ -1,6 +1,6 @@
 ---
 name: D_MSRGPTCANCELMSMTRDNGP
-description: D Msrgptcancelmsmtrdngp
+description: "D Msrgptcancelmsmtrdngp"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

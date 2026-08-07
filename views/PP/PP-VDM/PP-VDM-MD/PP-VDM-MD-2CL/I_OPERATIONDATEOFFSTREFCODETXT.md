@@ -1,6 +1,6 @@
 ---
 name: I_OPERATIONDATEOFFSTREFCODETXT
-description: Operationdateoffstrefcodetxt
+description: "Operationdateoffstrefcodetxt"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,25 +1,25 @@
 ---
 name: C_MATERIALSTOCKACTUAL
-description: This CDS view provides the prerequisites for answering the following business question: What is the total stock for a set of stock identifying fields at the end of the current period based on all relevant material movements?
+description: "This CDS view provides the prerequisites for answering the following business question: What is the total stock for a set of stock identifying fields at the end of the current period based on all relevant material movements?"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATERIALSTOCKACTUAL')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What is the total stock for a set of stock identifying fields at the end of the current period based on all relevant material movements?
-semantic_vi: Total actual stock quantity — CDS view tiêu dùng (transactional data) dựa trên I_MaterialStock_2.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is the total stock for a set of stock identifying fields at the end of the current period based on all relevant material movements?"
+semantic_vi: "Total actual stock quantity — CDS view tiêu dùng (transactional data) dựa trên I_MaterialStock_2."
 keywords:
-  - total
-  - actual
-  - stock
-  - quantity
-  - material
-  - plant
-  - storage
-  - location
-  - batch
-  - supplier
+  - "total"
+  - "actual"
+  - "stock"
+  - "quantity"
+  - "material"
+  - "plant"
+  - "storage"
+  - "location"
+  - "batch"
+  - "supplier"
 tags:
   - MM
   - bo:companycode

@@ -1,13 +1,13 @@
 ---
 name: I_BANKACCOUNTANALYSISCUBE
-description: This CDS view retrieves the bank account number for bank groups. This CDS view provides the prerequisites for answering the following business question: What is the total number of bank accounts in a certain bank group?
+description: "This CDS view retrieves the bank account number for bank groups. This CDS view provides the prerequisites for answering the following business question: What is the total number of bank accounts in a certain bank group?"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKACCOUNTANALYSISCUBE')/$value
-semantic_en: This CDS view retrieves the bank account number for bank groups. This CDS view provides the prerequisites for answering the following business question: What is the total number of bank accounts in a certain bank group?
+semantic_en: "This CDS view retrieves the bank account number for bank groups. This CDS view provides the prerequisites for answering the following business question: What is the total number of bank accounts in a certain bank group?"
 tags:
   - FIN
   - account

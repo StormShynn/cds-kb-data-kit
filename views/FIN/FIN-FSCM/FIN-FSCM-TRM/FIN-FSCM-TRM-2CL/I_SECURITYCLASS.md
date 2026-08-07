@@ -1,6 +1,6 @@
 ---
 name: I_SECURITYCLASS
-description: Securityclass
+description: "Securityclass"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

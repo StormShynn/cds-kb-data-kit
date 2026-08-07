@@ -1,6 +1,6 @@
 ---
 name: I_PH_TAXBALANCEGROUPBYINDUSTRY
-description: PH Taxbalancegroupbyindustry
+description: "PH Taxbalancegroupbyindustry"
 app_component: FI-LOC-FI-PH
 software_component: SAPSCORE
 release_state: released

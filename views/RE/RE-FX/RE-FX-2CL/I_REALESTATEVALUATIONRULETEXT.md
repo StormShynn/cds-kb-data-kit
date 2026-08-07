@@ -1,6 +1,6 @@
 ---
 name: I_REALESTATEVALUATIONRULETEXT
-description: Real EstateVALUATIONRULETEXT
+description: "Real EstateVALUATIONRULETEXT"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

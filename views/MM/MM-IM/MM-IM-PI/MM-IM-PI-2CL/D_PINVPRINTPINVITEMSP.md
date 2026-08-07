@@ -1,6 +1,6 @@
 ---
 name: D_PINVPRINTPINVITEMSP
-description: D Pinvprintpinvitemsp
+description: "D Pinvprintpinvitemsp"
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

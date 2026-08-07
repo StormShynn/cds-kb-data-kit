@@ -1,25 +1,25 @@
 ---
 name: C_TRIALBALANCEQ0002
-description: This CDS view can compare balances for two time frames for various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances for two time frames? What is the balance of a cost center for two time frames? What are the balances within the G/L account hierarchy? What is the revenue drilled down by profit center for two time frames?
+description: "This CDS view can compare balances for two time frames for various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances for two time frames? What is the balance of a cost center for two time frames? What are the balances within the G/L account hierarchy? What is the revenue drilled down by profit center for two time frames?"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_TRIALBALANCEQ0002')/$value
-semantic_en: This CDS view can compare balances for two time frames for various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances for two time frames? What is the balance of a cost center for two time frames? What are the balances within the G/L account hierarchy? What is the revenue drilled down by profit center for two time frames?
-semantic_vi: Trial Balance Comparison — CDS view tiêu dùng dựa trên I_GLAcctBalanceComprnCube.
+semantic_en: "This CDS view can compare balances for two time frames for various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances for two time frames? What is the balance of a cost center for two time frames? What are the balances within the G/L account hierarchy? What is the revenue drilled down by profit center for two time frames?"
+semantic_vi: "Trial Balance Comparison — CDS view tiêu dùng dựa trên I_GLAcctBalanceComprnCube."
 keywords:
-  - Trial Balance Comparison
-  - trial
-  - balance
-  - comparison
-  - ledger
-  - company
-  - code
-  - name
-  - account
-  - hierarchy
+  - "Trial Balance Comparison"
+  - "trial"
+  - "balance"
+  - "comparison"
+  - "ledger"
+  - "company"
+  - "code"
+  - "name"
+  - "account"
+  - "hierarchy"
 tags:
   - FI
   - account

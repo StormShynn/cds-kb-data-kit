@@ -1,6 +1,6 @@
 ---
 name: D_PLANNEDORDERSCHEDULEBYOPP
-description: D Planned OrderSCHEDULEBYOPP
+description: "D Planned OrderSCHEDULEBYOPP"
 app_component: PP-PLO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTTEXTRAWDATA
-description: GL AccountTEXTRAWDATA
+description: "GL AccountTEXTRAWDATA"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

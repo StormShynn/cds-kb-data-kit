@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDITEMDOCREF
-description: Transporditemdocref
+description: "Transporditemdocref"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

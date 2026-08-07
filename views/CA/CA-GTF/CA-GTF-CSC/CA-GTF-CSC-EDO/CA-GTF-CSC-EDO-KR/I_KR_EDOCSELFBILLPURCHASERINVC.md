@@ -1,6 +1,6 @@
 ---
 name: I_KR_EDOCSELFBILLPURCHASERINVC
-description: KR Edocselfbillpurchaserinvc
+description: "KR Edocselfbillpurchaserinvc"
 app_component: CA-GTF-CSC-EDO-KR
 software_component: SAPSCORE
 release_state: released

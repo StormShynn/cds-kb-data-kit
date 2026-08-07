@@ -1,13 +1,13 @@
 ---
 name: I_FUNCAREA3SUBDIVISION
-description: Third Subdivision for Functional Area
+description: "Third Subdivision for Functional Area"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNCAREA3SUBDIVISION')/$value
-semantic_en: Third Subdivision for Functional Area
+semantic_en: "Third Subdivision for Functional Area"
 tags:
   - PSM
   - component:PSM

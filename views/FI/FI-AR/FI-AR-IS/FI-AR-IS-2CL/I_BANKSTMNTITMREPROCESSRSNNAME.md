@@ -1,23 +1,23 @@
 ---
 name: I_BANKSTMNTITMREPROCESSRSNNAME
-description: This basic CDS view provides explanations for bank statement reprocessing reason codes. This CDS view provides you with the necessary information to answer the following business question: What is the reason for reprocessing a bank statement item?
+description: "This basic CDS view provides explanations for bank statement reprocessing reason codes. This CDS view provides you with the necessary information to answer the following business question: What is the reason for reprocessing a bank statement item?"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKSTMNTITMREPROCESSRSNNAME')/$value
-semantic_en: This basic CDS view provides explanations for bank statement reprocessing reason codes. This CDS view provides you with the necessary information to answer the following business question: What is the reason for reprocessing a bank statement item?
-semantic_vi: Bank Stmnt Item Reprocessing Reason Name — CDS view giao diện dựa trên feb_repro_rrct.
+semantic_en: "This basic CDS view provides explanations for bank statement reprocessing reason codes. This CDS view provides you with the necessary information to answer the following business question: What is the reason for reprocessing a bank statement item?"
+semantic_vi: "Bank Stmnt Item Reprocessing Reason Name — CDS view giao diện dựa trên feb_repro_rrct."
 keywords:
-  - bank
-  - stmnt
-  - item
-  - reprocessing
-  - reason
-  - name
-  - reprocess
-  - language
+  - "bank"
+  - "stmnt"
+  - "item"
+  - "reprocessing"
+  - "reason"
+  - "name"
+  - "reprocess"
+  - "language"
 tags:
   - FI
   - bo:salesorder

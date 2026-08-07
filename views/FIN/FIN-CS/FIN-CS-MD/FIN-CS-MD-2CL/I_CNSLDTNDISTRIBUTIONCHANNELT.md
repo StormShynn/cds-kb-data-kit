@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNDISTRIBUTIONCHANNELT
-description: Cnsldtndistributionchannelt
+description: "Cnsldtndistributionchannelt"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

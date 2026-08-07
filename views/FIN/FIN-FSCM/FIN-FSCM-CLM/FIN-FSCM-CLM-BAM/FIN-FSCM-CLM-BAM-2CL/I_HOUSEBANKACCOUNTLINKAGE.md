@@ -1,6 +1,6 @@
 ---
 name: I_HOUSEBANKACCOUNTLINKAGE
-description: Housebankaccountlinkage
+description: "Housebankaccountlinkage"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

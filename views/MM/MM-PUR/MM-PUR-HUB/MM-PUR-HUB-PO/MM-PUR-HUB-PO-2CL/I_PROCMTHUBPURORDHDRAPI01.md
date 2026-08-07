@@ -1,6 +1,6 @@
 ---
 name: I_PROCMTHUBPURORDHDRAPI01
-description: Procmthubpurordhdrapi 01
+description: "Procmthubpurordhdrapi 01"
 app_component: MM-PUR-HUB-PO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SUMMARIZEDJITCALL
-description: Summarizedjitcall
+description: "Summarizedjitcall"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGDOCUMENTITEMSTDVH
-description: Purchasingdocumentitemstdvh
+description: "Purchasingdocumentitemstdvh"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

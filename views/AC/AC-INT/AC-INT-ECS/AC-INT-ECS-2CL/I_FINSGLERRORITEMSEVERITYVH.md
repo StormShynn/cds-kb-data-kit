@@ -1,6 +1,6 @@
 ---
 name: I_FINSGLERRORITEMSEVERITYVH
-description: Finsglerroritemseverityvh
+description: "Finsglerroritemseverityvh"
 app_component: AC-INT-ECS-2CL
 software_component: SAPSCORE
 release_state: released

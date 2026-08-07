@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERACTIVITYTYPESTDVH
-description: Cost CenterACTIVITYTYPESTDVH
+description: "Cost CenterACTIVITYTYPESTDVH"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

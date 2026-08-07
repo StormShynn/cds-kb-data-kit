@@ -1,6 +1,6 @@
 ---
 name: I_EG_ELECTRONICDOCINVOICE
-description: EG Electronicdocinvoice
+description: "EG Electronicdocinvoice"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

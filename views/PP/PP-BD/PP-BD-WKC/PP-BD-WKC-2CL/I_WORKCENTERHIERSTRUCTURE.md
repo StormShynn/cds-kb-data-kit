@@ -1,13 +1,13 @@
 ---
 name: I_WORKCENTERHIERSTRUCTURE
-description: Work Center Hierarchy Structure
+description: "Work Center Hierarchy Structure"
 app_component: PP-BD-WKC-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKCENTERHIERSTRUCTURE')/$value
-semantic_en: Work Center Hierarchy Structure
+semantic_en: "Work Center Hierarchy Structure"
 tags:
   - PP
   - component:PP-BD-WKC-2CL

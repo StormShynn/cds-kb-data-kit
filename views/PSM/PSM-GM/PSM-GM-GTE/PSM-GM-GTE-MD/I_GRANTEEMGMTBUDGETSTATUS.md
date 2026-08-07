@@ -1,13 +1,13 @@
 ---
 name: I_GRANTEEMGMTBUDGETSTATUS
-description: Budget Status
+description: "Budget Status"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRANTEEMGMTBUDGETSTATUS')/$value
-semantic_en: Budget Status
+semantic_en: "Budget Status"
 tags:
   - PSM
   - budget

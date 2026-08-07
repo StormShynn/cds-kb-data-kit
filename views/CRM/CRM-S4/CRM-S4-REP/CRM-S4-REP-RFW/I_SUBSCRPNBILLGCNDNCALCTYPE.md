@@ -1,13 +1,13 @@
 ---
 name: I_SUBSCRPNBILLGCNDNCALCTYPE
-description: Subscription Billing Condition Calc Type
+description: "Subscription Billing Condition Calc Type"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUBSCRPNBILLGCNDNCALCTYPE')/$value
-semantic_en: Subscription Billing Condition Calc Type
+semantic_en: "Subscription Billing Condition Calc Type"
 tags:
   - CRM
   - billing

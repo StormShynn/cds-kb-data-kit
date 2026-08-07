@@ -1,6 +1,6 @@
 ---
 name: I_SERVICECOSTRATETP
-description: Servicecostratetp
+description: "Servicecostratetp"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

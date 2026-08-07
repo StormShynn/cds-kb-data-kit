@@ -1,6 +1,6 @@
 ---
 name: I_SERVICECONTRACTCUBE_2
-description: Servicecontractcube 2
+description: "Servicecontractcube 2"
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

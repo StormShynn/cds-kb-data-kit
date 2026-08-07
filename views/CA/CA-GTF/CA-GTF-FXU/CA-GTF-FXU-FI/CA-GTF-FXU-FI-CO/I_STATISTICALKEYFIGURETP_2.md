@@ -1,6 +1,6 @@
 ---
 name: I_STATISTICALKEYFIGURETP_2
-description: Statisticalkeyfiguretp 2
+description: "Statisticalkeyfiguretp 2"
 app_component: CA-GTF-FXU-FI-CO
 software_component: SAPSCORE
 release_state: released

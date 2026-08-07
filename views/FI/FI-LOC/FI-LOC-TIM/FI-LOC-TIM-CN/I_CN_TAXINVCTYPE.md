@@ -1,6 +1,6 @@
 ---
 name: I_CN_TAXINVCTYPE
-description: CN Taxinvctype
+description: "CN Taxinvctype"
 app_component: FI-LOC-TIM-CN
 software_component: SAPSCORE
 release_state: released

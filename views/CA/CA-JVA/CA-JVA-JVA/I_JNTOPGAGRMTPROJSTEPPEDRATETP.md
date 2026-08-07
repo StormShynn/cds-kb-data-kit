@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTPROJSTEPPEDRATETP
-description: Jntopgagrmtprojsteppedratetp
+description: "Jntopgagrmtprojsteppedratetp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

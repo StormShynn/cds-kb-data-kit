@@ -1,6 +1,6 @@
 ---
 name: D_CITRECLASSIFYPARAMETER
-description: D Citreclassifyparameter
+description: "D Citreclassifyparameter"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRBANKDETAILSBYINTID
-description: Suplrbankdetailsbyintid
+description: "Suplrbankdetailsbyintid"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

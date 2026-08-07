@@ -1,6 +1,6 @@
 ---
 name: I_POINVOICINGPLANITEMTP_2
-description: Poinvoicingplanitemtp 2
+description: "Poinvoicingplanitemtp 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

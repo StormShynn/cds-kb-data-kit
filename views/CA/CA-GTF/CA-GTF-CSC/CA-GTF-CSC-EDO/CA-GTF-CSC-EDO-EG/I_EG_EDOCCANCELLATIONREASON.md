@@ -1,6 +1,6 @@
 ---
 name: I_EG_EDOCCANCELLATIONREASON
-description: EG Edoccancellationreason
+description: "EG Edoccancellationreason"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

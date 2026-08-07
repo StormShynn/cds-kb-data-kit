@@ -1,6 +1,6 @@
 ---
 name: I_POCHANNELOUTPUTTYPETXT
-description: Pochanneloutputtypetxt
+description: "Pochanneloutputtypetxt"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

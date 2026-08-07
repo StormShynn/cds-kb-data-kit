@@ -1,6 +1,6 @@
 ---
 name: I_CASUBAPPLICATIONTEXT
-description: Casubapplicationtext
+description: "Casubapplicationtext"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

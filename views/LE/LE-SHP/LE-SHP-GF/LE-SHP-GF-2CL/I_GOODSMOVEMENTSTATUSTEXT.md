@@ -1,6 +1,6 @@
 ---
 name: I_GOODSMOVEMENTSTATUSTEXT
-description: Goods MovementSTATUSTEXT
+description: "Goods MovementSTATUSTEXT"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

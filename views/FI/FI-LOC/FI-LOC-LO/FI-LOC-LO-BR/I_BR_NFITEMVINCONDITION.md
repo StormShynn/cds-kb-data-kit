@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFITEMVINCONDITION
-description: BR Nfitemvincondition
+description: "BR Nfitemvincondition"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

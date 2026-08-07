@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLDELIVERYBLOCKSTATUS
-description: Overalldeliveryblockstatus
+description: "Overalldeliveryblockstatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

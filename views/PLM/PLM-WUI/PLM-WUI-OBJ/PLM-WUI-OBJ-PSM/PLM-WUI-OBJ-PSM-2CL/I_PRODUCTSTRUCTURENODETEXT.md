@@ -1,13 +1,13 @@
 ---
 name: I_PRODUCTSTRUCTURENODETEXT
-description: Product Structure Node - Text
+description: "Product Structure Node - Text"
 app_component: PLM-WUI-OBJ-PSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTSTRUCTURENODETEXT')/$value
-semantic_en: Product Structure Node - Text
+semantic_en: "Product Structure Node - Text"
 tags:
   - PLM
   - bo:material

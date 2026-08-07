@@ -1,6 +1,6 @@
 ---
 name: I_SDDOCUMENTPARTNER
-description: Sddocumentpartner
+description: "Sddocumentpartner"
 app_component: SD-BF-PD-2CL
 software_component: SAPSCORE
 release_state: released

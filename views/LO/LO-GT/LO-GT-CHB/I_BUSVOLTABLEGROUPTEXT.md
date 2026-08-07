@@ -1,13 +1,13 @@
 ---
 name: I_BUSVOLTABLEGROUPTEXT
-description: This CDS view exposes fixed values of the Business Volume Table Group field. This is a customizing table, values to be input by the user.
+description: "This CDS view exposes fixed values of the Business Volume Table Group field. This is a customizing table, values to be input by the user."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSVOLTABLEGROUPTEXT')/$value
-semantic_en: This CDS view exposes fixed values of the Business Volume Table Group field. This is a customizing table, values to be input by the user.
+semantic_en: "This CDS view exposes fixed values of the Business Volume Table Group field. This is a customizing table, values to be input by the user."
 tags:
   - LO
   - bo:companycode

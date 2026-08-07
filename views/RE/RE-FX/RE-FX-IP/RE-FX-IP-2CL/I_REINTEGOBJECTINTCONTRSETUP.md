@@ -1,6 +1,6 @@
 ---
 name: I_REINTEGOBJECTINTCONTRSETUP
-description: Reintegobjectintcontrsetup
+description: "Reintegobjectintcontrsetup"
 app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released

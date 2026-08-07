@@ -1,20 +1,20 @@
 ---
 name: ZI_INVOICE.DDLS
-description: Invoice - Interface View
+description: "Invoice - Interface View"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Arunagiri0512/s4-sales-cycle-rap/blob/7fa3e18bfeda18d243d72fbab74f7f21fd7f9c59/src/zi_invoice.ddls.asddls
-semantic_en: Invoice - Interface View — CDS view based on zinvoice.
-semantic_vi: Invoice - Interface View — CDS view dựa trên zinvoice.
+semantic_en: "Invoice - Interface View — CDS view based on zinvoice."
+semantic_vi: "Invoice - Interface View — CDS view dựa trên zinvoice."
 keywords:
-  - invoice
-  - interface
-  - uuid
-  - customer
-  - amount
+  - "invoice"
+  - "interface"
+  - "uuid"
+  - "customer"
+  - "amount"
 tags:
   - AC
   - bo:billingdocument

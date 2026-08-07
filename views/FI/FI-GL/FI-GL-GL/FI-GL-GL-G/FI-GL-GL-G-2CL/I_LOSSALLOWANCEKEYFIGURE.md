@@ -1,13 +1,13 @@
 ---
 name: I_LOSSALLOWANCEKEYFIGURE
-description: Key figures for credit loss allowance
+description: "Key figures for credit loss allowance"
 app_component: FI-GL-GL-G-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOSSALLOWANCEKEYFIGURE')/$value
-semantic_en: Key figures for credit loss allowance
+semantic_en: "Key figures for credit loss allowance"
 tags:
   - FI
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_TRADECMPLNCLEGALCTRLCHKSTST
-description: Tradecmplnclegalctrlchkstst
+description: "Tradecmplnclegalctrlchkstst"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

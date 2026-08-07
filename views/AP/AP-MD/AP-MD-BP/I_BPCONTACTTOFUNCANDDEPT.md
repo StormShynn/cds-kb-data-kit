@@ -1,6 +1,6 @@
 ---
 name: I_BPCONTACTTOFUNCANDDEPT
-description: Bpcontacttofuncanddept
+description: "Bpcontacttofuncanddept"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

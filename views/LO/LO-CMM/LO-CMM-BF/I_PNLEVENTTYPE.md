@@ -1,13 +1,13 @@
 ---
 name: I_PNLEVENTTYPE
-description: Profit and Loss Event Type
+description: "Profit and Loss Event Type"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PNLEVENTTYPE')/$value
-semantic_en: Profit and Loss Event Type
+semantic_en: "Profit and Loss Event Type"
 tags:
   - LO
   - bo:companycode

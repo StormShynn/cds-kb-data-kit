@@ -1,6 +1,6 @@
 ---
 name: I_WRKASSGMTPAYMENTDETAIL
-description: Wrkassgmtpaymentdetail
+description: "Wrkassgmtpaymentdetail"
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released

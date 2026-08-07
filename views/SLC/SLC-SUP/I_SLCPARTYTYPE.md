@@ -1,6 +1,6 @@
 ---
 name: I_SLCPARTYTYPE
-description: Slcpartytype
+description: "Slcpartytype"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

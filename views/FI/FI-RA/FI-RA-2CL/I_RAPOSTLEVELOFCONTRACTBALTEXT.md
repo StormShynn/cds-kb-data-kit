@@ -1,6 +1,6 @@
 ---
 name: I_RAPOSTLEVELOFCONTRACTBALTEXT
-description: Rapostlevelofcontractbaltext
+description: "Rapostlevelofcontractbaltext"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

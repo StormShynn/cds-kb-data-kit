@@ -1,6 +1,6 @@
 ---
 name: I_FUNCLOCATIONSTRUCTURETEXT
-description: Funclocationstructuretext
+description: "Funclocationstructuretext"
 app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released

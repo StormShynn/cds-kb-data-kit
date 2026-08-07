@@ -1,13 +1,13 @@
 ---
 name: I_FINSTMNTITMHIERDIRVH
-description: This CDS view provides access to a value help for the hierarchy of the financial statement item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies on financial statement item do exist and in which consolidation chart of accounts are they defined?
+description: "This CDS view provides access to a value help for the hierarchy of the financial statement item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies on financial statement item do exist and in which consolidation chart of accounts are they defined?"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINSTMNTITMHIERDIRVH')/$value
-semantic_en: This CDS view provides access to a value help for the hierarchy of the financial statement item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies on financial statement item do exist and in which consolidation chart of accounts are they defined?
+semantic_en: "This CDS view provides access to a value help for the hierarchy of the financial statement item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies on financial statement item do exist and in which consolidation chart of accounts are they defined?"
 tags:
   - FIN
   - account

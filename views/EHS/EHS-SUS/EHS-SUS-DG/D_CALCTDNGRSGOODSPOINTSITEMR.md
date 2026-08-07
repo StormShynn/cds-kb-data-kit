@@ -1,6 +1,6 @@
 ---
 name: D_CALCTDNGRSGOODSPOINTSITEMR
-description: D Calctdngrsgoodspointsitemr
+description: "D Calctdngrsgoodspointsitemr"
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

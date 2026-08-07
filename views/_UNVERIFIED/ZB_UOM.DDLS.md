@@ -1,22 +1,22 @@
 ---
 name: ZB_UOM.DDLS
-description: Units of Measurement
+description: "Units of Measurement"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Keller-Michael/ALV_with_IDA_example/blob/1b9495e2fcace5dd16e5d9d2cd2ec01f7f85b1f9/src/zb_uom.ddls.asddls
-semantic_en: Units of Measurement — CDS view based on t006.
-semantic_vi: Units of Measurement — CDS view dựa trên t006.
+semantic_en: "Units of Measurement — CDS view based on t006."
+semantic_vi: "Units of Measurement — CDS view dựa trên t006."
 keywords:
-  - units
-  - measurement
-  - client
-  - unit_of_measurement
-  - iso_code
-  - language
-  - commercial_format
+  - "units"
+  - "measurement"
+  - "client"
+  - "unit_of_measurement"
+  - "iso_code"
+  - "language"
+  - "commercial_format"
 tags:
   - RE
   - component:RE

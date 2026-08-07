@@ -1,6 +1,6 @@
 ---
 name: I_FINANCIALPOSITIONGROUP
-description: Financialpositiongroup
+description: "Financialpositiongroup"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

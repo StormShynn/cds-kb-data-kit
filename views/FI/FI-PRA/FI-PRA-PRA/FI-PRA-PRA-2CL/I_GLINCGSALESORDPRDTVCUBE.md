@@ -1,13 +1,13 @@
 ---
 name: I_GLINCGSALESORDPRDTVCUBE
-description: IncomingSalesOrderforPredictions - Cube
+description: "IncomingSalesOrderforPredictions - Cube"
 app_component: FI-PRA-PRA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value
-semantic_en: IncomingSalesOrderforPredictions - Cube
+semantic_en: "IncomingSalesOrderforPredictions - Cube"
 tags:
   - FI
   - bo:salesorder

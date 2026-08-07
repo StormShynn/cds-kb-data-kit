@@ -1,6 +1,6 @@
 ---
 name: I_STATUSPROFILE
-description: Statusprofile
+description: "Statusprofile"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released

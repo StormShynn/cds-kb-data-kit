@@ -1,6 +1,6 @@
 ---
 name: I_SLCQUESTIONTYPE
-description: Slcquestiontype
+description: "Slcquestiontype"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

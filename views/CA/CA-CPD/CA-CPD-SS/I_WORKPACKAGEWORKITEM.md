@@ -1,13 +1,13 @@
 ---
 name: I_WORKPACKAGEWORKITEM
-description: This CDS view provides the prerequisites for answering the following business questions: What are the work items assigned to a work package and which of the work items are active or inactive? How many or which work packages use a particular work item?
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the work items assigned to a work package and which of the work items are active or inactive? How many or which work packages use a particular work item?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKPACKAGEWORKITEM')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the work items assigned to a work package and which of the work items are active or inactive? How many or which work packages use a particular work item?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the work items assigned to a work package and which of the work items are active or inactive? How many or which work packages use a particular work item?"
 tags:
   - CA
   - bo:plant

@@ -1,13 +1,13 @@
 ---
 name: I_INHOUSEREPAIRITEM
-description: In-House Service Item
+description: "In-House Service Item"
 app_component: CRM-S4-IHR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INHOUSEREPAIRITEM')/$value
-semantic_en: In-House Service Item
+semantic_en: "In-House Service Item"
 tags:
   - CRM
   - component:CRM-S4-IHR-2CL

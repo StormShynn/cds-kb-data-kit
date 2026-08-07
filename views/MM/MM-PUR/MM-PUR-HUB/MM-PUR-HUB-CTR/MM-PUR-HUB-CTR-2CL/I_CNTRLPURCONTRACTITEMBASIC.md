@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLPURCONTRACTITEMBASIC
-description: Cntrlpurcontractitembasic
+description: "Cntrlpurcontractitembasic"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

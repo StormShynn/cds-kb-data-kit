@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEORDERBASIC
-description: Maintenance OrderBASIC
+description: "Maintenance OrderBASIC"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

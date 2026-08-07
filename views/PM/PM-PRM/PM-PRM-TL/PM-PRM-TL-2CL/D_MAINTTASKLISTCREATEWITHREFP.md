@@ -1,6 +1,6 @@
 ---
 name: D_MAINTTASKLISTCREATEWITHREFP
-description: D Maintenance Task ListCREATEWITHREFP
+description: "D Maintenance Task ListCREATEWITHREFP"
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

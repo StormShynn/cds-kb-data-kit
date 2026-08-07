@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_DISPUTEPROCESSSTEPTEXT
-description: Dispute Processing Step - Text
+description: "Dispute Processing Step - Text"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DISPUTEPROCESSSTEPTEXT')/$value
-semantic_en: Dispute Processing Step - Text
+semantic_en: "Dispute Processing Step - Text"
 tags:
   - FIN
   - component:FIN-FSCM-DM-2CL

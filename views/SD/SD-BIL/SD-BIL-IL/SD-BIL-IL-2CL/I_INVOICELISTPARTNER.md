@@ -1,6 +1,6 @@
 ---
 name: I_INVOICELISTPARTNER
-description: Invoicelistpartner
+description: "Invoicelistpartner"
 app_component: SD-BIL-IL-2CL
 software_component: SAPSCORE
 release_state: released

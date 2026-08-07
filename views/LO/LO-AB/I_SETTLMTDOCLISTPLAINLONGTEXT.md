@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTDOCLISTPLAINLONGTEXT
-description: Plain Long Text for Settlement Document List
+description: "Plain Long Text for Settlement Document List"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCLISTPLAINLONGTEXT')/$value
-semantic_en: Plain Long Text for Settlement Document List
+semantic_en: "Plain Long Text for Settlement Document List"
 tags:
   - LO
   - component:LO-AB

@@ -1,6 +1,6 @@
 ---
 name: D_MATERIALDOCUMENTCREATED_2
-description: D Materialdocumentcreated 2
+description: "D Materialdocumentcreated 2"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

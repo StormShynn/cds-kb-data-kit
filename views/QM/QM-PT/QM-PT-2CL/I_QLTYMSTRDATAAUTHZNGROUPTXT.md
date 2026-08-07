@@ -1,6 +1,6 @@
 ---
 name: I_QLTYMSTRDATAAUTHZNGROUPTXT
-description: Qltymstrdataauthzngrouptxt
+description: "Qltymstrdataauthzngrouptxt"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

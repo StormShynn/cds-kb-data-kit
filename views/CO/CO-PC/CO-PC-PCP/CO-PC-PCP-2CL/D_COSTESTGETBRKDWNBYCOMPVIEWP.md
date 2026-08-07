@@ -1,6 +1,6 @@
 ---
 name: D_COSTESTGETBRKDWNBYCOMPVIEWP
-description: D Costestgetbrkdwnbycompviewp
+description: "D Costestgetbrkdwnbycompviewp"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released

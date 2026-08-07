@@ -1,13 +1,13 @@
 ---
 name: I_CRDTDCSNDOCAPPRVLSTEPSTSVH
-description: Approval Step Status
+description: "Approval Step Status"
 app_component: FIN-FIO-CCD-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRDTDCSNDOCAPPRVLSTEPSTSVH')/$value
-semantic_en: Approval Step Status
+semantic_en: "Approval Step Status"
 tags:
   - FIN
   - bo:project

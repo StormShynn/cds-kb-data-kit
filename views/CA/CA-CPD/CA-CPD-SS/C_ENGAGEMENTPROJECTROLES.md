@@ -1,13 +1,13 @@
 ---
 name: C_ENGAGEMENTPROJECTROLES
-description: Project Roles restriction in BADI
+description: "Project Roles restriction in BADI"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGAGEMENTPROJECTROLES')/$value
-semantic_en: Project Roles restriction in BADI
+semantic_en: "Project Roles restriction in BADI"
 tags:
   - CA
   - bo:project

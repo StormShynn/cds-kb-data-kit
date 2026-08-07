@@ -1,26 +1,26 @@
 ---
 name: C_INTPROJPLNACTOVERVIEWQUERY
-description: This CDS view is designed to provide an analytical query for an internal project overview, focusing on planned and actual costs, as well as variances for projects. It is intended to support financial analysis and project management by offering insights into project financials, including planned and actual costs, cost variances, and valuation quantities. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for internal projects within a specific fiscal year or period? How do the planned costs (both baseline and ongoing) compare to the actual costs for internal projects? What is the variance between planned and actual costs for internal projects, both for baseline and ongoing plans? What are the planned and actual valuation quantities for internal projects? How do financial metrics vary across different company codes, profit centers, and functional areas? What is the financial performance of projects managed by specific project managers or within certain project stages? How do costs and variances align with specific general ledger accounts and chart of accounts? What are the financial implications of projects based on different customer groups, sold products, and segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide an analytical query for an internal project overview, focusing on planned and actual costs, as well as variances for projects. It is intended to support financial analysis and project management by offering insights into project financials, including planned and actual costs, cost variances, and valuation quantities. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for internal projects within a specific fiscal year or period? How do the planned costs (both baseline and ongoing) compare to the actual costs for internal projects? What is the variance between planned and actual costs for internal projects, both for baseline and ongoing plans? What are the planned and actual valuation quantities for internal projects? How do financial metrics vary across different company codes, profit centers, and functional areas? What is the financial performance of projects managed by specific project managers or within certain project stages? How do costs and variances align with specific general ledger accounts and chart of accounts? What are the financial implications of projects based on different customer groups, sold products, and segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INTPROJPLNACTOVERVIEWQUERY')/$value
-semantic_en: This CDS view is designed to provide an analytical query for an internal project overview, focusing on planned and actual costs, as well as variances for projects. It is intended to support financial analysis and project management by offering insights into project financials, including planned and actual costs, cost variances, and valuation quantities. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for internal projects within a specific fiscal year or period? How do the planned costs (both baseline and ongoing) compare to the actual costs for internal projects? What is the variance between planned and actual costs for internal projects, both for baseline and ongoing plans? What are the planned and actual valuation quantities for internal projects? How do financial metrics vary across different company codes, profit centers, and functional areas? What is the financial performance of projects managed by specific project managers or within certain project stages? How do costs and variances align with specific general ledger accounts and chart of accounts? What are the financial implications of projects based on different customer groups, sold products, and segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Internal Project Overview - Query — CDS view tiêu dùng dựa trên Internal Project Overview - Query.
+semantic_en: "This CDS view is designed to provide an analytical query for an internal project overview, focusing on planned and actual costs, as well as variances for projects. It is intended to support financial analysis and project management by offering insights into project financials, including planned and actual costs, cost variances, and valuation quantities. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for internal projects within a specific fiscal year or period? How do the planned costs (both baseline and ongoing) compare to the actual costs for internal projects? What is the variance between planned and actual costs for internal projects, both for baseline and ongoing plans? What are the planned and actual valuation quantities for internal projects? How do financial metrics vary across different company codes, profit centers, and functional areas? What is the financial performance of projects managed by specific project managers or within certain project stages? How do costs and variances align with specific general ledger accounts and chart of accounts? What are the financial implications of projects based on different customer groups, sold products, and segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Internal Project Overview - Query — CDS view tiêu dùng dựa trên Internal Project Overview - Query."
 keywords:
-  - Internal Project Overview - Query
-  - internal
-  - project
-  - overview
-  - query
-  - ledger
-  - company
-  - code
-  - fiscal
-  - year
-  - period
+  - "Internal Project Overview - Query"
+  - "internal"
+  - "project"
+  - "overview"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - CO
   - account

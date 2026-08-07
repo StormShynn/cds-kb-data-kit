@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEORDEROPERATIONTP
-description: Maintenance OrderOPERATIONTP
+description: "Maintenance OrderOPERATIONTP"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

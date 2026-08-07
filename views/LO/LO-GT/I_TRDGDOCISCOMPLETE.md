@@ -1,13 +1,13 @@
 ---
 name: I_TRDGDOCISCOMPLETE
-description: Document Complete
+description: "Document Complete"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGDOCISCOMPLETE')/$value
-semantic_en: Document Complete
+semantic_en: "Document Complete"
 tags:
   - LO
   - component:LO-GT

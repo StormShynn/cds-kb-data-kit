@@ -1,6 +1,6 @@
 ---
 name: I_MAINTNOTIFICATIONITEMTP_2
-description: Maintnotificationitemtp 2
+description: "Maintnotificationitemtp 2"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released

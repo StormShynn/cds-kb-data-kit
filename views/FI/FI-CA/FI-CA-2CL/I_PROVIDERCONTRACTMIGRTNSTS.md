@@ -1,6 +1,6 @@
 ---
 name: I_PROVIDERCONTRACTMIGRTNSTS
-description: Providercontractmigrtnsts
+description: "Providercontractmigrtnsts"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

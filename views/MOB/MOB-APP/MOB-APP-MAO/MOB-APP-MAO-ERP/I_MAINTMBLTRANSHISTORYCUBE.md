@@ -1,13 +1,13 @@
 ---
 name: I_MAINTMBLTRANSHISTORYCUBE
-description: Mobile Transaction History - Cube
+description: "Mobile Transaction History - Cube"
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTMBLTRANSHISTORYCUBE')/$value
-semantic_en: Mobile Transaction History - Cube
+semantic_en: "Mobile Transaction History - Cube"
 tags:
   - MOB
   - component:MOB-APP-MAO-ERP

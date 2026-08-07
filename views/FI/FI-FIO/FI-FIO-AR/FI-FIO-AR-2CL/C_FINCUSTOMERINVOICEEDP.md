@@ -1,28 +1,28 @@
 ---
 name: C_FINCUSTOMERINVOICEEDP
-description: This CDS view is used as a data source to create email templates for correspondence with the type SAP21 (FI Customer Invoice). To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is used as a data source to create email templates for correspondence with the type SAP21 (FI Customer Invoice). To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-FIO-AR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FINCUSTOMERINVOICEEDP')/$value
-semantic_en: This CDS view is used as a data source to create email templates for correspondence with the type SAP21 (FI Customer Invoice). To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: FI Customer Invoice Email Data Provider — CDS view tiêu dùng dựa trên I_JournalEntry.
+semantic_en: "This CDS view is used as a data source to create email templates for correspondence with the type SAP21 (FI Customer Invoice). To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "FI Customer Invoice Email Data Provider — CDS view tiêu dùng dựa trên I_JournalEntry."
 keywords:
-  - customer
-  - invoice
-  - email
-  - data
-  - provider
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
-  - type
-  - date
+  - "customer"
+  - "invoice"
+  - "email"
+  - "data"
+  - "provider"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
+  - "type"
+  - "date"
 tags:
   - FI
   - bo:billingdocument

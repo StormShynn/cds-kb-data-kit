@@ -1,6 +1,6 @@
 ---
 name: I_SRVCORDFUPSRVCCONFTP
-description: Srvcordfupsrvcconftp
+description: "Srvcordfupsrvcconftp"
 app_component: CRM-S4-SRV-SVO-2CL
 software_component: SAPSCORE
 release_state: released

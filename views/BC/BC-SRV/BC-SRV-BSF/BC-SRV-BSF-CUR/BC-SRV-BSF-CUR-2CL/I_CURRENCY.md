@@ -1,6 +1,6 @@
 ---
 name: I_CURRENCY
-description: Currency
+description: "Currency"
 app_component: BC-SRV-BSF-CUR-2CL
 software_component: SAP_BASIS
 release_state: released

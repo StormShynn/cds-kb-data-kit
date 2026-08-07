@@ -1,6 +1,6 @@
 ---
 name: I_CREDITMEMOREQITEMPARTNER
-description: Creditmemoreqitempartner
+description: "Creditmemoreqitempartner"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

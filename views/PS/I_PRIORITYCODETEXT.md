@@ -1,13 +1,13 @@
 ---
 name: I_PRIORITYCODETEXT
-description: Priority Code - Text
+description: "Priority Code - Text"
 app_component: PS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIORITYCODETEXT')/$value
-semantic_en: Priority Code - Text
+semantic_en: "Priority Code - Text"
 tags:
   - PS
   - component:PS

@@ -1,6 +1,6 @@
 ---
 name: I_CITITEMCLASSIFICATION
-description: Cititemclassification
+description: "Cititemclassification"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

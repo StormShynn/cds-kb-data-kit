@@ -1,16 +1,16 @@
 ---
 name: C_MDQANLYTSSCRPRODSLSQRY
-description: MDQ Score for Product Sales - Query
+description: "MDQ Score for Product Sales - Query"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRPRODSLSQRY')/$value
-semantic_en: MDQ Score for Product Sales - Query
+semantic_en: "MDQ Score for Product Sales - Query"
 keywords:
-  - MDQ Score for Product Sales
-  - MDQ Score for Product Sales
+  - "MDQ Score for Product Sales"
+  - "MDQ Score for Product Sales"
 tags:
   - CA
   - bo:material

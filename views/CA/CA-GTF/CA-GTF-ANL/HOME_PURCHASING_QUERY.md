@@ -1,6 +1,6 @@
 ---
 name: HOME_PURCHASING_QUERY
-description: Home Purchasing (Query)
+description: "Home Purchasing (Query)"
 app_component: CA-GTF-ANL
 software_component: SAPPCORE_H
 release_state: released

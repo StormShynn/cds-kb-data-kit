@@ -1,29 +1,29 @@
 ---
 name: I_ARUNANLYTSSLSORDREJECTION
-description: Sales Order Rejection
+description: "Sales Order Rejection"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSLSORDREJECTION')/$value
-semantic_en: Sales Order Rejection
-semantic_vi: Sales Order Rejection — CDS view tổng hợp dựa trên I_SalesDocumentItem.
+semantic_en: "Sales Order Rejection"
+semantic_vi: "Sales Order Rejection — CDS view tổng hợp dựa trên I_SalesDocumentItem."
 keywords:
-  - sales
-  - order
-  - rejection
-  - requirement
-  - document
-  - number
-  - item
-  - prot
-  - time
-  - bucket
-  - requested
-  - date
-  - product
-  - availability
+  - "sales"
+  - "order"
+  - "rejection"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "prot"
+  - "time"
+  - "bucket"
+  - "requested"
+  - "date"
+  - "product"
+  - "availability"
 tags:
   - LO
   - bo:salesorder

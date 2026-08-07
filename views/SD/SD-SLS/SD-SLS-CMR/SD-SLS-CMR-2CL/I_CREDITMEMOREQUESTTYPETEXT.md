@@ -1,6 +1,6 @@
 ---
 name: I_CREDITMEMOREQUESTTYPETEXT
-description: Creditmemorequesttypetext
+description: "Creditmemorequesttypetext"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

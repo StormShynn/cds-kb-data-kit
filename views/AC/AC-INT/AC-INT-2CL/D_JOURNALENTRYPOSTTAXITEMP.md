@@ -1,6 +1,6 @@
 ---
 name: D_JOURNALENTRYPOSTTAXITEMP
-description: D Journal EntryPOSTTAXITEMP
+description: "D Journal EntryPOSTTAXITEMP"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

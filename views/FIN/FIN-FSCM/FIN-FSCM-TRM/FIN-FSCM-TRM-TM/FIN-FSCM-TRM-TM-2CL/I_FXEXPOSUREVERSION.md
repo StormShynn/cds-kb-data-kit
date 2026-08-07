@@ -1,6 +1,6 @@
 ---
 name: I_FXEXPOSUREVERSION
-description: Fxexposureversion
+description: "Fxexposureversion"
 app_component: FIN-FSCM-TRM-TM-2CL
 software_component: SAPSCORE
 release_state: released

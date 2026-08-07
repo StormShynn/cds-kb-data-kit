@@ -1,13 +1,13 @@
 ---
 name: I_LATEFILINGPREDICTDATACUBE
-description: Apply dataset for Late Filing - Cube
+description: "Apply dataset for Late Filing - Cube"
 app_component: IS-PS-BEI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LATEFILINGPREDICTDATACUBE')/$value
-semantic_en: Apply dataset for Late Filing - Cube
+semantic_en: "Apply dataset for Late Filing - Cube"
 tags:
   - IS
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: D_PRJBLGREQPPAYTBDRCREATEP
-description: D Prjblgreqppaytbdrcreatep
+description: "D Prjblgreqppaytbdrcreatep"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

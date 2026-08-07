@@ -1,6 +1,6 @@
 ---
 name: D_WAREHOUSEORDERTASKCANCELED
-description: D Warehouse OrderTASKCANCELED
+description: "D Warehouse OrderTASKCANCELED"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

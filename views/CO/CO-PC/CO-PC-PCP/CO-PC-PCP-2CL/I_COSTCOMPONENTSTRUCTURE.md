@@ -1,13 +1,13 @@
 ---
 name: I_COSTCOMPONENTSTRUCTURE
-description: Cost Component Structure
+description: "Cost Component Structure"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COSTCOMPONENTSTRUCTURE')/$value
-semantic_en: Cost Component Structure
+semantic_en: "Cost Component Structure"
 tags:
   - CO
   - bo:purchaseorder

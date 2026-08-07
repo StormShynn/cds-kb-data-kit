@@ -1,13 +1,13 @@
 ---
 name: I_LOANGROUPKEY3TEXT
-description: Loan Group Key 3 - Text
+description: "Loan Group Key 3 - Text"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANGROUPKEY3TEXT')/$value
-semantic_en: Loan Group Key 3 - Text
+semantic_en: "Loan Group Key 3 - Text"
 tags:
   - FS
   - component:FS-CML

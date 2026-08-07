@@ -1,29 +1,29 @@
 ---
 name: C_PRICEVARIANCEQUERY
-description: Price Variance
+description: "Price Variance"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRICEVARIANCEQUERY')/$value
-semantic_en: Price Variance
-semantic_vi: Price Variance — CDS view tiêu dùng dựa trên C_PriceVarianceCube.
+semantic_en: "Price Variance"
+semantic_vi: "Price Variance — CDS view tiêu dùng dựa trên C_PriceVarianceCube."
 keywords:
-  - price
-  - variance
-  - purchase
-  - order
-  - item
-  - purg
-  - migrtn
-  - cmpltd
-  - anlyts
-  - suplr
-  - eval
-  - relevant
-  - category
-  - date
+  - "price"
+  - "variance"
+  - "purchase"
+  - "order"
+  - "item"
+  - "purg"
+  - "migrtn"
+  - "cmpltd"
+  - "anlyts"
+  - "suplr"
+  - "eval"
+  - "relevant"
+  - "category"
+  - "date"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

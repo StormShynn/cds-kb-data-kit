@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSUBITEMVH
-description: Cnsldtnsubitemvh
+description: "Cnsldtnsubitemvh"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

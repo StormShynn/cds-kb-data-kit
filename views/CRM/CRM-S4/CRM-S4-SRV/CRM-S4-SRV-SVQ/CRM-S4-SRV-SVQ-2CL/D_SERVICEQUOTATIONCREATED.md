@@ -1,6 +1,6 @@
 ---
 name: D_SERVICEQUOTATIONCREATED
-description: D Servicequotationcreated
+description: "D Servicequotationcreated"
 app_component: CRM-S4-SRV-SVQ-2CL
 software_component: SAPSCORE
 release_state: released

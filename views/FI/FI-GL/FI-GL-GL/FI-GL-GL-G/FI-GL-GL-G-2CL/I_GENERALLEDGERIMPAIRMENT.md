@@ -1,13 +1,13 @@
 ---
 name: I_GENERALLEDGERIMPAIRMENT
-description: General Ledger Impairment - Cube
+description: "General Ledger Impairment - Cube"
 app_component: FI-GL-GL-G-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GENERALLEDGERIMPAIRMENT')/$value
-semantic_en: General Ledger Impairment - Cube
+semantic_en: "General Ledger Impairment - Cube"
 tags:
   - FI
   - component:FI-GL-GL-G-2CL

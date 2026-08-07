@@ -1,21 +1,21 @@
 ---
 name: ZMEALS.DDLS
-description: Meals
+description: "Meals"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/SatheesP/mcbc_sap_odata/blob/1055c21fee1e495917f4be330e4704df9b1fb6d6/src/zmeals.ddls.asddls
-semantic_en: Meals — CDS view based on smeal.
-semantic_vi: Meals — CDS view dựa trên smeal.
+semantic_en: "Meals — CDS view based on smeal."
+semantic_vi: "Meals — CDS view dựa trên smeal."
 keywords:
-  - meals
-  - airline
-  - meal
-  - number
-  - type
-  - text
+  - "meals"
+  - "airline"
+  - "meal"
+  - "number"
+  - "type"
+  - "text"
 ---
 # ZMEALS.DDLS
 

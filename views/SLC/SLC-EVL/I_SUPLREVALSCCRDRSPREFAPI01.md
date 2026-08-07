@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALSCCRDRSPREFAPI01
-description: Suplrevalsccrdrsprefapi 01
+description: "Suplrevalsccrdrsprefapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

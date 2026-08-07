@@ -1,6 +1,6 @@
 ---
 name: I_JITINBCALLCOMPDOCREFERENCE
-description: Jitinbcallcompdocreference
+description: "Jitinbcallcompdocreference"
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released

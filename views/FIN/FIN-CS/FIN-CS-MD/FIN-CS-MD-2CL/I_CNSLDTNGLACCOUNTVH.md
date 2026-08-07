@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGLACCOUNTVH
-description: Cnsldtngl AccountVH
+description: "Cnsldtngl AccountVH"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

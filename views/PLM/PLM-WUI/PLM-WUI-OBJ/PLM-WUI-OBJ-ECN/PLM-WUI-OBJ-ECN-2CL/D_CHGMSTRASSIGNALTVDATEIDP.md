@@ -1,6 +1,6 @@
 ---
 name: D_CHGMSTRASSIGNALTVDATEIDP
-description: D Chgmstrassignaltvdateidp
+description: "D Chgmstrassignaltvdateidp"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

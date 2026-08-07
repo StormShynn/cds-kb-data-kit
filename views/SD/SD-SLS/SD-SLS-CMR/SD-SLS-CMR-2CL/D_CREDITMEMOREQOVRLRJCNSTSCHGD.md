@@ -1,6 +1,6 @@
 ---
 name: D_CREDITMEMOREQOVRLRJCNSTSCHGD
-description: D Creditmemoreqovrlrjcnstschgd
+description: "D Creditmemoreqovrlrjcnstschgd"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

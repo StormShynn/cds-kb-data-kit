@@ -1,6 +1,6 @@
 ---
 name: I_FRTAGRMTITEMPAYMENTTERMTP
-description: Frtagrmtitempaymenttermtp
+description: "Frtagrmtitempaymenttermtp"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

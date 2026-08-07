@@ -1,6 +1,6 @@
 ---
 name: I_DSD_STKVISIBILITYTRUCKSTOCK
-description: Dsd Stkvisibilitytruckstock
+description: "Dsd Stkvisibilitytruckstock"
 app_component: LE-DSD
 software_component: SAPSCORE
 release_state: released

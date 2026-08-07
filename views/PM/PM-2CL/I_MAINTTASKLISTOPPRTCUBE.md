@@ -1,13 +1,13 @@
 ---
 name: I_MAINTTASKLISTOPPRTCUBE
-description: Maint Task List Operation PRT - Cube
+description: "Maint Task List Operation PRT - Cube"
 app_component: PM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTTASKLISTOPPRTCUBE')/$value
-semantic_en: Maint Task List Operation PRT - Cube
+semantic_en: "Maint Task List Operation PRT - Cube"
 tags:
   - PM
   - component:PM-2CL

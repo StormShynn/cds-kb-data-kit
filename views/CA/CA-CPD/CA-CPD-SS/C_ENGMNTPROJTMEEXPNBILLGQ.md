@@ -1,13 +1,13 @@
 ---
 name: C_ENGMNTPROJTMEEXPNBILLGQ
-description: This CDS view provides information about billing caps set up for time and expense billing items in customer projects. Information in this CDS view will help you answer the following business questions: What is the maximum amount that can be billed? What is the amount that has already been billed? Based on the evaluation by revenue recognition, what is the net amount that can be billed and what percentage does this amount constitute when compared to the maximum cap? What is the threshold percentage at which a user is notified about the consumption of billing cap?
+description: "This CDS view provides information about billing caps set up for time and expense billing items in customer projects. Information in this CDS view will help you answer the following business questions: What is the maximum amount that can be billed? What is the amount that has already been billed? Based on the evaluation by revenue recognition, what is the net amount that can be billed and what percentage does this amount constitute when compared to the maximum cap? What is the threshold percentage at which a user is notified about the consumption of billing cap?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJTMEEXPNBILLGQ')/$value
-semantic_en: This CDS view provides information about billing caps set up for time and expense billing items in customer projects. Information in this CDS view will help you answer the following business questions: What is the maximum amount that can be billed? What is the amount that has already been billed? Based on the evaluation by revenue recognition, what is the net amount that can be billed and what percentage does this amount constitute when compared to the maximum cap? What is the threshold percentage at which a user is notified about the consumption of billing cap?
+semantic_en: "This CDS view provides information about billing caps set up for time and expense billing items in customer projects. Information in this CDS view will help you answer the following business questions: What is the maximum amount that can be billed? What is the amount that has already been billed? Based on the evaluation by revenue recognition, what is the net amount that can be billed and what percentage does this amount constitute when compared to the maximum cap? What is the threshold percentage at which a user is notified about the consumption of billing cap?"
 tags:
   - CA
   - billing

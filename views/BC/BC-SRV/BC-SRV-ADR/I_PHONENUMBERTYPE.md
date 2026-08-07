@@ -1,6 +1,6 @@
 ---
 name: I_PHONENUMBERTYPE
-description: Phonenumbertype
+description: "Phonenumbertype"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

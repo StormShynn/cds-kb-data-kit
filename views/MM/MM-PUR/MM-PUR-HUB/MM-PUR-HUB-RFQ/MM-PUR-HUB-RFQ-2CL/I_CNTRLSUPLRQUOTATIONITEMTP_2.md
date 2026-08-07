@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLSUPLRQUOTATIONITEMTP_2
-description: Cntrlsuplrquotationitemtp 2
+description: "Cntrlsuplrquotationitemtp 2"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

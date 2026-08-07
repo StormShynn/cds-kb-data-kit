@@ -1,6 +1,6 @@
 ---
 name: I_CAINSTALLMENTPLANHEADER
-description: Cainstallmentplanheader
+description: "Cainstallmentplanheader"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

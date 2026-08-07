@@ -1,6 +1,6 @@
 ---
 name: D_CUSTOMERMATERIALDELETED
-description: D Customermaterialdeleted
+description: "D Customermaterialdeleted"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

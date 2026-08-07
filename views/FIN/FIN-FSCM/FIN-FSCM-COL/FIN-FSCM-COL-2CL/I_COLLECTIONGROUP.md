@@ -1,6 +1,6 @@
 ---
 name: I_COLLECTIONGROUP
-description: Collectiongroup
+description: "Collectiongroup"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

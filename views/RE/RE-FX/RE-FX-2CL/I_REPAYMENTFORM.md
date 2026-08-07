@@ -1,6 +1,6 @@
 ---
 name: I_REPAYMENTFORM
-description: Repaymentform
+description: "Repaymentform"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

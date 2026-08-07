@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJSALESMARGINCUBE
-description: This CDS view provides the prerequisites for answering the following business questions: How many hours of work have been planned? How many hours have been recorded for projects? How many hours have been billed? What is the total planned cost of a project? What is the total planned revenue for a project? What is the total actual cost of a project? What is the total billed revenue of a project?
+description: "This CDS view provides the prerequisites for answering the following business questions: How many hours of work have been planned? How many hours have been recorded for projects? How many hours have been billed? What is the total planned cost of a project? What is the total planned revenue for a project? What is the total actual cost of a project? What is the total billed revenue of a project?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJSALESMARGINCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How many hours of work have been planned? How many hours have been recorded for projects? How many hours have been billed? What is the total planned cost of a project? What is the total planned revenue for a project? What is the total actual cost of a project? What is the total billed revenue of a project?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How many hours of work have been planned? How many hours have been recorded for projects? How many hours have been billed? What is the total planned cost of a project? What is the total planned revenue for a project? What is the total actual cost of a project? What is the total billed revenue of a project?"
 tags:
   - CA
   - bo:plant

@@ -1,13 +1,13 @@
 ---
 name: C_COLLSINVCMEMORYSITNTMPL
-description: This CDS view provides a comprehensive overview of situations created from invoices in SAP Collections Management. It provides a template for analyzing collections invoice situations, allowing you to monitor and manage overdue invoices, dunning processes, and payment promises effectively. How many invoices are overdue and what is the total overdue amount? What is the status of dunning processes for overdue invoices? How many payment promises are outstanding and what is their total value? What is the risk of late payment for specific invoices?
+description: "This CDS view provides a comprehensive overview of situations created from invoices in SAP Collections Management. It provides a template for analyzing collections invoice situations, allowing you to monitor and manage overdue invoices, dunning processes, and payment promises effectively. How many invoices are overdue and what is the total overdue amount? What is the status of dunning processes for overdue invoices? How many payment promises are outstanding and what is their total value? What is the risk of late payment for specific invoices?"
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLSINVCMEMORYSITNTMPL')/$value
-semantic_en: This CDS view provides a comprehensive overview of situations created from invoices in SAP Collections Management. It provides a template for analyzing collections invoice situations, allowing you to monitor and manage overdue invoices, dunning processes, and payment promises effectively. How many invoices are overdue and what is the total overdue amount? What is the status of dunning processes for overdue invoices? How many payment promises are outstanding and what is their total value? What is the risk of late payment for specific invoices?
+semantic_en: "This CDS view provides a comprehensive overview of situations created from invoices in SAP Collections Management. It provides a template for analyzing collections invoice situations, allowing you to monitor and manage overdue invoices, dunning processes, and payment promises effectively. How many invoices are overdue and what is the total overdue amount? What is the status of dunning processes for overdue invoices? How many payment promises are outstanding and what is their total value? What is the risk of late payment for specific invoices?"
 tags:
   - FIN
   - bo:billingdocument

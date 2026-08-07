@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTPRODNRSCETOOL
-description: Documentprodnrscetool
+description: "Documentprodnrscetool"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_TAXCODEVALUEHELP
-description: Taxcodevaluehelp
+description: "Taxcodevaluehelp"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

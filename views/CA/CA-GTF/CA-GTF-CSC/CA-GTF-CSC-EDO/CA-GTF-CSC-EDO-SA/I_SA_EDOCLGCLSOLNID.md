@@ -1,6 +1,6 @@
 ---
 name: I_SA_EDOCLGCLSOLNID
-description: SA Edoclgclsolnid
+description: "SA Edoclgclsolnid"
 app_component: CA-GTF-CSC-EDO-SA
 software_component: SAPSCORE
 release_state: released

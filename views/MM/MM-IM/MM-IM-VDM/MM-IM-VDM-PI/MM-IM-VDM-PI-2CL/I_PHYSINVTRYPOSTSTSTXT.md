@@ -1,6 +1,6 @@
 ---
 name: I_PHYSINVTRYPOSTSTSTXT
-description: Physinvtrypostststxt
+description: "Physinvtrypostststxt"
 app_component: MM-IM-VDM-PI-2CL
 software_component: SAPSCORE
 release_state: released

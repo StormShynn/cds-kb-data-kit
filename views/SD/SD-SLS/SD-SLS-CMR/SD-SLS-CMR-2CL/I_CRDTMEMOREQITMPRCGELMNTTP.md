@@ -1,6 +1,6 @@
 ---
 name: I_CRDTMEMOREQITMPRCGELMNTTP
-description: Crdtmemoreqitmprcgelmnttp
+description: "Crdtmemoreqitmprcgelmnttp"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

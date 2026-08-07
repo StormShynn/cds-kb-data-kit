@@ -1,13 +1,13 @@
 ---
 name: I_BPRELATIONSHIP
-description: This CDS view retrieves business partner and its relationship data such as relationship type and validity of the relationship.
+description: "This CDS view retrieves business partner and its relationship data such as relationship type and validity of the relationship."
 app_component: AP-MD-BP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPRELATIONSHIP')/$value
-semantic_en: This CDS view retrieves business partner and its relationship data such as relationship type and validity of the relationship.
+semantic_en: "This CDS view retrieves business partner and its relationship data such as relationship type and validity of the relationship."
 tags:
   - AP
   - AP-MD

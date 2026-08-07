@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERLEGALFORMTEXT
-description: Business PartnerLEGALFORMTEXT
+description: "Business PartnerLEGALFORMTEXT"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

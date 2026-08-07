@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTCHANGEMASTERTP_2
-description: PRODUCTChange MasterERTP 2
+description: "PRODUCTChange MasterERTP 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

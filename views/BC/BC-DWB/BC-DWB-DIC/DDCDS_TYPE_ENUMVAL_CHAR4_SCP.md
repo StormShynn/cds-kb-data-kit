@@ -1,6 +1,6 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR4_SCP
-description: Ddcds Type Enumval Char 4 Scp
+description: "Ddcds Type Enumval Char 4 Scp"
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PURORDERINVOICINGPLANTP_2
-description: Purorderinvoicingplantp 2
+description: "Purorderinvoicingplantp 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BR_ICMSBASEDETNTEXT
-description: BR Icmsbasedetntext
+description: "BR Icmsbasedetntext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

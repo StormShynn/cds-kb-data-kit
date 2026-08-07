@@ -1,6 +1,6 @@
 ---
 name: I_SLCMGMTQNAIRETRNSLTNSTSAPI01
-description: Slcmgmtqnairetrnsltnstsapi 01
+description: "Slcmgmtqnairetrnsltnstsapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

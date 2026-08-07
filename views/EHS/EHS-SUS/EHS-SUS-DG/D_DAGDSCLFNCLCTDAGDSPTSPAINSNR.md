@@ -1,6 +1,6 @@
 ---
 name: D_DAGDSCLFNCLCTDAGDSPTSPAINSNR
-description: D Dagdsclfnclctdagdsptspainsnr
+description: "D Dagdsclfnclctdagdsptspainsnr"
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

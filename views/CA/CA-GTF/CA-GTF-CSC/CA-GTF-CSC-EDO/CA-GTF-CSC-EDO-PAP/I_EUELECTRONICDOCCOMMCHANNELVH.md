@@ -1,6 +1,6 @@
 ---
 name: I_EUELECTRONICDOCCOMMCHANNELVH
-description: Euelectronicdoccommchannelvh
+description: "Euelectronicdoccommchannelvh"
 app_component: CA-GTF-CSC-EDO-PAP
 software_component: SAPSCORE
 release_state: released

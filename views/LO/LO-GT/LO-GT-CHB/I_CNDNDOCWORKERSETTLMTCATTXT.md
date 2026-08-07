@@ -1,13 +1,13 @@
 ---
 name: I_CNDNDOCWORKERSETTLMTCATTXT
-description: Cndn Doc Wrkr Settlement Category - Text
+description: "Cndn Doc Wrkr Settlement Category - Text"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCWORKERSETTLMTCATTXT')/$value
-semantic_en: Cndn Doc Wrkr Settlement Category - Text
+semantic_en: "Cndn Doc Wrkr Settlement Category - Text"
 tags:
   - LO
   - component:LO-GT-CHB

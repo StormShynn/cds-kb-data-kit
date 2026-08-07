@@ -1,6 +1,6 @@
 ---
 name: I_UPCGSRVCCONTRITEMCUBE
-description: Upcgsrvccontritemcube
+description: "Upcgsrvccontritemcube"
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

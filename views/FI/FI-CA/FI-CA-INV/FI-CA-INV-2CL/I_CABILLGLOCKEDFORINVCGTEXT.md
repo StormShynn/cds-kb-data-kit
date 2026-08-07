@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGLOCKEDFORINVCGTEXT
-description: Cabillglockedforinvcgtext
+description: "Cabillglockedforinvcgtext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

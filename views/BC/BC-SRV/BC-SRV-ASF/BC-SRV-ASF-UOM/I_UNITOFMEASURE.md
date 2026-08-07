@@ -1,6 +1,6 @@
 ---
 name: I_UNITOFMEASURE
-description: Unit of Measure
+description: "Unit of Measure"
 app_component: BC-SRV-ASF-UOM
 software_component: SAP_BASIS
 release_state: released

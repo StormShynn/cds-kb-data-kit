@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLYDEMANDITEMTP
-description: Supplydemanditemtp
+description: "Supplydemanditemtp"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

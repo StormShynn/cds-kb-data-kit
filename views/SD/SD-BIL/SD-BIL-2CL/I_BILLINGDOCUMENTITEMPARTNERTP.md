@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTITEMPARTNERTP
-description: Billing DocumentUMENTITEMPARTNERTP
+description: "Billing DocumentUMENTITEMPARTNERTP"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

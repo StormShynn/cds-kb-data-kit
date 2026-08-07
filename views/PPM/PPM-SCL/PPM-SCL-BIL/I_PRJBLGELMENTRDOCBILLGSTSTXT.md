@@ -1,6 +1,6 @@
 ---
 name: I_PRJBLGELMENTRDOCBILLGSTSTXT
-description: Prjblgelmentrdocbillgststxt
+description: "Prjblgelmentrdocbillgststxt"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

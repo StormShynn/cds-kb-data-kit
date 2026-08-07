@@ -1,13 +1,13 @@
 ---
 name: I_WASTETRANSPORTERDIMENSION
-description: Waste Transporter Dimension
+description: "Waste Transporter Dimension"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTETRANSPORTERDIMENSION')/$value
-semantic_en: Waste Transporter Dimension
+semantic_en: "Waste Transporter Dimension"
 tags:
   - EHS
   - bo:purchaseorder

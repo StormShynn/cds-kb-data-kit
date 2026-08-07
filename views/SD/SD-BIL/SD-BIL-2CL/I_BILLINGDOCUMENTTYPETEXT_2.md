@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTTYPETEXT_2
-description: Billing DocumentUMENTTYPETEXT 2
+description: "Billing DocumentUMENTTYPETEXT 2"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

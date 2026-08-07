@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRPLANTLISTSTDVH
-description: This CDS view exposes the values for the condition contract plant list.
+description: "This CDS view exposes the values for the condition contract plant list."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPLANTLISTSTDVH')/$value
-semantic_en: This CDS view exposes the values for the condition contract plant list.
+semantic_en: "This CDS view exposes the values for the condition contract plant list."
 tags:
   - LO
   - bo:purchaseorder

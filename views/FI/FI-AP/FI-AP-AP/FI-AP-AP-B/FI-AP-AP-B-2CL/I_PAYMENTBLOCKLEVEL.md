@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTBLOCKLEVEL
-description: Paymentblocklevel
+description: "Paymentblocklevel"
 app_component: FI-AP-AP-B-2CL
 software_component: SAPSCORE
 release_state: released

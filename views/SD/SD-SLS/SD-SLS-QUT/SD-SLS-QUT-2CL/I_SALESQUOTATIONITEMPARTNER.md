@@ -1,6 +1,6 @@
 ---
 name: I_SALESQUOTATIONITEMPARTNER
-description: Salesquotationitempartner
+description: "Salesquotationitempartner"
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

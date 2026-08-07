@@ -1,6 +1,6 @@
 ---
 name: I_CACORRESPNCACTIVITYCODET
-description: Cacorrespncactivitycodet
+description: "Cacorrespncactivitycodet"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

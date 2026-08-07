@@ -1,6 +1,6 @@
 ---
 name: I_CADISPUTEEXTCALLERCODE
-description: Cadisputeextcallercode
+description: "Cadisputeextcallercode"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

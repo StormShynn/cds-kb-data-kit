@@ -1,6 +1,6 @@
 ---
 name: I_TR_EDOCREGISTEREDUSERLIST
-description: TR Edocregistereduserlist
+description: "TR Edocregistereduserlist"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released

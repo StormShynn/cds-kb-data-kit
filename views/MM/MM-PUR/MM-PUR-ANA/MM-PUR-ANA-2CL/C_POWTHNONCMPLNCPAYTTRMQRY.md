@@ -1,27 +1,27 @@
 ---
 name: C_POWTHNONCMPLNCPAYTTRMQRY
-description: PO having Non compliant Payment Terms
+description: "PO having Non compliant Payment Terms"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_POWTHNONCMPLNCPAYTTRMQRY')/$value
-semantic_en: PO having Non compliant Payment Terms
-semantic_vi: PO having Non compliant Payment Terms — CDS view tiêu dùng dựa trên C_POWthNonCmplncPaytTrm.
+semantic_en: "PO having Non compliant Payment Terms"
+semantic_vi: "PO having Non compliant Payment Terms — CDS view tiêu dùng dựa trên C_POWthNonCmplncPaytTrm."
 keywords:
-  - having
-  - non
-  - compliant
-  - payment
-  - terms
-  - purchase
-  - order
-  - item
-  - supplier
-  - purchasing
-  - organization
-  - group
+  - "having"
+  - "non"
+  - "compliant"
+  - "payment"
+  - "terms"
+  - "purchase"
+  - "order"
+  - "item"
+  - "supplier"
+  - "purchasing"
+  - "organization"
+  - "group"
 tags:
   - MM
   - bo:purchaseorder

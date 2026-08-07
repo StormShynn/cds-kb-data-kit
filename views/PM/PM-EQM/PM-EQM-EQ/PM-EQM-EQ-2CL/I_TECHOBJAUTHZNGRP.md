@@ -1,6 +1,6 @@
 ---
 name: I_TECHOBJAUTHZNGRP
-description: Techobjauthzngrp
+description: "Techobjauthzngrp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

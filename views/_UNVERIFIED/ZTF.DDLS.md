@@ -1,17 +1,17 @@
 ---
 name: ZTF.DDLS
-description: .
+description: "."
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Arunagirish/rap_arun/blob/ffd8c7379d437257648c6e3647959c0c267b7bfa/src/ztf.ddls.asddls
-semantic_en: . — CDS view.
-semantic_vi: . — CDS view dựa trên ..
+semantic_en: ". — CDS view."
+semantic_vi: ". — CDS view dựa trên .."
 keywords:
-  - client:mandt
-  - lifnr:lifnr
+  - "client:mandt"
+  - "lifnr:lifnr"
 ---
 # ZTF.DDLS
 

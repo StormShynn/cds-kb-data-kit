@@ -1,6 +1,6 @@
 ---
 name: I_INSURANCECLAIMSCOPEOFLOSSTXT
-description: Insuranceclaimscopeoflosstxt
+description: "Insuranceclaimscopeoflosstxt"
 app_component: FS-CM
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FIXEDASSETUSAGEOBJECT
-description: Fixed AssetUSAGEOBJECT
+description: "Fixed AssetUSAGEOBJECT"
 app_component: FI-AA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEPLANSCHEDULE
-description: Maintenance PlanSCHEDULE
+description: "Maintenance PlanSCHEDULE"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

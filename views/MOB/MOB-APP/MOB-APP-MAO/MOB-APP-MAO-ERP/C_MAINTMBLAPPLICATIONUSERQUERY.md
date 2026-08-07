@@ -1,13 +1,13 @@
 ---
 name: C_MAINTMBLAPPLICATIONUSERQUERY
-description: Mobile Application User - Query
+description: "Mobile Application User - Query"
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTMBLAPPLICATIONUSERQUERY')/$value
-semantic_en: Mobile Application User - Query
+semantic_en: "Mobile Application User - Query"
 tags:
   - MOB
   - component:MOB-APP-MAO-ERP

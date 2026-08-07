@@ -1,13 +1,13 @@
 ---
 name: I_TRSYFINANCIALOBJECT
-description: This CDS view provides information for financial objects. This CDS view provides the prerequisites for answering the following business questions: Which financial object exists for a financial transaction? What are the analysis characteristics of a financial transaction?
+description: "This CDS view provides information for financial objects. This CDS view provides the prerequisites for answering the following business questions: Which financial object exists for a financial transaction? What are the analysis characteristics of a financial transaction?"
 app_component: FIN-FSCM-TRM-AN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRSYFINANCIALOBJECT')/$value
-semantic_en: This CDS view provides information for financial objects. This CDS view provides the prerequisites for answering the following business questions: Which financial object exists for a financial transaction? What are the analysis characteristics of a financial transaction?
+semantic_en: "This CDS view provides information for financial objects. This CDS view provides the prerequisites for answering the following business questions: Which financial object exists for a financial transaction? What are the analysis characteristics of a financial transaction?"
 tags:
   - FIN
   - bo:companycode

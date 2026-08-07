@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFEPRODUCTTRACEABILITY
-description: BR Nfeproducttraceability
+description: "BR Nfeproducttraceability"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

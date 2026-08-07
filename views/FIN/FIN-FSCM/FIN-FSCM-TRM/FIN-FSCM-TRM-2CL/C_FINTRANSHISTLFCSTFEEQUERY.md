@@ -1,13 +1,13 @@
 ---
 name: C_FINTRANSHISTLFCSTFEEQUERY
-description: Fin Trans Histl Fcst Fee - Query
+description: "Fin Trans Histl Fcst Fee - Query"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FINTRANSHISTLFCSTFEEQUERY')/$value
-semantic_en: Fin Trans Histl Fcst Fee - Query
+semantic_en: "Fin Trans Histl Fcst Fee - Query"
 tags:
   - FIN
   - bo:companycode

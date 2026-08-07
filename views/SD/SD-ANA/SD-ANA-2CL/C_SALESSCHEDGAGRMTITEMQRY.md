@@ -1,28 +1,28 @@
 ---
 name: C_SALESSCHEDGAGRMTITEMQRY
-description: This CDS view provides prerequisites for analyzing to what extent sales scheduling agreements are being processed. It answers the following business questions about sales scheduling agreements with delivery schedules: What is the cumulative delivered quantity? What is the cumulative issued quantity? What is the cumulative quantity received by customer?
+description: "This CDS view provides prerequisites for analyzing to what extent sales scheduling agreements are being processed. It answers the following business questions about sales scheduling agreements with delivery schedules: What is the cumulative delivered quantity? What is the cumulative issued quantity? What is the cumulative quantity received by customer?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESSCHEDGAGRMTITEMQRY')/$value
-semantic_en: This CDS view provides prerequisites for analyzing to what extent sales scheduling agreements are being processed. It answers the following business questions about sales scheduling agreements with delivery schedules: What is the cumulative delivered quantity? What is the cumulative issued quantity? What is the cumulative quantity received by customer?
-semantic_vi: Sales Scheduling Agreement Item - Query — CDS view tiêu dùng dựa trên I_SalesSchedgAgrmtItemCube.
+semantic_en: "This CDS view provides prerequisites for analyzing to what extent sales scheduling agreements are being processed. It answers the following business questions about sales scheduling agreements with delivery schedules: What is the cumulative delivered quantity? What is the cumulative issued quantity? What is the cumulative quantity received by customer?"
+semantic_vi: "Sales Scheduling Agreement Item - Query — CDS view tiêu dùng dựa trên I_SalesSchedgAgrmtItemCube."
 keywords:
-  - Sales Scheduling Agreement Item - Query
-  - sales
-  - scheduling
-  - agreement
-  - item
-  - query
-  - release
-  - type
-  - schedg
-  - agrmt
-  - last
-  - change
-  - date
+  - "Sales Scheduling Agreement Item - Query"
+  - "sales"
+  - "scheduling"
+  - "agreement"
+  - "item"
+  - "query"
+  - "release"
+  - "type"
+  - "schedg"
+  - "agrmt"
+  - "last"
+  - "change"
+  - "date"
 tags:
   - SD
   - bo:businesspartner

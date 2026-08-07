@@ -1,20 +1,20 @@
 ---
 name: Z_VC_ATTACH.DDLS
-description: ATTACH
+description: "ATTACH"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/vishnuchalla49/Vishnu-RAP/blob/f8422358881fba0e0d5066f1f9bfe5d8515ef4d7/src/z_vc_attach.ddls.asddls
-semantic_en: ATTACH — CDS view based on zvc_attach.
-semantic_vi: ATTACH — CDS view dựa trên zvc_attach.
+semantic_en: "ATTACH — CDS view based on zvc_attach."
+semantic_vi: "ATTACH — CDS view dựa trên zvc_attach."
 keywords:
-  - attach
-  - travel
-  - memo
-  - attachment
-  - filename
+  - "attach"
+  - "travel"
+  - "memo"
+  - "attachment"
+  - "filename"
 tags:
   - AC
   - component:AC

@@ -1,6 +1,6 @@
 ---
 name: D_OUTBOUNDDELIVERYITEMCHANGED
-description: D Outbound DeliveryITEMCHANGED
+description: "D Outbound DeliveryITEMCHANGED"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

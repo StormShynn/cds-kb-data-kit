@@ -1,6 +1,6 @@
 ---
 name: I_EXCHANGERATESPREADRAWDATA
-description: Exchange RateSPREADRAWDATA
+description: "Exchange RateSPREADRAWDATA"
 app_component: BC-SRV-BSF-CUR-2CL
 software_component: SAP_BASIS
 release_state: released

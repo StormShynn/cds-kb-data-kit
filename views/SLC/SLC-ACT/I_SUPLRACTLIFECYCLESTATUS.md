@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRACTLIFECYCLESTATUS
-description: Suplractlifecyclestatus
+description: "Suplractlifecyclestatus"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

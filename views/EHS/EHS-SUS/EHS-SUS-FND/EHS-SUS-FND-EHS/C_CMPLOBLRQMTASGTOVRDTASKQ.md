@@ -1,13 +1,13 @@
 ---
 name: C_CMPLOBLRQMTASGTOVRDTASKQ
-description: Cmpl Obl Rqmt Asgt Ovrd Task - Query
+description: "Cmpl Obl Rqmt Asgt Ovrd Task - Query"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMPLOBLRQMTASGTOVRDTASKQ')/$value
-semantic_en: Cmpl Obl Rqmt Asgt Ovrd Task - Query
+semantic_en: "Cmpl Obl Rqmt Asgt Ovrd Task - Query"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

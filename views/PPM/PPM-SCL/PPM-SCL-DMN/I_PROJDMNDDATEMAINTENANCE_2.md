@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDDATEMAINTENANCE_2
-description: Projdmnddatemaintenance 2
+description: "Projdmnddatemaintenance 2"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

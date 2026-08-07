@@ -1,6 +1,6 @@
 ---
 name: I_LEGALDOCUMENTAPI01
-description: Legaldocumentapi 01
+description: "Legaldocumentapi 01"
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

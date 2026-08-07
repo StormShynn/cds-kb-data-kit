@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCLASSCHARACTERISTICDEX
-description: Clfnclasscharacteristicdex
+description: "Clfnclasscharacteristicdex"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

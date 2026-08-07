@@ -1,24 +1,24 @@
 ---
 name: C_MATERIALSTOCKBYKEYDATE
-description: This CDS view provides the prerequisites for answering the following business question: What was my total stock on a specified date?
+description: "This CDS view provides the prerequisites for answering the following business question: What was my total stock on a specified date?"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATERIALSTOCKBYKEYDATE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What was my total stock on a specified date?
-semantic_vi: Material Stock at posting date — CDS view tiêu dùng (transactional data) dựa trên I_MaterialStock_2.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What was my total stock on a specified date?"
+semantic_vi: "Material Stock at posting date — CDS view tiêu dùng (transactional data) dựa trên I_MaterialStock_2."
 keywords:
-  - material
-  - stock
-  - posting
-  - date
-  - plant
-  - storage
-  - location
-  - batch
-  - supplier
+  - "material"
+  - "stock"
+  - "posting"
+  - "date"
+  - "plant"
+  - "storage"
+  - "location"
+  - "batch"
+  - "supplier"
 tags:
   - MM
   - bo:companycode

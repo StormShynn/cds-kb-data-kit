@@ -1,6 +1,6 @@
 ---
 name: I_QLTYNOTIFICATIONTP
-description: Qltynotificationtp
+description: "Qltynotificationtp"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released

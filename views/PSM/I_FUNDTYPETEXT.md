@@ -1,6 +1,6 @@
 ---
 name: I_FUNDTYPETEXT
-description: Fundtypetext
+description: "Fundtypetext"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

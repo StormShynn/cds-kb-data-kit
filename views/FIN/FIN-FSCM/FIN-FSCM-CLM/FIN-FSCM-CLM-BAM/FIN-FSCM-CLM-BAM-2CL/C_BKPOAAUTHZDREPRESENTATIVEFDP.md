@@ -1,13 +1,13 @@
 ---
 name: C_BKPOAAUTHZDREPRESENTATIVEFDP
-description: POA Auth Rep Form Data Provider
+description: "POA Auth Rep Form Data Provider"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BKPOAAUTHZDREPRESENTATIVEFDP')/$value
-semantic_en: POA Auth Rep Form Data Provider
+semantic_en: "POA Auth Rep Form Data Provider"
 tags:
   - FIN
   - bo:purchaseorder

@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERACCOUNTGROUPTEXT
-description: Customeraccountgrouptext
+description: "Customeraccountgrouptext"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

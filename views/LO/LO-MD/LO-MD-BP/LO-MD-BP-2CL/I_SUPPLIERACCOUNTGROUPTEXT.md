@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERACCOUNTGROUPTEXT
-description: Supplieraccountgrouptext
+description: "Supplieraccountgrouptext"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

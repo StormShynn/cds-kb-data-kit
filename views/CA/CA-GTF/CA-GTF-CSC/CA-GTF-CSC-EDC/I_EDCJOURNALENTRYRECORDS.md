@@ -1,6 +1,6 @@
 ---
 name: I_EDCJOURNALENTRYRECORDS
-description: EDCJournal EntryRECORDS
+description: "EDCJournal EntryRECORDS"
 app_component: CA-GTF-CSC-EDC
 software_component: SAPSCORE
 release_state: released

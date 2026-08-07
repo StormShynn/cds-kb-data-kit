@@ -1,6 +1,6 @@
 ---
 name: I_PLANNEDORDERPROCGACTIONTEXT
-description: Planned OrderPROCGACTIONTEXT
+description: "Planned OrderPROCGACTIONTEXT"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

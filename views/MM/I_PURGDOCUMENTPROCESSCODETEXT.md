@@ -1,6 +1,6 @@
 ---
 name: I_PURGDOCUMENTPROCESSCODETEXT
-description: Purgdocumentprocesscodetext
+description: "Purgdocumentprocesscodetext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

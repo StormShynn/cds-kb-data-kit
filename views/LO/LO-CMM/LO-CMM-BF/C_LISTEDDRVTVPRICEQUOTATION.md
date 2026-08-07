@@ -1,28 +1,28 @@
 ---
 name: C_LISTEDDRVTVPRICEQUOTATION
-description: Listed Derivatives Price Quotation
+description: "Listed Derivatives Price Quotation"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LISTEDDRVTVPRICEQUOTATION')/$value
-semantic_en: Listed Derivatives Price Quotation
-semantic_vi: Listed Derivatives Price Quotation — CDS view tiêu dùng dựa trên I_ListedDrvtvPriceQuotation.
+semantic_en: "Listed Derivatives Price Quotation"
+semantic_vi: "Listed Derivatives Price Quotation — CDS view tiêu dùng dựa trên I_ListedDrvtvPriceQuotation."
 keywords:
-  - listed
-  - derivatives
-  - price
-  - quotation
-  - derivative
-  - contr
-  - specification
-  - market
-  - identifier
-  - code
-  - date
-  - type
-  - maturity
+  - "listed"
+  - "derivatives"
+  - "price"
+  - "quotation"
+  - "derivative"
+  - "contr"
+  - "specification"
+  - "market"
+  - "identifier"
+  - "code"
+  - "date"
+  - "type"
+  - "maturity"
 tags:
   - LO
   - component:LO-CMM-BF

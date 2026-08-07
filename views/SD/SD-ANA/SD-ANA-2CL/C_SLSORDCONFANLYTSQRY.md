@@ -1,25 +1,25 @@
 ---
 name: C_SLSORDCONFANLYTSQRY
-description: This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders?
+description: "This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SLSORDCONFANLYTSQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders?
-semantic_vi: Confirmation of Sales Orders - Query — CDS view tiêu dùng dựa trên I_SlsOrdConfAnalyticsCube.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders?"
+semantic_vi: "Confirmation of Sales Orders - Query — CDS view tiêu dùng dựa trên I_SlsOrdConfAnalyticsCube."
 keywords:
-  - Analytics - Analyze Confirmations of Sales Orders
-  - confirmation
-  - sales
-  - orders
-  - query
-  - order
-  - item
-  - type
-  - category
-  - document
+  - "Analytics - Analyze Confirmations of Sales Orders"
+  - "confirmation"
+  - "sales"
+  - "orders"
+  - "query"
+  - "order"
+  - "item"
+  - "type"
+  - "category"
+  - "document"
 tags:
   - SD
   - bo:businesspartner

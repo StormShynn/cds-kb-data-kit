@@ -1,6 +1,6 @@
 ---
 name: I_COUNTRYTRANSPORTSTATUS
-description: Countrytransportstatus
+description: "Countrytransportstatus"
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

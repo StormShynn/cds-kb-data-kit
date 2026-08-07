@@ -1,6 +1,6 @@
 ---
 name: I_FISCALYEARQUARTER
-description: Fiscalyearquarter
+description: "Fiscalyearquarter"
 app_component: CA-GTF-GL-CAL
 software_component: SAP_BASIS
 release_state: released

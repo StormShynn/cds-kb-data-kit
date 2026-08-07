@@ -1,6 +1,6 @@
 ---
 name: I_MFGORDERDOCUMENTLINK
-description: Mfgorderdocumentlink
+description: "Mfgorderdocumentlink"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

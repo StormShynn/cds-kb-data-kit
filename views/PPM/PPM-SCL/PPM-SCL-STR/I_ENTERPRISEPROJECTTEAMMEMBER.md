@@ -1,6 +1,6 @@
 ---
 name: I_ENTERPRISEPROJECTTEAMMEMBER
-description: Enterpriseprojectteammember
+description: "Enterpriseprojectteammember"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

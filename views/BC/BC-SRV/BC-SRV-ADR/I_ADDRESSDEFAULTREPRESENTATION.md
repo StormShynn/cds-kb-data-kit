@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSDEFAULTREPRESENTATION
-description: Addressdefaultrepresentation
+description: "Addressdefaultrepresentation"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

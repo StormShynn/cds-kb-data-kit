@@ -1,25 +1,25 @@
 ---
 name: C_EQUIPMENTPARTNERDEX
-description: Equipment Partner DEX
+description: "Equipment Partner DEX"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EQUIPMENTPARTNERDEX')/$value
-semantic_en: Equipment Partner DEX
-semantic_vi: Equipment Partner DEX — CDS view tiêu dùng dựa trên I_Equipment.
+semantic_en: "Equipment Partner DEX"
+semantic_vi: "Equipment Partner DEX — CDS view tiêu dùng dựa trên I_Equipment."
 keywords:
-  - equipment
-  - partner
-  - dex
-  - maint
-  - object
-  - internal
-  - function
-  - maintenance
-  - number
-  - category
+  - "equipment"
+  - "partner"
+  - "dex"
+  - "maint"
+  - "object"
+  - "internal"
+  - "function"
+  - "maintenance"
+  - "number"
+  - "category"
 tags:
   - PM
   - component:PM-EQM-EQ-2CL

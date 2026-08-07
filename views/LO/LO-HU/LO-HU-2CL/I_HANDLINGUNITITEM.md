@@ -1,6 +1,6 @@
 ---
 name: I_HANDLINGUNITITEM
-description: Handlingunititem
+description: "Handlingunititem"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

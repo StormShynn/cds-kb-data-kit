@@ -1,13 +1,13 @@
 ---
 name: I_AGENCYREPORTTYPE
-description: Agency Report Type
+description: "Agency Report Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGENCYREPORTTYPE')/$value
-semantic_en: Agency Report Type
+semantic_en: "Agency Report Type"
 tags:
   - IS
   - bo:purchaseorder

@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALREALESTATEPARTCOST
-description: Cost Details for Collateral RE Part
+description: "Cost Details for Collateral RE Part"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALREALESTATEPARTCOST')/$value
-semantic_en: Cost Details for Collateral RE Part
+semantic_en: "Cost Details for Collateral RE Part"
 tags:
   - FS
   - component:FS-CMS

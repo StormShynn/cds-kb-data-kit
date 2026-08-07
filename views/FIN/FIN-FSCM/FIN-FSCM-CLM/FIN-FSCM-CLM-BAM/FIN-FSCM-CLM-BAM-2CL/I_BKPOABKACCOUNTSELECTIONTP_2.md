@@ -1,6 +1,6 @@
 ---
 name: I_BKPOABKACCOUNTSELECTIONTP_2
-description: Bkpoabkaccountselectiontp 2
+description: "Bkpoabkaccountselectiontp 2"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_VARCONFIGNTBLCNTNTCRTELINEP
-description: D Varconfigntblcntntcrtelinep
+description: "D Varconfigntblcntntcrtelinep"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

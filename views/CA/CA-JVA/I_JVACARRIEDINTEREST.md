@@ -1,6 +1,6 @@
 ---
 name: I_JVACARRIEDINTEREST
-description: Jvacarriedinterest
+description: "Jvacarriedinterest"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

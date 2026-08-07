@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPROFITCENTERHIERNODET
-description: CNSLDTNProfit CenterHIERNODET
+description: "CNSLDTNProfit CenterHIERNODET"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

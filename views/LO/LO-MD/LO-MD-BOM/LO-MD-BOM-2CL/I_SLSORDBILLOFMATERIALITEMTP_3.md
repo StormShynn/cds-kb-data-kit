@@ -1,6 +1,6 @@
 ---
 name: I_SLSORDBILLOFMATERIALITEMTP_3
-description: SLSORDBill of MaterialITEMTP 3
+description: "SLSORDBill of MaterialITEMTP 3"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

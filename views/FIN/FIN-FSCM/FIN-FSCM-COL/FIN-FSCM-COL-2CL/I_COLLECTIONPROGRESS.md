@@ -1,13 +1,13 @@
 ---
 name: I_COLLECTIONPROGRESS
-description: Collection Progress - Cube
+description: "Collection Progress - Cube"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLECTIONPROGRESS')/$value
-semantic_en: Collection Progress - Cube
+semantic_en: "Collection Progress - Cube"
 tags:
   - FIN
   - component:FIN-FSCM-COL-2CL

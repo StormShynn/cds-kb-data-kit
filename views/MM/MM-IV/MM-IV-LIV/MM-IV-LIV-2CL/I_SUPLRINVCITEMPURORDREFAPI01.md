@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRINVCITEMPURORDREFAPI01
-description: Suplrinvcitempurordrefapi 01
+description: "Suplrinvcitempurordrefapi 01"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

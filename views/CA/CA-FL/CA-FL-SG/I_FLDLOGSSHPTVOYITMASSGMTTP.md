@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSSHPTVOYITMASSGMTTP
-description: Fldlogsshptvoyitmassgmttp
+description: "Fldlogsshptvoyitmassgmttp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

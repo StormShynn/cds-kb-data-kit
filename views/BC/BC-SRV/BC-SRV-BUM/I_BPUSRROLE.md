@@ -1,6 +1,6 @@
 ---
 name: I_BPUSRROLE
-description: Bpusrrole
+description: "Bpusrrole"
 app_component: BC-SRV-BUM
 software_component: SAP_BASIS
 release_state: released

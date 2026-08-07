@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECORDDOCITEMDEX
-description: Change RecordDOCITEMDEX
+description: "Change RecordDOCITEMDEX"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

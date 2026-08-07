@@ -1,13 +1,13 @@
 ---
 name: C_INSURCLMTOTEXPNDTRQUERY
-description: Total Claim Expenditure
+description: "Total Claim Expenditure"
 app_component: FS-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INSURCLMTOTEXPNDTRQUERY')/$value
-semantic_en: Total Claim Expenditure
+semantic_en: "Total Claim Expenditure"
 tags:
   - FS
   - claim

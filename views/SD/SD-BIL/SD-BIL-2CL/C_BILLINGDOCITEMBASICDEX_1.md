@@ -1,6 +1,6 @@
 ---
 name: C_BILLINGDOCITEMBASICDEX_1
-description: Billing DocumentITEMBASICDEX 1
+description: "Billing DocumentITEMBASICDEX 1"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

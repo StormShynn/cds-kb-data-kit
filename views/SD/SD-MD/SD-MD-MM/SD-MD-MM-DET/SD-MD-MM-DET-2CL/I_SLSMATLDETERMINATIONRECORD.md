@@ -1,6 +1,6 @@
 ---
 name: I_SLSMATLDETERMINATIONRECORD
-description: Slsmatldeterminationrecord
+description: "Slsmatldeterminationrecord"
 app_component: SD-MD-MM-DET-2CL
 software_component: SAPSCORE
 release_state: released

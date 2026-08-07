@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSUBITEMHIERARCHYT
-description: Cnsldtnsubitemhierarchyt
+description: "Cnsldtnsubitemhierarchyt"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,28 +1,28 @@
 ---
 name: C_CUSTPROJMARGOVWQRY
-description: Customer Project Margin Query
+description: "Customer Project Margin Query"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTPROJMARGOVWQRY')/$value
-semantic_en: Customer Project Margin Query
-semantic_vi: Customer Project Margin Query — CDS view tiêu dùng dựa trên Customer Project Margin Query.
+semantic_en: "Customer Project Margin Query"
+semantic_vi: "Customer Project Margin Query — CDS view tiêu dùng dựa trên Customer Project Margin Query."
 keywords:
-  - Customer Project Margin Query
-  - customer
-  - project
-  - margin
-  - query
-  - company
-  - code
-  - currency
-  - field
-  - fiscal
-  - year
-  - ledger
-  - variant
+  - "Customer Project Margin Query"
+  - "customer"
+  - "project"
+  - "margin"
+  - "query"
+  - "company"
+  - "code"
+  - "currency"
+  - "field"
+  - "fiscal"
+  - "year"
+  - "ledger"
+  - "variant"
 tags:
   - CO
   - bo:businesspartner

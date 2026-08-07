@@ -1,6 +1,6 @@
 ---
 name: I_OBJVALDETNACTIVATIONSTSTEXT
-description: Objvaldetnactivationststext
+description: "Objvaldetnactivationststext"
 app_component: CA-ATP-OVD-2CL
 software_component: SAPSCORE
 release_state: released

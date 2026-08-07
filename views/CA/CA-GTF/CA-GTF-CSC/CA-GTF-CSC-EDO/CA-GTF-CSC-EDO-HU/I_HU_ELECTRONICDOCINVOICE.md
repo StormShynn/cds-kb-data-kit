@@ -1,6 +1,6 @@
 ---
 name: I_HU_ELECTRONICDOCINVOICE
-description: HU Electronicdocinvoice
+description: "HU Electronicdocinvoice"
 app_component: CA-GTF-CSC-EDO-HU
 software_component: SAPSCORE
 release_state: released

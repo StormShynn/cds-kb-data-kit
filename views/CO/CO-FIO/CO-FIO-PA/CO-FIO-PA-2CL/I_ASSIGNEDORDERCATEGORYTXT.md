@@ -1,22 +1,22 @@
 ---
 name: I_ASSIGNEDORDERCATEGORYTXT
-description: Order Category for ETO - Text
+description: "Order Category for ETO - Text"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSIGNEDORDERCATEGORYTXT')/$value
-semantic_en: Order Category for ETO - Text
-semantic_vi: Order Category for ETO - Text — CDS view giao diện dựa trên dd07t.
+semantic_en: "Order Category for ETO - Text"
+semantic_vi: "Order Category for ETO - Text — CDS view giao diện dựa trên dd07t."
 keywords:
-  - order
-  - category
-  - for
-  - eto
-  - text
-  - language
-  - name
+  - "order"
+  - "category"
+  - "for"
+  - "eto"
+  - "text"
+  - "language"
+  - "name"
 tags:
   - CO
   - CO-FIO

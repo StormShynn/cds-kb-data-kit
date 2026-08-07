@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERHIERARCHY
-description: Cost CenterHIERARCHY
+description: "Cost CenterHIERARCHY"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

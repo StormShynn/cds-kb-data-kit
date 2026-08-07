@@ -1,13 +1,13 @@
 ---
 name: I_APMPAYMENTITEM
-description: APM Payment Transaction Item
+description: "APM Payment Transaction Item"
 app_component: FIN-FSCM-PF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APMPAYMENTITEM')/$value
-semantic_en: APM Payment Transaction Item
+semantic_en: "APM Payment Transaction Item"
 tags:
   - FIN
   - component:FIN-FSCM-PF

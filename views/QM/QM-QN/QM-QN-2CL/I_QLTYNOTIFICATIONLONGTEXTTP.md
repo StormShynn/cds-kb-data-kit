@@ -1,6 +1,6 @@
 ---
 name: I_QLTYNOTIFICATIONLONGTEXTTP
-description: Qltynotificationlongtexttp
+description: "Qltynotificationlongtexttp"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_GRANTEEMGMTFUNDTYPETEXT
-description: Grantee Management Fund Type - Text
+description: "Grantee Management Fund Type - Text"
 app_component: PSM-GM-GTE
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRANTEEMGMTFUNDTYPETEXT')/$value
-semantic_en: Grantee Management Fund Type - Text
+semantic_en: "Grantee Management Fund Type - Text"
 tags:
   - PSM
   - component:PSM-GM-GTE

@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTSTANDARDUSAGETEXT
-description: Business PartnerSTANDARDUSAGETEXT
+description: "Business PartnerSTANDARDUSAGETEXT"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: C_SALESORGANIZATIONDEX
-description: Sales OrganizationDEX
+description: "Sales OrganizationDEX"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

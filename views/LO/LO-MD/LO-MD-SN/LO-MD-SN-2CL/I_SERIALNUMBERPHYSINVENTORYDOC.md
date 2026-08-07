@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERPHYSINVENTORYDOC
-description: Serial NumberPHYSINVENTORYDOC
+description: "Serial NumberPHYSINVENTORYDOC"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

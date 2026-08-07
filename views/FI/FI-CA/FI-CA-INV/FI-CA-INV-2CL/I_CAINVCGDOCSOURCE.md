@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGDOCSOURCE
-description: Cainvcgdocsource
+description: "Cainvcgdocsource"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

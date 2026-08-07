@@ -1,6 +1,6 @@
 ---
 name: I_SHIPPINGINSTRUCTIONTEXT
-description: Shippinginstructiontext
+description: "Shippinginstructiontext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

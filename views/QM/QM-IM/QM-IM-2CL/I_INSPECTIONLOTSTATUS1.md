@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONLOTSTATUS1
-description: Inspectionlotstatus 1
+description: "Inspectionlotstatus 1"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

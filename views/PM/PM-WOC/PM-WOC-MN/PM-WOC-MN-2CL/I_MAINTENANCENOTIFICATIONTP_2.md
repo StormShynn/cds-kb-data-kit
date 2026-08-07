@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCENOTIFICATIONTP_2
-description: Maintenancenotificationtp 2
+description: "Maintenancenotificationtp 2"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released

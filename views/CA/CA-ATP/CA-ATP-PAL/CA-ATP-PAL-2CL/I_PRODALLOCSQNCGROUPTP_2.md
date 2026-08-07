@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCSQNCGROUPTP_2
-description: Prodallocsqncgrouptp 2
+description: "Prodallocsqncgrouptp 2"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

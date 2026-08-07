@@ -1,13 +1,13 @@
 ---
 name: I_CNDNDOCSUPLRINVCDLVCOSTCATT
-description: Cndn Doc Supplr Invc Deliv Cost Cat - Text
+description: "Cndn Doc Supplr Invc Deliv Cost Cat - Text"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCSUPLRINVCDLVCOSTCATT')/$value
-semantic_en: Cndn Doc Supplr Invc Deliv Cost Cat - Text
+semantic_en: "Cndn Doc Supplr Invc Deliv Cost Cat - Text"
 tags:
   - LO
   - component:LO-GT-CHB

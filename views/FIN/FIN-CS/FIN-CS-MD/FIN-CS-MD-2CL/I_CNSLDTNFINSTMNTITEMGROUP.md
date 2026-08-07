@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNFINSTMNTITEMGROUP
-description: This CDS view provides access to the master data of the consolidation financial statement item group. This CDS view provides the prerequisites for answering the following business questions: Which consolidation financial statement item groups exist?
+description: "This CDS view provides access to the master data of the consolidation financial statement item group. This CDS view provides the prerequisites for answering the following business questions: Which consolidation financial statement item groups exist?"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITEMGROUP')/$value
-semantic_en: This CDS view provides access to the master data of the consolidation financial statement item group. This CDS view provides the prerequisites for answering the following business questions: Which consolidation financial statement item groups exist?
+semantic_en: "This CDS view provides access to the master data of the consolidation financial statement item group. This CDS view provides the prerequisites for answering the following business questions: Which consolidation financial statement item groups exist?"
 tags:
   - FIN
   - bo:businesspartner

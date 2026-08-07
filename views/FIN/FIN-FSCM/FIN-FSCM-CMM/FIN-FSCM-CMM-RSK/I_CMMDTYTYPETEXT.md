@@ -1,13 +1,13 @@
 ---
 name: I_CMMDTYTYPETEXT
-description: Commodity Type - Text
+description: "Commodity Type - Text"
 app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYTYPETEXT')/$value
-semantic_en: Commodity Type - Text
+semantic_en: "Commodity Type - Text"
 tags:
   - FIN
   - component:FIN-FSCM-CMM-RSK

@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRQTNSCHEDULELINE_API01
-description: SUPLRQTNSchedule Line Api 01
+description: "SUPLRQTNSchedule Line Api 01"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERITEMPARTNER
-description: Sales OrderITEMPARTNER
+description: "Sales OrderITEMPARTNER"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_EG_EDOCTXCATEGORYFORVATCODE
-description: EG Edoctxcategoryforvatcode
+description: "EG Edoctxcategoryforvatcode"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

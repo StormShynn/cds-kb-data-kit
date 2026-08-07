@@ -1,13 +1,13 @@
 ---
 name: C_PRATAXRPTGHISTORYTXQRY
-description: PRA Tax Reporting History Texas Query
+description: "PRA Tax Reporting History Texas Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTORYTXQRY')/$value
-semantic_en: PRA Tax Reporting History Texas Query
+semantic_en: "PRA Tax Reporting History Texas Query"
 tags:
   - IS
   - bo:purchaseorder

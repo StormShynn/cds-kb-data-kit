@@ -1,6 +1,6 @@
 ---
 name: I_WARRANTYTYPE
-description: Warrantytype
+description: "Warrantytype"
 app_component: PM-EQM-SF-WA-2CL
 software_component: SAPSCORE
 release_state: released

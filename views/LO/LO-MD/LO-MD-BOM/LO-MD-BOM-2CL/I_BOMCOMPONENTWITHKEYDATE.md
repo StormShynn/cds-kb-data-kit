@@ -1,6 +1,6 @@
 ---
 name: I_BOMCOMPONENTWITHKEYDATE
-description: Bomcomponentwithkeydate
+description: "Bomcomponentwithkeydate"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

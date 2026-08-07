@@ -1,6 +1,6 @@
 ---
 name: I_COUNTRYHIERARCHYNODE
-description: Countryhierarchynode
+description: "Countryhierarchynode"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

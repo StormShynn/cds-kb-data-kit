@@ -1,6 +1,6 @@
 ---
 name: I_INBOUNDDELIVERYTP
-description: Inbound DeliveryTP
+description: "Inbound DeliveryTP"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

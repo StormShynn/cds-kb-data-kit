@@ -1,6 +1,6 @@
 ---
 name: I_PURGTOTPRODMARKETABILITYSTST
-description: Purgtotprodmarketabilitystst
+description: "Purgtotprodmarketabilitystst"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

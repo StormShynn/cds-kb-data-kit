@@ -1,6 +1,6 @@
 ---
 name: I_MX_TRANSACTIONTYPE
-description: MX Transactiontype
+description: "MX Transactiontype"
 app_component: FI-LOC-FI-MX
 software_component: SAPSCORE
 release_state: released

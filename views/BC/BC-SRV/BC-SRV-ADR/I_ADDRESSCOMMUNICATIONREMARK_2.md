@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSCOMMUNICATIONREMARK_2
-description: Addresscommunicationremark 2
+description: "Addresscommunicationremark 2"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

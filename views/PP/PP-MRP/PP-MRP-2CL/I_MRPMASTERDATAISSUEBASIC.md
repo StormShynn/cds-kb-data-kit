@@ -1,6 +1,6 @@
 ---
 name: I_MRPMASTERDATAISSUEBASIC
-description: Mrpmasterdataissuebasic
+description: "Mrpmasterdataissuebasic"
 app_component: PP-MRP-2CL
 software_component: SAPSCORE
 release_state: released

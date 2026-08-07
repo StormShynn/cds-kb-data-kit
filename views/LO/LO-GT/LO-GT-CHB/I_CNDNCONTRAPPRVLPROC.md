@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRAPPRVLPROC
-description: his CDS view exposes fixed values of the Condition Contract Approval Process field.
+description: "his CDS view exposes fixed values of the Condition Contract Approval Process field."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRAPPRVLPROC')/$value
-semantic_en: his CDS view exposes fixed values of the Condition Contract Approval Process field.
+semantic_en: "his CDS view exposes fixed values of the Condition Contract Approval Process field."
 tags:
   - LO
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGPLNTYPETEXT
-description: Cabillgplntypetext
+description: "Cabillgplntypetext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

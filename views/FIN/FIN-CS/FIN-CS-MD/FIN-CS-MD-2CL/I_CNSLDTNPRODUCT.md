@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPRODUCT
-description: Cnsldtnproduct
+description: "Cnsldtnproduct"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

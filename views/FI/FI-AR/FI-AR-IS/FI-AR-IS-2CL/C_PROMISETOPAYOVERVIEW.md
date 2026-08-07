@@ -1,24 +1,24 @@
 ---
 name: C_PROMISETOPAYOVERVIEW
-description: This CDS view provides details of promises to pay in SAP Dispute Management. This CDS view provides the data to answer the following business questions: When is the promise to pay due? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view provides details of promises to pay in SAP Dispute Management. This CDS view provides the data to answer the following business questions: When is the promise to pay due? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROMISETOPAYOVERVIEW')/$value
-semantic_en: This CDS view provides details of promises to pay in SAP Dispute Management. This CDS view provides the data to answer the following business questions: When is the promise to pay due? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Promise To Pay Overview — CDS view tiêu dùng dựa trên I_PromiseToPayOverview.
+semantic_en: "This CDS view provides details of promises to pay in SAP Dispute Management. This CDS view provides the data to answer the following business questions: When is the promise to pay due? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Promise To Pay Overview — CDS view tiêu dùng dựa trên I_PromiseToPayOverview."
 keywords:
-  - promise
-  - pay
-  - overview
-  - company
-  - code
-  - name
-  - customer
-  - group
-  - currency
+  - "promise"
+  - "pay"
+  - "overview"
+  - "company"
+  - "code"
+  - "name"
+  - "customer"
+  - "group"
+  - "currency"
 tags:
   - FI
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_HIERRTMERPRSTNNDEADDLATTRIB
-description: Hierrtmerprstnndeaddlattrib
+description: "Hierrtmerprstnndeaddlattrib"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released

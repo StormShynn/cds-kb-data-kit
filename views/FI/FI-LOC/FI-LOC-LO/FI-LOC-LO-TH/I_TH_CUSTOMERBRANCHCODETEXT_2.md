@@ -1,13 +1,13 @@
 ---
 name: I_TH_CUSTOMERBRANCHCODETEXT_2
-description: Customer Branch Code for Thailand - Text
+description: "Customer Branch Code for Thailand - Text"
 app_component: FI-LOC-LO-TH
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TH_CUSTOMERBRANCHCODETEXT_2')/$value
-semantic_en: Customer Branch Code for Thailand - Text
+semantic_en: "Customer Branch Code for Thailand - Text"
 tags:
   - FI
   - bo:businesspartner

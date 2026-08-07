@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRBKDETSBYINTIDSTDVH
-description: Suplrbkdetsbyintidstdvh
+description: "Suplrbkdetsbyintidstdvh"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

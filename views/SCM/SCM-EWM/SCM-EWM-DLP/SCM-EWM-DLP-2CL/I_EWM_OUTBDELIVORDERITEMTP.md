@@ -1,6 +1,6 @@
 ---
 name: I_EWM_OUTBDELIVORDERITEMTP
-description: Ewm Outbdelivorderitemtp
+description: "Ewm Outbdelivorderitemtp"
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released

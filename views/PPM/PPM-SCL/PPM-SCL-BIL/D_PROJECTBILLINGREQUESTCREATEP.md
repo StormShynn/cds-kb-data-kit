@@ -1,6 +1,6 @@
 ---
 name: D_PROJECTBILLINGREQUESTCREATEP
-description: D Projectbillingrequestcreatep
+description: "D Projectbillingrequestcreatep"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

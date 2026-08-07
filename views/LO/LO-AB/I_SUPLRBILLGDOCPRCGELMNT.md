@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRBILLGDOCPRCGELMNT
-description: Supplier Billing Document Pricing Element
+description: "Supplier Billing Document Pricing Element"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRBILLGDOCPRCGELMNT')/$value
-semantic_en: Supplier Billing Document Pricing Element
+semantic_en: "Supplier Billing Document Pricing Element"
 tags:
   - LO
   - billing

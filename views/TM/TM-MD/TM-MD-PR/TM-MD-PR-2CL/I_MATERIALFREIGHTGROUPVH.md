@@ -1,13 +1,13 @@
 ---
 name: I_MATERIALFREIGHTGROUPVH
-description: Material Freight Group
+description: "Material Freight Group"
 app_component: TM-MD-PR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATERIALFREIGHTGROUPVH')/$value
-semantic_en: Material Freight Group
+semantic_en: "Material Freight Group"
 tags:
   - TM
   - component:TM-MD-PR-2CL

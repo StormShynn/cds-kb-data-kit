@@ -1,17 +1,17 @@
 ---
 name: I_PROFITABILITYCUBE
-description: General Ledger Account Line Item of Profitability - Cube
+description: "General Ledger Account Line Item of Profitability - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROFITABILITYCUBE')/$value
-semantic_en: General Ledger Account Line Item of Profitability - Cube
+semantic_en: "General Ledger Account Line Item of Profitability - Cube"
 keywords:
-  - GL Account Line Item of Profitability - Cube
-  - GL Account Line Item of Profitability - Cube
-  - GL Account Line Item of Profitability - Cube
+  - "GL Account Line Item of Profitability - Cube"
+  - "GL Account Line Item of Profitability - Cube"
+  - "GL Account Line Item of Profitability - Cube"
 tags:
   - CO
   - account

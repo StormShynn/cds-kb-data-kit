@@ -1,6 +1,6 @@
 ---
 name: D_BOMASSIGNPLANTP
-description: D Bomassignplantp
+description: "D Bomassignplantp"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: APIHUB_ANALYTICALQUERY
-description: Apihub Analyticalquery
+description: "Apihub Analyticalquery"
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released

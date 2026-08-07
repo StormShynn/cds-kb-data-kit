@@ -1,6 +1,6 @@
 ---
 name: I_JP_ANNEX204ARBOOKCUBE
-description: JP Annex 204ARBOOKCUBE
+description: "JP Annex 204ARBOOKCUBE"
 app_component: FI-LOC-FI-JP
 software_component: SAPSCORE
 release_state: released

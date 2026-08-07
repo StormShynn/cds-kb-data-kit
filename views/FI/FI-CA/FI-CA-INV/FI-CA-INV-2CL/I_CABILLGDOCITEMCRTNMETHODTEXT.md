@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGDOCITEMCRTNMETHODTEXT
-description: Cabillgdocitemcrtnmethodtext
+description: "Cabillgdocitemcrtnmethodtext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

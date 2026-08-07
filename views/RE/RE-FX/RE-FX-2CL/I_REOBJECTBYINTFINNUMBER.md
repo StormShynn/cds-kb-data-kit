@@ -1,13 +1,13 @@
 ---
 name: I_REOBJECTBYINTFINNUMBER
-description: Real Estate Object by Internal FIN Number
+description: "Real Estate Object by Internal FIN Number"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REOBJECTBYINTFINNUMBER')/$value
-semantic_en: Real Estate Object by Internal FIN Number
+semantic_en: "Real Estate Object by Internal FIN Number"
 tags:
   - RE
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: D_PURCHASEORDERAPPROVED
-description: D Purchase OrderAPPROVED
+description: "D Purchase OrderAPPROVED"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

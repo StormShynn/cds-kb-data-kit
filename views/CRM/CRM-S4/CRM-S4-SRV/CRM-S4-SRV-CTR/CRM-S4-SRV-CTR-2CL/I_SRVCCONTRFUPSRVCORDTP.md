@@ -1,6 +1,6 @@
 ---
 name: I_SRVCCONTRFUPSRVCORDTP
-description: Srvccontrfupsrvcordtp
+description: "Srvccontrfupsrvcordtp"
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

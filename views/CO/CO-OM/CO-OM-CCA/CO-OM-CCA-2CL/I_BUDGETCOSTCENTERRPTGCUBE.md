@@ -1,13 +1,13 @@
 ---
 name: I_BUDGETCOSTCENTERRPTGCUBE
-description: Cost Center Review Booklet Budget - Cube
+description: "Cost Center Review Booklet Budget - Cube"
 app_component: CO-OM-CCA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETCOSTCENTERRPTGCUBE')/$value
-semantic_en: Cost Center Review Booklet Budget - Cube
+semantic_en: "Cost Center Review Booklet Budget - Cube"
 tags:
   - CO
   - budget

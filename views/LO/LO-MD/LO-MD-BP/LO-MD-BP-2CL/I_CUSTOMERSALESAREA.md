@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERSALESAREA
-description: Customer Sales Area
+description: "Customer Sales Area"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

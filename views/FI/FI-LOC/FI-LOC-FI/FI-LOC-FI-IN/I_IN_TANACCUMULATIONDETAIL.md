@@ -1,6 +1,6 @@
 ---
 name: I_IN_TANACCUMULATIONDETAIL
-description: IN Tanaccumulationdetail
+description: "IN Tanaccumulationdetail"
 app_component: FI-LOC-FI-IN
 software_component: SAPSCORE
 release_state: released

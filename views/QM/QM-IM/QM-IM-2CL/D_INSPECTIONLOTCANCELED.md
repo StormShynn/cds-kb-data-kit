@@ -1,6 +1,6 @@
 ---
 name: D_INSPECTIONLOTCANCELED
-description: D Inspectionlotcanceled
+description: "D Inspectionlotcanceled"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

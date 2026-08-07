@@ -1,13 +1,13 @@
 ---
 name: C_CMPLOBLASGTTSKBYDUEDATEQ
-description: Tasks by Due Date - Query
+description: "Tasks by Due Date - Query"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMPLOBLASGTTSKBYDUEDATEQ')/$value
-semantic_en: Tasks by Due Date - Query
+semantic_en: "Tasks by Due Date - Query"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

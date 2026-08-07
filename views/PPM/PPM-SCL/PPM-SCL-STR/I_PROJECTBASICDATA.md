@@ -1,13 +1,13 @@
 ---
 name: I_PROJECTBASICDATA
-description: This CDS view provides the prerequisites for answering the following business questions: For Professional Services or Financial related needs, what are the organizational details associated with a project?
+description: "This CDS view provides the prerequisites for answering the following business questions: For Professional Services or Financial related needs, what are the organizational details associated with a project?"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTBASICDATA')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: For Professional Services or Financial related needs, what are the organizational details associated with a project?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: For Professional Services or Financial related needs, what are the organizational details associated with a project?"
 tags:
   - PPM
   - bo:companycode

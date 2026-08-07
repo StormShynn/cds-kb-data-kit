@@ -1,6 +1,6 @@
 ---
 name: I_PLANTHIERARCHYNODE
-description: Planthierarchynode
+description: "Planthierarchynode"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

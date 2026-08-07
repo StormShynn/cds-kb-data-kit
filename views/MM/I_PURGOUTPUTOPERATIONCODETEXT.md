@@ -1,6 +1,6 @@
 ---
 name: I_PURGOUTPUTOPERATIONCODETEXT
-description: Purgoutputoperationcodetext
+description: "Purgoutputoperationcodetext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

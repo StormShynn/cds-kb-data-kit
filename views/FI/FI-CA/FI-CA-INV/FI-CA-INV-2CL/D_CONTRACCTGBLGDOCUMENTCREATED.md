@@ -1,6 +1,6 @@
 ---
 name: D_CONTRACCTGBLGDOCUMENTCREATED
-description: D Contracctgblgdocumentcreated
+description: "D Contracctgblgdocumentcreated"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

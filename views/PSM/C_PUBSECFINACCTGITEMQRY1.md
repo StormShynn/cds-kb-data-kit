@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECFINACCTGITEMQRY1
-description: Budgetary Accounting Items Query
+description: "Budgetary Accounting Items Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECFINACCTGITEMQRY1')/$value
-semantic_en: Budgetary Accounting Items Query
+semantic_en: "Budgetary Accounting Items Query"
 tags:
   - PSM
   - account

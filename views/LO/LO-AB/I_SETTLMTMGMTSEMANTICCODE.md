@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTMGMTSEMANTICCODE
-description: Settlmtmgmtsemanticcode
+description: "Settlmtmgmtsemanticcode"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

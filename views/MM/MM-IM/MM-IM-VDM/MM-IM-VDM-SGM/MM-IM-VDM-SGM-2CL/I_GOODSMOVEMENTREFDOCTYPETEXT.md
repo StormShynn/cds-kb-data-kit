@@ -1,6 +1,6 @@
 ---
 name: I_GOODSMOVEMENTREFDOCTYPETEXT
-description: Goods MovementREFDOCTYPETEXT
+description: "Goods MovementREFDOCTYPETEXT"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

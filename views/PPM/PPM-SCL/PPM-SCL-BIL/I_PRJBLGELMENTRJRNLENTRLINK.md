@@ -1,6 +1,6 @@
 ---
 name: I_PRJBLGELMENTRJRNLENTRLINK
-description: Prjblgelmentrjrnlentrlink
+description: "Prjblgelmentrjrnlentrlink"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

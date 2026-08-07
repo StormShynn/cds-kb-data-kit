@@ -1,6 +1,6 @@
 ---
 name: D_VARCONFIGNTBLDELETELINEP
-description: D Varconfigntbldeletelinep
+description: "D Varconfigntbldeletelinep"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

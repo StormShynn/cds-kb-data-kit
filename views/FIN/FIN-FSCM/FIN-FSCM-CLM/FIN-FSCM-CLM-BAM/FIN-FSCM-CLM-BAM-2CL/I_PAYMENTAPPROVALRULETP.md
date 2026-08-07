@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTAPPROVALRULETP
-description: Paymentapprovalruletp
+description: "Paymentapprovalruletp"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

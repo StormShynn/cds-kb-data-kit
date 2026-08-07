@@ -1,6 +1,6 @@
 ---
 name: I_DELIVERYDOCUMENTSTDVH
-description: Delivery DocumentUMENTSTDVH
+description: "Delivery DocumentUMENTSTDVH"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

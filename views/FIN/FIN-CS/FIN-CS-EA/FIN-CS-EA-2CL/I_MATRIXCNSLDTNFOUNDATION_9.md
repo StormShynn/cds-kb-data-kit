@@ -1,6 +1,6 @@
 ---
 name: I_MATRIXCNSLDTNFOUNDATION_9
-description: Matrixcnsldtnfoundation 9
+description: "Matrixcnsldtnfoundation 9"
 app_component: FIN-CS-EA-2CL
 software_component: SAPPCORE_H
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_PROCORDOPDISPATCHORDEROPP
-description: D Procordopdispatchorderopp
+description: "D Procordopdispatchorderopp"
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTPORTIONCALCDATA
-description: Calculation Results for CAG Portions
+description: "Calculation Results for CAG Portions"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTPORTIONCALCDATA')/$value
-semantic_en: Calculation Results for CAG Portions
+semantic_en: "Calculation Results for CAG Portions"
 tags:
   - FS
   - bo:purchaseorder

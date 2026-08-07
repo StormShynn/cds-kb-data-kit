@@ -1,6 +1,6 @@
 ---
 name: I_PLNDORDERPRODNSUPERVISORVH
-description: Plndorderprodnsupervisorvh
+description: "Plndorderprodnsupervisorvh"
 app_component: PP-PLO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_RACONTRMNGREVNCONTRTP
-description: Racontrmngrevncontrtp
+description: "Racontrmngrevncontrtp"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_JVACTBCKORDMAPPGINTER
-description: Jvactbckordmappginter
+description: "Jvactbckordmappginter"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

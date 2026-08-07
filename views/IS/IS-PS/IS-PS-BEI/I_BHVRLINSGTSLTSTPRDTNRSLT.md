@@ -1,13 +1,13 @@
 ---
 name: I_BHVRLINSGTSLTSTPRDTNRSLT
-description: Prediction Latest Result - Query
+description: "Prediction Latest Result - Query"
 app_component: IS-PS-BEI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BHVRLINSGTSLTSTPRDTNRSLT')/$value
-semantic_en: Prediction Latest Result - Query
+semantic_en: "Prediction Latest Result - Query"
 tags:
   - IS
   - component:IS-PS-BEI

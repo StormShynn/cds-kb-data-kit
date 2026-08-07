@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTADDRDEPDNTTAXNMBR
-description: Business PartnerADDRDEPDNTTAXNMBR
+description: "Business PartnerADDRDEPDNTTAXNMBR"
 app_component: CA-GTF-CSC
 software_component: SAP_BASIS
 release_state: released

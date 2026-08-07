@@ -1,6 +1,6 @@
 ---
 name: I_GHGENERGYMIXVH
-description: Ghgenergymixvh
+description: "Ghgenergymixvh"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

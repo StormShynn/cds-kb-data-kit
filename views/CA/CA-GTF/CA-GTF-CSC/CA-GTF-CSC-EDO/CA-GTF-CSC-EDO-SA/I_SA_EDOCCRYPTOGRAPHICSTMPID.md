@@ -1,6 +1,6 @@
 ---
 name: I_SA_EDOCCRYPTOGRAPHICSTMPID
-description: SA Edoccryptographicstmpid
+description: "SA Edoccryptographicstmpid"
 app_component: CA-GTF-CSC-EDO-SA
 software_component: SAPSCORE
 release_state: released

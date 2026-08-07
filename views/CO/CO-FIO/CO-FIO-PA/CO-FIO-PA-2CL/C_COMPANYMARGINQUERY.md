@@ -1,25 +1,25 @@
 ---
 name: C_COMPANYMARGINQUERY
-description: Company Margin Query Template
+description: "Company Margin Query Template"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMPANYMARGINQUERY')/$value
-semantic_en: Company Margin Query Template
-semantic_vi: Company Margin Query Template — CDS view tiêu dùng dựa trên Company Margin Query Template.
+semantic_en: "Company Margin Query Template"
+semantic_vi: "Company Margin Query Template — CDS view tiêu dùng dựa trên Company Margin Query Template."
 keywords:
-  - Company Margin Query Template
-  - company
-  - margin
-  - query
-  - template
-  - ledger
-  - source
-  - fiscal
-  - year
-  - period
+  - "Company Margin Query Template"
+  - "company"
+  - "margin"
+  - "query"
+  - "template"
+  - "ledger"
+  - "source"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - CO
   - CO-FIO

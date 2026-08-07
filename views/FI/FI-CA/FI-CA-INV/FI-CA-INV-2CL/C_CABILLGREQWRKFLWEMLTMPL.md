@@ -1,6 +1,6 @@
 ---
 name: C_CABILLGREQWRKFLWEMLTMPL
-description: Cabillgreqwrkflwemltmpl
+description: "Cabillgreqwrkflwemltmpl"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

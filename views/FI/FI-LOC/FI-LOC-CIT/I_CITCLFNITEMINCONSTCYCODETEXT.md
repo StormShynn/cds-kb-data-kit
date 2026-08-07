@@ -1,6 +1,6 @@
 ---
 name: I_CITCLFNITEMINCONSTCYCODETEXT
-description: Citclfniteminconstcycodetext
+description: "Citclfniteminconstcycodetext"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

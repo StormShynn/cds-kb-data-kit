@@ -1,6 +1,6 @@
 ---
 name: I_FINSGLPOSTEDITEM
-description: Finsglposteditem
+description: "Finsglposteditem"
 app_component: AC-INT-ECS-2CL
 software_component: SAPSCORE
 release_state: released

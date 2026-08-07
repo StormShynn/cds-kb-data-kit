@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDLBTRYOFFC
-description: Documentinforecordlbtryoffc
+description: "Documentinforecordlbtryoffc"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

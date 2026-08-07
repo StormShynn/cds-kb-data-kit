@@ -1,6 +1,6 @@
 ---
 name: I_RECEIVABLEFINANCINGSTATUS
-description: Receivablefinancingstatus
+description: "Receivablefinancingstatus"
 app_component: FI-AR-AR-RF-2CL
 software_component: SAPSCORE
 release_state: released

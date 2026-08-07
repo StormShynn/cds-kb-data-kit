@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALSAFETYDISCOUNTSIGN
-description: Collateral Safety Discount Sign
+description: "Collateral Safety Discount Sign"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALSAFETYDISCOUNTSIGN')/$value
-semantic_en: Collateral Safety Discount Sign
+semantic_en: "Collateral Safety Discount Sign"
 tags:
   - FS
   - component:FS-CMS

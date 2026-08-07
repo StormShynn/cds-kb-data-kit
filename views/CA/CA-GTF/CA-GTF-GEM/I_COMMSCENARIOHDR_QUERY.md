@@ -1,6 +1,6 @@
 ---
 name: I_COMMSCENARIOHDR_QUERY
-description: Commscenariohdr (Query)
+description: "Commscenariohdr (Query)"
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released

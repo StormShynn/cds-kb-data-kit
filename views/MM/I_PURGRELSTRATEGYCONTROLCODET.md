@@ -1,6 +1,6 @@
 ---
 name: I_PURGRELSTRATEGYCONTROLCODET
-description: Purgrelstrategycontrolcodet
+description: "Purgrelstrategycontrolcodet"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FREIGHTORDERITEMTP
-description: Freightorderitemtp
+description: "Freightorderitemtp"
 app_component: TM-FRM-FRO-2CL
 software_component: SAPSCORE
 release_state: released

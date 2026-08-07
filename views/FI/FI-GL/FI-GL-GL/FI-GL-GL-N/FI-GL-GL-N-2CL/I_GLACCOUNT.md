@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNT
-description: GL Account
+description: "GL Account"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

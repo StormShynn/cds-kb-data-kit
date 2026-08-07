@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCHARCDATATYPE
-description: Clfncharcdatatype
+description: "Clfncharcdatatype"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

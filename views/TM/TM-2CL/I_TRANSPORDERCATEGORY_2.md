@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDERCATEGORY_2
-description: Transpordercategory 2
+description: "Transpordercategory 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

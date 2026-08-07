@@ -1,6 +1,6 @@
 ---
 name: I_QLTYINPROCMTLONGTEXTTP_2
-description: Qltyinprocmtlongtexttp 2
+description: "Qltyinprocmtlongtexttp 2"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

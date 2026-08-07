@@ -1,6 +1,6 @@
 ---
 name: I_BPTRADINGPARTNER
-description: Bptradingpartner
+description: "Bptradingpartner"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

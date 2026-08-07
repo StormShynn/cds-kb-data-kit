@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITBYTIMEVERSION_2
-description: Cnsldtnunitbytimeversion 2
+description: "Cnsldtnunitbytimeversion 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

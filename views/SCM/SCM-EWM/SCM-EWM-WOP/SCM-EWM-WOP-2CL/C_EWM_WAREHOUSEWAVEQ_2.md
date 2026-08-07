@@ -1,13 +1,13 @@
 ---
 name: C_EWM_WAREHOUSEWAVEQ_2
-description: Wave - Query
+description: "Wave - Query"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_WAREHOUSEWAVEQ_2')/$value
-semantic_en: Wave - Query
+semantic_en: "Wave - Query"
 tags:
   - SCM
   - component:SCM-EWM-WOP-2CL

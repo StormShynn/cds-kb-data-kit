@@ -1,6 +1,6 @@
 ---
 name: I_REFREQUENCYUNIT
-description: Refrequencyunit
+description: "Refrequencyunit"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

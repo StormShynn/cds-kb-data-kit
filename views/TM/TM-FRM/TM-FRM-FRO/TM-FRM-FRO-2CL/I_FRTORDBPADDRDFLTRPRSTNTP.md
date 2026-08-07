@@ -1,6 +1,6 @@
 ---
 name: I_FRTORDBPADDRDFLTRPRSTNTP
-description: Frtordbpaddrdfltrprstntp
+description: "Frtordbpaddrdfltrprstntp"
 app_component: TM-FRM-FRO-2CL
 software_component: SAPSCORE
 release_state: released

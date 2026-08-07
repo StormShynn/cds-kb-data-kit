@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEREQNACCTASSGMTTP
-description: Purchase RequisitionNACCTASSGMTTP
+description: "Purchase RequisitionNACCTASSGMTTP"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_OVRLITMPICKINGINCOMPLTNSTS
-description: Ovrlitmpickingincompltnsts
+description: "Ovrlitmpickingincompltnsts"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

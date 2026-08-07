@@ -1,30 +1,30 @@
 ---
 name: C_CO_DIANSTRPEMPLOYEEOPENITEMC
-description: Empl. Pyrl Open Items Cube for CO DIAN
+description: "Empl. Pyrl Open Items Cube for CO DIAN"
 app_component: FI-LOC-FI-CO
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CO_DIANSTRPEMPLOYEEOPENITEMC')/$value
-semantic_en: Empl. Pyrl Open Items Cube for CO DIAN
-semantic_vi: Empl. Pyrl Open Items Cube for CO DIAN — CDS view tiêu dùng dựa trên I_CO_DIANStRpEmplAggrgdPyrl.
+semantic_en: "Empl. Pyrl Open Items Cube for CO DIAN"
+semantic_vi: "Empl. Pyrl Open Items Cube for CO DIAN — CDS view tiêu dùng dựa trên I_CO_DIANStRpEmplAggrgdPyrl."
 keywords:
-  - empl.
-  - pyrl
-  - open
-  - items
-  - cube
-  - for
-  - dian
-  - company
-  - code
-  - payroll
-  - year
-  - report
-  - format
-  - item
-  - type
+  - "empl."
+  - "pyrl"
+  - "open"
+  - "items"
+  - "cube"
+  - "for"
+  - "dian"
+  - "company"
+  - "code"
+  - "payroll"
+  - "year"
+  - "report"
+  - "format"
+  - "item"
+  - "type"
 tags:
   - FI
   - component:FI-LOC-FI-CO

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFSITEMHIERARCHYTEXT_2
-description: Cnsldtnfsitemhierarchytext 2
+description: "Cnsldtnfsitemhierarchytext 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

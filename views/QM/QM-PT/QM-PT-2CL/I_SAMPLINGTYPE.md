@@ -1,6 +1,6 @@
 ---
 name: I_SAMPLINGTYPE
-description: Samplingtype
+description: "Samplingtype"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

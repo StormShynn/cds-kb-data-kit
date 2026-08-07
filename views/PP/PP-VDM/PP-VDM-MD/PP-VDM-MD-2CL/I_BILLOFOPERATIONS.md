@@ -1,22 +1,22 @@
 ---
 name: I_BILLOFOPERATIONS
-description: This CDS view helps you to retrieve header data (table PLKZ) of the manufacturing bill of operations This CDS view provides the data to answer the following business questions: Which bills of operations exist for a bill of operations type? What was the last change date and time for a manufacturing bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view helps you to retrieve header data (table PLKZ) of the manufacturing bill of operations This CDS view provides the data to answer the following business questions: Which bills of operations exist for a bill of operations type? What was the last change date and time for a manufacturing bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BILLOFOPERATIONS')/$value
-semantic_en: This CDS view helps you to retrieve header data (table PLKZ) of the manufacturing bill of operations This CDS view provides the data to answer the following business questions: Which bills of operations exist for a bill of operations type? What was the last change date and time for a manufacturing bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Bill of Operations — CDS view giao diện dựa trên plkz.
+semantic_en: "This CDS view helps you to retrieve header data (table PLKZ) of the manufacturing bill of operations This CDS view provides the data to answer the following business questions: Which bills of operations exist for a bill of operations type? What was the last change date and time for a manufacturing bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Bill of Operations — CDS view giao diện dựa trên plkz."
 keywords:
-  - bill
-  - operations
-  - type
-  - group
-  - variant
-  - version
-  - subtype
+  - "bill"
+  - "operations"
+  - "type"
+  - "group"
+  - "variant"
+  - "version"
+  - "subtype"
 tags:
   - PP
   - bo:companycode

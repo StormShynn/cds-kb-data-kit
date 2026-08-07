@@ -1,13 +1,13 @@
 ---
 name: C_VALUATIONDOCUMENTHDRQRY
-description: Valuation Document Header Query
+description: "Valuation Document Header Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_VALUATIONDOCUMENTHDRQRY')/$value
-semantic_en: Valuation Document Header Query
+semantic_en: "Valuation Document Header Query"
 tags:
   - IS
   - component:IS-OIL-PRA

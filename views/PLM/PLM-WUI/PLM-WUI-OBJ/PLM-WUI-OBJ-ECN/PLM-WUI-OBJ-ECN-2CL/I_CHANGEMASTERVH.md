@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMASTERVH
-description: This view provides value help for change number. This view shall be used for value help purpose only. If you intend to select the entire business data, use the view Change Number instead.
+description: "This view provides value help for change number. This view shall be used for value help purpose only. If you intend to select the entire business data, use the view Change Number instead."
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERVH')/$value
-semantic_en: This view provides value help for change number. This view shall be used for value help purpose only. If you intend to select the entire business data, use the view Change Number instead.
+semantic_en: "This view provides value help for change number. This view shall be used for value help purpose only. If you intend to select the entire business data, use the view Change Number instead."
 tags:
   - PLM
   - bo:purchaseorder

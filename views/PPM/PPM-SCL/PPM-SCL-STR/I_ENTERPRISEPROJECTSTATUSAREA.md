@@ -1,6 +1,6 @@
 ---
 name: I_ENTERPRISEPROJECTSTATUSAREA
-description: Enterpriseprojectstatusarea
+description: "Enterpriseprojectstatusarea"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

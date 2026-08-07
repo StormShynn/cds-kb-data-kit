@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJELMNTJNTVNTRACCTTP_3
-description: Entprojelmntjntvntraccttp 3
+description: "Entprojelmntjntvntraccttp 3"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

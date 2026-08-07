@@ -1,13 +1,13 @@
 ---
 name: I_RASUSPENSIONREASONTEXT
-description: Suspension Reason - Text
+description: "Suspension Reason - Text"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RASUSPENSIONREASONTEXT')/$value
-semantic_en: Suspension Reason - Text
+semantic_en: "Suspension Reason - Text"
 tags:
   - FI
   - bo:salesorder

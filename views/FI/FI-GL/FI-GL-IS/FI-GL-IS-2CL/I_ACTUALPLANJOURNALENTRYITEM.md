@@ -1,6 +1,6 @@
 ---
 name: I_ACTUALPLANJOURNALENTRYITEM
-description: ACTUALPLANJournal EntryITEM
+description: "ACTUALPLANJournal EntryITEM"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

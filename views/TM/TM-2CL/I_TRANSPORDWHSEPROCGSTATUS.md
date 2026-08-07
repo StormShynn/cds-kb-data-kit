@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDWHSEPROCGSTATUS
-description: Transpordwhseprocgstatus
+description: "Transpordwhseprocgstatus"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

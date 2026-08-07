@@ -1,24 +1,24 @@
 ---
 name: I_ARUNCONTREXPRYRNGEVH
-description: Contract expiry range values
+description: "Contract expiry range values"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNCONTREXPRYRNGEVH')/$value
-semantic_en: Contract expiry range values
-semantic_vi: Contract expiry range values — CDS view giao diện (transactional data) dựa trên dd07v.
+semantic_en: "Contract expiry range values"
+semantic_vi: "Contract expiry range values — CDS view giao diện (transactional data) dựa trên dd07v."
 keywords:
-  - contract
-  - expiry
-  - range
-  - values
-  - assgmt
-  - contr
-  - expry
-  - rnge
-  - name
+  - "contract"
+  - "expiry"
+  - "range"
+  - "values"
+  - "assgmt"
+  - "contr"
+  - "expry"
+  - "rnge"
+  - "name"
 tags:
   - LO
   - component:LO-RFM-ARN

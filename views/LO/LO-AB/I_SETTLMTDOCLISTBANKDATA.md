@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTDOCLISTBANKDATA
-description: Settlement Document List Bank Data
+description: "Settlement Document List Bank Data"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCLISTBANKDATA')/$value
-semantic_en: Settlement Document List Bank Data
+semantic_en: "Settlement Document List Bank Data"
 tags:
   - LO
   - component:LO-AB

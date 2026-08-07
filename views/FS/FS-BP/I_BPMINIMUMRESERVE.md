@@ -1,6 +1,6 @@
 ---
 name: I_BPMINIMUMRESERVE
-description: Bpminimumreserve
+description: "Bpminimumreserve"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

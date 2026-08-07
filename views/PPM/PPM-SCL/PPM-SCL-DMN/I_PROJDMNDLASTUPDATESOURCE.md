@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDLASTUPDATESOURCE
-description: Projdmndlastupdatesource
+description: "Projdmndlastupdatesource"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

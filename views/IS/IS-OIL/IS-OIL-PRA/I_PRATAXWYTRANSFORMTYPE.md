@@ -1,13 +1,13 @@
 ---
 name: I_PRATAXWYTRANSFORMTYPE
-description: Production Revenue Accounting Tax WY Transaction Form Type
+description: "Production Revenue Accounting Tax WY Transaction Form Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXWYTRANSFORMTYPE')/$value
-semantic_en: Production Revenue Accounting Tax WY Transaction Form Type
+semantic_en: "Production Revenue Accounting Tax WY Transaction Form Type"
 tags:
   - IS
   - account

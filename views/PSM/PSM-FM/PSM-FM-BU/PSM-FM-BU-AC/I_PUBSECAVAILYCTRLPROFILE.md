@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECAVAILYCTRLPROFILE
-description: Availability Control Profile for Public Sector
+description: "Availability Control Profile for Public Sector"
 app_component: PSM-FM-BU-AC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECAVAILYCTRLPROFILE')/$value
-semantic_en: Availability Control Profile for Public Sector
+semantic_en: "Availability Control Profile for Public Sector"
 tags:
   - PSM
   - bo:companycode

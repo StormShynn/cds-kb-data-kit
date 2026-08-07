@@ -1,6 +1,6 @@
 ---
 name: I_BPBUSINESSPURPOSE
-description: Bpbusinesspurpose
+description: "Bpbusinesspurpose"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

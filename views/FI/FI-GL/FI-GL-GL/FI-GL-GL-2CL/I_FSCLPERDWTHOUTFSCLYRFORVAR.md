@@ -1,13 +1,13 @@
 ---
 name: I_FSCLPERDWTHOUTFSCLYRFORVAR
-description: Fiscal Periods For Fiscal Year Variant Without Fiscal Year
+description: "Fiscal Periods For Fiscal Year Variant Without Fiscal Year"
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FSCLPERDWTHOUTFSCLYRFORVAR')/$value
-semantic_en: Fiscal Periods For Fiscal Year Variant Without Fiscal Year
+semantic_en: "Fiscal Periods For Fiscal Year Variant Without Fiscal Year"
 tags:
   - FI
   - bo:companycode

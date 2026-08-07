@@ -1,6 +1,6 @@
 ---
 name: I_ENGMNTPROJCHANGEDOCDEX
-description: Engmntprojchangedocdex
+description: "Engmntprojchangedocdex"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released

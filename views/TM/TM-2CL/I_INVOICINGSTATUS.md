@@ -1,13 +1,13 @@
 ---
 name: I_INVOICINGSTATUS
-description: Invoicing Status
+description: "Invoicing Status"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INVOICINGSTATUS')/$value
-semantic_en: Invoicing Status
+semantic_en: "Invoicing Status"
 tags:
   - TM
   - component:TM-2CL

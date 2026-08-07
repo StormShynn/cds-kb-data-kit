@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJELMNTBLOCKFUNC_2
-description: Entprojelmntblockfunc 2
+description: "Entprojelmntblockfunc 2"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

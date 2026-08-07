@@ -1,6 +1,6 @@
 ---
 name: I_MX_EXTPAYMENTMETHODMAPPING
-description: MX Extpaymentmethodmapping
+description: "MX Extpaymentmethodmapping"
 app_component: FI-LOC-FI-MX
 software_component: SAPSCORE
 release_state: released

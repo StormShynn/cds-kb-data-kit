@@ -1,6 +1,6 @@
 ---
 name: D_SERVICECONFIRMATIONDELETED
-description: D Serviceconfirmationdeleted
+description: "D Serviceconfirmationdeleted"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

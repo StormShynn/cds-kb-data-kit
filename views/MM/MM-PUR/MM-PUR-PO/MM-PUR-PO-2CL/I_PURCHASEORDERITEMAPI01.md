@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDERITEMAPI01
-description: Purchase OrderITEMAPI 01
+description: "Purchase OrderITEMAPI 01"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

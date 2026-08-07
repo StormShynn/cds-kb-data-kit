@@ -1,6 +1,6 @@
 ---
 name: I_BR_ICMSSTBASEDETN
-description: BR Icmsstbasedetn
+description: "BR Icmsstbasedetn"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

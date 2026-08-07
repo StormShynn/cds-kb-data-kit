@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERGROUPHIERARCHYNODE
-description: Customergrouphierarchynode
+description: "Customergrouphierarchynode"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

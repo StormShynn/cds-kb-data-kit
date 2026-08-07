@@ -1,6 +1,6 @@
 ---
 name: I_MO_STATUS
-description: MO Status
+description: "MO Status"
 app_component: PM-2CL
 software_component: SAPPCORE_H
 release_state: released

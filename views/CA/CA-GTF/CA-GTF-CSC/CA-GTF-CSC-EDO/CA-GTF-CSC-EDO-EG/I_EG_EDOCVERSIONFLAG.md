@@ -1,6 +1,6 @@
 ---
 name: I_EG_EDOCVERSIONFLAG
-description: EG Edocversionflag
+description: "EG Edocversionflag"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

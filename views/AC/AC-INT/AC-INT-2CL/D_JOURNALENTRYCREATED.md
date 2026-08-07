@@ -1,6 +1,6 @@
 ---
 name: D_JOURNALENTRYCREATED
-description: D Journal EntryCREATED
+description: "D Journal EntryCREATED"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

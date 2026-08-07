@@ -1,13 +1,13 @@
 ---
 name: I_INHOUSEREPAIR
-description: In-House Service
+description: "In-House Service"
 app_component: CRM-S4-IHR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INHOUSEREPAIR')/$value
-semantic_en: In-House Service
+semantic_en: "In-House Service"
 tags:
   - CRM
   - component:CRM-S4-IHR-2CL

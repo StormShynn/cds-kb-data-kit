@@ -1,6 +1,6 @@
 ---
 name: I_PHYSINVTRYTYPETEXT
-description: Physinvtrytypetext
+description: "Physinvtrytypetext"
 app_component: MM-IM-VDM-PI-2CL
 software_component: SAPSCORE
 release_state: released

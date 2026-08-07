@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERCOSTCENTERTP
-description: Work CenterCost CenterTP
+description: "Work CenterCost CenterTP"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

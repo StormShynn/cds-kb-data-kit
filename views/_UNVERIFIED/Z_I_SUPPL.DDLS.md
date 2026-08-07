@@ -1,23 +1,23 @@
 ---
 name: Z_I_SUPPL.DDLS
-description: CDS View to calculate the PRICE_SUM
+description: "CDS View to calculate the PRICE_SUM"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/SAP-samples/teched2025-DT266/blob/f1db4a3f047ea8b96a623bbf599d7839d4e75cf9/src/z_i_suppl.ddls.asddls
-semantic_en: CDS View to calculate the PRICE_SUM — CDS view based on zdt266_sup_l_000.
-semantic_vi: CDS View to calculate the PRICE_SUM — CDS view dựa trên zdt266_sup_l_000.
+semantic_en: "CDS View to calculate the PRICE_SUM — CDS view based on zdt266_sup_l_000."
+semantic_vi: "CDS View to calculate the PRICE_SUM — CDS view dựa trên zdt266_sup_l_000."
 keywords:
-  - calculate
-  - the
-  - price
-  - sum
-  - supplement_id
-  - price_lugg
-  - price_meal
-  - price_bev
+  - "calculate"
+  - "the"
+  - "price"
+  - "sum"
+  - "supplement_id"
+  - "price_lugg"
+  - "price_meal"
+  - "price_bev"
 tags:
   - CA
   - component:CA

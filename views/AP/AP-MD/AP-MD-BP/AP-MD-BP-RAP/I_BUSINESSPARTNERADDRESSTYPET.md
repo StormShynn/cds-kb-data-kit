@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERADDRESSTYPET
-description: Business PartnerADDRESSTYPET
+description: "Business PartnerADDRESSTYPET"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

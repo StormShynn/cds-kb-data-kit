@@ -1,6 +1,6 @@
 ---
 name: I_MRPCHANGEREQUESTPRIORITYTXT
-description: Mrpchangerequestprioritytxt
+description: "Mrpchangerequestprioritytxt"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

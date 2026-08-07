@@ -1,6 +1,6 @@
 ---
 name: I_WBSBILLOFMATERIALLINKDEX
-description: WBSBill of MaterialLINKDEX
+description: "WBSBill of MaterialLINKDEX"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

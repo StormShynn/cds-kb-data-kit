@@ -1,6 +1,6 @@
 ---
 name: I_WARRANTYCLAIMITEMTYPEVH
-description: Warrantyclaimitemtypevh
+description: "Warrantyclaimitemtypevh"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

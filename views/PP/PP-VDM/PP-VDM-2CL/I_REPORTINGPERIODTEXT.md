@@ -1,6 +1,6 @@
 ---
 name: I_REPORTINGPERIODTEXT
-description: Reportingperiodtext
+description: "Reportingperiodtext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPORDEVENTSTATUS
-description: Transportation Order Event Status
+description: "Transportation Order Event Status"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPORDEVENTSTATUS')/$value
-semantic_en: Transportation Order Event Status
+semantic_en: "Transportation Order Event Status"
 tags:
   - TM
   - bo:purchaseorder

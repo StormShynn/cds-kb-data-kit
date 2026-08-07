@@ -1,6 +1,6 @@
 ---
 name: I_COMPANYMARGINCUBEDST
-description: Companymargincubedst
+description: "Companymargincubedst"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released

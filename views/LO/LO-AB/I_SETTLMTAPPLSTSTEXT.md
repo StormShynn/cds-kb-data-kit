@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTAPPLSTSTEXT
-description: Settlmtapplststext
+description: "Settlmtapplststext"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

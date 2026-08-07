@@ -1,6 +1,6 @@
 ---
 name: I_ORDER
-description: Order
+description: "Order"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

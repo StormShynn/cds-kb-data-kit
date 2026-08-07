@@ -1,6 +1,6 @@
 ---
 name: I_PHYSINVTRYCOUNTSERIALNMBRTP
-description: Physinvtrycountserialnmbrtp
+description: "Physinvtrycountserialnmbrtp"
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

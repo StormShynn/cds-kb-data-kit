@@ -1,6 +1,6 @@
 ---
 name: I_JITINBCALLCOMPRAWMATERIAL
-description: Jitinbcallcomprawmaterial
+description: "Jitinbcallcomprawmaterial"
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released

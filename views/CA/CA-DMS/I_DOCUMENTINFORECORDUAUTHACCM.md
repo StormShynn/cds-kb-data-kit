@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDUAUTHACCM
-description: Documentinforecorduauthaccm
+description: "Documentinforecorduauthaccm"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

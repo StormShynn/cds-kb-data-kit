@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNDISTRCHANNELHIERARCHY
-description: Cnsldtndistrchannelhierarchy
+description: "Cnsldtndistrchannelhierarchy"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

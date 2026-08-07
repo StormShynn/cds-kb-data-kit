@@ -1,6 +1,6 @@
 ---
 name: I_IHBFEEOBJTP
-description: Ihbfeeobjtp
+description: "Ihbfeeobjtp"
 app_component: FIN-FSCM-PF-IHB-2CL
 software_component: SAPSCORE
 release_state: released

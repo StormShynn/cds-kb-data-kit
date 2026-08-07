@@ -1,26 +1,26 @@
 ---
 name: C_STOCKQTYCURRENTVALUE_3
-description: This CDS view retrieves the time-dependent records of quantity and value for a particular stock. This CDS view provides the prerequisites for answering the following business question: What is the current material stock quantity and the current material stock value for a particular stock at current prices? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view retrieves the time-dependent records of quantity and value for a particular stock. This CDS view provides the prerequisites for answering the following business question: What is the current material stock quantity and the current material stock value for a particular stock at current prices? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_STOCKQTYCURRENTVALUE_3')/$value
-semantic_en: This CDS view retrieves the time-dependent records of quantity and value for a particular stock. This CDS view provides the prerequisites for answering the following business question: What is the current material stock quantity and the current material stock value for a particular stock at current prices? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Current Stock Quantity and Value — CDS view tiêu dùng (transactional data) dựa trên I_StockQuantityCurrentValue_2.
+semantic_en: "This CDS view retrieves the time-dependent records of quantity and value for a particular stock. This CDS view provides the prerequisites for answering the following business question: What is the current material stock quantity and the current material stock value for a particular stock at current prices? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Current Stock Quantity and Value — CDS view tiêu dùng (transactional data) dựa trên I_StockQuantityCurrentValue_2."
 keywords:
-  - current
-  - stock
-  - quantity
-  - and
-  - value
-  - product
-  - plant
-  - storage
-  - location
-  - batch
-  - supplier
+  - "current"
+  - "stock"
+  - "quantity"
+  - "and"
+  - "value"
+  - "product"
+  - "plant"
+  - "storage"
+  - "location"
+  - "batch"
+  - "supplier"
 tags:
   - MM
   - bo:companycode

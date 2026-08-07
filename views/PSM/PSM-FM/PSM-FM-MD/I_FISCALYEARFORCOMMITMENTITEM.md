@@ -1,6 +1,6 @@
 ---
 name: I_FISCALYEARFORCOMMITMENTITEM
-description: Fiscalyearforcommitmentitem
+description: "Fiscalyearforcommitmentitem"
 app_component: PSM-FM-MD
 software_component: SAPSCORE
 release_state: released

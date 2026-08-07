@@ -1,15 +1,15 @@
 ---
 name: C_SHPDASPLNDDELIVITEMSQRY
-description: This CDS view selects goods-movement-relevant outbound delivery items that are due for shipping and and may have an acceptable shipping delay assigned to them. This CDS view provides the prerequisites for answering the following business questions: What is the delivery performance when you compare the planned goods movement date with the actual goods movement date? What is the average shipping delay in a certain timeframe? What was the maximum shipping delay in a certain timeframe?
+description: "This CDS view selects goods-movement-relevant outbound delivery items that are due for shipping and and may have an acceptable shipping delay assigned to them. This CDS view provides the prerequisites for answering the following business questions: What is the delivery performance when you compare the planned goods movement date with the actual goods movement date? What is the average shipping delay in a certain timeframe? What was the maximum shipping delay in a certain timeframe?"
 app_component: LE-SHP-FIO-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SHPDASPLNDDELIVITEMSQRY')/$value
-semantic_en: This CDS view selects goods-movement-relevant outbound delivery items that are due for shipping and and may have an acceptable shipping delay assigned to them. This CDS view provides the prerequisites for answering the following business questions: What is the delivery performance when you compare the planned goods movement date with the actual goods movement date? What is the average shipping delay in a certain timeframe? What was the maximum shipping delay in a certain timeframe?
+semantic_en: "This CDS view selects goods-movement-relevant outbound delivery items that are due for shipping and and may have an acceptable shipping delay assigned to them. This CDS view provides the prerequisites for answering the following business questions: What is the delivery performance when you compare the planned goods movement date with the actual goods movement date? What is the average shipping delay in a certain timeframe? What was the maximum shipping delay in a certain timeframe?"
 keywords:
-  - Delivery Items Shipped as Planned
+  - "Delivery Items Shipped as Planned"
 tags:
   - LE
   - bo:deliverydocument

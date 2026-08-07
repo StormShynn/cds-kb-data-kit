@@ -1,6 +1,6 @@
 ---
 name: I_ADDITIONALMATERIALGROUP2TEXT
-description: ADDITIONALMaterial Group 2TEXT
+description: "ADDITIONALMaterial Group 2TEXT"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

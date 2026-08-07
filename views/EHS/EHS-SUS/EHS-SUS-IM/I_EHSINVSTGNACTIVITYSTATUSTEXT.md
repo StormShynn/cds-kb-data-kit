@@ -1,13 +1,13 @@
 ---
 name: I_EHSINVSTGNACTIVITYSTATUSTEXT
-description: Investigation Activity Status - Text
+description: "Investigation Activity Status - Text"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSINVSTGNACTIVITYSTATUSTEXT')/$value
-semantic_en: Investigation Activity Status - Text
+semantic_en: "Investigation Activity Status - Text"
 tags:
   - EHS
   - component:EHS-SUS-IM

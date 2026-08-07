@@ -1,6 +1,6 @@
 ---
 name: I_PRICINGCONDITIONTYPE
-description: Pricing ConditionTYPE
+description: "Pricing ConditionTYPE"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

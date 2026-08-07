@@ -1,6 +1,6 @@
 ---
 name: I_CHMLCMPLNCIDFR
-description: Chmlcmplncidfr
+description: "Chmlcmplncidfr"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERMAINTENANCEORDER
-description: Serial NumberMaintenance Order
+description: "Serial NumberMaintenance Order"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

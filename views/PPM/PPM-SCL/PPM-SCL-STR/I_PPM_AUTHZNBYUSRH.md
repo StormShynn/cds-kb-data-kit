@@ -1,6 +1,6 @@
 ---
 name: I_PPM_AUTHZNBYUSRH
-description: Ppm Authznbyusrh
+description: "Ppm Authznbyusrh"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BR_ICMSTAXSITUATIONTEXT
-description: BR Icmstaxsituationtext
+description: "BR Icmstaxsituationtext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

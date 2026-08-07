@@ -1,27 +1,27 @@
 ---
 name: C_PURORDOUTPUTAUTOMNRATE
-description: PO Output Automn & non Automn percentage
+description: "PO Output Automn & non Automn percentage"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PURORDOUTPUTAUTOMNRATE')/$value
-semantic_en: PO Output Automn & non Automn percentage
-semantic_vi: PO Output Automn & non Automn percentage — CDS view tiêu dùng dựa trên C_PurOrdOutputAutomnCube.
+semantic_en: "PO Output Automn & non Automn percentage"
+semantic_vi: "PO Output Automn & non Automn percentage — CDS view tiêu dùng dựa trên C_PurOrdOutputAutomnCube."
 keywords:
-  - output
-  - automn
-  - non
-  - percentage
-  - purchase
-  - order
-  - message
-  - item
-  - channel
-  - supplier
-  - purchasing
-  - organization
+  - "output"
+  - "automn"
+  - "non"
+  - "percentage"
+  - "purchase"
+  - "order"
+  - "message"
+  - "item"
+  - "channel"
+  - "supplier"
+  - "purchasing"
+  - "organization"
 tags:
   - MM
   - bo:purchaseorder

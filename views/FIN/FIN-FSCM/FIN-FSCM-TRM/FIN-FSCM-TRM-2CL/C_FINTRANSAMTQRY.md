@@ -1,13 +1,13 @@
 ---
 name: C_FINTRANSAMTQRY
-description: Financial Transaction Amount - Query
+description: "Financial Transaction Amount - Query"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FINTRANSAMTQRY')/$value
-semantic_en: Financial Transaction Amount - Query
+semantic_en: "Financial Transaction Amount - Query"
 tags:
   - FIN
   - bo:companycode

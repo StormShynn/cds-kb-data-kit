@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALBOMLINKDEX_2
-description: Materialbomlinkdex 2
+description: "Materialbomlinkdex 2"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

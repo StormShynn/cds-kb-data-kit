@@ -1,6 +1,6 @@
 ---
 name: I_GDSMVTTYPEBYINVTRYTRANSCODE
-description: Gdsmvttypebyinvtrytranscode
+description: "Gdsmvttypebyinvtrytranscode"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_EVENTBASEDORDERPOSTINGRULETP
-description: Eventbasedorderpostingruletp
+description: "Eventbasedorderpostingruletp"
 app_component: CO-PC-OBJ-ORD-2CL
 software_component: SAPSCORE
 release_state: released

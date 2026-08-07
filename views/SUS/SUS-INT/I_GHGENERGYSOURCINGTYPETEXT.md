@@ -1,6 +1,6 @@
 ---
 name: I_GHGENERGYSOURCINGTYPETEXT
-description: Ghgenergysourcingtypetext
+description: "Ghgenergysourcingtypetext"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

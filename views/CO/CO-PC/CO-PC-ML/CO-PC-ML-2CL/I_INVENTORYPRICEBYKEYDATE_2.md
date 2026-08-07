@@ -1,6 +1,6 @@
 ---
 name: I_INVENTORYPRICEBYKEYDATE_2
-description: Inventorypricebykeydate 2
+description: "Inventorypricebykeydate 2"
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released

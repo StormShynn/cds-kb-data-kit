@@ -1,6 +1,6 @@
 ---
 name: I_EG_EDOCBRANCHID
-description: EG Edocbranchid
+description: "EG Edocbranchid"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

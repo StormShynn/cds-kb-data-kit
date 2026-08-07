@@ -1,13 +1,13 @@
 ---
 name: C_BHVRLINSGTSPRDTNHISTQ
-description: Risk Prediction History
+description: "Risk Prediction History"
 app_component: IS-PS-BEI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BHVRLINSGTSPRDTNHISTQ')/$value
-semantic_en: Risk Prediction History
+semantic_en: "Risk Prediction History"
 tags:
   - IS
   - component:IS-PS-BEI

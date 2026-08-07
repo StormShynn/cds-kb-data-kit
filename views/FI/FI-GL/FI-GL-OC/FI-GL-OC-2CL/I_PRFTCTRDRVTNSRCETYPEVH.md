@@ -1,6 +1,6 @@
 ---
 name: I_PRFTCTRDRVTNSRCETYPEVH
-description: Prftctrdrvtnsrcetypevh
+description: "Prftctrdrvtnsrcetypevh"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITHIERNODETEXT_2
-description: Cnsldtnunithiernodetext 2
+description: "Cnsldtnunithiernodetext 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

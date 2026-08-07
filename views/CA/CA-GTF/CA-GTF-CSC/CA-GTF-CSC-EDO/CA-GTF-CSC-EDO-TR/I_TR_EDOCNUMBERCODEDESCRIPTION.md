@@ -1,6 +1,6 @@
 ---
 name: I_TR_EDOCNUMBERCODEDESCRIPTION
-description: TR Edocnumbercodedescription
+description: "TR Edocnumbercodedescription"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released

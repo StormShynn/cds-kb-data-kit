@@ -1,13 +1,13 @@
 ---
 name: I_LOANINCGPAYTDISTRCTRL
-description: Loan Incoming Payment Distribution Control
+description: "Loan Incoming Payment Distribution Control"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANINCGPAYTDISTRCTRL')/$value
-semantic_en: Loan Incoming Payment Distribution Control
+semantic_en: "Loan Incoming Payment Distribution Control"
 tags:
   - FS
   - component:FS-CML

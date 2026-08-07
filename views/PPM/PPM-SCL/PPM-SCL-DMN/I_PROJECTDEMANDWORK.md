@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDWORK
-description: Projectdemandwork
+description: "Projectdemandwork"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

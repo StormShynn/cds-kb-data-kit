@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRCUSTSETTLMTCAT
-description: Condition Contract Cust Settlmt Cat
+description: "Condition Contract Cust Settlmt Cat"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCUSTSETTLMTCAT')/$value
-semantic_en: Condition Contract Cust Settlmt Cat
+semantic_en: "Condition Contract Cust Settlmt Cat"
 tags:
   - LO
   - component:LO-GT-CHB

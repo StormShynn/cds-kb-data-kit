@@ -1,6 +1,6 @@
 ---
 name: I_VARCONFIGNTABLEVALUETP
-description: Varconfigntablevaluetp
+description: "Varconfigntablevaluetp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

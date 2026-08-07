@@ -1,15 +1,15 @@
 ---
 name: I_CADOCUMENTCUBE
-description: Contract Accounting Document - Cube
+description: "Contract Accounting Document - Cube"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADOCUMENTCUBE')/$value
-semantic_en: Contract Accounting Document - Cube
+semantic_en: "Contract Accounting Document - Cube"
 keywords:
-  - Contract Accounting Document - Cube
+  - "Contract Accounting Document - Cube"
 tags:
   - FI
   - account

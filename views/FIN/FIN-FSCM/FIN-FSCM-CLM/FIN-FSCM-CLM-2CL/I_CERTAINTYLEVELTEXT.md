@@ -1,6 +1,6 @@
 ---
 name: I_CERTAINTYLEVELTEXT
-description: Certaintyleveltext
+description: "Certaintyleveltext"
 app_component: FIN-FSCM-CLM-2CL
 software_component: SAPSCORE
 release_state: released

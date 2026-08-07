@@ -1,6 +1,6 @@
 ---
 name: I_WEEKDAY
-description: Weekday
+description: "Weekday"
 app_component: CA-GTF-DF
 software_component: SAP_BASIS
 release_state: released

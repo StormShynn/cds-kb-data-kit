@@ -1,6 +1,6 @@
 ---
 name: I_SRVCDOCRELFORBILLGSTS
-description: Srvcdocrelforbillgsts
+description: "Srvcdocrelforbillgsts"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

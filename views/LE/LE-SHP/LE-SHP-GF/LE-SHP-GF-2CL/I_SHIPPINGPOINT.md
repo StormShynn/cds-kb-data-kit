@@ -1,6 +1,6 @@
 ---
 name: I_SHIPPINGPOINT
-description: Shippingpoint
+description: "Shippingpoint"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

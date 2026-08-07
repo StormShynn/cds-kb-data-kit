@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPSCALECALCTYPETEXT
-description: Transpscalecalctypetext
+description: "Transpscalecalctypetext"
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

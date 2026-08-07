@@ -1,6 +1,6 @@
 ---
 name: I_FUNDSTDVH
-description: Fundstdvh
+description: "Fundstdvh"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

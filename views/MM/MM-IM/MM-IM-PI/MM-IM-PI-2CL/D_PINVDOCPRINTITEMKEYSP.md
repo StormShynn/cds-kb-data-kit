@@ -1,6 +1,6 @@
 ---
 name: D_PINVDOCPRINTITEMKEYSP
-description: D Pinvdocprintitemkeysp
+description: "D Pinvdocprintitemkeysp"
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

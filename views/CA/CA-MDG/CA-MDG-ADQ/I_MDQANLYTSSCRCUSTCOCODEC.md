@@ -1,17 +1,17 @@
 ---
 name: I_MDQANLYTSSCRCUSTCOCODEC
-description: MDQ Score for Cust Company Code - Cube
+description: "MDQ Score for Cust Company Code - Cube"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MDQANLYTSSCRCUSTCOCODEC')/$value
-semantic_en: MDQ Score for Cust Company Code - Cube
+semantic_en: "MDQ Score for Cust Company Code - Cube"
 keywords:
-  - MDQ Score for Cust Company Code - Cube
-  - MDQ Score for Cust Company Code - Cube
-  - MDQ Score for Cust Company Code - Cube
+  - "MDQ Score for Cust Company Code - Cube"
+  - "MDQ Score for Cust Company Code - Cube"
+  - "MDQ Score for Cust Company Code - Cube"
 tags:
   - CA
   - CA-MDG

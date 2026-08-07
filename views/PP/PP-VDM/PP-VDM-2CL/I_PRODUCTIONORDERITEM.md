@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERITEM
-description: Production OrderITEM
+description: "Production OrderITEM"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

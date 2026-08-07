@@ -1,13 +1,13 @@
 ---
 name: C_CNSLDTNINCSTMNTNATOFEXPNDYNQ
-description: Nature of Expense Temporary Node - Qry
+description: "Nature of Expense Temporary Node - Qry"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNSLDTNINCSTMNTNATOFEXPNDYNQ')/$value
-semantic_en: Nature of Expense Temporary Node - Qry
+semantic_en: "Nature of Expense Temporary Node - Qry"
 tags:
   - FIN
   - bo:purchaseorder

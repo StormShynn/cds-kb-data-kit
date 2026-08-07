@@ -1,6 +1,6 @@
 ---
 name: I_PURGCATPLANSPENDAPI01
-description: Purgcatplanspendapi 01
+description: "Purgcatplanspendapi 01"
 app_component: SLC-CAT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERTEXT
-description: Cost CenterTEXT
+description: "Cost CenterTEXT"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

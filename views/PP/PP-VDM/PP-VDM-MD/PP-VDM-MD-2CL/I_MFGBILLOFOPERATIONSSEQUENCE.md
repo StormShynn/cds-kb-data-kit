@@ -1,6 +1,6 @@
 ---
 name: I_MFGBILLOFOPERATIONSSEQUENCE
-description: Mfgbillofoperationssequence
+description: "Mfgbillofoperationssequence"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

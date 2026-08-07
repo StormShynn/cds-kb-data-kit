@@ -1,23 +1,23 @@
 ---
 name: C_SERVICEORDERQRY2401
-description: Service Orders Actuals
+description: "Service Orders Actuals"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SERVICEORDERQRY2401')/$value
-semantic_en: Service Orders Actuals
-semantic_vi: Service Orders Actuals — CDS view tiêu dùng dựa trên I_JournalEntryItemCube.
+semantic_en: "Service Orders Actuals"
+semantic_vi: "Service Orders Actuals — CDS view tiêu dùng dựa trên I_JournalEntryItemCube."
 keywords:
-  - Service Orders Actuals
-  - service
-  - orders
-  - actuals
-  - document
-  - type
-  - item
-  - contract
+  - "Service Orders Actuals"
+  - "service"
+  - "orders"
+  - "actuals"
+  - "document"
+  - "type"
+  - "item"
+  - "contract"
 tags:
   - FI
   - component:FI-FIO-GL-2CL

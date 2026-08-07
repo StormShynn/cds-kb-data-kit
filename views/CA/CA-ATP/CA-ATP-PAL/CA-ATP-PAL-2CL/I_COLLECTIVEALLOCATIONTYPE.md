@@ -1,6 +1,6 @@
 ---
 name: I_COLLECTIVEALLOCATIONTYPE
-description: Collectiveallocationtype
+description: "Collectiveallocationtype"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

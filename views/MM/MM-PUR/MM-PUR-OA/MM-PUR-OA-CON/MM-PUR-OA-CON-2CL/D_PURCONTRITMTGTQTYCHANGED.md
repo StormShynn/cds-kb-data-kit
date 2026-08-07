@@ -1,6 +1,6 @@
 ---
 name: D_PURCONTRITMTGTQTYCHANGED
-description: D Purcontritmtgtqtychanged
+description: "D Purcontritmtgtqtychanged"
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

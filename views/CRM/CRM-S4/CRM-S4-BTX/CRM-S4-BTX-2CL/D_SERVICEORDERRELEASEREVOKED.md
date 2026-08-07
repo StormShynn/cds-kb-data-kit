@@ -1,6 +1,6 @@
 ---
 name: D_SERVICEORDERRELEASEREVOKED
-description: D Service OrderRELEASEREVOKED
+description: "D Service OrderRELEASEREVOKED"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

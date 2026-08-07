@@ -1,13 +1,13 @@
 ---
 name: I_FUNCAREA1SUBDIVISIONT
-description: First Subdivision Functional Area - Text
+description: "First Subdivision Functional Area - Text"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNCAREA1SUBDIVISIONT')/$value
-semantic_en: First Subdivision Functional Area - Text
+semantic_en: "First Subdivision Functional Area - Text"
 tags:
   - PSM
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: D_SRVCQTANAPPRVLWRKFLWSTARTED
-description: D Srvcqtanapprvlwrkflwstarted
+description: "D Srvcqtanapprvlwrkflwstarted"
 app_component: CRM-S4-SRV-SVQ-2CL
 software_component: SAPSCORE
 release_state: released

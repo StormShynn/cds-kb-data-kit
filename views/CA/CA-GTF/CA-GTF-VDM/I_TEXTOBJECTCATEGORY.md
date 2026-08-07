@@ -1,6 +1,6 @@
 ---
 name: I_TEXTOBJECTCATEGORY
-description: Textobjectcategory
+description: "Textobjectcategory"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released

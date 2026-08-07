@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSGROUP
-description: Addressgroup
+description: "Addressgroup"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

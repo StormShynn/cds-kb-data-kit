@@ -1,17 +1,17 @@
 ---
 name: I_JOURNALENTRYANALYZERCUBE
-description: Journal Entry Analyzer - Cube
+description: "Journal Entry Analyzer - Cube"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_JOURNALENTRYANALYZERCUBE')/$value
-semantic_en: Journal Entry Analyzer - Cube
+semantic_en: "Journal Entry Analyzer - Cube"
 keywords:
-  - Journal Entry Analyzer - Cube
-  - Journal Entry Analyzer - Cube
-  - Journal Entry Analyzer - Cube
+  - "Journal Entry Analyzer - Cube"
+  - "Journal Entry Analyzer - Cube"
+  - "Journal Entry Analyzer - Cube"
 tags:
   - FI
   - component:FI-FIO-GL-2CL

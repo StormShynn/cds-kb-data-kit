@@ -1,6 +1,6 @@
 ---
 name: I_PRODPLNTINTLTRADETP_2
-description: Prodplntintltradetp 2
+description: "Prodplntintltradetp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDRESOURCEREQUESTTP
-description: Projdmndresourcerequesttp
+description: "Projdmndresourcerequesttp"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_INSURCONTRLIFECYCLESTATUST
-description: Life Cycle Sts for Contr in Plcy - Txt
+description: "Life Cycle Sts for Contr in Plcy - Txt"
 app_component: FS-PM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURCONTRLIFECYCLESTATUST')/$value
-semantic_en: Life Cycle Sts for Contr in Plcy - Txt
+semantic_en: "Life Cycle Sts for Contr in Plcy - Txt"
 tags:
   - FS
   - component:FS-PM

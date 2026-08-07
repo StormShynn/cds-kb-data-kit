@@ -1,6 +1,6 @@
 ---
 name: C_SUPPLIEREVALOVERALL
-description: Supplierevaloverall
+description: "Supplierevaloverall"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

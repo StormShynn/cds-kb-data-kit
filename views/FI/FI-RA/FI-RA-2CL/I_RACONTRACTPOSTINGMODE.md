@@ -1,13 +1,13 @@
 ---
 name: I_RACONTRACTPOSTINGMODE
-description: Contract Posting Mode
+description: "Contract Posting Mode"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RACONTRACTPOSTINGMODE')/$value
-semantic_en: Contract Posting Mode
+semantic_en: "Contract Posting Mode"
 tags:
   - FI
   - bo:purchaseorder

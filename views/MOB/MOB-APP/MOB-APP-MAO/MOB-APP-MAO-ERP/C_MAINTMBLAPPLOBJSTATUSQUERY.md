@@ -1,13 +1,13 @@
 ---
 name: C_MAINTMBLAPPLOBJSTATUSQUERY
-description: Mobile Object Status - Query
+description: "Mobile Object Status - Query"
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTMBLAPPLOBJSTATUSQUERY')/$value
-semantic_en: Mobile Object Status - Query
+semantic_en: "Mobile Object Status - Query"
 tags:
   - MOB
   - component:MOB-APP-MAO-ERP

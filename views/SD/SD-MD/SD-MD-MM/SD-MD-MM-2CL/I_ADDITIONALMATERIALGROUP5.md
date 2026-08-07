@@ -1,6 +1,6 @@
 ---
 name: I_ADDITIONALMATERIALGROUP5
-description: ADDITIONALMaterial Group 5
+description: "ADDITIONALMaterial Group 5"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

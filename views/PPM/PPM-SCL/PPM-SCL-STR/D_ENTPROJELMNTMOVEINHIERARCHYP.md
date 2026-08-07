@@ -1,6 +1,6 @@
 ---
 name: D_ENTPROJELMNTMOVEINHIERARCHYP
-description: D Entprojelmntmoveinhierarchyp
+description: "D Entprojelmntmoveinhierarchyp"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

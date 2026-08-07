@@ -1,6 +1,6 @@
 ---
 name: D_CHANGEMASTERADJUSTVALIDITYP
-description: D Change MasterERADJUSTVALIDITYP
+description: "D Change MasterERADJUSTVALIDITYP"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

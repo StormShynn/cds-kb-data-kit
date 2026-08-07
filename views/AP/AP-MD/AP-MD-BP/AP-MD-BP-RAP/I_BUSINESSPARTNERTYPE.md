@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERTYPE
-description: Business PartnerTYPE
+description: "Business PartnerTYPE"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

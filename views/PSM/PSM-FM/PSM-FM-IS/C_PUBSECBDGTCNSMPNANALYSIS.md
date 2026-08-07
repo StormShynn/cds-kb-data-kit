@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECBDGTCNSMPNANALYSIS
-description: Public Sector Budget Consumption Analysis
+description: "Public Sector Budget Consumption Analysis"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECBDGTCNSMPNANALYSIS')/$value
-semantic_en: Public Sector Budget Consumption Analysis
+semantic_en: "Public Sector Budget Consumption Analysis"
 tags:
   - PSM
   - budget

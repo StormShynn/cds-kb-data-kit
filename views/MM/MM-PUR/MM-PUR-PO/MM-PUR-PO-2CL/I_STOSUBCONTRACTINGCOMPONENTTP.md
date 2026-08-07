@@ -1,6 +1,6 @@
 ---
 name: I_STOSUBCONTRACTINGCOMPONENTTP
-description: Stosubcontractingcomponenttp
+description: "Stosubcontractingcomponenttp"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

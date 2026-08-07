@@ -1,6 +1,6 @@
 ---
 name: I_ORGANIZATIONALCHANGETEXTTP
-description: Organizationalchangetexttp
+description: "Organizationalchangetexttp"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

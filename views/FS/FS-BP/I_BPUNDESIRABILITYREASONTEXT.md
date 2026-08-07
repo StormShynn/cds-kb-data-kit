@@ -1,6 +1,6 @@
 ---
 name: I_BPUNDESIRABILITYREASONTEXT
-description: Bpundesirabilityreasontext
+description: "Bpundesirabilityreasontext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_BPCNTCTPERSNVIPINDICATORTEXT
-description: Text for Contact Person VIP Indicator
+description: "Text for Contact Person VIP Indicator"
 app_component: AP-MD-BP-RAP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPCNTCTPERSNVIPINDICATORTEXT')/$value
-semantic_en: Text for Contact Person VIP Indicator
+semantic_en: "Text for Contact Person VIP Indicator"
 tags:
   - AP
   - AP-MD

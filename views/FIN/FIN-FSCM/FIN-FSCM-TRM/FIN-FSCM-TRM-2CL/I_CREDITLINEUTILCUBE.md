@@ -1,13 +1,13 @@
 ---
 name: I_CREDITLINEUTILCUBE
-description: This CDS view provides the prerequisites for answering the following business questions: How to calculate the total amount of credit line for financial transactions in the system? How to calculate the utilized amount of credit line for financial transactions in the system? How to calculate the available amount of credit line for financial transactions in the system?
+description: "This CDS view provides the prerequisites for answering the following business questions: How to calculate the total amount of credit line for financial transactions in the system? How to calculate the utilized amount of credit line for financial transactions in the system? How to calculate the available amount of credit line for financial transactions in the system?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITLINEUTILCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How to calculate the total amount of credit line for financial transactions in the system? How to calculate the utilized amount of credit line for financial transactions in the system? How to calculate the available amount of credit line for financial transactions in the system?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How to calculate the total amount of credit line for financial transactions in the system? How to calculate the utilized amount of credit line for financial transactions in the system? How to calculate the available amount of credit line for financial transactions in the system?"
 tags:
   - FIN
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_PURGINFORECDPRCGCNDNVALDTYTP
-description: Purginforecdprcgcndnvaldtytp
+description: "Purginforecdprcgcndnvaldtytp"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

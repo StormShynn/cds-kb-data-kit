@@ -1,6 +1,6 @@
 ---
 name: I_INACTIVESTATUSTEXT
-description: Inactivestatustext
+description: "Inactivestatustext"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: C_CMMDTYHDGEVALREPORTQUERY
-description: CMMF Hedge Acc Evaluation Report - Qry
+description: "CMMF Hedge Acc Evaluation Report - Qry"
 app_component: FIN-FSCM-CMM-HACC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYHDGEVALREPORTQUERY')/$value
-semantic_en: CMMF Hedge Acc Evaluation Report - Qry
+semantic_en: "CMMF Hedge Acc Evaluation Report - Qry"
 tags:
   - FIN
   - bo:purchaseorder

@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERCOMPANYBYPLANT
-description: Customer CompanyBYPLANT
+description: "Customer CompanyBYPLANT"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

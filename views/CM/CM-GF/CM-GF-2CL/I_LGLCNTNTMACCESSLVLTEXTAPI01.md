@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMACCESSLVLTEXTAPI01
-description: Lglcntntmaccesslvltextapi 01
+description: "Lglcntntmaccesslvltextapi 01"
 app_component: CM-GF-2CL
 software_component: SAPSCORE
 release_state: released

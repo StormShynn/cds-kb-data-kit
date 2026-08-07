@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGROUPJRNLENTRYTP
-description: Cnsldtngroupjrnlentrytp
+description: "Cnsldtngroupjrnlentrytp"
 app_component: FIN-CS-JE-2CL
 software_component: SAPSCORE
 release_state: released

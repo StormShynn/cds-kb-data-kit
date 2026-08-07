@@ -1,29 +1,29 @@
 ---
 name: C_MAINTORDCONFIRMATIONDEX
-description: This CDS view is designed to extract and provide detailed information related to maintenance order confirmations. It serves as a data source for analytics and reporting purposes, enabling users to access transactional data associated with maintenance orders, including details about work performed, personnel involved, and confirmation statuses. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to extract and provide detailed information related to maintenance order confirmations. It serves as a data source for analytics and reporting purposes, enabling users to access transactional data associated with maintenance orders, including details about work performed, personnel involved, and confirmation statuses. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDCONFIRMATIONDEX')/$value
-semantic_en: This CDS view is designed to extract and provide detailed information related to maintenance order confirmations. It serves as a data source for analytics and reporting purposes, enabling users to access transactional data associated with maintenance orders, including details about work performed, personnel involved, and confirmation statuses. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Maintenance Order Conf Data Extractor — CDS view tiêu dùng dựa trên I_MaintenanceOrderConfirmation.
+semantic_en: "This CDS view is designed to extract and provide detailed information related to maintenance order confirmations. It serves as a data source for analytics and reporting purposes, enabling users to access transactional data associated with maintenance orders, including details about work performed, personnel involved, and confirmation statuses. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Maintenance Order Conf Data Extractor — CDS view tiêu dùng dựa trên I_MaintenanceOrderConfirmation."
 keywords:
-  - maintenance
-  - order
-  - conf
-  - data
-  - extractor
-  - maint
-  - cntr
-  - value
-  - confirmation
-  - entry
-  - operation
-  - counter
-  - routing
-  - number
+  - "maintenance"
+  - "order"
+  - "conf"
+  - "data"
+  - "extractor"
+  - "maint"
+  - "cntr"
+  - "value"
+  - "confirmation"
+  - "entry"
+  - "operation"
+  - "counter"
+  - "routing"
+  - "number"
 tags:
   - PM
   - bo:companycode

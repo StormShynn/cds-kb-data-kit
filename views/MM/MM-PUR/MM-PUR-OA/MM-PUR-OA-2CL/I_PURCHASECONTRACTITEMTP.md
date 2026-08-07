@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASECONTRACTITEMTP
-description: Purchase ContractITEMTP
+description: "Purchase ContractITEMTP"
 app_component: MM-PUR-OA-2CL
 software_component: SAPSCORE
 release_state: released

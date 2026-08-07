@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTOCOSTCENTER
-description: Profit CenterTOCost Center
+description: "Profit CenterTOCost Center"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

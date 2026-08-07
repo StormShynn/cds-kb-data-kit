@@ -1,6 +1,6 @@
 ---
 name: I_CAALTVEXCHANGERATESETCODET
-description: CAALTVExchange RateSETCODET
+description: "CAALTVExchange RateSETCODET"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

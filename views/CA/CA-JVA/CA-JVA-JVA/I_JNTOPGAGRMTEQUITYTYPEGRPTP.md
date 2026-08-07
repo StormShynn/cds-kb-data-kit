@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTEQUITYTYPEGRPTP
-description: Jntopgagrmtequitytypegrptp
+description: "Jntopgagrmtequitytypegrptp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

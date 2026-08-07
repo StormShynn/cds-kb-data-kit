@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSRCVDPACKGGINCTNTP
-description: Fldlogsrcvdpackgginctntp
+description: "Fldlogsrcvdpackgginctntp"
 app_component: CA-FL-RET
 software_component: SAPSCORE
 release_state: released

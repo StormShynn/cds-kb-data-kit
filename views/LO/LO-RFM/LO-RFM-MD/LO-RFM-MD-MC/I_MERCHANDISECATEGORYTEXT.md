@@ -1,6 +1,6 @@
 ---
 name: I_MERCHANDISECATEGORYTEXT
-description: Merchandisecategorytext
+description: "Merchandisecategorytext"
 app_component: LO-RFM-MD-MC
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BPRATINGTRENDVH
-description: Bpratingtrendvh
+description: "Bpratingtrendvh"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

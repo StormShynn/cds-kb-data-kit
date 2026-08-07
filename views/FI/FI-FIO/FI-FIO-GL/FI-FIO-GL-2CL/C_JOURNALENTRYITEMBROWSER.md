@@ -1,28 +1,28 @@
 ---
 name: C_JOURNALENTRYITEMBROWSER
-description: Journal Entry Item Browser
+description: "Journal Entry Item Browser"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_JOURNALENTRYITEMBROWSER')/$value
-semantic_en: Journal Entry Item Browser
-semantic_vi: Journal Entry Item Browser — CDS view tiêu dùng dựa trên I_JournalEntryItemBrowser.
+semantic_en: "Journal Entry Item Browser"
+semantic_vi: "Journal Entry Item Browser — CDS view tiêu dùng dựa trên I_JournalEntryItemBrowser."
 keywords:
-  - Display Line Items in General Ledger
-  - journal
-  - entry
-  - item
-  - browser
-  - ledger
-  - source
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
+  - "Display Line Items in General Ledger"
+  - "journal"
+  - "entry"
+  - "item"
+  - "browser"
+  - "ledger"
+  - "source"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
 tags:
   - FI
   - component:FI-FIO-GL-2CL

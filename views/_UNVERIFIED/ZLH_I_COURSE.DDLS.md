@@ -1,22 +1,22 @@
 ---
 name: ZLH_I_COURSE.DDLS
-description: Course basic data
+description: "Course basic data"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/JuliaBerteneva/LearningHubRAP/blob/f1342bbfe3bb483f43c5bb8d08b65d62aefa7b66/src/zlh_i_course.ddls.asddls
-semantic_en: Course basic data — CDS view based on zlh_course.
-semantic_vi: Course basic data — CDS view dựa trên zlh_course.
+semantic_en: "Course basic data — CDS view based on zlh_course."
+semantic_vi: "Course basic data — CDS view dựa trên zlh_course."
 keywords:
-  - course
-  - basic
-  - data
-  - name
-  - type
-  - skill
-  - category
+  - "course"
+  - "basic"
+  - "data"
+  - "name"
+  - "type"
+  - "skill"
+  - "category"
 tags:
   - CO
   - component:CO

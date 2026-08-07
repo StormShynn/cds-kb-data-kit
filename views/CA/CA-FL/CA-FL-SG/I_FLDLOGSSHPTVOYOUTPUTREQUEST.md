@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSSHPTVOYOUTPUTREQUEST
-description: Fldlogsshptvoyoutputrequest
+description: "Fldlogsshptvoyoutputrequest"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

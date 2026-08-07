@@ -1,6 +1,6 @@
 ---
 name: I_DUNNINGAREASTDVH
-description: Dunningareastdvh
+description: "Dunningareastdvh"
 app_component: FI-AR-AR-C-2CL
 software_component: SAPSCORE
 release_state: released

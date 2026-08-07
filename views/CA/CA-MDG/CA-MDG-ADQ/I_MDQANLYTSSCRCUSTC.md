@@ -1,16 +1,16 @@
 ---
 name: I_MDQANLYTSSCRCUSTC
-description: MDQ Score for Customer - Cube
+description: "MDQ Score for Customer - Cube"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MDQANLYTSSCRCUSTC')/$value
-semantic_en: MDQ Score for Customer - Cube
+semantic_en: "MDQ Score for Customer - Cube"
 keywords:
-  - MDQ Score for Customer - Cube
-  - MDQ Score for Customer - Cube
+  - "MDQ Score for Customer - Cube"
+  - "MDQ Score for Customer - Cube"
 tags:
   - CA
   - bo:businesspartner

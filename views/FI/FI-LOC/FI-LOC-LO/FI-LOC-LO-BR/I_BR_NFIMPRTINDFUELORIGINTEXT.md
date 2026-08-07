@@ -1,25 +1,25 @@
 ---
 name: I_BR_NFIMPRTINDFUELORIGINTEXT
-description: Brazil Fuel Origin Import Ind - Text
+description: "Brazil Fuel Origin Import Ind - Text"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_NFIMPRTINDFUELORIGINTEXT')/$value
-semantic_en: Brazil Fuel Origin Import Ind - Text
-semantic_vi: Brazil Fuel Origin Import Ind - Text — CDS view giao diện dựa trên dd07t.
+semantic_en: "Brazil Fuel Origin Import Ind - Text"
+semantic_vi: "Brazil Fuel Origin Import Ind - Text — CDS view giao diện dựa trên dd07t."
 keywords:
-  - brazil
-  - fuel
-  - origin
-  - import
-  - ind
-  - text
-  - language
-  - indicator
-  - imprt
-  - desc
+  - "brazil"
+  - "fuel"
+  - "origin"
+  - "import"
+  - "ind"
+  - "text"
+  - "language"
+  - "indicator"
+  - "imprt"
+  - "desc"
 tags:
   - FI
   - bo:companycode

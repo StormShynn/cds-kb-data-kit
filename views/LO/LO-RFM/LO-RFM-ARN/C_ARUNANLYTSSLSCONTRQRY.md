@@ -1,27 +1,27 @@
 ---
 name: C_ARUNANLYTSSLSCONTRQRY
-description: Contract Consumption Quantities
+description: "Contract Consumption Quantities"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSLSCONTRQRY')/$value
-semantic_en: Contract Consumption Quantities
-semantic_vi: Contract Consumption Quantities — CDS view tiêu dùng dựa trên I_ARunAnlytsSlsContrCube.
+semantic_en: "Contract Consumption Quantities"
+semantic_vi: "Contract Consumption Quantities — CDS view tiêu dùng dựa trên I_ARunAnlytsSlsContrCube."
 keywords:
-  - contract
-  - consumption
-  - quantities
-  - requirement
-  - document
-  - number
-  - item
-  - requested
-  - date
-  - product
-  - availability
-  - type
+  - "contract"
+  - "consumption"
+  - "quantities"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "requested"
+  - "date"
+  - "product"
+  - "availability"
+  - "type"
 tags:
   - LO
   - component:LO-RFM-ARN

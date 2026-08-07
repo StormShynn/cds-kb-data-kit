@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCRCYCNVRSNDIFFTYPET_2
-description: Cnsldtncrcycnvrsndifftypet 2
+description: "Cnsldtncrcycnvrsndifftypet 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

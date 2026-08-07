@@ -1,22 +1,22 @@
 ---
 name: I_ACCOUNTINGDOCUMENTTYPESTDVH
-description: Journal Entry Type
+description: "Journal Entry Type"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACCOUNTINGDOCUMENTTYPESTDVH')/$value
-semantic_en: Journal Entry Type
-semantic_vi: Journal Entry Type — CDS view giao diện dựa trên I_AccountingDocumentType.
+semantic_en: "Journal Entry Type"
+semantic_vi: "Journal Entry Type — CDS view giao diện dựa trên I_AccountingDocumentType."
 keywords:
-  - journal
-  - entry
-  - type
-  - accounting
-  - document
-  - authorization
-  - group
+  - "journal"
+  - "entry"
+  - "type"
+  - "accounting"
+  - "document"
+  - "authorization"
+  - "group"
 tags:
   - FI
   - component:FI-GL-IS-2CL

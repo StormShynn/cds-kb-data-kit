@@ -1,13 +1,13 @@
 ---
 name: I_CMPLOBLASGTRECENTLYCHGDC
-description: Recently Chgd Obl Assignments - Cube
+description: "Recently Chgd Obl Assignments - Cube"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLOBLASGTRECENTLYCHGDC')/$value
-semantic_en: Recently Chgd Obl Assignments - Cube
+semantic_en: "Recently Chgd Obl Assignments - Cube"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

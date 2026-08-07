@@ -1,13 +1,13 @@
 ---
 name: I_RAUNIVREVNRECGNINTEGTYPETEXT
-description: Revenue Accounting URR Type - Text
+description: "Revenue Accounting URR Type - Text"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAUNIVREVNRECGNINTEGTYPETEXT')/$value
-semantic_en: Revenue Accounting URR Type - Text
+semantic_en: "Revenue Accounting URR Type - Text"
 tags:
   - FI
   - account

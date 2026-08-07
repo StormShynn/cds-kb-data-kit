@@ -1,6 +1,6 @@
 ---
 name: I_SEGMENT
-description: Segment
+description: "Segment"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

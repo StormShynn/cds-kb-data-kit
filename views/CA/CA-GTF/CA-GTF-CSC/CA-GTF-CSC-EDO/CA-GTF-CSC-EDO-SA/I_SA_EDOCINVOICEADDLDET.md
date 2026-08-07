@@ -1,6 +1,6 @@
 ---
 name: I_SA_EDOCINVOICEADDLDET
-description: SA Edocinvoiceaddldet
+description: "SA Edocinvoiceaddldet"
 app_component: CA-GTF-CSC-EDO-SA
 software_component: SAPSCORE
 release_state: released

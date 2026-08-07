@@ -1,26 +1,26 @@
 ---
 name: I_MANAGEOPERATIONSTP
-description: Production Operations Transactional BOPF
+description: "Production Operations Transactional BOPF"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://pastebin.com/cRHdEZwv
-semantic_en: Production Operations Transactional BOPF — Interface CDS view based on I_MfgOrderOperationCube.
-semantic_vi: Production Operations Transactional BOPF — CDS view giao diện dựa trên I_MfgOrderOperationCube.
+semantic_en: "Production Operations Transactional BOPF — Interface CDS view based on I_MfgOrderOperationCube."
+semantic_vi: "Production Operations Transactional BOPF — CDS view giao diện dựa trên I_MfgOrderOperationCube."
 keywords:
-  - production
-  - operations
-  - transactional
-  - bopf
-  - order
-  - internal
-  - bill
-  - item
-  - manufacturing
-  - operation
-  - text
+  - "production"
+  - "operations"
+  - "transactional"
+  - "bopf"
+  - "order"
+  - "internal"
+  - "bill"
+  - "item"
+  - "manufacturing"
+  - "operation"
+  - "text"
 tags:
   - AC
   - bo:material

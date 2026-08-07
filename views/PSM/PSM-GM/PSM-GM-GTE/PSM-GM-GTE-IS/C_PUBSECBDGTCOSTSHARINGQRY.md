@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECBDGTCOSTSHARINGQRY
-description: Grants Budget Cost Sharing - Query
+description: "Grants Budget Cost Sharing - Query"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECBDGTCOSTSHARINGQRY')/$value
-semantic_en: Grants Budget Cost Sharing - Query
+semantic_en: "Grants Budget Cost Sharing - Query"
 tags:
   - PSM
   - budget

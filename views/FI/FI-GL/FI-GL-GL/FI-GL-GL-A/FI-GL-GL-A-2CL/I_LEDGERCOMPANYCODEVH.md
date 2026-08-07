@@ -1,13 +1,13 @@
 ---
 name: I_LEDGERCOMPANYCODEVH
-description: Company Codes for Ledger
+description: "Company Codes for Ledger"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LEDGERCOMPANYCODEVH')/$value
-semantic_en: Company Codes for Ledger
+semantic_en: "Company Codes for Ledger"
 tags:
   - FI
   - component:FI-GL-GL-A-2CL

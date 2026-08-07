@@ -1,6 +1,6 @@
 ---
 name: I_CENTRALCREDITCHKTECHERRSTS
-description: Centralcreditchktecherrsts
+description: "Centralcreditchktecherrsts"
 app_component: SD-BF-CM-2CL
 software_component: SAPSCORE
 release_state: released

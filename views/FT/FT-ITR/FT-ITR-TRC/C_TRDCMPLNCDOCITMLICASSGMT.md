@@ -1,6 +1,6 @@
 ---
 name: C_TRDCMPLNCDOCITMLICASSGMT
-description: Trdcmplncdocitmlicassgmt
+description: "Trdcmplncdocitmlicassgmt"
 app_component: FT-ITR-TRC
 software_component: SAPSCORE
 release_state: released

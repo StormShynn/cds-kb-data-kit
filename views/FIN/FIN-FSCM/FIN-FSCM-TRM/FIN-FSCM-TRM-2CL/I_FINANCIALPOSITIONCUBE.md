@@ -1,13 +1,13 @@
 ---
 name: I_FINANCIALPOSITIONCUBE
-description: This CDS view provides the prerequisites for answering the following business questions for the financial status: What are the book values in position currency of the financial positions at a specific key date? What are the nominal amounts in nominal currency of the financial positions at a specific key date?
+description: "This CDS view provides the prerequisites for answering the following business questions for the financial status: What are the book values in position currency of the financial positions at a specific key date? What are the nominal amounts in nominal currency of the financial positions at a specific key date?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINANCIALPOSITIONCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions for the financial status: What are the book values in position currency of the financial positions at a specific key date? What are the nominal amounts in nominal currency of the financial positions at a specific key date?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions for the financial status: What are the book values in position currency of the financial positions at a specific key date? What are the nominal amounts in nominal currency of the financial positions at a specific key date?"
 tags:
   - FIN
   - bo:companycode

@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSCURRENCYPAIRVH
-description: This view provides value help for the Currency Pair field. This view should be used for value help purposes only.
+description: "This view provides value help for the Currency Pair field. This view should be used for value help purposes only."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSCURRENCYPAIRVH')/$value
-semantic_en: This view provides value help for the Currency Pair field. This view should be used for value help purposes only.
+semantic_en: "This view provides value help for the Currency Pair field. This view should be used for value help purposes only."
 tags:
   - FIN
   - bo:companycode

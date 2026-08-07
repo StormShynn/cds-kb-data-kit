@@ -1,6 +1,6 @@
 ---
 name: D_ARDISPUTECASECHANGEP
-description: D Ardisputecasechangep
+description: "D Ardisputecasechangep"
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

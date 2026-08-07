@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTPLANTPLANNINGTP_2
-description: Productplantplanningtp 2
+description: "Productplantplanningtp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

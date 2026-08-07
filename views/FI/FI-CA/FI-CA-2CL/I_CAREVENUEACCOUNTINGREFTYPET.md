@@ -1,6 +1,6 @@
 ---
 name: I_CAREVENUEACCOUNTINGREFTYPET
-description: Carevenueaccountingreftypet
+description: "Carevenueaccountingreftypet"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

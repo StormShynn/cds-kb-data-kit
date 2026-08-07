@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSDELIVERYITEMTP
-description: Fldlogsdeliveryitemtp
+description: "Fldlogsdeliveryitemtp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

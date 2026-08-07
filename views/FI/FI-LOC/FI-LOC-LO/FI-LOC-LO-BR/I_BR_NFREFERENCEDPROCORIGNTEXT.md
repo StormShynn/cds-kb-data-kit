@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFREFERENCEDPROCORIGNTEXT
-description: BR Nfreferencedprocorigntext
+description: "BR Nfreferencedprocorigntext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MAINTTSKLISTSTRGYPACKAGETP
-description: Mainttskliststrgypackagetp
+description: "Mainttskliststrgypackagetp"
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

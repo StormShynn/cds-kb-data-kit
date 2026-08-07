@@ -1,6 +1,6 @@
 ---
 name: I_TEXTOBJECTTYPE
-description: Textobjecttype
+description: "Textobjecttype"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released

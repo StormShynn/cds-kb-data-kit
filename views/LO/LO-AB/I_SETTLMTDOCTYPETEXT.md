@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTDOCTYPETEXT
-description: This CDS view provides the prerequisites for answering the following business question: What are the descriptions of settlement document types in different languages?
+description: "This CDS view provides the prerequisites for answering the following business question: What are the descriptions of settlement document types in different languages?"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCTYPETEXT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What are the descriptions of settlement document types in different languages?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What are the descriptions of settlement document types in different languages?"
 tags:
   - LO
   - bo:plant

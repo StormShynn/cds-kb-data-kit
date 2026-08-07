@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSRETURNSPRODUCTTP
-description: Fldlogsreturnsproducttp
+description: "Fldlogsreturnsproducttp"
 app_component: CA-FL-RET
 software_component: SAPSCORE
 release_state: released

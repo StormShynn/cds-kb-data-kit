@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALOBJCLASSIFICATION
-description: Collateral Object Classification
+description: "Collateral Object Classification"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALOBJCLASSIFICATION')/$value
-semantic_en: Collateral Object Classification
+semantic_en: "Collateral Object Classification"
 tags:
   - FS
   - bo:companycode

@@ -1,13 +1,13 @@
 ---
 name: I_INCIDENTGROUP
-description: Incident Group
+description: "Incident Group"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INCIDENTGROUP')/$value
-semantic_en: Incident Group
+semantic_en: "Incident Group"
 tags:
   - EHS
   - component:EHS-SUS-IM

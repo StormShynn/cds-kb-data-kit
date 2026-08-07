@@ -1,6 +1,6 @@
 ---
 name: C_SBRSOTSNPSHTANLYS1
-description: Sbrsotsnpshtanlys 1
+description: "Sbrsotsnpshtanlys 1"
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released

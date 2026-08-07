@@ -1,6 +1,6 @@
 ---
 name: I_BPPROTECTEDADDRESS
-description: Bpprotectedaddress
+description: "Bpprotectedaddress"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

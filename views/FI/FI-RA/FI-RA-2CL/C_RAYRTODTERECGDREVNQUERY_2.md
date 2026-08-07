@@ -1,27 +1,27 @@
 ---
 name: C_RAYRTODTERECGDREVNQUERY_2
-description: This CDS view provides the prerequisites for answering the following business questions: How much revenue is recognized this year in the display currency? How much revenue is recognized in each period? How much revenue catch-up is calculated this year from contract changes in the display currency? What is the growth for year-over-year? What is the top 5 best business partners? What is the proportion of revenue for business units, for example, by profit centre? What is the revenue or revenue catch-up for each performance obligation or contract? This query can be used in the key user tool KPI Design or Create Reports.
+description: "This CDS view provides the prerequisites for answering the following business questions: How much revenue is recognized this year in the display currency? How much revenue is recognized in each period? How much revenue catch-up is calculated this year from contract changes in the display currency? What is the growth for year-over-year? What is the top 5 best business partners? What is the proportion of revenue for business units, for example, by profit centre? What is the revenue or revenue catch-up for each performance obligation or contract? This query can be used in the key user tool KPI Design or Create Reports."
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RAYRTODTERECGDREVNQUERY_2')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How much revenue is recognized this year in the display currency? How much revenue is recognized in each period? How much revenue catch-up is calculated this year from contract changes in the display currency? What is the growth for year-over-year? What is the top 5 best business partners? What is the proportion of revenue for business units, for example, by profit centre? What is the revenue or revenue catch-up for each performance obligation or contract? This query can be used in the key user tool KPI Design or Create Reports.
-semantic_vi: Disaggregation of Recognizable Revenue — CDS view tiêu dùng dựa trên Disaggregation of Recognizable Revenue.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How much revenue is recognized this year in the display currency? How much revenue is recognized in each period? How much revenue catch-up is calculated this year from contract changes in the display currency? What is the growth for year-over-year? What is the top 5 best business partners? What is the proportion of revenue for business units, for example, by profit centre? What is the revenue or revenue catch-up for each performance obligation or contract? This query can be used in the key user tool KPI Design or Create Reports."
+semantic_vi: "Disaggregation of Recognizable Revenue — CDS view tiêu dùng dựa trên Disaggregation of Recognizable Revenue."
 keywords:
-  - Disaggregation of Recognizable Revenue
-  - disaggregation
-  - recognizable
-  - revenue
-  - performance
-  - obligation
-  - accounting
-  - contract
-  - company
-  - code
-  - name
-  - principle
+  - "Disaggregation of Recognizable Revenue"
+  - "disaggregation"
+  - "recognizable"
+  - "revenue"
+  - "performance"
+  - "obligation"
+  - "accounting"
+  - "contract"
+  - "company"
+  - "code"
+  - "name"
+  - "principle"
 tags:
   - FI
   - bo:companycode

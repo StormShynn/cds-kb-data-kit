@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJELMNTDLVBRLDISTRTP
-description: Entprojelmntdlvbrldistrtp
+description: "Entprojelmntdlvbrldistrtp"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

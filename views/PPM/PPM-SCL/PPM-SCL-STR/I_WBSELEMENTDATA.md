@@ -1,13 +1,13 @@
 ---
 name: I_WBSELEMENTDATA
-description: WBSElement Data
+description: "WBSElement Data"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTDATA')/$value
-semantic_en: WBSElement Data
+semantic_en: "WBSElement Data"
 tags:
   - PPM
   - component:PPM-SCL-STR

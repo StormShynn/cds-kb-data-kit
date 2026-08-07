@@ -1,6 +1,6 @@
 ---
 name: I_PRCGPROCEDITEMSUBTOTALTEXT
-description: Prcgproceditemsubtotaltext
+description: "Prcgproceditemsubtotaltext"
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released

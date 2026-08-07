@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSMANAGEMENTURITYPE
-description: Addressmanagementuritype
+description: "Addressmanagementuritype"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNORDER
-description: Cnsldtnorder
+description: "Cnsldtnorder"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

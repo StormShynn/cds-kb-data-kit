@@ -1,13 +1,13 @@
 ---
 name: I_TRDGCONTRPURGPRCGELMNT
-description: Purg Pricing Elmnt of Trading Contract
+description: "Purg Pricing Elmnt of Trading Contract"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRPURGPRCGELMNT')/$value
-semantic_en: Purg Pricing Elmnt of Trading Contract
+semantic_en: "Purg Pricing Elmnt of Trading Contract"
 tags:
   - LO
   - bo:pricingcondition

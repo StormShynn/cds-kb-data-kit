@@ -1,6 +1,6 @@
 ---
 name: I_CONACCTPRTNINVCGCHRGANDDISC
-description: Conacctprtninvcgchrganddisc
+description: "Conacctprtninvcgchrganddisc"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

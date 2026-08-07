@@ -1,13 +1,13 @@
 ---
 name: I_MKTDATACREDITSPREADCUBE
-description: This CDS view provides the prerequisites for answering the following business question: What is a credit spread for a quotation type in basis points at a specific point in time?
+description: "This CDS view provides the prerequisites for answering the following business question: What is a credit spread for a quotation type in basis points at a specific point in time?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MKTDATACREDITSPREADCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What is a credit spread for a quotation type in basis points at a specific point in time?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is a credit spread for a quotation type in basis points at a specific point in time?"
 tags:
   - FIN
   - bo:companycode

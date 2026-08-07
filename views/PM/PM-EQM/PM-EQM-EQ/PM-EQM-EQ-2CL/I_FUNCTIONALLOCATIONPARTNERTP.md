@@ -1,6 +1,6 @@
 ---
 name: I_FUNCTIONALLOCATIONPARTNERTP
-description: Functionallocationpartnertp
+description: "Functionallocationpartnertp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

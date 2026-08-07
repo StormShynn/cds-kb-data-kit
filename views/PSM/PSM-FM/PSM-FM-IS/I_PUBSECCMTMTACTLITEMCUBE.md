@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECCMTMTACTLITEMCUBE
-description: Pubseccmtmtactlitemcube
+description: "Pubseccmtmtactlitemcube"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released

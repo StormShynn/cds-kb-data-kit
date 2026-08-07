@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMER_TO_BUSINESSPARTNER
-description: Customer TO Business Partner
+description: "Customer TO Business Partner"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

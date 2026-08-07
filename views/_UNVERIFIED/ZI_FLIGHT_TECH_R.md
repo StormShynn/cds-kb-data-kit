@@ -1,23 +1,23 @@
 ---
 name: ZI_FLIGHT_TECH_R
-description: Flight Information
+description: "Flight Information"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/ramniwas04/READ-ONLY-RAP-Application/blob/60c0f5918a70647bcce80eddb9f1f739f801f587/zi_flight_tech_r.asddls
-semantic_en: Flight Information — CDS view.
-semantic_vi: Flight Information — CDS view dựa trên Flight Information.
+semantic_en: "Flight Information — CDS view."
+semantic_vi: "Flight Information — CDS view dựa trên Flight Information."
 keywords:
-  - flight
-  - information
-  - carrier_id
-  - connection_id
-  - flight_date
-  - price
-  - currency
-  - code
+  - "flight"
+  - "information"
+  - "carrier_id"
+  - "connection_id"
+  - "flight_date"
+  - "price"
+  - "currency"
+  - "code"
 ---
 # ZI_FLIGHT_TECH_R
 

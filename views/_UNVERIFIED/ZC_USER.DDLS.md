@@ -1,20 +1,20 @@
 ---
 name: ZC_USER.DDLS
-description: User prjection view
+description: "User prjection view"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/ravi075/SAP-RAP-PROJECTS/blob/0b2f7a767ccd169f6f334e9e48b6a968e57fd419/src/zc_user.ddls.asddls
-semantic_en: User prjection view — CDS view.
-semantic_vi: User prjection view — CDS view dựa trên User prjection view.
+semantic_en: "User prjection view — CDS view."
+semantic_vi: "User prjection view — CDS view dựa trên User prjection view."
 keywords:
-  - user
-  - prjection
-  - description
-  - attachment
-  - mimetype
+  - "user"
+  - "prjection"
+  - "description"
+  - "attachment"
+  - "mimetype"
 ---
 # ZC_USER.DDLS
 

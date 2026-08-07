@@ -1,13 +1,13 @@
 ---
 name: I_OPSTDWORKQTYGRPGCATTEXT
-description: Operation Grouping Category - Text
+description: "Operation Grouping Category - Text"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPSTDWORKQTYGRPGCATTEXT')/$value
-semantic_en: Operation Grouping Category - Text
+semantic_en: "Operation Grouping Category - Text"
 tags:
   - PP
   - bo:project

@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERCREDITGROUP
-description: Customercreditgroup
+description: "Customercreditgroup"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

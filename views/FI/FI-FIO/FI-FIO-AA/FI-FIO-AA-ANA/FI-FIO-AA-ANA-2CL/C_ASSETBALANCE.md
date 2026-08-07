@@ -1,26 +1,26 @@
 ---
 name: C_ASSETBALANCE
-description: With this view, you can form balances of various dimensions of the fixed asset and the journal entry including the most important business entities, such as company code, depreciation area, segment, APC balance sheet account or profit center. The report enables you to understand the net book value of fixed assets derived from acquisition and production costs (APC) and depreciation. SAP provides preconfigured key figure groups that you can use for your reporting. These key figure groups bundle key figure codes, such as acquisition and production cost, cumulative depreciation and netbook value at reporting date This CDS view provides the prerequisites for answering the following business questions: What are my acquisition and production costs (APC) at the reporting date? What is my planned accumulated depreciation for each depreciation type at the reporting date? What Is my accumulated depreciation for each depreciation type posted in the general ledger at the reporting date? What is my net book value at the reporting date? What are the balances drilled down by the asset?
+description: "With this view, you can form balances of various dimensions of the fixed asset and the journal entry including the most important business entities, such as company code, depreciation area, segment, APC balance sheet account or profit center. The report enables you to understand the net book value of fixed assets derived from acquisition and production costs (APC) and depreciation. SAP provides preconfigured key figure groups that you can use for your reporting. These key figure groups bundle key figure codes, such as acquisition and production cost, cumulative depreciation and netbook value at reporting date This CDS view provides the prerequisites for answering the following business questions: What are my acquisition and production costs (APC) at the reporting date? What is my planned accumulated depreciation for each depreciation type at the reporting date? What Is my accumulated depreciation for each depreciation type posted in the general ledger at the reporting date? What is my net book value at the reporting date? What are the balances drilled down by the asset?"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ASSETBALANCE')/$value
-semantic_en: With this view, you can form balances of various dimensions of the fixed asset and the journal entry including the most important business entities, such as company code, depreciation area, segment, APC balance sheet account or profit center. The report enables you to understand the net book value of fixed assets derived from acquisition and production costs (APC) and depreciation. SAP provides preconfigured key figure groups that you can use for your reporting. These key figure groups bundle key figure codes, such as acquisition and production cost, cumulative depreciation and netbook value at reporting date This CDS view provides the prerequisites for answering the following business questions: What are my acquisition and production costs (APC) at the reporting date? What is my planned accumulated depreciation for each depreciation type at the reporting date? What Is my accumulated depreciation for each depreciation type posted in the general ledger at the reporting date? What is my net book value at the reporting date? What are the balances drilled down by the asset?
-semantic_vi: Asset Balances — CDS view tiêu dùng dựa trên I_AssetBalanceCube.
+semantic_en: "With this view, you can form balances of various dimensions of the fixed asset and the journal entry including the most important business entities, such as company code, depreciation area, segment, APC balance sheet account or profit center. The report enables you to understand the net book value of fixed assets derived from acquisition and production costs (APC) and depreciation. SAP provides preconfigured key figure groups that you can use for your reporting. These key figure groups bundle key figure codes, such as acquisition and production cost, cumulative depreciation and netbook value at reporting date This CDS view provides the prerequisites for answering the following business questions: What are my acquisition and production costs (APC) at the reporting date? What is my planned accumulated depreciation for each depreciation type at the reporting date? What Is my accumulated depreciation for each depreciation type posted in the general ledger at the reporting date? What is my net book value at the reporting date? What are the balances drilled down by the asset?"
+semantic_vi: "Asset Balances — CDS view tiêu dùng dựa trên I_AssetBalanceCube."
 keywords:
-  - Asset Balances
-  - asset
-  - balances
-  - account
-  - determination
-  - class
-  - accounting
-  - figure
-  - display
-  - currency
-  - amount
+  - "Asset Balances"
+  - "asset"
+  - "balances"
+  - "account"
+  - "determination"
+  - "class"
+  - "accounting"
+  - "figure"
+  - "display"
+  - "currency"
+  - "amount"
 tags:
   - FI
   - account

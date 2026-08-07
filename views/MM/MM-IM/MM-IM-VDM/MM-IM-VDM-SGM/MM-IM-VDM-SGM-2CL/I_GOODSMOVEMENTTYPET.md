@@ -1,6 +1,6 @@
 ---
 name: I_GOODSMOVEMENTTYPET
-description: Goods MovementTYPET
+description: "Goods MovementTYPET"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

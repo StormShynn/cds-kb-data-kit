@@ -1,6 +1,6 @@
 ---
 name: D_PURCHASEREQNITEMCHANGED
-description: D Purchase RequisitionNITEMCHANGED
+description: "D Purchase RequisitionNITEMCHANGED"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

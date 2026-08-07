@@ -1,13 +1,13 @@
 ---
 name: I_EWM_PHYSICALINVENTORYDOCTYPE
-description: Warehouse Physical Inventory Procedure
+description: "Warehouse Physical Inventory Procedure"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_PHYSICALINVENTORYDOCTYPE')/$value
-semantic_en: Warehouse Physical Inventory Procedure
+semantic_en: "Warehouse Physical Inventory Procedure"
 tags:
   - SCM
   - component:SCM-EWM-WOP-2CL

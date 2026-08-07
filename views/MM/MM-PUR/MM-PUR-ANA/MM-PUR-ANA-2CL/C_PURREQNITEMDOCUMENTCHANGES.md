@@ -1,6 +1,6 @@
 ---
 name: C_PURREQNITEMDOCUMENTCHANGES
-description: Purreqnitemdocumentchanges
+description: "Purreqnitemdocumentchanges"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

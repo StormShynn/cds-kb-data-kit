@@ -1,13 +1,13 @@
 ---
 name: I_OFFSETTINGACCOUNTSTDVH
-description: Offsetting Account
+description: "Offsetting Account"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OFFSETTINGACCOUNTSTDVH')/$value
-semantic_en: Offsetting Account
+semantic_en: "Offsetting Account"
 tags:
   - FI
   - account

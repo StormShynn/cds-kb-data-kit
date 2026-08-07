@@ -1,6 +1,6 @@
 ---
 name: D_SERVICEORDERTMPLRELEASED
-description: D Service OrderTMPLRELEASED
+description: "D Service OrderTMPLRELEASED"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

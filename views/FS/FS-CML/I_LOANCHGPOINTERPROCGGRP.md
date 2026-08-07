@@ -1,13 +1,13 @@
 ---
 name: I_LOANCHGPOINTERPROCGGRP
-description: Loan Change Pointer Processing Group
+description: "Loan Change Pointer Processing Group"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCHGPOINTERPROCGGRP')/$value
-semantic_en: Loan Change Pointer Processing Group
+semantic_en: "Loan Change Pointer Processing Group"
 tags:
   - FS
   - bo:purchaseorder

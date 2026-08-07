@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCOSTCENTERVH
-description: CNSLDTNCost CenterVH
+description: "CNSLDTNCost CenterVH"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

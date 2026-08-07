@@ -1,6 +1,6 @@
 ---
 name: D_WAREHOUSEORDERTASKACTIVATED
-description: D Warehouse OrderTASKACTIVATED
+description: "D Warehouse OrderTASKACTIVATED"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

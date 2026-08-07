@@ -1,21 +1,21 @@
 ---
 name: ZI_CARRIER_TECH_R
-description: Carrier detail
+description: "Carrier detail"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/ramniwas04/READ-ONLY-RAP-Application/blob/60c0f5918a70647bcce80eddb9f1f739f801f587/zi_carrier_tech_r.asddls
-semantic_en: Carrier detail — CDS view.
-semantic_vi: Carrier detail — CDS view dựa trên Carrier detail.
+semantic_en: "Carrier detail — CDS view."
+semantic_vi: "Carrier detail — CDS view dựa trên Carrier detail."
 keywords:
-  - carrier
-  - detail
-  - carrier_id
-  - name
-  - currency
-  - code
+  - "carrier"
+  - "detail"
+  - "carrier_id"
+  - "name"
+  - "currency"
+  - "code"
 tags:
   - CA
   - component:CA

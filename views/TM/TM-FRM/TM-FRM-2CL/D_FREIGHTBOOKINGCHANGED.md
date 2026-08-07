@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTBOOKINGCHANGED
-description: D Freightbookingchanged
+description: "D Freightbookingchanged"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

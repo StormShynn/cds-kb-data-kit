@@ -1,6 +1,6 @@
 ---
 name: I_CONDITIONINACTIVEREASON
-description: Conditioninactivereason
+description: "Conditioninactivereason"
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released

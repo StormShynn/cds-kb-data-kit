@@ -1,13 +1,13 @@
 ---
 name: I_ONRRRPTGHISTORYREPORTDETAILS
-description: Office of Natural Resources Revenue Reporting History Report Details
+description: "Office of Natural Resources Revenue Reporting History Report Details"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ONRRRPTGHISTORYREPORTDETAILS')/$value
-semantic_en: Office of Natural Resources Revenue Reporting History Report Details
+semantic_en: "Office of Natural Resources Revenue Reporting History Report Details"
 tags:
   - IS
   - bo:companycode

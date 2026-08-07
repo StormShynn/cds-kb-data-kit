@@ -1,6 +1,6 @@
 ---
 name: TEST_CDSV3_TEST
-description: Test Cdsv 3 Test
+description: "Test Cdsv 3 Test"
 app_component: CA-GTF-ANL
 software_component: SAPPCORE_H
 release_state: released

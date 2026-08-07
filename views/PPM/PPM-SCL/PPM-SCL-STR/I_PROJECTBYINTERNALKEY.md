@@ -1,13 +1,13 @@
 ---
 name: I_PROJECTBYINTERNALKEY
-description: Project Definition Details By Internal Identifier
+description: "Project Definition Details By Internal Identifier"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTBYINTERNALKEY')/$value
-semantic_en: Project Definition Details By Internal Identifier
+semantic_en: "Project Definition Details By Internal Identifier"
 tags:
   - PPM
   - bo:companycode

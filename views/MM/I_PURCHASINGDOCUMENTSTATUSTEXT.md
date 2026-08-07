@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGDOCUMENTSTATUSTEXT
-description: Purchasingdocumentstatustext
+description: "Purchasingdocumentstatustext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

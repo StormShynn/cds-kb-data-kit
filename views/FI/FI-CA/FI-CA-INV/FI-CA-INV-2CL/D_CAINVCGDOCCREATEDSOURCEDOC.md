@@ -1,6 +1,6 @@
 ---
 name: D_CAINVCGDOCCREATEDSOURCEDOC
-description: D Cainvcgdoccreatedsourcedoc
+description: "D Cainvcgdoccreatedsourcedoc"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,15 +1,15 @@
 ---
 name: I_PROJECTNETWORKBASICDATA
-description: Project Network Basic Data
+description: "Project Network Basic Data"
 app_component: PS-ST
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTNETWORKBASICDATA')/$value
-semantic_en: Project Network Basic Data
+semantic_en: "Project Network Basic Data"
 keywords:
-  - Project Network Basic Data
+  - "Project Network Basic Data"
 tags:
   - PS
   - bo:project

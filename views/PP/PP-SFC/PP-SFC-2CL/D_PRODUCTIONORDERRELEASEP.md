@@ -1,6 +1,6 @@
 ---
 name: D_PRODUCTIONORDERRELEASEP
-description: D Production OrderRELEASEP
+description: "D Production OrderRELEASEP"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

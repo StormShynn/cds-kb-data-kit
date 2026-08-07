@@ -1,6 +1,6 @@
 ---
 name: I_ACCOUNTINGDOCUMENTTYPE
-description: Accounting DocumentUMENTTYPE
+description: "Accounting DocumentUMENTTYPE"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

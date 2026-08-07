@@ -1,6 +1,6 @@
 ---
 name: D_EMRKDFNDSDOCTYPESGETFORCRTER
-description: D Emrkdfndsdoctypesgetforcrter
+description: "D Emrkdfndsdoctypesgetforcrter"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

@@ -1,23 +1,23 @@
 ---
 name: C_MAINTORDPROCSUBPHASETXTDEX
-description: Maintenance Order Process Subphase
+description: "Maintenance Order Process Subphase"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDPROCSUBPHASETXTDEX')/$value
-semantic_en: Maintenance Order Process Subphase
-semantic_vi: Maintenance Order Process Subphase — CDS view tiêu dùng dựa trên I_EAMProcessSubPhaseText.
+semantic_en: "Maintenance Order Process Subphase"
+semantic_vi: "Maintenance Order Process Subphase — CDS view tiêu dùng dựa trên I_EAMProcessSubPhaseText."
 keywords:
-  - maintenance
-  - order
-  - process
-  - subphase
-  - maint
-  - phase
-  - code
-  - language
+  - "maintenance"
+  - "order"
+  - "process"
+  - "subphase"
+  - "maint"
+  - "phase"
+  - "code"
+  - "language"
 tags:
   - PM
   - bo:businesspartner

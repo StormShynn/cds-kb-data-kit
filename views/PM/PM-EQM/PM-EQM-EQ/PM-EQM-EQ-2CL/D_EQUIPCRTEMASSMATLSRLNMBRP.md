@@ -1,6 +1,6 @@
 ---
 name: D_EQUIPCRTEMASSMATLSRLNMBRP
-description: D Equipcrtemassmatlsrlnmbrp
+description: "D Equipcrtemassmatlsrlnmbrp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

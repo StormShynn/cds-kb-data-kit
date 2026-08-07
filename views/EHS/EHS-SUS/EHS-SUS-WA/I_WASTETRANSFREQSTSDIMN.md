@@ -1,13 +1,13 @@
 ---
 name: I_WASTETRANSFREQSTSDIMN
-description: Waste Transfer Request Status dimension
+description: "Waste Transfer Request Status dimension"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTETRANSFREQSTSDIMN')/$value
-semantic_en: Waste Transfer Request Status dimension
+semantic_en: "Waste Transfer Request Status dimension"
 tags:
   - EHS
   - bo:salesorganization

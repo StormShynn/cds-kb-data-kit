@@ -1,6 +1,6 @@
 ---
 name: D_MAINTORDERSTSDONOTEXECUTEP
-description: D Maintorderstsdonotexecutep
+description: "D Maintorderstsdonotexecutep"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

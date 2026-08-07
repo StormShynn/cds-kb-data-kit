@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONZONEVH
-description: Transportationzonevh
+description: "Transportationzonevh"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGPROCESSDOCTYPESTDVH
-description: Billingprocessdoctypestdvh
+description: "Billingprocessdoctypestdvh"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_JOURNALENTRYPOSTCOPAP
-description: D Journal EntryPOSTCOPAP
+description: "D Journal EntryPOSTCOPAP"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_FINSTMNTITMHIERDIR
-description: This CDS view provides access to the master data of the hierarchy of the financial statement item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies on financial statement item do exist and in which consolidation chart of accounts are they defined? When was the hierarchy changed and by which user?
+description: "This CDS view provides access to the master data of the hierarchy of the financial statement item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies on financial statement item do exist and in which consolidation chart of accounts are they defined? When was the hierarchy changed and by which user?"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINSTMNTITMHIERDIR')/$value
-semantic_en: This CDS view provides access to the master data of the hierarchy of the financial statement item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies on financial statement item do exist and in which consolidation chart of accounts are they defined? When was the hierarchy changed and by which user?
+semantic_en: "This CDS view provides access to the master data of the hierarchy of the financial statement item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies on financial statement item do exist and in which consolidation chart of accounts are they defined? When was the hierarchy changed and by which user?"
 tags:
   - FIN
   - account

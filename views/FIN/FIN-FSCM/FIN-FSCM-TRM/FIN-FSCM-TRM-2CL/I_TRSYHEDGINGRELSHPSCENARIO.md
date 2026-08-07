@@ -1,6 +1,6 @@
 ---
 name: I_TRSYHEDGINGRELSHPSCENARIO
-description: Trsyhedgingrelshpscenario
+description: "Trsyhedgingrelshpscenario"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDERCONFIRMATIONTP
-description: Maintorderconfirmationtp
+description: "Maintorderconfirmationtp"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

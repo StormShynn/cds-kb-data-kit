@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTMETHODTEXT
-description: Paymentmethodtext
+description: "Paymentmethodtext"
 app_component: FI-AP-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_COMPANYCODEOID
-description: The Global ID of a Company Code
+description: "The Global ID of a Company Code"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYCODEOID')/$value
-semantic_en: The Global ID of a Company Code
+semantic_en: "The Global ID of a Company Code"
 tags:
   - FI
   - component:FI-GL-IS-2CL

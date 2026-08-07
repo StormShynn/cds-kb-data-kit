@@ -1,6 +1,6 @@
 ---
 name: I_PERSONWORKAGRMTPLNDWRKGTIME
-description: Personworkagrmtplndwrkgtime
+description: "Personworkagrmtplndwrkgtime"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released

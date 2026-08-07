@@ -1,6 +1,6 @@
 ---
 name: I_PURCONTRHEADERNOTESTP
-description: Purcontrheadernotestp
+description: "Purcontrheadernotestp"
 app_component: MM-PUR-OA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDFUPSRVCCONTRTP
-description: Bussolnordfupsrvccontrtp
+description: "Bussolnordfupsrvccontrtp"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

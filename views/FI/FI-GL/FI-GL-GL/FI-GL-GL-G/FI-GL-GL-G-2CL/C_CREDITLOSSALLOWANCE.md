@@ -1,26 +1,26 @@
 ---
 name: C_CREDITLOSSALLOWANCE
-description: Analyze Credit Loss Allowances
+description: "Analyze Credit Loss Allowances"
 app_component: FI-GL-GL-G-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CREDITLOSSALLOWANCE')/$value
-semantic_en: Analyze Credit Loss Allowances
-semantic_vi: Analyze Credit Loss Allowances — CDS view tiêu dùng dựa trên I_GeneralLedgerImpairment.
+semantic_en: "Analyze Credit Loss Allowances"
+semantic_vi: "Analyze Credit Loss Allowances — CDS view tiêu dùng dựa trên I_GeneralLedgerImpairment."
 keywords:
-  - analyze
-  - credit
-  - loss
-  - allowances
-  - ledger
-  - company
-  - code
-  - name
-  - fiscal
-  - year
-  - period
+  - "analyze"
+  - "credit"
+  - "loss"
+  - "allowances"
+  - "ledger"
+  - "company"
+  - "code"
+  - "name"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - FI
   - component:FI-GL-GL-G-2CL

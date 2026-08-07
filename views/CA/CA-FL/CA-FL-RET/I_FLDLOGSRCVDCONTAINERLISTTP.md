@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSRCVDCONTAINERLISTTP
-description: Fldlogsrcvdcontainerlisttp
+description: "Fldlogsrcvdcontainerlisttp"
 app_component: CA-FL-RET
 software_component: SAPSCORE
 release_state: released

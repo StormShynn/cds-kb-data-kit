@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERTRIGGERPOINT
-description: Production OrderTRIGGERPOINT
+description: "Production OrderTRIGGERPOINT"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

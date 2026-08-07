@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSRCVDPACKAGINGITEMTP
-description: Fldlogsrcvdpackagingitemtp
+description: "Fldlogsrcvdpackagingitemtp"
 app_component: CA-FL-RET
 software_component: SAPSCORE
 release_state: released

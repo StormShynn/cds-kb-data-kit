@@ -1,13 +1,13 @@
 ---
 name: I_REINTEGOBJECTACCTOBJASSGMT
-description: Real Estate IO Accounting Object Assignment
+description: "Real Estate IO Accounting Object Assignment"
 app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTACCTOBJASSGMT')/$value
-semantic_en: Real Estate IO Accounting Object Assignment
+semantic_en: "Real Estate IO Accounting Object Assignment"
 tags:
   - RE
   - account

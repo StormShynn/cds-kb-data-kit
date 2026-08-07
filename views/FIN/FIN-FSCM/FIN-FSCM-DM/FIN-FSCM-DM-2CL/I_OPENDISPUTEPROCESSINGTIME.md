@@ -1,13 +1,13 @@
 ---
 name: I_OPENDISPUTEPROCESSINGTIME
-description: Open Dispute Processing Time - Cube
+description: "Open Dispute Processing Time - Cube"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPENDISPUTEPROCESSINGTIME')/$value
-semantic_en: Open Dispute Processing Time - Cube
+semantic_en: "Open Dispute Processing Time - Cube"
 tags:
   - FIN
   - component:FIN-FSCM-DM-2CL

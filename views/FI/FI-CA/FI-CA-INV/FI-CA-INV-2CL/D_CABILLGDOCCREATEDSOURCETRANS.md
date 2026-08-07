@@ -1,6 +1,6 @@
 ---
 name: D_CABILLGDOCCREATEDSOURCETRANS
-description: D Cabillgdoccreatedsourcetrans
+description: "D Cabillgdoccreatedsourcetrans"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

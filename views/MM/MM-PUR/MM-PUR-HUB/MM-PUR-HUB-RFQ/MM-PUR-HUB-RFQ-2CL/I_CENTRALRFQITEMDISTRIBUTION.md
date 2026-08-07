@@ -1,6 +1,6 @@
 ---
 name: I_CENTRALRFQITEMDISTRIBUTION
-description: Centralrfqitemdistribution
+description: "Centralrfqitemdistribution"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

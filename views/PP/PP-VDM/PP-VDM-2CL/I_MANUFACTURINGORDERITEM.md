@@ -1,6 +1,6 @@
 ---
 name: I_MANUFACTURINGORDERITEM
-description: Manufacturingorderitem
+description: "Manufacturingorderitem"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

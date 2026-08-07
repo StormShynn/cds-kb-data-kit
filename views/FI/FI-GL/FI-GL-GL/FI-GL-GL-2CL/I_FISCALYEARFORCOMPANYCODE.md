@@ -1,6 +1,6 @@
 ---
 name: I_FISCALYEARFORCOMPANYCODE
-description: FISCALYEARFORCompany Code
+description: "FISCALYEARFORCompany Code"
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released

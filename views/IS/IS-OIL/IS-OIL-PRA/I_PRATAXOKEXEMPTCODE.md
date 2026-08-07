@@ -1,13 +1,13 @@
 ---
 name: I_PRATAXOKEXEMPTCODE
-description: Tax 2 0 OKGP Exempt Codes
+description: "Tax 2 0 OKGP Exempt Codes"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXOKEXEMPTCODE')/$value
-semantic_en: Tax 2 0 OKGP Exempt Codes
+semantic_en: "Tax 2 0 OKGP Exempt Codes"
 tags:
   - IS
   - component:IS-OIL-PRA

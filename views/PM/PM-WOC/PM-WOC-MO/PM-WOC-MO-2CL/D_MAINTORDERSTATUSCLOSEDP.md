@@ -1,6 +1,6 @@
 ---
 name: D_MAINTORDERSTATUSCLOSEDP
-description: D Maintorderstatusclosedp
+description: "D Maintorderstatusclosedp"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

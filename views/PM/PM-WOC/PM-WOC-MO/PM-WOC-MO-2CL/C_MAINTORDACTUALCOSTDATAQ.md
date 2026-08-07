@@ -1,30 +1,30 @@
 ---
 name: C_MAINTORDACTUALCOSTDATAQ
-description: Maintenance Order Actual Cost Data Query
+description: "Maintenance Order Actual Cost Data Query"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDACTUALCOSTDATAQ')/$value
-semantic_en: Maintenance Order Actual Cost Data Query
-semantic_vi: Maintenance Order Actual Cost Data Query — CDS view tiêu dùng dựa trên I_MaintOrderActualCostDataCube.
+semantic_en: "Maintenance Order Actual Cost Data Query"
+semantic_vi: "Maintenance Order Actual Cost Data Query — CDS view tiêu dùng dựa trên I_MaintOrderActualCostDataCube."
 keywords:
-  - maintenance
-  - order
-  - actual
-  - cost
-  - data
-  - query
-  - source
-  - ledger
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
-  - line
+  - "maintenance"
+  - "order"
+  - "actual"
+  - "cost"
+  - "data"
+  - "query"
+  - "source"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
+  - "line"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

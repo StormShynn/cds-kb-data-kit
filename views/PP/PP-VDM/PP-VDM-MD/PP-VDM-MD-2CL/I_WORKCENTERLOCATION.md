@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERLOCATION
-description: Work CenterLOCATION
+description: "Work CenterLOCATION"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

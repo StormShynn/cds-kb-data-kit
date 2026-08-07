@@ -1,6 +1,6 @@
 ---
 name: I_PURCONTRITEMNOTESTP
-description: Purcontritemnotestp
+description: "Purcontritemnotestp"
 app_component: MM-PUR-OA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: C_IT_ELECTRONICDOCREJECTCODEVH
-description: IT Electronicdocrejectcodevh
+description: "IT Electronicdocrejectcodevh"
 app_component: CA-GTF-CSC-EDO-IT
 software_component: SAPSCORE
 release_state: released

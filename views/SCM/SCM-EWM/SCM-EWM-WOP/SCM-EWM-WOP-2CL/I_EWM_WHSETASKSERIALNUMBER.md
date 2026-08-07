@@ -1,6 +1,6 @@
 ---
 name: I_EWM_WHSETASKSERIALNUMBER
-description: Ewm WHSETASKSerial Number
+description: "Ewm WHSETASKSerial Number"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

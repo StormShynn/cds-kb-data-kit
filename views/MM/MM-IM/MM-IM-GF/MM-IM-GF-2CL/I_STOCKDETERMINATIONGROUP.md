@@ -1,6 +1,6 @@
 ---
 name: I_STOCKDETERMINATIONGROUP
-description: Stockdeterminationgroup
+description: "Stockdeterminationgroup"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

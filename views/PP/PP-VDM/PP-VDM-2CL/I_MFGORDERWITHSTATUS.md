@@ -1,6 +1,6 @@
 ---
 name: I_MFGORDERWITHSTATUS
-description: Mfgorderwithstatus
+description: "Mfgorderwithstatus"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

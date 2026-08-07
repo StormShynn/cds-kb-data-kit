@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECCMTMTACTLITEMQRY2
-description: Commitment/Actual Items Query
+description: "Commitment/Actual Items Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECCMTMTACTLITEMQRY2')/$value
-semantic_en: Commitment/Actual Items Query
+semantic_en: "Commitment/Actual Items Query"
 tags:
   - PSM
   - component:PSM

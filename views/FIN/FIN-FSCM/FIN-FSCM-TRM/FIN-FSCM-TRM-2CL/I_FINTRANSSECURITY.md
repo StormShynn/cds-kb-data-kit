@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSSECURITY
-description: This CDS view provides specific administrative data (available on the Structure tab) for a securities transaction. This CDS view provides the prerequisites for answering the following business questions: What is the traded nominal amount of a securities transaction? Which security class has been bought or sold by the securities transaction? What was the payment amount?
+description: "This CDS view provides specific administrative data (available on the Structure tab) for a securities transaction. This CDS view provides the prerequisites for answering the following business questions: What is the traded nominal amount of a securities transaction? Which security class has been bought or sold by the securities transaction? What was the payment amount?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSSECURITY')/$value
-semantic_en: This CDS view provides specific administrative data (available on the Structure tab) for a securities transaction. This CDS view provides the prerequisites for answering the following business questions: What is the traded nominal amount of a securities transaction? Which security class has been bought or sold by the securities transaction? What was the payment amount?
+semantic_en: "This CDS view provides specific administrative data (available on the Structure tab) for a securities transaction. This CDS view provides the prerequisites for answering the following business questions: What is the traded nominal amount of a securities transaction? Which security class has been bought or sold by the securities transaction? What was the payment amount?"
 tags:
   - FIN
   - bo:companycode

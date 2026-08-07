@@ -1,6 +1,6 @@
 ---
 name: I_ACCOUNTASSIGNMENTTYPET
-description: Accountassignmenttypet
+description: "Accountassignmenttypet"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

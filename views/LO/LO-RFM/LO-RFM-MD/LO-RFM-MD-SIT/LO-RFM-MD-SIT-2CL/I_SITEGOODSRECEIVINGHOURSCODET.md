@@ -1,13 +1,13 @@
 ---
 name: I_SITEGOODSRECEIVINGHOURSCODET
-description: Site Goods Receiving Hours Code - Text
+description: "Site Goods Receiving Hours Code - Text"
 app_component: LO-RFM-MD-SIT-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SITEGOODSRECEIVINGHOURSCODET')/$value
-semantic_en: Site Goods Receiving Hours Code - Text
+semantic_en: "Site Goods Receiving Hours Code - Text"
 tags:
   - LO
   - bo:plant

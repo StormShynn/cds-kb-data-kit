@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALSTATISTICSGROUPTEXT
-description: Materialstatisticsgrouptext
+description: "Materialstatisticsgrouptext"
 app_component: SD-BF-MD-2CL
 software_component: SAPSCORE
 release_state: released

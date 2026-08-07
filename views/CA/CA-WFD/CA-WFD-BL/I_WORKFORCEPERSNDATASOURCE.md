@@ -1,13 +1,13 @@
 ---
 name: I_WORKFORCEPERSNDATASOURCE
-description: Workforce Person Data Source
+description: "Workforce Person Data Source"
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKFORCEPERSNDATASOURCE')/$value
-semantic_en: Workforce Person Data Source
+semantic_en: "Workforce Person Data Source"
 tags:
   - CA
   - bo:salesorder

@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDPRICEELEMENTTP
-description: Bussolnordpriceelementtp
+description: "Bussolnordpriceelementtp"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

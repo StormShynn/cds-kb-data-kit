@@ -1,15 +1,15 @@
 ---
 name: I_SRVCCHKLSTTMPLELEMENT
-description: Checklist Template Elements
+description: "Checklist Template Elements"
 app_component: CRM-S4-INT-FSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCCHKLSTTMPLELEMENT')/$value
-semantic_en: Checklist Template Elements
+semantic_en: "Checklist Template Elements"
 keywords:
-  - Checklist Template All Elements
+  - "Checklist Template All Elements"
 tags:
   - CRM
   - component:CRM-S4-INT-FSM-2CL

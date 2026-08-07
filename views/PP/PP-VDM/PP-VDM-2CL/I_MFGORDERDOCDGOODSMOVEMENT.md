@@ -1,6 +1,6 @@
 ---
 name: I_MFGORDERDOCDGOODSMOVEMENT
-description: MFGORDERDOCDGoods Movement
+description: "MFGORDERDOCDGoods Movement"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

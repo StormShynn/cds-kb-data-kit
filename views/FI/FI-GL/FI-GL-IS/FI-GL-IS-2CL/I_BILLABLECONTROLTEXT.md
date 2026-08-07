@@ -1,6 +1,6 @@
 ---
 name: I_BILLABLECONTROLTEXT
-description: Billablecontroltext
+description: "Billablecontroltext"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

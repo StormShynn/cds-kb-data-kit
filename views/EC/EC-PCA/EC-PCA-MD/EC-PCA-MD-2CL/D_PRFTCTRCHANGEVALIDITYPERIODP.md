@@ -1,6 +1,6 @@
 ---
 name: D_PRFTCTRCHANGEVALIDITYPERIODP
-description: D Prftctrchangevalidityperiodp
+description: "D Prftctrchangevalidityperiodp"
 app_component: EC-PCA-MD-2CL
 software_component: SAPSCORE
 release_state: released

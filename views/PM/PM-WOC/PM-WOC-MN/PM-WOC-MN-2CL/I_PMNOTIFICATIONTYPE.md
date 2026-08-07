@@ -1,6 +1,6 @@
 ---
 name: I_PMNOTIFICATIONTYPE
-description: Pmnotificationtype
+description: "Pmnotificationtype"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released

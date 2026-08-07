@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEORDERTEMPLATETP
-description: Service OrderTEMPLATETP
+description: "Service OrderTEMPLATETP"
 app_component: CRM-S4-SRV-SVT-2CL
 software_component: SAPSCORE
 release_state: released

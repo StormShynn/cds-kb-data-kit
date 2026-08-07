@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMFIELDCODELISTTEXT
-description: Customfieldcodelisttext
+description: "Customfieldcodelisttext"
 app_component: BC-SRV-APS-EXT-FLD
 software_component: SAP_BASIS
 release_state: released

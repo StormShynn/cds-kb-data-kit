@@ -1,6 +1,6 @@
 ---
 name: I_CN_PAYTREQUISITIONPRIORITYVH
-description: CN Paytrequisitionpriorityvh
+description: "CN Paytrequisitionpriorityvh"
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

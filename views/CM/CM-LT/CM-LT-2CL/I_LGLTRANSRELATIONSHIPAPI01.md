@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSRELATIONSHIPAPI01
-description: Lgltransrelationshipapi 01
+description: "Lgltransrelationshipapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

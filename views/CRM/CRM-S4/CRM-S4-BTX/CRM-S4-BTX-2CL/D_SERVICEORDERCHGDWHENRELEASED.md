@@ -1,6 +1,6 @@
 ---
 name: D_SERVICEORDERCHGDWHENRELEASED
-description: D Service OrderCHGDWHENRELEASED
+description: "D Service OrderCHGDWHENRELEASED"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

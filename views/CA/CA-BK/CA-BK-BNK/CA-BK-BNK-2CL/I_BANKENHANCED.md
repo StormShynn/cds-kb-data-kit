@@ -1,6 +1,6 @@
 ---
 name: I_BANKENHANCED
-description: Bankenhanced
+description: "Bankenhanced"
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

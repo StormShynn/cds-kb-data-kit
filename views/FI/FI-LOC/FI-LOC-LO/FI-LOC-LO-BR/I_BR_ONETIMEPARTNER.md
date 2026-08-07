@@ -1,6 +1,6 @@
 ---
 name: I_BR_ONETIMEPARTNER
-description: BR Onetimepartner
+description: "BR Onetimepartner"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

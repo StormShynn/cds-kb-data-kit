@@ -1,6 +1,6 @@
 ---
 name: I_QMSYSTASSIGNMENTFORSUPPLIER
-description: Qmsystassignmentforsupplier
+description: "Qmsystassignmentforsupplier"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

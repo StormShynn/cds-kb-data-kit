@@ -1,6 +1,6 @@
 ---
 name: I_FORMOFADDRESS
-description: Formofaddress
+description: "Formofaddress"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

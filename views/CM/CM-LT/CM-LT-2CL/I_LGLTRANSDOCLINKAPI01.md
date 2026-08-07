@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSDOCLINKAPI01
-description: Lgltransdoclinkapi 01
+description: "Lgltransdoclinkapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

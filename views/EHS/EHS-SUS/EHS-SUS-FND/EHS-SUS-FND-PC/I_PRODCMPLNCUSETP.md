@@ -1,6 +1,6 @@
 ---
 name: I_PRODCMPLNCUSETP
-description: Prodcmplncusetp
+description: "Prodcmplncusetp"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

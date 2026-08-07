@@ -1,6 +1,6 @@
 ---
 name: D_PURGSOURCELISTCHANGED_2
-description: D Purgsourcelistchanged 2
+description: "D Purgsourcelistchanged 2"
 app_component: MM-PUR-SQ-SLI-2CL
 software_component: SAPSCORE
 release_state: released

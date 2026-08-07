@@ -1,13 +1,13 @@
 ---
 name: I_COLLECTIONSRESUBMISSION
-description: Resubmissions in Collections Management
+description: "Resubmissions in Collections Management"
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLECTIONSRESUBMISSION')/$value
-semantic_en: Resubmissions in Collections Management
+semantic_en: "Resubmissions in Collections Management"
 tags:
   - FIN
   - component:FIN-FIO-CCD-COL-2CL

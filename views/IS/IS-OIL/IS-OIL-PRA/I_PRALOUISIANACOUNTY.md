@@ -1,13 +1,13 @@
 ---
 name: I_PRALOUISIANACOUNTY
-description: Louisiana County
+description: "Louisiana County"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRALOUISIANACOUNTY')/$value
-semantic_en: Louisiana County
+semantic_en: "Louisiana County"
 tags:
   - IS
   - component:IS-OIL-PRA

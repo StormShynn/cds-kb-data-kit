@@ -1,6 +1,6 @@
 ---
 name: I_MY_ELECTRONICDOCINVOICE
-description: MY Electronicdocinvoice
+description: "MY Electronicdocinvoice"
 app_component: CA-GTF-CSC-EDO-MY
 software_component: SAPSCORE
 release_state: released

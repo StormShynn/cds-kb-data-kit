@@ -1,13 +1,13 @@
 ---
 name: I_SECURITIESACCOUNTASSETTYPE
-description: Securities Account Asset Type
+description: "Securities Account Asset Type"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SECURITIESACCOUNTASSETTYPE')/$value
-semantic_en: Securities Account Asset Type
+semantic_en: "Securities Account Asset Type"
 tags:
   - FS
   - account

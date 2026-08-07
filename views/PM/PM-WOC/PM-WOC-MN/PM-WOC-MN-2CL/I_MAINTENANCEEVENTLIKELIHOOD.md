@@ -1,13 +1,13 @@
 ---
 name: I_MAINTENANCEEVENTLIKELIHOOD
-description: Likelihood of Maintenance Event
+description: "Likelihood of Maintenance Event"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTENANCEEVENTLIKELIHOOD')/$value
-semantic_en: Likelihood of Maintenance Event
+semantic_en: "Likelihood of Maintenance Event"
 tags:
   - PM
   - component:PM-WOC-MN-2CL

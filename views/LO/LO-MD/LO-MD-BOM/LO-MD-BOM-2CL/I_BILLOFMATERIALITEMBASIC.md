@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFMATERIALITEMBASIC
-description: Bill of MaterialITEMBASIC
+description: "Bill of MaterialITEMBASIC"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

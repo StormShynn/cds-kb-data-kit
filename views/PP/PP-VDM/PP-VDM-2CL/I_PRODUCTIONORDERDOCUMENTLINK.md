@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERDOCUMENTLINK
-description: Production OrderDOCUMENTLINK
+description: "Production OrderDOCUMENTLINK"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

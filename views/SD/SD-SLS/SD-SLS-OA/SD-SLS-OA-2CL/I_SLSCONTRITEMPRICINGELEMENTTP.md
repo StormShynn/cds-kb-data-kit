@@ -1,6 +1,6 @@
 ---
 name: I_SLSCONTRITEMPRICINGELEMENTTP
-description: Slscontritempricingelementtp
+description: "Slscontritempricingelementtp"
 app_component: SD-SLS-OA-2CL
 software_component: SAPSCORE
 release_state: released

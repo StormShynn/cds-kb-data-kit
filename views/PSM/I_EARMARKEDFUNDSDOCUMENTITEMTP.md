@@ -1,6 +1,6 @@
 ---
 name: I_EARMARKEDFUNDSDOCUMENTITEMTP
-description: Earmarkedfundsdocumentitemtp
+description: "Earmarkedfundsdocumentitemtp"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

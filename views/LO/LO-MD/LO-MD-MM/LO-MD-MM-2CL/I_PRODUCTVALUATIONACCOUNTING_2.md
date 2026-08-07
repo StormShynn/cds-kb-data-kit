@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTVALUATIONACCOUNTING_2
-description: Productvaluationaccounting 2
+description: "Productvaluationaccounting 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERPRINTFORMATT
-description: Business PartnerPRINTFORMATT
+description: "Business PartnerPRINTFORMATT"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

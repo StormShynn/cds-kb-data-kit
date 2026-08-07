@@ -1,6 +1,6 @@
 ---
 name: I_MSMTDOCUMENTLONGTEXTTP
-description: Msmtdocumentlongtexttp
+description: "Msmtdocumentlongtexttp"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

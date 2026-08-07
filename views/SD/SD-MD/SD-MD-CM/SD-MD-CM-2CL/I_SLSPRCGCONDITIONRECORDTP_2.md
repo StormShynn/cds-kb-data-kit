@@ -1,6 +1,6 @@
 ---
 name: I_SLSPRCGCONDITIONRECORDTP_2
-description: SLSPRCGCondition RecordTP 2
+description: "SLSPRCGCondition RecordTP 2"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

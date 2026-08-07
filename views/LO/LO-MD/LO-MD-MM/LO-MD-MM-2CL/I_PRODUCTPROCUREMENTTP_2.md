@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTPROCUREMENTTP_2
-description: Productprocurementtp 2
+description: "Productprocurementtp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

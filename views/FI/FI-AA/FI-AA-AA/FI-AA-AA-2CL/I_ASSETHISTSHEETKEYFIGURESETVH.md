@@ -1,22 +1,22 @@
 ---
 name: I_ASSETHISTSHEETKEYFIGURESETVH
-description: Asset History Sheet Key Figure Group
+description: "Asset History Sheet Key Figure Group"
 app_component: FI-AA-AA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETHISTSHEETKEYFIGURESETVH')/$value
-semantic_en: Asset History Sheet Key Figure Group
-semantic_vi: Asset History Sheet Key Figure Group — CDS view giao diện dựa trên I_AssetKeyFigureSet.
+semantic_en: "Asset History Sheet Key Figure Group"
+semantic_vi: "Asset History Sheet Key Figure Group — CDS view giao diện dựa trên I_AssetKeyFigureSet."
 keywords:
-  - asset
-  - history
-  - sheet
-  - key
-  - figure
-  - group
-  - accounting
+  - "asset"
+  - "history"
+  - "sheet"
+  - "key"
+  - "figure"
+  - "group"
+  - "accounting"
 tags:
   - FI
   - bo:companycode

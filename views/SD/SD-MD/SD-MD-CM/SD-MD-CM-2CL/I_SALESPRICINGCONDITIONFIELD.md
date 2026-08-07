@@ -1,6 +1,6 @@
 ---
 name: I_SALESPRICINGCONDITIONFIELD
-description: SALESPricing ConditionFIELD
+description: "SALESPricing ConditionFIELD"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

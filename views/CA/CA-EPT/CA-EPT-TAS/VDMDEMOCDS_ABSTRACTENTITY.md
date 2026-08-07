@@ -1,6 +1,6 @@
 ---
 name: VDMDEMOCDS_ABSTRACTENTITY
-description: Vdmdemocds Abstractentity
+description: "Vdmdemocds Abstractentity"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

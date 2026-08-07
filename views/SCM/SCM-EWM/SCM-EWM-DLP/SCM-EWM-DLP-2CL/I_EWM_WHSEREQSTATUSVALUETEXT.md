@@ -1,13 +1,13 @@
 ---
 name: I_EWM_WHSEREQSTATUSVALUETEXT
-description: Warehouse Request Status Value - Text
+description: "Warehouse Request Status Value - Text"
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEREQSTATUSVALUETEXT')/$value
-semantic_en: Warehouse Request Status Value - Text
+semantic_en: "Warehouse Request Status Value - Text"
 tags:
   - SCM
   - component:SCM-EWM-DLP-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_SHIFTGROUPING
-description: Shiftgrouping
+description: "Shiftgrouping"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PLANTSTDVH
-description: Plantstdvh
+description: "Plantstdvh"
 app_component: LO-MD-PL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_SUPLRINVCCREATEP
-description: D Suplrinvccreatep
+description: "D Suplrinvccreatep"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

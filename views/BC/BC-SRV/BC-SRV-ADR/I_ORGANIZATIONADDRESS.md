@@ -1,6 +1,6 @@
 ---
 name: I_ORGANIZATIONADDRESS
-description: Organizationaddress
+description: "Organizationaddress"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

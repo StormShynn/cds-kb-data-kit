@@ -1,6 +1,6 @@
 ---
 name: D_CNSLDTNUNITTSKRUNEXECTTASKP
-description: D Cnsldtnunittskrunexecttaskp
+description: "D Cnsldtnunittskrunexecttaskp"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

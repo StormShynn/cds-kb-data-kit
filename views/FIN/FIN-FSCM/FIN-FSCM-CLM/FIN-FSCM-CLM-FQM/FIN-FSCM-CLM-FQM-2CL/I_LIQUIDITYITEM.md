@@ -1,13 +1,13 @@
 ---
 name: I_LIQUIDITYITEM
-description: This CDS view provides the prerequisites for answering the following business question: How many liquidity items are defined?
+description: "This CDS view provides the prerequisites for answering the following business question: How many liquidity items are defined?"
 app_component: FIN-FSCM-CLM-FQM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LIQUIDITYITEM')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: How many liquidity items are defined?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: How many liquidity items are defined?"
 tags:
   - FIN
   - bo:companycode

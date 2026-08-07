@@ -1,6 +1,6 @@
 ---
 name: I_SDDOCUMENTREJECTIONSTATUS
-description: Sddocumentrejectionstatus
+description: "Sddocumentrejectionstatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

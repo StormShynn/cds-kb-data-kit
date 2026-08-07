@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSUSERBASIC
-description: Businessuserbasic
+description: "Businessuserbasic"
 app_component: BC-SRV-BUM
 software_component: SAP_BASIS
 release_state: released

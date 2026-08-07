@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONMODECATEGORY
-description: Transportationmodecategory
+description: "Transportationmodecategory"
 app_component: TM-MD-TN-2CL
 software_component: SAPSCORE
 release_state: released

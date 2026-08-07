@@ -1,6 +1,6 @@
 ---
 name: I_CASRVCDISCONNECTIONREQUEST
-description: Casrvcdisconnectionrequest
+description: "Casrvcdisconnectionrequest"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

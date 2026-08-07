@@ -1,6 +1,6 @@
 ---
 name: I_MATLINVTRYLDGRQTYSTRUCTURE
-description: Matlinvtryldgrqtystructure
+description: "Matlinvtryldgrqtystructure"
 app_component: CO-PC-ACT-2CL
 software_component: SAPSCORE
 release_state: released

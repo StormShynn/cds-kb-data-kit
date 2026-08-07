@@ -1,13 +1,13 @@
 ---
 name: I_EWM_WAREHOUSEWAVEC_2
-description: Warehouse Wave - Cube
+description: "Warehouse Wave - Cube"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WAREHOUSEWAVEC_2')/$value
-semantic_en: Warehouse Wave - Cube
+semantic_en: "Warehouse Wave - Cube"
 tags:
   - SCM
   - component:SCM-EWM-WOP-2CL

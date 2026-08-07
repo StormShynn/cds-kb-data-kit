@@ -1,13 +1,13 @@
 ---
 name: C_PRATAXRPTGHISTWYCONSVNQRY
-description: PRA Tax Rptg Hist Wyoming Consvn Qry
+description: "PRA Tax Rptg Hist Wyoming Consvn Qry"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTWYCONSVNQRY')/$value
-semantic_en: PRA Tax Rptg Hist Wyoming Consvn Qry
+semantic_en: "PRA Tax Rptg Hist Wyoming Consvn Qry"
 tags:
   - IS
   - component:IS-OIL-PRA

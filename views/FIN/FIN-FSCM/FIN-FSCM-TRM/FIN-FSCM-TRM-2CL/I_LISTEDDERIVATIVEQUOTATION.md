@@ -1,13 +1,13 @@
 ---
 name: I_LISTEDDERIVATIVEQUOTATION
-description: Listed Derivative Quotation
+description: "Listed Derivative Quotation"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LISTEDDERIVATIVEQUOTATION')/$value
-semantic_en: Listed Derivative Quotation
+semantic_en: "Listed Derivative Quotation"
 tags:
   - FIN
   - component:FIN-FSCM-TRM-2CL

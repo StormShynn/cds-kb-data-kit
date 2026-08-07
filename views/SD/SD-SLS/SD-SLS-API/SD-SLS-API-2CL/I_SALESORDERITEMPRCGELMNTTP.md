@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERITEMPRCGELMNTTP
-description: Sales OrderITEMPRCGELMNTTP
+description: "Sales OrderITEMPRCGELMNTTP"
 app_component: SD-SLS-API-2CL
 software_component: SAPSCORE
 release_state: released

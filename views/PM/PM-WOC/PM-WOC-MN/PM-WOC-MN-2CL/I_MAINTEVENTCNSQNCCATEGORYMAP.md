@@ -1,13 +1,13 @@
 ---
 name: I_MAINTEVENTCNSQNCCATEGORYMAP
-description: Map Maint Evt Cnsqnc Category to Cnsqnc
+description: "Map Maint Evt Cnsqnc Category to Cnsqnc"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTEVENTCNSQNCCATEGORYMAP')/$value
-semantic_en: Map Maint Evt Cnsqnc Category to Cnsqnc
+semantic_en: "Map Maint Evt Cnsqnc Category to Cnsqnc"
 tags:
   - PM
   - component:PM-WOC-MN-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_PURGINFORECDCNDNSCALEAPI01
-description: Purginforecdcndnscaleapi 01
+description: "Purginforecdcndnscaleapi 01"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

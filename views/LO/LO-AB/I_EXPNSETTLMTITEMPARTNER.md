@@ -1,13 +1,13 @@
 ---
 name: I_EXPNSETTLMTITEMPARTNER
-description: Expense Settlement Item Partner
+description: "Expense Settlement Item Partner"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTITEMPARTNER')/$value
-semantic_en: Expense Settlement Item Partner
+semantic_en: "Expense Settlement Item Partner"
 tags:
   - LO
   - component:LO-AB

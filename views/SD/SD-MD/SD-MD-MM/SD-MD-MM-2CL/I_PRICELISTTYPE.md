@@ -1,6 +1,6 @@
 ---
 name: I_PRICELISTTYPE
-description: Pricelisttype
+description: "Pricelisttype"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

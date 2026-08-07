@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTTYPETEXT
-description: Projecttypetext
+description: "Projecttypetext"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

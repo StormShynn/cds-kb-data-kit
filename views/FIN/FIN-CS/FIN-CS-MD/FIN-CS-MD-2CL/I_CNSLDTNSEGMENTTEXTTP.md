@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSEGMENTTEXTTP
-description: Cnsldtnsegmenttexttp
+description: "Cnsldtnsegmenttexttp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

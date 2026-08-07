@@ -1,6 +1,6 @@
 ---
 name: I_CO2EQSUPLRFPRNTAVGBASEUOM_2
-description: CO 2EQSUPLRFPRNTAVGBASEUOM 2
+description: "CO 2EQSUPLRFPRNTAVGBASEUOM 2"
 app_component: SUS-PFM-INT
 software_component: SAPSCORE
 release_state: released

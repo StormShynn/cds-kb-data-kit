@@ -1,6 +1,6 @@
 ---
 name: I_UNITOFMEASUREISOCODETEXT
-description: Unit of MeasureISOCODETEXT
+description: "Unit of MeasureISOCODETEXT"
 app_component: BC-SRV-ASF-UOM
 software_component: SAP_BASIS
 release_state: released

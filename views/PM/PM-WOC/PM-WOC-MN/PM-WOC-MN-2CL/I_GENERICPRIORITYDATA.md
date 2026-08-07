@@ -1,13 +1,13 @@
 ---
 name: I_GENERICPRIORITYDATA
-description: This CDS view provides the prerequisites for answering the following business questions: Which priority type contains the priority? Which shift factor needs to be applied in the calculation of the start date? Which unit needs to be applied for the shift factor in the calculation of the start date? Which shift factor needs to be applied in the calculation of the end date? Which unit needs to be applied for the shift factor in the calculation of the end date? What is the color code for priority?
+description: "This CDS view provides the prerequisites for answering the following business questions: Which priority type contains the priority? Which shift factor needs to be applied in the calculation of the start date? Which unit needs to be applied for the shift factor in the calculation of the start date? Which shift factor needs to be applied in the calculation of the end date? Which unit needs to be applied for the shift factor in the calculation of the end date? What is the color code for priority?"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GENERICPRIORITYDATA')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Which priority type contains the priority? Which shift factor needs to be applied in the calculation of the start date? Which unit needs to be applied for the shift factor in the calculation of the start date? Which shift factor needs to be applied in the calculation of the end date? Which unit needs to be applied for the shift factor in the calculation of the end date? What is the color code for priority?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which priority type contains the priority? Which shift factor needs to be applied in the calculation of the start date? Which unit needs to be applied for the shift factor in the calculation of the start date? Which shift factor needs to be applied in the calculation of the end date? Which unit needs to be applied for the shift factor in the calculation of the end date? What is the color code for priority?"
 tags:
   - PM
   - bo:plant

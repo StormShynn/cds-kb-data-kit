@@ -1,26 +1,26 @@
 ---
 name: C_PRODUCTMARGINANALYSISQUERY
-description: This CDS view is designed to provide a comprehensive analysis of product margins by leveraging various financial and sales data. It aggregates and calculates different financial metrics such as revenue, cost of goods sold (COGS), and contribution margins, allowing businesses to assess their profitability at different levels. This CDS view provides the data to answer the following business questions: What is the billed revenue and recognized revenue for specific products or product groups? How do sales deductions and revenue adjustments impact the overall revenue? What are the variable and fixed costs associated with the cost of goods sold? How do different variances (e.g., price variance, quantity variance) affect the product margin? What are the contribution margins at different levels (I, II, III) for products or product groups? How do overhead costs (e.g., administrative, sales, marketing, R&amp;D) impact the profitability? What is the margin per unit and margin percentage for specific products or product groups? How do different fiscal periods and company codes affect the financial performance? What is the impact of different sales documents and customer groups on the product margin? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide a comprehensive analysis of product margins by leveraging various financial and sales data. It aggregates and calculates different financial metrics such as revenue, cost of goods sold (COGS), and contribution margins, allowing businesses to assess their profitability at different levels. This CDS view provides the data to answer the following business questions: What is the billed revenue and recognized revenue for specific products or product groups? How do sales deductions and revenue adjustments impact the overall revenue? What are the variable and fixed costs associated with the cost of goods sold? How do different variances (e.g., price variance, quantity variance) affect the product margin? What are the contribution margins at different levels (I, II, III) for products or product groups? How do overhead costs (e.g., administrative, sales, marketing, R&amp;D) impact the profitability? What is the margin per unit and margin percentage for specific products or product groups? How do different fiscal periods and company codes affect the financial performance? What is the impact of different sales documents and customer groups on the product margin? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODUCTMARGINANALYSISQUERY')/$value
-semantic_en: This CDS view is designed to provide a comprehensive analysis of product margins by leveraging various financial and sales data. It aggregates and calculates different financial metrics such as revenue, cost of goods sold (COGS), and contribution margins, allowing businesses to assess their profitability at different levels. This CDS view provides the data to answer the following business questions: What is the billed revenue and recognized revenue for specific products or product groups? How do sales deductions and revenue adjustments impact the overall revenue? What are the variable and fixed costs associated with the cost of goods sold? How do different variances (e.g., price variance, quantity variance) affect the product margin? What are the contribution margins at different levels (I, II, III) for products or product groups? How do overhead costs (e.g., administrative, sales, marketing, R&amp;D) impact the profitability? What is the margin per unit and margin percentage for specific products or product groups? How do different fiscal periods and company codes affect the financial performance? What is the impact of different sales documents and customer groups on the product margin? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Product Margin - Query — CDS view tiêu dùng dựa trên Product Margin - Query.
+semantic_en: "This CDS view is designed to provide a comprehensive analysis of product margins by leveraging various financial and sales data. It aggregates and calculates different financial metrics such as revenue, cost of goods sold (COGS), and contribution margins, allowing businesses to assess their profitability at different levels. This CDS view provides the data to answer the following business questions: What is the billed revenue and recognized revenue for specific products or product groups? How do sales deductions and revenue adjustments impact the overall revenue? What are the variable and fixed costs associated with the cost of goods sold? How do different variances (e.g., price variance, quantity variance) affect the product margin? What are the contribution margins at different levels (I, II, III) for products or product groups? How do overhead costs (e.g., administrative, sales, marketing, R&amp;D) impact the profitability? What is the margin per unit and margin percentage for specific products or product groups? How do different fiscal periods and company codes affect the financial performance? What is the impact of different sales documents and customer groups on the product margin? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Product Margin - Query — CDS view tiêu dùng dựa trên Product Margin - Query."
 keywords:
-  - Product Margin - Query
-  - product
-  - margin
-  - query
-  - currency
-  - field
-  - company
-  - code
-  - fiscal
-  - year
-  - ledger
+  - "Product Margin - Query"
+  - "product"
+  - "margin"
+  - "query"
+  - "currency"
+  - "field"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "ledger"
 tags:
   - CO
   - bo:businesspartner

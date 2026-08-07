@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSSHIPMENTVOYAGETP
-description: Fldlogsshipmentvoyagetp
+description: "Fldlogsshipmentvoyagetp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

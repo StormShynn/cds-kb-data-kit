@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGHGSCOPE
-description: Cnsldtnghgscope
+description: "Cnsldtnghgscope"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

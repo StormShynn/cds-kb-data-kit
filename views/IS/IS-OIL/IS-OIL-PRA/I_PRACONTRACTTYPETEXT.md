@@ -1,13 +1,13 @@
 ---
 name: I_PRACONTRACTTYPETEXT
-description: Production Revenue Accounting Contract Type - Text
+description: "Production Revenue Accounting Contract Type - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRACONTRACTTYPETEXT')/$value
-semantic_en: Production Revenue Accounting Contract Type - Text
+semantic_en: "Production Revenue Accounting Contract Type - Text"
 tags:
   - IS
   - account

@@ -1,21 +1,21 @@
 ---
 name: ZI_ARTISTS.DDLS
-description: Artists
+description: "Artists"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/attilaberencsi/rap_managed_transaction/blob/e3e08300f95eff1b3390405ea25e083db965e27e/src/zi_artists.ddls.asddls
-semantic_en: Artists — CDS view based on zartists.
-semantic_vi: Artists — CDS view dựa trên zartists.
+semantic_en: "Artists — CDS view based on zartists."
+semantic_vi: "Artists — CDS view dựa trên zartists."
 keywords:
-  - artists
-  - entity
-  - name
-  - created
-  - last
-  - changed
+  - "artists"
+  - "entity"
+  - "name"
+  - "created"
+  - "last"
+  - "changed"
 tags:
   - IS
   - component:IS

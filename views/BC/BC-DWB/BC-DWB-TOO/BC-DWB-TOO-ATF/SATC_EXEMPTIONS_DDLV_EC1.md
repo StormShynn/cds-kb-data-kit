@@ -1,6 +1,6 @@
 ---
 name: SATC_EXEMPTIONS_DDLV_EC1
-description: Satc Exemptions Ddlv EC 1
+description: "Satc Exemptions Ddlv EC 1"
 app_component: BC-DWB-TOO-ATF
 software_component: SAP_BASIS
 release_state: released

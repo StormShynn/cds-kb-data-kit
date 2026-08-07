@@ -1,6 +1,6 @@
 ---
 name: I_ORDERTYPE
-description: Ordertype
+description: "Ordertype"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

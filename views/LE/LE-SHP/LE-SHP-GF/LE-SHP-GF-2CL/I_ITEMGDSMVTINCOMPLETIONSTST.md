@@ -1,6 +1,6 @@
 ---
 name: I_ITEMGDSMVTINCOMPLETIONSTST
-description: Itemgdsmvtincompletionstst
+description: "Itemgdsmvtincompletionstst"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

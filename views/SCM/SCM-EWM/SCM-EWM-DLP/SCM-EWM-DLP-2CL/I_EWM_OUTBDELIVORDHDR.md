@@ -1,6 +1,6 @@
 ---
 name: I_EWM_OUTBDELIVORDHDR
-description: Ewm Outbdelivordhdr
+description: "Ewm Outbdelivordhdr"
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released

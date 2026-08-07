@@ -1,13 +1,13 @@
 ---
 name: I_ML_BALANCE
-description: Balance Summary for Material Ledger
+description: "Balance Summary for Material Ledger"
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ML_BALANCE')/$value
-semantic_en: Balance Summary for Material Ledger
+semantic_en: "Balance Summary for Material Ledger"
 tags:
   - CO
   - CO-PC

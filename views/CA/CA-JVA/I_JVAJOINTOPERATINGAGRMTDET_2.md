@@ -1,6 +1,6 @@
 ---
 name: I_JVAJOINTOPERATINGAGRMTDET_2
-description: Jvajointoperatingagrmtdet 2
+description: "Jvajointoperatingagrmtdet 2"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

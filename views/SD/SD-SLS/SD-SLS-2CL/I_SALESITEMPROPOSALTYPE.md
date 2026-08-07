@@ -1,6 +1,6 @@
 ---
 name: I_SALESITEMPROPOSALTYPE
-description: Salesitemproposaltype
+description: "Salesitemproposaltype"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

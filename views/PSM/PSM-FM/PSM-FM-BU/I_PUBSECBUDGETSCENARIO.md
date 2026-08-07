@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECBUDGETSCENARIO
-description: Pubsecbudgetscenario
+description: "Pubsecbudgetscenario"
 app_component: PSM-FM-BU
 software_component: SAPSCORE
 release_state: released

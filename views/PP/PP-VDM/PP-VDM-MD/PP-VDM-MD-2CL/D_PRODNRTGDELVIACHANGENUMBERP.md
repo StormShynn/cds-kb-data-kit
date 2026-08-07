@@ -1,6 +1,6 @@
 ---
 name: D_PRODNRTGDELVIACHANGENUMBERP
-description: D Prodnrtgdelviachangenumberp
+description: "D Prodnrtgdelviachangenumberp"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

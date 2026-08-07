@@ -1,18 +1,18 @@
 ---
 name: ZA_CUSTOMER.DDLS
-description: ZA_CUSTOMER.DDLS
+description: "ZA_CUSTOMER.DDLS"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/SAP-samples/btp-abap-cna/blob/c45b86aa6ae2a8910b5d0dc48d1e41b94c896868/src/za_customer.ddls.asddls
-semantic_en: ZA_CUSTOMER.DDLS — CDS view.
-semantic_vi: ZA_CUSTOMER.DDLS — CDS view dựa trên ZA_CUSTOMER.DDLS.
+semantic_en: "ZA_CUSTOMER.DDLS — CDS view."
+semantic_vi: "ZA_CUSTOMER.DDLS — CDS view dựa trên ZA_CUSTOMER.DDLS."
 keywords:
-  - customer.ddls
-  - customer
-  - abap_boolean
+  - "customer.ddls"
+  - "customer"
+  - "abap_boolean"
 tags:
   - bo:businesspartner
   - customer

@@ -1,6 +1,6 @@
 ---
 name: I_CREDITEXPOSUREITEM
-description: Creditexposureitem
+description: "Creditexposureitem"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,27 +1,27 @@
 ---
 name: C_FININVOICEHEADERFDP
-description: Corr Type SAP21 Invc Hdr
+description: "Corr Type SAP21 Invc Hdr"
 app_component: FI-FIO-AR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FININVOICEHEADERFDP')/$value
-semantic_en: Corr Type SAP21 Invc Hdr
-semantic_vi: Corr Type SAP21 Invc Hdr — CDS view tiêu dùng dựa trên I_JournalEntry.
+semantic_en: "Corr Type SAP21 Invc Hdr"
+semantic_vi: "Corr Type SAP21 Invc Hdr — CDS view tiêu dùng dựa trên I_JournalEntry."
 keywords:
-  - corr
-  - type
-  - sap21
-  - invc
-  - hdr
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
-  - date
+  - "corr"
+  - "type"
+  - "sap21"
+  - "invc"
+  - "hdr"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
+  - "date"
 tags:
   - FI
   - bo:billingdocument

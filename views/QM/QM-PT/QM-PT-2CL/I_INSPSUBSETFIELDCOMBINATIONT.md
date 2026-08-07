@@ -1,6 +1,6 @@
 ---
 name: I_INSPSUBSETFIELDCOMBINATIONT
-description: Inspsubsetfieldcombinationt
+description: "Inspsubsetfieldcombinationt"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

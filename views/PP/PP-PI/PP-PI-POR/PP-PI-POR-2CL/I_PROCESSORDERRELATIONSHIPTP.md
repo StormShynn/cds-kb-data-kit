@@ -1,6 +1,6 @@
 ---
 name: I_PROCESSORDERRELATIONSHIPTP
-description: Processorderrelationshiptp
+description: "Processorderrelationshiptp"
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

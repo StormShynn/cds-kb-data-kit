@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALREQQSTNATTCHAPI01
-description: Suplrevalreqqstnattchapi 01
+description: "Suplrevalreqqstnattchapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

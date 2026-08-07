@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTREQUITYGRP
-description: Jntvntrequitygrp
+description: "Jntvntrequitygrp"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

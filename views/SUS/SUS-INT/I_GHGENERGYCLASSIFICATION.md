@@ -1,6 +1,6 @@
 ---
 name: I_GHGENERGYCLASSIFICATION
-description: Ghgenergyclassification
+description: "Ghgenergyclassification"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

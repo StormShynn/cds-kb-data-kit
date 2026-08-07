@@ -1,6 +1,6 @@
 ---
 name: I_PLANNEDORDERACTIONCONTROL
-description: Planned OrderACTIONCONTROL
+description: "Planned OrderACTIONCONTROL"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

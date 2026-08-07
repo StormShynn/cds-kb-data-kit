@@ -1,6 +1,6 @@
 ---
 name: I_PURCONTRADDRESSTP
-description: Purcontraddresstp
+description: "Purcontraddresstp"
 app_component: MM-PUR-OA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FUNCTIONALLOCATIONSTDVH
-description: Functionallocationstdvh
+description: "Functionallocationstdvh"
 app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released

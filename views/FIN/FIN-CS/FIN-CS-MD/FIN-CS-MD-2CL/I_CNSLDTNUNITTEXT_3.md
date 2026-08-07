@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITTEXT_3
-description: Cnsldtnunittext 3
+description: "Cnsldtnunittext 3"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

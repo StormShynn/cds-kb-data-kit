@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPOSTINGLEVEL_2
-description: Cnsldtnpostinglevel 2
+description: "Cnsldtnpostinglevel 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

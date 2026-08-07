@@ -1,13 +1,13 @@
 ---
 name: I_GTEEMBDGTVALIDITYNUMBER
-description: Grantee Management Budget Validity Number
+description: "Grantee Management Budget Validity Number"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GTEEMBDGTVALIDITYNUMBER')/$value
-semantic_en: Grantee Management Budget Validity Number
+semantic_en: "Grantee Management Budget Validity Number"
 tags:
   - PSM
   - budget

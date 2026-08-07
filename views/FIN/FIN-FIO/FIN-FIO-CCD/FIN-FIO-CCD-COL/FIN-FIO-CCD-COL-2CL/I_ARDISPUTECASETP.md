@@ -1,6 +1,6 @@
 ---
 name: I_ARDISPUTECASETP
-description: Ardisputecasetp
+description: "Ardisputecasetp"
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

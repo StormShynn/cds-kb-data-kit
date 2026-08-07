@@ -1,6 +1,6 @@
 ---
 name: I_IT_ELECTRONICDOCSTATPARTT
-description: IT Electronicdocstatpartt
+description: "IT Electronicdocstatpartt"
 app_component: CA-GTF-CSC-EDO-IT
 software_component: SAPSCORE
 release_state: released

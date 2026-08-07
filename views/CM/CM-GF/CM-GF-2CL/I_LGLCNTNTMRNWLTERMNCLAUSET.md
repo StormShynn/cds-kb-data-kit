@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMRNWLTERMNCLAUSET
-description: Lglcntntmrnwltermnclauset
+description: "Lglcntntmrnwltermnclauset"
 app_component: CM-GF-2CL
 software_component: SAPSCORE
 release_state: released

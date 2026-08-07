@@ -1,6 +1,6 @@
 ---
 name: I_MATLCOMPDSCONTNTYPETEXT
-description: Matlcompdscontntypetext
+description: "Matlcompdscontntypetext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

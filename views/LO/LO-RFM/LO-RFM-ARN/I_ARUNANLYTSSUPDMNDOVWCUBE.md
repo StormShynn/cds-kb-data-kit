@@ -1,30 +1,30 @@
 ---
 name: I_ARUNANLYTSSUPDMNDOVWCUBE
-description: Overview of Supply and Demand - Cube
+description: "Overview of Supply and Demand - Cube"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSUPDMNDOVWCUBE')/$value
-semantic_en: Overview of Supply and Demand - Cube
-semantic_vi: Overview of Supply and Demand - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocOvwCube.
+semantic_en: "Overview of Supply and Demand - Cube"
+semantic_vi: "Overview of Supply and Demand - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocOvwCube."
 keywords:
-  - overview
-  - supply
-  - and
-  - demand
-  - cube
-  - requirement
-  - document
-  - number
-  - item
-  - prot
-  - time
-  - bucket
-  - product
-  - availability
-  - date
+  - "overview"
+  - "supply"
+  - "and"
+  - "demand"
+  - "cube"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "prot"
+  - "time"
+  - "bucket"
+  - "product"
+  - "availability"
+  - "date"
 tags:
   - LO
   - component:LO-RFM-ARN

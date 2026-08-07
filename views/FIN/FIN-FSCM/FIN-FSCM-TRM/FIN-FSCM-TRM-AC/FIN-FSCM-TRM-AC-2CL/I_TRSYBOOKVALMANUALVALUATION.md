@@ -1,6 +1,6 @@
 ---
 name: I_TRSYBOOKVALMANUALVALUATION
-description: Trsybookvalmanualvaluation
+description: "Trsybookvalmanualvaluation"
 app_component: FIN-FSCM-TRM-AC-2CL
 software_component: SAPSCORE
 release_state: released

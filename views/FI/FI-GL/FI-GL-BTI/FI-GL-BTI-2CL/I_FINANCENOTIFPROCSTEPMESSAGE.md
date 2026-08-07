@@ -1,13 +1,13 @@
 ---
 name: I_FINANCENOTIFPROCSTEPMESSAGE
-description: Trigger object for finance notif step
+description: "Trigger object for finance notif step"
 app_component: FI-GL-BTI-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINANCENOTIFPROCSTEPMESSAGE')/$value
-semantic_en: Trigger object for finance notif step
+semantic_en: "Trigger object for finance notif step"
 tags:
   - FI
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_ADDRCURDFLTMOBILEPHONENUMBER
-description: Addrcurdfltmobilephonenumber
+description: "Addrcurdfltmobilephonenumber"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

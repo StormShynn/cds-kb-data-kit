@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEREQUISITIONITEMAPI01
-description: Purchase RequisitionUISITIONITEMAPI 01
+description: "Purchase RequisitionUISITIONITEMAPI 01"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

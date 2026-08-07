@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGROUPJRNLENTRITMDEX
-description: Cnsldtngroupjrnlentritmdex
+description: "Cnsldtngroupjrnlentritmdex"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_FUNDEDPROGRAMSTDVH
-description: Funded Program
+description: "Funded Program"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNDEDPROGRAMSTDVH')/$value
-semantic_en: Funded Program
+semantic_en: "Funded Program"
 tags:
   - PSM
   - component:PSM

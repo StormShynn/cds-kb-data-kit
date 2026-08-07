@@ -1,6 +1,6 @@
 ---
 name: I_MRCHDSCATHIERNODETEXT
-description: Mrchdscathiernodetext
+description: "Mrchdscathiernodetext"
 app_component: LO-RFM-MD-MC
 software_component: SAPSCORE
 release_state: released

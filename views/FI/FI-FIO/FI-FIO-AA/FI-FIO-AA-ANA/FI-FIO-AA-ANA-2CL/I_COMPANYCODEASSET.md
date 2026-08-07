@@ -1,13 +1,13 @@
 ---
 name: I_COMPANYCODEASSET
-description: This CDS view provides the prerequisites for answering the following business question: How many company codes are defined that can be used in asset accounting?
+description: "This CDS view provides the prerequisites for answering the following business question: How many company codes are defined that can be used in asset accounting?"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYCODEASSET')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: How many company codes are defined that can be used in asset accounting?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: How many company codes are defined that can be used in asset accounting?"
 tags:
   - FI
   - account

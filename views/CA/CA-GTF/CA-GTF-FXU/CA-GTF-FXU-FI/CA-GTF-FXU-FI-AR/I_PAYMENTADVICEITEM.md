@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTADVICEITEM
-description: Paymentadviceitem
+description: "Paymentadviceitem"
 app_component: CA-GTF-FXU-FI-AR
 software_component: SAPSCORE
 release_state: released

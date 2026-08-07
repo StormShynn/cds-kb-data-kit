@@ -1,6 +1,6 @@
 ---
 name: I_TREASURYHEDGINGCLASSFCTN
-description: Treasuryhedgingclassfctn
+description: "Treasuryhedgingclassfctn"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

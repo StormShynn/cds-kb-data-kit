@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERTOBPROLE
-description: Business PartnerTOBPROLE
+description: "Business PartnerTOBPROLE"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

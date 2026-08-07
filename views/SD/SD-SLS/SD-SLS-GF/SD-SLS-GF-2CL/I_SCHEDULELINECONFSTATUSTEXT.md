@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDULELINECONFSTATUSTEXT
-description: Schedule LineCONFSTATUSTEXT
+description: "Schedule LineCONFSTATUSTEXT"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

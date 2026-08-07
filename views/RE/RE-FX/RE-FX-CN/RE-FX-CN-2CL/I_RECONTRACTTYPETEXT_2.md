@@ -1,6 +1,6 @@
 ---
 name: I_RECONTRACTTYPETEXT_2
-description: Recontracttypetext 2
+description: "Recontracttypetext 2"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released

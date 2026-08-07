@@ -1,6 +1,6 @@
 ---
 name: C_SALESDOCITMPRCGELMNTDEX_1
-description: Salesdocitmprcgelmntdex 1
+description: "Salesdocitmprcgelmntdex 1"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

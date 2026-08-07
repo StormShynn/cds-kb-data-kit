@@ -1,6 +1,6 @@
 ---
 name: I_PRAACCTGDOCSMMRYACCTSRBL
-description: Praacctgdocsmmryacctsrbl
+description: "Praacctgdocsmmryacctsrbl"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released

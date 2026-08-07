@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECGTEEMBDGTACTLCUBE
-description: Grant Budget Actual Items - Cube
+description: "Grant Budget Actual Items - Cube"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECGTEEMBDGTACTLCUBE')/$value
-semantic_en: Grant Budget Actual Items - Cube
+semantic_en: "Grant Budget Actual Items - Cube"
 tags:
   - PSM
   - budget

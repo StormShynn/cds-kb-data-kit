@@ -1,13 +1,13 @@
 ---
 name: I_FINSEPAMANDATE
-description: SEPA Mandate for Financial Accounting
+description: "SEPA Mandate for Financial Accounting"
 app_component: FI-FIO-AR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINSEPAMANDATE')/$value
-semantic_en: SEPA Mandate for Financial Accounting
+semantic_en: "SEPA Mandate for Financial Accounting"
 tags:
   - FI
   - account

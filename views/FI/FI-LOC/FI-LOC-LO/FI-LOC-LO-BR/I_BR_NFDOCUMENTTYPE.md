@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFDOCUMENTTYPE
-description: BR Nfdocumenttype
+description: "BR Nfdocumenttype"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

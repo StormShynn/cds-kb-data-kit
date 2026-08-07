@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMCATEGORY
-description: Wrntyclaimcategory
+description: "Wrntyclaimcategory"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

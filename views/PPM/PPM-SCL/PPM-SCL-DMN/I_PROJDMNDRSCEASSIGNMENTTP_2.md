@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDRSCEASSIGNMENTTP_2
-description: Projdmndrsceassignmenttp 2
+description: "Projdmndrsceassignmenttp 2"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

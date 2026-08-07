@@ -1,6 +1,6 @@
 ---
 name: I_FREIGHTORDERSTOPTP
-description: Freightorderstoptp
+description: "Freightorderstoptp"
 app_component: TM-FRM-FRO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_INSURPLCYSURCHRGDISCTYPET
-description: Type Id for Surchrg Disc in Plcy - Txt
+description: "Type Id for Surchrg Disc in Plcy - Txt"
 app_component: FS-PM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURPLCYSURCHRGDISCTYPET')/$value
-semantic_en: Type Id for Surchrg Disc in Plcy - Txt
+semantic_en: "Type Id for Surchrg Disc in Plcy - Txt"
 tags:
   - FS
   - component:FS-PM

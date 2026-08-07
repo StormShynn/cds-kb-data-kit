@@ -1,13 +1,13 @@
 ---
 name: I_INSPSUBSETRESULTLONGTEXT
-description: This CDS view provides access to the inspection result of an inspection point.
+description: "This CDS view provides access to the inspection result of an inspection point."
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSPSUBSETRESULTLONGTEXT')/$value
-semantic_en: This CDS view provides access to the inspection result of an inspection point.
+semantic_en: "This CDS view provides access to the inspection result of an inspection point."
 tags:
   - QM
   - bo:project

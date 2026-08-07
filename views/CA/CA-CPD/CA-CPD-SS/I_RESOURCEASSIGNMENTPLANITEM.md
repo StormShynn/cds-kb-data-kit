@@ -1,13 +1,13 @@
 ---
 name: I_RESOURCEASSIGNMENTPLANITEM
-description: This CDS view provides the prerequisites for answering the following business questions: Which resources are staffed to a resource request? In which months are resources staffed and for how many hours? What is the delivery organization of the resource?
+description: "This CDS view provides the prerequisites for answering the following business questions: Which resources are staffed to a resource request? In which months are resources staffed and for how many hours? What is the delivery organization of the resource?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESOURCEASSIGNMENTPLANITEM')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Which resources are staffed to a resource request? In which months are resources staffed and for how many hours? What is the delivery organization of the resource?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which resources are staffed to a resource request? In which months are resources staffed and for how many hours? What is the delivery organization of the resource?"
 tags:
   - CA
   - bo:plant

@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALLANDREGISTERTYPE
-description: Land Register Type for Collateral
+description: "Land Register Type for Collateral"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALLANDREGISTERTYPE')/$value
-semantic_en: Land Register Type for Collateral
+semantic_en: "Land Register Type for Collateral"
 tags:
   - FS
   - component:FS-CMS

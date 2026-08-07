@@ -1,6 +1,6 @@
 ---
 name: I_BANKPROFILE
-description: Bankprofile
+description: "Bankprofile"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,28 +1,28 @@
 ---
 name: C_DAYSSALESOUTSTANDING
-description: This CDS view provides you with an insight into the average collection period of your company. It provides the number of days it takes, on average, for your company to collect receivables. The result aggregates the receivables and revenue amount per account (company code and customer) and month and calculates the DSO figure (indirect calculation). This CDS view provides you with the information that you need to answer the following business questions: How long does it take to collect receivables? Are credit terms extended too lenient to your customers? For more information about the calculation of the measures, please see Days Sales Outstanding - Calculation for All Periods and Days Sales Outstanding - Calculation for a Specific Period
+description: "This CDS view provides you with an insight into the average collection period of your company. It provides the number of days it takes, on average, for your company to collect receivables. The result aggregates the receivables and revenue amount per account (company code and customer) and month and calculates the DSO figure (indirect calculation). This CDS view provides you with the information that you need to answer the following business questions: How long does it take to collect receivables? Are credit terms extended too lenient to your customers? For more information about the calculation of the measures, please see Days Sales Outstanding - Calculation for All Periods and Days Sales Outstanding - Calculation for a Specific Period"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_DAYSSALESOUTSTANDING')/$value
-semantic_en: This CDS view provides you with an insight into the average collection period of your company. It provides the number of days it takes, on average, for your company to collect receivables. The result aggregates the receivables and revenue amount per account (company code and customer) and month and calculates the DSO figure (indirect calculation). This CDS view provides you with the information that you need to answer the following business questions: How long does it take to collect receivables? Are credit terms extended too lenient to your customers? For more information about the calculation of the measures, please see Days Sales Outstanding - Calculation for All Periods and Days Sales Outstanding - Calculation for a Specific Period
-semantic_vi: Days Sales Outstanding Smart Business App — CDS view tiêu dùng dựa trên I_DaysSalesOutstanding.
+semantic_en: "This CDS view provides you with an insight into the average collection period of your company. It provides the number of days it takes, on average, for your company to collect receivables. The result aggregates the receivables and revenue amount per account (company code and customer) and month and calculates the DSO figure (indirect calculation). This CDS view provides you with the information that you need to answer the following business questions: How long does it take to collect receivables? Are credit terms extended too lenient to your customers? For more information about the calculation of the measures, please see Days Sales Outstanding - Calculation for All Periods and Days Sales Outstanding - Calculation for a Specific Period"
+semantic_vi: "Days Sales Outstanding Smart Business App — CDS view tiêu dùng dựa trên I_DaysSalesOutstanding."
 keywords:
-  - days
-  - sales
-  - outstanding
-  - smart
-  - business
-  - app
-  - company
-  - code
-  - customer
-  - calendar
-  - year
-  - month
-  - special
+  - "days"
+  - "sales"
+  - "outstanding"
+  - "smart"
+  - "business"
+  - "app"
+  - "company"
+  - "code"
+  - "customer"
+  - "calendar"
+  - "year"
+  - "month"
+  - "special"
 tags:
   - FI
   - account

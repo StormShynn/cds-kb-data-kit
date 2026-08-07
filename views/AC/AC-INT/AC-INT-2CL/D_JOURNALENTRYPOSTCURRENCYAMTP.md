@@ -1,6 +1,6 @@
 ---
 name: D_JOURNALENTRYPOSTCURRENCYAMTP
-description: D Journal EntryPOSTCURRENCYAMTP
+description: "D Journal EntryPOSTCURRENCYAMTP"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_ES_EDOCVERIFACTUEXT
-description: ES Edocverifactuext
+description: "ES Edocverifactuext"
 app_component: CA-GTF-CSC-EDO-ES
 software_component: SAPSCORE
 release_state: released

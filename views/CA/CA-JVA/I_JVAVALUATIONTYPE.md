@@ -1,6 +1,6 @@
 ---
 name: I_JVAVALUATIONTYPE
-description: Jvavaluationtype
+description: "Jvavaluationtype"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

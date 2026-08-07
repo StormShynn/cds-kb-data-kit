@@ -1,26 +1,26 @@
 ---
 name: C_CREDITMEMOREQUESTITEMQRY
-description: This CDS view provides the prerequisites for answering questions about credit memo request items. Example business questions are: What is the sold-to party of a given credit memo request? What is the order reason for a given credit memo request? What is the overall processing status of a given credit memo request? What is the total net value of the items in my credit memo requests?
+description: "This CDS view provides the prerequisites for answering questions about credit memo request items. Example business questions are: What is the sold-to party of a given credit memo request? What is the order reason for a given credit memo request? What is the overall processing status of a given credit memo request? What is the total net value of the items in my credit memo requests?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CREDITMEMOREQUESTITEMQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering questions about credit memo request items. Example business questions are: What is the sold-to party of a given credit memo request? What is the order reason for a given credit memo request? What is the overall processing status of a given credit memo request? What is the total net value of the items in my credit memo requests?
-semantic_vi: Credit Memo Request Item - Query — CDS view tiêu dùng dựa trên I_CreditMemoRequestItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering questions about credit memo request items. Example business questions are: What is the sold-to party of a given credit memo request? What is the order reason for a given credit memo request? What is the overall processing status of a given credit memo request? What is the total net value of the items in my credit memo requests?"
+semantic_vi: "Credit Memo Request Item - Query — CDS view tiêu dùng dựa trên I_CreditMemoRequestItemCube."
 keywords:
-  - Credit Memo Request Item - Query
-  - credit
-  - memo
-  - request
-  - item
-  - query
-  - type
-  - category
-  - last
-  - change
-  - date
+  - "Credit Memo Request Item - Query"
+  - "credit"
+  - "memo"
+  - "request"
+  - "item"
+  - "query"
+  - "type"
+  - "category"
+  - "last"
+  - "change"
+  - "date"
 tags:
   - SD
   - bo:billingdocument

@@ -1,6 +1,6 @@
 ---
 name: I_RECONTRPARTNERASSGMT
-description: Recontrpartnerassgmt
+description: "Recontrpartnerassgmt"
 app_component: RE-FX-BP-2CL
 software_component: SAPSCORE
 release_state: released

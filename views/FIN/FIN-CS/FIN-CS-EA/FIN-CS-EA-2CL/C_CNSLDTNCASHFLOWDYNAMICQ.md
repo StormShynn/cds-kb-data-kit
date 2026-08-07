@@ -1,13 +1,13 @@
 ---
 name: C_CNSLDTNCASHFLOWDYNAMICQ
-description: Cash Flow with Temporary Node - Qry
+description: "Cash Flow with Temporary Node - Qry"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNSLDTNCASHFLOWDYNAMICQ')/$value
-semantic_en: Cash Flow with Temporary Node - Qry
+semantic_en: "Cash Flow with Temporary Node - Qry"
 tags:
   - FIN
   - bo:purchaseorder

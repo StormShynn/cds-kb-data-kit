@@ -1,6 +1,6 @@
 ---
 name: I_SLCQNAIRELIFECYCLESTSTEXT
-description: Slcqnairelifecycleststext
+description: "Slcqnairelifecycleststext"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

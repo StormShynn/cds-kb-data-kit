@@ -1,30 +1,30 @@
 ---
 name: C_MAINTNOTIFITEMACTIVITYDEX
-description: Data Extr for Maint Notif Item Activ
+description: "Data Extr for Maint Notif Item Activ"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFITEMACTIVITYDEX')/$value
-semantic_en: Data Extr for Maint Notif Item Activ
-semantic_vi: Data Extr for Maint Notif Item Activ — CDS view tiêu dùng dựa trên I_MaintNotifActivityBasic.
+semantic_en: "Data Extr for Maint Notif Item Activ"
+semantic_vi: "Data Extr for Maint Notif Item Activ — CDS view tiêu dùng dựa trên I_MaintNotifActivityBasic."
 keywords:
-  - data
-  - extr
-  - for
-  - maint
-  - notif
-  - item
-  - activ
-  - maintenance
-  - notification
-  - activity
-  - sort
-  - number
-  - code
-  - vers
-  - nmbr
+  - "data"
+  - "extr"
+  - "for"
+  - "maint"
+  - "notif"
+  - "item"
+  - "activ"
+  - "maintenance"
+  - "notification"
+  - "activity"
+  - "sort"
+  - "number"
+  - "code"
+  - "vers"
+  - "nmbr"
 tags:
   - PM
   - bo:companycode

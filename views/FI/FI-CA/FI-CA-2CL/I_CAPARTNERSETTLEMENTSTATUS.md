@@ -1,6 +1,6 @@
 ---
 name: I_CAPARTNERSETTLEMENTSTATUS
-description: Capartnersettlementstatus
+description: "Capartnersettlementstatus"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

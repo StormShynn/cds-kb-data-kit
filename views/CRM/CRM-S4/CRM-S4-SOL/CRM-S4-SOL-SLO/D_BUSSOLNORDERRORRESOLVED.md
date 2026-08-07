@@ -1,6 +1,6 @@
 ---
 name: D_BUSSOLNORDERRORRESOLVED
-description: D Bussolnorderrorresolved
+description: "D Bussolnorderrorresolved"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

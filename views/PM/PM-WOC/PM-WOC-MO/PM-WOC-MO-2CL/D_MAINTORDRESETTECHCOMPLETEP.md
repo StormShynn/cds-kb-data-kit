@@ -1,6 +1,6 @@
 ---
 name: D_MAINTORDRESETTECHCOMPLETEP
-description: D Maintordresettechcompletep
+description: "D Maintordresettechcompletep"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

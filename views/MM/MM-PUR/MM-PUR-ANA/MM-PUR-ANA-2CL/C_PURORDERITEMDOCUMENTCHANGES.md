@@ -1,6 +1,6 @@
 ---
 name: C_PURORDERITEMDOCUMENTCHANGES
-description: Purorderitemdocumentchanges
+description: "Purorderitemdocumentchanges"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,20 +1,20 @@
 ---
 name: ZI_KNA1.DDLS
-description: Kna1
+description: "Kna1"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/strikeprice/abaprap/blob/4b88f9f01f95d0678815214e7a494198eb64b273/src/zi_kna1.ddls.asddls
-semantic_en: Kna1 — CDS view based on zkna1.
-semantic_vi: Kna1 — CDS view dựa trên zkna1.
+semantic_en: "Kna1 — CDS view based on zkna1."
+semantic_vi: "Kna1 — CDS view dựa trên zkna1."
 keywords:
-  - kna1
-  - customer
-  - number
-  - name
-  - country
+  - "kna1"
+  - "customer"
+  - "number"
+  - "name"
+  - "country"
 tags:
   - bo:customer
 ---

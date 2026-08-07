@@ -1,22 +1,22 @@
 ---
 name: ZC_MD_TABLE.DDLS
-description: Markdown table
+description: "Markdown table"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Keller-Michael/Markdown_table_via_ABAP_CDS_and_ABAP_SQL/blob/51e0a7cddd74f03b4682dad1c2b1bd27dca67488/src/zc_md_table.ddls.asddls
-semantic_en: Markdown table — CDS view based on ZI_MD_HEADER.
-semantic_vi: Markdown table — CDS view dựa trên ZI_MD_HEADER.
+semantic_en: "Markdown table — CDS view based on ZI_MD_HEADER."
+semantic_vi: "Markdown table — CDS view dựa trên ZI_MD_HEADER."
 keywords:
-  - markdown
-  - table
-  - frame1
-  - airport
-  - frame2
-  - name
-  - frame3
+  - "markdown"
+  - "table"
+  - "frame1"
+  - "airport"
+  - "frame2"
+  - "name"
+  - "frame3"
 tags:
   - LE
   - component:LE

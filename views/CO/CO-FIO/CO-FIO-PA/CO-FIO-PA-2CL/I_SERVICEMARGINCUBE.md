@@ -1,17 +1,17 @@
 ---
 name: I_SERVICEMARGINCUBE
-description: Service Margin - Cube
+description: "Service Margin - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SERVICEMARGINCUBE')/$value
-semantic_en: Service Margin - Cube
+semantic_en: "Service Margin - Cube"
 keywords:
-  - Service Margin - Cube
-  - Service Margin - Cube
-  - Service Margin - Cube
+  - "Service Margin - Cube"
+  - "Service Margin - Cube"
+  - "Service Margin - Cube"
 tags:
   - CO
   - CO-FIO

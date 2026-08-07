@@ -1,16 +1,16 @@
 ---
 name: I_MDQANLYTSSCRPRODDIMNCUBE
-description: Master Data Quality Score for Product Dimensions - Cube
+description: "Master Data Quality Score for Product Dimensions - Cube"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MDQANLYTSSCRPRODDIMNCUBE')/$value
-semantic_en: Master Data Quality Score for Product Dimensions - Cube
+semantic_en: "Master Data Quality Score for Product Dimensions - Cube"
 keywords:
-  - MDQ Score for Product Dimensions - Cube
-  - MDQ Score for Product Dimensions - Cube
+  - "MDQ Score for Product Dimensions - Cube"
+  - "MDQ Score for Product Dimensions - Cube"
 tags:
   - CA
   - bo:businesspartner

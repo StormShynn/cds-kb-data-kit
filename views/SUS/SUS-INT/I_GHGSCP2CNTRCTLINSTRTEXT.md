@@ -1,6 +1,6 @@
 ---
 name: I_GHGSCP2CNTRCTLINSTRTEXT
-description: Ghgscp 2CNTRCTLINSTRTEXT
+description: "Ghgscp 2CNTRCTLINSTRTEXT"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FREIGHTBOOKINGITEMDOCREFTP
-description: Freightbookingitemdocreftp
+description: "Freightbookingitemdocreftp"
 app_component: TM-FRM-FRB-2CL
 software_component: SAPSCORE
 release_state: released

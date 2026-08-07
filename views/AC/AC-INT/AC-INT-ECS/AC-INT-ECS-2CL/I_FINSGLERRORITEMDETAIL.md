@@ -1,6 +1,6 @@
 ---
 name: I_FINSGLERRORITEMDETAIL
-description: Finsglerroritemdetail
+description: "Finsglerroritemdetail"
 app_component: AC-INT-ECS-2CL
 software_component: SAPSCORE
 release_state: released

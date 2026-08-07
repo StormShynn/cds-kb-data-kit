@@ -1,6 +1,6 @@
 ---
 name: I_MAINTNOTIFDETECTIONCATALOG
-description: Maintnotifdetectioncatalog
+description: "Maintnotifdetectioncatalog"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released

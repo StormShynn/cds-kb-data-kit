@@ -1,6 +1,6 @@
 ---
 name: I_SLSORDWITHOUTCHRGSCHEDLINETP
-description: Slsordwithoutchrgschedlinetp
+description: "Slsordwithoutchrgschedlinetp"
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_REPETITIVEMFGPROFILE
-description: Repetitivemfgprofile
+description: "Repetitivemfgprofile"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_TIMESHEETOVERTIMECATTEXT
-description: Timesheetovertimecattext
+description: "Timesheetovertimecattext"
 app_component: CA-TS-S4
 software_component: SAPSCORE
 release_state: released

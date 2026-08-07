@@ -1,6 +1,6 @@
 ---
 name: I_LEGALTRANSINTCONTACTTP_2
-description: Legaltransintcontacttp 2
+description: "Legaltransintcontacttp 2"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

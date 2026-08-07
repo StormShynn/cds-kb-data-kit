@@ -1,6 +1,6 @@
 ---
 name: I_CABUSTRANSPROCESSTEXT
-description: Cabustransprocesstext
+description: "Cabustransprocesstext"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

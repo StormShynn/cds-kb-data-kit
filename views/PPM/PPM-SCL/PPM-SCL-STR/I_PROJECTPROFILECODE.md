@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTPROFILECODE
-description: Projectprofilecode
+description: "Projectprofilecode"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

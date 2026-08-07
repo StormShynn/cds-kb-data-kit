@@ -1,6 +1,6 @@
 ---
 name: I_CUSTPROJSLSORDITEM
-description: Custprojslsorditem
+description: "Custprojslsorditem"
 app_component: SD-SLS-PBS
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CN_CADECSTMSUBSIDIARYITEMVAL
-description: CN Cadecstmsubsidiaryitemval
+description: "CN Cadecstmsubsidiaryitemval"
 app_component: FI-LOC-GAI-CN
 software_component: SAPSCORE
 release_state: released

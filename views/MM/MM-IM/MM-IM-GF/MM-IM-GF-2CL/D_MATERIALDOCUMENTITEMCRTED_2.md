@@ -1,6 +1,6 @@
 ---
 name: D_MATERIALDOCUMENTITEMCRTED_2
-description: D Materialdocumentitemcrted 2
+description: "D Materialdocumentitemcrted 2"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

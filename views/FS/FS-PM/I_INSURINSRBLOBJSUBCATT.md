@@ -1,13 +1,13 @@
 ---
 name: I_INSURINSRBLOBJSUBCATT
-description: Insur Plcy Insrbl Obj Sub Category - Txt
+description: "Insur Plcy Insrbl Obj Sub Category - Txt"
 app_component: FS-PM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURINSRBLOBJSUBCATT')/$value
-semantic_en: Insur Plcy Insrbl Obj Sub Category - Txt
+semantic_en: "Insur Plcy Insrbl Obj Sub Category - Txt"
 tags:
   - FS
   - component:FS-PM

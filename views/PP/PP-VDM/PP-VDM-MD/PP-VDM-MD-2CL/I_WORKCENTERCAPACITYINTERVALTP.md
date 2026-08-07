@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERCAPACITYINTERVALTP
-description: Work CenterCAPACITYINTERVALTP
+description: "Work CenterCAPACITYINTERVALTP"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

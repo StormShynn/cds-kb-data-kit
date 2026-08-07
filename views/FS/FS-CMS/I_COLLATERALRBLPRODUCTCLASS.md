@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALRBLPRODUCTCLASS
-description: Receivable Product Class
+description: "Receivable Product Class"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALRBLPRODUCTCLASS')/$value
-semantic_en: Receivable Product Class
+semantic_en: "Receivable Product Class"
 tags:
   - FS
   - bo:material

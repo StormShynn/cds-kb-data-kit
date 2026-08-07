@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTMINQLTATVCRITERIA
-description: Agreement Minimum Qualitative Criteria
+description: "Agreement Minimum Qualitative Criteria"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTMINQLTATVCRITERIA')/$value
-semantic_en: Agreement Minimum Qualitative Criteria
+semantic_en: "Agreement Minimum Qualitative Criteria"
 tags:
   - FS
   - component:FS-CMS

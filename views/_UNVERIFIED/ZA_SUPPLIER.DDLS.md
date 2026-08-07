@@ -1,18 +1,18 @@
 ---
 name: ZA_SUPPLIER.DDLS
-description: ZA_SUPPLIER.DDLS
+description: "ZA_SUPPLIER.DDLS"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/SAP-samples/btp-abap-cna/blob/c45b86aa6ae2a8910b5d0dc48d1e41b94c896868/src/za_supplier.ddls.asddls
-semantic_en: ZA_SUPPLIER.DDLS — CDS view.
-semantic_vi: ZA_SUPPLIER.DDLS — CDS view dựa trên ZA_SUPPLIER.DDLS.
+semantic_en: "ZA_SUPPLIER.DDLS — CDS view."
+semantic_vi: "ZA_SUPPLIER.DDLS — CDS view dựa trên ZA_SUPPLIER.DDLS."
 keywords:
-  - supplier.ddls
-  - supplier
-  - abap_boolean
+  - "supplier.ddls"
+  - "supplier"
+  - "abap_boolean"
 tags:
   - PP
   - component:PP

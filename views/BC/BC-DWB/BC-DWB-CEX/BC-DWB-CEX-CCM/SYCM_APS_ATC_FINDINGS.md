@@ -1,6 +1,6 @@
 ---
 name: SYCM_APS_ATC_FINDINGS
-description: Sycm Aps Atc Findings
+description: "Sycm Aps Atc Findings"
 app_component: BC-DWB-CEX-CCM
 software_component: SAP_BASIS
 release_state: released

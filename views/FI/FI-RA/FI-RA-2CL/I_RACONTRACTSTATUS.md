@@ -1,6 +1,6 @@
 ---
 name: I_RACONTRACTSTATUS
-description: Racontractstatus
+description: "Racontractstatus"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

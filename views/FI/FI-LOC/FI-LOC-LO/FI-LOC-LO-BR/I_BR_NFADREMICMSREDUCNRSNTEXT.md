@@ -1,24 +1,24 @@
 ---
 name: I_BR_NFADREMICMSREDUCNRSNTEXT
-description: Brazil ICMS Ad Rem Reducn Reason - Text
+description: "Brazil ICMS Ad Rem Reducn Reason - Text"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_NFADREMICMSREDUCNRSNTEXT')/$value
-semantic_en: Brazil ICMS Ad Rem Reducn Reason - Text
-semantic_vi: Brazil ICMS Ad Rem Reducn Reason - Text — CDS view giao diện dựa trên dd07t.
+semantic_en: "Brazil ICMS Ad Rem Reducn Reason - Text"
+semantic_vi: "Brazil ICMS Ad Rem Reducn Reason - Text — CDS view giao diện dựa trên dd07t."
 keywords:
-  - brazil
-  - icms
-  - rem
-  - reducn
-  - reason
-  - text
-  - language
-  - reduction
-  - desc
+  - "brazil"
+  - "icms"
+  - "rem"
+  - "reducn"
+  - "reason"
+  - "text"
+  - "language"
+  - "reduction"
+  - "desc"
 tags:
   - FI
   - bo:salesorder

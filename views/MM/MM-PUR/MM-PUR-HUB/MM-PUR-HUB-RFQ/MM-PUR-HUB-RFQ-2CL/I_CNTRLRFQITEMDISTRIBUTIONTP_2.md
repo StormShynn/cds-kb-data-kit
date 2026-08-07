@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLRFQITEMDISTRIBUTIONTP_2
-description: Cntrlrfqitemdistributiontp 2
+description: "Cntrlrfqitemdistributiontp 2"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

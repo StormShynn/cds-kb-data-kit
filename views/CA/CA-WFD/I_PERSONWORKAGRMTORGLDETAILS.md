@@ -1,6 +1,6 @@
 ---
 name: I_PERSONWORKAGRMTORGLDETAILS
-description: Personworkagrmtorgldetails
+description: "Personworkagrmtorgldetails"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released

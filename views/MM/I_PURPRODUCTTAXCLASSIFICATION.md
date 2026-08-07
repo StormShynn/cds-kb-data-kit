@@ -1,6 +1,6 @@
 ---
 name: I_PURPRODUCTTAXCLASSIFICATION
-description: Purproducttaxclassification
+description: "Purproducttaxclassification"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

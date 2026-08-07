@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPAGREEMENTPARTY_2
-description: Transpagreementparty 2
+description: "Transpagreementparty 2"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

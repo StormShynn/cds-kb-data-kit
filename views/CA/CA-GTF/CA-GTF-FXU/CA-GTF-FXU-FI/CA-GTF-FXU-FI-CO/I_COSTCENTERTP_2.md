@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERTP_2
-description: Cost CenterTP 2
+description: "Cost CenterTP 2"
 app_component: CA-GTF-FXU-FI-CO
 software_component: SAPSCORE
 release_state: released

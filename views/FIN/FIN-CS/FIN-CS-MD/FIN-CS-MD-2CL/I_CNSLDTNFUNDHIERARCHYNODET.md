@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFUNDHIERARCHYNODET
-description: Cnsldtnfundhierarchynodet
+description: "Cnsldtnfundhierarchynodet"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

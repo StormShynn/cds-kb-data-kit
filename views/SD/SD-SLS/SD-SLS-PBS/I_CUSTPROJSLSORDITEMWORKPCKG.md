@@ -1,6 +1,6 @@
 ---
 name: I_CUSTPROJSLSORDITEMWORKPCKG
-description: Custprojslsorditemworkpckg
+description: "Custprojslsorditemworkpckg"
 app_component: SD-SLS-PBS
 software_component: SAPSCORE
 release_state: released

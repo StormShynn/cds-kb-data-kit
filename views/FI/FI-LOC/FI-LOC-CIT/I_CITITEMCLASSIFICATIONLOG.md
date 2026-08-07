@@ -1,13 +1,13 @@
 ---
 name: I_CITITEMCLASSIFICATIONLOG
-description: CIT Clsf Item Reporting Log
+description: "CIT Clsf Item Reporting Log"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITITEMCLASSIFICATIONLOG')/$value
-semantic_en: CIT Clsf Item Reporting Log
+semantic_en: "CIT Clsf Item Reporting Log"
 tags:
   - FI
   - bo:companycode

@@ -1,13 +1,13 @@
 ---
 name: I_WASTEHAZARDTYPEDIMENSION
-description: Waste Hazard Type dimension
+description: "Waste Hazard Type dimension"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTEHAZARDTYPEDIMENSION')/$value
-semantic_en: Waste Hazard Type dimension
+semantic_en: "Waste Hazard Type dimension"
 tags:
   - EHS
   - component:EHS-SUS-WA

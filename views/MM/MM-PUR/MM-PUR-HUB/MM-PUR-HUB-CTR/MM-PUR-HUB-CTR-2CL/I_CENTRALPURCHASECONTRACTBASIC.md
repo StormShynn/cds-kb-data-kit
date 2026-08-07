@@ -1,6 +1,6 @@
 ---
 name: I_CENTRALPURCHASECONTRACTBASIC
-description: CENTRALPurchase ContractBASIC
+description: "CENTRALPurchase ContractBASIC"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

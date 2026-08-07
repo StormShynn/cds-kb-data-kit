@@ -1,13 +1,13 @@
 ---
 name: I_WASTEDISPOSERDIMENSION
-description: Waste Disposer Dimension
+description: "Waste Disposer Dimension"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTEDISPOSERDIMENSION')/$value
-semantic_en: Waste Disposer Dimension
+semantic_en: "Waste Disposer Dimension"
 tags:
   - EHS
   - bo:purchaseorder

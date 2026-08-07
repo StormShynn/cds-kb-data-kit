@@ -1,6 +1,6 @@
 ---
 name: I_PROCMTHUBCOMPANYCODE
-description: PROCMTHUBCompany Code
+description: "PROCMTHUBCompany Code"
 app_component: MM-PUR-HUB-FND-2CL
 software_component: SAPSCORE
 release_state: released

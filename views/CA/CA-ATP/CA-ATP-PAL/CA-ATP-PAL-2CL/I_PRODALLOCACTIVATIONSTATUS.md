@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCACTIVATIONSTATUS
-description: Prodallocactivationstatus
+description: "Prodallocactivationstatus"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

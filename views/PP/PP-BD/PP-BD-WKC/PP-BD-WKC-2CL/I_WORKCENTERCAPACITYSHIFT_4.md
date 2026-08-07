@@ -1,13 +1,13 @@
 ---
 name: I_WORKCENTERCAPACITYSHIFT_4
-description: Work Center Capacity Shift Details
+description: "Work Center Capacity Shift Details"
 app_component: PP-BD-WKC-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKCENTERCAPACITYSHIFT_4')/$value
-semantic_en: Work Center Capacity Shift Details
+semantic_en: "Work Center Capacity Shift Details"
 tags:
   - PP
   - component:PP-BD-WKC-2CL

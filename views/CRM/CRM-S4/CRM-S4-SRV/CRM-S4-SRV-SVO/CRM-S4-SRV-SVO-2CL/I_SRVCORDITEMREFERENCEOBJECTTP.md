@@ -1,6 +1,6 @@
 ---
 name: I_SRVCORDITEMREFERENCEOBJECTTP
-description: Srvcorditemreferenceobjecttp
+description: "Srvcorditemreferenceobjecttp"
 app_component: CRM-S4-SRV-SVO-2CL
 software_component: SAPSCORE
 release_state: released

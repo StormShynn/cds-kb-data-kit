@@ -1,13 +1,13 @@
 ---
 name: C_CHANGERECORDCHARCDEX
-description: Change Record Characteristics Extraction
+description: "Change Record Characteristics Extraction"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDCHARCDEX')/$value
-semantic_en: Change Record Characteristics Extraction
+semantic_en: "Change Record Characteristics Extraction"
 tags:
   - PLM
   - component:PLM-CR-2CL

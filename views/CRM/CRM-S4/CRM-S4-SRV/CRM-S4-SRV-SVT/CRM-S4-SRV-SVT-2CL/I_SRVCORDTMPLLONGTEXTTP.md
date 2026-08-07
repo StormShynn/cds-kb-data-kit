@@ -1,6 +1,6 @@
 ---
 name: I_SRVCORDTMPLLONGTEXTTP
-description: Srvcordtmpllongtexttp
+description: "Srvcordtmpllongtexttp"
 app_component: CRM-S4-SRV-SVT-2CL
 software_component: SAPSCORE
 release_state: released

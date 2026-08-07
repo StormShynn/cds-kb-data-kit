@@ -1,24 +1,24 @@
 ---
 name: I_ASSETKEYFIGURESETTEXT
-description: This CDS view provides the prerequisites for answering the following business questions: Sorted Asset Accounting Key Figure Sorting Sequence
+description: "This CDS view provides the prerequisites for answering the following business questions: Sorted Asset Accounting Key Figure Sorting Sequence"
 app_component: FI-AA-AA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETKEYFIGURESETTEXT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Sorted Asset Accounting Key Figure Sorting Sequence
-semantic_vi: Asset Key Figure Set - Text — CDS view giao diện dựa trên faac_kfcsett.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Sorted Asset Accounting Key Figure Sorting Sequence"
+semantic_vi: "Asset Key Figure Set - Text — CDS view giao diện dựa trên faac_kfcsett."
 keywords:
-  - asset
-  - key
-  - figure
-  - set
-  - text
-  - accounting
-  - language
-  - acctg
-  - name
+  - "asset"
+  - "key"
+  - "figure"
+  - "set"
+  - "text"
+  - "accounting"
+  - "language"
+  - "acctg"
+  - "name"
 tags:
   - FI
   - account

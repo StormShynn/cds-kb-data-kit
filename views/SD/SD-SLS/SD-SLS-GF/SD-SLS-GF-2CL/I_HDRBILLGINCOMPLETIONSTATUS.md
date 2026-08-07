@@ -1,6 +1,6 @@
 ---
 name: I_HDRBILLGINCOMPLETIONSTATUS
-description: Hdrbillgincompletionstatus
+description: "Hdrbillgincompletionstatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_TRDGCONTRTYPETEXT
-description: Trading Contract Type - Text
+description: "Trading Contract Type - Text"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRTYPETEXT')/$value
-semantic_en: Trading Contract Type - Text
+semantic_en: "Trading Contract Type - Text"
 tags:
   - LO
   - component:LO-GT

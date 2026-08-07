@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSALESORGTEXTTP
-description: CNSLDTNSales OrganizationTEXTTP
+description: "CNSLDTNSales OrganizationTEXTTP"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

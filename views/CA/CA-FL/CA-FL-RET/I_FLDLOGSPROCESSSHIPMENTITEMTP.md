@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSPROCESSSHIPMENTITEMTP
-description: Fldlogsprocessshipmentitemtp
+description: "Fldlogsprocessshipmentitemtp"
 app_component: CA-FL-RET
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DEBITMEMOREQAPPROVALREASON
-description: Debitmemoreqapprovalreason
+description: "Debitmemoreqapprovalreason"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

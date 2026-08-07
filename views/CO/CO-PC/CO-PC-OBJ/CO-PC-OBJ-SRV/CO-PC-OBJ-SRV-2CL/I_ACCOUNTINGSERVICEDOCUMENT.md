@@ -1,6 +1,6 @@
 ---
 name: I_ACCOUNTINGSERVICEDOCUMENT
-description: ACCOUNTINGService DocumentUMENT
+description: "ACCOUNTINGService DocumentUMENT"
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

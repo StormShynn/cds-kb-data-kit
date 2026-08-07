@@ -1,6 +1,6 @@
 ---
 name: I_CREDITMANAGEMENTSEGMENTTXT
-description: Credit ManagementMENTSEGMENTTXT
+description: "Credit ManagementMENTSEGMENTTXT"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

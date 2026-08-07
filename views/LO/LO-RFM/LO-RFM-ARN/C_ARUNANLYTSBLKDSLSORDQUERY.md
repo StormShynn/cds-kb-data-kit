@@ -1,27 +1,27 @@
 ---
 name: C_ARUNANLYTSBLKDSLSORDQUERY
-description: Sales Orders with exceptions
+description: "Sales Orders with exceptions"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSBLKDSLSORDQUERY')/$value
-semantic_en: Sales Orders with exceptions
-semantic_vi: Sales Orders with exceptions — CDS view tiêu dùng dựa trên I_ARunAnlytsBlkdSlsOrdCube.
+semantic_en: "Sales Orders with exceptions"
+semantic_vi: "Sales Orders with exceptions — CDS view tiêu dùng dựa trên I_ARunAnlytsBlkdSlsOrdCube."
 keywords:
-  - sales
-  - orders
-  - with
-  - exceptions
-  - requirement
-  - document
-  - number
-  - item
-  - issue
-  - name
-  - order
-  - items
+  - "sales"
+  - "orders"
+  - "with"
+  - "exceptions"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "issue"
+  - "name"
+  - "order"
+  - "items"
 tags:
   - LO
   - bo:salesorder

@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCCHARCCSTRTSTATUST
-description: Prodalloccharccstrtstatust
+description: "Prodalloccharccstrtstatust"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

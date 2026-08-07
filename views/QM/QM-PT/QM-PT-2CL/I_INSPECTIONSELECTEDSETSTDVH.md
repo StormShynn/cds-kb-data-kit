@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONSELECTEDSETSTDVH
-description: Inspectionselectedsetstdvh
+description: "Inspectionselectedsetstdvh"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

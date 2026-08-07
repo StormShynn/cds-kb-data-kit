@@ -1,6 +1,6 @@
 ---
 name: I_SESWORKFLOWEMAILDEADLINE
-description: Sesworkflowemaildeadline
+description: "Sesworkflowemaildeadline"
 app_component: MM-PUR-SVC-SES-2CL
 software_component: SAPSCORE
 release_state: released

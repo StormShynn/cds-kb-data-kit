@@ -1,13 +1,13 @@
 ---
 name: I_EWM_WHSEDOCUMENTITEM
-description: Warehouse Document Item
+description: "Warehouse Document Item"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEDOCUMENTITEM')/$value
-semantic_en: Warehouse Document Item
+semantic_en: "Warehouse Document Item"
 tags:
   - SCM
   - component:SCM-EWM-WOP-2CL

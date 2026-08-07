@@ -1,13 +1,13 @@
 ---
 name: I_LOANTYPEPRODTYPERELSHP
-description: Loan Type Product Type Relationship
+description: "Loan Type Product Type Relationship"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANTYPEPRODTYPERELSHP')/$value
-semantic_en: Loan Type Product Type Relationship
+semantic_en: "Loan Type Product Type Relationship"
 tags:
   - FS
   - bo:material

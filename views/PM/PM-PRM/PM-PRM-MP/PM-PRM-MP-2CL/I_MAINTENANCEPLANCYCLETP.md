@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEPLANCYCLETP
-description: Maintenance PlanCYCLETP
+description: "Maintenance PlanCYCLETP"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

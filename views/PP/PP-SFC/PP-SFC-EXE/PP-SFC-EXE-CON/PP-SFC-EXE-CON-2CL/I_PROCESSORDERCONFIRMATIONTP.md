@@ -1,6 +1,6 @@
 ---
 name: I_PROCESSORDERCONFIRMATIONTP
-description: Processorderconfirmationtp
+description: "Processorderconfirmationtp"
 app_component: PP-SFC-EXE-CON-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DSD_SETTLEMENTDOCUMENTHEADER
-description: Dsd Settlementdocumentheader
+description: "Dsd Settlementdocumentheader"
 app_component: LE-DSD
 software_component: SAPSCORE
 release_state: released

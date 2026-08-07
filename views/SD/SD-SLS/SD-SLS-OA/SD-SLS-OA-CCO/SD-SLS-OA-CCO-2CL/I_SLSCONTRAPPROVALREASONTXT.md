@@ -1,6 +1,6 @@
 ---
 name: I_SLSCONTRAPPROVALREASONTXT
-description: Slscontrapprovalreasontxt
+description: "Slscontrapprovalreasontxt"
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

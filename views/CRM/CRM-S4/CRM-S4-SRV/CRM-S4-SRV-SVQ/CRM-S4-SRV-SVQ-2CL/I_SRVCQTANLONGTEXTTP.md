@@ -1,6 +1,6 @@
 ---
 name: I_SRVCQTANLONGTEXTTP
-description: Srvcqtanlongtexttp
+description: "Srvcqtanlongtexttp"
 app_component: CRM-S4-SRV-SVQ-2CL
 software_component: SAPSCORE
 release_state: released

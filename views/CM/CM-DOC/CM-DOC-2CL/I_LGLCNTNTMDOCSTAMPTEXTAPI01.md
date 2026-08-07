@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMDOCSTAMPTEXTAPI01
-description: Lglcntntmdocstamptextapi 01
+description: "Lglcntntmdocstamptextapi 01"
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

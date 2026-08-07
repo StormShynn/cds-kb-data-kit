@@ -1,13 +1,13 @@
 ---
 name: I_DEPRAREAFORLEDGERTEXT
-description: This CDS view provides the prerequisites for answering the following business question: How many depreciation areas are defined in a company code / ledger?
+description: "This CDS view provides the prerequisites for answering the following business question: How many depreciation areas are defined in a company code / ledger?"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DEPRAREAFORLEDGERTEXT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: How many depreciation areas are defined in a company code / ledger?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: How many depreciation areas are defined in a company code / ledger?"
 tags:
   - FI
   - bo:asset

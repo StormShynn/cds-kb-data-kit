@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLINVCMGMTACCTGDOCTYPE
-description: Cntrlinvcmgmtacctgdoctype
+description: "Cntrlinvcmgmtacctgdoctype"
 app_component: MM-IV-HUB-CIM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASECONTRACTITEMAPI01
-description: Purchase ContractITEMAPI 01
+description: "Purchase ContractITEMAPI 01"
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

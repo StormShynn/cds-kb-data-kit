@@ -1,6 +1,6 @@
 ---
 name: D_CONDITIONRECORDCRITERIAITEMP
-description: D Condition RecordCRITERIAITEMP
+description: "D Condition RecordCRITERIAITEMP"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

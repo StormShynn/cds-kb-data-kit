@@ -1,6 +1,6 @@
 ---
 name: I_BR_CREDITCARDCOMPANYTEXT
-description: BR Creditcardcompanytext
+description: "BR Creditcardcompanytext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

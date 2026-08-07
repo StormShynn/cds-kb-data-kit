@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONMODETEXT_2
-description: Transportationmodetext 2
+description: "Transportationmodetext 2"
 app_component: TM-MD-TN-2CL
 software_component: SAPSCORE
 release_state: released

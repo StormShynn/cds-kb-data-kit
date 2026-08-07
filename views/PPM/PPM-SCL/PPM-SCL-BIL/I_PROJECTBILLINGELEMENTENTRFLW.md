@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTBILLINGELEMENTENTRFLW
-description: Projectbillingelemententrflw
+description: "Projectbillingelemententrflw"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

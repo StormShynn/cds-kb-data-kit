@@ -1,13 +1,13 @@
 ---
 name: I_STOCKTRANSPORTORDERSHIPPING
-description: Stock Transport Order Shipping Data
+description: "Stock Transport Order Shipping Data"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERSHIPPING')/$value
-semantic_en: Stock Transport Order Shipping Data
+semantic_en: "Stock Transport Order Shipping Data"
 tags:
   - MM
   - bo:inventory

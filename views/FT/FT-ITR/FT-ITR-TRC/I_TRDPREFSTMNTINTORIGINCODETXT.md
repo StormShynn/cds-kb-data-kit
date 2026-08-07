@@ -1,6 +1,6 @@
 ---
 name: I_TRDPREFSTMNTINTORIGINCODETXT
-description: Trdprefstmntintorigincodetxt
+description: "Trdprefstmntintorigincodetxt"
 app_component: FT-ITR-TRC
 software_component: SAPSCORE
 release_state: released

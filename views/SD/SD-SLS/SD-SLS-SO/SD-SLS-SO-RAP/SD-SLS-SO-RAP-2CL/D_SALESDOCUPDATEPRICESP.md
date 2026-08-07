@@ -1,6 +1,6 @@
 ---
 name: D_SALESDOCUPDATEPRICESP
-description: D Salesdocupdatepricesp
+description: "D Salesdocupdatepricesp"
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

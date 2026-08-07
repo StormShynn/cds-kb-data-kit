@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRINVCWRKFLWEMLDEADLINE
-description: Suplrinvcwrkflwemldeadline
+description: "Suplrinvcwrkflwemldeadline"
 app_component: MM-IV-INT-WF-2CL
 software_component: SAPSCORE
 release_state: released

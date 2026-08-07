@@ -1,6 +1,6 @@
 ---
 name: I_MERCHANDISECATEGORY
-description: Merchandisecategory
+description: "Merchandisecategory"
 app_component: LO-RFM-MD-MC
 software_component: SAPSCORE
 release_state: released

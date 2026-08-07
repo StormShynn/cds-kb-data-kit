@@ -1,6 +1,6 @@
 ---
 name: I_PURREQNRELEASECONTROLCODE
-description: Purreqnreleasecontrolcode
+description: "Purreqnreleasecontrolcode"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

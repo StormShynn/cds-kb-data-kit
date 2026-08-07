@@ -1,6 +1,6 @@
 ---
 name: I_CN_BANKRECONCILIATIONSTSTEXT
-description: CN Bankreconciliationststext
+description: "CN Bankreconciliationststext"
 app_component: FI-LOC-EPI-CN
 software_component: SAPSCORE
 release_state: released

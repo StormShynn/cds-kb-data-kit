@@ -1,6 +1,6 @@
 ---
 name: C_FINTRANSACTIONNPVQUERY
-description: Fintransactionnpvquery
+description: "Fintransactionnpvquery"
 app_component: FIN-FSCM-TRM-MR-2CL
 software_component: SAPSCORE
 release_state: released

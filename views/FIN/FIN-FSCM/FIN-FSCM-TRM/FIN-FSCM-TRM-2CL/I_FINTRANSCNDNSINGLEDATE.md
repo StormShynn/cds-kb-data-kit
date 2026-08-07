@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSCNDNSINGLEDATE
-description: This CDS view provides information about the conditions of a financial transactions with single dates (the indicator denoting that this condition has single dates is set). This CDS view provides the prerequisites for answering the following business questions: What is the calculation date of the condition item? What is the due date of the condition item?
+description: "This CDS view provides information about the conditions of a financial transactions with single dates (the indicator denoting that this condition has single dates is set). This CDS view provides the prerequisites for answering the following business questions: What is the calculation date of the condition item? What is the due date of the condition item?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSCNDNSINGLEDATE')/$value
-semantic_en: This CDS view provides information about the conditions of a financial transactions with single dates (the indicator denoting that this condition has single dates is set). This CDS view provides the prerequisites for answering the following business questions: What is the calculation date of the condition item? What is the due date of the condition item?
+semantic_en: "This CDS view provides information about the conditions of a financial transactions with single dates (the indicator denoting that this condition has single dates is set). This CDS view provides the prerequisites for answering the following business questions: What is the calculation date of the condition item? What is the due date of the condition item?"
 tags:
   - FIN
   - bo:companycode

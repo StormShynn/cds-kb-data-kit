@@ -1,6 +1,6 @@
 ---
 name: I_PLANNEDORDERBOMCATTEXT
-description: Planned OrderBOMCATTEXT
+description: "Planned OrderBOMCATTEXT"
 app_component: PP-PLO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_EWM_STORAGEBINISEMPTYTEXT
-description: Ewm Storagebinisemptytext
+description: "Ewm Storagebinisemptytext"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

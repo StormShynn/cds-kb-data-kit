@@ -1,6 +1,6 @@
 ---
 name: I_PURGCATSUPPLIERAPI01
-description: Purgcatsupplierapi 01
+description: "Purgcatsupplierapi 01"
 app_component: SLC-CAT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_GRANTEEMGMTBDGTPHASE
-description: Grantee Management Budget Phase
+description: "Grantee Management Budget Phase"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRANTEEMGMTBDGTPHASE')/$value
-semantic_en: Grantee Management Budget Phase
+semantic_en: "Grantee Management Budget Phase"
 tags:
   - PSM
   - budget

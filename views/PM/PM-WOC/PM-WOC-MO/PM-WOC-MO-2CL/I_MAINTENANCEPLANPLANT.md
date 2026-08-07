@@ -1,13 +1,13 @@
 ---
 name: I_MAINTENANCEPLANPLANT
-description: Maintenance Planning Plant
+description: "Maintenance Planning Plant"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTENANCEPLANPLANT')/$value
-semantic_en: Maintenance Planning Plant
+semantic_en: "Maintenance Planning Plant"
 tags:
   - PM
   - bo:maintenanceorder

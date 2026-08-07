@@ -1,6 +1,6 @@
 ---
 name: I_CUSTABAPOBJDIRECTORYENTRY
-description: Custabapobjdirectoryentry
+description: "Custabapobjdirectoryentry"
 app_component: BC-CTS-ORG
 software_component: SAP_BASIS
 release_state: released

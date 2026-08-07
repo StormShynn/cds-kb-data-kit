@@ -1,13 +1,13 @@
 ---
 name: I_ONRRPROCESSINGEXCEPTION
-description: Office of Natural Resources Revenue Processing Exception
+description: "Office of Natural Resources Revenue Processing Exception"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ONRRPROCESSINGEXCEPTION')/$value
-semantic_en: Office of Natural Resources Revenue Processing Exception
+semantic_en: "Office of Natural Resources Revenue Processing Exception"
 tags:
   - IS
   - bo:companycode

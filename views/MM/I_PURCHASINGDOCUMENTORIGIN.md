@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGDOCUMENTORIGIN
-description: Purchasingdocumentorigin
+description: "Purchasingdocumentorigin"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

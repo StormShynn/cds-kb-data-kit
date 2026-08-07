@@ -1,6 +1,6 @@
 ---
 name: I_PURGPRCGCONDITIONRECORD
-description: PURGPRCGCondition Record
+description: "PURGPRCGCondition Record"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

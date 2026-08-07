@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERDELIVERYDOCUMENT
-description: Serial NumberDelivery DocumentUMENT
+description: "Serial NumberDelivery DocumentUMENT"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

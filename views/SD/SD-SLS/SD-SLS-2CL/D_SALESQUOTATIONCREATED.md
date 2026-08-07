@@ -1,6 +1,6 @@
 ---
 name: D_SALESQUOTATIONCREATED
-description: D Salesquotationcreated
+description: "D Salesquotationcreated"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

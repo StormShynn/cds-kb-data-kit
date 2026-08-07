@@ -1,6 +1,6 @@
 ---
 name: D_SUPLRINVCCHANGEACCASSGMTP
-description: D Suplrinvcchangeaccassgmtp
+description: "D Suplrinvcchangeaccassgmtp"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

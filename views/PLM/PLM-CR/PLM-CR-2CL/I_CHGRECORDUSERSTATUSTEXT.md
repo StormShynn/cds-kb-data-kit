@@ -1,13 +1,13 @@
 ---
 name: I_CHGRECORDUSERSTATUSTEXT
-description: Change Record user status - Text
+description: "Change Record user status - Text"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHGRECORDUSERSTATUSTEXT')/$value
-semantic_en: Change Record user status - Text
+semantic_en: "Change Record user status - Text"
 tags:
   - PLM
   - component:PLM-CR-2CL

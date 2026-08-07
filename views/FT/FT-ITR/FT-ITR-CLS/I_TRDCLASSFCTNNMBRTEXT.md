@@ -1,6 +1,6 @@
 ---
 name: I_TRDCLASSFCTNNMBRTEXT
-description: Trdclassfctnnmbrtext
+description: "Trdclassfctnnmbrtext"
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

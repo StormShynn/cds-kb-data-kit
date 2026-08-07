@@ -1,13 +1,13 @@
 ---
 name: I_WORKASSGMTADDRESSDEX
-description: Work Assignment Address Details
+description: "Work Assignment Address Details"
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTADDRESSDEX')/$value
-semantic_en: Work Assignment Address Details
+semantic_en: "Work Assignment Address Details"
 tags:
   - CA
   - bo:salesorganization

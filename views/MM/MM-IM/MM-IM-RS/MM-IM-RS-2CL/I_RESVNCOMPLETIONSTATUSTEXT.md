@@ -1,6 +1,6 @@
 ---
 name: I_RESVNCOMPLETIONSTATUSTEXT
-description: Resvncompletionstatustext
+description: "Resvncompletionstatustext"
 app_component: MM-IM-RS-2CL
 software_component: SAPSCORE
 release_state: released

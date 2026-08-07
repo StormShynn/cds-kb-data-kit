@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTTRANSFLESSORLIENTXT
-description: Agreement Transfer Lessor Lien - Text
+description: "Agreement Transfer Lessor Lien - Text"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTTRANSFLESSORLIENTXT')/$value
-semantic_en: Agreement Transfer Lessor Lien - Text
+semantic_en: "Agreement Transfer Lessor Lien - Text"
 tags:
   - FS
   - bo:salesorder

@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRCONFCATINTERNALASSGMT
-description: Suplrconfcatinternalassgmt
+description: "Suplrconfcatinternalassgmt"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

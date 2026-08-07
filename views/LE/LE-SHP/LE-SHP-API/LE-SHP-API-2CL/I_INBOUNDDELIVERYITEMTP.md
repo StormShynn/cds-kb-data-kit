@@ -1,6 +1,6 @@
 ---
 name: I_INBOUNDDELIVERYITEMTP
-description: Inbound DeliveryITEMTP
+description: "Inbound DeliveryITEMTP"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

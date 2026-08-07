@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDRESOURCETP
-description: Projectdemandresourcetp
+description: "Projectdemandresourcetp"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

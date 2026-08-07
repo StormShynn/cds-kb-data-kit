@@ -1,6 +1,6 @@
 ---
 name: I_JOURNALENTRYITEMONETIMEDATA
-description: Journal EntryITEMONETIMEDATA
+description: "Journal EntryITEMONETIMEDATA"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

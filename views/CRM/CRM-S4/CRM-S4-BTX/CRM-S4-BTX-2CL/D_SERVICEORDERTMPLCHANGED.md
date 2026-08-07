@@ -1,6 +1,6 @@
 ---
 name: D_SERVICEORDERTMPLCHANGED
-description: D Service OrderTMPLCHANGED
+description: "D Service OrderTMPLCHANGED"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

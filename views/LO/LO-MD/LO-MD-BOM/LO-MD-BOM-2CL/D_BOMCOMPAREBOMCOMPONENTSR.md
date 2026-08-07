@@ -1,6 +1,6 @@
 ---
 name: D_BOMCOMPAREBOMCOMPONENTSR
-description: D Bomcomparebomcomponentsr
+description: "D Bomcomparebomcomponentsr"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

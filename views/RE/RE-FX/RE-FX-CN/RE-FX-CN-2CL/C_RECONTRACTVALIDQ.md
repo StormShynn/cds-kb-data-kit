@@ -1,13 +1,13 @@
 ---
 name: C_RECONTRACTVALIDQ
-description: Valid Contract Report
+description: "Valid Contract Report"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTVALIDQ')/$value
-semantic_en: Valid Contract Report
+semantic_en: "Valid Contract Report"
 tags:
   - RE
   - bo:purchaseorder

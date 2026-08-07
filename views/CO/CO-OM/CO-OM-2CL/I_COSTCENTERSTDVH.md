@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERSTDVH
-description: Cost CenterSTDVH
+description: "Cost CenterSTDVH"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

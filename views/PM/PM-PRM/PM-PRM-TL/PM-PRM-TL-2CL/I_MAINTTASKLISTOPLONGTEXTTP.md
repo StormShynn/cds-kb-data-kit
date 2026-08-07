@@ -1,6 +1,6 @@
 ---
 name: I_MAINTTASKLISTOPLONGTEXTTP
-description: Maintenance Task ListOPLONGTEXTTP
+description: "Maintenance Task ListOPLONGTEXTTP"
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_PRODUCTCHANGED
-description: D Productchanged
+description: "D Productchanged"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

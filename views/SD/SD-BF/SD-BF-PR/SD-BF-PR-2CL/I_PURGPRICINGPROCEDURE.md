@@ -1,6 +1,6 @@
 ---
 name: I_PURGPRICINGPROCEDURE
-description: Purgpricingprocedure
+description: "Purgpricingprocedure"
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released

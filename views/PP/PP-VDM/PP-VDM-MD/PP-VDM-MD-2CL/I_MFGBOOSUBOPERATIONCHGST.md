@@ -1,6 +1,6 @@
 ---
 name: I_MFGBOOSUBOPERATIONCHGST
-description: Mfgboosuboperationchgst
+description: "Mfgboosuboperationchgst"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

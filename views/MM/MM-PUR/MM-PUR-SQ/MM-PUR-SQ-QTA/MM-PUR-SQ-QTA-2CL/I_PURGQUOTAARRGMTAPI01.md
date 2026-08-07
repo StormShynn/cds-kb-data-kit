@@ -1,6 +1,6 @@
 ---
 name: I_PURGQUOTAARRGMTAPI01
-description: Purgquotaarrgmtapi 01
+description: "Purgquotaarrgmtapi 01"
 app_component: MM-PUR-SQ-QTA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,16 +1,16 @@
 ---
 name: I_TRDGCONTRITEM
-description: Trading Contract Item
+description: "Trading Contract Item"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value
-semantic_en: Trading Contract Item
+semantic_en: "Trading Contract Item"
 keywords:
-  - Trading Contract Item
-  - Trading Contract Item
+  - "Trading Contract Item"
+  - "Trading Contract Item"
 tags:
   - LO
   - component:LO-GT

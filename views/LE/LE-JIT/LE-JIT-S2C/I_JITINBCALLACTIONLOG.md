@@ -1,6 +1,6 @@
 ---
 name: I_JITINBCALLACTIONLOG
-description: Jitinbcallactionlog
+description: "Jitinbcallactionlog"
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released

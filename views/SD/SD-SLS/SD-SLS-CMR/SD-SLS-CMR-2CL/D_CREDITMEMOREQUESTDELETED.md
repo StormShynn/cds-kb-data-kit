@@ -1,6 +1,6 @@
 ---
 name: D_CREDITMEMOREQUESTDELETED
-description: D Creditmemorequestdeleted
+description: "D Creditmemorequestdeleted"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

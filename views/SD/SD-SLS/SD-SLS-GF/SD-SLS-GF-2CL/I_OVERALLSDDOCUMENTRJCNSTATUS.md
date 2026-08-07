@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLSDDOCUMENTRJCNSTATUS
-description: Overallsddocumentrjcnstatus
+description: "Overallsddocumentrjcnstatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

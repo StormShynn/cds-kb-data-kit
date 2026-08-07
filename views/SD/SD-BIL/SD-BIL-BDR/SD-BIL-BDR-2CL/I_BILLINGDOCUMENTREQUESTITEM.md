@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTREQUESTITEM
-description: Billing DocumentUMENTREQUESTITEM
+description: "Billing DocumentUMENTREQUESTITEM"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

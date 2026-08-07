@@ -1,6 +1,6 @@
 ---
 name: I_SRVCCONFITEMSERIALNUMBERTP
-description: SRVCCONFITEMSerial NumberTP
+description: "SRVCCONFITEMSerial NumberTP"
 app_component: CRM-S4-SRV-SCO-2CL
 software_component: SAPSCORE
 release_state: released

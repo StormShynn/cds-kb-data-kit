@@ -1,22 +1,22 @@
 ---
 name: ZTT_VH_USER.DDLS
-description: Value Help: User
+description: "Value Help: User"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_vh_user.ddls.asddls
-semantic_en: Value Help: User — CDS view based on ZTT_I_USERS.
-semantic_vi: Value Help: User — CDS view dựa trên ZTT_I_USERS.
+semantic_en: "Value Help: User — CDS view based on ZTT_I_USERS."
+semantic_vi: "Value Help: User — CDS view dựa trên ZTT_I_USERS."
 keywords:
-  - value
-  - help:
-  - user
-  - name
-  - first
-  - last
-  - middle
+  - "value"
+  - "help:"
+  - "user"
+  - "name"
+  - "first"
+  - "last"
+  - "middle"
 ---
 # ZTT_VH_USER.DDLS
 

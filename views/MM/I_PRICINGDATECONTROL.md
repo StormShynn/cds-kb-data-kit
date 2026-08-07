@@ -1,6 +1,6 @@
 ---
 name: I_PRICINGDATECONTROL
-description: Pricingdatecontrol
+description: "Pricingdatecontrol"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

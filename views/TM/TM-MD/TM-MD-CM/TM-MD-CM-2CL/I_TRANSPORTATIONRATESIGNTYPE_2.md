@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONRATESIGNTYPE_2
-description: Transportationratesigntype 2
+description: "Transportationratesigntype 2"
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

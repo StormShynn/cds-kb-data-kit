@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDERPHASECONTROLTP
-description: Maintorderphasecontroltp
+description: "Maintorderphasecontroltp"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

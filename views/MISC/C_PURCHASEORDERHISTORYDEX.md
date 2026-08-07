@@ -1,28 +1,28 @@
 ---
 name: C_PURCHASEORDERHISTORYDEX
-description: Data Extraction for Purchase Order History
+description: "Data Extraction for Purchase Order History"
 software_component: SAPSCORE
 release_state: released
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
-semantic_en: Data Extraction for Purchase Order History — Consumption CDS view based on I_PurchaseOrderHistoryAPI01.
-semantic_vi: Data Extraction for Purchase Order History — CDS view tiêu dùng dựa trên I_PurchaseOrderHistoryAPI01.
+semantic_en: "Data Extraction for Purchase Order History — Consumption CDS view based on I_PurchaseOrderHistoryAPI01."
+semantic_vi: "Data Extraction for Purchase Order History — CDS view tiêu dùng dựa trên I_PurchaseOrderHistoryAPI01."
 keywords:
-  - data
-  - extraction
-  - for
-  - purchase
-  - order
-  - history
-  - cast
-  - account
-  - assignment
-  - number
-  - purchasing
-  - document
-  - type
-  - year
+  - "data"
+  - "extraction"
+  - "for"
+  - "purchase"
+  - "order"
+  - "history"
+  - "cast"
+  - "account"
+  - "assignment"
+  - "number"
+  - "purchasing"
+  - "document"
+  - "type"
+  - "year"
 tags:
   - AC
   - component:AC

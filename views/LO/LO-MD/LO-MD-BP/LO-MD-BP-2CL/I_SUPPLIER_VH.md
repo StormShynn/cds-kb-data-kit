@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIER_VH
-description: Supplier (Value Help)
+description: "Supplier (Value Help)"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

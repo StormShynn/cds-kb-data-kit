@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERCATEGORY
-description: Cost CenterCATEGORY
+description: "Cost CenterCATEGORY"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

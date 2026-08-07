@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCUMENTREFOBJECT
-description: Service DocumentUMENTREFOBJECT
+description: "Service DocumentUMENTREFOBJECT"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

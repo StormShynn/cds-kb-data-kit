@@ -1,6 +1,6 @@
 ---
 name: I_WORKFLOWSCENARIODEFTEXT
-description: Workflowscenariodeftext
+description: "Workflowscenariodeftext"
 app_component: BC-BMT-WFM
 software_component: SAP_BASIS
 release_state: released

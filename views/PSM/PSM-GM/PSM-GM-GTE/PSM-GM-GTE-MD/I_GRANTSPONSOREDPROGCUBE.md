@@ -1,13 +1,13 @@
 ---
 name: I_GRANTSPONSOREDPROGCUBE
-description: Grant and Sponsored Program - Cube
+description: "Grant and Sponsored Program - Cube"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRANTSPONSOREDPROGCUBE')/$value
-semantic_en: Grant and Sponsored Program - Cube
+semantic_en: "Grant and Sponsored Program - Cube"
 tags:
   - PSM
   - bo:purchaseorder

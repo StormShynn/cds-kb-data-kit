@@ -1,6 +1,6 @@
 ---
 name: I_RECONTRACTDATA
-description: Recontractdata
+description: "Recontractdata"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released

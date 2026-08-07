@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRSETTLMTTYPE
-description: This CDS view provides the prerequisites for answering questions about condition contracts settlement types. The condition contract settlement types define the rebate type for: Supplier Contract Settlement Customer Contract Settlement
+description: "This CDS view provides the prerequisites for answering questions about condition contracts settlement types. The condition contract settlement types define the rebate type for: Supplier Contract Settlement Customer Contract Settlement"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSETTLMTTYPE')/$value
-semantic_en: This CDS view provides the prerequisites for answering questions about condition contracts settlement types. The condition contract settlement types define the rebate type for: Supplier Contract Settlement Customer Contract Settlement
+semantic_en: "This CDS view provides the prerequisites for answering questions about condition contracts settlement types. The condition contract settlement types define the rebate type for: Supplier Contract Settlement Customer Contract Settlement"
 tags:
   - LO
   - bo:businesspartner

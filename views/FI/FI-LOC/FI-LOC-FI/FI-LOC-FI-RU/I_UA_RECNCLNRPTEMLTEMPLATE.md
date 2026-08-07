@@ -1,13 +1,13 @@
 ---
 name: I_UA_RECNCLNRPTEMLTEMPLATE
-description: UA Reconciliation Report Email Template
+description: "UA Reconciliation Report Email Template"
 app_component: FI-LOC-FI-RU
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_UA_RECNCLNRPTEMLTEMPLATE')/$value
-semantic_en: UA Reconciliation Report Email Template
+semantic_en: "UA Reconciliation Report Email Template"
 tags:
   - FI
   - bo:purchaseorder

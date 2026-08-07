@@ -1,6 +1,6 @@
 ---
 name: I_KR_CUSTVAT
-description: KR Custvat
+description: "KR Custvat"
 app_component: FI-LOC-FI-KR
 software_component: SAPSCORE
 release_state: released

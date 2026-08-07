@@ -1,6 +1,6 @@
 ---
 name: I_VN_EDOCINVOICE
-description: VN Edocinvoice
+description: "VN Edocinvoice"
 app_component: CA-GTF-CSC-EDO-VN
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PHYSINVTRYSTATUST
-description: Physinvtrystatust
+description: "Physinvtrystatust"
 app_component: MM-IM-VDM-PI-2CL
 software_component: SAPSCORE
 release_state: released

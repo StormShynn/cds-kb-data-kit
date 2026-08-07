@@ -1,6 +1,6 @@
 ---
 name: I_CAWRITEOFFREASON
-description: Cawriteoffreason
+description: "Cawriteoffreason"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

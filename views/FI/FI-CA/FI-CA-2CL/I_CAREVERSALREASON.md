@@ -1,6 +1,6 @@
 ---
 name: I_CAREVERSALREASON
-description: Careversalreason
+description: "Careversalreason"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

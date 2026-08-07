@@ -1,13 +1,13 @@
 ---
 name: I_RSHPROJECTASSIGNMENTHRS
-description: This CDS view provides the prerequisites for answering the following business questions: Which resource is assigned to which project? How long does the assignment last? For how many hours is the resource assigned to the project? Which resource requests are staffed? For which project is a resource staffed? What is the start and end date of an assignment?
+description: "This CDS view provides the prerequisites for answering the following business questions: Which resource is assigned to which project? How long does the assignment last? For how many hours is the resource assigned to the project? Which resource requests are staffed? For which project is a resource staffed? What is the start and end date of an assignment?"
 app_component: CA-RSH-PS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RSHPROJECTASSIGNMENTHRS')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Which resource is assigned to which project? How long does the assignment last? For how many hours is the resource assigned to the project? Which resource requests are staffed? For which project is a resource staffed? What is the start and end date of an assignment?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which resource is assigned to which project? How long does the assignment last? For how many hours is the resource assigned to the project? Which resource requests are staffed? For which project is a resource staffed? What is the start and end date of an assignment?"
 tags:
   - CA
   - bo:plant

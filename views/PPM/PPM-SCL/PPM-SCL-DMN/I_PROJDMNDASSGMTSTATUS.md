@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDASSGMTSTATUS
-description: Projdmndassgmtstatus
+description: "Projdmndassgmtstatus"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

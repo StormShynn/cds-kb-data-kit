@@ -1,6 +1,6 @@
 ---
 name: D_SERIALIZEDMATLITMCHGSRLNMBRP
-description: D Serializedmatlitmchgsrlnmbrp
+description: "D Serializedmatlitmchgsrlnmbrp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

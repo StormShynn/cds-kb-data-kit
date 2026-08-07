@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALCRITERIONWEIGHT
-description: Suplrevalcriterionweight
+description: "Suplrevalcriterionweight"
 app_component: MM-PUR-2CL
 software_component: SAPSCORE
 release_state: released

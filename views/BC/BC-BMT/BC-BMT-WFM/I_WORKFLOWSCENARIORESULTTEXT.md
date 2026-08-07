@@ -1,6 +1,6 @@
 ---
 name: I_WORKFLOWSCENARIORESULTTEXT
-description: Workflowscenarioresulttext
+description: "Workflowscenarioresulttext"
 app_component: BC-BMT-WFM
 software_component: SAP_BASIS
 release_state: released

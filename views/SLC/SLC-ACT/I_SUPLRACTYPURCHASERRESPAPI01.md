@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRACTYPURCHASERRESPAPI01
-description: Suplractypurchaserrespapi 01
+description: "Suplractypurchaserrespapi 01"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

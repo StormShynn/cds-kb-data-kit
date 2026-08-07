@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNCNSTNTCRCYVERSDRVTN
-description: Drvtn of Cnsldtn Actl Cnstnt Rates Vers
+description: "Drvtn of Cnsldtn Actl Cnstnt Rates Vers"
 app_component: FIN-CS-BV-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNCNSTNTCRCYVERSDRVTN')/$value
-semantic_en: Drvtn of Cnsldtn Actl Cnstnt Rates Vers
+semantic_en: "Drvtn of Cnsldtn Actl Cnstnt Rates Vers"
 tags:
   - FIN
   - bo:salesorganization

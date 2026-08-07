@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDCADSTST
-description: Documentinforecordcadstst
+description: "Documentinforecordcadstst"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

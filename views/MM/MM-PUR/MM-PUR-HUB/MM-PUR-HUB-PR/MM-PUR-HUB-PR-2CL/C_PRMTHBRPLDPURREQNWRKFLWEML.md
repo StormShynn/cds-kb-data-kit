@@ -1,6 +1,6 @@
 ---
 name: C_PRMTHBRPLDPURREQNWRKFLWEML
-description: Prmthbrpldpurreqnwrkflweml
+description: "Prmthbrpldpurreqnwrkflweml"
 app_component: MM-PUR-HUB-PR-2CL
 software_component: SAPSCORE
 release_state: released

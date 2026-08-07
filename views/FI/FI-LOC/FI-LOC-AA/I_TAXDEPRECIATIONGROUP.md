@@ -1,6 +1,6 @@
 ---
 name: I_TAXDEPRECIATIONGROUP
-description: Taxdepreciationgroup
+description: "Taxdepreciationgroup"
 app_component: FI-LOC-AA
 software_component: SAPSCORE
 release_state: released

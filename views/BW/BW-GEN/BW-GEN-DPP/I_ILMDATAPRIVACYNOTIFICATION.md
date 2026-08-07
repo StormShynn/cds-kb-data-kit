@@ -1,13 +1,13 @@
 ---
 name: I_ILMDATAPRIVACYNOTIFICATION
-description: This CDS view provides the prerequisites for answering the following business questions: Do you want to extract the notifications of the personal or application data being archived or deleted or destroyed from the application system?
+description: "This CDS view provides the prerequisites for answering the following business questions: Do you want to extract the notifications of the personal or application data being archived or deleted or destroyed from the application system?"
 app_component: BW-GEN-DPP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ILMDATAPRIVACYNOTIFICATION')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Do you want to extract the notifications of the personal or application data being archived or deleted or destroyed from the application system?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Do you want to extract the notifications of the personal or application data being archived or deleted or destroyed from the application system?"
 tags:
   - BW
   - bo:companycode

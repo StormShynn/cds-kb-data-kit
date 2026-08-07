@@ -1,6 +1,6 @@
 ---
 name: I_CITCLASSIFICATIONCODEVH
-description: Citclassificationcodevh
+description: "Citclassificationcodevh"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERCATEGORYAPPL
-description: Work CenterCATEGORYAPPL
+description: "Work CenterCATEGORYAPPL"
 app_component: PP-CFS-CE-2CL
 software_component: SAPSCORE
 release_state: released

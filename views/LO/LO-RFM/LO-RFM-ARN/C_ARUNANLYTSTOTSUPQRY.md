@@ -1,27 +1,27 @@
 ---
 name: C_ARUNANLYTSTOTSUPQRY
-description: Total Supply of all Document Types Query
+description: "Total Supply of all Document Types Query"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSTOTSUPQRY')/$value
-semantic_en: Total Supply of all Document Types Query
-semantic_vi: Total Supply of all Document Types Query — CDS view tiêu dùng dựa trên I_ARunAnlytsTotSupCube.
+semantic_en: "Total Supply of all Document Types Query"
+semantic_vi: "Total Supply of all Document Types Query — CDS view tiêu dùng dựa trên I_ARunAnlytsTotSupCube."
 keywords:
-  - total
-  - supply
-  - all
-  - document
-  - types
-  - query
-  - product
-  - plant
-  - batch
-  - storage
-  - location
-  - number
+  - "total"
+  - "supply"
+  - "all"
+  - "document"
+  - "types"
+  - "query"
+  - "product"
+  - "plant"
+  - "batch"
+  - "storage"
+  - "location"
+  - "number"
 tags:
   - LO
   - component:LO-RFM-ARN

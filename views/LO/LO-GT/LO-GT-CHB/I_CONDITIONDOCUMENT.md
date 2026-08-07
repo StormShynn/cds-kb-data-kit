@@ -1,6 +1,6 @@
 ---
 name: I_CONDITIONDOCUMENT
-description: Conditiondocument
+description: "Conditiondocument"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

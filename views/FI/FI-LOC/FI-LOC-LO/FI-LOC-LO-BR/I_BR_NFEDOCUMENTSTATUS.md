@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFEDOCUMENTSTATUS
-description: BR Nfedocumentstatus
+description: "BR Nfedocumentstatus"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

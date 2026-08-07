@@ -1,6 +1,6 @@
 ---
 name: I_CSGNMTANDSTOTXPRPSLTAXITEM
-description: Csgnmtandstotxprpsltaxitem
+description: "Csgnmtandstotxprpsltaxitem"
 app_component: FI-TXL-TGM
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_CRDTMPAYTBEHAVIORBYSNDR
-description: Credit Mgmt Payment Behavior by Sender
+description: "Credit Mgmt Payment Behavior by Sender"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRDTMPAYTBEHAVIORBYSNDR')/$value
-semantic_en: Credit Mgmt Payment Behavior by Sender
+semantic_en: "Credit Mgmt Payment Behavior by Sender"
 tags:
   - FIN
   - component:FIN-FSCM-CR-2CL

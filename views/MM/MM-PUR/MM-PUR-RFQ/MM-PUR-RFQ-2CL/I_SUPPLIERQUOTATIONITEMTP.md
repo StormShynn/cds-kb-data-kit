@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERQUOTATIONITEMTP
-description: Supplierquotationitemtp
+description: "Supplierquotationitemtp"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

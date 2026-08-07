@@ -1,6 +1,6 @@
 ---
 name: I_DISPUTECASELINKEDOBJECT
-description: Disputecaselinkedobject
+description: "Disputecaselinkedobject"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DELIVERYDOCUMENT
-description: Delivery DocumentUMENT
+description: "Delivery DocumentUMENT"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

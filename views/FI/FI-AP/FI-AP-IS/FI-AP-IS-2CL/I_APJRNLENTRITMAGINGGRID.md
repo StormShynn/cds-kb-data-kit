@@ -1,28 +1,28 @@
 ---
 name: I_APJRNLENTRITMAGINGGRID
-description: This CDS view provides you with an overview of the payables in an aging grid. It shows an aggregated view of the payables per net due interval in the aging grid and per account (that is, per company code or supplier) as well as the payable items. This CDS view provides the prerequisites for answering the following business questions: What suppliers are the payables for? What's the total payable amount to each supplier? What are the payable items for each supplier?
+description: "This CDS view provides you with an overview of the payables in an aging grid. It shows an aggregated view of the payables per net due interval in the aging grid and per account (that is, per company code or supplier) as well as the payable items. This CDS view provides the prerequisites for answering the following business questions: What suppliers are the payables for? What's the total payable amount to each supplier? What are the payable items for each supplier?"
 app_component: FI-AP-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APJRNLENTRITMAGINGGRID')/$value
-semantic_en: This CDS view provides you with an overview of the payables in an aging grid. It shows an aggregated view of the payables per net due interval in the aging grid and per account (that is, per company code or supplier) as well as the payable items. This CDS view provides the prerequisites for answering the following business questions: What suppliers are the payables for? What's the total payable amount to each supplier? What are the payable items for each supplier?
-semantic_vi: Aging Grid of Accounts Payables — CDS view giao diện dựa trên P_APJrnlEntrItmAgingGrid4.
+semantic_en: "This CDS view provides you with an overview of the payables in an aging grid. It shows an aggregated view of the payables per net due interval in the aging grid and per account (that is, per company code or supplier) as well as the payable items. This CDS view provides the prerequisites for answering the following business questions: What suppliers are the payables for? What's the total payable amount to each supplier? What are the payable items for each supplier?"
+semantic_vi: "Aging Grid of Accounts Payables — CDS view giao diện dựa trên P_APJrnlEntrItmAgingGrid4."
 keywords:
-  - aging
-  - grid
-  - accounts
-  - payables
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
-  - ledger
-  - line
-  - item
+  - "aging"
+  - "grid"
+  - "accounts"
+  - "payables"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
+  - "ledger"
+  - "line"
+  - "item"
 tags:
   - FI
   - account

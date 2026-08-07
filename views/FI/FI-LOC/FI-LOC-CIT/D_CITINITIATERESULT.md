@@ -1,6 +1,6 @@
 ---
 name: D_CITINITIATERESULT
-description: D Citinitiateresult
+description: "D Citinitiateresult"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

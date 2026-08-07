@@ -1,15 +1,15 @@
 ---
 name: I_EXPNSETTLMT
-description: Expense Settlement
+description: "Expense Settlement"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMT')/$value
-semantic_en: Expense Settlement
+semantic_en: "Expense Settlement"
 keywords:
-  - Expense Settlement
+  - "Expense Settlement"
 tags:
   - LO
   - component:LO-AB

@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTTERMSCONDITIONS
-description: Paymenttermsconditions
+description: "Paymenttermsconditions"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

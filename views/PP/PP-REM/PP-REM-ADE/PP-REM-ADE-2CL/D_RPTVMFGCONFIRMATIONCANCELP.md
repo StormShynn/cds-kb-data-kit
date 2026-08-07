@@ -1,6 +1,6 @@
 ---
 name: D_RPTVMFGCONFIRMATIONCANCELP
-description: D Rptvmfgconfirmationcancelp
+description: "D Rptvmfgconfirmationcancelp"
 app_component: PP-REM-ADE-2CL
 software_component: SAPSCORE
 release_state: released

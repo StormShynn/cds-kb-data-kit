@@ -1,6 +1,6 @@
 ---
 name: I_BPTXCMPLNCAGREEMENTSTATUS
-description: Bptxcmplncagreementstatus
+description: "Bptxcmplncagreementstatus"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

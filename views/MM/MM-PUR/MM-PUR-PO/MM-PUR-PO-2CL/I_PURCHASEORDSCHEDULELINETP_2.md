@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDSCHEDULELINETP_2
-description: PURCHASEORDSchedule LineTP 2
+description: "PURCHASEORDSchedule LineTP 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

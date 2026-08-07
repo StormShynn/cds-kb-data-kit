@@ -1,6 +1,6 @@
 ---
 name: I_GHGSCP2CALCMETHOD
-description: Ghgscp 2CALCMETHOD
+description: "Ghgscp 2CALCMETHOD"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

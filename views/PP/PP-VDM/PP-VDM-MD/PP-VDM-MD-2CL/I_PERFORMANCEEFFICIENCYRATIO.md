@@ -1,13 +1,13 @@
 ---
 name: I_PERFORMANCEEFFICIENCYRATIO
-description: Performance Efficiency Ratio
+description: "Performance Efficiency Ratio"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERFORMANCEEFFICIENCYRATIO')/$value
-semantic_en: Performance Efficiency Ratio
+semantic_en: "Performance Efficiency Ratio"
 tags:
   - PP
   - bo:companycode

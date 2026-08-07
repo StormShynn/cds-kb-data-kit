@@ -1,13 +1,13 @@
 ---
 name: I_AGENCYPAYORREPORTTYPET
-description: Agency Pay or Report Type - Text
+description: "Agency Pay or Report Type - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGENCYPAYORREPORTTYPET')/$value
-semantic_en: Agency Pay or Report Type - Text
+semantic_en: "Agency Pay or Report Type - Text"
 tags:
   - IS
   - bo:purchaseorder

@@ -1,6 +1,6 @@
 ---
 name: D_SALESDOCCREATEWITHREFDOCP
-description: D Salesdoccreatewithrefdocp
+description: "D Salesdoccreatewithrefdocp"
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

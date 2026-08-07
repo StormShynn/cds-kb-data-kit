@@ -1,16 +1,16 @@
 ---
 name: I_TRDGCONTR
-description: Trading Contract
+description: "Trading Contract"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTR')/$value
-semantic_en: Trading Contract
+semantic_en: "Trading Contract"
 keywords:
-  - Trading Contract
-  - Trading Contract
+  - "Trading Contract"
+  - "Trading Contract"
 tags:
   - LO
   - component:LO-GT

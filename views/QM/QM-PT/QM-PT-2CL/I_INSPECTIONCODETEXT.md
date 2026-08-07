@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONCODETEXT
-description: Inspectioncodetext
+description: "Inspectioncodetext"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

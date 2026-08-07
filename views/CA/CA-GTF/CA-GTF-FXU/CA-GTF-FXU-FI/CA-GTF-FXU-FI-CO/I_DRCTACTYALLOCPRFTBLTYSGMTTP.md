@@ -1,6 +1,6 @@
 ---
 name: I_DRCTACTYALLOCPRFTBLTYSGMTTP
-description: Drctactyallocprftbltysgmttp
+description: "Drctactyallocprftbltysgmttp"
 app_component: CA-GTF-FXU-FI-CO
 software_component: SAPSCORE
 release_state: released

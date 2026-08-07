@@ -1,17 +1,17 @@
 ---
 name: I_GLACCOUNTLINEITEMCUBE
-description: This CDS view provides access to all details of a journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. The most important attributes of business entities are included, such as group G/L account or cost center responsible. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. Compared to the G/L Account Line Item CDS view, in this G/L Account Line Item Cube CDS view, additionally to the identifiers, the names of master data or configuration data is included. This CDS view provides the prerequisites for answering the following business questions: What are the details for a single posting? What postings have accumulated on a cost center during the year? What is the balance of a G/L account as of today?
+description: "This CDS view provides access to all details of a journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. The most important attributes of business entities are included, such as group G/L account or cost center responsible. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. Compared to the G/L Account Line Item CDS view, in this G/L Account Line Item Cube CDS view, additionally to the identifiers, the names of master data or configuration data is included. This CDS view provides the prerequisites for answering the following business questions: What are the details for a single posting? What postings have accumulated on a cost center during the year? What is the balance of a G/L account as of today?"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMCUBE')/$value
-semantic_en: This CDS view provides access to all details of a journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. The most important attributes of business entities are included, such as group G/L account or cost center responsible. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. Compared to the G/L Account Line Item CDS view, in this G/L Account Line Item Cube CDS view, additionally to the identifiers, the names of master data or configuration data is included. This CDS view provides the prerequisites for answering the following business questions: What are the details for a single posting? What postings have accumulated on a cost center during the year? What is the balance of a G/L account as of today?
+semantic_en: "This CDS view provides access to all details of a journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. The most important attributes of business entities are included, such as group G/L account or cost center responsible. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. Compared to the G/L Account Line Item CDS view, in this G/L Account Line Item Cube CDS view, additionally to the identifiers, the names of master data or configuration data is included. This CDS view provides the prerequisites for answering the following business questions: What are the details for a single posting? What postings have accumulated on a cost center during the year? What is the balance of a G/L account as of today?"
 keywords:
-  - G/L Account Line Items Cube
-  - G/L Account Line Items Cube
-  - G/L Account Line Items Cube
+  - "G/L Account Line Items Cube"
+  - "G/L Account Line Items Cube"
+  - "G/L Account Line Items Cube"
 tags:
   - FI
   - account

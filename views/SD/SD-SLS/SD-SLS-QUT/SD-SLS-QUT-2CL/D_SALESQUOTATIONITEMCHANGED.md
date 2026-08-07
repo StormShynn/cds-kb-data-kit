@@ -1,6 +1,6 @@
 ---
 name: D_SALESQUOTATIONITEMCHANGED
-description: D Salesquotationitemchanged
+description: "D Salesquotationitemchanged"
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

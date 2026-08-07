@@ -1,13 +1,13 @@
 ---
 name: I_SALESDEALSTDVH
-description: This CDS view provides a value help for sales deals. It shall be used for value help purposes only. If you intend to select the entire business data, use the Sales Deal view instead.
+description: "This CDS view provides a value help for sales deals. It shall be used for value help purposes only. If you intend to select the entire business data, use the Sales Deal view instead."
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SALESDEALSTDVH')/$value
-semantic_en: This CDS view provides a value help for sales deals. It shall be used for value help purposes only. If you intend to select the entire business data, use the Sales Deal view instead.
+semantic_en: "This CDS view provides a value help for sales deals. It shall be used for value help purposes only. If you intend to select the entire business data, use the Sales Deal view instead."
 tags:
   - SD
   - bo:purchaseorder

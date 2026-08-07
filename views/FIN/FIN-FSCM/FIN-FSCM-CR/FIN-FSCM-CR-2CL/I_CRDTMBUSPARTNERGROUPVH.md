@@ -1,13 +1,13 @@
 ---
 name: I_CRDTMBUSPARTNERGROUPVH
-description: Business Partner Groups
+description: "Business Partner Groups"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRDTMBUSPARTNERGROUPVH')/$value
-semantic_en: Business Partner Groups
+semantic_en: "Business Partner Groups"
 tags:
   - FIN
   - bo:project

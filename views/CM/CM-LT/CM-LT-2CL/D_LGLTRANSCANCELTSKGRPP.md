@@ -1,6 +1,6 @@
 ---
 name: D_LGLTRANSCANCELTSKGRPP
-description: D Lgltranscanceltskgrpp
+description: "D Lgltranscanceltskgrpp"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

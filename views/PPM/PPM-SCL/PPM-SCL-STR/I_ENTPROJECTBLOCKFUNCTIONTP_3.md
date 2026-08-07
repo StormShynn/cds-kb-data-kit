@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJECTBLOCKFUNCTIONTP_3
-description: Entprojectblockfunctiontp 3
+description: "Entprojectblockfunctiontp 3"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

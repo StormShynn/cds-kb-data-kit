@@ -1,6 +1,6 @@
 ---
 name: I_RECURRINGJOURNALENTRY
-description: RECURRINGJournal Entry
+description: "RECURRINGJournal Entry"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

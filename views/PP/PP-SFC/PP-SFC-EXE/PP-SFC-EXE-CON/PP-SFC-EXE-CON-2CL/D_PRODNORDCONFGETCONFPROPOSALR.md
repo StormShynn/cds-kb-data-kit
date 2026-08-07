@@ -1,6 +1,6 @@
 ---
 name: D_PRODNORDCONFGETCONFPROPOSALR
-description: D Prodnordconfgetconfproposalr
+description: "D Prodnordconfgetconfproposalr"
 app_component: PP-SFC-EXE-CON-2CL
 software_component: SAPSCORE
 release_state: released

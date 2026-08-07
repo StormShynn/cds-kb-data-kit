@@ -1,6 +1,6 @@
 ---
 name: I_SALESANALYTICSCUBE_1
-description: Salesanalyticscube 1
+description: "Salesanalyticscube 1"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

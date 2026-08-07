@@ -1,6 +1,6 @@
 ---
 name: I_HDRPICKGINCOMPLTNSTATUST
-description: Hdrpickgincompltnstatust
+description: "Hdrpickgincompltnstatust"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

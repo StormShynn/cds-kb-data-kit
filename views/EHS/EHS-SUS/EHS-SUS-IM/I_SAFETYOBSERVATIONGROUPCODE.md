@@ -1,13 +1,13 @@
 ---
 name: I_SAFETYOBSERVATIONGROUPCODE
-description: Safety Observation Group Code
+description: "Safety Observation Group Code"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SAFETYOBSERVATIONGROUPCODE')/$value
-semantic_en: Safety Observation Group Code
+semantic_en: "Safety Observation Group Code"
 tags:
   - EHS
   - component:EHS-SUS-IM

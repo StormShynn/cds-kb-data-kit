@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTPLANTCOSTING
-description: Productplantcosting
+description: "Productplantcosting"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

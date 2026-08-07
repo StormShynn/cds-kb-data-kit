@@ -1,6 +1,6 @@
 ---
 name: D_PURSCHEDGAGRMTRELEASED
-description: D Purschedgagrmtreleased
+description: "D Purschedgagrmtreleased"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

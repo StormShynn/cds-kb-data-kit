@@ -1,6 +1,6 @@
 ---
 name: I_CRDTMBUSPARTNERGROUPNAME
-description: CRDTMBusiness PartnerNERGROUPNAME
+description: "CRDTMBusiness PartnerNERGROUPNAME"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

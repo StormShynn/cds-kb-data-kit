@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGCATEGORYVALUEHELP
-description: Purchasingcategoryvaluehelp
+description: "Purchasingcategoryvaluehelp"
 app_component: SLC-CAT-2CL
 software_component: SAPSCORE
 release_state: released

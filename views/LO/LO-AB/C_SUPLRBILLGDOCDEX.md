@@ -1,25 +1,25 @@
 ---
 name: C_SUPLRBILLGDOCDEX
-description: Supplier Billing Document Extraction
+description: "Supplier Billing Document Extraction"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRBILLGDOCDEX')/$value
-semantic_en: Supplier Billing Document Extraction
-semantic_vi: Supplier Billing Document Extraction — CDS view tiêu dùng dựa trên R_SuplrBillgDocDEX.
+semantic_en: "Supplier Billing Document Extraction"
+semantic_vi: "Supplier Billing Document Extraction — CDS view tiêu dùng dựa trên R_SuplrBillgDocDEX."
 keywords:
-  - supplier
-  - billing
-  - document
-  - extraction
-  - suplr
-  - billg
-  - item
-  - settlmt
-  - type
-  - process
+  - "supplier"
+  - "billing"
+  - "document"
+  - "extraction"
+  - "suplr"
+  - "billg"
+  - "item"
+  - "settlmt"
+  - "type"
+  - "process"
 tags:
   - LO
   - billing

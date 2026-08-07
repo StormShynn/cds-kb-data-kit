@@ -1,6 +1,6 @@
 ---
 name: I_BR_ICMSEXEMPTIONREASONTEXT
-description: BR Icmsexemptionreasontext
+description: "BR Icmsexemptionreasontext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

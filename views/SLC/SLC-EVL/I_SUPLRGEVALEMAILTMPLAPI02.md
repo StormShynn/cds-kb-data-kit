@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRGEVALEMAILTMPLAPI02
-description: Suplrgevalemailtmplapi 02
+description: "Suplrgevalemailtmplapi 02"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

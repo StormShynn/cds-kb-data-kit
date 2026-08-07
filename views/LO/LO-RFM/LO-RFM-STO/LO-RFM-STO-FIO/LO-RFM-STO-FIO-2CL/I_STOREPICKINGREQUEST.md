@@ -1,13 +1,13 @@
 ---
 name: I_STOREPICKINGREQUEST
-description: Store Picking Request
+description: "Store Picking Request"
 app_component: LO-RFM-STO-FIO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOREPICKINGREQUEST')/$value
-semantic_en: Store Picking Request
+semantic_en: "Store Picking Request"
 tags:
   - LO
   - component:LO-RFM-STO-FIO-2CL

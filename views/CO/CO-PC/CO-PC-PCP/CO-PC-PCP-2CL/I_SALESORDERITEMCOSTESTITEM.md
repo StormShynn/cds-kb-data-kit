@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERITEMCOSTESTITEM
-description: Sales OrderITEMCOSTESTITEM
+description: "Sales OrderITEMCOSTESTITEM"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released

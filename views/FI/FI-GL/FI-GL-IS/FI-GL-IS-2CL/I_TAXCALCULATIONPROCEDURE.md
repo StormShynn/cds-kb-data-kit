@@ -1,6 +1,6 @@
 ---
 name: I_TAXCALCULATIONPROCEDURE
-description: Taxcalculationprocedure
+description: "Taxcalculationprocedure"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,17 +1,17 @@
 ---
 name: I_JOURNALENTRYITEMCUBE
-description: This CDS view provides access to all details of a journal entry item (database table ACDOCA) including the most important business entity, such as company code, G/L account, profit center, segment and many more. This Cube view is based on the Journal Entry Item CDS view. Additionally some associations are resolved to use fields from these associations, especially header fields. The CDS view does not expose technical balance carried forward items of period 000. This CDS view provides the prerequisites for answering the following business questions: Which journal entry items are posted during the year? What is the company code currency of the journal entry item? What is the amount in company code currency of the journal entry items?
+description: "This CDS view provides access to all details of a journal entry item (database table ACDOCA) including the most important business entity, such as company code, G/L account, profit center, segment and many more. This Cube view is based on the Journal Entry Item CDS view. Additionally some associations are resolved to use fields from these associations, especially header fields. The CDS view does not expose technical balance carried forward items of period 000. This CDS view provides the prerequisites for answering the following business questions: Which journal entry items are posted during the year? What is the company code currency of the journal entry item? What is the amount in company code currency of the journal entry items?"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_JOURNALENTRYITEMCUBE')/$value
-semantic_en: This CDS view provides access to all details of a journal entry item (database table ACDOCA) including the most important business entity, such as company code, G/L account, profit center, segment and many more. This Cube view is based on the Journal Entry Item CDS view. Additionally some associations are resolved to use fields from these associations, especially header fields. The CDS view does not expose technical balance carried forward items of period 000. This CDS view provides the prerequisites for answering the following business questions: Which journal entry items are posted during the year? What is the company code currency of the journal entry item? What is the amount in company code currency of the journal entry items?
+semantic_en: "This CDS view provides access to all details of a journal entry item (database table ACDOCA) including the most important business entity, such as company code, G/L account, profit center, segment and many more. This Cube view is based on the Journal Entry Item CDS view. Additionally some associations are resolved to use fields from these associations, especially header fields. The CDS view does not expose technical balance carried forward items of period 000. This CDS view provides the prerequisites for answering the following business questions: Which journal entry items are posted during the year? What is the company code currency of the journal entry item? What is the amount in company code currency of the journal entry items?"
 keywords:
-  - Journal Entry Item - Cube
-  - Journal Entry Item - Cube
-  - Journal Entry Item - Cube
+  - "Journal Entry Item - Cube"
+  - "Journal Entry Item - Cube"
+  - "Journal Entry Item - Cube"
 tags:
   - FI
   - account

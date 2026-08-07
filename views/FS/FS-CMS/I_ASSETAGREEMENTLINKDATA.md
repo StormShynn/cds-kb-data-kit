@@ -1,13 +1,13 @@
 ---
 name: I_ASSETAGREEMENTLINKDATA
-description: Asset Agreement Link Details
+description: "Asset Agreement Link Details"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETAGREEMENTLINKDATA')/$value
-semantic_en: Asset Agreement Link Details
+semantic_en: "Asset Agreement Link Details"
 tags:
   - FS
   - component:FS-CMS

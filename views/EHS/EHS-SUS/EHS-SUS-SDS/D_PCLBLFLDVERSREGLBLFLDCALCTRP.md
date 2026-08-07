@@ -1,6 +1,6 @@
 ---
 name: D_PCLBLFLDVERSREGLBLFLDCALCTRP
-description: D Pclblfldversreglblfldcalctrp
+description: "D Pclblfldversreglblfldcalctrp"
 app_component: EHS-SUS-SDS
 software_component: SAPSCORE
 release_state: released

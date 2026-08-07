@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTINCOMPANYCODESTDVH
-description: GL AccountINCompany CodeSTDVH
+description: "GL AccountINCompany CodeSTDVH"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

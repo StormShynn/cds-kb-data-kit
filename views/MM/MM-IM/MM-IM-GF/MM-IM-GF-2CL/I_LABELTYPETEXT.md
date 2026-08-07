@@ -1,13 +1,13 @@
 ---
 name: I_LABELTYPETEXT
-description: Label Type - Text
+description: "Label Type - Text"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LABELTYPETEXT')/$value
-semantic_en: Label Type - Text
+semantic_en: "Label Type - Text"
 tags:
   - MM
   - component:MM-IM-GF-2CL

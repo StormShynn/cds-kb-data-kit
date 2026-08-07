@@ -1,13 +1,13 @@
 ---
 name: I_CRDTRISKCLASSCHANGESITUATION
-description: Credit Risk Class Change
+description: "Credit Risk Class Change"
 app_component: FIN-FIO-CCD-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRDTRISKCLASSCHANGESITUATION')/$value
-semantic_en: Credit Risk Class Change
+semantic_en: "Credit Risk Class Change"
 tags:
   - FIN
   - component:FIN-FIO-CCD-CR-2CL

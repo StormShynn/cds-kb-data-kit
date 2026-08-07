@@ -1,17 +1,17 @@
 ---
 name: I_MDQANLYTSSCRSUPLRPURC
-description: MDQ Score for Supplier Purchase - Cube
+description: "MDQ Score for Supplier Purchase - Cube"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MDQANLYTSSCRSUPLRPURC')/$value
-semantic_en: MDQ Score for Supplier Purchase - Cube
+semantic_en: "MDQ Score for Supplier Purchase - Cube"
 keywords:
-  - MDQ Score for Supplier Purchase - Cube
-  - MDQ Score for Supplier Purchase - Cube
-  - MDQ Score for Supplier Purchase - Cube
+  - "MDQ Score for Supplier Purchase - Cube"
+  - "MDQ Score for Supplier Purchase - Cube"
+  - "MDQ Score for Supplier Purchase - Cube"
 tags:
   - CA
   - CA-MDG

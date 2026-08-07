@@ -1,6 +1,6 @@
 ---
 name: I_SYSTEMUSER
-description: Systemuser
+description: "Systemuser"
 app_component: BC-SEC-USR-ADM
 software_component: SAP_BASIS
 release_state: released

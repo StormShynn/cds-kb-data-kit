@@ -1,6 +1,6 @@
 ---
 name: I_LOCATIONADDRESSDATATEXT
-description: Locationaddressdatatext
+description: "Locationaddressdatatext"
 app_component: TM-MD-TN-LOC-2CL
 software_component: SAPSCORE
 release_state: released

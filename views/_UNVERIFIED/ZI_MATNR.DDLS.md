@@ -1,19 +1,19 @@
 ---
 name: ZI_MATNR.DDLS
-description: Material list cds
+description: "Material list cds"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/huuhv-0372/rap-basic-cds/blob/7ea18c4628378fb2d9af3f889e6c1e6313108e68/src/zi_matnr.ddls.asddls
-semantic_en: Material list cds — CDS view based on zjh_mara.
-semantic_vi: Material list cds — CDS view dựa trên zjh_mara.
+semantic_en: "Material list cds — CDS view based on zjh_mara."
+semantic_vi: "Material list cds — CDS view dựa trên zjh_mara."
 keywords:
-  - material
-  - list
-  - matnr
-  - description
+  - "material"
+  - "list"
+  - "matnr"
+  - "description"
 tags:
   - IS
   - bo:material

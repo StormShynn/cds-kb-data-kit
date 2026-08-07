@@ -1,13 +1,13 @@
 ---
 name: I_PUBLICHOLIDAYCALENDARHOLIDAY
-description: Public Holiday In Calendar
+description: "Public Holiday In Calendar"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBLICHOLIDAYCALENDARHOLIDAY')/$value
-semantic_en: Public Holiday In Calendar
+semantic_en: "Public Holiday In Calendar"
 tags:
   - CA
   - CA-GTF

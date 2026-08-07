@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRINVCITEMASSETAPI01
-description: Suplrinvcitemassetapi 01
+description: "Suplrinvcitemassetapi 01"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

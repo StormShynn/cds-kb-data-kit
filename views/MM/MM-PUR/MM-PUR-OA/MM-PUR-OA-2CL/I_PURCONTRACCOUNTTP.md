@@ -1,6 +1,6 @@
 ---
 name: I_PURCONTRACCOUNTTP
-description: Purcontraccounttp
+description: "Purcontraccounttp"
 app_component: MM-PUR-OA-2CL
 software_component: SAPSCORE
 release_state: released

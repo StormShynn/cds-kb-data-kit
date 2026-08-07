@@ -1,6 +1,6 @@
 ---
 name: I_DELIVERYSTATUS
-description: Deliverystatus
+description: "Deliverystatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

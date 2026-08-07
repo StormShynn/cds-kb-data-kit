@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCUMENTSTATUS
-description: Service DocumentUMENTSTATUS
+description: "Service DocumentUMENTSTATUS"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

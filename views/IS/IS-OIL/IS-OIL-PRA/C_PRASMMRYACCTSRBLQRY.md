@@ -1,13 +1,13 @@
 ---
 name: C_PRASMMRYACCTSRBLQRY
-description: PRA Summary Accounts Receivable Query
+description: "PRA Summary Accounts Receivable Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRASMMRYACCTSRBLQRY')/$value
-semantic_en: PRA Summary Accounts Receivable Query
+semantic_en: "PRA Summary Accounts Receivable Query"
 tags:
   - IS
   - account

@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERACTIVITYAPI01
-description: Supplieractivityapi 01
+description: "Supplieractivityapi 01"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

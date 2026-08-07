@@ -1,6 +1,6 @@
 ---
 name: I_INSPQUALITYSCOREPROCEDUREVH
-description: Inspqualityscoreprocedurevh
+description: "Inspqualityscoreprocedurevh"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

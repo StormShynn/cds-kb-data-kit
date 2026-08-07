@@ -1,6 +1,6 @@
 ---
 name: I_BR_VEHICLECONDITIONTEXT
-description: BR Vehicleconditiontext
+description: "BR Vehicleconditiontext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

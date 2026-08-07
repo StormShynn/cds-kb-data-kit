@@ -1,13 +1,13 @@
 ---
 name: I_APMOBJECTLISTEXPORTASSGMT
-description: Object list export assignment
+description: "Object list export assignment"
 app_component: FIN-FSCM-PF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APMOBJECTLISTEXPORTASSGMT')/$value
-semantic_en: Object list export assignment
+semantic_en: "Object list export assignment"
 tags:
   - FIN
   - bo:purchaseorder

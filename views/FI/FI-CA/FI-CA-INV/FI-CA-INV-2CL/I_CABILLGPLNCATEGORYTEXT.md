@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGPLNCATEGORYTEXT
-description: Cabillgplncategorytext
+description: "Cabillgplncategorytext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

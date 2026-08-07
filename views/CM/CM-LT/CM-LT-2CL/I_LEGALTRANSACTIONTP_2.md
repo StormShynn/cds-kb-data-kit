@@ -1,6 +1,6 @@
 ---
 name: I_LEGALTRANSACTIONTP_2
-description: Legaltransactiontp 2
+description: "Legaltransactiontp 2"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

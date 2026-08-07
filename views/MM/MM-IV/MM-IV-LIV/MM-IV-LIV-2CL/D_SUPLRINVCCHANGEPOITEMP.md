@@ -1,6 +1,6 @@
 ---
 name: D_SUPLRINVCCHANGEPOITEMP
-description: D Suplrinvcchangepoitemp
+description: "D Suplrinvcchangepoitemp"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

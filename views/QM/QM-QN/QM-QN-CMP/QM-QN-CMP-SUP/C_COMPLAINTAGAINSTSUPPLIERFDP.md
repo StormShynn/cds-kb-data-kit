@@ -1,28 +1,28 @@
 ---
 name: C_COMPLAINTAGAINSTSUPPLIERFDP
-description: FDP for Complaint Against Supplier
+description: "FDP for Complaint Against Supplier"
 app_component: QM-QN-CMP-SUP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMPLAINTAGAINSTSUPPLIERFDP')/$value
-semantic_en: FDP for Complaint Against Supplier
-semantic_vi: FDP for Complaint Against Supplier — CDS view tiêu dùng (transactional data) dựa trên I_ComplaintAgainstSupplier.
+semantic_en: "FDP for Complaint Against Supplier"
+semantic_vi: "FDP for Complaint Against Supplier — CDS view tiêu dùng (transactional data) dựa trên I_ComplaintAgainstSupplier."
 keywords:
-  - fdp
-  - for
-  - complaint
-  - against
-  - supplier
-  - plant
-  - name
-  - qlty
-  - cmpl
-  - lifecycle
-  - status
-  - master
-  - language
+  - "fdp"
+  - "for"
+  - "complaint"
+  - "against"
+  - "supplier"
+  - "plant"
+  - "name"
+  - "qlty"
+  - "cmpl"
+  - "lifecycle"
+  - "status"
+  - "master"
+  - "language"
 tags:
   - QM
   - component:QM-QN-CMP-SUP

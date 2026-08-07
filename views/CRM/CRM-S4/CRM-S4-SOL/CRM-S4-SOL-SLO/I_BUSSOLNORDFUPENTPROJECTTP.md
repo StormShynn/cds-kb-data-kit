@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDFUPENTPROJECTTP
-description: Bussolnordfupentprojecttp
+description: "Bussolnordfupentprojecttp"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

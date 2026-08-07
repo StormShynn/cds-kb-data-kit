@@ -1,6 +1,6 @@
 ---
 name: I_QUALITYNOTIFICATIONPARTNER
-description: Quality NotificationICATIONPARTNER
+description: "Quality NotificationICATIONPARTNER"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released

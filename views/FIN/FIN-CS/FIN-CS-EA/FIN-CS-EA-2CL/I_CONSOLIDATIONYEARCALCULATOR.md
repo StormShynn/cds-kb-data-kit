@@ -1,13 +1,13 @@
 ---
 name: I_CONSOLIDATIONYEARCALCULATOR
-description: This CDS view provides values for Fiscal Year and Fiscal Period and their calculated properties, such as Next Fiscal Period, Previous Fiscal Year, and Fiscal Year Variant. Currently, the Fiscal Year Variant is restricted to the value K4.
+description: "This CDS view provides values for Fiscal Year and Fiscal Period and their calculated properties, such as Next Fiscal Period, Previous Fiscal Year, and Fiscal Year Variant. Currently, the Fiscal Year Variant is restricted to the value K4."
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONSOLIDATIONYEARCALCULATOR')/$value
-semantic_en: This CDS view provides values for Fiscal Year and Fiscal Period and their calculated properties, such as Next Fiscal Period, Previous Fiscal Year, and Fiscal Year Variant. Currently, the Fiscal Year Variant is restricted to the value K4.
+semantic_en: "This CDS view provides values for Fiscal Year and Fiscal Period and their calculated properties, such as Next Fiscal Period, Previous Fiscal Year, and Fiscal Year Variant. Currently, the Fiscal Year Variant is restricted to the value K4."
 tags:
   - FIN
   - bo:companycode

@@ -1,24 +1,24 @@
 ---
 name: C_GLACCOUNTYTDBALANCEQ
-description: Year-to-Date Balances
+description: "Year-to-Date Balances"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTYTDBALANCEQ')/$value
-semantic_en: Year-to-Date Balances
-semantic_vi: Year-to-Date Balances — CDS view tiêu dùng dựa trên I_GLAccountYearToDateBalanceC.
+semantic_en: "Year-to-Date Balances"
+semantic_vi: "Year-to-Date Balances — CDS view tiêu dùng dựa trên I_GLAccountYearToDateBalanceC."
 keywords:
-  - Year-To-Date Balances
-  - year
-  - date
-  - balances
-  - ledger
-  - company
-  - code
-  - fiscal
-  - period
+  - "Year-To-Date Balances"
+  - "year"
+  - "date"
+  - "balances"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "period"
 tags:
   - FI
   - component:FI-FIO-GL-2CL

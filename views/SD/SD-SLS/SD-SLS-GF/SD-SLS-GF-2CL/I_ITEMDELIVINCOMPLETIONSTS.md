@@ -1,6 +1,6 @@
 ---
 name: I_ITEMDELIVINCOMPLETIONSTS
-description: Itemdelivincompletionsts
+description: "Itemdelivincompletionsts"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

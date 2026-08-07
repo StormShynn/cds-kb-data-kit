@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTDATECATTEXT
-description: This CDS view is used to select the settlement date category. Domains: WB2_SETTLEMENT_DATE_TYPE Values: Final Settlement 1 - Partial Settlement 2 - Delta Settlement 3 - Delta Accruals 4 - Accruals Deferral
+description: "This CDS view is used to select the settlement date category. Domains: WB2_SETTLEMENT_DATE_TYPE Values: Final Settlement 1 - Partial Settlement 2 - Delta Settlement 3 - Delta Accruals 4 - Accruals Deferral"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDATECATTEXT')/$value
-semantic_en: This CDS view is used to select the settlement date category. Domains: WB2_SETTLEMENT_DATE_TYPE Values: Final Settlement 1 - Partial Settlement 2 - Delta Settlement 3 - Delta Accruals 4 - Accruals Deferral
+semantic_en: "This CDS view is used to select the settlement date category. Domains: WB2_SETTLEMENT_DATE_TYPE Values: Final Settlement 1 - Partial Settlement 2 - Delta Settlement 3 - Delta Accruals 4 - Accruals Deferral"
 tags:
   - LO
   - bo:companycode

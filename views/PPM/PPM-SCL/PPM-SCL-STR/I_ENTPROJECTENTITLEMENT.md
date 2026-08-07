@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJECTENTITLEMENT
-description: Entprojectentitlement
+description: "Entprojectentitlement"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

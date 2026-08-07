@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTRELDOCSCLIAPI01
-description: Schedgagrmtreldocscliapi 01
+description: "Schedgagrmtreldocscliapi 01"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

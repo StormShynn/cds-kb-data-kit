@@ -1,26 +1,26 @@
 ---
 name: C_COSTCENTERSTATKEYFIGSEMTAG
-description: Cost Center Ststcl Key Figure KPI
+description: "Cost Center Ststcl Key Figure KPI"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COSTCENTERSTATKEYFIGSEMTAG')/$value
-semantic_en: Cost Center Ststcl Key Figure KPI
-semantic_vi: Cost Center Ststcl Key Figure KPI — CDS view tiêu dùng dựa trên I_ActualPlanStatKeyFigSemTag.
+semantic_en: "Cost Center Ststcl Key Figure KPI"
+semantic_vi: "Cost Center Ststcl Key Figure KPI — CDS view tiêu dùng dựa trên I_ActualPlanStatKeyFigSemTag."
 keywords:
-  - cost
-  - center
-  - ststcl
-  - key
-  - figure
-  - kpi
-  - company
-  - code
-  - fiscal
-  - year
-  - period
+  - "cost"
+  - "center"
+  - "ststcl"
+  - "key"
+  - "figure"
+  - "kpi"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - FI
   - bo:companycode

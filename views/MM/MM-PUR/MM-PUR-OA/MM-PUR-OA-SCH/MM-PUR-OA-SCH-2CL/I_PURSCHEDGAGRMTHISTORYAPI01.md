@@ -1,6 +1,6 @@
 ---
 name: I_PURSCHEDGAGRMTHISTORYAPI01
-description: Purschedgagrmthistoryapi 01
+description: "Purschedgagrmthistoryapi 01"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

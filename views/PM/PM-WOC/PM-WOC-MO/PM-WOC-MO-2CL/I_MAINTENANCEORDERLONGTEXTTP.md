@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEORDERLONGTEXTTP
-description: Maintenance OrderLONGTEXTTP
+description: "Maintenance OrderLONGTEXTTP"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

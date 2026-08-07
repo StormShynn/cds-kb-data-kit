@@ -1,6 +1,6 @@
 ---
 name: I_PL_SAFTGENERALSETTINGS
-description: PL Saftgeneralsettings
+description: "PL Saftgeneralsettings"
 app_component: FI-LOC-SAF-PL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BR_SIMPLESCLASSCODE
-description: BR Simplesclasscode
+description: "BR Simplesclasscode"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

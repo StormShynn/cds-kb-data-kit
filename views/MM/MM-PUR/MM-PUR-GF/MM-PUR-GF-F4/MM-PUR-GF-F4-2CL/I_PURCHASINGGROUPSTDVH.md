@@ -1,13 +1,13 @@
 ---
 name: I_PURCHASINGGROUPSTDVH
-description: Purchasing Group
+description: "Purchasing Group"
 app_component: MM-PUR-GF-F4-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PURCHASINGGROUPSTDVH')/$value
-semantic_en: Purchasing Group
+semantic_en: "Purchasing Group"
 tags:
   - MM
   - bo:project

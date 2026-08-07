@@ -1,13 +1,13 @@
 ---
 name: I_ASSGMTEXCHMKTIDFRCODE
-description: Assignment of Exchange to Market Identifier Code
+description: "Assignment of Exchange to Market Identifier Code"
 app_component: CA-GTF-TRB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSGMTEXCHMKTIDFRCODE')/$value
-semantic_en: Assignment of Exchange to Market Identifier Code
+semantic_en: "Assignment of Exchange to Market Identifier Code"
 tags:
   - CA
   - bo:companycode

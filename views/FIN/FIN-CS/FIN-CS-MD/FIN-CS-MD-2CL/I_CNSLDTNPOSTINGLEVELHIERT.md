@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPOSTINGLEVELHIERT
-description: Cnsldtnpostinglevelhiert
+description: "Cnsldtnpostinglevelhiert"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: C_CN_PAYREQNWRKFLWNOTIFTMPL
-description: CN Payreqnwrkflwnotiftmpl
+description: "CN Payreqnwrkflwnotiftmpl"
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

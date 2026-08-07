@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERPOOLEDCAPSHIFTTP
-description: Work CenterPOOLEDCAPSHIFTTP
+description: "Work CenterPOOLEDCAPSHIFTTP"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CUSTRETDELIVITEMSERIALNMBRTP
-description: Custretdelivitemserialnmbrtp
+description: "Custretdelivitemserialnmbrtp"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

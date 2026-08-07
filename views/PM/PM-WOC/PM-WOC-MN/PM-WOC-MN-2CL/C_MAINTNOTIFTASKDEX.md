@@ -1,27 +1,27 @@
 ---
 name: C_MAINTNOTIFTASKDEX
-description: Data Extraction for Maint Notif Task
+description: "Data Extraction for Maint Notif Task"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFTASKDEX')/$value
-semantic_en: Data Extraction for Maint Notif Task
-semantic_vi: Data Extraction for Maint Notif Task — CDS view tiêu dùng dựa trên I_MaintNotificationTaskBasic.
+semantic_en: "Data Extraction for Maint Notif Task"
+semantic_vi: "Data Extraction for Maint Notif Task — CDS view tiêu dùng dựa trên I_MaintNotificationTaskBasic."
 keywords:
-  - data
-  - extraction
-  - for
-  - maint
-  - notif
-  - task
-  - maintenance
-  - notification
-  - item
-  - code
-  - catalog
-  - group
+  - "data"
+  - "extraction"
+  - "for"
+  - "maint"
+  - "notif"
+  - "task"
+  - "maintenance"
+  - "notification"
+  - "item"
+  - "code"
+  - "catalog"
+  - "group"
 tags:
   - PM
   - component:PM-WOC-MN-2CL

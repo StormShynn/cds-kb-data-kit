@@ -1,6 +1,6 @@
 ---
 name: I_CAOPENITEMLISTITEM
-description: Caopenitemlistitem
+description: "Caopenitemlistitem"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

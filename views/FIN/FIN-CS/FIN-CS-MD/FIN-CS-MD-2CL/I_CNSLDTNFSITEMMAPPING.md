@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFSITEMMAPPING
-description: Cnsldtnfsitemmapping
+description: "Cnsldtnfsitemmapping"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

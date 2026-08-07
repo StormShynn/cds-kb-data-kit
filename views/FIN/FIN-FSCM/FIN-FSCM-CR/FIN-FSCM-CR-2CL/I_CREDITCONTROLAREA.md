@@ -1,6 +1,6 @@
 ---
 name: I_CREDITCONTROLAREA
-description: Creditcontrolarea
+description: "Creditcontrolarea"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_EMRKDFUNDDOCMAILPARAM
-description: Emrkdfunddocmailparam
+description: "Emrkdfunddocmailparam"
 app_component: PSM-FM-PO-EF
 software_component: SAPSCORE
 release_state: released

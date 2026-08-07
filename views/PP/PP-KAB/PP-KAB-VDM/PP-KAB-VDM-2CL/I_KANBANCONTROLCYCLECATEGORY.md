@@ -1,6 +1,6 @@
 ---
 name: I_KANBANCONTROLCYCLECATEGORY
-description: Kanbancontrolcyclecategory
+description: "Kanbancontrolcyclecategory"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERQUALIFICATIONLVL
-description: Supplierqualificationlvl
+description: "Supplierqualificationlvl"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

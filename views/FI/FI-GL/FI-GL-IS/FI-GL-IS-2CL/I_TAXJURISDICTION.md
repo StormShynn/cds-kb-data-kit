@@ -1,6 +1,6 @@
 ---
 name: I_TAXJURISDICTION
-description: Taxjurisdiction
+description: "Taxjurisdiction"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

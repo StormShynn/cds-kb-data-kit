@@ -1,6 +1,6 @@
 ---
 name: SYCM_APS_PROJECT
-description: Sycm Aps Project
+description: "Sycm Aps Project"
 app_component: BC-DWB-CEX-CCM
 software_component: SAP_BASIS
 release_state: released

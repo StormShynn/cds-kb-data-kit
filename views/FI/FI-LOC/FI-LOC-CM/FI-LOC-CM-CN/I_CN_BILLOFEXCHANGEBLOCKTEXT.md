@@ -1,6 +1,6 @@
 ---
 name: I_CN_BILLOFEXCHANGEBLOCKTEXT
-description: CN Billofexchangeblocktext
+description: "CN Billofexchangeblocktext"
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

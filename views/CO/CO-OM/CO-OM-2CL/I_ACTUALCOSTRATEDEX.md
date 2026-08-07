@@ -1,6 +1,6 @@
 ---
 name: I_ACTUALCOSTRATEDEX
-description: Actualcostratedex
+description: "Actualcostratedex"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

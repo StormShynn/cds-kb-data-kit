@@ -1,6 +1,6 @@
 ---
 name: I_SHIFTGROUPINGTEXT
-description: Shiftgroupingtext
+description: "Shiftgroupingtext"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

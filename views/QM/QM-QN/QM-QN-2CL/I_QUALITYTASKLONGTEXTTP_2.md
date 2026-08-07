@@ -1,6 +1,6 @@
 ---
 name: I_QUALITYTASKLONGTEXTTP_2
-description: Qualitytasklongtexttp 2
+description: "Qualitytasklongtexttp 2"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CH_ELECTRONICDOCINCGINVOICE
-description: CH Electronicdocincginvoice
+description: "CH Electronicdocincginvoice"
 app_component: CA-GTF-CSC-EDO-CH
 software_component: SAPSCORE
 release_state: released

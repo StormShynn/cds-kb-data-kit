@@ -1,15 +1,15 @@
 ---
 name: I_PRODUCTVALUATION
-description: This CDS view is a basic view and this is for maintaining multiple Valuation Areas for a Product.
+description: "This CDS view is a basic view and this is for maintaining multiple Valuation Areas for a Product."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTVALUATION')/$value
-semantic_en: This CDS view is a basic view and this is for maintaining multiple Valuation Areas for a Product.
+semantic_en: "This CDS view is a basic view and this is for maintaining multiple Valuation Areas for a Product."
 keywords:
-  - Product Valuation
+  - "Product Valuation"
 tags:
   - LO
   - bo:material

@@ -1,6 +1,6 @@
 ---
 name: C_MATERIALSHORTAGEDEFINITION
-description: Materialshortagedefinition
+description: "Materialshortagedefinition"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,25 +1,25 @@
 ---
 name: C_OPENCLOSEDDISPUTECASE
-description: This CDS view provides details about the number and the amount of open and closed dispute cases in SAP Dispute Management for the following time periods: Today, the last 5 days, and the current month. This CDS view provides the data to answer the following business questions: How many dispute cases were created or closed in the last days? What is the new open disputed amount or the solved amount? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view provides details about the number and the amount of open and closed dispute cases in SAP Dispute Management for the following time periods: Today, the last 5 days, and the current month. This CDS view provides the data to answer the following business questions: How many dispute cases were created or closed in the last days? What is the new open disputed amount or the solved amount? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OPENCLOSEDDISPUTECASE')/$value
-semantic_en: This CDS view provides details about the number and the amount of open and closed dispute cases in SAP Dispute Management for the following time periods: Today, the last 5 days, and the current month. This CDS view provides the data to answer the following business questions: How many dispute cases were created or closed in the last days? What is the new open disputed amount or the solved amount? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Open and Closed Dispute Cases — CDS view tiêu dùng dựa trên I_OpenClosedDisputeCase.
+semantic_en: "This CDS view provides details about the number and the amount of open and closed dispute cases in SAP Dispute Management for the following time periods: Today, the last 5 days, and the current month. This CDS view provides the data to answer the following business questions: How many dispute cases were created or closed in the last days? What is the new open disputed amount or the solved amount? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Open and Closed Dispute Cases — CDS view tiêu dùng dựa trên I_OpenClosedDisputeCase."
 keywords:
-  - open
-  - and
-  - closed
-  - dispute
-  - cases
-  - case
-  - company
-  - code
-  - name
-  - customer
+  - "open"
+  - "and"
+  - "closed"
+  - "dispute"
+  - "cases"
+  - "case"
+  - "company"
+  - "code"
+  - "name"
+  - "customer"
 tags:
   - FI
   - bo:companycode

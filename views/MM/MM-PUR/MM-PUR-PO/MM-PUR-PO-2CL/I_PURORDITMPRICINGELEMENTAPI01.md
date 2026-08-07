@@ -1,6 +1,6 @@
 ---
 name: I_PURORDITMPRICINGELEMENTAPI01
-description: Purorditmpricingelementapi 01
+description: "Purorditmpricingelementapi 01"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

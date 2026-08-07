@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEENTRYSHEETITEMNOTETP
-description: Serviceentrysheetitemnotetp
+description: "Serviceentrysheetitemnotetp"
 app_component: MM-PUR-SVC-SES-2CL
 software_component: SAPSCORE
 release_state: released

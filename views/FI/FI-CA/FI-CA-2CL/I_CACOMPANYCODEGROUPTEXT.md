@@ -1,6 +1,6 @@
 ---
 name: I_CACOMPANYCODEGROUPTEXT
-description: CACompany CodeGROUPTEXT
+description: "CACompany CodeGROUPTEXT"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BPUSREXTERNALID
-description: Bpusrexternalid
+description: "Bpusrexternalid"
 app_component: BC-SRV-BUM
 software_component: SAP_BASIS
 release_state: released

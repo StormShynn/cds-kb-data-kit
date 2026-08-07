@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJECTPRIORITYCODE
-description: Entprojectprioritycode
+description: "Entprojectprioritycode"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

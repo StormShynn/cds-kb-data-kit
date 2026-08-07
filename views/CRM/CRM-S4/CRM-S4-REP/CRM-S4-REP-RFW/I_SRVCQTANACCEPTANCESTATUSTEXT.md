@@ -1,6 +1,6 @@
 ---
 name: I_SRVCQTANACCEPTANCESTATUSTEXT
-description: Srvcqtanacceptancestatustext
+description: "Srvcqtanacceptancestatustext"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

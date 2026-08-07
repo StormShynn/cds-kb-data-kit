@@ -1,29 +1,29 @@
 ---
 name: C_CMMDTYMTMENDOFDAYQRY
-description: MtM End of Day Query
+description: "MtM End of Day Query"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMENDOFDAYQRY')/$value
-semantic_en: MtM End of Day Query
-semantic_vi: MtM End of Day Query — CDS view tiêu dùng dựa trên I_CmmdtyMTMLogFinValCube.
+semantic_en: "MtM End of Day Query"
+semantic_vi: "MtM End of Day Query — CDS view tiêu dùng dựa trên I_CmmdtyMTMLogFinValCube."
 keywords:
-  - mtm
-  - end
-  - day
-  - query
-  - pricing
-  - version
-  - document
-  - item
-  - vers
-  - stock
-  - record
-  - commodity
-  - price
-  - exposure
+  - "mtm"
+  - "end"
+  - "day"
+  - "query"
+  - "pricing"
+  - "version"
+  - "document"
+  - "item"
+  - "vers"
+  - "stock"
+  - "record"
+  - "commodity"
+  - "price"
+  - "exposure"
 tags:
   - LO
   - component:LO-CMM-BF

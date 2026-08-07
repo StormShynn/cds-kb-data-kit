@@ -1,6 +1,6 @@
 ---
 name: I_SESPRICINGELEMENTTP_2
-description: Sespricingelementtp 2
+description: "Sespricingelementtp 2"
 app_component: MM-PUR-SVC-SES-2CL
 software_component: SAPSCORE
 release_state: released

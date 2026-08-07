@@ -1,26 +1,26 @@
 ---
 name: I_BR_NFDOCREFERENCETYPETEXT
-description: Brazil Nota Fiscal Doc Ref Type - Text
+description: "Brazil Nota Fiscal Doc Ref Type - Text"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_NFDOCREFERENCETYPETEXT')/$value
-semantic_en: Brazil Nota Fiscal Doc Ref Type - Text
-semantic_vi: Brazil Nota Fiscal Doc Ref Type - Text — CDS view giao diện dựa trên dd07t.
+semantic_en: "Brazil Nota Fiscal Doc Ref Type - Text"
+semantic_vi: "Brazil Nota Fiscal Doc Ref Type - Text — CDS view giao diện dựa trên dd07t."
 keywords:
-  - brazil
-  - nota
-  - fiscal
-  - doc
-  - ref
-  - type
-  - text
-  - language
-  - document
-  - reference
-  - desc
+  - "brazil"
+  - "nota"
+  - "fiscal"
+  - "doc"
+  - "ref"
+  - "type"
+  - "text"
+  - "language"
+  - "document"
+  - "reference"
+  - "desc"
 tags:
   - FI
   - bo:companycode

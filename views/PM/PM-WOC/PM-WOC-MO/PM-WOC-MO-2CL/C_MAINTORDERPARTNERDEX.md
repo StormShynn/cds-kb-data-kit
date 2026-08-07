@@ -1,24 +1,24 @@
 ---
 name: C_MAINTORDERPARTNERDEX
-description: Maintenance Order Partner
+description: "Maintenance Order Partner"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERPARTNERDEX')/$value
-semantic_en: Maintenance Order Partner
-semantic_vi: Maintenance Order Partner — CDS view tiêu dùng dựa trên I_PlantMaintenancePartner.
+semantic_en: "Maintenance Order Partner"
+semantic_vi: "Maintenance Order Partner — CDS view tiêu dùng dựa trên I_PlantMaintenancePartner."
 keywords:
-  - maintenance
-  - order
-  - partner
-  - maint
-  - object
-  - internal
-  - function
-  - number
-  - category
+  - "maintenance"
+  - "order"
+  - "partner"
+  - "maint"
+  - "object"
+  - "internal"
+  - "function"
+  - "number"
+  - "category"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

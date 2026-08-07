@@ -1,6 +1,6 @@
 ---
 name: /DCO/I_DSPUTRELTDACCTGDOCTP
-description: Dsputreltdacctgdoctp
+description: "Dsputreltdacctgdoctp"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

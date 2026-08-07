@@ -1,26 +1,26 @@
 ---
 name: I_BILLOFOPERATIONSPROFILE
-description: Bill of Operations Profile
+description: "Bill of Operations Profile"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BILLOFOPERATIONSPROFILE')/$value
-semantic_en: Bill of Operations Profile
-semantic_vi: Bill of Operations Profile — CDS view giao diện dựa trên tca41.
+semantic_en: "Bill of Operations Profile"
+semantic_vi: "Bill of Operations Profile — CDS view giao diện dựa trên tca41."
 keywords:
-  - bill
-  - operations
-  - profile
-  - application
-  - operation
-  - control
-  - auto
-  - increment
-  - number
-  - relationship
-  - type
+  - "bill"
+  - "operations"
+  - "profile"
+  - "application"
+  - "operation"
+  - "control"
+  - "auto"
+  - "increment"
+  - "number"
+  - "relationship"
+  - "type"
 tags:
   - PP
   - bo:companycode

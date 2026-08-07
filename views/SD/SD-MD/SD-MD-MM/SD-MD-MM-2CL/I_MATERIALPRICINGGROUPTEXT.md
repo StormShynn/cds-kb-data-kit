@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALPRICINGGROUPTEXT
-description: Materialpricinggrouptext
+description: "Materialpricinggrouptext"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

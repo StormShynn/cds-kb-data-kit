@@ -1,13 +1,13 @@
 ---
 name: I_ETOPROJMARGOVWCUBE
-description: ETO Project Margin - Cube
+description: "ETO Project Margin - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJMARGOVWCUBE')/$value
-semantic_en: ETO Project Margin - Cube
+semantic_en: "ETO Project Margin - Cube"
 tags:
   - CO
   - bo:project

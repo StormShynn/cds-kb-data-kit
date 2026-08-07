@@ -1,13 +1,13 @@
 ---
 name: I_JOURNALENTRYITEMBASIC
-description: Journal Entry Item Basic
+description: "Journal Entry Item Basic"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_JOURNALENTRYITEMBASIC')/$value
-semantic_en: Journal Entry Item Basic
+semantic_en: "Journal Entry Item Basic"
 tags:
   - FI
   - component:FI-GL-IS-2CL

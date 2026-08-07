@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSGENACTYCATEGORYT
-description: General fin trans acty category - Text
+description: "General fin trans acty category - Text"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSGENACTYCATEGORYT')/$value
-semantic_en: General fin trans acty category - Text
+semantic_en: "General fin trans acty category - Text"
 tags:
   - FIN
   - bo:companycode

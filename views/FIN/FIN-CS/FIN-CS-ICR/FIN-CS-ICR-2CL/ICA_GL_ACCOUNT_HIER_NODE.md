@@ -1,6 +1,6 @@
 ---
 name: ICA_GL_ACCOUNT_HIER_NODE
-description: Ica GL Account Hier Node
+description: "Ica GL Account Hier Node"
 app_component: FIN-CS-ICR-2CL
 software_component: SAPSCORE
 release_state: released

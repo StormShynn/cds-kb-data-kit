@@ -1,13 +1,13 @@
 ---
 name: I_INHREPAIRSTATUS
-description: In-House Service Status
+description: "In-House Service Status"
 app_component: CRM-S4-IHR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INHREPAIRSTATUS')/$value
-semantic_en: In-House Service Status
+semantic_en: "In-House Service Status"
 tags:
   - CRM
   - component:CRM-S4-IHR-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_BOPTRIANGULARDEALRELEVANCYT
-description: Boptriangulardealrelevancyt
+description: "Boptriangulardealrelevancyt"
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

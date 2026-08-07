@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTP_2
-description: Profit CenterTP 2
+description: "Profit CenterTP 2"
 app_component: EC-PCA-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DSD_SETTLEMENTDOCUMENTFLOW
-description: Dsd Settlementdocumentflow
+description: "Dsd Settlementdocumentflow"
 app_component: LE-DSD
 software_component: SAPSCORE
 release_state: released

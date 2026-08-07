@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTODN
-description: Billing DocumentUMENTODN
+description: "Billing DocumentUMENTODN"
 app_component: FI-LOC-ODN
 software_component: SAPSCORE
 release_state: released

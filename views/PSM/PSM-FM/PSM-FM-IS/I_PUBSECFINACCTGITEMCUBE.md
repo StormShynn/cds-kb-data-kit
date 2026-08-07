@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECFINACCTGITEMCUBE
-description: Budgetary Accounting Items - Cube
+description: "Budgetary Accounting Items - Cube"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECFINACCTGITEMCUBE')/$value
-semantic_en: Budgetary Accounting Items - Cube
+semantic_en: "Budgetary Accounting Items - Cube"
 tags:
   - PSM
   - account

@@ -1,6 +1,6 @@
 ---
 name: C_REQUISITIONTYPEANALYSIS
-description: Requisitiontypeanalysis
+description: "Requisitiontypeanalysis"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

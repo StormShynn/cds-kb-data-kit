@@ -21,12 +21,31 @@ function releaseStateLabel(state) {
 
 // ── YAML frontmatter ────────────────────────────────────────────────────────
 
-function renderFrontmatter(view) {
+// Free-text fields (Hub descriptions, synthesized semantic_en/vi, keywords)
+// need real YAML quoting: a plain scalar containing ": " (colon immediately
+// followed by a space) is only valid YAML as the start of a nested mapping,
+// so an unquoted description like "...business question: What is..." is a
+// YAML syntax error, not just untidy. Our own extractFrontmatter (a plain
+// regex line-reader, not a YAML parser) never noticed; github.com's
+// markdown renderer does, since it treats a leading `---`-fenced block as
+// Jekyll front matter and renders it with a real YAML parser — visibly, as
+// a red error banner across the whole file's Preview tab. JSON's string
+// escaping is a valid subset of YAML's double-quoted scalar escaping (both
+// escape `"`, `\`, and control chars the same way), so JSON.stringify is a
+// simple, safe way to always produce one. Structured/coded fields (name,
+// app_component, release_state, source_url, tags — SAP taxonomy codes and
+// URLs, never free text) are left bare as before; none of them can contain
+// ": " by construction.
+function yamlScalar(value) {
+  return JSON.stringify(String(value));
+}
+
+export function renderFrontmatter(view) {
   const tags = view.tags || [];
   const frontmatter = [
     '---',
     `name: ${view.name}`,
-    `description: ${view.description || view.label || view.name}`,
+    `description: ${yamlScalar(view.description || view.label || view.name)}`,
   ];
 
   if (view.appComponent) {
@@ -51,15 +70,15 @@ function renderFrontmatter(view) {
   }
 
   if (view.semantic_en) {
-    frontmatter.push(`semantic_en: ${view.semantic_en}`);
+    frontmatter.push(`semantic_en: ${yamlScalar(view.semantic_en)}`);
   }
   if (view.semantic_vi) {
-    frontmatter.push(`semantic_vi: ${view.semantic_vi}`);
+    frontmatter.push(`semantic_vi: ${yamlScalar(view.semantic_vi)}`);
   }
   if (view.keywords && view.keywords.length > 0) {
     frontmatter.push('keywords:');
     for (const kw of view.keywords) {
-      frontmatter.push(`  - ${kw}`);
+      frontmatter.push(`  - ${yamlScalar(kw)}`);
     }
   }
 

@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLTOTALSDDOCREFSTATUS
-description: Overalltotalsddocrefstatus
+description: "Overalltotalsddocrefstatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

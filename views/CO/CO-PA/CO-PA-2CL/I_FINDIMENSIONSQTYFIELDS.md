@@ -1,13 +1,13 @@
 ---
 name: I_FINDIMENSIONSQTYFIELDS
-description: Dimensions for Quantity Fields
+description: "Dimensions for Quantity Fields"
 app_component: CO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINDIMENSIONSQTYFIELDS')/$value
-semantic_en: Dimensions for Quantity Fields
+semantic_en: "Dimensions for Quantity Fields"
 tags:
   - CO
   - bo:companycode

@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJACTLPLANCUBE
-description: This CDS view provides the prerequisites for answering the following business questions: What is the deviation between planned and actual costs till date? What is the proportion of billable and non-billable costs in projects? Show me a cost comparison between current and baseline versions. Show me the billable and non-billable time postings. Show me cost information by company code or controlling area.
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the deviation between planned and actual costs till date? What is the proportion of billable and non-billable costs in projects? Show me a cost comparison between current and baseline versions. Show me the billable and non-billable time postings. Show me cost information by company code or controlling area."
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJACTLPLANCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the deviation between planned and actual costs till date? What is the proportion of billable and non-billable costs in projects? Show me a cost comparison between current and baseline versions. Show me the billable and non-billable time postings. Show me cost information by company code or controlling area.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the deviation between planned and actual costs till date? What is the proportion of billable and non-billable costs in projects? Show me a cost comparison between current and baseline versions. Show me the billable and non-billable time postings. Show me cost information by company code or controlling area."
 tags:
   - CA
   - bo:plant

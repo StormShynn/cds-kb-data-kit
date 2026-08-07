@@ -1,6 +1,6 @@
 ---
 name: I_DELIVERYDOCUMENTTYPE
-description: Delivery DocumentUMENTTYPE
+description: "Delivery DocumentUMENTTYPE"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

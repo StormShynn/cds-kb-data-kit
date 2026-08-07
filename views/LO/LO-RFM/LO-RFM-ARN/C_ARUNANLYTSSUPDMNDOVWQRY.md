@@ -1,30 +1,30 @@
 ---
 name: C_ARUNANLYTSSUPDMNDOVWQRY
-description: Overview of Supply and Demand Query
+description: "Overview of Supply and Demand Query"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSUPDMNDOVWQRY')/$value
-semantic_en: Overview of Supply and Demand Query
-semantic_vi: Overview of Supply and Demand Query — CDS view tiêu dùng dựa trên I_ARunAnlytsSupDmndOvwCube.
+semantic_en: "Overview of Supply and Demand Query"
+semantic_vi: "Overview of Supply and Demand Query — CDS view tiêu dùng dựa trên I_ARunAnlytsSupDmndOvwCube."
 keywords:
-  - overview
-  - supply
-  - and
-  - demand
-  - query
-  - requirement
-  - document
-  - number
-  - item
-  - prot
-  - time
-  - bucket
-  - product
-  - availability
-  - date
+  - "overview"
+  - "supply"
+  - "and"
+  - "demand"
+  - "query"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "prot"
+  - "time"
+  - "bucket"
+  - "product"
+  - "availability"
+  - "date"
 tags:
   - LO
   - component:LO-RFM-ARN

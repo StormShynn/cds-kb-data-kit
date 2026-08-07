@@ -1,6 +1,6 @@
 ---
 name: I_MANUFACTURERPARTPROFILE
-description: Manufacturerpartprofile
+description: "Manufacturerpartprofile"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_GHGENGYCLASSIFICATIONTEXT
-description: Ghgengyclassificationtext
+description: "Ghgengyclassificationtext"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

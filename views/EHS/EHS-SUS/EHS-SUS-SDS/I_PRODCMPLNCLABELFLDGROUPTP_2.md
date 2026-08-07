@@ -1,6 +1,6 @@
 ---
 name: I_PRODCMPLNCLABELFLDGROUPTP_2
-description: Prodcmplnclabelfldgrouptp 2
+description: "Prodcmplnclabelfldgrouptp 2"
 app_component: EHS-SUS-SDS
 software_component: SAPSCORE
 release_state: released

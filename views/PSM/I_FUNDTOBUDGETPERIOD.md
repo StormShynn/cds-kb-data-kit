@@ -1,13 +1,13 @@
 ---
 name: I_FUNDTOBUDGETPERIOD
-description: Relation between Fund and Budget Period
+description: "Relation between Fund and Budget Period"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNDTOBUDGETPERIOD')/$value
-semantic_en: Relation between Fund and Budget Period
+semantic_en: "Relation between Fund and Budget Period"
 tags:
   - PSM
   - budget

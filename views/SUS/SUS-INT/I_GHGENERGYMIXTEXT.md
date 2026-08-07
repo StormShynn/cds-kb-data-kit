@@ -1,6 +1,6 @@
 ---
 name: I_GHGENERGYMIXTEXT
-description: Ghgenergymixtext
+description: "Ghgenergymixtext"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

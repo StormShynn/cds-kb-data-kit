@@ -1,6 +1,6 @@
 ---
 name: I_FIXEDASSETUSAGEOBJECTPERIOD
-description: Fixed AssetUSAGEOBJECTPERIOD
+description: "Fixed AssetUSAGEOBJECTPERIOD"
 app_component: FI-AA-2CL
 software_component: SAPSCORE
 release_state: released

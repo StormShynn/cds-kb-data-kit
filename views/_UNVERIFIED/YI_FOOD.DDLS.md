@@ -1,20 +1,20 @@
 ---
 name: YI_FOOD.DDLS
-description: Food union
+description: "Food union"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/keremkoseoglu/spma-2025-08/blob/05e9b4ffe4da74c8a64c802598dbd378d1666027/src/yi_food.ddls.asddls
-semantic_en: Food union — CDS view based on smacourse.
-semantic_vi: Food union — CDS view dựa trên smacourse.
+semantic_en: "Food union — CDS view based on smacourse."
+semantic_vi: "Food union — CDS view dựa trên smacourse."
 keywords:
-  - food
-  - union
-  - smacourse
-  - food_category
-  - smealt.text
+  - "food"
+  - "union"
+  - "smacourse"
+  - "food_category"
+  - "smealt.text"
 tags:
   - AC
   - component:AC

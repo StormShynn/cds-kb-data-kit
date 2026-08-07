@@ -1,15 +1,15 @@
 ---
 name: I_STOCKTRANSPORTORDERITEM
-description: Stock Transport Order Item
+description: "Stock Transport Order Item"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM')/$value
-semantic_en: Stock Transport Order Item
+semantic_en: "Stock Transport Order Item"
 keywords:
-  - Stock Transport Order Item
+  - "Stock Transport Order Item"
 tags:
   - MM
   - bo:inventory

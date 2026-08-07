@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGLACCOUNTHIERARCHYT
-description: Cnsldtngl AccountHIERARCHYT
+description: "Cnsldtngl AccountHIERARCHYT"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

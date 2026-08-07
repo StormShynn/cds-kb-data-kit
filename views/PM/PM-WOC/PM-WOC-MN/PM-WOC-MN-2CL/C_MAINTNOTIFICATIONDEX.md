@@ -1,27 +1,27 @@
 ---
 name: C_MAINTNOTIFICATIONDEX
-description: Data Extraction for Maint Notification
+description: "Data Extraction for Maint Notification"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFICATIONDEX')/$value
-semantic_en: Data Extraction for Maint Notification
-semantic_vi: Data Extraction for Maint Notification — CDS view tiêu dùng dựa trên I_MaintenanceNotificationBasic.
+semantic_en: "Data Extraction for Maint Notification"
+semantic_vi: "Data Extraction for Maint Notification — CDS view tiêu dùng dựa trên I_MaintenanceNotificationBasic."
 keywords:
-  - data
-  - extraction
-  - for
-  - maint
-  - notification
-  - maintenance
-  - type
-  - text
-  - order
-  - notif
-  - processing
-  - context
+  - "data"
+  - "extraction"
+  - "for"
+  - "maint"
+  - "notification"
+  - "maintenance"
+  - "type"
+  - "text"
+  - "order"
+  - "notif"
+  - "processing"
+  - "context"
 tags:
   - PM
   - bo:companycode

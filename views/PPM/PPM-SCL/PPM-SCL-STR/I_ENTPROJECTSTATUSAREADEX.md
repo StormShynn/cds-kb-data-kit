@@ -1,13 +1,13 @@
 ---
 name: I_ENTPROJECTSTATUSAREADEX
-description: Data Extraction for Ent Proj Status Area
+description: "Data Extraction for Ent Proj Status Area"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPROJECTSTATUSAREADEX')/$value
-semantic_en: Data Extraction for Ent Proj Status Area
+semantic_en: "Data Extraction for Ent Proj Status Area"
 tags:
   - PPM
   - bo:project

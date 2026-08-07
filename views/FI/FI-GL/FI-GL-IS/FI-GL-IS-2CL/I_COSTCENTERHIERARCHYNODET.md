@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERHIERARCHYNODET
-description: Cost CenterHIERARCHYNODET
+description: "Cost CenterHIERARCHYNODET"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

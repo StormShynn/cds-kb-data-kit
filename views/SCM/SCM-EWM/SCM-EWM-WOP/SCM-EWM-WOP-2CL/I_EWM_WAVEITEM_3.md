@@ -1,6 +1,6 @@
 ---
 name: I_EWM_WAVEITEM_3
-description: Ewm Waveitem 3
+description: "Ewm Waveitem 3"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BUSEVTLOGBUSINESSEVENT
-description: Busevtlogbusinessevent
+description: "Busevtlogbusinessevent"
 app_component: CA-GTF-BEL
 software_component: SAP_BASIS
 release_state: released

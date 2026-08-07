@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDITEMCATEGORYT_2
-description: Transporditemcategoryt 2
+description: "Transporditemcategoryt 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

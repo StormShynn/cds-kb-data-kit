@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGINFORECORDTP
-description: Purchasinginforecordtp
+description: "Purchasinginforecordtp"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

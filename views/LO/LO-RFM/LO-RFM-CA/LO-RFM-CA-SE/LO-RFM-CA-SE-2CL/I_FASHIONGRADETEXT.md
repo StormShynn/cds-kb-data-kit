@@ -1,13 +1,13 @@
 ---
 name: I_FASHIONGRADETEXT
-description: Degree of Fashion - Text
+description: "Degree of Fashion - Text"
 app_component: LO-RFM-CA-SE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FASHIONGRADETEXT')/$value
-semantic_en: Degree of Fashion - Text
+semantic_en: "Degree of Fashion - Text"
 tags:
   - LO
   - component:LO-RFM-CA-SE-2CL

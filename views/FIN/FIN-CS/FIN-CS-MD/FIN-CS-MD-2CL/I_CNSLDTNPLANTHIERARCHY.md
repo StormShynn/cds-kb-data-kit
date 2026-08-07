@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPLANTHIERARCHY
-description: Cnsldtnplanthierarchy
+description: "Cnsldtnplanthierarchy"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNBILLINGDOCUMENTTYPE
-description: CNSLDTNBilling DocumentUMENTTYPE
+description: "CNSLDTNBilling DocumentUMENTTYPE"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

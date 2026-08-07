@@ -1,6 +1,6 @@
 ---
 name: I_TECHOBJWRNTYASSGMT
-description: Techobjwrntyassgmt
+description: "Techobjwrntyassgmt"
 app_component: PM-2CL
 software_component: SAPPCORE_H
 release_state: released

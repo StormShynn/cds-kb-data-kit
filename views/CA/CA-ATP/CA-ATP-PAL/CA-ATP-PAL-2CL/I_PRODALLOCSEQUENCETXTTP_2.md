@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCSEQUENCETXTTP_2
-description: Prodallocsequencetxttp 2
+description: "Prodallocsequencetxttp 2"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

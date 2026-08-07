@@ -1,6 +1,6 @@
 ---
 name: I_ACCRENGINEACCRUALSUBOBJECTVH
-description: Accrengineaccrualsubobjectvh
+description: "Accrengineaccrualsubobjectvh"
 app_component: FI-GL-GL-ACE-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: HOME_TEST_V3_QUERY
-description: Home Test V 3 (Query)
+description: "Home Test V 3 (Query)"
 app_component: CA-GTF-ANL
 software_component: SAPPCORE_H
 release_state: released

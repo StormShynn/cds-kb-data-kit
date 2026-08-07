@@ -1,6 +1,6 @@
 ---
 name: I_CN_CADEEXCHANGERATE
-description: CN CADEExchange Rate
+description: "CN CADEExchange Rate"
 app_component: FI-LOC-GAI-CN
 software_component: SAPSCORE
 release_state: released

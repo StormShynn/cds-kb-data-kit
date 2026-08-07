@@ -1,6 +1,6 @@
 ---
 name: I_DIRECTACTIVITYALLOCATIONTP_2
-description: Directactivityallocationtp 2
+description: "Directactivityallocationtp 2"
 app_component: CA-GTF-FXU-FI-CO
 software_component: SAPSCORE
 release_state: released

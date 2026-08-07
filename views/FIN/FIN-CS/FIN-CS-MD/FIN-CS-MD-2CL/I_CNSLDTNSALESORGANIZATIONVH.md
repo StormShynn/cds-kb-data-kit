@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSALESORGANIZATIONVH
-description: CNSLDTNSales OrganizationVH
+description: "CNSLDTNSales OrganizationVH"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_JOURNALENTRYPOSTPARAMETER
-description: D Journal EntryPOSTPARAMETER
+description: "D Journal EntryPOSTPARAMETER"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

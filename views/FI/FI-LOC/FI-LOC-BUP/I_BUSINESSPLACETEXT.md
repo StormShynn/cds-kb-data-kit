@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPLACETEXT
-description: Businessplacetext
+description: "Businessplacetext"
 app_component: FI-LOC-BUP
 software_component: SAPSCORE
 release_state: released

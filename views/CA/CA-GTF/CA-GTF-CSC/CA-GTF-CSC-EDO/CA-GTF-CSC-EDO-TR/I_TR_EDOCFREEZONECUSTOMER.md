@@ -1,6 +1,6 @@
 ---
 name: I_TR_EDOCFREEZONECUSTOMER
-description: TR Edocfreezonecustomer
+description: "TR Edocfreezonecustomer"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released

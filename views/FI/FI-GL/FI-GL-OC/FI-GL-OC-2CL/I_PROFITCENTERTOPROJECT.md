@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTOPROJECT
-description: Profit CenterTOPROJECT
+description: "Profit CenterTOPROJECT"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

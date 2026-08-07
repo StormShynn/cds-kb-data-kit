@@ -1,6 +1,6 @@
 ---
 name: I_RU_ASSETOKOFTEXT
-description: RU Assetokoftext
+description: "RU Assetokoftext"
 app_component: FI-LOC-AA-RU
 software_component: SAPSCORE
 release_state: released

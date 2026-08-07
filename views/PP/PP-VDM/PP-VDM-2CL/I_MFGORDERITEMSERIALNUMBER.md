@@ -1,6 +1,6 @@
 ---
 name: I_MFGORDERITEMSERIALNUMBER
-description: MFGORDERITEMSerial Number
+description: "MFGORDERITEMSerial Number"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

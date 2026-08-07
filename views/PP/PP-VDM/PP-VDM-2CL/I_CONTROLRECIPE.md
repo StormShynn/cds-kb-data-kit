@@ -1,13 +1,13 @@
 ---
 name: I_CONTROLRECIPE
-description: Control Recipe Header
+description: "Control Recipe Header"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONTROLRECIPE')/$value
-semantic_en: Control Recipe Header
+semantic_en: "Control Recipe Header"
 tags:
   - PP
   - component:PP-VDM-2CL

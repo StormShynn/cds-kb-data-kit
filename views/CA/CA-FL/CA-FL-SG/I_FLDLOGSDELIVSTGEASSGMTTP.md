@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSDELIVSTGEASSGMTTP
-description: Fldlogsdelivstgeassgmttp
+description: "Fldlogsdelivstgeassgmttp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

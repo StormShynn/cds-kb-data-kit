@@ -1,6 +1,6 @@
 ---
 name: I_ROUTE
-description: Route
+description: "Route"
 app_component: LE-TRA
 software_component: SAPSCORE
 release_state: released

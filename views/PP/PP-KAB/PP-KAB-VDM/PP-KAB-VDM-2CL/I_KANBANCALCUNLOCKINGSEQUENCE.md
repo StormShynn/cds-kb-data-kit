@@ -1,6 +1,6 @@
 ---
 name: I_KANBANCALCUNLOCKINGSEQUENCE
-description: Kanbancalcunlockingsequence
+description: "Kanbancalcunlockingsequence"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,17 +1,17 @@
 ---
 name: I_GLACCOUNTYEARTODATEBALANCEC
-description: General Ledger Account Balances - Cube
+description: "General Ledger Account Balances - Cube"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTYEARTODATEBALANCEC')/$value
-semantic_en: General Ledger Account Balances - Cube
+semantic_en: "General Ledger Account Balances - Cube"
 keywords:
-  - G/L Account Balances
-  - G/L Account Balances
-  - G/L Account Balances
+  - "G/L Account Balances"
+  - "G/L Account Balances"
+  - "G/L Account Balances"
 tags:
   - FI
   - account

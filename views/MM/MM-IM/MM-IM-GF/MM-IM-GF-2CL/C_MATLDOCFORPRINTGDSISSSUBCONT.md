@@ -1,28 +1,28 @@
 ---
 name: C_MATLDOCFORPRINTGDSISSSUBCONT
-description: This CDS view provides the data that determines whether the system generates an output for material documents with subcontracting, and determines which goods movement data is used. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view provides the data that determines whether the system generates an output for material documents with subcontracting, and determines which goods movement data is used. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLDOCFORPRINTGDSISSSUBCONT')/$value
-semantic_en: This CDS view provides the data that determines whether the system generates an output for material documents with subcontracting, and determines which goods movement data is used. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Material Doc Print Goods Mvt SubContract — CDS view tiêu dùng (transactional data) dựa trên I_MaterialDocumentForPrint.
+semantic_en: "This CDS view provides the data that determines whether the system generates an output for material documents with subcontracting, and determines which goods movement data is used. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Material Doc Print Goods Mvt SubContract — CDS view tiêu dùng (transactional data) dựa trên I_MaterialDocumentForPrint."
 keywords:
-  - Material Doc Print Goods Mvt SubContract
-  - material
-  - doc
-  - print
-  - goods
-  - mvt
-  - subcontract
-  - document
-  - year
-  - item
-  - stock
-  - identifying
-  - plant
+  - "Material Doc Print Goods Mvt SubContract"
+  - "material"
+  - "doc"
+  - "print"
+  - "goods"
+  - "mvt"
+  - "subcontract"
+  - "document"
+  - "year"
+  - "item"
+  - "stock"
+  - "identifying"
+  - "plant"
 tags:
   - MM
   - bo:companycode

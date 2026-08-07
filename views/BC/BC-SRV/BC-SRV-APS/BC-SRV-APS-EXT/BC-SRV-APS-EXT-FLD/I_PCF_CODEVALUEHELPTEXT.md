@@ -1,6 +1,6 @@
 ---
 name: I_PCF_CODEVALUEHELPTEXT
-description: Pcf Codevaluehelptext
+description: "Pcf Codevaluehelptext"
 app_component: BC-SRV-APS-EXT-FLD
 software_component: SAP_BASIS
 release_state: released

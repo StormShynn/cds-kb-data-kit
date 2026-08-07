@@ -1,6 +1,6 @@
 ---
 name: I_PROCORDEROPERATIONCAPACITY
-description: Procorderoperationcapacity
+description: "Procorderoperationcapacity"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

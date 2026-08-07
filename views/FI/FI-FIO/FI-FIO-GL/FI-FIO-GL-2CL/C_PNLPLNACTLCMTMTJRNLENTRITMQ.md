@@ -1,27 +1,27 @@
 ---
 name: C_PNLPLNACTLCMTMTJRNLENTRITMQ
-description: P&L – Plan/Actual/Committed
+description: "P&L – Plan/Actual/Committed"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PNLPLNACTLCMTMTJRNLENTRITMQ')/$value
-semantic_en: P&L – Plan/Actual/Committed
-semantic_vi: P&L – Plan/Actual/Committed — CDS view tiêu dùng dựa trên I_ActualPlanJournalEntryItem.
+semantic_en: "P&L – Plan/Actual/Committed"
+semantic_vi: "P&L – Plan/Actual/Committed — CDS view tiêu dùng dựa trên I_ActualPlanJournalEntryItem."
 keywords:
-  - P&L – Plan/Actual/Committed
-  - p&l
-  - plan/actual/committed
-  - planning
-  - category
-  - controlling
-  - area
-  - company
-  - code
-  - calendar
-  - year
-  - date
+  - "P&L – Plan/Actual/Committed"
+  - "p&l"
+  - "plan/actual/committed"
+  - "planning"
+  - "category"
+  - "controlling"
+  - "area"
+  - "company"
+  - "code"
+  - "calendar"
+  - "year"
+  - "date"
 tags:
   - FI
   - component:FI-FIO-GL-2CL

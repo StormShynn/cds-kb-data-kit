@@ -1,13 +1,13 @@
 ---
 name: I_CURRENTMATLVALNPRICEDEX
-description: This CDS view provides the data to answer the following business questions: What is the current valid inventory price of a material at the time of request? This view is intended to be used for data extraction. With regular data extraction, you can use this view to create a price history on target system side.
+description: "This CDS view provides the data to answer the following business questions: What is the current valid inventory price of a material at the time of request? This view is intended to be used for data extraction. With regular data extraction, you can use this view to create a price history on target system side."
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTMATLVALNPRICEDEX')/$value
-semantic_en: This CDS view provides the data to answer the following business questions: What is the current valid inventory price of a material at the time of request? This view is intended to be used for data extraction. With regular data extraction, you can use this view to create a price history on target system side.
+semantic_en: "This CDS view provides the data to answer the following business questions: What is the current valid inventory price of a material at the time of request? This view is intended to be used for data extraction. With regular data extraction, you can use this view to create a price history on target system side."
 tags:
   - CO
   - CO-PC

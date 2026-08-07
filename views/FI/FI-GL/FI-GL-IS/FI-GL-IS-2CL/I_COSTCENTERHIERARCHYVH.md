@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERHIERARCHYVH
-description: Cost CenterHIERARCHYVH
+description: "Cost CenterHIERARCHYVH"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

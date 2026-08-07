@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTER
-description: Cost Center
+description: "Cost Center"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,26 +1,26 @@
 ---
 name: C_COSTCENTERQ2001
-description: This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts for each cost center and G/L account in transaction currency? What are the actual amounts for each cost center and G/L account in company code currency? What are the actual amounts for each cost center and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics.
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts for each cost center and G/L account in transaction currency? What are the actual amounts for each cost center and G/L account in company code currency? What are the actual amounts for each cost center and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics."
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COSTCENTERQ2001')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts for each cost center and G/L account in transaction currency? What are the actual amounts for each cost center and G/L account in company code currency? What are the actual amounts for each cost center and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics.
-semantic_vi: Cost Centers Actuals — CDS view tiêu dùng dựa trên I_JournalEntryItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts for each cost center and G/L account in transaction currency? What are the actual amounts for each cost center and G/L account in company code currency? What are the actual amounts for each cost center and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics."
+semantic_vi: "Cost Centers Actuals — CDS view tiêu dùng dựa trên I_JournalEntryItemCube."
 keywords:
-  - Cost Centers Actuals
-  - cost
-  - centers
-  - actuals
-  - statistical
-  - center
-  - account
-  - activity
-  - type
-  - business
-  - transaction
+  - "Cost Centers Actuals"
+  - "cost"
+  - "centers"
+  - "actuals"
+  - "statistical"
+  - "center"
+  - "account"
+  - "activity"
+  - "type"
+  - "business"
+  - "transaction"
 tags:
   - FI
   - account

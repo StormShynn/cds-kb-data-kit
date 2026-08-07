@@ -1,6 +1,6 @@
 ---
 name: I_CASRVCRECONNCNREQSTATUS
-description: Casrvcreconncnreqstatus
+description: "Casrvcreconncnreqstatus"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

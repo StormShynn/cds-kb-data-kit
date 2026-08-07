@@ -1,6 +1,6 @@
 ---
 name: D_SALESQUOTATIONDELETED
-description: D Salesquotationdeleted
+description: "D Salesquotationdeleted"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

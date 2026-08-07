@@ -1,25 +1,25 @@
 ---
 name: C_CONDITIONCONTRACTDP
-description: Condition Contract
+description: "Condition Contract"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDP')/$value
-semantic_en: Condition Contract
-semantic_vi: Condition Contract — CDS view tiêu dùng dựa trên R_ConditionContract.
+semantic_en: "Condition Contract"
+semantic_vi: "Condition Contract — CDS view tiêu dùng dựa trên R_ConditionContract."
 keywords:
-  - Condition Contract
-  - condition
-  - contract
-  - cndn
-  - contr
-  - type
-  - classfctn
-  - proc
-  - document
-  - reference
+  - "Condition Contract"
+  - "condition"
+  - "contract"
+  - "cndn"
+  - "contr"
+  - "type"
+  - "classfctn"
+  - "proc"
+  - "document"
+  - "reference"
 tags:
   - LO
   - component:LO-GT-CHB

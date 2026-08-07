@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDCONFIRMATIONSTSCHGD
-description: D Transpordconfirmationstschgd
+description: "D Transpordconfirmationstschgd"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

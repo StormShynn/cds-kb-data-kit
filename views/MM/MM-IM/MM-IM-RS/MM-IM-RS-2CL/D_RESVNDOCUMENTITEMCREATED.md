@@ -1,6 +1,6 @@
 ---
 name: D_RESVNDOCUMENTITEMCREATED
-description: D Resvndocumentitemcreated
+description: "D Resvndocumentitemcreated"
 app_component: MM-IM-RS-2CL
 software_component: SAPSCORE
 release_state: released

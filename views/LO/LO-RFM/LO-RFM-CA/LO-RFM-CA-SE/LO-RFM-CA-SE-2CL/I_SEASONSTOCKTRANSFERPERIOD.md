@@ -1,13 +1,13 @@
 ---
 name: I_SEASONSTOCKTRANSFERPERIOD
-description: Season Stock Transfer Period
+description: "Season Stock Transfer Period"
 app_component: LO-RFM-CA-SE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONSTOCKTRANSFERPERIOD')/$value
-semantic_en: Season Stock Transfer Period
+semantic_en: "Season Stock Transfer Period"
 tags:
   - LO
   - bo:inventory

@@ -1,6 +1,6 @@
 ---
 name: I_REVALUATIONRULE
-description: Revaluationrule
+description: "Revaluationrule"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

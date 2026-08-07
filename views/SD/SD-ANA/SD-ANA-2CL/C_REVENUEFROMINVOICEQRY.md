@@ -1,26 +1,26 @@
 ---
 name: C_REVENUEFROMINVOICEQRY
-description: This CDS view provides the sales volumes (the total invoiced sales achieved during a specified period) by various dimensions, such as sales organization, product, fiscal year, sold-to party, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of billing items for my sales organizations? How is the sales volume this year compared with the same period last year? How much sales volume has been canceled? What are the total net values of credit memos in this month? What is the profit margin for this year?
+description: "This CDS view provides the sales volumes (the total invoiced sales achieved during a specified period) by various dimensions, such as sales organization, product, fiscal year, sold-to party, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of billing items for my sales organizations? How is the sales volume this year compared with the same period last year? How much sales volume has been canceled? What are the total net values of credit memos in this month? What is the profit margin for this year?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REVENUEFROMINVOICEQRY')/$value
-semantic_en: This CDS view provides the sales volumes (the total invoiced sales achieved during a specified period) by various dimensions, such as sales organization, product, fiscal year, sold-to party, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of billing items for my sales organizations? How is the sales volume this year compared with the same period last year? How much sales volume has been canceled? What are the total net values of credit memos in this month? What is the profit margin for this year?
-semantic_vi: Sales Volume Flexible Analysis - Query — CDS view tiêu dùng dựa trên I_BillingDocumentItemCube.
+semantic_en: "This CDS view provides the sales volumes (the total invoiced sales achieved during a specified period) by various dimensions, such as sales organization, product, fiscal year, sold-to party, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of billing items for my sales organizations? How is the sales volume this year compared with the same period last year? How much sales volume has been canceled? What are the total net values of credit memos in this month? What is the profit margin for this year?"
+semantic_vi: "Sales Volume Flexible Analysis - Query — CDS view tiêu dùng dựa trên I_BillingDocumentItemCube."
 keywords:
-  - Analytics - Sales Volume Flexible Analysis
-  - sales
-  - volume
-  - flexible
-  - analysis
-  - query
-  - billing
-  - document
-  - item
-  - category
-  - type
+  - "Analytics - Sales Volume Flexible Analysis"
+  - "sales"
+  - "volume"
+  - "flexible"
+  - "analysis"
+  - "query"
+  - "billing"
+  - "document"
+  - "item"
+  - "category"
+  - "type"
 tags:
   - SD
   - billing

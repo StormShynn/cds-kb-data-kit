@@ -1,6 +1,6 @@
 ---
 name: D_SUPLRINVCCREATEPOITEMP
-description: D Suplrinvccreatepoitemp
+description: "D Suplrinvccreatepoitemp"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

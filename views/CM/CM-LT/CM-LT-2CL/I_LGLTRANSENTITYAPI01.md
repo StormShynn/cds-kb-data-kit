@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSENTITYAPI01
-description: Lgltransentityapi 01
+description: "Lgltransentityapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

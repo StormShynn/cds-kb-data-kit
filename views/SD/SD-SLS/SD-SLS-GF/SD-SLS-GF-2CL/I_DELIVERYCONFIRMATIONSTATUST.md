@@ -1,6 +1,6 @@
 ---
 name: I_DELIVERYCONFIRMATIONSTATUST
-description: Deliveryconfirmationstatust
+description: "Deliveryconfirmationstatust"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

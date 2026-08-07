@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCHARTOFACCOUNTST
-description: Cnsldtnchartofaccountst
+description: "Cnsldtnchartofaccountst"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

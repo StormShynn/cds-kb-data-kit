@@ -1,6 +1,6 @@
 ---
 name: I_PRODNORDERITEMSERIALNUMBER
-description: PRODNORDERITEMSerial Number
+description: "PRODNORDERITEMSerial Number"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

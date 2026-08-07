@@ -1,6 +1,6 @@
 ---
 name: D_PURGSOURCELISTCREATED_2
-description: D Purgsourcelistcreated 2
+description: "D Purgsourcelistcreated 2"
 app_component: MM-PUR-SQ-SLI-2CL
 software_component: SAPSCORE
 release_state: released

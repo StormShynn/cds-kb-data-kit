@@ -1,13 +1,13 @@
 ---
 name: I_RETAILSTOREUSERASSIGNMENT
-description: User Assigned Store in Retail Store Apps
+description: "User Assigned Store in Retail Store Apps"
 app_component: LO-RFM-STO-FIO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RETAILSTOREUSERASSIGNMENT')/$value
-semantic_en: User Assigned Store in Retail Store Apps
+semantic_en: "User Assigned Store in Retail Store Apps"
 tags:
   - LO
   - bo:project

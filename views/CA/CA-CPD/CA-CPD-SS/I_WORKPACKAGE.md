@@ -1,15 +1,15 @@
 ---
 name: I_WORKPACKAGE
-description: This CDS view provides the prerequisites for answering the following business questions: Which work packages are assigned to which sales orders? When and by whom was a work package changed? Which work packages are assigned to a project’s financial plan?
+description: "This CDS view provides the prerequisites for answering the following business questions: Which work packages are assigned to which sales orders? When and by whom was a work package changed? Which work packages are assigned to a project’s financial plan?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKPACKAGE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Which work packages are assigned to which sales orders? When and by whom was a work package changed? Which work packages are assigned to a project’s financial plan?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which work packages are assigned to which sales orders? When and by whom was a work package changed? Which work packages are assigned to a project’s financial plan?"
 keywords:
-  - Work Package
+  - "Work Package"
 tags:
   - CA
   - bo:companycode

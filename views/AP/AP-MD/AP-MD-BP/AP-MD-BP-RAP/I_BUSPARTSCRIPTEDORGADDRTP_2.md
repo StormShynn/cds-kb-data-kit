@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTSCRIPTEDORGADDRTP_2
-description: Business PartnerSCRIPTEDORGADDRTP 2
+description: "Business PartnerSCRIPTEDORGADDRTP 2"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

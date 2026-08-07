@@ -1,6 +1,6 @@
 ---
 name: I_SALESDOCUMENT
-description: Salesdocument
+description: "Salesdocument"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

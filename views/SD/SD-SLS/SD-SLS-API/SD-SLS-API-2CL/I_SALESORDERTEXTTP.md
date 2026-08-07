@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERTEXTTP
-description: Sales OrderTEXTTP
+description: "Sales OrderTEXTTP"
 app_component: SD-SLS-API-2CL
 software_component: SAPSCORE
 release_state: released

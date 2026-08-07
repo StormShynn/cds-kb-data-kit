@@ -1,6 +1,6 @@
 ---
 name: VTST_INSTCECONFIGNWITHCHARCVAL
-description: Vtst Instceconfignwithcharcval
+description: "Vtst Instceconfignwithcharcval"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

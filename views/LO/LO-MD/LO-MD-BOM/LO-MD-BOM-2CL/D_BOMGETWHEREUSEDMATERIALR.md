@@ -1,6 +1,6 @@
 ---
 name: D_BOMGETWHEREUSEDMATERIALR
-description: D Bomgetwhereusedmaterialr
+description: "D Bomgetwhereusedmaterialr"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_RECEIVERSHIPPREDICTDATACUBE
-description: Apply dataset for Receivership - Cube
+description: "Apply dataset for Receivership - Cube"
 app_component: IS-PS-BEI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RECEIVERSHIPPREDICTDATACUBE')/$value
-semantic_en: Apply dataset for Receivership - Cube
+semantic_en: "Apply dataset for Receivership - Cube"
 tags:
   - IS
   - component:IS-PS-BEI

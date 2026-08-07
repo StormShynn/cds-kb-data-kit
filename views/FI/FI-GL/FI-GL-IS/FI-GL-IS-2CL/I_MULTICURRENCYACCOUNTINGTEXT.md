@@ -1,6 +1,6 @@
 ---
 name: I_MULTICURRENCYACCOUNTINGTEXT
-description: Multicurrencyaccountingtext
+description: "Multicurrencyaccountingtext"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

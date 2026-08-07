@@ -1,6 +1,6 @@
 ---
 name: D_ENTPROJCOPYTOACTIVEDOCUMENTP
-description: D Entprojcopytoactivedocumentp
+description: "D Entprojcopytoactivedocumentp"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

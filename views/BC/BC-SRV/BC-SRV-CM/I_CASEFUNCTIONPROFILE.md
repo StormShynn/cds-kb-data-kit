@@ -1,13 +1,13 @@
 ---
 name: I_CASEFUNCTIONPROFILE
-description: Case Function Profile
+description: "Case Function Profile"
 app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEFUNCTIONPROFILE')/$value
-semantic_en: Case Function Profile
+semantic_en: "Case Function Profile"
 tags:
   - BC
   - BC-SRV

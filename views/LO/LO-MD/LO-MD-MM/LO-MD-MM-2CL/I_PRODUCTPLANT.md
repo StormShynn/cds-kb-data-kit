@@ -1,15 +1,15 @@
 ---
 name: I_PRODUCTPLANT
-description: This CDS view helps to retrieve plant related data of products.
+description: "This CDS view helps to retrieve plant related data of products."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTPLANT')/$value
-semantic_en: This CDS view helps to retrieve plant related data of products.
+semantic_en: "This CDS view helps to retrieve plant related data of products."
 keywords:
-  - Product Plant
+  - "Product Plant"
 tags:
   - LO
   - bo:material

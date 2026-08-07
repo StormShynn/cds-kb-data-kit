@@ -1,6 +1,6 @@
 ---
 name: C_SUPLRINVCBLKDWRKFLWEMLDCSN
-description: Suplrinvcblkdwrkflwemldcsn
+description: "Suplrinvcblkdwrkflwemldcsn"
 app_component: MM-IV-INT-WF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTORDERCANCELED
-description: D Freightordercanceled
+description: "D Freightordercanceled"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

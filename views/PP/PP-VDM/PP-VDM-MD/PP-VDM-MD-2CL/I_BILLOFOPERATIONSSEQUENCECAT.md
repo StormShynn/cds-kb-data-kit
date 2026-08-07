@@ -1,19 +1,19 @@
 ---
 name: I_BILLOFOPERATIONSSEQUENCECAT
-description: Bill of Operations Sequence Category
+description: "Bill of Operations Sequence Category"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BILLOFOPERATIONSSEQUENCECAT')/$value
-semantic_en: Bill of Operations Sequence Category
-semantic_vi: Bill of Operations Sequence Category — CDS view giao diện dựa trên I_SequenceCategory.
+semantic_en: "Bill of Operations Sequence Category"
+semantic_vi: "Bill of Operations Sequence Category — CDS view giao diện dựa trên I_SequenceCategory."
 keywords:
-  - bill
-  - operations
-  - sequence
-  - category
+  - "bill"
+  - "operations"
+  - "sequence"
+  - "category"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

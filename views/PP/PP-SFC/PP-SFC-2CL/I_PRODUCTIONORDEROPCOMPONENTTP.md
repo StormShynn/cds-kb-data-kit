@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDEROPCOMPONENTTP
-description: Production OrderOPCOMPONENTTP
+description: "Production OrderOPCOMPONENTTP"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

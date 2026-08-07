@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRACTYPARTICIPANTAPI01
-description: Suplractyparticipantapi 01
+description: "Suplractyparticipantapi 01"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

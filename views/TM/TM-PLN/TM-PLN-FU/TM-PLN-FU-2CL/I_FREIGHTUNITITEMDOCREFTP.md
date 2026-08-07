@@ -1,6 +1,6 @@
 ---
 name: I_FREIGHTUNITITEMDOCREFTP
-description: Freightunititemdocreftp
+description: "Freightunititemdocreftp"
 app_component: TM-PLN-FU-2CL
 software_component: SAPSCORE
 release_state: released

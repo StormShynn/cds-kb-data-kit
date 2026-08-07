@@ -1,6 +1,6 @@
 ---
 name: I_PACKINGINSTRUCTIONHEADER
-description: Packinginstructionheader
+description: "Packinginstructionheader"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

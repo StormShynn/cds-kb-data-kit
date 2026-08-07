@@ -1,6 +1,6 @@
 ---
 name: I_TAXBASEBALANCESGROUP
-description: Taxbasebalancesgroup
+description: "Taxbasebalancesgroup"
 app_component: FI-LOC-VAT-GEN
 software_component: SAPSCORE
 release_state: released

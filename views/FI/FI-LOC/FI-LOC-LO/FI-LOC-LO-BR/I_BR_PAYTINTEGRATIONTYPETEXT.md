@@ -1,6 +1,6 @@
 ---
 name: I_BR_PAYTINTEGRATIONTYPETEXT
-description: BR Paytintegrationtypetext
+description: "BR Paytintegrationtypetext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

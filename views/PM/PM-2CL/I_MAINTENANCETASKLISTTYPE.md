@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCETASKLISTTYPE
-description: Maintenancetasklisttype
+description: "Maintenancetasklisttype"
 app_component: PM-2CL
 software_component: SAPSCORE
 release_state: released

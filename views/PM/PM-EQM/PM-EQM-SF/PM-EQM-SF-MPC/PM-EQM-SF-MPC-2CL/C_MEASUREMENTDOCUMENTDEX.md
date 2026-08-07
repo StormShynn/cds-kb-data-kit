@@ -1,27 +1,27 @@
 ---
 name: C_MEASUREMENTDOCUMENTDEX
-description: Data Extraction for Measurement Document
+description: "Data Extraction for Measurement Document"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASUREMENTDOCUMENTDEX')/$value
-semantic_en: Data Extraction for Measurement Document
-semantic_vi: Data Extraction for Measurement Document — CDS view tiêu dùng dựa trên I_MeasurementDocument.
+semantic_en: "Data Extraction for Measurement Document"
+semantic_vi: "Data Extraction for Measurement Document — CDS view tiêu dùng dựa trên I_MeasurementDocument."
 keywords:
-  - data
-  - extraction
-  - for
-  - measurement
-  - document
-  - measuring
-  - point
-  - msmt
-  - rdng
-  - date
-  - time
-  - counter
+  - "data"
+  - "extraction"
+  - "for"
+  - "measurement"
+  - "document"
+  - "measuring"
+  - "point"
+  - "msmt"
+  - "rdng"
+  - "date"
+  - "time"
+  - "counter"
 tags:
   - PM
   - component:PM-EQM-SF-MPC-2CL

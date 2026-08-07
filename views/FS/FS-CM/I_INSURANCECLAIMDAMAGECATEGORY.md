@@ -1,6 +1,6 @@
 ---
 name: I_INSURANCECLAIMDAMAGECATEGORY
-description: Insuranceclaimdamagecategory
+description: "Insuranceclaimdamagecategory"
 app_component: FS-CM
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PROJBILLGTRANSFCOSTQTYCODE
-description: Projbillgtransfcostqtycode
+description: "Projbillgtransfcostqtycode"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

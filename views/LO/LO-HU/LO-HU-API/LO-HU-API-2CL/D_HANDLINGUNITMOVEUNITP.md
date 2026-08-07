@@ -1,6 +1,6 @@
 ---
 name: D_HANDLINGUNITMOVEUNITP
-description: D Handlingunitmoveunitp
+description: "D Handlingunitmoveunitp"
 app_component: LO-HU-API-2CL
 software_component: SAPSCORE
 release_state: released

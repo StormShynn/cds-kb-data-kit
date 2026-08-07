@@ -1,6 +1,6 @@
 ---
 name: I_CASHFLOWCALCCATEGORYVH
-description: Cashflowcalccategoryvh
+description: "Cashflowcalccategoryvh"
 app_component: CA-FIM-FMA
 software_component: SAP_BASIS
 release_state: released

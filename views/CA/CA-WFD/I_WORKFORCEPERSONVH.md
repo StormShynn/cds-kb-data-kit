@@ -1,13 +1,13 @@
 ---
 name: I_WORKFORCEPERSONVH
-description: Workforce Person Association Target
+description: "Workforce Person Association Target"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKFORCEPERSONVH')/$value
-semantic_en: Workforce Person Association Target
+semantic_en: "Workforce Person Association Target"
 tags:
   - CA
   - bo:salesorder

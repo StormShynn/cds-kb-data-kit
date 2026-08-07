@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJFCSTCUBE_2
-description: This CDS view provides the prerequisites for answering the following business questions: What are the planned and actual efforts in a project or a work package? What are the planned and actual cost in a project or work package? What are the services (units) planned in a work package?
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the planned and actual efforts in a project or a work package? What are the planned and actual cost in a project or work package? What are the services (units) planned in a work package?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJFCSTCUBE_2')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the planned and actual efforts in a project or a work package? What are the planned and actual cost in a project or work package? What are the services (units) planned in a work package?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the planned and actual efforts in a project or a work package? What are the planned and actual cost in a project or work package? What are the services (units) planned in a work package?"
 tags:
   - CA
   - bo:plant

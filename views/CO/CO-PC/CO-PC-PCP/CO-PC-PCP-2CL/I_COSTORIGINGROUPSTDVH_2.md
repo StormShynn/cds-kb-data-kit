@@ -1,13 +1,13 @@
 ---
 name: I_COSTORIGINGROUPSTDVH_2
-description: Cost Origin Group
+description: "Cost Origin Group"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COSTORIGINGROUPSTDVH_2')/$value
-semantic_en: Cost Origin Group
+semantic_en: "Cost Origin Group"
 tags:
   - CO
   - bo:project

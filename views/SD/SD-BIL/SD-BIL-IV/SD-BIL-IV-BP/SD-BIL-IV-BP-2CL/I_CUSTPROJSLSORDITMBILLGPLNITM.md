@@ -1,6 +1,6 @@
 ---
 name: I_CUSTPROJSLSORDITMBILLGPLNITM
-description: Custprojslsorditmbillgplnitm
+description: "Custprojslsorditmbillgplnitm"
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

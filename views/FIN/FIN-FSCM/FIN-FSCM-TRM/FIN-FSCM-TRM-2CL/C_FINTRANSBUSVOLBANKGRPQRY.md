@@ -1,13 +1,13 @@
 ---
 name: C_FINTRANSBUSVOLBANKGRPQRY
-description: This CDS view provides you with the amount of financial transactions in transaction currency and display currency at specific key dates within a period. It allows you to aggregate the measure amount of financial transaction in display currency and transaction currency for bank groups and company codes.
+description: "This CDS view provides you with the amount of financial transactions in transaction currency and display currency at specific key dates within a period. It allows you to aggregate the measure amount of financial transaction in display currency and transaction currency for bank groups and company codes."
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FINTRANSBUSVOLBANKGRPQRY')/$value
-semantic_en: This CDS view provides you with the amount of financial transactions in transaction currency and display currency at specific key dates within a period. It allows you to aggregate the measure amount of financial transaction in display currency and transaction currency for bank groups and company codes.
+semantic_en: "This CDS view provides you with the amount of financial transactions in transaction currency and display currency at specific key dates within a period. It allows you to aggregate the measure amount of financial transaction in display currency and transaction currency for bank groups and company codes."
 tags:
   - FIN
   - bo:companycode

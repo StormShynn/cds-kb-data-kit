@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERACTIVITYTYPECATT
-description: Cost CenterACTIVITYTYPECATT
+description: "Cost CenterACTIVITYTYPECATT"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

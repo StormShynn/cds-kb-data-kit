@@ -1,13 +1,13 @@
 ---
 name: C_MKTDATAIMPVOLATILITYQRY
-description: This CDS view provides the prerequisites for answering the following business question: What is the implied volatility value for a specific volatility type and over a specified period of time?
+description: "This CDS view provides the prerequisites for answering the following business question: What is the implied volatility value for a specific volatility type and over a specified period of time?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MKTDATAIMPVOLATILITYQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What is the implied volatility value for a specific volatility type and over a specified period of time?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is the implied volatility value for a specific volatility type and over a specified period of time?"
 tags:
   - FIN
   - bo:companycode

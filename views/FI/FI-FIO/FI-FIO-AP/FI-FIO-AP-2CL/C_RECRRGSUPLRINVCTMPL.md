@@ -1,6 +1,6 @@
 ---
 name: C_RECRRGSUPLRINVCTMPL
-description: Recrrgsuplrinvctmpl
+description: "Recrrgsuplrinvctmpl"
 app_component: FI-FIO-AP-2CL
 software_component: SAPSCORE
 release_state: released

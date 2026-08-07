@@ -1,6 +1,6 @@
 ---
 name: D_PRODNVERSSETLOCKP
-description: D Prodnverssetlockp
+description: "D Prodnverssetlockp"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

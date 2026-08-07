@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERROLETP_3
-description: Business PartnerROLETP 3
+description: "Business PartnerROLETP 3"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

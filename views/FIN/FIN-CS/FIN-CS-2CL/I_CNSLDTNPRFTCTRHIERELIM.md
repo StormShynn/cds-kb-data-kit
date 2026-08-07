@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNPRFTCTRHIERELIM
-description: Hierarchy Elimination for Profit Center
+description: "Hierarchy Elimination for Profit Center"
 app_component: FIN-CS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPRFTCTRHIERELIM')/$value
-semantic_en: Hierarchy Elimination for Profit Center
+semantic_en: "Hierarchy Elimination for Profit Center"
 tags:
   - FIN
   - bo:companycode

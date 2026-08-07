@@ -1,6 +1,6 @@
 ---
 name: I_PROJSRVCORG
-description: Projsrvcorg
+description: "Projsrvcorg"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

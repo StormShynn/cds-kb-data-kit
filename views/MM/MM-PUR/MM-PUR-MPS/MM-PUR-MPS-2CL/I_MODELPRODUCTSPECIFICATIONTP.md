@@ -1,6 +1,6 @@
 ---
 name: I_MODELPRODUCTSPECIFICATIONTP
-description: Modelproductspecificationtp
+description: "Modelproductspecificationtp"
 app_component: MM-PUR-MPS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNBILLINGDOCTYPEHIER
-description: CNSLDTNBilling DocumentTYPEHIER
+description: "CNSLDTNBilling DocumentTYPEHIER"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

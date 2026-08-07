@@ -1,6 +1,6 @@
 ---
 name: I_RECIPIENTLOCATIONPLANTVH
-description: Recipientlocationplantvh
+description: "Recipientlocationplantvh"
 app_component: PM-2CL
 software_component: SAPSCORE
 release_state: released

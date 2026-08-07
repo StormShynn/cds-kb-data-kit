@@ -1,6 +1,6 @@
 ---
 name: I_ENTERPRISEPROJECTJVA
-description: Enterpriseprojectjva
+description: "Enterpriseprojectjva"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFCONSTRAINTNETTEXTTP
-description: Varcnfconstraintnettexttp
+description: "Varcnfconstraintnettexttp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

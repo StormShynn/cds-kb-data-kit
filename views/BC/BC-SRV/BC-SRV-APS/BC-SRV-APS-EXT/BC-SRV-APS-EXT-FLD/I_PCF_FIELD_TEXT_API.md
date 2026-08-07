@@ -1,6 +1,6 @@
 ---
 name: I_PCF_FIELD_TEXT_API
-description: Pcf Field Text Api
+description: "Pcf Field Text Api"
 app_component: BC-SRV-APS-EXT-FLD
 software_component: SAP_BASIS
 release_state: released

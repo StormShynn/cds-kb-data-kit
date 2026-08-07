@@ -1,6 +1,6 @@
 ---
 name: I_JVAVENTURECOSTOBJECTDETS_2
-description: Jvaventurecostobjectdets 2
+description: "Jvaventurecostobjectdets 2"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

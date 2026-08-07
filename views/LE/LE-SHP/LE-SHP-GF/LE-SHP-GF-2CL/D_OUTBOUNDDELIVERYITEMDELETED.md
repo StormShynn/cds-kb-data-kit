@@ -1,6 +1,6 @@
 ---
 name: D_OUTBOUNDDELIVERYITEMDELETED
-description: D Outbound DeliveryITEMDELETED
+description: "D Outbound DeliveryITEMDELETED"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

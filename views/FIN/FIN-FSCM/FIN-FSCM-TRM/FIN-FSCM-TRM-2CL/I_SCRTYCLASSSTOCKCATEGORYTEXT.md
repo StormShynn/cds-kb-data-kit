@@ -1,6 +1,6 @@
 ---
 name: I_SCRTYCLASSSTOCKCATEGORYTEXT
-description: Scrtyclassstockcategorytext
+description: "Scrtyclassstockcategorytext"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

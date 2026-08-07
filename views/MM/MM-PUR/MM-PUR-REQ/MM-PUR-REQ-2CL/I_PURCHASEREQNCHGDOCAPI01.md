@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEREQNCHGDOCAPI01
-description: Purchase RequisitionNCHGDOCAPI 01
+description: "Purchase RequisitionNCHGDOCAPI 01"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

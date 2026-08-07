@@ -1,13 +1,13 @@
 ---
 name: I_GROUP5ASSETEVALUATIONKEY
-description: Group 5 Asset Evaluation Key
+description: "Group 5 Asset Evaluation Key"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GROUP5ASSETEVALUATIONKEY')/$value
-semantic_en: Group 5 Asset Evaluation Key
+semantic_en: "Group 5 Asset Evaluation Key"
 tags:
   - FI
   - component:FI-FIO-AA-ANA-2CL

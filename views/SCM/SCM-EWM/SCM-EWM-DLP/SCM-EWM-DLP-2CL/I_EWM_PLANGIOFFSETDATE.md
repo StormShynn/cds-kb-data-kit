@@ -1,13 +1,13 @@
 ---
 name: I_EWM_PLANGIOFFSETDATE
-description: Plnd Offset Date for Goods Issue - Cube
+description: "Plnd Offset Date for Goods Issue - Cube"
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_PLANGIOFFSETDATE')/$value
-semantic_en: Plnd Offset Date for Goods Issue - Cube
+semantic_en: "Plnd Offset Date for Goods Issue - Cube"
 tags:
   - SCM
   - component:SCM-EWM-DLP-2CL

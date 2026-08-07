@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJRESOURCETYPETEXT
-description: This CDS view provides descriptions of resource types in supported languages.
+description: "This CDS view provides descriptions of resource types in supported languages."
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJRESOURCETYPETEXT')/$value
-semantic_en: This CDS view provides descriptions of resource types in supported languages.
+semantic_en: "This CDS view provides descriptions of resource types in supported languages."
 tags:
   - CA
   - bo:project

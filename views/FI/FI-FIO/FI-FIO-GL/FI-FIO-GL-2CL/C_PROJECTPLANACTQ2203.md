@@ -1,25 +1,25 @@
 ---
 name: C_PROJECTPLANACTQ2203
-description: This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts for each project, WBS element, and G/L account in company code currency? What are the baseline amounts for each project, WBS element, and G/L account in company code currency? What are the Estimate To Complete (ETC) amounts in company code currency? What are the Estimate At Completion (EAC) amounts in company code currency? What are the ongoing amounts in company code currency? What are the relative differences between actual and baseline amount in company code currency? What are the relative differences between actual and ETC amount in company code currency? What are the relative differences between actual and EAC amount in company code currency? You can also answer these questions for object currency and global currency. You can always drill down for further relevant characteristics.
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts for each project, WBS element, and G/L account in company code currency? What are the baseline amounts for each project, WBS element, and G/L account in company code currency? What are the Estimate To Complete (ETC) amounts in company code currency? What are the Estimate At Completion (EAC) amounts in company code currency? What are the ongoing amounts in company code currency? What are the relative differences between actual and baseline amount in company code currency? What are the relative differences between actual and ETC amount in company code currency? What are the relative differences between actual and EAC amount in company code currency? You can also answer these questions for object currency and global currency. You can always drill down for further relevant characteristics."
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROJECTPLANACTQ2203')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts for each project, WBS element, and G/L account in company code currency? What are the baseline amounts for each project, WBS element, and G/L account in company code currency? What are the Estimate To Complete (ETC) amounts in company code currency? What are the Estimate At Completion (EAC) amounts in company code currency? What are the ongoing amounts in company code currency? What are the relative differences between actual and baseline amount in company code currency? What are the relative differences between actual and ETC amount in company code currency? What are the relative differences between actual and EAC amount in company code currency? You can also answer these questions for object currency and global currency. You can always drill down for further relevant characteristics.
-semantic_vi: Projects Baseline EAC Ongoing — CDS view tiêu dùng dựa trên I_ActualPlanJrnlEntryItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts for each project, WBS element, and G/L account in company code currency? What are the baseline amounts for each project, WBS element, and G/L account in company code currency? What are the Estimate To Complete (ETC) amounts in company code currency? What are the Estimate At Completion (EAC) amounts in company code currency? What are the ongoing amounts in company code currency? What are the relative differences between actual and baseline amount in company code currency? What are the relative differences between actual and ETC amount in company code currency? What are the relative differences between actual and EAC amount in company code currency? You can also answer these questions for object currency and global currency. You can always drill down for further relevant characteristics."
+semantic_vi: "Projects Baseline EAC Ongoing — CDS view tiêu dùng dựa trên I_ActualPlanJrnlEntryItemCube."
 keywords:
-  - Projects Baseline EAC Ongoing
-  - projects
-  - baseline
-  - eac
-  - ongoing
-  - planning
-  - category
-  - name
-  - project
-  - element
+  - "Projects Baseline EAC Ongoing"
+  - "projects"
+  - "baseline"
+  - "eac"
+  - "ongoing"
+  - "planning"
+  - "category"
+  - "name"
+  - "project"
+  - "element"
 tags:
   - FI
   - account

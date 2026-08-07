@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTTAXCODETEXT
-description: Billing DocumentUMENTTAXCODETEXT
+description: "Billing DocumentUMENTTAXCODETEXT"
 app_component: FI-LOC-LO
 software_component: SAPSCORE
 release_state: released

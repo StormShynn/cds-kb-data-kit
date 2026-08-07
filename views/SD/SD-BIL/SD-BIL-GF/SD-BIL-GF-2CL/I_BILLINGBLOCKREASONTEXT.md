@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGBLOCKREASONTEXT
-description: Billingblockreasontext
+description: "Billingblockreasontext"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

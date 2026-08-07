@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTPARTNERTP_2
-description: Schedgagrmtpartnertp 2
+description: "Schedgagrmtpartnertp 2"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

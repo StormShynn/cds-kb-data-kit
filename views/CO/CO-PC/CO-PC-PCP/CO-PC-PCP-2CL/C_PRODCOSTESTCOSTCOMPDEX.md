@@ -1,26 +1,26 @@
 ---
 name: C_PRODCOSTESTCOSTCOMPDEX
-description: This CDS view provides detailed extraction of product cost estimate cost component information from transactional sources for analytical and reporting purposes in SAP S/4HANA. It enables users to analyze cost components associated with cost estimates, helping to break down total and fixed costs by company and controlling area currencies. The view is intended for mass data extraction and analytics over cost calculation processes. What are the cost component breakdowns for each cost estimate? How do total and fixed costs vary across valuation variants, cost component structures, or company codes? How can I extract granular cost component details for large-scale reporting and analytics? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view provides detailed extraction of product cost estimate cost component information from transactional sources for analytical and reporting purposes in SAP S/4HANA. It enables users to analyze cost components associated with cost estimates, helping to break down total and fixed costs by company and controlling area currencies. The view is intended for mass data extraction and analytics over cost calculation processes. What are the cost component breakdowns for each cost estimate? How do total and fixed costs vary across valuation variants, cost component structures, or company codes? How can I extract granular cost component details for large-scale reporting and analytics? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODCOSTESTCOSTCOMPDEX')/$value
-semantic_en: This CDS view provides detailed extraction of product cost estimate cost component information from transactional sources for analytical and reporting purposes in SAP S/4HANA. It enables users to analyze cost components associated with cost estimates, helping to break down total and fixed costs by company and controlling area currencies. The view is intended for mass data extraction and analytics over cost calculation processes. What are the cost component breakdowns for each cost estimate? How do total and fixed costs vary across valuation variants, cost component structures, or company codes? How can I extract granular cost component details for large-scale reporting and analytics? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Product Cost Estimate Cost Component DEX — CDS view tiêu dùng dựa trên I_ProdCostEstCostComponent.
+semantic_en: "This CDS view provides detailed extraction of product cost estimate cost component information from transactional sources for analytical and reporting purposes in SAP S/4HANA. It enables users to analyze cost components associated with cost estimates, helping to break down total and fixed costs by company and controlling area currencies. The view is intended for mass data extraction and analytics over cost calculation processes. What are the cost component breakdowns for each cost estimate? How do total and fixed costs vary across valuation variants, cost component structures, or company codes? How can I extract granular cost component details for large-scale reporting and analytics? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Product Cost Estimate Cost Component DEX — CDS view tiêu dùng dựa trên I_ProdCostEstCostComponent."
 keywords:
-  - product
-  - cost
-  - estimate
-  - component
-  - dex
-  - costing
-  - reference
-  - object
-  - type
-  - date
-  - version
+  - "product"
+  - "cost"
+  - "estimate"
+  - "component"
+  - "dex"
+  - "costing"
+  - "reference"
+  - "object"
+  - "type"
+  - "date"
+  - "version"
 tags:
   - CO
   - bo:companycode

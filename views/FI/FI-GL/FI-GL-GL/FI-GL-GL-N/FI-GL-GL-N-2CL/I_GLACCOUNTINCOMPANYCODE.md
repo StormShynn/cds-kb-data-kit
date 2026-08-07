@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTINCOMPANYCODE
-description: GL AccountINCompany Code
+description: "GL AccountINCompany Code"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

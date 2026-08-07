@@ -1,6 +1,6 @@
 ---
 name: I_CHARCATTRIBUTECODEGRPVH
-description: Charcattributecodegrpvh
+description: "Charcattributecodegrpvh"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

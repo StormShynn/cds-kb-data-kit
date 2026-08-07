@@ -1,13 +1,13 @@
 ---
 name: I_BANKGUARANTEETYPETEXT
-description: Bank Guarantee Type - Text
+description: "Bank Guarantee Type - Text"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKGUARANTEETYPETEXT')/$value
-semantic_en: Bank Guarantee Type - Text
+semantic_en: "Bank Guarantee Type - Text"
 tags:
   - FIN
   - component:FIN-FSCM-TRM-2CL

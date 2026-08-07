@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTMGMTDOCISCOLLVDOCTEXT
-description: This CDS view exposes fixed values of the field Settlement Management Document Collective Document Code. The following fixed values have been maintained: " " No 1 Yes (Header Level) 2 Yes (Item Level)
+description: "This CDS view exposes fixed values of the field Settlement Management Document Collective Document Code. The following fixed values have been maintained: \" \" No 1 Yes (Header Level) 2 Yes (Item Level)"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTMGMTDOCISCOLLVDOCTEXT')/$value
-semantic_en: This CDS view exposes fixed values of the field Settlement Management Document Collective Document Code. The following fixed values have been maintained: " " No 1 Yes (Header Level) 2 Yes (Item Level)
+semantic_en: "This CDS view exposes fixed values of the field Settlement Management Document Collective Document Code. The following fixed values have been maintained: \" \" No 1 Yes (Header Level) 2 Yes (Item Level)"
 tags:
   - LO
   - bo:companycode

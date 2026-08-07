@@ -1,6 +1,6 @@
 ---
 name: I_DISTRIBUTIONCHANNEL
-description: Distributionchannel
+description: "Distributionchannel"
 app_component: SD-CRF-ORG-2CL
 software_component: SAPSCORE
 release_state: released

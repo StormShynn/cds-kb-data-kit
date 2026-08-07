@@ -1,6 +1,6 @@
 ---
 name: I_VARCONFIGNTABLECOLUMNTP
-description: Varconfigntablecolumntp
+description: "Varconfigntablecolumntp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_IN_ELECTRONICDOCTRANSPTREGN
-description: IN Electronicdoctransptregn
+description: "IN Electronicdoctransptregn"
 app_component: CA-GTF-CSC-EDO-IN-EW
 software_component: SAPSCORE
 release_state: released

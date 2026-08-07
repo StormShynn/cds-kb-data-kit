@@ -1,6 +1,6 @@
 ---
 name: I_PURGINFORECDPRICECNDNAPI01
-description: Purginforecdpricecndnapi 01
+description: "Purginforecdpricecndnapi 01"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

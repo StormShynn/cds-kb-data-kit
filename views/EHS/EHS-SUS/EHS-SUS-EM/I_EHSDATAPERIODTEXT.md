@@ -1,13 +1,13 @@
 ---
 name: I_EHSDATAPERIODTEXT
-description: EHS Data Period - Text
+description: "EHS Data Period - Text"
 app_component: EHS-SUS-EM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSDATAPERIODTEXT')/$value
-semantic_en: EHS Data Period - Text
+semantic_en: "EHS Data Period - Text"
 tags:
   - EHS
   - bo:salesorganization

@@ -1,6 +1,6 @@
 ---
 name: I_BANKSCRIPTEDADDRESSTP
-description: Bankscriptedaddresstp
+description: "Bankscriptedaddresstp"
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

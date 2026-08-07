@@ -1,13 +1,13 @@
 ---
 name: I_ETOPROJECTITEMCUBE
-description: Engineer To Order Project Item - Cube
+description: "Engineer To Order Project Item - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJECTITEMCUBE')/$value
-semantic_en: Engineer To Order Project Item - Cube
+semantic_en: "Engineer To Order Project Item - Cube"
 tags:
   - CO
   - bo:project

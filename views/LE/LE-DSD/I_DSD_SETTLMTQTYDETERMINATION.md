@@ -1,6 +1,6 @@
 ---
 name: I_DSD_SETTLMTQTYDETERMINATION
-description: Dsd Settlmtqtydetermination
+description: "Dsd Settlmtqtydetermination"
 app_component: LE-DSD
 software_component: SAPSCORE
 release_state: released

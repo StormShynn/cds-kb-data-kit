@@ -1,6 +1,6 @@
 ---
 name: I_WIPQUANTITYDOCUMENT
-description: Wipquantitydocument
+description: "Wipquantitydocument"
 app_component: CO-PC-ACT-2CL
 software_component: SAPSCORE
 release_state: released

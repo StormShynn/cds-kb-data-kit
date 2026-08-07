@@ -1,6 +1,6 @@
 ---
 name: I_WORKFLOWRECIPIENTS_V2
-description: Workflowrecipients V 2
+description: "Workflowrecipients V 2"
 app_component: BC-BMT-WFM
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SLSORDERWITHOUTCHRGITMTEXTTP
-description: Slsorderwithoutchrgitmtexttp
+description: "Slsorderwithoutchrgitmtexttp"
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

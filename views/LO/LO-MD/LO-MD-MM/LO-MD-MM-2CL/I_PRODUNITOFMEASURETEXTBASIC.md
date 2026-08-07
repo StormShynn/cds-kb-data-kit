@@ -1,6 +1,6 @@
 ---
 name: I_PRODUNITOFMEASURETEXTBASIC
-description: PRODUnit of MeasureTEXTBASIC
+description: "PRODUnit of MeasureTEXTBASIC"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

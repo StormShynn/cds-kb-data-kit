@@ -1,6 +1,6 @@
 ---
 name: I_IN_INVCREFNMBRDET
-description: IN Invcrefnmbrdet
+description: "IN Invcrefnmbrdet"
 app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released

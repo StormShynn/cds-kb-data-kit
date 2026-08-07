@@ -1,6 +1,6 @@
 ---
 name: I_JOINTVENTUREDESCRIPTIONTP
-description: Jointventuredescriptiontp
+description: "Jointventuredescriptiontp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

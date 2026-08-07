@@ -1,6 +1,6 @@
 ---
 name: D_CEPUCOASLIOBJTOLGLTRNEXTP
-description: D Cepucoasliobjtolgltrnextp
+description: "D Cepucoasliobjtolgltrnextp"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

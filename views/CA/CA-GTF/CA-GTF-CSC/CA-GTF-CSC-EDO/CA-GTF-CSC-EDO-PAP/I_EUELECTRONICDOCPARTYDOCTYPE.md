@@ -1,6 +1,6 @@
 ---
 name: I_EUELECTRONICDOCPARTYDOCTYPE
-description: Euelectronicdocpartydoctype
+description: "Euelectronicdocpartydoctype"
 app_component: CA-GTF-CSC-EDO-PAP
 software_component: SAPSCORE
 release_state: released

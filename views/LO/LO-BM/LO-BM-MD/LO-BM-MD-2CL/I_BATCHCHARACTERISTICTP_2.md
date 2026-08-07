@@ -1,6 +1,6 @@
 ---
 name: I_BATCHCHARACTERISTICTP_2
-description: Batchcharacteristictp 2
+description: "Batchcharacteristictp 2"
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_COSTORIGINTYPETEXT
-description: Cost Origin Type - Text
+description: "Cost Origin Type - Text"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COSTORIGINTYPETEXT')/$value
-semantic_en: Cost Origin Type - Text
+semantic_en: "Cost Origin Type - Text"
 tags:
   - CO
   - CO-PC

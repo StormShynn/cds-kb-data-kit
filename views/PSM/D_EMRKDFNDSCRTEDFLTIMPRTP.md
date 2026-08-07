@@ -1,6 +1,6 @@
 ---
 name: D_EMRKDFNDSCRTEDFLTIMPRTP
-description: D Emrkdfndscrtedfltimprtp
+description: "D Emrkdfndscrtedfltimprtp"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

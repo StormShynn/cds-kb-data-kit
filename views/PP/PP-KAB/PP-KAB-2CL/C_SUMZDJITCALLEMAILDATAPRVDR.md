@@ -1,28 +1,28 @@
 ---
 name: C_SUMZDJITCALLEMAILDATAPRVDR
-description: This CDS view forms the basis for the predelivered Output Management email template for summarized JIT calls (PP_SUM_JIT_CALL_EMAIL). This CDS view provides the fields that can be used in the template for the email message body, specifically focusing on the output partner and plant information. This CDS view provides the data to answer the following business questions: Which fields are included in the email template for Output Management for Summarized JIT Calls? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view forms the basis for the predelivered Output Management email template for summarized JIT calls (PP_SUM_JIT_CALL_EMAIL). This CDS view provides the fields that can be used in the template for the email message body, specifically focusing on the output partner and plant information. This CDS view provides the data to answer the following business questions: Which fields are included in the email template for Output Management for Summarized JIT Calls? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: PP-KAB-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUMZDJITCALLEMAILDATAPRVDR')/$value
-semantic_en: This CDS view forms the basis for the predelivered Output Management email template for summarized JIT calls (PP_SUM_JIT_CALL_EMAIL). This CDS view provides the fields that can be used in the template for the email message body, specifically focusing on the output partner and plant information. This CDS view provides the data to answer the following business questions: Which fields are included in the email template for Output Management for Summarized JIT Calls? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Summarized JIT Call Email Data Provider — CDS view tiêu dùng dựa trên I_SummarizedJITCall.
+semantic_en: "This CDS view forms the basis for the predelivered Output Management email template for summarized JIT calls (PP_SUM_JIT_CALL_EMAIL). This CDS view provides the fields that can be used in the template for the email message body, specifically focusing on the output partner and plant information. This CDS view provides the data to answer the following business questions: Which fields are included in the email template for Output Management for Summarized JIT Calls? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Summarized JIT Call Email Data Provider — CDS view tiêu dùng dựa trên I_SummarizedJITCall."
 keywords:
-  - summarized
-  - jit
-  - call
-  - email
-  - data
-  - provider
-  - number
-  - supplier
-  - output
-  - partner
-  - sumzd
-  - profile
-  - plant
+  - "summarized"
+  - "jit"
+  - "call"
+  - "email"
+  - "data"
+  - "provider"
+  - "number"
+  - "supplier"
+  - "output"
+  - "partner"
+  - "sumzd"
+  - "profile"
+  - "plant"
 tags:
   - PP
   - bo:companycode

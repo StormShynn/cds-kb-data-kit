@@ -1,6 +1,6 @@
 ---
 name: I_BPLEGALPROCEEDINGSTATUS
-description: Bplegalproceedingstatus
+description: "Bplegalproceedingstatus"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

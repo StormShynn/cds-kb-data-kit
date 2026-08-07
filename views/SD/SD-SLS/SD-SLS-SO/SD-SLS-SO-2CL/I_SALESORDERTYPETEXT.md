@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERTYPETEXT
-description: Sales OrderTYPETEXT
+description: "Sales OrderTYPETEXT"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

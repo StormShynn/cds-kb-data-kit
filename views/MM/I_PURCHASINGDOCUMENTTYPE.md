@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGDOCUMENTTYPE
-description: Purchasingdocumenttype
+description: "Purchasingdocumenttype"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTCUSTSELECTEDTAXTYPE
-description: Business PartnerCUSTSELECTEDTAXTYPE
+description: "Business PartnerCUSTSELECTEDTAXTYPE"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

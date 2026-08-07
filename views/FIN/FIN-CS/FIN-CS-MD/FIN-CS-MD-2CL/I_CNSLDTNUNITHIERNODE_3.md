@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITHIERNODE_3
-description: Cnsldtnunithiernode 3
+description: "Cnsldtnunithiernode 3"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

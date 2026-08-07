@@ -1,6 +1,6 @@
 ---
 name: I_RECNDNCALCRULEEXTTEXT
-description: Recndncalcruleexttext
+description: "Recndncalcruleexttext"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released

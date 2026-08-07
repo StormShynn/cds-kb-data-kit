@@ -1,6 +1,6 @@
 ---
 name: I_APCHECKBOOK
-description: Apcheckbook
+description: "Apcheckbook"
 app_component: FI-FIO-AP-2CL
 software_component: SAPSCORE
 release_state: released

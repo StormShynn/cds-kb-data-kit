@@ -1,6 +1,6 @@
 ---
 name: I_IN_BUSINESSPLACETAXDETAIL
-description: IN Businessplacetaxdetail
+description: "IN Businessplacetaxdetail"
 app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released

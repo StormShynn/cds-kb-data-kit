@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLSUPPLIERQTANITEMPRICING
-description: Cntrlsupplierqtanitempricing
+description: "Cntrlsupplierqtanitempricing"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

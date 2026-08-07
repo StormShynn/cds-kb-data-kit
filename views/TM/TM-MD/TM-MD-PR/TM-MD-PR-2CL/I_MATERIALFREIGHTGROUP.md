@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALFREIGHTGROUP
-description: Materialfreightgroup
+description: "Materialfreightgroup"
 app_component: TM-MD-PR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_PUBLICHOLIDAYDATEPERYEAR
-description: Public Holiday Date Per Year
+description: "Public Holiday Date Per Year"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBLICHOLIDAYDATEPERYEAR')/$value
-semantic_en: Public Holiday Date Per Year
+semantic_en: "Public Holiday Date Per Year"
 tags:
   - CA
   - CA-GTF

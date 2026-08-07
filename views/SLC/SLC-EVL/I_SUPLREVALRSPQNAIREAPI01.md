@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALRSPQNAIREAPI01
-description: Suplrevalrspqnaireapi 01
+description: "Suplrevalrspqnaireapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

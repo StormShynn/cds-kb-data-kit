@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDCANCELLATIONACTIONT
-description: Maintordcancellationactiont
+description: "Maintordcancellationactiont"
 app_component: PM-WOC-2CL
 software_component: SAPSCORE
 release_state: released

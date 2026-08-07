@@ -1,6 +1,6 @@
 ---
 name: I_BPRISKGROUPTEXT
-description: Bpriskgrouptext
+description: "Bpriskgrouptext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

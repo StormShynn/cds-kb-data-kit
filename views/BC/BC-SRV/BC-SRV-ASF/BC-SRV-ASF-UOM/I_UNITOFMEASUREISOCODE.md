@@ -1,6 +1,6 @@
 ---
 name: I_UNITOFMEASUREISOCODE
-description: Unit of MeasureISOCODE
+description: "Unit of MeasureISOCODE"
 app_component: BC-SRV-ASF-UOM
 software_component: SAP_BASIS
 release_state: released

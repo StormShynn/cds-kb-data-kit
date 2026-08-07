@@ -1,13 +1,13 @@
 ---
 name: I_FTR_FACILITY_VH
-description: Facilities
+description: "Facilities"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FTR_FACILITY_VH')/$value
-semantic_en: Facilities
+semantic_en: "Facilities"
 tags:
   - FIN
   - component:FIN-FSCM-TRM-2CL

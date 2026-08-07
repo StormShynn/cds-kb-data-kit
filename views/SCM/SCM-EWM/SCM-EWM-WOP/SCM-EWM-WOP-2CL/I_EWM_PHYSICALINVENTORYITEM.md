@@ -1,6 +1,6 @@
 ---
 name: I_EWM_PHYSICALINVENTORYITEM
-description: Ewm Physicalinventoryitem
+description: "Ewm Physicalinventoryitem"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

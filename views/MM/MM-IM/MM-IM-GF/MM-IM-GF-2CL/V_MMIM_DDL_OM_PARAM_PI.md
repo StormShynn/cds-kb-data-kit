@@ -1,6 +1,6 @@
 ---
 name: V_MMIM_DDL_OM_PARAM_PI
-description: V Mmim Ddl OM Param PI
+description: "V Mmim Ddl OM Param PI"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRSETTLMTLISTITEMSTDVH
-description: Supplier Settlement List Item
+description: "Supplier Settlement List Item"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTLISTITEMSTDVH')/$value
-semantic_en: Supplier Settlement List Item
+semantic_en: "Supplier Settlement List Item"
 tags:
   - LO
   - component:LO-AB

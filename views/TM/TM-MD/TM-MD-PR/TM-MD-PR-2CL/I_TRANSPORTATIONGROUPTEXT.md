@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONGROUPTEXT
-description: Transportationgrouptext
+description: "Transportationgrouptext"
 app_component: TM-MD-PR-2CL
 software_component: SAPSCORE
 release_state: released

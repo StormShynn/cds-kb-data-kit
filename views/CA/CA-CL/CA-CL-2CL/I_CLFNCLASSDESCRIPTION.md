@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCLASSDESCRIPTION
-description: Clfnclassdescription
+description: "Clfnclassdescription"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

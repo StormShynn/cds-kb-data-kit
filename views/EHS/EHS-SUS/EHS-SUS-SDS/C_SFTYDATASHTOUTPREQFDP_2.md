@@ -1,13 +1,13 @@
 ---
 name: C_SFTYDATASHTOUTPREQFDP_2
-description: Safety Data Sheet Shipment Request
+description: "Safety Data Sheet Shipment Request"
 app_component: EHS-SUS-SDS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SFTYDATASHTOUTPREQFDP_2')/$value
-semantic_en: Safety Data Sheet Shipment Request
+semantic_en: "Safety Data Sheet Shipment Request"
 tags:
   - EHS
   - component:EHS-SUS-SDS

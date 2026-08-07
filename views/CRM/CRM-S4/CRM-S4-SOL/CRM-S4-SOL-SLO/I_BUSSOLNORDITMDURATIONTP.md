@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDITMDURATIONTP
-description: Bussolnorditmdurationtp
+description: "Bussolnorditmdurationtp"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

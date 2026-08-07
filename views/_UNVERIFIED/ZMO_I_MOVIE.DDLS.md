@@ -1,24 +1,24 @@
 ---
 name: ZMO_I_MOVIE.DDLS
-description: Movie View - CDS Data Model
+description: "Movie View - CDS Data Model"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/soschlegel/MovieDemo/blob/097fe3f147dfce6ada78ff6c5e2ae281cea2f9c0/src/zmo_i_movie.ddls.asddls
-semantic_en: Movie View - CDS Data Model — CDS view based on zmo_a_movie.
-semantic_vi: Movie View - CDS Data Model — CDS view dựa trên zmo_a_movie.
+semantic_en: "Movie View - CDS Data Model — CDS view based on zmo_a_movie."
+semantic_vi: "Movie View - CDS Data Model — CDS view dựa trên zmo_a_movie."
 keywords:
-  - movie
-  - data
-  - model
-  - guid
-  - title
-  - release
-  - year
-  - director
-  - genre
+  - "movie"
+  - "data"
+  - "model"
+  - "guid"
+  - "title"
+  - "release"
+  - "year"
+  - "director"
+  - "genre"
 ---
 # ZMO_I_MOVIE.DDLS
 

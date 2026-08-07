@@ -1,13 +1,13 @@
 ---
 name: C_BUSSOLNORDENTPROJECTITMSITN
-description: Soln Ord Customer Project Item Situation Anchor and Trigger
+description: "Soln Ord Customer Project Item Situation Anchor and Trigger"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSSOLNORDENTPROJECTITMSITN')/$value
-semantic_en: Soln Ord Customer Project Item Situation Anchor and Trigger
+semantic_en: "Soln Ord Customer Project Item Situation Anchor and Trigger"
 tags:
   - CRM
   - bo:businesspartner

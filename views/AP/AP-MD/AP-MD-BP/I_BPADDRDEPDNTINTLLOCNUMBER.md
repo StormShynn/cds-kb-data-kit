@@ -1,6 +1,6 @@
 ---
 name: I_BPADDRDEPDNTINTLLOCNUMBER
-description: Bpaddrdepdntintllocnumber
+description: "Bpaddrdepdntintllocnumber"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

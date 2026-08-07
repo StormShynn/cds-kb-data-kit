@@ -1,6 +1,6 @@
 ---
 name: I_BANKCHANGEDOCUMENT
-description: Bankchangedocument
+description: "Bankchangedocument"
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CAACCTDETNTRANSKEYTEXT
-description: Caacctdetntranskeytext
+description: "Caacctdetntranskeytext"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

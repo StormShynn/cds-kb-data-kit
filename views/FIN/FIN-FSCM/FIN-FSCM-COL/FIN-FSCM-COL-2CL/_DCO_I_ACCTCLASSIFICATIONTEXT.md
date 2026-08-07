@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_ACCTCLASSIFICATIONTEXT
-description: Account Classification - Text
+description: "Account Classification - Text"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCTCLASSIFICATIONTEXT')/$value
-semantic_en: Account Classification - Text
+semantic_en: "Account Classification - Text"
 tags:
   - FIN
   - account

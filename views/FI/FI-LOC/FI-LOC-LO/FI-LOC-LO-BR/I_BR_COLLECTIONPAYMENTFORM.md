@@ -1,6 +1,6 @@
 ---
 name: I_BR_COLLECTIONPAYMENTFORM
-description: BR Collectionpaymentform
+description: "BR Collectionpaymentform"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

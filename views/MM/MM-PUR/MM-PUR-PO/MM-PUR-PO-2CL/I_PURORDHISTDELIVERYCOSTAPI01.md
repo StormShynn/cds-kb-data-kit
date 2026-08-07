@@ -1,6 +1,6 @@
 ---
 name: I_PURORDHISTDELIVERYCOSTAPI01
-description: Purordhistdeliverycostapi 01
+description: "Purordhistdeliverycostapi 01"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

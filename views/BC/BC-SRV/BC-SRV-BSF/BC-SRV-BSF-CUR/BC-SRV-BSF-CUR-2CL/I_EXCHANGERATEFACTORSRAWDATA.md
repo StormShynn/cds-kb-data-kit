@@ -1,6 +1,6 @@
 ---
 name: I_EXCHANGERATEFACTORSRAWDATA
-description: Exchange RateFACTORSRAWDATA
+description: "Exchange RateFACTORSRAWDATA"
 app_component: BC-SRV-BSF-CUR-2CL
 software_component: SAP_BASIS
 release_state: released

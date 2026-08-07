@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPOSTINGLEVELTEXT_3
-description: Cnsldtnpostingleveltext 3
+description: "Cnsldtnpostingleveltext 3"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

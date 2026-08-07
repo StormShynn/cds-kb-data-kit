@@ -1,13 +1,13 @@
 ---
 name: I_PRATAXRPTGHISTWYCONSVN
-description: Production Revenue Accounting Tax Reporting History WY Conservation
+description: "Production Revenue Accounting Tax Reporting History WY Conservation"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXRPTGHISTWYCONSVN')/$value
-semantic_en: Production Revenue Accounting Tax Reporting History WY Conservation
+semantic_en: "Production Revenue Accounting Tax Reporting History WY Conservation"
 tags:
   - IS
   - account

@@ -1,6 +1,6 @@
 ---
 name: I_INVENTORYAMTBYFSCLPERD
-description: Inventoryamtbyfsclperd
+description: "Inventoryamtbyfsclperd"
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released

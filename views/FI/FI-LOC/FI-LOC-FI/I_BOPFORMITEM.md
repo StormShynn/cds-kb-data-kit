@@ -1,6 +1,6 @@
 ---
 name: I_BOPFORMITEM
-description: Bopformitem
+description: "Bopformitem"
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

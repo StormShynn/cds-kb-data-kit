@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGREQCATEGORY
-description: Cabillgreqcategory
+description: "Cabillgreqcategory"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

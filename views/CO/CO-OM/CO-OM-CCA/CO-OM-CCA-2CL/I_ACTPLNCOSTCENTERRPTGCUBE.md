@@ -1,6 +1,6 @@
 ---
 name: I_ACTPLNCOSTCENTERRPTGCUBE
-description: ACTPLNCost CenterRPTGCUBE
+description: "ACTPLNCost CenterRPTGCUBE"
 app_component: CO-OM-CCA-2CL
 software_component: SAPSCORE
 release_state: released

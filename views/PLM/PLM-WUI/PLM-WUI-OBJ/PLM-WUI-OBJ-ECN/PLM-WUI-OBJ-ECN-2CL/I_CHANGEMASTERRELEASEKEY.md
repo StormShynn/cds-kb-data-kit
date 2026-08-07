@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMASTERRELEASEKEY
-description: These CDS views provide the prerequisites for answering the following business question: Is a change released globally within my company, or only for a specific operative area (for example costing, planning, or production)?
+description: "These CDS views provide the prerequisites for answering the following business question: Is a change released globally within my company, or only for a specific operative area (for example costing, planning, or production)?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERRELEASEKEY')/$value
-semantic_en: These CDS views provide the prerequisites for answering the following business question: Is a change released globally within my company, or only for a specific operative area (for example costing, planning, or production)?
+semantic_en: "These CDS views provide the prerequisites for answering the following business question: Is a change released globally within my company, or only for a specific operative area (for example costing, planning, or production)?"
 tags:
   - PLM
   - bo:companycode

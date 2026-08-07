@@ -1,6 +1,6 @@
 ---
 name: I_SRVCQTANUSERSTATUSTP
-description: Srvcqtanuserstatustp
+description: "Srvcqtanuserstatustp"
 app_component: CRM-S4-SRV-SVQ-2CL
 software_component: SAPSCORE
 release_state: released

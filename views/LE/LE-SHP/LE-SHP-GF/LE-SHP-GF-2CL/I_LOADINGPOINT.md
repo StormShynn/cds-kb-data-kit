@@ -1,6 +1,6 @@
 ---
 name: I_LOADINGPOINT
-description: Loadingpoint
+description: "Loadingpoint"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

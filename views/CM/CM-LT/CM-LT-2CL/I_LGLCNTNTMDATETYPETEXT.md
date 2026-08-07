@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMDATETYPETEXT
-description: Lglcntntmdatetypetext
+description: "Lglcntntmdatetypetext"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_BUSSOLNORDDELETED
-description: D Bussolnorddeleted
+description: "D Bussolnorddeleted"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

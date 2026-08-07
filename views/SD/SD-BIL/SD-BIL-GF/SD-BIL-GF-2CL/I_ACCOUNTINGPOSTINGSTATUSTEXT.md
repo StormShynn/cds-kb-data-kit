@@ -1,6 +1,6 @@
 ---
 name: I_ACCOUNTINGPOSTINGSTATUSTEXT
-description: Accountingpostingstatustext
+description: "Accountingpostingstatustext"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

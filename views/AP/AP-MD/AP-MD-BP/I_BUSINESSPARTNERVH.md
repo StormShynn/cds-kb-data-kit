@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERVH
-description: Business PartnerVH
+description: "Business PartnerVH"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

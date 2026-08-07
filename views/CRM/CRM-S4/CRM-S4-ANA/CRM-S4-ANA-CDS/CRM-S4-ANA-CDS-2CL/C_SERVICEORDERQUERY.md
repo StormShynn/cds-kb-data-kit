@@ -1,15 +1,15 @@
 ---
 name: C_SERVICEORDERQUERY
-description: This CDS view belongs to Order to Cash Dashboard that can be used both as an embedded and standalone edition. It provides the prerequisites for answering questions about service orders at header level. Examples of business questions include the following: How many open service orders of the top sold-to party, sales organization, or sale office are there? What's the aggregated net value of incoming service orders in the current quarter? Who are the top customers by net value of incoming service orders? How many open service orders were there in the past month? How many incoming service orders for my sales organizations are there in the current month? Which service orders and service contracts are related to a specific solution order?
+description: "This CDS view belongs to Order to Cash Dashboard that can be used both as an embedded and standalone edition. It provides the prerequisites for answering questions about service orders at header level. Examples of business questions include the following: How many open service orders of the top sold-to party, sales organization, or sale office are there? What's the aggregated net value of incoming service orders in the current quarter? Who are the top customers by net value of incoming service orders? How many open service orders were there in the past month? How many incoming service orders for my sales organizations are there in the current month? Which service orders and service contracts are related to a specific solution order?"
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SERVICEORDERQUERY')/$value
-semantic_en: This CDS view belongs to Order to Cash Dashboard that can be used both as an embedded and standalone edition. It provides the prerequisites for answering questions about service orders at header level. Examples of business questions include the following: How many open service orders of the top sold-to party, sales organization, or sale office are there? What's the aggregated net value of incoming service orders in the current quarter? Who are the top customers by net value of incoming service orders? How many open service orders were there in the past month? How many incoming service orders for my sales organizations are there in the current month? Which service orders and service contracts are related to a specific solution order?
+semantic_en: "This CDS view belongs to Order to Cash Dashboard that can be used both as an embedded and standalone edition. It provides the prerequisites for answering questions about service orders at header level. Examples of business questions include the following: How many open service orders of the top sold-to party, sales organization, or sale office are there? What's the aggregated net value of incoming service orders in the current quarter? Who are the top customers by net value of incoming service orders? How many open service orders were there in the past month? How many incoming service orders for my sales organizations are there in the current month? Which service orders and service contracts are related to a specific solution order?"
 keywords:
-  - Service Order - Query
+  - "Service Order - Query"
 tags:
   - CRM
   - bo:businesspartner

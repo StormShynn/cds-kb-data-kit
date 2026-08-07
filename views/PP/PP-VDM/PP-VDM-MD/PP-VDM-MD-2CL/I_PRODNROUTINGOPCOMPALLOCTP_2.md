@@ -1,6 +1,6 @@
 ---
 name: I_PRODNROUTINGOPCOMPALLOCTP_2
-description: Prodnroutingopcompalloctp 2
+description: "Prodnroutingopcompalloctp 2"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

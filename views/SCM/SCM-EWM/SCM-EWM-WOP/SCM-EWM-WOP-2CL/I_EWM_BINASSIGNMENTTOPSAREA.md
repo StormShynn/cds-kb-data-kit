@@ -1,6 +1,6 @@
 ---
 name: I_EWM_BINASSIGNMENTTOPSAREA
-description: Ewm Binassignmenttopsarea
+description: "Ewm Binassignmenttopsarea"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

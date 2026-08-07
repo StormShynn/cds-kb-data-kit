@@ -1,6 +1,6 @@
 ---
 name: I_SLSMATLDETNRECDADDLSUBSTIT
-description: Slsmatldetnrecdaddlsubstit
+description: "Slsmatldetnrecdaddlsubstit"
 app_component: SD-MD-MM-DET-2CL
 software_component: SAPSCORE
 release_state: released

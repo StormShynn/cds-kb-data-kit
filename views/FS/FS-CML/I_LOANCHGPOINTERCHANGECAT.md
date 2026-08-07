@@ -1,13 +1,13 @@
 ---
 name: I_LOANCHGPOINTERCHANGECAT
-description: Loan Change Pointer Change Category
+description: "Loan Change Pointer Change Category"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCHGPOINTERCHANGECAT')/$value
-semantic_en: Loan Change Pointer Change Category
+semantic_en: "Loan Change Pointer Change Category"
 tags:
   - FS
   - bo:purchaseorder

@@ -1,13 +1,13 @@
 ---
 name: I_PRAROYTYWYPRODUCTTYPET
-description: Royalty Wyoming Product Type - Text
+description: "Royalty Wyoming Product Type - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAROYTYWYPRODUCTTYPET')/$value
-semantic_en: Royalty Wyoming Product Type - Text
+semantic_en: "Royalty Wyoming Product Type - Text"
 tags:
   - IS
   - bo:material

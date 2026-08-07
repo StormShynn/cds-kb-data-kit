@@ -1,6 +1,6 @@
 ---
 name: I_CN_PAYMENTREQUISITIONTYPEVH
-description: CN Payment RequestUISITIONTYPEVH
+description: "CN Payment RequestUISITIONTYPEVH"
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

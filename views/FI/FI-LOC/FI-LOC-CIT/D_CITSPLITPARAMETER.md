@@ -1,6 +1,6 @@
 ---
 name: D_CITSPLITPARAMETER
-description: D Citsplitparameter
+description: "D Citsplitparameter"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

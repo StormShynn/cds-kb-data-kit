@@ -1,6 +1,6 @@
 ---
 name: I_CRDTMACCTCOLLATERALTP
-description: Crdtmacctcollateraltp
+description: "Crdtmacctcollateraltp"
 app_component: FIN-FIO-CCD-CR-2CL
 software_component: SAPSCORE
 release_state: released

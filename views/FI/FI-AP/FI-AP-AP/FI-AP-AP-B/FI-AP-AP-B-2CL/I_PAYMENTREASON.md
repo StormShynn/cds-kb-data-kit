@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTREASON
-description: Paymentreason
+description: "Paymentreason"
 app_component: FI-AP-AP-B-2CL
 software_component: SAPSCORE
 release_state: released

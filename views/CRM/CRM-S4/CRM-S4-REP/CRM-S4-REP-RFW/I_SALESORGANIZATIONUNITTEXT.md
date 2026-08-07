@@ -1,6 +1,6 @@
 ---
 name: I_SALESORGANIZATIONUNITTEXT
-description: Sales OrganizationUNITTEXT
+description: "Sales OrganizationUNITTEXT"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

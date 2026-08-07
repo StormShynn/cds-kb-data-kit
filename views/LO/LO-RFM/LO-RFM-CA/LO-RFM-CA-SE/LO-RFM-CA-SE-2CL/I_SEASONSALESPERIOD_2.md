@@ -1,13 +1,13 @@
 ---
 name: I_SEASONSALESPERIOD_2
-description: Season Sales Period
+description: "Season Sales Period"
 app_component: LO-RFM-CA-SE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONSALESPERIOD_2')/$value
-semantic_en: Season Sales Period
+semantic_en: "Season Sales Period"
 tags:
   - LO
   - bo:salesorder

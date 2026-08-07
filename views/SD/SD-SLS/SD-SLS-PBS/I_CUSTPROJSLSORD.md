@@ -1,6 +1,6 @@
 ---
 name: I_CUSTPROJSLSORD
-description: Custprojslsord
+description: "Custprojslsord"
 app_component: SD-SLS-PBS
 software_component: SAPSCORE
 release_state: released

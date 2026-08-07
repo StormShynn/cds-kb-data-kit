@@ -1,6 +1,6 @@
 ---
 name: I_FRTCOSTALLOCACCTGTRANSFSTST
-description: Frtcostallocacctgtransfstst
+description: "Frtcostallocacctgtransfstst"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

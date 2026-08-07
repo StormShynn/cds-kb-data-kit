@@ -1,23 +1,23 @@
 ---
 name: ZCE_ODPU_APC.DDLS
-description: ZCE_ODPU_APC.DDLS
+description: "ZCE_ODPU_APC.DDLS"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/mariokernich/odapu-abap/blob/d0034f1c930ecfaf8fa2e2195931abae6be28c93/src/zce_odpu_apc.ddls.asddls
-semantic_en: ZCE_ODPU_APC.DDLS — CDS view.
-semantic_vi: ZCE_ODPU_APC.DDLS — CDS view dựa trên ZCE_ODPU_APC.DDLS.
+semantic_en: "ZCE_ODPU_APC.DDLS — CDS view."
+semantic_vi: "ZCE_ODPU_APC.DDLS — CDS view dựa trên ZCE_ODPU_APC.DDLS."
 keywords:
-  - zce
-  - odpu
-  - apc.ddls
-  - application
-  - version
-  - apc_appl_path
-  - seoclsname
-  - apc_wsp_protocol_type_id
+  - "zce"
+  - "odpu"
+  - "apc.ddls"
+  - "application"
+  - "version"
+  - "apc_appl_path"
+  - "seoclsname"
+  - "apc_wsp_protocol_type_id"
 tags:
   - AP
   - component:AP

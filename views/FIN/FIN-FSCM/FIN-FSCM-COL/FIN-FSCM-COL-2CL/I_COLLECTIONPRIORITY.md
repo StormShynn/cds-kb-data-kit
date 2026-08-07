@@ -1,6 +1,6 @@
 ---
 name: I_COLLECTIONPRIORITY
-description: Collectionpriority
+description: "Collectionpriority"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released

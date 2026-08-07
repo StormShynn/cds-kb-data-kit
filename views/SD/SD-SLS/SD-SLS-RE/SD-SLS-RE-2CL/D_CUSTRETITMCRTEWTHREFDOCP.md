@@ -1,6 +1,6 @@
 ---
 name: D_CUSTRETITMCRTEWTHREFDOCP
-description: D Custretitmcrtewthrefdocp
+description: "D Custretitmcrtewthrefdocp"
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

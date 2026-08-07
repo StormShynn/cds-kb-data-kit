@@ -1,6 +1,6 @@
 ---
 name: D_OUTBDELIVCRTEFRMSLSDOCITEMP
-description: D Outbdelivcrtefrmslsdocitemp
+description: "D Outbdelivcrtefrmslsdocitemp"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

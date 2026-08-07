@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTRPENALTYCATEGORYTEXT
-description: Jntvntrpenaltycategorytext
+description: "Jntvntrpenaltycategorytext"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

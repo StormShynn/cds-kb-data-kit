@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDERITEMMONITOR
-description: Purchase OrderITEMMONITOR
+description: "Purchase OrderITEMMONITOR"
 app_component: MM-PUR-GF-MON-2CL
 software_component: SAPSCORE
 release_state: released

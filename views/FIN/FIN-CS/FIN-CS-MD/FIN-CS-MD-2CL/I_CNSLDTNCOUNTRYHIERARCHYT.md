@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCOUNTRYHIERARCHYT
-description: Cnsldtncountryhierarchyt
+description: "Cnsldtncountryhierarchyt"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

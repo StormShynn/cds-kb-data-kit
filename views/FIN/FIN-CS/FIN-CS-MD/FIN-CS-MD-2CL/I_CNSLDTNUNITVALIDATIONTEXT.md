@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITVALIDATIONTEXT
-description: Cnsldtnunitvalidationtext
+description: "Cnsldtnunitvalidationtext"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CHANGEMASTERSTATUSTEXT
-description: Change MasterERSTATUSTEXT
+description: "Change MasterERSTATUSTEXT"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

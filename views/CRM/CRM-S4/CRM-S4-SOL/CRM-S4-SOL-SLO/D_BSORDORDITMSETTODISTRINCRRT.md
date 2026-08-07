@@ -1,6 +1,6 @@
 ---
 name: D_BSORDORDITMSETTODISTRINCRRT
-description: D Bsordorditmsettodistrincrrt
+description: "D Bsordorditmsettodistrincrrt"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CADOCUMENTCLASS
-description: Cadocumentclass
+description: "Cadocumentclass"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

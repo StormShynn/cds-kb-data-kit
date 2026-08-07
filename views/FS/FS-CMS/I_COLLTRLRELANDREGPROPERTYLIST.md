@@ -1,13 +1,13 @@
 ---
 name: I_COLLTRLRELANDREGPROPERTYLIST
-description: Land Reg Property List for Collateral
+description: "Land Reg Property List for Collateral"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLTRLRELANDREGPROPERTYLIST')/$value
-semantic_en: Land Reg Property List for Collateral
+semantic_en: "Land Reg Property List for Collateral"
 tags:
   - FS
   - component:FS-CMS

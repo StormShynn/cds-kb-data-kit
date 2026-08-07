@@ -1,13 +1,13 @@
 ---
 name: I_PRODNROUTINGOPSUBORDOPDEX
-description: Prodn Rtg Op Subordinate Operation
+description: "Prodn Rtg Op Subordinate Operation"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNROUTINGOPSUBORDOPDEX')/$value
-semantic_en: Prodn Rtg Op Subordinate Operation
+semantic_en: "Prodn Rtg Op Subordinate Operation"
 tags:
   - PP
   - bo:project

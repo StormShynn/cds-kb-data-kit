@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPROFITCENTERTP
-description: CNSLDTNProfit CenterTP
+description: "CNSLDTNProfit CenterTP"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

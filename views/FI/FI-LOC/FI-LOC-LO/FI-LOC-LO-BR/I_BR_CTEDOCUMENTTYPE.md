@@ -1,6 +1,6 @@
 ---
 name: I_BR_CTEDOCUMENTTYPE
-description: BR Ctedocumenttype
+description: "BR Ctedocumenttype"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

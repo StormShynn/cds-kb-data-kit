@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTBILLINGREQUESTSTATUS
-description: Projectbillingrequeststatus
+description: "Projectbillingrequeststatus"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DAYLIGHTSAVINGRULETEXT
-description: Daylightsavingruletext
+description: "Daylightsavingruletext"
 app_component: BC-SRV-TIM-TZ
 software_component: SAP_BASIS
 release_state: released

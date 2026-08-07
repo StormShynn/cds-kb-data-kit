@@ -1,28 +1,28 @@
 ---
 name: C_FINANCIALSTATEMENTKPI
-description: This CDS View provides you with access to a variety of financial statement-based measures that can be analyzed by all details of a journal entry. This view is based on the CDS Cube ViewI_ActualPlanLineItemSemTag, which combines actual and plan data and enriches the data with semantic tags. The measures are used to calculate financial statement-based KPIs based on the semantic tags that are assigned. The calculation of these KPIs is purely based on the aggregation of line items that are enriched by semantic tags. This CDS view provides you with the information that you need to answer the following business questions: What is my Return on Investment per Segment? What are my Cost of Goods sold per Product Group
+description: "This CDS View provides you with access to a variety of financial statement-based measures that can be analyzed by all details of a journal entry. This view is based on the CDS Cube ViewI_ActualPlanLineItemSemTag, which combines actual and plan data and enriches the data with semantic tags. The measures are used to calculate financial statement-based KPIs based on the semantic tags that are assigned. The calculation of these KPIs is purely based on the aggregation of line items that are enriched by semantic tags. This CDS view provides you with the information that you need to answer the following business questions: What is my Return on Investment per Segment? What are my Cost of Goods sold per Product Group"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FINANCIALSTATEMENTKPI')/$value
-semantic_en: This CDS View provides you with access to a variety of financial statement-based measures that can be analyzed by all details of a journal entry. This view is based on the CDS Cube ViewI_ActualPlanLineItemSemTag, which combines actual and plan data and enriches the data with semantic tags. The measures are used to calculate financial statement-based KPIs based on the semantic tags that are assigned. The calculation of these KPIs is purely based on the aggregation of line items that are enriched by semantic tags. This CDS view provides you with the information that you need to answer the following business questions: What is my Return on Investment per Segment? What are my Cost of Goods sold per Product Group
-semantic_vi: KPIs based on Financial Statements — CDS view tiêu dùng dựa trên I_ActualPlanLineItemSemTag.
+semantic_en: "This CDS View provides you with access to a variety of financial statement-based measures that can be analyzed by all details of a journal entry. This view is based on the CDS Cube ViewI_ActualPlanLineItemSemTag, which combines actual and plan data and enriches the data with semantic tags. The measures are used to calculate financial statement-based KPIs based on the semantic tags that are assigned. The calculation of these KPIs is purely based on the aggregation of line items that are enriched by semantic tags. This CDS view provides you with the information that you need to answer the following business questions: What is my Return on Investment per Segment? What are my Cost of Goods sold per Product Group"
+semantic_vi: "KPIs based on Financial Statements — CDS view tiêu dùng dựa trên I_ActualPlanLineItemSemTag."
 keywords:
-  - KPIs based on Financial Statements
-  - kpis
-  - based
-  - financial
-  - statements
-  - account
-  - hierarchy
-  - ledger
-  - company
-  - code
-  - planning
-  - category
-  - semantic
+  - "KPIs based on Financial Statements"
+  - "kpis"
+  - "based"
+  - "financial"
+  - "statements"
+  - "account"
+  - "hierarchy"
+  - "ledger"
+  - "company"
+  - "code"
+  - "planning"
+  - "category"
+  - "semantic"
 tags:
   - FI
   - bo:companycode

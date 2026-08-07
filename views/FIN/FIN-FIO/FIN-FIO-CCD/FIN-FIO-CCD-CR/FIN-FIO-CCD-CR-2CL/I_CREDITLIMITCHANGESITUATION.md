@@ -1,13 +1,13 @@
 ---
 name: I_CREDITLIMITCHANGESITUATION
-description: Credit Limit Change
+description: "Credit Limit Change"
 app_component: FIN-FIO-CCD-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITLIMITCHANGESITUATION')/$value
-semantic_en: Credit Limit Change
+semantic_en: "Credit Limit Change"
 tags:
   - FIN
   - component:FIN-FIO-CCD-CR-2CL

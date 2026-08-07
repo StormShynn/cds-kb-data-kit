@@ -1,13 +1,13 @@
 ---
 name: I_COLLTRLINSURPERSNSPEC
-description: Specification of Persn for Colltrl Insur
+description: "Specification of Persn for Colltrl Insur"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLTRLINSURPERSNSPEC')/$value
-semantic_en: Specification of Persn for Colltrl Insur
+semantic_en: "Specification of Persn for Colltrl Insur"
 tags:
   - FS
   - bo:companycode

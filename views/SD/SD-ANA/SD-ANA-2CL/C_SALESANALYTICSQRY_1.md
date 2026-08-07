@@ -1,27 +1,27 @@
 ---
 name: C_SALESANALYTICSQRY_1
-description: This CDS view provides the prerequisites for answering the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESANALYTICSQRY_1')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries?
-semantic_vi: Sales Volume and Open Sales - Query — CDS view tiêu dùng dựa trên I_SalesAnalyticsCube_1.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries?"
+semantic_vi: "Sales Volume and Open Sales - Query — CDS view tiêu dùng dựa trên I_SalesAnalyticsCube_1."
 keywords:
-  - Sales Volume and Open Sales - Query
-  - sales
-  - volume
-  - and
-  - open
-  - query
-  - document
-  - item
-  - schedule
-  - line
-  - billing
-  - plan
+  - "Sales Volume and Open Sales - Query"
+  - "sales"
+  - "volume"
+  - "and"
+  - "open"
+  - "query"
+  - "document"
+  - "item"
+  - "schedule"
+  - "line"
+  - "billing"
+  - "plan"
 tags:
   - SD
   - billing

@@ -1,28 +1,28 @@
 ---
 name: C_ENTPROJASSIGNEDORDERQRY
-description: Enterprise Project Assigned Orders Query
+description: "Enterprise Project Assigned Orders Query"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJASSIGNEDORDERQRY')/$value
-semantic_en: Enterprise Project Assigned Orders Query
-semantic_vi: Enterprise Project Assigned Orders Query — CDS view tiêu dùng dựa trên Enterprise Project Assigned Orders Query.
+semantic_en: "Enterprise Project Assigned Orders Query"
+semantic_vi: "Enterprise Project Assigned Orders Query — CDS view tiêu dùng dựa trên Enterprise Project Assigned Orders Query."
 keywords:
-  - enterprise
-  - project
-  - assigned
-  - orders
-  - query
-  - ledger
-  - company
-  - code
-  - account
-  - assignment
-  - type
-  - fiscal
-  - year
+  - "enterprise"
+  - "project"
+  - "assigned"
+  - "orders"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "account"
+  - "assignment"
+  - "type"
+  - "fiscal"
+  - "year"
 tags:
   - CO
   - bo:project

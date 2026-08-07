@@ -1,6 +1,6 @@
 ---
 name: I_EMPLOYEESUITABILITYTEXT
-description: Employeesuitabilitytext
+description: "Employeesuitabilitytext"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

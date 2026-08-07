@@ -1,6 +1,6 @@
 ---
 name: I_ACCOUNTINGTRANSFERSTATUS
-description: Accountingtransferstatus
+description: "Accountingtransferstatus"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

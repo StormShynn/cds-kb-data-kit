@@ -1,6 +1,6 @@
 ---
 name: D_MAINTORDSTSMARKFORDELETIONP
-description: D Maintordstsmarkfordeletionp
+description: "D Maintordstsmarkfordeletionp"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

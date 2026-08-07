@@ -1,13 +1,13 @@
 ---
 name: I_BPTAXCOMPLIANCESTATUSTEXT
-description: Tax Compliance Status of BP - Text
+description: "Tax Compliance Status of BP - Text"
 app_component: FS-BP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPTAXCOMPLIANCESTATUSTEXT')/$value
-semantic_en: Tax Compliance Status of BP - Text
+semantic_en: "Tax Compliance Status of BP - Text"
 tags:
   - FS
   - bo:businesspartner

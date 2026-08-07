@@ -1,6 +1,6 @@
 ---
 name: I_TRSYGENVALUATIONCLASSTEXT
-description: Trsygenvaluationclasstext
+description: "Trsygenvaluationclasstext"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

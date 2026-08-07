@@ -1,6 +1,6 @@
 ---
 name: I_PURGTOTDANGEROUSGOODSSTST
-description: Purgtotdangerousgoodsstst
+description: "Purgtotdangerousgoodsstst"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

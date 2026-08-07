@@ -1,6 +1,6 @@
 ---
 name: I_INSPPLANOPERATIONTP_2
-description: Inspplanoperationtp 2
+description: "Inspplanoperationtp 2"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONORDERTYPE_2
-description: Transportationordertype 2
+description: "Transportationordertype 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_TIMEDEPENDENTSTOCKLEVEL
-description: Time Dependent Stock Level
+description: "Time Dependent Stock Level"
 app_component: PP-DD-BLM-BAS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TIMEDEPENDENTSTOCKLEVEL')/$value
-semantic_en: Time Dependent Stock Level
+semantic_en: "Time Dependent Stock Level"
 tags:
   - PP
   - bo:inventory

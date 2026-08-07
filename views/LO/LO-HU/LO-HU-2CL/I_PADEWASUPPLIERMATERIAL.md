@@ -1,6 +1,6 @@
 ---
 name: I_PADEWASUPPLIERMATERIAL
-description: Padewasuppliermaterial
+description: "Padewasuppliermaterial"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

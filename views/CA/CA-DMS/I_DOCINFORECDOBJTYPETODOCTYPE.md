@@ -1,6 +1,6 @@
 ---
 name: I_DOCINFORECDOBJTYPETODOCTYPE
-description: Docinforecdobjtypetodoctype
+description: "Docinforecdobjtypetodoctype"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

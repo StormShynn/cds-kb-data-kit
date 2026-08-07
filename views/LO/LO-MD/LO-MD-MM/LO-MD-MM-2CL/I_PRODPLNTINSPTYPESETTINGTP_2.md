@@ -1,6 +1,6 @@
 ---
 name: I_PRODPLNTINSPTYPESETTINGTP_2
-description: Prodplntinsptypesettingtp 2
+description: "Prodplntinsptypesettingtp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

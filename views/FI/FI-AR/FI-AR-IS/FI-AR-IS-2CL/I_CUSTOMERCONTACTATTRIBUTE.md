@@ -1,13 +1,13 @@
 ---
 name: I_CUSTOMERCONTACTATTRIBUTE
-description: Customer Contact Attribute
+description: "Customer Contact Attribute"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTOMERCONTACTATTRIBUTE')/$value
-semantic_en: Customer Contact Attribute
+semantic_en: "Customer Contact Attribute"
 tags:
   - FI
   - bo:businesspartner

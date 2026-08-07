@@ -1,13 +1,13 @@
 ---
 name: I_PRODUCTESPP
-description: This CDS view provides the consumer with a list of flags related to Extended Service Parts Planning. Description: Product ESPP active core entity
+description: "This CDS view provides the consumer with a list of flags related to Extended Service Parts Planning. Description: Product ESPP active core entity"
 app_component: SCM-S4H-MD-PR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTESPP')/$value
-semantic_en: This CDS view provides the consumer with a list of flags related to Extended Service Parts Planning. Description: Product ESPP active core entity
+semantic_en: "This CDS view provides the consumer with a list of flags related to Extended Service Parts Planning. Description: Product ESPP active core entity"
 tags:
   - SCM
   - bo:material

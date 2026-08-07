@@ -1,6 +1,6 @@
 ---
 name: I_KR_ELECTRONICDOCHOMETAXDATA
-description: KR Electronicdochometaxdata
+description: "KR Electronicdochometaxdata"
 app_component: CA-GTF-CSC-EDO-KR
 software_component: SAPSCORE
 release_state: released

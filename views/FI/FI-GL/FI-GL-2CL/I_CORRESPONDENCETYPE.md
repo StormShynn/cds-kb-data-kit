@@ -1,6 +1,6 @@
 ---
 name: I_CORRESPONDENCETYPE
-description: Correspondencetype
+description: "Correspondencetype"
 app_component: FI-GL-2CL
 software_component: SAPSCORE
 release_state: released

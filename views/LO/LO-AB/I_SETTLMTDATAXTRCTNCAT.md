@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTDATAXTRCTNCAT
-description: This CDS view displays data that indicates that the settlement document type is relevant for the delta update in SAP BW. The following fixed values have been maintained: " " Inactive X Active
+description: "This CDS view displays data that indicates that the settlement document type is relevant for the delta update in SAP BW. The following fixed values have been maintained: \" \" Inactive X Active"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDATAXTRCTNCAT')/$value
-semantic_en: This CDS view displays data that indicates that the settlement document type is relevant for the delta update in SAP BW. The following fixed values have been maintained: " " Inactive X Active
+semantic_en: "This CDS view displays data that indicates that the settlement document type is relevant for the delta update in SAP BW. The following fixed values have been maintained: \" \" Inactive X Active"
 tags:
   - LO
   - bo:companycode

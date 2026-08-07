@@ -1,6 +1,6 @@
 ---
 name: I_ITEMGENINCOMPLETIONSTATUS
-description: Itemgenincompletionstatus
+description: "Itemgenincompletionstatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

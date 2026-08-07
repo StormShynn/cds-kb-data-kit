@@ -1,6 +1,6 @@
 ---
 name: I_PARKEDOPLACCTGDOCGLITEM
-description: Parkedoplacctgdocglitem
+description: "Parkedoplacctgdocglitem"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

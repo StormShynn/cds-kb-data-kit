@@ -1,6 +1,6 @@
 ---
 name: D_PCLGSDCITEMUPDTMKTBLTYSTSP
-description: D Pclgsdcitemupdtmktbltystsp
+description: "D Pclgsdcitemupdtmktbltystsp"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

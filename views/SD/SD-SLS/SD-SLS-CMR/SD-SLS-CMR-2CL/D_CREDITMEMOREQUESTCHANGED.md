@@ -1,6 +1,6 @@
 ---
 name: D_CREDITMEMOREQUESTCHANGED
-description: D Creditmemorequestchanged
+description: "D Creditmemorequestchanged"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

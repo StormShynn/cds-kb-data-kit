@@ -1,6 +1,6 @@
 ---
 name: I_AT_BPOENBTARGETGROUPTEXT
-description: AT Bpoenbtargetgrouptext
+description: "AT Bpoenbtargetgrouptext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFECUSTOMERPRESENCETEXT
-description: BR Nfecustomerpresencetext
+description: "BR Nfecustomerpresencetext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

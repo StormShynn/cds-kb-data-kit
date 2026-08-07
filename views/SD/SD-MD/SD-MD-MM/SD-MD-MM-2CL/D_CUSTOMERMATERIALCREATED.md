@@ -1,6 +1,6 @@
 ---
 name: D_CUSTOMERMATERIALCREATED
-description: D Customermaterialcreated
+description: "D Customermaterialcreated"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

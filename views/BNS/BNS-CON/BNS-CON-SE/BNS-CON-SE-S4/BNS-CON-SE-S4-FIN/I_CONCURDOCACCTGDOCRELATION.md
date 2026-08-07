@@ -1,13 +1,13 @@
 ---
 name: I_CONCURDOCACCTGDOCRELATION
-description: Concur Accounting Document Relation
+description: "Concur Accounting Document Relation"
 app_component: BNS-CON-SE-S4-FIN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONCURDOCACCTGDOCRELATION')/$value
-semantic_en: Concur Accounting Document Relation
+semantic_en: "Concur Accounting Document Relation"
 tags:
   - BNS
   - account

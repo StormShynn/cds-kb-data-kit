@@ -1,13 +1,13 @@
 ---
 name: I_INCIDENTGROUPCUBE
-description: Incident Group - Cube
+description: "Incident Group - Cube"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INCIDENTGROUPCUBE')/$value
-semantic_en: Incident Group - Cube
+semantic_en: "Incident Group - Cube"
 tags:
   - EHS
   - component:EHS-SUS-IM

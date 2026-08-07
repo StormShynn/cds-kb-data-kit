@@ -1,13 +1,13 @@
 ---
 name: I_SRVCMGMTPARTNERFUNCTIONTEXT
-description: Partner Function - Text
+description: "Partner Function - Text"
 app_component: CRM-BF-PD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCMGMTPARTNERFUNCTIONTEXT')/$value
-semantic_en: Partner Function - Text
+semantic_en: "Partner Function - Text"
 tags:
   - CRM
   - component:CRM-BF-PD-2CL

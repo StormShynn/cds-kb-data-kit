@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNTASKCATEGORYVH
-description: Cnsldtntaskcategoryvh
+description: "Cnsldtntaskcategoryvh"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

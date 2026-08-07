@@ -1,6 +1,6 @@
 ---
 name: C_PHYSINVSITPOC
-description: Physinvsitpoc
+description: "Physinvsitpoc"
 app_component: LO-RFM-STO-FIO
 software_component: SAPPCORE_H
 release_state: released

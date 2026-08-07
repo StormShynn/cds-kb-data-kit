@@ -1,6 +1,6 @@
 ---
 name: I_FIXEDASSETASSGMT
-description: Fixed AssetASSGMT
+description: "Fixed AssetASSGMT"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

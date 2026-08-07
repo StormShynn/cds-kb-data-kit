@@ -1,6 +1,6 @@
 ---
 name: I_PFMTRANSDATACO2EQFPRNTGHGCAT
-description: Pfmtransdataco 2EQFPRNTGHGCAT
+description: "Pfmtransdataco 2EQFPRNTGHGCAT"
 app_component: SUS-PFM-INT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CN_PAYTREQUISITIONPRIORITYT
-description: CN Paytrequisitionpriorityt
+description: "CN Paytrequisitionpriorityt"
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

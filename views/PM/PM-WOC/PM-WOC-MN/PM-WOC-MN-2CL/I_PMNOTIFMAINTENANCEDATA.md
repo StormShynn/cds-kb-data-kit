@@ -1,6 +1,6 @@
 ---
 name: I_PMNOTIFMAINTENANCEDATA
-description: Pmnotifmaintenancedata
+description: "Pmnotifmaintenancedata"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released

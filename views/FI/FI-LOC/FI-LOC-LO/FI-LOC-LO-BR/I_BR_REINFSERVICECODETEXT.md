@@ -1,23 +1,23 @@
 ---
 name: I_BR_REINFSERVICECODETEXT
-description: Brazil EFD REINF Service Code - Text
+description: "Brazil EFD REINF Service Code - Text"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_REINFSERVICECODETEXT')/$value
-semantic_en: Brazil EFD REINF Service Code - Text
-semantic_vi: Brazil EFD REINF Service Code - Text — CDS view giao diện dựa trên logbr_reinft.
+semantic_en: "Brazil EFD REINF Service Code - Text"
+semantic_vi: "Brazil EFD REINF Service Code - Text — CDS view giao diện dựa trên logbr_reinft."
 keywords:
-  - brazil
-  - efd
-  - reinf
-  - service
-  - code
-  - text
-  - language
-  - desc
+  - "brazil"
+  - "efd"
+  - "reinf"
+  - "service"
+  - "code"
+  - "text"
+  - "language"
+  - "desc"
 tags:
   - FI
   - component:FI-LOC-LO-BR

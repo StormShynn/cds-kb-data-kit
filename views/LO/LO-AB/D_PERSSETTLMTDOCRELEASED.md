@@ -1,6 +1,6 @@
 ---
 name: D_PERSSETTLMTDOCRELEASED
-description: D Perssettlmtdocreleased
+description: "D Perssettlmtdocreleased"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

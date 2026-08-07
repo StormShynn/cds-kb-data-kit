@@ -1,13 +1,13 @@
 ---
 name: I_EHSESUBMSNSTATUS
-description: Electronic Submission Status
+description: "Electronic Submission Status"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSESUBMSNSTATUS')/$value
-semantic_en: Electronic Submission Status
+semantic_en: "Electronic Submission Status"
 tags:
   - EHS
   - component:EHS-SUS-IM

@@ -1,6 +1,6 @@
 ---
 name: I_REREMINDERDATE
-description: Rereminderdate
+description: "Rereminderdate"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

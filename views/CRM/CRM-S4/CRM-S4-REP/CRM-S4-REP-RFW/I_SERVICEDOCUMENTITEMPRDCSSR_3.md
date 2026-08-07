@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCUMENTITEMPRDCSSR_3
-description: Service DocumentUMENTITEMPRDCSSR 3
+description: "Service DocumentUMENTITEMPRDCSSR 3"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

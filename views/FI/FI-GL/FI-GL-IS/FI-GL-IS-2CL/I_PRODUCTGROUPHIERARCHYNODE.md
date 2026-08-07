@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTGROUPHIERARCHYNODE
-description: Productgrouphierarchynode
+description: "Productgrouphierarchynode"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

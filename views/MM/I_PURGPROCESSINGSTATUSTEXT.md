@@ -1,6 +1,6 @@
 ---
 name: I_PURGPROCESSINGSTATUSTEXT
-description: Purgprocessingstatustext
+description: "Purgprocessingstatustext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

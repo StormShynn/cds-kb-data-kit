@@ -1,6 +1,6 @@
 ---
 name: I_JP_INVCSMMRYMONTHLYINVOICE
-description: JP Invcsmmrymonthlyinvoice
+description: "JP Invcsmmrymonthlyinvoice"
 app_component: FI-LOC-FI-JP
 software_component: SAPSCORE
 release_state: released

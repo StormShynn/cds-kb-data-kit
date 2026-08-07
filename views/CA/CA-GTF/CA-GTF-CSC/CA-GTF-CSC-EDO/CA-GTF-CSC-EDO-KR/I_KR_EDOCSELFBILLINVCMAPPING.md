@@ -1,6 +1,6 @@
 ---
 name: I_KR_EDOCSELFBILLINVCMAPPING
-description: KR Edocselfbillinvcmapping
+description: "KR Edocselfbillinvcmapping"
 app_component: CA-GTF-CSC-EDO-KR
 software_component: SAPSCORE
 release_state: released

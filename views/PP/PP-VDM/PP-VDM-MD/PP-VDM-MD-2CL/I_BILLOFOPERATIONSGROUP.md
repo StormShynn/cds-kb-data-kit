@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFOPERATIONSGROUP
-description: Billofoperationsgroup
+description: "Billofoperationsgroup"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

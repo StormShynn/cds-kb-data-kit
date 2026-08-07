@@ -1,6 +1,6 @@
 ---
 name: D_SERVICECONTRACTCREATED
-description: D Servicecontractcreated
+description: "D Servicecontractcreated"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

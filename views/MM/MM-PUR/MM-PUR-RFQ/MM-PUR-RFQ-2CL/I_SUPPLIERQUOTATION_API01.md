@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERQUOTATION_API01
-description: Supplierquotation Api 01
+description: "Supplierquotation Api 01"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

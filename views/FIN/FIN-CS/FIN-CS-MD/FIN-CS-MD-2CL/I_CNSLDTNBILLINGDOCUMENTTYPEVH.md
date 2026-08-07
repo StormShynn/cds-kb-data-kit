@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNBILLINGDOCUMENTTYPEVH
-description: CNSLDTNBilling DocumentUMENTTYPEVH
+description: "CNSLDTNBilling DocumentUMENTTYPEVH"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

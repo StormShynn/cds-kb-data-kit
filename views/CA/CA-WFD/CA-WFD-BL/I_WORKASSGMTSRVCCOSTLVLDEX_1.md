@@ -1,13 +1,13 @@
 ---
 name: I_WORKASSGMTSRVCCOSTLVLDEX_1
-description: Workforce Person Service Cost Level
+description: "Workforce Person Service Cost Level"
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTSRVCCOSTLVLDEX_1')/$value
-semantic_en: Workforce Person Service Cost Level
+semantic_en: "Workforce Person Service Cost Level"
 tags:
   - CA
   - bo:salesorder

@@ -1,6 +1,6 @@
 ---
 name: I_WORKFLOWAGENTRULETEXT
-description: Workflowagentruletext
+description: "Workflowagentruletext"
 app_component: BC-BMT-WFM
 software_component: SAP_BASIS
 release_state: released

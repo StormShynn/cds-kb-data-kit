@@ -1,13 +1,13 @@
 ---
 name: I_DAYSBEYONDTERMS
-description: This CDS view provides you with an insight into the payment history of your customers and indicates how effectively your company collects payments. The result aggregates the weighted payment amount per account (company code and customer). This CDS view provides you with the information you need to answer the following business questions: How long does it take to collect payments? If you have just started a new business, you may find the Days Sales Outstanding Cube more helpful.
+description: "This CDS view provides you with an insight into the payment history of your customers and indicates how effectively your company collects payments. The result aggregates the weighted payment amount per account (company code and customer). This CDS view provides you with the information you need to answer the following business questions: How long does it take to collect payments? If you have just started a new business, you may find the Days Sales Outstanding Cube more helpful."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DAYSBEYONDTERMS')/$value
-semantic_en: This CDS view provides you with an insight into the payment history of your customers and indicates how effectively your company collects payments. The result aggregates the weighted payment amount per account (company code and customer). This CDS view provides you with the information you need to answer the following business questions: How long does it take to collect payments? If you have just started a new business, you may find the Days Sales Outstanding Cube more helpful.
+semantic_en: "This CDS view provides you with an insight into the payment history of your customers and indicates how effectively your company collects payments. The result aggregates the weighted payment amount per account (company code and customer). This CDS view provides you with the information you need to answer the following business questions: How long does it take to collect payments? If you have just started a new business, you may find the Days Sales Outstanding Cube more helpful."
 tags:
   - FI
   - account

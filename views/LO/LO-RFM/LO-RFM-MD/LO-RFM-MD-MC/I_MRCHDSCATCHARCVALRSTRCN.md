@@ -1,6 +1,6 @@
 ---
 name: I_MRCHDSCATCHARCVALRSTRCN
-description: Mrchdscatcharcvalrstrcn
+description: "Mrchdscatcharcvalrstrcn"
 app_component: LO-RFM-MD-MC
 software_component: SAPSCORE
 release_state: released

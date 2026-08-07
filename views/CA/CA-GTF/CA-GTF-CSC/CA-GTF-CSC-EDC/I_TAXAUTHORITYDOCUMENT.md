@@ -1,6 +1,6 @@
 ---
 name: I_TAXAUTHORITYDOCUMENT
-description: Taxauthoritydocument
+description: "Taxauthoritydocument"
 app_component: CA-GTF-CSC-EDC
 software_component: SAPSCORE
 release_state: released

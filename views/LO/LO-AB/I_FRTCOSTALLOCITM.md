@@ -1,6 +1,6 @@
 ---
 name: I_FRTCOSTALLOCITM
-description: Frtcostallocitm
+description: "Frtcostallocitm"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

@@ -1,27 +1,27 @@
 ---
 name: C_POITEMCOUNTFORSUPLRQUERY
-description: PO and Item Count for Total Supplier - Query
+description: "PO and Item Count for Total Supplier - Query"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_POITEMCOUNTFORSUPLRQUERY')/$value
-semantic_en: PO and Item Count for Total Supplier - Query
-semantic_vi: PO and Item Count for Total Supplier - Query — CDS view tiêu dùng dựa trên C_POItemCountForSuplrCube.
+semantic_en: "PO and Item Count for Total Supplier - Query"
+semantic_vi: "PO and Item Count for Total Supplier - Query — CDS view tiêu dùng dựa trên C_POItemCountForSuplrCube."
 keywords:
-  - and
-  - item
-  - count
-  - for
-  - total
-  - supplier
-  - query
-  - purchase
-  - order
-  - account
-  - group
-  - authorization
+  - "and"
+  - "item"
+  - "count"
+  - "for"
+  - "total"
+  - "supplier"
+  - "query"
+  - "purchase"
+  - "order"
+  - "account"
+  - "group"
+  - "authorization"
 tags:
   - MM
   - bo:purchaseorder

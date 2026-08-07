@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERACTIVITYTASKPRIO
-description: Supplieractivitytaskprio
+description: "Supplieractivitytaskprio"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

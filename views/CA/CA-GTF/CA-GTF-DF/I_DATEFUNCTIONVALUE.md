@@ -1,6 +1,6 @@
 ---
 name: I_DATEFUNCTIONVALUE
-description: Datefunctionvalue
+description: "Datefunctionvalue"
 app_component: CA-GTF-DF
 software_component: SAP_BASIS
 release_state: released

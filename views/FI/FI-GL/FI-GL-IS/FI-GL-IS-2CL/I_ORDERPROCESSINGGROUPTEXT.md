@@ -1,13 +1,13 @@
 ---
 name: I_ORDERPROCESSINGGROUPTEXT
-description: Order Processing Group - Text
+description: "Order Processing Group - Text"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ORDERPROCESSINGGROUPTEXT')/$value
-semantic_en: Order Processing Group - Text
+semantic_en: "Order Processing Group - Text"
 tags:
   - FI
   - component:FI-GL-IS-2CL

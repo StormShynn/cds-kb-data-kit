@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERRETURNITEM
-description: Customerreturnitem
+description: "Customerreturnitem"
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

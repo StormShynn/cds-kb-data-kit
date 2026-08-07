@@ -1,6 +1,6 @@
 ---
 name: D_BOMITMDELEWITHCHANGENUMBERP
-description: D Bomitmdelewithchangenumberp
+description: "D Bomitmdelewithchangenumberp"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

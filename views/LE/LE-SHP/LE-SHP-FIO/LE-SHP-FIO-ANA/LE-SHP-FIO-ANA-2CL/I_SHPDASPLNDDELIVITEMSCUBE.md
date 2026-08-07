@@ -1,6 +1,6 @@
 ---
 name: I_SHPDASPLNDDELIVITEMSCUBE
-description: Shpdasplnddelivitemscube
+description: "Shpdasplnddelivitemscube"
 app_component: LE-SHP-FIO-ANA-2CL
 software_component: SAPSCORE
 release_state: released

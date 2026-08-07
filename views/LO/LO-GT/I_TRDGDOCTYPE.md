@@ -1,13 +1,13 @@
 ---
 name: I_TRDGDOCTYPE
-description: Trading Document Type
+description: "Trading Document Type"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGDOCTYPE')/$value
-semantic_en: Trading Document Type
+semantic_en: "Trading Document Type"
 tags:
   - LO
   - component:LO-GT

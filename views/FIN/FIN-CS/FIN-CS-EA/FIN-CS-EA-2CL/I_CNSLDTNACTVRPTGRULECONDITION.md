@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNACTVRPTGRULECONDITION
-description: Consolidation Reporting Rule Condition
+description: "Consolidation Reporting Rule Condition"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNACTVRPTGRULECONDITION')/$value
-semantic_en: Consolidation Reporting Rule Condition
+semantic_en: "Consolidation Reporting Rule Condition"
 tags:
   - FIN
   - bo:purchaseorder

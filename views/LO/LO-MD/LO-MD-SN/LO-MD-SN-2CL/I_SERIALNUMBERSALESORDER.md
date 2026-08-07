@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERSALESORDER
-description: Serial NumberSales Order
+description: "Serial NumberSales Order"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

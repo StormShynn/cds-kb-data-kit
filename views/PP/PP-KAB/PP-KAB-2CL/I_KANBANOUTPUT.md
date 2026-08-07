@@ -1,6 +1,6 @@
 ---
 name: I_KANBANOUTPUT
-description: Kanbanoutput
+description: "Kanbanoutput"
 app_component: PP-KAB-2CL
 software_component: SAPSCORE
 release_state: released

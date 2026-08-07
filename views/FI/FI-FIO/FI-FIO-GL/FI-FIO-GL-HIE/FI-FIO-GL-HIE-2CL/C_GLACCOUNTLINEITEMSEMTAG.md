@@ -1,30 +1,30 @@
 ---
 name: C_GLACCOUNTLINEITEMSEMTAG
-description: This CDS view provides the prerequisites for answering the following business questions: What are the key figure amounts for a specific company code in a certain fiscal year? What is the ratio of margin to revenue? What is my net cash amount in company code currency?
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the key figure amounts for a specific company code in a certain fiscal year? What is the ratio of margin to revenue? What is my net cash amount in company code currency?"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTLINEITEMSEMTAG')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the key figure amounts for a specific company code in a certain fiscal year? What is the ratio of margin to revenue? What is my net cash amount in company code currency?
-semantic_vi: G/L Line Item with Semantic Tag - Query — CDS view tiêu dùng dựa trên I_GLAccountLineItemSemTag.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the key figure amounts for a specific company code in a certain fiscal year? What is the ratio of margin to revenue? What is my net cash amount in company code currency?"
+semantic_vi: "G/L Line Item with Semantic Tag - Query — CDS view tiêu dùng dựa trên I_GLAccountLineItemSemTag."
 keywords:
-  - g/l
-  - line
-  - item
-  - with
-  - semantic
-  - tag
-  - query
-  - account
-  - hierarchy
-  - company
-  - code
-  - ledger
-  - fiscal
-  - year
-  - period
+  - "g/l"
+  - "line"
+  - "item"
+  - "with"
+  - "semantic"
+  - "tag"
+  - "query"
+  - "account"
+  - "hierarchy"
+  - "company"
+  - "code"
+  - "ledger"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - FI
   - bo:companycode

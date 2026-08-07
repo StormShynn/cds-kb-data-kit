@@ -1,6 +1,6 @@
 ---
 name: C_COSTCENTERACTUALQUERY
-description: Cost CenterACTUALQUERY
+description: "Cost CenterACTUALQUERY"
 app_component: CO-OM-CCA-2CL
 software_component: SAPSCORE
 release_state: released

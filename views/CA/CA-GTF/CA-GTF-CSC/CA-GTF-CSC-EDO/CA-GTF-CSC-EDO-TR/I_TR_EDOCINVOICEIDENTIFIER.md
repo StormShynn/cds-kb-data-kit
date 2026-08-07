@@ -1,6 +1,6 @@
 ---
 name: I_TR_EDOCINVOICEIDENTIFIER
-description: TR Edocinvoiceidentifier
+description: "TR Edocinvoiceidentifier"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released

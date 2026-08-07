@@ -1,6 +1,6 @@
 ---
 name: I_PURGSAFETYDATASHEETSTATUS
-description: Purgsafetydatasheetstatus
+description: "Purgsafetydatasheetstatus"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BPDEBTORGROUPTEXT
-description: Bpdebtorgrouptext
+description: "Bpdebtorgrouptext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

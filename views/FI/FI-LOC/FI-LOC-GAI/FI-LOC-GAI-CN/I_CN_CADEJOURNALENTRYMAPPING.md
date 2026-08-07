@@ -1,6 +1,6 @@
 ---
 name: I_CN_CADEJOURNALENTRYMAPPING
-description: CN CADEJournal EntryMAPPING
+description: "CN CADEJournal EntryMAPPING"
 app_component: FI-LOC-GAI-CN
 software_component: SAPSCORE
 release_state: released

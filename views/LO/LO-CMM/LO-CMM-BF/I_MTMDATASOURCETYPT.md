@@ -1,13 +1,13 @@
 ---
 name: I_MTMDATASOURCETYPT
-description: Names of Mark To Market Data Source Types - Text
+description: "Names of Mark To Market Data Source Types - Text"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMDATASOURCETYPT')/$value
-semantic_en: Names of Mark To Market Data Source Types - Text
+semantic_en: "Names of Mark To Market Data Source Types - Text"
 tags:
   - LO
   - bo:salesorder

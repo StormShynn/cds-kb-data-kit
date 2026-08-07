@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNPROFITCENTERHIERDIRT
-description: Cnsldtn Profit Center Hier Dir - Text
+description: "Cnsldtn Profit Center Hier Dir - Text"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPROFITCENTERHIERDIRT')/$value
-semantic_en: Cnsldtn Profit Center Hier Dir - Text
+semantic_en: "Cnsldtn Profit Center Hier Dir - Text"
 tags:
   - FIN
   - bo:companycode

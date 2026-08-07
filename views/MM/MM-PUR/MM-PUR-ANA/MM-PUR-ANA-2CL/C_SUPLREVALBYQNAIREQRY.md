@@ -1,25 +1,25 @@
 ---
 name: C_SUPLREVALBYQNAIREQRY
-description: Supplier Evaluation by Questionnaire Query
+description: "Supplier Evaluation by Questionnaire Query"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLREVALBYQNAIREQRY')/$value
-semantic_en: Supplier Evaluation by Questionnaire Query
-semantic_vi: Supplier Evaluation by Questionnaire Query — CDS view tiêu dùng dựa trên C_SuplrEvalByQnaireCube.
+semantic_en: "Supplier Evaluation by Questionnaire Query"
+semantic_vi: "Supplier Evaluation by Questionnaire Query — CDS view tiêu dùng dựa trên C_SuplrEvalByQnaireCube."
 keywords:
-  - supplier
-  - evaluation
-  - questionnaire
-  - query
-  - suplr
-  - eval
-  - scorecard
-  - name
-  - start
-  - date
+  - "supplier"
+  - "evaluation"
+  - "questionnaire"
+  - "query"
+  - "suplr"
+  - "eval"
+  - "scorecard"
+  - "name"
+  - "start"
+  - "date"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

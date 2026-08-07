@@ -1,6 +1,6 @@
 ---
 name: I_MAINTTASKLISTGROUPCOUNTER
-description: Maintenance Task ListGROUPCOUNTER
+description: "Maintenance Task ListGROUPCOUNTER"
 app_component: PM-2CL
 software_component: SAPSCORE
 release_state: released

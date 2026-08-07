@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFUNDTEXTTP
-description: Cnsldtnfundtexttp
+description: "Cnsldtnfundtexttp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

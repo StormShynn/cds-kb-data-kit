@@ -1,6 +1,6 @@
 ---
 name: I_CO_ELECTRONICDOCINVOICE
-description: CO Electronicdocinvoice
+description: "CO Electronicdocinvoice"
 app_component: CA-GTF-CSC-EDO-CO
 software_component: SAPSCORE
 release_state: released

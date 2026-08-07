@@ -1,22 +1,22 @@
 ---
 name: I_ARUNSUPDLYHRZNTEXT
-description: Supply Delay Horizon - Text
+description: "Supply Delay Horizon - Text"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNSUPDLYHRZNTEXT')/$value
-semantic_en: Supply Delay Horizon - Text
-semantic_vi: Supply Delay Horizon - Text — CDS view giao diện dựa trên dd07t.
+semantic_en: "Supply Delay Horizon - Text"
+semantic_vi: "Supply Delay Horizon - Text — CDS view giao diện dựa trên dd07t."
 keywords:
-  - supply
-  - delay
-  - horizon
-  - text
-  - hrzn
-  - weeks
-  - language
+  - "supply"
+  - "delay"
+  - "horizon"
+  - "text"
+  - "hrzn"
+  - "weeks"
+  - "language"
 tags:
   - LO
   - component:LO-RFM-ARN

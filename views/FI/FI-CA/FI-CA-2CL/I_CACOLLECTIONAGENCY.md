@@ -1,6 +1,6 @@
 ---
 name: I_CACOLLECTIONAGENCY
-description: Cacollectionagency
+description: "Cacollectionagency"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

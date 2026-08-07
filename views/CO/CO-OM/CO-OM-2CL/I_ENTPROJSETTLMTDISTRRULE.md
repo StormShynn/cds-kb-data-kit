@@ -1,13 +1,13 @@
 ---
 name: I_ENTPROJSETTLMTDISTRRULE
-description: Ent Project Settlement Distribution Rule
+description: "Ent Project Settlement Distribution Rule"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPROJSETTLMTDISTRRULE')/$value
-semantic_en: Ent Project Settlement Distribution Rule
+semantic_en: "Ent Project Settlement Distribution Rule"
 tags:
   - CO
   - bo:project

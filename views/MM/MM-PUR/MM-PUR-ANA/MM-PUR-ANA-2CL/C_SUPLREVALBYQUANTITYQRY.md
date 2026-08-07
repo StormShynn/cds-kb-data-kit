@@ -1,30 +1,30 @@
 ---
 name: C_SUPLREVALBYQUANTITYQRY
-description: Supplier Evaluation by Quantity
+description: "Supplier Evaluation by Quantity"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLREVALBYQUANTITYQRY')/$value
-semantic_en: Supplier Evaluation by Quantity
-semantic_vi: Supplier Evaluation by Quantity — CDS view tiêu dùng dựa trên C_SuplrEvalByQuantityCube.
+semantic_en: "Supplier Evaluation by Quantity"
+semantic_vi: "Supplier Evaluation by Quantity — CDS view tiêu dùng dựa trên C_SuplrEvalByQuantityCube."
 keywords:
-  - supplier
-  - evaluation
-  - quantity
-  - purchase
-  - order
-  - item
-  - suplr
-  - eval
-  - critra
-  - deliv
-  - completed
-  - purg
-  - migrtn
-  - cmpltd
-  - anlyts
+  - "supplier"
+  - "evaluation"
+  - "quantity"
+  - "purchase"
+  - "order"
+  - "item"
+  - "suplr"
+  - "eval"
+  - "critra"
+  - "deliv"
+  - "completed"
+  - "purg"
+  - "migrtn"
+  - "cmpltd"
+  - "anlyts"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

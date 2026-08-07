@@ -1,20 +1,20 @@
 ---
 name: ZSPFLI.DDLS
-description: spfli
+description: "spfli"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/michaelnicholls/zdemo_stuff/blob/27e4950e605793296714c4035c8cbc1227bf29e9/src/zspfli.ddls.asddls
-semantic_en: spfli — CDS view based on spfli.
-semantic_vi: spfli — CDS view dựa trên spfli.
+semantic_en: "spfli — CDS view based on spfli."
+semantic_vi: "spfli — CDS view dựa trên spfli."
 keywords:
-  - spfli
-  - carrname
-  - user_default
-  - countryfr
-  - cityfrom
+  - "spfli"
+  - "carrname"
+  - "user_default"
+  - "countryfr"
+  - "cityfrom"
 ---
 # ZSPFLI.DDLS
 

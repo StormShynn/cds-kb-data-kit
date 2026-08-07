@@ -1,13 +1,13 @@
 ---
 name: I_CASETEXTPROFILETEXT
-description: Case Text Profile Text
+description: "Case Text Profile Text"
 app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASETEXTPROFILETEXT')/$value
-semantic_en: Case Text Profile Text
+semantic_en: "Case Text Profile Text"
 tags:
   - BC
   - BC-SRV

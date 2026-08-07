@@ -1,6 +1,6 @@
 ---
 name: I_CONDITIONCALCULATIONTYPETEXT
-description: Conditioncalculationtypetext
+description: "Conditioncalculationtypetext"
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released

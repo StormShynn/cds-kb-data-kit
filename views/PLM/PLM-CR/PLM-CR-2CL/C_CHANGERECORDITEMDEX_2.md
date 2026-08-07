@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECORDITEMDEX_2
-description: Change RecordITEMDEX 2
+description: "Change RecordITEMDEX 2"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PRMTHBRPLDPURCHASEREQNAPI01
-description: PRMTHBRPLDPurchase RequisitionNAPI 01
+description: "PRMTHBRPLDPurchase RequisitionNAPI 01"
 app_component: MM-PUR-HUB-PR-2CL
 software_component: SAPSCORE
 release_state: released

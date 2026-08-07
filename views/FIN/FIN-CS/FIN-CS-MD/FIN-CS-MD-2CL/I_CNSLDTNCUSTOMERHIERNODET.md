@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCUSTOMERHIERNODET
-description: Cnsldtncustomerhiernodet
+description: "Cnsldtncustomerhiernodet"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

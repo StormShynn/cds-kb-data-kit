@@ -1,13 +1,13 @@
 ---
 name: I_BANK
-description: This CDS view allows you to read information about bank master data from your SAP S/4HANA system. This CDS view provides the prerequisites for answering the following business question: What is the name of the bank with its specific bank internal ID, bank number, or bank identifier code?
+description: "This CDS view allows you to read information about bank master data from your SAP S/4HANA system. This CDS view provides the prerequisites for answering the following business question: What is the name of the bank with its specific bank internal ID, bank number, or bank identifier code?"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANK')/$value
-semantic_en: This CDS view allows you to read information about bank master data from your SAP S/4HANA system. This CDS view provides the prerequisites for answering the following business question: What is the name of the bank with its specific bank internal ID, bank number, or bank identifier code?
+semantic_en: "This CDS view allows you to read information about bank master data from your SAP S/4HANA system. This CDS view provides the prerequisites for answering the following business question: What is the name of the bank with its specific bank internal ID, bank number, or bank identifier code?"
 tags:
   - FIN
   - bo:bank

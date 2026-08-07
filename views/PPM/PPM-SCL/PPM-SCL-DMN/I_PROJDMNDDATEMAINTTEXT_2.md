@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDDATEMAINTTEXT_2
-description: Projdmnddatemainttext 2
+description: "Projdmnddatemainttext 2"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

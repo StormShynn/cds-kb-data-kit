@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJCHGDOCUMENTDEX
-description: Entprojchgdocumentdex
+description: "Entprojchgdocumentdex"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

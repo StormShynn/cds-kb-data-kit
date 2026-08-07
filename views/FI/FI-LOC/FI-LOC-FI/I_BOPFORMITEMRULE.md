@@ -1,6 +1,6 @@
 ---
 name: I_BOPFORMITEMRULE
-description: Bopformitemrule
+description: "Bopformitemrule"
 app_component: FI-LOC-FI
 software_component: SAPSCORE
 release_state: released

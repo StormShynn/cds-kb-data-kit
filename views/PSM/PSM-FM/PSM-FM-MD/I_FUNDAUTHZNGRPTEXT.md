@@ -1,13 +1,13 @@
 ---
 name: I_FUNDAUTHZNGRPTEXT
-description: Fund Authorization Groups - Text
+description: "Fund Authorization Groups - Text"
 app_component: PSM-FM-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNDAUTHZNGRPTEXT')/$value
-semantic_en: Fund Authorization Groups - Text
+semantic_en: "Fund Authorization Groups - Text"
 tags:
   - PSM
   - bo:project

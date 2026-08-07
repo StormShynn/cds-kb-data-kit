@@ -1,13 +1,13 @@
 ---
 name: I_FINASSETSMGNTPRODUCTTYPET
-description: Financial Assets Management Product Type - Text
+description: "Financial Assets Management Product Type - Text"
 app_component: CA-GTF-TRB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINASSETSMGNTPRODUCTTYPET')/$value
-semantic_en: Financial Assets Management Product Type - Text
+semantic_en: "Financial Assets Management Product Type - Text"
 tags:
   - CA
   - bo:companycode

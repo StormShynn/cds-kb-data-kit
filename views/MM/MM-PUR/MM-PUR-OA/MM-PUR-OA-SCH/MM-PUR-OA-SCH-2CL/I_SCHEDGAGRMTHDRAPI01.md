@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTHDRAPI01
-description: Schedgagrmthdrapi 01
+description: "Schedgagrmthdrapi 01"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

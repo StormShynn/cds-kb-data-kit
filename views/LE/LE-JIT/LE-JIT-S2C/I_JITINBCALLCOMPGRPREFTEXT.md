@@ -1,6 +1,6 @@
 ---
 name: I_JITINBCALLCOMPGRPREFTEXT
-description: Jitinbcallcompgrpreftext
+description: "Jitinbcallcompgrpreftext"
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released

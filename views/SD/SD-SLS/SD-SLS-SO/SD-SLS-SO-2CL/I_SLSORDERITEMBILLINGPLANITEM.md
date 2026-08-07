@@ -1,6 +1,6 @@
 ---
 name: I_SLSORDERITEMBILLINGPLANITEM
-description: Slsorderitembillingplanitem
+description: "Slsorderitembillingplanitem"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

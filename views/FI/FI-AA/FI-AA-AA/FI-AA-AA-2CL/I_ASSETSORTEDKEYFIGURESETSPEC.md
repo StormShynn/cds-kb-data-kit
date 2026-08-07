@@ -1,29 +1,29 @@
 ---
 name: I_ASSETSORTEDKEYFIGURESETSPEC
-description: This CDS view provides the prerequisites for answering the following business question: In which sorting sequence are the key figures of my key figure groups for Asset Balances and Asset History Sheet defined?
+description: "This CDS view provides the prerequisites for answering the following business question: In which sorting sequence are the key figures of my key figure groups for Asset Balances and Asset History Sheet defined?"
 app_component: FI-AA-AA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETSORTEDKEYFIGURESETSPEC')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: In which sorting sequence are the key figures of my key figure groups for Asset Balances and Asset History Sheet defined?
-semantic_vi: Sorted Fixed Asset Key Figure Set Specification — CDS view giao diện dựa trên I_AssetKeyFigureSetSpec.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: In which sorting sequence are the key figures of my key figure groups for Asset Balances and Asset History Sheet defined?"
+semantic_vi: "Sorted Fixed Asset Key Figure Set Specification — CDS view giao diện dựa trên I_AssetKeyFigureSetSpec."
 keywords:
-  - sorted
-  - fixed
-  - asset
-  - key
-  - figure
-  - set
-  - specification
-  - accounting
-  - acctg
-  - sort
-  - sqnc
-  - zero
-  - amount
-  - hidden
+  - "sorted"
+  - "fixed"
+  - "asset"
+  - "key"
+  - "figure"
+  - "set"
+  - "specification"
+  - "accounting"
+  - "acctg"
+  - "sort"
+  - "sqnc"
+  - "zero"
+  - "amount"
+  - "hidden"
 tags:
   - FI
   - bo:companycode

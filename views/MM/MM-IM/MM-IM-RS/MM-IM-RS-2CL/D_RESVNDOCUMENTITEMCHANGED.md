@@ -1,6 +1,6 @@
 ---
 name: D_RESVNDOCUMENTITEMCHANGED
-description: D Resvndocumentitemchanged
+description: "D Resvndocumentitemchanged"
 app_component: MM-IM-RS-2CL
 software_component: SAPSCORE
 release_state: released

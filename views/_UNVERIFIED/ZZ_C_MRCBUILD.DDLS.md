@@ -1,23 +1,23 @@
 ---
 name: ZZ_C_MRCBUILD.DDLS
-description: Projection View for MRC Build
+description: "Projection View for MRC Build"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/dvontress73/zmrc/blob/261a59dbe6a48b0d58d235f1284f5505aa3bc105/src/zz_c_mrcbuild.ddls.asddls
-semantic_en: Projection View for MRC Build — CDS view.
-semantic_vi: Projection View for MRC Build — CDS view dựa trên Projection View for MRC Build.
+semantic_en: "Projection View for MRC Build — CDS view."
+semantic_vi: "Projection View for MRC Build — CDS view dựa trên Projection View for MRC Build."
 keywords:
-  - projection
-  - for
-  - mrc
-  - build
-  - sequence
-  - code
-  - reply
-  - table
+  - "projection"
+  - "for"
+  - "mrc"
+  - "build"
+  - "sequence"
+  - "code"
+  - "reply"
+  - "table"
 tags:
   - bo:project
   - project

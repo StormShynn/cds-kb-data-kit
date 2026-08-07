@@ -1,6 +1,6 @@
 ---
 name: I_BPCOMPANYRELATIONSHIP
-description: Bpcompanyrelationship
+description: "Bpcompanyrelationship"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

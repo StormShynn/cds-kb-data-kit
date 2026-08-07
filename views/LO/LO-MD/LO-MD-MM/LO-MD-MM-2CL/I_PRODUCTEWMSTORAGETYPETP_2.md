@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTEWMSTORAGETYPETP_2
-description: Productewmstoragetypetp 2
+description: "Productewmstoragetypetp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

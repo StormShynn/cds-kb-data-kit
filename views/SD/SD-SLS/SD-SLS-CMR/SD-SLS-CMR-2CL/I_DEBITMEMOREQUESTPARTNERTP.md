@@ -1,6 +1,6 @@
 ---
 name: I_DEBITMEMOREQUESTPARTNERTP
-description: Debitmemorequestpartnertp
+description: "Debitmemorequestpartnertp"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MFGBOOOPERATIONPRTINTID
-description: Mfgboooperationprtintid
+description: "Mfgboooperationprtintid"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

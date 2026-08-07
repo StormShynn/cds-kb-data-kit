@@ -1,6 +1,6 @@
 ---
 name: I_OUTBOUNDDELIVERYITEMTEXTTP
-description: Outbound DeliveryITEMTEXTTP
+description: "Outbound DeliveryITEMTEXTTP"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

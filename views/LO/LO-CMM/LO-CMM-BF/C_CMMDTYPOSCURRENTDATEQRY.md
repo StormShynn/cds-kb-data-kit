@@ -1,27 +1,27 @@
 ---
 name: C_CMMDTYPOSCURRENTDATEQRY
-description: Commodity Position Current Date Query
+description: "Commodity Position Current Date Query"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPOSCURRENTDATEQRY')/$value
-semantic_en: Commodity Position Current Date Query
-semantic_vi: Commodity Position Current Date Query — CDS view tiêu dùng dựa trên I_CmmdtyPositionRepQtyCube.
+semantic_en: "Commodity Position Current Date Query"
+semantic_vi: "Commodity Position Current Date Query — CDS view tiêu dùng dựa trên I_CmmdtyPositionRepQtyCube."
 keywords:
-  - commodity
-  - position
-  - current
-  - date
-  - query
-  - transaction
-  - type
-  - pricing
-  - condition
-  - evaluation
-  - company
-  - code
+  - "commodity"
+  - "position"
+  - "current"
+  - "date"
+  - "query"
+  - "transaction"
+  - "type"
+  - "pricing"
+  - "condition"
+  - "evaluation"
+  - "company"
+  - "code"
 tags:
   - LO
   - bo:purchaseorder

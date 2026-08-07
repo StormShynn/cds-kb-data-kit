@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJECTELEMENTJVA
-description: Entprojectelementjva
+description: "Entprojectelementjva"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

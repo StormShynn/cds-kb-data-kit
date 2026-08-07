@@ -1,13 +1,13 @@
 ---
 name: I_PRATAXKSEXMPTTYPETEXT
-description: Tax Kansas Exemption Type - Text
+description: "Tax Kansas Exemption Type - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXKSEXMPTTYPETEXT')/$value
-semantic_en: Tax Kansas Exemption Type - Text
+semantic_en: "Tax Kansas Exemption Type - Text"
 tags:
   - IS
   - component:IS-OIL-PRA

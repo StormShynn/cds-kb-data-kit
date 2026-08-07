@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCHARCVALUEDESCDEX
-description: Clfncharcvaluedescdex
+description: "Clfncharcvaluedescdex"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

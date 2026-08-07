@@ -1,6 +1,6 @@
 ---
 name: I_REVALUATIONCLASSIFICATIONTXT
-description: Revaluationclassificationtxt
+description: "Revaluationclassificationtxt"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: C_PRAPOSTEDACCTGITMQRY
-description: PRA Posted Accounting Item Query
+description: "PRA Posted Accounting Item Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPOSTEDACCTGITMQRY')/$value
-semantic_en: PRA Posted Accounting Item Query
+semantic_en: "PRA Posted Accounting Item Query"
 tags:
   - IS
   - account

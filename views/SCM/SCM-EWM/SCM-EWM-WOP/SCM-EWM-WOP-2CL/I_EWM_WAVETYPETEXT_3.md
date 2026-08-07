@@ -1,6 +1,6 @@
 ---
 name: I_EWM_WAVETYPETEXT_3
-description: Ewm Wavetypetext 3
+description: "Ewm Wavetypetext 3"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

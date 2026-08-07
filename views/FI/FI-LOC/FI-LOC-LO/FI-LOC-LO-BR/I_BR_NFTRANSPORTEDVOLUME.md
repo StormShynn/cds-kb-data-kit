@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFTRANSPORTEDVOLUME
-description: BR Nftransportedvolume
+description: "BR Nftransportedvolume"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

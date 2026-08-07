@@ -1,6 +1,6 @@
 ---
 name: I_CUSTRETDELIVPARTNERTP
-description: Custretdelivpartnertp
+description: "Custretdelivpartnertp"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

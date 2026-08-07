@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDEVENTCODE_2
-description: Transpordeventcode 2
+description: "Transpordeventcode 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

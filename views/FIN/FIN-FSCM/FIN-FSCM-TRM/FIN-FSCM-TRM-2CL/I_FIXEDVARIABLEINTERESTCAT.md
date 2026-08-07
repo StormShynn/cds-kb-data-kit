@@ -1,6 +1,6 @@
 ---
 name: I_FIXEDVARIABLEINTERESTCAT
-description: Fixedvariableinterestcat
+description: "Fixedvariableinterestcat"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

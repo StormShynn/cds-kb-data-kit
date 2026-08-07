@@ -1,6 +1,6 @@
 ---
 name: D_DNGRSGDSCLASSFCTNGETDESCSR
-description: D Dngrsgdsclassfctngetdescsr
+description: "D Dngrsgdsclassfctngetdescsr"
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

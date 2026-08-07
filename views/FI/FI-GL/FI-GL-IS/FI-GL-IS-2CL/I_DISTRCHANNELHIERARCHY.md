@@ -1,6 +1,6 @@
 ---
 name: I_DISTRCHANNELHIERARCHY
-description: Distrchannelhierarchy
+description: "Distrchannelhierarchy"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

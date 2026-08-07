@@ -1,6 +1,6 @@
 ---
 name: I_KR_BUSINESSPLACE
-description: KR Businessplace
+description: "KR Businessplace"
 app_component: FI-LOC-FI-KR
 software_component: SAPSCORE
 release_state: released

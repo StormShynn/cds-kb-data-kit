@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCESTRATEGY
-description: Maintenancestrategy
+description: "Maintenancestrategy"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

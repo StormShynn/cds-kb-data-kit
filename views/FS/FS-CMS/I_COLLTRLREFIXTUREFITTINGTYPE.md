@@ -1,13 +1,13 @@
 ---
 name: I_COLLTRLREFIXTUREFITTINGTYPE
-description: Fixture and Fitting Type for Colltrl RE
+description: "Fixture and Fitting Type for Colltrl RE"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLTRLREFIXTUREFITTINGTYPE')/$value
-semantic_en: Fixture and Fitting Type for Colltrl RE
+semantic_en: "Fixture and Fitting Type for Colltrl RE"
 tags:
   - FS
   - bo:companycode

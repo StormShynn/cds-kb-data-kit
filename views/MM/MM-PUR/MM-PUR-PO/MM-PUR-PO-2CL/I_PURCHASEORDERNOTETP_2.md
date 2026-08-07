@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDERNOTETP_2
-description: Purchase OrderNOTETP 2
+description: "Purchase OrderNOTETP 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNTSKGRPTSKASSIGNMENT
-description: Cnsldtntskgrptskassignment
+description: "Cnsldtntskgrptskassignment"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

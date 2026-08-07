@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCLASSSTATUSSTDVH
-description: Clfnclassstatusstdvh
+description: "Clfnclassstatusstdvh"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

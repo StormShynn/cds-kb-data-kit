@@ -1,6 +1,6 @@
 ---
 name: I_FREIGHTAGREEMENTRATETABLETP
-description: Freightagreementratetabletp
+description: "Freightagreementratetabletp"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNOEXPLICITNESSLEVELTXT
-description: Serialnoexplicitnessleveltxt
+description: "Serialnoexplicitnessleveltxt"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

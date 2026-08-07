@@ -1,6 +1,6 @@
 ---
 name: I_PLANNEDORDERCAPACITY
-description: Planned OrderCAPACITY
+description: "Planned OrderCAPACITY"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

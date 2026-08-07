@@ -1,6 +1,6 @@
 ---
 name: D_BUSSOLNORDFUPTRANSCREATED
-description: D Bussolnordfuptranscreated
+description: "D Bussolnordfuptranscreated"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

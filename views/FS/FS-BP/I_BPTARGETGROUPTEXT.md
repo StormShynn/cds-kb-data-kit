@@ -1,6 +1,6 @@
 ---
 name: I_BPTARGETGROUPTEXT
-description: Bptargetgrouptext
+description: "Bptargetgrouptext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

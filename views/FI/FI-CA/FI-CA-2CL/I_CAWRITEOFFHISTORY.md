@@ -1,6 +1,6 @@
 ---
 name: I_CAWRITEOFFHISTORY
-description: Cawriteoffhistory
+description: "Cawriteoffhistory"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCOPENSTATUSTEXT
-description: Service DocumentOPENSTATUSTEXT
+description: "Service DocumentOPENSTATUSTEXT"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

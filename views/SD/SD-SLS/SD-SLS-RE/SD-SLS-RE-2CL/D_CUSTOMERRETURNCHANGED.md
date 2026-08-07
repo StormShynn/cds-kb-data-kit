@@ -1,6 +1,6 @@
 ---
 name: D_CUSTOMERRETURNCHANGED
-description: D Customerreturnchanged
+description: "D Customerreturnchanged"
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

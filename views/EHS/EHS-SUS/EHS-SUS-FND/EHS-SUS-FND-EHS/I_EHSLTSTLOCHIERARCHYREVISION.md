@@ -1,13 +1,13 @@
 ---
 name: I_EHSLTSTLOCHIERARCHYREVISION
-description: Latest Location Hierarchy Revision
+description: "Latest Location Hierarchy Revision"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSLTSTLOCHIERARCHYREVISION')/$value
-semantic_en: Latest Location Hierarchy Revision
+semantic_en: "Latest Location Hierarchy Revision"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

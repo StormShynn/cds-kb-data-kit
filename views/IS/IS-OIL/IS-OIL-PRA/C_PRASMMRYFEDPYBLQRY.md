@@ -1,13 +1,13 @@
 ---
 name: C_PRASMMRYFEDPYBLQRY
-description: PRA Summary Federal Payable Query
+description: "PRA Summary Federal Payable Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRASMMRYFEDPYBLQRY')/$value
-semantic_en: PRA Summary Federal Payable Query
+semantic_en: "PRA Summary Federal Payable Query"
 tags:
   - IS
   - component:IS-OIL-PRA

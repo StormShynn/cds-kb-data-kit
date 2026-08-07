@@ -1,6 +1,6 @@
 ---
 name: I_BR_BUSINESSPLACE
-description: BR Businessplace
+description: "BR Businessplace"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

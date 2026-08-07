@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRSETTLMTCALCMETHOD
-description: Cndncontrsettlmtcalcmethod
+description: "Cndncontrsettlmtcalcmethod"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

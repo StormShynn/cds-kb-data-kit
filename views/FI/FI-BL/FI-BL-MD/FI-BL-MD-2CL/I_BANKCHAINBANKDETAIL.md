@@ -1,26 +1,26 @@
 ---
 name: I_BANKCHAINBANKDETAIL
-description: Supplier and Customer Bank Detail
+description: "Supplier and Customer Bank Detail"
 app_component: FI-BL-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKCHAINBANKDETAIL')/$value
-semantic_en: Supplier and Customer Bank Detail
-semantic_vi: Supplier and Customer Bank Detail — CDS view giao diện dựa trên I_BusinessPartnerBank.
+semantic_en: "Supplier and Customer Bank Detail"
+semantic_vi: "Supplier and Customer Bank Detail — CDS view giao diện dựa trên I_BusinessPartnerBank."
 keywords:
-  - supplier
-  - and
-  - customer
-  - bank
-  - detail
-  - identification
-  - business
-  - partner
-  - account
-  - reference
-  - country
+  - "supplier"
+  - "and"
+  - "customer"
+  - "bank"
+  - "detail"
+  - "identification"
+  - "business"
+  - "partner"
+  - "account"
+  - "reference"
+  - "country"
 tags:
   - FI
   - bo:businesspartner

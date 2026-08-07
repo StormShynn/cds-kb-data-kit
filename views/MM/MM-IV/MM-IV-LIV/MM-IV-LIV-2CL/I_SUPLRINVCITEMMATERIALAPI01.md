@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRINVCITEMMATERIALAPI01
-description: Suplrinvcitemmaterialapi 01
+description: "Suplrinvcitemmaterialapi 01"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

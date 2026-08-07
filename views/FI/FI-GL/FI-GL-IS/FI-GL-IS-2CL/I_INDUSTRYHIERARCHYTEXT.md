@@ -1,6 +1,6 @@
 ---
 name: I_INDUSTRYHIERARCHYTEXT
-description: Industryhierarchytext
+description: "Industryhierarchytext"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

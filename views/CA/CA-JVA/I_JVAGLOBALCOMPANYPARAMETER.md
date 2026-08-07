@@ -1,6 +1,6 @@
 ---
 name: I_JVAGLOBALCOMPANYPARAMETER
-description: Jvaglobalcompanyparameter
+description: "Jvaglobalcompanyparameter"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

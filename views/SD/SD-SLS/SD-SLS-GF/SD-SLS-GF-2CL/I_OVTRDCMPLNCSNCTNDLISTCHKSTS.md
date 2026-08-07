@@ -1,6 +1,6 @@
 ---
 name: I_OVTRDCMPLNCSNCTNDLISTCHKSTS
-description: Ovtrdcmplncsnctndlistchksts
+description: "Ovtrdcmplncsnctndlistchksts"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

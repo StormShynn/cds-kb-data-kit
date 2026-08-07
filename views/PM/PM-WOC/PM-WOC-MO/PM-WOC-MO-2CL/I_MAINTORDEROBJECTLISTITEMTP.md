@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDEROBJECTLISTITEMTP
-description: Maintorderobjectlistitemtp
+description: "Maintorderobjectlistitemtp"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

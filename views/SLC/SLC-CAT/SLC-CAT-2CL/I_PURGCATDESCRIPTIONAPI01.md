@@ -1,6 +1,6 @@
 ---
 name: I_PURGCATDESCRIPTIONAPI01
-description: Purgcatdescriptionapi 01
+description: "Purgcatdescriptionapi 01"
 app_component: SLC-CAT-2CL
 software_component: SAPSCORE
 release_state: released

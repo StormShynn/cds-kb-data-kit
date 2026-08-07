@@ -1,6 +1,6 @@
 ---
 name: I_BPGRPASSIGNMENTCATEGORYTEXT
-description: Bpgrpassignmentcategorytext
+description: "Bpgrpassignmentcategorytext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

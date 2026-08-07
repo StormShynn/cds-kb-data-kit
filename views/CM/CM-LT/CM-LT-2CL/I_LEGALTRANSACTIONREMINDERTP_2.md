@@ -1,6 +1,6 @@
 ---
 name: I_LEGALTRANSACTIONREMINDERTP_2
-description: Legaltransactionremindertp 2
+description: "Legaltransactionremindertp 2"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

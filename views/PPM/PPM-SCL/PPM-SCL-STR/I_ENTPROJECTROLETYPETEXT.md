@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJECTROLETYPETEXT
-description: Entprojectroletypetext
+description: "Entprojectroletypetext"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

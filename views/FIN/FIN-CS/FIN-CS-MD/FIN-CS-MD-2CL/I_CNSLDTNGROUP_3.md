@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGROUP_3
-description: Cnsldtngroup 3
+description: "Cnsldtngroup 3"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

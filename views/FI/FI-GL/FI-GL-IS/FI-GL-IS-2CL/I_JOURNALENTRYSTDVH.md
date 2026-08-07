@@ -1,6 +1,6 @@
 ---
 name: I_JOURNALENTRYSTDVH
-description: Journal EntrySTDVH
+description: "Journal EntrySTDVH"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

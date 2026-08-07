@@ -1,6 +1,6 @@
 ---
 name: D_OUTBDELIVDELIVBLOCKCHANGED
-description: D Outbdelivdelivblockchanged
+description: "D Outbdelivdelivblockchanged"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

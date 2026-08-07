@@ -1,6 +1,6 @@
 ---
 name: I_RETSMGMTPROCESSSTEPTEXT
-description: Retsmgmtprocesssteptext
+description: "Retsmgmtprocesssteptext"
 app_component: LO-ARM-2CL
 software_component: SAPSCORE
 release_state: released

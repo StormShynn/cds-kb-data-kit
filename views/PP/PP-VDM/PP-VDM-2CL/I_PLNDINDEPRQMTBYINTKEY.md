@@ -1,6 +1,6 @@
 ---
 name: I_PLNDINDEPRQMTBYINTKEY
-description: Plndindeprqmtbyintkey
+description: "Plndindeprqmtbyintkey"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

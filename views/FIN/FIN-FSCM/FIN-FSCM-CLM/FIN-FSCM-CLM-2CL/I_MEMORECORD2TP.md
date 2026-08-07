@@ -1,6 +1,6 @@
 ---
 name: I_MEMORECORD2TP
-description: Memorecord 2TP
+description: "Memorecord 2TP"
 app_component: FIN-FSCM-CLM-2CL
 software_component: SAPSCORE
 release_state: released

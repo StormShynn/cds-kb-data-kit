@@ -1,6 +1,6 @@
 ---
 name: I_JOINTVENTURECOMPANYCODEVH
-description: JOINTVENTURECompany CodeVH
+description: "JOINTVENTURECompany CodeVH"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

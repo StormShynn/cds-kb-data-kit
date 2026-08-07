@@ -1,6 +1,6 @@
 ---
 name: I_FINANCIALDATASOURCE
-description: Financialdatasource
+description: "Financialdatasource"
 app_component: FIN-IE-FS-2CL
 software_component: SAPSCORE
 release_state: released

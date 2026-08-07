@@ -1,13 +1,13 @@
 ---
 name: I_FACTORYCALENDARSTATISTICS
-description: Statistics of Factory Calendar
+description: "Statistics of Factory Calendar"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALENDARSTATISTICS')/$value
-semantic_en: Statistics of Factory Calendar
+semantic_en: "Statistics of Factory Calendar"
 tags:
   - CA
   - bo:plant

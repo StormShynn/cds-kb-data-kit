@@ -1,22 +1,22 @@
 ---
 name: YI_CASTING.DDLS
-description: Casting data
+description: "Casting data"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/keremkoseoglu/spma-2025-08/blob/05e9b4ffe4da74c8a64c802598dbd378d1666027/src/yi_casting.ddls.asddls
-semantic_en: Casting data — CDS view based on sflight.
-semantic_vi: Casting data — CDS view dựa trên sflight.
+semantic_en: "Casting data — CDS view based on sflight."
+semantic_vi: "Casting data — CDS view dựa trên sflight."
 keywords:
-  - casting
-  - data
-  - carrid
-  - connid
-  - fldate
-  - connid_as_integer
-  - price_as_char
+  - "casting"
+  - "data"
+  - "carrid"
+  - "connid"
+  - "fldate"
+  - "connid_as_integer"
+  - "price_as_char"
 tags:
   - CA
   - component:CA

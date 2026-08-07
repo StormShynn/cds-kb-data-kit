@@ -1,13 +1,13 @@
 ---
 name: C_PAYFNPAYMENTSITUATION
-description: Requested Payments Situation
+description: "Requested Payments Situation"
 app_component: FIN-FSCM-PF2-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PAYFNPAYMENTSITUATION')/$value
-semantic_en: Requested Payments Situation
+semantic_en: "Requested Payments Situation"
 tags:
   - FIN
   - component:FIN-FSCM-PF2-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_SEMANTICTAGTEXT
-description: Semantictagtext
+description: "Semantictagtext"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released

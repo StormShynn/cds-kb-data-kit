@@ -1,6 +1,6 @@
 ---
 name: I_PLANNEDORDERCOMPONENTTP
-description: Planned OrderCOMPONENTTP
+description: "Planned OrderCOMPONENTTP"
 app_component: PP-PLO-2CL
 software_component: SAPSCORE
 release_state: released

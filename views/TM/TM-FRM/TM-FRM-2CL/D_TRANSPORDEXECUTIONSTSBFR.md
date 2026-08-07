@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDEXECUTIONSTSBFR
-description: D Transpordexecutionstsbfr
+description: "D Transpordexecutionstsbfr"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

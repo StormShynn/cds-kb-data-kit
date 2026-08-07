@@ -1,13 +1,13 @@
 ---
 name: I_CASHJOURNALDOCUMENT_2
-description: Cash Journal Document
+description: "Cash Journal Document"
 app_component: FI-BL-PT-CJ-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASHJOURNALDOCUMENT_2')/$value
-semantic_en: Cash Journal Document
+semantic_en: "Cash Journal Document"
 tags:
   - FI
   - component:FI-BL-PT-CJ-2CL

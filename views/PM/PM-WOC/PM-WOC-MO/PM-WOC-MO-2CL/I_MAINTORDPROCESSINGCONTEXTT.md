@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDPROCESSINGCONTEXTT
-description: Maintordprocessingcontextt
+description: "Maintordprocessingcontextt"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

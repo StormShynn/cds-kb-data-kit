@@ -1,6 +1,6 @@
 ---
 name: D_SLSPRCGGETCONDITIONRECORDR
-description: D SLSPRCGGETCondition RecordR
+description: "D SLSPRCGGETCondition RecordR"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

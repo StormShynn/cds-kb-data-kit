@@ -1,6 +1,6 @@
 ---
 name: I_STRPGLACCOUNTLOG
-description: Strpgl AccountLOG
+description: "Strpgl AccountLOG"
 app_component: FI-LOC-FI-MX
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PROJBILLGREQITMSRCETYPETEXT
-description: Projbillgreqitmsrcetypetext
+description: "Projbillgreqitmsrcetypetext"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

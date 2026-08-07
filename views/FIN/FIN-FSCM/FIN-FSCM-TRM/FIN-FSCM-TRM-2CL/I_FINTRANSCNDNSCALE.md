@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSCNDNSCALE
-description: This CDS view provides information about the conditions of financial transactions that have a scaled interest condition (the Interest Category field of the condition is set to 07 (Scaled: Interval) or 06 (Scaled: Incremental)). This CDS view provides the prerequisites for answering the following business questions: What are the lower and upper limits of a scaled condition item? What is the percentage of a scaled condition item?
+description: "This CDS view provides information about the conditions of financial transactions that have a scaled interest condition (the Interest Category field of the condition is set to 07 (Scaled: Interval) or 06 (Scaled: Incremental)). This CDS view provides the prerequisites for answering the following business questions: What are the lower and upper limits of a scaled condition item? What is the percentage of a scaled condition item?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSCNDNSCALE')/$value
-semantic_en: This CDS view provides information about the conditions of financial transactions that have a scaled interest condition (the Interest Category field of the condition is set to 07 (Scaled: Interval) or 06 (Scaled: Incremental)). This CDS view provides the prerequisites for answering the following business questions: What are the lower and upper limits of a scaled condition item? What is the percentage of a scaled condition item?
+semantic_en: "This CDS view provides information about the conditions of financial transactions that have a scaled interest condition (the Interest Category field of the condition is set to 07 (Scaled: Interval) or 06 (Scaled: Incremental)). This CDS view provides the prerequisites for answering the following business questions: What are the lower and upper limits of a scaled condition item? What is the percentage of a scaled condition item?"
 tags:
   - FIN
   - bo:companycode

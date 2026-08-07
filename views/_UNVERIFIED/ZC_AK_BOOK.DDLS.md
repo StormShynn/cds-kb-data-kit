@@ -1,20 +1,20 @@
 ---
 name: ZC_AK_BOOK.DDLS
-description: Booking  Consumption View
+description: "Booking  Consumption View"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Akankshakoti20/Rap_code/blob/4a76deb05c1086f0cf8bd3221465427d880249e0/src/zc_ak_book.ddls.asddls
-semantic_en: Booking  Consumption View — CDS view.
-semantic_vi: Booking  Consumption View — CDS view dựa trên Booking  Consumption View.
+semantic_en: "Booking  Consumption View — CDS view."
+semantic_vi: "Booking  Consumption View — CDS view dựa trên Booking  Consumption View."
 keywords:
-  - booking
-  - consumption
-  - travel
-  - date
-  - customer
+  - "booking"
+  - "consumption"
+  - "travel"
+  - "date"
+  - "customer"
 tags:
   - CO
   - component:CO

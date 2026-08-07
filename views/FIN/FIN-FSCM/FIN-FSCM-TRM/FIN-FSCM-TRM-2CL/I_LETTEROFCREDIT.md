@@ -1,13 +1,13 @@
 ---
 name: I_LETTEROFCREDIT
-description: Caution Do not use this CDS view. Instead, use the CDS view Financial Transaction Current Activity (I_FinTransCurrentActivity). This CDS view provides the prerequisites for answering the following business questions: Which letters of credit are available? What is the name of a letter of credit?
+description: "Caution Do not use this CDS view. Instead, use the CDS view Financial Transaction Current Activity (I_FinTransCurrentActivity). This CDS view provides the prerequisites for answering the following business questions: Which letters of credit are available? What is the name of a letter of credit?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LETTEROFCREDIT')/$value
-semantic_en: Caution Do not use this CDS view. Instead, use the CDS view Financial Transaction Current Activity (I_FinTransCurrentActivity). This CDS view provides the prerequisites for answering the following business questions: Which letters of credit are available? What is the name of a letter of credit?
+semantic_en: "Caution Do not use this CDS view. Instead, use the CDS view Financial Transaction Current Activity (I_FinTransCurrentActivity). This CDS view provides the prerequisites for answering the following business questions: Which letters of credit are available? What is the name of a letter of credit?"
 tags:
   - FIN
   - bo:companycode

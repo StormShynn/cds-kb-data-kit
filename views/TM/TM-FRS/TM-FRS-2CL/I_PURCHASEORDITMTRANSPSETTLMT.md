@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDITMTRANSPSETTLMT
-description: Purchaseorditmtranspsettlmt
+description: "Purchaseorditmtranspsettlmt"
 app_component: TM-FRS-2CL
 software_component: SAPSCORE
 release_state: released

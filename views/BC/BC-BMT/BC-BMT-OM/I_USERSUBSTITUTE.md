@@ -1,6 +1,6 @@
 ---
 name: I_USERSUBSTITUTE
-description: Usersubstitute
+description: "Usersubstitute"
 app_component: BC-BMT-OM
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PAINDETMATERIALHNDLGUNITTYPE
-description: Paindetmaterialhndlgunittype
+description: "Paindetmaterialhndlgunittype"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

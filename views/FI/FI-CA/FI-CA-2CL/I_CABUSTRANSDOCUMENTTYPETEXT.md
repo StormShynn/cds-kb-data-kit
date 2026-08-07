@@ -1,6 +1,6 @@
 ---
 name: I_CABUSTRANSDOCUMENTTYPETEXT
-description: Cabustransdocumenttypetext
+description: "Cabustransdocumenttypetext"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

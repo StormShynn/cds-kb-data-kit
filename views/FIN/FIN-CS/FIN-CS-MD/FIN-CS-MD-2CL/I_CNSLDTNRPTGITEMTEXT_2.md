@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNRPTGITEMTEXT_2
-description: Cnsldtnrptgitemtext 2
+description: "Cnsldtnrptgitemtext 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

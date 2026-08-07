@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCOSTCENTERHIERNODE
-description: CNSLDTNCost CenterHIERNODE
+description: "CNSLDTNCost CenterHIERNODE"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTREQUITYTYPEMASTER
-description: Jntvntrequitytypemaster
+description: "Jntvntrequitytypemaster"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

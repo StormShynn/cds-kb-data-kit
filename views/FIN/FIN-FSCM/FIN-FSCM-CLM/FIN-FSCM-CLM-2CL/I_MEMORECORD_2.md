@@ -1,6 +1,6 @@
 ---
 name: I_MEMORECORD_2
-description: Memorecord 2
+description: "Memorecord 2"
 app_component: FIN-FSCM-CLM-2CL
 software_component: SAPSCORE
 release_state: released

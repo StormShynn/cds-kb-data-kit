@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPORTATIONACTIVITYTEXT
-description: Transportation Activity - Text
+description: "Transportation Activity - Text"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPORTATIONACTIVITYTEXT')/$value
-semantic_en: Transportation Activity - Text
+semantic_en: "Transportation Activity - Text"
 tags:
   - TM
   - bo:purchaseorder

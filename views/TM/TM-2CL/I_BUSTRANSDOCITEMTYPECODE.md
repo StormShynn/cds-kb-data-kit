@@ -1,6 +1,6 @@
 ---
 name: I_BUSTRANSDOCITEMTYPECODE
-description: Bustransdocitemtypecode
+description: "Bustransdocitemtypecode"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_WORKASSIGNMENTTP_1
-description: Workassignmenttp 1
+description: "Workassignmenttp 1"
 app_component: CA-WFD-INT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONSUBSETTP_21
-description: Inspectionsubsettp 21
+description: "Inspectionsubsettp 21"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

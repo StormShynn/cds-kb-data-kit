@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNGROUPT
-description: Consolidation Group - Text
+description: "Consolidation Group - Text"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNGROUPT')/$value
-semantic_en: Consolidation Group - Text
+semantic_en: "Consolidation Group - Text"
 tags:
   - FIN
   - bo:salesorder

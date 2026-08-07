@@ -1,6 +1,6 @@
 ---
 name: D_CONTRACCTGDOCUMENTCHANGED
-description: D Contracctgdocumentchanged
+description: "D Contracctgdocumentchanged"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

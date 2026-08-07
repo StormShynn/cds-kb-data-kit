@@ -1,21 +1,21 @@
 ---
 name: Z_B_CUSTOMER.DDLS
-description: DETAILS CUSTOMERS
+description: "DETAILS CUSTOMERS"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/CarlosGuzmanCG/ABAP_CLOUD/blob/a0d0eb81ed6eb4fa624ae7d43cb0ab95f59b53ad/src/z_b_customer.ddls.asddls
-semantic_en: DETAILS CUSTOMERS — CDS view based on zrent_cust_cg.
-semantic_vi: DETAILS CUSTOMERS — CDS view dựa trên zrent_cust_cg.
+semantic_en: "DETAILS CUSTOMERS — CDS view based on zrent_cust_cg."
+semantic_vi: "DETAILS CUSTOMERS — CDS view dựa trên zrent_cust_cg."
 keywords:
-  - details
-  - customers
-  - matricula
-  - nombre
-  - apellido
-  - correo
+  - "details"
+  - "customers"
+  - "matricula"
+  - "nombre"
+  - "apellido"
+  - "correo"
 tags:
   - RE
   - bo:businesspartner

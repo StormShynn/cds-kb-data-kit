@@ -1,13 +1,13 @@
 ---
 name: I_INTRASTATPRVDROFINFOCOCODE
-description: Company Codes
+description: "Company Codes"
 app_component: FT-ITR-ISR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTRASTATPRVDROFINFOCOCODE')/$value
-semantic_en: Company Codes
+semantic_en: "Company Codes"
 tags:
   - FT
   - bo:companycode

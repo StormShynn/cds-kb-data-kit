@@ -1,15 +1,15 @@
 ---
 name: I_PRODUCTSTORAGELOCATION
-description: This CDS view provides the list of Storage locations assigned for a Product and Plant.
+description: "This CDS view provides the list of Storage locations assigned for a Product and Plant."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTSTORAGELOCATION')/$value
-semantic_en: This CDS view provides the list of Storage locations assigned for a Product and Plant.
+semantic_en: "This CDS view provides the list of Storage locations assigned for a Product and Plant."
 keywords:
-  - Product Storage Location
+  - "Product Storage Location"
 tags:
   - LO
   - bo:material

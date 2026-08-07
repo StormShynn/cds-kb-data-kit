@@ -1,22 +1,22 @@
 ---
 name: C_PROJECTPLANACTQ2201
-description: This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in company code currency or global currency? What are the absolute and relative differences of the actual and the plan amounts in company code currency and global currency? Optional: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in transaction currency? What are the absolute and relative differences of the actual and the plan amounts in transaction currency? For all three currency types, you can drill down for further relevant characteristics.
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in company code currency or global currency? What are the absolute and relative differences of the actual and the plan amounts in company code currency and global currency? Optional: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in transaction currency? What are the absolute and relative differences of the actual and the plan amounts in transaction currency? For all three currency types, you can drill down for further relevant characteristics."
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROJECTPLANACTQ2201')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in company code currency or global currency? What are the absolute and relative differences of the actual and the plan amounts in company code currency and global currency? Optional: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in transaction currency? What are the absolute and relative differences of the actual and the plan amounts in transaction currency? For all three currency types, you can drill down for further relevant characteristics.
-semantic_vi: Project Plan Actual — CDS view tiêu dùng dựa trên I_ActualPlanJrnlEntryItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in company code currency or global currency? What are the absolute and relative differences of the actual and the plan amounts in company code currency and global currency? Optional: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in transaction currency? What are the absolute and relative differences of the actual and the plan amounts in transaction currency? For all three currency types, you can drill down for further relevant characteristics."
+semantic_vi: "Project Plan Actual — CDS view tiêu dùng dựa trên I_ActualPlanJrnlEntryItemCube."
 keywords:
-  - Project Plan Actual
-  - project
-  - plan
-  - actual
-  - statistical
-  - element
-  - external
+  - "Project Plan Actual"
+  - "project"
+  - "plan"
+  - "actual"
+  - "statistical"
+  - "element"
+  - "external"
 tags:
   - FI
   - account

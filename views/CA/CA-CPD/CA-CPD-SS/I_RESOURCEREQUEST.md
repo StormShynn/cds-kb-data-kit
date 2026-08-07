@@ -1,13 +1,13 @@
 ---
 name: I_RESOURCEREQUEST
-description: This CDS view provides the prerequisites for answering the following business questions: How many resource requests exist for a project or a work package? For what duration are resources required? What is the status of the resource request regarding staffing?
+description: "This CDS view provides the prerequisites for answering the following business questions: How many resource requests exist for a project or a work package? For what duration are resources required? What is the status of the resource request regarding staffing?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESOURCEREQUEST')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How many resource requests exist for a project or a work package? For what duration are resources required? What is the status of the resource request regarding staffing?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How many resource requests exist for a project or a work package? For what duration are resources required? What is the status of the resource request regarding staffing?"
 tags:
   - CA
   - bo:companycode

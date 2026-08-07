@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRACTYTASKSUPPLIERAPI01
-description: Suplractytasksupplierapi 01
+description: "Suplractytasksupplierapi 01"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

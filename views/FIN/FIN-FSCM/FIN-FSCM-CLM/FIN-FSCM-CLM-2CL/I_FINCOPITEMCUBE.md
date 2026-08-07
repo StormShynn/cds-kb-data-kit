@@ -1,6 +1,6 @@
 ---
 name: I_FINCOPITEMCUBE
-description: Fincopitemcube
+description: "Fincopitemcube"
 app_component: FIN-FSCM-CLM-2CL
 software_component: SAPSCORE
 release_state: released

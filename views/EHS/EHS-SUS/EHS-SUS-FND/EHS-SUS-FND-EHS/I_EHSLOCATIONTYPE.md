@@ -1,13 +1,13 @@
 ---
 name: I_EHSLOCATIONTYPE
-description: EHS Location Type
+description: "EHS Location Type"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSLOCATIONTYPE')/$value
-semantic_en: EHS Location Type
+semantic_en: "EHS Location Type"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

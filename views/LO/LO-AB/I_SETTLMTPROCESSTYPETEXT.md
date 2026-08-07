@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTPROCESSTYPETEXT
-description: Settlmtprocesstypetext
+description: "Settlmtprocesstypetext"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

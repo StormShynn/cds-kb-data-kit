@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNDIVISIONVH
-description: Cnsldtndivisionvh
+description: "Cnsldtndivisionvh"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

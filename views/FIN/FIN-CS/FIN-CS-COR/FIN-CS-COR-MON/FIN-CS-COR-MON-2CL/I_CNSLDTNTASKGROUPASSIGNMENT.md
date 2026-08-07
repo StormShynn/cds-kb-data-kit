@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNTASKGROUPASSIGNMENT
-description: Cnsldtntaskgroupassignment
+description: "Cnsldtntaskgroupassignment"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

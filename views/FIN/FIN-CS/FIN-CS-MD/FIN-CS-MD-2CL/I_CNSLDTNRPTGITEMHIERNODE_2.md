@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNRPTGITEMHIERNODE_2
-description: Cnsldtnrptgitemhiernode 2
+description: "Cnsldtnrptgitemhiernode 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

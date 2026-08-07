@@ -1,6 +1,6 @@
 ---
 name: I_INVENTORYTRANSACTIONTYPE
-description: Inventorytransactiontype
+description: "Inventorytransactiontype"
 app_component: MM-IM-VDM-PI-2CL
 software_component: SAPSCORE
 release_state: released

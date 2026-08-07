@@ -1,6 +1,6 @@
 ---
 name: I_RU_ASSETDEPRECIATIONGROUP
-description: RU Assetdepreciationgroup
+description: "RU Assetdepreciationgroup"
 app_component: FI-LOC-AA-RU
 software_component: SAPSCORE
 release_state: released

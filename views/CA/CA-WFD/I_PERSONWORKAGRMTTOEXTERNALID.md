@@ -1,6 +1,6 @@
 ---
 name: I_PERSONWORKAGRMTTOEXTERNALID
-description: Personworkagrmttoexternalid
+description: "Personworkagrmttoexternalid"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released

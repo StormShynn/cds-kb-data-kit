@@ -1,6 +1,6 @@
 ---
 name: D_PROCORDREEXPLODEMASTERDATAP
-description: D Procordreexplodemasterdatap
+description: "D Procordreexplodemasterdatap"
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

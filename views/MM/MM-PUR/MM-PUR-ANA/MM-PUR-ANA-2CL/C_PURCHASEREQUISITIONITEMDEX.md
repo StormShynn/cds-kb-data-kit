@@ -1,6 +1,6 @@
 ---
 name: C_PURCHASEREQUISITIONITEMDEX
-description: Purchase RequisitionUISITIONITEMDEX
+description: "Purchase RequisitionUISITIONITEMDEX"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

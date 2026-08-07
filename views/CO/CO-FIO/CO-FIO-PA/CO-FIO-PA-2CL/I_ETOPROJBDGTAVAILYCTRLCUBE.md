@@ -1,13 +1,13 @@
 ---
 name: I_ETOPROJBDGTAVAILYCTRLCUBE
-description: ETO Prj Budget AvailabilityCtrl - Cube
+description: "ETO Prj Budget AvailabilityCtrl - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJBDGTAVAILYCTRLCUBE')/$value
-semantic_en: ETO Prj Budget AvailabilityCtrl - Cube
+semantic_en: "ETO Prj Budget AvailabilityCtrl - Cube"
 tags:
   - CO
   - bo:project

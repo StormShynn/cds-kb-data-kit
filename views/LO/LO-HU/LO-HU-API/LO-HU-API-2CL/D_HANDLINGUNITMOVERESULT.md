@@ -1,6 +1,6 @@
 ---
 name: D_HANDLINGUNITMOVERESULT
-description: D Handlingunitmoveresult
+description: "D Handlingunitmoveresult"
 app_component: LO-HU-API-2CL
 software_component: SAPSCORE
 release_state: released

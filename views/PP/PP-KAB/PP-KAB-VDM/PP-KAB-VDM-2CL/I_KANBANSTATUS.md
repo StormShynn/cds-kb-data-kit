@@ -1,6 +1,6 @@
 ---
 name: I_KANBANSTATUS
-description: Kanbanstatus
+description: "Kanbanstatus"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

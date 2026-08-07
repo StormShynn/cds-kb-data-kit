@@ -1,6 +1,6 @@
 ---
 name: C_CONTROLCLASSFORKEYDATE
-description: Controlclassforkeydate
+description: "Controlclassforkeydate"
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

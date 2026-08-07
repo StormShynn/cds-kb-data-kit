@@ -1,24 +1,24 @@
 ---
 name: C_TRIALBALANCEQ0001
-description: This CDS view can form balances of various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances of a specific time frame? What is the balance of a cost center for a specific time frame? What are balances within the G/L account hierarchy? What is the revenue drilled down by profit center?
+description: "This CDS view can form balances of various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances of a specific time frame? What is the balance of a cost center for a specific time frame? What are balances within the G/L account hierarchy? What is the revenue drilled down by profit center?"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_TRIALBALANCEQ0001')/$value
-semantic_en: This CDS view can form balances of various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances of a specific time frame? What is the balance of a cost center for a specific time frame? What are balances within the G/L account hierarchy? What is the revenue drilled down by profit center?
-semantic_vi: Trial Balance — CDS view tiêu dùng dựa trên I_GLAcctBalanceCube.
+semantic_en: "This CDS view can form balances of various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances of a specific time frame? What is the balance of a cost center for a specific time frame? What are balances within the G/L account hierarchy? What is the revenue drilled down by profit center?"
+semantic_vi: "Trial Balance — CDS view tiêu dùng dựa trên I_GLAcctBalanceCube."
 keywords:
-  - Trial Balance
-  - trial
-  - balance
-  - ledger
-  - company
-  - code
-  - name
-  - account
-  - hierarchy
+  - "Trial Balance"
+  - "trial"
+  - "balance"
+  - "ledger"
+  - "company"
+  - "code"
+  - "name"
+  - "account"
+  - "hierarchy"
 tags:
   - FI
   - account

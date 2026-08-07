@@ -1,13 +1,13 @@
 ---
 name: I_CREDITACCTWITHTODOCUBE
-description: Credit Account With ToDo - Cube
+description: "Credit Account With ToDo - Cube"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITACCTWITHTODOCUBE')/$value
-semantic_en: Credit Account With ToDo - Cube
+semantic_en: "Credit Account With ToDo - Cube"
 tags:
   - FIN
   - account

@@ -1,6 +1,6 @@
 ---
 name: D_STRPTASKSTATUSCHANGED
-description: D Strptaskstatuschanged
+description: "D Strptaskstatuschanged"
 app_component: FI-LOC-SRF-RUN
 software_component: SAPSCORE
 release_state: released

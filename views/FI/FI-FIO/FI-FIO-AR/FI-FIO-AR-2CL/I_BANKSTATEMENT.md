@@ -1,6 +1,6 @@
 ---
 name: I_BANKSTATEMENT
-description: Bankstatement
+description: "Bankstatement"
 app_component: FI-FIO-AR-2CL
 software_component: SAPSCORE
 release_state: released

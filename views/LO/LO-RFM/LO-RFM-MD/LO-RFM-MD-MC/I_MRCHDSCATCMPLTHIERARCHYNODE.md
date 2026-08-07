@@ -1,6 +1,6 @@
 ---
 name: I_MRCHDSCATCMPLTHIERARCHYNODE
-description: Mrchdscatcmplthierarchynode
+description: "Mrchdscatcmplthierarchynode"
 app_component: LO-RFM-MD-MC
 software_component: SAPSCORE
 release_state: released

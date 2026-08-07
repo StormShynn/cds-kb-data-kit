@@ -1,13 +1,13 @@
 ---
 name: I_FACTORYCALENDAR
-description: This CDS view provides the prerequisites for answering the following business questions: Which factory calendars are maintained? Which are the validity start and end years of the factory calendars? Which public holiday calendars are assigned to the factory calendars?
+description: "This CDS view provides the prerequisites for answering the following business questions: Which factory calendars are maintained? Which are the validity start and end years of the factory calendars? Which public holiday calendars are assigned to the factory calendars?"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALENDAR')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Which factory calendars are maintained? Which are the validity start and end years of the factory calendars? Which public holiday calendars are assigned to the factory calendars?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which factory calendars are maintained? Which are the validity start and end years of the factory calendars? Which public holiday calendars are assigned to the factory calendars?"
 tags:
   - CA
   - bo:plant

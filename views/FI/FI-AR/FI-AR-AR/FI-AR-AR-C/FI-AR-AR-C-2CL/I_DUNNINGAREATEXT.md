@@ -1,6 +1,6 @@
 ---
 name: I_DUNNINGAREATEXT
-description: Dunningareatext
+description: "Dunningareatext"
 app_component: FI-AR-AR-C-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,24 +1,24 @@
 ---
 name: C_BALANCESHEETCURRENCYROLEVH
-description: Balance Sheet Currency Roles
+description: "Balance Sheet Currency Roles"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BALANCESHEETCURRENCYROLEVH')/$value
-semantic_en: Balance Sheet Currency Roles
-semantic_vi: Balance Sheet Currency Roles — CDS view tiêu dùng dựa trên P_BalanceSheetCurrencyRole.
+semantic_en: "Balance Sheet Currency Roles"
+semantic_vi: "Balance Sheet Currency Roles — CDS view tiêu dùng dựa trên P_BalanceSheetCurrencyRole."
 keywords:
-  - balance
-  - sheet
-  - currency
-  - roles
-  - ledger
-  - company
-  - code
-  - field
-  - role
+  - "balance"
+  - "sheet"
+  - "currency"
+  - "roles"
+  - "ledger"
+  - "company"
+  - "code"
+  - "field"
+  - "role"
 tags:
   - FI
   - component:FI-FIO-GL-2CL

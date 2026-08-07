@@ -1,13 +1,13 @@
 ---
 name: I_BUSINESSPARTNERSUPPLIERDEX
-description: Data Extraction for BP Supplier
+description: "Data Extraction for BP Supplier"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERSUPPLIERDEX')/$value
-semantic_en: Data Extraction for BP Supplier
+semantic_en: "Data Extraction for BP Supplier"
 tags:
   - LO
   - bo:businesspartner

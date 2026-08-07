@@ -1,13 +1,13 @@
 ---
 name: I_ENGAGEMENTPROJFINANCIALPLAN
-description: This CDS view provides the prerequisites for answering the following business questions: How many projects are being executed in my organization? When were the projects reviewed? What is the status of project forecast?
+description: "This CDS view provides the prerequisites for answering the following business questions: How many projects are being executed in my organization? When were the projects reviewed? What is the status of project forecast?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGAGEMENTPROJFINANCIALPLAN')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How many projects are being executed in my organization? When were the projects reviewed? What is the status of project forecast?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How many projects are being executed in my organization? When were the projects reviewed? What is the status of project forecast?"
 tags:
   - CA
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_BPRATGPROCEDUREGRADETEXT
-description: Bpratgproceduregradetext
+description: "Bpratgproceduregradetext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

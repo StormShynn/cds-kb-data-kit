@@ -1,13 +1,13 @@
 ---
 name: I_INSURPLCYCVRGSUSPENSION
-description: Coverage Suspension in Insurance Policy
+description: "Coverage Suspension in Insurance Policy"
 app_component: FS-PM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURPLCYCVRGSUSPENSION')/$value
-semantic_en: Coverage Suspension in Insurance Policy
+semantic_en: "Coverage Suspension in Insurance Policy"
 tags:
   - FS
   - bo:purchaseorder

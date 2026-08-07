@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTUNITCHANGED
-description: D Freightunitchanged
+description: "D Freightunitchanged"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

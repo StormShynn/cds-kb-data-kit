@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSLINKEDOBJECTAPI01
-description: Lgltranslinkedobjectapi 01
+description: "Lgltranslinkedobjectapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

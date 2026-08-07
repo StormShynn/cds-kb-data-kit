@@ -1,13 +1,13 @@
 ---
 name: I_CMMDTYMTMVALUECUBE
-description: Mark To Market Values for - Cube
+description: "Mark To Market Values for - Cube"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMVALUECUBE')/$value
-semantic_en: Mark To Market Values for - Cube
+semantic_en: "Mark To Market Values for - Cube"
 tags:
   - LO
   - component:LO-CMM-BF

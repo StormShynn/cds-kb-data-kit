@@ -1,21 +1,21 @@
 ---
 name: I_AMOUNTFIELDGROUPTEXT
-description: This CDS view exposes fixed values of the amount field group.
+description: "This CDS view exposes fixed values of the amount field group."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AMOUNTFIELDGROUPTEXT')/$value
-semantic_en: This CDS view exposes fixed values of the amount field group.
-semantic_vi: Amount Field Group - Text — CDS view cơ bản dựa trên wb2_c_af_groupt.
+semantic_en: "This CDS view exposes fixed values of the amount field group."
+semantic_vi: "Amount Field Group - Text — CDS view cơ bản dựa trên wb2_c_af_groupt."
 keywords:
-  - amount
-  - field
-  - group
-  - text
-  - language
-  - desc
+  - "amount"
+  - "field"
+  - "group"
+  - "text"
+  - "language"
+  - "desc"
 tags:
   - LO
   - bo:companycode

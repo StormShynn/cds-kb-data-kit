@@ -1,13 +1,13 @@
 ---
 name: I_BLOCKSTATUSTEXT
-description: Block Status - Text
+description: "Block Status - Text"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BLOCKSTATUSTEXT')/$value
-semantic_en: Block Status - Text
+semantic_en: "Block Status - Text"
 tags:
   - TM
   - component:TM-2CL

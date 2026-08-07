@@ -1,27 +1,27 @@
 ---
 name: ZI_RPT_AR03.DDLS
-description: Interface View for AR Aging Report
+description: "Interface View for AR Aging Report"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/dataops-sap01-sp26/ders-main-backup/blob/d80d17e14ace083f67daf75d8d8719ac8e81939e/src/zi_rpt_ar03.ddls.asddls
-semantic_en: Interface View for AR Aging Report — CDS view based on ZI_RPT_AR03_BASE.
-semantic_vi: Interface View for AR Aging Report — CDS view dựa trên ZI_RPT_AR03_BASE.
+semantic_en: "Interface View for AR Aging Report — CDS view based on ZI_RPT_AR03_BASE."
+semantic_vi: "Interface View for AR Aging Report — CDS view dựa trên ZI_RPT_AR03_BASE."
 keywords:
-  - interface
-  - for
-  - aging
-  - report
-  - company
-  - code
-  - customer
-  - local
-  - currency
-  - name
-  - total
-  - amount
+  - "interface"
+  - "for"
+  - "aging"
+  - "report"
+  - "company"
+  - "code"
+  - "customer"
+  - "local"
+  - "currency"
+  - "name"
+  - "total"
+  - "amount"
 tags:
   - AC
   - bo:purchaseorder

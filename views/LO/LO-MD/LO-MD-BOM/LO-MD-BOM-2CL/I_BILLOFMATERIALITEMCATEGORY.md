@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFMATERIALITEMCATEGORY
-description: Bill of MaterialITEMCATEGORY
+description: "Bill of MaterialITEMCATEGORY"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

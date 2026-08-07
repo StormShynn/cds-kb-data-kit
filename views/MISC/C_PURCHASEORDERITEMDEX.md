@@ -1,24 +1,24 @@
 ---
 name: C_PURCHASEORDERITEMDEX
-description: Data Extraction View for PO Item
+description: "Data Extraction View for PO Item"
 software_component: SAPSCORE
 release_state: released
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
-semantic_en: Data Extraction View for PO Item — Consumption CDS view based on I_PurchaseOrderItemAPI01.
-semantic_vi: Data Extraction View for PO Item — CDS view tiêu dùng dựa trên I_PurchaseOrderItemAPI01.
+semantic_en: "Data Extraction View for PO Item — Consumption CDS view based on I_PurchaseOrderItemAPI01."
+semantic_vi: "Data Extraction View for PO Item — CDS view tiêu dùng dựa trên I_PurchaseOrderItemAPI01."
 keywords:
-  - data
-  - extraction
-  - for
-  - item
-  - purchasing
-  - group
-  - organization
-  - document
-  - origin
-  - supplier
+  - "data"
+  - "extraction"
+  - "for"
+  - "item"
+  - "purchasing"
+  - "group"
+  - "organization"
+  - "document"
+  - "origin"
+  - "supplier"
 tags:
   - AC
   - bo:purchaseorder

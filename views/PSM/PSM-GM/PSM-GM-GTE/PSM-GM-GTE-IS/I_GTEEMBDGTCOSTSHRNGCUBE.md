@@ -1,13 +1,13 @@
 ---
 name: I_GTEEMBDGTCOSTSHRNGCUBE
-description: Grant Budget Cost Sharing - Cube
+description: "Grant Budget Cost Sharing - Cube"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GTEEMBDGTCOSTSHRNGCUBE')/$value
-semantic_en: Grant Budget Cost Sharing - Cube
+semantic_en: "Grant Budget Cost Sharing - Cube"
 tags:
   - PSM
   - budget

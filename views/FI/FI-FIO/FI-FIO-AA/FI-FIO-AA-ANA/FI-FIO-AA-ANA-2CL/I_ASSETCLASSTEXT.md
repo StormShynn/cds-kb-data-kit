@@ -1,6 +1,6 @@
 ---
 name: I_ASSETCLASSTEXT
-description: Assetclasstext
+description: "Assetclasstext"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released

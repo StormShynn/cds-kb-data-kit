@@ -1,6 +1,6 @@
 ---
 name: I_STATISTICALKEYFIGURE
-description: Statisticalkeyfigure
+description: "Statisticalkeyfigure"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

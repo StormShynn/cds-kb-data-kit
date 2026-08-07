@@ -1,6 +1,6 @@
 ---
 name: D_FRTCOSTALLOCDOCRELEASED
-description: D Frtcostallocdocreleased
+description: "D Frtcostallocdocreleased"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

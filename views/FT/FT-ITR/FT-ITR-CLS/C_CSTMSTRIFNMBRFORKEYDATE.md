@@ -1,6 +1,6 @@
 ---
 name: C_CSTMSTRIFNMBRFORKEYDATE
-description: Cstmstrifnmbrforkeydate
+description: "Cstmstrifnmbrforkeydate"
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

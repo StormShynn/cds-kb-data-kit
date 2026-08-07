@@ -1,13 +1,13 @@
 ---
 name: I_FIXEDASSETCOUNTRYDATA
-description: This CDS view provides access to the country-dependent master data of a fixed asset. The country-dependent attributes of the fixed asset business entity provide dimensions of the following countries: India Israel Japan Portugal Russia This CDS view provides the prerequisites for answering the following business questions: What is the country-dependent data of my fixed assets? What are the national classification codes of my fixed assets?
+description: "This CDS view provides access to the country-dependent master data of a fixed asset. The country-dependent attributes of the fixed asset business entity provide dimensions of the following countries: India Israel Japan Portugal Russia This CDS view provides the prerequisites for answering the following business questions: What is the country-dependent data of my fixed assets? What are the national classification codes of my fixed assets?"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FIXEDASSETCOUNTRYDATA')/$value
-semantic_en: This CDS view provides access to the country-dependent master data of a fixed asset. The country-dependent attributes of the fixed asset business entity provide dimensions of the following countries: India Israel Japan Portugal Russia This CDS view provides the prerequisites for answering the following business questions: What is the country-dependent data of my fixed assets? What are the national classification codes of my fixed assets?
+semantic_en: "This CDS view provides access to the country-dependent master data of a fixed asset. The country-dependent attributes of the fixed asset business entity provide dimensions of the following countries: India Israel Japan Portugal Russia This CDS view provides the prerequisites for answering the following business questions: What is the country-dependent data of my fixed assets? What are the national classification codes of my fixed assets?"
 tags:
   - FI
   - bo:asset

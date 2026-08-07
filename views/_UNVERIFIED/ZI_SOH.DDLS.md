@@ -1,21 +1,21 @@
 ---
 name: ZI_SOH.DDLS
-description: SO Header
+description: "SO Header"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Yashavant/ZBC_YASH/blob/04a7bc9fbbaf48a343c202518bfc6ec60f3015d1/src/zi_soh.ddls.asddls
-semantic_en: SO Header — CDS view based on zbc_soh.
-semantic_vi: SO Header — CDS view dựa trên zbc_soh.
+semantic_en: "SO Header — CDS view based on zbc_soh."
+semantic_vi: "SO Header — CDS view dựa trên zbc_soh."
 keywords:
-  - header
-  - vbeln
-  - ernam
-  - erdat
-  - vkorg
-  - vtweg
+  - "header"
+  - "vbeln"
+  - "ernam"
+  - "erdat"
+  - "vkorg"
+  - "vtweg"
 tags:
   - BC
   - bo:salesorder

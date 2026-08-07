@@ -1,6 +1,6 @@
 ---
 name: I_ORDERRELATEDBILLINGSTATUST
-description: Orderrelatedbillingstatust
+description: "Orderrelatedbillingstatust"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

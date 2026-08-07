@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECHIERARCHYTEXT
-description: Public Sector Hierarchy - Text
+description: "Public Sector Hierarchy - Text"
 app_component: PSM-FM-BU-AC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECHIERARCHYTEXT')/$value
-semantic_en: Public Sector Hierarchy - Text
+semantic_en: "Public Sector Hierarchy - Text"
 tags:
   - PSM
   - component:PSM-FM-BU-AC

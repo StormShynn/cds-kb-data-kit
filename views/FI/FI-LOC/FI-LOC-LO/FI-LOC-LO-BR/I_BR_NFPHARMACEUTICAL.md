@@ -1,25 +1,25 @@
 ---
 name: I_BR_NFPHARMACEUTICAL
-description: This CDS view provides the prerequisites for answering business questions about relevant aspects of medicines and pharmaceutical raw material.
+description: "This CDS view provides the prerequisites for answering business questions about relevant aspects of medicines and pharmaceutical raw material."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_NFPHARMACEUTICAL')/$value
-semantic_en: This CDS view provides the prerequisites for answering business questions about relevant aspects of medicines and pharmaceutical raw material.
-semantic_vi: Brazil Nota Fiscal Item Pharmaceuticals — CDS view giao diện dựa trên j_1bnfpharmaceut.
+semantic_en: "This CDS view provides the prerequisites for answering business questions about relevant aspects of medicines and pharmaceutical raw material."
+semantic_vi: "Brazil Nota Fiscal Item Pharmaceuticals — CDS view giao diện dựa trên j_1bnfpharmaceut."
 keywords:
-  - brazil
-  - nota
-  - fiscal
-  - item
-  - pharmaceuticals
-  - pharma
-  - medicine
-  - line
-  - batch
-  - quantity
+  - "brazil"
+  - "nota"
+  - "fiscal"
+  - "item"
+  - "pharmaceuticals"
+  - "pharma"
+  - "medicine"
+  - "line"
+  - "batch"
+  - "quantity"
 tags:
   - FI
   - bo:plant

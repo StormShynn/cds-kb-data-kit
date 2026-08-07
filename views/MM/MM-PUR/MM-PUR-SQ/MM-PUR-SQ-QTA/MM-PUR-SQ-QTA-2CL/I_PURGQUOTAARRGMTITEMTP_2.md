@@ -1,6 +1,6 @@
 ---
 name: I_PURGQUOTAARRGMTITEMTP_2
-description: Purgquotaarrgmtitemtp 2
+description: "Purgquotaarrgmtitemtp 2"
 app_component: MM-PUR-SQ-QTA-2CL
 software_component: SAPSCORE
 release_state: released

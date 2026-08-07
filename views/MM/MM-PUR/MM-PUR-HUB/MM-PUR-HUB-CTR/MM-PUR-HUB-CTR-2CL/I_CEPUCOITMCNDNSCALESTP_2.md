@@ -1,6 +1,6 @@
 ---
 name: I_CEPUCOITMCNDNSCALESTP_2
-description: Cepucoitmcndnscalestp 2
+description: "Cepucoitmcndnscalestp 2"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

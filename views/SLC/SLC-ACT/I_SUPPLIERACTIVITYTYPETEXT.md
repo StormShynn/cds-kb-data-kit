@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERACTIVITYTYPETEXT
-description: Supplieractivitytypetext
+description: "Supplieractivitytypetext"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

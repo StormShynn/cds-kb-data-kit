@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNFREETEXTANSWER
-description: Consolidation Free Text Answer
+description: "Consolidation Free Text Answer"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFREETEXTANSWER')/$value
-semantic_en: Consolidation Free Text Answer
+semantic_en: "Consolidation Free Text Answer"
 tags:
   - FIN
   - bo:salesorder

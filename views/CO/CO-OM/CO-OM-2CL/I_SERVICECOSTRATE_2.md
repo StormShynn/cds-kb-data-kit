@@ -1,6 +1,6 @@
 ---
 name: I_SERVICECOSTRATE_2
-description: Servicecostrate 2
+description: "Servicecostrate 2"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPDIMNWGTPROFILETEXT
-description: Transp Dimensional Weight Profile - Text
+description: "Transp Dimensional Weight Profile - Text"
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPDIMNWGTPROFILETEXT')/$value
-semantic_en: Transp Dimensional Weight Profile - Text
+semantic_en: "Transp Dimensional Weight Profile - Text"
 tags:
   - TM
   - bo:companycode

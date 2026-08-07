@@ -1,6 +1,6 @@
 ---
 name: I_RANGEOFCOVERAGEPROFILE
-description: Rangeofcoverageprofile
+description: "Rangeofcoverageprofile"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

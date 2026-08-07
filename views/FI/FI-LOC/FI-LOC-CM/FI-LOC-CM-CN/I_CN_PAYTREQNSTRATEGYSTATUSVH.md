@@ -1,6 +1,6 @@
 ---
 name: I_CN_PAYTREQNSTRATEGYSTATUSVH
-description: CN Paytreqnstrategystatusvh
+description: "CN Paytreqnstrategystatusvh"
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

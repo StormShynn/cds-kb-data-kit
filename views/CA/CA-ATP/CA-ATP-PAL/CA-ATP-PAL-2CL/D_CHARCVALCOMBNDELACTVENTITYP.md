@@ -1,6 +1,6 @@
 ---
 name: D_CHARCVALCOMBNDELACTVENTITYP
-description: D Charcvalcombndelactventityp
+description: "D Charcvalcombndelactventityp"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

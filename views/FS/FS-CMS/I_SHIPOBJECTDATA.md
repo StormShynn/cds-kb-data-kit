@@ -1,13 +1,13 @@
 ---
 name: I_SHIPOBJECTDATA
-description: Ship Object Details
+description: "Ship Object Details"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SHIPOBJECTDATA')/$value
-semantic_en: Ship Object Details
+semantic_en: "Ship Object Details"
 tags:
   - FS
   - bo:purchaseorder

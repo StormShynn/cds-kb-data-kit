@@ -1,6 +1,6 @@
 ---
 name: I_INDUSTRYSECTORTEXT_2
-description: Industrysectortext 2
+description: "Industrysectortext 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

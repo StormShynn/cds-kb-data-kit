@@ -1,13 +1,13 @@
 ---
 name: I_NETWORKPROFILE
-description: Network Profile Details
+description: "Network Profile Details"
 app_component: PS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_NETWORKPROFILE')/$value
-semantic_en: Network Profile Details
+semantic_en: "Network Profile Details"
 tags:
   - PS
   - bo:companycode

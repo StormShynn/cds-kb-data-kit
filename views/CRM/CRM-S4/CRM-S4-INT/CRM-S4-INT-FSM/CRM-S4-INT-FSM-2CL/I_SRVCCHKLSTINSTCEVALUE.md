@@ -1,15 +1,15 @@
 ---
 name: I_SRVCCHKLSTINSTCEVALUE
-description: Checklist Instance Values
+description: "Checklist Instance Values"
 app_component: CRM-S4-INT-FSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCCHKLSTINSTCEVALUE')/$value
-semantic_en: Checklist Instance Values
+semantic_en: "Checklist Instance Values"
 keywords:
-  - Checklist Instance Value
+  - "Checklist Instance Value"
 tags:
   - CRM
   - component:CRM-S4-INT-FSM-2CL

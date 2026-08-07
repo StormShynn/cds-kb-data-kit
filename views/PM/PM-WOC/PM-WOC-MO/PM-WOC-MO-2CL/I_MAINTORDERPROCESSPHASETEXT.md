@@ -1,13 +1,13 @@
 ---
 name: I_MAINTORDERPROCESSPHASETEXT
-description: Maintenance Order Process Phase - Text
+description: "Maintenance Order Process Phase - Text"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTORDERPROCESSPHASETEXT')/$value
-semantic_en: Maintenance Order Process Phase - Text
+semantic_en: "Maintenance Order Process Phase - Text"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

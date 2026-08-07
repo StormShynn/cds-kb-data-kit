@@ -1,6 +1,6 @@
 ---
 name: D_PROCORDCONFGETGDSMVTPRPSLP
-description: D Procordconfgetgdsmvtprpslp
+description: "D Procordconfgetgdsmvtprpslp"
 app_component: PP-ES
 software_component: SAPSCORE
 release_state: released

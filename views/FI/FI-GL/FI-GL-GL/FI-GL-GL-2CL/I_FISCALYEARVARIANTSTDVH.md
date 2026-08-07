@@ -1,6 +1,6 @@
 ---
 name: I_FISCALYEARVARIANTSTDVH
-description: Fiscalyearvariantstdvh
+description: "Fiscalyearvariantstdvh"
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released

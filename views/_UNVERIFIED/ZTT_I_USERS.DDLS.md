@@ -1,24 +1,24 @@
 ---
 name: ZTT_I_USERS.DDLS
-description: Users
+description: "Users"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_i_users.ddls.asddls
-semantic_en: Users — CDS view based on usr02.
-semantic_vi: Users — CDS view dựa trên usr02.
+semantic_en: "Users — CDS view based on usr02."
+semantic_vi: "Users — CDS view dựa trên usr02."
 keywords:
-  - users
-  - usr21
-  - user
-  - type
-  - cost
-  - center
-  - address
-  - person
-  - number
+  - "users"
+  - "usr21"
+  - "user"
+  - "type"
+  - "cost"
+  - "center"
+  - "address"
+  - "person"
+  - "number"
 ---
 # ZTT_I_USERS.DDLS
 

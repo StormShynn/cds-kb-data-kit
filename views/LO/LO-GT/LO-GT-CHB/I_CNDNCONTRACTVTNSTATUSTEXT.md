@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRACTVTNSTATUSTEXT
-description: Cndncontractvtnstatustext
+description: "Cndncontractvtnstatustext"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

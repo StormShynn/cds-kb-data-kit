@@ -1,6 +1,6 @@
 ---
 name: I_PARTNERFUNCTION
-description: Partnerfunction
+description: "Partnerfunction"
 app_component: SD-BF-PD-2CL
 software_component: SAPSCORE
 release_state: released

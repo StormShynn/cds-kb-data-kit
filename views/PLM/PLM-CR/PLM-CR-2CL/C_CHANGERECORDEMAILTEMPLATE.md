@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECORDEMAILTEMPLATE
-description: Change RecordEMAILTEMPLATE
+description: "Change RecordEMAILTEMPLATE"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

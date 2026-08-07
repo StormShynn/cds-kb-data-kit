@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERBOMLINKDEX_2
-description: Sales OrderBOMLINKDEX 2
+description: "Sales OrderBOMLINKDEX 2"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

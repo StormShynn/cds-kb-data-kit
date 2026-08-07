@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTITMCNDNVALDTYTP_2
-description: Schedgagrmtitmcndnvaldtytp 2
+description: "Schedgagrmtitmcndnvaldtytp 2"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

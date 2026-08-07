@@ -1,6 +1,6 @@
 ---
 name: I_PADEWAROUTESH2PCARRIERMATL
-description: Padewaroutesh 2PCARRIERMATL
+description: "Padewaroutesh 2PCARRIERMATL"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

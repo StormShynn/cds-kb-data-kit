@@ -1,13 +1,13 @@
 ---
 name: I_CITSTATISTICALKEYVALUE
-description: CIT Statistical Key Value
+description: "CIT Statistical Key Value"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITSTATISTICALKEYVALUE')/$value
-semantic_en: CIT Statistical Key Value
+semantic_en: "CIT Statistical Key Value"
 tags:
   - FI
   - component:FI-LOC-CIT

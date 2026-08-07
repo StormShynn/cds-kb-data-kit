@@ -1,13 +1,13 @@
 ---
 name: I_STOREPICKUPORDER
-description: Store Pickup Order
+description: "Store Pickup Order"
 app_component: LO-RFM-STO-FIO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOREPICKUPORDER')/$value
-semantic_en: Store Pickup Order
+semantic_en: "Store Pickup Order"
 tags:
   - LO
   - bo:purchaseorder

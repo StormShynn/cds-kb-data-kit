@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFINSRVCSPRODGRPTEXTTP
-description: Cnsldtnfinsrvcsprodgrptexttp
+description: "Cnsldtnfinsrvcsprodgrptexttp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

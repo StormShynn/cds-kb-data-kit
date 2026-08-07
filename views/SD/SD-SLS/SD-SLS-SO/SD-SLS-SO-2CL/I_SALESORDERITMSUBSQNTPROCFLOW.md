@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERITMSUBSQNTPROCFLOW
-description: Sales OrderITMSUBSQNTPROCFLOW
+description: "Sales OrderITMSUBSQNTPROCFLOW"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

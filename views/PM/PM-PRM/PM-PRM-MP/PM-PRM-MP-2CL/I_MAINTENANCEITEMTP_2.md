@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEITEMTP_2
-description: Maintenanceitemtp 2
+description: "Maintenanceitemtp 2"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

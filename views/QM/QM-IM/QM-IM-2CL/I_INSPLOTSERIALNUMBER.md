@@ -1,6 +1,6 @@
 ---
 name: I_INSPLOTSERIALNUMBER
-description: INSPLOTSerial Number
+description: "INSPLOTSerial Number"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

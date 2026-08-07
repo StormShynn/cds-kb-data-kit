@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERPOOLEDCAPALLOCTP
-description: Work CenterPOOLEDCAPALLOCTP
+description: "Work CenterPOOLEDCAPALLOCTP"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

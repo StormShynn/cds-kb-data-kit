@@ -1,6 +1,6 @@
 ---
 name: D_SUPLRINVCCHANGEP
-description: D Suplrinvcchangep
+description: "D Suplrinvcchangep"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

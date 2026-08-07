@@ -1,6 +1,6 @@
 ---
 name: I_PAINDETMATLSHIPTOPARTYUSAGE
-description: Paindetmatlshiptopartyusage
+description: "Paindetmatlshiptopartyusage"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

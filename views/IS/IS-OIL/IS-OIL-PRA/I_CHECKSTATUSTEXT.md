@@ -1,13 +1,13 @@
 ---
 name: I_CHECKSTATUSTEXT
-description: Check Status Name - Text
+description: "Check Status Name - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHECKSTATUSTEXT')/$value
-semantic_en: Check Status Name - Text
+semantic_en: "Check Status Name - Text"
 tags:
   - IS
   - component:IS-OIL-PRA

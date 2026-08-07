@@ -1,6 +1,6 @@
 ---
 name: D_PRODNORDOPDISPATCHORDEROPP
-description: D Prodnordopdispatchorderopp
+description: "D Prodnordopdispatchorderopp"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

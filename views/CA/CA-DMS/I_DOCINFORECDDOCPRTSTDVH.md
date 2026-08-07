@@ -1,6 +1,6 @@
 ---
 name: I_DOCINFORECDDOCPRTSTDVH
-description: Docinforecddocprtstdvh
+description: "Docinforecddocprtstdvh"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

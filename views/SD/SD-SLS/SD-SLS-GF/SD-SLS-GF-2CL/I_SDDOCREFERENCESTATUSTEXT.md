@@ -1,6 +1,6 @@
 ---
 name: I_SDDOCREFERENCESTATUSTEXT
-description: Sddocreferencestatustext
+description: "Sddocreferencestatustext"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

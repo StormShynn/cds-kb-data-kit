@@ -1,6 +1,6 @@
 ---
 name: I_ENTERPRISEPROJECTROLE
-description: Enterpriseprojectrole
+description: "Enterpriseprojectrole"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

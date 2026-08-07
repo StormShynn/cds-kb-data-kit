@@ -1,13 +1,13 @@
 ---
 name: I_PRAROYTYTXGLOGASDSPOSTYPE
-description: Roy 2 0 TX GLO Agency Gas Disposition Type
+description: "Roy 2 0 TX GLO Agency Gas Disposition Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAROYTYTXGLOGASDSPOSTYPE')/$value
-semantic_en: Roy 2 0 TX GLO Agency Gas Disposition Type
+semantic_en: "Roy 2 0 TX GLO Agency Gas Disposition Type"
 tags:
   - IS
   - bo:purchaseorder

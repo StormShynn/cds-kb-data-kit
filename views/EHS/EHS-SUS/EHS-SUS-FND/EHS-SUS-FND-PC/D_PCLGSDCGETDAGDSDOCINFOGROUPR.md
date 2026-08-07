@@ -1,6 +1,6 @@
 ---
 name: D_PCLGSDCGETDAGDSDOCINFOGROUPR
-description: D Pclgsdcgetdagdsdocinfogroupr
+description: "D Pclgsdcgetdagdsdocinfogroupr"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

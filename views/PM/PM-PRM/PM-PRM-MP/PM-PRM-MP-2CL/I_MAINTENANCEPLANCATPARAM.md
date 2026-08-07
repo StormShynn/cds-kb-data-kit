@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEPLANCATPARAM
-description: Maintenance PlanCATPARAM
+description: "Maintenance PlanCATPARAM"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

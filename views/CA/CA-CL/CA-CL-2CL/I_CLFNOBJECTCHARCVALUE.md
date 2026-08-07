@@ -1,6 +1,6 @@
 ---
 name: I_CLFNOBJECTCHARCVALUE
-description: Clfnobjectcharcvalue
+description: "Clfnobjectcharcvalue"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

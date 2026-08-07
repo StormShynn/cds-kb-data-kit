@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTTERMSTEXT
-description: Paymenttermstext
+description: "Paymenttermstext"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

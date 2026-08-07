@@ -1,6 +1,6 @@
 ---
 name: I_CALENDARMONTHVH
-description: Calendarmonthvh
+description: "Calendarmonthvh"
 app_component: CA-GTF-DF
 software_component: SAP_BASIS
 release_state: released

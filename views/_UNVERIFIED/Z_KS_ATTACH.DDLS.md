@@ -1,20 +1,20 @@
 ---
 name: Z_KS_ATTACH.DDLS
-description: Attachment CDS
+description: "Attachment CDS"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/sivaprasad88860/RAPABAPGIT/blob/e4caf7479a742b39013e5907c5016a2154302df5/src/z_ks_attach.ddls.asddls
-semantic_en: Attachment CDS — CDS view based on zks_attachment.
-semantic_vi: Attachment CDS — CDS view dựa trên zks_attachment.
+semantic_en: "Attachment CDS — CDS view based on zks_attachment."
+semantic_vi: "Attachment CDS — CDS view dựa trên zks_attachment."
 keywords:
-  - attachment
-  - travel
-  - commt
-  - attach
-  - filename
+  - "attachment"
+  - "travel"
+  - "commt"
+  - "attach"
+  - "filename"
 tags:
   - AC
   - component:AC

@@ -1,6 +1,6 @@
 ---
 name: D_ARDSPUTCASECRTECUSTDSPUTITMP
-description: D Ardsputcasecrtecustdsputitmp
+description: "D Ardsputcasecrtecustdsputitmp"
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_STOCKTYPETEXT_2
-description: Stocktypetext 2
+description: "Stocktypetext 2"
 app_component: SD-BF-MD-2CL
 software_component: SAPSCORE
 release_state: released

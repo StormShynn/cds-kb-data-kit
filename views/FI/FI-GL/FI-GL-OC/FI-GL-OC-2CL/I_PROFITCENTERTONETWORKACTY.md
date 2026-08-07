@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTONETWORKACTY
-description: Profit CenterTONETWORKACTY
+description: "Profit CenterTONETWORKACTY"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

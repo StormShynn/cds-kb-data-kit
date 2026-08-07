@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECCOUNTRYGEOPOINT
-description: Country Geo Point
+description: "Country Geo Point"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCOUNTRYGEOPOINT')/$value
-semantic_en: Country Geo Point
+semantic_en: "Country Geo Point"
 tags:
   - PSM
   - bo:purchaseorder

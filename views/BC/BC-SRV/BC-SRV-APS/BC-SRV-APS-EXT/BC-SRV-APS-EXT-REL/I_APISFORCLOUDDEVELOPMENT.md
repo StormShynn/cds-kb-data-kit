@@ -1,6 +1,6 @@
 ---
 name: I_APISFORCLOUDDEVELOPMENT
-description: Apisforclouddevelopment
+description: "Apisforclouddevelopment"
 app_component: BC-SRV-APS-EXT-REL
 software_component: SAP_BASIS
 release_state: released

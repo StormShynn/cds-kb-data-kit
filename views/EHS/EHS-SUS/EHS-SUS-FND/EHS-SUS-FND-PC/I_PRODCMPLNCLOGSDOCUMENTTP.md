@@ -1,6 +1,6 @@
 ---
 name: I_PRODCMPLNCLOGSDOCUMENTTP
-description: Prodcmplnclogsdocumenttp
+description: "Prodcmplnclogsdocumenttp"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

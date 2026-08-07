@@ -1,6 +1,6 @@
 ---
 name: I_FINANCIALSTATEMENTVERSIONT
-description: Financialstatementversiont
+description: "Financialstatementversiont"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DEBITMEMOREQUESTTYPETEXT
-description: Debitmemorequesttypetext
+description: "Debitmemorequesttypetext"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

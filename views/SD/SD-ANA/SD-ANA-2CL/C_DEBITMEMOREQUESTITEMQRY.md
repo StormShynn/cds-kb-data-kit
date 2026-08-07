@@ -1,26 +1,26 @@
 ---
 name: C_DEBITMEMOREQUESTITEMQRY
-description: This CDS view provides the prerequisites for answering questions about debit memo request items. Example business questions are: What is the sold-to party of a given debit memo request? What is the order reason for a given debit memo request? What is the overall processing status of a given debit memo request? What is the total net value of the items in my debit memo requests?
+description: "This CDS view provides the prerequisites for answering questions about debit memo request items. Example business questions are: What is the sold-to party of a given debit memo request? What is the order reason for a given debit memo request? What is the overall processing status of a given debit memo request? What is the total net value of the items in my debit memo requests?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_DEBITMEMOREQUESTITEMQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering questions about debit memo request items. Example business questions are: What is the sold-to party of a given debit memo request? What is the order reason for a given debit memo request? What is the overall processing status of a given debit memo request? What is the total net value of the items in my debit memo requests?
-semantic_vi: Debit Memo Request Item - Query — CDS view tiêu dùng dựa trên I_DebitMemoRequestItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering questions about debit memo request items. Example business questions are: What is the sold-to party of a given debit memo request? What is the order reason for a given debit memo request? What is the overall processing status of a given debit memo request? What is the total net value of the items in my debit memo requests?"
+semantic_vi: "Debit Memo Request Item - Query — CDS view tiêu dùng dựa trên I_DebitMemoRequestItemCube."
 keywords:
-  - Debit Memo Request Item - Query
-  - debit
-  - memo
-  - request
-  - item
-  - query
-  - type
-  - category
-  - last
-  - change
-  - date
+  - "Debit Memo Request Item - Query"
+  - "debit"
+  - "memo"
+  - "request"
+  - "item"
+  - "query"
+  - "type"
+  - "category"
+  - "last"
+  - "change"
+  - "date"
 tags:
   - SD
   - bo:billingdocument

@@ -1,27 +1,27 @@
 ---
 name: C_MAINTENANCEPLANSCHEDULEDEX
-description: This CDS view is designed to extract and provide detailed scheduling data related to maintenance plans. It serves as a data source for analytics and reporting purposes, enabling users to access and analyze maintenance plan schedules, including their status, dates, and associated tasks. This CDS view provides the data to answer the following business questions: What are the details of the maintenance plans, including call numbers and packages? What is the scheduling status and type for each maintenance plan? When are the next planned dates for maintenance calls, and what are the actual call and completion dates? Are there any outstanding maintenance calls, and have they been invoked on the planned dates? What is the completion status of maintenance tasks, including cycle set sequences and counter readings? Who released the maintenance plan, and what are the concatenated due packages? What are the manual call dates and last planned dates for maintenance calls? How can the maintenance plan data be extracted for further analysis and reporting? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to extract and provide detailed scheduling data related to maintenance plans. It serves as a data source for analytics and reporting purposes, enabling users to access and analyze maintenance plan schedules, including their status, dates, and associated tasks. This CDS view provides the data to answer the following business questions: What are the details of the maintenance plans, including call numbers and packages? What is the scheduling status and type for each maintenance plan? When are the next planned dates for maintenance calls, and what are the actual call and completion dates? Are there any outstanding maintenance calls, and have they been invoked on the planned dates? What is the completion status of maintenance tasks, including cycle set sequences and counter readings? Who released the maintenance plan, and what are the concatenated due packages? What are the manual call dates and last planned dates for maintenance calls? How can the maintenance plan data be extracted for further analysis and reporting? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEPLANSCHEDULEDEX')/$value
-semantic_en: This CDS view is designed to extract and provide detailed scheduling data related to maintenance plans. It serves as a data source for analytics and reporting purposes, enabling users to access and analyze maintenance plan schedules, including their status, dates, and associated tasks. This CDS view provides the data to answer the following business questions: What are the details of the maintenance plans, including call numbers and packages? What is the scheduling status and type for each maintenance plan? When are the next planned dates for maintenance calls, and what are the actual call and completion dates? Are there any outstanding maintenance calls, and have they been invoked on the planned dates? What is the completion status of maintenance tasks, including cycle set sequences and counter readings? Who released the maintenance plan, and what are the concatenated due packages? What are the manual call dates and last planned dates for maintenance calls? How can the maintenance plan data be extracted for further analysis and reporting? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: MaintenancePlan Schedule Data Extractor — CDS view tiêu dùng dựa trên I_MaintenancePlanSchedule.
+semantic_en: "This CDS view is designed to extract and provide detailed scheduling data related to maintenance plans. It serves as a data source for analytics and reporting purposes, enabling users to access and analyze maintenance plan schedules, including their status, dates, and associated tasks. This CDS view provides the data to answer the following business questions: What are the details of the maintenance plans, including call numbers and packages? What is the scheduling status and type for each maintenance plan? When are the next planned dates for maintenance calls, and what are the actual call and completion dates? Are there any outstanding maintenance calls, and have they been invoked on the planned dates? What is the completion status of maintenance tasks, including cycle set sequences and counter readings? Who released the maintenance plan, and what are the concatenated due packages? What are the manual call dates and last planned dates for maintenance calls? How can the maintenance plan data be extracted for further analysis and reporting? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "MaintenancePlan Schedule Data Extractor — CDS view tiêu dùng dựa trên I_MaintenancePlanSchedule."
 keywords:
-  - maintenanceplan
-  - schedule
-  - data
-  - extractor
-  - maintenance
-  - plan
-  - call
-  - number
-  - package
-  - scheduling
-  - type
-  - status
+  - "maintenanceplan"
+  - "schedule"
+  - "data"
+  - "extractor"
+  - "maintenance"
+  - "plan"
+  - "call"
+  - "number"
+  - "package"
+  - "scheduling"
+  - "type"
+  - "status"
 tags:
   - PM
   - bo:companycode

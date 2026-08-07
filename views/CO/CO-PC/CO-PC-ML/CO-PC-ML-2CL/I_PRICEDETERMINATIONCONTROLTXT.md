@@ -1,6 +1,6 @@
 ---
 name: I_PRICEDETERMINATIONCONTROLTXT
-description: Pricedeterminationcontroltxt
+description: "Pricedeterminationcontroltxt"
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SLSPRCGCNDNTYPEINEXCLSNGROUP
-description: Slsprcgcndntypeinexclsngroup
+description: "Slsprcgcndntypeinexclsngroup"
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released

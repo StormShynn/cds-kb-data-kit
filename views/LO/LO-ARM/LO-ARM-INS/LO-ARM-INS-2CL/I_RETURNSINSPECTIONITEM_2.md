@@ -1,6 +1,6 @@
 ---
 name: I_RETURNSINSPECTIONITEM_2
-description: Returnsinspectionitem 2
+description: "Returnsinspectionitem 2"
 app_component: LO-ARM-INS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFOBJDPNDCYTEXTTP
-description: Varcnfobjdpndcytexttp
+description: "Varcnfobjdpndcytexttp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

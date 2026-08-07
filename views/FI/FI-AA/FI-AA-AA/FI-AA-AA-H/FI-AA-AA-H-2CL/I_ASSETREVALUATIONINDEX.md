@@ -1,6 +1,6 @@
 ---
 name: I_ASSETREVALUATIONINDEX
-description: Assetrevaluationindex
+description: "Assetrevaluationindex"
 app_component: FI-AA-AA-H-2CL
 software_component: SAPSCORE
 release_state: released

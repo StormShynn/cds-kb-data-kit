@@ -1,6 +1,6 @@
 ---
 name: I_EQUIPMATLSRLNMBRWARRANTYTP
-description: Equipmatlsrlnmbrwarrantytp
+description: "Equipmatlsrlnmbrwarrantytp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

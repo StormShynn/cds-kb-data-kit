@@ -1,6 +1,6 @@
 ---
 name: I_QLTYNOTIFICATIONCAUSE
-description: Qltynotificationcause
+description: "Qltynotificationcause"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released

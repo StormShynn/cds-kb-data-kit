@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNRPTGITEMHIERARCHYT_2
-description: Cnsldtnrptgitemhierarchyt 2
+description: "Cnsldtnrptgitemhierarchyt 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_SLSSCHEDGAGREEMENTCHANGED
-description: D Slsschedgagreementchanged
+description: "D Slsschedgagreementchanged"
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

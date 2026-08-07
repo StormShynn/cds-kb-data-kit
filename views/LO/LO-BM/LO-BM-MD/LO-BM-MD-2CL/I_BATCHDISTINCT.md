@@ -1,6 +1,6 @@
 ---
 name: I_BATCHDISTINCT
-description: Batchdistinct
+description: "Batchdistinct"
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

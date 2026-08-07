@@ -1,27 +1,27 @@
 ---
 name: I_ARUNANLYTSTOTSUPCUBE
-description: Total Supply of all Doc Types - Cube
+description: "Total Supply of all Doc Types - Cube"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSTOTSUPCUBE')/$value
-semantic_en: Total Supply of all Doc Types - Cube
-semantic_vi: Total Supply of all Doc Types - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocTotSupCube.
+semantic_en: "Total Supply of all Doc Types - Cube"
+semantic_vi: "Total Supply of all Doc Types - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocTotSupCube."
 keywords:
-  - total
-  - supply
-  - all
-  - doc
-  - types
-  - cube
-  - product
-  - plant
-  - batch
-  - storage
-  - location
-  - number
+  - "total"
+  - "supply"
+  - "all"
+  - "doc"
+  - "types"
+  - "cube"
+  - "product"
+  - "plant"
+  - "batch"
+  - "storage"
+  - "location"
+  - "number"
 tags:
   - LO
   - component:LO-RFM-ARN

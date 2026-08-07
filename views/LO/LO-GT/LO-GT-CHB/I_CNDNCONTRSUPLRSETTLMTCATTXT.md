@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRSUPLRSETTLMTCATTXT
-description: This CDS view exposes fixed values of the field condition contract supplier settlement category as follows: " " As Accounts Payable 1 As Accounts Receivable 2 No Automatic Settlement 3 Only Accruals Reversal 4 Proforma as Accounts Payable 5 Proforma as Accounts Receivable
+description: "This CDS view exposes fixed values of the field condition contract supplier settlement category as follows: \" \" As Accounts Payable 1 As Accounts Receivable 2 No Automatic Settlement 3 Only Accruals Reversal 4 Proforma as Accounts Payable 5 Proforma as Accounts Receivable"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSUPLRSETTLMTCATTXT')/$value
-semantic_en: This CDS view exposes fixed values of the field condition contract supplier settlement category as follows: " " As Accounts Payable 1 As Accounts Receivable 2 No Automatic Settlement 3 Only Accruals Reversal 4 Proforma as Accounts Payable 5 Proforma as Accounts Receivable
+semantic_en: "This CDS view exposes fixed values of the field condition contract supplier settlement category as follows: \" \" As Accounts Payable 1 As Accounts Receivable 2 No Automatic Settlement 3 Only Accruals Reversal 4 Proforma as Accounts Payable 5 Proforma as Accounts Receivable"
 tags:
   - LO
   - account

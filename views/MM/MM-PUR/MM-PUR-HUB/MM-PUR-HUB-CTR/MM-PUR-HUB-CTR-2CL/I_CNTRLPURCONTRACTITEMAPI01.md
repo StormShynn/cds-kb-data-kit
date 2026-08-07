@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLPURCONTRACTITEMAPI01
-description: Cntrlpurcontractitemapi 01
+description: "Cntrlpurcontractitemapi 01"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

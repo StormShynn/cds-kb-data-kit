@@ -1,25 +1,25 @@
 ---
 name: ZR_TA_01_CXN.DDLS
-description: ###GENERATED Core Data Service Entity
+description: "###GENERATED Core Data Service Entity"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/JAMADORCLOUD/ABAP_CLOUD/blob/7f3d51da3348e8e425433f2f203835b3862f6f62/src/zr_ta_01_cxn.ddls.asddls
-semantic_en: ###GENERATED Core Data Service Entity — CDS view based on zta_01_cxn.
-semantic_vi: ###GENERATED Core Data Service Entity — CDS view dựa trên zta_01_cxn.
+semantic_en: "###GENERATED Core Data Service Entity — CDS view based on zta_01_cxn."
+semantic_vi: "###GENERATED Core Data Service Entity — CDS view dựa trên zta_01_cxn."
 keywords:
-  - ###generated
-  - core
-  - data
-  - service
-  - entity
-  - uuid
-  - carrid
-  - connid
-  - airport
-  - city
+  - "###generated"
+  - "core"
+  - "data"
+  - "service"
+  - "entity"
+  - "uuid"
+  - "carrid"
+  - "connid"
+  - "airport"
+  - "city"
 tags:
   - CO
   - component:CO

@@ -1,6 +1,6 @@
 ---
 name: I_ACCOUNTINGDOCUMENTODN
-description: Accounting DocumentUMENTODN
+description: "Accounting DocumentUMENTODN"
 app_component: FI-LOC-GEN
 software_component: SAPSCORE
 release_state: released

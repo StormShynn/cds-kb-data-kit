@@ -1,6 +1,6 @@
 ---
 name: D_ARDISPUTECASECREATENOTEP
-description: D Ardisputecasecreatenotep
+description: "D Ardisputecasecreatenotep"
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

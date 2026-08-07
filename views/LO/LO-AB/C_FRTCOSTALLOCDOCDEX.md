@@ -1,26 +1,26 @@
 ---
 name: C_FRTCOSTALLOCDOCDEX
-description: This CDS view is used for data extraction to SAP BW/4HANA. It supports the transfer of settlement data to SAP BW/4HANA for freight cost allocation documents. All relevant information for freight cost allocation documents is provided in this extraction view, allowing you to build the desired analytical reports. This CDS view provides the data to answer the following business question: Which freight cost allocation documents are relevant for data extraction to SAP BW/4HANA? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is used for data extraction to SAP BW/4HANA. It supports the transfer of settlement data to SAP BW/4HANA for freight cost allocation documents. All relevant information for freight cost allocation documents is provided in this extraction view, allowing you to build the desired analytical reports. This CDS view provides the data to answer the following business question: Which freight cost allocation documents are relevant for data extraction to SAP BW/4HANA? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FRTCOSTALLOCDOCDEX')/$value
-semantic_en: This CDS view is used for data extraction to SAP BW/4HANA. It supports the transfer of settlement data to SAP BW/4HANA for freight cost allocation documents. All relevant information for freight cost allocation documents is provided in this extraction view, allowing you to build the desired analytical reports. This CDS view provides the data to answer the following business question: Which freight cost allocation documents are relevant for data extraction to SAP BW/4HANA? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Freight Cost Allocation Doc Extraction — CDS view tiêu dùng dựa trên R_FrtCostAllocDocDEX.
+semantic_en: "This CDS view is used for data extraction to SAP BW/4HANA. It supports the transfer of settlement data to SAP BW/4HANA for freight cost allocation documents. All relevant information for freight cost allocation documents is provided in this extraction view, allowing you to build the desired analytical reports. This CDS view provides the data to answer the following business question: Which freight cost allocation documents are relevant for data extraction to SAP BW/4HANA? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Freight Cost Allocation Doc Extraction — CDS view tiêu dùng dựa trên R_FrtCostAllocDocDEX."
 keywords:
-  - freight
-  - cost
-  - allocation
-  - doc
-  - extraction
-  - document
-  - alloc
-  - item
-  - settlmt
-  - type
-  - process
+  - "freight"
+  - "cost"
+  - "allocation"
+  - "doc"
+  - "extraction"
+  - "document"
+  - "alloc"
+  - "item"
+  - "settlmt"
+  - "type"
+  - "process"
 tags:
   - LO
   - bo:companycode

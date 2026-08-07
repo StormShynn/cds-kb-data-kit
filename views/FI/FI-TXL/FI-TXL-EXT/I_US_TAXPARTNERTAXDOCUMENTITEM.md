@@ -1,6 +1,6 @@
 ---
 name: I_US_TAXPARTNERTAXDOCUMENTITEM
-description: US Taxpartnertaxdocumentitem
+description: "US Taxpartnertaxdocumentitem"
 app_component: FI-TXL-EXT
 software_component: SAPSCORE
 release_state: released

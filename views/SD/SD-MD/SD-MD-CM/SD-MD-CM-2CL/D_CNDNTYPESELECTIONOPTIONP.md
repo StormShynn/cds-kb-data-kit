@@ -1,6 +1,6 @@
 ---
 name: D_CNDNTYPESELECTIONOPTIONP
-description: D Cndntypeselectionoptionp
+description: "D Cndntypeselectionoptionp"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

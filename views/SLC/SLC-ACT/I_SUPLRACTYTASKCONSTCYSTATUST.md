@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRACTYTASKCONSTCYSTATUST
-description: Suplractytaskconstcystatust
+description: "Suplractytaskconstcystatust"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

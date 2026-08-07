@@ -1,13 +1,13 @@
 ---
 name: I_GLACCOUNTLINEITEMSTDVH
-description: General Ledger Account Line Item
+description: "General Ledger Account Line Item"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value
-semantic_en: General Ledger Account Line Item
+semantic_en: "General Ledger Account Line Item"
 tags:
   - FI
   - account

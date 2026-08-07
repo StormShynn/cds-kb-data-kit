@@ -1,6 +1,6 @@
 ---
 name: I_CRDTMBUSINESSPARTNERTP
-description: CRDTMBusiness PartnerTP
+description: "CRDTMBusiness PartnerTP"
 app_component: FIN-FIO-CCD-CR-2CL
 software_component: SAPSCORE
 release_state: released

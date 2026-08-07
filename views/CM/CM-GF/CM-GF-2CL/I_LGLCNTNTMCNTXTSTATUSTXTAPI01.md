@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMCNTXTSTATUSTXTAPI01
-description: Lglcntntmcntxtstatustxtapi 01
+description: "Lglcntntmcntxtstatustxtapi 01"
 app_component: CM-GF-2CL
 software_component: SAPSCORE
 release_state: released

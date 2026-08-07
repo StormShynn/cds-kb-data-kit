@@ -1,6 +1,6 @@
 ---
 name: I_COSTBREAKDOWNSTRUCTURETEXT
-description: Costbreakdownstructuretext
+description: "Costbreakdownstructuretext"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released

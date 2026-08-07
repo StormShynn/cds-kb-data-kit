@@ -1,6 +1,6 @@
 ---
 name: I_BOMGROUPDEX
-description: Bomgroupdex
+description: "Bomgroupdex"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

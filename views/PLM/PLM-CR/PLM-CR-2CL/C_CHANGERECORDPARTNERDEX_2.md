@@ -1,13 +1,13 @@
 ---
 name: C_CHANGERECORDPARTNERDEX_2
-description: Change Record Partner or Person Resp
+description: "Change Record Partner or Person Resp"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDPARTNERDEX_2')/$value
-semantic_en: Change Record Partner or Person Resp
+semantic_en: "Change Record Partner or Person Resp"
 tags:
   - PLM
   - bo:salesorder

@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTDOCLISTSTDVH
-description: Settlement Document List
+description: "Settlement Document List"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCLISTSTDVH')/$value
-semantic_en: Settlement Document List
+semantic_en: "Settlement Document List"
 tags:
   - LO
   - component:LO-AB

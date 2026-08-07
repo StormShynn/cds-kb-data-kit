@@ -1,13 +1,13 @@
 ---
 name: I_BLOCKCATEGORYTEXT
-description: Block Category - Text
+description: "Block Category - Text"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BLOCKCATEGORYTEXT')/$value
-semantic_en: Block Category - Text
+semantic_en: "Block Category - Text"
 tags:
   - TM
   - component:TM-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPMOVEMENTTYPE
-description: Transpmovementtype
+description: "Transpmovementtype"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

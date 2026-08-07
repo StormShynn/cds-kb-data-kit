@@ -1,13 +1,13 @@
 ---
 name: I_CITSETTLEMENTTEXT
-description: CIT Settlement Code - Text
+description: "CIT Settlement Code - Text"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITSETTLEMENTTEXT')/$value
-semantic_en: CIT Settlement Code - Text
+semantic_en: "CIT Settlement Code - Text"
 tags:
   - FI
   - component:FI-LOC-CIT

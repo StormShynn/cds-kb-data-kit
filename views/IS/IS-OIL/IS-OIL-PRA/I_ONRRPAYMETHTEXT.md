@@ -1,13 +1,13 @@
 ---
 name: I_ONRRPAYMETHTEXT
-description: Office of Natural Resources Revenue Payment Method - Text
+description: "Office of Natural Resources Revenue Payment Method - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ONRRPAYMETHTEXT')/$value
-semantic_en: Office of Natural Resources Revenue Payment Method - Text
+semantic_en: "Office of Natural Resources Revenue Payment Method - Text"
 tags:
   - IS
   - bo:companycode

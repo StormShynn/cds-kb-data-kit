@@ -1,13 +1,13 @@
 ---
 name: I_BUSVOLDOCCATTEXT
-description: Business Volume Document Category - Text
+description: "Business Volume Document Category - Text"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSVOLDOCCATTEXT')/$value
-semantic_en: Business Volume Document Category - Text
+semantic_en: "Business Volume Document Category - Text"
 tags:
   - LO
   - component:LO-AB

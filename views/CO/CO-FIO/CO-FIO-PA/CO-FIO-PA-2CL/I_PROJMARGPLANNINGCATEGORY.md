@@ -1,6 +1,6 @@
 ---
 name: I_PROJMARGPLANNINGCATEGORY
-description: Projmargplanningcategory
+description: "Projmargplanningcategory"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released

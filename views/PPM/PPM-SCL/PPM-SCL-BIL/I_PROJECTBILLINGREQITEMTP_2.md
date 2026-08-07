@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTBILLINGREQITEMTP_2
-description: Projectbillingreqitemtp 2
+description: "Projectbillingreqitemtp 2"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

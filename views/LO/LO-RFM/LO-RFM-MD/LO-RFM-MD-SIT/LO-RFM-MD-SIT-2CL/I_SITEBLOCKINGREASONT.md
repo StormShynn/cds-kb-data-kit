@@ -1,13 +1,13 @@
 ---
 name: I_SITEBLOCKINGREASONT
-description: Site Blocking Reason - Text
+description: "Site Blocking Reason - Text"
 app_component: LO-RFM-MD-SIT-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SITEBLOCKINGREASONT')/$value
-semantic_en: Site Blocking Reason - Text
+semantic_en: "Site Blocking Reason - Text"
 tags:
   - LO
   - bo:plant

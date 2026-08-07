@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTFLOWTYPETEXT
-description: GL AccountFLOWTYPETEXT
+description: "GL AccountFLOWTYPETEXT"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

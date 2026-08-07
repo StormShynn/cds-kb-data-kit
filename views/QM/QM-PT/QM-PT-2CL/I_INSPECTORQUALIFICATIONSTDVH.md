@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTORQUALIFICATIONSTDVH
-description: Inspectorqualificationstdvh
+description: "Inspectorqualificationstdvh"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

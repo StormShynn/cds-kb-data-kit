@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERTAXCLASSIFICATION
-description: Customertaxclassification
+description: "Customertaxclassification"
 app_component: SD-BF-TX-2CL
 software_component: SAPSCORE
 release_state: released

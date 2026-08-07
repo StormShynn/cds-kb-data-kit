@@ -1,28 +1,28 @@
 ---
 name: C_GLACCOUNTFLOW
-description: G/L Account Balance with Flow-Measure
+description: "G/L Account Balance with Flow-Measure"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTFLOW')/$value
-semantic_en: G/L Account Balance with Flow-Measure
-semantic_vi: G/L Account Balance with Flow-Measure — CDS view tiêu dùng dựa trên I_GLAccountBalance.
+semantic_en: "G/L Account Balance with Flow-Measure"
+semantic_vi: "G/L Account Balance with Flow-Measure — CDS view tiêu dùng dựa trên I_GLAccountBalance."
 keywords:
-  - G/L Account Balance with Flow-Measure
-  - g/l
-  - account
-  - balance
-  - with
-  - flow
-  - measure
-  - source
-  - ledger
-  - company
-  - code
-  - fiscal
-  - year
+  - "G/L Account Balance with Flow-Measure"
+  - "g/l"
+  - "account"
+  - "balance"
+  - "with"
+  - "flow"
+  - "measure"
+  - "source"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
 tags:
   - FI
   - account

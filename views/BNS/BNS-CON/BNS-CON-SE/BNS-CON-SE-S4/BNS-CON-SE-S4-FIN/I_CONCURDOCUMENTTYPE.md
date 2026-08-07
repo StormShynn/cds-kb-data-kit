@@ -1,13 +1,13 @@
 ---
 name: I_CONCURDOCUMENTTYPE
-description: Fix values for Concur Document Type
+description: "Fix values for Concur Document Type"
 app_component: BNS-CON-SE-S4-FIN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONCURDOCUMENTTYPE')/$value
-semantic_en: Fix values for Concur Document Type
+semantic_en: "Fix values for Concur Document Type"
 tags:
   - BNS
   - BNS-CON

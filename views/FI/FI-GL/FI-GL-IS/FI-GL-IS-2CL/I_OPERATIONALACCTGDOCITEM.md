@@ -1,6 +1,6 @@
 ---
 name: I_OPERATIONALACCTGDOCITEM
-description: Operationalacctgdocitem
+description: "Operationalacctgdocitem"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

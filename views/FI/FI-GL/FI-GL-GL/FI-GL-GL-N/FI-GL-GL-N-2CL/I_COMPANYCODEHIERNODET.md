@@ -1,6 +1,6 @@
 ---
 name: I_COMPANYCODEHIERNODET
-description: Company CodeHIERNODET
+description: "Company CodeHIERNODET"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

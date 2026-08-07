@@ -1,6 +1,6 @@
 ---
 name: I_CONTROLRECIPEDESTINATION
-description: Controlrecipedestination
+description: "Controlrecipedestination"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

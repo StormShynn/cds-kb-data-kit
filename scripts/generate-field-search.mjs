@@ -7,20 +7,31 @@
 //
 // Reads the two reverse indices enrich_index.mjs already builds
 // (index/field-index.json, index/table-index.json) plus index/view-paths.json
-// for "open this view's file" links, and embeds a trimmed copy of each
-// directly in the page (no fetch() at runtime) so it works when opened via
-// double-click / file:// — Chrome/Edge block fetch() of local files from a
-// file:// page, so anything other than embedding would silently not load
+// for "open this view" links, and embeds a trimmed copy of each directly in
+// the page (no fetch() at runtime) so the SEARCH itself works when opened
+// via double-click / file:// — Chrome/Edge block fetch() of local files from
+// a file:// page, so anything other than embedding would silently not load
 // for exactly the audience this page is for. Metadata (isKey/relation/alias)
 // stays inline per entry; app component is deduped into one place per VIEW
 // NAME instead of repeated per (field, view) pair, which is most of why the
 // raw index files are 20MB+ but the embedded version here is a few MB.
+//
+// "Open this view" links point at the file's github.com blob view (rendered
+// markdown — tables, headers, the DDL code fence — for free, no local
+// renderer to build/maintain) rather than the local file:// path. That does
+// mean this one action needs internet + the repo being reachable (it's
+// public, so no login required) — the alternative, pre-rendering an HTML
+// twin of all ~10k view files for a fully offline open action, was weighed
+// and explicitly not chosen (roughly doubles this repo's size for upkeep
+// every future edit, for a page that's already reachable in one click).
 //
 // Usage:
 //   node scripts/generate-field-search.mjs [dataDir] [outputFile]
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
+
+const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-data-kit/blob/main/';
 
 const args = process.argv.slice(2);
 const DATA_DIR = args[0] && !args[0].startsWith('--') ? args[0] : '.';
@@ -142,7 +153,7 @@ function renderHtml(embeddedJson, stats) {
   <p class="subtitle">Paste an exact field name or table/CDS-view name found in ABAP code (SE11, DDL, a search on the SAP Business Accelerator Hub) to instantly find every local CDS view that uses it — no need to search the Hub website by hand.</p>
 
   <input id="q" type="text" placeholder="e.g. MATNR, CompanyCode, BKPF, I_JournalEntryItem…" autofocus autocomplete="off" spellcheck="false" />
-  <p class="hint">Exact matches shown first; substring matches below. Case-insensitive.</p>
+  <p class="hint">Exact matches shown first; substring matches below. Case-insensitive. View names open on github.com (rendered markdown) — needs internet.</p>
 
   <div id="results"></div>
 
@@ -160,10 +171,16 @@ function renderHtml(embeddedJson, stats) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
 
+  // Points at the file's github.com blob view — free rendered markdown
+  // (tables, headers, the DDL code fence) instead of building/maintaining a
+  // local renderer; the repo is public, so no login is required, but this
+  // one action does need internet (the search itself stays offline).
+  const GITHUB_BLOB_BASE = ${JSON.stringify(GITHUB_BLOB_BASE)};
+
   function viewLink(name) {
     const p = DATA.P[name];
     const label = escapeHtml(name);
-    return p ? '<a href="' + escapeHtml(p) + '" target="_blank" rel="noopener">' + label + '</a>' : '<span style="font-family:ui-monospace,monospace;font-weight:600">' + label + '</span>';
+    return p ? '<a href="' + escapeHtml(GITHUB_BLOB_BASE + p) + '" target="_blank" rel="noopener">' + label + '</a>' : '<span style="font-family:ui-monospace,monospace;font-weight:600">' + label + '</span>';
   }
 
   function fieldRow([view, isKey]) {

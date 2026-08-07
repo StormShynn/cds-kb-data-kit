@@ -1,6 +1,6 @@
 ---
 name: I_GHGCATEGORYVH
-description: Ghgcategoryvh
+description: "Ghgcategoryvh"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

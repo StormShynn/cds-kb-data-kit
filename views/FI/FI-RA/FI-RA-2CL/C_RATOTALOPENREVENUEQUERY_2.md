@@ -1,26 +1,26 @@
 ---
 name: C_RATOTALOPENREVENUEQUERY_2
-description: This CDS views disclose the aggregate amount of the transaction price allocated to the performance obligations that are unsatisfied (or partially unsatisfied) as of the end of the reporting period. This CDS view provides the prerequisites for answering the following business questions: What is the total open revenue at the end of the reporting period in the document currency? What is the total open revenue of time-based performance obligations at the end of the reporting period in the document currency? What is the total open revenue of event-based performance obligations at the end of the reporting period in the document currency? What is the total open revenue in the display currency? What is the total open revenue for each account assignment, for example, by profit centre? What is the total open revenue for each performance obligation type?
+description: "This CDS views disclose the aggregate amount of the transaction price allocated to the performance obligations that are unsatisfied (or partially unsatisfied) as of the end of the reporting period. This CDS view provides the prerequisites for answering the following business questions: What is the total open revenue at the end of the reporting period in the document currency? What is the total open revenue of time-based performance obligations at the end of the reporting period in the document currency? What is the total open revenue of event-based performance obligations at the end of the reporting period in the document currency? What is the total open revenue in the display currency? What is the total open revenue for each account assignment, for example, by profit centre? What is the total open revenue for each performance obligation type?"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RATOTALOPENREVENUEQUERY_2')/$value
-semantic_en: This CDS views disclose the aggregate amount of the transaction price allocated to the performance obligations that are unsatisfied (or partially unsatisfied) as of the end of the reporting period. This CDS view provides the prerequisites for answering the following business questions: What is the total open revenue at the end of the reporting period in the document currency? What is the total open revenue of time-based performance obligations at the end of the reporting period in the document currency? What is the total open revenue of event-based performance obligations at the end of the reporting period in the document currency? What is the total open revenue in the display currency? What is the total open revenue for each account assignment, for example, by profit centre? What is the total open revenue for each performance obligation type?
-semantic_vi: Remaining Performance Obligations — CDS view tiêu dùng dựa trên Remaining Performance Obligations.
+semantic_en: "This CDS views disclose the aggregate amount of the transaction price allocated to the performance obligations that are unsatisfied (or partially unsatisfied) as of the end of the reporting period. This CDS view provides the prerequisites for answering the following business questions: What is the total open revenue at the end of the reporting period in the document currency? What is the total open revenue of time-based performance obligations at the end of the reporting period in the document currency? What is the total open revenue of event-based performance obligations at the end of the reporting period in the document currency? What is the total open revenue in the display currency? What is the total open revenue for each account assignment, for example, by profit centre? What is the total open revenue for each performance obligation type?"
+semantic_vi: "Remaining Performance Obligations — CDS view tiêu dùng dựa trên Remaining Performance Obligations."
 keywords:
-  - Remaining Performance Obligations - Total Open Revenue
-  - remaining
-  - performance
-  - obligations
-  - company
-  - code
-  - accounting
-  - principle
-  - obligation
-  - type
-  - class
+  - "Remaining Performance Obligations - Total Open Revenue"
+  - "remaining"
+  - "performance"
+  - "obligations"
+  - "company"
+  - "code"
+  - "accounting"
+  - "principle"
+  - "obligation"
+  - "type"
+  - "class"
 tags:
   - FI
   - account

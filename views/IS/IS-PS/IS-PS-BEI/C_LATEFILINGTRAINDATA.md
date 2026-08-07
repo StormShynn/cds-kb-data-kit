@@ -1,13 +1,13 @@
 ---
 name: C_LATEFILINGTRAINDATA
-description: Risk of Late Filing Training dataset
+description: "Risk of Late Filing Training dataset"
 app_component: IS-PS-BEI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LATEFILINGTRAINDATA')/$value
-semantic_en: Risk of Late Filing Training dataset
+semantic_en: "Risk of Late Filing Training dataset"
 tags:
   - IS
   - bo:companycode

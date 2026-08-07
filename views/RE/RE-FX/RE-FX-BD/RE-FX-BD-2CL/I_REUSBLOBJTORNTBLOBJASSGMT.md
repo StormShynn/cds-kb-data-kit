@@ -1,6 +1,6 @@
 ---
 name: I_REUSBLOBJTORNTBLOBJASSGMT
-description: Reusblobjtorntblobjassgmt
+description: "Reusblobjtorntblobjassgmt"
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MNLACCRSACCRUALSUBOBJECT
-description: Mnlaccrsaccrualsubobject
+description: "Mnlaccrsaccrualsubobject"
 app_component: FI-GL-GL-AAC
 software_component: SAPSCORE
 release_state: released

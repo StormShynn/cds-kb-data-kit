@@ -1,26 +1,26 @@
 ---
 name: C_COSTCOMPONENTASSIGNMENTDEX
-description: Cost Component Assignment for Extraction
+description: "Cost Component Assignment for Extraction"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COSTCOMPONENTASSIGNMENTDEX')/$value
-semantic_en: Cost Component Assignment for Extraction
-semantic_vi: Cost Component Assignment for Extraction — CDS view tiêu dùng dựa trên I_CostComponentAssignment.
+semantic_en: "Cost Component Assignment for Extraction"
+semantic_vi: "Cost Component Assignment for Extraction — CDS view tiêu dùng dựa trên I_CostComponentAssignment."
 keywords:
-  - cost
-  - component
-  - assignment
-  - for
-  - extraction
-  - chart
-  - accounts
-  - structure
-  - element
-  - origin
-  - group
+  - "cost"
+  - "component"
+  - "assignment"
+  - "for"
+  - "extraction"
+  - "chart"
+  - "accounts"
+  - "structure"
+  - "element"
+  - "origin"
+  - "group"
 tags:
   - CO
   - bo:purchaseorder

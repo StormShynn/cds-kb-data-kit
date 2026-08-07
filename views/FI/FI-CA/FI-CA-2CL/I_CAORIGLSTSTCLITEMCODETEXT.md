@@ -1,6 +1,6 @@
 ---
 name: I_CAORIGLSTSTCLITEMCODETEXT
-description: Caoriglststclitemcodetext
+description: "Caoriglststclitemcodetext"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

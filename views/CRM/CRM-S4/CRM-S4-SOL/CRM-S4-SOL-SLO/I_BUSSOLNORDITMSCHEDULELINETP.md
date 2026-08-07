@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDITMSCHEDULELINETP
-description: BUSSOLNORDITMSchedule LineTP
+description: "BUSSOLNORDITMSchedule LineTP"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

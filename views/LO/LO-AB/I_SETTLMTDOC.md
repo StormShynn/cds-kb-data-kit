@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTDOC
-description: Settlmtdoc
+description: "Settlmtdoc"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

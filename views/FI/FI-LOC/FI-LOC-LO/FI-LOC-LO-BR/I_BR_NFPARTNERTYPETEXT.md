@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFPARTNERTYPETEXT
-description: BR Nfpartnertypetext
+description: "BR Nfpartnertypetext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

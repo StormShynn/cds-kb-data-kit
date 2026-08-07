@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTTYPE
-description: Billing DocumentUMENTTYPE
+description: "Billing DocumentUMENTTYPE"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

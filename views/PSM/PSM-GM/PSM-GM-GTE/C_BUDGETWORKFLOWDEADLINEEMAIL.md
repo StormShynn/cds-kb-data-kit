@@ -1,13 +1,13 @@
 ---
 name: C_BUDGETWORKFLOWDEADLINEEMAIL
-description: Budget Document fr Wrkflw DeadlineEmail
+description: "Budget Document fr Wrkflw DeadlineEmail"
 app_component: PSM-GM-GTE
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUDGETWORKFLOWDEADLINEEMAIL')/$value
-semantic_en: Budget Document fr Wrkflw DeadlineEmail
+semantic_en: "Budget Document fr Wrkflw DeadlineEmail"
 tags:
   - PSM
   - budget

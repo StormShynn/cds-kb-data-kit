@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNQUESTIONVH
-description: Cnsldtnquestionvh
+description: "Cnsldtnquestionvh"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

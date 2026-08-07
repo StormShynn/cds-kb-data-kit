@@ -1,6 +1,6 @@
 ---
 name: I_SLCCONSISTENCYSTATUS
-description: Slcconsistencystatus
+description: "Slcconsistencystatus"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

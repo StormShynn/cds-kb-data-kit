@@ -1,21 +1,21 @@
 ---
 name: I_ASSETTRANSACTIONTYPETEXT
-description: This CDS view provides the prerequisites for answering the following business question: How many asset transaction types are defined?
+description: "This CDS view provides the prerequisites for answering the following business question: How many asset transaction types are defined?"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETTRANSACTIONTYPETEXT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: How many asset transaction types are defined?
-semantic_vi: Asset Transaction Type - Text — CDS view giao diện dựa trên tabwt.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: How many asset transaction types are defined?"
+semantic_vi: "Asset Transaction Type - Text — CDS view giao diện dựa trên tabwt."
 keywords:
-  - asset
-  - transaction
-  - type
-  - text
-  - language
-  - name
+  - "asset"
+  - "transaction"
+  - "type"
+  - "text"
+  - "language"
+  - "name"
 tags:
   - FI
   - bo:companycode

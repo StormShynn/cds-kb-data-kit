@@ -1,26 +1,26 @@
 ---
 name: I_ASSIGNEDORDERANDCATEGORY
-description: All Order IDs and Categories for ETO
+description: "All Order IDs and Categories for ETO"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSIGNEDORDERANDCATEGORY')/$value
-semantic_en: All Order IDs and Categories for ETO
-semantic_vi: All Order IDs and Categories for ETO — CDS view giao diện dựa trên All Order IDs and Categories for ETO.
+semantic_en: "All Order IDs and Categories for ETO"
+semantic_vi: "All Order IDs and Categories for ETO — CDS view giao diện dựa trên All Order IDs and Categories for ETO."
 keywords:
-  - all
-  - order
-  - ids
-  - and
-  - categories
-  - for
-  - eto
-  - assigned
-  - number
-  - category
-  - name
+  - "all"
+  - "order"
+  - "ids"
+  - "and"
+  - "categories"
+  - "for"
+  - "eto"
+  - "assigned"
+  - "number"
+  - "category"
+  - "name"
 tags:
   - CO
   - CO-FIO

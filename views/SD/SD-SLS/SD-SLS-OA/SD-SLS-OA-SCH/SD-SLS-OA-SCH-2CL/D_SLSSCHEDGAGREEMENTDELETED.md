@@ -1,6 +1,6 @@
 ---
 name: D_SLSSCHEDGAGREEMENTDELETED
-description: D Slsschedgagreementdeleted
+description: "D Slsschedgagreementdeleted"
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

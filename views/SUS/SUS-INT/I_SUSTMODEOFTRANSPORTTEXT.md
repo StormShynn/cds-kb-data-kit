@@ -1,6 +1,6 @@
 ---
 name: I_SUSTMODEOFTRANSPORTTEXT
-description: Sustmodeoftransporttext
+description: "Sustmodeoftransporttext"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

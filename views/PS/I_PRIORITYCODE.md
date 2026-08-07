@@ -1,13 +1,13 @@
 ---
 name: I_PRIORITYCODE
-description: Priority Code Details
+description: "Priority Code Details"
 app_component: PS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIORITYCODE')/$value
-semantic_en: Priority Code Details
+semantic_en: "Priority Code Details"
 tags:
   - PS
   - component:PS

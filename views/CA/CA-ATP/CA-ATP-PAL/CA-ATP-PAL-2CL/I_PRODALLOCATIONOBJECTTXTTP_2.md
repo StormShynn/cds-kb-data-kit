@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCATIONOBJECTTXTTP_2
-description: Prodallocationobjecttxttp 2
+description: "Prodallocationobjecttxttp 2"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SAPGUIICONTEXT
-description: Sapguiicontext
+description: "Sapguiicontext"
 app_component: BC-ABA-SC
 software_component: SAP_BASIS
 release_state: released

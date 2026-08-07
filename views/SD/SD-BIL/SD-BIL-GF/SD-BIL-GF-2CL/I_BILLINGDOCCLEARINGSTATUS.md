@@ -1,21 +1,21 @@
 ---
 name: I_BILLINGDOCCLEARINGSTATUS
-description: Billing Document Clearing Status
+description: "Billing Document Clearing Status"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BILLINGDOCCLEARINGSTATUS')/$value
-semantic_en: Billing Document Clearing Status
-semantic_vi: Billing Document Clearing Status — CDS view giao diện dựa trên dd07l.
+semantic_en: "Billing Document Clearing Status"
+semantic_vi: "Billing Document Clearing Status — CDS view giao diện dựa trên dd07l."
 keywords:
-  - billing
-  - document
-  - clearing
-  - status
-  - domain
-  - value
+  - "billing"
+  - "document"
+  - "clearing"
+  - "status"
+  - "domain"
+  - "value"
 tags:
   - SD
   - billing

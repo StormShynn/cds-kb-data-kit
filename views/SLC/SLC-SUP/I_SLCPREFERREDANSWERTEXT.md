@@ -1,6 +1,6 @@
 ---
 name: I_SLCPREFERREDANSWERTEXT
-description: Slcpreferredanswertext
+description: "Slcpreferredanswertext"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

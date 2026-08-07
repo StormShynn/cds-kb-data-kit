@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRPRTLSETTLMTCATTXT
-description: This CDS view exposes fixed values of the field Rebates: Partial Settlement Type The following fixed values have been maintained: ' ' No Partial Settlement 1 Cumulative 2 Separate
+description: "This CDS view exposes fixed values of the field Rebates: Partial Settlement Type The following fixed values have been maintained: ' ' No Partial Settlement 1 Cumulative 2 Separate"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPRTLSETTLMTCATTXT')/$value
-semantic_en: This CDS view exposes fixed values of the field Rebates: Partial Settlement Type The following fixed values have been maintained: ' ' No Partial Settlement 1 Cumulative 2 Separate
+semantic_en: "This CDS view exposes fixed values of the field Rebates: Partial Settlement Type The following fixed values have been maintained: ' ' No Partial Settlement 1 Cumulative 2 Separate"
 tags:
   - LO
   - bo:companycode

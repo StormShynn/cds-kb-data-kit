@@ -1,25 +1,25 @@
 ---
 name: C_CNTRLCONTRCNSMPNQRY
-description: Query view for central contract consumption
+description: "Query view for central contract consumption"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNTRLCONTRCNSMPNQRY')/$value
-semantic_en: Query view for central contract consumption
-semantic_vi: Query view for central contract consumption — CDS view tiêu dùng dựa trên C_CntrlContractCnsmpn.
+semantic_en: "Query view for central contract consumption"
+semantic_vi: "Query view for central contract consumption — CDS view tiêu dùng dựa trên C_CntrlContractCnsmpn."
 keywords:
-  - query
-  - for
-  - central
-  - contract
-  - consumption
-  - purchase
-  - item
-  - distribution
-  - type
-  - supplier
+  - "query"
+  - "for"
+  - "central"
+  - "contract"
+  - "consumption"
+  - "purchase"
+  - "item"
+  - "distribution"
+  - "type"
+  - "supplier"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

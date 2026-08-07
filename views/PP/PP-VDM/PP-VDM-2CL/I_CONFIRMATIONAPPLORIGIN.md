@@ -1,6 +1,6 @@
 ---
 name: I_CONFIRMATIONAPPLORIGIN
-description: Confirmationapplorigin
+description: "Confirmationapplorigin"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

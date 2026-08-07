@@ -1,6 +1,6 @@
 ---
 name: I_INSPLOTMATLDOCITEMTP_2
-description: Insplotmatldocitemtp 2
+description: "Insplotmatldocitemtp 2"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

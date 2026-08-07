@@ -1,6 +1,6 @@
 ---
 name: I_AVAILYCHGLOGTMESTMP
-description: Availychglogtmestmp
+description: "Availychglogtmestmp"
 app_component: CA-ATP-ACL-2CL
 software_component: SAPSCORE
 release_state: released

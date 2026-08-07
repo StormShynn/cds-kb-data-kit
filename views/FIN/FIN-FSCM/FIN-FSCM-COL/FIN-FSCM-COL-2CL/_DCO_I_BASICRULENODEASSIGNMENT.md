@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_BASICRULENODEASSIGNMENT
-description: Basic Rule Node Assignment
+description: "Basic Rule Node Assignment"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BASICRULENODEASSIGNMENT')/$value
-semantic_en: Basic Rule Node Assignment
+semantic_en: "Basic Rule Node Assignment"
 tags:
   - FIN
   - component:FIN-FSCM-COL-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGDOCITEMTP
-description: Cabillgdocitemtp
+description: "Cabillgdocitemtp"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

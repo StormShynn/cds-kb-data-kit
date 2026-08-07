@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDITMBASICFINANCIAL
-description: Bussolnorditmbasicfinancial
+description: "Bussolnorditmbasicfinancial"
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

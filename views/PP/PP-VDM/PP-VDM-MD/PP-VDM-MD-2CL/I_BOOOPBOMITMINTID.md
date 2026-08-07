@@ -1,23 +1,23 @@
 ---
 name: I_BOOOPBOMITMINTID
-description: BOO Op BOM Item Internal ID
+description: "BOO Op BOM Item Internal ID"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BOOOPBOMITMINTID')/$value
-semantic_en: BOO Op BOM Item Internal ID
-semantic_vi: BOO Op BOM Item Internal ID — CDS view giao diện dựa trên BOO Op BOM Item Internal ID.
+semantic_en: "BOO Op BOM Item Internal ID"
+semantic_vi: "BOO Op BOM Item Internal ID — CDS view giao diện dựa trên BOO Op BOM Item Internal ID."
 keywords:
-  - boo
-  - bom
-  - item
-  - internal
-  - bill
-  - operations
-  - type
-  - group
+  - "boo"
+  - "bom"
+  - "item"
+  - "internal"
+  - "bill"
+  - "operations"
+  - "type"
+  - "group"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

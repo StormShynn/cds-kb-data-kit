@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTMETHOD
-description: Paymentmethod
+description: "Paymentmethod"
 app_component: FI-AP-IS-2CL
 software_component: SAPSCORE
 release_state: released

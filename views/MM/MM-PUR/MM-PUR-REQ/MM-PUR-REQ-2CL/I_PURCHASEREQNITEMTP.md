@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEREQNITEMTP
-description: Purchase RequisitionNITEMTP
+description: "Purchase RequisitionNITEMTP"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

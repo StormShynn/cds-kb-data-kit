@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPCHARGEITEM
-description: Transpchargeitem
+description: "Transpchargeitem"
 app_component: TM-CF-CC-2CL
 software_component: SAPSCORE
 release_state: released

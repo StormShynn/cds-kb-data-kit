@@ -1,6 +1,6 @@
 ---
 name: I_MFGORDERSEQUENCELONGTEXT
-description: Mfgordersequencelongtext
+description: "Mfgordersequencelongtext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

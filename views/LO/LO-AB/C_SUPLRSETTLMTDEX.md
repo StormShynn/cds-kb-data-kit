@@ -1,23 +1,23 @@
 ---
 name: C_SUPLRSETTLMTDEX
-description: Supplier Settlement Extraction
+description: "Supplier Settlement Extraction"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRSETTLMTDEX')/$value
-semantic_en: Supplier Settlement Extraction
-semantic_vi: Supplier Settlement Extraction — CDS view tiêu dùng dựa trên R_SuplrSettlmtDEX.
+semantic_en: "Supplier Settlement Extraction"
+semantic_vi: "Supplier Settlement Extraction — CDS view tiêu dùng dựa trên R_SuplrSettlmtDEX."
 keywords:
-  - supplier
-  - settlement
-  - extraction
-  - suplr
-  - settlmt
-  - item
-  - type
-  - process
+  - "supplier"
+  - "settlement"
+  - "extraction"
+  - "suplr"
+  - "settlmt"
+  - "item"
+  - "type"
+  - "process"
 tags:
   - LO
   - component:LO-AB

@@ -1,6 +1,6 @@
 ---
 name: I_BILLGDOCREQUESTTYPETEXT
-description: Billgdocrequesttypetext
+description: "Billgdocrequesttypetext"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

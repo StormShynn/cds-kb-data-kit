@@ -1,15 +1,15 @@
 ---
 name: I_CADUNNINGITEM
-description: Contract Accounting Dunning Item
+description: "Contract Accounting Dunning Item"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGITEM')/$value
-semantic_en: Contract Accounting Dunning Item
+semantic_en: "Contract Accounting Dunning Item"
 keywords:
-  - Contract Accounting Dunning Item
+  - "Contract Accounting Dunning Item"
 tags:
   - FI
   - account

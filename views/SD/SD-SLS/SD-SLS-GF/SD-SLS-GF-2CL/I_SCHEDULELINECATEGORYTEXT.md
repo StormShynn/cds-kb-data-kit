@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDULELINECATEGORYTEXT
-description: Schedule LineCATEGORYTEXT
+description: "Schedule LineCATEGORYTEXT"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

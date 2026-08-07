@@ -1,13 +1,13 @@
 ---
 name: C_EWM_STORAGEBINACTYAREAQ
-description: Storage Bin Activity Area - Query
+description: "Storage Bin Activity Area - Query"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_STORAGEBINACTYAREAQ')/$value
-semantic_en: Storage Bin Activity Area - Query
+semantic_en: "Storage Bin Activity Area - Query"
 tags:
   - SCM
   - component:SCM-EWM-WOP-2CL

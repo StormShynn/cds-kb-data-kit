@@ -1,6 +1,6 @@
 ---
 name: D_LGLCNTNTMDOCLINKOBJKEYCRTER
-description: D Lglcntntmdoclinkobjkeycrter
+description: "D Lglcntntmdoclinkobjkeycrter"
 app_component: CM-INT-2CL
 software_component: SAPSCORE
 release_state: released

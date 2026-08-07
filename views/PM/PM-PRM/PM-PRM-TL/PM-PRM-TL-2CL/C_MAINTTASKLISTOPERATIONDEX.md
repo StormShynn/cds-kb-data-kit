@@ -1,6 +1,6 @@
 ---
 name: C_MAINTTASKLISTOPERATIONDEX
-description: Maintenance Task ListOPERATIONDEX
+description: "Maintenance Task ListOPERATIONDEX"
 app_component: PM-PRM-TL-2CL
 software_component: SAPSCORE
 release_state: released

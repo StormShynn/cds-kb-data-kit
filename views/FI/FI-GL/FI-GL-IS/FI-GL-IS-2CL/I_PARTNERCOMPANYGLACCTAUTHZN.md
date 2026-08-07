@@ -1,6 +1,6 @@
 ---
 name: I_PARTNERCOMPANYGLACCTAUTHZN
-description: Partnercompanyglacctauthzn
+description: "Partnercompanyglacctauthzn"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

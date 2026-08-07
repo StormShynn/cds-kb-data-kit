@@ -1,13 +1,13 @@
 ---
 name: I_INHREPAIRITEMAVAILYSTATUSTXT
-description: Availability of In-House Service Item - Text
+description: "Availability of In-House Service Item - Text"
 app_component: CRM-S4-IHR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INHREPAIRITEMAVAILYSTATUSTXT')/$value
-semantic_en: Availability of In-House Service Item - Text
+semantic_en: "Availability of In-House Service Item - Text"
 tags:
   - CRM
   - component:CRM-S4-IHR-2CL

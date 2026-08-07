@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERSTDVH
-description: Production OrderSTDVH
+description: "Production OrderSTDVH"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

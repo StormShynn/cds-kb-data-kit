@@ -1,6 +1,6 @@
 ---
 name: I_PAINDETREFMATSH2PUSAGE
-description: Paindetrefmatsh 2PUSAGE
+description: "Paindetrefmatsh 2PUSAGE"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

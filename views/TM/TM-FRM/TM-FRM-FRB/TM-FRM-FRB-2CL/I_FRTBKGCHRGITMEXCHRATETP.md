@@ -1,6 +1,6 @@
 ---
 name: I_FRTBKGCHRGITMEXCHRATETP
-description: Frtbkgchrgitmexchratetp
+description: "Frtbkgchrgitmexchratetp"
 app_component: TM-FRM-FRB-2CL
 software_component: SAPSCORE
 release_state: released

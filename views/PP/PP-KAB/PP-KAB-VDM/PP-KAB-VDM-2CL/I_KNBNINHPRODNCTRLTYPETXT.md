@@ -1,6 +1,6 @@
 ---
 name: I_KNBNINHPRODNCTRLTYPETXT
-description: Knbninhprodnctrltypetxt
+description: "Knbninhprodnctrltypetxt"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

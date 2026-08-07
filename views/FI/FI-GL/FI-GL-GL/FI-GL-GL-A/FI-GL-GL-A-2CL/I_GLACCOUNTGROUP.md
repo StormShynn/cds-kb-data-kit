@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTGROUP
-description: GL AccountGROUP
+description: "GL AccountGROUP"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

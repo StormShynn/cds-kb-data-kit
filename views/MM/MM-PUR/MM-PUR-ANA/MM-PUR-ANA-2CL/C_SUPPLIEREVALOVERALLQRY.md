@@ -1,30 +1,30 @@
 ---
 name: C_SUPPLIEREVALOVERALLQRY
-description: Supplier Evaluation Overall
+description: "Supplier Evaluation Overall"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPPLIEREVALOVERALLQRY')/$value
-semantic_en: Supplier Evaluation Overall
-semantic_vi: Supplier Evaluation Overall — CDS view tiêu dùng dựa trên C_SupplierEvalOverall.
+semantic_en: "Supplier Evaluation Overall"
+semantic_vi: "Supplier Evaluation Overall — CDS view tiêu dùng dựa trên C_SupplierEvalOverall."
 keywords:
-  - supplier
-  - evaluation
-  - overall
-  - purchasing
-  - category
-  - purg
-  - name
-  - migrtn
-  - cmpltd
-  - anlyts
-  - suplr
-  - eval
-  - critra
-  - deliv
-  - completed
+  - "supplier"
+  - "evaluation"
+  - "overall"
+  - "purchasing"
+  - "category"
+  - "purg"
+  - "name"
+  - "migrtn"
+  - "cmpltd"
+  - "anlyts"
+  - "suplr"
+  - "eval"
+  - "critra"
+  - "deliv"
+  - "completed"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

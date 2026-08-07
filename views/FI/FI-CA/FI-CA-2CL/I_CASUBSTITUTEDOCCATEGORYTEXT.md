@@ -1,6 +1,6 @@
 ---
 name: I_CASUBSTITUTEDOCCATEGORYTEXT
-description: Casubstitutedoccategorytext
+description: "Casubstitutedoccategorytext"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

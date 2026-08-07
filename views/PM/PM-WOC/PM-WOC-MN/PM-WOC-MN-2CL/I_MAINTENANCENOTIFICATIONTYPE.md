@@ -1,13 +1,13 @@
 ---
 name: I_MAINTENANCENOTIFICATIONTYPE
-description: Maintenance Notification Types
+description: "Maintenance Notification Types"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTENANCENOTIFICATIONTYPE')/$value
-semantic_en: Maintenance Notification Types
+semantic_en: "Maintenance Notification Types"
 tags:
   - PM
   - bo:companycode

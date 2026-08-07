@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTOWBSELEMENT
-description: Profit CenterTOWBSELEMENT
+description: "Profit CenterTOWBSELEMENT"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTGROUPTEXT
-description: GL AccountGROUPTEXT
+description: "GL AccountGROUPTEXT"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

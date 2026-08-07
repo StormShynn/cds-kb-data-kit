@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFEVEHDENATRANCOLORTEXT
-description: BR Nfevehdenatrancolortext
+description: "BR Nfevehdenatrancolortext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

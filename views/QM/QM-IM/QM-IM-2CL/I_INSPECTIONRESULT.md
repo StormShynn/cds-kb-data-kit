@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONRESULT
-description: Inspectionresult
+description: "Inspectionresult"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

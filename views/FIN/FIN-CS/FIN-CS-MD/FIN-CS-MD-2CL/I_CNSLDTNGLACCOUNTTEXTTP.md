@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGLACCOUNTTEXTTP
-description: Cnsldtngl AccountTEXTTP
+description: "Cnsldtngl AccountTEXTTP"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

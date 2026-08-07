@@ -1,6 +1,6 @@
 ---
 name: I_FRTORDCHRGELEMENTTP
-description: Frtordchrgelementtp
+description: "Frtordchrgelementtp"
 app_component: TM-FRM-FRO-2CL
 software_component: SAPSCORE
 release_state: released

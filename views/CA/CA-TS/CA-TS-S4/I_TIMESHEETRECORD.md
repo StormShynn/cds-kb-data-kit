@@ -1,6 +1,6 @@
 ---
 name: I_TIMESHEETRECORD
-description: Timesheetrecord
+description: "Timesheetrecord"
 app_component: CA-TS-S4
 software_component: SAPSCORE
 release_state: released

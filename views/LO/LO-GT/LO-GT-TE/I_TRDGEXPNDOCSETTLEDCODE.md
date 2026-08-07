@@ -1,13 +1,13 @@
 ---
 name: I_TRDGEXPNDOCSETTLEDCODE
-description: Trading Expense Document Settled Code
+description: "Trading Expense Document Settled Code"
 app_component: LO-GT-TE
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGEXPNDOCSETTLEDCODE')/$value
-semantic_en: Trading Expense Document Settled Code
+semantic_en: "Trading Expense Document Settled Code"
 tags:
   - LO
   - component:LO-GT-TE

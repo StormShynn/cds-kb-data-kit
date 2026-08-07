@@ -1,6 +1,6 @@
 ---
 name: I_SALESDOCUMENTPRICINGELEMENT
-description: Salesdocumentpricingelement
+description: "Salesdocumentpricingelement"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_IAMBUSINESSUSERPRICECATTEXT
-description: Iambusinessuserpricecattext
+description: "Iambusinessuserpricecattext"
 app_component: BC-SRV-APS-IAM
 software_component: SAP_CLOUD
 release_state: released

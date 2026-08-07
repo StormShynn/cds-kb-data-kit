@@ -1,13 +1,13 @@
 ---
 name: I_PERSONWORKAGRMTSRVCCOSTLEVEL
-description: This view provides the prerequisites for answering the following business questions: What is the service cost level of the work agreement?
+description: "This view provides the prerequisites for answering the following business questions: What is the service cost level of the work agreement?"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSONWORKAGRMTSRVCCOSTLEVEL')/$value
-semantic_en: This view provides the prerequisites for answering the following business questions: What is the service cost level of the work agreement?
+semantic_en: "This view provides the prerequisites for answering the following business questions: What is the service cost level of the work agreement?"
 tags:
   - CA
   - bo:plant

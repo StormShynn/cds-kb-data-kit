@@ -1,6 +1,6 @@
 ---
 name: I_MDSUBSTNSTSTEXT
-description: Mdsubstnststext
+description: "Mdsubstnststext"
 app_component: CA-EPT-SUB-2CL
 software_component: SAPSCORE
 release_state: released

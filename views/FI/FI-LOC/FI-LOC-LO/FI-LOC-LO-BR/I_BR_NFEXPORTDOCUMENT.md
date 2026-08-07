@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFEXPORTDOCUMENT
-description: BR Nfexportdocument
+description: "BR Nfexportdocument"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

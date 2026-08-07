@@ -1,6 +1,6 @@
 ---
 name: I_TR_EDOCCOMPANYINFORMATION
-description: TR Edoccompanyinformation
+description: "TR Edoccompanyinformation"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released

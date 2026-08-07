@@ -1,13 +1,13 @@
 ---
 name: I_TRDGDOCEXECWRKBNTYPE
-description: Trading Exec Workbench Type of Trdg Doc
+description: "Trading Exec Workbench Type of Trdg Doc"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGDOCEXECWRKBNTYPE')/$value
-semantic_en: Trading Exec Workbench Type of Trdg Doc
+semantic_en: "Trading Exec Workbench Type of Trdg Doc"
 tags:
   - LO
   - component:LO-GT

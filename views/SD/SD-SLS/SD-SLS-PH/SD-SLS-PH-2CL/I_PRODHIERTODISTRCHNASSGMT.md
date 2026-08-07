@@ -1,6 +1,6 @@
 ---
 name: I_PRODHIERTODISTRCHNASSGMT
-description: Prodhiertodistrchnassgmt
+description: "Prodhiertodistrchnassgmt"
 app_component: SD-SLS-PH-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFVEHICLETYPETEXT_2
-description: BR Nfvehicletypetext 2
+description: "BR Nfvehicletypetext 2"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

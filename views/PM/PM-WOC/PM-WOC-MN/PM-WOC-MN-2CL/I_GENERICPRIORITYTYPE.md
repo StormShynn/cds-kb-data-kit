@@ -1,6 +1,6 @@
 ---
 name: I_GENERICPRIORITYTYPE
-description: Genericprioritytype
+description: "Genericprioritytype"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released

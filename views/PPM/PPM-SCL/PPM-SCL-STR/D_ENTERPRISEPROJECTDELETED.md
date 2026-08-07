@@ -1,6 +1,6 @@
 ---
 name: D_ENTERPRISEPROJECTDELETED
-description: D Enterpriseprojectdeleted
+description: "D Enterpriseprojectdeleted"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

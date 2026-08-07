@@ -1,6 +1,6 @@
 ---
 name: D_BILLOFMATERIALORDEXPLODEBOMP
-description: D Bill of MaterialORDEXPLODEBOMP
+description: "D Bill of MaterialORDEXPLODEBOMP"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

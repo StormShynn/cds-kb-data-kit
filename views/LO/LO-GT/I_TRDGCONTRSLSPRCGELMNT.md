@@ -1,13 +1,13 @@
 ---
 name: I_TRDGCONTRSLSPRCGELMNT
-description: Sales PrgElm of Trading Contract
+description: "Sales PrgElm of Trading Contract"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRSLSPRCGELMNT')/$value
-semantic_en: Sales PrgElm of Trading Contract
+semantic_en: "Sales PrgElm of Trading Contract"
 tags:
   - LO
   - component:LO-GT

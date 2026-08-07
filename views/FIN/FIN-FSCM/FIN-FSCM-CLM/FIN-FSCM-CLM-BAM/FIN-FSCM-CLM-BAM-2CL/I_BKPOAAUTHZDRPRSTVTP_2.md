@@ -1,6 +1,6 @@
 ---
 name: I_BKPOAAUTHZDRPRSTVTP_2
-description: Bkpoaauthzdrprstvtp 2
+description: "Bkpoaauthzdrprstvtp 2"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

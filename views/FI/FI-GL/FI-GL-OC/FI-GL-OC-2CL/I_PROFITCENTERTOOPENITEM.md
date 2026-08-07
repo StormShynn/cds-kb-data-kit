@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTOOPENITEM
-description: Profit CenterTOOPENITEM
+description: "Profit CenterTOOPENITEM"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

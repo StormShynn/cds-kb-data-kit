@@ -1,6 +1,6 @@
 ---
 name: I_JP_INVCSMMRYPAYERINVOICE
-description: JP Invcsmmrypayerinvoice
+description: "JP Invcsmmrypayerinvoice"
 app_component: FI-LOC-FI-JP
 software_component: SAPSCORE
 release_state: released

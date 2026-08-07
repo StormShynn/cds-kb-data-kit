@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECCTRLOBJBDGTACCOUNT
-description: Public Sector Control Object for a Budget Account
+description: "Public Sector Control Object for a Budget Account"
 app_component: PSM-FM-BU-AC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJBDGTACCOUNT')/$value
-semantic_en: Public Sector Control Object for a Budget Account
+semantic_en: "Public Sector Control Object for a Budget Account"
 tags:
   - PSM
   - account

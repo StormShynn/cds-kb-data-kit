@@ -1,6 +1,6 @@
 ---
 name: C_EWM_WHSEORDERPARAMDET
-description: Ewm Whseorderparamdet
+description: "Ewm Whseorderparamdet"
 app_component: SCM-EWM-PRN-2CL
 software_component: SAPSCORE
 release_state: released

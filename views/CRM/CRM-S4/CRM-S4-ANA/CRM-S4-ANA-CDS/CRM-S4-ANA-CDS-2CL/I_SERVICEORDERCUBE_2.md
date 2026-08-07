@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEORDERCUBE_2
-description: Service OrderCUBE 2
+description: "Service OrderCUBE 2"
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

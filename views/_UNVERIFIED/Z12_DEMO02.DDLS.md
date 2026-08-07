@@ -1,23 +1,23 @@
 ---
 name: Z12_DEMO02.DDLS
-description: Join Examples
+description: "Join Examples"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/FalkAurel/S4D400/blob/7a6e4255e00ba2e7ec505fbf65f6764901244c3f/src/z12_demo02.ddls.asddls
-semantic_en: Join Examples — CDS view.
-semantic_vi: Join Examples — CDS view dựa trên Join Examples.
+semantic_en: "Join Examples — CDS view."
+semantic_vi: "Join Examples — CDS view dựa trên Join Examples."
 keywords:
-  - join
-  - examples
-  - carrier
-  - connection
-  - flight
-  - date
-  - name
-  - airport
+  - "join"
+  - "examples"
+  - "carrier"
+  - "connection"
+  - "flight"
+  - "date"
+  - "name"
+  - "airport"
 tags:
   - LE
   - component:LE

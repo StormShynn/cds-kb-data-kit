@@ -1,6 +1,6 @@
 ---
 name: I_SALESDELIVDATECATEGORYTEXT
-description: Salesdelivdatecategorytext
+description: "Salesdelivdatecategorytext"
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNLEDGERT
-description: Consolidation Ledger - Text
+description: "Consolidation Ledger - Text"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNLEDGERT')/$value
-semantic_en: Consolidation Ledger - Text
+semantic_en: "Consolidation Ledger - Text"
 tags:
   - FIN
   - bo:salesorder

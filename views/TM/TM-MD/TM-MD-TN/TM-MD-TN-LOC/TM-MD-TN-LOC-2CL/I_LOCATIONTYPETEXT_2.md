@@ -1,6 +1,6 @@
 ---
 name: I_LOCATIONTYPETEXT_2
-description: Locationtypetext 2
+description: "Locationtypetext 2"
 app_component: TM-MD-TN-LOC-2CL
 software_component: SAPSCORE
 release_state: released

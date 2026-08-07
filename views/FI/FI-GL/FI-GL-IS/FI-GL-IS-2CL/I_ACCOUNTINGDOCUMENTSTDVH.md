@@ -1,21 +1,21 @@
 ---
 name: I_ACCOUNTINGDOCUMENTSTDVH
-description: This CDS view is designed to provide a value help for accounting documents, allowing users to easily search and select accounting documents based on key attributes such as company code, fiscal year, and the accounting document number. It serves as a utility for applications that require users to input or select accounting documents. This view provides value help for AccountingDocument . This view should be used for value help purposes only. If you intend to select the entire business data, use the view instead. This CDS view provides the data to answer the following business questions: What are the available accounting documents for a specific company code? How can I find accounting documents for a particular fiscal year? What is the accounting document number for a given company code and fiscal year? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide a value help for accounting documents, allowing users to easily search and select accounting documents based on key attributes such as company code, fiscal year, and the accounting document number. It serves as a utility for applications that require users to input or select accounting documents. This view provides value help for AccountingDocument . This view should be used for value help purposes only. If you intend to select the entire business data, use the view instead. This CDS view provides the data to answer the following business questions: What are the available accounting documents for a specific company code? How can I find accounting documents for a particular fiscal year? What is the accounting document number for a given company code and fiscal year? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACCOUNTINGDOCUMENTSTDVH')/$value
-semantic_en: This CDS view is designed to provide a value help for accounting documents, allowing users to easily search and select accounting documents based on key attributes such as company code, fiscal year, and the accounting document number. It serves as a utility for applications that require users to input or select accounting documents. This view provides value help for AccountingDocument . This view should be used for value help purposes only. If you intend to select the entire business data, use the view instead. This CDS view provides the data to answer the following business questions: What are the available accounting documents for a specific company code? How can I find accounting documents for a particular fiscal year? What is the accounting document number for a given company code and fiscal year? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Accounting Document — CDS view giao diện dựa trên I_AccountingDocument.
+semantic_en: "This CDS view is designed to provide a value help for accounting documents, allowing users to easily search and select accounting documents based on key attributes such as company code, fiscal year, and the accounting document number. It serves as a utility for applications that require users to input or select accounting documents. This view provides value help for AccountingDocument . This view should be used for value help purposes only. If you intend to select the entire business data, use the view instead. This CDS view provides the data to answer the following business questions: What are the available accounting documents for a specific company code? How can I find accounting documents for a particular fiscal year? What is the accounting document number for a given company code and fiscal year? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Accounting Document — CDS view giao diện dựa trên I_AccountingDocument."
 keywords:
-  - accounting
-  - document
-  - company
-  - code
-  - fiscal
-  - year
+  - "accounting"
+  - "document"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
 tags:
   - FI
   - account

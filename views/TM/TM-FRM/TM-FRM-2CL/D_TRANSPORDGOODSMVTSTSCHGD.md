@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDGOODSMVTSTSCHGD
-description: D Transpordgoodsmvtstschgd
+description: "D Transpordgoodsmvtstschgd"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

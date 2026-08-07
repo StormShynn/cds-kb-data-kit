@@ -1,25 +1,25 @@
 ---
 name: ZINN_I_PETS.DDLS
-description: ###GENERATED Core Data Service Entity
+description: "###GENERATED Core Data Service Entity"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/fredymb/innova_eclipse/blob/1009c054679dd9be8ecd551239c349291f9a45af/src/zinn_i_pets.ddls.asddls
-semantic_en: ###GENERATED Core Data Service Entity — CDS view based on ZINN_PETS.
-semantic_vi: ###GENERATED Core Data Service Entity — CDS view dựa trên ZINN_PETS.
+semantic_en: "###GENERATED Core Data Service Entity — CDS view based on ZINN_PETS."
+semantic_vi: "###GENERATED Core Data Service Entity — CDS view dựa trên ZINN_PETS."
 keywords:
-  - ###generated
-  - core
-  - data
-  - service
-  - entity
-  - petname
-  - pettype
-  - petage
-  - petowner
-  - created
+  - "###generated"
+  - "core"
+  - "data"
+  - "service"
+  - "entity"
+  - "petname"
+  - "pettype"
+  - "petage"
+  - "petowner"
+  - "created"
 tags:
   - CO
   - component:CO

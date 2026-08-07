@@ -1,13 +1,13 @@
 ---
 name: I_COLLTRLREBASEPERIOD
-description: Base Period for Collateral Real Estate
+description: "Base Period for Collateral Real Estate"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLTRLREBASEPERIOD')/$value
-semantic_en: Base Period for Collateral Real Estate
+semantic_en: "Base Period for Collateral Real Estate"
 tags:
   - FS
   - component:FS-CMS

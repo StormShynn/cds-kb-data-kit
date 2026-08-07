@@ -1,6 +1,6 @@
 ---
 name: I_TR_ELECTRONICDOCEXPINVOICE
-description: TR Electronicdocexpinvoice
+description: "TR Electronicdocexpinvoice"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BR_MATERIALORIGINTEXT
-description: BR Materialorigintext
+description: "BR Materialorigintext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

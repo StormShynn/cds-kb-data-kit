@@ -1,21 +1,21 @@
 ---
 name: Z08_ZC348_LGL.DDLS
-description: Association
+description: "Association"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/WladimirRivera/ABAP_FOR_HANA_C348/blob/58efb74c80321f1b2909d1d92cd3a4ff5969fb03/src/z08_zc348_lgl.ddls.asddls
-semantic_en: Association — CDS view based on spfli.
-semantic_vi: Association — CDS view dựa trên spfli.
+semantic_en: "Association — CDS view based on spfli."
+semantic_vi: "Association — CDS view dựa trên spfli."
 keywords:
-  - association
-  - carrid
-  - connid
-  - countryfr
-  - cityfrom
-  - airpfrom
+  - "association"
+  - "carrid"
+  - "connid"
+  - "countryfr"
+  - "cityfrom"
+  - "airpfrom"
 tags:
   - bo:salesorder
 ---

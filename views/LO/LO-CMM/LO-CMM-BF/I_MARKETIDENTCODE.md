@@ -1,13 +1,13 @@
 ---
 name: I_MARKETIDENTCODE
-description: Market Identifier Code
+description: "Market Identifier Code"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MARKETIDENTCODE')/$value
-semantic_en: Market Identifier Code
+semantic_en: "Market Identifier Code"
 tags:
   - LO
   - bo:companycode

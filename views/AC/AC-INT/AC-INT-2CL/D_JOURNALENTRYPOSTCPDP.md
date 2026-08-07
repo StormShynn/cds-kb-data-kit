@@ -1,6 +1,6 @@
 ---
 name: D_JOURNALENTRYPOSTCPDP
-description: D Journal EntryPOSTCPDP
+description: "D Journal EntryPOSTCPDP"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

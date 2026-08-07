@@ -1,6 +1,6 @@
 ---
 name: I_PROJBILLGELMOBJECTLINK
-description: Projbillgelmobjectlink
+description: "Projbillgelmobjectlink"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

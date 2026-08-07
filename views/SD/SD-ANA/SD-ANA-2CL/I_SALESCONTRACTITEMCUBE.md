@@ -1,6 +1,6 @@
 ---
 name: I_SALESCONTRACTITEMCUBE
-description: Salescontractitemcube
+description: "Salescontractitemcube"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

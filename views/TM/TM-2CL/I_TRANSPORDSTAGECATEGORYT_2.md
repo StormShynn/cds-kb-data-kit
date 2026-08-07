@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDSTAGECATEGORYT_2
-description: Transpordstagecategoryt 2
+description: "Transpordstagecategoryt 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

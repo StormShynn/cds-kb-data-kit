@@ -1,6 +1,6 @@
 ---
 name: I_QLTYMGMTINTEGRATIONSCENARIO
-description: Qltymgmtintegrationscenario
+description: "Qltymgmtintegrationscenario"
 app_component: QM-2CL
 software_component: SAPSCORE
 release_state: released

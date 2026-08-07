@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONLOTTYPEVALUEHELP
-description: Inspectionlottypevaluehelp
+description: "Inspectionlottypevaluehelp"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

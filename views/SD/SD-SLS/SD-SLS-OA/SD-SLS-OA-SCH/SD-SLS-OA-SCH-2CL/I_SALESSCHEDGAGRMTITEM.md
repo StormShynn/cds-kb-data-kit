@@ -1,6 +1,6 @@
 ---
 name: I_SALESSCHEDGAGRMTITEM
-description: Salesschedgagrmtitem
+description: "Salesschedgagrmtitem"
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDLIFECYCLESTSBFR
-description: D Transpordlifecyclestsbfr
+description: "D Transpordlifecyclestsbfr"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

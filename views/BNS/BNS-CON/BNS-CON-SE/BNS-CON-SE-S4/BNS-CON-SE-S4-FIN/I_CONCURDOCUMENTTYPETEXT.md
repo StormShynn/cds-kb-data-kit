@@ -1,13 +1,13 @@
 ---
 name: I_CONCURDOCUMENTTYPETEXT
-description: Type of Concur Document - Text
+description: "Type of Concur Document - Text"
 app_component: BNS-CON-SE-S4-FIN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONCURDOCUMENTTYPETEXT')/$value
-semantic_en: Type of Concur Document - Text
+semantic_en: "Type of Concur Document - Text"
 tags:
   - BNS
   - BNS-CON

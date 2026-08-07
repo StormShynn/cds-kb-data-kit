@@ -1,26 +1,26 @@
 ---
 name: C_SLSQTANCONVERSIONRATEQ
-description: This CDS view provides quotation conversion rates by various dimensions such as sales organization, customer, product, and sales office, among others. It provides the prerequisites for answering the following business questions: What is the proportion of quotations that have been converted into sales orders? What is the net value of converted quotations? What is the net value of a given quotation? Is a given quotation still within its validity period? By how much does actual quotation conversion rate deviate from the predicted rate? What are my top 10 quotations by conversion rate? What are my top 10 quotations by net value?
+description: "This CDS view provides quotation conversion rates by various dimensions such as sales organization, customer, product, and sales office, among others. It provides the prerequisites for answering the following business questions: What is the proportion of quotations that have been converted into sales orders? What is the net value of converted quotations? What is the net value of a given quotation? Is a given quotation still within its validity period? By how much does actual quotation conversion rate deviate from the predicted rate? What are my top 10 quotations by conversion rate? What are my top 10 quotations by net value?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SLSQTANCONVERSIONRATEQ')/$value
-semantic_en: This CDS view provides quotation conversion rates by various dimensions such as sales organization, customer, product, and sales office, among others. It provides the prerequisites for answering the following business questions: What is the proportion of quotations that have been converted into sales orders? What is the net value of converted quotations? What is the net value of a given quotation? Is a given quotation still within its validity period? By how much does actual quotation conversion rate deviate from the predicted rate? What are my top 10 quotations by conversion rate? What are my top 10 quotations by net value?
-semantic_vi: Sales Quotation Conversion Rate - Query — CDS view tiêu dùng dựa trên I_SlsQtanConversionRateCube.
+semantic_en: "This CDS view provides quotation conversion rates by various dimensions such as sales organization, customer, product, and sales office, among others. It provides the prerequisites for answering the following business questions: What is the proportion of quotations that have been converted into sales orders? What is the net value of converted quotations? What is the net value of a given quotation? Is a given quotation still within its validity period? By how much does actual quotation conversion rate deviate from the predicted rate? What are my top 10 quotations by conversion rate? What are my top 10 quotations by net value?"
+semantic_vi: "Sales Quotation Conversion Rate - Query — CDS view tiêu dùng dựa trên I_SlsQtanConversionRateCube."
 keywords:
-  - Sales Quotation Conversion Rate - Query
-  - sales
-  - quotation
-  - conversion
-  - rate
-  - query
-  - item
-  - organization
-  - distribution
-  - channel
-  - division
+  - "Sales Quotation Conversion Rate - Query"
+  - "sales"
+  - "quotation"
+  - "conversion"
+  - "rate"
+  - "query"
+  - "item"
+  - "organization"
+  - "distribution"
+  - "channel"
+  - "division"
 tags:
   - SD
   - bo:businesspartner

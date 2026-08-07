@@ -1,6 +1,6 @@
 ---
 name: I_EARMARKEDFUNDSDOCENTRYSTATUS
-description: Earmarkedfundsdocentrystatus
+description: "Earmarkedfundsdocentrystatus"
 app_component: FI-FM
 software_component: SAPSCORE
 release_state: released

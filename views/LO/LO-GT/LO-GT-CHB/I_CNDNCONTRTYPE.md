@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRTYPE
-description: Cndncontrtype
+description: "Cndncontrtype"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

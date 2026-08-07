@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTHIERARCHYNODE
-description: GL AccountHIERARCHYNODE
+description: "GL AccountHIERARCHYNODE"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

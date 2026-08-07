@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERCONFCATEGORYTEXT
-description: Supplierconfcategorytext
+description: "Supplierconfcategorytext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

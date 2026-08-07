@@ -1,6 +1,6 @@
 ---
 name: I_EARMARKEDFUNDS_DOCTYPETEXT
-description: Earmarkedfunds Doctypetext
+description: "Earmarkedfunds Doctypetext"
 app_component: FI-FM
 software_component: SAPSCORE
 release_state: released

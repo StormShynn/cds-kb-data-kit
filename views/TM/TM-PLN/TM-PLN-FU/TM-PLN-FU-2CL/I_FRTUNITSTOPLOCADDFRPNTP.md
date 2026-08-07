@@ -1,6 +1,6 @@
 ---
 name: I_FRTUNITSTOPLOCADDFRPNTP
-description: Frtunitstoplocaddfrpntp
+description: "Frtunitstoplocaddfrpntp"
 app_component: TM-PLN-FU-2CL
 software_component: SAPSCORE
 release_state: released

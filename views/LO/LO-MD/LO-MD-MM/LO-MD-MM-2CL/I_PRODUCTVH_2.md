@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTVH_2
-description: Productvh 2
+description: "Productvh 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

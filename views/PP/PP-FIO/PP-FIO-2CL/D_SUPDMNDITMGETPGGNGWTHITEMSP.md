@@ -1,6 +1,6 @@
 ---
 name: D_SUPDMNDITMGETPGGNGWTHITEMSP
-description: D Supdmnditmgetpggngwthitemsp
+description: "D Supdmnditmgetpggngwthitemsp"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

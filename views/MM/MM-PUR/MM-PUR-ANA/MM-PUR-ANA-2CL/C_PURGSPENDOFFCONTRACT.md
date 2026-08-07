@@ -1,29 +1,29 @@
 ---
 name: C_PURGSPENDOFFCONTRACT
-description: Off Contract Spend
+description: "Off Contract Spend"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PURGSPENDOFFCONTRACT')/$value
-semantic_en: Off Contract Spend
-semantic_vi: Off Contract Spend — CDS view tiêu dùng dựa trên C_PurgSpendOffContract2.
+semantic_en: "Off Contract Spend"
+semantic_vi: "Off Contract Spend — CDS view tiêu dùng dựa trên C_PurgSpendOffContract2."
 keywords:
-  - off
-  - contract
-  - spend
-  - purchase
-  - order
-  - item
-  - account
-  - assignment
-  - number
-  - purg
-  - migrtn
-  - cmpltd
-  - anlyts
-  - supplier
+  - "off"
+  - "contract"
+  - "spend"
+  - "purchase"
+  - "order"
+  - "item"
+  - "account"
+  - "assignment"
+  - "number"
+  - "purg"
+  - "migrtn"
+  - "cmpltd"
+  - "anlyts"
+  - "supplier"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

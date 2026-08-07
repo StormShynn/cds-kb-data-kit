@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTHDRTP_2
-description: Schedgagrmthdrtp 2
+description: "Schedgagrmthdrtp 2"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

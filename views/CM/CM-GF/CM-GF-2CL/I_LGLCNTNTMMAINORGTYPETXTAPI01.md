@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMMAINORGTYPETXTAPI01
-description: Lglcntntmmainorgtypetxtapi 01
+description: "Lglcntntmmainorgtypetxtapi 01"
 app_component: CM-GF-2CL
 software_component: SAPSCORE
 release_state: released

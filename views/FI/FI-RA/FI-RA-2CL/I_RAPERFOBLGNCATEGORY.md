@@ -1,6 +1,6 @@
 ---
 name: I_RAPERFOBLGNCATEGORY
-description: Raperfoblgncategory
+description: "Raperfoblgncategory"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

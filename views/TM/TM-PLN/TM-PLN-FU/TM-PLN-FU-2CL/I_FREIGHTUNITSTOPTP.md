@@ -1,6 +1,6 @@
 ---
 name: I_FREIGHTUNITSTOPTP
-description: Freightunitstoptp
+description: "Freightunitstoptp"
 app_component: TM-PLN-FU-2CL
 software_component: SAPSCORE
 release_state: released

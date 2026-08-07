@@ -1,6 +1,6 @@
 ---
 name: I_PURORDITMDELIVERYADDRESSTP_2
-description: Purorditmdeliveryaddresstp 2
+description: "Purorditmdeliveryaddresstp 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

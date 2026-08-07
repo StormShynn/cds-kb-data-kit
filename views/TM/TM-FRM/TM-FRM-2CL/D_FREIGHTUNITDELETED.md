@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTUNITDELETED
-description: D Freightunitdeleted
+description: "D Freightunitdeleted"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

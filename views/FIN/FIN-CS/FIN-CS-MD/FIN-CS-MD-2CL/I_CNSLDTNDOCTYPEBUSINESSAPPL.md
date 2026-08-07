@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNDOCTYPEBUSINESSAPPL
-description: Cnsldtndoctypebusinessappl
+description: "Cnsldtndoctypebusinessappl"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

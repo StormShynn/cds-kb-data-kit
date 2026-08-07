@@ -1,6 +1,6 @@
 ---
 name: C_SALESDOCUMENTSCHEDLINEDEX_1
-description: Salesdocumentschedlinedex 1
+description: "Salesdocumentschedlinedex 1"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

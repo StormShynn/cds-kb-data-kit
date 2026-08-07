@@ -1,6 +1,6 @@
 ---
 name: I_CASHPOOLHEADERACCTASSGMT
-description: Cashpoolheaderacctassgmt
+description: "Cashpoolheaderacctassgmt"
 app_component: FIN-FSCM-CLM-2CL
 software_component: SAPSCORE
 release_state: released

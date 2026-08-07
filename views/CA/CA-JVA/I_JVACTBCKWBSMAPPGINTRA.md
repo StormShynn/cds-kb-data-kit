@@ -1,6 +1,6 @@
 ---
 name: I_JVACTBCKWBSMAPPGINTRA
-description: Jvactbckwbsmappgintra
+description: "Jvactbckwbsmappgintra"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

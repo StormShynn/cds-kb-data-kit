@@ -1,6 +1,6 @@
 ---
 name: I_PRJBLGELMENTRCANCLNSRCECODE
-description: Prjblgelmentrcanclnsrcecode
+description: "Prjblgelmentrcanclnsrcecode"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

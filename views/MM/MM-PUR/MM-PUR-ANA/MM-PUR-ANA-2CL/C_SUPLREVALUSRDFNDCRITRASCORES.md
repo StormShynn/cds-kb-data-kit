@@ -1,28 +1,28 @@
 ---
 name: C_SUPLREVALUSRDFNDCRITRASCORES
-description: Supplier Evaluation User-Defined Criteria
+description: "Supplier Evaluation User-Defined Criteria"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLREVALUSRDFNDCRITRASCORES')/$value
-semantic_en: Supplier Evaluation User-Defined Criteria
-semantic_vi: Supplier Evaluation User-Defined Criteria — CDS view tiêu dùng dựa trên P_UserDefinedCriteriaScore.
+semantic_en: "Supplier Evaluation User-Defined Criteria"
+semantic_vi: "Supplier Evaluation User-Defined Criteria — CDS view tiêu dùng dựa trên P_UserDefinedCriteriaScore."
 keywords:
-  - supplier
-  - evaluation
-  - user
-  - defined
-  - criteria
-  - purchasing
-  - category
-  - suplr
-  - eval
-  - material
-  - group
-  - purg
-  - name
+  - "supplier"
+  - "evaluation"
+  - "user"
+  - "defined"
+  - "criteria"
+  - "purchasing"
+  - "category"
+  - "suplr"
+  - "eval"
+  - "material"
+  - "group"
+  - "purg"
+  - "name"
 tags:
   - MM
   - bo:companycode

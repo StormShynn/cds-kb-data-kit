@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFMATERIALSUBITEMTP_3
-description: Bill of MaterialSUBITEMTP 3
+description: "Bill of MaterialSUBITEMTP 3"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

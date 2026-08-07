@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGHGSCP2CALCMETHOD
-description: Cnsldtnghgscp 2CALCMETHOD
+description: "Cnsldtnghgscp 2CALCMETHOD"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

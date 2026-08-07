@@ -1,6 +1,6 @@
 ---
 name: I_PROPAGATEPRFTBLTYSGMT2BOM
-description: Propagateprftbltysgmt 2BOM
+description: "Propagateprftbltysgmt 2BOM"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

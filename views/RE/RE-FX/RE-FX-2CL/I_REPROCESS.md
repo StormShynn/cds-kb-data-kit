@@ -1,6 +1,6 @@
 ---
 name: I_REPROCESS
-description: Reprocess
+description: "Reprocess"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

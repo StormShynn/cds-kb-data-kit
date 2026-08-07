@@ -1,6 +1,6 @@
 ---
 name: I_WORKASSIGNMENTADDRESS
-description: Workassignmentaddress
+description: "Workassignmentaddress"
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released

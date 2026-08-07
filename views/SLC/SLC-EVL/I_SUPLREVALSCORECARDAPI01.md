@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALSCORECARDAPI01
-description: Suplrevalscorecardapi 01
+description: "Suplrevalscorecardapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

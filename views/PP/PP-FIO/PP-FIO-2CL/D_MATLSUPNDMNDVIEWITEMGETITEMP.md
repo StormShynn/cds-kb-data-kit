@@ -1,6 +1,6 @@
 ---
 name: D_MATLSUPNDMNDVIEWITEMGETITEMP
-description: D Matlsupndmndviewitemgetitemp
+description: "D Matlsupndmndviewitemgetitemp"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

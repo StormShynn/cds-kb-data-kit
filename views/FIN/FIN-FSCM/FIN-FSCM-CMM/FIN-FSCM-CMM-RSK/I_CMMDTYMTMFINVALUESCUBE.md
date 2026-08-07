@@ -1,13 +1,13 @@
 ---
 name: I_CMMDTYMTMFINVALUESCUBE
-description: Derivative Mark To Market - Cube
+description: "Derivative Mark To Market - Cube"
 app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMFINVALUESCUBE')/$value
-semantic_en: Derivative Mark To Market - Cube
+semantic_en: "Derivative Mark To Market - Cube"
 tags:
   - FIN
   - bo:companycode

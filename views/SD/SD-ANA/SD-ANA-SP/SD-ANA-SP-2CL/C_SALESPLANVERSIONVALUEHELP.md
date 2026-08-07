@@ -1,6 +1,6 @@
 ---
 name: C_SALESPLANVERSIONVALUEHELP
-description: Salesplanversionvaluehelp
+description: "Salesplanversionvaluehelp"
 app_component: SD-ANA-SP-2CL
 software_component: SAPSCORE
 release_state: released

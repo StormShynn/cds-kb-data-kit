@@ -1,26 +1,26 @@
 ---
 name: I_ARUNANLYTSBLKDSLSORDCUBE
-description: Blocked Sales Orders - Cube
+description: "Blocked Sales Orders - Cube"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSBLKDSLSORDCUBE')/$value
-semantic_en: Blocked Sales Orders - Cube
-semantic_vi: Blocked Sales Orders - Cube — CDS view tổng hợp dựa trên I_SupAssgmtBlkdSlsOrdItmsC.
+semantic_en: "Blocked Sales Orders - Cube"
+semantic_vi: "Blocked Sales Orders - Cube — CDS view tổng hợp dựa trên I_SupAssgmtBlkdSlsOrdItmsC."
 keywords:
-  - blocked
-  - sales
-  - orders
-  - cube
-  - requirement
-  - document
-  - number
-  - item
-  - issue
-  - name
-  - category
+  - "blocked"
+  - "sales"
+  - "orders"
+  - "cube"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "issue"
+  - "name"
+  - "category"
 tags:
   - LO
   - bo:salesorder

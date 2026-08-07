@@ -1,13 +1,13 @@
 ---
 name: C_GTEEMBILLINGITEMSBILLEDQ
-description: Grantee Mgmt Billg Items Billed - Query
+description: "Grantee Mgmt Billg Items Billed - Query"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GTEEMBILLINGITEMSBILLEDQ')/$value
-semantic_en: Grantee Mgmt Billg Items Billed - Query
+semantic_en: "Grantee Mgmt Billg Items Billed - Query"
 tags:
   - PSM
   - bo:billingdocument

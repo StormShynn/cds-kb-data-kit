@@ -1,13 +1,13 @@
 ---
 name: I_ONRREXCEPTIONREASON
-description: Office of Natural Resources Revenue Exception Reason
+description: "Office of Natural Resources Revenue Exception Reason"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ONRREXCEPTIONREASON')/$value
-semantic_en: Office of Natural Resources Revenue Exception Reason
+semantic_en: "Office of Natural Resources Revenue Exception Reason"
 tags:
   - IS
   - bo:companycode

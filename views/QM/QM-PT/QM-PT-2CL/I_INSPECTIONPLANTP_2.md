@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONPLANTP_2
-description: Inspectionplantp 2
+description: "Inspectionplantp 2"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

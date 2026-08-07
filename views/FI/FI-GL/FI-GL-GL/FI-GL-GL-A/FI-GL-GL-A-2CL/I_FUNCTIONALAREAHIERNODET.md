@@ -1,6 +1,6 @@
 ---
 name: I_FUNCTIONALAREAHIERNODET
-description: Functionalareahiernodet
+description: "Functionalareahiernodet"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

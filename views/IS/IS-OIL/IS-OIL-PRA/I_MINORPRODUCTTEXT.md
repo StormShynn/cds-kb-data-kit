@@ -1,13 +1,13 @@
 ---
 name: I_MINORPRODUCTTEXT
-description: Minor Product - Text
+description: "Minor Product - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MINORPRODUCTTEXT')/$value
-semantic_en: Minor Product - Text
+semantic_en: "Minor Product - Text"
 tags:
   - IS
   - bo:material

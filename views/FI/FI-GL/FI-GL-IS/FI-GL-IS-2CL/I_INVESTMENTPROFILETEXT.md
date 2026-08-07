@@ -1,13 +1,13 @@
 ---
 name: I_INVESTMENTPROFILETEXT
-description: Capital Investment measure profile - Txt
+description: "Capital Investment measure profile - Txt"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INVESTMENTPROFILETEXT')/$value
-semantic_en: Capital Investment measure profile - Txt
+semantic_en: "Capital Investment measure profile - Txt"
 tags:
   - FI
   - bo:companycode

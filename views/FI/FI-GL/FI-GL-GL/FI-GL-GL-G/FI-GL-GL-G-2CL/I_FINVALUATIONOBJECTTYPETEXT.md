@@ -1,13 +1,13 @@
 ---
 name: I_FINVALUATIONOBJECTTYPETEXT
-description: Financial Valuation Object Type - Text
+description: "Financial Valuation Object Type - Text"
 app_component: FI-GL-GL-G-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINVALUATIONOBJECTTYPETEXT')/$value
-semantic_en: Financial Valuation Object Type - Text
+semantic_en: "Financial Valuation Object Type - Text"
 tags:
   - FI
   - bo:companycode

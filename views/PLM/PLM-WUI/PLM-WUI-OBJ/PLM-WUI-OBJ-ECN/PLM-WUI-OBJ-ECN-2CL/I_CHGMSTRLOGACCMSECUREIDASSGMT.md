@@ -1,13 +1,13 @@
 ---
 name: I_CHGMSTRLOGACCMSECUREIDASSGMT
-description: This CDS view helps retrieve change number assignments to secure IDs used in access control management (ACM). This CDS view provides the prerequisites for answering the following business questions: Which change numbers are assigned to a certain access control context? To which access control contexts has a certain change number been assigned?
+description: "This CDS view helps retrieve change number assignments to secure IDs used in access control management (ACM). This CDS view provides the prerequisites for answering the following business questions: Which change numbers are assigned to a certain access control context? To which access control contexts has a certain change number been assigned?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHGMSTRLOGACCMSECUREIDASSGMT')/$value
-semantic_en: This CDS view helps retrieve change number assignments to secure IDs used in access control management (ACM). This CDS view provides the prerequisites for answering the following business questions: Which change numbers are assigned to a certain access control context? To which access control contexts has a certain change number been assigned?
+semantic_en: "This CDS view helps retrieve change number assignments to secure IDs used in access control management (ACM). This CDS view provides the prerequisites for answering the following business questions: Which change numbers are assigned to a certain access control context? To which access control contexts has a certain change number been assigned?"
 tags:
   - PLM
   - bo:plant

@@ -1,6 +1,6 @@
 ---
 name: I_TAXTYPE
-description: Taxtype
+description: "Taxtype"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

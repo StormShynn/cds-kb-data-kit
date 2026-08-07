@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERPARTNERTP
-description: Sales OrderPARTNERTP
+description: "Sales OrderPARTNERTP"
 app_component: SD-SLS-API-2CL
 software_component: SAPSCORE
 release_state: released

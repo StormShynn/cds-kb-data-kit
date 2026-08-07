@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTPRODGSTATASSGMTTP
-description: Jntopgagrmtprodgstatassgmttp
+description: "Jntopgagrmtprodgstatassgmttp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

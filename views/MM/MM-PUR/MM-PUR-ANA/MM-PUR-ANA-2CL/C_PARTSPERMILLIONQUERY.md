@@ -1,25 +1,25 @@
 ---
 name: C_PARTSPERMILLIONQUERY
-description: Parts Per Million Query View
+description: "Parts Per Million Query View"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PARTSPERMILLIONQUERY')/$value
-semantic_en: Parts Per Million Query View
-semantic_vi: Parts Per Million Query View — CDS view tiêu dùng dựa trên C_PartsPerMillionCube.
+semantic_en: "Parts Per Million Query View"
+semantic_vi: "Parts Per Million Query View — CDS view tiêu dùng dựa trên C_PartsPerMillionCube."
 keywords:
-  - parts
-  - per
-  - million
-  - query
-  - material
-  - document
-  - item
-  - year
-  - purchase
-  - order
+  - "parts"
+  - "per"
+  - "million"
+  - "query"
+  - "material"
+  - "document"
+  - "item"
+  - "year"
+  - "purchase"
+  - "order"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

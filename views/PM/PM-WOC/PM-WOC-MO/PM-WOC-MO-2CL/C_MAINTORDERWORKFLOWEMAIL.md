@@ -1,27 +1,27 @@
 ---
 name: C_MAINTORDERWORKFLOWEMAIL
-description: Maintenance Order Details for WF
+description: "Maintenance Order Details for WF"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERWORKFLOWEMAIL')/$value
-semantic_en: Maintenance Order Details for WF
-semantic_vi: Maintenance Order Details for WF — CDS view tiêu dùng dựa trên I_WorkflowTask.
+semantic_en: "Maintenance Order Details for WF"
+semantic_vi: "Maintenance Order Details for WF — CDS view tiêu dùng dựa trên I_WorkflowTask."
 keywords:
-  - maintenance
-  - order
-  - details
-  - for
-  - workflow
-  - task
-  - internal
-  - desc
-  - maint
-  - priority
-  - planning
-  - plant
+  - "maintenance"
+  - "order"
+  - "details"
+  - "for"
+  - "workflow"
+  - "task"
+  - "internal"
+  - "desc"
+  - "maint"
+  - "priority"
+  - "planning"
+  - "plant"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

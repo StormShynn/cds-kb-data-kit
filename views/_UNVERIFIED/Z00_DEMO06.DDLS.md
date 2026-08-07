@@ -1,24 +1,24 @@
 ---
 name: Z00_DEMO06.DDLS
-description: Demo 6: Outer Joins
+description: "Demo 6: Outer Joins"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/appenmaier/abap_2601/blob/7395d2798390d70e5816a44ca6081488e619e497/src/z00_demo06.ddls.asddls
-semantic_en: Demo 6: Outer Joins — CDS view.
-semantic_vi: Demo 6: Outer Joins — CDS view dựa trên Demo 6: Outer Joins.
+semantic_en: "Demo 6: Outer Joins — CDS view."
+semantic_vi: "Demo 6: Outer Joins — CDS view dựa trên Demo 6: Outer Joins."
 keywords:
-  - demo
-  - outer
-  - joins
-  - carrier
-  - connection
-  - flight
-  - date
-  - name
-  - airport
+  - "demo"
+  - "outer"
+  - "joins"
+  - "carrier"
+  - "connection"
+  - "flight"
+  - "date"
+  - "name"
+  - "airport"
 ---
 # Z00_DEMO06.DDLS
 

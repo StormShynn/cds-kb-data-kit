@@ -1,6 +1,6 @@
 ---
 name: I_JOURNALENTRYTP
-description: Journal EntryTP
+description: "Journal EntryTP"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

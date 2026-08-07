@@ -1,6 +1,6 @@
 ---
 name: I_SRVCMGMTPAYMENTTERMSVH
-description: Srvcmgmtpaymenttermsvh
+description: "Srvcmgmtpaymenttermsvh"
 app_component: CRM-S4-SRV-MC-2CL
 software_component: SAPSCORE
 release_state: released

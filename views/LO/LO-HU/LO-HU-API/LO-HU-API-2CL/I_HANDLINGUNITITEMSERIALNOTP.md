@@ -1,6 +1,6 @@
 ---
 name: I_HANDLINGUNITITEMSERIALNOTP
-description: Handlingunititemserialnotp
+description: "Handlingunititemserialnotp"
 app_component: LO-HU-API-2CL
 software_component: SAPSCORE
 release_state: released

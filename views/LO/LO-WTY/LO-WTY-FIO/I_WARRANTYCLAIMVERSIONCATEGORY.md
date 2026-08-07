@@ -1,6 +1,6 @@
 ---
 name: I_WARRANTYCLAIMVERSIONCATEGORY
-description: Warrantyclaimversioncategory
+description: "Warrantyclaimversioncategory"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDDOCTYPE
-description: Documentinforecorddoctype
+description: "Documentinforecorddoctype"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

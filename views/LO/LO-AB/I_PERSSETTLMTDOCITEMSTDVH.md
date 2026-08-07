@@ -1,6 +1,6 @@
 ---
 name: I_PERSSETTLMTDOCITEMSTDVH
-description: Perssettlmtdocitemstdvh
+description: "Perssettlmtdocitemstdvh"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

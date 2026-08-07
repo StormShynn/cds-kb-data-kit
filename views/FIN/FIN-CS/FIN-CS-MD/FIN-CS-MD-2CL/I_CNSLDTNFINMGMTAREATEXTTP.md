@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFINMGMTAREATEXTTP
-description: Cnsldtnfinmgmtareatexttp
+description: "Cnsldtnfinmgmtareatexttp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

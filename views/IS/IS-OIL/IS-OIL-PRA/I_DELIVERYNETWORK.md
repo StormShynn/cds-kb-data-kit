@@ -1,13 +1,13 @@
 ---
 name: I_DELIVERYNETWORK
-description: Master Data for Delivery Network
+description: "Master Data for Delivery Network"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DELIVERYNETWORK')/$value
-semantic_en: Master Data for Delivery Network
+semantic_en: "Master Data for Delivery Network"
 tags:
   - IS
   - bo:businesspartner

@@ -1,6 +1,6 @@
 ---
 name: D_CUSTOMERRETURNITEMDELETED
-description: D Customerreturnitemdeleted
+description: "D Customerreturnitemdeleted"
 app_component: SD-SLS-RE-2CL
 software_component: SAPSCORE
 release_state: released

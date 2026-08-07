@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTROVHDBURDENRATEPCTTP
-description: Jntvntrovhdburdenratepcttp
+description: "Jntvntrovhdburdenratepcttp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_EQUIPMENTINSTALLATIONP
-description: D Equipmentinstallationp
+description: "D Equipmentinstallationp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

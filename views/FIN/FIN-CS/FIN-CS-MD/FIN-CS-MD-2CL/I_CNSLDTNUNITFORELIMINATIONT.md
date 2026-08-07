@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNUNITFORELIMINATIONT
-description: Cnsldtn Unit for Mgmt Elimination - Text
+description: "Cnsldtn Unit for Mgmt Elimination - Text"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNITFORELIMINATIONT')/$value
-semantic_en: Cnsldtn Unit for Mgmt Elimination - Text
+semantic_en: "Cnsldtn Unit for Mgmt Elimination - Text"
 tags:
   - FIN
   - component:FIN-CS-MD-2CL

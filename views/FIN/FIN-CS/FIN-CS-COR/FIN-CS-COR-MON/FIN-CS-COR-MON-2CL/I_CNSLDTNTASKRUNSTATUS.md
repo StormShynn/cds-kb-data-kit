@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNTASKRUNSTATUS
-description: Cnsldtntaskrunstatus
+description: "Cnsldtntaskrunstatus"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

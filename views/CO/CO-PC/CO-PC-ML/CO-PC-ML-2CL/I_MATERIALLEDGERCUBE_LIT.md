@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALLEDGERCUBE_LIT
-description: Materialledgercube Lit
+description: "Materialledgercube Lit"
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released

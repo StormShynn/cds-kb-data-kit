@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMAPPLICATIONLOG
-description: Wrntyclaimapplicationlog
+description: "Wrntyclaimapplicationlog"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERMATERIALDOC_2
-description: Serial NumberMATERIALDOC 2
+description: "Serial NumberMATERIALDOC 2"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

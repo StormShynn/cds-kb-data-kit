@@ -1,13 +1,13 @@
 ---
 name: I_PRODUCTPLANTESPP
-description: This CDS view provides the consumer with list of Extended Service Parts Planning Specific details of the product-plant records. Description: Product Plant ESPP active core entity
+description: "This CDS view provides the consumer with list of Extended Service Parts Planning Specific details of the product-plant records. Description: Product Plant ESPP active core entity"
 app_component: SCM-S4H-MD-PR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTPLANTESPP')/$value
-semantic_en: This CDS view provides the consumer with list of Extended Service Parts Planning Specific details of the product-plant records. Description: Product Plant ESPP active core entity
+semantic_en: "This CDS view provides the consumer with list of Extended Service Parts Planning Specific details of the product-plant records. Description: Product Plant ESPP active core entity"
 tags:
   - SCM
   - bo:companycode

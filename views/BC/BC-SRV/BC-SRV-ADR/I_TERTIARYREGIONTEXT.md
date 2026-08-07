@@ -1,6 +1,6 @@
 ---
 name: I_TERTIARYREGIONTEXT
-description: Tertiaryregiontext
+description: "Tertiaryregiontext"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_MAINTORDCONFIRMATIONCANCELP
-description: D Maintordconfirmationcancelp
+description: "D Maintordconfirmationcancelp"
 app_component: PM-WOC-JC-2CL
 software_component: SAPSCORE
 release_state: released

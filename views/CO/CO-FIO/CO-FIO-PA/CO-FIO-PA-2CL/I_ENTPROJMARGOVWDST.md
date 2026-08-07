@@ -1,13 +1,13 @@
 ---
 name: I_ENTPROJMARGOVWDST
-description: Document for EntProjMargOvw
+description: "Document for EntProjMargOvw"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPROJMARGOVWDST')/$value
-semantic_en: Document for EntProjMargOvw
+semantic_en: "Document for EntProjMargOvw"
 tags:
   - CO
   - bo:project

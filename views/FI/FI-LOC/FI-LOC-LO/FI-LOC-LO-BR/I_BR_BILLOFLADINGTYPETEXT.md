@@ -1,6 +1,6 @@
 ---
 name: I_BR_BILLOFLADINGTYPETEXT
-description: BR Billofladingtypetext
+description: "BR Billofladingtypetext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

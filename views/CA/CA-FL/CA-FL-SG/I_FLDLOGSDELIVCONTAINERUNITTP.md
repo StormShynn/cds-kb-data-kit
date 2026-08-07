@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSDELIVCONTAINERUNITTP
-description: Fldlogsdelivcontainerunittp
+description: "Fldlogsdelivcontainerunittp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

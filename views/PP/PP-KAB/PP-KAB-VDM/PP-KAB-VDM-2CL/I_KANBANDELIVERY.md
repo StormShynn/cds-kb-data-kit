@@ -1,6 +1,6 @@
 ---
 name: I_KANBANDELIVERY
-description: Kanbandelivery
+description: "Kanbandelivery"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

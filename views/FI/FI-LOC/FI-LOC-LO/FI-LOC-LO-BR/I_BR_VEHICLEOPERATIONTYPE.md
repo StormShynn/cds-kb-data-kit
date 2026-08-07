@@ -1,6 +1,6 @@
 ---
 name: I_BR_VEHICLEOPERATIONTYPE
-description: BR Vehicleoperationtype
+description: "BR Vehicleoperationtype"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

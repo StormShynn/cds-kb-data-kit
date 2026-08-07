@@ -1,13 +1,13 @@
 ---
 name: I_EMLTMPLCUSTSUPLRCOMPANYCODE
-description: Email Template Data Provider
+description: "Email Template Data Provider"
 app_component: CA-GTF-FXU-FI-AR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EMLTMPLCUSTSUPLRCOMPANYCODE')/$value
-semantic_en: Email Template Data Provider
+semantic_en: "Email Template Data Provider"
 tags:
   - CA
   - CA-GTF

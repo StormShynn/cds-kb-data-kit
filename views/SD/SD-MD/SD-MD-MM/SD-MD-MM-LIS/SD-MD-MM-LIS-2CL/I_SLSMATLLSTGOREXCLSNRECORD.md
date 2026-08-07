@@ -1,6 +1,6 @@
 ---
 name: I_SLSMATLLSTGOREXCLSNRECORD
-description: Slsmatllstgorexclsnrecord
+description: "Slsmatllstgorexclsnrecord"
 app_component: SD-MD-MM-LIS-2CL
 software_component: SAPSCORE
 release_state: released

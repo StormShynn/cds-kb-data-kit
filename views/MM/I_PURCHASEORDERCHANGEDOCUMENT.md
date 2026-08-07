@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDERCHANGEDOCUMENT
-description: Purchase OrderCHANGEDOCUMENT
+description: "Purchase OrderCHANGEDOCUMENT"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

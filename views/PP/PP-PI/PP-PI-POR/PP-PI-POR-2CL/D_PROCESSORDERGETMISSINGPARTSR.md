@@ -1,6 +1,6 @@
 ---
 name: D_PROCESSORDERGETMISSINGPARTSR
-description: D Processordergetmissingpartsr
+description: "D Processordergetmissingpartsr"
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

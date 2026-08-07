@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERCHANGELOG
-description: Cost CenterCHANGELOG
+description: "Cost CenterCHANGELOG"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

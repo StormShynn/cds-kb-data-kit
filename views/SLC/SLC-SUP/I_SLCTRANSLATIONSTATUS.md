@@ -1,13 +1,13 @@
 ---
 name: I_SLCTRANSLATIONSTATUS
-description: This view provides supported values for SLCTRANSLATIONSTATUS. The values and their meanings are: Translation Status Code Fixed Value Description 00 Not Relevant for Translation 01 To Be Translated 02 In Translation 03 Translated
+description: "This view provides supported values for SLCTRANSLATIONSTATUS. The values and their meanings are: Translation Status Code Fixed Value Description 00 Not Relevant for Translation 01 To Be Translated 02 In Translation 03 Translated"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SLCTRANSLATIONSTATUS')/$value
-semantic_en: This view provides supported values for SLCTRANSLATIONSTATUS. The values and their meanings are: Translation Status Code Fixed Value Description 00 Not Relevant for Translation 01 To Be Translated 02 In Translation 03 Translated
+semantic_en: "This view provides supported values for SLCTRANSLATIONSTATUS. The values and their meanings are: Translation Status Code Fixed Value Description 00 Not Relevant for Translation 01 To Be Translated 02 In Translation 03 Translated"
 tags:
   - SLC
   - bo:companycode

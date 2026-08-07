@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTCOSTESTIMATEITEMTP
-description: Productcostestimateitemtp
+description: "Productcostestimateitemtp"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released

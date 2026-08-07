@@ -1,6 +1,6 @@
 ---
 name: I_DOCINFORECORDACCMSECIDASGT
-description: Docinforecordaccmsecidasgt
+description: "Docinforecordaccmsecidasgt"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

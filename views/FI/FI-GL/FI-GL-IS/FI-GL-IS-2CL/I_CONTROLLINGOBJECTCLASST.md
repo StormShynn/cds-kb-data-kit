@@ -1,6 +1,6 @@
 ---
 name: I_CONTROLLINGOBJECTCLASST
-description: Controllingobjectclasst
+description: "Controllingobjectclasst"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

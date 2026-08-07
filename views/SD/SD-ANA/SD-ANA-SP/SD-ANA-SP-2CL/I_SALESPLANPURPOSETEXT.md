@@ -1,6 +1,6 @@
 ---
 name: I_SALESPLANPURPOSETEXT
-description: Salesplanpurposetext
+description: "Salesplanpurposetext"
 app_component: SD-ANA-SP-2CL
 software_component: SAPSCORE
 release_state: released

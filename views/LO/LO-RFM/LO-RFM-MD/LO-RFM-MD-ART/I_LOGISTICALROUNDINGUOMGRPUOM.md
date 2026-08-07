@@ -1,6 +1,6 @@
 ---
 name: I_LOGISTICALROUNDINGUOMGRPUOM
-description: Logisticalroundinguomgrpuom
+description: "Logisticalroundinguomgrpuom"
 app_component: LO-RFM-MD-ART
 software_component: SAPSCORE
 release_state: released

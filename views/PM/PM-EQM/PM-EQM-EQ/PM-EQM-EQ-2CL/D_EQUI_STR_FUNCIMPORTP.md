@@ -1,6 +1,6 @@
 ---
 name: D_EQUI_STR_FUNCIMPORTP
-description: D Equi Str Funcimportp
+description: "D Equi Str Funcimportp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

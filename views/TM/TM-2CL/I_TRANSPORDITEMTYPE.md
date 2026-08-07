@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPORDITEMTYPE
-description: Transportation Order Item Type
+description: "Transportation Order Item Type"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPORDITEMTYPE')/$value
-semantic_en: Transportation Order Item Type
+semantic_en: "Transportation Order Item Type"
 tags:
   - TM
   - bo:purchaseorder

@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJRESOURCETEXT
-description: This CDS view provides descriptions of the resources (roles, additional resources, services, or expenses) that can be planned in a customer or internal project.
+description: "This CDS view provides descriptions of the resources (roles, additional resources, services, or expenses) that can be planned in a customer or internal project."
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJRESOURCETEXT')/$value
-semantic_en: This CDS view provides descriptions of the resources (roles, additional resources, services, or expenses) that can be planned in a customer or internal project.
+semantic_en: "This CDS view provides descriptions of the resources (roles, additional resources, services, or expenses) that can be planned in a customer or internal project."
 tags:
   - CA
   - bo:businesspartner

@@ -1,6 +1,6 @@
 ---
 name: I_BPRATINGTRENDTEXT
-description: Bpratingtrendtext
+description: "Bpratingtrendtext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

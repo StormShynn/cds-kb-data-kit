@@ -1,13 +1,13 @@
 ---
 name: I_GRANTSTATUSTEXT
-description: Grant Status - Text
+description: "Grant Status - Text"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRANTSTATUSTEXT')/$value
-semantic_en: Grant Status - Text
+semantic_en: "Grant Status - Text"
 tags:
   - PSM
   - component:PSM-GM-GTE-IS

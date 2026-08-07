@@ -1,13 +1,13 @@
 ---
 name: I_EHSDEVIATIONINCIDENTCUBE
-description: Deviation Incident - Cube
+description: "Deviation Incident - Cube"
 app_component: EHS-SUS-EM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSDEVIATIONINCIDENTCUBE')/$value
-semantic_en: Deviation Incident - Cube
+semantic_en: "Deviation Incident - Cube"
 tags:
   - EHS
   - bo:salesorganization

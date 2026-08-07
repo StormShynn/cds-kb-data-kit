@@ -1,6 +1,6 @@
 ---
 name: D_VARCONFIGNTBLCREATEVALUEP
-description: D Varconfigntblcreatevaluep
+description: "D Varconfigntblcreatevaluep"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

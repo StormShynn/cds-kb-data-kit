@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDEROPERATIONTP
-description: Production OrderOPERATIONTP
+description: "Production OrderOPERATIONTP"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

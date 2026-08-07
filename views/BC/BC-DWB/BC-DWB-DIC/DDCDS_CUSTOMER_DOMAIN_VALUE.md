@@ -1,6 +1,6 @@
 ---
 name: DDCDS_CUSTOMER_DOMAIN_VALUE
-description: Ddcds Customer Domain Value
+description: "Ddcds Customer Domain Value"
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

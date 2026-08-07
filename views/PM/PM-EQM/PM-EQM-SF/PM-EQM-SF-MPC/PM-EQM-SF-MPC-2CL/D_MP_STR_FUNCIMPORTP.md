@@ -1,6 +1,6 @@
 ---
 name: D_MP_STR_FUNCIMPORTP
-description: D MP Str Funcimportp
+description: "D MP Str Funcimportp"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

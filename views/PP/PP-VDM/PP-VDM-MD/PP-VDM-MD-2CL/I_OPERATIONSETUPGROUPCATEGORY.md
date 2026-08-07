@@ -1,6 +1,6 @@
 ---
 name: I_OPERATIONSETUPGROUPCATEGORY
-description: Operationsetupgroupcategory
+description: "Operationsetupgroupcategory"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

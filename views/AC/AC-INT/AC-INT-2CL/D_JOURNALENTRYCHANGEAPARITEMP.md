@@ -1,6 +1,6 @@
 ---
 name: D_JOURNALENTRYCHANGEAPARITEMP
-description: D Journal EntryCHANGEAPARITEMP
+description: "D Journal EntryCHANGEAPARITEMP"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

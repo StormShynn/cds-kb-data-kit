@@ -1,23 +1,23 @@
 ---
 name: ZINCT_I_JRZ.DDLS
-description: Incidentes Interface Entity
+description: "Incidentes Interface Entity"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Jrochaz01/ABAP_CLOUDII_ZAPATA_V2/blob/e9522ac8b5cf2d4982ab34e0040a5e2fbb3f9d77/src/zinct_i_jrz.ddls.asddls
-semantic_en: Incidentes Interface Entity — CDS view.
-semantic_vi: Incidentes Interface Entity — CDS view dựa trên Incidentes Interface Entity.
+semantic_en: "Incidentes Interface Entity — CDS view."
+semantic_vi: "Incidentes Interface Entity — CDS view dựa trên Incidentes Interface Entity."
 keywords:
-  - incidentes
-  - interface
-  - entity
-  - uuid
-  - incident
-  - title
-  - description
-  - status
+  - "incidentes"
+  - "interface"
+  - "entity"
+  - "uuid"
+  - "incident"
+  - "title"
+  - "description"
+  - "status"
 tags:
   - AC
   - component:AC

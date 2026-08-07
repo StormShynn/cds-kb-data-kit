@@ -1,6 +1,6 @@
 ---
 name: I_FUNCTIONALLOCATIONLONGTEXTTP
-description: Functionallocationlongtexttp
+description: "Functionallocationlongtexttp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SEMTAGGLACCOUNTHIERARCHY
-description: Semtaggl AccountHIERARCHY
+description: "Semtaggl AccountHIERARCHY"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

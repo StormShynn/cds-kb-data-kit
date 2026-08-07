@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFMODELTEXT
-description: BR Nfmodeltext
+description: "BR Nfmodeltext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

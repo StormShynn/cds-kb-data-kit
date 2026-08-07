@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECPLANNINGCATEGORY
-description: Pubsecplanningcategory
+description: "Pubsecplanningcategory"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_INSPLOTOPERATIONCREATED
-description: D Insplotoperationcreated
+description: "D Insplotoperationcreated"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

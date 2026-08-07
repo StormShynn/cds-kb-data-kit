@@ -1,6 +1,6 @@
 ---
 name: I_JITCALLSUMMARIZATIONSTRGYTXT
-description: Jitcallsummarizationstrgytxt
+description: "Jitcallsummarizationstrgytxt"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

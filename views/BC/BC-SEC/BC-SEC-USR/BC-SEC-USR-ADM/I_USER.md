@@ -1,6 +1,6 @@
 ---
 name: I_USER
-description: User
+description: "User"
 app_component: BC-SEC-USR-ADM
 software_component: SAP_BASIS
 release_state: released

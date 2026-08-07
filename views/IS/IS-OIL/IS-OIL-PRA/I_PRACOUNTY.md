@@ -1,13 +1,13 @@
 ---
 name: I_PRACOUNTY
-description: Production Revenue Accounting County
+description: "Production Revenue Accounting County"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRACOUNTY')/$value
-semantic_en: Production Revenue Accounting County
+semantic_en: "Production Revenue Accounting County"
 tags:
   - IS
   - account

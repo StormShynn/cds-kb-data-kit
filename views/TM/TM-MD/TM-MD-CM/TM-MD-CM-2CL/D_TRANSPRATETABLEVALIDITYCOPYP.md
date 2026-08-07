@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPRATETABLEVALIDITYCOPYP
-description: D Transpratetablevaliditycopyp
+description: "D Transpratetablevaliditycopyp"
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

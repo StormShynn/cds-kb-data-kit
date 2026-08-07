@@ -1,6 +1,6 @@
 ---
 name: I_PHYSINVTRYBOOKSERIALNMBRTP
-description: Physinvtrybookserialnmbrtp
+description: "Physinvtrybookserialnmbrtp"
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SDDOCUMENTOBJECTTEXT
-description: Sddocumentobjecttext
+description: "Sddocumentobjecttext"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_PURSCHEDGAGRMTCHANGED
-description: D Purschedgagrmtchanged
+description: "D Purschedgagrmtchanged"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

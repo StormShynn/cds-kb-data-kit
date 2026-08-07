@@ -1,17 +1,17 @@
 ---
 name: I_PRODUCTMARGINANALYSISCUBE
-description: Product Margin - Cube
+description: "Product Margin - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTMARGINANALYSISCUBE')/$value
-semantic_en: Product Margin - Cube
+semantic_en: "Product Margin - Cube"
 keywords:
-  - Product Margin - Cube
-  - Product Margin - Cube
-  - Product Margin - Cube
+  - "Product Margin - Cube"
+  - "Product Margin - Cube"
+  - "Product Margin - Cube"
 tags:
   - CO
   - bo:material

@@ -1,6 +1,6 @@
 ---
 name: I_CAPERIODCODE
-description: Caperiodcode
+description: "Caperiodcode"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

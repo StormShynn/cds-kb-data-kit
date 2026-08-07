@@ -1,6 +1,6 @@
 ---
 name: I_WITHHOLDINGTAXCODE
-description: Withholdingtaxcode
+description: "Withholdingtaxcode"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

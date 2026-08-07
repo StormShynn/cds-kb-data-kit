@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITFORELIMINATION_2
-description: Cnsldtnunitforelimination 2
+description: "Cnsldtnunitforelimination 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

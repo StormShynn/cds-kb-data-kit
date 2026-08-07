@@ -1,13 +1,13 @@
 ---
 name: I_COLLTRLREVALUATIONRESULT
-description: Valuation Results for Collateral RE
+description: "Valuation Results for Collateral RE"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLTRLREVALUATIONRESULT')/$value
-semantic_en: Valuation Results for Collateral RE
+semantic_en: "Valuation Results for Collateral RE"
 tags:
   - FS
   - component:FS-CMS

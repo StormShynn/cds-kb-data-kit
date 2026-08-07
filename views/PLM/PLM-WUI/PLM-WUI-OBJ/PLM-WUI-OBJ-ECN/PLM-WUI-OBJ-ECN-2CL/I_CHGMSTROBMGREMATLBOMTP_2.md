@@ -1,6 +1,6 @@
 ---
 name: I_CHGMSTROBMGREMATLBOMTP_2
-description: Chgmstrobmgrematlbomtp 2
+description: "Chgmstrobmgrematlbomtp 2"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

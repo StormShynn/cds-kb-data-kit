@@ -1,6 +1,6 @@
 ---
 name: I_EWM_STORBINTOTCAPISMNTNDTEXT
-description: Ewm Storbintotcapismntndtext
+description: "Ewm Storbintotcapismntndtext"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,27 +1,27 @@
 ---
 name: C_ARBANKSTMTREPROCESSING
-description: This CDS view provides you with an overview about the manual reprocessing of incoming payments (bank statement items). The search result aggregates the number of reprocessed items and valuates them with the reprocessing costs and calculates the ratio of reprocessed items per account (company code and customer), bank and payment transaction type. This CDS view provides you with the information that you need to answer the following business questions: Are the settings for automatic posting complete? How often and under what circumstances is manual reprocessing required? This query cannot be accessed directly using SQL or custom CDS views. This query can be used in the key user tool KPI Design or Create Reports.
+description: "This CDS view provides you with an overview about the manual reprocessing of incoming payments (bank statement items). The search result aggregates the number of reprocessed items and valuates them with the reprocessing costs and calculates the ratio of reprocessed items per account (company code and customer), bank and payment transaction type. This CDS view provides you with the information that you need to answer the following business questions: Are the settings for automatic posting complete? How often and under what circumstances is manual reprocessing required? This query cannot be accessed directly using SQL or custom CDS views. This query can be used in the key user tool KPI Design or Create Reports."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARBANKSTMTREPROCESSING')/$value
-semantic_en: This CDS view provides you with an overview about the manual reprocessing of incoming payments (bank statement items). The search result aggregates the number of reprocessed items and valuates them with the reprocessing costs and calculates the ratio of reprocessed items per account (company code and customer), bank and payment transaction type. This CDS view provides you with the information that you need to answer the following business questions: Are the settings for automatic posting complete? How often and under what circumstances is manual reprocessing required? This query cannot be accessed directly using SQL or custom CDS views. This query can be used in the key user tool KPI Design or Create Reports.
-semantic_vi: Reprocessing Rate of Incoming Payments — CDS view tiêu dùng dựa trên I_ARBankStmtReprocessing.
+semantic_en: "This CDS view provides you with an overview about the manual reprocessing of incoming payments (bank statement items). The search result aggregates the number of reprocessed items and valuates them with the reprocessing costs and calculates the ratio of reprocessed items per account (company code and customer), bank and payment transaction type. This CDS view provides you with the information that you need to answer the following business questions: Are the settings for automatic posting complete? How often and under what circumstances is manual reprocessing required? This query cannot be accessed directly using SQL or custom CDS views. This query can be used in the key user tool KPI Design or Create Reports."
+semantic_vi: "Reprocessing Rate of Incoming Payments — CDS view tiêu dùng dựa trên I_ARBankStmtReprocessing."
 keywords:
-  - reprocessing
-  - rate
-  - incoming
-  - payments
-  - calendar
-  - month
-  - year
-  - bank
-  - country
-  - internal
-  - company
-  - code
+  - "reprocessing"
+  - "rate"
+  - "incoming"
+  - "payments"
+  - "calendar"
+  - "month"
+  - "year"
+  - "bank"
+  - "country"
+  - "internal"
+  - "company"
+  - "code"
 tags:
   - FI
   - account

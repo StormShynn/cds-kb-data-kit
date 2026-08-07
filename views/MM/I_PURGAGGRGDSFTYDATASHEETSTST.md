@@ -1,6 +1,6 @@
 ---
 name: I_PURGAGGRGDSFTYDATASHEETSTST
-description: Purgaggrgdsftydatasheetstst
+description: "Purgaggrgdsftydatasheetstst"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

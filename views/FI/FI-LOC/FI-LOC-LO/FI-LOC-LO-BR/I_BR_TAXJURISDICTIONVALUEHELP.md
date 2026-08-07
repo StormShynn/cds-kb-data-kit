@@ -1,6 +1,6 @@
 ---
 name: I_BR_TAXJURISDICTIONVALUEHELP
-description: BR Taxjurisdictionvaluehelp
+description: "BR Taxjurisdictionvaluehelp"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_EQUICATEGORYTEXT
-description: Equicategorytext
+description: "Equicategorytext"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

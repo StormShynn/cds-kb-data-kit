@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPRATETABLEDESCRIPTION_2
-description: Transpratetabledescription 2
+description: "Transpratetabledescription 2"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCRCYTRNSLTNMETHODT
-description: Cnsldtncrcytrnsltnmethodt
+description: "Cnsldtncrcytrnsltnmethodt"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

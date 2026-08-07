@@ -1,6 +1,6 @@
 ---
 name: D_CNSLDTNGRPJRNLENTRPOSTP
-description: D Cnsldtngrpjrnlentrpostp
+description: "D Cnsldtngrpjrnlentrpostp"
 app_component: FIN-CS-JE-2CL
 software_component: SAPSCORE
 release_state: released

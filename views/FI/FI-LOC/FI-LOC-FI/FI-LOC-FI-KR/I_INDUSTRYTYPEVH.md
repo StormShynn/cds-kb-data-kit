@@ -1,6 +1,6 @@
 ---
 name: I_INDUSTRYTYPEVH
-description: Industrytypevh
+description: "Industrytypevh"
 app_component: FI-LOC-FI-KR
 software_component: SAPSCORE
 release_state: released

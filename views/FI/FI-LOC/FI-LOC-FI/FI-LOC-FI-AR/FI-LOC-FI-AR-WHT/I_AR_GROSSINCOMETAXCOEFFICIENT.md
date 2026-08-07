@@ -1,6 +1,6 @@
 ---
 name: I_AR_GROSSINCOMETAXCOEFFICIENT
-description: AR Grossincometaxcoefficient
+description: "AR Grossincometaxcoefficient"
 app_component: FI-LOC-FI-AR-WHT
 software_component: SAPSCORE
 release_state: released

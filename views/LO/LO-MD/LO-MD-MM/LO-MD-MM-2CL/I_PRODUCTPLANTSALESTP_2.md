@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTPLANTSALESTP_2
-description: Productplantsalestp 2
+description: "Productplantsalestp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

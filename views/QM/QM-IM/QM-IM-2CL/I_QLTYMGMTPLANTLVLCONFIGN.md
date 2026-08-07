@@ -1,6 +1,6 @@
 ---
 name: I_QLTYMGMTPLANTLVLCONFIGN
-description: Qltymgmtplantlvlconfign
+description: "Qltymgmtplantlvlconfign"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

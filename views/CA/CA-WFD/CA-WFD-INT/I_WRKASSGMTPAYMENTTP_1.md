@@ -1,6 +1,6 @@
 ---
 name: I_WRKASSGMTPAYMENTTP_1
-description: Wrkassgmtpaymenttp 1
+description: "Wrkassgmtpaymenttp 1"
 app_component: CA-WFD-INT
 software_component: SAPSCORE
 release_state: released

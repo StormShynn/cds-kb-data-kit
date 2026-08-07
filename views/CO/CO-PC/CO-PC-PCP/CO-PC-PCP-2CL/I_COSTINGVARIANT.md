@@ -1,6 +1,6 @@
 ---
 name: I_COSTINGVARIANT
-description: Costingvariant
+description: "Costingvariant"
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released

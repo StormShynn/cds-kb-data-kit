@@ -1,6 +1,6 @@
 ---
 name: I_PURGTOTPRODCMPLNCSUPLRSTST
-description: Purgtotprodcmplncsuplrstst
+description: "Purgtotprodcmplncsuplrstst"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

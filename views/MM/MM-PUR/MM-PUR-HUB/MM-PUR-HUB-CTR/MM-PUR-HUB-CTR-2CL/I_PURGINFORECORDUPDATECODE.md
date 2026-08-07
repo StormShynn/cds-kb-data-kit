@@ -1,6 +1,6 @@
 ---
 name: I_PURGINFORECORDUPDATECODE
-description: Purginforecordupdatecode
+description: "Purginforecordupdatecode"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

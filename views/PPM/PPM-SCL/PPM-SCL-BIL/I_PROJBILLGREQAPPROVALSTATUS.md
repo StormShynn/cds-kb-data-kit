@@ -1,6 +1,6 @@
 ---
 name: I_PROJBILLGREQAPPROVALSTATUS
-description: Projbillgreqapprovalstatus
+description: "Projbillgreqapprovalstatus"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

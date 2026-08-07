@@ -1,13 +1,13 @@
 ---
 name: I_PRIMARYGEOGRLLOCATIONTEXT
-description: Primary Geographical Location Name - Text
+description: "Primary Geographical Location Name - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRIMARYGEOGRLLOCATIONTEXT')/$value
-semantic_en: Primary Geographical Location Name - Text
+semantic_en: "Primary Geographical Location Name - Text"
 tags:
   - IS
   - component:IS-OIL-PRA

@@ -1,13 +1,13 @@
 ---
 name: I_MAINTMBLAPPLICATIONUSERCUBE
-description: Mobile Application User - Cube
+description: "Mobile Application User - Cube"
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTMBLAPPLICATIONUSERCUBE')/$value
-semantic_en: Mobile Application User - Cube
+semantic_en: "Mobile Application User - Cube"
 tags:
   - MOB
   - component:MOB-APP-MAO-ERP

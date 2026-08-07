@@ -1,6 +1,6 @@
 ---
 name: D_MAINTORDTECHNICALCOMPLETEP
-description: D Maintordtechnicalcompletep
+description: "D Maintordtechnicalcompletep"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

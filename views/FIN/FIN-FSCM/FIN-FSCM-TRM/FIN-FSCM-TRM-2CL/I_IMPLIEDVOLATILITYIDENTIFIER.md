@@ -1,6 +1,6 @@
 ---
 name: I_IMPLIEDVOLATILITYIDENTIFIER
-description: Impliedvolatilityidentifier
+description: "Impliedvolatilityidentifier"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: C_CMMDTYPNLFINVALUEQUERY
-description: Derivative PnL Query
+description: "Derivative PnL Query"
 app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPNLFINVALUEQUERY')/$value
-semantic_en: Derivative PnL Query
+semantic_en: "Derivative PnL Query"
 tags:
   - FIN
   - bo:companycode

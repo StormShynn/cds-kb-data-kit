@@ -1,21 +1,21 @@
 ---
 name: I_ASSORTMENTLISTTYPET
-description: Assortment List Type - Text
+description: "Assortment List Type - Text"
 app_component: LO-RFM-MD-LST-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSORTMENTLISTTYPET')/$value
-semantic_en: Assortment List Type - Text
-semantic_vi: Assortment List Type - Text — CDS view giao diện dựa trên twbbt.
+semantic_en: "Assortment List Type - Text"
+semantic_vi: "Assortment List Type - Text — CDS view giao diện dựa trên twbbt."
 keywords:
-  - assortment
-  - list
-  - type
-  - text
-  - language
-  - name
+  - "assortment"
+  - "list"
+  - "type"
+  - "text"
+  - "language"
+  - "name"
 tags:
   - LO
   - bo:salesorder

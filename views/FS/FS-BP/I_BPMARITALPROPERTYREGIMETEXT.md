@@ -1,6 +1,6 @@
 ---
 name: I_BPMARITALPROPERTYREGIMETEXT
-description: Bpmaritalpropertyregimetext
+description: "Bpmaritalpropertyregimetext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_MATRIXCNSLDTNREPORTENHCDC_2
-description: Rule-Based Group Data Analysis - Cube
+description: "Rule-Based Group Data Analysis - Cube"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATRIXCNSLDTNREPORTENHCDC_2')/$value
-semantic_en: Rule-Based Group Data Analysis - Cube
+semantic_en: "Rule-Based Group Data Analysis - Cube"
 tags:
   - FIN
   - bo:purchaseorder

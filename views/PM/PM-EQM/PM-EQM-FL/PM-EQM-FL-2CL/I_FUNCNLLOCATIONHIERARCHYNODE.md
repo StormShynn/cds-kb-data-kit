@@ -1,6 +1,6 @@
 ---
 name: I_FUNCNLLOCATIONHIERARCHYNODE
-description: Funcnllocationhierarchynode
+description: "Funcnllocationhierarchynode"
 app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: C_CDBCLASSIFICTIONQRY_TST
-description: Cdbclassifictionqry Tst
+description: "Cdbclassifictionqry Tst"
 app_component: CA-DT
 software_component: SAPPCORE_H
 release_state: released

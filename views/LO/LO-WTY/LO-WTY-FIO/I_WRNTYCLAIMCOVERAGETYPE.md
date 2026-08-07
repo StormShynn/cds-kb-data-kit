@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMCOVERAGETYPE
-description: Wrntyclaimcoveragetype
+description: "Wrntyclaimcoveragetype"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

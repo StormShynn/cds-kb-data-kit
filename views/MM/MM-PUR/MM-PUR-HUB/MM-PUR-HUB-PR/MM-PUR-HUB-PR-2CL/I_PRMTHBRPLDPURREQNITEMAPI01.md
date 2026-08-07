@@ -1,6 +1,6 @@
 ---
 name: I_PRMTHBRPLDPURREQNITEMAPI01
-description: Prmthbrpldpurreqnitemapi 01
+description: "Prmthbrpldpurreqnitemapi 01"
 app_component: MM-PUR-HUB-PR-2CL
 software_component: SAPSCORE
 release_state: released

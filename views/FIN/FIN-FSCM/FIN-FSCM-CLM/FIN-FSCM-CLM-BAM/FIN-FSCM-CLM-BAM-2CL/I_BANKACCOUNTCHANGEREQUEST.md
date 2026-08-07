@@ -1,6 +1,6 @@
 ---
 name: I_BANKACCOUNTCHANGEREQUEST
-description: Bankaccountchangerequest
+description: "Bankaccountchangerequest"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

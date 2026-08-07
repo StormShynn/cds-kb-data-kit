@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRCUSTSETTLMTCATTXT
-description: Cndn Contract Cust Settlmt Cat - Text
+description: "Cndn Contract Cust Settlmt Cat - Text"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCUSTSETTLMTCATTXT')/$value
-semantic_en: Cndn Contract Cust Settlmt Cat - Text
+semantic_en: "Cndn Contract Cust Settlmt Cat - Text"
 tags:
   - LO
   - component:LO-GT-CHB

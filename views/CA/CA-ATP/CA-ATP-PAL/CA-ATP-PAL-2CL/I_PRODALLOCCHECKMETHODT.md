@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCCHECKMETHODT
-description: Prodalloccheckmethodt
+description: "Prodalloccheckmethodt"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

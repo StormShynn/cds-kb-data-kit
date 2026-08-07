@@ -1,6 +1,6 @@
 ---
 name: I_PERSWRKAGRMTMANAGERFORKEYDTE
-description: Perswrkagrmtmanagerforkeydte
+description: "Perswrkagrmtmanagerforkeydte"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_GLACCOUNTHIERARCHYSTDVH
-description: General Ledger Account Hierarchy
+description: "General Ledger Account Hierarchy"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTHIERARCHYSTDVH')/$value
-semantic_en: General Ledger Account Hierarchy
+semantic_en: "General Ledger Account Hierarchy"
 tags:
   - FI
   - account

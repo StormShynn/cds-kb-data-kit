@@ -1,6 +1,6 @@
 ---
 name: I_PURGDOCUMENTITEMCATEGORYTEXT
-description: Purgdocumentitemcategorytext
+description: "Purgdocumentitemcategorytext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

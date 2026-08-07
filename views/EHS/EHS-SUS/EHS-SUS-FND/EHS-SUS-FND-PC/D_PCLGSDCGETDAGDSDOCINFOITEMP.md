@@ -1,6 +1,6 @@
 ---
 name: D_PCLGSDCGETDAGDSDOCINFOITEMP
-description: D Pclgsdcgetdagdsdocinfoitemp
+description: "D Pclgsdcgetdagdsdocinfoitemp"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

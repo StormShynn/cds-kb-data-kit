@@ -1,6 +1,6 @@
 ---
 name: I_SALESDOCUMENTITEMPARTNER
-description: Salesdocumentitempartner
+description: "Salesdocumentitempartner"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

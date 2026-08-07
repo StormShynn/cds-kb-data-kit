@@ -1,6 +1,6 @@
 ---
 name: I_PT_ELECTRONICDOCINVOICE
-description: PT Electronicdocinvoice
+description: "PT Electronicdocinvoice"
 app_component: CA-GTF-CSC-EDO-PT
 software_component: SAPSCORE
 release_state: released

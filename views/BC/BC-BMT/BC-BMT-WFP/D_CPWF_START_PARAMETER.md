@@ -1,6 +1,6 @@
 ---
 name: D_CPWF_START_PARAMETER
-description: D Cpwf Start Parameter
+description: "D Cpwf Start Parameter"
 app_component: BC-BMT-WFP
 software_component: SAP_BASIS
 release_state: released

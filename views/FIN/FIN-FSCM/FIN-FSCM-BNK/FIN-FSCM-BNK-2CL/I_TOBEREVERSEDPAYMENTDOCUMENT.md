@@ -1,13 +1,13 @@
 ---
 name: I_TOBEREVERSEDPAYMENTDOCUMENT
-description: Payment document to be reversed
+description: "Payment document to be reversed"
 app_component: FIN-FSCM-BNK-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TOBEREVERSEDPAYMENTDOCUMENT')/$value
-semantic_en: Payment document to be reversed
+semantic_en: "Payment document to be reversed"
 tags:
   - FIN
   - component:FIN-FSCM-BNK-2CL

@@ -1,13 +1,13 @@
 ---
 name: C_EWM_STORAGEBINQ
-description: Storage Bin - Query
+description: "Storage Bin - Query"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_STORAGEBINQ')/$value
-semantic_en: Storage Bin - Query
+semantic_en: "Storage Bin - Query"
 tags:
   - SCM
   - component:SCM-EWM-WOP-2CL

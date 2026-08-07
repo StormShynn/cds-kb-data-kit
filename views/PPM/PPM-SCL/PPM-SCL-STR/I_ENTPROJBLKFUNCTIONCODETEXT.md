@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJBLKFUNCTIONCODETEXT
-description: Entprojblkfunctioncodetext
+description: "Entprojblkfunctioncodetext"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

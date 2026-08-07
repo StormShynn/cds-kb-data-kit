@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTTYPE_2
-description: Producttype 2
+description: "Producttype 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

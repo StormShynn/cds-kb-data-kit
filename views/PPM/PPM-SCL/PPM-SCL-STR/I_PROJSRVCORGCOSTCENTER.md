@@ -1,6 +1,6 @@
 ---
 name: I_PROJSRVCORGCOSTCENTER
-description: PROJSRVCORGCost Center
+description: "PROJSRVCORGCost Center"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

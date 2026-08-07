@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTRPARCOMPANYOVERHEADTP
-description: Jntvntrparcompanyoverheadtp
+description: "Jntvntrparcompanyoverheadtp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

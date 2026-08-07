@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERACTIVITYPRIORITY
-description: Supplieractivitypriority
+description: "Supplieractivitypriority"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

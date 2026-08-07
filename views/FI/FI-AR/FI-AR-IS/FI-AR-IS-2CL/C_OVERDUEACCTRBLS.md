@@ -1,28 +1,28 @@
 ---
 name: C_OVERDUEACCTRBLS
-description: This CDS view provides you with an overview of the overdue receivables for the accounts receivables in an aging grid. The search result aggregates the amount per net due interval of the aging grid and account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How high are the overall overdue receivables? Which customers have overdue receivables? This query cannot be accessed directly using SQL or custom CDS views. This query receives its data from the Overdue Receivables Cube ( I_OverdueAccountsReceivables). This query can be used in the key user tool KPI Design or Create Reports.
+description: "This CDS view provides you with an overview of the overdue receivables for the accounts receivables in an aging grid. The search result aggregates the amount per net due interval of the aging grid and account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How high are the overall overdue receivables? Which customers have overdue receivables? This query cannot be accessed directly using SQL or custom CDS views. This query receives its data from the Overdue Receivables Cube ( I_OverdueAccountsReceivables). This query can be used in the key user tool KPI Design or Create Reports."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OVERDUEACCTRBLS')/$value
-semantic_en: This CDS view provides you with an overview of the overdue receivables for the accounts receivables in an aging grid. The search result aggregates the amount per net due interval of the aging grid and account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How high are the overall overdue receivables? Which customers have overdue receivables? This query cannot be accessed directly using SQL or custom CDS views. This query receives its data from the Overdue Receivables Cube ( I_OverdueAccountsReceivables). This query can be used in the key user tool KPI Design or Create Reports.
-semantic_vi: Overdue Accounts Receivables Smart Business App — CDS view tiêu dùng dựa trên I_OverdueAccountsReceivables.
+semantic_en: "This CDS view provides you with an overview of the overdue receivables for the accounts receivables in an aging grid. The search result aggregates the amount per net due interval of the aging grid and account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How high are the overall overdue receivables? Which customers have overdue receivables? This query cannot be accessed directly using SQL or custom CDS views. This query receives its data from the Overdue Receivables Cube ( I_OverdueAccountsReceivables). This query can be used in the key user tool KPI Design or Create Reports."
+semantic_vi: "Overdue Accounts Receivables Smart Business App — CDS view tiêu dùng dựa trên I_OverdueAccountsReceivables."
 keywords:
-  - overdue
-  - accounts
-  - receivables
-  - smart
-  - business
-  - app
-  - company
-  - code
-  - customer
-  - interval
-  - text
-  - special
-  - account
+  - "overdue"
+  - "accounts"
+  - "receivables"
+  - "smart"
+  - "business"
+  - "app"
+  - "company"
+  - "code"
+  - "customer"
+  - "interval"
+  - "text"
+  - "special"
+  - "account"
 tags:
   - FI
   - account

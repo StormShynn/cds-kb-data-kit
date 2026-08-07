@@ -1,17 +1,17 @@
 ---
 name: I_REGIONVH.DDLS
-description: Region
+description: "Region"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/abapedia/steampunk-2305-api/blob/2d5698c17e6e2e0fcf5c50a8c8f8808d70a3d40d/src/i_regionvh.ddls.asddls
-semantic_en: Region — Interface CDS view based on I_Region.
-semantic_vi: Region — CDS view giao diện dựa trên I_Region.
+semantic_en: "Region — Interface CDS view based on I_Region."
+semantic_vi: "Region — CDS view giao diện dựa trên I_Region."
 keywords:
-  - region
-  - country
+  - "region"
+  - "country"
 tags:
   - RE
   - component:RE

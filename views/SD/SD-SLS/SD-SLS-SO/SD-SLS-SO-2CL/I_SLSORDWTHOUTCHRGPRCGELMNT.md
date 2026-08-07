@@ -1,6 +1,6 @@
 ---
 name: I_SLSORDWTHOUTCHRGPRCGELMNT
-description: Slsordwthoutchrgprcgelmnt
+description: "Slsordwthoutchrgprcgelmnt"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

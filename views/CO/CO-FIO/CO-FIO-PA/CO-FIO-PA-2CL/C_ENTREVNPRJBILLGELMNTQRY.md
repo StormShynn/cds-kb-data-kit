@@ -1,29 +1,29 @@
 ---
 name: C_ENTREVNPRJBILLGELMNTQRY
-description: This CDS view is designed to provide an analytical query for enterprise project billing elements. It is intended to facilitate the analysis of financial data related to project billing, including recognized and billed revenues, costs, margins, and other financial metrics. The view is tailored for consumption in analytical applications, allowing users to filter and analyze data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What are the recognized and billed revenues for specific projects or billing elements? How do actual costs compare to planned costs for enterprise projects? What is the recognized margin for projects, and how does it relate to recognized costs and revenues? How are sales deductions and revenue adjustments impacting the overall financial performance of projects? What are the accrued and deferred revenues and costs associated with projects? How do different planning categories affect the financial outcomes of projects? What is the impact of manual contract accruals and imminent loss reserves on project financials? How do project stock values contribute to the overall financial position of projects? What are the liabilities related to down payments for projects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide an analytical query for enterprise project billing elements. It is intended to facilitate the analysis of financial data related to project billing, including recognized and billed revenues, costs, margins, and other financial metrics. The view is tailored for consumption in analytical applications, allowing users to filter and analyze data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What are the recognized and billed revenues for specific projects or billing elements? How do actual costs compare to planned costs for enterprise projects? What is the recognized margin for projects, and how does it relate to recognized costs and revenues? How are sales deductions and revenue adjustments impacting the overall financial performance of projects? What are the accrued and deferred revenues and costs associated with projects? How do different planning categories affect the financial outcomes of projects? What is the impact of manual contract accruals and imminent loss reserves on project financials? How do project stock values contribute to the overall financial position of projects? What are the liabilities related to down payments for projects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTREVNPRJBILLGELMNTQRY')/$value
-semantic_en: This CDS view is designed to provide an analytical query for enterprise project billing elements. It is intended to facilitate the analysis of financial data related to project billing, including recognized and billed revenues, costs, margins, and other financial metrics. The view is tailored for consumption in analytical applications, allowing users to filter and analyze data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What are the recognized and billed revenues for specific projects or billing elements? How do actual costs compare to planned costs for enterprise projects? What is the recognized margin for projects, and how does it relate to recognized costs and revenues? How are sales deductions and revenue adjustments impacting the overall financial performance of projects? What are the accrued and deferred revenues and costs associated with projects? How do different planning categories affect the financial outcomes of projects? What is the impact of manual contract accruals and imminent loss reserves on project financials? How do project stock values contribute to the overall financial position of projects? What are the liabilities related to down payments for projects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Enterprise Project Billing Element Query — CDS view tiêu dùng dựa trên Enterprise Project Billing Element Query.
+semantic_en: "This CDS view is designed to provide an analytical query for enterprise project billing elements. It is intended to facilitate the analysis of financial data related to project billing, including recognized and billed revenues, costs, margins, and other financial metrics. The view is tailored for consumption in analytical applications, allowing users to filter and analyze data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What are the recognized and billed revenues for specific projects or billing elements? How do actual costs compare to planned costs for enterprise projects? What is the recognized margin for projects, and how does it relate to recognized costs and revenues? How are sales deductions and revenue adjustments impacting the overall financial performance of projects? What are the accrued and deferred revenues and costs associated with projects? How do different planning categories affect the financial outcomes of projects? What is the impact of manual contract accruals and imminent loss reserves on project financials? How do project stock values contribute to the overall financial position of projects? What are the liabilities related to down payments for projects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Enterprise Project Billing Element Query — CDS view tiêu dùng dựa trên Enterprise Project Billing Element Query."
 keywords:
-  - Enterprise Project Billing Element Query
-  - enterprise
-  - project
-  - billing
-  - element
-  - query
-  - ledger
-  - company
-  - code
-  - account
-  - assignment
-  - type
-  - fiscal
-  - year
+  - "Enterprise Project Billing Element Query"
+  - "enterprise"
+  - "project"
+  - "billing"
+  - "element"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "account"
+  - "assignment"
+  - "type"
+  - "fiscal"
+  - "year"
 tags:
   - CO
   - billing

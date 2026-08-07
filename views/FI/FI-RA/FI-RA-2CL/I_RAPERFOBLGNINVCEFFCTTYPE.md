@@ -1,13 +1,13 @@
 ---
 name: I_RAPERFOBLGNINVCEFFCTTYPE
-description: Revenue Accounting Invoice Effect Type
+description: "Revenue Accounting Invoice Effect Type"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAPERFOBLGNINVCEFFCTTYPE')/$value
-semantic_en: Revenue Accounting Invoice Effect Type
+semantic_en: "Revenue Accounting Invoice Effect Type"
 tags:
   - FI
   - account

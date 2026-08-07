@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGLACCOUNTT_2
-description: Cnsldtngl AccountT 2
+description: "Cnsldtngl AccountT 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

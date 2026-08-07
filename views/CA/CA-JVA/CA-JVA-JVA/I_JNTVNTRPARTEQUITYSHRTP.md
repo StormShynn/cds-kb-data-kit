@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTRPARTEQUITYSHRTP
-description: Jntvntrpartequityshrtp
+description: "Jntvntrpartequityshrtp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

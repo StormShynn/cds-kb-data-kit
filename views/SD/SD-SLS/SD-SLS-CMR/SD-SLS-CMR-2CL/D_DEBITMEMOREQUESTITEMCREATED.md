@@ -1,6 +1,6 @@
 ---
 name: D_DEBITMEMOREQUESTITEMCREATED
-description: D Debitmemorequestitemcreated
+description: "D Debitmemorequestitemcreated"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_MARKETIDENTIFIERCODETEXT
-description: Market Identifier Code - Text
+description: "Market Identifier Code - Text"
 app_component: CA-GTF-TRB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MARKETIDENTIFIERCODETEXT')/$value
-semantic_en: Market Identifier Code - Text
+semantic_en: "Market Identifier Code - Text"
 tags:
   - CA
   - bo:companycode

@@ -1,29 +1,29 @@
 ---
 name: C_ACTLPLNSRVCMARGITEMQUERY
-description: Actual and Plan Service Marg Item - Qry
+description: "Actual and Plan Service Marg Item - Qry"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ACTLPLNSRVCMARGITEMQUERY')/$value
-semantic_en: Actual and Plan Service Marg Item - Qry
-semantic_vi: Actual and Plan Service Marg Item - Qry — CDS view tiêu dùng dựa trên Actual and Plan Service Marg Item - Qry.
+semantic_en: "Actual and Plan Service Marg Item - Qry"
+semantic_vi: "Actual and Plan Service Marg Item - Qry — CDS view tiêu dùng dựa trên Actual and Plan Service Marg Item - Qry."
 keywords:
-  - Actual and Plan Service Marg Item - Qry
-  - actual
-  - and
-  - plan
-  - service
-  - marg
-  - item
-  - qry
-  - ledger
-  - company
-  - code
-  - document
-  - type
-  - customer
+  - "Actual and Plan Service Marg Item - Qry"
+  - "actual"
+  - "and"
+  - "plan"
+  - "service"
+  - "marg"
+  - "item"
+  - "qry"
+  - "ledger"
+  - "company"
+  - "code"
+  - "document"
+  - "type"
+  - "customer"
 tags:
   - CO
   - CO-FIO

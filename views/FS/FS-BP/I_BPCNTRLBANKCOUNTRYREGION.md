@@ -1,6 +1,6 @@
 ---
 name: I_BPCNTRLBANKCOUNTRYREGION
-description: Bpcntrlbankcountryregion
+description: "Bpcntrlbankcountryregion"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

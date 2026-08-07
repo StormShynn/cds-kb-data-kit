@@ -1,6 +1,6 @@
 ---
 name: D_OUTBDELIVCRTEDELIVFRMSLSDOCP
-description: D Outbdelivcrtedelivfrmslsdocp
+description: "D Outbdelivcrtedelivfrmslsdocp"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

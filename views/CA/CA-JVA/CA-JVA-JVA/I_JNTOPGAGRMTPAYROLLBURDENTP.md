@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTPAYROLLBURDENTP
-description: Jntopgagrmtpayrollburdentp
+description: "Jntopgagrmtpayrollburdentp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDRESOURCEREQUEST
-description: Projectdemandresourcerequest
+description: "Projectdemandresourcerequest"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

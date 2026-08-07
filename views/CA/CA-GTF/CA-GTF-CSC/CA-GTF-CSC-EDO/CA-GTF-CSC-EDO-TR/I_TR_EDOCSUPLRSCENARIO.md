@@ -1,6 +1,6 @@
 ---
 name: I_TR_EDOCSUPLRSCENARIO
-description: TR Edocsuplrscenario
+description: "TR Edocsuplrscenario"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released

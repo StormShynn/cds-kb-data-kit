@@ -1,6 +1,6 @@
 ---
 name: I_PRODSAFETYTIMEMRPRLVNCETEXT
-description: Prodsafetytimemrprlvncetext
+description: "Prodsafetytimemrprlvncetext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

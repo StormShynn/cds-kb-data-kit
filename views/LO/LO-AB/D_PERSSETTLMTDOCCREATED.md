@@ -1,6 +1,6 @@
 ---
 name: D_PERSSETTLMTDOCCREATED
-description: D Perssettlmtdoccreated
+description: "D Perssettlmtdoccreated"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

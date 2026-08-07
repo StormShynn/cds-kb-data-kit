@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMCATTYPETEXTAPI01
-description: Lglcntntmcattypetextapi 01
+description: "Lglcntntmcattypetextapi 01"
 app_component: CM-CAT-2CL
 software_component: SAPSCORE
 release_state: released

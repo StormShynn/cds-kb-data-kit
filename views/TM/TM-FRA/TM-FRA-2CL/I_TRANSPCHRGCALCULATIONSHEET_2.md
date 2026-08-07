@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPCHRGCALCULATIONSHEET_2
-description: Transpchrgcalculationsheet 2
+description: "Transpchrgcalculationsheet 2"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

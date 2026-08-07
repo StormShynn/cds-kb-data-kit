@@ -1,6 +1,6 @@
 ---
 name: I_BANK_2
-description: Bank 2
+description: "Bank 2"
 app_component: CA-BK-BNK-2CL
 software_component: SAP_BASIS
 release_state: released

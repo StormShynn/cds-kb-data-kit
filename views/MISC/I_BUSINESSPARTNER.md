@@ -1,22 +1,22 @@
 ---
 name: I_BUSINESSPARTNER
-description: Business Partner
+description: "Business Partner"
 software_component: SAPSCORE
 release_state: released
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
-semantic_en: Business Partner — Interface CDS view based on but000.
-semantic_vi: Business Partner — CDS view giao diện dựa trên but000.
+semantic_en: "Business Partner — Interface CDS view based on but000."
+semantic_vi: "Business Partner — CDS view giao diện dựa trên but000."
 keywords:
-  - business
-  - partner
-  - category
-  - authorization
-  - group
-  - person
-  - number
-  - name
+  - "business"
+  - "partner"
+  - "category"
+  - "authorization"
+  - "group"
+  - "person"
+  - "number"
+  - "name"
 tags:
   - bo:businesspartner
   - interface-view

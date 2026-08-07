@@ -1,13 +1,13 @@
 ---
 name: I_ENVRMTWASTETRANSPDOCMATLDIMN
-description: Waste Transport Document Material
+description: "Waste Transport Document Material"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENVRMTWASTETRANSPDOCMATLDIMN')/$value
-semantic_en: Waste Transport Document Material
+semantic_en: "Waste Transport Document Material"
 tags:
   - EHS
   - bo:purchaseorder

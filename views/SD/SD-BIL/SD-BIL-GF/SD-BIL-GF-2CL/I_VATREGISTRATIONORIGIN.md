@@ -1,6 +1,6 @@
 ---
 name: I_VATREGISTRATIONORIGIN
-description: Vatregistrationorigin
+description: "Vatregistrationorigin"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

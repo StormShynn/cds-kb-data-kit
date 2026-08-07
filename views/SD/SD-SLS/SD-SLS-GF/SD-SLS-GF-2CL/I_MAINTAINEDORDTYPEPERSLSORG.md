@@ -1,6 +1,6 @@
 ---
 name: I_MAINTAINEDORDTYPEPERSLSORG
-description: Maintainedordtypeperslsorg
+description: "Maintainedordtypeperslsorg"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

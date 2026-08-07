@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONSCALEBASE_2
-description: Transportationscalebase 2
+description: "Transportationscalebase 2"
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

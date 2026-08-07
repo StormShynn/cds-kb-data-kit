@@ -1,6 +1,6 @@
 ---
 name: VDMDEMOCDS_C1RELEASEDCLOUDDEV
-description: Vdmdemocds C 1RELEASEDCLOUDDEV
+description: "Vdmdemocds C 1RELEASEDCLOUDDEV"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

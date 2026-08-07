@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPROFITCENTERELIMNODET
-description: CNSLDTNProfit CenterELIMNODET
+description: "CNSLDTNProfit CenterELIMNODET"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_JOURNALENTRYPOSTWHGDITEMP
-description: D Journal EntryPOSTWHGDITEMP
+description: "D Journal EntryPOSTWHGDITEMP"
 app_component: AC-INT-2CL
 software_component: SAPSCORE
 release_state: released

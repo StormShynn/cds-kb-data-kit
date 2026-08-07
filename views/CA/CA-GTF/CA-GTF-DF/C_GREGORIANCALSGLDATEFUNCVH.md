@@ -1,6 +1,6 @@
 ---
 name: C_GREGORIANCALSGLDATEFUNCVH
-description: Gregoriancalsgldatefuncvh
+description: "Gregoriancalsgldatefuncvh"
 app_component: CA-GTF-DF
 software_component: SAP_BASIS
 release_state: released

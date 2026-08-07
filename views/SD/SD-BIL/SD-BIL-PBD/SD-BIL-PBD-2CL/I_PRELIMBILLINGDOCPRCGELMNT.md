@@ -1,6 +1,6 @@
 ---
 name: I_PRELIMBILLINGDOCPRCGELMNT
-description: PRELIMBilling DocumentPRCGELMNT
+description: "PRELIMBilling DocumentPRCGELMNT"
 app_component: SD-BIL-PBD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_UPLOADEDSUPPLIERINVOICEAPI01
-description: UPLOADEDSupplier InvoiceAPI 01
+description: "UPLOADEDSupplier InvoiceAPI 01"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

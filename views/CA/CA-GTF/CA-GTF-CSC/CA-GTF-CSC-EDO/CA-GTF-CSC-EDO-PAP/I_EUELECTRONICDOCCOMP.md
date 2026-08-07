@@ -1,6 +1,6 @@
 ---
 name: I_EUELECTRONICDOCCOMP
-description: Euelectronicdoccomp
+description: "Euelectronicdoccomp"
 app_component: CA-GTF-CSC-EDO-PAP
 software_component: SAPSCORE
 release_state: released

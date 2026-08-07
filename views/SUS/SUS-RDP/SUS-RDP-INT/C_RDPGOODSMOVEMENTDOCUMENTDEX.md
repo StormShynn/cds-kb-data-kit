@@ -1,13 +1,13 @@
 ---
 name: C_RDPGOODSMOVEMENTDOCUMENTDEX
-description: This CDS view is used by SAP Responsible Design and Production for the data extraction of relevant material flows. The view provides the necessary data based upon posted material documents.
+description: "This CDS view is used by SAP Responsible Design and Production for the data extraction of relevant material flows. The view provides the necessary data based upon posted material documents."
 app_component: SUS-RDP-INT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RDPGOODSMOVEMENTDOCUMENTDEX')/$value
-semantic_en: This CDS view is used by SAP Responsible Design and Production for the data extraction of relevant material flows. The view provides the necessary data based upon posted material documents.
+semantic_en: "This CDS view is used by SAP Responsible Design and Production for the data extraction of relevant material flows. The view provides the necessary data based upon posted material documents."
 tags:
   - SUS
   - bo:material

@@ -1,6 +1,6 @@
 ---
 name: I_CEPUCOHDRCNDNVALDTYTP_2
-description: Cepucohdrcndnvaldtytp 2
+description: "Cepucohdrcndnvaldtytp 2"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

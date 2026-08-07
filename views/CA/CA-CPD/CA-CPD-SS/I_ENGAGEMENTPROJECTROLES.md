@@ -1,13 +1,13 @@
 ---
 name: I_ENGAGEMENTPROJECTROLES
-description: This CDS view provides the prerequisites for answering the following business questions: Who are the additional stakeholders in a project? What are the roles and activities planned in a project?
+description: "This CDS view provides the prerequisites for answering the following business questions: Who are the additional stakeholders in a project? What are the roles and activities planned in a project?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGAGEMENTPROJECTROLES')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Who are the additional stakeholders in a project? What are the roles and activities planned in a project?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Who are the additional stakeholders in a project? What are the roles and activities planned in a project?"
 tags:
   - CA
   - bo:plant

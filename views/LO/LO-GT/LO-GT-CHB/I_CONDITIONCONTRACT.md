@@ -1,6 +1,6 @@
 ---
 name: I_CONDITIONCONTRACT
-description: Conditioncontract
+description: "Conditioncontract"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

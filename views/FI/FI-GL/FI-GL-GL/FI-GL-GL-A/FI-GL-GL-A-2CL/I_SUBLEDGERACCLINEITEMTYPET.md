@@ -1,6 +1,6 @@
 ---
 name: I_SUBLEDGERACCLINEITEMTYPET
-description: Subledgeracclineitemtypet
+description: "Subledgeracclineitemtypet"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

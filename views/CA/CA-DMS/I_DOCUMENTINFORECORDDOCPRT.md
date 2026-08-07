@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDDOCPRT
-description: Documentinforecorddocprt
+description: "Documentinforecorddocprt"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

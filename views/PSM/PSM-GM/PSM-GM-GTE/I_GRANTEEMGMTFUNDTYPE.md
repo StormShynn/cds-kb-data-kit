@@ -1,6 +1,6 @@
 ---
 name: I_GRANTEEMGMTFUNDTYPE
-description: Granteemgmtfundtype
+description: "Granteemgmtfundtype"
 app_component: PSM-GM-GTE
 software_component: SAPSCORE
 release_state: released

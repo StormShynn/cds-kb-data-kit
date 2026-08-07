@@ -1,6 +1,6 @@
 ---
 name: D_BILLOFMATERIALCOMPAREBOMR
-description: D Bill of MaterialCOMPAREBOMR
+description: "D Bill of MaterialCOMPAREBOMR"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

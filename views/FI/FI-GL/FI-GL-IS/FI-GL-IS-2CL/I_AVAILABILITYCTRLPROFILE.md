@@ -1,6 +1,6 @@
 ---
 name: I_AVAILABILITYCTRLPROFILE
-description: Availabilityctrlprofile
+description: "Availabilityctrlprofile"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

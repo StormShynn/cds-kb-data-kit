@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECGRANTBUDGETALERTCUBE
-description: Grant Budget Alert - Cube
+description: "Grant Budget Alert - Cube"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECGRANTBUDGETALERTCUBE')/$value
-semantic_en: Grant Budget Alert - Cube
+semantic_en: "Grant Budget Alert - Cube"
 tags:
   - PSM
   - budget

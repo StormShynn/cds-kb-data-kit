@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTOORDER
-description: Profit CenterTOORDER
+description: "Profit CenterTOORDER"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

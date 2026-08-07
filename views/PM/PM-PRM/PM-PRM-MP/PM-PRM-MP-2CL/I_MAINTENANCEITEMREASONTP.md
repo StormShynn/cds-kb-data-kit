@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEITEMREASONTP
-description: Maintenanceitemreasontp
+description: "Maintenanceitemreasontp"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

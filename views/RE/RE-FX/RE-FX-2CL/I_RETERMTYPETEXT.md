@@ -1,6 +1,6 @@
 ---
 name: I_RETERMTYPETEXT
-description: Retermtypetext
+description: "Retermtypetext"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

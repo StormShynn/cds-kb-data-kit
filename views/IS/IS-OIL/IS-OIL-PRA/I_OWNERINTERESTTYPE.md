@@ -1,13 +1,13 @@
 ---
 name: I_OWNERINTERESTTYPE
-description: Owner Interest Type
+description: "Owner Interest Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OWNERINTERESTTYPE')/$value
-semantic_en: Owner Interest Type
+semantic_en: "Owner Interest Type"
 tags:
   - IS
   - component:IS-OIL-PRA

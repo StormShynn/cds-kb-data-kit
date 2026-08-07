@@ -1,6 +1,6 @@
 ---
 name: I_PERSSETTLMTDOCITEMTP
-description: Perssettlmtdocitemtp
+description: "Perssettlmtdocitemtp"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

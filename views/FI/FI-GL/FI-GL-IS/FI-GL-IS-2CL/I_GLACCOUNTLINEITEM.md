@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTLINEITEM
-description: GL AccountLINEITEM
+description: "GL AccountLINEITEM"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

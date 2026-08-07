@@ -1,22 +1,22 @@
 ---
 name: C_CNDNCONTRSETTLMTCALDP
-description: Condition Contract Settlement Calendar
+description: "Condition Contract Settlement Calendar"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNDNCONTRSETTLMTCALDP')/$value
-semantic_en: Condition Contract Settlement Calendar
-semantic_vi: Condition Contract Settlement Calendar — CDS view tiêu dùng dựa trên R_CndnContrSettlmtCal.
+semantic_en: "Condition Contract Settlement Calendar"
+semantic_vi: "Condition Contract Settlement Calendar — CDS view tiêu dùng dựa trên R_CndnContrSettlmtCal."
 keywords:
-  - condition
-  - contract
-  - settlement
-  - calendar
-  - settlmt
-  - date
-  - sequential
+  - "condition"
+  - "contract"
+  - "settlement"
+  - "calendar"
+  - "settlmt"
+  - "date"
+  - "sequential"
 tags:
   - LO
   - component:LO-GT-CHB

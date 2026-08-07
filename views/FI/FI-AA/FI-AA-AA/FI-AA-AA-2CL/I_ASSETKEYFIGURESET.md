@@ -1,23 +1,23 @@
 ---
 name: I_ASSETKEYFIGURESET
-description: This CDS view provides the prerequisites for answering the following business question: How many asset accounting key figure groups are defined?
+description: "This CDS view provides the prerequisites for answering the following business question: How many asset accounting key figure groups are defined?"
 app_component: FI-AA-AA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETKEYFIGURESET')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: How many asset accounting key figure groups are defined?
-semantic_vi: Asset Key Figure Set — CDS view giao diện dựa trên faac_kfcset.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: How many asset accounting key figure groups are defined?"
+semantic_vi: "Asset Key Figure Set — CDS view giao diện dựa trên faac_kfcset."
 keywords:
-  - asset
-  - key
-  - figure
-  - set
-  - accounting
-  - acctg
-  - anlytl
-  - cntxt
+  - "asset"
+  - "key"
+  - "figure"
+  - "set"
+  - "accounting"
+  - "acctg"
+  - "anlytl"
+  - "cntxt"
 tags:
   - FI
   - account

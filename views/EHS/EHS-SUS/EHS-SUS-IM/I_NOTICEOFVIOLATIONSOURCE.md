@@ -1,13 +1,13 @@
 ---
 name: I_NOTICEOFVIOLATIONSOURCE
-description: Notice Of Violation Source
+description: "Notice Of Violation Source"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_NOTICEOFVIOLATIONSOURCE')/$value
-semantic_en: Notice Of Violation Source
+semantic_en: "Notice Of Violation Source"
 tags:
   - EHS
   - bo:salesorder

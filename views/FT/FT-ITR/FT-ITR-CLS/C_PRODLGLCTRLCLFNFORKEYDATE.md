@@ -1,6 +1,6 @@
 ---
 name: C_PRODLGLCTRLCLFNFORKEYDATE
-description: Prodlglctrlclfnforkeydate
+description: "Prodlglctrlclfnforkeydate"
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released

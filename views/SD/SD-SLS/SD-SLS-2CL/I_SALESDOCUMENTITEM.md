@@ -1,6 +1,6 @@
 ---
 name: I_SALESDOCUMENTITEM
-description: Salesdocumentitem
+description: "Salesdocumentitem"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

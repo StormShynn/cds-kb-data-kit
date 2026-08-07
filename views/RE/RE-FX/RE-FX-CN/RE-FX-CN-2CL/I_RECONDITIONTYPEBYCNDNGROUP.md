@@ -1,6 +1,6 @@
 ---
 name: I_RECONDITIONTYPEBYCNDNGROUP
-description: Reconditiontypebycndngroup
+description: "Reconditiontypebycndngroup"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released

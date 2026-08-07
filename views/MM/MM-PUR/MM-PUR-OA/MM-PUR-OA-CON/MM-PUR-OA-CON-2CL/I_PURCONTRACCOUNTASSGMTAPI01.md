@@ -1,6 +1,6 @@
 ---
 name: I_PURCONTRACCOUNTASSGMTAPI01
-description: Purcontraccountassgmtapi 01
+description: "Purcontraccountassgmtapi 01"
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

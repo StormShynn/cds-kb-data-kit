@@ -1,15 +1,15 @@
 ---
 name: C_TRANSPORTATIONORDEREDP
-description: Transportation Order Email Data Provider
+description: "Transportation Order Email Data Provider"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_TRANSPORTATIONORDEREDP')/$value
-semantic_en: Transportation Order Email Data Provider
+semantic_en: "Transportation Order Email Data Provider"
 keywords:
-  - Transportation Order Email Data Provider
+  - "Transportation Order Email Data Provider"
 tags:
   - TM
   - bo:purchaseorder

@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONRESULTVALUETP_2
-description: Inspectionresultvaluetp 2
+description: "Inspectionresultvaluetp 2"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

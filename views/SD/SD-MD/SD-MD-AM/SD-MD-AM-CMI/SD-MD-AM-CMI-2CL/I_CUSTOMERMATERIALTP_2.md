@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERMATERIALTP_2
-description: Customermaterialtp 2
+description: "Customermaterialtp 2"
 app_component: SD-MD-AM-CMI-2CL
 software_component: SAPSCORE
 release_state: released

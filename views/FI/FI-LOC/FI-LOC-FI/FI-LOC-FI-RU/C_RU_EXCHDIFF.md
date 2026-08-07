@@ -1,6 +1,6 @@
 ---
 name: C_RU_EXCHDIFF
-description: RU Exchdiff
+description: "RU Exchdiff"
 app_component: FI-LOC-FI-RU
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMER_VH
-description: Customer (Value Help)
+description: "Customer (Value Help)"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

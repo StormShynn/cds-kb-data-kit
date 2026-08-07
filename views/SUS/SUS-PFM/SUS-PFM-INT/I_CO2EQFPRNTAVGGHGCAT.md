@@ -1,6 +1,6 @@
 ---
 name: I_CO2EQFPRNTAVGGHGCAT
-description: CO 2EQFPRNTAVGGHGCAT
+description: "CO 2EQFPRNTAVGGHGCAT"
 app_component: SUS-PFM-INT
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_ROUTETEXT
-description: Route Text
+description: "Route Text"
 app_component: LE-TRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ROUTETEXT')/$value
-semantic_en: Route Text
+semantic_en: "Route Text"
 tags:
   - LE
   - component:LE-TRA

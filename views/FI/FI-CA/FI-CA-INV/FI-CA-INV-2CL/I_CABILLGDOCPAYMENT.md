@@ -1,13 +1,13 @@
 ---
 name: I_CABILLGDOCPAYMENT
-description: This CDS view retrieves the payment data items of a billing document in Convergent Invoicing. This CDS view provides the data to answer the following business questions: Which payment method is to be used for this business transaction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view retrieves the payment data items of a billing document in Convergent Invoicing. This CDS view provides the data to answer the following business questions: Which payment method is to be used for this business transaction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CABILLGDOCPAYMENT')/$value
-semantic_en: This CDS view retrieves the payment data items of a billing document in Convergent Invoicing. This CDS view provides the data to answer the following business questions: Which payment method is to be used for this business transaction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: "This CDS view retrieves the payment data items of a billing document in Convergent Invoicing. This CDS view provides the data to answer the following business questions: Which payment method is to be used for this business transaction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
   - billing

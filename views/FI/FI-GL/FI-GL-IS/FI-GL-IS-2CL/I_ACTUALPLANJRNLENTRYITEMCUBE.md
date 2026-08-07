@@ -1,30 +1,30 @@
 ---
 name: I_ACTUALPLANJRNLENTRYITEMCUBE
-description: This CDS view provides access to all details of a journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. The CDS view also provides access to plan data (FinancialPlanningEntryItem CDS view). The most important attributes of business entities are included, such as group G/L account or cost center responsible. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. Additionally to the identifiers, the names of master data or configuration data is included. This CDS view provides the prerequisites for answering the following business questions: What are the details for a single posting comparing actual with plan data? What postings have accumulated on a cost center during the year comparing actual with plan data? What is the balance of a G/L account as of today comparing actual with plan data?
+description: "This CDS view provides access to all details of a journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. The CDS view also provides access to plan data (FinancialPlanningEntryItem CDS view). The most important attributes of business entities are included, such as group G/L account or cost center responsible. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. Additionally to the identifiers, the names of master data or configuration data is included. This CDS view provides the prerequisites for answering the following business questions: What are the details for a single posting comparing actual with plan data? What postings have accumulated on a cost center during the year comparing actual with plan data? What is the balance of a G/L account as of today comparing actual with plan data?"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACTUALPLANJRNLENTRYITEMCUBE')/$value
-semantic_en: This CDS view provides access to all details of a journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. The CDS view also provides access to plan data (FinancialPlanningEntryItem CDS view). The most important attributes of business entities are included, such as group G/L account or cost center responsible. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. Additionally to the identifiers, the names of master data or configuration data is included. This CDS view provides the prerequisites for answering the following business questions: What are the details for a single posting comparing actual with plan data? What postings have accumulated on a cost center during the year comparing actual with plan data? What is the balance of a G/L account as of today comparing actual with plan data?
-semantic_vi: Actual Plan of Journal Entry Item - Cube — CDS view giao diện dựa trên I_ActualPlanJournalEntryItem.
+semantic_en: "This CDS view provides access to all details of a journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. The CDS view also provides access to plan data (FinancialPlanningEntryItem CDS view). The most important attributes of business entities are included, such as group G/L account or cost center responsible. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. Additionally to the identifiers, the names of master data or configuration data is included. This CDS view provides the prerequisites for answering the following business questions: What are the details for a single posting comparing actual with plan data? What postings have accumulated on a cost center during the year comparing actual with plan data? What is the balance of a G/L account as of today comparing actual with plan data?"
+semantic_vi: "Actual Plan of Journal Entry Item - Cube — CDS view giao diện dựa trên I_ActualPlanJournalEntryItem."
 keywords:
-  - Actual Plan of Journal Entry Item - Cube
-  - actual
-  - plan
-  - journal
-  - entry
-  - item
-  - cube
-  - source
-  - ledger
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
+  - "Actual Plan of Journal Entry Item - Cube"
+  - "actual"
+  - "plan"
+  - "journal"
+  - "entry"
+  - "item"
+  - "cube"
+  - "source"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
 tags:
   - FI
   - account

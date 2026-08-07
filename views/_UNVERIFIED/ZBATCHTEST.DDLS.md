@@ -1,22 +1,22 @@
 ---
 name: ZBATCHTEST.DDLS
-description: for batch test
+description: "for batch test"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/ravi075/SAP-RAP-PROJECTS/blob/0b2f7a767ccd169f6f334e9e48b6a968e57fd419/src/zbatchtest.ddls.asddls
-semantic_en: for batch test — CDS view based on I_ClfnObjectCharcValue.
-semantic_vi: for batch test — CDS view dựa trên I_ClfnObjectCharcValue.
+semantic_en: "for batch test — CDS view based on I_ClfnObjectCharcValue."
+semantic_vi: "for batch test — CDS view dựa trên I_ClfnObjectCharcValue."
 keywords:
-  - for
-  - batch
-  - test
-  - clfn
-  - object
-  - charc
-  - value
+  - "for"
+  - "batch"
+  - "test"
+  - "clfn"
+  - "object"
+  - "charc"
+  - "value"
 ---
 # ZBATCHTEST.DDLS
 

@@ -1,13 +1,13 @@
 ---
 name: C_PRASMMRYSUSPENSEQRY
-description: PRA Summary Suspense Query
+description: "PRA Summary Suspense Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRASMMRYSUSPENSEQRY')/$value
-semantic_en: PRA Summary Suspense Query
+semantic_en: "PRA Summary Suspense Query"
 tags:
   - IS
   - component:IS-OIL-PRA

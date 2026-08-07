@@ -1,6 +1,6 @@
 ---
 name: D_ENPRJELMCHGPERDDISTROPTIONP
-description: D Enprjelmchgperddistroptionp
+description: "D Enprjelmchgperddistroptionp"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

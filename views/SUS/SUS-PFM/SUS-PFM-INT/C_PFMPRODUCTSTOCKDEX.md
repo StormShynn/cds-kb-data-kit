@@ -1,13 +1,13 @@
 ---
 name: C_PFMPRODUCTSTOCKDEX
-description: This CDS view is used by Product Footprint Management for the data extraction of stock inventory. This view provides the necessary detail data based on stock inventory.
+description: "This CDS view is used by Product Footprint Management for the data extraction of stock inventory. This view provides the necessary detail data based on stock inventory."
 app_component: SUS-PFM-INT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PFMPRODUCTSTOCKDEX')/$value
-semantic_en: This CDS view is used by Product Footprint Management for the data extraction of stock inventory. This view provides the necessary detail data based on stock inventory.
+semantic_en: "This CDS view is used by Product Footprint Management for the data extraction of stock inventory. This view provides the necessary detail data based on stock inventory."
 tags:
   - SUS
   - bo:inventory

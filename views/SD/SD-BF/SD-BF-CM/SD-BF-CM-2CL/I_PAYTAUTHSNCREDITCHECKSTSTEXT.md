@@ -1,6 +1,6 @@
 ---
 name: I_PAYTAUTHSNCREDITCHECKSTSTEXT
-description: Paytauthsncreditcheckststext
+description: "Paytauthsncreditcheckststext"
 app_component: SD-BF-CM-2CL
 software_component: SAPSCORE
 release_state: released

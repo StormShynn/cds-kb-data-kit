@@ -1,6 +1,6 @@
 ---
 name: C_CHANGEMASTERSTATUSDEX
-description: Change MasterERSTATUSDEX
+description: "Change MasterERSTATUSDEX"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

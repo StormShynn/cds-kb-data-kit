@@ -1,6 +1,6 @@
 ---
 name: I_SRVCCONTRAPPOINTMENTTP
-description: Srvccontrappointmenttp
+description: "Srvccontrappointmenttp"
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

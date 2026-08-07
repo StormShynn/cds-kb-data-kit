@@ -1,6 +1,6 @@
 ---
 name: D_PRJBLGREQPOSTPONEBYDATEP
-description: D Prjblgreqpostponebydatep
+description: "D Prjblgreqpostponebydatep"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

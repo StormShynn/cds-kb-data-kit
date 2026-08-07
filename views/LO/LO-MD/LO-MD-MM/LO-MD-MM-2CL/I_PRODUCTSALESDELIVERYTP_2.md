@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTSALESDELIVERYTP_2
-description: Productsalesdeliverytp 2
+description: "Productsalesdeliverytp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

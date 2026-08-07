@@ -1,6 +1,6 @@
 ---
 name: I_FRTCOSTALLOCBUSPROCCAT
-description: Frtcostallocbusproccat
+description: "Frtcostallocbusproccat"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_DSPUTPROCSTEPSTATUSTEXT
-description: Strd Proc Step Status of Dispute - Text
+description: "Strd Proc Step Status of Dispute - Text"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DSPUTPROCSTEPSTATUSTEXT')/$value
-semantic_en: Strd Proc Step Status of Dispute - Text
+semantic_en: "Strd Proc Step Status of Dispute - Text"
 tags:
   - FIN
   - bo:project

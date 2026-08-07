@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPCOCODEBPASSGMT
-description: Transpcocodebpassgmt
+description: "Transpcocodebpassgmt"
 app_component: TM-MD-ORG-2CL
 software_component: SAPSCORE
 release_state: released

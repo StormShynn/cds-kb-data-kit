@@ -1,6 +1,6 @@
 ---
 name: I_INSPSPECADDLCODEGROUP
-description: Inspspecaddlcodegroup
+description: "Inspspecaddlcodegroup"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

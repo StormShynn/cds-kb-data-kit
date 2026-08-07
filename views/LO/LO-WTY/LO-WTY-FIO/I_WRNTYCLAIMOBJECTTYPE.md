@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMOBJECTTYPE
-description: Wrntyclaimobjecttype
+description: "Wrntyclaimobjecttype"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_WASTEDANGEROUSGOODDIMENSION
-description: Dangerous Goods Dimension
+description: "Dangerous Goods Dimension"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTEDANGEROUSGOODDIMENSION')/$value
-semantic_en: Dangerous Goods Dimension
+semantic_en: "Dangerous Goods Dimension"
 tags:
   - EHS
   - component:EHS-SUS-WA

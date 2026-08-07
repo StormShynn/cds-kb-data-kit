@@ -1,6 +1,6 @@
 ---
 name: I_IN_PLANTBUSINESSPLACEDETAIL
-description: IN Plantbusinessplacedetail
+description: "IN Plantbusinessplacedetail"
 app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released

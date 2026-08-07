@@ -1,6 +1,6 @@
 ---
 name: I_CABUSPARTINVOICESTATUSTEXT
-description: CABusiness PartnerINVOICESTATUSTEXT
+description: "CABusiness PartnerINVOICESTATUSTEXT"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

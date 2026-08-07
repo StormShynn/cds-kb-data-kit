@@ -1,23 +1,23 @@
 ---
 name: C_EXPNSETTLMTDEX
-description: Expense Settlement Extraction
+description: "Expense Settlement Extraction"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EXPNSETTLMTDEX')/$value
-semantic_en: Expense Settlement Extraction
-semantic_vi: Expense Settlement Extraction — CDS view tiêu dùng dựa trên R_ExpnSettlmtDEX.
+semantic_en: "Expense Settlement Extraction"
+semantic_vi: "Expense Settlement Extraction — CDS view tiêu dùng dựa trên R_ExpnSettlmtDEX."
 keywords:
-  - expense
-  - settlement
-  - extraction
-  - expn
-  - settlmt
-  - item
-  - type
-  - process
+  - "expense"
+  - "settlement"
+  - "extraction"
+  - "expn"
+  - "settlmt"
+  - "item"
+  - "type"
+  - "process"
 tags:
   - LO
   - component:LO-AB

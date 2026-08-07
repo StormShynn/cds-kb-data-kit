@@ -1,6 +1,6 @@
 ---
 name: I_FINSRVCSPRODGRPHIERNODE
-description: Finsrvcsprodgrphiernode
+description: "Finsrvcsprodgrphiernode"
 app_component: FIN-IE-FS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PLNDINDEPRQMTITEMTP
-description: Plndindeprqmtitemtp
+description: "Plndindeprqmtitemtp"
 app_component: PP-MP-DEM-2CL
 software_component: SAPSCORE
 release_state: released

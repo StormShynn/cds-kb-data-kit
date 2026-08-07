@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERPAYMENTTERMS
-description: Customerpaymentterms
+description: "Customerpaymentterms"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITDATACOLL
-description: Cnsldtnunitdatacoll
+description: "Cnsldtnunitdatacoll"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

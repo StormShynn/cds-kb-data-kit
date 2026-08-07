@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERRATING
-description: Business PartnerRATING
+description: "Business PartnerRATING"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

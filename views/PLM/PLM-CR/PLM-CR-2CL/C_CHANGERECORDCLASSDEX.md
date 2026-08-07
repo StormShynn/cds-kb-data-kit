@@ -1,13 +1,13 @@
 ---
 name: C_CHANGERECORDCLASSDEX
-description: Change Record Class Extraction
+description: "Change Record Class Extraction"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDCLASSDEX')/$value
-semantic_en: Change Record Class Extraction
+semantic_en: "Change Record Class Extraction"
 tags:
   - PLM
   - bo:salesorganization

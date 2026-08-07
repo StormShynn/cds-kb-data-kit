@@ -1,13 +1,13 @@
 ---
 name: I_LOANARCHIVINGCATEGORYTEXT
-description: Loan Archiving Category - Text
+description: "Loan Archiving Category - Text"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANARCHIVINGCATEGORYTEXT')/$value
-semantic_en: Loan Archiving Category - Text
+semantic_en: "Loan Archiving Category - Text"
 tags:
   - FS
   - component:FS-CML

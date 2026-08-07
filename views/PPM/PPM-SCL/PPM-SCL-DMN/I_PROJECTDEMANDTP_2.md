@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDTP_2
-description: Projectdemandtp 2
+description: "Projectdemandtp 2"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

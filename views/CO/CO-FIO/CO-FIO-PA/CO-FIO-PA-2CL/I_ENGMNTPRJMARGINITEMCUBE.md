@@ -1,17 +1,17 @@
 ---
 name: I_ENGMNTPRJMARGINITEMCUBE
-description: Engagement Project Margin Items - Cube
+description: "Engagement Project Margin Items - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPRJMARGINITEMCUBE')/$value
-semantic_en: Engagement Project Margin Items - Cube
+semantic_en: "Engagement Project Margin Items - Cube"
 keywords:
-  - Engagement Project Margin Items - Cube
-  - Engagement Project Margin Items - Cube
-  - Engagement Project Margin Items - Cube
+  - "Engagement Project Margin Items - Cube"
+  - "Engagement Project Margin Items - Cube"
+  - "Engagement Project Margin Items - Cube"
 tags:
   - CO
   - bo:project

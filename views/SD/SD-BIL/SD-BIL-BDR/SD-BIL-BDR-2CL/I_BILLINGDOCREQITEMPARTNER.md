@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCREQITEMPARTNER
-description: Billing DocumentREQITEMPARTNER
+description: "Billing DocumentREQITEMPARTNER"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

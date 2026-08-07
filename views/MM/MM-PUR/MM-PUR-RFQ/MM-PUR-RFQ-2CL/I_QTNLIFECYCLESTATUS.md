@@ -1,6 +1,6 @@
 ---
 name: I_QTNLIFECYCLESTATUS
-description: Qtnlifecyclestatus
+description: "Qtnlifecyclestatus"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_TREASURYREFERENCECATEGORY
-description: Treasuryreferencecategory
+description: "Treasuryreferencecategory"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

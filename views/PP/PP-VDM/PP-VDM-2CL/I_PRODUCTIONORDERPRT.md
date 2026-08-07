@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERPRT
-description: Production OrderPRT
+description: "Production OrderPRT"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

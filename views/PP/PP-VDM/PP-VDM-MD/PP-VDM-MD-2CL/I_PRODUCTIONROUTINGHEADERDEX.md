@@ -1,13 +1,13 @@
 ---
 name: I_PRODUCTIONROUTINGHEADERDEX
-description: Production Routing Header
+description: "Production Routing Header"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTIONROUTINGHEADERDEX')/$value
-semantic_en: Production Routing Header
+semantic_en: "Production Routing Header"
 tags:
   - PP
   - bo:material

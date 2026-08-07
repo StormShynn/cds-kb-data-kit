@@ -1,6 +1,6 @@
 ---
 name: I_WITHHOLDINGTAXCODEVH
-description: Withholdingtaxcodevh
+description: "Withholdingtaxcodevh"
 app_component: FI-AP-AP-Q-2CL
 software_component: SAPSCORE
 release_state: released

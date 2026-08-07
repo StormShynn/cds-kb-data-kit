@@ -1,19 +1,19 @@
 ---
 name: YI_LITERALS.DDLS
-description: Literals in CDS
+description: "Literals in CDS"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/keremkoseoglu/spma-2025-08/blob/05e9b4ffe4da74c8a64c802598dbd378d1666027/src/yi_literals.ddls.asddls
-semantic_en: Literals in CDS — CDS view based on sflight.
-semantic_vi: Literals in CDS — CDS view dựa trên sflight.
+semantic_en: "Literals in CDS — CDS view based on sflight."
+semantic_vi: "Literals in CDS — CDS view dựa trên sflight."
 keywords:
-  - literals
-  - carrid
-  - connid
-  - fldate
+  - "literals"
+  - "carrid"
+  - "connid"
+  - "fldate"
 ---
 # YI_LITERALS.DDLS
 

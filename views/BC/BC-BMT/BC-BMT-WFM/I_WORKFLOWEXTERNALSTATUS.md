@@ -1,6 +1,6 @@
 ---
 name: I_WORKFLOWEXTERNALSTATUS
-description: Workflowexternalstatus
+description: "Workflowexternalstatus"
 app_component: BC-BMT-WFM
 software_component: SAP_BASIS
 release_state: released

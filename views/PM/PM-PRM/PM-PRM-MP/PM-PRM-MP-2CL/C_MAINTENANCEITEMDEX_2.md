@@ -1,30 +1,30 @@
 ---
 name: C_MAINTENANCEITEMDEX_2
-description: Data Extraction for Maintenance Item
+description: "Data Extraction for Maintenance Item"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEITEMDEX_2')/$value
-semantic_en: Data Extraction for Maintenance Item
-semantic_vi: Data Extraction for Maintenance Item — CDS view tiêu dùng dựa trên I_MaintenanceItemBasic.
+semantic_en: "Data Extraction for Maintenance Item"
+semantic_vi: "Data Extraction for Maintenance Item — CDS view tiêu dùng dựa trên I_MaintenanceItemBasic."
 keywords:
-  - data
-  - extraction
-  - for
-  - maintenance
-  - item
-  - maint
-  - object
-  - acct
-  - assgmt
-  - nmbr
-  - planner
-  - group
-  - planning
-  - plant
-  - business
+  - "data"
+  - "extraction"
+  - "for"
+  - "maintenance"
+  - "item"
+  - "maint"
+  - "object"
+  - "acct"
+  - "assgmt"
+  - "nmbr"
+  - "planner"
+  - "group"
+  - "planning"
+  - "plant"
+  - "business"
 tags:
   - PM
   - component:PM-PRM-MP-2CL

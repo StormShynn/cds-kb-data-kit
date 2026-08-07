@@ -1,15 +1,15 @@
 ---
 name: I_CUSTSETTLMTITEM
-description: Customer Settlement Item
+description: "Customer Settlement Item"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTITEM')/$value
-semantic_en: Customer Settlement Item
+semantic_en: "Customer Settlement Item"
 keywords:
-  - Customer Settlement Item
+  - "Customer Settlement Item"
 tags:
   - LO
   - bo:businesspartner

@@ -1,6 +1,6 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP2TEXT
-description: Additionalcustomergroup 2TEXT
+description: "Additionalcustomergroup 2TEXT"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

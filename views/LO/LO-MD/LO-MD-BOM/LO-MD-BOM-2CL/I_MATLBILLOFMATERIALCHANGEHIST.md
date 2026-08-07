@@ -1,6 +1,6 @@
 ---
 name: I_MATLBILLOFMATERIALCHANGEHIST
-description: MATLBill of MaterialCHANGEHIST
+description: "MATLBill of MaterialCHANGEHIST"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SALESGROUPTEXT
-description: Salesgrouptext
+description: "Salesgrouptext"
 app_component: SD-CRF-ORG-2CL
 software_component: SAPSCORE
 release_state: released

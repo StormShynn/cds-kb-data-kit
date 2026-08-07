@@ -1,13 +1,13 @@
 ---
 name: I_COLLTRLREUTILIZATIONTEXT
-description: Utilization for Collateral RE - Text
+description: "Utilization for Collateral RE - Text"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLTRLREUTILIZATIONTEXT')/$value
-semantic_en: Utilization for Collateral RE - Text
+semantic_en: "Utilization for Collateral RE - Text"
 tags:
   - FS
   - component:FS-CMS

@@ -1,6 +1,6 @@
 ---
 name: I_FACTORYCALENDARBASIC
-description: Factorycalendarbasic
+description: "Factorycalendarbasic"
 app_component: BC-SRV-ASF-CAL
 software_component: SAP_BASIS
 release_state: released

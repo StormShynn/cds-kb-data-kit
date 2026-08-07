@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMASTERSTATUS
-description: These CDS views provide the prerequisites for answering the following business questions: Which change masters are active in my system? Which change masters can be used to make changes to business objects?
+description: "These CDS views provide the prerequisites for answering the following business questions: Which change masters are active in my system? Which change masters can be used to make changes to business objects?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERSTATUS')/$value
-semantic_en: These CDS views provide the prerequisites for answering the following business questions: Which change masters are active in my system? Which change masters can be used to make changes to business objects?
+semantic_en: "These CDS views provide the prerequisites for answering the following business questions: Which change masters are active in my system? Which change masters can be used to make changes to business objects?"
 tags:
   - PLM
   - bo:plant

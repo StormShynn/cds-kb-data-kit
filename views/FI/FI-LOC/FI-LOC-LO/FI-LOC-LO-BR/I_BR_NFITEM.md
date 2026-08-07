@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFITEM
-description: BR Nfitem
+description: "BR Nfitem"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

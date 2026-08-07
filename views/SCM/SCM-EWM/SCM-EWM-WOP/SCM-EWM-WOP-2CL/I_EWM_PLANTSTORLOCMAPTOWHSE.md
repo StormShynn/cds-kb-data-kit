@@ -1,6 +1,6 @@
 ---
 name: I_EWM_PLANTSTORLOCMAPTOWHSE
-description: Ewm Plantstorlocmaptowhse
+description: "Ewm Plantstorlocmaptowhse"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_BUSVOLFLDCOMBNSETTYPEASSGMT
-description: Bus Vol Field Combn Set Type Assignment
+description: "Bus Vol Field Combn Set Type Assignment"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSVOLFLDCOMBNSETTYPEASSGMT')/$value
-semantic_en: Bus Vol Field Combn Set Type Assignment
+semantic_en: "Bus Vol Field Combn Set Type Assignment"
 tags:
   - LO
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIEREVALRESPONSEAPI01
-description: Supplierevalresponseapi 01
+description: "Supplierevalresponseapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

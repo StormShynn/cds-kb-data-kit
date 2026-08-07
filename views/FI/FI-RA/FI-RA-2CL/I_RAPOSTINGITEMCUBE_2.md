@@ -1,16 +1,16 @@
 ---
 name: I_RAPOSTINGITEMCUBE_2
-description: This CDS view provides the prerequisites for answering the following business questions: What amount is transferred for a different posting category in the document currency and company code currency? For example, recognized revenue, contract asset, and contract liability What amount is transferred for each condition type of each performance obligation in both the document currency and the company code currency? What amount is posted for each G/L account? What proportion of the transferred amount is for each business unit?
+description: "This CDS view provides the prerequisites for answering the following business questions: What amount is transferred for a different posting category in the document currency and company code currency? For example, recognized revenue, contract asset, and contract liability What amount is transferred for each condition type of each performance obligation in both the document currency and the company code currency? What amount is posted for each G/L account? What proportion of the transferred amount is for each business unit?"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RAPOSTINGITEMCUBE_2')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What amount is transferred for a different posting category in the document currency and company code currency? For example, recognized revenue, contract asset, and contract liability What amount is transferred for each condition type of each performance obligation in both the document currency and the company code currency? What amount is posted for each G/L account? What proportion of the transferred amount is for each business unit?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What amount is transferred for a different posting category in the document currency and company code currency? For example, recognized revenue, contract asset, and contract liability What amount is transferred for each condition type of each performance obligation in both the document currency and the company code currency? What amount is posted for each G/L account? What proportion of the transferred amount is for each business unit?"
 keywords:
-  - Cube View: Disaggregation of Revenue
-  - Cube View: Disaggregation of Revenue
+  - "Cube View: Disaggregation of Revenue"
+  - "Cube View: Disaggregation of Revenue"
 tags:
   - FI
   - account

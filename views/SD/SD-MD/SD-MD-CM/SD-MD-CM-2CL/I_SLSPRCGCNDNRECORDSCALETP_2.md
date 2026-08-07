@@ -1,6 +1,6 @@
 ---
 name: I_SLSPRCGCNDNRECORDSCALETP_2
-description: Slsprcgcndnrecordscaletp 2
+description: "Slsprcgcndnrecordscaletp 2"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

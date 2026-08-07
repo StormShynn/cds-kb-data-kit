@@ -1,26 +1,26 @@
 ---
 name: C_PROFITABILITY_Q0002
-description: This CDS view provides the prerequisites for answering the following business question: What is the contribution margin for individual products?
+description: "This CDS view provides the prerequisites for answering the following business question: What is the contribution margin for individual products?"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROFITABILITY_Q0002')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What is the contribution margin for individual products?
-semantic_vi: Product Profitability — CDS view tiêu dùng dựa trên I_GLAccountLineItemSemTag.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is the contribution margin for individual products?"
+semantic_vi: "Product Profitability — CDS view tiêu dùng dựa trên I_GLAccountLineItemSemTag."
 keywords:
-  - Product Profitability
-  - product
-  - profitability
-  - company
-  - code
-  - ledger
-  - fiscal
-  - year
-  - period
-  - profit
-  - center
+  - "Product Profitability"
+  - "product"
+  - "profitability"
+  - "company"
+  - "code"
+  - "ledger"
+  - "fiscal"
+  - "year"
+  - "period"
+  - "profit"
+  - "center"
 tags:
   - CO
   - bo:companycode

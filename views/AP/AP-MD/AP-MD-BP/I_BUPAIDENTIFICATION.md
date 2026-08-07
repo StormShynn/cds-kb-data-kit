@@ -1,6 +1,6 @@
 ---
 name: I_BUPAIDENTIFICATION
-description: Bupaidentification
+description: "Bupaidentification"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

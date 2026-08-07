@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCREQITEMSTDVH
-description: Billing DocumentREQITEMSTDVH
+description: "Billing DocumentREQITEMSTDVH"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_COMMITMENTITEMTEXT
-description: Commitment Item - Text
+description: "Commitment Item - Text"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMMITMENTITEMTEXT')/$value
-semantic_en: Commitment Item - Text
+semantic_en: "Commitment Item - Text"
 tags:
   - PSM
   - component:PSM

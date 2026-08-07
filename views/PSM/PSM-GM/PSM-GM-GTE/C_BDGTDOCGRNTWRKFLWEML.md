@@ -1,13 +1,13 @@
 ---
 name: C_BDGTDOCGRNTWRKFLWEML
-description: WF Email for budget doc for grant
+description: "WF Email for budget doc for grant"
 app_component: PSM-GM-GTE
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BDGTDOCGRNTWRKFLWEML')/$value
-semantic_en: WF Email for budget doc for grant
+semantic_en: "WF Email for budget doc for grant"
 tags:
   - PSM
   - budget

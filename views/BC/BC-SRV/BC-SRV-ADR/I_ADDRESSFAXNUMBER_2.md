@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSFAXNUMBER_2
-description: Addressfaxnumber 2
+description: "Addressfaxnumber 2"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

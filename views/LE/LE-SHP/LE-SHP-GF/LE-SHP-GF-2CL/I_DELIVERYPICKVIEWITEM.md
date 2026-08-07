@@ -1,6 +1,6 @@
 ---
 name: I_DELIVERYPICKVIEWITEM
-description: Deliverypickviewitem
+description: "Deliverypickviewitem"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

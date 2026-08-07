@@ -1,6 +1,6 @@
 ---
 name: I_LOADINGGROUP
-description: Loadinggroup
+description: "Loadinggroup"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

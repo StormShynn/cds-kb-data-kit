@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLSUPLRQTNITEMPRICINGTP_2
-description: Cntrlsuplrqtnitempricingtp 2
+description: "Cntrlsuplrqtnitempricingtp 2"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

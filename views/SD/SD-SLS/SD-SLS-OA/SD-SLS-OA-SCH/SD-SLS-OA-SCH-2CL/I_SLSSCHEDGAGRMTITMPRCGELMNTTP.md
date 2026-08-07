@@ -1,6 +1,6 @@
 ---
 name: I_SLSSCHEDGAGRMTITMPRCGELMNTTP
-description: Slsschedgagrmtitmprcgelmnttp
+description: "Slsschedgagrmtitmprcgelmnttp"
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

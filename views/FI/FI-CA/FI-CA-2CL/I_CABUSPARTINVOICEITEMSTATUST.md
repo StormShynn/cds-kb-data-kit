@@ -1,6 +1,6 @@
 ---
 name: I_CABUSPARTINVOICEITEMSTATUST
-description: CABusiness PartnerINVOICEITEMSTATUST
+description: "CABusiness PartnerINVOICEITEMSTATUST"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CREDITDECISIONDOCUMENTTP_2
-description: Creditdecisiondocumenttp 2
+description: "Creditdecisiondocumenttp 2"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

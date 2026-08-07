@@ -1,6 +1,6 @@
 ---
 name: D_SRVCCONTRACTPERFORMRENEWALP
-description: D Srvccontractperformrenewalp
+description: "D Srvccontractperformrenewalp"
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

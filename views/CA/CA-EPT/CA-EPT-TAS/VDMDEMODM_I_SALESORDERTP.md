@@ -1,6 +1,6 @@
 ---
 name: VDMDEMODM_I_SALESORDERTP
-description: Vdmdemodm I Sales OrderTP
+description: "Vdmdemodm I Sales OrderTP"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

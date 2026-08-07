@@ -1,13 +1,13 @@
 ---
 name: I_EHSCMPLRQPARAGRAPHCUBE
-description: Compliance Requirement Paragraph - Cube
+description: "Compliance Requirement Paragraph - Cube"
 app_component: EHS-SUS-EM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSCMPLRQPARAGRAPHCUBE')/$value
-semantic_en: Compliance Requirement Paragraph - Cube
+semantic_en: "Compliance Requirement Paragraph - Cube"
 tags:
   - EHS
   - component:EHS-SUS-EM

@@ -1,6 +1,6 @@
 ---
 name: I_IAMBUSINESSROLETEXT
-description: Iambusinessroletext
+description: "Iambusinessroletext"
 app_component: BC-SRV-APS-IAM
 software_component: SAP_CLOUD
 release_state: released

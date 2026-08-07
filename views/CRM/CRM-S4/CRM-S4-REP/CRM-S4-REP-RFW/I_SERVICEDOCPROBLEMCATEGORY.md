@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCPROBLEMCATEGORY
-description: Service DocumentPROBLEMCATEGORY
+description: "Service DocumentPROBLEMCATEGORY"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

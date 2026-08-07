@@ -1,6 +1,6 @@
 ---
 name: I_MRPELEMENTCATEGORY
-description: Mrpelementcategory
+description: "Mrpelementcategory"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTHIERARCHY
-description: GL AccountHIERARCHY
+description: "GL AccountHIERARCHY"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

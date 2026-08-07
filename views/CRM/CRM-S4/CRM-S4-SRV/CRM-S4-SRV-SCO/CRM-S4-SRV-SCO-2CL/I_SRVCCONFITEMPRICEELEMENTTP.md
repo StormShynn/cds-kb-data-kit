@@ -1,6 +1,6 @@
 ---
 name: I_SRVCCONFITEMPRICEELEMENTTP
-description: Srvcconfitempriceelementtp
+description: "Srvcconfitempriceelementtp"
 app_component: CRM-S4-SRV-SCO-2CL
 software_component: SAPSCORE
 release_state: released

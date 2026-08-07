@@ -1,13 +1,13 @@
 ---
 name: I_MAINTORDPROCSUBORDDPHASETXT
-description: Maint Order Process Sub Phase - Txt
+description: "Maint Order Process Sub Phase - Txt"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTORDPROCSUBORDDPHASETXT')/$value
-semantic_en: Maint Order Process Sub Phase - Txt
+semantic_en: "Maint Order Process Sub Phase - Txt"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

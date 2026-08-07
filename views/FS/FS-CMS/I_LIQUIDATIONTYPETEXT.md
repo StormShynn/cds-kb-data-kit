@@ -1,13 +1,13 @@
 ---
 name: I_LIQUIDATIONTYPETEXT
-description: Liquidation Type - Text
+description: "Liquidation Type - Text"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LIQUIDATIONTYPETEXT')/$value
-semantic_en: Liquidation Type - Text
+semantic_en: "Liquidation Type - Text"
 tags:
   - FS
   - component:FS-CMS

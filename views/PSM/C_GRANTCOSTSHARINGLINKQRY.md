@@ -1,13 +1,13 @@
 ---
 name: C_GRANTCOSTSHARINGLINKQRY
-description: Grant Cost Sharing Link - Query
+description: "Grant Cost Sharing Link - Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GRANTCOSTSHARINGLINKQRY')/$value
-semantic_en: Grant Cost Sharing Link - Query
+semantic_en: "Grant Cost Sharing Link - Query"
 tags:
   - PSM
   - component:PSM

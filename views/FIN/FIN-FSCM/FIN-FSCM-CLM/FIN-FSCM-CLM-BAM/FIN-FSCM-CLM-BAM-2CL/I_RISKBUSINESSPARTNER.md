@@ -1,6 +1,6 @@
 ---
 name: I_RISKBUSINESSPARTNER
-description: RISKBusiness Partner
+description: "RISKBusiness Partner"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

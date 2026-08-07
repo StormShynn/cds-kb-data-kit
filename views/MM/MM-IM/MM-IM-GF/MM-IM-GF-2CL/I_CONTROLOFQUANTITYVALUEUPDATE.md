@@ -1,6 +1,6 @@
 ---
 name: I_CONTROLOFQUANTITYVALUEUPDATE
-description: Controlofquantityvalueupdate
+description: "Controlofquantityvalueupdate"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

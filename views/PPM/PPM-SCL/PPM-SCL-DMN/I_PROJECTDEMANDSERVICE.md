@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDSERVICE
-description: Projectdemandservice
+description: "Projectdemandservice"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

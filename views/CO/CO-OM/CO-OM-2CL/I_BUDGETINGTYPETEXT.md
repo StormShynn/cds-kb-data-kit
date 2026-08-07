@@ -1,20 +1,20 @@
 ---
 name: I_BUDGETINGTYPETEXT
-description: Budget Type - Text
+description: "Budget Type - Text"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETINGTYPETEXT')/$value
-semantic_en: Budget Type - Text
-semantic_vi: Budget Type - Text — CDS view giao diện dựa trên bdgt_d_subcategt.
+semantic_en: "Budget Type - Text"
+semantic_vi: "Budget Type - Text — CDS view giao diện dựa trên bdgt_d_subcategt."
 keywords:
-  - budget
-  - type
-  - text
-  - budgeting
-  - language
+  - "budget"
+  - "type"
+  - "text"
+  - "budgeting"
+  - "language"
 tags:
   - CO
   - budget

@@ -1,6 +1,6 @@
 ---
 name: D_LGLDOCCREATEVRTLDOCP
-description: D Lgldoccreatevrtldocp
+description: "D Lgldoccreatevrtldocp"
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

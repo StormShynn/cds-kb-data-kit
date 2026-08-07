@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFMATERIALHEADERDEX_2
-description: Bill of MaterialHEADERDEX 2
+description: "Bill of MaterialHEADERDEX 2"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

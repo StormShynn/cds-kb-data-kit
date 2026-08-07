@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMASTEROBJTYPEASSGMT
-description: This CDS view provides the prerequisites for answering the following business questions: To which business object types (for example material, document, characteristics) can a certain change master be assigned? Which change masters can be assigned to a certain object type? Are there any change masters for which the assignment of a specific object type is locked? Who has activated the assignment of a certain business object to a certain change master?
+description: "This CDS view provides the prerequisites for answering the following business questions: To which business object types (for example material, document, characteristics) can a certain change master be assigned? Which change masters can be assigned to a certain object type? Are there any change masters for which the assignment of a specific object type is locked? Who has activated the assignment of a certain business object to a certain change master?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTEROBJTYPEASSGMT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: To which business object types (for example material, document, characteristics) can a certain change master be assigned? Which change masters can be assigned to a certain object type? Are there any change masters for which the assignment of a specific object type is locked? Who has activated the assignment of a certain business object to a certain change master?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: To which business object types (for example material, document, characteristics) can a certain change master be assigned? Which change masters can be assigned to a certain object type? Are there any change masters for which the assignment of a specific object type is locked? Who has activated the assignment of a certain business object to a certain change master?"
 tags:
   - PLM
   - bo:companycode

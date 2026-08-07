@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSDATESAPI01
-description: Lgltransdatesapi 01
+description: "Lgltransdatesapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTMGMTDOCITEMDISTRCAT
-description: This CDS view exposes fixed values of the field Distribution Category for Document Items. The following fixed values have been maintained: " No Distribution 2 Freight Cost Distribution (Transportation Management) 3 Distribution Based on Accruals (CCM) 4 Distribution Based on Settlement Document (CCM) 9 Customer-Specific Variant (BAdI)
+description: "This CDS view exposes fixed values of the field Distribution Category for Document Items. The following fixed values have been maintained: \" No Distribution 2 Freight Cost Distribution (Transportation Management) 3 Distribution Based on Accruals (CCM) 4 Distribution Based on Settlement Document (CCM) 9 Customer-Specific Variant (BAdI)"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTMGMTDOCITEMDISTRCAT')/$value
-semantic_en: This CDS view exposes fixed values of the field Distribution Category for Document Items. The following fixed values have been maintained: " No Distribution 2 Freight Cost Distribution (Transportation Management) 3 Distribution Based on Accruals (CCM) 4 Distribution Based on Settlement Document (CCM) 9 Customer-Specific Variant (BAdI)
+semantic_en: "This CDS view exposes fixed values of the field Distribution Category for Document Items. The following fixed values have been maintained: \" No Distribution 2 Freight Cost Distribution (Transportation Management) 3 Distribution Based on Accruals (CCM) 4 Distribution Based on Settlement Document (CCM) 9 Customer-Specific Variant (BAdI)"
 tags:
   - LO
   - bo:businesspartner

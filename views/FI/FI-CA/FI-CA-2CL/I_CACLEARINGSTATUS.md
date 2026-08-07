@@ -1,6 +1,6 @@
 ---
 name: I_CACLEARINGSTATUS
-description: Caclearingstatus
+description: "Caclearingstatus"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

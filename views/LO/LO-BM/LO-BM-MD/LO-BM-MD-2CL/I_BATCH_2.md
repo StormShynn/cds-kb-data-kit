@@ -1,26 +1,26 @@
 ---
 name: I_BATCH_2
-description: This CDS view of the batch master record is aligned with the SAP business object Batch. This CDS view is intended to replace the CDS view Batch Distinct (Successor available) (I_BatchDistinct). This CDS view provides the data to answer the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view of the batch master record is aligned with the SAP business object Batch. This CDS view is intended to replace the CDS view Batch Distinct (Successor available) (I_BatchDistinct). This CDS view provides the data to answer the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BATCH_2')/$value
-semantic_en: This CDS view of the batch master record is aligned with the SAP business object Batch. This CDS view is intended to replace the CDS view Batch Distinct (Successor available) (I_BatchDistinct). This CDS view provides the data to answer the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Batch Information by Batch Key — CDS view tổng hợp (master data) dựa trên R_Batch.
+semantic_en: "This CDS view of the batch master record is aligned with the SAP business object Batch. This CDS view is intended to replace the CDS view Batch Distinct (Successor available) (I_BatchDistinct). This CDS view provides the data to answer the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Batch Information by Batch Key — CDS view tổng hợp (master data) dựa trên R_Batch."
 keywords:
-  - batch
-  - information
-  - key
-  - material
-  - identifying
-  - plant
-  - marked
-  - deletion
-  - matl
-  - rstrcd
-  - stock
+  - "batch"
+  - "information"
+  - "key"
+  - "material"
+  - "identifying"
+  - "plant"
+  - "marked"
+  - "deletion"
+  - "matl"
+  - "rstrcd"
+  - "stock"
 tags:
   - LO
   - bo:companycode

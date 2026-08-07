@@ -1,6 +1,6 @@
 ---
 name: I_JOINTVENTUREPARTNERVALUEHELP
-description: Jointventurepartnervaluehelp
+description: "Jointventurepartnervaluehelp"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

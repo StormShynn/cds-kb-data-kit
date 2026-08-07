@@ -1,6 +1,6 @@
 ---
 name: I_STORAGELOCATIONADDRESS
-description: Storagelocationaddress
+description: "Storagelocationaddress"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_ONETIMEACCOUNTCUSTOMER
-description: Onetimeaccountcustomer
+description: "Onetimeaccountcustomer"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

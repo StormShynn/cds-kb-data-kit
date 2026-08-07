@@ -1,13 +1,13 @@
 ---
 name: I_GRANTEEMGMTBILLINGRULE
-description: Grantee Management Billing Rule
+description: "Grantee Management Billing Rule"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRANTEEMGMTBILLINGRULE')/$value
-semantic_en: Grantee Management Billing Rule
+semantic_en: "Grantee Management Billing Rule"
 tags:
   - PSM
   - billing

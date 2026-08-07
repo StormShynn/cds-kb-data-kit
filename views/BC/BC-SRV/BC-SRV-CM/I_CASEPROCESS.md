@@ -1,13 +1,13 @@
 ---
 name: I_CASEPROCESS
-description: Case Process
+description: "Case Process"
 app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPROCESS')/$value
-semantic_en: Case Process
+semantic_en: "Case Process"
 tags:
   - BC
   - BC-SRV

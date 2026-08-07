@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCATIONSEQUENCETP_2
-description: Prodallocationsequencetp 2
+description: "Prodallocationsequencetp 2"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

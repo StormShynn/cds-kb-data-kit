@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRAMOUNTFIELDGRPTEXT
-description: Cndncontramountfieldgrptext
+description: "Cndncontramountfieldgrptext"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

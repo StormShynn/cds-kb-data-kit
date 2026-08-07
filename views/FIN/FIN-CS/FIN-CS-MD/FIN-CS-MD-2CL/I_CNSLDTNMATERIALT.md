@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNMATERIALT
-description: Cnsldtnmaterialt
+description: "Cnsldtnmaterialt"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

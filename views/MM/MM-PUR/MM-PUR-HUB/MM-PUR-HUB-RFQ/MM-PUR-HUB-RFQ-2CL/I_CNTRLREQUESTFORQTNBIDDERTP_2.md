@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLREQUESTFORQTNBIDDERTP_2
-description: Cntrlrequestforqtnbiddertp 2
+description: "Cntrlrequestforqtnbiddertp 2"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

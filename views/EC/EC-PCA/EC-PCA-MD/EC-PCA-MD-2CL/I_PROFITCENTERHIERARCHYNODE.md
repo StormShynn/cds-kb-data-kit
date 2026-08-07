@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERHIERARCHYNODE
-description: Profit CenterHIERARCHYNODE
+description: "Profit CenterHIERARCHYNODE"
 app_component: EC-PCA-MD-2CL
 software_component: SAPSCORE
 release_state: released

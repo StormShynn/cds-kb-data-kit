@@ -1,24 +1,24 @@
 ---
 name: C_SOLVEDDSPUTCASESTSDURNQ
-description: This CDS view provides details of solved dispute cases in SAP Dispute Management and the duration in which they were in a specific case status. This CDS view provides the data to answer the following business questions: How long did a solved dispute case stay in a specific status? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view provides details of solved dispute cases in SAP Dispute Management and the duration in which they were in a specific case status. This CDS view provides the data to answer the following business questions: How long did a solved dispute case stay in a specific status? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SOLVEDDSPUTCASESTSDURNQ')/$value
-semantic_en: This CDS view provides details of solved dispute cases in SAP Dispute Management and the duration in which they were in a specific case status. This CDS view provides the data to answer the following business questions: How long did a solved dispute case stay in a specific status? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Solved Dispute Case Status Durn - Query — CDS view tiêu dùng dựa trên I_SolvedDsputCaseStsDurnC.
+semantic_en: "This CDS view provides details of solved dispute cases in SAP Dispute Management and the duration in which they were in a specific case status. This CDS view provides the data to answer the following business questions: How long did a solved dispute case stay in a specific status? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Solved Dispute Case Status Durn - Query — CDS view tiêu dùng dựa trên I_SolvedDsputCaseStsDurnC."
 keywords:
-  - solved
-  - dispute
-  - case
-  - status
-  - durn
-  - query
-  - company
-  - code
-  - customer
+  - "solved"
+  - "dispute"
+  - "case"
+  - "status"
+  - "durn"
+  - "query"
+  - "company"
+  - "code"
+  - "customer"
 tags:
   - FI
   - bo:companycode

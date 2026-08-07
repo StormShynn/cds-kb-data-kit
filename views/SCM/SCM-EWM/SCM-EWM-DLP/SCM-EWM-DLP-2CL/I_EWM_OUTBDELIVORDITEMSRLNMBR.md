@@ -1,6 +1,6 @@
 ---
 name: I_EWM_OUTBDELIVORDITEMSRLNMBR
-description: Ewm Outbdelivorditemsrlnmbr
+description: "Ewm Outbdelivorditemsrlnmbr"
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released

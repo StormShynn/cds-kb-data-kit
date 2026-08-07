@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTASSETCALCDATA
-description: Calculation Results for Agreement Asset
+description: "Calculation Results for Agreement Asset"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTASSETCALCDATA')/$value
-semantic_en: Calculation Results for Agreement Asset
+semantic_en: "Calculation Results for Agreement Asset"
 tags:
   - FS
   - component:FS-CMS

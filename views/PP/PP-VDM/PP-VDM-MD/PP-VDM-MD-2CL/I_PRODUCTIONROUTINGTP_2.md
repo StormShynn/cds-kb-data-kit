@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONROUTINGTP_2
-description: Productionroutingtp 2
+description: "Productionroutingtp 2"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

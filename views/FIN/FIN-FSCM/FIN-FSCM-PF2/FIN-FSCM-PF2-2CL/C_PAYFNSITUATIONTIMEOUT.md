@@ -1,13 +1,13 @@
 ---
 name: C_PAYFNSITUATIONTIMEOUT
-description: Situation for Timeout Issue
+description: "Situation for Timeout Issue"
 app_component: FIN-FSCM-PF2-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PAYFNSITUATIONTIMEOUT')/$value
-semantic_en: Situation for Timeout Issue
+semantic_en: "Situation for Timeout Issue"
 tags:
   - FIN
   - component:FIN-FSCM-PF2-2CL

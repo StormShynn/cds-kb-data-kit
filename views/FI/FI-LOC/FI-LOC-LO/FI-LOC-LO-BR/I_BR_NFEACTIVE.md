@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFEACTIVE
-description: BR Nfeactive
+description: "BR Nfeactive"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

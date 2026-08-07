@@ -1,13 +1,13 @@
 ---
 name: C_UPCGSRVCCONTRITEMQUERY
-description: Upcoming Service Contract Item - Query
+description: "Upcoming Service Contract Item - Query"
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_UPCGSRVCCONTRITEMQUERY')/$value
-semantic_en: Upcoming Service Contract Item - Query
+semantic_en: "Upcoming Service Contract Item - Query"
 tags:
   - CRM
   - component:CRM-S4-ANA-CDS-2CL

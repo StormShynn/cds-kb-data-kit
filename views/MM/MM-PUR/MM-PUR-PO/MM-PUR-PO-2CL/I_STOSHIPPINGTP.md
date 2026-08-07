@@ -1,6 +1,6 @@
 ---
 name: I_STOSHIPPINGTP
-description: Stoshippingtp
+description: "Stoshippingtp"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALCRITRNVARCSCORE
-description: Suplrevalcritrnvarcscore
+description: "Suplrevalcritrnvarcscore"
 app_component: MM-PUR-2CL
 software_component: SAPSCORE
 release_state: released

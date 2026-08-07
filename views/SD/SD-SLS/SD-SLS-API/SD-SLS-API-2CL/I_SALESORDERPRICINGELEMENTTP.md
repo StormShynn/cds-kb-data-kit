@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERPRICINGELEMENTTP
-description: Sales OrderPRICINGELEMENTTP
+description: "Sales OrderPRICINGELEMENTTP"
 app_component: SD-SLS-API-2CL
 software_component: SAPSCORE
 release_state: released

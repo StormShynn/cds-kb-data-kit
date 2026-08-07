@@ -1,15 +1,15 @@
 ---
 name: I_MAINTORDERACTUALCOSTDATACUBE
-description: This CDS view provides the actual cost postings which were incurred from maintenance orders. It answers the following business questions: What type of cost was incurred? Does the posting refer to the incurrence of the cost, or to its settlement? For which maintenance order, for which maintenance operation, and technical object was the cost incurred? What was the reason for the maintenance work, for example reactive or proactive? In which fiscal period is the cost reflected? Is the cost considered to be of unplanned nature, for example an unplanned material consumption?
+description: "This CDS view provides the actual cost postings which were incurred from maintenance orders. It answers the following business questions: What type of cost was incurred? Does the posting refer to the incurrence of the cost, or to its settlement? For which maintenance order, for which maintenance operation, and technical object was the cost incurred? What was the reason for the maintenance work, for example reactive or proactive? In which fiscal period is the cost reflected? Is the cost considered to be of unplanned nature, for example an unplanned material consumption?"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTORDERACTUALCOSTDATACUBE')/$value
-semantic_en: This CDS view provides the actual cost postings which were incurred from maintenance orders. It answers the following business questions: What type of cost was incurred? Does the posting refer to the incurrence of the cost, or to its settlement? For which maintenance order, for which maintenance operation, and technical object was the cost incurred? What was the reason for the maintenance work, for example reactive or proactive? In which fiscal period is the cost reflected? Is the cost considered to be of unplanned nature, for example an unplanned material consumption?
+semantic_en: "This CDS view provides the actual cost postings which were incurred from maintenance orders. It answers the following business questions: What type of cost was incurred? Does the posting refer to the incurrence of the cost, or to its settlement? For which maintenance order, for which maintenance operation, and technical object was the cost incurred? What was the reason for the maintenance work, for example reactive or proactive? In which fiscal period is the cost reflected? Is the cost considered to be of unplanned nature, for example an unplanned material consumption?"
 keywords:
-  - Maintenance Order Actual Cost - Analytics Cube
+  - "Maintenance Order Actual Cost - Analytics Cube"
 tags:
   - PM
   - bo:companycode

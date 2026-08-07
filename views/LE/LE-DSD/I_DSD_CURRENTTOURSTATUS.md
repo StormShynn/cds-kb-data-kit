@@ -1,6 +1,6 @@
 ---
 name: I_DSD_CURRENTTOURSTATUS
-description: Dsd Currenttourstatus
+description: "Dsd Currenttourstatus"
 app_component: LE-DSD
 software_component: SAPSCORE
 release_state: released

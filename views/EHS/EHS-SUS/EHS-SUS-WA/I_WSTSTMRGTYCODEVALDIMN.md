@@ -1,13 +1,13 @@
 ---
 name: I_WSTSTMRGTYCODEVALDIMN
-description: Waste Stream Regulatory Code Value
+description: "Waste Stream Regulatory Code Value"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WSTSTMRGTYCODEVALDIMN')/$value
-semantic_en: Waste Stream Regulatory Code Value
+semantic_en: "Waste Stream Regulatory Code Value"
 tags:
   - EHS
   - component:EHS-SUS-WA

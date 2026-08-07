@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALDOCITEMSERIALNOTP
-description: Materialdocitemserialnotp
+description: "Materialdocitemserialnotp"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

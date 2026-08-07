@@ -1,6 +1,6 @@
 ---
 name: F_VALUATIONAREATYPE
-description: Valuationareatype
+description: "Valuationareatype"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

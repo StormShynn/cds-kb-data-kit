@@ -1,6 +1,6 @@
 ---
 name: I_BR_DUETYPE
-description: BR Duetype
+description: "BR Duetype"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

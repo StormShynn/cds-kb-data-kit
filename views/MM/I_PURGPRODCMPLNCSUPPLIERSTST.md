@@ -1,6 +1,6 @@
 ---
 name: I_PURGPRODCMPLNCSUPPLIERSTST
-description: Purgprodcmplncsupplierstst
+description: "Purgprodcmplncsupplierstst"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

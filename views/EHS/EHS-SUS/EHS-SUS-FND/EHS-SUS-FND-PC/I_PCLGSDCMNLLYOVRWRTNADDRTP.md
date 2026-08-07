@@ -1,6 +1,6 @@
 ---
 name: I_PCLGSDCMNLLYOVRWRTNADDRTP
-description: Pclgsdcmnllyovrwrtnaddrtp
+description: "Pclgsdcmnllyovrwrtnaddrtp"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: C_CHANGERECORDPRODNRTGDEX
-description: Change Record Prodn Routing Extraction
+description: "Change Record Prodn Routing Extraction"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDPRODNRTGDEX')/$value
-semantic_en: Change Record Prodn Routing Extraction
+semantic_en: "Change Record Prodn Routing Extraction"
 tags:
   - PLM
   - component:PLM-CR-2CL

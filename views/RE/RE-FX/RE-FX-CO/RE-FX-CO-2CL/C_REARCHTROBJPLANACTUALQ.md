@@ -1,13 +1,13 @@
 ---
 name: C_REARCHTROBJPLANACTUALQ
-description: RE Architecture Plan Actual - Qry
+description: "RE Architecture Plan Actual - Qry"
 app_component: RE-FX-CO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REARCHTROBJPLANACTUALQ')/$value
-semantic_en: RE Architecture Plan Actual - Qry
+semantic_en: "RE Architecture Plan Actual - Qry"
 tags:
   - RE
   - component:RE-FX-CO-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_CHGMSTROBJTYPEASSGMTTP_2
-description: Chgmstrobjtypeassgmttp 2
+description: "Chgmstrobjtypeassgmttp 2"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

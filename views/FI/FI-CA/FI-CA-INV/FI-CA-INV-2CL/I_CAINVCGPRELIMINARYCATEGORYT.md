@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGPRELIMINARYCATEGORYT
-description: Cainvcgpreliminarycategoryt
+description: "Cainvcgpreliminarycategoryt"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

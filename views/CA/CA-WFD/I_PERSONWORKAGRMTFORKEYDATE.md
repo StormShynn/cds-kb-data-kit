@@ -1,13 +1,13 @@
 ---
 name: I_PERSONWORKAGRMTFORKEYDATE
-description: This view provides the prerequisites for answering the following business questions: What is the details of a work agreement? (For example, Organizational Details, Status details, Planned working hours, Service cost level)
+description: "This view provides the prerequisites for answering the following business questions: What is the details of a work agreement? (For example, Organizational Details, Status details, Planned working hours, Service cost level)"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERSONWORKAGRMTFORKEYDATE')/$value
-semantic_en: This view provides the prerequisites for answering the following business questions: What is the details of a work agreement? (For example, Organizational Details, Status details, Planned working hours, Service cost level)
+semantic_en: "This view provides the prerequisites for answering the following business questions: What is the details of a work agreement? (For example, Organizational Details, Status details, Planned working hours, Service cost level)"
 tags:
   - CA
   - bo:plant

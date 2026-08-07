@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDOBJECTLINK
-description: Documentinforecordobjectlink
+description: "Documentinforecordobjectlink"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

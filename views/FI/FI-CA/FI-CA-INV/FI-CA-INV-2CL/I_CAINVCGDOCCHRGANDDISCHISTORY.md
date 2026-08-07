@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGDOCCHRGANDDISCHISTORY
-description: Cainvcgdocchrganddischistory
+description: "Cainvcgdocchrganddischistory"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

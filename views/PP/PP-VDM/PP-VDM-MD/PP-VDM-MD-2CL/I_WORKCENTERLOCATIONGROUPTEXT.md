@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERLOCATIONGROUPTEXT
-description: Work CenterLOCATIONGROUPTEXT
+description: "Work CenterLOCATIONGROUPTEXT"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

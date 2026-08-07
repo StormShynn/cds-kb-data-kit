@@ -1,6 +1,6 @@
 ---
 name: I_ACCTGSRVCDOCUMENTITEMBASIC
-description: Acctgsrvcdocumentitembasic
+description: "Acctgsrvcdocumentitembasic"
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

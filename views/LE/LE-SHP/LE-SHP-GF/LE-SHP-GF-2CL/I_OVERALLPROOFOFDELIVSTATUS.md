@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLPROOFOFDELIVSTATUS
-description: Overallproofofdelivstatus
+description: "Overallproofofdelivstatus"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

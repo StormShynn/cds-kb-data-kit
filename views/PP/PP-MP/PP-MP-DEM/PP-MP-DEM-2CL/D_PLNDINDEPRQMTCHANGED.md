@@ -1,6 +1,6 @@
 ---
 name: D_PLNDINDEPRQMTCHANGED
-description: D Plndindeprqmtchanged
+description: "D Plndindeprqmtchanged"
 app_component: PP-MP-DEM-2CL
 software_component: SAPSCORE
 release_state: released

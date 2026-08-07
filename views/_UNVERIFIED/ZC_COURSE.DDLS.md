@@ -1,21 +1,21 @@
 ---
 name: ZC_COURSE.DDLS
-description: Course Consumption View
+description: "Course Consumption View"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/mwwhitted/rap-training-tracker/blob/097d75f82850eb7f350c196a89615d4d65f6d2cb/src/ZC_COURSE.ddls.asddls
-semantic_en: Course Consumption View — CDS view.
-semantic_vi: Course Consumption View — CDS view dựa trên Course Consumption View.
+semantic_en: "Course Consumption View — CDS view."
+semantic_vi: "Course Consumption View — CDS view dựa trên Course Consumption View."
 keywords:
-  - course
-  - consumption
-  - title
-  - level
-  - instructor
-  - created
+  - "course"
+  - "consumption"
+  - "title"
+  - "level"
+  - "instructor"
+  - "created"
 tags:
   - CO
   - component:CO

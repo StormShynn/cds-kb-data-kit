@@ -1,6 +1,6 @@
 ---
 name: I_PLANTPURCHASINGORGANIZATION
-description: Plantpurchasingorganization
+description: "Plantpurchasingorganization"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERCATEGORYTEXT
-description: Cost CenterCATEGORYTEXT
+description: "Cost CenterCATEGORYTEXT"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

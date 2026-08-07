@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTMINQLTATVEXCEPTION
-description: Agreement Minimum Qualitative Exception
+description: "Agreement Minimum Qualitative Exception"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTMINQLTATVEXCEPTION')/$value
-semantic_en: Agreement Minimum Qualitative Exception
+semantic_en: "Agreement Minimum Qualitative Exception"
 tags:
   - FS
   - component:FS-CMS

@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALINSURANCETYPETEXT
-description: Type of Collateral Insurance - Text
+description: "Type of Collateral Insurance - Text"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALINSURANCETYPETEXT')/$value
-semantic_en: Type of Collateral Insurance - Text
+semantic_en: "Type of Collateral Insurance - Text"
 tags:
   - FS
   - component:FS-CMS

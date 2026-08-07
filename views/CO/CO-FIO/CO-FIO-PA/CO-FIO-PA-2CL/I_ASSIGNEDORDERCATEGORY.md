@@ -1,19 +1,19 @@
 ---
 name: I_ASSIGNEDORDERCATEGORY
-description: Order Category for ETO
+description: "Order Category for ETO"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSIGNEDORDERCATEGORY')/$value
-semantic_en: Order Category for ETO
-semantic_vi: Order Category for ETO — CDS view giao diện dựa trên P_ETOOrdCategory.
+semantic_en: "Order Category for ETO"
+semantic_vi: "Order Category for ETO — CDS view giao diện dựa trên P_ETOOrdCategory."
 keywords:
-  - order
-  - category
-  - for
-  - eto
+  - "order"
+  - "category"
+  - "for"
+  - "eto"
 tags:
   - CO
   - CO-FIO

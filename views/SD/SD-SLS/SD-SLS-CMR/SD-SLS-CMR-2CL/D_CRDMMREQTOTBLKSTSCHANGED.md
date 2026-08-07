@@ -1,6 +1,6 @@
 ---
 name: D_CRDMMREQTOTBLKSTSCHANGED
-description: D Crdmmreqtotblkstschanged
+description: "D Crdmmreqtotblkstschanged"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

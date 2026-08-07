@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDERSTATUS
-description: Purchase OrderSTATUS
+description: "Purchase OrderSTATUS"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

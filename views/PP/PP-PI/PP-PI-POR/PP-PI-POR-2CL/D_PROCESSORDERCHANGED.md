@@ -1,6 +1,6 @@
 ---
 name: D_PROCESSORDERCHANGED
-description: D Processorderchanged
+description: "D Processorderchanged"
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

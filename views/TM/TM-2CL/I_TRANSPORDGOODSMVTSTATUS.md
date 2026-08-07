@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDGOODSMVTSTATUS
-description: Transpordgoodsmvtstatus
+description: "Transpordgoodsmvtstatus"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FAILEDGOODSMOVEMENT
-description: FAILEDGoods Movement
+description: "FAILEDGoods Movement"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

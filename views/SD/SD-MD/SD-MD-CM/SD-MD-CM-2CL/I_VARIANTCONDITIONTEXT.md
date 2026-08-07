@@ -1,6 +1,6 @@
 ---
 name: I_VARIANTCONDITIONTEXT
-description: Variantconditiontext
+description: "Variantconditiontext"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

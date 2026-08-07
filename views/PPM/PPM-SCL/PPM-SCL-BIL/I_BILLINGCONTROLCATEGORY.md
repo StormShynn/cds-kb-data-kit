@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGCONTROLCATEGORY
-description: Billingcontrolcategory
+description: "Billingcontrolcategory"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

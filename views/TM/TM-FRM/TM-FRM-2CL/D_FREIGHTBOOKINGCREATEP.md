@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTBOOKINGCREATEP
-description: D Freightbookingcreatep
+description: "D Freightbookingcreatep"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

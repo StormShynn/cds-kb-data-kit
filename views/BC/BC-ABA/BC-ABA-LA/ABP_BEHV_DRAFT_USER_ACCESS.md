@@ -1,6 +1,6 @@
 ---
 name: ABP_BEHV_DRAFT_USER_ACCESS
-description: Abp Behv Draft User Access
+description: "Abp Behv Draft User Access"
 app_component: BC-ABA-LA
 software_component: SAP_BASIS
 release_state: released

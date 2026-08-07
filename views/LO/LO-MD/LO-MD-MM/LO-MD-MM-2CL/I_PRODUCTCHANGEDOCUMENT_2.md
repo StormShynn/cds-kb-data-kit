@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTCHANGEDOCUMENT_2
-description: Productchangedocument 2
+description: "Productchangedocument 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

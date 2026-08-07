@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDSTRUCSTS
-description: Documentinforecordstrucsts
+description: "Documentinforecordstrucsts"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

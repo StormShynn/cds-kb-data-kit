@@ -1,13 +1,13 @@
 ---
 name: I_GOODSMOVEMENTDOCUMENTDEX
-description: This CDS view is intended to be used for data extraction of the material document. The view provides all important data of the material document posting. The view is enabled for delta extraction. You may build your own BW content based on the data provided by this view. This CDS view provides the prerequisites for answering the following business questions: Which material has been posted to which stock type? Which material has been posted to which special stock type and to which reference object? How many transfer postings have been done last month? Between which plants have materials be transferred?
+description: "This CDS view is intended to be used for data extraction of the material document. The view provides all important data of the material document posting. The view is enabled for delta extraction. You may build your own BW content based on the data provided by this view. This CDS view provides the prerequisites for answering the following business questions: Which material has been posted to which stock type? Which material has been posted to which special stock type and to which reference object? How many transfer postings have been done last month? Between which plants have materials be transferred?"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GOODSMOVEMENTDOCUMENTDEX')/$value
-semantic_en: This CDS view is intended to be used for data extraction of the material document. The view provides all important data of the material document posting. The view is enabled for delta extraction. You may build your own BW content based on the data provided by this view. This CDS view provides the prerequisites for answering the following business questions: Which material has been posted to which stock type? Which material has been posted to which special stock type and to which reference object? How many transfer postings have been done last month? Between which plants have materials be transferred?
+semantic_en: "This CDS view is intended to be used for data extraction of the material document. The view provides all important data of the material document posting. The view is enabled for delta extraction. You may build your own BW content based on the data provided by this view. This CDS view provides the prerequisites for answering the following business questions: Which material has been posted to which stock type? Which material has been posted to which special stock type and to which reference object? How many transfer postings have been done last month? Between which plants have materials be transferred?"
 tags:
   - MM
   - bo:inventory

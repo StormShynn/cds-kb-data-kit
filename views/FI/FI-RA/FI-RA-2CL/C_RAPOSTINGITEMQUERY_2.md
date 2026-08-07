@@ -1,26 +1,26 @@
 ---
 name: C_RAPOSTINGITEMQUERY_2
-description: This CDS view provides the prerequisites for answering the following business questions: How much revenue is posted in the document currency and company code currency? How much revenue is posted in each period in the document currency and company code currency? How much revenue is posted for each G/L account in the document currency and company code currency? What proportion of posted revenue belongs to each business unit? What is the posted revenue for each performance obligation or contract?
+description: "This CDS view provides the prerequisites for answering the following business questions: How much revenue is posted in the document currency and company code currency? How much revenue is posted in each period in the document currency and company code currency? How much revenue is posted for each G/L account in the document currency and company code currency? What proportion of posted revenue belongs to each business unit? What is the posted revenue for each performance obligation or contract?"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RAPOSTINGITEMQUERY_2')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How much revenue is posted in the document currency and company code currency? How much revenue is posted in each period in the document currency and company code currency? How much revenue is posted for each G/L account in the document currency and company code currency? What proportion of posted revenue belongs to each business unit? What is the posted revenue for each performance obligation or contract?
-semantic_vi: Disaggregation of Revenue — CDS view tiêu dùng dựa trên Disaggregation of Revenue.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How much revenue is posted in the document currency and company code currency? How much revenue is posted in each period in the document currency and company code currency? How much revenue is posted for each G/L account in the document currency and company code currency? What proportion of posted revenue belongs to each business unit? What is the posted revenue for each performance obligation or contract?"
+semantic_vi: "Disaggregation of Revenue — CDS view tiêu dùng dựa trên Disaggregation of Revenue."
 keywords:
-  - Disaggregation of Revenue
-  - disaggregation
-  - revenue
-  - performance
-  - obligation
-  - accounting
-  - contract
-  - company
-  - code
-  - name
-  - principle
+  - "Disaggregation of Revenue"
+  - "disaggregation"
+  - "revenue"
+  - "performance"
+  - "obligation"
+  - "accounting"
+  - "contract"
+  - "company"
+  - "code"
+  - "name"
+  - "principle"
 tags:
   - FI
   - account

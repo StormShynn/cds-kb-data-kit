@@ -1,28 +1,28 @@
 ---
 name: C_APDAYSPAYOUTST
-description: This CDS view provides you with an insight into the average collection period of your company. It shows the number of days it takes, on average, for your company to collect payables. The result calculates the days payable outstanding (direct calculation) from 365 days ago till today. This CDS view provides the prerequisites for answering the following business questions: How long does it take to collect payables? Which suppliers have the highest or the lowest days payable outstanding? For more information about the calculation of the measures, see Calculation Logic: Days Payable Outstanding.
+description: "This CDS view provides you with an insight into the average collection period of your company. It shows the number of days it takes, on average, for your company to collect payables. The result calculates the days payable outstanding (direct calculation) from 365 days ago till today. This CDS view provides the prerequisites for answering the following business questions: How long does it take to collect payables? Which suppliers have the highest or the lowest days payable outstanding? For more information about the calculation of the measures, see Calculation Logic: Days Payable Outstanding."
 app_component: FI-AP-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_APDAYSPAYOUTST')/$value
-semantic_en: This CDS view provides you with an insight into the average collection period of your company. It shows the number of days it takes, on average, for your company to collect payables. The result calculates the days payable outstanding (direct calculation) from 365 days ago till today. This CDS view provides the prerequisites for answering the following business questions: How long does it take to collect payables? Which suppliers have the highest or the lowest days payable outstanding? For more information about the calculation of the measures, see Calculation Logic: Days Payable Outstanding.
-semantic_vi: Days Payable Outstanding Smart Business App — CDS view tiêu dùng dựa trên I_APDaysPayOutst.
+semantic_en: "This CDS view provides you with an insight into the average collection period of your company. It shows the number of days it takes, on average, for your company to collect payables. The result calculates the days payable outstanding (direct calculation) from 365 days ago till today. This CDS view provides the prerequisites for answering the following business questions: How long does it take to collect payables? Which suppliers have the highest or the lowest days payable outstanding? For more information about the calculation of the measures, see Calculation Logic: Days Payable Outstanding."
+semantic_vi: "Days Payable Outstanding Smart Business App — CDS view tiêu dùng dựa trên I_APDaysPayOutst."
 keywords:
-  - days
-  - payable
-  - outstanding
-  - smart
-  - business
-  - app
-  - company
-  - code
-  - supplier
-  - year
-  - month
-  - region
-  - name
+  - "days"
+  - "payable"
+  - "outstanding"
+  - "smart"
+  - "business"
+  - "app"
+  - "company"
+  - "code"
+  - "supplier"
+  - "year"
+  - "month"
+  - "region"
+  - "name"
 tags:
   - FI
   - bo:plant

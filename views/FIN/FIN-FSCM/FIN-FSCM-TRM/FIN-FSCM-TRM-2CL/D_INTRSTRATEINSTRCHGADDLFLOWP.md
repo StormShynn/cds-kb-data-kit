@@ -1,6 +1,6 @@
 ---
 name: D_INTRSTRATEINSTRCHGADDLFLOWP
-description: D Intrstrateinstrchgaddlflowp
+description: "D Intrstrateinstrchgaddlflowp"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

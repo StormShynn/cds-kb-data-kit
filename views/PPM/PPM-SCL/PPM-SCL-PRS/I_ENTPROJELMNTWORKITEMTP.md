@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJELMNTWORKITEMTP
-description: Entprojelmntworkitemtp
+description: "Entprojelmntworkitemtp"
 app_component: PPM-SCL-PRS
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_PROMISETOPAYOVERVIEW
-description: Promise To Pay Overview - Cube
+description: "Promise To Pay Overview - Cube"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROMISETOPAYOVERVIEW')/$value
-semantic_en: Promise To Pay Overview - Cube
+semantic_en: "Promise To Pay Overview - Cube"
 tags:
   - FIN
   - component:FIN-FSCM-COL-2CL

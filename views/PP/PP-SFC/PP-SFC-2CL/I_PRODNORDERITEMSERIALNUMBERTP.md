@@ -1,6 +1,6 @@
 ---
 name: I_PRODNORDERITEMSERIALNUMBERTP
-description: PRODNORDERITEMSerial NumberTP
+description: "PRODNORDERITEMSerial NumberTP"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

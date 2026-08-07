@@ -1,13 +1,13 @@
 ---
 name: I_JOINTVENTUREEQUITYTYPE
-description: Joint Venture Equity Type
+description: "Joint Venture Equity Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_JOINTVENTUREEQUITYTYPE')/$value
-semantic_en: Joint Venture Equity Type
+semantic_en: "Joint Venture Equity Type"
 tags:
   - IS
   - component:IS-OIL-PRA

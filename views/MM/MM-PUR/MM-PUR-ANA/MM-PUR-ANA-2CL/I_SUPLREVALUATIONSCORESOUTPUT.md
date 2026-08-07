@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALUATIONSCORESOUTPUT
-description: Suplrevaluationscoresoutput
+description: "Suplrevaluationscoresoutput"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

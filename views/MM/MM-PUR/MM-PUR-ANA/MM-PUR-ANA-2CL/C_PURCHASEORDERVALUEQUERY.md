@@ -1,29 +1,29 @@
 ---
 name: C_PURCHASEORDERVALUEQUERY
-description: Spend Analysis
+description: "Spend Analysis"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PURCHASEORDERVALUEQUERY')/$value
-semantic_en: Spend Analysis
-semantic_vi: Spend Analysis — CDS view tiêu dùng dựa trên C_PurchaseOrderValue.
+semantic_en: "Spend Analysis"
+semantic_vi: "Spend Analysis — CDS view tiêu dùng dựa trên C_PurchaseOrderValue."
 keywords:
-  - spend
-  - analysis
-  - purchase
-  - order
-  - item
-  - account
-  - assignment
-  - number
-  - purg
-  - migrtn
-  - cmpltd
-  - anlyts
-  - calendar
-  - month
+  - "spend"
+  - "analysis"
+  - "purchase"
+  - "order"
+  - "item"
+  - "account"
+  - "assignment"
+  - "number"
+  - "purg"
+  - "migrtn"
+  - "cmpltd"
+  - "anlyts"
+  - "calendar"
+  - "month"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

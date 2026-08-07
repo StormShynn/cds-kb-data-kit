@@ -1,6 +1,6 @@
 ---
 name: I_RETURNREASON
-description: Returnreason
+description: "Returnreason"
 app_component: LO-ARM-2CL
 software_component: SAPSCORE
 release_state: released

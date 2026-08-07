@@ -1,6 +1,6 @@
 ---
 name: I_SALESDISTRICTTEXT
-description: Salesdistricttext
+description: "Salesdistricttext"
 app_component: LO-MD-BP-CM-2CL
 software_component: SAPSCORE
 release_state: released

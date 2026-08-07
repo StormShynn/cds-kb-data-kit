@@ -1,6 +1,6 @@
 ---
 name: ISIZINGLISTCUBE
-description: Isizinglistcube
+description: "Isizinglistcube"
 app_component: FI-RA-2CL
 software_component: SAPPCORE_H
 release_state: released

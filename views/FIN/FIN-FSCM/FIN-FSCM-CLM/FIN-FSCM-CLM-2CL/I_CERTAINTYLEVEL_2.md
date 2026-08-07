@@ -1,6 +1,6 @@
 ---
 name: I_CERTAINTYLEVEL_2
-description: Certaintylevel 2
+description: "Certaintylevel 2"
 app_component: FIN-FSCM-CLM-2CL
 software_component: SAPSCORE
 release_state: released

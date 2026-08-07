@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDOBJLINKT
-description: Documentinforecordobjlinkt
+description: "Documentinforecordobjlinkt"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

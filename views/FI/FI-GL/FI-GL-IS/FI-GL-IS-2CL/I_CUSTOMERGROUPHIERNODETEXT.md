@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERGROUPHIERNODETEXT
-description: Customergrouphiernodetext
+description: "Customergrouphiernodetext"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

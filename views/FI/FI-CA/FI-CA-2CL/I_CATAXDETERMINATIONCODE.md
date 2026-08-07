@@ -1,6 +1,6 @@
 ---
 name: I_CATAXDETERMINATIONCODE
-description: Cataxdeterminationcode
+description: "Cataxdeterminationcode"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

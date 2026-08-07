@@ -1,6 +1,6 @@
 ---
 name: I_CACLEARINGREASON
-description: Caclearingreason
+description: "Caclearingreason"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

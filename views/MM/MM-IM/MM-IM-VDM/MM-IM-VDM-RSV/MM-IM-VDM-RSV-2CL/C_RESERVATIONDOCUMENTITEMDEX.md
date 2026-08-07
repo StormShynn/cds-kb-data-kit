@@ -1,27 +1,27 @@
 ---
 name: C_RESERVATIONDOCUMENTITEMDEX
-description: Data extraction for Reservation Document
+description: "Data extraction for Reservation Document"
 app_component: MM-IM-VDM-RSV-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RESERVATIONDOCUMENTITEMDEX')/$value
-semantic_en: Data extraction for Reservation Document
-semantic_vi: Data extraction for Reservation Document — CDS view tiêu dùng (transactional data) dựa trên I_ReservationDocumentItem.
+semantic_en: "Data extraction for Reservation Document"
+semantic_vi: "Data extraction for Reservation Document — CDS view tiêu dùng (transactional data) dựa trên I_ReservationDocumentItem."
 keywords:
-  - Data extraction for Reservation Document
-  - data
-  - extraction
-  - for
-  - reservation
-  - document
-  - item
-  - record
-  - type
-  - plant
-  - storage
-  - location
+  - "Data extraction for Reservation Document"
+  - "data"
+  - "extraction"
+  - "for"
+  - "reservation"
+  - "document"
+  - "item"
+  - "record"
+  - "type"
+  - "plant"
+  - "storage"
+  - "location"
 tags:
   - MM
   - component:MM-IM-VDM-RSV-2CL

@@ -1,13 +1,13 @@
 ---
 name: I_ENGAGEMENTPROJECTSTAGE
-description: This CDS view provides information about the stage of a project.
+description: "This CDS view provides information about the stage of a project."
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGAGEMENTPROJECTSTAGE')/$value
-semantic_en: This CDS view provides information about the stage of a project.
+semantic_en: "This CDS view provides information about the stage of a project."
 tags:
   - CA
   - bo:project

@@ -1,6 +1,6 @@
 ---
 name: I_BLLBLECTRLBILLGCTRLCATASSGMT
-description: Bllblectrlbillgctrlcatassgmt
+description: "Bllblectrlbillgctrlcatassgmt"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

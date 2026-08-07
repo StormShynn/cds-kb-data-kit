@@ -1,6 +1,6 @@
 ---
 name: I_MFGORDERFAILEDCONFLOG
-description: Mfgorderfailedconflog
+description: "Mfgorderfailedconflog"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

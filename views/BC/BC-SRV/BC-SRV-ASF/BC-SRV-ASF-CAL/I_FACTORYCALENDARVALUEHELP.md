@@ -1,6 +1,6 @@
 ---
 name: I_FACTORYCALENDARVALUEHELP
-description: Factorycalendarvaluehelp
+description: "Factorycalendarvaluehelp"
 app_component: BC-SRV-ASF-CAL
 software_component: SAP_BASIS
 release_state: released

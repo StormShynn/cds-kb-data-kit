@@ -1,6 +1,6 @@
 ---
 name: I_PLANT
-description: Plant
+description: "Plant"
 app_component: LO-MD-PL-2CL
 software_component: SAPSCORE
 release_state: released

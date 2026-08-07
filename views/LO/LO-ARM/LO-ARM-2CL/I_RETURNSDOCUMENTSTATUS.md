@@ -1,6 +1,6 @@
 ---
 name: I_RETURNSDOCUMENTSTATUS
-description: Returnsdocumentstatus
+description: "Returnsdocumentstatus"
 app_component: LO-ARM-2CL
 software_component: SAPSCORE
 release_state: released

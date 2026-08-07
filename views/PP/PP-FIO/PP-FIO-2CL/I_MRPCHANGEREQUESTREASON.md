@@ -1,6 +1,6 @@
 ---
 name: I_MRPCHANGEREQUESTREASON
-description: Mrpchangerequestreason
+description: "Mrpchangerequestreason"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

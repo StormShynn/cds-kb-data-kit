@@ -1,22 +1,22 @@
 ---
 name: C_CUSTOMERRETURNITEMQRY_2
-description: This query provides the prerequisites for answering questions about relevant aspects of customer return items. Example business questions are: What is the net value or quantity of a given customer return item? How many items does a given customer return contain? Why are the items returned? Who is the responsible employee?
+description: "This query provides the prerequisites for answering questions about relevant aspects of customer return items. Example business questions are: What is the net value or quantity of a given customer return item? How many items does a given customer return contain? Why are the items returned? Who is the responsible employee?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTOMERRETURNITEMQRY_2')/$value
-semantic_en: This query provides the prerequisites for answering questions about relevant aspects of customer return items. Example business questions are: What is the net value or quantity of a given customer return item? How many items does a given customer return contain? Why are the items returned? Who is the responsible employee?
-semantic_vi: Customer Return Item - Query — CDS view tiêu dùng dựa trên I_CustomerReturnItemCube_2.
+semantic_en: "This query provides the prerequisites for answering questions about relevant aspects of customer return items. Example business questions are: What is the net value or quantity of a given customer return item? How many items does a given customer return contain? Why are the items returned? Who is the responsible employee?"
+semantic_vi: "Customer Return Item - Query — CDS view tiêu dùng dựa trên I_CustomerReturnItemCube_2."
 keywords:
-  - Customer Return Item - Query
-  - customer
-  - return
-  - item
-  - query
-  - type
-  - category
+  - "Customer Return Item - Query"
+  - "customer"
+  - "return"
+  - "item"
+  - "query"
+  - "type"
+  - "category"
 tags:
   - SD
   - bo:businesspartner

@@ -1,6 +1,6 @@
 ---
 name: I_QUALITYLEVELTP_2
-description: Qualityleveltp 2
+description: "Qualityleveltp 2"
 app_component: QM-QC-2CL
 software_component: SAPSCORE
 release_state: released

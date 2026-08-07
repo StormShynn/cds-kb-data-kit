@@ -1,6 +1,6 @@
 ---
 name: I_CN_RECONCILIATIONLEDGER
-description: CN Reconciliationledger
+description: "CN Reconciliationledger"
 app_component: FI-LOC-EPI-CN
 software_component: SAPSCORE
 release_state: released

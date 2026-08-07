@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTINDUSTRYKEYTEXT
-description: Business PartnerINDUSTRYKEYTEXT
+description: "Business PartnerINDUSTRYKEYTEXT"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

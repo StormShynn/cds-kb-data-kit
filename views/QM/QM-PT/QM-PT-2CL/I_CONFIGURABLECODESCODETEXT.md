@@ -1,6 +1,6 @@
 ---
 name: I_CONFIGURABLECODESCODETEXT
-description: Configurablecodescodetext
+description: "Configurablecodescodetext"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

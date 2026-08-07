@@ -1,6 +1,6 @@
 ---
 name: I_LANGUAGETEXT
-description: Languagetext
+description: "Languagetext"
 app_component: BC-DOC-TTL
 software_component: SAP_BASIS
 release_state: released

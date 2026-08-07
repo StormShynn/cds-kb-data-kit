@@ -1,13 +1,13 @@
 ---
 name: I_SITEOPENINGHOURS
-description: Site Opening Hours
+description: "Site Opening Hours"
 app_component: LO-RFM-MD-SIT-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SITEOPENINGHOURS')/$value
-semantic_en: Site Opening Hours
+semantic_en: "Site Opening Hours"
 tags:
   - LO
   - bo:plant

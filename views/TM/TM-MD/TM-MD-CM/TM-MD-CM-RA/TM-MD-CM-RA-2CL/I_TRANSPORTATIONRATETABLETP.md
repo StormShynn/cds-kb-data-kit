@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONRATETABLETP
-description: Transportationratetabletp
+description: "Transportationratetabletp"
 app_component: TM-MD-CM-RA-2CL
 software_component: SAPSCORE
 release_state: released

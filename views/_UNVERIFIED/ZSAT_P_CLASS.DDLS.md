@@ -1,23 +1,23 @@
 ---
 name: ZSAT_P_CLASS.DDLS
-description: ABAP OO Class/Interface
+description: "ABAP OO Class/Interface"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/DevEpos/abap-search-tools/blob/4f6d12c35a47d24d741b60fbeb228e132c4f303a/src/zsat_p_class.ddls.asddls
-semantic_en: ABAP OO Class/Interface — CDS view based on seoclass.
-semantic_vi: ABAP OO Class/Interface — CDS view dựa trên seoclass.
+semantic_en: "ABAP OO Class/Interface — CDS view based on seoclass."
+semantic_vi: "ABAP OO Class/Interface — CDS view dựa trên seoclass."
 keywords:
-  - abap
-  - class/interface
-  - class
-  - tadir
-  - type
-  - category
-  - exposure
-  - state
+  - "abap"
+  - "class/interface"
+  - "class"
+  - "tadir"
+  - "type"
+  - "category"
+  - "exposure"
+  - "state"
 tags:
   - AC
   - component:AC

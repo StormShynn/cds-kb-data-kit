@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSMANDFLAGTXTAPI01
-description: Lgltransmandflagtxtapi 01
+description: "Lgltransmandflagtxtapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

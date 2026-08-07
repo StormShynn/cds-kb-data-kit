@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRBUSVOLTBLGRPTEXT
-description: Cndncontrbusvoltblgrptext
+description: "Cndncontrbusvoltblgrptext"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CONTACTPERSON
-description: Contactperson
+description: "Contactperson"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

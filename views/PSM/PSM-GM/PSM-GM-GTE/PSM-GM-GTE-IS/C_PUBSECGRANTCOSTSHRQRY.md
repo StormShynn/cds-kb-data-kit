@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECGRANTCOSTSHRQRY
-description: Grants Management Cost Sharing Query
+description: "Grants Management Cost Sharing Query"
 app_component: PSM-GM-GTE-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECGRANTCOSTSHRQRY')/$value
-semantic_en: Grants Management Cost Sharing Query
+semantic_en: "Grants Management Cost Sharing Query"
 tags:
   - PSM
   - component:PSM-GM-GTE-IS

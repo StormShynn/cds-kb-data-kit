@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPAGREEMENTSTATUSTEXT_2
-description: Transpagreementstatustext 2
+description: "Transpagreementstatustext 2"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

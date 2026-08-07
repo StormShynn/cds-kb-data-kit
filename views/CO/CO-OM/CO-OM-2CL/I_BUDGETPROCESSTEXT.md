@@ -1,19 +1,19 @@
 ---
 name: I_BUDGETPROCESSTEXT
-description: Budget Process - Text
+description: "Budget Process - Text"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETPROCESSTEXT')/$value
-semantic_en: Budget Process - Text
-semantic_vi: Budget Process - Text — CDS view giao diện dựa trên budget_d_proct.
+semantic_en: "Budget Process - Text"
+semantic_vi: "Budget Process - Text — CDS view giao diện dựa trên budget_d_proct."
 keywords:
-  - budget
-  - process
-  - text
-  - language
+  - "budget"
+  - "process"
+  - "text"
+  - "language"
 tags:
   - CO
   - budget

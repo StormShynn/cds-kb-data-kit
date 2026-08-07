@@ -1,6 +1,6 @@
 ---
 name: I_EG_EDOCITMCODE
-description: EG Edocitmcode
+description: "EG Edocitmcode"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

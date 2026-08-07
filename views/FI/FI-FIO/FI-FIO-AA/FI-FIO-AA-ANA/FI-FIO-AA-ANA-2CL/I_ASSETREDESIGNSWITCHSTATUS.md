@@ -1,21 +1,21 @@
 ---
 name: I_ASSETREDESIGNSWITCHSTATUS
-description: Asset Accounting Redesign Switch Status
+description: "Asset Accounting Redesign Switch Status"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETREDESIGNSWITCHSTATUS')/$value
-semantic_en: Asset Accounting Redesign Switch Status
-semantic_vi: Asset Accounting Redesign Switch Status — CDS view giao diện dựa trên P_TF_AssetRedesignSwitchStatus.
+semantic_en: "Asset Accounting Redesign Switch Status"
+semantic_vi: "Asset Accounting Redesign Switch Status — CDS view giao diện dựa trên P_TF_AssetRedesignSwitchStatus."
 keywords:
-  - asset
-  - accounting
-  - redesign
-  - switch
-  - status
-  - active
+  - "asset"
+  - "accounting"
+  - "redesign"
+  - "switch"
+  - "status"
+  - "active"
 tags:
   - FI
   - account

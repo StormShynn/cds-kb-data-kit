@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPRODUCTGROUPHIERT
-description: Cnsldtnproductgrouphiert
+description: "Cnsldtnproductgrouphiert"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

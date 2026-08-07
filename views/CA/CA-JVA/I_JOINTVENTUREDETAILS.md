@@ -1,6 +1,6 @@
 ---
 name: I_JOINTVENTUREDETAILS
-description: Jointventuredetails
+description: "Jointventuredetails"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

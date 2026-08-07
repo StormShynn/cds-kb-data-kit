@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECCTRLOBJCOSTCENTERVH
-description: Cost Center Control Objects
+description: "Cost Center Control Objects"
 app_component: PSM-FM-BU-AC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJCOSTCENTERVH')/$value
-semantic_en: Cost Center Control Objects
+semantic_en: "Cost Center Control Objects"
 tags:
   - PSM
   - component:PSM-FM-BU-AC

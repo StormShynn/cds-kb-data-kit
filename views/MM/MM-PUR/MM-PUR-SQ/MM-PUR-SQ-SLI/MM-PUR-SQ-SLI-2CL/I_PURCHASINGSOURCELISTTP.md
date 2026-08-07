@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGSOURCELISTTP
-description: Purchasingsourcelisttp
+description: "Purchasingsourcelisttp"
 app_component: MM-PUR-SQ-SLI-2CL
 software_component: SAPSCORE
 release_state: released

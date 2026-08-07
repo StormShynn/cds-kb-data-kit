@@ -1,29 +1,29 @@
 ---
 name: C_CMMDTYMTMDAYOVERDAYQRY
-description: MtM Day Over Day Query
+description: "MtM Day Over Day Query"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMDAYOVERDAYQRY')/$value
-semantic_en: MtM Day Over Day Query
-semantic_vi: MtM Day Over Day Query — CDS view tiêu dùng dựa trên I_CmmdtyMTMLogFinValCube.
+semantic_en: "MtM Day Over Day Query"
+semantic_vi: "MtM Day Over Day Query — CDS view tiêu dùng dựa trên I_CmmdtyMTMLogFinValCube."
 keywords:
-  - mtm
-  - day
-  - over
-  - query
-  - pricing
-  - version
-  - document
-  - item
-  - vers
-  - stock
-  - record
-  - commodity
-  - price
-  - exposure
+  - "mtm"
+  - "day"
+  - "over"
+  - "query"
+  - "pricing"
+  - "version"
+  - "document"
+  - "item"
+  - "vers"
+  - "stock"
+  - "record"
+  - "commodity"
+  - "price"
+  - "exposure"
 tags:
   - LO
   - component:LO-CMM-BF

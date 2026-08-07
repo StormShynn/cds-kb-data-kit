@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGDOCITEMTYPETEXT
-description: Cainvcgdocitemtypetext
+description: "Cainvcgdocitemtypetext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

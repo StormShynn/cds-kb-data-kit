@@ -1,6 +1,6 @@
 ---
 name: I_CASHPOOLMDDESC
-description: Cashpoolmddesc
+description: "Cashpoolmddesc"
 app_component: FIN-FSCM-CLM-2CL
 software_component: SAPSCORE
 release_state: released

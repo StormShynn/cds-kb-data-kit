@@ -1,27 +1,27 @@
 ---
 name: C_GLACCOUNTLINEITEMQUERY
-description: The CDS entity C_GLAccountLineItemQuery functions as an analytical query for journal entry line items. It offers detailed insights into financial transactions: amounts in various currencies, fiscal periods, and ledger details. The entity supports analytical capabilities and is designed for use in reporting scenarios. Users can analyze financial data across dimensions such as company code, profit center, and segment. It also facilitates the evaluation of debit and credit amounts, transaction types, and account assignments. This CDS view provides the data to answer the following business questions: What are the journal entry line items for a specific fiscal year and company code? What is the debit and credit amount in various currencies for a given ledger? Which profit centers and segments are associated with specific journal entries? What is the posting date and fiscal period for a particular G/L account? Which journal entries are related to specific customers or suppliers? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "The CDS entity C_GLAccountLineItemQuery functions as an analytical query for journal entry line items. It offers detailed insights into financial transactions: amounts in various currencies, fiscal periods, and ledger details. The entity supports analytical capabilities and is designed for use in reporting scenarios. Users can analyze financial data across dimensions such as company code, profit center, and segment. It also facilitates the evaluation of debit and credit amounts, transaction types, and account assignments. This CDS view provides the data to answer the following business questions: What are the journal entry line items for a specific fiscal year and company code? What is the debit and credit amount in various currencies for a given ledger? Which profit centers and segments are associated with specific journal entries? What is the posting date and fiscal period for a particular G/L account? Which journal entries are related to specific customers or suppliers? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTLINEITEMQUERY')/$value
-semantic_en: The CDS entity C_GLAccountLineItemQuery functions as an analytical query for journal entry line items. It offers detailed insights into financial transactions: amounts in various currencies, fiscal periods, and ledger details. The entity supports analytical capabilities and is designed for use in reporting scenarios. Users can analyze financial data across dimensions such as company code, profit center, and segment. It also facilitates the evaluation of debit and credit amounts, transaction types, and account assignments. This CDS view provides the data to answer the following business questions: What are the journal entry line items for a specific fiscal year and company code? What is the debit and credit amount in various currencies for a given ledger? Which profit centers and segments are associated with specific journal entries? What is the posting date and fiscal period for a particular G/L account? Which journal entries are related to specific customers or suppliers? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Journal Entry Analyzer Query — CDS view tiêu dùng dựa trên Journal Entry Analyzer Query.
+semantic_en: "The CDS entity C_GLAccountLineItemQuery functions as an analytical query for journal entry line items. It offers detailed insights into financial transactions: amounts in various currencies, fiscal periods, and ledger details. The entity supports analytical capabilities and is designed for use in reporting scenarios. Users can analyze financial data across dimensions such as company code, profit center, and segment. It also facilitates the evaluation of debit and credit amounts, transaction types, and account assignments. This CDS view provides the data to answer the following business questions: What are the journal entry line items for a specific fiscal year and company code? What is the debit and credit amount in various currencies for a given ledger? Which profit centers and segments are associated with specific journal entries? What is the posting date and fiscal period for a particular G/L account? Which journal entries are related to specific customers or suppliers? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Journal Entry Analyzer Query — CDS view tiêu dùng dựa trên Journal Entry Analyzer Query."
 keywords:
-  - Journal Entry Analyzer Query
-  - journal
-  - entry
-  - analyzer
-  - query
-  - ledger
-  - company
-  - code
-  - fiscal
-  - year
-  - account
-  - period
+  - "Journal Entry Analyzer Query"
+  - "journal"
+  - "entry"
+  - "analyzer"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "account"
+  - "period"
 tags:
   - FI
   - account

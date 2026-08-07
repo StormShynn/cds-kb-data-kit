@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFMATERIALSTATUSTEXT
-description: Bill of MaterialSTATUSTEXT
+description: "Bill of MaterialSTATUSTEXT"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

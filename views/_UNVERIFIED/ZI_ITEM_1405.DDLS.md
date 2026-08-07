@@ -1,24 +1,24 @@
 ---
 name: ZI_ITEM_1405.DDLS
-description: Interface - Sales Order Item
+description: "Interface - Sales Order Item"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/cristinallamasnbx/MasterSAPBTP_FinalProject/blob/97d28fe996c012c278a5acad1b47c66fc642f129/src/zi_item_1405.ddls.asddls
-semantic_en: Interface - Sales Order Item — CDS view.
-semantic_vi: Interface - Sales Order Item — CDS view dựa trên Interface - Sales Order Item.
+semantic_en: "Interface - Sales Order Item — CDS view."
+semantic_vi: "Interface - Sales Order Item — CDS view dựa trên Interface - Sales Order Item."
 keywords:
-  - interface
-  - sales
-  - order
-  - item
-  - header
-  - name
-  - description
-  - release
-  - date
+  - "interface"
+  - "sales"
+  - "order"
+  - "item"
+  - "header"
+  - "name"
+  - "description"
+  - "release"
+  - "date"
 tags:
   - AC
   - component:AC

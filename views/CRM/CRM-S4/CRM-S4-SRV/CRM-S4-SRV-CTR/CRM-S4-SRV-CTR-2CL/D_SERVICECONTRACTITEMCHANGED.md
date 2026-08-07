@@ -1,6 +1,6 @@
 ---
 name: D_SERVICECONTRACTITEMCHANGED
-description: D Servicecontractitemchanged
+description: "D Servicecontractitemchanged"
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

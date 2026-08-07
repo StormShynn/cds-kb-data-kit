@@ -1,6 +1,6 @@
 ---
 name: /MERP/SDF_CDS_FORMREG
-description: Sdf Cds Formreg
+description: "Sdf Cds Formreg"
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released

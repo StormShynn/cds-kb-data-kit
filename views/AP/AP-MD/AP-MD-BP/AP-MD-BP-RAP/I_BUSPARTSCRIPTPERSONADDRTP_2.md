@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTSCRIPTPERSONADDRTP_2
-description: Business PartnerSCRIPTPERSONADDRTP 2
+description: "Business PartnerSCRIPTPERSONADDRTP 2"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

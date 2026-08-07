@@ -1,13 +1,13 @@
 ---
 name: I_EHSLOCATIONREVISION
-description: Environment and Health and Safety Location Revision
+description: "Environment and Health and Safety Location Revision"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSLOCATIONREVISION')/$value
-semantic_en: Environment and Health and Safety Location Revision
+semantic_en: "Environment and Health and Safety Location Revision"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

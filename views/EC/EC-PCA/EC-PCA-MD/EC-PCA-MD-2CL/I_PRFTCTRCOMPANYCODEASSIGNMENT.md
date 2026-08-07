@@ -1,6 +1,6 @@
 ---
 name: I_PRFTCTRCOMPANYCODEASSIGNMENT
-description: PRFTCTRCompany CodeASSIGNMENT
+description: "PRFTCTRCompany CodeASSIGNMENT"
 app_component: EC-PCA-MD-2CL
 software_component: SAPSCORE
 release_state: released

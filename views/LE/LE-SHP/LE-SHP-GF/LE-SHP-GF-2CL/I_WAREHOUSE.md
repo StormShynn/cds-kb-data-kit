@@ -1,6 +1,6 @@
 ---
 name: I_WAREHOUSE
-description: Warehouse
+description: "Warehouse"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_REINVOICEDATA
-description: Reinvoicedata
+description: "Reinvoicedata"
 app_component: RE-FX-RA-2CL
 software_component: SAPSCORE
 release_state: released

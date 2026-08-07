@@ -1,13 +1,13 @@
 ---
 name: I_DEPRECIATIONKEYTEXT
-description: Depreciation Key - Text
+description: "Depreciation Key - Text"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DEPRECIATIONKEYTEXT')/$value
-semantic_en: Depreciation Key - Text
+semantic_en: "Depreciation Key - Text"
 tags:
   - FI
   - bo:asset

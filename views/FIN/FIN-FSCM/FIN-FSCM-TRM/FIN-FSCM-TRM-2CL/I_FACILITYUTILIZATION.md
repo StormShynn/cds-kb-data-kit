@@ -1,13 +1,13 @@
 ---
 name: I_FACILITYUTILIZATION
-description: This CDS view meets the prerequisites for answering the following business questions: What is the facility utilization with a counterparty or syndicate counterparty on the key date? What is the facility utilization with a counterparty or syndicate counterparty in the specified currency?
+description: "This CDS view meets the prerequisites for answering the following business questions: What is the facility utilization with a counterparty or syndicate counterparty on the key date? What is the facility utilization with a counterparty or syndicate counterparty in the specified currency?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACILITYUTILIZATION')/$value
-semantic_en: This CDS view meets the prerequisites for answering the following business questions: What is the facility utilization with a counterparty or syndicate counterparty on the key date? What is the facility utilization with a counterparty or syndicate counterparty in the specified currency?
+semantic_en: "This CDS view meets the prerequisites for answering the following business questions: What is the facility utilization with a counterparty or syndicate counterparty on the key date? What is the facility utilization with a counterparty or syndicate counterparty in the specified currency?"
 tags:
   - FIN
   - bo:companycode

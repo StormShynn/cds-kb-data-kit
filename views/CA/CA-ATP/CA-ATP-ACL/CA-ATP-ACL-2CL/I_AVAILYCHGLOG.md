@@ -1,6 +1,6 @@
 ---
 name: I_AVAILYCHGLOG
-description: Availychglog
+description: "Availychglog"
 app_component: CA-ATP-ACL-2CL
 software_component: SAPSCORE
 release_state: released

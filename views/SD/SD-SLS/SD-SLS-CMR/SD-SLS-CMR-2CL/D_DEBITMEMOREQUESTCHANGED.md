@@ -1,6 +1,6 @@
 ---
 name: D_DEBITMEMOREQUESTCHANGED
-description: D Debitmemorequestchanged
+description: "D Debitmemorequestchanged"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

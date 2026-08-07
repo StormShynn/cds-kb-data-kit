@@ -1,22 +1,22 @@
 ---
 name: C_COLLECTIONPROGRESSQ
-description: Collection Progress Query
+description: "Collection Progress Query"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONPROGRESSQ')/$value
-semantic_en: Collection Progress Query
-semantic_vi: Collection Progress Query — CDS view tiêu dùng dựa trên I_CollectionProgress.
+semantic_en: "Collection Progress Query"
+semantic_vi: "Collection Progress Query — CDS view tiêu dùng dựa trên I_CollectionProgress."
 keywords:
-  - collection
-  - progress
-  - query
-  - group
-  - segment
-  - specialist
-  - name
+  - "collection"
+  - "progress"
+  - "query"
+  - "group"
+  - "segment"
+  - "specialist"
+  - "name"
 tags:
   - FI
   - component:FI-AR-IS-2CL

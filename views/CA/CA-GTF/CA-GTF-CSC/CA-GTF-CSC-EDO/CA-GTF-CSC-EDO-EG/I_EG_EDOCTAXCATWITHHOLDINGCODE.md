@@ -1,6 +1,6 @@
 ---
 name: I_EG_EDOCTAXCATWITHHOLDINGCODE
-description: EG Edoctaxcatwithholdingcode
+description: "EG Edoctaxcatwithholdingcode"
 app_component: CA-GTF-CSC-EDO-EG
 software_component: SAPSCORE
 release_state: released

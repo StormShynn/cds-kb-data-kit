@@ -1,6 +1,6 @@
 ---
 name: I_EARMARKEDFUNDS_DCSNREASON
-description: Earmarkedfunds Dcsnreason
+description: "Earmarkedfunds Dcsnreason"
 app_component: FI-FM
 software_component: SAPSCORE
 release_state: released

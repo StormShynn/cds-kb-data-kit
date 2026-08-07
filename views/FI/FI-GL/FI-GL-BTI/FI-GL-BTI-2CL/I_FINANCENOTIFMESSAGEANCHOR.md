@@ -1,13 +1,13 @@
 ---
 name: I_FINANCENOTIFMESSAGEANCHOR
-description: Anchor object for finance notif messages
+description: "Anchor object for finance notif messages"
 app_component: FI-GL-BTI-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINANCENOTIFMESSAGEANCHOR')/$value
-semantic_en: Anchor object for finance notif messages
+semantic_en: "Anchor object for finance notif messages"
 tags:
   - FI
   - bo:companycode

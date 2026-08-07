@@ -1,6 +1,6 @@
 ---
 name: I_MEASUREMENTDOCUMENT
-description: Measurementdocument
+description: "Measurementdocument"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

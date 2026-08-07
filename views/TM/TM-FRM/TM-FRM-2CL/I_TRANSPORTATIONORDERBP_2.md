@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONORDERBP_2
-description: Transportationorderbp 2
+description: "Transportationorderbp 2"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

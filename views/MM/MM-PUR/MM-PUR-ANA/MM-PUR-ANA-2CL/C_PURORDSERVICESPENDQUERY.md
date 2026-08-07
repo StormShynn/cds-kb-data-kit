@@ -1,24 +1,24 @@
 ---
 name: C_PURORDSERVICESPENDQUERY
-description: Service Spend
+description: "Service Spend"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PURORDSERVICESPENDQUERY')/$value
-semantic_en: Service Spend
-semantic_vi: Service Spend — CDS view tiêu dùng dựa trên C_PurOrdServiceSpend.
+semantic_en: "Service Spend"
+semantic_vi: "Service Spend — CDS view tiêu dùng dựa trên C_PurOrdServiceSpend."
 keywords:
-  - service
-  - spend
-  - purchase
-  - order
-  - item
-  - supplier
-  - name
-  - purchasing
-  - organization
+  - "service"
+  - "spend"
+  - "purchase"
+  - "order"
+  - "item"
+  - "supplier"
+  - "name"
+  - "purchasing"
+  - "organization"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

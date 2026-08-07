@@ -1,6 +1,6 @@
 ---
 name: I_WORKASSIGNMENTDETAIL
-description: Workassignmentdetail
+description: "Workassignmentdetail"
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released

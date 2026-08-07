@@ -1,13 +1,13 @@
 ---
 name: I_CAADDLBANKCLEARINGACCOUNT
-description: Additional Bank Clearing Account
+description: "Additional Bank Clearing Account"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAADDLBANKCLEARINGACCOUNT')/$value
-semantic_en: Additional Bank Clearing Account
+semantic_en: "Additional Bank Clearing Account"
 tags:
   - FI
   - account

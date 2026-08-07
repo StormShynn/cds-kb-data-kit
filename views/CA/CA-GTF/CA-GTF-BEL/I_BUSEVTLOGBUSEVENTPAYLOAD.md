@@ -1,6 +1,6 @@
 ---
 name: I_BUSEVTLOGBUSEVENTPAYLOAD
-description: Busevtlogbuseventpayload
+description: "Busevtlogbuseventpayload"
 app_component: CA-GTF-BEL
 software_component: SAP_BASIS
 release_state: released

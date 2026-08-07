@@ -1,6 +1,6 @@
 ---
 name: I_POSUBCONTRACTINGCOMPTP_2
-description: Posubcontractingcomptp 2
+description: "Posubcontractingcomptp 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

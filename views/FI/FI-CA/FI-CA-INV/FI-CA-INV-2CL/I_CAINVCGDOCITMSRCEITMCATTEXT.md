@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGDOCITMSRCEITMCATTEXT
-description: Cainvcgdocitmsrceitmcattext
+description: "Cainvcgdocitmsrceitmcattext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

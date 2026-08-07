@@ -1,30 +1,30 @@
 ---
 name: C_JP_ANNEX205APBOOKQUERY
-description: This CDS view retrieves the books of accounts payable for section (5) in Annex 21 of Order for Enforcement of the Corporation Tax Act. This CDS view provides the data to answer the following business question: How should accounts payable details be shown and listed as an electronic book for claiming corporate tax as "blue return"? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view retrieves the books of accounts payable for section (5) in Annex 21 of Order for Enforcement of the Corporation Tax Act. This CDS view provides the data to answer the following business question: How should accounts payable details be shown and listed as an electronic book for claiming corporate tax as \"blue return\"? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-LOC-FI-JP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_JP_ANNEX205APBOOKQUERY')/$value
-semantic_en: This CDS view retrieves the books of accounts payable for section (5) in Annex 21 of Order for Enforcement of the Corporation Tax Act. This CDS view provides the data to answer the following business question: How should accounts payable details be shown and listed as an electronic book for claiming corporate tax as "blue return"? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Japan AP Book for Corporate Tax - Query — CDS view tiêu dùng dựa trên I_JP_Annex205APBookCube.
+semantic_en: "This CDS view retrieves the books of accounts payable for section (5) in Annex 21 of Order for Enforcement of the Corporation Tax Act. This CDS view provides the data to answer the following business question: How should accounts payable details be shown and listed as an electronic book for claiming corporate tax as \"blue return\"? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Japan AP Book for Corporate Tax - Query — CDS view tiêu dùng dựa trên I_JP_Annex205APBookCube."
 keywords:
-  - japan
-  - book
-  - for
-  - corporate
-  - tax
-  - query
-  - supplier
-  - source
-  - ledger
-  - company
-  - code
-  - fiscal
-  - year
-  - annex205
-  - leading
+  - "japan"
+  - "book"
+  - "for"
+  - "corporate"
+  - "tax"
+  - "query"
+  - "supplier"
+  - "source"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "annex205"
+  - "leading"
 tags:
   - FI
   - account

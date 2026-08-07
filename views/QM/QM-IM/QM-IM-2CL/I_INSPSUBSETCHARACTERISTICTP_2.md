@@ -1,6 +1,6 @@
 ---
 name: I_INSPSUBSETCHARACTERISTICTP_2
-description: Inspsubsetcharacteristictp 2
+description: "Inspsubsetcharacteristictp 2"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

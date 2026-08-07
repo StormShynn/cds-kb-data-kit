@@ -1,13 +1,13 @@
 ---
 name: I_DEFECTSERIALNUMBER
-description: Serial Number in Defect
+description: "Serial Number in Defect"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DEFECTSERIALNUMBER')/$value
-semantic_en: Serial Number in Defect
+semantic_en: "Serial Number in Defect"
 tags:
   - QM
   - component:QM-QN-2CL

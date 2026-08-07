@@ -1,13 +1,13 @@
 ---
 name: I_HOUSEBANKACCOUNTSTDVH
-description: House Bank Account
+description: "House Bank Account"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HOUSEBANKACCOUNTSTDVH')/$value
-semantic_en: House Bank Account
+semantic_en: "House Bank Account"
 tags:
   - FIN
   - account

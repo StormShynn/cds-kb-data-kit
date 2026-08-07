@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERINVOICEODN
-description: Supplier InvoiceODN
+description: "Supplier InvoiceODN"
 app_component: FI-LOC-ODN
 software_component: SAPSCORE
 release_state: released

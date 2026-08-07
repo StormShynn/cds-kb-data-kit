@@ -1,13 +1,13 @@
 ---
 name: I_EHSAMOUNTSUBJECTTYPETEXT
-description: EHS Subject Type - Text
+description: "EHS Subject Type - Text"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSAMOUNTSUBJECTTYPETEXT')/$value
-semantic_en: EHS Subject Type - Text
+semantic_en: "EHS Subject Type - Text"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

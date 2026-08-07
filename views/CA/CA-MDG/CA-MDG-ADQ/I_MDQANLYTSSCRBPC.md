@@ -1,15 +1,15 @@
 ---
 name: I_MDQANLYTSSCRBPC
-description: Master Data Quality Score for Business Partner - Cube
+description: "Master Data Quality Score for Business Partner - Cube"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MDQANLYTSSCRBPC')/$value
-semantic_en: Master Data Quality Score for Business Partner - Cube
+semantic_en: "Master Data Quality Score for Business Partner - Cube"
 keywords:
-  - MDQ Score for Business Partner - Cube
+  - "MDQ Score for Business Partner - Cube"
 tags:
   - CA
   - bo:businesspartner

@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNRPTGITMHIERDIR
-description: This CDS view provides access to the master data of the hierarchy of the consolidation reporting item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies of reporting item do exist and in which consolidation chart of accounts are they defined? When was the latest change of a hierarchy and by which user?
+description: "This CDS view provides access to the master data of the hierarchy of the consolidation reporting item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies of reporting item do exist and in which consolidation chart of accounts are they defined? When was the latest change of a hierarchy and by which user?"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGITMHIERDIR')/$value
-semantic_en: This CDS view provides access to the master data of the hierarchy of the consolidation reporting item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies of reporting item do exist and in which consolidation chart of accounts are they defined? When was the latest change of a hierarchy and by which user?
+semantic_en: "This CDS view provides access to the master data of the hierarchy of the consolidation reporting item. This CDS view provides the prerequisites for answering the following business questions: What hierarchies of reporting item do exist and in which consolidation chart of accounts are they defined? When was the latest change of a hierarchy and by which user?"
 tags:
   - FIN
   - account

@@ -1,6 +1,6 @@
 ---
 name: I_FAILEDMEASUREMENTREADINGTP
-description: Failedmeasurementreadingtp
+description: "Failedmeasurementreadingtp"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

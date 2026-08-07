@@ -1,6 +1,6 @@
 ---
 name: I_WRKCTRPOOLEDCAPINTERVALTP
-description: Wrkctrpooledcapintervaltp
+description: "Wrkctrpooledcapintervaltp"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

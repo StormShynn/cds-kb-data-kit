@@ -1,6 +1,6 @@
 ---
 name: I_CN_TAXINVOICEBINDING
-description: CN Taxinvoicebinding
+description: "CN Taxinvoicebinding"
 app_component: FI-LOC-TIM-CN
 software_component: SAPSCORE
 release_state: released

@@ -1,25 +1,25 @@
 ---
 name: I_BR_NFMESSAGE
-description: This CDS view provides the prerequisites for answering business questions about relevant aspects of nota fiscal message data.
+description: "This CDS view provides the prerequisites for answering business questions about relevant aspects of nota fiscal message data."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_NFMESSAGE')/$value
-semantic_en: This CDS view provides the prerequisites for answering business questions about relevant aspects of nota fiscal message data.
-semantic_vi: Brazil Nota Fiscal Messages — CDS view giao diện dựa trên j_1bnfftx.
+semantic_en: "This CDS view provides the prerequisites for answering business questions about relevant aspects of nota fiscal message data."
+semantic_vi: "Brazil Nota Fiscal Messages — CDS view giao diện dựa trên j_1bnfftx."
 keywords:
-  - brazil
-  - nota
-  - fiscal
-  - messages
-  - message
-  - sequence
-  - number
-  - line
-  - text
-  - manual
+  - "brazil"
+  - "nota"
+  - "fiscal"
+  - "messages"
+  - "message"
+  - "sequence"
+  - "number"
+  - "line"
+  - "text"
+  - "manual"
 tags:
   - FI
   - bo:companycode

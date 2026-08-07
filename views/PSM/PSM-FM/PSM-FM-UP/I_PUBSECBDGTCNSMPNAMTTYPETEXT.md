@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECBDGTCNSMPNAMTTYPETEXT
-description: Pubsecbdgtcnsmpnamttypetext
+description: "Pubsecbdgtcnsmpnamttypetext"
 app_component: PSM-FM-UP
 software_component: SAPSCORE
 release_state: released

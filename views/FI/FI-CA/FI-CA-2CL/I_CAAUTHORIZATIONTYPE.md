@@ -1,6 +1,6 @@
 ---
 name: I_CAAUTHORIZATIONTYPE
-description: Caauthorizationtype
+description: "Caauthorizationtype"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

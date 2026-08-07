@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJBILLGANDRBLSCUBE
-description: This CDS view provides the prerequisites for answering the following business questions: Which are the billing plans that have not been processed? What are the upcoming billing plans? What is the total amount that can be invoiced? What is the total receivable amount from customers? By how many days are receivable amounts overdue? What is the total amount written off from invoices?
+description: "This CDS view provides the prerequisites for answering the following business questions: Which are the billing plans that have not been processed? What are the upcoming billing plans? What is the total amount that can be invoiced? What is the total receivable amount from customers? By how many days are receivable amounts overdue? What is the total amount written off from invoices?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJBILLGANDRBLSCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Which are the billing plans that have not been processed? What are the upcoming billing plans? What is the total amount that can be invoiced? What is the total receivable amount from customers? By how many days are receivable amounts overdue? What is the total amount written off from invoices?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which are the billing plans that have not been processed? What are the upcoming billing plans? What is the total amount that can be invoiced? What is the total receivable amount from customers? By how many days are receivable amounts overdue? What is the total amount written off from invoices?"
 tags:
   - CA
   - billing

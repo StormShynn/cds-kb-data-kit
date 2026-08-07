@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCUMENTTYPETEXT
-description: Service DocumentUMENTTYPETEXT
+description: "Service DocumentUMENTTYPETEXT"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

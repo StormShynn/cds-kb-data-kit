@@ -1,6 +1,6 @@
 ---
 name: I_SERVICECOSTLEVELTEXT_2
-description: Servicecostleveltext 2
+description: "Servicecostleveltext 2"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

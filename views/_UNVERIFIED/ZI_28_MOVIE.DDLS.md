@@ -1,22 +1,22 @@
 ---
 name: ZI_28_MOVIE.DDLS
-description: a
+description: "a"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/AlexOwcharow/abap_movie/blob/168ea69e8fb5f1e783ebeecfb55a743aacfbd439/src/zi_28_movie.ddls.asddls
-semantic_en: a — CDS view based on ZR_28_Movie2.
-semantic_vi: a — CDS view dựa trên ZR_28_Movie2.
+semantic_en: "a — CDS view based on ZR_28_Movie2."
+semantic_vi: "a — CDS view dựa trên ZR_28_Movie2."
 keywords:
-  - movie
-  - uuid
-  - title
-  - genre
-  - publishing
-  - year
-  - runtime
+  - "movie"
+  - "uuid"
+  - "title"
+  - "genre"
+  - "publishing"
+  - "year"
+  - "runtime"
 ---
 # ZI_28_MOVIE.DDLS
 

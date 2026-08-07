@@ -1,6 +1,6 @@
 ---
 name: D_SERVICEORDERCREATED
-description: D Service OrderCREATED
+description: "D Service OrderCREATED"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDSUBCONTRGSTSBFR
-description: D Transpordsubcontrgstsbfr
+description: "D Transpordsubcontrgstsbfr"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

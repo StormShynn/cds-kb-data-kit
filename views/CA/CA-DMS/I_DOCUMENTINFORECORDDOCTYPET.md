@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDDOCTYPET
-description: Documentinforecorddoctypet
+description: "Documentinforecorddoctypet"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGREQSTATUSTEXT
-description: Cabillgreqstatustext
+description: "Cabillgreqstatustext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

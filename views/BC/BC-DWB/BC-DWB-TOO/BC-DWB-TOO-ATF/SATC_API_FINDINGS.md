@@ -1,6 +1,6 @@
 ---
 name: SATC_API_FINDINGS
-description: Satc Api Findings
+description: "Satc Api Findings"
 app_component: BC-DWB-TOO-ATF
 software_component: SAP_BASIS
 release_state: released

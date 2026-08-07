@@ -1,13 +1,13 @@
 ---
 name: C_MAINTMBLAPPLPUSHNOTIFQUERY
-description: Mobile Push Notification - Query
+description: "Mobile Push Notification - Query"
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTMBLAPPLPUSHNOTIFQUERY')/$value
-semantic_en: Mobile Push Notification - Query
+semantic_en: "Mobile Push Notification - Query"
 tags:
   - MOB
   - bo:companycode

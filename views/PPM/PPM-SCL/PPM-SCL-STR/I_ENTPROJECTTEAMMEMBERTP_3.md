@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJECTTEAMMEMBERTP_3
-description: Entprojectteammembertp 3
+description: "Entprojectteammembertp 3"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

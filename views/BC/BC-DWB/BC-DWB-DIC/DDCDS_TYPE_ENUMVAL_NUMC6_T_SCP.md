@@ -1,6 +1,6 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP
-description: Ddcds Type Enumval Numc 6 T Scp
+description: "Ddcds Type Enumval Numc 6 T Scp"
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

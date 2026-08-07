@@ -1,18 +1,18 @@
 ---
 name: I_ASSORTMENTLISTTYPESTDVH
-description: Assortment List Type
+description: "Assortment List Type"
 app_component: LO-RFM-MD-LST-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSORTMENTLISTTYPESTDVH')/$value
-semantic_en: Assortment List Type
-semantic_vi: Assortment List Type — CDS view giao diện dựa trên I_AssortmentListType.
+semantic_en: "Assortment List Type"
+semantic_vi: "Assortment List Type — CDS view giao diện dựa trên I_AssortmentListType."
 keywords:
-  - assortment
-  - list
-  - type
+  - "assortment"
+  - "list"
+  - "type"
 tags:
   - LO
   - bo:salesorder

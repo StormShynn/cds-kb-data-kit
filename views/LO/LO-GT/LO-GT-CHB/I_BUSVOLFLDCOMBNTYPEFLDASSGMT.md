@@ -1,13 +1,13 @@
 ---
 name: I_BUSVOLFLDCOMBNTYPEFLDASSGMT
-description: This CDS view is for the assignment of field names to Business Volume Field Combination type.
+description: "This CDS view is for the assignment of field names to Business Volume Field Combination type."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSVOLFLDCOMBNTYPEFLDASSGMT')/$value
-semantic_en: This CDS view is for the assignment of field names to Business Volume Field Combination type.
+semantic_en: "This CDS view is for the assignment of field names to Business Volume Field Combination type."
 tags:
   - LO
   - bo:companycode

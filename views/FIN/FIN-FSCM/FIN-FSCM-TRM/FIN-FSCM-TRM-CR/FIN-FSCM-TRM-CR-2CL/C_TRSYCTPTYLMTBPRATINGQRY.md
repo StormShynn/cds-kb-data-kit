@@ -1,13 +1,13 @@
 ---
 name: C_TRSYCTPTYLMTBPRATINGQRY
-description: This CDS view provides the prerequisites for answering the following business questions for the business partner rating: How is the business partner rated by rating agencies at a specific date? What are the expectations for the development of the business partner rating in the future?
+description: "This CDS view provides the prerequisites for answering the following business questions for the business partner rating: How is the business partner rated by rating agencies at a specific date? What are the expectations for the development of the business partner rating in the future?"
 app_component: FIN-FSCM-TRM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_TRSYCTPTYLMTBPRATINGQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions for the business partner rating: How is the business partner rated by rating agencies at a specific date? What are the expectations for the development of the business partner rating in the future?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions for the business partner rating: How is the business partner rated by rating agencies at a specific date? What are the expectations for the development of the business partner rating in the future?"
 tags:
   - FIN
   - bo:businesspartner

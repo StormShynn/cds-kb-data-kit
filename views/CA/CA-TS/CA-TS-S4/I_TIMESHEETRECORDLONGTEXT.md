@@ -1,6 +1,6 @@
 ---
 name: I_TIMESHEETRECORDLONGTEXT
-description: Timesheetrecordlongtext
+description: "Timesheetrecordlongtext"
 app_component: CA-TS-S4
 software_component: SAPSCORE
 release_state: released

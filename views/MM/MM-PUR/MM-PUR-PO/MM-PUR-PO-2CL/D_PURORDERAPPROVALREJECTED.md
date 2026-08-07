@@ -1,6 +1,6 @@
 ---
 name: D_PURORDERAPPROVALREJECTED
-description: D Purorderapprovalrejected
+description: "D Purorderapprovalrejected"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

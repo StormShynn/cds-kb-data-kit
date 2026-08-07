@@ -1,6 +1,6 @@
 ---
 name: I_WORKBREAK
-description: Workbreak
+description: "Workbreak"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

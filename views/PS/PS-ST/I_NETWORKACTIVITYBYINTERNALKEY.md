@@ -1,15 +1,15 @@
 ---
 name: I_NETWORKACTIVITYBYINTERNALKEY
-description: Network Activity Information By Internal Key
+description: "Network Activity Information By Internal Key"
 app_component: PS-ST
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_NETWORKACTIVITYBYINTERNALKEY')/$value
-semantic_en: Network Activity Information By Internal Key
+semantic_en: "Network Activity Information By Internal Key"
 keywords:
-  - Network Activity Information By Internal Key
+  - "Network Activity Information By Internal Key"
 tags:
   - PS
   - bo:project

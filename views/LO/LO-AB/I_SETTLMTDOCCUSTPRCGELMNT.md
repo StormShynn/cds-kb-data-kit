@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTDOCCUSTPRCGELMNT
-description: Settlmtdoccustprcgelmnt
+description: "Settlmtdoccustprcgelmnt"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

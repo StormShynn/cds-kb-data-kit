@@ -1,6 +1,6 @@
 ---
 name: I_US_TXPARTTXJURISDICTIONLEVEL
-description: US Txparttxjurisdictionlevel
+description: "US Txparttxjurisdictionlevel"
 app_component: FI-TXL-EXT
 software_component: SAPSCORE
 release_state: released

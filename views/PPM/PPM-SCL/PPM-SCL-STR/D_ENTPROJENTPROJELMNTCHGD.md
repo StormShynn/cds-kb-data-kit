@@ -1,6 +1,6 @@
 ---
 name: D_ENTPROJENTPROJELMNTCHGD
-description: D Entprojentprojelmntchgd
+description: "D Entprojentprojelmntchgd"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

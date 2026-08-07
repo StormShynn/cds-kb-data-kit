@@ -1,6 +1,6 @@
 ---
 name: I_INSPPLANDEPDNTCHARCVERSTP_2
-description: Inspplandepdntcharcverstp 2
+description: "Inspplandepdntcharcverstp 2"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

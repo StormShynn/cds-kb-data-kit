@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTBIRTHDATESTATUSTEXT
-description: Business PartnerBIRTHDATESTATUSTEXT
+description: "Business PartnerBIRTHDATESTATUSTEXT"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

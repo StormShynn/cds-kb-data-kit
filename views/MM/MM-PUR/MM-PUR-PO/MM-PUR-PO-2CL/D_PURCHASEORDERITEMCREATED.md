@@ -1,6 +1,6 @@
 ---
 name: D_PURCHASEORDERITEMCREATED
-description: D Purchase OrderITEMCREATED
+description: "D Purchase OrderITEMCREATED"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

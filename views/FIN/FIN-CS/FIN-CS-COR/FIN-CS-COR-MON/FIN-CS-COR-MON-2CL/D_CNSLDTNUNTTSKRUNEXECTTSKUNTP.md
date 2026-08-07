@@ -1,6 +1,6 @@
 ---
 name: D_CNSLDTNUNTTSKRUNEXECTTSKUNTP
-description: D Cnsldtnunttskrunexecttskuntp
+description: "D Cnsldtnunttskrunexecttskuntp"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_INSPLOTSUMMARYCONTROLVH
-description: Insplotsummarycontrolvh
+description: "Insplotsummarycontrolvh"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

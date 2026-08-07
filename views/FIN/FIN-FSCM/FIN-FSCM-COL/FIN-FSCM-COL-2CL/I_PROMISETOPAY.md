@@ -1,13 +1,13 @@
 ---
 name: I_PROMISETOPAY
-description: Promise To Pay Attributes
+description: "Promise To Pay Attributes"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROMISETOPAY')/$value
-semantic_en: Promise To Pay Attributes
+semantic_en: "Promise To Pay Attributes"
 tags:
   - FIN
   - component:FIN-FSCM-COL-2CL

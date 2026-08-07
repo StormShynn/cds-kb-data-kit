@@ -1,6 +1,6 @@
 ---
 name: I_PMNOTIFICATIONPRIORITYTYPE
-description: Pmnotificationprioritytype
+description: "Pmnotificationprioritytype"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released

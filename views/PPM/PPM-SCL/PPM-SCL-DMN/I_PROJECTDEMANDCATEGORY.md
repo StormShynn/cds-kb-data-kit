@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDCATEGORY
-description: Projectdemandcategory
+description: "Projectdemandcategory"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

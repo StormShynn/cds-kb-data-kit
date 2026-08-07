@@ -1,13 +1,13 @@
 ---
 name: I_PROJBILLGELMNTSDUEOVERDUE
-description: Billing elements due and overdue
+description: "Billing elements due and overdue"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJBILLGELMNTSDUEOVERDUE')/$value
-semantic_en: Billing elements due and overdue
+semantic_en: "Billing elements due and overdue"
 tags:
   - PPM
   - billing

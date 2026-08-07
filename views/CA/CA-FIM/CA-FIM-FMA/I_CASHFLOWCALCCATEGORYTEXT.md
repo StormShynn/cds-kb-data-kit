@@ -1,6 +1,6 @@
 ---
 name: I_CASHFLOWCALCCATEGORYTEXT
-description: Cashflowcalccategorytext
+description: "Cashflowcalccategorytext"
 app_component: CA-FIM-FMA
 software_component: SAP_BASIS
 release_state: released

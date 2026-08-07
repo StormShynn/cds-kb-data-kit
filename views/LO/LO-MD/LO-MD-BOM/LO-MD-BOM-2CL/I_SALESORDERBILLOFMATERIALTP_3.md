@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERBILLOFMATERIALTP_3
-description: Sales OrderBill of MaterialTP 3
+description: "Sales OrderBill of MaterialTP 3"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

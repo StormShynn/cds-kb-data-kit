@@ -1,6 +1,6 @@
 ---
 name: I_EWM_QLTYINSPDOCUUID
-description: Ewm Qltyinspdocuuid
+description: "Ewm Qltyinspdocuuid"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

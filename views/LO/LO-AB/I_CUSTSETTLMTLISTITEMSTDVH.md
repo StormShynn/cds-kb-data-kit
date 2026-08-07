@@ -1,13 +1,13 @@
 ---
 name: I_CUSTSETTLMTLISTITEMSTDVH
-description: Customer Settlement List Item
+description: "Customer Settlement List Item"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTLISTITEMSTDVH')/$value
-semantic_en: Customer Settlement List Item
+semantic_en: "Customer Settlement List Item"
 tags:
   - LO
   - bo:businesspartner

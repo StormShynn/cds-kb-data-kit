@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDDOCVERSION
-description: Documentinforecorddocversion
+description: "Documentinforecorddocversion"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

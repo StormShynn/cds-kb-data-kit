@@ -1,6 +1,6 @@
 ---
 name: I_CASHPLANNINGGROUPTEXT
-description: Cashplanninggrouptext
+description: "Cashplanninggrouptext"
 app_component: FIN-FSCM-CLM-FQM-2CL
 software_component: SAPSCORE
 release_state: released

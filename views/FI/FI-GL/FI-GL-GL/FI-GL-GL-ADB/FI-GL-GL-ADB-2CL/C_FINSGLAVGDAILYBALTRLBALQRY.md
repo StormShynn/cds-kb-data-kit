@@ -1,6 +1,6 @@
 ---
 name: C_FINSGLAVGDAILYBALTRLBALQRY
-description: Finsglavgdailybaltrlbalqry
+description: "Finsglavgdailybaltrlbalqry"
 app_component: FI-GL-GL-ADB-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECCTRLOBJSPNSRDPROGVH
-description: Sponsored Program Control Objects
+description: "Sponsored Program Control Objects"
 app_component: PSM-FM-BU-AC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJSPNSRDPROGVH')/$value
-semantic_en: Sponsored Program Control Objects
+semantic_en: "Sponsored Program Control Objects"
 tags:
   - PSM
   - bo:purchaseorder

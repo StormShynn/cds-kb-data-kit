@@ -1,6 +1,6 @@
 ---
 name: I_SRVCDOCITEMCREDITSTATUS
-description: Srvcdocitemcreditstatus
+description: "Srvcdocitemcreditstatus"
 app_component: CRM-S4-BF-CM-2CL
 software_component: SAPSCORE
 release_state: released

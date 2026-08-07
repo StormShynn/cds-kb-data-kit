@@ -1,6 +1,6 @@
 ---
 name: I_TIMESHEETTASKTYPERLVNCETEXT
-description: Timesheettasktyperlvncetext
+description: "Timesheettasktyperlvncetext"
 app_component: CA-TS-S4
 software_component: SAPSCORE
 release_state: released

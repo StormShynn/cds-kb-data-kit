@@ -1,13 +1,13 @@
 ---
 name: I_CASEINDIVIDUALSTATUS
-description: Case Individual Status
+description: "Case Individual Status"
 app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEINDIVIDUALSTATUS')/$value
-semantic_en: Case Individual Status
+semantic_en: "Case Individual Status"
 tags:
   - BC
   - BC-SRV

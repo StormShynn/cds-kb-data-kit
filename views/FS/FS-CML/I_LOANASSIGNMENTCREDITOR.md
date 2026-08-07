@@ -1,13 +1,13 @@
 ---
 name: I_LOANASSIGNMENTCREDITOR
-description: Loan Assignment Creditor
+description: "Loan Assignment Creditor"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANASSIGNMENTCREDITOR')/$value
-semantic_en: Loan Assignment Creditor
+semantic_en: "Loan Assignment Creditor"
 tags:
   - FS
   - component:FS-CML

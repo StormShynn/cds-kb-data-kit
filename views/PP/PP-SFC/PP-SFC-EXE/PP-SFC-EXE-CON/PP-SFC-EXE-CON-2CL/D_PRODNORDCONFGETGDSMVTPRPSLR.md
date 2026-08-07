@@ -1,6 +1,6 @@
 ---
 name: D_PRODNORDCONFGETGDSMVTPRPSLR
-description: D Prodnordconfgetgdsmvtprpslr
+description: "D Prodnordconfgetgdsmvtprpslr"
 app_component: PP-SFC-EXE-CON-2CL
 software_component: SAPSCORE
 release_state: released

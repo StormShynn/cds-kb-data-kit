@@ -1,6 +1,6 @@
 ---
 name: I_PARTNERFUNCTIONLANGDEPDNT
-description: Partnerfunctionlangdepdnt
+description: "Partnerfunctionlangdepdnt"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

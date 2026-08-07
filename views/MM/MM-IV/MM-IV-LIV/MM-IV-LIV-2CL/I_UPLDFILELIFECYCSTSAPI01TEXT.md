@@ -1,6 +1,6 @@
 ---
 name: I_UPLDFILELIFECYCSTSAPI01TEXT
-description: Upldfilelifecycstsapi 01TEXT
+description: "Upldfilelifecycstsapi 01TEXT"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

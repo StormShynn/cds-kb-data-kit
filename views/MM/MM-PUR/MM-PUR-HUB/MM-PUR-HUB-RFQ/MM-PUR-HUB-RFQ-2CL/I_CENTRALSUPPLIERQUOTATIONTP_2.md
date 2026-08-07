@@ -1,6 +1,6 @@
 ---
 name: I_CENTRALSUPPLIERQUOTATIONTP_2
-description: Centralsupplierquotationtp 2
+description: "Centralsupplierquotationtp 2"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

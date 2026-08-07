@@ -1,6 +1,6 @@
 ---
 name: I_CITCLASSFCTNCONFIGURATIONVH
-description: Citclassfctnconfigurationvh
+description: "Citclassfctnconfigurationvh"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_ACCOUNTINGDOCUMENTCATGROUP
-description: Accounting DocumentUMENTCATGROUP
+description: "Accounting DocumentUMENTCATGROUP"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

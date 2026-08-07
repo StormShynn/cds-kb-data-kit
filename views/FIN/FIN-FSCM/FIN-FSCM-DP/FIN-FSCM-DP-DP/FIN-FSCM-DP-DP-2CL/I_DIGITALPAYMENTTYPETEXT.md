@@ -1,6 +1,6 @@
 ---
 name: I_DIGITALPAYMENTTYPETEXT
-description: Digitalpaymenttypetext
+description: "Digitalpaymenttypetext"
 app_component: FIN-FSCM-DP-DP-2CL
 software_component: SAPSCORE
 release_state: released

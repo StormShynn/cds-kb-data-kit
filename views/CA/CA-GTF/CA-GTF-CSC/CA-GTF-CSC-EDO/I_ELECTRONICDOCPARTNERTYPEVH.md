@@ -1,6 +1,6 @@
 ---
 name: I_ELECTRONICDOCPARTNERTYPEVH
-description: Electronicdocpartnertypevh
+description: "Electronicdocpartnertypevh"
 app_component: CA-GTF-CSC-EDO
 software_component: SAPSCORE
 release_state: released

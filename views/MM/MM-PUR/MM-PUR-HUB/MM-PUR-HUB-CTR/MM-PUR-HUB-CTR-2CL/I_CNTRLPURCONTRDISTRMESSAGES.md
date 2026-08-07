@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLPURCONTRDISTRMESSAGES
-description: Cntrlpurcontrdistrmessages
+description: "Cntrlpurcontrdistrmessages"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

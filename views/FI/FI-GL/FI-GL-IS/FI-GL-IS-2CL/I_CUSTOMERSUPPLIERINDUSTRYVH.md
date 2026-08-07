@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERSUPPLIERINDUSTRYVH
-description: Customersupplierindustryvh
+description: "Customersupplierindustryvh"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

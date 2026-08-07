@@ -1,21 +1,21 @@
 ---
 name: ZTT_I_TASKS.DDLS
-description: Tasks
+description: "Tasks"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_i_tasks.ddls.asddls
-semantic_en: Tasks — CDS view based on ztt_tasks.
-semantic_vi: Tasks — CDS view dựa trên ztt_tasks.
+semantic_en: "Tasks — CDS view based on ztt_tasks."
+semantic_vi: "Tasks — CDS view dựa trên ztt_tasks."
 keywords:
-  - tasks
-  - project_code
-  - code
-  - description
-  - status
-  - status_previous
+  - "tasks"
+  - "project_code"
+  - "code"
+  - "description"
+  - "status"
+  - "status_previous"
 tags:
   - task
 ---

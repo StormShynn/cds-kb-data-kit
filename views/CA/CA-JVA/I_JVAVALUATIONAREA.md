@@ -1,6 +1,6 @@
 ---
 name: I_JVAVALUATIONAREA
-description: Jvavaluationarea
+description: "Jvavaluationarea"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

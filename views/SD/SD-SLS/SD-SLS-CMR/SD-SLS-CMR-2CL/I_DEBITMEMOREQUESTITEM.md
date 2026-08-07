@@ -1,6 +1,6 @@
 ---
 name: I_DEBITMEMOREQUESTITEM
-description: Debitmemorequestitem
+description: "Debitmemorequestitem"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

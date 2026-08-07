@@ -1,13 +1,13 @@
 ---
 name: I_RECASHFLOWC
-description: Real Estate Cash Flow - Cube
+description: "Real Estate Cash Flow - Cube"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RECASHFLOWC')/$value
-semantic_en: Real Estate Cash Flow - Cube
+semantic_en: "Real Estate Cash Flow - Cube"
 tags:
   - RE
   - component:RE-FX-CN-2CL

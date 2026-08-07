@@ -1,13 +1,13 @@
 ---
 name: I_WBSELEMENTBYEXTERNALID
-description: WBSElement By ExternalID
+description: "WBSElement By ExternalID"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTBYEXTERNALID')/$value
-semantic_en: WBSElement By ExternalID
+semantic_en: "WBSElement By ExternalID"
 tags:
   - PPM
   - component:PPM-SCL-STR

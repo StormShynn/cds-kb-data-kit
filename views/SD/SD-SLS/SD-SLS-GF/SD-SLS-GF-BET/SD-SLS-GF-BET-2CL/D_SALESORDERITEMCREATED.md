@@ -1,6 +1,6 @@
 ---
 name: D_SALESORDERITEMCREATED
-description: D Sales OrderITEMCREATED
+description: "D Sales OrderITEMCREATED"
 app_component: SD-SLS-GF-BET-2CL
 software_component: SAPSCORE
 release_state: released

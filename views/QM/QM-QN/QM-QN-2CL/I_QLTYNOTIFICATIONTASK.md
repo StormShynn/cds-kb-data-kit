@@ -1,6 +1,6 @@
 ---
 name: I_QLTYNOTIFICATIONTASK
-description: Qltynotificationtask
+description: "Qltynotificationtask"
 app_component: QM-QN-2CL
 software_component: SAPSCORE
 release_state: released

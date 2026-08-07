@@ -1,24 +1,24 @@
 ---
 name: C_PERSSETTLMTDOCDEX
-description: This CDS view supports data extraction to SAP BW/4HANA. It enables the data transfer to SAP BW/4HANA for personnel settlement documents. Providing all relevant personnel settlement document information, this CDS view also allows you to build analytical reports. This CDS view provides the data to answer the following business question: Which personnel settlement documents are relevant for SAP BW/4HANA data extraction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view supports data extraction to SAP BW/4HANA. It enables the data transfer to SAP BW/4HANA for personnel settlement documents. Providing all relevant personnel settlement document information, this CDS view also allows you to build analytical reports. This CDS view provides the data to answer the following business question: Which personnel settlement documents are relevant for SAP BW/4HANA data extraction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PERSSETTLMTDOCDEX')/$value
-semantic_en: This CDS view supports data extraction to SAP BW/4HANA. It enables the data transfer to SAP BW/4HANA for personnel settlement documents. Providing all relevant personnel settlement document information, this CDS view also allows you to build analytical reports. This CDS view provides the data to answer the following business question: Which personnel settlement documents are relevant for SAP BW/4HANA data extraction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Personnel Settlement Document Extraction — CDS view tiêu dùng dựa trên R_PersSettlmtDocDEX.
+semantic_en: "This CDS view supports data extraction to SAP BW/4HANA. It enables the data transfer to SAP BW/4HANA for personnel settlement documents. Providing all relevant personnel settlement document information, this CDS view also allows you to build analytical reports. This CDS view provides the data to answer the following business question: Which personnel settlement documents are relevant for SAP BW/4HANA data extraction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Personnel Settlement Document Extraction — CDS view tiêu dùng dựa trên R_PersSettlmtDocDEX."
 keywords:
-  - personnel
-  - settlement
-  - document
-  - extraction
-  - pers
-  - settlmt
-  - item
-  - type
-  - process
+  - "personnel"
+  - "settlement"
+  - "document"
+  - "extraction"
+  - "pers"
+  - "settlmt"
+  - "item"
+  - "type"
+  - "process"
 tags:
   - LO
   - bo:companycode

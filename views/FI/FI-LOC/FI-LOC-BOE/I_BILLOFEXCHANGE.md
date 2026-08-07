@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFEXCHANGE
-description: Billofexchange
+description: "Billofexchange"
 app_component: FI-LOC-BOE
 software_component: SAPSCORE
 release_state: released

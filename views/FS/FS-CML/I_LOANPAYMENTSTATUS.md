@@ -1,13 +1,13 @@
 ---
 name: I_LOANPAYMENTSTATUS
-description: Loan Payment Status
+description: "Loan Payment Status"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANPAYMENTSTATUS')/$value
-semantic_en: Loan Payment Status
+semantic_en: "Loan Payment Status"
 tags:
   - FS
   - component:FS-CML

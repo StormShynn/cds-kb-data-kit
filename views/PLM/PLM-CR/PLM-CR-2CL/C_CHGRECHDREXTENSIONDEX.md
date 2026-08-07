@@ -1,6 +1,6 @@
 ---
 name: C_CHGRECHDREXTENSIONDEX
-description: Chgrechdrextensiondex
+description: "Chgrechdrextensiondex"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

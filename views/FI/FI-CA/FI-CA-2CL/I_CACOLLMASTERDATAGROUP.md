@@ -1,6 +1,6 @@
 ---
 name: I_CACOLLMASTERDATAGROUP
-description: Cacollmasterdatagroup
+description: "Cacollmasterdatagroup"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

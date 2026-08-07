@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFEPAYMENT
-description: BR Nfepayment
+description: "BR Nfepayment"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

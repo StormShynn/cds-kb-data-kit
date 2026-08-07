@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCLASSDEX
-description: Clfnclassdex
+description: "Clfnclassdex"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

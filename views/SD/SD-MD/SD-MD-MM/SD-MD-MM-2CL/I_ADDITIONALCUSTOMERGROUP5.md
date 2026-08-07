@@ -1,6 +1,6 @@
 ---
 name: I_ADDITIONALCUSTOMERGROUP5
-description: Additionalcustomergroup 5
+description: "Additionalcustomergroup 5"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

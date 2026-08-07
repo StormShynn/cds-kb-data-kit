@@ -1,6 +1,6 @@
 ---
 name: I_SLSDOCBOMEXPLSNSTRUCSCP
-description: Slsdocbomexplsnstrucscp
+description: "Slsdocbomexplsnstrucscp"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

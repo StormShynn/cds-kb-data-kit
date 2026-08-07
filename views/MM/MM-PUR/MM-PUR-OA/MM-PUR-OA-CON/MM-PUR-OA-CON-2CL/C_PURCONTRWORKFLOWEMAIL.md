@@ -1,6 +1,6 @@
 ---
 name: C_PURCONTRWORKFLOWEMAIL
-description: Purcontrworkflowemail
+description: "Purcontrworkflowemail"
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

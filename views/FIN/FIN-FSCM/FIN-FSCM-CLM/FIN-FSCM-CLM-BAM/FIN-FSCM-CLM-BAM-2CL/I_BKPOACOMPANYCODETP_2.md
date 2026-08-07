@@ -1,6 +1,6 @@
 ---
 name: I_BKPOACOMPANYCODETP_2
-description: BKPOACompany CodeTP 2
+description: "BKPOACompany CodeTP 2"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

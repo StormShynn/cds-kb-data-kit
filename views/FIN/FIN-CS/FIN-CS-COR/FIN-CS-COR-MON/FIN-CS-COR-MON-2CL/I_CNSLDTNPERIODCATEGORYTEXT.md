@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPERIODCATEGORYTEXT
-description: Cnsldtnperiodcategorytext
+description: "Cnsldtnperiodcategorytext"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,22 +1,22 @@
 ---
 name: I_ASSETEVALUATIONKEYTEXT
-description: Asset Evaluation Key - Text
+description: "Asset Evaluation Key - Text"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETEVALUATIONKEYTEXT')/$value
-semantic_en: Asset Evaluation Key - Text
-semantic_vi: Asset Evaluation Key - Text — CDS view giao diện dựa trên t087t.
+semantic_en: "Asset Evaluation Key - Text"
+semantic_vi: "Asset Evaluation Key - Text — CDS view giao diện dựa trên t087t."
 keywords:
-  - asset
-  - evaluation
-  - key
-  - text
-  - group
-  - language
-  - name
+  - "asset"
+  - "evaluation"
+  - "key"
+  - "text"
+  - "group"
+  - "language"
+  - "name"
 tags:
   - FI
   - component:FI-FIO-AA-ANA-2CL

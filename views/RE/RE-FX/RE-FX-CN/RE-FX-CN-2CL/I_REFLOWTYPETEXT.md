@@ -1,6 +1,6 @@
 ---
 name: I_REFLOWTYPETEXT
-description: Reflowtypetext
+description: "Reflowtypetext"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released

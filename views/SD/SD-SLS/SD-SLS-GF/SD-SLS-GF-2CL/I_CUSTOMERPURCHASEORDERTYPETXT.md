@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERPURCHASEORDERTYPETXT
-description: CUSTOMERPurchase OrderTYPETXT
+description: "CUSTOMERPurchase OrderTYPETXT"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

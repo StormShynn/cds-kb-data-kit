@@ -1,6 +1,6 @@
 ---
 name: D_MAINTORDMRKDFORDELTNRESETP
-description: D Maintordmrkdfordeltnresetp
+description: "D Maintordmrkdfordeltnresetp"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

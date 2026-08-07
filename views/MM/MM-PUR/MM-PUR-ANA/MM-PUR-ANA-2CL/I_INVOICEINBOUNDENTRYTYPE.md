@@ -1,6 +1,6 @@
 ---
 name: I_INVOICEINBOUNDENTRYTYPE
-description: Invoiceinboundentrytype
+description: "Invoiceinboundentrytype"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

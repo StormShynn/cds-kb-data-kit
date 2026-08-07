@@ -1,6 +1,6 @@
 ---
 name: VDMDEMOCDS_VIEWMIGRATION
-description: Vdmdemocds Viewmigration
+description: "Vdmdemocds Viewmigration"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

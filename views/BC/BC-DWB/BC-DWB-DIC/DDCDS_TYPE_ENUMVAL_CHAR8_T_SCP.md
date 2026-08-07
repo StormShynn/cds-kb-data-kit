@@ -1,6 +1,6 @@
 ---
 name: DDCDS_TYPE_ENUMVAL_CHAR8_T_SCP
-description: Ddcds Type Enumval Char 8 T Scp
+description: "Ddcds Type Enumval Char 8 T Scp"
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

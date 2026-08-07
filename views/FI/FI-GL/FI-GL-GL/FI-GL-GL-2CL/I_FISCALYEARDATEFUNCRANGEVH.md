@@ -1,13 +1,13 @@
 ---
 name: I_FISCALYEARDATEFUNCRANGEVH
-description: Fiscal Year Range Date Function
+description: "Fiscal Year Range Date Function"
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FISCALYEARDATEFUNCRANGEVH')/$value
-semantic_en: Fiscal Year Range Date Function
+semantic_en: "Fiscal Year Range Date Function"
 tags:
   - FI
   - bo:companycode

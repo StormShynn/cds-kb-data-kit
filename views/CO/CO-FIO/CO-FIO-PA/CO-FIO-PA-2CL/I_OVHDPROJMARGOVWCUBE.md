@@ -1,17 +1,17 @@
 ---
 name: I_OVHDPROJMARGOVWCUBE
-description: Overhead Project Margin - Cube
+description: "Overhead Project Margin - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OVHDPROJMARGOVWCUBE')/$value
-semantic_en: Overhead Project Margin - Cube
+semantic_en: "Overhead Project Margin - Cube"
 keywords:
-  - Overhead Project Margin - Cube
-  - Overhead Project Margin - Cube
-  - Overhead Project Margin - Cube
+  - "Overhead Project Margin - Cube"
+  - "Overhead Project Margin - Cube"
+  - "Overhead Project Margin - Cube"
 tags:
   - CO
   - bo:project

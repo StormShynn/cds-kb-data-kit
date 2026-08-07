@@ -1,6 +1,6 @@
 ---
 name: I_REPETITIVEMFGCONFIRMATIONTP
-description: Repetitivemfgconfirmationtp
+description: "Repetitivemfgconfirmationtp"
 app_component: PP-REM-ADE-2CL
 software_component: SAPSCORE
 release_state: released

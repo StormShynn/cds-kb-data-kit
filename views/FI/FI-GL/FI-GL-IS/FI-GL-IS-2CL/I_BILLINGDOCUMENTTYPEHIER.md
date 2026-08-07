@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTTYPEHIER
-description: Billing DocumentUMENTTYPEHIER
+description: "Billing DocumentUMENTTYPEHIER"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

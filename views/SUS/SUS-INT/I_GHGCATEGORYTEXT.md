@@ -1,6 +1,6 @@
 ---
 name: I_GHGCATEGORYTEXT
-description: Ghgcategorytext
+description: "Ghgcategorytext"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

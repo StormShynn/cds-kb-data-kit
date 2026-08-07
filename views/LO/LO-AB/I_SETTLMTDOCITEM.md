@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTDOCITEM
-description: Settlmtdocitem
+description: "Settlmtdocitem"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

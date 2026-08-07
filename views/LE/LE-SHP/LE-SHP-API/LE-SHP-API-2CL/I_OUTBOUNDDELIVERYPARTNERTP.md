@@ -1,6 +1,6 @@
 ---
 name: I_OUTBOUNDDELIVERYPARTNERTP
-description: Outbound DeliveryPARTNERTP
+description: "Outbound DeliveryPARTNERTP"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

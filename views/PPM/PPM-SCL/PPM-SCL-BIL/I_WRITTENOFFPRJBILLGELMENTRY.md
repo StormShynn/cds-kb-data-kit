@@ -1,6 +1,6 @@
 ---
 name: I_WRITTENOFFPRJBILLGELMENTRY
-description: Writtenoffprjbillgelmentry
+description: "Writtenoffprjbillgelmentry"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

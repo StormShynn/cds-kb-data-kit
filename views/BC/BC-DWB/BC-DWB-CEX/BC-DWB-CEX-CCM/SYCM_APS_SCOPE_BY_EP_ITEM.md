@@ -1,6 +1,6 @@
 ---
 name: SYCM_APS_SCOPE_BY_EP_ITEM
-description: Sycm Aps Scope BY EP Item
+description: "Sycm Aps Scope BY EP Item"
 app_component: BC-DWB-CEX-CCM
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_TRIGGERPOINTUSAGE
-description: Triggerpointusage
+description: "Triggerpointusage"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

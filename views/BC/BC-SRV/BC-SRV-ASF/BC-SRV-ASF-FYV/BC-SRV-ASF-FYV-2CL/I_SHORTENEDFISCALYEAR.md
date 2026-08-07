@@ -1,6 +1,6 @@
 ---
 name: I_SHORTENEDFISCALYEAR
-description: Shortenedfiscalyear
+description: "Shortenedfiscalyear"
 app_component: BC-SRV-ASF-FYV-2CL
 software_component: SAP_BASIS
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_EWM_EXTSTORAGEPROCESSSTEP
-description: This CDS view provides information about process steps of external storage in your warehouse.
+description: "This CDS view provides information about process steps of external storage in your warehouse."
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_EXTSTORAGEPROCESSSTEP')/$value
-semantic_en: This CDS view provides information about process steps of external storage in your warehouse.
+semantic_en: "This CDS view provides information about process steps of external storage in your warehouse."
 tags:
   - SCM
   - bo:project

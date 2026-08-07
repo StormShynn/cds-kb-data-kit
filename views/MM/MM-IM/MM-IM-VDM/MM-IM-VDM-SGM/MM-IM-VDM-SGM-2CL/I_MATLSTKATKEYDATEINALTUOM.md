@@ -1,6 +1,6 @@
 ---
 name: I_MATLSTKATKEYDATEINALTUOM
-description: Matlstkatkeydateinaltuom
+description: "Matlstkatkeydateinaltuom"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

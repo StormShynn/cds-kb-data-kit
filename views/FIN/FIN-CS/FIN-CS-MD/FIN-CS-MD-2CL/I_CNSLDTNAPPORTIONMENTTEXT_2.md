@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNAPPORTIONMENTTEXT_2
-description: Cnsldtnapportionmenttext 2
+description: "Cnsldtnapportionmenttext 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

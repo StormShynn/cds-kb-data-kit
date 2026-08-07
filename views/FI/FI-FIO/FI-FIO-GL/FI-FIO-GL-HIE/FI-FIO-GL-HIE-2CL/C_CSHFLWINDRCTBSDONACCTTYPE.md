@@ -1,30 +1,30 @@
 ---
 name: C_CSHFLWINDRCTBSDONACCTTYPE
-description: Cash Flow Statement with Net Income from G/L Account Type
+description: "Cash Flow Statement with Net Income from G/L Account Type"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CSHFLWINDRCTBSDONACCTTYPE')/$value
-semantic_en: Cash Flow Statement with Net Income from G/L Account Type
-semantic_vi: Cash Flow Statement with Net Income from G/L Account Type — CDS view tiêu dùng dựa trên I_GLAccountLineItemSemTag.
+semantic_en: "Cash Flow Statement with Net Income from G/L Account Type"
+semantic_vi: "Cash Flow Statement with Net Income from G/L Account Type — CDS view tiêu dùng dựa trên I_GLAccountLineItemSemTag."
 keywords:
-  - cash
-  - flow
-  - statement
-  - with
-  - net
-  - income
-  - from
-  - g/l
-  - account
-  - type
-  - hierarchy
-  - company
-  - code
-  - ledger
-  - fiscal
+  - "cash"
+  - "flow"
+  - "statement"
+  - "with"
+  - "net"
+  - "income"
+  - "from"
+  - "g/l"
+  - "account"
+  - "type"
+  - "hierarchy"
+  - "company"
+  - "code"
+  - "ledger"
+  - "fiscal"
 tags:
   - FI
   - account

@@ -1,6 +1,6 @@
 ---
 name: I_LANGUAGEVH
-description: Languagevh
+description: "Languagevh"
 app_component: BC-DOC-TTL
 software_component: SAP_BASIS
 release_state: released

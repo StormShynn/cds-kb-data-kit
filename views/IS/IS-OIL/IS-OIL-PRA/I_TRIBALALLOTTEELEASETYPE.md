@@ -1,13 +1,13 @@
 ---
 name: I_TRIBALALLOTTEELEASETYPE
-description: PRA Tribal Or Allottee Lease Type
+description: "PRA Tribal Or Allottee Lease Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRIBALALLOTTEELEASETYPE')/$value
-semantic_en: PRA Tribal Or Allottee Lease Type
+semantic_en: "PRA Tribal Or Allottee Lease Type"
 tags:
   - IS
   - component:IS-OIL-PRA

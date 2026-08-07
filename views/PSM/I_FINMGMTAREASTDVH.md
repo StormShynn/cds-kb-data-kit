@@ -1,6 +1,6 @@
 ---
 name: I_FINMGMTAREASTDVH
-description: Finmgmtareastdvh
+description: "Finmgmtareastdvh"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

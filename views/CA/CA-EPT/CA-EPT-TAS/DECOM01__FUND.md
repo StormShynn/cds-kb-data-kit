@@ -1,6 +1,6 @@
 ---
 name: DECOM01__FUND
-description: Decom 01 Fund
+description: "Decom 01 Fund"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

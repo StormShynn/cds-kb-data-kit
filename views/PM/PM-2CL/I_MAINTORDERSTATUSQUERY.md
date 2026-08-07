@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDERSTATUSQUERY
-description: Maintorderstatusquery
+description: "Maintorderstatusquery"
 app_component: PM-2CL
 software_component: SAPPCORE_H
 release_state: released

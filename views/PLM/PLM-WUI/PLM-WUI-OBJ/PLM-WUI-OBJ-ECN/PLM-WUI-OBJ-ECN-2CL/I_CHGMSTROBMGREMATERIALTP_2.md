@@ -1,6 +1,6 @@
 ---
 name: I_CHGMSTROBMGREMATERIALTP_2
-description: Chgmstrobmgrematerialtp 2
+description: "Chgmstrobmgrematerialtp 2"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

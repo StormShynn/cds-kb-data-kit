@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALTMPLLIFECYCLESTS
-description: Suplrevaltmpllifecyclests
+description: "Suplrevaltmpllifecyclests"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

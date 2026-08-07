@@ -1,28 +1,28 @@
 ---
 name: C_PROFITCENTERSTATKEYFIGSEMTAG
-description: Profit Center Ststcl Key Figure  KPI
+description: "Profit Center Ststcl Key Figure  KPI"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROFITCENTERSTATKEYFIGSEMTAG')/$value
-semantic_en: Profit Center Ststcl Key Figure  KPI
-semantic_vi: Profit Center Ststcl Key Figure  KPI — CDS view tiêu dùng dựa trên I_ActualPlanStatKeyFigSemTag.
+semantic_en: "Profit Center Ststcl Key Figure  KPI"
+semantic_vi: "Profit Center Ststcl Key Figure  KPI — CDS view tiêu dùng dựa trên I_ActualPlanStatKeyFigSemTag."
 keywords:
-  - profit
-  - center
-  - ststcl
-  - key
-  - figure
-  - kpi
-  - company
-  - code
-  - fiscal
-  - year
-  - period
-  - functional
-  - area
+  - "profit"
+  - "center"
+  - "ststcl"
+  - "key"
+  - "figure"
+  - "kpi"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "period"
+  - "functional"
+  - "area"
 tags:
   - FI
   - bo:companycode

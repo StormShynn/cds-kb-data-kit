@@ -1,6 +1,6 @@
 ---
 name: I_GLRECORDTYPE
-description: Glrecordtype
+description: "Glrecordtype"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FRTAGRMTCALCSHEETITEMTP
-description: Frtagrmtcalcsheetitemtp
+description: "Frtagrmtcalcsheetitemtp"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLDELIVCONFSTATUS
-description: Overalldelivconfstatus
+description: "Overalldelivconfstatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

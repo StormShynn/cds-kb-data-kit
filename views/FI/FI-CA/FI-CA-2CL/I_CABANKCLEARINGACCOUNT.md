@@ -1,13 +1,13 @@
 ---
 name: I_CABANKCLEARINGACCOUNT
-description: Bank Clearing Account
+description: "Bank Clearing Account"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CABANKCLEARINGACCOUNT')/$value
-semantic_en: Bank Clearing Account
+semantic_en: "Bank Clearing Account"
 tags:
   - FI
   - account

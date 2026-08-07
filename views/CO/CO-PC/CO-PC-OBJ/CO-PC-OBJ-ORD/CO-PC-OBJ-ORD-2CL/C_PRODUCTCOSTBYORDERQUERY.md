@@ -1,22 +1,22 @@
 ---
 name: C_PRODUCTCOSTBYORDERQUERY
-description: The production costs in this CDS view include actual costs, plan costs, actual-plan costs difference, actual output quantity, plan output quantity, variance, and WIP. This CDS view also provides order master data information, such as order number, order category, and order description. This CDS view provides the prerequisites for answering the following business questions: How many costs are scheduled for the order (plan costs), and how many costs are invested in the order (actual costs)? What is the difference between plan costs and actual costs? How many outputs are scheduled before production process (plan output quantity), and how many outputs are produced in Goods Receipt (actual output quantity)? What is the order master data information (order number, order category, and order description, for example)?
+description: "The production costs in this CDS view include actual costs, plan costs, actual-plan costs difference, actual output quantity, plan output quantity, variance, and WIP. This CDS view also provides order master data information, such as order number, order category, and order description. This CDS view provides the prerequisites for answering the following business questions: How many costs are scheduled for the order (plan costs), and how many costs are invested in the order (actual costs)? What is the difference between plan costs and actual costs? How many outputs are scheduled before production process (plan output quantity), and how many outputs are produced in Goods Receipt (actual output quantity)? What is the order master data information (order number, order category, and order description, for example)?"
 app_component: CO-PC-OBJ-ORD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODUCTCOSTBYORDERQUERY')/$value
-semantic_en: The production costs in this CDS view include actual costs, plan costs, actual-plan costs difference, actual output quantity, plan output quantity, variance, and WIP. This CDS view also provides order master data information, such as order number, order category, and order description. This CDS view provides the prerequisites for answering the following business questions: How many costs are scheduled for the order (plan costs), and how many costs are invested in the order (actual costs)? What is the difference between plan costs and actual costs? How many outputs are scheduled before production process (plan output quantity), and how many outputs are produced in Goods Receipt (actual output quantity)? What is the order master data information (order number, order category, and order description, for example)?
-semantic_vi: Production Cost By Order — CDS view tiêu dùng dựa trên I_ProductCostByOrderCube.
+semantic_en: "The production costs in this CDS view include actual costs, plan costs, actual-plan costs difference, actual output quantity, plan output quantity, variance, and WIP. This CDS view also provides order master data information, such as order number, order category, and order description. This CDS view provides the prerequisites for answering the following business questions: How many costs are scheduled for the order (plan costs), and how many costs are invested in the order (actual costs)? What is the difference between plan costs and actual costs? How many outputs are scheduled before production process (plan output quantity), and how many outputs are produced in Goods Receipt (actual output quantity)? What is the order master data information (order number, order category, and order description, for example)?"
+semantic_vi: "Production Cost By Order — CDS view tiêu dùng dựa trên I_ProductCostByOrderCube."
 keywords:
-  - production
-  - cost
-  - order
-  - type
-  - category
-  - reference
-  - external
+  - "production"
+  - "cost"
+  - "order"
+  - "type"
+  - "category"
+  - "reference"
+  - "external"
 tags:
   - CO
   - bo:businesspartner

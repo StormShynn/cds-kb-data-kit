@@ -1,13 +1,13 @@
 ---
 name: I_INSURINSRBLOBJCATEGORYT
-description: Insur Plcy Insrd Object Category - Txt
+description: "Insur Plcy Insrd Object Category - Txt"
 app_component: FS-PM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSURINSRBLOBJCATEGORYT')/$value
-semantic_en: Insur Plcy Insrd Object Category - Txt
+semantic_en: "Insur Plcy Insrd Object Category - Txt"
 tags:
   - FS
   - component:FS-PM

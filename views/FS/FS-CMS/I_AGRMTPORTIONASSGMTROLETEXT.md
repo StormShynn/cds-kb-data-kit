@@ -1,13 +1,13 @@
 ---
 name: I_AGRMTPORTIONASSGMTROLETEXT
-description: Agreement Portion Assignment Role - Text
+description: "Agreement Portion Assignment Role - Text"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTPORTIONASSGMTROLETEXT')/$value
-semantic_en: Agreement Portion Assignment Role - Text
+semantic_en: "Agreement Portion Assignment Role - Text"
 tags:
   - FS
   - bo:purchaseorder

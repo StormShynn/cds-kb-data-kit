@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERINVOICETP
-description: Supplier InvoiceTP
+description: "Supplier InvoiceTP"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

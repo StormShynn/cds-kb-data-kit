@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTSPECIALARRANGEMENT
-description: Agreement Special Arrangement Details
+description: "Agreement Special Arrangement Details"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTSPECIALARRANGEMENT')/$value
-semantic_en: Agreement Special Arrangement Details
+semantic_en: "Agreement Special Arrangement Details"
 tags:
   - FS
   - component:FS-CMS

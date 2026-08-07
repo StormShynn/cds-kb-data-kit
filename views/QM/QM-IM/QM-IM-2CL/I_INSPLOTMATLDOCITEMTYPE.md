@@ -1,6 +1,6 @@
 ---
 name: I_INSPLOTMATLDOCITEMTYPE
-description: Insplotmatldocitemtype
+description: "Insplotmatldocitemtype"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

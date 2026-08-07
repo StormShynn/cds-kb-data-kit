@@ -1,6 +1,6 @@
 ---
 name: C_CHANGEMASTERSTATUSTEXTDEX
-description: Change MasterERSTATUSTEXTDEX
+description: "Change MasterERSTATUSTEXTDEX"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

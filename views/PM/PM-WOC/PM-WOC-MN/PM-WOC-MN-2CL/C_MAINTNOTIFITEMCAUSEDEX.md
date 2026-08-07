@@ -1,27 +1,27 @@
 ---
 name: C_MAINTNOTIFITEMCAUSEDEX
-description: Data Extr for Maint Notif Item Cause
+description: "Data Extr for Maint Notif Item Cause"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFITEMCAUSEDEX')/$value
-semantic_en: Data Extr for Maint Notif Item Cause
-semantic_vi: Data Extr for Maint Notif Item Cause — CDS view tiêu dùng dựa trên I_MaintNotifItemCauseBasic.
+semantic_en: "Data Extr for Maint Notif Item Cause"
+semantic_vi: "Data Extr for Maint Notif Item Cause — CDS view tiêu dùng dựa trên I_MaintNotifItemCauseBasic."
 keywords:
-  - data
-  - extr
-  - for
-  - maint
-  - notif
-  - item
-  - cause
-  - maintenance
-  - notification
-  - code
-  - catalog
-  - group
+  - "data"
+  - "extr"
+  - "for"
+  - "maint"
+  - "notif"
+  - "item"
+  - "cause"
+  - "maintenance"
+  - "notification"
+  - "code"
+  - "catalog"
+  - "group"
 tags:
   - PM
   - bo:companycode

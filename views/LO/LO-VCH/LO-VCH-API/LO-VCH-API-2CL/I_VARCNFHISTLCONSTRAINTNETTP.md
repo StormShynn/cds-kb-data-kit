@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFHISTLCONSTRAINTNETTP
-description: Varcnfhistlconstraintnettp
+description: "Varcnfhistlconstraintnettp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

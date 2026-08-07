@@ -1,6 +1,6 @@
 ---
 name: I_VARIANCEREASON
-description: Variancereason
+description: "Variancereason"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

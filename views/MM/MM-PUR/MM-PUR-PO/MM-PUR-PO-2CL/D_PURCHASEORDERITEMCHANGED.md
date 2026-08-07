@@ -1,6 +1,6 @@
 ---
 name: D_PURCHASEORDERITEMCHANGED
-description: D Purchase OrderITEMCHANGED
+description: "D Purchase OrderITEMCHANGED"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

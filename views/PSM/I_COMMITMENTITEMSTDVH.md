@@ -1,13 +1,13 @@
 ---
 name: I_COMMITMENTITEMSTDVH
-description: Commitment Item
+description: "Commitment Item"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMMITMENTITEMSTDVH')/$value
-semantic_en: Commitment Item
+semantic_en: "Commitment Item"
 tags:
   - PSM
   - component:PSM

@@ -1,6 +1,6 @@
 ---
 name: I_SALESQUOTATIONITEMTEXTTP
-description: Salesquotationitemtexttp
+description: "Salesquotationitemtexttp"
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERITEMBILLINGPLAN
-description: Sales OrderITEMBILLINGPLAN
+description: "Sales OrderITEMBILLINGPLAN"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

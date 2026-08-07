@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCUMENTITEM_2
-description: Service DocumentUMENTITEM 2
+description: "Service DocumentUMENTITEM 2"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

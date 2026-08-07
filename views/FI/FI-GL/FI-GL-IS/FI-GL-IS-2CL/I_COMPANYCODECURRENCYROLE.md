@@ -1,6 +1,6 @@
 ---
 name: I_COMPANYCODECURRENCYROLE
-description: Company CodeCURRENCYROLE
+description: "Company CodeCURRENCYROLE"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

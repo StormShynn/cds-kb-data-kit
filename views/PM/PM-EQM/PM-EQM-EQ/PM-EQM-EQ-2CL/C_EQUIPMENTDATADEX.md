@@ -1,27 +1,27 @@
 ---
 name: C_EQUIPMENTDATADEX
-description: Equipment DEX
+description: "Equipment DEX"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EQUIPMENTDATADEX')/$value
-semantic_en: Equipment DEX
-semantic_vi: Equipment DEX — CDS view tiêu dùng dựa trên I_EquipmentTimeSeg.
+semantic_en: "Equipment DEX"
+semantic_vi: "Equipment DEX — CDS view tiêu dùng dựa trên I_EquipmentTimeSeg."
 keywords:
-  - equipment
-  - dex
-  - validity
-  - date
-  - equip
-  - usage
-  - period
-  - sequence
-  - number
-  - indicator
-  - acquisition
-  - value
+  - "equipment"
+  - "dex"
+  - "validity"
+  - "date"
+  - "equip"
+  - "usage"
+  - "period"
+  - "sequence"
+  - "number"
+  - "indicator"
+  - "acquisition"
+  - "value"
 tags:
   - PM
   - component:PM-EQM-EQ-2CL

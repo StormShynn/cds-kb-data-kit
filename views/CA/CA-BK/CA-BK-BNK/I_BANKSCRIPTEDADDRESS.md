@@ -1,13 +1,13 @@
 ---
 name: I_BANKSCRIPTEDADDRESS
-description: Bank Scripted Address
+description: "Bank Scripted Address"
 app_component: CA-BK-BNK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKSCRIPTEDADDRESS')/$value
-semantic_en: Bank Scripted Address
+semantic_en: "Bank Scripted Address"
 tags:
   - CA
   - CA-BK

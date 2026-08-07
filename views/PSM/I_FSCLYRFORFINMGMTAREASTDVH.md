@@ -1,6 +1,6 @@
 ---
 name: I_FSCLYRFORFINMGMTAREASTDVH
-description: Fsclyrforfinmgmtareastdvh
+description: "Fsclyrforfinmgmtareastdvh"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

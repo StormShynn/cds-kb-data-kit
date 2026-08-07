@@ -1,13 +1,13 @@
 ---
 name: I_OPLACCTGDOCUMENTITEMBROWSER
-description: Operational Item for Browser
+description: "Operational Item for Browser"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPLACCTGDOCUMENTITEMBROWSER')/$value
-semantic_en: Operational Item for Browser
+semantic_en: "Operational Item for Browser"
 tags:
   - FI
   - component:FI-GL-IS-2CL

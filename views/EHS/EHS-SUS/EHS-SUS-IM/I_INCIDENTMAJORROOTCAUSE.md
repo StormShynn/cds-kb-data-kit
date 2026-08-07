@@ -1,13 +1,13 @@
 ---
 name: I_INCIDENTMAJORROOTCAUSE
-description: Incident Major Root Cause
+description: "Incident Major Root Cause"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INCIDENTMAJORROOTCAUSE')/$value
-semantic_en: Incident Major Root Cause
+semantic_en: "Incident Major Root Cause"
 tags:
   - EHS
   - component:EHS-SUS-IM

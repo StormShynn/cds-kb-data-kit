@@ -1,6 +1,6 @@
 ---
 name: I_BANKPOWEROFATTORNEYTP_2
-description: Bankpowerofattorneytp 2
+description: "Bankpowerofattorneytp 2"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

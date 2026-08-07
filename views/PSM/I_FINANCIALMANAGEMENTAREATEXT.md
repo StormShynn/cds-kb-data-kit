@@ -1,6 +1,6 @@
 ---
 name: I_FINANCIALMANAGEMENTAREATEXT
-description: Financialmanagementareatext
+description: "Financialmanagementareatext"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

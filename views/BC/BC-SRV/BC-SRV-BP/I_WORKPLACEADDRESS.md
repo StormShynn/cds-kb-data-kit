@@ -1,6 +1,6 @@
 ---
 name: I_WORKPLACEADDRESS
-description: Workplaceaddress
+description: "Workplaceaddress"
 app_component: BC-SRV-BP
 software_component: SAP_BASIS
 release_state: released

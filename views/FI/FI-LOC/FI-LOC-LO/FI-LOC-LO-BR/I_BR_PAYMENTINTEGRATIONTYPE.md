@@ -1,6 +1,6 @@
 ---
 name: I_BR_PAYMENTINTEGRATIONTYPE
-description: BR Paymentintegrationtype
+description: "BR Paymentintegrationtype"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

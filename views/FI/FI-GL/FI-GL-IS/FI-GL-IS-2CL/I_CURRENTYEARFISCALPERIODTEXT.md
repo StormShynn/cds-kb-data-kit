@@ -1,13 +1,13 @@
 ---
 name: I_CURRENTYEARFISCALPERIODTEXT
-description: Fiscal Period of Current Fiscal Year - Text
+description: "Fiscal Period of Current Fiscal Year - Text"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTYEARFISCALPERIODTEXT')/$value
-semantic_en: Fiscal Period of Current Fiscal Year - Text
+semantic_en: "Fiscal Period of Current Fiscal Year - Text"
 tags:
   - FI
   - bo:companycode

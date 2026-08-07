@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALREQEXTNAMEAPI01
-description: Suplrevalreqextnameapi 01
+description: "Suplrevalreqextnameapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

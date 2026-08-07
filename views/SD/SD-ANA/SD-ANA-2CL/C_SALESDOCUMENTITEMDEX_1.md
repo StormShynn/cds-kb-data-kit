@@ -1,6 +1,6 @@
 ---
 name: C_SALESDOCUMENTITEMDEX_1
-description: Salesdocumentitemdex 1
+description: "Salesdocumentitemdex 1"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

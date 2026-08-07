@@ -1,6 +1,6 @@
 ---
 name: I_SLSPRCGCNDNSUPLMNTTEXTTP_2
-description: Slsprcgcndnsuplmnttexttp 2
+description: "Slsprcgcndnsuplmnttexttp 2"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSSRCETXTAPI01
-description: Lgltranssrcetxtapi 01
+description: "Lgltranssrcetxtapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

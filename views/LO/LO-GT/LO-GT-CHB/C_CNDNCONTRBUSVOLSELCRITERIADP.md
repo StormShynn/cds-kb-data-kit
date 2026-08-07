@@ -1,28 +1,28 @@
 ---
 name: C_CNDNCONTRBUSVOLSELCRITERIADP
-description: Business Volume Selection Criteria
+description: "Business Volume Selection Criteria"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNDNCONTRBUSVOLSELCRITERIADP')/$value
-semantic_en: Business Volume Selection Criteria
-semantic_vi: Business Volume Selection Criteria — CDS view tiêu dùng dựa trên R_CndnContrBusVolSelCriteria.
+semantic_en: "Business Volume Selection Criteria"
+semantic_vi: "Business Volume Selection Criteria — CDS view tiêu dùng dựa trên R_CndnContrBusVolSelCriteria."
 keywords:
-  - business
-  - volume
-  - selection
-  - criteria
-  - condition
-  - contract
-  - cndn
-  - contr
-  - field
-  - combn
-  - type
-  - group
-  - sign
+  - "business"
+  - "volume"
+  - "selection"
+  - "criteria"
+  - "condition"
+  - "contract"
+  - "cndn"
+  - "contr"
+  - "field"
+  - "combn"
+  - "type"
+  - "group"
+  - "sign"
 tags:
   - LO
   - component:LO-GT-CHB

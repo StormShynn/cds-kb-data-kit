@@ -1,13 +1,13 @@
 ---
 name: I_REARCHTROBJPLNACTLC
-description: RE Architecture CO Obj Plan Act - Cube
+description: "RE Architecture CO Obj Plan Act - Cube"
 app_component: RE-FX-CO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REARCHTROBJPLNACTLC')/$value
-semantic_en: RE Architecture CO Obj Plan Act - Cube
+semantic_en: "RE Architecture CO Obj Plan Act - Cube"
 tags:
   - RE
   - component:RE-FX-CO-2CL

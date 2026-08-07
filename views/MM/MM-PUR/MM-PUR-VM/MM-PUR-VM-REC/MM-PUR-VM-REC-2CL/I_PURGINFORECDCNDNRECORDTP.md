@@ -1,6 +1,6 @@
 ---
 name: I_PURGINFORECDCNDNRECORDTP
-description: Purginforecdcndnrecordtp
+description: "Purginforecdcndnrecordtp"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

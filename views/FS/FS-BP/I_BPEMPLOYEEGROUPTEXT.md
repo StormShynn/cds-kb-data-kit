@@ -1,6 +1,6 @@
 ---
 name: I_BPEMPLOYEEGROUPTEXT
-description: Bpemployeegrouptext
+description: "Bpemployeegrouptext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

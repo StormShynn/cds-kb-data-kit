@@ -1,13 +1,13 @@
 ---
 name: I_WORKASSGMTPAYMENTDEX
-description: Work Assignment Payment Details
+description: "Work Assignment Payment Details"
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTPAYMENTDEX')/$value
-semantic_en: Work Assignment Payment Details
+semantic_en: "Work Assignment Payment Details"
 tags:
   - CA
   - CA-WFD

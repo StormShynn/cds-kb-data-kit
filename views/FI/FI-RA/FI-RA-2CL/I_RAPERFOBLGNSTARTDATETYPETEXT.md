@@ -1,6 +1,6 @@
 ---
 name: I_RAPERFOBLGNSTARTDATETYPETEXT
-description: Raperfoblgnstartdatetypetext
+description: "Raperfoblgnstartdatetypetext"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

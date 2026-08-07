@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDUNASSIGNFRTUNITP
-description: D Transpordunassignfrtunitp
+description: "D Transpordunassignfrtunitp"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

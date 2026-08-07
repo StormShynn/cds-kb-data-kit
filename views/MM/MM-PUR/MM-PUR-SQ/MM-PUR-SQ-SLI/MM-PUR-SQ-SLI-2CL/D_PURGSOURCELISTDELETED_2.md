@@ -1,6 +1,6 @@
 ---
 name: D_PURGSOURCELISTDELETED_2
-description: D Purgsourcelistdeleted 2
+description: "D Purgsourcelistdeleted 2"
 app_component: MM-PUR-SQ-SLI-2CL
 software_component: SAPSCORE
 release_state: released

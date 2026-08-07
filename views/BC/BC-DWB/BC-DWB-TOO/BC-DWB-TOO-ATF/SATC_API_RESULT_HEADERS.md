@@ -1,6 +1,6 @@
 ---
 name: SATC_API_RESULT_HEADERS
-description: Satc Api Result Headers
+description: "Satc Api Result Headers"
 app_component: BC-DWB-TOO-ATF
 software_component: SAP_BASIS
 release_state: released

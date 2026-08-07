@@ -1,26 +1,26 @@
 ---
 name: C_MATLSTKATKEYDATEINALTUOM
-description: This CDS view provides the prerequisites for answering the following business question: Which quantity in alternative unit of measure (AUoM) of a material was available at a certain date?
+description: "This CDS view provides the prerequisites for answering the following business question: Which quantity in alternative unit of measure (AUoM) of a material was available at a certain date?"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLSTKATKEYDATEINALTUOM')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: Which quantity in alternative unit of measure (AUoM) of a material was available at a certain date?
-semantic_vi: Stock at Key Date in Alternative UoM — CDS view tiêu dùng (transactional data) dựa trên I_MatlStkAtKeyDateInAltUoM.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: Which quantity in alternative unit of measure (AUoM) of a material was available at a certain date?"
+semantic_vi: "Stock at Key Date in Alternative UoM — CDS view tiêu dùng (transactional data) dựa trên I_MatlStkAtKeyDateInAltUoM."
 keywords:
-  - stock
-  - key
-  - date
-  - alternative
-  - uom
-  - product
-  - plant
-  - storage
-  - location
-  - batch
-  - supplier
+  - "stock"
+  - "key"
+  - "date"
+  - "alternative"
+  - "uom"
+  - "product"
+  - "plant"
+  - "storage"
+  - "location"
+  - "batch"
+  - "supplier"
 tags:
   - MM
   - bo:plant

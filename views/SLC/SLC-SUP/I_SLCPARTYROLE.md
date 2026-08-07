@@ -1,6 +1,6 @@
 ---
 name: I_SLCPARTYROLE
-description: Slcpartyrole
+description: "Slcpartyrole"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

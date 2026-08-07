@@ -1,6 +1,6 @@
 ---
 name: I_RETAXGROUPTEXT
-description: Retaxgrouptext
+description: "Retaxgrouptext"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

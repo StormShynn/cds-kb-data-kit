@@ -1,13 +1,13 @@
 ---
 name: I_PRATAXCOREJECTIONREASON
-description: Production Revenue Accounting Tax Colorado Rejection Reason
+description: "Production Revenue Accounting Tax Colorado Rejection Reason"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXCOREJECTIONREASON')/$value
-semantic_en: Production Revenue Accounting Tax Colorado Rejection Reason
+semantic_en: "Production Revenue Accounting Tax Colorado Rejection Reason"
 tags:
   - IS
   - account

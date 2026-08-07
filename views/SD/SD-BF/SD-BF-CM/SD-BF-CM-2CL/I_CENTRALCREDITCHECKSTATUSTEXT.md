@@ -1,6 +1,6 @@
 ---
 name: I_CENTRALCREDITCHECKSTATUSTEXT
-description: Centralcreditcheckstatustext
+description: "Centralcreditcheckstatustext"
 app_component: SD-BF-CM-2CL
 software_component: SAPSCORE
 release_state: released

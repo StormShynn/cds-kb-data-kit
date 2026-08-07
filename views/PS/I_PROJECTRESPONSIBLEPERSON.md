@@ -1,13 +1,13 @@
 ---
 name: I_PROJECTRESPONSIBLEPERSON
-description: Project Responsible Person
+description: "Project Responsible Person"
 app_component: PS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTRESPONSIBLEPERSON')/$value
-semantic_en: Project Responsible Person
+semantic_en: "Project Responsible Person"
 tags:
   - PS
   - bo:project

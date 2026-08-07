@@ -1,13 +1,13 @@
 ---
 name: I_EQUIPMENTHIERARCHYNODE
-description: Equipment Hierarchy Nodes
+description: "Equipment Hierarchy Nodes"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EQUIPMENTHIERARCHYNODE')/$value
-semantic_en: Equipment Hierarchy Nodes
+semantic_en: "Equipment Hierarchy Nodes"
 tags:
   - PM
   - component:PM-EQM-EQ-2CL

@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALPROCESSCTRLKEYTXT
-description: Collateral Process Control Key - Text
+description: "Collateral Process Control Key - Text"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALPROCESSCTRLKEYTXT')/$value
-semantic_en: Collateral Process Control Key - Text
+semantic_en: "Collateral Process Control Key - Text"
 tags:
   - FS
   - component:FS-CMS

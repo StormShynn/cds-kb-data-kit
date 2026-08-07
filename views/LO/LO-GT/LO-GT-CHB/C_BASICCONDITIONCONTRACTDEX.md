@@ -1,26 +1,26 @@
 ---
 name: C_BASICCONDITIONCONTRACTDEX
-description: Basic Condition Contract Extraction
+description: "Basic Condition Contract Extraction"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BASICCONDITIONCONTRACTDEX')/$value
-semantic_en: Basic Condition Contract Extraction
-semantic_vi: Basic Condition Contract Extraction — CDS view tiêu dùng dựa trên R_BasicConditionContractDEX.
+semantic_en: "Basic Condition Contract Extraction"
+semantic_vi: "Basic Condition Contract Extraction — CDS view tiêu dùng dựa trên R_BasicConditionContractDEX."
 keywords:
-  - basic
-  - condition
-  - contract
-  - extraction
-  - cndn
-  - contr
-  - type
-  - classfctn
-  - proc
-  - document
-  - reference
+  - "basic"
+  - "condition"
+  - "contract"
+  - "extraction"
+  - "cndn"
+  - "contr"
+  - "type"
+  - "classfctn"
+  - "proc"
+  - "document"
+  - "reference"
 tags:
   - LO
   - component:LO-GT-CHB

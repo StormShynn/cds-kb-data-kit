@@ -1,6 +1,6 @@
 ---
 name: I_CITCLFNITEMINCONSTCYCODEVH
-description: Citclfniteminconstcycodevh
+description: "Citclfniteminconstcycodevh"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

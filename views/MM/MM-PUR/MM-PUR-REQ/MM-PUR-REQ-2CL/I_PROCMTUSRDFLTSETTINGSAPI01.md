@@ -1,6 +1,6 @@
 ---
 name: I_PROCMTUSRDFLTSETTINGSAPI01
-description: Procmtusrdfltsettingsapi 01
+description: "Procmtusrdfltsettingsapi 01"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

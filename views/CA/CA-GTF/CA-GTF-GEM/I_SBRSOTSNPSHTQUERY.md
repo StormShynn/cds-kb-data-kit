@@ -1,6 +1,6 @@
 ---
 name: I_SBRSOTSNPSHTQUERY
-description: Sbrsotsnpshtquery
+description: "Sbrsotsnpshtquery"
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_CRDTDCSNVERSUSSLSORDC
-description: Credit Decsn Versus Sales Order - Cube
+description: "Credit Decsn Versus Sales Order - Cube"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRDTDCSNVERSUSSLSORDC')/$value
-semantic_en: Credit Decsn Versus Sales Order - Cube
+semantic_en: "Credit Decsn Versus Sales Order - Cube"
 tags:
   - FIN
   - bo:salesorder

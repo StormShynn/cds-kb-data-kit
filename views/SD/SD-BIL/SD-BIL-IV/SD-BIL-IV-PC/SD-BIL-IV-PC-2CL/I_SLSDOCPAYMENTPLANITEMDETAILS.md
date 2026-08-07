@@ -1,6 +1,6 @@
 ---
 name: I_SLSDOCPAYMENTPLANITEMDETAILS
-description: Slsdocpaymentplanitemdetails
+description: "Slsdocpaymentplanitemdetails"
 app_component: SD-BIL-IV-PC-2CL
 software_component: SAPSCORE
 release_state: released

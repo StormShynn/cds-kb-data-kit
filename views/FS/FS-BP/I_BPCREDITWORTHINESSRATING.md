@@ -1,6 +1,6 @@
 ---
 name: I_BPCREDITWORTHINESSRATING
-description: Bpcreditworthinessrating
+description: "Bpcreditworthinessrating"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

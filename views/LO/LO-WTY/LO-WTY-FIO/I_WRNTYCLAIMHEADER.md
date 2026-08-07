@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMHEADER
-description: Wrntyclaimheader
+description: "Wrntyclaimheader"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPROFITCTRFORELIMT_2
-description: Cnsldtnprofitctrforelimt 2
+description: "Cnsldtnprofitctrforelimt 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DUNNINGKEYTEXT
-description: Dunningkeytext
+description: "Dunningkeytext"
 app_component: FI-AR-AR-C-2CL
 software_component: SAPSCORE
 release_state: released

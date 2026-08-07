@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERBANKTP_3
-description: Business PartnerBANKTP 3
+description: "Business PartnerBANKTP 3"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

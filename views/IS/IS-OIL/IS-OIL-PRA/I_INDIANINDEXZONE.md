@@ -1,13 +1,13 @@
 ---
 name: I_INDIANINDEXZONE
-description: Indian Index Zone
+description: "Indian Index Zone"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INDIANINDEXZONE')/$value
-semantic_en: Indian Index Zone
+semantic_en: "Indian Index Zone"
 tags:
   - IS
   - component:IS-OIL-PRA

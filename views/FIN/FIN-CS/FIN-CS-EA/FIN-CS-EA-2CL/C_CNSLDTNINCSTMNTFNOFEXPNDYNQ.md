@@ -1,13 +1,13 @@
 ---
 name: C_CNSLDTNINCSTMNTFNOFEXPNDYNQ
-description: Function of Expense Temporary Node - Qry
+description: "Function of Expense Temporary Node - Qry"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNSLDTNINCSTMNTFNOFEXPNDYNQ')/$value
-semantic_en: Function of Expense Temporary Node - Qry
+semantic_en: "Function of Expense Temporary Node - Qry"
 tags:
   - FIN
   - bo:purchaseorder

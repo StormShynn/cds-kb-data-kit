@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGOBJECTCATEGORYTEXT
-description: Purchasingobjectcategorytext
+description: "Purchasingobjectcategorytext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

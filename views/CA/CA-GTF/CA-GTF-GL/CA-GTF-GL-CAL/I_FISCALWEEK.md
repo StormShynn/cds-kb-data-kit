@@ -1,6 +1,6 @@
 ---
 name: I_FISCALWEEK
-description: Fiscalweek
+description: "Fiscalweek"
 app_component: CA-GTF-GL-CAL
 software_component: SAP_BASIS
 release_state: released

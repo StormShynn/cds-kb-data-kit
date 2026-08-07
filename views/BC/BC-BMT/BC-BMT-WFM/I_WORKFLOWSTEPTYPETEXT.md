@@ -1,6 +1,6 @@
 ---
 name: I_WORKFLOWSTEPTYPETEXT
-description: Workflowsteptypetext
+description: "Workflowsteptypetext"
 app_component: BC-BMT-WFM
 software_component: SAP_BASIS
 release_state: released

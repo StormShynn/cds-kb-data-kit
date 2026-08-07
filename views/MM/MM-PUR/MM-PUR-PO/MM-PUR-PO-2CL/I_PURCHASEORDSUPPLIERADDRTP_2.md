@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDSUPPLIERADDRTP_2
-description: Purchaseordsupplieraddrtp 2
+description: "Purchaseordsupplieraddrtp 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDCONFLONGTEXTTP
-description: Maintordconflongtexttp
+description: "Maintordconflongtexttp"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

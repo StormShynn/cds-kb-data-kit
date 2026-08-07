@@ -1,6 +1,6 @@
 ---
 name: I_CEPUCOITMCMMDTYQTYTP_2
-description: Cepucoitmcmmdtyqtytp 2
+description: "Cepucoitmcmmdtyqtytp 2"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

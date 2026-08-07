@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDEXPENSETP
-description: Projectdemandexpensetp
+description: "Projectdemandexpensetp"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

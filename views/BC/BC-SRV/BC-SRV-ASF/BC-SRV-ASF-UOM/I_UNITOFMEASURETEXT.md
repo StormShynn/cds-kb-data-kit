@@ -1,6 +1,6 @@
 ---
 name: I_UNITOFMEASURETEXT
-description: Unit of MeasureTEXT
+description: "Unit of MeasureTEXT"
 app_component: BC-SRV-ASF-UOM
 software_component: SAP_BASIS
 release_state: released

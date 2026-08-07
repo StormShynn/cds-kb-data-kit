@@ -1,30 +1,30 @@
 ---
 name: I_ARUNANLYTSTOTDMNDCUBE
-description: Supply Assignment Total Demand - Cube
+description: "Supply Assignment Total Demand - Cube"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSTOTDMNDCUBE')/$value
-semantic_en: Supply Assignment Total Demand - Cube
-semantic_vi: Supply Assignment Total Demand - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocTotDmnd.
+semantic_en: "Supply Assignment Total Demand - Cube"
+semantic_vi: "Supply Assignment Total Demand - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocTotDmnd."
 keywords:
-  - supply
-  - assignment
-  - total
-  - demand
-  - cube
-  - requirement
-  - document
-  - number
-  - item
-  - prot
-  - time
-  - bucket
-  - requested
-  - date
-  - product
+  - "supply"
+  - "assignment"
+  - "total"
+  - "demand"
+  - "cube"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "prot"
+  - "time"
+  - "bucket"
+  - "requested"
+  - "date"
+  - "product"
 tags:
   - LO
   - component:LO-RFM-ARN

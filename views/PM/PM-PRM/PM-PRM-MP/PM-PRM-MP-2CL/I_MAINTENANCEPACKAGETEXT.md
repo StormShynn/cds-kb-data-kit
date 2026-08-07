@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEPACKAGETEXT
-description: Maintenancepackagetext
+description: "Maintenancepackagetext"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

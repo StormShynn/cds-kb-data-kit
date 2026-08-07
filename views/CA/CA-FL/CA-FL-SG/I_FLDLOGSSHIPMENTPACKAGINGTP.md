@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSSHIPMENTPACKAGINGTP
-description: Fldlogsshipmentpackagingtp
+description: "Fldlogsshipmentpackagingtp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

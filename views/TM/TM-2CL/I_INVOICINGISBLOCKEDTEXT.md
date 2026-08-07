@@ -1,13 +1,13 @@
 ---
 name: I_INVOICINGISBLOCKEDTEXT
-description: Indicator that Invoicing is Blocked - Text
+description: "Indicator that Invoicing is Blocked - Text"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INVOICINGISBLOCKEDTEXT')/$value
-semantic_en: Indicator that Invoicing is Blocked - Text
+semantic_en: "Indicator that Invoicing is Blocked - Text"
 tags:
   - TM
   - component:TM-2CL

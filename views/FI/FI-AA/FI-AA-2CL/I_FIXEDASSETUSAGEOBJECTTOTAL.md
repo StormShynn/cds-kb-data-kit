@@ -1,6 +1,6 @@
 ---
 name: I_FIXEDASSETUSAGEOBJECTTOTAL
-description: Fixed AssetUSAGEOBJECTTOTAL
+description: "Fixed AssetUSAGEOBJECTTOTAL"
 app_component: FI-AA-2CL
 software_component: SAPSCORE
 release_state: released

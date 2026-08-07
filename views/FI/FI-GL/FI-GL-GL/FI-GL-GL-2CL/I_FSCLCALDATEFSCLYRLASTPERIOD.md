@@ -1,13 +1,13 @@
 ---
 name: I_FSCLCALDATEFSCLYRLASTPERIOD
-description: This CDS view provides the prerequisites for answering the following business question: What is the last fiscal period of the fiscal year on a key date for a company code and ledger? This CDS view can be used as a derivation entity.
+description: "This CDS view provides the prerequisites for answering the following business question: What is the last fiscal period of the fiscal year on a key date for a company code and ledger? This CDS view can be used as a derivation entity."
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FSCLCALDATEFSCLYRLASTPERIOD')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What is the last fiscal period of the fiscal year on a key date for a company code and ledger? This CDS view can be used as a derivation entity.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is the last fiscal period of the fiscal year on a key date for a company code and ledger? This CDS view can be used as a derivation entity."
 tags:
   - FI
   - bo:companycode

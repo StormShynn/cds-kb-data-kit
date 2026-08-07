@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERITEMSTDVH
-description: Sales OrderITEMSTDVH
+description: "Sales OrderITEMSTDVH"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

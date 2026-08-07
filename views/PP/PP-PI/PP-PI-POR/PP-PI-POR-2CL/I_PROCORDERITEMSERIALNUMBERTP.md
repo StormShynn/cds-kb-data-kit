@@ -1,6 +1,6 @@
 ---
 name: I_PROCORDERITEMSERIALNUMBERTP
-description: PROCORDERITEMSerial NumberTP
+description: "PROCORDERITEMSerial NumberTP"
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

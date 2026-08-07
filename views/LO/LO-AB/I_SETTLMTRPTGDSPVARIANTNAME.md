@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTRPTGDSPVARIANTNAME
-description: Reporting Display Variant - Text
+description: "Reporting Display Variant - Text"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTRPTGDSPVARIANTNAME')/$value
-semantic_en: Reporting Display Variant - Text
+semantic_en: "Reporting Display Variant - Text"
 tags:
   - LO
   - bo:purchaseorder

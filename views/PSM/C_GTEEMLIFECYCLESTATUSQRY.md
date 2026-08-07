@@ -1,13 +1,13 @@
 ---
 name: C_GTEEMLIFECYCLESTATUSQRY
-description: Grant Life Cycle Status Changes - Query
+description: "Grant Life Cycle Status Changes - Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GTEEMLIFECYCLESTATUSQRY')/$value
-semantic_en: Grant Life Cycle Status Changes - Query
+semantic_en: "Grant Life Cycle Status Changes - Query"
 tags:
   - PSM
   - component:PSM

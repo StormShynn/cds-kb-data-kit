@@ -1,6 +1,6 @@
 ---
 name: V_MMIM_DDL_OM_OR_GR4PO_EMAIL
-description: V Mmim Ddl OM OR GR 4PO Email
+description: "V Mmim Ddl OM OR GR 4PO Email"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

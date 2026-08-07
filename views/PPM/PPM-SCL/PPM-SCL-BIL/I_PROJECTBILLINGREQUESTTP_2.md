@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTBILLINGREQUESTTP_2
-description: Projectbillingrequesttp 2
+description: "Projectbillingrequesttp 2"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

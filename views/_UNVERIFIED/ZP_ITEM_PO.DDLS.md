@@ -1,22 +1,22 @@
 ---
 name: ZP_ITEM_PO.DDLS
-description: projection view for item po
+description: "projection view for item po"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Praveen2987/RAP/blob/83651614e4ba30c672618ac888e52d60b639bccf/src/zp_item_po.ddls.asddls
-semantic_en: projection view for item po — CDS view.
-semantic_vi: projection view for item po — CDS view dựa trên projection view for item po.
+semantic_en: "projection view for item po — CDS view."
+semantic_vi: "projection view for item po — CDS view dựa trên projection view for item po."
 keywords:
-  - projection
-  - for
-  - item
-  - pono
-  - poitem
-  - quantity
-  - unit
+  - "projection"
+  - "for"
+  - "item"
+  - "pono"
+  - "poitem"
+  - "quantity"
+  - "unit"
 tags:
   - bo:project
   - project

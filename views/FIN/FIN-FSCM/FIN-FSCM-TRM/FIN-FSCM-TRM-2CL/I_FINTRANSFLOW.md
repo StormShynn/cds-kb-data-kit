@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSFLOW
-description: This CDS view shows the cash flow of the current activity of financial transactions, including detailed information about dates, amounts, and payments. This CDS view provides the prerequisites for answering the following business questions: What is the cash flow of the current activity of a financial transaction? With which payment request is the flow paid?
+description: "This CDS view shows the cash flow of the current activity of financial transactions, including detailed information about dates, amounts, and payments. This CDS view provides the prerequisites for answering the following business questions: What is the cash flow of the current activity of a financial transaction? With which payment request is the flow paid?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSFLOW')/$value
-semantic_en: This CDS view shows the cash flow of the current activity of financial transactions, including detailed information about dates, amounts, and payments. This CDS view provides the prerequisites for answering the following business questions: What is the cash flow of the current activity of a financial transaction? With which payment request is the flow paid?
+semantic_en: "This CDS view shows the cash flow of the current activity of financial transactions, including detailed information about dates, amounts, and payments. This CDS view provides the prerequisites for answering the following business questions: What is the cash flow of the current activity of a financial transaction? With which payment request is the flow paid?"
 tags:
   - FIN
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_SCHDAGRSCHDLNENHCDAPI01
-description: Schdagrschdlnenhcdapi 01
+description: "Schdagrschdlnenhcdapi 01"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

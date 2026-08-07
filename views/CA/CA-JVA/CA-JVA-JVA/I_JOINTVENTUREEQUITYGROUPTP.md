@@ -1,6 +1,6 @@
 ---
 name: I_JOINTVENTUREEQUITYGROUPTP
-description: Jointventureequitygrouptp
+description: "Jointventureequitygrouptp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

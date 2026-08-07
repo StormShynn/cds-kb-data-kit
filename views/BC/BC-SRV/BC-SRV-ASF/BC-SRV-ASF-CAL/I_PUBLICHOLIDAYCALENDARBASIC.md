@@ -1,6 +1,6 @@
 ---
 name: I_PUBLICHOLIDAYCALENDARBASIC
-description: Publicholidaycalendarbasic
+description: "Publicholidaycalendarbasic"
 app_component: BC-SRV-ASF-CAL
 software_component: SAP_BASIS
 release_state: released

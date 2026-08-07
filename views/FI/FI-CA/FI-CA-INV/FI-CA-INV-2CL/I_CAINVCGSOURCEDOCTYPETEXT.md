@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGSOURCEDOCTYPETEXT
-description: Cainvcgsourcedoctypetext
+description: "Cainvcgsourcedoctypetext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

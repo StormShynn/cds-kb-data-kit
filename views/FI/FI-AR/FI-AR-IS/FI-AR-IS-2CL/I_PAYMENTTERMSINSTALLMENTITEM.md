@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTTERMSINSTALLMENTITEM
-description: Paymenttermsinstallmentitem
+description: "Paymenttermsinstallmentitem"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

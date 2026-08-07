@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPCHARGECALCBASE
-description: Transpchargecalcbase
+description: "Transpchargecalcbase"
 app_component: TM-CF-CC-2CL
 software_component: SAPSCORE
 release_state: released

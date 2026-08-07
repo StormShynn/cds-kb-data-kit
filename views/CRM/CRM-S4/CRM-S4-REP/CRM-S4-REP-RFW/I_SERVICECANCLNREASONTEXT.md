@@ -1,6 +1,6 @@
 ---
 name: I_SERVICECANCLNREASONTEXT
-description: Servicecanclnreasontext
+description: "Servicecanclnreasontext"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

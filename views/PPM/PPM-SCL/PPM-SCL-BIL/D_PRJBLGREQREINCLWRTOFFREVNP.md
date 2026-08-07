@@ -1,6 +1,6 @@
 ---
 name: D_PRJBLGREQREINCLWRTOFFREVNP
-description: D Prjblgreqreinclwrtoffrevnp
+description: "D Prjblgreqreinclwrtoffrevnp"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

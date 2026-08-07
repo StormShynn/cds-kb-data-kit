@@ -1,13 +1,13 @@
 ---
 name: I_CREDITRISKCLASSVALUEHELP
-description: Credit Risk Class
+description: "Credit Risk Class"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITRISKCLASSVALUEHELP')/$value
-semantic_en: Credit Risk Class
+semantic_en: "Credit Risk Class"
 tags:
   - FIN
   - component:FIN-FSCM-CR-2CL

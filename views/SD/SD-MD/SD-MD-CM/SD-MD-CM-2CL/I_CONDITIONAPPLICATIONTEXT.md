@@ -1,6 +1,6 @@
 ---
 name: I_CONDITIONAPPLICATIONTEXT
-description: Conditionapplicationtext
+description: "Conditionapplicationtext"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

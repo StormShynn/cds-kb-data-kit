@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTHEADERNOTESTP_2
-description: Schedgagrmtheadernotestp 2
+description: "Schedgagrmtheadernotestp 2"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

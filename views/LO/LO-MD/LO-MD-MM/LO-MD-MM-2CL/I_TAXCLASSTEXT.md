@@ -1,6 +1,6 @@
 ---
 name: I_TAXCLASSTEXT
-description: Taxclasstext
+description: "Taxclasstext"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

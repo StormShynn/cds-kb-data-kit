@@ -1,13 +1,13 @@
 ---
 name: I_PRAACCOUNTINGDOCSTATUST
-description: Production Revenue Accounting Accounting Document Status - Text
+description: "Production Revenue Accounting Accounting Document Status - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAACCOUNTINGDOCSTATUST')/$value
-semantic_en: Production Revenue Accounting Accounting Document Status - Text
+semantic_en: "Production Revenue Accounting Accounting Document Status - Text"
 tags:
   - IS
   - account

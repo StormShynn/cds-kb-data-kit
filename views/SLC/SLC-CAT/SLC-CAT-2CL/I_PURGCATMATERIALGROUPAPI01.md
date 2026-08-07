@@ -1,6 +1,6 @@
 ---
 name: I_PURGCATMATERIALGROUPAPI01
-description: PURGCATMaterial GroupAPI 01
+description: "PURGCATMaterial GroupAPI 01"
 app_component: SLC-CAT-2CL
 software_component: SAPSCORE
 release_state: released

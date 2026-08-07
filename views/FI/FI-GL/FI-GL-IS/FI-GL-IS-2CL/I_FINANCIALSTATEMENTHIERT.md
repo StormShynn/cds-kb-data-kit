@@ -1,6 +1,6 @@
 ---
 name: I_FINANCIALSTATEMENTHIERT
-description: Financialstatementhiert
+description: "Financialstatementhiert"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BOMVARIANTUSAGE
-description: Bomvariantusage
+description: "Bomvariantusage"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

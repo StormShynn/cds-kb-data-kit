@@ -1,13 +1,13 @@
 ---
 name: I_INTRASTATPRVDROFINFOPLANT
-description: Plants
+description: "Plants"
 app_component: FT-ITR-ISR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTRASTATPRVDROFINFOPLANT')/$value
-semantic_en: Plants
+semantic_en: "Plants"
 tags:
   - FT
   - bo:companycode

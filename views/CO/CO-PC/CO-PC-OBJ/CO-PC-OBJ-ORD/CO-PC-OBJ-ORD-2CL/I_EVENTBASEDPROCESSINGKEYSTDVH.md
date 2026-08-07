@@ -1,6 +1,6 @@
 ---
 name: I_EVENTBASEDPROCESSINGKEYSTDVH
-description: Eventbasedprocessingkeystdvh
+description: "Eventbasedprocessingkeystdvh"
 app_component: CO-PC-OBJ-ORD-2CL
 software_component: SAPSCORE
 release_state: released

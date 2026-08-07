@@ -1,13 +1,13 @@
 ---
 name: I_SOLVEDDSPUTCASESTSDURNC
-description: Solved Dispute Status Duration - Cube
+description: "Solved Dispute Status Duration - Cube"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SOLVEDDSPUTCASESTSDURNC')/$value
-semantic_en: Solved Dispute Status Duration - Cube
+semantic_en: "Solved Dispute Status Duration - Cube"
 tags:
   - FIN
   - bo:salesorder

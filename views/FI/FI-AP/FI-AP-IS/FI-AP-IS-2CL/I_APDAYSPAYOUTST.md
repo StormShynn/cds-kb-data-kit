@@ -1,25 +1,25 @@
 ---
 name: I_APDAYSPAYOUTST
-description: This CDS view provides you with an insight into the average collection period of your company. It shows the number of days it takes, on average, for your company to collect payables. The result aggregates the payables amount per account (that is, per company code or supplier) and per month. This CDS view provides the prerequisites for answering the following business questions: How long does it take to collect payables?
+description: "This CDS view provides you with an insight into the average collection period of your company. It shows the number of days it takes, on average, for your company to collect payables. The result aggregates the payables amount per account (that is, per company code or supplier) and per month. This CDS view provides the prerequisites for answering the following business questions: How long does it take to collect payables?"
 app_component: FI-AP-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APDAYSPAYOUTST')/$value
-semantic_en: This CDS view provides you with an insight into the average collection period of your company. It shows the number of days it takes, on average, for your company to collect payables. The result aggregates the payables amount per account (that is, per company code or supplier) and per month. This CDS view provides the prerequisites for answering the following business questions: How long does it take to collect payables?
-semantic_vi: Days Payable Outstanding — CDS view giao diện dựa trên P_APDaysPayOutst6.
+semantic_en: "This CDS view provides you with an insight into the average collection period of your company. It shows the number of days it takes, on average, for your company to collect payables. The result aggregates the payables amount per account (that is, per company code or supplier) and per month. This CDS view provides the prerequisites for answering the following business questions: How long does it take to collect payables?"
+semantic_vi: "Days Payable Outstanding — CDS view giao diện dựa trên P_APDaysPayOutst6."
 keywords:
-  - days
-  - payable
-  - outstanding
-  - company
-  - code
-  - supplier
-  - year
-  - month
-  - country
-  - region
+  - "days"
+  - "payable"
+  - "outstanding"
+  - "company"
+  - "code"
+  - "supplier"
+  - "year"
+  - "month"
+  - "country"
+  - "region"
 tags:
   - FI
   - account

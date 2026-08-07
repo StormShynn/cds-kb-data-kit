@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMFIELDCODELISTVALUE
-description: Customfieldcodelistvalue
+description: "Customfieldcodelistvalue"
 app_component: BC-SRV-APS-EXT-FLD
 software_component: SAP_BASIS
 release_state: released

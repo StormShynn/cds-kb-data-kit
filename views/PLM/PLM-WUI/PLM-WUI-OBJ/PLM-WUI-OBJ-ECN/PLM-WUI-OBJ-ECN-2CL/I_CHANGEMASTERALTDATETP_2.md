@@ -1,6 +1,6 @@
 ---
 name: I_CHANGEMASTERALTDATETP_2
-description: Change MasterERALTDATETP 2
+description: "Change MasterERALTDATETP 2"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_GLACCOUNTHIERNODEBYSEMTAG
-description: G/L Account HierNode By Semantic Tag
+description: "G/L Account HierNode By Semantic Tag"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTHIERNODEBYSEMTAG')/$value
-semantic_en: G/L Account HierNode By Semantic Tag
+semantic_en: "G/L Account HierNode By Semantic Tag"
 tags:
   - FI
   - account

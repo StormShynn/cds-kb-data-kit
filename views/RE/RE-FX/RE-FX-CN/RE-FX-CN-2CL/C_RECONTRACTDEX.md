@@ -1,15 +1,15 @@
 ---
 name: C_RECONTRACTDEX
-description: Extraction for REContract
+description: "Extraction for REContract"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTDEX')/$value
-semantic_en: Extraction for REContract
+semantic_en: "Extraction for REContract"
 keywords:
-  - Extraction for REContract
+  - "Extraction for REContract"
 tags:
   - RE
   - component:RE-FX-CN-2CL

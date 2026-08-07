@@ -1,6 +1,6 @@
 ---
 name: I_BPRATINGPROCEDUREGRADE
-description: Bpratingproceduregrade
+description: "Bpratingproceduregrade"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

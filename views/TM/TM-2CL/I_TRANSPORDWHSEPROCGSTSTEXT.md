@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDWHSEPROCGSTSTEXT
-description: Transpordwhseprocgststext
+description: "Transpordwhseprocgststext"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

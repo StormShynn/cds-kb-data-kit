@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMPROCESSINGSTSTEXT
-description: Wrntyclaimprocessingststext
+description: "Wrntyclaimprocessingststext"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

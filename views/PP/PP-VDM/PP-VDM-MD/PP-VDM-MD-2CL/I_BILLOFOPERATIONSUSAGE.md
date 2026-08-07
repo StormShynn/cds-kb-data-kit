@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFOPERATIONSUSAGE
-description: Billofoperationsusage
+description: "Billofoperationsusage"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

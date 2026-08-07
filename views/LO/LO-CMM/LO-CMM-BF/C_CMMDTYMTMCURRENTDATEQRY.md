@@ -1,29 +1,29 @@
 ---
 name: C_CMMDTYMTMCURRENTDATEQRY
-description: MtM Current Values Query
+description: "MtM Current Values Query"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMCURRENTDATEQRY')/$value
-semantic_en: MtM Current Values Query
-semantic_vi: MtM Current Values Query — CDS view tiêu dùng dựa trên I_CmmdtyMTMLogFinValCube.
+semantic_en: "MtM Current Values Query"
+semantic_vi: "MtM Current Values Query — CDS view tiêu dùng dựa trên I_CmmdtyMTMLogFinValCube."
 keywords:
-  - mtm
-  - current
-  - values
-  - query
-  - pricing
-  - version
-  - document
-  - item
-  - vers
-  - stock
-  - record
-  - commodity
-  - price
-  - exposure
+  - "mtm"
+  - "current"
+  - "values"
+  - "query"
+  - "pricing"
+  - "version"
+  - "document"
+  - "item"
+  - "vers"
+  - "stock"
+  - "record"
+  - "commodity"
+  - "price"
+  - "exposure"
 tags:
   - LO
   - component:LO-CMM-BF

@@ -1,13 +1,13 @@
 ---
 name: I_CAPACITYBASIC
-description: Enterprise Resource Capacity
+description: "Enterprise Resource Capacity"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value
-semantic_en: Enterprise Resource Capacity
+semantic_en: "Enterprise Resource Capacity"
 tags:
   - PP
   - bo:salesorder

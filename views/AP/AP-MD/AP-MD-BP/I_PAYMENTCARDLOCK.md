@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTCARDLOCK
-description: Paymentcardlock
+description: "Paymentcardlock"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

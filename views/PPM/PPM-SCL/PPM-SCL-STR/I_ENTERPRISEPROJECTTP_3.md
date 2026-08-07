@@ -1,6 +1,6 @@
 ---
 name: I_ENTERPRISEPROJECTTP_3
-description: Enterpriseprojecttp 3
+description: "Enterpriseprojecttp 3"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

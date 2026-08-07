@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFTBLVALASSGMTALTVTP
-description: Varcnftblvalassgmtaltvtp
+description: "Varcnftblvalassgmtaltvtp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

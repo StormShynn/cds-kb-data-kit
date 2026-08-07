@@ -1,6 +1,6 @@
 ---
 name: I_FISCALYEARFORLEDGER
-description: Fiscalyearforledger
+description: "Fiscalyearforledger"
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released

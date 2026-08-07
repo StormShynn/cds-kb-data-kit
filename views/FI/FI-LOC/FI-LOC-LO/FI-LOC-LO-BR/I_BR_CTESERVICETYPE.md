@@ -1,6 +1,6 @@
 ---
 name: I_BR_CTESERVICETYPE
-description: BR Cteservicetype
+description: "BR Cteservicetype"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLPURCHASECONFSTATUS
-description: Overallpurchaseconfstatus
+description: "Overallpurchaseconfstatus"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

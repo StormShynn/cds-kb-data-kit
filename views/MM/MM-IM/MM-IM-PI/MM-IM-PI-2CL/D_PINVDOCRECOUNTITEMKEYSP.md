@@ -1,6 +1,6 @@
 ---
 name: D_PINVDOCRECOUNTITEMKEYSP
-description: D Pinvdocrecountitemkeysp
+description: "D Pinvdocrecountitemkeysp"
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

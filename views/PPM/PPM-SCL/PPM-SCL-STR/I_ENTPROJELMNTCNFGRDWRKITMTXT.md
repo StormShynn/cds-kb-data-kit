@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJELMNTCNFGRDWRKITMTXT
-description: Entprojelmntcnfgrdwrkitmtxt
+description: "Entprojelmntcnfgrdwrkitmtxt"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

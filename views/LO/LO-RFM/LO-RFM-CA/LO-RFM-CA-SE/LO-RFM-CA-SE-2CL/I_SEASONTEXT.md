@@ -1,13 +1,13 @@
 ---
 name: I_SEASONTEXT
-description: Season - Text
+description: "Season - Text"
 app_component: LO-RFM-CA-SE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONTEXT')/$value
-semantic_en: Season - Text
+semantic_en: "Season - Text"
 tags:
   - LO
   - bo:salesorder

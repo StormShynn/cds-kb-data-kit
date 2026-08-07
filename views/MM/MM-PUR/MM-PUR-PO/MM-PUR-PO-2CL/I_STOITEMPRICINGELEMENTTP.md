@@ -1,6 +1,6 @@
 ---
 name: I_STOITEMPRICINGELEMENTTP
-description: Stoitempricingelementtp
+description: "Stoitempricingelementtp"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

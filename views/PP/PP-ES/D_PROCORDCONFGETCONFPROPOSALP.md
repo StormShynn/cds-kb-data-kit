@@ -1,6 +1,6 @@
 ---
 name: D_PROCORDCONFGETCONFPROPOSALP
-description: D Procordconfgetconfproposalp
+description: "D Procordconfgetconfproposalp"
 app_component: PP-ES
 software_component: SAPSCORE
 release_state: released

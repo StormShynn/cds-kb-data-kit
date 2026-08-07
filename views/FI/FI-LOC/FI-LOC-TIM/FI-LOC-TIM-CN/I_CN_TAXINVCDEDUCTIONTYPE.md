@@ -1,6 +1,6 @@
 ---
 name: I_CN_TAXINVCDEDUCTIONTYPE
-description: CN Taxinvcdeductiontype
+description: "CN Taxinvcdeductiontype"
 app_component: FI-LOC-TIM-CN
 software_component: SAPSCORE
 release_state: released

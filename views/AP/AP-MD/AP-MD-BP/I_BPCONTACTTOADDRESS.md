@@ -1,6 +1,6 @@
 ---
 name: I_BPCONTACTTOADDRESS
-description: Bpcontacttoaddress
+description: "Bpcontacttoaddress"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

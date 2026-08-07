@@ -1,6 +1,6 @@
 ---
 name: D_RFQCREATEFROMPURREQNP
-description: D Rfqcreatefrompurreqnp
+description: "D Rfqcreatefrompurreqnp"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

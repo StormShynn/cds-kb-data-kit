@@ -1,28 +1,28 @@
 ---
 name: C_PROFITCENTERSEMANTICTAG
-description: Profit Center with Semantic Tag Query
+description: "Profit Center with Semantic Tag Query"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROFITCENTERSEMANTICTAG')/$value
-semantic_en: Profit Center with Semantic Tag Query
-semantic_vi: Profit Center with Semantic Tag Query — CDS view tiêu dùng dựa trên I_ActlPlnLineItemSemTagGLAcct.
+semantic_en: "Profit Center with Semantic Tag Query"
+semantic_vi: "Profit Center with Semantic Tag Query — CDS view tiêu dùng dựa trên I_ActlPlnLineItemSemTagGLAcct."
 keywords:
-  - profit
-  - center
-  - with
-  - semantic
-  - tag
-  - query
-  - planning
-  - category
-  - company
-  - code
-  - fiscal
-  - year
-  - period
+  - "profit"
+  - "center"
+  - "with"
+  - "semantic"
+  - "tag"
+  - "query"
+  - "planning"
+  - "category"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - FI
   - bo:companycode

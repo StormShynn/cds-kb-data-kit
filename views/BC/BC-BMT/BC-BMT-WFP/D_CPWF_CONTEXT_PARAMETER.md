@@ -1,6 +1,6 @@
 ---
 name: D_CPWF_CONTEXT_PARAMETER
-description: D Cpwf Context Parameter
+description: "D Cpwf Context Parameter"
 app_component: BC-BMT-WFP
 software_component: SAP_BASIS
 release_state: released

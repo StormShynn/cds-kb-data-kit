@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRINVCITMACCTASSGMTAPI01
-description: Suplrinvcitmacctassgmtapi 01
+description: "Suplrinvcitmacctassgmtapi 01"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

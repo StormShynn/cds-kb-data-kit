@@ -1,13 +1,13 @@
 ---
 name: I_COMMLPROJMGMTPLNGCAT
-description: Commercial Project Management Planning Category
+description: "Commercial Project Management Planning Category"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMMLPROJMGMTPLNGCAT')/$value
-semantic_en: Commercial Project Management Planning Category
+semantic_en: "Commercial Project Management Planning Category"
 tags:
   - FI
   - bo:project

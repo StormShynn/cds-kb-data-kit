@@ -1,6 +1,6 @@
 ---
 name: I_BPDATACONTROLLERTP_3
-description: Bpdatacontrollertp 3
+description: "Bpdatacontrollertp 3"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CALENDARMONTHTEXT
-description: Calendarmonthtext
+description: "Calendarmonthtext"
 app_component: CA-GTF-DF
 software_component: SAP_BASIS
 release_state: released

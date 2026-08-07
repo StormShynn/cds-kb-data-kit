@@ -1,13 +1,13 @@
 ---
 name: I_BUSPARTIDENTIFICATIONTYPET_2
-description: Business Partner Identification Type Text
+description: "Business Partner Identification Type Text"
 app_component: AP-MD-BP-RAP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSPARTIDENTIFICATIONTYPET_2')/$value
-semantic_en: Business Partner Identification Type Text
+semantic_en: "Business Partner Identification Type Text"
 tags:
   - AP
   - AP-MD

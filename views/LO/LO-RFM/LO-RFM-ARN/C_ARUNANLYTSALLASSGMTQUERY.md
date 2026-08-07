@@ -1,25 +1,25 @@
 ---
 name: C_ARUNANLYTSALLASSGMTQUERY
-description: Demand and Assignments
+description: "Demand and Assignments"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSALLASSGMTQUERY')/$value
-semantic_en: Demand and Assignments
-semantic_vi: Demand and Assignments — CDS view tiêu dùng dựa trên I_ARunAnlytsAllAssgmtQuery.
+semantic_en: "Demand and Assignments"
+semantic_vi: "Demand and Assignments — CDS view tiêu dùng dựa trên I_ARunAnlytsAllAssgmtQuery."
 keywords:
-  - demand
-  - and
-  - assignments
-  - plant
-  - product
-  - storage
-  - location
-  - batch
-  - requirement
-  - type
+  - "demand"
+  - "and"
+  - "assignments"
+  - "plant"
+  - "product"
+  - "storage"
+  - "location"
+  - "batch"
+  - "requirement"
+  - "type"
 tags:
   - LO
   - component:LO-RFM-ARN

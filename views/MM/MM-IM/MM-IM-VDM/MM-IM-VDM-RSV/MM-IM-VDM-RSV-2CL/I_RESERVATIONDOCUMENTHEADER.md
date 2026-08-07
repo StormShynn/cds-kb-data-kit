@@ -1,6 +1,6 @@
 ---
 name: I_RESERVATIONDOCUMENTHEADER
-description: Reservationdocumentheader
+description: "Reservationdocumentheader"
 app_component: MM-IM-VDM-RSV-2CL
 software_component: SAPSCORE
 release_state: released

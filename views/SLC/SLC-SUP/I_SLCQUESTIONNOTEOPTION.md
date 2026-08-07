@@ -1,6 +1,6 @@
 ---
 name: I_SLCQUESTIONNOTEOPTION
-description: Slcquestionnoteoption
+description: "Slcquestionnoteoption"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

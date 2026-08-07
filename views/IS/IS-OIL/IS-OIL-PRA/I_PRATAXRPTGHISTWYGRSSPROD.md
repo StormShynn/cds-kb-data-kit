@@ -1,13 +1,13 @@
 ---
 name: I_PRATAXRPTGHISTWYGRSSPROD
-description: Production Revenue Accounting Tax Reporting History WY Gross Product Tax
+description: "Production Revenue Accounting Tax Reporting History WY Gross Product Tax"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXRPTGHISTWYGRSSPROD')/$value
-semantic_en: Production Revenue Accounting Tax Reporting History WY Gross Product Tax
+semantic_en: "Production Revenue Accounting Tax Reporting History WY Gross Product Tax"
 tags:
   - IS
   - account

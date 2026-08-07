@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCSQNCCSTRTTP_2
-description: Prodallocsqnccstrttp 2
+description: "Prodallocsqnccstrttp 2"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

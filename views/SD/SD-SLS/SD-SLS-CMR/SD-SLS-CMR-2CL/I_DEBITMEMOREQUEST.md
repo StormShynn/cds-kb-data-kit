@@ -1,6 +1,6 @@
 ---
 name: I_DEBITMEMOREQUEST
-description: Debitmemorequest
+description: "Debitmemorequest"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

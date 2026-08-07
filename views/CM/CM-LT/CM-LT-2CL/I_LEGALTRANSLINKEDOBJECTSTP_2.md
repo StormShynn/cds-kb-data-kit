@@ -1,6 +1,6 @@
 ---
 name: I_LEGALTRANSLINKEDOBJECTSTP_2
-description: Legaltranslinkedobjectstp 2
+description: "Legaltranslinkedobjectstp 2"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

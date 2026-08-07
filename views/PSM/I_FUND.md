@@ -1,15 +1,15 @@
 ---
 name: I_FUND
-description: This CDS view provides the master data for a fund, which can be used to answer the following business questions: What is the fund type? What is the frequency of fund?
+description: "This CDS view provides the master data for a fund, which can be used to answer the following business questions: What is the fund type? What is the frequency of fund?"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUND')/$value
-semantic_en: This CDS view provides the master data for a fund, which can be used to answer the following business questions: What is the fund type? What is the frequency of fund?
+semantic_en: "This CDS view provides the master data for a fund, which can be used to answer the following business questions: What is the fund type? What is the frequency of fund?"
 keywords:
-  - Fund
+  - "Fund"
 tags:
   - PSM
   - bo:businesspartner

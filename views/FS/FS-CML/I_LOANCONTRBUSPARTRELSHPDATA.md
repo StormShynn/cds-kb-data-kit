@@ -1,13 +1,13 @@
 ---
 name: I_LOANCONTRBUSPARTRELSHPDATA
-description: Business Partner relationship data for Loan Contract
+description: "Business Partner relationship data for Loan Contract"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRBUSPARTRELSHPDATA')/$value
-semantic_en: Business Partner relationship data for Loan Contract
+semantic_en: "Business Partner relationship data for Loan Contract"
 tags:
   - FS
   - component:FS-CML

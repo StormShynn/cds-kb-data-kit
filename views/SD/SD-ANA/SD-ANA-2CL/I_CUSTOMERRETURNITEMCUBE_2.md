@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERRETURNITEMCUBE_2
-description: Customerreturnitemcube 2
+description: "Customerreturnitemcube 2"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

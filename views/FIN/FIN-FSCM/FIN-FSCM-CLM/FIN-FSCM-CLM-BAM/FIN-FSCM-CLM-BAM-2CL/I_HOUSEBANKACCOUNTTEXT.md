@@ -1,6 +1,6 @@
 ---
 name: I_HOUSEBANKACCOUNTTEXT
-description: Housebankaccounttext
+description: "Housebankaccounttext"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released

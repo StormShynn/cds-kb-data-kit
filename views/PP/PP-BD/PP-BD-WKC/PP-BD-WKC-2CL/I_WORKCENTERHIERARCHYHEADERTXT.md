@@ -1,13 +1,13 @@
 ---
 name: I_WORKCENTERHIERARCHYHEADERTXT
-description: Work Center Hierarchy Header - Text
+description: "Work Center Hierarchy Header - Text"
 app_component: PP-BD-WKC-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKCENTERHIERARCHYHEADERTXT')/$value
-semantic_en: Work Center Hierarchy Header - Text
+semantic_en: "Work Center Hierarchy Header - Text"
 tags:
   - PP
   - component:PP-BD-WKC-2CL

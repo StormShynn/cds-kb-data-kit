@@ -1,6 +1,6 @@
 ---
 name: I_TECHOBJISEQUIPORFUNCNLLOCT
-description: Techobjisequiporfuncnlloct
+description: "Techobjisequiporfuncnlloct"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

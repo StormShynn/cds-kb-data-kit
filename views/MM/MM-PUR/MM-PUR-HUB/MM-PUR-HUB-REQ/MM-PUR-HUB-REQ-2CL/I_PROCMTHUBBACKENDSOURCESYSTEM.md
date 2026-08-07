@@ -1,6 +1,6 @@
 ---
 name: I_PROCMTHUBBACKENDSOURCESYSTEM
-description: Procmthubbackendsourcesystem
+description: "Procmthubbackendsourcesystem"
 app_component: MM-PUR-HUB-REQ-2CL
 software_component: SAPSCORE
 release_state: released

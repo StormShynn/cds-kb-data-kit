@@ -1,29 +1,29 @@
 ---
 name: C_ARUNANLYTSSALESRETURNS
-description: Return Sales Orders
+description: "Return Sales Orders"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSALESRETURNS')/$value
-semantic_en: Return Sales Orders
-semantic_vi: Return Sales Orders — CDS view tiêu dùng dựa trên I_ARunAnlytsSalesReturns.
+semantic_en: "Return Sales Orders"
+semantic_vi: "Return Sales Orders — CDS view tiêu dùng dựa trên I_ARunAnlytsSalesReturns."
 keywords:
-  - return
-  - sales
-  - orders
-  - requirement
-  - document
-  - number
-  - item
-  - supply
-  - schedule
-  - line
-  - assigned
-  - type
-  - assgmt
-  - source
+  - "return"
+  - "sales"
+  - "orders"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "supply"
+  - "schedule"
+  - "line"
+  - "assigned"
+  - "type"
+  - "assgmt"
+  - "source"
 tags:
   - LO
   - component:LO-RFM-ARN

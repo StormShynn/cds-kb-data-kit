@@ -1,21 +1,21 @@
 ---
 name: ZDD_ITEMS.DDLS
-description: Posiciones
+description: "Posiciones"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Herygzz/ABAP-CDS/blob/9b5ab06b27a3d147162849984bfaec2912960305/src/zdd_items.ddls.asddls
-semantic_en: Posiciones — CDS view based on zta_vbap.
-semantic_vi: Posiciones — CDS view dựa trên zta_vbap.
+semantic_en: "Posiciones — CDS view based on zta_vbap."
+semantic_vi: "Posiciones — CDS view dựa trên zta_vbap."
 keywords:
-  - posiciones
-  - vbeln
-  - posnr
-  - matnr
-  - arktx
-  - meins
+  - "posiciones"
+  - "vbeln"
+  - "posnr"
+  - "matnr"
+  - "arktx"
+  - "meins"
 tags:
   - AP
   - bo:purchaseorder

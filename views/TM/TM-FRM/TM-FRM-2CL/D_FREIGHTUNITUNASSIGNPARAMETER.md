@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTUNITUNASSIGNPARAMETER
-description: D Freightunitunassignparameter
+description: "D Freightunitunassignparameter"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

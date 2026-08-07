@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECFNDSMBDGTACTLQRY1
-description: Fund Budget Cmtmt and Actuals - Query
+description: "Fund Budget Cmtmt and Actuals - Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECFNDSMBDGTACTLQRY1')/$value
-semantic_en: Fund Budget Cmtmt and Actuals - Query
+semantic_en: "Fund Budget Cmtmt and Actuals - Query"
 tags:
   - PSM
   - budget

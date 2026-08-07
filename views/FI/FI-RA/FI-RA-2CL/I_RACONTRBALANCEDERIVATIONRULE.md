@@ -1,6 +1,6 @@
 ---
 name: I_RACONTRBALANCEDERIVATIONRULE
-description: Racontrbalancederivationrule
+description: "Racontrbalancederivationrule"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_BOMDELCHANGENOOUTPARAMETER
-description: D Bomdelchangenooutparameter
+description: "D Bomdelchangenooutparameter"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

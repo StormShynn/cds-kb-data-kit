@@ -1,6 +1,6 @@
 ---
 name: F_LDGRCOCODEFSCLYRVARIANT
-description: Ldgrcocodefsclyrvariant
+description: "Ldgrcocodefsclyrvariant"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

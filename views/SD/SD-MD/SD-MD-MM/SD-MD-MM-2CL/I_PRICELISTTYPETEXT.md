@@ -1,6 +1,6 @@
 ---
 name: I_PRICELISTTYPETEXT
-description: Pricelisttypetext
+description: "Pricelisttypetext"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

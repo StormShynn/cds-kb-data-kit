@@ -1,13 +1,13 @@
 ---
 name: I_RECEIVABLEDATA
-description: Receivable Details
+description: "Receivable Details"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RECEIVABLEDATA')/$value
-semantic_en: Receivable Details
+semantic_en: "Receivable Details"
 tags:
   - FS
   - component:FS-CMS

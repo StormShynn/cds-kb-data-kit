@@ -1,6 +1,6 @@
 ---
 name: I_BPTXCMPLNCAGRMTSTATUSTEXT
-description: Bptxcmplncagrmtstatustext
+description: "Bptxcmplncagrmtstatustext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALSTOCKTIMESERIES
-description: Material StockTIMESERIES
+description: "Material StockTIMESERIES"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

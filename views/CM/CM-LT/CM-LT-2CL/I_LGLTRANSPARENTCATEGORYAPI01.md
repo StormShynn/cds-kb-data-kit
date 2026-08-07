@@ -1,6 +1,6 @@
 ---
 name: I_LGLTRANSPARENTCATEGORYAPI01
-description: Lgltransparentcategoryapi 01
+description: "Lgltransparentcategoryapi 01"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

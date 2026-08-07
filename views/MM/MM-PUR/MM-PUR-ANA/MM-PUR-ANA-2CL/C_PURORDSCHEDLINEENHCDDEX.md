@@ -1,6 +1,6 @@
 ---
 name: C_PURORDSCHEDLINEENHCDDEX
-description: Purordschedlineenhcddex
+description: "Purordschedlineenhcddex"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDSTGEINVCGCARRLVLT
-description: Transpordstgeinvcgcarrlvlt
+description: "Transpordstgeinvcgcarrlvlt"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

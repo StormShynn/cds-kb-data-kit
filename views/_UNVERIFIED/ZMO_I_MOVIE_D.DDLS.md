@@ -1,23 +1,23 @@
 ---
 name: ZMO_I_MOVIE_D.DDLS
-description: Draft Movie View
+description: "Draft Movie View"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/soschlegel/MovieDemo/blob/097fe3f147dfce6ada78ff6c5e2ae281cea2f9c0/src/zmo_i_movie_d.ddls.asddls
-semantic_en: Draft Movie View — CDS view based on zmo_a_movie.
-semantic_vi: Draft Movie View — CDS view dựa trên zmo_a_movie.
+semantic_en: "Draft Movie View — CDS view based on zmo_a_movie."
+semantic_vi: "Draft Movie View — CDS view dựa trên zmo_a_movie."
 keywords:
-  - draft
-  - movie
-  - guid
-  - title
-  - release
-  - year
-  - director
-  - genre
+  - "draft"
+  - "movie"
+  - "guid"
+  - "title"
+  - "release"
+  - "year"
+  - "director"
+  - "genre"
 tags:
   - FT
   - component:FT

@@ -1,6 +1,6 @@
 ---
 name: D_PURGINFORECDORGPLNTDATACRTD
-description: D Purginforecdorgplntdatacrtd
+description: "D Purginforecdorgplntdatacrtd"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

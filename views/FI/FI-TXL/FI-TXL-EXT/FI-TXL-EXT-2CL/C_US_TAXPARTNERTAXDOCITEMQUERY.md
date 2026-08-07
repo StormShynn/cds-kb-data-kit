@@ -1,29 +1,29 @@
 ---
 name: C_US_TAXPARTNERTAXDOCITEMQUERY
-description: This CDS view is an analytical query view and contains tax items for the US for parameter P_Language. This CDS view provides the data to answer the following business questions: Which tax items can be used to calculate the tax amount in transaction currency, the tax amount in company code currency, and the tax exemption amount in the US tax partner cube? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is an analytical query view and contains tax items for the US for parameter P_Language. This CDS view provides the data to answer the following business questions: Which tax items can be used to calculate the tax amount in transaction currency, the tax amount in company code currency, and the tax exemption amount in the US tax partner cube? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-TXL-EXT-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_US_TAXPARTNERTAXDOCITEMQUERY')/$value
-semantic_en: This CDS view is an analytical query view and contains tax items for the US for parameter P_Language. This CDS view provides the data to answer the following business questions: Which tax items can be used to calculate the tax amount in transaction currency, the tax amount in company code currency, and the tax exemption amount in the US tax partner cube? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Analytical Query for US Tax Items — CDS view tiêu dùng dựa trên I_US_TaxPartnerTaxDocItemCube.
+semantic_en: "This CDS view is an analytical query view and contains tax items for the US for parameter P_Language. This CDS view provides the data to answer the following business questions: Which tax items can be used to calculate the tax amount in transaction currency, the tax amount in company code currency, and the tax exemption amount in the US tax partner cube? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Analytical Query for US Tax Items — CDS view tiêu dùng dựa trên I_US_TaxPartnerTaxDocItemCube."
 keywords:
-  - analytical
-  - query
-  - for
-  - tax
-  - items
-  - state
-  - partner
-  - document
-  - item
-  - jurisdiction
-  - level
-  - united
-  - states
-  - sourcing
+  - "analytical"
+  - "query"
+  - "for"
+  - "tax"
+  - "items"
+  - "state"
+  - "partner"
+  - "document"
+  - "item"
+  - "jurisdiction"
+  - "level"
+  - "united"
+  - "states"
+  - "sourcing"
 tags:
   - FI
   - bo:companycode

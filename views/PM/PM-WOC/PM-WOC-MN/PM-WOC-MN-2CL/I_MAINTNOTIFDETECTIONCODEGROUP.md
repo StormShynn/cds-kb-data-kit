@@ -1,6 +1,6 @@
 ---
 name: I_MAINTNOTIFDETECTIONCODEGROUP
-description: Maintnotifdetectioncodegroup
+description: "Maintnotifdetectioncodegroup"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released

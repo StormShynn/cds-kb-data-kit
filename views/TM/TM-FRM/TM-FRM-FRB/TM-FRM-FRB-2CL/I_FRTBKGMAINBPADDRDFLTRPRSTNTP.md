@@ -1,6 +1,6 @@
 ---
 name: I_FRTBKGMAINBPADDRDFLTRPRSTNTP
-description: Frtbkgmainbpaddrdfltrprstntp
+description: "Frtbkgmainbpaddrdfltrprstntp"
 app_component: TM-FRM-FRB-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTRSUBSTITCOSTOBJECTTP
-description: Jntvntrsubstitcostobjecttp
+description: "Jntvntrsubstitcostobjecttp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

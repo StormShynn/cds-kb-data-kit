@@ -1,6 +1,6 @@
 ---
 name: I_LOGLRNDNGUOMGRPUOMSTDVH
-description: Loglrndnguomgrpuomstdvh
+description: "Loglrndnguomgrpuomstdvh"
 app_component: LO-RFM-MD-ART
 software_component: SAPSCORE
 release_state: released

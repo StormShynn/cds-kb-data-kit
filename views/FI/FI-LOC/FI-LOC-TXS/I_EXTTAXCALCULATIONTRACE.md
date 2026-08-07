@@ -1,6 +1,6 @@
 ---
 name: I_EXTTAXCALCULATIONTRACE
-description: Exttaxcalculationtrace
+description: "Exttaxcalculationtrace"
 app_component: FI-LOC-TXS
 software_component: SAPSCORE
 release_state: released

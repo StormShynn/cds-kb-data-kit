@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCREQPRCGELMNT
-description: Billing DocumentREQPRCGELMNT
+description: "Billing DocumentREQPRCGELMNT"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

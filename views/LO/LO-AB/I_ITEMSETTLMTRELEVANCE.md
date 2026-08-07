@@ -1,13 +1,13 @@
 ---
 name: I_ITEMSETTLMTRELEVANCE
-description: Item Settlement Relevance
+description: "Item Settlement Relevance"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ITEMSETTLMTRELEVANCE')/$value
-semantic_en: Item Settlement Relevance
+semantic_en: "Item Settlement Relevance"
 tags:
   - LO
   - component:LO-AB

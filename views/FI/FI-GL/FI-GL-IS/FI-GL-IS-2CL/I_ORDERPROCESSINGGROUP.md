@@ -1,13 +1,13 @@
 ---
 name: I_ORDERPROCESSINGGROUP
-description: This CDS view provides general information about order processing group text. It includes information about controlling area, order processing group, language, order processing group name. This CDS view provides the prerequisites for answering the following business questions: What/How many order processing groups does certain controlling area have? What’s the name for each order processing group in different languages?
+description: "This CDS view provides general information about order processing group text. It includes information about controlling area, order processing group, language, order processing group name. This CDS view provides the prerequisites for answering the following business questions: What/How many order processing groups does certain controlling area have? What’s the name for each order processing group in different languages?"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ORDERPROCESSINGGROUP')/$value
-semantic_en: This CDS view provides general information about order processing group text. It includes information about controlling area, order processing group, language, order processing group name. This CDS view provides the prerequisites for answering the following business questions: What/How many order processing groups does certain controlling area have? What’s the name for each order processing group in different languages?
+semantic_en: "This CDS view provides general information about order processing group text. It includes information about controlling area, order processing group, language, order processing group name. This CDS view provides the prerequisites for answering the following business questions: What/How many order processing groups does certain controlling area have? What’s the name for each order processing group in different languages?"
 tags:
   - FI
   - bo:plant

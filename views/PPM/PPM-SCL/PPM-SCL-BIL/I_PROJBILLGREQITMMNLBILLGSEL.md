@@ -1,6 +1,6 @@
 ---
 name: I_PROJBILLGREQITMMNLBILLGSEL
-description: Projbillgreqitmmnlbillgsel
+description: "Projbillgreqitmmnlbillgsel"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

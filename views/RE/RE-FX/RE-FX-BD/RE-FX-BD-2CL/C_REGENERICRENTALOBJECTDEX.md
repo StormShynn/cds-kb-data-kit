@@ -1,6 +1,6 @@
 ---
 name: C_REGENERICRENTALOBJECTDEX
-description: Regenericrentalobjectdex
+description: "Regenericrentalobjectdex"
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

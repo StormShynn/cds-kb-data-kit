@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMGOVLAWTEXTAPI01
-description: Lglcntntmgovlawtextapi 01
+description: "Lglcntntmgovlawtextapi 01"
 app_component: CM-GF-2CL
 software_component: SAPSCORE
 release_state: released

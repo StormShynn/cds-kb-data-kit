@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMSTROBJTYPEREVISIONLVL
-description: This CDS view provides the prerequisites for answering the following business questions: Which are the possible revision levels that can be assigned to materials? Which are the possible revision levels that can be assigned to documents? In which sequence can these revision levels be assigned to a material or document?
+description: "This CDS view provides the prerequisites for answering the following business questions: Which are the possible revision levels that can be assigned to materials? Which are the possible revision levels that can be assigned to documents? In which sequence can these revision levels be assigned to a material or document?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBJTYPEREVISIONLVL')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Which are the possible revision levels that can be assigned to materials? Which are the possible revision levels that can be assigned to documents? In which sequence can these revision levels be assigned to a material or document?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which are the possible revision levels that can be assigned to materials? Which are the possible revision levels that can be assigned to documents? In which sequence can these revision levels be assigned to a material or document?"
 tags:
   - PLM
   - bo:plant

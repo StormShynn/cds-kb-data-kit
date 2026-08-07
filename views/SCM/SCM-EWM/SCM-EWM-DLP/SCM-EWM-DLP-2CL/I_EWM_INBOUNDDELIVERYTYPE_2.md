@@ -1,6 +1,6 @@
 ---
 name: I_EWM_INBOUNDDELIVERYTYPE_2
-description: Ewm Inbound DeliveryTYPE 2
+description: "Ewm Inbound DeliveryTYPE 2"
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released

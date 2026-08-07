@@ -1,6 +1,6 @@
 ---
 name: D_RESVNDOCUMENTITEMDELETED
-description: D Resvndocumentitemdeleted
+description: "D Resvndocumentitemdeleted"
 app_component: MM-IM-RS-2CL
 software_component: SAPSCORE
 release_state: released

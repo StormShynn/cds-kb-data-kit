@@ -1,13 +1,13 @@
 ---
 name: I_LISTEDDERIVATIVECATEGORY
-description: Listed Derivative Category
+description: "Listed Derivative Category"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LISTEDDERIVATIVECATEGORY')/$value
-semantic_en: Listed Derivative Category
+semantic_en: "Listed Derivative Category"
 tags:
   - FIN
   - component:FIN-FSCM-TRM-2CL

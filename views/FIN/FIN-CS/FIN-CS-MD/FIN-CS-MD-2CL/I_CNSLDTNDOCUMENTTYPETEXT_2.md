@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNDOCUMENTTYPETEXT_2
-description: Cnsldtndocumenttypetext 2
+description: "Cnsldtndocumenttypetext 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

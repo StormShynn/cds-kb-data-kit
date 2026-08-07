@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFSITEMHIERNODETEXT_2
-description: Cnsldtnfsitemhiernodetext 2
+description: "Cnsldtnfsitemhiernodetext 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

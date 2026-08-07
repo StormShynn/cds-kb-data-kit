@@ -1,6 +1,6 @@
 ---
 name: D_CALCTDNGRSGDSPTSITMRGLNR
-description: D Calctdngrsgdsptsitmrglnr
+description: "D Calctdngrsgdsptsitmrglnr"
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

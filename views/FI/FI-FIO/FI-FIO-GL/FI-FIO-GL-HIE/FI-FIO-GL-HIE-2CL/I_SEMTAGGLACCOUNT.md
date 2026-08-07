@@ -1,6 +1,6 @@
 ---
 name: I_SEMTAGGLACCOUNT
-description: Semtaggl Account
+description: "Semtaggl Account"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released

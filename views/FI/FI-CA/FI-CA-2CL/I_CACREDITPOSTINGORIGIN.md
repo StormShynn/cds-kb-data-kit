@@ -1,6 +1,6 @@
 ---
 name: I_CACREDITPOSTINGORIGIN
-description: Cacreditpostingorigin
+description: "Cacreditpostingorigin"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

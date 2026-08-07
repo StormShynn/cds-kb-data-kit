@@ -1,6 +1,6 @@
 ---
 name: I_SRVCCANCLNPROCEDURETEXT
-description: Srvccanclnproceduretext
+description: "Srvccanclnproceduretext"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

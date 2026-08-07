@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGRELEVANCECODE
-description: Billingrelevancecode
+description: "Billingrelevancecode"
 app_component: SD-BF-MD-2CL
 software_component: SAPSCORE
 release_state: released

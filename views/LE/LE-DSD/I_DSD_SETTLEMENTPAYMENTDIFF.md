@@ -1,6 +1,6 @@
 ---
 name: I_DSD_SETTLEMENTPAYMENTDIFF
-description: Dsd Settlementpaymentdiff
+description: "Dsd Settlementpaymentdiff"
 app_component: LE-DSD
 software_component: SAPSCORE
 release_state: released

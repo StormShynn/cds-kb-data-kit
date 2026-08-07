@@ -1,6 +1,6 @@
 ---
 name: I_BR_CTEPARTNERSERVICETAKER
-description: BR Ctepartnerservicetaker
+description: "BR Ctepartnerservicetaker"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

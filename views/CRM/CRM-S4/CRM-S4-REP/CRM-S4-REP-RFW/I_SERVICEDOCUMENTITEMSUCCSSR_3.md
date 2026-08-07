@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCUMENTITEMSUCCSSR_3
-description: Service DocumentUMENTITEMSUCCSSR 3
+description: "Service DocumentUMENTITEMSUCCSSR 3"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

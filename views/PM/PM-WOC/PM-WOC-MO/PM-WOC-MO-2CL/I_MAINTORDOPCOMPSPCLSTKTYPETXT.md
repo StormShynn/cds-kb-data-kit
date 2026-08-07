@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDOPCOMPSPCLSTKTYPETXT
-description: Maintordopcompspclstktypetxt
+description: "Maintordopcompspclstktypetxt"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

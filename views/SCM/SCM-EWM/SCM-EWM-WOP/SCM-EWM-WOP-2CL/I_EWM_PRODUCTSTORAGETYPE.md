@@ -1,6 +1,6 @@
 ---
 name: I_EWM_PRODUCTSTORAGETYPE
-description: Ewm Productstoragetype
+description: "Ewm Productstoragetype"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

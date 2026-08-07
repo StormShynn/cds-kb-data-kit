@@ -1,6 +1,6 @@
 ---
 name: I_CAPAYMENTEXCEPTIONREASON
-description: Capaymentexceptionreason
+description: "Capaymentexceptionreason"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

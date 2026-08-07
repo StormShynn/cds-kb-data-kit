@@ -1,6 +1,6 @@
 ---
 name: I_INVOICELISTPRCGELMNT
-description: Invoicelistprcgelmnt
+description: "Invoicelistprcgelmnt"
 app_component: SD-BIL-IL-2CL
 software_component: SAPSCORE
 release_state: released

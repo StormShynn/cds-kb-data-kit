@@ -1,6 +1,6 @@
 ---
 name: I_ORDERTYPETEXT
-description: Ordertypetext
+description: "Ordertypetext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

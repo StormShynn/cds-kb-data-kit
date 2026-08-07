@@ -1,6 +1,6 @@
 ---
 name: I_REUSABLEOBJECTSTATUSOBJECT
-description: Reusableobjectstatusobject
+description: "Reusableobjectstatusobject"
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

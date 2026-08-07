@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERTYPE
-description: Sales OrderTYPE
+description: "Sales OrderTYPE"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

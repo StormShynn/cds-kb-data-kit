@@ -1,6 +1,6 @@
 ---
 name: I_STOCKQUANTITYCURRENTVALUE_2
-description: Stockquantitycurrentvalue 2
+description: "Stockquantitycurrentvalue 2"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

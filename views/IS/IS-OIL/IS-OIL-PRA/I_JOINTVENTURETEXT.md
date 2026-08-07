@@ -1,13 +1,13 @@
 ---
 name: I_JOINTVENTURETEXT
-description: Joint Venture Name - Text
+description: "Joint Venture Name - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_JOINTVENTURETEXT')/$value
-semantic_en: Joint Venture Name - Text
+semantic_en: "Joint Venture Name - Text"
 tags:
   - IS
   - component:IS-OIL-PRA

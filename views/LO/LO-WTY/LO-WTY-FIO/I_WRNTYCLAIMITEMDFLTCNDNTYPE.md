@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMITEMDFLTCNDNTYPE
-description: Wrntyclaimitemdfltcndntype
+description: "Wrntyclaimitemdfltcndntype"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

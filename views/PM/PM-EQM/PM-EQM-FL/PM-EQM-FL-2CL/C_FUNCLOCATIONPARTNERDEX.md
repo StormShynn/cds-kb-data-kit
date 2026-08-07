@@ -1,25 +1,25 @@
 ---
 name: C_FUNCLOCATIONPARTNERDEX
-description: Functional Location Partner
+description: "Functional Location Partner"
 app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCLOCATIONPARTNERDEX')/$value
-semantic_en: Functional Location Partner
-semantic_vi: Functional Location Partner — CDS view tiêu dùng dựa trên I_PlantMaintenancePartner.
+semantic_en: "Functional Location Partner"
+semantic_vi: "Functional Location Partner — CDS view tiêu dùng dựa trên I_PlantMaintenancePartner."
 keywords:
-  - functional
-  - location
-  - partner
-  - maint
-  - object
-  - internal
-  - function
-  - maintenance
-  - number
-  - category
+  - "functional"
+  - "location"
+  - "partner"
+  - "maint"
+  - "object"
+  - "internal"
+  - "function"
+  - "maintenance"
+  - "number"
+  - "category"
 tags:
   - PM
   - component:PM-EQM-FL-2CL

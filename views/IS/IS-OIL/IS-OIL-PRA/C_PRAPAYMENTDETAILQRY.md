@@ -1,13 +1,13 @@
 ---
 name: C_PRAPAYMENTDETAILQRY
-description: PRA Payment Detail Query
+description: "PRA Payment Detail Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRAPAYMENTDETAILQRY')/$value
-semantic_en: PRA Payment Detail Query
+semantic_en: "PRA Payment Detail Query"
 tags:
   - IS
   - component:IS-OIL-PRA

@@ -1,6 +1,6 @@
 ---
 name: I_PRICINGINCOMPLETIONSTATUST
-description: Pricingincompletionstatust
+description: "Pricingincompletionstatust"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

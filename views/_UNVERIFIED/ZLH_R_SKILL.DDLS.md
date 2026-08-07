@@ -1,21 +1,21 @@
 ---
 name: ZLH_R_SKILL.DDLS
-description: Skills
+description: "Skills"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/JuliaBerteneva/LearningHubRAP/blob/f1342bbfe3bb483f43c5bb8d08b65d62aefa7b66/src/zlh_r_skill.ddls.asddls
-semantic_en: Skills — CDS view based on zlh_i_skill.
-semantic_vi: Skills — CDS view dựa trên zlh_i_skill.
+semantic_en: "Skills — CDS view based on zlh_i_skill."
+semantic_vi: "Skills — CDS view dựa trên zlh_i_skill."
 keywords:
-  - skills
-  - skill
-  - name
-  - description
-  - category
-  - created
+  - "skills"
+  - "skill"
+  - "name"
+  - "description"
+  - "category"
+  - "created"
 ---
 # ZLH_R_SKILL.DDLS
 

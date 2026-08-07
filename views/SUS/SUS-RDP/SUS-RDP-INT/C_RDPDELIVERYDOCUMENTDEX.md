@@ -1,13 +1,13 @@
 ---
 name: C_RDPDELIVERYDOCUMENTDEX
-description: This CDS view is used by SAP Responsible Design and Production for the data extraction of relevant delivery documents. The view provides the necessary data based upon delivery documents. See also CDS view I_DeliveryDocument. See Delivery Document. Note: This CDS view supports delta extraction.
+description: "This CDS view is used by SAP Responsible Design and Production for the data extraction of relevant delivery documents. The view provides the necessary data based upon delivery documents. See also CDS view I_DeliveryDocument. See Delivery Document. Note: This CDS view supports delta extraction."
 app_component: SUS-RDP-INT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RDPDELIVERYDOCUMENTDEX')/$value
-semantic_en: This CDS view is used by SAP Responsible Design and Production for the data extraction of relevant delivery documents. The view provides the necessary data based upon delivery documents. See also CDS view I_DeliveryDocument. See Delivery Document. Note: This CDS view supports delta extraction.
+semantic_en: "This CDS view is used by SAP Responsible Design and Production for the data extraction of relevant delivery documents. The view provides the necessary data based upon delivery documents. See also CDS view I_DeliveryDocument. See Delivery Document. Note: This CDS view supports delta extraction."
 tags:
   - SUS
   - bo:material

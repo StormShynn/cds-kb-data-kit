@@ -1,13 +1,13 @@
 ---
 name: C_ENGMTPROJWORKANLYSQUERY
-description: This CDS view provides the prerequisites for answering the following business questions: What is the planned effort (hours) for a project? How many hours have been recorded? How many hours have been staffed with resources? How many of the planned hours can be billed? How many hours have not yet been staffed? How many hours have been planned up to the current month?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the planned effort (hours) for a project? How many hours have been recorded? How many hours have been staffed with resources? How many of the planned hours can be billed? How many hours have not yet been staffed? How many hours have been planned up to the current month?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMTPROJWORKANLYSQUERY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the planned effort (hours) for a project? How many hours have been recorded? How many hours have been staffed with resources? How many of the planned hours can be billed? How many hours have not yet been staffed? How many hours have been planned up to the current month?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the planned effort (hours) for a project? How many hours have been recorded? How many hours have been staffed with resources? How many of the planned hours can be billed? How many hours have not yet been staffed? How many hours have been planned up to the current month?"
 tags:
   - CA
   - bo:plant

@@ -1,23 +1,23 @@
 ---
 name: C_BILLOFOPERATIONSBASICOPDEX
-description: Bill of Operations Operation
+description: "Bill of Operations Operation"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BILLOFOPERATIONSBASICOPDEX')/$value
-semantic_en: Bill of Operations Operation
-semantic_vi: Bill of Operations Operation — CDS view tiêu dùng dựa trên I_BillOfOperationsOpBasic.
+semantic_en: "Bill of Operations Operation"
+semantic_vi: "Bill of Operations Operation — CDS view tiêu dùng dựa trên I_BillOfOperationsOpBasic."
 keywords:
-  - bill
-  - operations
-  - operation
-  - type
-  - group
-  - internal
-  - version
-  - counter
+  - "bill"
+  - "operations"
+  - "operation"
+  - "type"
+  - "group"
+  - "internal"
+  - "version"
+  - "counter"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

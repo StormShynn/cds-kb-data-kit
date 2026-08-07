@@ -1,6 +1,6 @@
 ---
 name: I_PRFTCTRCOMPCODEASSGMTTP_2
-description: Prftctrcompcodeassgmttp 2
+description: "Prftctrcompcodeassgmttp 2"
 app_component: EC-PCA-MD-2CL
 software_component: SAPSCORE
 release_state: released

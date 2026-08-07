@@ -1,6 +1,6 @@
 ---
 name: I_CUSTABAPSOFTWARECOMPONENT
-description: Custabapsoftwarecomponent
+description: "Custabapsoftwarecomponent"
 app_component: BC-SRV-APS-EXT-REL
 software_component: SAP_BASIS
 release_state: released

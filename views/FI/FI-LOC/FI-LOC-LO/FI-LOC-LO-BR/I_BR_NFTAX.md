@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFTAX
-description: BR Nftax
+description: "BR Nftax"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

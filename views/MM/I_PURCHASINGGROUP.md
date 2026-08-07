@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGGROUP
-description: Purchasinggroup
+description: "Purchasinggroup"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

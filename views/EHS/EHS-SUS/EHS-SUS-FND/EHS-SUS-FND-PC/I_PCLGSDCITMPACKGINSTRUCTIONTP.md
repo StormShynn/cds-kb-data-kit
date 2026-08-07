@@ -1,6 +1,6 @@
 ---
 name: I_PCLGSDCITMPACKGINSTRUCTIONTP
-description: Pclgsdcitmpackginstructiontp
+description: "Pclgsdcitmpackginstructiontp"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

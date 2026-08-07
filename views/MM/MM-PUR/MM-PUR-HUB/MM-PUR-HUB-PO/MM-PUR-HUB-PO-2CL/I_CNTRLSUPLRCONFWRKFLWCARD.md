@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLSUPLRCONFWRKFLWCARD
-description: Cntrlsuplrconfwrkflwcard
+description: "Cntrlsuplrconfwrkflwcard"
 app_component: MM-PUR-HUB-PO-2CL
 software_component: SAPSCORE
 release_state: released

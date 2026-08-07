@@ -1,31 +1,31 @@
 ---
 name: I_ACTLPLNLINEITEMSEMTAGGLACCT
-description: This CDS view contains details for journal entries, such as G/L accounts, company code, cost center, or profit center. Most importantly, this view contains both actual and planned KPI amounts based on the corresponding semantic tags. This CDS view provides the prerequisites for answering the following business questions: What are the plan and actual values for KPIs based on semantic tags?
+description: "This CDS view contains details for journal entries, such as G/L accounts, company code, cost center, or profit center. Most importantly, this view contains both actual and planned KPI amounts based on the corresponding semantic tags. This CDS view provides the prerequisites for answering the following business questions: What are the plan and actual values for KPIs based on semantic tags?"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACTLPLNLINEITEMSEMTAGGLACCT')/$value
-semantic_en: This CDS view contains details for journal entries, such as G/L accounts, company code, cost center, or profit center. Most importantly, this view contains both actual and planned KPI amounts based on the corresponding semantic tags. This CDS view provides the prerequisites for answering the following business questions: What are the plan and actual values for KPIs based on semantic tags?
-semantic_vi: Actual and Plan Line Item with Semantic Tag — CDS view giao diện dựa trên P_ActlPlnLineItemSemTagGLAcct.
+semantic_en: "This CDS view contains details for journal entries, such as G/L accounts, company code, cost center, or profit center. Most importantly, this view contains both actual and planned KPI amounts based on the corresponding semantic tags. This CDS view provides the prerequisites for answering the following business questions: What are the plan and actual values for KPIs based on semantic tags?"
+semantic_vi: "Actual and Plan Line Item with Semantic Tag — CDS view giao diện dựa trên P_ActlPlnLineItemSemTagGLAcct."
 keywords:
-  - Actual and Plan Line Item with Semantic Tag
-  - actual
-  - and
-  - plan
-  - line
-  - item
-  - with
-  - semantic
-  - tag
-  - ledger
-  - source
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
+  - "Actual and Plan Line Item with Semantic Tag"
+  - "actual"
+  - "and"
+  - "plan"
+  - "line"
+  - "item"
+  - "with"
+  - "semantic"
+  - "tag"
+  - "ledger"
+  - "source"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
 tags:
   - FI
   - account

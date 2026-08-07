@@ -1,28 +1,28 @@
 ---
 name: C_FININVOICEITEMFDP
-description: Corr Type SAP21 Invc itm
+description: "Corr Type SAP21 Invc itm"
 app_component: FI-FIO-AR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FININVOICEITEMFDP')/$value
-semantic_en: Corr Type SAP21 Invc itm
-semantic_vi: Corr Type SAP21 Invc itm — CDS view tiêu dùng dựa trên I_OperationalAcctgDocItem.
+semantic_en: "Corr Type SAP21 Invc itm"
+semantic_vi: "Corr Type SAP21 Invc itm — CDS view tiêu dùng dựa trên I_OperationalAcctgDocItem."
 keywords:
-  - Correspondence - Invoice document - items
-  - corr
-  - type
-  - sap21
-  - invc
-  - itm
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
-  - item
+  - "Correspondence - Invoice document - items"
+  - "corr"
+  - "type"
+  - "sap21"
+  - "invc"
+  - "itm"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
+  - "item"
 tags:
   - FI
   - bo:billingdocument

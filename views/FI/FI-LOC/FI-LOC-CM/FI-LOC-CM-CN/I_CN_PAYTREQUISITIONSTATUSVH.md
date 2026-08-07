@@ -1,6 +1,6 @@
 ---
 name: I_CN_PAYTREQUISITIONSTATUSVH
-description: CN Paytrequisitionstatusvh
+description: "CN Paytrequisitionstatusvh"
 app_component: FI-LOC-CM-CN
 software_component: SAPSCORE
 release_state: released

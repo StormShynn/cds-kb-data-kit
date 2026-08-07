@@ -1,6 +1,6 @@
 ---
 name: I_RACONTRACTCATEGORY
-description: Racontractcategory
+description: "Racontractcategory"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

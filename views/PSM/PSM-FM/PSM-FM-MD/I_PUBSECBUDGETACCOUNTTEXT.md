@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECBUDGETACCOUNTTEXT
-description: Pubsecbudgetaccounttext
+description: "Pubsecbudgetaccounttext"
 app_component: PSM-FM-MD
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERAPPROVALREASON
-description: Sales OrderAPPROVALREASON
+description: "Sales OrderAPPROVALREASON"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

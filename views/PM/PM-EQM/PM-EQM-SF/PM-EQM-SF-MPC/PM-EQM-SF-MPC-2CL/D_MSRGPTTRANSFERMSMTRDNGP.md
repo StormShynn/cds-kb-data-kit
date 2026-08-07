@@ -1,6 +1,6 @@
 ---
 name: D_MSRGPTTRANSFERMSMTRDNGP
-description: D Msrgpttransfermsmtrdngp
+description: "D Msrgpttransfermsmtrdngp"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

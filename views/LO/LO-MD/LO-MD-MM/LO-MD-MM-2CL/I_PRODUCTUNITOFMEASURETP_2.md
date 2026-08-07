@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTUNITOFMEASURETP_2
-description: PRODUCTUnit of MeasureTP 2
+description: "PRODUCTUnit of MeasureTP 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

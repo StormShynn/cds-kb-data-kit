@@ -1,28 +1,28 @@
 ---
 name: C_FUNCTIONALLOCATIONDEX
-description: Functional Location Data
+description: "Functional Location Data"
 app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCTIONALLOCATIONDEX')/$value
-semantic_en: Functional Location Data
-semantic_vi: Functional Location Data — CDS view tiêu dùng dựa trên I_FunctionalLocation.
+semantic_en: "Functional Location Data"
+semantic_vi: "Functional Location Data — CDS view tiêu dùng dựa trên I_FunctionalLocation."
 keywords:
-  - functional
-  - location
-  - data
-  - maint
-  - object
-  - acct
-  - assgmt
-  - nmbr
-  - indicator
-  - address
-  - master
-  - fixed
-  - asset
+  - "functional"
+  - "location"
+  - "data"
+  - "maint"
+  - "object"
+  - "acct"
+  - "assgmt"
+  - "nmbr"
+  - "indicator"
+  - "address"
+  - "master"
+  - "fixed"
+  - "asset"
 tags:
   - PM
   - component:PM-EQM-FL-2CL

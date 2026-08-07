@@ -1,13 +1,13 @@
 ---
 name: I_TRDCLASSFCTNNMBRSCHM
-description: Numbering Scheme
+description: "Numbering Scheme"
 app_component: FT-ITR-CLS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDCLASSFCTNNMBRSCHM')/$value
-semantic_en: Numbering Scheme
+semantic_en: "Numbering Scheme"
 tags:
   - FT
   - component:FT-ITR-CLS

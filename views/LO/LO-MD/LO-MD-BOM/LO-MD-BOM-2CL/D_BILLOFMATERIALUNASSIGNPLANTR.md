@@ -1,6 +1,6 @@
 ---
 name: D_BILLOFMATERIALUNASSIGNPLANTR
-description: D Bill of MaterialUNASSIGNPLANTR
+description: "D Bill of MaterialUNASSIGNPLANTR"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

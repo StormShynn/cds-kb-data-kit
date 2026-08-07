@@ -1,13 +1,13 @@
 ---
 name: I_CMMDTYMTMMESSAGE
-description: Messages relevant for Mark To Market
+description: "Messages relevant for Mark To Market"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMMESSAGE')/$value
-semantic_en: Messages relevant for Mark To Market
+semantic_en: "Messages relevant for Mark To Market"
 tags:
   - LO
   - component:LO-CMM-BF

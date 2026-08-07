@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTTERMNNTCFRQCY
-description: Agreement Termination Notice Frequency
+description: "Agreement Termination Notice Frequency"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTTERMNNTCFRQCY')/$value
-semantic_en: Agreement Termination Notice Frequency
+semantic_en: "Agreement Termination Notice Frequency"
 tags:
   - FS
   - component:FS-CMS

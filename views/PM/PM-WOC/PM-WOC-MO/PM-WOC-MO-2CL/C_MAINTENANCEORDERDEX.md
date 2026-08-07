@@ -1,27 +1,27 @@
 ---
 name: C_MAINTENANCEORDERDEX
-description: Maintenance Order Data Extractor
+description: "Maintenance Order Data Extractor"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEORDERDEX')/$value
-semantic_en: Maintenance Order Data Extractor
-semantic_vi: Maintenance Order Data Extractor — CDS view tiêu dùng dựa trên I_MaintenanceOrder.
+semantic_en: "Maintenance Order Data Extractor"
+semantic_vi: "Maintenance Order Data Extractor — CDS view tiêu dùng dựa trên I_MaintenanceOrder."
 keywords:
-  - maintenance
-  - order
-  - data
-  - extractor
-  - maint
-  - routing
-  - number
-  - type
-  - desc
-  - basic
-  - start
-  - date
+  - "maintenance"
+  - "order"
+  - "data"
+  - "extractor"
+  - "maint"
+  - "routing"
+  - "number"
+  - "type"
+  - "desc"
+  - "basic"
+  - "start"
+  - "date"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

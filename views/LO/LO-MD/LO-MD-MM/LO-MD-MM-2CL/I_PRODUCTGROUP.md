@@ -1,13 +1,13 @@
 ---
 name: I_PRODUCTGROUP
-description: This CDS view was deprecated with 1811. . SAP may make the CDS view unusable usually not earlier than one year after the deprecation. For more information, see Deprecated and Decommissioned CDS Views. We recommend that you switch to the successor CDS view, I_ProductGroup_2, as soon as possible. This view provides value help for Product Group. This view should be used for value help purposes only.
+description: "This CDS view was deprecated with 1811. . SAP may make the CDS view unusable usually not earlier than one year after the deprecation. For more information, see Deprecated and Decommissioned CDS Views. We recommend that you switch to the successor CDS view, I_ProductGroup_2, as soon as possible. This view provides value help for Product Group. This view should be used for value help purposes only."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTGROUP')/$value
-semantic_en: This CDS view was deprecated with 1811. . SAP may make the CDS view unusable usually not earlier than one year after the deprecation. For more information, see Deprecated and Decommissioned CDS Views. We recommend that you switch to the successor CDS view, I_ProductGroup_2, as soon as possible. This view provides value help for Product Group. This view should be used for value help purposes only.
+semantic_en: "This CDS view was deprecated with 1811. . SAP may make the CDS view unusable usually not earlier than one year after the deprecation. For more information, see Deprecated and Decommissioned CDS Views. We recommend that you switch to the successor CDS view, I_ProductGroup_2, as soon as possible. This view provides value help for Product Group. This view should be used for value help purposes only."
 tags:
   - LO
   - bo:material

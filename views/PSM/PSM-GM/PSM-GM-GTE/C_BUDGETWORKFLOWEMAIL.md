@@ -1,13 +1,13 @@
 ---
 name: C_BUDGETWORKFLOWEMAIL
-description: Budget Document for WF ApprovalEmail
+description: "Budget Document for WF ApprovalEmail"
 app_component: PSM-GM-GTE
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUDGETWORKFLOWEMAIL')/$value
-semantic_en: Budget Document for WF ApprovalEmail
+semantic_en: "Budget Document for WF ApprovalEmail"
 tags:
   - PSM
   - budget

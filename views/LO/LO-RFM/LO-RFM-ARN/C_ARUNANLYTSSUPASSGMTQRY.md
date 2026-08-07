@@ -1,25 +1,25 @@
 ---
 name: C_ARUNANLYTSSUPASSGMTQRY
-description: Consumption View for Assignments
+description: "Consumption View for Assignments"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSUPASSGMTQRY')/$value
-semantic_en: Consumption View for Assignments
-semantic_vi: Consumption View for Assignments — CDS view tiêu dùng dựa trên I_ARunAnlytsSupAssgmtCube.
+semantic_en: "Consumption View for Assignments"
+semantic_vi: "Consumption View for Assignments — CDS view tiêu dùng dựa trên I_ARunAnlytsSupAssgmtCube."
 keywords:
-  - consumption
-  - for
-  - assignments
-  - plant
-  - material
-  - storage
-  - location
-  - batch
-  - requirement
-  - type
+  - "consumption"
+  - "for"
+  - "assignments"
+  - "plant"
+  - "material"
+  - "storage"
+  - "location"
+  - "batch"
+  - "requirement"
+  - "type"
 tags:
   - LO
   - component:LO-RFM-ARN

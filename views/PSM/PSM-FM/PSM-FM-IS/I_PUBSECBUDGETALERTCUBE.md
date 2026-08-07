@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECBUDGETALERTCUBE
-description: Public Sector Budget Alert - Cube
+description: "Public Sector Budget Alert - Cube"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECBUDGETALERTCUBE')/$value
-semantic_en: Public Sector Budget Alert - Cube
+semantic_en: "Public Sector Budget Alert - Cube"
 tags:
   - PSM
   - budget

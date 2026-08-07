@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDERHISTORYAPI01
-description: Purchase OrderHISTORYAPI 01
+description: "Purchase OrderHISTORYAPI 01"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

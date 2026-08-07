@@ -1,6 +1,6 @@
 ---
 name: I_WRKASSGMTWRKORDDETTP
-description: Wrkassgmtwrkorddettp
+description: "Wrkassgmtwrkorddettp"
 app_component: CA-WFD-INT
 software_component: SAPSCORE
 release_state: released

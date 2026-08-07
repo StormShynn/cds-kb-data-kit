@@ -1,6 +1,6 @@
 ---
 name: I_BR_SDEXTTXCALCMATLUSAGEVH
-description: BR Sdexttxcalcmatlusagevh
+description: "BR Sdexttxcalcmatlusagevh"
 app_component: FI-LOC-TXS
 software_component: SAPSCORE
 release_state: released

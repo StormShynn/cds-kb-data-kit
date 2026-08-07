@@ -1,6 +1,6 @@
 ---
 name: I_CPWF_INST
-description: Cpwf Inst
+description: "Cpwf Inst"
 app_component: BC-BMT-WFP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MATLPROCUREMENTCATEGORY
-description: Matlprocurementcategory
+description: "Matlprocurementcategory"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

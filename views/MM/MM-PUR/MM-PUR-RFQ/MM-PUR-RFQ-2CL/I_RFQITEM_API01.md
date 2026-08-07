@@ -1,6 +1,6 @@
 ---
 name: I_RFQITEM_API01
-description: Rfqitem Api 01
+description: "Rfqitem Api 01"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

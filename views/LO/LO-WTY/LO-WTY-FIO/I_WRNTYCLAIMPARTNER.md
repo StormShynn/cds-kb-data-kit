@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMPARTNER
-description: Wrntyclaimpartner
+description: "Wrntyclaimpartner"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

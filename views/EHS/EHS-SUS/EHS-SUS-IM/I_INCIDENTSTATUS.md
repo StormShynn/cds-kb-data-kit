@@ -1,13 +1,13 @@
 ---
 name: I_INCIDENTSTATUS
-description: Incident Status
+description: "Incident Status"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INCIDENTSTATUS')/$value
-semantic_en: Incident Status
+semantic_en: "Incident Status"
 tags:
   - EHS
   - component:EHS-SUS-IM

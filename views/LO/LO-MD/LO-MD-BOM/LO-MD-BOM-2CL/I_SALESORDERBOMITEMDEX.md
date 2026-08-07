@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERBOMITEMDEX
-description: Sales OrderBOMITEMDEX
+description: "Sales OrderBOMITEMDEX"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

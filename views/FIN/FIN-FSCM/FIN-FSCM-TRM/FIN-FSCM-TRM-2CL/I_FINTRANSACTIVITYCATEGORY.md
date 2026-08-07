@@ -1,6 +1,6 @@
 ---
 name: I_FINTRANSACTIVITYCATEGORY
-description: Fintransactivitycategory
+description: "Fintransactivitycategory"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

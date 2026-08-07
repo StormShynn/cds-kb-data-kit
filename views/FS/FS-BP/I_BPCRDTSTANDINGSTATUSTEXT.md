@@ -1,6 +1,6 @@
 ---
 name: I_BPCRDTSTANDINGSTATUSTEXT
-description: Bpcrdtstandingstatustext
+description: "Bpcrdtstandingstatustext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

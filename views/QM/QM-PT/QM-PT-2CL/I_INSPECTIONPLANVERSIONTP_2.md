@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONPLANVERSIONTP_2
-description: Inspectionplanversiontp 2
+description: "Inspectionplanversiontp 2"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

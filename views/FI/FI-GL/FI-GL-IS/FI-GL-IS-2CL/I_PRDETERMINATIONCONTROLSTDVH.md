@@ -1,6 +1,6 @@
 ---
 name: I_PRDETERMINATIONCONTROLSTDVH
-description: Prdeterminationcontrolstdvh
+description: "Prdeterminationcontrolstdvh"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CHARCATTRIBUTECODETEXT
-description: Charcattributecodetext
+description: "Charcattributecodetext"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

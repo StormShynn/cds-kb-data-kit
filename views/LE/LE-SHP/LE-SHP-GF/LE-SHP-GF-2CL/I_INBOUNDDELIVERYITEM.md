@@ -1,6 +1,6 @@
 ---
 name: I_INBOUNDDELIVERYITEM
-description: Inbound DeliveryITEM
+description: "Inbound DeliveryITEM"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

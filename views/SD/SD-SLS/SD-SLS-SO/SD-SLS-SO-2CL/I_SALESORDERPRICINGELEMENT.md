@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERPRICINGELEMENT
-description: Sales OrderPRICINGELEMENT
+description: "Sales OrderPRICINGELEMENT"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

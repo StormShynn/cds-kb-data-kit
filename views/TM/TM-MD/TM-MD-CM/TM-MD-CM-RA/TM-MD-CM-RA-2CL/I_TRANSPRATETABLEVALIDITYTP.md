@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPRATETABLEVALIDITYTP
-description: Transpratetablevaliditytp
+description: "Transpratetablevaliditytp"
 app_component: TM-MD-CM-RA-2CL
 software_component: SAPSCORE
 release_state: released

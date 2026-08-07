@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERPOOLEDCAPACITY
-description: Work CenterPOOLEDCAPACITY
+description: "Work CenterPOOLEDCAPACITY"
 app_component: PP-BD-WKC-2CL
 software_component: SAPSCORE
 release_state: released

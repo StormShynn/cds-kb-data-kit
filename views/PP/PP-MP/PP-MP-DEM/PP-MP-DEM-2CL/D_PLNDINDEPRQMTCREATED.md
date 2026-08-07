@@ -1,6 +1,6 @@
 ---
 name: D_PLNDINDEPRQMTCREATED
-description: D Plndindeprqmtcreated
+description: "D Plndindeprqmtcreated"
 app_component: PP-MP-DEM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,26 +1,26 @@
 ---
 name: C_ARUNANLYTSOPENDELIVQUERY
-description: Open Deliveries
+description: "Open Deliveries"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSOPENDELIVQUERY')/$value
-semantic_en: Open Deliveries
-semantic_vi: Open Deliveries — CDS view tiêu dùng dựa trên I_ARunAnlytsOpenDelivCube.
+semantic_en: "Open Deliveries"
+semantic_vi: "Open Deliveries — CDS view tiêu dùng dựa trên I_ARunAnlytsOpenDelivCube."
 keywords:
-  - open
-  - deliveries
-  - delivery
-  - document
-  - item
-  - requirement
-  - type
-  - sales
-  - district
-  - shipping
-  - point
+  - "open"
+  - "deliveries"
+  - "delivery"
+  - "document"
+  - "item"
+  - "requirement"
+  - "type"
+  - "sales"
+  - "district"
+  - "shipping"
+  - "point"
 tags:
   - LO
   - bo:salesorder

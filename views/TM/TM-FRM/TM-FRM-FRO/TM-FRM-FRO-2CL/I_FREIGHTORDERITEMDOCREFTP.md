@@ -1,6 +1,6 @@
 ---
 name: I_FREIGHTORDERITEMDOCREFTP
-description: Freightorderitemdocreftp
+description: "Freightorderitemdocreftp"
 app_component: TM-FRM-FRO-2CL
 software_component: SAPSCORE
 release_state: released

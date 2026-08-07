@@ -1,6 +1,6 @@
 ---
 name: I_PERSSETTLMTACCTGTRANSFSTST
-description: Perssettlmtacctgtransfstst
+description: "Perssettlmtacctgtransfstst"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

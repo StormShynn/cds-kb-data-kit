@@ -1,30 +1,30 @@
 ---
 name: C_OPERATIONALSUPLREVALQRY
-description: Operational Supplier Evaluation Score
+description: "Operational Supplier Evaluation Score"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OPERATIONALSUPLREVALQRY')/$value
-semantic_en: Operational Supplier Evaluation Score
-semantic_vi: Operational Supplier Evaluation Score — CDS view tiêu dùng dựa trên C_OperationalSuplrEvalCube.
+semantic_en: "Operational Supplier Evaluation Score"
+semantic_vi: "Operational Supplier Evaluation Score — CDS view tiêu dùng dựa trên C_OperationalSuplrEvalCube."
 keywords:
-  - operational
-  - supplier
-  - evaluation
-  - score
-  - purchasing
-  - document
-  - item
-  - purg
-  - migrtn
-  - cmpltd
-  - anlyts
-  - suplr
-  - eval
-  - critra
-  - deliv
+  - "operational"
+  - "supplier"
+  - "evaluation"
+  - "score"
+  - "purchasing"
+  - "document"
+  - "item"
+  - "purg"
+  - "migrtn"
+  - "cmpltd"
+  - "anlyts"
+  - "suplr"
+  - "eval"
+  - "critra"
+  - "deliv"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

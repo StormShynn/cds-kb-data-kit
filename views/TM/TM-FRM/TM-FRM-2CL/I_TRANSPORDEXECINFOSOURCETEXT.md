@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPORDEXECINFOSOURCETEXT
-description: Transportation Order Execution Info Source - Text
+description: "Transportation Order Execution Info Source - Text"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPORDEXECINFOSOURCETEXT')/$value
-semantic_en: Transportation Order Execution Info Source - Text
+semantic_en: "Transportation Order Execution Info Source - Text"
 tags:
   - TM
   - bo:purchaseorder

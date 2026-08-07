@@ -1,13 +1,13 @@
 ---
 name: I_INDUSTRYSECTORTEXT
-description: Industry Sector - Text
+description: "Industry Sector - Text"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INDUSTRYSECTORTEXT')/$value
-semantic_en: Industry Sector - Text
+semantic_en: "Industry Sector - Text"
 tags:
   - LO
   - component:LO-MD-MM-2CL

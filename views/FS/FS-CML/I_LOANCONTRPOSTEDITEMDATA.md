@@ -1,13 +1,13 @@
 ---
 name: I_LOANCONTRPOSTEDITEMDATA
-description: Posted Item for Loan Contract
+description: "Posted Item for Loan Contract"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRPOSTEDITEMDATA')/$value
-semantic_en: Posted Item for Loan Contract
+semantic_en: "Posted Item for Loan Contract"
 tags:
   - FS
   - bo:purchaseorder

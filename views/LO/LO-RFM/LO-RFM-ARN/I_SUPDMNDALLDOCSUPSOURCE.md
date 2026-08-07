@@ -1,13 +1,13 @@
 ---
 name: I_SUPDMNDALLDOCSUPSOURCE
-description: Description for Supply Source for All Documents
+description: "Description for Supply Source for All Documents"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPDMNDALLDOCSUPSOURCE')/$value
-semantic_en: Description for Supply Source for All Documents
+semantic_en: "Description for Supply Source for All Documents"
 tags:
   - LO
   - bo:project

@@ -1,6 +1,6 @@
 ---
 name: I_PFMTRANSDATACO2EQFPRNT
-description: Pfmtransdataco 2EQFPRNT
+description: "Pfmtransdataco 2EQFPRNT"
 app_component: SUS-PFM-INT
 software_component: SAPSCORE
 release_state: released

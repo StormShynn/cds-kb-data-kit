@@ -1,6 +1,6 @@
 ---
 name: I_COCODECOUNTRYVATREGISTRATION
-description: Cocodecountryvatregistration
+description: "Cocodecountryvatregistration"
 app_component: FI-GL-GL-F-2CL
 software_component: SAPSCORE
 release_state: released

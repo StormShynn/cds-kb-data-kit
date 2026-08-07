@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECORDHIERARCHYDEX
-description: Change RecordHIERARCHYDEX
+description: "Change RecordHIERARCHYDEX"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

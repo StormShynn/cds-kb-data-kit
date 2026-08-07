@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDUSERVH
-description: Documentinforecorduservh
+description: "Documentinforecorduservh"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

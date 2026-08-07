@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNNODEFORELIMRPTGDEX
-description: Cnsldtnnodeforelimrptgdex
+description: "Cnsldtnnodeforelimrptgdex"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released

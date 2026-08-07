@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALDOCCATCONFIGNT
-description: Suplrevaldoccatconfignt
+description: "Suplrevaldoccatconfignt"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

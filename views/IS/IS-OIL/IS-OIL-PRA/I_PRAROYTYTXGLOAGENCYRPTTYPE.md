@@ -1,13 +1,13 @@
 ---
 name: I_PRAROYTYTXGLOAGENCYRPTTYPE
-description: Roy 2 0 TX GLO Agency Report Type
+description: "Roy 2 0 TX GLO Agency Report Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAROYTYTXGLOAGENCYRPTTYPE')/$value
-semantic_en: Roy 2 0 TX GLO Agency Report Type
+semantic_en: "Roy 2 0 TX GLO Agency Report Type"
 tags:
   - IS
   - bo:purchaseorder

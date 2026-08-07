@@ -1,13 +1,13 @@
 ---
 name: I_CUSTMGMTDATERULETEXT
-description: Customer Management Date Rule - Text
+description: "Customer Management Date Rule - Text"
 app_component: CRM-BF-DAT-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTMGMTDATERULETEXT')/$value
-semantic_en: Customer Management Date Rule - Text
+semantic_en: "Customer Management Date Rule - Text"
 tags:
   - CRM
   - bo:businesspartner

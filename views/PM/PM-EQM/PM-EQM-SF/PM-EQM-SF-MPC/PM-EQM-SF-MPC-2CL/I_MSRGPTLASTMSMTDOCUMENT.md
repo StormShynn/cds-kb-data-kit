@@ -1,6 +1,6 @@
 ---
 name: I_MSRGPTLASTMSMTDOCUMENT
-description: Msrgptlastmsmtdocument
+description: "Msrgptlastmsmtdocument"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

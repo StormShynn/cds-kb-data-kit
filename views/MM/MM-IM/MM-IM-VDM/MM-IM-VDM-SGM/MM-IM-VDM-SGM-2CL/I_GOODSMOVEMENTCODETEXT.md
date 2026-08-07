@@ -1,6 +1,6 @@
 ---
 name: I_GOODSMOVEMENTCODETEXT
-description: Goods MovementCODETEXT
+description: "Goods MovementCODETEXT"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PRODALLOCOBJTIMESERIESTP_2
-description: Prodallocobjtimeseriestp 2
+description: "Prodallocobjtimeseriestp 2"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

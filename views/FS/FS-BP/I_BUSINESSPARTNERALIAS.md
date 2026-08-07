@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERALIAS
-description: Business PartnerALIAS
+description: "Business PartnerALIAS"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

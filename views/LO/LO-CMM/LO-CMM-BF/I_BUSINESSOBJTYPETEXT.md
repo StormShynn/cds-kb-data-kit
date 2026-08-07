@@ -1,22 +1,22 @@
 ---
 name: I_BUSINESSOBJTYPETEXT
-description: Business Object Type - Text
+description: "Business Object Type - Text"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSOBJTYPETEXT')/$value
-semantic_en: Business Object Type - Text
-semantic_vi: Business Object Type - Text — CDS view giao diện dựa trên tojtt.
+semantic_en: "Business Object Type - Text"
+semantic_vi: "Business Object Type - Text — CDS view giao diện dựa trên tojtt."
 keywords:
-  - business
-  - object
-  - type
-  - text
-  - language
-  - name
-  - description
+  - "business"
+  - "object"
+  - "type"
+  - "text"
+  - "language"
+  - "name"
+  - "description"
 tags:
   - LO
   - bo:salesorder

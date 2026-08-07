@@ -1,13 +1,13 @@
 ---
 name: I_FREEDFNDTBLFIELDSEMANTICTEXT
-description: Free Defined Table Field Semantic - Text
+description: "Free Defined Table Field Semantic - Text"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FREEDFNDTBLFIELDSEMANTICTEXT')/$value
-semantic_en: Free Defined Table Field Semantic - Text
+semantic_en: "Free Defined Table Field Semantic - Text"
 tags:
   - PP
   - bo:companycode

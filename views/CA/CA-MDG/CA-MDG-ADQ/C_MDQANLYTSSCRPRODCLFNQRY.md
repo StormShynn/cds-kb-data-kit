@@ -1,13 +1,13 @@
 ---
 name: C_MDQANLYTSSCRPRODCLFNQRY
-description: MDQ Score for Product Clfn - Query
+description: "MDQ Score for Product Clfn - Query"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRPRODCLFNQRY')/$value
-semantic_en: MDQ Score for Product Clfn - Query
+semantic_en: "MDQ Score for Product Clfn - Query"
 tags:
   - CA
   - bo:material

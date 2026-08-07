@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCOSTCENTER
-description: CNSLDTNCost Center
+description: "CNSLDTNCost Center"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

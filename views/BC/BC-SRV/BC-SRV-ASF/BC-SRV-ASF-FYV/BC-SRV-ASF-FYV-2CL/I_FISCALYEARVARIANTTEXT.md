@@ -1,6 +1,6 @@
 ---
 name: I_FISCALYEARVARIANTTEXT
-description: Fiscalyearvarianttext
+description: "Fiscalyearvarianttext"
 app_component: BC-SRV-ASF-FYV-2CL
 software_component: SAP_BASIS
 release_state: released

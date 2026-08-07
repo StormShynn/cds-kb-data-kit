@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSITMSTAGGEDTOCTNTP
-description: Fldlogsitmstaggedtoctntp
+description: "Fldlogsitmstaggedtoctntp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

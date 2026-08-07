@@ -1,6 +1,6 @@
 ---
 name: I_CL_GLACCTADDLATTRIBUTES
-description: CL Glacctaddlattributes
+description: "CL Glacctaddlattributes"
 app_component: FI-LOC-FI-CL
 software_component: SAPSCORE
 release_state: released

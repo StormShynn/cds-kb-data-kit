@@ -1,13 +1,13 @@
 ---
 name: C_BUSSOLNORDENTPROJDTESITN1
-description: Customer Project Date Changed Situation
+description: "Customer Project Date Changed Situation"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSSOLNORDENTPROJDTESITN1')/$value
-semantic_en: Customer Project Date Changed Situation
+semantic_en: "Customer Project Date Changed Situation"
 tags:
   - CRM
   - bo:businesspartner

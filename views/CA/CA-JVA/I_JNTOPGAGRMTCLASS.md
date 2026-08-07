@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTCLASS
-description: Jntopgagrmtclass
+description: "Jntopgagrmtclass"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

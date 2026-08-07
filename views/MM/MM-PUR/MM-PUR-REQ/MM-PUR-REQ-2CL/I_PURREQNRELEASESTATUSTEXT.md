@@ -1,6 +1,6 @@
 ---
 name: I_PURREQNRELEASESTATUSTEXT
-description: Purreqnreleasestatustext
+description: "Purreqnreleasestatustext"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

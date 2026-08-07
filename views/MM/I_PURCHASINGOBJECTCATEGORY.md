@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGOBJECTCATEGORY
-description: Purchasingobjectcategory
+description: "Purchasingobjectcategory"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

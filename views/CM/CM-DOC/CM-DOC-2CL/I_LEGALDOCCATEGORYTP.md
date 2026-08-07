@@ -1,6 +1,6 @@
 ---
 name: I_LEGALDOCCATEGORYTP
-description: Legaldoccategorytp
+description: "Legaldoccategorytp"
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

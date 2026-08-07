@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTADDRESS
-description: Business PartnerADDRESS
+description: "Business PartnerADDRESS"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

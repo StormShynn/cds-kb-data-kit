@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSEMAILADDRESS_2
-description: Addressemailaddress 2
+description: "Addressemailaddress 2"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

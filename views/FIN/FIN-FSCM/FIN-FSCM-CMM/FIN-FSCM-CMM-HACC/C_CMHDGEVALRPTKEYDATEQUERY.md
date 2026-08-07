@@ -1,13 +1,13 @@
 ---
 name: C_CMHDGEVALRPTKEYDATEQUERY
-description: CMMF Hedge Acc Eval Report Keydate - Qry
+description: "CMMF Hedge Acc Eval Report Keydate - Qry"
 app_component: FIN-FSCM-CMM-HACC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMHDGEVALRPTKEYDATEQUERY')/$value
-semantic_en: CMMF Hedge Acc Eval Report Keydate - Qry
+semantic_en: "CMMF Hedge Acc Eval Report Keydate - Qry"
 tags:
   - FIN
   - bo:purchaseorder

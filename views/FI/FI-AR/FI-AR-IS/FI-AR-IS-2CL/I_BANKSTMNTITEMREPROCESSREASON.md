@@ -1,22 +1,22 @@
 ---
 name: I_BANKSTMNTITEMREPROCESSREASON
-description: This basic CDS view provides you with access to the bank statement reprocessing reason. It is associated with I_BankStmntItmReprocessRsnName, which provides an explanation for each reason code. This CDS view provides you with the necessary information to answer the following business question: What is the reason for reprocessing a bank statement item?
+description: "This basic CDS view provides you with access to the bank statement reprocessing reason. It is associated with I_BankStmntItmReprocessRsnName, which provides an explanation for each reason code. This CDS view provides you with the necessary information to answer the following business question: What is the reason for reprocessing a bank statement item?"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKSTMNTITEMREPROCESSREASON')/$value
-semantic_en: This basic CDS view provides you with access to the bank statement reprocessing reason. It is associated with I_BankStmntItmReprocessRsnName, which provides an explanation for each reason code. This CDS view provides you with the necessary information to answer the following business question: What is the reason for reprocessing a bank statement item?
-semantic_vi: Bank Statement Item Reprocessing Reason — CDS view giao diện dựa trên feb_repro_rrc.
+semantic_en: "This basic CDS view provides you with access to the bank statement reprocessing reason. It is associated with I_BankStmntItmReprocessRsnName, which provides an explanation for each reason code. This CDS view provides you with the necessary information to answer the following business question: What is the reason for reprocessing a bank statement item?"
+semantic_vi: "Bank Statement Item Reprocessing Reason — CDS view giao diện dựa trên feb_repro_rrc."
 keywords:
-  - bank
-  - statement
-  - item
-  - reprocessing
-  - reason
-  - stmnt
-  - reprocess
+  - "bank"
+  - "statement"
+  - "item"
+  - "reprocessing"
+  - "reason"
+  - "stmnt"
+  - "reprocess"
 tags:
   - FI
   - bo:salesorder

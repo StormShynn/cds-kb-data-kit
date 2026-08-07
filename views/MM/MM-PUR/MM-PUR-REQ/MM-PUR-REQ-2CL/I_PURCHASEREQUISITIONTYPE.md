@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEREQUISITIONTYPE
-description: Purchase RequisitionUISITIONTYPE
+description: "Purchase RequisitionUISITIONTYPE"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

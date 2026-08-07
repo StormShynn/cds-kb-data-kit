@@ -1,6 +1,6 @@
 ---
 name: I_DSD_SETTLEMENTDOCUMENTITEM
-description: Dsd Settlementdocumentitem
+description: "Dsd Settlementdocumentitem"
 app_component: LE-DSD
 software_component: SAPSCORE
 release_state: released

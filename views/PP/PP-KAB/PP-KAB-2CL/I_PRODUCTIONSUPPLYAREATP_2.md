@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONSUPPLYAREATP_2
-description: Productionsupplyareatp 2
+description: "Productionsupplyareatp 2"
 app_component: PP-KAB-2CL
 software_component: SAPSCORE
 release_state: released

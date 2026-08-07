@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTRFUNDCRCYBYEQUITYGRPTP
-description: Jntvntrfundcrcybyequitygrptp
+description: "Jntvntrfundcrcybyequitygrptp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

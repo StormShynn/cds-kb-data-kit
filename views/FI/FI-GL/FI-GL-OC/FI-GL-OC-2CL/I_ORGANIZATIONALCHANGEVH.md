@@ -1,6 +1,6 @@
 ---
 name: I_ORGANIZATIONALCHANGEVH
-description: Organizationalchangevh
+description: "Organizationalchangevh"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

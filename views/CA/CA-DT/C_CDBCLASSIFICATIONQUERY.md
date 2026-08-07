@@ -1,6 +1,6 @@
 ---
 name: C_CDBCLASSIFICATIONQUERY
-description: Cdbclassificationquery
+description: "Cdbclassificationquery"
 app_component: CA-DT
 software_component: SAPPCORE_H
 release_state: released

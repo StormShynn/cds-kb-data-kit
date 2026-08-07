@@ -1,6 +1,6 @@
 ---
 name: I_CUSTADDRDEPDNTEXTIDENTIFIER
-description: Custaddrdepdntextidentifier
+description: "Custaddrdepdntextidentifier"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

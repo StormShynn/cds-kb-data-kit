@@ -1,6 +1,6 @@
 ---
 name: I_PURORDERHISTORYCATEGORYTEXT
-description: Purorderhistorycategorytext
+description: "Purorderhistorycategorytext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

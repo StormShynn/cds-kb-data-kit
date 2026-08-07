@@ -1,24 +1,24 @@
 ---
 name: C_CUSTOMERRETURNRATEQRY
-description: This CDS view provides customer return rates by various dimensions such as sales organization, customer group, sold-to-party, product, and time period, among others. The customer return rates are either value-based or quantity-based. The CDS view provides the prerequisites for answering the following business questions: What items have been returned? What are the top return reasons? How many items have been returned? What is the returned value? Are there customers with a very high return rate? Are there products with a very high return rate? How do customer return rates change over time?
+description: "This CDS view provides customer return rates by various dimensions such as sales organization, customer group, sold-to-party, product, and time period, among others. The customer return rates are either value-based or quantity-based. The CDS view provides the prerequisites for answering the following business questions: What items have been returned? What are the top return reasons? How many items have been returned? What is the returned value? Are there customers with a very high return rate? Are there products with a very high return rate? How do customer return rates change over time?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTOMERRETURNRATEQRY')/$value
-semantic_en: This CDS view provides customer return rates by various dimensions such as sales organization, customer group, sold-to-party, product, and time period, among others. The customer return rates are either value-based or quantity-based. The CDS view provides the prerequisites for answering the following business questions: What items have been returned? What are the top return reasons? How many items have been returned? What is the returned value? Are there customers with a very high return rate? Are there products with a very high return rate? How do customer return rates change over time?
-semantic_vi: Customer Return Rate - Query — CDS view tiêu dùng dựa trên I_CustomerReturnRateCube.
+semantic_en: "This CDS view provides customer return rates by various dimensions such as sales organization, customer group, sold-to-party, product, and time period, among others. The customer return rates are either value-based or quantity-based. The CDS view provides the prerequisites for answering the following business questions: What items have been returned? What are the top return reasons? How many items have been returned? What is the returned value? Are there customers with a very high return rate? Are there products with a very high return rate? How do customer return rates change over time?"
+semantic_vi: "Customer Return Rate - Query — CDS view tiêu dùng dựa trên I_CustomerReturnRateCube."
 keywords:
-  - Customer Return Rate - Query
-  - customer
-  - return
-  - rate
-  - query
-  - sales
-  - document
-  - item
-  - category
+  - "Customer Return Rate - Query"
+  - "customer"
+  - "return"
+  - "rate"
+  - "query"
+  - "sales"
+  - "document"
+  - "item"
+  - "category"
 tags:
   - SD
   - bo:businesspartner

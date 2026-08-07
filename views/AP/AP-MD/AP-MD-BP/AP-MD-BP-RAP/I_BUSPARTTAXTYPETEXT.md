@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTTAXTYPETEXT
-description: Business PartnerTAXTYPETEXT
+description: "Business PartnerTAXTYPETEXT"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNPROFITCENTERFORELIMT
-description: Cnsldtn Profit Center for Elim - Text
+description: "Cnsldtn Profit Center for Elim - Text"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPROFITCENTERFORELIMT')/$value
-semantic_en: Cnsldtn Profit Center for Elim - Text
+semantic_en: "Cnsldtn Profit Center for Elim - Text"
 tags:
   - FIN
   - bo:companycode

@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPORDPLANNINGSTATUST
-description: Transportation Order Planning Status - Text
+description: "Transportation Order Planning Status - Text"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPORDPLANNINGSTATUST')/$value
-semantic_en: Transportation Order Planning Status - Text
+semantic_en: "Transportation Order Planning Status - Text"
 tags:
   - TM
   - bo:purchaseorder

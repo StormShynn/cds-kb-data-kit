@@ -1,6 +1,6 @@
 ---
 name: I_PRMTHBRPLDPOWRKFLWCARD
-description: Prmthbrpldpowrkflwcard
+description: "Prmthbrpldpowrkflwcard"
 app_component: MM-PUR-HUB-PO-2CL
 software_component: SAPSCORE
 release_state: released

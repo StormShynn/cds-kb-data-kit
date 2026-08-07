@@ -1,13 +1,13 @@
 ---
 name: I_PROCESSMESSAGECATEGORYTEXT
-description: Process Message Category - Text
+description: "Process Message Category - Text"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROCESSMESSAGECATEGORYTEXT')/$value
-semantic_en: Process Message Category - Text
+semantic_en: "Process Message Category - Text"
 tags:
   - PP
   - component:PP-VDM-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_PRJBLGELMENTRSRCETYPETEXT
-description: Prjblgelmentrsrcetypetext
+description: "Prjblgelmentrsrcetypetext"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PRICINGDATECONTROLTXT
-description: Pricingdatecontroltxt
+description: "Pricingdatecontroltxt"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

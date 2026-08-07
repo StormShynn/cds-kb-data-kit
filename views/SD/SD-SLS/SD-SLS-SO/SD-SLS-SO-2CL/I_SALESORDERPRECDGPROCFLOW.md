@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERPRECDGPROCFLOW
-description: Sales OrderPRECDGPROCFLOW
+description: "Sales OrderPRECDGPROCFLOW"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

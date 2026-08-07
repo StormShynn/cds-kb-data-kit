@@ -60,7 +60,7 @@
   <p class="subtitle">Paste an exact field name or table/CDS-view name found in ABAP code (SE11, DDL, a search on the SAP Business Accelerator Hub) to instantly find every local CDS view that uses it — no need to search the Hub website by hand.</p>
 
   <input id="q" type="text" placeholder="e.g. MATNR, CompanyCode, BKPF, I_JournalEntryItem…" autofocus autocomplete="off" spellcheck="false" />
-  <p class="hint">Exact matches shown first; substring matches below. Case-insensitive.</p>
+  <p class="hint">Exact matches shown first; substring matches below. Case-insensitive. View names open on github.com (rendered markdown) — needs internet.</p>
 
   <div id="results"></div>
 
@@ -78,10 +78,16 @@
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
 
+  // Points at the file's github.com blob view — free rendered markdown
+  // (tables, headers, the DDL code fence) instead of building/maintaining a
+  // local renderer; the repo is public, so no login is required, but this
+  // one action does need internet (the search itself stays offline).
+  const GITHUB_BLOB_BASE = "https://github.com/StormShynn/cds-kb-data-kit/blob/main/";
+
   function viewLink(name) {
     const p = DATA.P[name];
     const label = escapeHtml(name);
-    return p ? '<a href="' + escapeHtml(p) + '" target="_blank" rel="noopener">' + label + '</a>' : '<span style="font-family:ui-monospace,monospace;font-weight:600">' + label + '</span>';
+    return p ? '<a href="' + escapeHtml(GITHUB_BLOB_BASE + p) + '" target="_blank" rel="noopener">' + label + '</a>' : '<span style="font-family:ui-monospace,monospace;font-weight:600">' + label + '</span>';
   }
 
   function fieldRow([view, isKey]) {

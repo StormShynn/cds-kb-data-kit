@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJTEAMMBRENTLMNTTP_3
-description: Entprojteammbrentlmnttp 3
+description: "Entprojteammbrentlmnttp 3"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

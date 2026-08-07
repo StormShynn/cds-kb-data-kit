@@ -1,13 +1,13 @@
 ---
 name: C_FUNDACCTGBALANCEITEMQ
-description: Fund Accounting Balance Item - Query
+description: "Fund Accounting Balance Item - Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNDACCTGBALANCEITEMQ')/$value
-semantic_en: Fund Accounting Balance Item - Query
+semantic_en: "Fund Accounting Balance Item - Query"
 tags:
   - PSM
   - account

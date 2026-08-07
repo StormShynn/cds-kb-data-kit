@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSPERSONNAME
-description: Addresspersonname
+description: "Addresspersonname"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

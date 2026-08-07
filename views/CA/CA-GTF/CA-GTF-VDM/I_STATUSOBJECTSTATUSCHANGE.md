@@ -1,6 +1,6 @@
 ---
 name: I_STATUSOBJECTSTATUSCHANGE
-description: Statusobjectstatuschange
+description: "Statusobjectstatuschange"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_MKTDATAIMPLIEDVOLATILITYCUBE
-description: This CDS view provides the prerequisites for answering the following business questions: How is the implied volatility defined in the system?
+description: "This CDS view provides the prerequisites for answering the following business questions: How is the implied volatility defined in the system?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MKTDATAIMPLIEDVOLATILITYCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How is the implied volatility defined in the system?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How is the implied volatility defined in the system?"
 tags:
   - FIN
   - bo:companycode

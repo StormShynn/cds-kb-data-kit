@@ -1,6 +1,6 @@
 ---
 name: D_BILLGDOCGETLATESTPDFIR
-description: D Billgdocgetlatestpdfir
+description: "D Billgdocgetlatestpdfir"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

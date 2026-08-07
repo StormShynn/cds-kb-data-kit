@@ -1,6 +1,6 @@
 ---
 name: I_PRMTHBRPLDPURREQNEMAILPARAM
-description: Prmthbrpldpurreqnemailparam
+description: "Prmthbrpldpurreqnemailparam"
 app_component: MM-PUR-HUB-PR-2CL
 software_component: SAPSCORE
 release_state: released

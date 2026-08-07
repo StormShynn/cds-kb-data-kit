@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALREQLANGUAGEAPI01
-description: Suplrevalreqlanguageapi 01
+description: "Suplrevalreqlanguageapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

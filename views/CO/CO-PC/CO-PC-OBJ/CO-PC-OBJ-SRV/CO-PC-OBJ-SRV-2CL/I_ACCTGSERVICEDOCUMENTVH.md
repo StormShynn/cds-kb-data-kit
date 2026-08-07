@@ -1,6 +1,6 @@
 ---
 name: I_ACCTGSERVICEDOCUMENTVH
-description: ACCTGService DocumentUMENTVH
+description: "ACCTGService DocumentUMENTVH"
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

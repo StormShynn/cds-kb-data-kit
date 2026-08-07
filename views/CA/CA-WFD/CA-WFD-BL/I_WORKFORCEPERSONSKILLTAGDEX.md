@@ -1,13 +1,13 @@
 ---
 name: I_WORKFORCEPERSONSKILLTAGDEX
-description: Workforce Person Skill Tag
+description: "Workforce Person Skill Tag"
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKFORCEPERSONSKILLTAGDEX')/$value
-semantic_en: Workforce Person Skill Tag
+semantic_en: "Workforce Person Skill Tag"
 tags:
   - CA
   - bo:salesorder

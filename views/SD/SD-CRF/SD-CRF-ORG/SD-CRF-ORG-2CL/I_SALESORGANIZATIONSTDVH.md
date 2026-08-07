@@ -1,13 +1,13 @@
 ---
 name: I_SALESORGANIZATIONSTDVH
-description: Sales Organization
+description: "Sales Organization"
 app_component: SD-CRF-ORG-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SALESORGANIZATIONSTDVH')/$value
-semantic_en: Sales Organization
+semantic_en: "Sales Organization"
 tags:
   - SD
   - bo:salesorder

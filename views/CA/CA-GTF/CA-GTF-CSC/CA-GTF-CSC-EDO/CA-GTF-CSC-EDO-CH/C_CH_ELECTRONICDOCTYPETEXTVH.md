@@ -1,6 +1,6 @@
 ---
 name: C_CH_ELECTRONICDOCTYPETEXTVH
-description: CH Electronicdoctypetextvh
+description: "CH Electronicdoctypetextvh"
 app_component: CA-GTF-CSC-EDO-CH
 software_component: SAPSCORE
 release_state: released

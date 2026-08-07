@@ -1,26 +1,26 @@
 ---
 name: ZR_ORDER000.DDLS
-description: ###GENERATED Core Data Service Entity
+description: "###GENERATED Core Data Service Entity"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/SAP-samples/abap-platform-rap-transactional-outbox-with-bgpf/blob/8cd3f64340db119e1e8ae0c30e0da650c584fd9c/src/zr_order000.ddls.asddls
-semantic_en: ###GENERATED Core Data Service Entity — CDS view based on zorder.
-semantic_vi: ###GENERATED Core Data Service Entity — CDS view dựa trên zorder.
+semantic_en: "###GENERATED Core Data Service Entity — CDS view based on zorder."
+semantic_vi: "###GENERATED Core Data Service Entity — CDS view dựa trên zorder."
 keywords:
-  - ###generated
-  - core
-  - data
-  - service
-  - entity
-  - order
-  - date
-  - customer
-  - name
-  - local
-  - created
+  - "###generated"
+  - "core"
+  - "data"
+  - "service"
+  - "entity"
+  - "order"
+  - "date"
+  - "customer"
+  - "name"
+  - "local"
+  - "created"
 tags:
   - CO
   - component:CO

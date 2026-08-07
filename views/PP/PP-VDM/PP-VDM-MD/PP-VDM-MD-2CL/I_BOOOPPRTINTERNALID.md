@@ -1,23 +1,23 @@
 ---
 name: I_BOOOPPRTINTERNALID
-description: BOO Operation PRT Internal ID
+description: "BOO Operation PRT Internal ID"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BOOOPPRTINTERNALID')/$value
-semantic_en: BOO Operation PRT Internal ID
-semantic_vi: BOO Operation PRT Internal ID — CDS view giao diện dựa trên BOO Operation PRT Internal ID.
+semantic_en: "BOO Operation PRT Internal ID"
+semantic_vi: "BOO Operation PRT Internal ID — CDS view giao diện dựa trên BOO Operation PRT Internal ID."
 keywords:
-  - boo
-  - operation
-  - prt
-  - internal
-  - bill
-  - operations
-  - type
-  - group
+  - "boo"
+  - "operation"
+  - "prt"
+  - "internal"
+  - "bill"
+  - "operations"
+  - "type"
+  - "group"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

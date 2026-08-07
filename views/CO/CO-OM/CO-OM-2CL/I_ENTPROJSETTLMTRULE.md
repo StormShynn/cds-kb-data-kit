@@ -1,13 +1,13 @@
 ---
 name: I_ENTPROJSETTLMTRULE
-description: Enterprise Project Settlement Rule
+description: "Enterprise Project Settlement Rule"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPROJSETTLMTRULE')/$value
-semantic_en: Enterprise Project Settlement Rule
+semantic_en: "Enterprise Project Settlement Rule"
 tags:
   - CO
   - bo:project

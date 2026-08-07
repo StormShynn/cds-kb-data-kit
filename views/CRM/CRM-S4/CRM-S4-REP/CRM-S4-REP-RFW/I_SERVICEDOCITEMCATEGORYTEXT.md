@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCITEMCATEGORYTEXT
-description: Service DocumentITEMCATEGORYTEXT
+description: "Service DocumentITEMCATEGORYTEXT"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FISCALDATEFUNCTION
-description: Fiscaldatefunction
+description: "Fiscaldatefunction"
 app_component: CA-GTF-GL-CAL
 software_component: SAP_BASIS
 release_state: released

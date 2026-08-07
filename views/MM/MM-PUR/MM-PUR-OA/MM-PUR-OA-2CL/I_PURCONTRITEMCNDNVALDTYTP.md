@@ -1,6 +1,6 @@
 ---
 name: I_PURCONTRITEMCNDNVALDTYTP
-description: Purcontritemcndnvaldtytp
+description: "Purcontritemcndnvaldtytp"
 app_component: MM-PUR-OA-2CL
 software_component: SAPSCORE
 release_state: released

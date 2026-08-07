@@ -1,6 +1,6 @@
 ---
 name: I_KANBANCONTAINERSTATUSSTDVH
-description: Kanbancontainerstatusstdvh
+description: "Kanbancontainerstatusstdvh"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

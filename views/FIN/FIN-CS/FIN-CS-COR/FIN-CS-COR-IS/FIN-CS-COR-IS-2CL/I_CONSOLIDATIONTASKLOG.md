@@ -1,6 +1,6 @@
 ---
 name: I_CONSOLIDATIONTASKLOG
-description: ConsolidationIONTASKLOG
+description: "ConsolidationIONTASKLOG"
 app_component: FIN-CS-COR-IS-2CL
 software_component: SAPSCORE
 release_state: released

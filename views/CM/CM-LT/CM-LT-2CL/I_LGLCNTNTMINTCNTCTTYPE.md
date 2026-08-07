@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMINTCNTCTTYPE
-description: Lglcntntmintcntcttype
+description: "Lglcntntmintcntcttype"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

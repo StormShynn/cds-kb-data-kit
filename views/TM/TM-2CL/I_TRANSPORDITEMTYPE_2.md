@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDITEMTYPE_2
-description: Transporditemtype 2
+description: "Transporditemtype 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

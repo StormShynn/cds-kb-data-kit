@@ -1,13 +1,13 @@
 ---
 name: I_PERFORMANCEOBLIGATIONROLETXT
-description: Performance Obligation Role - Text
+description: "Performance Obligation Role - Text"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERFORMANCEOBLIGATIONROLETXT')/$value
-semantic_en: Performance Obligation Role - Text
+semantic_en: "Performance Obligation Role - Text"
 tags:
   - FI
   - component:FI-RA-2CL

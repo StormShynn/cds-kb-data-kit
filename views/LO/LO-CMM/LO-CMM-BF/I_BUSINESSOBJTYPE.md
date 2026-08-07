@@ -1,18 +1,18 @@
 ---
 name: I_BUSINESSOBJTYPE
-description: Business Object Type
+description: "Business Object Type"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSOBJTYPE')/$value
-semantic_en: Business Object Type
-semantic_vi: Business Object Type — CDS view giao diện dựa trên tojtb.
+semantic_en: "Business Object Type"
+semantic_vi: "Business Object Type — CDS view giao diện dựa trên tojtb."
 keywords:
-  - business
-  - object
-  - type
+  - "business"
+  - "object"
+  - "type"
 tags:
   - LO
   - bo:salesorder

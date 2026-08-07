@@ -1,6 +1,6 @@
 ---
 name: I_REPRORATAMETHODCALC
-description: Reproratamethodcalc
+description: "Reproratamethodcalc"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

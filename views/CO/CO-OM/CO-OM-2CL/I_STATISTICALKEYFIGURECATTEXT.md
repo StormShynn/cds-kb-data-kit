@@ -1,13 +1,13 @@
 ---
 name: I_STATISTICALKEYFIGURECATTEXT
-description: This CDS view provides the prerequisites for answering the following business questions: What’s the descriptive name of statistical key figure categories?
+description: "This CDS view provides the prerequisites for answering the following business questions: What’s the descriptive name of statistical key figure categories?"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STATISTICALKEYFIGURECATTEXT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What’s the descriptive name of statistical key figure categories?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What’s the descriptive name of statistical key figure categories?"
 tags:
   - CO
   - bo:companycode

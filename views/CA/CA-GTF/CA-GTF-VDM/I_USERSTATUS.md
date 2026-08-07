@@ -1,6 +1,6 @@
 ---
 name: I_USERSTATUS
-description: Userstatus
+description: "Userstatus"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released

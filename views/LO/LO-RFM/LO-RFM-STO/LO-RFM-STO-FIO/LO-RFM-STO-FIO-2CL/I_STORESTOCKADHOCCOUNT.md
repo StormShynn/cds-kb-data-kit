@@ -1,13 +1,13 @@
 ---
 name: I_STORESTOCKADHOCCOUNT
-description: Store Stock Ad hoc Count
+description: "Store Stock Ad hoc Count"
 app_component: LO-RFM-STO-FIO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STORESTOCKADHOCCOUNT')/$value
-semantic_en: Store Stock Ad hoc Count
+semantic_en: "Store Stock Ad hoc Count"
 tags:
   - LO
   - bo:inventory

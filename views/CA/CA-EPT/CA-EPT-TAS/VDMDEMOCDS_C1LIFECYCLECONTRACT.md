@@ -1,6 +1,6 @@
 ---
 name: VDMDEMOCDS_C1LIFECYCLECONTRACT
-description: Vdmdemocds C 1LIFECYCLECONTRACT
+description: "Vdmdemocds C 1LIFECYCLECONTRACT"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

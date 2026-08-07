@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCUSTOMERGROUPTP
-description: Cnsldtncustomergrouptp
+description: "Cnsldtncustomergrouptp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

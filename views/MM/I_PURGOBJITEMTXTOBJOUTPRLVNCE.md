@@ -1,6 +1,6 @@
 ---
 name: I_PURGOBJITEMTXTOBJOUTPRLVNCE
-description: Purgobjitemtxtobjoutprlvnce
+description: "Purgobjitemtxtobjoutprlvnce"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

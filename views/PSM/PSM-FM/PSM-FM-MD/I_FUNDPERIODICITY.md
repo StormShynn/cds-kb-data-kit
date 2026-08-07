@@ -1,6 +1,6 @@
 ---
 name: I_FUNDPERIODICITY
-description: Fundperiodicity
+description: "Fundperiodicity"
 app_component: PSM-FM-MD
 software_component: SAPSCORE
 release_state: released

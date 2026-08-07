@@ -1,6 +1,6 @@
 ---
 name: I_OPERATIONALACCTGDOCTAXITEM
-description: Operationalacctgdoctaxitem
+description: "Operationalacctgdoctaxitem"
 app_component: FI-LOC-VAT-GEN
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_PRODSTRUCLOGACCMSECUREASSGMT
-description: Logistics Access Control Management
+description: "Logistics Access Control Management"
 app_component: PLM-WUI-OBJ-PSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODSTRUCLOGACCMSECUREASSGMT')/$value
-semantic_en: Logistics Access Control Management
+semantic_en: "Logistics Access Control Management"
 tags:
   - PLM
   - component:PLM-WUI-OBJ-PSM-2CL

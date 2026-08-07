@@ -1,6 +1,6 @@
 ---
 name: D_PROJBILLGREQDELETER
-description: D Projbillgreqdeleter
+description: "D Projbillgreqdeleter"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

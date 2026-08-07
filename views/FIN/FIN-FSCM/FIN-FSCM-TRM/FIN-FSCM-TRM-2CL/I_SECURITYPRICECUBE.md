@@ -1,13 +1,13 @@
 ---
 name: I_SECURITYPRICECUBE
-description: This CDS view provides the prerequisites for answering the following business questions: What is the security price of a security class on a specific date? What is the currency for the security class? Where is the security class exchanged and what is the name of the exchange?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the security price of a security class on a specific date? What is the currency for the security class? Where is the security class exchanged and what is the name of the exchange?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SECURITYPRICECUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the security price of a security class on a specific date? What is the currency for the security class? Where is the security class exchanged and what is the name of the exchange?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the security price of a security class on a specific date? What is the currency for the security class? Where is the security class exchanged and what is the name of the exchange?"
 tags:
   - FIN
   - bo:companycode

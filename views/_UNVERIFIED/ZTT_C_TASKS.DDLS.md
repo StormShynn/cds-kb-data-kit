@@ -1,23 +1,23 @@
 ---
 name: ZTT_C_TASKS.DDLS
-description: Consumption: Tasks
+description: "Consumption: Tasks"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_c_tasks.ddls.asddls
-semantic_en: Consumption: Tasks — CDS view based on ZTT_I_TASKS.
-semantic_vi: Consumption: Tasks — CDS view dựa trên ZTT_I_TASKS.
+semantic_en: "Consumption: Tasks — CDS view based on ZTT_I_TASKS."
+semantic_vi: "Consumption: Tasks — CDS view dựa trên ZTT_I_TASKS."
 keywords:
-  - consumption:
-  - tasks
-  - project
-  - code
-  - description
-  - status
-  - progress
-  - criticality
+  - "consumption:"
+  - "tasks"
+  - "project"
+  - "code"
+  - "description"
+  - "status"
+  - "progress"
+  - "criticality"
 tags:
   - CO
   - component:CO

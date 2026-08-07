@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERSEQUENCEVH
-description: Production OrderSEQUENCEVH
+description: "Production OrderSEQUENCEVH"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

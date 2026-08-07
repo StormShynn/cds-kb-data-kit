@@ -1,13 +1,13 @@
 ---
 name: C_JOINTVENTUREACCTGDTLHIERQRY
-description: Joint Venture Acctg Dtl Hierarchy Query
+description: "Joint Venture Acctg Dtl Hierarchy Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_JOINTVENTUREACCTGDTLHIERQRY')/$value
-semantic_en: Joint Venture Acctg Dtl Hierarchy Query
+semantic_en: "Joint Venture Acctg Dtl Hierarchy Query"
 tags:
   - IS
   - component:IS-OIL-PRA

@@ -1,13 +1,13 @@
 ---
 name: I_CASEATTRIBUTEPROFILE
-description: Case Attribute Profile
+description: "Case Attribute Profile"
 app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEATTRIBUTEPROFILE')/$value
-semantic_en: Case Attribute Profile
+semantic_en: "Case Attribute Profile"
 tags:
   - BC
   - BC-SRV

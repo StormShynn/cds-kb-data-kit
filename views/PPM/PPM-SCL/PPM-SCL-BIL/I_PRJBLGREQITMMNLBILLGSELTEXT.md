@@ -1,6 +1,6 @@
 ---
 name: I_PRJBLGREQITMMNLBILLGSELTEXT
-description: Prjblgreqitmmnlbillgseltext
+description: "Prjblgreqitmmnlbillgseltext"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

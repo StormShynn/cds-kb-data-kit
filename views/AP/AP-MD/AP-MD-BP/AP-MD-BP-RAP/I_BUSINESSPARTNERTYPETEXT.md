@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERTYPETEXT
-description: Business PartnerTYPETEXT
+description: "Business PartnerTYPETEXT"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

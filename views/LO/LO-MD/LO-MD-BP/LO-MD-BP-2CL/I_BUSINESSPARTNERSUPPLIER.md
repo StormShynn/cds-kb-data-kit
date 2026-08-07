@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERSUPPLIER
-description: Business PartnerSUPPLIER
+description: "Business PartnerSUPPLIER"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

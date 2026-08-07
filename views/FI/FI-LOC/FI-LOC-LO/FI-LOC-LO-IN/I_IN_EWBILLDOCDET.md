@@ -1,6 +1,6 @@
 ---
 name: I_IN_EWBILLDOCDET
-description: IN Ewbilldocdet
+description: "IN Ewbilldocdet"
 app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released

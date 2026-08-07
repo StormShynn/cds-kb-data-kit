@@ -1,17 +1,17 @@
 ---
 name: I_GLACCTLINEITMSUBLDGRITMTYPEC
-description: General Ledger Account Line Item based on SubLedger Item Type - Cube
+description: "General Ledger Account Line Item based on SubLedger Item Type - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTLINEITMSUBLDGRITMTYPEC')/$value
-semantic_en: General Ledger Account Line Item based on SubLedger Item Type - Cube
+semantic_en: "General Ledger Account Line Item based on SubLedger Item Type - Cube"
 keywords:
-  - GL Account Line Item Calculated Based on SubLedger Item Type
-  - GL Account Line Item Calculated Based on SubLedger Item Type
-  - GL Account Line Item Calculated Based on SubLedger Item Type
+  - "GL Account Line Item Calculated Based on SubLedger Item Type"
+  - "GL Account Line Item Calculated Based on SubLedger Item Type"
+  - "GL Account Line Item Calculated Based on SubLedger Item Type"
 tags:
   - CO
   - account

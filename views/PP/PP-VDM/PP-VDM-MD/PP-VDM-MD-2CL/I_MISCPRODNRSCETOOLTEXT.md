@@ -1,6 +1,6 @@
 ---
 name: I_MISCPRODNRSCETOOLTEXT
-description: Miscprodnrscetooltext
+description: "Miscprodnrscetooltext"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

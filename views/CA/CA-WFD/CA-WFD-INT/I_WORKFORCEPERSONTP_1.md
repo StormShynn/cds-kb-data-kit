@@ -1,6 +1,6 @@
 ---
 name: I_WORKFORCEPERSONTP_1
-description: Workforcepersontp 1
+description: "Workforcepersontp 1"
 app_component: CA-WFD-INT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PRODCMPLNCLOGSDOCSTATUSMSGTP
-description: Prodcmplnclogsdocstatusmsgtp
+description: "Prodcmplnclogsdocstatusmsgtp"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALSTOCK_2
-description: Material Stock 2
+description: "Material Stock 2"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

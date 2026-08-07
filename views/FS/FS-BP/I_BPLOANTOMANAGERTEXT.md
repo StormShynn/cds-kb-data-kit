@@ -1,6 +1,6 @@
 ---
 name: I_BPLOANTOMANAGERTEXT
-description: Bploantomanagertext
+description: "Bploantomanagertext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

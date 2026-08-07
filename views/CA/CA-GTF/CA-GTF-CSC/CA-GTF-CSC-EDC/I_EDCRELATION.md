@@ -1,6 +1,6 @@
 ---
 name: I_EDCRELATION
-description: Edcrelation
+description: "Edcrelation"
 app_component: CA-GTF-CSC-EDC
 software_component: SAPSCORE
 release_state: released

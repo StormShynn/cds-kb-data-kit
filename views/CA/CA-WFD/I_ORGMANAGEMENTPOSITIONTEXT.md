@@ -1,13 +1,13 @@
 ---
 name: I_ORGMANAGEMENTPOSITIONTEXT
-description: Table for Position with Text
+description: "Table for Position with Text"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ORGMANAGEMENTPOSITIONTEXT')/$value
-semantic_en: Table for Position with Text
+semantic_en: "Table for Position with Text"
 tags:
   - CA
   - bo:purchaseorder

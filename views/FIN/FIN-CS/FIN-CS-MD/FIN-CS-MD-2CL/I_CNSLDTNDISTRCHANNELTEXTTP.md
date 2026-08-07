@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNDISTRCHANNELTEXTTP
-description: Cnsldtndistrchanneltexttp
+description: "Cnsldtndistrchanneltexttp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

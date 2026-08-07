@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONSUPPLYAREATEXT
-description: Productionsupplyareatext
+description: "Productionsupplyareatext"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

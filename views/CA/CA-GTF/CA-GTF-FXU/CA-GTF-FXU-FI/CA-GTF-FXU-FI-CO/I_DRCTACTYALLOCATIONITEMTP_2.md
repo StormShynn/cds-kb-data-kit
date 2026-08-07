@@ -1,6 +1,6 @@
 ---
 name: I_DRCTACTYALLOCATIONITEMTP_2
-description: Drctactyallocationitemtp 2
+description: "Drctactyallocationitemtp 2"
 app_component: CA-GTF-FXU-FI-CO
 software_component: SAPSCORE
 release_state: released

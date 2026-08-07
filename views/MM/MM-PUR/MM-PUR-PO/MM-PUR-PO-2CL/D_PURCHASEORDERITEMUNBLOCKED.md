@@ -1,6 +1,6 @@
 ---
 name: D_PURCHASEORDERITEMUNBLOCKED
-description: D Purchase OrderITEMUNBLOCKED
+description: "D Purchase OrderITEMUNBLOCKED"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_APMPAYMENTORDER
-description: APM Payment Order
+description: "APM Payment Order"
 app_component: FIN-FSCM-PF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APMPAYMENTORDER')/$value
-semantic_en: APM Payment Order
+semantic_en: "APM Payment Order"
 tags:
   - FIN
   - component:FIN-FSCM-PF

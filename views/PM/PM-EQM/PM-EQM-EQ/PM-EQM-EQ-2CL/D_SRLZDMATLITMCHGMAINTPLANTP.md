@@ -1,6 +1,6 @@
 ---
 name: D_SRLZDMATLITMCHGMAINTPLANTP
-description: D Srlzdmatlitmchgmaintplantp
+description: "D Srlzdmatlitmchgmaintplantp"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

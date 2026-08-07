@@ -1,6 +1,6 @@
 ---
 name: SSB_CDS2_TEST_VIEW
-description: Ssb Cds 2 Test View
+description: "Ssb Cds 2 Test View"
 app_component: CA-GTF-ANL
 software_component: SAPPCORE_H
 release_state: released

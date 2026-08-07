@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDEROPERATION_DEX
-description: Maintorderoperation (Data Extraction)
+description: "Maintorderoperation (Data Extraction)"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_OUTBDELIVPACKGSTATUSCHANGED
-description: D Outbdelivpackgstatuschanged
+description: "D Outbdelivpackgstatuschanged"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

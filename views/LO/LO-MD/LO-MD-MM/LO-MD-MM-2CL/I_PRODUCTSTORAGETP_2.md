@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTSTORAGETP_2
-description: Productstoragetp 2
+description: "Productstoragetp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

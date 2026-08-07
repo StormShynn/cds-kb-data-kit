@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECBDGTPAYTITEMCUBE
-description: Budget vs Payment Items - Cube
+description: "Budget vs Payment Items - Cube"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECBDGTPAYTITEMCUBE')/$value
-semantic_en: Budget vs Payment Items - Cube
+semantic_en: "Budget vs Payment Items - Cube"
 tags:
   - PSM
   - budget

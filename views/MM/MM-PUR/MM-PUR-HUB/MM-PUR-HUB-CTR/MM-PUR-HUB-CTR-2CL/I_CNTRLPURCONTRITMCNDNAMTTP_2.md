@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLPURCONTRITMCNDNAMTTP_2
-description: Cntrlpurcontritmcndnamttp 2
+description: "Cntrlpurcontritmcndnamttp 2"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

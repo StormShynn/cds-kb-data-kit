@@ -1,6 +1,6 @@
 ---
 name: D_COSTACCTGDOCUMENTREVERSEP
-description: D Costacctgdocumentreversep
+description: "D Costacctgdocumentreversep"
 app_component: CA-GTF-FXU-FI-CO
 software_component: SAPSCORE
 release_state: released

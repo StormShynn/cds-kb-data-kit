@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALUSERDEFINEDCRITERIA
-description: Suplrevaluserdefinedcriteria
+description: "Suplrevaluserdefinedcriteria"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

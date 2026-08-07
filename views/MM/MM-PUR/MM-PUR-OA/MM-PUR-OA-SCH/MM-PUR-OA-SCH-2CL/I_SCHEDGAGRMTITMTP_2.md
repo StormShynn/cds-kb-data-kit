@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTITMTP_2
-description: Schedgagrmtitmtp 2
+description: "Schedgagrmtitmtp 2"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

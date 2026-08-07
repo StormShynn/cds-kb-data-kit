@@ -1,6 +1,6 @@
 ---
 name: ABP_BEHV_PAR_SHARE
-description: Abp Behv Par Share
+description: "Abp Behv Par Share"
 app_component: BC-ABA-LA
 software_component: SAP_BASIS
 release_state: released

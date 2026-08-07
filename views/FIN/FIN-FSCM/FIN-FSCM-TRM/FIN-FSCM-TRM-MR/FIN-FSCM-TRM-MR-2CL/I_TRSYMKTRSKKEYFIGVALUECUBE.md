@@ -1,13 +1,13 @@
 ---
 name: I_TRSYMKTRSKKEYFIGVALUECUBE
-description: This CDS view shows the market risk key figure values on single position level. The shown market risk key figures are calculated and stored using the Calculate Market Risk Key Figures job template. This CDS view provides the prerequisites for answering the following business questions: What are the market risk key figure values in evaluation currency of a financial transaction for one or multiple market risk key figure sets? What are the market risk key figure values in display currency of a financial transaction for one or multiple market risk key figure sets?
+description: "This CDS view shows the market risk key figure values on single position level. The shown market risk key figures are calculated and stored using the Calculate Market Risk Key Figures job template. This CDS view provides the prerequisites for answering the following business questions: What are the market risk key figure values in evaluation currency of a financial transaction for one or multiple market risk key figure sets? What are the market risk key figure values in display currency of a financial transaction for one or multiple market risk key figure sets?"
 app_component: FIN-FSCM-TRM-MR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRSYMKTRSKKEYFIGVALUECUBE')/$value
-semantic_en: This CDS view shows the market risk key figure values on single position level. The shown market risk key figures are calculated and stored using the Calculate Market Risk Key Figures job template. This CDS view provides the prerequisites for answering the following business questions: What are the market risk key figure values in evaluation currency of a financial transaction for one or multiple market risk key figure sets? What are the market risk key figure values in display currency of a financial transaction for one or multiple market risk key figure sets?
+semantic_en: "This CDS view shows the market risk key figure values on single position level. The shown market risk key figures are calculated and stored using the Calculate Market Risk Key Figures job template. This CDS view provides the prerequisites for answering the following business questions: What are the market risk key figure values in evaluation currency of a financial transaction for one or multiple market risk key figure sets? What are the market risk key figure values in display currency of a financial transaction for one or multiple market risk key figure sets?"
 tags:
   - FIN
   - bo:companycode

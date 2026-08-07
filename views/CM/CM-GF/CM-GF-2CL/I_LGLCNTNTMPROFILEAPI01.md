@@ -1,6 +1,6 @@
 ---
 name: I_LGLCNTNTMPROFILEAPI01
-description: Lglcntntmprofileapi 01
+description: "Lglcntntmprofileapi 01"
 app_component: CM-GF-2CL
 software_component: SAPSCORE
 release_state: released

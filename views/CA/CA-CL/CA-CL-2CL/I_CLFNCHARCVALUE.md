@@ -1,6 +1,6 @@
 ---
 name: I_CLFNCHARCVALUE
-description: Clfncharcvalue
+description: "Clfncharcvalue"
 app_component: CA-CL-2CL
 software_component: SAP_BASIS
 release_state: released

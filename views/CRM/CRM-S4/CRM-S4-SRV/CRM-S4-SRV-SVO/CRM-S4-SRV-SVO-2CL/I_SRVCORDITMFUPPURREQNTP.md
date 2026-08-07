@@ -1,6 +1,6 @@
 ---
 name: I_SRVCORDITMFUPPURREQNTP
-description: Srvcorditmfuppurreqntp
+description: "Srvcorditmfuppurreqntp"
 app_component: CRM-S4-SRV-SVO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,28 +1,28 @@
 ---
 name: C_CMMDTYPOSENDOFDAYQRY
-description: Commodity Position End Of Day Query
+description: "Commodity Position End Of Day Query"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPOSENDOFDAYQRY')/$value
-semantic_en: Commodity Position End Of Day Query
-semantic_vi: Commodity Position End Of Day Query — CDS view tiêu dùng dựa trên I_CmmdtyPositionRepQtyCube.
+semantic_en: "Commodity Position End Of Day Query"
+semantic_vi: "Commodity Position End Of Day Query — CDS view tiêu dùng dựa trên I_CmmdtyPositionRepQtyCube."
 keywords:
-  - commodity
-  - position
-  - end
-  - day
-  - query
-  - transaction
-  - type
-  - pricing
-  - condition
-  - evaluation
-  - date
-  - company
-  - code
+  - "commodity"
+  - "position"
+  - "end"
+  - "day"
+  - "query"
+  - "transaction"
+  - "type"
+  - "pricing"
+  - "condition"
+  - "evaluation"
+  - "date"
+  - "company"
+  - "code"
 tags:
   - LO
   - bo:purchaseorder

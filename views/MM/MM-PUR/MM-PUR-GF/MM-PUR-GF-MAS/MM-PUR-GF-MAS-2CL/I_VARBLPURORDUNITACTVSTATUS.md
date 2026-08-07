@@ -1,6 +1,6 @@
 ---
 name: I_VARBLPURORDUNITACTVSTATUS
-description: Varblpurordunitactvstatus
+description: "Varblpurordunitactvstatus"
 app_component: MM-PUR-GF-MAS-2CL
 software_component: SAPSCORE
 release_state: released

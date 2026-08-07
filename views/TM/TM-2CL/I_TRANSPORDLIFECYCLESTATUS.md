@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPORDLIFECYCLESTATUS
-description: Transportation Order Life Cycle Status
+description: "Transportation Order Life Cycle Status"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPORDLIFECYCLESTATUS')/$value
-semantic_en: Transportation Order Life Cycle Status
+semantic_en: "Transportation Order Life Cycle Status"
 tags:
   - TM
   - bo:purchaseorder

@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTTELEPHONENUMBERTP_3
-description: Business PartnerTELEPHONENUMBERTP 3
+description: "Business PartnerTELEPHONENUMBERTP 3"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

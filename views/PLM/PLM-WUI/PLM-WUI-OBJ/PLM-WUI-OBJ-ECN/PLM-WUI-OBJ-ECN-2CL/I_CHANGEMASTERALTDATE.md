@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMASTERALTDATE
-description: This CDS view provides the prerequisites for answering the following business questions: How many alternative dates have been defined for a given change master? What is the exact date value of an alternative date ID?
+description: "This CDS view provides the prerequisites for answering the following business questions: How many alternative dates have been defined for a given change master? What is the exact date value of an alternative date ID?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERALTDATE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How many alternative dates have been defined for a given change master? What is the exact date value of an alternative date ID?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How many alternative dates have been defined for a given change master? What is the exact date value of an alternative date ID?"
 tags:
   - PLM
   - bo:companycode

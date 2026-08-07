@@ -1,27 +1,27 @@
 ---
 name: C_COMARGPERDCOMPARISONQRY_2
-description: Company Margin Comparison Template Query
+description: "Company Margin Comparison Template Query"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMARGPERDCOMPARISONQRY_2')/$value
-semantic_en: Company Margin Comparison Template Query
-semantic_vi: Company Margin Comparison Template Query — CDS view tiêu dùng dựa trên Company Margin Comparison Template Query.
+semantic_en: "Company Margin Comparison Template Query"
+semantic_vi: "Company Margin Comparison Template Query — CDS view tiêu dùng dựa trên Company Margin Comparison Template Query."
 keywords:
-  - Company Margin Comparison Template Query
-  - company
-  - margin
-  - comparison
-  - template
-  - query
-  - ledger
-  - source
-  - fiscal
-  - year
-  - variant
-  - period
+  - "Company Margin Comparison Template Query"
+  - "company"
+  - "margin"
+  - "comparison"
+  - "template"
+  - "query"
+  - "ledger"
+  - "source"
+  - "fiscal"
+  - "year"
+  - "variant"
+  - "period"
 tags:
   - CO
   - bo:salesorder

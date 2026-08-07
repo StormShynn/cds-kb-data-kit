@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNBUDGETVERSIONDRVTN
-description: Drvtn of Consolidation Budget Version
+description: "Drvtn of Consolidation Budget Version"
 app_component: FIN-CS-BV-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNBUDGETVERSIONDRVTN')/$value
-semantic_en: Drvtn of Consolidation Budget Version
+semantic_en: "Drvtn of Consolidation Budget Version"
 tags:
   - FIN
   - bo:salesorder

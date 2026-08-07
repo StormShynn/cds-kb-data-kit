@@ -1,6 +1,6 @@
 ---
 name: I_FAMILYNAMEPREFIX
-description: Familynameprefix
+description: "Familynameprefix"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

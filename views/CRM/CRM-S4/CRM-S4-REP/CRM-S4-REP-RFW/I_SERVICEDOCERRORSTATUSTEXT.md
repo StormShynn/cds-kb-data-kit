@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCERRORSTATUSTEXT
-description: Service DocumentERRORSTATUSTEXT
+description: "Service DocumentERRORSTATUSTEXT"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

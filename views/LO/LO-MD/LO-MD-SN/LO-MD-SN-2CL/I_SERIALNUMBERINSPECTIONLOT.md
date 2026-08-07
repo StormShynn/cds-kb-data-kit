@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERINSPECTIONLOT
-description: Serial NumberINSPECTIONLOT
+description: "Serial NumberINSPECTIONLOT"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

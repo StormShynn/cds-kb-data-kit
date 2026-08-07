@@ -1,6 +1,6 @@
 ---
 name: I_SERIALNUMBERPURCHASEORDER
-description: Serial NumberPurchase Order
+description: "Serial NumberPurchase Order"
 app_component: LO-MD-SN-2CL
 software_component: SAPSCORE
 release_state: released

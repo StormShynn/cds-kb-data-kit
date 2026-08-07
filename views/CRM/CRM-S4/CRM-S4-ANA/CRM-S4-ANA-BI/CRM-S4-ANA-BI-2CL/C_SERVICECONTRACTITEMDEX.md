@@ -1,6 +1,6 @@
 ---
 name: C_SERVICECONTRACTITEMDEX
-description: Servicecontractitemdex
+description: "Servicecontractitemdex"
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

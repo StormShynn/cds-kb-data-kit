@@ -1,6 +1,6 @@
 ---
 name: D_BOMCOMPAREBOM1VERSUSBOM2P
-description: D Bomcomparebom 1VERSUSBOM 2P
+description: "D Bomcomparebom 1VERSUSBOM 2P"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

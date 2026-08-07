@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERGROUPINGTEXT
-description: Business PartnerGROUPINGTEXT
+description: "Business PartnerGROUPINGTEXT"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

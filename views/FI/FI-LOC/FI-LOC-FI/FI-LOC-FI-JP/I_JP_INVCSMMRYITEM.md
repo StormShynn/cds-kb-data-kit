@@ -1,6 +1,6 @@
 ---
 name: I_JP_INVCSMMRYITEM
-description: JP Invcsmmryitem
+description: "JP Invcsmmryitem"
 app_component: FI-LOC-FI-JP
 software_component: SAPSCORE
 release_state: released

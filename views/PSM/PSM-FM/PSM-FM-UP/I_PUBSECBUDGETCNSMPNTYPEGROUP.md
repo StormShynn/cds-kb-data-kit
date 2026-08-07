@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECBUDGETCNSMPNTYPEGROUP
-description: Pubsecbudgetcnsmpntypegroup
+description: "Pubsecbudgetcnsmpntypegroup"
 app_component: PSM-FM-UP
 software_component: SAPSCORE
 release_state: released

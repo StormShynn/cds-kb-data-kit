@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTBASICSTDVH
-description: Billing DocumentUMENTBASICSTDVH
+description: "Billing DocumentUMENTBASICSTDVH"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

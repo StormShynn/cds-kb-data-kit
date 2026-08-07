@@ -1,6 +1,6 @@
 ---
 name: I_BR_SDBUSINESSTRANSACTIONVH
-description: BR Sdbusinesstransactionvh
+description: "BR Sdbusinesstransactionvh"
 app_component: FI-LOC-TXS
 software_component: SAPSCORE
 release_state: released

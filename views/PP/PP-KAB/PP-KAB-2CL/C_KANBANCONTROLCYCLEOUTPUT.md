@@ -1,23 +1,23 @@
 ---
 name: C_KANBANCONTROLCYCLEOUTPUT
-description: This CDS view forms the basis for the predelivered Output Management form template Kanban Control Cycle (PP_KANBAN_CONTROLCYCLE) and its data source FDP_PP_KANBAN_CONTROLCYCLE_SRV. This CDS view provides the data to answer the following business questions: Which fields are included in the form data provider for Kanban Control Cycle Output Management? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view forms the basis for the predelivered Output Management form template Kanban Control Cycle (PP_KANBAN_CONTROLCYCLE) and its data source FDP_PP_KANBAN_CONTROLCYCLE_SRV. This CDS view provides the data to answer the following business questions: Which fields are included in the form data provider for Kanban Control Cycle Output Management? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: PP-KAB-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_KANBANCONTROLCYCLEOUTPUT')/$value
-semantic_en: This CDS view forms the basis for the predelivered Output Management form template Kanban Control Cycle (PP_KANBAN_CONTROLCYCLE) and its data source FDP_PP_KANBAN_CONTROLCYCLE_SRV. This CDS view provides the data to answer the following business questions: Which fields are included in the form data provider for Kanban Control Cycle Output Management? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Kanban Control Cycle Output — CDS view tiêu dùng dựa trên I_KanbanControlCycle.
+semantic_en: "This CDS view forms the basis for the predelivered Output Management form template Kanban Control Cycle (PP_KANBAN_CONTROLCYCLE) and its data source FDP_PP_KANBAN_CONTROLCYCLE_SRV. This CDS view provides the data to answer the following business questions: Which fields are included in the form data provider for Kanban Control Cycle Output Management? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Kanban Control Cycle Output — CDS view tiêu dùng dựa trên I_KanbanControlCycle."
 keywords:
-  - Kanban Control Cycle Output
-  - kanban
-  - control
-  - cycle
-  - output
-  - product
-  - name
-  - plant
+  - "Kanban Control Cycle Output"
+  - "kanban"
+  - "control"
+  - "cycle"
+  - "output"
+  - "product"
+  - "name"
+  - "plant"
 tags:
   - PP
   - bo:companycode

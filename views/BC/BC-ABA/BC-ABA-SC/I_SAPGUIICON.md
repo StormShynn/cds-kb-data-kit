@@ -1,6 +1,6 @@
 ---
 name: I_SAPGUIICON
-description: Sapguiicon
+description: "Sapguiicon"
 app_component: BC-ABA-SC
 software_component: SAP_BASIS
 release_state: released

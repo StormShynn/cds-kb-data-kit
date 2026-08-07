@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPOSTGLEVELHIERNODE_2
-description: Cnsldtnpostglevelhiernode 2
+description: "Cnsldtnpostglevelhiernode 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

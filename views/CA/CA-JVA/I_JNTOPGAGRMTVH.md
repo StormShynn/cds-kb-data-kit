@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTVH
-description: Jntopgagrmtvh
+description: "Jntopgagrmtvh"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

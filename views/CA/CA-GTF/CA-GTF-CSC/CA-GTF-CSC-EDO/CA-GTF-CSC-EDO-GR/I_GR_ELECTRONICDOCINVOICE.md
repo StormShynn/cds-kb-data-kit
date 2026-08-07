@@ -1,6 +1,6 @@
 ---
 name: I_GR_ELECTRONICDOCINVOICE
-description: GR Electronicdocinvoice
+description: "GR Electronicdocinvoice"
 app_component: CA-GTF-CSC-EDO-GR
 software_component: SAPSCORE
 release_state: released

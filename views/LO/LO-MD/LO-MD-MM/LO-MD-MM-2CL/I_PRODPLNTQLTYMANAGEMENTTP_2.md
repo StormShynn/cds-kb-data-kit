@@ -1,6 +1,6 @@
 ---
 name: I_PRODPLNTQLTYMANAGEMENTTP_2
-description: Prodplntqltymanagementtp 2
+description: "Prodplntqltymanagementtp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

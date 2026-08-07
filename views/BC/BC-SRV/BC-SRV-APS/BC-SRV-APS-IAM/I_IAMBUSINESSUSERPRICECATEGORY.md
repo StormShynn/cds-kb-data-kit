@@ -1,6 +1,6 @@
 ---
 name: I_IAMBUSINESSUSERPRICECATEGORY
-description: Iambusinessuserpricecategory
+description: "Iambusinessuserpricecategory"
 app_component: BC-SRV-APS-IAM
 software_component: SAP_CLOUD
 release_state: released

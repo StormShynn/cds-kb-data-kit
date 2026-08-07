@@ -1,6 +1,6 @@
 ---
 name: I_SESACCOUNTASSIGNMENTAPI01
-description: Sesaccountassignmentapi 01
+description: "Sesaccountassignmentapi 01"
 app_component: MM-PUR-SVC-SES-2CL
 software_component: SAPSCORE
 release_state: released

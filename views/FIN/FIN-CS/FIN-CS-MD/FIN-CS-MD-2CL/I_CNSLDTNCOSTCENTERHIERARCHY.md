@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNCOSTCENTERHIERARCHY
-description: CNSLDTNCost CenterHIERARCHY
+description: "CNSLDTNCost CenterHIERARCHY"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

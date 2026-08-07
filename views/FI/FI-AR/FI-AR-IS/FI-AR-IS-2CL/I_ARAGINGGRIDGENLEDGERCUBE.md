@@ -1,25 +1,25 @@
 ---
 name: I_ARAGINGGRIDGENLEDGERCUBE
-description: This CDS view provides you with an overview of the overdue receivables and receivables that will become due in the future based on the key date you enter. You can use the CDS view for many different reports, such as creating an aggregated view of the receivables per overdue interval and future due interval for an account, or a drill down to individual open receivable items. This CDS view provides the data to answer the following business questions, for example: How high are the overall total receivables? Which customers have total receivables? What are the open receivable items for a customer? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views. This CDS view can be used in the Custom CDS Views key user app. Recommendation If you use this CDS view to build custom CDS views, only add master data fields.
+description: "This CDS view provides you with an overview of the overdue receivables and receivables that will become due in the future based on the key date you enter. You can use the CDS view for many different reports, such as creating an aggregated view of the receivables per overdue interval and future due interval for an account, or a drill down to individual open receivable items. This CDS view provides the data to answer the following business questions, for example: How high are the overall total receivables? Which customers have total receivables? What are the open receivable items for a customer? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views. This CDS view can be used in the Custom CDS Views key user app. Recommendation If you use this CDS view to build custom CDS views, only add master data fields."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARAGINGGRIDGENLEDGERCUBE')/$value
-semantic_en: This CDS view provides you with an overview of the overdue receivables and receivables that will become due in the future based on the key date you enter. You can use the CDS view for many different reports, such as creating an aggregated view of the receivables per overdue interval and future due interval for an account, or a drill down to individual open receivable items. This CDS view provides the data to answer the following business questions, for example: How high are the overall total receivables? Which customers have total receivables? What are the open receivable items for a customer? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views. This CDS view can be used in the Custom CDS Views key user app. Recommendation If you use this CDS view to build custom CDS views, only add master data fields.
-semantic_vi: I_ARAGINGGRIDGENLEDGERCUBE — CDS view tổng hợp dựa trên P_ARAgingIntervalAssignment.
+semantic_en: "This CDS view provides you with an overview of the overdue receivables and receivables that will become due in the future based on the key date you enter. You can use the CDS view for many different reports, such as creating an aggregated view of the receivables per overdue interval and future due interval for an account, or a drill down to individual open receivable items. This CDS view provides the data to answer the following business questions, for example: How high are the overall total receivables? Which customers have total receivables? What are the open receivable items for a customer? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views. This CDS view can be used in the Custom CDS Views key user app. Recommendation If you use this CDS view to build custom CDS views, only add master data fields."
+semantic_vi: "I_ARAGINGGRIDGENLEDGERCUBE — CDS view tổng hợp dựa trên P_ARAgingIntervalAssignment."
 keywords:
-  - araginggridgenledgercube
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
-  - ledger
-  - line
-  - item
+  - "araginggridgenledgercube"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
+  - "ledger"
+  - "line"
+  - "item"
 tags:
   - FI
   - account

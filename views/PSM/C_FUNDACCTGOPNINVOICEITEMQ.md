@@ -1,13 +1,13 @@
 ---
 name: C_FUNDACCTGOPNINVOICEITEMQ
-description: Open Customer and Vendor Invoice - Query
+description: "Open Customer and Vendor Invoice - Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNDACCTGOPNINVOICEITEMQ')/$value
-semantic_en: Open Customer and Vendor Invoice - Query
+semantic_en: "Open Customer and Vendor Invoice - Query"
 tags:
   - PSM
   - bo:billingdocument

@@ -1,6 +1,6 @@
 ---
 name: C_CONCURACCTGDOCITMRLTNDEX
-description: Concuracctgdocitmrltndex
+description: "Concuracctgdocitmrltndex"
 app_component: BNS-CON-SE-S4-FIN
 software_component: SAPSCORE
 release_state: released

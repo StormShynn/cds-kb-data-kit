@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRTYPEBLOCKUSAGETEXT
-description: This CDS view exposes fixed values that indicate If the condition contract type is blocked.
+description: "This CDS view exposes fixed values that indicate If the condition contract type is blocked."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRTYPEBLOCKUSAGETEXT')/$value
-semantic_en: This CDS view exposes fixed values that indicate If the condition contract type is blocked.
+semantic_en: "This CDS view exposes fixed values that indicate If the condition contract type is blocked."
 tags:
   - LO
   - bo:companycode

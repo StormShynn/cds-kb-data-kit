@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASECONTRACTTP
-description: Purchase ContractTP
+description: "Purchase ContractTP"
 app_component: MM-PUR-OA-2CL
 software_component: SAPSCORE
 release_state: released

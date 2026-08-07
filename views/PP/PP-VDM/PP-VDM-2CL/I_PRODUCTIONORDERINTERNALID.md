@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERINTERNALID
-description: Production OrderINTERNALID
+description: "Production OrderINTERNALID"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

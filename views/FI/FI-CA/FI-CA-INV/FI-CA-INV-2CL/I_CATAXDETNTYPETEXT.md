@@ -1,6 +1,6 @@
 ---
 name: I_CATAXDETNTYPETEXT
-description: Cataxdetntypetext
+description: "Cataxdetntypetext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

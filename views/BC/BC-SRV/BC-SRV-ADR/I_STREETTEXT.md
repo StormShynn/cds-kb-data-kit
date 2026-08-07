@@ -1,6 +1,6 @@
 ---
 name: I_STREETTEXT
-description: Streettext
+description: "Streettext"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_EARMARKEDFUNDS_DOCCATEGORY
-description: Earmarkedfunds Doccategory
+description: "Earmarkedfunds Doccategory"
 app_component: FI-FM
 software_component: SAPSCORE
 release_state: released

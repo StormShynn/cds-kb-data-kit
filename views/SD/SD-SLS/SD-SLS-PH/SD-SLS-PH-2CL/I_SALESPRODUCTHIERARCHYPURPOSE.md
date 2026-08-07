@@ -1,6 +1,6 @@
 ---
 name: I_SALESPRODUCTHIERARCHYPURPOSE
-description: Salesproducthierarchypurpose
+description: "Salesproducthierarchypurpose"
 app_component: SD-SLS-PH-2CL
 software_component: SAPSCORE
 release_state: released

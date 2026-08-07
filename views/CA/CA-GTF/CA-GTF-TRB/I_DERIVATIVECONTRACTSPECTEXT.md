@@ -1,13 +1,13 @@
 ---
 name: I_DERIVATIVECONTRACTSPECTEXT
-description: Derivative Contract Specification - Text
+description: "Derivative Contract Specification - Text"
 app_component: CA-GTF-TRB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DERIVATIVECONTRACTSPECTEXT')/$value
-semantic_en: Derivative Contract Specification - Text
+semantic_en: "Derivative Contract Specification - Text"
 tags:
   - CA
   - bo:companycode

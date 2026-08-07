@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTDOCTYPE
-description: Settlmtdoctype
+description: "Settlmtdoctype"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

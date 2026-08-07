@@ -1,13 +1,13 @@
 ---
 name: I_PUBSECCTRLOBJGRANT
-description: Public Sector Control Object for a Grant
+description: "Public Sector Control Object for a Grant"
 app_component: PSM-FM-BU-AC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PUBSECCTRLOBJGRANT')/$value
-semantic_en: Public Sector Control Object for a Grant
+semantic_en: "Public Sector Control Object for a Grant"
 tags:
   - PSM
   - component:PSM-FM-BU-AC

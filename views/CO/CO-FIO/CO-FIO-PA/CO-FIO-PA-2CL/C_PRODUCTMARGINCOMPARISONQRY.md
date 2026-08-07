@@ -1,27 +1,27 @@
 ---
 name: C_PRODUCTMARGINCOMPARISONQRY
-description: This CDS view is designed to provide a comprehensive analysis of product margins by comparing financial data across different fiscal periods. It enables users to evaluate the performance of products by analyzing various financial metrics such as revenue, cost of goods sold, overhead costs, and contribution margins. The view facilitates the comparison of current fiscal period data with previous periods, allowing for insights into trends and variances in product profitability. This CDS view provides the data to answer the following business questions: What is the product margin for the current fiscal period compared to previous periods? How do input and output price variances affect the overall product margin? What is the impact of resource usage and lot size variances on product profitability? How do sales deductions and revenue adjustments influence recognized revenue? What are the contributions of fixed and variable costs to the overall cost of goods sold? How do overhead costs such as administrative, sales, marketing, and R&amp;D affect contribution margins? What is the margin per unit and margin percentage for contribution margins I and II? How does the current fiscal period's performance compare to the previous fiscal year period? What are the differences and percentage changes between the current fiscal period and the previous fiscal year period? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide a comprehensive analysis of product margins by comparing financial data across different fiscal periods. It enables users to evaluate the performance of products by analyzing various financial metrics such as revenue, cost of goods sold, overhead costs, and contribution margins. The view facilitates the comparison of current fiscal period data with previous periods, allowing for insights into trends and variances in product profitability. This CDS view provides the data to answer the following business questions: What is the product margin for the current fiscal period compared to previous periods? How do input and output price variances affect the overall product margin? What is the impact of resource usage and lot size variances on product profitability? How do sales deductions and revenue adjustments influence recognized revenue? What are the contributions of fixed and variable costs to the overall cost of goods sold? How do overhead costs such as administrative, sales, marketing, and R&amp;D affect contribution margins? What is the margin per unit and margin percentage for contribution margins I and II? How does the current fiscal period's performance compare to the previous fiscal year period? What are the differences and percentage changes between the current fiscal period and the previous fiscal year period? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODUCTMARGINCOMPARISONQRY')/$value
-semantic_en: This CDS view is designed to provide a comprehensive analysis of product margins by comparing financial data across different fiscal periods. It enables users to evaluate the performance of products by analyzing various financial metrics such as revenue, cost of goods sold, overhead costs, and contribution margins. The view facilitates the comparison of current fiscal period data with previous periods, allowing for insights into trends and variances in product profitability. This CDS view provides the data to answer the following business questions: What is the product margin for the current fiscal period compared to previous periods? How do input and output price variances affect the overall product margin? What is the impact of resource usage and lot size variances on product profitability? How do sales deductions and revenue adjustments influence recognized revenue? What are the contributions of fixed and variable costs to the overall cost of goods sold? How do overhead costs such as administrative, sales, marketing, and R&amp;D affect contribution margins? What is the margin per unit and margin percentage for contribution margins I and II? How does the current fiscal period's performance compare to the previous fiscal year period? What are the differences and percentage changes between the current fiscal period and the previous fiscal year period? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Product Margin Comparison - Query — CDS view tiêu dùng dựa trên Product Margin Comparison - Query.
+semantic_en: "This CDS view is designed to provide a comprehensive analysis of product margins by comparing financial data across different fiscal periods. It enables users to evaluate the performance of products by analyzing various financial metrics such as revenue, cost of goods sold, overhead costs, and contribution margins. The view facilitates the comparison of current fiscal period data with previous periods, allowing for insights into trends and variances in product profitability. This CDS view provides the data to answer the following business questions: What is the product margin for the current fiscal period compared to previous periods? How do input and output price variances affect the overall product margin? What is the impact of resource usage and lot size variances on product profitability? How do sales deductions and revenue adjustments influence recognized revenue? What are the contributions of fixed and variable costs to the overall cost of goods sold? How do overhead costs such as administrative, sales, marketing, and R&amp;D affect contribution margins? What is the margin per unit and margin percentage for contribution margins I and II? How does the current fiscal period's performance compare to the previous fiscal year period? What are the differences and percentage changes between the current fiscal period and the previous fiscal year period? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Product Margin Comparison - Query — CDS view tiêu dùng dựa trên Product Margin Comparison - Query."
 keywords:
-  - Product Margin Comparison - Query
-  - product
-  - margin
-  - comparison
-  - query
-  - currency
-  - field
-  - company
-  - code
-  - fiscal
-  - year
-  - ledger
+  - "Product Margin Comparison - Query"
+  - "product"
+  - "margin"
+  - "comparison"
+  - "query"
+  - "currency"
+  - "field"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "ledger"
 tags:
   - CO
   - bo:companycode

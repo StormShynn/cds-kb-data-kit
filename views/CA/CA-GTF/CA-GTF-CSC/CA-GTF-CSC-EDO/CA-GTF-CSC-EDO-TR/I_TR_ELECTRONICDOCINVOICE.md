@@ -1,13 +1,13 @@
 ---
 name: I_TR_ELECTRONICDOCINVOICE
-description: eDocument Turkey eInvoice
+description: "eDocument Turkey eInvoice"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TR_ELECTRONICDOCINVOICE')/$value
-semantic_en: eDocument Turkey eInvoice
+semantic_en: "eDocument Turkey eInvoice"
 tags:
   - CA
   - bo:billingdocument

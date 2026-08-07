@@ -1,13 +1,13 @@
 ---
 name: I_PRODNRTGINSPCHARACTERISTIC
-description: Inspection characteristic of prodn rtg
+description: "Inspection characteristic of prodn rtg"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNRTGINSPCHARACTERISTIC')/$value
-semantic_en: Inspection characteristic of prodn rtg
+semantic_en: "Inspection characteristic of prodn rtg"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

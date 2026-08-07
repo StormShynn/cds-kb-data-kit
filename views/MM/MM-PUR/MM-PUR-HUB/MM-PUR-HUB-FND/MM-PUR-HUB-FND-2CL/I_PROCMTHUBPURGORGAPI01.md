@@ -1,6 +1,6 @@
 ---
 name: I_PROCMTHUBPURGORGAPI01
-description: Procmthubpurgorgapi 01
+description: "Procmthubpurgorgapi 01"
 app_component: MM-PUR-HUB-FND-2CL
 software_component: SAPSCORE
 release_state: released

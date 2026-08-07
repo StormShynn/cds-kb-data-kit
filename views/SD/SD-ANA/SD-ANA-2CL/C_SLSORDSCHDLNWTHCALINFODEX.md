@@ -1,6 +1,6 @@
 ---
 name: C_SLSORDSCHDLNWTHCALINFODEX
-description: Slsordschdlnwthcalinfodex
+description: "Slsordschdlnwthcalinfodex"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released

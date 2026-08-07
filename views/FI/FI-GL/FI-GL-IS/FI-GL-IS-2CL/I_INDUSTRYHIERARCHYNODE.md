@@ -1,6 +1,6 @@
 ---
 name: I_INDUSTRYHIERARCHYNODE
-description: Industryhierarchynode
+description: "Industryhierarchynode"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

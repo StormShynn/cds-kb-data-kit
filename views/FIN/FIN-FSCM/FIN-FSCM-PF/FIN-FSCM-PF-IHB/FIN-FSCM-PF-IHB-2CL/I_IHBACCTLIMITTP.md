@@ -1,6 +1,6 @@
 ---
 name: I_IHBACCTLIMITTP
-description: Ihbacctlimittp
+description: "Ihbacctlimittp"
 app_component: FIN-FSCM-PF-IHB-2CL
 software_component: SAPSCORE
 release_state: released

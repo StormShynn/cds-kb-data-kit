@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECBDGTACTLITEMQRY2
-description: Budget and Commitment/Actual Items Query
+description: "Budget and Commitment/Actual Items Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECBDGTACTLITEMQRY2')/$value
-semantic_en: Budget and Commitment/Actual Items Query
+semantic_en: "Budget and Commitment/Actual Items Query"
 tags:
   - PSM
   - budget

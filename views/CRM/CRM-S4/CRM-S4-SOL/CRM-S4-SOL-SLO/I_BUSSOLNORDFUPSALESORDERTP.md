@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLNORDFUPSALESORDERTP
-description: BUSSOLNORDFUPSales OrderTP
+description: "BUSSOLNORDFUPSales OrderTP"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

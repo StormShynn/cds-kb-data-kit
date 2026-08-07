@@ -1,13 +1,13 @@
 ---
 name: I_CH_QUICKRESPONSEIBANCTRLDATA
-description: QRBILL Ctrl Data Config for Switzerland
+description: "QRBILL Ctrl Data Config for Switzerland"
 app_component: CA-GTF-CSC-CH
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CH_QUICKRESPONSEIBANCTRLDATA')/$value
-semantic_en: QRBILL Ctrl Data Config for Switzerland
+semantic_en: "QRBILL Ctrl Data Config for Switzerland"
 tags:
   - CA
   - bo:companycode

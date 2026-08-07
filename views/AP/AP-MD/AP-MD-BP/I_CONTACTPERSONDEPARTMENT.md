@@ -1,6 +1,6 @@
 ---
 name: I_CONTACTPERSONDEPARTMENT
-description: Contactpersondepartment
+description: "Contactpersondepartment"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

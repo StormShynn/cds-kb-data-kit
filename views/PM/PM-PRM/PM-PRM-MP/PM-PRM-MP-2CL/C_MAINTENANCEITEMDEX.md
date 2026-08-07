@@ -1,31 +1,31 @@
 ---
 name: C_MAINTENANCEITEMDEX
-description: This CDS view provides the data to answer the following business questions:
+description: "This CDS view provides the data to answer the following business questions:"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEITEMDEX')/$value
-semantic_en: This CDS view provides the data to answer the following business questions:
-semantic_vi: Maintenance Item Data Extractor — CDS view tiêu dùng dựa trên I_MaintenanceItemTechObj.
+semantic_en: "This CDS view provides the data to answer the following business questions:"
+semantic_vi: "Maintenance Item Data Extractor — CDS view tiêu dùng dựa trên I_MaintenanceItemTechObj."
 keywords:
-  - Maintenance Item Data
-  - maintenance
-  - item
-  - data
-  - extractor
-  - maint
-  - object
-  - acct
-  - assgmt
-  - nmbr
-  - planner
-  - group
-  - planning
-  - plant
-  - business
-  - area
+  - "Maintenance Item Data"
+  - "maintenance"
+  - "item"
+  - "data"
+  - "extractor"
+  - "maint"
+  - "object"
+  - "acct"
+  - "assgmt"
+  - "nmbr"
+  - "planner"
+  - "group"
+  - "planning"
+  - "plant"
+  - "business"
+  - "area"
 tags:
   - PM
   - component:PM-PRM-MP-2CL

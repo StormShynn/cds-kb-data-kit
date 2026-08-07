@@ -1,13 +1,13 @@
 ---
 name: I_LOSSALLOWANCELAYOUT
-description: Layout for credit loss allowance
+description: "Layout for credit loss allowance"
 app_component: FI-GL-GL-G-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOSSALLOWANCELAYOUT')/$value
-semantic_en: Layout for credit loss allowance
+semantic_en: "Layout for credit loss allowance"
 tags:
   - FI
   - component:FI-GL-GL-G-2CL

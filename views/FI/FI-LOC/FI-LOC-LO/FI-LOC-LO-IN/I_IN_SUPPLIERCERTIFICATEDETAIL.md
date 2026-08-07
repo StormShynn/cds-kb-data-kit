@@ -1,13 +1,13 @@
 ---
 name: I_IN_SUPPLIERCERTIFICATEDETAIL
-description: Supplier Certificate detail for India
+description: "Supplier Certificate detail for India"
 app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_SUPPLIERCERTIFICATEDETAIL')/$value
-semantic_en: Supplier Certificate detail for India
+semantic_en: "Supplier Certificate detail for India"
 tags:
   - FI
   - bo:companycode

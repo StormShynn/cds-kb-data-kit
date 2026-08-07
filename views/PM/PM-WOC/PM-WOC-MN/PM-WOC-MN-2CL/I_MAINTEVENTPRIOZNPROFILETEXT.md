@@ -1,13 +1,13 @@
 ---
 name: I_MAINTEVENTPRIOZNPROFILETEXT
-description: Prioritization Profile Maint Evnt - Text
+description: "Prioritization Profile Maint Evnt - Text"
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTEVENTPRIOZNPROFILETEXT')/$value
-semantic_en: Prioritization Profile Maint Evnt - Text
+semantic_en: "Prioritization Profile Maint Evnt - Text"
 tags:
   - PM
   - bo:companycode

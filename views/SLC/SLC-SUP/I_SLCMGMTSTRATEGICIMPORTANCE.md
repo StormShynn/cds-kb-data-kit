@@ -1,6 +1,6 @@
 ---
 name: I_SLCMGMTSTRATEGICIMPORTANCE
-description: Slcmgmtstrategicimportance
+description: "Slcmgmtstrategicimportance"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

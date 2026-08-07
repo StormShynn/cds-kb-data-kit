@@ -1,6 +1,6 @@
 ---
 name: D_SERVICEORDERDELETED
-description: D Service OrderDELETED
+description: "D Service OrderDELETED"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: C_SERVICEQUOTATIONITEMDEX
-description: Servicequotationitemdex
+description: "Servicequotationitemdex"
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

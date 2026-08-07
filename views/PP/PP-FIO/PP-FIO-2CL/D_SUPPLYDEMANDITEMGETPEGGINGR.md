@@ -1,6 +1,6 @@
 ---
 name: D_SUPPLYDEMANDITEMGETPEGGINGR
-description: D Supplydemanditemgetpeggingr
+description: "D Supplydemanditemgetpeggingr"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

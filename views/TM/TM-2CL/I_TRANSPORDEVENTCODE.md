@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPORDEVENTCODE
-description: Transp Order Event Code
+description: "Transp Order Event Code"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPORDEVENTCODE')/$value
-semantic_en: Transp Order Event Code
+semantic_en: "Transp Order Event Code"
 tags:
   - TM
   - bo:purchaseorder

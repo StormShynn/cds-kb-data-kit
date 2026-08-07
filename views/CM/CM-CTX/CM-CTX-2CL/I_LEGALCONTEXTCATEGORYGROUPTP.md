@@ -1,6 +1,6 @@
 ---
 name: I_LEGALCONTEXTCATEGORYGROUPTP
-description: Legalcontextcategorygrouptp
+description: "Legalcontextcategorygrouptp"
 app_component: CM-CTX-2CL
 software_component: SAPSCORE
 release_state: released

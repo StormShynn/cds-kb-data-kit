@@ -1,6 +1,6 @@
 ---
 name: I_CRDTACCTINFORMATIONTYPETEXT
-description: Crdtacctinformationtypetext
+description: "Crdtacctinformationtypetext"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

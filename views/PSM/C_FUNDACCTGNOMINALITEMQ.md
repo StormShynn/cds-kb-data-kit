@@ -1,13 +1,13 @@
 ---
 name: C_FUNDACCTGNOMINALITEMQ
-description: Nominal Values of the FSV - Query
+description: "Nominal Values of the FSV - Query"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNDACCTGNOMINALITEMQ')/$value
-semantic_en: Nominal Values of the FSV - Query
+semantic_en: "Nominal Values of the FSV - Query"
 tags:
   - PSM
   - component:PSM

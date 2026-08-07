@@ -1,23 +1,23 @@
 ---
 name: ZI_CDS_16_V2.DDLS
-description: Association Filter with Path Expression
+description: "Association Filter with Path Expression"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/amacarlupu/abapCloudGit_CDS/blob/64f04322a51d74ab636b5ea693a4690d26be0465/src/zi_cds_16_v2.ddls.asddls
-semantic_en: Association Filter with Path Expression — CDS view.
-semantic_vi: Association Filter with Path Expression — CDS view dựa trên Association Filter with Path Expression.
+semantic_en: "Association Filter with Path Expression — CDS view."
+semantic_vi: "Association Filter with Path Expression — CDS view dựa trên Association Filter with Path Expression."
 keywords:
-  - association
-  - filter
-  - with
-  - path
-  - expression
-  - travel
-  - price
-  - currency
+  - "association"
+  - "filter"
+  - "with"
+  - "path"
+  - "expression"
+  - "travel"
+  - "price"
+  - "currency"
 tags:
   - FI
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGSCHEDULE
-description: Cainvcgschedule
+description: "Cainvcgschedule"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

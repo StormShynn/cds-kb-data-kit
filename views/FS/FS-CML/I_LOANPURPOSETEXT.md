@@ -1,13 +1,13 @@
 ---
 name: I_LOANPURPOSETEXT
-description: Loan Purpose - Text
+description: "Loan Purpose - Text"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANPURPOSETEXT')/$value
-semantic_en: Loan Purpose - Text
+semantic_en: "Loan Purpose - Text"
 tags:
   - FS
   - bo:purchaseorder

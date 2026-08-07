@@ -1,6 +1,6 @@
 ---
 name: D_ENTERPRISEPROJECTCHANGED
-description: D Enterpriseprojectchanged
+description: "D Enterpriseprojectchanged"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

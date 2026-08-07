@@ -1,6 +1,6 @@
 ---
 name: D_PCLGSDCGETDNGRSGOODSEDIINFOR
-description: D Pclgsdcgetdngrsgoodsediinfor
+description: "D Pclgsdcgetdngrsgoodsediinfor"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

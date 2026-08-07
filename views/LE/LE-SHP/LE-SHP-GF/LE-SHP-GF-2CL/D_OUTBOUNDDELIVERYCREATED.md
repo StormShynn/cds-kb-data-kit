@@ -1,6 +1,6 @@
 ---
 name: D_OUTBOUNDDELIVERYCREATED
-description: D Outbound DeliveryCREATED
+description: "D Outbound DeliveryCREATED"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released

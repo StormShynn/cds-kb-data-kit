@@ -1,6 +1,6 @@
 ---
 name: I_EWM_WAREHOUSEORDER_2
-description: Ewm Warehouse Order 2
+description: "Ewm Warehouse Order 2"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

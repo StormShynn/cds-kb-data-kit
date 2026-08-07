@@ -1,6 +1,6 @@
 ---
 name: I_MAINTTASKLISTOPMATERIAL
-description: Maintenance Task ListOPMATERIAL
+description: "Maintenance Task ListOPMATERIAL"
 app_component: PM-2CL
 software_component: SAPSCORE
 release_state: released

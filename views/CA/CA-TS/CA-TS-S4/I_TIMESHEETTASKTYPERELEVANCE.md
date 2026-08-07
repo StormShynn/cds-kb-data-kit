@@ -1,6 +1,6 @@
 ---
 name: I_TIMESHEETTASKTYPERELEVANCE
-description: Timesheettasktyperelevance
+description: "Timesheettasktyperelevance"
 app_component: CA-TS-S4
 software_component: SAPSCORE
 release_state: released

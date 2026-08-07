@@ -1,6 +1,6 @@
 ---
 name: I_REPRORATAMETHODTEXT
-description: Reproratamethodtext
+description: "Reproratamethodtext"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

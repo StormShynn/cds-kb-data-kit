@@ -1,6 +1,6 @@
 ---
 name: D_BDRCRTEFRMEXTPAYTCARDP
-description: D Bdrcrtefrmextpaytcardp
+description: "D Bdrcrtefrmextpaytcardp"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

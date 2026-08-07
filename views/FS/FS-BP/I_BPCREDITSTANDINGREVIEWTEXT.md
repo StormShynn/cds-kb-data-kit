@@ -1,6 +1,6 @@
 ---
 name: I_BPCREDITSTANDINGREVIEWTEXT
-description: Bpcreditstandingreviewtext
+description: "Bpcreditstandingreviewtext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

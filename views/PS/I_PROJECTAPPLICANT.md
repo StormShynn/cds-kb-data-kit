@@ -1,13 +1,13 @@
 ---
 name: I_PROJECTAPPLICANT
-description: Project Applicant
+description: "Project Applicant"
 app_component: PS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTAPPLICANT')/$value
-semantic_en: Project Applicant
+semantic_en: "Project Applicant"
 tags:
   - PS
   - bo:project

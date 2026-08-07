@@ -1,6 +1,6 @@
 ---
 name: D_BILLGDOCCRTECANCLNDOCP
-description: D Billgdoccrtecanclndocp
+description: "D Billgdoccrtecanclndocp"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

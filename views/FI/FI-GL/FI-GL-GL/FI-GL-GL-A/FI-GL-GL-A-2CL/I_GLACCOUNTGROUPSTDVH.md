@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTGROUPSTDVH
-description: GL AccountGROUPSTDVH
+description: "GL AccountGROUPSTDVH"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

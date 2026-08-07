@@ -1,6 +1,6 @@
 ---
 name: I_BUPAIDENTIFICATIONTYPE
-description: Bupaidentificationtype
+description: "Bupaidentificationtype"
 app_component: BC-SRV-BP
 software_component: SAP_BASIS
 release_state: released

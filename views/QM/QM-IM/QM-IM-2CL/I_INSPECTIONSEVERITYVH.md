@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONSEVERITYVH
-description: Inspectionseverityvh
+description: "Inspectionseverityvh"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSINTEREST
-description: This CDS view provides information about the interest period and the interest condition details on a key date. This CDS view provides the prerequisites for answering the following business questions: What is the interest amount for a financial transaction on a key date? What is the interest rate of the interest flow? What is the interest category of the condition? What are the due date and the payment date of the interest flow? What is the fixing date for the interest rate of the interest flow?
+description: "This CDS view provides information about the interest period and the interest condition details on a key date. This CDS view provides the prerequisites for answering the following business questions: What is the interest amount for a financial transaction on a key date? What is the interest rate of the interest flow? What is the interest category of the condition? What are the due date and the payment date of the interest flow? What is the fixing date for the interest rate of the interest flow?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSINTEREST')/$value
-semantic_en: This CDS view provides information about the interest period and the interest condition details on a key date. This CDS view provides the prerequisites for answering the following business questions: What is the interest amount for a financial transaction on a key date? What is the interest rate of the interest flow? What is the interest category of the condition? What are the due date and the payment date of the interest flow? What is the fixing date for the interest rate of the interest flow?
+semantic_en: "This CDS view provides information about the interest period and the interest condition details on a key date. This CDS view provides the prerequisites for answering the following business questions: What is the interest amount for a financial transaction on a key date? What is the interest rate of the interest flow? What is the interest category of the condition? What are the due date and the payment date of the interest flow? What is the fixing date for the interest rate of the interest flow?"
 tags:
   - FIN
   - bo:companycode

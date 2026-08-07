@@ -1,6 +1,6 @@
 ---
 name: I_PAYTPRPSLBLKDFINACCOUNT
-description: Paytprpslblkdfinaccount
+description: "Paytprpslblkdfinaccount"
 app_component: FI-AP-AP-B-2CL
 software_component: SAPSCORE
 release_state: released

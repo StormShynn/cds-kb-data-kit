@@ -1,13 +1,13 @@
 ---
 name: C_PUBSECCMTMTAGING
-description: Public Sector Open Commitment Analysis
+description: "Public Sector Open Commitment Analysis"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PUBSECCMTMTAGING')/$value
-semantic_en: Public Sector Open Commitment Analysis
+semantic_en: "Public Sector Open Commitment Analysis"
 tags:
   - PSM
   - component:PSM-FM-IS

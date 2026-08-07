@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFOBJDPNSRCCDLINETP
-description: Varcnfobjdpnsrccdlinetp
+description: "Varcnfobjdpnsrccdlinetp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_PRODUCTIONORDERCREATED
-description: D Production OrderCREATED
+description: "D Production OrderCREATED"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

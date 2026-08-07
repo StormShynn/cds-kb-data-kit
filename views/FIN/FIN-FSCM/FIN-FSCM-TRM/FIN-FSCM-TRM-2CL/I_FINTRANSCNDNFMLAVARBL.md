@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSCNDNFMLAVARBL
-description: This CDS view provides detailed information for formula-based conditions (the Interest Category field is filled with the value 04 (Formula)). This CDS view provides the prerequisites for answering the following business questions: What are the variables of the formula reference? What is the percentage rate of the condition item?
+description: "This CDS view provides detailed information for formula-based conditions (the Interest Category field is filled with the value 04 (Formula)). This CDS view provides the prerequisites for answering the following business questions: What are the variables of the formula reference? What is the percentage rate of the condition item?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSCNDNFMLAVARBL')/$value
-semantic_en: This CDS view provides detailed information for formula-based conditions (the Interest Category field is filled with the value 04 (Formula)). This CDS view provides the prerequisites for answering the following business questions: What are the variables of the formula reference? What is the percentage rate of the condition item?
+semantic_en: "This CDS view provides detailed information for formula-based conditions (the Interest Category field is filled with the value 04 (Formula)). This CDS view provides the prerequisites for answering the following business questions: What are the variables of the formula reference? What is the percentage rate of the condition item?"
 tags:
   - FIN
   - bo:companycode

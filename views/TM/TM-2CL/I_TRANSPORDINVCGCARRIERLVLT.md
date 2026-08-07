@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDINVCGCARRIERLVLT
-description: Transpordinvcgcarrierlvlt
+description: "Transpordinvcgcarrierlvlt"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

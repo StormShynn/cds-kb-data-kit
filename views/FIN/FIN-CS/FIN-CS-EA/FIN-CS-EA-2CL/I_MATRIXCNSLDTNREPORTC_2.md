@@ -1,13 +1,13 @@
 ---
 name: I_MATRIXCNSLDTNREPORTC_2
-description: Group Reporting Data - Cube
+description: "Group Reporting Data - Cube"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATRIXCNSLDTNREPORTC_2')/$value
-semantic_en: Group Reporting Data - Cube
+semantic_en: "Group Reporting Data - Cube"
 tags:
   - FIN
   - bo:purchaseorder

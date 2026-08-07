@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFITEMBASEUNIT
-description: BR Nfitembaseunit
+description: "BR Nfitembaseunit"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

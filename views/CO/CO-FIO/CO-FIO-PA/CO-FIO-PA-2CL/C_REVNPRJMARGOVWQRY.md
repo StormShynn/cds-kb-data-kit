@@ -1,29 +1,29 @@
 ---
 name: C_REVNPRJMARGOVWQRY
-description: This CDS view is designed to provide an analytical query for an overview of project revenue and margin. It aggregates and presents financial data related to projects, such as billed and recognized revenue, costs, and margins, allowing users to analyze financial performance at a project level. This CDS view provides the data to answer the following business questions: What is the billed revenue for a specific project or set of projects? How much revenue has been recognized for a project? What are the recognized costs and margins for a project? What is the planned revenue and cost for a project, and how do they compare to actuals? What is the margin percentage for a project? How do revenue adjustments and cost of sales adjustments impact the financials of a project? What are the deferred and accrued revenue and costs for a project? How does the financial performance of projects vary across different fiscal years and periods? What is the impact of different planning categories on project financials? How do different company codes and profit centers affect project financials? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide an analytical query for an overview of project revenue and margin. It aggregates and presents financial data related to projects, such as billed and recognized revenue, costs, and margins, allowing users to analyze financial performance at a project level. This CDS view provides the data to answer the following business questions: What is the billed revenue for a specific project or set of projects? How much revenue has been recognized for a project? What are the recognized costs and margins for a project? What is the planned revenue and cost for a project, and how do they compare to actuals? What is the margin percentage for a project? How do revenue adjustments and cost of sales adjustments impact the financials of a project? What are the deferred and accrued revenue and costs for a project? How does the financial performance of projects vary across different fiscal years and periods? What is the impact of different planning categories on project financials? How do different company codes and profit centers affect project financials? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REVNPRJMARGOVWQRY')/$value
-semantic_en: This CDS view is designed to provide an analytical query for an overview of project revenue and margin. It aggregates and presents financial data related to projects, such as billed and recognized revenue, costs, and margins, allowing users to analyze financial performance at a project level. This CDS view provides the data to answer the following business questions: What is the billed revenue for a specific project or set of projects? How much revenue has been recognized for a project? What are the recognized costs and margins for a project? What is the planned revenue and cost for a project, and how do they compare to actuals? What is the margin percentage for a project? How do revenue adjustments and cost of sales adjustments impact the financials of a project? What are the deferred and accrued revenue and costs for a project? How does the financial performance of projects vary across different fiscal years and periods? What is the impact of different planning categories on project financials? How do different company codes and profit centers affect project financials? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Project with Revn Margin Overview Query — CDS view tiêu dùng dựa trên Project with Revn Margin Overview Query.
+semantic_en: "This CDS view is designed to provide an analytical query for an overview of project revenue and margin. It aggregates and presents financial data related to projects, such as billed and recognized revenue, costs, and margins, allowing users to analyze financial performance at a project level. This CDS view provides the data to answer the following business questions: What is the billed revenue for a specific project or set of projects? How much revenue has been recognized for a project? What are the recognized costs and margins for a project? What is the planned revenue and cost for a project, and how do they compare to actuals? What is the margin percentage for a project? How do revenue adjustments and cost of sales adjustments impact the financials of a project? What are the deferred and accrued revenue and costs for a project? How does the financial performance of projects vary across different fiscal years and periods? What is the impact of different planning categories on project financials? How do different company codes and profit centers affect project financials? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Project with Revn Margin Overview Query — CDS view tiêu dùng dựa trên Project with Revn Margin Overview Query."
 keywords:
-  - Project with Revn Margin Overview Query
-  - project
-  - with
-  - revn
-  - margin
-  - overview
-  - query
-  - ledger
-  - company
-  - code
-  - currency
-  - field
-  - fiscal
-  - year
+  - "Project with Revn Margin Overview Query"
+  - "project"
+  - "with"
+  - "revn"
+  - "margin"
+  - "overview"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "currency"
+  - "field"
+  - "fiscal"
+  - "year"
 tags:
   - CO
   - bo:companycode

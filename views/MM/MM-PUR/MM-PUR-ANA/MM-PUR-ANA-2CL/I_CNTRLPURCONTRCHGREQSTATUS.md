@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLPURCONTRCHGREQSTATUS
-description: Cntrlpurcontrchgreqstatus
+description: "Cntrlpurcontrchgreqstatus"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

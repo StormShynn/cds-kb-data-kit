@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEORDERHISTCATEGORY
-description: Purchase OrderHISTCATEGORY
+description: "Purchase OrderHISTCATEGORY"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

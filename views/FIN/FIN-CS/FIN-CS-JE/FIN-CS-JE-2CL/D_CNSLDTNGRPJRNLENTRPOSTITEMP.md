@@ -1,6 +1,6 @@
 ---
 name: D_CNSLDTNGRPJRNLENTRPOSTITEMP
-description: D Cnsldtngrpjrnlentrpostitemp
+description: "D Cnsldtngrpjrnlentrpostitemp"
 app_component: FIN-CS-JE-2CL
 software_component: SAPSCORE
 release_state: released

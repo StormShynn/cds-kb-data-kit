@@ -1,22 +1,22 @@
 ---
 name: ZI_PERNR_GJ.DDLS
-description: PERNR Root View
+description: "PERNR Root View"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Han-ruzi/RAP_FI/blob/75eff5f55a25695cc511748679c9863cd585c6eb/src/zi_pernr_gj.ddls.asddls
-semantic_en: PERNR Root View — CDS view based on yfi_ac_pernr_gj.
-semantic_vi: PERNR Root View — CDS view dựa trên yfi_ac_pernr_gj.
+semantic_en: "PERNR Root View — CDS view based on yfi_ac_pernr_gj."
+semantic_vi: "PERNR Root View — CDS view dựa trên yfi_ac_pernr_gj."
 keywords:
-  - pernr
-  - root
-  - name
-  - orgeh
-  - code
-  - zchp
-  - zcorgehname
+  - "pernr"
+  - "root"
+  - "name"
+  - "orgeh"
+  - "code"
+  - "zchp"
+  - "zcorgehname"
 tags:
   - AC
   - bo:companycode

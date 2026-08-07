@@ -1,6 +1,6 @@
 ---
 name: I_SALESPRICINGACCESSSEQUENCE
-description: Salespricingaccesssequence
+description: "Salespricingaccesssequence"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

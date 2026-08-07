@@ -1,6 +1,6 @@
 ---
 name: I_CREDITSPREADID
-description: Creditspreadid
+description: "Creditspreadid"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

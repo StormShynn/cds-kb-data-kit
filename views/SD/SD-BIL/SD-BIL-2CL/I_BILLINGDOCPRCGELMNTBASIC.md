@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCPRCGELMNTBASIC
-description: Billing DocumentPRCGELMNTBASIC
+description: "Billing DocumentPRCGELMNTBASIC"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

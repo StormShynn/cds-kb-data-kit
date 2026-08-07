@@ -1,26 +1,26 @@
 ---
 name: C_MAINTPLANCALLOBJECTDEX
-description: MaintenancePlan Call Obj Data Extractor
+description: "MaintenancePlan Call Obj Data Extractor"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTPLANCALLOBJECTDEX')/$value
-semantic_en: MaintenancePlan Call Obj Data Extractor
-semantic_vi: MaintenancePlan Call Obj Data Extractor — CDS view tiêu dùng dựa trên I_MaintPlanCallObject.
+semantic_en: "MaintenancePlan Call Obj Data Extractor"
+semantic_vi: "MaintenancePlan Call Obj Data Extractor — CDS view tiêu dùng dựa trên I_MaintPlanCallObject."
 keywords:
-  - maintenanceplan
-  - call
-  - obj
-  - data
-  - extractor
-  - maintenance
-  - plan
-  - number
-  - item
-  - order
-  - notification
+  - "maintenanceplan"
+  - "call"
+  - "obj"
+  - "data"
+  - "extractor"
+  - "maintenance"
+  - "plan"
+  - "number"
+  - "item"
+  - "order"
+  - "notification"
 tags:
   - PM
   - component:PM-PRM-MP-2CL

@@ -1,13 +1,13 @@
 ---
 name: C_CHANGERECORDLONGTEXTDEX_2
-description: Change Record Long Text
+description: "Change Record Long Text"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDLONGTEXTDEX_2')/$value
-semantic_en: Change Record Long Text
+semantic_en: "Change Record Long Text"
 tags:
   - PLM
   - component:PLM-CR-2CL

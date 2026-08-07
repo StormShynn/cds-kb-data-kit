@@ -1,6 +1,6 @@
 ---
 name: I_PLNDINDEPRQMTTYPE
-description: Plndindeprqmttype
+description: "Plndindeprqmttype"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

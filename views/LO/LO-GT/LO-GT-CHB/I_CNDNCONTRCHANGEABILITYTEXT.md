@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRCHANGEABILITYTEXT
-description: This CDS view is used to check the changeability for the condition contract. This CDS view provides the prerequisites for answering the following business questions: What is the changeability of condition contract?
+description: "This CDS view is used to check the changeability for the condition contract. This CDS view provides the prerequisites for answering the following business questions: What is the changeability of condition contract?"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCHANGEABILITYTEXT')/$value
-semantic_en: This CDS view is used to check the changeability for the condition contract. This CDS view provides the prerequisites for answering the following business questions: What is the changeability of condition contract?
+semantic_en: "This CDS view is used to check the changeability for the condition contract. This CDS view provides the prerequisites for answering the following business questions: What is the changeability of condition contract?"
 tags:
   - LO
   - bo:plant

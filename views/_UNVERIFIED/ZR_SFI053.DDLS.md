@@ -1,24 +1,24 @@
 ---
 name: ZR_SFI053.DDLS
-description: Invoice header
+description: "Invoice header"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/haihuazhang/cgl_abap_fi/blob/fa4c08cd674c26a1db46afb9f4a96c0e8aa0d833/src/zr_sfi053.ddls.asddls
-semantic_en: Invoice header — CDS view based on I_JournalEntryItem.
-semantic_vi: Invoice header — CDS view dựa trên I_JournalEntryItem.
+semantic_en: "Invoice header — CDS view based on I_JournalEntryItem."
+semantic_vi: "Invoice header — CDS view dựa trên I_JournalEntryItem."
 keywords:
-  - invoice
-  - header
-  - company
-  - code
-  - fiscal
-  - year
-  - period
-  - partner
-  - item
+  - "invoice"
+  - "header"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "period"
+  - "partner"
+  - "item"
 tags:
   - FI
   - bo:billingdocument

@@ -1,13 +1,13 @@
 ---
 name: I_SALESDEAL
-description: This CDS view provides the prerequisites for answering the following business questions: What is the description of sales deal? What is the type of sales deal? What is the sales organization or distribution channel of sales deal? What is the validity period of sales deal?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the description of sales deal? What is the type of sales deal? What is the sales organization or distribution channel of sales deal? What is the validity period of sales deal?"
 app_component: SD-BF-PR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SALESDEAL')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the description of sales deal? What is the type of sales deal? What is the sales organization or distribution channel of sales deal? What is the validity period of sales deal?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the description of sales deal? What is the type of sales deal? What is the sales organization or distribution channel of sales deal? What is the validity period of sales deal?"
 tags:
   - SD
   - bo:plant

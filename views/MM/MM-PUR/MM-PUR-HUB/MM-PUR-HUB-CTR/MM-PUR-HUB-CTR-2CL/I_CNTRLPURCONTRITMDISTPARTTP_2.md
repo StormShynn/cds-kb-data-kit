@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLPURCONTRITMDISTPARTTP_2
-description: Cntrlpurcontritmdistparttp 2
+description: "Cntrlpurcontritmdistparttp 2"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

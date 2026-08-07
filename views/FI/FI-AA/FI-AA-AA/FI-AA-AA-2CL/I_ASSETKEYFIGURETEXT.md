@@ -1,21 +1,21 @@
 ---
 name: I_ASSETKEYFIGURETEXT
-description: This CDS view provides the prerequisites for answering the following business question: How many asset accounting key figures are defined?
+description: "This CDS view provides the prerequisites for answering the following business question: How many asset accounting key figures are defined?"
 app_component: FI-AA-AA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETKEYFIGURETEXT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: How many asset accounting key figures are defined?
-semantic_vi: Asset Key Figure - Text — CDS view giao diện dựa trên faac_kfct.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: How many asset accounting key figures are defined?"
+semantic_vi: "Asset Key Figure - Text — CDS view giao diện dựa trên faac_kfct."
 keywords:
-  - asset
-  - key
-  - figure
-  - text
-  - language
-  - accounting
+  - "asset"
+  - "key"
+  - "figure"
+  - "text"
+  - "language"
+  - "accounting"
 tags:
   - FI
   - account

@@ -1,13 +1,13 @@
 ---
 name: C_MEASUREMENTPOINTVOLQRY
-description: Measurement Point Volume Query
+description: "Measurement Point Volume Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASUREMENTPOINTVOLQRY')/$value
-semantic_en: Measurement Point Volume Query
+semantic_en: "Measurement Point Volume Query"
 tags:
   - IS
   - bo:purchaseorder

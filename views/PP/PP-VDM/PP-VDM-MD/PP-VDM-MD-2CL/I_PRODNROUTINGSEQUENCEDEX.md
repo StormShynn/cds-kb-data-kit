@@ -1,13 +1,13 @@
 ---
 name: I_PRODNROUTINGSEQUENCEDEX
-description: Production Routing Sequence
+description: "Production Routing Sequence"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNROUTINGSEQUENCEDEX')/$value
-semantic_en: Production Routing Sequence
+semantic_en: "Production Routing Sequence"
 tags:
   - PP
   - bo:material

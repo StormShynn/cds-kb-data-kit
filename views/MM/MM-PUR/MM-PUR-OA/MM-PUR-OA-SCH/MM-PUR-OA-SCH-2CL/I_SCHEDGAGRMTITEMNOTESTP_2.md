@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTITEMNOTESTP_2
-description: Schedgagrmtitemnotestp 2
+description: "Schedgagrmtitemnotestp 2"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

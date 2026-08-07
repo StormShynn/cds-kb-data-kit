@@ -1,6 +1,6 @@
 ---
 name: I_MCHIERNODECVRSTRN
-description: Mchiernodecvrstrn
+description: "Mchiernodecvrstrn"
 app_component: LO-RFM-MD-MC
 software_component: SAPSCORE
 release_state: released

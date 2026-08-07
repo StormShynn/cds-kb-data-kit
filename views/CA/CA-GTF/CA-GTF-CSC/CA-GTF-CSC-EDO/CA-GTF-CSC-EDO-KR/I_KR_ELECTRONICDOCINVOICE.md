@@ -1,6 +1,6 @@
 ---
 name: I_KR_ELECTRONICDOCINVOICE
-description: KR Electronicdocinvoice
+description: "KR Electronicdocinvoice"
 app_component: CA-GTF-CSC-EDO-KR
 software_component: SAPSCORE
 release_state: released

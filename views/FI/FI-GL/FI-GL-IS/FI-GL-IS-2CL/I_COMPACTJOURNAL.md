@@ -1,17 +1,17 @@
 ---
 name: I_COMPACTJOURNAL
-description: Compact Journal
+description: "Compact Journal"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPACTJOURNAL')/$value
-semantic_en: Compact Journal
+semantic_en: "Compact Journal"
 keywords:
-  - Compact Journal
-  - Compact Journal
-  - Compact Journal
+  - "Compact Journal"
+  - "Compact Journal"
+  - "Compact Journal"
 tags:
   - FI
   - component:FI-GL-IS-2CL

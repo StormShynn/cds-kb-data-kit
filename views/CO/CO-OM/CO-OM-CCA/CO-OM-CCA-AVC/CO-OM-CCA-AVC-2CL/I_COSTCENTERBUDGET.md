@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERBUDGET
-description: Cost CenterBUDGET
+description: "Cost CenterBUDGET"
 app_component: CO-OM-CCA-AVC-2CL
 software_component: SAPSCORE
 release_state: released

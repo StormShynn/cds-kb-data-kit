@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTACTIVITYREASONTEXT
-description: This CDS view is used to select the settlement activity reason code.
+description: "This CDS view is used to select the settlement activity reason code."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTACTIVITYREASONTEXT')/$value
-semantic_en: This CDS view is used to select the settlement activity reason code.
+semantic_en: "This CDS view is used to select the settlement activity reason code."
 tags:
   - LO
   - bo:salesorder

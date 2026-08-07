@@ -1,25 +1,25 @@
 ---
 name: ZSH_TISRI.DDLS
-description: Tipos de Identificación Search Hepl Code
+description: "Tipos de Identificación Search Hepl Code"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Malvarez-Seidor/Seidor_ABAP/blob/f44ab56240658d1e0372ee4629510a187d2179b8/src/zsh_tisri.ddls.asddls
-semantic_en: Tipos de Identificación Search Hepl Code — CDS view based on DDCDS_CUSTOMER_DOMAIN_VALUE_T.
-semantic_vi: Tipos de Identificación Search Hepl Code — CDS view dựa trên DDCDS_CUSTOMER_DOMAIN_VALUE_T.
+semantic_en: "Tipos de Identificación Search Hepl Code — CDS view based on DDCDS_CUSTOMER_DOMAIN_VALUE_T."
+semantic_vi: "Tipos de Identificación Search Hepl Code — CDS view dựa trên DDCDS_CUSTOMER_DOMAIN_VALUE_T."
 keywords:
-  - tipos
-  - identificación
-  - search
-  - hepl
-  - code
-  - domain_name
-  - value_position
-  - language
-  - value_low
-  - description
+  - "tipos"
+  - "identificación"
+  - "search"
+  - "hepl"
+  - "code"
+  - "domain_name"
+  - "value_position"
+  - "language"
+  - "value_low"
+  - "description"
 tags:
   - AC
   - bo:businesspartner

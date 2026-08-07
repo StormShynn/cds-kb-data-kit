@@ -1,13 +1,13 @@
 ---
 name: I_CUSTSETTLMTBANKDATA
-description: Customer Settlement Bank Data
+description: "Customer Settlement Bank Data"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTBANKDATA')/$value
-semantic_en: Customer Settlement Bank Data
+semantic_en: "Customer Settlement Bank Data"
 tags:
   - LO
   - bo:businesspartner

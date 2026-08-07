@@ -1,6 +1,6 @@
 ---
 name: I_BPGERASTRGLNRSTRCDASTQTATEXT
-description: Bpgerastrglnrstrcdastqtatext
+description: "Bpgerastrglnrstrcdastqtatext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

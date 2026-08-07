@@ -1,6 +1,6 @@
 ---
 name: D_ARDISPUTECASECREATEATTCHP
-description: D Ardisputecasecreateattchp
+description: "D Ardisputecasecreateattchp"
 app_component: FIN-FIO-CCD-COL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BPDATACONTROLLERUSAGE
-description: Bpdatacontrollerusage
+description: "Bpdatacontrollerusage"
 app_component: BC-SRV-BP
 software_component: SAP_BASIS
 release_state: released

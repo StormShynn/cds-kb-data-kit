@@ -1,26 +1,26 @@
 ---
 name: C_PURCHASEORDERDEX
-description: Data Extraction for Purchase Order
+description: "Data Extraction for Purchase Order"
 software_component: SAPSCORE
 release_state: released
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
-semantic_en: Data Extraction for Purchase Order — Consumption CDS view based on I_PurchaseOrderAPI01.
-semantic_vi: Data Extraction for Purchase Order — CDS view tiêu dùng dựa trên I_PurchaseOrderAPI01.
+semantic_en: "Data Extraction for Purchase Order — Consumption CDS view based on I_PurchaseOrderAPI01."
+semantic_vi: "Data Extraction for Purchase Order — CDS view tiêu dùng dựa trên I_PurchaseOrderAPI01."
 keywords:
-  - data
-  - extraction
-  - for
-  - purchase
-  - order
-  - type
-  - subtype
-  - purchasing
-  - document
-  - origin
-  - creation
-  - date
+  - "data"
+  - "extraction"
+  - "for"
+  - "purchase"
+  - "order"
+  - "type"
+  - "subtype"
+  - "purchasing"
+  - "document"
+  - "origin"
+  - "creation"
+  - "date"
 tags:
   - AC
   - component:AC

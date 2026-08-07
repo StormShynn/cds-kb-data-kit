@@ -1,13 +1,13 @@
 ---
 name: I_CMPLNCRQMTAUTHZNFIELDS
-description: Cmplnc Requirement Authorization Fields
+description: "Cmplnc Requirement Authorization Fields"
 app_component: EHS-SUS-CI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLNCRQMTAUTHZNFIELDS')/$value
-semantic_en: Cmplnc Requirement Authorization Fields
+semantic_en: "Cmplnc Requirement Authorization Fields"
 tags:
   - EHS
   - bo:companycode

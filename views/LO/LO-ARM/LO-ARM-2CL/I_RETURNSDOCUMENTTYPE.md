@@ -1,6 +1,6 @@
 ---
 name: I_RETURNSDOCUMENTTYPE
-description: Returnsdocumenttype
+description: "Returnsdocumenttype"
 app_component: LO-ARM-2CL
 software_component: SAPSCORE
 release_state: released

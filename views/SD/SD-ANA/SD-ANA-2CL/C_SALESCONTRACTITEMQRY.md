@@ -1,22 +1,22 @@
 ---
 name: C_SALESCONTRACTITEMQRY
-description: This CDS view provides the prerequisites for answering questions about various aspects of sales contracts. The example questions are: What is the target value or quantity of a given contact item? Which contracts are soon to be expired?
+description: "This CDS view provides the prerequisites for answering questions about various aspects of sales contracts. The example questions are: What is the target value or quantity of a given contact item? Which contracts are soon to be expired?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESCONTRACTITEMQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering questions about various aspects of sales contracts. The example questions are: What is the target value or quantity of a given contact item? Which contracts are soon to be expired?
-semantic_vi: Sales Contract Item - Query — CDS view tiêu dùng dựa trên I_SalesContractItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering questions about various aspects of sales contracts. The example questions are: What is the target value or quantity of a given contact item? Which contracts are soon to be expired?"
+semantic_vi: "Sales Contract Item - Query — CDS view tiêu dùng dựa trên I_SalesContractItemCube."
 keywords:
-  - Sales Contract Item - Query
-  - sales
-  - contract
-  - item
-  - query
-  - type
-  - category
+  - "Sales Contract Item - Query"
+  - "sales"
+  - "contract"
+  - "item"
+  - "query"
+  - "type"
+  - "category"
 tags:
   - SD
   - bo:plant

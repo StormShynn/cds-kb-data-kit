@@ -1,23 +1,23 @@
 ---
 name: ZC_PERNR_GJ.DDLS
-description: FI Activity PERNR Projection View
+description: "FI Activity PERNR Projection View"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Han-ruzi/RAP_FI/blob/75eff5f55a25695cc511748679c9863cd585c6eb/src/zc_pernr_gj.ddls.asddls
-semantic_en: FI Activity PERNR Projection View — CDS view.
-semantic_vi: FI Activity PERNR Projection View — CDS view dựa trên FI Activity PERNR Projection View.
+semantic_en: "FI Activity PERNR Projection View — CDS view."
+semantic_vi: "FI Activity PERNR Projection View — CDS view dựa trên FI Activity PERNR Projection View."
 keywords:
-  - activity
-  - pernr
-  - projection
-  - name
-  - orgeh
-  - code
-  - zcorgehname
-  - zchp
+  - "activity"
+  - "pernr"
+  - "projection"
+  - "name"
+  - "orgeh"
+  - "code"
+  - "zcorgehname"
+  - "zchp"
 tags:
   - AC
   - bo:companycode

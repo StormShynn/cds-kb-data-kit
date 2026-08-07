@@ -1,6 +1,6 @@
 ---
 name: I_CAPACITYRESPPLANNER
-description: Capacityrespplanner
+description: "Capacityrespplanner"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

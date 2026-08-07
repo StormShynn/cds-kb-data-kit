@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERSCHEDULELINE
-description: Sales OrderSchedule Line
+description: "Sales OrderSchedule Line"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

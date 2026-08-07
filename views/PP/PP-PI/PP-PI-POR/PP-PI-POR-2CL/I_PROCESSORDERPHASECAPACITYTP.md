@@ -1,6 +1,6 @@
 ---
 name: I_PROCESSORDERPHASECAPACITYTP
-description: Processorderphasecapacitytp
+description: "Processorderphasecapacitytp"
 app_component: PP-PI-POR-2CL
 software_component: SAPSCORE
 release_state: released

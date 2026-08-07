@@ -1,6 +1,6 @@
 ---
 name: I_FRTCOSTALLOCDOC
-description: Frtcostallocdoc
+description: "Frtcostallocdoc"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

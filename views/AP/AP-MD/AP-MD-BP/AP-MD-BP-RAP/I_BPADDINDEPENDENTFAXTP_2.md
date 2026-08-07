@@ -1,6 +1,6 @@
 ---
 name: I_BPADDINDEPENDENTFAXTP_2
-description: Bpaddindependentfaxtp 2
+description: "Bpaddindependentfaxtp 2"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_TMESERSDELETEACTIVEENTITYP
-description: D Tmesersdeleteactiveentityp
+description: "D Tmesersdeleteactiveentityp"
 app_component: CA-ATP-PAL-2CL
 software_component: SAPSCORE
 release_state: released

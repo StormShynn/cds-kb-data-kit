@@ -1,6 +1,6 @@
 ---
 name: I_FUNDSMGMTFUNCTIONALAREA
-description: Fundsmgmtfunctionalarea
+description: "Fundsmgmtfunctionalarea"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

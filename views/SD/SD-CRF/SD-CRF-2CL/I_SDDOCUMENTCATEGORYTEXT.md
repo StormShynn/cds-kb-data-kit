@@ -1,6 +1,6 @@
 ---
 name: I_SDDOCUMENTCATEGORYTEXT
-description: Sddocumentcategorytext
+description: "Sddocumentcategorytext"
 app_component: SD-CRF-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_LGLDOCCRTELGLDOCWITHFILEP
-description: D Lgldoccrtelgldocwithfilep
+description: "D Lgldoccrtelgldocwithfilep"
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

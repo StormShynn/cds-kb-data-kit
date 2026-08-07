@@ -1,13 +1,13 @@
 ---
 name: I_APMOBJECTLIST
-description: APM Object List
+description: "APM Object List"
 app_component: FIN-FSCM-PF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_APMOBJECTLIST')/$value
-semantic_en: APM Object List
+semantic_en: "APM Object List"
 tags:
   - FIN
   - component:FIN-FSCM-PF

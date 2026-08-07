@@ -1,13 +1,13 @@
 ---
 name: I_INTERCOMPANYEMAILTMPL
-description: ICA Intercompany Email Template
+description: "ICA Intercompany Email Template"
 app_component: FIN-CS-ICR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTERCOMPANYEMAILTMPL')/$value
-semantic_en: ICA Intercompany Email Template
+semantic_en: "ICA Intercompany Email Template"
 tags:
   - FIN
   - component:FIN-CS-ICR-2CL

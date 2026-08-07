@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTORDCRTEFORDELIVITMP
-description: D Freightordcrtefordelivitmp
+description: "D Freightordcrtefordelivitmp"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BSORDGLACCTLINEITEMCUBE
-description: Bsordglacctlineitemcube
+description: "Bsordglacctlineitemcube"
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

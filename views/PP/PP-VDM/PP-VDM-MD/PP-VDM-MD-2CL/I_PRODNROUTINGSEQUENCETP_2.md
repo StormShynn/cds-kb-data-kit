@@ -1,6 +1,6 @@
 ---
 name: I_PRODNROUTINGSEQUENCETP_2
-description: Prodnroutingsequencetp 2
+description: "Prodnroutingsequencetp 2"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

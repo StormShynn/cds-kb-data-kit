@@ -1,13 +1,13 @@
 ---
 name: I_INCIDENTGROUPCODETEXT
-description: Incident Group Code - Text
+description: "Incident Group Code - Text"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INCIDENTGROUPCODETEXT')/$value
-semantic_en: Incident Group Code - Text
+semantic_en: "Incident Group Code - Text"
 tags:
   - EHS
   - component:EHS-SUS-IM

@@ -1,13 +1,13 @@
 ---
 name: I_SRVCCHKLSTINSTCETEXT
-description: Checklist Instance - Text
+description: "Checklist Instance - Text"
 app_component: CRM-S4-INT-FSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCCHKLSTINSTCETEXT')/$value
-semantic_en: Checklist Instance - Text
+semantic_en: "Checklist Instance - Text"
 tags:
   - CRM
   - component:CRM-S4-INT-FSM-2CL

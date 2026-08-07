@@ -1,6 +1,6 @@
 ---
 name: I_PROFITABILITYSEGMENT
-description: Profitabilitysegment
+description: "Profitabilitysegment"
 app_component: CO-PA-2CL
 software_component: SAPSCORE
 release_state: released

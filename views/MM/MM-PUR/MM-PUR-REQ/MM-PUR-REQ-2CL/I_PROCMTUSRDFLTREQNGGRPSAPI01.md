@@ -1,6 +1,6 @@
 ---
 name: I_PROCMTUSRDFLTREQNGGRPSAPI01
-description: Procmtusrdfltreqnggrpsapi 01
+description: "Procmtusrdfltreqnggrpsapi 01"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

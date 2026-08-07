@@ -1,13 +1,13 @@
 ---
 name: I_TRDGDOCAPPLICATIONSTATUSTEXT
-description: Application Status of Trading Doc - Text
+description: "Application Status of Trading Doc - Text"
 app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGDOCAPPLICATIONSTATUSTEXT')/$value
-semantic_en: Application Status of Trading Doc - Text
+semantic_en: "Application Status of Trading Doc - Text"
 tags:
   - LO
   - component:LO-GT

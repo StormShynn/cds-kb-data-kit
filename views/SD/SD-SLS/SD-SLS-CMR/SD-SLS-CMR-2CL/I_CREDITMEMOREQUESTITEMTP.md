@@ -1,6 +1,6 @@
 ---
 name: I_CREDITMEMOREQUESTITEMTP
-description: Creditmemorequestitemtp
+description: "Creditmemorequestitemtp"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

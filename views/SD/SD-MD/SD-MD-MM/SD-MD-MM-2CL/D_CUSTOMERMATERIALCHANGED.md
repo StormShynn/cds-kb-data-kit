@@ -1,6 +1,6 @@
 ---
 name: D_CUSTOMERMATERIALCHANGED
-description: D Customermaterialchanged
+description: "D Customermaterialchanged"
 app_component: SD-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

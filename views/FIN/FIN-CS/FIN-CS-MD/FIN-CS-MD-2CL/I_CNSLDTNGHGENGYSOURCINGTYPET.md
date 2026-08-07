@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGHGENGYSOURCINGTYPET
-description: Cnsldtnghgengysourcingtypet
+description: "Cnsldtnghgengysourcingtypet"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

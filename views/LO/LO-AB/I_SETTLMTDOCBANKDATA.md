@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTDOCBANKDATA
-description: This CDS view provides the prerequisites for answering questions about settlement document bank data.
+description: "This CDS view provides the prerequisites for answering questions about settlement document bank data."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCBANKDATA')/$value
-semantic_en: This CDS view provides the prerequisites for answering questions about settlement document bank data.
+semantic_en: "This CDS view provides the prerequisites for answering questions about settlement document bank data."
 tags:
   - LO
   - bo:plant

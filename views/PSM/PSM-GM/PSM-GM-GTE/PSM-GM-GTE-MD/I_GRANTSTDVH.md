@@ -1,6 +1,6 @@
 ---
 name: I_GRANTSTDVH
-description: Grantstdvh
+description: "Grantstdvh"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released

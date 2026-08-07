@@ -1,6 +1,6 @@
 ---
 name: I_SALESPERFORMANCEDATASOURCE
-description: Salesperformancedatasource
+description: "Salesperformancedatasource"
 app_component: SD-ANA-SP-2CL
 software_component: SAPSCORE
 release_state: released

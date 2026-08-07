@@ -1,15 +1,15 @@
 ---
 name: I_SERVICECHECKLISTTEMPLATE
-description: Checklist Template
+description: "Checklist Template"
 app_component: CRM-S4-INT-FSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SERVICECHECKLISTTEMPLATE')/$value
-semantic_en: Checklist Template
+semantic_en: "Checklist Template"
 keywords:
-  - Checklist Template
+  - "Checklist Template"
 tags:
   - CRM
   - component:CRM-S4-INT-FSM-2CL

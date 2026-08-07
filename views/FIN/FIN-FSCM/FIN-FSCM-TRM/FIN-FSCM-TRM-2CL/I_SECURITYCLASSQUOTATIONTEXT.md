@@ -1,6 +1,6 @@
 ---
 name: I_SECURITYCLASSQUOTATIONTEXT
-description: Securityclassquotationtext
+description: "Securityclassquotationtext"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

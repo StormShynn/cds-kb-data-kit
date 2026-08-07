@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDULINGFLOATPROFILEVH
-description: Schedulingfloatprofilevh
+description: "Schedulingfloatprofilevh"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

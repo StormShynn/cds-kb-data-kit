@@ -1,6 +1,6 @@
 ---
 name: D_DEBITMEMOREQTOTBLKSTSCHANGED
-description: D Debitmemoreqtotblkstschanged
+description: "D Debitmemoreqtotblkstschanged"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

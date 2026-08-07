@@ -1,6 +1,6 @@
 ---
 name: I_PRODCMPLNCLOGSDOCSTAGETP
-description: Prodcmplnclogsdocstagetp
+description: "Prodcmplnclogsdocstagetp"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PURGINFORECORDUPDATECODET
-description: Purginforecordupdatecodet
+description: "Purginforecordupdatecodet"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

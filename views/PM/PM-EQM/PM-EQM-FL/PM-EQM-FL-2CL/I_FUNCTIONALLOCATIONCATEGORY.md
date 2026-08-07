@@ -1,6 +1,6 @@
 ---
 name: I_FUNCTIONALLOCATIONCATEGORY
-description: Functionallocationcategory
+description: "Functionallocationcategory"
 app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released

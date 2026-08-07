@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERTYPETEXT
-description: Production OrderTYPETEXT
+description: "Production OrderTYPETEXT"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

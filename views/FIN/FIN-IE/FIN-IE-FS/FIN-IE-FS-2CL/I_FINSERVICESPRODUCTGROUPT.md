@@ -1,6 +1,6 @@
 ---
 name: I_FINSERVICESPRODUCTGROUPT
-description: Finservicesproductgroupt
+description: "Finservicesproductgroupt"
 app_component: FIN-IE-FS-2CL
 software_component: SAPSCORE
 release_state: released

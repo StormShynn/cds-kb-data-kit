@@ -1,6 +1,6 @@
 ---
 name: I_PHYSINVTRYCOUNTSTSTXT
-description: Physinvtrycountststxt
+description: "Physinvtrycountststxt"
 app_component: MM-IM-VDM-PI-2CL
 software_component: SAPSCORE
 release_state: released

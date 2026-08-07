@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTATIONPLANNINGSTS
-description: Transportationplanningsts
+description: "Transportationplanningsts"
 app_component: LE-TRA
 software_component: SAPSCORE
 release_state: released

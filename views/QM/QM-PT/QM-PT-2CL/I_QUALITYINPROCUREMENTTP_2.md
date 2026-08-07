@@ -1,6 +1,6 @@
 ---
 name: I_QUALITYINPROCUREMENTTP_2
-description: Qualityinprocurementtp 2
+description: "Qualityinprocurementtp 2"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

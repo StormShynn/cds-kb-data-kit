@@ -1,6 +1,6 @@
 ---
 name: I_EARMARKEDFUNDSDOCENTRYSTSTXT
-description: Earmarkedfundsdocentryststxt
+description: "Earmarkedfundsdocentryststxt"
 app_component: FI-FM
 software_component: SAPSCORE
 release_state: released

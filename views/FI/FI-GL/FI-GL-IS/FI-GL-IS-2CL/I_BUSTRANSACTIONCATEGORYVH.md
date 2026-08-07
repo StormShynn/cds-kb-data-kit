@@ -1,6 +1,6 @@
 ---
 name: I_BUSTRANSACTIONCATEGORYVH
-description: Bustransactioncategoryvh
+description: "Bustransactioncategoryvh"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_DEBITMEMOREQUESTITEMDELETED
-description: D Debitmemorequestitemdeleted
+description: "D Debitmemorequestitemdeleted"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

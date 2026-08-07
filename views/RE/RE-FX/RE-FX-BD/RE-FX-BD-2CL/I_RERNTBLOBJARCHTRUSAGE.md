@@ -1,6 +1,6 @@
 ---
 name: I_RERNTBLOBJARCHTRUSAGE
-description: Rerntblobjarchtrusage
+description: "Rerntblobjarchtrusage"
 app_component: RE-FX-BD-2CL
 software_component: SAPSCORE
 release_state: released

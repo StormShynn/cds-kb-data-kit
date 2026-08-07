@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLMCONTROLLINGITEMTYPE
-description: Wrntyclmcontrollingitemtype
+description: "Wrntyclmcontrollingitemtype"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

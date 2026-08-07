@@ -1,6 +1,6 @@
 ---
 name: D_LGLCNTNTMDOCLINKOBJKEYCRTEP
-description: D Lglcntntmdoclinkobjkeycrtep
+description: "D Lglcntntmdoclinkobjkeycrtep"
 app_component: CM-INT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_SUBSCRPNCONTRDURNUNITT
-description: Subscrpn Contract Duration Unit - Text
+description: "Subscrpn Contract Duration Unit - Text"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUBSCRPNCONTRDURNUNITT')/$value
-semantic_en: Subscrpn Contract Duration Unit - Text
+semantic_en: "Subscrpn Contract Duration Unit - Text"
 tags:
   - CRM
   - component:CRM-S4-BTX-2CL

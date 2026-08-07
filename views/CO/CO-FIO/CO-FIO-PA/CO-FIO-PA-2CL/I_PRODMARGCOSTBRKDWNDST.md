@@ -1,13 +1,13 @@
 ---
 name: I_PRODMARGCOSTBRKDWNDST
-description: Product Profitability UCB Document Store
+description: "Product Profitability UCB Document Store"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODMARGCOSTBRKDWNDST')/$value
-semantic_en: Product Profitability UCB Document Store
+semantic_en: "Product Profitability UCB Document Store"
 tags:
   - CO
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_CN_CADECUSTOMSUBSIDIARYITEM
-description: CN Cadecustomsubsidiaryitem
+description: "CN Cadecustomsubsidiaryitem"
 app_component: FI-LOC-GAI-CN
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_DUNNINGBLOCKINGREASONTEXT
-description: Dunningblockingreasontext
+description: "Dunningblockingreasontext"
 app_component: FI-AR-AR-C-2CL
 software_component: SAPSCORE
 release_state: released

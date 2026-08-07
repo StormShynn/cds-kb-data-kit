@@ -1,13 +1,13 @@
 ---
 name: I_KNBNCTRLCYCPRODMSTRDTA
-description: Product Master Data for Kanban Control Cycle
+description: "Product Master Data for Kanban Control Cycle"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_KNBNCTRLCYCPRODMSTRDTA')/$value
-semantic_en: Product Master Data for Kanban Control Cycle
+semantic_en: "Product Master Data for Kanban Control Cycle"
 tags:
   - PP
   - bo:businesspartner

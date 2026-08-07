@@ -1,6 +1,6 @@
 ---
 name: I_INSPECTIONCATALOG
-description: Inspectioncatalog
+description: "Inspectioncatalog"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_FASHIONPRODINFOFIELD3
-description: Fashion Product Information 3
+description: "Fashion Product Information 3"
 app_component: LO-RFM-MD-ART-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FASHIONPRODINFOFIELD3')/$value
-semantic_en: Fashion Product Information 3
+semantic_en: "Fashion Product Information 3"
 tags:
   - LO
   - bo:companycode

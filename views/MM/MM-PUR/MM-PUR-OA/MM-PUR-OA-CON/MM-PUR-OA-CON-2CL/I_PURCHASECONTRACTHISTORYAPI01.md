@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASECONTRACTHISTORYAPI01
-description: Purchase ContractHISTORYAPI 01
+description: "Purchase ContractHISTORYAPI 01"
 app_component: MM-PUR-OA-CON-2CL
 software_component: SAPSCORE
 release_state: released

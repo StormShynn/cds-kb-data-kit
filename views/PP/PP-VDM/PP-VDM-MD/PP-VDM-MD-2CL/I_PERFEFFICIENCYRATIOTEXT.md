@@ -1,13 +1,13 @@
 ---
 name: I_PERFEFFICIENCYRATIOTEXT
-description: Performance Efficiency Ratio - Text
+description: "Performance Efficiency Ratio - Text"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PERFEFFICIENCYRATIOTEXT')/$value
-semantic_en: Performance Efficiency Ratio - Text
+semantic_en: "Performance Efficiency Ratio - Text"
 tags:
   - PP
   - bo:companycode

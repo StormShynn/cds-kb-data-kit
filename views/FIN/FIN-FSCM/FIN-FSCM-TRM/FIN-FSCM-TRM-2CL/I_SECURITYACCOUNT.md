@@ -1,6 +1,6 @@
 ---
 name: I_SECURITYACCOUNT
-description: Securityaccount
+description: "Securityaccount"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

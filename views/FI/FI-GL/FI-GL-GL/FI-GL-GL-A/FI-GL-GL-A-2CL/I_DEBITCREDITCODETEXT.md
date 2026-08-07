@@ -1,6 +1,6 @@
 ---
 name: I_DEBITCREDITCODETEXT
-description: Debitcreditcodetext
+description: "Debitcreditcodetext"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

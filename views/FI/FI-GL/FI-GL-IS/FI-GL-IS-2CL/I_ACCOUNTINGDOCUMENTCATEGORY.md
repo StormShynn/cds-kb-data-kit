@@ -1,6 +1,6 @@
 ---
 name: I_ACCOUNTINGDOCUMENTCATEGORY
-description: Accounting DocumentUMENTCATEGORY
+description: "Accounting DocumentUMENTCATEGORY"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

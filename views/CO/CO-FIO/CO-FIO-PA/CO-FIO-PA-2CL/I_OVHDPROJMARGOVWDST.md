@@ -1,13 +1,13 @@
 ---
 name: I_OVHDPROJMARGOVWDST
-description: Document for OverhdProjMargOvw
+description: "Document for OverhdProjMargOvw"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OVHDPROJMARGOVWDST')/$value
-semantic_en: Document for OverhdProjMargOvw
+semantic_en: "Document for OverhdProjMargOvw"
 tags:
   - CO
   - bo:project

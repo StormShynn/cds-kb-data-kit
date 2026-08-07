@@ -1,6 +1,6 @@
 ---
 name: D_ENTPROJACTNSETPROCGSTATUSP
-description: D Entprojactnsetprocgstatusp
+description: "D Entprojactnsetprocgstatusp"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTREQUITYTYPEDESC
-description: Jntvntrequitytypedesc
+description: "Jntvntrequitytypedesc"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PLANNEDORDERCAPACITYTP
-description: Planned OrderCAPACITYTP
+description: "Planned OrderCAPACITYTP"
 app_component: PP-PLO-2CL
 software_component: SAPSCORE
 release_state: released

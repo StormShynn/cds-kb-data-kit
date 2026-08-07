@@ -1,13 +1,13 @@
 ---
 name: I_SPONSOREDPROGRAMTEXT
-description: Sponsored Program - Text
+description: "Sponsored Program - Text"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SPONSOREDPROGRAMTEXT')/$value
-semantic_en: Sponsored Program - Text
+semantic_en: "Sponsored Program - Text"
 tags:
   - PSM
   - bo:purchaseorder

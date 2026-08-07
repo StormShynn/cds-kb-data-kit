@@ -1,6 +1,6 @@
 ---
 name: I_PMRPFLXBLCSTRTCATEGORY
-description: Pmrpflxblcstrtcategory
+description: "Pmrpflxblcstrtcategory"
 app_component: PP-PMR-ENG-2CL
 software_component: SAPSCORE
 release_state: released

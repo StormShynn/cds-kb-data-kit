@@ -1,13 +1,13 @@
 ---
 name: C_RECONTRACTASSIGNSUBJECTQ_2
-description: RE Contract Subject Assignments
+description: "RE Contract Subject Assignments"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECONTRACTASSIGNSUBJECTQ_2')/$value
-semantic_en: RE Contract Subject Assignments
+semantic_en: "RE Contract Subject Assignments"
 tags:
   - RE
   - component:RE-FX-CN-2CL

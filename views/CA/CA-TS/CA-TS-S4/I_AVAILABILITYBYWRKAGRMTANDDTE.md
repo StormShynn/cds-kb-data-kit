@@ -1,13 +1,13 @@
 ---
 name: I_AVAILABILITYBYWRKAGRMTANDDTE
-description: This view provides the prerequisites for answering the following business questions: What is the total planned hours of a work agreement each day?
+description: "This view provides the prerequisites for answering the following business questions: What is the total planned hours of a work agreement each day?"
 app_component: CA-TS-S4
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AVAILABILITYBYWRKAGRMTANDDTE')/$value
-semantic_en: This view provides the prerequisites for answering the following business questions: What is the total planned hours of a work agreement each day?
+semantic_en: "This view provides the prerequisites for answering the following business questions: What is the total planned hours of a work agreement each day?"
 tags:
   - CA
   - bo:plant

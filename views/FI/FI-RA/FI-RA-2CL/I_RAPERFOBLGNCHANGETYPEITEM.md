@@ -1,6 +1,6 @@
 ---
 name: I_RAPERFOBLGNCHANGETYPEITEM
-description: Raperfoblgnchangetypeitem
+description: "Raperfoblgnchangetypeitem"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released

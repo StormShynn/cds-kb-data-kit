@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITTASKRUNTP_2
-description: Cnsldtnunittaskruntp 2
+description: "Cnsldtnunittaskruntp 2"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

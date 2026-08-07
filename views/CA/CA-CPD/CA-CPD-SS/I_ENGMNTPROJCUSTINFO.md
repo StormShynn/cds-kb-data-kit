@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJCUSTINFO
-description: This CDS view provides about customers, that is relevant for managing projects.
+description: "This CDS view provides about customers, that is relevant for managing projects."
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJCUSTINFO')/$value
-semantic_en: This CDS view provides about customers, that is relevant for managing projects.
+semantic_en: "This CDS view provides about customers, that is relevant for managing projects."
 tags:
   - CA
   - bo:businesspartner

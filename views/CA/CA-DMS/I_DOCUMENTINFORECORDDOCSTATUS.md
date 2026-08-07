@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDDOCSTATUS
-description: Documentinforecorddocstatus
+description: "Documentinforecorddocstatus"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

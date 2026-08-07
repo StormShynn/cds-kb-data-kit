@@ -1,6 +1,6 @@
 ---
 name: I_JITCALLDELIVERY
-description: Jitcalldelivery
+description: "Jitcalldelivery"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

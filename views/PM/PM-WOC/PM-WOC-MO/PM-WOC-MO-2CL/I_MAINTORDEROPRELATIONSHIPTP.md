@@ -1,6 +1,6 @@
 ---
 name: I_MAINTORDEROPRELATIONSHIPTP
-description: Maintorderoprelationshiptp
+description: "Maintorderoprelationshiptp"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

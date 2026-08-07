@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJECTPROJECTOBJECTLINK
-description: Entprojectprojectobjectlink
+description: "Entprojectprojectobjectlink"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

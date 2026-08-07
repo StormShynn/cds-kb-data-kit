@@ -1,6 +1,6 @@
 ---
 name: I_MRCHDSCATHIERNODECHARC
-description: Mrchdscathiernodecharc
+description: "Mrchdscathiernodecharc"
 app_component: LO-RFM-MD-MC
 software_component: SAPSCORE
 release_state: released

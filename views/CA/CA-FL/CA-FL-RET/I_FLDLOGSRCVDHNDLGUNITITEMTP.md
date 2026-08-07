@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSRCVDHNDLGUNITITEMTP
-description: Fldlogsrcvdhndlgunititemtp
+description: "Fldlogsrcvdhndlgunititemtp"
 app_component: CA-FL-RET
 software_component: SAPSCORE
 release_state: released

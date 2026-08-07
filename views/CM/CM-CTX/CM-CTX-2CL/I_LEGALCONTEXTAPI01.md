@@ -1,6 +1,6 @@
 ---
 name: I_LEGALCONTEXTAPI01
-description: Legalcontextapi 01
+description: "Legalcontextapi 01"
 app_component: CM-CTX-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNRPTGRULEVARASSGMT_2
-description: Consolidation Reporting Rule Assignment
+description: "Consolidation Reporting Rule Assignment"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEVARASSGMT_2')/$value
-semantic_en: Consolidation Reporting Rule Assignment
+semantic_en: "Consolidation Reporting Rule Assignment"
 tags:
   - FIN
   - bo:purchaseorder

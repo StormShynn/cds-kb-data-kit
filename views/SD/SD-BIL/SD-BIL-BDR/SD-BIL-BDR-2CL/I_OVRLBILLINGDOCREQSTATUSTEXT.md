@@ -1,6 +1,6 @@
 ---
 name: I_OVRLBILLINGDOCREQSTATUSTEXT
-description: OVRLBilling DocumentREQSTATUSTEXT
+description: "OVRLBilling DocumentREQSTATUSTEXT"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

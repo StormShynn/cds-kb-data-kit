@@ -1,20 +1,20 @@
 ---
 name: C_MAINTORDPROCGCONTEXTDEX
-description: Maintenance Order Processing Context
+description: "Maintenance Order Processing Context"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDPROCGCONTEXTDEX')/$value
-semantic_en: Maintenance Order Processing Context
-semantic_vi: Maintenance Order Processing Context — CDS view tiêu dùng dựa trên I_MaintOrderProcessingContext.
+semantic_en: "Maintenance Order Processing Context"
+semantic_vi: "Maintenance Order Processing Context — CDS view tiêu dùng dựa trên I_MaintOrderProcessingContext."
 keywords:
-  - maintenance
-  - order
-  - processing
-  - context
-  - maint
+  - "maintenance"
+  - "order"
+  - "processing"
+  - "context"
+  - "maint"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

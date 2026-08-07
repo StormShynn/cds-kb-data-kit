@@ -1,6 +1,6 @@
 ---
 name: I_BPCONTACT
-description: Bpcontact
+description: "Bpcontact"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

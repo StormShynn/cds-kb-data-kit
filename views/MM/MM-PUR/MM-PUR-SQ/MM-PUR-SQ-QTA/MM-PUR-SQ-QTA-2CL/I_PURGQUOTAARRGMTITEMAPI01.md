@@ -1,6 +1,6 @@
 ---
 name: I_PURGQUOTAARRGMTITEMAPI01
-description: Purgquotaarrgmtitemapi 01
+description: "Purgquotaarrgmtitemapi 01"
 app_component: MM-PUR-SQ-QTA-2CL
 software_component: SAPSCORE
 release_state: released

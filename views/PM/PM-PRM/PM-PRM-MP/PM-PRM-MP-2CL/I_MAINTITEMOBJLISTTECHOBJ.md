@@ -1,6 +1,6 @@
 ---
 name: I_MAINTITEMOBJLISTTECHOBJ
-description: Maintitemobjlisttechobj
+description: "Maintitemobjlisttechobj"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released

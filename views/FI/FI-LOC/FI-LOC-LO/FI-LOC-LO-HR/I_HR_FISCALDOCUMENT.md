@@ -1,6 +1,6 @@
 ---
 name: I_HR_FISCALDOCUMENT
-description: HR Fiscaldocument
+description: "HR Fiscaldocument"
 app_component: FI-LOC-LO-HR
 software_component: SAPSCORE
 release_state: released

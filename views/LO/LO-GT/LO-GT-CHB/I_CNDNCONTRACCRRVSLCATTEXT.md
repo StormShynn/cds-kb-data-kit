@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRACCRRVSLCATTEXT
-description: This CDS view exposes fixed values of the Condition Contract Purpose field.
+description: "This CDS view exposes fixed values of the Condition Contract Purpose field."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRACCRRVSLCATTEXT')/$value
-semantic_en: This CDS view exposes fixed values of the Condition Contract Purpose field.
+semantic_en: "This CDS view exposes fixed values of the Condition Contract Purpose field."
 tags:
   - LO
   - bo:companycode

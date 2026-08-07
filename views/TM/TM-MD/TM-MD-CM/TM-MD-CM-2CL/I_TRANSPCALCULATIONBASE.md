@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPCALCULATIONBASE
-description: Transpcalculationbase
+description: "Transpcalculationbase"
 app_component: TM-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

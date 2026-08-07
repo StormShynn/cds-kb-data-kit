@@ -1,6 +1,6 @@
 ---
 name: I_INDEPENDENTRQMTTYPETEXT
-description: Independentrqmttypetext
+description: "Independentrqmttypetext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

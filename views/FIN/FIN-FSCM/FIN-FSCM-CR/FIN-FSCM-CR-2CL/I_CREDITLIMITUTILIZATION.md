@@ -1,13 +1,13 @@
 ---
 name: I_CREDITLIMITUTILIZATION
-description: Customer Credit Utilization - Cube
+description: "Customer Credit Utilization - Cube"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITLIMITUTILIZATION')/$value
-semantic_en: Customer Credit Utilization - Cube
+semantic_en: "Customer Credit Utilization - Cube"
 tags:
   - FIN
   - bo:businesspartner

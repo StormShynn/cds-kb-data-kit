@@ -1,13 +1,13 @@
 ---
 name: I_SOURCEOFSUPPLYCATEGORYT
-description: Source of Supply Category - Text
+description: "Source of Supply Category - Text"
 app_component: MM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SOURCEOFSUPPLYCATEGORYT')/$value
-semantic_en: Source of Supply Category - Text
+semantic_en: "Source of Supply Category - Text"
 tags:
   - MM
   - bo:salesorder

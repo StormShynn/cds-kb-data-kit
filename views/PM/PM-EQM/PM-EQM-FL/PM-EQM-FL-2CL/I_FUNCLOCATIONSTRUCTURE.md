@@ -1,6 +1,6 @@
 ---
 name: I_FUNCLOCATIONSTRUCTURE
-description: Funclocationstructure
+description: "Funclocationstructure"
 app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released

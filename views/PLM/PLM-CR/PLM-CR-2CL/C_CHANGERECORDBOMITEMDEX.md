@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECORDBOMITEMDEX
-description: Change RecordBOMITEMDEX
+description: "Change RecordBOMITEMDEX"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

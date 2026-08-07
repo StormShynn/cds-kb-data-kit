@@ -1,13 +1,13 @@
 ---
 name: I_MNTMBLAPPUSRDFLTADDRTYPETEXT
-description: Mobile User Default Address Type - Text
+description: "Mobile User Default Address Type - Text"
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MNTMBLAPPUSRDFLTADDRTYPETEXT')/$value
-semantic_en: Mobile User Default Address Type - Text
+semantic_en: "Mobile User Default Address Type - Text"
 tags:
   - MOB
   - component:MOB-APP-MAO-ERP

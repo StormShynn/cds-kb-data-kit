@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSALESORGHIERARCHYT
-description: CNSLDTNSales OrganizationHIERARCHYT
+description: "CNSLDTNSales OrganizationHIERARCHYT"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

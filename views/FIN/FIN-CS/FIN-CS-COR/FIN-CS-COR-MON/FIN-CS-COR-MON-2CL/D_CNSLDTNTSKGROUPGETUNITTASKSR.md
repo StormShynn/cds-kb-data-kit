@@ -1,6 +1,6 @@
 ---
 name: D_CNSLDTNTSKGROUPGETUNITTASKSR
-description: D Cnsldtntskgroupgetunittasksr
+description: "D Cnsldtntskgroupgetunittasksr"
 app_component: FIN-CS-COR-MON-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_INSPLOTRECORDUSAGEDECISIONP
-description: D Insplotrecordusagedecisionp
+description: "D Insplotrecordusagedecisionp"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

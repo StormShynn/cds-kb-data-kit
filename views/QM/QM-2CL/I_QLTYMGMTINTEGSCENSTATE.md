@@ -1,6 +1,6 @@
 ---
 name: I_QLTYMGMTINTEGSCENSTATE
-description: Qltymgmtintegscenstate
+description: "Qltymgmtintegscenstate"
 app_component: QM-2CL
 software_component: SAPSCORE
 release_state: released

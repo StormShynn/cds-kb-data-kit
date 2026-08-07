@@ -1,13 +1,13 @@
 ---
 name: C_CHANGERECORDITEMEXTDEX
-description: Data Extraction for Change Record Item
+description: "Data Extraction for Change Record Item"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDITEMEXTDEX')/$value
-semantic_en: Data Extraction for Change Record Item
+semantic_en: "Data Extraction for Change Record Item"
 tags:
   - PLM
   - component:PLM-CR-2CL

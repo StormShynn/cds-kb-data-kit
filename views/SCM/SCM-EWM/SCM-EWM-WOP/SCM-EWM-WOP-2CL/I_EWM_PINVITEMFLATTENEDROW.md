@@ -1,6 +1,6 @@
 ---
 name: I_EWM_PINVITEMFLATTENEDROW
-description: Ewm Pinvitemflattenedrow
+description: "Ewm Pinvitemflattenedrow"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

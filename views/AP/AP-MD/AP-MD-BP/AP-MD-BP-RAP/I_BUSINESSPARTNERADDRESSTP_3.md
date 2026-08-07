@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERADDRESSTP_3
-description: Business PartnerADDRESSTP 3
+description: "Business PartnerADDRESSTP 3"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

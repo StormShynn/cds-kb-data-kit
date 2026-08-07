@@ -1,13 +1,13 @@
 ---
 name: I_TRANSPHNDLGEXECSTATUS
-description: Transportation Handling Execution Status
+description: "Transportation Handling Execution Status"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRANSPHNDLGEXECSTATUS')/$value
-semantic_en: Transportation Handling Execution Status
+semantic_en: "Transportation Handling Execution Status"
 tags:
   - TM
   - bo:purchaseorder

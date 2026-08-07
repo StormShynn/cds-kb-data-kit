@@ -1,6 +1,6 @@
 ---
 name: I_MAXDOCVALUECREDITCHECKSTS
-description: Maxdocvaluecreditchecksts
+description: "Maxdocvaluecreditchecksts"
 app_component: SD-BF-CM-2CL
 software_component: SAPSCORE
 release_state: released

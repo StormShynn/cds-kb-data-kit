@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTREQUESTITEMTP
-description: Billing DocumentUMENTREQUESTITEMTP
+description: "Billing DocumentUMENTREQUESTITEMTP"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

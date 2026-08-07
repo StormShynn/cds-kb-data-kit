@@ -1,13 +1,13 @@
 ---
 name: I_PAYMENTBYBANKKPI
-description: Total and Average Bank Payments - Cube
+description: "Total and Average Bank Payments - Cube"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PAYMENTBYBANKKPI')/$value
-semantic_en: Total and Average Bank Payments - Cube
+semantic_en: "Total and Average Bank Payments - Cube"
 tags:
   - FIN
   - component:FIN-FSCM-CLM-BAM-2CL

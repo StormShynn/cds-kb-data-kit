@@ -1,6 +1,6 @@
 ---
 name: I_SRVCDOCQUOTATIONSTATUS_2
-description: Srvcdocquotationstatus 2
+description: "Srvcdocquotationstatus 2"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

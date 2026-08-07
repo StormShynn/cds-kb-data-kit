@@ -1,13 +1,13 @@
 ---
 name: I_FISCALCALENDARYEARTODATERNGE
-description: Fiscal Calendar Year to Date Ranges
+description: "Fiscal Calendar Year to Date Ranges"
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FISCALCALENDARYEARTODATERNGE')/$value
-semantic_en: Fiscal Calendar Year to Date Ranges
+semantic_en: "Fiscal Calendar Year to Date Ranges"
 tags:
   - FI
   - bo:companycode

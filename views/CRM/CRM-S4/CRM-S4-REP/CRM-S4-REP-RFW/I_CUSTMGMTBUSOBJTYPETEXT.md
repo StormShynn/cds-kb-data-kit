@@ -1,6 +1,6 @@
 ---
 name: I_CUSTMGMTBUSOBJTYPETEXT
-description: Custmgmtbusobjtypetext
+description: "Custmgmtbusobjtypetext"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

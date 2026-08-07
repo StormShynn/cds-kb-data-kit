@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNUNITPARTNER
-description: Cnsldtnunitpartner
+description: "Cnsldtnunitpartner"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

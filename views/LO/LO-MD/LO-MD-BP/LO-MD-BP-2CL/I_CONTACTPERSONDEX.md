@@ -1,13 +1,13 @@
 ---
 name: I_CONTACTPERSONDEX
-description: Data Extraction for Contact Person
+description: "Data Extraction for Contact Person"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONTACTPERSONDEX')/$value
-semantic_en: Data Extraction for Contact Person
+semantic_en: "Data Extraction for Contact Person"
 tags:
   - LO
   - bo:salesorder

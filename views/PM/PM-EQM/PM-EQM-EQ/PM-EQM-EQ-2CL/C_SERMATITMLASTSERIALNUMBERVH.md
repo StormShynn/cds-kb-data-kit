@@ -1,6 +1,6 @@
 ---
 name: C_SERMATITMLASTSERIALNUMBERVH
-description: SERMATITMLASTSerial NumberVH
+description: "SERMATITMLASTSerial NumberVH"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

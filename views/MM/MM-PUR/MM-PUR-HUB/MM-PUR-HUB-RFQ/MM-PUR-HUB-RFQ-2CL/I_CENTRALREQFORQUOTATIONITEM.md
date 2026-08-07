@@ -1,6 +1,6 @@
 ---
 name: I_CENTRALREQFORQUOTATIONITEM
-description: Centralreqforquotationitem
+description: "Centralreqforquotationitem"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

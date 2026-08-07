@@ -1,6 +1,6 @@
 ---
 name: D_TRANSPORDREPORTEVENTITEMP
-description: D Transpordreporteventitemp
+description: "D Transpordreporteventitemp"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

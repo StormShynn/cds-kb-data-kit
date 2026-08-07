@@ -1,6 +1,6 @@
 ---
 name: D_SALESORDERITEMCHANGED
-description: D Sales OrderITEMCHANGED
+description: "D Sales OrderITEMCHANGED"
 app_component: SD-SLS-GF-BET-2CL
 software_component: SAPSCORE
 release_state: released

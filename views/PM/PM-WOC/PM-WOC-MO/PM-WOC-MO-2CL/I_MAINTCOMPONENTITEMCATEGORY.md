@@ -1,6 +1,6 @@
 ---
 name: I_MAINTCOMPONENTITEMCATEGORY
-description: Maintcomponentitemcategory
+description: "Maintcomponentitemcategory"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERTOFIXEDASSET
-description: Profit CenterTOFixed Asset
+description: "Profit CenterTOFixed Asset"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

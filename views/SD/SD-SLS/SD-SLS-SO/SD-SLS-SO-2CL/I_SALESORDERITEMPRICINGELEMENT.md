@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERITEMPRICINGELEMENT
-description: Sales OrderITEMPRICINGELEMENT
+description: "Sales OrderITEMPRICINGELEMENT"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERITEMTP
-description: Production OrderITEMTP
+description: "Production OrderITEMTP"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_INCIDENTREPORTINGSOURCETEXT
-description: Incident Reporting Source - Text
+description: "Incident Reporting Source - Text"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INCIDENTREPORTINGSOURCETEXT')/$value
-semantic_en: Incident Reporting Source - Text
+semantic_en: "Incident Reporting Source - Text"
 tags:
   - EHS
   - bo:purchaseorder

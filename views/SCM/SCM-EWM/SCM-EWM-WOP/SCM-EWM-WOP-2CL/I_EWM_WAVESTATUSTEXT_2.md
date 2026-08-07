@@ -1,6 +1,6 @@
 ---
 name: I_EWM_WAVESTATUSTEXT_2
-description: Ewm Wavestatustext 2
+description: "Ewm Wavestatustext 2"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

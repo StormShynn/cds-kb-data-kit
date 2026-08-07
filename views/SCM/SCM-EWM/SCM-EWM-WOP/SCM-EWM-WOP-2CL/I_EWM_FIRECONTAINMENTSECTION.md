@@ -1,13 +1,13 @@
 ---
 name: I_EWM_FIRECONTAINMENTSECTION
-description: Fire Containment Section
+description: "Fire Containment Section"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_FIRECONTAINMENTSECTION')/$value
-semantic_en: Fire Containment Section
+semantic_en: "Fire Containment Section"
 tags:
   - SCM
   - bo:companycode

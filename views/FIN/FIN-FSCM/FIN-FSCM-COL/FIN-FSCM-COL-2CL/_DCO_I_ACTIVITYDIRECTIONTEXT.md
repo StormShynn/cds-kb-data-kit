@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_ACTIVITYDIRECTIONTEXT
-description: Activity Direction - Text
+description: "Activity Direction - Text"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACTIVITYDIRECTIONTEXT')/$value
-semantic_en: Activity Direction - Text
+semantic_en: "Activity Direction - Text"
 tags:
   - FIN
   - component:FIN-FSCM-COL-2CL

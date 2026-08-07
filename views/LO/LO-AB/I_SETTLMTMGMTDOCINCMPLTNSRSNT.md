@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTMGMTDOCINCMPLTNSRSNT
-description: This CDS view exposes fixed values of the field Settlement Management Document Incompleteness Reason.
+description: "This CDS view exposes fixed values of the field Settlement Management Document Incompleteness Reason."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTMGMTDOCINCMPLTNSRSNT')/$value
-semantic_en: This CDS view exposes fixed values of the field Settlement Management Document Incompleteness Reason.
+semantic_en: "This CDS view exposes fixed values of the field Settlement Management Document Incompleteness Reason."
 tags:
   - LO
   - bo:companycode

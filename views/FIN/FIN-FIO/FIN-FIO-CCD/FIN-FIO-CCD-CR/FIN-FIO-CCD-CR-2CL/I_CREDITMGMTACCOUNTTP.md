@@ -1,6 +1,6 @@
 ---
 name: I_CREDITMGMTACCOUNTTP
-description: Creditmgmtaccounttp
+description: "Creditmgmtaccounttp"
 app_component: FIN-FIO-CCD-CR-2CL
 software_component: SAPSCORE
 release_state: released

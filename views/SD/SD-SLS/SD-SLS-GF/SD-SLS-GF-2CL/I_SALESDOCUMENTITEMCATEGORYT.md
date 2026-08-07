@@ -1,6 +1,6 @@
 ---
 name: I_SALESDOCUMENTITEMCATEGORYT
-description: Salesdocumentitemcategoryt
+description: "Salesdocumentitemcategoryt"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

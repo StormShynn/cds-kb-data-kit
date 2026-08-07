@@ -1,6 +1,6 @@
 ---
 name: I_ORGLCHANGEPRFTCTRSELECTIONTP
-description: Orglchangeprftctrselectiontp
+description: "Orglchangeprftctrselectiontp"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

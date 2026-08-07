@@ -1,6 +1,6 @@
 ---
 name: I_WORKDAYRULE
-description: Workdayrule
+description: "Workdayrule"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

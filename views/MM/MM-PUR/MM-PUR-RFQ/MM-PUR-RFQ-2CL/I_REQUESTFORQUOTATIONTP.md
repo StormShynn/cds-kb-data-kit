@@ -1,6 +1,6 @@
 ---
 name: I_REQUESTFORQUOTATIONTP
-description: Requestforquotationtp
+description: "Requestforquotationtp"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

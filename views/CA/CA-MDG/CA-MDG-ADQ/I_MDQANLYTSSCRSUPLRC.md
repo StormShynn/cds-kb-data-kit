@@ -1,16 +1,16 @@
 ---
 name: I_MDQANLYTSSCRSUPLRC
-description: MDQ Score for Supplier General - Cube
+description: "MDQ Score for Supplier General - Cube"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MDQANLYTSSCRSUPLRC')/$value
-semantic_en: MDQ Score for Supplier General - Cube
+semantic_en: "MDQ Score for Supplier General - Cube"
 keywords:
-  - MDQ Score for Supplier General - Cube
-  - MDQ Score for Supplier General - Cube
+  - "MDQ Score for Supplier General - Cube"
+  - "MDQ Score for Supplier General - Cube"
 tags:
   - CA
   - CA-MDG

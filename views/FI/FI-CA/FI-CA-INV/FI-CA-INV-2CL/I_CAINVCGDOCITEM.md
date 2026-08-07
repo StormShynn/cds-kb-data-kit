@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGDOCITEM
-description: Cainvcgdocitem
+description: "Cainvcgdocitem"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

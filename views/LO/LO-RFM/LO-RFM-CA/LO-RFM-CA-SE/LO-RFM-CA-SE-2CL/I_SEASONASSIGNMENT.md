@@ -1,13 +1,13 @@
 ---
 name: I_SEASONASSIGNMENT
-description: Season Assignment
+description: "Season Assignment"
 app_component: LO-RFM-CA-SE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONASSIGNMENT')/$value
-semantic_en: Season Assignment
+semantic_en: "Season Assignment"
 tags:
   - LO
   - bo:salesorder

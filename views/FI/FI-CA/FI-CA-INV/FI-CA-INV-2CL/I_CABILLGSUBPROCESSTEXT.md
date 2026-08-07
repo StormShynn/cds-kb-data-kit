@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGSUBPROCESSTEXT
-description: Cabillgsubprocesstext
+description: "Cabillgsubprocesstext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

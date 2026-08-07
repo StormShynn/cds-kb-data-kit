@@ -1,6 +1,6 @@
 ---
 name: I_CACLEARINGRESTRICTIONCODE
-description: Caclearingrestrictioncode
+description: "Caclearingrestrictioncode"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

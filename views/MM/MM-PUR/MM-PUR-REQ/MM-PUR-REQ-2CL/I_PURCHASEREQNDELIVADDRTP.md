@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEREQNDELIVADDRTP
-description: Purchase RequisitionNDELIVADDRTP
+description: "Purchase RequisitionNDELIVADDRTP"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

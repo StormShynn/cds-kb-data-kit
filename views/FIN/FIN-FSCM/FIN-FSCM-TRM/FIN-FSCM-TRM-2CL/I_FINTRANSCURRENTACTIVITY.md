@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSCURRENTACTIVITY
-description: This CDS view provides access to data of the current financial transaction activities. You can therefore use the data to analyze financial transactions by these attributes. This CDS view provides the prerequisites for answering the following business questions: Which is the current financial transaction activity of a financial transaction? Who created or changed a financial transaction activity?
+description: "This CDS view provides access to data of the current financial transaction activities. You can therefore use the data to analyze financial transactions by these attributes. This CDS view provides the prerequisites for answering the following business questions: Which is the current financial transaction activity of a financial transaction? Who created or changed a financial transaction activity?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSCURRENTACTIVITY')/$value
-semantic_en: This CDS view provides access to data of the current financial transaction activities. You can therefore use the data to analyze financial transactions by these attributes. This CDS view provides the prerequisites for answering the following business questions: Which is the current financial transaction activity of a financial transaction? Who created or changed a financial transaction activity?
+semantic_en: "This CDS view provides access to data of the current financial transaction activities. You can therefore use the data to analyze financial transactions by these attributes. This CDS view provides the prerequisites for answering the following business questions: Which is the current financial transaction activity of a financial transaction? Who created or changed a financial transaction activity?"
 tags:
   - FIN
   - bo:companycode

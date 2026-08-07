@@ -1,6 +1,6 @@
 ---
 name: D_PRODNORDERGETMISSINGPARTSR
-description: D Prodnordergetmissingpartsr
+description: "D Prodnordergetmissingpartsr"
 app_component: PP-SFC-2CL
 software_component: SAPSCORE
 release_state: released

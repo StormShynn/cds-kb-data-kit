@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRSETTLMTCAL
-description: Cndncontrsettlmtcal
+description: "Cndncontrsettlmtcal"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

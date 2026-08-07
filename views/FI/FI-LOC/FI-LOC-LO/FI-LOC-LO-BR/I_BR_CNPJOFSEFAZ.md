@@ -1,19 +1,19 @@
 ---
 name: I_BR_CNPJOFSEFAZ
-description: This CDS view provides you with a list of the tax authority (Sefaz) CNPJ for different regions. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view provides you with a list of the tax authority (Sefaz) CNPJ for different regions. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_CNPJOFSEFAZ')/$value
-semantic_en: This CDS view provides you with a list of the tax authority (Sefaz) CNPJ for different regions. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Brazil CNPJ Of SEFAZ By Region — CDS view giao diện dựa trên logbr_sefaz_cnpj.
+semantic_en: "This CDS view provides you with a list of the tax authority (Sefaz) CNPJ for different regions. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Brazil CNPJ Of SEFAZ By Region — CDS view giao diện dựa trên logbr_sefaz_cnpj."
 keywords:
-  - brazil
-  - cnpj
-  - sefaz
-  - region
+  - "brazil"
+  - "cnpj"
+  - "sefaz"
+  - "region"
 tags:
   - FI
   - bo:companycode

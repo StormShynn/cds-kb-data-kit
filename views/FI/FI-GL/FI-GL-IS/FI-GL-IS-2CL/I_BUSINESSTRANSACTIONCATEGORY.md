@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSTRANSACTIONCATEGORY
-description: Businesstransactioncategory
+description: "Businesstransactioncategory"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

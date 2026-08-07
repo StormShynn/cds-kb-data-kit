@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFEPHARMACEUTICAL
-description: BR Nfepharmaceutical
+description: "BR Nfepharmaceutical"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

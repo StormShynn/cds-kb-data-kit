@@ -1,6 +1,6 @@
 ---
 name: I_UNITOFMEASUREDIMENSION
-description: Unit of MeasureDIMENSION
+description: "Unit of MeasureDIMENSION"
 app_component: BC-SRV-ASF-UOM
 software_component: SAP_BASIS
 release_state: released

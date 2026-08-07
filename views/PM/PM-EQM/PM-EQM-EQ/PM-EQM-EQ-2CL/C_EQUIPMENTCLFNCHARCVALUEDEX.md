@@ -1,6 +1,6 @@
 ---
 name: C_EQUIPMENTCLFNCHARCVALUEDEX
-description: Equipmentclfncharcvaluedex
+description: "Equipmentclfncharcvaluedex"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

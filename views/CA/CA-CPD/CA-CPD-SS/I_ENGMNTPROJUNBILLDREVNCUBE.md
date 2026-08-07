@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJUNBILLDREVNCUBE
-description: This CDS view provides the prerequisites for answering the following business questions: What is the unbilled amount in projects that I manage? What is the unbilled amount per billing item type (fixed price, time and expense, and so on)? Which are the customer projects where billing is overdue?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the unbilled amount in projects that I manage? What is the unbilled amount per billing item type (fixed price, time and expense, and so on)? Which are the customer projects where billing is overdue?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJUNBILLDREVNCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the unbilled amount in projects that I manage? What is the unbilled amount per billing item type (fixed price, time and expense, and so on)? Which are the customer projects where billing is overdue?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the unbilled amount in projects that I manage? What is the unbilled amount per billing item type (fixed price, time and expense, and so on)? Which are the customer projects where billing is overdue?"
 tags:
   - CA
   - billing

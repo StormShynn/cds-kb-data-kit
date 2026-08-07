@@ -1,6 +1,6 @@
 ---
 name: I_INCOTERMSCLASSIFICATION
-description: Incotermsclassification
+description: "Incotermsclassification"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

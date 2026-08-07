@@ -1,13 +1,13 @@
 ---
 name: C_PFMGOODSMOVEMENTDOCUMENTDEX
-description: This CDS view is used by Product Footprint Management for the data extraction of relevant material flows. The view provides the necessary data based upon posted material documents. The material flow data is consumed by the solution in an aggregated way.
+description: "This CDS view is used by Product Footprint Management for the data extraction of relevant material flows. The view provides the necessary data based upon posted material documents. The material flow data is consumed by the solution in an aggregated way."
 app_component: SUS-PFM-INT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PFMGOODSMOVEMENTDOCUMENTDEX')/$value
-semantic_en: This CDS view is used by Product Footprint Management for the data extraction of relevant material flows. The view provides the necessary data based upon posted material documents. The material flow data is consumed by the solution in an aggregated way.
+semantic_en: "This CDS view is used by Product Footprint Management for the data extraction of relevant material flows. The view provides the necessary data based upon posted material documents. The material flow data is consumed by the solution in an aggregated way."
 tags:
   - SUS
   - bo:material

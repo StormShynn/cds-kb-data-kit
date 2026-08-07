@@ -1,6 +1,6 @@
 ---
 name: I_WORKASSIGNMENTADDRESSTP
-description: Workassignmentaddresstp
+description: "Workassignmentaddresstp"
 app_component: CA-WFD-INT
 software_component: SAPSCORE
 release_state: released

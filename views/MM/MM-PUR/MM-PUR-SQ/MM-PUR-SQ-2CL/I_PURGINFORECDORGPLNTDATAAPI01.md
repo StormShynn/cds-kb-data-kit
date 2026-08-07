@@ -1,6 +1,6 @@
 ---
 name: I_PURGINFORECDORGPLNTDATAAPI01
-description: Purginforecdorgplntdataapi 01
+description: "Purginforecdorgplntdataapi 01"
 app_component: MM-PUR-SQ-2CL
 software_component: SAPSCORE
 release_state: released

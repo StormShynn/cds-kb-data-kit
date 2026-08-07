@@ -1,6 +1,6 @@
 ---
 name: I_SALESCONTRACTTEXTTP
-description: Salescontracttexttp
+description: "Salescontracttexttp"
 app_component: SD-SLS-OA-2CL
 software_component: SAPSCORE
 release_state: released

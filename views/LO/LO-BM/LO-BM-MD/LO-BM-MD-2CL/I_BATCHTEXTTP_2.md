@@ -1,6 +1,6 @@
 ---
 name: I_BATCHTEXTTP_2
-description: Batchtexttp 2
+description: "Batchtexttp 2"
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

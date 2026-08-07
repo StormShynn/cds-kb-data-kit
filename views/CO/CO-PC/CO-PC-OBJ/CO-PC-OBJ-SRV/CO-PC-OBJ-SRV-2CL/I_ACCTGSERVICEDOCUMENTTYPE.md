@@ -1,6 +1,6 @@
 ---
 name: I_ACCTGSERVICEDOCUMENTTYPE
-description: ACCTGService DocumentUMENTTYPE
+description: "ACCTGService DocumentUMENTTYPE"
 app_component: CO-PC-OBJ-SRV-2CL
 software_component: SAPSCORE
 release_state: released

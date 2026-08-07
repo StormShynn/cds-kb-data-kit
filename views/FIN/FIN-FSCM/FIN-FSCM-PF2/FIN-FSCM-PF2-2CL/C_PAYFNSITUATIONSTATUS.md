@@ -1,13 +1,13 @@
 ---
 name: C_PAYFNSITUATIONSTATUS
-description: Situation for Status Issue
+description: "Situation for Status Issue"
 app_component: FIN-FSCM-PF2-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PAYFNSITUATIONSTATUS')/$value
-semantic_en: Situation for Status Issue
+semantic_en: "Situation for Status Issue"
 tags:
   - FIN
   - component:FIN-FSCM-PF2-2CL

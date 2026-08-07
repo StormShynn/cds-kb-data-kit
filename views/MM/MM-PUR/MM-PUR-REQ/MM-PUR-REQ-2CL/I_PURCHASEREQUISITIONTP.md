@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASEREQUISITIONTP
-description: Purchase RequisitionUISITIONTP
+description: "Purchase RequisitionUISITIONTP"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

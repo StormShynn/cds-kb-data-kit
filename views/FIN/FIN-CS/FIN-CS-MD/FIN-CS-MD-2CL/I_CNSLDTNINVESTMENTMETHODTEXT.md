@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNINVESTMENTMETHODTEXT
-description: Cnsldtninvestmentmethodtext
+description: "Cnsldtninvestmentmethodtext"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

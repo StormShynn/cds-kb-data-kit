@@ -1,13 +1,13 @@
 ---
 name: C_CONTRALLOCVOLPRIMPRODQRY
-description: CA Volume for Primary Products Query
+description: "CA Volume for Primary Products Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONTRALLOCVOLPRIMPRODQRY')/$value
-semantic_en: CA Volume for Primary Products Query
+semantic_en: "CA Volume for Primary Products Query"
 tags:
   - IS
   - bo:material

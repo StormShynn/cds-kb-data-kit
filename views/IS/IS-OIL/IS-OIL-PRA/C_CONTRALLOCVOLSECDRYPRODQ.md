@@ -1,13 +1,13 @@
 ---
 name: C_CONTRALLOCVOLSECDRYPRODQ
-description: CA Volume for Secondary Products Query
+description: "CA Volume for Secondary Products Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONTRALLOCVOLSECDRYPRODQ')/$value
-semantic_en: CA Volume for Secondary Products Query
+semantic_en: "CA Volume for Secondary Products Query"
 tags:
   - IS
   - bo:material

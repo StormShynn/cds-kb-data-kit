@@ -1,6 +1,6 @@
 ---
 name: D_PCLGSDCGETMXDLDGICMTSR
-description: D Pclgsdcgetmxdldgicmtsr
+description: "D Pclgsdcgetmxdldgicmtsr"
 app_component: EHS-SUS-FND-PC
 software_component: SAPSCORE
 release_state: released

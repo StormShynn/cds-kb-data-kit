@@ -1,6 +1,6 @@
 ---
 name: I_SALESDOCUMENTSUBSQNTPROCFLOW
-description: Salesdocumentsubsqntprocflow
+description: "Salesdocumentsubsqntprocflow"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

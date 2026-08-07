@@ -1,6 +1,6 @@
 ---
 name: I_ENPRJELMDLVBRLDISTRREVN
-description: Enprjelmdlvbrldistrrevn
+description: "Enprjelmdlvbrldistrrevn"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_LEGALDOCAGREEMENTTP
-description: Legaldocagreementtp
+description: "Legaldocagreementtp"
 app_component: CM-DOC-2CL
 software_component: SAPSCORE
 release_state: released

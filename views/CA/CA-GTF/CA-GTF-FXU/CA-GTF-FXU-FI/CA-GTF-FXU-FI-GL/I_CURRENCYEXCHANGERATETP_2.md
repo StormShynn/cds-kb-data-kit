@@ -1,6 +1,6 @@
 ---
 name: I_CURRENCYEXCHANGERATETP_2
-description: CURRENCYExchange RateTP 2
+description: "CURRENCYExchange RateTP 2"
 app_component: CA-GTF-FXU-FI-GL
 software_component: SAPSCORE
 release_state: released

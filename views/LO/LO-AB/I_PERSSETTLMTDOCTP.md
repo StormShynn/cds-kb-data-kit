@@ -1,6 +1,6 @@
 ---
 name: I_PERSSETTLMTDOCTP
-description: Perssettlmtdoctp
+description: "Perssettlmtdoctp"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

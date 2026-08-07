@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSOBJECTTYPETEXT
-description: Addressobjecttypetext
+description: "Addressobjecttypetext"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

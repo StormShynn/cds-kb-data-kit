@@ -1,13 +1,13 @@
 ---
 name: I_SEASONPURCHASEPERIOD_2
-description: Season Purchase Period
+description: "Season Purchase Period"
 app_component: LO-RFM-CA-SE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SEASONPURCHASEPERIOD_2')/$value
-semantic_en: Season Purchase Period
+semantic_en: "Season Purchase Period"
 tags:
   - LO
   - bo:salesorder

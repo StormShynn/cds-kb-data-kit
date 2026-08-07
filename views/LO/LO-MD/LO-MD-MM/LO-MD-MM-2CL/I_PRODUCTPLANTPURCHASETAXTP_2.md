@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTPLANTPURCHASETAXTP_2
-description: Productplantpurchasetaxtp 2
+description: "Productplantpurchasetaxtp 2"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

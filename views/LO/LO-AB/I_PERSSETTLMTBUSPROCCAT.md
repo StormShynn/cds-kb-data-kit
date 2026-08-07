@@ -1,6 +1,6 @@
 ---
 name: I_PERSSETTLMTBUSPROCCAT
-description: Perssettlmtbusproccat
+description: "Perssettlmtbusproccat"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

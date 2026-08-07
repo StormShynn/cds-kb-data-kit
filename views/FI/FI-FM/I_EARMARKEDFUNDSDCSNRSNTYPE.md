@@ -1,6 +1,6 @@
 ---
 name: I_EARMARKEDFUNDSDCSNRSNTYPE
-description: Earmarkedfundsdcsnrsntype
+description: "Earmarkedfundsdcsnrsntype"
 app_component: FI-FM
 software_component: SAPSCORE
 release_state: released

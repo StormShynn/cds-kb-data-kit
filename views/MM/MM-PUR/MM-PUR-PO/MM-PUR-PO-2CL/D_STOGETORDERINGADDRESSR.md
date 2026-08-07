@@ -1,6 +1,6 @@
 ---
 name: D_STOGETORDERINGADDRESSR
-description: D Stogetorderingaddressr
+description: "D Stogetorderingaddressr"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

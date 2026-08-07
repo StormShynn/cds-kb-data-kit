@@ -1,13 +1,13 @@
 ---
 name: I_REQUESTWITHBANKACCOUNT
-description: This CDS view provides you with access to the data of bank accounts that are involved in a workflow change request for bank account management. This CDS view provides the prerequisites for answering the following business question: Which bank accounts are involved in this change request?
+description: "This CDS view provides you with access to the data of bank accounts that are involved in a workflow change request for bank account management. This CDS view provides the prerequisites for answering the following business question: Which bank accounts are involved in this change request?"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REQUESTWITHBANKACCOUNT')/$value
-semantic_en: This CDS view provides you with access to the data of bank accounts that are involved in a workflow change request for bank account management. This CDS view provides the prerequisites for answering the following business question: Which bank accounts are involved in this change request?
+semantic_en: "This CDS view provides you with access to the data of bank accounts that are involved in a workflow change request for bank account management. This CDS view provides the prerequisites for answering the following business question: Which bank accounts are involved in this change request?"
 tags:
   - FIN
   - account

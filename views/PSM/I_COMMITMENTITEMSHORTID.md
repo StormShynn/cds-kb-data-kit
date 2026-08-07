@@ -1,6 +1,6 @@
 ---
 name: I_COMMITMENTITEMSHORTID
-description: Commitmentitemshortid
+description: "Commitmentitemshortid"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

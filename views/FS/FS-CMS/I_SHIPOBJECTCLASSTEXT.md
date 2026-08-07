@@ -1,13 +1,13 @@
 ---
 name: I_SHIPOBJECTCLASSTEXT
-description: Ship Class - Text
+description: "Ship Class - Text"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SHIPOBJECTCLASSTEXT')/$value
-semantic_en: Ship Class - Text
+semantic_en: "Ship Class - Text"
 tags:
   - FS
   - bo:purchaseorder

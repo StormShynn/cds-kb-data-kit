@@ -1,13 +1,13 @@
 ---
 name: I_CITYCODE
-description: City Code
+description: "City Code"
 app_component: AP-MD-BP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITYCODE')/$value
-semantic_en: City Code
+semantic_en: "City Code"
 tags:
   - AP
   - AP-MD

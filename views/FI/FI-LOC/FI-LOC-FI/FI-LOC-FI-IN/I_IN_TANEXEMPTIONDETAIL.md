@@ -1,6 +1,6 @@
 ---
 name: I_IN_TANEXEMPTIONDETAIL
-description: IN Tanexemptiondetail
+description: "IN Tanexemptiondetail"
 app_component: FI-LOC-FI-IN
 software_component: SAPSCORE
 release_state: released

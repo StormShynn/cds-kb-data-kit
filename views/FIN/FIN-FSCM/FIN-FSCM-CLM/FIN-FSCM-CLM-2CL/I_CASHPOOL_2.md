@@ -1,6 +1,6 @@
 ---
 name: I_CASHPOOL_2
-description: Cashpool 2
+description: "Cashpool 2"
 app_component: FIN-FSCM-CLM-2CL
 software_component: SAPSCORE
 release_state: released

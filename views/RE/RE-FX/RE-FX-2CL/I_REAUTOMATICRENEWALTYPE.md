@@ -1,6 +1,6 @@
 ---
 name: I_REAUTOMATICRENEWALTYPE
-description: Reautomaticrenewaltype
+description: "Reautomaticrenewaltype"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

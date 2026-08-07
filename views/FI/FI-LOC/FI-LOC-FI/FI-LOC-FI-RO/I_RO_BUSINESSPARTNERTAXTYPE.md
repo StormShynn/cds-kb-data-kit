@@ -1,6 +1,6 @@
 ---
 name: I_RO_BUSINESSPARTNERTAXTYPE
-description: RO Business PartnerTAXTYPE
+description: "RO Business PartnerTAXTYPE"
 app_component: FI-LOC-FI-RO
 software_component: SAPSCORE
 release_state: released

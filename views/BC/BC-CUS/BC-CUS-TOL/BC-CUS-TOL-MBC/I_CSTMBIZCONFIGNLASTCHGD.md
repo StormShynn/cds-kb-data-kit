@@ -1,6 +1,6 @@
 ---
 name: I_CSTMBIZCONFIGNLASTCHGD
-description: Cstmbizconfignlastchgd
+description: "Cstmbizconfignlastchgd"
 app_component: BC-CUS-TOL-MBC
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLBILLINGBLOCKSTATUST
-description: Overallbillingblockstatust
+description: "Overallbillingblockstatust"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

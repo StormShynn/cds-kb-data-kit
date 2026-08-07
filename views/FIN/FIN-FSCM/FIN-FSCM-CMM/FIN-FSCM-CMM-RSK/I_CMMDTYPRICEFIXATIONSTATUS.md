@@ -1,13 +1,13 @@
 ---
 name: I_CMMDTYPRICEFIXATIONSTATUS
-description: Commodity Price Fixation Status
+description: "Commodity Price Fixation Status"
 app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPRICEFIXATIONSTATUS')/$value
-semantic_en: Commodity Price Fixation Status
+semantic_en: "Commodity Price Fixation Status"
 tags:
   - FIN
   - bo:companycode

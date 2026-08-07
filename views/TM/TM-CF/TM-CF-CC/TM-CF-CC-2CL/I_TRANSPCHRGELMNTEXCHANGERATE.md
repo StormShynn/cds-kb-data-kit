@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPCHRGELMNTEXCHANGERATE
-description: TRANSPCHRGELMNTExchange Rate
+description: "TRANSPCHRGELMNTExchange Rate"
 app_component: TM-CF-CC-2CL
 software_component: SAPSCORE
 release_state: released

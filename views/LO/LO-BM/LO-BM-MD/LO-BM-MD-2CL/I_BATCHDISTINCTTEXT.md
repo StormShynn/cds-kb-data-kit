@@ -1,23 +1,23 @@
 ---
 name: I_BATCHDISTINCTTEXT
-description: This CDS view provides the prerequisites for answering the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use?
+description: "This CDS view provides the prerequisites for answering the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use?"
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BATCHDISTINCTTEXT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use?
-semantic_vi: Batch information by batch key - Text — CDS view giao diện dựa trên R_BatchText.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use?"
+semantic_vi: "Batch information by batch key - Text — CDS view giao diện dựa trên R_BatchText."
 keywords:
-  - batch
-  - information
-  - key
-  - text
-  - language
-  - material
-  - plant
-  - description
+  - "batch"
+  - "information"
+  - "key"
+  - "text"
+  - "language"
+  - "material"
+  - "plant"
+  - "description"
 tags:
   - LO
   - bo:plant

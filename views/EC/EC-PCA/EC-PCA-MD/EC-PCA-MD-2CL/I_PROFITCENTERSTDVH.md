@@ -1,6 +1,6 @@
 ---
 name: I_PROFITCENTERSTDVH
-description: Profit CenterSTDVH
+description: "Profit CenterSTDVH"
 app_component: EC-PCA-MD-2CL
 software_component: SAPSCORE
 release_state: released

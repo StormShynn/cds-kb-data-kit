@@ -1,13 +1,13 @@
 ---
 name: I_COLLTRLRELANDREGFINDATA
-description: Land Reg Fin Dets for Collateral
+description: "Land Reg Fin Dets for Collateral"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLTRLRELANDREGFINDATA')/$value
-semantic_en: Land Reg Fin Dets for Collateral
+semantic_en: "Land Reg Fin Dets for Collateral"
 tags:
   - FS
   - bo:companycode

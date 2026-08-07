@@ -1,24 +1,24 @@
 ---
 name: C_MAINTORDOBJECTLISTITEMDEX
-description: Maintenance Order Object List Item DEX
+description: "Maintenance Order Object List Item DEX"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDOBJECTLISTITEMDEX')/$value
-semantic_en: Maintenance Order Object List Item DEX
-semantic_vi: Maintenance Order Object List Item DEX — CDS view tiêu dùng (transactional data) dựa trên I_MaintenanceObjectListItem.
+semantic_en: "Maintenance Order Object List Item DEX"
+semantic_vi: "Maintenance Order Object List Item DEX — CDS view tiêu dùng (transactional data) dựa trên I_MaintenanceObjectListItem."
 keywords:
-  - maintenance
-  - order
-  - object
-  - list
-  - item
-  - dex
-  - usage
-  - code
-  - notification
+  - "maintenance"
+  - "order"
+  - "object"
+  - "list"
+  - "item"
+  - "dex"
+  - "usage"
+  - "code"
+  - "notification"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

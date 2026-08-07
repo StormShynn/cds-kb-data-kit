@@ -1,6 +1,6 @@
 ---
 name: I_REGION
-description: Region
+description: "Region"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

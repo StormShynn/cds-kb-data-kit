@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRINVCCHGDOCITMAPI01
-description: Suplrinvcchgdocitmapi 01
+description: "Suplrinvcchgdocitmapi 01"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

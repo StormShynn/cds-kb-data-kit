@@ -1,6 +1,6 @@
 ---
 name: I_BR_FREIGHTPAYER
-description: BR Freightpayer
+description: "BR Freightpayer"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

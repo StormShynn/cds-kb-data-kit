@@ -1,13 +1,13 @@
 ---
 name: I_INTRASTATDECLNGDSFLWCATTEXT
-description: Intrastat Decl Goods Flw Cat - Text
+description: "Intrastat Decl Goods Flw Cat - Text"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTRASTATDECLNGDSFLWCATTEXT')/$value
-semantic_en: Intrastat Decl Goods Flw Cat - Text
+semantic_en: "Intrastat Decl Goods Flw Cat - Text"
 tags:
   - LO
   - component:LO-AB

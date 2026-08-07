@@ -1,6 +1,6 @@
 ---
 name: I_PURGPRODUCTMARKETABILITYSTS
-description: Purgproductmarketabilitysts
+description: "Purgproductmarketabilitysts"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

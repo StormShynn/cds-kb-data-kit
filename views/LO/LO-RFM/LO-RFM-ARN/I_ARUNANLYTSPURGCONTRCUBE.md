@@ -1,26 +1,26 @@
 ---
 name: I_ARUNANLYTSPURGCONTRCUBE
-description: Purchasing Contract Details - Cube
+description: "Purchasing Contract Details - Cube"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSPURGCONTRCUBE')/$value
-semantic_en: Purchasing Contract Details - Cube
-semantic_vi: Purchasing Contract Details - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocPurgContrC.
+semantic_en: "Purchasing Contract Details - Cube"
+semantic_vi: "Purchasing Contract Details - Cube — CDS view tổng hợp dựa trên I_SupDmndAllDocPurgContrC."
 keywords:
-  - purchasing
-  - contract
-  - details
-  - cube
-  - product
-  - plant
-  - batch
-  - storage
-  - location
-  - supply
-  - number
+  - "purchasing"
+  - "contract"
+  - "details"
+  - "cube"
+  - "product"
+  - "plant"
+  - "batch"
+  - "storage"
+  - "location"
+  - "supply"
+  - "number"
 tags:
   - LO
   - component:LO-RFM-ARN

@@ -1,6 +1,6 @@
 ---
 name: I_HANDLINGUNITHEADER
-description: Handlingunitheader
+description: "Handlingunitheader"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

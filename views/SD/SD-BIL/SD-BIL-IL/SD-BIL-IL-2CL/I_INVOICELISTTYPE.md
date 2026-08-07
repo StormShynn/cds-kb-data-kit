@@ -1,6 +1,6 @@
 ---
 name: I_INVOICELISTTYPE
-description: Invoicelisttype
+description: "Invoicelisttype"
 app_component: SD-BIL-IL-2CL
 software_component: SAPSCORE
 release_state: released

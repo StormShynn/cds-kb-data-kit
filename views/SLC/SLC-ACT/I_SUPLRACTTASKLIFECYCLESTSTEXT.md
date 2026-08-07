@@ -1,6 +1,6 @@
 ---
 name: I_SUPLRACTTASKLIFECYCLESTSTEXT
-description: Suplracttasklifecycleststext
+description: "Suplracttasklifecycleststext"
 app_component: SLC-ACT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFINDATASOURCETEXTTP
-description: Cnsldtnfindatasourcetexttp
+description: "Cnsldtnfindatasourcetexttp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

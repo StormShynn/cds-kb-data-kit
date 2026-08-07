@@ -1,6 +1,6 @@
 ---
 name: I_TIMEZONEIANACODESTDVH
-description: Timezoneianacodestdvh
+description: "Timezoneianacodestdvh"
 app_component: BC-SRV-TIM-TZ
 software_component: SAP_BASIS
 release_state: released

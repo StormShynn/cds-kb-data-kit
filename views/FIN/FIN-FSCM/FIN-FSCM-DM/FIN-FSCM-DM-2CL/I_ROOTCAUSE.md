@@ -1,6 +1,6 @@
 ---
 name: I_ROOTCAUSE
-description: Rootcause
+description: "Rootcause"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

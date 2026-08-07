@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGHGSCP2CNTRCTLINSTR
-description: Cnsldtnghgscp 2CNTRCTLINSTR
+description: "Cnsldtnghgscp 2CNTRCTLINSTR"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

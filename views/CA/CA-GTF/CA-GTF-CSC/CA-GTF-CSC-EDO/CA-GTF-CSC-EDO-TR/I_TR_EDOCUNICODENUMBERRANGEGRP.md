@@ -1,6 +1,6 @@
 ---
 name: I_TR_EDOCUNICODENUMBERRANGEGRP
-description: TR Edocunicodenumberrangegrp
+description: "TR Edocunicodenumberrangegrp"
 app_component: CA-GTF-CSC-EDO-TR
 software_component: SAPSCORE
 release_state: released

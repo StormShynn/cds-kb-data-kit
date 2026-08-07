@@ -1,6 +1,6 @@
 ---
 name: I_BR_SIMPLESSUPPLIERTAXRATE
-description: BR Simplessuppliertaxrate
+description: "BR Simplessuppliertaxrate"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

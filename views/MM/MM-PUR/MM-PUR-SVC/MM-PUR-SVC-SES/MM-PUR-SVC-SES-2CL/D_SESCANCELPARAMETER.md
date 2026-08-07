@@ -1,6 +1,6 @@
 ---
 name: D_SESCANCELPARAMETER
-description: D Sescancelparameter
+description: "D Sescancelparameter"
 app_component: MM-PUR-SVC-SES-2CL
 software_component: SAPSCORE
 release_state: released

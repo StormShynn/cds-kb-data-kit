@@ -1,6 +1,6 @@
 ---
 name: I_ACTUALCOSTINGACTIVITYRESULT
-description: Actualcostingactivityresult
+description: "Actualcostingactivityresult"
 app_component: CO-PC-ACT-2CL
 software_component: SAPSCORE
 release_state: released

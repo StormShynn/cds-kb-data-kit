@@ -1,6 +1,6 @@
 ---
 name: I_STSTCLKEYFIGUREVALUEITEM
-description: Ststclkeyfigurevalueitem
+description: "Ststclkeyfigurevalueitem"
 app_component: CA-GTF-FXU-FI-CO
 software_component: SAPSCORE
 release_state: released

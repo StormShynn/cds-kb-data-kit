@@ -1,6 +1,6 @@
 ---
 name: I_WORKFLOWSTATUSDETAILS
-description: Workflowstatusdetails
+description: "Workflowstatusdetails"
 app_component: BC-BMT-WFM
 software_component: SAP_BASIS
 release_state: released

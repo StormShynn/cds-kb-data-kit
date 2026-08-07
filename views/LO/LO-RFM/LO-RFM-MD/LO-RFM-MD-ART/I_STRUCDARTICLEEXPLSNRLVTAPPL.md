@@ -1,6 +1,6 @@
 ---
 name: I_STRUCDARTICLEEXPLSNRLVTAPPL
-description: Strucdarticleexplsnrlvtappl
+description: "Strucdarticleexplsnrlvtappl"
 app_component: LO-RFM-MD-ART
 software_component: SAPSCORE
 release_state: released

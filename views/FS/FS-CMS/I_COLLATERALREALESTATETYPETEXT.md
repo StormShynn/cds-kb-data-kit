@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALREALESTATETYPETEXT
-description: Type of Collateral Real Estate - Text
+description: "Type of Collateral Real Estate - Text"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALREALESTATETYPETEXT')/$value
-semantic_en: Type of Collateral Real Estate - Text
+semantic_en: "Type of Collateral Real Estate - Text"
 tags:
   - FS
   - component:FS-CMS

@@ -1,13 +1,13 @@
 ---
 name: I_TREASURYACCOUNTINGPOSITION
-description: Treasury Accounting Position
+description: "Treasury Accounting Position"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TREASURYACCOUNTINGPOSITION')/$value
-semantic_en: Treasury Accounting Position
+semantic_en: "Treasury Accounting Position"
 tags:
   - FIN
   - account

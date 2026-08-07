@@ -1,6 +1,6 @@
 ---
 name: I_CHANGEMASTERSTATUSSTDVH
-description: Change MasterERSTATUSSTDVH
+description: "Change MasterERSTATUSSTDVH"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released

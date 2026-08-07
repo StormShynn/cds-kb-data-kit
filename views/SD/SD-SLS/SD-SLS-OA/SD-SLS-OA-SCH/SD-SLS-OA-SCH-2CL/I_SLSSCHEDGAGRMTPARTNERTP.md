@@ -1,6 +1,6 @@
 ---
 name: I_SLSSCHEDGAGRMTPARTNERTP
-description: Slsschedgagrmtpartnertp
+description: "Slsschedgagrmtpartnertp"
 app_component: SD-SLS-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

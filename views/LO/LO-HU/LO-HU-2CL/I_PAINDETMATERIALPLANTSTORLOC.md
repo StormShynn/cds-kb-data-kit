@@ -1,6 +1,6 @@
 ---
 name: I_PAINDETMATERIALPLANTSTORLOC
-description: Paindetmaterialplantstorloc
+description: "Paindetmaterialplantstorloc"
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released

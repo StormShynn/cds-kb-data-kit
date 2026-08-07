@@ -1,6 +1,6 @@
 ---
 name: D_SUPPLIERINVOICESIMULATER
-description: D Supplier InvoiceSIMULATER
+description: "D Supplier InvoiceSIMULATER"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

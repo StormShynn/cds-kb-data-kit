@@ -1,17 +1,17 @@
 ---
 name: C_AVGDAILYTRIALBALANCE
-description: ADB Key Figures - Query
+description: "ADB Key Figures - Query"
 app_component: FI-GL-GL-ADB-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_AVGDAILYTRIALBALANCE')/$value
-semantic_en: ADB Key Figures - Query
+semantic_en: "ADB Key Figures - Query"
 keywords:
-  - ADB Key Figures - Query
-  - ADB Key Figures - Query
-  - ADB Key Figures - Query
+  - "ADB Key Figures - Query"
+  - "ADB Key Figures - Query"
+  - "ADB Key Figures - Query"
 tags:
   - FI
   - bo:companycode

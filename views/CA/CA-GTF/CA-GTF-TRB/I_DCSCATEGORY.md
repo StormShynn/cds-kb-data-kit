@@ -1,13 +1,13 @@
 ---
 name: I_DCSCATEGORY
-description: Derivative Contract Specification Category
+description: "Derivative Contract Specification Category"
 app_component: CA-GTF-TRB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DCSCATEGORY')/$value
-semantic_en: Derivative Contract Specification Category
+semantic_en: "Derivative Contract Specification Category"
 tags:
   - CA
   - bo:companycode

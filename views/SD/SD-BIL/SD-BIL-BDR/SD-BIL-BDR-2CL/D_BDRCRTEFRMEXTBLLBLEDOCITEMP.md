@@ -1,6 +1,6 @@
 ---
 name: D_BDRCRTEFRMEXTBLLBLEDOCITEMP
-description: D Bdrcrtefrmextbllbledocitemp
+description: "D Bdrcrtefrmextbllbledocitemp"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

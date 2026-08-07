@@ -1,13 +1,13 @@
 ---
 name: I_COLLATERALATTRIBUTEINDCAT
-description: Collateral Attribute Indicator Category
+description: "Collateral Attribute Indicator Category"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COLLATERALATTRIBUTEINDCAT')/$value
-semantic_en: Collateral Attribute Indicator Category
+semantic_en: "Collateral Attribute Indicator Category"
 tags:
   - FS
   - component:FS-CMS

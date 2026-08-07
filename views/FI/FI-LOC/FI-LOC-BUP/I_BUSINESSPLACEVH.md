@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPLACEVH
-description: Businessplacevh
+description: "Businessplacevh"
 app_component: FI-LOC-BUP
 software_component: SAPSCORE
 release_state: released

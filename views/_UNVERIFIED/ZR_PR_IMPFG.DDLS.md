@@ -1,25 +1,25 @@
 ---
 name: ZR_PR_IMPFG.DDLS
-description: ###GENERATED Core Data Service Entity
+description: "###GENERATED Core Data Service Entity"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/rammelbalagtas/zpr_auth_csd/blob/6eb0f1ee7df75900112fac82ad8923c08f754851/src/zr_pr_impfg.ddls.asddls
-semantic_en: ###GENERATED Core Data Service Entity — CDS view based on ZPR_IMPFG.
-semantic_vi: ###GENERATED Core Data Service Entity — CDS view dựa trên ZPR_IMPFG.
+semantic_en: "###GENERATED Core Data Service Entity — CDS view based on ZPR_IMPFG."
+semantic_vi: "###GENERATED Core Data Service Entity — CDS view dựa trên ZPR_IMPFG."
 keywords:
-  - ###generated
-  - core
-  - data
-  - service
-  - entity
-  - configmat
-  - material
-  - localcreatedby
-  - localcreatedat
-  - locallastchangedby
+  - "###generated"
+  - "core"
+  - "data"
+  - "service"
+  - "entity"
+  - "configmat"
+  - "material"
+  - "localcreatedby"
+  - "localcreatedat"
+  - "locallastchangedby"
 tags:
   - CO
   - component:CO

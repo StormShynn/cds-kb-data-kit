@@ -1,28 +1,28 @@
 ---
 name: C_OVHDSTSTCLPRJPLNACTLCMTMTQ
-description: This CDS view is designed to provide an analytical query for an overview of overhead statistical project planning, actuals, and commitments. It allows users to analyze financial data related to projects, including planned costs, actual costs, commitments, and variances. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for a specific project or set of projects within a given fiscal year and period? How do the planned costs compare to the actual costs for projects, and what is the variance between them? What are the commitment amounts for projects, and how do they impact the overall financial planning? How can financial data be filtered and analyzed based on various dimensions such as company code, fiscal year, profit center, and project manager? What is the financial status of projects in terms of cost center, segment, and currency? How can users navigate and filter project-related financial data using specific parameters like ledger and planning category? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide an analytical query for an overview of overhead statistical project planning, actuals, and commitments. It allows users to analyze financial data related to projects, including planned costs, actual costs, commitments, and variances. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for a specific project or set of projects within a given fiscal year and period? How do the planned costs compare to the actual costs for projects, and what is the variance between them? What are the commitment amounts for projects, and how do they impact the overall financial planning? How can financial data be filtered and analyzed based on various dimensions such as company code, fiscal year, profit center, and project manager? What is the financial status of projects in terms of cost center, segment, and currency? How can users navigate and filter project-related financial data using specific parameters like ledger and planning category? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OVHDSTSTCLPRJPLNACTLCMTMTQ')/$value
-semantic_en: This CDS view is designed to provide an analytical query for an overview of overhead statistical project planning, actuals, and commitments. It allows users to analyze financial data related to projects, including planned costs, actual costs, commitments, and variances. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for a specific project or set of projects within a given fiscal year and period? How do the planned costs compare to the actual costs for projects, and what is the variance between them? What are the commitment amounts for projects, and how do they impact the overall financial planning? How can financial data be filtered and analyzed based on various dimensions such as company code, fiscal year, profit center, and project manager? What is the financial status of projects in terms of cost center, segment, and currency? How can users navigate and filter project-related financial data using specific parameters like ledger and planning category? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: OH Ststcl Proj Actl Cmtmt Ovw - Query — CDS view tiêu dùng dựa trên OH Ststcl Proj Actl Cmtmt Ovw - Query.
+semantic_en: "This CDS view is designed to provide an analytical query for an overview of overhead statistical project planning, actuals, and commitments. It allows users to analyze financial data related to projects, including planned costs, actual costs, commitments, and variances. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for a specific project or set of projects within a given fiscal year and period? How do the planned costs compare to the actual costs for projects, and what is the variance between them? What are the commitment amounts for projects, and how do they impact the overall financial planning? How can financial data be filtered and analyzed based on various dimensions such as company code, fiscal year, profit center, and project manager? What is the financial status of projects in terms of cost center, segment, and currency? How can users navigate and filter project-related financial data using specific parameters like ledger and planning category? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "OH Ststcl Proj Actl Cmtmt Ovw - Query — CDS view tiêu dùng dựa trên OH Ststcl Proj Actl Cmtmt Ovw - Query."
 keywords:
-  - OH Ststcl Proj Actl Cmtmt Ovw - Query
-  - ststcl
-  - proj
-  - actl
-  - cmtmt
-  - ovw
-  - query
-  - company
-  - code
-  - fiscal
-  - year
-  - ledger
-  - period
+  - "OH Ststcl Proj Actl Cmtmt Ovw - Query"
+  - "ststcl"
+  - "proj"
+  - "actl"
+  - "cmtmt"
+  - "ovw"
+  - "query"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "ledger"
+  - "period"
 tags:
   - CO
   - bo:companycode

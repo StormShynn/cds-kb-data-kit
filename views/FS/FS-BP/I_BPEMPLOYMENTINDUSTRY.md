@@ -1,6 +1,6 @@
 ---
 name: I_BPEMPLOYMENTINDUSTRY
-description: Bpemploymentindustry
+description: "Bpemploymentindustry"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

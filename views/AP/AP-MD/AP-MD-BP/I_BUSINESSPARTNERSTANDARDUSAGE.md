@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERSTANDARDUSAGE
-description: Business PartnerSTANDARDUSAGE
+description: "Business PartnerSTANDARDUSAGE"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

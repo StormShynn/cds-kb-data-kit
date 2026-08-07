@@ -1,6 +1,6 @@
 ---
 name: I_INVOICELISTSTDVH
-description: Invoiceliststdvh
+description: "Invoiceliststdvh"
 app_component: SD-BIL-IL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_LOANCLASSTEXT
-description: Loan Class - Text
+description: "Loan Class - Text"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCLASSTEXT')/$value
-semantic_en: Loan Class - Text
+semantic_en: "Loan Class - Text"
 tags:
   - FS
   - component:FS-CML

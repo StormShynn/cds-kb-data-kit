@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTRECEIVABLELINKDATA
-description: Agreement Receivable Link Details
+description: "Agreement Receivable Link Details"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTRECEIVABLELINKDATA')/$value
-semantic_en: Agreement Receivable Link Details
+semantic_en: "Agreement Receivable Link Details"
 tags:
   - FS
   - component:FS-CMS

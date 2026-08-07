@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNRPTGRULEIDINDEX
-description: This CDS view provides parameter values for Fiscal Year, Fiscal Period, and Consolidation Version. For these parameter values, all valid consolidation reporting rule IDs are returned. The view also provides the consolidation reporting rule version that maps the consolidation version and the validity start and end date for the given consolidation reporting rule ID.
+description: "This CDS view provides parameter values for Fiscal Year, Fiscal Period, and Consolidation Version. For these parameter values, all valid consolidation reporting rule IDs are returned. The view also provides the consolidation reporting rule version that maps the consolidation version and the validity start and end date for the given consolidation reporting rule ID."
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEIDINDEX')/$value
-semantic_en: This CDS view provides parameter values for Fiscal Year, Fiscal Period, and Consolidation Version. For these parameter values, all valid consolidation reporting rule IDs are returned. The view also provides the consolidation reporting rule version that maps the consolidation version and the validity start and end date for the given consolidation reporting rule ID.
+semantic_en: "This CDS view provides parameter values for Fiscal Year, Fiscal Period, and Consolidation Version. For these parameter values, all valid consolidation reporting rule IDs are returned. The view also provides the consolidation reporting rule version that maps the consolidation version and the validity start and end date for the given consolidation reporting rule ID."
 tags:
   - FIN
   - bo:companycode

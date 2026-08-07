@@ -1,13 +1,13 @@
 ---
 name: I_PURCHASINGORGSTDVH
-description: Purchasing Organization
+description: "Purchasing Organization"
 app_component: MM-PUR-GF-F4-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PURCHASINGORGSTDVH')/$value
-semantic_en: Purchasing Organization
+semantic_en: "Purchasing Organization"
 tags:
   - MM
   - component:MM-PUR-GF-F4-2CL

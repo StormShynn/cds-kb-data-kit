@@ -1,6 +1,6 @@
 ---
 name: I_SALESINQUIRY
-description: Salesinquiry
+description: "Salesinquiry"
 app_component: SD-SLS-QUT-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,27 +1,27 @@
 ---
 name: C_PRODMARGCOSTBRKDWNQRY
-description: This CDS view is designed to provide a detailed analysis of product profitability by breaking down costs associated with products. It allows users to analyze financial data related to product costs, including variable and fixed costs, within a specified fiscal period and reporting date. The view is structured to support analytical queries, enabling users to filter and aggregate data based on various dimensions such as company code, fiscal year, product group, and more. This CDS view provides the data to answer the following business questions: What is the profitability of specific products within a given fiscal period? How do variable and fixed costs contribute to the overall cost of goods sold (COGS) for products? What are the cost breakdown components for products sold within a specific time frame? How do different sales and distribution channels impact product profitability? What is the financial impact of specific sales documents and customer groups on product costs? How do different organizational divisions and profit centers contribute to product profitability? What is the effect of different cost breakdown methods on the analysis of product costs? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide a detailed analysis of product profitability by breaking down costs associated with products. It allows users to analyze financial data related to product costs, including variable and fixed costs, within a specified fiscal period and reporting date. The view is structured to support analytical queries, enabling users to filter and aggregate data based on various dimensions such as company code, fiscal year, product group, and more. This CDS view provides the data to answer the following business questions: What is the profitability of specific products within a given fiscal period? How do variable and fixed costs contribute to the overall cost of goods sold (COGS) for products? What are the cost breakdown components for products sold within a specific time frame? How do different sales and distribution channels impact product profitability? What is the financial impact of specific sales documents and customer groups on product costs? How do different organizational divisions and profit centers contribute to product profitability? What is the effect of different cost breakdown methods on the analysis of product costs? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODMARGCOSTBRKDWNQRY')/$value
-semantic_en: This CDS view is designed to provide a detailed analysis of product profitability by breaking down costs associated with products. It allows users to analyze financial data related to product costs, including variable and fixed costs, within a specified fiscal period and reporting date. The view is structured to support analytical queries, enabling users to filter and aggregate data based on various dimensions such as company code, fiscal year, product group, and more. This CDS view provides the data to answer the following business questions: What is the profitability of specific products within a given fiscal period? How do variable and fixed costs contribute to the overall cost of goods sold (COGS) for products? What are the cost breakdown components for products sold within a specific time frame? How do different sales and distribution channels impact product profitability? What is the financial impact of specific sales documents and customer groups on product costs? How do different organizational divisions and profit centers contribute to product profitability? What is the effect of different cost breakdown methods on the analysis of product costs? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Product Profitability CostBrkDwn - Qry — CDS view tiêu dùng dựa trên Product Profitability CostBrkDwn - Qry.
+semantic_en: "This CDS view is designed to provide a detailed analysis of product profitability by breaking down costs associated with products. It allows users to analyze financial data related to product costs, including variable and fixed costs, within a specified fiscal period and reporting date. The view is structured to support analytical queries, enabling users to filter and aggregate data based on various dimensions such as company code, fiscal year, product group, and more. This CDS view provides the data to answer the following business questions: What is the profitability of specific products within a given fiscal period? How do variable and fixed costs contribute to the overall cost of goods sold (COGS) for products? What are the cost breakdown components for products sold within a specific time frame? How do different sales and distribution channels impact product profitability? What is the financial impact of specific sales documents and customer groups on product costs? How do different organizational divisions and profit centers contribute to product profitability? What is the effect of different cost breakdown methods on the analysis of product costs? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Product Profitability CostBrkDwn - Qry — CDS view tiêu dùng dựa trên Product Profitability CostBrkDwn - Qry."
 keywords:
-  - Product Profitability CostBrkDwn - Qry
-  - product
-  - profitability
-  - costbrkdwn
-  - qry
-  - currency
-  - field
-  - company
-  - code
-  - fiscal
-  - year
-  - ledger
+  - "Product Profitability CostBrkDwn - Qry"
+  - "product"
+  - "profitability"
+  - "costbrkdwn"
+  - "qry"
+  - "currency"
+  - "field"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "ledger"
 tags:
   - CO
   - bo:businesspartner

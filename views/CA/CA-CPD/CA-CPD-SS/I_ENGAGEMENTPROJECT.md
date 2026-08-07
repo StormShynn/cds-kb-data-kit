@@ -1,15 +1,15 @@
 ---
 name: I_ENGAGEMENTPROJECT
-description: This CDS view provides the prerequisites for answering the following business questions: How many projects are being executed in my company? What are the projects assigned to a project manager? Which projects are at a certain stage in the project life cycle? Which projects are assigned to certain accounting objects such as cost centers or profit centers? When do my projects begin and end?
+description: "This CDS view provides the prerequisites for answering the following business questions: How many projects are being executed in my company? What are the projects assigned to a project manager? Which projects are at a certain stage in the project life cycle? Which projects are assigned to certain accounting objects such as cost centers or profit centers? When do my projects begin and end?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGAGEMENTPROJECT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How many projects are being executed in my company? What are the projects assigned to a project manager? Which projects are at a certain stage in the project life cycle? Which projects are assigned to certain accounting objects such as cost centers or profit centers? When do my projects begin and end?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How many projects are being executed in my company? What are the projects assigned to a project manager? Which projects are at a certain stage in the project life cycle? Which projects are assigned to certain accounting objects such as cost centers or profit centers? When do my projects begin and end?"
 keywords:
-  - Engagement Project
+  - "Engagement Project"
 tags:
   - CA
   - account

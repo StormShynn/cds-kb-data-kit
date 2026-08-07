@@ -1,13 +1,13 @@
 ---
 name: I_RESPACEGROUPUSAGETYPETEXT
-description: Real Estate Space Group Usage Type - Text
+description: "Real Estate Space Group Usage Type - Text"
 app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RESPACEGROUPUSAGETYPETEXT')/$value
-semantic_en: Real Estate Space Group Usage Type - Text
+semantic_en: "Real Estate Space Group Usage Type - Text"
 tags:
   - RE
   - component:RE-FX-IP-2CL

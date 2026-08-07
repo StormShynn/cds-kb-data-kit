@@ -1,6 +1,6 @@
 ---
 name: I_BPRISKGROUP
-description: Bpriskgroup
+description: "Bpriskgroup"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

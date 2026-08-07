@@ -1,6 +1,6 @@
 ---
 name: I_SALESCONTRACT
-description: Salescontract
+description: "Salescontract"
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

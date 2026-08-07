@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPCHARGEPOSTINGSTATUS
-description: Transpchargepostingstatus
+description: "Transpchargepostingstatus"
 app_component: TM-CF-CC-2CL
 software_component: SAPSCORE
 release_state: released

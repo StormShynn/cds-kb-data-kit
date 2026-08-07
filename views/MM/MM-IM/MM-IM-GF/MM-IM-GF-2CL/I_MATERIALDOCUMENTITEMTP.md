@@ -1,6 +1,6 @@
 ---
 name: I_MATERIALDOCUMENTITEMTP
-description: Materialdocumentitemtp
+description: "Materialdocumentitemtp"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

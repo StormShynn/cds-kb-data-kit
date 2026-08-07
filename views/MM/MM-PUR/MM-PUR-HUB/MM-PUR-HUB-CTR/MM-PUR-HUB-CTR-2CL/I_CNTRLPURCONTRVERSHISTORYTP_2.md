@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLPURCONTRVERSHISTORYTP_2
-description: Cntrlpurcontrvershistorytp 2
+description: "Cntrlpurcontrvershistorytp 2"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

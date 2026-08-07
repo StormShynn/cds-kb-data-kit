@@ -1,6 +1,6 @@
 ---
 name: I_FINTRANSACTIONDIRECTION
-description: Fintransactiondirection
+description: "Fintransactiondirection"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

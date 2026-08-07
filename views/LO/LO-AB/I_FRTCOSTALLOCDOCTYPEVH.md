@@ -1,6 +1,6 @@
 ---
 name: I_FRTCOSTALLOCDOCTYPEVH
-description: Frtcostallocdoctypevh
+description: "Frtcostallocdoctypevh"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

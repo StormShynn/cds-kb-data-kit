@@ -1,6 +1,6 @@
 ---
 name: I_SDDOCUMENTPAYMENTCARDTYPE
-description: Sddocumentpaymentcardtype
+description: "Sddocumentpaymentcardtype"
 app_component: SD-BIL-IV-PC-2CL
 software_component: SAPSCORE
 release_state: released

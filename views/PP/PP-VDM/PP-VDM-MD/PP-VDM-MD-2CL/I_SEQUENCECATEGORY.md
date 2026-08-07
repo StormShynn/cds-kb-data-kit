@@ -1,6 +1,6 @@
 ---
 name: I_SEQUENCECATEGORY
-description: Sequencecategory
+description: "Sequencecategory"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

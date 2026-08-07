@@ -1,13 +1,13 @@
 ---
 name: I_SDDOCUMENTPROCESSFLOW
-description: This CDS view provides the prerequisites for answering questions about all relevant aspects of the preceding and the subsequent document for a given SD document. The view considers, for example, the following questions: Which document is the preceding document for my SD document? Which document is the subsequent document for my SD document? Which quantity is referenced from the preceding document? What is the net amount of the preceding document for my SD document?
+description: "This CDS view provides the prerequisites for answering questions about all relevant aspects of the preceding and the subsequent document for a given SD document. The view considers, for example, the following questions: Which document is the preceding document for my SD document? Which document is the subsequent document for my SD document? Which quantity is referenced from the preceding document? What is the net amount of the preceding document for my SD document?"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SDDOCUMENTPROCESSFLOW')/$value
-semantic_en: This CDS view provides the prerequisites for answering questions about all relevant aspects of the preceding and the subsequent document for a given SD document. The view considers, for example, the following questions: Which document is the preceding document for my SD document? Which document is the subsequent document for my SD document? Which quantity is referenced from the preceding document? What is the net amount of the preceding document for my SD document?
+semantic_en: "This CDS view provides the prerequisites for answering questions about all relevant aspects of the preceding and the subsequent document for a given SD document. The view considers, for example, the following questions: Which document is the preceding document for my SD document? Which document is the subsequent document for my SD document? Which quantity is referenced from the preceding document? What is the net amount of the preceding document for my SD document?"
 tags:
   - SD
   - bo:plant

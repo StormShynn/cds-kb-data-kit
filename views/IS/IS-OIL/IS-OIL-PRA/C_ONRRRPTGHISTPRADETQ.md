@@ -1,13 +1,13 @@
 ---
 name: C_ONRRRPTGHISTPRADETQ
-description: ONRR PRA Reporting Details Query
+description: "ONRR PRA Reporting Details Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ONRRRPTGHISTPRADETQ')/$value
-semantic_en: ONRR PRA Reporting Details Query
+semantic_en: "ONRR PRA Reporting Details Query"
 tags:
   - IS
   - bo:purchaseorder

@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFHISTLPRODUCTPROFILETP
-description: Varcnfhistlproductprofiletp
+description: "Varcnfhistlproductprofiletp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

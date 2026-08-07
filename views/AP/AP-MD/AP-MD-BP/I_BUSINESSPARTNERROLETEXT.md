@@ -1,13 +1,13 @@
 ---
 name: I_BUSINESSPARTNERROLETEXT
-description: Business Partner Role- Text
+description: "Business Partner Role- Text"
 app_component: AP-MD-BP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERROLETEXT')/$value
-semantic_en: Business Partner Role- Text
+semantic_en: "Business Partner Role- Text"
 tags:
   - AP
   - AP-MD

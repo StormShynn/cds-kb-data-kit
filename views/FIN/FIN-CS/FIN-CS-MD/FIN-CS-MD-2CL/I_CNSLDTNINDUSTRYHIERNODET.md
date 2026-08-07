@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNINDUSTRYHIERNODET
-description: Cnsldtnindustryhiernodet
+description: "Cnsldtnindustryhiernodet"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

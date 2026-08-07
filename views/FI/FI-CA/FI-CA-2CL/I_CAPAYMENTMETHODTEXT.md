@@ -1,6 +1,6 @@
 ---
 name: I_CAPAYMENTMETHODTEXT
-description: Capaymentmethodtext
+description: "Capaymentmethodtext"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

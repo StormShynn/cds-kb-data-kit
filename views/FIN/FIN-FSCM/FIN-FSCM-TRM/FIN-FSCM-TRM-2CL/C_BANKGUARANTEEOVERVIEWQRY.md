@@ -1,13 +1,13 @@
 ---
 name: C_BANKGUARANTEEOVERVIEWQRY
-description: This CDS view provides the prerequisites for answering the following business questions: What is the nominal amount of bank guarantees on a specified key date? What is the total fee amount of bank guarantees on a specified key date? What is the condition rate of bank guarantees on a specified key date? What is the outstanding bank guarantee volume made on the key date per company code, counterparty, and transaction currency? What information on live bank guarantee transactions is available in the overview? What is the average fee rate based on the bank guarantee volume? What is the total fee amount per counterparty in display currency?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the nominal amount of bank guarantees on a specified key date? What is the total fee amount of bank guarantees on a specified key date? What is the condition rate of bank guarantees on a specified key date? What is the outstanding bank guarantee volume made on the key date per company code, counterparty, and transaction currency? What information on live bank guarantee transactions is available in the overview? What is the average fee rate based on the bank guarantee volume? What is the total fee amount per counterparty in display currency?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BANKGUARANTEEOVERVIEWQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the nominal amount of bank guarantees on a specified key date? What is the total fee amount of bank guarantees on a specified key date? What is the condition rate of bank guarantees on a specified key date? What is the outstanding bank guarantee volume made on the key date per company code, counterparty, and transaction currency? What information on live bank guarantee transactions is available in the overview? What is the average fee rate based on the bank guarantee volume? What is the total fee amount per counterparty in display currency?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the nominal amount of bank guarantees on a specified key date? What is the total fee amount of bank guarantees on a specified key date? What is the condition rate of bank guarantees on a specified key date? What is the outstanding bank guarantee volume made on the key date per company code, counterparty, and transaction currency? What information on live bank guarantee transactions is available in the overview? What is the average fee rate based on the bank guarantee volume? What is the total fee amount per counterparty in display currency?"
 tags:
   - FIN
   - bo:companycode

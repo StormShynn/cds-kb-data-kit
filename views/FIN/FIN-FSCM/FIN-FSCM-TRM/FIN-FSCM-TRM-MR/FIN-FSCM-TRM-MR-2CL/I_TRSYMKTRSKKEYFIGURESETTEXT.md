@@ -1,6 +1,6 @@
 ---
 name: I_TRSYMKTRSKKEYFIGURESETTEXT
-description: Trsymktrskkeyfiguresettext
+description: "Trsymktrskkeyfiguresettext"
 app_component: FIN-FSCM-TRM-MR-2CL
 software_component: SAPSCORE
 release_state: released

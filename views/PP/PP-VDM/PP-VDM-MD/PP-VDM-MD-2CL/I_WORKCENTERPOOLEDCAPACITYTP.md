@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERPOOLEDCAPACITYTP
-description: Work CenterPOOLEDCAPACITYTP
+description: "Work CenterPOOLEDCAPACITYTP"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

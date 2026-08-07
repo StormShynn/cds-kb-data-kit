@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTORDERCREATEFORDELIVP
-description: D Freightordercreatefordelivp
+description: "D Freightordercreatefordelivp"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

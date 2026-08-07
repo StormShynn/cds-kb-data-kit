@@ -1,28 +1,28 @@
 ---
 name: C_BILLGITMPRCGELFORCOTYPQ
-description: Billing Item Pricing Element for Condition Type - Query
+description: "Billing Item Pricing Element for Condition Type - Query"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BILLGITMPRCGELFORCOTYPQ')/$value
-semantic_en: Billing Item Pricing Element for Condition Type - Query
-semantic_vi: Billing Item Pricing Element for Condition Type - Query — CDS view tiêu dùng dựa trên I_BillgItmPrcgElForCoTypC.
+semantic_en: "Billing Item Pricing Element for Condition Type - Query"
+semantic_vi: "Billing Item Pricing Element for Condition Type - Query — CDS view tiêu dùng dựa trên I_BillgItmPrcgElForCoTypC."
 keywords:
-  - billing
-  - item
-  - pricing
-  - element
-  - for
-  - condition
-  - type
-  - query
-  - document
-  - procedure
-  - step
-  - counter
-  - application
+  - "billing"
+  - "item"
+  - "pricing"
+  - "element"
+  - "for"
+  - "condition"
+  - "type"
+  - "query"
+  - "document"
+  - "procedure"
+  - "step"
+  - "counter"
+  - "application"
 tags:
   - SD
   - billing

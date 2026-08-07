@@ -1,6 +1,6 @@
 ---
 name: I_CADOCCTNDOCITEMREFTYPETEXT
-description: Cadocctndocitemreftypetext
+description: "Cadocctndocitemreftypetext"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

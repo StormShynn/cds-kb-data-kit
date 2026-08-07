@@ -1,18 +1,18 @@
 ---
 name: ZTT_I_STATUS.DDLS
-description: Status
+description: "Status"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/jrodriguez-rc/abap-tasks-tracker/blob/4cf4b91e60a2d456968474ddaed3d870f4d5382f/src/ztt_i_status.ddls.asddls
-semantic_en: Status — CDS view based on dd07l.
-semantic_vi: Status — CDS view dựa trên dd07l.
+semantic_en: "Status — CDS view based on dd07l."
+semantic_vi: "Status — CDS view dựa trên dd07l."
 keywords:
-  - status
-  - cast
-  - valpos
+  - "status"
+  - "cast"
+  - "valpos"
 ---
 # ZTT_I_STATUS.DDLS
 

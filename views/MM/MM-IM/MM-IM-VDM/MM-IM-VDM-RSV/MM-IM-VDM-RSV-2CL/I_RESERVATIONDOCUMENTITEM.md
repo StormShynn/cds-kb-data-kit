@@ -1,6 +1,6 @@
 ---
 name: I_RESERVATIONDOCUMENTITEM
-description: Reservationdocumentitem
+description: "Reservationdocumentitem"
 app_component: MM-IM-VDM-RSV-2CL
 software_component: SAPSCORE
 release_state: released

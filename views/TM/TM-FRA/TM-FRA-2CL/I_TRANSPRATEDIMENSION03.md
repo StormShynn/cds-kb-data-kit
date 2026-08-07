@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPRATEDIMENSION03
-description: Transpratedimension 03
+description: "Transpratedimension 03"
 app_component: TM-FRA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,26 +1,26 @@
 ---
 name: C_PURCHASEORDERVALUE
-description: Purchase Order Value
+description: "Purchase Order Value"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PURCHASEORDERVALUE')/$value
-semantic_en: Purchase Order Value
-semantic_vi: Purchase Order Value — CDS view tiêu dùng dựa trên P_PURCHASEORDERVALUE.
+semantic_en: "Purchase Order Value"
+semantic_vi: "Purchase Order Value — CDS view tiêu dùng dựa trên P_PURCHASEORDERVALUE."
 keywords:
-  - purchase
-  - order
-  - value
-  - item
-  - account
-  - assignment
-  - number
-  - purg
-  - migrtn
-  - cmpltd
-  - anlyts
+  - "purchase"
+  - "order"
+  - "value"
+  - "item"
+  - "account"
+  - "assignment"
+  - "number"
+  - "purg"
+  - "migrtn"
+  - "cmpltd"
+  - "anlyts"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

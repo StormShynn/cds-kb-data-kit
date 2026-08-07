@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERACTIVITYTYPE
-description: Cost CenterACTIVITYTYPE
+description: "Cost CenterACTIVITYTYPE"
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released

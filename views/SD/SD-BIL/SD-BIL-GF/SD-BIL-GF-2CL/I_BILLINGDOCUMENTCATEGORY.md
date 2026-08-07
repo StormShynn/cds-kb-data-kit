@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTCATEGORY
-description: Billing DocumentUMENTCATEGORY
+description: "Billing DocumentUMENTCATEGORY"
 app_component: SD-BIL-GF-2CL
 software_component: SAPSCORE
 release_state: released

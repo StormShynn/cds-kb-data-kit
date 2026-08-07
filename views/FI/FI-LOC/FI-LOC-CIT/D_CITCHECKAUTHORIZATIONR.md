@@ -1,6 +1,6 @@
 ---
 name: D_CITCHECKAUTHORIZATIONR
-description: D Citcheckauthorizationr
+description: "D Citcheckauthorizationr"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

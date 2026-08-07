@@ -1,6 +1,6 @@
 ---
 name: I_SYSTEMSTATUSTEXT
-description: Systemstatustext
+description: "Systemstatustext"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released

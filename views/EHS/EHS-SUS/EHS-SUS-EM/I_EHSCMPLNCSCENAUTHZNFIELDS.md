@@ -1,13 +1,13 @@
 ---
 name: I_EHSCMPLNCSCENAUTHZNFIELDS
-description: Environment and Health and Safety Compliance Scenario Authorization Fields
+description: "Environment and Health and Safety Compliance Scenario Authorization Fields"
 app_component: EHS-SUS-EM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSCMPLNCSCENAUTHZNFIELDS')/$value
-semantic_en: Environment and Health and Safety Compliance Scenario Authorization Fields
+semantic_en: "Environment and Health and Safety Compliance Scenario Authorization Fields"
 tags:
   - EHS
   - bo:companycode

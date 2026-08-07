@@ -1,6 +1,6 @@
 ---
 name: I_CREDITMANAGEMENTBP
-description: Credit ManagementMENTBP
+description: "Credit ManagementMENTBP"
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released

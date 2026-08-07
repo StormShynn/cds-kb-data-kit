@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONROUTINGHEADERTP_2
-description: Productionroutingheadertp 2
+description: "Productionroutingheadertp 2"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

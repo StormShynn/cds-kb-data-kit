@@ -1,6 +1,6 @@
 ---
 name: I_LEGALTRANSENTITYTP_2
-description: Legaltransentitytp 2
+description: "Legaltransentitytp 2"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

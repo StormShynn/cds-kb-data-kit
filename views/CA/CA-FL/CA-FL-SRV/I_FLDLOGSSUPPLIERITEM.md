@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSSUPPLIERITEM
-description: Fldlogssupplieritem
+description: "Fldlogssupplieritem"
 app_component: CA-FL-SRV
 software_component: SAPSCORE
 release_state: released

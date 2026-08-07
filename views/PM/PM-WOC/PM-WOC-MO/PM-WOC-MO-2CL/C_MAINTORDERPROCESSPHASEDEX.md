@@ -1,21 +1,21 @@
 ---
 name: C_MAINTORDERPROCESSPHASEDEX
-description: Maintenance Order Process Phase
+description: "Maintenance Order Process Phase"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERPROCESSPHASEDEX')/$value
-semantic_en: Maintenance Order Process Phase
-semantic_vi: Maintenance Order Process Phase — CDS view tiêu dùng dựa trên I_MaintOrderProcessPhase_2.
+semantic_en: "Maintenance Order Process Phase"
+semantic_vi: "Maintenance Order Process Phase — CDS view tiêu dùng dựa trên I_MaintOrderProcessPhase_2."
 keywords:
-  - maintenance
-  - order
-  - process
-  - phase
-  - maint
-  - code
+  - "maintenance"
+  - "order"
+  - "process"
+  - "phase"
+  - "maint"
+  - "code"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

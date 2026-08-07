@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNGLOBALPARAMETER
-description: Cnsldtnglobalparameter
+description: "Cnsldtnglobalparameter"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

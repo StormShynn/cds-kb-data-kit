@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERCATEGORY
-description: Work CenterCATEGORY
+description: "Work CenterCATEGORY"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

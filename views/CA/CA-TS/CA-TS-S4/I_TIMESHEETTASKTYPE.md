@@ -1,6 +1,6 @@
 ---
 name: I_TIMESHEETTASKTYPE
-description: Timesheettasktype
+description: "Timesheettasktype"
 app_component: CA-TS-S4
 software_component: SAPSCORE
 release_state: released

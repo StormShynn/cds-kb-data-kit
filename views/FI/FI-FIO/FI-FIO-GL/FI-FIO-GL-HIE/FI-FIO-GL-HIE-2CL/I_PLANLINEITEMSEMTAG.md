@@ -1,13 +1,13 @@
 ---
 name: I_PLANLINEITEMSEMTAG
-description: This CDS view provides the prerequisites for answering the following business questions: What are the plan KPI amounts for each plan entry item? What is my plan net cash amount in company code currency?
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the plan KPI amounts for each plan entry item? What is my plan net cash amount in company code currency?"
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PLANLINEITEMSEMTAG')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the plan KPI amounts for each plan entry item? What is my plan net cash amount in company code currency?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the plan KPI amounts for each plan entry item? What is my plan net cash amount in company code currency?"
 tags:
   - FI
   - bo:plant

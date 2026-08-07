@@ -1,6 +1,6 @@
 ---
 name: C_CHANGERECORDLONGTEXTDEX
-description: Change RecordLONGTEXTDEX
+description: "Change RecordLONGTEXTDEX"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

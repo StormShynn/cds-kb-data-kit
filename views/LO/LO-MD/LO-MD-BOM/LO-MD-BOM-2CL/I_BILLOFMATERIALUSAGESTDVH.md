@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFMATERIALUSAGESTDVH
-description: Bill of MaterialUSAGESTDVH
+description: "Bill of MaterialUSAGESTDVH"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

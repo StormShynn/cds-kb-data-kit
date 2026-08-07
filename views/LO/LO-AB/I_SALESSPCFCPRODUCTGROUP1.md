@@ -1,6 +1,6 @@
 ---
 name: I_SALESSPCFCPRODUCTGROUP1
-description: Salesspcfcproductgroup 1
+description: "Salesspcfcproductgroup 1"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_MBLDTAOBJHDLRMETHODTYPETEXT
-description: Mobile Object Handler Method Type - Text
+description: "Mobile Object Handler Method Type - Text"
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MBLDTAOBJHDLRMETHODTYPETEXT')/$value
-semantic_en: Mobile Object Handler Method Type - Text
+semantic_en: "Mobile Object Handler Method Type - Text"
 tags:
   - MOB
   - component:MOB-APP-MAO-ERP

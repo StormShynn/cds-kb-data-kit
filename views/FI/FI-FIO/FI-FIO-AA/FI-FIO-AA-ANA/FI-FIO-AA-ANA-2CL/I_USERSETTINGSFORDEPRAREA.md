@@ -1,13 +1,13 @@
 ---
 name: I_USERSETTINGSFORDEPRAREA
-description: This CDS view provides the prerequisites for answering the following business question: What is the default value of the depreciation area for my business user? This CDS view can be used as a derivation entity.
+description: "This CDS view provides the prerequisites for answering the following business question: What is the default value of the depreciation area for my business user? This CDS view can be used as a derivation entity."
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_USERSETTINGSFORDEPRAREA')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What is the default value of the depreciation area for my business user? This CDS view can be used as a derivation entity.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is the default value of the depreciation area for my business user? This CDS view can be used as a derivation entity."
 tags:
   - FI
   - bo:asset

@@ -1,6 +1,6 @@
 ---
 name: I_CACRDTWORTHINESSITEMSTATUS
-description: Cacrdtworthinessitemstatus
+description: "Cacrdtworthinessitemstatus"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

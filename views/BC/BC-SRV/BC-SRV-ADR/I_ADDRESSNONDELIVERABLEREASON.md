@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSNONDELIVERABLEREASON
-description: Addressnondeliverablereason
+description: "Addressnondeliverablereason"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

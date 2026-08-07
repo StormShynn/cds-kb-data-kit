@@ -1,6 +1,6 @@
 ---
 name: I_POSTINGKEYTEXTDEX
-description: Postingkeytextdex
+description: "Postingkeytextdex"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

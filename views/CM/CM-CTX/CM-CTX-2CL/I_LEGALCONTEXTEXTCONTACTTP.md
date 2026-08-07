@@ -1,6 +1,6 @@
 ---
 name: I_LEGALCONTEXTEXTCONTACTTP
-description: Legalcontextextcontacttp
+description: "Legalcontextextcontacttp"
 app_component: CM-CTX-2CL
 software_component: SAPSCORE
 release_state: released

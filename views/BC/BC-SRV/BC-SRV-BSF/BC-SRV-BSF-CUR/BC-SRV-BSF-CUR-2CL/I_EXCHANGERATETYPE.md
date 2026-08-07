@@ -1,6 +1,6 @@
 ---
 name: I_EXCHANGERATETYPE
-description: Exchange RateTYPE
+description: "Exchange RateTYPE"
 app_component: BC-SRV-BSF-CUR-2CL
 software_component: SAP_BASIS
 release_state: released

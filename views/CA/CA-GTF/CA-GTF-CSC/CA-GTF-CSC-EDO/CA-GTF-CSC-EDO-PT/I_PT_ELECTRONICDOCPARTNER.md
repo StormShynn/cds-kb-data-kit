@@ -1,6 +1,6 @@
 ---
 name: I_PT_ELECTRONICDOCPARTNER
-description: PT Electronicdocpartner
+description: "PT Electronicdocpartner"
 app_component: CA-GTF-CSC-EDO-PT
 software_component: SAPSCORE
 release_state: released

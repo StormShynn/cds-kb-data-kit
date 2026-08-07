@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJTMEEXPNBILLGCUBE
-description: This CDS view provides the prerequisites for answering the following business questions: What are my time and expense billing items? What is the billing cap and the notification threshold for a billing item? What is the total revenue (including accrued revenue) for a billing item? What is the cost incurred against a billing item?
+description: "This CDS view provides the prerequisites for answering the following business questions: What are my time and expense billing items? What is the billing cap and the notification threshold for a billing item? What is the total revenue (including accrued revenue) for a billing item? What is the cost incurred against a billing item?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJTMEEXPNBILLGCUBE')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are my time and expense billing items? What is the billing cap and the notification threshold for a billing item? What is the total revenue (including accrued revenue) for a billing item? What is the cost incurred against a billing item?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are my time and expense billing items? What is the billing cap and the notification threshold for a billing item? What is the total revenue (including accrued revenue) for a billing item? What is the cost incurred against a billing item?"
 tags:
   - CA
   - billing

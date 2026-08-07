@@ -1,6 +1,6 @@
 ---
 name: I_STOSCHEDULELINETP
-description: STOSchedule LineTP
+description: "STOSchedule LineTP"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

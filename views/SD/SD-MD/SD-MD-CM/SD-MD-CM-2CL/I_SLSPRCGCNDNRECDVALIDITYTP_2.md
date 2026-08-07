@@ -1,6 +1,6 @@
 ---
 name: I_SLSPRCGCNDNRECDVALIDITYTP_2
-description: Slsprcgcndnrecdvaliditytp 2
+description: "Slsprcgcndnrecdvaliditytp 2"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTTEXTTP
-description: Billing DocumentUMENTTEXTTP
+description: "Billing DocumentUMENTTEXTTP"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

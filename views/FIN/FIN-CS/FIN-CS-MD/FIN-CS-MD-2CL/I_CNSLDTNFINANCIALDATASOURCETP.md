@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNFINANCIALDATASOURCETP
-description: Cnsldtnfinancialdatasourcetp
+description: "Cnsldtnfinancialdatasourcetp"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

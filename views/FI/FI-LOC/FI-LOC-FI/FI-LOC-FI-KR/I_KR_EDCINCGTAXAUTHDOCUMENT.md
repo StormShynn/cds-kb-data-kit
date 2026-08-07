@@ -1,6 +1,6 @@
 ---
 name: I_KR_EDCINCGTAXAUTHDOCUMENT
-description: KR Edcincgtaxauthdocument
+description: "KR Edcincgtaxauthdocument"
 app_component: FI-LOC-FI-KR
 software_component: SAPSCORE
 release_state: released

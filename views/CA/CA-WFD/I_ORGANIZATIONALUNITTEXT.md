@@ -1,13 +1,13 @@
 ---
 name: I_ORGANIZATIONALUNITTEXT
-description: This view provides the prerequisites for answering the following business questions: What is the short and long name of Organizational Unit?
+description: "This view provides the prerequisites for answering the following business questions: What is the short and long name of Organizational Unit?"
 app_component: CA-WFD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ORGANIZATIONALUNITTEXT')/$value
-semantic_en: This view provides the prerequisites for answering the following business questions: What is the short and long name of Organizational Unit?
+semantic_en: "This view provides the prerequisites for answering the following business questions: What is the short and long name of Organizational Unit?"
 tags:
   - CA
   - bo:companycode

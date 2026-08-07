@@ -1,6 +1,6 @@
 ---
 name: C_CHGRECRESPONSIBLEDEX
-description: Chgrecresponsibledex
+description: "Chgrecresponsibledex"
 app_component: PLM-CR-2CL
 software_component: SAPSCORE
 release_state: released

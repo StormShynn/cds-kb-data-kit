@@ -1,24 +1,24 @@
 ---
 name: C_SUPLREVALBYQLTYNOTIFQRY
-description: By Quality Notification
+description: "By Quality Notification"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLREVALBYQLTYNOTIFQRY')/$value
-semantic_en: By Quality Notification
-semantic_vi: By Quality Notification — CDS view tiêu dùng dựa trên C_SuplrEvalByQltyNotifCube.
+semantic_en: "By Quality Notification"
+semantic_vi: "By Quality Notification — CDS view tiêu dùng dựa trên C_SuplrEvalByQltyNotifCube."
 keywords:
-  - quality
-  - notification
-  - purchase
-  - order
-  - item
-  - purchasing
-  - group
-  - supplier
-  - date
+  - "quality"
+  - "notification"
+  - "purchase"
+  - "order"
+  - "item"
+  - "purchasing"
+  - "group"
+  - "supplier"
+  - "date"
 tags:
   - MM
   - bo:companycode

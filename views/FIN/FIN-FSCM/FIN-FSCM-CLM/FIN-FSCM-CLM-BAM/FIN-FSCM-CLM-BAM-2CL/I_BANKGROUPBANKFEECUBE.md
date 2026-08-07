@@ -1,13 +1,13 @@
 ---
 name: I_BANKGROUPBANKFEECUBE
-description: This CDS view retrieves the bank fee data, including service charges and tax charges, for bank groups. This CDS view provides the prerequisites for answering the following business questions: What's the total bank service charge for each bank group? What's the total bank tax charge for each bank group?
+description: "This CDS view retrieves the bank fee data, including service charges and tax charges, for bank groups. This CDS view provides the prerequisites for answering the following business questions: What's the total bank service charge for each bank group? What's the total bank tax charge for each bank group?"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKGROUPBANKFEECUBE')/$value
-semantic_en: This CDS view retrieves the bank fee data, including service charges and tax charges, for bank groups. This CDS view provides the prerequisites for answering the following business questions: What's the total bank service charge for each bank group? What's the total bank tax charge for each bank group?
+semantic_en: "This CDS view retrieves the bank fee data, including service charges and tax charges, for bank groups. This CDS view provides the prerequisites for answering the following business questions: What's the total bank service charge for each bank group? What's the total bank tax charge for each bank group?"
 tags:
   - FIN
   - bo:plant

@@ -1,6 +1,6 @@
 ---
 name: I_ACTLCOSTGMATLVALUECHAINITEM
-description: Actlcostgmatlvaluechainitem
+description: "Actlcostgmatlvaluechainitem"
 app_component: CO-PC-ACT-2CL
 software_component: SAPSCORE
 release_state: released

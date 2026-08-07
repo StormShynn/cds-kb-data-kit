@@ -1,6 +1,6 @@
 ---
 name: I_KANBANCONTROLCYCLETP
-description: Kanbancontrolcycletp
+description: "Kanbancontrolcycletp"
 app_component: PP-KAB-CC-2CL
 software_component: SAPSCORE
 release_state: released

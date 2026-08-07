@@ -1,6 +1,6 @@
 ---
 name: I_EWM_STORBINISUTILIZEDTEXT
-description: Ewm Storbinisutilizedtext
+description: "Ewm Storbinisutilizedtext"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

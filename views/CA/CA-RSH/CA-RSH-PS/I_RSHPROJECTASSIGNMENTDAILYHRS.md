@@ -1,13 +1,13 @@
 ---
 name: I_RSHPROJECTASSIGNMENTDAILYHRS
-description: This CDS view provides the prerequisites for answering the following business question: How many hours per day is a resource assigned to a project for a given assignment?
+description: "This CDS view provides the prerequisites for answering the following business question: How many hours per day is a resource assigned to a project for a given assignment?"
 app_component: CA-RSH-PS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RSHPROJECTASSIGNMENTDAILYHRS')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: How many hours per day is a resource assigned to a project for a given assignment?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: How many hours per day is a resource assigned to a project for a given assignment?"
 tags:
   - CA
   - bo:plant

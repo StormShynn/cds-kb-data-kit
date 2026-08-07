@@ -1,6 +1,6 @@
 ---
 name: I_BUSSOLUTIONORDERITEMENHCD
-description: Bussolutionorderitemenhcd
+description: "Bussolutionorderitemenhcd"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

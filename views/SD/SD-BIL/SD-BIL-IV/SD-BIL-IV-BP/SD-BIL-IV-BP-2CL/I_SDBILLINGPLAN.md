@@ -1,6 +1,6 @@
 ---
 name: I_SDBILLINGPLAN
-description: Sdbillingplan
+description: "Sdbillingplan"
 app_component: SD-BIL-IV-BP-2CL
 software_component: SAPSCORE
 release_state: released

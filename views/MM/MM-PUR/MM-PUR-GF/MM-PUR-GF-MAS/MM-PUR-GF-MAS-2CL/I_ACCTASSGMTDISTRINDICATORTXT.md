@@ -1,6 +1,6 @@
 ---
 name: I_ACCTASSGMTDISTRINDICATORTXT
-description: Acctassgmtdistrindicatortxt
+description: "Acctassgmtdistrindicatortxt"
 app_component: MM-PUR-GF-MAS-2CL
 software_component: SAPSCORE
 release_state: released

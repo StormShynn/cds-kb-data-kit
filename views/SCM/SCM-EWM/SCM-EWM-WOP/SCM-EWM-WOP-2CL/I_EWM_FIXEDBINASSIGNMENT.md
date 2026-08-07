@@ -1,6 +1,6 @@
 ---
 name: I_EWM_FIXEDBINASSIGNMENT
-description: Ewm Fixedbinassignment
+description: "Ewm Fixedbinassignment"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

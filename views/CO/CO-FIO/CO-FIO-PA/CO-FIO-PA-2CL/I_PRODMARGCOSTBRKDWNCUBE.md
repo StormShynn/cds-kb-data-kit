@@ -1,17 +1,17 @@
 ---
 name: I_PRODMARGCOSTBRKDWNCUBE
-description: Product Profitability CostBrkDwn - Cube
+description: "Product Profitability CostBrkDwn - Cube"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODMARGCOSTBRKDWNCUBE')/$value
-semantic_en: Product Profitability CostBrkDwn - Cube
+semantic_en: "Product Profitability CostBrkDwn - Cube"
 keywords:
-  - Product Profitability CostBrkDwn - Cube
-  - Product Profitability CostBrkDwn - Cube
-  - Product Profitability CostBrkDwn - Cube
+  - "Product Profitability CostBrkDwn - Cube"
+  - "Product Profitability CostBrkDwn - Cube"
+  - "Product Profitability CostBrkDwn - Cube"
 tags:
   - CO
   - bo:companycode

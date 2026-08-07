@@ -1,6 +1,6 @@
 ---
 name: C_SRVCCONTRPAYMENTMETHODVH
-description: Srvccontrpaymentmethodvh
+description: "Srvccontrpaymentmethodvh"
 app_component: CRM-S4-SRV-MC-2CL
 software_component: SAPSCORE
 release_state: released

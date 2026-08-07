@@ -1,13 +1,13 @@
 ---
 name: C_INSURCLMSUBCLAIMCOUNTQ
-description: Number of Subclaims
+description: "Number of Subclaims"
 app_component: FS-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INSURCLMSUBCLAIMCOUNTQ')/$value
-semantic_en: Number of Subclaims
+semantic_en: "Number of Subclaims"
 tags:
   - FS
   - claim

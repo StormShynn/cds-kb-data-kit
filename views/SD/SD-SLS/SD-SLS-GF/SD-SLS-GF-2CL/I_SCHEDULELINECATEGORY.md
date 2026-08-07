@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDULELINECATEGORY
-description: Schedule LineCATEGORY
+description: "Schedule LineCATEGORY"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

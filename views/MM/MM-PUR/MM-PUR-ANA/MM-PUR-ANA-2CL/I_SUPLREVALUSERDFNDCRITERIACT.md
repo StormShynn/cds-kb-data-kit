@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALUSERDFNDCRITERIACT
-description: Suplrevaluserdfndcriteriact
+description: "Suplrevaluserdfndcriteriact"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

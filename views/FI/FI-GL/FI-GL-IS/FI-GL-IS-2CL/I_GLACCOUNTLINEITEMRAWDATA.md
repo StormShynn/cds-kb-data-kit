@@ -1,6 +1,6 @@
 ---
 name: I_GLACCOUNTLINEITEMRAWDATA
-description: GL AccountLINEITEMRAWDATA
+description: "GL AccountLINEITEMRAWDATA"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

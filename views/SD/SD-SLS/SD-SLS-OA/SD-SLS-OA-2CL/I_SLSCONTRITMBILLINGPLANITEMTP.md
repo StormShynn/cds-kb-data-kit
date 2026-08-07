@@ -1,6 +1,6 @@
 ---
 name: I_SLSCONTRITMBILLINGPLANITEMTP
-description: Slscontritmbillingplanitemtp
+description: "Slscontritmbillingplanitemtp"
 app_component: SD-SLS-OA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,24 +1,24 @@
 ---
 name: I_MFGORDEROPERATIONCOMPCUBE
-description: Manufacturing Order Operation Component Cube
+description: "Manufacturing Order Operation Component Cube"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://pastebin.com/TMcRKEEk
-semantic_en: Manufacturing Order Operation Component Cube — Interface CDS view based on I_MfgOrderOperationComponent.
-semantic_vi: Manufacturing Order Operation Component Cube — CDS view giao diện dựa trên I_MfgOrderOperationComponent.
+semantic_en: "Manufacturing Order Operation Component Cube — Interface CDS view based on I_MfgOrderOperationComponent."
+semantic_vi: "Manufacturing Order Operation Component Cube — CDS view giao diện dựa trên I_MfgOrderOperationComponent."
 keywords:
-  - manufacturing
-  - order
-  - operation
-  - component
-  - cube
-  - comp
-  - comp.
-  - type
-  - sequence
+  - "manufacturing"
+  - "order"
+  - "operation"
+  - "component"
+  - "cube"
+  - "comp"
+  - "comp."
+  - "type"
+  - "sequence"
 tags:
   - AC
   - bo:productionorder

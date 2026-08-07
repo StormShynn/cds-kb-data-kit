@@ -1,6 +1,6 @@
 ---
 name: I_QUALITYCERTIFICATETYPE
-description: Qualitycertificatetype
+description: "Qualitycertificatetype"
 app_component: QM-CA-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCUMENTPARTNERBASIC
-description: Billing DocumentUMENTPARTNERBASIC
+description: "Billing DocumentUMENTPARTNERBASIC"
 app_component: SD-BIL-2CL
 software_component: SAPSCORE
 release_state: released

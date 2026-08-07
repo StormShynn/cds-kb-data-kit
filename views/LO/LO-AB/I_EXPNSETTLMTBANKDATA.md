@@ -1,13 +1,13 @@
 ---
 name: I_EXPNSETTLMTBANKDATA
-description: Expense Settlement Bank Data
+description: "Expense Settlement Bank Data"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTBANKDATA')/$value
-semantic_en: Expense Settlement Bank Data
+semantic_en: "Expense Settlement Bank Data"
 tags:
   - LO
   - component:LO-AB

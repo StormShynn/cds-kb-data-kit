@@ -1,13 +1,13 @@
 ---
 name: I_LOANCONTRCHGPOINTERDATA
-description: Change Pointer for Loan Contract
+description: "Change Pointer for Loan Contract"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANCONTRCHGPOINTERDATA')/$value
-semantic_en: Change Pointer for Loan Contract
+semantic_en: "Change Pointer for Loan Contract"
 tags:
   - FS
   - bo:purchaseorder

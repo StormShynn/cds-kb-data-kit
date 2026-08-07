@@ -1,21 +1,21 @@
 ---
 name: I_ASSETBALANCESKEYFIGURESETVH
-description: Asset Balances Key Figure Group
+description: "Asset Balances Key Figure Group"
 app_component: FI-AA-AA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETBALANCESKEYFIGURESETVH')/$value
-semantic_en: Asset Balances Key Figure Group
-semantic_vi: Asset Balances Key Figure Group — CDS view giao diện dựa trên I_AssetKeyFigureSet.
+semantic_en: "Asset Balances Key Figure Group"
+semantic_vi: "Asset Balances Key Figure Group — CDS view giao diện dựa trên I_AssetKeyFigureSet."
 keywords:
-  - asset
-  - balances
-  - key
-  - figure
-  - group
-  - accounting
+  - "asset"
+  - "balances"
+  - "key"
+  - "figure"
+  - "group"
+  - "accounting"
 tags:
   - FI
   - bo:companycode

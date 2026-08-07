@@ -1,6 +1,6 @@
 ---
 name: I_CN_BANKRECEIPT
-description: CN Bankreceipt
+description: "CN Bankreceipt"
 app_component: FI-LOC-EPI-CN
 software_component: SAPSCORE
 release_state: released

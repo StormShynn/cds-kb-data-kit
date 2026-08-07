@@ -1,29 +1,29 @@
 ---
 name: C_PCCEVTBSDWIPVARCQRY
-description: This CDS view retrieves event-based work in process (WIP) values and variances of product cost collectors (order category 05) in your specified ledger, fiscal year periods, and currency. This CDS view provides the data to answer the following business questions: How many event-based product cost collectors are there for my specified company codes or plants? What are their IDs? What products are posted with the product cost collectors? What are the following values for a product cost collector? WIP Total variance Variance per category, such as input quantity variance, input price variance, resource usage variance, and remaining variance What are the G/L accounts used for posting the values? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view retrieves event-based work in process (WIP) values and variances of product cost collectors (order category 05) in your specified ledger, fiscal year periods, and currency. This CDS view provides the data to answer the following business questions: How many event-based product cost collectors are there for my specified company codes or plants? What are their IDs? What products are posted with the product cost collectors? What are the following values for a product cost collector? WIP Total variance Variance per category, such as input quantity variance, input price variance, resource usage variance, and remaining variance What are the G/L accounts used for posting the values? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-PC-OBJ-PER-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PCCEVTBSDWIPVARCQRY')/$value
-semantic_en: This CDS view retrieves event-based work in process (WIP) values and variances of product cost collectors (order category 05) in your specified ledger, fiscal year periods, and currency. This CDS view provides the data to answer the following business questions: How many event-based product cost collectors are there for my specified company codes or plants? What are their IDs? What products are posted with the product cost collectors? What are the following values for a product cost collector? WIP Total variance Variance per category, such as input quantity variance, input price variance, resource usage variance, and remaining variance What are the G/L accounts used for posting the values? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: WIP and Variance for Event-Based PCC - Query — CDS view tiêu dùng dựa trên WIP and Variance for Event-Based PCC - Query.
+semantic_en: "This CDS view retrieves event-based work in process (WIP) values and variances of product cost collectors (order category 05) in your specified ledger, fiscal year periods, and currency. This CDS view provides the data to answer the following business questions: How many event-based product cost collectors are there for my specified company codes or plants? What are their IDs? What products are posted with the product cost collectors? What are the following values for a product cost collector? WIP Total variance Variance per category, such as input quantity variance, input price variance, resource usage variance, and remaining variance What are the G/L accounts used for posting the values? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "WIP and Variance for Event-Based PCC - Query — CDS view tiêu dùng dựa trên WIP and Variance for Event-Based PCC - Query."
 keywords:
-  - wip
-  - and
-  - variance
-  - for
-  - event
-  - based
-  - pcc
-  - query
-  - ledger
-  - company
-  - code
-  - order
-  - type
-  - category
+  - "wip"
+  - "and"
+  - "variance"
+  - "for"
+  - "event"
+  - "based"
+  - "pcc"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "order"
+  - "type"
+  - "category"
 tags:
   - CO
   - account

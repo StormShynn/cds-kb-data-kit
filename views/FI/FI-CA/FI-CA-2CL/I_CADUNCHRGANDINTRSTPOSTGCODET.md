@@ -1,6 +1,6 @@
 ---
 name: I_CADUNCHRGANDINTRSTPOSTGCODET
-description: Cadunchrgandintrstpostgcodet
+description: "Cadunchrgandintrstpostgcodet"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

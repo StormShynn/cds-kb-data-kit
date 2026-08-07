@@ -1,6 +1,6 @@
 ---
 name: I_ORGLCHANGEPRODUCTTP
-description: Orglchangeproducttp
+description: "Orglchangeproducttp"
 app_component: FI-GL-OC-2CL
 software_component: SAPSCORE
 release_state: released

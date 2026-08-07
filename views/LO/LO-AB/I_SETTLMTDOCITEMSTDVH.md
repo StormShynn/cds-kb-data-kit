@@ -1,13 +1,13 @@
 ---
 name: I_SETTLMTDOCITEMSTDVH
-description: This CDS view provides the standard value help of the settlement document item.
+description: "This CDS view provides the standard value help of the settlement document item."
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCITEMSTDVH')/$value
-semantic_en: This CDS view provides the standard value help of the settlement document item.
+semantic_en: "This CDS view provides the standard value help of the settlement document item."
 tags:
   - LO
   - component:LO-AB

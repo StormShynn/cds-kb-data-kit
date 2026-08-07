@@ -1,20 +1,20 @@
 ---
 name: ZI_COURSE.DDLS
-description: Course View
+description: "Course View"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/mwwhitted/rap-training-tracker/blob/097d75f82850eb7f350c196a89615d4d65f6d2cb/src/ZI_COURSE.ddls.asddls
-semantic_en: Course View — CDS view based on zcourse_mww25.
-semantic_vi: Course View — CDS view dựa trên zcourse_mww25.
+semantic_en: "Course View — CDS view based on zcourse_mww25."
+semantic_vi: "Course View — CDS view dựa trên zcourse_mww25."
 keywords:
-  - course
-  - title
-  - level
-  - instructor
-  - created
+  - "course"
+  - "title"
+  - "level"
+  - "instructor"
+  - "created"
 tags:
   - CO
   - component:CO

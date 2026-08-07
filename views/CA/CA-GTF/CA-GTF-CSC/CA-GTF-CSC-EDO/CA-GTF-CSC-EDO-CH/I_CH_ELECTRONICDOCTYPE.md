@@ -1,6 +1,6 @@
 ---
 name: I_CH_ELECTRONICDOCTYPE
-description: CH Electronicdoctype
+description: "CH Electronicdoctype"
 app_component: CA-GTF-CSC-EDO-CH
 software_component: SAPSCORE
 release_state: released

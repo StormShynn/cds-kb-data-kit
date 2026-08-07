@@ -1,6 +1,6 @@
 ---
 name: I_QUALITYMGMTCTRLKEYVH
-description: Qualitymgmtctrlkeyvh
+description: "Qualitymgmtctrlkeyvh"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

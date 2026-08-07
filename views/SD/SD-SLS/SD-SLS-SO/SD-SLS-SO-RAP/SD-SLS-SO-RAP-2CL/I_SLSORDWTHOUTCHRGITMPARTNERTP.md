@@ -1,6 +1,6 @@
 ---
 name: I_SLSORDWTHOUTCHRGITMPARTNERTP
-description: Slsordwthoutchrgitmpartnertp
+description: "Slsordwthoutchrgitmpartnertp"
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

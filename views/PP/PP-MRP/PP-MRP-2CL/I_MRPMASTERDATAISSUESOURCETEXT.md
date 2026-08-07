@@ -1,6 +1,6 @@
 ---
 name: I_MRPMASTERDATAISSUESOURCETEXT
-description: Mrpmasterdataissuesourcetext
+description: "Mrpmasterdataissuesourcetext"
 app_component: PP-MRP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_CITITEMCLASSIFICATION_2
-description: CIT Item Classification
+description: "CIT Item Classification"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITITEMCLASSIFICATION_2')/$value
-semantic_en: CIT Item Classification
+semantic_en: "CIT Item Classification"
 tags:
   - FI
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERCONFIRMATION
-description: Production OrderCONFIRMATION
+description: "Production OrderCONFIRMATION"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

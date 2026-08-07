@@ -1,23 +1,23 @@
 ---
 name: ZI_AIRPORT_TECH_VH
-description: Value help for airport
+description: "Value help for airport"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/ramniwas04/READ-ONLY-RAP-Application/blob/60c0f5918a70647bcce80eddb9f1f739f801f587/zi_airport_tech_vh.asddls
-semantic_en: Value help for airport — CDS view.
-semantic_vi: Value help for airport — CDS view dựa trên Value help for airport.
+semantic_en: "Value help for airport — CDS view."
+semantic_vi: "Value help for airport — CDS view dựa trên Value help for airport."
 keywords:
-  - value
-  - help
-  - for
-  - airport
-  - airport_id
-  - name
-  - city
-  - country
+  - "value"
+  - "help"
+  - "for"
+  - "airport"
+  - "airport_id"
+  - "name"
+  - "city"
+  - "country"
 tags:
   - bo:purchaseorder
 ---

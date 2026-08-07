@@ -1,13 +1,13 @@
 ---
 name: I_FUTUREACCOUNTSRECEIVABLES
-description: This CDS view provides you with an overview of the future receivables for the accounts receivables in an aging grid. The search result aggregates the amount per net due interval of the aging grid and account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How high are the overall future receivables? Which customers have future receivables?
+description: "This CDS view provides you with an overview of the future receivables for the accounts receivables in an aging grid. The search result aggregates the amount per net due interval of the aging grid and account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How high are the overall future receivables? Which customers have future receivables?"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUTUREACCOUNTSRECEIVABLES')/$value
-semantic_en: This CDS view provides you with an overview of the future receivables for the accounts receivables in an aging grid. The search result aggregates the amount per net due interval of the aging grid and account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How high are the overall future receivables? Which customers have future receivables?
+semantic_en: "This CDS view provides you with an overview of the future receivables for the accounts receivables in an aging grid. The search result aggregates the amount per net due interval of the aging grid and account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How high are the overall future receivables? Which customers have future receivables?"
 tags:
   - FI
   - account

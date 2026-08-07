@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDMATERIALSUPPLY
-description: Projectdemandmaterialsupply
+description: "Projectdemandmaterialsupply"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

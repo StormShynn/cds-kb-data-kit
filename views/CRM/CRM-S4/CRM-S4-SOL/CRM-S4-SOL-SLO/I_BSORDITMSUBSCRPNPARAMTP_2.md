@@ -1,6 +1,6 @@
 ---
 name: I_BSORDITMSUBSCRPNPARAMTP_2
-description: Bsorditmsubscrpnparamtp 2
+description: "Bsorditmsubscrpnparamtp 2"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_CREDITMEMOREQUESTITEMCREATED
-description: D Creditmemorequestitemcreated
+description: "D Creditmemorequestitemcreated"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

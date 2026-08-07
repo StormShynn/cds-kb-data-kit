@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMASTER
-description: This CDS view provides the prerequisites for answering the following business questions: How many change masters are there in the system? What's the status of my change masters? Which change masters have been created by me? Are there any change masters in the system marked for deletion? Which change masters are valid from a given date? For what reasons have change masters been created?
+description: "This CDS view provides the prerequisites for answering the following business questions: How many change masters are there in the system? What's the status of my change masters? Which change masters have been created by me? Are there any change masters in the system marked for deletion? Which change masters are valid from a given date? For what reasons have change masters been created?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTER')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How many change masters are there in the system? What's the status of my change masters? Which change masters have been created by me? Are there any change masters in the system marked for deletion? Which change masters are valid from a given date? For what reasons have change masters been created?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How many change masters are there in the system? What's the status of my change masters? Which change masters have been created by me? Are there any change masters in the system marked for deletion? Which change masters are valid from a given date? For what reasons have change masters been created?"
 tags:
   - PLM
   - bo:plant

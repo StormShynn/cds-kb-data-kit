@@ -1,13 +1,13 @@
 ---
 name: I_SUPDMNDALLDOCRQMTTYPET
-description: Requirement Types - Text
+description: "Requirement Types - Text"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPDMNDALLDOCRQMTTYPET')/$value
-semantic_en: Requirement Types - Text
+semantic_en: "Requirement Types - Text"
 tags:
   - LO
   - component:LO-RFM-ARN

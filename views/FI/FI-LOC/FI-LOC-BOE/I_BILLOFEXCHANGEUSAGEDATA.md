@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFEXCHANGEUSAGEDATA
-description: Billofexchangeusagedata
+description: "Billofexchangeusagedata"
 app_component: FI-LOC-BOE
 software_component: SAPSCORE
 release_state: released

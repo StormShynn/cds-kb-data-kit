@@ -1,13 +1,13 @@
 ---
 name: I_CMPLOBLASGTACTNRQDCHGDNOTIF
-description: Action Required Changed Email Notif
+description: "Action Required Changed Email Notif"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLOBLASGTACTNRQDCHGDNOTIF')/$value
-semantic_en: Action Required Changed Email Notif
+semantic_en: "Action Required Changed Email Notif"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS

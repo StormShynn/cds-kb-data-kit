@@ -1,6 +1,6 @@
 ---
 name: I_TREASURYLEDGERTRANSACTION
-description: Treasuryledgertransaction
+description: "Treasuryledgertransaction"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

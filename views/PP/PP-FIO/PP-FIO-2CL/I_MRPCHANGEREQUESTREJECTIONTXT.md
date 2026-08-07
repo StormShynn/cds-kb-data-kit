@@ -1,6 +1,6 @@
 ---
 name: I_MRPCHANGEREQUESTREJECTIONTXT
-description: Mrpchangerequestrejectiontxt
+description: "Mrpchangerequestrejectiontxt"
 app_component: PP-FIO-2CL
 software_component: SAPSCORE
 release_state: released

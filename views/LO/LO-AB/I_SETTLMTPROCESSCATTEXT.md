@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTPROCESSCATTEXT
-description: Settlmtprocesscattext
+description: "Settlmtprocesscattext"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

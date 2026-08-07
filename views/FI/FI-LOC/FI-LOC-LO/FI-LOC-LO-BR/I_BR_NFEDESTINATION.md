@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFEDESTINATION
-description: BR Nfedestination
+description: "BR Nfedestination"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

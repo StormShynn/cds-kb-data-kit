@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFTEXTTYPE
-description: BR Nftexttype
+description: "BR Nftexttype"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

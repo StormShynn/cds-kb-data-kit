@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALRSPPTYADDRESSAPI01
-description: Suplrevalrspptyaddressapi 01
+description: "Suplrevalrspptyaddressapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

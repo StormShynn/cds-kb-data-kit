@@ -1,6 +1,6 @@
 ---
 name: I_CUSTOMERACCOUNTASSGMTGROUPT
-description: Customeraccountassgmtgroupt
+description: "Customeraccountassgmtgroupt"
 app_component: SD-BF-ACT-2CL
 software_component: SAPSCORE
 release_state: released

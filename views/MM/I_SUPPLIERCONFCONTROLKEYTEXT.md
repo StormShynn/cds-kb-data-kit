@@ -1,6 +1,6 @@
 ---
 name: I_SUPPLIERCONFCONTROLKEYTEXT
-description: Supplierconfcontrolkeytext
+description: "Supplierconfcontrolkeytext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

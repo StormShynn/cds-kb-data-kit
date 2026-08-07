@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSTYPEVH
-description: Businesstypevh
+description: "Businesstypevh"
 app_component: FI-LOC-FI-KR
 software_component: SAPSCORE
 release_state: released

@@ -1,19 +1,19 @@
 ---
 name: ZI_ORDER_962.DDLS
-description: Order view
+description: "Order view"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Tomomi-H011/ZDEMO962_Ver2/blob/8e57c7c924830bc1adabeaa678c0c6c489e2ad29/src/zi_order_962.ddls.asddls
-semantic_en: Order view — CDS view based on zorder_tbl.
-semantic_vi: Order view — CDS view dựa trên zorder_tbl.
+semantic_en: "Order view — CDS view based on zorder_tbl."
+semantic_vi: "Order view — CDS view dựa trên zorder_tbl."
 keywords:
-  - order
-  - model
-  - grade
-  - year
+  - "order"
+  - "model"
+  - "grade"
+  - "year"
 tags:
   - order
 ---

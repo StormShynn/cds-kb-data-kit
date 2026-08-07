@@ -1,24 +1,24 @@
 ---
 name: C_SALESVOLUMEANALYTICSQRY
-description: This CDS view provides the prerequisites for answering the following business questions, for example: What is my sales volume compared to previous months? How many credit memos or cancellations do I have for a specific sold-to party? What is my profit margin for specific sales organizations or products?
+description: "This CDS view provides the prerequisites for answering the following business questions, for example: What is my sales volume compared to previous months? How many credit memos or cancellations do I have for a specific sold-to party? What is my profit margin for specific sales organizations or products?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESVOLUMEANALYTICSQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions, for example: What is my sales volume compared to previous months? How many credit memos or cancellations do I have for a specific sold-to party? What is my profit margin for specific sales organizations or products?
-semantic_vi: Sales Volume - Query — CDS view tiêu dùng dựa trên I_BillingDocumentItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions, for example: What is my sales volume compared to previous months? How many credit memos or cancellations do I have for a specific sold-to party? What is my profit margin for specific sales organizations or products?"
+semantic_vi: "Sales Volume - Query — CDS view tiêu dùng dựa trên I_BillingDocumentItemCube."
 keywords:
-  - Sales Volume - Query
-  - sales
-  - volume
-  - query
-  - billing
-  - document
-  - item
-  - category
-  - type
+  - "Sales Volume - Query"
+  - "sales"
+  - "volume"
+  - "query"
+  - "billing"
+  - "document"
+  - "item"
+  - "category"
+  - "type"
 tags:
   - SD
   - bo:billingdocument

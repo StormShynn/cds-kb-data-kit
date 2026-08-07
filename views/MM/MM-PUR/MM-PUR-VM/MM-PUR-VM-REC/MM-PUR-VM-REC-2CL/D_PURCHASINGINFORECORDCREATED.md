@@ -1,6 +1,6 @@
 ---
 name: D_PURCHASINGINFORECORDCREATED
-description: D Purchasinginforecordcreated
+description: "D Purchasinginforecordcreated"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

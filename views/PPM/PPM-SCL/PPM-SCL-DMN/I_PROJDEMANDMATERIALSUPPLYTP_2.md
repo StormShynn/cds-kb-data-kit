@@ -1,6 +1,6 @@
 ---
 name: I_PROJDEMANDMATERIALSUPPLYTP_2
-description: Projdemandmaterialsupplytp 2
+description: "Projdemandmaterialsupplytp 2"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFMATERIALITEMDEX_3
-description: Bill of MaterialITEMDEX 3
+description: "Bill of MaterialITEMDEX 3"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

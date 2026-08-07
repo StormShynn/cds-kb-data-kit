@@ -1,6 +1,6 @@
 ---
 name: I_CN_BANKRECNCLNMATCHTYPETEXT
-description: CN Bankrecnclnmatchtypetext
+description: "CN Bankrecnclnmatchtypetext"
 app_component: FI-LOC-EPI-CN
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_INSPSPECTRANSFERTYPE
-description: Inspspectransfertype
+description: "Inspspectransfertype"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

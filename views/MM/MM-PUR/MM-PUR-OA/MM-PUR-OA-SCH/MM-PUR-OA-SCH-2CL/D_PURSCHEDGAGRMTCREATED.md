@@ -1,6 +1,6 @@
 ---
 name: D_PURSCHEDGAGRMTCREATED
-description: D Purschedgagrmtcreated
+description: "D Purschedgagrmtcreated"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

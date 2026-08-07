@@ -1,6 +1,6 @@
 ---
 name: I_GHGDTAQLTYCHARACTERISTIC
-description: Ghgdtaqltycharacteristic
+description: "Ghgdtaqltycharacteristic"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

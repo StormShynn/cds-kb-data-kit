@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTTAXCLASSIFICATION
-description: Producttaxclassification
+description: "Producttaxclassification"
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

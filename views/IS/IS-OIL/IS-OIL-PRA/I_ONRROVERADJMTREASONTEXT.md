@@ -1,13 +1,13 @@
 ---
 name: I_ONRROVERADJMTREASONTEXT
-description: Office of Natural Resources Revenue Override Adjustment Reason - Text
+description: "Office of Natural Resources Revenue Override Adjustment Reason - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ONRROVERADJMTREASONTEXT')/$value
-semantic_en: Office of Natural Resources Revenue Override Adjustment Reason - Text
+semantic_en: "Office of Natural Resources Revenue Override Adjustment Reason - Text"
 tags:
   - IS
   - bo:companycode

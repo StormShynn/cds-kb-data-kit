@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEORDERPHASECONTROL
-description: Maintenance OrderPHASECONTROL
+description: "Maintenance OrderPHASECONTROL"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

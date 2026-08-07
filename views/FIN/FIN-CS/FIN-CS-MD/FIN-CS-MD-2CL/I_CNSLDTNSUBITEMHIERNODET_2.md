@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSUBITEMHIERNODET_2
-description: Cnsldtnsubitemhiernodet 2
+description: "Cnsldtnsubitemhiernodet 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

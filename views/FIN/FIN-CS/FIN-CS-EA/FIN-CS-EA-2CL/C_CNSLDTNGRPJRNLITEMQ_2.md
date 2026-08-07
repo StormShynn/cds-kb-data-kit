@@ -1,6 +1,6 @@
 ---
 name: C_CNSLDTNGRPJRNLITEMQ_2
-description: Cnsldtngrpjrnlitemq 2
+description: "Cnsldtngrpjrnlitemq 2"
 app_component: FIN-CS-EA-2CL
 software_component: SAPPCORE_H
 release_state: released

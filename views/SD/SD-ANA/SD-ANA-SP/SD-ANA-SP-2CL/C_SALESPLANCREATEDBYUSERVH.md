@@ -1,6 +1,6 @@
 ---
 name: C_SALESPLANCREATEDBYUSERVH
-description: Salesplancreatedbyuservh
+description: "Salesplancreatedbyuservh"
 app_component: SD-ANA-SP-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_KANBANCONTAINERERROR
-description: Kanbancontainererror
+description: "Kanbancontainererror"
 app_component: PP-KAB-VDM-2CL
 software_component: SAPSCORE
 release_state: released

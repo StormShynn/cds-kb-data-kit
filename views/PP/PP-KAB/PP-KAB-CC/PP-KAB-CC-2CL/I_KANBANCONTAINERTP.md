@@ -1,6 +1,6 @@
 ---
 name: I_KANBANCONTAINERTP
-description: Kanbancontainertp
+description: "Kanbancontainertp"
 app_component: PP-KAB-CC-2CL
 software_component: SAPSCORE
 release_state: released

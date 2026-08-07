@@ -1,6 +1,6 @@
 ---
 name: I_BILLINGDOCTYPEHIERTEXT
-description: Billing DocumentTYPEHIERTEXT
+description: "Billing DocumentTYPEHIERTEXT"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

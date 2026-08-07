@@ -1,6 +1,6 @@
 ---
 name: I_PURCONTRITEMCNDNAMOUNTTP
-description: Purcontritemcndnamounttp
+description: "Purcontritemcndnamounttp"
 app_component: MM-PUR-OA-2CL
 software_component: SAPSCORE
 release_state: released

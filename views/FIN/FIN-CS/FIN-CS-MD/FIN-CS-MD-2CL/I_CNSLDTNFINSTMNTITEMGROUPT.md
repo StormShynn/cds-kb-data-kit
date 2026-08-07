@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNFINSTMNTITEMGROUPT
-description: Financial Statement Item Group - Text
+description: "Financial Statement Item Group - Text"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITEMGROUPT')/$value
-semantic_en: Financial Statement Item Group - Text
+semantic_en: "Financial Statement Item Group - Text"
 tags:
   - FIN
   - bo:companycode

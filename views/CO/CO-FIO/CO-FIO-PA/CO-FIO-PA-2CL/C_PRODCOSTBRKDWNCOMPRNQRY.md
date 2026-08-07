@@ -1,28 +1,28 @@
 ---
 name: C_PRODCOSTBRKDWNCOMPRNQRY
-description: This CDS view is designed to provide a detailed comparison of product cost breakdowns over different fiscal periods. It allows users to analyze and compare costs associated with products, taking into account various fiscal parameters and breakdown methods. This CDS view provides the data to answer the following business questions: What are the cost breakdowns for products in the current fiscal period compared to the previous fiscal period? How do the costs of goods sold (COGS) vary between variable and fixed components? What is the percentage change in cost breakdown components between the current and previous fiscal periods? How do the costs in the current fiscal year period compare to the same period in the previous fiscal year? What are the differences in reporting period costs between the current fiscal year and the previous fiscal year? How do the costs for specific products, customer groups, or sales documents compare across different fiscal periods? What is the impact of different cost breakdown methods on the overall product cost analysis? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is designed to provide a detailed comparison of product cost breakdowns over different fiscal periods. It allows users to analyze and compare costs associated with products, taking into account various fiscal parameters and breakdown methods. This CDS view provides the data to answer the following business questions: What are the cost breakdowns for products in the current fiscal period compared to the previous fiscal period? How do the costs of goods sold (COGS) vary between variable and fixed components? What is the percentage change in cost breakdown components between the current and previous fiscal periods? How do the costs in the current fiscal year period compare to the same period in the previous fiscal year? What are the differences in reporting period costs between the current fiscal year and the previous fiscal year? How do the costs for specific products, customer groups, or sales documents compare across different fiscal periods? What is the impact of different cost breakdown methods on the overall product cost analysis? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODCOSTBRKDWNCOMPRNQRY')/$value
-semantic_en: This CDS view is designed to provide a detailed comparison of product cost breakdowns over different fiscal periods. It allows users to analyze and compare costs associated with products, taking into account various fiscal parameters and breakdown methods. This CDS view provides the data to answer the following business questions: What are the cost breakdowns for products in the current fiscal period compared to the previous fiscal period? How do the costs of goods sold (COGS) vary between variable and fixed components? What is the percentage change in cost breakdown components between the current and previous fiscal periods? How do the costs in the current fiscal year period compare to the same period in the previous fiscal year? What are the differences in reporting period costs between the current fiscal year and the previous fiscal year? How do the costs for specific products, customer groups, or sales documents compare across different fiscal periods? What is the impact of different cost breakdown methods on the overall product cost analysis? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Product Cost Breakdown Comparison - Qry — CDS view tiêu dùng dựa trên Product Cost Breakdown Comparison - Qry.
+semantic_en: "This CDS view is designed to provide a detailed comparison of product cost breakdowns over different fiscal periods. It allows users to analyze and compare costs associated with products, taking into account various fiscal parameters and breakdown methods. This CDS view provides the data to answer the following business questions: What are the cost breakdowns for products in the current fiscal period compared to the previous fiscal period? How do the costs of goods sold (COGS) vary between variable and fixed components? What is the percentage change in cost breakdown components between the current and previous fiscal periods? How do the costs in the current fiscal year period compare to the same period in the previous fiscal year? What are the differences in reporting period costs between the current fiscal year and the previous fiscal year? How do the costs for specific products, customer groups, or sales documents compare across different fiscal periods? What is the impact of different cost breakdown methods on the overall product cost analysis? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Product Cost Breakdown Comparison - Qry — CDS view tiêu dùng dựa trên Product Cost Breakdown Comparison - Qry."
 keywords:
-  - Product Cost Breakdown Comparison - Qry
-  - product
-  - cost
-  - breakdown
-  - comparison
-  - qry
-  - currency
-  - field
-  - company
-  - code
-  - fiscal
-  - year
-  - ledger
+  - "Product Cost Breakdown Comparison - Qry"
+  - "product"
+  - "cost"
+  - "breakdown"
+  - "comparison"
+  - "qry"
+  - "currency"
+  - "field"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "ledger"
 tags:
   - CO
   - account

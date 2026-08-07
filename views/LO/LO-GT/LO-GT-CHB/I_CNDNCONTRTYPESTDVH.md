@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRTYPESTDVH
-description: Cndncontrtypestdvh
+description: "Cndncontrtypestdvh"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

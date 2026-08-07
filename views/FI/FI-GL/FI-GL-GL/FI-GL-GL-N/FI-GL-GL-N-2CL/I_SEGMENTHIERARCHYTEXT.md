@@ -1,6 +1,6 @@
 ---
 name: I_SEGMENTHIERARCHYTEXT
-description: Segmenthierarchytext
+description: "Segmenthierarchytext"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

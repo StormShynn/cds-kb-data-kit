@@ -1,22 +1,22 @@
 ---
 name: C_MAINTORDEROPERATIONDEX
-description: Maintenance Order Operation
+description: "Maintenance Order Operation"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDEROPERATIONDEX')/$value
-semantic_en: Maintenance Order Operation
-semantic_vi: Maintenance Order Operation — CDS view tiêu dùng (transactional data) dựa trên I_MaintOrderOpAndSubOp_2.
+semantic_en: "Maintenance Order Operation"
+semantic_vi: "Maintenance Order Operation — CDS view tiêu dùng (transactional data) dựa trên I_MaintOrderOpAndSubOp_2."
 keywords:
-  - maintenance
-  - order
-  - operation
-  - maint
-  - routing
-  - number
-  - node
+  - "maintenance"
+  - "order"
+  - "operation"
+  - "maint"
+  - "routing"
+  - "number"
+  - "node"
 tags:
   - PM
   - component:PM-WOC-MO-2CL

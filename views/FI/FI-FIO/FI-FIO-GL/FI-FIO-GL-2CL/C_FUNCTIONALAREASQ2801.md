@@ -1,28 +1,28 @@
 ---
 name: C_FUNCTIONALAREASQ2801
-description: This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts per functional area and G/L account in transaction currency? What are the actual amounts per functional area and G/L account in company code currency? What are the actual amounts per functional area and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics.
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts per functional area and G/L account in transaction currency? What are the actual amounts per functional area and G/L account in company code currency? What are the actual amounts per functional area and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics."
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCTIONALAREASQ2801')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts per functional area and G/L account in transaction currency? What are the actual amounts per functional area and G/L account in company code currency? What are the actual amounts per functional area and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics.
-semantic_vi: Functional Areas Actuals — CDS view tiêu dùng dựa trên I_JournalEntryItemCube.
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts per functional area and G/L account in transaction currency? What are the actual amounts per functional area and G/L account in company code currency? What are the actual amounts per functional area and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics."
+semantic_vi: "Functional Areas Actuals — CDS view tiêu dùng dựa trên I_JournalEntryItemCube."
 keywords:
-  - Functional Areas Actuals
-  - functional
-  - areas
-  - actuals
-  - area
-  - account
-  - cost
-  - activity
-  - type
-  - business
-  - transaction
-  - calendar
-  - month
+  - "Functional Areas Actuals"
+  - "functional"
+  - "areas"
+  - "actuals"
+  - "area"
+  - "account"
+  - "cost"
+  - "activity"
+  - "type"
+  - "business"
+  - "transaction"
+  - "calendar"
+  - "month"
 tags:
   - FI
   - account

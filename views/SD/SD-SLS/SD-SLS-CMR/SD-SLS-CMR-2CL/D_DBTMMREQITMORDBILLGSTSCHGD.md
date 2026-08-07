@@ -1,6 +1,6 @@
 ---
 name: D_DBTMMREQITMORDBILLGSTSCHGD
-description: D Dbtmmreqitmordbillgstschgd
+description: "D Dbtmmreqitmordbillgstschgd"
 app_component: SD-SLS-CMR-2CL
 software_component: SAPSCORE
 release_state: released

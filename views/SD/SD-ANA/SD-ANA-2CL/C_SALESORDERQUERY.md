@@ -1,25 +1,25 @@
 ---
 name: C_SALESORDERQUERY
-description: This CDS view provides the prerequisites for answering questions about sales orders at header level. Example business questions include: What's the sold-to party of the sales order? What's the overall processing status of the sales order? How many sales orders are in the system and how many are still open? What is the overall open value of my sales orders?
+description: "This CDS view provides the prerequisites for answering questions about sales orders at header level. Example business questions include: What's the sold-to party of the sales order? What's the overall processing status of the sales order? How many sales orders are in the system and how many are still open? What is the overall open value of my sales orders?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESORDERQUERY')/$value
-semantic_en: This CDS view provides the prerequisites for answering questions about sales orders at header level. Example business questions include: What's the sold-to party of the sales order? What's the overall processing status of the sales order? How many sales orders are in the system and how many are still open? What is the overall open value of my sales orders?
-semantic_vi: Sales Order - Query — CDS view tiêu dùng dựa trên I_SalesOrderCube.
+semantic_en: "This CDS view provides the prerequisites for answering questions about sales orders at header level. Example business questions include: What's the sold-to party of the sales order? What's the overall processing status of the sales order? How many sales orders are in the system and how many are still open? What is the overall open value of my sales orders?"
+semantic_vi: "Sales Order - Query — CDS view tiêu dùng dựa trên I_SalesOrderCube."
 keywords:
-  - Sales Order - Query
-  - sales
-  - order
-  - query
-  - type
-  - display
-  - currency
-  - number
-  - incoming
-  - orders
+  - "Sales Order - Query"
+  - "sales"
+  - "order"
+  - "query"
+  - "type"
+  - "display"
+  - "currency"
+  - "number"
+  - "incoming"
+  - "orders"
 tags:
   - SD
   - bo:plant

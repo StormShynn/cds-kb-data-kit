@@ -1,13 +1,13 @@
 ---
 name: I_ARBALAMTAGETEXT
-description: AR Balance Amount Age - Text
+description: "AR Balance Amount Age - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARBALAMTAGETEXT')/$value
-semantic_en: AR Balance Amount Age - Text
+semantic_en: "AR Balance Amount Age - Text"
 tags:
   - IS
   - component:IS-OIL-PRA

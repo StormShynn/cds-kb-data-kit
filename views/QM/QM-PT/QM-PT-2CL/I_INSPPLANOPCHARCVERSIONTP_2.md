@@ -1,6 +1,6 @@
 ---
 name: I_INSPPLANOPCHARCVERSIONTP_2
-description: Inspplanopcharcversiontp 2
+description: "Inspplanopcharcversiontp 2"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

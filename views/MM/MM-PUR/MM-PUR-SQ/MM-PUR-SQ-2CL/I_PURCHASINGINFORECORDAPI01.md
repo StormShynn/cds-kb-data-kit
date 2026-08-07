@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGINFORECORDAPI01
-description: Purchasinginforecordapi 01
+description: "Purchasinginforecordapi 01"
 app_component: MM-PUR-SQ-2CL
 software_component: SAPSCORE
 release_state: released

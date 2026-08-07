@@ -1,6 +1,6 @@
 ---
 name: I_CRREASSGMTSNDRPRFTBLTYSGMTTP
-description: Crreassgmtsndrprftbltysgmttp
+description: "Crreassgmtsndrprftbltysgmttp"
 app_component: CA-GTF-FXU-FI-CO
 software_component: SAPSCORE
 release_state: released

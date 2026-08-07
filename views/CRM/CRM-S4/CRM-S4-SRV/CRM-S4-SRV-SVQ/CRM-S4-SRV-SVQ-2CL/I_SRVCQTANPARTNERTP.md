@@ -1,6 +1,6 @@
 ---
 name: I_SRVCQTANPARTNERTP
-description: Srvcqtanpartnertp
+description: "Srvcqtanpartnertp"
 app_component: CRM-S4-SRV-SVQ-2CL
 software_component: SAPSCORE
 release_state: released

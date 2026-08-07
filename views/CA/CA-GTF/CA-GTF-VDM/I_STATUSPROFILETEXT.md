@@ -1,6 +1,6 @@
 ---
 name: I_STATUSPROFILETEXT
-description: Statusprofiletext
+description: "Statusprofiletext"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released

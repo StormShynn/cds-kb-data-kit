@@ -1,6 +1,6 @@
 ---
 name: D_STOGETDELIVERYADDRESSR
-description: D Stogetdeliveryaddressr
+description: "D Stogetdeliveryaddressr"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

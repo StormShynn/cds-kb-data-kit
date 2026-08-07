@@ -1,22 +1,22 @@
 ---
 name: ZC_ORDERITEM.DDLS
-description: ZC_ORDERITEM.DDLS
+description: "ZC_ORDERITEM.DDLS"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/SAP-samples/abap-platform-rap-transactional-outbox-with-bgpf/blob/8cd3f64340db119e1e8ae0c30e0da650c584fd9c/src/zc_orderitem.ddls.asddls
-semantic_en: ZC_ORDERITEM.DDLS — CDS view.
-semantic_vi: ZC_ORDERITEM.DDLS — CDS view dựa trên ZC_ORDERITEM.DDLS.
+semantic_en: "ZC_ORDERITEM.DDLS — CDS view."
+semantic_vi: "ZC_ORDERITEM.DDLS — CDS view dựa trên ZC_ORDERITEM.DDLS."
 keywords:
-  - orderitem.ddls
-  - parent
-  - order
-  - item
-  - product
-  - name
-  - quantity
+  - "orderitem.ddls"
+  - "parent"
+  - "order"
+  - "item"
+  - "product"
+  - "name"
+  - "quantity"
 tags:
   - order
 ---

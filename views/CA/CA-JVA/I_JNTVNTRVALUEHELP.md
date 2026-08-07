@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTRVALUEHELP
-description: Jntvntrvaluehelp
+description: "Jntvntrvaluehelp"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

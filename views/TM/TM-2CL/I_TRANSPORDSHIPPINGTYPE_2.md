@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDSHIPPINGTYPE_2
-description: Transpordshippingtype 2
+description: "Transpordshippingtype 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_TRSYCTPTYLMTUTILZNBASE
-description: Trsyctptylmtutilznbase
+description: "Trsyctptylmtutilznbase"
 app_component: FIN-FSCM-TRM-CR-2CL
 software_component: SAPSCORE
 release_state: released

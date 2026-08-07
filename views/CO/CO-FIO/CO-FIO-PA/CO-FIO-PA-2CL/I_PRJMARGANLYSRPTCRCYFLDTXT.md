@@ -1,6 +1,6 @@
 ---
 name: I_PRJMARGANLYSRPTCRCYFLDTXT
-description: Prjmarganlysrptcrcyfldtxt
+description: "Prjmarganlysrptcrcyfldtxt"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released

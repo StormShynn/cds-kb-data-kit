@@ -1,26 +1,26 @@
 ---
 name: C_STOCKQTYCURRENTVALUE_2
-description: This CDS view provides the prerequisites for answering the following business question: What is the current material stock quantity and the current material stock value for a particular stock where "the stock value is valuated" by the price at period end?
+description: "This CDS view provides the prerequisites for answering the following business question: What is the current material stock quantity and the current material stock value for a particular stock where \"the stock value is valuated\" by the price at period end?"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_STOCKQTYCURRENTVALUE_2')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What is the current material stock quantity and the current material stock value for a particular stock where "the stock value is valuated" by the price at period end?
-semantic_vi: Current stock quantity and value — CDS view tiêu dùng (transactional data) dựa trên I_StockQuantityCurrentValue.
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What is the current material stock quantity and the current material stock value for a particular stock where \"the stock value is valuated\" by the price at period end?"
+semantic_vi: "Current stock quantity and value — CDS view tiêu dùng (transactional data) dựa trên I_StockQuantityCurrentValue."
 keywords:
-  - current
-  - stock
-  - quantity
-  - and
-  - value
-  - product
-  - plant
-  - storage
-  - location
-  - batch
-  - supplier
+  - "current"
+  - "stock"
+  - "quantity"
+  - "and"
+  - "value"
+  - "product"
+  - "plant"
+  - "storage"
+  - "location"
+  - "batch"
+  - "supplier"
 tags:
   - MM
   - bo:inventory

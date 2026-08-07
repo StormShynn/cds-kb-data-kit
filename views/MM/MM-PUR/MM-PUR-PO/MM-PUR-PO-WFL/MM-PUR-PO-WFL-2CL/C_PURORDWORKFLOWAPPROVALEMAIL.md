@@ -1,6 +1,6 @@
 ---
 name: C_PURORDWORKFLOWAPPROVALEMAIL
-description: Purordworkflowapprovalemail
+description: "Purordworkflowapprovalemail"
 app_component: MM-PUR-PO-WFL-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_JITINBOUNDCALL
-description: Jitinboundcall
+description: "Jitinboundcall"
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released

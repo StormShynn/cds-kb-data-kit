@@ -1,6 +1,6 @@
 ---
 name: I_ADDRESSREMARK_2
-description: Addressremark 2
+description: "Addressremark 2"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSUBITEMCATEGORYVH_2
-description: Cnsldtnsubitemcategoryvh 2
+description: "Cnsldtnsubitemcategoryvh 2"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

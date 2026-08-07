@@ -1,13 +1,13 @@
 ---
 name: I_NOTICEOFVIOLATIONTYPE
-description: Notice Of Violation Type
+description: "Notice Of Violation Type"
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_NOTICEOFVIOLATIONTYPE')/$value
-semantic_en: Notice Of Violation Type
+semantic_en: "Notice Of Violation Type"
 tags:
   - EHS
   - component:EHS-SUS-IM

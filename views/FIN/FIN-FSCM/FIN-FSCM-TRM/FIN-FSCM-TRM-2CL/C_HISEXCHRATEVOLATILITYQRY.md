@@ -1,13 +1,13 @@
 ---
 name: C_HISEXCHRATEVOLATILITYQRY
-description: This CDS view provides the prerequisites for answering the following business question: What's the historical volatility value of an exchange rate for a specific volatility type for a specific period of time?
+description: "This CDS view provides the prerequisites for answering the following business question: What's the historical volatility value of an exchange rate for a specific volatility type for a specific period of time?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_HISEXCHRATEVOLATILITYQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: What's the historical volatility value of an exchange rate for a specific volatility type for a specific period of time?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: What's the historical volatility value of an exchange rate for a specific volatility type for a specific period of time?"
 tags:
   - FIN
   - bo:companycode

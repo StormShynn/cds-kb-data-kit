@@ -1,6 +1,6 @@
 ---
 name: I_CNDNVALUEZEROPROCESSINGCODE
-description: Cndnvaluezeroprocessingcode
+description: "Cndnvaluezeroprocessingcode"
 app_component: SD-MD-CM-2CL
 software_component: SAPSCORE
 release_state: released

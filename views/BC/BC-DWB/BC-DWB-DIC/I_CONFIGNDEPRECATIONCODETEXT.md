@@ -1,6 +1,6 @@
 ---
 name: I_CONFIGNDEPRECATIONCODETEXT
-description: Configndeprecationcodetext
+description: "Configndeprecationcodetext"
 app_component: BC-DWB-DIC
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_LEGALTRANSCATEGORYTP_2
-description: Legaltranscategorytp 2
+description: "Legaltranscategorytp 2"
 app_component: CM-LT-2CL
 software_component: SAPSCORE
 release_state: released

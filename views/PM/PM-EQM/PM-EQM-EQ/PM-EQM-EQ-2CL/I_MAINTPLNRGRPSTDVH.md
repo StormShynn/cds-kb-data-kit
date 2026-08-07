@@ -1,6 +1,6 @@
 ---
 name: I_MAINTPLNRGRPSTDVH
-description: Maintplnrgrpstdvh
+description: "Maintplnrgrpstdvh"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_AGREEMENTPORTIONASSGMTROLE
-description: Agreement Portion Assignment Role
+description: "Agreement Portion Assignment Role"
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTPORTIONASSGMTROLE')/$value
-semantic_en: Agreement Portion Assignment Role
+semantic_en: "Agreement Portion Assignment Role"
 tags:
   - FS
   - bo:purchaseorder

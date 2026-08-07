@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEDOCUMENTITEMENHCD
-description: Service DocumentUMENTITEMENHCD
+description: "Service DocumentUMENTITEMENHCD"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

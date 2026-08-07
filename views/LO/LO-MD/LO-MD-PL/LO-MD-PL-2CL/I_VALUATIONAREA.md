@@ -1,6 +1,6 @@
 ---
 name: I_VALUATIONAREA
-description: Valuationarea
+description: "Valuationarea"
 app_component: LO-MD-PL-2CL
 software_component: SAPSCORE
 release_state: released

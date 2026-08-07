@@ -1,23 +1,23 @@
 ---
 name: C_SUPLREVALBYQUALITYQRY
-description: Supplier Evaluation by Quality
+description: "Supplier Evaluation by Quality"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLREVALBYQUALITYQRY')/$value
-semantic_en: Supplier Evaluation by Quality
-semantic_vi: Supplier Evaluation by Quality — CDS view tiêu dùng dựa trên C_SuplrEvalByQualityCube.
+semantic_en: "Supplier Evaluation by Quality"
+semantic_vi: "Supplier Evaluation by Quality — CDS view tiêu dùng dựa trên C_SuplrEvalByQualityCube."
 keywords:
-  - supplier
-  - evaluation
-  - quality
-  - inspection
-  - purchase
-  - order
-  - item
-  - country
+  - "supplier"
+  - "evaluation"
+  - "quality"
+  - "inspection"
+  - "purchase"
+  - "order"
+  - "item"
+  - "country"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

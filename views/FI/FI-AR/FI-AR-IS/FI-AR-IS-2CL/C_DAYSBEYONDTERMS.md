@@ -1,28 +1,28 @@
 ---
 name: C_DAYSBEYONDTERMS
-description: This CDS view provides you with an insight into the payment history of your customers and it indicates how effectively your company collects payments. The result calculates the Days Beyond Terms and the ratio of payments in term and out of term per account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How long does it take to collect payments? For more information on the calculation of the measures please see: Calculation of Ratio of Payments Within Terms and Beyond Terms, Calculation of Days Beyond Terms and Calculation of Days in Arrears. If you have just started a new business, you may find the Days Sales Outstanding Cube more helpful.
+description: "This CDS view provides you with an insight into the payment history of your customers and it indicates how effectively your company collects payments. The result calculates the Days Beyond Terms and the ratio of payments in term and out of term per account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How long does it take to collect payments? For more information on the calculation of the measures please see: Calculation of Ratio of Payments Within Terms and Beyond Terms, Calculation of Days Beyond Terms and Calculation of Days in Arrears. If you have just started a new business, you may find the Days Sales Outstanding Cube more helpful."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_DAYSBEYONDTERMS')/$value
-semantic_en: This CDS view provides you with an insight into the payment history of your customers and it indicates how effectively your company collects payments. The result calculates the Days Beyond Terms and the ratio of payments in term and out of term per account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How long does it take to collect payments? For more information on the calculation of the measures please see: Calculation of Ratio of Payments Within Terms and Beyond Terms, Calculation of Days Beyond Terms and Calculation of Days in Arrears. If you have just started a new business, you may find the Days Sales Outstanding Cube more helpful.
-semantic_vi: Days Beyond Terms for Smart Business Apps — CDS view tiêu dùng dựa trên I_DaysBeyondTerms.
+semantic_en: "This CDS view provides you with an insight into the payment history of your customers and it indicates how effectively your company collects payments. The result calculates the Days Beyond Terms and the ratio of payments in term and out of term per account (company code and customer). This CDS view provides you with the information that you need to answer the following business questions: How long does it take to collect payments? For more information on the calculation of the measures please see: Calculation of Ratio of Payments Within Terms and Beyond Terms, Calculation of Days Beyond Terms and Calculation of Days in Arrears. If you have just started a new business, you may find the Days Sales Outstanding Cube more helpful."
+semantic_vi: "Days Beyond Terms for Smart Business Apps — CDS view tiêu dùng dựa trên I_DaysBeyondTerms."
 keywords:
-  - days
-  - beyond
-  - terms
-  - for
-  - smart
-  - business
-  - apps
-  - calendar
-  - month
-  - year
-  - customer
-  - company
-  - code
+  - "days"
+  - "beyond"
+  - "terms"
+  - "for"
+  - "smart"
+  - "business"
+  - "apps"
+  - "calendar"
+  - "month"
+  - "year"
+  - "customer"
+  - "company"
+  - "code"
 tags:
   - FI
   - account

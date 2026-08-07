@@ -1,6 +1,6 @@
 ---
 name: D_BDRCRTEFRMEXTDATACONTROLP
-description: D Bdrcrtefrmextdatacontrolp
+description: "D Bdrcrtefrmextdatacontrolp"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

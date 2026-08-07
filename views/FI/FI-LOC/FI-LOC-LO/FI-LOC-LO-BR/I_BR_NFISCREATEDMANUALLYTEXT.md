@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFISCREATEDMANUALLYTEXT
-description: BR Nfiscreatedmanuallytext
+description: "BR Nfiscreatedmanuallytext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_GHGSCP2CNTRCTLINSTRUMENTVH
-description: Ghgscp 2CNTRCTLINSTRUMENTVH
+description: "Ghgscp 2CNTRCTLINSTRUMENTVH"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

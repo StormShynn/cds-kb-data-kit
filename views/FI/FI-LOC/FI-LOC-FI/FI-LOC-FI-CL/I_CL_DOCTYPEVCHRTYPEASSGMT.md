@@ -1,6 +1,6 @@
 ---
 name: I_CL_DOCTYPEVCHRTYPEASSGMT
-description: CL Doctypevchrtypeassgmt
+description: "CL Doctypevchrtypeassgmt"
 app_component: FI-LOC-FI-CL
 software_component: SAPSCORE
 release_state: released

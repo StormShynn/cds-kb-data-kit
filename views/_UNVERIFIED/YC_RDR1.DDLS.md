@@ -1,23 +1,23 @@
 ---
 name: YC_RDR1.DDLS
-description: Consumption View For Order Item
+description: "Consumption View For Order Item"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Sanji276/AbapRAP_ZSO/blob/3531f7a6a5274abc0f1cfc8020cc2b5040b54551/src/yc_rdr1.ddls.asddls
-semantic_en: Consumption View For Order Item — CDS view.
-semantic_vi: Consumption View For Order Item — CDS view dựa trên Consumption View For Order Item.
+semantic_en: "Consumption View For Order Item — CDS view."
+semantic_vi: "Consumption View For Order Item — CDS view dựa trên Consumption View For Order Item."
 keywords:
-  - consumption
-  - for
-  - order
-  - item
-  - docentry
-  - itemcode
-  - description
-  - unit
+  - "consumption"
+  - "for"
+  - "order"
+  - "item"
+  - "docentry"
+  - "itemcode"
+  - "description"
+  - "unit"
 tags:
   - CO
   - component:CO

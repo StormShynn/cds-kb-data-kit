@@ -1,6 +1,6 @@
 ---
 name: I_BPADDRINDEPENDENTEMAILTP_3
-description: Bpaddrindependentemailtp 3
+description: "Bpaddrindependentemailtp 3"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

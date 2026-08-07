@@ -1,6 +1,6 @@
 ---
 name: I_PRELIMBILLINGDOCUMENTSTDVH
-description: PRELIMBilling DocumentUMENTSTDVH
+description: "PRELIMBilling DocumentUMENTSTDVH"
 app_component: SD-BIL-PBD-2CL
 software_component: SAPSCORE
 release_state: released

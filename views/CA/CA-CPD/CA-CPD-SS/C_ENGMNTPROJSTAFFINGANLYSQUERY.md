@@ -1,13 +1,13 @@
 ---
 name: C_ENGMNTPROJSTAFFINGANLYSQUERY
-description: This CDS view provides the prerequisites for answering the following business questions: What is the status of staffing in projects that I manage? What is the composition of billable and non-billable effort? Are projects in my service organization or company code adequately staffed? How many hours of planned effort have not yet been posted? How many hours have not yet been approved?
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the status of staffing in projects that I manage? What is the composition of billable and non-billable effort? Are projects in my service organization or company code adequately staffed? How many hours of planned effort have not yet been posted? How many hours have not yet been approved?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJSTAFFINGANLYSQUERY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the status of staffing in projects that I manage? What is the composition of billable and non-billable effort? Are projects in my service organization or company code adequately staffed? How many hours of planned effort have not yet been posted? How many hours have not yet been approved?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the status of staffing in projects that I manage? What is the composition of billable and non-billable effort? Are projects in my service organization or company code adequately staffed? How many hours of planned effort have not yet been posted? How many hours have not yet been approved?"
 tags:
   - CA
   - bo:companycode

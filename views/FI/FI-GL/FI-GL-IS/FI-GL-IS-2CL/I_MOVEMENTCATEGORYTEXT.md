@@ -1,6 +1,6 @@
 ---
 name: I_MOVEMENTCATEGORYTEXT
-description: Movementcategorytext
+description: "Movementcategorytext"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

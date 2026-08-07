@@ -1,6 +1,6 @@
 ---
 name: I_UNITEDSTATESTAXSOURCINGTEXT
-description: Unitedstatestaxsourcingtext
+description: "Unitedstatestaxsourcingtext"
 app_component: FI-TXL-EXT
 software_component: SAPSCORE
 release_state: released

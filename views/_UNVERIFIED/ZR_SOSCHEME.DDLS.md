@@ -1,21 +1,21 @@
 ---
 name: ZR_SOSCHEME.DDLS
-description: SO Scheme View
+description: "SO Scheme View"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Sadda-SAP-AAho/ABAP-BONN-ZSCHEMEAPPLICATION/blob/1bbb4c514a82d4e66adf7ff682690ea9895c930b/src/zr_soscheme.ddls.asddls
-semantic_en: SO Scheme View — CDS view based on zsoscheme.
-semantic_vi: SO Scheme View — CDS view dựa trên zsoscheme.
+semantic_en: "SO Scheme View — CDS view based on zsoscheme."
+semantic_vi: "SO Scheme View — CDS view dựa trên zsoscheme."
 keywords:
-  - scheme
-  - bukrs
-  - salesorder
-  - schemecode
-  - schemegroupcode
-  - schemecheckcode
+  - "scheme"
+  - "bukrs"
+  - "salesorder"
+  - "schemecode"
+  - "schemegroupcode"
+  - "schemecheckcode"
 tags:
   - bo:salesorder
 ---

@@ -1,6 +1,6 @@
 ---
 name: I_AR_GROSSINCOMETAXPERCENTAGE
-description: AR Grossincometaxpercentage
+description: "AR Grossincometaxpercentage"
 app_component: FI-LOC-FI-AR-WHT
 software_component: SAPSCORE
 release_state: released

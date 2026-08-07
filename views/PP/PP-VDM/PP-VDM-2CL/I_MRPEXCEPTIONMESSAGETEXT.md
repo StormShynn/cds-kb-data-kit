@@ -1,6 +1,6 @@
 ---
 name: I_MRPEXCEPTIONMESSAGETEXT
-description: Mrpexceptionmessagetext
+description: "Mrpexceptionmessagetext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

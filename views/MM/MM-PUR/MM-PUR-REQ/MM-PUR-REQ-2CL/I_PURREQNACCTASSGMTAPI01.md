@@ -1,6 +1,6 @@
 ---
 name: I_PURREQNACCTASSGMTAPI01
-description: Purreqnacctassgmtapi 01
+description: "Purreqnacctassgmtapi 01"
 app_component: MM-PUR-REQ-2CL
 software_component: SAPSCORE
 release_state: released

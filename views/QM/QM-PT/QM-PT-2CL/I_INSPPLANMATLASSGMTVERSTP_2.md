@@ -1,6 +1,6 @@
 ---
 name: I_INSPPLANMATLASSGMTVERSTP_2
-description: Inspplanmatlassgmtverstp 2
+description: "Inspplanmatlassgmtverstp 2"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

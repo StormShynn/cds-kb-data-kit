@@ -1,6 +1,6 @@
 ---
 name: I_JVACARRIEDINTERESTTP
-description: Jvacarriedinteresttp
+description: "Jvacarriedinteresttp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

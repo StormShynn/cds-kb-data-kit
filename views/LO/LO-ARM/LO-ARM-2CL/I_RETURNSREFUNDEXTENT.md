@@ -1,6 +1,6 @@
 ---
 name: I_RETURNSREFUNDEXTENT
-description: Returnsrefundextent
+description: "Returnsrefundextent"
 app_component: LO-ARM-2CL
 software_component: SAPSCORE
 release_state: released

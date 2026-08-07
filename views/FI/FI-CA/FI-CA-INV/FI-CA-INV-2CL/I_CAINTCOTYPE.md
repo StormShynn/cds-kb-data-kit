@@ -1,6 +1,6 @@
 ---
 name: I_CAINTCOTYPE
-description: Caintcotype
+description: "Caintcotype"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

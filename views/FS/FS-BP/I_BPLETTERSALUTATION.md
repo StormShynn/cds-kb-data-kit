@@ -1,6 +1,6 @@
 ---
 name: I_BPLETTERSALUTATION
-description: Bplettersalutation
+description: "Bplettersalutation"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

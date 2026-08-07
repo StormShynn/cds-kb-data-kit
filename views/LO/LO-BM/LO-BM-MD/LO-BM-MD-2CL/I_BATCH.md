@@ -1,6 +1,6 @@
 ---
 name: I_BATCH
-description: Batch
+description: "Batch"
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

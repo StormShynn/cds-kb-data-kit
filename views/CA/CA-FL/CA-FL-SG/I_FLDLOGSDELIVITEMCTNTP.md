@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSDELIVITEMCTNTP
-description: Fldlogsdelivitemctntp
+description: "Fldlogsdelivitemctntp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

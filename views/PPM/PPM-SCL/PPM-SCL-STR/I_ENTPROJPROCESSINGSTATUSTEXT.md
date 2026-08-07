@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJPROCESSINGSTATUSTEXT
-description: Entprojprocessingstatustext
+description: "Entprojprocessingstatustext"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

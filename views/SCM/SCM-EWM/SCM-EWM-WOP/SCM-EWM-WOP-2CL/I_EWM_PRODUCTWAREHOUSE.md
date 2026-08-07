@@ -1,6 +1,6 @@
 ---
 name: I_EWM_PRODUCTWAREHOUSE
-description: Ewm Productwarehouse
+description: "Ewm Productwarehouse"
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released

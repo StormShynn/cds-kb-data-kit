@@ -1,16 +1,16 @@
 ---
 name: I_RADEFRLITEMFORDSPCRCYCUBE_2
-description: This CDS view provides the prerequisites for answering the following business questions: How much revenue is recognized this year in the document currency and display currency? How much revenue is recognized for each period in the document currency and display currency? How much revenue catch-up is calculated this year from contract changes in the document currency and display currency? What is the growth for year-over-year? What is the top 5 best business partners? What is the proportion of revenue for business units, for example, by profit centre? What is the revenue or revenue catch-up for each performance obligation or contract?
+description: "This CDS view provides the prerequisites for answering the following business questions: How much revenue is recognized this year in the document currency and display currency? How much revenue is recognized for each period in the document currency and display currency? How much revenue catch-up is calculated this year from contract changes in the document currency and display currency? What is the growth for year-over-year? What is the top 5 best business partners? What is the proportion of revenue for business units, for example, by profit centre? What is the revenue or revenue catch-up for each performance obligation or contract?"
 app_component: FI-RA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_RADEFRLITEMFORDSPCRCYCUBE_2')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: How much revenue is recognized this year in the document currency and display currency? How much revenue is recognized for each period in the document currency and display currency? How much revenue catch-up is calculated this year from contract changes in the document currency and display currency? What is the growth for year-over-year? What is the top 5 best business partners? What is the proportion of revenue for business units, for example, by profit centre? What is the revenue or revenue catch-up for each performance obligation or contract?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: How much revenue is recognized this year in the document currency and display currency? How much revenue is recognized for each period in the document currency and display currency? How much revenue catch-up is calculated this year from contract changes in the document currency and display currency? What is the growth for year-over-year? What is the top 5 best business partners? What is the proportion of revenue for business units, for example, by profit centre? What is the revenue or revenue catch-up for each performance obligation or contract?"
 keywords:
-  - Cube View: Disaggregation of Recognized Revenue
-  - Cube View: Disaggregation of Recognized Revenue
+  - "Cube View: Disaggregation of Recognized Revenue"
+  - "Cube View: Disaggregation of Recognized Revenue"
 tags:
   - FI
   - bo:companycode

@@ -1,13 +1,13 @@
 ---
 name: C_PRATAXRPTGHISTWYGRSSPRODQRY
-description: PRA Tax Reporting History WY Gross Product Query
+description: "PRA Tax Reporting History WY Gross Product Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTWYGRSSPRODQRY')/$value
-semantic_en: PRA Tax Reporting History WY Gross Product Query
+semantic_en: "PRA Tax Reporting History WY Gross Product Query"
 tags:
   - IS
   - bo:material

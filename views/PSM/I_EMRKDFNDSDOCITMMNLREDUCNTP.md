@@ -1,6 +1,6 @@
 ---
 name: I_EMRKDFNDSDOCITMMNLREDUCNTP
-description: Emrkdfndsdocitmmnlreducntp
+description: "Emrkdfndsdocitmmnlreducntp"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

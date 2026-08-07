@@ -1,6 +1,6 @@
 ---
 name: D_SUPPLIERINVOICEPOSTED
-description: D Supplier InvoicePOSTED
+description: "D Supplier InvoicePOSTED"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

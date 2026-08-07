@@ -1,28 +1,28 @@
 ---
 name: C_MAINTPLANSCHEDULEDEX_2
-description: Data Extraction for Maint Plan Schedule
+description: "Data Extraction for Maint Plan Schedule"
 app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTPLANSCHEDULEDEX_2')/$value
-semantic_en: Data Extraction for Maint Plan Schedule
-semantic_vi: Data Extraction for Maint Plan Schedule — CDS view tiêu dùng dựa trên I_MaintenancePlanSchedule.
+semantic_en: "Data Extraction for Maint Plan Schedule"
+semantic_vi: "Data Extraction for Maint Plan Schedule — CDS view tiêu dùng dựa trên I_MaintenancePlanSchedule."
 keywords:
-  - data
-  - extraction
-  - for
-  - maint
-  - plan
-  - schedule
-  - maintenance
-  - call
-  - number
-  - package
-  - scheduling
-  - type
-  - status
+  - "data"
+  - "extraction"
+  - "for"
+  - "maint"
+  - "plan"
+  - "schedule"
+  - "maintenance"
+  - "call"
+  - "number"
+  - "package"
+  - "scheduling"
+  - "type"
+  - "status"
 tags:
   - PM
   - component:PM-PRM-MP-2CL

@@ -1,28 +1,28 @@
 ---
 name: I_ARJRNLENTRITMAGINGGRID
-description: This CDS view provides you with an overview of the receivables of the accounts receivable in an aging grid. The search result provides an aggregated view of the receivables per net due interval of the aging grid and account (company code and customer) as well as showing the receivables items. This CDS view provides you with the information that you need to answer the following business questions: How high are the overall total receivables? Which customers have total receivables? What are the receivables items for a customer?
+description: "This CDS view provides you with an overview of the receivables of the accounts receivable in an aging grid. The search result provides an aggregated view of the receivables per net due interval of the aging grid and account (company code and customer) as well as showing the receivables items. This CDS view provides you with the information that you need to answer the following business questions: How high are the overall total receivables? Which customers have total receivables? What are the receivables items for a customer?"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARJRNLENTRITMAGINGGRID')/$value
-semantic_en: This CDS view provides you with an overview of the receivables of the accounts receivable in an aging grid. The search result provides an aggregated view of the receivables per net due interval of the aging grid and account (company code and customer) as well as showing the receivables items. This CDS view provides you with the information that you need to answer the following business questions: How high are the overall total receivables? Which customers have total receivables? What are the receivables items for a customer?
-semantic_vi: Aging Grid of Accounts Receivables — CDS view giao diện dựa trên P_ARJrnlEntrItmAgingGrid4.
+semantic_en: "This CDS view provides you with an overview of the receivables of the accounts receivable in an aging grid. The search result provides an aggregated view of the receivables per net due interval of the aging grid and account (company code and customer) as well as showing the receivables items. This CDS view provides you with the information that you need to answer the following business questions: How high are the overall total receivables? Which customers have total receivables? What are the receivables items for a customer?"
+semantic_vi: "Aging Grid of Accounts Receivables — CDS view giao diện dựa trên P_ARJrnlEntrItmAgingGrid4."
 keywords:
-  - aging
-  - grid
-  - accounts
-  - receivables
-  - company
-  - code
-  - fiscal
-  - year
-  - accounting
-  - document
-  - ledger
-  - line
-  - item
+  - "aging"
+  - "grid"
+  - "accounts"
+  - "receivables"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
+  - "ledger"
+  - "line"
+  - "item"
 tags:
   - FI
   - account

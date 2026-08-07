@@ -1,6 +1,6 @@
 ---
 name: I_FISCALYEARWEEKFORVARIANT
-description: Fiscalyearweekforvariant
+description: "Fiscalyearweekforvariant"
 app_component: CA-GTF-GL-CAL
 software_component: SAP_BASIS
 release_state: released

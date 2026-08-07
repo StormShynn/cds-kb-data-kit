@@ -1,6 +1,6 @@
 ---
 name: I_ITEMBILLINGINCOMPLETIONSTST
-description: Itembillingincompletionstst
+description: "Itembillingincompletionstst"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

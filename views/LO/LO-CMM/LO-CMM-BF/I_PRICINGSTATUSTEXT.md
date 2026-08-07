@@ -1,13 +1,13 @@
 ---
 name: I_PRICINGSTATUSTEXT
-description: Pricing Status - Text
+description: "Pricing Status - Text"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRICINGSTATUSTEXT')/$value
-semantic_en: Pricing Status - Text
+semantic_en: "Pricing Status - Text"
 tags:
   - LO
   - bo:pricingcondition

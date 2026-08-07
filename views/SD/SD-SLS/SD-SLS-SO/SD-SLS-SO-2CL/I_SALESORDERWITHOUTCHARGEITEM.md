@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERWITHOUTCHARGEITEM
-description: Sales OrderWITHOUTCHARGEITEM
+description: "Sales OrderWITHOUTCHARGEITEM"
 app_component: SD-SLS-SO-2CL
 software_component: SAPSCORE
 release_state: released

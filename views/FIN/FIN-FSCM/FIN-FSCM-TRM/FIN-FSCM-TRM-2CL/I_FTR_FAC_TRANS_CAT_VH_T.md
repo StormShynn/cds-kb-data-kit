@@ -1,13 +1,13 @@
 ---
 name: I_FTR_FAC_TRANS_CAT_VH_T
-description: Facility Transaction Category - Text
+description: "Facility Transaction Category - Text"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FTR_FAC_TRANS_CAT_VH_T')/$value
-semantic_en: Facility Transaction Category - Text
+semantic_en: "Facility Transaction Category - Text"
 tags:
   - FIN
   - component:FIN-FSCM-TRM-2CL

@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTER
-description: Work Center
+description: "Work Center"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

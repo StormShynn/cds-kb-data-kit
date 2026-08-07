@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLREQFORQTANSCHEDULELINE
-description: CNTRLREQFORQTANSchedule Line
+description: "CNTRLREQFORQTANSchedule Line"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

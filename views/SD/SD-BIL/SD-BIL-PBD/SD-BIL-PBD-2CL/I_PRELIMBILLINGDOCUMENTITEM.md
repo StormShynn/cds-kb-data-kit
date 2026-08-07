@@ -1,6 +1,6 @@
 ---
 name: I_PRELIMBILLINGDOCUMENTITEM
-description: PRELIMBilling DocumentUMENTITEM
+description: "PRELIMBilling DocumentUMENTITEM"
 app_component: SD-BIL-PBD-2CL
 software_component: SAPSCORE
 release_state: released

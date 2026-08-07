@@ -1,6 +1,6 @@
 ---
 name: I_BPLEGALENTITY
-description: Bplegalentity
+description: "Bplegalentity"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

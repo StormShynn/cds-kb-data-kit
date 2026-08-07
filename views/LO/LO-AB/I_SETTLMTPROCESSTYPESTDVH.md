@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTPROCESSTYPESTDVH
-description: Settlmtprocesstypestdvh
+description: "Settlmtprocesstypestdvh"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

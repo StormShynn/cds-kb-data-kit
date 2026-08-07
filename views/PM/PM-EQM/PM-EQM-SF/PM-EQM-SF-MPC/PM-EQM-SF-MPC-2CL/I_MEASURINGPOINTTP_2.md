@@ -1,6 +1,6 @@
 ---
 name: I_MEASURINGPOINTTP_2
-description: Measuringpointtp 2
+description: "Measuringpointtp 2"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released

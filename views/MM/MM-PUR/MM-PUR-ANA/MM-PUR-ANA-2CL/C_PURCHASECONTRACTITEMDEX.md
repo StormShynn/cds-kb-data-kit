@@ -1,6 +1,6 @@
 ---
 name: C_PURCHASECONTRACTITEMDEX
-description: Purchase ContractITEMDEX
+description: "Purchase ContractITEMDEX"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

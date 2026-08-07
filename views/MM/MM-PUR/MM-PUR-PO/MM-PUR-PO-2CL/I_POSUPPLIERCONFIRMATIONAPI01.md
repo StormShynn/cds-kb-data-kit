@@ -1,6 +1,6 @@
 ---
 name: I_POSUPPLIERCONFIRMATIONAPI01
-description: Posupplierconfirmationapi 01
+description: "Posupplierconfirmationapi 01"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_STANDARDPROJECT_2
-description: Standard Project Details
+description: "Standard Project Details"
 app_component: PS-ST
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STANDARDPROJECT_2')/$value
-semantic_en: Standard Project Details
+semantic_en: "Standard Project Details"
 tags:
   - PS
   - bo:project

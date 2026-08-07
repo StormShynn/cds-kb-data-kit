@@ -1,6 +1,6 @@
 ---
 name: I_QLTYPROCMTCERTTP_2
-description: Qltyprocmtcerttp 2
+description: "Qltyprocmtcerttp 2"
 app_component: QM-CA-2CL
 software_component: SAPSCORE
 release_state: released

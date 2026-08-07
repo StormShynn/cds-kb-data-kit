@@ -1,6 +1,6 @@
 ---
 name: I_PROJDMNDSOURCEOFSUPPLYTEXT
-description: Projdmndsourceofsupplytext
+description: "Projdmndsourceofsupplytext"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SUPLREVALSCCRDSECTIONAPI01
-description: Suplrevalsccrdsectionapi 01
+description: "Suplrevalsccrdsectionapi 01"
 app_component: SLC-EVL
 software_component: SAPSCORE
 release_state: released

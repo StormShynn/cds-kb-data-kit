@@ -1,6 +1,6 @@
 ---
 name: I_FRTUNITITEMSERIALNUMBERTP
-description: FRTUNITITEMSerial NumberTP
+description: "FRTUNITITEMSerial NumberTP"
 app_component: TM-PLN-FU-2CL
 software_component: SAPSCORE
 release_state: released

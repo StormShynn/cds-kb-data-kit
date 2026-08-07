@@ -1,20 +1,20 @@
 ---
 name: ZTESTK_CDS14.DDLS
-description: CDSVIEW14
+description: "CDSVIEW14"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/MK-MOMO/momo-public/blob/ff8ce512775cce08de1a25b980223bad08cc608a/src/ztestk_cds14.ddls.asddls
-semantic_en: CDSVIEW14 — CDS view based on vbak.
-semantic_vi: CDSVIEW14 — CDS view dựa trên vbak.
+semantic_en: "CDSVIEW14 — CDS view based on vbak."
+semantic_vi: "CDSVIEW14 — CDS view dựa trên vbak."
 keywords:
-  - cdsview14
-  - vbeln
-  - posnr
-  - kunnr
-  - matnr
+  - "cdsview14"
+  - "vbeln"
+  - "posnr"
+  - "kunnr"
+  - "matnr"
 tags:
   - bo:salesorder
 ---

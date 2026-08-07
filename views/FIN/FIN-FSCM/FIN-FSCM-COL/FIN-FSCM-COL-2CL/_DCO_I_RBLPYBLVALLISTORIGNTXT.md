@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_RBLPYBLVALLISTORIGNTXT
-description: Value List Origin - Text
+description: "Value List Origin - Text"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_RBLPYBLVALLISTORIGNTXT')/$value
-semantic_en: Value List Origin - Text
+semantic_en: "Value List Origin - Text"
 tags:
   - FIN
   - component:FIN-FSCM-COL-2CL

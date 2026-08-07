@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSSHPTSTGEASSGPACKGGTP
-description: Fldlogsshptstgeassgpackggtp
+description: "Fldlogsshptstgeassgpackggtp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

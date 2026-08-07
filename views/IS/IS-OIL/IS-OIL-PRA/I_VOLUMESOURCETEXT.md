@@ -1,13 +1,13 @@
 ---
 name: I_VOLUMESOURCETEXT
-description: Volume Source - Text
+description: "Volume Source - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VOLUMESOURCETEXT')/$value
-semantic_en: Volume Source - Text
+semantic_en: "Volume Source - Text"
 tags:
   - IS
   - bo:salesorder

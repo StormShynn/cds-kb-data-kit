@@ -1,6 +1,6 @@
 ---
 name: I_WRNTYCLAIMITEMTYPECATALOGTXT
-description: Wrntyclaimitemtypecatalogtxt
+description: "Wrntyclaimitemtypecatalogtxt"
 app_component: LO-WTY-FIO
 software_component: SAPSCORE
 release_state: released

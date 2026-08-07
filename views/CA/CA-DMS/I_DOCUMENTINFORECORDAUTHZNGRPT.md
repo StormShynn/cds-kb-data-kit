@@ -1,6 +1,6 @@
 ---
 name: I_DOCUMENTINFORECORDAUTHZNGRPT
-description: Documentinforecordauthzngrpt
+description: "Documentinforecordauthzngrpt"
 app_component: CA-DMS
 software_component: SAPSCORE
 release_state: released

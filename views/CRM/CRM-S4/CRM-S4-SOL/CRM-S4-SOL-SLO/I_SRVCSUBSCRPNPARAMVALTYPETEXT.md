@@ -1,13 +1,13 @@
 ---
 name: I_SRVCSUBSCRPNPARAMVALTYPETEXT
-description: Subscription Billg Paramtr type - Text
+description: "Subscription Billg Paramtr type - Text"
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCSUBSCRPNPARAMVALTYPETEXT')/$value
-semantic_en: Subscription Billg Paramtr type - Text
+semantic_en: "Subscription Billg Paramtr type - Text"
 tags:
   - CRM
   - component:CRM-S4-SOL-SLO

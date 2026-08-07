@@ -1,6 +1,6 @@
 ---
 name: D_ENTERPRISEPROJECTCREATED
-description: D Enterpriseprojectcreated
+description: "D Enterpriseprojectcreated"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

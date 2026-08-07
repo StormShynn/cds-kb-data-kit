@@ -1,23 +1,23 @@
 ---
 name: C_CUSTSETTLMTDEX
-description: Customer Settlement Extraction
+description: "Customer Settlement Extraction"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTSETTLMTDEX')/$value
-semantic_en: Customer Settlement Extraction
-semantic_vi: Customer Settlement Extraction — CDS view tiêu dùng dựa trên R_CustSettlmtDEX.
+semantic_en: "Customer Settlement Extraction"
+semantic_vi: "Customer Settlement Extraction — CDS view tiêu dùng dựa trên R_CustSettlmtDEX."
 keywords:
-  - customer
-  - settlement
-  - extraction
-  - cust
-  - settlmt
-  - item
-  - type
-  - process
+  - "customer"
+  - "settlement"
+  - "extraction"
+  - "cust"
+  - "settlmt"
+  - "item"
+  - "type"
+  - "process"
 tags:
   - LO
   - bo:businesspartner

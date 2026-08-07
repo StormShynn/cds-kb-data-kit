@@ -1,6 +1,6 @@
 ---
 name: D_SALESDOCITEMCRTEWITHREFITEMP
-description: D Salesdocitemcrtewithrefitemp
+description: "D Salesdocitemcrtewithrefitemp"
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

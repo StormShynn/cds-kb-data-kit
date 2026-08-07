@@ -1,13 +1,13 @@
 ---
 name: C_CMMDTYMTMFINENDOFDAYQRY
-description: Derivative MTM End-Of-Day Query
+description: "Derivative MTM End-Of-Day Query"
 app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMFINENDOFDAYQRY')/$value
-semantic_en: Derivative MTM End-Of-Day Query
+semantic_en: "Derivative MTM End-Of-Day Query"
 tags:
   - FIN
   - bo:companycode

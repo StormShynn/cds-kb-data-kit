@@ -1,6 +1,6 @@
 ---
 name: I_GHGENERGYSOURCINGTYPEVH
-description: Ghgenergysourcingtypevh
+description: "Ghgenergysourcingtypevh"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

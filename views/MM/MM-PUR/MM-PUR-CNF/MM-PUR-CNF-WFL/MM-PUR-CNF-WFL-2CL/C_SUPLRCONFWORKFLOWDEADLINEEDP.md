@@ -1,6 +1,6 @@
 ---
 name: C_SUPLRCONFWORKFLOWDEADLINEEDP
-description: Suplrconfworkflowdeadlineedp
+description: "Suplrconfworkflowdeadlineedp"
 app_component: MM-PUR-CNF-WFL-2CL
 software_component: SAPSCORE
 release_state: released

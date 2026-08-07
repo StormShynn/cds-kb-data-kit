@@ -1,27 +1,27 @@
 ---
 name: I_ARUNANLYTSOPENDELIVCUBE
-description: Open Deliveries - Cube
+description: "Open Deliveries - Cube"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSOPENDELIVCUBE')/$value
-semantic_en: Open Deliveries - Cube
-semantic_vi: Open Deliveries - Cube — CDS view tổng hợp dựa trên I_SupDmndOpenDelivCube.
+semantic_en: "Open Deliveries - Cube"
+semantic_vi: "Open Deliveries - Cube — CDS view tổng hợp dựa trên I_SupDmndOpenDelivCube."
 keywords:
-  - open
-  - deliveries
-  - cube
-  - delivery
-  - document
-  - item
-  - requirement
-  - type
-  - sales
-  - district
-  - shipping
-  - point
+  - "open"
+  - "deliveries"
+  - "cube"
+  - "delivery"
+  - "document"
+  - "item"
+  - "requirement"
+  - "type"
+  - "sales"
+  - "district"
+  - "shipping"
+  - "point"
 tags:
   - LO
   - bo:salesorder

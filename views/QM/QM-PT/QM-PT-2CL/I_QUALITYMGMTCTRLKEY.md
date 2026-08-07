@@ -1,6 +1,6 @@
 ---
 name: I_QUALITYMGMTCTRLKEY
-description: Qualitymgmtctrlkey
+description: "Qualitymgmtctrlkey"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

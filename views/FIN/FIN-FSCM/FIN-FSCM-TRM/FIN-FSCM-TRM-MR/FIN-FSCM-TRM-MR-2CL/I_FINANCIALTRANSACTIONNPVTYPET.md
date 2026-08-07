@@ -1,6 +1,6 @@
 ---
 name: I_FINANCIALTRANSACTIONNPVTYPET
-description: Financialtransactionnpvtypet
+description: "Financialtransactionnpvtypet"
 app_component: FIN-FSCM-TRM-MR-2CL
 software_component: SAPSCORE
 release_state: released

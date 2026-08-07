@@ -1,6 +1,6 @@
 ---
 name: I_SDSCHEDULELINEWTHOPENRQMTQTY
-description: SDSchedule LineWTHOPENRQMTQTY
+description: "SDSchedule LineWTHOPENRQMTQTY"
 app_component: CA-ATP-2CL
 software_component: SAPSCORE
 release_state: released

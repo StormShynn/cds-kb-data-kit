@@ -1,27 +1,27 @@
 ---
 name: C_PURCHASEORDERWORKFLOWEMAIL
-description: Purchase Order Details for Workflow Deadline Email
+description: "Purchase Order Details for Workflow Deadline Email"
 software_component: SAPSCORE
 release_state: released
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
-semantic_en: Purchase Order Details for Workflow Deadline Email — Consumption CDS view based on I_WorkflowTask.
-semantic_vi: Purchase Order Details for Workflow Deadline Email — CDS view tiêu dùng dựa trên I_WorkflowTask.
+semantic_en: "Purchase Order Details for Workflow Deadline Email — Consumption CDS view based on I_WorkflowTask."
+semantic_vi: "Purchase Order Details for Workflow Deadline Email — CDS view tiêu dùng dựa trên I_WorkflowTask."
 keywords:
-  - purchase
-  - order
-  - details
-  - for
-  - workflow
-  - deadline
-  - email
-  - workflowtask
-  - amount
-  - wrkflw
-  - creation
-  - time
-  - task
+  - "purchase"
+  - "order"
+  - "details"
+  - "for"
+  - "workflow"
+  - "deadline"
+  - "email"
+  - "workflowtask"
+  - "amount"
+  - "wrkflw"
+  - "creation"
+  - "time"
+  - "task"
 tags:
   - LO
   - component:LO

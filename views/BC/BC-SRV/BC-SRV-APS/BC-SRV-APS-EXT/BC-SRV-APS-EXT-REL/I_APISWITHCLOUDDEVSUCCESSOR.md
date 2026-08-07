@@ -1,6 +1,6 @@
 ---
 name: I_APISWITHCLOUDDEVSUCCESSOR
-description: Apiswithclouddevsuccessor
+description: "Apiswithclouddevsuccessor"
 app_component: BC-SRV-APS-EXT-REL
 software_component: SAP_BASIS
 release_state: released

@@ -1,25 +1,25 @@
 ---
 name: I_BANKCHAINITEM
-description: Intermediary bank for Bank Chain
+description: "Intermediary bank for Bank Chain"
 app_component: FI-BL-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKCHAINITEM')/$value
-semantic_en: Intermediary bank for Bank Chain
-semantic_vi: Intermediary bank for Bank Chain — CDS view giao diện dựa trên tbchain21.
+semantic_en: "Intermediary bank for Bank Chain"
+semantic_vi: "Intermediary bank for Bank Chain — CDS view giao diện dựa trên tbchain21."
 keywords:
-  - intermediary
-  - bank
-  - for
-  - chain
-  - country
-  - recipient
-  - acct
-  - number
-  - currency
-  - sender
+  - "intermediary"
+  - "bank"
+  - "for"
+  - "chain"
+  - "country"
+  - "recipient"
+  - "acct"
+  - "number"
+  - "currency"
+  - "sender"
 tags:
   - FI
   - component:FI-BL-MD-2CL

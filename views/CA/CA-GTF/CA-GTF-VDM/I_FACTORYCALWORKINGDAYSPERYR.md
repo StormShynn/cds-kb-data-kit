@@ -1,13 +1,13 @@
 ---
 name: I_FACTORYCALWORKINGDAYSPERYR
-description: Factory Calendar Working Days Per Year
+description: "Factory Calendar Working Days Per Year"
 app_component: CA-GTF-VDM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FACTORYCALWORKINGDAYSPERYR')/$value
-semantic_en: Factory Calendar Working Days Per Year
+semantic_en: "Factory Calendar Working Days Per Year"
 tags:
   - CA
   - bo:plant

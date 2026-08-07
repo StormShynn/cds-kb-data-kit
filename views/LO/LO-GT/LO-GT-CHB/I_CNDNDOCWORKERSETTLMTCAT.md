@@ -1,13 +1,13 @@
 ---
 name: I_CNDNDOCWORKERSETTLMTCAT
-description: Cndn Document Worker Settlement Category
+description: "Cndn Document Worker Settlement Category"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCWORKERSETTLMTCAT')/$value
-semantic_en: Cndn Document Worker Settlement Category
+semantic_en: "Cndn Document Worker Settlement Category"
 tags:
   - LO
   - component:LO-GT-CHB

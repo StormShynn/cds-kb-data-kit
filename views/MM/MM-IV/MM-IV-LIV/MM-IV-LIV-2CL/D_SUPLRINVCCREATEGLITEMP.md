@@ -1,6 +1,6 @@
 ---
 name: D_SUPLRINVCCREATEGLITEMP
-description: D Suplrinvccreateglitemp
+description: "D Suplrinvccreateglitemp"
 app_component: MM-IV-LIV-2CL
 software_component: SAPSCORE
 release_state: released

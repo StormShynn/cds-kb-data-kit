@@ -1,27 +1,27 @@
 ---
 name: C_SALESCONTRACTITMFLFMTQ
-description: This CDS view provides sales contract fulfillment rates by various dimensions such as sales organization, customer, product, and employee responsible. It provides the prerequisites for answering the following business questions: To what extent are my contracts being fulfilled? Which contracts will expire soon? What are my top 10 contracts by target value?
+description: "This CDS view provides sales contract fulfillment rates by various dimensions such as sales organization, customer, product, and employee responsible. It provides the prerequisites for answering the following business questions: To what extent are my contracts being fulfilled? Which contracts will expire soon? What are my top 10 contracts by target value?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESCONTRACTITMFLFMTQ')/$value
-semantic_en: This CDS view provides sales contract fulfillment rates by various dimensions such as sales organization, customer, product, and employee responsible. It provides the prerequisites for answering the following business questions: To what extent are my contracts being fulfilled? Which contracts will expire soon? What are my top 10 contracts by target value?
-semantic_vi: Sales Contract Fulfillment Rate - Query — CDS view tiêu dùng dựa trên I_SalesContractItemFlfmtCube.
+semantic_en: "This CDS view provides sales contract fulfillment rates by various dimensions such as sales organization, customer, product, and employee responsible. It provides the prerequisites for answering the following business questions: To what extent are my contracts being fulfilled? Which contracts will expire soon? What are my top 10 contracts by target value?"
+semantic_vi: "Sales Contract Fulfillment Rate - Query — CDS view tiêu dùng dựa trên I_SalesContractItemFlfmtCube."
 keywords:
-  - Sales Contract Fulfillment Rate - Query
-  - sales
-  - contract
-  - fulfillment
-  - rate
-  - query
-  - item
-  - organization
-  - partner
-  - company
-  - sold
-  - party
+  - "Sales Contract Fulfillment Rate - Query"
+  - "sales"
+  - "contract"
+  - "fulfillment"
+  - "rate"
+  - "query"
+  - "item"
+  - "organization"
+  - "partner"
+  - "company"
+  - "sold"
+  - "party"
 tags:
   - SD
   - bo:businesspartner

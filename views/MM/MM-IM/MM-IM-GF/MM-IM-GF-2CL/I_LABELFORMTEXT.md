@@ -1,13 +1,13 @@
 ---
 name: I_LABELFORMTEXT
-description: Label Form - Text
+description: "Label Form - Text"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LABELFORMTEXT')/$value
-semantic_en: Label Form - Text
+semantic_en: "Label Form - Text"
 tags:
   - MM
   - component:MM-IM-GF-2CL

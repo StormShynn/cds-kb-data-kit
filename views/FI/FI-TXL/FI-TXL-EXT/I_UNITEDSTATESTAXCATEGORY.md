@@ -1,6 +1,6 @@
 ---
 name: I_UNITEDSTATESTAXCATEGORY
-description: Unitedstatestaxcategory
+description: "Unitedstatestaxcategory"
 app_component: FI-TXL-EXT
 software_component: SAPSCORE
 release_state: released

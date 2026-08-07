@@ -1,6 +1,6 @@
 ---
 name: I_SALESORDERWITHOUTCHRGTEXTTP
-description: Sales OrderWITHOUTCHRGTEXTTP
+description: "Sales OrderWITHOUTCHRGTEXTTP"
 app_component: SD-SLS-SO-RAP-2CL
 software_component: SAPSCORE
 release_state: released

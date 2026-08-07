@@ -1,6 +1,6 @@
 ---
 name: I_FISCALPERIODRAWDATA
-description: Fiscalperiodrawdata
+description: "Fiscalperiodrawdata"
 app_component: BC-SRV-ASF-FYV-2CL
 software_component: SAP_BASIS
 release_state: released

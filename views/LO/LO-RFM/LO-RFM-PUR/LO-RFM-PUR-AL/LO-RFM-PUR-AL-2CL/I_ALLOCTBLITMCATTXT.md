@@ -1,23 +1,23 @@
 ---
 name: I_ALLOCTBLITMCATTXT
-description: Item Category - Text
+description: "Item Category - Text"
 app_component: LO-RFM-PUR-AL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ALLOCTBLITMCATTXT')/$value
-semantic_en: Item Category - Text
-semantic_vi: Item Category - Text — CDS view giao diện dựa trên t621t.
+semantic_en: "Item Category - Text"
+semantic_vi: "Item Category - Text — CDS view giao diện dựa trên t621t."
 keywords:
-  - item
-  - category
-  - text
-  - alloc
-  - table
-  - name
-  - language
-  - desc
+  - "item"
+  - "category"
+  - "text"
+  - "alloc"
+  - "table"
+  - "name"
+  - "language"
+  - "desc"
 tags:
   - LO
   - component:LO-RFM-PUR-AL-2CL

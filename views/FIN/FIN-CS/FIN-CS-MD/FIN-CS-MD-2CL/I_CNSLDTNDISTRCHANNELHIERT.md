@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNDISTRCHANNELHIERT
-description: Cnsldtndistrchannelhiert
+description: "Cnsldtndistrchannelhiert"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

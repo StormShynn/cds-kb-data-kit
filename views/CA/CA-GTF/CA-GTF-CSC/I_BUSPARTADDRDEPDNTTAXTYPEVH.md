@@ -1,6 +1,6 @@
 ---
 name: I_BUSPARTADDRDEPDNTTAXTYPEVH
-description: Business PartnerADDRDEPDNTTAXTYPEVH
+description: "Business PartnerADDRDEPDNTTAXTYPEVH"
 app_component: CA-GTF-CSC
 software_component: SAP_BASIS
 release_state: released

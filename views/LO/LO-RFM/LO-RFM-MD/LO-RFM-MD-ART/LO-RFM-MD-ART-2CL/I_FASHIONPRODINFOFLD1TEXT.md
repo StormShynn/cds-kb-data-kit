@@ -1,13 +1,13 @@
 ---
 name: I_FASHIONPRODINFOFLD1TEXT
-description: Fashion Product Information 1 - Text
+description: "Fashion Product Information 1 - Text"
 app_component: LO-RFM-MD-ART-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FASHIONPRODINFOFLD1TEXT')/$value
-semantic_en: Fashion Product Information 1 - Text
+semantic_en: "Fashion Product Information 1 - Text"
 tags:
   - LO
   - bo:material

@@ -1,13 +1,13 @@
 ---
 name: I_MATCHINGREASONCODETEXT
-description: Matching Reason Code - Text
+description: "Matching Reason Code - Text"
 app_component: FIN-CS-ICR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATCHINGREASONCODETEXT')/$value
-semantic_en: Matching Reason Code - Text
+semantic_en: "Matching Reason Code - Text"
 tags:
   - FIN
   - bo:salesorder

@@ -1,23 +1,23 @@
 ---
 name: ZI_CONNECTION_TECH_R
-description: Connection View CDS Data Model
+description: "Connection View CDS Data Model"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/ramniwas04/READ-ONLY-RAP-Application/blob/60c0f5918a70647bcce80eddb9f1f739f801f587/zi_connection_tech_r.asddls
-semantic_en: Connection View CDS Data Model — CDS view.
-semantic_vi: Connection View CDS Data Model — CDS view dựa trên Connection View CDS Data Model.
+semantic_en: "Connection View CDS Data Model — CDS view."
+semantic_vi: "Connection View CDS Data Model — CDS view dựa trên Connection View CDS Data Model."
 keywords:
-  - connection
-  - data
-  - model
-  - carrier_id
-  - connection_id
-  - airport
-  - departure
-  - time
+  - "connection"
+  - "data"
+  - "model"
+  - "carrier_id"
+  - "connection_id"
+  - "airport"
+  - "departure"
+  - "time"
 tags:
   - CO
   - component:CO

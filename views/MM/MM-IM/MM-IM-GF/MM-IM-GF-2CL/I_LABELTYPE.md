@@ -1,6 +1,6 @@
 ---
 name: I_LABELTYPE
-description: Labeltype
+description: "Labeltype"
 app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released

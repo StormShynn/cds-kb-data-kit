@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLSUPLRQTNITEMDISTRTP_2
-description: Cntrlsuplrqtnitemdistrtp 2
+description: "Cntrlsuplrqtnitemdistrtp 2"
 app_component: MM-PUR-HUB-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

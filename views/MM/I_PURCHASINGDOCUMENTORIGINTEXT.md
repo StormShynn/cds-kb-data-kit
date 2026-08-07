@@ -1,6 +1,6 @@
 ---
 name: I_PURCHASINGDOCUMENTORIGINTEXT
-description: Purchasingdocumentorigintext
+description: "Purchasingdocumentorigintext"
 app_component: MM
 software_component: SAPSCORE
 release_state: released

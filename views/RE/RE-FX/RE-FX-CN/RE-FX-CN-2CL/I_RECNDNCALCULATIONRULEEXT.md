@@ -1,6 +1,6 @@
 ---
 name: I_RECNDNCALCULATIONRULEEXT
-description: Recndncalculationruleext
+description: "Recndncalculationruleext"
 app_component: RE-FX-CN-2CL
 software_component: SAPSCORE
 release_state: released

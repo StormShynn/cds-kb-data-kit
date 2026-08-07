@@ -1,6 +1,6 @@
 ---
 name: I_INSPLOTSERIALNUMBERTP_2
-description: INSPLOTSerial NumberTP 2
+description: "INSPLOTSerial NumberTP 2"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

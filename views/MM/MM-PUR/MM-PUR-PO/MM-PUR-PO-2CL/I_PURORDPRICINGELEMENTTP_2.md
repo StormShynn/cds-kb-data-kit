@@ -1,6 +1,6 @@
 ---
 name: I_PURORDPRICINGELEMENTTP_2
-description: Purordpricingelementtp 2
+description: "Purordpricingelementtp 2"
 app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released

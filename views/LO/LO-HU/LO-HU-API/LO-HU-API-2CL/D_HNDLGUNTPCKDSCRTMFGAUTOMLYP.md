@@ -1,6 +1,6 @@
 ---
 name: D_HNDLGUNTPCKDSCRTMFGAUTOMLYP
-description: D Hndlguntpckdscrtmfgautomlyp
+description: "D Hndlguntpckdscrtmfgautomlyp"
 app_component: LO-HU-API-2CL
 software_component: SAPSCORE
 release_state: released

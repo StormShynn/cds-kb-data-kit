@@ -1,13 +1,13 @@
 ---
 name: I_INHREPAIRTRANSACTIONRELATION
-description: Relationship between Srvc Transactions
+description: "Relationship between Srvc Transactions"
 app_component: CRM-S4-IHR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INHREPAIRTRANSACTIONRELATION')/$value
-semantic_en: Relationship between Srvc Transactions
+semantic_en: "Relationship between Srvc Transactions"
 tags:
   - CRM
   - component:CRM-S4-IHR-2CL

@@ -1,24 +1,24 @@
 ---
 name: ZBS_STARTUP.DDLS
-description: Table for StartUp
+description: "Table for StartUp"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Xexer/abap-table-entities-example/blob/946ffa4a7318671b9419aca6dabec4c6c063a1b5/src/zbs_startup.ddls.asddls
-semantic_en: Table for StartUp — CDS view.
-semantic_vi: Table for StartUp — CDS view dựa trên Table for StartUp.
+semantic_en: "Table for StartUp — CDS view."
+semantic_vi: "Table for StartUp — CDS view dựa trên Table for StartUp."
 keywords:
-  - table
-  - for
-  - startup
-  - start
-  - name
-  - description
-  - company
-  - register
-  - rating
+  - "table"
+  - "for"
+  - "startup"
+  - "start"
+  - "name"
+  - "description"
+  - "company"
+  - "register"
+  - "rating"
 tags:
   - LE
   - component:LE

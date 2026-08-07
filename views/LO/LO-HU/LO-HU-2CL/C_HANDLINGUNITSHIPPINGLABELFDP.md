@@ -1,29 +1,29 @@
 ---
 name: C_HANDLINGUNITSHIPPINGLABELFDP
-description: This CDS view represents a form data provider for output management. The CDS view provides data that can be used for the handling unit shipping label. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view represents a form data provider for output management. The CDS view provides data that can be used for the handling unit shipping label. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: LO-HU-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_HANDLINGUNITSHIPPINGLABELFDP')/$value
-semantic_en: This CDS view represents a form data provider for output management. The CDS view provides data that can be used for the handling unit shipping label. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Form Data Provider HU Shippping Label — CDS view tiêu dùng dựa trên I_HandlingUnitShippingLabelFDP.
+semantic_en: "This CDS view represents a form data provider for output management. The CDS view provides data that can be used for the handling unit shipping label. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Form Data Provider HU Shippping Label — CDS view tiêu dùng dựa trên I_HandlingUnitShippingLabelFDP."
 keywords:
-  - Form Data Provider Handling Units
-  - form
-  - data
-  - provider
-  - shippping
-  - label
-  - handling
-  - unit
-  - number
-  - warehouse
-  - packaging
-  - material
-  - tare
-  - weight
+  - "Form Data Provider Handling Units"
+  - "form"
+  - "data"
+  - "provider"
+  - "shippping"
+  - "label"
+  - "handling"
+  - "unit"
+  - "number"
+  - "warehouse"
+  - "packaging"
+  - "material"
+  - "tare"
+  - "weight"
 tags:
   - LO
   - bo:companycode

@@ -1,6 +1,6 @@
 ---
 name: D_FREIGHTORDERCREATEFORPICKUPP
-description: D Freightordercreateforpickupp
+description: "D Freightordercreateforpickupp"
 app_component: TM-FRM-2CL
 software_component: SAPSCORE
 release_state: released

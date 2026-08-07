@@ -1,23 +1,23 @@
 ---
 name: ZZ_R_MRC.DDLS
-description: Root View For MRC
+description: "Root View For MRC"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/dvontress73/zmrc/blob/261a59dbe6a48b0d58d235f1284f5505aa3bc105/src/zz_r_mrc.ddls.asddls
-semantic_en: Root View For MRC — CDS view based on zzmrc.
-semantic_vi: Root View For MRC — CDS view dựa trên zzmrc.
+semantic_en: "Root View For MRC — CDS view based on zzmrc."
+semantic_vi: "Root View For MRC — CDS view dựa trên zzmrc."
 keywords:
-  - root
-  - for
-  - mrc
-  - code
-  - description
-  - long
-  - multiple
-  - iterations
+  - "root"
+  - "for"
+  - "mrc"
+  - "code"
+  - "description"
+  - "long"
+  - "multiple"
+  - "iterations"
 ---
 # ZZ_R_MRC.DDLS
 

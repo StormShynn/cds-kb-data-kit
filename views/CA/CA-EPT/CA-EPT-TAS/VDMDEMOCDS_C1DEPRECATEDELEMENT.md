@@ -1,6 +1,6 @@
 ---
 name: VDMDEMOCDS_C1DEPRECATEDELEMENT
-description: Vdmdemocds C 1DEPRECATEDELEMENT
+description: "Vdmdemocds C 1DEPRECATEDELEMENT"
 app_component: CA-EPT-TAS
 software_component: SAPPCORE_H
 release_state: released

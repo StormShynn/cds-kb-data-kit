@@ -1,13 +1,13 @@
 ---
 name: I_CITREPORTVERSION
-description: CIT Report Version
+description: "CIT Report Version"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITREPORTVERSION')/$value
-semantic_en: CIT Report Version
+semantic_en: "CIT Report Version"
 tags:
   - FI
   - bo:purchaseorder

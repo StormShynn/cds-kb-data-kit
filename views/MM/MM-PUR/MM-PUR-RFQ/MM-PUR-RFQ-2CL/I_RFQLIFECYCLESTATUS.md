@@ -1,6 +1,6 @@
 ---
 name: I_RFQLIFECYCLESTATUS
-description: Rfqlifecyclestatus
+description: "Rfqlifecyclestatus"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNERADDRESSTYPE
-description: Business PartnerADDRESSTYPE
+description: "Business PartnerADDRESSTYPE"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: D_PURCHASINGINFORECORDCHANGED
-description: D Purchasinginforecordchanged
+description: "D Purchasinginforecordchanged"
 app_component: MM-PUR-VM-REC-2CL
 software_component: SAPSCORE
 release_state: released

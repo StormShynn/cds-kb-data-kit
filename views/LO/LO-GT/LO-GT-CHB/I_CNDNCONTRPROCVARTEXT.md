@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRPROCVARTEXT
-description: This CDS view retrieves information about the process variant of the condition contract.
+description: "This CDS view retrieves information about the process variant of the condition contract."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPROCVARTEXT')/$value
-semantic_en: This CDS view retrieves information about the process variant of the condition contract.
+semantic_en: "This CDS view retrieves information about the process variant of the condition contract."
 tags:
   - LO
   - component:LO-GT-CHB

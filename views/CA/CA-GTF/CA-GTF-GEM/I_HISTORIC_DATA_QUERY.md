@@ -1,6 +1,6 @@
 ---
 name: I_HISTORIC_DATA_QUERY
-description: Historic Data (Query)
+description: "Historic Data (Query)"
 app_component: CA-GTF-GEM
 software_component: INFRA_HOME
 release_state: released

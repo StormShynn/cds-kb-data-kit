@@ -1,6 +1,6 @@
 ---
 name: I_OBJVALDETNACTIVATIONSTATUS
-description: Objvaldetnactivationstatus
+description: "Objvaldetnactivationstatus"
 app_component: CA-ATP-OVD-2CL
 software_component: SAPSCORE
 release_state: released

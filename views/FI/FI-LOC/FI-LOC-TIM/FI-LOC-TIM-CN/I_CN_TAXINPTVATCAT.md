@@ -1,6 +1,6 @@
 ---
 name: I_CN_TAXINPTVATCAT
-description: CN Taxinptvatcat
+description: "CN Taxinptvatcat"
 app_component: FI-LOC-TIM-CN
 software_component: SAPSCORE
 release_state: released

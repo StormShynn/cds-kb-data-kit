@@ -1,13 +1,13 @@
 ---
 name: I_HOUSEBANKSTDVH
-description: Master data for House Bank
+description: "Master data for House Bank"
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HOUSEBANKSTDVH')/$value
-semantic_en: Master data for House Bank
+semantic_en: "Master data for House Bank"
 tags:
   - FIN
   - bo:bank

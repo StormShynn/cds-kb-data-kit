@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFCHARCGROUPALLOCTP
-description: Varcnfcharcgroupalloctp
+description: "Varcnfcharcgroupalloctp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

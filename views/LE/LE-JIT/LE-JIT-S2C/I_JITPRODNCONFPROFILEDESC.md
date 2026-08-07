@@ -1,6 +1,6 @@
 ---
 name: I_JITPRODNCONFPROFILEDESC
-description: Jitprodnconfprofiledesc
+description: "Jitprodnconfprofiledesc"
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released

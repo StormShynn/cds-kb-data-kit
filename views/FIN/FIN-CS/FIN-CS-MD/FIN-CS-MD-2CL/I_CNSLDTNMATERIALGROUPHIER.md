@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNMATERIALGROUPHIER
-description: CNSLDTNMaterial GroupHIER
+description: "CNSLDTNMaterial GroupHIER"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

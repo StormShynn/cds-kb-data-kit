@@ -1,13 +1,13 @@
 ---
 name: I_LDGRCOCODESELECTEDCRCYBRANCH
-description: This CDS view provides the prerequisites for answering the following business question: Which of the selected currency branches can be used for a ledger and a company code?
+description: "This CDS view provides the prerequisites for answering the following business question: Which of the selected currency branches can be used for a ledger and a company code?"
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LDGRCOCODESELECTEDCRCYBRANCH')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business question: Which of the selected currency branches can be used for a ledger and a company code?
+semantic_en: "This CDS view provides the prerequisites for answering the following business question: Which of the selected currency branches can be used for a ledger and a company code?"
 tags:
   - FI
   - bo:plant

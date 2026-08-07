@@ -1,13 +1,13 @@
 ---
 name: I_CHANGEMSTROBJECTMGMTRECORD
-description: This CDS view provides the prerequisites for answering the following business questions: Which business objects have been changed with a change master? If changes to a business object are controlled by a change master, who has initiated these changes and when?
+description: "This CDS view provides the prerequisites for answering the following business questions: Which business objects have been changed with a change master? If changes to a business object are controlled by a change master, who has initiated these changes and when?"
 app_component: PLM-WUI-OBJ-ECN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBJECTMGMTRECORD')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: Which business objects have been changed with a change master? If changes to a business object are controlled by a change master, who has initiated these changes and when?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: Which business objects have been changed with a change master? If changes to a business object are controlled by a change master, who has initiated these changes and when?"
 tags:
   - PLM
   - bo:plant

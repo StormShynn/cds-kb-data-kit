@@ -1,23 +1,23 @@
 ---
 name: C_SETTLMTDOCLISTDEX
-description: Settlement Document List Extraction
+description: "Settlement Document List Extraction"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SETTLMTDOCLISTDEX')/$value
-semantic_en: Settlement Document List Extraction
-semantic_vi: Settlement Document List Extraction — CDS view tiêu dùng dựa trên R_SettlmtDocListDEX.
+semantic_en: "Settlement Document List Extraction"
+semantic_vi: "Settlement Document List Extraction — CDS view tiêu dùng dựa trên R_SettlmtDocListDEX."
 keywords:
-  - settlement
-  - document
-  - list
-  - extraction
-  - settlmt
-  - item
-  - type
-  - process
+  - "settlement"
+  - "document"
+  - "list"
+  - "extraction"
+  - "settlmt"
+  - "item"
+  - "type"
+  - "process"
 tags:
   - LO
   - component:LO-AB

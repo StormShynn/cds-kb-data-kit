@@ -1,6 +1,6 @@
 ---
 name: I_COUNTRYVH
-description: Countryvh
+description: "Countryvh"
 app_component: BC-SRV-ADR
 software_component: SAP_BASIS
 release_state: released

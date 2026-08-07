@@ -1,6 +1,6 @@
 ---
 name: I_JITINBCALLCOMPGRPDOCREF
-description: Jitinbcallcompgrpdocref
+description: "Jitinbcallcompgrpdocref"
 app_component: LE-JIT-S2C
 software_component: SAPSCORE
 release_state: released

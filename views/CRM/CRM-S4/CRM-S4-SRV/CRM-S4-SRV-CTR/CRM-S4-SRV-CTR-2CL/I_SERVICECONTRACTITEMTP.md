@@ -1,6 +1,6 @@
 ---
 name: I_SERVICECONTRACTITEMTP
-description: Servicecontractitemtp
+description: "Servicecontractitemtp"
 app_component: CRM-S4-SRV-CTR-2CL
 software_component: SAPSCORE
 release_state: released

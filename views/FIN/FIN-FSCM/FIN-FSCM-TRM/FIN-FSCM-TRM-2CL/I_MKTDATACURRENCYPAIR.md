@@ -1,13 +1,13 @@
 ---
 name: I_MKTDATACURRENCYPAIR
-description: This CDS view provides the prerequisites for answering the following business questions: What are the currency pairs of the FX market data that are available in the SAP systems?
+description: "This CDS view provides the prerequisites for answering the following business questions: What are the currency pairs of the FX market data that are available in the SAP systems?"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MKTDATACURRENCYPAIR')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the currency pairs of the FX market data that are available in the SAP systems?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What are the currency pairs of the FX market data that are available in the SAP systems?"
 tags:
   - FIN
   - bo:plant

@@ -1,6 +1,6 @@
 ---
 name: I_CACLEARINGRESTRICTIONCODET
-description: Caclearingrestrictioncodet
+description: "Caclearingrestrictioncodet"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

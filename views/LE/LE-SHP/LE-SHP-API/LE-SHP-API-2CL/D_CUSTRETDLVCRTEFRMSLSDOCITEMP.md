@@ -1,6 +1,6 @@
 ---
 name: D_CUSTRETDLVCRTEFRMSLSDOCITEMP
-description: D Custretdlvcrtefrmslsdocitemp
+description: "D Custretdlvcrtefrmslsdocitemp"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

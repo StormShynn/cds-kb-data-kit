@@ -1,6 +1,6 @@
 ---
 name: I_RETURNSFOLLOWUPACTIVITY
-description: Returnsfollowupactivity
+description: "Returnsfollowupactivity"
 app_component: LO-ARM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SLCMGMTABCCLASSIFICATION
-description: Slcmgmtabcclassification
+description: "Slcmgmtabcclassification"
 app_component: SLC-SUP
 software_component: SAPSCORE
 release_state: released

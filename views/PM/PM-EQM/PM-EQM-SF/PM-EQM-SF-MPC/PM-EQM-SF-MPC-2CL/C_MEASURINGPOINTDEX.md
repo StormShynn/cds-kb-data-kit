@@ -1,23 +1,23 @@
 ---
 name: C_MEASURINGPOINTDEX
-description: Measuring Point
+description: "Measuring Point"
 app_component: PM-EQM-SF-MPC-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MEASURINGPOINTDEX')/$value
-semantic_en: Measuring Point
-semantic_vi: Measuring Point — CDS view tiêu dùng dựa trên I_MeasuringPoint.
+semantic_en: "Measuring Point"
+semantic_vi: "Measuring Point — CDS view tiêu dùng dựa trên I_MeasuringPoint."
 keywords:
-  - measuring
-  - point
-  - language
-  - description
-  - short
-  - text
-  - object
-  - identifier
+  - "measuring"
+  - "point"
+  - "language"
+  - "description"
+  - "short"
+  - "text"
+  - "object"
+  - "identifier"
 tags:
   - PM
   - bo:purchaseorder

@@ -1,6 +1,6 @@
 ---
 name: D_SERVICEORDERCOMPLETED
-description: D Service OrderCOMPLETED
+description: "D Service OrderCOMPLETED"
 app_component: CRM-S4-BTX-2CL
 software_component: SAPSCORE
 release_state: released

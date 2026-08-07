@@ -1,6 +1,6 @@
 ---
 name: I_CH_PAYTSLIPWTHREFCONTROLDATA
-description: CH Paytslipwthrefcontroldata
+description: "CH Paytslipwthrefcontroldata"
 app_component: FI-LOC-FI-CH-QR
 software_component: SAPSCORE
 release_state: released

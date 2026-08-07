@@ -1,6 +1,6 @@
 ---
 name: I_CAINSTALLMENTPLANCATEGORY
-description: Cainstallmentplancategory
+description: "Cainstallmentplancategory"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

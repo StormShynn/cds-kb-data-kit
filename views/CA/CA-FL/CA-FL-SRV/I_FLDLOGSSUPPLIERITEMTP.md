@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSSUPPLIERITEMTP
-description: Fldlogssupplieritemtp
+description: "Fldlogssupplieritemtp"
 app_component: CA-FL-SRV
 software_component: SAPSCORE
 release_state: released

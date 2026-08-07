@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLORDRELTDBILLGSTATUST
-description: Overallordreltdbillgstatust
+description: "Overallordreltdbillgstatust"
 app_component: SD-SLS-GF-2CL
 software_component: SAPSCORE
 release_state: released

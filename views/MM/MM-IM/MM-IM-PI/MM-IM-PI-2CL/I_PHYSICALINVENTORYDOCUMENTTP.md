@@ -1,6 +1,6 @@
 ---
 name: I_PHYSICALINVENTORYDOCUMENTTP
-description: Physicalinventorydocumenttp
+description: "Physicalinventorydocumenttp"
 app_component: MM-IM-PI-2CL
 software_component: SAPSCORE
 release_state: released

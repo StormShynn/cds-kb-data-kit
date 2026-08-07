@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNADHOCITEMVH
-description: Cnsldtnadhocitemvh
+description: "Cnsldtnadhocitemvh"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_FISCALYEARPERIOD
-description: Fiscalyearperiod
+description: "Fiscalyearperiod"
 app_component: CA-GTF-GL-CAL
 software_component: SAP_BASIS
 release_state: released

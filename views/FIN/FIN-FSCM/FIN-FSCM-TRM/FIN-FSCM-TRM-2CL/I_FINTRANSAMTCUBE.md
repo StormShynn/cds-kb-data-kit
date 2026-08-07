@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSAMTCUBE
-description: Financial Transaction Amount - Cube
+description: "Financial Transaction Amount - Cube"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSAMTCUBE')/$value
-semantic_en: Financial Transaction Amount - Cube
+semantic_en: "Financial Transaction Amount - Cube"
 tags:
   - FIN
   - bo:companycode

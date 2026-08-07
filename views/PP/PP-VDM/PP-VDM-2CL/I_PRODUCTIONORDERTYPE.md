@@ -1,6 +1,6 @@
 ---
 name: I_PRODUCTIONORDERTYPE
-description: Production OrderTYPE
+description: "Production OrderTYPE"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

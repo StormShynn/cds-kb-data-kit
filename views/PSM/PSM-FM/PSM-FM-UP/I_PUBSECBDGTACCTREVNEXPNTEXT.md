@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECBDGTACCTREVNEXPNTEXT
-description: Pubsecbdgtacctrevnexpntext
+description: "Pubsecbdgtacctrevnexpntext"
 app_component: PSM-FM-UP
 software_component: SAPSCORE
 release_state: released

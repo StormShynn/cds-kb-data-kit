@@ -1,6 +1,6 @@
 ---
 name: I_SAMPLINGPROCEDURETEXT
-description: Samplingproceduretext
+description: "Samplingproceduretext"
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released

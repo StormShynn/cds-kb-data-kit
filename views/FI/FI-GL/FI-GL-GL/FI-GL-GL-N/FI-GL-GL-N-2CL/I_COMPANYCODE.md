@@ -1,6 +1,6 @@
 ---
 name: I_COMPANYCODE
-description: Company Code
+description: "Company Code"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

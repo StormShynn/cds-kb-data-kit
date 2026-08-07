@@ -1,6 +1,6 @@
 ---
 name: I_TAXBALANCESGRP
-description: Taxbalancesgrp
+description: "Taxbalancesgrp"
 app_component: FI-LOC-VAT-GEN
 software_component: SAPSCORE
 release_state: released

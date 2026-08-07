@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTDRILLINGRATIOTP
-description: Jntopgagrmtdrillingratiotp
+description: "Jntopgagrmtdrillingratiotp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGLINETP_2
-description: Schedglinetp 2
+description: "Schedglinetp 2"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

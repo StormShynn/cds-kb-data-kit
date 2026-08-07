@@ -1,21 +1,21 @@
 ---
 name: ZDD_HEADER.DDLS
-description: Cabecera
+description: "Cabecera"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Herygzz/ABAP-CDS/blob/9b5ab06b27a3d147162849984bfaec2912960305/src/zdd_header.ddls.asddls
-semantic_en: Cabecera — CDS view based on zta_vbak.
-semantic_vi: Cabecera — CDS view dựa trên zta_vbak.
+semantic_en: "Cabecera — CDS view based on zta_vbak."
+semantic_vi: "Cabecera — CDS view dựa trên zta_vbak."
 keywords:
-  - cabecera
-  - vbeln
-  - erdat
-  - erzet
-  - auart
-  - waerk
+  - "cabecera"
+  - "vbeln"
+  - "erdat"
+  - "erzet"
+  - "auart"
+  - "waerk"
 tags:
   - CA
   - bo:salesorder

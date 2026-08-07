@@ -1,15 +1,15 @@
 ---
 name: I_GRANT
-description: This CDS view provides the prerequisites for answering the following business questions: What grant type is involved? Who is the sponsor of a grant? What is the lifecycle status of a grant?
+description: "This CDS view provides the prerequisites for answering the following business questions: What grant type is involved? Who is the sponsor of a grant? What is the lifecycle status of a grant?"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRANT')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions: What grant type is involved? Who is the sponsor of a grant? What is the lifecycle status of a grant?
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What grant type is involved? Who is the sponsor of a grant? What is the lifecycle status of a grant?"
 keywords:
-  - Grant
+  - "Grant"
 tags:
   - PSM
   - bo:plant

@@ -1,6 +1,6 @@
 ---
 name: I_CITSTATISTICALKEYFIGURE
-description: Citstatisticalkeyfigure
+description: "Citstatisticalkeyfigure"
 app_component: FI-LOC-CIT
 software_component: SAPSCORE
 release_state: released

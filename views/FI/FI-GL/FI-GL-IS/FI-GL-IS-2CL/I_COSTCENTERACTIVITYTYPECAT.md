@@ -1,6 +1,6 @@
 ---
 name: I_COSTCENTERACTIVITYTYPECAT
-description: Cost CenterACTIVITYTYPECAT
+description: "Cost CenterACTIVITYTYPECAT"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

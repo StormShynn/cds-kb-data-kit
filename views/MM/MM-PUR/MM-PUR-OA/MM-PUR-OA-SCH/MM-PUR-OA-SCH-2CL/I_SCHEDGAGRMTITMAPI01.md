@@ -1,6 +1,6 @@
 ---
 name: I_SCHEDGAGRMTITMAPI01
-description: Schedgagrmtitmapi 01
+description: "Schedgagrmtitmapi 01"
 app_component: MM-PUR-OA-SCH-2CL
 software_component: SAPSCORE
 release_state: released

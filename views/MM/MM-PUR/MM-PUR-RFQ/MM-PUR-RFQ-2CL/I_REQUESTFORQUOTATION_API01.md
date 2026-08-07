@@ -1,6 +1,6 @@
 ---
 name: I_REQUESTFORQUOTATION_API01
-description: Requestforquotation Api 01
+description: "Requestforquotation Api 01"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

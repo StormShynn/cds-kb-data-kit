@@ -1,13 +1,13 @@
 ---
 name: I_PAYMENTDTLREJECTIONRSNTEXT
-description: Payment Detail Rejection Reason - Text
+description: "Payment Detail Rejection Reason - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PAYMENTDTLREJECTIONRSNTEXT')/$value
-semantic_en: Payment Detail Rejection Reason - Text
+semantic_en: "Payment Detail Rejection Reason - Text"
 tags:
   - IS
   - bo:salesorder

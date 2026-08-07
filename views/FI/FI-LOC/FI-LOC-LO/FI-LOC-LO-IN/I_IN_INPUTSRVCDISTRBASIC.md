@@ -1,13 +1,13 @@
 ---
 name: I_IN_INPUTSRVCDISTRBASIC
-description: Input Service Distribution Basic CDS
+description: "Input Service Distribution Basic CDS"
 app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_INPUTSRVCDISTRBASIC')/$value
-semantic_en: Input Service Distribution Basic CDS
+semantic_en: "Input Service Distribution Basic CDS"
 tags:
   - FI
   - component:FI-LOC-LO-IN

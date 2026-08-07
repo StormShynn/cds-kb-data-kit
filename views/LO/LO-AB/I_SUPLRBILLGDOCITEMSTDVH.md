@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRBILLGDOCITEMSTDVH
-description: Supplier Billing Document Item
+description: "Supplier Billing Document Item"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRBILLGDOCITEMSTDVH')/$value
-semantic_en: Supplier Billing Document Item
+semantic_en: "Supplier Billing Document Item"
 tags:
   - LO
   - billing

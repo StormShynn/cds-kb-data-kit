@@ -1,28 +1,28 @@
 ---
 name: C_DUNNINGLEVELDISTRIBUTION
-description: This CDS view provides you with an overview of the dunning level distribution for accounts receivables. The search result aggregates the amount for each dunning level and account (company code and customer) This CDS view provides you with the information that you need to answer the following business questions: How high is the overall open amount that is subject to dunning? Which customers have overdue amounts that were already dunned? Which customers have been dunned multiple times? Is there a risk that there will be doubtful debts? This query cannot be accessed directly using SQL or custom CDS views. This query receives its data from the I_DunningLevelDistribution cube. This query can be used in the key user tool KPI Design or Create Reports.
+description: "This CDS view provides you with an overview of the dunning level distribution for accounts receivables. The search result aggregates the amount for each dunning level and account (company code and customer) This CDS view provides you with the information that you need to answer the following business questions: How high is the overall open amount that is subject to dunning? Which customers have overdue amounts that were already dunned? Which customers have been dunned multiple times? Is there a risk that there will be doubtful debts? This query cannot be accessed directly using SQL or custom CDS views. This query receives its data from the I_DunningLevelDistribution cube. This query can be used in the key user tool KPI Design or Create Reports."
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_DUNNINGLEVELDISTRIBUTION')/$value
-semantic_en: This CDS view provides you with an overview of the dunning level distribution for accounts receivables. The search result aggregates the amount for each dunning level and account (company code and customer) This CDS view provides you with the information that you need to answer the following business questions: How high is the overall open amount that is subject to dunning? Which customers have overdue amounts that were already dunned? Which customers have been dunned multiple times? Is there a risk that there will be doubtful debts? This query cannot be accessed directly using SQL or custom CDS views. This query receives its data from the I_DunningLevelDistribution cube. This query can be used in the key user tool KPI Design or Create Reports.
-semantic_vi: Dunning Level Distribution Smart Business App — CDS view tiêu dùng dựa trên I_DunningLevelDistribution.
+semantic_en: "This CDS view provides you with an overview of the dunning level distribution for accounts receivables. The search result aggregates the amount for each dunning level and account (company code and customer) This CDS view provides you with the information that you need to answer the following business questions: How high is the overall open amount that is subject to dunning? Which customers have overdue amounts that were already dunned? Which customers have been dunned multiple times? Is there a risk that there will be doubtful debts? This query cannot be accessed directly using SQL or custom CDS views. This query receives its data from the I_DunningLevelDistribution cube. This query can be used in the key user tool KPI Design or Create Reports."
+semantic_vi: "Dunning Level Distribution Smart Business App — CDS view tiêu dùng dựa trên I_DunningLevelDistribution."
 keywords:
-  - dunning
-  - level
-  - distribution
-  - smart
-  - business
-  - app
-  - company
-  - code
-  - customer
-  - exchange
-  - rate
-  - type
-  - country
+  - "dunning"
+  - "level"
+  - "distribution"
+  - "smart"
+  - "business"
+  - "app"
+  - "company"
+  - "code"
+  - "customer"
+  - "exchange"
+  - "rate"
+  - "type"
+  - "country"
 tags:
   - FI
   - account

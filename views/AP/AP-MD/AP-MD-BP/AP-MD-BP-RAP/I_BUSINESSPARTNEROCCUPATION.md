@@ -1,6 +1,6 @@
 ---
 name: I_BUSINESSPARTNEROCCUPATION
-description: Business PartnerOCCUPATION
+description: "Business PartnerOCCUPATION"
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

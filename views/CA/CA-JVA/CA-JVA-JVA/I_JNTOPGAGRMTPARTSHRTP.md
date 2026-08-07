@@ -1,6 +1,6 @@
 ---
 name: I_JNTOPGAGRMTPARTSHRTP
-description: Jntopgagrmtpartshrtp
+description: "Jntopgagrmtpartshrtp"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

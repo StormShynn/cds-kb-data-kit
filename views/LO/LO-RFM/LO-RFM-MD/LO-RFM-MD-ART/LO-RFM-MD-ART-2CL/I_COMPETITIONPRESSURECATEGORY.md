@@ -1,13 +1,13 @@
 ---
 name: I_COMPETITIONPRESSURECATEGORY
-description: Code of Competition Pressure of a Product
+description: "Code of Competition Pressure of a Product"
 app_component: LO-RFM-MD-ART-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPETITIONPRESSURECATEGORY')/$value
-semantic_en: Code of Competition Pressure of a Product
+semantic_en: "Code of Competition Pressure of a Product"
 tags:
   - LO
   - bo:material

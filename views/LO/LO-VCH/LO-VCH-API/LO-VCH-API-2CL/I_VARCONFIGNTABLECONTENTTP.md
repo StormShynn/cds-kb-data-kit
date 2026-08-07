@@ -1,6 +1,6 @@
 ---
 name: I_VARCONFIGNTABLECONTENTTP
-description: Varconfigntablecontenttp
+description: "Varconfigntablecontenttp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

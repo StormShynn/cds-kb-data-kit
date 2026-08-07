@@ -1,6 +1,6 @@
 ---
 name: I_CABILLGPLNITMSTATUS
-description: Cabillgplnitmstatus
+description: "Cabillgplnitmstatus"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

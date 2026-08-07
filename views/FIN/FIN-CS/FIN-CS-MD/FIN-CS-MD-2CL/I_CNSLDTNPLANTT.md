@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNPLANTT
-description: Cnsldtnplantt
+description: "Cnsldtnplantt"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

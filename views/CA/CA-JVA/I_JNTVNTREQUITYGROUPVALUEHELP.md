@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTREQUITYGROUPVALUEHELP
-description: Jntvntrequitygroupvaluehelp
+description: "Jntvntrequitygroupvaluehelp"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

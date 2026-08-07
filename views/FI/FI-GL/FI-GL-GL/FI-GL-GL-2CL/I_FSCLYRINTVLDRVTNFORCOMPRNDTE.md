@@ -1,13 +1,13 @@
 ---
 name: I_FSCLYRINTVLDRVTNFORCOMPRNDTE
-description: Fiscal Years for Posting Dates
+description: "Fiscal Years for Posting Dates"
 app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FSCLYRINTVLDRVTNFORCOMPRNDTE')/$value
-semantic_en: Fiscal Years for Posting Dates
+semantic_en: "Fiscal Years for Posting Dates"
 tags:
   - FI
   - bo:companycode

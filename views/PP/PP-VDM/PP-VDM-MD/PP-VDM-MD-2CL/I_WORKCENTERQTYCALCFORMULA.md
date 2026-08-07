@@ -1,13 +1,13 @@
 ---
 name: I_WORKCENTERQTYCALCFORMULA
-description: Work Center Quantity Calculation Formula
+description: "Work Center Quantity Calculation Formula"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKCENTERQTYCALCFORMULA')/$value
-semantic_en: Work Center Quantity Calculation Formula
+semantic_en: "Work Center Quantity Calculation Formula"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

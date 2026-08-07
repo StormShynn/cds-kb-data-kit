@@ -1,6 +1,6 @@
 ---
 name: I_SERVICECONTRACTITEM
-description: Servicecontractitem
+description: "Servicecontractitem"
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

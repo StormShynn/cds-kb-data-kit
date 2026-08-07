@@ -1,6 +1,6 @@
 ---
 name: C_PURCHASINGORGANIZATIONDEX
-description: Purchasingorganizationdex
+description: "Purchasingorganizationdex"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released

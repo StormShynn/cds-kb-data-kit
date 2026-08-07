@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECBDGTLINEITEMCUBE
-description: Pubsecbdgtlineitemcube
+description: "Pubsecbdgtlineitemcube"
 app_component: PSM-FM-IS
 software_component: SAPSCORE
 release_state: released

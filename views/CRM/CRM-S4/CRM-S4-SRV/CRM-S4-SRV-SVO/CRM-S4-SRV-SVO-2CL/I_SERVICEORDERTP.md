@@ -1,6 +1,6 @@
 ---
 name: I_SERVICEORDERTP
-description: Service OrderTP
+description: "Service OrderTP"
 app_component: CRM-S4-SRV-SVO-2CL
 software_component: SAPSCORE
 release_state: released

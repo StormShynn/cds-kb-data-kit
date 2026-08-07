@@ -1,6 +1,6 @@
 ---
 name: I_CAINVCGFUNCTIONTEXT
-description: Cainvcgfunctiontext
+description: "Cainvcgfunctiontext"
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released

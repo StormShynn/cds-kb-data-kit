@@ -1,6 +1,6 @@
 ---
 name: I_RERENEWALRULE
-description: Rerenewalrule
+description: "Rerenewalrule"
 app_component: RE-FX-2CL
 software_component: SAPSCORE
 release_state: released

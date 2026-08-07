@@ -1,6 +1,6 @@
 ---
 name: I_EARMARKEDFUNDS_MNLEDITBLKTXT
-description: Earmarkedfunds Mnleditblktxt
+description: "Earmarkedfunds Mnleditblktxt"
 app_component: FI-FM
 software_component: SAPSCORE
 release_state: released

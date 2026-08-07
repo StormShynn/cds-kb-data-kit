@@ -1,24 +1,24 @@
 ---
 name: I_BR_LC116SERVICECODETEXT
-description: Brazil LC116 Service Codes - Text
+description: "Brazil LC116 Service Codes - Text"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_LC116SERVICECODETEXT')/$value
-semantic_en: Brazil LC116 Service Codes - Text
-semantic_vi: Brazil LC116 Service Codes - Text — CDS view giao diện dựa trên logbr_abrasft.
+semantic_en: "Brazil LC116 Service Codes - Text"
+semantic_vi: "Brazil LC116 Service Codes - Text — CDS view giao diện dựa trên logbr_abrasft."
 keywords:
-  - brazil
-  - lc116
-  - service
-  - codes
-  - text
-  - language
-  - c116
-  - code
-  - desc
+  - "brazil"
+  - "lc116"
+  - "service"
+  - "codes"
+  - "text"
+  - "language"
+  - "c116"
+  - "code"
+  - "desc"
 tags:
   - FI
   - component:FI-LOC-LO-BR

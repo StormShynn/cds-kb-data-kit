@@ -1,6 +1,6 @@
 ---
 name: D_SUPLRQTANCRTEFRMRFQP
-description: D Suplrqtancrtefrmrfqp
+description: "D Suplrqtancrtefrmrfqp"
 app_component: MM-PUR-RFQ-2CL
 software_component: SAPSCORE
 release_state: released

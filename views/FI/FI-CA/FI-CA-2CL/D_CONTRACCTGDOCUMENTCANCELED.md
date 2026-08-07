@@ -1,6 +1,6 @@
 ---
 name: D_CONTRACCTGDOCUMENTCANCELED
-description: D Contracctgdocumentcanceled
+description: "D Contracctgdocumentcanceled"
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

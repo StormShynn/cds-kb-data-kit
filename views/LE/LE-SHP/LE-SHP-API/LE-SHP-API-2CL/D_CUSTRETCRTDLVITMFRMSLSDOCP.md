@@ -1,6 +1,6 @@
 ---
 name: D_CUSTRETCRTDLVITMFRMSLSDOCP
-description: D Custretcrtdlvitmfrmslsdocp
+description: "D Custretcrtdlvitmfrmslsdocp"
 app_component: LE-SHP-API-2CL
 software_component: SAPSCORE
 release_state: released

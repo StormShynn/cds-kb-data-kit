@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTDEMANDSTATUS
-description: Projectdemandstatus
+description: "Projectdemandstatus"
 app_component: PPM-SCL-DMN
 software_component: SAPSCORE
 release_state: released

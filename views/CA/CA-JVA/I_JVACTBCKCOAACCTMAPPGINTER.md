@@ -1,6 +1,6 @@
 ---
 name: I_JVACTBCKCOAACCTMAPPGINTER
-description: Jvactbckcoaacctmappginter
+description: "Jvactbckcoaacctmappginter"
 app_component: CA-JVA
 software_component: SAPSCORE
 release_state: released

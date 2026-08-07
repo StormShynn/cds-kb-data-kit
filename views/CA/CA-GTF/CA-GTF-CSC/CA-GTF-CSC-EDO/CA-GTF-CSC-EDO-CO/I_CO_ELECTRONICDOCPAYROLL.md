@@ -1,6 +1,6 @@
 ---
 name: I_CO_ELECTRONICDOCPAYROLL
-description: CO Electronicdocpayroll
+description: "CO Electronicdocpayroll"
 app_component: CA-GTF-CSC-EDO-CO
 software_component: SAPSCORE
 release_state: released

@@ -1,30 +1,30 @@
 ---
 name: I_ARUNANLYTSSLSORDRETCUBE
-description: Sales Order Returns - Cube
+description: "Sales Order Returns - Cube"
 app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ARUNANLYTSSLSORDRETCUBE')/$value
-semantic_en: Sales Order Returns - Cube
-semantic_vi: Sales Order Returns - Cube — CDS view tổng hợp dựa trên I_ARunAnlytsSalesReturns.
+semantic_en: "Sales Order Returns - Cube"
+semantic_vi: "Sales Order Returns - Cube — CDS view tổng hợp dựa trên I_ARunAnlytsSalesReturns."
 keywords:
-  - sales
-  - order
-  - returns
-  - cube
-  - requirement
-  - document
-  - number
-  - item
-  - supply
-  - schedule
-  - line
-  - assigned
-  - type
-  - assgmt
-  - source
+  - "sales"
+  - "order"
+  - "returns"
+  - "cube"
+  - "requirement"
+  - "document"
+  - "number"
+  - "item"
+  - "supply"
+  - "schedule"
+  - "line"
+  - "assigned"
+  - "type"
+  - "assgmt"
+  - "source"
 tags:
   - LO
   - bo:salesorder

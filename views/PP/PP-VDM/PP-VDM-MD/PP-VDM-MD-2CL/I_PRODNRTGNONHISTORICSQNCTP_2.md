@@ -1,6 +1,6 @@
 ---
 name: I_PRODNRTGNONHISTORICSQNCTP_2
-description: Prodnrtgnonhistoricsqnctp 2
+description: "Prodnrtgnonhistoricsqnctp 2"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

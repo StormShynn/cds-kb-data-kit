@@ -1,6 +1,6 @@
 ---
 name: I_CNTRLINVCMGMTCOMPANYCODE
-description: CNTRLINVCMGMTCompany Code
+description: "CNTRLINVCMGMTCompany Code"
 app_component: MM-IV-HUB-CIM-2CL
 software_component: SAPSCORE
 release_state: released

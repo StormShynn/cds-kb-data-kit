@@ -1,6 +1,6 @@
 ---
 name: I_BILLOFMATERIALITEMTP_2
-description: Bill of MaterialITEMTP 2
+description: "Bill of MaterialITEMTP 2"
 app_component: LO-MD-BOM-2CL
 software_component: SAPSCORE
 release_state: released

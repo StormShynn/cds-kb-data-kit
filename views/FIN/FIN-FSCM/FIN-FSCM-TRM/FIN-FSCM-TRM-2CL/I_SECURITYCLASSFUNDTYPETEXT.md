@@ -1,6 +1,6 @@
 ---
 name: I_SECURITYCLASSFUNDTYPETEXT
-description: Securityclassfundtypetext
+description: "Securityclassfundtypetext"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released

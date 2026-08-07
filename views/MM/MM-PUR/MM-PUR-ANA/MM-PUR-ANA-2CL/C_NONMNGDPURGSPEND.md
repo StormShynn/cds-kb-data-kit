@@ -1,27 +1,27 @@
 ---
 name: C_NONMNGDPURGSPEND
-description: Non Managed Purchasing Spend
+description: "Non Managed Purchasing Spend"
 app_component: MM-PUR-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_NONMNGDPURGSPEND')/$value
-semantic_en: Non Managed Purchasing Spend
-semantic_vi: Non Managed Purchasing Spend — CDS view tiêu dùng dựa trên C_NonMngdPurchasingSpend3.
+semantic_en: "Non Managed Purchasing Spend"
+semantic_vi: "Non Managed Purchasing Spend — CDS view tiêu dùng dựa trên C_NonMngdPurchasingSpend3."
 keywords:
-  - non
-  - managed
-  - purchasing
-  - spend
-  - fiscal
-  - year
-  - accounting
-  - document
-  - supplier
-  - company
-  - code
-  - name
+  - "non"
+  - "managed"
+  - "purchasing"
+  - "spend"
+  - "fiscal"
+  - "year"
+  - "accounting"
+  - "document"
+  - "supplier"
+  - "company"
+  - "code"
+  - "name"
 tags:
   - MM
   - component:MM-PUR-ANA-2CL

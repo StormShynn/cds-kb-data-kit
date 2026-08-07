@@ -1,6 +1,6 @@
 ---
 name: I_SETTLMTAPPLSTSSTDVH
-description: Settlmtapplstsstdvh
+description: "Settlmtapplstsstdvh"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

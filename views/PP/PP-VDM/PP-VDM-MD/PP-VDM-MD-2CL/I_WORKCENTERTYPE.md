@@ -1,6 +1,6 @@
 ---
 name: I_WORKCENTERTYPE
-description: Work CenterTYPE
+description: "Work CenterTYPE"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released

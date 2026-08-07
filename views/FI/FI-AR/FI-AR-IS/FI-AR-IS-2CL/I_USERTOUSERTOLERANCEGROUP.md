@@ -1,6 +1,6 @@
 ---
 name: I_USERTOUSERTOLERANCEGROUP
-description: Usertousertolerancegroup
+description: "Usertousertolerancegroup"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

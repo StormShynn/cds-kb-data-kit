@@ -1,6 +1,6 @@
 ---
 name: I_BPADDRESSINDEPENDENTMOBILE
-description: Bpaddressindependentmobile
+description: "Bpaddressindependentmobile"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

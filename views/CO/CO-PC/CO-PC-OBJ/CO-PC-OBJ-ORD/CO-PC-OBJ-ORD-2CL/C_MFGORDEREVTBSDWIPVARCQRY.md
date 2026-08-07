@@ -1,28 +1,28 @@
 ---
 name: C_MFGORDEREVTBSDWIPVARCQRY
-description: This CDS view is an interface view which provides work in process and variance details of event-based manufacturing orders based on ledger selection. This CDS view provides the data to answer the following business questions: How much work in process was created in the selected period? What variances were created during the production process? What specific factors are the root causes of the overall production variance? (Input quantity, input price, component usage, and so on) To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: "This CDS view is an interface view which provides work in process and variance details of event-based manufacturing orders based on ledger selection. This CDS view provides the data to answer the following business questions: How much work in process was created in the selected period? What variances were created during the production process? What specific factors are the root causes of the overall production variance? (Input quantity, input price, component usage, and so on) To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-PC-OBJ-ORD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MFGORDEREVTBSDWIPVARCQRY')/$value
-semantic_en: This CDS view is an interface view which provides work in process and variance details of event-based manufacturing orders based on ledger selection. This CDS view provides the data to answer the following business questions: How much work in process was created in the selected period? What variances were created during the production process? What specific factors are the root causes of the overall production variance? (Input quantity, input price, component usage, and so on) To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: MfgOrder Event-Based WIP and Variance - Query — CDS view tiêu dùng dựa trên I_MfgOrderEvtBsdWIPVariance.
+semantic_en: "This CDS view is an interface view which provides work in process and variance details of event-based manufacturing orders based on ledger selection. This CDS view provides the data to answer the following business questions: How much work in process was created in the selected period? What variances were created during the production process? What specific factors are the root causes of the overall production variance? (Input quantity, input price, component usage, and so on) To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "MfgOrder Event-Based WIP and Variance - Query — CDS view tiêu dùng dựa trên I_MfgOrderEvtBsdWIPVariance."
 keywords:
-  - mfgorder
-  - event
-  - based
-  - wip
-  - and
-  - variance
-  - query
-  - ledger
-  - company
-  - code
-  - order
-  - item
-  - type
+  - "mfgorder"
+  - "event"
+  - "based"
+  - "wip"
+  - "and"
+  - "variance"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "order"
+  - "item"
+  - "type"
 tags:
   - CO
   - bo:companycode

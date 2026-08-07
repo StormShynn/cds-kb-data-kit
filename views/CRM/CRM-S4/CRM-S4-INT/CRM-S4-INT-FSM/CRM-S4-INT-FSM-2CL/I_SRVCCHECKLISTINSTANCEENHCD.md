@@ -1,13 +1,13 @@
 ---
 name: I_SRVCCHECKLISTINSTANCEENHCD
-description: Checklist Instance Enhanced
+description: "Checklist Instance Enhanced"
 app_component: CRM-S4-INT-FSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCCHECKLISTINSTANCEENHCD')/$value
-semantic_en: Checklist Instance Enhanced
+semantic_en: "Checklist Instance Enhanced"
 tags:
   - CRM
   - component:CRM-S4-INT-FSM-2CL

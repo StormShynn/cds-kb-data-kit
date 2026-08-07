@@ -1,6 +1,6 @@
 ---
 name: I_RPTVMFGCONFPROCESSINGTYPETXT
-description: Rptvmfgconfprocessingtypetxt
+description: "Rptvmfgconfprocessingtypetxt"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_ENTPRJELMNTPROFNLSRVCPLNDKPI
-description: Entprjelmntprofnlsrvcplndkpi
+description: "Entprjelmntprofnlsrvcplndkpi"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_BR_NFISSUER
-description: BR Nfissuer
+description: "BR Nfissuer"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

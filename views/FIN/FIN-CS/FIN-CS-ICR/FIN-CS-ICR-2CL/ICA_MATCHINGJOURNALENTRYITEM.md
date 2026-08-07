@@ -1,6 +1,6 @@
 ---
 name: ICA_MATCHINGJOURNALENTRYITEM
-description: Ica MATCHINGJournal EntryITEM
+description: "Ica MATCHINGJournal EntryITEM"
 app_component: FIN-CS-ICR-2CL
 software_component: SAPSCORE
 release_state: released

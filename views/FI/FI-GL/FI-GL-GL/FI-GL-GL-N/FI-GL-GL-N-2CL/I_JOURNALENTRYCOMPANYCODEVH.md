@@ -1,6 +1,6 @@
 ---
 name: I_JOURNALENTRYCOMPANYCODEVH
-description: Journal EntryCompany CodeVH
+description: "Journal EntryCompany CodeVH"
 app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released

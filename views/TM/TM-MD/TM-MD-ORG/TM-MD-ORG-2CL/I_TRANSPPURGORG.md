@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPPURGORG
-description: Transppurgorg
+description: "Transppurgorg"
 app_component: TM-MD-ORG-2CL
 software_component: SAPSCORE
 release_state: released

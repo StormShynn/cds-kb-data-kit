@@ -1,6 +1,6 @@
 ---
 name: D_SALESCONTRACTITEMCHANGED
-description: D Salescontractitemchanged
+description: "D Salescontractitemchanged"
 app_component: SD-SLS-OA-CCO-2CL
 software_component: SAPSCORE
 release_state: released

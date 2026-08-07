@@ -1,6 +1,6 @@
 ---
 name: I_MRCHDSCATCHARACTERISTIC
-description: Mrchdscatcharacteristic
+description: "Mrchdscatcharacteristic"
 app_component: LO-RFM-MD-MC
 software_component: SAPSCORE
 release_state: released

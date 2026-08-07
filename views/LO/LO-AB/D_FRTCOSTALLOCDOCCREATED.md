@@ -1,6 +1,6 @@
 ---
 name: D_FRTCOSTALLOCDOCCREATED
-description: D Frtcostallocdoccreated
+description: "D Frtcostallocdoccreated"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released

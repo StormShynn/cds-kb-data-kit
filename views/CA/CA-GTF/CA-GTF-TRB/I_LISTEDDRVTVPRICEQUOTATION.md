@@ -1,6 +1,6 @@
 ---
 name: I_LISTEDDRVTVPRICEQUOTATION
-description: Listeddrvtvpricequotation
+description: "Listeddrvtvpricequotation"
 app_component: CA-GTF-TRB
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_ENGMNTPROJECTROLEASSGMT
-description: This CDS view retrieves all project roles assigned to a customer or internal project, and the business partner assigned to each role. This CDS view is an enhanced alternative to Role in Engagement Project. This CDS view provides the prerequisites for answering the following business questions: What are the roles assigned to a project? Who are the business partners that manage different project responsibilities?
+description: "This CDS view retrieves all project roles assigned to a customer or internal project, and the business partner assigned to each role. This CDS view is an enhanced alternative to Role in Engagement Project. This CDS view provides the prerequisites for answering the following business questions: What are the roles assigned to a project? Who are the business partners that manage different project responsibilities?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPROJECTROLEASSGMT')/$value
-semantic_en: This CDS view retrieves all project roles assigned to a customer or internal project, and the business partner assigned to each role. This CDS view is an enhanced alternative to Role in Engagement Project. This CDS view provides the prerequisites for answering the following business questions: What are the roles assigned to a project? Who are the business partners that manage different project responsibilities?
+semantic_en: "This CDS view retrieves all project roles assigned to a customer or internal project, and the business partner assigned to each role. This CDS view is an enhanced alternative to Role in Engagement Project. This CDS view provides the prerequisites for answering the following business questions: What are the roles assigned to a project? Who are the business partners that manage different project responsibilities?"
 tags:
   - CA
   - bo:businesspartner

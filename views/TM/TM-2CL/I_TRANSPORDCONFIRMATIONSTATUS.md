@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDCONFIRMATIONSTATUS
-description: Transpordconfirmationstatus
+description: "Transpordconfirmationstatus"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,13 +1,13 @@
 ---
 name: I_CASEENTITY
-description: Case Entiry
+description: "Case Entiry"
 app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEENTITY')/$value
-semantic_en: Case Entiry
+semantic_en: "Case Entiry"
 tags:
   - BC
   - BC-SRV

@@ -1,28 +1,28 @@
 ---
 name: C_COSTCENTERSEMANTICTAG
-description: Cost Center with Semantic Tag Query
+description: "Cost Center with Semantic Tag Query"
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COSTCENTERSEMANTICTAG')/$value
-semantic_en: Cost Center with Semantic Tag Query
-semantic_vi: Cost Center with Semantic Tag Query — CDS view tiêu dùng dựa trên I_ActlPlnLineItemSemTagGLAcct.
+semantic_en: "Cost Center with Semantic Tag Query"
+semantic_vi: "Cost Center with Semantic Tag Query — CDS view tiêu dùng dựa trên I_ActlPlnLineItemSemTagGLAcct."
 keywords:
-  - cost
-  - center
-  - with
-  - semantic
-  - tag
-  - query
-  - planning
-  - category
-  - company
-  - code
-  - fiscal
-  - year
-  - period
+  - "cost"
+  - "center"
+  - "with"
+  - "semantic"
+  - "tag"
+  - "query"
+  - "planning"
+  - "category"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - FI
   - component:FI-FIO-GL-2CL

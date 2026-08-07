@@ -1,6 +1,6 @@
 ---
 name: I_FINSGLAVGDAILYBALKEYFIGC
-description: Finsglavgdailybalkeyfigc
+description: "Finsglavgdailybalkeyfigc"
 app_component: FI-GL-GL-ADB-2CL
 software_component: SAPSCORE
 release_state: released

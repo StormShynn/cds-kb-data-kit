@@ -1,13 +1,13 @@
 ---
 name: I_LOANLENDERNOTICEARRGMTTEXT
-description: Loan Lender Notice Arrangement - Text
+description: "Loan Lender Notice Arrangement - Text"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANLENDERNOTICEARRGMTTEXT')/$value
-semantic_en: Loan Lender Notice Arrangement - Text
+semantic_en: "Loan Lender Notice Arrangement - Text"
 tags:
   - FS
   - component:FS-CML

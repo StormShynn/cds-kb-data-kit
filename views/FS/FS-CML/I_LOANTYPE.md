@@ -1,13 +1,13 @@
 ---
 name: I_LOANTYPE
-description: Loan Type
+description: "Loan Type"
 app_component: FS-CML
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LOANTYPE')/$value
-semantic_en: Loan Type
+semantic_en: "Loan Type"
 tags:
   - FS
   - component:FS-CML

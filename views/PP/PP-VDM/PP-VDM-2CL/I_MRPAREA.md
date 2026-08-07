@@ -1,6 +1,6 @@
 ---
 name: I_MRPAREA
-description: Mrparea
+description: "Mrparea"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

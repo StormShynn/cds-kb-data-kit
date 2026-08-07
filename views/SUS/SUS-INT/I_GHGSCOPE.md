@@ -1,6 +1,6 @@
 ---
 name: I_GHGSCOPE
-description: Ghgscope
+description: "Ghgscope"
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_CASEREASONTEXT
-description: Casereasontext
+description: "Casereasontext"
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released

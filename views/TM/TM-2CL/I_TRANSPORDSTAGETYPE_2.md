@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDSTAGETYPE_2
-description: Transpordstagetype 2
+description: "Transpordstagetype 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

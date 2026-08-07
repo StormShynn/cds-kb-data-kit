@@ -1,6 +1,6 @@
 ---
 name: I_FINSGLERRORMESSAGE
-description: Finsglerrormessage
+description: "Finsglerrormessage"
 app_component: AC-INT-ECS-2CL
 software_component: SAPSCORE
 release_state: released

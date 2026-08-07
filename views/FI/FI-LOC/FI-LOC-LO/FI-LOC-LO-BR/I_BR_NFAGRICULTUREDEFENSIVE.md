@@ -1,25 +1,25 @@
 ---
 name: I_BR_NFAGRICULTUREDEFENSIVE
-description: Brazil Nota Fiscal Agriculture Defensive
+description: "Brazil Nota Fiscal Agriculture Defensive"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BR_NFAGRICULTUREDEFENSIVE')/$value
-semantic_en: Brazil Nota Fiscal Agriculture Defensive
-semantic_vi: Brazil Nota Fiscal Agriculture Defensive — CDS view giao diện dựa trên j_1bnfagri_defen.
+semantic_en: "Brazil Nota Fiscal Agriculture Defensive"
+semantic_vi: "Brazil Nota Fiscal Agriculture Defensive — CDS view giao diện dựa trên j_1bnfagri_defen."
 keywords:
-  - brazil
-  - nota
-  - fiscal
-  - agriculture
-  - defensive
-  - sequence
-  - number
-  - prescription
-  - technical
-  - responsible
+  - "brazil"
+  - "nota"
+  - "fiscal"
+  - "agriculture"
+  - "defensive"
+  - "sequence"
+  - "number"
+  - "prescription"
+  - "technical"
+  - "responsible"
 tags:
   - FI
   - bo:companycode

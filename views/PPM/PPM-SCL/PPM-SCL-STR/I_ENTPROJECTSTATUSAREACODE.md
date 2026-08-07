@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJECTSTATUSAREACODE
-description: Entprojectstatusareacode
+description: "Entprojectstatusareacode"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

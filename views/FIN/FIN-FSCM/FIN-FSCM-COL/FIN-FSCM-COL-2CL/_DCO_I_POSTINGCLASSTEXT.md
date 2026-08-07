@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_POSTINGCLASSTEXT
-description: Posting Class - Text
+description: "Posting Class - Text"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_POSTINGCLASSTEXT')/$value
-semantic_en: Posting Class - Text
+semantic_en: "Posting Class - Text"
 tags:
   - FIN
   - bo:purchaseorder

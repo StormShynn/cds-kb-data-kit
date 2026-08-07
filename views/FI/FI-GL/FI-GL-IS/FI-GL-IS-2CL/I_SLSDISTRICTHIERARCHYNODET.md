@@ -1,6 +1,6 @@
 ---
 name: I_SLSDISTRICTHIERARCHYNODET
-description: Slsdistricthierarchynodet
+description: "Slsdistricthierarchynodet"
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

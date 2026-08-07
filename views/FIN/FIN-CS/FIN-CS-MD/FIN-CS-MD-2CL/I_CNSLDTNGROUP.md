@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNGROUP
-description: This CDS view provides access to the master data of a consolidation group. This CDS view provides the prerequisites for answering the following business questions: What is the consolidation dimension for my consolidation groups or subgroups? What is the hierarchy level of a certain group within a hierarchy of consolidation groups?
+description: "This CDS view provides access to the master data of a consolidation group. This CDS view provides the prerequisites for answering the following business questions: What is the consolidation dimension for my consolidation groups or subgroups? What is the hierarchy level of a certain group within a hierarchy of consolidation groups?"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNGROUP')/$value
-semantic_en: This CDS view provides access to the master data of a consolidation group. This CDS view provides the prerequisites for answering the following business questions: What is the consolidation dimension for my consolidation groups or subgroups? What is the hierarchy level of a certain group within a hierarchy of consolidation groups?
+semantic_en: "This CDS view provides access to the master data of a consolidation group. This CDS view provides the prerequisites for answering the following business questions: What is the consolidation dimension for my consolidation groups or subgroups? What is the hierarchy level of a certain group within a hierarchy of consolidation groups?"
 tags:
   - FIN
   - bo:businesspartner

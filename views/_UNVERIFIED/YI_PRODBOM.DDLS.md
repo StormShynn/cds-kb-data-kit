@@ -1,24 +1,24 @@
 ---
 name: YI_PRODBOM.DDLS
-description: Product Bom Interface
+description: "Product Bom Interface"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Aashish28/RAPAOC24/blob/82a125ae101f49e8718339f004d44ce720c8e939/src/yi_prodbom.ddls.asddls
-semantic_en: Product Bom Interface — CDS view.
-semantic_vi: Product Bom Interface — CDS view dựa trên Product Bom Interface.
+semantic_en: "Product Bom Interface — CDS view."
+semantic_vi: "Product Bom Interface — CDS view dựa trên Product Bom Interface."
 keywords:
-  - product
-  - bom
-  - interface
-  - productid
-  - bomid
-  - bomname
-  - last
-  - changed
-  - created
+  - "product"
+  - "bom"
+  - "interface"
+  - "productid"
+  - "bomid"
+  - "bomname"
+  - "last"
+  - "changed"
+  - "created"
 tags:
   - AC
   - bo:material

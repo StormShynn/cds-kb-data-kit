@@ -1,6 +1,6 @@
 ---
 name: D_SELECTCUSTOMIZINGTRANSPTREQP
-description: D Selectcustomizingtransptreqp
+description: "D Selectcustomizingtransptreqp"
 app_component: BC-CUS-TOL-MBC
 software_component: SAP_BASIS
 release_state: released

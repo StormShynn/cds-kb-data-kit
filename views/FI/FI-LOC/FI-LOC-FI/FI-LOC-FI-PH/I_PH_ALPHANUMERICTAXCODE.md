@@ -1,6 +1,6 @@
 ---
 name: I_PH_ALPHANUMERICTAXCODE
-description: PH Alphanumerictaxcode
+description: "PH Alphanumerictaxcode"
 app_component: FI-LOC-FI-PH
 software_component: SAPSCORE
 release_state: released

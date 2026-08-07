@@ -1,6 +1,6 @@
 ---
 name: I_WITHHOLDINGTAXINCOMETYPETEXT
-description: Withholdingtaxincometypetext
+description: "Withholdingtaxincometypetext"
 app_component: FI-AP-AP-Q-2CL
 software_component: SAPSCORE
 release_state: released

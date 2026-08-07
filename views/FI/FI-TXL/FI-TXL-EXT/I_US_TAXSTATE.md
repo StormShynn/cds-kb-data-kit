@@ -1,6 +1,6 @@
 ---
 name: I_US_TAXSTATE
-description: US Taxstate
+description: "US Taxstate"
 app_component: FI-TXL-EXT
 software_component: SAPSCORE
 release_state: released

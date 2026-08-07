@@ -1,6 +1,6 @@
 ---
 name: I_DSD_TOURSTATUSHISTORY
-description: Dsd Tourstatushistory
+description: "Dsd Tourstatushistory"
 app_component: LE-DSD
 software_component: SAPSCORE
 release_state: released

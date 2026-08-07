@@ -1,13 +1,13 @@
 ---
 name: I_MARGANLYSPRODANDSRVCOBJTYPE
-description: Product and Service Object Type
+description: "Product and Service Object Type"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MARGANLYSPRODANDSRVCOBJTYPE')/$value
-semantic_en: Product and Service Object Type
+semantic_en: "Product and Service Object Type"
 tags:
   - CO
   - bo:material

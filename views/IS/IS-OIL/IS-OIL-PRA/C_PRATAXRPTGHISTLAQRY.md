@@ -1,13 +1,13 @@
 ---
 name: C_PRATAXRPTGHISTLAQRY
-description: Louisiana Tax Reporting History Query
+description: "Louisiana Tax Reporting History Query"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRATAXRPTGHISTLAQRY')/$value
-semantic_en: Louisiana Tax Reporting History Query
+semantic_en: "Louisiana Tax Reporting History Query"
 tags:
   - IS
   - bo:purchaseorder

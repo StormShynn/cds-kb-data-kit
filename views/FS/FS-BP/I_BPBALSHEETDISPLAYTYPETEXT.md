@@ -1,6 +1,6 @@
 ---
 name: I_BPBALSHEETDISPLAYTYPETEXT
-description: Bpbalsheetdisplaytypetext
+description: "Bpbalsheetdisplaytypetext"
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

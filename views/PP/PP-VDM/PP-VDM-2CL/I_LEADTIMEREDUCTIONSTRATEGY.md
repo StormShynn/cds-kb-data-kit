@@ -1,6 +1,6 @@
 ---
 name: I_LEADTIMEREDUCTIONSTRATEGY
-description: Leadtimereductionstrategy
+description: "Leadtimereductionstrategy"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

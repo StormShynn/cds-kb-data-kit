@@ -1,13 +1,13 @@
 ---
 name: I_BUSPARTSCRIPTEDPERSONADDRESS
-description: International version of a business partner address
+description: "International version of a business partner address"
 app_component: AP-MD-BP-RAP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSPARTSCRIPTEDPERSONADDRESS')/$value
-semantic_en: International version of a business partner address
+semantic_en: "International version of a business partner address"
 tags:
   - AP
   - AP-MD

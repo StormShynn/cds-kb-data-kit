@@ -1,6 +1,6 @@
 ---
 name: I_DEFECTCLASS
-description: Defectclass
+description: "Defectclass"
 app_component: QM-IM-2CL
 software_component: SAPSCORE
 release_state: released

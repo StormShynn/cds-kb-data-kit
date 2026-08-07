@@ -1,6 +1,6 @@
 ---
 name: I_SALESOFFICE
-description: Salesoffice
+description: "Salesoffice"
 app_component: SD-CRF-ORG-2CL
 software_component: SAPSCORE
 release_state: released

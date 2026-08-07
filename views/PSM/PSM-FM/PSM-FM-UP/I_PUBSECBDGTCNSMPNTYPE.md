@@ -1,6 +1,6 @@
 ---
 name: I_PUBSECBDGTCNSMPNTYPE
-description: Pubsecbdgtcnsmpntype
+description: "Pubsecbdgtcnsmpntype"
 app_component: PSM-FM-UP
 software_component: SAPSCORE
 release_state: released

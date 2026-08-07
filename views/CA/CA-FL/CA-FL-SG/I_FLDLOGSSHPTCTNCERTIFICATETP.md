@@ -1,6 +1,6 @@
 ---
 name: I_FLDLOGSSHPTCTNCERTIFICATETP
-description: Fldlogsshptctncertificatetp
+description: "Fldlogsshptctncertificatetp"
 app_component: CA-FL-SG
 software_component: SAPSCORE
 release_state: released

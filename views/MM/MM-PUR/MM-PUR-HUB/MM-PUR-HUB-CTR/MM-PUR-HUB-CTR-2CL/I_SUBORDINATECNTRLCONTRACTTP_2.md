@@ -1,6 +1,6 @@
 ---
 name: I_SUBORDINATECNTRLCONTRACTTP_2
-description: Subordinatecntrlcontracttp 2
+description: "Subordinatecntrlcontracttp 2"
 app_component: MM-PUR-HUB-CTR-2CL
 software_component: SAPSCORE
 release_state: released

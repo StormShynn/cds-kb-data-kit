@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSYSTEMMESSAGETYPET
-description: Cnsldtnsystemmessagetypet
+description: "Cnsldtnsystemmessagetypet"
 app_component: FIN-CS-COR-IS-2CL
 software_component: SAPSCORE
 release_state: released

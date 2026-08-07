@@ -1,13 +1,13 @@
 ---
 name: I_VARIANTSPRICINGPROFILETEXT
-description: Variants Pricing Profile - Text
+description: "Variants Pricing Profile - Text"
 app_component: LO-RFM-MD-ART-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VARIANTSPRICINGPROFILETEXT')/$value
-semantic_en: Variants Pricing Profile - Text
+semantic_en: "Variants Pricing Profile - Text"
 tags:
   - LO
   - bo:companycode

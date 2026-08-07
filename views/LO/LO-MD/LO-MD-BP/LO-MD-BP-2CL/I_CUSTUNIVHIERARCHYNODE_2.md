@@ -1,6 +1,6 @@
 ---
 name: I_CUSTUNIVHIERARCHYNODE_2
-description: Custunivhierarchynode 2
+description: "Custunivhierarchynode 2"
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

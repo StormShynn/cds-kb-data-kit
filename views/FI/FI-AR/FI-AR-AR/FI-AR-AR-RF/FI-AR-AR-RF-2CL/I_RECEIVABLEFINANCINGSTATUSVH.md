@@ -1,6 +1,6 @@
 ---
 name: I_RECEIVABLEFINANCINGSTATUSVH
-description: Receivablefinancingstatusvh
+description: "Receivablefinancingstatusvh"
 app_component: FI-AR-AR-RF-2CL
 software_component: SAPSCORE
 release_state: released

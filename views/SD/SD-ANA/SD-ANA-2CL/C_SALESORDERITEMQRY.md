@@ -1,22 +1,22 @@
 ---
 name: C_SALESORDERITEMQRY
-description: This CDS view provides the total net values of sales order items by various dimensions, such as sales organization, product, fiscal year, customer group, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of sales orders in my sales organizations? What are my top 10 products based on my incoming sales orders? Who are my top 10 customers? Will I reach my business goals this year?
+description: "This CDS view provides the total net values of sales order items by various dimensions, such as sales organization, product, fiscal year, customer group, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of sales orders in my sales organizations? What are my top 10 products based on my incoming sales orders? Who are my top 10 customers? Will I reach my business goals this year?"
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESORDERITEMQRY')/$value
-semantic_en: This CDS view provides the total net values of sales order items by various dimensions, such as sales organization, product, fiscal year, customer group, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of sales orders in my sales organizations? What are my top 10 products based on my incoming sales orders? Who are my top 10 customers? Will I reach my business goals this year?
-semantic_vi: Sales Order Item - Query — CDS view tiêu dùng dựa trên I_SalesOrderItemCube.
+semantic_en: "This CDS view provides the total net values of sales order items by various dimensions, such as sales organization, product, fiscal year, customer group, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of sales orders in my sales organizations? What are my top 10 products based on my incoming sales orders? Who are my top 10 customers? Will I reach my business goals this year?"
+semantic_vi: "Sales Order Item - Query — CDS view tiêu dùng dựa trên I_SalesOrderItemCube."
 keywords:
-  - Sales Order Item - Query
-  - sales
-  - order
-  - item
-  - query
-  - type
-  - category
+  - "Sales Order Item - Query"
+  - "sales"
+  - "order"
+  - "item"
+  - "query"
+  - "type"
+  - "category"
 tags:
   - SD
   - bo:businesspartner

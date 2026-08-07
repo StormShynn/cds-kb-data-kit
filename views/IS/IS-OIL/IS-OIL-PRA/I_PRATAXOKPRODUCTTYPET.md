@@ -1,13 +1,13 @@
 ---
 name: I_PRATAXOKPRODUCTTYPET
-description: Tax 2 0 Oklahoma Product Type - Text
+description: "Tax 2 0 Oklahoma Product Type - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXOKPRODUCTTYPET')/$value
-semantic_en: Tax 2 0 Oklahoma Product Type - Text
+semantic_en: "Tax 2 0 Oklahoma Product Type - Text"
 tags:
   - IS
   - bo:material

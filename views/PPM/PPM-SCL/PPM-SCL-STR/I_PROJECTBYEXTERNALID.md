@@ -1,13 +1,13 @@
 ---
 name: I_PROJECTBYEXTERNALID
-description: Project by formatted external Identifier
+description: "Project by formatted external Identifier"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTBYEXTERNALID')/$value
-semantic_en: Project by formatted external Identifier
+semantic_en: "Project by formatted external Identifier"
 tags:
   - PPM
   - bo:companycode

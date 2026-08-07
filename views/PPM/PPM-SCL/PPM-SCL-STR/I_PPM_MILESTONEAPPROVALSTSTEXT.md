@@ -1,6 +1,6 @@
 ---
 name: I_PPM_MILESTONEAPPROVALSTSTEXT
-description: Ppm Milestoneapprovalststext
+description: "Ppm Milestoneapprovalststext"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

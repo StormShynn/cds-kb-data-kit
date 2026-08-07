@@ -1,6 +1,6 @@
 ---
 name: D_BDRCRTEFRMEXTPARTNERP
-description: D Bdrcrtefrmextpartnerp
+description: "D Bdrcrtefrmextpartnerp"
 app_component: SD-BIL-BDR-2CL
 software_component: SAPSCORE
 release_state: released

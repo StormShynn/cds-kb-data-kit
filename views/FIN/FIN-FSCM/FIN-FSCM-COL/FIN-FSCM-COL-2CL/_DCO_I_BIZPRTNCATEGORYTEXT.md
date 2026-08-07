@@ -1,13 +1,13 @@
 ---
 name: _DCO_I_BIZPRTNCATEGORYTEXT
-description: Business Partner Category - Text
+description: "Business Partner Category - Text"
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BIZPRTNCATEGORYTEXT')/$value
-semantic_en: Business Partner Category - Text
+semantic_en: "Business Partner Category - Text"
 tags:
   - FIN
   - component:FIN-FSCM-COL-2CL

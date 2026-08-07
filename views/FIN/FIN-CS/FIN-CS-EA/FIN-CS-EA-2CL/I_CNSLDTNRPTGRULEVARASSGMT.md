@@ -1,13 +1,13 @@
 ---
 name: I_CNSLDTNRPTGRULEVARASSGMT
-description: This CDS view assigns the reporting rule variant to consolidation chart of accounts and reporting item hierarchy.
+description: "This CDS view assigns the reporting rule variant to consolidation chart of accounts and reporting item hierarchy."
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEVARASSGMT')/$value
-semantic_en: This CDS view assigns the reporting rule variant to consolidation chart of accounts and reporting item hierarchy.
+semantic_en: "This CDS view assigns the reporting rule variant to consolidation chart of accounts and reporting item hierarchy."
 tags:
   - FIN
   - account

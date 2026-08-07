@@ -1,6 +1,6 @@
 ---
 name: C_SERVICEORDERITEMDEX
-description: Service OrderITEMDEX
+description: "Service OrderITEMDEX"
 app_component: CRM-S4-ANA-BI-2CL
 software_component: SAPSCORE
 release_state: released

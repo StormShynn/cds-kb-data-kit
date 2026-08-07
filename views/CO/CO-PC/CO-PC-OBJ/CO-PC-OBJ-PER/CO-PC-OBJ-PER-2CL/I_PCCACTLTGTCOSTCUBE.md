@@ -1,6 +1,6 @@
 ---
 name: I_PCCACTLTGTCOSTCUBE
-description: Pccactltgtcostcube
+description: "Pccactltgtcostcube"
 app_component: CO-PC-OBJ-PER-2CL
 software_component: SAPSCORE
 release_state: released

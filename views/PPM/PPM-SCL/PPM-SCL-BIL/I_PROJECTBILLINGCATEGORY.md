@@ -1,6 +1,6 @@
 ---
 name: I_PROJECTBILLINGCATEGORY
-description: Projectbillingcategory
+description: "Projectbillingcategory"
 app_component: PPM-SCL-BIL
 software_component: SAPSCORE
 release_state: released

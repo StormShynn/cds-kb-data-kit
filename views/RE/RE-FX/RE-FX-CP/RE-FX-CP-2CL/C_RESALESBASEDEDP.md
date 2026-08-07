@@ -1,13 +1,13 @@
 ---
 name: C_RESALESBASEDEDP
-description: RE Sales-Based Email Determination
+description: "RE Sales-Based Email Determination"
 app_component: RE-FX-CP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RESALESBASEDEDP')/$value
-semantic_en: RE Sales-Based Email Determination
+semantic_en: "RE Sales-Based Email Determination"
 tags:
   - RE
   - component:RE-FX-CP-2CL

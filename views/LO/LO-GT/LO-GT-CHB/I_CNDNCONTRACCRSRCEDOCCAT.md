@@ -1,6 +1,6 @@
 ---
 name: I_CNDNCONTRACCRSRCEDOCCAT
-description: Cndncontraccrsrcedoccat
+description: "Cndncontraccrsrcedoccat"
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released

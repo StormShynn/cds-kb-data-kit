@@ -1,6 +1,6 @@
 ---
 name: I_JNTVNTRBUSINESSPARTNERTP
-description: JNTVNTRBusiness PartnerTP
+description: "JNTVNTRBusiness PartnerTP"
 app_component: CA-JVA-JVA
 software_component: SAPSCORE
 release_state: released

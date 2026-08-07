@@ -1,13 +1,13 @@
 ---
 name: I_PROJECTUNFORMATTEDID
-description: Project by unformatted external ID
+description: "Project by unformatted external ID"
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTUNFORMATTEDID')/$value
-semantic_en: Project by unformatted external ID
+semantic_en: "Project by unformatted external ID"
 tags:
   - CO
   - bo:project

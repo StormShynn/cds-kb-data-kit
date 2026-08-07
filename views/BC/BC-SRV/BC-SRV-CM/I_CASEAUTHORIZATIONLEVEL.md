@@ -1,13 +1,13 @@
 ---
 name: I_CASEAUTHORIZATIONLEVEL
-description: Case Authorization Level
+description: "Case Authorization Level"
 app_component: BC-SRV-CM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEAUTHORIZATIONLEVEL')/$value
-semantic_en: Case Authorization Level
+semantic_en: "Case Authorization Level"
 tags:
   - BC
   - BC-SRV

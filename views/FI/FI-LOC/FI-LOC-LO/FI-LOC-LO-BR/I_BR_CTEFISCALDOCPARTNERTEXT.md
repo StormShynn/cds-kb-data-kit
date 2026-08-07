@@ -1,6 +1,6 @@
 ---
 name: I_BR_CTEFISCALDOCPARTNERTEXT
-description: BR Ctefiscaldocpartnertext
+description: "BR Ctefiscaldocpartnertext"
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

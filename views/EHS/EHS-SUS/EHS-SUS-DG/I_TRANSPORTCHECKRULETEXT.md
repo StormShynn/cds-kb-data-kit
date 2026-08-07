@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORTCHECKRULETEXT
-description: Transportcheckruletext
+description: "Transportcheckruletext"
 app_component: EHS-SUS-DG
 software_component: SAPSCORE
 release_state: released

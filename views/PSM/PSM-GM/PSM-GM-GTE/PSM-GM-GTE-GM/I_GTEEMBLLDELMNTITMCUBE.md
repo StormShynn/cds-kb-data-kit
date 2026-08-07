@@ -1,13 +1,13 @@
 ---
 name: I_GTEEMBLLDELMNTITMCUBE
-description: Grantee Management Billed Element Item - Cube
+description: "Grantee Management Billed Element Item - Cube"
 app_component: PSM-GM-GTE-GM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GTEEMBLLDELMNTITMCUBE')/$value
-semantic_en: Grantee Management Billed Element Item - Cube
+semantic_en: "Grantee Management Billed Element Item - Cube"
 tags:
   - PSM
   - component:PSM-GM-GTE-GM

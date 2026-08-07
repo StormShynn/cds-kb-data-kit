@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRFRTINVCREQTYPE
-description: Supplier Freight Invoice Request Type
+description: "Supplier Freight Invoice Request Type"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRFRTINVCREQTYPE')/$value
-semantic_en: Supplier Freight Invoice Request Type
+semantic_en: "Supplier Freight Invoice Request Type"
 tags:
   - TM
   - bo:billingdocument

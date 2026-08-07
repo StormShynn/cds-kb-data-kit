@@ -1,27 +1,27 @@
 ---
 name: I_ASSETHISTORYSHEETCUBE
-description: With this CDS view you can form the asset history sheet that shows value changes to the fixed asset balances in a fiscal year for a depreciation area. The asset history sheet enables you to document and explain the balances on fixed assets for every accounting principle, any local regulation, and for management purposes. SAP provides preconfigured key figure groups that you can use for your reporting. These key figure groups bundle key figure codes, such as acquisitions, retirements, transfers, and depreciation. Certain key figure groups can be used to display key figures in a hierarchy. In contrast to the Asset History Sheet CDS view, in this Asset History Sheet Cube CDS view you can select multiple company codes, ledgers, and depreciation areas that have the same currency type. This CDS view provides the prerequisites for answering the following business questions: What are the balances at fiscal year start? What are the balances of the current year? What are the balances at the reporting date? What are the balances of my APC balance sheet accounts? What are the balances drilled down by the asset?
+description: "With this CDS view you can form the asset history sheet that shows value changes to the fixed asset balances in a fiscal year for a depreciation area. The asset history sheet enables you to document and explain the balances on fixed assets for every accounting principle, any local regulation, and for management purposes. SAP provides preconfigured key figure groups that you can use for your reporting. These key figure groups bundle key figure codes, such as acquisitions, retirements, transfers, and depreciation. Certain key figure groups can be used to display key figures in a hierarchy. In contrast to the Asset History Sheet CDS view, in this Asset History Sheet Cube CDS view you can select multiple company codes, ledgers, and depreciation areas that have the same currency type. This CDS view provides the prerequisites for answering the following business questions: What are the balances at fiscal year start? What are the balances of the current year? What are the balances at the reporting date? What are the balances of my APC balance sheet accounts? What are the balances drilled down by the asset?"
 app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ASSETHISTORYSHEETCUBE')/$value
-semantic_en: With this CDS view you can form the asset history sheet that shows value changes to the fixed asset balances in a fiscal year for a depreciation area. The asset history sheet enables you to document and explain the balances on fixed assets for every accounting principle, any local regulation, and for management purposes. SAP provides preconfigured key figure groups that you can use for your reporting. These key figure groups bundle key figure codes, such as acquisitions, retirements, transfers, and depreciation. Certain key figure groups can be used to display key figures in a hierarchy. In contrast to the Asset History Sheet CDS view, in this Asset History Sheet Cube CDS view you can select multiple company codes, ledgers, and depreciation areas that have the same currency type. This CDS view provides the prerequisites for answering the following business questions: What are the balances at fiscal year start? What are the balances of the current year? What are the balances at the reporting date? What are the balances of my APC balance sheet accounts? What are the balances drilled down by the asset?
-semantic_vi: Asset History Sheet - Cube — CDS view giao diện dựa trên P_AssetHistorySheetCube1.
+semantic_en: "With this CDS view you can form the asset history sheet that shows value changes to the fixed asset balances in a fiscal year for a depreciation area. The asset history sheet enables you to document and explain the balances on fixed assets for every accounting principle, any local regulation, and for management purposes. SAP provides preconfigured key figure groups that you can use for your reporting. These key figure groups bundle key figure codes, such as acquisitions, retirements, transfers, and depreciation. Certain key figure groups can be used to display key figures in a hierarchy. In contrast to the Asset History Sheet CDS view, in this Asset History Sheet Cube CDS view you can select multiple company codes, ledgers, and depreciation areas that have the same currency type. This CDS view provides the prerequisites for answering the following business questions: What are the balances at fiscal year start? What are the balances of the current year? What are the balances at the reporting date? What are the balances of my APC balance sheet accounts? What are the balances drilled down by the asset?"
+semantic_vi: "Asset History Sheet - Cube — CDS view giao diện dựa trên P_AssetHistorySheetCube1."
 keywords:
-  - Asset History Sheet - Cube
-  - asset
-  - history
-  - sheet
-  - cube
-  - company
-  - code
-  - depreciation
-  - area
-  - master
-  - fixed
-  - ledger
+  - "Asset History Sheet - Cube"
+  - "asset"
+  - "history"
+  - "sheet"
+  - "cube"
+  - "company"
+  - "code"
+  - "depreciation"
+  - "area"
+  - "master"
+  - "fixed"
+  - "ledger"
 tags:
   - FI
   - account

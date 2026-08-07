@@ -1,6 +1,6 @@
 ---
 name: I_CNSLDTNSELECTIONVH
-description: Cnsldtnselectionvh
+description: "Cnsldtnselectionvh"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released

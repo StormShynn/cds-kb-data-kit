@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTPROPOSALITEM
-description: Paymentproposalitem
+description: "Paymentproposalitem"
 app_component: FI-AP-AP-B-2CL
 software_component: SAPSCORE
 release_state: released

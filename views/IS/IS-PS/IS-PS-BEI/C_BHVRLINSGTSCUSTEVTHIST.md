@@ -1,13 +1,13 @@
 ---
 name: C_BHVRLINSGTSCUSTEVTHIST
-description: Customer Event History
+description: "Customer Event History"
 app_component: IS-PS-BEI
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BHVRLINSGTSCUSTEVTHIST')/$value
-semantic_en: Customer Event History
+semantic_en: "Customer Event History"
 tags:
   - IS
   - bo:businesspartner

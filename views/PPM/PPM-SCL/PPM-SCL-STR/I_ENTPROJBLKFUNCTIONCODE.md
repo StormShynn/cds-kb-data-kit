@@ -1,6 +1,6 @@
 ---
 name: I_ENTPROJBLKFUNCTIONCODE
-description: Entprojblkfunctioncode
+description: "Entprojblkfunctioncode"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released

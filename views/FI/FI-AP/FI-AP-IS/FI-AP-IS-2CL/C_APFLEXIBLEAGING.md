@@ -1,29 +1,29 @@
 ---
 name: C_APFLEXIBLEAGING
-description: This CDS view provides you with an overview of the payables in an aging grid. The result aggregates the amount per net due interval in the aging grid and per account (that is, per company code or supplier). This CDS view provides the prerequisites for answering the following business questions: What suppliers are the payables for? What's the total payable amount to each supplier?
+description: "This CDS view provides you with an overview of the payables in an aging grid. The result aggregates the amount per net due interval in the aging grid and per account (that is, per company code or supplier). This CDS view provides the prerequisites for answering the following business questions: What suppliers are the payables for? What's the total payable amount to each supplier?"
 app_component: FI-AP-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_APFLEXIBLEAGING')/$value
-semantic_en: This CDS view provides you with an overview of the payables in an aging grid. The result aggregates the amount per net due interval in the aging grid and per account (that is, per company code or supplier). This CDS view provides the prerequisites for answering the following business questions: What suppliers are the payables for? What's the total payable amount to each supplier?
-semantic_vi: Aging Analysis Smart Business App — CDS view tiêu dùng dựa trên I_APFlexibleAging.
+semantic_en: "This CDS view provides you with an overview of the payables in an aging grid. The result aggregates the amount per net due interval in the aging grid and per account (that is, per company code or supplier). This CDS view provides the prerequisites for answering the following business questions: What suppliers are the payables for? What's the total payable amount to each supplier?"
+semantic_vi: "Aging Analysis Smart Business App — CDS view tiêu dùng dựa trên I_APFlexibleAging."
 keywords:
-  - aging
-  - analysis
-  - smart
-  - business
-  - app
-  - company
-  - code
-  - transaction
-  - currency
-  - account
-  - supplier
-  - accounting
-  - document
-  - category
+  - "aging"
+  - "analysis"
+  - "smart"
+  - "business"
+  - "app"
+  - "company"
+  - "code"
+  - "transaction"
+  - "currency"
+  - "account"
+  - "supplier"
+  - "accounting"
+  - "document"
+  - "category"
 tags:
   - FI
   - account

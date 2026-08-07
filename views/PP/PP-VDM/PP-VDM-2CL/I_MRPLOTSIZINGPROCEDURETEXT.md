@@ -1,6 +1,6 @@
 ---
 name: I_MRPLOTSIZINGPROCEDURETEXT
-description: Mrplotsizingproceduretext
+description: "Mrplotsizingproceduretext"
 app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released

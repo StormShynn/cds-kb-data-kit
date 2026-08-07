@@ -1,6 +1,6 @@
 ---
 name: I_VARCNFPRODPRFLPROCEDASSGMTTP
-description: Varcnfprodprflprocedassgmttp
+description: "Varcnfprodprflprocedassgmttp"
 app_component: LO-VCH-API-2CL
 software_component: SAPSCORE
 release_state: released

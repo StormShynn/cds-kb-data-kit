@@ -1,6 +1,6 @@
 ---
 name: I_TRANSPORDEXECSTATUS_2
-description: Transpordexecstatus 2
+description: "Transpordexecstatus 2"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

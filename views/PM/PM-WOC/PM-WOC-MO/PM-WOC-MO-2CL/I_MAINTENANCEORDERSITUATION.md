@@ -1,6 +1,6 @@
 ---
 name: I_MAINTENANCEORDERSITUATION
-description: Maintenance OrderSITUATION
+description: "Maintenance OrderSITUATION"
 app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released

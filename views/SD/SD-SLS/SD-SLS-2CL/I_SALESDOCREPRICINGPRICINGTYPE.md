@@ -1,6 +1,6 @@
 ---
 name: I_SALESDOCREPRICINGPRICINGTYPE
-description: Salesdocrepricingpricingtype
+description: "Salesdocrepricingpricingtype"
 app_component: SD-SLS-2CL
 software_component: SAPSCORE
 release_state: released

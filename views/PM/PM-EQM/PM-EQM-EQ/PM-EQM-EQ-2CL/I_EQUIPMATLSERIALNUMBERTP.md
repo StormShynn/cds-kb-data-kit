@@ -1,6 +1,6 @@
 ---
 name: I_EQUIPMATLSERIALNUMBERTP
-description: EQUIPMATLSerial NumberTP
+description: "EQUIPMATLSerial NumberTP"
 app_component: PM-EQM-EQ-2CL
 software_component: SAPSCORE
 release_state: released

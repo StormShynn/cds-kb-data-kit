@@ -1,21 +1,21 @@
 ---
 name: I_BOOVERSIONSTATUSTEXT
-description: Bill of Operations Version Status - Text
+description: "Bill of Operations Version Status - Text"
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BOOVERSIONSTATUSTEXT')/$value
-semantic_en: Bill of Operations Version Status - Text
-semantic_vi: Bill of Operations Version Status - Text — CDS view giao diện dựa trên dd07t.
+semantic_en: "Bill of Operations Version Status - Text"
+semantic_vi: "Bill of Operations Version Status - Text — CDS view giao diện dựa trên dd07t."
 keywords:
-  - bill
-  - operations
-  - version
-  - status
-  - text
-  - language
+  - "bill"
+  - "operations"
+  - "version"
+  - "status"
+  - "text"
+  - "language"
 tags:
   - PP
   - component:PP-VDM-MD-2CL

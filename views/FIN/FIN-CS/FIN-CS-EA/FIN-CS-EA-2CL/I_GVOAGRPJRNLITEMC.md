@@ -1,15 +1,15 @@
 ---
 name: I_GVOAGRPJRNLITEMC
-description: GVOA - Cube
+description: "GVOA - Cube"
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GVOAGRPJRNLITEMC')/$value
-semantic_en: GVOA - Cube
+semantic_en: "GVOA - Cube"
 keywords:
-  - GVOA - Cube
+  - "GVOA - Cube"
 tags:
   - FIN
   - component:FIN-CS-EA-2CL

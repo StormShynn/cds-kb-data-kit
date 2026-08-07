@@ -1,6 +1,6 @@
 ---
 name: C_CN_PAYMENTRELEASELISTEMLTMPL
-description: CN Paymentreleaselistemltmpl
+description: "CN Paymentreleaselistemltmpl"
 app_component: FI-LOC-EPI-CN
 software_component: SAPSCORE
 release_state: released

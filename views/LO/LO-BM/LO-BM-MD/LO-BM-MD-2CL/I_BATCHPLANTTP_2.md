@@ -1,6 +1,6 @@
 ---
 name: I_BATCHPLANTTP_2
-description: Batchplanttp 2
+description: "Batchplanttp 2"
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released

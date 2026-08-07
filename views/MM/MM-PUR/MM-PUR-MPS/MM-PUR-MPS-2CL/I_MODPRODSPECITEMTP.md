@@ -1,6 +1,6 @@
 ---
 name: I_MODPRODSPECITEMTP
-description: Modprodspecitemtp
+description: "Modprodspecitemtp"
 app_component: MM-PUR-MPS-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,6 @@
 ---
 name: I_PAYMENTDIFFERENCEREASONT
-description: Paymentdifferencereasont
+description: "Paymentdifferencereasont"
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released

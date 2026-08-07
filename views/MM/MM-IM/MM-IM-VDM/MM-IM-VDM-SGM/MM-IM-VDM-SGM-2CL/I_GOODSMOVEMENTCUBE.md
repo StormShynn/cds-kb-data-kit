@@ -1,6 +1,6 @@
 ---
 name: I_GOODSMOVEMENTCUBE
-description: Goods MovementCUBE
+description: "Goods MovementCUBE"
 app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released

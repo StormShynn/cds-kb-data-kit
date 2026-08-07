@@ -1,6 +1,6 @@
 ---
 name: I_BPRELATIONSHIP_2
-description: Bprelationship 2
+description: "Bprelationship 2"
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

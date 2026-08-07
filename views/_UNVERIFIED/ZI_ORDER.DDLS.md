@@ -1,21 +1,21 @@
 ---
 name: ZI_ORDER.DDLS
-description: BIV order
+description: "BIV order"
 software_component: SAPSCORE
 release_state: unverified
 clean_core_level: A
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://github.com/Lnaj/Grp_sap/blob/9139d3999578866205fc6c74b4e7d967b86f97a8/src/zi_order.ddls.asddls
-semantic_en: BIV order — CDS view based on zorder.
-semantic_vi: BIV order — CDS view dựa trên zorder.
+semantic_en: "BIV order — CDS view based on zorder."
+semantic_vi: "BIV order — CDS view dựa trên zorder."
 keywords:
-  - biv
-  - order
-  - customer
-  - address
-  - date
-  - status
+  - "biv"
+  - "order"
+  - "customer"
+  - "address"
+  - "date"
+  - "status"
 tags:
   - order
 ---

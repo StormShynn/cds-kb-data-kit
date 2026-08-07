@@ -1,6 +1,6 @@
 ---
 name: I_OVERALLGOODSMOVEMENTSTATUS
-description: OVERALLGoods MovementSTATUS
+description: "OVERALLGoods MovementSTATUS"
 app_component: LE-SHP-GF-2CL
 software_component: SAPSCORE
 release_state: released
