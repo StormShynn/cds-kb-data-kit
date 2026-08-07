@@ -526,5 +526,50 @@
     "tags": 8,
     "error": null,
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DISPUTEALLPROCESSSTEP')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNT",
+    "action": "updated",
+    "timestamp": "2026-08-07T13:50:29.213Z",
+    "source": "hub-catalog",
+    "fields": 4,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNT')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNTACTIVITY",
+    "action": "updated",
+    "timestamp": "2026-08-07T13:50:29.261Z",
+    "source": "hub-catalog",
+    "fields": 17,
+    "associations": 0,
+    "tags": 11,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTACTIVITY')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNTCLASSIFICATION",
+    "action": "updated",
+    "timestamp": "2026-08-07T13:50:29.271Z",
+    "source": "hub-catalog",
+    "fields": 1,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTCLASSIFICATION')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNTDISPUTE",
+    "action": "updated",
+    "timestamp": "2026-08-07T13:50:29.909Z",
+    "source": "hub-catalog",
+    "fields": 48,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTDISPUTE')/$value"
   }
+] }
 ]
