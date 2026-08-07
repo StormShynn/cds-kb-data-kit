@@ -1,15 +1,16 @@
 ---
 name: C_BUSEVTLOGACTIVITYDEX
-description: Business Event Activity
+description: This CDS view provides full business event data (payload) in JSON format. This CDS view provides the answer to these business questions: What is the full business data contained in the event? The CDS view supports #EXTRACTION_DATA_SOURCE.
 app_component: CA-GTF-BEL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGACTIVITYDEX')/$value
-semantic_en: Business Event Activity
+semantic_en: This CDS view provides full business event data (payload) in JSON format. This CDS view provides the answer to these business questions: What is the full business data contained in the event? The CDS view supports #EXTRACTION_DATA_SOURCE.
 tags:
   - CA
+  - bo:purchaseorder
   - CA-GTF
   - CA-GTF-BEL
   - component:CA-GTF-BEL
@@ -19,7 +20,7 @@ tags:
 ---
 # C_BUSEVTLOGACTIVITYDEX
 
-**Business Event Activity**
+**This CDS view provides full business event data (payload) in JSON format. This CDS view provides the answer to these business questions: What is the full business data contained in the event? The CDS view supports #EXTRACTION_DATA_SOURCE.**
 
 | Property | Value |
 |---|---|

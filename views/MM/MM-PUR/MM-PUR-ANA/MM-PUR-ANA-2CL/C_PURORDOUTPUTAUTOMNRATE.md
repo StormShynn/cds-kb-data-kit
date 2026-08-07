@@ -36,7 +36,7 @@ tags:
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
 | `PurchaseOrder` |  | |  |  | `CHAR(10)` | Purchase Order Number |
-| `POOutputMessageItemID` |  | |  |  | `NUMC(6)` | Output Request Item ID |
+| `POOutputMessageItemID` |  | |  |  | `NUMC(6)` | ID of an Output Request Item |
 | `POOutputChannel` |  | |  |  | `CHAR(5)` | Output Channel |
 | `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
 | `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |

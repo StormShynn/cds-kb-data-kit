@@ -41,7 +41,7 @@ tags:
 | `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
 | `MaintenanceNotification` |  | |  |  | `CHAR(12)` | Notification Number |
 | `MaintCallHorizonIsNotReached` |  | |  |  | `CHAR(1)` | Scheduling status: call horizon not reached |
-| `SchedulingStatus` |  | |  |  | `CHAR(1)` | Scheduling status |
+| `SchedulingStatus` |  | |  |  | `CHAR(1)` | Single-Character Flag |
 | `PlannedStartDate` |  | |  |  | `DATS(8)` | Basic start date |
 | `ReleasedByUserName` |  | |  |  | `CHAR(1)` | Scheduling determined by user |
 | `ServiceOrder` |  | |  |  | `CHAR(10)` | Transaction ID |

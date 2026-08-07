@@ -5,23 +5,9 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPOSCURRENTDATEQRY')/$value
 semantic_en: Commodity Position Current Date Query
-semantic_vi: Commodity Position Current Date Query — CDS view tiêu dùng dựa trên I_CmmdtyPositionRepQtyCube.
-keywords:
-  - commodity
-  - position
-  - current
-  - date
-  - query
-  - transaction
-  - type
-  - pricing
-  - condition
-  - evaluation
-  - company
-  - code
 tags:
   - LO
   - bo:purchaseorder
@@ -31,6 +17,7 @@ tags:
   - LO-CMM-BF
   - lob:logistics general
   - lob:sourcing & procurement
+  - metadata-only
 ---
 # C_CMMDTYPOSCURRENTDATEQRY
 
@@ -42,18 +29,18 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPOSCURRENTDATEQRY')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPOSCURRENTDATEQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CommodityTransactionType` | ✓ | |  |  | `CHAR(1)` | Paper/Physical Indicator for Exposure Group |
-| `PricingKey` | ✓ | |  |  | `CHAR(40)` | A key required to access versioned pricing data |
-| `ConditionType` | ✓ | |  |  | `CHAR(4)` | Condition Type |
-| `EvaluationDate` | ✓ | |  |  | `DATS(8)` | Latest Evaluation Date |
-| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
-| `CommodityExposureCategory` | ✓ | |  |  | `CHAR(2)` | Exposure Category |
+| `CommodityTransactionType` |  | |  |  | `CHAR(1)` | Paper/Physical Indicator for Exposure Group |
+| `PricingKey` |  | |  |  | `CHAR(40)` | A key required to access versioned pricing data |
+| `ConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
+| `EvaluationDate` |  | |  |  | `DATS(8)` | Latest Evaluation Date |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CommodityExposureCategory` |  | |  |  | `CHAR(2)` | Exposure Category |
 | `EndOfDaySnapshotFromDate` |  | |  |  | `DATS(8)` | Snapshot Start Date |
 | `EndOfDaySnapshotToDate` |  | |  |  | `DATS(8)` | Snapshot End Date |
 | `MTMDataSelectionType` |  | |  |  | `CHAR(2)` | VLOGP Data Selection Type |
@@ -129,251 +116,10 @@ tags:
 | `AdjustedReportingDate` |  | |  |  | `DATS(8)` | Adjusted Reporting Date |
 | `AdjustedReportingYear` |  | |  |  | `CHAR(4)` | Abjusted Reporting Year |
 | `AdjustedReportingMonth` |  | |  |  | `CHAR(3)` | Adjusted Reporting Month |
+| `SystemMessageText` |  | |  |  | `CHAR(73)` | Message Text |
 | `HasError` |  | |  |  | `CHAR(1)` | Error Flag for Data Record of Commodity Risk Analytics |
 | `PriceSettingMethod` |  | |  |  | `NUMC(5)` | Price Setting Method |
 | `PriceSettingMethodStatus` |  | |  |  | `NUMC(5)` | Price Setting Method Status |
 | `ValidToDateTime` |  | |  |  | `DEC(15)` | Valid-To Timestamp |
 | `PricingProcedure` |  | |  |  | `CHAR(6)` | Procedure (Pricing, Output Control, Acct. Det., Costing,...) |
 | `PricingConditionTerm` |  | |  |  | `NUMC(5)` | CPE Term - Number in Formula |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPOSCURRENTDATEQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYPOSCURRENTDATEQRY')/$value)*
-
-```abap
-@AbapCatalog.sqlViewName: 'CCMMPOSCURQRY'
-@ClientHandling.algorithm: #SESSION_VARIABLE
-@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
-@AbapCatalog.compiler.compareFilter: true
-@Analytics.query: true
-@EndUserText.label: 'Commodity Position Current Date Query'
-@VDM.viewType: #CONSUMPTION
-@ObjectModel.usageType:{  sizeCategory: #XL,
-                          serviceQuality: #D,
-                          dataClass: #TRANSACTIONAL }
-@Metadata.ignorePropagatedAnnotations: true
-@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
-
-define view C_CmmdtyPosCurrentDateQry
-  with parameters
-    @Consumption.hidden: true
-    @Consumption.defaultValue: '03'
-    P_MTMDataSelectionType     : cmm_vlogp_posrep_consump_type, -- Analytic consumption type
-    @Consumption.hidden: true
-    @Environment.systemField: #SYSTEM_DATE
-    P_EndOfDaySnapshotFromDate : cds_evaluation_date,      -- Evaluation Date
-    @Consumption.hidden: true
-    @Environment.systemField: #SYSTEM_DATE
-    P_EndOfDaySnapshotToDate   : cds_evaluation_date_comp, -- Previuos Evaluation Date
-    @Consumption.defaultValue: 'P'
-    P_DisplayUnitOfMeasure     : cds_posrep_view_uom,       -- Display UoM
-    @Consumption.hidden: true
-    @Environment.systemField: #SYSTEM_LANGUAGE
-    P_Language              :spras  
-  as select from I_CmmdtyPositionRepQtyCube( P_DisplayUnitOfMeasure     : :P_DisplayUnitOfMeasure,
-                                             P_EndOfDaySnapshotFromDate : :P_EndOfDaySnapshotFromDate,
-                                             P_EndOfDaySnapshotToDate   : :P_EndOfDaySnapshotToDate,
-                                             P_MTMDataSelectionType     : :P_MTMDataSelectionType, 
-                                             P_OptionDeltaMethod        : '2',          // Weighted
-                                             P_OptionDeltaThreshold     : 1 ) as vlogp  //dummy value for technical reasons, threshold is only relevant for method 3
-{
-  key CommodityTransactionType,
-      //@Consumption.hidden: true   --n3278570
-  key PricingKey,
-  key ConditionType,
-  key EvaluationDate,
-      @AnalyticsDetails.query.axis: #ROWS
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  1
-      @AnalyticsDetails.query.display: #KEY_TEXT
-      @Consumption.valueHelp: 'C_T001'
-  key CompanyCode,
-  key CommodityExposureCategory,
-      vlogp.EndOfDaySnapshotFromDate,
-      vlogp.EndOfDaySnapshotToDate,
-      vlogp.MTMDataSelectionType,
-
-      vlogp.MTMDataSourceType,
-      vlogp.FinInstrExternalReference,
-      
-
-      -- Business Document
-      vlogp.SalesOrganization,
-      vlogp.DistributionChannel,
-      vlogp.Division,
-      vlogp.Creditor,
-      vlogp.SoldToParty,
-      @AnalyticsDetails.query.axis: #ROWS
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  3
-      @AnalyticsDetails.query.display: #TEXT
-      vlogp.PhysicalCommodity,
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  4
-      vlogp.Material,
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  2
-      vlogp.Plant,
-      vlogp.StorageLocation,
-      vlogp.Batch,
-      vlogp.IncotermsClassification,
-      vlogp.IncotermsTransferLocation,
-      vlogp.ConditionApplication,
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  6
-      @AnalyticsDetails.query.sortDirection: #ASC
-      vlogp.SourceDocument,
-      @AnalyticsDetails.query.sortDirection: #ASC
-      @EndUserText.label: 'Document Item'
-      vlogp.SourceDocumentItem,
-      vlogp.SourceDocumentBusObjType,
-      @AnalyticsDetails.query.axis: #ROWS
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  5
-      vlogp.OriginReferenceDocument,
-      vlogp.OriginReferenceDocumentItem,
-      vlogp.OriginReferenceDocBusObjType,
-      vlogp.ReferenceDocument,
-      vlogp.ReferenceDocumentItem,
-      vlogp.ReferenceDocBusObjType,
-      vlogp.DeliveryDate,
-      vlogp.ExpectedPaymentDate,
-      vlogp.ProfitCenter,
-      vlogp.BusinessArea,
-      vlogp.PurchasingOrganization,
-      vlogp.MaterialGroup,
-      vlogp.IsIntercompanyTransfer,
-
-
-      -- Miscellanous fields
-      vlogp.MTMConditionGroup,
-
-      --Financial Fields
-      vlogp.ExposureDueDate,
-      vlogp.TreasuryPositionLongShortCode,
-      vlogp.TimeToMaturity,
-      @EndUserText.label: 'Timing'
-      vlogp.CmmdtyForwardIndexTimingText,
-      vlogp.CmmdtyForwardIndexTiming,
-      vlogp.DerivativeContractMaturityCode,
-      vlogp.FinancialAssetsMgmtProductType,
-      vlogp.FinInstrTransactionCategory,
-      vlogp.FinancialInstrumentProductType,     
-      vlogp.OptionStrikeCurrency,
-
-      //      @Consumption.hidden: true
-      vlogp.OptionStrikePrice,
-      vlogp.OptionPutCallCode,
-      vlogp.ExternalKeyFigureValue,
-      vlogp.OptionDeltaFactor,
-      vlogp.DerivativeContrSpecification,
-      vlogp.MarketIdentifierCode,
-      vlogp.MaturityKeyDate,
-
-      @Semantics.unitOfMeasure: true
-      vlogp.CommodityUnit,
-      vlogp.PriceIsRealized,
-      vlogp.ImplicitFixationIsRelevant,
-      vlogp.ConditionTermRateIsFixed,
-
-      @Semantics.unitOfMeasure: true
-      MaterialStockPriceExposureUnit,
-
-      ------- Key Figures ---------
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      UnpricedUndeliveredCtrExpsrQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'MaterialStockPriceExposureUnit'
-      UnpricedDeliveredCtrExpsrQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      UnpricedContrPriceExposureQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      @DefaultAggregation:#SUM
-      PricedUndeliveredContrExpsrQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'MaterialStockPriceExposureUnit'
-      PricedDeliveredContrExpsrQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      PricedContractsExposureQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      @DefaultAggregation:#SUM
-      TodayPricedUndeliveredExpsrQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'MaterialStockPriceExposureUnit'
-      UndeliveredMarketPrExposureQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'MaterialStockPriceExposureUnit'
-      DeliveredMarketPrExposureQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      @DefaultAggregation:#SUM
-      UnrlzdMarketPriceExposureQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      UnrealizedGoodsRcptPrcExpsrQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      UnrealizedGoodsIssPrcExpsrQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      MaterialStockExposureQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @DefaultAggregation:  #SUM
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      RealizedMaterialStkPrcExpsrQty,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      @DefaultAggregation:#SUM
-      OutrightPriceExposureQty,
-
-      vlogp.AdjustedReportingDate,
-      @AnalyticsDetails.query.axis: #COLUMNS
-      @EndUserText.label: 'Reporting Year'
-      vlogp.AdjustedReportingYear,
-      @AnalyticsDetails.query.axis: #COLUMNS
-      @EndUserText.label: 'Reporting Period'
-      vlogp.AdjustedReportingMonth,
-      
-      _CmmdtyMtmMessage[1:Language = :P_Language].SystemMessageText,
-      vlogp.HasError,
-      vlogp.PriceSettingMethod, 
-      vlogp.PriceSettingMethodStatus,
-      vlogp.ValidToDateTime,
-      vlogp.PricingProcedure,
-      vlogp.PricingConditionTerm
-      
-      
-
-      
-}
-```

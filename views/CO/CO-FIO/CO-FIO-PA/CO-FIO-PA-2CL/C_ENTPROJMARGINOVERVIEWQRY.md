@@ -1,16 +1,20 @@
 ---
 name: C_ENTPROJMARGINOVERVIEWQRY
-description: Enterprise Project Margin Overview Query
+description: This CDS view is designed to provide an overview of enterprise project margins, focusing on both recognized and planned financial metrics. It aggregates and presents data related to revenues, costs, margins, and other financial indicators associated with enterprise projects. The view is intended for analytical purposes, allowing users to filter and analyze project financial data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for enterprise projects within a specific fiscal year or company code? How does the recognized margin compare to the planned margin for enterprise projects? What is the margin percentage for enterprise projects, and how does it vary across different projects or fiscal periods? What are the adjustments made to revenue and cost, and how do they impact the overall project margin? How does the project stock value contribute to the financial overview of enterprise projects? What are the planned revenue and cost figures for enterprise projects, and how do they align with actual figures? How can project managers and stakeholders use this financial data to make informed decisions about project performance and future planning? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJMARGINOVERVIEWQRY')/$value
-semantic_en: Enterprise Project Margin Overview Query
+semantic_en: This CDS view is designed to provide an overview of enterprise project margins, focusing on both recognized and planned financial metrics. It aggregates and presents data related to revenues, costs, margins, and other financial indicators associated with enterprise projects. The view is intended for analytical purposes, allowing users to filter and analyze project financial data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for enterprise projects within a specific fiscal year or company code? How does the recognized margin compare to the planned margin for enterprise projects? What is the margin percentage for enterprise projects, and how does it vary across different projects or fiscal periods? What are the adjustments made to revenue and cost, and how do they impact the overall project margin? How does the project stock value contribute to the financial overview of enterprise projects? What are the planned revenue and cost figures for enterprise projects, and how do they align with actual figures? How can project managers and stakeholders use this financial data to make informed decisions about project performance and future planning? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+keywords:
+  - Enterprise Project Margin Overview Query
+  - Enterprise Project Margin Overview Query
+  - Enterprise Project Margin Overview Query
 tags:
   - CO
-  - bo:project
+  - bo:companycode
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
@@ -18,12 +22,14 @@ tags:
   - consumption-view
   - lob:controlling
   - lob:finance
+  - plan
   - project
+  - stock
   - metadata-only
 ---
 # C_ENTPROJMARGINOVERVIEWQRY
 
-**Enterprise Project Margin Overview Query**
+**This CDS view is designed to provide an overview of enterprise project margins, focusing on both recognized and planned financial metrics. It aggregates and presents data related to revenues, costs, margins, and other financial indicators associated with enterprise projects. The view is intended for analytical purposes, allowing users to filter and analyze project financial data based on various parameters such as fiscal year, company code, and planning category. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for enterprise projects within a specific fiscal year or company code? How does the recognized margin compare to the planned margin for enterprise projects? What is the margin percentage for enterprise projects, and how does it vary across different projects or fiscal periods? What are the adjustments made to revenue and cost, and how do they impact the overall project margin? How does the project stock value contribute to the financial overview of enterprise projects? What are the planned revenue and cost figures for enterprise projects, and how do they align with actual figures? How can project managers and stakeholders use this financial data to make informed decisions about project performance and future planning? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -92,3 +98,20 @@ tags:
 | `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
 | `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
 | `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | CO Debit/Credit Indicator |
+| `DeferredRevenueAmtInDspCrcy` |  | |  |  | `CURR(23)` | Deferred Revenue |
+| `DeferredCOGSAmtInDspCrcy` |  | |  |  | `CURR(23)` | Deferred COS |
+| `AccruedRevenueAmtInDspCrcy` |  | |  |  | `CURR(23)` | Accrued Revenue |
+| `AccruedCOGSAmtInDspCrcy` |  | |  |  | `CURR(23)` | Accrued COS |
+| `MnlContrAccrIncStatAmtInDC` |  | |  |  | `DEC(23)` |  |
+| `ImminentLossRsrvAdjAmtInDC` |  | |  |  | `DEC(23)` |  |
+| `MnlContrAccrBalShtAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
+| `ImmntLossRsrvBalShtAmtInDC` |  | |  |  | `DEC(23)` |  |
+| `DownPaymentAmountInDspCrcy` |  | |  |  | `CURR(23)` | Open Down Payment Amount in Display Currency |
+| `PlndMarginAmt` |  | |  |  | `DEC(23)` |  |
+| `PlndMarginInPct` |  | |  |  | `DECF(34)` |  |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `SalesDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `ComprnPlndRevnAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
+| `ComprnPlndCostAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
+| `ComprnPlndMarginAmt` |  | |  |  | `DEC(23)` |  |
+| `ComprnPlndMargInPct` |  | |  |  | `DECF(34)` |  |

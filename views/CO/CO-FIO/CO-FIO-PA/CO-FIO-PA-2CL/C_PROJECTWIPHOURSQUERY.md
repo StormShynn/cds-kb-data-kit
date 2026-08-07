@@ -1,20 +1,20 @@
 ---
 name: C_PROJECTWIPHOURSQUERY
-description: WIP Hours on Project - Query
+description: This CDS view is designed to provide analytical insights into work-in-progress (WIP) hours associated with projects. It aggregates and projects data related to confirmed hours, billed hours, written-off hours, non-billable hours, and WIP hours, along with their respective amounts in display currency. The view is tailored for consumption in analytical queries, allowing users to filter and analyze project-related financial and operational data. This CDS view provides the data to answer the following business questions: What are the confirmed hours and their associated amounts for a given project? How many hours have been billed, and what is the billed revenue amount for a project? What are the quantities and amounts of written-off hours for a project? How many hours are non-billable, and what is the non-billable amount for a project? What are the work-in-progress (WIP) hours and their associated amounts for a project? How does the hour balance quantity reflect the overall project hours status? What is the technical completion date for a project? What are the details of the journal entry items related to project transactions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROJECTWIPHOURSQUERY')/$value
-semantic_en: WIP Hours on Project - Query
+semantic_en: This CDS view is designed to provide analytical insights into work-in-progress (WIP) hours associated with projects. It aggregates and projects data related to confirmed hours, billed hours, written-off hours, non-billable hours, and WIP hours, along with their respective amounts in display currency. The view is tailored for consumption in analytical queries, allowing users to filter and analyze project-related financial and operational data. This CDS view provides the data to answer the following business questions: What are the confirmed hours and their associated amounts for a given project? How many hours have been billed, and what is the billed revenue amount for a project? What are the quantities and amounts of written-off hours for a project? How many hours are non-billable, and what is the non-billable amount for a project? What are the work-in-progress (WIP) hours and their associated amounts for a project? How does the hour balance quantity reflect the overall project hours status? What is the technical completion date for a project? What are the details of the journal entry items related to project transactions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - WIP Hours on Project - Query
   - WIP Hours on Project - Query
   - WIP Hours on Project - Query
 tags:
   - CO
-  - bo:project
+  - bo:companycode
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
@@ -23,11 +23,12 @@ tags:
   - lob:controlling
   - lob:finance
   - project
+  - transaction
   - metadata-only
 ---
 # C_PROJECTWIPHOURSQUERY
 
-**WIP Hours on Project - Query**
+**This CDS view is designed to provide analytical insights into work-in-progress (WIP) hours associated with projects. It aggregates and projects data related to confirmed hours, billed hours, written-off hours, non-billable hours, and WIP hours, along with their respective amounts in display currency. The view is tailored for consumption in analytical queries, allowing users to filter and analyze project-related financial and operational data. This CDS view provides the data to answer the following business questions: What are the confirmed hours and their associated amounts for a given project? How many hours have been billed, and what is the billed revenue amount for a project? What are the quantities and amounts of written-off hours for a project? How many hours are non-billable, and what is the non-billable amount for a project? What are the work-in-progress (WIP) hours and their associated amounts for a project? How does the hour balance quantity reflect the overall project hours status? What is the technical completion date for a project? What are the details of the journal entry items related to project transactions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

@@ -1,13 +1,13 @@
 ---
 name: C_SUSTPLANTADDRESSDEX
-description: This CDS view is used by SAP Product Footprint Management for the data extraction of the relevant plant address. This view provides the necessary address detail data based on the plant.
+description: This CDS view is used by Product Footprint Management for the data extraction of the relevant plant address. This view provides the necessary address detail data based on the plant.
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUSTPLANTADDRESSDEX')/$value
-semantic_en: This CDS view is used by SAP Product Footprint Management for the data extraction of the relevant plant address. This view provides the necessary address detail data based on the plant.
+semantic_en: This CDS view is used by Product Footprint Management for the data extraction of the relevant plant address. This view provides the necessary address detail data based on the plant.
 tags:
   - SUS
   - bo:material
@@ -20,7 +20,7 @@ tags:
 ---
 # C_SUSTPLANTADDRESSDEX
 
-**This CDS view is used by SAP Product Footprint Management for the data extraction of the relevant plant address. This view provides the necessary address detail data based on the plant.**
+**This CDS view is used by Product Footprint Management for the data extraction of the relevant plant address. This view provides the necessary address detail data based on the plant.**
 
 | Property | Value |
 |---|---|

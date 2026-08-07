@@ -1,13 +1,13 @@
 ---
 name: C_CUSTPROJMARGOVWQRY
-description: Customer Project Margin Query
+description: This CDS view is designed to provide an analytical query for evaluating the margin of customer projects. It aggregates and calculates various financial metrics related to project revenue, costs, and margins, allowing users to analyze the financial performance of customer projects. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for customer projects? How does the recognized margin compare to planned margins across different planning categories (Baseline, Ongoing, EAC)? What are the planned revenues, costs, and margins for customer projects in different planning categories? How do the actual costs and revenues compare to the planned figures? What is the margin percentage for recognized and planned margins? How do the recognized margins differ from planned margins in percentage terms? What are the quantities and valuation quantities associated with project costs and revenues? What is the financial impact of revenue and cost adjustments on project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTPROJMARGOVWQRY')/$value
-semantic_en: Customer Project Margin Query
+semantic_en: This CDS view is designed to provide an analytical query for evaluating the margin of customer projects. It aggregates and calculates various financial metrics related to project revenue, costs, and margins, allowing users to analyze the financial performance of customer projects. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for customer projects? How does the recognized margin compare to planned margins across different planning categories (Baseline, Ongoing, EAC)? What are the planned revenues, costs, and margins for customer projects in different planning categories? How do the actual costs and revenues compare to the planned figures? What is the margin percentage for recognized and planned margins? How do the recognized margins differ from planned margins in percentage terms? What are the quantities and valuation quantities associated with project costs and revenues? What is the financial impact of revenue and cost adjustments on project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Customer Project Margin Query
   - Customer Project Margin Query
@@ -23,12 +23,13 @@ tags:
   - customer
   - lob:controlling
   - lob:finance
+  - plan
   - project
   - metadata-only
 ---
 # C_CUSTPROJMARGOVWQRY
 
-**Customer Project Margin Query**
+**This CDS view is designed to provide an analytical query for evaluating the margin of customer projects. It aggregates and calculates various financial metrics related to project revenue, costs, and margins, allowing users to analyze the financial performance of customer projects. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for customer projects? How does the recognized margin compare to planned margins across different planning categories (Baseline, Ongoing, EAC)? What are the planned revenues, costs, and margins for customer projects in different planning categories? How do the actual costs and revenues compare to the planned figures? What is the margin percentage for recognized and planned margins? How do the recognized margins differ from planned margins in percentage terms? What are the quantities and valuation quantities associated with project costs and revenues? What is the financial impact of revenue and cost adjustments on project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -147,3 +148,6 @@ tags:
 | `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
 | `ActualValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
 | `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
+| `MnlContrAccrIncStatAmtInDC` |  | |  |  | `CURR(23)` | Manual Contract Accruals (I/S) |
+| `ImminentLossRsrvAdjAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves Adj. |
+| `ImmntLossRsrvBalShtAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves (B/S) |

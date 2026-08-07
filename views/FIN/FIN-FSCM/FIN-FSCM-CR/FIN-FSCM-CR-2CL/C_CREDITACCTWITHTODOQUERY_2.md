@@ -1,18 +1,20 @@
 ---
 name: C_CREDITACCTWITHTODOQUERY_2
-description: Credit Account With ToDo V2 Query
+description: This CDS view is designed to provide analytical insights into credit accounts, specifically focusing on credit exposure, credit limits, and related activities such as credit decision documents and resubmissions. It allows users to analyze credit data with respect to various parameters like exchange rate type, display currency, and key date. This CDS view provides the data to answer the following business questions: What is the credit exposure and credit limit for each business partner and credit segment? How much of the credit limit is utilized by each business partner? Which business partners have critical credit statuses or zero credit limits? What are the reasons for any credit account blocks? How many credit decision documents, credit limit requests, and resubmissions exist for each business partner? Are there any business partners with pending credit decision documents, credit limit requests, or resubmissions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CREDITACCTWITHTODOQUERY_2')/$value
-semantic_en: Credit Account With ToDo V2 Query
+semantic_en: This CDS view is designed to provide analytical insights into credit accounts, specifically focusing on credit exposure, credit limits, and related activities such as credit decision documents and resubmissions. It allows users to analyze credit data with respect to various parameters like exchange rate type, display currency, and key date. This CDS view provides the data to answer the following business questions: What is the credit exposure and credit limit for each business partner and credit segment? How much of the credit limit is utilized by each business partner? Which business partners have critical credit statuses or zero credit limits? What are the reasons for any credit account blocks? How many credit decision documents, credit limit requests, and resubmissions exist for each business partner? Are there any business partners with pending credit decision documents, credit limit requests, or resubmissions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - FIN
   - account
+  - bo:companycode
   - component:FIN-FSCM-CR-2CL
   - consumption-view
+  - document
   - FIN-FSCM
   - FIN-FSCM-CR
   - FIN-FSCM-CR-2CL
@@ -21,7 +23,7 @@ tags:
 ---
 # C_CREDITACCTWITHTODOQUERY_2
 
-**Credit Account With ToDo V2 Query**
+**This CDS view is designed to provide analytical insights into credit accounts, specifically focusing on credit exposure, credit limits, and related activities such as credit decision documents and resubmissions. It allows users to analyze credit data with respect to various parameters like exchange rate type, display currency, and key date. This CDS view provides the data to answer the following business questions: What is the credit exposure and credit limit for each business partner and credit segment? How much of the credit limit is utilized by each business partner? Which business partners have critical credit statuses or zero credit limits? What are the reasons for any credit account blocks? How many credit decision documents, credit limit requests, and resubmissions exist for each business partner? Are there any business partners with pending credit decision documents, credit limit requests, or resubmissions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

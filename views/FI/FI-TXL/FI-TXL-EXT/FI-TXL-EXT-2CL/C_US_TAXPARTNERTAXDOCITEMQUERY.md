@@ -37,8 +37,8 @@ tags:
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
 | `US_TaxState` |  | |  |  | `CHAR(2)` | External Tax State |
-| `US_TaxPartnerTaxDocument` |  | |  |  | `CHAR(12)` | External-tax document number |
-| `US_TaxPartnerTaxDocumentItem` |  | |  |  | `NUMC(6)` | External-tax document item number |
+| `US_TaxPartnerTaxDocument` |  | |  |  | `CHAR(12)` | External-tax Document Number |
+| `US_TaxPartnerTaxDocumentItem` |  | |  |  | `NUMC(6)` | External-tax Document Item Number |
 | `TaxJurisdictionLevel` |  | |  |  | `CHAR(1)` | Tax jurisdiction code level |
 | `UnitedStatesTaxSourcing` |  | |  |  | `CHAR(1)` | Tax Sourcing |
 | `TaxJurisdiction` |  | |  |  | `CHAR(15)` | Tax Jurisdiction |

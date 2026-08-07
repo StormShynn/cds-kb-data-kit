@@ -1,16 +1,15 @@
 ---
 name: I_BASISID
-description: Basis Identifier
+description: Basis ID
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BASISID')/$value
-semantic_en: Basis Identifier
+semantic_en: Basis ID
 tags:
   - LO
-  - bo:companycode
   - component:LO-CMM-BF
   - interface-view
   - LO-CMM
@@ -21,7 +20,7 @@ tags:
 ---
 # I_BASISID
 
-**Basis Identifier**
+**Basis ID**
 
 | Property | Value |
 |---|---|

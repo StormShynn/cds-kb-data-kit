@@ -65,7 +65,7 @@ tags:
 | `SpecialGLTransactionType` |  | |  |  | `CHAR(1)` | Special G/L Transaction Type |
 | `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
 | `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
-| `UnitOfMeasure_E` |  | |  |  | `CHAR(3)` | External Unit of Measurement in Commercial Format (3-Char.) |
+| `UnitOfMeasure_E` |  | |  |  | `CHAR(3)` | External Commercial Unit of Measurement (3-Character Format) |
 | `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
 | `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
 | `TransactionTypeDetermination` |  | |  |  | `CHAR(3)` | Transaction Key |

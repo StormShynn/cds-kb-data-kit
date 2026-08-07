@@ -1,13 +1,13 @@
 ---
 name: C_INCDNTRELWTHFILTERQRY
-description: Incident Release Case Query
+description: This CDS view retrieves the number of incident records for a specific location and its sublocations that involve an environmental release. The data can be aggregated by attributes, such as the type and size of release. This CDS view provides the data to answer the following business questions: How many incidents were reported at my location in the past year that involved an environmental release? How many releases were reported of each type? How many large releases have there been at my location? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INCDNTRELWTHFILTERQRY')/$value
-semantic_en: Incident Release Case Query
+semantic_en: This CDS view retrieves the number of incident records for a specific location and its sublocations that involve an environmental release. The data can be aggregated by attributes, such as the type and size of release. This CDS view provides the data to answer the following business questions: How many incidents were reported at my location in the past year that involved an environmental release? How many releases were reported of each type? How many large releases have there been at my location? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - EHS
   - bo:companycode
@@ -19,7 +19,7 @@ tags:
 ---
 # C_INCDNTRELWTHFILTERQRY
 
-**Incident Release Case Query**
+**This CDS view retrieves the number of incident records for a specific location and its sublocations that involve an environmental release. The data can be aggregated by attributes, such as the type and size of release. This CDS view provides the data to answer the following business questions: How many incidents were reported at my location in the past year that involved an environmental release? How many releases were reported of each type? How many large releases have there been at my location? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

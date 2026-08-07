@@ -1,13 +1,13 @@
 ---
 name: C_SLSORDCONFANLYTSQRY
-description: This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders?
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SLSORDCONFANLYTSQRY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders?
 keywords:
   - Analytics - Analyze Confirmations of Sales Orders
 tags:
@@ -26,7 +26,7 @@ tags:
 ---
 # C_SLSORDCONFANLYTSQRY
 
-**This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**This CDS view provides the prerequisites for answering the following business questions, for example: Have my sales order items been confirmed for delivery on the date requested by the customer? Have I got backlogs or bottlenecks regarding my customer's requested quantity and delivery date, for example, in the form of backorders?**
 
 | Property | Value |
 |---|---|
@@ -121,6 +121,7 @@ tags:
 | `RetailPromotion` |  | |  |  | `CHAR(10)` | Retail Promotion |
 | `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
 | `SalesDocumentRjcnReason` |  | |  |  | `CHAR(2)` | Reason for Rejection of Sales Documents |
+| `SalesDocItemSupplyBlockReason` |  | |  |  | `CHAR(2)` | Supply Block Reason |
 | `ItemOrderProbabilityInPercent` |  | |  |  | `NUMC(3)` | Order Probability of the Item |
 | `SalesOrderCondition` |  | |  |  | `CHAR(10)` | Sales Order Condition |
 | `PricingDate` |  | |  |  | `DATS(8)` | Date for Pricing and Exchange Rate |
@@ -196,6 +197,7 @@ tags:
 | `OvrlItmGeneralIncompletionSts` |  | |  |  | `CHAR(1)` | Incompletion Status (All Items) |
 | `OvrlItmBillingIncompletionSts` |  | |  |  | `CHAR(1)` | Billing Incompletion Status (All Items) |
 | `OvrlItmDelivIncompletionSts` |  | |  |  | `CHAR(1)` | Delivery Incompletion Status (All Items) |
+| `SlsDocOvrlSupplyBlockStatus` |  | |  |  | `CHAR(1)` | Overall Supply Block Status (Header) |
 | `SDProcessStatus` |  | |  |  | `CHAR(1)` | Overall Processing Status (Item) |
 | `DeliveryConfirmationStatus` |  | |  |  | `CHAR(1)` | Delivery Confirmation Status (Item) |
 | `PurchaseConfirmationStatus` |  | |  |  | `CHAR(1)` | Purchase Order Confirmation Status (Item) |
@@ -210,6 +212,7 @@ tags:
 | `ItemDeliveryIncompletionStatus` |  | |  |  | `CHAR(1)` | Delivery Incompletion Status (Item) |
 | `SDDocumentRejectionStatus` |  | |  |  | `CHAR(1)` | Rejection Status (Item) |
 | `TotalSDDocReferenceStatus` |  | |  |  | `CHAR(1)` | Overall Reference Status (Item) |
+| `SlsDocItmOvrlSupplyBlockStatus` |  | |  |  | `CHAR(1)` | Supply Block Status (Item) |
 | `SlsDocItmReqdDelivConfSts` |  | |  |  | `CHAR(1)` | Sales Order Item Confirmation Status |
 | `OrderQuantity` |  | |  |  | `QUAN(15)` | Cumulative Order Quantity in Sales Unit |
 | `ConfdDelivQtyInOrderQtyUnit` |  | |  |  | `QUAN(15)` | Cumulative Confirmed Quantity in Sales Unit |

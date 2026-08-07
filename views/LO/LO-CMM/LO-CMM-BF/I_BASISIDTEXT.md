@@ -1,16 +1,15 @@
 ---
 name: I_BASISIDTEXT
-description: Basis Identifier - Text
+description: Basis ID - Text
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BASISIDTEXT')/$value
-semantic_en: Basis Identifier - Text
+semantic_en: Basis ID - Text
 tags:
   - LO
-  - bo:companycode
   - component:LO-CMM-BF
   - interface-view
   - LO-CMM
@@ -21,7 +20,7 @@ tags:
 ---
 # I_BASISIDTEXT
 
-**Basis Identifier - Text**
+**Basis ID - Text**
 
 | Property | Value |
 |---|---|

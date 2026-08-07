@@ -1,13 +1,13 @@
 ---
 name: C_CUSTPROJBILLGELMNTMARGQ
-description: Customer Proj with Billing Element Query
+description: This CDS view is designed to provide analytical insights into customer projects with a focus on billing elements. It aggregates and presents financial data related to projects, such as revenue, costs, and margins, allowing for detailed analysis of project performance. This CDS view provides the data to answer the following business questions: What is the billed and recognized revenue for customer projects with billing elements? How do the recognized costs and margins compare to planned values across different planning categories (Baseline, Ongoing, EAC)? What are the differences between recognized and planned margins, both in absolute terms and as a percentage? How do actual costs and revenues align with planned figures for various planning categories? What is the financial performance of projects in terms of cost, revenue, and margin adjustments? How do different fiscal periods and years impact the financial outcomes of projects? What are the key financial metrics for projects, such as actual costs, planned costs, and revenue adjustments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTPROJBILLGELMNTMARGQ')/$value
-semantic_en: Customer Proj with Billing Element Query
+semantic_en: This CDS view is designed to provide analytical insights into customer projects with a focus on billing elements. It aggregates and presents financial data related to projects, such as revenue, costs, and margins, allowing for detailed analysis of project performance. This CDS view provides the data to answer the following business questions: What is the billed and recognized revenue for customer projects with billing elements? How do the recognized costs and margins compare to planned values across different planning categories (Baseline, Ongoing, EAC)? What are the differences between recognized and planned margins, both in absolute terms and as a percentage? How do actual costs and revenues align with planned figures for various planning categories? What is the financial performance of projects in terms of cost, revenue, and margin adjustments? How do different fiscal periods and years impact the financial outcomes of projects? What are the key financial metrics for projects, such as actual costs, planned costs, and revenue adjustments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Customer Proj with Billing Element Query
   - Customer Proj with Billing Element Query
@@ -24,11 +24,13 @@ tags:
   - customer
   - lob:controlling
   - lob:finance
+  - plan
+  - project
   - metadata-only
 ---
 # C_CUSTPROJBILLGELMNTMARGQ
 
-**Customer Proj with Billing Element Query**
+**This CDS view is designed to provide analytical insights into customer projects with a focus on billing elements. It aggregates and presents financial data related to projects, such as revenue, costs, and margins, allowing for detailed analysis of project performance. This CDS view provides the data to answer the following business questions: What is the billed and recognized revenue for customer projects with billing elements? How do the recognized costs and margins compare to planned values across different planning categories (Baseline, Ongoing, EAC)? What are the differences between recognized and planned margins, both in absolute terms and as a percentage? How do actual costs and revenues align with planned figures for various planning categories? What is the financial performance of projects in terms of cost, revenue, and margin adjustments? How do different fiscal periods and years impact the financial outcomes of projects? What are the key financial metrics for projects, such as actual costs, planned costs, and revenue adjustments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -147,3 +149,6 @@ tags:
 | `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
 | `ActualValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
 | `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
+| `MnlContrAccrIncStatAmtInDC` |  | |  |  | `CURR(23)` | Manual Contract Accruals (I/S) |
+| `ImminentLossRsrvAdjAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves Adj. |
+| `ImmntLossRsrvBalShtAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves (B/S) |

@@ -1,17 +1,19 @@
 ---
 name: C_GVOAINCSTMNTNATROFEXPNQ
-description: GVoA Income Stmnt Natr of Expn Query
+description: Use this CDS view to extend the Income Statement - Nature of Expense business page of the Group View on Accounting review booklet. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GVOAINCSTMNTNATROFEXPNQ')/$value
-semantic_en: GVoA Income Stmnt Natr of Expn Query
+semantic_en: Use this CDS view to extend the Income Statement - Nature of Expense business page of the Group View on Accounting review booklet. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - GVoA Income Stmnt Natr of Expn Query
 tags:
   - FIN
+  - account
+  - bo:companycode
   - component:FIN-CS-EA-2CL
   - consumption-view
   - FIN-CS
@@ -22,7 +24,7 @@ tags:
 ---
 # C_GVOAINCSTMNTNATROFEXPNQ
 
-**GVoA Income Stmnt Natr of Expn Query**
+**Use this CDS view to extend the Income Statement - Nature of Expense business page of the Group View on Accounting review booklet. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

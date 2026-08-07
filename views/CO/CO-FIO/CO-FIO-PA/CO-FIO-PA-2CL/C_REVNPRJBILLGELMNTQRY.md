@@ -1,13 +1,17 @@
 ---
 name: C_REVNPRJBILLGELMNTQRY
-description: Revenue Prj with Billing Element Query
+description: This CDS view is designed to provide a comprehensive analytical query for revenue projections associated with billing elements in projects. It aggregates and presents financial data related to projects, such as billed and recognized revenue, costs, margins, and other financial metrics, allowing for detailed financial analysis and planning. This CDS view provides the data to answer the following business questions: What is the billed revenue for specific projects and billing elements? How much revenue has been recognized for projects and billing elements? What are the recognized costs and margins for projects? What is the planned revenue and cost for projects, and how do they compare to actuals? What is the margin percentage for recognized revenue? How do deferred and accrued revenues and costs impact the financials of projects? What are the financial adjustments related to revenue and cost of sales (COS)? How do different planning categories affect the financial projections of projects? What is the financial impact of manual contract accruals on the balance sheet and income statement? How do various fiscal periods and years affect project financials? What are the financial details associated with specific company codes, profit centers, and functional areas? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_REVNPRJBILLGELMNTQRY')/$value
-semantic_en: Revenue Prj with Billing Element Query
+semantic_en: This CDS view is designed to provide a comprehensive analytical query for revenue projections associated with billing elements in projects. It aggregates and presents financial data related to projects, such as billed and recognized revenue, costs, margins, and other financial metrics, allowing for detailed financial analysis and planning. This CDS view provides the data to answer the following business questions: What is the billed revenue for specific projects and billing elements? How much revenue has been recognized for projects and billing elements? What are the recognized costs and margins for projects? What is the planned revenue and cost for projects, and how do they compare to actuals? What is the margin percentage for recognized revenue? How do deferred and accrued revenues and costs impact the financials of projects? What are the financial adjustments related to revenue and cost of sales (COS)? How do different planning categories affect the financial projections of projects? What is the financial impact of manual contract accruals on the balance sheet and income statement? How do various fiscal periods and years affect project financials? What are the financial details associated with specific company codes, profit centers, and functional areas? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+keywords:
+  - Revenue Prj with Billing Element Query
+  - Revenue Prj with Billing Element Query
+  - Revenue Prj with Billing Element Query
 tags:
   - CO
   - billing
@@ -17,13 +21,16 @@ tags:
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
+  - contract
   - lob:controlling
   - lob:finance
+  - plan
+  - project
   - metadata-only
 ---
 # C_REVNPRJBILLGELMNTQRY
 
-**Revenue Prj with Billing Element Query**
+**This CDS view is designed to provide a comprehensive analytical query for revenue projections associated with billing elements in projects. It aggregates and presents financial data related to projects, such as billed and recognized revenue, costs, margins, and other financial metrics, allowing for detailed financial analysis and planning. This CDS view provides the data to answer the following business questions: What is the billed revenue for specific projects and billing elements? How much revenue has been recognized for projects and billing elements? What are the recognized costs and margins for projects? What is the planned revenue and cost for projects, and how do they compare to actuals? What is the margin percentage for recognized revenue? How do deferred and accrued revenues and costs impact the financials of projects? What are the financial adjustments related to revenue and cost of sales (COS)? How do different planning categories affect the financial projections of projects? What is the financial impact of manual contract accruals on the balance sheet and income statement? How do various fiscal periods and years affect project financials? What are the financial details associated with specific company codes, profit centers, and functional areas? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -103,10 +110,12 @@ tags:
 | `ProjectManager` |  | |  |  | `CHAR(10)` | Business Partner Number |
 | `RecognizedCostAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
 | `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
-| `MnlContrAccrIncStatAmtInDC` |  | |  |  | `CURR(23)` | Manual Contract Accrual (I/S) |
+| `MnlContrAccrIncStatAmtInDC` |  | |  |  | `CURR(23)` | Manual Contract Accruals (I/S) |
 | `FinancialPlanningReqTransSqnc` |  | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
 | `FinancialPlanningDataPacket` |  | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
 | `LineIsSemTagCalculated` |  | |  |  | `CHAR(1)` | Indicator: Calculated by Semantic Tag |
 | `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
 | `FinancialPlanningEntryItem` |  | |  |  | `INT4(10)` | Financial Planning Entry Item |
 | `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | CO Debit/Credit Indicator |
+| `ImminentLossRsrvAdjAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves Adj. |
+| `ImmntLossRsrvBalShtAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves (B/S) |

@@ -1,15 +1,16 @@
 ---
 name: C_EHSLOCATIONDEX
-description: EHS Location
+description: This CDS view is used for data extraction and retrieves certain location details, namely location ID and waste registration number. This CDS view provides the data to answer the following business questions: What's the ID or waste registration number of a particular location? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EHSLOCATIONDEX')/$value
-semantic_en: EHS Location
+semantic_en: This CDS view is used for data extraction and retrieves certain location details, namely location ID and waste registration number. This CDS view provides the data to answer the following business questions: What's the ID or waste registration number of a particular location? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - EHS
+  - bo:companycode
   - component:EHS-SUS-FND-EHS
   - consumption-view
   - EHS-SUS
@@ -19,7 +20,7 @@ tags:
 ---
 # C_EHSLOCATIONDEX
 
-**EHS Location**
+**This CDS view is used for data extraction and retrieves certain location details, namely location ID and waste registration number. This CDS view provides the data to answer the following business questions: What's the ID or waste registration number of a particular location? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

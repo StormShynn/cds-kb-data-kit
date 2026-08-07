@@ -1,28 +1,31 @@
 ---
 name: C_GVOACASHFLOWQ
-description: GVoA Cash Flow Statement Query
+description: The primary purpose of this CDS view is to facilitate the generation of a cash flow statement by aggregating and analyzing financial data across various dimensions and measures. It is designed to support complex financial reporting requirements, including the ability to compare current and previous fiscal periods and quarters, handle multiple currencies, and manage hierarchical data structures. This CDS view provides the data to answer the following business questions: Cash flow analysis: What are the cash flow figures for a specific fiscal year and period, and how do they compare to previous periods? Currency impact: How do cash flow amounts vary when expressed in different currencies (transaction, local, and group currencies)? Consolidation hierarchies: How do different consolidation hierarchies (e.g., unit, profit center, segment, chosen reporting item hierarchy) impact the cash flow figures? Financial statement items: What are the cash flow values associated with specific financial statement items, and how are they adjusted for sign and currency? Period comparisons: How do cash flow figures for the current fiscal period compare to those of the previous fiscal period or year? Release status: What is the status of accounting entries and how do they affect the cash flow? Group reporting adjustments: What are the adjustments made in group reporting, and how do they impact the cash flow figures? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GVOACASHFLOWQ')/$value
-semantic_en: GVoA Cash Flow Statement Query
+semantic_en: The primary purpose of this CDS view is to facilitate the generation of a cash flow statement by aggregating and analyzing financial data across various dimensions and measures. It is designed to support complex financial reporting requirements, including the ability to compare current and previous fiscal periods and quarters, handle multiple currencies, and manage hierarchical data structures. This CDS view provides the data to answer the following business questions: Cash flow analysis: What are the cash flow figures for a specific fiscal year and period, and how do they compare to previous periods? Currency impact: How do cash flow amounts vary when expressed in different currencies (transaction, local, and group currencies)? Consolidation hierarchies: How do different consolidation hierarchies (e.g., unit, profit center, segment, chosen reporting item hierarchy) impact the cash flow figures? Financial statement items: What are the cash flow values associated with specific financial statement items, and how are they adjusted for sign and currency? Period comparisons: How do cash flow figures for the current fiscal period compare to those of the previous fiscal period or year? Release status: What is the status of accounting entries and how do they affect the cash flow? Group reporting adjustments: What are the adjustments made in group reporting, and how do they impact the cash flow figures? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - GVoA Cash Flow Statement Query
 tags:
   - FIN
+  - account
+  - bo:companycode
   - component:FIN-CS-EA-2CL
   - consumption-view
   - FIN-CS
   - FIN-CS-EA
   - FIN-CS-EA-2CL
   - lob:finance
+  - transaction
   - metadata-only
 ---
 # C_GVOACASHFLOWQ
 
-**GVoA Cash Flow Statement Query**
+**The primary purpose of this CDS view is to facilitate the generation of a cash flow statement by aggregating and analyzing financial data across various dimensions and measures. It is designed to support complex financial reporting requirements, including the ability to compare current and previous fiscal periods and quarters, handle multiple currencies, and manage hierarchical data structures. This CDS view provides the data to answer the following business questions: Cash flow analysis: What are the cash flow figures for a specific fiscal year and period, and how do they compare to previous periods? Currency impact: How do cash flow amounts vary when expressed in different currencies (transaction, local, and group currencies)? Consolidation hierarchies: How do different consolidation hierarchies (e.g., unit, profit center, segment, chosen reporting item hierarchy) impact the cash flow figures? Financial statement items: What are the cash flow values associated with specific financial statement items, and how are they adjusted for sign and currency? Period comparisons: How do cash flow figures for the current fiscal period compare to those of the previous fiscal period or year? Release status: What is the status of accounting entries and how do they affect the cash flow? Group reporting adjustments: What are the adjustments made in group reporting, and how do they impact the cash flow figures? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

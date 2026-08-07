@@ -49,6 +49,6 @@ tags:
 | `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
 | `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
 | `EHSSubjectName` |  | |  |  | `CHAR(1333)` |  |
-| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Text (Maximum 10 Characters) |
+| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Short Text with a 10-Character Maximum |
 | `NumberOfRecords` |  | |  |  | `INT4(10)` | Whole Number with +/- Sign (-2.147.483.648 .. 2.147.483.647) |
 | `EHSAmountValue` |  | |  |  | `FLTP(16)` | Amount Value |

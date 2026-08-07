@@ -1,15 +1,16 @@
 ---
 name: C_EWM_PHYSINVTRYITEMQ
-description: Whse Physical Inventory Item - Query
+description: This CDS view provides information about physical inventory items in your warehouse. This CDS view provides the data to answer the following business questions: How many active physical inventory items are in the warehouse? How many physical inventory items have been counted in the past month? How many storage bins have been covered during the physical inventory this year? How many physical inventory items have count difference? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_EWM_PHYSINVTRYITEMQ')/$value
-semantic_en: Whse Physical Inventory Item - Query
+semantic_en: This CDS view provides information about physical inventory items in your warehouse. This CDS view provides the data to answer the following business questions: How many active physical inventory items are in the warehouse? How many physical inventory items have been counted in the past month? How many storage bins have been covered during the physical inventory this year? How many physical inventory items have count difference? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - SCM
+  - bo:companycode
   - component:SCM-EWM-WOP-2CL
   - consumption-view
   - inventory
@@ -20,7 +21,7 @@ tags:
 ---
 # C_EWM_PHYSINVTRYITEMQ
 
-**Whse Physical Inventory Item - Query**
+**This CDS view provides information about physical inventory items in your warehouse. This CDS view provides the data to answer the following business questions: How many active physical inventory items are in the warehouse? How many physical inventory items have been counted in the past month? How many storage bins have been covered during the physical inventory this year? How many physical inventory items have count difference? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

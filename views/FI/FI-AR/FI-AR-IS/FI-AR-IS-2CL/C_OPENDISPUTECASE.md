@@ -1,15 +1,16 @@
 ---
 name: C_OPENDISPUTECASE
-description: Open Dispute Case
+description: This CDS view provides details of open dispute cases in SAP Dispute Management. This CDS view provides the data to answer the following business questions: What's the status of the open dispute case? What's the priority, the reason, or the disputed amount of a dispute case? Who's the processor of the open dispute case? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OPENDISPUTECASE')/$value
-semantic_en: Open Dispute Case
+semantic_en: This CDS view provides details of open dispute cases in SAP Dispute Management. This CDS view provides the data to answer the following business questions: What's the status of the open dispute case? What's the priority, the reason, or the disputed amount of a dispute case? Who's the processor of the open dispute case? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - FI
+  - bo:companycode
   - component:FI-AR-IS-2CL
   - consumption-view
   - FI-AR
@@ -20,7 +21,7 @@ tags:
 ---
 # C_OPENDISPUTECASE
 
-**Open Dispute Case**
+**This CDS view provides details of open dispute cases in SAP Dispute Management. This CDS view provides the data to answer the following business questions: What's the status of the open dispute case? What's the priority, the reason, or the disputed amount of a dispute case? Who's the processor of the open dispute case? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

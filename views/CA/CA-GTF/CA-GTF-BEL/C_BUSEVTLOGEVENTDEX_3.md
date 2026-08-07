@@ -1,15 +1,16 @@
 ---
 name: C_BUSEVTLOGEVENTDEX_3
-description: Business Event Header Data (v3)
+description: This CDS view is used to extract business event header data for: Events logged for external consumption (C2-released) Events logged for local consumption (C1-released) Events logged via direct API This CDS view provides the data to answer the following business questions: Which business event has been logged? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CA-GTF-BEL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BUSEVTLOGEVENTDEX_3')/$value
-semantic_en: Business Event Header Data (v3)
+semantic_en: This CDS view is used to extract business event header data for: Events logged for external consumption (C2-released) Events logged for local consumption (C1-released) Events logged via direct API This CDS view provides the data to answer the following business questions: Which business event has been logged? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - CA
+  - bo:companycode
   - CA-GTF
   - CA-GTF-BEL
   - component:CA-GTF-BEL
@@ -19,7 +20,7 @@ tags:
 ---
 # C_BUSEVTLOGEVENTDEX_3
 
-**Business Event Header Data (v3)**
+**This CDS view is used to extract business event header data for: Events logged for external consumption (C2-released) Events logged for local consumption (C1-released) Events logged via direct API This CDS view provides the data to answer the following business questions: Which business event has been logged? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
