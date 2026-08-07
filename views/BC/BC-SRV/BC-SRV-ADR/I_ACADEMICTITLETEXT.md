@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AcademicTitle` | ✓ | |  | `title_key` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `AcademicTitleName` |  | |  | `title_dscr` |  |  |
+| `AcademicTitle` | ✓ | |  | `title_key` | `CHAR(4)` | Academic Title: Key |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `AcademicTitleName` |  | |  | `title_dscr` | `CHAR(40)` | Academic title description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -423,9 +423,9 @@ function renderHtml(report) {
       <button data-status="missing" aria-pressed="false">✗ Missing</button>
       <button data-status="metadata-only" aria-pressed="false">◐ Metadata-only</button>
       <button data-status="full" aria-pressed="false">✓ Full DDL</button>
-      <label style="display:flex;align-items:center;gap:6px;color:var(--text-secondary);font-size:13px;cursor:pointer;white-space:nowrap">
+      <label style="display:flex;align-items:center;gap:6px;color:var(--text-secondary);font-size:13px;cursor:pointer;white-space:nowrap" title="Also hides views the Hub returned no Dev Extensibility value for (shown as —), not just ones explicitly marked Not Released">
         <input type="checkbox" id="hideNotDevExt" />
-        Hide Dev-Ext: Not Released
+        Hide Dev-Ext: Not Released / —
       </label>
     </div>
     <div class="row-count" id="rowCount"></div>
@@ -544,7 +544,7 @@ function renderHtml(report) {
     const q = search.value.trim().toUpperCase();
     const filtered = rows.filter(r => {
       if (statusFilter !== 'all' && r[3] !== statusFilter) return false;
-      if (hideNotDevExt.checked && r[8] === 'Not Released') return false;
+      if (hideNotDevExt.checked && (r[8] === 'Not Released' || !r[8])) return false;
       return matchesSearch(r, q);
     });
     renderRowsInto(tbody, rowCount, filtered, rows.length, r => {

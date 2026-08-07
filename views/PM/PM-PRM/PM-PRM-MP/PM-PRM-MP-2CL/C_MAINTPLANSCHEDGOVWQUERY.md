@@ -5,9 +5,24 @@ app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTPLANSCHEDGOVWQUERY')/$value
 semantic_en: This CDS view allows you to generate a report of maintenance orders and maintenance notifications for a set of equipment, functional locations, or assemblies. With this CDS view, you can: View maintenance orders or maintenance notifications that are planned for the future through preventive maintenance plans. View maintenance calls that are planned for the future and for which call objects are yet to be generated through maintenance plans. Retrieve information to help you prepare for execution of planned maintenance orders. Analyze the details against a fixed set of measures against the call object status such as scheduled calls, calls on hold, calls that are locked, released, or completed. Use filters to retrieve specific information (for example, filter by maintenance plans that are defined for a specific set of equipment or functional locations). Use dimensions and measures to display information in your reports. Define variants for your reports. Export variants as tiles on the SAP Fiori Launchpad. Define custom fields and use them in the analytical query. For example, you can define a fixed set of codes as a code list (relevant for compliance or criticality) and generate a report of maintenance items and maintenance plans that are defined with these custom attributes. This CDS view provides the data to answer the following business questions: Where can you see a list of maintenance calls generated or to be generated for a given period? Where can you see a list of maintenance calls which are scheduled along with their call status? Where can you see the list of calls generated from a maintenance plan with their corresponding call objects which may be a maintenance order or a maintenance notification? How can you find the number of calls that are expected to be generated in future based on the scheduling period that you have maintained? Is there a way to find the variance between the planned date and the completion date for a list of maintenance plans? Can you find the total count of maintenance calls based upon their status (on hold, skipped, fixed, and so on)? How many maintenance calls have been generated? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Maint Plan Scheduling Overview - Qry — CDS view tiêu dùng dựa trên I_MaintPlanSchedgOverviewCube.
+keywords:
+  - maint
+  - plan
+  - scheduling
+  - overview
+  - qry
+  - maintenance
+  - call
+  - number
+  - item
+  - calls
+  - mrkd
+  - deltn
+  - plans
 tags:
   - PM
   - bo:companycode
@@ -20,7 +35,6 @@ tags:
   - PM-PRM
   - PM-PRM-MP
   - PM-PRM-MP-2CL
-  - metadata-only
 ---
 # C_MAINTPLANSCHEDGOVWQUERY
 
@@ -32,15 +46,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTPLANSCHEDGOVWQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTPLANSCHEDGOVWQUERY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MaintenancePlan` |  | |  |  | `CHAR(12)` | Maintenance Plan |
-| `MaintenancePlanCallNumber` |  | |  |  | `INT4(10)` | Maintenance Plan Call Number |
-| `MaintenanceItem` |  | |  |  | `CHAR(16)` | Maintenance Item |
+| `MaintenancePlan` | ✓ | |  |  | `CHAR(12)` | Maintenance Plan |
+| `MaintenancePlanCallNumber` | ✓ | |  |  | `INT4(10)` | Maintenance Plan Call Number |
+| `MaintenanceItem` | ✓ | |  |  | `CHAR(16)` | Maintenance Item |
 | `NumberOfMaintenancePlanCalls` |  | |  |  | `DEC(9)` | Number of Maintenance Plan Calls |
 | `NrOfMrkdForDeltnMaintPlans` |  | |  |  | `DEC(9)` | Number of Maintenance Plans Marked for Deletion |
 | `NrOfInactiveMaintenancePlans` |  | |  |  | `DEC(9)` | Number of  inactive Maintenance Plans |
@@ -119,3 +133,183 @@ tags:
 | `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
 | `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
 | `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Technical Object Authorization Group |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTPLANSCHEDGOVWQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTPLANSCHEDGOVWQUERY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CMPSCHDOVWQRY'
+@EndUserText.label: 'Maint Plan Scheduling Overview - Qry'
+@VDM.viewType: #CONSUMPTION
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations: true
+@Analytics.query: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@OData.publish: true
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@AbapCatalog.preserveKey:true
+@AbapCatalog.compiler.compareFilter:true
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Analytics.internalName:#LOCAL
+
+define view C_MaintPlanSchedgOvwQuery
+  as select from I_MaintPlanSchedgOverviewCube
+{
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+  key MaintenancePlan,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      @EndUserText.label: 'Maintenance Plan Call No.'  
+  key MaintenancePlanCallNumber,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+  key MaintenanceItem,
+      @Aggregation.default: #SUM
+      NumberOfMaintenancePlanCalls,
+      @Aggregation.default: #SUM
+      NrOfMrkdForDeltnMaintPlans,
+      @Aggregation.default: #SUM
+      NrOfInactiveMaintenancePlans,
+      @Aggregation.default: #SUM
+      NrOfScheduledMaintenancePlans,
+      @Aggregation.default: #SUM
+      NrOfCreatedMaintenancePlans,
+      @Aggregation.default: #SUM
+      NrOfFixedMaintenancePlanCalls,
+      @Aggregation.default: #SUM
+      NrOfSkippedMaintPlanCalls,
+      @Aggregation.default: #SUM
+      NrOfMnllyCalledMaintPlnCalls,
+      @Aggregation.default: #SUM
+      NrOfCalledMaintenancePlanCalls,
+      @Aggregation.default: #SUM
+      NrOfCompletedMaintPlanCalls,
+      @Aggregation.default: #SUM
+      NrOfOnHoldMaintenancePlanCalls,
+      @Aggregation.default: #SUM
+      NrOfInactiveMaintPlanCalls,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      @EndUserText.label: 'Plan Category'  
+      MaintenancePlanCategory,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      @EndUserText.label: 'Plan Type'
+      //  @ObjectModel.text.association: '_MaintenancePlanType._Text'
+      MaintenancePlanType,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      MaintenanceStrategy,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      @EndUserText.label: 'Maintenance Plan Sort Field'
+      MaintenancePlanSortField,
+      @EndUserText.label: 'Cycle Internal Counter'
+      MaintenancePlanCycle,
+      @EndUserText.label: 'Counter'
+      MeasuringPoint,
+      //StatusCode,
+      // @ObjectModel.text.association: '_MaintPlanActiveSystemStatus._Text'
+      MaintPlanActiveSystemStatus,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true }
+      MaintenanceCallNextPlannedDate,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true }
+      @EndUserText.label: 'Call Date'
+      MaintenanceCallDate,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true }
+      @EndUserText.label: 'Last Call On'
+      MaintPlanLastScheduledDate,
+      MaintenanceItemDescription,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      FunctionalLocation,
+      FunctionalLocationObjectType,
+      ConstructionMaterial,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      Equipment,
+      EquipmentObjectType,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      Class,
+      Assembly,
+      Material,
+      SerialNumber,
+      //MaintenanceItemHasObjectList,
+      MaintItemHasObjectList,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      MaintenanceOrder,
+      MaintenanceNotification,
+      ServiceEntrySheet,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      RevisionNumber,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true }
+      @EndUserText.label: 'Start Date'
+      PlannedStartDate,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true }
+      LatestAcceptableCompletionDate,
+      @Consumption.filter: { selectionType : #RANGE, multipleSelections : true }
+      @Consumption.valueHelpDefinition: [{ entity: { name:'C_GregorianCalDateFuncVH', element:'DateFunction'}}]
+      CompletionDate,
+      CompletionTime,
+      MaintCallHorizonIsNotReached,
+      //SchedulingStatus,
+      // _MaintenancePlanCallStatus._Text.MaintenancePlanCallStatusText,
+      //@ObjectModel.text.association: '_MaintenancePlanCallStatus._Text'
+      MaintenancePlanCallStatus,
+      ReleasedByUserName,
+      ServiceOrder,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      MaintenancePlannerGroup,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      MaintenancePlanningPlant,
+      BusinessArea,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      MaintenanceOrderType,
+      NotificationType,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      @EndUserText.label: 'Maintenance Activity Type'
+//       @Consumption.valueHelpDefinition: [
+//        { entity:  { name:    'I_MaintActyTypeStdVH',
+//                     element: 'MaintenanceActivityType' }
+//        }]
+      MaintenanceActivityType,
+      @EndUserText.label: 'Work Center Internal ID'
+      MainWorkCenterInternalID,
+      @EndUserText.label: 'Main Work Center'
+      MainWorkCenter,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      TaskListType,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      TaskListGroup,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      TaskListGroupCounter,
+      PurchaseOrder,
+      PurchaseOrderItem,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      MaintenancePlant,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      AssetLocation,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      AssetRoom,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      PlantSection,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      WorkCenter,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      ABCIndicator,
+      @EndUserText.label: 'Location Sort Field'
+      MaintObjectFreeDefinedAttrib,
+      CompanyCode,
+      MasterFixedAsset,
+      FixedAsset,
+      ControllingArea,
+      @Consumption.filter: { selectionType : #SINGLE, multipleSelections : true }
+      CostCenter,
+      //WBSElementInternalID,
+      WBSElementExternalID,
+      StandingOrderNumber,
+      SalesDocument,
+      SalesDocumentItem,
+      SalesOrganization,
+      DistributionChannel,
+      OrganizationDivision,
+      AuthorizationGroup
+}
+```

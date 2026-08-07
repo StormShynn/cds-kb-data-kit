@@ -5,9 +5,18 @@ app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERCOMPONENTDEX')/$value
 semantic_en: Maintenance Order Component
+semantic_vi: Maintenance Order Component — CDS view tiêu dùng dựa trên I_MaintenanceOrderComponent_2.
+keywords:
+  - maintenance
+  - order
+  - component
+  - reservation
+  - item
+  - type
+  - operation
 tags:
   - PM
   - bo:purchaseorder
@@ -18,7 +27,6 @@ tags:
   - PM-WOC
   - PM-WOC-MO
   - PM-WOC-MO-2CL
-  - metadata-only
 ---
 # C_MAINTORDERCOMPONENTDEX
 
@@ -30,15 +38,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERCOMPONENTDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERCOMPONENTDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Reservation` |  | |  |  | `NUMC(10)` | Number of reservation/dependent requirements |
-| `ReservationItem` |  | |  |  | `NUMC(4)` | Item Number of Reservation / Dependent Requirements |
-| `ReservationType` |  | |  |  | `CHAR(1)` | Record type |
+| `Reservation` | ✓ | |  |  | `NUMC(10)` | Number of reservation/dependent requirements |
+| `ReservationItem` | ✓ | |  |  | `NUMC(4)` | Item Number of Reservation / Dependent Requirements |
+| `ReservationType` | ✓ | |  |  | `CHAR(1)` | Record type |
 | `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
 | `MaintenanceOrderOperation` |  | |  |  | `CHAR(4)` | Maintenance Order Operation |
 | `MaintenanceOrderSubOperation` |  | |  |  | `CHAR(4)` | Maintenance Order Suboperation |
@@ -124,3 +132,190 @@ tags:
 | `MaintOrdOpCompProcmtCatalogItm` |  | |  |  | `CHAR(40)` | Product ID in Catalog |
 | `QuantityWithdrawnInBaseUnit` |  | |  |  | `QUAN(13)` | Quantity withdrawn |
 | `ConfirmedAvailableQuantity` |  | |  |  | `QUAN(15)` | Available Quantity |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERCOMPONENTDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDERCOMPONENTDEX')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #REQUIRED
+@EndUserText.label: 'Maintenance Order Component'
+@Metadata.ignorePropagatedAnnotations: true
+
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.usageType: {serviceQuality: #D, sizeCategory: #XL, dataClass: #MIXED}
+@ObjectModel.supportedCapabilities:[ #EXTRACTION_DATA_SOURCE ]
+@ObjectModel.modelingPattern: #NONE
+@ObjectModel.sapObjectNodeType.name: 'MaintOrderOperationComponent2'
+
+@Analytics: {
+  dataCategory: #FACT,
+  dataExtraction: {
+    enabled: true,
+        delta.changeDataCapture: {
+            mapping:[
+                      {
+                        table: 'RESB', role: #MAIN,
+                        viewElement: ['Reservation','ReservationItem','ReservationType'],
+                        tableElement: ['RSNUM', 'RSPOS', 'RSART']
+                      },
+                      {
+                        table: 'rsdb', role: #LEFT_OUTER_TO_ONE_JOIN,
+                        viewElement: ['Reservation','ReservationItem','ReservationType','ResvnPurchasingDocumentNumber'],
+                        tableElement: ['RSNUM', 'RSPOS', 'RSART', 'RSINZ']
+                      },
+                      {
+                        table: 'rsadd', role:  #LEFT_OUTER_TO_ONE_JOIN,
+                        viewElement: ['Reservation','ReservationItem','ReservationType'],
+                        tableElement: ['RSNUM', 'RSPOS', 'RSART']
+                      }
+                    ]
+                 }
+              }
+          }
+
+/*+[hideWarning] { "IDS" : [ "KEY_CHECK" ] }*/
+
+define view entity C_MaintOrderComponentDEX
+  as select from I_MaintenanceOrderComponent_2 as _MaintenanceOrderComponent
+{
+      //keys as underlying main table resb
+  key Reservation,
+  key ReservationItem,
+  key ReservationType,
+      //exposing additional keys
+      MaintenanceOrder,
+      MaintenanceOrderOperation,
+      MaintenanceOrderSubOperation,
+      MaintOrderComponentInternalID,
+      MaintenanceOrderComponent,
+      ResvnPurchasingDocumentNumber,
+
+      // Order Header. Header data will be exposed via SONT MaintenanceOrder
+      //      _MaintenanceOrderDEX.FunctionalLocation                                           as FunctionalLocation,
+      //      _MaintenanceOrderDEX.Equipment                                                    as Equipment,
+      //      _MaintenanceOrderDEX.Assembly                                                     as Assembly,
+      //      _MaintenanceOrderDEX.MaintenanceActivityType                                      as MaintenanceActivityType,
+      //      _MaintenanceOrderDEX.MaintenancePlannerGroup                                      as MaintenancePlannerGroup,
+      //      _MaintenanceOrderDEX.MaintenancePlanningPlant                                     as MaintenancePlanningPlant,
+      //      _MaintenanceOrderDEX.MaintenanceOrderType                                         as MaintenanceOrderType,
+      //      _MaintenanceOrderDEX.MaintenancePlant                                             as MaintenancePlant,
+      //      _MaintenanceOrderDEX.MaintObjectLocAcctAssgmtNmbr                                 as MaintObjectLocAcctAssgmtNmbr,
+      //
+      //      @Semantics.systemDate.createdAt: true
+      //      _MaintenanceOrder._Order.CreationDate,
+      //      @Semantics.systemDateTime.lastChangedAt: true
+      //      _MaintenanceOrderDEX.LastChangeDateTime,
+      //
+      //      _MaintenanceOrderDEX.MaintOrdProcessPhaseCode                                        as MaintOrdProcessPhaseCode,
+      //      _MaintenanceOrderDEX.MaintOrdProcessSubPhaseCode                                     as MaintOrdProcessSubPhaseCode,
+      //      _MaintenanceOrderDEX.LatestAcceptableCompletionDate                                  as LatestAcceptableCompletionDate,
+      //      _MaintenanceOrder.PrevLtstAccptblCompletionDate                                   as PrevLtstAccptblCompletionDate,
+      //      _MaintenanceOrderDEX.MaintOrderProcessingContext                                     as MaintOrderProcessingContext,
+      //      cast ( _MaintenanceOrder._WBSElement.WBSElement as vdm_ps_posid preserving type ) as WBSElement,
+      //       _MaintenanceOrderDEX.ControllingArea,
+      //      _MaintenanceOrderDEX.ResponsibleCostCenter,
+
+      //Reservation and other
+      ReservationIsFinallyIssued,
+      Plant,
+      StorageLocation,
+      Material,
+      ComponentDescription,
+      MaintComponentItemCategory,
+      MaintOrdOpCompRequisitioner,
+      MaterialGroup,
+      Supplier,
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      RequirementQuantityInBaseUnit,
+      BaseUnit,
+      @Semantics.quantity.unitOfMeasure: 'UnitOfEntry'
+      QuantityInUnitOfEntry,
+      UnitOfEntry,
+      MaintOrderCompDebitCreditCode,
+      @Semantics.booleanIndicator: true
+      PurReqnOrResvnGeneration,
+      @EndUserText.label: 'Direct Procurement Indicator'
+      MaterialCompIsProcuredDirectly,
+      RequirementDate,
+      RequirementTime,
+      ProductTypeCode,
+      ServicePerformer,
+      PerformancePeriodStartDate,
+      PerformancePeriodEndDate,
+      PerformancePeriodStartTime,
+      PerformancePeriodEndTime,
+      @Semantics.quantity.unitOfMeasure: 'LeanServiceDurationUnit'
+      LeanServiceDuration,
+      LeanServiceDurationUnit,
+      DistributionFunction,
+      MaintOrdCompDeliveryDateAdjmt,
+      SrvcSchedgIsAlignedWthOpWrkCtr,
+      PurchaseRequisition,
+      PurchaseRequisitionItem,
+      MaintOrderRoutingNumber,
+      MaintOrderOperationCounter,
+      GoodsMovementType,
+      GoodsMovementIsAllowed,
+
+      MaintenanceOrderComponentBatch,
+      MaintOrdOpComponentGLAccount,
+      MaintOrdOpCompCostingRelevancy,
+      MaintCompAltvProdUsgeRateInPct,
+      MaintOrderOpComponentSortText,
+      MaintOrdOpCompIsBulkProduct,
+      MaterialProvisionType,
+      MaintOrdOpCompAssgdWBSElmntInt,
+      @Semantics.amount.currencyCode: 'MaintOrdOpComponentCurrency'
+      MaintOrderOpComponentPrice,
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      MaintOrdOpCompPriceUnitQty,
+      MatlCompIsMarkedForBackflush,
+      PurchasingGroup,
+      DeliveryTimeInDays,
+      MaintOrdOpCompGdsRecipientName,
+      MaintOrdOpCompUnloadingPtTxt,
+      GoodsReceiptDurationInWorkDays,
+      PurchasingInfoRecord,
+      OperationLeadTimeOffset,
+      OpsLeadTimeOffsetUnit,
+      ResponsiblePurchaseOrg,
+      MaintOrdCompPurOutlineAgrmtItm,
+      IsDeleted,
+      @Semantics.amount.currencyCode: 'MaintOrdOpComponentCurrency'
+      OverallLimitAmount,
+      @Semantics.amount.currencyCode: 'MaintOrdOpComponentCurrency'
+      ExpectedOverallLimitAmount,
+      QuantityIsFixed,
+      MaintOrdOpComponentCurrency,
+      MaintOrdOpCompProcmtTrckgNmbr,
+      MaintOrdOpCompSpecialStockType,
+      @Semantics.quantity.unitOfMeasure: 'VariableSizeDimensionUnit'
+      VariableSizeDimension1,
+      VariableSizeDimensionUnit,
+      VariableSizeCompFormulaKey,
+      @Semantics.quantity.unitOfMeasure: 'VariableSizeDimensionUnit'
+      VariableSizeDimension2,
+      NumberOfVariableSizeItem,
+      @Semantics.quantity.unitOfMeasure: 'VariableSizeDimensionUnit'
+      VariableSizeDimension3,
+      @Semantics.quantity.unitOfMeasure: 'VariableSizeComponentUnit'
+      VariableSizeItemQuantity,
+      VariableSizeComponentUnit,
+      RqmtDateIsEnteredManually,
+      SupplierProduct,
+      MaintOrdCompCmtdQtyIsKept,
+      MaintOrdOpCompPurOutlineAgrmt,
+      MaintOrdOpCompProcmtCatalog,
+      MaintOrdOpCompProcmtCatalogItm,
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      QuantityWithdrawnInBaseUnit,
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      ConfirmedAvailableQuantity
+
+}
+//where
+//  _StatusObjectActiveStatus [1: StatusCode = 'I0013'].StatusCode is null // mark for deletion based on system status
+```

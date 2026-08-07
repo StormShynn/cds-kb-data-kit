@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CommunicationMediumType` | ✓ | |  | `comm_type` |  |  |
-| `CommunicationMediumTypeName` |  | |  | `comm_text` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CommunicationMediumType` | ✓ | |  | `comm_type` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `CommunicationMediumTypeName` |  | |  | `comm_text` | `CHAR(20)` | Communication type description |
 
 ## Source Code
 

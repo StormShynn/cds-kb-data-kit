@@ -5,13 +5,24 @@ app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCTIONALAREASQ2801')/$value
 semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the actual amounts per functional area and G/L account in transaction currency? What are the actual amounts per functional area and G/L account in company code currency? What are the actual amounts per functional area and G/L account in global currency? For all three currency types, you can drill down for further relevant characteristics.
+semantic_vi: Functional Areas Actuals — CDS view tiêu dùng dựa trên I_JournalEntryItemCube.
 keywords:
   - Functional Areas Actuals
-  - Functional Areas Actuals
-  - Functional Areas Actuals
+  - functional
+  - areas
+  - actuals
+  - area
+  - account
+  - cost
+  - activity
+  - type
+  - business
+  - transaction
+  - calendar
+  - month
 tags:
   - FI
   - account
@@ -23,7 +34,6 @@ tags:
   - FI-FIO-GL-2CL
   - lob:finance
   - transaction
-  - metadata-only
 ---
 # C_FUNCTIONALAREASQ2801
 
@@ -35,7 +45,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCTIONALAREASQ2801')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCTIONALAREASQ2801')/$value) |
 
 ## Fields
 
@@ -43,7 +53,6 @@ tags:
 |---|---|---|---|---|---|---|
 | `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
 | `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `GLAccountName` |  | |  |  | `CHAR(20)` | G/L Account Name |
 | `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
 | `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
 | `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
@@ -71,14 +80,14 @@ tags:
 | `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
 | `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
 | `Material` |  | |  |  | `CHAR(40)` | Material Number |
-| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
+| `MaterialGroup` |  | |  | `cast(MaterialGroup as matkl preserving type)` | `CHAR(9)` | Material Group |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
 | `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
 | `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
 | `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Partner Cost Center |
 | `PartnerFunctionalArea` |  | |  |  | `CHAR(16)` | Partner Functional Area |
-| `PartnerOrder` |  | |  |  | `CHAR(12)` | Partner Order |
+| `PartnerOrder` |  | |  | `PartnerOrder_2` | `CHAR(12)` | Partner Order |
 | `PartnerProfitCenter` |  | |  |  | `CHAR(10)` | Partner Profit Center |
 | `PartnerProject` |  | |  |  | `CHAR(24)` | Partner Project |
 | `PartnerWBSElement` |  | |  |  | `CHAR(24)` | Partner WBS Element |
@@ -92,7 +101,7 @@ tags:
 | `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
 | `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
 | `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `SoldMaterial` |  | |  |  | `CHAR(40)` | Sold Material |
+| `SoldMaterial` |  | |  | `cast(SoldMaterial as fis_sold_material preserving type)` | `CHAR(40)` | Sold Material |
 | `PartnerCompany` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
 | `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
 | `WBSElement` |  | |  |  | `CHAR(24)` | WBS Element |
@@ -103,3 +112,464 @@ tags:
 | `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
 | `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
 | `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCTIONALAREASQ2801')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCTIONALAREASQ2801')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CFIFAQ2801'
+@AbapCatalog.compiler.compareFilter: true
+@EndUserText.label: 'Functional Areas Actuals'
+@VDM.viewType: #CONSUMPTION
+@Analytics.query: true
+@OData.publish: true
+
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+
+@Analytics.settings.maxProcessingEffort: #HIGH
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+
+define view C_FunctionalAreasQ2801
+  with parameters
+
+    @Semantics.businessDate.at: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate         : vdm_v_key_date,
+
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    P_Language        : sylangu,
+
+    @Consumption.hidden: true
+    @Environment.systemField: #USER
+    P_BusinessUser    : syuname,
+
+    @Consumption.hidden: true
+    @Consumption.derivation: { lookupEntity: 'I_UserSetGetParamForCtrlgArea',
+          resultElement: 'ControllingArea',
+          binding: [ { targetElement : 'BusinessUser' , type : #PARAMETER, value : 'P_BusinessUser' } ] }
+    @AnalyticsDetails.query.variableSequence: 5
+    P_ControllingArea : kokrs,
+
+    @Consumption.derivation: { lookupEntity: 'I_Ledger',
+      resultElement: 'Ledger',
+      binding:
+      [ { targetElement : 'IsLeadingLedger' ,
+          type : #CONSTANT,
+          value : 'X'
+        }
+      ]
+    }
+    @AnalyticsDetails.query.variableSequence: 10
+    P_Ledger          : fins_ledger
+
+
+  as select from I_JournalEntryItemCube as I_JournalEntryItemCube
+{
+
+  ------------------------------------------------------------------------------------------
+  -- ROWS
+  ------------------------------------------------------------------------------------------
+
+  @AnalyticsDetails.query.variableSequence: 50
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @AnalyticsDetails.query.totals: #SHOW
+  FunctionalArea,
+
+  @AnalyticsDetails.query.variableSequence: 96
+  @Consumption.filter: {  selectionType: #HIERARCHY_NODE, multipleSelections: true, mandatory: false,
+                                        hierarchyBinding : [  { type: #USER_INPUT, value: 'GLAccountHierarchy', variableSequence: 95 } ] }
+  @AnalyticsDetails.query.displayHierarchy: #FILTER
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  GLAccount,
+  _GLAccountInChartOfAccounts._Text[1:Language = $parameters.P_Language].GLAccountName,
+
+  ------------------------------------------------------------------------------------------
+  -- FREE
+  ------------------------------------------------------------------------------------------
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CostCtrActivityType,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  BusinessTransactionType,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarMonth,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarQuarter,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarWeek,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarYear,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: true, hidden: true }
+  @Consumption.derivation: { lookupEntity: 'I_ControllingArea',
+    resultElement: 'ChartOfAccounts',
+    binding:
+    [
+      {
+        targetElement : 'ControllingArea' ,
+        type : #PARAMETER,
+        value : 'P_ControllingArea'
+      }
+    ]
+  }
+  @AnalyticsDetails.query.variableSequence: 45
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ChartOfAccounts,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  //@Consumption.derivation: {
+  //    lookupEntity: 'I_UserSettingsForCompanyCode',
+  //    resultElement: 'CompanyCode',
+  //    binding:
+  //    [
+  //      {
+  //        targetElement : 'BusinessUser' ,
+  //        type : #PARAMETER,
+  //        value : 'P_BusinessUser'
+  //      }
+  //    ]
+  //  }
+  @AnalyticsDetails.query.variableSequence: 40
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CompanyCode,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  CompanyCodeCurrency,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CostCenter,
+
+  CostSourceUnit,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Customer,
+  @AnalyticsDetails.query.variableSequence: 70
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @AnalyticsDetails.query.axis: #FREE
+  CustomerGroup,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  DistributionChannel,
+
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  OrganizationDivision,
+  //Division,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ControllingDebitCreditCode,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 30
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalPeriod,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalQuarter,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalWeek,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalYearPeriod,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalYearQuarter,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalYearWeek,
+
+  //@Consumption.filter: {selectionType: #SINGLE, multipleSelections: false, mandatory: true, hidden: true}
+  //@Consumption.derivation: {
+  //  lookupEntity: 'I_ControllingArea',
+  //  resultElement: 'FiscalYearVariant',
+  //  binding:
+  //  [
+  //    {
+  //      targetElement : 'ControllingArea' ,
+  //      type : #PARAMETER,
+  //      value : 'P_ControllingArea'
+  //    }
+  //  ]
+  //}
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalYearVariant,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  GlobalCurrency,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  AccountingDocument,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  LedgerGLLineItem,
+
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'Product'
+//  @VDM.lifecycle.status:    #DEPRECATED
+//  @VDM.lifecycle.successor: 'Product'
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Material, // do not use any longer, use Product
+
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'SoldProductGroup'
+//  @VDM.lifecycle.status:    #DEPRECATED
+//  @VDM.lifecycle.successor: 'SoldProdcutGroup'
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  cast(MaterialGroup as matkl preserving type)            as MaterialGroup, // do not use any longer, use SoldProductGroup
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: true }
+  @Consumption.derivation: { lookupEntity: 'I_CalendarDate',
+          resultElement: 'CalendarYear', binding: [
+          { targetElement : 'CalendarDate' , type : #PARAMETER, value : 'P_KeyDate' } ]
+         }
+  @AnalyticsDetails.query.variableSequence: 20
+  LedgerFiscalYear,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  AccountAssignmentType,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  OrderID,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  PartnerCostCtrActivityType,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerCostCenter,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerFunctionalArea,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerOrder_2                                          as PartnerOrder,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerProfitCenter,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerProject,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerWBSElement,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  PostingDate,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Product,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  SoldProduct,
+
+  @AnalyticsDetails.query.variableSequence: 80
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  SoldProductGroup,
+
+  @AnalyticsDetails.query.variableSequence: 60
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @AnalyticsDetails.query.axis: #FREE
+  ProfitCenter,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Project,
+  //_Project.ProjectDescription,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  SalesOrder,
+  @AnalyticsDetails.query.totals: #SHOW
+  SalesOrderItem,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  SalesOrganization,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @AnalyticsDetails.query.totals: #SHOW
+  Segment,
+
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'SoldProduct'
+//  @VDM.lifecycle.status:    #DEPRECATED
+//  @VDM.lifecycle.successor: 'SoldProduct'
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  cast(SoldMaterial as fis_sold_material preserving type) as SoldMaterial, // do not use any longer, use SoldProduct
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerCompany, // = TradingPartner
+
+  TransactionCurrency,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WBSElement,
+  //_WBSElement.WBSDescription,
+
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarYearMonth,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarYearQuarter,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarYearWeek,
+
+  ------------------------------------------------------------------------------------------
+  -- Key Figures
+  ------------------------------------------------------------------------------------------
+
+  //
+  // Transaction Currency: WSL
+  //
+  @EndUserText.label: 'Actual Amount in Trans Crcy'
+  //@AnalyticsDetails.query.hidden: true
+  @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+  @AnalyticsDetails.query.axis: #COLUMNS
+  AmountInTransactionCurrency,
+  //case when PlanningCategory = 'ACT01' then AmountInTransactionCurrency
+  //                      else cast( 0 as fins_vkcur12)
+  //end as ActualAmountInTransactionCrcy,
+
+  //@EndUserText.label: 'Plan Amount in Trans Crcy'
+  //@AnalyticsDetails.query.hidden: true
+  //@Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+  //@AnalyticsDetails.query.axis: #COLUMNS
+  //case when PlanningCategory = :P_PlanningCategory then AmountInTransactionCurrency
+  //                      else cast( '0' as fins_vhcur12)
+  //end as PlanAmountInTransactionCrcy,
+
+  //@EndUserText.label: 'Difference Actual Plan in Trans Crcy'
+  //@DefaultAggregation : #FORMULA
+  //@AnalyticsDetails.query.hidden: true
+  //@AnalyticsDetails.query.formula : '$projection.ActualAmountInTransactionCrcy - $projection.PlanAmountInTransactionCrcy'
+  //1 as DifferenceAmtInTransCrcy,
+
+  //@EndUserText.label : 'Difference (%) TC'
+  //@AnalyticsDetails.query.hidden: true
+  //@AnalyticsDetails.query.decimals: 2
+  //@AnalyticsDetails.query.formula : 'CASE WHEN $projection.ActualAmountInTransactionCrcy > 0
+  //                                   THEN ($projection.ActualAmountInTransactionCrcy - $projection.PlanAmountInTransactionCrcy) / $projection.ActualAmountInTransactionCrcy * 100
+  //                                   ELSE NDIV0(($projection.PlanAmountInTransactionCrcy - $projection.ActualAmountInTransactionCrcy ) / $projection.ActualAmountInTransactionCrcy) * 100 END'
+  //1 as TransCrcyDifferencePct,
+
+  //
+  // Company Code Currency: HSL
+  //
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label: 'Actual Amount in Company Code Crcy'
+  @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+  AmountInCompanyCodeCurrency,
+  //case when PlanningCategory = 'ACT01' then AmountInCompanyCodeCurrency
+  //                      else cast( 0 as fins_vhcur12)
+  //end as ActualAmountInCompanyCodeCrcy,
+
+  //@AnalyticsDetails.query.axis: #COLUMNS
+  //@EndUserText.label: 'Plan Amount in CC Crcy'
+  //@Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+  //case when PlanningCategory = :P_PlanningCategory then AmountInCompanyCodeCurrency
+  //                      else cast( '0' as fins_vhcur12)
+  //end as PlanAmountInCompanyCodeCrcy,
+
+  //@EndUserText.label: 'Difference Actual Plan in CC Crcy'
+  //@DefaultAggregation : #FORMULA
+  //@AnalyticsDetails.query.formula : '$projection.ActualAmountInCompanyCodeCrcy - $projection.PlanAmountInCompanyCodeCrcy'
+  //1 as DifferenceAmtInCoCodeCrcy,
+
+  //@EndUserText.label : 'Difference (%) CC'
+  //@AnalyticsDetails.query.decimals: 2
+  //@AnalyticsDetails.query.formula : 'CASE WHEN $projection.ActualAmountInCompanyCodeCrcy > 0
+  //                                   THEN ($projection.ActualAmountInCompanyCodeCrcy - $projection.PlanAmountInCompanyCodeCrcy) / $projection.ActualAmountInCompanyCodeCrcy * 100
+  //                                   ELSE NDIV0(($projection.PlanAmountInCompanyCodeCrcy - $projection.ActualAmountInCompanyCodeCrcy ) / $projection.ActualAmountInCompanyCodeCrcy) * 100 END'
+  //1 as CoCodeCrcyDifferencePct,
+
+  //
+  // Global Currency: KSL RKCUR
+  //
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label: 'Actual Amount in Global Crcy'
+  @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+  AmountInGlobalCurrency,
+  //case when PlanningCategory = 'ACT01' then AmountInGlobalCurrency
+  //                      else cast( 0 as fins_vkcur12)
+  //end as ActualAmountInGlobalCurrency,
+
+  //@AnalyticsDetails.query.axis: #COLUMNS
+  //@EndUserText.label: 'Plan Amount in Global Crcy'
+  //@Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+  //case when PlanningCategory = :P_PlanningCategory then AmountInGlobalCurrency
+  //                      else cast( '0' as fins_vkcur12)
+  //end as PlanAmountInGlobalCurrency,
+
+  //@EndUserText.label: 'Difference Actual Plan in Global Crcy'
+  //@AnalyticsDetails.query.formula : '$projection.ActualAmountInGlobalCurrency - $projection.PlanAmountInGlobalCurrency'
+  //0 as DifferenceAmtInGlobalCrcy,
+
+  //@EndUserText.label : 'Difference (%) GC'
+  //@AnalyticsDetails.query.decimals: 2
+  //@AnalyticsDetails.query.formula :  'CASE WHEN $projection.ActualAmountInGlobalCurrency > 0
+  //                                   THEN ($projection.ActualAmountInGlobalCurrency - $projection.PlanAmountInGlobalCurrency) / $projection.ActualAmountInGlobalCurrency * 100
+  //                                   ELSE NDIV0(($projection.PlanAmountInGlobalCurrency - $projection.ActualAmountInGlobalCurrency ) / $projection.ActualAmountInGlobalCurrency) * 100 END'
+  //1 as GlobalCrcyDifferencePct,
+
+  //@AnalyticsDetails.query.hidden: true
+  @AnalyticsDetails.query.axis: #COLUMNS
+  ValuationQuantity
+
+}
+where
+      Ledger          = :P_Ledger
+  and ControllingArea = :P_ControllingArea;
+```

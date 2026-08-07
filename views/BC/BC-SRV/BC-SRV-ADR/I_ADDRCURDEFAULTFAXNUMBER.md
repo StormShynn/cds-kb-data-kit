@@ -30,15 +30,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |  |  |
-| `AddressPersonID` | ✓ | |  |  |  |  |
-| `CommMediumSequenceNumber` |  | |  |  |  |  |
-| `FaxNumberCountry` |  | |  |  |  |  |
-| `FaxAreaCodeSubscriberNumber` |  | |  |  |  |  |
-| `FaxExtensionNumber` |  | |  |  |  |  |
-| `InternationalFaxNumber` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` |  | |  |  | `NUMC(3)` | Sequence Number |
+| `FaxNumberCountry` |  | |  |  | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  | `CHAR(30)` | Fax Number: Dialing Code and Number |
+| `FaxExtensionNumber` |  | |  |  | `CHAR(10)` | Fax no.: Extension |
+| `InternationalFaxNumber` |  | |  |  | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` |  |
 | `_FaxNumberCountry` | | ✓ | | | | |
 
 ## Source Code

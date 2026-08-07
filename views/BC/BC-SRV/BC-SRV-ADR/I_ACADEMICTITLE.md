@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AcademicTitle` | ✓ | |  | `title_key` |  |  |
-| `AcademicTitleName` |  | |  | `title_text` |  |  |
+| `AcademicTitle` | ✓ | |  | `title_key` | `CHAR(4)` | Academic Title: Key |
+| `AcademicTitleName` |  | |  | `title_text` | `CHAR(20)` | Academic Title: Written Form |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

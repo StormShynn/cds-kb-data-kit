@@ -5,9 +5,26 @@ app_component: FI-PRA-PRA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLINCGSALESORDPRDTVQUERY')/$value
 semantic_en: Incoming Sales Orders – Pred. Accounting
+semantic_vi: Incoming Sales Orders – Pred. Accounting — CDS view tiêu dùng dựa trên I_GLIncgSalesOrdPrdtvCube.
+keywords:
+  - incoming
+  - sales
+  - orders
+  - pred.
+  - accounting
+  - jrnl
+  - entr
+  - derivd
+  - fiscal
+  - year
+  - period
+  - organization
+  - created
+  - user
+  - document
 tags:
   - FI
   - account
@@ -20,7 +37,6 @@ tags:
   - lob:finance
   - order
   - sales-order
-  - metadata-only
 ---
 # C_GLINCGSALESORDPRDTVQUERY
 
@@ -32,7 +48,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLINCGSALESORDPRDTVQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLINCGSALESORDPRDTVQUERY')/$value) |
 
 ## Fields
 
@@ -148,3 +164,325 @@ tags:
 | `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
 | `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
 | `TransactionTypeDetermination` |  | |  |  | `CHAR(3)` | Transaction Key |
+| `_Customer` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLINCGSALESORDPRDTVQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLINCGSALESORDPRDTVQUERY')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CFGLISOPRQUERY'
+@AbapCatalog.compiler.compareFilter: true
+@Analytics.query: true
+@VDM.viewType: #CONSUMPTION
+//@OData.publish: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'Incoming Sales Orders – Pred. Accounting'
+
+@Analytics.settings.maxProcessingEffort: #HIGH
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+
+
+define view C_GLIncgSalesOrdPrdtvQuery
+  as select from I_GLIncgSalesOrdPrdtvCube
+{
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.variableSequence : 100
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  JrnlEntrDerivdFiscalYearPeriod,
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.variableSequence : 30
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  SalesOrganization,
+
+  AccountingDocCreatedByUser,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  AccountingDocument,
+
+  AccountingDocumentCategory,
+  AccountingDocumentItem,
+  AccountingDocumentType,
+
+  @AnalyticsDetails.query.hidden
+  AmountInCompanyCodeCurrency,
+  @AnalyticsDetails.query.hidden
+  AmountInFreeDefinedCurrency1,
+  @AnalyticsDetails.query.hidden
+  AmountInFreeDefinedCurrency2,
+  @AnalyticsDetails.query.hidden
+  AmountInFreeDefinedCurrency3,
+  @AnalyticsDetails.query.hidden
+  AmountInFreeDefinedCurrency4,
+  @AnalyticsDetails.query.hidden
+  AmountInFreeDefinedCurrency5,
+  @AnalyticsDetails.query.hidden
+  AmountInFreeDefinedCurrency6,
+  @AnalyticsDetails.query.hidden
+  AmountInFreeDefinedCurrency7,
+  @AnalyticsDetails.query.hidden
+  AmountInFreeDefinedCurrency8,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  AmountInGlobalCurrency,
+
+  @AnalyticsDetails.query.hidden
+  AmountInTransactionCurrency,
+
+  AssignmentReference,
+  BaseUnit,
+  BillingDocumentType,
+  BillToParty,
+  BusinessArea,
+  BusinessTransactionType,
+  ChartOfAccounts,
+  ClearingAccountingDocument,
+  ClearingDate,
+
+  @AnalyticsDetails.query.variableSequence : 80
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CompanyCode,
+
+  CompanyCodeCurrency,
+
+  @AnalyticsDetails.query.variableSequence : 10
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+  ControllingArea,
+
+  ControllingDebitCreditCode,
+  CostCenter,
+  @AnalyticsDetails.query.hidden
+  CostOfGoodsSoldAmtInGlobCrcy,
+  CreationDate,
+
+  @AnalyticsDetails.query.variableSequence : 50
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Customer,
+  @AnalyticsDetails.query.variableSequence : 40
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CustomerGroup,
+
+  CustomerSupplierCountry,
+  CustomerSupplierIndustry,
+  DebitCreditCode,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  DistributionChannel,
+
+  Division,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  DocumentDate,
+
+  FinancialAccountType,
+  FinancialTransactionType,
+  FiscalPeriod,
+
+  @AnalyticsDetails.query.variableSequence : 110
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  FiscalPeriodStartDate,
+  FiscalQuarter,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  FiscalYear,
+
+  FiscalYearPeriod,
+  FiscalYearVariant,
+  @AnalyticsDetails.query.hidden
+  FixedQuantity,
+  FreeDefinedCurrency1,
+  FreeDefinedCurrency2,
+  FreeDefinedCurrency3,
+  FreeDefinedCurrency4,
+  FreeDefinedCurrency5,
+  FreeDefinedCurrency6,
+  FreeDefinedCurrency7,
+  FreeDefinedCurrency8,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  GLAccount,
+  @AnalyticsDetails.query.variableSequence : 20
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+  GLAccountHierarchy,
+
+  GLAccountType,
+  GlobalCurrency,
+
+  @EndUserText.label: 'Inverted Amount in Glob Crcy'
+  @AnalyticsDetails.query.hidden
+  InvertedAmountInGlobalCurrency,
+  @EndUserText.label: 'Inverted Amount in CC Crcy'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInCoCodeCurrency,
+  @EndUserText.label: 'Inverted Amt in FreeDefCrcy 1'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInFreeDefinedCrcy1,
+  @EndUserText.label: 'Inverted Amt in FreeDefCrcy 2'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInFreeDefinedCrcy2,
+  @EndUserText.label: 'Inverted Amt in FreeDefCrcy 3'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInFreeDefinedCrcy3,
+  @EndUserText.label: 'Inverted Amt in FreeDefCrcy 4'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInFreeDefinedCrcy4,
+  @EndUserText.label: 'Inverted Amt in FreeDefCrcy 5'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInFreeDefinedCrcy5,
+  @EndUserText.label: 'Inverted Amt in FreeDefCrcy 6'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInFreeDefinedCrcy6,
+  @EndUserText.label: 'Inverted Amt in FreeDefCrcy 7'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInFreeDefinedCrcy7,
+  @EndUserText.label: 'Inverted Amt in FreeDefCrcy 8'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInFreeDefinedCrcy8,
+  @EndUserText.label: 'Inverted Amount in Trans Crcy'
+  @AnalyticsDetails.query.hidden
+  InvertedAmtInTransCrcy,
+
+  JrnlEntrDerivedFiscalPeriod,
+  JrnlEntrDerivedFiscalQuarter,
+  JrnlEntrDerivedFiscalYear,
+  JrnlEntryItemObsoleteReason,
+
+  @AnalyticsDetails.query.variableSequence : 5
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+  @AnalyticsDetails.query.axis: #ROWS
+  Ledger,
+
+  LedgerFiscalYear,
+  LedgerGLLineItem,
+
+// remove MaterialGroup, associated entity I_MATERIALGROUP has status NOT_TO_BE_RELEASED_STABLE
+//  @AnalyticsDetails.query.variableSequence : 60
+//  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+//  @AnalyticsDetails.query.axis: #ROWS
+//  @AnalyticsDetails.query.display: #KEY_TEXT
+  MaterialGroup,
+
+  OperatingConcern,
+  OrderType,
+  //  OrganizationDivision,
+  Plant,
+  PostingDate,
+  PostingKey,
+
+  @AnalyticsDetails.query.variableSequence : 90
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ProfitCenter,
+
+  @AnalyticsDetails.query.hidden
+  Quantity,
+  @AnalyticsDetails.query.hidden
+  RecognizedCOGSAmtInCCCrcy,
+  //  RecognizedMarginAmount,
+  @AnalyticsDetails.query.hidden
+  RecognizedMarginAmtInCCCrcy,
+  @AnalyticsDetails.query.hidden
+  RecognizedRevnAmtInCCCrcy,
+  @AnalyticsDetails.query.hidden
+  RecognizedRevnAmtInGlobCrcy,
+
+  ReferenceDocumentType,
+
+  @AnalyticsDetails.query.hidden
+  RevenueAmountInCompanyCodeCrcy,
+  @AnalyticsDetails.query.hidden
+  RevenueInGlobalCurrency,
+
+  SalesDistrict,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  SalesOrder,
+
+  SalesOrderItem,
+
+  Segment,
+
+  @AnalyticsDetails.query.variableSequence : 120
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  SemanticTag,
+
+  ShipToParty,
+
+  @AnalyticsDetails.query.variableSequence : 70
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  SoldMaterial,
+
+  SourceLedger,
+  SourceReferenceDocument,
+  SourceReferenceDocumentItem,
+  SourceReferenceDocumentType,
+  SpecialGLCode,
+  TransactionCurrency,
+  TransactionTypeDetermination,
+
+  //  @Consumption.hidden: true
+  //  ValidityEndDate,
+  //  @Consumption.hidden: true
+  //  ValidityStartDate,
+
+//  // Added fields for DCL
+//  @Consumption.hidden: true
+//  ValuationArea,
+//  @Consumption.hidden: true
+//  Supplier,
+//  @Consumption.hidden: true
+//  SalesDocument,
+//  @Consumption.hidden: true
+//  FixedAsset,
+//  @Consumption.hidden: true
+//  MasterFixedAsset,
+//  @Consumption.hidden: true
+//  OrderID,
+//  @Consumption.hidden: true
+//  OrganizationDivision,
+//  @Consumption.hidden: true
+//  _Supplier,
+//  @Consumption.hidden: true
+//  _CurrentCostCenter,
+//  @Consumption.hidden: true
+//  _SalesDocument,
+//  @Consumption.hidden: true
+//  _FixedAsset,
+//  @Consumption.hidden: true
+//  _Order,
+//  //
+
+  @Consumption.hidden: true
+  _Customer,
+  @Consumption.hidden: true
+  _AccountingDocumentType,
+  @Consumption.hidden: true
+  _CurrentProfitCenter,
+  @Consumption.hidden: true
+  _GLAccountInCompanyCode
+}
+```

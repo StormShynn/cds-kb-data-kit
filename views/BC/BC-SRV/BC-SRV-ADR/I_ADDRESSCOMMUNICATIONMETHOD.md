@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CommunicationMediumType` | ✓ | |  | `comm_type` |  |  |
+| `CommunicationMediumType` | ✓ | |  | `comm_type` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

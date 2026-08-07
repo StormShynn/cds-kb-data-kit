@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CommunicationMediumType` | ✓ | |  |  |  |  |
+| `CommunicationMediumType` | ✓ | |  |  | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

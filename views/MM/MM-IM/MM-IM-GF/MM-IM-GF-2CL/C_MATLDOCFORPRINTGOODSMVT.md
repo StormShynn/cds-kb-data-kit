@@ -5,12 +5,22 @@ app_component: MM-IM-GF-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLDOCFORPRINTGOODSMVT')/$value
 semantic_en: This CDS view provides the data that determines whether the system generates an output for material documents and determines which goods movement data is used. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Material Document Print Goods Movement — CDS view tiêu dùng (transactional data) dựa trên I_MaterialDocumentForPrint.
 keywords:
   - Material Document Print Goods Movement
-  - Material Document Print Goods Movement
+  - material
+  - document
+  - print
+  - goods
+  - movement
+  - year
+  - item
+  - stock
+  - identifying
+  - plant
 tags:
   - MM
   - bo:companycode
@@ -22,7 +32,6 @@ tags:
   - MM-IM
   - MM-IM-GF
   - MM-IM-GF-2CL
-  - metadata-only
 ---
 # C_MATLDOCFORPRINTGOODSMVT
 
@@ -34,15 +43,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLDOCFORPRINTGOODSMVT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLDOCFORPRINTGOODSMVT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MaterialDocumentYear` |  | |  |  | `NUMC(4)` | Material Document Year |
-| `MaterialDocument` |  | |  |  | `CHAR(10)` | Number of Material Document |
-| `MaterialDocumentItem` |  | |  |  | `NUMC(4)` | Material Document Item |
+| `MaterialDocumentYear` | ✓ | |  |  | `NUMC(4)` | Material Document Year |
+| `MaterialDocument` | ✓ | |  |  | `CHAR(10)` | Number of Material Document |
+| `MaterialDocumentItem` | ✓ | |  |  | `NUMC(4)` | Material Document Item |
 | `StockIdentifyingMaterial` |  | |  |  | `CHAR(40)` | Material for Stock Mamangement |
 | `Plant` |  | |  |  | `CHAR(4)` | Plant |
 | `StockIdfgStorageLocation` |  | |  |  | `CHAR(4)` | Storage Location (Stock Identifier) |
@@ -52,7 +61,7 @@ tags:
 | `SpecialStockIdfgSalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
 | `SpecialStockIdfgWBSElement` |  | |  |  | `NUMC(8)` | Valuated Sales Order Stock WBS Element |
 | `SpclStkIdfgWBSElementExtID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `SpclStkIdfgWBSElmntDescription` |  | |  |  | `CHAR(40)` | Work Breakdown Structure Element Name |
+| `SpclStkIdfgWBSElmntDescription` |  | | `_SpecialStockIdfgWBSElement` | `WBSDescription` | `CHAR(40)` | Work Breakdown Structure Element Name |
 | `SpecialStockIdfgCustomer` |  | |  |  | `CHAR(10)` | Customer for Special Stock |
 | `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Type |
 | `InventoryStockType` |  | |  |  | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
@@ -68,7 +77,7 @@ tags:
 | `StockOwner` |  | |  |  | `CHAR(10)` | Additional Supplier for Special Stock |
 | `WBSElement` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
 | `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
-| `WBSDescription` |  | |  |  | `CHAR(40)` | Work Breakdown Structure Element Name |
+| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` | `CHAR(40)` | Work Breakdown Structure Element Name |
 | `ResourceID` |  | |  |  | `CHAR(40)` | Resource Name (Stock Identifier) |
 | `IssgOrRcvgMaterial` |  | |  |  | `CHAR(40)` | Transfer Material |
 | `IssuingOrReceivingPlant` |  | |  |  | `CHAR(4)` | Transfer Plant |
@@ -200,7 +209,7 @@ tags:
 | `ActivityInWarehouseIsPending` |  | |  |  | `CHAR(1)` | Posting in Warehouse Management System |
 | `IssgOrRcvgWBSElement` |  | |  |  | `NUMC(8)` | Work Breakdown Structure Element (Stock Identifier) |
 | `IssgOrRcvgWBSElementExtID` |  | |  |  | `CHAR(24)` | Complementary Valuated Sales Order Stock WBS Element |
-| `IssgOrRcvgWBSDescription` |  | |  |  | `CHAR(40)` | Descr. of Complementary Valuated Sales Order Stock WBS Elem. |
+| `IssgOrRcvgWBSDescription` |  | |  | `cast(_IssgOrRcvgWBSElement.WBSDescription as mmim_ir_wbs_element_descr)` | `CHAR(40)` | Descr. of Complementary Valuated Sales Order Stock WBS Elem. |
 | `WarehouseNumber` |  | |  |  | `CHAR(3)` | Warehouse Number / Warehouse Complex |
 | `TransferRequirementNumber` |  | |  |  | `NUMC(10)` | Transfer Requirement Number |
 | `TransferPriority` |  | |  |  | `CHAR(1)` | Transfer Priority |
@@ -217,14 +226,431 @@ tags:
 | `StorageLocationName` |  | |  |  | `CHAR(16)` | Storage Location Name |
 | `IssuingOrReceivingStorLocName` |  | |  |  | `CHAR(16)` | Storage Location Name |
 | `SupplierName` |  | |  |  | `CHAR(80)` | Name of Supplier |
-| `PreferredSupplierName` |  | |  |  | `CHAR(35)` | Name |
-| `CustomerName` |  | |  |  | `CHAR(35)` | Name |
-| `MaterialName` |  | |  |  | `CHAR(40)` | Product Description |
+| `PreferredSupplierName` |  | | `_Supplier` | `OrganizationBPName1` | `CHAR(35)` | Name |
+| `CustomerName` |  | | `_Customer` | `OrganizationBPName1` | `CHAR(35)` | Name |
+| `MaterialName` |  | |  | `ProductName` | `CHAR(40)` | Product Description |
 | `InventorySpecialStockTypeName` |  | |  |  | `CHAR(20)` | Special Stock Type Name |
-| `GoodsMovementTypeName` |  | |  |  | `CHAR(20)` | Movement Type Text (Inventory Management) |
 | `WarehouseStorageBin` |  | |  |  | `CHAR(10)` | Storage Bin |
 | `IssgOrRcvgPlantAddressID` |  | |  |  | `CHAR(10)` | Address |
 | `IssuingOrReceivingPlantName` |  | |  |  | `CHAR(30)` | Plant Name |
 | `IssgOrRcvgWarehouseStorageBin` |  | |  |  | `CHAR(10)` | Storage Bin |
-| `IssgOrRcvgMaterialName` |  | |  |  | `CHAR(40)` | Product Description |
-| `IssgOrRcvgSpclStockIndName` |  | |  |  | `CHAR(20)` | Special Stock Type Name |
+| `IssgOrRcvgMaterialName` |  | |  | `ProductName` | `CHAR(40)` | Product Description |
+| `IssgOrRcvgSpclStockIndName` |  | |  | `InventorySpecialStockTypeName` | `CHAR(20)` | Special Stock Type Name |
+| `_Product` | | ✓ | | | | |
+| `_ProductPlant` | | ✓ | | | | |
+| `_ProductIsRecPlant` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_IssgOrRcvgPlant` | | ✓ | | | | |
+| `_Batch` | | ✓ | | | | |
+| `_IssgOrRcvgBatch` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_ProdStorLocBasic` | | ✓ | | | | |
+| `_ProdIsRecStorLocBasic` | | ✓ | | | | |
+| `_PurchaseOrderItem` | | ✓ | | | | |
+| `_MaterialDocumentItem` | | ✓ | | | | |
+| `_InspectionLot` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_CustomerCompanyByPlant` | | ✓ | | | | |
+| `_IssuingOrReceivingStorageLoc` | | ✓ | | | | |
+| `_BPStockOwner` | | ✓ | | | | |
+| `_SupplierCompanyByPlant` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Product` | `I_Product` | [0..1] |
+| `_ProductPlant` | `I_ProductPlant` | [1..1] |
+| `_ProductIsRecPlant` | `I_ProductPlant` | [1..1] |
+| `_Plant` | `I_Plant` | [1..1] |
+| `_IssgOrRcvgPlant` | `I_Plant` | [1..1] |
+| `_Batch` | `I_Batch` | [1..1] |
+| `_IssgOrRcvgBatch` | `I_Batch` | [1..1] |
+| `_Supplier` | `I_Supplier` | [0..1] |
+| `_Customer` | `I_Customer` | [0..1] |
+| `_ProdStorLocBasic` | `I_ProductStorageLocationBasic` | [1..1] |
+| `_ProdIsRecStorLocBasic` | `I_ProductStorageLocationBasic` | [1..1] |
+| `_PurchaseOrderItem` | `I_PurchaseOrderItemAPI01` | [1..1] |
+| `_MaterialDocumentItem` | `I_MaterialDocumentItem_2` | [0..1] |
+| `_InspectionLot` | `I_InspectionLot` | [0..1] |
+| `_PrintExtension` | `E_MaterialDocumentItem` | [0..1] |
+| `_PrintExtensionMatdoc` | `E_MaterialDocumentItem_2` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLDOCFORPRINTGOODSMVT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLDOCFORPRINTGOODSMVT')/$value)*
+
+```abap
+@EndUserText.label: 'Material Document Print Goods Movement'
+
+@VDM:
+      {
+        viewType: #CONSUMPTION
+      }
+@ObjectModel: {
+                 usageType: {
+                              serviceQuality: #C,
+                              sizeCategory: #XL,
+                              dataClass: #TRANSACTIONAL
+                            },
+                  supportedCapabilities: [ #OUTPUT_FORM_DATA_PROVIDER, #SQL_DATA_SOURCE ]
+                } 
+@AccessControl:{
+                 authorizationCheck: #CHECK,
+                 personalData.blocking: #NOT_REQUIRED,
+                 privilegedAssociations: ['_Product', '_ProductPlant', '_ProductIsRecPlant',
+                  '_IssgOrRcvgPlant', '_Batch', '_IssgOrRcvgBatch', '_Supplier', 
+                  '_Customer', '_ProdStorLocBasic', '_ProdIsRecStorLocBasic',
+                  '_PurchaseOrderItem']
+               }
+
+
+@Metadata.ignorePropagatedAnnotations:true
+define view entity C_MatlDocForPrintGoodsMvt
+  as select from I_MaterialDocumentForPrint 
+
+// Datasource extensibility
+  association [0..1] to I_Product               as _Product           on  $projection.Material = _Product.Product
+  association [1..1] to I_ProductPlant          as _ProductPlant      on  $projection.Material = _ProductPlant.Product
+                                                                      and $projection.Plant = _ProductPlant.Plant
+  association [1..1] to I_ProductPlant          as _ProductIsRecPlant on  $projection.Material = _ProductIsRecPlant.Product
+                                                                      and $projection.IssuingOrReceivingPlant = _ProductIsRecPlant.Plant    
+  association [1..1] to I_Plant                 as _Plant             on  $projection.Plant = _Plant.Plant
+  association [1..1] to I_Plant                 as _IssgOrRcvgPlant   on  $projection.IssuingOrReceivingPlant = _IssgOrRcvgPlant.Plant    
+  association [1..1] to I_Batch                 as _Batch             on  $projection.Material = _Batch.Material         
+                                                                      and $projection.Plant = _Batch.Plant                                                                                                                                                 
+                                                                      and $projection.Batch = _Batch.Batch     
+  
+  association [1..1] to I_Batch                 as _IssgOrRcvgBatch   on  $projection.IssgOrRcvgMaterial = _IssgOrRcvgBatch.Material         
+                                                                      and $projection.IssuingOrReceivingPlant = _IssgOrRcvgBatch.Plant                                                                                                                                                 
+                                                                      and $projection.IssgOrRcvgBatch = _IssgOrRcvgBatch.Batch
+                                          
+                                                                      
+  association [0..1] to I_Supplier              as _Supplier          on  $projection.Supplier = _Supplier.Supplier
+  
+  association [0..1] to I_Customer              as _Customer          on  $projection.Customer = _Customer.Customer
+  
+  association [1..1] to I_ProductStorageLocationBasic as _ProdStorLocBasic       on  $projection.Material        = _ProdStorLocBasic.Product
+                                                                                 and $projection.Plant           = _ProdStorLocBasic.Plant
+                                                                                 and $projection.StorageLocation = _ProdStorLocBasic.StorageLocation
+  association [1..1] to I_ProductStorageLocationBasic as _ProdIsRecStorLocBasic  on  $projection.IssgOrRcvgMaterial           = _ProdIsRecStorLocBasic.Product
+                                                                                 and $projection.IssuingOrReceivingPlant      = _ProdIsRecStorLocBasic.Plant
+                                                                                 and $projection.IssuingOrReceivingStorageLoc = _ProdIsRecStorLocBasic.StorageLocation
+  association [1..1] to I_PurchaseOrderItemAPI01 as _PurchaseOrderItem  on  $projection.PurchaseOrder           = _PurchaseOrderItem.PurchaseOrder
+                                                                        and $projection.PurchaseOrderItem       = _PurchaseOrderItem.PurchaseOrderItem
+  
+  association [0..1] to I_MaterialDocumentItem_2 as _MaterialDocumentItem on  $projection.MaterialDocumentYear = _MaterialDocumentItem.MaterialDocumentYear
+                                                                          and $projection.MaterialDocument     = _MaterialDocumentItem.MaterialDocument
+                                                                          and $projection.MaterialDocumentItem = _MaterialDocumentItem.MaterialDocumentItem
+  
+  association [0..1] to I_InspectionLot          as _InspectionLot on $projection.MaterialDocument         = _InspectionLot.MaterialDocument
+                                                                   and $projection.MaterialDocumentYear    = _InspectionLot.MaterialDocumentYear
+                                                                   and $projection.MaterialDocumentItem    = _InspectionLot.MaterialDocumentItem
+  
+  
+// Custom Fields extensibility  
+  association [0..1] to E_MaterialDocumentItem  as _PrintExtension    on  $projection.MaterialDocumentYear = _PrintExtension.MaterialDocumentYear
+                                                                      and $projection.MaterialDocument     = _PrintExtension.MaterialDocument
+                                                                      and $projection.MaterialDocumentItem = _PrintExtension.MaterialDocumentItem
+                                                                      and $projection.MaterialDocumentRecordType = _PrintExtension.MaterialDocumentRecordType
+                                                                      
+// Custom Fields extensibility for Business Context: MaterialDocumentItem  
+  association [0..1] to E_MaterialDocumentItem_2  as _PrintExtensionMatdoc  on  $projection.MaterialDocumentYear = _PrintExtensionMatdoc.MaterialDocumentYear
+                                                                            and $projection.MaterialDocument     = _PrintExtensionMatdoc.MaterialDocument
+                                                                            and $projection.MaterialDocumentItem = _PrintExtensionMatdoc.MaterialDocumentItem
+                                                                            and $projection.MaterialDocumentRecordType = _PrintExtensionMatdoc.MaterialDocumentRecordType                                                                      
+
+{
+
+ key  MaterialDocumentYear,
+ key  MaterialDocument,
+ key  MaterialDocumentItem,
+ 
+ StockIdentifyingMaterial,
+ Plant,
+ StockIdfgStorageLocation,
+ StockIdentifyingBatch,
+ SpecialStockIdfgSupplier,
+ SpecialStockIdfgSalesOrder, 
+ SpecialStockIdfgSalesOrderItem,
+ SpecialStockIdfgWBSElement,
+ SpclStkIdfgWBSElementExtID,
+ _SpecialStockIdfgWBSElement.WBSDescription as SpclStkIdfgWBSElmntDescription,
+ SpecialStockIdfgCustomer,
+ InventorySpecialStockType,
+ InventoryStockType,
+ SpecialStockIdfgStockOwner,
+
+ Material,
+ StorageLocation,
+ Batch,
+ Supplier, 
+ SalesOrder,
+ SalesOrderItem,
+ SalesOrderScheduleLine,
+ Customer,
+ StockOwner,
+ WBSElement,
+ WBSElementInternalID,
+ _WBSElement.WBSDescription,
+ ResourceID,
+
+ IssgOrRcvgMaterial,
+ IssuingOrReceivingPlant,
+ IssuingOrReceivingStorageLoc,
+ IssgOrRcvgBatch,
+ IssgOrRcvgSpclStockInd,
+ IssuingOrReceivingValType,
+ IssuingOrReceivingStockType,
+ IssgOrRcvgResourceID,
+
+ GoodsMovementRefDocType, 
+ GoodsReceiptType,
+ ConsumptionPosting,
+ GoodsMovementReasonCode,
+ NumberOfSlipsToBePrinted,
+ NumberOfLabelsToBePrinted,
+ GoodsMovementType,
+ DebitCreditCode,
+ InventoryUsabilityCode,
+ @Semantics.quantity.unitOfMeasure: 'MaterialBaseUnit'
+ @DefaultAggregation: #NONE
+ QuantityInBaseUnit,
+ MaterialBaseUnit,
+
+ @DefaultAggregation:#NONE
+ @Semantics.quantity.unitOfMeasure: 'MaterialBaseUnit'
+ MatlStkChangeQtyInBaseUnit,
+
+ @DefaultAggregation:#NONE
+ @Semantics.quantity.unitOfMeasure: 'MaterialBaseUnit'
+ MatlCnsmpnQtyInMatlBaseUnit,
+  
+ @DefaultAggregation: #NONE
+ @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+ GoodsReceiptQtyInOrderUnit,
+ OrderQuantityUnit,
+  
+ @DefaultAggregation:#NONE
+ @Semantics.quantity.unitOfMeasure: 'DeliveryQuantityUnit'
+ QuantityInDeliveryQtyUnit,
+ DeliveryQuantityUnit,
+
+ @Semantics.businessDate.at: true
+ DocumentDate,
+ AccountingDocumentType,
+ InventoryTransactionType,
+ InventorySpecialStockValnType,
+
+ CreationDate,
+ CreationTime,
+ CreatedByUser,
+ MaterialDocumentHeaderText,
+ MaterialDocumentItemText,
+ DeliveryInMatlDocumentHeader,
+ BillOfLading,
+
+ ShelfLifeExpirationDate,
+ ManufactureDate,
+
+ @Semantics.quantity.unitOfMeasure: 'EntryUnit'
+ @DefaultAggregation: #NONE
+ QuantityInEntryUnit,
+ EntryUnit,
+ InventoryValuationType,
+
+  PurchaseOrder,
+  PurchaseOrderItem,
+ ProjectNetwork,
+ ManufacturingOrder,
+ ManufacturingOrderItem,
+ OrderID,
+ OrderItem,
+ Reservation,
+ ReservationItem,
+ ReservationIsFinallyIssued,
+ DeliveryDocument,
+ DeliveryDocumentItem,
+ IsCompletelyDelivered,
+
+ ReversedMaterialDocumentYear,
+ ReversedMaterialDocument,
+ ReversedMaterialDocumentItem,
+ RvslOfGoodsReceiptIsAllowed,
+ IsReversalMovementType,
+ GoodsMovementIsCancelled,
+ GoodsMovementCancellationType,
+
+ GoodsRecipientName,
+ UnloadingPointName,
+ CostCenter,
+ GLAccount,
+ CostObject,
+ @VDM.lifecycle.status: #DEPRECATED
+ @VDM.lifecycle.successor: 'ProfitabilitySegment_2'
+ ProfitabilitySegment,
+ ProfitabilitySegment_2,
+ ProfitCenter,
+ CostEstimate,
+
+ ReferenceDocument,
+ ServicePerformer,
+ EmploymentInternalID,
+ AccountAssignmentCategory,
+ WorkItem,
+ ServicesRenderedDate,
+
+ CompanyCode,
+ BusinessArea,
+ ControllingArea,
+ FunctionalArea,
+ OriginalMaterialDocumentItem,
+ MultiAcctAssgmtOriglMatlDocItm,
+ GoodsReceiptIsNonValuated,
+ HasMultipleAccountAssignment,
+ MasterFixedAsset,
+ FixedAsset,
+  @Semantics.businessDate.at: true
+ PostingDate,
+  @Semantics.fiscal.yearPeriod: true
+ FiscalYearPeriod,
+  @Semantics.fiscal.yearVariant: true
+ FiscalYearVariant,
+
+ FundsCenter,
+ Fund,
+ CommitmentItemShortID, // replacement for CommitmentItem 
+ GrantID,
+
+ StorageType,
+ StorageBin,
+ 
+ EWMWarehouse,
+ EWMStorageBin,
+ HandlingUnitExternalID, 
+ 
+ YearDay,
+  @Semantics.calendar.yearWeek: true
+ YearWeek,
+  @Semantics.calendar.yearMonth: true
+ YearMonth,
+  @Semantics.calendar.yearQuarter: true
+ YearQuarter,
+  @Semantics.calendar.year: true
+ DocumentYear,
+  @Semantics.calendar.quarter: true
+ CalendarQuarter,
+  @Semantics.calendar.month: true
+ CalendarMonth,
+  @Semantics.calendar.week: true
+ CalendarWeek,
+  @Semantics.calendar.dayOfYear: true
+ CalendarDay,
+ WeekDay,
+ FiscalYear,
+ YearPeriod,
+
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @DefaultAggregation: #NONE
+ TotalGoodsMvtAmtInCCCrcy,
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @DefaultAggregation: #NONE
+ GoodsMovementStkAmtInCCCrcy,
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @DefaultAggregation: #NONE
+ GoodsMvtCnsmpnAmtInCCCrcy,
+ CompanyCodeCurrency,
+
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @DefaultAggregation: #NONE
+ GdsMvtExtAmtInCoCodeCrcy,
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @DefaultAggregation: #NONE
+ SlsPrcAmtInclVATInCoCodeCrcy,
+  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+  @DefaultAggregation: #NONE
+ EnteredSlsAmtInCoCodeCrcy,
+
+  @Consumption.hidden: true
+ TransactionCode,
+
+  @Consumption.hidden: true
+ IsAutomaticallyCreated,
+  @Consumption.hidden: true
+ MaterialDocumentLine,
+  @Consumption.hidden: true
+ MaterialDocumentParentLine,
+  @Consumption.hidden: true
+ HierarchyNodeLevel,
+
+  @Consumption.hidden: true
+  MaterialDocumentRecordType,
+  IsMaterialDocumentHeader,
+  
+  MaintOrderRoutingNumber,
+  MaintOrderOperationCounter,
+  ManufacturerMaterial,
+  ActivityInWarehouseIsPending,
+  IssgOrRcvgWBSElement,
+  IssgOrRcvgWBSElementExtID,
+  cast(_IssgOrRcvgWBSElement.WBSDescription as mmim_ir_wbs_element_descr) as IssgOrRcvgWBSDescription,
+  WarehouseNumber,
+  TransferRequirementNumber,
+  TransferPriority,
+  VersionForPrintingSlip,
+  IssgOrRcvgSalesOrder,
+  IssgOrRcvgSalesOrderItem,
+  ShippingInstruction,
+  ShipgInstrnSupplierCompliance,
+  @DefaultAggregation:#NONE
+  @Semantics.quantity.unitOfMeasure: 'OrderPriceUnit'
+  QtyInPurchaseOrderPriceUnit,
+  OrderPriceUnit,
+  PlantName,
+  PlantCategory,
+  AddressID,
+  StorageLocationName,
+  IssuingOrReceivingStorLocName,
+  SupplierName,  
+  _Supplier.OrganizationBPName1 as PreferredSupplierName, 
+  _Customer.OrganizationBPName1 as CustomerName, 
+  I_MaterialDocumentForPrint._ProductText.ProductName as MaterialName,
+  I_MaterialDocumentForPrint._InventorySpecialStockTypeText.InventorySpecialStockTypeName,
+  _GoodsMvtTypeBySpclStkIndT[1: Language=$session.system_language].GoodsMovementTypeName,
+  WarehouseStorageBin,
+  
+  //1908 - Transfer Posting generic FDP Service Changes - Start
+  IssgOrRcvgPlantAddressID,
+  IssuingOrReceivingPlantName,
+  IssgOrRcvgWarehouseStorageBin,
+  I_MaterialDocumentForPrint._IssgOrRcvgProductText.ProductName as IssgOrRcvgMaterialName,
+  I_MaterialDocumentForPrint._IssgOrRcvgInvtrySpclStkIndTxt.InventorySpecialStockTypeName as IssgOrRcvgSpclStockIndName,
+  //1908 - Transfer Posting generic FDP Service Changes - End
+  
+  _Product,
+  _ProductPlant,
+  _ProductIsRecPlant,
+  _Plant,
+  _IssgOrRcvgPlant,
+  _Batch,
+  _IssgOrRcvgBatch,
+  _Supplier,
+  _ProdStorLocBasic,
+  _ProdIsRecStorLocBasic,
+  _PurchaseOrderItem,
+  _MaterialDocumentItem,
+  _InspectionLot,
+  
+  //Exposed for DCL check
+  _StorageLocation,
+  _CustomerCompanyByPlant,
+  _IssuingOrReceivingStorageLoc,
+  _BPStockOwner,
+  _SupplierCompanyByPlant,
+  _Customer
+  
+}
+where IsAutomaticallyCreated is initial
+and MaterialDocumentParentLine is initial
+```

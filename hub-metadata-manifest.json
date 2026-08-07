@@ -387,17 +387,9 @@
     "modifiedAt": 1784095917566,
     "fetchedAt": "2026-08-07T16:01:06.040Z"
   },
-  "C_DAYSSALESOUTSTANDING": {
-    "modifiedAt": 1784095911363,
-    "fetchedAt": "2026-08-07T16:01:07.854Z"
-  },
   "C_DISPUTECASESITUATIONTEMPLATE": {
     "modifiedAt": 1784095853127,
     "fetchedAt": "2026-08-07T16:01:08.271Z"
-  },
-  "C_DUNNINGLEVELDISTRIBUTION": {
-    "modifiedAt": 1784095918269,
-    "fetchedAt": "2026-08-07T16:01:08.494Z"
   },
   "C_DVTNINCDNTFORLOCIDQ": {
     "modifiedAt": 1784095654862,
@@ -567,37 +559,9 @@
     "modifiedAt": 1784095346067,
     "fetchedAt": "2026-08-07T16:01:16.975Z"
   },
-  "C_ENTPROJASSIGNEDORDERQRY": {
-    "modifiedAt": 1784095840706,
-    "fetchedAt": "2026-08-07T16:01:17.320Z"
-  },
-  "C_ENTPROJBDGTAVAILYCTRLQRY": {
-    "modifiedAt": 1784095855533,
-    "fetchedAt": "2026-08-07T16:01:17.526Z"
-  },
-  "C_ENTPROJMARGINANALYSISQUERY": {
-    "modifiedAt": 1784095841135,
-    "fetchedAt": "2026-08-07T16:01:17.571Z"
-  },
-  "C_ENTPROJMARGINOVERVIEWQRY": {
-    "modifiedAt": 1784095839961,
-    "fetchedAt": "2026-08-07T16:01:17.911Z"
-  },
-  "C_ENTREVNPRJBILLGELMNTQRY": {
-    "modifiedAt": 1784095859878,
-    "fetchedAt": "2026-08-07T16:01:18.133Z"
-  },
   "C_ENVRMTAMOUNTSOVERVIEWQ": {
     "modifiedAt": 1784095782164,
     "fetchedAt": "2026-08-07T16:01:18.182Z"
-  },
-  "C_EQUIPMENTDATADEX": {
-    "modifiedAt": 1784095404033,
-    "fetchedAt": "2026-08-07T16:01:18.464Z"
-  },
-  "C_EQUIPMENTPARTNERDEX": {
-    "modifiedAt": 1784095404645,
-    "fetchedAt": "2026-08-07T16:01:18.675Z"
   },
   "C_EWM_INBDELIVITEMLEANQ_2": {
     "modifiedAt": 1784095529866,
@@ -663,17 +627,9 @@
     "modifiedAt": 1784095529644,
     "fetchedAt": "2026-08-07T16:01:21.704Z"
   },
-  "C_EXPNSETTLMTDEX": {
-    "modifiedAt": 1784095257758,
-    "fetchedAt": "2026-08-07T16:01:21.963Z"
-  },
   "C_FINANCIALPOSITIONQUERY": {
     "modifiedAt": 1784095920640,
     "fetchedAt": "2026-08-07T16:01:22.254Z"
-  },
-  "C_FINANCIALSTATEMENTKPI": {
-    "modifiedAt": 1784095856729,
-    "fetchedAt": "2026-08-07T16:01:22.333Z"
   },
   "C_FINANCIALSTATUSQUERY": {
     "modifiedAt": 1784095911428,
@@ -686,26 +642,6 @@
   "C_FINANCIALTRANSACTIONSITN": {
     "modifiedAt": 1784095909297,
     "fetchedAt": "2026-08-07T16:01:22.916Z"
-  },
-  "C_FINCUSTOMERINVOICEEDP": {
-    "modifiedAt": 1784095916932,
-    "fetchedAt": "2026-08-07T16:01:23.079Z"
-  },
-  "C_FININVOICEHEADERFDP": {
-    "modifiedAt": 1784095915081,
-    "fetchedAt": "2026-08-07T16:01:23.460Z"
-  },
-  "C_FININVOICEITEMFDP": {
-    "modifiedAt": 1784095910681,
-    "fetchedAt": "2026-08-07T16:01:23.555Z"
-  },
-  "C_FINSTMNTCOMPARISON": {
-    "modifiedAt": 1784095856499,
-    "fetchedAt": "2026-08-07T16:01:23.689Z"
-  },
-  "C_FINSTMNTCOMPARISONQUERY": {
-    "modifiedAt": 1784095848803,
-    "fetchedAt": "2026-08-07T16:01:23.999Z"
   },
   "C_FINTRANSAMTQRY": {
     "modifiedAt": 1784095918424,
@@ -731,33 +667,9 @@
     "modifiedAt": 1784095923772,
     "fetchedAt": "2026-08-07T16:01:25.146Z"
   },
-  "C_FUNCTIONALAREAPLANACTQ2801": {
-    "modifiedAt": 1784095842710,
-    "fetchedAt": "2026-08-07T16:01:25.543Z"
-  },
-  "C_FRTCOSTALLOCDOCDEX": {
-    "modifiedAt": 1784095250008,
-    "fetchedAt": "2026-08-07T16:01:25.415Z"
-  },
-  "C_FUNCLOCATIONPARTNERDEX": {
-    "modifiedAt": 1784095404457,
-    "fetchedAt": "2026-08-07T16:01:25.739Z"
-  },
-  "C_FUNCTIONALLOCATIONDEX": {
-    "modifiedAt": 1784095404388,
-    "fetchedAt": "2026-08-07T16:01:25.983Z"
-  },
-  "C_FUNCTIONALAREASQ2801": {
-    "modifiedAt": 1784095851727,
-    "fetchedAt": "2026-08-07T16:01:26.142Z"
-  },
   "C_FUNDACCTGBALANCEITEMQ": {
     "modifiedAt": 1784095708809,
     "fetchedAt": "2026-08-07T16:01:26.310Z"
-  },
-  "C_FUTUREACCTRBLS": {
-    "modifiedAt": 1784095913299,
-    "fetchedAt": "2026-08-07T16:01:26.592Z"
   },
   "C_FUNDACCTGOPNINVOICEITEMQ": {
     "modifiedAt": 1784095713239,
@@ -766,50 +678,6 @@
   "C_FUNDACCTGNOMINALITEMQ": {
     "modifiedAt": 1784095701449,
     "fetchedAt": "2026-08-07T16:01:26.854Z"
-  },
-  "C_GLACCOUNTFLOW": {
-    "modifiedAt": 1784095843087,
-    "fetchedAt": "2026-08-07T16:01:27.167Z"
-  },
-  "C_GLACCOUNTFLOWKPI": {
-    "modifiedAt": 1784095858868,
-    "fetchedAt": "2026-08-07T16:01:27.346Z"
-  },
-  "C_GLACCOUNTLINEITEMQUERY": {
-    "modifiedAt": 1784095848518,
-    "fetchedAt": "2026-08-07T16:01:27.466Z"
-  },
-  "C_GLACCOUNTYTDBALANCEQ": {
-    "modifiedAt": 1784095839289,
-    "fetchedAt": "2026-08-07T16:01:27.712Z"
-  },
-  "C_GLACCTFLOWBYDATEFUNCKPIQ": {
-    "modifiedAt": 1784095842078,
-    "fetchedAt": "2026-08-07T16:01:27.909Z"
-  },
-  "C_GLACCOUNTLINEITEMSEMTAG": {
-    "modifiedAt": 1784095860423,
-    "fetchedAt": "2026-08-07T16:01:28.016Z"
-  },
-  "C_GLJRNLENTRYITEMTOBEVERIFIED": {
-    "modifiedAt": 1784095842367,
-    "fetchedAt": "2026-08-07T16:01:28.317Z"
-  },
-  "C_GLJRNLENTRTOBEVERIFIEDWRKFLW": {
-    "modifiedAt": 1784095846594,
-    "fetchedAt": "2026-08-07T16:01:28.504Z"
-  },
-  "C_GLINCGSALESORDPRDTVQUERY": {
-    "modifiedAt": 1784095847196,
-    "fetchedAt": "2026-08-07T16:01:28.609Z"
-  },
-  "C_GLLINEITEMSQ0001": {
-    "modifiedAt": 1784095850016,
-    "fetchedAt": "2026-08-07T16:01:28.897Z"
-  },
-  "C_GLJRNLENTRYTOBEVERIFIED": {
-    "modifiedAt": 1784095857991,
-    "fetchedAt": "2026-08-07T16:01:29.051Z"
   },
   "C_GRANTCOSTSHARINGLINKQRY": {
     "modifiedAt": 1784095659963,
@@ -883,10 +751,6 @@
     "modifiedAt": 1784095912433,
     "fetchedAt": "2026-08-07T16:01:32.532Z"
   },
-  "C_HANDLINGUNITSHIPPINGLABELFDP": {
-    "modifiedAt": 1784095536474,
-    "fetchedAt": "2026-08-07T16:01:32.583Z"
-  },
   "C_HISSCRTYPRCVOLATILITYQRY": {
     "modifiedAt": 1784095909104,
     "fetchedAt": "2026-08-07T16:01:32.848Z"
@@ -943,18 +807,6 @@
     "modifiedAt": 1784095323027,
     "fetchedAt": "2026-08-07T16:01:35.343Z"
   },
-  "C_INTERNALORDERPLANACTQ2101": {
-    "modifiedAt": 1784095858637,
-    "fetchedAt": "2026-08-07T16:01:35.507Z"
-  },
-  "C_INTERNALPROJECTITEMQUERY": {
-    "modifiedAt": 1784095840018,
-    "fetchedAt": "2026-08-07T16:01:35.768Z"
-  },
-  "C_INTPROJPLNACTOVERVIEWQUERY": {
-    "modifiedAt": 1784095843217,
-    "fetchedAt": "2026-08-07T16:01:35.876Z"
-  },
   "C_JOINTVENTUREACCTGDTLHIERQRY": {
     "modifiedAt": 1784095690973,
     "fetchedAt": "2026-08-07T16:01:36.083Z"
@@ -962,22 +814,6 @@
   "C_JOINTVENTUREACCTGDTLQRY": {
     "modifiedAt": 1784095696265,
     "fetchedAt": "2026-08-07T16:01:36.304Z"
-  },
-  "C_JOURNALENTRYITEMBROWSER": {
-    "modifiedAt": 1784095845847,
-    "fetchedAt": "2026-08-07T16:01:36.488Z"
-  },
-  "C_JP_ANNEX204ARBOOKQUERY": {
-    "modifiedAt": 1784095571015,
-    "fetchedAt": "2026-08-07T16:01:36.649Z"
-  },
-  "C_KANBANCONTROLCYCLEOUTPUT": {
-    "modifiedAt": 1784095166434,
-    "fetchedAt": "2026-08-07T16:01:36.873Z"
-  },
-  "C_JP_ANNEX205APBOOKQUERY": {
-    "modifiedAt": 1784095571874,
-    "fetchedAt": "2026-08-07T16:01:37.079Z"
   },
   "C_LATEFILINGPREDICTDATA": {
     "modifiedAt": 1784095672300,
@@ -1031,10 +867,6 @@
     "modifiedAt": 1784095917633,
     "fetchedAt": "2026-08-07T16:01:39.540Z"
   },
-  "C_LISTEDDRVTVPRICEQUOTATION": {
-    "modifiedAt": 1784095705489,
-    "fetchedAt": "2026-08-07T16:01:39.691Z"
-  },
   "C_LISTEDSUBSTANCECUSTDEX": {
     "modifiedAt": 1784095725551,
     "fetchedAt": "2026-08-07T16:01:39.798Z"
@@ -1055,41 +887,9 @@
     "modifiedAt": 1784095690380,
     "fetchedAt": "2026-08-07T16:01:40.763Z"
   },
-  "C_LISTINGCONDITION_2": {
-    "modifiedAt": 1784095679034,
-    "fetchedAt": "2026-08-07T16:01:40.779Z"
-  },
   "C_LSTDSUBSTELEMENTNAMEDEX": {
     "modifiedAt": 1784095687914,
     "fetchedAt": "2026-08-07T16:01:41.182Z"
-  },
-  "C_MAINTENANCEITEMDEX": {
-    "modifiedAt": 1784095404692,
-    "fetchedAt": "2026-08-07T16:01:41.355Z"
-  },
-  "C_MAINTENANCEORDERDEX": {
-    "modifiedAt": 1784095404820,
-    "fetchedAt": "2026-08-07T16:01:41.344Z"
-  },
-  "C_MAINTENANCEITEMDEX_2": {
-    "modifiedAt": 1784095403756,
-    "fetchedAt": "2026-08-07T16:01:41.767Z"
-  },
-  "C_MAINTENANCEPLANCYCLEDEX": {
-    "modifiedAt": 1784095404683,
-    "fetchedAt": "2026-08-07T16:01:41.931Z"
-  },
-  "C_MAINTENANCEPLANDEX": {
-    "modifiedAt": 1784095404052,
-    "fetchedAt": "2026-08-07T16:01:41.959Z"
-  },
-  "C_MAINTENANCEPLANDEX_2": {
-    "modifiedAt": 1784095403902,
-    "fetchedAt": "2026-08-07T16:01:42.317Z"
-  },
-  "C_MAINTENANCEPLANSCHEDULEDEX": {
-    "modifiedAt": 1784095404422,
-    "fetchedAt": "2026-08-07T16:01:42.527Z"
   },
   "C_MAINTMBLAPPLCLIENTSTATEQUERY": {
     "modifiedAt": 1784095761301,
@@ -1114,126 +914,6 @@
   "C_MAINTMBLTRANSHISTORYQUERY": {
     "modifiedAt": 1784095656180,
     "fetchedAt": "2026-08-07T16:01:43.665Z"
-  },
-  "C_MAINTNOTIFACTIVITYDEX": {
-    "modifiedAt": 1784095404465,
-    "fetchedAt": "2026-08-07T16:01:43.682Z"
-  },
-  "C_MAINTNOTIFICATIONDEX": {
-    "modifiedAt": 1784095403767,
-    "fetchedAt": "2026-08-07T16:01:44.037Z"
-  },
-  "C_MAINTNOTIFITEMACTIVITYDEX": {
-    "modifiedAt": 1784095403858,
-    "fetchedAt": "2026-08-07T16:01:44.221Z"
-  },
-  "C_MAINTNOTIFITEMCAUSEDEX": {
-    "modifiedAt": 1784095404405,
-    "fetchedAt": "2026-08-07T16:01:44.261Z"
-  },
-  "C_MAINTNOTIFITEMDEX": {
-    "modifiedAt": 1784095403712,
-    "fetchedAt": "2026-08-07T16:01:44.586Z"
-  },
-  "C_MAINTNOTIFITEMTASKDEX": {
-    "modifiedAt": 1784095403751,
-    "fetchedAt": "2026-08-07T16:01:44.763Z"
-  },
-  "C_MAINTNOTIFRSKASSESSMENTQUERY": {
-    "modifiedAt": 1784095404164,
-    "fetchedAt": "2026-08-07T16:01:44.854Z"
-  },
-  "C_MAINTNOTIFTASKDEX": {
-    "modifiedAt": 1784095404268,
-    "fetchedAt": "2026-08-07T16:01:45.170Z"
-  },
-  "C_MAINTORDACTUALCOSTDATAQ": {
-    "modifiedAt": 1784095404938,
-    "fetchedAt": "2026-08-07T16:01:45.337Z"
-  },
-  "C_MAINTORDCONFIRMATIONDEX": {
-    "modifiedAt": 1784095404100,
-    "fetchedAt": "2026-08-07T16:01:45.426Z"
-  },
-  "C_MAINTORDERCOMPONENTDEX": {
-    "modifiedAt": 1784095404806,
-    "fetchedAt": "2026-08-07T16:01:45.743Z"
-  },
-  "C_MAINTORDEROPERATIONDEX": {
-    "modifiedAt": 1784095404237,
-    "fetchedAt": "2026-08-07T16:01:45.927Z"
-  },
-  "C_MAINTORDERPARTNERDEX": {
-    "modifiedAt": 1784095403854,
-    "fetchedAt": "2026-08-07T16:01:46.041Z"
-  },
-  "C_MAINTORDERPROCESSPHASEDEX": {
-    "modifiedAt": 1784095404672,
-    "fetchedAt": "2026-08-07T16:01:46.284Z"
-  },
-  "C_MAINTORDERWORKFLOWEMAIL": {
-    "modifiedAt": 1784095404186,
-    "fetchedAt": "2026-08-07T16:01:46.524Z"
-  },
-  "C_MAINTORDOBJECTLISTITEMDEX": {
-    "modifiedAt": 1784095405036,
-    "fetchedAt": "2026-08-07T16:01:46.596Z"
-  },
-  "C_MAINTORDPROCESSSUBPHASEDEX": {
-    "modifiedAt": 1784095404480,
-    "fetchedAt": "2026-08-07T16:01:46.858Z"
-  },
-  "C_MAINTORDPROCGCNTXTTEXTDEX": {
-    "modifiedAt": 1784095404085,
-    "fetchedAt": "2026-08-07T16:01:47.097Z"
-  },
-  "C_MAINTORDPROCGCONTEXTDEX": {
-    "modifiedAt": 1784095404027,
-    "fetchedAt": "2026-08-07T16:01:47.137Z"
-  },
-  "C_MAINTORDPROCPHASETEXTDEX": {
-    "modifiedAt": 1784095404594,
-    "fetchedAt": "2026-08-07T16:01:47.427Z"
-  },
-  "C_MAINTORDPROCSUBPHASETXTDEX": {
-    "modifiedAt": 1784095404143,
-    "fetchedAt": "2026-08-07T16:01:47.698Z"
-  },
-  "C_MAINTPLANCALLOBJECTDEX": {
-    "modifiedAt": 1784095404993,
-    "fetchedAt": "2026-08-07T16:01:47.747Z"
-  },
-  "C_MAINTPLANSCHEDGOVWQUERY": {
-    "modifiedAt": 1784095405094,
-    "fetchedAt": "2026-08-07T16:01:48.025Z"
-  },
-  "C_MAINTPLANSCHEDULEDEX_2": {
-    "modifiedAt": 1784095403849,
-    "fetchedAt": "2026-08-07T16:01:48.267Z"
-  },
-  "C_MARGANLYSPRODANDSRVCQ": {
-    "modifiedAt": 1784095849004,
-    "fetchedAt": "2026-08-07T16:01:48.296Z"
-  },
-  "C_MARKETSEGMENTPLANACTQ2501": {
-    "modifiedAt": 1784095848117,
-    "fetchedAt": "2026-08-07T16:01:48.591Z"
-  },
-  "C_MARKETSEGMENTQ2501": {
-    "modifiedAt": 1784095840778,
-    "fetchedAt": "2026-08-07T16:01:48.854Z"
-  },
-  "C_MATLDOCFORPRINTGOODSMVT": {
-    "modifiedAt": 1784095539008,
-    "fetchedAt": "2026-08-07T16:01:49.410Z"
-  },
-  "C_MATLDOCFORPRINTGDSISSSUBCONT": {
-    "modifiedAt": 1784095529680,
-    "fetchedAt": "2026-08-07T16:01:49.739Z"
-  },
-  "C_MATLSTKATKEYDATEINALTUOM": {
-    "modifiedAt": 1784095540457,
-    "fetchedAt": "2026-08-07T16:01:50.200Z"
   },
   "C_MATURITYPROFILEQUERY": {
     "modifiedAt": 1784095912472,
@@ -1295,10 +975,6 @@
     "modifiedAt": 1784095378701,
     "fetchedAt": "2026-08-07T16:01:53.025Z"
   },
-  "C_MEASUREMENTDOCUMENTDEX": {
-    "modifiedAt": 1784095404431,
-    "fetchedAt": "2026-08-07T16:01:53.073Z"
-  },
   "C_MDQLTYANALYTICSCORESQRY": {
     "modifiedAt": 1784095379485,
     "fetchedAt": "2026-08-07T16:01:53.195Z"
@@ -1306,22 +982,6 @@
   "C_MEASUREMENTPOINTVOLQRY": {
     "modifiedAt": 1784095663285,
     "fetchedAt": "2026-08-07T16:01:53.608Z"
-  },
-  "C_MFGORDACTLPLNTGTLDGRCOST": {
-    "modifiedAt": 1784095842604,
-    "fetchedAt": "2026-08-07T16:01:53.648Z"
-  },
-  "C_MEASURINGPOINTDEX": {
-    "modifiedAt": 1784095404008,
-    "fetchedAt": "2026-08-07T16:01:53.832Z"
-  },
-  "C_MFGORDEREVTBSDWIPVARCQRY": {
-    "modifiedAt": 1784095841493,
-    "fetchedAt": "2026-08-07T16:01:54.177Z"
-  },
-  "C_MFGORDERITEMSCRAPAMTQRY": {
-    "modifiedAt": 1784095170141,
-    "fetchedAt": "2026-08-07T16:01:54.180Z"
   },
   "C_MKTDATABASISSPREADQRY": {
     "modifiedAt": 1784095909061,
@@ -1347,57 +1007,13 @@
     "modifiedAt": 1784095720603,
     "fetchedAt": "2026-08-07T16:01:55.325Z"
   },
-  "C_NONMNGDPURGSPEND": {
-    "modifiedAt": 1784095476954,
-    "fetchedAt": "2026-08-07T16:01:55.566Z"
-  },
   "C_ONRRRPTGHISTREPORTDETQ": {
     "modifiedAt": 1784095773455,
     "fetchedAt": "2026-08-07T16:01:55.868Z"
   },
-  "C_OPENCLOSEDDISPUTECASE": {
-    "modifiedAt": 1784095911685,
-    "fetchedAt": "2026-08-07T16:01:55.862Z"
-  },
-  "C_OPENDISPPROCESSINGDAYS": {
-    "modifiedAt": 1784095914626,
-    "fetchedAt": "2026-08-07T16:01:56.100Z"
-  },
-  "C_OPENDISPUTECASE": {
-    "modifiedAt": 1784095914455,
-    "fetchedAt": "2026-08-07T16:01:56.446Z"
-  },
-  "C_OPERATIONALSUPLREVALQRY": {
-    "modifiedAt": 1784095469547,
-    "fetchedAt": "2026-08-07T16:01:56.432Z"
-  },
-  "C_ORIGNPRFTCTRONPROJQRY": {
-    "modifiedAt": 1784095851694,
-    "fetchedAt": "2026-08-07T16:01:56.660Z"
-  },
   "C_OUTPUTREQUESTITEMDEX": {
     "modifiedAt": 1784095656940,
     "fetchedAt": "2026-08-07T16:01:56.988Z"
-  },
-  "C_OVERDUEACCTRBLS": {
-    "modifiedAt": 1784095922677,
-    "fetchedAt": "2026-08-07T16:01:57.022Z"
-  },
-  "C_OVHDPRJBDGTCMTMTQUERY": {
-    "modifiedAt": 1784095839639,
-    "fetchedAt": "2026-08-07T16:01:57.254Z"
-  },
-  "C_OVHDPRJDEBITCRDTQUERY": {
-    "modifiedAt": 1784095842448,
-    "fetchedAt": "2026-08-07T16:01:57.562Z"
-  },
-  "C_OVHDSTSTCLPRJPLNACTLCMTMTQ": {
-    "modifiedAt": 1784095847492,
-    "fetchedAt": "2026-08-07T16:01:57.617Z"
-  },
-  "C_PARTSPERMILLIONQUERY": {
-    "modifiedAt": 1784095479645,
-    "fetchedAt": "2026-08-07T16:01:57.817Z"
   },
   "C_PAYFNPAYMENTSITUATION": {
     "modifiedAt": 1784095910929,

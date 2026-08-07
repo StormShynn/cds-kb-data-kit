@@ -31,8 +31,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AcademicTitle` | ✓ | |  |  |  |  |
-| `AcademicTitleName` |  | |  |  |  |  |
+| `AcademicTitle` | ✓ | |  |  | `CHAR(4)` | Academic Title: Key |
+| `AcademicTitleName` |  | |  |  | `CHAR(20)` | Academic Title: Written Form |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

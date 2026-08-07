@@ -5,13 +5,23 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OVHDPRJBDGTCMTMTQUERY')/$value
 semantic_en: This CDS view is designed to provide an analytical query for overhead project budget commitments. It allows users to analyze and report on various financial aspects of project budgets, including actual costs, commitments, planned costs, and budget availability. The view is tailored for consumption in analytical applications, providing a comprehensive overview of project financials. This CDS view provides the data to answer the following business questions: What are the actual costs incurred for a specific project or set of projects? How much commitment has been made against the project budget? What is the planned cost for the project, and how does it compare to actual costs? What is the total budget allocated for the project, and how much of it is still available? How much of the budget has been used in terms of percentage? What is the variance between planned and actual costs for the project? How do the financials of a project vary across different fiscal years and periods? What are the financial implications of different account assignments and profit centers on project budgets? How do different planning categories and ledgers affect project financials? What is the impact of availability control on project costs and commitments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Overhead Project Budget Cmtmt - Query — CDS view tiêu dùng dựa trên Overhead Project Budget Cmtmt - Query.
 keywords:
   - Overhead Project Budget Cmtmt - Query
-  - Overhead Project Budget Cmtmt - Query
-  - Overhead Project Budget Cmtmt - Query
+  - overhead
+  - project
+  - budget
+  - cmtmt
+  - query
+  - company
+  - code
+  - fiscal
+  - year
+  - ledger
+  - period
 tags:
   - CO
   - account
@@ -26,7 +36,7 @@ tags:
   - lob:finance
   - plan
   - project
-  - metadata-only
+  - bo:project
 ---
 # C_OVHDPRJBDGTCMTMTQUERY
 
@@ -38,7 +48,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OVHDPRJBDGTCMTMTQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OVHDPRJBDGTCMTMTQUERY')/$value) |
 
 ## Fields
 
@@ -71,20 +81,20 @@ tags:
 | `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
 | `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `ActualCostAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
-| `ActualCostAmtInDspCrcy_H` |  | |  |  | `DEC(23)` |  |
-| `CmtmtAmountInDisplayCurrency` |  | |  |  | `DEC(23)` |  |
-| `CmtmtAmountInDisplayCurrency_H` |  | |  |  | `DEC(23)` |  |
-| `PlannedCosAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
+| `ActualCostAmtInDspCrcy` |  | |  | `cast( case when Ledger = $parameters.P_Ledger and ActualPlanCode = 'A' then ActualCostAmtInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `ActualCostAmtInDspCrcy_H` |  | |  | `cast( case when Ledger = $parameters.P_Ledger and AvailabilityControlIsActive = 'X' and ActualPlanCode = 'A' then ActualCostAmtInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `CmtmtAmountInDisplayCurrency` |  | |  | `cast( case when Ledger = '0E' and IsCommitment = 'X' then ActualCostAmtInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `CmtmtAmountInDisplayCurrency_H` |  | |  | `cast( case when Ledger = '0E' and IsCommitment = 'X' and AvailabilityControlIsActive = 'X' then ActualCostAmtInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `PlannedCosAmtInDspCrcy` |  | |  | `cast( case when PlanningCategory = $parameters.P_PlanningCategory1 and Ledger = $parameters.P_Ledger and ActualPlanCode = 'P' then PlannedCosAmtInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
 | `BdgtCtrldBdgtCostInDspCrcy` |  | |  |  | `CURR(23)` | Amount in Global Currency |
-| `BdgtCtrldBdgtCostInDspCrcy_H` |  | |  |  | `DEC(23)` |  |
-| `NonAccmltdAssgdValForBdgt` |  | |  |  | `DEC(24)` |  |
-| `AvailableBdgtAmtInDspCrcy` |  | |  |  | `DEC(25)` |  |
-| `VarianceAmount` |  | |  |  | `DEC(24)` |  |
-| `AvailyCtrlActlCostAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
-| `AvailyCtrlCmtmtAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
-| `AvailyCtrlBdgtCostInDspCrcy` |  | |  |  | `DEC(23)` |  |
-| `AvailyCtrlUsdBdgtAmtInDspCrcy` |  | |  |  | `DECF(34)` |  |
+| `BdgtCtrldBdgtCostInDspCrcy_H` |  | |  | `cast( case when AvailabilityControlIsActive = 'X' and ActualPlanCode = 'P' then BdgtCtrldBdgtCostInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `NonAccmltdAssgdValForBdgt` |  | |  | `( $projection.ActualCostAmtInDspCrcy_H + $projection.CmtmtAmountInDisplayCurrency_H )` | `DEC(24)` |  |
+| `AvailableBdgtAmtInDspCrcy` |  | |  | `( $projection.BdgtCtrldBdgtCostInDspCrcy_H - $projection.ActualCostAmtInDspCrcy_H - $projection.CmtmtAmountInDisplayCurrency_H )` | `DEC(25)` |  |
+| `VarianceAmount` |  | |  | `( $projection.PlannedCosAmtInDspCrcy - $projection.ActualCostAmtInDspCrcy )` | `DEC(24)` |  |
+| `AvailyCtrlActlCostAmtInDspCrcy` |  | |  | `cast( case when Ledger = $parameters.P_Ledger and AvailabilityControlIsActive = 'X' and ActualPlanCode = 'A' then ActualCostAmtInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `AvailyCtrlCmtmtAmtInDspCrcy` |  | |  | `cast( case when Ledger = '0E' and IsCommitment = 'X' and AvailabilityControlIsActive = 'X' then ActualCostAmtInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `AvailyCtrlBdgtCostInDspCrcy` |  | |  | `cast( case when AvailabilityControlIsActive = 'X' and ActualPlanCode = 'P' then BdgtCtrldBdgtCostInDspCrcy else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
+| `AvailyCtrlUsdBdgtAmtInDspCrcy` |  | |  | `ratio_of( portion => cast ( $projection.NonAccmltdAssgdValForBdgt as abap.dec( 23, 2 ) ) , total => cast ( $projection.AvailyCtrlBdgtCostInDspCrcy as abap.dec( 23, 2 ) ) ) * 100` | `DECF(34)` |  |
 | `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
 | `ProjectManager` |  | |  |  | `CHAR(10)` | Business Partner Number |
 | `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | CO Debit/Credit Indicator |
@@ -97,3 +107,377 @@ tags:
 | `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
 | `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
 | `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `_DocumentStore` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OVHDPRJBDGTCMTMTQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OVHDPRJBDGTCMTMTQUERY')/$value)*
+
+```abap
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.modelingPattern:#ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities:[#ANALYTICAL_QUERY]
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@AccessControl.personalData.blocking:#REQUIRED
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.dataClass: #MIXED
+@Analytics.settings.maxProcessingEffort: #HIGH
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText.label: 'Overhead Project Budget Cmtmt - Query'
+@Analytics.intentBasedNavigation.filterMapper: 'CL_FINS_MA_OVPJBDGT_RB_EXIT'
+@Analytics.variableCheck.implementedBy: 'ABAP:CL_FINS_MA_CDS_CHECK_VAR'
+@Analytics.document.defaultAssociationToStorage: '_DocumentStore'
+define transient view entity C_OvhdPrjBdgtCmtmtQuery
+  provider contract analytical_query
+  with parameters
+    @Consumption.defaultValue: 'YPS2'
+    @Consumption.valueHelpDefinition: [{
+    entity: {
+     name:    'I_FinancialStatementHierarchy',
+     element: 'GLAccountHierarchy'
+         }
+    }]
+    P_GLAccountHierarchy : fins_sem_tag_hryid,
+
+    @Consumption.derivation: { lookupEntity: 'I_Ledger',
+      resultElement: 'Ledger',
+      binding:
+      [ { targetElement : 'IsLeadingLedger' ,
+          type : #CONSTANT,
+          value : 'X'
+        }
+      ]
+    }
+    @AnalyticsDetails.query.variableSequence: 10
+    @Consumption.valueHelpDefinition: [ { entity: { name: 'I_LedgerStdVH', element: 'Ledger' } } ]
+    P_Ledger             : fins_ledger,
+
+    @EndUserText.label: 'Planning Category'
+    @Consumption.defaultValue: 'PLN'
+    @Consumption.valueHelpDefinition: [{
+    entity: {
+        name:    'I_ProjMargPlanningCategory',
+        element: 'PlanningCategory'
+            }
+    }]
+    P_PlanningCategory1  : fcom_category
+
+  as projection on I_OvhdProjMargOvwCube(
+                   P_GLAccountHierarchy : $parameters.P_GLAccountHierarchy
+                   ) as OvhdProjMargOvwCube
+
+{
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.variableSequence : 95
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: true, hidden: false}
+  CompanyCode,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_FiscalYearForCompanyCode', element: 'FiscalYear' } ,
+                                   additionalBinding: [{ localElement: 'CompanyCode', element: 'CompanyCode' }] }]
+  @Semantics.fiscal.year: true
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  FiscalYear,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_FiscalYearForCompanyCode', element: 'FiscalYear' } ,
+                                   additionalBinding: [{ localElement: 'CompanyCode', element: 'CompanyCode' }] }]
+  //@Semantics.fiscal.year: true
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  LedgerFiscalYear,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence : 100
+  @Semantics.fiscal.period: true
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_FiscalYearPeriodForCmpnyCode', element: 'FiscalPeriod' } ,
+                                   additionalBinding: [
+                                   { localElement: 'CompanyCode', element: 'CompanyCode' },
+                                                      { localElement: 'FiscalYear', element: 'FiscalYear' } ] }]
+  @UI.textArrangement: #TEXT_LAST
+  FiscalPeriod,
+
+  //  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @Semantics.fiscal.yearPeriod: true
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  FiscalYearPeriod,
+
+  @Consumption.filter :{ hidden: false, selectionType: #SINGLE, multipleSelections: true, mandatory: false}
+  @AnalyticsDetails.query.variableSequence : 100
+  @UI.textArrangement: #TEXT_LAST
+  AccountAssignmentType,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: true, defaultValue: 'CCC ' }
+  @AnalyticsDetails.query.variableSequence : 105
+  @AnalyticsDetails.query: {axis: #COLUMNS}
+  @UI.textArrangement: #TEXT_ONLY
+  CurrencyField,
+
+  @Semantics.fiscal.yearVariant: true
+  FiscalYearVariant,
+
+  @UI.textArrangement: #TEXT_LAST
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  ProfitCenter,
+
+  @UI.textArrangement: #TEXT_LAST
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  OriginProfitCenter,
+
+  @UI.textArrangement: #TEXT_LAST
+  FunctionalArea,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SoldProductGroup,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SoldProduct,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  Customer,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  CustomerGroup,
+
+  @UI.textArrangement: #TEXT_LAST
+  SalesDocument,
+
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.hidden: true
+  @Consumption.hidden: true
+  SalesOrder,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @UI.textArrangement: #TEXT_LAST
+  ChartOfAccounts,
+
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  GLAccount,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query: {axis: #ROWS}
+
+  @UI.textArrangement: #TEXT_LAST
+  Project,
+
+  @UI.textArrangement: #TEXT_LAST
+  ProjectExternalID,
+
+  //@Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label: 'Project Manager'
+  @UI.textArrangement: #TEXT_LAST
+  @Consumption.hidden: true
+  PersonWorkAgreement,
+
+  @UI.textArrangement: #TEXT_LAST
+  ProcessingStatus,
+  
+  //@Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true }
+  @UI.textArrangement: #TEXT_ONLY
+  ProjectProfileCode,
+
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query: {axis: #ROWS}
+  WBSElementExternalID,
+
+  @UI.textArrangement: #TEXT_LAST
+  Segment,
+
+  @UI.textArrangement: #TEXT_LAST
+  Currency,
+
+  @EndUserText.label: 'Actual cost'
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #SUM
+  cast(
+    case
+      when Ledger = $parameters.P_Ledger and ActualPlanCode = 'A'
+        then ActualCostAmtInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as ActualCostAmtInDspCrcy,
+
+  @Semantics.amount.currencyCode: 'Currency'
+  @Consumption.hidden: true
+  @Aggregation.default: #SUM
+  @EndUserText.label: 'Actual Cost for AVC'
+  cast(
+    case
+      when Ledger = $parameters.P_Ledger and AvailabilityControlIsActive = 'X' and ActualPlanCode = 'A'
+        then ActualCostAmtInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as ActualCostAmtInDspCrcy_H,
+
+  @EndUserText.label: 'Commitment'
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #SUM
+  cast(
+    case
+      when Ledger = '0E' and IsCommitment = 'X'
+       then ActualCostAmtInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as CmtmtAmountInDisplayCurrency,
+
+  @Semantics.amount.currencyCode: 'Currency'
+  @Consumption.hidden: true
+  @Aggregation.default: #SUM
+  @EndUserText.label: 'Commitment for AVC'
+  cast(
+    case
+      when Ledger = '0E' and IsCommitment = 'X' and AvailabilityControlIsActive = 'X'
+       then ActualCostAmtInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as CmtmtAmountInDisplayCurrency_H,
+
+  @EndUserText.label: 'Planned cost'
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #SUM
+  cast(
+    case
+      when PlanningCategory  = $parameters.P_PlanningCategory1 and Ledger = $parameters.P_Ledger and ActualPlanCode = 'P'
+        then PlannedCosAmtInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as PlannedCosAmtInDspCrcy,
+
+  @EndUserText.label: 'Budget'
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #SUM
+  BdgtCtrldBdgtCostInDspCrcy,
+
+  @Semantics.amount.currencyCode: 'Currency'
+  @Consumption.hidden: true
+  @Aggregation.default: #SUM
+  @EndUserText.label: 'Budget for AVC'
+  cast(
+    case
+      when AvailabilityControlIsActive = 'X' and ActualPlanCode = 'P'
+        then BdgtCtrldBdgtCostInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as BdgtCtrldBdgtCostInDspCrcy_H,
+
+  @EndUserText.label: 'AVC Assigned Values'
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #FORMULA
+  ( $projection.ActualCostAmtInDspCrcy_H + $projection.CmtmtAmountInDisplayCurrency_H ) as NonAccmltdAssgdValForBdgt,
+
+  @EndUserText.label: 'Available Budget (AVC Budget - AVC Assigned Values)'
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #FORMULA
+  ( $projection.BdgtCtrldBdgtCostInDspCrcy_H -
+    $projection.ActualCostAmtInDspCrcy_H -
+    $projection.CmtmtAmountInDisplayCurrency_H )                                    as AvailableBdgtAmtInDspCrcy,
+
+  @EndUserText.label: 'Variance (Plan Cost - Actual Cost)'
+  @Semantics.amount.currencyCode: 'Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @Aggregation.default: #FORMULA
+  ( $projection.PlannedCosAmtInDspCrcy - $projection.ActualCostAmtInDspCrcy )       as VarianceAmount,
+  
+  @Semantics.amount.currencyCode: 'Currency'
+  @Aggregation.default: #SUM
+  @EndUserText.label: 'Actual Cost (AVC)'
+  cast(
+    case
+      when Ledger = $parameters.P_Ledger and AvailabilityControlIsActive = 'X' and ActualPlanCode = 'A'
+        then ActualCostAmtInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as AvailyCtrlActlCostAmtInDspCrcy,
+
+  @Semantics.amount.currencyCode: 'Currency'
+  @Aggregation.default: #SUM
+  @EndUserText.label: 'Commitment (AVC)'
+  cast(
+    case
+      when Ledger = '0E' and IsCommitment = 'X' and AvailabilityControlIsActive = 'X'
+       then ActualCostAmtInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as AvailyCtrlCmtmtAmtInDspCrcy,
+  
+  @Semantics.amount.currencyCode: 'Currency'
+  @Aggregation.default: #SUM
+  @EndUserText.label: 'Budget (AVC)'
+  cast(
+    case
+      when AvailabilityControlIsActive = 'X' and ActualPlanCode = 'P'
+        then BdgtCtrldBdgtCostInDspCrcy
+      else null
+    end
+  as abap.dec( 23, 2 ) )                                                            as AvailyCtrlBdgtCostInDspCrcy,
+  
+  @Aggregation.default: #FORMULA
+  @EndUserText.label: 'Used Budget (AVC) in Percent %'
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.decimals: 2
+  ratio_of( portion =>  cast ( $projection.NonAccmltdAssgdValForBdgt as abap.dec( 23, 2 ) ) ,
+            total => cast ( $projection.AvailyCtrlBdgtCostInDspCrcy as abap.dec( 23, 2 ) ) ) * 100
+  as AvailyCtrlUsdBdgtAmtInDspCrcy,
+    
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  CostCenter,
+  
+  //@Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label: 'Project Manager'
+  @UI.textArrangement: #TEXT_LAST
+  ProjectManager,
+  
+  @EndUserText.label: 'CO Debit/Credit Indicator'
+  @UI.textArrangement: #TEXT_LAST
+  ControllingDebitCreditCode,
+  
+  @Consumption.hidden: true
+  FinancialPlanningReqTransSqnc,
+  @Consumption.hidden: true
+  FinancialPlanningDataPacket,
+  @Consumption.hidden: true
+  LineIsSemTagCalculated,
+  @Consumption.hidden: true
+  SourceLedger,
+  @Consumption.hidden: true
+  FinancialPlanningEntryItem,
+  @Consumption.hidden: true
+  Ledger,
+  @Consumption.hidden: true
+  SemanticTag,
+  @Consumption.hidden: true
+  AccountingDocument,
+  @Consumption.hidden: true
+  LedgerGLLineItem,
+  
+  _DocumentStore
+}
+//where
+//  (
+//       Ledger = $parameters.P_Ledger
+//    or Ledger = '0E'
+//    or Ledger = '0L'
+//  )
+//  and(
+//       PlanningCategory   = $parameters.P_PlanningCategory1
+//    or PlanningCategory   = 'ACT01'
+//    or PlanningCategory   = 'BUDGET01'
+//  )
+```

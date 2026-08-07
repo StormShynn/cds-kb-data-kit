@@ -125,22 +125,22 @@
     "action": "updated"
   },
   "C_DEBITMEMOREQUESTITEMQRY": {
-    "appliedAt": "2026-08-07T15:34:15.586Z",
+    "appliedAt": "2026-08-07T16:34:15.704Z",
     "fields": 49,
     "action": "updated"
   },
   "C_MATERIALSTOCKACTUAL": {
-    "appliedAt": "2026-08-07T15:34:15.790Z",
+    "appliedAt": "2026-08-07T16:34:30.812Z",
     "fields": 20,
     "action": "updated"
   },
   "C_MATERIALSTOCKBYKEYDATE": {
-    "appliedAt": "2026-08-07T15:34:15.990Z",
+    "appliedAt": "2026-08-07T16:34:30.994Z",
     "fields": 20,
     "action": "updated"
   },
   "C_MATERIALSTOCKTIMESERIES": {
-    "appliedAt": "2026-08-07T15:34:16.187Z",
+    "appliedAt": "2026-08-07T16:34:31.175Z",
     "fields": 23,
     "action": "updated"
   },
@@ -332,6 +332,486 @@
   "C_DAYSBEYONDTERMS": {
     "appliedAt": "2026-08-07T16:28:32.600Z",
     "fields": 27,
+    "action": "updated"
+  },
+  "C_DAYSSALESOUTSTANDING": {
+    "appliedAt": "2026-08-07T16:34:15.488Z",
+    "fields": 30,
+    "action": "updated"
+  },
+  "C_DUNNINGLEVELDISTRIBUTION": {
+    "appliedAt": "2026-08-07T16:34:15.907Z",
+    "fields": 30,
+    "action": "updated"
+  },
+  "C_ENTPROJASSIGNEDORDERQRY": {
+    "appliedAt": "2026-08-07T16:34:16.103Z",
+    "fields": 45,
+    "action": "updated"
+  },
+  "C_ENTPROJBDGTAVAILYCTRLQRY": {
+    "appliedAt": "2026-08-07T16:34:16.313Z",
+    "fields": 52,
+    "action": "updated"
+  },
+  "C_ENTPROJMARGINANALYSISQUERY": {
+    "appliedAt": "2026-08-07T16:34:16.541Z",
+    "fields": 81,
+    "action": "updated"
+  },
+  "C_ENTPROJMARGINOVERVIEWQRY": {
+    "appliedAt": "2026-08-07T16:34:16.755Z",
+    "fields": 55,
+    "action": "updated"
+  },
+  "C_ENTREVNPRJBILLGELMNTQRY": {
+    "appliedAt": "2026-08-07T16:34:16.966Z",
+    "fields": 64,
+    "action": "updated"
+  },
+  "C_EQUIPMENTDATADEX": {
+    "appliedAt": "2026-08-07T16:34:17.178Z",
+    "fields": 73,
+    "action": "updated"
+  },
+  "C_EQUIPMENTPARTNERDEX": {
+    "appliedAt": "2026-08-07T16:34:17.398Z",
+    "fields": 12,
+    "action": "updated"
+  },
+  "C_EXPNSETTLMTDEX": {
+    "appliedAt": "2026-08-07T16:34:17.659Z",
+    "fields": 180,
+    "action": "updated"
+  },
+  "C_FINANCIALSTATEMENTKPI": {
+    "appliedAt": "2026-08-07T16:34:17.875Z",
+    "fields": 308,
+    "action": "updated"
+  },
+  "C_FINCUSTOMERINVOICEEDP": {
+    "appliedAt": "2026-08-07T16:34:18.114Z",
+    "fields": 9,
+    "action": "updated"
+  },
+  "C_FININVOICEHEADERFDP": {
+    "appliedAt": "2026-08-07T16:34:18.292Z",
+    "fields": 43,
+    "action": "updated"
+  },
+  "C_FININVOICEITEMFDP": {
+    "appliedAt": "2026-08-07T16:34:18.530Z",
+    "fields": 90,
+    "action": "updated"
+  },
+  "C_FINSTMNTCOMPARISON": {
+    "appliedAt": "2026-08-07T16:34:18.693Z",
+    "fields": 26,
+    "action": "updated"
+  },
+  "C_FINSTMNTCOMPARISONQUERY": {
+    "appliedAt": "2026-08-07T16:34:18.897Z",
+    "fields": 28,
+    "action": "updated"
+  },
+  "C_FRTCOSTALLOCDOCDEX": {
+    "appliedAt": "2026-08-07T16:34:19.086Z",
+    "fields": 129,
+    "action": "updated"
+  },
+  "C_FUNCLOCATIONPARTNERDEX": {
+    "appliedAt": "2026-08-07T16:34:19.285Z",
+    "fields": 12,
+    "action": "updated"
+  },
+  "C_FUNCTIONALAREAPLANACTQ2801": {
+    "appliedAt": "2026-08-07T16:34:19.467Z",
+    "fields": 72,
+    "action": "updated"
+  },
+  "C_FUNCTIONALAREASQ2801": {
+    "appliedAt": "2026-08-07T16:34:19.666Z",
+    "fields": 61,
+    "action": "updated"
+  },
+  "C_FUNCTIONALLOCATIONDEX": {
+    "appliedAt": "2026-08-07T16:34:19.862Z",
+    "fields": 40,
+    "action": "updated"
+  },
+  "C_FUTUREACCTRBLS": {
+    "appliedAt": "2026-08-07T16:34:20.058Z",
+    "fields": 33,
+    "action": "updated"
+  },
+  "C_GLACCOUNTFLOW": {
+    "appliedAt": "2026-08-07T16:34:20.271Z",
+    "fields": 247,
+    "action": "updated"
+  },
+  "C_GLACCOUNTFLOWKPI": {
+    "appliedAt": "2026-08-07T16:34:20.442Z",
+    "fields": 92,
+    "action": "updated"
+  },
+  "C_GLACCOUNTLINEITEMQUERY": {
+    "appliedAt": "2026-08-07T16:34:20.636Z",
+    "fields": 153,
+    "action": "updated"
+  },
+  "C_GLACCOUNTLINEITEMSEMTAG": {
+    "appliedAt": "2026-08-07T16:34:20.841Z",
+    "fields": 116,
+    "action": "updated"
+  },
+  "C_GLACCOUNTYTDBALANCEQ": {
+    "appliedAt": "2026-08-07T16:34:21.051Z",
+    "fields": 86,
+    "action": "updated"
+  },
+  "C_GLACCTFLOWBYDATEFUNCKPIQ": {
+    "appliedAt": "2026-08-07T16:34:21.239Z",
+    "fields": 85,
+    "action": "updated"
+  },
+  "C_GLINCGSALESORDPRDTVQUERY": {
+    "appliedAt": "2026-08-07T16:34:21.440Z",
+    "fields": 110,
+    "action": "updated"
+  },
+  "C_GLJRNLENTRTOBEVERIFIEDWRKFLW": {
+    "appliedAt": "2026-08-07T16:34:21.641Z",
+    "fields": 7,
+    "action": "updated"
+  },
+  "C_GLJRNLENTRYITEMTOBEVERIFIED": {
+    "appliedAt": "2026-08-07T16:34:21.848Z",
+    "fields": 27,
+    "action": "updated"
+  },
+  "C_GLJRNLENTRYTOBEVERIFIED": {
+    "appliedAt": "2026-08-07T16:34:22.047Z",
+    "fields": 27,
+    "action": "updated"
+  },
+  "C_GLLINEITEMSQ0001": {
+    "appliedAt": "2026-08-07T16:34:22.240Z",
+    "fields": 246,
+    "action": "updated"
+  },
+  "C_HANDLINGUNITSHIPPINGLABELFDP": {
+    "appliedAt": "2026-08-07T16:34:22.443Z",
+    "fields": 104,
+    "action": "updated"
+  },
+  "C_INTERNALORDERPLANACTQ2101": {
+    "appliedAt": "2026-08-07T16:34:22.639Z",
+    "fields": 57,
+    "action": "updated"
+  },
+  "C_INTERNALPROJECTITEMQUERY": {
+    "appliedAt": "2026-08-07T16:34:22.820Z",
+    "fields": 34,
+    "action": "updated"
+  },
+  "C_INTPROJPLNACTOVERVIEWQUERY": {
+    "appliedAt": "2026-08-07T16:34:23.008Z",
+    "fields": 44,
+    "action": "updated"
+  },
+  "C_JOURNALENTRYITEMBROWSER": {
+    "appliedAt": "2026-08-07T16:34:23.239Z",
+    "fields": 379,
+    "action": "updated"
+  },
+  "C_JP_ANNEX204ARBOOKQUERY": {
+    "appliedAt": "2026-08-07T16:34:23.430Z",
+    "fields": 27,
+    "action": "updated"
+  },
+  "C_JP_ANNEX205APBOOKQUERY": {
+    "appliedAt": "2026-08-07T16:34:23.629Z",
+    "fields": 34,
+    "action": "updated"
+  },
+  "C_KANBANCONTROLCYCLEOUTPUT": {
+    "appliedAt": "2026-08-07T16:34:23.824Z",
+    "fields": 41,
+    "action": "updated"
+  },
+  "C_LISTEDDRVTVPRICEQUOTATION": {
+    "appliedAt": "2026-08-07T16:34:24.031Z",
+    "fields": 12,
+    "action": "updated"
+  },
+  "C_LISTINGCONDITION_2": {
+    "appliedAt": "2026-08-07T16:34:24.227Z",
+    "fields": 8,
+    "action": "updated"
+  },
+  "C_MAINTENANCEITEMDEX": {
+    "appliedAt": "2026-08-07T16:34:24.440Z",
+    "fields": 62,
+    "action": "updated"
+  },
+  "C_MAINTENANCEITEMDEX_2": {
+    "appliedAt": "2026-08-07T16:34:24.642Z",
+    "fields": 42,
+    "action": "updated"
+  },
+  "C_MAINTENANCEORDERDEX": {
+    "appliedAt": "2026-08-07T16:34:24.831Z",
+    "fields": 72,
+    "action": "updated"
+  },
+  "C_MAINTENANCEPLANCYCLEDEX": {
+    "appliedAt": "2026-08-07T16:34:25.016Z",
+    "fields": 12,
+    "action": "updated"
+  },
+  "C_MAINTENANCEPLANDEX": {
+    "appliedAt": "2026-08-07T16:34:25.216Z",
+    "fields": 47,
+    "action": "updated"
+  },
+  "C_MAINTENANCEPLANDEX_2": {
+    "appliedAt": "2026-08-07T16:34:25.408Z",
+    "fields": 45,
+    "action": "updated"
+  },
+  "C_MAINTENANCEPLANSCHEDULEDEX": {
+    "appliedAt": "2026-08-07T16:34:25.594Z",
+    "fields": 22,
+    "action": "updated"
+  },
+  "C_MAINTNOTIFACTIVITYDEX": {
+    "appliedAt": "2026-08-07T16:34:25.824Z",
+    "fields": 25,
+    "action": "updated"
+  },
+  "C_MAINTNOTIFICATIONDEX": {
+    "appliedAt": "2026-08-07T16:34:25.999Z",
+    "fields": 69,
+    "action": "updated"
+  },
+  "C_MAINTNOTIFITEMACTIVITYDEX": {
+    "appliedAt": "2026-08-07T16:34:26.198Z",
+    "fields": 25,
+    "action": "updated"
+  },
+  "C_MAINTNOTIFITEMCAUSEDEX": {
+    "appliedAt": "2026-08-07T16:34:26.381Z",
+    "fields": 16,
+    "action": "updated"
+  },
+  "C_MAINTNOTIFITEMDEX": {
+    "appliedAt": "2026-08-07T16:34:26.566Z",
+    "fields": 22,
+    "action": "updated"
+  },
+  "C_MAINTNOTIFITEMTASKDEX": {
+    "appliedAt": "2026-08-07T16:34:26.774Z",
+    "fields": 25,
+    "action": "updated"
+  },
+  "C_MAINTNOTIFRSKASSESSMENTQUERY": {
+    "appliedAt": "2026-08-07T16:34:26.976Z",
+    "fields": 15,
+    "action": "updated"
+  },
+  "C_MAINTNOTIFTASKDEX": {
+    "appliedAt": "2026-08-07T16:34:27.174Z",
+    "fields": 25,
+    "action": "updated"
+  },
+  "C_MAINTORDACTUALCOSTDATAQ": {
+    "appliedAt": "2026-08-07T16:34:27.389Z",
+    "fields": 43,
+    "action": "updated"
+  },
+  "C_MAINTORDCONFIRMATIONDEX": {
+    "appliedAt": "2026-08-07T16:34:27.588Z",
+    "fields": 28,
+    "action": "updated"
+  },
+  "C_MAINTORDERCOMPONENTDEX": {
+    "appliedAt": "2026-08-07T16:34:27.758Z",
+    "fields": 88,
+    "action": "updated"
+  },
+  "C_MAINTORDEROPERATIONDEX": {
+    "appliedAt": "2026-08-07T16:34:27.920Z",
+    "fields": 102,
+    "action": "updated"
+  },
+  "C_MAINTORDERPARTNERDEX": {
+    "appliedAt": "2026-08-07T16:34:28.132Z",
+    "fields": 12,
+    "action": "updated"
+  },
+  "C_MAINTORDERPROCESSPHASEDEX": {
+    "appliedAt": "2026-08-07T16:34:28.295Z",
+    "fields": 1,
+    "action": "updated"
+  },
+  "C_MAINTORDERWORKFLOWEMAIL": {
+    "appliedAt": "2026-08-07T16:34:28.463Z",
+    "fields": 12,
+    "action": "updated"
+  },
+  "C_MAINTORDOBJECTLISTITEMDEX": {
+    "appliedAt": "2026-08-07T16:34:28.623Z",
+    "fields": 13,
+    "action": "updated"
+  },
+  "C_MAINTORDPROCESSSUBPHASEDEX": {
+    "appliedAt": "2026-08-07T16:34:28.797Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "C_MAINTORDPROCGCNTXTTEXTDEX": {
+    "appliedAt": "2026-08-07T16:34:28.995Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "C_MAINTORDPROCGCONTEXTDEX": {
+    "appliedAt": "2026-08-07T16:34:29.179Z",
+    "fields": 1,
+    "action": "updated"
+  },
+  "C_MAINTORDPROCPHASETEXTDEX": {
+    "appliedAt": "2026-08-07T16:34:29.358Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "C_MAINTORDPROCSUBPHASETXTDEX": {
+    "appliedAt": "2026-08-07T16:34:29.542Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "C_MAINTPLANCALLOBJECTDEX": {
+    "appliedAt": "2026-08-07T16:34:29.726Z",
+    "fields": 14,
+    "action": "updated"
+  },
+  "C_MAINTPLANSCHEDGOVWQUERY": {
+    "appliedAt": "2026-08-07T16:34:29.922Z",
+    "fields": 81,
+    "action": "updated"
+  },
+  "C_MAINTPLANSCHEDULEDEX_2": {
+    "appliedAt": "2026-08-07T16:34:30.109Z",
+    "fields": 18,
+    "action": "updated"
+  },
+  "C_MARGANLYSPRODANDSRVCQ": {
+    "appliedAt": "2026-08-07T16:34:30.306Z",
+    "fields": 63,
+    "action": "updated"
+  },
+  "C_MARKETSEGMENTPLANACTQ2501": {
+    "appliedAt": "2026-08-07T16:34:30.496Z",
+    "fields": 83,
+    "action": "updated"
+  },
+  "C_MARKETSEGMENTQ2501": {
+    "appliedAt": "2026-08-07T16:34:30.660Z",
+    "fields": 75,
+    "action": "updated"
+  },
+  "C_MATLDOCFORPRINTGDSISSSUBCONT": {
+    "appliedAt": "2026-08-07T16:34:31.324Z",
+    "fields": 173,
+    "action": "updated"
+  },
+  "C_MATLDOCFORPRINTGOODSMVT": {
+    "appliedAt": "2026-08-07T16:34:31.521Z",
+    "fields": 187,
+    "action": "updated"
+  },
+  "C_MATLSTKATKEYDATEINALTUOM": {
+    "appliedAt": "2026-08-07T16:34:31.715Z",
+    "fields": 24,
+    "action": "updated"
+  },
+  "C_MEASUREMENTDOCUMENTDEX": {
+    "appliedAt": "2026-08-07T16:34:31.901Z",
+    "fields": 45,
+    "action": "updated"
+  },
+  "C_MEASURINGPOINTDEX": {
+    "appliedAt": "2026-08-07T16:34:32.107Z",
+    "fields": 30,
+    "action": "updated"
+  },
+  "C_MFGORDACTLPLNTGTLDGRCOST": {
+    "appliedAt": "2026-08-07T16:34:32.288Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_MFGORDEREVTBSDWIPVARCQRY": {
+    "appliedAt": "2026-08-07T16:34:32.518Z",
+    "fields": 30,
+    "action": "updated"
+  },
+  "C_MFGORDERITEMSCRAPAMTQRY": {
+    "appliedAt": "2026-08-07T16:34:32.710Z",
+    "fields": 61,
+    "action": "updated"
+  },
+  "C_NONMNGDPURGSPEND": {
+    "appliedAt": "2026-08-07T16:34:32.956Z",
+    "fields": 33,
+    "action": "updated"
+  },
+  "C_OPENCLOSEDDISPUTECASE": {
+    "appliedAt": "2026-08-07T16:34:33.137Z",
+    "fields": 40,
+    "action": "updated"
+  },
+  "C_OPENDISPPROCESSINGDAYS": {
+    "appliedAt": "2026-08-07T16:34:33.316Z",
+    "fields": 45,
+    "action": "updated"
+  },
+  "C_OPENDISPUTECASE": {
+    "appliedAt": "2026-08-07T16:34:33.506Z",
+    "fields": 33,
+    "action": "updated"
+  },
+  "C_OPERATIONALSUPLREVALQRY": {
+    "appliedAt": "2026-08-07T16:34:33.684Z",
+    "fields": 48,
+    "action": "updated"
+  },
+  "C_ORIGNPRFTCTRONPROJQRY": {
+    "appliedAt": "2026-08-07T16:34:33.881Z",
+    "fields": 47,
+    "action": "updated"
+  },
+  "C_OVERDUEACCTRBLS": {
+    "appliedAt": "2026-08-07T16:34:34.086Z",
+    "fields": 39,
+    "action": "updated"
+  },
+  "C_OVHDPRJBDGTCMTMTQUERY": {
+    "appliedAt": "2026-08-07T16:34:34.298Z",
+    "fields": 53,
+    "action": "updated"
+  },
+  "C_OVHDPRJDEBITCRDTQUERY": {
+    "appliedAt": "2026-08-07T16:34:34.500Z",
+    "fields": 40,
+    "action": "updated"
+  },
+  "C_OVHDSTSTCLPRJPLNACTLCMTMTQ": {
+    "appliedAt": "2026-08-07T16:34:34.689Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_PARTSPERMILLIONQUERY": {
+    "appliedAt": "2026-08-07T16:34:34.886Z",
+    "fields": 29,
     "action": "updated"
   }
 }

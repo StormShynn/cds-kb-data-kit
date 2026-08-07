@@ -31,12 +31,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
-| `CommunicationMediumType` | ✓ | |  | `comm_type` |  |  |
-| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CommunicationRemarkText` |  | |  | `remark` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `CommunicationMediumType` | ✓ | |  | `comm_type` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` | `NUMC(3)` | Sequence Number |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CommunicationRemarkText` |  | |  | `remark` | `CHAR(50)` | Communication link notes |
 
 ## Source Code
 

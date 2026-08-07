@@ -5,9 +5,21 @@ app_component: PM-EQM-FL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCLOCATIONPARTNERDEX')/$value
 semantic_en: Functional Location Partner
+semantic_vi: Functional Location Partner — CDS view tiêu dùng dựa trên I_PlantMaintenancePartner.
+keywords:
+  - functional
+  - location
+  - partner
+  - maint
+  - object
+  - internal
+  - function
+  - maintenance
+  - number
+  - category
 tags:
   - PM
   - component:PM-EQM-FL-2CL
@@ -17,7 +29,6 @@ tags:
   - PM-EQM
   - PM-EQM-FL
   - PM-EQM-FL-2CL
-  - metadata-only
 ---
 # C_FUNCLOCATIONPARTNERDEX
 
@@ -29,16 +40,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCLOCATIONPARTNERDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCLOCATIONPARTNERDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MaintObjectInternalID` |  | |  |  | `CHAR(22)` | Object Number |
-| `PartnerFunction` |  | |  |  | `CHAR(2)` | Partner Function |
-| `MaintenancePartnerObjectNumber` |  | |  |  | `NUMC(6)` | Counter for differentiation 6-digit |
-| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `MaintObjectInternalID` | ✓ | |  |  | `CHAR(22)` | Object Number |
+| `PartnerFunction` | ✓ | |  |  | `CHAR(2)` | Partner Function |
+| `MaintenancePartnerObjectNumber` | ✓ | |  |  | `NUMC(6)` | Counter for differentiation 6-digit |
+| `FunctionalLocation` |  | |  | `cast( Location.FunctionalLocation as ps_s4_tplnr preserving type )` | `CHAR(30)` | Functional Location |
 | `MaintObjectCategory` |  | |  |  | `CHAR(3)` | Object Category |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
 | `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
@@ -47,3 +58,60 @@ tags:
 | `LastChangeTime` |  | |  |  | `TIMS(6)` | Time of Change |
 | `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
 | `MaintenancePartner` |  | |  |  | `CHAR(12)` | Partner |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCLOCATIONPARTNERDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FUNCLOCATIONPARTNERDEX')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #REQUIRED }
+@EndUserText.label: 'Functional Location Partner'
+@Metadata.ignorePropagatedAnnotations: true
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.sapObjectNodeType.name: 'FunctionalLocationPartner'
+@Analytics.dataExtraction: {
+  enabled: true,
+    delta.changeDataCapture: {
+      mapping: [{
+        role: #MAIN,
+        table: 'ihpa',
+        viewElement: [ 'MaintObjectInternalID', 'PartnerFunction', 'MaintenancePartnerObjectNumber' ],
+        tableElement: [ 'objnr', 'parvw', 'counter' ]
+      }]
+    }
+}
+@ObjectModel: {
+  usageType: {
+    dataClass: #MIXED,
+    sizeCategory: #XL,
+    serviceQuality: #C
+  },
+  supportedCapabilities: [ #EXTRACTION_DATA_SOURCE ],
+  modelingPattern: #ANALYTICAL_FACT
+}
+define view entity C_FuncLocationPartnerDEX
+  as select from I_PlantMaintenancePartner as Partner
+    inner join   I_FunctionalLocation      as Location on Location.MaintObjectInternalID = Partner.MaintObjectInternalID
+
+{
+      /* start suppress warning shlporigin_not_inherited */
+  key Partner.MaintObjectInternalID,
+  key Partner.PartnerFunction,
+  key Partner.MaintenancePartnerObjectNumber,
+      cast( Location.FunctionalLocation  as ps_s4_tplnr preserving type ) as FunctionalLocation,
+      Partner.MaintObjectCategory,
+      Partner.CreatedByUser,
+      Partner.CreationDate,
+      Partner.CreationTime,
+      Partner.LastChangedByUser,
+      Partner.LastChangeTime,
+      Partner.LastChangeDate,
+      Partner.MaintenancePartner,
+      /* end suppress warning shlporigin_not_inherited */
+
+      Partner._PartnerFunction
+}
+```

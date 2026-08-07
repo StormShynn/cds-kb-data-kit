@@ -5,9 +5,22 @@ app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLSTKATKEYDATEINALTUOM')/$value
 semantic_en: This CDS view provides the prerequisites for answering the following business question: Which quantity in alternative unit of measure (AUoM) of a material was available at a certain date?
+semantic_vi: Stock at Key Date in Alternative UoM — CDS view tiêu dùng (transactional data) dựa trên I_MatlStkAtKeyDateInAltUoM.
+keywords:
+  - stock
+  - key
+  - date
+  - alternative
+  - uom
+  - product
+  - plant
+  - storage
+  - location
+  - batch
+  - supplier
 tags:
   - MM
   - bo:plant
@@ -19,7 +32,8 @@ tags:
   - MM-IM-VDM
   - MM-IM-VDM-SGM
   - MM-IM-VDM-SGM-2CL
-  - metadata-only
+  - bo:inventory
+  - stock
 ---
 # C_MATLSTKATKEYDATEINALTUOM
 
@@ -31,7 +45,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLSTKATKEYDATEINALTUOM')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLSTKATKEYDATEINALTUOM')/$value) |
 
 ## Fields
 
@@ -61,3 +75,88 @@ tags:
 | `MatlCnsmpnQtyInAltUoM` |  | |  |  | `QUAN(31)` | Consumption Quantity in AUoM |
 | `MatlStkIncrQtyInAltUoM` |  | |  |  | `QUAN(31)` | Stock Increase Quantity in AUoM |
 | `MatlStkDecrQtyInAltUoM` |  | |  |  | `QUAN(31)` | Stock Decrease Quantity in AUoM |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLSTKATKEYDATEINALTUOM')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATLSTKATKEYDATEINALTUOM')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'Stock at Key Date in Alternative UoM'
+@ObjectModel:{
+               usageType:{
+                            sizeCategory: #XXL,
+                            serviceQuality: #C,
+                            dataClass:#TRANSACTIONAL
+                         },
+                modelingPattern: #ANALYTICAL_QUERY,
+                supportedCapabilities: [#ANALYTICAL_QUERY]
+             }
+@VDM:{
+       viewType: #CONSUMPTION
+     }
+@Analytics: { 
+              query: true,
+              internalName: #LOCAL,
+              technicalName: 'CMATSTKDATEAUOM'
+            }
+@OData.publish: true
+@Metadata:{
+            allowExtensions: true,
+            ignorePropagatedAnnotations: true -- ignore annotations from I-View w/o inserting here annotations from I-View, bacause AE cosumes the I-View basically.   
+          }
+define view entity C_MatlStkAtKeyDateInAltUoM
+  with parameters
+    P_KeyDate : vdm_v_key_date    
+  as select from I_MatlStkAtKeyDateInAltUoM( P_KeyDate : $parameters.P_KeyDate )
+{
+  @AnalyticsDetails.query.axis: #ROWS
+  @Consumption: {
+     filter: { selectionType: #RANGE,
+               mandatory: false,
+               multipleSelections: true }
+  }
+  Product,
+  @AnalyticsDetails.query.axis: #ROWS
+  @Consumption: {
+     filter: { selectionType: #RANGE,
+               mandatory: false,
+               multipleSelections: true }
+  }
+  Plant,
+  StorageLocation,
+  Batch,
+  Supplier,
+  SDDocument,
+  SDDocumentItem,
+  WBSElementInternalID,
+  Customer,
+  SpecialStockIdfgStockOwner,
+  InventoryStockType,
+  InventorySpecialStockType,
+// Quantity in BUoM
+  MaterialBaseUnit,
+  AlternativeUnit,
+  CompanyCode,
+  FiscalYearVariant,
+  @Semantics.quantity.unitOfMeasure: 'MaterialBaseUnit' 
+  @AnalyticsDetails.query.axis: #COLUMNS
+  MatlWrhsStkQtyInMatlBaseUnit,
+  @Semantics.quantity.unitOfMeasure: 'MaterialBaseUnit' 
+  MatlCnsmpnQtyInMatlBaseUnit,
+  @Semantics.quantity.unitOfMeasure: 'MaterialBaseUnit' 
+  MatlStkIncrQtyInMatlBaseUnit,
+  @Semantics.quantity.unitOfMeasure: 'MaterialBaseUnit' 
+  MatlStkDecrQtyInMatlBaseUnit,
+// Quantity in AUoM
+  @Semantics.quantity.unitOfMeasure: 'AlternativeUnit' 
+  @AnalyticsDetails.query.axis: #COLUMNS
+  MatlWrhsStkQtyInAltUoM,
+  @Semantics.quantity.unitOfMeasure: 'AlternativeUnit' 
+  MatlCnsmpnQtyInAltUoM,
+  @Semantics.quantity.unitOfMeasure: 'AlternativeUnit' 
+  MatlStkIncrQtyInAltUoM,
+  @Semantics.quantity.unitOfMeasure: 'AlternativeUnit' 
+  MatlStkDecrQtyInAltUoM
+}
+```

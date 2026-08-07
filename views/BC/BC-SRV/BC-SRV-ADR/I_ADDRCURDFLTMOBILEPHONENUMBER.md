@@ -31,15 +31,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |  |  |
-| `AddressPersonID` | ✓ | |  |  |  |  |
-| `CommMediumSequenceNumber` |  | |  |  |  |  |
-| `PhoneNumberCountry` |  | |  |  |  |  |
-| `PhoneAreaCodeSubscriberNumber` |  | |  |  |  |  |
-| `InternationalMobileNumber` |  | |  | `cast( InternationalPhoneNumber as ad_curdfltmobilephonenmbr preserving type )` |  |  |
-| `InternationalPhoneNumber` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` |  | |  |  | `NUMC(3)` | Sequence Number |
+| `PhoneNumberCountry` |  | |  |  | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `PhoneAreaCodeSubscriberNumber` |  | |  |  | `CHAR(30)` | Telephone No.: Dialing Code and Number |
+| `InternationalMobileNumber` |  | |  | `cast( InternationalPhoneNumber as ad_curdfltmobilephonenmbr preserving type )` | `CHAR(30)` | Current Default Mobile Phone Number |
+| `InternationalPhoneNumber` |  | |  |  | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` |  |
 | `_PhoneNumberCountry` | | ✓ | | | | |
 
 ## Source Code

@@ -5,9 +5,24 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LISTEDDRVTVPRICEQUOTATION')/$value
 semantic_en: Listed Derivatives Price Quotation
+semantic_vi: Listed Derivatives Price Quotation — CDS view tiêu dùng dựa trên I_ListedDrvtvPriceQuotation.
+keywords:
+  - listed
+  - derivatives
+  - price
+  - quotation
+  - derivative
+  - contr
+  - specification
+  - market
+  - identifier
+  - code
+  - date
+  - type
+  - maturity
 tags:
   - LO
   - component:LO-CMM-BF
@@ -17,7 +32,6 @@ tags:
   - lob:logistics general
   - lob:sourcing & procurement
   - quotation
-  - metadata-only
 ---
 # C_LISTEDDRVTVPRICEQUOTATION
 
@@ -29,7 +43,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LISTEDDRVTVPRICEQUOTATION')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LISTEDDRVTVPRICEQUOTATION')/$value) |
 
 ## Fields
 
@@ -47,3 +61,67 @@ tags:
 | `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Quotation Unit of Measure |
 | `Currency` |  | |  |  | `CUKY(5)` | Quotation Currency |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | First Entered By |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LISTEDDRVTVPRICEQUOTATION')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_LISTEDDRVTVPRICEQUOTATION')/$value)*
+
+```abap
+@EndUserText.label: 'Listed Derivatives Price Quotation'  
+@Analytics.query: true
+//@OData.publish: true //optional
+@VDM.viewType: #CONSUMPTION  
+@AbapCatalog.sqlViewName: 'CLOFPRICEQUOT'  
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.usageType.dataClass: #TRANSACTIONAL
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
+
+define view C_ListedDrvtvPriceQuotation  
+   as select from I_ListedDrvtvPriceQuotation
+{
+
+   @Consumption.filter.multipleSelections: true
+   @AnalyticsDetails.query.variableSequence:  1
+   @AnalyticsDetails.query.axis: #ROWS
+   DerivativeContrSpecification,
+   @Consumption.filter.multipleSelections: true
+   @AnalyticsDetails.query.variableSequence:  2
+   @AnalyticsDetails.query.axis: #ROWS
+   MarketIdentifierCode,
+   @Consumption.filter.multipleSelections: true
+   @AnalyticsDetails.query.variableSequence:  4
+   @AnalyticsDetails.query.axis: #ROWS
+   PriceQuotationDate,
+   @Consumption.filter.multipleSelections: true
+   @AnalyticsDetails.query.variableSequence:  3
+   @AnalyticsDetails.query.axis: #ROWS
+   PriceQuotationType,
+   @Consumption.filter.multipleSelections: true
+   @AnalyticsDetails.query.variableSequence:  6
+   @AnalyticsDetails.query.axis: #ROWS
+   MaturityKeyDate,
+   @Consumption.filter.multipleSelections: true
+   @AnalyticsDetails.query.variableSequence:  5
+//   @AnalyticsDetails.query.axis: #ROWS
+   PriceQuotationTime,
+   ValidityStartUTCDateTime,
+       TimeToMaturity,
+
+       @AnalyticsDetails.query.axis: #COLUMNS
+//       @Semantics.amount.currencyCode: 'Currency'
+       @DefaultAggregation:#SUM
+       PriceQuotation,
+       @AnalyticsDetails.query.axis: #ROWS
+       @Semantics.unitOfMeasure: true
+       UnitOfMeasure,
+       @AnalyticsDetails.query.axis: #ROWS
+       @Semantics.currencyCode: true
+       Currency,
+       CreatedByUser
+
+}
+```

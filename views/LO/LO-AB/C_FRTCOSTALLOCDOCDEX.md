@@ -5,9 +5,22 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FRTCOSTALLOCDOCDEX')/$value
 semantic_en: This CDS view is used for data extraction to SAP BW/4HANA. It supports the transfer of settlement data to SAP BW/4HANA for freight cost allocation documents. All relevant information for freight cost allocation documents is provided in this extraction view, allowing you to build the desired analytical reports. This CDS view provides the data to answer the following business question: Which freight cost allocation documents are relevant for data extraction to SAP BW/4HANA? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Freight Cost Allocation Doc Extraction — CDS view tiêu dùng dựa trên R_FrtCostAllocDocDEX.
+keywords:
+  - freight
+  - cost
+  - allocation
+  - doc
+  - extraction
+  - document
+  - alloc
+  - item
+  - settlmt
+  - type
+  - process
 tags:
   - LO
   - bo:companycode
@@ -16,7 +29,6 @@ tags:
   - document
   - LO-AB
   - lob:logistics general
-  - metadata-only
 ---
 # C_FRTCOSTALLOCDOCDEX
 
@@ -28,14 +40,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FRTCOSTALLOCDOCDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FRTCOSTALLOCDOCDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FreightCostAllocationDocument` |  | |  |  | `CHAR(10)` | Freight Cost Allocation Document Number |
-| `FrtCostAllocDocumentItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `FreightCostAllocationDocument` | ✓ | |  |  | `CHAR(10)` | Freight Cost Allocation Document Number |
+| `FrtCostAllocDocumentItem` | ✓ | |  |  | `NUMC(6)` | Document Item |
 | `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
 | `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
 | `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
@@ -163,3 +175,230 @@ tags:
 | `SalesSpcfcProductGroup3` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 3 |
 | `SalesSpcfcProductGroup4` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 4 |
 | `SalesSpcfcProductGroup5` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 5 |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FRTCOSTALLOCDOCDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_FRTCOSTALLOCDOCDEX')/$value)*
+
+```abap
+@EndUserText.label: 'Freight Cost Allocation Doc Extraction'
+@AccessControl: {
+    authorizationCheck:      #MANDATORY,
+    personalData.blocking:   #('TRANSACTIONAL_DATA')
+    }
+@ObjectModel: {
+    compositionRoot: true,
+    modelingPattern:#ANALYTICAL_FACT,
+    supportedCapabilities: [#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE],
+    usageType: {
+       dataClass:      #MIXED,
+       serviceQuality: #D,
+       sizeCategory:   #XXL
+       },
+    sapObjectNodeType.name: 'FreightCostAllocationDocument'
+    }
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta: {
+            changeDataCapture: {
+                mapping:[
+                    {
+                        table: 'wbrp', role: #MAIN,
+                        viewElement: ['FreightCostAllocationDocument', 'FrtCostAllocDocumentItem'],
+                        tableElement: ['wbeln', 'posnr']
+                    },
+                    {
+                        table: 'wbrk', role: #LEFT_OUTER_TO_ONE_JOIN,
+                        viewElement: [ 'FreightCostAllocationDocument'],
+                        tableElement: ['wbeln']
+                    }
+                    ]
+               }
+            }
+        }
+    }
+@VDM.viewType: #CONSUMPTION
+@Metadata: {
+    ignorePropagatedAnnotations: true,
+    allowExtensions: false
+    }
+define view entity C_FrtCostAllocDocDEX 
+  as select from R_FrtCostAllocDocDEX as FrtCostAllocDocDEX
+{
+  key FreightCostAllocationDocument,
+  key FrtCostAllocDocumentItem,
+
+      FrtCostAllocDocDEX.SettlmtDocType               as SettlmtDocType,
+      FrtCostAllocDocDEX.SettlmtDocCat,
+      FrtCostAllocDocDEX.SettlmtProcessType,
+      FrtCostAllocDocDEX.SettlmtProcessCat,
+      FrtCostAllocDocDEX.LogisticsDataEntryCat,
+      FrtCostAllocDocDEX.SettlmtCat,
+      FrtCostAllocDocDEX.PostingDate,
+      FrtCostAllocDocDEX.FrtCostAllocAcctgTransfSts,
+      FrtCostAllocDocDEX.DocumentDate,
+      FrtCostAllocDocDEX.DocumentReferenceID,
+      FrtCostAllocDocDEX.AssignmentReference,
+      FrtCostAllocDocDEX.SettlmtApplSts,
+      FrtCostAllocDocDEX.SettlmtApplStsGrp,
+      FrtCostAllocDocDEX.PricingProcedure,
+      FrtCostAllocDocDEX.PricingDocument,
+      FrtCostAllocDocDEX.CompanyCode                  as CompanyCode,
+      FrtCostAllocDocDEX.PurchasingOrganization,
+      FrtCostAllocDocDEX.PurchasingGroup,
+      FrtCostAllocDocDEX.SalesOrganization,
+      FrtCostAllocDocDEX.DistributionChannel,
+      FrtCostAllocDocDEX.Division,
+      FrtCostAllocDocDEX.SalesOffice,
+      FrtCostAllocDocDEX.SalesGroup,
+      FrtCostAllocDocDEX.CreatedByUser,
+      FrtCostAllocDocDEX.CreationDate,
+      FrtCostAllocDocDEX.CreationTime,
+      FrtCostAllocDocDEX.LastChangeDate,
+      FrtCostAllocDocDEX.FrtCostAllocDocCurrency      as FrtCostAllocDocCurrency,
+      FrtCostAllocDocDEX.ExchangeRate,
+      FrtCostAllocDocDEX.ExchangeRateType,
+      FrtCostAllocDocDEX.ExchangeRateIsFixed,
+      FrtCostAllocDocDEX.ExchangeRateDate,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocDocTotGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocDocTotalNetAmount,
+      FrtCostAllocDocDEX.FrtCostAllocDocIsReversed,
+      FrtCostAllocDocDEX.RvsdFrtCostAllocDoc,
+      FrtCostAllocDocDEX.PaymentReference,
+      FrtCostAllocDocDEX.FrtCostAllocDocActivityReason,
+      FrtCostAllocDocDEX.SettlmtClassificationCat,
+      FrtCostAllocDocDEX.FiscalPeriod,
+      FrtCostAllocDocDEX.FrtCostAllocDocIncmpltnsRsn,
+      FrtCostAllocDocDEX.IncotermsVersion,
+      FrtCostAllocDocDEX.IncotermsClassification,
+      FrtCostAllocDocDEX.IncotermsTransferLocation,
+      FrtCostAllocDocDEX.IncotermsLocation1,
+      FrtCostAllocDocDEX.IncotermsLocation2,
+      FrtCostAllocDocDEX.FrtCostAllocBusProcCat,
+      FrtCostAllocDocDEX.JournalEntryCreationDate,
+      FrtCostAllocDocDEX.JournalEntryCreationTime,
+
+      /* Item */
+      FrtCostAllocDocDEX.Product,
+      FrtCostAllocDocDEX.ProductGroup,
+      FrtCostAllocDocDEX.Plant,
+      FrtCostAllocDocDEX.InventoryValuationType,
+      FrtCostAllocDocDEX.PricingDate,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'SettlmtQuantityUnit'
+      FrtCostAllocDocDEX.SettlmtQuantity,
+      FrtCostAllocDocDEX.SettlmtQuantityUnit          as SettlmtQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.NetPriceAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'NetPriceQuantityUnit'
+      FrtCostAllocDocDEX.NetPriceQuantity,
+      FrtCostAllocDocDEX.NetPriceQuantityUnit         as NetPriceQuantityUnit,
+      FrtCostAllocDocDEX.SettlmtToBaseQuantityNmrtr,
+      FrtCostAllocDocDEX.SettlmtToBaseQuantityDnmntr,
+      FrtCostAllocDocDEX.SettlmtToNetPriceQtyNmrtr,
+      FrtCostAllocDocDEX.SettlmtToNetPriceQtyDnmntr,
+      FrtCostAllocDocDEX.BaseUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      FrtCostAllocDocDEX.ItemNetWeight,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      FrtCostAllocDocDEX.ItemGrossWeight,
+      FrtCostAllocDocDEX.ItemWeightUnit               as ItemWeightUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemVolumeUnit'
+      FrtCostAllocDocDEX.ItemVolume,
+      FrtCostAllocDocDEX.ItemVolumeUnit               as ItemVolumeUnit,
+      FrtCostAllocDocDEX.ProductPurchasePointsQtyUnit as ProductPurchasePointsQtyUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ProductPurchasePointsQtyUnit'
+      FrtCostAllocDocDEX.ProductPurchasePointsQty,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocItemGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocItemNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocSubtotal1Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocSubtotal2Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocSubtotal3Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocSubtotal4Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocSubtotal5Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocSubtotal6Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'FrtCostAllocDocCurrency'
+      FrtCostAllocDocDEX.FrtCostAllocEffctvItemAmount,
+      FrtCostAllocDocDEX.FrtCostAllocItmStstclPrpty,
+      FrtCostAllocDocDEX.SettlmtSourceDoc,
+      FrtCostAllocDocDEX.SettlmtSourceDocItem,
+      FrtCostAllocDocDEX.SettlmtSourceDocCat,
+      FrtCostAllocDocDEX.SettlmtSourceDocFiscalYear,
+      FrtCostAllocDocDEX.FrtCostAllocItmActivityReason,
+      FrtCostAllocDocDEX.FrtCostAllocDocItemText,
+      FrtCostAllocDocDEX.SupplierProductID,
+      FrtCostAllocDocDEX.BusinessArea,
+      FrtCostAllocDocDEX.ControllingArea,
+      FrtCostAllocDocDEX.CostCenter,
+      FrtCostAllocDocDEX.ProfitCenter,
+      FrtCostAllocDocDEX.WBSElementInternalID,
+      FrtCostAllocDocDEX.Batch,
+      FrtCostAllocDocDEX.PrcDetnIsIncmplt,
+
+      FrtCostAllocDocDEX.SettlmtPrecdgDoc,
+      FrtCostAllocDocDEX.SettlmtPrecdgDocItem,
+      FrtCostAllocDocDEX.SettlmtPrecdgDocCat,
+
+      FrtCostAllocDocDEX.SettlmtPrecdgDocFiscalYear,
+
+      FrtCostAllocDocDEX.FrtCostAllocDocItmCat,
+
+      FrtCostAllocDocDEX.SettlmtItemReltdPurgDoc,
+      FrtCostAllocDocDEX.SettlmtItemReltdPurgDocItem,
+      FrtCostAllocDocDEX.SettlmtItemReltdBillgDoc,
+      FrtCostAllocDocDEX.SettlmtItemReltdBillgDocItem,
+
+      FrtCostAllocDocDEX.FreightCostAllocationOrder,
+      FrtCostAllocDocDEX.ServicesRenderedDate,
+      FrtCostAllocDocDEX.GLAccount,
+      FrtCostAllocDocDEX.SettlementFiscalYear,
+      FrtCostAllocDocDEX.FrtCostAllocRefDocType,
+      FrtCostAllocDocDEX.FrtCostAllocRefDoc,
+      FrtCostAllocDocDEX.FrtCostAllocRefDocFsclYr,
+      FrtCostAllocDocDEX.FrtCostAllocRefDocLgclSyst,
+      FrtCostAllocDocDEX.FrtCostAllocRefDocCompanyCode,
+      FrtCostAllocDocDEX.FrtCostAllocRefDocItem,
+      FrtCostAllocDocDEX.FrtCostAllocRefDocCat,
+      FrtCostAllocDocDEX.FrtCostAllocAddlRefDocType,
+      FrtCostAllocDocDEX.FrtCostAllocAddlRefDoc,
+      FrtCostAllocDocDEX.FrtCostAllocAddlRefDocFsclYr,
+      FrtCostAllocDocDEX.FrtCostAllocAddlRefLgclSyst,
+      FrtCostAllocDocDEX.FrtCostAllocAddlRefDocItem,
+      FrtCostAllocDocDEX.FrtCostAllocAddlRefDocCat,
+      FrtCostAllocDocDEX.ProductHierarchy,
+      FrtCostAllocDocDEX.SalesSpcfcProductGroup1,
+      FrtCostAllocDocDEX.SalesSpcfcProductGroup2,
+      FrtCostAllocDocDEX.SalesSpcfcProductGroup3,
+      FrtCostAllocDocDEX.SalesSpcfcProductGroup4,
+      FrtCostAllocDocDEX.SalesSpcfcProductGroup5
+}
+```

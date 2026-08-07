@@ -34,9 +34,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `DeliveryServiceTypeCode` | ✓ | |  | `deli_serv_type` |  |  |
-| `DeliveryServiceTypeDescription` |  | |  | `deli_serv_dscr` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `DeliveryServiceTypeCode` | ✓ | |  | `deli_serv_type` | `CHAR(4)` | Type of Delivery Service |
+| `DeliveryServiceTypeDescription` |  | |  | `deli_serv_dscr` | `CHAR(40)` | Delivery Service Description |
 
 ## Source Code
 

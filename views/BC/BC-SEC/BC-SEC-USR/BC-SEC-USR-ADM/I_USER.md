@@ -30,11 +30,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserID` | ✓ | |  | `cast( usr21.bname as vdm_userid preserving type )` |  |  |
-| `UserDescription` |  | |  | `cast( usr21.techdesc as vdm_userdescription preserving type )` |  |  |
-| `IsTechnicalUser` |  | |  | `case usr21.idadtype when '00' then ' ' when '02' then ' ' when '03' then ' ' when '04' then ' ' else 'X' end` |  |  |
-| `AddressPersonID` |  | |  | `persnumber` |  |  |
-| `AddressID` |  | |  | `addrnumber` |  |  |
+| `UserID` | ✓ | |  | `cast( usr21.bname as vdm_userid preserving type )` | `CHAR(12)` | User ID |
+| `UserDescription` |  | |  | `cast( usr21.techdesc as vdm_userdescription preserving type )` | `CHAR(80)` | User Description |
+| `IsTechnicalUser` |  | |  | `case usr21.idadtype when '00' then ' ' when '02' then ' ' when '03' then ' ' when '04' then ' ' else 'X' end` | `CHAR(1)` |  |
+| `AddressPersonID` |  | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `AddressID` |  | |  | `addrnumber` | `CHAR(10)` | Address Number |
 | `_AddrCurDefaultEmailAddress` | | ✓ | | | | |
 | `_UserAddress` | | ✓ | | | | |
 

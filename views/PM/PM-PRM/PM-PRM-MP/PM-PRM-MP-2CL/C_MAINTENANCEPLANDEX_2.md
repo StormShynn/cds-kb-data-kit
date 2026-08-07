@@ -5,9 +5,23 @@ app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEPLANDEX_2')/$value
 semantic_en: Data Extraction for Maintenance Plan
+semantic_vi: Data Extraction for Maintenance Plan — CDS view tiêu dùng dựa trên I_MaintenancePlanBasic_2.
+keywords:
+  - data
+  - extraction
+  - for
+  - maintenance
+  - plan
+  - desc
+  - creation
+  - date
+  - created
+  - user
+  - last
+  - change
 tags:
   - PM
   - component:PM-PRM-MP-2CL
@@ -17,7 +31,6 @@ tags:
   - PM-PRM
   - PM-PRM-MP
   - PM-PRM-MP-2CL
-  - metadata-only
 ---
 # C_MAINTENANCEPLANDEX_2
 
@@ -29,13 +42,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEPLANDEX_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEPLANDEX_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MaintenancePlan` |  | |  |  | `CHAR(12)` | Maintenance Plan |
+| `MaintenancePlan` | ✓ | |  |  | `CHAR(12)` | Maintenance Plan |
 | `MaintenancePlanDesc` |  | |  |  | `CHAR(40)` | Maintenance Plan Text |
 | `CreationDate` |  | |  |  | `DATS(8)` | Date of creation |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
@@ -80,3 +93,105 @@ tags:
 | `PrdcssrCallObjCompltnIsRqd` |  | |  |  | `CHAR(1)` | Only Create New Call Object After Completing Predecessor |
 | `MaintenancePlanHasLongText` |  | |  |  | `CHAR(1)` | Long Text Indicator |
 | `MaintenancePlanCallObject` |  | |  |  | `CHAR(1)` | Call object for maintenance plan |
+| `_MaintenanceItem` | | ✓ | | | | |
+| `_MaintenancePlanCatParam` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEPLANDEX_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTENANCEPLANDEX_2')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Data Extraction for Maintenance Plan'
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@Analytics.internalName:#LOCAL
+@Analytics.dataCategory: #DIMENSION
+@Analytics.dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture.automatic:true } 
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions:true
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE, #SQL_DATA_SOURCE, #ANALYTICAL_DIMENSION ]
+@ObjectModel.sapObjectNodeType.name: 'MaintenancePlan'
+@ObjectModel.usageType: {serviceQuality: #C, sizeCategory: #L, dataClass: #TRANSACTIONAL}
+@ObjectModel.representativeKey: 'MaintenancePlan'
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.modelingPattern: #ANALYTICAL_DIMENSION
+
+
+define view entity C_MaintenancePlanDEX_2
+  as select from I_MaintenancePlanBasic_2
+{
+      @ObjectModel.text.element: [ 'MaintenancePlanDesc' ]
+  key MaintenancePlan,
+
+      @Semantics.text: true
+      MaintenancePlanDesc,
+
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+
+      @Semantics.user.createdBy: true
+      CreatedByUser,
+
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+
+      @Semantics.user.lastChangedBy: true
+      LastChangedByUser,
+
+      MaintenanceStrategy,
+      SchedulingDuration,
+      Equipment,
+      FunctionalLocation,
+      Customer,
+      NumberOfMaintenanceItems,
+      Language,
+      CycleModificationRatio,
+      MaintPlanSchedgIndicator,
+      CallHorizonPercent,
+      CallHorizonInDays,
+      AuthorizationGroup,
+      MaintenancePlanInternalID,
+      MaintenanceCall,
+
+      @ObjectModel.foreignKey.association: '_MaintenancePlanCatParam'
+      MaintenancePlanCategory,
+
+      SchedulingDurationUnit,
+      BasicStartDate,
+      MaintPlanFreeDefinedAttrib,
+      FactoryCalendar,
+      MaintPlanIsLockedAgainstCalls,
+
+      @Semantics.systemDateTime.lastChangedAt: true
+      LastChangeDateTime,
+
+      LateCompletionShiftInPercent,
+      EarlyCompletionShiftInPercent,
+      LateCompletionTolerancePercent,
+      EarlyCompletionTolerancePct,
+      MaintenanceCallHorizonCalcType,
+      MaintPlanLogicalOperatorCode,
+      MultipleCounterPlanShiftFactor,
+      MaintPlanStartCntrReadingValue,
+      SchedulingStartDate,
+      SchedulingStartTime,
+      MaintPlanEndCntrReadingValue,
+      SchedulingEndDate,
+      MaintenanceLeadFloatInDays,
+      MaintPlnStrtBufDurationInDays,
+      MaintPlanStartBufferUnit,
+
+      @Semantics.booleanIndicator
+      PrdcssrCallObjCompltnIsRqd,
+
+      MaintenancePlanHasLongText,
+      MaintenancePlanCallObject,
+
+      /* Associations */
+
+      _MaintenanceItem,
+      _MaintenancePlanCatParam
+}
+```

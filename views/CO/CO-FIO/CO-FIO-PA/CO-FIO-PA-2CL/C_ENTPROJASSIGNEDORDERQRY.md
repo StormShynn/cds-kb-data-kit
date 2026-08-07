@@ -5,9 +5,24 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJASSIGNEDORDERQRY')/$value
 semantic_en: Enterprise Project Assigned Orders Query
+semantic_vi: Enterprise Project Assigned Orders Query — CDS view tiêu dùng dựa trên Enterprise Project Assigned Orders Query.
+keywords:
+  - enterprise
+  - project
+  - assigned
+  - orders
+  - query
+  - ledger
+  - company
+  - code
+  - account
+  - assignment
+  - type
+  - fiscal
+  - year
 tags:
   - CO
   - bo:project
@@ -20,7 +35,6 @@ tags:
   - lob:finance
   - order
   - project
-  - metadata-only
 ---
 # C_ENTPROJASSIGNEDORDERQRY
 
@@ -32,7 +46,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJASSIGNEDORDERQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJASSIGNEDORDERQRY')/$value) |
 
 ## Fields
 
@@ -83,3 +97,252 @@ tags:
 | `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
 | `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `ProjectManager` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `_LedgerText` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_LedgerText` | `I_LedgerText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJASSIGNEDORDERQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJASSIGNEDORDERQRY')/$value)*
+
+```abap
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.supportedCapabilities:[#ANALYTICAL_QUERY]
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@AccessControl.personalData.blocking:#REQUIRED
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.dataClass: #MIXED
+@Analytics.settings.maxProcessingEffort: #HIGH
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText.label: 'Enterprise Project Assigned Orders Query'
+@ObjectModel.modelingPattern:#ANALYTICAL_QUERY
+define transient view entity C_EntProjAssignedOrderQry 
+provider contract analytical_query
+with parameters
+    @Consumption.derivation: { lookupEntity: 'I_UserSetGetParamForCtrlgArea',
+                               resultElement: 'FiscalYearVariant' }
+    //@Consumption.defaultValue: 'K4'
+    @Consumption.hidden: true
+    @Semantics.fiscal.yearVariant: true
+    P_FiscalYearVariant  : fis_periv
+    
+  as projection on I_ETOProjectItemCube  as I_ETOProjectItemCube
+  association [0..*] to I_LedgerText as _LedgerText on $projection.Ledger = _LedgerText.Ledger
+{
+  @Consumption.derivation: { lookupEntity: 'I_Ledger',
+    resultElement: 'Ledger', binding: [
+    { targetElement : 'IsLeadingLedger' , type : #CONSTANT, value : 'X' } ]
+   }
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+  @AnalyticsDetails.query.variableSequence : 90
+  @UI.textArrangement: #TEXT_LAST
+  @ObjectModel.text.association: '_LedgerText'
+  Ledger,
+
+  @UI.textArrangement: #TEXT_LAST
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: true, hidden: false }
+  CompanyCode,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence : 110
+  @UI.textArrangement: #TEXT_LAST
+  AccountAssignmentType,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_FiscalYearForCompanyCode', element: 'FiscalYear' } ,
+                                       additionalBinding: [{ localElement: 'CompanyCode', element: 'CompanyCode' }] 
+  }]
+  @Consumption.derivation: { lookupEntity:  'F_FsclYrDteFuncSglVal',
+                             resultElement: 'FiscalYear',
+                             binding: [ { targetParameter: 'P_DateFunction', 
+                                          type : #CONSTANT, 
+                                          value: 'CURRENTFISCALYEAR' },
+                                        { targetParameter: 'P_FiscalYearVariant', 
+                                          type : #PARAMETER, 
+                                          value: 'P_FiscalYearVariant' }
+                             ]
+  }
+  @Semantics.fiscal.year: true
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  FiscalYear,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_FiscalYearForCompanyCode', 
+                                                element: 'FiscalYear' } ,
+                                       additionalBinding: [{ localElement: 'CompanyCode', 
+                                                             element: 'CompanyCode' }] 
+  }]
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  LedgerFiscalYear,
+
+  @Semantics.fiscal.yearVariant: true
+  @UI.textArrangement: #TEXT_LAST
+  FiscalYearVariant,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @Semantics.fiscal.period: true
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_FiscalYearPeriodForCmpnyCode', element: 'FiscalPeriod' } ,
+                                       additionalBinding: [ { localElement: 'CompanyCode', element: 'CompanyCode' },
+                                                            { localElement: 'FiscalYear', element: 'FiscalYear' }
+                                       ]
+  }]
+
+  @UI.textArrangement: #TEXT_LAST
+  FiscalPeriod,
+
+  @UI.textArrangement: #TEXT_LAST
+  @Semantics.fiscal.yearPeriod: true
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND  
+  FiscalYearPeriod,
+
+  @UI.textArrangement: #TEXT_LAST
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  ProfitCenter,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SoldProductGroup,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SoldProduct,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  Customer,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  CustomerGroup,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label: 'Assgined Order Number'
+  AssignedOrderNumber,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }  
+  @EndUserText.label: 'Assgined Order Category'  
+  @UI.textArrangement: #TEXT_ONLY  
+  ETOOrdCategory,
+
+
+  SalesDocument,
+  
+  @EndUserText.label: 'Order'
+  OrderID,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false } 
+  @EndUserText.label: 'Purchase Order'
+  PurchasingDocument,
+
+  @UI.textArrangement: #TEXT_LAST
+//  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND  
+  GLAccount,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @EndUserText.label: 'Project Profile'
+//  @AnalyticsDetails.query: {axis: #ROWS}
+  @UI.textArrangement: #TEXT_LAST
+  ProjectProfileCode,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+//  @AnalyticsDetails.query: {axis: #ROWS}
+  Project,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }  
+  @EndUserText.label: 'Project External ID'  
+  ProjectExternalID,
+
+
+  @EndUserText.label: 'Billing Element'
+  BillingWBSElementExternalID, 
+  
+  @Consumption.valueHelpDefinition: [{ entity: { name : 'I_WBSElementBasicDataStdVH', element : 'WBSElementExternalID' } }]
+  WBSElementExternalID,
+
+
+  @UI.textArrangement: #TEXT_LAST
+  FunctionalArea,
+
+  @UI.textArrangement: #TEXT_LAST
+  Plant,  
+
+  @UI.textArrangement: #TEXT_LAST
+  Product,  
+
+  @UI.textArrangement: #TEXT_LAST
+  SalesOrganization,
+
+  @UI.textArrangement: #TEXT_LAST
+  CustomerSupplierCountry,
+
+  @UI.textArrangement: #TEXT_LAST
+  CustomerSupplierIndustry,
+
+  @UI.textArrangement: #TEXT_LAST
+  SalesDistrict,
+
+  @UI.textArrangement: #TEXT_LAST
+  ShipToParty,
+
+  @UI.textArrangement: #TEXT_LAST
+  BillToParty,
+
+  @UI.textArrangement: #TEXT_LAST
+  Segment,
+
+
+  ServiceContract,
+
+  ServiceContractItem,
+
+  @UI.textArrangement: #TEXT_LAST
+  ServiceContractType,
+
+  ServiceDocument,
+
+  ServiceDocumentItem,
+
+  ServiceDocumentType,
+
+  ControllingDebitCreditCode,
+  
+//  @UI.textArrangement: #TEXT_LAST
+//  BusinessSolutionOrder,
+//
+//  @UI.textArrangement: #TEXT_LAST
+//  BusinessSolutionOrderItem,
+//
+//  @UI.textArrangement: #TEXT_LAST
+//  ProviderContract,
+//
+//  @UI.textArrangement: #TEXT_LAST
+//  ProviderContractItem,
+
+  @UI.textArrangement: #TEXT_ONLY //TEXT_LAST
+  Currency,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: true, defaultValue: 'CCC ' }
+  @AnalyticsDetails.query: {axis: #COLUMNS}
+  @UI.textArrangement: #TEXT_ONLY
+  CurrencyField,
+
+  @Semantics.amount.currencyCode: 'Currency'
+  @OData.v2.amount.noDecimalShift: true
+  @Aggregation.default: #SUM
+  AmountInDisplayCurrency,
+
+  
+   _LedgerText,
+  @EndUserText.label: 'Project Manager'   
+   ProjectManager 
+  }
+where ProjectProfileCode = 'YP05'
+```

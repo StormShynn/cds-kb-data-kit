@@ -5,9 +5,23 @@ app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFICATIONDEX')/$value
 semantic_en: Data Extraction for Maint Notification
+semantic_vi: Data Extraction for Maint Notification — CDS view tiêu dùng dựa trên I_MaintenanceNotificationBasic.
+keywords:
+  - data
+  - extraction
+  - for
+  - maint
+  - notification
+  - maintenance
+  - type
+  - text
+  - order
+  - notif
+  - processing
+  - context
 tags:
   - PM
   - bo:companycode
@@ -18,7 +32,6 @@ tags:
   - PM-WOC
   - PM-WOC-MN
   - PM-WOC-MN-2CL
-  - metadata-only
 ---
 # C_MAINTNOTIFICATIONDEX
 
@@ -30,13 +43,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFICATIONDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFICATIONDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MaintenanceNotification` |  | |  |  | `CHAR(12)` | Notification Number |
+| `MaintenanceNotification` | ✓ | |  |  | `CHAR(12)` | Notification Number |
 | `NotificationType` |  | |  |  | `CHAR(2)` | Notification Type |
 | `NotificationText` |  | |  |  | `CHAR(40)` | Short Text |
 | `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
@@ -105,3 +118,122 @@ tags:
 | `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
 | `LastChangeTime` |  | |  |  | `TIMS(6)` | Time of Change |
 | `LastChangeDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFICATIONDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTNOTIFICATIONDEX')/$value)*
+
+```abap
+@EndUserText.label: 'Data Extraction for Maint Notification'
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #NOT_REQUIRED
+}
+@Analytics: {
+  dataCategory: #FACT,
+  technicalName: 'CMAINTNOTIFDEX',
+  dataExtraction: { enabled: true,
+                             delta.changeDataCapture:
+                                    { mapping:
+                                      [
+                                        { role: #MAIN,
+                                          table: 'qmel',
+                                          tableElement: ['qmnum'                  ],
+                                          viewElement:  ['MaintenanceNotification']
+                                        },
+                                        { role: #LEFT_OUTER_TO_ONE_JOIN,
+                                          table: 'qmih',
+                                          tableElement: ['qmnum'],
+                                          viewElement:  ['MaintenanceNotification']
+                                        }
+                                        ] } }
+}
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel: {
+  supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET, #CDS_MODELING_DATA_SOURCE, #EXTRACTION_DATA_SOURCE, #SQL_DATA_SOURCE ],
+  sapObjectNodeType.name: 'MaintenanceNotification',
+  modelingPattern: #ANALYTICAL_FACT,
+  usageType: {serviceQuality: #C, sizeCategory: #L, dataClass: #TRANSACTIONAL}
+}
+@VDM.viewType: #CONSUMPTION
+define view entity C_MaintNotificationDEX
+  as select from I_MaintenanceNotificationBasic
+{
+  key MaintenanceNotification,
+      NotificationType,
+      NotificationText,
+      MaintenanceOrder,
+      MaintNotifProcessingContext,
+      MaintNotifRejectionReasonCode,
+      MaintPriorityType,
+      MaintPriority,
+      LatestAcceptableCompletionDate,
+      PreviousFinalDueDate,
+      CatalogProfile,
+      CatalogProfileOriginCode,
+      Equipment,
+      MaintObjectLocAcctAssgmtNmbr,
+      LocationDescription,
+      RequiredStartDate,
+      RequiredStartTime,
+      RequiredEndDate,
+      RequiredEndTime,
+      NotificationCreationDate,
+      NotificationCreationTime,
+      NotificationReferenceDate,
+      NotificationReferenceTime,
+      NotificationCompletionDate,
+      NotificationCompletionTime,
+      MalfunctionStartDate,
+      MalfunctionStartTime,
+      @EndUserText.label: 'Malfunction End Date'
+      MalfunctionEndDate,
+      @EndUserText.label: 'Malfunction End Time'
+      MalfunctionEndTime,
+      MaintNotificationCatalog,
+      MaintNotificationCodeGroup,
+      MaintNotificationCode,
+      MaintenanceObjectIsDown,
+      MaintObjectDowntimeDuration,
+      MaintObjDowntimeDurationUnit,
+      MaintNotifDetectionCatalog,
+      MaintNotifDetectionCodeGroup,
+      MaintNotifDetectionCode,
+      MalfunctionEffect,
+      MaintNotifInternalID,
+      @Semantics.booleanIndicator:true
+      NotificationHasLongText,
+      NotificationTimeZone,
+      NotificationTimeZoneOrigin,
+      MaintenancePlan,
+      MaintenanceItem,
+      MaintenancePlanCallNumber,
+      MaintenanceTaskListType,
+      TaskListGroup,
+      TaskListGroupCounter,
+      MaintenanceActivityType,
+      NotifProcessingPhase,
+      MaintNotifProcessPhaseCode,
+      MaintNotifProcessSubPhaseCode,
+      @Semantics.booleanIndicator:true
+      IsDeleted,
+      @Semantics.booleanIndicator:true
+      IsCompleted,
+      WorkCenterInternalID,
+      MainWorkCenterPlant,
+      MainWorkCenterTypeCode,
+      MaintenancePlannerGroup,
+      MaintenancePlanningPlant,
+      NotificationPersonResponsible,
+      ReportedByUser,
+      CreatedByUser,
+      CreationDate,
+      CreationTime,
+      LastChangedByUser,
+      LastChangeDate,
+      LastChangeTime,
+      LastChangeDateTime
+
+
+}
+```

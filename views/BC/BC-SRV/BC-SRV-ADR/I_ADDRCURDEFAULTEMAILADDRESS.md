@@ -33,12 +33,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |  |  |
-| `AddressPersonID` | ✓ | |  |  |  |  |
-| `CommMediumSequenceNumber` |  | |  |  |  |  |
-| `EmailAddress` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` |  | |  |  | `NUMC(3)` | Sequence Number |
+| `EmailAddress` |  | |  |  | `CHAR(241)` | Email Address |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` |  |
 | `_AddressCommunicationRemark` | | ✓ | | | | |
 | `_AddressCommunicationUsage` | | ✓ | | | | |
 

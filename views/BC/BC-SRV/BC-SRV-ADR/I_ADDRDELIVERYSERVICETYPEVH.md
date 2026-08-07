@@ -33,8 +33,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DeliveryServiceTypeCode` | ✓ | |  |  |  |  |
-| `DeliveryServiceTypeName` |  | |  |  |  |  |
+| `DeliveryServiceTypeCode` | ✓ | |  |  | `CHAR(4)` | Type of Delivery Service |
+| `DeliveryServiceTypeName` |  | |  |  | `CHAR(40)` | Delivery Service Text |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

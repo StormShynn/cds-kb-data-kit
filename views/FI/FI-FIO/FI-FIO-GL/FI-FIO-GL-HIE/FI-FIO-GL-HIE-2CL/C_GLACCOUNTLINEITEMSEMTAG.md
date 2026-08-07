@@ -5,9 +5,26 @@ app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTLINEITEMSEMTAG')/$value
 semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the key figure amounts for a specific company code in a certain fiscal year? What is the ratio of margin to revenue? What is my net cash amount in company code currency?
+semantic_vi: G/L Line Item with Semantic Tag - Query — CDS view tiêu dùng dựa trên I_GLAccountLineItemSemTag.
+keywords:
+  - g/l
+  - line
+  - item
+  - with
+  - semantic
+  - tag
+  - query
+  - account
+  - hierarchy
+  - company
+  - code
+  - ledger
+  - fiscal
+  - year
+  - period
 tags:
   - FI
   - bo:companycode
@@ -18,7 +35,6 @@ tags:
   - FI-FIO-GL-HIE
   - FI-FIO-GL-HIE-2CL
   - lob:finance
-  - metadata-only
 ---
 # C_GLACCOUNTLINEITEMSEMTAG
 
@@ -30,16 +46,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTLINEITEMSEMTAG')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTLINEITEMSEMTAG')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `GLAccountHierarchy` | ✓ | |  |  | `CHAR(42)` | Financial Statement Version |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `LedgerFiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
 | `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
 | `Project` |  | |  |  | `CHAR(24)` | Project |
 | `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |
@@ -117,7 +133,7 @@ tags:
 | `FinancingActyCashAmtInCCCrcy` |  | |  |  | `CURR(23)` | Net cash generated from financing activities |
 | `NetCashAmtInCCCrcy` |  | |  |  | `CURR(23)` | Net Cash Amount In CompanyCode Currency |
 | `AssetLiabilityAmtInCCCrcy` |  | |  |  | `CURR(23)` | Asset/Liability Amount in Company Code Currency |
-| `RecognizedMarginPercent` |  | |  |  | `INT1(3)` |  |
+| `RecognizedMarginPercent` |  | |  | `0` | `INT1(3)` |  |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
 | `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
 | `BalanceTransactionCurrency` |  | |  |  | `CUKY(5)` | Balance Transaction Currency |
@@ -152,3 +168,338 @@ tags:
 | `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
 | `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `_CompanyCode` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTLINEITEMSEMTAG')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_GLACCOUNTLINEITEMSEMTAG')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CFIGLACCTLITST'
+@EndUserText.label: 'G/L Line Item with Semantic Tag - Query'
+@VDM.viewType: #CONSUMPTION
+@Analytics.query: true
+@OData.publish: true
+//@AccessControl.authorizationCheck: #NOT_ALLOWED
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
+
+
+define view C_GLAccountLineItemSemTag
+
+  with parameters
+
+    // ---> Variable gets hidden and is defaulted with todays date
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate  : sydate,
+
+    // ---> Variable gets hidden and is defaulted with the logon language
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    P_Language : sylangu
+
+  as select from I_GLAccountLineItemSemTag
+
+{
+
+      @AnalyticsDetails.query.variableSequence : 20
+      @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+      @AnalyticsDetails.query.axis: #FREE
+  key GLAccountHierarchy,
+      @AnalyticsDetails.query.variableSequence : 40
+      //      @UI.selectionField: {position: 30, exclude: false }
+      @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: true }
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key CompanyCode,
+      @AnalyticsDetails.query.variableSequence : 50
+      @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: true }
+      @AnalyticsDetails.query.axis: #FREE
+  key LedgerFiscalYear,
+      @AnalyticsDetails.query.variableSequence : 10
+      @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+      @Consumption.derivation: { lookupEntity: 'I_Ledger',
+        resultElement: 'Ledger', binding: [{ targetElement : 'IsLeadingLedger' , type : #CONSTANT, value : 'X' } ]}
+      @AnalyticsDetails.query.axis: #FREE
+  key Ledger,
+      @AnalyticsDetails.query.variableSequence : 70
+      @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.axis: #FREE
+      @Semantics.fiscal.period
+      FiscalPeriod,
+      @AnalyticsDetails.query.variableSequence : 200
+      @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'ProjectInternalID'
+//      @VDM.lifecycle.status:    #DEPRECATED
+//      @VDM.lifecycle.successor: 'ProjectInternalID'
+      Project,
+
+      @AnalyticsDetails.query.variableSequence : 60
+      @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: false }
+      @AnalyticsDetails.query.axis: #FREE
+      FiscalQuarter,
+      @AnalyticsDetails.query.axis: #FREE
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'WBSElementInternalID'
+//      @VDM.lifecycle.status:    #DEPRECATED
+//      @VDM.lifecycle.successor: 'WBSElementInternalID' 
+      WBSElement,
+      @AnalyticsDetails.query.axis: #ROWS
+      @Consumption.filter: { selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+      @AnalyticsDetails.query.variableSequence : 30
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SemanticTag,
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      GLAccount,
+
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      FunctionalArea,
+
+      @AnalyticsDetails.query.axis: #FREE
+      CostCenter,
+      @AnalyticsDetails.query.axis: #FREE
+      ProfitCenter,
+      @AnalyticsDetails.query.axis: #FREE
+      AccountingDocument,
+      @AnalyticsDetails.query.axis: #FREE
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Segment,
+
+
+
+      ///////////////////////////////////////////////////////////////////////
+      // Key Figures
+      ///////////////////////////////////////////////////////////////////////
+      RevenueAmountInCompanyCodeCrcy,
+      RevenueInGlobalCurrency,
+      GrossRevenueAmtInCCCrcy,
+      RecognizedRevnAmtInCCCrcy,
+      RecognizedRevnAmtInGlobCrcy,
+      RevenueAdjustmentAmtInCCCrcy,
+      RevenueAdjustAmtInGlobCrcy,
+      DeferredRevenueAmtInCCCrcy,
+      AccruedRevenueAmtInCCCrcy,
+      RecognizableRevenueAmtInCCCrcy,
+      RecognizableRevnAmtInGlobCrcy,
+      BilledRevenueAmtInCoCodeCrcy,
+      BilledRevenueAmtInGlobCrcy,
+      BilledValnQtyInCostSourceUnit,
+      UnbilledRevnInCoCodeCrcy,
+      RecognizedMarginAmtInCCCrcy,
+      MnlContrAccrPnLItmAmtInCCCrcy,
+
+
+      CostAmountInCompanyCodeCrcy,
+      CostOfGoodsSoldAmtInGlobCrcy,
+      FxdCOGSAmtInGlobCrcy,
+      RecognizedCOGSAmtInCCCrcy,
+      COGSAdjustmentAmtInCCCrcy,
+      DeferredCOGSAmtInCCCrcy,
+      AccruedCOGSAmtInCCCrcy,
+      RecognizableCostAmtInCCCrcy,
+      ImminentLossRsrvAmtInCCCrcy,
+      SalesDeductReserveAmtInCCCrcy,
+      UnrlzdCostsReserveAmtInCCCrcy,
+      MnlContrAccrBalShtAmtInCCCrcy,
+      SalesDeductionAmountInGlobCrcy,
+      SalesDeductionAmtInCoCodeCrcy,
+      PriceDifferenceAmtInGlobCrcy,
+      AdminOverheadAmtInGlobCrcy,
+      SalesOverheadAmtInGlobCrcy,
+      MarketingOverheadAmtInGlobCrcy,
+      RnDOverheadAmtInGlobCrcy,
+
+      LongTermInvmtAmtInCCCrcy,
+      AcctsRblAmtInCCCrcy,
+      AcctsOthRblAmtInCCCrcy,
+      AcctsPyblAmtInCCCrcy,
+      AcctsOthPyblAmtInCCCrcy,
+      ProvisionAmtInCCCrcy,
+      NotesReceivableAmtInCCCrcy,
+      TangibleAstDeprAmtInCCCrcy,
+      IntngblAssetAmtznAmtInCCCrcy,
+      TangibleAstAmtInCCCrcy,
+      IntangibleAstAmtInCCCrcy,
+      FixedAssetRtrmtAmtInCCCrcy,
+      InventoryAmtInCCCrcy,
+      CommonStockAmtInCCCrcy,
+      CashAndCashEqvlntAmtInCCCrcy,
+
+      AssetAmtInCCCrcy,
+      LiabilityEquityAmtInCCCrcy,
+      NotAssignedAmtInCCCrcy,
+      NetResultAmtInCCCrcy,
+      PnLResultAmtInCCCrcy,
+      GLAcctNetIncomeAmtInCCCrcy,
+
+      VarblCOGSAmtInGlobCrcy,
+      ContrbnMargin1AmtInGlobCrcy,
+      ContrbnMargin2AmtInGlobCrcy,
+      ContrbnMargin3AmtInGlobCrcy,
+
+      OperatingActyCashAmtInCCCrcy,
+      InvestingActyCashAmtInCCCrcy,
+      FinancingActyCashAmtInCCCrcy,
+      NetCashAmtInCCCrcy,
+
+      AssetLiabilityAmtInCCCrcy,
+
+      //@EndUserText.label: 'Gross Margin'
+      //@Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails.query.formula : 'NDIV0($projection.RecognizedMarginAmtInCCCrcy / $projection.RecognizedRevnAmtInCCCrcy )'
+      0 as RecognizedMarginPercent,
+
+      //@EndUserText.label: 'Operating Margin'
+      //@Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      //@DefaultAggregation: #FORMULA
+      //@AnalyticsDetails.query.formula : 'NDIV0($projection.OperatingIncome / $projection.NetRevenue )'
+      //0 as OperatingMargin,
+      //
+      //@EndUserText.label: 'Markup'
+      //@Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      //@DefaultAggregation: #FORMULA
+      //@AnalyticsDetails.query.formula : 'NDIV0($projection.GrossProfit / $projection.CostofGoodsSold )'
+      //0 as Markup,
+      //
+      //@EndUserText.label: 'CostofRevenue'
+      //@Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      //@DefaultAggregation: #FORMULA
+      //@AnalyticsDetails.query.formula : 'NDIV0(($projection.CostofGoodsSold + $projection.SellingExpense) / $projection.NetRevenue )'
+      //0 as CostofRevenue,
+
+
+      ///////////////////////////////////////////////////////////////////////
+      // Measures - Amounts
+      ///////////////////////////////////////////////////////////////////////
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      CompanyCodeCurrency,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      GlobalCurrency,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      BalanceTransactionCurrency,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      TransactionCurrency,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FunctionalCurrency,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FreeDefinedCurrency1,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FreeDefinedCurrency2,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FreeDefinedCurrency3,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FreeDefinedCurrency4,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FreeDefinedCurrency5,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FreeDefinedCurrency6,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FreeDefinedCurrency7,
+      @Semantics.currencyCode: true
+      @AnalyticsDetails.query.axis: #FREE
+      FreeDefinedCurrency8,
+
+
+
+
+      //  @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @DefaultAggregation: #SUM
+      AmountInCompanyCodeCurrency,
+      //  @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInTransactionCurrency,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInGlobalCurrency,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInBalanceTransacCrcy,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFunctionalCurrency,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      DebitAmountInFunctionalCrcy,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      CreditAmountInFunctionalCrcy,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFreeDefinedCurrency1,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFreeDefinedCurrency2,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFreeDefinedCurrency3,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFreeDefinedCurrency4,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFreeDefinedCurrency5,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFreeDefinedCurrency6,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFreeDefinedCurrency7,
+      @AnalyticsDetails.query.hidden : true
+      @DefaultAggregation: #SUM
+      AmountInFreeDefinedCurrency8,
+      WBSElementInternalID,
+      ProjectInternalID,
+
+      _CompanyCode,
+
+      //No where used, only add to fix ATC error
+      FiscalYear,
+      ChartOfAccounts,
+      ControllingArea,
+      FiscalYearVariant,
+      _JournalEntry,
+      _GLAccountInChartOfAccounts,
+      _CostCenter,
+      _ProfitCenter,
+      _LedgerFiscalYearForVariant
+
+
+}
+//where
+//  (
+//        ValidityStartDate <= $parameters.P_KeyDate
+//    and ValidityEndDate   >= $parameters.P_KeyDate
+//  )
+//  and   FiscalPeriod      <> '000'
+```

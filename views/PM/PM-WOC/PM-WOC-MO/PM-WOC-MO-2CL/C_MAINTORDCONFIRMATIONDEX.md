@@ -5,9 +5,25 @@ app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDCONFIRMATIONDEX')/$value
 semantic_en: This CDS view is designed to extract and provide detailed information related to maintenance order confirmations. It serves as a data source for analytics and reporting purposes, enabling users to access transactional data associated with maintenance orders, including details about work performed, personnel involved, and confirmation statuses. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Maintenance Order Conf Data Extractor — CDS view tiêu dùng dựa trên I_MaintenanceOrderConfirmation.
+keywords:
+  - maintenance
+  - order
+  - conf
+  - data
+  - extractor
+  - maint
+  - cntr
+  - value
+  - confirmation
+  - entry
+  - operation
+  - counter
+  - routing
+  - number
 tags:
   - PM
   - bo:companycode
@@ -19,7 +35,6 @@ tags:
   - PM-WOC-MO
   - PM-WOC-MO-2CL
   - transaction
-  - metadata-only
 ---
 # C_MAINTORDCONFIRMATIONDEX
 
@@ -31,14 +46,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDCONFIRMATIONDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDCONFIRMATIONDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MaintOrderConf` |  | |  |  | `NUMC(10)` | Completion confirmation number for the operation |
-| `MaintOrderConfCntrValue` |  | |  |  | `NUMC(8)` | Confirmation counter |
+| `MaintOrderConf` | ✓ | |  |  | `NUMC(10)` | Completion confirmation number for the operation |
+| `MaintOrderConfCntrValue` | ✓ | |  |  | `NUMC(8)` | Confirmation counter |
 | `MaintOrderConfirmationEntryDte` |  | |  |  | `DATS(8)` | Entry Date of Confirmation |
 | `MaintOrderOperationCounter` |  | |  |  | `NUMC(8)` | General counter for order |
 | `MaintOrderRoutingNumber` |  | |  |  | `NUMC(10)` | Routing Number of Operations in the Order |
@@ -65,3 +80,86 @@ tags:
 | `IsReversed` |  | |  |  | `CHAR(1)` | Indicator: Document was reversed |
 | `IsReversal` |  | |  |  | `CHAR(1)` | Checkbox |
 | `CancldMaintOrderConfCntrValue` |  | |  |  | `NUMC(8)` | Confirmation Counter of Cancelled Confirmation |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDCONFIRMATIONDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MAINTORDCONFIRMATIONDEX')/$value)*
+
+```abap
+@VDM.viewType: #CONSUMPTION
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AccessControl.authorizationCheck:#MANDATORY
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities:[ #EXTRACTION_DATA_SOURCE ]
+@ObjectModel.sapObjectNodeType.name: 'MaintenanceOrderConfirmation'
+@EndUserText.label: 'Maintenance Order Conf Data Extractor'
+@ObjectModel: {
+  usageType: {
+    dataClass: #TRANSACTIONAL,
+    serviceQuality: #C,
+    sizeCategory: #XL
+  }
+  }
+@Analytics: {
+dataCategory: #FACT,
+dataExtraction: {
+  enabled: true,
+      delta.changeDataCapture: {
+
+ mapping:[
+             {
+                    table: 'AFRU', role: #MAIN,
+                    viewElement: ['MaintOrderConf','MaintOrderConfCntrValue'],
+                    tableElement: ['RUECK','RMZHL']
+
+                 },
+                 {
+                    table: 'AFVC', role: #LEFT_OUTER_TO_ONE_JOIN,
+                    viewElement: ['MaintOrderRoutingNumber','MaintOrderOperationCounter'],
+                    tableElement: ['AUFPL','APLZL']
+
+                 }
+
+                 ]
+                 }
+            }
+        }
+@Analytics.technicalName: 'CPMORDCONFDEX'
+define view entity C_MaintOrdConfirmationDEX
+  as select from I_MaintenanceOrderConfirmation
+{
+  key MaintOrderConf,
+  key MaintOrderConfCntrValue,
+      MaintOrderConfirmationEntryDte,
+      MaintOrderOperationCounter,
+      MaintOrderRoutingNumber,
+      EnteredByUser,
+      LastChangeDate,
+      LastChangedByUser,
+      PostingDate,
+      WorkCenterInternalID,
+      ConfirmationText,
+      Language,
+      VarianceReasonCode,
+      NmbrOfMaintTechnicianCapSplits,
+      @Semantics.quantity.unitOfMeasure: 'ActualWorkQuantityUnit'
+      ActualWorkQuantity,
+      ActualWorkQuantityUnit,
+      ActivityType,
+      @Semantics.quantity.unitOfMeasure: 'ACTUALDURATIONUNIT' 
+      ActualDuration,
+      ActualDurationUnit,
+      MaintenanceOrder,
+      MaintenanceOrderOperation,
+      MaintenanceOrderSubOperation,
+      @EndUserText.label: 'Is Final Confirmation'
+      IsFinalConfirmation,
+      @Semantics.quantity.unitOfMeasure: 'RemainingWorkQuantityUnit'
+      RemainingWorkQuantity,
+      RemainingWorkQuantityUnit,
+      IsReversed,
+      @EndUserText.label: 'Is Reversal'
+      IsReversal,
+      CancldMaintOrderConfCntrValue
+}
+```
