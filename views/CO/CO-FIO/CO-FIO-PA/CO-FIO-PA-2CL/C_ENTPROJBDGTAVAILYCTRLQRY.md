@@ -1,16 +1,20 @@
 ---
 name: C_ENTPROJBDGTAVAILYCTRLQRY
-description: Enterprise Project Budget Cmtmt - Query
+description: This CDS view is designed to provide analytical insights into enterprise project budget commitments, actual costs, planned costs, and availability control (AVC) metrics. It aggregates financial data related to projects, including budget, actual costs, commitments, and variances, allowing users to analyze and monitor project financial performance effectively. This CDS view provides the data to answer the following business questions: What is the actual cost incurred for a specific project within a given fiscal year and period? How much commitment has been made in terms of budget for a project? What is the planned cost for a project, and how does it compare to the actual cost? What is the total budget allocated for a project, and how much of it has been used? What is the variance between planned costs and actual costs for a project? How much project stock is available, and what is its value? What is the availability control budget, and how much of it is assigned to actual costs, commitments, and project stock? What percentage of the budget has been used under availability control? How can financial data be filtered and analyzed based on company code, fiscal year, ledger, profit center, and other dimensions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJBDGTAVAILYCTRLQRY')/$value
-semantic_en: Enterprise Project Budget Cmtmt - Query
+semantic_en: This CDS view is designed to provide analytical insights into enterprise project budget commitments, actual costs, planned costs, and availability control (AVC) metrics. It aggregates financial data related to projects, including budget, actual costs, commitments, and variances, allowing users to analyze and monitor project financial performance effectively. This CDS view provides the data to answer the following business questions: What is the actual cost incurred for a specific project within a given fiscal year and period? How much commitment has been made in terms of budget for a project? What is the planned cost for a project, and how does it compare to the actual cost? What is the total budget allocated for a project, and how much of it has been used? What is the variance between planned costs and actual costs for a project? How much project stock is available, and what is its value? What is the availability control budget, and how much of it is assigned to actual costs, commitments, and project stock? What percentage of the budget has been used under availability control? How can financial data be filtered and analyzed based on company code, fiscal year, ledger, profit center, and other dimensions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+keywords:
+  - Enterprise Project Budget Cmtmt - Query
+  - Enterprise Project Budget Cmtmt - Query
+  - Enterprise Project Budget Cmtmt - Query
 tags:
   - CO
-  - bo:project
+  - bo:companycode
   - budget
   - CO-FIO
   - CO-FIO-PA
@@ -19,12 +23,14 @@ tags:
   - consumption-view
   - lob:controlling
   - lob:finance
+  - plan
   - project
+  - stock
   - metadata-only
 ---
 # C_ENTPROJBDGTAVAILYCTRLQRY
 
-**Enterprise Project Budget Cmtmt - Query**
+**This CDS view is designed to provide analytical insights into enterprise project budget commitments, actual costs, planned costs, and availability control (AVC) metrics. It aggregates financial data related to projects, including budget, actual costs, commitments, and variances, allowing users to analyze and monitor project financial performance effectively. This CDS view provides the data to answer the following business questions: What is the actual cost incurred for a specific project within a given fiscal year and period? How much commitment has been made in terms of budget for a project? What is the planned cost for a project, and how does it compare to the actual cost? What is the total budget allocated for a project, and how much of it has been used? What is the variance between planned costs and actual costs for a project? How much project stock is available, and what is its value? What is the availability control budget, and how much of it is assigned to actual costs, commitments, and project stock? What percentage of the budget has been used under availability control? How can financial data be filtered and analyzed based on company code, fiscal year, ledger, profit center, and other dimensions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

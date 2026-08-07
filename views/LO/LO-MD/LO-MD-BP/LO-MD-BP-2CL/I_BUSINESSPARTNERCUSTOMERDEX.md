@@ -1,13 +1,13 @@
 ---
 name: I_BUSINESSPARTNERCUSTOMERDEX
-description: Data Extraction for Business Partner Customer
+description: Data Extraction for BP Customer
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERCUSTOMERDEX')/$value
-semantic_en: Data Extraction for Business Partner Customer
+semantic_en: Data Extraction for BP Customer
 tags:
   - LO
   - bo:businesspartner
@@ -22,7 +22,7 @@ tags:
 ---
 # I_BUSINESSPARTNERCUSTOMERDEX
 
-**Data Extraction for Business Partner Customer**
+**Data Extraction for BP Customer**
 
 | Property | Value |
 |---|---|

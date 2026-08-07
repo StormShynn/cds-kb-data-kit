@@ -1,25 +1,27 @@
 ---
 name: C_SUSTDELIVERYDOCUMENTITEMDEX
-description: Delivery Document Item Extractor
+description: This CDS view is used by SAP sustainability applications (such as SAP Responsible Design and Production) for the extraction of delivery document item data. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUSTDELIVERYDOCUMENTITEMDEX')/$value
-semantic_en: Delivery Document Item Extractor
+semantic_en: This CDS view is used by SAP sustainability applications (such as SAP Responsible Design and Production) for the extraction of delivery document item data. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - SUS
+  - bo:companycode
   - component:SUS-INT
   - consumption-view
   - delivery
   - document
+  - product
   - SUS-INT
   - metadata-only
 ---
 # C_SUSTDELIVERYDOCUMENTITEMDEX
 
-**Delivery Document Item Extractor**
+**This CDS view is used by SAP sustainability applications (such as SAP Responsible Design and Production) for the extraction of delivery document item data. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

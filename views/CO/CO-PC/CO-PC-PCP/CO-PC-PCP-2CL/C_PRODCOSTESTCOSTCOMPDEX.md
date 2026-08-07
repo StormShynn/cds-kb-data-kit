@@ -1,16 +1,16 @@
 ---
 name: C_PRODCOSTESTCOSTCOMPDEX
-description: Product Cost Estimate Cost Component DEX
+description: This CDS view provides detailed extraction of product cost estimate cost component information from transactional sources for analytical and reporting purposes in SAP S/4HANA. It enables users to analyze cost components associated with cost estimates, helping to break down total and fixed costs by company and controlling area currencies. The view is intended for mass data extraction and analytics over cost calculation processes. What are the cost component breakdowns for each cost estimate? How do total and fixed costs vary across valuation variants, cost component structures, or company codes? How can I extract granular cost component details for large-scale reporting and analytics? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODCOSTESTCOSTCOMPDEX')/$value
-semantic_en: Product Cost Estimate Cost Component DEX
+semantic_en: This CDS view provides detailed extraction of product cost estimate cost component information from transactional sources for analytical and reporting purposes in SAP S/4HANA. It enables users to analyze cost components associated with cost estimates, helping to break down total and fixed costs by company and controlling area currencies. The view is intended for mass data extraction and analytics over cost calculation processes. What are the cost component breakdowns for each cost estimate? How do total and fixed costs vary across valuation variants, cost component structures, or company codes? How can I extract granular cost component details for large-scale reporting and analytics? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - CO
-  - bo:material
+  - bo:companycode
   - CO-PC
   - CO-PC-PCP
   - CO-PC-PCP-2CL
@@ -18,11 +18,12 @@ tags:
   - consumption-view
   - lob:controlling
   - product
+  - transaction
   - metadata-only
 ---
 # C_PRODCOSTESTCOSTCOMPDEX
 
-**Product Cost Estimate Cost Component DEX**
+**This CDS view provides detailed extraction of product cost estimate cost component information from transactional sources for analytical and reporting purposes in SAP S/4HANA. It enables users to analyze cost components associated with cost estimates, helping to break down total and fixed costs by company and controlling area currencies. The view is intended for mass data extraction and analytics over cost calculation processes. What are the cost component breakdowns for each cost estimate? How do total and fixed costs vary across valuation variants, cost component structures, or company codes? How can I extract granular cost component details for large-scale reporting and analytics? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -58,4 +59,4 @@ tags:
 | `FixedCostInCtrlgAreaCurrency` |  | |  |  | `CURR(23)` | Fixed Cost in Controlling Area Currency |
 | `CostCompIsForSalesAndAdminCost` |  | |  |  | `CHAR(1)` | Cost Component for Sales and Administration Costs |
 | `CostCompIsForCOGM` |  | |  |  | `CHAR(1)` | Cost Component for Cost of Goods Manufactured |
-| `CostCompIsForInvtryValuation` |  | |  |  | `CHAR(1)` | Cost Component Relevant for Inventory Valuation |
+| `CostCompIsForInvtryValuation` |  | |  |  | `CHAR(1)` |  |

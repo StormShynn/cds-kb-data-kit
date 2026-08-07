@@ -1,13 +1,13 @@
 ---
 name: I_AGRMTSPCLARRGMTPROCGSTS
-description: Agreement Special Arrangement Processing Status
+description: Agrmt Special Arrangement Procg Status
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTPROCGSTS')/$value
-semantic_en: Agreement Special Arrangement Processing Status
+semantic_en: Agrmt Special Arrangement Procg Status
 tags:
   - FS
   - component:FS-CMS
@@ -17,7 +17,7 @@ tags:
 ---
 # I_AGRMTSPCLARRGMTPROCGSTS
 
-**Agreement Special Arrangement Processing Status**
+**Agrmt Special Arrangement Procg Status**
 
 | Property | Value |
 |---|---|

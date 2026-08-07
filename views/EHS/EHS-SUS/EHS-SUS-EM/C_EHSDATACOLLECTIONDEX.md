@@ -40,7 +40,7 @@ tags:
 | `DataCollectionInputMethod` |  | |  |  | `CHAR(2)` | Data Collection Input Method |
 | `EHSAmountExternalSource` |  | |  |  | `CHAR(80)` | External Source |
 | `DataUsagePeriodicity` |  | |  |  | `CHAR(3)` | Data Period of Data Collection Definition |
-| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Units of Measurement of Various Types |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Measure Units of Various Types |
 | `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
 | `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
 | `DataCollectionTitle` |  | |  |  | `CHAR(132)` | Description (Long) |

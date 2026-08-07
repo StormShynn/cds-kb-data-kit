@@ -1,31 +1,36 @@
 ---
 name: C_SERVICEMARGINQUERY
-description: Service Margin - Query
+description: This CDS view provides analytical insights into the service margin by aggregating and calculating various financial metrics related to revenue, costs, and margins. It allows you to filter and analyze data based on multiple dimensions such as company code, fiscal period, customer, product, and more, to understand the financial performance of services rendered. This CDS view provides the data to answer the following business questions: What is the recognized margin for services provided within a specific company code or fiscal period? How do billed revenue and revenue adjustments contribute to the overall revenue amount in company code currency? What are the recognized costs associated with services, and how do cost adjustments impact the total cost amount? How do deferred and accrued revenues and costs affect the financial statements? What are the reserves for imminent loss, sales deductions, and unrealized costs, and how do they impact the overall financial performance? How do different service document types and customer groups affect the service margin? What is the impact of specific products or product groups on the service margin? How do various account assignment types and profit centres contribute to the financial outcomes of services rendered? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SERVICEMARGINQUERY')/$value
-semantic_en: Service Margin - Query
+semantic_en: This CDS view provides analytical insights into the service margin by aggregating and calculating various financial metrics related to revenue, costs, and margins. It allows you to filter and analyze data based on multiple dimensions such as company code, fiscal period, customer, product, and more, to understand the financial performance of services rendered. This CDS view provides the data to answer the following business questions: What is the recognized margin for services provided within a specific company code or fiscal period? How do billed revenue and revenue adjustments contribute to the overall revenue amount in company code currency? What are the recognized costs associated with services, and how do cost adjustments impact the total cost amount? How do deferred and accrued revenues and costs affect the financial statements? What are the reserves for imminent loss, sales deductions, and unrealized costs, and how do they impact the overall financial performance? How do different service document types and customer groups affect the service margin? What is the impact of specific products or product groups on the service margin? How do various account assignment types and profit centres contribute to the financial outcomes of services rendered? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Service Margin - Query
   - Service Margin - Query
   - Service Margin - Query
 tags:
   - CO
+  - account
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
+  - customer
+  - document
   - lob:controlling
   - lob:finance
+  - product
   - metadata-only
 ---
 # C_SERVICEMARGINQUERY
 
-**Service Margin - Query**
+**This CDS view provides analytical insights into the service margin by aggregating and calculating various financial metrics related to revenue, costs, and margins. It allows you to filter and analyze data based on multiple dimensions such as company code, fiscal period, customer, product, and more, to understand the financial performance of services rendered. This CDS view provides the data to answer the following business questions: What is the recognized margin for services provided within a specific company code or fiscal period? How do billed revenue and revenue adjustments contribute to the overall revenue amount in company code currency? What are the recognized costs associated with services, and how do cost adjustments impact the total cost amount? How do deferred and accrued revenues and costs affect the financial statements? What are the reserves for imminent loss, sales deductions, and unrealized costs, and how do they impact the overall financial performance? How do different service document types and customer groups affect the service margin? What is the impact of specific products or product groups on the service margin? How do various account assignment types and profit centres contribute to the financial outcomes of services rendered? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -89,7 +94,7 @@ tags:
 | `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
 | `RecognizedMarginAmtInCCCrcy` |  | |  |  | `CURR(23)` | Recognized Margin |
-| `RevenueAmountInCompanyCodeCrcy` |  | |  |  | `CURR(24)` |  |
+| `RevenueAmountInCompanyCodeCrcy` |  | |  |  | `CURR(25)` |  |
 | `CostAmountInCompanyCodeCrcy` |  | |  |  | `CURR(24)` |  |
 | `MarginAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Recognized Margin |
 | `BilledRevenueAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Actual Revenue |
@@ -106,3 +111,6 @@ tags:
 | `SalesDeductReserveAmtInCCCrcy` |  | |  |  | `CURR(23)` | Reserves for Anticipated Sales Deductions |
 | `UnrlzdCostsReserveAmtInCCCrcy` |  | |  |  | `CURR(23)` | Reserves for Unrealized Costs |
 | `Reserves` |  | |  |  | `CURR(25)` |  |
+| `SalesDeductionAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Actual Revenue |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |

@@ -37,7 +37,7 @@ tags:
 | `EHSAmountUUID` |  | |  |  | `RAW(16)` | NodeID |
 | `EHSAmountUTCDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 | `EHSAmountValue` |  | |  |  | `FLTP(16)` | Amount Value |
-| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Units of Measurement of Various Types |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Measure Units of Various Types |
 | `EHSAmountHasWarning` |  | |  |  | `CHAR(1)` | Warning |
 | `EHSAmountIsFaulty` |  | |  |  | `CHAR(1)` | Faulty Value |
 | `CalculationResultHeaderUUID` |  | |  |  | `RAW(16)` | NodeID |

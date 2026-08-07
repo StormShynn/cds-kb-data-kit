@@ -1,16 +1,15 @@
 ---
 name: I_AGREEMENTMINQLTATVEXCPTNTEXT
-description: Agreement Minimum Qualitative Exponent - Text
+description: Agreement Minimum Qualitative Exp - Text
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGREEMENTMINQLTATVEXCPTNTEXT')/$value
-semantic_en: Agreement Minimum Qualitative Exponent - Text
+semantic_en: Agreement Minimum Qualitative Exp - Text
 tags:
   - FS
-  - bo:purchaseorder
   - component:FS-CMS
   - FS-CMS
   - interface-view
@@ -18,7 +17,7 @@ tags:
 ---
 # I_AGREEMENTMINQLTATVEXCPTNTEXT
 
-**Agreement Minimum Qualitative Exponent - Text**
+**Agreement Minimum Qualitative Exp - Text**
 
 | Property | Value |
 |---|---|

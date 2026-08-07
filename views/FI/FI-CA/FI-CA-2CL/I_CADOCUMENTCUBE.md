@@ -69,7 +69,7 @@ tags:
 | `CADocumentSupplements` |  | |  |  | `CHAR(1)` | Existing document supplements |
 | `LogicalSystem` |  | |  |  | `CHAR(10)` | Logical System of Source Document |
 | `CAWorkflowCheckReason` |  | |  |  | `CHAR(2)` | Check Reason for Workflows Acc. to Dual Control Principle |
-| `CAWorkflowCheckProcess` |  | |  |  | `CHAR(1)` | Editing Process To Be Confirmed |
+| `CAWorkflowCheckProcess` |  | |  |  | `CHAR(1)` | Editing Process to Be Confirmed |
 | `CADocumentTransactionClass` |  | |  |  | `CHAR(1)` | Transaction Class of Document |
 | `CADocContainsCashFlowItems` |  | |  |  | `CHAR(1)` | Document Contains Assignments from Cash Flows |
 | `CADocumentClass` |  | |  |  | `CHAR(1)` | Document Class |

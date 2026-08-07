@@ -71,12 +71,19 @@ tags:
 | `ISOAccountIdentifier` |  | |  |  | `CHAR(34)` | Account Number |
 | `AccountCurrency` |  | |  |  | `CUKY(5)` | Account Currency After Substitution |
 | `BankAccountHolderName` |  | |  |  | `CHAR(80)` | Substitute Account Holder Name |
+| `ReferenceIBAN` |  | |  |  | `CHAR(34)` | Ordering Party Account IBAN |
+| `ReferenceAccountNumber` |  | |  |  | `CHAR(34)` | Ordering Party Account Number |
+| `ReferenceAccountHolder` |  | |  |  | `CHAR(80)` | Reference Account Holder |
 | `APMRequestedValueDate` |  | |  |  | `DATS(8)` | Original Value Date |
 | `APMProposedPostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `APMPlannedClearingDate` |  | |  |  | `DATS(8)` | Planned Clearing Date for Payment Item |
+| `APMPlannedClearingTime` |  | |  |  | `TIMS(6)` | Planned Clearing Time for Payment Item |
 | `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
 | `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
 | `APMDebitCreditCode` |  | |  |  | `CHAR(1)` | Transaction Debit/Credit |
 | `APMChargeBearerCode` |  | |  |  | `CHAR(6)` | Charge Bearer |
+| `OriginalCurrency` |  | |  |  | `CUKY(5)` | Original Currency |
+| `OriginalAmount` |  | |  |  | `CURR(23)` | Original Amount |
 | `TransactionType` |  | |  |  | `CHAR(6)` | Transaction Type (Advanced Payment Management) |
 | `APMInternalCreationProcess` |  | |  |  | `CHAR(4)` | Creation Process of Payment Object |
 | `APMPaymentPriorityCode` |  | |  |  | `CHAR(2)` | Payment Priority |
@@ -95,6 +102,10 @@ tags:
 | `APMLocalInstrumentISOCode` |  | |  |  | `CHAR(35)` | ISO20022: Local Instrument Code or Proprietary Code |
 | `APMCategoryPurposeISOCode` |  | |  |  | `CHAR(35)` | ISO20022: Category Purpose Code or Proprietary Code |
 | `APMServiceLevelISOCode` |  | |  |  | `CHAR(35)` | ISO20022: Service Level Code or Proprietary Code |
+| `IHBItemIsBankingRelevant` |  | |  |  | `CHAR(1)` | Payment item is IHB relevant |
 | `CreationUserName` |  | |  |  | `CHAR(12)` | Creating User |
 | `CreationDate` |  | |  |  | `DATS(8)` | Creation Date |
 | `CreationTime` |  | |  |  | `TIMS(6)` | Creation Time |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Changed Time |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last User Change |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Change Date |

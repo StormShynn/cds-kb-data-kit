@@ -5,20 +5,9 @@ app_component: MM-IM-VDM-SGM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATERIALSTOCKTIMESERIES')/$value
 semantic_en: This CDS view provides the prerequisites for answering the following business question: How does the stock quantity evolve over a certain time period such as a day, week, or month?
-semantic_vi: Material stock for periods by type — CDS view tiêu dùng (transactional data) dựa trên I_MaterialStockTimeSeries.
-keywords:
-  - material
-  - stock
-  - for
-  - periods
-  - type
-  - period
-  - date
-  - year
-  - plant
 tags:
   - MM
   - bo:inventory
@@ -30,7 +19,7 @@ tags:
   - MM-IM-VDM-SGM
   - MM-IM-VDM-SGM-2CL
   - stock
-  - material
+  - metadata-only
 ---
 # C_MATERIALSTOCKTIMESERIES
 
@@ -42,7 +31,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATERIALSTOCKTIMESERIES')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATERIALSTOCKTIMESERIES')/$value) |
 
 ## Fields
 
@@ -66,92 +55,11 @@ tags:
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
 | `MaterialBaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
 | `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  | `QUAN(31)` | Stock Quantity |
+| `MaterialName` |  | |  |  | `CHAR(40)` | Material Description |
 | `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
 | `PlantName` |  | |  |  | `CHAR(30)` | Plant Name |
 | `StorageLocationName` |  | |  |  | `CHAR(16)` | Storage Location Name |
 | `SupplierName` |  | |  |  | `CHAR(80)` | Name of Supplier |
 | `CustomerName` |  | |  |  | `CHAR(80)` | Name of Customer |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATERIALSTOCKTIMESERIES')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MATERIALSTOCKTIMESERIES')/$value)*
-
-```abap
-@EndUserText.label: 'Material stock for periods by type'
-@AccessControl.authorizationCheck:#PRIVILEGED_ONLY
-@ObjectModel: {
-                usageType: {
-                             sizeCategory: #XXL,
-                             serviceQuality: #D,
-                             dataClass:#TRANSACTIONAL
-                           },
-                modelingPattern: #ANALYTICAL_QUERY,
-                supportedCapabilities: [#ANALYTICAL_QUERY]
-              }
-@VDM.viewType: #CONSUMPTION
-@Analytics.query : true
-@Analytics.technicalName: 'CMATSTOCKTIMESER'
-@Metadata.allowExtensions: true
-define view entity C_MaterialStockTimeSeries
-  with parameters
-    @Consumption.hidden: true
-    @Environment.systemField: #SYSTEM_LANGUAGE
-    P_Language   : sylangu,
-    P_StartDate  : vdm_v_start_date,
-    P_EndDate    : vdm_v_end_date,
-    P_PeriodType : nsdm_period_type
-
-  as select from I_MaterialStockTimeSeries(P_StartDate:  $parameters.P_StartDate,
-                                           P_EndDate:    $parameters.P_EndDate,
-                                           P_PeriodType: $parameters.P_PeriodType)
-{
-  // Period
-  PeriodType,
-  EndDate,
-  YearPeriod,
-
-  // Stock Identifier
-  @AnalyticsDetails.query.axis: #ROWS
-  @ObjectModel.text.element: ['MaterialName']
-  Material,
-  @ObjectModel.text.element: ['PlantName']
-  Plant,
-  @ObjectModel.text.element: ['StorageLocationName']
-  StorageLocation,
-  Batch,
-  @ObjectModel.text.element: ['SupplierName']
-  Supplier,
-  SDDocument,
-  SDDocumentItem,
-  WBSElementInternalID,
-  @ObjectModel.text.element: ['CustomerName']
-  Customer,
-  @ObjectModel.text.element: ['InventoryStockTypeName']
-  InventoryStockType,
-  @ObjectModel.text.element: ['InventorySpecialStockTypeName']
-  InventorySpecialStockType,
-
-  // Stock Groups
-  CompanyCode,
-  @Semantics.fiscal.yearVariant: true
-  FiscalYearVariant,
-
-  // Units
-  MaterialBaseUnit,
-
-  // Quantity
-  @Semantics.quantity.unitOfMeasure: 'MaterialBaseUnit'
-  @AnalyticsDetails.query.axis: #COLUMNS
-  MatlWrhsStkQtyInMatlBaseUnit,
-
-  // Names and descriptions
-  _Material._Text[1: Language=$parameters.P_Language].MaterialName,
-  I_MaterialStockTimeSeries._CompanyCode.CompanyCodeName,
-  I_MaterialStockTimeSeries._Plant.PlantName,
-  I_MaterialStockTimeSeries._StorageLocation.StorageLocationName,
-  I_MaterialStockTimeSeries._Supplier.SupplierName,
-  I_MaterialStockTimeSeries._Customer.CustomerName,
-  _InventoryStockType._Text[1: Language=$parameters.P_Language].InventoryStockTypeName,
-  _InventorySpecialStockType._Text[1: Language=$parameters.P_Language].InventorySpecialStockTypeName
-}
-```
+| `InventoryStockTypeName` |  | |  |  | `CHAR(60)` | Inventory Stock Type Name |
+| `InventorySpecialStockTypeName` |  | |  |  | `CHAR(20)` | Special Stock Type Name |

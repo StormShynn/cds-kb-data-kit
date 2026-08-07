@@ -1,28 +1,36 @@
 ---
 name: C_ENTPROJMARGINANALYSISQUERY
-description: Contribution Margin Query
+description: This CDS view is designed to provide a comprehensive analysis of contribution margins across various dimensions such as products, projects, and fiscal periods. It aggregates financial data to calculate different types of contribution margins, including Contribution Margin I, II, and III, by considering billed revenue, sales deductions, cost of goods sold, price differences, and overhead costs. The view is intended for analytical purposes, allowing users to filter and analyze data based on multiple criteria such as company code, fiscal year, ledger, and product details. This CDS view provides the data to answer the following business questions: What is the contribution margin for specific products or projects within a given fiscal year or period? How do billed revenue, sales deductions, and revenue adjustments impact the overall contribution margin? What are the fixed and variable costs of goods sold, and how do they affect the contribution margin? How do price variances and overhead costs (administrative, sales, marketing, R&amp;D) influence the contribution margin? What is the margin per unit and margin percentage for Contribution Margin I and II? How does the contribution margin vary across different sales organizations, distribution channels, and customer groups? What is the impact of project stock on the contribution margin? Who is the project manager responsible for specific projects, and how do their projects perform in terms of contribution margin? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENTPROJMARGINANALYSISQUERY')/$value
-semantic_en: Contribution Margin Query
+semantic_en: This CDS view is designed to provide a comprehensive analysis of contribution margins across various dimensions such as products, projects, and fiscal periods. It aggregates financial data to calculate different types of contribution margins, including Contribution Margin I, II, and III, by considering billed revenue, sales deductions, cost of goods sold, price differences, and overhead costs. The view is intended for analytical purposes, allowing users to filter and analyze data based on multiple criteria such as company code, fiscal year, ledger, and product details. This CDS view provides the data to answer the following business questions: What is the contribution margin for specific products or projects within a given fiscal year or period? How do billed revenue, sales deductions, and revenue adjustments impact the overall contribution margin? What are the fixed and variable costs of goods sold, and how do they affect the contribution margin? How do price variances and overhead costs (administrative, sales, marketing, R&amp;D) influence the contribution margin? What is the margin per unit and margin percentage for Contribution Margin I and II? How does the contribution margin vary across different sales organizations, distribution channels, and customer groups? What is the impact of project stock on the contribution margin? Who is the project manager responsible for specific projects, and how do their projects perform in terms of contribution margin? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+keywords:
+  - Contribution Margin Query
+  - Contribution Margin Query
+  - Contribution Margin Query
 tags:
   - CO
-  - bo:project
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
+  - customer
   - lob:controlling
   - lob:finance
+  - product
+  - project
+  - stock
   - metadata-only
 ---
 # C_ENTPROJMARGINANALYSISQUERY
 
-**Contribution Margin Query**
+**This CDS view is designed to provide a comprehensive analysis of contribution margins across various dimensions such as products, projects, and fiscal periods. It aggregates financial data to calculate different types of contribution margins, including Contribution Margin I, II, and III, by considering billed revenue, sales deductions, cost of goods sold, price differences, and overhead costs. The view is intended for analytical purposes, allowing users to filter and analyze data based on multiple criteria such as company code, fiscal year, ledger, and product details. This CDS view provides the data to answer the following business questions: What is the contribution margin for specific products or projects within a given fiscal year or period? How do billed revenue, sales deductions, and revenue adjustments impact the overall contribution margin? What are the fixed and variable costs of goods sold, and how do they affect the contribution margin? How do price variances and overhead costs (administrative, sales, marketing, R&amp;D) influence the contribution margin? What is the margin per unit and margin percentage for Contribution Margin I and II? How does the contribution margin vary across different sales organizations, distribution channels, and customer groups? What is the impact of project stock on the contribution margin? Who is the project manager responsible for specific projects, and how do their projects perform in terms of contribution margin? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -117,3 +125,7 @@ tags:
 | `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
 | `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
 | `WBSIsStatisticalWBSElement` |  | |  |  | `CHAR(1)` | Indicator: WBS Element is Statistical Account Assignment |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `SubLedgerAcctLineItemType` |  | |  |  | `NUMC(5)` | Subledger-Specific Line Item Type |
+| `ContractualResAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |

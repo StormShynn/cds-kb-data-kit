@@ -1,13 +1,13 @@
 ---
 name: I_BKACCOUNTREVIEWAREAWORKFLOW
-description: Bank Account Review Area
+description: This CDS view is used during the bank account review workflow to identify the bank account review for a bank account review area. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BKACCOUNTREVIEWAREAWORKFLOW')/$value
-semantic_en: Bank Account Review Area
+semantic_en: This CDS view is used during the bank account review workflow to identify the bank account review for a bank account review area. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - FIN
   - account
@@ -23,7 +23,7 @@ tags:
 ---
 # I_BKACCOUNTREVIEWAREAWORKFLOW
 
-**Bank Account Review Area**
+**This CDS view is used during the bank account review workflow to identify the bank account review for a bank account review area. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

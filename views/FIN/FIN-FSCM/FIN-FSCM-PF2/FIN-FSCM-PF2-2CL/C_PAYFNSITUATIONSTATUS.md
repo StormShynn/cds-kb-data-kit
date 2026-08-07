@@ -1,7 +1,7 @@
 ---
 name: C_PAYFNSITUATIONSTATUS
 description: Situation for Status Issue
-app_component: FIN-FSCM-PF2
+app_component: FIN-FSCM-PF2-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
@@ -10,10 +10,11 @@ source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('
 semantic_en: Situation for Status Issue
 tags:
   - FIN
-  - component:FIN-FSCM-PF2
+  - component:FIN-FSCM-PF2-2CL
   - consumption-view
   - FIN-FSCM
   - FIN-FSCM-PF2
+  - FIN-FSCM-PF2-2CL
   - lob:finance
   - metadata-only
 ---
@@ -23,7 +24,7 @@ tags:
 
 | Property | Value |
 |---|---|
-| App Component | `FIN-FSCM-PF2` |
+| App Component | `FIN-FSCM-PF2-2CL` |
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |

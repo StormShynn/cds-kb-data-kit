@@ -1,13 +1,13 @@
 ---
 name: I_AGRMTSPCLARRGMTLGLSTSTEXT
-description: Agreement Special Arrangement Legal Status - Text
+description: Agrmt Spcl Arrangement Legal Sts - Text
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTSPCLARRGMTLGLSTSTEXT')/$value
-semantic_en: Agreement Special Arrangement Legal Status - Text
+semantic_en: Agrmt Spcl Arrangement Legal Sts - Text
 tags:
   - FS
   - component:FS-CMS
@@ -17,7 +17,7 @@ tags:
 ---
 # I_AGRMTSPCLARRGMTLGLSTSTEXT
 
-**Agreement Special Arrangement Legal Status - Text**
+**Agrmt Spcl Arrangement Legal Sts - Text**
 
 | Property | Value |
 |---|---|

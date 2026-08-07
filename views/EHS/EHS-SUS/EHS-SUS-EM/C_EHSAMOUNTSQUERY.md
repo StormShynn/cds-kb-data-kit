@@ -41,8 +41,8 @@ tags:
 | `EHSAmountUTCYearMonth` |  | |  |  | `NUMC(6)` | Calendar Year and Month |
 | `EHSAmountUTCYear` |  | |  |  | `NUMC(4)` | Year |
 | `EHSAmountValue` |  | |  |  | `FLTP(16)` | Amount Value |
-| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Units of Measurement of Various Types |
-| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Text (Maximum 10 Characters) |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Measure Units of Various Types |
+| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Short Text with a 10-Character Maximum |
 | `UnitOfMeasureDimension` |  | |  |  | `CHAR(6)` | Physical Dimension |
 | `UnitOfMeasureDimensionName` |  | |  |  | `CHAR(20)` | Dimension Text |
 | `EHSAmountIsReplaced` |  | |  |  | `CHAR(1)` | Substituted Value |
@@ -79,7 +79,7 @@ tags:
 | `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
 | `EHSLocClassifiersText` |  | |  |  | `CHAR(255)` | List of Classifiers (Comma Separated) - short |
 | `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
-| `EHSSubjectText` |  | |  |  | `CHAR(60)` | Name |
+| `EHSSubjectText` |  | |  |  | `CHAR(255)` | Subject |
 | `EHSSubjectID` |  | |  |  | `CHAR(20)` | id |
 | `CASNumber` |  | |  |  | `CHAR(20)` | CAS Number |
 | `EHSDataClassifierID` |  | |  |  | `CHAR(30)` | Data Classifier for Location Aggregation |

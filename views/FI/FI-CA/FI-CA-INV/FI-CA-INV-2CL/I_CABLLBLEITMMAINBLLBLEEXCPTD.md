@@ -1,17 +1,19 @@
 ---
 name: I_CABLLBLEITMMAINBLLBLEEXCPTD
-description: Bllble Itm Main Data Billable Excepted
+description: This CDS view retrieves the main item data with status Billable Excepted of a billable item in Convergent Invoicing. This CDS view provides the data to answer the following business questions: Which data exists for a business transaction or event that could technically be billed but has been excluded from billing? What net amount is receivable or payable for the business transaction or event? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FI-CA-INV-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CABLLBLEITMMAINBLLBLEEXCPTD')/$value
-semantic_en: Bllble Itm Main Data Billable Excepted
+semantic_en: This CDS view retrieves the main item data with status Billable Excepted of a billable item in Convergent Invoicing. This CDS view provides the data to answer the following business questions: Which data exists for a business transaction or event that could technically be billed but has been excluded from billing? What net amount is receivable or payable for the business transaction or event? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Bllble Itm Main Data Billable Excepted
 tags:
   - FI
+  - billing
+  - bo:billingdocument
   - component:FI-CA-INV-2CL
   - FI-CA
   - FI-CA-INV
@@ -19,11 +21,12 @@ tags:
   - interface-view
   - lob:cross_application components
   - lob:finance
+  - transaction
   - metadata-only
 ---
 # I_CABLLBLEITMMAINBLLBLEEXCPTD
 
-**Bllble Itm Main Data Billable Excepted**
+**This CDS view retrieves the main item data with status Billable Excepted of a billable item in Convergent Invoicing. This CDS view provides the data to answer the following business questions: Which data exists for a business transaction or event that could technically be billed but has been excluded from billing? What net amount is receivable or payable for the business transaction or event? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

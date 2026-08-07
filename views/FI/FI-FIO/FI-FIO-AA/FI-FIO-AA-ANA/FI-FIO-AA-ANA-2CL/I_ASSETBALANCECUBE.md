@@ -164,6 +164,7 @@ tags:
 | `DepreciationStartDate` |  | |  |  | `DATS(8)` | Depreciation Calculation Start Date |
 | `SpecialDeprStartDate` |  | |  |  | `DATS(8)` | Start Date for Special Depreciation |
 | `DepreciationKey` |  | |  |  | `CHAR(4)` | Depreciation Key |
+| `DepreciationProfile` |  | |  |  | `CHAR(12)` | Depreciation Profile |
 | `PlannedUsefulLifeInYears` |  | |  |  | `NUMC(3)` | Planned Useful Life in Years |
 | `PlannedUsefulLifeInPeriods` |  | |  |  | `NUMC(3)` | Planned Useful Life in Periods |
 | `OriglAstUsefulLifeInYears` |  | |  |  | `NUMC(3)` | Original Useful Life in Years |

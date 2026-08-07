@@ -1,25 +1,26 @@
 ---
 name: C_PRODUCTPROFITABILITYQUERY
-description: Product Profitability with Production Variances - Qry
+description: This CDS view provides insights into product profitability by analyzing production variances. It allows you to evaluate the financial performance by examining various key figures related to revenue, cost of goods sold, and contribution margins, in both global and company code currencies. The view supports detailed analysis by different dimensions, such as company code, fiscal year, product, customer, and sales organization. This CDS view provides the data to answer the following business questions: What is the profitability of products considering production variances? How do production variances impact the contribution margins of products? What are the revenue and cost figures for products in both global and company code currencies? How do different dimensions such as company code, fiscal year, and product group affect product profitability? What are the detailed components of price differences, such as input price variance and resource usage variance? How do sales deductions and revenue adjustments affect recognized revenue? What is the contribution margin per unit for products in global currency? How does the profitability of products vary across different sales organizations and customer groups? What is the margin percentage in global currency relative to recognized revenue? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODUCTPROFITABILITYQUERY')/$value
-semantic_en: Product Profitability with Production Variances - Qry
+semantic_en: This CDS view provides insights into product profitability by analyzing production variances. It allows you to evaluate the financial performance by examining various key figures related to revenue, cost of goods sold, and contribution margins, in both global and company code currencies. The view supports detailed analysis by different dimensions, such as company code, fiscal year, product, customer, and sales organization. This CDS view provides the data to answer the following business questions: What is the profitability of products considering production variances? How do production variances impact the contribution margins of products? What are the revenue and cost figures for products in both global and company code currencies? How do different dimensions such as company code, fiscal year, and product group affect product profitability? What are the detailed components of price differences, such as input price variance and resource usage variance? How do sales deductions and revenue adjustments affect recognized revenue? What is the contribution margin per unit for products in global currency? How does the profitability of products vary across different sales organizations and customer groups? What is the margin percentage in global currency relative to recognized revenue? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Product Profitability with Production Variances
   - Product Profitability with Production Variances
   - Product Profitability with Production Variances
 tags:
   - CO
-  - bo:companycode
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
+  - customer
   - lob:controlling
   - lob:finance
   - product
@@ -27,7 +28,7 @@ tags:
 ---
 # C_PRODUCTPROFITABILITYQUERY
 
-**Product Profitability with Production Variances - Qry**
+**This CDS view provides insights into product profitability by analyzing production variances. It allows you to evaluate the financial performance by examining various key figures related to revenue, cost of goods sold, and contribution margins, in both global and company code currencies. The view supports detailed analysis by different dimensions, such as company code, fiscal year, product, customer, and sales organization. This CDS view provides the data to answer the following business questions: What is the profitability of products considering production variances? How do production variances impact the contribution margins of products? What are the revenue and cost figures for products in both global and company code currencies? How do different dimensions such as company code, fiscal year, and product group affect product profitability? What are the detailed components of price differences, such as input price variance and resource usage variance? How do sales deductions and revenue adjustments affect recognized revenue? What is the contribution margin per unit for products in global currency? How does the profitability of products vary across different sales organizations and customer groups? What is the margin percentage in global currency relative to recognized revenue? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

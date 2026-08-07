@@ -40,7 +40,7 @@ tags:
 | `OutputRequestItemUUID` |  | |  |  | `RAW(16)` | NodeID |
 | `OutputControlApplObjectType` |  | |  |  | `CHAR(30)` | Application Object Type (Business Object) |
 | `OutputControlApplicationObject` |  | |  |  | `CHAR(255)` | Application Object ID |
-| `OutputRequestItem` |  | |  |  | `NUMC(6)` | Output Request Item ID |
+| `OutputRequestItem` |  | |  |  | `NUMC(6)` | ID of an Output Request Item |
 | `OutputRequestItemStatus` |  | |  |  | `CHAR(1)` | Output Request Output Status |
 | `OutputDocumentType` |  | |  |  | `CHAR(30)` | Output Type |
 | `OutputChannel` |  | |  |  | `CHAR(5)` | Output Channel |

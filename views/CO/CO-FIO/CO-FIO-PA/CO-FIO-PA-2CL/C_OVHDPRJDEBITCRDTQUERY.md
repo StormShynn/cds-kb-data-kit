@@ -1,33 +1,37 @@
 ---
 name: C_OVHDPRJDEBITCRDTQUERY
-description: Overhead Project Debit Credit - Query
+description: This CDS view is designed to provide an analytical query for examining overhead project debit and credit transactions. It allows users to analyze financial data related to projects, including various dimensions such as company code, fiscal year, profit center. This CDS view provides the data to answer the following business questions: What are the debit and credit amounts for overhead projects within a specific company code and fiscal year? How do these amounts vary across different profit centers and functional areas? What is the financial impact of specific projects or project profiles on the company's ledger? How do sales documents and customer groups contribute to the overall project financials? What are the quantities and amounts in display currency for specific projects or WBS elements? How do different controlling debit/credit codes affect the financial planning and actual transactions? What is the role of specific project managers in the financial outcomes of projects? How do fiscal periods and year variants influence the financial data of projects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_OVHDPRJDEBITCRDTQUERY')/$value
-semantic_en: Overhead Project Debit Credit - Query
+semantic_en: This CDS view is designed to provide an analytical query for examining overhead project debit and credit transactions. It allows users to analyze financial data related to projects, including various dimensions such as company code, fiscal year, profit center. This CDS view provides the data to answer the following business questions: What are the debit and credit amounts for overhead projects within a specific company code and fiscal year? How do these amounts vary across different profit centers and functional areas? What is the financial impact of specific projects or project profiles on the company's ledger? How do sales documents and customer groups contribute to the overall project financials? What are the quantities and amounts in display currency for specific projects or WBS elements? How do different controlling debit/credit codes affect the financial planning and actual transactions? What is the role of specific project managers in the financial outcomes of projects? How do fiscal periods and year variants influence the financial data of projects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Overhead Project Debit Credit - Query
   - Overhead Project Debit Credit - Query
   - Overhead Project Debit Credit - Query
 tags:
   - CO
-  - bo:project
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
+  - customer
+  - document
   - lob:controlling
   - lob:finance
+  - plan
   - project
+  - transaction
   - metadata-only
 ---
 # C_OVHDPRJDEBITCRDTQUERY
 
-**Overhead Project Debit Credit - Query**
+**This CDS view is designed to provide an analytical query for examining overhead project debit and credit transactions. It allows users to analyze financial data related to projects, including various dimensions such as company code, fiscal year, profit center. This CDS view provides the data to answer the following business questions: What are the debit and credit amounts for overhead projects within a specific company code and fiscal year? How do these amounts vary across different profit centers and functional areas? What is the financial impact of specific projects or project profiles on the company's ledger? How do sales documents and customer groups contribute to the overall project financials? What are the quantities and amounts in display currency for specific projects or WBS elements? How do different controlling debit/credit codes affect the financial planning and actual transactions? What is the role of specific project managers in the financial outcomes of projects? How do fiscal periods and year variants influence the financial data of projects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

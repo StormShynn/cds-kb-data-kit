@@ -1,33 +1,38 @@
 ---
 name: C_MARGANLYSPRODANDSRVCQ
-description: Product and Service Margins
+description: This CDS view provides analytical insights into the margins of products and services within a company. It aggregates and presents financial data related to revenue, costs, and margins, allowing you to analyse profitability across various dimensions such as company code, fiscal year, profit center, and customer. This CDS view provides the data to answer the following business questions: What are the margins for different products and services offered by the company? How do margins vary across different company codes and fiscal years? What is the recognized revenue and cost of goods sold (COGS) for specific profit centers? How do margins differ across various sales orders, service contracts, and business solution orders? What is the impact of deferred and accrued revenues and COGS on overall profitability? How do margins compare across different customer groups and sales districts? What are the financial impacts of reserves, such as imminent loss reserves and sales deduction reserves, on margins? How do down payments and manual contract accruals affect the financial performance of products and services? What is the percentage margin for recognized revenue, and how does it vary across different dimensions? How do different ledger fiscal years, and fiscal periods, impact the financial analysis of margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MARGANLYSPRODANDSRVCQ')/$value
-semantic_en: Product and Service Margins
+semantic_en: This CDS view provides analytical insights into the margins of products and services within a company. It aggregates and presents financial data related to revenue, costs, and margins, allowing you to analyse profitability across various dimensions such as company code, fiscal year, profit center, and customer. This CDS view provides the data to answer the following business questions: What are the margins for different products and services offered by the company? How do margins vary across different company codes and fiscal years? What is the recognized revenue and cost of goods sold (COGS) for specific profit centers? How do margins differ across various sales orders, service contracts, and business solution orders? What is the impact of deferred and accrued revenues and COGS on overall profitability? How do margins compare across different customer groups and sales districts? What are the financial impacts of reserves, such as imminent loss reserves and sales deduction reserves, on margins? How do down payments and manual contract accruals affect the financial performance of products and services? What is the percentage margin for recognized revenue, and how does it vary across different dimensions? How do different ledger fiscal years, and fiscal periods, impact the financial analysis of margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Product and Service Margins
   - Product and Service Margins
   - Product and Service Margins
 tags:
   - CO
-  - bo:material
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
+  - contract
+  - customer
   - lob:controlling
   - lob:finance
+  - order
+  - payment
   - product
+  - sales-order
   - metadata-only
 ---
 # C_MARGANLYSPRODANDSRVCQ
 
-**Product and Service Margins**
+**This CDS view provides analytical insights into the margins of products and services within a company. It aggregates and presents financial data related to revenue, costs, and margins, allowing you to analyse profitability across various dimensions such as company code, fiscal year, profit center, and customer. This CDS view provides the data to answer the following business questions: What are the margins for different products and services offered by the company? How do margins vary across different company codes and fiscal years? What is the recognized revenue and cost of goods sold (COGS) for specific profit centers? How do margins differ across various sales orders, service contracts, and business solution orders? What is the impact of deferred and accrued revenues and COGS on overall profitability? How do margins compare across different customer groups and sales districts? What are the financial impacts of reserves, such as imminent loss reserves and sales deduction reserves, on margins? How do down payments and manual contract accruals affect the financial performance of products and services? What is the percentage margin for recognized revenue, and how does it vary across different dimensions? How do different ledger fiscal years, and fiscal periods, impact the financial analysis of margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

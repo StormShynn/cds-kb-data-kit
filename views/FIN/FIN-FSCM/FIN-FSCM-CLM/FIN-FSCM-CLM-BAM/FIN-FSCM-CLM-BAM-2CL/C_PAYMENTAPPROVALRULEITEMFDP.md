@@ -1,15 +1,16 @@
 ---
 name: C_PAYMENTAPPROVALRULEITEMFDP
-description: Form Data Provider for PAR Item
+description: This CDS view provides the detail information about a payment approval rule item such as the Payment Approval Category, the information whether an Unlimited Payment Approval Authorization is granted, and the default limit amount and currency. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PAYMENTAPPROVALRULEITEMFDP')/$value
-semantic_en: Form Data Provider for PAR Item
+semantic_en: This CDS view provides the detail information about a payment approval rule item such as the Payment Approval Category, the information whether an Unlimited Payment Approval Authorization is granted, and the default limit amount and currency. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - FIN
+  - bo:companycode
   - component:FIN-FSCM-CLM-BAM-2CL
   - consumption-view
   - FIN-FSCM
@@ -17,11 +18,12 @@ tags:
   - FIN-FSCM-CLM-BAM
   - FIN-FSCM-CLM-BAM-2CL
   - lob:finance
+  - payment
   - metadata-only
 ---
 # C_PAYMENTAPPROVALRULEITEMFDP
 
-**Form Data Provider for PAR Item**
+**This CDS view provides the detail information about a payment approval rule item such as the Payment Approval Category, the information whether an Unlimited Payment Approval Authorization is granted, and the default limit amount and currency. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

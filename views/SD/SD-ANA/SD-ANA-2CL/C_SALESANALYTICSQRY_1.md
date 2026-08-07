@@ -1,13 +1,13 @@
 ---
 name: C_SALESANALYTICSQRY_1
-description: This CDS view provides the data to answer the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: This CDS view provides the prerequisites for answering the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries?
 app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESANALYTICSQRY_1')/$value
-semantic_en: This CDS view provides the data to answer the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries?
 keywords:
   - Sales Volume and Open Sales - Query
   - Sales Volume and Open Sales - Query
@@ -26,7 +26,7 @@ tags:
 ---
 # C_SALESANALYTICSQRY_1
 
-**This CDS view provides the data to answer the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**This CDS view provides the prerequisites for answering the following business questions: What is my sales volume in comparison with previous months? Where can I increase my sales volume in the current period, for example, with open orders, open billing requests and open deliveries?**
 
 | Property | Value |
 |---|---|

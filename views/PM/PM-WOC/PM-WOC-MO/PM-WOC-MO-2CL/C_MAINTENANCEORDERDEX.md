@@ -74,7 +74,7 @@ tags:
 | `MaintenanceActivityType` |  | |  |  | `CHAR(3)` | Maintenance Activity Type |
 | `MaintPriority` |  | |  |  | `CHAR(1)` | Priority |
 | `MaintPriorityType` |  | |  |  | `CHAR(2)` | Priority Type |
-| `OrderProcessingGroup` |  | |  |  | `NUMC(2)` | Processing group |
+| `OrderProcessingGroup` |  | |  |  | `NUMC(2)` | Processing Group |
 | `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
 | `ResponsibleCostCenter` |  | |  |  | `CHAR(10)` | Responsible Cost Center |
 | `Currency` |  | |  |  | `CUKY(5)` | Order Currency |
