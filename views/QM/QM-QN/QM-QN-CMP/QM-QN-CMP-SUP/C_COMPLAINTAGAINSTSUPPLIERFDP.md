@@ -1,13 +1,13 @@
 ---
 name: C_COMPLAINTAGAINSTSUPPLIERFDP
-description: This CDS view provides access to data for output items related to complaints against suppliers. Using this data, SAP S/4HANA output control generates a file that can then be printed or sent by email, for example. This CDS view provides the data to answer the following business questions: What are the details of a specific complaint against supplier, for example, the plant, status, and supplier? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: FDP for Complaint Against Supplier
 app_component: QM-QN-CMP-SUP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMPLAINTAGAINSTSUPPLIERFDP')/$value
-semantic_en: This CDS view provides access to data for output items related to complaints against suppliers. Using this data, SAP S/4HANA output control generates a file that can then be printed or sent by email, for example. This CDS view provides the data to answer the following business questions: What are the details of a specific complaint against supplier, for example, the plant, status, and supplier? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: FDP for Complaint Against Supplier
 semantic_vi: FDP for Complaint Against Supplier — CDS view tiêu dùng (transactional data) dựa trên I_ComplaintAgainstSupplier.
 keywords:
   - fdp
@@ -25,11 +25,9 @@ keywords:
   - language
 tags:
   - QM
-  - bo:companycode
   - component:QM-QN-CMP-SUP
   - consumption-view
   - lob:quality management
-  - plan
   - QM-QN
   - QM-QN-CMP
   - QM-QN-CMP-SUP
@@ -37,7 +35,7 @@ tags:
 ---
 # C_COMPLAINTAGAINSTSUPPLIERFDP
 
-**This CDS view provides access to data for output items related to complaints against suppliers. Using this data, SAP S/4HANA output control generates a file that can then be printed or sent by email, for example. This CDS view provides the data to answer the following business questions: What are the details of a specific complaint against supplier, for example, the plant, status, and supplier? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**FDP for Complaint Against Supplier**
 
 | Property | Value |
 |---|---|

@@ -1,13 +1,13 @@
 ---
 name: C_COMPANYMARGINQUERY_2
-description: This CDS view is designed to provide a comprehensive analytical query for evaluating company margins. It aggregates and calculates various financial metrics related to revenue, costs, and contribution margins, allowing users to analyze financial performance across different dimensions such as company code, fiscal year, and ledger. This CDS view provides the data to answer the following business questions: What is the net revenue for a specific company code and fiscal year? How do billed revenue and revenue adjustments contribute to the overall revenue? What are the sales deductions impacting net revenue? How are variable and fixed costs of goods sold distributed across different categories such as material, activity, and overhead costs? What are the contributions of different cost components to the overall contribution margins (I, II, and III)? How do price variances and warranty costs affect the cost of goods sold? What are the periodic costs associated with marketing, sales, administration, and research and development overheads? How do these financial metrics vary across different dimensions such as customer, product, and sales organization? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: Company Margin Template Query
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMPANYMARGINQUERY_2')/$value
-semantic_en: This CDS view is designed to provide a comprehensive analytical query for evaluating company margins. It aggregates and calculates various financial metrics related to revenue, costs, and contribution margins, allowing users to analyze financial performance across different dimensions such as company code, fiscal year, and ledger. This CDS view provides the data to answer the following business questions: What is the net revenue for a specific company code and fiscal year? How do billed revenue and revenue adjustments contribute to the overall revenue? What are the sales deductions impacting net revenue? How are variable and fixed costs of goods sold distributed across different categories such as material, activity, and overhead costs? What are the contributions of different cost components to the overall contribution margins (I, II, and III)? How do price variances and warranty costs affect the cost of goods sold? What are the periodic costs associated with marketing, sales, administration, and research and development overheads? How do these financial metrics vary across different dimensions such as customer, product, and sales organization? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: Company Margin Template Query
 semantic_vi: Company Margin Template Query — CDS view tiêu dùng dựa trên Company Margin Template Query.
 keywords:
   - Company Margin Template Query
@@ -22,21 +22,17 @@ keywords:
   - period
 tags:
   - CO
-  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
-  - customer
   - lob:controlling
   - lob:finance
-  - material
-  - product
 ---
 # C_COMPANYMARGINQUERY_2
 
-**This CDS view is designed to provide a comprehensive analytical query for evaluating company margins. It aggregates and calculates various financial metrics related to revenue, costs, and contribution margins, allowing users to analyze financial performance across different dimensions such as company code, fiscal year, and ledger. This CDS view provides the data to answer the following business questions: What is the net revenue for a specific company code and fiscal year? How do billed revenue and revenue adjustments contribute to the overall revenue? What are the sales deductions impacting net revenue? How are variable and fixed costs of goods sold distributed across different categories such as material, activity, and overhead costs? What are the contributions of different cost components to the overall contribution margins (I, II, and III)? How do price variances and warranty costs affect the cost of goods sold? What are the periodic costs associated with marketing, sales, administration, and research and development overheads? How do these financial metrics vary across different dimensions such as customer, product, and sales organization? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**Company Margin Template Query**
 
 | Property | Value |
 |---|---|

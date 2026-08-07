@@ -1,13 +1,13 @@
 ---
 name: C_COLLECTIONPROGRESSQ
-description: This CDS view shows the collection progress in percent since the last worklist generation in SAP Collections Management. This CDS view provides the data to answer the following business questions: How is the progress of collecting open receivables in percent, since the last worklist generation? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: Collection Progress Query
 app_component: FI-AR-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONPROGRESSQ')/$value
-semantic_en: This CDS view shows the collection progress in percent since the last worklist generation in SAP Collections Management. This CDS view provides the data to answer the following business questions: How is the progress of collecting open receivables in percent, since the last worklist generation? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: Collection Progress Query
 semantic_vi: Collection Progress Query — CDS view tiêu dùng dựa trên I_CollectionProgress.
 keywords:
   - collection
@@ -19,7 +19,6 @@ keywords:
   - name
 tags:
   - FI
-  - bo:companycode
   - component:FI-AR-IS-2CL
   - consumption-view
   - FI-AR
@@ -29,7 +28,7 @@ tags:
 ---
 # C_COLLECTIONPROGRESSQ
 
-**This CDS view shows the collection progress in percent since the last worklist generation in SAP Collections Management. This CDS view provides the data to answer the following business questions: How is the progress of collecting open receivables in percent, since the last worklist generation? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**Collection Progress Query**
 
 | Property | Value |
 |---|---|

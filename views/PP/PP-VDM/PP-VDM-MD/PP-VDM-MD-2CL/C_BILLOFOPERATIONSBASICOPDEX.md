@@ -1,13 +1,13 @@
 ---
 name: C_BILLOFOPERATIONSBASICOPDEX
-description: This CDS view helps you retrieve material assignment data (table MAPL) for the bill of operations. This CDS view provides the data to answer the following business questions: Which materials are assigned to which manufacturing bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: Bill of Operations Operation
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BILLOFOPERATIONSBASICOPDEX')/$value
-semantic_en: This CDS view helps you retrieve material assignment data (table MAPL) for the bill of operations. This CDS view provides the data to answer the following business questions: Which materials are assigned to which manufacturing bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: Bill of Operations Operation
 semantic_vi: Bill of Operations Operation — CDS view tiêu dùng dựa trên I_BillOfOperationsOpBasic.
 keywords:
   - bill
@@ -20,11 +20,9 @@ keywords:
   - counter
 tags:
   - PP
-  - bo:companycode
   - component:PP-VDM-MD-2CL
   - consumption-view
   - lob:manufacturing
-  - material
   - PP-VDM
   - PP-VDM-MD
   - PP-VDM-MD-2CL
@@ -32,7 +30,7 @@ tags:
 ---
 # C_BILLOFOPERATIONSBASICOPDEX
 
-**This CDS view helps you retrieve material assignment data (table MAPL) for the bill of operations. This CDS view provides the data to answer the following business questions: Which materials are assigned to which manufacturing bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**Bill of Operations Operation**
 
 | Property | Value |
 |---|---|

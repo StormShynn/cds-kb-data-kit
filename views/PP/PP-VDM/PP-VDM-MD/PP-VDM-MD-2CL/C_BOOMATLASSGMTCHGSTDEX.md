@@ -1,13 +1,13 @@
 ---
 name: C_BOOMATLASSGMTCHGSTDEX
-description: This CDS view helps you to retrieve operation data (table PLPO) for bill of operations. This CDS view provides the data to answer the following business questions: Which operations exist for the bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: Change State of Material Assgmt to BOO
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BOOMATLASSGMTCHGSTDEX')/$value
-semantic_en: This CDS view helps you to retrieve operation data (table PLPO) for bill of operations. This CDS view provides the data to answer the following business questions: Which operations exist for the bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: Change State of Material Assgmt to BOO
 semantic_vi: Change State of Material Assgmt to BOO — CDS view tiêu dùng dựa trên I_BOOMaterialAssgmtChangeState.
 keywords:
   - change
@@ -23,18 +23,17 @@ keywords:
   - variant
 tags:
   - PP
-  - bo:companycode
   - component:PP-VDM-MD-2CL
   - consumption-view
   - lob:manufacturing
+  - material
   - PP-VDM
   - PP-VDM-MD
   - PP-VDM-MD-2CL
-  - material
 ---
 # C_BOOMATLASSGMTCHGSTDEX
 
-**This CDS view helps you to retrieve operation data (table PLPO) for bill of operations. This CDS view provides the data to answer the following business questions: Which operations exist for the bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**Change State of Material Assgmt to BOO**
 
 | Property | Value |
 |---|---|

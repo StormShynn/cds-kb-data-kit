@@ -1,13 +1,13 @@
 ---
 name: C_ACTLPLNSRVCMARGITEMQUERY
-description: This CDS view provides analytical insights into the actual and planned service margins at item level. It allows you to compare actual financial data against baseline and ongoing planning categories, facilitating variance analysis, and performance tracking. Business Questions This CDS view provides the data to answer the following business questions: What are the actual service margins compared to the baseline and ongoing plans? How do the actual service margins deviate from the baseline and ongoing plans in terms of absolute amounts and percentages? What is the financial performance of services rendered across different company codes, fiscal periods, and other dimensions? How do different planning categories impact the overall service margin performance? What are the trends and variances in service margins over time and across different organizational units, such as profit centres and segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: Actual and Plan Service Marg Item - Qry
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ACTLPLNSRVCMARGITEMQUERY')/$value
-semantic_en: This CDS view provides analytical insights into the actual and planned service margins at item level. It allows you to compare actual financial data against baseline and ongoing planning categories, facilitating variance analysis, and performance tracking. Business Questions This CDS view provides the data to answer the following business questions: What are the actual service margins compared to the baseline and ongoing plans? How do the actual service margins deviate from the baseline and ongoing plans in terms of absolute amounts and percentages? What is the financial performance of services rendered across different company codes, fiscal periods, and other dimensions? How do different planning categories impact the overall service margin performance? What are the trends and variances in service margins over time and across different organizational units, such as profit centres and segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: Actual and Plan Service Marg Item - Qry
 semantic_vi: Actual and Plan Service Marg Item - Qry — CDS view tiêu dùng dựa trên Actual and Plan Service Marg Item - Qry.
 keywords:
   - Actual and Plan Service Marg Item - Qry
@@ -26,7 +26,6 @@ keywords:
   - customer
 tags:
   - CO
-  - bo:companycode
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
@@ -38,7 +37,7 @@ tags:
 ---
 # C_ACTLPLNSRVCMARGITEMQUERY
 
-**This CDS view provides analytical insights into the actual and planned service margins at item level. It allows you to compare actual financial data against baseline and ongoing planning categories, facilitating variance analysis, and performance tracking. Business Questions This CDS view provides the data to answer the following business questions: What are the actual service margins compared to the baseline and ongoing plans? How do the actual service margins deviate from the baseline and ongoing plans in terms of absolute amounts and percentages? What is the financial performance of services rendered across different company codes, fiscal periods, and other dimensions? How do different planning categories impact the overall service margin performance? What are the trends and variances in service margins over time and across different organizational units, such as profit centres and segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**Actual and Plan Service Marg Item - Qry**
 
 | Property | Value |
 |---|---|

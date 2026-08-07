@@ -7,7 +7,7 @@ REM
 REM To change how many views per run, edit the "25" below, or run from a
 REM terminal instead: run-vsp-batch.cmd --count 40 --no-push
 cd /d "%~dp0"
-node scripts\run-vsp-batch.mjs --count 10000 %*
+node scripts\run-vsp-batch.mjs --count 1000 %*
 echo.
 echo ============================================
-paus
+pause

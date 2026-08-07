@@ -1,13 +1,13 @@
 ---
 name: C_COMARGPERDCOMPARISONQRY_2
-description: This CDS view is designed to provide a comprehensive analytical query for comparing company margins across different fiscal periods and years. It enables users to analyze financial data related to revenue, costs, and margins, facilitating a detailed comparison between current and previous fiscal periods, quarters, and years. This CDS view provides the data to answer the following business questions: What is the company's net revenue and how does it compare to previous periods? How do the costs of goods sold, both variable and fixed, impact the company's margins? What are the contributions of different cost types (e.g., material, activity, overhead) to the overall cost structure? How do price variances affect the company's financial performance? What is the impact of periodic costs such as marketing, sales, administration, and R&amp;D overhead on the company's margins? How does the company's contribution margin evolve over different fiscal periods and quarters? What are the year-to-date financial results compared to the previous year? How do fiscal quarter results compare to previous quarters and the same quarter in the previous year? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+description: Company Margin Comparison Template Query
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COMARGPERDCOMPARISONQRY_2')/$value
-semantic_en: This CDS view is designed to provide a comprehensive analytical query for comparing company margins across different fiscal periods and years. It enables users to analyze financial data related to revenue, costs, and margins, facilitating a detailed comparison between current and previous fiscal periods, quarters, and years. This CDS view provides the data to answer the following business questions: What is the company's net revenue and how does it compare to previous periods? How do the costs of goods sold, both variable and fixed, impact the company's margins? What are the contributions of different cost types (e.g., material, activity, overhead) to the overall cost structure? How do price variances affect the company's financial performance? What is the impact of periodic costs such as marketing, sales, administration, and R&amp;D overhead on the company's margins? How does the company's contribution margin evolve over different fiscal periods and quarters? What are the year-to-date financial results compared to the previous year? How do fiscal quarter results compare to previous quarters and the same quarter in the previous year? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_en: Company Margin Comparison Template Query
 semantic_vi: Company Margin Comparison Template Query — CDS view tiêu dùng dựa trên Company Margin Comparison Template Query.
 keywords:
   - Company Margin Comparison Template Query
@@ -24,7 +24,7 @@ keywords:
   - period
 tags:
   - CO
-  - bo:companycode
+  - bo:salesorder
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
@@ -32,12 +32,10 @@ tags:
   - consumption-view
   - lob:controlling
   - lob:finance
-  - material
-  - bo:salesorder
 ---
 # C_COMARGPERDCOMPARISONQRY_2
 
-**This CDS view is designed to provide a comprehensive analytical query for comparing company margins across different fiscal periods and years. It enables users to analyze financial data related to revenue, costs, and margins, facilitating a detailed comparison between current and previous fiscal periods, quarters, and years. This CDS view provides the data to answer the following business questions: What is the company's net revenue and how does it compare to previous periods? How do the costs of goods sold, both variable and fixed, impact the company's margins? What are the contributions of different cost types (e.g., material, activity, overhead) to the overall cost structure? How do price variances affect the company's financial performance? What is the impact of periodic costs such as marketing, sales, administration, and R&amp;D overhead on the company's margins? How does the company's contribution margin evolve over different fiscal periods and quarters? What are the year-to-date financial results compared to the previous year? How do fiscal quarter results compare to previous quarters and the same quarter in the previous year? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**Company Margin Comparison Template Query**
 
 | Property | Value |
 |---|---|
