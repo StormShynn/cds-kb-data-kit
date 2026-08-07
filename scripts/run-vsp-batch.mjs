@@ -144,12 +144,41 @@ async function fetchBatch(names, systemName) {
   return { tmpDir, fetched, skipped };
 }
 
+/**
+ * A view .md conflict where we just upgraded it to Full DDL (ours has
+ * `source_available: true`) and the other side's version is still the old
+ * metadata-only content (`source_available: false`) isn't a real conflict —
+ * it's the daily Hub-metadata-fetch/resync-folders bots re-touching the same
+ * view we raced against. Since this script only ever fetches views that
+ * were metadata-only *before* this run, that race is the expected, common
+ * case (bots run on a schedule independent of this script), not a rare
+ * edge case worth aborting over every time. Ours strictly supersedes theirs
+ * here, so it's safe to auto-take ours — genuinely divergent edits (e.g.
+ * both sides independently have source_available: true with different
+ * content) still fall through to the unsafe-abort path below.
+ */
+async function isSafeViewSupersession(file) {
+  if (!file.replace(/\\/g, '/').startsWith('views/') || !file.endsWith('.md')) return false;
+  const ours = runCapture('git', ['show', `:2:${file}`]).stdout;
+  const theirs = runCapture('git', ['show', `:3:${file}`]).stdout;
+  return /^source_available:\s*true\s*$/m.test(ours) && /^source_available:\s*false\s*$/m.test(theirs);
+}
+
 async function resolveMergeConflicts() {
   const conflicted = runCapture('git', ['diff', '--name-only', '--diff-filter=U'])
     .stdout.split('\n').map(s => s.trim()).filter(Boolean);
   if (conflicted.length === 0) return true;
 
-  const unsafe = conflicted.filter(f => !GENERATED_FILES.has(f.replace(/\\/g, '/')));
+  const generated = [];
+  const supersessions = [];
+  const unsafe = [];
+  for (const f of conflicted) {
+    const normalized = f.replace(/\\/g, '/');
+    if (GENERATED_FILES.has(normalized)) generated.push(f);
+    else if (await isSafeViewSupersession(f)) supersessions.push(f);
+    else unsafe.push(f);
+  }
+
   if (unsafe.length > 0) {
     console.log(`\nMerge conflict trong file không tự resolve được an toàn: ${unsafe.join(', ')}`);
     console.log('Đang huỷ merge — cần agent/người xử lý tay.');
@@ -157,8 +186,16 @@ async function resolveMergeConflicts() {
     return false;
   }
 
-  console.log(`\nTự động resolve conflict trong ${conflicted.length} file generated: ${conflicted.join(', ')}`);
-  for (const f of conflicted) {
+  if (supersessions.length > 0) {
+    console.log(`\n${supersessions.length} view vừa upgrade bị bot khác đụng vào bản metadata-only cũ — giữ bản Full DDL của mình: ${supersessions.join(', ')}`);
+    for (const f of supersessions) {
+      const ours = runCapture('git', ['show', `:2:${f}`]);
+      await fs.writeFile(f, ours.stdout, 'utf-8');
+    }
+  }
+
+  console.log(`\nTự động resolve conflict trong ${generated.length} file generated: ${generated.join(', ')}`);
+  for (const f of generated) {
     if (f === 'changelog.json') {
       const ours = runCapture('git', ['show', ':2:changelog.json']).stdout;
       const theirs = runCapture('git', ['show', ':3:changelog.json']).stdout;
@@ -271,7 +308,7 @@ async function main() {
         console.log('\nMerge bị huỷ — commit local vẫn còn, chưa push. Cần xử lý tay.');
         return;
       }
-      run('git', ['add', ...Array.from(GENERATED_FILES)]);
+      run('git', ['add', '-A']); // covers both GENERATED_FILES and any resolved view-supersession .md files
       console.log('Rebuild lại index/dashboard sau merge...');
       await rebuildIndex(DATA_DIR);
       run('node', ['scripts/generate-dashboard.mjs']);

@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` |  |  |
-| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` |  |  |
-| `WorkflowScenarioResult` | ✓ | |  | `normiert` |  |  |
-| `WorkflowScenarioResultNature` |  | |  | `nature` |  |  |
+| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` | `CHAR(10)` | Number of workflow definition |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` | `CHAR(4)` | Version |
+| `WorkflowScenarioResult` | ✓ | |  | `normiert` | `CHAR(60)` | Outcome |
+| `WorkflowScenarioResultNature` |  | |  | `nature` | `CHAR(20)` | Workflow: Property: Positive, Negative.... |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

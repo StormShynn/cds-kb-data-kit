@@ -31,11 +31,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowStepType` | ✓ | |  |  |  |  |
-| `WrkflwScen` | ✓ | |  |  |  |  |
-| `WrkflwScenVers` | ✓ | |  |  |  |  |
-| `WorkflowStepIsSystemTask` |  | |  |  |  |  |
-| `WorkflowStepTypeClassfctn` |  | |  |  |  |  |
+| `WorkflowStepType` | ✓ | |  |  | `CHAR(40)` | Workflow : Label |
+| `WrkflwScen` | ✓ | |  |  | `CHAR(10)` | Number of workflow definition |
+| `WrkflwScenVers` | ✓ | |  |  | `CHAR(4)` | Version |
+| `WorkflowStepIsSystemTask` |  | |  |  | `CHAR(3)` |  |
+| `WorkflowStepTypeClassfctn` |  | |  |  | `CHAR(10)` | Workflow: Step Classification |
 | `_WorkflowTaskStepTypeText` | | ✓ | | | | |
 | `_WorkflowTaskStepResult` | | ✓ | | | | |
 | `_WorkflowStepTypeClassfctn` | | ✓ | | | | |

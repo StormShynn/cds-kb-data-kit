@@ -32,18 +32,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | |  |  |  |  |
-| `WorkflowInternalID` |  | |  | `TopLevelWorkflowTask` |  |  |
-| `WorkflowTaskExternalStatus` |  | |  | `WorkflowTaskStatus` |  |  |
-| `WorkflowTaskDefinition` |  | |  |  |  |  |
-| `WorkflowTaskProcessor` |  | |  | `WorkflowTaskCurrentUser` |  |  |
-| `WorkflowTaskProcessorRole` |  | |  |  |  |  |
-| `WrkflwTskCreationUTCDateTime` |  | |  |  |  |  |
-| `WrkflwTskCompletionUTCDateTime` |  | |  |  |  |  |
-| `WorkflowTaskStepType` |  | |  |  |  |  |
-| `WorkflowScenarioDefinition` |  | |  | `TopLevelWorkflowTaskDefinition` |  |  |
-| `WorkflowScenarioDefinitionVers` |  | |  | `WorkflowTaskDefinitionVersion` |  |  |
-| `WorkflowTaskResult` |  | |  |  |  |  |
+| `WorkflowTaskInternalID` | ✓ | |  |  | `NUMC(12)` | Work item ID |
+| `WorkflowInternalID` |  | |  | `TopLevelWorkflowTask` | `NUMC(12)` | Workflow: Unique ID of Top-Level Instance (6.1/get) |
+| `WorkflowTaskExternalStatus` |  | |  | `WorkflowTaskStatus` | `CHAR(12)` | Processing Status of a Work Item |
+| `WorkflowTaskDefinition` |  | |  |  | `CHAR(14)` | Task ID |
+| `WorkflowTaskProcessor` |  | |  | `WorkflowTaskCurrentUser` | `CHAR(12)` | Actual Agent of Work Item |
+| `WorkflowTaskProcessorRole` |  | |  |  | `CHAR(40)` | Workflow: Agent Rule Id |
+| `WrkflwTskCreationUTCDateTime` |  | |  |  | `DEC(21)` | Workflow: Creation Time Stamp |
+| `WrkflwTskCompletionUTCDateTime` |  | |  |  | `DEC(21)` | Workflow: Timestamp completion |
+| `WorkflowTaskStepType` |  | |  |  | `CHAR(40)` | Workflow: Step Id |
+| `WorkflowScenarioDefinition` |  | |  | `TopLevelWorkflowTaskDefinition` | `CHAR(14)` | Task Identifier of Top-Level Task |
+| `WorkflowScenarioDefinitionVers` |  | |  | `WorkflowTaskDefinitionVersion` | `CHAR(4)` | Version |
+| `WorkflowTaskResult` |  | |  |  | `CHAR(255)` | Workflow: Returncode flexible workflow |
 | `_WorkflowTaskExternalStatus` | | ✓ | | | | |
 | `_WorkflowTaskProcessor` | | ✓ | | | | |
 | `_WorkflowTaskProcessor_2` | | ✓ | | | | |

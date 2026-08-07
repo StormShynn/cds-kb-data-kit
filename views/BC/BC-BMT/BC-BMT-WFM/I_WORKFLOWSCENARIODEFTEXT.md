@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowScenarioDefinition` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `WorkflowScenarioDefinitionName` |  | |  | `WorkflowTaskDefinitionName` |  |  |
+| `WorkflowScenarioDefinition` | ✓ | |  |  | `CHAR(10)` | Number of workflow definition |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `WorkflowScenarioDefinitionName` |  | |  | `WorkflowTaskDefinitionName` | `CHAR(40)` | Object Name |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

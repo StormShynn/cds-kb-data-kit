@@ -32,21 +32,21 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowInternalID` | ✓ | |  | `WorkflowTaskInternalID` |  |  |
-| `WorkflowExternalStatus` |  | |  | `WorkflowTaskStatus` |  |  |
-| `WorkflowScenarioDefinition` |  | |  | `WorkflowTaskDefinition` |  |  |
-| `WorkflowScenarioDefinitionVers` |  | |  | `WorkflowTaskDefinitionVersion` |  |  |
-| `WrkflwTskCreationUTCDateTime` |  | |  |  |  |  |
-| `WrkflwTskCompletionUTCDateTime` |  | |  |  |  |  |
-| `SAPObjectNodeRepresentation` |  | |  |  |  |  |
-| `SAPBusinessObjectNodeKey1` |  | |  |  |  |  |
-| `SAPBusinessObjectNodeKey2` |  | |  |  |  |  |
-| `SAPBusinessObjectNodeKey3` |  | |  |  |  |  |
-| `SAPBusinessObjectNodeKey4` |  | |  |  |  |  |
-| `SAPBusinessObjectNodeKey5` |  | |  |  |  |  |
-| `SAPBusinessObjectNodeKey6` |  | |  |  |  |  |
-| `NmbrOfCmpltdWrkflwDialogTasks` |  | |  | `sum(case when Tasks.WorkflowTaskExternalStatus = 'COMPLETED' or WorkflowTaskExternalStatus = 'CANCELLED' then Tasks.NumberOfWorkflowDialogTasks else 0 end )` |  |  |
-| `NmbrOfActiveWrkflwDialogTasks` |  | |  | `sum(case when Tasks.WorkflowTaskExternalStatus != 'COMPLETED' and WorkflowTaskExternalStatus != 'CANCELLED' then Tasks.NumberOfWorkflowDialogTasks else 0 end )` |  |  |
+| `WorkflowInternalID` | ✓ | |  | `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
+| `WorkflowExternalStatus` |  | |  | `WorkflowTaskStatus` | `CHAR(12)` | Processing Status of a Work Item |
+| `WorkflowScenarioDefinition` |  | |  | `WorkflowTaskDefinition` | `CHAR(14)` | Task ID |
+| `WorkflowScenarioDefinitionVers` |  | |  | `WorkflowTaskDefinitionVersion` | `CHAR(4)` | Version |
+| `WrkflwTskCreationUTCDateTime` |  | |  |  | `DEC(21)` | Workflow: Creation Time Stamp |
+| `WrkflwTskCompletionUTCDateTime` |  | |  |  | `DEC(21)` | Workflow: Timestamp completion |
+| `SAPObjectNodeRepresentation` |  | |  |  | `CHAR(30)` | SAP Object Node Type |
+| `SAPBusinessObjectNodeKey1` |  | |  |  | `CHAR(70)` | Workflow SONT partial key 1 |
+| `SAPBusinessObjectNodeKey2` |  | |  |  | `CHAR(70)` | Workflow SONT partial key 2 |
+| `SAPBusinessObjectNodeKey3` |  | |  |  | `CHAR(70)` | Workflow SONT partial key 3 |
+| `SAPBusinessObjectNodeKey4` |  | |  |  | `CHAR(70)` | Workflow SONT partial key 4 |
+| `SAPBusinessObjectNodeKey5` |  | |  |  | `CHAR(70)` | Workflow SONT partial key 5 |
+| `SAPBusinessObjectNodeKey6` |  | |  |  | `CHAR(70)` | Workflow SONT partial key 6 |
+| `NmbrOfCmpltdWrkflwDialogTasks` |  | |  | `sum(case when Tasks.WorkflowTaskExternalStatus = 'COMPLETED' or WorkflowTaskExternalStatus = 'CANCELLED' then Tasks.NumberOfWorkflowDialogTasks else 0 end )` | `INT4(10)` |  |
+| `NmbrOfActiveWrkflwDialogTasks` |  | |  | `sum(case when Tasks.WorkflowTaskExternalStatus != 'COMPLETED' and WorkflowTaskExternalStatus != 'CANCELLED' then Tasks.NumberOfWorkflowDialogTasks else 0 end )` | `INT4(10)` |  |
 | `_WorkflowExternalStatus` | | ✓ | | | | |
 | `_WorkflowScenarioDefinition` | | ✓ | | | | |
 | `_WorkflowStatusDetails` | | ✓ | | | | |

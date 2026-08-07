@@ -33,12 +33,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowScenarioDefinition` | ✓ | |  |  |  |  |
-| `WorkflowScenarioDefinitionVers` | ✓ | |  |  |  |  |
-| `WorkflowStepType` | ✓ | |  |  |  |  |
-| `WorkflowStepResult` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `WorkflowStepResultText` |  | |  | `WorkflowStepText` |  |  |
+| `WorkflowScenarioDefinition` | ✓ | |  |  | `CHAR(10)` | Number of workflow definition |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  |  | `CHAR(4)` | Version |
+| `WorkflowStepType` | ✓ | |  |  | `CHAR(40)` | Workflow : Label |
+| `WorkflowStepResult` | ✓ | |  |  | `CHAR(60)` | Outcome |
+| `Language` | ✓ | |  |  | `LANG(1)` | Workflow definition: Language key |
+| `WorkflowStepResultText` |  | |  | `WorkflowStepText` | `CHAR(80)` | Language-dependent text of a workflow definition |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -260,12 +260,12 @@
     "matched": 12
   },
   "C_ACTLPLNSRVCMARGITEMQUERY": {
-    "attemptedAt": "2026-08-07T15:36:16.885Z",
+    "attemptedAt": "2026-08-07T16:11:58.841Z",
     "found": true,
     "matched": 67
   },
   "C_ANALYZESUPLRUTILZNQRY": {
-    "attemptedAt": "2026-08-07T15:36:17.990Z",
+    "attemptedAt": "2026-08-07T16:11:59.894Z",
     "found": true,
     "matched": 6
   },
@@ -918,5 +918,80 @@
     "attemptedAt": "2026-08-07T16:07:47.822Z",
     "found": true,
     "matched": 1
+  },
+  "I_WORKFLOWEXTERNALSTATUSTEXT": {
+    "attemptedAt": "2026-08-07T16:12:00.715Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WORKFLOWRECIPIENTS_V2": {
+    "attemptedAt": "2026-08-07T16:12:01.791Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_WORKFLOWSCENARIODEFINITION": {
+    "attemptedAt": "2026-08-07T16:12:02.802Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WORKFLOWSCENARIODEFTEXT": {
+    "attemptedAt": "2026-08-07T16:12:03.629Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WORKFLOWSCENARIORESULT": {
+    "attemptedAt": "2026-08-07T16:12:04.420Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WORKFLOWSCENARIORESULTTEXT": {
+    "attemptedAt": "2026-08-07T16:12:05.262Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_WORKFLOWSTATUSDETAILS": {
+    "attemptedAt": "2026-08-07T16:12:06.088Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_WORKFLOWSTATUSOVERVIEW": {
+    "attemptedAt": "2026-08-07T16:12:07.129Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_WORKFLOWSTEPRESULT": {
+    "attemptedAt": "2026-08-07T16:12:08.080Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_WORKFLOWSTEPRESULTTEXT": {
+    "attemptedAt": "2026-08-07T16:12:08.942Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_WORKFLOWSTEPTYPE": {
+    "attemptedAt": "2026-08-07T16:12:09.771Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_WORKFLOWSTEPTYPETEXT": {
+    "attemptedAt": "2026-08-07T16:12:10.567Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_WORKFLOWTASKEXTERNALSTATTEXT": {
+    "attemptedAt": "2026-08-07T16:12:11.418Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WORKFLOWTASKEXTERNALSTATUS": {
+    "attemptedAt": "2026-08-07T16:12:12.584Z",
+    "found": true,
+    "matched": 1
+  },
+  "D_CPWF_CONTEXT_PARAMETER": {
+    "attemptedAt": "2026-08-07T16:12:12.999Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CPWF_CONTEXT_PARAMETER\" (404)"
   }
 }

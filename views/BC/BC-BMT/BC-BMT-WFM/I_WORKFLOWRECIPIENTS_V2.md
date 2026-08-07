@@ -31,12 +31,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | |  |  |  |  |
-| `WorkflowTaskRecipient` | ✓ | |  |  |  |  |
-| `WorkflowTaskSubstitutedUser` | ✓ | |  |  |  |  |
-| `WorkflowInternalID` |  | |  | `top_wi_id` |  |  |
-| `WorkflowTaskIsForwarded` |  | |  |  |  |  |
-| `WorkflowTaskIsVisibleInInbox` |  | |  |  |  |  |
+| `WorkflowTaskInternalID` | ✓ | |  |  | `NUMC(12)` | Work item ID |
+| `WorkflowTaskRecipient` | ✓ | |  |  | `CHAR(12)` | Workflow: Recipient of Work Item |
+| `WorkflowTaskSubstitutedUser` | ✓ | |  |  | `CHAR(12)` | Workflow: Recipient of Work Item |
+| `WorkflowInternalID` |  | |  | `top_wi_id` | `NUMC(12)` | Workflow: Unique ID of Top-Level Instance (6.1/get) |
+| `WorkflowTaskIsForwarded` |  | |  |  | `CHAR(1)` | Indicator: Work Item was Forwarded |
+| `WorkflowTaskIsVisibleInInbox` |  | |  |  | `CHAR(1)` | Work item is in inbox |
 | `_WorkflowTaskRecipient` | | ✓ | | | | |
 
 ## Associations

@@ -31,11 +31,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowScenarioDefinition` | ✓ | |  |  |  |  |
-| `WorkflowScenarioDefinitionVers` | ✓ | |  |  |  |  |
-| `WorkflowStepType` | ✓ | |  |  |  |  |
-| `WorkflowStepResult` | ✓ | |  |  |  |  |
-| `WorkflowStepResultNature` |  | |  |  |  |  |
+| `WorkflowScenarioDefinition` | ✓ | |  |  | `CHAR(10)` | Number of workflow definition |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  |  | `CHAR(4)` | Version |
+| `WorkflowStepType` | ✓ | |  |  | `CHAR(40)` | Workflow : Label |
+| `WorkflowStepResult` | ✓ | |  |  | `CHAR(60)` | Outcome |
+| `WorkflowStepResultNature` |  | |  |  | `CHAR(20)` | Workflow: Property: Positive, Negative.... |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

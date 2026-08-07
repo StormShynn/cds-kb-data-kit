@@ -33,11 +33,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` |  |  |
-| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` |  |  |
-| `WorkflowScenarioResult` | ✓ | |  | `normiert` |  |  |
-| `Language` | ✓ | |  | `language` |  |  |
-| `WorkflowScenarioResultText` |  | |  | `text` |  |  |
+| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` | `CHAR(10)` | Number of workflow definition |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` | `CHAR(4)` | Version |
+| `WorkflowScenarioResult` | ✓ | |  | `normiert` | `CHAR(60)` | Outcome |
+| `Language` | ✓ | |  | `language` | `LANG(1)` | Language Key |
+| `WorkflowScenarioResultText` |  | |  | `text` | `CHAR(255)` | Text, 255 Characters |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

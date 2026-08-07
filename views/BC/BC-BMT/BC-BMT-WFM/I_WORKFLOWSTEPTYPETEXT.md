@@ -33,11 +33,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WrkflwScen` | ✓ | |  | `wfd_id` |  |  |
-| `WrkflwScenVers` | ✓ | |  | `version` |  |  |
-| `WorkflowStepType` | ✓ | |  | `ruse_label` |  |  |
-| `Language` | ✓ | |  | `language` |  |  |
-| `WorkflowStepTypeSubject` |  | |  | `text` |  |  |
+| `WrkflwScen` | ✓ | |  | `wfd_id` | `CHAR(10)` | Number of workflow definition |
+| `WrkflwScenVers` | ✓ | |  | `version` | `CHAR(4)` | Version |
+| `WorkflowStepType` | ✓ | |  | `ruse_label` | `CHAR(40)` | Workflow : Label |
+| `Language` | ✓ | |  | `language` | `LANG(1)` | Language Key |
+| `WorkflowStepTypeSubject` |  | |  | `text` | `CHAR(255)` | Text, 255 Characters |
 | `_Language` | | ✓ | | | | |
 
 ## Associations
