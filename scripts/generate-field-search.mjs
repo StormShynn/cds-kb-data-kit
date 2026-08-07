@@ -1,0 +1,231 @@
+#!/usr/bin/env node
+// scripts/generate-field-search.mjs
+// Generates field-search.html: a self-contained, offline-first page for
+// "I found field/table X in some ABAP code — which CDS views involve it?"
+// without needing an AI/MCP client (see get_views_by_field in cds-kb-mcp-kit
+// for the same lookup, exposed as a tool instead of a page).
+//
+// Reads the two reverse indices enrich_index.mjs already builds
+// (index/field-index.json, index/table-index.json) plus index/view-paths.json
+// for "open this view's file" links, and embeds a trimmed copy of each
+// directly in the page (no fetch() at runtime) so it works when opened via
+// double-click / file:// — Chrome/Edge block fetch() of local files from a
+// file:// page, so anything other than embedding would silently not load
+// for exactly the audience this page is for. Metadata (isKey/relation/alias)
+// stays inline per entry; app component is deduped into one place per VIEW
+// NAME instead of repeated per (field, view) pair, which is most of why the
+// raw index files are 20MB+ but the embedded version here is a few MB.
+//
+// Usage:
+//   node scripts/generate-field-search.mjs [dataDir] [outputFile]
+
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const args = process.argv.slice(2);
+const DATA_DIR = args[0] && !args[0].startsWith('--') ? args[0] : '.';
+const OUTPUT_FILE = args[1] && !args[1].startsWith('--') ? args[1] : path.join(DATA_DIR, 'field-search.html');
+
+async function readJson(file, fallback) {
+  try {
+    return JSON.parse(await fs.readFile(file, 'utf-8'));
+  } catch {
+    return fallback;
+  }
+}
+
+async function main() {
+  console.log('📋 Reading field-index.json / table-index.json / view-paths.json...');
+  const fieldIndex = await readJson(path.join(DATA_DIR, 'index', 'field-index.json'), null);
+  const tableIndex = await readJson(path.join(DATA_DIR, 'index', 'table-index.json'), null);
+  const viewPaths = await readJson(path.join(DATA_DIR, 'index', 'view-paths.json'), {});
+
+  if (!fieldIndex || !tableIndex) {
+    console.error('Missing field-index.json or table-index.json — run `npm run rebuild-index` first.');
+    process.exit(1);
+  }
+
+  // One appComponent per VIEW NAME, not per (field/table, view) pair — the
+  // raw indices repeat appComponent/lob/bo on every entry, which is fine for
+  // a server-side reverse lookup but would multiply the embedded page size
+  // by the average fan-out (a view exposes dozens of fields).
+  const viewMeta = {};
+  const F = {};
+  for (const [field, entries] of Object.entries(fieldIndex.fields)) {
+    F[field] = entries.map((e) => {
+      if (!(e.view in viewMeta)) viewMeta[e.view] = e.appComponent || '';
+      return [e.view, e.isKey ? 1 : 0];
+    });
+  }
+  const T = {};
+  for (const [table, entries] of Object.entries(tableIndex.tables)) {
+    T[table] = entries.map((e) => {
+      if (!(e.view in viewMeta)) viewMeta[e.view] = e.appComponent || '';
+      return [e.view, e.relation === 'source' ? 's' : 'a', e.alias || ''];
+    });
+  }
+
+  const embedded = JSON.stringify({ F, T, M: viewMeta, P: viewPaths })
+    .replace(/<\/script/gi, '<\\/script');
+
+  const html = renderHtml(embedded, {
+    fieldCount: Object.keys(F).length,
+    tableCount: Object.keys(T).length,
+    viewCount: Object.keys(viewMeta).length,
+  });
+
+  await fs.writeFile(OUTPUT_FILE, html, 'utf-8');
+  const sizeMb = (Buffer.byteLength(html) / 1024 / 1024).toFixed(1);
+  console.log(`✅ Wrote ${OUTPUT_FILE} (${sizeMb} MB) — ${Object.keys(F).length} field name(s), ${Object.keys(T).length} table/view name(s)`);
+}
+
+function renderHtml(embeddedJson, stats) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>CDS Knowledge Base · Field/Table Search</title>
+<style>
+  .viz-root {
+    --surface-1: #1a1a19;
+    --page-plane: #0d0d0d;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --gridline: #2c2c2a;
+    --border: rgba(255,255,255,0.10);
+    --status-good: #0ca30c;
+    --accent: #4c9eff;
+  }
+  * { box-sizing: border-box; }
+  body.viz-root {
+    margin: 0;
+    background: var(--page-plane);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+  h1 span { color: var(--text-secondary); font-weight: 400; }
+  .subtitle { color: var(--text-muted); font-size: 13px; margin: 0 0 24px; }
+
+  #q {
+    width: 100%; background: var(--surface-1); border: 1px solid var(--border);
+    color: var(--text-primary); border-radius: 8px; padding: 14px 16px; font-size: 16px;
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  #q:focus { outline: 2px solid var(--accent); }
+  .hint { color: var(--text-muted); font-size: 12px; margin: 8px 0 0; }
+
+  .section { margin-top: 24px; }
+  .section h2 { font-size: 14px; color: var(--text-secondary); margin: 0 0 10px; font-weight: 600; }
+  .row {
+    display: flex; align-items: baseline; gap: 10px; padding: 8px 10px;
+    border-bottom: 1px solid var(--gridline); font-size: 13px; flex-wrap: wrap;
+  }
+  .row:hover { background: var(--surface-1); }
+  .row a { color: var(--accent); text-decoration: none; font-family: ui-monospace, monospace; font-weight: 600; }
+  .row a:hover { text-decoration: underline; }
+  .tag { color: var(--text-muted); font-size: 11px; }
+  .badge {
+    font-size: 10px; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--border);
+    color: var(--text-secondary); white-space: nowrap;
+  }
+  .badge.key { color: var(--status-good); border-color: var(--status-good); }
+  .empty { color: var(--text-muted); font-size: 13px; padding: 20px 0; }
+  .stats { color: var(--text-muted); font-size: 12px; margin-top: 32px; border-top: 1px solid var(--gridline); padding-top: 16px; }
+</style>
+</head>
+<body class="viz-root">
+<div class="container">
+  <h1>CDS Knowledge Base <span>· Field/Table Search</span></h1>
+  <p class="subtitle">Paste an exact field name or table/CDS-view name found in ABAP code (SE11, DDL, a search on the SAP Business Accelerator Hub) to instantly find every local CDS view that uses it — no need to search the Hub website by hand.</p>
+
+  <input id="q" type="text" placeholder="e.g. MATNR, CompanyCode, BKPF, I_JournalEntryItem…" autofocus autocomplete="off" spellcheck="false" />
+  <p class="hint">Exact matches shown first; substring matches below. Case-insensitive.</p>
+
+  <div id="results"></div>
+
+  <div class="stats" id="statsLine"></div>
+</div>
+
+<script>
+  const DATA = ${embeddedJson};
+  const q = document.getElementById('q');
+  const results = document.getElementById('results');
+  const statsLine = document.getElementById('statsLine');
+  statsLine.textContent = ${JSON.stringify(`${stats.fieldCount} field name(s) · ${stats.tableCount} table/view name(s) · ${stats.viewCount} view(s) covered`)};
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function viewLink(name) {
+    const p = DATA.P[name];
+    const label = escapeHtml(name);
+    return p ? '<a href="' + escapeHtml(p) + '" target="_blank" rel="noopener">' + label + '</a>' : '<span style="font-family:ui-monospace,monospace;font-weight:600">' + label + '</span>';
+  }
+
+  function fieldRow([view, isKey]) {
+    const ac = DATA.M[view] || '';
+    return '<div class="row">' + viewLink(view) + (isKey ? ' <span class="badge key">key</span>' : '') +
+      (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
+  }
+
+  function tableRow([view, rel, alias]) {
+    const ac = DATA.M[view] || '';
+    const relLabel = rel === 's' ? 'built FROM this' : 'associates via <code>' + escapeHtml(alias) + '</code>';
+    return '<div class="row">' + viewLink(view) + ' <span class="tag">— ' + relLabel + '</span>' +
+      (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
+  }
+
+  function render() {
+    const raw = q.value.trim();
+    if (!raw) { results.innerHTML = ''; return; }
+    const key = raw.toUpperCase();
+
+    const fieldKeys = Object.keys(DATA.F);
+    const tableKeys = Object.keys(DATA.T);
+
+    const fieldExact = DATA.F[key] || null;
+    const tableExact = DATA.T[key] || null;
+    const fieldSubstr = fieldKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
+    const tableSubstr = tableKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
+
+    if (!fieldExact && !tableExact && fieldSubstr.length === 0 && tableSubstr.length === 0) {
+      results.innerHTML = '<div class="empty">No field or table/view name matches "' + escapeHtml(raw) + '".</div>';
+      return;
+    }
+
+    let html = '';
+    if (fieldExact) {
+      html += '<div class="section"><h2>As a field — "' + escapeHtml(key) + '" (' + fieldExact.length + ' view' + (fieldExact.length === 1 ? '' : 's') + ')</h2>' +
+        fieldExact.map(fieldRow).join('') + '</div>';
+    }
+    if (tableExact) {
+      html += '<div class="section"><h2>As a table/view reference — "' + escapeHtml(key) + '" (' + tableExact.length + ' view' + (tableExact.length === 1 ? '' : 's') + ')</h2>' +
+        tableExact.map(tableRow).join('') + '</div>';
+    }
+    if (fieldSubstr.length > 0) {
+      html += '<div class="section"><h2>Field names containing "' + escapeHtml(key) + '"</h2>' +
+        fieldSubstr.map(k => '<div class="row"><span class="tag">' + escapeHtml(k) + '</span> <span class="tag">(' + DATA.F[k].length + ' view' + (DATA.F[k].length === 1 ? '' : 's') + ')</span></div>').join('') + '</div>';
+    }
+    if (tableSubstr.length > 0) {
+      html += '<div class="section"><h2>Table/view names containing "' + escapeHtml(key) + '"</h2>' +
+        tableSubstr.map(k => '<div class="row"><span class="tag">' + escapeHtml(k) + '</span> <span class="tag">(' + DATA.T[k].length + ' view' + (DATA.T[k].length === 1 ? '' : 's') + ')</span></div>').join('') + '</div>';
+    }
+    results.innerHTML = html;
+  }
+
+  let debounce;
+  q.addEventListener('input', () => { clearTimeout(debounce); debounce = setTimeout(render, 80); });
+</script>
+</body>
+</html>
+`;
+}
+
+main().catch(err => {
+  console.error(`❌ Error: ${err.message}`);
+  process.exit(1);
+});

@@ -10,6 +10,7 @@
     "backfill-source-links": "node scripts/backfill_source_links.mjs",
     "enrich-ddl-fields": "node scripts/enrich_ddl_fields.mjs",
     "generate-dashboard": "node scripts/generate-dashboard.mjs",
+    "generate-field-search": "node scripts/generate-field-search.mjs",
     "rebuild-index": "node enrich_index.mjs .",
     "resync-folders": "node scripts/migrate-to-module-folders.mjs . && node enrich_index.mjs ."
   },

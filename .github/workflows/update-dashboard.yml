@@ -46,10 +46,13 @@ jobs:
       - name: Regenerate dashboard
         run: node scripts/generate-dashboard.mjs
 
+      - name: Regenerate field/table search page
+        run: node scripts/generate-field-search.mjs
+
       - name: Commit and push if changed
         uses: ./.github/actions/commit-and-push
         with:
-          paths: dashboard.html
+          paths: dashboard.html field-search.html
           commit-message: "Update dashboard [skip ci]"
           empty-message: Dashboard already up to date
           success-message: Dashboard updated
