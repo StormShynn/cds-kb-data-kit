@@ -14,7 +14,10 @@
 //     containing quotes/backslashes into JSON, which is easy to get wrong
 //     for a large batch; the filename (minus extension) is the view name.
 // Tracks progress in vsp-ddl-applied-manifest.json so re-running the same
-// batch is a no-op for names already applied.
+// batch is a no-op for names already applied. Also removes any upgraded
+// view from hub-metadata-manifest.json, so scripts/add_hub_metadata.mjs's
+// ownership check stops treating it as "mine to refresh from the Hub" and
+// permanently leaves the real DDL alone (see HUB_MANIFEST_FILE below).
 //
 // Usage:
 //   node scripts/apply_vsp_ddl.mjs <batch.json> [--dry-run] [--no-build]
@@ -35,6 +38,20 @@ import { extractFrontmatter, scalar, listBlock } from './lib/frontmatter.mjs';
 const DATA_DIR = '.';
 const VIEWS_DIR = path.join(DATA_DIR, 'views');
 const MANIFEST_FILE = path.join(DATA_DIR, 'vsp-ddl-applied-manifest.json');
+// scripts/add_hub_metadata.mjs treats presence in this manifest as "I
+// created/own this file, safe to refresh from the Hub" — its guard is
+// `existedBefore && !manifest[name]` → skip. A view we just upgraded to
+// real DDL is still listed here from when it was first written as
+// metadata-only, so without removing it, the next scheduled Hub-metadata
+// run (hub-metadata-fetch.yml) sees its own manifest entry, assumes
+// ownership, and silently regenerates the metadata-only version right back
+// over this upgrade the next time the Hub's ModifiedAt ticks forward —
+// which is exactly the merge conflict this repo kept hitting between the
+// vsp-upgrade pipeline and the Hub-metadata bot. Deleting the entry here
+// makes the ownership guard correctly treat this file as "not mine" from
+// now on, the same protection already-external files (GitHub-sourced,
+// manually added) get.
+const HUB_MANIFEST_FILE = path.join(DATA_DIR, 'hub-metadata-manifest.json');
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -72,6 +89,8 @@ async function main() {
   const opts = parseArgs();
   const batch = await loadBatch(opts);
   const manifest = await readJson(MANIFEST_FILE, {});
+  const hubManifest = await readJson(HUB_MANIFEST_FILE, {});
+  let hubManifestChanged = false;
   const taxonomy = await loadTaxonomy(DATA_DIR);
 
   console.log(`📋 Applying ${batch.length} view(s) from ${opts.dirPath || opts.batchFile}...`);
@@ -200,6 +219,10 @@ async function main() {
     await fs.mkdir(path.dirname(outputFile), { recursive: true });
     await fs.writeFile(outputFile, md, 'utf-8');
     manifest[name] = { appliedAt: new Date().toISOString(), fields: parsed.fields.length, action: existingFile ? 'updated' : 'added' };
+    if (hubManifest[name]) {
+      delete hubManifest[name];
+      hubManifestChanged = true;
+    }
     await addChangelogEntry(DATA_DIR, {
       viewName: name,
       action: existingFile ? 'updated' : 'added',
@@ -214,6 +237,10 @@ async function main() {
 
   if (!opts.dryRun) {
     await writeJson(MANIFEST_FILE, manifest);
+    if (hubManifestChanged) {
+      await writeJson(HUB_MANIFEST_FILE, hubManifest);
+      console.log('\n🔓 Đã bỏ quyền sở hữu của hub-metadata-fetch trên các view vừa upgrade (xoá khỏi hub-metadata-manifest.json) — bot Hub sẽ không đè lại nữa.');
+    }
     if (!opts.noBuild && stats.applied > 0) {
       console.log('\n🔨 Rebuilding search index...');
       await rebuildIndex(DATA_DIR);

@@ -12956,5 +12956,16 @@
     "tags": 10,
     "error": null,
     "sourceUrl": null
+  },
+  {
+    "viewName": "C_APJRNLENTRITMAGINGGRID",
+    "action": "updated",
+    "timestamp": "2026-08-07T16:20:28.546Z",
+    "source": "vsp",
+    "fields": 39,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": null
   }
 ]
